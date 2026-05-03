@@ -822,3 +822,14 @@ cm.
 [Charged Particles in Crossed Fields](#8-charged-particles-in-crossed-fields)
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Magnetic Fields**? The [diagnostic test](/physics/diagnostics/diag-magnetic-fields) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Magnetic Fields with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

@@ -927,3 +927,13 @@ If you get this wrong, revise: Human Impact -- Climate Change; Conservation Stra
 
 </details>
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Biodiversity and Conservation**? The [diagnostic test](/Biology/diagnostics/diag-biodiversity-conservation) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Biodiversity and Conservation with other biology topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+

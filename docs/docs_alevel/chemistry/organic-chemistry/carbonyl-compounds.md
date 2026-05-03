@@ -350,3 +350,13 @@ $\mathrm{CH}_3\mathrm{COCl} + 2\mathrm{CH}_3\mathrm{NH}_2 \to \mathrm{CH}_3\math
 Observation: vigorous reaction, white solid forms.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Carbonyl Compounds**? The [diagnostic test](/chemistry/diagnostics/diag-carbonyl-arenes-amines) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Carbonyl Compounds with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

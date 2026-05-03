@@ -904,3 +904,13 @@ For the term to be independent of $x$, we need $18 - 3k = 0$, so $k = 6$.
 The term is $\binom{9}{6} x^0 = \binom{9}{3} = 84$.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Number and Algebra**? The [diagnostic test](/maths/diagnostics/diag-number-algebra) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Number and Algebra with other IB mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

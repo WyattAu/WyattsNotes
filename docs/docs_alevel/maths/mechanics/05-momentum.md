@@ -891,3 +891,14 @@ Section 8.
 </details>
 
 :::
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Momentum**? The [diagnostic test](/maths/diagnostics/diag-momentum) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum with other topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

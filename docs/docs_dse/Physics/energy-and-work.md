@@ -570,3 +570,13 @@ If you get this wrong, revise: Power
 
 For the A-Level treatment of this topic, see [Work, Energy and Power](https://alevel.wyattau.com/docs/physics/mechanics/work-energy-power).
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Energy and Work**? The [diagnostic test](/Physics/diagnostics/diag-energy-work) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Energy and Work with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+

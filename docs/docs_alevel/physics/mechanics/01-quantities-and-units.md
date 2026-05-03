@@ -763,3 +763,14 @@ s$^{-2}$), so the result is consistent with the accepted value. $\square$
 <b>If you get this wrong, revise:</b> [Rule 3: Powers](#rule-3-powers)
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Quantities and Units**? The [diagnostic test](/physics/diagnostics/diag-quantities-units) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quantities and Units with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

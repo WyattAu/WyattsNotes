@@ -492,3 +492,13 @@ Factor of increase $= 17.6 / 4.55 \approx 3.9\times$.
 <b>If you get this wrong, revise:</b> [Cardiac Output](#54-cardiac-output)
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Exchange and Transport**? The [diagnostic test](/biology/diagnostics/diag-exchange-transport) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Exchange and Transport with other biology topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

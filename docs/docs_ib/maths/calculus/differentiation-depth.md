@@ -881,3 +881,13 @@ correct application of rules even if arithmetic errors occur later.
 :::
 
 For the A-Level treatment of this topic, see [Differentiation](https://alevel.wyattau.com/docs/maths/pure-mathematics/differentiation).
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Differentiation**? The [diagnostic test](/maths/diagnostics/diag-differentiation) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differentiation with other IB mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

@@ -557,3 +557,13 @@ If you get this wrong, revise: Sound Waves
 
 For the A-Level treatment of this topic, see [Wave Properties](https://alevel.wyattau.com/docs/physics/waves/wave-properties).
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Waves and Sound**? The [diagnostic test](/Physics/diagnostics/diag-waves-sound) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Waves and Sound with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+

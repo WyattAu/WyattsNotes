@@ -391,3 +391,13 @@ t = \frac{Q}{I} = \frac{107200}{5.00} = 21440\,\mathrm{s} = 357\,\mathrm{minutes
 $$
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Electrochemistry**? The [diagnostic test](/chemistry/diagnostics/diag-electrochemistry) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electrochemistry with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

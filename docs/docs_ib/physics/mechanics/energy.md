@@ -828,3 +828,13 @@ h = \frac{kx^2}{2mg} = \frac{500(0.0064)}{2(0.1)(9.81)} = \frac{3.2}{1.962} = 1.
 $$
 
 For the A-Level treatment of this topic, see [Work, Energy and Power](https://alevel.wyattau.com/docs/physics/mechanics/work-energy-power).
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Energy and Conservation**? The [diagnostic test](/physics/diagnostics/diag-energy) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Energy and Conservation with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

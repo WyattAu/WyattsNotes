@@ -533,3 +533,13 @@ establish a causal link between human activities and global warming.
 <b>If you get this wrong, revise:</b> [The Greenhouse Effect](#61-the-greenhouse-effect)
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Ecology**? The [diagnostic test](/biology/diagnostics/diag-ecology) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Ecology with other biology topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

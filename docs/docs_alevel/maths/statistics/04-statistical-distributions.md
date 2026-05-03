@@ -676,3 +676,14 @@ Section 6.
 :::
 
 :::
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Statistical Distributions**? The [diagnostic test](/maths/diagnostics/diag-statistical-distributions) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistical Distributions with other topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

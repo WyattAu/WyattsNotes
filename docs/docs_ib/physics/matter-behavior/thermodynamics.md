@@ -876,3 +876,13 @@ efficiency, and this engine does not.
 
 - **A-Level Thermal Physics:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
 - **DSE Heat and Gases:** [Heat and Gases](https://academics.wyattau.com/docs/dse/Physics/heat-and-gases)
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Thermodynamics**? The [diagnostic test](/physics/diagnostics/diag-thermodynamics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Thermodynamics with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

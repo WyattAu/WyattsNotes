@@ -354,3 +354,13 @@ Explain why the first ionisation energy of oxygen is less than that of nitrogen.
 Nitrogen ($1s^2 2s^2 2p^3$) has three unpaired $2p$ electrons, one in each $2p$ orbital (Hund's rule). Oxygen ($1s^2 2s^2 2p^4$) has four $2p$ electrons, so one orbital must contain a pair. Removing an electron from oxygen means removing one of the paired electrons from the doubly-occupied orbital. The pairing repulsion in that orbital makes the electron less tightly held than a nitrogen $2p$ electron, so oxygen has a lower first ionisation energy.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Atomic Structure and Periodicity**? The [diagnostic test](/chemistry/diagnostics/diag-atomic-structure) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Atomic Structure and Periodicity with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

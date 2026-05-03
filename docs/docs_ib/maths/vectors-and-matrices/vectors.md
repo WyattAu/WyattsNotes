@@ -601,3 +601,13 @@ $$x + y + 3z - 12 = 0$$
 - **Trigonometry** for angle calculations: see [Trigonometry](../geometry-and-trigonometry/trigonometry)
 - **Calculus** for vector-valued functions and differentiation: see [Differentiation](../calculus/differentiation-depth)
 - **Integration** for arc length and surface area of curves: see [Integration](../calculus/integration-techniques)
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Vectors**? The [diagnostic test](/maths/diagnostics/diag-vectors) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Vectors with other IB mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

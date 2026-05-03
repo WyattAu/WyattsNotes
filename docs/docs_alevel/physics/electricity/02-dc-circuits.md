@@ -743,3 +743,14 @@ $S = R \times 60/40 = 10 \times 1.5 = 15\,\Omega$.
 <b>If you get this wrong, revise:</b> [Wheatstone Bridge](#6-wheatstone-bridge)
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **DC Circuits**? The [diagnostic test](/physics/diagnostics/diag-dc-circuits) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine DC Circuits with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

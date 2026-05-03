@@ -876,3 +876,13 @@ Step 2: $y_2 = y_1 + h \cdot f(x_1, y_1) = 0.5 + 0.5(1.5 + 0.5) = 0.5 + 1.0 = 1.
 Euler's method approximation: $y(2) \approx 1.5$.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Differential Equations**? The [diagnostic test](/qualifications/ap/maths/diagnostics/diag-differential-equations) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differential Equations with other AP Calculus topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/qualifications/ap/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

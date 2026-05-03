@@ -598,3 +598,13 @@ Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
 - **Maclaurin series** arise when linearising DE solutions: see [Sequences and Series](sequences-and-series)
 
 For the A-Level Further Maths treatment of this topic, see [Differential Equations](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/differential-equations).
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Differential Equations**? The [diagnostic test](/maths/diagnostics/diag-differential-equations) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differential Equations with other IB mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

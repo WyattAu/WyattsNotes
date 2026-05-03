@@ -1741,6 +1741,16 @@ not $-t_{1/2}$.*
 
 For the A-Level treatment of this topic, see [Radioactivity](https://alevel.wyattau.com/docs/physics/nuclear-physics/radioactivity).
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Nuclear Physics**? The [diagnostic test](/Physics/diagnostics/diag-nuclear-physics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Nuclear Physics with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+
 </details>
 </details>
 

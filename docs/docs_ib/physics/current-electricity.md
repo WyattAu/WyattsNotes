@@ -1536,3 +1536,13 @@ current when first switched on (cold) than during normal operation.
 
 - **A-Level Electricity:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
 - **DSE Electrical Circuits:** [Electrical Circuits](https://academics.wyattau.com/docs/dse/Physics/electrical-circuits)
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Current Electricity**? The [diagnostic test](/physics/diagnostics/diag-current-electricity) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Current Electricity with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

@@ -964,3 +964,13 @@ $f'(x) = 3x^2 - 3 = 1$, so $3x^2 = 4$, $x^2 = 4/3$, $x = \pm 2/\sqrt{3} \approx 
 Both values are in $(-2, 2)$. The MVT is satisfied at $c = 2/\sqrt{3}$ and $c = -2/\sqrt{3}$.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Derivatives**? The [diagnostic test](/qualifications/ap/maths/diagnostics/diag-derivatives) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Derivatives with other AP Calculus topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/qualifications/ap/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

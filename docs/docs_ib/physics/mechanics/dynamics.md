@@ -892,3 +892,13 @@ E_e = \frac{1}{2}kx^2 \implies 26.67 = 1000x^2 \implies x = 0.163\mathrm{ m}
 $$
 
 For the A-Level treatment of this topic, see [Dynamics](https://alevel.wyattau.com/docs/physics/mechanics/dynamics).
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Dynamics**? The [diagnostic test](/physics/diagnostics/diag-dynamics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

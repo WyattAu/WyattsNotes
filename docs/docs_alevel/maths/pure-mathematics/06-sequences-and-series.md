@@ -820,3 +820,13 @@ Verification:
 - $n = 3$: $u_3 = 2 \cdot 9 - 1 = 17$. Check: $3(5) + 2 = 17$ ✓
 </details>
 <b>If you get this wrong, revise:</b> [Recurrence relations](#5-recurrence-relations)
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/maths/diagnostics/diag-sequences-and-series) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other pure mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

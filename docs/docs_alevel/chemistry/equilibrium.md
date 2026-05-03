@@ -352,3 +352,13 @@ $Q = [\mathrm{Ag}^+][\mathrm{Cl}^-] = 0.0020 \times 0.0040 = 8.0 \times 10^{-6}$
 Since $Q = 8.0 \times 10^{-6} \gt K_{sp} = 1.8 \times 10^{-10}$, a precipitate of $\mathrm{AgCl}$ will form.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Chemical Equilibrium**? The [diagnostic test](/chemistry/diagnostics/diag-equilibrium) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Chemical Equilibrium with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

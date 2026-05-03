@@ -622,3 +622,13 @@ If you get this wrong, revise: Series and Parallel Circuits / Internal Resistanc
 
 For the A-Level treatment of this topic, see [DC Circuits](https://alevel.wyattau.com/docs/physics/electricity/dc-circuits).
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Electrical Circuits**? The [diagnostic test](/Physics/diagnostics/diag-electrical-circuits) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electrical Circuits with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+

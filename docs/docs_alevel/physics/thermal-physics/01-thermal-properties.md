@@ -673,3 +673,14 @@ the same energy.
 [Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv--nk_bt-from-kinetic-theory)
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Thermal Properties**? The [diagnostic test](/physics/diagnostics/diag-thermal-properties) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Thermal Properties with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

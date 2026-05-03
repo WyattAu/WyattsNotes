@@ -1125,65 +1125,17 @@ The claim is **incorrect**. Excretion and egestion are fundamentally different p
 - **Common exam traps:**
   - The anus is NOT an excretory organ -- it is involved in egestion.
   - The lungs ARE excretory organs because they remove $\mathrm{CO}_2$ (a metabolic waste product of respiration).
-  - The skin IS an excretory organ (minor) because it removes water, urea, salts, and lactic acid (metabolic waste products) in sweat. However, the skin's PRIMARY function is thermoregulation, not excretion.
-  - The kidneys are the PRIMARY excretory organs, removing urea, excess water, excess mineral salts, and other metabolic wastes in urine.
+- The skin IS an excretory organ (minor) because it removes water, urea, salts, and lactic acid (metabolic waste products) in sweat. However, the skin's PRIMARY function is thermoregulation, not excretion.
 
-**If you get this wrong, revise:** [Excretion -- Definition](#definition) and [Common Pitfalls](#common-pitfalls)
+</details>
 
 ---
 
-## Key Equations and Processes Summary
+:::tip Diagnostic Test
+Ready to test your understanding of **Human Reproduction and Homeostasis**? The [diagnostic test](/Biology/diagnostics/diag-human-reproduction-homeostasis) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
-**Hormonal control of the menstrual cycle:**
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human Reproduction and Homeostasis with other biology topics to test synthesis under exam conditions.
 
-- FSH (anterior pituitary) stimulates follicle development and oestrogen production
-- Oestrogen (follicle/corpus luteum) stimulates endometrial thickening; negative feedback on FSH at low levels; positive feedback on LH at high levels
-- LH (anterior pituitary) triggers ovulation and maintains corpus luteum
-- Progesterone (corpus luteum) maintains endometrium; negative feedback on FSH and LH
-- hCG (embryo) maintains corpus luteum in early pregnancy
-
-**Blood glucose regulation:**
-
-- Insulin (beta cells): stimulates glycogenesis, inhibits glycogenolysis and gluconeogenesis, increases glucose uptake -- net effect: lowers blood glucose
-- Glucagon (alpha cells): stimulates glycogenolysis and gluconeogenesis -- net effect: raises blood glucose
-- Adrenaline (adrenal medulla): stimulates glycogenolysis in liver and muscles -- rapid raise of blood glucose
-
-**Osmoregulation:**
-
-- High blood solute concentration / low water potential: osmoreceptors in hypothalamus detect change; posterior pituitary releases ADH; collecting duct becomes more permeable to water (aquaporin insertion); concentrated urine produced
-- Low blood solute concentration / high water potential: osmoreceptors reduce stimulation; ADH decreases; collecting duct becomes less permeable; dilute urine produced
-
-**Deamination and urea synthesis:**
-
-$$\mathrm{Amino acid} \to \mathrm{Keto acid} + \mathrm{NH}_3$$
-
-$$2\mathrm{NH}_3 + \mathrm{CO}_2 \to \mathrm{CO(NH}_2)_2 + \mathrm{H}_2\mathrm{O}$$
-
-**Quick reference: commonly confused pairs**
-
-| Concept | First item | Second item | Key difference |
-| --- | --- | --- | --- |
-| Excretion vs egestion | Removal of metabolic waste (urea, $\mathrm{CO}_2$) | Removal of undigested food (faeces) | Faeces were never part of metabolism |
-| Umbilical artery vs vein | Carries **deoxygenated** blood (foetus to placenta) | Carries **oxygenated** blood (placenta to foetus) | Named by direction of flow from the heart |
-| Insulin vs glucagon | From beta cells; **lowers** blood glucose | From alpha cells; **raises** blood glucose | Insulin stores, glucagon releases |
-| Glycogenesis vs glycogenolysis | Glucose to glycogen (storage) | Glycogen to glucose (release) | Opposite processes |
-| Spermatogenesis vs oogenesis | Begins at puberty; continuous; 4 functional gametes | Begins in foetus; arrested; 1 functional gamete | Timing, continuity, and yield differ |
-| Vasodilation vs vasoconstriction | Arterioles dilate; heat **lost** | Arterioles constrict; heat **conserved** | Opposite thermoregulatory responses |
-| Negative vs positive feedback | Response **opposes** the change | Response **amplifies** the change | Most homeostasis uses negative; LH surge uses positive |
-| Diabetes mellitus type 1 vs type 2 | No insulin produced (autoimmune) | Insulin resistance (lifestyle-linked) | Different cause, age of onset, and treatment |
-
-**Exam checklist -- can you explain each of the following without looking?**
-
-- Why the corpus luteum degenerates if fertilisation does not occur
-- Why oestrogen has both negative and positive feedback effects on the pituitary
-- Why the acrosome reaction and cortical reaction are both necessary for successful fertilisation
-- Why maternal and foetal blood do not mix in the placenta
-- Why ADH is produced in the hypothalamus but released from the posterior pituitary
-- Why the loop of Henle creates a medullary concentration gradient
-- Why muscle cannot release glucose into the blood but the liver can
-- Why insulin cannot be taken orally
-- Why glucose appears in the urine of a person with uncontrolled diabetes
-- Why deamination is necessary and why ammonia must be converted to urea
-
-</details>
+See [Diagnostic Guide](/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
 

@@ -674,3 +674,14 @@ $x = 0$), the velocity phasor is horizontal, giving a maximum projection of $\pm
 <b>If you get this wrong, revise:</b> [Phasor Diagrams for SHM](#12-phasor-diagrams-for-shm)
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Oscillations**? The [diagnostic test](/physics/diagnostics/diag-oscillations) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Oscillations with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

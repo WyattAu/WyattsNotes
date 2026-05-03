@@ -934,3 +934,13 @@ $\displaystyle\lim_{x \to 0} (-x^2) = 0$ and $\displaystyle\lim_{x \to 0} x^2 = 
 By the Squeeze Theorem: $\displaystyle\lim_{x \to 0} x^2 \sin\!\left(\frac{1}{x}\right) = 0$.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Limits and Continuity**? The [diagnostic test](/qualifications/ap/maths/diagnostics/diag-limits-continuity) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Limits and Continuity with other AP Calculus topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/qualifications/ap/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

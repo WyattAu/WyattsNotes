@@ -910,3 +910,13 @@ Case 3 ($x \gt 2.5$): $h(x) = (2x-5) + (x+1) = 3x - 4$. Minimum at $x = 2.5$: $h
 Minimum value is $3.5$ at $x = 2.5$.
 
 For the A-Level treatment of this topic, see [Functions](https://alevel.wyattau.com/docs/maths/pure-mathematics/functions).
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Functions and Equations**? The [diagnostic test](/maths/diagnostics/diag-functions-equations) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions and Equations with other IB mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

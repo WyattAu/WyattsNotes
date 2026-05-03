@@ -660,3 +660,12 @@ quarterly. How long (to the nearest quarter) does it take for the balance to rea
 - To the nearest quarter: approximately 17 years and 2 quarters (17.5 years).
 </details>
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Logarithms**? The [diagnostic test](/Maths/diagnostics/diag-logarithms) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Logarithms with other DSE mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

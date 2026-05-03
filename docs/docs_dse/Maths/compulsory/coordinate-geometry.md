@@ -627,3 +627,12 @@ The equation of the common chord is $6x - 8y + 23 = 0$.
 
 For the A-Level treatment of this topic, see [Coordinates and Geometry](https://alevel.wyattau.com/docs/maths/pure-mathematics/coordinates-and-geometry).
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Coordinate Geometry**? The [diagnostic test](/Maths/diagnostics/diag-coordinate-geometry) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Coordinate Geometry with other DSE mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

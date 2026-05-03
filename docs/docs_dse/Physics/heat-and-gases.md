@@ -1561,3 +1561,13 @@ For the A-Level treatment of this topic, see [Thermal Properties](https://alevel
 </details>
 </details>
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Heat and Gases**? The [diagnostic test](/Physics/diagnostics/diag-heat-gases) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Heat and Gases with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+

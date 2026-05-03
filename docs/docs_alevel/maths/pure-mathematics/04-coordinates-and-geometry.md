@@ -923,3 +923,13 @@ The two tangent lines are $y = 0$ and $12x - 5y = 0$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Tangent condition](#41-the-tangent-condition)
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Coordinates and Geometry**? The [diagnostic test](/maths/diagnostics/diag-coordinates-and-geometry) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Coordinates and Geometry with other pure mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

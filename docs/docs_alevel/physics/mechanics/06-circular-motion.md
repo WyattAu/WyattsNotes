@@ -716,3 +716,14 @@ $T - mg = mv_b^2/r = 4mg$, so $T = 5mg$ (rod pulls inward with force $5mg$).
 [Vertical Circles -- Detailed Analysis](#5-vertical-circles----detailed-analysis)
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Circular Motion**? The [diagnostic test](/physics/diagnostics/diag-circular-motion) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Circular Motion with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

@@ -722,3 +722,12 @@ vertices of a rectangle. Find the equation of the circle passing through all fou
 </details>
 </details>
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Geometries**? The [diagnostic test](/Maths/diagnostics/diag-geometries) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Geometries with other DSE mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

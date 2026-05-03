@@ -793,6 +793,16 @@ refractive index varies with wavelength.*
 
 For the A-Level treatment of this topic, see [Refraction and Total Internal Reflection](https://alevel.wyattau.com/docs/physics/waves/refraction-and-total-internal-reflection).
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Optics**? The [diagnostic test](/Physics/diagnostics/diag-optics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Optics with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+
 </details>
 </details>
 

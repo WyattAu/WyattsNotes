@@ -935,3 +935,13 @@ $$
 
 - **A-Level Trigonometry:** [Mathematics](https://alevel.wyattau.com/docs/maths/maths)
 - **DSE Trigonometry:** [Trigonometry](https://academics.wyattau.com/docs/dse/Maths/compulsory/trigonometry)
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Trigonometry**? The [diagnostic test](/maths/diagnostics/diag-trigonometry) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Trigonometry with other IB mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

@@ -965,3 +965,13 @@ $$
 $$
 
 For the A-Level treatment of this topic, see [Integration](https://alevel.wyattau.com/docs/maths/pure-mathematics/integration).
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Integration**? The [diagnostic test](/maths/diagnostics/diag-integration) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integration with other IB mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

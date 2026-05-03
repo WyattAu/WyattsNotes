@@ -661,3 +661,14 @@ $\Delta v = u\ln(m_0/m_f) = 2000\ln(1000/200) = 2000\ln 5 = 2000 \times 1.609 = 
 <b>If you get this wrong, revise:</b> [Rocket Propulsion](#rocket-propulsion)
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Momentum**? The [diagnostic test](/physics/diagnostics/diag-momentum) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

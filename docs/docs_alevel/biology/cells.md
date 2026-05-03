@@ -475,3 +475,13 @@ organisms.
 <b>If you get this wrong, revise:</b> [Viruses](#4-viruses)
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Cells**? The [diagnostic test](/biology/diagnostics/diag-cells) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Cells with other biology topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

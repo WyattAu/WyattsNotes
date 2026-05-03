@@ -1290,3 +1290,13 @@ If you get this wrong, revise: Nervous Coordination -- Synapses
 
 </details>
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Human Physiology**? The [diagnostic test](/Biology/diagnostics/diag-human-physiology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human Physiology with other biology topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+

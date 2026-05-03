@@ -874,3 +874,13 @@ A score of 82.26 is at the 90th percentile.
 - **Reliability**: consistency of measurements (repeatable).
 - **Validity**: measures what it claims to measure.
 - A measurement can be reliable without being valid, but not valid without being reliable.
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Statistics**? The [diagnostic test](/maths/diagnostics/diag-statistics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistics with other IB mathematics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

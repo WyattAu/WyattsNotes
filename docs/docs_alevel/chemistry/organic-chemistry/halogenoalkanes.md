@@ -291,3 +291,13 @@ is a stronger base (more willing to accept a proton, less willing to depart with
 larger, more polarisable $\mathrm{I}^-$ stabilises the departing negative charge more effectively.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Halogenoalkanes**? The [diagnostic test](/chemistry/diagnostics/diag-halogenoalkanes-alcohols) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Halogenoalkanes with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

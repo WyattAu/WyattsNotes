@@ -538,3 +538,13 @@ The $\mathrm{OH}^-$ nucleophile attacks the carbon bearing the bromine from the 
 If the carbon is chiral, the product has **inverted configuration** (Walden inversion). The stereochemistry at the carbon centre is inverted relative to the starting material. An enantiomerically pure reactant yields a single enantiomer of product with opposite configuration.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Organic Chemistry**? The [diagnostic test](/chemistry/diagnostics/diag-organic-introduction) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Organic Chemistry with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

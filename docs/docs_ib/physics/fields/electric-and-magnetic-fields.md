@@ -750,3 +750,13 @@ equilibrium.
 ## Related Content at Other Levels
 
 - **A-Level Fields:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Electric and Magnetic Fields**? The [diagnostic test](/physics/diagnostics/diag-electric-magnetic-fields) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electric and Magnetic Fields with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

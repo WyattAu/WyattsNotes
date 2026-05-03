@@ -854,3 +854,13 @@ Maximum available friction: $f_{\max} = \mu_s mg = 0.4m(9.81) = 3.924m$.
 Since $2.7m \lt 3.924m$, the coin does not slip.
 
 For the A-Level treatment of this topic, see [Circular Motion](https://alevel.wyattau.com/docs/physics/mechanics/circular-motion).
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Rotational Motion**? The [diagnostic test](/physics/diagnostics/diag-rotational-motion) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Rotational Motion with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

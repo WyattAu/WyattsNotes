@@ -1017,3 +1017,14 @@ is $\lt{} \mu R = 16.99\,\mathrm{N}$, confirming equilibrium).
 [Friction and the direction of motion](#84-friction-and-the-direction-of-motion) — Section 8.4.
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Forces and Newton's Laws**? The [diagnostic test](/maths/diagnostics/diag-forces-and-newtons-laws) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Forces and Newton's Laws with other topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/maths/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

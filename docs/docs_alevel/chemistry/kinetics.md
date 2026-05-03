@@ -373,3 +373,13 @@ t = \frac{2.303}{5.775 \times 10^{-3}} = 399\,\mathrm{s}
 $$
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Chemical Kinetics**? The [diagnostic test](/chemistry/diagnostics/diag-kinetics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Chemical Kinetics with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

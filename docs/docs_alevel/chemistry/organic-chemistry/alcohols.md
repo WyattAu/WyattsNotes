@@ -296,3 +296,13 @@ $$
 Therefore, only Methods 1 and 2 produce bromoethane from ethanol.
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Alcohols**? The [diagnostic test](/chemistry/diagnostics/diag-halogenoalkanes-alcohols) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Alcohols with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

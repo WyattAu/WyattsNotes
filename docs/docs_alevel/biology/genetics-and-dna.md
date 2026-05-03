@@ -491,3 +491,13 @@ discontinuous Okazaki fragments, each requiring its own RNA primer.
 <b>If you get this wrong, revise:</b> [DNA Replication](#12-dna-replication)
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Genetics and DNA**? The [diagnostic test](/biology/diagnostics/diag-genetics-dna) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Genetics and DNA with other biology topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

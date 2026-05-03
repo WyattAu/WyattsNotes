@@ -928,3 +928,14 @@ fusion, if achieved practically, promises such high energy output per unit fuel 
 [Why D-T is the Easiest Fusion Reaction](#why-d-t-is-the-easiest-fusion-reaction)
 
 </details>
+
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Nuclear Energy**? The [diagnostic test](/physics/diagnostics/diag-nuclear-energy) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Nuclear Energy with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

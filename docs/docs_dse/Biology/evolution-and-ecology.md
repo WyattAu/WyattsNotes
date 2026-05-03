@@ -1356,3 +1356,13 @@ Without this context, it is possible that Pond A has high diversity but is pollu
 
 </details>
 
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Evolution and Ecology**? The [diagnostic test](/Biology/diagnostics/diag-evolution-ecology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Evolution and Ecology with other biology topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/Biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
+

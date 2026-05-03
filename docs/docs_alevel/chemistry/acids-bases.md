@@ -444,3 +444,13 @@ $$
 $$
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Acids, Bases and Buffers**? The [diagnostic test](/chemistry/diagnostics/diag-acids-bases) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Acids, Bases and Buffers with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/chemistry/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

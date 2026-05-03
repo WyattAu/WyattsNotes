@@ -431,3 +431,13 @@ relationships.
 <b>If you get this wrong, revise:</b> [Phylogeny and Cladistics](#23-phylogeny-and-cladistics)
 
 </details>
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Biodiversity, Classification and Evolution**? The [diagnostic test](/biology/diagnostics/diag-biodiversity-classification-evolution) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Biodiversity, Classification and Evolution with other biology topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/biology/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::

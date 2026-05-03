@@ -811,3 +811,13 @@ $$
 $$
 
 This wavelength is comparable to atomic spacing, suitable for electron diffraction experiments.
+
+---
+
+:::tip Diagnostic Test
+Ready to test your understanding of **Atomic and Nuclear Physics**? The [diagnostic test](/physics/diagnostics/diag-atomic-nuclear) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Atomic and Nuclear Physics with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/physics/diagnostics/DIAGNOSTIC_GUIDE) for instructions on self-marking and building a personal test matrix.
+:::
