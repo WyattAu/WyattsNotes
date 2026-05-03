@@ -57,7 +57,7 @@ Total: **3 bytes** (all characters are in the ASCII range, so UTF-8 uses 1 byte 
 
 **Solution:**
 
-(a) File size $= 1920 \times 1080 \times 24 \text{ bits} = 1920 \times 1080 \times 3 \text{ bytes} = 6{,}220{,}800 \text{ bytes} \approx 5.93$ MB.
+(a) File size $= 1920 \times 1080 \times 24 \text{ bits} = 1920 \times 1080 \times 3 \text{ bytes} = 6,220,800 \text{ bytes} \approx 5.93$ MB.
 
 (b) Compressed size $= 5.93 / 10 \approx 0.593$ MB $\approx 593$ KB.
 
@@ -67,9 +67,9 @@ Lossy compression is acceptable for: photographs, web images, social media. It i
 
 (d) File size $= \text{sample rate} \times \text{bit depth} \times \text{channels} \times \text{duration}$.
 
-$= 44{,}100 \times 16 \times 2 \times (3 \times 60) = 44{,}100 \times 16 \times 2 \times 180 = 254{,}016{,}000 \text{ bits}$.
+$= 44,100 \times 16 \times 2 \times (3 \times 60) = 44,100 \times 16 \times 2 \times 180 = 254,016,000 \text{ bits}$.
 
-$= 254{,}016{,}000 / 8 = 31{,}752{,}000 \text{ bytes} \approx 30.27$ MB.
+$= 254,016,000 / 8 = 31,752,000 \text{ bytes} \approx 30.27$ MB.
 
 ---
 
@@ -95,7 +95,7 @@ Carry out of the MSB $= 1$ (indicates overflow in unsigned). For signed: $101100
 
 (b) The ALU uses full adders chained together. Each full adder takes three inputs (two bits to add and a carry-in) and produces a sum bit and carry-out. For an 8-bit addition, 8 full adders are connected: the carry-out of each stage feeds into the carry-in of the next. Each full adder can be built from two half adders and an OR gate, and each half adder uses an XOR gate (for sum) and AND gate (for carry).
 
-(c) Maximum addressable memory $= 2^{32} = 4{,}294{,}967{,}296$ bytes $= 4$ GB.
+(c) Maximum addressable memory $= 2^{32} = 4,294,967,296$ bytes $= 4$ GB.
 
 If 8 GB is installed, the system uses physical address extension (PAE) or operates in 64-bit mode to access beyond 4 GB. In a 32-bit system without PAE, only 4 GB is addressable. Additionally, some address space is reserved for memory-mapped I/O (GPU VRAM, BIOS, peripheral controllers), so usable RAM is typically less than 4 GB even if 4 GB is installed.
 

@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 **Solution:**
 
-(a) Maximum expansion $= \frac{\$1000}{0.10} = \$10{,}000$ (including the initial deposit).
+(a) Maximum expansion $= \frac{\$1000}{0.10} = \$10,000$ (including the initial deposit).
 
 (b) | Round | Deposit | Required Reserves | Loans |
 |---|---|---|---|
@@ -107,6 +107,6 @@ Higher income increases the transactions demand for money (people need more cash
 
 (c) A bank run occurs when depositors lose confidence in a bank's ability to repay their deposits. Since banks lend out most deposits (fractional reserve banking), they cannot repay all depositors simultaneously. When some depositors withdraw, others fear the bank will run out of reserves, creating a self-fulfilling panic. This is a market failure because individual rational behaviour (withdrawing deposits) leads to collectively irrational outcomes (bank failure, loss of value for all).
 
-Deposit insurance (e.g., the Deposit Protection Scheme in Hong Kong, covering up to HK\$500{,}000) eliminates the incentive to run: even if the bank fails, insured depositors will be repaid. This prevents self-fulfilling panics and protects the stability of the financial system.
+Deposit insurance (e.g., the Deposit Protection Scheme in Hong Kong, covering up to HK\$500,000) eliminates the incentive to run: even if the bank fails, insured depositors will be repaid. This prevents self-fulfilling panics and protects the stability of the financial system.
 
 (d) Confidence is fundamental to the monetary system. Money has value only because people believe others will accept it. Similarly, banks function only because depositors trust them to safeguard deposits. When confidence collapses (as in a bank run), the system breaks down rapidly. Deposit insurance, central bank lending as lender of last resort, and regulatory oversight all serve to maintain this confidence -- they are public goods that the private market would underprovide without government intervention.

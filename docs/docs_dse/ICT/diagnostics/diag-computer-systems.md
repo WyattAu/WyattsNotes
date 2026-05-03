@@ -24,7 +24,7 @@ hide_table_of_contents: true
 
 Time for one instruction $= 4 \times 0.3125 = 1.25$ ns.
 
-(c) A 32-bit processor uses 32-bit addresses, allowing it to address $2^{32} = 4{,}294{,}967{,}296$ unique memory locations (4 GB of byte-addressable RAM). A 64-bit processor uses 64-bit addresses, allowing $2^{64}$ locations -- far more than any current system needs (theoretically 16 exabytes). The larger address space means the processor can reference more physical RAM without workarounds like PAE (Physical Address Extension).
+(c) A 32-bit processor uses 32-bit addresses, allowing it to address $2^{32} = 4,294,967,296$ unique memory locations (4 GB of byte-addressable RAM). A 64-bit processor uses 64-bit addresses, allowing $2^{64}$ locations -- far more than any current system needs (theoretically 16 exabytes). The larger address space means the processor can reference more physical RAM without workarounds like PAE (Physical Address Extension).
 
 (d) **RISC (Reduced Instruction Set Computing):** Uses a small set of simple, highly optimised instructions that execute in one clock cycle. Each instruction is the same length, enabling pipelining. Requires more instructions for complex operations but achieves higher throughput through faster execution. Examples: ARM (used in smartphones).
 
@@ -61,9 +61,9 @@ $\text{AMAT} = 1 + 0.05 \times (5 + 0.20 \times 100) = 1 + 0.05 \times (5 + 20) 
 | Durability | Vulnerable to physical shock (head crash) | Highly durable (no moving parts) |
 | Cost per GB | Low (around \$0.02--0.03/GB) | Higher (around \$0.05--0.10/GB) |
 
-(b) Total sectors $= 4 \text{ platters} \times 2 \text{ surfaces/platter} \times 1024 \text{ tracks/surface} \times 256 \text{ sectors/track} = 4 \times 2 \times 1024 \times 256 = 2{,}097{,}152$ sectors.
+(b) Total sectors $= 4 \text{ platters} \times 2 \text{ surfaces/platter} \times 1024 \text{ tracks/surface} \times 256 \text{ sectors/track} = 4 \times 2 \times 1024 \times 256 = 2,097,152$ sectors.
 
-Total capacity $= 2{,}097{,}152 \times 512 \text{ bytes} = 1{,}073{,}741{,}824 \text{ bytes} = 1 \text{ GB}$.
+Total capacity $= 2,097,152 \times 512 \text{ bytes} = 1,073,741,824 \text{ bytes} = 1 \text{ GB}$.
 
 (c) A touchscreen displays visual output (images, text, UI elements) like any monitor, making it an output device. Simultaneously, it detects touch input (position, pressure, gestures), making it an input device. The combination in a single hardware component is what makes it both. This dual functionality enables intuitive user interfaces on smartphones and tablets.
 
@@ -99,9 +99,9 @@ Stored as: 1 10000001 10101000000000000000000.
 5. The data is loaded from disk into RAM (and cached for future queries).
 6. The CPU processes the data, formats the result, and sends it back to the teacher's browser.
 
-(b) Worst-case sequential search: $50{,}000 \times 0.001 = 50$ ms.
+(b) Worst-case sequential search: $50,000 \times 0.001 = 50$ ms.
 
-With a B-tree index: search depth $\approx \log_2(50{,}000) \approx 16$ levels. With 3--4 disk accesses (each $\approx 5$ ms), total $\approx 15$--$20$ ms. With the index cached in RAM, the search reduces to a fraction of a millisecond.
+With a B-tree index: search depth $\approx \log_2(50,000) \approx 16$ levels. With 3--4 disk accesses (each $\approx 5$ ms), total $\approx 15$--$20$ ms. With the index cached in RAM, the search reduces to a fraction of a millisecond.
 
 (c) The database buffer cache keeps frequently accessed data and index pages in RAM. Since RAM access time ($\approx 100$ ns) is roughly 100,000 times faster than disk access ($\approx 10$ ms), caching dramatically reduces query latency. The memory hierarchy principle applies: the most frequently accessed database pages are kept in the fastest available storage. The database engine uses LRU (Least Recently Used) or similar algorithms to manage the buffer cache, evicting least-used pages when RAM is full.
 

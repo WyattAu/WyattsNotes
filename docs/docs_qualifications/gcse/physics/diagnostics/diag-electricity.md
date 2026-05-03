@@ -52,9 +52,9 @@ $P = V^2/R$: substitute $I = V/R$ into $P = VI$: $P = V \times V/R = V^2/R$.
 
 (b) Energy per day $= 2 \times 3 = 6$ kWh. Total energy $= 6 \times 30 = 180$ kWh. Cost $= 180 \times 0.28 = \pounds 50.40$.
 
-(c) Total charge $= 50 \times 3600 = 180{,}000$ C. Energy $= V \times Q = 12 \times 180{,}000 = 2{,}160{,}000$ J $= 0.6$ kWh.
+(c) Total charge $= 50 \times 3600 = 180,000$ C. Energy $= V \times Q = 12 \times 180,000 = 2,160,000$ J $= 0.6$ kWh.
 
-Time for 60 W bulb $= 2{,}160{,}000 / 60 = 36{,}000$ s $= 10$ hours.
+Time for 60 W bulb $= 2,160,000 / 60 = 36,000$ s $= 10$ hours.
 
 ---
 

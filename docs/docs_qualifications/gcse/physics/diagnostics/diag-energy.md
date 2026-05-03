@@ -29,7 +29,7 @@ hide_table_of_contents: true
 
 (a) Specific heat capacity is the energy required to raise the temperature of 1 kg of a substance by $1^\circ\text{C}$. Unit: J/(kg $^\circ$C) or J/(kg K).
 
-(b) $\Delta E = mc\Delta T = 2 \times 4200 \times (80 - 20) = 2 \times 4200 \times 60 = 504{,}000$ J $= 504$ kJ.
+(b) $\Delta E = mc\Delta T = 2 \times 4200 \times (80 - 20) = 2 \times 4200 \times 60 = 504,000$ J $= 504$ kJ.
 
 (c) $c = \frac{\Delta E}{m\Delta T} = \frac{45000}{0.5 \times (225 - 25)} = \frac{45000}{0.5 \times 200} = \frac{45000}{100} = 450$ J/(kg $^\circ$C).
 
@@ -61,13 +61,13 @@ $\text{Efficiency} = 1 - \frac{298}{773} = 1 - 0.3855 = 0.6145 = 61.5\%$.
 
 (a) By conservation of energy: $mgh_A = \frac{1}{2}mv_B^2 + mgh_B$.
 $800 \times 9.8 \times 30 = \frac{1}{2} \times 800 \times v_B^2 + 800 \times 9.8 \times 10$.
-$235{,}200 = 400v_B^2 + 78{,}400$.
-$400v_B^2 = 156{,}800$. $v_B^2 = 392$. $v_B = 19.8$ m/s.
+$235,200 = 400v_B^2 + 78,400$.
+$400v_B^2 = 156,800$. $v_B^2 = 392$. $v_B = 19.8$ m/s.
 
-(b) KE at actual speed: $\frac{1}{2} \times 800 \times 18^2 = 400 \times 324 = 129{,}600$ J.
-Expected KE: $156{,}800$ J. Energy lost $= 156{,}800 - 129{,}600 = 27{,}200$ J.
+(b) KE at actual speed: $\frac{1}{2} \times 800 \times 18^2 = 400 \times 324 = 129,600$ J.
+Expected KE: $156,800$ J. Energy lost $= 156,800 - 129,600 = 27,200$ J.
 
-(c) Work done against friction $= F \times d = 27{,}200$. $F = 27{,}200 / 120 = 226.7$ N.
+(c) Work done against friction $= F \times d = 27,200$. $F = 27,200 / 120 = 226.7$ N.
 
 (d) As the coaster descends from A to B, gravitational potential energy (proportional to height) is converted to kinetic energy (proportional to speed squared). The total mechanical energy (GPE + KE) remains constant if no friction is present. This is the conservation of energy: energy cannot be created or destroyed, only transferred from one store to another. In reality, some mechanical energy is transferred to thermal energy by friction, but the total energy (including thermal) is always conserved.
 
@@ -76,21 +76,21 @@ Expected KE: $156{,}800$ J. Energy lost $= 156{,}800 - 129{,}600 = 27{,}200$ J.
 
 **Solution:**
 
-(a) $\Delta E = mc\Delta T = 1.5 \times 4200 \times 82 = 516{,}600$ J $= 516.6$ kJ.
+(a) $\Delta E = mc\Delta T = 1.5 \times 4200 \times 82 = 516,600$ J $= 516.6$ kJ.
 
-(b) Electrical energy input $= 516{,}600 / 0.85 = 607{,}765$ J $= 607.8$ kJ.
-Time $= \frac{607{,}765}{2200} = 276.3$ s $\approx 4.6$ minutes.
+(b) Electrical energy input $= 516,600 / 0.85 = 607,765$ J $= 607.8$ kJ.
+Time $= \frac{607,765}{2200} = 276.3$ s $\approx 4.6$ minutes.
 
-(c) Energy in kWh $= 607{,}765 / 3{,}600{,}000 = 0.1688$ kWh. Cost $= 0.1688 \times 28 = 4.73$ p.
+(c) Energy in kWh $= 607,765 / 3,600,000 = 0.1688$ kWh. Cost $= 0.1688 \times 28 = 4.73$ p.
 
-(d) Microwave energy input $= 800 \times 180 = 144{,}000$ J. Efficiency $= 516{,}600 / 144{,}000 = 3.59$.
+(d) Microwave energy input $= 800 \times 180 = 144,000$ J. Efficiency $= 516,600 / 144,000 = 3.59$.
 
 Wait, that exceeds 100%, which is impossible. Let me reconsider: if the microwave heats 1.5 kg from $18^\circ\text{C}$ to $100^\circ\text{C}$ in 3 minutes, the useful energy is 516.6 kJ but the input is only 144 kJ. This means the scenario is physically impossible. Let me adjust: perhaps the microwave heats less water, or to a lower temperature.
 
 Let me recalculate with a more realistic scenario: the microwave heats 0.3 kg from $18^\circ\text{C}$ to $80^\circ\text{C}$ in 3 minutes.
-$\Delta E = 0.3 \times 4200 \times 62 = 78{,}120$ J. Input $= 800 \times 180 = 144{,}000$ J. Efficiency $= 78{,}120/144{,}000 = 54.3\%$.
+$\Delta E = 0.3 \times 4200 \times 62 = 78,120$ J. Input $= 800 \times 180 = 144,000$ J. Efficiency $= 78,120/144,000 = 54.3\%$.
 
-Cost of microwave $= 144{,}000 / 3{,}600{,}000 \times 28 = 0.04 \times 28 = 1.12$ p.
+Cost of microwave $= 144,000 / 3,600,000 \times 28 = 0.04 \times 28 = 1.12$ p.
 
 The kettle is more efficient (85% vs 54.3%) and costs 4.73p vs 1.12p, but the kettle heats more water to a higher temperature.
 
@@ -108,7 +108,7 @@ The kettle is more efficient (85% vs 54.3%) and costs 4.73p vs 1.12p, but the ke
 
 (b) Power $= \text{irradiance} \times \text{area} \times \text{efficiency} = 800 \times 10 \times 0.18 = 1440$ W $= 1.44$ kW.
 
-(c) $A = \pi \times 40^2 = 5026.5 \text{ m}^2$. $P = \frac{1}{2} \times 1.2 \times 5026.5 \times 12^3 = 0.6 \times 5026.5 \times 1728 = 5{,}211{,}517$ W $\approx 5.2$ MW.
+(c) $A = \pi \times 40^2 = 5026.5 \text{ m}^2$. $P = \frac{1}{2} \times 1.2 \times 5026.5 \times 12^3 = 0.6 \times 5026.5 \times 1728 = 5,211,517$ W $\approx 5.2$ MW.
 
 In practice, the Betz limit means a turbine can extract at most 59.3% of this: $5.2 \times 0.593 \approx 3.1$ MW.
 

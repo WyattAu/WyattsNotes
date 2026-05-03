@@ -62,11 +62,11 @@ $\varepsilon = N\frac{\Delta \Phi}{\Delta t} = 500 \times \frac{0.06}{0.1} = 500
 
 **Solution:**
 
-(a) $\frac{V_s}{V_p} = \frac{N_s}{N_p}$. $\frac{400{,}000}{25{,}000} = \frac{N_s}{2000}$. $N_s = 2000 \times 16 = 32{,}000$ turns.
+(a) $\frac{V_s}{V_p} = \frac{N_s}{N_p}$. $\frac{400,000}{25,000} = \frac{N_s}{2000}$. $N_s = 2000 \times 16 = 32,000$ turns.
 
-(b) Power loss $= I^2R = 100^2 \times 10 = 100{,}000$ W $= 100$ kW.
+(b) Power loss $= I^2R = 100^2 \times 10 = 100,000$ W $= 100$ kW.
 
-(c) Power transmitted $= 400{,}000 \times 100 = 40{,}000{,}000$ W $= 40$ MW. At 25 kV: $I = 40{,}000{,}000/25{,}000 = 1600$ A. Power loss $= 1600^2 \times 10 = 25{,}600{,}000$ W $= 25{,}600$ kW $= 25.6$ MW.
+(c) Power transmitted $= 400,000 \times 100 = 40,000,000$ W $= 40$ MW. At 25 kV: $I = 40,000,000/25,000 = 1600$ A. Power loss $= 1600^2 \times 10 = 25,600,000$ W $= 25,600$ kW $= 25.6$ MW.
 
 (d) Power loss in transmission lines $= I^2R$. By increasing the voltage (using a step-up transformer), the current is reduced for the same power ($P = VI$). Since power loss depends on $I^2$, reducing the current by a factor of 16 (from 1600 A to 100 A) reduces the power loss by a factor of $16^2 = 256$. This is why high-voltage transmission is far more efficient: losses at 400 kV (100 kW) are negligible compared to losses at 25 kV (25,600 kW).
 

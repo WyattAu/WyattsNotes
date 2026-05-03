@@ -41,7 +41,7 @@ $\text{LCM} = 2^2 \times 3^2 \times 5 \times 7 = 4 \times 9 \times 5 \times 7 = 
 (d) A prime number has exactly two factors: 1 and itself. The number 1 has only one factor (itself). The definition of prime requires exactly two distinct factors, which 1 does not satisfy. Additionally, the Fundamental Theorem of Arithmetic (every integer $\gt 1$ has a unique prime factorisation) would break down if 1 were prime, since $6 = 2 \times 3 = 1 \times 2 \times 3 = 1 \times 1 \times 2 \times 3$ would not have a unique factorisation.
 
 ### UT-3: Bounds and Standard Form
-**Question:** (a) A rectangle has length 8.4 cm (correct to 1 decimal place) and width 5.2 cm (correct to 1 decimal place). Calculate the upper bound of the area. (b) Write $0.000376$ in standard form. (c) Calculate $\frac{4.2 \times 10^5}{2.8 \times 10^{-3}}$, giving your answer in standard form. (d) The population of a city is $3.45 \times 10^6$ to the nearest $10{,}000$. Write down the lower and upper bounds.
+**Question:** (a) A rectangle has length 8.4 cm (correct to 1 decimal place) and width 5.2 cm (correct to 1 decimal place). Calculate the upper bound of the area. (b) Write $0.000376$ in standard form. (c) Calculate $\frac{4.2 \times 10^5}{2.8 \times 10^{-3}}$, giving your answer in standard form. (d) The population of a city is $3.45 \times 10^6$ to the nearest $10,000$. Write down the lower and upper bounds.
 
 **Solution:**
 
@@ -52,7 +52,7 @@ Upper bound of area $= 8.45 \times 5.25 = 44.3625$ cm$^2$.
 
 (c) $\frac{4.2 \times 10^5}{2.8 \times 10^{-3}} = \frac{4.2}{2.8} \times 10^{5-(-3)} = 1.5 \times 10^8$.
 
-(d) Nearest $10{,}000$: half of $10{,}000 = 5000$. Lower bound $= 3{,}445{,}000 = 3.445 \times 10^6$. Upper bound $= 3{,}455{,}000 = 3.455 \times 10^6$.
+(d) Nearest $10,000$: half of $10,000 = 5000$. Lower bound $= 3,445,000 = 3.445 \times 10^6$. Upper bound $= 3,455,000 = 3.455 \times 10^6$.
 
 ---
 

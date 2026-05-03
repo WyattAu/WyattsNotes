@@ -51,14 +51,14 @@ Limitation: Hooke's law only applies up to the limit of proportionality (elastic
 
 (a) Momentum $=$ mass $\times$ velocity. It is a vector quantity. Unit: kg m/s.
 
-(b) Before: $p = 1500 \times 20 + 1000 \times 0 = 30{,}000$ kg m/s.
+(b) Before: $p = 1500 \times 20 + 1000 \times 0 = 30,000$ kg m/s.
 After: $p = (1500 + 1000) \times v = 2500v$.
-Conservation of momentum: $2500v = 30{,}000$. $v = 12$ m/s.
+Conservation of momentum: $2500v = 30,000$. $v = 12$ m/s.
 
 (c) Total area $= 2 \times 0.02 = 0.04$ m$^2$. Weight $= 60 \times 9.8 = 588$ N.
-Pressure $= F/A = 588/0.04 = 14{,}700$ Pa $= 14.7$ kPa.
+Pressure $= F/A = 588/0.04 = 14,700$ Pa $= 14.7$ kPa.
 
-(d) Pressure $= F/A$. Stiletto heels have a very small contact area (perhaps $1 \text{ cm}^2 = 0.0001 \text{ m}^2$), so the same weight (force) is distributed over a much smaller area, producing a much higher pressure. $P = 588/0.0001 = 5{,}880{,}000$ Pa $\approx 5.9$ MPa, compared to 14.7 kPa with flat shoes. This is why stiletto heels can damage wooden floors.
+(d) Pressure $= F/A$. Stiletto heels have a very small contact area (perhaps $1 \text{ cm}^2 = 0.0001 \text{ m}^2$), so the same weight (force) is distributed over a much smaller area, producing a much higher pressure. $P = 588/0.0001 = 5,880,000$ Pa $\approx 5.9$ MPa, compared to 14.7 kPa with flat shoes. This is why stiletto heels can damage wooden floors.
 
 ---
 

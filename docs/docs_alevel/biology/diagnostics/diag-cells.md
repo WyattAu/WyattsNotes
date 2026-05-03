@@ -98,7 +98,7 @@ A biologist wants to observe the detailed internal structure of a mitochondrion 
 
 (b) **Advantages of TEM over light microscopy**:
 - Much higher resolution (approximately 0.2 nm vs 200 nm), revealing fine ultrastructural detail such as mitochondrial cristae, ribosomes, and nuclear pores.
-- Much higher useful magnification (up to approximately $\times 500{,}000$ vs approximately $\times 1{,}500$).
+- Much higher useful magnification (up to approximately $\times 500,000$ vs approximately $\times 1,500$).
 
 **Limitations of TEM**:
 1. The specimen must be placed in a vacuum, so only dead, fixed, dehydrated specimens can be viewed — no living cells can be observed.
@@ -112,9 +112,9 @@ First, convert units consistently:
 - Image size of scale bar $= 20\text{ mm} = 20 \times 10^6\text{ nm}$
 - Actual size of scale bar $= 50\text{ nm}$
 
-$\text{Magnification} = \frac{20 \times 10^6}{50} = \frac{20{,}000{,}000}{50} = 400{,}000$
+$\text{Magnification} = \frac{20 \times 10^6}{50} = \frac{20,000,000}{50} = 400,000$
 
-The magnification is $\times 400{,}000$.
+The magnification is $\times 400,000$.
 
 (d) **Cell fractionation** is the process of breaking open cells and separating their organelles. The steps are:
 1. **Homogenisation**: the tissue is placed in a cold, isotonic, buffered solution and homogenised (blended) to break the cell membranes, releasing the organelles. The solution is cold to reduce enzyme activity that could damage organelles; isotonic to prevent osmotic lysis or shrinkage of organelles; and buffered to maintain a constant pH.

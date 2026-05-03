@@ -88,9 +88,9 @@ p {
 
 **Lossless compression** reduces file size without losing any data. The original is perfectly reconstructed. Example: PNG, FLAC audio, ZIP files.
 
-(d) Uncompressed: $44{,}100 \times 16 \times 2 \times 10 = 14{,}112{,}000$ bits $= 1{,}764{,}000$ bytes $\approx 1.68$ MB.
+(d) Uncompressed: $44,100 \times 16 \times 2 \times 10 = 14,112,000$ bits $= 1,764,000$ bytes $\approx 1.68$ MB.
 
-MP3 at 128 kbps: $128{,}000 \times 10 / 8 = 160{,}000$ bytes $\approx 156$ KB.
+MP3 at 128 kbps: $128,000 \times 10 / 8 = 160,000$ bytes $\approx 156$ KB.
 
 Compression ratio $\approx 1.68 \text{ MB} / 0.156 \text{ MB} \approx 10.8:1$.
 
@@ -135,7 +135,7 @@ Compression ratio $\approx 1.68 \text{ MB} / 0.156 \text{ MB} \approx 10.8:1$.
 
 **Server side:** The web server receives the file, the application validates it (file type, size, virus scan), generates a unique filename (to prevent overwrites), saves it to the file system, and records the metadata in the database.
 
-(c) Files per year: $1000 \times 5 = 5000$ files. Size per year: $5000 \times 2 \text{ MB} = 10{,}000 \text{ MB} \approx 10$ GB. For 3 years: $30$ GB. With overhead (metadata, file system overhead): approximately **35--40 GB** of storage needed.
+(c) Files per year: $1000 \times 5 = 5000$ files. Size per year: $5000 \times 2 \text{ MB} = 10,000 \text{ MB} \approx 10$ GB. For 3 years: $30$ GB. With overhead (metadata, file system overhead): approximately **35--40 GB** of storage needed.
 
 (d) **File integrity during upload:**
 1. **HTTPS/TLS:** Encrypts data in transit, preventing tampering.
@@ -148,11 +148,11 @@ Compression ratio $\approx 1.68 \text{ MB} / 0.156 \text{ MB} \approx 10.8:1$.
 
 **Solution:**
 
-(a) **Video (720p, 30fps, 24-bit colour, uncompressed):** $1280 \times 720 \times 3 \times 30 \times 120 = 9{,}953{,}280{,}000$ bytes $\approx 9.27$ GB.
+(a) **Video (720p, 30fps, 24-bit colour, uncompressed):** $1280 \times 720 \times 3 \times 30 \times 120 = 9,953,280,000$ bytes $\approx 9.27$ GB.
 
-**Photos:** $50 \times 4000 \times 3000 \times 3 = 1{,}800{,}000{,}000$ bytes $\approx 1.68$ GB.
+**Photos:** $50 \times 4000 \times 3000 \times 3 = 1,800,000,000$ bytes $\approx 1.68$ GB.
 
-**Audio (44.1 kHz, 16-bit, stereo, 30 seconds for background):** $44{,}100 \times 16 \times 2 \times 30 = 42{,}336{,}000$ bytes $\approx 40.4$ MB.
+**Audio (44.1 kHz, 16-bit, stereo, 30 seconds for background):** $44,100 \times 16 \times 2 \times 30 = 42,336,000$ bytes $\approx 40.4$ MB.
 
 Total uncompressed: $\approx 9.27 + 1.68 + 0.04 = 10.99$ GB.
 
@@ -160,7 +160,7 @@ Total uncompressed: $\approx 9.27 + 1.68 + 0.04 = 10.99$ GB.
 
 **Photos:** JPEG at 10:1 compression: $1.68 \text{ GB} / 10 \approx 168$ MB. Displayed at web resolution (800 $\times$ 600), each thumbnail $\approx 50$ KB, full view $\approx 200$ KB. Total web-optimised: $50 \times 200 \text{ KB} = 10$ MB.
 
-**Audio:** MP3 at 128 kbps for 30 seconds: $128{,}000 \times 30 / 8 = 480$ KB. Or as a short background loop, even smaller.
+**Audio:** MP3 at 128 kbps for 30 seconds: $128,000 \times 30 / 8 = 480$ KB. Or as a short background loop, even smaller.
 
 Total compressed: $\approx 75 + 10 + 0.5 = 85.5$ MB (vs 11 GB uncompressed -- a 128:1 reduction).
 

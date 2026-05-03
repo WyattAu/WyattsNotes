@@ -98,7 +98,7 @@ hide_table_of_contents: true
 
 In the **tissues:** Low oxygen concentration and high CO$_2$ concentration (from cellular respiration) cause oxyhaemoglobin to release oxygen. The lower pH (due to dissolved CO$_2$ forming carbonic acid) reduces haemoglobin's oxygen affinity, promoting unloading.
 
-(d) Capillary diameter $= 5 \mu$m. Cell diameter $= 7 \mu$m. Since cells deform, they pass through single file. Length of capillary $= 10{,}000 \mu$m. If each cell occupies approximately 7 $\mu$m when deformed: $10{,}000/7 \approx 1429$ cells.
+(d) Capillary diameter $= 5 \mu$m. Cell diameter $= 7 \mu$m. Since cells deform, they pass through single file. Length of capillary $= 10,000 \mu$m. If each cell occupies approximately 7 $\mu$m when deformed: $10,000/7 \approx 1429$ cells.
 
 ### IT-3: Nervous System and Homeostasis (with Organisation)
 **Question:** (a) Describe the pathway of a nerve impulse in a reflex arc from touching a hot object to withdrawing the hand. (b) Explain the difference between sensory, relay, and motor neurons. (c) Calculate the speed of a nerve impulse that travels 1.5 m in 0.012 seconds. (d) Explain why reflex actions are faster than voluntary actions.

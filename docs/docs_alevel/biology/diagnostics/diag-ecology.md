@@ -72,9 +72,9 @@ An ecologist studies a grassland ecosystem and measures the following energy val
 
 (a) **Gross primary production (GPP)** is the total amount of chemical energy stored in plant biomass (organic compounds) per unit area per unit time through photosynthesis. **Net primary production (NPP)** is the chemical energy stored in plant biomass after respiratory losses have been subtracted: NPP = GPP - R (where R is the energy lost through plant respiration). NPP represents the energy available to herbivores (primary consumers) and decomposers. The relationship is: **NPP = GPP - plant respiration**.
 
-(b) Percentage converted to GPP: $\frac{20{,}000}{2{,}000{,}000} \times 100 = 1.0\%$
+(b) Percentage converted to GPP: $\frac{20,000}{2,000,000} \times 100 = 1.0\%$
 
-Percentage converted to NPP: $\frac{16{,}000}{2{,}000{,}000} \times 100 = 0.8\%$
+Percentage converted to NPP: $\frac{16,000}{2,000,000} \times 100 = 0.8\%$
 
 These percentages are low because:
 - **Not all light is absorbed**: much light is reflected, transmitted through leaves, or falls on non-photosynthetic surfaces (bare soil, stems).
@@ -178,7 +178,7 @@ A farmer is considering converting from intensive beef farming (feeding grain to
 **Solution:**
 
 (a) Ecological efficiency from cereal to cattle:
-$$\text{Efficiency} = \frac{\text{energy in cattle biomass}}{\text{energy consumed by cattle}} \times 100 = \frac{3{,}600}{36{,}000} \times 100 = 10\%$$
+$$\text{Efficiency} = \frac{\text{energy in cattle biomass}}{\text{energy consumed by cattle}} \times 100 = \frac{3,600}{36,000} \times 100 = 10\%$$
 
 The ecological efficiency is approximately **10%** (this is consistent with the typical 10% rule for energy transfer between trophic levels).
 
@@ -198,7 +198,7 @@ If the cereal crop is fed to cattle and humans eat the cattle:
 Energy available directly from crops = 40,000 kJ ha$^{-1}$ year$^{-1}$
 Energy available from beef = 3,600 kJ ha$^{-1}$ year$^{-1}$
 
-$\frac{40{,}000}{3{,}600} \approx 11.1$ times more energy is available when crops are consumed directly by humans. This is because removing the cattle (an extra trophic level) avoids the approximately 90% energy loss associated with animal respiration, excretion, and heat production. This is the fundamental ecological argument for plant-based diets being more land-efficient and energy-efficient.
+$\frac{40,000}{3,600} \approx 11.1$ times more energy is available when crops are consumed directly by humans. This is because removing the cattle (an extra trophic level) avoids the approximately 90% energy loss associated with animal respiration, excretion, and heat production. This is the fundamental ecological argument for plant-based diets being more land-efficient and energy-efficient.
 
 (d) **Evaluation of intensive farming vs environmental impact**:
 

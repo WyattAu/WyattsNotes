@@ -80,7 +80,7 @@ Hong Kong is a mixed economy with a strong free-market tradition. The government
 
 **Solution:**
 
-(a) Equilibrium: $500 - 2P = 100 + 3P$, so $400 = 5P$, $P^* = 80$ ($\$80{,}000$), $Q^* = 500 - 2(80) = 340$.
+(a) Equilibrium: $500 - 2P = 100 + 3P$, so $400 = 5P$, $P^* = 80$ ($\$80,000$), $Q^* = 500 - 2(80) = 340$.
 
 (b) The free market produces $Q^* = 340$ but the socially optimal quantity is $Q_{\text{opt}} = 300$. Wait -- positive externalities mean the social benefit exceeds the private benefit, so the socially optimal quantity should be *greater* than the market quantity, not less. Let me reconsider.
 
@@ -92,7 +92,7 @@ Quantity: $Q = 100 + 3P = 100 + 3(400 + 2s)/5 = 100 + (1200 + 6s)/5 = (500 + 120
 
 Set $Q = 400$: $(1700 + 6s)/5 = 400$, $1700 + 6s = 2000$, $6s = 300$, $s = 50$.
 
-A per-unit subsidy of $\$50{,}000$ would shift the effective demand curve, achieving $Q = 400$.
+A per-unit subsidy of $\$50,000$ would shift the effective demand curve, achieving $Q = 400$.
 
 (c) In a free market, consumers only consider their private benefit (individual health improvement) and private cost (medical bills). They do not account for the positive externalities their consumption creates for others (e.g., reduced disease transmission, a more productive workforce, lower public health spending). Because the private benefit is less than the social benefit, consumers demand less than is socially optimal. Given the fundamental problem of scarcity, this means resources are underallocated to healthcare -- society could be made better off by shifting resources from other uses to healthcare. Government intervention (subsidies, public provision) corrects this by internalising the externality.
 

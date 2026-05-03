@@ -62,7 +62,7 @@ hide_table_of_contents: true
 
 (c) **Magnification** is how much larger the image appears compared to the actual object (e.g., $400\times$ means 400 times larger). **Resolution** is the ability to distinguish between two closely spaced objects as separate -- the minimum distance at which two points can be seen as distinct. Higher resolution means finer detail is visible.
 
-(d) Two advantages: (1) **Much higher resolution:** Electron microscopes use electrons (much shorter wavelength than light) and can resolve structures down to about 0.2 nm, compared to about 200 nm for light microscopes. This reveals organelles like ribosomes, the structure of membranes, and internal details of mitochondria. (2) **Much higher effective magnification:** Electron microscopes can achieve magnifications of up to $2{,}000{,}000\times$, compared to about $2000\times$ for light microscopes. Disadvantages: specimens must be in a vacuum (dead), preparation is complex, and images are black and white.
+(d) Two advantages: (1) **Much higher resolution:** Electron microscopes use electrons (much shorter wavelength than light) and can resolve structures down to about 0.2 nm, compared to about 200 nm for light microscopes. This reveals organelles like ribosomes, the structure of membranes, and internal details of mitochondria. (2) **Much higher effective magnification:** Electron microscopes can achieve magnifications of up to $2,000,000\times$, compared to about $2000\times$ for light microscopes. Disadvantages: specimens must be in a vacuum (dead), preparation is complex, and images are black and white.
 
 ---
 
@@ -108,6 +108,6 @@ hide_table_of_contents: true
 
 (b) Magnification $= \text{image size} / \text{actual size} = 5 \text{ mm} / 0.0015 \text{ mm} = 3333\times$.
 
-(c) Actual size $= 3.8 \text{ mm} / 15{,}000 = 0.000253 \text{ mm} = 0.253 \mu\text{m}$.
+(c) Actual size $= 3.8 \text{ mm} / 15,000 = 0.000253 \text{ mm} = 0.253 \mu\text{m}$.
 
 (d) As a cell grows larger, its volume increases faster than its surface area ($V \propto r^3$ vs $SA \propto r^2$). The surface area to volume ratio decreases, meaning: (1) Not enough cell membrane surface area for efficient exchange of oxygen, nutrients, and waste products by diffusion and osmosis. (2) The diffusion distance from the cell membrane to the centre of the cell increases, slowing down the rate of exchange. (3) The cell cannot sustain its metabolic demands. Small cells have a large SA:V ratio, ensuring efficient exchange. This is why large organisms are multicellular (many small cells rather than one giant cell) and why cells divide when they reach a certain size.

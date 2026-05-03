@@ -61,7 +61,7 @@ A **switch** is a data link layer device that learns MAC addresses and forwards 
 
 (a) Download time $= \frac{150 \times 8}{100} = 12$ seconds. (150 MB $\times 8 = 1200$ megabits; $1200 / 100 = 12$ s.)
 
-(b) Transmission time $= \frac{10 \times 1024 \times 8}{10^9} = \frac{81{,}920}{10^9} = 0.00008192$ s $= 0.08192$ ms.
+(b) Transmission time $= \frac{10 \times 1024 \times 8}{10^9} = \frac{81,920}{10^9} = 0.00008192$ s $= 0.08192$ ms.
 
 Total time $=$ latency $+$ transmission time $= 50 + 0.082 = 50.082$ ms. Latency dominates for small packets.
 

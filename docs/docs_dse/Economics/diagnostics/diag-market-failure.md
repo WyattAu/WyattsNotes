@@ -48,15 +48,15 @@ The socially optimal quality level is approximately 99.5 (essentially maximum qu
 (d) In the private market, each resident decides whether to contribute based on their **private marginal benefit** (PMB $= 10 - 0.1Q$), not the social marginal benefit. At any quality level, PMB $\lt$ MSB, so each resident undervalues the lighthouse. The private market equilibrium would occur where the individual demand equals the average cost share: $10 - 0.1Q = 5Q/100 + 2 = 0.05Q + 2$. This gives $8 = 0.15Q$, $Q = 53.3$ -- far below the social optimum of 99.5. The free rider problem means many residents would not contribute at all, expecting others to pay.
 
 ### UT-3: Information Asymmetry
-**Question:** In the market for used cars, sellers know the true quality of their cars but buyers do not. There are two types of cars: good cars worth $\$80{,}000$ and bad cars (lemons) worth $\$40{,}000$. Buyers value good cars at $\$100{,}000$ and bad cars at $\$50{,}000$. Half of all cars on the market are good and half are bad. (a) What price would a risk-neutral buyer be willing to pay if they cannot distinguish between good and bad cars? (b) What happens to the market if the price from part (a) prevails? (c) Explain the concept of adverse selection in this context.
+**Question:** In the market for used cars, sellers know the true quality of their cars but buyers do not. There are two types of cars: good cars worth $\$80,000$ and bad cars (lemons) worth $\$40,000$. Buyers value good cars at $\$100,000$ and bad cars at $\$50,000$. Half of all cars on the market are good and half are bad. (a) What price would a risk-neutral buyer be willing to pay if they cannot distinguish between good and bad cars? (b) What happens to the market if the price from part (a) prevails? (c) Explain the concept of adverse selection in this context.
 
 **Solution:**
 
-(a) Expected value to buyer $= 0.5 \times 100{,}000 + 0.5 \times 50{,}000 = \$75{,}000$.
+(a) Expected value to buyer $= 0.5 \times 100,000 + 0.5 \times 50,000 = \$75,000$.
 
-A risk-neutral buyer would pay up to $\$75{,}000$.
+A risk-neutral buyer would pay up to $\$75,000$.
 
-(b) At a price of $\$75{,}000$: Sellers of good cars (value $\$80{,}000$) would not sell because the price is below their valuation. Only sellers of bad cars (value $\$40{,}000$) would sell. This means only lemons remain in the market.
+(b) At a price of $\$75,000$: Sellers of good cars (value $\$80,000$) would not sell because the price is below their valuation. Only sellers of bad cars (value $\$40,000$) would sell. This means only lemons remain in the market.
 
 (c) **Adverse selection** occurs when asymmetric information leads to the withdrawal of high-quality products from the market. Since buyers cannot distinguish good from bad cars, they offer a price based on the average quality. This price drives out the good cars (whose owners won't sell at that price), leaving only lemons. Buyers then realise only lemons remain and lower their offer price further. In the extreme, the market can collapse entirely -- a result known as the "market for lemons" (Akerlof, 1970). Solutions include: warranties/s guarantees (signalling), third-party inspections, certification programmes, and reputation systems.
 

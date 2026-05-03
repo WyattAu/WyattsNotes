@@ -103,13 +103,13 @@ Increase $= 100 - 7.5 = 92.5$ L/min.
 (d) The oxygen debt is 4 L. At the elevated breathing rate of 30 breaths/min (after race) with tidal volume 1.5 L: oxygen intake $= 30 \times 1.5 = 45$ L/min. Normal oxygen demand $\approx 7.5$ L/min. Extra oxygen available $= 45 - 7.5 = 37.5$ L/min. Time to repay debt $= 4/37.5 = 0.107$ min $\approx 6.4$ seconds. This seems too fast -- in practice, only a fraction of the elevated oxygen intake goes to repaying the debt, so recovery takes several minutes.
 
 ### IT-3: Bioenergetics in Ecosystems (with Ecology)
-**Question:** A pond ecosystem has the following energy values (in kJ/m$^2$/year): sunlight reaching pond $= 2{,}000{,}000$; energy absorbed by producers $= 20{,}000$; energy transferred to herbivores $= 2000$; energy transferred to carnivores $= 200$. (a) Calculate the percentage of sunlight energy captured by producers. (b) Calculate the ecological efficiency at each trophic level transfer. (c) Explain why energy is lost between trophic levels. (d) Explain why food chains rarely have more than 4 or 5 trophic levels.
+**Question:** A pond ecosystem has the following energy values (in kJ/m$^2$/year): sunlight reaching pond $= 2,000,000$; energy absorbed by producers $= 20,000$; energy transferred to herbivores $= 2000$; energy transferred to carnivores $= 200$. (a) Calculate the percentage of sunlight energy captured by producers. (b) Calculate the ecological efficiency at each trophic level transfer. (c) Explain why energy is lost between trophic levels. (d) Explain why food chains rarely have more than 4 or 5 trophic levels.
 
 **Solution:**
 
-(a) Percentage captured by producers $= 20{,}000 / 2{,}000{,}000 \times 100\% = 1\%$.
+(a) Percentage captured by producers $= 20,000 / 2,000,000 \times 100\% = 1\%$.
 
-(b) Producer $\to$ herbivore: $2000/20{,}000 \times 100\% = 10\%$.
+(b) Producer $\to$ herbivore: $2000/20,000 \times 100\% = 10\%$.
 Herbivore $\to$ carnivore: $200/2000 \times 100\% = 10\%$.
 
 (c) Energy is lost between trophic levels because: (1) **Respiration:** Organisms use energy for metabolic processes (movement, maintaining body temperature, digestion). This energy is lost as heat. (2) **Excretion and egestion:** Not all food is digested and absorbed; some passes through as waste. (3) **Incomplete consumption:** Not all available biomass is eaten (bones, roots, etc.). (4) **Excretion:** Some absorbed energy is lost in urine. Typically, only about 10% of energy is transferred to the next trophic level.

@@ -37,7 +37,7 @@ Larger area $= 27 \times \frac{25}{9} = 3 \times 25 = 75$ cm$^2$.
 (d) Time $= 12 / 0.5 = 24$ minutes.
 
 ### UT-3: Growth and Decay
-**Question:** (a) A population of bacteria doubles every 3 hours. If the initial population is 500, calculate the population after 12 hours. (b) A car depreciates at 15% per year. Calculate its value after 4 years if it was bought for $\pounds 18{,}000$. (c) The half-life of a radioactive substance is 8 days. If there are 200 g initially, how much remains after 24 days? (d) Explain the difference between simple and compound interest with a numerical example.
+**Question:** (a) A population of bacteria doubles every 3 hours. If the initial population is 500, calculate the population after 12 hours. (b) A car depreciates at 15% per year. Calculate its value after 4 years if it was bought for $\pounds 18,000$. (c) The half-life of a radioactive substance is 8 days. If there are 200 g initially, how much remains after 24 days? (d) Explain the difference between simple and compound interest with a numerical example.
 
 **Solution:**
 

@@ -48,13 +48,13 @@ $\text{GDP} = C + I + G + (X - M) = 800 + 300 + 250 + (400 - 350) = \text{HK\$}1
 
 (d) Real GDP per capita $= \frac{\text{Real GDP}}{\text{Population}}$.
 
-- 2015: $\frac{500}{10} = 50{,}000$ per person.
-- 2025: $\frac{600}{12} = 50{,}000$ per person.
+- 2015: $\frac{500}{10} = 50,000$ per person.
+- 2025: $\frac{600}{12} = 50,000$ per person.
 
 Despite real GDP growing 20%, real GDP per capita remained unchanged because population grew proportionally. This illustrates why per capita measures are important for assessing living standards.
 
 ### UT-3: Limitations of GDP as a Welfare Measure
-**Question:** Two countries have the same GDP per capita of $\$40{,}000$. Country A has: average working hours $= 48$/week, life expectancy $= 72$ years, Gini coefficient $= 0.45$, air quality index $= 150$ (unhealthy). Country B has: average working hours $= 35$/week, life expectancy $= 82$ years, Gini coefficient $= 0.28$, air quality index $= 40$ (good). (a) Explain three ways in which GDP fails to measure economic welfare. (b) Which country likely has higher economic welfare despite equal GDP per capita? Justify. (c) Suggest two alternative measures that would better capture welfare differences.
+**Question:** Two countries have the same GDP per capita of $\$40,000$. Country A has: average working hours $= 48$/week, life expectancy $= 72$ years, Gini coefficient $= 0.45$, air quality index $= 150$ (unhealthy). Country B has: average working hours $= 35$/week, life expectancy $= 82$ years, Gini coefficient $= 0.28$, air quality index $= 40$ (good). (a) Explain three ways in which GDP fails to measure economic welfare. (b) Which country likely has higher economic welfare despite equal GDP per capita? Justify. (c) Suggest two alternative measures that would better capture welfare differences.
 
 **Solution:**
 
@@ -86,7 +86,7 @@ Using Okun's law: $\frac{Y - Y^*}{Y^*} = -2 \times u_c = -2 \times 3\% = -6\%$.
 
 So $Y = 0.94 Y^*$, meaning actual output is 6% below potential. $Y^* = 1000/0.94 = \$1063.8$ billion. Output gap $= 1000 - 1063.8 = -\$63.8$ billion (negative = recessionary gap).
 
-(c) Real GDP per capita $= \frac{1000}{50} = \$20{,}000$.
+(c) Real GDP per capita $= \frac{1000}{50} = \$20,000$.
 
 (d) The economy has a recessionary output gap (-6%) and unemployment above the natural rate (8% vs 5%). The government should pursue **expansionary policy** -- either increase government spending, cut taxes (fiscal policy), or lower interest rates (monetary policy) to stimulate aggregate demand, close the output gap, and reduce unemployment towards the natural rate.
 
@@ -105,8 +105,8 @@ So $Y = 0.94 Y^*$, meaning actual output is 6% below potential. $Y^* = 1000/0.94
 
 **Solution:**
 
-(a) Country A: GDP per capita $= \frac{2000}{60} = \$33{,}333$.
-Country B: GDP per capita $= \frac{500}{10} = \$50{,}000$.
+(a) Country A: GDP per capita $= \frac{2000}{60} = \$33,333$.
+Country B: GDP per capita $= \frac{500}{10} = \$50,000$.
 
 (b) Country A has a larger total economy (nominal GDP $\$2000$B vs $\$500$B), but Country B has a higher GDP per capita and is growing much faster (7.0% vs 2.5%).
 
@@ -115,7 +115,7 @@ Country B: GDP per capita $= \frac{500}{10} = \$50{,}000$.
 (d) Country A's claim is misleading. While its total GDP is larger, its GDP per capita is lower than B's. Its growth rate (2.5%) is less than a third of B's (7.0%). It has a large current account deficit, indicating it may be living beyond its means. However, A has lower inflation (1.5% vs 5.0%), suggesting greater price stability. A balanced assessment would note that Country B performs better on living standards and growth, while Country A performs better on price stability. No single indicator tells the full story.
 
 ### IT-3: National Income Accounting Pitfalls (with Basic Economic Concepts)
-**Question:** A developing country experiences the following in one year: (i) a severe earthquake destroys $\$50$B of infrastructure, (ii) the government spends $\$80$B rebuilding, (iii) the rebuilding employs 200{,}000 previously unemployed workers, (iv) pollution from rebuilding reduces air quality significantly. (a) How would each event affect GDP? (b) Calculate the net effect on GDP. (c) Does the GDP change reflect an improvement in welfare? Explain. (d) How does the concept of opportunity cost apply to the rebuilding expenditure?
+**Question:** A developing country experiences the following in one year: (i) a severe earthquake destroys $\$50$B of infrastructure, (ii) the government spends $\$80$B rebuilding, (iii) the rebuilding employs 200,000 previously unemployed workers, (iv) pollution from rebuilding reduces air quality significantly. (a) How would each event affect GDP? (b) Calculate the net effect on GDP. (c) Does the GDP change reflect an improvement in welfare? Explain. (d) How does the concept of opportunity cost apply to the rebuilding expenditure?
 
 **Solution:**
 
@@ -128,4 +128,4 @@ Country B: GDP per capita $= \frac{500}{10} = \$50{,}000$.
 
 (c) No. The country is clearly worse off -- it lost $\$50$B of infrastructure, suffered environmental damage, and had to divert $\$80$B from other productive uses to rebuild. Yet GDP shows an increase. This is one of the most serious limitations of GDP: it counts the cost of rebuilding after a disaster as economic growth, even though the country is merely restoring what it already had (and not even fully, since the environmental damage is not accounted for).
 
-(d) The $\$80$B spent on rebuilding has an opportunity cost -- the goods and services that could have been produced if those resources had been allocated elsewhere. The 200{,}000 workers could have been producing consumer goods, new infrastructure, or education. The construction materials could have built new factories or housing. The earthquake forced the country to consume its rebuilding capacity on restoring the status quo rather than improving living standards.
+(d) The $\$80$B spent on rebuilding has an opportunity cost -- the goods and services that could have been produced if those resources had been allocated elsewhere. The 200,000 workers could have been producing consumer goods, new infrastructure, or education. The construction materials could have built new factories or housing. The earthquake forced the country to consume its rebuilding capacity on restoring the status quo rather than improving living standards.

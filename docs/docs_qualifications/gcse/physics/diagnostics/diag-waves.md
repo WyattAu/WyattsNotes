@@ -87,7 +87,7 @@ If air temperature increases, the speed of sound increases (particles move faste
 
 (b) Time $= 5000 / (3 \times 10^8) = 1.67 \times 10^{-5}$ s $= 16.7$ $\mu$s.
 
-(c) Intensity at distance 5 km: $I = P/(4\pi r^2) = 1/(4\pi \times 25{,}000{,}000) = 1/314{,}159{,}265 = 3.18 \times 10^{-9}$ W/m$^2$.
+(c) Intensity at distance 5 km: $I = P/(4\pi r^2) = 1/(4\pi \times 25,000,000) = 1/314,159,265 = 3.18 \times 10^{-9}$ W/m$^2$.
 Power captured by $0.5 \text{ m}^2$ receiver $= 3.18 \times 10^{-9} \times 0.5 = 1.59 \times 10^{-9}$ W $= 1.59$ nW.
 
 (d) Microwaves offer a balance between range and data capacity: (1) Higher frequency than radio waves means they can carry more information (higher bandwidth). (2) Shorter wavelength allows smaller antennas (practical for handheld devices). (3) They can be directed in narrow beams between towers, reducing interference. (4) They are not easily absorbed by the atmosphere. Radio waves have longer wavelengths, which limits data capacity and requires larger antennas, but they can travel longer distances and penetrate obstacles better.

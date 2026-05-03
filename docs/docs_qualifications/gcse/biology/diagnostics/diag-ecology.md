@@ -16,7 +16,7 @@ hide_table_of_contents: true
 
 (a) **Producer:** Oak tree (converts light energy to chemical energy via photosynthesis). **Primary consumer:** Caterpillar (herbivore). **Secondary consumer:** Blue tit (carnivore that eats caterpillars). **Tertiary consumer:** Sparrowhawk (top predator).
 
-(b) Oak tree: 50,000 kJ. Caterpillar: $50{,}000 \times 0.1 = 5000$ kJ. Blue tit: $5000 \times 0.1 = 500$ kJ. Sparrowhawk: $500 \times 0.1 = 50$ kJ.
+(b) Oak tree: 50,000 kJ. Caterpillar: $50,000 \times 0.1 = 5000$ kJ. Blue tit: $5000 \times 0.1 = 500$ kJ. Sparrowhawk: $500 \times 0.1 = 50$ kJ.
 
 (c) The blue tit population would decrease because caterpillars are their primary food source. With 50% fewer caterpillars, there is less food available, leading to increased competition for the remaining caterpillars. Some blue tits may starve or fail to breed, reducing the population. In the longer term, the blue tit population would stabilise at a lower level. The sparrowhawk population would also eventually decrease due to less prey (blue tits).
 
@@ -108,7 +108,7 @@ hide_table_of_contents: true
 
 Quadrat area $= 0.5 \times 0.5 = 0.25$ m$^2$. Density $= 4.7 / 0.25 = 18.8$ daisies per m$^2$.
 
-Field area $= 100 \times 50 = 5000$ m$^2$. Estimated population $= 18.8 \times 5000 = 94{,}000$ daisies.
+Field area $= 100 \times 50 = 5000$ m$^2$. Estimated population $= 18.8 \times 5000 = 94,000$ daisies.
 
 (c) Two ways to ensure reliability: (1) **Large sample size** -- use more quadrats (e.g., 20 or 30) to reduce the effect of anomalies and get a more representative mean. (2) **Repeatability** -- repeat the investigation at different times or have another student independently carry out the same method to check consistency.
 
