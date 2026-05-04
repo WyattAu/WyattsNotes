@@ -82,11 +82,11 @@ Hong Kong is a mixed economy with a strong free-market tradition. The government
 
 (a) Equilibrium: $500 - 2P = 100 + 3P$, so $400 = 5P$, $P^* = 80$ ($\$80,000$), $Q^* = 500 - 2(80) = 340$.
 
-(b) The free market produces $Q^* = 340$ but the socially optimal quantity is $Q_{\text{opt}} = 300$. Wait -- positive externalities mean the social benefit exceeds the private benefit, so the socially optimal quantity should be *greater* than the market quantity, not less. Let me reconsider.
+(b) The free market produces $Q^* = 340$ but the socially optimal quantity is $Q_{o} = 300$. Wait -- positive externalities mean the social benefit exceeds the private benefit, so the socially optimal quantity should be *greater* than the market quantity, not less. Let me reconsider.
 
 If the socially optimal quantity is 300, this is actually *less* than 340, suggesting healthcare has negative externalities. However, healthcare typically has positive externalities, so let me reinterpret: perhaps the social optimum should be 400 (greater than 340).
 
-To achieve $Q_{\text{opt}} = 400$: Demand with subsidy shifts. New demand: $Q_d = 500 - 2(P - s) = 500 - 2P + 2s$ (where $s$ is the per-unit subsidy). Set equal to supply: $500 - 2P + 2s = 100 + 3P$, so $400 + 2s = 5P$, $P = (400 + 2s)/5$.
+To achieve $Q_{o} = 400$: Demand with subsidy shifts. New demand: $Q_d = 500 - 2(P - s) = 500 - 2P + 2s$ (where $s$ is the per-unit subsidy). Set equal to supply: $500 - 2P + 2s = 100 + 3P$, so $400 + 2s = 5P$, $P = (400 + 2s)/5$.
 
 Quantity: $Q = 100 + 3P = 100 + 3(400 + 2s)/5 = 100 + (1200 + 6s)/5 = (500 + 1200 + 6s)/5 = (1700 + 6s)/5$.
 
