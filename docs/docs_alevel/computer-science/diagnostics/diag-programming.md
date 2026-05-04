@@ -106,6 +106,7 @@ Write SQL for: (a) list all students taking Computer Science with their average 
 **Solution:**
 
 (a)
+
 ```sql
 SELECT s.name, s.student_id, AVG(a.score) AS average_score
 FROM Student s
@@ -116,6 +117,7 @@ GROUP BY s.student_id, s.name;
 ```
 
 (b)
+
 ```sql
 SELECT s.name, a.score, c.course_name, a.date
 FROM Student s
@@ -125,6 +127,7 @@ WHERE a.score = (SELECT MAX(score) FROM Assessment);
 ```
 
 (c)
+
 ```sql
 SELECT c.course_name
 FROM Course c

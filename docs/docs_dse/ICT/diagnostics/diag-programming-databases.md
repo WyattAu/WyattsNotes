@@ -14,7 +14,8 @@ hide_table_of_contents: true
 
 **Solution:**
 
-(a) ```
+(a) 
+```
 FUNCTION BinarySearch(array, target)
     low ← 0
     high ← LENGTH(array) - 1
@@ -60,7 +61,8 @@ Time complexity: $O(n)$. For 1024 elements, worst case is 1024 comparisons. Bina
 
 **Solution:**
 
-(a) ```sql
+(a) 
+```sql
 SELECT s.name, r.marks
 FROM Students s
 INNER JOIN Results r ON s.student_id = r.student_id
@@ -68,14 +70,16 @@ INNER JOIN Exams e ON r.exam_id = e.exam_id
 WHERE e.subject = 'Mathematics' AND r.marks > 80;
 ```
 
-(b) ```sql
+(b) 
+```sql
 SELECT e.subject, AVG(r.marks) AS average_marks
 FROM Exams e
 INNER JOIN Results r ON e.exam_id = r.exam_id
 GROUP BY e.subject;
 ```
 
-(c) ```sql
+(c) 
+```sql
 SELECT s.name, SUM(r.marks) AS total_marks
 FROM Students s
 INNER JOIN Results r ON s.student_id = r.student_id
@@ -84,7 +88,8 @@ ORDER BY total_marks DESC
 LIMIT 1;
 ```
 
-(d) ```sql
+(d) 
+```sql
 ALTER TABLE Results ADD COLUMN grade VARCHAR(2);
 ```
 
@@ -137,7 +142,8 @@ In the Students table: StudentID $\to$ Class. If Class $\to$ ClassTeacher, Class
 **Members:** (member_id PK, name, email, join_date)
 **Loans:** (loan_id PK, book_id FK, member_id FK, loan_date, return_date)
 
-(b) ```sql
+(b) 
+```sql
 SELECT g.genre_name, COUNT(*) AS loan_count
 FROM Loans l
 INNER JOIN Books b ON l.book_id = b.book_id
@@ -159,7 +165,8 @@ If RAM is insufficient: (1) The buffer cache is too small to hold the working se
 
 **Solution:**
 
-(a) ```
+(a) 
+```
 FUNCTION ValidateHKPhone(phone)
     IF LENGTH(phone) ≠ 8 THEN
         RETURN False
@@ -182,7 +189,8 @@ END FUNCTION
 
 (c) Two problems: (1) **Leading zeros:** If a phone number starts with 0 (in some formats), storing as an integer would lose the leading zero. HK numbers don't start with 0, but this is a general problem with numeric storage of identifiers. (2) **Overflow:** An 8-digit phone number exceeds the range of a 32-bit signed integer (max 2,147,483,647). Some HK numbers starting with 9 (e.g., 98765432) are within range, but this is fragile. Phone numbers are identifiers, not quantities -- they should be stored as strings.
 
-(d) ```sql
+(d) 
+```sql
 SELECT * FROM Members
 WHERE phone_number NOT REGEXP '^[5679][0-9]{7}$'
    OR phone_number IS NULL

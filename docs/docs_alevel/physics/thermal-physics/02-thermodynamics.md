@@ -584,17 +584,7 @@ $\square$
 </details>
 
 
----
-
-:::tip Diagnostic Test
-Ready to test your understanding of **Thermodynamics**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-thermodynamics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
-
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Thermodynamics with other physics topics to test synthesis under exam conditions.
-
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
-
-:::danger Common Pitfalls
+---:::danger Common Pitfalls
 
 - **Confusing the first and second laws of thermodynamics:** The first law (conservation of energy: delta_U = Q + W) says energy cannot be created or destroyed. The second law says entropy of an isolated system always increases and heat cannot flow spontaneously from cold to hot. They are different laws addressing different concepts -- do not conflate them.
 

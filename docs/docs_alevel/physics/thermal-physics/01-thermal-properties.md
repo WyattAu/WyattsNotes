@@ -675,17 +675,7 @@ the same energy.
 </details>
 
 
----
-
-:::tip Diagnostic Test
-Ready to test your understanding of **Thermal Properties**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-thermal-properties) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
-
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Thermal Properties with other physics topics to test synthesis under exam conditions.
-
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
-
-:::danger Common Pitfalls
+---:::danger Common Pitfalls
 
 - **Confusing heat capacity with specific heat capacity:** Heat capacity C is the energy needed to raise the temperature of an ENTIRE OBJECT by 1 K (J/K). Specific heat capacity c is the energy per unit MASS (J/(kg K)). For a 2 kg block, C = 2c. Always check whether the question gives or asks for heat capacity or specific heat capacity.
 

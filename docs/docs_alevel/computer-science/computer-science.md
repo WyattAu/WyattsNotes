@@ -72,4 +72,4 @@ Each topic page contains:
 5. **Multi-step problem set** — questions requiring synthesis of multiple topics
 6. **Board-specific notes** — specification differences
 
-When finished, attempt the [Diagnostic Test](/docs/alevel/computer-science/diagnostic-test).
+When finished, attempt the [Diagnostic Test](/docs/alevel/computer-science/diagnostics/diagnostic-guide).

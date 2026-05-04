@@ -14,7 +14,8 @@ hide_table_of_contents: true
 
 **Solution:**
 
-(a) ```html
+(a) 
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +36,8 @@ hide_table_of_contents: true
 </html>
 ```
 
-(b) ```css
+(b) 
+```css
 h1 {
     text-align: center;
 }

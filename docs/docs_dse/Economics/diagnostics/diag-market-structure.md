@@ -33,7 +33,7 @@ hide_table_of_contents: true
 
 (c) Under perfect competition, $P = MC$: $100 - 2Q = 10 + 2Q$, $90 = 4Q$, $Q_c = 22.5$. $P_c = 100 - 2(22.5) = \$55$.
 
-(d) $\text{DWL} = \frac{1}{2} \times (P_m - P_c) \times (Q_c - Q_m) = \frac{1}{2} \times (70 - 55) \times (22.5 - 15) = \frac{1}{2} \times 15 \times 7.5 = \$56.25$.
+(d) $DWL = \frac{1}{2} \times (P_m - P_c) \times (Q_c - Q_m) = \frac{1}{2} \times (70 - 55) \times (22.5 - 15) = \frac{1}{2} \times 15 \times 7.5 = \$56.25$.
 
 The deadweight loss represents the loss of total surplus due to the monopolist restricting output and raising price above the competitive level.
 
@@ -100,14 +100,14 @@ Since $P = 17 \le 20$, both groups are served. Profit $= 17(52) - 4(52) = 13(52)
 - Students: $MR_S = 20 - Q_S = 4$, $Q_S = 16$, $P_S = 20 - 0.5(16) = \$12$.
 - Total $Q = 52$, profit $= 22(36) + 12(16) - 4(52) = 792 + 192 - 208 = \$776$.
 
-(c) Under no discrimination ($P = 17$, $Q = 52$): competitive output would be where $P = MC = 4$. $Q_c = 120 - 4(4) = 104$. $\text{DWL} = \frac{1}{2}(17 - 4)(104 - 52) = \frac{1}{2}(13)(52) = \$338$.
+(c) Under no discrimination ($P = 17$, $Q = 52$): competitive output would be where $P = MC = 4$. $Q_c = 120 - 4(4) = 104$. $DWL = \frac{1}{2}(17 - 4)(104 - 52) = \frac{1}{2}(13)(52) = \$338$.
 
 Under price discrimination ($Q = 52$ total): total DWL $= \frac{1}{2}(22 - 4)(80 - 36) + \frac{1}{2}(12 - 4)(40 - 16) = \frac{1}{2}(18)(44) + \frac{1}{2}(8)(24) = 396 + 96 = \$492$.
 
 Wait -- price discrimination produces the same total quantity (52) but a different allocation. The DWL calculation needs the competitive benchmark per group. Competitive: $P = 4$: $Q_A = 80 - 8 = 72$, $Q_S = 40 - 8 = 32$. $Q_c = 104$.
 
-$\text{DWL}_{\text{no disc}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
-$\text{DWL}_{\text{disc}} = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
+$DWL_{\text{no disc}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
+$DWL_{\text{disc}} = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
 
 (d) To maximise social welfare, the government could regulate the cinema to charge $P = MC = \$4$ (marginal cost pricing). This would eliminate deadweight loss entirely but leave the cinema unable to cover any fixed costs (which are zero in this case, so it is feasible). With positive fixed costs, the government might use average cost pricing instead.
 
@@ -165,11 +165,11 @@ Wait: PS $= \frac{1}{2}(12 - 2)(50) + \text{FC recovery}$. Actually PS $= TR - T
 - Profit $= 15.33(33.33) - [100 + 2(33.33) + 0.1(33.33)^2] = 511 - [100 + 66.67 + 111.1] = 511 - 277.8 = \$233.3$.
 - Total surplus $= 111.1 + 233.3 = \$344.4$.
 
-(c) DWL $= 400 - 344.4 = \$55.6$. Alternatively: $\text{DWL} = \frac{1}{2}(15.33 - 2 + 2)(50 - 33.33)$... Let me recalculate properly.
+(c) DWL $= 400 - 344.4 = \$55.6$. Alternatively: $DWL = \frac{1}{2}(15.33 - 2 + 2)(50 - 33.33)$... Let me recalculate properly.
 
 At $Q_m = 33.33$: $P_m = 15.33$, $MC = 2 + 0.2(33.33) = 8.67$.
 At $Q_c = 50$: $P_c = MC = 12$.
 
-$\text{DWL} = \frac{1}{2}(P_m - MC_m)(Q_c - Q_m) = \frac{1}{2}(15.33 - 8.67)(50 - 33.33) = \frac{1}{2}(6.67)(16.67) = \$55.6$.
+$DWL = \frac{1}{2}(P_m - MC_m)(Q_c - Q_m) = \frac{1}{2}(15.33 - 8.67)(50 - 33.33) = \frac{1}{2}(6.67)(16.67) = \$55.6$.
 
 (d) Allocative efficiency requires $P = MC$, meaning marginal benefit (reflected in willingness to pay) equals marginal cost. In perfect competition, firms produce where $P = MC$, maximising total surplus. The monopoly restricts output to $Q_m \lt Q_c$, so for the units between $Q_m$ and $Q_c$, consumers' marginal benefit exceeds the marginal cost of production. These mutually beneficial trades do not occur, creating a deadweight loss. The monopoly maximises its own profit rather than total social surplus, leading to an underallocation of resources to this good.

@@ -73,7 +73,7 @@ $Q_d = 200 - 100 = 100$. $Q_s = 100 - 40 = 60$. Imports $= 100 - 60 = 40$.
 
 Tariff revenue $= 10 \times 40 = \$400$.
 
-$\text{DWL} = \frac{1}{2} \times 10 \times (60 - 40) + \frac{1}{2} \times 10 \times (120 - 100) = \frac{1}{2} \times 10 \times 20 + \frac{1}{2} \times 10 \times 20 = 100 + 100 = \$200$.
+$DWL = \frac{1}{2} \times 10 \times (60 - 40) + \frac{1}{2} \times 10 \times (120 - 100) = \frac{1}{2} \times 10 \times 20 + \frac{1}{2} \times 10 \times 20 = 100 + 100 = \$200$.
 
 (c) CS before: $\frac{1}{2}(100 - 40)(120) = \frac{1}{2}(60)(120) = \$3600$. CS after: $\frac{1}{2}(100 - 50)(100) = \frac{1}{2}(50)(100) = \$2500$. Change in CS $= -\$1100$.
 
@@ -119,7 +119,7 @@ $\Delta \text{PS} = +\$1631.25$.
 
 Quota rent $= (145 - 100) \times 30 = 45 \times 30 = \$1350$ (goes to whoever holds the import licenses).
 
-$\text{DWL} = |\Delta CS - \Delta PS - \text{quota rent}| = |{-3993.75} - 1631.25 - 1350| = |{-3993.75} + 1631.25 + 1350| = |-1012.5| = \$1012.5$.
+$DWL = |\Delta CS - \Delta PS - \text{quota rent}| = |{-3993.75} - 1631.25 - 1350| = |{-3993.75} + 1631.25 + 1350| = |-1012.5| = \$1012.5$.
 
 (c) Quota rent goes to **import licence holders** (foreign exporters if they hold the licences, or domestic importers if allocated by the government). With a tariff, the equivalent revenue goes to the **domestic government**. This is a key difference: tariffs generate government revenue while quotas create quota rents that may benefit foreign producers.
 
