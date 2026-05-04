@@ -36,7 +36,7 @@ $GDP = C + I + G + (X - M) = 800 + 300 + 250 + (400 - 350) = HK\$1400$ billion.
 
 **Solution:**
 
-(a) Real GDP $= \frac{Nominal GDP}{GDP Deflator} \times 100$.
+(a) Real GDP $= \frac{\text{Nominal GDP}}{\text{GDP Deflator}} \times 100$.
 
 - 2015: $Real GDP = \frac{500}{100} \times 100 = 500$ billion.
 - 2020: $Real GDP = \frac{700}{125} \times 100 = 560$ billion.
@@ -46,7 +46,7 @@ $GDP = C + I + G + (X - M) = 800 + 300 + 250 + (400 - 350) = HK\$1400$ billion.
 
 (c) The student confuses nominal and real GDP. Nominal GDP increased 80% ($\frac{900 - 500}{500} = 80\%$), but part of this increase is due to inflation (the GDP deflator rose from 100 to 150, meaning prices rose 50%). Real GDP only grew from 500 to 600 billion -- a 20% increase. The nominal increase overstates true economic growth because it includes the effect of rising prices, not just increased output.
 
-(d) Real GDP per capita $= \frac{Real GDP}{Population}$.
+(d) Real GDP per capita $= \frac{\text{Real GDP}}{Population}$.
 
 - 2015: $\frac{500}{10} = 50,000$ per person.
 - 2025: $\frac{600}{12} = 50,000$ per person.

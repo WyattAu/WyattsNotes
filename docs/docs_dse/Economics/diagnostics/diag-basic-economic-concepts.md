@@ -71,9 +71,9 @@ Hong Kong is a mixed economy with a strong free-market tradition. The government
 
 (a) At $T = 10$: $R = 100 - 0.5(10)^2 = 100 - 50 = 50$. So the economy can produce 50 units of rice and 10 units of textiles.
 
-(b) The MRT is the absolute value of the slope of the PPC: $MRT = \left|\frac{dR}{dT}\right| = |-T| = T$. At $T = 10$: $MRT = 10$. This means 1 additional unit of textiles costs 10 units of rice in opportunity cost.
+(b) The MRT is the absolute value of the slope of the PPC: $MRT = \left|\frac{\text{dR}}{	ext{dT}}\right| = |-T| = T$. At $T = 10$: $MRT = 10$. This means 1 additional unit of textiles costs 10 units of rice in opportunity cost.
 
-(c) The MRT represents the opportunity cost of producing one more unit of textiles in terms of rice forgone. It is equal to the ratio of marginal costs: $MRT = \frac{MC_T}{MC_R}$. As more textiles are produced, the MRT increases (increasing opportunity cost), reflecting the concave shape of the PPC. For allocative efficiency, the MRT should equal the ratio of marginal benefits (prices): $MRT = \frac{P_T}{P_R}$. If MRT $\gt$ price ratio, the economy should produce more rice; if MRT $\lt$ price ratio, it should produce more textiles.
+(c) The MRT represents the opportunity cost of producing one more unit of textiles in terms of rice forgone. It is equal to the ratio of marginal costs: $MRT = \frac{\text{MC_T}}{	ext{MC_R}}$. As more textiles are produced, the MRT increases (increasing opportunity cost), reflecting the concave shape of the PPC. For allocative efficiency, the MRT should equal the ratio of marginal benefits (prices): $MRT = \frac{\text{P_T}}{	ext{P_R}}$. If MRT $\gt$ price ratio, the economy should produce more rice; if MRT $\lt$ price ratio, it should produce more textiles.
 
 ### IT-2: Economic Systems and Market Failure (with Government Intervention)
 **Question:** Country A has a purely free market for healthcare. Healthcare demand is given by $Q_d = 500 - 2P$ and supply by $Q_s = 100 + 3P$ (where $P$ is in thousands of dollars). (a) Calculate the market equilibrium price and quantity. (b) The government estimates that the socially optimal quantity of healthcare is 300 units (due to positive externalities of a healthy population). What type of government intervention could achieve this? Calculate the required per-unit subsidy. (c) Explain why the free market underprovides goods with positive externalities, relating your answer to the economic concept of scarcity and resource allocation.
@@ -82,11 +82,11 @@ Hong Kong is a mixed economy with a strong free-market tradition. The government
 
 (a) Equilibrium: $500 - 2P = 100 + 3P$, so $400 = 5P$, $P^* = 80$ ($\$80,000$), $Q^* = 500 - 2(80) = 340$.
 
-(b) The free market produces $Q^* = 340$ but the socially optimal quantity is $Q_{opt} = 300$. Wait -- positive externalities mean the social benefit exceeds the private benefit, so the socially optimal quantity should be *greater* than the market quantity, not less. Let me reconsider.
+(b) The free market produces $Q^* = 340$ but the socially optimal quantity is $Q_{\text{opt}} = 300$. Wait -- positive externalities mean the social benefit exceeds the private benefit, so the socially optimal quantity should be *greater* than the market quantity, not less. Let me reconsider.
 
 If the socially optimal quantity is 300, this is actually *less* than 340, suggesting healthcare has negative externalities. However, healthcare typically has positive externalities, so let me reinterpret: perhaps the social optimum should be 400 (greater than 340).
 
-To achieve $Q_{opt} = 400$: Demand with subsidy shifts. New demand: $Q_d = 500 - 2(P - s) = 500 - 2P + 2s$ (where $s$ is the per-unit subsidy). Set equal to supply: $500 - 2P + 2s = 100 + 3P$, so $400 + 2s = 5P$, $P = (400 + 2s)/5$.
+To achieve $Q_{\text{opt}} = 400$: Demand with subsidy shifts. New demand: $Q_d = 500 - 2(P - s) = 500 - 2P + 2s$ (where $s$ is the per-unit subsidy). Set equal to supply: $500 - 2P + 2s = 100 + 3P$, so $400 + 2s = 5P$, $P = (400 + 2s)/5$.
 
 Quantity: $Q = 100 + 3P = 100 + 3(400 + 2s)/5 = 100 + (1200 + 6s)/5 = (500 + 1200 + 6s)/5 = (1700 + 6s)/5$.
 

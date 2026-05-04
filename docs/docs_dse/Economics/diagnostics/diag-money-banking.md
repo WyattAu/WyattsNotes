@@ -24,7 +24,7 @@ hide_table_of_contents: true
 
 Total after 3 rounds: Deposits $= 1000 + 900 + 810 = \$2710$. Loans $= 900 + 810 + 729 = \$2439$.
 
-(c) Money multiplier $= \frac{1}{rrr} = \frac{1}{0.10} = 10$.
+(c) Money multiplier $= \frac{1}{\text{\text{rrr}}} = \frac{1}{0.10} = 10$.
 
 (d) Two leakages:
 1. **Excess reserves**: Banks may choose to hold more reserves than required (precautionary motive), especially during economic uncertainty. These reserves are not lent out, reducing the multiplier.
@@ -73,7 +73,7 @@ Higher income increases the transactions demand for money (people need more cash
 
 **Solution:**
 
-(a) Money supply $= \frac{Reserves}{rrr} = \frac{200}{0.125} = \$1600$B.
+(a) Money supply $= \frac{\text{Reserves}}{\text{\text{rrr}}} = \frac{200}{0.125} = \$1600$B.
 
 (b) $\$10$B open market purchase increases reserves by $\$10$B. Maximum change $= \frac{10}{0.125} = \$80$B. New money supply $= 1600 + 80 = \$1680$B.
 
@@ -86,7 +86,7 @@ Higher income increases the transactions demand for money (people need more cash
 
 **Solution:**
 
-(a) GDP deflator $= \frac{2000}{1600} \times 100 = 125$. Inflation $= \frac{125 - 100}{100} = 25\%$. Velocity $= \frac{PY}{M} = \frac{2000}{800} = 2.5$.
+(a) GDP deflator $= \frac{2000}{1600} \times 100 = 125$. Inflation $= \frac{125 - 100}{100} = 25\%$. Velocity $= \frac{\text{PY}}{ ext{M}} = \frac{2000}{800} = 2.5$.
 
 (b) $\hat{M} = \hat{P} + \hat{Y}$ (assuming constant velocity). $\hat{M} = 2\% + 4\% = 6\%$. The money supply should grow at 6%.
 

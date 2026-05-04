@@ -39,7 +39,7 @@ These characteristics create a free rider problem -- individual residents have a
 
 $MSB = \sum_{i=1}^{100} P_i = 100(10 - 0.1Q) = 1000 - 10Q$.
 
-(c) Social optimum: MSB $=$ MSC. $MSC = \frac{dTC}{dQ} = 5$.
+(c) Social optimum: MSB $=$ MSC. $MSC = \frac{\text{dTC}}{	ext{dQ}} = 5$.
 
 $1000 - 10Q = 5$, $10Q = 995$, $Q^* = 99.5$.
 
@@ -73,7 +73,7 @@ A risk-neutral buyer would pay up to $\$75,000$.
 
 (b) Social optimum: $MSC = MPC + MEC = (40 + Q) + 20 = 60 + Q = MSB = 200 - Q$. $2Q = 140$, $Q^* = 70$, $P^* = \$1.30$.
 
-(c) Pigouvian tax $= MEC = 20$ cents. New supply: $P = 60 + Q$. New equilibrium: $200 - Q = 60 + Q$, $Q = 70$, $P_{buyer} = \$1.30$, $P_{seller} = \$1.10$.
+(c) Pigouvian tax $= MEC = 20$ cents. New supply: $P = 60 + Q$. New equilibrium: $200 - Q = 60 + Q$, $Q = 70$, $P_{\text{buyer}} = \$1.30$, $P_{\text{seller}} = \$1.10$.
 
 Tax revenue $= 20 \times 70 = 1400$ cents $= \$14$.
 
@@ -83,7 +83,7 @@ Tax incidence: Consumer burden $= 130 - 120 = 10$ cents (50%). Producer burden $
 
 (d) With $P = 200 - 0.5Q$: Free market: $200 - 0.5Q = 40 + Q$, $1.5Q = 160$, $Q_m = 106.67$, $P_m = 146.67$.
 
-Post-tax: $200 - 0.5Q = 60 + Q$, $1.5Q = 140$, $Q_t = 93.33$, $P_{buyer} = 153.33$, $P_{seller} = 133.33$.
+Post-tax: $200 - 0.5Q = 60 + Q$, $1.5Q = 140$, $Q_t = 93.33$, $P_{\text{buyer}} = 153.33$, $P_{\text{seller}} = 133.33$.
 
 Consumer burden $= 153.33 - 146.67 = 6.67$ (33%). Producer burden $= 146.67 - 133.33 = 13.33$ (67%).
 

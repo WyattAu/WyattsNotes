@@ -14,13 +14,13 @@ hide_table_of_contents: true
 
 **Solution:**
 
-(a) Profit maximisation: $MC = MR = P$. $MC = \frac{dTC}{dQ} = 10 + Q$. Set $10 + Q = 50$, so $Q^* = 40$.
+(a) Profit maximisation: $MC = MR = P$. $MC = \frac{\text{dTC}}{	ext{dQ}} = 10 + Q$. Set $10 + Q = 50$, so $Q^* = 40$.
 
 (b) Profit $= TR - TC = 50(40) - [200 + 10(40) + 0.5(40)^2] = 2000 - [200 + 400 + 800] = 2000 - 1400 = \$600$.
 
 (c) Since profit $\gt 0$, the firm is **not** in long-run equilibrium. In long-run equilibrium under perfect competition, economic profit $= 0$ (firms enter until price $=$ minimum ATC).
 
-(d) Shutdown price $= $ minimum AVC. $VC = 10Q + 0.5Q^2$, so $AVC = 10 + 0.5Q$. Minimum AVC occurs where $\frac{dAVC}{dQ} = 0.5 = 0$, which is at $Q = 0$. At $Q = 0$: $AVC = 10$. So the shutdown price is $\$10$. If price falls below $\$10$, the firm shuts down because it cannot even cover its variable costs.
+(d) Shutdown price $= $ minimum AVC. $VC = 10Q + 0.5Q^2$, so $AVC = 10 + 0.5Q$. Minimum AVC occurs where $\frac{\text{dAVC}}{	ext{dQ}} = 0.5 = 0$, which is at $Q = 0$. At $Q = 0$: $AVC = 10$. So the shutdown price is $\$10$. If price falls below $\$10$, the firm shuts down because it cannot even cover its variable costs.
 
 ### UT-2: Monopoly Pricing and Deadweight Loss
 **Question:** A monopolist faces demand $P = 100 - 2Q$ and has total cost $TC = 50 + 10Q + Q^2$. (a) Calculate the profit-maximising price and quantity. (b) Calculate the monopolist's profit. (c) What would the price and quantity be under perfect competition? (d) Calculate the deadweight loss of monopoly.
@@ -106,8 +106,8 @@ Under price discrimination ($Q = 52$ total): total DWL $= \frac{1}{2}(22 - 4)(80
 
 Wait -- price discrimination produces the same total quantity (52) but a different allocation. The DWL calculation needs the competitive benchmark per group. Competitive: $P = 4$: $Q_A = 80 - 8 = 72$, $Q_S = 40 - 8 = 32$. $Q_c = 104$.
 
-$DWL_{no disc} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
-$DWL_{disc} = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
+$DWL_{\text{no disc}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
+$DWL_{\text{disc}} = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
 
 (d) To maximise social welfare, the government could regulate the cinema to charge $P = MC = \$4$ (marginal cost pricing). This would eliminate deadweight loss entirely but leave the cinema unable to cover any fixed costs (which are zero in this case, so it is feasible). With positive fixed costs, the government might use average cost pricing instead.
 

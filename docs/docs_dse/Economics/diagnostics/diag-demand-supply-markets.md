@@ -77,7 +77,7 @@ $PES \approx 1.07 \gt 1$: Supply is **unit elastic / slightly elastic**.
 
 (c) New supply at $P = 50$: $Q_s = -20 + 7(50) = 330$. At $P = 70$: $Q_s = -20 + 7(70) = 470$.
 
-$PES_{new} = \frac{140/400}{20/60} = \frac{0.35}{0.333} = 1.05$.
+$PES_{\text{new}} = \frac{140/400}{20/60} = \frac{0.35}{0.333} = 1.05$.
 
 The PES is similar, but the restaurant now supplies more at every price. The entry of a competitor increases overall market supply, but for this individual restaurant, the more elastic supply (steeper slope coefficient, 7 vs 5) means it can respond more to price changes. The total market supply would be more elastic, meaning the market can adjust more quickly to changes in demand.
 
@@ -92,7 +92,7 @@ The PES is similar, but the restaurant now supplies more at every price. The ent
 
 (a) Pre-tax: $120 - 0.5Q = 20 + 0.5Q$, $100 = Q$, $Q^* = 100$, $P^* = \$70$.
 
-Post-tax: supply shifts up by $\$10$. $120 - 0.5Q = 30 + 0.5Q$, $90 = Q$, $Q_t = 90$. $P_{buyer} = 120 - 0.5(90) = \$75$. $P_{seller} = 75 - 10 = \$65$.
+Post-tax: supply shifts up by $\$10$. $120 - 0.5Q = 30 + 0.5Q$, $90 = Q$, $Q_t = 90$. $P_{\text{buyer}} = 120 - 0.5(90) = \$75$. $P_{\text{seller}} = 75 - 10 = \$65$.
 
 (b) Consumer burden $= 75 - 70 = \$5$ (50% of tax). Producer burden $= 70 - 65 = \$5$ (50% of tax). Equal incidence because demand and supply have equal slope magnitudes.
 
@@ -146,7 +146,7 @@ $|PED| = 0.647 \lt 1$: Demand is **inelastic**. A 16.7% price decrease leads to 
 
 Post-subsidy: supply shifts down by $\$8$. New supply from buyer's perspective: $P = 10 + 0.4Q - 8 = 2 + 0.4Q$.
 
-$60 - 0.4Q = 2 + 0.4Q$, $58 = 0.8Q$, $Q_s = 72.5$. $P_{buyer} = 60 - 0.4(72.5) = \$31$. $P_{seller} = 31 + 8 = \$39$.
+$60 - 0.4Q = 2 + 0.4Q$, $58 = 0.8Q$, $Q_s = 72.5$. $P_{\text{buyer}} = 60 - 0.4(72.5) = \$31$. $P_{\text{seller}} = 31 + 8 = \$39$.
 
 (b) Pre-subsidy CS $= \frac{1}{2}(60 - 35)(62.5) = \frac{1}{2}(25)(62.5) = \$781.25$.
 New CS $= \frac{1}{2}(60 - 31)(72.5) = \frac{1}{2}(29)(72.5) = \$1051.25$. Change in CS $= +\$270$.
