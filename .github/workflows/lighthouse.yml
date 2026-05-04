@@ -11,11 +11,29 @@ on:
       - Deploy University to Cloudflare Pages
     types: [completed]
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      site:
+        description: 'Site to test (or "all")'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - main
+          - academics
+          - alevel
+          - qualifications
+          - programming
+          - university
 
 jobs:
   lighthouse-main:
     name: Lighthouse - Main
-    if: github.event.workflow == 'Deploy Main Site to Cloudflare Pages' && github.event.conclusion == 'success'
+    if:
+      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy Main Site to
+      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
+      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'main'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -27,7 +45,9 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm lighthouse -- --collect.url=https://wyattsnotes.wyattau.com --collect.startServerCommand=""
+      - run:
+          pnpm lighthouse -- --collect.url=https://wyattsnotes.wyattau.com
+          --collect.startServerCommand=""
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -36,7 +56,10 @@ jobs:
 
   lighthouse-academics:
     name: Lighthouse - Academics
-    if: github.event.workflow == 'Deploy Academics to Cloudflare Pages' && github.event.conclusion == 'success'
+    if:
+      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy Academics to
+      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
+      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'academics'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -48,7 +71,9 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm lighthouse -- --collect.url=https://academics.wyattau.com --collect.startServerCommand=""
+      - run:
+          pnpm lighthouse -- --collect.url=https://academics.wyattau.com
+          --collect.startServerCommand=""
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -57,7 +82,10 @@ jobs:
 
   lighthouse-alevel:
     name: Lighthouse - A-Levels
-    if: github.event.workflow == 'Deploy A-Levels to Cloudflare Pages' && github.event.conclusion == 'success'
+    if:
+      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy A-Levels to
+      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
+      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'alevel'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -69,7 +97,9 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm lighthouse -- --collect.url=https://alevel.wyattau.com --collect.startServerCommand=""
+      - run:
+          pnpm lighthouse -- --collect.url=https://alevel.wyattau.com
+          --collect.startServerCommand=""
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -78,7 +108,11 @@ jobs:
 
   lighthouse-qualifications:
     name: Lighthouse - Qualifications
-    if: github.event.workflow == 'Deploy Qualifications to Cloudflare Pages' && github.event.conclusion == 'success'
+    if:
+      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy
+      Qualifications to Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') ||
+      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
+      'qualifications'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -90,7 +124,9 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm lighthouse -- --collect.url=https://qualifications.wyattau.com --collect.startServerCommand=""
+      - run:
+          pnpm lighthouse -- --collect.url=https://qualifications.wyattau.com
+          --collect.startServerCommand=""
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -99,7 +135,11 @@ jobs:
 
   lighthouse-programming:
     name: Lighthouse - Programming
-    if: github.event.workflow == 'Deploy Programming to Cloudflare Pages' && github.event.conclusion == 'success'
+    if:
+      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy Programming
+      to Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') ||
+      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
+      'programming'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -111,7 +151,9 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm lighthouse -- --collect.url=https://programming.wyattau.com --collect.startServerCommand=""
+      - run:
+          pnpm lighthouse -- --collect.url=https://programming.wyattau.com
+          --collect.startServerCommand=""
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -120,7 +162,11 @@ jobs:
 
   lighthouse-university:
     name: Lighthouse - University
-    if: github.event.workflow == 'Deploy University to Cloudflare Pages' && github.event.conclusion == 'success'
+    if:
+      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy University
+      to Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') ||
+      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
+      'university'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -132,7 +178,9 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm lighthouse -- --collect.url=https://university.wyattau.com --collect.startServerCommand=""
+      - run:
+          pnpm lighthouse -- --collect.url=https://university.wyattau.com
+          --collect.startServerCommand=""
       - uses: actions/upload-artifact@v4
         if: always()
         with:
