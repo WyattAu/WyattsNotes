@@ -75,7 +75,15 @@ function getSnippet(hit: AlgoliaHit): string {
   return '';
 }
 
-function SearchInput({ query, setQuery, isLoading }: { query: string; setQuery: (q: string) => void; isLoading: boolean }) {
+function SearchInput({
+  query,
+  setQuery,
+  isLoading,
+}: {
+  query: string;
+  setQuery: (q: string) => void;
+  isLoading: boolean;
+}) {
   return (
     <div className={styles.inputWrapper}>
       <input
@@ -101,16 +109,16 @@ function SearchInput({ query, setQuery, isLoading }: { query: string; setQuery: 
         <circle cx="11" cy="11" r="8" />
         <path d="m21 21-4.35-4.35" />
       </svg>
-      {isLoading && (
-        <div className={styles.loadingIndicator}>
-          Searching...
-        </div>
-      )}
+      {isLoading && <div className={styles.loadingIndicator}>Searching...</div>}
     </div>
   );
 }
 
-const SearchResultCard = React.memo(function SearchResultCard({ hit }: { hit: AlgoliaHit & { _indexName: string } }) {
+const SearchResultCard = React.memo(function SearchResultCard({
+  hit,
+}: {
+  hit: AlgoliaHit & { _indexName: string };
+}) {
   const indexName = hit._indexName;
   const color = getIndexColor(indexName);
   const label = INDEX_LABEL_MAP[indexName] ?? indexName;
@@ -132,26 +140,14 @@ const SearchResultCard = React.memo(function SearchResultCard({ hit }: { hit: Al
       }}
     >
       <div className={styles.cardHeader}>
-        <span
-          className={styles.cardLabel}
-          style={{ background: `${color}22`, color }}
-        >
+        <span className={styles.cardLabel} style={{ background: `${color}22`, color }}>
           {label}
         </span>
-        {breadcrumb && (
-          <span className={styles.breadcrumb}>
-            {breadcrumb}
-          </span>
-        )}
+        {breadcrumb && <span className={styles.breadcrumb}>{breadcrumb}</span>}
       </div>
-      <div className={styles.cardTitle}>
-        {hit.title}
-      </div>
+      <div className={styles.cardTitle}>{hit.title}</div>
       {snippet && (
-        <div
-          className={styles.cardSnippet}
-          dangerouslySetInnerHTML={{ __html: snippet }}
-        />
+        <div className={styles.cardSnippet} dangerouslySetInnerHTML={{ __html: snippet }} />
       )}
     </a>
   );
@@ -162,12 +158,8 @@ function IndexGrid() {
     <div className={styles.indexGrid}>
       {INDICES.map((index) => (
         <div key={index.indexName} className={styles.indexCard}>
-          <div className={styles.indexCardTitle}>
-            {index.name}
-          </div>
-          <div className={styles.indexCardSubtitle}>
-            Type to search across this section
-          </div>
+          <div className={styles.indexCardTitle}>{index.name}</div>
+          <div className={styles.indexCardSubtitle}>Type to search across this section</div>
         </div>
       ))}
     </div>
@@ -178,11 +170,7 @@ function SearchEmptyState({ query, isLoading }: { query: string; isLoading: bool
   if (isLoading || !query.trim()) {
     return null;
   }
-  return (
-    <p className={styles.noResults}>
-      No results found for &quot;{query}&quot;
-    </p>
-  );
+  return <p className={styles.noResults}>No results found for &quot;{query}&quot;</p>;
 }
 
 export default function SearchPage(): React.ReactElement {
@@ -297,16 +285,15 @@ export default function SearchPage(): React.ReactElement {
           Search across all notes — IB, A-Level, DSE, GCSE, AP, C++, and more.
         </p>
         <SearchInput query={query} setQuery={setQuery} isLoading={loading} />
-        {error && (
-          <div className={styles.errorBox}>
-            {error}
-          </div>
-        )}
+        {error && <div className={styles.errorBox}>{error}</div>}
         <SearchEmptyState query={query} isLoading={loading} />
         {results.length > 0 && (
           <div className={styles.resultsContainer}>
             {results.map((hit) => (
-              <SearchResultCard key={hit.objectID} hit={hit as AlgoliaHit & { _indexName: string }} />
+              <SearchResultCard
+                key={hit.objectID}
+                hit={hit as AlgoliaHit & { _indexName: string }}
+              />
             ))}
           </div>
         )}

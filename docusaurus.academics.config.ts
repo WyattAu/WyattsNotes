@@ -151,10 +151,7 @@ const config: Config = {
     mermaid: true,
   },
 
-  themes: [
-    '@docusaurus/theme-live-codeblock',
-    '@docusaurus/theme-mermaid',
-  ],
+  themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
 
   themeConfig: {
     metadata: [

@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import DocItemFooter from '@theme-original/DocItemFooter';
+import React, { useEffect, useState } from 'react';
 
 function getReadingTime(): string {
-  if (!ExecutionEnvironment.canUseDOM) return '';
+  if (!ExecutionEnvironment.canUseDOM) {
+    return '';
+  }
 
   const article = document.querySelector('article');
-  if (!article) return '';
+
+  if (!article) {
+    return '';
+  }
 
   const text = article.textContent || '';
   const words = text.split(/\s+/).filter((w) => w.length > 0).length;
@@ -15,6 +20,7 @@ function getReadingTime(): string {
   return `${minutes} min read`;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function DocItemFooterWrapper(props: any): React.ReactElement {
   const [readingTime, setReadingTime] = useState('');
 
