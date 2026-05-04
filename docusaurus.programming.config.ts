@@ -265,6 +265,7 @@ const config: Config = {
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
+        { type: 'search', position: 'right' },
         { to: '/docs/cpp/intro', label: 'C++', position: 'left' },
         { to: '/docs/languages/java/intro', label: 'Languages', position: 'left' },
         {
@@ -275,6 +276,16 @@ const config: Config = {
         {
           href: 'https://academics.wyattau.com',
           label: 'Academics',
+          position: 'right',
+        },
+        {
+          href: 'https://alevel.wyattau.com',
+          label: 'A-Levels',
+          position: 'right',
+        },
+        {
+          href: 'https://university.wyattau.com',
+          label: 'University',
           position: 'right',
         },
         {

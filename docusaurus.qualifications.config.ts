@@ -254,6 +254,7 @@ const config: Config = {
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
+        { type: 'search', position: 'right' },
         { to: '/docs/qualifications/gcse/intro', label: 'GCSE', position: 'left' },
         { to: '/docs/qualifications/ap/intro', label: 'AP', position: 'left' },
         { to: '/docs/qualifications/highers/intro', label: 'Highers', position: 'left' },
@@ -276,6 +277,11 @@ const config: Config = {
         {
           href: 'https://programming.wyattau.com',
           label: 'Programming',
+          position: 'right',
+        },
+        {
+          href: 'https://university.wyattau.com',
+          label: 'University',
           position: 'right',
         },
         {
@@ -356,6 +362,7 @@ const config: Config = {
       darkTheme: {
         ...prismThemes.gruvboxMaterialDark,
       },
+      additionalLanguages: ['java', 'dart'],
     },
     mermaid: {
       theme: { light: 'neutral', dark: 'dark' },

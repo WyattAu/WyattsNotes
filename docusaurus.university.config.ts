@@ -60,7 +60,7 @@ const commonDocsPluginConfig = {
 };
 
 const config: Config = {
-  title: "Wyatt's University Notes",
+  title: "Wyatt's Notes — University",
   tagline: 'Mathematics, Physics, and Computing for Undergraduates',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
   url: 'https://university.wyattau.com',
@@ -254,6 +254,7 @@ const config: Config = {
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
+        { type: 'search', position: 'right' },
         { to: '/docs/intro', label: 'University', position: 'left' },
         {
           href: 'https://academics.wyattau.com',
@@ -346,6 +347,7 @@ const config: Config = {
       darkTheme: {
         ...prismThemes.gruvboxMaterialDark,
       },
+      additionalLanguages: ['java', 'dart'],
     },
     mermaid: {
       theme: { light: 'neutral', dark: 'dark' },

@@ -265,6 +265,7 @@ const config: Config = {
         srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
       },
       items: [
+        { type: 'search', position: 'right' },
         { to: '/docs/ib/intro', label: 'IB', position: 'left' },
         { to: '/docs/dse/intro', label: 'DSE', position: 'left' },
         {
@@ -285,6 +286,11 @@ const config: Config = {
         {
           href: 'https://programming.wyattau.com',
           label: 'Programming',
+          position: 'right',
+        },
+        {
+          href: 'https://university.wyattau.com',
+          label: 'University',
           position: 'right',
         },
         {
@@ -364,6 +370,7 @@ const config: Config = {
       darkTheme: {
         ...prismThemes.gruvboxMaterialDark,
       },
+      additionalLanguages: ['java', 'dart'],
     },
     mermaid: {
       theme: { light: 'neutral', dark: 'dark' },
