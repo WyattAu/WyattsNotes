@@ -170,6 +170,7 @@ function SearchEmptyState({ query, isLoading }: { query: string; isLoading: bool
   if (isLoading || !query.trim()) {
     return null;
   }
+
   return <p className={styles.noResults}>No results found for &quot;{query}&quot;</p>;
 }
 
