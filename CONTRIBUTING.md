@@ -61,6 +61,14 @@
 Inorder to be consistent with the ordering of the sidebar, documents and folder containing documents
 should be prefix with `01-`, where `01` should replaced by the desire index on the sidebar.
 
+#### Content Quality
+
+- All content must comply with the standards defined in
+  [CONTENT_STANDARD.md](./CONTENT_STANDARD.md).
+- Write for a technical audience: rigorous, deterministic, proof-based.
+- Include Common Pitfalls sections where applicable.
+- Every claim must be verifiable; cite sources where appropriate.
+
 #### Documentation Requirements
 
 - Front matter: Use required metadata:
