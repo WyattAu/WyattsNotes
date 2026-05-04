@@ -1,6 +1,8 @@
 ---
 title: Magnetism and Electromagnetism
-description: "DSE Physics magnetism and electromagnetism notes covering magnetic fields, electromagnetic induction, transformers, motors, generators, and magnetic materials."
+description:
+  'DSE Physics magnetism and electromagnetism notes covering magnetic fields, electromagnetic
+  induction, transformers, motors, generators, and magnetic materials.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -59,8 +61,8 @@ $$r = \frac{mv}{qB} = \frac{9.11 \times 10^{-31} \times 3 \times 10^6}{1.6 \time
 
 ### Worked Example 2
 
-A wire of length $0.4 \mathrm{ m}$ carries a current of $5 \mathrm{ A}$ at $30^\circ$ to a
-magnetic field of flux density $0.6 \mathrm{ T}$. Find the magnetic force on the wire.
+A wire of length $0.4 \mathrm{ m}$ carries a current of $5 \mathrm{ A}$ at $30^\circ$ to a magnetic
+field of flux density $0.6 \mathrm{ T}$. Find the magnetic force on the wire.
 
 <details>
 <summary>Solution</summary>
@@ -120,9 +122,9 @@ $$B = \mu_0 n I = 4\pi \times 10^{-7} \times 2000 \times 3 = 4\pi \times 10^{-7}
 
 ### Worked Example 4
 
-Two parallel wires $0.1 \mathrm{ m}$ apart carry currents of $10 \mathrm{ A}$ and $15 \mathrm{ A}$ in
-the same direction. Find the force per unit length between them and state whether it is attractive
-or repulsive.
+Two parallel wires $0.1 \mathrm{ m}$ apart carry currents of $10 \mathrm{ A}$ and $15 \mathrm{ A}$
+in the same direction. Find the force per unit length between them and state whether it is
+attractive or repulsive.
 
 <details>
 <summary>Solution</summary>
@@ -334,7 +336,8 @@ Actual secondary current (accounting for efficiency):
 
 $$I_s = \eta \times I_{s,\mathrm{ideal}} = 0.95 \times 40.0 = 38.0 \mathrm{ A}$$
 
-Power input: $P_{\mathrm{in}} = V_p I_p = 25000 \times 400 = 10.0 \times 10^6 \mathrm{ W} = 10.0 \mathrm{ MW}$
+Power input:
+$P_{\mathrm{in}} = V_p I_p = 25000 \times 400 = 10.0 \times 10^6 \mathrm{ W} = 10.0 \mathrm{ MW}$
 
 Power output: $P_{\mathrm{out}} = \eta \times P_{\mathrm{in}} = 0.95 \times 10.0 = 9.5 \mathrm{ MW}$
 
@@ -376,7 +379,8 @@ Power loss: $P_{\mathrm{loss}} = P_{\mathrm{in}} - P_{\mathrm{out}} = 10.0 - 9.5
 
 **Problem 1.** An electron travels at $4 \times 10^6 \mathrm{ m/s}$ perpendicular to a magnetic
 field of $0.8 \mathrm{ T}$. Find the magnetic force on the electron and the radius of its circular
-path. (Electron charge $= 1.6 \times 10^{-19} \mathrm{ C}$, mass $= 9.11 \times 10^{-31} \mathrm{ kg}$)
+path. (Electron charge $= 1.6 \times 10^{-19} \mathrm{ C}$, mass
+$= 9.11 \times 10^{-31} \mathrm{ kg}$)
 
 <details>
 <summary>Solution</summary>
@@ -460,8 +464,8 @@ $$\varepsilon = BLv = 0.5 \times 0.2 \times 8 = 0.8 \mathrm{ V}$$
 
 $$I = \frac{\varepsilon}{R} = \frac{0.8}{2} = 0.40 \mathrm{ A}$$
 
-By Lenz's law, the induced current opposes the motion of the conductor (creates a force opposing
-the motion via the motor effect).
+By Lenz's law, the induced current opposes the motion of the conductor (creates a force opposing the
+motion via the motor effect).
 
 </details>
 
@@ -483,8 +487,8 @@ $$\varepsilon = N\frac{\Delta\Phi}{\Delta t} = 50 \times \frac{0.006}{0.05} = 50
 If you get this wrong, revise: Electromagnetic Induction / Faraday's Law
 
 **Problem 8.** A rectangular coil of 100 turns, area $0.02 \mathrm{ m}^2$, rotates at
-$50 \mathrm{ rev/s}$ in a magnetic field of $0.1 \mathrm{ T}$. The axis of rotation is
-perpendicular to the field. Find the peak EMF.
+$50 \mathrm{ rev/s}$ in a magnetic field of $0.1 \mathrm{ T}$. The axis of rotation is perpendicular
+to the field. Find the peak EMF.
 
 <details>
 <summary>Solution</summary>
@@ -498,9 +502,9 @@ $$\varepsilon_{\max} = NAB\omega = 100 \times 0.02 \times 0.1 \times 314.2 = 62.
 If you get this wrong, revise: Electromagnetic Induction / Faraday's Law
 
 **Problem 9.** A step-up transformer has 500 turns on the primary and 5000 turns on the secondary.
-The primary voltage is $220 \mathrm{ V}$ and the primary current is $10 \mathrm{ A}$. Assuming
-100% efficiency, find the secondary voltage and current. If the actual efficiency is 92%, what is
-the actual secondary current?
+The primary voltage is $220 \mathrm{ V}$ and the primary current is $10 \mathrm{ A}$. Assuming 100%
+efficiency, find the secondary voltage and current. If the actual efficiency is 92%, what is the
+actual secondary current?
 
 <details>
 <summary>Solution</summary>
@@ -543,15 +547,17 @@ factor of 100.
 
 If you get this wrong, revise: Transformers / Efficiency
 
-For the A-Level treatment of this topic, see [Magnetic Fields](https://alevel.wyattau.com/docs/physics/fields/magnetic-fields).
+For the A-Level treatment of this topic, see
+[Magnetic Fields](https://alevel.wyattau.com/docs/physics/fields/magnetic-fields).
 
 ---
 
-:::tip Diagnostic Test
-Ready to test your understanding of **Magnetism and Electromagnetism**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-magnetism-and-electromagnetism) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Magnetism and Electromagnetism**? The
+[diagnostic test](/docs/dse/Physics/diagnostics/diag-electricity-magnetism) contains the hardest
+questions within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Magnetism and Electromagnetism with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Magnetism
+and Electromagnetism with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
-
+See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
