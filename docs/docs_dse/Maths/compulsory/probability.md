@@ -287,7 +287,8 @@ $$
 
 </details>
 
-:::info The addition rule generalises naturally. For any number of events, the key insight is: add
+:::info
+The addition rule generalises naturally. For any number of events, the key insight is: add
 all individual probabilities, subtract all pairwise intersections, add back all triple
 intersections, and so on, alternating signs.
 :::
@@ -510,7 +511,8 @@ independent.
 
 </details>
 
-:::info When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
+:::info
+When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
 separately and compare. Do not assume independence from the problem description -- it must be
 verified or explicitly stated.
 :::
@@ -1008,7 +1010,8 @@ For the A-Level treatment of this topic, see [Probability](https://alevel.wyatta
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Probability**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-probability) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability with other DSE mathematics topics to test synthesis under exam conditions.

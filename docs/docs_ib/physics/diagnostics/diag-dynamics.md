@@ -248,7 +248,7 @@ $$d = \frac{153.05}{200} = 0.765\,\text{m}$$
 
 (c) The total distance travelled in one complete oscillation is $0.80 + 0.765 + 0.765 + 0.80 = 3.13\,\text{m}$ (down, up beyond, back, and the block does not return to the original compression because of energy loss -- but for one full return we compute the total frictional dissipation).
 
-Actually, for one complete oscillation from start to return: the block travels $0.80\,\text{m}$ up (spring decompresses), then $0.765\,\text{m}$ up (spring stretches), then $0.765\,\text{m}$ back down, then the spring pulls it the remaining $0.80\,\text{m}$ back down (but with less compression). The block does not return to its original position.
+For one complete oscillation from start to return: the block travels $0.80\,\text{m}$ up (spring decompresses), then $0.765\,\text{m}$ up (spring stretches), then $0.765\,\text{m}$ back down, then the spring pulls it the remaining $0.80\,\text{m}$ back down (but with less compression). The block does not return to its original position.
 
 Total distance for the outward journey and return to natural length: $0.80 + 0.765 + 0.765 = 2.33\,\text{m}$.
 
@@ -316,7 +316,7 @@ Still negative, meaning the system does not move. The static friction is suffici
 
 Checking: without $B$, $A$ alone would require $mg\sin 30^\circ = 39.24\,\text{N}$ to start sliding, while maximum static friction $= 0.20 \times 8.0 \times 9.81 \times 0.866 = 13.61\,\text{N}$. So $A$ would slide down without $B$. But $B$ pulls back with $29.43\,\text{N}$.
 
-Net force down the slope without friction: $39.24 - 29.43 = 9.81\,\text{N}$. Since $9.81\,\text{N} \gt 13.61\,\text{N}$... wait, $9.81 \lt 13.61$. So the system is indeed in equilibrium.
+Net force down the slope without friction: $39.24 - 29.43 = 9.81\,\text{N}$. Since $9.81 \lt 13.61\,\text{N}$, the maximum static friction is sufficient to hold the system in equilibrium.
 
 The system does not move. $a = 0$, $T = 29.43\,\text{N}$.
 

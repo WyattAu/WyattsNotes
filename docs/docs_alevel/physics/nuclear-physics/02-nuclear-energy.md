@@ -13,7 +13,9 @@ slug: nuclear-energy
 
 ## Nuclear Energy
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 <PhetSimulation simulationId="nuclear-fission" title="Nuclear Fission" />
 
@@ -531,7 +533,8 @@ Fission is initiated by a neutral particle (neutron), so there is no Coulomb bar
 Fusion requires positively charged nuclei to approach within $\sim 10^{-15}$ m, requiring enormous
 kinetic energy to overcome the Coulomb repulsion.
 
-:::info Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
+:::info
+Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
 require calculation of energy released from mass defect.
 :::
 

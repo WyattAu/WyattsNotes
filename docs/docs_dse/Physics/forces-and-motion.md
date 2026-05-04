@@ -673,7 +673,8 @@ For the A-Level treatment of this topic, see [Dynamics](https://alevel.wyattau.c
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Forces and Motion**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-forces-motion) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Forces and Motion with other physics topics to test synthesis under exam conditions.

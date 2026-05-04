@@ -154,9 +154,9 @@ $$v_{\min}^2 = \frac{rg(\sin\theta - \mu\cos\theta)}{\cos\theta + \mu\sin\theta}
 
 $$= \frac{80 \times 9.81(0.2588 - 0.3864)}{0.9659 + 0.1035} = \frac{784.8 \times (-0.1276)}{1.0694} = \frac{-100.1}{1.0694} = -93.6$$
 
-Since $v_{\min}^2$ is negative, the car will not slide down the bank at any speed (the banking angle is sufficient even without friction to support the car at rest, i.e., $\tan\theta \gt \mu$). The minimum safe speed is effectively zero in this case.
+Since $v_{\min}^2$ is negative, the car will not slide down the bank at any speed. The minimum safe speed is effectively zero.
 
-Wait, let me recheck. $\tan 15^\circ = 0.268$ and $\mu = 0.40$. Since $\tan\theta \lt \mu$, friction **can** prevent sliding down, but the calculation gives $v_{\min}^2 \lt 0$, meaning the car does not slide down even at zero speed. This is because the banking angle is steep enough relative to friction. Actually, $\tan\theta \lt \mu$ means friction alone (on a flat surface) could hold the car, so on a banked surface it definitely can. The minimum speed is zero.
+**Note:** Although $\tan 15^\circ = 0.268 \lt \mu = 0.40$ (meaning friction alone on a flat surface could prevent sliding), on the banked surface the banking angle and friction together more than suffice. The negative $v_{\min}^2$ confirms the car remains stationary at zero speed.
 
 ## Integration Tests
 

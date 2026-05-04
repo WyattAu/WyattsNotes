@@ -245,7 +245,8 @@ $y = f(ax)$, the same $y$-value occurs when $ax = x_0$, i.e., $x = \frac{x_0}{a}
 $(\frac{x_0}{a}, y_0)$ is on the new graph — a horizontal stretch by factor $\frac{1}{a}$.
 $\blacksquare$
 
-:::warning Horizontal transformations are "backwards": $f(x - a)$ shifts **right** (not left), and
+:::warning
+Horizontal transformations are "backwards": $f(x - a)$ shifts **right** (not left), and
 $f(ax)$ stretches by $\frac{1}{a}$ (not $a$). This is the single most common error in this topic.
 :::
 
@@ -424,7 +425,8 @@ vertical transformations interact differently.
 2. Apply vertical transformations **second**: vertical stretch by $|a|$, reflection if $a < 0$, then
    vertical shift $d$.
 
-:::warning Common Pitfall The horizontal shift in $f(bx + c)$ is $-c/b$, NOT $-c$. The stretch
+:::warning
+Common Pitfall The horizontal shift in $f(bx + c)$ is $-c/b$, NOT $-c$. The stretch
 "absorbs" part of the shift. This is the single most common error in transformation problems.
 :::
 

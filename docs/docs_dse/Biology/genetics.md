@@ -55,7 +55,8 @@ frequent crossing over approximate independent assortment).
 In a heterozygote, one allele may mask the expression of another. The allele that is expressed is
 dominant; the allele that is masked is recessive.
 
-:::info Mendel's laws are idealisations that assume: (a) genes are on different chromosomes, (b)
+:::info
+Mendel's laws are idealisations that assume: (a) genes are on different chromosomes, (b)
 complete dominance, (c) no gene interaction, and (d) no linkage. Real organisms frequently violate
 one or more of these assumptions. The DSE syllabus expects you to recognise when Mendelian ratios do
 not hold and to explain why.
@@ -235,7 +236,8 @@ Three alleles exist at the I locus:
 | I^A I^B  | AB        | A and B  | None           |
 | ii       | O         | None     | Anti-A, Anti-B |
 
-:::warning A common error is writing "three alleles" when the question asks about an individual's
+:::warning
+A common error is writing "three alleles" when the question asks about an individual's
 genotype. An individual always carries exactly two alleles. The phrase "multiple alleles" refers to
 the gene pool of the entire population, not to a single organism.
 :::
@@ -1076,7 +1078,8 @@ A **frameshift mutation** is an insertion or deletion of nucleotides that is NOT
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Genetics**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-genetics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Genetics with other biology topics to test synthesis under exam conditions.

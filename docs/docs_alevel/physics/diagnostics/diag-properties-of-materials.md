@@ -125,15 +125,7 @@ $$W_{\text{load}} = \frac{1}{2}\left[(0+1) \times 15 + (1+2) \times 20 + (2+3) \
 $$= \frac{1}{2}\left[15 + 60 + 125 + 210 + 360 + 550 + 910\right] \times 10^{-3}$$
 $$= \frac{1}{2} \times 2230 \times 10^{-3} = 1.115\,\text{J}$$
 
-**Work done during unloading** (area under unloading curve):
-
-$$W_{\text{unload}} = \frac{1}{2}\left[(6+5) \times 30 + (5+4) \times 20 + (4+3) \times 20 + (3+2) \times 20 + (2+1) \times 30 + (1+0) \times 60\right] \times 10^{-3}$$
-
-Wait, I need to be more careful. The unloading data starts at extension $250\,\text{mm}$ with force $6.0\,\text{N}$ and goes to extension $0$ with force $0$.
-
-$$W_{\text{unload}} = \frac{1}{2}\left[(6+5)(250-200) + (5+4)(200-170) + (4+3)(170-150) + (3+2)(150-130) + (2+1)(130-110) + (1+0)(110-80) + (0+0)(80-20)\right] \times 10^{-6}$$
-
-Actually, let me use the trapezium rule properly:
+**Work done during unloading** (area under unloading curve, using the trapezium rule):
 
 $$W_{\text{unload}} = \sum \frac{F_i + F_{i+1}}{2} \times \Delta x$$
 
@@ -265,25 +257,19 @@ Total energy:
 $$U = \int_0^L u(y) \times A\,dy = \frac{A}{2E}\int_0^L (\rho g y)^2\,dy = \frac{A\rho^2 g^2 L^3}{6E}$$
 
 $$= \frac{1.0 \times 10^{-6} \times (7800)^2 \times (9.81)^2 \times 1000}{6 \times 2.0 \times 10^{11}}$$
-$$= \frac{1.0 \times 10^{-6} \times 6.084 \times 10^7 \times 96.24 \times 10^3}{1.2 \times 10^{12}}$$
 
-Let me compute step by step:
+where $7800^2 = 6.084 \times 10^7$, $9.81^2 = 96.24$, $L^3 = 1000$:
 
-Numerator: $10^{-6} \times 7800^2 \times 9.81^2 \times 10^3 = 10^{-6} \times 6.084 \times 10^7 \times 96.24 \times 10^0 = 10^{-6} \times 5.855 \times 10^9 = 5.855 \times 10^3$
-
-Wait: $7800^2 = 6.084 \times 10^7$, $9.81^2 = 96.24$, $L^3 = 1000$.
-
-$$= \frac{1.0 \times 10^{-6} \times 6.084 \times 10^7 \times 96.24 \times 10^3}{6 \times 2.0 \times 10^{11}}$$
-$$= \frac{5.855 \times 10^5}{1.2 \times 10^{12}} = 4.879 \times 10^{-7}\,\text{J}$$
+$$= \frac{1.0 \times 10^{-6} \times 6.084 \times 10^7 \times 96.24 \times 10^3}{6 \times 2.0 \times 10^{11}} = \frac{5.855 \times 10^6}{1.2 \times 10^{12}} = 4.879 \times 10^{-6}\,\text{J}$$
 
 Naive calculation: $U_{\text{naive}} = \frac{1}{2} \times (\rho A L g) \times \Delta L$
 
 $$= \frac{1}{2} \times (7800 \times 1.0 \times 10^{-6} \times 10 \times 9.81) \times 1.913 \times 10^{-5}$$
 $$= \frac{1}{2} \times 0.7651 \times 1.913 \times 10^{-5} = 7.317 \times 10^{-6}\,\text{J}$$
 
-(c) The ratio is $U_{\text{naive}}/U = 7.317 \times 10^{-6}/4.879 \times 10^{-7} = 15.0$
+(c) The ratio is $U_{\text{naive}}/U = 7.317 \times 10^{-6}/4.879 \times 10^{-6} = 1.50$
 
-The naive calculation overestimates by a factor of 3 (since $\frac{1}{2}mg\Delta L / U = \frac{\rho g L^2/(2E)}{\rho^2 g^2 L^3/(6E)} = 3$... wait, that gives factor of 3, not 15. Let me recheck.
+The naive calculation overestimates by a factor of 1.5. This can be shown analytically:
 
 $U_{\text{naive}} = \frac{1}{2}(\rho A L g)\Delta L = \frac{1}{2}\rho A L g \times \frac{\rho g L^2}{2E} = \frac{\rho^2 A g^2 L^3}{4E}$
 
@@ -291,4 +277,4 @@ $U = \frac{\rho^2 A g^2 L^3}{6E}$
 
 Ratio $U_{\text{naive}}/U = 6/4 = 3/2 = 1.5$
 
-The naive calculation overestimates by a factor of 1.5. This is because the stress is not uniform along the wire (it varies linearly from 0 at the bottom to maximum at the top), so the average stress is half the maximum, not the full weight divided by area.
+The naive calculation overestimates by a factor of 1.5 because the stress is not uniform along the wire -- it varies linearly from zero at the bottom to a maximum at the top. The naive formula assumes the entire wire experiences the maximum stress (full weight divided by area), whereas the correct integral accounts for the linear variation.

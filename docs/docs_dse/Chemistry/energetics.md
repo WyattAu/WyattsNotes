@@ -229,7 +229,8 @@ $$\Delta H \approx \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})$$
 | C--Cl      | 346                        | F--F       | 158               |
 | O--O       | 146                        | Cl--Cl     | 243               |
 
-:::warning Bond enthalpies give only **average** values. For reactions involving the gas phase, they
+:::warning
+Bond enthalpies give only **average** values. For reactions involving the gas phase, they
 give good estimates. For reactions involving liquids or aqueous solutions, additional energy changes
 (vaporisation, dissolution) are not accounted for, so the estimate is less accurate.
 :::
@@ -415,7 +416,8 @@ $$-411 = 377 + \Delta H_{\mathrm{latt}}$$
 
 $$\Delta H_{\mathrm{latt}} = -411 - 377 = -788 \mathrm{ kJ/mol}$$
 
-:::info Lattice energy is always exothermic (negative) because energy is released when oppositely
+:::info
+Lattice energy is always exothermic (negative) because energy is released when oppositely
 charged ions come together.
 :::
 
@@ -501,7 +503,8 @@ Where:
 - $T$ = temperature (K)
 - $\Delta S$ = entropy change (kJ mol$^{-1}$ K$^{-1}$)
 
-:::warning Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
+:::warning
+Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
 K$^{-1}$, convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000.
 :::
 

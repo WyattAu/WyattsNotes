@@ -45,7 +45,8 @@ Since $f = \frac{1}{T}$, we can also write:
 
 $$v = \frac{\lambda}{T}$$
 
-:::info The wave equation applies to all types of waves: transverse, longitudinal, mechanical, and
+:::info
+The wave equation applies to all types of waves: transverse, longitudinal, mechanical, and
 electromagnetic.
 :::
 
@@ -328,7 +329,8 @@ All EM waves:
 - Obey the wave equation $c = f\lambda$
 - Can be reflected, refracted, and diffracted
 
-:::tip For the DSE exam, remember the order of the EM spectrum from longest to shortest wavelength:
+:::tip
+For the DSE exam, remember the order of the EM spectrum from longest to shortest wavelength:
 **R**adio, **M**icrowaves, **I**nfrared, **V**isible, **U**ltraviolet, **X**-rays, **G**amma rays
 (RMIVUXG).
 :::
@@ -625,7 +627,8 @@ The observed frequency is lower than the source frequency.
 - **Astronomy:** Red shift indicates galaxies moving away from us; blue shift indicates approach
 - **Weather radar:** Doppler radar detects the movement of precipitation
 
-:::info Red shift occurs when a light source moves away from the observer. The observed wavelength
+:::info
+Red shift occurs when a light source moves away from the observer. The observed wavelength
 increases (shifts towards the red end of the spectrum). This is key evidence for the expansion of
 the universe.
 :::

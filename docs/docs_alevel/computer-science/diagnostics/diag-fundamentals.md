@@ -61,7 +61,7 @@ Absolute error: $|{-5.75} - ({-5.75})| = 0$. The representation is exact in this
 
 Relative error: $0\%$.
 
-Let me verify with a case that does have error. If the system only had 3 mantissa bits:
+**For comparison, with only 3 mantissa bits:**
 
 Mantissa would be $011$, stored value $= -1.011_2 \times 2^2 = -101.1_2 = -(4 + 1 + 0.5) = -5.5$.
 
@@ -79,26 +79,15 @@ $F = A\bar{B}C + AB\bar{C} + ABC + \bar{A}BC$
 
 Group $AB\bar{C} + ABC = AB(\bar{C} + C) = AB(1) = AB$.
 
-$F = A\bar{B}C + AB + \bar{A}BC$
-
 Group $A\bar{B}C + \bar{A}BC = (A + \bar{A})BC = BC$.
 
-$F = AB + BC = B(A + C)$.
+So far: $F = AB + BC + A\bar{B}C$.
 
-**Karnaugh map verification** (3 variables: A, B, C):
+Simplify $AB + A\bar{B}C = A(B + \bar{B}C) = A(B + C) = AB + AC$.
 
-| BC | 00 | 01 | 11 | 10 |
-|----|----|----|----|----|
-| A=0 | 0 | 0 | 1 | 0 |
-| A=1 | 0 | 1 | 1 | 1 |
+Therefore: $F = AB + AC + BC$.
 
-Wait, let me redo with minterms:
-- $A\bar{B}C = 101 = m_5$
-- $AB\bar{C} = 110 = m_6$
-- $ABC = 111 = m_7$
-- $\bar{A}BC = 011 = m_3$
-
-K-map (AB on rows, C on columns):
+**Karnaugh map verification** (minterms: $A\bar{B}C = m_5$, $AB\bar{C} = m_6$, $ABC = m_7$, $\bar{A}BC = m_3$):
 
 | AB\C | 0 | 1 |
 |------|---|---|
@@ -107,33 +96,12 @@ K-map (AB on rows, C on columns):
 | 11 | 1 | 1 |
 | 10 | 1 | 1 |
 
-Group $m_3$ and $m_7$ (column C=1, B=1): $BC$.
-Group $m_6$ and $m_7$ (row AB=11, A=1, B=1): $AB$.
-Group $m_5, m_7, m_6$... Actually:
-
 Groups:
-- $m_3 + m_7$ (same B=1, C=1): $BC$
-- $m_6 + m_7$ (same A=1, B=1): $AB$
-- $m_5 + m_7$ (same A=1, C=1): $AC$
-
-$F = BC + AB + AC = AB + BC + AC$. Hmm, this differs from my algebraic simplification. Let me recheck.
-
-From the K-map, I can also group:
-- $m_5 + m_7$ (column C=1, A=1): $AC$
 - $m_3 + m_7$ (column C=1, B=1): $BC$
-- $m_6 + m_7$ (row AB=11): $AB$
+- $m_6 + m_7$ (row AB=11, A=1, B=1): $AB$
+- $m_5 + m_7$ (column C=1, A=1): $AC$
 
-So $F = AB + AC + BC$. But earlier I got $F = AB + BC$. Let me check if $AC$ is needed.
-
-Check when $A = 1, B = 0, C = 1$: $F = A\bar{B}C = 1$. My simplified $B(A+C) = 0(1+1) = 0$. This is wrong!
-
-The error was in grouping $A\bar{B}C + \bar{A}BC$. These share $BC$ only if $A$ is eliminated, but $(A + \bar{A})BC = BC$ is correct. However, the original $A\bar{B}C$ is NOT covered by $BC$ alone. Let me redo:
-
-$F = A\bar{B}C + AB + \bar{A}BC$
-
-The minterm $A\bar{B}C$ is only covered by the term $AC$ (since it has $A=1, B=0, C=1$). Neither $AB$ ($B=1$) nor $BC$ ($B=1$) covers it.
-
-Correct simplification: $F = AB + BC + AC$ (three terms, all essential prime implicants).
+All three groups are essential prime implicants. $F = AB + AC + BC$, confirming the algebraic result.
 
 **NAND-only implementation:** $F = AB + BC + AC$.
 
@@ -156,15 +124,13 @@ Flip: $0000000000010110_2$. Add 1: $0000000000010111_2 = 23$.
 
 So the value is $-23$.
 
-Wait, this cannot represent a character count if it is negative. Let me re-examine.
+A negative value is not a valid character count. The interpretation depends on whether the stored value is treated as signed or unsigned.
 
-Actually, re-reading: the question says the 16-bit two's complement number represents the count. If the count is negative, this indicates an error code. But let me recalculate more carefully.
+As unsigned: $1111111111101001_2 = 1 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 = 65513$.
 
-$1111111111101001_2$: Working from right: $1 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 + 2048 + 4096 + 8192 + 16384 + 32768 = 65513$.
+As signed 16-bit two's complement: $65513 - 65536 = -23$.
 
-As unsigned: $65513$. As signed 16-bit two's complement: $65513 - 65536 = -23$.
-
-If this represents a signed count, $-23$ is invalid. If interpreted as unsigned: $65513$.
+If treated as signed, $-23$ is not a valid count. If interpreted as unsigned: $65513$.
 
 (b) If interpreted as unsigned ($65513$ characters) in UTF-8:
 - ASCII characters: 1 byte each
@@ -244,7 +210,7 @@ OR gate: $C_{\text{out}} = C_1 + C_2 = AB + (A \oplus B)C_{\text{in}}$.
 
 Each full-adder uses 2 half-adders (5 ns each) and 1 OR gate (3 ns). But the critical path is the carry propagation.
 
-Stage 1: carry out ready after $5\text{ (HA1)} + 3\text{ (OR)} = 8\text{ ns}$. But actually, $C_1 = AB$ from the first HA is ready in 5 ns, and $C_2 = S_1 \cdot C_{\text{in}}$ requires $C_{\text{in}}$ to arrive. For the first stage, $C_{\text{in}} = 0$, so $C_2 = 0$ and $C_{\text{out}} = C_1$, ready in 5 ns.
+Stage 1: $C_{\text{in}} = 0$, so $C_2 = S_1 \cdot C_{\text{in}} = 0$ and $C_{\text{out}} = C_1 = AB$. Carry out is ready after the first half-adder produces $C_1$, i.e., 5 ns.
 
 For subsequent stages: the carry-in must propagate through. The longest path for carry:
 - HA1 in stage $i$: 5 ns to produce $S_1$ (needed for $C_2$).

@@ -20,7 +20,8 @@ slug: energy-and-work
 | OCR (A)    | Paper 1 | Includes energy on inclined planes |
 | CIE (9709) | P1, P4  | Work-energy in P1; further in P4   |
 
-:::info Energy methods are often simpler than force methods for problems where only initial and
+:::info
+Energy methods are often simpler than force methods for problems where only initial and
 final states matter (no time information needed).
 :::
 
@@ -619,7 +620,8 @@ Section 5.4.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Energy and Work**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-energy-and-work) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Energy and Work with other topics to test synthesis under exam conditions.

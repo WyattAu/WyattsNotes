@@ -541,7 +541,8 @@ If the carbon is chiral, the product has **inverted configuration** (Walden inve
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Organic Chemistry**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-organic-introduction) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Organic Chemistry with other chemistry topics to test synthesis under exam conditions.

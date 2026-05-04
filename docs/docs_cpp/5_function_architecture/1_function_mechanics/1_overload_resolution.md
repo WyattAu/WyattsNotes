@@ -50,7 +50,8 @@ The ADL rule is the reason `std::cout << "hello"` works: the left operand has ty
 (in namespace `std`), and the right operand has type `const char[6]` (built-in type, no ADL
 contribution). ADL adds the namespace `std` to the search set, where `operator<<` is found.
 
-:::info Relevance ADL is essential for operator overloading and generic code. Without ADL, every
+:::info
+Relevance ADL is essential for operator overloading and generic code. Without ADL, every
 call to `operator<<`, `operator==`, or a custom swap function would require explicit namespace
 qualification, breaking generic programming.
 :::
@@ -379,7 +380,8 @@ int main() {
 }
 ```
 
-:::warning ADL can pull in unexpected overloads from associated namespaces. The "hidden friend"
+:::warning
+ADL can pull in unexpected overloads from associated namespaces. The "hidden friend"
 idiom — defining the operator as a friend inside the class — restricts the operator to being found
 only via ADL, preventing unintended overloads:
 

@@ -831,7 +831,8 @@ For the A-Level treatment of this topic, see [Work, Energy and Power](https://al
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Energy and Conservation**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-energy) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Energy and Conservation with other physics topics to test synthesis under exam conditions.

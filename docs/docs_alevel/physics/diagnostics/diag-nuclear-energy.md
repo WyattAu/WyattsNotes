@@ -194,17 +194,9 @@ The following binding energies per nucleon are given:
 
 (a) For ${}^{235}\text{U}$: total binding energy $= 235 \times 7.59 = 1783.7\,\text{MeV}$
 
-For two ${}^{56}\text{Fe}$: total binding energy $= 2 \times 56 \times 8.79 = 984.5\,\text{MeV}$
+The fission of ${}^{235}\text{U}$ does not directly produce two ${}^{56}\text{Fe}$ nuclei ($2 \times 56 = 112$ nucleons, not $235$). Fission fragments are typically in the mass range 90--140. For a more realistic calculation, consider the approximate symmetric fission ${}^{235}\text{U} \to {}^{118}\text{Pd} + {}^{117}\text{Pd} + n$:
 
-Wait, this gives a negative energy release, which is wrong. The issue is that $2 \times 56 = 112$ nucleons, not 235. The fission of ${}^{235}\text{U}$ does not produce two ${}^{56}\text{Fe}$ nuclei directly; there are additional neutrons and the fission fragments are typically in the mass range 90--140.
-
-Let me recalculate properly. The energy released is the difference in total binding energy:
-
-Energy released $= \text{BE}_{\text{products}} - \text{BE}_{\text{reactant}}$
-
-For the approximate fission ${}^{235}\text{U} \to {}^{118}\text{Pd} + {}^{117}\text{Pd} + n$ (approximately symmetric):
-
-If we assume the products have BE/A $\approx 8.5\,\text{MeV}$ (average for medium-mass nuclei):
+Assuming the products have BE/A $\approx 8.5\,\text{MeV}$ (average for medium-mass nuclei):
 
 $\text{BE}_{\text{products}} = 118 \times 8.5 + 117 \times 8.5 = 2007.5\,\text{MeV}$
 

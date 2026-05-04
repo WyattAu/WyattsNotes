@@ -20,7 +20,8 @@ slug: binomial-expansion
 | OCR (A)    | Paper 1, 2 | Similar split                                                    |
 | CIE (9709) | P1, P3     | P1: positive integer; P3: general                                |
 
-:::info AQA provides the binomial expansion formula in the formula booklet. Edexcel does not —
+:::info
+AQA provides the binomial expansion formula in the formula booklet. Edexcel does not —
 memorise it.
 :::
 
@@ -410,7 +411,8 @@ $a^n\left(1 + \frac{bx}{a}\right)^n$. The expansion is valid when:
 
 $$\left|\frac{bx}{a}\right| \lt 1 \quad \mathrm{i.e.,} \quad |x| \lt \left|\frac{a}{b}\right|$$
 
-:::warning Always state the range of validity when working with non-integer powers. Marks are
+:::warning
+Always state the range of validity when working with non-integer powers. Marks are
 routinely deducted for omitting this.
 :::
 

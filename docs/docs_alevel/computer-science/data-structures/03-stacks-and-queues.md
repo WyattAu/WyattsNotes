@@ -95,7 +95,8 @@ class LinkedListStack:
         return self._head.data
 ```
 
-:::tip Exam tip Stack push/pop always operate at the **head** of the linked list (not the tail) for
+:::tip
+Exam tip Stack push/pop always operate at the **head** of the linked list (not the tail) for
 $O(1)$ time. Pushing at the tail would require traversal.
 :::
 
@@ -186,7 +187,8 @@ class LinkedListQueue:
         return value
 ```
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires both array-based and pointer-based (linked list) implementations
 - **CIE (9618)** requires understanding of stack and queue operations; may specify pointer-based

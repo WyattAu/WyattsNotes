@@ -27,7 +27,8 @@ geometric distribution counts the number of trials until the first success.
 | OCR (A)    | Paper 2 | Poisson and geometric                   |
 | CIE (9231) | S2      | Poisson covered; geometric not required |
 
-:::info The formula booklet provides the Poisson PMF. You must know when to apply each distribution
+:::info
+The formula booklet provides the Poisson PMF. You must know when to apply each distribution
 and how to carry out hypothesis testing with discrete distributions. The geometric distribution has
 two common conventions for the support: $r = 1, 2, 3, \ldots$ (number of trials) or
 $r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$.

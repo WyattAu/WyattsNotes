@@ -27,7 +27,8 @@ are essential for university-level mathematics, physics, and engineering.
 | OCR (A)    | Paper 1  | Parts, inverse trig integrals, volumes                            |
 | CIE (9231) | P1, P2   | Parts and volumes in P1; arc length and surface area in P2        |
 
-:::info All boards provide standard integrals in the formula booklet. You must know how to apply
+:::info
+All boards provide standard integrals in the formula booklet. You must know how to apply
 integration by parts repeatedly, derive and use reduction formulae, and set up volumes of revolution
 integrals correctly. CIE places particular emphasis on parametric volumes of revolution.
 :::
@@ -319,7 +320,8 @@ When a curve is given parametrically by $x = x(t)$, $y = y(t)$:
 - Rotation about the $x$-axis: $V = \pi\displaystyle\int_{t_1}^{t_2} y^2\,\frac{dx}{dt}\,dt$
 - Rotation about the $y$-axis: $V = \pi\displaystyle\int_{t_1}^{t_2} x^2\,\frac{dy}{dt}\,dt$
 
-:::warning The parametric volume formula uses $\dfrac{dx}{dt}$ or $\dfrac{dy}{dt}$ as appropriate.
+:::warning
+The parametric volume formula uses $\dfrac{dx}{dt}$ or $\dfrac{dy}{dt}$ as appropriate.
 Do not forget this factor — it is a very common error.
 :::
 
@@ -402,7 +404,8 @@ Simplifying with $\sec(\arctan 2) = \sqrt{5}$ and $\tan(\arctan 2) = 2$:
 
 $$S = \frac{9\pi\sqrt{5}}{16} - \frac{\pi}{32}\ln(2+\sqrt{5})$$
 
-:::info CIE (9231) P2 requires arc length and surface area of revolution. Edexcel FP2 covers arc
+:::info
+CIE (9231) P2 requires arc length and surface area of revolution. Edexcel FP2 covers arc
 length but surface area appears less frequently. AQA covers both in Paper 1. OCR (A) covers arc
 length in Paper 1.
 :::

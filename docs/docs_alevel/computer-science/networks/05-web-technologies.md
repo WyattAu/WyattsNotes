@@ -11,7 +11,8 @@ categories:
 slug: web-technologies
 ---
 
-:::info Board-specific This topic is examined by Edexcel (P1, Topic 5) only. Other boards cover some
+:::info
+Board-specific This topic is examined by Edexcel (P1, Topic 5) only. Other boards cover some
 of these concepts within their networking modules.
 :::
 

@@ -159,7 +159,8 @@ For $y = a\sin(bx + c) + d$:
 - $c$ = horizontal phase shift (shift left by $\frac{c}{b}$)
 - $d$ = vertical shift
 
-:::tip Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
+:::tip
+Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
 and show at least one full period clearly.
 :::
 
@@ -341,7 +342,8 @@ $$
 \sin\theta = \sqrt{1 - \frac{1}{9}} = \frac{2\sqrt{2}}{3}
 $$
 
-:::tip Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
+:::tip
+Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
 principal value -- you may need to find other solutions using the periodic properties or the ASTC
 rule.
 :::
@@ -938,7 +940,8 @@ $$
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Trigonometry**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-trigonometry) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Trigonometry with other IB mathematics topics to test synthesis under exam conditions.

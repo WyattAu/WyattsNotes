@@ -14,7 +14,9 @@ sidebar_position: 4
 
 ## Biodiversity, Classification and Evolution
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 
 ## 1. Biodiversity
 
@@ -157,7 +159,8 @@ A **cladogram** is constructed by comparing homologous characteristics:
 The principle of **parsimony** is applied: the cladogram requiring the fewest evolutionary changes
 is preferred.
 
-:::warning Common Pitfall Students often confuse analogous and homologous structures. **Homologous
+:::warning
+Common Pitfall Students often confuse analogous and homologous structures. **Homologous
 structures** share a common evolutionary origin (e.g., the pentadactyl limb in mammals, birds,
 reptiles, and amphibians). **Analogous structures** perform a similar function but have different
 evolutionary origins (e.g., the wings of insects and birds). Only homologous structures are
@@ -296,7 +299,8 @@ $p = 1 - 0.2 = 0.8$. Expected under H-W: $p^2 = 0.64$ ($320$ individuals), $2pq 
 individuals), $q^2 = 0.04$ ($20$ individuals). The observed frequencies match H-W predictions,
 suggesting the population is approximately in equilibrium.
 
-:::warning Common Pitfall Students sometimes think Hardy-Weinberg equilibrium means no evolution is
+:::warning
+Common Pitfall Students sometimes think Hardy-Weinberg equilibrium means no evolution is
 occurring. It describes the theoretical conditions under which allele frequencies remain constant.
 If a population deviates from H-W, this is evidence that evolutionary forces (selection, drift, gene
 flow, mutation, non-random mating) are acting.
@@ -434,7 +438,8 @@ relationships.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Biodiversity, Classification and Evolution**? The [diagnostic test](/docs/alevel/biology/diagnostics/diag-biodiversity-classification-evolution) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Biodiversity, Classification and Evolution with other biology topics to test synthesis under exam conditions.

@@ -20,7 +20,8 @@ slug: hypothesis-testing
 | OCR (A)    | Paper 1, 2 | Includes critical regions                |
 | CIE (9709) | P1, P6     | Basic hypothesis testing in P6           |
 
-:::info Hypothesis testing requires clear, structured answers. Always state your hypotheses, test
+:::info
+Hypothesis testing requires clear, structured answers. Always state your hypotheses, test
 statistic, critical value/region, comparison, and conclusion in context.
 :::
 
@@ -43,7 +44,8 @@ statistic, critical value/region, comparison, and conclusion in context.
 The choice depends on the research question. Use a one-tailed test only when you have a specific
 directional prediction **before** seeing the data.
 
-:::warning Choosing a one-tailed test after seeing the data (because the results happen to go in one
+:::warning
+Choosing a one-tailed test after seeing the data (because the results happen to go in one
 direction) is a form of $p$-hacking and is statistically invalid. The tail direction must be decided
 before the experiment.
 :::
@@ -179,7 +181,8 @@ Test statistic: $z = \dfrac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$.
 
 ## 7. Interpreting Results
 
-:::warning "Failing to reject $H_0$" is **not** the same as "proving $H_0$ is true." It means the
+:::warning
+"Failing to reject $H_0$" is **not** the same as "proving $H_0$ is true." It means the
 data does not provide sufficient evidence against $H_0$. The test may lack power (sample too small,
 effect too weak).
 :::
@@ -229,7 +232,8 @@ This means the two-tailed test has a **higher bar** for each individual tail.
 An observed $z = 1.80$ is significant for the one-tailed test ($1.80 \gt{} 1.645$) but not for the
 two-tailed test ($|1.80| \lt{} 1.960$).
 
-:::info A two-tailed test at level $\alpha$ requires a more extreme test statistic than a one-tailed
+:::info
+A two-tailed test at level $\alpha$ requires a more extreme test statistic than a one-tailed
 test at the same $\alpha$, because the significance "budget" is split between two tails. A
 two-tailed test at $\alpha = 0.05$ corresponds roughly to two one-tailed tests each at
 $\alpha = 0.025$.
@@ -306,7 +310,8 @@ with a specified level of confidence.
 $(L, U)$ constructed from sample data such that, in repeated sampling, $100(1 - \alpha)\%$ of such
 intervals would contain the true value of $\theta$.
 
-:::warning A 95% confidence interval does **not** mean there is a 95% probability that $\theta$ lies
+:::warning
+A 95% confidence interval does **not** mean there is a 95% probability that $\theta$ lies
 in the interval. The parameter $\theta$ is fixed; it either is or is not in the interval. The 95%
 refers to the long-run proportion of intervals (across many repeated samples) that capture $\theta$.
 :::
@@ -772,7 +777,8 @@ Section 3.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Hypothesis Testing**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-hypothesis-testing) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Hypothesis Testing with other topics to test synthesis under exam conditions.

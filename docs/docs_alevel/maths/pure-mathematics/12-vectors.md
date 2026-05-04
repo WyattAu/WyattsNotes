@@ -20,7 +20,8 @@ slug: vectors
 | OCR (A)    | Paper 1, 2 | Includes vector equations of lines                 |
 | CIE (9709) | P1, P2, P3 | 2D in P1; 3D and lines in P2/P3                    |
 
-:::info The formula booklet gives the scalar product formula. You must be comfortable working in 3D
+:::info
+The formula booklet gives the scalar product formula. You must be comfortable working in 3D
 and converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation.
 :::
 
@@ -298,7 +299,8 @@ $\overrightarrow{AP}$ and $\mathbf{d}$ whose magnitude equals the area of the pa
 span. Dividing by $|\mathbf{d}|$ (the base) gives the perpendicular height, i.e. the shortest
 distance.
 
-:::info When the cross product is not on your syllabus, use the dot-product method from Section 8.
+:::info
+When the cross product is not on your syllabus, use the dot-product method from Section 8.
 The cross-product formula is listed here for reference and is examined on CIE P3 and some OCR
 papers.
 :::
@@ -428,7 +430,8 @@ $\overrightarrow{AD} = \overrightarrow{BC}$).
 1. Compute the relevant displacement vectors.
 2. Show opposite sides are equal as vectors (same components).
 
-:::tip To show a quadrilateral is a **rhombus**, additionally show that adjacent sides have equal
+:::tip
+To show a quadrilateral is a **rhombus**, additionally show that adjacent sides have equal
 magnitude. To show a **rectangle**, show that adjacent sides are perpendicular. A **square**
 requires both conditions.
 :::

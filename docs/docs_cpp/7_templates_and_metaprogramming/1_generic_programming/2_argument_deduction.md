@@ -197,7 +197,8 @@ int main() {
 }
 ```
 
-:::warning A forwarding reference is **only** formed when the type deduction context is a function
+:::warning
+A forwarding reference is **only** formed when the type deduction context is a function
 parameter of the form `T&&` where `T` is a template parameter of the function template itself. The
 following are **not** forwarding references:
 
@@ -328,7 +329,8 @@ int main() {
 }
 ```
 
-:::info CTAD only works when there is exactly one viable deduction. If the constructor template and
+:::info
+CTAD only works when there is exactly one viable deduction. If the constructor template and
 the class template both participate in deduction and produce conflicting results, deduction fails
 [N4950 S16.3.1.7].
 :::

@@ -2016,47 +2016,66 @@ $(\pm 1, \pm 8)$, $(\pm 4, \pm 7)$, $(\pm 7, \pm 4)$, $(\pm 8, \pm 1)$, giving $
 
 ## 15. Common Pitfalls
 
-:::caution Common Pitfall The Chinese Remainder Theorem requires the moduli to be pairwise coprime.
+:::caution
+Common Pitfall The Chinese Remainder Theorem requires the moduli to be pairwise coprime.
 If $m_1$ and $m_2$ share a common factor $d$, the system $x \equiv a_1 \pmod{m_1}$,
-$x \equiv a_2 \pmod{m_2}$ is solvable only if $a_1 \equiv a_2 \pmod{d}$. :::
+$x \equiv a_2 \pmod{m_2}$ is solvable only if $a_1 \equiv a_2 \pmod{d}$.
+:::
 
-:::caution Common Pitfall $\left(\frac{a}{n}\right) = 1$ for the Jacobi symbol does NOT mean $a$ is
+:::caution
+Common Pitfall $\left(\frac{a}{n}\right) = 1$ for the Jacobi symbol does NOT mean $a$ is
 a QR modulo $n$. For example,
 $\left(\frac{2}{15}\right) = \left(\frac{2}{3}\right)\left(\frac{2}{5}\right) = (-1)(-1) = 1$, but
 $x^2 \equiv 2 \pmod{15}$ has no solution (checking mod $3$: $x^2 \equiv 2 \pmod{3}$ is impossible).
 :::
 
-:::caution Common Pitfall When using Fermat's little theorem, remember that
+:::caution
+Common Pitfall When using Fermat's little theorem, remember that
 $a^{p-1} \equiv 1 \pmod{p}$ only when $\gcd(a, p) = 1$. The correct form for all $a$ is
-$a^p \equiv a \pmod{p}$. :::
+$a^p \equiv a \pmod{p}$.
+:::
 
-:::caution Common Pitfall Not every prime in $\mathbb{Z}$ remains prime in $\mathbb{Z}[i]$. Only
+:::caution
+Common Pitfall Not every prime in $\mathbb{Z}$ remains prime in $\mathbb{Z}[i]$. Only
 primes $p \equiv 3 \pmod{4}$ remain prime in $\mathbb{Z}[i]$. Primes $p \equiv 1 \pmod{4}$ factor as
-$p = (a + bi)(a - bi)$, and $2 = (1 + i)^2 \cdot (-i)$. :::
+$p = (a + bi)(a - bi)$, and $2 = (1 + i)^2 \cdot (-i)$.
+:::
 
-:::caution Common Pitfall The Euclidean algorithm computes $\gcd(a, b)$ for positive integers. When
+:::caution
+Common Pitfall The Euclidean algorithm computes $\gcd(a, b)$ for positive integers. When
 working with negative integers or polynomials, remember that $\gcd$ is defined up to a unit (sign
-for integers, leading coefficient for polynomials). :::
+for integers, leading coefficient for polynomials).
+:::
 
-:::caution Common Pitfall When solving $ax \equiv b \pmod{m}$, you must first check that
+:::caution
+Common Pitfall When solving $ax \equiv b \pmod{m}$, you must first check that
 $\gcd(a, m) \mid b$. If not, there is no solution. If $\gcd(a, m) = d > 1$, divide through by $d$
-and remember that the modulus becomes $m/d$. :::
+and remember that the modulus becomes $m/d$.
+:::
 
-:::caution Common Pitfall Primitive roots do not exist for all moduli. A primitive root modulo $n$
+:::caution
+Common Pitfall Primitive roots do not exist for all moduli. A primitive root modulo $n$
 exists only for $n = 2$, $n = 4$, $n = p^k$, or $n = 2p^k$ where $p$ is an odd prime. For example,
-there is no primitive root modulo $8$ or modulo $15$. :::
+there is no primitive root modulo $8$ or modulo $15$.
+:::
 
-:::caution Common Pitfall In the division algorithm $a = bq + r$, the remainder satisfies
+:::caution
+Common Pitfall In the division algorithm $a = bq + r$, the remainder satisfies
 $0 \leq r \lt{} b$ when $b > 0$. When $a$ is negative, the quotient $q$ is also negative (or zero).
-For example, $-17 = 5 \cdot (-4) + 3$, not $-17 = 5 \cdot (-3) + (-2)$. :::
+For example, $-17 = 5 \cdot (-4) + 3$, not $-17 = 5 \cdot (-3) + (-2)$.
+:::
 
-:::caution Common Pitfall The Möbius function $\mu(n) = 0$ when $n$ has a repeated prime factor.
+:::caution
+Common Pitfall The Möbius function $\mu(n) = 0$ when $n$ has a repeated prime factor.
 Only squarefree integers have nonzero Möbius function values. When using Möbius inversion, many
-terms in the sum may be zero. :::
+terms in the sum may be zero.
+:::
 
-:::caution Common Pitfall Euler's theorem requires $\gcd(a, n) = 1$. To compute $a^k \bmod n$
+:::caution
+Common Pitfall Euler's theorem requires $\gcd(a, n) = 1$. To compute $a^k \bmod n$
 when $\gcd(a, n) \neq 1$, factor out common prime factors first, or use the CRT to work modulo
-prime power factors of $n$ separately. :::
+prime power factors of $n$ separately.
+:::
 
 ## 16. Problem Set
 

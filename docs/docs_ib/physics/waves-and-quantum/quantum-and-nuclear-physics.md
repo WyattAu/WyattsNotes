@@ -620,7 +620,8 @@ $e^- + e^+ \to \gamma + \gamma$: The electron and positron annihilate into a vir
 produces two real photons. The diagram has two incoming fermion lines, one internal photon line, and
 two outgoing photon lines.
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 
 The binding energy curve shows a peak at iron-56, but the curve is relatively flat around this peak.
 Elements from nickel to lead all have binding energies per nucleon in the range

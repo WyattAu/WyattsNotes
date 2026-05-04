@@ -13,7 +13,9 @@ slug: quantum-physics
 
 ## Quantum Physics
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 ## 1. The Photoelectric Effect
 
@@ -226,7 +228,8 @@ continuous spectrum). The dark lines are at the same frequencies as the emission
 A hot solid or dense gas emits a continuous spectrum (all frequencies), because the close proximity
 of atoms broadens the energy levels into bands.
 
-:::tip Exam Technique When calculating photon wavelengths from energy level transitions, first find
+:::tip
+Exam Technique When calculating photon wavelengths from energy level transitions, first find
 $\Delta E$ in joules, then use $\lambda = hc/\Delta E$. Remember to convert eV to joules:
 $1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
 :::

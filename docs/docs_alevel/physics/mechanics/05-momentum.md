@@ -13,7 +13,9 @@ slug: momentum
 
 ## Momentum
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2
+:::
 
 <PhetSimulation simulationId="collision-lab" title="Collision Lab" />
 
@@ -388,7 +390,8 @@ $$|\mathbf{J}| = \sqrt{J_x^2 + J_y^2}$$
 When a ball strikes a smooth wall, only the component of momentum perpendicular to the wall changes.
 The parallel component is unchanged because the wall exerts no force parallel to its surface.
 
-:::tip Exam Technique For a ball hitting a smooth wall at angle $\alpha$ to the normal with speed
+:::tip
+Exam Technique For a ball hitting a smooth wall at angle $\alpha$ to the normal with speed
 $u$ and rebounding with the normal component reduced by factor $e$: the impulse is
 $J = m(1+e)u\cos\alpha$ perpendicular to the wall, and the rebound angle $\beta$ satisfies
 $\tan\beta = \frac{u\sin\alpha}{eu\cos\alpha} = \frac{\tan\alpha}{e}$, which is greater than
@@ -486,7 +489,8 @@ $$e = \frac{v}{u} = \frac{\sqrt{2gh'}}{\sqrt{2gh}} = \sqrt{\frac{h'}{h}}$$
 
 $\square$
 
-:::tip Exam Technique This result provides a quick experimental method to determine $e$: drop a ball
+:::tip
+Exam Technique This result provides a quick experimental method to determine $e$: drop a ball
 from a known height, measure the rebound height, and compute $e = \sqrt{h'/h}$. This is often tested
 in practical exams. For successive bounces, the heights form a geometric sequence:
 $h,\ e^2h,\ e^4h,\ \ldots$
@@ -550,7 +554,8 @@ $$\Delta v = u\ln\left(\frac{m_0}{m_f}\right)$$
 ratio $m_0/m_f$. This is why multi-stage rockets are used -- dropping empty stages reduces $m_f$
 without reducing $m_0$.
 
-:::info Board Coverage AQA: Momentum conservation in explosions is required; the rocket equation is
+:::info
+Board Coverage AQA: Momentum conservation in explosions is required; the rocket equation is
 extension material. Edexcel CP2: Explosions appear in the momentum topic; the rocket equation is not
 explicitly required but may appear in context. OCR (A): Explosions are core; rocket propulsion is
 stretch material. CIE P2: Explosions are required; the rocket equation occasionally appears as a
@@ -665,7 +670,8 @@ $\Delta v = u\ln(m_0/m_f) = 2000\ln(1000/200) = 2000\ln 5 = 2000 \times 1.609 = 
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Momentum**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-momentum) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum with other physics topics to test synthesis under exam conditions.
@@ -673,7 +679,8 @@ Ready to test your understanding of **Momentum**? The [diagnostic test](/docs/al
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing momentum and kinetic energy in collisions:** Momentum is always conserved in a collision (if no external forces). Kinetic energy is only conserved in PERFECTLY ELASTIC collisions. In inelastic collisions, kinetic energy is lost (converted to heat, sound, deformation) but momentum is still conserved. Never assume a collision is elastic unless told so.
 

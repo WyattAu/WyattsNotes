@@ -15,7 +15,9 @@ slug: algorithms
 
 ## Algorithms
 
-:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR J277 Paper 1 | WJEC Unit 2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR J277 Paper 1 | WJEC Unit 2
+:::
 
 ## 1. What Is an Algorithm?
 

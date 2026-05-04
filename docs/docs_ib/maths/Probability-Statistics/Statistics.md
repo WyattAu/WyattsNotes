@@ -877,7 +877,8 @@ A score of 82.26 is at the 90th percentile.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Statistics**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-statistics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistics with other IB mathematics topics to test synthesis under exam conditions.

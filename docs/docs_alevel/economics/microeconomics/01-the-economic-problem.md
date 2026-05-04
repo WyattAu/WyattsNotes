@@ -26,7 +26,8 @@ entrepreneurship) are finite.
 Scarcity is the fundamental constraint that makes economics a discipline. Without scarcity, every
 want could be satisfied simultaneously and there would be no need to choose, allocate, or optimise.
 
-:::info Board-Specific Note All four boards (AQA, Edexcel, OCR, CIE) place the economic problem at
+:::info
+Board-Specific Note All four boards (AQA, Edexcel, OCR, CIE) place the economic problem at
 the start of the syllabus. CIE (9708) Paper 1 frequently opens with MCQs testing precise definitions
 of scarcity and opportunity cost.
 :::
@@ -311,7 +312,8 @@ intervention remains one of the central debates in economics and depends on the 
 the effectiveness of institutions, the nature of the goods being produced, and societal values
 regarding equity and freedom.
 
-:::info Board-Specific Note AQA (4.1.1.3) requires students to understand the economic problem and
+:::info
+Board-Specific Note AQA (4.1.1.3) requires students to understand the economic problem and
 economic systems together, often asking 9-mark questions comparing market and command economies.
 Edexcel (Theme 1, 1.1.4) emphasises the role of the price mechanism in allocating resources and
 expects students to evaluate when government intervention improves outcomes. OCR (H460) expects
@@ -344,7 +346,8 @@ The positive-normative distinction is fundamental because:
 3. Policy debates often conflate the two — "X is bad" (normative) is different from "X causes Y"
    (positive).
 
-:::tip Exam Technique When asked "Is this statement positive or normative?", look for value-laden
+:::tip
+Exam Technique When asked "Is this statement positive or normative?", look for value-laden
 words: _should, ought, fair, unfair, too much, too little, best, worst_. These signal normative
 statements.
 :::
@@ -372,7 +375,8 @@ research agenda itself) is shaped by normative concerns. Economists who prioriti
 inequality are making a value judgement about what matters. The positive-normative distinction is
 therefore best understood as a continuum rather than a binary classification.
 
-:::info Board-Specific Note AQA (4.1.1.2) and Edexcel (Theme 1, 1.1.2) both explicitly test the
+:::info
+Board-Specific Note AQA (4.1.1.2) and Edexcel (Theme 1, 1.1.2) both explicitly test the
 positive-normative distinction, typically with 2-4 mark MCQs or short-answer questions asking
 students to classify statements. CIE (9708) may embed the distinction within longer essay questions.
 OCR often asks students to identify the positive and normative components within a single policy
@@ -394,7 +398,8 @@ We define the four factors of production:
 whereas land and labour are not. Entrepreneurship is a form of human capital but is distinguished
 because it involves decision-making under uncertainty.
 
-:::info Board-Specific Note Edexcel (Theme 1, 1.1.1) lists the four factors of production and their
+:::info
+Board-Specific Note Edexcel (Theme 1, 1.1.1) lists the four factors of production and their
 rewards explicitly in the specification and frequently asks students to identify which factor is
 being described in a given scenario. AQA (4.1.1.1) covers factors of production within the broader
 topic of scarcity and choice. CIE (9708) expects students to distinguish between factor rewards and
@@ -450,7 +455,8 @@ gains of deep specialisation. On balance, the benefits of specialisation typical
 costs, but the distribution of those benefits is uneven and requires policy attention (retraining
 programmes, education systems, social safety nets).
 
-:::info Board-Specific Note AQA (4.1.1.4) and Edexcel (Theme 1, 1.1.3) both cover specialisation and
+:::info
+Board-Specific Note AQA (4.1.1.4) and Edexcel (Theme 1, 1.1.3) both cover specialisation and
 division of labour, with AQA placing more emphasis on the link to international trade and Edexcel
 focusing on the efficiency gains within firms. CIE (9708) Paper 2 may ask students to evaluate the
 effects of specialisation on an economy. OCR (H460) often links specialisation to broader questions
@@ -473,7 +479,8 @@ about globalisation and its discontents.
 - Cannot capture dynamic changes (innovation, learning by doing)
 - Does not model the institutional framework that determines _how_ production decisions are made
 
-:::info Board-Specific Note CIE (9708) often asks students to apply the PPF to real economies —
+:::info
+Board-Specific Note CIE (9708) often asks students to apply the PPF to real economies —
 e.g., "Using a PPF diagram, explain how a country might reallocate resources from consumer goods to
 capital goods and evaluate the consequences." Focus on the trade-off between current consumption and
 future growth.
@@ -660,7 +667,8 @@ This question requires evaluating the assumptions of rational choice theory agai
 
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Defining opportunity cost as "everything you give up":** Opportunity cost is the value of the NEXT-BEST alternative only, not the sum of all alternatives. If you spend £10 on a book when your next-best option is a £10 film ticket, the opportunity cost is the film ticket alone -- not the film ticket plus a coffee.
 

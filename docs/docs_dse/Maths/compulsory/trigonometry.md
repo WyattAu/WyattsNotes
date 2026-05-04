@@ -634,7 +634,8 @@ For the A-Level treatment of this topic, see [Trigonometry](https://alevel.wyatt
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Trigonometry**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-trigonometry) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Trigonometry with other DSE mathematics topics to test synthesis under exam conditions.

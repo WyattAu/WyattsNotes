@@ -161,9 +161,7 @@ $$g'(x) \geq 3x^2 + 2 - \pi$$
 
 For $x \geq 0$: $3x^2 + 2 - \pi > 0$ when $3x^2 > \pi - 2$, i.e., $x > \sqrt{(\pi - 2)/3} \approx 0.62$.
 
-For $x \in [0, 0.62]$: $g'(x) = 3x^2 + 2 - \pi\sin(\pi x)$. Since $\sin(\pi x) \leq \pi x$ for $x \geq 0$ (and $\pi x \leq \pi \cdot 0.62 \lt 2$), we have $g'(x) \geq 3(0)^2 + 2 - \pi(1) = 2 - \pi \approx -1.14$, which is negative. So we need a finer argument.
-
-Actually, $g'(0) = 2 > 0$ and $g'(x) = 3x^2 + 2 - \pi\sin(\pi x)$. For $x \in [0, 1]$: $\sin(\pi x) \leq \pi x - \frac{(\pi x)^3}{6}$, so $\pi\sin(\pi x) \leq \pi^2 x - \frac{\pi^4 x^3}{6}$. This approach gets complicated.
+For $x \in [0, 0.62]$: $g'(x) = 3x^2 + 2 - \pi\sin(\pi x)$. Since $\sin(\pi x) \leq \pi x$ for $x \geq 0$ (and $\pi x \leq \pi \cdot 0.62 \lt 2$), we have $g'(x) \geq 3(0)^2 + 2 - \pi(1) = 2 - \pi \approx -1.14$, which is negative. A finer argument is needed.
 
 A cleaner argument: $g'(x) = 3x^2 + 2 - \pi\sin(\pi x)$. Since $|\pi\sin(\pi x)| \leq \pi \approx 3.14$ and $3x^2 + 2 \geq 2$, we have $g'(x) \geq 2 - 3.14 = -1.14$, which does not prove positivity.
 
@@ -230,11 +228,7 @@ $$\int_0^{\infty} \frac{e^{-t^2}}{1 + t^2} \, dt \leq \int_0^{\infty} e^{-t^2} \
 
 Therefore $F(x)$ converges to some finite limit $L = \displaystyle\int_0^{\infty} \frac{e^{-t^2}}{1 + t^2} \, dt$ as $x \to \infty$.
 
-(b) Let $L = \displaystyle\lim_{x \to \infty} F(x)$. We want $\displaystyle\lim_{x \to \infty} x(L - F(x))$ (since $x \cdot F(x) = xL - x(L - F(x))$ diverges, let us reconsider).
-
-Actually, $\displaystyle\lim_{x \to \infty} x \cdot F(x)$: since $F(x) \to L \neq 0$, we have $x \cdot F(x) \to \infty$.
-
-Wait -- we need a more interesting limit. Let $G(x) = L - F(x) = \displaystyle\int_x^{\infty} \frac{e^{-t^2}}{1+t^2}\,dt$. Then $\displaystyle\lim_{x \to \infty} x \cdot G(x) = ?$
+(b) Let $L = \displaystyle\lim_{x \to \infty} F(x)$. Since $F(x) \to L \neq 0$, we have $x \cdot F(x) \to \infty$. A more interesting limit is obtained by considering the tail: let $G(x) = L - F(x) = \displaystyle\int_x^{\infty} \frac{e^{-t^2}}{1+t^2}\,dt$, and evaluate $\displaystyle\lim_{x \to \infty} x \cdot G(x)$.
 
 $$x \cdot G(x) = x \int_x^{\infty} \frac{e^{-t^2}}{1+t^2}\,dt$$
 

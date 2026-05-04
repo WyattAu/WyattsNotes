@@ -20,7 +20,8 @@ slug: kinematics
 | OCR (A)    | Paper 1 | Includes variable acceleration |
 | CIE (9709) | P1, P4  | 1D in P1; 2D/projectiles in P4 |
 
-:::info The formula booklet lists the SUVAT equations. You must be able to select the correct
+:::info
+The formula booklet lists the SUVAT equations. You must be able to select the correct
 equation and apply it to multi-stage problems.
 :::
 
@@ -92,7 +93,8 @@ Equation 4.)
 
 $$s = \tfrac{1}{2}(u+v)t \implies v = \frac{2s}{t} - u \quad \mathrm{(useful when } a \mathrm{ is unknown)}$$
 
-:::tip The key insight is that **all five SUVAT equations follow from two integrations** of the
+:::tip
+The key insight is that **all five SUVAT equations follow from two integrations** of the
 constant acceleration $a = dv/dt$, using the initial conditions $v(0) = u$ and $s(0) = 0$.
 Memorising the derivation means you can recover any formula you forget.
 :::
@@ -106,7 +108,8 @@ Memorising the derivation means you can recover any formula you forget.
 | $v^2 = u^2 + 2as$          | $v, u, a, s$ | $t$     |
 | $s = \frac{1}{2}(u+v)t$    | $s, u, v, t$ | $a$     |
 
-:::tip Always write down what you know and what you need. Choose the equation that contains all
+:::tip
+Always write down what you know and what you need. Choose the equation that contains all
 known quantities and the unknown. Draw a diagram with positive direction clearly marked.
 :::
 
@@ -162,7 +165,8 @@ integrating, or equivalently add the magnitudes of the areas above and below the
 The **gradient** of the tangent to a $v$-$t$ curve gives the instantaneous acceleration. For a
 straight-line $v$-$t$ graph, the acceleration is constant and equals the gradient of that line.
 
-:::warning Displacement $\neq$ distance. If a particle moves $10\,\mathrm{m}$ forwards and then
+:::warning
+Displacement $\neq$ distance. If a particle moves $10\,\mathrm{m}$ forwards and then
 $10\,\mathrm{m}$ backwards, its displacement is $0$ but its total distance is $20\,\mathrm{m}$. On a
 $v$-$t$ graph, the signed areas cancel (displacement), but the unsigned areas add (distance).
 :::
@@ -289,7 +293,8 @@ $$t = \frac{v\sin\theta + \sqrt{(v\sin\theta)^2 + 2gH}}{g}$$
 
 The horizontal range is then $R = v\cos\theta \cdot t$.
 
-:::tip When a projectile is launched from a height, the time of flight is **longer** than for level
+:::tip
+When a projectile is launched from a height, the time of flight is **longer** than for level
 ground, and the angle for maximum range is **less** than $45^\circ$ (derived via calculus, but
 beyond the core syllabus).
 :::

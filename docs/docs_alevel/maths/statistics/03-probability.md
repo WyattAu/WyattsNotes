@@ -20,7 +20,8 @@ slug: probability
 | OCR (A)    | Paper 1, 2 | Includes Venn diagrams and tree diagrams          |
 | CIE (9709) | P1, P6     | Probability in P1; conditional in P6              |
 
-:::info Probability questions test logical reasoning as much as formula recall. Always define events
+:::info
+Probability questions test logical reasoning as much as formula recall. Always define events
 clearly and draw a diagram before calculating.
 :::
 
@@ -148,7 +149,8 @@ $$P(A) = \sum_{i=1}^{n}P(A|B_i)P(B_i)$$
 
 $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i)P(B_i)}$$
 
-:::tip Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
+:::tip
+Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
 positive, what is the probability the patient actually has the disease?" Always define events
 clearly and identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$).
 :::
@@ -193,7 +195,8 @@ $$P(A_{i_1} \cap A_{i_2} \cap \cdots \cap A_{i_k}) = P(A_{i_1}) \cdot P(A_{i_2})
 **Definition.** Events $A_1, A_2, \ldots, A_n$ are **pairwise independent** if every pair
 $(A_i, A_j)$ with $i \neq j$ is independent.
 
-:::warning Mutual independence is a **stronger** condition than pairwise independence. Pairwise
+:::warning
+Mutual independence is a **stronger** condition than pairwise independence. Pairwise
 independence does not imply mutual independence. For example, with two independent coin tosses, let
 $A$ = "first toss is heads", $B$ = "second toss is heads", $C$ = "both tosses are the same". Then
 $A$, $B$, $C$ are pairwise independent but not mutually independent since
@@ -836,7 +839,8 @@ $$P(M_3|D) = \frac{P(D|M_3)P(M_3)}{P(D)} = \frac{0.05 \times 0.2}{0.029} = \frac
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Probability**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-probability) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability with other topics to test synthesis under exam conditions.

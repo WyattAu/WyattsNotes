@@ -530,7 +530,8 @@ $$L = \frac{K\lambda}{\beta\cos\theta}$$
 where $K \approx 0.89$ is the Scherrer constant. This provides a straightforward method for
 estimating nanocrystallite sizes from powder diffraction data.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Do not confuse the Laue condition $\Delta\mathbf{k} = \mathbf{G}$ with Bragg's law $2d\sin\theta = n\lambda$.
 These are equivalent formulations of the same physics. The Laue condition is a vector equation in
 reciprocal space, while Bragg's law is a scalar equation in real space. Converting between them
@@ -700,7 +701,8 @@ model uses a single average sound velocity, while the real phonon spectrum is an
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The Debye and Einstein models describe the *lattice* contribution to specific heat. At low
 temperatures, the electronic specific heat $C_e = \gamma T$ also contributes and can dominate over
 the lattice $T^3$ term in metals. The total low-$T$ specific heat of a metal is
@@ -1043,7 +1045,8 @@ steep band (high mobility).
 The effective mass can be **negative** near a band maximum (holes). Cyclotron resonance experiments
 measure $m^*$ directly: the resonance frequency is $\omega_c = eB/m^*$.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The effective mass is a tensor quantity in general. For crystals with cubic symmetry, it reduces to
 a scalar, but for anisotropic crystals (e.g., graphite, silicon), different effective masses apply
 along different crystallographic directions. Always check the crystal symmetry before assuming

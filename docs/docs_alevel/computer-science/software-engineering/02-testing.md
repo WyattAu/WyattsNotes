@@ -93,7 +93,8 @@ requirements.
 | Beta testing         | Testing by selected users at their own sites            |
 | User acceptance test | Formal testing to determine if requirements are met     |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires unit testing, integration testing, system testing, acceptance testing; requires
   understanding of test data (normal, boundary, erroneous, extreme)

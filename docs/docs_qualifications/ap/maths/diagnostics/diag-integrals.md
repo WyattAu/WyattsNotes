@@ -155,7 +155,7 @@ Let $R$ be the region bounded by $y = \sqrt{x}$, $y = 0$, and $x = 4$.
 
 (a) Shell method (parallel to axis of revolution): use horizontal shells.
 
-A shell at height $y$ has radius $r = 6 - x = 6 - y^2$ and height $h = dy$ (thin strip). Wait -- for shells, we integrate along the axis perpendicular to the axis of revolution.
+A shell at height $y$ has radius $r = 6 - x = 6 - y^2$ and height $h = dy$ (thin strip). For shells, we integrate along the axis perpendicular to the axis of revolution.
 
 Since we revolve about $x = 6$ (vertical line), shells are vertical: radius $= 6 - x$, height $= \sqrt{x} - 0 = \sqrt{x}$.
 
@@ -165,9 +165,7 @@ $$= 2\pi\left[4x^{3/2} - \frac{2}{5}x^{5/2}\right]_0^4 = 2\pi\left(4 \cdot 8 - \
 
 (b) Washer method: washers perpendicular to $x = 6$, so we integrate with respect to $y$.
 
-Outer radius: $R = 6 - 0 = 6$ (from $x = 6$ to the $y$-axis). Wait -- we need to be more careful.
-
-For washers perpendicular to the axis $x = 6$: at height $y$, the region extends from $x = y^2$ to $x = 4$. Revolved about $x = 6$:
+Outer radius: $R = 6 - 0 = 6$ (from $x = 6$ to the $y$-axis). More precisely, for washers perpendicular to the axis $x = 6$: at height $y$, the region extends from $x = y^2$ to $x = 4$. Revolved about $x = 6$:
 - Outer radius: $6 - y^2$ (from axis to the left edge of region at $x = y^2$)
 - Inner radius: $6 - 4 = 2$ (from axis to the right edge of region at $x = 4$)
 
@@ -239,56 +237,22 @@ $$F(x) = \int_0^x 2t\,dt = t^2\Big|_0^x = x^2$$
 
 For $2 \leq x \leq 4$:
 
-$$F(x) = \int_0^2 2t\,dt + \int_2^x (8 - 2t)\,dt = 4 + \left[8t - t^2\right]_2^x = 4 + (8x - x^2 - 12) = x^2 - 8x + 16 = (x-4)^2$$
+$$F(x) = \int_0^2 2t\,dt + \int_2^x (8 - 2t)\,dt = 4 + \left[8t - t^2\right]_2^x = 4 + (8x - x^2 - 12) = -x^2 + 8x - 8$$
 
-So $F(x) = \begin{cases} x^2 & \text{if } 0 \leq x \lt 2 \\ (x-4)^2 & \text{if } 2 \leq x \leq 4 \end{cases}$
+So $F(x) = \begin{cases} x^2 & \text{if } 0 \leq x \lt 2 \\ -x^2 + 8x - 8 & \text{if } 2 \leq x \leq 4 \end{cases}$
+
+(Note: $4 + (8x - x^2 - 12) = -x^2 + 8x - 8$, not $(x-4)^2 = x^2 - 8x + 16$. The two expressions differ.)
 
 (b) Check differentiability at $x = 2$:
 
-$$F(2) = (2-4)^2 = 4$$
+$$F(2) = -4 + 16 - 8 = 4$$
 
 Left-hand derivative: $F'_{-}(2) = \lim_{h \to 0^-}\frac{F(2+h) - F(2)}{h} = \lim_{h \to 0^-}\frac{(2+h)^2 - 4}{h} = \lim_{h \to 0^-}\frac{4h + h^2}{h} = 4$.
 
-Right-hand derivative: $F'_{+}(2) = \lim_{h \to 0^+}\frac{F(2+h) - F(2)}{h} = \lim_{h \to 0^+}\frac{(h-2)^2 - 4}{h} = \lim_{h \to 0^+}\frac{h^2 - 4h}{h} = \lim_{h \to 0^+}(h - 4) = -4$.
+Right-hand derivative: $F'_{+}(2) = \lim_{h \to 0^+}\frac{F(2+h) - F(2)}{h} = \lim_{h \to 0^+}\frac{-(2+h)^2 + 8(2+h) - 8 - 4}{h}$
 
-Since $4 \neq -4$, $F$ is **not differentiable** at $x = 2$.
+$= \lim_{h \to 0^+}\frac{-4 - 4h - h^2 + 16 + 8h - 12}{h} = \lim_{h \to 0^+}\frac{-h^2 + 4h}{h} = \lim_{h \to 0^+}(-h + 4) = 4$.
 
-(c) The student is correct. $f$ has a jump in its derivative at $x = 2$ ($f$ changes from slope $+2$ to slope $-2$), and $F$ (the antiderivative of $f$) inherits a corner at $x = 2$. This is because integration "smooths" a function by one degree: if $f$ is discontinuous, $F$ has a corner; if $f$ has a corner, $F$ has a change in concavity. Here $f$ is continuous everywhere (even at $x = 2$: $f(2^-) = 4 = f(2^+)$) but not differentiable at $x = 2$, so $F$ is differentiable everywhere except at $x = 2$.
+Since $4 = 4$, $F$ **is differentiable** at $x = 2$, with $F'(2) = 4 = f(2)$.
 
-This illustrates FTC part 1: $F'(x) = f(x)$ wherever $f$ is continuous. Since $f$ IS continuous at $x = 2$, we might expect $F'(2) = f(2) = 4$. But FTC part 1 requires $f$ to be continuous in a **neighborhood** of $x$, not just at $x$. The one-sided derivatives give $4$ and $-4$, neither of which equals $f(2) = 4$ from both sides. The left-hand derivative does equal $f(2^-) = 4$ and the right-hand equals $f(2^+) = 4$... wait, $f(2^+) = 8 - 4 = 4$. So $F'_{-}(2) = f(2^-) = 4$ and $F'_{+}(2) = f(2^+) = 4$? Let me recheck.
-
-$f(2^+) = 8 - 2(2) = 4$. So both one-sided limits of $f$ at $x = 2$ equal $4$, meaning $f$ IS continuous at $x = 2$. Then by FTC part 1, $F'(2)$ should equal $f(2) = 4$.
-
-But I computed $F'_{+}(2) = -4$ above. Let me recheck:
-
-$F(2+h) = ((2+h) - 4)^2 = (h - 2)^2 = h^2 - 4h + 4$ for $h > 0$.
-
-$F(2+h) - F(2) = (h^2 - 4h + 4) - 4 = h^2 - 4h$.
-
-$\frac{F(2+h) - F(2)}{h} = h - 4 \to -4$.
-
-So $F'_{+}(2) = -4$, but $f(2) = 4$. This contradicts FTC part 1!
-
-The resolution: $f$ has a **corner** at $x = 2$ (not continuous derivative), but $f$ IS continuous. FTC part 1 says if $f$ is continuous at $c$, then $F$ is differentiable at $c$ and $F'(c) = f(c)$. Here $f$ is continuous at $x = 2$, so $F$ should be differentiable at $x = 2$ with $F'(2) = 4$.
-
-Let me recheck my $F(x)$ formula for $x \geq 2$:
-
-$\int_2^x (8-2t)\,dt = [8t - t^2]_2^x = 8x - x^2 - 16 + 4 = -x^2 + 8x - 12$.
-
-$F(x) = 4 + (-x^2 + 8x - 12) = -x^2 + 8x - 8$.
-
-At $x = 2$: $F(2) = -4 + 16 - 8 = 4$. Correct.
-
-$F(2+h) = -(2+h)^2 + 8(2+h) - 8 = -(4 + 4h + h^2) + 16 + 8h - 8 = -h^2 + 4h + 4$.
-
-$\frac{F(2+h) - F(2)}{h} = \frac{-h^2 + 4h + 4 - 4}{h} = \frac{-h^2 + 4h}{h} = -h + 4 \to 4$.
-
-So $F'_{+}(2) = 4 = F'_{-}(2)$. My earlier formula $F(x) = (x-4)^2$ was wrong.
-
-$(x-4)^2 = x^2 - 8x + 16$. At $x = 2$: $4 - 16 + 16 = 4$. OK. But $F'(x) = 2(x-4)$. At $x = 2$: $-4 \neq 4$.
-
-The error: $F(x) = -x^2 + 8x - 8$ for $x \geq 2$, not $(x-4)^2$. Let me verify: $(x-4)^2 = x^2 - 8x + 16 \neq -x^2 + 8x - 8$.
-
-The correct $F(x)$: for $x \geq 2$, $F(x) = -x^2 + 8x - 8$.
-
-$F$ IS differentiable at $x = 2$ with $F'(2) = 4 = f(2)$, consistent with FTC part 1. The student's claim was **wrong**: $F$ does NOT have a corner at $x = 2$ because $f$ is continuous at $x = 2$. The integral smooths the corner.
+(c) The student is **incorrect**. Although $f$ has a corner at $x = 2$ ($f$ changes from slope $+2$ to slope $-2$), $f$ is continuous at $x = 2$ ($f(2^-) = 4 = f(2^+)$). By FTC part 1, since $f$ is continuous at $x = 2$, $F$ is differentiable at $x = 2$ with $F'(2) = f(2) = 4$. Integration "smooths" the corner: $F$ is continuously differentiable even though $f$ is not.

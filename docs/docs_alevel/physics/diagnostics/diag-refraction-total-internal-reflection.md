@@ -121,63 +121,15 @@ $$\Delta n = 0.0300 \times 1.404 = 0.042$$
 
 $$n = 1.40 \pm 0.04$$
 
-(b) When viewing through multiple layers, the apparent depth is the sum of each layer's apparent depth:
+(b) For near-normal incidence, the apparent depth of an object in a medium of refractive index $n_1$ viewed from a medium of refractive index $n_2$ is $d_{\text{apparent}} = d \times n_2/n_1$.
 
-Apparent depth of liquid above glass $= $ real depth of liquid $/$ refractive index of liquid.
+The light path is: glass ($n_g = 1.52$, thickness $d_g = 3.0\,\text{cm}$) $\to$ liquid ($n_l = 1.40$) $\to$ air ($n_a = 1.00$).
 
-Actually, for the glass block viewed through the liquid, light passes from glass ($n_g = 1.52$) through liquid ($n_l = 1.40$) to air ($n_a = 1.00$).
+For the glass block viewed from air through the intervening liquid, the apparent thickness is:
 
-The apparent thickness of the glass block as viewed through the liquid:
+$$d_{\text{app}} = \frac{d_g}{n_g} = \frac{3.0}{1.52} = 1.97\,\text{cm}$$
 
-For light going from glass to liquid: the apparent depth in the liquid is $d_g \times n_l/n_g = 3.0 \times 1.40/1.52 = 2.76\,\text{cm}$.
-
-But the light then travels from liquid to air, so we must also account for the liquid layer:
-
-Apparent depth of glass $= d_g \times n_{\text{air}}/n_g = 3.0 \times 1.00/1.52 = 1.97\,\text{cm}$.
-
-Wait, this is the apparent depth when viewing through air. Since we are viewing through the liquid, the effective apparent depth is:
-
-The apparent thickness of the glass as seen from above through the liquid $= d_g \times (n_{\text{air}}/n_g) \times (n_{\text{liquid}}/n_{\text{air}})$ -- no, this is wrong.
-
-The correct approach: for near-normal incidence, the apparent depth of an object viewed through a medium of refractive index $n$ is $d/n$. When viewing through multiple media, each layer contributes its apparent depth.
-
-For the glass block viewed through the liquid and then air:
-
-Light goes: glass ($n_g = 1.52$, thickness $d_g = 3.0\,\text{cm}$) $\to$ liquid ($n_l = 1.40$) $\to$ air ($n = 1.0$).
-
-Apparent thickness of glass through liquid to air $= d_g \times n_l/n_g = 3.0 \times 1.40/1.52 = 2.76\,\text{cm}$.
-
-No, that is the apparent depth if the observer is in the liquid. The observer is in air. The correct formula for apparent depth through a layer of refractive index $n_1$ to an observer in medium $n_2$ is:
-
-$d_{\text{apparent}} = d \times n_2/n_1$
-
-But the glass is submerged in the liquid, and the observer is in air. The light travels: glass $\to$ liquid $\to$ air. For the glass layer alone, as perceived by an observer in air through the intervening liquid:
-
-The apparent thickness of the glass is $d_g \times n_l/n_g = 3.0 \times 1.40/1.52 = 2.76\,\text{cm}$.
-
-This is because the observer perceives the object through the last medium the light traverses. The liquid acts as the "viewing medium" for the glass. The light then enters air, which changes the apparent position further, but since the liquid is already between the glass and air, the effective apparent depth of the glass as seen from air through the liquid is:
-
-$d_{\text{app}} = d_g \times n_{\text{air}}/n_g = 3.0/1.52 = 1.97\,\text{cm}$
-
-Wait -- the apparent depth formula depends on the medium the observer is in. The observer is in air. The light from the glass passes through the liquid then air. The effective refractive index transition is glass $\to$ liquid $\to$ air.
-
-For a thin glass layer submerged in liquid, viewed from air:
-
-The apparent depth (compared to the real position) is determined by the total optical path. For a single layer of glass of thickness $d_g$ in liquid of thickness $d_l$ above it:
-
-Total optical path $= n_g d_g + n_l d_l$
-
-Apparent depth $= (n_g d_g + n_l d_l)/n_{\text{air}} = n_g d_g + n_l d_l$
-
-For just the glass contribution to apparent depth $= n_g d_g$ (since $n_{\text{air}} = 1$).
-
-So the apparent thickness of the glass alone $= n_g d_g = 1.52 \times 3.0 = 4.56\,\text{cm}$?? No, that can't be right -- objects appear closer, not further.
-
-The correct formula: apparent depth $= $ real depth $/ n$ (for viewing from air into a medium). The apparent depth of the glass block $= 3.0/1.52 = 1.97\,\text{cm}$ as seen through air. The liquid doesn't change this because the observer is in air, and the apparent depth formula uses the refractive index of the object medium relative to the observer's medium.
-
-Actually, for viewing through the liquid, the glass appears at: $d_{\text{app}} = d_g/n_g = 1.97\,\text{cm}$ from the bottom surface of the liquid. But the observer also sees the liquid layer shortened. The total apparent depth of glass bottom from the liquid surface $= d_g/n_g + d_l/n_l$.
-
-The apparent thickness of the glass alone (as measured from within the liquid) $= d_g/n_g = 3.0/1.52 = 1.97\,\text{cm}$.
+The apparent depth formula uses the refractive index of the object's medium relative to the observer's medium. The liquid layer does not change the apparent thickness of the glass block itself; it only affects the apparent depth of objects within or below the liquid. The total apparent depth of the bottom of the glass from the liquid surface would be $d_l/n_l + d_g/n_g$, but the apparent thickness of the glass alone is $d_g/n_g = 1.97\,\text{cm}$.
 
 (c) The apparent depth formula $d_{\text{app}} = d/n$ is derived using the small-angle (paraxial) approximation. At larger angles, Snell's law gives a curved relationship between real and apparent position, and the simple ratio no longer holds. The apparent depth depends on the viewing angle, and the image position varies with angle -- a phenomenon known as aberration. Additionally, at large angles, the formula breaks down because it assumes all rays from a point converge to a single image point, which is only true for paraxial rays.
 

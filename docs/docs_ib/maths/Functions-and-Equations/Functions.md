@@ -913,7 +913,8 @@ For the A-Level treatment of this topic, see [Functions](https://alevel.wyattau.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Functions and Equations**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-functions-equations) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions and Equations with other IB mathematics topics to test synthesis under exam conditions.

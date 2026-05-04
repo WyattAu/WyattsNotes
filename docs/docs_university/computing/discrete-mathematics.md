@@ -1163,7 +1163,8 @@ One Euler path: $1 \to 2 \to 3 \to 4 \to 5 \to 3 \to 1 \to 5$. All 7 edges are u
 until returning to the start. If unused edges remain, find a vertex on the current circuit with
 unused edges, find a subtour, and splice it in. Repeat until all edges are used.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Determining whether a graph has a Hamilton path/circuit is NP-complete in general, whereas Euler
 paths/circuits can be determined in polynomial time using the degree condition. Do not confuse the two.
 :::

@@ -252,7 +252,8 @@ it).
 | 3NF  | 2NF + no transitive dependencies                | Transitive dependencies |
 | BCNF | 3NF + every determinant is a candidate key      | Remaining anomalies     |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires SQL (SELECT, INSERT, UPDATE, DELETE, JOIN, GROUP BY), normalisation to 3NF, and
   entity-relationship diagrams

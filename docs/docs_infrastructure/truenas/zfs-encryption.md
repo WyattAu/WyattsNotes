@@ -177,7 +177,8 @@ combine encryption and authentication in a single operation. This means every en
 integrity check built in -- tampering with ciphertext is detected during decryption. This is in
 addition to ZFS's own checksum verification.
 
-:::info `aes-256-gcm` is the default when `encryption=on` is specified. It provides the best
+:::info
+`aes-256-gcm` is the default when `encryption=on` is specified. It provides the best
 performance on modern CPUs with AES-NI support and is the recommended choice for all workloads.
 `chacha20-poly1305` is the fallback for CPUs without AES-NI (e.g., some ARM SoCs).
 :::
@@ -195,7 +196,8 @@ brute-force attacks on weak passphrases more expensive.
 | 500000     | ~200 ms                       | Good for sensitive data    |
 | 1000000    | ~400 ms                       | High-security environments |
 
-:::warning Higher `pbkdf2iters` values increase the time to load the encryption key at boot. If you
+:::warning
+Higher `pbkdf2iters` values increase the time to load the encryption key at boot. If you
 set `pbkdf2iters=1000000`, every boot (or key load) will take an additional ~400 ms per dataset.
 This property only applies to `keyformat=passphrase`. It has no effect on `hex` or `raw` key
 formats, which use the raw key material directly.
@@ -242,7 +244,8 @@ Passphrase strengths:
 | Very strong | 7 random words (Diceware)    | ~90 bits          | Good      |
 | Excellent   | 16+ random ASCII characters  | ~105+ bits        | Excellent |
 
-:::info Use a Diceware passphrase (6-8 random words from a word list) or a randomly generated string
+:::info
+Use a Diceware passphrase (6-8 random words from a word list) or a randomly generated string
 of 20+ characters. Store the passphrase in a password manager and write it down on paper stored in a
 physically secure location (safe deposit box, fireproof safe).
 :::
@@ -370,7 +373,8 @@ zfs change-key -o pbkdf2iters=500000 tank/secret
 zfs change-key -o encryption=chacha20-poly1305 tank/secret
 ```
 
-:::warning Changing the encryption algorithm with `zfs change-key` triggers a full re-encryption of
+:::warning
+Changing the encryption algorithm with `zfs change-key` triggers a full re-encryption of
 all data in the dataset. This is a long-running operation that consumes significant I/O bandwidth
 and CPU. Plan this for off-peak hours. Changing the passphrase or key format does not require
 re-encryption.
@@ -391,7 +395,8 @@ zfs create -o encryption=on -o keyformat=raw \
 # Ensure the key file exists and is readable at boot time
 ```
 
-:::warning Storing the key file on the same pool that it decrypts defeats the purpose of encryption.
+:::warning
+Storing the key file on the same pool that it decrypts defeats the purpose of encryption.
 If the pool is stolen, the key file is stolen with it. Store key files on a separate, secure
 location -- a USB drive, a separate small pool, or a remote key server.
 :::
@@ -544,7 +549,8 @@ zpool import -l tank
 # For keyformat=raw or hex with keylocation=file://, it will attempt to read the key files
 ```
 
-:::info On TrueNAS SCALE, the `-l` flag is used by default when importing pools at boot. If your
+:::info
+On TrueNAS SCALE, the `-l` flag is used by default when importing pools at boot. If your
 encrypted datasets use passphrase keys, TrueNAS will prompt you for the passphrase during boot. If
 they use key files, TrueNAS will attempt to load them from the specified file locations
 automatically.
@@ -570,7 +576,8 @@ If you forget the passphrase for an encrypted dataset, the data is **permanently
 There is no backdoor, no recovery mechanism, no workaround. The encryption is designed to be
 computationally infeasible to break.
 
-:::warning There is no "forgot password" mechanism for ZFS encryption. If you lose the passphrase,
+:::warning
+There is no "forgot password" mechanism for ZFS encryption. If you lose the passphrase,
 the data is gone forever. Store passphrases in multiple secure locations: a password manager, a
 physical safe deposit box, and a trusted family member's possession.
 :::
@@ -744,7 +751,8 @@ zfs snapshot tank/encrypted/docs@daily-2026-04-07
 zfs get encryption,encryptionroot tank/encrypted/docs@daily-2026-04-07
 ```
 
-:::info Snapshots do not require separate key management. They use the same encryption key as their
+:::info
+Snapshots do not require separate key management. They use the same encryption key as their
 parent dataset. If you load the key for the parent, all snapshots become accessible. If you unload
 the key, all snapshots become inaccessible.
 :::
@@ -788,7 +796,8 @@ zpool scrub tank
 # If a checksum mismatch is found, ZFS repairs from redundancy (mirror/parity)
 ```
 
-:::info ZFS can scrub encrypted datasets even when the encryption key is not loaded. The checksum
+:::info
+ZFS can scrub encrypted datasets even when the encryption key is not loaded. The checksum
 covers the encrypted data, so integrity verification does not require decryption. This is a
 significant advantage -- you can schedule scrubs on encrypted datasets without worrying about key
 availability.
@@ -966,7 +975,8 @@ lose the keys, the backups are worthless.
 4. **Key escrow:** A trusted person (attorney, family member) has access to a sealed envelope with
    the passphrase.
 
-:::warning Never store encryption keys in the same location as the encrypted data. If a fire
+:::warning
+Never store encryption keys in the same location as the encrypted data. If a fire
 destroys both the NAS and the paper with the passphrase, the data is lost. Distribute keys across
 multiple physical locations.
 :::
@@ -1106,7 +1116,8 @@ zfs unload-key tank/secret
 zfs destroy -r tank/secret
 ```
 
-:::warning Key rotation is a manual, time-consuming process that requires enough free space to hold
+:::warning
+Key rotation is a manual, time-consuming process that requires enough free space to hold
 a copy of the data. Plan key rotation during maintenance windows and verify data integrity before
 destroying the old dataset.
 :::
@@ -1262,7 +1273,8 @@ zfs create tank/secret/public-data
 # (This is NOT supported by ZFS -- you cannot have unencrypted children inside an encrypted parent)
 ```
 
-:::warning You cannot create an unencrypted child dataset inside an encrypted parent. All children
+:::warning
+You cannot create an unencrypted child dataset inside an encrypted parent. All children
 of an encrypted dataset are encrypted, period. If you need a mix of encrypted and unencrypted
 datasets, create them as siblings (not parent-child) within an unencrypted pool.
 :::

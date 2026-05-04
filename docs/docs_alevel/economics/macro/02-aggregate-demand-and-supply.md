@@ -154,7 +154,8 @@ $$P \uparrow \Rightarrow w \uparrow \mathrm{ proportionally} \Rightarrow \frac{w
 
 Therefore, the LRAS curve is vertical at $Y^*$. $\blacksquare$
 
-:::info Board-Specific Note Edexcel (9EC0) presents the LRAS as a _vertical line_ at the productive
+:::info
+Board-Specific Note Edexcel (9EC0) presents the LRAS as a _vertical line_ at the productive
 capacity of the economy. AQA uses the same vertical LRAS but emphasises the distinction between
 actual and potential growth. CIE (9708) may present an alternative diagram where LRAS is drawn as a
 curve becoming vertical at full employment — this is the _Keynesian AS curve_ and is acceptable only
@@ -320,7 +321,8 @@ The classical self-correction mechanism rests on several assumptions that may no
    they may cut spending _further_, shifting AD leftward and deepening the downturn — the opposite
    of self-correction.
 
-:::info Board-Specific Note AQA (ECON4/7132) frequently asks 25-mark essays requiring evaluation of
+:::info
+Board-Specific Note AQA (ECON4/7132) frequently asks 25-mark essays requiring evaluation of
 the self-correcting mechanism. Edexcel (Paper 3) expects students to use AD/AS diagrams to
 illustrate both Keynesian and classical perspectives. CIE (9708 Paper 4) often asks students to
 discuss whether the economy can be left to self-correct. In all cases, examiners reward balanced
@@ -460,19 +462,22 @@ evaluative answers:
    influenced by global supply chains, international capital flows, and exchange rate movements that
    the basic model treats only through the net exports component.
 
-:::info Board-Specific Note CIE (9708) Paper 4 essay questions often require students to evaluate
+:::info
+Board-Specific Note CIE (9708) Paper 4 essay questions often require students to evaluate
 the usefulness of the AD/AS model itself — a higher-order skill. AQA (7132) expects evaluation
 within the context of specific policy discussions (e.g., "Evaluate the view that fiscal policy is
 the most effective way to increase AD"). Edexcel (9EC0) Paper 3 may ask students to compare AD/AS
 with alternative models such as the Phillips Curve.
 :::
 
-:::warning Common Pitfall Students often confuse _shifts_ of AD/SRAS with _movements along_ the
+:::warning
+Common Pitfall Students often confuse _shifts_ of AD/SRAS with _movements along_ the
 curves. "An increase in the price level reduces AD" is WRONG — it causes a movement along the AD
 curve. "An increase in consumer confidence increases AD" is CORRECT — it shifts the AD curve.
 :::
 
-:::info Board-Specific Note Edexcel (9EC0) emphasises the distinction between AD and AS shifts. CIE
+:::info
+Board-Specific Note Edexcel (9EC0) emphasises the distinction between AD and AS shifts. CIE
 (9708) requires detailed diagrammatic analysis of equilibrium and shifts. AQA focuses on the
 multiplier and its policy implications.
 :::
@@ -669,7 +674,8 @@ demands, creating a wage-price spiral.
 
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing shifts with movements along AD/SRAS:** An increase in the price level does NOT shift the AD curve -- it causes a movement along it. Only changes in the components of AD (C, I, G, X-M) at a given price level shift the curve. This is the single most common exam error.
 

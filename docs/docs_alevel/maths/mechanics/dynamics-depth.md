@@ -181,7 +181,8 @@ Since $a \gt 0$, our assumption was correct.
 
 $T = 5(g - a) = 5(9.8 - 0.754) = 45.23\;\mathrm{N}$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 When a pulley problem involves an inclined plane, always state your assumption about which
 direction the system moves. If the resulting acceleration is negative, your assumption was wrong
 and the system moves the other way.

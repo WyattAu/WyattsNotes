@@ -895,7 +895,8 @@ For the A-Level treatment of this topic, see [Dynamics](https://alevel.wyattau.c
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Dynamics**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-dynamics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics with other physics topics to test synthesis under exam conditions.

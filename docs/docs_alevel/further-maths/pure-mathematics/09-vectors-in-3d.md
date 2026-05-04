@@ -27,7 +27,8 @@ tools are essential for geometry, mechanics, and physics at university level.
 | OCR (A) | Paper 1 | 3D vectors, scalar product, vector product, planes                        |
 | CIE     | P1      | 3D vectors, scalar product, vector product, lines, planes, intersections  |
 
-:::info All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
+:::info
+All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
 scalar triple product for volumes. CIE places particular emphasis on intersections of lines and
 planes.
 :::

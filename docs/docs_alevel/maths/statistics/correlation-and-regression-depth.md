@@ -51,7 +51,8 @@ An **outlier** is a data point that lies far from the general pattern. Outliers 
 - Result from measurement errors.
 - Significantly affect the correlation coefficient and regression line.
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 A single outlier can dramatically change the value of the correlation coefficient. Always examine
 your scatter diagram before relying on numerical measures.
 :::

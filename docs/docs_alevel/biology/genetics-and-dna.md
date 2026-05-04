@@ -14,7 +14,9 @@ sidebar_position: 5
 
 ## Genetics and DNA
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 
 ## 1. DNA Structure and Replication
 
@@ -64,7 +66,8 @@ strand and one newly synthesised strand. This was demonstrated by the Meselson-S
 incorrectly paired nucleotides immediately after they are added, reducing the error rate to
 approximately $10^{-9}$ per base per replication.
 
-:::warning Common Pitfall DNA polymerase can only add nucleotides to the $3'$ end of a growing
+:::warning
+Common Pitfall DNA polymerase can only add nucleotides to the $3'$ end of a growing
 strand. It cannot initiate synthesis de novo -- it requires a pre-existing $3'-\mathrm{OH}$ group,
 which is provided by the RNA primer. Students often forget to mention primase and primers when
 describing replication.
@@ -161,7 +164,8 @@ producing a completely non-functional protein.
   pyrimidine dimers (thymine dimers); chemical mutagens (base analogues, alkylating agents,
   intercalating agents like ethidium bromide) distort DNA structure.
 
-:::warning Common Pitfall Students often state that "mutations are always harmful." Most mutations
+:::warning
+Common Pitfall Students often state that "mutations are always harmful." Most mutations
 are neutral (silent mutations, mutations in non-coding DNA). Some are harmful (cause genetic
 disorders), and a few are beneficial (provide the variation upon which natural selection acts). The
 harmful mutations are eliminated by selection; beneficial ones may increase in frequency.
@@ -284,7 +288,8 @@ genotype $I^AI^B$ produces blood group AB, expressing both A and B antigens.
 -- $RR$ (red) $\times$ $WW$ (white) gives $RW$ (pink). The pink phenotype is not a blend of pigments
 but reduced production of red pigment.
 
-:::warning Common Pitfall Students often confuse co-dominance and incomplete dominance. In
+:::warning
+Common Pitfall Students often confuse co-dominance and incomplete dominance. In
 co-dominance, both alleles produce their full product (both A and B antigens are present). In
 incomplete dominance, the heterozygote produces less of the dominant product (an intermediate
 phenotype). The genetic ratios for both are 1:2:1, but the phenotypic expression differs.
@@ -342,7 +347,8 @@ can have long-term effects on gene expression without altering the DNA sequence.
 $\mathrm{B_{12}}$) increases DNA methylation at the agouti gene, silencing it and producing
 offspring with brown coats and normal weight. A methyl-poor diet produces yellow, obese offspring.
 
-:::warning Common Pitfall Students often confuse epigenetic changes with genetic mutations.
+:::warning
+Common Pitfall Students often confuse epigenetic changes with genetic mutations.
 Epigenetic changes are reversible modifications to gene expression that do not alter the DNA
 sequence itself. Mutations are permanent changes to the nucleotide sequence. Epigenetic marks can be
 passed to daughter cells during mitosis (and in some cases meiosis), but they can also be removed by
@@ -494,7 +500,8 @@ discontinuous Okazaki fragments, each requiring its own RNA primer.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Genetics and DNA**? The [diagnostic test](/docs/alevel/biology/diagnostics/diag-genetics-dna) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Genetics and DNA with other biology topics to test synthesis under exam conditions.

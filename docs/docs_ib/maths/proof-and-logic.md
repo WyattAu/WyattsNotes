@@ -121,7 +121,8 @@ Negate: "The function $f$ is continuous and differentiable."
 Let $C$: "$f$ is continuous." Let $D$: "$f$ is differentiable." The statement is $C \wedge D$. Its
 negation is $\neg C \vee \neg D$, i.e., "$f$ is either not continuous or not differentiable."
 
-:::info A common mistake is to negate "P and Q" as "not P and not Q." That is wrong. The negation of
+:::info
+A common mistake is to negate "P and Q" as "not P and not Q." That is wrong. The negation of
 "$f$ is continuous and differentiable" is NOT "$f$ is not continuous and not differentiable" — that
 is too strong.
 :::
@@ -495,7 +496,8 @@ not just $P(k)$.
 **When to use strong induction:** When proving $P(k+1)$ requires not just $P(k)$ but some earlier
 case $P(j)$ where $j \lt k$.
 
-:::warning Weak and strong induction are logically equivalent — anything provable by one is provable
+:::warning
+Weak and strong induction are logically equivalent — anything provable by one is provable
 by the other. But strong induction can make certain proofs much more natural. Use it when the
 inductive step needs to reference cases earlier than just $k$.
 :::
@@ -573,7 +575,8 @@ Counterexample: $2$ is prime and $2$ is even.
 
 When $n = 41$: $41^2 - 41 + 41 = 41^2 = 1681$, which is composite ($41 \times 41$).
 
-:::tip To prove a universal claim requires a general proof. To disprove it requires only one
+:::tip
+To prove a universal claim requires a general proof. To disprove it requires only one
 counterexample. This asymmetry is fundamental to mathematical logic.
 :::
 
@@ -744,7 +747,8 @@ $ax + by = (dm)x + (dn)y = d(mx + ny)$.
 
 Since $mx + ny \in \mathbb{Z}$, $d \mid (ax + by)$. $\blacksquare$
 
-:::note This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
+:::note
+This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
 called a **linear combination** of $a$ and $b$. The greatest common divisor $\gcd(a, b)$ can always
 be expressed as a linear combination of $a$ and $b$ (Bezout's identity).
 :::
@@ -857,7 +861,8 @@ $ac = (b + kn)(d + ln) = bd + bln + dkn + kln^2 = bd + n(bl + dk + kln)$.
 
 Therefore $n \mid (ac - bd)$, so $ac \equiv bd \pmod{n}$. $\blacksquare$
 
-:::warning Division does NOT work with congruences in general. From $ac \equiv bc \pmod{n}$, you can
+:::warning
+Division does NOT work with congruences in general. From $ac \equiv bc \pmod{n}$, you can
 only conclude $a \equiv b \pmod{n}$ if $\gcd(c, n) = 1$. For example, $6 \equiv 0 \pmod{3}$ and
 $3 \equiv 0 \pmod{3}$, but $\frac{6}{3} = 2 \not\equiv \frac{0}{0}$ (undefined).
 :::
@@ -1055,7 +1060,8 @@ The conclusion ($\sqrt{2}$ is irrational) appears in the hypothesis. This proves
 **How to avoid:** Check that every step of your proof relies only on axioms, definitions, and
 previously established theorems — never on the statement you are proving.
 
-:::danger Circular reasoning is the most dangerous logical fallacy in mathematics because it can
+:::danger
+Circular reasoning is the most dangerous logical fallacy in mathematics because it can
 look convincing. Always verify that your proof does not contain the conclusion as an unstated
 assumption.
 :::
@@ -1098,7 +1104,8 @@ fails.)
 Incorrect negation: "If it rains, the ground does not get wet." (This is a different implication
 entirely.)
 
-:::warning This is one of the most common errors on IB exams. Memorize: the negation of "$P$ implies
+:::warning
+This is one of the most common errors on IB exams. Memorize: the negation of "$P$ implies
 $Q$" is "$P$ AND not $Q$."
 :::
 
@@ -1156,7 +1163,8 @@ $P(k-1)$ or earlier, weak induction's hypothesis is insufficient.
 this is usually unnecessary and makes proofs harder to read. Use weak induction unless the structure
 of the problem clearly requires strong induction.
 
-:::tip **Rule of thumb:** If the statement for $n$ depends only on the statement for $n-1$ (like
+:::tip
+**Rule of thumb:** If the statement for $n$ depends only on the statement for $n-1$ (like
 $n! = n \cdot (n-1)!$), use weak induction. If it depends on earlier terms (like
 $F_n = F_{n-1} + F_{n-2}$), use strong induction.
 :::
@@ -1193,7 +1201,8 @@ Showing $P$ is false does NOT disprove the implication.
 | $\forall x, \; \exists y, \; P(x,y)$ | $\exists x, \; \forall y, \; \neg P(x,y)$ |
 | $\exists x, \; \forall y, \; P(x,y)$ | $\forall x, \; \exists y, \; \neg P(x,y)$ |
 
-:::danger The order of quantifiers matters. "For every person, there exists a mother" is very
+:::danger
+The order of quantifiers matters. "For every person, there exists a mother" is very
 different from "There exists a person who is the mother of everyone." The negation of "for every x
 there exists y" is "there exists x such that for every y" — quantifiers flip but their order is
 preserved.
@@ -1266,7 +1275,8 @@ transitivity of divisibility, $n \mid (a-b)$. Therefore $a \equiv b \pmod{n}$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Proof and Logic**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-proof-logic) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Proof and Logic with other IB mathematics topics to test synthesis under exam conditions.

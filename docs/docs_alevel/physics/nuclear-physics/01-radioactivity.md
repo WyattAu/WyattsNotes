@@ -13,7 +13,9 @@ slug: radioactivity
 
 ## Radioactivity
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 <PhetSimulation simulationId="alpha-decay" title="Alpha Decay" />
 
@@ -97,11 +99,14 @@ $$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 No change in $A$ or $Z$. Gamma rays are weakly ionising but highly penetrating (stopped by thick
 lead or concrete).
 
-:::warning Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
+:::warning
+Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
 number changes. A neutron becomes a proton, so the total nucleon count is unchanged.
 :::
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 | Requirement                  | AQA         | Edexcel     | OCR (A)     | CIE      |
 | ---------------------------- | ----------- | ----------- | ----------- | -------- |
@@ -244,7 +249,8 @@ $$\ln A = \ln A_0 - \lambda t$$
 
 The gradient of the straight line gives $-\lambda$, and then $t_{1/2} = \ln 2 / \lambda$.
 
-:::tip Exam Technique When describing an experimental method for determining half-life, always
+:::tip
+Exam Technique When describing an experimental method for determining half-life, always
 mention: (1) measuring background count rate first, (2) subtracting it from all readings, (3) taking
 readings at regular intervals, and (4) using a log-linear graph for greater accuracy.
 :::
@@ -257,7 +263,8 @@ readings at regular intervals, and (4) using a log-linear graph for greater accu
   known mass of the isotope and use $A = \lambda N$ where $N$ is calculated from the mass and
   Avogadro's number.
 
-:::info Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
+:::info
+Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
 discussion of uncertainties and the effect of dead time on accuracy; CIE requires the logarithmic
 method.
 :::
@@ -400,7 +407,9 @@ $1000 - 125 = 875$.
 
 ## 4. Decay Chains
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 **Definition.** A decay chain (or radioactive series) is a sequence of radioactive decays where each
 daughter nuclide is itself radioactive, continuing until a stable nuclide is reached.
@@ -489,7 +498,8 @@ activity to fall to half its initial value, combining both physical decay and bi
 
 $$\frac{1}{t_{\mathrm{eff}}} = \frac{1}{t_{\mathrm{physical}}} + \frac{1}{t_{\mathrm{biological}}}$$
 
-:::info Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
+:::info
+Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
 explicitly tested by AQA or CIE at A Level.
 :::
 
@@ -529,7 +539,8 @@ Key differences from Chernobyl:
 Both disasters demonstrate that understanding half-lives is critical for predicting contamination
 timelines and informing public health responses.
 
-:::tip Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
+:::tip
+Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
 which isotopes were released, (2) their half-lives, (3) how they enter the body (inhalation,
 ingestion, external exposure), and (4) the type of radiation emitted (alpha is most dangerous
 internally, gamma externally).
@@ -631,7 +642,8 @@ equilibrium value over several radon half-lives (approximately 20-40 days).
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Radioactivity**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-radioactivity) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Radioactivity with other physics topics to test synthesis under exam conditions.
@@ -639,7 +651,8 @@ Ready to test your understanding of **Radioactivity**? The [diagnostic test](/do
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing alpha, beta, and gamma radiation properties:** Alpha particles are helium nuclei (2 protons, 2 neutrons) -- they are heavy, positively charged, and stopped by paper. Beta particles are fast electrons -- they are light, negatively charged, and stopped by aluminium. Gamma rays are electromagnetic waves -- they have no charge or mass and require thick lead or concrete to stop.
 

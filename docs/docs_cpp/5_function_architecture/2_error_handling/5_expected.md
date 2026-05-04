@@ -480,7 +480,8 @@ int main() {
 //   caught: construction failed
 ```
 
-:::tip If a constructor can fail, throwing an exception is the **only** way to signal the error.
+:::tip
+If a constructor can fail, throwing an exception is the **only** way to signal the error.
 Error codes cannot be returned from a constructor.
 :::
 
@@ -578,7 +579,8 @@ int main() {
 //   caught: other error
 ```
 
-:::warning Swallowing exceptions in destructors is a **last resort**. If cleanup truly cannot fail,
+:::warning
+Swallowing exceptions in destructors is a **last resort**. If cleanup truly cannot fail,
 make the destructor `noexcept` and ensure cleanup operations are themselves `noexcept`. Use RAII
 wrappers that handle errors internally rather than propagating them from destructors.
 :::

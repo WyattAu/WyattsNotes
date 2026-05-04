@@ -956,7 +956,8 @@ The recursion depth is $n = 5$ (vs $\log n$ in the average case). The pivot is a
 | Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes    | $O(n)$      |
 | Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | No     | $O(\log n)$ |
 
-:::info **HL Examination Tip:** When asked to choose a sorting algorithm for a given scenario,
+:::info
+**HL Examination Tip:** When asked to choose a sorting algorithm for a given scenario,
 consider the data size, whether the data is nearly sorted, memory constraints, and whether stability
 is required. Merge sort guarantees $O(n \log n)$ but uses extra space. Quick sort is often faster in
 practice but has a worst case of $O(n^2)$. Insertion sort is unbeatable for small or nearly sorted

@@ -13,7 +13,9 @@ slug: magnetic-fields
 
 ## Magnetic Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
@@ -193,7 +195,8 @@ $$\boxed{\mathcal{E} = \mathcal{E}_0\sin(\omega t)}$$
 
 where the peak e.m.f. is $\mathcal{E}_0 = NBA\omega$.
 
-:::tip Exam Technique When asked about Lenz's law, always describe what the induced current does
+:::tip
+Exam Technique When asked about Lenz's law, always describe what the induced current does
 (creates a field to oppose the change) and identify the direction of the induced current using the
 right-hand grip rule.
 :::
@@ -217,7 +220,8 @@ $$\mathbf{B} = \frac{\mu_0 I}{4\pi}\int \frac{d\mathbf{l} \times \hat{\mathbf{r}
 The direction of $d\mathbf{B}$ follows from the right-hand rule on
 $d\mathbf{l} \times \hat{\mathbf{r}}$.
 
-:::warning Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$, not
+:::warning
+Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$, not
 $\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction.
 :::
 
@@ -455,7 +459,8 @@ The time constant $\tau = L/R$ has the same physical meaning as $\tau = RC$ in c
 after one time constant, the current reaches $1 - e^{-1} \approx 63\%$ of its final value; after
 $5\tau$, it is within 1%.
 
-:::tip Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
+:::tip
+Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
 $RC\,dV_C/dt + V_C = V$. Both are first-order linear ODEs with exponential solutions. Use the same
 problem-solving framework for both.
 :::
@@ -826,7 +831,8 @@ cm.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Magnetic Fields**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-magnetic-fields) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Magnetic Fields with other physics topics to test synthesis under exam conditions.
@@ -834,7 +840,8 @@ Ready to test your understanding of **Magnetic Fields**? The [diagnostic test](/
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Using the wrong hand rule:** Fleming's LEFT-hand rule gives the direction of force on a CONVENTIONAL current (positive to negative). Fleming's RIGHT-hand rule gives the direction of induced current. Using the left hand for electromagnetic induction or the right hand for the motor effect will give the wrong answer.
 

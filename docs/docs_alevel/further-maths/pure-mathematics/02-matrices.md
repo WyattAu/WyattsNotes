@@ -163,7 +163,8 @@ Suppose $\mathbf{B}$ and $\mathbf{C}$ are both inverses of $\mathbf{A}$. Then:
 
 $$\mathbf{B} = \mathbf{B}\mathbf{I} = \mathbf{B}(\mathbf{AC}) = (\mathbf{BA})\mathbf{C} = \mathbf{IC} = \mathbf{C} \quad \square$$
 
-:::tip To verify your inverse, always check that $\mathbf{A}\mathbf{A}^{-1} = \mathbf{I}$. This
+:::tip
+To verify your inverse, always check that $\mathbf{A}\mathbf{A}^{-1} = \mathbf{I}$. This
 catches sign errors and arithmetic mistakes immediately.
 :::
 
@@ -293,12 +294,14 @@ Note: $\det = 1$ for shears, so area is preserved.
 If transformation $\mathbf{A}$ is followed by transformation $\mathbf{B}$, the combined
 transformation is represented by $\mathbf{BA}$ (rightmost applied first).
 
-:::warning Order matters. A rotation followed by a reflection generally produces a different result
+:::warning
+Order matters. A rotation followed by a reflection generally produces a different result
 from a reflection followed by a rotation. The combined matrix is $\mathbf{BA}$ (not $\mathbf{AB}$)
 when $\mathbf{A}$ is applied first.
 :::
 
-:::tip To find the matrix of a combined transformation, multiply the matrices in reverse order of
+:::tip
+To find the matrix of a combined transformation, multiply the matrices in reverse order of
 application. If the question says "reflect then rotate," compute
 $\mathbf{R}_{\mathrm{rot}} \times \mathbf{R}_{\mathrm{ref}}$.
 :::
@@ -325,7 +328,8 @@ transformation.
 
 ## 6. Matrix Transformations in 3D
 
-:::info 3D transformations are required by AQA and appear on CIE P1. Edexcel and OCR focus primarily
+:::info
+3D transformations are required by AQA and appear on CIE P1. Edexcel and OCR focus primarily
 on 2D but may include basic $3\times3$ determinant and inverse calculations.
 :::
 

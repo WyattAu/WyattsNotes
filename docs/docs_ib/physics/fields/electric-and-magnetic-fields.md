@@ -24,7 +24,8 @@ $$
 \end{aligned}
 $$
 
-:::info Coulomb's Law can also be expressed in vector form, where the force exerted by $q_1$ on
+:::info
+Coulomb's Law can also be expressed in vector form, where the force exerted by $q_1$ on
 $q_2$ is:
 
 $$
@@ -44,7 +45,8 @@ $$
 \end{aligned}
 $$
 
-:::info The derivation of Coulomb's constant can be possible with Maxwell's equations. Gauss's Law
+:::info
+The derivation of Coulomb's constant can be possible with Maxwell's equations. Gauss's Law
 states that the electric flux ($\Phi$) through any closed surface is equal to net electric charge
 enclosed within the surface multiply by the inverse of permittivity of free space ($\epsilon_0$):
 
@@ -753,7 +755,8 @@ equilibrium.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Electric and Magnetic Fields**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-electric-magnetic-fields) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electric and Magnetic Fields with other physics topics to test synthesis under exam conditions.

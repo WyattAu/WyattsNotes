@@ -624,7 +624,8 @@ For the A-Level treatment of this topic, see [DC Circuits](https://alevel.wyatta
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Electrical Circuits**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-electrical-circuits) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electrical Circuits with other physics topics to test synthesis under exam conditions.

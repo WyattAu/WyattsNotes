@@ -20,7 +20,8 @@ slug: trigonometry
 | OCR (A)    | Paper 1, 2 | Includes small angle approximations                                      |
 | CIE (9709) | P1, P2, P3 | Trig functions in P1; identities and equations in P2; further trig in P3 |
 
-:::info All boards provide trigonometric identities in the formula booklet, but not their proofs.
+:::info
+All boards provide trigonometric identities in the formula booklet, but not their proofs.
 You need to know _which_ identities exist and how to apply them.
 :::
 
@@ -250,7 +251,8 @@ $$\sin\theta \approx \theta, \quad \cos\theta \approx 1, \quad \tan\theta \appro
 _Intuition._ Near the origin, the curves $y = \sin\theta$ and $y = \tan\theta$ are almost
 indistinguishable from the line $y = \theta$. The curve $y = \cos\theta$ is nearly flat at $y = 1$.
 
-:::warning The small angle approximations are only valid when $\theta$ is in **radians**, not
+:::warning
+The small angle approximations are only valid when $\theta$ is in **radians**, not
 degrees. This is a very common exam error.
 :::
 

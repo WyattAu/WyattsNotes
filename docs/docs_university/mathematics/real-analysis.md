@@ -169,7 +169,8 @@ shrink to $\sup S$. $\blacksquare$
 _Remark._ The field $\mathbb{Q}$ satisfies none of these properties, which is why it must be
 extended to $\mathbb{R}$ for analysis.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The completeness axiom is often misstated as "every bounded set has a supremum." The set must be
 non-empty. Also, completeness does not say every set has a maximum; $\sup(S)$ need not belong to $S$.
 For example, $\sup\{1/n : n \in \mathbb{N}\} = 1$, which belongs to the set, but
@@ -386,7 +387,8 @@ $(L-2)(L+1) = 0$. Since $a_n \geq \sqrt{2} > 0$ for all $n$, $L \geq 0$, so $L =
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 When computing $\limsup$ and $\liminf$, do not confuse them with $\sup$ and $\inf$ of the range
 $\{a_n : n \in \mathbb{N}\}$. The $\limsup$ depends on the *tail* behavior of the sequence. For
 example, $a_n = (-1)^n$ has $\limsup = 1$ and $\liminf = -1$, but $\sup\{a_n\} = 1$ and

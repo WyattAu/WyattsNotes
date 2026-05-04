@@ -153,17 +153,9 @@ This should equal $x$:
 
 $$\frac{7x + 12}{4x + 7} = x \implies 7x + 12 = 4x^2 + 7x \implies 4x^2 = 12 \implies x^2 = 3$$
 
-This is not identically equal to $x$. Let me recompute:
+This is not identically equal to $x$, confirming that $f$ is not self-inverse.
 
-$$f(x) = \frac{2x + 3}{x + 2}$$
-
-$$f(f(x)) = \frac{2 \cdot \frac{2x+3}{x+2} + 3}{\frac{2x+3}{x+2} + 2} = \frac{\frac{2(2x+3) + 3(x+2)}{x+2}}{\frac{(2x+3) + 2(x+2)}{x+2}} = \frac{4x+6+3x+6}{2x+3+2x+4} = \frac{7x+12}{4x+7}$$
-
-This is indeed not equal to $x$ for all $x$. So $f$ is not self-inverse.
-
-Actually, let me reconsider. $f(f(x))$ for $f(x) = \frac{2x+3}{x+2}$:
-
-The fixed points are $\pm\sqrt{3}$. Since $f$ is a Mobius transformation with $ad - bc = 2 \cdot 2 - 1 \cdot 3 = 1 \neq 0$, it is invertible. The inverse is:
+Since $f$ is a Mobius transformation with $ad - bc = 2 \cdot 2 - 1 \cdot 3 = 1 \neq 0$, it is invertible. The inverse is:
 
 $$f^{-1}(x) = \frac{2x - 3}{-x + 2} = \frac{2x - 3}{2 - x}, \quad x \neq 2$$
 

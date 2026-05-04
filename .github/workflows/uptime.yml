@@ -19,6 +19,7 @@ jobs:
             "alevel.wyattau.com"
             "qualifications.wyattau.com"
             "programming.wyattau.com"
+            "university.wyattau.com"
           )
           FAILED=()
           for site in "${SITES[@]}"; do

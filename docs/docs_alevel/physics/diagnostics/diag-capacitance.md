@@ -222,11 +222,7 @@ Energy lost $= 12.5 - 2.5 = 10.0\,\text{mJ}$
 
 This energy is dissipated as heat in the connecting wires (or resistor) and as electromagnetic radiation during the transient current flow. This is a fundamental result: connecting two capacitors always results in energy loss.
 
-(c) Peak current occurs at $t = 0$ when the full voltage difference appears across $R$:
-
-$$I_{\text{peak}} = \frac{V_1 - V_f}{R} = \frac{50 - 0}{100} = 0.50\,\text{A}$$
-
-Wait, at $t = 0$, $C_2$ has zero voltage and $C_1$ has $50\,\text{V}$. The initial current is:
+(c) At $t = 0$, $C_2$ is uncharged (zero voltage) and $C_1$ is at $50\,\text{V}$, so the full voltage difference appears across $R$:
 
 $$I_0 = \frac{V_1}{R} = \frac{50}{100} = 0.50\,\text{A}$$
 

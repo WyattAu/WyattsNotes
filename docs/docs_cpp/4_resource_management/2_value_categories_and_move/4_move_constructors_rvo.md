@@ -377,7 +377,8 @@ void container_demo() {
 }
 ```
 
-:::warning Always mark move constructors and move assignment operators `noexcept` unless they
+:::warning
+Always mark move constructors and move assignment operators `noexcept` unless they
 genuinely can throw (which is rare — moving should only perform pointer swaps and assignments). The
 `std::is_nothrow_move_constructible_v<T>` type trait is used by standard containers to select
 between move and copy during reallocation. If your move is not `noexcept`, your types will be
@@ -781,7 +782,8 @@ Before swap: a.size=1000, b.size=2000
 After swap:  a.size=2000, b.size=1000
 ```
 
-:::tip When writing a custom `swap`, always include `using std::swap;` before calling `swap` on
+:::tip
+When writing a custom `swap`, always include `using std::swap;` before calling `swap` on
 individual members. This ensures that if a member type has a custom `swap`, it is found via ADL,
 while falling back to `std::swap` for types that do not.
 :::
@@ -866,7 +868,8 @@ The `this != &other` guard is essential. Without it, `a = std::move(a)` would:
 After self-move, the object holds a dangling pointer and a zero size. Any subsequent access or
 destruction triggers use-after-free.
 
-:::warning Self-move assignment (`a = std::move(a)`) is **not undefined behavior** in the general
+:::warning
+Self-move assignment (`a = std::move(a)`) is **not undefined behavior** in the general
 case [N4950 S11.4.5.3], but the Standard requires the object to be in a "valid but unspecified
 state" afterward. For resource-owning types that do not guard against self-assignment, this
 typically means a use-after-free. Always include the self-assignment check in move assignment

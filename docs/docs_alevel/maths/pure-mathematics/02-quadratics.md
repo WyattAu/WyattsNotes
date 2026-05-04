@@ -128,11 +128,13 @@ _Intuition._ The quadratic formula is nothing more than completing the square in
 form. Every step is reversible, so the formula is necessary and sufficient: it gives _all_ solutions
 and no extraneous ones.
 
-:::info Edexcel provides the quadratic formula in the formula booklet. AQA and OCR (A) do not — you
+:::info
+Edexcel provides the quadratic formula in the formula booklet. AQA and OCR (A) do not — you
 must memorise it.
 :::
 
-:::tip Before applying the formula, check whether the equation can be solved more easily by
+:::tip
+Before applying the formula, check whether the equation can be solved more easily by
 factorisation. Always check the discriminant first.
 :::
 
@@ -274,7 +276,8 @@ quadratic across the real line.
 2. Sketch the parabola (knowing whether $a > 0$ or $a < 0$).
 3. Read off the regions where the quadratic is positive or negative.
 
-:::warning A critical error in inequalities: when multiplying or dividing both sides by a negative
+:::warning
+A critical error in inequalities: when multiplying or dividing both sides by a negative
 number, you must **reverse** the inequality sign. This is because multiplication by $-1$ is
 order-reversing: if $a < b$, then $-a > -b$.
 :::
@@ -412,7 +415,8 @@ $$x = \frac{1 \pm \sqrt{1 + 16}}{2} = \frac{1 \pm \sqrt{17}}{2}$$
 The discriminant is positive, confirming two intersection points — which corresponds geometrically
 to the line cutting the parabola twice.
 
-:::tip The discriminant of the resulting quadratic tells you the number of intersection points
+:::tip
+The discriminant of the resulting quadratic tells you the number of intersection points
 between a line and a parabola: $\Delta > 0$ means 2 intersections, $\Delta = 0$ means tangent,
 $\Delta < 0$ means no intersection.
 :::
@@ -439,7 +443,8 @@ it to the quadratic $az^2 + bz + c = 0$.
 | $a\sin^2\theta + b\sin\theta + c = 0$                                     | $z = \sin\theta$      | $az^2 + bz + c = 0$ |
 | $a\left(x + \frac{1}{x}\right)^2 + b\left(x + \frac{1}{x}\right) + c = 0$ | $z = x + \frac{1}{x}$ | $az^2 + bz + c = 0$ |
 
-:::warning After solving the reduced quadratic for $z$, you must substitute back to find $x$.
+:::warning
+After solving the reduced quadratic for $z$, you must substitute back to find $x$.
 Discard any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires
 $z \geq 0$, $z = p^x$ requires $z > 0$). Always verify solutions in the original equation.
 :::
@@ -663,7 +668,8 @@ Solution: $\theta \in \left\{0, \frac{2\pi}{3}, \frac{4\pi}{3}, 2\pi\right\}$.
 Equations involving $\sqrt{f(x)}$ can sometimes be reduced to quadratics by isolating the radical
 and squaring both sides.
 
-:::warning Squaring both sides of an equation is **not reversible** — it can introduce extraneous
+:::warning
+Squaring both sides of an equation is **not reversible** — it can introduce extraneous
 solutions. You must always substitute every candidate solution back into the **original** equation
 to verify it.
 :::
@@ -1055,7 +1061,8 @@ Solution: $\theta \in \left\{\frac{\pi}{6}, \frac{5\pi}{6}\right\}$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Quadratics**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-quadratics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quadratics with other pure mathematics topics to test synthesis under exam conditions.

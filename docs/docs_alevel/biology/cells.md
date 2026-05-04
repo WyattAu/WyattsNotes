@@ -14,7 +14,9 @@ sidebar_position: 2
 
 ## Cells
 
-:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2
+:::
 
 ## 1. Cell Theory and Microscopy
 
@@ -64,7 +66,8 @@ $$\mathrm{Magnification} = \frac{\mathrm{Image\ size}}{\mathrm{Actual\ size}}$$
 out-of-focus light, producing sharp optical sections through thick specimens. This allows 3D
 reconstruction without the need for physical sectioning.
 
-:::warning Common Pitfall Students often confuse magnification with resolution. Magnification is how
+:::warning
+Common Pitfall Students often confuse magnification with resolution. Magnification is how
 much larger the image appears; resolution is the ability to distinguish two closely spaced objects
 as separate. Increasing magnification without increasing resolution produces a larger but blurry
 image -- no additional detail is revealed.
@@ -113,7 +116,8 @@ animals, plants, fungi, and protists.
 | Reproduction              | Binary fission (asexual)                       | Mitosis, meiosis                               |
 | Flagella                  | Simple, rotating                               | Complex, $9 + 2$ microtubule arrangement       |
 
-:::warning Common Pitfall The "S" in ribosome sizes (70S, 80S) stands for Svedberg units, which
+:::warning
+Common Pitfall The "S" in ribosome sizes (70S, 80S) stands for Svedberg units, which
 measure sedimentation rate during centrifugation -- not molecular weight. Svedberg units are not
 additive: $50\mathrm{S} + 30\mathrm{S} = 70\mathrm{S}$ is a coincidence of sedimentation rates, not
 molecular masses.
@@ -201,7 +205,8 @@ enzymes (lipases, proteases, nucleases) optimised for pH $\approx 5$. They funct
 - **Autophagy**: breaking down worn-out organelles.
 - **Apoptosis**: programmed cell death.
 
-:::warning Common Pitfall Plant cells do have lysosomes, though they are sometimes called vacuoles
+:::warning
+Common Pitfall Plant cells do have lysosomes, though they are sometimes called vacuoles
 with hydrolytic activity. However, plant cells also have a large permanent vacuole, which is a
 distinct structure with different functions (turgor, storage, waste isolation).
 :::

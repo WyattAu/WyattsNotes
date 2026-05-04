@@ -89,7 +89,8 @@ class Student:
 3. **Flexibility:** Internal implementation can change without affecting users
 4. **Maintainability:** Reduces coupling between components
 
-:::tip Exam tip In exams, always justify why encapsulation is important. Focus on data integrity
+:::tip
+Exam tip In exams, always justify why encapsulation is important. Focus on data integrity
 (preventing invalid states) and implementation flexibility.
 :::
 
@@ -210,7 +211,8 @@ program.
 
 This means: wherever a superclass object is expected, a subclass object should work correctly.
 
-:::info Board-specific **AQA** requires understanding of classes, objects, inheritance,
+:::info
+Board-specific **AQA** requires understanding of classes, objects, inheritance,
 polymorphism, encapsulation; uses pseudocode class definitions. **CIE (9618)** covers OOP
 principles; may require implementation in a specific language (Python/Pascal). **OCR (A)** requires
 class definitions with attributes and methods; constructor/destructor understanding. **Edexcel**

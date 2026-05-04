@@ -152,7 +152,8 @@ process at any given time. The rate of photosynthesis is determined by the slowe
 - On a graph of rate vs temperature, the rate increases to an optimum then drops sharply. The drop
   is due to denaturation of RuBisCO and other Calvin cycle enzymes.
 
-:::info At very high light intensities, the rate may decrease due to **photorespiration**. RuBisCO
+:::info
+At very high light intensities, the rate may decrease due to **photorespiration**. RuBisCO
 can bind $\mathrm{O}_2$ instead of $\mathrm{CO}_2$ (oxygenase activity), which does not produce
 glucose and wastes energy. This is more significant at high temperatures and low $\mathrm{CO}_2$
 concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration.
@@ -361,7 +362,8 @@ Water moves up the xylem against gravity through three contributing mechanisms:
 - The narrow diameter of xylem vessels causes water to rise by capillarity
 - This contributes minimally to water transport in tall plants but is significant in small plants
 
-:::warning A common DSE pitfall is writing that root pressure is the main mechanism for water
+:::warning
+A common DSE pitfall is writing that root pressure is the main mechanism for water
 transport in tall trees. Root pressure alone can only push water a few metres. The cohesion-tension
 theory is the dominant mechanism in tall plants. Root pressure is supplementary and is only
 significant in small plants or under conditions of low transpiration.
@@ -699,7 +701,8 @@ growth can be towards (positive tropism) or away from (negative tropism) the sti
 4. The upper side (lower auxin) elongates more than the lower side (higher auxin), causing the root
    to bend downwards
 
-:::warning The critical distinction for DSE is that auxin has opposite effects on cell elongation in
+:::warning
+The critical distinction for DSE is that auxin has opposite effects on cell elongation in
 shoots versus roots. In shoots, auxin promotes elongation (high concentration side grows more). In
 roots, auxin inhibits elongation (low concentration side grows more). This is why shoots bend
 towards light but roots bend away from it when auxin redistributes.
@@ -966,7 +969,8 @@ If light were switched off:
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Plant Biology**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-plant-biology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Plant Biology with other biology topics to test synthesis under exam conditions.

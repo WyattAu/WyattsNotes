@@ -235,7 +235,8 @@ $$G = \frac{A}{A + B} = 2A = 1 - 2B$$
 
 ## 4. Government Intervention
 
-:::info Board-Specific Note **AQA** requires comparison of taxes, subsidies, regulation, and
+:::info
+Board-Specific Note **AQA** requires comparison of taxes, subsidies, regulation, and
 tradable permits with evaluation of each. **Edexcel** expects diagrammatic analysis showing the
 effect of Pigouvian taxes and subsidies on equilibrium. **CIE (9708)** covers government
 intervention alongside cost-benefit analysis and requires understanding of when intervention may

@@ -13,7 +13,9 @@ slug: thermodynamics
 
 ## Thermodynamics
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="gas-properties" title="Gas Properties" />
 
@@ -233,7 +235,8 @@ $$\mathrm{COP}_{\mathrm{hp}} = \frac{Q_H}{W} = \frac{T_H}{T_H - T_C}$$
 
 Note that $\mathrm{COP}_{\mathrm{hp}} = \mathrm{COP}_{\mathrm{ref}} + 1$.
 
-:::warning Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
+:::warning
+Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
 refrigerator COP ($Q_C/W$). The key difference: efficiency is a fraction (always $\lt 1$), while COP
 can exceed 1 (you move more heat than the work you put in).
 :::

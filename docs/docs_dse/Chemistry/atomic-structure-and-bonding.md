@@ -51,7 +51,8 @@ A mass spectrometer separates ions based on their mass-to-charge ratio ($m/z$). 
 3. **Deflection:** Ions are deflected by a magnetic field (lighter ions are deflected more)
 4. **Detection:** Ions hit a detector, producing a signal proportional to abundance
 
-:::info In a mass spectrum, the x-axis is the mass-to-charge ratio ($m/z$) and the y-axis is the
+:::info
+In a mass spectrum, the x-axis is the mass-to-charge ratio ($m/z$) and the y-axis is the
 relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass.
 :::
 
@@ -276,7 +277,8 @@ possible.
 | 5 bonding pairs   | Trigonal bipyramidal | $90^\circ, 120^\circ$ | $\mathrm{PCl}_5$                   |
 | 6 bonding pairs   | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                    |
 
-:::info Lone pairs exert a greater repulsive effect than bonding pairs because they are closer to
+:::info
+Lone pairs exert a greater repulsive effect than bonding pairs because they are closer to
 the nucleus. This reduces bond angles from the ideal values.
 :::
 
@@ -848,12 +850,14 @@ $$\mathrm{Bond order} = \frac{1}{2}(\mathrm{bonding electrons} - \mathrm{antibon
 - Bond order = 1.5: intermediate (e.g., $\mathrm{O}_2^-$)
 - Bond order = 0: no bond (molecule does not exist, e.g., $\mathrm{He}_2$)
 
-:::info Molecular orbital theory explains why $\mathrm{O}_2$ is paramagnetic (has unpaired electrons
+:::info
+Molecular orbital theory explains why $\mathrm{O}_2$ is paramagnetic (has unpaired electrons
 in antibonding orbitals), which cannot be explained by simple Lewis structures.
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing atomic number with mass number:** Atomic number (proton number) defines the element and equals the number of protons. Mass number equals protons PLUS neutrons. Isotopes of the same element have the same atomic number but different mass numbers. Students frequently mix these up when writing nuclear notation.
 

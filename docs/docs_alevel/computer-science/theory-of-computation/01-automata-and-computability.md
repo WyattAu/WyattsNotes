@@ -86,7 +86,8 @@ most $2^{|Q_N|}$ states). The DFA accepts exactly the same strings as the NFA. $
 **Corollary.** The class of regular languages is closed under union, intersection, complementation,
 concatenation, and Kleene star.
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires finite state machines (FSMs) with state transition diagrams and tables, regular
   expressions, and Turing machines (conceptual understanding)

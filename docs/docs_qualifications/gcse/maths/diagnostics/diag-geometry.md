@@ -89,11 +89,11 @@ Total surface area $= 100 + 4 \times 65 = 100 + 260 = 360$ cm$^2$.
 
 (b) A(1,2) $\to$ A''(3,4): shift by $(+2, +2)$. B(5,2) $\to$ B''(11,4): shift by $(+6, +2)$. The $x$-coordinate doubles and $+2$ is added, $y$-coordinate $+2$. This is not a simple translation or reflection.
 
-Check: $x' = 2x + 1$? A: $2(1)+1 = 3 \checkmark$. B: $2(5)+1 = 11 \checkmark$. C: $2(3)+1 = 7 \checkmark$. $y' = 2y$? A: $2(2) = 4 \checkmark$. B: $2(2) = 4 \checkmark$. C: $2(6) = 12 \checkmark$.
+Verifying the pattern: $x' = 2x + 1$? A: $2(1)+1 = 3 \checkmark$. B: $2(5)+1 = 11 \checkmark$. C: $2(3)+1 = 7 \checkmark$. $y' = 2y$? A: $2(2) = 4 \checkmark$. B: $2(2) = 4 \checkmark$. C: $2(6) = 12 \checkmark$.
 
 This is an **enlargement** with scale factor 2 and centre of enlargement at $(1, 0)$: each point is mapped such that $(x', y') = (2x + 1, 2y)$, which corresponds to an enlargement by factor 2 about centre $(-1, 0)$.
 
-Let me verify: Centre $(-1, 0)$. A $(1, 2)$: distance from centre is $(2, 2)$. Scaled by 2: $(4, 4)$. New position: $(-1+4, 0+4) = (3, 4) \checkmark$.
+Verification: Centre $(-1, 0)$. A $(1, 2)$: distance from centre is $(2, 2)$. Scaled by 2: $(4, 4)$. New position: $(-1+4, 0+4) = (3, 4) \checkmark$.
 
 This is an **enlargement with scale factor 2 about centre $(-1, 0)$**.
 

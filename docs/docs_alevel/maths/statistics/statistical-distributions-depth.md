@@ -235,7 +235,8 @@ Total rate per hour $= 3 + 2 = 5$. For two hours, $X \sim \mathrm{Po}(10)$.
 
 $P(X \gt 7) = 1 - P(X \leq 7) = 1 - e^{-10}\displaystyle\sum_{r=0}^{7}\dfrac{10^r}{r!} \approx 1 - 0.2202 = 0.7798$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 When using the Poisson approximation to the binomial, always check that the conditions are met
 (large $n$, small $p$). If $p$ is close to 0.5, the normal approximation is more appropriate.
 :::

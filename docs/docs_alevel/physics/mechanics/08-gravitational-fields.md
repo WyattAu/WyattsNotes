@@ -13,7 +13,9 @@ slug: gravitational-fields
 
 ## Gravitational Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 <PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
 
@@ -380,7 +382,8 @@ where $M_{\mathrm{enc}} = M(r/R)^3$ is the mass enclosed within radius $r$ (shel
 This shows $g$ increases linearly from $0$ at the centre to $g_0$ at the surface. Maximum $g$ occurs
 at the surface (for a uniform sphere).
 
-:::warning Common Pitfall Satellites in low Earth orbit are NOT in "zero gravity." The gravitational
+:::warning
+Common Pitfall Satellites in low Earth orbit are NOT in "zero gravity." The gravitational
 field strength at 300 km altitude is still about 89% of its surface value. Astronauts experience
 weightlessness because they are in free fall, not because gravity is absent.
 :::
@@ -432,7 +435,8 @@ Three conditions must all be satisfied:
 satellites (continuous monitoring of a hemisphere). GPS satellites are NOT geostationary — they use
 medium Earth orbits for better geometric accuracy.
 
-:::warning Common Pitfall A geostationary orbit is NOT the same as a geosynchronous orbit. A
+:::warning
+Common Pitfall A geostationary orbit is NOT the same as a geosynchronous orbit. A
 geosynchronous orbit has period 24 hours but can be inclined or elliptical, so the satellite appears
 to trace a figure-eight in the sky. Geostationary implies geosynchronous AND equatorial AND
 circular.
@@ -481,7 +485,8 @@ For a satellite in orbit, $E_{\mathrm{total}} = -GMm/(2r) \lt 0$. Negative total
 system is gravitationally **bound** — the satellite cannot escape without an input of energy. To
 escape, enough energy must be added to raise $E_{\mathrm{total}}$ to zero.
 
-:::tip Exam Technique When asked why $E_p = -GMm/r$ is negative, explain: we define $V = 0$ at
+:::tip
+Exam Technique When asked why $E_p = -GMm/r$ is negative, explain: we define $V = 0$ at
 infinity, so bringing masses together releases energy (the system loses potential energy). The
 negative sign reflects this. The formula $E_p = mgh$ is only a special case for small heights near
 the surface.

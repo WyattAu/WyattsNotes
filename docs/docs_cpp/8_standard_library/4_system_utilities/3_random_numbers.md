@@ -59,7 +59,8 @@ cryptographically secure [N4950 §29.6.3.4].
 **`std::random_device`** is a non-deterministic uniform random bit generator that obtains entropy
 from the operating system (`/dev/urandom` on Linux, `BCryptGenRandom` on Windows) [N4950 §29.6.5.3].
 
-:::warning On some older MinGW implementations, `std::random_device` was implemented with a
+:::warning
+On some older MinGW implementations, `std::random_device` was implemented with a
 fixed-seed PRNG, producing the same sequence on every run. This was a well-known bug. Modern
 MinGW-w64 (with GCC 9+) uses the proper OS entropy source. If you need guaranteed non-deterministic
 seeds on all platforms, read from `/dev/urandom` (POSIX) or `BCryptGenRandom` (Windows) directly.
@@ -154,7 +155,8 @@ void seeded_rng_demo() {
 }
 ```
 
-:::tip `std::seed_seq` [N4950 §29.6.3.8] takes a sequence of seed values and produces a
+:::tip
+`std::seed_seq` [N4950 §29.6.3.8] takes a sequence of seed values and produces a
 well-distributed initial state for the engine. This is important because the Mersenne Twister's
 initialization algorithm has known weaknesses when given a single 32-bit seed — some bits of the
 initial state may have low entropy. Using `seed_seq` with multiple entropy sources produces a better
@@ -274,7 +276,8 @@ Expected stdd: 1
   3.75 |                                      1
 ```
 
-:::info `std::normal_distribution` uses the Marsaglia polar method internally to transform pairs of
+:::info
+`std::normal_distribution` uses the Marsaglia polar method internally to transform pairs of
 uniform random numbers into normally distributed values [N4950 §29.6.4.4]. This method produces
 values in pairs, so the distribution object may cache one value internally for efficiency.
 :::
@@ -323,7 +326,8 @@ This serialization is essential for:
 - **Networked games:** Synchronize the RNG state across clients for deterministic behavior.
 - **Fuzz testing:** Record the RNG state that triggered a crash and replay it.
 
-:::warning The `operator<<`/`operator>>` format is **not** portable across compilers or standard
+:::warning
+The `operator<<`/`operator>>` format is **not** portable across compilers or standard
 library implementations. GCC libstdc++ and Clang libc++ may produce different binary formats. Use
 only the same implementation for save/restore.
 :::
@@ -356,7 +360,8 @@ void random_device_props() {
 }
 ```
 
-:::warning `std::random_device::entropy()` returns 0.0 on many implementations even when the device
+:::warning
+`std::random_device::entropy()` returns 0.0 on many implementations even when the device
 is truly non-deterministic. A return of 0.0 means "entropy estimate not available," NOT "no
 entropy." Do not use this value to decide whether the device is secure.
 :::

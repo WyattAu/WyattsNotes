@@ -20,7 +20,8 @@ slug: moments
 | OCR (A)    | Paper 1 | Includes non-uniform bodies   |
 | CIE (9709) | P4      | Moments and equilibrium       |
 
-:::info The principle of moments is fundamental. Always state clearly the point about which you are
+:::info
+The principle of moments is fundamental. Always state clearly the point about which you are
 taking moments, and include the direction (clockwise/anticlockwise) of each moment.
 :::
 
@@ -101,7 +102,8 @@ $R_{\mathrm{left}} = W + P - R_{\mathrm{right}} = \dfrac{W}{2} + \dfrac{P(L-a)}{
 Notice that as the vehicle moves right ($a$ increases), $R_{\mathrm{right}}$ increases and
 $R_{\mathrm{left}}$ decreases — the bridge load redistributes continuously.
 
-:::warning The principle of moments applies about **any** point — not just the pivot. Choosing a
+:::warning
+The principle of moments applies about **any** point — not just the pivot. Choosing a
 clever point (often where an unknown force acts) can simplify calculations by eliminating that
 unknown from the moment equation.
 :::
@@ -217,7 +219,8 @@ $$R_w = \frac{W}{2}\cot\theta, \qquad F = R_w, \qquad \mu_{\min} = \frac{R_w}{R_
 The minimum coefficient of friction depends only on the angle $\theta$. As the ladder becomes
 steeper ($\theta$ increases), $\cot\theta$ decreases and less friction is needed.
 
-:::warning If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
+:::warning
+If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
 the wall. This changes the vertical equilibrium to $R_g + F_w = W$ and adds complexity to the moment
 equation. Always read the question carefully to determine whether the wall is smooth or rough.
 :::

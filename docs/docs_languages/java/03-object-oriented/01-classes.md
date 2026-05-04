@@ -41,7 +41,8 @@ public final class ImmutableList<E> extends AbstractList<E> implements List<E>, 
 }
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §8.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.1) defines class
 declarations. The top-level class can be `public` or package-private (no modifier). Only one
 `public` class per compilation unit (.java file) is permitted.
@@ -241,13 +242,15 @@ class SubclassDemo extends AccessDemo {
 }
 ```
 
-:::warning `protected` access is narrower than most developers expect. A subclass in a different
+:::warning
+`protected` access is narrower than most developers expect. A subclass in a different
 package can access a `protected` member only through `this` or a reference of the subclass's own
 type. It cannot access the `protected` member through a reference of the superclass type, even if
 the actual object is an instance of the subclass.
 :::
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §6.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6) defines access
 control in exhaustive detail. The rules for `protected` are specified in
 [JLS §6.6.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6.2).
@@ -336,7 +339,8 @@ public class Config {
 }
 ```
 
-:::danger Never use a static mutable field to store per-request or per-user state. Static fields are
+:::danger
+Never use a static mutable field to store per-request or per-user state. Static fields are
 shared across all threads and all instances of the class. This is the source of countless
 concurrency bugs in web applications.
 :::
@@ -431,7 +435,8 @@ public class Circle extends Shape {
 }
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §8.1.1.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.1.1.1) defines
 abstract classes. An abstract class must be declared `abstract` if it has any abstract methods, but
 a class can be declared `abstract` even with no abstract methods (to prevent direct instantiation).
@@ -737,7 +742,8 @@ public Iterator<E> filteredIterator(final Predicate<? super E> predicate) {
 | Anonymous     |         Yes          |          All members          |            Yes            |        No        |
 | Local         |         Yes          |          All members          |            Yes            |        No        |
 
-:::warning Prefer static nested classes over member inner classes. A member inner class holds an
+:::warning
+Prefer static nested classes over member inner classes. A member inner class holds an
 implicit reference to its enclosing instance, which can prevent garbage collection of the enclosing
 object and creates a coupling that makes testing harder. Use a member inner class only when it
 genuinely needs to access the enclosing instance's state.
@@ -904,7 +910,8 @@ Child c = new Child();
 c.classify();     // "Child"  -- compile-time type is Child
 ```
 
-:::danger Never hide static methods. It creates extremely confusing behavior where the method called
+:::danger
+Never hide static methods. It creates extremely confusing behavior where the method called
 depends on the declared type of the variable rather than the actual object. If you need polymorphic
 behavior, use instance methods.
 :::
@@ -1033,7 +1040,8 @@ public int hashCode() {
 }
 ```
 
-:::warning If you use an object as a key in a `HashMap` or add it to a `HashSet`, and then mutate
+:::warning
+If you use an object as a key in a `HashMap` or add it to a `HashSet`, and then mutate
 its state in a way that changes `equals()` or `hashCode()`, the collection will behave incorrectly.
 The object may become "lost" in the wrong bucket. Always use immutable objects as hash keys, or
 ensure that fields used in `equals()`/`hashCode()` are never modified after insertion.
@@ -1081,7 +1089,8 @@ class Person implements Cloneable {
 }
 ```
 
-:::danger `clone()` is broken by design. It is based on a combination of `Object.clone()` (which
+:::danger
+`clone()` is broken by design. It is based on a combination of `Object.clone()` (which
 does a shallow copy) and the `Cloneable` marker interface (which has no methods). The pattern is
 awkward: you must call `super.clone()` (which checks runtime type), then manually deep-copy mutable
 fields. Most experts recommend using copy constructors or static factory methods instead. Josh Bloch
@@ -1231,7 +1240,8 @@ public enum Operation {
 }
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §8.9](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.9) defines enum
 declarations. Enum constants are implicitly `public static final`. Enum types implicitly extend
 `java.lang.Enum` and cannot be instantiated with `new`. Enum types are implicitly `final` unless
@@ -1395,7 +1405,8 @@ String s = (String) strings.get(0);  // compiler inserts the cast
 List<String>[] array = (List<String>[]) new List<?>[10];
 ```
 
-:::info JLS Reference
+:::info
+JLS Reference
 [JLS §4.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.6) defines type
 erasure. [JLS §4.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.5) defines
 parameterized types.

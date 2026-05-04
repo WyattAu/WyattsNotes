@@ -99,13 +99,14 @@ Since G pairs with C: G = $22\%$ and C = $22\%$.
 
 (c) Original DNA: GAG. The template strand is transcribed to mRNA with complementary bases: the DNA template GAG produces mRNA codon **CUC** (since the coding strand would be CTC, and mRNA matches the coding strand with T replaced by U).
 
-Wait -- let me be more precise. The DNA coding strand (non-template) is CTC (complementary to GAG). The mRNA is complementary to the template strand and matches the coding strand (with U instead of T): mRNA codon = CUC, coding for **Leucine**.
-
-Actually, the question states the DNA triplet is GAG. If this is the coding strand (sense strand), then the mRNA codon is GAG (with U replacing T, but GAG has no T), which codes for **Glutamic acid**.
+The DNA triplet GAG is the coding strand (sense strand). The mRNA codon is GAG (GAG contains no T, so
+no substitution is needed), which codes for **Glutamic acid**.
 
 After mutation, the coding strand becomes GTG. The mRNA codon becomes GUG, which codes for **Valine**.
 
-The mutation changes the amino acid from **glutamic acid to valine**. This is a **missense mutation** (a single base substitution that changes one amino acid to another). This is the exact mutation that causes sickle cell anaemia.
+The mutation changes the amino acid from **glutamic acid to valine**. This is a **missense mutation**
+(a single base substitution that changes one amino acid to another). This is the exact mutation that
+causes sickle cell anaemia.
 
 ---
 

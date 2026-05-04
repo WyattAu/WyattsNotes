@@ -91,7 +91,7 @@ The cost is always $\pounds 360$ regardless of the number of pipes (since $n \ti
 - Shift 1: Pipes 1 and 2 run for $24/2 = 12$ hours.
 - Shift 2: Pipes 3 and 4 run for $24/2 = 12$ hours.
 
-Wait -- the pool needs 24 pipe-hours total. With 2 pipes for 12 hours $= 24$ pipe-hours. The pool is filled.
+The pool needs 24 pipe-hours total. With 2 pipes for 12 hours $= 24$ pipe-hours, the pool is filled.
 
 But the pipes can be swapped. Using 2 pipes at a time for 12 hours:
 Cost $= 15 \times 2 \times 12 = \pounds 360$.

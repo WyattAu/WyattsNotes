@@ -215,7 +215,8 @@ def dll_delete(node):
 | Search by value              | $O(n)$ | $O(n)$ |
 | Access by index              | $O(n)$ | $O(n)$ |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** focuses on singly linked lists with pointer-based implementation (using `NULL` / `nil`
   pointers)
@@ -256,7 +257,8 @@ Linked list nodes are scattered in memory, so each `next` pointer dereference is
 miss** (probability approaches 1 as list size exceeds cache capacity). Each cache miss costs ~100
 cycles vs ~1 cycle for a cache hit. $\square$
 
-:::tip Exam tip When asked "when would you use a linked list instead of an array?", focus on:
+:::tip
+Exam tip When asked "when would you use a linked list instead of an array?", focus on:
 
 - Frequent insertions/deletions at known positions
 - Unknown or highly variable size

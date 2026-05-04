@@ -298,7 +298,8 @@ Equating arguments: $y = \dfrac{\pi}{3} + 2k\pi$ for $k \in \mathbb{Z}$.
 
 $$z = \ln 2 + i\!\left(\frac{\pi}{3} + 2k\pi\right), \quad k \in \mathbb{Z}$$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 The complex exponential is periodic with period $2\pi i$, so equations of the form $e^z = w$ have
 infinitely many solutions. Always include the general solution with $2k\pi$.
 :::

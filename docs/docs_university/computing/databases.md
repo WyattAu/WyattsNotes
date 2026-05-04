@@ -591,7 +591,8 @@ cursor.execute("SELECT * FROM Student WHERE name = %s", (user_input,))
 4. **ORM frameworks:** Use an ORM (e.g., SQLAlchemy, Django ORM) that generates parameterised queries
    by default.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Even if you escape single quotes in user input, this is not a reliable defence against SQL injection.
 Use parameterised queries instead. Escape-based defences are fragile and have been bypassed by
 encoding tricks (e.g., multibyte character exploits).
@@ -854,7 +855,8 @@ synthesis algorithm avoids this issue.
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Do not confuse partial dependency (2NF violation) with transitive dependency (3NF violation). A
 partial dependency involves a **proper subset** of a candidate key determining a non-prime attribute.
 A transitive dependency involves a non-key attribute determining another non-prime attribute.
@@ -1560,7 +1562,8 @@ Since network partitions are inevitable in distributed systems, the real trade-o
 **PACELC.** Extension of CAP: in the absence of partitions, the trade-off is between **latency**
 and **consistency**.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 "NoSQL" does not mean "no SQL." It means "Not Only SQL." Many NoSQL databases now support SQL-like
 query languages (e.g., Cassandra CQL). The choice between relational and NoSQL depends on the
 workload, not on a blanket preference. Relational databases remain the best choice for strongly

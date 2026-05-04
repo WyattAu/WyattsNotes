@@ -13,7 +13,9 @@ slug: measurements-and-error-analysis
 
 ## Measurements and Error Analysis
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5
+:::
 
 ## 1. Systematic and Random Errors
 
@@ -67,7 +69,8 @@ measurement or environmental variability.
 
 **Reduction:** Take multiple readings and calculate the mean. Use more precise instruments.
 
-:::warning Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
+:::warning
+Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
 scatter) but inaccurate (systematic error), or accurate (close to true value) but imprecise (large
 scatter). Neither is sufficient alone.
 :::
@@ -204,7 +207,8 @@ Many physical relationships can be linearised by choosing appropriate variables:
 | $y = ae^{bx}$        | $\ln y = bx + \ln a$      | $\ln y$ vs $x$        | $b$        | $\ln a$   |
 | $T = 2\pi\sqrt{L/g}$ | $T^2 = \frac{4\pi^2}{g}L$ | $T^2$ vs $L$          | $4\pi^2/g$ | $0$       |
 
-:::tip Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
+:::tip
+Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
 gradient, first find the gradient uncertainty using the worst line method, then divide by the
 best-fit gradient and multiply by 100%.
 :::

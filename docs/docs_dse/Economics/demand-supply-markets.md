@@ -55,7 +55,8 @@ As the price of a good increases, the quantity demanded decreases, and vice vers
 | Expectation of future price increase | Demand shifts right |
 | Successful advertising               | Demand shifts right |
 
-:::tip Remember: a change in the good's own price causes movement **along** the curve. A change in
+:::tip
+Remember: a change in the good's own price causes movement **along** the curve. A change in
 any other factor causes a **shift** of the curve. DSE exams frequently test this distinction.
 :::
 
@@ -211,7 +212,8 @@ $$\mathrm{Total Revenue (TR)} = P \times Q$$
 | Inelastic (PED &lt; 1) | TR increases   | TR decreases   |
 | Unit elastic (PED = 1) | TR unchanged   | TR unchanged   |
 
-:::tip If a firm wants to increase revenue, it should lower price if demand is elastic and raise
+:::tip
+If a firm wants to increase revenue, it should lower price if demand is elastic and raise
 price if demand is inelastic. This is a very common exam question.
 :::
 

@@ -13,7 +13,9 @@ slug: refraction-and-total-internal-reflection
 
 ## Refraction and Total Internal Reflection
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="bending-light" title="Bending Light" />
 
@@ -53,7 +55,9 @@ where $A$ and $B$ are constants specific to the material and $\lambda$ is the wa
 This wavelength dependence is what causes white light to separate into a spectrum when passing
 through a prism.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 **Application: Diamond Cutting.** Diamond has an exceptionally high refractive index ($n = 2.42$)
 and large dispersion. Jewellers cut diamonds with many angled facets so that light entering the top
@@ -137,7 +141,8 @@ displacement $d$ depends on the thickness $t$ of the slab:
 
 $$d = t \cdot \sin\theta_1 \left(1 - \frac{\cos\theta_1}{\sqrt{n^2 - \sin^2\theta_1}}\right)$$
 
-:::info Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
+:::info
+Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
 2 (core practical) | CIE P2
 :::
 
@@ -214,7 +219,9 @@ evanescent wave is exploited in technologies such as:
 - **Optical fibre sensors**: chemicals or biological molecules near the fibre surface can interact
   with the evanescent wave, changing the propagation and allowing detection.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 4. Optical Fibres
 

@@ -364,7 +364,8 @@ $$A^{10} = PD^{10}P^{-1}$$
 The system $\dfrac{d\mathbf{x}}{dt} = A\mathbf{x}$ has solution $\mathbf{x}(t) = e^{At}\mathbf{x}(0)$,
 which can be evaluated using diagonalisation: $e^{At} = Pe^{Dt}P^{-1}$.
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 
 A matrix is diagonalisable if and only if it has a full set of linearly independent eigenvectors. A
 matrix with repeated eigenvalues may or may not be diagonalisable. For example,
@@ -599,7 +600,8 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Matrices**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-matrices) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Matrices with other IB mathematics topics to test synthesis under exam conditions.

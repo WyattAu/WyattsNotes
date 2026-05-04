@@ -27,8 +27,6 @@ where $\Delta s = 0.2$ mm is the source displacement:
 
 $$y = \frac{1500}{0.5} \times 0.2 = 3000 \times 0.2 = 600 \text{ mm} = 60 \text{ cm}$$
 
-Wait -- let me recalculate more carefully. The source displacement is $0.2$ mm $= 2 \times 10^{-4}$ m.
-
 $$y = \frac{D}{d} \times \Delta s = \frac{1.5}{0.5 \times 10^{-3}} \times 2 \times 10^{-4} = \frac{1.5 \times 2 \times 10^{-4}}{5 \times 10^{-4}} = 0.6 \text{ m} = 60 \text{ cm}$$
 
 **Fringe spacing:**
@@ -86,11 +84,10 @@ $$n = \frac{4}{3}$$
 
 Since $n$ must be an integer, the first overlap occurs between $n = 2$ (red) and $n = 3$ (violet):
 
-Check: $2 \times 700 = 1400$ nm, $3 \times 400 = 1200$ nm. These don't exactly coincide, but the spectra overlap because $2 \times 700 \lt 3 \times 400$ is not satisfied... Let me recalculate.
-
-Actually: $3 \times 400 = 1200 \lt 1400 = 2 \times 700$. This means the 3rd order violet is at a smaller angle than the 2nd order red, so they DO overlap from the 2nd order of red and 3rd order of violet onward.
-
-More precisely, overlap begins when the upper end of one order meets the lower end of the next. The 2nd order of red ends at $44.43°$ and the 3rd order of violet begins at:
+Check: $2 \times 700 = 1400$ nm, $3 \times 400 = 1200$ nm. Since $1200 \lt 1400$, the 3rd order
+violet ($\lambda_v = 400$ nm) falls at a smaller angle than the 2nd order red ($\lambda_r = 700$ nm).
+More precisely, overlap begins when the upper end of one order meets the lower end of the next. The
+2nd order of red ends at $44.43°$ and the 3rd order of violet begins at:
 
 $$\sin\theta = \frac{3 \times 400 \times 10^{-9}}{2 \times 10^{-6}} = 0.60, \quad \theta = 36.87°$$
 

@@ -144,19 +144,11 @@ The first three terms of a geometric sequence are $\log_2 3$, $\log_2 9$, $\log_
 
 $r = \dfrac{\log_2 9}{\log_2 3} = \dfrac{\log_2 3^2}{\log_2 3} = \dfrac{2\log_2 3}{\log_2 3} = 2$.
 
-Verify: $\dfrac{\log_2 27}{\log_2 9} = \dfrac{\log_2 3^3}{\log_2 3^2} = \dfrac{3}{2} \neq 2$.
+Checking the ratio: $\dfrac{\log_2 9}{\log_2 3} = \dfrac{2\log_2 3}{\log_2 3} = 2$, but
+$\dfrac{\log_2 27}{\log_2 9} = \dfrac{3\log_2 3}{2\log_2 3} = \dfrac{3}{2}$.
 
-Wait -- this is inconsistent. Let me recheck.
-
-$\log_2 9 = \log_2 3^2 = 2\log_2 3$.
-
-$\log_2 27 = \log_2 3^3 = 3\log_2 3$.
-
-Ratio: $\dfrac{2\log_2 3}{\log_2 3} = 2$ and $\dfrac{3\log_2 3}{2\log_2 3} = \dfrac{3}{2}$.
-
-Since the ratio is not constant, this is **not** a geometric sequence. The terms are $\log_2 3$, $2\log_2 3$, $3\log_2 3$, which form an arithmetic sequence with $d = \log_2 3$.
-
-This question tests the misconception of assuming a geometric sequence from the pattern of arguments. The correct interpretation: it is arithmetic.
+Since the ratio is not constant, this is **not** a geometric sequence. The terms are $\log_2 3$,
+$2\log_2 3$, $3\log_2 3$, which form an **arithmetic sequence** with common difference $d = \log_2 3$.
 
 $S_{10} = \dfrac{10}{2}[2\log_2 3 + 9\log_2 3] = 5 \times 11\log_2 3 = 55\log_2 3$.
 

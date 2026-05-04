@@ -64,7 +64,8 @@ $$
     \epsilon = -N\frac{\Delta \Phi_B}{\Delta t}
 $$
 
-:::info One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
+:::info
+One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
 generated to oppose the change in flux through the coil.
 :::
 
@@ -86,7 +87,8 @@ change in flux, it would create a runaway effect producing infinite energy.
    original field (same direction as the original field).
 4. Use the right-hand grip rule to find the current direction from the magnetic field direction.
 
-:::tip Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
+:::tip
+Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
 induced current, and (b) **why** it flows in that direction (to oppose the change in flux).
 :::
 
@@ -182,7 +184,8 @@ $$
 - **Frequency** ($f$): number of complete cycles per second, $f = \frac{\omega}{2\pi}$
 - **Period** ($T$): time for one complete cycle, $T = \frac{1}{f}$
 
-:::tip Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
+:::tip
+Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
 average power in AC circuits:
 $P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$
 :::
@@ -298,7 +301,8 @@ solenoid.
 | Transformer ratio  | $\frac{V_s}{V_p} = \frac{N_s}{N_p}$          | —           |
 | Energy in inductor | $E = \frac{1}{2}LI^2$                        | J           |
 
-:::tip Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
+:::tip
+Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
 conservation. Make sure you can explain why Lenz's law is necessary (conservation of energy) and
 derive the motional EMF expression from Faraday's law.
 :::
@@ -478,7 +482,8 @@ $$
 P = \frac{\pi(0.80)^2(300)^2(5.0 \times 10^{-3})(0.15)^4}{2(1.7 \times 10^{-8})} \approx 1.4 \times 10^{7}\mathrm{ W}
 $$
 
-:::warning This model assumes the entire disc is immersed in the field. In practice only a localized
+:::warning
+This model assumes the entire disc is immersed in the field. In practice only a localized
 region passes through the field gap, so actual dissipation is far lower. The key result is the
 scaling: $P \propto \omega^2$ and $P \propto R^4$.
 :::
@@ -819,7 +824,8 @@ $$
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Induction**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-induction) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Induction with other physics topics to test synthesis under exam conditions.

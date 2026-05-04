@@ -268,7 +268,8 @@ per insertion: $O(1)$. $\square$
 | Delete            | $O(1)$          | Lazy deletion     | Lazy deletion    |
 | Load factor limit | No hard limit   | $\alpha \lt{} 1$  | $\alpha \lt{} 1$ |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires understanding of hash functions, collision resolution (linear probing, quadratic
   probing, rehashing), and calculating hash table load factor

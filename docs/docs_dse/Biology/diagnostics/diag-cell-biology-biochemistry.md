@@ -145,9 +145,12 @@ A student is given four unknown solutions (W, X, Y, Z) and asked to identify the
 - **Y**: Lipid. When ethanol is added and the mixture is poured into water, a cloudy white emulsion forms, indicating the presence of lipids.
 - **Z**: Starch. Iodine solution turns blue-black in the presence of starch due to iodine molecules fitting into the helical structure of amylose.
 
-(b) W likely contains a **non-reducing sugar** (e.g. sucrose) which does **not** give a positive Benedict's test (or only a weak one if trace reducing sugars are present). However, sucrose gives a very faint result because it is a disaccharide of glucose and fructose joined by a **glycosidic bond** in a specific configuration that prevents the anomeric carbon from acting as a reducing agent.
-
-Actually, re-reading: W **does** give a brick-red precipitate, so W contains a reducing sugar. After hydrolysis, a **more intense** precipitate suggests that W contains a **polysaccharide** or a **mixture** containing both reducing sugars and non-reducing polysaccharides. For example, W might contain a mixture of maltose (a reducing disaccharide) and starch. Hydrolysis breaks down starch into many more glucose molecules, producing more reducing sugars and hence a more intense Benedict's result.
+(b) W gives a brick-red precipitate in the first test, confirming it contains a **reducing sugar** (e.g.
+glucose or maltose). After acid hydrolysis and neutralisation, the **more intense** brick-red
+precipitate indicates that W also contained a **polysaccharide** (e.g. starch). Hydrolysis breaks the
+polysaccharide into many more reducing sugar units (glucose), producing more reducing ends and hence a
+more intense Benedict's result. For example, W might contain a mixture of maltose (a reducing
+disaccharide) and starch.
 
 (c) A polypeptide is a chain of **amino acids** joined by **peptide bonds** (formed by condensation reactions between the carboxyl group of one amino acid and the amino group of the next, with the elimination of water).
 

@@ -13,7 +13,9 @@ slug: wave-properties
 
 ## Wave Properties
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
@@ -124,12 +126,14 @@ The speed of sound in air at 20°C is approximately 343 m/s. For a concert A (44
 in air is $\lambda = 343/440 = 0.78$ m. Higher notes have shorter wavelengths; lower notes have
 longer wavelengths.
 
-:::warning Common Pitfall Electromagnetic waves are transverse but do not require a medium — they
+:::warning
+Common Pitfall Electromagnetic waves are transverse but do not require a medium — they
 propagate through vacuum via oscillating electric and magnetic fields. Sound waves are longitudinal
 and require a medium.
 :::
 
-:::tip Exam Technique When asked to sketch a longitudinal wave, draw a series of vertical lines
+:::tip
+Exam Technique When asked to sketch a longitudinal wave, draw a series of vertical lines
 representing air molecules. Show compressions (closely spaced) and rarefactions (widely spaced).
 Label both.
 
@@ -173,7 +177,8 @@ of incidence:
 
 $$\tan\theta_B = n_2/n_1$$
 
-:::info Board Note AQA and OCR (A) require Malus's law. CIE focuses on polarisation by filters.
+:::info
+Board Note AQA and OCR (A) require Malus's law. CIE focuses on polarisation by filters.
 Edexcel covers qualitative polarisation.
 :::
 
@@ -215,7 +220,8 @@ All EM waves are produced by accelerating charges. In order of increasing freque
 (oscillating currents in aerials), microwave (klystrons/magnetrons), infrared/visible/UV (atomic
 electron transitions), X-rays (electron deceleration), gamma rays (nuclear transitions).
 
-:::tip Exam Technique Memorise the order: **R**adio, **M**icrowave, **I**nfrared, **V**isible,
+:::tip
+Exam Technique Memorise the order: **R**adio, **M**icrowave, **I**nfrared, **V**isible,
 **U**ltraviolet, **X**-ray, **G**amma. Mnemonic: "**R**eal **M**en **I**n **V**ietnam **U**se
 **X**-ray **G**uns."
 :::
@@ -296,7 +302,9 @@ while a 10 dB increase sounds roughly "twice as loud" to human ears.
 ratio is $10^{(60-30)/10} = 10^3 = 1000$, meaning conversation is 1000 times more intense than a
 whisper.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 All boards cover the inverse square law. The decibel scale is explicitly on CIE and sometimes
 appears in AQA context questions. Edexcel and OCR (A) focus more on $I \propto A^2$ and
@@ -326,7 +334,8 @@ $$\Delta\phi = \frac{2\pi}{\lambda}\Delta x$$
 - In phase: $\Delta\phi = 0, 2\pi, 4\pi, \ldots$ (integer multiples of $2\pi$)
 - Antiphase: $\Delta\phi = \pi, 3\pi, 5\pi, \ldots$ (odd multiples of $\pi$)
 
-:::tip Exam Technique Phase difference questions often require you to identify two points on a wave
+:::tip
+Exam Technique Phase difference questions often require you to identify two points on a wave
 graph and calculate $\Delta x$. Then use $\Delta\phi = 360° \times \Delta x / \lambda$ (using
 degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units.
 :::
@@ -355,7 +364,9 @@ $t_1$ and $t_2$ is:
 
 $$\Delta\phi = \frac{\Delta t}{T} \times 360° = \frac{\Delta t}{T} \times 2\pi \mathrm{ rad}$$
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 AQA and OCR (A) frequently test phase difference from displacement--position graphs. CIE often
 combines phase difference with path difference in interference questions. Edexcel emphasises the
@@ -615,7 +626,8 @@ be the fully constructive case at $\Delta\phi = 0$).
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Wave Properties**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-wave-properties) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Wave Properties with other physics topics to test synthesis under exam conditions.
@@ -623,7 +635,8 @@ Ready to test your understanding of **Wave Properties**? The [diagnostic test](/
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing wave speed with particle speed:** In a transverse wave, the wave propagates horizontally but the particles oscillate vertically. The wave speed v = f * lambda is the speed of the wave pattern, not the speed of the individual particles. Particles in the medium do NOT travel with the wave.
 

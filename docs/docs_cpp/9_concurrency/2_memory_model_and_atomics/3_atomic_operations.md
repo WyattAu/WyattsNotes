@@ -76,7 +76,8 @@ int main() {
 }
 ```
 
-:::warning `std::atomic_ref` requires that the referenced object's alignment is at least
+:::warning
+`std::atomic_ref` requires that the referenced object's alignment is at least
 `alignof(std::atomic<T>)`. For many types this is the same as `alignof(T)`, but for types smaller
 than the platform's native word size, `alignof(std::atomic<T>)` may be larger.
 :::

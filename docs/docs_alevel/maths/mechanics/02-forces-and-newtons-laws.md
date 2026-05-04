@@ -20,7 +20,8 @@ slug: forces-and-newtons-laws
 | OCR (A)    | Paper 1 | Includes inclined planes                              |
 | CIE (9709) | P1, P4  | Forces in P1; connected bodies, inclined planes in P4 |
 
-:::info Always draw a clear free body diagram before writing any equations. The quality of your
+:::info
+Always draw a clear free body diagram before writing any equations. The quality of your
 diagram determines the quality of your solution.
 :::
 
@@ -53,7 +54,8 @@ A.
 **Implication.** Forces always come in pairs: action and reaction. They act on **different** bodies
 and are the same type of force.
 
-:::warning Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
+:::warning
+Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
 normal reaction from the table are **not** a Third Law pair (both act on the book). The Third Law
 pair of the weight is the gravitational pull of the book on the Earth.
 :::
@@ -209,7 +211,9 @@ A valid Third Law pair must satisfy **all** of the following criteria:
 
 ### 7.3 Common misconceptions
 
-:::warning The following are **not** Newton's Third Law pairs: :::
+:::warning
+The following are **not** Newton's Third Law pairs:
+:::
 
 | Situation             | Incorrect Pair (NOT Third Law)                | Why It Fails                                            | Correct Third Law Pair                               |
 | --------------------- | --------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
@@ -274,7 +278,8 @@ $$P\cos\theta + \mu P\sin\theta = \mu mg$$
 
 $$P = \frac{\mu mg}{\cos\theta + \mu\sin\theta}$$
 
-:::warning Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
+:::warning
+Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
 friction. Applying a force at an angle **downward** increases $R$ and increases the maximum
 friction.
 :::
@@ -365,7 +370,8 @@ Combined with $m_2 g - T = m_2 a$:
 
 $$a = \frac{(m_2 - \mu m_1)g}{m_1 + m_2}$$
 
-:::warning If $m_2 \lt{} \mu m_1$, then $a \lt{} 0$, meaning the system does not move. The friction
+:::warning
+If $m_2 \lt{} \mu m_1$, then $a \lt{} 0$, meaning the system does not move. The friction
 force is not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and
 $T = m_2 g$.
 :::
@@ -1021,7 +1027,8 @@ is $\lt{} \mu R = 16.99\,\mathrm{N}$, confirming equilibrium).
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Forces and Newton's Laws**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-forces-and-newtons-laws) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Forces and Newton's Laws with other topics to test synthesis under exam conditions.

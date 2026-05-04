@@ -14,7 +14,8 @@ sidebar_position: 6
 
 ## 1. International Trade: Comparative Advantage
 
-:::info Board-Specific Note **CIE (9708)** requires formal proof of comparative advantage using
+:::info
+Board-Specific Note **CIE (9708)** requires formal proof of comparative advantage using
 numerical examples and covers the Ricardian and Heckscher-Ohlin models. **AQA** focuses on the gains
 from trade and limitations of the comparative advantage model. **Edexcel** emphasises diagrammatic
 analysis of trade flows and the UK's trade relationships. **OCR (A)** covers trade theory alongside
@@ -564,7 +565,8 @@ Comparative advantage: leaving the EU's single market means the UK faces tariffs
 
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing absolute and comparative advantage:** A country with absolute advantage in BOTH goods still benefits from trade based on comparative advantage (lower opportunity cost). Students often incorrectly conclude that a country with absolute disadvantage in everything should not trade.
 

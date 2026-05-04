@@ -218,7 +218,8 @@ uterus, controlled by four hormones.
 - The LH surge is a self-amplifying cycle: more LH causes more oestrogen release, which causes more
   LH release, until ovulation occurs and the follicle is ruptured (breaking the feedback loop)
 
-:::info The switch from negative to positive feedback by oestrogen is a critical concept. At low
+:::info
+The switch from negative to positive feedback by oestrogen is a critical concept. At low
 concentrations, oestrogen inhibits the pituitary (negative feedback). At high concentrations
 sustained for approximately 36 hours, oestrogen stimulates the pituitary (positive feedback),
 causing the LH surge. The DSE frequently tests this distinction.
@@ -335,7 +336,8 @@ tissues. It is the interface for exchange of substances between maternal and foe
   umbilical vein (carries oxygenated blood from the placenta to the foetus)
 - Wrapped in Wharton's jelly (connective tissue that protects the blood vessels from compression)
 
-:::warning A critical point for DSE: the umbilical ARTERY carries deoxygenated blood (away from the
+:::warning
+A critical point for DSE: the umbilical ARTERY carries deoxygenated blood (away from the
 foetus to the placenta) and the umbilical VEIN carries oxygenated blood (from the placenta to the
 foetus). This is the OPPOSITE of the naming convention in the systemic circulation, where arteries
 carry oxygenated blood. The naming is based on direction of flow relative to the heart: arteries
@@ -398,7 +400,8 @@ normal range.
 
 The term "negative" refers to the fact that the response opposes (negates) the original stimulus.
 
-:::info Homeostasis maintains parameters within a normal range, not at a single fixed value. The set
+:::info
+Homeostasis maintains parameters within a normal range, not at a single fixed value. The set
 point is a target value, and the actual value fluctuates within narrow limits around it. In DSE exam
 answers, write "maintained within narrow limits" rather than "kept exactly constant."
 :::
@@ -543,7 +546,8 @@ concentration must be tightly regulated because:
 | Glycogenolysis  | Conversion of glycogen to glucose-6-phosphate (then to free glucose in the liver)      | Liver, muscles | Glucagon, adrenaline |
 | Gluconeogenesis | Synthesis of glucose from non-carbohydrate precursors (amino acids, lactate, glycerol) | Liver only     | Glucagon             |
 
-:::warning A critical distinction: glycogenolysis occurs in both liver and muscle, but only the
+:::warning
+A critical distinction: glycogenolysis occurs in both liver and muscle, but only the
 liver can release free glucose into the blood. Muscle glycogenolysis produces glucose-6-phosphate,
 which is used directly by the muscle for respiration. Muscle lacks the enzyme glucose-6-phosphatase,
 which is required to convert glucose-6-phosphate to free glucose. The DSE often tests this
@@ -1131,7 +1135,8 @@ The claim is **incorrect**. Excretion and egestion are fundamentally different p
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Human Reproduction and Homeostasis**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-human-reproduction-homeostasis) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human Reproduction and Homeostasis with other biology topics to test synthesis under exam conditions.

@@ -376,7 +376,8 @@ $$
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Chemical Kinetics**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-kinetics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Chemical Kinetics with other chemistry topics to test synthesis under exam conditions.

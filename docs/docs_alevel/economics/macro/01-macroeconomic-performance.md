@@ -393,7 +393,8 @@ policy response:
 - **Sectoral impacts**: Hospitality, retail, and travel were worst affected, while professional
   services and technology sectors adapted quickly (remote work).
 
-:::info Board-Specific Note AQA and Edexcel both frequently use COVID-19 as a context for
+:::info
+Board-Specific Note AQA and Edexcel both frequently use COVID-19 as a context for
 data-response questions. CIE (9708) may ask students to evaluate the effectiveness of government
 intervention in the labour market. OCR has examined the distinction between unemployment and
 economic inactivity, which is highly relevant to the COVID case (furloughed workers were technically

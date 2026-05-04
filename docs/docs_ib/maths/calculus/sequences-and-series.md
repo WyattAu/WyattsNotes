@@ -371,7 +371,8 @@ $$2^{k+1} = 2 \cdot 2^k \gt 2k \ge k + 1$$
 (The last inequality holds since $k \ge 1$.) Therefore $2^{k+1} \gt k + 1$. By induction, $2^n \gt n$
 for all positive integers $n$.
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 
 The inductive step must genuinely use the inductive hypothesis. Simply proving $P(k+1)$ independently
 of $P(k)$ is not a valid induction argument. Always make it explicit where the hypothesis is used.

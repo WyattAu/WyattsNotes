@@ -63,7 +63,8 @@ Alternatively, find the **critical value** $c$ such that $P(\mathrm{test\ statis
 - "Do not reject $H_0$": there is **insufficient** evidence to reject $H_0$. This does **not** mean
   $H_0$ is true.
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 "Accepting $H_0$" is not the same as "not rejecting $H_0$." We never prove $H_0$; we merely fail
 to find sufficient evidence against it. The conclusion should always be stated carefully.
 :::

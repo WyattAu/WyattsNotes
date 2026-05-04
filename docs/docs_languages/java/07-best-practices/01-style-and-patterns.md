@@ -605,7 +605,8 @@ by serialized field data). A traditional class-based singleton with a private co
 broken by reflection (`Constructor.setAccessible(true)`) and by deserialization (which creates a new
 instance unless `readResolve` is implemented).
 
-:::caution When to Use Singleton Singletons are appropriate for stateless service objects and
+:::caution
+When to Use Singleton Singletons are appropriate for stateless service objects and
 expensive resources (connection pools, thread pools). They are inappropriate for stateful objects
 that represent business domain concepts, because a global mutable singleton is essentially a hidden
 global variable that makes testing difficult and introduces hidden coupling between unrelated parts

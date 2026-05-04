@@ -13,7 +13,9 @@ slug: oscillations
 
 ## Oscillations
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="masses-and-springs" title="Masses and Springs" />
 
@@ -157,7 +159,8 @@ This is SHM in the variable $\theta$ with angular frequency $\omega = \sqrt{g/L}
 
 $$\boxed{T = 2\pi\sqrt{\frac{L}{g}}}$$
 
-:::warning Common Pitfall The period of a simple pendulum is **independent of mass** and
+:::warning
+Common Pitfall The period of a simple pendulum is **independent of mass** and
 **independent of amplitude** (for small oscillations). These are classic exam questions.
 :::
 
@@ -210,7 +213,8 @@ maximised.
 (aeroelastic resonance), tuning a radio (LC circuit resonance), MRI machines (nuclear magnetic
 resonance).
 
-:::tip Exam Technique In exam questions about damping and resonance, remember: more damping $\to$
+:::tip
+Exam Technique In exam questions about damping and resonance, remember: more damping $\to$
 lower maximum amplitude $\to$ broader resonance curve. Less damping $\to$ higher peak $\to$ narrower
 curve.
 :::
@@ -585,7 +589,9 @@ with included angle $\delta$. $\square$
 The resultant phase is given by
 $\tan\phi_{\mathrm{res}} = \frac{A_2 \sin\delta}{A_1 + A_2 \cos\delta}$.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <details>
 <summary>Problem 11</summary>
@@ -678,7 +684,8 @@ $x = 0$), the velocity phasor is horizontal, giving a maximum projection of $\pm
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Oscillations**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-oscillations) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Oscillations with other physics topics to test synthesis under exam conditions.
@@ -686,7 +693,8 @@ Ready to test your understanding of **Oscillations**? The [diagnostic test](/doc
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing angular frequency omega with frequency f:** Angular frequency omega = 2 * pi * f = 2 * pi / T. They are different quantities with different units (rad/s vs Hz). Substituting f where omega is needed (or vice versa) in equations like x = A cos(omega * t) will give completely wrong answers.
 

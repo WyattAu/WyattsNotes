@@ -20,7 +20,8 @@ slug: statistical-distributions
 | OCR (A)    | Paper 1, 2 | Binomial in P1; normal and Poisson in P2 |
 | CIE (9709) | P1, P6     | Binomial in P1; normal and Poisson in P6 |
 
-:::info The formula booklet gives the probability mass function for the Binomial and Poisson
+:::info
+The formula booklet gives the probability mass function for the Binomial and Poisson
 distributions, and the normal distribution function. You must know when to use each distribution and
 how to find probabilities.
 :::
@@ -340,7 +341,8 @@ $$
 
 Note how the terms $2abE(X)$ and $b^2$ cancel between $E(Y^2)$ and $[E(Y)]^2$.
 
-:::info Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
+:::info
+Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
 $a$ (a scale change) affects variance, and it does so by a factor of $a^2$. This is why variance is
 measured in **squared units** of the original variable.
 :::

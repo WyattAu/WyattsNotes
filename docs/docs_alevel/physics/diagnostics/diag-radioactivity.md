@@ -153,19 +153,9 @@ A sample of ancient wood has a carbon-14 activity of $1.2\,\text{Bq}\,\text{g}^{
 
 $\lambda = \ln 2/5730 = 1.209 \times 10^{-4}\,\text{year}^{-1}$
 
-Wait, the sample activity ($1.2\,\text{Bq}\,\text{g}^{-1}$) is higher than living wood ($0.23\,\text{Bq}\,\text{g}^{-1}$). This is impossible for carbon-14 dating -- the sample cannot have more C-14 than living material. The values may have been swapped, or this tests whether the student notices the impossibility.
-
-Assuming the values are correct as stated: $1.2 = 0.23 e^{-\lambda t}$ would give a negative $t$, confirming this is unphysical.
-
-Assuming the correct values are $A = 0.12\,\text{Bq}\,\text{g}^{-1}$ (approximately half the living value):
+**Note:** The stated sample activity of $1.2\,\text{Bq}\,\text{g}^{-1}$ exceeds the living-wood baseline of $0.23\,\text{Bq}\,\text{g}^{-1}$, which is physically inconsistent with radioactive decay (a sample cannot have more C-14 than living material). This indicates either measurement error or contamination. Assuming the intended value is $A = 0.12\,\text{Bq}\,\text{g}^{-1}$ (approximately half the living value):
 
 $$t = \frac{1}{\lambda}\ln\frac{A_0}{A} = \frac{1}{1.209 \times 10^{-4}}\ln\frac{0.23}{0.12} = 8271 \times 0.652 = 5393\,\text{years}$$
-
-Or with the original values interpreted as the sample having been contaminated (the $1.2$ is a typo for $0.12$):
-
-Let me proceed with $A = 0.12\,\text{Bq}\,\text{g}^{-1}$:
-
-$$t = 8271 \times \ln(0.23/0.12) = 8271 \times 0.652 = 5393\,\text{years}$$
 
 (b) Fraction remaining: $N/N_0 = A/A_0 = 0.12/0.23 = 0.522 = 52.2\%$
 

@@ -20,7 +20,8 @@ slug: proof
 | OCR (A)    | Paper 1, 2 | Proof is integrated throughout                                |
 | CIE (9709) | P1, P2, P3 | Various methods across papers                                 |
 
-:::info Proof questions appear on every paper. You must be able to identify the appropriate proof
+:::info
+Proof questions appear on every paper. You must be able to identify the appropriate proof
 method and execute it clearly, with every step justified.
 :::
 
@@ -539,7 +540,8 @@ $$
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Proof**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-proof) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Proof with other pure mathematics topics to test synthesis under exam conditions.

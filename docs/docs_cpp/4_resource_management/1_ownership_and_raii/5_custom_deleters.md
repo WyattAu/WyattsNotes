@@ -50,7 +50,8 @@ process(std::unique_ptr<Widget>(new Widget), compute_risk());
 process(std::make_unique<Widget>(), compute_risk());
 ```
 
-:::info Relevance This is a real bug pattern. The C++ standard allows argument evaluation in any
+:::info
+Relevance This is a real bug pattern. The C++ standard allows argument evaluation in any
 order [N4950 S7.6.1.9]. If `compute_risk()` is evaluated before the `unique_ptr` constructor, and it
 throws, the `new Widget()` allocation is leaked. `make_unique` eliminates this class of bug
 entirely.
@@ -94,7 +95,8 @@ void aliasing_demo() {
 }
 ```
 
-:::warning The aliasing constructor is useful but dangerous. The aliased pointer does not extend the
+:::warning
+The aliasing constructor is useful but dangerous. The aliased pointer does not extend the
 lifetime of the member it points to — it only extends the lifetime of the **owning** object. If the
 owning object is destroyed first, the aliased pointer dangles. Use cases include returning pointers
 to members from APIs that need to express shared ownership of the containing object.
@@ -213,7 +215,8 @@ void use_dynamic_lib() {
 }
 ```
 
-:::info Each unique lambda type produces a different `std::unique_ptr` type. Two `unique_ptr`s with
+:::info
+Each unique lambda type produces a different `std::unique_ptr` type. Two `unique_ptr`s with
 different lambda deleters (even lexically identical lambdas) are incompatible types [N4950
 S20.11.1.2.1]. Use `decltype` or a named functor if you need a shared type across translation units.
 :::
@@ -264,7 +267,8 @@ int main() {
 | Capture by value     | No         | `sizeof(captured values)`            | Yes (copies are owned)                                   |
 | Capture by reference | No         | 0 bytes (reference is pointer-sized) | **Dangerous:** dangling reference if referent dies first |
 
-:::warning Never capture by reference in a lambda deleter unless the referent is guaranteed to
+:::warning
+Never capture by reference in a lambda deleter unless the referent is guaranteed to
 outlive the `unique_ptr`. Since the deleter runs in the `unique_ptr` destructor, which runs when the
 `unique_ptr` goes out of scope, any captured reference must refer to an object with equal or greater
 scope. This is easy to violate in practice — prefer capturing by value.
@@ -377,7 +381,8 @@ int main() {
 | Lambda (no capture)             | 0 bytes           | Stateless, EBO applies   |
 | Lambda (captures)               | Size of captures  | Stored inline            |
 
-:::tip Prefer stateless functor deleters or captureless lambdas to avoid size overhead. If a deleter
+:::tip
+Prefer stateless functor deleters or captureless lambdas to avoid size overhead. If a deleter
 must carry state, consider whether `std::shared_ptr` with a capturing lambda is more appropriate,
 since `shared_ptr` type-erases the deleter into the control block.
 :::
@@ -553,7 +558,8 @@ void allocator_mismatch_example() {
 }
 ```
 
-:::warning Never extract a raw pointer from an allocator-aware container and manage it with a
+:::warning
+Never extract a raw pointer from an allocator-aware container and manage it with a
 default-deleter smart pointer. The allocation and deallocation mechanisms must match. If you need to
 transfer ownership out of a container, use `std::move`, extract via `release()` on allocator-aware
 wrappers, or use `std::pmr` resources [N4950 S23.12].
@@ -725,7 +731,8 @@ auto arr = std::shared_ptr<int[]>(new int[10], std::default_delete<int[]>());
 auto arr2 = std::shared_ptr<int>(new int[10], [](int* p) { delete[] p; });
 ```
 
-:::warning `std::shared_ptr&lt;T[]&gt;` (the partial specialization for arrays) was added in C++17
+:::warning
+`std::shared_ptr&lt;T[]&gt;` (the partial specialization for arrays) was added in C++17
 [N4950 S20.11.3.7]. It provides `operator[]` but still requires an explicit array deleter. Before
 C++17, managing arrays with `shared_ptr` required manually passing `default_delete&lt;T[]&gt;` or a
 lambda.

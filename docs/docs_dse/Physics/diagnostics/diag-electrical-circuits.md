@@ -128,15 +128,13 @@ The potential drop across the full wire length equals the driver cell EMF (since
 
 $$\text{Potential gradient} = \frac{6}{100} = 0.06 \text{ V cm}^{-1}$$
 
-Verification: $0.06 \times 34.0 = 2.04$ V... but the standard cell is $1.018$ V. This means there must be a series resistor in the driver circuit. Let me reconsider.
-
-Actually, the driver cell is connected across the FULL wire. The potential gradient is indeed $6/100 = 0.06$ V/cm, and the null point for the standard cell should be at $1.018/0.06 = 16.97$ cm. But the problem says $34.0$ cm.
-
-This means there is a protective resistor in series with the potentiometer wire. Let $R_p$ be the protective resistance.
+**Note:** The potential gradient of $6/100 = 0.06$ V/cm would place the null point for the standard
+cell at $1.018/0.06 = 16.97$ cm, but the problem states $34.0$ cm. This means there is a protective
+resistor in series with the potentiometer wire. Let $R_p$ be the protective resistance.
 
 $$I_{\text{driver}} = \frac{6}{R_p + 10}$$
 
-$$\text{Potential gradient} = I_{\text{driver}} \times \frac{10}{100} = \frac{60}{100(R_p + 10)} = \frac{0.6}{R_p + 10}$$
+$$\text{Potential gradient} = I_{\text{driver}} \times \frac{10}{100} = \frac{0.6}{R_p + 10}$$
 
 At null point: $E_{\text{standard}} = \text{gradient} \times 34.0$:
 
@@ -148,11 +146,7 @@ $$R_p = 10.04 \text{ }\Omega$$
 
 Potential gradient $= \frac{0.6}{20.04} = 0.02994$ V/cm.
 
-**Revised answer for (a):**
-
-$$E_{\text{unknown}} = \text{gradient} \times 51.2 = 0.02994 \times 51.2 = 1.533 \text{ V}$$
-
-(The answer is the same since we used the ratio method, which is independent of the actual gradient.)
+The answer in (a) remains $1.533$ V since the ratio method is independent of the actual gradient.
 
 **(c) Current through the wire:**
 

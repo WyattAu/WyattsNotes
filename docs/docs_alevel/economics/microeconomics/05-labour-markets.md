@@ -359,7 +359,8 @@ and $w_{min} > w_m = MCL(L_m) = MRP_L(L_m)$). $\blacksquare$
 The optimal minimum wage under monopsony is $w_c$ (the competitive wage), which achieves the
 competitive outcome: $L = L_c$, $w = w_c$.
 
-:::warning Common Pitfall The statement "minimum wages always cause unemployment" is only true in
+:::warning
+Common Pitfall The statement "minimum wages always cause unemployment" is only true in
 perfectly competitive labour markets. Under monopsony (e.g., large employers in small towns, certain
 professional sports leagues), a minimum wage can increase employment. Always state the market
 structure.
@@ -410,7 +411,8 @@ same pay).
 5. **Discrimination**: Taste-based and statistical discrimination (see Section 8) continue to play a
    role, though their magnitude is debated.
 
-:::info Board-Specific Note AQA and Edexcel both expect students to distinguish between the gender
+:::info
+Board-Specific Note AQA and Edexcel both expect students to distinguish between the gender
 pay gap (an average difference across the economy) and equal pay (a legal requirement for identical
 work). OCR (A) may link the gender pay gap to human capital theory and occupational segregation. CIE
 has examined the effectiveness of government policies to reduce the gender pay gap.
@@ -513,7 +515,8 @@ significant limitations:
   not all graduate-level jobs require degree-level skills. This creates **underemployment** where
   graduates work in non-graduate roles, and their human capital is underutilised.
 
-:::info Board-Specific Note Edexcel (Theme 3) emphasises the role of education and training in
+:::info
+Board-Specific Note Edexcel (Theme 3) emphasises the role of education and training in
 improving labour market outcomes. AQA may ask students to evaluate whether increasing university
 participation is always economically beneficial. CIE (9708) links human capital to economic growth
 in macro contexts. OCR often examines the limitations of human capital theory in explaining
@@ -583,7 +586,8 @@ In the UK, the ONS estimates that approximately two-thirds of the gender pay gap
 occupational segregation and working patterns, while roughly one-third remains "unexplained" and may
 reflect discrimination.
 
-:::info Board-Specific Note CIE (9708) may ask students to distinguish between the explained and
+:::info
+Board-Specific Note CIE (9708) may ask students to distinguish between the explained and
 unexplained portions of the gender pay gap. AQA expects evaluation of government policies such as
 the UK Gender Pay Gap Reporting Regulations (2017). Edexcel often links discrimination to government
 intervention policies. OCR may examine whether legislation alone is sufficient to eliminate
@@ -610,7 +614,8 @@ discrimination.
   inequality
 - Non-wage factors (job satisfaction, work-life balance) are important but hard to quantify
 
-:::info Board-Specific Note AQA places significant emphasis on trade unions and the minimum wage
+:::info
+Board-Specific Note AQA places significant emphasis on trade unions and the minimum wage
 debate. Edexcel covers human capital and migration effects on labour markets. CIE (9708) often asks
 about wage determination in different market structures. OCR (A) emphasises labour market
 flexibility and government intervention.
@@ -801,7 +806,8 @@ approach.
 
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Assuming minimum wages always cause unemployment:** This is only true in perfectly competitive labour markets. Under monopsony (a single dominant employer), a minimum wage set between the monopsony wage and the competitive wage can INCREASE employment. Always state the market structure before analysing minimum wage effects.
 

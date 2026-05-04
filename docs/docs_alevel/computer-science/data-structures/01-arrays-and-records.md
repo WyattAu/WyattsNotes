@@ -257,7 +257,8 @@ Total size: 12 bytes (not 7).
 | Size         | Homogeneous              | Heterogeneous                 |
 | Use case     | Collections of same data | Grouping related attributes   |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** distinguishes between static arrays (fixed size, compile-time) and dynamic arrays (runtime
   sizing)
@@ -278,7 +279,8 @@ before accessing the element.
 Without bounds checking, an out-of-bounds access reads or writes arbitrary memory — a **buffer
 overflow** vulnerability.
 
-:::warning Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
+:::warning
+Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
 `A[-1]` or `A[n]` compiles but causes undefined behaviour. Python, Java, and C# perform automatic
 bounds checking.
 :::

@@ -294,7 +294,8 @@ larger, more polarisable $\mathrm{I}^-$ stabilises the departing negative charge
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Halogenoalkanes**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-halogenoalkanes-alcohols) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Halogenoalkanes with other chemistry topics to test synthesis under exam conditions.

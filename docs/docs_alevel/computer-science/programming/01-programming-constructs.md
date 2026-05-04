@@ -46,7 +46,8 @@ y = float(5)       # y = 5.0
 z = str(42)        # z = "42"
 ```
 
-:::warning Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
+:::warning
+Pitfall In Python, `int(3.9)` truncates toward zero (gives 3), not rounds. Use
 `round(3.9)` for rounding.
 :::
 
@@ -150,7 +151,8 @@ while True:
         break
 ```
 
-:::info Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
+:::info
+Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
 and `WHILE ... ENDWHILE`. **CIE (9618)** uses its own pseudocode format; requires procedure and
 function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode format; requires
 local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;

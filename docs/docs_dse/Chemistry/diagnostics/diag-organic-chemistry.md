@@ -36,13 +36,12 @@ An unknown organic compound $X$ has the molecular formula $C_{3}H_{6}O_{2}$. The
 
 - **Orange to green with $K_{2}Cr_{2}O_{7}$**: $X$ is oxidised, but since we already know it has a $-COOH$ group (which cannot be further oxidised by this reagent), the colour change is likely due to an **alcohol** group also being present. However, the molecular formula is $C_{3}H_{6}O_{2}$, which accounts for exactly one $-COOH$ group ($C_{2}H_{3}O_{2}$) plus one additional carbon ($CH_{3}$). The only structure is $CH_{3}CH_{2}COOH$ (propanoic acid), which has no alcohol group.
 
-Re-examining: $CH_{3}CH_{2}COOH$ would NOT give orange-to-green with $K_{2}Cr_{2}O_{7}$ since carboxylic acids are not oxidised by this reagent. The result suggests a different compound. Actually, let me reconsider the molecular formula.
-
-$C_{3}H_{6}O_{2}$ with a $-COOH$: propanoic acid ($CH_{3}CH_{2}COOH$). This would react with $Na_{2}CO_{3}$, would not react with Fehling's, and would NOT change the colour of $K_{2}Cr_{2}O_{7}$. The orange-to-green result is inconsistent.
-
-Alternative: The compound could be **hydroxypropanal** or a similar molecule, but that would not react with $Na_{2}CO_{3}$.
-
-Actually, for DSE purposes, the most consistent interpretation: $X$ is **propanoic acid** ($CH_{3}CH_{2}COOH$). The orange-to-green result may be due to a slight impurity or the question is designed to test whether students recognise that carboxylic acids are the endpoint of oxidation. Given the $Na_{2}CO_{3}$ result is definitive for carboxylic acid, $X$ must be propanoic acid.
+**Note:** $CH_{3}CH_{2}COOH$ would NOT give orange-to-green with $K_{2}Cr_{2}O_{7}$ since
+carboxylic acids are not oxidised by this reagent. However, the $Na_{2}CO_{3}$ result is definitive
+for carboxylic acid. No other $C_{3}H_{6}O_{2}$ structure (e.g., hydroxypropanal) would react with
+$Na_{2}CO_{3}$. The orange-to-green result may be due to a slight impurity, or the question is
+designed to test whether students recognise that carboxylic acids are the endpoint of oxidation.
+Given the $Na_{2}CO_{3}$ result, $X$ must be propanoic acid.
 
 (b) Structure: $CH_{3}CH_{2}COOH$
 
@@ -168,33 +167,14 @@ $$A \xrightarrow{CH_{3}CH_{2}OH / H^{+}} E$$
 
 (a) **$A$**: $CH_{3}CH_{2}OH$ is a primary alcohol. Oxidation with excess acidified $K_{2}Cr_{2}O_{7}$ gives the carboxylic acid: $CH_{3}COOH$ (**ethanoic acid**).
 
-**$B$**: $A$ ($CH_{3}COOH$) undergoes the iodoform test with alkaline $I_{2}$ and heat, giving $CHI_{3}$ (yellow precipitate). However, carboxylic acids do NOT give the iodoform reaction. Let me reconsider.
+**$B$**: The iodoform reaction works for methyl ketones ($CH_{3}CO-$) and ethanol ($CH_{3}CH_{2}OH$).
+Ethanoic acid ($CH_{3}COOH$) does not give the iodoform test. The scheme therefore requires $A$ to be
+the aldehyde $CH_{3}CHO$ (ethanal), formed by controlled oxidation (interpreting the question as
+intending the aldehyde stage). Ethanal undergoes the iodoform reaction:
 
-Actually, the iodoform reaction works for methyl ketones ($CH_{3}CO-$) and ethanol ($CH_{3}CH_{2}OH$). Ethanoic acid ($CH_{3}COOH$) does NOT give the iodoform test because it lacks the $CH_{3}CO-$ structure needed (the $-OH$ group is not oxidisable under these conditions).
+$CH_{3}CHO + 3I_{2} + 4NaOH \rightarrow CHI_{3} + HCOONa + 3NaI + 3H_{2}O$
 
-Wait -- actually, the scheme says $CH_{3}CH_{2}OH$ is oxidised with excess $K_{2}Cr_{2}O_{7}$. Primary alcohol $\rightarrow$ aldehyde $\rightarrow$ carboxylic acid. With excess, $A = CH_{3}COOH$.
-
-But $CH_{3}COOH$ does not give iodoform. So perhaps $A$ is the aldehyde $CH_{3}CHO$ (ethanal)? But the problem says "excess" $K_{2}Cr_{2}O_{7}$, which would fully oxidise to the acid.
-
-Let me re-read: perhaps the question intends controlled oxidation. If $A = CH_{3}CHO$ (ethanal), then:
-
-$A \xrightarrow{\text{alkaline } I_{2}} B + CHI_{3}$
-
-Ethanal undergoes iodoform reaction: $CH_{3}CHO + 3I_{2} + 4NaOH \rightarrow CHI_{3} + HCOONa + 3NaI + 3H_{2}O$
-
-So $B =$ **HCOONa** (sodium methanoate) or $HCOOH$ (methanoic acid).
-
-Let me proceed with $A = CH_{3}CHO$ (ethanal), interpreting "excess" as sufficient to get past the aldehyde stage in some interpretations. Actually, for DSE, the question likely intends:
-
-- If $A$ = ethanal ($CH_{3}CHO$), then $B$ = methanoic acid ($HCOOH$) from the iodoform reaction.
-- $B$ ($HCOOH$) + $LiAlH_{4}$ $\rightarrow C$ = methanol ($CH_{3}OH$).
-- $C$ ($CH_{3}OH$) + $HBr$ $\rightarrow D$ = bromomethane ($CH_{3}Br$).
-- $D$ ($CH_{3}Br$) + $NaOH(aq)$ $\rightarrow C$ ($CH_{3}OH$) -- nucleophilic substitution, back to methanol.
-- $A$ ($CH_{3}CHO$) + $CH_{3}CH_{2}OH / H^{+}$ $\rightarrow E$ = $CH_{3}CH_{2}OCH(CH_{3})$ -- hemiacetal? No, this is not typical. Actually, $CH_{3}CHO$ + ethanol with acid catalyst gives the acetal or the hemiacetal. For DSE, this likely produces ethyl ethanoate via Tollen's type reaction? No -- aldehyde + alcohol gives hemiacetal then acetal.
-
-Actually, $A$ ($CH_{3}CHO$) + $CH_{3}CH_{2}OH$ + $H^{+}$ gives the acetal: $CH_{3}CH(OCH_{2}CH_{3})_{2}$. Or the ester: this is not esterification.
-
-For the scheme to be self-consistent in DSE context:
+So $B =$ **HCOOH** (methanoic acid).
 
 | Compound | Identity | Name |
 |----------|----------|------|

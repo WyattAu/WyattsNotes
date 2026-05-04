@@ -66,7 +66,8 @@ int main() {
 }
 ```
 
-:::info With multiple inheritance, `pa` and `pb` point to **different addresses** within the same
+:::info
+With multiple inheritance, `pa` and `pb` point to **different addresses** within the same
 `C` object -- they point to the respective base subobjects. The compiler generates **thunks** (small
 adjustment stubs) to correct the `this` pointer when dispatching virtual calls through non-primary
 bases.
@@ -153,7 +154,8 @@ When `d` is passed by value to `process_by_value`, only the `Animal` subobject i
 is set to `Animal`'s vtable, so `a.speak()` dispatches to `Animal::speak`. The `Dog`-specific data
 (`breed`) and the `Dog::speak` override are lost.
 
-:::warning Never pass polymorphic objects by value. Always use pointers (`Animal*`) or references
+:::warning
+Never pass polymorphic objects by value. Always use pointers (`Animal*`) or references
 (`Animal&` / `const Animal&`) to preserve the dynamic type.
 :::
 
@@ -296,7 +298,8 @@ With `BadBase`, only `BadBase::~BadBase()` is called -- `BadDerived::~BadDerived
 causing resource leaks. With `GoodBase`, the virtual dispatch mechanism selects
 `GoodDerived::~GoodDerived()`, which then implicitly calls `GoodBase::~GoodBase()`.
 
-:::tip Rule If a class has **any** virtual function, its destructor **must** also be virtual. If a
+:::tip
+Rule If a class has **any** virtual function, its destructor **must** also be virtual. If a
 class is designed to be a polymorphic base class, always declare `virtual ~Base() = default;` (or
 provide a virtual destructor with a body).
 :::
@@ -438,7 +441,8 @@ private:
 };
 ```
 
-:::info Convention Prefixing interface names with `I` (e.g., `ISerializable`) is a common C++
+:::info
+Convention Prefixing interface names with `I` (e.g., `ISerializable`) is a common C++
 convention borrowed from COM and C#. It is not mandated by the Standard. Alternatives include
 suffixes like `-able` (e.g., `Serializable`).
 :::
@@ -512,7 +516,8 @@ pointer (stored in the vtable or as a separate vptr) to locate the shared `Devic
 runtime. This adds one level of indirection to every access of a virtual base member [N4950
 S11.7.1].
 
-:::warning Virtual inheritance adds runtime cost: accessing members of a virtual base requires an
+:::warning
+Virtual inheritance adds runtime cost: accessing members of a virtual base requires an
 extra indirection through the vbase offset table. Construction order is also affected -- virtual
 bases are constructed by the most-derived class, before any non-virtual base classes [N4950
 S11.9.3]. Avoid virtual inheritance unless the diamond pattern is genuinely needed.
@@ -562,7 +567,8 @@ The `using Base::process;` declaration in `Derived_Right` un-hides the remaining
 applies even when the derived function is `virtual` and does override one specific overload -- all
 other overloads are still hidden.
 
-:::tip Best Practice When overriding a base class function that participates in overloading, always
+:::tip
+Best Practice When overriding a base class function that participates in overloading, always
 add `using Base::function_name;` in the derived class to avoid accidentally hiding sibling
 overloads. The `override` keyword catches signature mismatches but does not prevent hiding.
 :::
@@ -684,7 +690,8 @@ int main() {
 }
 ```
 
-:::warning Always catch exceptions by reference (`const std::exception& e`). Catching by value
+:::warning
+Always catch exceptions by reference (`const std::exception& e`). Catching by value
 slices the exception object, losing derived-class information and potentially invoking slicing in
 the exception handler itself.
 :::

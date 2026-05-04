@@ -13,7 +13,9 @@ slug: dynamics
 
 ## Dynamics
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
+:::
 
 ## 1. Newton's Laws of Motion
 
@@ -146,12 +148,14 @@ centre of a circular path, responsible for changing the direction of the velocit
 **Definition.** The **centripetal force** $F_c$ is the component of the net force directed towards
 the centre of a circular path, responsible for maintaining circular motion.
 
-:::warning Common Pitfall Centripetal force is **not** a separate force. It is the **net radial
+:::warning
+Common Pitfall Centripetal force is **not** a separate force. It is the **net radial
 component** of the real forces acting on the body (tension, friction, gravity, normal reaction,
 etc.). Never draw "centripetal force" as an additional arrow on a free body diagram.
 :::
 
-:::tip Exam Technique When solving circular motion problems, always start with a free body diagram
+:::tip
+Exam Technique When solving circular motion problems, always start with a free body diagram
 showing only the real forces. Then resolve forces towards the centre of the circle and apply
 $F_c = mv^2/r$. The centripetal force is always provided by one or more of the forces already on
 your diagram.

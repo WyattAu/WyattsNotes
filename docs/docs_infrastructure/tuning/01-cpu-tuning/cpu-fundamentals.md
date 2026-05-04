@@ -508,7 +508,8 @@ echo 0 | sudo tee /sys/devices/system/cpu/smt/active
 echo 1 | sudo tee /sys/devices/system/cpu/smt/active
 ```
 
-:::warning Disabling SMT halves your logical core count. Ensure your workload can run within the
+:::warning
+Disabling SMT halves your logical core count. Ensure your workload can run within the
 physical core limit before disabling it. Some applications are licensed per logical core and will
 not work correctly with SMT disabled.
 :::
@@ -660,7 +661,8 @@ Microcode updates can change CPU behavior in ways that affect performance measur
   frequencies to address stability issues (e.g., the Ice Lake PL1/PL2 fixes).
 - **Cache behavior changes:** Some updates modify L3 cache allocation or prefetcher behavior.
 
-:::warning Never benchmark a CPU before verifying the microcode version. A BIOS update that includes
+:::warning
+Never benchmark a CPU before verifying the microcode version. A BIOS update that includes
 a new microcode revision can invalidate months of tuning work if it changes turbo behavior or adds
 mitigation overhead.
 :::
@@ -734,7 +736,8 @@ echo "8-15" > /sys/fs/cgroup/batch_jobs/cpuset.cpus
 echo $PID > /sys/fs/cgroup/batch_jobs/cgroup.procs
 ```
 
-:::info On server platforms with homogeneous cores (Xeon Scalable), ITD is less relevant because all
+:::info
+On server platforms with homogeneous cores (Xeon Scalable), ITD is less relevant because all
 cores have identical capabilities. ITD primarily benefits client and workstation platforms with
 big.LITTLE-style heterogeneous core layouts.
 :::

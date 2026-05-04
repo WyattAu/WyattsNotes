@@ -241,13 +241,13 @@ Let $f(y) = y(y-2)^2(y+1)$. Test the sign of $f(y)$ in each region:
 | $y > 2$     | $y = 3$   | $(3)(1)(4) > 0$ | Increasing |
 
 Stability classification:
-- $y = -1$: $f$ changes from $+$ to $-$, so solutions approach $y = -1$ from above and leave from below. This is **semistable** (stable from above, unstable from below). Actually, since $f > 0$ for $y \lt -1$ and $f < 0$ for $y > -1$ (just above), solutions approach $y = -1$ from both sides... wait. For $y < -1$: $f > 0$ means $y$ increases toward $-1$. For $-1 < y < 0$: $f < 0$ means $y$ decreases toward $-1$. So $y = -1$ is **stable** (asymptotically stable).
+- $y = -1$: $f$ changes from $+$ to $-$, so solutions approach $y = -1$ from above and leave from below. For $y < -1$: $f > 0$ means $y$ increases toward $-1$. For $-1 < y < 0$: $f < 0$ means $y$ decreases toward $-1$. So $y = -1$ is **stable** (asymptotically stable).
 - $y = 0$: $f$ changes from $-$ (just below 0, i.e., $-0.5$) to $+$ (just above 0, i.e., $1$). So solutions move away from $y = 0$ from both sides. **Unstable**.
-- $y = 2$: $f > 0$ for $0 < y < 2$ and $f > 0$ for $y > 2$. Solutions increase through $y = 2$ from below and continue increasing above. **Semistable** (unstable from below, stable from above). Actually: for $y$ just below 2, $f > 0$, so $y$ increases toward 2 and passes through. For $y$ just above 2, $f > 0$, so $y$ increases away from 2. So $y = 2$ is **semistable** (solutions approach from below but depart from above).
+- $y = 2$: $f > 0$ for $0 < y < 2$ and $f > 0$ for $y > 2$. Solutions increase through $y = 2$ from below and continue increasing above. **Semistable** (solutions approach from below but depart from above).
 
 (b) No. The multiplicity of the root affects the nature of the equilibrium, but "doubly stable" is not the correct interpretation. A root of even multiplicity in $f(y)$ at an equilibrium means the equilibrium is a **node** -- semistable, with solutions approaching from one side and departing from the other. The "double root" makes $f'(2) = 0$, which means the linearization test is inconclusive and we must use the sign chart instead.
 
-(c) $y(0) = 1$ is in the region $0 < y < 2$ where $f(y) > 0$, so $y$ increases. Since $y = 2$ is semistable (solutions pass through from below), $y(t) \to 2$ as $t \to \infty$ is possible but solutions actually pass through. Let me reconsider: solutions with $y(0) = 1$ will increase toward $y = 2$ but since $f(2) = 0$, they approach $y = 2$ asymptotically (they never actually reach it in finite time). As $t \to \infty$: $y(t) \to 2$.
+(c) $y(0) = 1$ is in the region $0 < y < 2$ where $f(y) > 0$, so $y$ increases. Since $y = 2$ is semistable (solutions pass through from below), $y(t)$ increases toward $y = 2$ asymptotically (it never actually reaches it in finite time). As $t \to \infty$: $y(t) \to 2$.
 
 As $t \to -\infty$: tracing backward, $y$ decreases from 1 toward the equilibrium below, which is $y = 0$. So $y(t) \to 0$ as $t \to -\infty$.
 

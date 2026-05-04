@@ -13,7 +13,9 @@ slug: capacitance
 
 ## Capacitance
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="capacitor-lab-basics" title="Capacitor Lab: Basics" />
 
@@ -115,7 +117,8 @@ $$\frac{1}{C_{\mathrm{total}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{
 $V = V_1 + V_2 + \cdots = Q/C_1 + Q/C_2 + \cdots = Q(1/C_1 + 1/C_2 + \cdots)$. Since
 $V = Q/C_{\mathrm{total}}$: $1/C_{\mathrm{total}} = 1/C_1 + 1/C_2 + \cdots$ $\square$
 
-:::warning Common Pitfall Note the "mirror" relationship with resistors: capacitors in parallel add
+:::warning
+Common Pitfall Note the "mirror" relationship with resistors: capacitors in parallel add
 (like resistors in series), and capacitors in series add reciprocally (like resistors in parallel).
 :::
 
@@ -341,7 +344,8 @@ $$V_{\mathrm{max}} = E_{\mathrm{breakdown}} \cdot d$$
 | Water (pure)    | 80              | $\approx 0.065$             |
 | Barium titanate | 1200 -- 10000   | 3                           |
 
-:::warning Common Pitfall A high $\varepsilon_r$ does not imply high dielectric strength. Water has
+:::warning
+Common Pitfall A high $\varepsilon_r$ does not imply high dielectric strength. Water has
 an enormous $\varepsilon_r = 80$ but a very low breakdown voltage ($\approx 65$ V/mm), so water is a
 poor practical dielectric for high-voltage capacitors despite its high permittivity.
 :::
@@ -368,7 +372,8 @@ $$E_{\mathrm{new}} = \frac{1}{2}C_{\mathrm{new}}V^2 = \frac{1}{2}\varepsilon_r C
 The additional energy comes from the battery, which supplies extra charge
 $Q' = (\varepsilon_r - 1)CV$ to the plates.
 
-:::tip Exam Technique When a question asks about inserting a dielectric, always check whether the
+:::tip
+Exam Technique When a question asks about inserting a dielectric, always check whether the
 capacitor is isolated or connected to a supply. This completely determines whether $Q$ or $V$ is
 held constant, and therefore whether energy increases or decreases.
 :::
@@ -581,7 +586,8 @@ $$C = -\frac{1}{mR}$$
   $R_V$ is not much larger than $R$, the effective discharge resistance is
   $R_{\mathrm{eff}} = \frac{R \cdot R_V}{R + R_V}$, leading to a systematic underestimate of $C$.
 
-:::tip Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
+:::tip
+Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
 log of the voltage values and plot $\ln(V)$ vs $t$. Do NOT attempt to fit an exponential curve
 directly. The gradient gives you $-1/(RC)$, and since $R$ is known, you extract $C$. Show the
 log-linear transformation explicitly.
@@ -928,7 +934,8 @@ $C = (7.2 \pm 1.4) \times 10^{-4}$ F.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Capacitance**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-capacitance) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Capacitance with other physics topics to test synthesis under exam conditions.
@@ -936,7 +943,8 @@ Ready to test your understanding of **Capacitance**? The [diagnostic test](/docs
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Assuming charge is shared equally between capacitors in series:** In series, all capacitors store the SAME charge, not equal charge. The total charge stored is NOT Q1 + Q2 -- it is the common charge Q that flows through all of them. This is because the same current flows through each capacitor in series.
 

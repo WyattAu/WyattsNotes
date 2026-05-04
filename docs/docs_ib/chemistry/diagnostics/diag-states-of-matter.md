@@ -36,7 +36,7 @@ The ideal gas assumes: (1) no intermolecular forces, (2) negligible molecular vo
 
 He is a noble gas with only London dispersion forces -- minimal intermolecular attractions. $\text{NH}_3$ has strong hydrogen bonding. At low temperature (50 K), He molecules have very low kinetic energy, so even weak LDF become significant relative to thermal energy. However, the stronger argument involves the real-gas correction: at low temperatures, all gases approach their condensation point, and the assumption of negligible molecular volume fails less than the assumption of negligible forces.
 
-Actually, let us reconsider. The van der Waals constant $a$ (intermolecular forces) is larger for $\text{NH}_3$ than He. The constant $b$ (molecular volume) is similar for both small molecules. The reduced conditions matter more: $T_r = T/T_c$ where $T_c(\text{He}) = 5.2\ \text{K}$ and $T_c(\text{NH}_3) = 405.5\ \text{K}$. For He: $T_r = 50/5.2 = 9.6$ (far above critical, nearly ideal). For $\text{NH}_3$: $T_r = 400/405.5 = 0.99$ (near critical point, large deviations).
+The correct analysis uses reduced conditions: $T_r = T/T_c$ where $T_c(\text{He}) = 5.2\ \text{K}$ and $T_c(\text{NH}_3) = 405.5\ \text{K}$. For He: $T_r = 50/5.2 = 9.6$ (far above critical, nearly ideal). For $\text{NH}_3$: $T_r = 400/405.5 = 0.99$ (near critical point, large deviations).
 
 Therefore, deviation is greatest for **(b) $\text{NH}_3$ at 400 K and 1 atm**. Despite the higher temperature, $\text{NH}_3$ is near its critical point where intermolecular forces are most significant relative to kinetic energy. He at 50 K is still far above its critical temperature.
 

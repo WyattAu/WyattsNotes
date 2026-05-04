@@ -144,23 +144,15 @@ MST edges: A-B(2), B-C(1), C-D(1), C-E(3), E-F(2).
 
 (b) Total cost: $2 + 1 + 1 + 3 + 2 = 9$.
 
-(c) If C-D(1) fails, remove it and continue Kruskal from where we left off:
+(c) If C-D(1) fails, re-run Kruskal's algorithm without this edge:
 
-Remaining edges to consider: B-D(4), A-C(5), D-E(6), D-F(7).
-
-5. C-E(3): add. Forest: \{A-B-C\}, \{D\}, \{E-F\}.
-6. B-D(4): add (B connects to D). Forest: \{A-B-C-D\}, \{E-F\}.
-7. C-E(3) was already considered. Wait, C-E(3) comes before B-D(4).
-
-Let me redo without C-D(1):
-
-Edges: B-C(1), A-B(2), E-F(2), C-E(3), B-D(4), A-C(5), D-E(6), D-F(7).
+Edges (sorted, excluding C-D): B-C(1), A-B(2), E-F(2), C-E(3), B-D(4), A-C(5), D-E(6), D-F(7).
 
 1. B-C(1): add. \{B-C\}, \{A\}, \{D\}, \{E\}, \{F\}.
 2. A-B(2): add. \{A-B-C\}, \{D\}, \{E\}, \{F\}.
 3. E-F(2): add. \{A-B-C\}, \{D\}, \{E-F\}.
 4. C-E(3): add. \{A-B-C-E-F\}, \{D\}.
-5. B-D(4): add. \{A-B-C-D-E-F\}. Done.
+5. B-D(4): add. \{A-B-C-D-E-F\}. Done (5 edges for 6 vertices).
 
 New MST: A-B(2), B-C(1), C-E(3), E-F(2), B-D(4).
 

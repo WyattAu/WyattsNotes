@@ -734,7 +734,8 @@ $$a = \frac{mg}{m + 1.8} = \frac{0.1 \times 9.8}{0.1 + 1.8} = \frac{0.98}{1.9} =
 
 $$T = 1.8 \times 0.516 = 0.929 \mathrm{ N}$$
 
-:::info The yo-yo falls much more slowly than free fall ($0.516 \mathrm{ m/s}^2$ vs
+:::info
+The yo-yo falls much more slowly than free fall ($0.516 \mathrm{ m/s}^2$ vs
 $9.8 \mathrm{ m/s}^2$) because gravitational PE is converted into both translational and rotational
 KE. The smaller the axle radius, the slower the fall, since more of the energy goes into rotation.
 :::

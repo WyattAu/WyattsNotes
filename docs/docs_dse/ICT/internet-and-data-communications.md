@@ -254,7 +254,8 @@ document.getElementById('myButton').onclick = function () {
 };
 ```
 
-:::info HTML = structure, CSS = style, JavaScript = behaviour. This three-way separation is a
+:::info
+HTML = structure, CSS = style, JavaScript = behaviour. This three-way separation is a
 fundamental principle of web development.
 :::
 

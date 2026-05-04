@@ -27,13 +27,8 @@ gain compared to autarky (assuming each has 100 workers and splits them equally 
 
 **Solution:**
 
-(a) Hong Kong has an **absolute advantage in both goods** (8 $\gt$ 2 in electronics, 4 $\lt$ 6 --
-actually Vietnam has absolute advantage in garments).
-
-Correction: Hong Kong: 8 electronics or 4 garments. Vietnam: 2 electronics or 6 garments.
-
-- Hong Kong has absolute advantage in electronics (8 $\gt$ 2).
-- Vietnam has absolute advantage in garments (6 $\gt$ 4).
+(a) Hong Kong has an **absolute advantage in electronics** (8 $\gt$ 2). Vietnam has an **absolute advantage
+in garments** (6 $\gt$ 4). Neither country has an absolute advantage in both goods.
 
 (b) Opportunity cost of 1 unit of electronics:
 
@@ -55,20 +50,11 @@ If Hong Kong exports 300 electronics at 1:2, it receives 600 garments. Hong Kong
 $800 - 300 = 500$ electronics and 600 garments (gains: 100 electronics, 400 garments). Vietnam
 consumes 300 electronics and $600 - 600 = 0$ garments -- that leaves Vietnam with nothing.
 
-Let me adjust: Hong Kong exports 200 electronics, receives 400 garments. Hong Kong: 600 electronics,
-400 garments (gains: 200 electronics, 200 garments). Vietnam: 200 electronics, 200 garments (gains:
-100 electronics, -100 garments). Vietnam is worse off.
-
-Hong Kong exports 150 electronics, receives 300 garments. Hong Kong: 650 electronics, 300 garments
-(gains: 250 electronics, 100 garments). Vietnam: 150 electronics, 300 garments (gains: 50
-electronics, 0 garments).
-
-Hong Kong exports 120 electronics, receives 240 garments. Hong Kong: 680 electronics, 240 garments
-(gains: 280 electronics, 40 garments). Vietnam: 120 electronics, 360 garments (gains: 20
-electronics, 60 garments).
-
-Both gain compared to autarky. For Vietnam to gain, it needs more than 100 garments in exchange for
-electronics, which the 1:2 rate provides.
+At the 1:2 exchange rate, both countries gain. For example, if Hong Kong exports 120 electronics and
+receives 240 garments: Hong Kong consumes 680 electronics and 240 garments (gains: 280 electronics, 40
+garments compared to autarky). Vietnam consumes 120 electronics and 360 garments (gains: 20
+electronics, 60 garments compared to autarky). Both are better off, confirming that trade at this rate
+is mutually beneficial.
 
 ### UT-2: Exchange Rate and Trade
 
@@ -174,7 +160,7 @@ With quota of 30: $Q_d - Q_s = 30$. $150 - 0.5P - (0.5P - 25) = 30$. $175 - P = 
 
 $Q_d = 150 - 72.5 = 77.5$, $Q_s = 72.5 - 25 = 47.5$. Imports $= 77.5 - 47.5 = 30$.
 
-(b) CS loss: $\frac{1}{2}(145 + 100)(77.5) - \frac{1}{2}(150 + 100)(100)$... Let me recalculate.
+(b) CS loss (using the area method):
 
 CS free trade $= \frac{1}{2}(300 - 100)(100) = \frac{1}{2}(200)(100) = \$10,000$. CS with quota
 $= \frac{1}{2}(300 - 145)(77.5) = \frac{1}{2}(155)(77.5) = \$6006.25$. $\Delta CS = -\$3993.75$.

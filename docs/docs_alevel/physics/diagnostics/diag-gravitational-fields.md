@@ -215,18 +215,13 @@ $$T = \frac{2\pi}{\omega} = \frac{2\pi}{1.826 \times 10^{-7}} = 3.441 \times 10^
 
 Alternatively, using the general formula: $T^2 = \frac{4\pi^2 d^3}{G(M_1 + M_2)}$
 
-$$T^2 = \frac{4\pi^2 (2.0 \times 10^{11})^3}{6.67 \times 10^{-11} \times 4.0 \times 10^{30}} = \frac{4\pi^2 \times 8.0 \times 10^{33}}{2.668 \times 10^{20}} = \frac{3.158 \times 10^{35}}{2.668 \times 10^{20}} = 1.184 \times 10^{15}$$
-$$T = 1.088 \times 10^7\,\text{s}$$
-
-Wait, let me recheck. $T^2 = 4\pi^2 \times 8 \times 10^{33} / (6.67 \times 10^{-11} \times 4 \times 10^{30}) = 4\pi^2 \times 8 \times 10^{33} / (2.668 \times 10^{20}) = 315.8 \times 10^{13} / 2.668 \times 10^{20}$. Let me redo:
-
 Numerator: $4\pi^2 \times (2 \times 10^{11})^3 = 4\pi^2 \times 8 \times 10^{33} = 3.158 \times 10^{35}$
 
 Denominator: $6.67 \times 10^{-11} \times 4 \times 10^{30} = 2.668 \times 10^{20}$
 
-$T^2 = 3.158 \times 10^{35} / 2.668 \times 10^{20} = 1.184 \times 10^{15}$
+$$T^2 = \frac{3.158 \times 10^{35}}{2.668 \times 10^{20}} = 1.184 \times 10^{15}$$
 
-$T = \sqrt{1.184 \times 10^{15}} = 3.441 \times 10^7\,\text{s} = 398\,\text{days}$
+$$T = \sqrt{1.184 \times 10^{15}} = 3.441 \times 10^7\,\text{s} = 398\,\text{days}$$
 
 (c) $v_1 = \omega r_1 = 1.826 \times 10^{-7} \times 5.0 \times 10^{10} = 9130\,\text{m}\,\text{s}^{-1}$
 

@@ -45,7 +45,8 @@ Where:
 - $s$ = displacement
 - $t$ = time
 
-:::info These equations are only valid for **uniform acceleration**. When acceleration varies,
+:::info
+These equations are only valid for **uniform acceleration**. When acceleration varies,
 calculus or graphical methods must be used.
 :::
 
@@ -140,7 +141,8 @@ $$g \approx 9.81 \mathrm{ m/s}^2$$
 
 The acceleration is **downward** regardless of whether the object is moving up or down.
 
-:::warning Air resistance is neglected in ideal free-fall problems unless the question explicitly
+:::warning
+Air resistance is neglected in ideal free-fall problems unless the question explicitly
 states otherwise.
 :::
 
@@ -548,7 +550,8 @@ $$\mathrm{Impulse} = F\Delta t = \Delta p$$
 
 Impulse equals the change in momentum. The SI unit is N s.
 
-:::tip Impulse is the area under a force-time graph. For a variable force, use $J = \int F \, dt$.
+:::tip
+Impulse is the area under a force-time graph. For a variable force, use $J = \int F \, dt$.
 :::
 
 ### Worked Example 9
@@ -580,7 +583,8 @@ magnitude of the average force is $1500 \mathrm{ N}$.
 **Perfectly inelastic collision:** The objects stick together after collision (maximum kinetic
 energy loss).
 
-:::info Momentum is **always** conserved in collisions (provided no external forces act). Kinetic
+:::info
+Momentum is **always** conserved in collisions (provided no external forces act). Kinetic
 energy is only conserved in perfectly elastic collisions.
 :::
 
@@ -801,7 +805,8 @@ Orbital period:
 
 $$T = \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r^3}{GM}}$$
 
-:::info Geostationary satellites orbit at the same rate as the Earth's rotation (period = 24 hours),
+:::info
+Geostationary satellites orbit at the same rate as the Earth's rotation (period = 24 hours),
 remaining above the same point on the equator. They orbit at approximately $42,300 \mathrm{ km}$
 from the centre of the Earth.
 :::
@@ -987,7 +992,8 @@ For a mass-spring system: $T = 2\pi\sqrt{\frac{m}{k}}$
 
 For a simple pendulum (small angle approximation): $T = 2\pi\sqrt{\frac{L}{g}}$
 
-:::info The period of SHM is independent of amplitude (isochronous). This is why pendulum clocks
+:::info
+The period of SHM is independent of amplitude (isochronous). This is why pendulum clocks
 keep consistent time even as the swing gradually decreases.
 :::
 
@@ -1449,7 +1455,8 @@ functions of displacement.*
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Mechanics**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-mechanics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Mechanics with other physics topics to test synthesis under exam conditions.
@@ -1458,7 +1465,8 @@ See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instr
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Forgetting to resolve forces into components:** When an object is on an inclined plane, the weight (mg) must be resolved into components parallel to and perpendicular to the surface. The component parallel to the slope is mg sin(theta) and perpendicular is mg cos(theta). Students often use the wrong trigonometric function or forget to resolve at all.
 

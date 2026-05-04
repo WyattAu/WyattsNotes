@@ -1141,7 +1141,8 @@ Court), are the direct institutional descendants of Nuremberg.
 | 9 August 1945         | Atomic bomb dropped on Nagasaki                        |
 | 2 September 1945      | Japan surrenders formally (V-J Day)                    |
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Presenting appeasement as solely Chamberlain's policy:** Appeasement was broadly supported in Britain in the late 1930s by politicians across parties, the public, and the media. Characterising it as Chamberlain's personal failing ignores the context of British economic weakness, the trauma of WW1, and genuine pacifist sentiment. IB essays require a more nuanced assessment.
 

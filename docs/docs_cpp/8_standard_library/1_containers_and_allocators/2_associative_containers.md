@@ -119,7 +119,8 @@ int main() {
 }
 ```
 
-:::tip Since C++17, `std::map::try_emplace` is preferred over `operator[]` or `insert` when you want
+:::tip
+Since C++17, `std::map::try_emplace` is preferred over `operator[]` or `insert` when you want
 to insert only if the key is absent, avoiding unnecessary construction of the value [N4950
 §22.4.4.4].
 :::
@@ -385,7 +386,8 @@ int main() {
 | Range queries         | Supported (lower_bound, upper_bound) | Not supported                     |
 | Iterator invalidation | Only on erase                        | On rehash                         |
 
-:::warning `std::unordered_map` lookup is $O(1)$ on average but $O(n)$ in the worst case (all keys
+:::warning
+`std::unordered_map` lookup is $O(1)$ on average but $O(n)$ in the worst case (all keys
 hash to the same bucket). If adversarial inputs are a concern, consider hash functions resistant to
 collision attacks, or use `std::map` for guaranteed $O(\log n)$ worst-case.
 :::

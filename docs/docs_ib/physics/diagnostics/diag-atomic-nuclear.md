@@ -81,41 +81,13 @@ The isotope $\text{U-235}$ has atomic mass $235.0439\,\text{u}$. It undergoes fi
 
 **Solution:**
 
-(a) Mass of reactants: $235.0439\,\text{u}$
-
-Mass of products: $140.9144 + 91.9262 + 3 \times 1.0087 = 140.9144 + 91.9262 + 3.0261 = 235.8667\,\text{u}$
-
-Mass defect: $\Delta m = 235.0439 - 235.8667 = -0.8228\,\text{u}$
-
-Wait -- the products are heavier? Let me re-check. The atomic masses include electrons.
-
-Actually, the reactant mass should be compared properly. $\text{U-235}$ has 92 electrons. $\text{Ba-141}$ has 56 electrons, $\text{Kr-92}$ has 36 electrons. Total: $56 + 36 = 92$ electrons. So electron counts balance.
-
-The mass defect is: $\Delta m = 235.0439 - (140.9144 + 91.9262 + 3 \times 1.0087) = 235.0439 - 235.8667 = -0.8228\,\text{u}$
-
-This gives a negative mass defect, which is wrong. Let me re-check the neutron mass.
-
-Neutron mass $= 1.0087\,\text{u}$. Actually, the standard value is $1.008665\,\text{u}$.
-
-$3 \times 1.0087 = 3.0261\,\text{u}$
-
-Products: $140.9144 + 91.9262 + 3.0261 = 235.8667\,\text{u}$
-
-Reactant: $235.0439\,\text{u}$
-
-$\Delta m = 235.0439 - 235.8667 = -0.8228\,\text{u}$
-
-This is incorrect; fission should release energy. The issue is that the given masses may not be consistent or I need to re-examine. Using more standard values:
-
-Products: $140.914 + 91.926 + 3(1.009) = 235.867\,\text{u}$
-
-Let me use the standard fission: $\text{U-235} + n \to \text{Ba-141} + \text{Kr-92} + 3n$
+(a) The fission reaction is $\text{U-235} + n \to \text{Ba-141} + \text{Kr-92} + 3n$. Note that the reactant side includes the incident neutron.
 
 Mass of U-235 + neutron: $235.0439 + 1.0087 = 236.0526\,\text{u}$
 
 Mass of products: $140.9144 + 91.9262 + 3(1.0087) = 235.8667\,\text{u}$
 
-$\Delta m = 236.0526 - 235.8667 = 0.1859\,\text{u}$
+Mass defect: $\Delta m = 236.0526 - 235.8667 = 0.1859\,\text{u}$
 
 Energy released: $E = 0.1859 \times 931.5 = 173.2\,\text{MeV}$
 
@@ -285,13 +257,11 @@ A wooden artefact is found to have a carbon-14 activity of $0.25\,\text{Bq}$ per
 
 **Solution:**
 
-(a) Activity ratio: $A/A_0 = 0.25/0.23 = 1.087$
+(a) Activity ratio: $A/A_0 = 0.25/0.23 = 1.087$.
 
-Wait -- this gives $A/A_0 \gt 1$, meaning the artefact appears to have **more** C-14 than living wood. This is impossible unless there is contamination or measurement error. Let me re-read the problem.
+This gives $A/A_0 \gt 1$, meaning the artefact appears to have **more** C-14 than living wood. This is physically impossible for a genuine ancient artefact, indicating either contamination or measurement error. The data is inconsistent with radioactive decay.
 
-Actually, if the activity is $0.25\,\text{Bq/g}$ and living wood has $0.23\,\text{Bq/g}$, this suggests the artefact is younger than the present or contaminated. This is likely a deliberate trap. The correct answer is that the data is inconsistent with radioactive decay and suggests measurement error or contamination.
-
-However, if we assume the numbers were swapped (a common exam scenario where $A = 0.23$ and $A_0 = 0.25$):
+If instead the numbers were swapped (a common exam scenario where $A = 0.23$ and $A_0 = 0.25$):
 
 $A/A_0 = 0.23/0.25 = 0.92$
 

@@ -83,7 +83,8 @@ $$n = \frac{V}{V_m}$$
 
 Where $V_m$ = 22.4 dm$^3$/mol (STP) or 24.0 dm$^3$/mol (RTP).
 
-:::warning Pay close attention to whether the question specifies STP or RTP. Using the wrong molar
+:::warning
+Pay close attention to whether the question specifies STP or RTP. Using the wrong molar
 volume is one of the most common errors in DSE stoichiometry questions.
 :::
 
@@ -400,7 +401,8 @@ $$PV = nRT$$
 | R      | Gas constant | 8.314 J/(mol K) or 0.0821 atm dm$^3$/(mol K) |
 | T      | Temperature  | K                                            |
 
-:::info At STP ($0^\circ\mathrm{C}$ = 273 K, 1 atm), using $PV = nRT$:
+:::info
+At STP ($0^\circ\mathrm{C}$ = 273 K, 1 atm), using $PV = nRT$:
 
 $V_m = \dfrac{nRT}{P} = \dfrac{1 \times 0.0821 \times 273}{1} = 22.4 \mathrm{ dm}^3$
 

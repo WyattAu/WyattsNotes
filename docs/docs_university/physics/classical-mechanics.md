@@ -181,7 +181,8 @@ and elegant framework based on energy principles.
 The key insight: instead of tracking forces, track the **energy** of the system. The trajectory is the
 one that **minimises** (or more precisely, makes stationary) the **action**.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Newton's laws in curvilinear coordinates introduce fictitious forces (centrifugal, Coriolis) that
 are artifacts of the coordinate choice. The Lagrangian formulation automatically accounts for these
 through the coordinate transformation of the kinetic energy, without any ad-hoc force terms.

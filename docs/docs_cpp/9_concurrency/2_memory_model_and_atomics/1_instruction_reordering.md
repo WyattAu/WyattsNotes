@@ -180,7 +180,8 @@ prior access:
 
 $$\mathrm{control dependency: } \mathrm{if } (x) \{ y = 1; \}$$
 
-:::warning Control dependencies do **not** prevent reordering on all architectures. On x86, control
+:::warning
+Control dependencies do **not** prevent reordering on all architectures. On x86, control
 dependencies provide ordering, but on ARM and POWER, the processor may speculatively execute the
 dependent load before the controlling branch is resolved. Always use explicit memory ordering
 (acquire/release) rather than relying on control dependencies.

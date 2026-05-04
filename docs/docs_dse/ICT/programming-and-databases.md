@@ -30,7 +30,8 @@ PI = 3.14159
 MAX_STUDENTS = 40
 ```
 
-:::info In DSE ICT, constants are typically written in UPPER_CASE to distinguish them from
+:::info
+In DSE ICT, constants are typically written in UPPER_CASE to distinguish them from
 variables. Using constants improves code readability and reduces errors.
 :::
 
@@ -161,7 +162,8 @@ while True:
     print("Try again")
 ```
 
-:::warning Be careful with WHILE loops to avoid infinite loops. Always ensure the loop condition
+:::warning
+Be careful with WHILE loops to avoid infinite loops. Always ensure the loop condition
 will eventually become False. A common mistake is forgetting to update the loop variable inside the
 loop body.
 :::
@@ -263,7 +265,8 @@ add_to_total(20)
 print("Total:", total)  # Output: Total: 30
 ```
 
-:::tip Avoid using global variables where possible. They make code harder to debug and maintain.
+:::tip
+Avoid using global variables where possible. They make code harder to debug and maintain.
 Instead, pass values as parameters and return results.
 :::
 
@@ -504,7 +507,8 @@ with open("data.txt", "r") as file:
     content = file.read()
 ```
 
-:::info File modes:
+:::info
+File modes:
 
 - `"r"`: read (default)
 - `"w"`: write (overwrites existing content)
@@ -593,7 +597,8 @@ Normalisation is the process of organising data to minimise redundancy and depen
 - In 2NF
 - No transitive dependencies (non-key attributes do not depend on other non-key attributes)
 
-:::tip A simple check for 3NF: every non-key field must depend on the key, the whole key, and
+:::tip
+A simple check for 3NF: every non-key field must depend on the key, the whole key, and
 nothing but the key.
 :::
 
@@ -684,7 +689,8 @@ DELETE FROM Student
 WHERE Score < 50;
 ```
 
-:::warning Be very careful with UPDATE and DELETE without a WHERE clause. They will modify or delete
+:::warning
+Be very careful with UPDATE and DELETE without a WHERE clause. They will modify or delete
 ALL records in the table. Always double-check your WHERE clause before executing.
 :::
 
@@ -932,7 +938,8 @@ password twice to confirm it was typed correctly).
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing SQL WHERE and HAVING clauses:** WHERE filters individual ROWS before grouping. HAVING filters GROUPS after a GROUP BY clause. Use WHERE for conditions on individual records (e.g., price &gt; 100) and HAVING for conditions on aggregate values (e.g., COUNT(*) &gt; 5). Applying aggregate functions in a WHERE clause will cause an error.
 

@@ -1472,7 +1472,8 @@ in cosmology. Possible resolutions include:
 2. **New physics** prior to recombination (e.g., additional radiation, early dark energy).
 3. **Extensions to $\Lambda$CDM** (e.g., time-varying dark energy equation of state $w(z)$).
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The Hubble constant $H_0$ measured from the CMB ($\sim 67.4$ km/s/Mpc, Planck) disagrees with
 local distance-ladder measurements ($\sim 73.0$ km/s/Mpc, SH0ES). This "Hubble tension" is one of
 the most significant open problems in cosmology. When using $H_0$ in calculations, be aware of

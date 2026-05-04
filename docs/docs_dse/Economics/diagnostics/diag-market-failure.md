@@ -164,8 +164,7 @@ $Q = \frac{90 \pm \sqrt{8100 - 1600}}{2} = \frac{90 \pm \sqrt{6500}}{2} = \frac{
 $Q = 85.31$ or $Q = 4.69$. Taking the larger: $Q = 85.31$, $P = 50 - 0.5(85.31) = \$7.35$. Profit
 $\approx 0$.
 
-**Price cap**: If set at, say, $\$10$: $Q = 80$. The firm becomes a price taker and produces where
-$P = MC$: $Q = 90$. Wait, at $P = 10$: $Q_d = 80$. The firm maximises profit subject to $P \le 10$,
+**Price cap**: If set at, say, $\$10$: $Q_d = 80$. The firm maximises profit subject to $P \le 10$,
 producing $Q = 80$.
 
 (c) Marginal cost pricing eliminates DWL (achieves allocative efficiency). Average cost pricing

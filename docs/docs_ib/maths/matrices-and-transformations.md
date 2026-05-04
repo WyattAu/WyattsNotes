@@ -1047,7 +1047,8 @@ $\lambda_2^k \to 0$ and the system converges to the eigenvector for $\lambda_1 =
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing matrix multiplication order:** Matrix multiplication is NOT commutative: AB is generally not equal to BA. When applying a transformation matrix to a point, the ORDER matters. For combined transformations, the matrix closest to the point is applied FIRST: if transformation B follows transformation A, the combined matrix is BA (not AB).
 

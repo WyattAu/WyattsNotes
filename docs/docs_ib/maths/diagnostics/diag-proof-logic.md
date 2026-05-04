@@ -108,13 +108,11 @@ Prove by mathematical induction that $3^{2n} + 2^{n+2}$ is divisible by $7$ for 
 
 **Solution:**
 
-**Base case ($n = 1$):** $3^2 + 2^3 = 9 + 8 = 17$. But $17$ is not divisible by $7$. Let me check: $3^{2(1)} + 2^{1+2} = 9 + 8 = 17$. This is not divisible by $7$.
+**Base case ($n = 1$):** $3^{2(1)} + 2^{1+2} = 9 + 8 = 17$. This is not divisible by $7$. The stated formula $3^{2n} + 2^{n+2}$ does not produce a multiple of $7$ for $n = 1$.
 
-Let me recheck the problem. $3^{2n} + 2^{n+2}$: for $n = 1$, $9 + 8 = 17$. Not divisible by $7$.
+The correct statement should be $3^{2n+1} + 2^{n+2}$. Verification: $3^{2(1)+1} + 2^{1+2} = 27 + 8 = 35 = 7 \times 5$.
 
-The correct problem should be $3^{2n+1} + 2^{n+2}$, or we need to adjust. Let me verify: $3^{2(1)+1} + 2^{1+2} = 27 + 8 = 35 = 7 \times 5$. Yes.
-
-Let me prove the corrected statement: $3^{2n+1} + 2^{n+2}$ is divisible by $7$.
+**Corrected problem:** Prove that $3^{2n+1} + 2^{n+2}$ is divisible by $7$ for all $n \in \mathbb{N}$.
 
 **Base case ($n = 0$):** $3^1 + 2^2 = 3 + 4 = 7$, divisible by $7$. True.
 

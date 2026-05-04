@@ -33,7 +33,8 @@ Each function that may participate in exception handling has two tables embedded
 | **LSDA** (Language-Specific Data Area) | Describes which PC ranges map to which `try`/`catch` blocks.                                                                            |
 | **Unwind table**                       | Lists every call site in the function so the unwinder can determine whether the function has a cleanup (destructor call) at each point. |
 
-:::info On platforms using the Itanium ABI, **no runtime cost** is incurred for `try` blocks when no
+:::info
+On platforms using the Itanium ABI, **no runtime cost** is incurred for `try` blocks when no
 exception is thrown. The tables are consulted only during unwinding.
 :::
 
@@ -244,7 +245,8 @@ runtime overhead compared to equivalent code without exception handling.
 
 $\square$
 
-:::tip If you compile with `-fno-exceptions` (GCC/Clang), `throw` and `try` become compilation
+:::tip
+If you compile with `-fno-exceptions` (GCC/Clang), `throw` and `try` become compilation
 errors. This confirms that exception-neutral code has zero overhead in the normal path.
 :::
 
@@ -394,7 +396,8 @@ int main() {
 //   caught NetworkError: connection refused
 ```
 
-:::warning Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
+:::warning
+Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
 static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception.
 :::
 

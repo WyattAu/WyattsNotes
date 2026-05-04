@@ -66,7 +66,8 @@ $$
 \end{aligned}
 $$
 
-:::warning A common error is to "rationalise" by splitting the fraction:
+:::warning
+A common error is to "rationalise" by splitting the fraction:
 $\frac{a + b\sqrt{c}}{d} \neq \frac{a}{d} + b\sqrt{\frac{c}{d}}$ in general. Always distribute the
 denominator correctly.
 :::
@@ -314,7 +315,8 @@ $$
 
 $$\frac{ab + ac}{ad + ae} = \frac{a(b + c)}{a(d + e)} = \frac{b + c}{d + e}$$
 
-:::warning You can only cancel _factors_, not terms. $\frac{x + 3}{x}$ is NOT equal to $3$. The $x$
+:::warning
+You can only cancel _factors_, not terms. $\frac{x + 3}{x}$ is NOT equal to $3$. The $x$
 in the denominator is a factor of the whole expression, but the $x$ in the numerator is only one
 term.
 :::
@@ -653,7 +655,8 @@ $k = -2$: gives $x^2 - 2x + 1 = (x - 1)^2$ ✓
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Algebraic Expressions**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-algebraic-expressions) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Algebraic Expressions with other pure mathematics topics to test synthesis under exam conditions.

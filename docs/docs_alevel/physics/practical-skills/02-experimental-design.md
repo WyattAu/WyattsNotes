@@ -13,7 +13,9 @@ slug: experimental-design
 
 ## Experimental Design
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
+:::
 
 ## 1. Key Principles of Experimental Design
 
@@ -56,7 +58,8 @@ independent variable.
 | Control     | Immersion depth    | Thermistor fully submerged at fixed depth |
 | Control     | Heating rate       | Heat slowly, allow thermal equilibrium    |
 
-:::warning Common Pitfall Students often confuse the independent and dependent variables. A reliable
+:::warning
+Common Pitfall Students often confuse the independent and dependent variables. A reliable
 mnemonic: "I change the **I**ndependent variable, and I measure the **D**ependent variable."
 :::
 
@@ -77,7 +80,8 @@ to the independent variable or the uncontrolled factor.
 4. **Monitoring and recording** — if a variable cannot be perfectly controlled, at least measure it
    so its effect can be assessed
 
-:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
+:::info
+Board Coverage AQA Paper 3 Section A | Edexcel CP6 (Core Practical 6) | OCR (A) PAG 1 | CIE
 Paper 5 Q1 (Planning)
 :::
 
@@ -164,7 +168,9 @@ Validity has two aspects that examiners distinguish:
    conditions? For example, results obtained with a 1 mm copper wire may not apply to a 5 mm
    aluminium wire.
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
+:::
 
 - **AQA** emphasises the distinction between validity and reliability in 6-mark practical questions.
 - **Edexcel** Core Practicals require students to comment on the validity of their conclusions.
@@ -196,7 +202,8 @@ include:
 
 $$\boxed{\mathrm{True value} = \mathrm{measured value} \pm \mathrm{uncertainty}}$$
 
-:::warning Common Pitfall Do not confuse these three terms. An experiment can be reliable
+:::warning
+Common Pitfall Do not confuse these three terms. An experiment can be reliable
 (consistent) but invalid (measuring the wrong thing), or valid but inaccurate (systematic error).
 :::
 
@@ -258,7 +265,9 @@ is critical:
 - **Number of repeats:** At least 3 repeats at each value. If time allows, more repeats improve the
   reliability of the mean.
 
-:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
+:::
 
 - **AQA** often provides a method and asks students to identify improvements — focus on range,
   intervals, and repeats.
@@ -358,7 +367,9 @@ When asked to write a risk assessment, structure your answer as follows:
 3. **Describe the control measure** — "Use a low-voltage (e.g., 12 V) power supply instead of mains,
    and ensure all connections are insulated."
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5
+:::
 
 - **AQA** requires a risk assessment as part of the 12 required practicals. Risk assessments are
   assessed in written papers.
@@ -371,7 +382,8 @@ When asked to write a risk assessment, structure your answer as follows:
 
 :::
 
-:::warning Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
+:::warning
+Common Pitfall Do not list trivial risks (e.g., "tripping over a bag") when more serious
 hazards exist. Examiners award marks for identifying the _most significant_ hazards and providing
 specific, practical control measures. "Be careful" is never an acceptable control measure.
 :::
@@ -451,7 +463,9 @@ When a graph is plotted, check:
 - Plot $\lambda$ vs $1/f$; gradient $= v$ (wave speed)
 - Largest uncertainty: measuring wavelength from a frozen ripple pattern
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5 :::
+:::info
+Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5
+:::
 
 - **AQA** Required Practical 5 uses a falling object to determine `g`; Required Practical 8 uses a
   potentiometer or voltmeter/ammeter method for internal resistance.
@@ -464,13 +478,15 @@ When a graph is plotted, check:
 
 :::
 
-:::tip Exam Technique When asked "how could you improve this experiment?", always be specific.
+:::tip
+Exam Technique When asked "how could you improve this experiment?", always be specific.
 Instead of "use a more accurate instrument", say "use a micrometer instead of a ruler to measure the
 wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm."
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Stating "repeat and average" without explaining why:** Simply saying you will repeat readings is insufficient. You must explain that repeating and averaging REDUCES THE EFFECT OF RANDOM ERRORS. It does NOT reduce systematic errors (which affect all readings equally). Distinguish between these two types of error in your answer.
 

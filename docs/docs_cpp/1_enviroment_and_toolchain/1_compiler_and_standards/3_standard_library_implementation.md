@@ -115,7 +115,8 @@ namespace std {
 #endif
 ```
 
-:::danger Linker Errors If library `A.a` is compiled with `_GLIBCXX_USE_CXX11_ABI=0` and application
+:::danger
+Linker Errors If library `A.a` is compiled with `_GLIBCXX_USE_CXX11_ABI=0` and application
 `B.exe` is compiled with `_GLIBCXX_USE_CXX11_ABI=1`, the linker will fail with "Undefined Reference
 to `std::string`" because the application is looking for `std::__cxx11::string`, but the library
 provides `std::string`.

@@ -478,7 +478,8 @@ is longer.
 | Critical value  | $z_{1-\alpha}$         | $z_{1-\alpha/2}$        |
 | p-value         | One tail area          | Two tail areas combined |
 
-:::warning Choose one-tailed or two-tailed before collecting data. Never decide after seeing the
+:::warning
+Choose one-tailed or two-tailed before collecting data. Never decide after seeing the
 results.
 :::
 
@@ -729,7 +730,8 @@ $$
 | Poisson      | Events occur at constant rate, independently       | $\lambda$       |
 | Normal       | Continuous data, symmetric bell shape              | $\mu, \sigma^2$ |
 
-:::tip If a question mentions "per unit time" or "per unit area" and events are rare, think Poisson.
+:::tip
+If a question mentions "per unit time" or "per unit area" and events are rare, think Poisson.
 If it mentions "out of $n$ trials," think Binomial.
 :::
 

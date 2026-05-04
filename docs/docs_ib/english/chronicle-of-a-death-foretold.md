@@ -312,7 +312,8 @@ culture.
 | "The bishop blessed him from the boat"                  | Religious authority passes by, offering symbolic but useless blessing                |
 | "He came with a suitcase full of letters... unopened"   | Bayardo's romantic gesture is hollow — appearance without substance                  |
 
-:::tip Exam Tip When writing about Chronicle, always address the **form** (novella, non-linear,
+:::tip
+Exam Tip When writing about Chronicle, always address the **form** (novella, non-linear,
 journalistic) as well as the content. The way the story is told is as important as what happens.
 Consider how Marquez uses the reader's knowledge of the ending to create dramatic irony throughout.
 :::
@@ -775,13 +776,15 @@ expectations."**
 
 </details>
 
-:::tip When practising these questions, write under timed conditions. For SL, aim for a complete
+:::tip
+When practising these questions, write under timed conditions. For SL, aim for a complete
 essay in 55 minutes. For HL, aim for 100 minutes to allow for integration of a third text. See
 [ib-english-assessment-and-techniques](./ib-english-assessment-and-techniques) for detailed time
 management strategies.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Reducing characters to stereotypes:** Santiago Nasar is not simply an innocent victim, and the Vicario brothers are not simply brutal murderers. Each character has motivations that reflect broader social values -- honour, machismo, religious duty, class, and gender roles. Essays that present characters as one-dimensional score poorly in IB assessment.
 

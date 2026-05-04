@@ -14,7 +14,9 @@ sidebar_position: 9
 
 ## Properties of Materials
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1
+:::
 
 The mechanical properties of materials — how they deform, stretch, compress, and break — are central
 to engineering and physics. This topic sits within the "Mechanics & Materials" strand on every A
@@ -119,7 +121,8 @@ under tensile loading. It has units of Pa (same as stress, since strain is dimen
 | Steel        | 200                   | Metal           |
 | Diamond      | 1200                  | Ceramic/Crystal |
 
-:::warning Common Pitfall A high Young's modulus means the material is **stiff**, not necessarily
+:::warning
+Common Pitfall A high Young's modulus means the material is **stiff**, not necessarily
 **strong**. Glass is stiffer than rubber ($E \approx 70$ GPa vs $0.01$ GPa) but rubber is
 **tougher** (absorbs more energy before breaking) because it can undergo much larger strains.
 Stiffness and strength are different properties.

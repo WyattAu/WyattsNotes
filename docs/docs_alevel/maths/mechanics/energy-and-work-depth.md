@@ -224,7 +224,8 @@ $$500g(30) = 500gh + 200d$$
 Without more information about the track profile, we cannot determine the exact stopping point.
 This illustrates the importance of knowing the track geometry.
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 The work-energy principle gives the change in kinetic energy, not the velocity directly. Remember
 to take the square root to find speed, and always check that the result is physically meaningful
 (i.e., the quantity under the square root must be non-negative).

@@ -66,7 +66,8 @@ $$\pi = \Delta M - \Delta V + \Delta Y \approx \Delta M - \Delta Y$$
 | Self-correction         | Slow or non-existent                     | Automatic, though may take time                              |
 | Government intervention | Essential for stability                  | Minimise — rules-based policy                                |
 
-:::info Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
+:::info
+Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
 (9708) Paper 4 often asks students to evaluate the effectiveness of demand-side policies, requiring
 them to contrast Keynesian and monetarist perspectives. Edexcel requires students to discuss the
 "battle of the economists" in the context of policy debates.
@@ -450,7 +451,8 @@ governments a "blank cheque" risks fiscal profligacy and loss of market confiden
 apply to countries that borrow in foreign currency (emerging markets — most developing countries).
 (5) Assumes away the crowding out channel and Ricardian equivalence too casually.
 
-:::warning Common Pitfall MMT is often caricatured as "deficits don't matter." This is a
+:::warning
+Common Pitfall MMT is often caricatured as "deficits don't matter." This is a
 misrepresentation. MMT argues that deficits should be used to achieve real objectives (full
 employment) and that the only constraint is inflation. It does not claim that unlimited deficits are
 harmless. However, the practical difficulty of knowing when inflation will emerge makes MMT's policy
@@ -524,7 +526,8 @@ dollar, partially crowding out the fiscal stimulus.
 amplified. When they pull in opposite directions, they partially offset each other, and the net
 effect depends on the relative strength of each.
 
-:::info Board-Specific Note AQA Paper 2 (Section B) often requires students to evaluate the
+:::info
+Board-Specific Note AQA Paper 2 (Section B) often requires students to evaluate the
 effectiveness of policy mixes. Edexcel Paper 3 expects discussion of policy conflicts and
 trade-offs. OCR may ask about the role of the Treasury and `` `{BoE}` `` in coordinating policy. CIE
 Paper 4 frequently asks students to assess whether government intervention can achieve multiple

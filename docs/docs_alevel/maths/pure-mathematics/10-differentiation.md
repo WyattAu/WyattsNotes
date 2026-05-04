@@ -20,7 +20,8 @@ slug: differentiation
 | OCR (A)    | Paper 1, 2 | Includes connected rates in P2                                   |
 | CIE (9709) | P1, P2, P3 | Basic differentiation in P1; product/quotient/chain in P2/P3     |
 
-:::info The formula booklet lists derivatives of standard functions. You must know how to apply the
+:::info
+The formula booklet lists derivatives of standard functions. You must know how to apply the
 product, quotient, and chain rules, and how to find stationary points.
 :::
 
@@ -124,7 +125,8 @@ By the chain rule, $\dfrac{d}{dx}(v^{-1}) = -v^{-2}\dfrac{dv}{dx}$:
 
 $$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2} \quad \blacksquare$$
 
-:::warning The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
+:::warning
+The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
 the wrong way around is one of the most common errors in A Level mathematics.
 :::
 

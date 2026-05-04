@@ -13,7 +13,9 @@ slug: dc-circuits
 
 ## DC Circuits
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
 
@@ -56,7 +58,8 @@ $$\frac{W_{\mathrm{gained}}}{Q} = \frac{W_{\mathrm{lost}}}{Q} \implies \sum \mat
 
 $\square$
 
-:::tip Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
+:::tip
+Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
 stick to it. E.m.f.s are positive if they drive current in your chosen direction; p.d.s are positive
 if current flows through the resistor in your chosen direction.
 :::
@@ -135,7 +138,8 @@ light intensity:
 
 $$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac{R_{\mathrm{sensor}}}{R_{\mathrm{fixed}} + R_{\mathrm{sensor}}}$$
 
-:::warning Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
+:::warning
+Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
 changes the effective resistance. The simple divider formula no longer applies — you must
 recalculate the parallel combination of $R_2$ and the load.
 :::
@@ -322,7 +326,8 @@ current $= V_{\mathrm{Th}}/R_{\mathrm{Th}}$. For the Norton equivalent: short-ci
 $= I_N$, open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}}$
 and $R_N = R_{\mathrm{Th}}$. $\square$
 
-:::tip Exam Technique Source transformations are useful for simplifying circuits step by step.
+:::tip
+Exam Technique Source transformations are useful for simplifying circuits step by step.
 Convert a voltage source with series resistance to a Norton equivalent, combine parallel current
 sources, then convert back.
 :::

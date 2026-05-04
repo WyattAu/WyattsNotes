@@ -474,7 +474,8 @@ $$\Delta\phi = \frac{2\pi}{\lambda}\,\Delta x$$
 | $0, \lambda, 2\lambda, \ldots$ | $0, 2\pi, 4\pi, \ldots$ | Constructive |
 | $\lambda/2, 3\lambda/2, \ldots$ | $\pi, 3\pi, \ldots$ | Destructive |
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 
 In double-slit calculations, do not confuse the slit separation $d$ with the slit width $a$. The
 fringe spacing is determined by $d$; the envelope of the diffraction pattern is determined by $a$.

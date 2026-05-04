@@ -596,7 +596,8 @@ void philosopher(int i) {
 }
 ```
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Always use a `while` loop (not `if`) when checking conditions with condition variables. Spurious
 wakeups can cause `pthread_cond_wait()` to return without the condition being signalled. The loop
 re-checks the condition after every wakeup.
@@ -1089,7 +1090,8 @@ Total page faults: **15**. Clock performs worse than LRU here but requires only 
 and no global ordering of references.
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Belady's anomaly applies to FIFO but **not** to LRU or Optimal. Adding more memory does not always
 reduce page faults for non-stack algorithms.
 :::

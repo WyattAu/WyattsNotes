@@ -836,7 +836,8 @@ single, objective truth.
 
 ## Exam Preparation: Key Quotations and Discussion Points
 
-:::info The following passages are recommended for close study. In the IB English examination, the
+:::info
+The following passages are recommended for close study. In the IB English examination, the
 ability to analyse specific textual detail is essential.
 :::
 
@@ -883,14 +884,16 @@ carrying all the letters unopened suggests that the act of writing, rather than 
 is the true vehicle of meaning: the letters are a testament to desire, not a vehicle for
 information.
 
-:::tip When writing an IB essay on this novel, consider structuring your argument around a specific
+:::tip
+When writing an IB essay on this novel, consider structuring your argument around a specific
 literary feature (narrative structure, imagery, irony) and tracing its operation across multiple
 passages. Avoid plot summary; instead, analyse specific textual details and explain how they
 contribute to the novel's overall meaning.
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Treating the narrative structure as straightforward chronology:** The novel opens with the announcement of Santiago Nasar's death and then works backward and forward in time. Students often write essays that describe events in chronological order, missing Marquez's deliberate non-linear structure. The fragmented timeline is essential to the novel's themes of collective guilt and unreliable memory.
 

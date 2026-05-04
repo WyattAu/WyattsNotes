@@ -183,7 +183,8 @@ int main() {
 }
 ```
 
-:::info This reference counting example uses `fetch_sub` with `memory_order_acq_rel` for the release
+:::info
+This reference counting example uses `fetch_sub` with `memory_order_acq_rel` for the release
 operation. The acquire semantics ensure that all accesses to the object (sequenced-before the
 release) are visible to the thread that performs the destruction. The release semantics ensure that
 the destruction itself is visible to other threads. The `fetch_sub` return value is checked against
@@ -199,7 +200,8 @@ the destruction itself is visible to other threads. The `fetch_sub` return value
 | **Remove from list**       | Load head, read next, CAS head to next | Lock-free stack pop            |
 | **Update with validation** | Load, validate invariants, CAS         | Lock-free queue (ABA-safe)     |
 
-:::tip When writing CAS loops, always update `desired` based on the new `expected` value after a
+:::tip
+When writing CAS loops, always update `desired` based on the new `expected` value after a
 failed CAS. The `compare_exchange_weak` function automatically updates `expected` to the current
 value on failure, so you can use it directly in the next iteration's computation.
 :::

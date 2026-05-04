@@ -99,9 +99,7 @@ Set $f'(c) = \frac{1}{3}$:
 
 $$\frac{1}{3\sqrt[3]{c^2}} = \frac{1}{3} \implies \sqrt[3]{c^2} = 1 \implies c^2 = 1 \implies c = \pm 1$$
 
-Since we need $c \in (-1, 8)$: $c = -1$ is not in the open interval, and $c = 1$ is. So $c = 1$.
-
-Wait -- $c = -1$ is an endpoint, not in $(-1, 8)$. So the only solution is $c = 1$.
+Since we need $c \in (-1, 8)$: $c = -1$ is an endpoint, not in $(-1, 8)$. So the only solution is $c = 1$.
 
 (c) $f'(x) = \dfrac{1}{3\sqrt[3]{x^2}}$ is undefined at $x = 0$ (the denominator is zero). So $f$ is **not differentiable** at $x = 0$.
 

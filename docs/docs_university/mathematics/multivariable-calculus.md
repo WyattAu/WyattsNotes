@@ -1198,7 +1198,8 @@ $(1/3, 1/3, 1/3)$. $\blacksquare$
 
 ### 4.7 Common Pitfalls
 
-:::caution Common Pitfalls
+:::caution
+Common Pitfalls
 - **Lagrange multipliers find candidates only.** The method produces candidates for constrained extrema
   but does not guarantee they are extrema. Always evaluate $f$ at all candidates and use additional
   reasoning (e.g., compactness of the constraint set via the extreme value theorem) to determine which

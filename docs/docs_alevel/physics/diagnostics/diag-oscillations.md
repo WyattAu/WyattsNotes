@@ -52,9 +52,7 @@ $$0.15\cos(4\pi t + \pi/3) = \pm\frac{0.15}{\sqrt{2}} = \pm 0.1061$$
 
 $$\cos(4\pi t + \pi/3) = \pm\frac{1}{\sqrt{2}}$$
 
-For the positive case: $4\pi t + \pi/3 = \pi/4$ (first solution going forward in time from the negative case, or we can find the first positive $t$):
-
-Actually, $\cos\theta = 1/\sqrt{2}$ when $\theta = \pm\pi/4 + 2n\pi$.
+For the positive case ($\cos\theta = 1/\sqrt{2}$): $\theta = \pm\pi/4 + 2n\pi$.
 
 $$4\pi t + \pi/3 = -\pi/4 \Rightarrow 4\pi t = -\pi/4 - \pi/3 = -7\pi/12 \Rightarrow t = -7\pi/(48\pi) = -0.146\,\text{s}$$ (negative, reject)
 

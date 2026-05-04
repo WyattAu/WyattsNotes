@@ -85,27 +85,11 @@ Quantity supplied at $\pounds 8$: $8 = 2 + 0.5Q_s$, $Q_s = 12$.
 
 Since $Q_s \lt Q_d$, the binding price ceiling creates a shortage of $24 - 12 = 12$ units. The quantity traded is $Q = 12$.
 
-New CS $= \frac{1}{2} \times 12 \times (20 - 8) - \frac{1}{2} \times 12 \times (8 - 5) = 72 - 18 = \pounds 54$.
-
-Wait -- let me recalculate. At the price ceiling, consumers who buy pay $\pounds 8$:
-
-New CS $= \frac{1}{2} \times (20 - 8) \times 12 + (20 - 8) \times 0 = \frac{1}{2} \times 12 \times 12 = \pounds 72$.
-
-Actually: CS $=$ area below demand and above price, from $Q = 0$ to $Q = 12$:
-
-$\text{CS}_{\text{new}} = \frac{1}{2}(20 - 8)(12) + (12)(0) = \frac{1}{2} \times 12 \times 12 = \pounds 72$.
-
-Wait, this needs the area of the triangle plus rectangle. The demand price at $Q = 12$ is $P = 20 - 6 = 14$. So CS is a trapezoid:
-
-$\text{CS}_{\text{new}} = \frac{1}{2}(14 - 8 + 20 - 8) \times 12 = \frac{1}{2}(6 + 12) \times 12 = \frac{1}{2} \times 18 \times 12 = \pounds 108$.
-
-Hmm, that cannot be right either. Let me recalculate properly.
-
-$\text{CS}_{\text{new}}$ is the area below the demand curve and above $\pounds 8$, from $Q = 0$ to $Q = 12$.
+New CS: area below the demand curve and above $\pounds 8$, from $Q = 0$ to $Q = 12$.
 
 Demand price at $Q = 0$: $\pounds 20$. Demand price at $Q = 12$: $20 - 6 = \pounds 14$.
 
-$\text{CS}_{\text{new}} = \frac{1}{2}(20 + 14 - 2 \times 8) \times 12 = \frac{1}{2}(34 - 16) \times 12 = \frac{1}{2} \times 18 \times 12 = \pounds 108$.
+$\text{CS}_{\text{new}}$ is a trapezoid: $\frac{1}{2}(20 + 14 - 2 \times 8) \times 12 = \frac{1}{2}(34 - 16) \times 12 = \frac{1}{2} \times 18 \times 12 = \pounds 108$.
 
 New PS: area above supply and below $\pounds 8$, from $Q = 0$ to $Q = 12$:
 
@@ -134,7 +118,7 @@ Post-tax: supply shifts up by $\pounds 4$. New supply: $P = 14 + Q$.
 
 $50 - Q = 14 + Q$, so $36 = 2Q$, $Q_t = 18$, $P_{\text{buyer}} = 50 - 18 = \pounds 32$.
 
-$P_{\text{seller}} = 14 + 18 = \pounds 32$. Wait, $P_{\text{seller}} = P_{\text{buyer}} - \text{tax} = 32 - 4 = \pounds 28$.
+$P_{\text{seller}} = P_{\text{buyer}} - \text{tax} = 32 - 4 = \pounds 28$.
 
 (b) Tax incidence:
 - Consumers pay $\pounds 32$ instead of $\pounds 30$: burden $= \pounds 2$ out of $\pounds 4$ (50%).
@@ -190,7 +174,7 @@ At the price floor of $\pounds 40$:
 Quantity demanded: $40 = 60 - Q_d$, $Q_d = 20$.
 Quantity supplied (with subsidy): fishermen receive $40 + 5 = \pounds 45$ per unit. So $45 = 10 + Q_s$, $Q_s = 35$.
 
-Wait -- the subsidy means the effective price to the fisherman is $\pounds 45$, but the consumer pays $\pounds 40$. The quantity supplied at the effective price $\pounds 45$: $45 = 10 + Q_s$, $Q_s = 35$.
+The subsidy means the effective price received by fishermen is $\pounds 40 + \pounds 5 = \pounds 45$ per unit. The quantity supplied at this effective price: $45 = 10 + Q_s$, $Q_s = 35$.
 
 Since $Q_s = 35 \gt Q_d = 20$, there is excess supply (surplus) of $35 - 20 = 15$ units. The quantity traded is determined by demand: $Q = 20$.
 
@@ -202,9 +186,9 @@ $\text{CS} = \frac{1}{2}(60 - 40)(20) = \frac{1}{2}(20)(20) = \pounds 200$.
 
 Producer surplus: producers receive $\pounds 45$ per unit. The supply price at $Q = 0$ is $\pounds 10$, at $Q = 20$ is $10 + 20 = \pounds 30$.
 
-$\text{PS} = \frac{1}{2}(45 - 10)(20) + (45 - 30)(20) = \frac{1}{2}(35)(20) + (15)(20) = 350 + 300 = \pounds 650$.
+$\text{PS}$ is the area above the supply curve and below the effective price received ($\pounds 45$), from $Q = 0$ to $Q = 20$:
 
-Hmm, let me recalculate. PS is the area above the original supply curve and below the effective price received ($\pounds 45$), from $Q = 0$ to $Q = 20$:
+Supply price at $Q = 0$: $\pounds 10$. Supply price at $Q = 20$: $10 + 20 = \pounds 30$.
 
 $\text{PS} = \frac{1}{2}(45 - 10 + 45 - 30)(20) = \frac{1}{2}(35 + 15)(20) = \frac{1}{2}(50)(20) = \pounds 500$.
 

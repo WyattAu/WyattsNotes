@@ -32,6 +32,7 @@ const INDICES: IndexConfig[] = [
   { name: 'A-Level', indexName: 'wyattsnotes_alevel', color: '#81C784' },
   { name: 'Qualifications', indexName: 'wyattsnotes_qualifications', color: '#FFB74D' },
   { name: 'Programming', indexName: 'wyattsnotes_programming', color: '#CE93D8' },
+  { name: 'University', indexName: 'wyattsnotes_university', color: '#7986CB' },
 ];
 
 const INDEX_COLOR_MAP = Object.fromEntries(INDICES.map((i) => [i.indexName, i.color]));

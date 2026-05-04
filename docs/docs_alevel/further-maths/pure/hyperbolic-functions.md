@@ -296,7 +296,8 @@ $u = \operatorname{arsinh}\!\left(\dfrac{x}{2}\right)$.
 
 $$= 2\operatorname{arsinh}\!\left(\frac{x}{2}\right) + \frac{x\sqrt{x^2 + 4}}{2} + C$$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 The substitution $x = a\sinh u$ is a powerful technique for integrals involving $\sqrt{x^2 + a^2}$.
 Similarly, $x = a\cosh u$ handles $\sqrt{x^2 - a^2}$ and $x = a\tanh u$ handles expressions with
 $a^2 - x^2$. The choice of substitution mirrors the trigonometric substitutions but is often

@@ -32,7 +32,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 | OCR (A) | Paper 1 | Maclaurin series; standard series; applications                                        |
 | CIE     | P2      | Maclaurin series; expansion of compound functions; range of validity                   |
 
-:::info All boards require the standard Maclaurin series. Edexcel and CIE additionally require
+:::info
+All boards require the standard Maclaurin series. Edexcel and CIE additionally require
 Taylor series about $x = a$. The formula booklet lists the standard Maclaurin series — you must be
 able to derive them and apply them.
 :::
@@ -333,7 +334,8 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
 
 ## 6. Key Results and Pitfalls
 
-:::warning **Common errors:**
+:::warning
+**Common errors:**
 
 1. **Wrong coefficients.** The Maclaurin coefficient of $x^n$ is $\dfrac{f^{(n)}(0)}{n!}$, not
    $f^{(n)}(0)$. Always divide by the factorial.
@@ -349,7 +351,8 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
    $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$).
 :::
 
-:::tip **Exam strategy:**
+:::tip
+**Exam strategy:**
 
 - Memorise the six standard series. Derive others from them by substitution and algebra.
 - For compound functions ($e^{x^2}\sin x$), multiply series term by term and collect like powers.

@@ -98,7 +98,8 @@ class Graph:
 | Sparse graphs | Wasteful         | Efficient         |
 | Dense graphs  | Efficient        | Slightly slower   |
 
-:::info Board-specific
+:::info
+Board-specific
 
 - **AQA** requires adjacency matrix and adjacency list representations; Dijkstra's algorithm for
   shortest path

@@ -271,7 +271,7 @@ $\Delta U_{31} = 0$ (isothermal)
 
 $W_{31} = nRT_3\ln(V_1/V_3) = 3.0 \times \ln(1/3) = 3.0 \times (-1.099) = -3.30\,\text{J}$
 
-Wait, $nRT_3 = P_3V_3 = 1.0 \times 10^5 \times 3.0 \times 10^{-3} = 300\,\text{J}$.
+$nRT_3 = P_3V_3 = 1.0 \times 10^5 \times 3.0 \times 10^{-3} = 300\,\text{J}$.
 
 $W_{31} = 300 \times \ln(1/3) = 300 \times (-1.099) = -330\,\text{J}$
 

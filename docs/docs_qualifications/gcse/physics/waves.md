@@ -14,7 +14,9 @@ slug: waves
 
 ## Waves
 
-:::info Board Coverage AQA Paper 2 | Edexcel Paper 1 | OCR A Gateway P3 & P6 | WJEC P3 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel Paper 1 | OCR A Gateway P3 & P6 | WJEC P3
+:::
 
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
@@ -706,7 +708,8 @@ When the wave slows down and the wavelength decreases, the wave height (amplitud
 is conserved, and since the wave is moving more slowly, the energy is concentrated in a shorter
 wavelength.
 
-:::info This is analogous to light bending towards the normal when entering a denser medium. The
+:::info
+This is analogous to light bending towards the normal when entering a denser medium. The
 decrease in wave speed causes the wavelength to decrease while the frequency remains constant.
 :::
 

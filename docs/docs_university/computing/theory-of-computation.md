@@ -437,7 +437,8 @@ and $2 \cdot 2! = 4 \neq n!$ for any $n$). Hence $xy^iz \notin L$. $\blacksquare
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The pumping lemma says that **for every** decomposition satisfying (1) and (2), **there exists** a
 pumping that fails. To prove non-regularity, you must show that **all** valid decompositions lead
 to a contradiction. A single decomposition that works is insufficient to disprove the lemma.
@@ -1139,7 +1140,8 @@ $A_{\mathrm{TM}}$. The case $\emptyset \in P$ is similar. $\blacksquare$
 **Corollary.** The following are undecidable: "Does $M$ accept at least one string?", "Is $L(M)$
 finite?", "Is $L(M)$ regular?", "Is $L(M)$ context-free?"
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Rice's theorem applies only to properties of the **language** $L(M)$, not properties of the
 **machine** $M$ itself. For example, "Does $M$ halt within 100 steps on input $w$?" is a property
 of $M$'s behaviour, not of $L(M)$, and is in fact decidable (just simulate for 100 steps).
@@ -1220,7 +1222,8 @@ The arithmetical hierarchy is defined by iterating the jump: $\emptyset^{(0)} = 
 $\emptyset^{(n+1)} = (\emptyset^{(n)})'$. Each jump produces a strictly more difficult problem,
 yielding an infinite hierarchy of undecidability.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 A common mistake when using reductions is confusing the direction. To prove $B$ is undecidable
 using a reduction from a known undecidable problem $A$, you need $A \leq_m B$, not $B \leq_m A$.
 Remember: if $A \leq_m B$ and $A$ is undecidable, then $B$ is undecidable (contrapositive of
@@ -1652,7 +1655,8 @@ Both inclusions $\mathrm{P} \subseteq \mathrm{NP}$ and $\mathrm{NP} \subseteq \m
 known to be proper ($\mathrm{P} \neq \mathrm{PSPACE}$), but the status of $\mathrm{P}$ vs.
 $\mathrm{NP}$ remains open.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 NP-completeness refers to **decision** problems. The optimisation versions (e.g., "find the shortest
 tour") are NP-hard, not necessarily NP-complete. Also, "NP" stands for "Nondeterministic Polynomial
 time," not "Not Polynomial time." Every problem in NP is verifiable in polynomial time; whether all

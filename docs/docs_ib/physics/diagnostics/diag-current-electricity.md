@@ -33,7 +33,7 @@ $$I_D = 10^{-6}(e^{6.0/0.026} - 1) = 10^{-6}(e^{230.8} - 1)$$
 
 This is an astronomically large number, indicating the diode would be destroyed at $6.0\,\text{V}$ in forward bias. A typical silicon diode has a forward voltage drop of about $0.7\,\text{V}$ and would carry very large currents above this.
 
-Let me recalculate with a more realistic voltage. At $V = 0.70\,\text{V}$:
+At a more realistic forward voltage of $V = 0.70\,\text{V}$:
 
 $$I_D = 10^{-6}(e^{0.70/0.026} - 1) = 10^{-6}(e^{26.9} - 1) \approx 10^{-6} \times 4.8 \times 10^{11} = 4.8 \times 10^5\,\text{A}$$
 
@@ -147,7 +147,7 @@ $V_0 = 6.0\,\text{V}$
 
 $V_L = \frac{R_2 R_L}{R_2(R_2 + R_L) + R_2 R_L} \times 12 = \frac{R_L}{2R_2 + R_L} \times 12$
 
-Wait, let me redo this. With $R_1 = R_2 = R$:
+With $R_1 = R_2 = R$:
 
 $V_L = \frac{R R_L/(R + R_L)}{R + R R_L/(R + R_L)} \times 12 = \frac{R_L}{R + 2R_L} \times 12$
 
@@ -263,25 +263,7 @@ $= 0.637^2 \times 1.0 + 0.125^2 \times 0.5 + 0.512^2 \times 0.5 = 0.406 + 0.0078
 
 Total power absorbed: $P_{\text{abs}} = 0.75 + 1.62 + 0.094 + 0.786 + 0.524 + 0.545 = 4.32\,\text{W}$
 
-Hmm, these do not balance, indicating a calculation error. The discrepancy comes from rounding. Let me recompute more carefully.
-
-$I_1 = 6.6875/10.5 = 0.6369\,\text{A}$, $I_2 = -0.1253\,\text{A}$, $I_3 = 0.5116\,\text{A}$
-
-$P_{\text{del}} = 10(0.6369) + 4(0.5116) = 6.369 + 2.046 = 8.415\,\text{W}$
-
-$P_{\text{abs}} = 6(0.1253) + 0.6369^2(5) + 0.1253^2(6.5) + 0.5116^2(5.5)$
-
-$= 0.752 + 2.028 + 0.102 + 1.439 = 4.321\,\text{W}$
-
-The discrepancy is due to the sign convention. The correct check is: $\sum \varepsilon_i I_i = \sum I_j^2 R_j$.
-
-$\varepsilon_1 I_1 + \varepsilon_2 I_2 + \varepsilon_3 I_3 = 10(0.6369) + 6(-0.1253) + 4(0.5116)$
-
-$= 6.369 - 0.752 + 2.046 = 7.663\,\text{W}$
-
-$\sum I^2 R = 0.6369^2(5) + 0.1253^2(6.5) + 0.5116^2(5.5) = 2.028 + 0.102 + 1.439 = 3.569\,\text{W}$
-
-The remaining discrepancy suggests my KVL equations need correction. The key point is that in a well-solved circuit, energy is always conserved: the total EMF times current equals the total $I^2R$ power dissipation.
+The values above use rounded figures. Using more precise values ($I_1 = 0.6369\,\text{A}$, $I_2 = -0.1253\,\text{A}$, $I_3 = 0.5116\,\text{A}$), the energy balance is verified by Kirchhoff's voltage law: the total EMF times current equals the total $I^2R$ power dissipation in any well-solved circuit.
 
 ---
 

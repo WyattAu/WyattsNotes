@@ -24,7 +24,8 @@ slug: chemistry-acids-bases-electrochemistry
 - Acid: electron pair acceptor
 - Base: electron pair donor
 
-:::info In the DSE syllabus, the Bronsted-Lowry definition is most commonly used. Always identify
+:::info
+In the DSE syllabus, the Bronsted-Lowry definition is most commonly used. Always identify
 the proton donor and proton acceptor in acid-base reactions.
 :::
 

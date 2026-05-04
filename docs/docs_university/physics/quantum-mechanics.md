@@ -741,7 +741,8 @@ $$\phi_n(x) = \sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right), \quad E_n = \
 - Energy levels are not equally spaced; $E_n \propto n^2$.
 - There are $(n - 1)$ nodes in the $n$-th eigenstate.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The ground state has $n = 1$, not $n = 0$. The solution $n = 0$ gives $\phi(x) = 0$ everywhere,
 which is not normalisable. Furthermore, $E_1 > 0$ (zero-point energy) is a direct consequence of
 the uncertainty principle: confining the particle to a finite region requires kinetic energy.

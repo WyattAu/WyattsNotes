@@ -13,7 +13,9 @@ slug: work-energy-power
 
 ## Work, Energy and Power
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
+:::
 
 <PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
 
@@ -234,7 +236,8 @@ $$\boxed{P_{\mathrm{avg}} = \frac{F(u + v)}{2}}$$
 This is useful because it relates power to the initial and final velocities directly, without
 needing to know the distance or time separately.
 
-:::tip Exam Technique When asked for "the power developed by the engine" as a car accelerates,
+:::tip
+Exam Technique When asked for "the power developed by the engine" as a car accelerates,
 specify whether you mean instantaneous power ($P = Fv$) or average power ($P = Fs/t$). The
 instantaneous power at the end of the acceleration is $Fv_{\mathrm{final}}$, while the average power
 over the whole acceleration is $F(u+v)/2$.
@@ -593,7 +596,8 @@ Period: $T = 2\pi/\omega = 2\pi/12.6 = 0.499$ s.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Work, Energy and Power**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-work-energy-power) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Work, Energy and Power with other physics topics to test synthesis under exam conditions.
@@ -601,7 +605,8 @@ Ready to test your understanding of **Work, Energy and Power**? The [diagnostic 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing work done on an object with work done by gravity:** Work done by gravity when an object falls is POSITIVE (force and displacement are in the same direction). Work done AGAINST gravity when lifting is NEGATIVE. When using energy conservation, gravitational PE LOSS equals kinetic energy GAIN -- be careful with signs.
 

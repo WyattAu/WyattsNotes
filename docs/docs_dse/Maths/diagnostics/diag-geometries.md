@@ -157,19 +157,13 @@ $$\vec{BC} = \mathbf{c} - \mathbf{b} = -4\mathbf{i} + 8\mathbf{j}$$
 
 $$|\vec{BC}| = \sqrt{16 + 64} = \sqrt{80} = 4\sqrt{5}$$
 
-Since $|\vec{AC}| = 2\sqrt{5}$ and $|\vec{BC}| = 4\sqrt{5}$ are not equal, check other pairs.
-
 $|\vec{AB}| = 2\sqrt{13}$, $|\vec{AC}| = 2\sqrt{5}$, $|\vec{BC}| = 4\sqrt{5}$.
 
-None are equal, so this is **not** isosceles. Let me verify: $|\vec{AC}|^2 + |\vec{BC}|^2 = 20 + 80 = 100 = (2\sqrt{13})^2 = 52$. No, $100 \neq 52$.
+None are equal, so this is **not** isosceles. Verifying:
+$|\vec{AC}|^2 + |\vec{BC}|^2 = 20 + 80 = 100 \neq 52 = |\vec{AB}|^2$, confirming it is also not
+right-angled. The triangle is **scalene**.
 
-Actually, the triangle is scalene. The problem as stated is incorrect -- this tests whether you verify rather than assume.
-
-If instead $\mathbf{c} = 5\mathbf{i} + 3\mathbf{j}$:
-
-$|\vec{AC}| = \sqrt{9 + 0} = 3$, $|\vec{BC}| = \sqrt{9 + 16} = 5$. Still scalene.
-
-The key takeaway: always compute and verify rather than assuming geometric properties.
+**Key takeaway:** Always compute and verify rather than assuming geometric properties.
 
 ---
 

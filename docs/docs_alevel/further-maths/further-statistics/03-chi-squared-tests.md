@@ -27,7 +27,8 @@ deviates significantly from expected values. It has two main applications: testi
 | OCR (A)    | Paper 2 | Both applications covered                              |
 | CIE (9231) | S2      | Goodness of fit; independence with $2 \times 2$ tables |
 
-:::info The chi-squared test statistic is always based on observed and expected frequencies, never
+:::info
+The chi-squared test statistic is always based on observed and expected frequencies, never
 on percentages or proportions. Always check the conditions (expected frequency $\geq 5$) before
 applying the test. The formula booklet provides the chi-squared distribution table.
 :::
@@ -238,7 +239,8 @@ There is strong evidence that age group and preferred news source are not indepe
 6. Compare with the critical value at the given significance level
 7. Conclude in context
 
-:::warning Never use percentages or proportions in the chi-squared test — always use raw
+:::warning
+Never use percentages or proportions in the chi-squared test — always use raw
 frequencies. The test relies on the multinomial distribution, which requires count data.
 :::
 

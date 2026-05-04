@@ -14,7 +14,9 @@ sidebar_position: 6
 
 ## Ecology
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 
 ## 1. Ecosystems
 
@@ -89,7 +91,8 @@ than at the previous level, explaining why food chains are typically limited to 
 - **Pyramid of energy**: always upright, because energy is lost at each transfer and cannot be
   created.
 
-:::warning Common Pitfall Students often state that "90% of energy is lost" at each trophic level.
+:::warning
+Common Pitfall Students often state that "90% of energy is lost" at each trophic level.
 The precise figure varies (typically 80%--90% is lost, 10%--20% is transferred). The key point is
 that the loss is substantial and cumulative, which is why food chains are short. The lost energy is
 not "wasted" -- it is dissipated as heat according to the second law of thermodynamics.

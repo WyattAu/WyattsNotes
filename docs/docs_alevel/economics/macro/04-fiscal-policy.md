@@ -34,7 +34,8 @@ $$\mathrm{Budget balance} = T - G$$
 - **Budget deficit**: $G > T$ (government spending exceeds revenue)
 - **Balanced budget**: $T = G$
 
-:::info Board-Specific Note CIE (9708) requires students to distinguish between the budget balance
+:::info
+Board-Specific Note CIE (9708) requires students to distinguish between the budget balance
 and the national debt. AQA and Edexcel may ask about the UK's fiscal rules (e.g., the fiscal mandate
 and supplementary target).
 :::
@@ -148,7 +149,8 @@ income):
 
 ATR falls with income because higher earners save a larger proportion of income. ✓ $\blacksquare$
 
-:::tip Exam Technique When asked to evaluate whether a tax is progressive or regressive, calculate
+:::tip
+Exam Technique When asked to evaluate whether a tax is progressive or regressive, calculate
 the ATR at different income levels. Never just state the marginal rate — a tax can have increasing
 marginal rates but still be regressive in practice (e.g., if there are generous allowances for high
 earners).
@@ -319,7 +321,8 @@ prices, reducing private sector profitability.
 | Source of financing             | Domestic borrowing             | Foreign borrowing / monetary financing    |
 | Type of spending                | Current spending (consumption) | Capital spending (productivity-enhancing) |
 
-:::tip Exam Technique When evaluating fiscal policy, always consider crowding out. The strongest
+:::tip
+Exam Technique When evaluating fiscal policy, always consider crowding out. The strongest
 answer recognises that crowding out is less severe in a recession (Keynesian view) and more severe
 at full employment (Classical view). Reference the state of the economic cycle.
 :::

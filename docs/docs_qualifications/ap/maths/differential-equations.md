@@ -879,7 +879,8 @@ Euler's method approximation: $y(2) \approx 1.5$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Differential Equations**? The [diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-differential-equations) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differential Equations with other AP Calculus topics to test synthesis under exam conditions.

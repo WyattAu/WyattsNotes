@@ -145,9 +145,9 @@ $Q_c = 120 - 4(4) = 104$. $DWL = \frac{1}{2}(17 - 4)(104 - 52) = \frac{1}{2}(13)
 Under price discrimination ($Q = 52$ total): total DWL
 $= \frac{1}{2}(22 - 4)(80 - 36) + \frac{1}{2}(12 - 4)(40 - 16) = \frac{1}{2}(18)(44) + \frac{1}{2}(8)(24) = 396 + 96 = \$492$.
 
-Wait -- price discrimination produces the same total quantity (52) but a different allocation. The
-DWL calculation needs the competitive benchmark per group. Competitive: $P = 4$:
-$Q_A = 80 - 8 = 72$, $Q_S = 40 - 8 = 32$. $Q_c = 104$.
+**Note:** Price discrimination produces the same total quantity (52) but a different allocation across
+groups. The DWL calculation requires the competitive benchmark per group. Competitive output ($P = 4$):
+$Q_A = 80 - 8 = 72$, $Q_S = 40 - 8 = 32$. Total competitive output $Q_c = 104$.
 
 $DWL_{\text{no disc}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
 $DWL_d = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
@@ -230,9 +230,7 @@ $MR = 22 - 0.4Q = MC = 2 + 0.2Q$. $20 = 0.6Q$, $Q_m = 33.33$. $P_m = 22 - 0.2(33
 (b) **Perfect competition:**
 
 - CS $= \frac{1}{2}(22 - 12)(50) = \frac{1}{2}(10)(50) = \$250$.
-- PS $= (12 - 2)(50) - \frac{1}{2}(12 - 2)(50) = 500 - 250 = \$250$. Wait: PS
-  $= \frac{1}{2}(12 - 2)(50) + FC recovery$. Actually PS
-  $= TR - TC = 12(50) - [100 + 2(50) + 0.1(2500)] = 600 - [100 + 100 + 250] = 600 - 450 = \$150$.
+- PS $= TR - TC = 12(50) - [100 + 2(50) + 0.1(2500)] = 600 - [100 + 100 + 250] = 600 - 450 = \$150$.
 - Total surplus $= 250 + 150 = \$400$.
 
 **Monopoly:**
@@ -242,10 +240,8 @@ $MR = 22 - 0.4Q = MC = 2 + 0.2Q$. $20 = 0.6Q$, $Q_m = 33.33$. $P_m = 22 - 0.2(33
   $= 15.33(33.33) - [100 + 2(33.33) + 0.1(33.33)^2] = 511 - [100 + 66.67 + 111.1] = 511 - 277.8 = \$233.3$.
 - Total surplus $= 111.1 + 233.3 = \$344.4$.
 
-(c) DWL $= 400 - 344.4 = \$55.6$. Alternatively: $DWL = \frac{1}{2}(15.33 - 2 + 2)(50 - 33.33)$...
-Let me recalculate properly.
-
-At $Q_m = 33.33$: $P_m = 15.33$, $MC = 2 + 0.2(33.33) = 8.67$. At $Q_c = 50$: $P_c = MC = 12$.
+(c) DWL $= 400 - 344.4 = \$55.6$. Verifying directly: at $Q_m = 33.33$, $P_m = 15.33$ and
+$MC = 2 + 0.2(33.33) = 8.67$. At $Q_c = 50$: $P_c = MC = 12$.
 
 $DWL = \frac{1}{2}(P_m - MC_m)(Q_c - Q_m) = \frac{1}{2}(15.33 - 8.67)(50 - 33.33) = \frac{1}{2}(6.67)(16.67) = \$55.6$.
 

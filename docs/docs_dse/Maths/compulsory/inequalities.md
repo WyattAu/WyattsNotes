@@ -617,7 +617,8 @@ Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Inequalities**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-inequalities) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Inequalities with other DSE mathematics topics to test synthesis under exam conditions.

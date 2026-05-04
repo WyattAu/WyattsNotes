@@ -100,7 +100,7 @@ Subtract committees with fewer than 2 men or fewer than 2 women:
 
 Total excluded: $1 + 35 + 210 + 350 + 175 + 21 = 792$.
 
-Wait, this equals the total. That means the constraint "at least 2 men and at least 2 women" only excludes the cases with 0 or 1 of one gender:
+The constraint "at least 2 men and at least 2 women" only excludes the cases with 0 or 1 of one gender:
 
 Excluded: 0 men, 5 women (1 way) + 1 man, 4 women (35 ways) + 5 men, 0 women (21 ways) + 4 men, 1 woman (175 ways) = 232 ways.
 

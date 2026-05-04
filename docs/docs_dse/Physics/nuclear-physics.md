@@ -69,7 +69,8 @@ Examples:
 - Isobars: $\prescript{40}{}{20}\mathrm{Ca}$ and $\prescript{40}{}{18}\mathrm{Ar}$
 - Isotones: $\prescript{14}{}{6}\mathrm{C}$ and $\prescript{15}{}{7}\mathrm{N}$ (both have $N = 8$)
 
-:::info In DSE exams, isotopes share the same chemical symbol and chemical behaviour. Only nuclear
+:::info
+In DSE exams, isotopes share the same chemical symbol and chemical behaviour. Only nuclear
 reactions can distinguish between isotopes of the same element.
 :::
 
@@ -575,7 +576,8 @@ For the D-T fusion reaction:
 
 $$Q = [m(\prescript{2}{}{1}\mathrm{H}) + m(\prescript{3}{}{1}\mathrm{H}) - m(\prescript{4}{}{2}\mathrm{He}) - m(\prescript{1}{}{0}\mathrm{n})]c^2 = 17.6 \mathrm{ MeV}$$
 
-:::info In DSE calculations, always convert masses to the same units (preferably u) before computing
+:::info
+In DSE calculations, always convert masses to the same units (preferably u) before computing
 the Q-value. Use $1 \mathrm{ u} = 931.5 \mathrm{ MeV}/c^2$ for the energy conversion. Remember that
 the Q-value is shared among all products as kinetic energy (and possibly photons).
 :::
@@ -691,7 +693,8 @@ semiconductor material (e.g., silicon or germanium).
 | Cloud chamber         | Alpha, beta, gamma         | Limited            | Visualises tracks                 | Bulky, requires careful setup     |
 | Semiconductor         | Alpha, beta, gamma, X-rays | Yes (excellent)    | Best energy resolution, compact   | Expensive, often requires cooling |
 
-:::info In DSE exams, the GM tube is the most important detector. Know its construction, operation
+:::info
+In DSE exams, the GM tube is the most important detector. Know its construction, operation
 principle, dead time, and limitations. Be prepared to explain why a GM tube cannot distinguish
 between alpha and beta radiation.
 :::
@@ -791,7 +794,8 @@ $$\mathrm{HVT} = \frac{\ln 2}{\mu}$$
 
 Where $\mu$ is the linear attenuation coefficient.
 
-:::warning Never use lead shielding for beta radiation. High-Z materials like lead produce
+:::warning
+Never use lead shielding for beta radiation. High-Z materials like lead produce
 bremsstrahlung (breaking radiation) when beta particles decelerate rapidly, creating X-rays that are
 more penetrating than the original beta particles. Use aluminium or perspex for beta shielding
 instead.
@@ -1743,7 +1747,8 @@ For the A-Level treatment of this topic, see [Radioactivity](https://alevel.wyat
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Nuclear Physics**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-nuclear-physics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Nuclear Physics with other physics topics to test synthesis under exam conditions.

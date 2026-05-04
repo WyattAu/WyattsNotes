@@ -1051,7 +1051,8 @@ Therefore $A^{10} = 3254867 \cdot A - 6508710 \cdot I$. $\blacksquare$
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 Not every matrix is diagonalisable. For example, $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ has
 eigenvalue $\lambda = 1$ with algebraic multiplicity 2 but geometric multiplicity 1. It has only one
 linearly independent eigenvector and is not diagonalisable.
@@ -1428,7 +1429,8 @@ The orthonormal basis is $\left\{\frac{1}{\sqrt{2}}(1,1,0),\ \frac{1}{\sqrt{6}}(
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The Gram--Schmidt process requires a linearly independent starting set. If the input vectors are
 linearly dependent, one of the $\mathbf{u}_k$ will be the zero vector, and the process will fail
 (attempting to divide by zero in the normalisation step).

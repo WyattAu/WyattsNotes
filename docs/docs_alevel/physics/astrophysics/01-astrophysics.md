@@ -14,7 +14,8 @@ sidebar_position: 1
 
 ## Astrophysics
 
-:::info Board Coverage AQA Paper 2 (Option 9) | Edexcel CP5 (Option 9) | OCR (A) Paper 2 (Option D)
+:::info
+Board Coverage AQA Paper 2 (Option 9) | Edexcel CP5 (Option 9) | OCR (A) Paper 2 (Option D)
 :::
 
 ## 1. Astronomical Distances and Measurements
@@ -173,7 +174,8 @@ $2.898 \times 10^{-3}$ m K.
 ($T \approx 3000$ K) peaks in the infrared. This is why hotter stars appear bluer and cooler stars
 appear redder.
 
-:::info Board-Specific
+:::info
+Board-Specific
 
 - **AQA** requires Wien's law, Stefan-Boltzmann law, and the inverse square law explicitly.
 - **Edexcel** emphasises the period--luminosity relation for Cepheids and the use of Type Ia
@@ -314,7 +316,8 @@ escape velocity exceeds the speed of light. For the Sun, $r_s \approx 3$ km; for
 $r_s \approx 9$ mm. This shows how extraordinarily compact a black hole must be: the entire mass of
 the Sun compressed into a sphere smaller than a small city.
 
-:::info Board-Specific
+:::info
+Board-Specific
 
 - **AQA** requires detailed knowledge of stellar evolution pathways, the H-R diagram, and the
   Chandrasekhar limit.
@@ -588,7 +591,8 @@ parabolic dishes.
 - Much more expensive to build, launch, and maintain (no servicing missions for most)
 - Limited aperture size (constrained by launch vehicle fairings; JWST's primary mirror is 6.5 m)
 
-:::info Board-Specific
+:::info
+Board-Specific
 
 - **AQA** requires comparison of reflecting and refracting telescopes, and the Rayleigh criterion.
 - **Edexcel** emphasises angular magnification and the advantages of large-diameter telescopes.

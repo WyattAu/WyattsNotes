@@ -13,7 +13,9 @@ slug: current-and-resistance
 
 ## Current and Resistance
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="resistance-in-a-wire" title="Resistance in a Wire" />
 
@@ -245,7 +247,8 @@ The SI unit of energy is the joule (J). For domestic billing, the kilowatt-hour 
 
 $$1 \mathrm{ kWh} = 1000 \mathrm{ W} \times 3600 \mathrm{ s} = 3.6 \times 10^6 \mathrm{ J}$$
 
-:::tip Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
+:::tip
+Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
 current). For resistors in parallel, use $P = V^2/R$ (same voltage).
 :::
 
@@ -326,7 +329,8 @@ positive feedback loop.
 
 </details>
 
-:::warning Common Pitfall Do not confuse the behaviour of metals and semiconductors. Metals have a
+:::warning
+Common Pitfall Do not confuse the behaviour of metals and semiconductors. Metals have a
 _positive_ temperature coefficient ($R$ increases with $T$). Semiconductors (thermistors) have a
 _negative_ temperature coefficient ($R$ decreases with $T$). The physical mechanism is entirely
 different: in metals, $\tau$ changes; in semiconductors, $n$ changes.
@@ -592,7 +596,8 @@ why high-voltage transmission is essential.
 
 </details>
 
-:::tip Exam Technique When calculating transmission losses, remember to include both the outward and
+:::tip
+Exam Technique When calculating transmission losses, remember to include both the outward and
 return cables (total length $= 2L$). Also remember that the voltage in $P = IV$ is the transmission
 voltage, not the voltage drop across the line resistance.
 :::
@@ -963,7 +968,8 @@ heating is a serious engineering concern.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Current and Resistance**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-current-resistance) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Current and Resistance with other physics topics to test synthesis under exam conditions.
@@ -971,7 +977,8 @@ Ready to test your understanding of **Current and Resistance**? The [diagnostic 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing conventional current with electron flow:** Conventional current flows from positive to negative (historical convention). Electrons actually flow from negative to positive. In circuit diagrams and exam questions, always assume conventional current direction unless specifically asked about electron flow.
 

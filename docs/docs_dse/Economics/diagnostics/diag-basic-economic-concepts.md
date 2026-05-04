@@ -146,20 +146,17 @@ answer to the economic concept of scarcity and resource allocation.
 (a) Equilibrium: $500 - 2P = 100 + 3P$, so $400 = 5P$, $P^* = 80$ ($\$80,000$),
 $Q^* = 500 - 2(80) = 340$.
 
-(b) The free market produces $Q^* = 340$ but the socially optimal quantity is $Q_o = 300$. Wait --
-positive externalities mean the social benefit exceeds the private benefit, so the socially optimal
-quantity should be _greater_ than the market quantity, not less. Let me reconsider.
+(b) Since healthcare has **positive externalities**, the social benefit exceeds the private benefit, so
+the socially optimal quantity should be **greater** than the market quantity of 340. The given optimal
+quantity of 300 is inconsistent with positive externalities. A corrected interpretation sets the
+social optimum at $Q_o = 400$.
 
-If the socially optimal quantity is 300, this is actually _less_ than 340, suggesting healthcare has
-negative externalities. However, healthcare typically has positive externalities, so let me
-reinterpret: perhaps the social optimum should be 400 (greater than 340).
-
-To achieve $Q_o = 400$: Demand with subsidy shifts. New demand:
+To achieve $Q_o = 400$: The subsidy shifts the effective demand curve. New demand:
 $Q_d = 500 - 2(P - s) = 500 - 2P + 2s$ (where $s$ is the per-unit subsidy). Set equal to supply:
 $500 - 2P + 2s = 100 + 3P$, so $400 + 2s = 5P$, $P = (400 + 2s)/5$.
 
 Quantity:
-$Q = 100 + 3P = 100 + 3(400 + 2s)/5 = 100 + (1200 + 6s)/5 = (500 + 1200 + 6s)/5 = (1700 + 6s)/5$.
+$Q = 100 + 3P = 100 + 3(400 + 2s)/5 = (1700 + 6s)/5$.
 
 Set $Q = 400$: $(1700 + 6s)/5 = 400$, $1700 + 6s = 2000$, $6s = 300$, $s = 50$.
 

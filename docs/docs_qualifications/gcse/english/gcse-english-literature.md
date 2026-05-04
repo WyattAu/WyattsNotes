@@ -34,7 +34,8 @@ examination hall.
 | **OCR** (J352)             | Shakespeare and Poetry Pre-1900                    | Modern Texts and 19th-Century Novel                                | Open             |
 | **WJEC/Eduqas** (9-1 7222) | Shakespeare (with Welsh Poetry anthology for WJEC) | Post-1914 Drama/Novel and Poetry Anthology                         | Open             |
 
-:::info The broad content -- Shakespeare, a 19th-century novel, modern drama or prose, and poetry --
+:::info
+The broad content -- Shakespeare, a 19th-century novel, modern drama or prose, and poetry --
 is common to all boards. Differences lie in the arrangement of texts across papers, the presence or
 absence of an anthology, and whether texts may be taken into the examination.
 :::

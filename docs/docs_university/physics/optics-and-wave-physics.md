@@ -269,7 +269,8 @@ $t = 2\sigma_0^2\sqrt{3}/\alpha_{\mathrm{GVD}} = 2(10^{-4})(1.732)/(10^4) = 3.46
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The group velocity $v_g = d\omega/dk$ describes the motion of the wave packet envelope and equals
 the energy transport velocity in lossless media. However, it is only equal to the signal velocity
 in regions of weak, normal dispersion. Near absorption resonances, $v_g$ can exceed $c$ or become
@@ -806,7 +807,8 @@ The intensity is about 4.5% of the central maximum.
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The condition for the first minimum in single-slit diffraction is $a\sin\theta = \lambda$ (not
 $\lambda/2$). The factor of 2 difference from the double-slit maximum condition ($d\sin\theta = \lambda$)
 reflects the fundamentally different geometry: in single-slit diffraction, the minimum occurs when
@@ -1055,7 +1057,8 @@ versa.
 Rotates the plane of linear polarisation by $2\theta$, where $\theta$ is the angle between the
 input polarisation and the fast axis.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 A quarter-wave plate only produces circular polarisation when the input linear polarisation is at
 exactly $45°$ to the fast and slow axes. For other input angles, the output is elliptically
 polarised. A half-wave plate rotates linear polarisation by $2\theta$, not $\theta$.

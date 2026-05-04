@@ -162,15 +162,9 @@ Multiply through by $(r+1)!(n-r+1)!$:
 
 $$2(r+1)(n-r+1) = (r+1)r + (n-r)(n-r+1)$$
 
-This is complex. Instead, for ALL coefficients to be in AP (not just three consecutive):
-
-$n = 2$: coefficients $1, 2, 1$ -- not AP ($2 \neq 1 + 1$ would need $2 = 2$, check: $1, 2, 1$: $2 - 1 = 1$, $1 - 2 = -1$. Not AP).
-
-$n = 7$: $1, 7, 21, 35, 35, 21, 7, 1$ -- symmetric, not AP.
-
-Actually, the only $n$ where consecutive coefficients form AP for ALL triples: there is no such $n > 2$.
-
-The question likely means: find $n$ such that three specific consecutive coefficients form an AP. For $C_1, C_2, C_3$:
+This is complex. For ALL coefficients to be in AP (not just three consecutive), there is no such
+$n > 2$. The question likely means: find $n$ such that three specific consecutive coefficients form
+an AP. For $C_1, C_2, C_3$:
 
 $2\dbinom{n}{2} = \dbinom{n}{1} + \dbinom{n}{3}$
 

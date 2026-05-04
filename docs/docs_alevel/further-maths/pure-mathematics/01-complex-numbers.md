@@ -329,11 +329,13 @@ Exam questions often require describing a _region_ defined by combining loci, su
 
 - $|z - 3| \leq 2$ and $\arg(z) \geq \dfrac{\pi}{4}$: the part of a disc in a sector.
 
-:::warning A half-line $\arg(z - a) = \alpha$ does _not_ include the point $a$. When shading
+:::warning
+A half-line $\arg(z - a) = \alpha$ does _not_ include the point $a$. When shading
 regions, be careful about whether boundaries are included (solid line) or excluded (dashed line).
 :::
 
-:::tip Always sketch loci problems. The algebraic description follows from the geometric picture.
+:::tip
+Always sketch loci problems. The algebraic description follows from the geometric picture.
 Common exam technique: identify the boundary (circle, line, half-line), then determine which side of
 the boundary is included by testing a point.
 :::
@@ -427,7 +429,8 @@ $w$-plane.
 
 </details>
 
-:::info AQA places significant emphasis on complex transformations including $w = f(z)$ mappings.
+:::info
+AQA places significant emphasis on complex transformations including $w = f(z)$ mappings.
 Edexcel and OCR cover this topic with less depth. CIE focuses more on loci than on transformations.
 :::
 

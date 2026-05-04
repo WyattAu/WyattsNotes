@@ -340,7 +340,8 @@ $$d = \frac{|3(5) + 4(-2) - 10|}{\sqrt{9 + 16}} = \frac{|15 - 8 - 10|}{\sqrt{25}
 
 </details>
 
-:::info The absolute value in the numerator ensures the distance is always non-negative. The sign of
+:::info
+The absolute value in the numerator ensures the distance is always non-negative. The sign of
 $ax_0 + by_0 + c$ tells you which side of the line the point lies on.
 :::
 
@@ -926,7 +927,8 @@ The two tangent lines are $y = 0$ and $12x - 5y = 0$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Coordinates and Geometry**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-coordinates-and-geometry) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Coordinates and Geometry with other pure mathematics topics to test synthesis under exam conditions.

@@ -73,7 +73,8 @@ int main() {
 }
 ```
 
-:::tip Use `extern template` in header files for templates that are instantiated with common types
+:::tip
+Use `extern template` in header files for templates that are instantiated with common types
 (e.g., `int`, `double`, `std::string`). Provide explicit instantiation definitions in a single
 `.cpp` file. This reduces compilation time and binary size without sacrificing the flexibility of
 templates.

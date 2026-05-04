@@ -75,7 +75,8 @@ $$
 \end{aligned}
 $$
 
-:::warning The IB only consider the magnitude of centripetal acceleration, therefore is shown in the
+:::warning
+The IB only consider the magnitude of centripetal acceleration, therefore is shown in the
 equation booklet as:
 
 $$
@@ -97,7 +98,8 @@ $$
 \end{aligned}
 $$
 
-:::warning As mentioned above, IB only consider the magnitude of centripetal force:
+:::warning
+As mentioned above, IB only consider the magnitude of centripetal force:
 
 $$
 \begin{aligned}
@@ -152,7 +154,8 @@ $$
 
 The measure of a solid body's resistance to [angular acceleration](#angular-acceleration).
 
-:::warning The IB syllabus only consider the moment of inertia of rigid body with approximated
+:::warning
+The IB syllabus only consider the moment of inertia of rigid body with approximated
 geometry as a system of discrete particles, as well as moment of inertia that is determined by
 closed-form expressions.
 :::
@@ -178,7 +181,8 @@ $$
 \end{aligned}
 $$
 
-:::info For a force that varies at different position, the line integral of $F$ across a surface $C$
+:::info
+For a force that varies at different position, the line integral of $F$ across a surface $C$
 is:
 
 $$

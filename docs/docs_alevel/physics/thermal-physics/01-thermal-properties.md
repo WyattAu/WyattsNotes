@@ -13,7 +13,9 @@ slug: thermal-properties
 
 ## Thermal Properties
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 1. Temperature Scales
 

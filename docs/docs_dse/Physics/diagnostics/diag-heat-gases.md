@@ -170,27 +170,18 @@ $$W_{AB} = nRT \ln\frac{V_B}{V_A} = 0.5 \times 8.31 \times 400 \times \ln 3 = 16
 
 $$Q_{AB} = W_{AB} = 1826 \text{ J} \text{ (heat absorbed)}$$
 
-**Process B$\to$C (isochoric cooling):**
+**Process B$\to$C (isochoric heating):**
 
 $W_{BC} = 0$ (no volume change)
 
 For monatomic ideal gas: $C_V = \frac{3}{2}R$
 
+Since $T_C = 1200$ K $> T_B = 400$ K, the gas heats up during B$\to$C (pressure increases from
+$2.77 \times 10^5$ to $8.31 \times 10^5$ Pa).
+
 $$\Delta U_{BC} = nC_V(T_C - T_B) = 0.5 \times \frac{3}{2} \times 8.31 \times (1200 - 400) = 0.5 \times 12.465 \times 800 = 4986 \text{ J}$$
 
-$$Q_{BC} = \Delta U_{BC} = 4986 \text{ J} \text{ (heat released, so } Q_{BC} = -4986 \text{ J)}$$
-
-Wait, this doesn't make sense physically. The gas cools from $400$ K to... let me recheck. $T_C = 1200$ K is higher than $T_B = 400$ K, which means the gas HEATS UP during B$\to$C, not cools.
-
-Let me recheck: $P_C = P_A = 8.31 \times 10^5$ Pa, and $V_C = V_B = 6 \times 10^{-3}$ m$^3$.
-
-$$T_C = \frac{P_C V_C}{nR} = \frac{8.31 \times 10^5 \times 6 \times 10^{-3}}{0.5 \times 8.31} = \frac{4986}{4.155} = 1200 \text{ K}$$
-
-Yes, $T_C = 1200$ K. So B$\to$C is actually isochoric heating (pressure increases from $2.77 \times 10^5$ to $8.31 \times 10^5$ Pa, and temperature increases from $400$ to $1200$ K).
-
-$$\Delta U_{BC} = nC_V(T_C - T_B) = 0.5 \times \frac{3}{2} \times 8.31 \times 800 = 4986 \text{ J}$$
-
-$$Q_{BC} = 4986 \text{ J} \text{ (heat absorbed)}$$
+$$Q_{BC} = \Delta U_{BC} = 4986 \text{ J} \text{ (heat absorbed)}$$
 
 **Process C$\to$A (isobaric compression):**
 

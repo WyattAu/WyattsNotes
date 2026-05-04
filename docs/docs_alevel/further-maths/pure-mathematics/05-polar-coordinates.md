@@ -31,7 +31,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 | OCR (A)    | —       | Not in OCR (A) specification                         |
 | CIE (9231) | P2      | Full coverage: curves, area, tangents                |
 
-:::info Polar coordinates appear in Edexcel FP2 and CIE P2. OCR (A) does not cover this topic. AQA
+:::info
+Polar coordinates appear in Edexcel FP2 and CIE P2. OCR (A) does not cover this topic. AQA
 covers the essentials in Paper 1. The formula booklet provides the area formula.
 :::
 
@@ -76,7 +77,8 @@ $\theta = \pi - \arctan(1) = 3\pi/4$.
 
 The polar coordinates are $(3\sqrt{2}, 3\pi/4)$.
 
-:::warning When converting from Cartesian to polar, always check the quadrant of the point. The
+:::warning
+When converting from Cartesian to polar, always check the quadrant of the point. The
 calculator value of $\arctan(y/x)$ alone is insufficient for points in quadrants II and III.
 :::
 
@@ -171,7 +173,8 @@ the radius and the tangent is constant.
 - $r > 0$ for all $\theta$ (since $2 + \cos\theta \geq 1$).
 - The curve is a **limacon with no inner loop**.
 
-:::tip A limacon $r = a + b\cos\theta$ has an inner loop if $b > a$, a dimple if $a < b \leq 2a$
+:::tip
+A limacon $r = a + b\cos\theta$ has an inner loop if $b > a$, a dimple if $a < b \leq 2a$
 (actually $a < 2b$...), and is convex if $a \geq 2b$. Specifically:
 
 - Inner loop: $b > a$
@@ -233,7 +236,8 @@ The area between curves $r_1(\theta)$ (outer) and $r_2(\theta)$ (inner) from $\a
 
 $$A = \frac{1}{2}\int_\alpha^\beta \bigl[r_1^2(\theta) - r_2^2(\theta)\bigr]\,d\theta$$
 
-:::warning The area formula uses $r^2$, not $r$. When computing the area between two curves,
+:::warning
+The area formula uses $r^2$, not $r$. When computing the area between two curves,
 subtract $r_2^2$ from $r_1^2$, not $r_2$ from $r_1$.
 :::
 

@@ -13,7 +13,9 @@ slug: circular-motion
 
 ## Circular Motion
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
 
@@ -101,7 +103,8 @@ By Newton's second law, the net force producing centripetal acceleration is:
 
 $$\boxed{F_c = \frac{mv^2}{r} = m\omega^2 r}$$
 
-:::warning Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
+:::warning
+Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
 force resulting from whatever physical forces act on the body (tension, friction, gravity, normal
 reaction, etc.). Never draw "centripetal force" on a free body diagram — identify the actual
 force(s) providing the centripetal acceleration.
@@ -114,7 +117,8 @@ constant. The velocity vector is changing _direction_. There is always a net inw
 cut the string, the particle does **not** fly radially outward — it moves tangentially (Newton's
 first law).
 
-:::warning Common Pitfall **"Centrifugal force" is not a real force.** In a rotating reference
+:::warning
+Common Pitfall **"Centrifugal force" is not a real force.** In a rotating reference
 frame, objects appear to be pushed outward, but this is a pseudo-force (fictitious force) arising
 because the frame itself is accelerating. In an inertial (laboratory) frame, no outward force
 exists. AQA and Edexcel may ask you to explain the difference; OCR (A) has featured this in
@@ -150,7 +154,8 @@ $$\boxed{T = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
 **Example.** A conical pendulum with $L = 1.0$ m and $\alpha = 30^\circ$ has period
 $T = 2\pi\sqrt{1.0 \times \cos 30°/9.81} = 2\pi\sqrt{0.0883} = 1.86$ s.
 
-:::info Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, typically
+:::info
+Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, typically
 as a multi-step calculation. OCR (A): Appears in Paper 2 with derivations required. CIE: Appears in
 P2; may be combined with energy considerations.
 :::
@@ -455,7 +460,8 @@ $$\boxed{T_{\mathrm{bottom}} - T_{\mathrm{top}} = 6mg}$$
 
 This result is independent of the radius and speed -- it depends only on the mass and $g$.
 
-:::tip Exam Technique When asked about the difference between tension at the top and bottom of a
+:::tip
+Exam Technique When asked about the difference between tension at the top and bottom of a
 vertical circle, the answer is always $6mg$ (for a string). For a rod (which can push as well as
 pull), the minimum speed at the top is zero, not $\sqrt{gr}$, because the rod can support the weight
 even when the speed is zero.
@@ -487,7 +493,9 @@ $T = mv_b^2/r + mg = 1.5 \times 39.24/0.80 + 14.7 = 73.6 + 14.7 = 88.3$ N.
 
 </details>
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 ## 6. Conical Pendulum -- Extended Analysis
 
@@ -553,7 +561,8 @@ $$\boxed{F_{\mathrm{centrifugal}} = m\omega^2 r = \frac{mv^2}{r}}$$
 
 This has the same magnitude as the centripetal force but points in the opposite direction.
 
-:::warning Common Pitfall **Centrifugal force is not a real force.** It does not appear on free-body
+:::warning
+Common Pitfall **Centrifugal force is not a real force.** It does not appear on free-body
 diagrams in inertial frames. It is a mathematical convenience for analysing motion in rotating
 frames. In exams, always explain circular motion using centripetal force in an inertial frame unless
 explicitly asked about rotating frames. AQA and OCR (A) have specifically tested the distinction
@@ -568,7 +577,8 @@ between centripetal and centrifugal descriptions.
 | Additional force       | None                                 | Centrifugal (fictitious, outward)    |
 | Passenger acceleration | Centripetal (inward)                 | Zero (apparent equilibrium)          |
 
-:::tip Exam Technique When asked "why do passengers feel thrown outward in a cornering car?", the
+:::tip
+Exam Technique When asked "why do passengers feel thrown outward in a cornering car?", the
 correct A-level answer is: "The passengers tend to continue in a straight line by Newton's first law
 while the car turns. No outward force acts on the passengers." Mentioning centrifugal force is
 acceptable only if you clearly state it is a fictitious force in a rotating frame.
@@ -720,7 +730,8 @@ $T - mg = mv_b^2/r = 4mg$, so $T = 5mg$ (rod pulls inward with force $5mg$).
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Circular Motion**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-circular-motion) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Circular Motion with other physics topics to test synthesis under exam conditions.
@@ -728,7 +739,8 @@ Ready to test your understanding of **Circular Motion**? The [diagnostic test](/
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing centripetal force with centrifugal force:** Centripetal force is the REAL force acting towards the centre (gravity, tension, friction, normal reaction). Centrifugal force is a FICTITIOUS force that only appears in a rotating frame of reference. In an inertial frame (which exam questions use), there is no centrifugal force -- only centripetal force.
 

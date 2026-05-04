@@ -107,14 +107,7 @@ Electrical power input:
 
 $$P_{\text{input}} = \frac{P_{\text{useful}}}{\eta} = \frac{490.5}{0.85} = 577\,\text{W}$$
 
-(b) The useful power goes into gravitational PE and kinetic energy of the water:
-
-$$P_{\text{useful}} = \dot{m}gh + \frac{1}{2}\dot{m}v^2$$
-$$490.5 = 490.5 + \frac{1}{2}(3.333)v^2$$
-
-Wait, this gives $v = 0$. That is because the question says "minimum power" in part (a), which accounts only for gravitational PE gain. If we assume no losses in the pipe, all the useful power goes to gravitational PE (since the water is pumped to ground level and we are not told it exits at speed). The water exits with negligible KE if the pipe is wide enough.
-
-Actually, let me reconsider. The pump raises water from 15 m below to ground level. At ground level, the water exits through a pipe. If there are no losses, the power goes entirely into raising the water. The exit speed depends on the pipe diameter and flow rate.
+(b) The minimum power calculated in part (a) accounts only for the gravitational PE gain. Since no energy losses occur in the pipe, the useful power goes entirely into raising the water to ground level. The exit speed is determined by the volume flow rate and pipe cross-section, not by the energy balance.
 
 Volume flow rate: $\dot{V} = \dot{m}/\rho = 3.333/1000 = 3.333 \times 10^{-3}\,\text{m}^3\,\text{s}^{-1}$
 
@@ -214,10 +207,7 @@ $$v_D = \sqrt{556.6} = 23.59\,\text{m}\,\text{s}^{-1}$$
 Using energy conservation from $D$ to $E$:
 
 $$\frac{1}{2}mv_D^2 = \frac{1}{2}mv_E^2 + mg(2r)$$
-$$556.6 \times 500 = \frac{1}{2}(500)v_E^2 + 500 \times 9.81 \times 20$$
-
-Wait, let me redo: $\frac{1}{2}(500)(23.59)^2 = \frac{1}{2}(500)v_E^2 + 500 \times 9.81 \times 20$
-
+$$\frac{1}{2}(500)(23.59)^2 = \frac{1}{2}(500)v_E^2 + 500 \times 9.81 \times 20$$
 $$139150 = 250v_E^2 + 98100$$
 $$250v_E^2 = 41050$$
 $$v_E^2 = 164.2$$
@@ -289,9 +279,9 @@ For a circular orbit: $v = \sqrt{GM/r}$, so $r = GM/v^2$
 
 $$r' = \frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{7663^2} = \frac{3.982 \times 10^{14}}{5.872 \times 10^7} = 6.782 \times 10^6\,\text{m}$$
 
-The new orbital radius is $6.78 \times 10^6\,\text{m}$, which is lower than the original. This is because the thrust was applied in the direction of motion, which raises the orbit on the opposite side, but for a quick burn the result is an elliptical orbit. For the simplified case of an instantaneous burn and assuming a new circular orbit at the new energy, the satellite would actually move to a higher orbit. Let me correct:
+This gives a lower orbital radius, which is incorrect for a prograde burn. The impulse-based speed increase produces an elliptical orbit, and the simple $r = GM/v^2$ relation does not apply to an instantaneous velocity change. The correct approach is to use the total orbital energy:
 
-The new total energy is: $E' = E + F \times v \times t = E + 2000 \times 7543 \times 30 = -1.422 \times 10^{10} + 4.526 \times 10^8 = -1.377 \times 10^{10}\,\text{J}$
+New total energy: $E' = E + F \times v \times t = E + 2000 \times 7543 \times 30 = -1.422 \times 10^{10} + 4.526 \times 10^8 = -1.377 \times 10^{10}\,\text{J}$
 
 For circular orbit: $E' = -\frac{GMm}{2r'}$
 

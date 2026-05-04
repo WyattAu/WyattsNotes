@@ -13,7 +13,9 @@ slug: electric-fields
 
 ## Electric Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 <PhetSimulation simulationId="charges-and-fields" title="Charges and Fields" />
 
@@ -153,7 +155,8 @@ $E_{\mathrm{total}} = \sigma/\varepsilon_0$. Outside the plates, the fields canc
 $E_{\mathrm{total}} = 0$. This is the ideal parallel-plate capacitor field, and it justifies the
 formula $E = V/d$ for the uniform field region.
 
-:::info Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
+:::info
+Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
 parallel plates is given. Edexcel: Only the uniform field result $E = V/d$ is required. OCR (A):
 Gauss's law may appear as extension material in Module 6. CIE: The infinite plane result is not in
 the syllabus but is useful for understanding parallel plates.
@@ -328,7 +331,8 @@ acquires a high potential. Their hair stands on end because each strand acquires
 charge, and strands repel each other via Coulomb's law — a vivid demonstration of electrostatic
 repulsion.
 
-:::info Board Coverage AQA: Van de Graaff generators are a specified practical context (required
+:::info
+Board Coverage AQA: Van de Graaff generators are a specified practical context (required
 practical 10). Edexcel: Mentioned in CP3 and CP6 as an example of charge accumulation and high
 potential. OCR (A): Can appear in Paper 2 as a context question. CIE: Not explicitly named but the
 underlying physics (field of a sphere, potential, discharge) is examined in P4.
@@ -377,7 +381,8 @@ The collection efficiency depends on the drift velocity of charged particles, wh
 both the charge acquired by the particle and the electric field strength. The Deutsch--Anderson
 equation relates collection efficiency $\eta$ to plate area, gas flow rate, and drift velocity.
 
-:::info Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
+:::info
+Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
 in Paper 2. Edexcel: Listed as an application in CP3. OCR (A): May appear as an unseen context
 question in Paper 2 requiring application of field and force principles. CIE: Industrial
 applications of electric fields are examinable in P4.
@@ -713,7 +718,8 @@ becoming significant at macroscopic scales where charges cancel almost perfectly
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Electric Fields**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-electric-fields) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electric Fields with other physics topics to test synthesis under exam conditions.
@@ -721,7 +727,8 @@ Ready to test your understanding of **Electric Fields**? The [diagnostic test](/
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing electric field strength E with electric potential V:** Electric field strength E is the FORCE per unit charge (a vector, measured in V/m or N/C). Electric potential V is the ENERGY per unit charge (a scalar, measured in volts). They are related by E = -dV/dr, but they are fundamentally different quantities.
 

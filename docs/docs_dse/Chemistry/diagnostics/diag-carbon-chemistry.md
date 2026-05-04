@@ -110,19 +110,9 @@ Name the following compounds using IUPAC systematic nomenclature:
 
 **2-Methylbutane**
 
-(b) Longest carbon chain = 5 carbons (pentane). Two methyl groups on carbon 3.
+(b) The structure is: C1($CH_{3}$)-C2($CH_{2}$)-C3($C(CH_{3})_{2}$)-C4($CH_{2}$)-C5($CH_{3}$).
 
-**2,2-Dimethylbutane**
-
-Wait, let me re-examine. $CH_{3}-CH_{2}-C(CH_{3})_{2}-CH_{2}-CH_{3}$:
-
-Counting the longest chain: $CH_{3}-CH_{2}-C-CH_{2}-CH_{3}$ = 5 carbons (pentane). The central carbon (C3) has two methyl groups attached.
-
-**2,2-Dimethylbutane** -- no, that would be a 4-carbon chain with two methyls on C2. Let me recount.
-
-The structure is: C1($CH_{3}$)-C2($CH_{2}$)-C3($C(CH_{3})_{2}$)-C4($CH_{2}$)-C5($CH_{3}$)
-
-That is a 5-carbon chain with two methyl groups on C3.
+The longest carbon chain has 5 carbons (pentane), with two methyl groups on carbon 3.
 
 **3,3-Dimethylpentane**
 

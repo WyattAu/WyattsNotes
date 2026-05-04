@@ -207,7 +207,8 @@ $$
 
 **Principal argument:** $\arg(z) \in (-\pi, \pi]$
 
-:::tip When finding $\arg(z)$, always draw a quick Argand diagram to check which quadrant the point
+:::tip
+When finding $\arg(z)$, always draw a quick Argand diagram to check which quadrant the point
 is in. A common mistake is to use the calculator value directly without adjusting for the correct
 quadrant.
 :::
@@ -345,7 +346,8 @@ $$
 | Polar     | $z = r(\cos\theta + i\sin\theta)$ | Multiplication, division  |
 | Euler     | $z = re^{i\theta}$                | Powers, roots (De Moivre) |
 
-:::tip Converting between forms is essential. A good strategy: always convert to polar/Euler form
+:::tip
+Converting between forms is essential. A good strategy: always convert to polar/Euler form
 before raising to a power or finding roots, and convert back to Cartesian for the final answer.
 :::
 
@@ -1066,7 +1068,8 @@ The solution set is $\{z = x + i(x - 1) : x \in \mathbb{R},\; z \neq 1,\; z \neq
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Complex Numbers**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-complex-numbers) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Complex Numbers with other IB mathematics topics to test synthesis under exam conditions.

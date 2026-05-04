@@ -71,7 +71,8 @@ String s2 = "hello";
 System.out.println(s1 == s2); // true
 ```
 
-:::warning Do not intern user-controlled strings at scale. The pool is unbounded, and interning
+:::warning
+Do not intern user-controlled strings at scale. The pool is unbounded, and interning
 billions of unique strings (e.g., every URL your crawler visits) will cause `OutOfMemoryError`.
 Intern only strings that appear frequently and have bounded cardinality.
 :::
@@ -219,7 +220,8 @@ String s = "Hello, World!";
 String sub = s.substring(7, 12); // "World"
 ```
 
-:::info Prior to JDK 7u6, `substring` shared the backing `char[]` with the original string, which
+:::info
+Prior to JDK 7u6, `substring` shared the backing `char[]` with the original string, which
 could cause memory leaks (the original large string could not be GC'd if a small substring was
 retained). Since JDK 7u6, `substring` copies the relevant portion into a new `char[]`.
 :::
@@ -320,7 +322,8 @@ emoji.codePoints().forEach(cp -> {
 // U+0048 U+0065 U+006C U+006C U+006F U+0020 U+1F30D
 ```
 
-:::warning Never use `charAt` or iterate `char`-by-`char` on strings that may contain surrogate
+:::warning
+Never use `charAt` or iterate `char`-by-`char` on strings that may contain surrogate
 pairs. Use `codePoints()`, `codePointAt()`, or iterate with `Character.isHighSurrogate` checks.
 :::
 
@@ -465,7 +468,8 @@ CharsetEncoder strict = StandardCharsets.UTF_8.newEncoder()
     .onUnmappableCharacter(CodingErrorAction.REPORT);
 ```
 
-:::warning Never rely on the platform default charset. It varies by operating system and locale
+:::warning
+Never rely on the platform default charset. It varies by operating system and locale
 setting. A program that works on Linux (UTF-8 default) will mangle data on Windows (Windows-1252
 default) if you use `getBytes()` or `new String(byte[])` without an explicit charset. Always use
 `StandardCharsets.UTF_8` or a specific `Charset` constant.
@@ -534,7 +538,8 @@ while (st.hasMoreTokens()) {
 String[] parts = "one,two,three".split(",");
 ```
 
-:::tip Always prefer `split` or compiled `Pattern` over `StringTokenizer`. The only advantage of
+:::tip
+Always prefer `split` or compiled `Pattern` over `StringTokenizer`. The only advantage of
 `StringTokenizer` is that it does not compile a regex, but `Pattern.compile(",")` is negligible.
 :::
 

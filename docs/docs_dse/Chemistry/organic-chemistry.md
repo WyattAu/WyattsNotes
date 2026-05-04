@@ -238,7 +238,8 @@ together) based on the atomic number of substituents:
 2. If the two highest-priority groups are on the **same** side: **Z**
 3. If the two highest-priority groups are on **opposite** sides: **E**
 
-:::info E/Z isomerism is a type of **stereoisomerism**. Stereoisomers have the same structural
+:::info
+E/Z isomerism is a type of **stereoisomerism**. Stereoisomers have the same structural
 formula but different spatial arrangements of atoms. For E/Z isomerism to occur, each carbon of the
 C=C must have two different substituents.
 :::
@@ -297,7 +298,8 @@ $$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm
 The minor product, 1-bromopropane ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}$), is formed
 in smaller amounts.
 
-:::tip Markovnikov's Rule can be remembered as "the rich get richer": the carbon with more H atoms
+:::tip
+Markovnikov's Rule can be remembered as "the rich get richer": the carbon with more H atoms
 gets the additional H.
 :::
 
@@ -472,7 +474,8 @@ $$\mathrm{C}_6\mathrm{H}_6 + \mathrm{CH}_3\mathrm{CO}^+ \to \mathrm{C}_6\mathrm{
 
 Product: phenylethanone (acetophenone).
 
-:::info Friedel-Crafts reactions cannot be used on benzene rings that already bear strongly
+:::info
+Friedel-Crafts reactions cannot be used on benzene rings that already bear strongly
 electron-withdrawing groups (e.g., $-\mathrm{NO}_2$) because these deactivate the ring towards
 electrophilic attack.
 :::
@@ -796,7 +799,8 @@ $$n\mathrm{CH}_2=\mathrm{CHX} \to \left[\mathrm{--CH}_2\mathrm{--CHX--}\right]_n
 | Polystyrene   | Phenylethene (styrene) | $--\mathrm{CH}_2\mathrm{--CH}(\mathrm{C}_6\mathrm{H}_5)--$ | Packaging, insulation      |
 | PTFE (Teflon) | Tetrafluoroethene      | $--\mathrm{CF}_2\mathrm{--CF}_2--$                         | Non-stick coatings         |
 
-:::tip When drawing addition polymers, always show the repeating unit in square brackets with n
+:::tip
+When drawing addition polymers, always show the repeating unit in square brackets with n
 outside. Include enough of the structure to show the pattern clearly (typically at least two
 repeating units).
 :::

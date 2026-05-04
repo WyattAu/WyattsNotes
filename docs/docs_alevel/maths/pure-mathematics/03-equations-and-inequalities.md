@@ -340,7 +340,8 @@ So $f(x) = (x - 1)(2x - 1)(x + 2)$.
 
 </details>
 
-:::tip When searching for roots, test the factors of the constant term first. For
+:::tip
+When searching for roots, test the factors of the constant term first. For
 $f(x) = x^n + \cdots + c$, the possible rational roots are $\pm 1, \pm 2, \ldots$ (factors of $c$).
 :::
 
@@ -930,7 +931,8 @@ Solutions: $(2, 3)$ and $(-2, -3)$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Equations and Inequalities**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-equations-and-inequalities) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Equations and Inequalities with other pure mathematics topics to test synthesis under exam conditions.

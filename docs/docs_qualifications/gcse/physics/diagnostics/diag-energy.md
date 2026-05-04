@@ -83,11 +83,9 @@ Time $= \frac{607,765}{2200} = 276.3$ s $\approx 4.6$ minutes.
 
 (c) Energy in kWh $= 607,765 / 3,600,000 = 0.1688$ kWh. Cost $= 0.1688 \times 28 = 4.73$ p.
 
-(d) Microwave energy input $= 800 \times 180 = 144,000$ J. Efficiency $= 516,600 / 144,000 = 3.59$.
+(d) Microwave energy input $= 800 \times 180 = 144,000$ J. The useful energy required to heat 1.5 kg from $18^\circ\text{C}$ to $100^\circ\text{C}$ is 516.6 kJ, which exceeds the input of 144 kJ. This means the scenario as stated is physically impossible.
 
-Wait, that exceeds 100%, which is impossible. Let me reconsider: if the microwave heats 1.5 kg from $18^\circ\text{C}$ to $100^\circ\text{C}$ in 3 minutes, the useful energy is 516.6 kJ but the input is only 144 kJ. This means the scenario is physically impossible. Let me adjust: perhaps the microwave heats less water, or to a lower temperature.
-
-Let me recalculate with a more realistic scenario: the microwave heats 0.3 kg from $18^\circ\text{C}$ to $80^\circ\text{C}$ in 3 minutes.
+With a more realistic scenario: the microwave heats 0.3 kg from $18^\circ\text{C}$ to $80^\circ\text{C}$ in 3 minutes.
 $\Delta E = 0.3 \times 4200 \times 62 = 78,120$ J. Input $= 800 \times 180 = 144,000$ J. Efficiency $= 78,120/144,000 = 54.3\%$.
 
 Cost of microwave $= 144,000 / 3,600,000 \times 28 = 0.04 \times 28 = 1.12$ p.

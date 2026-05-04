@@ -329,7 +329,8 @@ $\mathrm{CH}_4 \lt \mathrm{CH}_3\mathrm{Cl} \lt \mathrm{CH}_3\mathrm{NH}_2 \lt \
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Bonding and Structure**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-bonding-structure) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Bonding and Structure with other chemistry topics to test synthesis under exam conditions.

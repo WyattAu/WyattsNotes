@@ -14,7 +14,9 @@ sidebar_position: 1
 
 ## Biological Molecules
 
-:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2
+:::
 
 ## 1. Water
 
@@ -42,7 +44,8 @@ two through lone pairs on oxygen (acceptor). This extensive network gives water 
 boiling point ($100\ ^\circ\mathrm{C}$) compared to similarly sized molecules such as
 $\mathrm{H_2S}$ ($-60\ ^\circ\mathrm{C}$).
 
-:::warning Common Pitfall Students often confuse hydrogen bonds with covalent bonds. Hydrogen bonds
+:::warning
+Common Pitfall Students often confuse hydrogen bonds with covalent bonds. Hydrogen bonds
 are intermolecular forces -- they are much weaker ($\approx 20\ \mathrm{kJ\ mol^{-1}}$) than
 covalent bonds ($\approx 350\ \mathrm{kJ\ mol^{-1}}$). They form between a hydrogen atom covalently
 bonded to a highly electronegative atom (N, O, or F) and a lone pair on a neighbouring
@@ -488,7 +491,8 @@ entropy of the phospholipids themselves.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Biological Molecules**? The [diagnostic test](/docs/alevel/biology/diagnostics/diag-biological-molecules) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Biological Molecules with other biology topics to test synthesis under exam conditions.

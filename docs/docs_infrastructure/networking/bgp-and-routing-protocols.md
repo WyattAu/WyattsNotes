@@ -102,7 +102,8 @@ unreachable.
 | iBGP             | 200                     |
 | Unknown          | 255                     |
 
-:::info Administrative distance is a Cisco concept, but the principle exists in other vendors'
+:::info
+Administrative distance is a Cisco concept, but the principle exists in other vendors'
 implementations under different names (route preference, distance, or trust value). The numeric
 values may differ.
 :::
@@ -130,7 +131,8 @@ You can also specify the outbound interface instead of a next-hop:
 ip route 192.168.2.0 255.255.255.0 Ethernet0/1
 ```
 
-:::warning Specifying an outbound interface instead of a next-hop on a multi-access network (like
+:::warning
+Specifying an outbound interface instead of a next-hop on a multi-access network (like
 Ethernet) requires proxy ARP to function correctly, which can cause unexpected behavior. Prefer
 next-hop addresses on multi-access links.
 :::
@@ -327,7 +329,8 @@ calculations:
   - **NSSA (Not-So-Stubby Area):** Allows external routes to be imported as Type 7 LSAs, which the
     ABR converts to Type 5 LSAs for the rest of the OSPF domain.
 
-:::info Area design is one of the most critical decisions in an OSPF deployment. A poorly designed
+:::info
+Area design is one of the most critical decisions in an OSPF deployment. A poorly designed
 area topology causes excessive SPF recalculations, large routing tables, and slow convergence. Keep
 areas small, limit the number of ABRs, and avoid transit areas.
 :::
@@ -382,7 +385,8 @@ interface Ethernet0/0
   ip ospf priority 100
 ```
 
-:::warning DR/BDR election on NBMA networks (like Frame Relay or DMVPN) can cause unexpected
+:::warning
+DR/BDR election on NBMA networks (like Frame Relay or DMVPN) can cause unexpected
 behavior. On hub-and-spoke topologies, ensure the hub has the highest priority and all spokes have
 priority 0. Otherwise, a spoke might win the DR election, breaking routing.
 :::
@@ -519,7 +523,8 @@ By default, only K1 (bandwidth) and K3 (delay) are enabled (K1=1, K2=0, K3=1, K4
 | Reliability | Reliability of the path (0-255, where 255 is 100%)               |
 | Load        | Load on the path (0-255, where 255 is fully loaded)              |
 
-:::info Never enable K2 (load) or K5 (reliability) in production. These values fluctuate with
+:::info
+Never enable K2 (load) or K5 (reliability) in production. These values fluctuate with
 traffic, causing the metric to change constantly and leading to route flapping and instability.
 :::
 
@@ -606,7 +611,8 @@ interface Loopback0
   ip address 1.1.1.1 255.255.255.255
 ```
 
-:::info For iBGP sessions, use loopback interfaces as the source and configure
+:::info
+For iBGP sessions, use loopback interfaces as the source and configure
 `update-source Loopback0` and `next-hop-self`. For eBGP sessions, use directly connected interfaces
 (unless you are using multihop, which requires `ebgp-multihop`).
 :::
@@ -766,7 +772,8 @@ operators should follow:
 3. Coordinate and share contact information
 4. Publish routing policy (ROAs in RPKI)
 
-:::warning BGP hijacking is a real and ongoing threat. In 2008, Pakistan Telecom hijacked YouTube's
+:::warning
+BGP hijacking is a real and ongoing threat. In 2008, Pakistan Telecom hijacked YouTube's
 prefix (208.65.153.0/24) by advertising a more specific route, redirecting global YouTube traffic to
 Pakistan. In 2018, attackers hijacked Amazon's NS1 prefix to intercept cryptocurrency DNS traffic.
 Implement RPKI validation and prefix filtering on all BGP sessions.
@@ -1181,7 +1188,8 @@ show logging | include OSPF|BGP
 
 ### Debug Commands
 
-:::warning Debug commands can generate massive output and impact router performance. Use them
+:::warning
+Debug commands can generate massive output and impact router performance. Use them
 carefully, and always use `terminal monitor` and specific debug filters. Disable debug with
 `undebug all` as soon as you have the information you need.
 :::
@@ -1243,7 +1251,8 @@ router bgp 65001
   bgp dampening 5 750 2000 60    ! half-life, suppress, reuse, max-suppress (minutes)
 ```
 
-:::warning BGP dampening can cause more harm than good in some scenarios, particularly when a
+:::warning
+BGP dampening can cause more harm than good in some scenarios, particularly when a
 flapping route carries important traffic. Many operators prefer to fix the root cause of the
 flapping rather than suppress the route. Use dampening carefully.
 :::

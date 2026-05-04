@@ -206,7 +206,8 @@ $$
 The sign alternates: add singleton sizes, subtract pairwise intersections, add triple intersections,
 and so on.
 
-:::info Connection to Probability The inclusion-exclusion principle has a direct analogue in
+:::info
+Connection to Probability The inclusion-exclusion principle has a direct analogue in
 probability via the [addition rule](probability)). If $A, B$ are events in a sample space $S$,
 then:
 
@@ -299,7 +300,8 @@ $$
 \end{aligned}
 $$
 
-:::warning Only apply the division by 2 when the problem explicitly states that reflections are
+:::warning
+Only apply the division by 2 when the problem explicitly states that reflections are
 equivalent. For problems involving people seated at a round table, clockwise and anticlockwise
 orderings are distinct -- a seating where person $A$ has person $B$ on their left is different from
 person $B$ on their right.
@@ -772,7 +774,8 @@ $\binom{4+8-1}{4} = \binom{11}{4} = 330$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Combinatorics**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-combinatorics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Combinatorics with other DSE mathematics topics to test synthesis under exam conditions.

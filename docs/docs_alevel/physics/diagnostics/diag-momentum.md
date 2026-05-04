@@ -38,19 +38,17 @@ Before: $E_k = \frac{1}{2}(2.0)(4^2 + 3^2) = 1.0 \times 25 = 25\,\text{J}$
 
 After: $E_k = \frac{1}{2}(2.0)(1 + 16) + \frac{1}{2}(3.0)(11.11 + 0.444) = 17 + \frac{1}{2}(3.0)(11.56) = 17 + 17.33 = 34.3\,\text{J}$
 
-Since $34.3 \ne 25$, the collision is **not elastic** (kinetic energy is not conserved). In fact, KE has increased, which would require an internal energy source (e.g. an explosion). This scenario is physically unusual and highlights the importance of checking energy conservation.
+Verifying the kinetic energies:
 
-Wait, let me recheck. $\mathbf{v}_B = (10/3\hat{i} - 2/3\hat{j})$:
+$|\mathbf{v}_B|^2 = (10/3)^2 + (-2/3)^2 = 100/9 + 4/9 = 104/9 = 11.56$
 
-$|\mathbf{v}_B|^2 = 100/9 + 4/9 = 104/9 = 11.56$
+$E_{kA} = \frac{1}{2}(2.0)(1 + 16) = 17\,\text{J}$
 
-$E_{kB} = 0.5 \times 3.0 \times 11.56 = 17.33\,\text{J}$
-
-$E_{kA} = 0.5 \times 2.0 \times (1 + 16) = 17\,\text{J}$
+$E_{kB} = \frac{1}{2}(3.0)(11.56) = 17.33\,\text{J}$
 
 Total after $= 34.33\,\text{J}$, total before $= 25\,\text{J}$.
 
-KE increased by $9.33\,\text{J}$. The collision is **superelastic** -- energy was released from an internal store.
+Since $34.33 \ne 25$, the collision is **not elastic** (kinetic energy is not conserved). KE has increased by $9.33\,\text{J}$, making this a **superelastic** collision -- energy was released from an internal store (e.g. an explosion).
 
 (c) Impulse on $A$ $= \Delta\mathbf{p}_A = m_A(\mathbf{v}_A - \mathbf{u}_A)$
 

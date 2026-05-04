@@ -39,7 +39,8 @@ $$\mathrm{Long-run growth} = f(\Delta K, \Delta L, \Delta A)$$
 
 where $K$ = capital, $L$ = labour, $A$ = total factor productivity (technology and efficiency).
 
-:::info Board-Specific Note CIE (9708) distinguishes between market-oriented and interventionist
+:::info
+Board-Specific Note CIE (9708) distinguishes between market-oriented and interventionist
 supply-side policies and requires evaluation of both. AQA emphasises the effect of supply-side
 policies on the Phillips curve. Edexcel links supply-side policy to productivity and
 competitiveness.
@@ -334,7 +335,8 @@ However, the model may not be directly transferable: Nordic countries have small
 populations, strong social trust, and distinct institutional histories. The UK's larger, more
 diverse population and different political culture may make the Nordic approach harder to implement.
 
-:::info Board-Specific Note AQA and Edexcel both value comparative analysis of different countries'
+:::info
+Board-Specific Note AQA and Edexcel both value comparative analysis of different countries'
 supply-side approaches. CIE (9708) rewards discussion of how different institutional frameworks
 affect policy effectiveness. OCR (H460) may ask students to compare UK policy with other countries.
 The Nordic model is a strong evaluative point for any board.
@@ -379,7 +381,8 @@ services may benefit most from deregulation and competition, while education and
 require government leadership. A pragmatic approach selects the appropriate tool for each situation
 rather than adhering to a rigid ideological position.
 
-:::info Board-Specific Note AQA (7136) Paper 2 often asks candidates to evaluate the relative merits
+:::info
+Board-Specific Note AQA (7136) Paper 2 often asks candidates to evaluate the relative merits
 of market-oriented and interventionist supply-side policies. Edexcel (A) Paper 3 may present a
 scenario requiring analysis of both. CIE (9708) Paper 4 essays frequently require a balanced
 discussion. OCR (H460) emphasises the role of government in correcting market failure through
@@ -400,7 +403,8 @@ supply-side policy. All boards reward nuanced answers that recognise context mat
 supply-side policy to raise living standards in the long run. The two are complementary, not
 substitutes.
 
-:::tip Exam Technique The strongest evaluation answers recognise that supply-side policies take time
+:::tip
+Exam Technique The strongest evaluation answers recognise that supply-side policies take time
 to work. An economy in a deep recession needs immediate demand-side stimulus, not just long-run
 supply-side reforms. But sustained growth requires both. Always reference the time horizon.
 :::
@@ -465,7 +469,8 @@ failure (ambitious infrastructure projects that go over budget and under-deliver
 
 $$\mathrm{Net benefit of supply-side policy} = \mathrm{Efficiency gain} - \mathrm{Cost} - \mathrm{Distributional loss} - \mathrm{Government failure risk}$$
 
-:::tip Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
+:::tip
+Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
 [policy] may [benefit] because [reason]. On the other hand, [counter-argument] because [reason].
 However, the overall impact depends on [contextual factor]. Therefore, [judgement]." This "however,
 therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE) responses.

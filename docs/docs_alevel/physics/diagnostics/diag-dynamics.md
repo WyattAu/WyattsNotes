@@ -239,47 +239,19 @@ But there is also a component of weight down the slope: $mg\sin 10^\circ = 0.50 
 
 For the block not to slide, friction must provide both the centripetal force and counteract the weight component down the slope. Since the centripetal force is horizontal and the weight component is along the slope, we need to resolve more carefully.
 
-The friction acts along the plane. Resolving horizontally (centripetal direction):
+When the turntable is tilted, resolve the forces into horizontal (centripetal) and vertical directions. Friction acts along the surface, so its horizontal and vertical components are $F\cos 10^\circ$ and $F\sin 10^\circ$ respectively.
+
+Resolving horizontally (centripetal direction):
 
 $$F\cos 10^\circ = m\omega^2 r$$
 
-Resolving along the slope (to prevent sliding down):
+Resolving vertically:
 
-$$F\sin 10^\circ + mg\sin 10^\circ \text{ component check:}$$
+$$R\cos 10^\circ + F\sin 10^\circ = mg$$
 
-Actually, resolving perpendicular to the slope (for $R$): $R = mg\cos 10^\circ$ (the rotation doesn't change this since the rotation axis is vertical).
+$$R = \frac{mg - F\sin 10^\circ}{\cos 10^\circ}$$
 
-Along the slope: friction must balance the weight component plus provide the centripetal force component along the slope.
-
-$$F = mg\sin 10^\circ + m\omega^2 r\cos 10^\circ$$
-
-Wait, let me redo this more carefully.
-
-Resolving horizontally: $F\cos 10^\circ - R\sin 10^\circ = m\omega^2 r$
-
-But $R = mg\cos 10^\circ$ only if we ignore the friction component perpendicular to the plane. Let me use a more careful analysis.
-
-Resolving perpendicular to the plane: $R - mg\cos 10^\circ = 0$ (no acceleration perpendicular to plane), so $R = mg\cos 10^\circ$.
-
-Resolving horizontally (centripetal): $F\cos 10^\circ - R\sin 10^\circ = m\omega^2 r$
-
-Wait, actually friction acts along the plane. Let me resolve the friction into horizontal and vertical components.
-
-$F_{\text{horizontal}} = F\cos 10^\circ$
-
-$F_{\text{vertical}} = F\sin 10^\circ$
-
-Resolving horizontally: $F\cos 10^\circ = m\omega^2 r$
-
-Resolving vertically: $R\cos 10^\circ + F\sin 10^\circ = mg$
-
-So $R = \frac{mg - F\sin 10^\circ}{\cos 10^\circ}$
-
-At limiting friction: $F = \mu_s R$
-
-From the horizontal equation: $F = \frac{m\omega^2 r}{\cos 10^\circ}$
-
-Substituting:
+At limiting friction: $F = \mu_s R$. From the horizontal equation: $F = \frac{m\omega^2 r}{\cos 10^\circ}$. Substituting:
 
 $$\frac{m\omega^2 r}{\cos 10^\circ} = \mu_s \cdot \frac{mg - \frac{m\omega^2 r \sin 10^\circ}{\cos 10^\circ}}{\cos 10^\circ}$$
 
@@ -334,11 +306,7 @@ Taking rightward as positive: $v_A = 2.68\,\text{m}\,\text{s}^{-1}$ (leftward), 
 
 At the moment of collision between $A$ and $B$: $A$ is still moving left at $2.68\,\text{m}\,\text{s}^{-1}$ and $B$ is moving left at $1.0\,\text{m}\,\text{s}^{-1}$.
 
-Wait, we need to set up directions carefully. Let rightward be positive.
-
-Initially after spring: $v_A = -2.68\,\text{m}\,\text{s}^{-1}$ (leftward), $v_B = +1.79\,\text{m}\,\text{s}^{-1}$ (rightward).
-
-$B$ hits the wall and rebounds: $v_B' = -1.0\,\text{m}\,\text{s}^{-1}$ (leftward).
+Taking rightward as positive: $v_A = -2.68\,\text{m}\,\text{s}^{-1}$ (leftward), $v_B' = -1.0\,\text{m}\,\text{s}^{-1}$ (leftward after rebounding from the wall).
 
 For the $A$-$B$ collision (they stick together, perfectly inelastic):
 

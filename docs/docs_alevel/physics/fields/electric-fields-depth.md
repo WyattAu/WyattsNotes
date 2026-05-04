@@ -10,7 +10,9 @@ slug: electric-fields-depth
 
 ## Electric Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 ## 1. Coulomb's Law
 
@@ -237,7 +239,8 @@ $$S = \frac{y}{V_d} = \frac{eL^2}{2m_e v^2 d} = \frac{L^2}{4V_{\mathrm{acc}}\,d}
 where $L$ is the plate length and $d$ is the plate separation. Higher sensitivity requires longer
 plates, closer spacing, and lower acceleration voltage.
 
-:::warning Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc}}$
+:::warning
+Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc}}$
 (which determines beam speed) with the deflection voltage $V_d$ (which determines deflection). The
 deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$.
 :::

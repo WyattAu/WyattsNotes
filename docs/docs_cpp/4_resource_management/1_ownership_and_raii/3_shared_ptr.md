@@ -57,7 +57,8 @@ A control block is created at the following points:
 3. `std::allocate_shared&lt;T&gt;(alloc, args...)` — uses custom allocator for both
 4. Constructing from a `std::weak_ptr` via `weak_ptr::lock()` — reuses existing control block
 
-:::warning Never construct multiple `shared_ptr` instances from the same raw pointer. Each
+:::warning
+Never construct multiple `shared_ptr` instances from the same raw pointer. Each
 construction creates a new control block, leading to multiple destructions (double-free):
 
 ````cpp
@@ -213,7 +214,8 @@ shared_ptr(new Sensor) (two allocations):
   Two allocations, two frees
 ```
 
-:::info Relevance `std::make_shared` performs a single allocation (better cache locality, fewer
+:::info
+Relevance `std::make_shared` performs a single allocation (better cache locality, fewer
 syscalls). However, the control block and object share the same memory block, so the memory for the
 control block cannot be freed until **all** `weak_ptr` references are also gone. For very large
 objects with long-lived `weak_ptr` observers, this can delay deallocation.
@@ -345,7 +347,8 @@ sequentially-consistent operations. The implications:
   ordered such that the caller can safely access the object on the same thread without a subsequent
   memory barrier.
 
-:::info Relevance In practice, some implementations (notably libstdc++) use `memory_order_acq_rel`
+:::info
+Relevance In practice, some implementations (notably libstdc++) use `memory_order_acq_rel`
 for increment and `memory_order_acq_rel` for decrement instead of `seq_cst`, which is valid because
 the standard only requires that the control block operations do not race with each other. The
 stronger `seq_cst` default is a conservative choice that implementations may relax.
@@ -496,7 +499,8 @@ int main() {
 }
 ```
 
-:::warning COW with `shared_ptr` has thread-safety subtleties. The `unique()` check is a data race
+:::warning
+COW with `shared_ptr` has thread-safety subtleties. The `unique()` check is a data race
 if another thread might modify the object concurrently. COW is safe only in single-threaded contexts
 or with external synchronization. `std::string` implementations have moved away from COW for this
 reason.
@@ -526,7 +530,8 @@ matters in memory-constrained applications or when storing many pointers in cont
 4. **Cache pressure:** The control block is a separate allocation, causing an additional cache miss
    on every `shared_ptr` copy or destruction.
 
-:::warning Do not use `shared_ptr` by default. Use `unique_ptr` as your default smart pointer. Only
+:::warning
+Do not use `shared_ptr` by default. Use `unique_ptr` as your default smart pointer. Only
 reach for `shared_ptr` when you genuinely need shared ownership. Premature use of `shared_ptr` is a
 common source of performance bugs in C++ codebases.
 :::
@@ -616,7 +621,8 @@ int main() {
 }
 ```
 
-:::warning Calling `shared_from_this()` on an object that is not managed by a `shared_ptr` (e.g., a
+:::warning
+Calling `shared_from_this()` on an object that is not managed by a `shared_ptr` (e.g., a
 stack-allocated object or one owned by `unique_ptr`) is undefined behavior. The internal
 `weak_this_` is uninitialized, and `lock()` on an empty `weak_ptr` returns a null `shared_ptr`,
 which when dereferenced causes undefined behavior. Some implementations throw `std::bad_weak_ptr` in

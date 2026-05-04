@@ -94,7 +94,8 @@ $$s_2 = \frac{1}{2}(u + v)t_2 = \frac{1}{2}(12 + 0)(4) = 24\;\mathrm{m}$$
 
 $$s_{\mathrm{total}} = 36 + 24 = 60\;\mathrm{m}$$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 When a problem has multiple stages, the **final velocity of one stage becomes the initial velocity
 of the next**. Forgetting this connection is the most frequent error in multi-stage kinematics
 problems.

@@ -28,7 +28,8 @@ determined.
 | OCR (A)    | Paper 2 | Projectiles on inclined planes                 |
 | CIE (9231) | M2      | Full coverage including inclined planes        |
 
-:::info In projectile motion, air resistance is always neglected unless stated otherwise. The only
+:::info
+In projectile motion, air resistance is always neglected unless stated otherwise. The only
 acceleration is $g = 9.8\,\mathrm{m s}^{-2}$ acting vertically downward. Take care with sign
 conventions — define upward as positive at the start and be consistent.
 :::
@@ -134,7 +135,8 @@ $$\boxed{R = \frac{V^2\sin 2\theta}{g}}$$
 This is maximised when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$, giving
 $R_{\max} = \dfrac{V^2}{g}$. $\blacksquare$
 
-:::info For a given speed $V$, complementary angles give the same range: $\theta$ and $90° - \theta$
+:::info
+For a given speed $V$, complementary angles give the same range: $\theta$ and $90° - \theta$
 both produce $R = \dfrac{V^2\sin 2\theta}{g}$. However, the trajectories are different — the steeper
 angle gives a higher but shorter arc.
 :::

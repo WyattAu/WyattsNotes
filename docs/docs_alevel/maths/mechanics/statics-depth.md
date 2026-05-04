@@ -65,7 +65,8 @@ Resolving vertically: $R_A + R_C = 20g + 50$
 
 $$R_A = 20g + 50 - 139 = 196 + 50 - 139 = 107\;\mathrm{N}$$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 When taking moments, always measure the **perpendicular distance** from the line of action of the
 force to the pivot point, not just the distance along the beam.
 :::
@@ -198,7 +199,8 @@ $$\bar{y} = \frac{48 \times 3 - 8\pi\!\left(6 - \frac{16}{3\pi}\right)}{48 - 8\p
 
 $$\bar{y} = \frac{144 + 42.67 - 150.80}{48 - 25.13} = \frac{35.87}{22.87} \approx 1.57\;\mathrm{cm}$$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 When a shape has a hole or a section removed, use the **negative mass** method: treat the removed
 section as having negative area. The formula remains the same but with negative contributions from
 the removed part.

@@ -120,9 +120,7 @@ Element $Y$ is in Period 4. The ratio of its 3rd ionisation energy to its 2nd io
 
 (a) The large jump from 2nd to 3rd IE (ratio 8.5) indicates that the 3rd electron is removed from a new inner shell. The 4th IE is only 1.4 times the 3rd, meaning the 4th electron is still in the same shell as the 3rd. Therefore $Y$ has **two valence electrons** and is in **Group 2**.
 
-(b) $Y$ is potassium ($K$, Group 1, Period 4) -- wait, the ratio of 3rd/2nd IE being 8.5 indicates Group 2. Let me reconsider.
-
-$Y$ is in Group 2, Period 4: $Y = Ca$ ($Z = 20$). The element to its right is $Sc$ ($Z = 21$, Group 3, Period 4).
+(b) $Y$ is in Group 2, Period 4: $Y = Ca$ ($Z = 20$). The element to its right is $Sc$ ($Z = 21$, Group 3, Period 4).
 
 The decrease from Ca ($419$) to Sc ($403$) occurs because:
 - Ca has the electron configuration $[Ar]\,4s^{2}$: both $4s$ electrons are paired in the same orbital.
@@ -197,9 +195,10 @@ The graph below (described verbally) shows the first ionisation energies of elem
 
 Al's 2nd IE removes a $3p$ electron from $Al^{+}$ (configuration $1s^{2}2s^{2}2p^{6}3s^{2}$).
 
-Although Al has a greater nuclear charge ($Z = 13$ vs $Z = 12$), Mg's 2nd IE is lower because the electron being removed from $Mg^{+}$ is from the $3s$ subshell which is already partially depleted (only one electron left, so less inter-electronic repulsion), whereas the electron being removed from $Al^{+}$ is from $3s^{2}$ which has a paired configuration. Actually, the more precise explanation: $Mg^{+}$ has only one $3s$ electron (no pairing repulsion), and $Al^{+}$ has two paired $3s$ electrons. Wait -- let me reconsider.
-
-The key: $Mg^{+}$ ($1s^{2}2s^{2}2p^{6}3s^{1}$) has its valence electron in $3s$ with no pairing repulsion, but it is the **only** electron in the $n=3$ shell so it experiences the full effective nuclear charge of Mg ($Z = 12$) shielded only by the 10 inner electrons. $Al^{+}$ ($1s^{2}2s^{2}2p^{6}3s^{2}$) has $Z = 13$, and removing one $3s$ electron leaves $Al^{2+}$ with noble gas configuration. The greater nuclear charge of Al more than compensates, making Al's 2nd IE higher.
+Although $Mg^{+}$ ($1s^{2}2s^{2}2p^{6}3s^{1}$) has only one valence electron (no pairing repulsion),
+$Al^{+}$ ($1s^{2}2s^{2}2p^{6}3s^{2}$) has $Z = 13$ and removing one $3s$ electron leaves $Al^{2+}$ with
+noble gas configuration. The greater nuclear charge of Al more than compensates for the pairing
+repulsion in the $3s$ orbital, making Al's 2nd IE higher.
 
 (c) Si 3rd IE: removes the third valence electron from $Si^{2+}$ ($1s^{2}2s^{2}2p^{6}3s^{1}$). This requires breaking into the noble gas core, producing $Si^{3+}$ ($1s^{2}2s^{2}2p^{5}$).
 

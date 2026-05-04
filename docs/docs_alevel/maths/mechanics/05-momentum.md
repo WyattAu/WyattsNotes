@@ -20,7 +20,8 @@ slug: momentum
 | OCR (A)    | Paper 1 | Includes 2D collisions         |
 | CIE (9709) | P4      | Momentum, impulse, restitution |
 
-:::info Momentum is a vector quantity. Always define a positive direction and be consistent with
+:::info
+Momentum is a vector quantity. Always define a positive direction and be consistent with
 signs.
 :::
 

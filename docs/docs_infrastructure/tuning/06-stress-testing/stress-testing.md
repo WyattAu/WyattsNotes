@@ -125,7 +125,8 @@ sudo apt install intel-mkl
 ./linpack_xeon64
 ```
 
-:::warning Linpack generates extreme power consumption — often exceeding the CPU's rated TDP by
+:::warning
+Linpack generates extreme power consumption — often exceeding the CPU's rated TDP by
 30–50%. This can push VRMs and PSU beyond their rated capacity. Only use Linpack for brief thermal
 profiling (5–10 minutes), not for extended stability testing.
 :::
@@ -282,7 +283,8 @@ sudo badblocks -wsv /dev/sdX
 sudo badblocks -sv /dev/sdX
 ```
 
-:::warning `badblocks -w` is destructive — it overwrites all data on the device. Only use on
+:::warning
+`badblocks -w` is destructive — it overwrites all data on the device. Only use on
 unpartitioned drives or drives whose data you have backed up.
 :::
 

@@ -1335,7 +1335,8 @@ than $\mathrm{F}$.
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing first ionisation energy with electronegativity:** First ionisation energy is the energy required to REMOVE the outermost electron from a gaseous atom. Electronegativity is the ability of an atom to ATTRACT electrons in a covalent bond. Both generally increase across a period, but they measure fundamentally different properties and have different periodic trends down a group.
 

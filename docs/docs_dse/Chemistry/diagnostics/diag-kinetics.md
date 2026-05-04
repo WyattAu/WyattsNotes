@@ -42,39 +42,10 @@ $[B]$ doubles (0.10 to 0.20), rate quadruples ($1.2 \times 10^{-4}$ to $4.8 \tim
 
 Rate $\propto [B]^{2}$, so **order with respect to $B$ = 2**.
 
-Verification with experiment 4: Rate $\propto 0.30 \times 0.30^{2} = 0.30 \times 0.090 = 0.0270$
-
-Ratio: $0.0270 / (0.10 \times 0.10^{2}) = 0.0270 / 0.00100 = 27$
-
-Expected rate: $27 \times 1.2 \times 10^{-4} = 3.24 \times 10^{-3}$
-
-Hmm, this does not match $2.16 \times 10^{-3}$. Let me recheck.
-
-Actually, let me re-examine experiment 4. Rate = $k \times 0.30 \times 0.30^{2} = k \times 0.027$.
-
-From experiment 1: $k = 1.2 \times 10^{-4} / (0.10 \times 0.10^{2}) = 1.2 \times 10^{-4} / 0.001 = 0.12$.
-
-Rate for experiment 4 = $0.12 \times 0.027 = 3.24 \times 10^{-3}$.
-
-This does not match. Let me reconsider the orders.
-
-Let me try: order w.r.t. $A$ = 1 (confirmed by exp 1 vs 2), and re-examine $B$.
-
-Exp 1 vs 3: $[B]$ doubles, rate goes from $1.2 \times 10^{-4}$ to $4.8 \times 10^{-4}$ -- that is $\times 4$, so order 2.
-
-With exp 4: predicted = $0.12 \times 0.30 \times 0.09 = 3.24 \times 10^{-3}$.
-
-But given rate is $2.16 \times 10^{-3}$. The ratio: $2.16 / 3.24 = 0.667 = 2/3$.
-
-Let me try order w.r.t. $A = 1$ and order w.r.t. $B = 1$:
-
-$k = 1.2 \times 10^{-4} / (0.10 \times 0.10) = 0.012$
-
-Exp 4 predicted: $0.012 \times 0.30 \times 0.30 = 0.012 \times 0.09 = 1.08 \times 10^{-3}$ -- does not match either.
-
-Let me try order w.r.t. $A = 1$, $B = 2$, but adjust exp 4 to be consistent. Let me assume the data in exp 4 should be $3.24 \times 10^{-3}$ instead. The problem setter likely intended consistent data. I will proceed with orders $A=1$, $B=2$ and note the consistency check.
-
-Actually, for the purpose of this diagnostic, let me adjust: the problem is solvable with orders $A=1$, $B=2$. The exp 4 value is likely a typo or designed to test if students verify. I'll proceed with the standard approach and note it.
+**Verification with experiment 4:** With orders $A = 1$, $B = 2$: predicted rate $= 0.12 \times 0.30
+\times 0.30^{2} = 3.24 \times 10^{-3}$. The given value of $2.16 \times 10^{-3}$ does not match.
+Experiment 4 may contain a typo, or is designed to test whether students verify all data points.
+Proceeding with orders $A = 1$, $B = 2$ as determined from experiments 1--3.
 
 (b) Rate equation: $\text{Rate} = k[A][B]^{2}$
 

@@ -14,7 +14,9 @@ slug: cell-biology
 
 ## Cell Biology
 
-:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway B1 | WJEC B1 :::
+:::info
+Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway B1 | WJEC B1
+:::
 
 ## 1. Cell Structure
 

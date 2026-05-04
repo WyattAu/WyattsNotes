@@ -7,7 +7,8 @@ description: Comprehensive guide to logic for the International Baccalaureate.
 ---
 
 
-:::info TMUA Specification
+:::info
+TMUA Specification
 
 - The Logic of Arguments
 - Arg1 Understand and be able to use mathematical logic in simple situations:

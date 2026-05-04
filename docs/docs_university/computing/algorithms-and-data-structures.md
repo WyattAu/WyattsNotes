@@ -1570,7 +1570,8 @@ For each clause vertex $c_{jk}$, connect it to the literal vertex corresponding 
 The reduction takes polynomial time (number of vertices and edges is polynomial in the formula size).
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 NP-hardness does not mean the problem is unsolvable. It means there is no known polynomial-time
 algorithm. Many NP-complete problems have efficient approximation algorithms or can be solved
 exactly for practical input sizes using branch-and-bound or SAT solvers.

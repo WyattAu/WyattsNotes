@@ -171,9 +171,8 @@ $$= -84.7 - 52.2 - 0 = -136.9 \text{ kJ/mol}$$
 (b) Bonds broken:
 - $C=C$: 612 kJ/mol
 - $H-H$: 436 kJ/mol
-- $4 \times C-H$: $4 \times 412 = 1648$ kJ/mol (the 4 $C-H$ bonds on the $CH_{2}=CH_{2}$ that remain)
-
-Wait -- let me be more careful. In $C_{2}H_{4}$ ($H_{2}C=CH_{2}$): there are $1 \times C=C$, $4 \times C-H$ bonds. In $H_{2}$: $1 \times H-H$.
+In $C_{2}H_{4}$ ($H_{2}C=CH_{2}$): there are $1 \times C=C$ and $4 \times C-H$ bonds. In
+$H_{2}$: $1 \times H-H$.
 
 Bonds broken: $C=C + H-H + 4 \times C-H = 612 + 436 + 1648 = 2696$ kJ/mol
 

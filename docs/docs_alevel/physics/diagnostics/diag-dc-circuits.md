@@ -168,13 +168,7 @@ A solar panel produces an EMF of $18.0\,\text{V}$ and has internal resistance $2
 
 **Solution:**
 
-(a) Initial current (capacitor uncharged, so it acts as a short circuit initially -- but in parallel with the battery, the capacitor voltage is clamped to the battery terminal voltage):
-
-Actually, the capacitor in parallel with the battery means the capacitor charges to the battery terminal voltage. The steady-state current is determined by the series circuit of solar panel, internal resistances, and battery.
-
-Initial current (capacitor acts as short circuit): effectively, the capacitor provides an alternative path. In the initial instant, the capacitor has zero charge and zero voltage, so it draws maximum current. However, since the battery is in parallel, the circuit is more complex.
-
-In practice, the capacitor charges to the terminal voltage of the battery. The charging circuit current (through the solar panel):
+(a) The capacitor is in parallel with the battery, so the capacitor charges to the battery terminal voltage. The steady-state charging current is determined by the series circuit of solar panel, internal resistances, and battery:
 
 $$I = \frac{\varepsilon_{\text{panel}} - V_{\text{battery terminal}}}{r_{\text{panel}}}$$
 
@@ -186,7 +180,7 @@ $$I = \frac{18.0 - (12.0 + I)}{2.0}$$
 $$2I = 6.0 - I$$
 $$3I = 6.0 \Rightarrow I = 2.0\,\text{A}$$
 
-This is the steady-state charging current. Initially, the capacitor draws additional current, but the steady-state battery charging current is $2.0\,\text{A}$.
+The steady-state charging current is $2.0\,\text{A}$. Initially, the uncharged capacitor draws additional transient current, but this decays exponentially.
 
 (b) Power from panel: $P_{\text{panel}} = \varepsilon_{\text{panel}} \times I = 18.0 \times 2.0 = 36.0\,\text{W}$
 
@@ -227,13 +221,9 @@ Open-circuit voltage: $V_{\text{OC}} = 24 - 1.5(1 + 5) = 24 - 9 = 15\,\text{V}$
 
 Or: $V_{\text{OC}} = I \times R_2 = 1.5 \times 10 = 15\,\text{V}$. Consistent.
 
-Internal resistance (replace the $24\,\text{V}$ source with a short circuit):
+Internal resistance (replace the $24\,\text{V}$ source with a short circuit, and remove $R_3$):
 
-$$R_{\text{Th}} = 1 + 5 \parallel 10 = 1 + \frac{5 \times 10}{5 + 10} = 1 + 3.33 = 4.33\,\Omega$$
-
-Wait, with the supply shorted, $R_1$ is in series with $r$, and $R_2$ is in parallel with that combination? No. With $R_3$ removed and the supply shorted:
-
-$r = 1\,\Omega$ and $R_1 = 5\,\Omega$ are in series $= 6\,\Omega$. This is in parallel with $R_2 = 10\,\Omega$.
+$r = 1\,\Omega$ and $R_1 = 5\,\Omega$ are in series $= 6\,\Omega$. This combination is in parallel with $R_2 = 10\,\Omega$.
 
 $$R_{\text{Th}} = \frac{6 \times 10}{6 + 10} = \frac{60}{16} = 3.75\,\Omega$$
 
@@ -280,17 +270,13 @@ The ammeter under-reads by about $1\%$ because it adds its own resistance to the
 
 (c) With voltmeter in parallel: $R \parallel R_V = \frac{47 \times 5000}{47 + 5000} = \frac{235000}{5047} = 46.56\,\Omega$
 
-The voltmeter draws current, reducing the voltage across $R$. If the supply has negligible internal resistance:
+The voltmeter draws current, reducing the voltage across $R$. With an ideal supply (negligible internal resistance) and only the parallel combination as the load:
 
-$$V_{\text{across } R \parallel R_V} = 9.0\,\text{V}$$ (since no other resistance in circuit)
-
-Wait, with just the supply and $R \parallel R_V$:
+$$V_{\text{across } R \parallel R_V} = 9.0\,\text{V}$$
 
 $$I_{\text{total}} = 9.0/46.56 = 0.1933\,\text{A}$$
 
-Voltage across the parallel combination $= 9.0\,\text{V}$.
-
-But the voltmeter reads $9.0\,\text{V}$, which is the terminal voltage. The voltage across $R$ alone (without the voltmeter loading it) would be $9.0\,\text{V}$ too (since it's the only component). So in this case, the loading effect doesn't change the reading because there's no other resistance in the circuit.
+The voltmeter reads $9.0\,\text{V}$, which equals the ideal value. This is because with no other resistance in the circuit, the full supply voltage appears across the parallel combination regardless of the voltmeter's loading effect.
 
 However, if the supply has internal resistance $r = 5\,\Omega$:
 

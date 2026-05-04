@@ -1948,44 +1948,64 @@ to extinction (competitive exclusion).
 
 ## 10. Common Pitfalls
 
-:::caution Common Pitfall When using undetermined coefficients, always check whether your guess
+:::caution
+Common Pitfall When using undetermined coefficients, always check whether your guess
 overlaps with the homogeneous solution. For $y'' - 4y = e^{2x}$, guessing $y_p = Ae^{2x}$ fails
-because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead. :::
+because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead.
+:::
 
-:::caution Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$, not $sY(s)$. The
-initial conditions are built into the transform. Forgetting them leads to incorrect solutions. :::
+:::caution
+Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$, not $sY(s)$. The
+initial conditions are built into the transform. Forgetting them leads to incorrect solutions.
+:::
 
-:::caution Common Pitfall Separation of variables can miss solutions. When dividing by $h(y)$ to
+:::caution
+Common Pitfall Separation of variables can miss solutions. When dividing by $h(y)$ to
 separate, check whether $h(y) = 0$ gives any valid solutions. For example, solving $y' = y^2$ by
-separating gives $y = -1/(x + C)$, but misses the solution $y = 0$. :::
+separating gives $y = -1/(x + C)$, but misses the solution $y = 0$.
+:::
 
-:::caution Common Pitfall The Fourier series of a function converges to the function only at points
+:::caution
+Common Pitfall The Fourier series of a function converges to the function only at points
 of continuity. At jump discontinuities, it converges to the midpoint of the jump. The Gibbs
-phenomenon causes overshoots near jumps that do not vanish as more terms are added. :::
+phenomenon causes overshoots near jumps that do not vanish as more terms are added.
+:::
 
-:::caution Common Pitfall When solving PDEs by separation of variables, the boundary conditions
+:::caution
+Common Pitfall When solving PDEs by separation of variables, the boundary conditions
 determine the eigenvalues. Using the wrong boundary conditions (e.g., Neumann instead of Dirichlet)
-leads to a completely different set of eigenfunctions and eigenvalues. :::
+leads to a completely different set of eigenfunctions and eigenvalues.
+:::
 
-:::caution Common Pitfall Not every first-order ODE can be solved analytically. Equations like
+:::caution
+Common Pitfall Not every first-order ODE can be solved analytically. Equations like
 $y' = x^2 + y^2$ have no closed-form solution in terms of elementary functions. Numerical methods
-(Euler, Runge-Kutta) may be necessary. :::
+(Euler, Runge-Kutta) may be necessary.
+:::
 
-:::caution Common Pitfall The linearization of a nonlinear system near a critical point is only
+:::caution
+Common Pitfall The linearization of a nonlinear system near a critical point is only
 valid for hyperbolic critical points (no eigenvalues on the imaginary axis). If eigenvalues lie on
-the imaginary axis, the nonlinear system can behave very differently from its linearization. :::
+the imaginary axis, the nonlinear system can behave very differently from its linearization.
+:::
 
-:::caution Common Pitfall When computing the inverse Laplace transform, always check that the
+:::caution
+Common Pitfall When computing the inverse Laplace transform, always check that the
 partial fraction decomposition is correct before inverting term-by-term. A common error is
-forgetting to include all powers of irreducible quadratic factors. :::
+forgetting to include all powers of irreducible quadratic factors.
+:::
 
-:::caution Common Pitfall For the Euler-Cauchy equation $x^2 y'' + axy' + by = 0$, remember that
+:::caution
+Common Pitfall For the Euler-Cauchy equation $x^2 y'' + axy' + by = 0$, remember that
 $x^r$ with complex $r = \alpha \pm i\beta$ gives solutions involving $\cos(\beta \ln x)$ and
-$\sin(\beta \ln x)$, not $\cos(\beta x)$ and $\sin(\beta x)$. :::
+$\sin(\beta \ln x)$, not $\cos(\beta x)$ and $\sin(\beta x)$.
+:::
 
-:::caution Common Pitfall The Wronskian $W(y_1, y_2)$ being zero at a single point does not
+:::caution
+Common Pitfall The Wronskian $W(y_1, y_2)$ being zero at a single point does not
 necessarily mean the solutions are linearly dependent. For linear ODEs with continuous coefficients,
-$W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity. :::
+$W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity.
+:::
 
 
 ### 9.9 Worked Example: Lyapunov Function

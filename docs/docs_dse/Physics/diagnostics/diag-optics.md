@@ -45,9 +45,8 @@ $$m_2 = -\frac{v_2}{u_2} = -\frac{-6}{10} = 0.6$$
 
 $$m_{\text{total}} = m_1 \times m_2 = -1 \times 0.6 = -0.6$$
 
-The final image is virtual, upright (since $m = -0.6$ in the real-is-positive convention means inverted... let me re-check), and diminished to $0.6$ times the object size.
-
-**Re-checking sign convention:** In the "real is positive" convention, negative magnification means inverted. So $m = -0.6$ means the image is inverted and diminished.
+In the "real is positive" convention, $m = -0.6$ means the image is **inverted** and **diminished**
+to $0.6$ times the object size.
 
 **Key misconception:** Students often forget that the image from the first lens becomes the object for the second lens, and must correctly calculate $u_2$ accounting for the lens separation.
 
@@ -169,19 +168,12 @@ $$\frac{1}{v_1} = \frac{1}{f} - \frac{1}{u_1} = \frac{1}{15} - \frac{1}{10} = \f
 
 $$v_1 = -30 \text{ cm} \text{ (virtual image, 30 cm to the left of the lens)}$$
 
-Wait -- this virtual image is on the same side as the object. The light rays diverge after passing through the lens and would not reach the mirror. Let me reconsider.
-
-Actually, in this configuration, the light first passes through the lens, then reflects off the mirror, then passes through the lens again.
-
-**Step 1: Light passes through lens (object at 10 cm from lens):**
-
-$$v_1 = -30 \text{ cm}$$
-
-This means the lens alone would form a virtual image 30 cm to the left. But the rays actually continue to the right (they are diverging after the lens) and hit the mirror.
-
 **Step 2: Reflection from the mirror:**
 
-The diverging rays from the lens hit the mirror 20 cm behind the lens. For the mirror, the "object" is the virtual image of the lens at 30 cm to the left of the lens, which is $30 + 20 = 50$ cm to the left of the mirror. This is a virtual object for the mirror.
+The light first passes through the lens, then reflects off the mirror, then passes through the lens
+again. The diverging rays from the lens continue to the right and hit the mirror. For the mirror, the
+"object" is the virtual image of the lens at 30 cm to the left of the lens, which is $30 + 20 = 50$
+cm to the left of the mirror. This is a virtual object for the mirror.
 
 For a plane mirror, image distance $=$ object distance (on the other side):
 

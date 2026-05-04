@@ -446,7 +446,8 @@ $$(1 - i)^8 = (\sqrt{2})^8\, e^{-8\pi i/4} = 16\, e^{-2\pi i} = 16$$
 
 $$\frac{(1 + i)^{10}}{(1 - i)^8} = \frac{32i}{16} = 2i$$
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 
 When computing arguments, always verify the quadrant. $\arctan(b/a)$ alone gives the correct angle
 only when $a \gt 0$. For other quadrants, add or subtract $\pi$ as needed. Using $\mathrm{atan2}(b, a)$

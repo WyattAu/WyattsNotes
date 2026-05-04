@@ -20,7 +20,8 @@ slug: data-representation
 | OCR (A)    | Paper 1 | Includes outlier detection                    |
 | CIE (9709) | P1, P6  | Data handling in P1; further statistics in P6 |
 
-:::info You must know when to use the sample variance formula (dividing by $n-1$) versus the
+:::info
+You must know when to use the sample variance formula (dividing by $n-1$) versus the
 population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data.
 :::
 
@@ -102,7 +103,8 @@ $$
 \end{aligned}
 $$
 
-:::tip This formula is computationally more efficient and is the one you should use in exams. Just
+:::tip
+This formula is computationally more efficient and is the one you should use in exams. Just
 remember: "mean of squares minus square of mean."
 :::
 
@@ -172,7 +174,8 @@ $$\sigma_y^2 = \frac{1}{n}\sum(y_i - \bar{y})^2 = \frac{1}{n}\sum\left(\frac{x_i
 
 Hence $\sigma_y = \sigma_x/|c|$. $\blacksquare$
 
-:::tip Coding makes computation easier when data values are large. Always work with coded data to
+:::tip
+Coding makes computation easier when data values are large. Always work with coded data to
 find the mean and standard deviation, then decode back. Remember: adding a constant shifts the mean
 but does not affect the spread.
 :::
@@ -818,7 +821,8 @@ quartiles, which are less affected by that extreme value.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Data Representation**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-data-representation) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Data Representation with other topics to test synthesis under exam conditions.

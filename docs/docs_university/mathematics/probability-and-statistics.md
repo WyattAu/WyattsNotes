@@ -190,7 +190,8 @@ $$= \frac{0.02 \times 0.5}{0.02 \times 0.5 + 0.01 \times 0.3 + 0.03 \times 0.2} 
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 People often confuse $P(A \mid B)$ with $P(B \mid A)$. In medical testing, $P(\mathrm{disease} \mid \mathrm{positive})$
 is typically much lower than $P(\mathrm{positive} \mid \mathrm{disease})$ due to low base rates. Always apply Bayes'
 theorem rigorously.
@@ -804,7 +805,8 @@ $$\mathrm{Var}(X) = \frac{91}{6} - \left(\frac{7}{2}\right)^2 = \frac{91}{6} - \
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 $\mathrm{Var}(X) = E[X^2] - (E[X])^2$, **not** $(E[X])^2 - E[X^2]$. The variance is always non-negative, so if you
 obtain a negative value, you have made an arithmetic error.
 :::
@@ -1528,7 +1530,8 @@ equivalent to $\left|\frac{\bar{X} - \mu_0}{\sigma / \sqrt{n}}\right| \gt{} c$. 
 
 </details>
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 "Failing to reject $H_0$" is not the same as "accepting $H_0$". The test only provides evidence against
 $H_0$; absence of evidence is not evidence of absence. The distinction is critical in scientific
 reasoning.

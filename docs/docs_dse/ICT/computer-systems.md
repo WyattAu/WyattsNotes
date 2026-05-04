@@ -32,7 +32,8 @@ sub-components:
 | **Instruction Register (IR)**     | Holds the current instruction being decoded and executed                 |
 | **Status Register (Flags)**       | Stores flags such as Zero, Carry, Negative, Overflow from ALU operations |
 
-:::info Registers are the fastest memory in a computer system — orders of magnitude faster than RAM.
+:::info
+Registers are the fastest memory in a computer system — orders of magnitude faster than RAM.
 A typical CPU has a small number of general-purpose registers (8--32 in most architectures).
 :::
 
@@ -427,7 +428,8 @@ $185_{10} = 000110000101_{BCD}$
 - UTF-16: 2 or 4 bytes per character.
 - UTF-32: fixed 4 bytes per character.
 
-:::info Key difference: ASCII uses 1 byte per character and covers only English and basic symbols.
+:::info
+Key difference: ASCII uses 1 byte per character and covers only English and basic symbols.
 Unicode covers all writing systems but uses more storage. UTF-8 is the most widely used encoding on
 the internet.
 :::

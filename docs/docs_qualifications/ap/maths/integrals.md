@@ -851,7 +851,8 @@ $V = \pi \int_0^4 (\sqrt{x})^2 \, dx = \pi \int_0^4 x \, dx = \pi \left[\frac{x^
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Integrals**? The [diagnostic test](/docs/qualifications/ap/maths/diagnostics/diag-integrals) contains the hardest questions within the AP specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integrals with other AP Calculus topics to test synthesis under exam conditions.

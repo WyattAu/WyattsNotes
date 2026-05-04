@@ -645,7 +645,8 @@ features:
 For soft ferromagnets (iron, nickel), $H_c$ is small and the hysteresis loop is narrow.
 For hard ferromagnets (permanent magnets), $H_c$ is large.
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The magnetic field $\mathbf{B}$ is the fundamental quantity; $\mathbf{H}$ is an auxiliary field
 convenient for problems with free currents. The names "magnetic field" and "magnetic field
 intensity" vary across textbooks --- always check which symbol a given text associates with
@@ -1087,7 +1088,8 @@ $$\nabla^2 V - \mu_0 \varepsilon_0 \frac{\partial^2 V}{\partial t^2} = -\frac{\r
 
 $$\nabla^2 \mathbf{A} - \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{A}}{\partial t^2} = -\mu_0 \mathbf{J}$$
 
-:::caution Common Pitfall
+:::caution
+Common Pitfall
 The Lorenz gauge (with one "r") is named after Ludvig Lorenz, not Hendrik Lorentz. It is frequently
 misspelled "Lorentz gauge." The two are different people, and the correct spelling is "Lorenz gauge."
 :::

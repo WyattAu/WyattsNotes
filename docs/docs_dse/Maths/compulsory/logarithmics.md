@@ -662,7 +662,8 @@ quarterly. How long (to the nearest quarter) does it take for the balance to rea
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Logarithms**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-logarithms) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Logarithms with other DSE mathematics topics to test synthesis under exam conditions.

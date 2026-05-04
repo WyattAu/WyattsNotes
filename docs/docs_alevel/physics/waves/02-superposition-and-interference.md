@@ -13,7 +13,9 @@ slug: superposition-and-interference
 
 ## Superposition and Interference
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 <PhetSimulation simulationId="wave-interference" title="Wave Interference" />
 
@@ -218,7 +220,8 @@ or equal to $d/\lambda$).
 | Maxima brightness | Low            | High                                        |
 | Missing orders    | None (ideally) | Possible (if slit width effects considered) |
 
-:::tip Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$, take the
+:::tip
+Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$, take the
 integer part, then note that orders $+n$ and $-n$ are both visible (plus the zeroth order). Total
 visible maxima $= 2n_{\max} + 1$.
 :::

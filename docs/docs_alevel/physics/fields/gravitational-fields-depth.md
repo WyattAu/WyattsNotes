@@ -10,7 +10,9 @@ slug: gravitational-fields-depth
 
 ## Gravitational Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 ## 1. Newton's Law of Universal Gravitation
 
@@ -194,7 +196,8 @@ Calculate the escape velocity from Mars ($M = 6.42 \times 10^{23}$ kg, $R = 3.39
 
 </details>
 
-:::warning Common Pitfall Escape velocity is independent of the mass and direction of launch of the
+:::warning
+Common Pitfall Escape velocity is independent of the mass and direction of launch of the
 projectile. A 1 kg ball and a $10^6$ kg rocket both need the same speed. However, the required kinetic
 energy $E_k = \frac{1}{2}mv_e^2$ scales with mass.
 :::

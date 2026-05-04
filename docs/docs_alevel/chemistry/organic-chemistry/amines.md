@@ -293,7 +293,8 @@ $\mathrm{p}K_b(\mathrm{phenylamine}) = 9.38$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Amines**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-carbonyl-arenes-amines) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Amines with other chemistry topics to test synthesis under exam conditions.

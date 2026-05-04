@@ -217,7 +217,8 @@ where $t$ is the tax rate and $Y(t)$ is the tax base (income), which declines as
 to disincentive effects). At $t = 0$, $T = 0$. At $t = 1$ (100% tax), $T = 0$ (no one works). There
 exists some $t^* \in (0, 1)$ that maximises revenue.
 
-:::warning Common Pitfall The Laffer curve is a theoretical concept — there is no consensus on where
+:::warning
+Common Pitfall The Laffer curve is a theoretical concept — there is no consensus on where
 $t^*$ lies. Most empirical estimates for developed economies suggest that income tax rates are below
 the revenue-maximising rate, meaning tax cuts would _reduce_ revenue.
 :::
@@ -240,7 +241,8 @@ the revenue-maximising rate, meaning tax cuts would _reduce_ revenue.
 - Generous welfare benefits may create dependency and reduce labour supply
 - Redistribution through distortionary taxation creates deadweight loss
 
-:::tip Exam Technique When asked to evaluate inequality policies, consider: effectiveness (does it
+:::tip
+Exam Technique When asked to evaluate inequality policies, consider: effectiveness (does it
 reduce inequality?), efficiency (does it create disincentives?), equity (is it fair?), fiscal cost
 (can the government afford it?), and unintended consequences (does it create poverty traps?).
 :::
@@ -264,7 +266,8 @@ reduce inequality?), efficiency (does it create disincentives?), equity (is it f
 - Globalisation limits the effectiveness of national redistributive policies (mobile capital, tax
   competition)
 
-:::info Board-Specific Note AQA requires detailed knowledge of the Lorenz curve and Gini
+:::info
+Board-Specific Note AQA requires detailed knowledge of the Lorenz curve and Gini
 coefficient, including calculations. Edexcel emphasises poverty measures and government policy. CIE
 covers inequality in the context of development economics. OCR (A) links distribution to market
 failure and government intervention.

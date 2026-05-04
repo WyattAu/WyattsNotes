@@ -364,7 +364,8 @@ appears as a multiplet. The data given may represent a simplified spectrum.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Analytical Techniques**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-organic-introduction) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Analytical Techniques with other chemistry topics to test synthesis under exam conditions.

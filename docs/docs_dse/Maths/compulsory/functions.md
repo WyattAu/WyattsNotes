@@ -382,7 +382,8 @@ For $y = af(x + b) + c$, the recommended order of application (from the graph of
 Alternatively, one may think of this as working from the "inside out": apply the horizontal shift
 first, then the vertical scaling, then the vertical shift.
 
-:::info Horizontal transformations operate on $x$ **before** the function is evaluated; vertical
+:::info
+Horizontal transformations operate on $x$ **before** the function is evaluated; vertical
 transformations operate on $f(x)$ **after** the function is evaluated. This is why the horizontal
 shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right).
 :::
@@ -533,7 +534,8 @@ To solve $\frac{f(x)}{g(x)} \gt 0$ (or $\lt$, $\geq$, $\leq$):
    the sign of the expression in each interval.
 4. Exclude values where the denominator is zero (even for $\geq$ or $\leq$).
 
-:::warning **Critical pitfall:** When multiplying both sides of an inequality by an expression
+:::warning
+**Critical pitfall:** When multiplying both sides of an inequality by an expression
 involving $x$, the direction of the inequality flips if that expression is negative. Instead of
 multiplying through, use a sign chart.
 :::
@@ -859,7 +861,8 @@ For the A-Level treatment of this topic, see [Functions](https://alevel.wyattau.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Functions**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-functions) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions with other DSE mathematics topics to test synthesis under exam conditions.

@@ -51,7 +51,8 @@ Both objects end up with the same sign of charge.
 conductor. The conductor is earthed while the charged object is nearby, then the earth connection is
 removed. The conductor is left with a charge opposite to that of the inducing object.
 
-:::info In induction, the total charge of the isolated conductor remains zero during the process.
+:::info
+In induction, the total charge of the isolated conductor remains zero during the process.
 The earth connection allows charge to flow, so when the earth is disconnected, the conductor retains
 a net charge.
 :::
@@ -296,7 +297,8 @@ thermistor), the resistance drops.
 **PTC (Positive Temperature Coefficient) thermistor:** Resistance increases as temperature
 increases.
 
-:::info NTC thermistors are commonly used in temperature sensing circuits. As the temperature rises,
+:::info
+NTC thermistors are commonly used in temperature sensing circuits. As the temperature rises,
 the resistance falls, causing more current to flow, which can be measured or used to trigger a
 circuit.
 :::
@@ -395,7 +397,8 @@ For two resistors in parallel:
 
 $$R_{\mathrm{total}} = \frac{R_1 R_2}{R_1 + R_2}$$
 
-:::info In a parallel circuit, the total resistance is always less than the smallest individual
+:::info
+In a parallel circuit, the total resistance is always less than the smallest individual
 resistance. Adding more parallel branches always decreases the total resistance.
 :::
 
@@ -722,7 +725,8 @@ The direction of the induced EMF is such that it opposes the change producing it
 This is a consequence of conservation of energy. The induced current creates a magnetic field that
 opposes the change in flux that produced it.
 
-:::info To determine the direction of the induced current using Lenz's Law:
+:::info
+To determine the direction of the induced current using Lenz's Law:
 
 1. Identify whether the flux through the coil is increasing or decreasing
 2. If flux is increasing, the induced current creates a field to oppose the increase (opposing the
@@ -1487,7 +1491,8 @@ insulator, so no eddy currents are induced, and the magnet falls freely under gr
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Electricity and Magnetism**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-electricity-magnetism) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electricity and Magnetism with other physics topics to test synthesis under exam conditions.
@@ -1496,7 +1501,8 @@ See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instr
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+Common Pitfalls
 
 - **Confusing series and parallel circuit rules:** In series, current is the SAME through all components but voltage is shared. In parallel, voltage is the SAME across all branches but current is shared. Students frequently apply the wrong rule -- remember: series = shared voltage, parallel = shared current.
 
