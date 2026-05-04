@@ -73,7 +73,7 @@ Higher income increases the transactions demand for money (people need more cash
 
 **Solution:**
 
-(a) Money supply $= \frac{\text{Reserves}}{rrr} = \frac{200}{0.125} = \$1600$B.
+(a) Money supply $= \frac{Reserves}{rrr} = \frac{200}{0.125} = \$1600$B.
 
 (b) $\$10$B open market purchase increases reserves by $\$10$B. Maximum change $= \frac{10}{0.125} = \$80$B. New money supply $= 1600 + 80 = \$1680$B.
 
@@ -90,7 +90,7 @@ Higher income increases the transactions demand for money (people need more cash
 
 (b) $\hat{M} = \hat{P} + \hat{Y}$ (assuming constant velocity). $\hat{M} = 2\% + 4\% = 6\%$. The money supply should grow at 6%.
 
-(c) Real interest rate $= \text{nominal rate} - \text{expected inflation} = 8\% - 25\% = -17\%$. Depositors are effectively losing 17% of their purchasing power.
+(c) Real interest rate $= nominal rate - expected inflation = 8\% - 25\% = -17\%$. Depositors are effectively losing 17% of their purchasing power.
 
 (d) With actual inflation at 10%: real interest rate $= 8\% - 10\% = -2\%$. **Borrowers benefit** (they repay loans in dollars worth less than when they borrowed) and **lenders/depositors lose** (they receive repayments with reduced purchasing power). This redistribution from lenders to borrowers is a key consequence of unexpected inflation and explains why lenders demand inflation premiums and why inflation uncertainty is harmful to financial markets.
 

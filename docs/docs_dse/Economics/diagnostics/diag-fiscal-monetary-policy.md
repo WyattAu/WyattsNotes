@@ -36,7 +36,7 @@ The tax cut produces a smaller effect ($\$200$B vs $\$250$B) because households 
 2. **Exchange rate channel**: Higher domestic interest rates attract foreign capital inflows, increasing demand for the domestic currency and causing appreciation. A stronger currency makes exports more expensive and imports cheaper, reducing net exports.
 3. **Asset price channel**: Higher interest rates reduce the present value of future cash flows, lowering asset prices (stocks, bonds, property). The resulting decline in household wealth reduces consumption through the wealth effect.
 
-(b) Change in money supply $= \text{Money multiplier} \times \text{Change in monetary base}$.
+(b) Change in money supply $= Money multiplier \times Change in monetary base$.
 $\Delta M = m \times \Delta B$. $100 = 5 \times \Delta B$, so $\Delta B = \$20$ billion.
 
 The central bank should sell $\$20$ billion of government bonds, reducing bank reserves by $\$20$ billion, which contracts the money supply by $\$100$ billion through the money multiplier.
@@ -49,7 +49,7 @@ The central bank should sell $\$20$ billion of government bonds, reducing bank r
 **Solution:**
 
 (a) Budget balance $= T - G = 1000 - 1200 = -\$200$B (budget deficit).
-Primary balance $= T - G + \text{Interest payments} = 1000 - 1200 + 150 = -\$50$B (primary deficit).
+Primary balance $= T - G + Interest payments = 1000 - 1200 + 150 = -\$50$B (primary deficit).
 
 (b) With imports, the multiplier includes the marginal propensity to import (MPM): multiplier $= \frac{1}{1 - MPC + MPM} = \frac{1}{1 - 0.75 + 0.2} = \frac{1}{0.45} = 2.22$.
 
@@ -81,7 +81,7 @@ Primary balance $= T - G + \text{Interest payments} = 1000 - 1200 + 150 = -\$50$
 
 (a) Debt-to-GDP ratio $= 3000/5000 = 60\%$.
 
-(b) Debt dynamics: the change in debt-to-GDP ratio depends on: $\Delta d \approx \text{primary deficit}/Y + (r - g) \times d$, where $r = 4\%$, $g = 2\%$, $d = 0.6$.
+(b) Debt dynamics: the change in debt-to-GDP ratio depends on: $\Delta d \approx primary deficit/Y + (r - g) \times d$, where $r = 4\%$, $g = 2\%$, $d = 0.6$.
 
 $\Delta d = 50/5000 + (0.04 - 0.02) \times 0.6 = 0.01 + 0.012 = 0.022$.
 

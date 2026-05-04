@@ -22,7 +22,7 @@ $20 + 0.8Q = 100 - 0.8Q$, $1.6Q = 80$, $Q^* = 50$. $P^* = 100 - 0.8(50) = \$60$.
 
 (c) Pigouvian tax $= MEC$ at $Q^* = 50$: $t = 0.3(50) = \$15$. The tax shifts the private supply up by $\$15$, so $MPC + t = 20 + 0.5Q + 15 = 35 + 0.5Q$. At $Q = 50$: $35 + 0.5(50) = 60 = P^*$.
 
-(d) DWL $= \frac{1}{2} \times MEC_{\text{at } Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(61.54) \times (61.54 - 50) = \frac{1}{2} \times 18.46 \times 11.54 = \$106.5$.
+(d) DWL $= \frac{1}{2} \times MEC_{at  Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(61.54) \times (61.54 - 50) = \frac{1}{2} \times 18.46 \times 11.54 = \$106.5$.
 
 ### UT-2: Public Goods and Free Rider Problem
 **Question:** A coastal community of 100 residents is considering building a lighthouse. Each resident's individual demand for the lighthouse is $P_i = 10 - 0.1Q$, where $Q$ is the quality level (0 to 100). The total cost of providing quality level $Q$ is $TC = 200 + 5Q$. (a) Explain why a lighthouse is a public good, identifying which characteristics it satisfies. (b) Derive the market demand (marginal social benefit) curve. (c) Calculate the socially optimal quality level. (d) Explain why the private market would underprovide the lighthouse.
@@ -37,7 +37,7 @@ These characteristics create a free rider problem -- individual residents have a
 
 (b) For a public good, the market demand (MSB) is the **vertical summation** of individual demands, since all residents consume the same quantity simultaneously.
 
-$\text{MSB} = \sum_{i=1}^{100} P_i = 100(10 - 0.1Q) = 1000 - 10Q$.
+$MSB = \sum_{i=1}^{100} P_i = 100(10 - 0.1Q) = 1000 - 10Q$.
 
 (c) Social optimum: MSB $=$ MSC. $MSC = \frac{dTC}{dQ} = 5$.
 

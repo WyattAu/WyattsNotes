@@ -15,13 +15,13 @@ hide_table_of_contents: true
 **Solution:**
 
 (a) GDP by expenditure method:
-$\text{GDP} = C + I + G + (X - M) = 800 + 300 + 250 + (400 - 350) = \text{HK\$}1400$ billion.
+$GDP = C + I + G + (X - M) = 800 + 300 + 250 + (400 - 350) = HK\$1400$ billion.
 
-(b) $\text{GNP} = \text{GDP} + \text{Net factor income from abroad} = 1400 + (-20) = \text{HK\$}1380$ billion.
+(b) $GNP = GDP + Net factor income from abroad = 1400 + (-20) = HK\$1380$ billion.
 
-(c) $\text{NNP} = \text{GNP} - \text{Depreciation} = 1380 - 120 = \text{HK\$}1260$ billion.
+(c) $NNP = GNP - Depreciation = 1380 - 120 = HK\$1260$ billion.
 
-(d) $\text{National Income} = \text{NNP} - \text{Indirect taxes} + \text{Subsidies} = 1260 - 100 + 60 = \text{HK\$}1220$ billion.
+(d) $National Income = NNP - Indirect taxes + Subsidies = 1260 - 100 + 60 = HK\$1220$ billion.
 
 ### UT-2: Real vs Nominal GDP and GDP Deflator
 **Question:** Country X has the following data:
@@ -36,17 +36,17 @@ $\text{GDP} = C + I + G + (X - M) = 800 + 300 + 250 + (400 - 350) = \text{HK\$}1
 
 **Solution:**
 
-(a) Real GDP $= \frac{\text{Nominal GDP}}{\text{GDP Deflator}} \times 100$.
+(a) Real GDP $= \frac{Nominal GDP}{GDP Deflator} \times 100$.
 
-- 2015: $\text{Real GDP} = \frac{500}{100} \times 100 = 500$ billion.
-- 2020: $\text{Real GDP} = \frac{700}{125} \times 100 = 560$ billion.
-- 2025: $\text{Real GDP} = \frac{900}{150} \times 100 = 600$ billion.
+- 2015: $Real GDP = \frac{500}{100} \times 100 = 500$ billion.
+- 2020: $Real GDP = \frac{700}{125} \times 100 = 560$ billion.
+- 2025: $Real GDP = \frac{900}{150} \times 100 = 600$ billion.
 
 (b) Real GDP growth rate $= \frac{600 - 560}{560} \times 100\% = 7.14\%$.
 
 (c) The student confuses nominal and real GDP. Nominal GDP increased 80% ($\frac{900 - 500}{500} = 80\%$), but part of this increase is due to inflation (the GDP deflator rose from 100 to 150, meaning prices rose 50%). Real GDP only grew from 500 to 600 billion -- a 20% increase. The nominal increase overstates true economic growth because it includes the effect of rising prices, not just increased output.
 
-(d) Real GDP per capita $= \frac{\text{Real GDP}}{\text{Population}}$.
+(d) Real GDP per capita $= \frac{Real GDP}{Population}$.
 
 - 2015: $\frac{500}{10} = 50,000$ per person.
 - 2025: $\frac{600}{12} = 50,000$ per person.

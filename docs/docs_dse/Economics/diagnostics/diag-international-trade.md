@@ -52,13 +52,13 @@ Both gain compared to autarky. For Vietnam to gain, it needs more than 100 garme
 
 **Solution:**
 
-(a) US price in HKD: $600 \times 7.8 = \text{HK\$}4680$.
+(a) US price in HKD: $600 \times 7.8 = HK\$4680$.
 
 (b) In Hong Kong: HK\$5200. The US phone costs HK\$4680, which is cheaper than HK\$5200. The smartphone is cheaper in the US.
 
-(c) New US price in HKD: $600 \times 7.0 = \text{HK\$}4200$. The US phone is now even cheaper in HKD terms (HK\$4200 vs HK\$5200). HKD appreciation makes imports cheaper and exports more expensive. This reduces Hong Kong's export competitiveness -- foreign buyers need fewer USD to buy HKD, but Hong Kong's goods become more expensive in foreign currency. For example, a HK\$5200 phone now costs $5200/7.0 = \$743$ USD (vs $5200/7.8 = \$667$ USD before). Hong Kong's exports become 11% more expensive.
+(c) New US price in HKD: $600 \times 7.0 = HK\$4200$. The US phone is now even cheaper in HKD terms (HK\$4200 vs HK\$5200). HKD appreciation makes imports cheaper and exports more expensive. This reduces Hong Kong's export competitiveness -- foreign buyers need fewer USD to buy HKD, but Hong Kong's goods become more expensive in foreign currency. For example, a HK\$5200 phone now costs $5200/7.0 = \$743$ USD (vs $5200/7.8 = \$667$ USD before). Hong Kong's exports become 11% more expensive.
 
-(d) Purchasing Power Parity (PPP) states that exchange rates should adjust so that identical baskets of goods cost the same in all countries. PPP exchange rate $= \frac{P_{\text{domestic}}}{P_{\text{foreign}}}$. If the PPP rate for the smartphone is $5200/600 = 8.67$ HKD per USD, but the actual rate is 7.8, the HKD is **overvalued** relative to PPP (fewer HKD per dollar than PPP suggests). In the long run, PPP predicts the HKD should depreciate to equalise prices.
+(d) Purchasing Power Parity (PPP) states that exchange rates should adjust so that identical baskets of goods cost the same in all countries. PPP exchange rate $= \frac{P_{domestic}}{P_{foreign}}$. If the PPP rate for the smartphone is $5200/600 = 8.67$ HKD per USD, but the actual rate is 7.8, the HKD is **overvalued** relative to PPP (fewer HKD per dollar than PPP suggests). In the long run, PPP predicts the HKD should depreciate to equalise prices.
 
 ### UT-3: Tariff Analysis
 **Question:** A country imports shoes. World price $= \$40$ per pair. Domestic demand: $Q_d = 200 - 2P$. Domestic supply: $Q_s = 2P - 40$. (a) Calculate the quantity of imports before any tariff. (b) The government imposes a 25% tariff. Calculate the new domestic price, quantity of imports, tariff revenue, and deadweight loss. (c) Calculate the change in consumer surplus and producer surplus.
@@ -94,7 +94,7 @@ Net welfare change $= -1100 + 500 + 400 = -\$200$ (equals DWL).
 
 (b) The **impossible trinity** (trilemma) states a country cannot simultaneously have: (1) a fixed exchange rate, (2) free capital mobility, and (3) independent monetary policy. To reduce unemployment, the central bank would want to lower interest rates (expansionary monetary policy), but this would cause capital outflow and put downward pressure on the exchange rate, threatening the peg. The central bank must choose between maintaining the peg or pursuing independent monetary policy.
 
-(c) Selling USD 5 billion and buying LC removes LC 5 billion from circulation. With a money multiplier of 4: $\Delta M = m \times \Delta B = 4 \times (-5) = -\text{LC }20$ billion. The domestic money supply contracts by LC 20 billion, which is contractionary and would worsen unemployment -- illustrating the trilemma constraint.
+(c) Selling USD 5 billion and buying LC removes LC 5 billion from circulation. With a money multiplier of 4: $\Delta M = m \times \Delta B = 4 \times (-5) = -LC 20$ billion. The domestic money supply contracts by LC 20 billion, which is contractionary and would worsen unemployment -- illustrating the trilemma constraint.
 
 ### IT-2: Trade Policy and Welfare (with Market Failure)
 **Question:** Country A imposes a quota of 30 units on imported steel. World price $= \$100$. Without the quota, domestic demand is $Q_d = 150 - 0.5P$ and supply is $Q_s = 0.5P - 25$. (a) Calculate the free trade imports and domestic price with the quota. (b) Calculate the change in consumer surplus, producer surplus, and deadweight loss compared to free trade. (c) Who gains the quota rent? How does this differ from a tariff? (d) If the steel industry generates positive externalities (strategic industry for defence), explain how this affects the welfare analysis.
@@ -111,15 +111,15 @@ $Q_d = 150 - 72.5 = 77.5$, $Q_s = 72.5 - 25 = 47.5$. Imports $= 77.5 - 47.5 = 30
 
 CS free trade $= \frac{1}{2}(300 - 100)(100) = \frac{1}{2}(200)(100) = \$10,000$.
 CS with quota $= \frac{1}{2}(300 - 145)(77.5) = \frac{1}{2}(155)(77.5) = \$6006.25$.
-$\Delta \text{CS} = -\$3993.75$.
+$\Delta CS = -\$3993.75$.
 
 PS free trade $= \frac{1}{2}(100 - 50)(25) = \frac{1}{2}(50)(25) = \$625$.
 PS with quota $= \frac{1}{2}(145 - 50)(47.5) = \frac{1}{2}(95)(47.5) = \$2256.25$.
-$\Delta \text{PS} = +\$1631.25$.
+$\Delta PS = +\$1631.25$.
 
 Quota rent $= (145 - 100) \times 30 = 45 \times 30 = \$1350$ (goes to whoever holds the import licenses).
 
-$DWL = |\Delta CS - \Delta PS - \text{quota rent}| = |{-3993.75} - 1631.25 - 1350| = |{-3993.75} + 1631.25 + 1350| = |-1012.5| = \$1012.5$.
+$DWL = |\Delta CS - \Delta PS - quota rent| = |{-3993.75} - 1631.25 - 1350| = |{-3993.75} + 1631.25 + 1350| = |-1012.5| = \$1012.5$.
 
 (c) Quota rent goes to **import licence holders** (foreign exporters if they hold the licences, or domestic importers if allocated by the government). With a tariff, the equivalent revenue goes to the **domestic government**. This is a key difference: tariffs generate government revenue while quotas create quota rents that may benefit foreign producers.
 
@@ -130,7 +130,7 @@ $DWL = |\Delta CS - \Delta PS - \text{quota rent}| = |{-3993.75} - 1631.25 - 135
 
 **Solution:**
 
-(a) Current account $= (X_g - M_g) + (X_s - M_s) + \text{Net primary income} + \text{Net secondary income}$
+(a) Current account $= (X_g - M_g) + (X_s - M_s) + Net primary income + Net secondary income$
 $= (300 - 400) + (150 - 100) + (-50) + 20$
 $= -100 + 50 - 50 + 20 = -\$80$ billion (deficit).
 

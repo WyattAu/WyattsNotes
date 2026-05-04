@@ -106,8 +106,8 @@ Under price discrimination ($Q = 52$ total): total DWL $= \frac{1}{2}(22 - 4)(80
 
 Wait -- price discrimination produces the same total quantity (52) but a different allocation. The DWL calculation needs the competitive benchmark per group. Competitive: $P = 4$: $Q_A = 80 - 8 = 72$, $Q_S = 40 - 8 = 32$. $Q_c = 104$.
 
-$DWL_{\text{no disc}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
-$DWL_{\text{disc}} = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
+$DWL_{no disc} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
+$DWL_{disc} = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
 
 (d) To maximise social welfare, the government could regulate the cinema to charge $P = MC = \$4$ (marginal cost pricing). This would eliminate deadweight loss entirely but leave the cinema unable to cover any fixed costs (which are zero in this case, so it is feasible). With positive fixed costs, the government might use average cost pricing instead.
 
@@ -157,7 +157,7 @@ $MR = 22 - 0.4Q = MC = 2 + 0.2Q$. $20 = 0.6Q$, $Q_m = 33.33$. $P_m = 22 - 0.2(33
 (b) **Perfect competition:**
 - CS $= \frac{1}{2}(22 - 12)(50) = \frac{1}{2}(10)(50) = \$250$.
 - PS $= (12 - 2)(50) - \frac{1}{2}(12 - 2)(50) = 500 - 250 = \$250$.
-Wait: PS $= \frac{1}{2}(12 - 2)(50) + \text{FC recovery}$. Actually PS $= TR - TC = 12(50) - [100 + 2(50) + 0.1(2500)] = 600 - [100 + 100 + 250] = 600 - 450 = \$150$.
+Wait: PS $= \frac{1}{2}(12 - 2)(50) + FC recovery$. Actually PS $= TR - TC = 12(50) - [100 + 2(50) + 0.1(2500)] = 600 - [100 + 100 + 250] = 600 - 450 = \$150$.
 - Total surplus $= 250 + 150 = \$400$.
 
 **Monopoly:**

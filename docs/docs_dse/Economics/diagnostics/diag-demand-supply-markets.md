@@ -38,29 +38,29 @@ Cinema 1 has elastic demand while Cinema 2 has inelastic demand. Possible explan
 
 **Solution:**
 
-(a) Equilibrium: $8000 - 20Q = 2000 + 20Q$, so $6000 = 40Q$, $Q^* = 150$ (thousand units), $P^* = 8000 - 20(150) = \text{HK\$}5000$.
+(a) Equilibrium: $8000 - 20Q = 2000 + 20Q$, so $6000 = 40Q$, $Q^* = 150$ (thousand units), $P^* = 8000 - 20(150) = HK\$5000$.
 
-(b) Consumer surplus $= \frac{1}{2} \times Q^* \times (P_{\max} - P^*) = \frac{1}{2} \times 150 \times (8000 - 5000) = \frac{1}{2} \times 150 \times 3000 = \text{HK\$}225,000$ (thousand-HKD units).
+(b) Consumer surplus $= \frac{1}{2} \times Q^* \times (P_{\max} - P^*) = \frac{1}{2} \times 150 \times (8000 - 5000) = \frac{1}{2} \times 150 \times 3000 = HK\$225,000$ (thousand-HKD units).
 
-Producer surplus $= \frac{1}{2} \times Q^* \times (P^* - P_{\min}) = \frac{1}{2} \times 150 \times (5000 - 2000) = \frac{1}{2} \times 150 \times 3000 = \text{HK\$}225,000$.
+Producer surplus $= \frac{1}{2} \times Q^* \times (P^* - P_{\min}) = \frac{1}{2} \times 150 \times (5000 - 2000) = \frac{1}{2} \times 150 \times 3000 = HK\$225,000$.
 
-Total surplus $= 225,000 + 225,000 = \text{HK\$}450,000$.
+Total surplus $= 225,000 + 225,000 = HK\$450,000$.
 
 (c) At $P = 4000$: $Q_d = (8000 - 4000)/20 = 200$, $Q_s = (4000 - 2000)/20 = 100$.
 
 The binding ceiling creates a shortage of $200 - 100 = 100$ thousand units. Quantity traded $= Q_s = 100$.
 
-New CS $= \frac{1}{2}(8000 - 4000 + 6000 - 4000) \times 100 = \frac{1}{2}(4000 + 2000) \times 100 = \frac{1}{2} \times 6000 \times 100 = \text{HK\$}300,000$.
+New CS $= \frac{1}{2}(8000 - 4000 + 6000 - 4000) \times 100 = \frac{1}{2}(4000 + 2000) \times 100 = \frac{1}{2} \times 6000 \times 100 = HK\$300,000$.
 
 (Demand price at $Q = 100$: $P = 8000 - 2000 = 6000$.)
 
-New PS $= \frac{1}{2}(4000 - 2000) \times 100 = \frac{1}{2} \times 2000 \times 100 = \text{HK\$}100,000$.
+New PS $= \frac{1}{2}(4000 - 2000) \times 100 = \frac{1}{2} \times 2000 \times 100 = HK\$100,000$.
 
-New total surplus $= 300,000 + 100,000 = \text{HK\$}400,000$.
+New total surplus $= 300,000 + 100,000 = HK\$400,000$.
 
-Deadweight loss $= 450,000 - 400,000 = \text{HK\$}50,000$.
+Deadweight loss $= 450,000 - 400,000 = HK\$50,000$.
 
-Alternatively, DWL $= \frac{1}{2} \times (150 - 100) \times (6000 - 4000) = \frac{1}{2} \times 50 \times 2000 = \text{HK\$}50,000$.
+Alternatively, DWL $= \frac{1}{2} \times (150 - 100) \times (6000 - 4000) = \frac{1}{2} \times 50 \times 2000 = HK\$50,000$.
 
 ### UT-3: Price Elasticity of Supply
 **Question:** A seafood restaurant's supply of fresh fish per day is given by $Q_s = -20 + 5P$ where $P$ is in HKD. (a) Calculate the PES when price rises from $\$50$ to $\$70$. (b) At what price does the restaurant start supplying fish? Explain the economic meaning. (c) If a new competitor opens nearby and the supply shifts to $Q_s = -20 + 7P$, compare the new PES over the same price range and explain the change.
