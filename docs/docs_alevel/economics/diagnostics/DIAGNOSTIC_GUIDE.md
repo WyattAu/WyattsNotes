@@ -1,7 +1,7 @@
 ---
 title: "A-Level Economics -- Diagnostic Guide"
 description: "Comprehensive guide to A-Level Economics diagnostic tests with coverage map, grading rubric, prerequisite chains, and timing recommendations."
-slug: diag-guide-economics
+slug: diagnostic-guide
 hide_table_of_contents: true
 ---
 

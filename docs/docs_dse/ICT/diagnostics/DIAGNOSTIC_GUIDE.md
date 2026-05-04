@@ -1,7 +1,7 @@
 ---
 title: "DSE ICT -- Diagnostic Guide"
 description: "Comprehensive guide to DSE ICT diagnostic tests with coverage map, grading rubric, prerequisite chains, and timing recommendations."
-slug: diag-guide-dse-ict
+slug: diagnostic-guide
 hide_table_of_contents: true
 ---
 

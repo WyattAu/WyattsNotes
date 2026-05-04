@@ -1,7 +1,7 @@
 ---
 title: DSE Physics Diagnostic Guide
 description: "Complete guide to DSE Physics diagnostic testing with topic coverage map, prerequisite chains, grading rubric, and study recommendations."
-slug: diag-guide
+slug: diagnostic-guide
 hide_table_of_contents: true
 ---
 

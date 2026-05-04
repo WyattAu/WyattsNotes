@@ -1,7 +1,7 @@
 ---
 title: A-Level Physics Diagnostic Guide
 description: Comprehensive guide to the 20-topic A-Level Physics diagnostic test suite, covering prerequisite chains, grading rubrics, and usage instructions.
-slug: diag-guide
+slug: diagnostic-guide
 hide_table_of_contents: true
 ---
 

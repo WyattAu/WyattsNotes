@@ -1,3 +1,10 @@
+---
+title: "A-Level Maths -- Diagnostic Test Guide"
+description: Guide to using diagnostic tests for A-Level Mathematics.
+slug: diagnostic-guide
+hide_table_of_contents: true
+---
+
 # A-Level Mathematics: Diagnostic Test Guide
 
 ## 1. Purpose

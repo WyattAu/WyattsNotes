@@ -1,7 +1,7 @@
 ---
 title: "A-Level Further Maths -- Diagnostic Guide"
 description: "Comprehensive guide to A-Level Further Maths diagnostic tests with coverage map, grading rubric, prerequisite chains, and timing recommendations."
-slug: diag-guide-further-maths
+slug: diagnostic-guide
 hide_table_of_contents: true
 ---
 
