@@ -69,7 +69,7 @@ const config: Config = {
   projectName: 'WyattsNotes',
   trailingSlash: false,
 
-  clientModules: [require.resolve('./src/theme/KatexLoader/index')],
+  clientModules: [require.resolve('./src/theme/KatexLoader/index.tsx')],
 
   onBrokenLinks: 'throw',
 
