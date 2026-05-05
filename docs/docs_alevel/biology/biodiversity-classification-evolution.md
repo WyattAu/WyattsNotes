@@ -306,6 +306,214 @@ If a population deviates from H-W, this is evidence that evolutionary forces (se
 flow, mutation, non-random mating) are acting.
 :::
 
+## 5. Genetic Drift and Gene Flow
+
+### 5.1 Genetic Drift
+
+**Genetic drift** is the random fluctuation of allele frequencies from generation to generation due to
+chance events in the sampling of gametes. Its effect is inversely proportional to population size: drift
+is strong in small populations and negligible in large ones.
+
+**The bottleneck effect**: a sharp reduction in population size (due to natural disaster, hunting,
+habitat destruction) drastically reduces genetic diversity. The surviving population may have allele
+frequencies very different from the original population, purely by chance. Even if the population
+recovers in size, the reduced genetic diversity persists.
+
+**Quantitative example.** A population of 1000 individuals has an allele frequency $p = 0.5$ for allele
+$A$. A bottleneck reduces the population to 10 individuals. By chance, only 2 of the survivors carry
+allele $A$, so the new frequency is $p = 2/20 = 0.1$ (assuming diploid). The population has lost 80% of
+the $A$ allele frequency purely through drift. Recovery of the population to its original size will not
+restore the lost alleles.
+
+**The founder effect**: a small number of individuals colonise a new area, carrying only a subset of the
+genetic variation of the source population. The founder population may have very different allele
+frequencies. This is a form of genetic drift and explains the high frequency of certain genetic
+disorders in isolated populations (e.g., Ellis-van Creveld syndrome among the Amish, or Huntington's
+disease in the Lake Maracaibo region of Venezuela).
+
+### 5.2 Gene Flow
+
+**Gene flow** (migration) is the movement of alleles between populations through the movement of
+individuals or gametes (e.g., pollen dispersal). Gene flow tends to **reduce genetic differences** between
+populations and counteracts the effects of natural selection and drift. If gene flow is extensive,
+populations remain genetically similar. If gene flow is prevented (by a geographic barrier), populations
+diverge and may eventually become separate species.
+
+### 5.3 Comparing Evolutionary Mechanisms
+
+| Mechanism        | Direction of Change              | Speed          | Role in Evolution            |
+| ---------------- | -------------------------------- | -------------- | ---------------------------- |
+| Natural selection| Directional (towards fitness)    | Slow-moderate  | Adaptation to environment    |
+| Genetic drift    | Random                           | Variable       | Loss of diversity; fixation  |
+| Gene flow        | Homogenising (between populations) | Variable     | Prevents speciation          |
+| Mutation         | Random (new alleles)             | Very slow      | Source of new variation      |
+
+:::warning
+Common Pitfall Students often think that evolution always leads to "improvement" or "progress." Natural
+selection produces adaptations to the current environment, not to some absolute standard of fitness.
+What is advantageous in one environment may be disadvantageous in another. Genetic drift produces
+changes without regard to fitness at all.
+:::
+
+## 6. Molecular Clocks and Phylogenetics
+
+### 6.1 The Molecular Clock Concept
+
+If mutations accumulate in DNA at a roughly constant rate, the number of sequence differences between
+two species is proportional to the time since they diverged from a common ancestor. This is the
+**molecular clock** hypothesis.
+
+The mutation rate per site per year ($\mu$) is estimated by calibrating the clock against the fossil
+record. For example, if two species diverged from a common ancestor 10 million years ago (as determined
+by fossils) and their DNA sequences now differ at 2% of sites, the mutation rate is estimated as:
+
+$$\mu = \frac{0.02}{2 \times 10^7\ \mathrm{years}} = 1 \times 10^{-9}\ \mathrm{mutations\ per\ site\ per\ year}$$
+
+The factor of 2 accounts for the fact that both lineages have been accumulating mutations independently
+since divergence.
+
+### 6.2 Worked Example: Estimating Divergence Time
+
+The cytochrome c gene differs by 12 nucleotide substitutions between species X and species Y. The
+accepted mutation rate for this gene is $\mu = 2.5 \times 10^{-9}$ substitutions per site per year.
+The gene is 330 base pairs long.
+
+Number of substitutions per site $= \frac{12}{330} = 0.0364$.
+
+Time since divergence $= \frac{0.0364}{2 \times 2.5 \times 10^{-9}} = 7.27 \times 10^6\ \mathrm{years} \approx 7.3\ \mathrm{million\ years}$.
+
+### 6.3 Limitations of Molecular Clocks
+
+The molecular clock assumption of constant mutation rate is an approximation. In reality:
+
+- Mutation rates vary between genes (non-coding DNA mutates faster than coding DNA due to weaker
+  selective constraint).
+- Mutation rates vary between lineages (organisms with shorter generation times accumulate mutations
+  faster).
+- Natural selection can accelerate or decelerate the rate of sequence change.
+- Different genes give different estimates of divergence time.
+
+Despite these limitations, molecular clocks provide useful approximate dates, especially when combined
+with fossil evidence.
+
+## 7. Advanced Hardy-Weinberg Calculations
+
+### 7.1 Multiple Alleles
+
+When a gene has more than two alleles, the Hardy-Weinberg principle is extended. For three alleles with
+frequencies $p$, $q$, and $r$:
+
+$$p + q + r = 1$$
+
+$$p^2 + q^2 + r^2 + 2pq + 2pr + 2qr = 1$$
+
+**Worked Example.** The ABO blood group system has three alleles: $I^A$, $I^B$, and $i$. Their frequencies
+in a population are $p = 0.3$, $q = 0.1$, $r = 0.6$.
+
+Genotype frequencies:
+- $I^AI^A$: $p^2 = 0.09$ (blood group A)
+- $I^AI^B$: $2pq = 0.06$ (blood group AB)
+- $I^Ai$: $2pr = 0.36$ (blood group A)
+- $I^Bi^B$: $q^2 = 0.01$ (blood group B)
+- $I^Bi$: $2qr = 0.12$ (blood group B)
+- $ii$: $r^2 = 0.36$ (blood group O)
+
+Phenotype frequencies:
+- Blood group A: $p^2 + 2pr = 0.09 + 0.36 = 0.45$
+- Blood group B: $q^2 + 2qr = 0.01 + 0.12 = 0.13$
+- Blood group AB: $2pq = 0.06$
+- Blood group O: $r^2 = 0.36$
+
+Check: $0.45 + 0.13 + 0.06 + 0.36 = 1.00$. $\square$
+
+### 7.2 Testing for Hardy-Weinberg Equilibrium: The Chi-Squared Test
+
+When observed genotype frequencies are given, the chi-squared test determines whether deviations from H-W
+predictions are statistically significant.
+
+$$\chi^2 = \sum \frac{(O - E)^2}{E}$$
+
+where $O$ = observed frequency and $E$ = expected frequency under H-W.
+
+Degrees of freedom for a gene with $n$ alleles: $\mathrm{df} = \frac{n(n+1)}{2} - 1 - k$, where $k$ is
+the number of allele frequencies estimated from the data. For a two-allele system where both $p$ and $q$
+are estimated: $\mathrm{df} = 3 - 1 - 1 = 1$.
+
+**Worked Example.** In a population of 1000, the observed genotypes for a two-allele system are:
+$AA = 420$, $Aa = 400$, $aa = 180$.
+
+Step 1: Calculate allele frequencies from observed data.
+
+$p = \frac{2(420) + 400}{2(1000)} = \frac{1240}{2000} = 0.62$
+
+$q = 1 - 0.62 = 0.38$
+
+Step 2: Calculate expected frequencies.
+
+$AA$: $p^2 = 0.3844$, expected $= 384.4$
+
+$Aa$: $2pq = 0.4712$, expected $= 471.2$
+
+$aa$: $q^2 = 0.1444$, expected $= 144.4$
+
+Step 3: Calculate $\chi^2$.
+
+$$\chi^2 = \frac{(420 - 384.4)^2}{384.4} + \frac{(400 - 471.2)^2}{471.2} + \frac{(180 - 144.4)^2}{144.4}$$
+
+$$= \frac{1267.36}{384.4} + \frac{5067.84}{471.2} + \frac{1267.36}{144.4}$$
+
+$$= 3.30 + 10.76 + 8.78 = 22.84$$
+
+Degrees of freedom $= 1$. Critical value at $p = 0.05$ for 1 df is $3.84$.
+
+Since $\chi^2 = 22.84 \gg 3.84$, we reject the null hypothesis. The population is **not** in
+Hardy-Weinberg equilibrium. Possible explanations include non-random mating, selection against one
+genotype, or population substructure (Wahlund effect).
+
+:::warning
+Common Pitfall When calculating degrees of freedom for the chi-squared test with Hardy-Weinberg data,
+students often incorrectly use $\mathrm{df} = n - 1$ (where $n$ is the number of genotypes). The
+correct formula accounts for the fact that allele frequencies are estimated from the data, reducing the
+degrees of freedom further. For a two-allele system, $\mathrm{df} = 1$.
+:::
+
+## 8. Classification: The Five Kingdom System and Beyond
+
+### 8.1 Whittaker's Five-Kingdom System
+
+Before the three-domain system, organisms were classified into five kingdoms (Whittaker, 1969):
+
+| Kingdom   | Cell Type   | Nuclear Envelope | Nutrition                       |
+| --------- | ----------- | ---------------- | ------------------------------- |
+| Animalia  | Eukaryotic  | Present          | Heterotrophic (ingestive)       |
+| Plantae   | Eukaryotic  | Present          | Autotrophic (photosynthetic)    |
+| Fungi     | Eukaryotic  | Present          | Heterotrophic (absorptive)      |
+| Protoctista| Eukaryotic | Present          | Mixed (autotrophic/heterotrophic)|
+| Prokaryota| Prokaryotic | Absent           | Various                         |
+
+The five-kingdom system was superseded because it placed all prokaryotes in a single kingdom, despite
+the profound molecular differences between Bacteria and Archaea revealed by rRNA sequencing. The
+three-domain system (Woese, 1990) better reflects evolutionary relationships.
+
+### 8.2 Courtship Behaviour as a Reproductive Isolating Mechanism
+
+Courtship behaviours are species-specific rituals that serve two functions:
+
+1. **Species recognition**: ensuring mating occurs between members of the same species, preventing
+   wasted reproductive effort and hybrid offspring with reduced fitness.
+2. **Mate selection**: allowing individuals to assess the quality, health, and fitness of potential
+   partners.
+
+Courtship behaviour is a **pre-zygotic reproductive barrier**. If courtship signals are not recognised
+or responded to correctly, mating does not occur. Examples: the complex courtship dance of the
+blue-footed booby; the specific song patterns of crickets and birds; chemical pheromone signals in
+moths.
+
+Courtship behaviours evolve through sexual selection and can drive speciation: if a population is
+divided and courtship rituals diverge (e.g., through mutation or cultural drift), the two subpopulations
+may become reproductively isolated even without geographic separation (sympatric speciation by
+behavioural isolation).
+
 ## Practice Problems
 
 <details>
@@ -433,6 +641,84 @@ measures of evolutionary distance, allowing precise estimation of divergence tim
 relationships.
 
 <b>If you get this wrong, revise:</b> [Phylogeny and Cladistics](#23-phylogeny-and-cladistics)
+
+</details>
+
+<details>
+<summary>Problem 7</summary>
+A population of 1000 individuals of a flowering plant has the following genotype frequencies for a
+gene with two alleles ($F$ and $f$): $FF = 490$, $Ff = 420$, $ff = 90$. (a) Calculate the allele
+frequencies. (b) Use the chi-squared test to determine whether the population is in Hardy-Weinberg
+equilibrium. (c) Suggest a possible biological explanation if the population is not in equilibrium.
+
+**Answer.** (a) Total alleles $= 2000$.
+
+$p = \frac{2(490) + 420}{2000} = \frac{1400}{2000} = 0.70$.
+
+$q = \frac{2(90) + 420}{2000} = \frac{600}{2000} = 0.30$.
+
+(b) Expected frequencies: $p^2 = 0.49$ ($490$), $2pq = 0.42$ ($420$), $q^2 = 0.09$ ($90$).
+
+$\chi^2 = \frac{(490 - 490)^2}{490} + \frac{(420 - 420)^2}{420} + \frac{(90 - 90)^2}{90} = 0$.
+
+Degrees of freedom $= 1$. Since $\chi^2 = 0 < 3.84$, the population is in perfect Hardy-Weinberg
+equilibrium. No evolutionary forces are detectably acting on this gene.
+
+(c) Not applicable in this case -- the population is in equilibrium. However, if the chi-squared value
+had been significant, possible explanations would include: selection favouring the heterozygote
+(heterozygote advantage), non-random mating (assortative mating or inbreeding), or population
+substructure (the Wahlund effect).
+
+<b>If you get this wrong, revise:</b> [The Hardy-Weinberg Principle](#42-the-hardy-weinberg-principle) and [Advanced Hardy-Weinberg Calculations](#7-advanced-hardy-weinberg-calculations)
+
+</details>
+
+<details>
+<summary>Problem 8</summary>
+Two species of finch live on the same island. Species A has a large, strong beak and feeds on hard
+seeds. Species B has a small, slender beak and feeds on small seeds and insects. (a) Explain how
+resource partitioning allows these two species to coexist. (b) A drought kills all plants that produce
+small seeds, leaving only hard-seeded plants. Predict the effect on each species and explain in terms
+of natural selection. (c) After the drought, a hybrid individual is observed with an intermediate beak
+size. Explain why this hybrid is likely to have reduced fitness.
+
+**Answer.** (a) The two species exploit different food resources (resource partitioning), reducing
+direct competition. Species A specialises in hard seeds (which Species B cannot crack), and Species B
+specialises in small seeds and insects (which Species A handles inefficiently). This allows both
+species to occupy the same habitat without violating the competitive exclusion principle.
+
+(b) The drought eliminates the food source of Species B (small seeds and possibly the insects that
+depend on small-seed plants). Species B will decline due to starvation (strong directional selection
+against its small-beaked phenotype). Species A, which feeds on hard seeds, is unaffected by the loss
+of small seeds and may increase as competition from Species B is reduced.
+
+(c) The hybrid with an intermediate beak size would be poorly adapted to either food source: the beak
+is too small to efficiently crack hard seeds (the only food remaining), and the small seeds and insects
+are no longer available. This is an example of **disruptive selection**: the intermediate phenotype has
+lower fitness than either extreme, reinforcing the divergence between the two species.
+
+<b>If you get this wrong, revise:</b> [Types of Selection](#32-types-of-selection) and [Natural Selection](#31-natural-selection)
+
+</details>
+
+<details>
+<summary>Problem 9</summary>
+Explain how the analysis of DNA sequences can be used to construct a phylogenetic tree. In your
+answer, describe the role of homologous genes, molecular clocks, and the principle of parsimony.
+
+**Answer.** To construct a phylogenetic tree from DNA sequences, homologous genes (genes shared by
+common descent, such as cytochrome c or ribosomal RNA genes) are sequenced from each species of
+interest. The sequences are aligned, and the number of nucleotide differences between each pair of
+species is counted. Species with fewer differences are more closely related (they diverged more
+recently). A molecular clock can be used to estimate the actual time of divergence if the mutation
+rate for the gene is known and has been calibrated against the fossil record. The tree is then
+constructed using the principle of parsimony: the tree requiring the fewest evolutionary changes (the
+simplest explanation) is preferred. Alternatively, maximum likelihood or Bayesian methods may be used
+for more sophisticated analysis. The resulting tree shows the evolutionary relationships as a branching
+diagram, where each node represents a common ancestor and branch lengths are proportional to the amount
+of genetic change.
+
+<b>If you get this wrong, revise:</b> [Phylogeny and Cladistics](#23-phylogeny-and-cladistics) and [Molecular Clocks and Phylogenetics](#6-molecular-clocks-and-phylogenetics)
 
 </details>
 

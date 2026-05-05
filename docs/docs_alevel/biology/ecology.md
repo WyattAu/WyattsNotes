@@ -402,6 +402,250 @@ ecosystem and evolutionary processes, but ex situ is essential as a backup for s
 has been destroyed or whose population is too small to survive in the wild.
 :::
 
+## 8. Quantitative Ecology
+
+### 8.1 Calculating Net Primary Production
+
+NPP is the rate at which energy is stored as biomass by producers, after accounting for their own
+respiration. It is typically measured in $\mathrm{kJ\ m^{-2}\ yr^{-1}}$ or as dry biomass in
+$\mathrm{g\ m^{-2}\ yr^{-1}}$.
+
+**Worked Example 1.** A meadow receives $2.0 \times 10^6\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$ of solar
+radiation. The plants absorb 40% of this. The gross primary production (GPP) is 2.5% of the absorbed
+radiation. Plant respiration accounts for 60% of GPP. Calculate NPP and the overall ecological
+efficiency.
+
+Absorbed radiation $= 0.40 \times 2.0 \times 10^6 = 8.0 \times 10^5\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+
+$\mathrm{GPP} = 0.025 \times 8.0 \times 10^5 = 20000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+
+$\mathrm{NPP} = \mathrm{GPP} - R = 20000 - 0.60 \times 20000 = 20000 - 12000 = 8000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+
+Overall ecological efficiency (from total solar to NPP) $= \frac{8000}{2.0 \times 10^6} = 0.004 = 0.4\%$.
+
+**Worked Example 2.** An area of tropical rainforest has $\mathrm{GPP} = 22000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
+and $\mathrm{NPP} = 15000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$. A desert has $\mathrm{GPP} = 1200\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
+and $\mathrm{NPP} = 400\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$. Compare the ecological efficiencies.
+
+Rainforest: fraction lost to respiration $= \frac{22000 - 15000}{22000} = 0.318 = 31.8\%$.
+
+Desert: fraction lost to respiration $= \frac{1200 - 400}{1200} = 0.667 = 66.7\%$.
+
+The desert ecosystem is less efficient at converting GPP to NPP because a larger proportion of captured
+energy is lost to respiration. This is partly because desert plants invest more energy in root systems
+and water acquisition mechanisms.
+
+### 8.2 Population Growth Modelling
+
+**Worked Example 1.** A population of bacteria has an initial size $N_0 = 100$ and an intrinsic rate of
+increase $r = 0.693\ \mathrm{h^{-1}}$. Calculate the population size after 5 hours, assuming
+unlimited resources (exponential growth).
+
+$$N_t = N_0 e^{rt} = 100 \times e^{0.693 \times 5} = 100 \times e^{3.465} = 100 \times 31.99 = 3199$$
+
+Note: $r = 0.693\ \mathrm{h^{-1}}$ corresponds to a doubling time of $t_d = \frac{\ln 2}{r} = \frac{0.693}{0.693} = 1\ \mathrm{hour}$.
+In 5 hours, the population doubles 5 times: $100 \times 2^5 = 3200$ (consistent with the exponential
+calculation, within rounding).
+
+**Worked Example 2.** A population of rabbits has carrying capacity $K = 500$ and intrinsic rate of
+increase $r = 1.2\ \mathrm{yr^{-1}}$. If the current population is $N = 100$, what is the current rate
+of population growth?
+
+$$\frac{dN}{dt} = rN\left(1 - \frac{N}{K}\right) = 1.2 \times 100 \times \left(1 - \frac{100}{500}\right) = 120 \times 0.8 = 96\ \mathrm{individuals\ yr^{-1}}$$
+
+When $N = 250$ (half of $K$), the growth rate is maximised:
+
+$$\frac{dN}{dt} = 1.2 \times 250 \times 0.5 = 150\ \mathrm{individuals\ yr^{-1}}$$
+
+The maximum growth rate always occurs at $N = K/2$.
+
+### 8.3 Ecological Footprint Calculations
+
+The **ecological footprint** measures the area of land and water required to produce the resources
+consumed and to absorb the waste produced by a population, expressed in global hectares (gha) per person.
+
+**Worked Example.** If the average person in a country has an ecological footprint of
+$5.0\ \mathrm{gha}$ and the country's biocapacity is $3.2\ \mathrm{gha}$ per person:
+
+Ecological deficit $= 5.0 - 3.2 = 1.8\ \mathrm{gha}$ per person.
+
+This means the country is consuming resources faster than they can be regenerated, running an
+ecological deficit. It is meeting the shortfall by importing resources, depleting its own natural
+capital, or emitting waste that cannot be absorbed (e.g., $\mathrm{CO_2}$ exceeding absorption capacity).
+
+:::warning
+Common Pitfall Students sometimes calculate ecological efficiency as the fraction of solar energy
+that reaches producers, rather than the fraction transferred between trophic levels. The ecological
+efficiency between trophic levels is the fraction of energy at one level that is incorporated into
+biomass at the next level (typically 10--20%), not the fraction of total solar radiation captured by
+producers (typically less than 3%).
+:::
+
+## 9. Advanced Nutrient Cycle Analysis
+
+### 9.1 Quantifying the Nitrogen Cycle
+
+**Worked Example.** A farmer applies $150\ \mathrm{kg\ ha^{-1}}$ of ammonium nitrate fertiliser
+($\mathrm{NH_4NO_3}$, molar mass $= 80\ \mathrm{g\ mol^{-1}}$). Calculate the mass of nitrogen applied
+per hectare.
+
+Molar mass of $\mathrm{NH_4NO_3} = 2(14) + 4(1) + 3(16) = 80\ \mathrm{g\ mol^{-1}}$.
+
+Mass fraction of nitrogen $= \frac{28}{80} = 0.35 = 35\%$.
+
+Mass of nitrogen applied $= 150 \times 0.35 = 52.5\ \mathrm{kg\ ha^{-1}}$.
+
+If only 50% of applied nitrogen is taken up by crops (the rest is lost through leaching,
+denitrification, or volatilisation), the effective nitrogen available to crops is $26.25\ \mathrm{kg\ ha^{-1}}$.
+The excess $26.25\ \mathrm{kg\ ha^{-1}}$ contributes to eutrophication if it enters water bodies.
+
+### 9.2 BOD Calculations in Detail
+
+Biochemical oxygen demand (BOD) measures the amount of oxygen (in $\mathrm{mg\ dm^{-3}}$) consumed by
+microorganisms in decomposing organic matter in a water sample over 5 days at $20\ ^\circ\mathrm{C}$.
+
+**Worked Example.** A water sample is taken from a river upstream and downstream of a sewage outfall.
+
+| Measurement              | Upstream | Downstream |
+| ------------------------ | -------- | ---------- |
+| Dissolved $\mathrm{O_2}$ initially ($\mathrm{mg\ dm^{-3}}$) | 9.2  | 8.8        |
+| Dissolved $\mathrm{O_2}$ after 5 days ($\mathrm{mg\ dm^{-3}}$) | 7.8  | 2.1        |
+
+Upstream $\mathrm{BOD} = 9.2 - 7.8 = 1.4\ \mathrm{mg\ dm^{-3}}$.
+
+Downstream $\mathrm{BOD} = 8.8 - 2.1 = 6.7\ \mathrm{mg\ dm^{-3}}$.
+
+The downstream BOD is nearly 5 times higher, indicating significant organic pollution from the sewage
+outfall. The dissolved oxygen level downstream after 5 days ($2.1\ \mathrm{mg\ dm^{-3}}$) is below the
+level required by most fish species ($> 5\ \mathrm{mg\ dm^{-3}}$), suggesting the river downstream is
+undergoing hypoxia.
+
+### 9.3 The Carbon Cycle: Quantitative Analysis
+
+**Worked Example.** An area of forest covers $10\ \mathrm{km^2}$. The average NPP of the forest is
+$1200\ \mathrm{g\ C\ m^{-2}\ yr^{-1}}$. The average rate of decomposition returns 900
+$\mathrm{g\ C\ m^{-2}\ yr^{-1}}$ to the atmosphere as $\mathrm{CO_2}$.
+
+Total NPP $= 1200 \times 10^7 = 1.2 \times 10^{10}\ \mathrm{g\ C\ yr^{-1}} = 12000\ \mathrm{tonnes\ C\ yr^{-1}}$.
+
+Net carbon sequestration $= \mathrm{NPP} - \text{decomposition} = (1200 - 900) \times 10^7 = 3000\ \mathrm{tonnes\ C\ yr^{-1}}$.
+
+If the forest is cleared, this sequestration is lost. Additionally, burning releases the stored carbon
+in biomass back to the atmosphere. If the forest biomass contains $5000\ \mathrm{tonnes\ C\ km^{-2}}$,
+clearing 10 $\mathrm{km^2}$ releases 50000 tonnes of carbon, equivalent to
+$50000 \times \frac{44}{12} = 183333\ \mathrm{tonnes\ CO_2}$.
+
+## 10. Fieldwork Techniques and Data Analysis
+
+### 10.1 Random Sampling with Quadrats
+
+**Worked Example.** A student uses a $0.5\ \mathrm{m} \times 0.5\ \mathrm{m}$ quadrat to estimate the
+population density of daisies in a $100\ \mathrm{m} \times 50\ \mathrm{m}$ field. They place 10
+quadrats randomly and count: 12, 8, 15, 6, 10, 14, 9, 11, 7, 13 daisies.
+
+Mean daisies per quadrat $= \frac{12 + 8 + 15 + 6 + 10 + 14 + 9 + 11 + 7 + 13}{10} = \frac{105}{10} = 10.5$
+
+Mean density $= \frac{10.5}{0.5 \times 0.5} = 42\ \mathrm{daisies\ m^{-2}}$.
+
+Estimated total population $= 42 \times 100 \times 50 = 210000$ daisies.
+
+Standard deviation $= \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}} = \sqrt{\frac{(12-10.5)^2 + (8-10.5)^2 + ... + (13-10.5)^2}{9}} = \sqrt{\frac{70.5}{9}} = \sqrt{7.83} = 2.80$.
+
+Standard error $= \frac{s}{\sqrt{n}} = \frac{2.80}{\sqrt{10}} = 0.89\ \mathrm{daisies\ per\ quadrat}$.
+
+The 95% confidence interval is approximately $\bar{x} \pm 2 \times \mathrm{SE} = 10.5 \pm 1.78$, or
+8.72 to 12.28 daisies per quadrat. Converting to total population: 174400 to 245600 daisies.
+
+### 10.2 The Lincoln Index (Capture-Mark-Recapture)
+
+For mobile organisms that cannot be counted directly, the Lincoln index estimates population size:
+
+$$N = \frac{n_1 \times n_2}{n_3}$$
+
+where:
+- $n_1$ = number captured and marked in the first sample
+- $n_2$ = number captured in the second sample
+- $n_3$ = number of marked individuals recaptured in the second sample
+
+**Worked Example.** A researcher studying woodlice captures 80 individuals, marks them, and releases
+them. One week later, she captures 60 individuals, of which 12 are marked.
+
+$$N = \frac{80 \times 60}{12} = 400$$
+
+Estimated population size $= 400$ woodlice.
+
+**Assumptions of the Lincoln index:**
+- Marked and unmarked individuals have the same probability of capture (marks do not affect behaviour).
+- The proportion of marked to unmarked individuals in the population does not change between sampling
+  (no births, deaths, immigration, or emigration).
+- Marks are not lost.
+- Samples are random.
+
+:::warning
+Common Pitfall The Lincoln index assumes a closed population between the two sampling events. If
+organisms are born, die, migrate in, or migrate out between samples, the estimate will be inaccurate.
+If no marked individuals are recaptured ($n_3 = 0$), the method fails entirely.
+:::
+
+## 11. Climate Change and Ocean Acidification
+
+### 11.1 Ocean Acidification: Quantitative Analysis
+
+The ocean absorbs approximately 25--30% of anthropogenic $\mathrm{CO_2}$ emissions. Dissolved
+$\mathrm{CO_2}$ reacts with water:
+
+$$\mathrm{CO_2(aq)} + \mathrm{H_2O} \rightleftharpoons \mathrm{H_2CO_3} \rightleftharpoons \mathrm{H^+} + \mathrm{HCO_3^-} \rightleftharpoons 2\mathrm{H^+} + \mathrm{CO_3^{2-}}$$
+
+Increased $\mathrm{CO_2}$ drives this equilibrium to the right, increasing $[\mathrm{H^+}]$ (decreasing
+pH) and decreasing $[\mathrm{CO_3^{2-}}]$.
+
+**Worked Example.** Pre-industrial ocean surface pH was approximately 8.18. Current pH is approximately
+8.07. Calculate the change in $[\mathrm{H^+}]$.
+
+Pre-industrial: $[\mathrm{H^+}] = 10^{-8.18} = 6.61 \times 10^{-9}\ \mathrm{mol\ dm^{-3}}$.
+
+Current: $[\mathrm{H^+}] = 10^{-8.07} = 8.51 \times 10^{-9}\ \mathrm{mol\ dm^{-3}}$.
+
+Change: $\frac{8.51 - 6.61}{6.61} \times 100\% = 28.7\%$ increase in $[\mathrm{H^+}]$.
+
+A change of 0.11 pH units represents a 29% increase in hydrogen ion concentration, illustrating that
+even small changes in pH reflect significant chemical changes.
+
+**Biological consequences**: decreased $[\mathrm{CO_3^{2-}}$ reduces the saturation state of calcium
+carbonate ($\mathrm{CaCO_3}$), making it more difficult for marine organisms to build and maintain their
+shells and skeletons. Coral reefs, pteropods, and some phytoplankton species are particularly
+vulnerable. If $\mathrm{CO_3^{2-}}$ concentration falls below the aragonite saturation threshold,
+coral skeletons begin to dissolve.
+
+## 12. Practical Ecology: Measuring Abiotic Factors
+
+### 12.1 Key Abiotic Measurements
+
+| Factor                    | Instrument                    | Unit                         |
+| ------------------------- | ----------------------------- | ---------------------------- |
+| Temperature               | Thermometer / data logger     | $^\circ\mathrm{C}$          |
+| Light intensity           | Light meter (lux meter)       | Lux or $\mathrm{W\ m^{-2}}$ |
+| Soil / water pH           | pH meter / pH indicator paper | pH                           |
+| Dissolved oxygen          | Dissolved oxygen probe        | $\mathrm{mg\ dm^{-3}}$ or % saturation |
+| Soil moisture             | Soil moisture meter           | % volumetric water content   |
+| Wind speed                | Anemometer                    | $\mathrm{m\ s^{-1}}$        |
+| Humidity                  | Hygrometer                    | % relative humidity          |
+| Water flow rate           | Flow meter                    | $\mathrm{m^3\ s^{-1}}$      |
+
+### 12.2 Reliability and Validity in Ecological Investigations
+
+**Reliability**: results are consistent when the investigation is repeated. Improved by: using large
+sample sizes, taking multiple measurements at each site, using standardised techniques, and controlling
+variables.
+
+**Validity**: the investigation measures what it claims to measure. Improved by: using appropriate
+sampling methods, controlling confounding variables, and ensuring measurements are taken at the same time
+of day and under similar weather conditions.
+
+**Correlation vs causation**: an observed correlation between two variables (e.g., light intensity and
+plant height) does not establish causation. Controlled experiments or manipulation of one variable while
+holding others constant are needed to establish causal relationships.
+
 ## Practice Problems
 
 <details>
@@ -534,6 +778,95 @@ risen in parallel with agricultural and industrial expansion. These lines of evi
 establish a causal link between human activities and global warming.
 
 <b>If you get this wrong, revise:</b> [The Greenhouse Effect](#61-the-greenhouse-effect)
+
+</details>
+
+<details>
+<summary>Problem 7</summary>
+A student uses the capture-mark-recapture method to estimate the population size of woodlice in a
+garden. In the first sample, she captures 50 woodlice, marks them, and releases them. In the second
+sample (one week later), she captures 40 woodlice, of which 8 are marked. (a) Calculate the estimated
+population size. (b) List three assumptions of this method and explain how a violation of each would
+affect the estimate. (c) The student repeats the study with a larger sample size. Explain why this
+improves the reliability of the estimate.
+
+**Answer.** (a) $N = \frac{n_1 \times n_2}{n_3} = \frac{50 \times 40}{8} = 250$ woodlice.
+
+(b) Assumption 1: marks are not lost between samples. If marks are lost, $n_3$ decreases, causing
+overestimation of $N$ (denominator is smaller). Assumption 2: marked individuals mix randomly with the
+population. If marked individuals remain clustered near the release point, the probability of recapture
+is higher in that area, potentially causing either over- or under-estimation depending on where the
+second sample is taken. Assumption 3: the population is closed (no births, deaths, immigration, or
+emigration). Deaths of marked individuals reduce $n_3$, causing overestimation. Immigration of
+unmarked individuals increases the population but not $n_3$, also causing overestimation.
+
+(c) Larger sample sizes reduce the effect of random sampling error. The estimate $N = \frac{n_1 n_2}{n_3}$
+has uncertainty that is inversely related to $n_3$. With only 8 recaptures, random variation could
+substantially change the estimate. If $n_3 = 7$ instead of 8, $N = 286$ instead of 250 -- a 14%
+change. Larger samples give smaller proportional changes.
+
+<b>If you get this wrong, revise:</b> [The Lincoln Index (Capture-Mark-Recapture)](#102-the-lincoln-index-capture-mark-recapture)
+
+</details>
+
+<details>
+<summary>Problem 8</summary>
+An agricultural ecosystem has the following energy values (in $\mathrm{kJ\ m^{-2}\ yr^{-1}}$):
+
+| Trophic Level       | Energy intake | Energy lost in faeces | Energy lost in respiration |
+| ------------------- | ------------- | --------------------- | -------------------------- |
+| Wheat (producer)    | 25000         | 0                     | 8000                      |
+| Aphid (primary)     | 2000          | 800                   | 700                       |
+| Ladybird (secondary)| 300           | 120                   | 120                       |
+
+(a) Calculate the ecological efficiency between each trophic level. (b) Calculate NPP of the wheat.
+(c) Explain why the ecological efficiency is less than 100% at each level.
+
+**Answer.** (a) Energy available to aphids (assimilated by wheat minus wheat respiration, stored as NPP):
+$\mathrm{NPP} = 25000 - 8000 = 17000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+
+Ecological efficiency (wheat to aphid) $= \frac{2000}{17000} \times 100\% = 11.8\%$.
+
+Energy assimilated by aphids $= 2000 - 800 = 1200\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+
+Ecological efficiency (aphid to ladybird) $= \frac{300}{1200} \times 100\% = 25.0\%$.
+
+(b) $\mathrm{NPP} = \mathrm{GPP} - R = 25000 - 8000 = 17000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+
+(c) Ecological efficiency is less than 100% because: (1) not all biomass at one level is consumed by the
+next (some wheat is not eaten by aphids); (2) not all consumed material is digested and absorbed
+(faeces contain undigested material); (3) much of the assimilated energy is used for respiration
+(metabolism, movement, heat production) and is lost as heat. Only the remaining energy is converted to
+new biomass (growth and reproduction) available to the next trophic level.
+
+<b>If you get this wrong, revise:</b> [Ecological Productivity](#13-ecological-productivity) and [Quantitative Ecology](#8-quantitative-ecology)
+
+</details>
+
+<details>
+<summary>Problem 9</summary>
+Explain how the nitrogen cycle would be disrupted by the application of large quantities of nitrogen
+fertiliser to agricultural land. In your answer, describe the effects on (a) the soil nitrogen cycle,
+(b) aquatic ecosystems downstream, and (c) the soil microbiome.
+
+**Answer.** (a) Excess nitrogen fertiliser (as $\mathrm{NH_4NO_3}$ or $\mathrm{NH_4^+}$) increases the
+concentration of ammonium and nitrate in the soil far above natural levels. This can inhibit
+nitrogen-fixing bacteria (because they have no selective advantage when fixed nitrogen is abundant) and
+stimulate denitrifying bacteria, increasing $\mathrm{N_2\mathrm{O}$ emissions (a potent greenhouse gas).
+The natural balance between fixation, nitrification, and denitrification is disrupted.
+
+(b) Excess nitrates are highly soluble and readily leach from the soil into groundwater and rivers. This
+causes eutrophication downstream: nitrates act as nutrients for algae, causing algal blooms that block
+light and deplete dissolved oxygen when decomposed, killing aquatic organisms. High nitrate
+concentrations in drinking water are also a health concern (methemoglobinemia, or "blue baby syndrome,"
+in infants).
+
+(c) High concentrations of ammonium-based fertilisers can lower soil pH over time (ammonium
+nitrification releases $\mathrm{H^+}$). Acidification inhibits many soil microorganisms, reducing the
+diversity and activity of decomposers, mycorrhizal fungi, and other beneficial soil organisms. This
+reduces soil fertility in the long term, creating a dependency on continued fertiliser application.
+
+<b>If you get this wrong, revise:</b> [The Nitrogen Cycle](#32-the-nitrogen-cycle) and [Advanced Nutrient Cycle Analysis](#9-advanced-nutrient-cycle-analysis)
 
 </details>
 

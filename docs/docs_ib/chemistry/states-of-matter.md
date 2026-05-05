@@ -575,6 +575,166 @@ Since boiling requires overcoming intermolecular forces, stronger LDFs mean a hi
 
 ---
 
+## Worked Examples (Expanded)
+
+**Worked Example: RMS Speed and the Maxwell-Boltzmann Distribution**
+
+Calculate the root-mean-square speed of $\mathrm{O}_2$ molecules at $298\;\mathrm{K}$ and at $500\;\mathrm{K}$. By what factor does the rms speed increase? ($M_r(\mathrm{O}_2) = 32.0\;\mathrm{g/mol}$, $R = 8.314\;\mathrm{J/(mol \cdot K)}$)
+
+<details>
+<summary>Solution</summary>
+
+$$v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}}$$
+
+At $298\;\mathrm{K}$:
+$$v_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.314 \times 298}{0.0320}} = \sqrt{\frac{7429}{0.0320}} = \sqrt{232\,154} = 482\;\mathrm{m/s}$$
+
+At $500\;\mathrm{K}$:
+$$v_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.314 \times 500}{0.0320}} = \sqrt{\frac{12471}{0.0320}} = \sqrt{389\,719} = 624\;\mathrm{m/s}$$
+
+Factor of increase: $\frac{624}{482} = 1.29$
+
+Since $v_{\mathrm{rms}} \propto \sqrt{T}$, the factor is $\sqrt{500/298} = \sqrt{1.678} = 1.29$, consistent with the calculation.
+
+</details>
+
+**Worked Example: Critical Point and Supercritical Fluid**
+
+The critical point of $\mathrm{CO}_2$ is at $T_c = 304.3\;\mathrm{K}$ ($31.1\degree\mathrm{C}$) and $P_c = 7.38\;\mathrm{MPa}$ ($72.8\;\mathrm{atm}$). (a) Explain what happens at the critical point. (b) $\mathrm{CO}_2$ is commonly used as a supercritical fluid in decaffeination. If $\mathrm{CO}_2$ is held at $40\degree\mathrm{C}$ and $80\;\mathrm{atm}$, is it supercritical? (c) State two properties of supercritical $\mathrm{CO}_2$ that make it useful as a solvent.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** At the critical point, the densities of the liquid and gas phases become identical. Above $T_c$ and $P_c$, no phase boundary exists between liquid and gas — the substance exists as a single, dense phase called a supercritical fluid. The meniscus between liquid and gas disappears.
+
+**(b)** The conditions are $T = 40\degree\mathrm{C} = 313\;\mathrm{K}$, which is above $T_c = 304\;\mathrm{K}$, and $P = 80\;\mathrm{atm}$, which is above $P_c = 72.8\;\mathrm{atm}$. Since both $T > T_c$ and $P > P_c$, the $\mathrm{CO}_2$ is in the supercritical state.
+
+**(c)** Supercritical $\mathrm{CO}_2$ has a density similar to a liquid (good solvating power) but a viscosity similar to a gas (high diffusivity). This allows it to penetrate porous solids (like coffee beans) rapidly and dissolve non-polar organic compounds (like caffeine) efficiently. It is also non-toxic, non-flammable, and easily removed by depressurisation, leaving no solvent residue.
+
+</details>
+
+**Worked Example: Clausius-Clapeyron Equation and Vapour Pressure**
+
+The vapour pressure of water is $2.34\;\mathrm{kPa}$ at $20\degree\mathrm{C}$ and $7.38\;\mathrm{kPa}$ at $40\degree\mathrm{C}$. Use the Clausius-Clapeyron equation to estimate the enthalpy of vaporisation of water.
+
+<details>
+<summary>Solution</summary>
+
+The integrated Clausius-Clapeyron equation:
+
+$$\ln\!\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{\mathrm{vap}}}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
+
+Substituting:
+$P_1 = 2.34\;\mathrm{kPa}$, $T_1 = 293\;\mathrm{K}$
+$P_2 = 7.38\;\mathrm{kPa}$, $T_2 = 313\;\mathrm{K}$
+
+$$\ln\!\left(\frac{7.38}{2.34}\right) = -\frac{\Delta H_{\mathrm{vap}}}{8.314}\left(\frac{1}{313} - \frac{1}{293}\right)$$
+
+$$\ln(3.154) = -\frac{\Delta H_{\mathrm{vap}}}{8.314}\left(0.003195 - 0.003413\right)$$
+
+$$1.148 = -\frac{\Delta H_{\mathrm{vap}}}{8.314}(-0.000218)$$
+
+$$1.148 = \frac{\Delta H_{\mathrm{vap}} \times 0.000218}{8.314}$$
+
+$$\Delta H_{\mathrm{vap}} = \frac{1.148 \times 8.314}{0.000218} = 43800\;\mathrm{J/mol} = 43.8\;\mathrm{kJ/mol}$$
+
+The accepted literature value is $44.0\;\mathrm{kJ/mol}$. The close agreement validates the use of the Clausius-Clapeyron equation over this temperature range.
+
+</details>
+
+**Worked Example: Heating Curve and Enthalpy Calculations**
+
+A $50.0\;\mathrm{g}$ sample of ice at $-20\degree\mathrm{C}$ is heated to $120\degree\mathrm{C}$ at standard pressure. Calculate the total energy required. Given: specific heat of ice $= 2.09\;\mathrm{J/(g \cdot \degree C)}$, specific heat of water $= 4.18\;\mathrm{J/(g \cdot \degree C)}$, specific heat of steam $= 2.01\;\mathrm{J/(g \cdot \degree C)}$, $\Delta H_{\mathrm{fusion}} = 334\;\mathrm{J/g}$, $\Delta H_{\mathrm{vap}} = 2260\;\mathrm{J/g}$.
+
+<details>
+<summary>Solution</summary>
+
+**Step 1: Heating ice from $-20\degree\mathrm{C}$ to $0\degree\mathrm{C}$**
+$$q_1 = m \cdot c_{\mathrm{ice}} \cdot \Delta T = 50.0 \times 2.09 \times 20 = 2090\;\mathrm{J}$$
+
+**Step 2: Melting ice at $0\degree\mathrm{C}$**
+$$q_2 = m \cdot \Delta H_{\mathrm{fusion}} = 50.0 \times 334 = 16700\;\mathrm{J}$$
+
+**Step 3: Heating water from $0\degree\mathrm{C}$ to $100\degree\mathrm{C}$**
+$$q_3 = m \cdot c_{\mathrm{water}} \cdot \Delta T = 50.0 \times 4.18 \times 100 = 20900\;\mathrm{J}$$
+
+**Step 4: Vaporising water at $100\degree\mathrm{C}$**
+$$q_4 = m \cdot \Delta H_{\mathrm{vap}} = 50.0 \times 2260 = 113000\;\mathrm{J}$$
+
+**Step 5: Heating steam from $100\degree\mathrm{C}$ to $120\degree\mathrm{C}$**
+$$q_5 = m \cdot c_{\mathrm{steam}} \cdot \Delta T = 50.0 \times 2.01 \times 20 = 2010\;\mathrm{J}$$
+
+**Total:**
+$$q_{\mathrm{total}} = 2090 + 16700 + 20900 + 113000 + 2010 = 154\,700\;\mathrm{J} = 155\;\mathrm{kJ}$$
+
+Note that vaporisation alone accounts for $\frac{113000}{154700} = 73\%$ of the total energy, demonstrating the dominance of the enthalpy of vaporisation.
+
+</details>
+
+---
+
+## Exam-Style Problems (Expanded)
+
+<details>
+<summary>Problem 9: Quantitative -- Boltzmann Distribution and Activation Energy</summary>
+
+For a reaction with activation energy $E_a = 75.0\;\mathrm{kJ/mol}$, calculate the ratio of molecules with sufficient energy to react at $350\;\mathrm{K}$ versus $300\;\mathrm{K}$. ($R = 8.314\;\mathrm{J/(mol \cdot K)}$). Use the Boltzmann factor $\frac{n(E > E_a)}{n_{\mathrm{total}}} \propto e^{-E_a/RT}$. Explain the significance of this ratio for the effect of temperature on reaction rate.
+
+</details>
+
+<details>
+<summary>Problem 10: Extended Response -- Boiling Point Trends in Hydrogen Halides</summary>
+
+The boiling points of the hydrogen halides are: $\mathrm{HF}$ ($19.5\degree\mathrm{C}$), $\mathrm{HCl}$ ($-85\degree\mathrm{C}$), $\mathrm{HBr}$ ($-67\degree\mathrm{C}$), $\mathrm{HI}$ ($-35\degree\mathrm{C}$). (a) Explain the anomalous boiling point of $\mathrm{HF}$. (b) Explain the trend from $\mathrm{HCl}$ to $\mathrm{HI}$. (c) Predict the boiling point of $\mathrm{H}_2\mathrm{O}$ relative to $\mathrm{H}_2\mathrm{S}$ and explain, given that the boiling point of $\mathrm{H}_2\mathrm{S}$ is $-60\degree\mathrm{C}$.
+
+</details>
+
+<details>
+<summary>Problem 11: Quantitative -- Vapour Pressure and Boiling Point at Altitude</summary>
+
+At the summit of Mount Everest (altitude $8848\;\mathrm{m}$), atmospheric pressure is approximately $33\;\mathrm{kPa}$. Using the Clausius-Clapeyron equation with $\Delta H_{\mathrm{vap}} = 40.7\;\mathrm{kJ/mol}$ for water, estimate the boiling point of water at this altitude. ($R = 8.314\;\mathrm{J/(mol \cdot K)}$; normal boiling point $= 100\degree\mathrm{C}$ at $101.3\;\mathrm{kPa}$)
+
+</details>
+
+<details>
+<summary>Problem 12: Extended Response -- Liquid Crystal Phases</summary>
+
+Liquid crystals are materials that exhibit phases intermediate between isotropic liquids and crystalline solids. (a) Describe the nematic and smectic phases of liquid crystals, explaining the degree of molecular order in each. (b) Explain how the application of an electric field can change the optical properties of a nematic liquid crystal. (c) State one application of liquid crystals and explain how the phase transition temperature limits their use.
+
+</details>
+
+<details>
+<summary>Problem 13: Data Analysis -- Compressibility Factor</summary>
+
+A gas has a compressibility factor $Z = 0.87$ at $200\;\mathrm{K}$ and $10\;\mathrm{atm}$. (a) Calculate the actual molar volume of the gas and compare it with the ideal gas prediction. (b) Explain whether intermolecular attractions or molecular volume effects dominate at these conditions. (c) Predict qualitatively whether $Z$ would be greater than, less than, or equal to $1$ at $500\;\mathrm{K}$ and $100\;\mathrm{atm}$ for the same gas.
+
+</details>
+
+<details>
+<summary>Problem 14: Extended Response -- Phase Diagram Interpretation</summary>
+
+The phase diagram of a substance shows a triple point at $T = 150\;\mathrm{K}$, $P = 0.5\;\mathrm{atm}$, a normal melting point of $180\;\mathrm{K}$, and a critical point at $T = 350\;\mathrm{K}$, $P = 45\;\mathrm{atm}$. The solid-liquid boundary has a positive slope. (a) Sketch the phase diagram. (b) Describe what happens when the substance at $200\;\mathrm{K}$ and $1.0\;\mathrm{atm}$ is compressed to $50\;\mathrm{atm}$ at constant temperature. (c) Explain why the solid-liquid boundary has a positive slope for this substance but a negative slope for water. (d) At what minimum temperature can the substance be liquefied by pressure alone?
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Confusing rms speed, average speed, and most probable speed**: For the Maxwell-Boltzmann distribution, $v_{\mathrm{mp}} < \bar{v} < v_{\mathrm{rms}}$. The relationships are $v_{\mathrm{rms}} = \sqrt{3RT/M}$, $\bar{v} = \sqrt{8RT/(\pi M)}$, and $v_{\mathrm{mp}} = \sqrt{2RT/M}$. Each differs by a constant factor.
+
+- **Using the Clausius-Clapeyron equation outside its validity range**: The equation assumes constant $\Delta H_{\mathrm{vap}}$ over the temperature range, which is a reasonable approximation for narrow ranges but breaks down over large temperature intervals or near the critical point.
+
+- **Assuming the heating curve is linear**: During a phase transition (melting or boiling), temperature remains constant while energy is absorbed or released. The heating curve is flat during these transitions — this is the latent heat, not a failure of heating.
+
+- **Confusing vapour pressure with gas pressure**: Vapour pressure is the pressure exerted by the vapour in equilibrium with its liquid at a given temperature. It is a property of the substance and temperature only, not of the container volume or the amount of liquid.
+
+- **Applying Graham's law to diffusion through porous media**: Graham's law gives the ratio of effusion rates through a small orifice. Diffusion through air is more complex because gas molecules collide with air molecules, not just the orifice wall. The calculated Graham's law ratio is an upper bound.
+
+- **Ignoring the role of unit conversions in gas density calculations**: Gas density $\rho = PM/(RT)$ requires $P$ in $\mathrm{Pa}$, $M$ in $\mathrm{kg/mol}$, $R = 8.314\;\mathrm{J/(mol \cdot K)}$, and $T$ in $\mathrm{K}$ to get density in $\mathrm{kg/m}^3$. Using $M$ in $\mathrm{g/mol}$ gives a result that is off by a factor of 1000.
+
+---
+
 ## If You Get These Wrong, Revise:
 
 - **Atomic structure and electron configuration** → Review [./atomic-theory](./atomic-theory)

@@ -601,6 +601,177 @@ The cell potential is slightly lower than standard because the higher concentrat
 
 ---
 
+## Worked Examples (Expanded)
+
+**Worked Example: Concentration Cell**
+
+A concentration cell is constructed from two $\mathrm{Ag}$ electrodes. One half-cell contains $\mathrm{AgNO}_3$ at $0.100\;\mathrm{M}$ and the other contains $\mathrm{AgNO}_3$ at $0.0010\;\mathrm{M}$. Calculate the cell potential at $298\;\mathrm{K}$.
+
+<details>
+<summary>Solution</summary>
+
+A concentration cell has identical half-reactions but different ion concentrations. The half-cell with the lower concentration acts as the anode (oxidation) because the equilibrium $\mathrm{Ag}^+ + e^- \rightleftharpoons \mathrm{Ag}$ shifts left more readily when $[\mathrm{Ag}^+]$ is low.
+
+Anode (oxidation): $\mathrm{Ag}(s) \to \mathrm{Ag}^+(aq, 0.0010\;\mathrm{M}) + e^-$
+
+Cathode (reduction): $\mathrm{Ag}^+(aq, 0.100\;\mathrm{M}) + e^- \to \mathrm{Ag}(s)$
+
+Since $E_{\mathrm{cell}}^\circ = 0$ (same half-reaction), the Nernst equation gives:
+
+$$E_{\mathrm{cell}} = 0 - \frac{0.0592}{1}\log\!\left(\frac{[\mathrm{Ag}^+]_{\mathrm{anode}}}{[\mathrm{Ag}^+]_{\mathrm{cathode}}}\right)$$
+
+$$E_{\mathrm{cell}} = -0.0592\log\!\left(\frac{0.0010}{0.100}\right) = -0.0592\log(0.010) = -0.0592 \times (-2) = +0.118\;\mathrm{V}$$
+
+The cell potential is $+0.118\;\mathrm{V}$. The reaction spontaneously proceeds to equalise the concentrations, and the cell potential decreases to zero as the concentrations converge.
+
+</details>
+
+**Worked Example: Electrolytic Cell -- Current Efficiency and Side Reactions**
+
+A current of $5.00\;\mathrm{A}$ is passed through $\mathrm{NaCl}(aq)$ for $2.00$ hours. The expected product at the anode is $\mathrm{Cl}_2$ (from $2\mathrm{Cl}^- \to \mathrm{Cl}_2 + 2e^-$), but some $\mathrm{O}_2$ is also produced (from $4\mathrm{OH}^- \to \mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} + 4e^-$). If $8.90\;\mathrm{g}$ of $\mathrm{Cl}_2$ is collected (instead of the theoretical $13.1\;\mathrm{g}$), calculate the current efficiency for $\mathrm{Cl}_2$ production and the mass of $\mathrm{O}_2$ produced as a side product.
+
+<details>
+<summary>Solution</summary>
+
+**Theoretical mass of $\mathrm{Cl}_2$:**
+
+$$Q = It = 5.00 \times 7200 = 36000\;\mathrm{C}$$
+
+$$n(e^-) = \frac{Q}{F} = \frac{36000}{96485} = 0.373\;\mathrm{mol\;e^-}$$
+
+For $\mathrm{Cl}_2$: $2\;\mathrm{mol\;e^-}$ per mol $\mathrm{Cl}_2$:
+
+$$n(\mathrm{Cl}_2)_{\mathrm{theoretical}} = \frac{0.373}{2} = 0.187\;\mathrm{mol}$$
+
+$$m(\mathrm{Cl}_2)_{\mathrm{theoretical}} = 0.187 \times 71.0 = 13.2\;\mathrm{g}$$
+
+**Current efficiency:**
+
+$$\mathrm{Efficiency} = \frac{8.90}{13.2} \times 100 = 67.4\%$$
+
+**Electrons used for $\mathrm{Cl}_2$:**
+
+$$n(e^-)_{\mathrm{Cl}_2} = 2 \times \frac{8.90}{71.0} = 0.251\;\mathrm{mol\;e^-}$$
+
+**Remaining electrons used for $\mathrm{O}_2$:**
+
+$$n(e^-)_{\mathrm{O}_2} = 0.373 - 0.251 = 0.122\;\mathrm{mol\;e^-}$$
+
+For $\mathrm{O}_2$: $4\;\mathrm{mol\;e^-}$ per mol $\mathrm{O}_2$:
+
+$$n(\mathrm{O}_2) = \frac{0.122}{4} = 0.0305\;\mathrm{mol}$$
+
+$$m(\mathrm{O}_2) = 0.0305 \times 32.0 = 0.976\;\mathrm{g}$$
+
+</details>
+
+**Worked Example: Gibbs Free Energy, Cell Potential, and Equilibrium**
+
+For the reaction $\mathrm{Cu}(s) + 2\mathrm{Ag}^+(aq) \rightleftharpoons \mathrm{Cu}^{2+}(aq) + 2\mathrm{Ag}(s)$: (a) Calculate $E_{\mathrm{cell}}^\circ$, $\Delta G^\circ$, and $K$ at $298\;\mathrm{K}$. (b) Calculate $\Delta G$ when $[\mathrm{Ag}^+] = 0.010\;\mathrm{M}$ and $[\mathrm{Cu}^{2+}] = 0.10\;\mathrm{M}$. ($E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\;\mathrm{V}$, $E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\;\mathrm{V}$)
+
+<details>
+<summary>Solution</summary>
+
+**(a) Standard conditions:**
+
+$$E_{\mathrm{cell}}^\circ = E_{\mathrm{cathode}}^\circ - E_{\mathrm{anode}}^\circ = 0.80 - 0.34 = +0.46\;\mathrm{V}$$
+
+$$\Delta G^\circ = -nFE_{\mathrm{cell}}^\circ = -2 \times 96485 \times 0.46 = -88\,766\;\mathrm{J/mol} = -88.8\;\mathrm{kJ/mol}$$
+
+$$\log K = \frac{nE^\circ}{0.0592} = \frac{2 \times 0.46}{0.0592} = 15.5$$
+
+$$K = 10^{15.5} = 3.2 \times 10^{15}$$
+
+**(b) Non-standard conditions:**
+
+$$Q = \frac{[\mathrm{Cu}^{2+}]}{[\mathrm{Ag}^+]^2} = \frac{0.10}{(0.010)^2} = \frac{0.10}{0.00010} = 1000$$
+
+$$E_{\mathrm{cell}} = E_{\mathrm{cell}}^\circ - \frac{0.0592}{n}\log Q = 0.46 - \frac{0.0592}{2}\log(1000) = 0.46 - \frac{0.0592}{2} \times 3 = 0.46 - 0.0888 = 0.371\;\mathrm{V}$$
+
+$$\Delta G = -nFE_{\mathrm{cell}} = -2 \times 96485 \times 0.371 = -71\,600\;\mathrm{J/mol} = -71.6\;\mathrm{kJ/mol}$$
+
+The reaction is still spontaneous ($\Delta G < 0$, $E_{\mathrm{cell}} > 0$) but less strongly so because the high product-to-reactant ratio pushes the reaction back toward equilibrium.
+
+</details>
+
+---
+
+## Exam-Style Problems (Expanded)
+
+<details>
+<summary>Problem 9: Quantitative -- Lead-Acid Battery Discharge</summary>
+
+A $12\;\mathrm{V}$ car battery contains six lead-acid cells in series. The overall cell reaction is:
+$$\mathrm{Pb}(s) + \mathrm{PbO}_2(s) + 2\mathrm{H}_2\mathrm{SO}_4(aq) \to 2\mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l)$$
+
+(a) Calculate $E_{\mathrm{cell}}^\circ$ per cell given that $K = 1.0 \times 10^{81}$ at $298\;\mathrm{K}$. (b) If the battery can deliver $4.0\;\mathrm{A}$ for $60\;\mathrm{minutes}$ before needing recharge, calculate the total charge transferred and the mass of $\mathrm{Pb}$ consumed at the anode. ($M_r(\mathrm{Pb}) = 207.2$)
+
+</details>
+
+<details>
+<summary>Problem 10: Extended Response -- Overpotential and Industrial Electrolysis</summary>
+
+In the industrial chlor-alkali process (membrane cell), the theoretical voltage required to electrolyse concentrated $\mathrm{NaCl}(aq)$ is approximately $2.2\;\mathrm{V}$, but in practice the cell operates at $3.5$--$4.0\;\mathrm{V}$. (a) Define overpotential and explain its origin at the electrode surfaces. (b) Identify two additional sources of voltage loss in an industrial cell (besides overpotential). (c) Calculate the energy cost per kg of $\mathrm{Cl}_2$ produced if the cell operates at $3.8\;\mathrm{V}$ and $85\%$ current efficiency. ($1\;\mathrm{kWh} = 3.6\;\mathrm{MJ}$)
+
+</details>
+
+<details>
+<summary>Problem 11: Quantitative -- $E^\circ$ from $\Delta G_f^\circ$ Values</summary>
+
+Given the following standard Gibbs free energies of formation:
+$\Delta G_f^\circ(\mathrm{Zn}^{2+}, aq) = -147\;\mathrm{kJ/mol}$
+$\Delta G_f^\circ(\mathrm{Cu}^{2+}, aq) = +65\;\mathrm{kJ/mol}$
+$\Delta G_f^\circ(\mathrm{Zn}, s) = 0\;\mathrm{kJ/mol}$
+$\Delta G_f^\circ(\mathrm{Cu}, s) = 0\;\mathrm{kJ/mol}$
+
+(a) Calculate $\Delta G^\circ$ for the reaction $\mathrm{Zn}(s) + \mathrm{Cu}^{2+}(aq) \to \mathrm{Zn}^{2+}(aq) + \mathrm{Cu}(s)$.
+(b) Calculate $E_{\mathrm{cell}}^\circ$ for the Daniell cell.
+(c) Compare your result with the standard reduction potential values ($E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\;\mathrm{V}$, $E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\;\mathrm{V}$).
+
+</details>
+
+<details>
+<summary>Problem 12: Extended Response -- Corrosion Mechanism and Prevention Economics</summary>
+
+A steel pipeline ($\mathrm{Fe}$) buried in soil is protected using a sacrificial anode of magnesium. (a) Write the half-equations for the corrosion of iron and the protection reaction of magnesium. (b) Calculate the minimum mass of magnesium required to protect $1.00\;\mathrm{tonne}$ ($1000\;\mathrm{kg}$) of iron from complete corrosion. ($M_r(\mathrm{Mg}) = 24.3$, $M_r(\mathrm{Fe}) = 55.8$) (c) Explain why the pipeline must be electrically connected to the magnesium block. (d) Discuss why impressed-current cathodic protection (using an external DC power supply and an inert anode) may be preferred for large structures.
+
+</details>
+
+<details>
+<summary>Problem 13: Quantitative -- pH Change During Electrolysis</summary>
+
+During the electrolysis of $\mathrm{CuSO}_4(aq)$ with inert electrodes, $\mathrm{O}_2$ is produced at the anode and $\mathrm{Cu}$ is deposited at the cathode. The overall reaction is:
+$$2\mathrm{Cu}^{2+}(aq) + 2\mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{Cu}(s) + 4\mathrm{H}^+(aq) + \mathrm{O}_2(g)$$
+
+A current of $2.50\;\mathrm{A}$ is passed through $500\;\mathrm{mL}$ of $0.200\;\mathrm{M}$ $\mathrm{CuSO}_4$ solution for $30.0\;\mathrm{minutes}$. (a) Calculate the concentration of $\mathrm{H}^+$ produced. (b) Calculate the pH of the solution after electrolysis. (c) Calculate the volume of $\mathrm{O}_2$ gas produced at STP ($22.7\;\mathrm{L/mol}$).
+
+</details>
+
+<details>
+<summary>Problem 14: Extended Response -- Fuel Cell Efficiency</summary>
+
+An $\mathrm{H}_2/\mathrm{O}_2$ fuel cell operates at $80\degree\mathrm{C}$ with $E_{\mathrm{cell}} = 1.15\;\mathrm{V}$ and a current density of $0.5\;\mathrm{A/cm}^2$. (a) Calculate $\Delta G$ for the cell reaction at $80\degree\mathrm{C}$ ($353\;\mathrm{K}$). (b) The enthalpy change for $\mathrm{H}_2$ combustion is $\Delta H = -286\;\mathrm{kJ/mol}$. Calculate the thermodynamic efficiency of the fuel cell ($\Delta G / \Delta H$). (c) Explain why the actual operating voltage ($1.15\;\mathrm{V}$) is less than the theoretical $E_{\mathrm{cell}}^\circ = 1.23\;\mathrm{V}$, and calculate the voltage efficiency.
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Forgetting to convert between volts and joules in $\Delta G$ calculations**: $\Delta G = -nFE$ requires $F$ in $\mathrm{C/mol}$ and $E$ in $\mathrm{V}$. Since $1\;\mathrm{V} = 1\;\mathrm{J/C}$, the product $nFE$ is automatically in joules. However, if you need the answer in $\mathrm{kJ/mol}$, you must divide by $1000$.
+
+- **Confusing $Q$ (reaction quotient) with $K$ (equilibrium constant)**: $Q$ uses the current (non-equilibrium) concentrations, while $K$ uses equilibrium concentrations. In the Nernst equation, $Q$ is used. At equilibrium, $Q = K$ and $E_{\mathrm{cell}} = 0$.
+
+- **Applying Faraday's law without accounting for current efficiency**: In real electrolysis, not all current goes to the desired product. Side reactions (e.g., $\mathrm{O}_2$ instead of $\mathrm{Cl}_2$ evolution) consume some charge. Always check whether the problem specifies a current efficiency before assuming $100\%$.
+
+- **Using the standard hydrogen electrode incorrectly in cell diagrams**: The SHE is always written on the side (anode or cathode) that makes $E_{\mathrm{cell}}^\circ$ positive. If the unknown half-cell has $E^\circ > 0$, the SHE is the anode. If $E^\circ < 0$, the SHE is the cathode.
+
+- **Neglecting the stoichiometry of electrons when using $\Delta G = -nFE$**: The $n$ must be the total number of electrons transferred in the balanced equation, not per mole of a specific reactant. For $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$, $n = 2$. For $2\mathrm{Fe}^{3+} + 2e^- \to 2\mathrm{Fe}^{2+}$, $n$ is still $2$ (not $2 \times 2 = 4$).
+
+- **Assuming standard conditions apply to real batteries**: A car battery at $12\;\mathrm{V}$ (open circuit) delivers less than $12\;\mathrm{V}$ under load due to internal resistance. The terminal voltage is $V = E_{\mathrm{cell}} - Ir_{\mathrm{internal}}$, where $I$ is the current drawn.
+
+---
+
 ## If You Get These Wrong, Revise:
 
 - **Oxidation numbers and balancing redox equations** → Review [./redox/redox-reactions](./redox/redox-reactions)

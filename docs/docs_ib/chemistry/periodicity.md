@@ -544,6 +544,176 @@ In anhydrous $\mathrm{CuSO}_4$, no water ligands are present, so no crystal fiel
 
 ---
 
+## Worked Examples (Expanded)
+
+**Worked Example: Lattice Energy Calculation Using the Born-Haber Cycle**
+
+Calculate the lattice energy of sodium chloride using the Born-Haber cycle.
+
+| Quantity | Value ($\mathrm{kJ/mol}$) |
+| --- | --- |
+| $\Delta H_f^\circ(\mathrm{NaCl})$ | $-411$ |
+| $\Delta H_\mathrm{atom}(\mathrm{Na})$ | $+108$ |
+| $\Delta H_\mathrm{atom}(\mathrm{Cl}_2)$ (per mole of atoms) | $+122$ |
+| $IE_1(\mathrm{Na})$ | $+496$ |
+| $EA_1(\mathrm{Cl})$ | $-349$ |
+
+<details>
+<summary>Solution</summary>
+
+The Born-Haber cycle relates the enthalpy of formation to the individual energy steps:
+
+$$\Delta H_f^\circ = \Delta H_\mathrm{atom}(\mathrm{Na}) + \Delta H_\mathrm{atom}(\mathrm{Cl}) + IE_1(\mathrm{Na}) + EA_1(\mathrm{Cl}) + U$$
+
+Solving for the lattice energy $U$:
+
+$$U = \Delta H_f^\circ - \Delta H_\mathrm{atom}(\mathrm{Na}) - \Delta H_\mathrm{atom}(\mathrm{Cl}) - IE_1(\mathrm{Na}) - EA_1(\mathrm{Cl})$$
+
+$$U = -411 - 108 - 122 - 496 - (-349) = -788\;\mathrm{kJ/mol}$$
+
+The lattice energy of $\mathrm{NaCl}$ is $-788\;\mathrm{kJ/mol}$. The large negative value reflects the strong electrostatic attraction between $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ in the ionic lattice.
+
+</details>
+
+**Worked Example: Predicting Ionisation Energy Anomalies**
+
+Explain why the first ionisation energy of oxygen ($1314\;\mathrm{kJ/mol}$) is lower than that of nitrogen ($1402\;\mathrm{kJ/mol}$), even though oxygen has a greater nuclear charge.
+
+<details>
+<summary>Solution</summary>
+
+Nitrogen has the electron configuration $1s^2\;2s^2\;2p^3$ — the $2p$ subshell is exactly half-filled. Half-filled subshells have extra stability due to exchange energy (parallel spins in degenerate orbitals are quantum-mechanically favoured). Removing an electron from a half-filled $p$ subshell disrupts this symmetry, costing additional energy.
+
+Oxygen has the configuration $1s^2\;2s^2\;2p^4$. The fourth $2p$ electron must pair with an existing electron in one of the $p$ orbitals. The paired electrons experience mutual electron-electron repulsion, which destabilises the atom slightly. Removing one electron from a paired orbital relieves this repulsion, making ionisation slightly easier (lower $IE_1$) than for nitrogen.
+
+This is a specific example of a broader principle: half-filled and fully-filled subshells confer extra stability, producing local maxima in ionisation energy across a period.
+
+</details>
+
+**Worked Example: Enthalpy of Solution and Hydration**
+
+The enthalpy of solution of $\mathrm{CaCl}_2$ is $-82.8\;\mathrm{kJ/mol}$. The lattice energy is $-2258\;\mathrm{kJ/mol}$. Calculate the total hydration enthalpy of $\mathrm{Ca}^{2+}$ and $2\mathrm{Cl}^-$. Given that the hydration enthalpy of $\mathrm{Cl}^-$ is $-363\;\mathrm{kJ/mol}$, determine the hydration enthalpy of $\mathrm{Ca}^{2+}$.
+
+<details>
+<summary>Solution</summary>
+
+The enthalpy of solution is the sum of the endothermic lattice-breaking step and the exothermic hydration step:
+
+$$\Delta H_\mathrm{sol} = \Delta H_\mathrm{lattice} + \Delta H_\mathrm{hydration}$$
+
+$$-82.8 = +2258 + \Delta H_\mathrm{hydration}$$
+
+$$\Delta H_\mathrm{hydration} = -82.8 - 2258 = -2341\;\mathrm{kJ/mol}$$
+
+The total hydration enthalpy is $-2341\;\mathrm{kJ/mol}$, which is the sum of the hydration enthalpies of all ions:
+
+$$\Delta H_\mathrm{hydration} = \Delta H_\mathrm{hyd}(\mathrm{Ca}^{2+}) + 2 \times \Delta H_\mathrm{hyd}(\mathrm{Cl}^-)$$
+
+$$-2341 = \Delta H_\mathrm{hyd}(\mathrm{Ca}^{2+}) + 2(-363)$$
+
+$$\Delta H_\mathrm{hyd}(\mathrm{Ca}^{2+}) = -2341 + 726 = -1615\;\mathrm{kJ/mol}$$
+
+The hydration enthalpy of $\mathrm{Ca}^{2+}$ is $-1615\;\mathrm{kJ/mol}$. This large magnitude reflects the high charge density of the small, doubly charged cation and its strong interaction with water molecules.
+
+</details>
+
+**Worked Example: Transition Metal Oxidation States in Redox Reactions**
+
+A solution of acidified potassium dichromate ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$) is used to oxidise $\mathrm{Fe}^{2+}$ to $\mathrm{Fe}^{3+}$. The chromium is reduced from the $+6$ to the $+3$ oxidation state. (a) Write the balanced ionic equation. (b) Calculate the volume of $0.0200\;\mathrm{M}$ $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ solution required to oxidise $25.0\;\mathrm{mL}$ of $0.100\;\mathrm{M}$ $\mathrm{FeSO}_4$ solution.
+
+<details>
+<summary>Solution</summary>
+
+**(a) Balancing the equation:**
+
+Reduction half-reaction:
+$$\mathrm{Cr}_2\mathrm{O}_7^{2-} + 14\mathrm{H}^+ + 6e^- \to 2\mathrm{Cr}^{3+} + 7\mathrm{H}_2\mathrm{O}$$
+
+Oxidation half-reaction:
+$$\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-$$
+
+Balancing electrons ($\times 6$ for the iron half-reaction):
+$$6\mathrm{Fe}^{2+} \to 6\mathrm{Fe}^{3+} + 6e^-$$
+
+Overall:
+$$\mathrm{Cr}_2\mathrm{O}_7^{2-} + 14\mathrm{H}^+ + 6\mathrm{Fe}^{2+} \to 2\mathrm{Cr}^{3+} + 7\mathrm{H}_2\mathrm{O} + 6\mathrm{Fe}^{3+}$$
+
+**(b) Stoichiometric calculation:**
+
+$$n(\mathrm{Fe}^{2+}) = 0.100 \times 0.0250 = 0.00250\;\mathrm{mol}$$
+
+From the equation, $6\;\mathrm{mol\;Fe}^{2+}$ react with $1\;\mathrm{mol\;Cr}_2\mathrm{O}_7^{2-}$:
+
+$$n(\mathrm{Cr}_2\mathrm{O}_7^{2-}) = \frac{0.00250}{6} = 4.17 \times 10^{-4}\;\mathrm{mol}$$
+
+$$V(\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7) = \frac{n}{c} = \frac{4.17 \times 10^{-4}}{0.0200} = 0.0208\;\mathrm{L} = 20.8\;\mathrm{mL}$$
+
+</details>
+
+---
+
+## Exam-Style Problems (Expanded)
+
+<details>
+<summary>Problem 9: Quantitative -- Comparing Lattice Energies</summary>
+
+Arrange the following ionic compounds in order of increasing lattice energy (most negative first): $\mathrm{NaF}$, $\mathrm{MgO}$, $\mathrm{NaCl}$, $\mathrm{MgCl}_2$, $\mathrm{Al}_2\mathrm{O}_3$. Justify your ordering using Coulomb's law: $U \propto \frac{z_+ z_-}{r_+ + r_-}$.
+
+</details>
+
+<details>
+<summary>Problem 10: Extended Response -- d-Block Contraction</summary>
+
+The atomic radius of $\mathrm{Zr}$ ($160\;\mathrm{pm}$) is almost identical to that of $\mathrm{Hf}$ ($159\;\mathrm{pm}$), despite Hf being one period below Zr. Explain this observation using the concept of the $d$-block contraction (lanthanide contraction). Discuss the consequences for the chemical similarity of Group 4 elements and the difficulty of separating Zr and Hf in industrial processes.
+
+</details>
+
+<details>
+<summary>Problem 11: Quantitative -- Halogen Displacement Equilibrium</summary>
+
+The equilibrium constant for the reaction $\mathrm{Cl}_2(aq) + 2\mathrm{Br}^-(aq) \rightleftharpoons 2\mathrm{Cl}^-(aq) + \mathrm{Br}_2(aq)$ is $K = 4.0 \times 10^{11}$ at $298\;\mathrm{K}$. (a) Calculate $E_{\mathrm{cell}}^\circ$ for the reaction. (b) If $0.050\;\mathrm{mol}$ of $\mathrm{Cl}_2$ is bubbled into $1.0\;\mathrm{L}$ of $0.10\;\mathrm{M}$ $\mathrm{KBr}$, calculate the equilibrium concentration of $\mathrm{Br}_2$. ($E^\circ(\mathrm{Cl}_2/\mathrm{Cl}^-) = +1.36\;\mathrm{V}$, $E^\circ(\mathrm{Br}_2/\mathrm{Br}^-) = +1.09\;\mathrm{V}$)
+
+</details>
+
+<details>
+<summary>Problem 12: Extended Response -- Crystal Field Theory and Colour</summary>
+
+The complex ion $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ is pink and $[\mathrm{Co}(\mathrm{Cl}_4)]^{2-}$ is blue. (a) State the oxidation state of cobalt in each complex. (b) Use the spectrochemical series to explain the colour difference. (c) Calculate the approximate wavelength of light absorbed by $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ if it absorbs green light ($\lambda \approx 520\;\mathrm{nm}$) and state what colour is observed. (d) Explain why $[\mathrm{Zn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ is colourless.
+
+</details>
+
+<details>
+<summary>Problem 13: Quantitative -- Successive Ionisation Energies</summary>
+
+The first five ionisation energies of an element ($\mathrm{kJ/mol}$) are: $578$, $1817$, $2745$, $11577$, $14842$. (a) Identify the group of the element. (b) Write the electron configuration of the element. (c) The element is in Period 3. Identify it and explain the large jump between $IE_3$ and $IE_4$.
+
+</details>
+
+<details>
+<summary>Problem 14: Extended Response -- Amphoteric Hydroxides</summary>
+
+Both $\mathrm{Al}(\mathrm{OH})_3$ and $\mathrm{Zn}(\mathrm{OH})_2$ are amphoteric. Write balanced equations for the reaction of each with excess $\mathrm{NaOH}(aq)$ and with excess $\mathrm{HCl}(aq)$. Explain the structural reason why these hydroxides are amphoteric while $\mathrm{Mg}(\mathrm{OH})_2$ is purely basic. Discuss the relevance of amphoterism to the extraction of aluminium from bauxite ore via the Bayer process.
+
+</details>
+
+---
+
+## Common Pitfalls (Expanded)
+
+- **Assuming all $d$-block elements are transition metals**: The IB definition requires a partially filled $d$-subshell in a common oxidation state. $\mathrm{Sc}^{3+}$ has $3d^0$ and $\mathrm{Zn}^{2+}$ has $3d^{10}$ — neither qualifies. Always check the common ion, not just the atom.
+
+- **Reversing the polarising power trend**: Smaller, more highly charged cations have greater polarising power. $\mathrm{Be}^{2+}$ polarises more than $\mathrm{Ba}^{2+}$; $\mathrm{Al}^{3+}$ polarises more than $\mathrm{Na}^+$. This is why $\mathrm{BeCl}_2$ and $\mathrm{AlCl}_3$ have significant covalent character.
+
+- **Ignoring the disproportionation of chlorine in cold vs hot alkali**: In cold dilute $\mathrm{NaOH}$, chlorine disproportionates to $\mathrm{Cl}^-$ and $\mathrm{ClO}^-$. In hot concentrated $\mathrm{NaOH}$, it disproportionates to $\mathrm{Cl}^-$ and $\mathrm{ClO}_3^-$. The product depends on temperature.
+
+- **Stating that all Group 2 hydroxides are strong bases**: $\mathrm{Be}(\mathrm{OH})_2$ is amphoteric, not basic. The trend from basic to amphoteric applies from $\mathrm{Mg}$ upward, but $\mathrm{Be}$ is the exception due to its high charge density.
+
+- **Confusing the oxidation state of oxygen in peroxides and superoxides**: In normal oxides ($\mathrm{O}^{2-}$), oxygen is $-2$. In peroxides ($\mathrm{O}_2^{2-}$), each oxygen is $-1$. In superoxides ($\mathrm{O}_2^-$), the average oxidation state is $-0.5$. This affects balancing redox equations involving these species.
+
+- **Writing $E_{\mathrm{cell}}^\circ = E_{\mathrm{anode}}^\circ - E_{\mathrm{cathode}}^\circ$**: This is the single most common sign error in electrochemistry. The correct formula is always $E_{\mathrm{cell}}^\circ = E_{\mathrm{cathode}}^\circ - E_{\mathrm{anode}}^\circ$ (cathode minus anode). A negative result means the reaction is non-spontaneous under standard conditions.
+
+---
+
 ## If You Get These Wrong, Revise:
 
 - **Electron configurations and ionization energy** → Review [./atomic-theory](./atomic-theory)

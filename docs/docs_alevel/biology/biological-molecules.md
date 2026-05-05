@@ -369,6 +369,232 @@ Advantages:
 
 Disadvantages: reduced activity due to restricted substrate access; immobilisation is costly.
 
+## 7. Quantitative Biochemistry: Food Tests and Standard Curves
+
+### 7.1 Benedict's Test: Quantitative Analysis
+
+The Benedict's test can be made semi-quantitative by comparing the colour of the precipitate against a
+standard colour chart, or by filtering the precipitate and weighing it. Alternatively, a colorimeter can
+be used to measure the absorbance of the solution at a specific wavelength (e.g., $630\ \mathrm{nm}$),
+and a **standard curve** constructed.
+
+**Worked Example: Constructing a Standard Curve.** A series of glucose standards of known concentration
+is prepared and tested with Benedict's reagent. The absorbance of each is measured with a colorimeter:
+
+| Glucose concentration ($\mathrm{mg\ cm^{-3}}$) | 0   | 2   | 4   | 6   | 8   | 10  |
+| ----------------------------------------------- | --- | --- | --- | --- | --- | --- |
+| Absorbance (arbitrary units)                    | 0.0 | 0.2 | 0.4 | 0.6 | 0.8 | 1.0 |
+
+The standard curve is linear: absorbance $= 0.1 \times$ concentration. If an unknown solution gives an
+absorbance of $0.65$, its glucose concentration is $0.65 / 0.1 = 6.5\ \mathrm{mg\ cm^{-3}}$.
+
+### 7.2 Biuret Test: Quantitative Analysis
+
+The intensity of the violet/purple colour in the Biuret test is proportional to the concentration of
+peptide bonds. This relationship can be used to determine the concentration of protein in an unknown
+solution using a standard curve prepared from protein solutions of known concentration (e.g., bovine
+serum albumin, BSA).
+
+**Worked Example.** A set of BSA standards gives the following absorbance readings at $540\ \mathrm{nm}$:
+
+| Protein concentration ($\mathrm{mg\ cm^{-3}}$) | 0   | 1   | 2   | 3   | 4   | 5   |
+| ------------------------------------------------ | --- | --- | --- | --- | --- | --- |
+| Absorbance                                       | 0.0 | 0.12| 0.25| 0.36| 0.49| 0.61|
+
+A student plots absorbance against concentration and determines the gradient (by line of best fit) to
+be approximately $0.122\ \mathrm{cm^3\ mg^{-1}}$. An unknown protein solution gives absorbance
+$= 0.42$.
+
+Concentration $= 0.42 / 0.122 = 3.44\ \mathrm{mg\ cm^{-3}}$.
+
+:::warning
+Common Pitfall The Biuret test detects peptide bonds, not specific proteins. The absorbance reading
+gives total protein concentration regardless of protein type. Additionally, free amino acids do not give
+a reliable result because they lack peptide bonds. Ensure the standard curve is plotted correctly with
+absorbance on the y-axis and concentration on the x-axis.
+:::
+
+## 8. Detailed Protein Structure: Case Studies
+
+### 8.1 Haemoglobin as a Quaternary Protein
+
+Haemoglobin (Hb) is a globular quaternary protein with four polypeptide chains: two $\alpha$-chains
+(141 amino acids each) and two $\beta$-chains (146 amino acids each). Each chain contains a haem group
+(protoporphyrin IX ring with a central $\mathrm{Fe^{2+}}$ ion) that binds one $\mathrm{O_2}$ molecule.
+
+The quaternary structure is essential for function: the cooperative binding of $\mathrm{O_2}$ arises
+from conformational changes transmitted between subunits. When one haem group binds $\mathrm{O_2}$, the
+iron ion moves into the plane of the porphyrin ring, pulling the attached histidine residue and shifting
+the position of the entire subunit. This conformational change increases the affinity of the remaining
+three haem groups for $\mathrm{O_2}$.
+
+For further detail on the oxygen dissociation curve and the Bohr effect, see
+[Exchange and Transport](/docs/alevel/biology/exchange-and-transport).
+
+### 8.2 Collagen as a Fibrous Protein
+
+Collagen is the most abundant protein in the human body and exemplifies fibrous protein structure. Its
+properties derive directly from its structure at every level:
+
+1. **Primary structure**: a repeating sequence of Gly-Pro-X (where X is often hydroxyproline). Glycine
+   (the smallest amino acid, with $R = -\mathrm{H}$) is essential because the three polypeptide chains
+   pack very tightly in the triple helix, and only glycine is small enough to fit at the centre.
+
+2. **Secondary structure**: each chain forms a left-handed helix (not an $\alpha$-helix), stabilised by
+   hydrogen bonds.
+
+3. **Tertiary structure**: three polypeptide chains wind around each other to form a right-handed
+   **triple helix** (supercoil), stabilised by hydrogen bonds between the chains and covalent cross-links
+   between lysine residues.
+
+4. **Quaternary structure**: triple helices align parallel and are cross-linked to form collagen
+   **fibrils**, which bundle into collagen fibres. The cross-links provide tensile strength.
+
+The relationship between collagen structure and function is a classic examination topic:
+
+| Structural Feature | Functional Consequence                                      |
+| ------------------ | ----------------------------------------------------------- |
+| Triple helix       | High tensile strength; resists stretching forces            |
+| Regular repeating sequence | Uniform, ordered structure                           |
+| Covalent cross-links | Fibrils are very strong and insoluble                   |
+| Parallel alignment | Strength is directional (along the fibre axis)             |
+| Glycine at every third position | Allows tight packing of the three chains            |
+
+:::warning
+Common Pitfall Students often describe collagen as having a "globular" structure or describe its helix
+as an $\alpha$-helix. Collagen is a fibrous protein with a triple helix, which is structurally distinct
+from the $\alpha$-helix found in globular proteins like haemoglobin.
+:::
+
+### 8.3 Sickle Cell Anaemia: A Point Mutation with Structural Consequences
+
+Sickle cell anaemia is caused by a single base substitution (missense mutation) in the gene for the
+$\beta$-chain of haemoglobin: the codon GAG (glutamic acid) is changed to GTG (valine) at position 6.
+
+This single amino acid change has profound consequences:
+
+- **Glutamic acid** is hydrophilic (polar, charged). **Valine** is hydrophobic (non-polar).
+- The hydrophobic valine on the surface of deoxygenated HbS (sickle haemoglobin) interacts with
+  hydrophobic patches on adjacent HbS molecules.
+- This causes HbS to polymerise into long, rigid fibres that distort the red blood cell into a
+  characteristic sickle shape.
+- Sickled cells are less flexible, block capillaries, and are destroyed prematurely (haemolytic
+  anaemia).
+
+This case study illustrates the central dogma of molecular biology: **DNA sequence determines amino
+acid sequence, which determines protein structure, which determines protein function.** A single base
+change in DNA propagates through all levels to produce a severe disease phenotype.
+
+## 9. Enzyme Kinetics in Depth
+
+### 9.1 Lineweaver-Burk Plots
+
+The Michaelis-Menten equation can be linearised by taking the reciprocal of both sides:
+
+$$\frac{1}{v} = \frac{K_m}{V_{\max}} \cdot \frac{1}{[S]} + \frac{1}{V_{\max}}$$
+
+A plot of $\frac{1}{v}$ versus $\frac{1}{[S]}$ yields a straight line with:
+
+- Y-intercept $= \frac{1}{V_{\max}}$
+- X-intercept $= -\frac{1}{K_m}$
+- Gradient $= \frac{K_m}{V_{\max}}$
+
+**Worked Example.** An enzyme has $V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$ and $K_m = 5\ \mathrm{mmol\ dm^{-3}}$.
+Calculate the reaction rate when $[S] = 2\ \mathrm{mmol\ dm^{-3}}$ using the Michaelis-Menten equation,
+and verify using the Lineweaver-Burk plot.
+
+Using the Michaelis-Menten equation:
+
+$$v = \frac{V_{\max}[S]}{K_m + [S]} = \frac{50 \times 2}{5 + 2} = \frac{100}{7} = 14.3\ \mu\mathrm{mol\ min^{-1}}$$
+
+Using the Lineweaver-Burk form:
+
+$$\frac{1}{v} = \frac{K_m}{V_{\max}} \cdot \frac{1}{[S]} + \frac{1}{V_{\max}} = \frac{5}{50} \times \frac{1}{2} + \frac{1}{50} = 0.05 + 0.02 = 0.07$$
+
+$$v = \frac{1}{0.07} = 14.3\ \mu\mathrm{mol\ min^{-1}}$$
+
+Both methods agree, as expected.
+
+### 9.2 Effect of Temperature on Enzyme Rate: The $Q_{10}$ Coefficient
+
+The $Q_{10}$ temperature coefficient quantifies the effect of temperature on reaction rate:
+
+$$Q_{10} = \left(\frac{v_2}{v_1}\right)^{\frac{10}{T_2 - T_1}}$$
+
+or more commonly, where $T_2 - T_1 = 10\ ^\circ\mathrm{C}$:
+
+$$Q_{10} = \frac{v_{(T+10)}}{v_T}$$
+
+Most biological reactions have $Q_{10} \approx 2$--$3$, meaning the rate doubles or triples for each
+$10\ ^\circ\mathrm{C}$ increase in temperature (within the range before denaturation).
+
+**Worked Example.** An enzyme-catalysed reaction proceeds at a rate of $12\ \mu\mathrm{mol\ min^{-1}}$
+at $20\ ^\circ\mathrm{C}$. If $Q_{10} = 2.5$, what is the expected rate at $30\ ^\circ\mathrm{C}$?
+
+$$v_{30} = Q_{10} \times v_{20} = 2.5 \times 12 = 30\ \mu\mathrm{mol\ min^{-1}}$$
+
+At $40\ ^\circ\mathrm{C}$:
+
+$$v_{40} = Q_{10} \times v_{30} = 2.5 \times 30 = 75\ \mu\mathrm{mol\ min^{-1}}$$
+
+However, this calculation assumes the enzyme has not denatured. If the optimum temperature is
+$37\ ^\circ\mathrm{C}$, the actual rate at $40\ ^\circ\mathrm{C}$ may be lower than predicted due to
+partial denaturation. The $Q_{10}$ relationship is only valid within the range where the enzyme is
+fully functional.
+
+### 9.3 Practical Investigation: Effect of pH on Enzyme Activity
+
+A common practical investigation involves measuring the rate of an enzyme-catalysed reaction at different
+pH values. A reliable method:
+
+1. Prepare buffered solutions at a range of pH values (e.g., pH 3, 5, 7, 9, 11).
+2. Add a fixed volume of enzyme solution to each buffer.
+3. Start the reaction by adding a fixed volume of substrate solution.
+4. Measure the rate of reaction (e.g., by measuring the volume of gas produced per minute, or by
+   taking samples at timed intervals and stopping the reaction).
+5. Plot rate versus pH.
+
+The resulting graph is a bell curve with a peak at the optimum pH. The shape of the curve reflects the
+ionisation states of amino acid residues in the active site and the protein's tertiary structure.
+
+:::warning
+Common Pitfall In enzyme practicals, students often fail to control variables: temperature must be kept
+constant (using a water bath), the same enzyme concentration must be used in each trial, and timing must
+start the instant the enzyme and substrate are mixed. Failure to control these variables invalidates the
+experiment.
+:::
+
+## 10. Inorganic Ions in Biology
+
+### 10.1 Key Ions and Their Roles
+
+| Ion                       | Role                                                                                              |
+| ------------------------- | ------------------------------------------------------------------------------------------------- |
+| $\mathrm{Fe^{2+}}$        | Component of haem group in haemoglobin; essential for $\mathrm{O_2}$ transport                    |
+| $\mathrm{Na^+}$           | Co-transport of glucose in ileum; nerve impulse transmission (action potential)                   |
+| $\mathrm{K^+}$            | Co-transport; maintaining resting membrane potential; stomatal opening                             |
+| $\mathrm{Ca^{2+}}$        | Bone and teeth structure; blood clotting cascade; muscle contraction (binds troponin)              |
+| $\mathrm{Mg^{2+}}$        | Component of chlorophyll; co-factor for many enzymes (e.g., DNA polymerase, Rubisco)              |
+| $\mathrm{PO_4^{3-}}$      | Component of ATP, DNA, RNA, phospholipids                                                         |
+| $\mathrm{NO_3^-}$         | Nitrogen source for amino acid synthesis                                                           |
+| $\mathrm{H^+}$ and $\mathrm{OH^-}$ | Determine pH; affect enzyme activity; proton gradients in respiration and photosynthesis   |
+
+### 10.2 Hydrogen Ions and pH
+
+The pH scale is defined as:
+
+$$\mathrm{pH} = -\log_{10}[\mathrm{H^+}]$$
+
+where $[\mathrm{H^+}]$ is the hydrogen ion concentration in $\mathrm{mol\ dm^{-3}}$.
+
+- Pure water: $[\mathrm{H^+}] = 10^{-7}\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{pH} = 7$.
+- Stomach acid: $[\mathrm{H^+}] \approx 0.01\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{pH} \approx 2$.
+- Blood: $[\mathrm{H^+}] \approx 4 \times 10^{-8}\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{pH} \approx 7.4$.
+
+A change of one pH unit represents a tenfold change in $[\mathrm{H^+}]$. Blood pH is tightly regulated
+between 7.35 and 7.45 by the carbonic acid-bicarbonate buffer system (see
+[Exchange and Transport](/docs/alevel/biology/exchange-and-transport) for the Bohr effect).
+
 ## Practice Problems
 
 <details>
@@ -486,6 +712,86 @@ phospholipids with tails facing inward and heads facing outward. This process is
 entropy of the phospholipids themselves.
 
 <b>If you get this wrong, revise:</b> [Phospholipids](#32-phospholipids)
+
+</details>
+
+<details>
+<summary>Problem 7</summary>
+The enzyme catalase breaks down hydrogen peroxide: $2\mathrm{H_2O_2} \to 2\mathrm{H_2O} + \mathrm{O_2}$.
+A student investigates the effect of catalase concentration on the rate of reaction by measuring the
+volume of $\mathrm{O_2}$ produced in 60 seconds. The results are:
+
+| Catalase concentration (arbitrary units) | Volume of $\mathrm{O_2}$ ($\mathrm{cm^3}$) |
+| ---------------------------------------- | ------------------------------------------- |
+| 1                                        | 4.2                                         |
+| 2                                        | 8.3                                         |
+| 4                                        | 16.1                                        |
+| 8                                        | 24.8                                        |
+| 16                                       | 27.5                                        |
+
+(a) Plot a graph of rate versus enzyme concentration. (b) Explain the shape of the graph. (c) At what
+concentration does the reaction become limited by substrate availability?
+
+**Answer.** (b) At low catalase concentrations (1--4 units), the rate is approximately proportional to
+enzyme concentration (first-order kinetics: doubling enzyme concentration approximately doubles the
+rate). At higher concentrations (8--16 units), the rate begins to plateau (approaches zero-order
+kinetics). This is because the substrate ($\mathrm{H_2O_2}$) is becoming the limiting factor: at high
+enzyme concentration, substrate molecules are converted to product as fast as they encounter an enzyme,
+and additional enzyme molecules have nothing to process.
+
+(c) The plateau begins between 8 and 16 units. By 16 units, increasing enzyme concentration from 8 to 16
+(approximately doubling) only increases the rate from 24.8 to 27.5 ($\approx 11\%$ increase), indicating
+the reaction has nearly reached $V_{\max}$. Substrate is the limiting factor at concentrations above
+approximately 8 units.
+
+<b>If you get this wrong, revise:</b> [Enzyme Kinetics](#63-enzyme-kinetics)
+
+</details>
+
+<details>
+<summary>Problem 8</summary>
+Explain why collagen is a structural protein whereas haemoglobin is a globular protein. Refer to the
+amino acid sequences, bonding, and how each protein's structure relates to its function. (6 marks)
+
+**Answer.** Collagen has a repetitive primary structure (Gly-Pro-X) with glycine at every third
+position, allowing three chains to pack tightly into a triple helix. It is stabilised by extensive
+hydrogen bonding between chains and covalent cross-links, making it strong, insoluble, and rigid.
+These properties are suited to its structural role (connective tissue, tendons, skin). Haemoglobin has
+a varied primary structure with both hydrophilic and hydrophobic amino acids. The hydrophobic residues
+cluster in the interior and hydrophilic residues on the surface, making it soluble in water (globular).
+Its quaternary structure (four subunits) allows conformational changes between subunits, enabling
+cooperative $\mathrm{O_2}$ binding -- suited to its transport role. The key distinction is that
+structural proteins require insolubility and mechanical strength, whereas transport proteins require
+solubility and the ability to change conformation.
+
+<b>If you get this wrong, revise:</b> [Protein Types](#44-protein-types) and [Detailed Protein Structure: Case Studies](#8-detailed-protein-structure-case-studies)
+
+</details>
+
+<details>
+<summary>Problem 9</summary>
+An enzyme has $V_{\max} = 40\ \mu\mathrm{mol\ min^{-1}}$ and $K_m = 8\ \mathrm{mmol\ dm^{-3}}$. A
+competitive inhibitor is added at a concentration that doubles the apparent $K_m$. (a) What is the new
+$K_m$? (b) At $[S] = 8\ \mathrm{mmol\ dm^{-3}}$, calculate the rate with and without the inhibitor.
+(c) At $[S] = 100\ \mathrm{mmol\ dm^{-3}}$, are the rates still different?
+
+**Answer.** (a) New $K_m = 2 \times 8 = 16\ \mathrm{mmol\ dm^{-3}}$. $V_{\max}$ is unchanged at
+$40\ \mu\mathrm{mol\ min^{-1}}$.
+
+(b) Without inhibitor: $v = \frac{40 \times 8}{8 + 8} = \frac{320}{16} = 20\ \mu\mathrm{mol\ min^{-1}}$.
+
+With inhibitor: $v = \frac{40 \times 8}{16 + 8} = \frac{320}{24} = 13.3\ \mu\mathrm{mol\ min^{-1}}$.
+
+The inhibitor reduces the rate by 33% at this substrate concentration.
+
+(c) Without inhibitor: $v = \frac{40 \times 100}{8 + 100} = \frac{4000}{108} = 37.0\ \mu\mathrm{mol\ min^{-1}}$.
+
+With inhibitor: $v = \frac{40 \times 100}{16 + 100} = \frac{4000}{116} = 34.5\ \mu\mathrm{mol\ min^{-1}}$.
+
+At high $[S]$, the rates converge towards $V_{\max}$, but are still slightly different because $[S]$
+is not infinitely greater than $K_m$. As $[S] \to \infty$, both rates approach $V_{\max} = 40$.
+
+<b>If you get this wrong, revise:</b> [Enzyme Inhibition](#65-enzyme-inhibition) and [Enzyme Kinetics in Depth](#9-enzyme-kinetics-in-depth)
 
 </details>
 

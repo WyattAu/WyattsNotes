@@ -365,6 +365,307 @@ falls cyclically; when cyclin binds to CDK, the complex triggers the next stage 
 Mutations in genes regulating the cell cycle (proto-oncogenes and tumour suppressor genes) can lead
 to uncontrolled division (cancer).
 
+## 7. Quantitative Microscopy and Magnification
+
+### 7.1 Working with Magnification
+
+Microscopy calculations appear frequently in examinations. The fundamental relationship is:
+
+$$\mathrm{Magnification} = \frac{\mathrm{Image\ size}}{\mathrm{Actual\ size}}$$
+
+This can be rearranged to find any one variable when the other two are known. Units must be consistent
+-- convert all measurements to the same unit (typically $\mu\mathrm{m}$) before calculating.
+
+**Conversion factors:**
+
+$$1\ \mathrm{mm} = 1000\ \mu\mathrm{m}, \quad 1\ \mu\mathrm{m} = 1000\ \mathrm{nm}, \quad 1\ \mathrm{nm} = 1000\ \mathrm{pm}$$
+
+**Worked Example 1.** A cell is observed under a microscope with a magnification of $\times 400$. The
+image of the cell measures $4.8\ \mathrm{mm}$ across. Calculate the actual diameter of the cell.
+
+$$\mathrm{Actual\ size} = \frac{\mathrm{Image\ size}}{\mathrm{Magnification}} = \frac{4.8\ \mathrm{mm}}{400} = 0.012\ \mathrm{mm} = 12\ \mu\mathrm{m}$$
+
+**Worked Example 2.** A mitochondrion has an actual length of $5\ \mu\mathrm{m}$. If an electron
+micrograph is taken at a magnification of $\times 50000$, what will be the length of the mitochondrion
+in the image?
+
+$$\mathrm{Image\ size} = 5\ \mu\mathrm{m} \times 50000 = 250000\ \mu\mathrm{m} = 250\ \mathrm{mm} = 25\ \mathrm{cm}$$
+
+### 7.2 Scale Bars
+
+A **scale bar** on a micrograph provides a direct conversion between image distance and actual distance.
+If a scale bar of length $2\ \mathrm{cm}$ on the image represents $10\ \mu\mathrm{m}$ in reality, then
+any measurement on the image is converted by multiplying by $\frac{10\ \mu\mathrm{m}}{2\ \mathrm{cm}} =
+5\ \mu\mathrm{m\ cm^{-1}}$.
+
+**Worked Example 3.** A micrograph shows a scale bar labelled $5\ \mu\mathrm{m}$ that measures
+$20\ \mathrm{mm}$ on the printed image. A cell on the same image measures $48\ \mathrm{mm}$ across.
+Calculate the actual cell diameter.
+
+Scale factor $= \frac{5\ \mu\mathrm{m}}{20\ \mathrm{mm}} = \frac{5000\ \mathrm{nm}}{20\ \mathrm{mm}} = 250\ \mathrm{nm\ mm^{-1}}$.
+
+Cell diameter $= 48\ \mathrm{mm} \times 250\ \mathrm{nm\ mm^{-1}} = 12000\ \mathrm{nm} = 12\ \mu\mathrm{m}$.
+
+### 7.3 Calculating Actual Size from Electron Micrographs
+
+When working with TEM or SEM images, the magnification is often stated on the micrograph. To calculate
+actual size from the image:
+
+1. Measure the dimension of interest on the printed image (in mm).
+2. Apply the magnification formula.
+
+**Worked Example 4.** A TEM image is labelled $\times 200000$. A ribosome on the image measures
+$0.25\ \mathrm{mm}$ in diameter. Calculate the actual diameter.
+
+$$\mathrm{Actual\ diameter} = \frac{0.25 \times 10^{-3}\ \mathrm{m}}{200000} = 1.25 \times 10^{-9}\ \mathrm{m} = 1.25\ \mathrm{nm}$$
+
+This is consistent with the expected diameter of a ribosome ($\approx 20\ \mathrm{nm}$) only if the
+measurement is of a sub-component. If the full ribosome is being measured, the student should recheck
+the image measurement. This highlights the importance of sanity-checking answers against known biological
+dimensions.
+
+:::warning
+Common Pitfall Students frequently forget to convert units before applying the magnification formula.
+Always convert both image size and actual size to the same unit. A common error is to leave the answer
+in mm when the question asks for $\mu\mathrm{m}$. Write down the conversion explicitly to avoid losing
+marks.
+:::
+
+## 8. Endocytosis and Exocytosis
+
+### 8.1 Mechanism of Endocytosis
+
+Endocytosis is the process by which cells engulf substances by folding the membrane inward to form a
+vesicle. It is an active process requiring ATP. Two main types are distinguished by the size of the
+vesicle formed:
+
+**Phagocytosis ("cell eating")**: the cell membrane extends pseudopodia around a solid particle (e.g.,
+a bacterium or dead cell), enclosing it in a large phagocytic vacuole ($d \approx 1$--$5\ \mu\mathrm{m}$).
+This vacuole then fuses with a lysosome, whose hydrolytic enzymes digest the contents. Phagocytosis is
+carried out by specialised cells: neutrophils and macrophages in mammals.
+
+**Pinocytosis ("cell drinking")**: the cell membrane invaginates to form small vesicles
+($d \approx 0.1\ \mu\mathrm{m}$) that take in droplets of extracellular fluid. This is a non-specific
+process that all cells can perform.
+
+**Receptor-mediated endocytosis**: a specific form of pinocytosis in which receptor proteins on the cell
+surface bind specific ligand molecules (e.g., cholesterol-bound LDL, iron-bound transferrin). The
+receptor-ligand complexes cluster in clathrin-coated pits, which invaginate to form clathrin-coated
+vesicles. The clathrin coat is then removed and the vesicle fuses with an endosome, where the ligand
+is released. This mechanism allows cells to concentrate specific molecules from the extracellular fluid
+with high selectivity.
+
+### 8.2 Mechanism of Exocytosis
+
+Exocytosis is the reverse process: intracellular vesicles fuse with the plasma membrane, releasing
+their contents to the extracellular space. This requires:
+
+1. **Vesicle transport**: vesicles are moved along microtubules by motor proteins (kinesin and dynein)
+   using ATP.
+2. **Docking**: vesicles are brought to the plasma membrane and dock at specific sites.
+3. **Fusion**: SNARE proteins on the vesicle (v-SNAREs) and on the plasma membrane (t-SNAREs) bind
+   together, pulling the membranes into close apposition. Calcium ions ($\mathrm{Ca^{2+}}$) trigger the
+   final fusion step.
+
+Exocytosis is essential for secretion of hormones, neurotransmitters, digestive enzymes, and mucus, as
+well as for insertion of new membrane proteins and lipids into the plasma membrane.
+
+:::warning
+Common Pitfall Students often state that endocytosis and exocytosis are forms of diffusion. They are
+not. Both are active processes requiring ATP. They involve bulk transport of large quantities of
+material in membrane-bound vesicles, which is fundamentally different from the passive movement of
+individual molecules through the bilayer.
+:::
+
+## 9. Osmosis and Water Potential Calculations
+
+### 9.1 Quantifying Water Potential
+
+Water potential ($\Psi$) is measured in pressure units (kilopascals, $\mathrm{kPa}$). Pure water at
+standard temperature and pressure has a water potential of $0\ \mathrm{kPa}$. The addition of solutes
+lowers water potential (makes it more negative):
+
+$$\Psi = \Psi_s + \Psi_p$$
+
+where $\Psi_s$ (solute potential, also called osmotic potential) is always zero or negative, and
+$\Psi_p$ (pressure potential) is positive in turgid plant cells and zero in animal cells and flaccid
+plant cells.
+
+### 9.2 Worked Examples
+
+**Worked Example 1.** A plant cell is placed in a solution with water potential
+$\Psi_{\mathrm{solution}} = -400\ \mathrm{kPa}$. The cell has a solute potential $\Psi_s = -700\ \mathrm{kPa}$
+and a pressure potential $\Psi_p = +300\ \mathrm{kPa}$. Determine the direction of net water movement.
+
+$$\Psi_{\mathrm{cell}} = \Psi_s + \Psi_p = -700 + 300 = -400\ \mathrm{kPa}$$
+
+Since $\Psi_{\mathrm{cell}} = \Psi_{\mathrm{solution}} = -400\ \mathrm{kPa}$, there is no net water
+movement. The cell is in equilibrium with the external solution.
+
+**Worked Example 2.** A plant cell with $\Psi_s = -900\ \mathrm{kPa}$ and $\Psi_p = +450\ \mathrm{kPa}$ is
+placed in pure water ($\Psi = 0\ \mathrm{kPa}$). Describe what happens.
+
+$$\Psi_{\mathrm{cell}} = -900 + 450 = -450\ \mathrm{kPa}$$
+
+Water moves from pure water ($0\ \mathrm{kPa}$) into the cell ($-450\ \mathrm{kPa}$) down the water
+potential gradient. As water enters, the pressure potential increases (the cell becomes more turgid).
+Equilibrium is reached when $\Psi_{\mathrm{cell}} = 0\ \mathrm{kPa}$, i.e., when $\Psi_p = +900\ \mathrm{kPa}$.
+
+**Worked Example 3.** A red blood cell (which has no cell wall and therefore $\Psi_p = 0$) is placed in
+a solution with $\Psi = -300\ \mathrm{kPa}$. The red blood cell has $\Psi_s = -300\ \mathrm{kPa}$. What
+happens?
+
+$$\Psi_{\mathrm{cell}} = -300 + 0 = -300\ \mathrm{kPa}$$
+
+No net water movement -- the solution is isotonic. If the solution had $\Psi = -100\ \mathrm{kPa}$
+(hypotonic), water would enter the cell, causing it to swell and potentially burst (haemolysis). If the
+solution had $\Psi = -500\ \mathrm{kPa}$ (hypertonic), water would leave, causing the cell to shrink
+(crenation).
+
+### 9.3 Osmosis in Plant Cells: Plasmolysis
+
+When a plant cell is placed in a hypertonic solution (more negative water potential than the cell), water
+leaves by osmosis. The protoplast (the living part of the cell inside the cell wall) shrinks and pulls
+away from the cell wall. This is **plasmolysis**. The point at which the protoplast just begins to pull
+away is the **incipient plasmolysis** point, at which $\Psi_p = 0$ and $\Psi_{\mathrm{cell}} = \Psi_s$.
+
+Plasmolysis is reversible if the cell is returned to a hypotonic solution before permanent damage occurs.
+
+:::warning
+Common Pitfall Students often write that plant cells "burst" in hypotonic solutions. They do not --
+the rigid cell wall exerts an inward pressure (wall pressure) that opposes further water entry once
+turgidity is reached. Only animal cells (which lack cell walls) burst in hypotonic solutions.
+:::
+
+## 10. The Cell Cycle in Detail
+
+### 10.1 Checkpoint Control
+
+The cell cycle has three major checkpoints where the progression is assessed before the cycle is
+allowed to proceed:
+
+| Checkpoint          | Location              | What is Assessed                                     |
+| ------------------- | --------------------- | ---------------------------------------------------- |
+| $\mathrm{G_1/S}$    | Late $\mathrm{G_1}$   | Cell size, nutrient availability, DNA damage          |
+| $\mathrm{G_2/M}$    | Late $\mathrm{G_2}$   | DNA replication complete and accurate                 |
+| M (spindle assembly)| Metaphase             | All chromosomes attached to spindle fibres           |
+
+At each checkpoint, cyclin-CDK complexes phosphorylate target proteins that either promote or inhibit
+progression. If damage is detected, the checkpoint arrests the cycle to allow repair. If repair fails,
+apoptosis (programmed cell death) may be triggered.
+
+### 10.2 Cyclins and CDKs
+
+**Cyclins** are a family of regulatory proteins whose concentration fluctuates cyclically. Different
+cyclins act at different stages:
+
+- **Cyclin D**: rises in response to growth factor signalling; activates CDK4/6 to phosphorylate Rb
+  protein, releasing E2F transcription factor and allowing transition past $\mathrm{G_1/S}$.
+- **Cyclin E**: peaks at the $\mathrm{G_1/S}$ boundary; activates CDK2 for S phase entry.
+- **Cyclin A**: rises during S phase and $\mathrm{G_2}$; activates CDK2 for DNA replication.
+- **Cyclin B**: peaks during $\mathrm{G_2}$ and M phase; activates CDK1 (also called CDC2) for mitotic
+  entry.
+
+A cyclin-CDK complex is only active when both components are present. Cyclin concentration is regulated
+by synthesis (transcription and translation) and degradation (ubiquitin-proteasome pathway). This
+ensures that CDK activity is strictly periodic.
+
+### 10.3 Proto-oncogenes and Tumour Suppressor Genes
+
+Mutations in two classes of genes disrupt cell cycle regulation:
+
+**Proto-oncogenes** code for proteins that promote cell division (e.g., growth factors, growth factor
+receptors, signal transduction proteins, cyclins). A mutation that causes overexpression or
+constitutive activation converts a proto-oncogene into an **oncogene**, driving uncontrolled
+proliferation. For example, the _ras_ proto-oncogene codes for a GTPase involved in signal transduction;
+a mutation that locks RAS in its active (GTP-bound) state causes continuous signalling to divide.
+
+**Tumour suppressor genes** code for proteins that inhibit cell division or promote apoptosis. The
+most well-known is _TP53_ (p53), which halts the cell cycle at $\mathrm{G_1}$ when DNA damage is
+detected, allowing repair. If damage is irreparable, p53 triggers apoptosis. Mutations in _TP53_ are
+found in approximately 50% of all human cancers.
+
+Cancer requires mutations in multiple genes: typically activation of one or more oncogenes plus
+inactivation of two or more tumour suppressor genes (Knudson's two-hit hypothesis).
+
+:::warning
+Common Pitfall Students often state that "one mutation causes cancer." Cancer is a multistep
+process requiring the accumulation of several mutations in genes regulating the cell cycle, DNA repair,
+and apoptosis. A single mutation in a proto-oncogene or tumour suppressor gene is necessary but not
+sufficient for malignancy.
+:::
+
+## 11. Meiosis: Overview and Comparison with Mitosis
+
+### 11.1 Key Differences
+
+| Feature              | Mitosis                                | Meiosis                                   |
+| -------------------- | -------------------------------------- | ----------------------------------------- |
+| Divisions            | One                                    | Two                                       |
+| Daughter cells       | 2, genetically identical ($2n$)        | 4, genetically distinct ($n$)             |
+| Synapsis/crossing over | Absent                              | Present (prophase I)                      |
+| Homologous pairing   | Absent                                 | Present (bivalents at metaphase I)        |
+| Metaphase alignment  | Individual chromosomes at equator      | Bivalents at equator                      |
+| Anaphase             | Sister chromatids separate             | Homologous chromosomes separate (Meiosis I) |
+| Function             | Growth, repair, asexual reproduction   | Production of gametes for sexual reproduction |
+
+For a detailed treatment of meiosis with genetic cross analysis, see
+[Genetics and DNA](/docs/alevel/biology/genetics-and-dna).
+
+### 11.2 The Significance of Meiosis
+
+Meiosis is essential for sexual reproduction because it:
+
+1. Halves the chromosome number ($2n \to n$) so that fertilisation ($n + n$) restores the diploid number.
+2. Generates genetic variation through crossing over (prophase I) and independent assortment
+   (metaphase I), which are the raw material for natural selection.
+3. Prevents chromosome doubling with each generation, which would make cells non-viable.
+
+## 12. Specialised Cells
+
+### 12.1 Examples of Cell Specialisation
+
+Cell specialisation (differentiation) is the process by which cells become adapted to perform specific
+functions. All specialised cells develop from unspecialised stem cells through differential gene
+expression.
+
+| Specialised Cell         | Adaptations                                                                 | Function                       |
+| ------------------------ | --------------------------------------------------------------------------- | ------------------------------ |
+| Red blood cell           | Biconcave disc shape; no nucleus; no mitochondria; contains haemoglobin     | $\mathrm{O_2}$ transport       |
+| Sperm cell               | Flagellum for swimming; many mitochondria; acrosome with digestive enzymes   | Fertilisation                  |
+| Root hair cell (plant)   | Elongated projection; large surface area; thin wall                         | Mineral ion absorption         |
+| Palisade mesophyll cell  | Elongated; many chloroplasts near upper surface; thin walls                 | Photosynthesis                 |
+| Guard cell               | Kidney-shaped; unevenly thickened walls; chloroplasts                       | Stomatal aperture control      |
+| Neurone                  | Long axon; dendrites; myelin sheath; synaptic terminals                     | Transmission of nerve impulses |
+| Phagocyte (white blood)  | Flexible membrane; lysosomes; lobed nucleus                                 | Engulfing pathogens            |
+| Squamous epithelial cell | Very thin and flat; smooth surface                                          | Gas exchange surface           |
+
+### 12.2 Stem Cells
+
+**Stem cells** are undifferentiated cells with the capacity to divide and differentiate into
+specialised cell types.
+
+- **Totipotent**: can differentiate into any cell type, including extra-embryonic tissues. The zygote
+  and early morula (up to the 8-cell stage in humans) are totipotent.
+- **Pluripotent**: can differentiate into any cell type except extra-embryonic tissues. Embryonic stem
+  cells (from the inner cell mass of the blastocyst) are pluripotent.
+- **Multipotent**: can differentiate into a limited range of cell types within a given tissue. Adult
+  stem cells (e.g., haematopoietic stem cells in bone marrow, which produce all blood cell types) are
+  multipotent.
+- **Unipotent**: can only produce one cell type, but retain the capacity for self-renewal.
+
+**Therapeutic uses**: stem cells can be used to replace damaged tissues (e.g., spinal cord injury,
+Parkinson's disease, type 1 diabetes, burns). Bone marrow transplants use haematopoietic stem cells to
+repopulate the blood cell lineages after chemotherapy. Induced pluripotent stem cells (iPSCs) are adult
+cells reprogrammed to a pluripotent state by introducing transcription factors (Oct4, Sox2, Klf4, c-Myc),
+offering an ethically uncontroversial alternative to embryonic stem cells.
+
+:::warning
+Common Pitfall Students often conflate pluripotent and totipotent stem cells. Totipotent cells can
+form a complete organism including placenta and umbilical cord; pluripotent cells can form all body cell
+types but not extra-embryonic tissues. Only the zygote and very early embryonic cells are totipotent.
+:::
+
 ## Practice Problems
 
 <details>
@@ -478,6 +779,77 @@ that can cause disease, they are more accurately described as infectious agents 
 organisms.
 
 <b>If you get this wrong, revise:</b> [Viruses](#4-viruses)
+
+</details>
+
+<details>
+<summary>Problem 7</summary>
+An electron micrograph shows a mitochondrion. The scale bar indicates that $1\ \mathrm{mm}$ on the
+image represents $0.2\ \mu\mathrm{m}$ in reality. The mitochondrion measures $6.5\ \mathrm{mm}$ in
+length on the image. (a) Calculate the actual length. (b) If the magnification of the micrograph was
+$\times 25000$, what is the expected image length, and does it match?
+
+**Answer.** (a) Actual length $= 6.5\ \mathrm{mm} \times 0.2\ \mu\mathrm{m\ mm^{-1}} = 1.3\ \mu\mathrm{m}$.
+
+(b) Expected image length $= 1.3\ \mu\mathrm{m} \times 25000 = 32500\ \mu\mathrm{m} = 32.5\ \mathrm{mm}$.
+
+The actual measurement on the image ($6.5\ \mathrm{mm}$) does not match the expected image length
+($32.5\ \mathrm{mm}$) for the stated magnification. This indicates either the scale bar is not at the
+same magnification as the image, or the stated magnification is incorrect. This discrepancy highlights
+the importance of using scale bars (which are always at the same magnification as the image) rather than
+stated magnification values for calculations.
+
+<b>If you get this wrong, revise:</b> [Quantitative Microscopy and Magnification](#7-quantitative-microscopy-and-magnification)
+
+</details>
+
+<details>
+<summary>Problem 8</summary>
+Describe the role of ATP in the following cellular processes: (a) active transport, (b) exocytosis,
+(c) DNA replication. For each, explain what the energy from ATP hydrolysis is used for.
+
+**Answer.** (a) **Active transport**: carrier proteins (pumps) use ATP to change conformation, moving
+molecules against their concentration gradient. For example, the $\mathrm{Na^+/K^+}$ ATPase hydrolyses
+one ATP to move $3\ \mathrm{Na^+}$ out and $2\ \mathrm{K^+}$ in against their gradients. The energy
+from ATP is used to induce the conformational change in the pump protein.
+
+(b) **Exocytosis**: vesicles are transported along microtubules by motor proteins (kinesin) that
+hydrolyse ATP to "walk" along the microtubule. ATP is also required for SNARE-mediated fusion of the
+vesicle with the plasma membrane. The energy drives the mechanical movement and the membrane
+rearrangement.
+
+(c) **DNA replication**: helicase unwinds the double helix by breaking hydrogen bonds (energy-consuming).
+DNA polymerase catalyses phosphodiester bond formation between nucleotides, using energy from the
+nucleotide triphosphates (dNTPs have high-energy phosphate bonds). The energy released when two
+phosphate groups are cleaved from each dNTP provides the energy for the phosphodiester bond.
+
+<b>If you get this wrong, revise:</b> [Cell Membranes](#5-cell-membranes) and [DNA Replication](/docs/alevel/biology/genetics-and-dna)
+
+</details>
+
+<details>
+<summary>Problem 9</summary>
+A plant cell with $\Psi_s = -850\ \mathrm{kPa}$ is placed in a solution of sucrose with concentration
+$0.35\ \mathrm{mol\ dm^{-3}}$ at $20\ ^\circ\mathrm{C}$. (a) Calculate the water potential of the
+external solution. (b) Determine the direction of net water movement. (c) Calculate the pressure
+potential at equilibrium.
+
+**Answer.** (a) $\Psi_{\mathrm{solution}} = -iCRT = -1 \times 350 \times 8.314 \times 293 = -852605\ \mathrm{Pa} \approx -853\ \mathrm{kPa}$.
+
+(b) Initially, $\Psi_p = 0$ (the cell is placed in the solution and has not yet adjusted), so
+$\Psi_{\mathrm{cell}} = \Psi_s + \Psi_p = -850\ \mathrm{kPa}$.
+
+Since $\Psi_{\mathrm{solution}} = -853\ \mathrm{kPa} < \Psi_{\mathrm{cell}} = -850\ \mathrm{kPa}$,
+water moves out of the cell (from higher to lower water potential).
+
+(c) As water leaves, the cell loses turgor. At equilibrium, $\Psi_{\mathrm{cell}} = \Psi_{\mathrm{solution}} = -853\ \mathrm{kPa}$:
+
+$-850 + \Psi_p = -853$, so $\Psi_p = -3\ \mathrm{kPa}$.
+
+A negative $\Psi_p$ means the protoplast is pulling away from the cell wall (incipient plasmolysis or
+full plasmolysis, depending on the cell wall). The cell is plasmolysed.
+
+<b>If you get this wrong, revise:</b> [Osmosis and Water Potential Calculations](#9-osmosis-and-water-potential-calculations)
 
 </details>
 

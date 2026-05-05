@@ -377,6 +377,262 @@ The $\mathrm{H^+}$ ions are taken up by haemoglobin (acting as a buffer), causin
 be released (the Bohr effect). $\mathrm{HCO_3^-$ ions are exchanged for $\mathrm{Cl^-}$ ions
 (chloride shift) to maintain electrochemical neutrality.
 
+## 7. Quantitative Gas Exchange: Fick's Law Applications
+
+### 7.1 Applying Fick's Law
+
+Fick's first law of diffusion states:
+
+$$J = -D \frac{\Delta C}{\Delta x}$$
+
+where:
+- $J$ is the flux (rate of diffusion per unit area, in $\mathrm{mol\ m^{-2}\ s^{-1}}$)
+- $D$ is the diffusion coefficient (in $\mathrm{m^2\ s^{-1}}$), which depends on the molecule and the
+  medium
+- $\Delta C$ is the concentration difference across the barrier (in $\mathrm{mol\ m^{-3}}$)
+- $\Delta x$ is the diffusion distance (in $\mathrm{m}$)
+
+The total rate of diffusion across a surface of area $A$ is:
+
+$$\text{Rate} = J \times A = D \cdot A \cdot \frac{\Delta C}{\Delta x}$$
+
+This equation directly explains the adaptations of gas exchange surfaces: maximising $A$ (large surface
+area), minimising $\Delta x$ (thin barrier), and maximising $\Delta C$ (maintaining a steep concentration
+gradient via ventilation and blood flow) all increase the rate of diffusion.
+
+### 7.2 Worked Examples
+
+**Worked Example 1.** The diffusion coefficient of $\mathrm{O_2}$ in water is
+$D = 1.8 \times 10^{-9}\ \mathrm{m^2\ s^{-1}}$. An alveolus has a surface area of
+$A = 200\ \mu\mathrm{m^2}$ and a barrier thickness of $\Delta x = 0.5\ \mu\mathrm{m}$. The
+concentration of $\mathrm{O_2}$ in alveolar air corresponds to $p\mathrm{O_2} = 13.3\ \mathrm{kPa}$,
+and in deoxygenated blood $p\mathrm{O_2} = 5.3\ \mathrm{kPa}$. Estimate the rate of $\mathrm{O_2}$
+diffusion across this alveolus.
+
+Using Henry's law, $\mathrm{O_2}$ concentration in water is proportional to partial pressure. The
+solubility of $\mathrm{O_2}$ in water at $37\ ^\circ\mathrm{C}$ is approximately
+$\alpha = 1.3 \times 10^{-3}\ \mathrm{mol\ m^{-3}\ kPa^{-1}}$.
+
+$$\Delta C = \alpha \times \Delta p\mathrm{O_2} = 1.3 \times 10^{-3} \times (13.3 - 5.3) = 0.0104\ \mathrm{mol\ m^{-3}}$$
+
+$$\text{Rate} = D \cdot A \cdot \frac{\Delta C}{\Delta x} = 1.8 \times 10^{-9} \times 200 \times 10^{-12} \times \frac{0.0104}{0.5 \times 10^{-6}}$$
+
+$$= 1.8 \times 10^{-9} \times 2 \times 10^{-10} \times 20800 = 7.5 \times 10^{-15}\ \mathrm{mol\ s^{-1}}$$
+
+Per single alveolus. With $\approx 350$ million alveoli per lung, the total rate is enormous, which is
+why the human respiratory system can meet the body's $\mathrm{O_2}$ demand.
+
+**Worked Example 2.** Compare the rate of $\mathrm{O_2}$ diffusion through the alveolar barrier
+($\Delta x = 0.5\ \mu\mathrm{m}$) with diffusion through a layer of connective tissue
+($\Delta x = 5.0\ \mu\mathrm{m}$), all else being equal.
+
+$$\frac{J_{\mathrm{alveolus}}}{J_{\mathrm{tissue}}} = \frac{D \cdot \Delta C / 0.5}{D \cdot \Delta C / 5.0} = \frac{5.0}{0.5} = 10$$
+
+The alveolar barrier is 10 times more efficient at gas exchange because it is 10 times thinner. This
+quantifies the critical importance of a thin diffusion barrier.
+
+### 7.3 Diffusion Coefficients: A Note on Medium
+
+The diffusion coefficient of $\mathrm{O_2}$ is much larger in air ($D \approx 2.1 \times 10^{-5}\ \mathrm{m^2\ s^{-1}}$)
+than in water ($D \approx 1.8 \times 10^{-9}\ \mathrm{m^2\ s^{-1}}$). The ratio is approximately
+$12000:1$. This means that organisms living in water face a fundamentally more challenging gas exchange
+problem than air-breathing organisms, which is why fish gills must be extremely efficient (countercurrent
+flow, large surface area) to extract sufficient $\mathrm{O_2}$ from water.
+
+:::warning
+Common Pitfall Students often state that gas exchange is faster in air "because air is less dense."
+While this is directionally correct, the precise reason is that the diffusion coefficient in air is
+approximately four orders of magnitude larger than in water. This is a consequence of the kinetic theory
+of gases: gas molecules travel further between collisions in a gas than in a liquid.
+:::
+
+## 8. Water Potential Calculations
+
+### 8.1 Osmosis and Water Potential
+
+Water potential ($\Psi$) determines the direction of water movement. Water always moves from a region of
+higher (less negative) water potential to a region of lower (more negative) water potential.
+
+For plant cells:
+
+$$\Psi_{\mathrm{cell}} = \Psi_s + \Psi_p$$
+
+### 8.2 Worked Examples
+
+**Worked Example 1.** A plant cell with $\Psi_s = -1200\ \mathrm{kPa}$ and $\Psi_p = +400\ \mathrm{kPa}$
+is placed in a solution with $\Psi_{\mathrm{solution}} = -500\ \mathrm{kPa}$. Determine the direction of
+net water movement and the cell's equilibrium state.
+
+$$\Psi_{\mathrm{cell}} = -1200 + 400 = -800\ \mathrm{kPa}$$
+
+Since $\Psi_{\mathrm{solution}} = -500\ \mathrm{kPa} > \Psi_{\mathrm{cell}} = -800\ \mathrm{kPa}$,
+water moves from the solution into the cell. As water enters, $\Psi_p$ increases (the cell becomes more
+turgid). Equilibrium when $\Psi_{\mathrm{cell}} = -500\ \mathrm{kPa}$:
+
+$$\Psi_s + \Psi_p = -500$$
+
+$$-1200 + \Psi_p = -500$$
+
+$$\Psi_p = +700\ \mathrm{kPa}$$
+
+The cell reaches equilibrium at a pressure potential of $+700\ \mathrm{kPa}$.
+
+**Worked Example 2.** A plant cell is placed in a solution of sucrose with concentration
+$0.3\ \mathrm{mol\ dm^{-3}}$ at $20\ ^\circ\mathrm{C}$. The cell has $\Psi_s = -1000\ \mathrm{kPa}$
+and $\Psi_p = +200\ \mathrm{kPa}$. Describe what happens.
+
+The solute potential of the external solution is approximately:
+
+$$\Psi_s = -iCRT$$
+
+where $i = 1$ (sucrose does not ionise), $C = 0.3\ \mathrm{mol\ dm^{-3}} = 300\ \mathrm{mol\ m^{-3}}$,
+$R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$, $T = 293\ \mathrm{K}$.
+
+$$\Psi_{\mathrm{solution}} = -1 \times 300 \times 8.314 \times 293 = -730800\ \mathrm{Pa} = -731\ \mathrm{kPa}$$
+
+$$\Psi_{\mathrm{cell}} = -1000 + 200 = -800\ \mathrm{kPa}$$
+
+Since $\Psi_{\mathrm{solution}} = -731\ \mathrm{kPa} > \Psi_{\mathrm{cell}} = -800\ \mathrm{kPa}$,
+water moves into the cell. The cell gains water, $\Psi_p$ increases until equilibrium is reached at
+$\Psi_p = +269\ \mathrm{kPa}$.
+
+**Worked Example 3.** A student carries out an experiment to determine the solute potential of potato
+cells. Potato cylinders are placed in a range of sucrose solutions. The results are:
+
+| Sucrose concentration ($\mathrm{mol\ dm^{-3}}$) | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 |
+| ------------------------------------------------ | --- | --- | --- | --- | --- | --- |
+| Percentage change in mass (%)                     | +12 | +6  | -1  | -8  | -15 | -22 |
+
+The concentration at which there is no change in mass lies between $0.1$ and $0.2\ \mathrm{mol\ dm^{-3}}$.
+By interpolation: the equilibrium concentration is approximately $0.17\ \mathrm{mol\ dm^{-3}}$.
+
+The solute potential of the potato cells at this concentration:
+
+$$\Psi_s = -iCRT = -1 \times 170 \times 8.314 \times 293 = -414000\ \mathrm{Pa} \approx -414\ \mathrm{kPa}$$
+
+At equilibrium (no net water movement), $\Psi_{\mathrm{cell}} = \Psi_{\mathrm{solution}}$ and
+$\Psi_p = 0$ (the cell is at the point of incipient plasmolysis). Therefore, $\Psi_s \approx -414\ \mathrm{kPa}$.
+
+:::warning
+Common Pitfall Students sometimes forget that the formula $\Psi_s = -iCRT$ gives the solute potential
+of the solution, not the cell. The cell's solute potential is only equal to this value at equilibrium
+when $\Psi_p = 0$. In a turgid cell, $\Psi_p > 0$ and $\Psi_{\mathrm{cell}}$ is less negative than
+$\Psi_s$.
+:::
+
+## 9. Detailed Cardiac Cycle and Pressure Curves
+
+### 9.1 Pressure Relationships
+
+Understanding the pressure changes during the cardiac cycle requires tracking three pressures
+simultaneously: atrial pressure ($P_{\mathrm{atrium}}$), ventricular pressure ($P_{\mathrm{ventricle}}$),
+and aortic pressure ($P_{\mathrm{aorta}}$).
+
+The fundamental rule governing valve behaviour:
+
+- **AV valves** open when $P_{\mathrm{atrium}} > P_{\mathrm{ventricle}}$; close when
+  $P_{\mathrm{ventricle}} > P_{\mathrm{atrium}}$.
+- **Semilunar valves** open when $P_{\mathrm{ventricle}} > P_{\mathrm{aorta}}$; close when
+  $P_{\mathrm{aorta}} > P_{\mathrm{ventricle}}$.
+
+### 9.2 Pressure Curve Analysis
+
+The pressure curve is divided into phases:
+
+1. **Ventricular filling** (mid-to-late diastole): $P_{\mathrm{ventricle}}$ is low and slowly rising as
+   blood flows passively from atria. AV valves open; SL valves closed.
+
+2. **Atrial systole**: $P_{\mathrm{atrium}}$ rises sharply (the "a wave"), pushing the last 20--30% of
+   blood into the ventricles ("atrial kick").
+
+3. **Isovolumetric contraction**: $P_{\mathrm{ventricle}}$ rises rapidly but both sets of valves are
+   closed (AV valves just closed due to $P_{\mathrm{ventricle}} > P_{\mathrm{atrium}}$; SL valves not
+   yet open). Ventricular volume is constant (iso-volumetric). This is the brief period where
+   $P_{\mathrm{ventricle}}$ is between $P_{\mathrm{atrium}}$ and $P_{\mathrm{aorta}}$.
+
+4. **Ventricular ejection**: $P_{\mathrm{ventricle}}$ exceeds $P_{\mathrm{aorta}}$, SL valves open,
+   blood is ejected. $P_{\mathrm{ventricle}}$ peaks and then begins to fall as ejection proceeds.
+   Aortic pressure rises to a peak (systolic pressure).
+
+5. **Isovolumetric relaxation**: $P_{\mathrm{ventricle}}$ falls below $P_{\mathrm{aorta}}$, SL valves
+   close (the "dicrotic notch" on the aortic curve, caused by backflow against closed aortic valve).
+   $P_{\mathrm{ventricle}}$ continues to fall but is still above $P_{\mathrm{atrium}}$, so AV valves
+   remain closed. Volume is again constant.
+
+6. **Return to filling**: $P_{\mathrm{ventricle}}$ falls below $P_{\mathrm{atrium}}$, AV valves open,
+   and passive filling resumes.
+
+### 9.3 Worked Example: Cardiac Output During Exercise
+
+A 20-year-old student has the following measurements at rest:
+- Heart rate $= 68\ \mathrm{beats\ min^{-1}}$
+- Stroke volume $= 72\ \mathrm{cm^3}$
+- End-diastolic volume $= 120\ \mathrm{cm^3}$
+
+During maximal exercise:
+- Heart rate $= 195\ \mathrm{beats\ min^{-1}}$
+- End-diastolic volume $= 140\ \mathrm{cm^3}$
+- End-systolic volume $= 40\ \mathrm{cm^3}$
+
+(a) Calculate cardiac output at rest and during exercise.
+
+At rest: $\mathrm{CO} = 72 \times 68 = 4896\ \mathrm{cm^3\ min^{-1}} = 4.9\ \mathrm{dm^3\ min^{-1}}$.
+
+During exercise: Stroke volume $= 140 - 40 = 100\ \mathrm{cm^3}$.
+$\mathrm{CO} = 100 \times 195 = 19500\ \mathrm{cm^3\ min^{-1}} = 19.5\ \mathrm{dm^3\ min^{-1}}$.
+
+(b) Calculate the ejection fraction at rest.
+
+Ejection fraction $= \frac{\mathrm{Stroke\ volume}}{\mathrm{End-diastolic\ volume}} \times 100\% = \frac{72}{120} \times 100\% = 60\%$.
+
+(c) The cardiac output increased by a factor of $\frac{19.5}{4.9} \approx 4.0\times$. This is achieved
+primarily through increased heart rate (from 68 to $195\ \mathrm{beats\ min^{-1}}$, a factor of $2.9\times$)
+and increased stroke volume (from 72 to $100\ \mathrm{cm^3}$, a factor of $1.4\times$).
+
+:::warning
+Common Pitfall Students sometimes add the increases in heart rate and stroke volume multiplicatively
+and state the increase as $2.9 \times 1.4 = 4.1\times$. While this gives approximately the right answer,
+the correct approach is to calculate the cardiac output at each state separately and then compare, as
+shown above. This avoids rounding errors and is methodologically correct.
+:::
+
+## 10. The Chloride Shift and Bicarbonate Buffer System
+
+### 10.1 Mechanism of $\mathrm{CO_2}$ Transport in Detail
+
+When $\mathrm{CO_2}$ enters a red blood cell, carbonic anhydrase catalyses its hydration:
+
+$$\mathrm{CO_2} + \mathrm{H_2O} \rightleftharpoons \mathrm{H_2CO_3} \rightleftharpoons \mathrm{H^+} + \mathrm{HCO_3^-}$$
+
+The $\mathrm{HCO_3^-}$ ions are transported out of the red blood cell in exchange for $\mathrm{Cl^-}$ ions
+entering from the plasma. This is the **chloride shift** (Hamburger shift), mediated by the anion
+exchanger protein (Band 3) in the red blood cell membrane.
+
+The exchange is 1:1: for every $\mathrm{HCO_3^-}$ that leaves, one $\mathrm{Cl^-}$ enters. This
+maintains electrochemical neutrality inside the cell.
+
+The $\mathrm{H^+}$ ions are buffered by haemoglobin:
+
+$$\mathrm{HbO_8} + \mathrm{H^+} \rightleftharpoons \mathrm{HHb} + 4\mathrm{O_2}$$
+
+This is the molecular basis of the Bohr effect: the binding of $\mathrm{H^+}$ to haemoglobin reduces
+its affinity for $\mathrm{O_2}$, promoting $\mathrm{O_2}$ unloading in respiring tissues.
+
+### 10.2 Reversal in the Lungs
+
+In the pulmonary capillaries, the process reverses. The high $p\mathrm{O_2}$ promotes $\mathrm{O_2}$
+binding to haemoglobin, which releases $\mathrm{H^+}$. The $\mathrm{H^+}$ combines with
+$\mathrm{HCO_3^-}$ to form $\mathrm{H_2CO_3}$, which is broken down by carbonic anhydrase to
+$\mathrm{CO_2}$ and $\mathrm{H_2O}$. The $\mathrm{CO_2}$ diffuses out into the alveolar air.
+$\mathrm{Cl^-}$ exits the red blood cell (reverse chloride shift).
+
+:::warning
+Common Pitfall Students sometimes write that $\mathrm{CO_2}$ "binds to haemoglobin" in the same way
+that $\mathrm{O_2}$ does. $\mathrm{CO_2}$ binds to the amino groups of the globin chains (forming
+carbaminohaemoglobin), not to the haem groups. $\mathrm{O_2}$ binds to the iron in the haem groups.
+These are distinct binding sites and mechanisms.
+:::
+
 ## Practice Problems
 
 <details>
@@ -492,6 +748,94 @@ cardiac output $= 110 \times 160 = 17600\ \mathrm{cm^3\ min^{-1}} = 17.6\ \mathr
 Factor of increase $= 17.6 / 4.55 \approx 3.9\times$.
 
 <b>If you get this wrong, revise:</b> [Cardiac Output](#54-cardiac-output)
+
+</details>
+
+<details>
+<summary>Problem 7</summary>
+A student investigates the effect of temperature on the rate of diffusion of a dye through agar gel.
+The dye diffuses $3.2\ \mathrm{mm}$ in 20 minutes at $20\ ^\circ\mathrm{C}$ and $5.1\ \mathrm{mm}$ in
+20 minutes at $40\ ^\circ\mathrm{C}$. (a) Calculate the rate of diffusion at each temperature.
+(b) The $Q_{10}$ coefficient is defined as the ratio of rates at temperatures differing by
+$10\ ^\circ\mathrm{C}$. Estimate $Q_{10}$ for this process. (c) Explain the effect of temperature on
+the rate of diffusion.
+
+**Answer.** (a) Rate at $20\ ^\circ\mathrm{C}$: $\frac{3.2}{20} = 0.16\ \mathrm{mm\ min^{-1}}$.
+
+Rate at $40\ ^\circ\mathrm{C}$: $\frac{5.1}{20} = 0.255\ \mathrm{mm\ min^{-1}}$.
+
+(b) $Q_{10} = \left(\frac{v_{40}}{v_{20}}\right)^{\frac{10}{40-20}} = \left(\frac{0.255}{0.16}\right)^{0.5} = (1.594)^{0.5} = 1.26$.
+
+The rate of diffusion increases by approximately 26% for each $10\ ^\circ\mathrm{C}$ increase in
+temperature.
+
+(c) Increasing temperature increases the kinetic energy of dye molecules, causing them to move faster.
+According to the kinetic theory, the average kinetic energy of molecules is proportional to absolute
+temperature ($\mathrm{KE} = \frac{3}{2}k_BT$). Higher kinetic energy means more frequent and more
+energetic collisions, increasing the rate of diffusion. Note that this effect is relatively modest for
+simple diffusion ($Q_{10} \approx 1.2$--$1.4$) compared with enzyme-catalysed reactions
+($Q_{10} \approx 2$--$3$), because diffusion does not involve the conformational changes that make
+enzyme rates so temperature-sensitive.
+
+<b>If you get this wrong, revise:</b> [Quantitative Gas Exchange: Fick's Law Applications](#7-quantitative-gas-exchange-ficks-law-applications)
+
+</details>
+
+<details>
+<summary>Problem 8</summary>
+Describe and explain the mechanism of mass flow in the phloem. Include reference to the role of
+active transport, water potential, and hydrostatic pressure. Why is the mass flow hypothesis
+considered incomplete?
+
+**Answer.** At the source (photosynthesising leaves), sucrose is actively loaded into sieve tube
+elements by companion cells using ATP. This lowers the water potential inside the sieve tube
+(sucrose is a solute, so $\Psi_s$ becomes more negative). Water enters the sieve tube by osmosis from
+the xylem (which has a higher water potential), creating high hydrostatic pressure. At the sink (e.g.,
+growing root tips), sucrose is unloaded from sieve tubes (actively or passively). This raises the
+water potential inside the sieve tube. Water leaves by osmosis into surrounding cells. The resulting
+hydrostatic pressure gradient drives bulk flow (mass flow) of sap from source to sink through the
+phloem.
+
+The mass flow hypothesis is considered incomplete because: (1) it does not easily explain
+bidirectional transport (sucrose moving in opposite directions in different sieve tubes simultaneously);
+(2) the calculated flow rates are sometimes lower than observed translocation rates; (3) sieve plates
+would be expected to impede flow, yet translocation is rapid. Current models supplement mass flow with
+cytoplasmic streaming and active transport along sieve tubes.
+
+<b>If you get this wrong, revise:</b> [Phloem](#42-phloem)
+
+</details>
+
+<details>
+<summary>Problem 9</summary>
+A spirometer trace from a student shows the following measurements: tidal volume $= 450\ \mathrm{cm^3}$,
+vital capacity $= 4200\ \mathrm{cm^3}$, breathing rate $= 16\ \mathrm{breaths\ min^{-1}}$, and
+respiratory minute ventilation $= 7.2\ \mathrm{dm^3\ min^{-1}}$. After 5 minutes of exercise, the
+breathing rate increases to $28\ \mathrm{breaths\ min^{-1}}$ and tidal volume to $750\ \mathrm{cm^3}$.
+(a) Verify the resting respiratory minute ventilation. (b) Calculate the respiratory minute ventilation
+during exercise. (c) Calculate the volume of air that ventilates the anatomical dead space per minute
+at rest and during exercise, given a dead space volume of $150\ \mathrm{cm^3}$.
+
+**Answer.** (a) Respiratory minute ventilation $= \text{tidal volume} \times \text{breathing rate} = 450 \times 16 = 7200\ \mathrm{cm^3\ min^{-1}} = 7.2\ \mathrm{dm^3\ min^{-1}}$. This matches the stated value.
+
+(b) During exercise: $750 \times 28 = 21000\ \mathrm{cm^3\ min^{-1}} = 21.0\ \mathrm{dm^3\ min^{-1}}$.
+
+(c) Dead space ventilation (volume of air that does not reach the alveoli) $= \text{dead space volume} \times \text{breathing rate}$.
+
+At rest: $150 \times 16 = 2400\ \mathrm{cm^3\ min^{-1}} = 2.4\ \mathrm{dm^3\ min^{-1}}$.
+
+During exercise: $150 \times 28 = 4200\ \mathrm{cm^3\ min^{-1}} = 4.2\ \mathrm{dm^3\ min^{-1}}$.
+
+The alveolar ventilation (air actually reaching the gas exchange surface) is:
+
+At rest: $7.2 - 2.4 = 4.8\ \mathrm{dm^3\ min^{-1}}$.
+
+During exercise: $21.0 - 4.2 = 16.8\ \mathrm{dm^3\ min^{-1}}$.
+
+The alveolar ventilation increased by a factor of $\frac{16.8}{4.8} = 3.5\times$, ensuring sufficient
+$\mathrm{O_2}$ uptake and $\mathrm{CO_2}$ removal during exercise.
+
+<b>If you get this wrong, revise:</b> [Pulmonary Ventilation Rate](#24-pulmonary-ventilation-rate)
 
 </details>
 

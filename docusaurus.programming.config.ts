@@ -69,6 +69,8 @@ const config: Config = {
   projectName: 'WyattsNotes',
   trailingSlash: false,
 
+  clientModules: [require.resolve('./src/theme/KatexLoader')],
+
   onBrokenLinks: 'throw',
 
   staticDirectories: ['static'],

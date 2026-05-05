@@ -34,7 +34,7 @@ $$
 \end{aligned}
 $$
 
-![Coulombs_law](/img/physics/CoulombsLaw.png)
+<img src="/img/physics/CoulombsLaw.png" alt="Coulombs_law" width="416" height="101" />
 :::
 
 Where the constant $k$ is named Coulomb's constant and is equal to:

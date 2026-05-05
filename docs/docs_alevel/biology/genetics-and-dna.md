@@ -355,6 +355,267 @@ passed to daughter cells during mitosis (and in some cases meiosis), but they ca
 environmental changes.
 :::
 
+## 7. Genetic Technology
+
+### 7.1 The Polymerase Chain Reaction (PCR)
+
+PCR is a technique for amplifying a specific DNA sequence in vitro. It requires:
+
+1. **Template DNA**: the DNA containing the target sequence.
+2. **Primers**: short, single-stranded oligonucleotides (typically 18--25 bases) complementary to the
+   sequences flanking the target region. One forward primer and one reverse primer.
+3. **Taq DNA polymerase**: a heat-stable DNA polymerase from the bacterium _Thermus aquaticus_ (optimum
+   temperature $\approx 72\ ^\circ\mathrm{C}$), which does not denature at the high temperatures used
+   in the cycle.
+4. **Free nucleotides** (dNTPs): dATP, dTTP, dCTP, dGTP.
+5. **Buffer** with $\mathrm{Mg^{2+}}$ ions (co-factor for Taq polymerase).
+
+**The PCR cycle** (repeated 25--35 times):
+
+1. **Denaturation** ($95\ ^\circ\mathrm{C}$, 30 s): the double-stranded DNA template is heated to
+   separate the strands.
+2. **Annealing** ($55$--$65\ ^\circ\mathrm{C}$, 30 s): the temperature is lowered to allow primers to
+   bind (anneal) to their complementary sequences on the template strands by hydrogen bonding.
+3. **Extension** ($72\ ^\circ\mathrm{C}$, 30--60 s): Taq polymerase extends the primers by adding
+   nucleotides to the $3'$ end, synthesising new DNA strands.
+
+**Exponential amplification**: after $n$ cycles, the number of copies of the target sequence is
+approximately $2^n$ (after the first few cycles where the number of target molecules doubles). After 30
+cycles, a single molecule yields $2^{30} \approx 1.07 \times 10^9$ copies.
+
+**Worked Example.** A forensic sample contains 5 copies of a target DNA sequence. After 28 cycles of PCR,
+how many copies are produced?
+
+Number of copies $= 5 \times 2^{28} = 5 \times 268435456 = 1.34 \times 10^9$ copies.
+
+### 7.2 Gel Electrophoresis
+
+Gel electrophoresis separates DNA fragments by size. DNA fragments are loaded into wells in an agarose
+gel and an electric field is applied. DNA is negatively charged (due to phosphate groups) and migrates
+towards the positive electrode.
+
+- **Smaller fragments** move faster and travel further through the gel matrix.
+- **Larger fragments** move more slowly and travel less far.
+
+The distance migrated is approximately inversely proportional to the logarithm of fragment size. A
+**DNA ladder** (fragments of known size) is run alongside the samples to allow size determination.
+
+For protein electrophoresis, **SDS-PAGE** (sodium dodecyl sulfate polyacrylamide gel electrophoresis) is
+used. SDS denatures proteins and gives them a uniform negative charge, so separation is purely by
+molecular mass.
+
+### 7.3 DNA Sequencing
+
+**Sanger sequencing** (chain-termination method): the DNA template is copied using modified nucleotides
+(dideoxynucleotides, ddNTPs) that lack the $3'-\mathrm{OH}$ group necessary for chain elongation. When a
+ddNTP is incorporated, synthesis terminates. By running four separate reactions, each with a different
+ddNTP (A, T, C, G) labelled with a fluorescent dye, and separating the resulting fragments by length,
+the sequence can be read directly from the electropherogram.
+
+Modern **next-generation sequencing (NGS)** methods allow massively parallel sequencing of millions of
+DNA fragments simultaneously, enabling rapid whole-genome sequencing.
+
+### 7.4 Restriction Enzymes and Recombinant DNA Technology
+
+**Restriction endonucleases** (restriction enzymes) are enzymes that cut DNA at specific recognition
+sequences (typically 4--8 base pairs, palindromic). For example, EcoRI cuts at GAATTC.
+
+In **recombinant DNA technology**:
+
+1. A target gene is cut from donor DNA using a restriction enzyme.
+2. A **plasmid vector** is cut with the same enzyme, producing complementary sticky ends.
+3. The target gene and the cut plasmid are mixed with **DNA ligase**, which joins them by forming
+   phosphodiester bonds.
+4. The recombinant plasmid is introduced into host bacteria by **transformation**.
+5. Bacteria carrying the recombinant plasmid are selected using **antibiotic resistance markers** on
+   the plasmid.
+
+:::warning
+Common Pitfall Students often write that "bacteria are genetically modified" in PCR. PCR does not
+involve bacteria or modification of living organisms -- it is an in vitro technique. PCR, gel
+electrophoresis, and DNA sequencing are analytical techniques, while recombinant DNA technology involves
+the creation of genetically modified organisms (GMOs).
+:::
+
+## 8. Advanced Genetic Crosses
+
+### 8.1 Epistasis
+
+**Epistasis** occurs when the expression of one gene is affected by one or more independently inherited
+genes. The epistatic gene masks or modifies the expression of the hypostatic gene.
+
+**Worked Example: Recessive epistasis in coat colour of Labrador retrievers.**
+
+Gene $B$ determines pigment colour: $B$ (black) is dominant over $b$ (brown).
+Gene $E$ determines whether pigment is deposited in the fur: $E$ allows deposition; $ee$ prevents
+deposition, resulting in a golden coat regardless of the $B/b$ genotype.
+
+Cross: $BbEe \times BbEe$
+
+Expected ratio from independent assortment: 9:3:3:1.
+
+| Genotype        | Phenotype | Count | Phenotypic class              |
+| --------------- | --------- | ----- | ----------------------------- |
+| $B\_E\_$        | Black     | 9     | Black                         |
+| $bbE\_$         | Brown     | 3     | Brown                         |
+| $B\_ee$         | Golden    | 3     | Golden                        |
+| $bbee$          | Golden    | 1     | Golden                        |
+
+Combined phenotypic ratio: **9 black : 3 brown : 4 golden** (9:3:4).
+
+This is distinct from the standard 9:3:3:1 ratio because the homozygous recessive genotype at gene $E$
+masks the effect of gene $B$.
+
+### 8.2 Autosomal Linkage
+
+When two genes are located on the same chromosome, they do not assort independently (Mendel's second
+law is violated). The closer the genes are on the chromosome, the less likely they are to be separated by
+crossing over.
+
+**Worked Example.** Two genes, $A$ and $B$, are linked on the same chromosome. A test cross is performed:
+$AB/ab \times ab/ab$ (where $/$ indicates that $AB$ are on one homologous chromosome and $ab$ on the
+other).
+
+The offspring are:
+- $AB/ab$: 42% (parental)
+- $ab/ab$: 42% (parental)
+- $Ab/ab$: 8% (recombinant)
+- $aB/ab$: 8% (recombinant)
+
+The recombination frequency $= \frac{8 + 8}{42 + 42 + 8 + 8} = \frac{16}{100} = 16\%$.
+
+The recombination frequency is approximately equal to the map distance between the two genes in
+centiMorgans (cM). The genes are approximately 16 cM apart.
+
+If the recombination frequency were 50%, the genes would assort independently (unlinked). The maximum
+observable recombination frequency is 50% (since greater distances lead to multiple cross-overs that
+cancel out).
+
+:::warning
+Common Pitfall Students often assume that a 9:3:3:1 ratio always results from a dihybrid cross.
+If the genes are linked, the observed ratio will deviate from 9:3:3:1, with an excess of parental
+phenotypes and a deficit of recombinant phenotypes. Always check whether the genes are on the same
+chromosome before applying Mendel's second law.
+:::
+
+### 8.3 Sex Determination
+
+In mammals, sex is determined by the sex chromosomes: XX = female, XY = male. The SRY gene on the Y
+chromosome triggers testis development. In the absence of SRY (XX individuals), ovaries develop.
+
+In birds, the system is reversed: ZZ = male, ZW = female. In some reptiles and fish, sex is determined
+by environmental temperature during embryonic development (temperature-dependent sex determination).
+
+### 8.4 Chi-Squared Test for Genetic Crosses
+
+The chi-squared test is used to determine whether observed results from a genetic cross fit the expected
+Mendelian ratio.
+
+$$\chi^2 = \sum \frac{(O - E)^2}{E}$$
+
+**Worked Example.** A dihybrid cross is expected to give a 9:3:3:1 ratio. The observed results are:
+
+| Phenotype   | Observed | Expected (total = 600) | $(O - E)^2 / E$ |
+| ----------- | -------- | ---------------------- | ---------------- |
+| Round yellow| 352      | $600 \times 9/16 = 337.5$ | 0.62            |
+| Round green | 106      | $600 \times 3/16 = 112.5$ | 0.38            |
+| Wrinkled yellow | 98   | $600 \times 3/16 = 112.5$ | 1.87            |
+| Wrinkled green | 44    | $600 \times 1/16 = 37.5$  | 1.13            |
+
+$\chi^2 = 0.62 + 0.38 + 1.87 + 1.13 = 4.00$
+
+Degrees of freedom $= 4 - 1 = 3$. Critical value at $p = 0.05$ for 3 df $= 7.82$.
+
+Since $\chi^2 = 4.00 < 7.82$, we accept the null hypothesis: the observed results fit the expected
+9:3:3:1 ratio. The genes assort independently.
+
+## 9. Detailed Mutation Analysis
+
+### 9.1 Types of DNA Damage
+
+| Type of Damage              | Cause                               | Effect                                |
+| --------------------------- | ----------------------------------- | ------------------------------------- |
+| Base substitution           | Point mutation; mutagenic chemicals | May change amino acid (or be silent)  |
+| Deamination                 | Spontaneous (C to U)                | C:G pair becomes U:A pair after replication |
+| Depurination                | Spontaneous loss of purine base     | Gap in DNA strand                     |
+| Pyrimidine dimer            | UV radiation                        | Bends DNA helix; blocks replication   |
+| Double-strand break         | Ionising radiation                  | Chromosomal rearrangement; cell death |
+| Insertion/deletion          | Replication error; mutagen          | Frameshift if not in multiples of 3   |
+
+### 9.2 Worked Example: Tracing a Frameshift Mutation
+
+The original mRNA sequence (reading frame starting at the first codon) is:
+
+$$\text{AUG-CCU-GAC-UUU-GGC-AAG-UAA}$$
+$$\text{Met - Pro - Asp - Phe - Gly - Lys - Stop}$$
+
+A deletion of the third nucleotide (G) produces:
+
+$$\text{AUG-CCU-ACU-UUG-GCA-AGU-AA...}$$
+$$\text{Met - Pro - Thr - Leu - Ala - Ser - ...}$$
+
+Every amino acid after the deletion site has changed, and the original stop codon is no longer in frame.
+Translation continues past the original stop codon until a new stop codon is encountered, producing a
+longer, non-functional protein. This illustrates why frameshift mutations are typically more severe than
+point mutations.
+
+### 9.3 Mutagenic Agents and Their Mechanisms
+
+**UV radiation** (wavelength $< 320\ \mathrm{nm}$): causes thymine dimers by forming covalent bonds
+between adjacent thymine bases on the same DNA strand. This distorts the helix and blocks replication.
+Repair mechanism: nucleotide excision repair (NER) -- the damaged section is cut out by endonucleases,
+DNA polymerase fills the gap, and DNA ligase seals it.
+
+**Ionising radiation** (X-rays, gamma rays): carries sufficient energy to eject electrons from atoms,
+causing direct DNA strand breaks (single-strand and double-strand breaks). Double-strand breaks are
+particularly dangerous because they can lead to chromosomal translocations and deletions.
+
+**Chemical mutagens:**
+- **Base analogues** (e.g., 5-bromouracil): structurally similar to normal bases; incorporated during
+  replication but pair incorrectly.
+- **Alkylating agents** (e.g., mustard gas, EMS): add alkyl groups to bases, altering their pairing
+  properties.
+- **Intercalating agents** (e.g., ethidium bromide): insert between base pairs, causing insertions or
+  deletions during replication.
+
+## 10. Gene Technology in Medicine and Agriculture
+
+### 10.1 Recombinant Human Insulin
+
+Before recombinant DNA technology, insulin for treating diabetes was extracted from pig and cow pancreas.
+This had problems: slight structural differences from human insulin could cause immune reactions, and
+supply was limited.
+
+The production of recombinant human insulin involves:
+
+1. Isolation of the human insulin gene.
+2. Insertion into a plasmid vector using restriction enzymes and DNA ligase.
+3. Transformation of _E. coli_ or yeast cells with the recombinant plasmid.
+4. Fermentation: the genetically modified organisms are grown in large bioreactors.
+5. Extraction and purification of the insulin protein.
+
+The recombinant insulin is structurally identical to human insulin, eliminating immune reactions, and
+can be produced in unlimited quantities.
+
+### 10.2 Genetically Modified Crops
+
+Genetic modification of crops can introduce traits such as:
+
+- **Herbicide resistance**: insertion of a gene for an enzyme that detoxifies the herbicide (e.g., the
+  _BAR_ gene conferring resistance to glufosinate).
+- **Pest resistance**: insertion of a gene from _Bacillus thuringiensis_ (Bt) that codes for a toxin
+  lethal to specific insect pests but harmless to humans.
+- **Nutritional enhancement**: "Golden Rice" contains genes for beta-carotene (provitamin A) synthesis,
+  addressing vitamin A deficiency in developing countries.
+- **Disease resistance**: insertion of genes conferring resistance to viral or fungal pathogens.
+
+**Advantages**: increased yield; reduced use of chemical pesticides; improved nutritional content;
+potential to grow crops in marginal conditions (drought resistance, salinity tolerance).
+
+**Concerns**: potential gene flow to wild relatives creating "superweeds"; impact on non-target organisms;
+reduced genetic diversity if only a few GM varieties are planted; ethical concerns about patenting life
+forms; long-term ecological effects that are difficult to predict.
+
 ## Practice Problems
 
 <details>
@@ -495,6 +756,103 @@ $5' \to 3'$ direction (away from the fork), so synthesis must proceed back towar
 discontinuous Okazaki fragments, each requiring its own RNA primer.
 
 <b>If you get this wrong, revise:</b> [DNA Replication](#12-dna-replication)
+
+</details>
+
+<details>
+<summary>Problem 7</summary>
+A geneticist studies two genes in fruit flies: gene $A$ (normal wings, $A$ dominant over vestigial
+wings, $a$) and gene $B$ (grey body, $B$ dominant over ebony body, $b$). A test cross is performed:
+$AaBb \times aabb$. The offspring are:
+
+| Phenotype       | Observed |
+| --------------- | -------- |
+| Normal, grey    | 480      |
+| Vestigial, grey | 20       |
+| Normal, ebony   | 22       |
+| Vestigial, ebony| 478      |
+
+(a) Are the genes linked? Justify your answer with a chi-squared test. (b) If linked, calculate the
+recombination frequency and the map distance between the genes.
+
+**Answer.** (a) If the genes assorted independently, the expected ratio would be 1:1:1:1, with 250 in
+each category (total $= 1000$).
+
+$\chi^2 = \frac{(480-250)^2}{250} + \frac{(20-250)^2}{250} + \frac{(22-250)^2}{250} + \frac{(478-250)^2}{250}$
+
+$= \frac{52900}{250} + \frac{52900}{250} + \frac{51984}{250} + \frac{51984}{250}$
+
+$= 211.6 + 211.6 + 207.9 + 207.9 = 839.0$
+
+Degrees of freedom $= 3$. Critical value at $p = 0.05$ is $7.82$.
+
+Since $\chi^2 = 839 \gg 7.82$, the deviation from independent assortment is highly significant. The
+genes are linked.
+
+(b) Parental (non-recombinant) phenotypes: Normal grey (480) + Vestigial ebony (478) $= 958$.
+Recombinant phenotypes: Vestigial grey (20) + Normal ebony (22) $= 42$.
+
+Recombination frequency $= \frac{42}{1000} \times 100\% = 4.2\%$.
+
+Map distance $= 4.2\ \mathrm{cM}$.
+
+The genes are 4.2 centiMorgans apart on the same chromosome, which is very close -- they are tightly
+linked and crossing over between them is rare.
+
+<b>If you get this wrong, revise:</b> [Advanced Genetic Crosses](#8-advanced-genetic-crosses)
+
+</details>
+
+<details>
+<summary>Problem 8</summary>
+A PCR reaction starts with 10 copies of a target DNA sequence. After 30 cycles, how many copies are
+produced? If each cycle takes 90 seconds, how long does the entire PCR process take? State two reasons
+why the actual number of copies may be lower than the theoretical maximum.
+
+**Answer.** Theoretical copies after $n$ cycles $= N_0 \times 2^n = 10 \times 2^{30} = 10 \times 1073741824 = 1.07 \times 10^{10}$ copies.
+
+Total time $= 30 \times 90\ \mathrm{s} = 2700\ \mathrm{s} = 45\ \mathrm{minutes}$.
+
+In practice, the actual number may be lower because: (1) the reaction efficiency is rarely 100% --
+primers may not anneal perfectly, Taq polymerase may occasionally dissociate, or the template may
+re-anneal to itself; (2) reagent depletion (nucleotides, primers, or $\mathrm{Mg^{2+}}$ may become
+limiting in later cycles, reducing the amplification rate); (3) product inhibition at very high
+concentrations of amplified DNA.
+
+<b>If you get this wrong, revise:</b> [The Polymerase Chain Reaction (PCR)](#71-the-polymerase-chain-reaction-pcr)
+
+</details>
+
+<details>
+<summary>Problem 9</summary>
+In a population of 10000 people, the frequency of the recessive allele for cystic fibrosis ($f$) is
+$0.02$. (a) Calculate the expected number of carriers (heterozygotes) in the population. (b) Calculate
+the expected number of individuals with cystic fibrosis. (c) A genetic screening programme identifies
+all carriers and counsels them. If two carriers decide to have a child, what is the probability that
+the child will have cystic fibrosis?
+
+**Answer.** (a) $q = 0.02$, $p = 1 - 0.02 = 0.98$.
+
+Frequency of heterozygotes $= 2pq = 2 \times 0.98 \times 0.02 = 0.0392$.
+
+Number of carriers $= 0.0392 \times 10000 = 392$.
+
+(b) Frequency of homozygous recessive $= q^2 = 0.0004$.
+
+Number affected $= 0.0004 \times 10000 = 4$.
+
+(c) If both parents are carriers ($Ff \times Ff$):
+
+|     | $F$  | $f$  |
+| --- | ---- | ---- |
+| $F$ | $FF$ | $Ff$ |
+| $f$ | $Ff$ | $ff$ |
+
+Genotypic ratio: $1\ FF : 2\ Ff : 1\ ff$.
+
+Probability of an affected child ($ff$) $= \frac{1}{4} = 25\%$.
+
+<b>If you get this wrong, revise:</b> [Monohybrid Inheritance](#51-monohybrid-inheritance) and [The Hardy-Weinberg Principle](/docs/alevel/biology/biodiversity-classification-evolution)
 
 </details>
 
