@@ -46,7 +46,6 @@
     "remark-math": "^6.0.0"
   },
   "devDependencies": {
-    "algoliasearch": "^5.50.2",
     "@docusaurus/core": "^3.10.0",
     "@docusaurus/module-type-aliases": "^3.10.0",
     "@docusaurus/plugin-sitemap": "^3.10.0",
@@ -55,9 +54,11 @@
     "@docusaurus/theme-mermaid": "^3.10.0",
     "@docusaurus/tsconfig": "^3.10.0",
     "@docusaurus/types": "^3.10.0",
+    "@lhci/cli": "^0.14.0",
     "@tailwindcss/typography": "^0.5.16",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",
+    "algoliasearch": "^5.50.2",
     "cspell": "^9.7.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^10.1.8",
@@ -74,7 +75,7 @@
     "prettier-plugin-organize-imports": "^4.1.0",
     "tailwindcss": "^4.1.11",
     "typescript": "~5.9.3",
-    "@lhci/cli": "^0.14.0"
+    "workbox-build": "^7.4.1"
   },
   "browserslist": {
     "production": [

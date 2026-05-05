@@ -378,11 +378,13 @@ These are ellipses.
 ### 2.17 Common Pitfalls for First-Order ODEs
 
 :::caution Common Pitfall When separating variables, dividing by $h(y)$ can lose solutions where
-$h(y) = 0$. Always check whether $h(y) = 0$ yields valid solutions before dividing. :::
+$h(y) = 0$. Always check whether $h(y) = 0$ yields valid solutions before dividing.
+:::
 
 :::caution Common Pitfall Not every first-order ODE falls into a standard category. Equations like
 $y' = e^{x^2} + \sin(y^2)$ cannot be solved by elementary methods and require numerical
-techniques. :::
+techniques.
+:::
 
 ## 3. Second-Order Linear ODEs
 
@@ -757,14 +759,17 @@ The homogeneous solution depends on the discriminant $\gamma^2 - \omega_0^2$:
 
 :::caution Common Pitfall When using undetermined coefficients, always check whether your guess
 overlaps with the homogeneous solution. For $y'' - 4y = e^{2x}$, guessing $y_p = Ae^{2x}$ fails
-because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead. :::
+because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead.
+:::
 
 :::caution Common Pitfall For Euler-Cauchy equations, the substitution $y = x^r$ only works for $x > 0$.
-For $x < 0$, substitute $x = -e^t$ or use $y = (-x)^r$. :::
+For $x < 0$, substitute $x = -e^t$ or use $y = (-x)^r$.
+:::
 
 :::caution Common Pitfall Variation of parameters always works but can lead to difficult integrals.
 If the forcing term $g(x)$ is a polynomial, exponential, sine, or cosine (or products of these),
-prefer undetermined coefficients --- it is much faster. :::
+prefer undetermined coefficients --- it is much faster.
+:::
 
 
 ### 3.18 Abel's Identity (Proof)
@@ -1266,11 +1271,13 @@ $y(t) = 6 \cdot \frac{t^2 e^{3t}}{2!} = 3t^2 e^{3t}$. $\blacksquare$
 ### 5.14 Common Pitfalls for Laplace Transforms
 
 :::caution Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$, not $sY(s)$. The
-initial conditions are built into the transform. Forgetting them leads to incorrect solutions. :::
+initial conditions are built into the transform. Forgetting them leads to incorrect solutions.
+:::
 
 :::caution Common Pitfall When using the second shifting theorem, the time-shifted function must
 be written as $u_c(t)f(t - c)$, not $u_c(t)f(t)$. The function $f$ must be shifted by the same
-amount as the step. :::
+amount as the step.
+:::
 
 
 ### 5.15 Proof Sketch: Picard Iteration

@@ -841,7 +841,8 @@ $\mathrm{O_2}$ uptake and $\mathrm{CO_2}$ removal during exercise.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+Diagnostic Test
 Ready to test your understanding of **Exchange and Transport**? The [diagnostic test](/docs/alevel/biology/diagnostics/diag-exchange-transport) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Exchange and Transport with other biology topics to test synthesis under exam conditions.

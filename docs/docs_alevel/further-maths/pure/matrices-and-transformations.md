@@ -426,7 +426,8 @@ Any region can be tiled by infinitesimal parallelograms, so the general scale fa
 
 ## 8. Common Pitfalls
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 1. **Matrix multiplication order:** $AB$ means "apply $B$ first, then $A$." When combining
    transformations, the second transformation is written on the left. Always read right-to-left.
 2. **3x3 determinant sign errors:** The cofactor expansion alternates signs $+$, $-$, $+$ along the

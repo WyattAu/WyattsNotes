@@ -411,7 +411,8 @@ Integrating again: $y = a\cosh\!\left(\dfrac{x}{a}\right) + C$. $\blacksquare$
 
 ## 7. Common Pitfalls
 
-:::warning Common Pitfall
+:::warning
+Common Pitfall
 1. **Sign in the fundamental identity:** Unlike $\cos^2 x + \sin^2 x = 1$, the hyperbolic identity is
    $\cosh^2 x - \sinh^2 x = 1$. The minus sign is crucial and is the source of many errors.
 2. **Domain of $\operatorname{arcosh}$:** The domain is $x \geq 1$ (not $x > 0$). Attempting to evaluate
