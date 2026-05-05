@@ -1,8 +1,7 @@
 ---
 title: Circuits
 description:
-  Circuits -- Current, Resistance, EMF, DC Circuits, Kirchhoff's Laws, RC Circuits,
-  and Capacitor Charging and Discharging (AP Physics C: E&M).
+  "Circuits -- Current, Resistance, EMF, DC Circuits, Kirchhoff's Laws, RC Circuits, and Capacitor Charging and Discharging (AP Physics C: E&M)."
 date: 2026-05-05
 tags:
   - Physics

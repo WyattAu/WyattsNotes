@@ -1,8 +1,7 @@
 ---
 title: Electrostatics
 description:
-  Electrostatics -- Electric Charge, Coulomb's Law, Electric Fields, Gauss's Law,
-  Electric Potential, Capacitance, and Dielectrics (AP Physics C: E&M).
+  "Electrostatics -- Electric Charge, Coulomb's Law, Electric Fields, Gauss's Law, Electric Potential, Capacitance, and Dielectrics (AP Physics C: E&M)."
 date: 2026-05-05
 tags:
   - Physics
