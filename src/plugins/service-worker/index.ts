@@ -17,9 +17,9 @@
  */
 
 import type { DocusaurusConfig, Plugin } from '@docusaurus/types';
-import { generateSW } from 'workbox-build';
 import fs from 'fs';
 import path from 'path';
+import { generateSW } from 'workbox-build';
 
 interface ServiceWorkerPluginOptions {
   enable?: boolean;
@@ -43,9 +43,7 @@ export default function serviceWorkerPlugin(
       const { count, size } = await generateSW({
         swDest: path.join(outDir, 'sw.js'),
         globDirectory: outDir,
-        globPatterns: [
-          '**/*.{js,css,woff2,woff,ttf,eot,png,jpg,jpeg,gif,webp,svg,ico}',
-        ],
+        globPatterns: ['**/*.{js,css,woff2,woff,ttf,eot,png,jpg,jpeg,gif,webp,svg,ico}'],
         globIgnores: ['sw.js', 'sw.js.map'],
         skipWaiting: true,
         clientsClaim: true,
@@ -53,8 +51,7 @@ export default function serviceWorkerPlugin(
         dontCacheBustURLsMatching: /\.[a-f0-9]{8}\./i,
         runtimeCaching: [
           {
-            urlPattern: ({ sameOrigin, request }) =>
-              sameOrigin && request.mode === 'navigate',
+            urlPattern: ({ sameOrigin, request }) => sameOrigin && request.mode === 'navigate',
             handler: 'NetworkFirst' as const,
             options: {
               cacheName: `${cacheId}-html`,
