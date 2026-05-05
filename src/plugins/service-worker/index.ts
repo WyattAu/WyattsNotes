@@ -17,6 +17,7 @@
  */
 
 import type { DocusaurusConfig, Plugin } from '@docusaurus/types';
+
 import fs from 'fs';
 import path from 'path';
 import { generateSW } from 'workbox-build';
