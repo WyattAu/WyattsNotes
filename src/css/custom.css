@@ -5,8 +5,6 @@
 @import '~@fontsource/inter/400.css';
 @import '~@fontsource/inter/700.css';
 @import '~@fontsource/merriweather/400-italic.css';
-@import './print.css';
-
 /* Base Color Variables */
 :root {
   /* Orange Primary Color Scheme */
@@ -463,4 +461,19 @@ button.clean-btn[class*='toggleButton']:hover svg {
 
 [data-theme='dark'] .admonition-title {
   color: var(--ifm-color-emphasis-50) !important;
+}
+
+/* ==========================================================================
+   Dark Mode Image Handling
+   Slightly dim non-logo, non-icon, non-SVG images in dark mode so
+   light-background diagrams don't look jarring.  Add class "no-invert"
+   to any image that should keep its original brightness.
+   ========================================================================== */
+
+[data-theme='dark'] img:not(.no-invert):not([src*='svg']):not([src*='logo']):not([src*='icon']) {
+  filter: brightness(0.85) contrast(1.1);
+}
+
+[data-theme='dark'] .mermaid svg {
+  filter: brightness(0.85) contrast(1.1);
 }

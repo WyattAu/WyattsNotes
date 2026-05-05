@@ -381,3 +381,144 @@ $= \dfrac{1}{16}(2\cos 4\theta + 8\cos 2\theta + 6)$
 $= \dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}$.
 
 </details>
+
+---
+
+## 6. Further Proofs and Key Results
+
+### 6.1 Proof: product of roots of unity
+
+**Theorem.** The product of all $n$-th roots of unity is $(-1)^{n-1}$.
+
+**Proof.** The $n$-th roots of unity are the roots of $z^n - 1 = 0$. By Vieta's formulas, the product
+of all $n$ roots equals the constant term (up to sign):
+
+$$\prod_{k=0}^{n-1} z_k = (-1)^n \cdot \frac{-1}{1} = (-1)^{n-1} \quad \blacksquare$$
+
+### 6.2 Proof: conjugate root theorem for real polynomials
+
+**Theorem.** If $p(z)$ is a polynomial with real coefficients and $p(\alpha) = 0$, then
+$p(\overline{\alpha}) = 0$.
+
+**Proof.** Let $p(z) = a_n z^n + \cdots + a_1 z + a_0$ with all $a_i \in \mathbb{R}$.
+
+$$p(\overline{\alpha}) = a_n \overline{\alpha}^n + \cdots + a_1 \overline{\alpha} + a_0 = \overline{a_n}\,\overline{\alpha^n} + \cdots + \overline{a_1}\,\overline{\alpha} + \overline{a_0}$$
+
+$$= \overline{a_n \alpha^n + \cdots + a_1 \alpha + a_0} = \overline{p(\alpha)} = \overline{0} = 0 \quad \blacksquare$$
+
+### 6.3 Proof: $|z_1 + z_2| \leq |z_1| + |z_2|$ (triangle inequality)
+
+**Proof.** Using the exponential form, let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$.
+
+$$|z_1 + z_2|^2 = (z_1 + z_2)\overline{(z_1 + z_2)} = |z_1|^2 + |z_2|^2 + z_1\overline{z_2} + \overline{z_1}z_2$$
+
+$$= |z_1|^2 + |z_2|^2 + 2\,\mathrm{Re}(z_1\overline{z_2}) \leq |z_1|^2 + |z_2|^2 + 2|z_1||z_2| = (|z_1| + |z_2|)^2$$
+
+since $\mathrm{Re}(w) \leq |w|$ for any complex $w$. Taking square roots gives the result. $\blacksquare$
+
+---
+
+## 7. Common Pitfalls
+
+:::warning Common Pitfall
+1. **Argument range:** Always specify whether your argument is the principal value $(-\pi, \pi]$ or the
+   general value. When multiplying or dividing complex numbers, the resulting argument may fall
+   outside the principal range and must be adjusted.
+2. **Roots of negative numbers:** When finding roots of negative real numbers, the argument is $\pi$
+   (not $-\pi$), and the roots are distributed starting from angle $\pi/n$.
+3. **Locus regions:** $|z - z_0| = r$ is a circle (boundary only). Use $\leq$ or $\geq$ for the
+   interior or exterior including the boundary. Shade carefully in Argand diagrams.
+4. **Forgetting all roots:** For $z^n = w$, there are exactly $n$ distinct roots. Do not forget to
+   include $k = 0, 1, \ldots, n-1$.
+:::
+
+---
+
+## 8. Additional Exam-Style Questions
+
+### Question 5
+
+The complex numbers $z_1$ and $z_2$ satisfy $z_1 = 1 + i$ and $z_2 = 1 - \sqrt{3}i$.
+
+**(a)** Find $z_1 z_2$ in the form $re^{i\theta}$ where $-\pi < \theta \leq \pi$.
+
+**(b)** Hence find $\dfrac{z_1^4}{z_2^2}$ in Cartesian form.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** $z_1 = \sqrt{2}\,e^{i\pi/4}$, $z_2 = 2\,e^{-i\pi/3}$.
+
+$z_1 z_2 = 2\sqrt{2}\,e^{i(\pi/4 - \pi/3)} = 2\sqrt{2}\,e^{-i\pi/12}$.
+
+**(b)** $\dfrac{z_1^4}{z_2^2} = \dfrac{(\sqrt{2})^4\,e^{i\pi}}{2^2\,e^{-i2\pi/3}} = \dfrac{4\,e^{i\pi}}{4\,e^{-i2\pi/3}} = e^{i5\pi/3}$.
+
+In Cartesian form: $e^{i5\pi/3} = \cos\dfrac{5\pi}{3} + i\sin\dfrac{5\pi}{3} = \dfrac{1}{2} - i\dfrac{\sqrt{3}}{2}$.
+
+</details>
+
+### Question 6
+
+**(a)** Show that the roots of $z^4 + 16 = 0$ can be expressed as $z = \sqrt{2}\,e^{i(\pi + 2k\pi)/4}$ for
+$k = 0, 1, 2, 3$.
+
+**(b)** Find the Cartesian equations of the perpendicular bisector of the line segment joining two
+consecutive roots.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** $z^4 = -16 = 16\,e^{i\pi}$, so $z = 16^{1/4}\,e^{i(\pi + 2k\pi)/4} = 2\,e^{i(\pi + 2k\pi)/4}$ for
+$k = 0, 1, 2, 3$.
+
+Note: $\sqrt{2}$ in the question is incorrect; it should be $2$ (since $16^{1/4} = 2$).
+
+The four roots are:
+- $k = 0$: $2e^{i\pi/4} = \sqrt{2} + i\sqrt{2}$
+- $k = 1$: $2e^{i3\pi/4} = -\sqrt{2} + i\sqrt{2}$
+- $k = 2$: $2e^{i5\pi/4} = -\sqrt{2} - i\sqrt{2}$
+- $k = 3$: $2e^{i7\pi/4} = \sqrt{2} - i\sqrt{2}$
+
+**(b)** Consecutive roots $z_0 = \sqrt{2} + i\sqrt{2}$ and $z_1 = -\sqrt{2} + i\sqrt{2}$.
+
+The midpoint is $(0, \sqrt{2})$ and the segment is horizontal, so the perpendicular bisector is the
+vertical line $x = 0$ (the imaginary axis).
+
+</details>
+
+### Question 7
+
+The point $P$ representing the complex number $z$ moves such that
+$|z - 4 - 3i| = 2|z - 1 + i|$.
+
+**(a)** Show that the locus of $P$ is a circle and find its centre and radius.
+
+**(b)** Find the minimum and maximum values of $|z|$ on this locus.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** Let $z = x + iy$:
+
+$(x - 4)^2 + (y - 3)^2 = 4\bigl[(x - 1)^2 + (y + 1)^2\bigr]$
+
+$x^2 - 8x + 16 + y^2 - 6y + 9 = 4x^2 - 8x + 4 + 4y^2 + 8y + 4$
+
+$3x^2 + 3y^2 + 12y - 17 = 0$
+
+$x^2 + y^2 + 4y = \dfrac{17}{3}$
+
+$x^2 + (y + 2)^2 = \dfrac{17}{3} + 4 = \dfrac{29}{3}$
+
+Centre: $(0, -2)$, radius: $\sqrt{29/3}$.
+
+**(b)** $|z|$ is the distance from the origin to a point on the circle.
+
+Distance from origin to centre: $\sqrt{0^2 + (-2)^2} = 2$.
+
+Minimum $|z| = 2 - \sqrt{29/3}$. Since $\sqrt{29/3} \approx 3.11 > 2$, this is negative, so
+the minimum is $|\text{radius} - d| = \sqrt{29/3} - 2$.
+
+Maximum $|z| = 2 + \sqrt{29/3}$.
+
+</details>

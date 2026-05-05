@@ -186,6 +186,14 @@ const config: Config = {
       attributes: {},
       innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
     },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: '/css/print.css',
+        media: 'print',
+      },
+    },
   ],
 
   i18n: {

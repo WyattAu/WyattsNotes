@@ -368,3 +368,197 @@ with $A = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$, the result is
 $F_n = \frac{\phi^n - \psi^n}{\sqrt{5}}$ where $\phi = \frac{1+\sqrt{5}}{2}$.
 
 </details>
+
+---
+
+## 7. Further Proofs and Key Results
+
+### 7.1 Proof: $\det(AB) = \det(A)\det(B)$ for $2 \times 2$ matrices
+
+**Proof.** Let $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ and
+$B = \begin{pmatrix} e & f \\ g & h \end{pmatrix}$.
+
+$$AB = \begin{pmatrix} ae + bg & af + bh \\ ce + dg & cf + dh \end{pmatrix}$$
+
+$$\det(AB) = (ae + bg)(cf + dh) - (af + bh)(ce + dg)$$
+
+$$= acef + adeh + bcfg + bdgh - acef - adfg - bceh - bdgh$$
+
+$$= adeh + bcfg - adfg - bceh$$
+
+$$= ad(eh - fg) - bc(eh - fg) = (ad - bc)(eh - fg) = \det(A)\det(B) \quad \blacksquare$$
+
+### 7.2 Proof: $\det(A) \neq 0 \iff A$ is invertible
+
+**Proof.** ($\Rightarrow$) If $\det(A) \neq 0$, the adjugate formula gives
+$A^{-1} = \dfrac{1}{\det A}\mathrm{adj}(A)$, so $A$ is invertible.
+
+($\Leftarrow$) If $A$ is invertible with $A^{-1}$, then
+$\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$.
+Since $1 \neq 0$, we must have $\det(A) \neq 0$. $\blacksquare$
+
+### 7.3 Proof: the trace equals the sum of eigenvalues
+
+**Theorem.** For any $2 \times 2$ matrix $A$, $\mathrm{tr}(A) = \lambda_1 + \lambda_2$.
+
+**Proof.** The characteristic equation is
+$\det(A - \lambda I) = \lambda^2 - (a + d)\lambda + (ad - bc) = 0$.
+
+By Vieta's formulas, the sum of the roots is the negative coefficient of $\lambda$:
+
+$$\lambda_1 + \lambda_2 = a + d = \mathrm{tr}(A) \quad \blacksquare$$
+
+### 7.4 Proof: area scale factor via determinant
+
+**Theorem.** The linear transformation represented by a $2 \times 2$ matrix $A$ scales areas by
+$|\det(A)|$.
+
+**Proof.** The unit square with vertices $\mathbf{0}, \mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_1 + \mathbf{e}_2$
+is mapped to a parallelogram with vertices $\mathbf{0}, A\mathbf{e}_1, A\mathbf{e}_2, A\mathbf{e}_1 + A\mathbf{e}_2$.
+
+The area of this parallelogram is the magnitude of the cross product (in 2D, the determinant):
+
+$$\text{Area} = \left|\det\begin{pmatrix} a & b \\ c & d \end{pmatrix}\right| = |\det A|$$
+
+Any region can be tiled by infinitesimal parallelograms, so the general scale factor is $|\det A|$. $\blacksquare$
+
+---
+
+## 8. Common Pitfalls
+
+:::warning Common Pitfall
+1. **Matrix multiplication order:** $AB$ means "apply $B$ first, then $A$." When combining
+   transformations, the second transformation is written on the left. Always read right-to-left.
+2. **3x3 determinant sign errors:** The cofactor expansion alternates signs $+$, $-$, $+$ along the
+   first row. A common mistake is to forget the $-$ sign on the middle term.
+3. **Singular matrix checks:** Before finding an inverse, always verify $\det(A) \neq 0$. If the
+   determinant is zero, the matrix has no inverse and the system $A\mathbf{x} = \mathbf{b}$ has
+   either no solutions or infinitely many.
+4. **Eigenvectors are not unique:** Any non-zero scalar multiple of an eigenvector is also an
+   eigenvector. When diagonalising, ensure consistency: the columns of $P$ must match the order of
+   eigenvalues in $D$.
+5. **Repeated eigenvalues:** A repeated eigenvalue does not necessarily give two independent
+   eigenvectors. Check by attempting to solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$.
+:::
+
+---
+
+## 9. Additional Exam-Style Questions
+
+### Question 5
+
+The matrix $A = \begin{pmatrix} 3 & 1 \\ -1 & 1 \end{pmatrix}$ represents a linear transformation.
+
+**(a)** Find the eigenvalues and eigenvectors of $A$.
+
+**(b)** Write down a matrix $P$ and a diagonal matrix $D$ such that $P^{-1}AP = D$.
+
+**(c)** Hence find $A^5$.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** Characteristic equation: $(3 - \lambda)(1 - \lambda) + 1 = 0$
+
+$\lambda^2 - 4\lambda + 4 = 0 \implies (\lambda - 2)^2 = 0$
+
+$\lambda = 2$ (repeated).
+
+$\begin{pmatrix} 1 & 1 \\ -1 & -1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf{0} \implies x + y = 0$.
+
+Eigenvector: $\begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+
+Only one independent eigenvector, so $A$ is not diagonalisable.
+
+**(b)** Since $A$ is not diagonalisable, we cannot find $P$ and $D$ in the usual way. The best we can
+do is Jordan form, which is beyond A-Level scope.
+
+**(c)** For $A^n$ with a non-diagonalisable $2 \times 2$ matrix with repeated eigenvalue $\lambda$:
+
+$$A^n = \lambda^n I + n\lambda^{n-1}(A - \lambda I)$$
+
+$A - 2I = \begin{pmatrix} 1 & 1 \\ -1 & -1 \end{pmatrix}$.
+
+$A^5 = 2^5 I + 5 \cdot 2^4 \begin{pmatrix} 1 & 1 \\ -1 & -1 \end{pmatrix} = \begin{pmatrix} 32 & 0 \\ 0 & 32 \end{pmatrix} + \begin{pmatrix} 80 & 80 \\ -80 & -80 \end{pmatrix}$
+
+$= \begin{pmatrix} 112 & 80 \\ -80 & -48 \end{pmatrix}$.
+
+</details>
+
+### Question 6
+
+**(a)** Find the $3 \times 3$ matrix $M$ that represents a rotation of $90^\circ$ anticlockwise about
+the $x$-axis.
+
+**(b)** Verify that $\det(M) = 1$.
+
+**(c)** The point $(1, 1, 0)$ is transformed by $M$. Find its image.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** A rotation of $\theta$ about the $x$-axis leaves $x$ unchanged and rotates the $y$-$z$ plane:
+
+$$M = \begin{pmatrix} 1 & 0 & 0 \\ 0 & \cos 90^\circ & -\sin 90^\circ \\ 0 & \sin 90^\circ & \cos 90^\circ \end{pmatrix} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix}$$
+
+**(b)** Expanding along the first row:
+
+$\det M = 1\begin{vmatrix} 0 & -1 \\ 1 & 0 \end{vmatrix} - 0 + 0 = 0 - (-1) = 1$. Verified.
+
+**(c)** $\begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}$.
+
+The image is $(1, 0, 1)$.
+
+</details>
+
+### Question 7
+
+The transformation $T$ is defined by the matrix
+$A = \begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}$.
+
+**(a)** Find the invariant points of $T$.
+
+**(b)** Show that the line $y = 0$ is an invariant line of $T$.
+
+**(c)** Find another invariant line of $T$.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** Invariant points satisfy $A\mathbf{x} = \mathbf{x}$:
+
+$\begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x \\ y \end{pmatrix}$
+
+$2x + 3y = x \implies x + 3y = 0$, and $2y = y \implies y = 0$.
+
+So $x = 0$ and $y = 0$. The only invariant point is the origin.
+
+**(b)** Points on $y = 0$ have the form $(x, 0)$:
+
+$\begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} x \\ 0 \end{pmatrix} = \begin{pmatrix} 2x \\ 0 \end{pmatrix}$
+
+The image $(2x, 0)$ also lies on $y = 0$, so $y = 0$ is an invariant line.
+
+**(c)** For an invariant line $y = mx$, we need $A\begin{pmatrix} 1 \\ m \end{pmatrix} = \lambda\begin{pmatrix} 1 \\ m \end{pmatrix}$:
+
+$2 + 3m = \lambda$ and $2m = \lambda m$.
+
+From the second equation: $m(2 - \lambda) = 0$.
+
+If $m = 0$, we get the line $y = 0$ (already found).
+
+If $\lambda = 2$: $2 + 3m = 2 \implies m = 0$ again.
+
+For a line not through the origin, try $y = mx + c$ with $c \neq 0$:
+
+$\begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} x \\ mx + c \end{pmatrix} = \begin{pmatrix} (2 + 3m)x + 3c \\ 2mx + 2c \end{pmatrix}$
+
+For this to lie on $y = mx + c$: $2mx + 2c = m(2 + 3m)x + 3mc + c$.
+
+Comparing coefficients: $2m = m(2 + 3m) \implies 3m^2 = 0 \implies m = 0$.
+
+Then: $2c = c \implies c = 0$.
+
+The only invariant line is $y = 0$.
+
+</details>

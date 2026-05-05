@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Print Stylesheet — Wyatt's Notes
+   Loaded via <link media="print"> so no @media wrapper needed.
+   Optimised for A4 paper with serif body text, hidden chrome, and
+   visible link URLs.
+   ========================================================================== */
+
+/* ---- A4 page margins ---- */
+@page {
+  margin: 2cm 1.5cm;
+  size: A4;
+}
+
+/* ---- Base typography ---- */
+html {
+  font-size: 11pt;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+  color: #000;
+  background: #fff !important;
+  background-image: none !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ---- Hide navigation chrome ---- */
+.navbar,
+.navbar-sidebar,
+.sidebar,
+.footer,
+.theme-toggle,
+button.clean-btn[class*='toggleButton'],
+.theme-back-to-top-button,
+.pagination-nav,
+.breadcrumb,
+.breadcrumbs,
+.search-page,
+button[aria-label='Scroll to top'],
+button[aria-label='Search'],
+.search-page-input,
+.reading-progress,
+nav[class*='navbar'] {
+  display: none !important;
+}
+
+/* ---- Hide interactive widgets (Desmos, GeoGebra, PhET) ---- */
+iframe[src*='desmos.com'],
+iframe[src*='geogebra.org'],
+iframe[src*='phet.colorado.edu'],
+iframe[src*='phet'] {
+  display: none !important;
+}
+
+/* ---- Full-width content ---- */
+.main-wrapper {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.container {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+article,
+.theme-doc-main {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ---- Strip backgrounds and box-shadows from content wrapper ---- */
+.docs-doc-page .markdown {
+  background: #fff !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* ---- Page breaks: before h1 and h2 ---- */
+h1,
+h2 {
+  page-break-before: auto;
+  break-before: auto;
+}
+
+/* ---- Avoid page breaks inside these elements ---- */
+pre,
+code,
+table,
+tr,
+blockquote,
+figure,
+img,
+.math,
+.math-display,
+.katex-display,
+.katex,
+details {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* ---- Links: show URL in parentheses ---- */
+a[href^='http']::after {
+  content: ' (' attr(href) ')';
+  font-size: 0.85em;
+  color: #555;
+  word-break: break-all;
+}
+
+/* Anchor-only and mailto links: no suffix */
+a[href^='#']::after,
+a[href^='mailto:']::after {
+  content: '';
+}
+
+/* ---- Code blocks ---- */
+pre {
+  border: 1px solid #ccc !important;
+  background: #f5f5f5 !important;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 9pt;
+}
+
+code {
+  font-size: 9pt;
+}
+
+/* ---- Tables ---- */
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #333 !important;
+  padding: 4pt 6pt;
+}
+
+/* ---- KaTeX math: force black text for clarity ---- */
+.katex,
+.katex .mord,
+.katex .mop,
+.katex .mrel,
+.katex .mbin,
+.katex .mpunct,
+.katex .mopen,
+.katex .mclose,
+.katex .minner,
+.katex .mbinop,
+.katex .maccent,
+.katex .mord.text,
+.katex .mord.textbf,
+.katex .msupsub,
+.katex .mfrac,
+.katex .msqrt,
+.katex .mroot,
+.katex .mtable,
+.katex .mtr,
+.katex .mtd {
+  color: #000 !important;
+}
+
+/* ---- Expand details/summary for printing ---- */
+details {
+  break-inside: avoid;
+}
+
+details > summary {
+  font-weight: bold;
+}
+
+/* ---- Dark-mode overrides: force light colours on paper ---- */
+html[data-theme='dark'] {
+  --ifm-color-emphasis-300: #333;
+  --ifm-background-color: #fff;
+  --ifm-font-color-base: #000;
+}
+
+html[data-theme='dark'] * {
+  color: #000 !important;
+  border-color: #ccc !important;
+  background: #fff !important;
+  background-image: none !important;
+}

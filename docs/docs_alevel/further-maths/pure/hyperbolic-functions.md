@@ -361,3 +361,146 @@ Using the product rule:
 $f'(x) = \operatorname{arcosh}\,x + x \cdot \dfrac{1}{\sqrt{x^2 - 1}} = \operatorname{arcosh}\,x + \dfrac{x}{\sqrt{x^2 - 1}}$.
 
 </details>
+
+---
+
+## 6. Further Proofs and Key Results
+
+### 6.1 Proof: $\int \frac{1}{\sqrt{x^2 - a^2}}\,dx = \operatorname{arcosh}\!\left(\frac{x}{a}\right) + C$
+
+**Proof.** Let $u = x/a$, so $dx = a\,du$:
+
+$$\int \frac{dx}{\sqrt{x^2 - a^2}} = \int \frac{a\,du}{a\sqrt{u^2 - 1}} = \int \frac{du}{\sqrt{u^2 - 1}}$$
+
+Now let $u = \cosh t$, so $du = \sinh t\,dt$:
+
+$$= \int \frac{\sinh t\,dt}{\sqrt{\cosh^2 t - 1}} = \int \frac{\sinh t\,dt}{\sinh t} = \int 1\,dt = t + C = \operatorname{arcosh}\,u + C$$
+
+$$= \operatorname{arcosh}\!\left(\frac{x}{a}\right) + C \quad \blacksquare$$
+
+### 6.2 Proof: $\int \frac{1}{a^2 - x^2}\,dx = \frac{1}{a}\operatorname{artanh}\!\left(\frac{x}{a}\right) + C$
+
+**Proof.** Let $u = x/a$, so $dx = a\,du$:
+
+$$\int \frac{dx}{a^2 - x^2} = \frac{1}{a}\int \frac{du}{1 - u^2} = \frac{1}{a}\operatorname{artanh}\,u + C = \frac{1}{a}\operatorname{artanh}\!\left(\frac{x}{a}\right) + C \quad \blacksquare$$
+
+### 6.3 Proof: the catenary equation
+
+**Theorem.** A uniform chain hanging under gravity takes the shape $y = a\cosh\!\left(\dfrac{x}{a}\right) + c$.
+
+**Proof (sketch).** Consider a small element of the chain between horizontal positions $x$ and
+$x + \delta x$. Let the tension at position $x$ be $T$, making angle $\theta$ with the horizontal.
+
+Horizontal equilibrium: $T\cos\theta = T_0$ (constant).
+
+Vertical equilibrium: $\dfrac{d}{dx}(T\sin\theta) = w$ where $w$ is the weight per unit length.
+
+Since $T = T_0\sec\theta$ and $T\sin\theta = T_0\tan\theta$:
+
+$$\frac{d}{dx}(T_0\tan\theta) = w \implies T_0\sec^2\theta\,\frac{d\theta}{dx} = w$$
+
+Let $y' = \tan\theta$, so $\dfrac{dy'}{dx} = \sec^2\theta\,\dfrac{d\theta}{dx} = \dfrac{w}{T_0}$.
+
+Integrating: $y' = \dfrac{w}{T_0}\,x + C_1$. Taking $C_1 = 0$ by symmetry:
+
+$$y' = \frac{x}{a} \quad \text{where } a = \frac{T_0}{w}$$
+
+Integrating again: $y = a\cosh\!\left(\dfrac{x}{a}\right) + C$. $\blacksquare$
+
+---
+
+## 7. Common Pitfalls
+
+:::warning Common Pitfall
+1. **Sign in the fundamental identity:** Unlike $\cos^2 x + \sin^2 x = 1$, the hyperbolic identity is
+   $\cosh^2 x - \sinh^2 x = 1$. The minus sign is crucial and is the source of many errors.
+2. **Domain of $\operatorname{arcosh}$:** The domain is $x \geq 1$ (not $x > 0$). Attempting to evaluate
+   $\operatorname{arcosh}(0.5)$ is undefined.
+3. **$\cosh x \geq 1$ always:** When solving $\cosh^2 x = k$ and taking the square root, always take the
+   positive root $\cosh x = +\sqrt{k}$ since $\cosh x \geq 1 > 0$ for all real $x$.
+4. **Integration: artanh vs ln:** When $|x| > a$ in $\displaystyle\int \frac{dx}{a^2 - x^2}$, the result
+   involves $\operatorname{arcoth}$ (or an alternative logarithmic form), not $\operatorname{artanh}$.
+   Check the domain of the integrand carefully.
+:::
+
+---
+
+## 8. Additional Exam-Style Questions
+
+### Question 5
+
+**(a)** Solve the equation $\cosh x = 2.5$, giving your answer in exact logarithmic form.
+
+**(b)** Hence solve $\cosh 2x = 2.5$.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** $\cosh x = \dfrac{e^x + e^{-x}}{2} = 2.5$
+
+$e^x + e^{-x} = 5 \implies e^{2x} - 5e^x + 1 = 0$
+
+$e^x = \dfrac{5 \pm \sqrt{25 - 4}}{2} = \dfrac{5 \pm \sqrt{21}}{2}$
+
+$x = \ln\!\left(\dfrac{5 \pm \sqrt{21}}{2}\right)$
+
+Since $\cosh$ is even, both $\pm$ give valid solutions (one positive, one negative).
+
+**(b)** $\cosh 2x = 2.5 \implies 2x = \ln\!\left(\dfrac{5 \pm \sqrt{21}}{2}\right)$
+
+$x = \dfrac{1}{2}\ln\!\left(\dfrac{5 \pm \sqrt{21}}{2}\right)$
+
+Alternatively, using $\cosh 2x = 2\cosh^2 x - 1 = 2.5 \implies \cosh^2 x = 1.75$, which
+gives the same result.
+
+</details>
+
+### Question 6
+
+**(a)** Prove that $\dfrac{d}{dx}(\operatorname{arcosh}\,x) = \dfrac{1}{\sqrt{x^2 - 1}}$ for $x > 1$.
+
+**(b)** Evaluate $\displaystyle\int_2^3 \frac{dx}{\sqrt{x^2 - 1}}$ in exact form.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** Let $y = \operatorname{arcosh}\,x$, so $x = \cosh y$.
+
+$\dfrac{dx}{dy} = \sinh y$, so $\dfrac{dy}{dx} = \dfrac{1}{\sinh y}$.
+
+Since $\cosh^2 y - \sinh^2 y = 1$: $\sinh y = \sqrt{\cosh^2 y - 1} = \sqrt{x^2 - 1}$.
+
+$\dfrac{dy}{dx} = \dfrac{1}{\sqrt{x^2 - 1}} \quad \blacksquare$
+
+**(b)** $\displaystyle\int_2^3 \frac{dx}{\sqrt{x^2 - 1}} = \bigl[\operatorname{arcosh}\,x\bigr]_2^3$
+
+$= \ln(3 + \sqrt{8}) - \ln(2 + \sqrt{3}) = \ln(3 + 2\sqrt{2}) - \ln(2 + \sqrt{3})$
+
+$= \ln\!\left(\dfrac{3 + 2\sqrt{2}}{2 + \sqrt{3}}\right)$.
+
+</details>
+
+### Question 7
+
+A curve $C$ has equation $y = \sinh^{-1}(2x - 1)$.
+
+**(a)** Find $\dfrac{dy}{dx}$.
+
+**(b)** Find the equation of the tangent to $C$ at the point where $x = 1$.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** $y = \operatorname{arsinh}(2x - 1)$.
+
+$\dfrac{dy}{dx} = \dfrac{2}{\sqrt{(2x - 1)^2 + 1}} = \dfrac{2}{\sqrt{4x^2 - 4x + 2}}$.
+
+**(b)** At $x = 1$: $y = \operatorname{arsinh}(1) = \ln(1 + \sqrt{2})$.
+
+$\dfrac{dy}{dx}\bigg|_{x=1} = \dfrac{2}{\sqrt{4 - 4 + 2}} = \dfrac{2}{\sqrt{2}} = \sqrt{2}$.
+
+Equation of tangent: $y - \ln(1 + \sqrt{2}) = \sqrt{2}(x - 1)$, i.e.
+
+$y = \sqrt{2}\,x - \sqrt{2} + \ln(1 + \sqrt{2})$.
+
+</details>

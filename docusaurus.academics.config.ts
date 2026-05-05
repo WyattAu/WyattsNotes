@@ -167,6 +167,14 @@ const config: Config = {
       },
     },
     {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: '/css/print.css',
+        media: 'print',
+      },
+    },
+    {
       tagName: 'script',
       attributes: {
         src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
