@@ -88,7 +88,7 @@ const config: Config = {
       attributes: {
         rel: 'preconnect',
         href: 'https://cdn.jsdelivr.net',
-              },
+      },
     },
     {
       tagName: 'link',
@@ -102,7 +102,7 @@ const config: Config = {
       attributes: {
         rel: 'preconnect',
         href: 'https://algolia.net',
-              },
+      },
     },
     {
       tagName: 'link',
@@ -116,7 +116,7 @@ const config: Config = {
       attributes: {
         rel: 'preconnect',
         href: 'https://www.desmos.com',
-              },
+      },
     },
     {
       tagName: 'link',
@@ -130,7 +130,7 @@ const config: Config = {
       attributes: {
         rel: 'preconnect',
         href: 'https://www.geogebra.org',
-              },
+      },
     },
     {
       tagName: 'link',
@@ -144,7 +144,7 @@ const config: Config = {
       attributes: {
         rel: 'preconnect',
         href: 'https://phet.colorado.edu',
-              },
+      },
     },
     {
       tagName: 'link',
@@ -158,7 +158,7 @@ const config: Config = {
       attributes: {
         rel: 'preconnect',
         href: 'https://browser.sentry-cdn.com',
-              },
+      },
     },
     {
       tagName: 'link',
