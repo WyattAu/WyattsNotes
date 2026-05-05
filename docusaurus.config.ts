@@ -77,7 +77,7 @@ const config: Config = {
   ...prjMetadataConfig,
   ...compilationConfig,
 
-  clientModules: [require.resolve('./src/theme/KatexLoader')],
+  clientModules: [require.resolve('./src/theme/KatexLoader/index')],
 
   onBrokenLinks: 'throw',
 
