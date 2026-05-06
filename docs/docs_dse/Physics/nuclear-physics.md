@@ -223,7 +223,8 @@ Every nuclear decay must satisfy:
 5. **Conservation of momentum**: linear momentum is conserved
 6. **Conservation of lepton number**: total lepton number is conserved
 
-:::warning A common mistake is forgetting to include the neutrino or antineutrino in beta decay
+:::warning
+warning
 equations. While DSE exams sometimes omit them for simplicity, always check whether the question
 requires them. Also, ensure $A$ and $Z$ balance on both sides of every decay equation.
 :::
@@ -346,7 +347,8 @@ The half-life is then:
 
 $$t_{1/2} = \frac{\ln 2}{\lvert\mathrm{slope}\rvert}$$
 
-:::info In DSE exams, half-life determination from graphs is a frequent question. For a log-linear
+:::info
+info
 plot, remember the slope is negative: $\lvert\mathrm{slope}\rvert = \lambda$. Always check the axes carefully
 -- count rate is proportional to activity but is lower due to detector efficiency.
 :::
@@ -363,7 +365,8 @@ The activity is then:
 
 $$A = \lambda N = \frac{\lambda m N_A}{M} = \frac{m N_A \ln 2}{M t_{1/2}}$$
 
-:::warning Do not confuse activity (Bq, decays per second) with count rate (counts per second
+:::warning
+warning
 detected by a particular instrument). The count rate is always less than or equal to the activity
 because:
 
@@ -974,7 +977,8 @@ Given a decay equation, identify the missing particle. Check:
 - Account for background radiation by subtracting the background count rate
 - Understand sources of error: statistical fluctuations, dead time, geometry, absorption
 
-:::info In DSE Paper 1B, nuclear physics typically appears in structured questions requiring
+:::info
+info
 calculations and explanations. In Paper 2, it appears as multiple-choice questions testing concepts,
 definitions, and quick calculations. Practise balancing decay equations and calculating binding
 energy -- these are high-frequency topics.
@@ -1132,7 +1136,8 @@ $$t = \frac{2.303}{1.209 \times 10^{-4}} = 19,040 \mathrm{ years}$$
 
 The ancient wood is approximately $19,000$ years old.
 
-:::info An alternative approach: since $\frac{A}{A_0} = 0.1 = \frac{1}{10}$, we need to find how
+:::info
+info
 many half-lives correspond to this fraction. $2^n = 10$ gives $n = \frac{\ln 10}{\ln 2} = 3.32$
 half-lives. So $t = 3.32 \times 5730 = 19,024$ years. Both methods give the same result.
 :::
@@ -1340,7 +1345,8 @@ $$\Delta m = Z \cdot m(\prescript{1}{}{1}\mathrm{H}) + N \cdot m_n - m(\prescrip
 
 Where $m(\prescript{1}{}{1}\mathrm{H})$ is the atomic mass of hydrogen (proton + electron).
 
-:::warning In DSE exams, always read the question carefully to determine whether nuclear masses or
+:::warning
+warning
 atomic masses are provided. Mixing the two conventions will lead to incorrect results. When in
 doubt, use atomic masses (the more common convention in exam questions) and note that the electron
 masses approximately cancel.

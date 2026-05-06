@@ -216,7 +216,8 @@ For discharging: $\frac{Q}{Q_0} = e^{-1} = 0.368$, so **36.8%** remains (63.2% i
 limits the charging current, and a large capacitance requires more charge — both increase the time
 needed. After $5\tau$, the capacitor is effectively fully charged or discharged.
 
-:::tip Exam Technique When asked to find the time constant from a graph: for charging, find the time
+:::tip
+tip
 at which the curve reaches 63.2% of its final value. For discharging, find the time at which the
 curve drops to 36.8% of its initial value. Alternatively, find the time at which the tangent at
 $t = 0$ intersects the final value line.
@@ -436,7 +437,8 @@ redistribution, a transient current flows through the connecting wires. The resi
 electromagnetic radiation. The "missing" energy is accounted for by Joule heating and radiative
 losses.
 
-:::warning Common Pitfall Energy is NOT conserved in charge-sharing problems. Charge is conserved,
+:::warning
+warning
 but the system loses energy to the surroundings. Never assume $E_i = E_f$ when solving
 charge-sharing problems.
 :::

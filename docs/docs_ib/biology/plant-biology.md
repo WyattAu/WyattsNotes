@@ -716,3 +716,307 @@ resulting zygote and endosperm after fertilisation.
 - **Human physiology -- gas exchange** --> Review [./human-physiology](./human-physiology)
 - **Ecosystems and energy flow** --> Review [./ecology](./ecology)
 
+---
+
+## 5. Translocation in Detail (Extended)
+
+### Evidence for the Pressure Flow Hypothesis
+
+**Aphid stylet technique**: aphids feed by inserting their stylet (mouthpart) into a sieve tube. When the
+stylet is severed, phloem sap continues to exude, demonstrating positive pressure inside the sieve
+tube. Analysis of the sap shows high sugar concentration ($10$--$30\%$ sucrose by mass), consistent with
+active loading at the source.
+
+**Radioactive tracer experiments**: $^{14}\mathrm{C}$-labelled $\mathrm{CO}_2$ is supplied to a source leaf.
+The label appears in the phloem within minutes and is detected in sink tissues (roots, growing tips)
+within hours. This confirms bidirectional transport.
+
+**Ringing experiments**: removing a ring of bark (including phloem) from a tree trunk causes sugar
+accumulation above the ring (swelling) and stunted growth below it, confirming that phloem is
+responsible for sugar transport.
+
+### Loading Mechanism at the Source
+
+Sucrose is actively loaded into companion cells via **sucrose-proton symport**: the companion cell
+uses a $\mathrm{H}^+$-ATPase to pump $\mathrm{H}^+$ into the apoplast (cell wall space), creating a
+proton gradient. Sucrose enters the companion cell via a sucrose-$\mathrm{H}^+$ co-transporter (SUT1 or
+SUT2), moving against its concentration gradient using the energy of the proton gradient.
+
+Sucrose then passes to the sieve tube element through **plasmodesmata**.
+
+### Unloading at the Sink
+
+Sucrose is unloaded from the sieve tube by:
+- **Simple diffusion** (when sink sucrose concentration is low).
+- **Active transport** (into growing storage tissues).
+- **Apoplastic pathway**: sucrose exits the sieve tube and is taken up by sink cells.
+
+---
+
+## 6. Mineral Ion Uptake
+
+### Mechanisms of Ion Uptake
+
+Roots absorb mineral ions ($\mathrm{NO}_3^-$, $\mathrm{NH}_4^+$, $\mathrm{K}^+$,
+$\mathrm{Ca}^{2+}$, $\mathrm{Mg}^{2+}$, $\mathrm{PO}_4^{3-}$, $\mathrm{SO}_4^{2-}$) from the
+soil solution.
+
+**Active transport**: most mineral ions are absorbed against their concentration gradient by:
+- **Proton pumps** ($\mathrm{H}^+$-ATPases) in the root cell membrane pump $\mathrm{H}^+$ into the
+  soil, creating an electrochemical gradient (negative charge inside the cell; proton gradient).
+- **Ion channels and carriers** use this gradient for secondary active transport (e.g.,
+  $\mathrm{NO}_3^-$-$\mathrm{H}^+$ symport; $\mathrm{K}^+$ channels).
+
+**Mycorrhizae**: symbiotic associations between plant roots and fungi that greatly increase the
+absorptive surface area. The fungal hyphae extend into the soil beyond the root's depletion zone,
+  accessing nutrients (especially phosphorus) that roots alone cannot reach. The fungus receives organic
+  carbon (sugars) from the plant in return.
+
+---
+
+## 7. Plant Hormones (Extended)
+
+### Auxin (IAA) -- Detailed Mechanism
+
+**Biosynthesis**: tryptophan $\to$ (tryptophan aminotransferase) $\to$ indole-3-pyruvic acid $\to$
+(indole-3-acetic acid synthase) $\to$ IAA.
+
+**Acid growth hypothesis:**
+
+1. Auxin activates proton pumps ($\mathrm{H}^+$-ATPases) in the cell wall, pumping $\mathrm{H}^+$ from
+   the cytoplasm into the cell wall space.
+2. The lowered pH ($\approx 5.0$) activates **expansins** (wall-loosening proteins) that break
+   cross-links between cellulose microfibrils.
+3. The cell wall becomes more flexible and extends (elongates) as turgor pressure drives expansion.
+
+### Gibberellins -- Extended
+
+**Gibberellin biosynthesis pathway** (in plants and fungi):
+
+GGDP (geranylgeranyl diphosphate) $\xrightarrow{\text{ent-kaurene synthase}}$ ent-kaurene $\xrightarrow{\text{ent-kaurene oxidase}}$
+$\to$ GA$_{12} \to \cdots \to$ GA$_1$ (the bioactive form).
+
+**Gibberellin in stem elongation:**
+- Stimulates cell division and elongation in the subapical region of shoots.
+- Dwarf (mutant) varieties of pea and maize have defective gibberellin biosynthesis (e.g., Mendel's
+  tall/dwarf pea experiment is explained by a mutation affecting GA synthesis).
+- Application of GA to dwarf varieties restores normal height.
+
+**Gibberellin in seed germination:**
+- Embryo releases gibberellin upon imbibition.
+- GA diffuses to the aleurone layer, where it binds to a receptor and activates gene expression.
+- The aleurone cells synthesise and secrete $\alpha$-amylase, which hydrolyses starch in the endosperm
+  to maltose for the growing embryo.
+
+### Cytokinin: Cell Division
+
+- Produced primarily in root tips.
+- Promotes cytokinesis (cell plate formation via activation of the phragmoplast).
+- Delays leaf senescence (counteracts the effect of ethylene and ABA).
+- Promotes shoot growth when applied in combination with auxin (cytokinin:auxin ratio determines
+  shoot vs root differentiation in callus tissue culture --- high cytokinin favours shoot formation,
+  high auxin favours root formation).
+
+### Ethylene: The Gaseous Hormone
+
+- Produced by ripening fruits, senescing tissues, and stressed plants.
+- **Fruit ripening**: ethylene stimulates the conversion of starch to sugars, degradation of
+  chlorophyll (loss of green colour), softening of cell walls (pectin degradation), and production
+  of volatile aroma compounds.
+- **Leaf abscission**: ethylene promotes the formation of the abscission zone at the base of the
+  petiole. Cellulase and pectinase enzymes break down cell walls in this zone, causing leaf fall.
+- **Triple response in seedlings**: ethylene causes stem thickening (reduces elongation), horizontal
+  growth, and formation of an apical hook (protects the growing tip as it pushes through soil).
+- **Commercial application**: "one rotten apple spoils the bunch" --- ethylene released by a ripening
+  fruit accelerates ripening of nearby fruits. Fruit can be delayed by storing in low-temperature,
+  low-ethylene environments or accelerated by exposure to exogenous ethylene.
+
+### Abscisic Acid (ABA) -- Extended
+
+**Role in stomatal closure:**
+
+1. Under water stress, roots synthesise ABA and transport it to leaves via the xylem.
+2. ABA binds to receptors on guard cell membranes.
+3. ABA activates **anion channels** (especially SLAC1, slow-type anion channel) and inhibits
+   **$\mathrm{K}^+$ inward channels**.
+4. $\mathrm{Cl}^-$ and malate$^{2-}$ exit the guard cell, followed by $\mathrm{K}^+$.
+5. The loss of solutes lowers the guard cell water potential; water exits by osmosis.
+6. Guard cells become flaccid, and the stomatal pore closes.
+
+**Seed dormancy**: high ABA levels maintain dormancy by inhibiting gibberellin synthesis.
+  Dormancy is broken when ABA levels decline (e.g., through cold stratification or leaching by rain).
+
+---
+
+## 8. Adaptations of Plants to Extreme Environments
+
+### Xerophytes (Dry Environments)
+
+| Adaptation                          | Function                                                                                     |
+| ---------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Thick cuticle**                   | Reduces water loss through the epidermis.                                                  |
+| **Sunken stomata**                 | Stomata in pits, reducing transpiration by creating a humid microenvironment.                 |
+| **Rolled leaves**                   | Reduced surface area exposed to air; inner surface is protected.                            |
+| **Hairy/trichomes**               | Trap a layer of still humid air, reducing the transpiration gradient.                     |
+| **CAM photosynthesis**              | Stomata open at night (reducing transpiration); store $\mathrm{CO}_2$ as malic acid.     |
+| **Deep root systems**               | Access water deep underground.                                                          |
+| **Succulent water storage tissues**   | Store water in vacuoles; available during drought.                                       |
+| **Reduced leaf area**               | Fewer leaves = less surface area for transpiration.                                            |
+
+### Hydrophytes (Aquatic Environments)
+
+| Adaptation                          | Function                                                                                     |
+| ---------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Aerenchyma**                     | Air-filled tissue providing buoyancy and gas transport to submerged roots.                    |
+| **Stomata on upper leaf surface**     | Access to air; not submerged.                                                              |
+| **Thin/no cuticle**                 | No need for water conservation; maximises gas exchange.                                    |
+| **Large air spaces in spongy mesophyll** | Maximises buoyancy and gas exchange.                                                    |
+| **Flexible petioles**                | Leaves float on water surface.                                                             |
+| **Reduced vascular tissue**           | Less support needed; water is abundant.                                                     |
+
+---
+
+## 9. Photoperiodism in Detail
+
+### Long-Day Plants (LDP)
+
+Flower when the **night length is shorter than a critical duration** (i.e., days are long, nights are short).
+
+Examples: spinach, lettuce, radish, wheat, clover.
+
+**Mechanism:**
+- During the day, $\mathrm{P}_{\mathrm{fr}}$ accumulates (red light converts
+  $\mathrm{P}_{\mathrm{r}}$ to $\mathrm{P}_{\mathrm{fr}}$).
+- During a short night, not enough $\mathrm{P}_{\mathrm{fr}}$ reverts to
+  $\mathrm{P}_{\mathrm{r}}$ to drop below the critical level.
+- High $\mathrm{P}_{\mathrm{fr}}$ promotes the synthesis of a flowering hormone
+  (florigen).
+
+### Short-Day Plants (SDP)
+
+Flower when the **night length exceeds a critical duration** (i.e., days are short, nights are long).
+
+Examples: chrysanthemum, poinsettia, soybean, strawberry.
+
+**Mechanism:**
+- During a long night, $\mathrm{P}_{\mathrm{fr}}$ reverts to $\mathrm{P}_{\mathrm{r}}$
+  extensively.
+- Low $\mathrm{P}_{\mathrm{fr}}$ removes the inhibition of the flowering gene and
+  promotes florigen synthesis.
+
+### Phytochrome Reversibility Experiments
+
+**Classic experiment (Borthwick and Hendricks, 1952):**
+
+- Short-day plants (chrysanthemums) exposed to a long night with a brief flash of **red light**
+  ($660\;\mathrm{nm}$) at the midpoint: flowering is **inhibited** (red light creates
+  $\mathrm{P}_{\mathrm{fr}}$, shortening the perceived night length).
+- If the red flash is immediately followed by a **far-red flash** ($730\;\mathrm{nm}$):
+  $\mathrm{P}_{\mathrm{fr}}$ is converted back to $\mathrm{P}_{\mathrm{r}}$, and flowering
+  **proceeds** (the far-red flash "cancels" the red flash).
+
+This demonstrated that the **last light exposure** determines the phytochrome state.
+
+---
+
+## 10. Crop Yield and Plant Biotechnology
+
+### Increasing Crop Yield
+
+**Genetic approaches:**
+- **Selective breeding**: choosing parents with desirable traits (yield, disease resistance) and
+  crossing them over many generations.
+- **Green Revolution varieties**: dwarf wheat and rice varieties (e.g., IR8 rice, Norin 10 wheat)
+  with short stems that resist lodging (falling over in wind); combined with high fertiliser
+  application, these varieties dramatically increased yields in the 1960s--1970s.
+- **GM crops**: _Bt_ cotton (insect resistance), Golden Rice ($\beta$-carotene enrichment), herbicide-tolerant
+  soybeans (Roundup Ready).
+
+**Agricultural approaches:**
+- Fertiliser application (providing N, P, K).
+- Irrigation.
+- Pest control (integrated pest management).
+- Crop rotation to maintain soil fertility and reduce pest buildup.
+- Greenhouse/glasshouse cultivation for climate control and extended growing seasons.
+
+### Photoperiodism in Agriculture
+
+- **Photoperiod manipulation**: controlling day length in greenhouses to induce or delay flowering
+  (e.g., chrysanthemums are short-day plants; in commercial production, black cloth is used to
+  artificially extend the night, inducing flowering for the holiday market).
+- **Day-neutral plants**: tomato, rice, maize (flower regardless of day length; useful for cultivation
+  across latitudes).
+
+---
+
+## Exam-Style Problems (Extended)
+
+<details>
+<summary>Problem 9: Extended Response -- Water Transport and Cohesion-Tension</summary>
+
+Describe the cohesion-tension theory of water transport in xylem, explaining how transpiration pull,
+cohesion, and adhesion contribute to the upward movement of water. Use Fick's law to explain why the
+rate of transpiration increases with wind speed. Explain why very tall trees (e.g., coast redwoods, $>100\;\mathrm{m}$)
+pose a challenge to the cohesion-tension theory and discuss how root pressure and capillary
+action contribute. Calculate whether capillary action alone can account for water transport in a
+$100\;\mathrm{m}$ tall tree given a xylem vessel radius of $25\;\mathrm{\mu m}$, surface tension
+$0.073\;\mathrm{N/m}$, and contact angle $0^\circ$.
+
+</details>
+
+<details>
+<summary>Problem 10: Data Analysis -- Plant Hormone Experiment</summary>
+
+A researcher treats coleoptile sections with different concentrations of IAA and measures the
+increase in length after 24 hours in darkness:
+
+| IAA concentration ($\mathrm{mg/L}$) | Length increase (mm) |
+| ----------------------------------- | ------------------- |
+| 0 (control)                           | 2                   |
+| 0.01                                | 5                   |
+| 0.1                                 | 12                  |
+| 1.0                                 | 18                  |
+| 10.0                                | 20                  |
+| 100.0                               | 19                  |
+
+(a) Plot the data and describe the relationship. (b) Explain the biological basis for the plateau at
+high IAA concentrations. (c) If the same experiment is repeated in the presence of an auxin
+transport inhibitor, predict the result and explain why.
+
+</details>
+
+<details>
+<summary>Problem 11: Extended Response -- Phloem Translocation</summary>
+
+Compare and contrast xylem and phloem transport with respect to: (a) the substance transported, (b) the
+direction of transport, (c) the driving force, (d) the living vs dead status of conducting cells,
+and (e) the role of ATP. Describe the pressure flow hypothesis for phloem translocation,
+explaining how active loading at the source and unloading at the sink create the pressure gradient.
+Discuss two pieces of experimental evidence that support this hypothesis.
+
+</details>
+
+<details>
+<summary>Problem 12: Quantitative -- Transpiration Rate Calculation</summary>
+
+A potometer experiment measures water uptake by a leafy shoot. The following data are collected
+at $25^\circ\mathrm{C}$ and $50\%$ humidity:
+
+| Wind speed (m/s) | Water uptake (mL/h) |
+| ----------------- | ----------------- |
+| 0                 | 8.0              |
+| 1.0               | 12.0             |
+| 2.0               | 16.0             |
+| 3.0               | 19.0             |
+| 4.0               | 21.0             |
+| 5.0               | 22.0             |
+| 6.0               | 22.5             |
+
+The total leaf area is $120\;\mathrm{cm}^2$. (a) Calculate the transpiration rate at each wind
+speed in $\mathrm{mmol\;H_2O/m^2/s}$. (molar mass of water $= 18\;\mathrm{g/mol}$; density
+$= 1\;\mathrm{g/mL}$.) (b) Explain why the relationship between wind speed and transpiration rate
+is not linear at higher speeds (plateau). (c) Predict how the results would differ at
+$35^\circ\mathrm{C}$ and $70\%$ humidity.
+
+</details>
+

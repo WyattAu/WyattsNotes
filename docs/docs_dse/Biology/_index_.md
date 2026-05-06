@@ -16,16 +16,23 @@ Complete revision notes for HKDSE Biology, covering the full syllabus with worke
 ## Human Biology
 
 - **[Human Physiology](./human-physiology)** -- Nutrition, digestive system, circulatory system, respiratory system, excretory system, and nervous system
+- **[Nervous System](./nervous-system)** -- Neuron structure, resting and action potentials, synaptic transmission, reflex arcs, sense organs, brain structure, autonomic nervous system, and nervous control of heart rate and breathing
 - **[Human Reproduction and Homeostasis](./dse-biology-human-reproduction-and-homeostasis)** -- Male and female reproductive systems, menstrual cycle, homeostatic mechanisms, and feedback loops
+- **[Homeostasis](./homeostasis)** -- Negative and positive feedback, blood glucose regulation, temperature regulation, osmoregulation, kidney function, ADH, blood pH regulation, and diabetes mellitus
 
 ## Genetics
 
 - **[Genetics](./dse-biology-genetics)** -- Mendelian inheritance, monohybrid and dihybrid crosses, sex-linked inheritance, genetic crosses, and molecular genetics
 
+## Immunology
+
+- **[Immunology](./immunology)** -- Pathogens, innate immunity, adaptive immunity, antibodies, vaccination, memory cells, autoimmune diseases, allergies, and HIV/AIDS
+
 ## Evolution and Ecology
 
 - **[Evolution and Ecology](./evolution-and-ecology)** -- Natural selection, evidence for evolution, population ecology, nutrient cycles, and human impact on ecosystems
-- **[Biodiversity and Conservation](./dse-biology-biodiversity-and-conservation)** -- Classification systems, five-kingdom system, binomial nomenclature, species richness, and conservation strategies
+- **[Evolution](./evolution)** -- Population genetics, Hardy-Weinberg principle, genetic drift, speciation, adaptation, antibiotic resistance, classification systems, and phylogenetic trees
+- **[Biodiversity and Conservation](./dse-biology-biodiversity-conservation)** -- Classification systems, five-kingdom system, binomial nomenclature, species richness, and conservation strategies
 
 ## Plant Biology
 

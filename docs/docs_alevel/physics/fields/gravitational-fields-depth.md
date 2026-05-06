@@ -100,7 +100,8 @@ every mass element pulling the test mass in one direction, there is a compensati
 opposite side. The nearer element pulls more strongly (shorter distance) but is subtended by a smaller
 solid angle, and these two effects cancel exactly. $\square$
 
-:::warning Common Pitfall The shell theorem applies only to spherically symmetric mass distributions.
+:::warning
+warning
 Earth is approximately but not perfectly spherical (equatorial bulge), so $g$ varies slightly with
 latitude even at sea level.
 :::
@@ -333,7 +334,8 @@ $$v = \sqrt{\frac{GM}{r}} = \frac{2\pi r}{T} = 3070\ \mathrm{m\,s}^{-1}$$
    pattern) as seen from the ground.
 3. **Prograde rotation:** The satellite must orbit west to east, matching Earth's rotation.
 
-:::warning Common Pitfall A geosynchronous orbit has period 24 hours but may be inclined or elliptical.
+:::warning
+warning
 Geostationary is a stricter condition: geosynchronous AND equatorial AND circular. GPS satellites are
 neither — they use medium Earth orbits at 20,200 km altitude with 12-hour periods.
 :::

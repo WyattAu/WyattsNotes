@@ -216,7 +216,8 @@ $$\alpha_{\mathrm{actual}} = P(X \leq 5) + P(X \geq 15) = 2(0.0207) = 0.0414$$
 
 This is approximately 4.14%, which is the closest we can get to 5% with a discrete distribution.
 
-:::warning Common Pitfall
+:::warning
+warning
 For discrete distributions, the actual significance level may differ from the nominal level. The
 critical region is chosen so that $P(\mathrm{critical\ region} \mid H_0)$ does not exceed $\alpha$,
 and is as close as possible to $\alpha$.

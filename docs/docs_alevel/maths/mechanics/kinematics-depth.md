@@ -235,7 +235,8 @@ $$x = 20.48 \times 3.025 \approx 61.95\;\mathrm{m}$$
 
 The ball travels approximately $62.0\;\mathrm{m}$ horizontally.
 
-:::warning Common Pitfall
+:::warning
+warning
 When a projectile is launched from a height above the landing level, the trajectory is **not**
 symmetric. The time of ascent is less than the time of descent, and the landing angle is steeper
 than the launch angle.
@@ -354,7 +355,8 @@ $$\frac{1}{v} = 0.1t + 0.1 = 0.1(t + 1)$$
 
 $$v = \frac{10}{t + 1}\;\mathrm{m\,s^{-1}}$$
 
-:::warning Common Pitfall
+:::warning
+warning
 For variable acceleration problems, **always include the constant of integration** and use the
 initial conditions to find it. Also check whether the particle changes direction by finding when
 $v = 0$ -- the total distance is not the same as the displacement if there is a change of

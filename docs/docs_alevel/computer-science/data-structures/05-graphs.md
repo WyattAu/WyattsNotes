@@ -244,7 +244,8 @@ queue before $u$ — contradiction. Therefore $\mathrm{dist}[u] = d(s, u)$. $\sq
 **Complexity:** With a binary heap: $O((V + E) \log V)$. Each vertex is extracted once ($O(\log V)$
 each), and each edge causes at most one decrease-key ($O(\log V)$ each).
 
-:::warning Pitfall Dijkstra's algorithm **does not work** with negative edge weights. Use the
+:::warning
+warning
 Bellman-Ford algorithm instead for graphs that may contain negative weights.
 :::
 

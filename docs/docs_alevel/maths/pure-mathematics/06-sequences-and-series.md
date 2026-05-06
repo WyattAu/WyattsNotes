@@ -825,7 +825,8 @@ Verification:
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-sequences-and-series) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other pure mathematics topics to test synthesis under exam conditions.

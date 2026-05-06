@@ -680,3 +680,267 @@ function. Use the concept of surface-area-to-volume ratio in your explanation.
 - **Osmosis and water potential** --> Review [./plant-biology](./plant-biology)
 - **Evolution and natural selection** --> Review [./ecology](./ecology)
 
+---
+
+## 8. Cell Specialisation and Stem Cells
+
+### Stem Cells
+
+**Definition.** **Stem cells** are undifferentiated cells that have the capacity to self-renew
+(divide to produce more stem cells) and differentiate into specialised cell types.
+
+| Type                     | Source                           | Potency                                  | Examples of differentiation                                 |
+| ------------------------ | -------------------------------- | ---------------------------------------- | ---------------------------------------------------------- |
+| **Totipotent**           | Zygote, early morula (up to 8-cell) | Can form any cell type, including extraembryonic tissues (placenta, yolk sac). | All cell types + embryonic membranes.                     |
+| **Pluripotent**          | Inner cell mass of blastocyst; embryonic stem cells (ESCs) | Can form any cell type of the body (all three germ layers), but NOT extraembryonic tissues. | Neurones, muscle, blood, liver, pancreatic cells, etc.      |
+| **Multipotent**          | Adult tissues (bone marrow, skin, gut) | Can form multiple but limited cell types within a given lineage. | Haematopoietic stem cells $\to$ all blood cell types; mesenchymal stem cells $\to$ bone, cartilage, fat. |
+| **Unipotent**            | Specific adult tissues           | Can form only one specialised cell type. | Spermatogonia $\to$ sperm; satellite cells $\to$ skeletal muscle. |
+
+### Therapeutic Potential of Stem Cells
+
+- **Repair of damaged tissues**: stem cell transplants for leukaemia (bone marrow transplants),
+  spinal cord injury, Parkinson's disease (dopaminergic neurones), heart disease (cardiomyocytes).
+- **Drug testing**: differentiated cells derived from stem cells can be used for pharmacological
+  screening, reducing the need for animal testing.
+- **Disease modelling**: induced pluripotent stem cells (iPSCs) from patients with genetic
+  disorders allow researchers to study disease mechanisms in vitro.
+
+### Induced Pluripotent Stem Cells (iPSCs)
+
+iPSCs are adult somatic cells that have been reprogrammed to a pluripotent state by the introduction
+of **transcription factors** (originally Oct4, Sox2, Klf4, c-Myc --- Yamanaka factors, 2006).
+
+**Advantages over embryonic stem cells**: no ethical concerns about embryo destruction; patient-specific
+(matching the donor's genetics, reducing rejection risk).
+
+**Limitations**: incomplete reprogramming (residual epigenetic memory); risk of tumour formation
+(tumorigenicity due to c-Myc oncogene); lower efficiency than ESCs.
+
+### Cell Cycle Regulation
+
+The cell cycle is regulated at **checkpoints** by **cyclins** and **cyclin-dependent kinases (CDKs)**:
+
+| Checkpoint         | Location  | Cyclin-CDK complex     | Function                                                                                   |
+| ----------------- | --------- | ---------------------- | ------------------------------------------------------------------------------------------ |
+| **G1/S checkpoint** | Late G1  | Cyclin D-CDK4/6; Cyclin E-CDK2 | Checks cell size, nutrient availability, DNA damage. If conditions are unfavourable, the cell enters G0 (quiescence). The retinoblastoma protein (Rb) is a key regulator: when hypophosphorylated, Rb binds E2F (transcription factor) and blocks S-phase gene expression; cyclin D-CDK4/6 phosphorylates Rb, releasing E2F. |
+| **G2/M checkpoint** | Late G2  | Cyclin B-CDK1 (CDC2)   | Checks that DNA replication is complete and no DNA damage remains. Activated by phosphorylation by CDK-activating kinase (CAK). |
+| **Spindle assembly checkpoint (M checkpoint)** | Metaphase | Mad2, BubR1 proteins | Ensures all chromosomes are correctly attached to spindle fibres via kinetochores before anaphase begins. Unattached kinetochores generate a "wait" signal that inhibits the anaphase-promoting complex/cyclosome (APC/C). |
+
+### Apoptosis (Programmed Cell Death)
+
+Apoptosis is a tightly regulated process of cell death that eliminates damaged, infected, or unwanted
+cells without triggering inflammation.
+
+**Characteristics:**
+
+- Cell shrinks; chromatin condenses (pyknosis).
+- DNA is fragmented into regular-sized pieces (ladder pattern on gel electrophoresis).
+- The cell breaks into apoptotic bodies, which are phagocytosed by macrophages.
+- Cell membrane remains intact (no release of intracellular contents, no inflammation).
+
+**Mechanism:**
+
+1. **Extrinsic pathway**: death receptors (e.g., Fas/CD95) on the cell surface bind to death ligands
+   (e.g., FasL on cytotoxic T cells), activating caspase-8.
+2. **Intrinsic (mitochondrial) pathway**: cellular stress (DNA damage, oxidative stress) triggers
+   pro-apoptotic Bcl-2 family proteins (Bax, Bak) to permeabilise the mitochondrial outer membrane,
+   releasing cytochrome c. Cytochrome c binds to Apaf-1, forming the **apoptosome**, which activates
+   caspase-9.
+3. **Execution phase**: initiator caspases (8, 9) activate effector caspases (3, 7), which
+   systematically degrade cellular proteins, including PARP and lamins.
+
+**Anti-apoptotic proteins** (Bcl-2, Bcl-xL) inhibit the intrinsic pathway. Overexpression of Bcl-2
+is associated with some cancers (cells fail to undergo apoptosis).
+
+### Cancer and the Cell Cycle
+
+Cancer is a disease of uncontrolled cell division resulting from mutations in genes that regulate
+the cell cycle.
+
+| Gene type          | Normal function               | Mutated in cancer (oncogene / tumour suppressor) |
+| ----------------- | ----------------------------- | -------------------------------------------------- |
+| **Proto-oncogenes** | Promote cell division          | **Oncogenes**: gain-of-function mutations; hyperactive or overexpressed (e.g., ras, HER2/neu, myc). |
+| **Tumour suppressor genes** | Inhibit cell division; promote DNA repair; promote apoptosis | Loss-of-function mutations (e.g., p53, Rb, BRCA1, BRCA2). Both alleles must be mutated (Knudson's two-hit hypothesis). |
+
+**p53 ("guardian of the genome"):**
+
+- Activated by DNA damage (detected by ATM/ATR kinases).
+- Can induce **cell cycle arrest** (via p21, a CDK inhibitor) to allow DNA repair.
+- Can induce **apoptosis** (via Bax, PUMA) if damage is irreparable.
+- Mutated in $\approx 50\%$ of all human cancers, making it the most commonly mutated gene in cancer.
+
+**Metastasis**: the spread of cancer cells from the primary tumour to secondary sites via the
+bloodstream or lymphatic system. Requires: local invasion, intravasation, survival in circulation,
+extravasation, and colonisation of distant tissues.
+
+---
+
+## 9. Prokaryotic Cell Biology (Extended)
+
+### Bacterial Cell Wall Structure
+
+The **peptidoglycan** (murein) layer is a polymer of alternating $N$-acetylglucosamine (NAG) and
+$N$-acetylmuramic acid (NAM) sugars, cross-linked by short peptide bridges (containing
+D-alanine, D-glutamate, and a diaminopimelic acid-lysine cross-link).
+
+**Gram-positive bacteria**: thick peptidoglycan layer ($20$--$80\;\mathrm{nm}$) with teichoic acids
+embedded. Retain crystal violet stain in Gram staining.
+**Gram-negative bacteria**: thin peptidoglycan layer ($2$--$7\;\mathrm{nm}$) with an outer membrane
+containing **lipopolysaccharide (LPS)**. Do not retain crystal violet; appear pink with safranin
+counterstain.
+
+**Antibiotic targets in the cell wall:**
+- **Penicillin**: inhibits transpeptidase (penicillin-binding proteins), preventing peptide cross-linking.
+  Effective against Gram-positive bacteria; Gram-negative bacteria are resistant due to their outer
+  membrane (though some penicillins can penetrate).
+- **Lysozyme**: hydrolyses the $\beta$-1,4-glycosidic bond between NAM and NAG; found in tears,
+  saliva, and egg white.
+
+### Bacterial Growth Curve
+
+When bacteria are inoculated into fresh medium:
+
+| Phase            | Description                                                                                                       |
+| --------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Lag phase**   | No immediate increase in cell number; cells are adapting, synthesising enzymes, and taking up nutrients.              |
+| **Exponential (log) phase** | Cells divide at maximum rate (binary fission); population doubles at a constant rate. $N = N_0 \times 2^n$ |
+| **Stationary phase** | Growth rate = death rate; nutrients are depleted, waste products accumulate, and space is limited.              |
+| **Decline (death) phase** | Death rate exceeds growth rate; cells die from nutrient starvation and toxin accumulation.                 |
+
+**Growth rate**: $\mu = \frac{\ln(N_t / N_0)}{t}$ (specific growth rate, $\mathrm{h}^{-1}$).
+
+**Doubling time**: $t_d = \frac{\ln 2}{\mu} = \frac{0.693}{\mu}$
+
+---
+
+## 10. Advanced Membrane Biology
+
+### Membrane Fluidity
+
+The fluidity of the cell membrane depends on:
+
+- **Fatty acid composition**: more unsaturated (C=C) fatty acids increase fluidity (kinks prevent tight
+  packing); more saturated fatty acids decrease fluidity.
+- **Cholesterol content**: at high temperatures, cholesterol restrains movement (decreases fluidity);
+  at low temperatures, it prevents tight packing (increases fluidity). Acts as a **fluidity buffer**.
+- **Temperature**: higher temperatures increase kinetic energy and fluidity; lower temperatures decrease it.
+
+### Membrane Proteins: Types and Functions
+
+**Integral (transmembrane) proteins:**
+- **Channel proteins**: form hydrophilic pores for specific ions ($\mathrm{Na}^+$, $\mathrm{K}^+$,
+  $\mathrm{Ca}^{2+}$, $\mathrm{Cl}^-$). Can be gated (voltage-gated, ligand-gated, mechanically-gated)
+  or ungated (leak channels).
+- **Carrier proteins (transporters)**: undergo conformational change to shuttle substances across.
+  Include uniporters, symporters (co-transport in same direction), and antiporters (co-transport in
+  opposite direction).
+- **Receptors**: transmembrane proteins that bind signalling molecules (hormones, neurotransmitters)
+  and initiate intracellular signal transduction cascades.
+
+**Peripheral proteins:**
+- Attached to the cytoplasmic or extracellular face via electrostatic interactions with integral
+  proteins or lipid anchors.
+- Include cytoskeletal anchoring proteins (spectrin, ankyrin in erythrocytes) and enzymes
+  (adenylate cyclase, phospholipase C).
+
+### Signal Transduction Across Membranes
+
+Hydrophilic signalling molecules (peptide hormones, neurotransmitters) cannot cross the lipid bilayer
+and must bind to cell-surface receptors:
+
+1. **G-protein coupled receptors (GPCRs)**: the ligand binds to the receptor, causing a conformational
+   change that activates a G-protein (G$\alpha$, G$\beta$, G$\gamma$ subunits). The G$\alpha$ subunit
+   exchanges GDP for GTP and activates downstream effectors (adenylate cyclase $\to$ cAMP; phospholipase
+   C $\to$ IP$_3$ + DAG).
+2. **Receptor tyrosine kinases (RTKs)**: ligand binding causes receptor dimerisation and
+   autophosphorylation of tyrosine residues, creating docking sites for intracellular signalling
+   proteins (e.g., the MAP kinase cascade).
+
+---
+
+## 11. Cell Fractionation and Microscopy Techniques
+
+### Cell Fractionation
+
+The process of breaking open cells and separating organelles by differential centrifugation:
+
+1. **Homogenisation**: cells are broken open in an isotonic, buffered solution (to preserve organelle
+   structure) using a homogeniser or sonication.
+2. **Differential centrifugation**:
+   - Low speed ($1000\;\mathrm{g}$, $10\;\mathrm{min}$): nuclei and unbroken cells pellet.
+   - Medium speed ($10000\;\mathrm{g}$, $20\;\mathrm{min}$): mitochondria, lysosomes, peroxisomes pellet.
+   - High speed ($100000\;\mathrm{g}$, $60\;\mathrm{min}$): ribosomes, microsomes (ER fragments) pellet.
+   - Supernatant: cytosol (soluble proteins and enzymes).
+
+### Microscopy Techniques
+
+| Technique               | Resolution  | Sample preparation              | Information obtained                             |
+| ----------------------- | ----------- | ------------------------------- | ------------------------------------------------ |
+| **Light microscopy**   | $\approx 200\;\mathrm{nm}$ | Staining; live specimens possible | Overall cell structure; limited detail of organelles. |
+| **Electron microscopy (TEM)** | $\approx 0.5\;\mathrm{nm}$ | Fixed, dehydrated, heavy metal staining; thin sections | Ultrastructure of organelles; internal detail. |
+| **Electron microscopy (SEM)** | $\approx 3$--$20\;\mathrm{nm}$ | Fixed, dehydrated, metal-coated; surface view | 3D surface topography of cells and organisms. |
+| **Fluorescence microscopy** | $\approx 200\;\mathrm{nm}$ | Fluorescent dyes or fluorescent proteins (GFP) | Location of specific molecules in living cells. |
+| **Confocal microscopy** | $\approx 200\;\mathrm{nm}$ | Same as fluorescence | Optical sections; 3D reconstruction; reduced blur. |
+| **Cryo-electron microscopy** | $\approx 3\;\mathrm{nm}$ | Flash-frozen, no staining | Near-native state structure of large complexes. |
+
+**Magnification calculation:**
+
+$$\mathrm{Magnification} = \frac{\text{image size}}{\text{actual size}}$$
+
+**Resolution**: the minimum distance between two points that can be distinguished as separate. The
+resolving power of a microscope is limited by the wavelength of the illuminating radiation:
+
+$$d = \frac{0.61\lambda}{n \sin\theta}$$
+
+where $\lambda$ is the wavelength, $n$ is the refractive index of the medium, and $\theta$ is the
+half-angle of the cone of light entering the objective.
+
+---
+
+## Exam-Style Problems (Extended)
+
+<details>
+<summary>Problem 9: Extended Response -- Stem Cells and Ethics</summary>
+
+Compare and contrast embryonic stem cells (ESCs) and induced pluripotent stem cells (iPSCs) with
+regard to: (a) their origin and method of production, (b) their potency, (c) their therapeutic
+potential, and (d) the ethical issues associated with each. Discuss the significance of the Yamanaka
+factors in the development of iPSC technology.
+
+</details>
+
+<details>
+<summary>Problem 10: Data Analysis -- Cell Cycle and Mitotic Index</summary>
+
+A researcher counts the number of cells in each stage of mitosis in a sample of onion root tip cells.
+The results are: interphase = 800, prophase = 60, metaphase = 30, anaphase = 10, telophase = 10.
+Total cells counted = 910. (a) Calculate the mitotic index (percentage of cells undergoing mitosis).
+(b) Estimate the duration of mitosis if the cell cycle takes 20 hours. (c) Explain why the
+majority of cells are in interphase. (d) If colchicine (which disrupts spindle fibre formation) is
+applied to the root tip, predict the effect on the mitotic index and explain why.
+
+</details>
+
+<details>
+<summary>Problem 11: Extended Response -- Cancer Biology</summary>
+
+BRCA1 is a tumour suppressor gene involved in DNA repair. Inherited mutations in BRCA1 increase the
+risk of breast and ovarian cancer. (a) Explain the normal function of BRCA1 in the cell cycle. (b)
+Using Knudson's two-hit hypothesis, explain why individuals with one inherited BRCA1 mutation have
+a higher cancer risk than the general population. (c) Explain why a double mastectomy reduces cancer
+risk in BRCA1 carriers. (d) Discuss the ethical considerations of genetic testing for BRCA1 mutations.
+
+</details>
+
+<details>
+<summary>Problem 12: Quantitative -- Surface Area and Diffusion</summary>
+
+A spherical human egg cell has a diameter of $120\;\mathrm{\mu m}$. (a) Calculate its surface area
+and volume. (b) After fertilisation, the zygote undergoes 6 rounds of cleavage (mitosis without
+growth) to form a morula of $64$ cells. Assuming the morula is roughly spherical with the same
+total volume as the original zygote, calculate the surface-area-to-volume ratio of each cell in
+the morula (assuming equal cell sizes). (c) Explain the biological significance of the change in
+SA:V ratio during early embryonic development.
+
+</details>
+

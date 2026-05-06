@@ -68,7 +68,8 @@ $$R - mg = ma$$
 
 (c) Decelerating upward means $a = -3$: $R = 70(9.8 - 3) = 70 \times 6.8 = 476\;\mathrm{N}$
 
-:::warning Common Pitfall
+:::warning
+warning
 The normal reaction is **not always equal to $mg$**. It equals $mg$ only when there is no vertical
 acceleration. In an accelerating lift, on an inclined plane, or in circular motion, $R$ differs
 from $mg$.
@@ -346,7 +347,8 @@ $$2v_1 + 3(v_1 + 5) = 0 \implies 5v_1 = -15 \implies v_1 = -3\;\mathrm{m\,s^{-1}
 
 $$v_2 = -3 + 5 = 2\;\mathrm{m\,s^{-1}}$$
 
-:::warning Common Pitfall
+:::warning
+warning
 The restitution equation uses **relative velocities with the correct signs**. The speed of approach
 is $|u_1 - u_2|$ and the speed of separation is $|v_2 - v_1|$, but the signs in the formula must
 be consistent with your chosen positive direction.

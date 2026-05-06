@@ -725,3 +725,263 @@ $3.5\;\mathrm{J/(g \cdot ^\circ C)}$), calculate: (a) the mass of water evaporat
 - **Plant biochemistry and photosynthesis** --> Review [./plant-biology](./plant-biology)
 - **Evolution and molecular evidence** --> Review [./ecology](./ecology)
 
+---
+
+## 10. Water Properties in Biological Systems (Extended)
+
+### Water as a Temperature Buffer
+
+The high specific heat capacity of water ($4.18\;\mathrm{J\;g^{-1}\;^\circ C^{-1}}$) is due to
+hydrogen bonding: energy input must overcome hydrogen bonds before the kinetic energy (and thus
+temperature) of water molecules can increase.
+
+**Biological significance:**
+
+- Aquatic environments have relatively stable temperatures (oceans vary by only a few degrees
+  annually), providing a stable habitat for marine organisms.
+- Organisms with high water content (most organisms) resist rapid temperature changes, buffering
+  against thermal stress.
+- Evaporative cooling (sweating in mammals, panting in dogs, transpiration in plants) dissipates
+  large amounts of heat due to water's high latent heat of vaporisation ($2260\;\mathrm{J/g}$).
+
+### Water as a Solvent
+
+Water's polarity makes it an excellent solvent for ionic compounds (e.g., $\mathrm{NaCl}$,
+$\mathrm{KCl}$) and polar molecules (sugars, amino acids, many proteins). This enables:
+
+- Metabolic reactions in the cytoplasm (reactants dissolved in aqueous solution).
+- Transport of dissolved substances in blood (glucose, amino acids, urea, hormones, ions).
+- Nutrient uptake from soil by root hairs (mineral ions dissolved in soil water).
+
+**Non-polar molecules** (lipids, steroid hormones, $\mathrm{O}_2$, $\mathrm{CO}_2$) are poorly
+soluble in water and require transport proteins or carriers (e.g., lipoproteins for cholesterol).
+
+### Water Density and Ice Formation
+
+Water is one of the few substances that is **less dense as a solid than as a liquid**. This is
+because hydrogen bonds in ice form a regular hexagonal lattice with more space between molecules
+than in liquid water.
+
+**Significance:** ice floats on water, insulating the liquid below and allowing aquatic organisms to
+survive beneath frozen surfaces in winter. If ice sank, lakes and oceans would freeze from the
+bottom up, killing most aquatic life.
+
+### Osmotic Quantitative Problems
+
+**Osmotic pressure** ($\Pi$) can be calculated using the van't Hoff equation:
+
+$$\Pi = iCRT$$
+
+where $i$ is the van't Hoff factor (number of particles per formula unit), $C$ is molar concentration,
+$R$ is the gas constant ($0.0831\;\mathrm{L\;bar\;K^{-1}\;mol^{-1}}$), and $T$ is temperature in Kelvin.
+
+For $\mathrm{NaCl}$ ($i = 2$, dissociates into $\mathrm{Na}^+$ and $\mathrm{Cl}^-$):
+$\Pi = 2 \times C \times 0.0831 \times T$
+
+---
+
+## 11. Lipids in Detail (Extended)
+
+### Phospholipid Diversity
+
+Phospholipids vary in their fatty acid chains and head groups:
+
+**Fatty acid variation:**
+- Chain length ($12$--$24$ carbons): shorter chains increase membrane fluidity.
+- Degree of saturation: more unsaturated bonds = more fluidity (kinks prevent tight packing).
+- Position of double bonds: omega-3 ($n$-3) and omega-6 ($n$-6) fatty acids are essential (must be
+  obtained from the diet).
+
+**Head group variation:**
+
+| Head group       | Phospholipid name         | Function                                              |
+| ---------------- | ------------------------- | ----------------------------------------------------- |
+| Choline          | Phosphatidylcholine (lecithin) | Major component of eukaryotic membranes; surfactant in lungs. |
+| Ethanolamine     | Phosphatidylethanolamine  | Abundant in bacterial membranes.                     |
+| Serine           | Phosphatidylserine        | Normally on the inner leaflet; externalised during apoptosis (eat-me signal). |
+| Inositol         | Phosphatidylinositol       | Precursor for IP$_3$ and DAG second messengers; PI 4,5-bisphosphate (PIP$_2$). |
+| Glycerol         | Phosphatidylglycerol       | Cardiolipin in mitochondrial inner membrane.          |
+
+### Steroid Hormones
+
+Cholesterol is the precursor for all steroid hormones:
+
+| Hormone           | Source           | Function                                              |
+| ----------------- | ---------------- | ----------------------------------------------------- |
+| **Testosterone**  | Testes (Leydig cells) | Male secondary sex characteristics; muscle growth; spermatogenesis. |
+| **Oestradiol**    | Ovaries (follicle) | Female secondary sex characteristics; menstrual cycle regulation; bone density. |
+| **Progesterone**  | Corpus luteum     | Maintains endometrium during pregnancy; suppresses uterine contractions. |
+| **Cortisol**      | Adrenal cortex    | Stress response; raises blood glucose; suppresses immune system. |
+| **Aldosterone**   | Adrenal cortex    | $\mathrm{Na}^+$ reabsorption in kidneys; regulates blood pressure. |
+| **1,25-dihydroxyvitamin D** | Kidney (with PTH) | Calcium absorption in gut; bone mineralisation. |
+
+### Eicosanoids
+
+Derived from **arachidonic acid** (a 20-carbon polyunsaturated fatty acid) by the action of
+**cyclooxygenase (COX)** or **lipoxygenase (LOX)** enzymes:
+
+- **Prostaglandins**: diverse roles in inflammation, pain, fever, blood clotting, and gastric
+  mucosa protection. COX inhibitors (aspirin, ibuprofen) reduce prostaglandin synthesis.
+- **Thromboxanes**: promote platelet aggregation and vasoconstriction (thromboxane A2).
+- **Leukotrienes**: involved in allergic and inflammatory responses (asthma, anaphylaxis).
+
+---
+
+## 12. Protein Chemistry (Extended)
+
+### Amino Acid Properties
+
+Amino acids are classified by the properties of their R groups:
+
+| Category          | Amino acids                                         | Properties                                          |
+| ----------------- | -------------------------------------------------- | --------------------------------------------------- |
+| **Non-polar (hydrophobic)** | Gly, Ala, Val, Leu, Ile, Met, Phe, Trp, Pro | Tend to be buried in protein interior; drive protein folding via hydrophobic effect. |
+| **Polar, uncharged** | Ser, Thr, Cys, Tyr, Asn, Gln            | Form hydrogen bonds with water and other polar groups; often found on protein surface. |
+| **Acidic (negatively charged at pH 7)** | Asp, Glu                        | Carboxylate groups ($-\mathrm{COO}^-$); often involved in salt bridges and catalytic sites. |
+| **Basic (positively charged at pH 7)** | Lys, Arg, His                     | Amino groups ($-\mathrm{NH}_3^+$); bind to DNA/RNA; catalytic in enzyme active sites. |
+
+### Protein Folding and the Hydrophobic Effect
+
+The **hydrophobic effect** is the primary driving force for protein folding: non-polar side chains
+cluster together in the protein interior, minimising contact with water and maximising water-water
+hydrogen bonding (entropy-driven).
+
+**Anfinsen's dogma** (1973): the native (functional) 3D structure of a protein is determined solely
+by its amino acid sequence (primary structure). This was demonstrated by the renaturation of
+ribonuclease A after denaturation with urea and $\beta$-mercaptoethanol.
+
+### Haemoglobin (Extended)
+
+**Structure:** tetramer of $2\alpha$ and $2\beta$ globin chains, each with a haem group
+(protoporphyrin IX ring + $\mathrm{Fe}^{2+}$ ion). Each haem binds one $\mathrm{O}_2$ molecule,
+so each haemoglobin carries up to $4\;\mathrm{O}_2$.
+
+**Cooperative binding (sigmoidal curve):** the binding of the first $\mathrm{O}_2$ molecule
+increases the affinity of the remaining haem groups for subsequent $\mathrm{O}_2$ molecules
+(positive cooperativity). This is described by the **Monod-Wyman-Changeux (MWC) model** or the
+**sequential (KNF) model**.
+
+**Bohr effect:** increased $\mathrm{CO}_2$, decreased pH (increased $\mathrm{H}^+$), and increased
+temperature shift the oxygen dissociation curve to the **right**, reducing $\mathrm{Hb}$ affinity and
+promoting $\mathrm{O}_2$ unloading in metabolically active tissues.
+
+$$\mathrm{H}^+ + \mathrm{HbO}_2 \rightleftharpoons \mathrm{HHb} + \mathrm{O}_2$$
+
+**2,3-BPG (bisphosphoglycerate):** binds to deoxyhaemoglobin (T state), stabilising it and
+reducing $\mathrm{O}_2$ affinity. Concentrations increase at high altitude (adaptive response),
+enhancing $\mathrm{O}_2$ delivery to tissues.
+
+**Fetal haemoglobin (HbF):** has two $\gamma$ chains instead of $\beta$ chains. Higher affinity for
+$\mathrm{O}_2$ than adult HbA (curve shifted left), facilitating $\mathrm{O}_2$ transfer from
+maternal to fetal blood across the placenta.
+
+### Collagen
+
+The most abundant protein in mammals, providing tensile strength to connective tissues (skin, bone,
+tendon, cartilage).
+
+**Structure:** a right-handed triple helix of three polypeptide chains (each called an $\alpha$-chain)
+with a repeating Gly-X-Y sequence (where X is often proline and Y is often hydroxyproline). Glycine
+is required at every third position because its small side chain allows the tight packing of the
+three chains.
+
+**Hydroxyproline and hydroxylysine** are formed by post-translational modification (prolyl and
+lysyl hydroxylases, requiring vitamin C as a cofactor). These modifications stabilise the triple
+helix via hydrogen bonding. Vitamin C deficiency (scurvy) results in defective collagen and weakened
+connective tissues.
+
+---
+
+## 13. Nucleic Acid Chemistry (Extended)
+
+### DNA Supercoiling
+
+In addition to the double helix, DNA in cells is further twisted (**supercoiled**):
+
+- **Negative supercoiling**: the DNA helix is underwound relative to relaxed B-DNA. Facilitates strand
+  separation during transcription and replication.
+- **Positive supercoiling**: the DNA helix is overwound; occurs ahead of the replication fork and
+  transcription bubble, creating torsional strain.
+- **Topoisomerases** relieve supercoiling by cutting one or both strands, allowing rotation, and
+  resealing.
+
+### DNA Denaturation and Renaturation
+
+**Denaturation (melting):** heating DNA separates the two strands by breaking hydrogen bonds.
+The **melting temperature ($T_m$)** is the temperature at which $50\%$ of the DNA is denatured.
+
+$$T_m = 69.3 + 0.41(\%\mathrm{GC}) - 0.72(\% \text{formamide})$$
+
+where $\%\mathrm{GC}$ is the percentage of G+C base pairs. Higher GC content $\to$ higher $T_m$
+(because G-C pairs have 3 hydrogen bonds vs 2 for A-T pairs).
+
+**Renaturation (annealing):** when cooled slowly, complementary strands find each other and
+re-form hydrogen bonds. The rate of renaturation depends on DNA concentration and complexity:
+highly repetitive sequences reanneal fastest; unique sequences slowest.
+
+### RNA Diversity
+
+| RNA type       | Length          | Function                                                              |
+| -------------- | --------------- | --------------------------------------------------------------------- |
+| **mRNA**       | $500$--$10000\;\mathrm{nt}$ | Carries genetic information from DNA to ribosome for translation. |
+| **tRNA**       | $\approx 75\;\mathrm{nt}$ | Transports amino acids to the ribosome; anticodon recognises codon. |
+| **rRNA**       | $120$--$4700\;\mathrm{nt}$ | Structural and catalytic component of ribosomes. |
+| **snRNA**      | $\approx 150\;\mathrm{nt}$ | Components of the spliceosome; involved in pre-mRNA splicing. |
+| **miRNA**      | $\approx 22\;\mathrm{nt}$ | Post-transcriptional regulation; binds to complementary sequences in target mRNA, leading to degradation or translational repression. |
+| **siRNA**      | $\approx 21\;\mathrm{nt}$ | RNA interference (RNAi); triggers degradation of complementary mRNA. |
+
+---
+
+## Exam-Style Problems (Extended)
+
+<details>
+<summary>Problem 9: Extended Response -- Protein Structure and Enzyme Function</summary>
+
+Lysozyme is an enzyme found in tears and egg white that hydrolyses the $\beta$-1,4-glycosidic bonds
+in bacterial peptidoglycan. (a) Explain how the tertiary and quaternary structure of lysozyme
+contributes to its function, referring to the roles of specific amino acid residues in the active
+site. (b) Explain why lysozyme is effective against Gram-positive bacteria but less so against
+Gram-negative bacteria. (c) If the pH of a solution containing lysozyme is raised from 5.0 to 8.0,
+predict the effect on enzyme activity and explain the molecular basis for this change.
+
+</details>
+
+<details>
+<summary>Problem 10: Data Analysis -- Water Potential and Osmosis</summary>
+
+Four potato cylinders of identical dimensions are placed in sucrose solutions of different
+concentrations. After 2 hours, the mass change of each cylinder is measured. The water potential
+of pure water is $0\;\mathrm{kPa}$. The relationship between sucrose concentration and water potential
+is approximately $\psi_s = -iCRT$ where $i = 1$ for sucrose. (a) If a potato cylinder in $0.3\;\mathrm{mol/L}$
+sucrose shows no mass change, estimate the water potential of the potato tissue. (b) Predict the
+direction of water movement in $0.1\;\mathrm{mol/L}$ and $0.5\;\mathrm{mol/L}$ sucrose. (c) Calculate
+the pressure potential of the cells in $0.1\;\mathrm{mol/L}$ sucrose at equilibrium, given that the
+solute potential is $-249\;\mathrm{kPa}$.
+
+</details>
+
+<details>
+<summary>Problem 11: Quantitative -- Haemoglobin and Oxygen Transport</summary>
+
+At sea level, alveolar $\mathrm{pO}_2 = 13.3\;\mathrm{kPa}$ and venous $\mathrm{pO}_2 = 5.3\;\mathrm{kPa}$.
+Using a standard oxygen dissociation curve: (a) estimate the percentage saturation of haemoglobin
+in arterial blood and venous blood. (b) Calculate the amount of $\mathrm{O}_2$ unloaded per
+$100\;\mathrm{mL}$ of blood, assuming each gram of haemoglobin can carry $1.34\;\mathrm{mL}$ of
+$\mathrm{O}_2$ and blood contains $150\;\mathrm{g/L}$ of haemoglobin. (c) At high altitude
+($5000\;\mathrm{m}$), alveolar $\mathrm{pO}_2$ drops to $8.0\;\mathrm{kPa}$. Predict the effect on
+oxygen loading and explain the compensatory mechanisms (polycythaemia, increased 2,3-BPG).
+
+</details>
+
+<details>
+<summary>Problem 12: Extended Response -- Lipids and Health</summary>
+
+A patient has a blood cholesterol level of $280\;\mathrm{mg/dL}$ (desirable: $< 200\;\mathrm{mg/dL}$).
+LDL cholesterol is $190\;\mathrm{mg/dL}$ and HDL cholesterol is $35\;\mathrm{mg/dL}$. (a) Explain
+the roles of LDL and HDL in cholesterol transport. (b) Calculate the total cholesterol:HDL ratio
+and assess the cardiovascular risk. (c) Explain the mechanism of action of statins in lowering blood
+cholesterol. (d) Discuss why saturated fat intake increases LDL cholesterol and why omega-3 fatty
+acids may be beneficial.
+
+</details>
+

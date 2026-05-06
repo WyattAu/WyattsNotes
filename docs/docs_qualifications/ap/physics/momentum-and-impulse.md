@@ -691,7 +691,8 @@ $$T = 2 \times \frac{321.6}{2} - 2 \times 9.8 = 321.6 - 19.6 = 302 \mathrm{ N}$$
 
 The tension is positive, so the block does indeed complete full vertical circles.
 
-:::info This is a classic ballistic pendulum problem with a twist: the bullet has enough energy to
+:::info
+info
 make the block complete full vertical circles. In most textbook versions, the block only swings to a
 modest height.
 :::

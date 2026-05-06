@@ -143,7 +143,8 @@ Compare with two other related statements that are NOT equivalent:
 - The **inverse** of $P \implies Q$ is $\neg P \implies \neg Q$ (not equivalent in general, but
   equivalent to the converse)
 
-:::danger The converse and inverse are logically equivalent to each other, but NOT to the original
+:::danger
+danger
 implication. Never confuse the contrapositive with the converse.
 :::
 
@@ -213,7 +214,8 @@ $$\neg\left(\forall \varepsilon \gt 0, \; \exists \delta \gt 0, \; P(\varepsilon
 The existential becomes universal and the universal becomes existential. This is the logical
 backbone of epsilon-delta definitions in analysis.
 
-:::warning When negating a statement with both $\forall$ and $\exists$, flip each quantifier and
+:::warning
+warning
 negate the predicate. The order of quantifiers does NOT change — it remains the same sequence but
 with each quantifier flipped.
 :::
@@ -297,7 +299,8 @@ Since $2mn + m + n \in \mathbb{Z}$, the product is of the form $2k + 1$, hence o
 This method is especially powerful when the statement you want to prove is a negation itself ("there
 does not exist..." or "there are no...").
 
-:::info Proof by contradiction is logically equivalent to proving $\neg P \implies \mathrm{false}$,
+:::info
+info
 which means $\neg P$ must be false, hence $P$ is true. It relies on the Law of Excluded Middle
 ($P \vee \neg P$ must be true).
 :::
@@ -322,7 +325,8 @@ But now both $a$ and $b$ are even, contradicting $\gcd(a, b) = 1$.
 
 Therefore our assumption is false, and $\sqrt{2}$ is irrational.
 
-:::note **Supporting lemma:** If $a^2$ is even, then $a$ is even. Proof by contrapositive: if $a$ is
+:::note
+note
 odd, then $a = 2k+1$, so $a^2 = 4k^2 + 4k + 1 = 2(2k^2+2k) + 1$, which is odd. Hence if $a^2$ is
 even, $a$ cannot be odd, so $a$ is even.
 :::
@@ -367,7 +371,8 @@ $n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$
 This is odd. Therefore, if $n$ is odd, $n^2$ is odd. By contrapositive, if $n^2$ is even, then $n$
 is even.
 
-:::tip **Direct proof vs. contrapositive vs. contradiction for the same statement:** You could prove
+:::tip
+tip
 "$n^2$ even implies $n$ even" by contradiction (assume $n^2$ even and $n$ odd, derive that $n^2$ is
 both even and odd). But the contrapositive proof is cleaner — it is a direct proof of the equivalent
 statement.
@@ -647,7 +652,8 @@ So $p_i \nmid N$ for all $i$. This contradicts that some $p_i$ divides $N$.
 
 Therefore, there are infinitely many primes. $\blacksquare$
 
-:::info An important subtlety: $N = p_1 p_2 \cdots p_n + 1$ is NOT necessarily prime itself. For
+:::info
+info
 example, $2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 + 1 = 30031 = 59 \times 509$. The proof only
 requires that $N$ has SOME prime factor not in the list.
 :::

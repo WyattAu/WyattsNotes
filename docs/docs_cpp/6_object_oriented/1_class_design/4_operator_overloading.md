@@ -379,7 +379,8 @@ int main() {
 }
 ```
 
-:::tip Prefer Prefix Prefix increment avoids creating a temporary copy. In performance-sensitive
+:::tip
+tip
 code, prefer `++it` over `it++` for iterators and counters.
 :::
 
@@ -715,7 +716,8 @@ int main() {
 }
 ```
 
-:::warning Do not overload `operator*`, `operator->`, or `operator bool` on custom types unless you
+:::warning
+warning
 are implementing a smart pointer or proxy object. Overloading these operators on regular types
 creates confusing semantics that mislead readers into expecting pointer-like behavior.
 :::

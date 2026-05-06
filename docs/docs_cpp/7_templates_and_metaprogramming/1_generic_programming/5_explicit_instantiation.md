@@ -470,7 +470,8 @@ Then include `fmt_inst.h` instead of `fmt/format.h` in your `.cpp` files. The te
 are still visible (through the include), but the `extern template` declarations suppress redundant
 instantiation.
 
-:::warning This approach requires that you keep your instantiation list in sync with actual usage.
+:::warning
+warning
 Forgetting to add a new type results in a linker error (if you only include `fmt_inst.h`) or a
 silent fallback to implicit instantiation (if the full header is also included). Always add both the
 declaration and the definition in the same commit.

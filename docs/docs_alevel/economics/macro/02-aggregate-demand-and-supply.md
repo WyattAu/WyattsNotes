@@ -34,7 +34,8 @@ $$AD = C + I + G + (X - M)$$
 The AD curve slopes **downward** from left to right (higher price level $\Rightarrow$ lower quantity
 of AD).
 
-:::info Board-Specific Note CIE (9708) and Edexcel (9EC0) require students to explain _all three_
+:::info
+info
 channels of the downward-sloping AD curve. AQA often focuses on the interest rate and wealth
 effects. OCR may ask students to evaluate which channel is most significant in practice.
 :::
@@ -128,7 +129,8 @@ where $Y^*$ is potential output, $P^e$ is the expected price level, and $\alpha 
 3. **Imperfect information** (Lucas, 1972): firms may confuse a general price increase with an
    increase in the relative price of their own product, and increase output in response.
 
-:::info Board-Specific Note AQA and Edexcel require students to explain sticky wages as the primary
+:::info
+info
 justification for the upward-sloping SRAS. CIE (9708) additionally tests the Lucas imperfect
 information model. OCR expects students to compare sticky-wage and sticky-price theories. New
 Classical economists (AQA Unit 4, CIE Paper 4) argue that SRAS is vertical even in the short run
@@ -404,7 +406,8 @@ The multiplier model has several important limitations:
    spending. The IMF estimates are higher for economies in recession (1.5 or above) due to the zero
    lower bound on interest rates.
 
-:::info Board-Specific Note AQA (7132) Paper 2 often requires evaluation of the multiplier —
+:::info
+info
 students should discuss capacity constraints, crowding out, and the open economy multiplier. Edexcel
 (9EC0) Paper 2 expects students to calculate the multiplier and evaluate its effectiveness. CIE
 (9708) Paper 3 may ask students to calculate the multiplier from given data and discuss why it

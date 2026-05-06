@@ -185,7 +185,8 @@ Let $u = x^2 + 1$, $du = 2x\,dx$.
 
 $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C$$
 
-:::tip When choosing a substitution, look for a function and its derivative. If you see
+:::tip
+tip
 $\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$.
 :::
 
@@ -221,7 +222,8 @@ i.e., $\displaystyle\int u\,dv = uv - \int v\,du$. $\blacksquare$
 Use the mnemonic **LIATE** (Logarithmic, Inverse trig, Algebraic, Trig, Exponential). Choose $u$
 from the leftmost category that appears.
 
-:::warning A common mistake is choosing the wrong assignment. If the integral gets more complicated
+:::warning
+warning
 after applying the formula, swap $u$ and $dv$.
 :::
 
@@ -289,7 +291,8 @@ $$|E| \leq n \cdot \frac{h^3}{12} M = n \cdot \frac{(b-a)^3}{12n^3}M = \frac{(b-
 The error also depends on how curved the function is (via $f''$). For a straight line ($f'' = 0$),
 the trapezium rule is exact.
 
-:::tip In exams, more strips means better accuracy. The trapezium rule always underestimates for
+:::tip
+tip
 concave-down functions and overestimates for concave-up functions.
 :::
 
@@ -579,7 +582,8 @@ $\blacksquare$
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Integration**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-integration) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integration with other pure mathematics topics to test synthesis under exam conditions.

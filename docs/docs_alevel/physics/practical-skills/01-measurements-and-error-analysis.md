@@ -494,7 +494,8 @@ all the error bars. The uncertainty in the gradient is:
 
 $$\Delta m = \frac{|m_{\mathrm{best}} - m_{\mathrm{worst}}|}{2}$$
 
-:::warning Common Pitfall When error bars are not shown on a graph, examiners typically assume the
+:::warning
+warning
 uncertainty is $\pm$ half the smallest scale division of the measuring instrument used to obtain
 each data point. State this assumption explicitly.
 :::

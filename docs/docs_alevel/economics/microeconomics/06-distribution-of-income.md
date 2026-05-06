@@ -57,7 +57,8 @@ $$G = 1 - 2B$$
 | $0.3 \leq G < 0.4$ | Moderate inequality |
 | $G \geq 0.4$       | High inequality     |
 
-:::info International Comparisons (2023 estimates)
+:::info
+info
 
 - Denmark: 0.28 | Germany: 0.31 | UK: 0.35 | USA: 0.40 | Brazil: 0.52 | South Africa: 0.63
 :::

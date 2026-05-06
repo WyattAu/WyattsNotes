@@ -286,7 +286,8 @@ This means:
 - Subsequent accesses are cheap (just the guard check, typically branch-predicted).
 - If the constructor throws, initialization is retried on the next access.
 
-:::tip For performance-critical code accessed in tight loops, consider caching the thread-local
+:::tip
+tip
 variable's address in a local variable at the start of the function. The compiler may optimize this
 automatically, but explicit caching can help in complex functions.
 :::
@@ -562,7 +563,8 @@ If `mylib.so` is loaded after threads have been created, those threads will trig
 of `lib_tls` on their first access. The dynamic linker handles this by allocating TLS storage for
 the new module and running its initializers lazily.
 
-:::warning Unloading a shared library (`dlclose`) that contains `thread_local` variables is
+:::warning
+warning
 dangerous. If any thread still has references to the TLS storage (e.g., via a pointer obtained
 before the unload), the behavior is undefined. The standard does not define safe unloading semantics
 for TLS [N4950 §6.7.3].
@@ -703,7 +705,8 @@ Each thread has its own `std::mt19937` instance, so there is no contention for t
 generator. This is both **faster** (no lock contention) and **more correct** (the generator state is
 not shared, so the random sequence quality is preserved).
 
-:::tip `thread_local` random number generators are the standard pattern for parallel Monte Carlo
+:::tip
+tip
 simulations and other embarrassingly parallel stochastic computations. Each thread's generator is
 independent, so there are no synchronization overheads or sequence quality concerns.
 :::

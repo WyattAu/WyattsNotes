@@ -133,7 +133,8 @@ $\Delta = 496 > 0$, so the line intersects the circle at two points.
 
 </details>
 
-:::tip Always substitute the _linear_ equation into the _quadratic_ one. The reverse would create a
+:::tip
+tip
 quadratic in both variables, which is harder to solve.
 :::
 
@@ -153,7 +154,8 @@ of positive and negative). So $cb - ca < 0$, giving $ca > cb$. $\blacksquare$
 **Corollary.** Multiplying or dividing both sides of an inequality by a negative number reverses the
 inequality.
 
-:::warning The most common error in inequalities is forgetting to reverse the sign when
+:::warning
+warning
 multiplying/dividing by a negative number. Always check the sign of the multiplier before
 proceeding.
 :::
@@ -494,7 +496,8 @@ No real solution from this case.
 
 </details>
 
-:::warning When squaring both sides of an inequality, both sides must be non-negative. The
+:::warning
+warning
 inequality $|f(x)| \lt g(x)$ only makes sense when $g(x) \gt 0$, and squaring preserves the
 direction since $a \lt b$ implies $a^2 \lt b^2$ for $a, b \geq 0$.
 :::

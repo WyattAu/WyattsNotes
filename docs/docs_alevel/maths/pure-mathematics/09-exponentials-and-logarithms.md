@@ -61,7 +61,8 @@ $$\frac{d}{dx}e^x \bigg|_{x=0} = 1$$
 That is, the exponential function with base $e$ is its own derivative — the only exponential
 function with this property. We prove this rigorously in the next section.
 
-:::tip When a question asks you to "show that $e \approx 2.718$" or "find the value of
+:::tip
+tip
 $\lim_{n\to\infty}(1+1/n)^n$", substitute a large value of $n$ (e.g., $n=10^6$) and round
 appropriately.
 :::
@@ -100,7 +101,8 @@ $$\frac{d}{dx}a^x = \frac{d}{dx}e^{x\ln a} = (\ln a)\, e^{x\ln a} = a^x \ln a$$
 
 This follows immediately from the chain rule applied to $e^{x\ln a}$.
 
-:::warning The derivative of $a^x$ is $a^x \ln a$, **not** $x a^{x-1}$. The power rule
+:::warning
+warning
 $\frac{d}{dx}x^n = nx^{n-1}$ applies when the variable is in the **base**, not the exponent.
 :::
 
@@ -379,7 +381,8 @@ $$\frac{1}{y}\frac{dy}{dx} = g'(x)\ln f(x) + \frac{g(x) f'(x)}{f(x)}$$
 
 $$\frac{dy}{dx} = f(x)^{g(x)}\left[g'(x)\ln f(x) + \frac{g(x) f'(x)}{f(x)}\right]$$
 
-:::warning Never try to differentiate $f(x)^{g(x)}$ directly using the power rule or the exponential
+:::warning
+warning
 rule alone — it requires logarithmic differentiation or rewriting as $e^{g(x)\ln f(x)}$.
 :::
 
@@ -609,7 +612,8 @@ domain restrictions.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Exponentials and Logarithms**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-exponentials-and-logarithms) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Exponentials and Logarithms with other pure mathematics topics to test synthesis under exam conditions.

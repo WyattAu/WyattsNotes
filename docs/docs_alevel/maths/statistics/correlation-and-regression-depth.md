@@ -254,7 +254,8 @@ minimises vertical residuals; the line of $x$ on $y$ minimises horizontal residu
 4. The model assumes the residuals are independent and normally distributed with constant
    variance (homoscedasticity).
 
-:::warning Common Pitfall
+:::warning
+warning
 Do not use the regression line of $y$ on $x$ to predict $x$ from a given $y$, or vice versa.
 Use the appropriate regression line for the direction of prediction.
 :::

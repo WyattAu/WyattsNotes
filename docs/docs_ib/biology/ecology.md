@@ -700,3 +700,217 @@ population and explain your reasoning.
 - **Photosynthesis and plant transport** --> Review [./plant-biology](./plant-biology)
 - **Physiology and homeostasis** --> Review [./human-physiology](./human-physiology)
 
+---
+
+## 7. Ecosystem Dynamics (Extended)
+
+### Population Growth Models
+
+**Exponential growth:**
+
+When resources are unlimited, populations grow exponentially:
+
+$$\frac{dN}{dt} = rN$$
+
+Solution: $N_t = N_0 e^{rt}$
+
+where $N_0$ is the initial population size, $r$ is the intrinsic rate of increase, and $t$ is time.
+
+**Doubling time**: $t_d = \frac{\ln 2}{r}$
+
+Exponential growth cannot continue indefinitely because resources are finite.
+
+**Logistic growth:**
+
+The **logistic equation** (Verhulst, 1838) incorporates a carrying capacity ($K$):
+
+$$\frac{dN}{dt} = rN \left(1 - \frac{N}{K}\right)$$
+
+Solution: $N_t = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) e^{-rt}}$
+
+- When $N \ll K$: population grows nearly exponentially ($\frac{dN}{dt} \approx rN$).
+- When $N = K$: population growth stops ($\frac{dN}{dt} = 0$).
+- When $N > K$: population declines.
+
+The logistic curve is sigmoidal (S-shaped).
+
+### Survivorship Curves
+
+Survivorship curves plot the number or proportion of individuals surviving to each age:
+
+| Type | Shape | Description                                                                 | Example                                      |
+| ---- | ----- | --------------------------------------------------------------------------- | -------------------------------------------- |
+| **I**  | Convex (drops steeply only at old age) | Low mortality during early and middle life; most individuals survive to old age. | Humans in developed countries; large mammals. |
+| **II** | Straight (constant mortality rate) | Constant mortality rate at all ages. | Many bird species; some reptiles.           |
+| **III** | Concave (high early mortality) | High mortality in early life; those that survive to adulthood have lower mortality. | Fish; invertebrates; many plants (seedling mortality). |
+
+### Succession
+
+**Primary succession**: colonisation of bare, lifeless substrate (e.g., volcanic rock, sand dunes,
+glacial moraine).
+
+**Stages (sand dune example):**
+
+1. **Pioneer community**: lichens and algae colonise bare rock/sand. Lichens secrete acids that
+   weather rock, beginning soil formation.
+2. **Grass and herb stage**: grasses and herbs colonise the thin soil. Their roots stabilise the
+   substrate and add organic matter.
+3. **Shrub stage**: shrubs replace grasses as soil deepens.
+4. **Tree stage**: fast-growing trees (e.g., birch, pine) establish.
+5. **Climax community**: slow-growing, shade-tolerant trees (e.g., oak, beech) outcompete
+   pioneers. The ecosystem reaches a relatively stable equilibrium.
+
+**Secondary succession**: recolonisation of a disturbed habitat where soil remains (e.g., after
+fire, deforestation, abandoned farmland). Proceeds faster than primary succession because soil and
+some organisms persist.
+
+### Keystone Species
+
+A **keystone species** has a disproportionately large effect on its ecosystem relative to its
+abundance. Its removal causes significant changes in community structure.
+
+**Examples:**
+
+- **Sea otters** (keystone predator): prey on sea urchins. Without otters, sea urchin populations
+  explode, overgrazing kelp forests, destroying the habitat for many species.
+- **Beavers** (ecosystem engineer): dam-building creates wetland habitats, fundamentally altering
+  hydrology and creating niches for many species.
+- **Fig wasps** (mutualist): pollinate fig trees; the fig-wasp mutualism is essential for the
+  survival of both species and many tropical frugivores that depend on figs.
+
+### Ecological Niches and Competitive Exclusion
+
+**Fundamental niche**: the full range of environmental conditions a species can theoretically occupy.
+
+**Realised niche**: the actual range occupied, limited by biotic interactions (competition,
+predation, parasitism) and abiotic factors.
+
+**Competitive exclusion principle (Gause's principle)**: two species cannot coexist indefinitely
+if they occupy exactly the same niche; one will outcompete the other.
+
+**Resource partitioning**: coexisting species divide the available resources (e.g., different feeding
+times, different food sizes, different vertical stratification) to reduce competition.
+
+---
+
+## 8. Biogeochemical Cycles (Extended)
+
+### The Phosphorus Cycle
+
+Unlike carbon and nitrogen, phosphorus has **no significant gaseous phase**. The cycle is
+sedimentary:
+
+1. **Weathering**: phosphate minerals in rocks are slowly released by weathering
+   ($\mathrm{PO}_4^{3-}$).
+2. **Uptake by plants**: plants absorb phosphate from soil through roots.
+3. **Transfer through food chains**: phosphorus passes from producers to consumers and
+   decomposers.
+4. **Return to soil**: decomposition and excretion return phosphorus to the soil.
+5. **Sedimentation**: eroded phosphorus is transported to oceans and incorporated into marine
+   sediments. Over geological time, these sediments are uplifted, completing the cycle
+   ($10^6$--$10^7$ year timescale).
+
+**Human impact**: phosphate mining for fertilisers has accelerated the release of phosphate from
+geological deposits. Agricultural runoff causes **eutrophication** of freshwater and marine
+ecosystems.
+
+### Eutrophication (Extended)
+
+**Stages of freshwater eutrophication:**
+
+1. **Nutrient enrichment**: nitrate and phosphate from agricultural runoff enter a lake or river.
+2. **Algal bloom**: rapid growth of algae (cyanobacteria, green algae) at the water surface.
+3. **Light attenuation**: the dense algal layer blocks sunlight from reaching submerged plants.
+4. **Plant death**: submerged plants die due to insufficient light for photosynthesis.
+5. **Decomposition**: bacteria decompose dead algae and plants, consuming dissolved $\mathrm{O}_2$.
+6. **Hypoxia/anoxia**: dissolved $\mathrm{O}_2$ drops to levels that cannot support fish and
+   invertebrates, causing a "dead zone."
+7. **Biodiversity loss**: fish kills and loss of aquatic species diversity.
+
+---
+
+## 9. Conservation Biology
+
+### Biodiversity Measurement
+
+- **Species richness**: the number of species in a given area.
+- **Species evenness**: how evenly individuals are distributed among species.
+- **Shannon-Wiener diversity index**:
+  $$H' = -\sum_{i=1}^{s} p_i \ln p_i$$
+  where $p_i$ is the proportion of individuals belonging to species $i$ and $s$ is the total number of species.
+  $H'$ ranges from $0$ (single species) to higher values (more diverse communities).
+
+- **Simpson's diversity index**:
+  $$D = 1 - \sum_{i=1}^{s} p_i^2$$
+  Measures the probability that two randomly selected individuals belong to different species.
+
+### Threats to Biodiversity
+
+| Threat                       | Description                                                                                               | Example                                         |
+| ---------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| **Habitat destruction**       | Conversion of natural habitats to agriculture, urban areas, and infrastructure.           | Deforestation of tropical rainforests; coral reef destruction. |
+| **Habitat fragmentation**     | Division of continuous habitat into patches, reducing connectivity and increasing edge effects. | Road construction through forests; agricultural land division. |
+| **Overexploitation**          | Harvesting species faster than they can recover.                                                | Overfishing; bushmeat trade; illegal wildlife trade.    |
+| **Pollution**                 | Contamination of air, water, and soil with harmful substances.                                       | Pesticide accumulation (DDT); oil spills; plastic pollution. |
+| **Climate change**            | Global warming, ocean acidification, changing precipitation patterns.                                  | Coral bleaching; range shifts; phenological mismatches. |
+| **Invasive species**           | Non-native species that outcompete, prey on, or introduce diseases to native species.          | Cane toad in Australia; zebra mussel in North America; kudzu vine. |
+
+### Conservation Strategies
+
+- **In situ conservation**: protecting species in their natural habitats (national parks, nature
+  reserves, marine protected areas, wildlife corridors).
+- **Ex situ conservation**: protecting species outside their natural habitats (zoos, botanical gardens,
+  seed banks, cryopreservation of gametes and embryos).
+- **CITES**: Convention on International Trade in Endangered Species regulates international trade.
+- **Captive breeding programmes**: for critically endangered species with very small wild populations
+  (e.g., California condor, black rhino).
+- **Sustainable management**: balancing resource use with conservation (e.g., sustainable forestry,
+  fisheries quotas, ecotourism).
+
+---
+
+## Exam-Style Problems (Extended)
+
+<details>
+<summary>Problem 9: Quantitative -- Population Growth Models</summary>
+
+A population of bacteria in a culture grows exponentially with $r = 0.6\;\mathrm{h}^{-1}$ and $N_0 = 200$
+cells. (a) Calculate the population size after 10 hours. (b) Calculate the doubling time. (c) If the
+carrying capacity of the culture is $10^9$ cells, at what time will the population reach $90\%$ of $K$
+using the logistic equation? (d) Compare the logistic and exponential population sizes at $t = 20\;\mathrm{h}$.
+
+</details>
+
+<details>
+<summary>Problem 10: Data Analysis -- Shannon-Wiener Diversity Index</summary>
+
+Two woodland communities are surveyed for butterfly species. Community A has 4 species with
+abundances: 80, 15, 3, 2. Community B has 5 species with abundances: 30, 28, 22, 12, 8. (a) Calculate
+the Shannon-Wiener diversity index ($H'$) for each community. (b) Calculate Simpson's diversity
+index ($D$) for each community. (c) Which community is more diverse? Justify your answer with
+reference to both richness and evenness.
+
+</details>
+
+<details>
+<summary>Problem 11: Extended Response -- Succession and Conservation</summary>
+
+A volcanic island is formed by a submarine eruption. Over 500 years, the island is colonised by
+living organisms. (a) Describe the expected sequence of primary succession on the island, naming
+specific types of organisms at each stage and explaining how they modify the environment for the
+next stage. (b) Explain why the climax community on this island may differ from the climax community
+on a nearby mainland island. (c) If the island is later colonised by an invasive rat species, predict
+the impact on the native fauna and describe a conservation strategy to protect native species.
+
+</details>
+
+<details>
+<summary>Problem 12: Extended Response -- Phosphorus Cycle and Agriculture</summary>
+
+Explain why the phosphorus cycle is described as sedimentary rather than gaseous. Describe the role of
+phosphorus in biological systems (DNA, ATP, phospholipids, bone). Explain how the use of phosphate
+fertilisers in agriculture can lead to eutrophication in freshwater ecosystems. Discuss two
+strategies for reducing phosphate pollution from agricultural runoff.
+
+</details>
+

@@ -167,7 +167,8 @@ $$\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$$
 The direction of $\boldsymbol{\tau}$ is given by the right-hand rule and is perpendicular to the
 plane containing $\mathbf{r}$ and $\mathbf{F}$.
 
-:::info In A Level Maths, we work in 2D, so torque is effectively a signed scalar. Clockwise and
+:::info
+info
 anticlockwise are the only two directions you need to consider.
 :::
 
@@ -295,7 +296,8 @@ To find the forces in the members of a framework:
 
 If you assume a rod is in tension and get a negative answer, the rod is in compression.
 
-:::info Framework problems are common in the mechanics section of the A Level exam. The key skill is
+:::info
+info
 choosing the right joint to start with — look for joints where you have at most two unknown forces,
 since you can only write two equilibrium equations per joint.
 :::
@@ -428,7 +430,8 @@ $P = \dfrac{150}{1.2} = 125\,\mathrm{N}$.
 
 Since $125 \lt 200$, the block **topples first** at $P = 125\,\mathrm{N}$.
 
-:::info A useful rule of thumb: if $\dfrac{h}{d} > \dfrac{1}{\mu}$, the body topples before it
+:::info
+info
 slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$, toppling occurs
 first, which matches our calculation.
 :::
@@ -841,7 +844,8 @@ Centre of mass is approximately $4.21\,\mathrm{cm}$ from the flat face.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Moments**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-moments) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Moments with other topics to test synthesis under exam conditions.

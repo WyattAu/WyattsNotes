@@ -175,7 +175,8 @@ $$B(n, p) \approx N(np, np(1-p))$$
 with **continuity correction**:
 $P(X \leq k) \approx P\!\left(Z \lt{} \frac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)$.
 
-:::warning Always apply the continuity correction when approximating a discrete distribution
+:::warning
+warning
 (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the inequality
 direction.
 :::
@@ -263,7 +264,8 @@ in any interval of length $t$ follows $\mathrm{Po}(\lambda t)$.
 Typical applications include: calls arriving at a call centre per hour, typing errors per page,
 radioactive decays per second, and cars passing a checkpoint per minute.
 
-:::tip To check whether a scenario fits the Poisson model, verify that the rate is approximately
+:::tip
+tip
 constant over the interval and that events do not cluster. If events tend to occur in bursts, the
 Poisson model is not appropriate.
 :::
@@ -284,7 +286,8 @@ conditions $n \gt{} 50$ and $p \lt{} 0.1$ are practical thresholds that ensure:
 
 The approximation improves as $n$ increases and $p$ decreases while $\lambda = np$ remains fixed.
 
-:::warning The Poisson approximation is only appropriate when $p$ is small. When $p$ is not small
+:::warning
+warning
 and $n$ is large, use the normal approximation (Section 3.6) instead. The two approximations are
 complementary: Poisson handles the case of many trials with rare success, while normal handles the
 case of many trials with moderate success probability.
@@ -682,7 +685,8 @@ Section 6.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Statistical Distributions**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-statistical-distributions) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistical Distributions with other topics to test synthesis under exam conditions.

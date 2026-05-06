@@ -1290,13 +1290,309 @@ If you get this wrong, revise: Nervous Coordination -- Synapses
 
 </details>
 
+
 ---
 
-:::tip Diagnostic Test
+## The Digestive System in Detail
+
+### Large Intestine (Colon)
+
+The large intestine is approximately 1.5 metres long. Its primary functions are water reabsorption and faeces formation.
+
+| Region                | Function                                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Caecum                | Small pouch at the start; contains the appendix (no significant digestive function in humans)                                   |
+| Ascending colon       | Water reabsorption; movement of contents upwards by peristalsis                                                              |
+| Transverse colon      | Water reabsorption; movement of contents across the abdomen                                                                  |
+| Descending colon      | Water reabsorption; movement of contents downwards                                                                          |
+| Sigmoid colon         | Storage of faeces; connects to the rectum                                                                                   |
+| Rectum                | Storage of faeces prior to defaecation                                                                                      |
+| Anus                  | Sphincter muscles (internal: involuntary; external: voluntary) control defaecation                                         |
+
+**Key processes:**
+
+1. **Water reabsorption:** Approximately 90% of remaining water is reabsorbed by osmosis
+2. **Mineral absorption:** $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ are actively absorbed
+3. **Vitamin synthesis:** Commensal bacteria synthesise vitamins K and B, which are absorbed
+4. **Mucus secretion:** Goblet cells secrete mucus to lubricate faeces
+5. **Faeces composition:** Undigested fibre, bacteria, water, bile pigments (stercobilin)
+
+### The Liver
+
+| Liver Function        | Description                                                                                                                 |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Bile production       | Hepatocytes produce bile (bile salts, bile pigments, cholesterol, phospholipids)                                         |
+| Glycogen storage      | Stores glycogen; releases glucose when blood glucose drops                                                                 |
+| Deamination          | Converts excess amino acids to keto acids and ammonia; ammonia to urea (ornithine cycle)                                    |
+| Detoxification        | Converts harmful substances (alcohol, drugs) into less harmful forms                                                      |
+| Plasma protein synthesis | Synthesises albumin, fibrinogen, and other plasma proteins                                                            |
+
+**Bile is NOT an enzyme.** It emulsifies fats physically (increases surface area) but does NOT chemically digest fats. Lipase chemically digests fats.
+
+---
+
+## Gas Exchange in Detail
+
+### Partial Pressures and Gas Exchange
+
+| Location                  | $p\mathrm{O}_2$ (kPa) | $p\mathrm{CO}_2$ (kPa) |
+| ------------------------- | -------------------- | ----------------------- |
+| Inspired air              | 21.2                | 0.04                    |
+| Alveolar air              | 13.3                | 5.3                     |
+| Deoxygenated blood        | 5.3                 | 6.1                     |
+| Oxygenated blood          | 13.3                | 5.3                     |
+| Tissue capillaries        | 2.0-5.3            | 6.0-7.3                 |
+
+### Factors Affecting the Oxygen Dissociation Curve
+
+| Factor                | Effect on Curve      | Explanation                                                                                                         |
+| --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Increased $p\mathrm{CO}_2$ | Shifts right (Bohr effect) | Carbonic acid lowers pH; H$^+$ reduces haemoglobin's affinity for $\mathrm{O}_2$                            |
+| Decreased pH          | Shifts right         | H$^+$ ions bind to haemoglobin, reducing its affinity for $\mathrm{O}_2$                                         |
+| Increased temperature | Shifts right         | Higher temperature reduces haemoglobin's affinity for $\mathrm{O}_2$                                              |
+| Fetal haemoglobin     | Shifts left          | Higher affinity for $\mathrm{O}_2$ than adult haemoglobin; allows efficient transfer across the placenta           |
+
+### Carbon Dioxide Transport
+
+| Method                          | Percentage | Description                                                                                                       |
+| ------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------- |
+| Dissolved in plasma             | ~5%        | Small amount dissolves directly in blood plasma                                                                    |
+| Bound to haemoglobin           | ~10-15%    | $\mathrm{CO}_2$ binds to globin chains (NOT the haem group)                                                       |
+| Hydrogen carbonate ($\mathrm{HCO}_3^-$) | ~70-80% | Carbonic anhydrase converts $\mathrm{CO}_2$ to $\mathrm{H}_2\mathrm{CO}_3$, which dissociates to $\mathrm{H}^+$ and $\mathrm{HCO}_3^-$ |
+
+---
+
+:::tip
+tip
 Ready to test your understanding of **Human Physiology**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-human-physiology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human Physiology with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
 
+---
+
+## The Heart in Detail
+
+### Cardiac Cycle
+
+The cardiac cycle is the sequence of events in one complete heartbeat. It consists of three main phases:
+
+| Phase                  | Atria                                | Ventricles                           | AV Valves                 | Semilunar Valves          | Blood Movement                |
+| ----------------------- | ------------------------------------ | ------------------------------------ | ------------------------- | ------------------------- | ------------------------------ |
+| **Atrial systole**        | Contract; push remaining blood into ventricles | Relax; passively fill from atria     | Open                      | Closed                    | ~25% of ventricular filling is from atrial contraction (the "atrial kick"); the remaining 75% occurred passively during ventricular diastole |
+| **Ventricular systole**   | Relax; fill from veins               | Contract; pressure rises rapidly      | Close (first heart sound, S1 "lub") | Open (when ventricular pressure exceeds arterial pressure) | Blood is ejected into the aorta and pulmonary artery; not all blood is expelled -- approximately 60% is ejected (ejection fraction); the remaining 40% is the end-systolic volume |
+| **Ventricular diastole**  | Relax; fill from veins               | Relax; pressure drops below arterial pressure | Closed                    | Close (second heart sound, S2 "dub") | Both atria and ventricles relax; blood flows from veins into atria and passively into ventricles; the heart is filling |
+
+**Key pressure relationships:**
+
+| Event                          | Pressure Condition                                                                                                           | Result                                  |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| AV valves open                 | Atrial pressure > ventricular pressure                                                                                      | Blood flows from atria to ventricles    |
+| AV valves close                | Ventricular pressure > atrricular pressure (at the start of ventricular systole)                                           | Prevents backflow into atria            |
+| Semilunar valves open          | Ventricular pressure > arterial pressure (aortic/pulmonary)                                                                | Blood is ejected into arteries          |
+| Semilunar valves close         | Ventricular pressure < arterial pressure (at the start of ventricular diastole)                                           | Prevents backflow into ventricles       |
+
+### Cardiac Output
+
+$$\text{Cardiac output} = \text{Heart rate} \times \text{Stroke volume}$$
+
+| Component            | Normal Value (at rest)     | During Exercise                                |
+| -------------------- | -------------------------- | ---------------------------------------------- |
+| Heart rate            | 60-80 bpm                  | Increases to 150-200 bpm                       |
+| Stroke volume         | ~70 mL                     | Increases to ~100-120 mL (due to increased venous return and stronger contraction) |
+| Cardiac output         | ~5 L/min                   | Increases to ~15-25 L/min (up to 5x resting)   |
+
+**Factors affecting cardiac output:**
+
+| Factor                  | Effect on Cardiac Output                                                                                                    | Mechanism                                                                                                                 |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Exercise                 | Increases significantly                                                                                                    | Sympathetic nervous system releases adrenaline; increases heart rate and stroke volume; increased venous return (muscle pump) |
+| Increased venous return  | Increases (Frank-Starling law)                                                                                            | More blood entering the heart stretches the ventricular walls, causing a stronger contraction (Starling's law of the heart) |
+| Adrenaline               | Increases                                                                                                                  | Binds to beta-1 receptors in the heart; increases heart rate and force of contraction                                     |
+| Acetylcholine (vagus nerve) | Decreases                                                                                                               | Binds to muscarinic receptors in the heart; decreases heart rate (parasympathetic effect)                                |
+| Body temperature         | Increases                                                                                                                  | Higher temperature increases metabolic rate and heart rate; for every 1 degrees C increase in body temperature, heart rate increases by approximately 10 bpm |
+| Age                      | Generally decreases with age                                                                                               | Reduced maximum heart rate and stroke volume capacity with aging                                                          |
+| Fitness level            | Resting cardiac output is similar but stroke volume is higher and resting heart rate is lower (more efficient heart)       | Athletic heart is larger and stronger; can pump more blood per beat, so it needs fewer beats at rest                        |
+
+### Coronary Heart Disease (CHD)
+
+**Atherosclerosis:** The build-up of fatty deposits (atheroma/plaque) in the walls of the coronary arteries, narrowing the lumen and restricting blood flow to the heart muscle.
+
+| Stage                  | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Endothelial damage       | Damage to the inner lining of the artery (caused by high blood pressure, smoking, high cholesterol)                     |
+| Lipid deposition         | LDL cholesterol infiltrates the damaged endothelium and accumulates in the arterial wall                                |
+| Inflammatory response    | White blood cells (macrophages) migrate to the site, engulf the lipids, and become foam cells (forming a fatty streak)    |
+| Plaque formation          | Smooth muscle cells migrate to the area and form a fibrous cap over the lipid core, creating an atheroma (plaque)        |
+| Plaque growth             | The plaque gradually enlarges, narrowing the lumen of the artery and restricting blood flow                               |
+| Thrombosis               | If the fibrous cap ruptures, a blood clot (thrombus) forms at the site, potentially completely blocking the artery        |
+
+**Risk factors for CHD:**
+
+| Risk Factor              | Mechanism                                                                                                                 |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| High LDL cholesterol       | LDL deposits cholesterol in arterial walls, promoting plaque formation                                                   |
+| High blood pressure        | Damages the endothelial lining of arteries, making it easier for cholesterol to infiltrate                              |
+| Smoking                   | Carbon monoxide reduces oxygen-carrying capacity of blood; nicotine increases heart rate and blood pressure; chemicals in smoke damage endothelium |
+| Diabetes                  | High blood glucose damages blood vessels; diabetics often have abnormal lipid profiles                                   |
+| Obesity                   | Associated with high blood pressure, high cholesterol, and diabetes                                                      |
+| Sedentary lifestyle       | Lack of exercise is associated with higher blood pressure, higher cholesterol, and obesity                               |
+| Family history            | Genetic predisposition to high cholesterol or other risk factors                                                         |
+| High saturated fat diet   | Increases LDL cholesterol levels                                                                                         |
+| Stress                    | Chronic stress increases blood pressure and heart rate; may promote inflammation in arteries                            |
+
+**Treatments for CHD:**
+
+| Treatment                | Description                                                                                                               |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Statins                  | Drugs that reduce cholesterol synthesis in the liver (inhibit HMG-CoA reductase); lower LDL cholesterol levels          |
+| Antihypertensives        | Drugs that lower blood pressure (ACE inhibitors, beta-blockers, calcium channel blockers)                               |
+| Anticoagulants           | Drugs that prevent blood clot formation (aspirin, warfarin, heparin)                                                    |
+| Angioplasty              | A balloon catheter is inserted into the narrowed artery and inflated to compress the plaque and widen the lumen; a stent is usually inserted to keep the artery open |
+| Coronary artery bypass graft (CABG) | A blood vessel (usually from the leg or chest) is grafted to bypass the blocked section of the coronary artery        |
+| Lifestyle changes        | Healthy diet (low saturated fat, high fibre), regular exercise, stopping smoking, reducing alcohol intake, weight management |
+
+---
+
+## Blood Pressure
+
+### Measurement
+
+Blood pressure is measured using a sphygmomanometer and is expressed as two values:
+
+$$\text{Blood pressure} = \frac{\text{Systolic pressure}}{\text{Diastolic pressure}} \text{ mmHg}$$
+
+| Component            | Description                                                                                                               | Normal Value   |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| Systolic pressure      | Maximum pressure during ventricular systole (when blood is ejected into the aorta)                                      | ~120 mmHg      |
+| Diastolic pressure     | Minimum pressure during ventricular diastole (when the heart is relaxing)                                                | ~80 mmHg       |
+
+### Classification
+
+| Category               | Systolic (mmHg)   | Diastolic (mmHg)   |
+| ---------------------- | ------------------ | ------------------ |
+| Normal                 | Below 120          | Below 80           |
+| Elevated               | 120-129            | Below 80           |
+| Hypertension Stage 1   | 130-139            | 80-89              |
+| Hypertension Stage 2   | 140 or above       | 90 or above        |
+| Hypotension            | Below 90           | Below 60           |
+
+### Factors Affecting Blood Pressure
+
+| Factor                  | Effect                                                                                                                    | Mechanism                                                                                                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cardiac output           | Increased CO increases blood pressure                                                                                     | More blood pumped into arteries per unit time increases pressure                                                       |
+| Peripheral resistance    | Increased resistance increases blood pressure                                                                             | Narrower arteries (vasoconstriction) or thicker blood increase resistance; higher resistance = higher pressure for the same flow |
+| Blood volume             | Increased volume increases blood pressure                                                                                 | More fluid in the blood vessels increases pressure against the walls                                                      |
+| Exercise                 | Increases systolic, slightly increases or maintains diastolic                                                            | Increased cardiac output; vasodilation in exercising muscles offsets some of the pressure increase                        |
+| Stress                   | Increases blood pressure (short-term)                                                                                     | Sympathetic nervous system activation; adrenaline and noradrenaline cause vasoconstriction and increased heart rate       |
+| Age                      | Generally increases with age (arteries become less elastic)                                                               | Reduced elasticity means arteries cannot expand to accommodate the pulse of blood, increasing systolic pressure           |
+| Diet (salt)              | High salt intake increases blood pressure                                                                                 | Excess sodium causes water retention (osmosis), increasing blood volume                                                  |
+
+---
+
+## Common Pitfalls
+
+- **The left ventricle has a thicker muscular wall than the right ventricle** because it needs to generate a higher pressure to pump blood to the entire body (systemic circulation), whereas the right ventricle only needs to pump blood to the nearby lungs (pulmonary circulation)
+- **Systolic pressure is the HIGHER number; diastolic is the LOWER number.** Students often confuse these. Remember: "systolic = squeeze" (ventricles contracting)
+- **Cardiac output = heart rate $\times$ stroke volume, NOT heart rate $\times$ blood volume.** Stroke volume is the volume of blood ejected per beat, not the total blood volume
+- **Veins have valves to prevent backflow; arteries do NOT have valves.** Arteries have thick, elastic walls that maintain blood pressure; veins rely on valves and the skeletal muscle pump to return blood to the heart
+
+---
+
+## The Digestive System in Detail
+
+### Structure of the Alimentary Canal
+
+| Layer                   | Description                                                                                                               | Function                                                                                                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Mucosa (innermost)       | Epithelial tissue; may be simple columnar (stomach, intestines) or stratified squamous (oesophagus, mouth)                | Secretion of mucus, enzymes, and digestive juices; absorption of nutrients; protection against self-digestion and pathogens |
+| Submucosa                | Connective tissue containing blood vessels, lymphatic vessels, and nerves (submucosal plexus)                             | Nourishment of the gut wall; transport of absorbed nutrients into blood and lymph                                         |
+| Muscularis externa       | Two layers of smooth muscle: inner circular layer and outer longitudinal layer (except in the stomach, which has a third oblique layer) | Peristalsis (rhythmic wave of contraction) moves food along the canal; segmentation mixes food with digestive juices |
+| Serosa (adventitia)      | Thin outer layer of connective tissue; covered by peritoneum (a serous membrane)                                          | Protection; reduces friction between digestive organs and surrounding tissues                                            |
+
+### Enzymes of Digestion
+
+| Location                | Enzyme                  | Substrate                  | Product(s)                                               | Optimal pH              |
+| ----------------------- | ------------------------ | -------------------------- | -------------------------------------------------------- | ----------------------- |
+| Mouth                   | Salivary amylase          | Starch                     | Maltose                                                  | ~6.8 (neutral)          |
+| Stomach                 | Pepsin                    | Proteins                   | Polypeptides                                             | ~1.5-2.0 (acidic)       |
+| Small intestine (duodenum) | Pancreatic amylase      | Starch                     | Maltose                                                  | ~7.5-8.5 (alkaline)     |
+| Small intestine (duodenum) | Pancreatic trypsin      | Proteins/polypeptides       | Shorter peptides/amino acids                              | ~7.5-8.5               |
+| Small intestine (duodenum) | Pancreatic lipase       | Lipids (triglycerides)      | Fatty acids and glycerol                                  | ~7.5-8.5               |
+| Small intestine (ileum)  | Maltase                   | Maltose                    | Glucose                                                  | ~7.5-8.5               |
+| Small intestine (ileum)  | Sucrase                   | Sucrose                    | Glucose and fructose                                     | ~7.5-8.5               |
+| Small intestine (ileum)  | Lactase                   | Lactose                    | Glucose and galactose                                    | ~7.5-8.5               |
+| Small intestine (ileum)  | Peptidases (erepsin)      | Peptides                   | Amino acids                                              | ~7.5-8.5               |
+
+### Absorption in the Small Intestine
+
+The small intestine is the primary site of nutrient absorption. It is highly adapted for this function:
+
+| Adaptation              | Description                                                                                                               | Benefit                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Villi                    | Finger-like projections of the mucosa (~5 mm long); greatly increase the surface area for absorption                    | More surface area = more efficient absorption                                                                             |
+| Microvilli               | Microscopic hair-like projections on the epithelial cells of the villi (forming the "brush border"); further increase surface area | Surface area is increased by an additional ~600x                                                                       |
+| Single layer of epithelial cells | The villi are lined by a single layer of simple columnar epithelium, creating a short diffusion distance                      | Nutrients only need to diffuse across one cell layer to reach the blood                                                   |
+| Dense capillary network   | Each villus contains a network of blood capillaries                                                                       | Amino acids and glucose are absorbed into the blood and carried to the liver via the hepatic portal vein                 |
+| Lacteal                  | Each villus contains a lacteal (a small lymphatic vessel)                                                                 | Fatty acids and glycerol are absorbed into the lacteal and transported via the lymphatic system                         |
+| Mitochondria             | Epithelial cells have many mitochondria                                                                                  | Provide ATP for active transport of nutrients against concentration gradients                                           |
+
+**Mechanisms of absorption:**
+
+| Mechanism                | Description                                                                                                               | Substances Absorbed                           |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Diffusion                 | Movement from high to low concentration down a concentration gradient                                                      | Small lipids (glycerol, short-chain fatty acids); some water-soluble vitamins |
+| Facilitated diffusion     | Movement through carrier proteins or channel proteins, down the concentration gradient                                     | Fructose; some amino acids                    |
+| Active transport          | Movement against the concentration gradient, using ATP and carrier proteins                                              | Glucose; amino acids; ions (Na$^+$, K$^+$, Ca$^{2+}$); vitamins |
+| Co-transport              | Secondary active transport; Na$^+$ moves down its concentration gradient, dragging glucose or amino acids with it (SGLT1 and other co-transporters) | Glucose; galactose; amino acids              |
+| Endocytosis               | The cell membrane engulfs the substance, forming a vesicle inside the cell                                                | Cholesterol; some vitamins; antibodies in newborns (from breast milk) |
+
+### Co-transport of Glucose
+
+The mechanism by which glucose is absorbed from the small intestine (and reabsorbed in the kidney):
+
+1. Na$^+$/K$^+$-ATPase pump on the basolateral membrane actively transports Na$^+$ OUT of the epithelial cell into the blood, maintaining a low Na$^+$ concentration inside the cell
+2. This creates a concentration gradient for Na$^+$ from the intestinal lumen (high) into the cell (low)
+3. The SGLT1 co-transporter on the apical membrane transports Na$^+$ down its concentration gradient into the cell, simultaneously transporting glucose AGAINST its concentration gradient (secondary active transport)
+4. Glucose exits the cell through the basolateral membrane via facilitated diffusion (GLUT2 transporter) into the blood
+5. Both Na$^+$ and glucose are now in the blood and can be transported to the liver via the hepatic portal vein
+
+---
+
+## The Liver
+
+### Functions of the Liver
+
+| Function                | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Metabolism of carbohydrates | Stores glucose as glycogen (glycogenesis); breaks down glycogen to glucose when needed (glycogenolysis); converts amino acids/lactate to glucose (gluconeogenesis); maintains blood glucose levels |
+| Metabolism of proteins    | Deamination of excess amino acids (removal of the amino group, producing ammonia, which is converted to urea in the ornithine cycle); transamination (transfer of amino groups between amino acids) |
+| Detoxification            | Converts harmful substances (alcohol, drugs, toxins) into less harmful, water-soluble compounds that can be excreted by the kidneys |
+| Production of bile         | Bile is produced by hepatocytes and stored in the gall bladder; contains bile salts (emulsify fats), bile pigments (bilirubin from haemoglobin breakdown), and cholesterol |
+| Storage                   | Stores glycogen, vitamins (A, D, B12), iron (as ferritin), and minerals                                                   |
+| Synthesis of plasma proteins | Produces albumin (maintains blood osmotic pressure), fibrinogen and prothrombin (blood clotting factors), and globulins (antibodies and transport proteins) |
+| Immune function            | Kupffer cells (specialised macrophages in the liver sinusoids) phagocytose bacteria and old/damaged red blood cells         |
+| Breakdown of hormones      | Inactivates and breaks down hormones such as insulin, glucagon, and steroid hormones                                      |
+
+### Ornithine (Urea) Cycle
+
+The liver converts toxic ammonia (produced by deamination) into less toxic urea, which is transported to the kidneys for excretion:
+
+1. Ammonia ($\mathrm{NH_3}$) combines with CO$_2$ and the amino acid ornithine to form citrulline
+2. Citrulline combines with more ammonia to form arginine
+3. Arginine is broken down by arginase to produce urea and regenerate ornithine (the cycle continues)
+
+$$2\mathrm{NH_3} + \mathrm{CO_2} \rightarrow \mathrm{CO(NH_2)_2} + \mathrm{H_2O}$$
+
+---
+
+## Common Pitfalls
+
+- **Bile is NOT an enzyme.** It emulsifies fats (breaks large fat droplets into smaller droplets, increasing surface area for lipase action), but it does NOT chemically digest fats. Emulsification is a PHYSICAL process, not a chemical one
+- **Trypsin is produced as trypsinogen (an inactive precursor) by the pancreas.** It is activated by enterokinase (an enzyme on the intestinal wall). This prevents the pancreas from digesting itself. Pepsin is similarly produced as pepsinogen and activated by the acidic environment of the stomach
+- **The hepatic portal vein carries blood FROM the intestines TO the liver (not from the liver to the heart).** This allows the liver to process absorbed nutrients and detoxify harmful substances before they enter the general circulation
+- **Glucose absorption in the small intestine is primarily by ACTIVE transport (co-transport with Na$^+$), NOT by diffusion.** This is why glucose can be absorbed even when its concentration in the blood is already higher than in the gut lumen**
+- **Deamination occurs in the LIVER, not in the kidneys.** The liver removes the amino group from excess amino acids and converts the resulting ammonia to urea. The kidneys excrete urea but do not produce it**
+:::

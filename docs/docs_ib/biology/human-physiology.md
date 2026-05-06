@@ -779,3 +779,246 @@ in a person who has been drinking large volumes of water versus a person who is 
 - **Genetics and inheritance** --> Review [./genetics](./genetics)
 - **Plant hormones and transport** --> Review [./plant-biology](./plant-biology)
 
+---
+
+## 8. The Excretory System
+
+### Structure and Function of the Kidney
+
+The kidneys filter blood, remove metabolic waste (urea, uric acid, creatinine), regulate water and ion
+balance, and maintain blood pH.
+
+**Gross anatomy:**
+
+- **Renal cortex**: outer region containing glomeruli (Bowman's capsules) and convoluted tubules.
+- **Renal medulla**: inner region containing the loop of Henle, collecting ducts, and renal pelvis.
+- **Renal pelvis**: funnel-shaped chamber that collects urine and drains into the ureter.
+
+### The Nephron
+
+The nephron is the functional unit of the kidney. Each kidney contains approximately $1$ million nephrons.
+
+**Structure:**
+
+1. **Glomerulus**: a knot of capillaries inside Bowman's capsule. Blood pressure forces filtrate
+   (water, glucose, amino acids, ions, urea) into the capsule (ultrafiltration).
+2. **Bowman's capsule**: cup-shaped structure surrounding the glomerulus; receives the filtrate.
+3. **Proximal convoluted tubule (PCT)**: reabsorbs $\approx 65\%$ of filtered $\mathrm{Na}^+$, water,
+   $\mathrm{K}^+$, $\mathrm{Ca}^{2+}$, $\mathrm{HCO}_3^-$, glucose, and amino acids. Secretes $\mathrm{H}^+$
+   and $\mathrm{NH}_4^+$.
+4. **Loop of Henle**: a U-shaped tubule that creates a concentration gradient in the medulla.
+   - **Descending limb**: permeable to water (aquaporins); impermeable to solutes. Water exits by
+     osmosis as the filtrate descends into the increasingly concentrated medulla.
+   - **Ascending limb** (thin then thick segment): impermeable to water; actively transports
+     $\mathrm{Na}^+$, $\mathrm{K}^+$, and $\mathrm{Cl}^-$ out (diluting the filtrate). The
+     **countercurrent multiplier** mechanism concentrates the medullary interstitium to
+     $\approx 1200\;\mathrm{mOsm/kg}$ (four times plasma osmolarity).
+5. **Distal convoluted tubule (DCT)**: fine-tunes ion balance. Reabsorbs $\mathrm{Na}^+$,
+   $\mathrm{Ca}^{2+}$, and $\mathrm{HCO}_3^-$ under the control of aldosterone. Secretes
+   $\mathrm{K}^+$ and $\mathrm{H}^+$.
+6. **Collecting duct**: permeable to water under the control of ADH. Water exits by osmosis into the
+   concentrated medulla, producing concentrated urine.
+
+### Ultrafiltration
+
+Driven by **hydrostatic pressure** in the glomerular capillaries ($\approx 55\;\mathrm{mmHg}$) opposed by:
+- Bowman's capsule hydrostatic pressure ($\approx 15\;\mathrm{mmHg}$)
+- Glomerular oncotic pressure ($\approx 30\;\mathrm{mmHg}$, from plasma proteins)
+
+Net filtration pressure: $\approx 55 - 15 - 30 = 10\;\mathrm{mmHg}$
+
+The glomerular filtration rate (GFR) is approximately $125\;\mathrm{mL/min}$ per kidney ($250\;\mathrm{mL/min}$ total),
+producing $\approx 180\;\mathrm{L}$ of filtrate per day.
+
+### Selective Reabsorption
+
+| Substance     | Filtered/day | Reabsorbed (%) | Excreted/day | Mechanism                                      |
+| ------------ | ------------ | --------------- | ------------- | ---------------------------------------------- |
+| Water         | $180\;\mathrm{L}$ | $\approx 99\%$ | $\approx 1.5\;\mathrm{L}$ | Osmosis (PCT, descending limb, collecting duct with ADH). |
+| $\mathrm{Na}^+$ | $\approx 600\;\mathrm{g}$ | $\approx 99.5\%$ | $\approx 3\;\mathrm{g}$ | Active transport (PCT, ascending limb, DCT). |
+| Glucose      | $180\;\mathrm{g}$ | $100\%$ (normally) | $\approx 0\;\mathrm{g}$ | Secondary active transport ($\mathrm{Na}^+$-glucose co-transport, SGLT2, in PCT). |
+| Urea         | $\approx 50\;\mathrm{g}$ | $\approx 50\%$ | $\approx 25\;\mathrm{g}$ | Passive diffusion and some secretion. |
+| Amino acids   | $\approx 65\;\mathrm{g}$ | $\approx 100\%$ | $\approx 1\;\mathrm{g}$ | Secondary active transport with $\mathrm{Na}^+$. |
+
+### Osmoregulation and ADH
+
+**Antidiuretic hormone (ADH / vasopressin)** is produced by the hypothalamus and released from the
+posterior pituitary.
+
+- **When blood osmolarity is high** (dehydration): osmoreceptors in the hypothalamus detect the
+  increase. ADH is released, causing insertion of **aquaporin-2** channels into the collecting duct
+  apical membrane. Water is reabsorbed, producing concentrated urine (dark yellow, low volume).
+- **When blood osmolarity is low** (overhydration): ADH secretion is suppressed. The collecting duct
+  remains impermeable to water, producing dilute urine (pale, high volume).
+
+### Kidney Failure
+
+- **Acute kidney injury (AKI)**: sudden loss of kidney function; may be reversible.
+- **Chronic kidney disease (CKD)**: progressive loss of nephron function over months to years.
+- **Treatment**: dialysis (haemodialysis or peritoneal dialysis) or kidney transplant.
+
+---
+
+## 9. Liver Function
+
+### Roles of the Liver
+
+1. **Detoxification**: converts ammonia (toxic) to urea (less toxic) via the ornithine cycle; breaks
+   down alcohol and other toxins.
+2. **Bile production**: synthesises bile salts (from cholesterol) and bile pigments (bilirubin from
+   haem breakdown), stored in the gallbladder and released into the duodenum for fat emulsification.
+3. **Protein synthesis**: synthesises plasma proteins (albumin, fibrinogen, prothrombin, most
+   clotting factors).
+4. **Carbohydrate metabolism**: stores glycogen (glycogenesis) and releases glucose (glycogenolysis);
+   performs gluconeogenesis.
+5. **Lipid metabolism**: synthesises lipoproteins (VLDL, HDL); breaks down fatty acids ($\beta$-oxidation);
+  produces ketone bodies during fasting.
+6. **Iron storage**: stores iron in ferritin; transports it as transferrin.
+7. **Vitamin storage**: stores vitamins A, D, B$_{12}$.
+8. **Immune function**: Kupffer cells (resident macrophages) phagocytose pathogens and old red blood cells.
+
+### Jaundice
+
+Jaundice (yellowing of the skin and sclera) results from elevated bilirubin in the blood:
+
+- **Pre-hepatic (haemolytic)**: excessive RBC breakdown (e.g., sickle-cell disease, malaria).
+- **Hepatic**: liver damage impairs bilirubin conjugation (e.g., hepatitis, cirrhosis).
+- **Post-hepatic (obstructive)**: blockage of bile flow prevents bilirubin excretion (e.g.,
+  gallstones, pancreatic cancer).
+
+---
+
+## 10. Skin as an Organ
+
+### Structure
+
+- **Epidermis**: outer layer; keratinised stratified squamous epithelium. Contains melanocytes
+  (produce melanin for UV protection), Langerhans cells (antigen-presenting cells), and Merkel cells
+  (touch receptors).
+- **Dermis**: inner layer; contains connective tissue (collagen, elastin), blood vessels, nerve
+  endings, hair follicles, sebaceous glands, and sweat glands.
+- **Hypodermis (subcutaneous layer)**: adipose tissue for insulation and energy storage.
+
+### Functions
+
+- **Thermoregulation**: vasodilation/vasoconstriction of dermal blood vessels; sweating
+  (evaporative cooling).
+- **Protection**: keratinised epidermis provides a physical barrier; melanin absorbs UV radiation;
+  sebum has antimicrobial properties; Langerhans cells provide immune surveillance.
+- **Sensory reception**: Meissner's corpuscles (light touch), Pacinian corpuscles (pressure and
+  vibration), nociceptors (pain), thermoreceptors (temperature).
+- **Vitamin D synthesis**: UV radiation converts 7-dehydrocholesterol in the skin to cholecalciferol
+  (vitamin D3), which is converted in the liver and kidneys to the active form
+  ($1,25$-dihydroxyvitamin D).
+- **Excretion**: sweat contains water, $\mathrm{Na}^+$, $\mathrm{Cl}^-$, urea, and lactic acid.
+
+---
+
+## 11. Extended: Lung Volumes and Ventilation Mechanics
+
+### Lung Volumes and Capacities
+
+| Volume                        | Definition                                      | Typical value (adult male) |
+| ----------------------------- | ----------------------------------------------- | ------------------------- |
+| **Tidal volume (TV)**         | Volume of air inhaled/exhaled during normal breathing | $\approx 500\;\mathrm{mL}$ |
+| **Inspiratory reserve volume (IRV)** | Maximum additional air inhaled after normal inspiration | $\approx 3100\;\mathrm{mL}$ |
+| **Expiratory reserve volume (ERV)** | Maximum additional air exhaled after normal expiration | $\approx 1200\;\mathrm{mL}$ |
+| **Residual volume (RV)**       | Air remaining in lungs after maximal expiration | $\approx 1200\;\mathrm{mL}$ |
+| **Vital capacity (VC)**       | TV + IRV + ERV (maximum air that can be moved) | $\approx 4800\;\mathrm{mL}$ |
+| **Total lung capacity (TLC)**  | VC + RV                                        | $\approx 6000\;\mathrm{mL}$ |
+| **Dead space**                | Air in conducting airways not involved in gas exchange | $\approx 150\;\mathrm{mL}$ |
+| **Minute ventilation**         | TV $\times$ respiratory rate                       | $\approx 7500\;\mathrm{mL/min}$ (at 15 breaths/min) |
+| **Alveolar ventilation**       | (TV - dead space) $\times$ respiratory rate          | $\approx 5250\;\mathrm{mL/min}$ |
+
+### Alveolar Gas Exchange
+
+**Fick's Law** applied to alveolar exchange:
+
+$$\text{Rate of diffusion} \propto \frac{A \times \Delta P}{d}$$
+
+- $A$ (surface area) $\approx 70\;\mathrm{m}^2$ in adult lungs.
+- $\Delta P$ (partial pressure gradient) maintained by ventilation.
+- $d$ (diffusion distance) $\approx 1\;\mathrm{\mu m}$ (alveolar epithelium + capillary endothelium).
+
+**Alveolar gas equation:**
+
+$$P_A\mathrm{O}_2 = P_I\mathrm{O}_2 - \frac{P_A\mathrm{CO}_2}{R}$$
+
+where $R$ is the respiratory exchange ratio ($\approx 0.85$ at rest).
+
+---
+
+## 12. ECG and the Cardiac Cycle (Extended)
+
+### The Electrocardiogram (ECG)
+
+The ECG records the electrical activity of the heart using surface electrodes.
+
+| Wave / Segment | Duration (s) | Amplitude (mV) | Cardiac event                                                            |
+| ------------- | ------------ | -------------- | ------------------------------------------------------------------------- |
+| **P wave**     | $0.08$--$0.12$ | $< 0.25$      | Atrial depolarisation (contraction).                                      |
+| **PR interval** | $0.12$--$0.20$ | ---            | Atrioventricular conduction delay (AV node).                              |
+| **QRS complex** | $0.06$--$0.10$ | $1.0$--$1.5$   | Ventricular depolarisation (contraction). Bundle of His + bundle branches + Purkinje fibres. |
+| **ST segment** | $0.08$--$0.12$ | Isoelectric (flat) | Ventricular repolarisation beginning. Elevation = ischaemia (STEMI).     |
+| **T wave**     | $0.16$       | $0.1$--$0.5$    | Ventricular repolarisation.                                                   |
+
+**Clinical significance:**
+- **Tachycardia**: heart rate $> 100\;\mathrm{bpm}$.
+- **Bradycardia**: heart rate $< 60\;\mathrm{bpm}$.
+- **Atrial fibrillation**: irregular P waves; loss of coordinated atrial contraction.
+- **Ventricular fibrillation**: chaotic, disorganised ECG; no cardiac output; fatal without defibrillation.
+- **Myocardial infarction (heart attack)**: ST segment elevation (STEMI); inverted T waves; elevated cardiac enzymes (troponin, CK-MB).
+
+---
+
+## Exam-Style Problems (Extended)
+
+<details>
+<summary>Problem 9: Extended Response -- Nephron Function and Osmoregulation</summary>
+
+Describe the process of ultrafiltration in the glomerulus, identifying the forces that favour and oppose
+filtration and calculating the net filtration pressure. Explain how the loop of Henle establishes a
+concentration gradient in the medulla using the countercurrent multiplier mechanism. Explain the role
+of ADH in regulating water reabsorption in the collecting duct, and predict the volume and
+concentration of urine produced by a person who has been exercising vigorously in a hot environment
+(sweating heavily) versus a person at rest who has been drinking water excessively.
+
+</details>
+
+<details>
+<summary>Problem 10: Quantitative -- Kidney Filtration</summary>
+
+A patient's GFR is measured at $80\;\mathrm{mL/min}$ (normal: $125\;\mathrm{mL/min}$). Plasma
+glucose concentration is $5\;\mathrm{mmol/L}$ (MW $= 180\;\mathrm{g/mol}$). (a) Calculate the mass of
+glucose filtered per day. (b) If the patient has diabetes mellitus and the renal threshold for glucose
+is $10\;\mathrm{mmol/L}$, calculate the mass of glucose excreted per day. (c) Explain why
+glucosuria (glucose in urine) causes increased urine volume (polyuria).
+
+</details>
+
+<details>
+<summary>Problem 11: Extended Response -- Liver Function and Jaundice</summary>
+
+Describe the biochemical pathway by which bilirubin is produced from haemoglobin, transported in the blood
+(conjugated vs unconjugated), excreted in bile, and ultimately eliminated in faeces. Explain how each
+of the following conditions causes jaundice: (a) haemolytic anaemia, (b) hepatitis B infection, (c)
+gallstones blocking the common bile duct. For each, explain whether the jaundice is pre-hepatic,
+hepatic, or post-hepatic.
+
+</details>
+
+<details>
+<summary>Problem 12: Data Analysis -- Spirometry</summary>
+
+A spirometry test produces the following results for a patient:
+FVC = $3.0\;\mathrm{L}$ (predicted: $4.5\;\mathrm{L}$),
+$\mathrm{FEV}_1 = 1.8\;\mathrm{L}$ (predicted: $3.6\;\mathrm{L}$),
+$\mathrm{FEV}_1/\mathrm{FVC}$ ratio $= 0.60$ (predicted: $> 0.75$).
+(a) Calculate the percentage predicted values for FVC and $\mathrm{FEV}_1$. (b) Interpret the
+$\mathrm{FEV}_1/\mathrm{FVC}$ ratio and diagnose the type of respiratory disorder (obstructive vs
+restrictive). (c) Explain the physiological basis for the reduced $\mathrm{FEV}_1$ in obstructive lung
+disease (e.g., asthma, COPD). (d) Explain why $\mathrm{FEV}_1/\mathrm{FVC}$ is normal or increased in
+restrictive lung disease (e.g., pulmonary fibrosis).
+
+</details>
+

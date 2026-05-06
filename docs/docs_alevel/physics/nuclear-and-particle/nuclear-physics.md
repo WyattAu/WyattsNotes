@@ -48,7 +48,8 @@ $$d = \frac{79 \times (1.60 \times 10^{-19})^2}{2\pi \times 8.85 \times 10^{-12}
 This gives an upper bound on the nuclear radius of gold ($\sim 10^{-14}$ m, compared to the atomic
 radius of $\sim 10^{-10}$ m).
 
-:::warning Common Pitfall The distance of closest approach is an *upper bound* on the nuclear radius,
+:::warning
+warning
 not the radius itself. The alpha particle never actually touches the nucleus (the strong nuclear force
 has a very short range).
 :::
@@ -191,7 +192,8 @@ $$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 
 No change in $A$ or $Z$. Weakly ionising, highly penetrating (requires thick lead or concrete).
 
-:::warning Common Pitfall In $\beta^-$ decay, $A$ does not change — only $Z$. The neutron becomes a
+:::warning
+warning
 proton, so the total nucleon count is unchanged. Do not write $A - 1$ for beta decay.
 :::
 

@@ -890,7 +890,8 @@ Validity: the most restrictive condition is $|x| \lt 1/2$ (from $(1-2x)^{-1}$).
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Binomial Expansion**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-binomial-expansion) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Binomial Expansion with other pure mathematics topics to test synthesis under exam conditions.

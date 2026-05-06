@@ -552,7 +552,8 @@ For the A-Level treatment of this topic, see
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Magnetism and Electromagnetism**? The
+:::tip
+tip
 [diagnostic test](/docs/dse/Physics/diagnostics/diag-electricity-magnetism) contains the hardest
 questions within the DSE specification for this topic, each with a full worked solution.
 
@@ -560,4 +561,5 @@ questions within the DSE specification for this topic, each with a full worked s
 and Electromagnetism with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::

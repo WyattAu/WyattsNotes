@@ -405,7 +405,8 @@ $T = 0.5$ s). KE varies as $\cos(8\pi t)$, giving a frequency of $4$ Hz — exac
 displacement cycle, KE reaches its maximum twice: once as the mass passes through equilibrium moving
 left, and once moving right.
 
-:::tip Exam Technique When asked to sketch $E_k$ and $E_p$ against time, draw two sinusoidal curves
+:::tip
+tip
 at twice the displacement frequency, exactly out of phase, oscillating between $0$ and
 $E_{\mathrm{total}}$. Their sum is a horizontal line at $E_{\mathrm{total}}$.
 :::
@@ -470,7 +471,8 @@ $$E(t) = E_0 \, e^{-t/\tau_E}$$
 where $\tau_E = \tau/2 = m/b$. Energy is lost twice as fast as the amplitude decays, since
 $E \propto A^2$.
 
-:::warning Common Pitfall Critical damping is the fastest return **without oscillation**, not the
+:::warning
+warning
 fastest overall. A lightly damped system passes through equilibrium sooner but overshoots. Heavy
 damping is slower than critical — adding more damping beyond the critical value makes the system
 **slower**, not faster.
@@ -531,7 +533,8 @@ molecules, efficiently transferring energy and heating food.
 **MRI scanners:** Protons in body tissue resonate at specific radio frequencies in a strong magnetic
 field, enabling detailed internal imaging without ionising radiation.
 
-:::tip Exam Technique More damping $\to$ lower peak amplitude, broader resonance curve, peak shifts
+:::tip
+tip
 slightly below $f_0$. Less damping $\to$ higher, sharper peak closer to $f_0$. When sketching
 resonance curves for different damping levels, always label the natural frequency $f_0$ and show the
 amplitude axis clearly.

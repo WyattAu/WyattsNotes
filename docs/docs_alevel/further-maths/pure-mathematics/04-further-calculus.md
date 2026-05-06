@@ -100,7 +100,8 @@ $$I\left(1 + \frac{a^2}{b^2}\right) = e^{ax}\left(\frac{\sin bx}{b} + \frac{a\co
 
 $$\boxed{I = \frac{e^{ax}(a\cos bx + b\sin bx)}{a^2 + b^2} + C}$$
 
-:::tip When integrating $e^{ax}\cos bx$ or $e^{ax}\sin bx$, apply integration by parts twice. The
+:::tip
+tip
 original integral reappears — solve for it algebraically. Always keep $u = e^{ax}$ on both
 applications.
 :::
@@ -138,7 +139,8 @@ $I_1 = \displaystyle\int_0^{\pi/2}\sin x\,dx = 1$.
 **Example.** Using the reduction formula,
 $I_4 = \dfrac{3}{4}I_2 = \dfrac{3}{4}\cdot\dfrac{1}{2}I_0 = \dfrac{3}{4}\cdot\dfrac{1}{2}\cdot\dfrac{\pi}{2} = \dfrac{3\pi}{16}$.
 
-:::warning The boundary term $[-\sin^{n-1}x\cos x]_0^{\pi/2}$ vanishes only because the limits are
+:::warning
+warning
 $0$ and $\pi/2$. For general limits, the boundary term must be evaluated.
 :::
 
@@ -184,7 +186,8 @@ $$\int \frac{3x+1}{x^2+2x+5}\,dx = \frac{3}{2}\ln(x^2+2x+5) - 2\cdot\frac{1}{2}\
 
 $$= \frac{3}{2}\ln(x^2+2x+5) - \arctan\!\left(\frac{x+1}{2}\right) + C$$
 
-:::tip The standard strategy is: (1) complete the square in the denominator, (2) split the numerator
+:::tip
+tip
 into a multiple of $(2x + b)$ plus a constant, (3) the $(2x+b)$ part gives $\ln$, the constant gives
 $\arctan$.
 :::
@@ -248,7 +251,8 @@ $$\int \frac{1}{\sqrt{a^2 - (x+b)^2}}\,dx = \arcsin\frac{x+b}{a} + C$$
 
 These follow directly from the standard forms via the substitution $u = x + b$.
 
-:::warning Distinguish carefully between $\dfrac{1}{a^2+x^2}$ (gives $\arctan$),
+:::warning
+warning
 $\dfrac{1}{\sqrt{a^2-x^2}}$ (gives $\arcsin$), and $\dfrac{1}{a^2-x^2}$ (gives a logarithmic form).
 The square root makes the difference.
 :::

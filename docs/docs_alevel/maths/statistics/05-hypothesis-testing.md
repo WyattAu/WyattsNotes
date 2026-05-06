@@ -264,7 +264,8 @@ Equivalently, for the sample proportion $\hat{p} = X/n$:
 
 $$\hat{p} \approx N\!\left(p, \dfrac{p(1-p)}{n}\right)$$
 
-:::warning These conditions must be checked using the null value $p_0$ (the value specified in
+:::warning
+warning
 $H_0$), not the observed sample proportion $\hat{p}$.
 :::
 

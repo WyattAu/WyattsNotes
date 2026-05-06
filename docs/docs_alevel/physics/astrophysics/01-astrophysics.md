@@ -437,7 +437,8 @@ expands, photon wavelengths are stretched, producing cosmological redshift:
 
 $$1 + z = \frac{a_{\mathrm{now}}}{a_{\mathrm{then}}}$$
 
-:::info Board-Specific
+:::info
+info
 
 - **AQA** requires understanding of Hubble's law, the CMB, and evidence for the Big Bang.
 - **Edexcel** includes the Doppler effect for electromagnetic radiation and redshift calculations.

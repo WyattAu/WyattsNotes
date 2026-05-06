@@ -50,7 +50,8 @@ $\mathrm{output} \equiv \mathrm{income} \equiv \mathrm{expenditure}$ holds by ac
 inventories are treated as investment (if produced but unsold, counted as $I$), and taxes/subsidies
 adjust market prices to factor costs. $\blacksquare$
 
-:::warning Common Pitfall GDP counts _market transactions_. Unpaid work (household chores, volunteer
+:::warning
+warning
 work) is excluded. Illegal activities are also excluded (though some countries now include estimates
 of the shadow economy). This means GDP underestimates total economic activity, particularly in
 countries with large informal sectors.
@@ -108,7 +109,8 @@ debt, productivity) eventually constrain growth. It also highlights a limitation
 growth came with severe environmental costs, massive income inequality (urban-rural divide), and
 significant debt accumulation.
 
-:::info Board-Specific Note AQA and Edexcel frequently ask students to compare GDP performance
+:::info
+info
 across countries. CIE (9708) may ask students to interpret GDP data from developing economies. OCR
 requires understanding of the difference between **GDP** (output within borders) and **GNI** (income
 earned by nationals, including net income from abroad). GNI is particularly relevant for countries
@@ -169,7 +171,8 @@ council tax). RPI tends to give a higher inflation rate than CPI.
   Board-Specific Note CIE (9708) uses CPI. The UK government switched from RPI to CPI for most
   purposes in 2003. AQA and Edexcel may ask students to compare CPI and RPI. OCR may ask about the
   impact of RPI on index-linked government bonds. Note that the UK Statistics Authority designated
-  RPI as not a "National Statistic" in 2013 due to a formula flaw (see below). :::
+  RPI as not a "National Statistic" in 2013 due to a formula flaw (see below).
+  :::
 
 ### 2.2a Deeper Analysis: CPI vs RPI
 
@@ -192,7 +195,8 @@ interest payments, which means that when the Bank of England raises interest rat
 inflation, RPI tends to rise further (because mortgage costs increase), creating a perverse feedback
 loop.
 
-:::info Board-Specific Note Edexcel frequently tests the CPI vs RPI distinction in multiple-choice
+:::info
+info
 questions. AQA may ask for an evaluation of which measure is more accurate. CIE tends to focus on
 CPI alone but may ask about measurement issues more broadly. OCR may ask about the implications of
 using RPI for index-linked bonds — since RPI overstates inflation, bondholders receive higher
@@ -259,7 +263,8 @@ The Bank of England responded by raising the base rate from 0.1% (December 2021)
 2023). By late 2024, inflation had fallen back towards the 2% target, though services inflation
 remained sticky due to persistent wage growth.
 
-:::info Board-Specific Note AQA and Edexcel both require students to distinguish between demand-pull
+:::info
+info
 and cost-push causes of inflation using real-world data. CIE (9708) may present students with a
 data-response question featuring inflation statistics from a specific country. OCR has previously
 examined the role of supply-side shocks in causing stagflation (rising inflation with falling
@@ -349,7 +354,8 @@ Causes include:
 - Strong trade unions negotiating wages above equilibrium
 - Generous unemployment benefits reducing the incentive to accept low-paid work
 
-:::info Board-Specific Note AQA distinguishes clearly between cyclical and structural unemployment
+:::info
+info
 and frequently tests causes and remedies. Edexcel emphasises the role of the NMW in causing
 real-wage unemployment. CIE (9708) uses the term "demand-deficient" rather than "cyclical" and may
 ask about hysteresis. OCR has examined the relationship between structural unemployment and regional
@@ -463,7 +469,8 @@ financial accounts (borrowing from abroad or selling assets).
 - However, persistent deficits financed by borrowing are unsustainable
 - Deficits caused by lack of competitiveness are problematic
 
-:::info Board-Specific Note AQA and Edexcel both require students to calculate the current account
+:::info
+info
 balance from data and evaluate whether a deficit is a problem. CIE (9708) may ask about the
 relationship between the current account and the exchange rate. OCR has examined the Marshall-Lerner
 condition and the J-curve effect in the context of current account adjustment.
@@ -565,7 +572,8 @@ The Phillips curve relationship has been far less stable in practice than theory
   whether the Phillips curve had steepened again, or whether the inflation was primarily
   supply-driven (cost-push) rather than demand-driven.
 
-:::info Board-Specific Note AQA requires students to explain the expectations-augmented Phillips
+:::info
+info
 curve and distinguish between short-run and long-run. Edexcel frequently tests the concept of
 hysteresis and how it relates to the Phillips curve (if unemployment rises above `u*`, `u*` itself
 may rise, shifting the LRPC right). CIE (9708) may present a data-response question showing
@@ -614,7 +622,8 @@ These objectives often conflict:
 - **Unemployment vs inflation**: short-run Phillips curve trade-off
 - **All objectives vs each other**: policy must balance competing priorities
 
-:::tip Exam Technique When asked about macroeconomic performance, always use data. Reference the
+:::tip
+tip
 most recent ONS figures for UK GDP growth, inflation rate, unemployment rate, and current account
 balance. Examiners reward application of theory to real data.
 :::
@@ -644,7 +653,8 @@ hand... on the other hand... however... therefore"** structure. Here is a worked
   of England's mandate to target inflation (price stability) reflects a judgement that maintaining
   price stability is a prerequisite for achieving the other objectives.
 
-:::info Board-Specific Note AQA essays (25-mark questions) require a sustained argument with
+:::info
+info
 evaluation throughout. Edexcel's Paper 3 requires evaluation of policy effectiveness. CIE (9708)
 data-response questions (Part b, 8 marks; Part c, 12 marks) require analysis and evaluation of
 extract data. OCR's Component 3 requires a 20-mark essay with a clear conclusion. All boards reward
@@ -816,7 +826,8 @@ The Bank of England feared that if inflation remained high for an extended perio
 
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Confusing real and nominal GDP:** Students often forget to adjust for inflation when comparing GDP across years. Always check whether a question asks for real or nominal figures. A rise in nominal GDP may simply reflect price increases, not actual growth.
 

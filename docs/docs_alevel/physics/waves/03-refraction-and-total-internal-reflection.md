@@ -173,7 +173,8 @@ $\sin\theta_2$ can exceed 1 for sufficiently large $\theta_1$, which is impossib
 entirely reflected. If $n_1 < n_2$, then $\frac{n_1}{n_2} < 1$ and
 $\sin\theta_2 < \sin\theta_1 \leq 1$ for all $\theta_1$, so refraction always occurs.
 
-:::warning Common Pitfall TIR can only occur when light travels from a denser medium to a less dense
+:::warning
+warning
 medium. Light going from air into glass can never undergo TIR, no matter how large the angle of
 incidence.
 :::
@@ -265,7 +266,8 @@ Two main effects degrade the signal in optical fibres:
    - **Modal dispersion**: rays entering at different angles travel different path lengths (in
      multimode fibres).
 
-:::tip Exam Technique When asked about advantages of optical fibres over copper cables, mention:
+:::tip
+tip
 higher bandwidth, no electromagnetic interference, lighter weight, no electrical sparking risk,
 lower signal loss over long distances.
 :::
@@ -311,7 +313,8 @@ angle exceeds the critical angle, producing TIR. Prism periscopes are preferred 
 periscopes because TIR gives 100% reflection (no absorption by a metallic coating), and the
 reflective surface is protected inside the glass, making it resistant to scratches and tarnishing.
 
-:::info Board Coverage AQA Paper 2 (optical fibres in required practical) | Edexcel CP6 (medical
+:::info
+info
 physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2
 :::
 
@@ -567,7 +570,8 @@ fibre length.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Refraction and TIR**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-refraction-total-internal-reflection) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Refraction and TIR with other physics topics to test synthesis under exam conditions.
@@ -575,7 +579,8 @@ Ready to test your understanding of **Refraction and TIR**? The [diagnostic test
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Confusing the critical angle with the angle of incidence:** The critical angle c is the MINIMUM angle of incidence (measured from the normal) at which total internal reflection occurs. TIR happens when the angle of incidence EXCEEDS the critical angle, not when it equals it. Light going from glass to air at an angle less than c is refracted, not totally reflected.
 

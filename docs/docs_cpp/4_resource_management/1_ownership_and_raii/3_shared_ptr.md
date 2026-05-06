@@ -65,7 +65,8 @@ construction creates a new control block, leading to multiple destructions (doub
 int* raw = new int(42);
 std::shared_ptr<int> p1(raw);
 std::shared_ptr<int> p2(raw);  // BUG: second control block, double-free!
-``` :::
+```
+:::
 
 ### Reference Count State Machine
 
@@ -772,3 +773,4 @@ int main() {
 - [Weak Pointers and Cyclic Reference Breaking](4_weak_ptr.md)
 - [Common Pitfalls](5_custom_deleters.md)
 - [RAII Patterns](1_raii_patterns.md)
+:::

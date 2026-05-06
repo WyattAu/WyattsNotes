@@ -1135,6 +1135,145 @@ The claim is **incorrect**. Excretion and egestion are fundamentally different p
 
 ---
 
+---
+
+## Placenta and Foetal Development
+
+### Placental Structure and Exchange
+
+The placenta is a temporary organ that forms during pregnancy, facilitating exchange between maternal and foetal blood. Maternal and foetal blood do NOT mix -- they are separated by the placental barrier.
+
+**Structure:**
+
+| Component            | Description                                                                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Chorionic villi      | Finger-like projections of the chorion (outer layer of the blastocyst) that project into the intervillous spaces filled with maternal blood |
+| Intervillous spaces  | Spaces filled with maternal blood that bathe the chorionic villi                                                              |
+| Placental barrier    | Thin membrane (trophoblast epithelium, connective tissue, foetal capillary endothelium) across which exchange occurs             |
+| Umbilical artery     | Carries deoxygenated blood and waste from the foetus to the placenta (two arteries)                                           |
+| Umbilical vein       | Carries oxygenated blood and nutrients from the placenta to the foetus (one vein)                                             |
+
+**Substances exchanged across the placenta:**
+
+| Substance               | Direction                  | Method of Exchange           |
+| ----------------------- | -------------------------- | ---------------------------- |
+| Oxygen ($\mathrm{O}_2$) | Maternal to foetal          | Simple diffusion              |
+| Carbon dioxide ($\mathrm{CO}_2$) | Foetal to maternal      | Simple diffusion              |
+| Glucose                 | Maternal to foetal          | Facilitated diffusion         |
+| Amino acids             | Maternal to foetal          | Active transport              |
+| Antibodies (IgG)        | Maternal to foetal          | Active transport (provides passive immunity) |
+| Urea, waste            | Foetal to maternal          | Simple diffusion              |
+| Alcohol, drugs, viruses | Maternal to foetal          | Simple diffusion (can harm the foetus) |
+| Maternal antibodies (IgG) | Maternal to foetal         | Active transport (provides passive immunity for the first few months) |
+| Red blood cells         | NO exchange                 | Too large to cross the barrier |
+
+**Functions of the placenta:**
+
+1. **Nutrient exchange:** Glucose, amino acids, fatty acids, vitamins, and minerals pass from mother to foetus
+2. **Gas exchange:** $\mathrm{O}_2$ passes from mother to foetus; $\mathrm{CO}_2$ passes from foetus to mother
+3. **Waste removal:** Urea and other waste products pass from foetus to mother for excretion
+4. **Hormone production:** Produces progesterone (maintains pregnancy), oestrogen, and hCG (detected in pregnancy tests)
+5. **Immune protection:** Maternal IgG antibodies cross the placenta, providing passive immunity to the foetus
+6. **Barrier function:** The placental barrier prevents many (but not all) pathogens and harmful substances from reaching the foetus
+
+### Foetal Circulation
+
+The foetal circulatory system has adaptations that differ from the adult system because the foetus does not use its lungs or digestive system.
+
+| Adaptation                | Description                                                                                                               |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Ductus venosus            | Bypasses the liver; shunts blood from the umbilical vein directly to the inferior vena cava                          |
+| Foramen ovale            | Opening between the right and left atria; shunts blood from the right atrium to the left atrium, bypassing the lungs   |
+| Ductus arteriosus         | Connects the pulmonary artery to the aorta; shunts blood away from the lungs                                         |
+| High haemoglobin concentration | Foetal haemoglobin has a higher affinity for $\mathrm{O}_2$ than adult haemoglobin, facilitating oxygen transfer from the mother |
+
+After birth, the ductus venosus, foramen ovale, and ductus arteriosus close as the baby begins to breathe and the placental circulation ceases.
+
+---
+
+## Methods of Contraception
+
+### Comparison of Contraceptive Methods
+
+| Method                         | Type             | Mechanism                                                                                              | Effectiveness (typical use) |
+| ------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------- |
+| Male condom                    | Barrier          | Physical barrier preventing sperm reaching the egg                                                     | ~85%                         |
+| Female condom                  | Barrier          | Physical barrier worn inside the vagina                                                                | ~79%                         |
+| Combined oral contraceptive pill | Hormonal       | Contains oestrogen and progesterone; inhibits ovulation; thickens cervical mucus; thins endometrium | ~91%                         |
+| Progestogen-only pill (mini-pill) | Hormonal    | Thickens cervical mucus; may inhibit ovulation in some women                                             | ~91%                         |
+| Intrauterine device (IUD)      | Barrier/Hormonal | Copper IUD: toxic to sperm, prevents implantation. Hormonal IUD: thickens mucus, thins endometrium              | >99%                         |
+| Injection (Depo-Provera)       | Hormonal         | Slow-release progesterone; inhibits ovulation; thickens cervical mucus                                       | ~94%                         |
+| Implant (e.g., Nexplanon)      | Hormonal         | Subdermal rod releasing progesterone over 3 years                                                      | >99%                         |
+| Male sterilisation (vasectomy) | Surgical       | Vas deferens cut and tied; sperm cannot reach semen                                                      | >99.9%                       |
+| Female sterilisation (tubal ligation) | Surgical | Oviducts cut and tied; egg cannot reach uterus; sperm cannot reach egg                                   | >99.5%                       |
+| Rhythm method (calendar)       | Behavioural      | Avoiding intercourse during the fertile window (around ovulation)                                            | ~76%                         |
+| Withdrawal (coitus interruptus) | Behavioural  | Penis removed before ejaculation                                                                       | ~78%                         |
+| Emergency contraception        | Hormonal         | High-dose progesterone (or ulipristal acetate); taken within 72 hours of unprotected intercourse; prevents/delays ovulation | ~85%                         |
+
+---
+
+## Infertility and Assisted Reproductive Technology
+
+### Causes of Infertility
+
+| Cause                          | Male/Female | Description                                                                                                                   |
+| ------------------------------ | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Low sperm count                | Male        | Fewer sperm in the ejaculate reduces the probability of fertilisation                                                          |
+| Poor sperm motility            | Male        | Sperm cannot swim effectively to reach the egg                                                                            |
+| Blocked oviducts (e.g., PID)   | Female      | Scarring from pelvic inflammatory disease (often caused by chlamydia or gonorrhoea) prevents the egg and sperm from meeting |
+| Failure to ovulate             | Female      | Hormonal imbalances (e.g., PCOS, low FSH/LH) prevent egg release                                                          |
+| Endometriosis                  | Female      | Endometrial tissue grows outside the uterus; can block oviducts and impair ovulation                                         |
+| Age-related decline            | Both        | Egg quality and quantity decline with age; sperm quality declines with age                                                 |
+| Uterine abnormalities          | Female      | Fibroids, polyps, or structural abnormalities prevent implantation                                                       |
+
+### Assisted Reproductive Technology (ART)
+
+**1. In vitro fertilisation (IVF):**
+
+1. The woman is given FSH injections to stimulate multiple follicle development (superovulation)
+2. Mature eggs are collected from the ovaries (laparoscopy or ultrasound-guided needle)
+3. Sperm is collected from the male partner
+4. Eggs and sperm are mixed in a laboratory dish (in vitro = "in glass")
+5. Fertilised eggs (zygotes) are allowed to develop into embryos (2-8 cell stage)
+6. One or two embryos are transferred into the uterus (embryo transfer)
+7. Remaining viable embryos can be frozen (cryopreserved) for future use
+
+**Success rate:** Approximately 25-30% per cycle (varies with age and cause of infertility)
+
+**2. Intracytoplasmic sperm injection (ICSI):**
+
+- A single sperm is injected directly into the egg cytoplasm
+- Used when male infertility is the cause (very low sperm count, poor motility, abnormal sperm morphology)
+- Otherwise similar procedure to IVF
+
+**3. Artificial insemination (AI):**
+
+- Sperm is collected, processed, and inserted directly into the uterus (intrauterine insemination, IUI)
+- Can use partner's sperm or donor sperm
+- Used for mild male infertility, unexplained infertility, or when using donor sperm
+
+**Ethical considerations of ART:**
+
+| Issue                  | Arguments For                                     | Arguments Against                                   |
+| ---------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| IVF for infertile couples | Helps couples have children who otherwise could not | Expensive; not universally accessible; multiple births risk |
+| Designer babies         | Could eliminate genetic diseases (PGD)            | Could lead to selection for non-medical traits; eugenics concerns |
+| Surrogacy              | Allows couples who cannot carry a pregnancy       | Exploitation concerns; legal complexity; emotional impact |
+| Embryo research         | Could lead to treatments for diseases             | Destruction of embryos is ethically contentious for some |
+| Storage of embryos     | Allows future use; reduces need for repeated IVF  | What happens to stored embryos if couple separates or dies? |
+
+### Preimplantation Genetic Diagnosis (PGD)
+
+PGD is a technique used alongside IVF to screen embryos for specific genetic disorders before implantation:
+
+1. Embryos are created by IVF
+2. At the 8-cell stage, one or two cells are removed (blastomere biopsy)
+3. The DNA of these cells is tested for specific genetic conditions (e.g., cystic fibrosis, sickle cell disease, Huntington's disease, chromosomal abnormalities)
+4. Only embryos without the genetic condition are selected for transfer
+
+PGD allows parents who are carriers of genetic disorders to have children without passing on the condition, without the ethical dilemma of terminating an affected pregnancy.
+
+
 :::tip
 Diagnostic Test
 Ready to test your understanding of **Human Reproduction and Homeostasis**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-human-reproduction-homeostasis) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
@@ -1142,5 +1281,161 @@ Ready to test your understanding of **Human Reproduction and Homeostasis**? The 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human Reproduction and Homeostasis with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
 
+---
+
+## The Menstrual Cycle in Detail
+
+### Hormonal Control
+
+The menstrual cycle is controlled by four main hormones, involving a complex interplay of positive and negative feedback:
+
+| Hormone                | Source                     | Function                                                                                                                 |
+| ---------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| FSH (Follicle-Stimulating Hormone) | Anterior pituitary | Stimulates follicle development in the ovary; stimulates oestrogen production by the follicle cells (granulosa cells) |
+| LH (Luteinising Hormone) | Anterior pituitary         | Triggers ovulation (release of the egg from the follicle); stimulates the corpus luteum to develop and produce progesterone |
+| Oestrogen                | Developing follicle (granulosa cells) | Stimulates proliferation of the endometrium (uterine lining); inhibits FSH production (negative feedback at low levels); stimulates LH surge (positive feedback at high levels, just before ovulation) |
+| Progesterone             | Corpus luteum              | Maintains the thick, glandular endometrium; inhibits FSH and LH production (negative feedback); suppresses uterine contractions |
+
+### Phases of the Menstrual Cycle
+
+| Phase                  | Days                  | Ovarian Events                                                                                                            | Uterine Events                           | Hormone Levels                    |
+| ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------- |
+| **Menstruation**         | Days 1-5              | The corpus luteum from the previous cycle degenerates (if fertilisation did not occur); progesterone and oestrogen levels drop | The thickened endometrium breaks down and is shed along with blood through the vagina | Low oestrogen, low progesterone   |
+| **Follicular phase**     | Days 1-13             | Several follicles begin to develop; one becomes dominant and continues to mature; the egg within the dominant follicle completes meiosis I | The endometrium begins to thicken and proliferate (stimulated by rising oestrogen) | Rising oestrogen (from follicle); FSH initially rises then falls (inhibited by oestrogen) |
+| **Ovulation**            | Day 14 (approximately) | The mature follicle ruptures, releasing the secondary oocyte (egg) into the fallopian tube                              | Endometrium continues to thicken         | Peak in oestrogen triggers LH surge (positive feedback); LH peak triggers ovulation |
+| **Luteal phase**         | Days 15-28            | The ruptured follicle develops into the corpus luteum, which secretes progesterone (and some oestrogen)                   | Endometrium reaches maximum thickness; becomes secretory (glands produce glycogen-rich secretions to support a potential embryo) | Rising progesterone (from corpus luteum); progesterone inhibits FSH and LH (negative feedback) |
+
+### What Happens If Fertilisation Occurs vs Does Not Occur
+
+| Scenario                  | Events                                                                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Fertilisation occurs**    | The embryo implants in the endometrium (~day 6-7 after fertilisation); the developing placenta produces **hCG** (human chorionic gonadotrophin), which maintains the corpus luteum; the corpus luteum continues to produce progesterone and oestrogen, maintaining the endometrium; menstruation does NOT occur; hCG is detected by pregnancy tests |
+| **Fertilisation does NOT occur** | The corpus luteum degenerates after approximately 14 days (day 28); progesterone and oestrogen levels drop sharply; the endometrium breaks down; menstruation begins (day 1 of the next cycle); the drop in progesterone and oestrogen removes the negative feedback on the anterior pituitary; FSH begins to rise again, starting a new cycle |
+
+### Feedback Mechanisms
+
+| Feedback Type            | Description                                                                                                               | Timing in Cycle                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| Negative feedback (oestrogen on FSH) | Rising oestrogen inhibits FSH secretion from the anterior pituitary; this prevents multiple follicles from developing simultaneously | Throughout follicular phase (low-medium oestrogen) |
+| Positive feedback (oestrogen on LH) | When oestrogen reaches a critical HIGH threshold (around day 12-13), it switches from negative to positive feedback; high oestrogen stimulates a surge in LH secretion from the anterior pituitary | Just before ovulation (day 12-13)      |
+| Negative feedback (progesterone on FSH and LH) | Progesterone inhibits both FSH and LH secretion; this prevents the development of a new follicle and another ovulation while a potential pregnancy is being established | Throughout luteal phase                |
+
+---
+
+## Methods of Studying Reproduction
+
+### Infertility Investigation
+
+| Investigation             | Description                                                                                                               | What It Detects                         |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Semen analysis            | Sample of semen is analysed for sperm count, motility (movement), morphology (shape), and volume                        | Male infertility factors                |
+| Hormone assays            | Blood tests measuring levels of FSH, LH, oestrogen, progesterone, testosterone, prolactin                              | Hormonal imbalances                     |
+| Ovulation tracking        | Monitoring basal body temperature (slight rise after ovulation due to progesterone); urine LH tests; ultrasound monitoring of follicles | Whether and when ovulation occurs       |
+| Hysterosalpingography     | X-ray imaging of the uterus and fallopian tubes after injection of a contrast dye                                       | Blocked fallopian tubes; uterine abnormalities |
+| Laparoscopy               | A small camera is inserted through a keyhole incision to examine the pelvic organs                                        | Endometriosis; pelvic adhesions; ovarian cysts |
+| Ovarian reserve testing   | Blood test for anti-Mullerian hormone (AMH); antral follicle count via ultrasound                                        | Number and quality of remaining eggs     |
+
+### Assisted Reproductive Technology (ART)
+
+**IVF (In Vitro Fertilisation) detailed steps:**
+
+| Step                    | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| 1. Ovarian stimulation    | The woman is given hormonal drugs (FSH injections) to stimulate the development of multiple follicles (instead of just one) |
+| 2. Egg retrieval          | Mature eggs are collected from the ovaries using a needle guided by ultrasound (transvaginal oocyte retrieval)            |
+| 3. Sperm collection       | A semen sample is collected from the male partner; sperm are prepared (washed and concentrated)                          |
+| 4. Fertilisation          | Eggs and sperm are mixed in a culture dish (conventional IVF) or a single sperm is injected directly into each egg (ICSI -- intracytoplasmic sperm injection); fertilisation occurs in the laboratory |
+| 5. Embryo culture         | Fertilised eggs (zygotes) are cultured for 3-5 days, developing into embryos; the best-quality embryos are selected       |
+| 6. Embryo transfer        | One or two embryos are transferred into the woman's uterus using a thin catheter                                          |
+| 7. Pregnancy test         | A blood test for hCG is performed approximately 2 weeks after embryo transfer to determine if implantation was successful |
+
+**Success rates:** IVF success depends on the woman's age (approximately 30-40% per cycle for women under 35; decreasing to less than 5% for women over 42).
+
+---
+
+## Common Pitfalls
+
+- **Oestrogen has BOTH negative and positive feedback effects on the anterior pituitary.** At LOW to MODERATE levels, oestrogen inhibits FSH (negative feedback). At HIGH levels (just before ovulation), oestrogen STIMULATES LH secretion (positive feedback). This dual role is frequently tested in DSE exams
+- **The corpus luteum is maintained by hCG during pregnancy, NOT by FSH or LH.** hCG is produced by the developing embryo/placenta and has a similar structure and function to LH
+- **Menstruation occurs because progesterone and oestrogen levels DROP, not because they rise.** The drop in hormone levels causes the endometrium to break down. If progesterone is maintained (by hCG from a pregnancy), the endometrium is maintained and menstruation does not occur
+- **The menstrual cycle is typically described as 28 days, but this is an average.** Normal cycles range from 21-35 days. The luteal phase is relatively constant (14 days); variation in cycle length is mainly due to variation in the follicular phase
+
+---
+
+## Endocrine System Overview
+
+### Comparison of Nervous and Endocrine Systems
+
+| Feature                  | Nervous System                                                                                                            | Endocrine System                                                                                                         |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Signal type               | Electrical impulses (nerve impulses)                                                                                     | Chemical signals (hormones)                                                                                              |
+| Transmission speed        | Very fast (milliseconds)                                                                                                 | Slower (seconds to hours to days)                                                                                       |
+| Duration of effect        | Short-lived (impulses stop when stimulus is removed)                                                                     | Longer-lasting (hormones persist in the blood until broken down or excreted)                                            |
+| Target specificity        | Very specific (nerve impulses travel along specific neurons to specific target cells)                                    | Can be widespread (hormones are carried in the blood to all tissues) but only affect cells with the appropriate receptors |
+| Method of communication   | Neurons (synapses between cells)                                                                                         | Bloodstream (hormones secreted into blood, travel throughout the body)                                                  |
+| Response                 | Movement, secretion, sensation                                                                                           | Growth, metabolism, reproduction, homeostasis                                                                           |
+| Example                   | Reflex arc (withdrawal from hot object)                                                                                 | ADH regulating water balance; insulin and glucagon regulating blood glucose                                             |
+
+### Major Endocrine Glands and Hormones
+
+| Gland                   | Hormone(s)                 | Function(s)                                                                                                               | Target                                  |
+| ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Hypothalamus             | Releasing hormones (e.g., GnRH, TRH, CRH, GHRH); ADH (stored in posterior pituitary); oxytocin (stored in posterior pituitary) | Controls the pituitary gland; regulates homeostasis (water balance, temperature); controls circadian rhythms | Anterior pituitary; posterior pituitary |
+| Anterior pituitary       | FSH, LH, ACTH, TSH, GH, prolactin                                                                                      | Stimulates other endocrine glands; promotes growth; stimulates milk production                                        | Gonads, adrenal cortex, thyroid, whole body, mammary glands |
+| Posterior pituitary      | ADH (vasopressin), oxytocin                                                                                            | Water reabsorption in kidneys; uterine contractions during labour; milk ejection during breastfeeding                    | Kidneys; uterus; mammary glands          |
+| Thyroid                  | T3 (triiodothyronine), T4 (thyroxine), calcitonin                                                                       | Increases basal metabolic rate; stimulates growth and development; regulates calcium levels (calcitonin lowers blood calcium) | Most body cells; bones                   |
+| Parathyroid glands       | Parathyroid hormone (PTH)                                                                                              | Increases blood calcium concentration (stimulates osteoclasts to break down bone; increases calcium reabsorption in kidneys; activates vitamin D) | Bones; kidneys; intestine                |
+| Adrenal cortex           | Cortisol, aldosterone, androgens                                                                                        | Cortisol: stress response; increases blood glucose; suppresses immune system. Aldosterone: increases sodium reabsorption in kidneys (regulates blood pressure and blood volume) | Most body cells; kidneys                  |
+| Adrenal medulla          | Adrenaline (epinephrine), noradrenaline (norepinephrine)                                                                | Fight-or-flight response: increases heart rate, blood pressure, blood glucose; dilates airways; dilates pupils; diverts blood to muscles | Heart, blood vessels, liver, lungs, eyes |
+| Pancreas (islets)        | Insulin ($\beta$ cells), glucagon ($\alpha$ cells), somatostatin ($\delta$ cells)                                       | Insulin: lowers blood glucose. Glucagon: raises blood glucose. Somatostatin: inhibits insulin and glucagon secretion     | Liver, muscle, fat cells                 |
+| Ovaries                  | Oestrogen, progesterone, inhibin                                                                                        | Female secondary sexual characteristics; regulates menstrual cycle; maintains pregnancy                                 | Uterus, breasts, hypothalamus/pituitary  |
+| Testes                   | Testosterone, inhibin                                                                                                   | Male secondary sexual characteristics; spermatogenesis; muscle growth; bone density                                   | Most body cells; hypothalamus/pituitary  |
+| Pineal gland             | Melatonin                                                                                                                 | Regulates circadian rhythm (sleep-wake cycle); produced in response to darkness                                         | Brain (suprachiasmatic nucleus)          |
+
+### Thyroid Disorders
+
+| Disorder                | Cause                                                                                                                     | Symptoms                                                                                                                 | Treatment                                |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| Hyperthyroidism          | Overproduction of T3/T4 (e.g., Graves' disease -- autoimmune stimulation of thyroid; toxic nodular goitre)                | Weight loss; rapid heart rate (tachycardia); anxiety; tremor; sweating; heat intolerance; exophthalmos (bulging eyes in Graves' disease) | Anti-thyroid drugs (carbimazole); radioactive iodine treatment; surgical removal of thyroid |
+| Hypothyroidism           | Underproduction of T3/T4 (e.g., Hashimoto's thyroiditis -- autoimmune destruction of thyroid; iodine deficiency)          | Weight gain; fatigue; cold intolerance; dry skin; constipation; depression; goitre (enlarged thyroid)                   | Thyroxine replacement therapy (daily oral tablet); lifelong treatment |
+| Cretinism                | Congenital hypothyroidism (thyroid deficiency from birth)                                                                 | Stunted physical growth; intellectual disability if not treated promptly                                                 | Early detection by newborn screening; thyroxine treatment from birth |
+
+### Adrenal Disorders
+
+| Disorder                | Cause                                                                                                                     | Symptoms                                                                                                                 | Treatment                                |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| Cushing's syndrome        | Excess cortisol (e.g., prolonged corticosteroid use; ACTH-secreting pituitary tumour; adrenal tumour)                     | Weight gain (especially face, trunk); "moon face"; thin skin; easy bruising; high blood pressure; muscle weakness; mood changes | Treat underlying cause; reduce corticosteroid dose; surgery to remove tumour |
+| Addison's disease        | Insufficient cortisol and aldosterone (autoimmune destruction of adrenal cortex)                                          | Weight loss; fatigue; low blood pressure; darkening of skin (hyperpigmentation); salt craving; hypoglycaemia            | Lifelong corticosteroid and mineralocorticoid replacement therapy (hydrocortisone and fludrocortisone) |
+| Conn's syndrome          | Excess aldosterone (adrenal tumour)                                                                                      | High blood pressure; muscle weakness; frequent urination; low blood potassium (hypokalaemia)                             | Surgery to remove tumour; aldosterone antagonists (spironolactone) |
+
+### Feedback Mechanisms in the Endocrine System
+
+**TSH-T3/T4 negative feedback:**
+
+1. Hypothalamus releases TRH (thyrotropin-releasing hormone)
+2. TRH stimulates the anterior pituitary to release TSH (thyroid-stimulating hormone)
+3. TSH stimulates the thyroid gland to produce T3 and T4
+4. T3 and T4 inhibit the hypothalamus (reducing TRH) and the anterior pituitary (reducing TSH) -- negative feedback
+5. If T3/T4 levels are too high, TRH and TSH production are suppressed, reducing thyroid hormone production
+6. If T3/T4 levels are too low, TRH and TSH production increase, stimulating more thyroid hormone production
+
+**Stress response (HPA axis):**
+
+1. Stress detected by the hypothalamus
+2. Hypothalamus releases CRH (corticotropin-releasing hormone)
+3. CRH stimulates the anterior pituitary to release ACTH (adrenocorticotropic hormone)
+4. ACTH stimulates the adrenal cortex to release cortisol
+5. Cortisol increases blood glucose (gluconeogenesis), suppresses the immune system, and reduces inflammation
+6. Cortisol inhibits the hypothalamus and anterior pituitary (negative feedback), reducing CRH and ACTH production
+
+---
+
+## Common Pitfalls
+
+- **The posterior pituitary does NOT produce hormones; it STORES and RELEASES hormones produced by the hypothalamus.** ADH and oxytocin are synthesised in the hypothalamus and transported down nerve fibres to the posterior pituitary, where they are stored until needed
+- **Thyroxine (T4) is produced in much larger quantities than T3, but T3 is the ACTIVE form.** T4 is converted to T3 in target tissues by the enzyme deiodinase
+- **Cortisol INCREASES blood glucose (by stimulating gluconeogenesis), it does not decrease it.** Students sometimes confuse cortisol with insulin. Cortisol is a catabolic hormone that breaks down proteins and fats to provide glucose
+- **Aldosterone acts on the KIDNEYS to increase sodium reabsorption (not on all body cells).** Water follows sodium by osmosis, so aldosterone indirectly increases water reabsorption and blood volume/blood pressure
+- **Adrenaline is produced by the adrenal MEDULLA (not cortex); cortisol is produced by the adrenal CORTEX (not medulla).** The adrenal medulla is stimulated by the sympathetic nervous system (fight-or-flight); the adrenal cortex is stimulated by ACTH from the anterior pituitary**
+:::

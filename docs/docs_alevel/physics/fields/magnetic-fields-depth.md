@@ -162,7 +162,8 @@ $$\varepsilon = -N\frac{d\Phi}{dt}$$
 opposing it, a self-amplifying cycle would create energy from nothing. The opposition ensures that
 work must be done to maintain the flux change, and this work appears as electrical energy.
 
-:::tip Exam Technique When applying Lenz's law: (1) identify the direction of the change in flux, (2)
+:::tip
+tip
 determine the field direction that would oppose this change, (3) use the right-hand grip rule to find
 the induced current direction.
 :::

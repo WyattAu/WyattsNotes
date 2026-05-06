@@ -375,7 +375,8 @@ cycles. Emphasis on hardware complexity.
 | Code density       | Lower (more instructions) | Higher (fewer instructions)   |
 | Power consumption  | Lower                     | Higher                        |
 
-:::info Board-specific All A Level boards require understanding of RISC vs CISC principles. ARM
+:::info
+info
 (used in smartphones, Raspberry Pi) is RISC. Intel/AMD processors are CISC (but use RISC-like
 internal micro-operations).
 :::

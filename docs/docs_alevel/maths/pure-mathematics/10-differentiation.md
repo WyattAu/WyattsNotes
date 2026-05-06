@@ -41,7 +41,8 @@ provided this limit exists. If it does, we say $f$ is **differentiable** at $x$.
 line through the points $(x, f(x))$ and $(x+h, f(x+h))$. As $h \to 0$, this secant approaches the
 tangent, so $f'(x)$ is the gradient of the tangent at $x$.
 
-:::info A function is differentiable at a point if and only if it is smooth (no sharp corners)
+:::info
+info
 there. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous at $x=0$ but not
 differentiable.
 :::
@@ -248,7 +249,8 @@ $$f(x) - f(a) \approx \frac{f''(a)}{2}(x-a)^2$$
 - If $f''(a) \lt{} 0$: $f(x) - f(a) \lt{} 0$ for $x \neq a$, so $f(a)$ is a **maximum**.
 - If $f''(a) = 0$: the test is inconclusive; use a nature table or higher derivatives.
 
-:::warning The second derivative test is **sufficient but not necessary**. If $f''(a) = 0$, the
+:::warning
+warning
 point could still be a maximum, minimum, or inflection. Always use a nature table (checking the sign
 of $f'$ on either side) if the second derivative test is inconclusive.
 :::
@@ -299,7 +301,8 @@ $f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$.
 For $x \gt{} 1$: $(x-1) \gt{} 0$ and $(x+1) \gt{} 0$, so $f'(x) \gt{} 0$. Hence $f$ is strictly
 increasing for $x \gt{} 1$.
 
-:::tip When asked to "find where a function is increasing", set $f'(x) \gt{} 0$ and solve the
+:::tip
+tip
 inequality. When asked to "show that a function is increasing", verify that $f'(x) \gt{} 0$ (or
 $\geq 0$) on the given interval.
 :::
@@ -311,7 +314,8 @@ $\geq 0$) on the given interval.
 A **point of inflection** is where the curve changes concavity (from concave up to concave down, or
 vice versa). This occurs where $f''(x) = 0$ and the sign of $f''(x)$ changes.
 
-:::warning A point of inflection does **not** require $f'(x) = 0$. For example, $f(x) = x^3$ has a
+:::warning
+warning
 point of inflection at $x = 0$, but $f'(0) = 0$ in this case. Consider $f(x) = x^3 + x$:
 $f''(x) = 6x = 0$ at $x = 0$, giving a point of inflection, but $f'(0) = 1 \neq 0$.
 :::
@@ -623,7 +627,8 @@ Section 8.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Differentiation**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-differentiation) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differentiation with other pure mathematics topics to test synthesis under exam conditions.

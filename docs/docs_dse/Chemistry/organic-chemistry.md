@@ -179,7 +179,8 @@ $$\mathrm{CH}_3^\bullet + \mathrm{CH}_3^\bullet \to \mathrm{C}_2\mathrm{H}_6$$
 
 $$\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$$
 
-:::warning The product mixture from chlorination of methane is a mixture of
+:::warning
+warning
 $\mathrm{CH}_3\mathrm{Cl}$, $\mathrm{CH}_2\mathrm{Cl}_2$, $\mathrm{CHCl}_3$, and $\mathrm{CCl}_4$
 because the substitution can continue on the same carbon atom. Controlling the ratio of methane to
 chlorine influences the proportion of products.
@@ -923,7 +924,8 @@ Reduction is the addition of hydrogen or removal of oxygen.
 - Ketone to secondary alcohol:
   $\mathrm{R}_2\mathrm{C=O} \xrightarrow{\mathrm{NaBH}_4} \mathrm{R}_2\mathrm{CHOH}$
 
-:::info $\mathrm{NaBH}_4$ is a milder reducing agent than $\mathrm{LiAlH}_4$. $\mathrm{NaBH}_4$ can
+:::info
+info
 reduce aldehydes and ketones but not carboxylic acids. $\mathrm{LiAlH}_4$ is more reactive and can
 reduce carboxylic acids, esters, and amides.
 :::

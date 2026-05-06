@@ -180,14 +180,16 @@ $$\boxed{t_{1/2} = \frac{\ln 2}{\lambda}}$$
 $N = N_0/2^n$. The decay is exponential — the activity is always proportional to the number of
 remaining nuclei, so it decreases exponentially.
 
-:::tip Exam Technique On a log-linear graph of activity vs time, radioactive decay appears as a
+:::tip
+tip
 straight line with gradient $=-\lambda$. The half-life can be found by finding the time for the
 activity to halve at any point on the curve.
 :::
 
 ### Radiation Detection
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+info
 
 #### Geiger-Muller Tube
 
@@ -218,7 +220,8 @@ Sources of background radiation include:
   ${}^{40}\mathrm{K}$ and ${}^{238}\mathrm{U}$.
 - **Food and drink** — trace amounts of ${}^{40}\mathrm{K}$ and ${}^{14}\mathrm{C}$.
 
-:::warning Common Pitfall The count rate measured by a GM tube is always less than the true activity
+:::warning
+warning
 because: (1) the detector only intercepts a fraction of emitted radiation (solid angle factor), and
 (2) not all radiation that enters the tube produces a count (detection efficiency is typically 1-2%
 for gamma rays). Never assume count rate equals activity.
@@ -448,7 +451,8 @@ Each daughter has the same activity as the parent. This has practical importance
 protection: the activity of radon-222 (a daughter of ${}^{238}\mathrm{U}$) in buildings is sustained
 by the essentially constant uranium in the ground beneath.
 
-:::warning Common Pitfall In a decay chain, the half-life of the parent determines the overall rate
+:::warning
+warning
 only when the parent is much longer-lived than all daughters. If a short-lived daughter precedes a
 long-lived daughter, the long-lived daughter accumulates and can become the dominant radiological
 hazard.
@@ -458,7 +462,8 @@ hazard.
 
 ### Carbon-14 Dating
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+info
 
 Living organisms continuously exchange carbon with the atmosphere, maintaining a constant ratio of
 ${}^{14}\mathrm{C}$ to ${}^{12}\mathrm{C}$. Cosmic rays produce neutrons in the upper atmosphere,

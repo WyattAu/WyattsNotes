@@ -49,7 +49,8 @@ $$\mathrm{HA} + \mathrm{B} \rightleftharpoons \mathrm{A}^- + \mathrm{BH}^+$$
 | Conductivity               | Higher                                                        | Lower                                                                    |
 | Reaction rate (same conc.) | Faster                                                        | Slower                                                                   |
 
-:::warning A strong acid is NOT the same as a concentrated acid. Strength refers to the degree of
+:::warning
+warning
 ionisation; concentration refers to the amount dissolved per unit volume. A dilute solution of a
 strong acid can have a higher pH than a concentrated solution of a weak acid.
 :::
@@ -123,7 +124,8 @@ $$x = 1.34 \times 10^{-3} \mathrm{ mol/dm}^3$$
 
 $$\mathrm{pH} = -\log_{10}(1.34 \times 10^{-3}) = 2.87$$
 
-:::tip For weak acid calculations, you can assume
+:::tip
+tip
 $[\mathrm{HA}]_{\mathrm{initial}} \approx [\mathrm{HA}]_{\mathrm{equilibrium}}$ only when the degree
 of ionisation is small (typically when $K_a \lt 10^{-4}$). This simplification is valid for most
 DSE-level problems.
@@ -403,7 +405,8 @@ $2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^-$)
 
 Halides ($\mathrm{Cl}^-$, $\mathrm{Br}^-$, $\mathrm{I}^-$): The halogen is discharged
 
-:::warning Concentration matters. In concentrated chloride solutions, $\mathrm{Cl}^-$ is discharged
+:::warning
+warning
 at the anode instead of $\mathrm{OH}^-$. In dilute chloride solutions, $\mathrm{OH}^-$ may be
 preferentially discharged.
 :::
@@ -701,7 +704,8 @@ $$\mathrm{pH} = 4.74 + \log_{10}\left(\frac{0.19}{0.11}\right) = 4.74 + \log_{10
 The pH changed from 5.04 to 4.98, a change of only 0.06. Without the buffer, adding
 $0.01 \mathrm{ mol}$ of $\mathrm{HCl}$ to $1 \mathrm{ dm}^3$ of water would give pH = 2.
 
-:::info Buffers are most effective when $[\mathrm{HA}] = [\mathrm{A}^-]$, i.e., when
+:::info
+info
 $\mathrm{pH} = \mathrm{p}K_a$. The effective buffering range is approximately $\mathrm{p}K_a \pm 1$.
 :::
 

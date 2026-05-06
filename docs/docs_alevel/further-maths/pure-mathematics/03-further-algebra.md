@@ -153,7 +153,8 @@ $$\frac{x^2 + 1}{(x^2 + 4)^2} = \frac{1}{x^2 + 4} - \frac{3}{(x^2 + 4)^2}$$
 
 </details>
 
-:::info AQA requires all three types of partial fractions with irreducible quadratics. Edexcel and
+:::info
+info
 OCR cover Types 1 and 2. CIE covers Type 1 extensively in P3.
 :::
 
@@ -352,7 +353,8 @@ $$= \frac{(k+1)^2[k^2 + 4(k+1)]}{4} = \frac{(k+1)^2(k+2)^2}{4} = \left[\frac{(k+
 
 ✓ $\square$
 
-:::info CIE places particular emphasis on the method of differences and requires proof of standard
+:::info
+info
 summation formulae. Edexcel FP2 requires summation of series including method of differences. AQA
 covers summation in the context of mathematical induction.
 :::

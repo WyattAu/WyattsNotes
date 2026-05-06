@@ -1852,7 +1852,8 @@ input sizes.
 **$O(n!)$ -- Factorial time:** Even faster growth than exponential. Examples: brute-force
 permutation generation, the naive traveling salesman solution.
 
-:::warning A critical distinction: $O(n \log n)$ is NOT the same as $O(n)$. For large $n$,
+:::warning
+warning
 $n \log n$ is significantly larger than $n$. For example, when $n = 1000000$,
 $n \log_2 n \approx 20000000$, which is 20 times larger than $n$.
 :::
@@ -2213,7 +2214,8 @@ A text editor needs to implement undo/redo functionality. Which ADT is most appr
 
 </details>
 
-:::note **HL Examination Note:** When asked to implement an ADT in an IB exam, you must include the
+:::note
+note
 class structure with `PRIVATE` and `PUBLIC` sections, a constructor, and all specified operations.
 Ensure preconditions are checked (e.g., do not pop from an empty stack). The choice of underlying
 data structure (array vs linked list) should be stated and justified.

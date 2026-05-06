@@ -42,7 +42,8 @@ proportional to extension — the straight-line region of the force-extension gr
 material returns to its original length when the force is removed. Beyond this point, the material
 undergoes **permanent (plastic) deformation**.
 
-:::warning Common Pitfall The limit of proportionality and the elastic limit are not the same point.
+:::warning
+warning
 For many materials (especially metals), the elastic limit lies slightly beyond the limit of
 proportionality. Between these two points the material still returns to its original shape, but $F$
 and $\Delta x$ are no longer linearly related.
@@ -92,7 +93,8 @@ Strain is dimensionless (a ratio). It is often expressed as a percentage.
 
 **Definition.** **Breaking stress** is the stress at which a material fractures.
 
-:::info Board-Specific Note **CIE** often asks you to distinguish between tensile stress
+:::info
+info
 (stretching) and compressive stress (squashing). **AQA** and **Edexcel** typically focus on tensile
 loading. **OCR (A)** may ask about compressive stress-strain behaviour of brittle materials like
 concrete.
@@ -230,7 +232,8 @@ Polymers show a wide range of behaviours:
 - **Thermoplastic polymers**: soften when heated, can be remoulded. Show viscoelastic behaviour
   (time-dependent response).
 
-:::info Board-Specific Note **AQA** emphasises the difference between brittle and ductile materials
+:::info
+info
 and requires interpretation of force-extension graphs. **Edexcel** asks for quantitative analysis of
 stress-strain graphs including calculating the area under the graph (energy). **CIE** may ask you to
 sketch stress-strain curves for different material types and identify specific points. **OCR (A)**
@@ -274,7 +277,8 @@ $$E_e = \frac{1}{2}\,E\,V\,\varepsilon^2 = \frac{1}{2}\,\sigma\,\varepsilon\,V$$
 
 $\square$
 
-:::warning Common Pitfall The formula $E_e = \frac{1}{2}F\,\Delta x$ only applies in the **linear
+:::warning
+warning
 (Hookean)** region. If the material has been loaded beyond the limit of proportionality, the energy
 stored is the area under the actual (non-linear) force-extension curve, which must be found by
 integration or by counting squares.
@@ -382,7 +386,8 @@ millions of cycles. This is critical in aircraft wings, bridges, and engine comp
 elevated temperatures. It is important in power station components, turbine blades, and lead
 roofing.
 
-:::info Board-Specific Note Fatigue and creep are mentioned briefly on **Edexcel** and **OCR (A)**.
+:::info
+info
 **AQA** focuses more on the core stress-strain behaviour. **CIE** may include these in
 application-style questions about engineering materials.
 :::
@@ -575,7 +580,8 @@ or too low.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Properties of Materials**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-properties-of-materials) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Properties of Materials with other physics topics to test synthesis under exam conditions.
@@ -583,7 +589,8 @@ Ready to test your understanding of **Properties of Materials**? The [diagnostic
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Confusing stress, strain, and Young's modulus:** Stress is force per unit AREA (Pa = N/m squared), not force per unit length. Strain is the ratio of extension to ORIGINAL length (dimensionless), not extension alone. Young's modulus is stress divided by strain (Pa), and describes stiffness, not strength.
 

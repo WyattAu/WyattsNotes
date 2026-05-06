@@ -396,7 +396,8 @@ The reflection $P'$ satisfies $F = \dfrac{P + P'}{2}$:
 
 $$P' = 2F - P = \left(\dfrac{8}{3} - 1,\, \dfrac{11}{3} - 2,\, \dfrac{19}{3} - 3\right) = \left(\dfrac{5}{3},\, \dfrac{5}{3},\, \dfrac{10}{3}\right)$$
 
-:::warning Common Pitfall
+:::warning
+warning
 
 The cross product is defined only in $\mathbb{R}^3$ (and $\mathbb{R}^7$). Do not attempt to compute
 cross products in $\mathbb{R}^2$ directly. Also, $\mathbf{a} \times \mathbf{b} \ne \mathbf{b} \times
@@ -604,7 +605,8 @@ $$x + y + 3z - 12 = 0$$
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Vectors**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-vectors) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Vectors with other IB mathematics topics to test synthesis under exam conditions.

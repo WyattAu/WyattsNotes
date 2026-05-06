@@ -638,7 +638,8 @@ $$\omega_p = \frac{\tau}{L} = \frac{2.94}{12.25} = 0.240 \mathrm{ rad/s}$$
 The wheel precesses at $0.240 \mathrm{ rad/s}$, completing one revolution in
 $T = 2\pi/\omega_p = 26.2 \mathrm{ s}$.
 
-:::info Precession occurs because the torque (due to gravity) is perpendicular to the angular
+:::info
+info
 momentum vector. Instead of tipping over, the angular momentum vector rotates horizontally. This is
 the same principle behind gyrocompasses and spacecraft attitude control.
 :::

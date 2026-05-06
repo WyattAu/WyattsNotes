@@ -206,7 +206,8 @@ Most modern central banks use **inflation targeting with discretion**:
 
 $$\mathrm{UK (1992–present), NZ (1990–present), Canada (1991–present), Eurozone (2003–present)}$$
 
-:::info Board-Specific Note AQA (Paper 2) typically asks students to evaluate the effectiveness of
+:::info
+info
 monetary policy and may require discussion of the transmission mechanism. Edexcel (Paper 3) often
 asks about the role of central bank independence in achieving macroeconomic objectives. OCR
 (Paper 3) may ask students to compare different monetary policy frameworks. CIE (9708) Paper 4
@@ -722,7 +723,8 @@ complete regime change.
 
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Treating Keynesianism and monetarism as mutually exclusive:** Modern macroeconomic policy is a synthesis of both views. Keynesian demand management is appropriate during recessions (especially at the zero lower bound), while monetarist concerns about inflation dominate near full employment. The "correct" view depends on the economic context.
 

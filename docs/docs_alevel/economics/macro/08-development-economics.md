@@ -361,7 +361,8 @@ social premium for community development projects (schools, healthcare, clean wa
 - **Economic Partnership Agreements (EPAs)**: trade agreements between the EU and developing
   countries.
 
-:::warning Common Pitfall Free trade is not always beneficial for developing countries. If a
+:::warning
+warning
 developing country liberalises trade while developed countries maintain subsidies on agriculture
 (e.g., the EU's Common Agricultural Policy), developing-country farmers cannot compete. Trade
 liberalisation must be reciprocal and sequenced appropriately.

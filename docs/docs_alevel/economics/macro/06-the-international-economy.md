@@ -88,7 +88,8 @@ For example, at $p = 1$ (1 unit of Wine for 1 unit of Cloth):
 
 Both are strictly better off. $\blacksquare$
 
-:::tip Exam Technique When asked to prove comparative advantage, always: (1) calculate opportunity
+:::tip
+tip
 costs for both countries, (2) identify which country has the lower OC for each good, (3) show
 specialisation increases world output, (4) show a mutually beneficial exchange rate. Use a numerical
 example.
@@ -152,7 +153,8 @@ buy the same quantity of imports as in 2020.
 | Inflation differentials                 | If domestic inflation > trading partners' inflation → ToT deteriorates |
 | Technological progress in export sector | Unit costs fall → export prices may fall → ToT deteriorates            |
 
-:::warning Common Pitfall An improvement in the terms of trade is not always beneficial. If the
+:::warning
+warning
 deterioration is caused by cheaper imports (e.g., due to technological progress abroad), consumers
 benefit from lower prices. Conversely, an improvement caused by a fall in export volumes (due to
 declining competitiveness) may actually reflect economic weakness.
@@ -160,7 +162,8 @@ declining competitiveness) may actually reflect economic weakness.
 
 ## 3. Exchange Rates
 
-:::info Board-Specific Note **AQA** requires understanding of fixed vs floating systems, the
+:::info
+info
 Marshall-Lerner condition, and J-curve effects. **CIE (9708)** covers exchange rate determination,
 purchasing power parity, and the effects of exchange rate changes on the balance of payments.
 **Edexcel** emphasises the UK context including Brexit impacts on trade and the pound. **OCR (A)**
@@ -286,7 +289,8 @@ The path of the current account traces a **J-shape**:
 
 $$CA \mathrm{ falls initially, then rises above the starting level}$$
 
-:::tip Exam Technique When asked about the effect of a depreciation on the current account, always
+:::tip
+tip
 distinguish between the short run (J-curve — CA may worsen) and the long run (Marshall-Lerner — CA
 improves). Draw the J-curve diagram. State the Marshall-Lerner condition explicitly.
 :::
@@ -368,7 +372,8 @@ war, reshoring) reflects these tensions.
 - **Genuine Progress Indicator (GPI)**: adjusts GDP for environmental costs, inequality, and unpaid
   work
 
-:::warning Common Pitfall GDP per capita is an imperfect measure of development because: (1) it
+:::warning
+warning
 ignores income distribution, (2) it doesn't capture health, education, or political freedom, (3) it
 is biased toward market activity (excludes subsistence farming, unpaid work). Always use multiple
 indicators.

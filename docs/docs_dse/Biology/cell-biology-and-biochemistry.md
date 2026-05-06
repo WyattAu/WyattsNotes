@@ -1166,6 +1166,306 @@ The mitochondrion has a double membrane. The inner membrane is folded into crist
 
 ---
 
+## Cellular Respiration in Detail
+
+### Glycolysis (Detailed)
+
+Glycolysis occurs in the **cytoplasm** and does not require oxygen. It is the first stage of both aerobic and anaerobic respiration.
+
+**Stages of glycolysis:**
+
+| Stage              | Key Steps                                                                                                                                 | Energy Change                                          |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| Phosphorylation    | Glucose (6C) is phosphorylated twice using 2 ATP, forming hexose biphosphate (6C). This "traps" glucose inside the cell and raises its energy level | Consumes 2 ATP (investment phase)                      |
+| Splitting          | Hexose biphosphate is split into two molecules of triose phosphate (3C each)                                                              | No ATP change                                          |
+| Oxidation          | Each triose phosphate is oxidised (dehydrogenated) by NAD$^+$, producing 2 NADH (one per triose phosphate)                                    | Produces 2 NADH                                       |
+| ATP production     | Each triose phosphate is converted to pyruvate (3C), producing 2 ATP per triose phosphate (substrate-level phosphorylation)                   | Produces 4 ATP (2 per triose phosphate)                |
+| **Net yield**      |                                                                                                                                           | **2 ATP + 2 NADH per glucose**                         |
+
+$$\text{Glucose (6C)} + 2\mathrm{NAD}^+ + 2\mathrm{ADP} + 2\mathrm{P}_i \to 2\text{ Pyruvate (3C)} + 2\mathrm{NADH} + 2\mathrm{H}^+ + 2\mathrm{ATP} + 2\mathrm{H}_2\mathrm{O}$$
+
+### The Link Reaction and Krebs Cycle
+
+**Link reaction (pyruvate oxidation):**
+
+- Occurs in the mitochondrial matrix
+- Each pyruvate (3C) is decarboxylated (loses $\mathrm{CO}_2$) and dehydrogenated (NAD$^+$ reduced to NADH)
+- The remaining 2-carbon acetyl group combines with coenzyme A to form **acetyl CoA**
+- Per glucose: 2 pyruvate $\to$ 2 acetyl CoA + 2 $\mathrm{CO}_2$ + 2 NADH
+
+**Krebs cycle (citric acid cycle):**
+
+- Occurs in the mitochondrial matrix
+- Each acetyl CoA (2C) combines with oxaloacetate (4C) to form citrate (6C)
+- Through a series of reactions, citrate is converted back to oxaloacetate, releasing:
+  - 2 $\mathrm{CO}_2$ (decarboxylation)
+  - 3 NADH (dehydrogenation)
+  - 1 FADH$_2$ (dehydrogenation)
+  - 1 ATP (substrate-level phosphorylation via GTP)
+- Per glucose: 2 turns of the cycle produce 4 $\mathrm{CO}_2$, 6 NADH, 2 FADH$_2$, 2 ATP
+
+### Oxidative Phosphorylation
+
+- Occurs on the inner mitochondrial membrane (cristae)
+- NADH and FADH$_2$ donate electrons to the electron transport chain
+- Electrons pass through a series of carriers (complexes I-IV), releasing energy used to pump $\mathrm{H}^+$ into the intermembrane space
+- $\mathrm{H}^+$ flows back through ATP synthase (chemiosmosis), producing ATP
+- Oxygen is the final electron acceptor, combining with $\mathrm{H}^+$ and electrons to form water
+
+### Total ATP Yield (Per Glucose)
+
+| Stage              | ATP (or equivalent) |
+| ------------------ | ------------------- |
+| Glycolysis (net)   | 2 ATP + 2 NADH      |
+| Link reaction      | 2 NADH              |
+| Krebs cycle        | 2 ATP + 6 NADH + 2 FADH$_2$ |
+| Oxidative phosphorylation | Each NADH produces approximately 2.5 ATP; each FADH$_2$ produces approximately 1.5 ATP |
+| **Total (approximate)** | **30-32 ATP** |
+
+:::info
+The exact ATP yield varies because the shuttle mechanism that transfers electrons from cytoplasmic NADH into the mitochondria can cost 1 ATP per NADH. The theoretical maximum is 38 ATP, but in practice, the yield is closer to 30-32 ATP due to proton leakage across the inner mitochondrial membrane and the cost of transporting molecules.
+:::
+
+### Anaerobic Respiration
+
+When oxygen is unavailable, pyruvate cannot enter the mitochondria for oxidative phosphorylation. Cells must regenerate NAD$^+$ by alternative pathways to keep glycolysis running.
+
+**In animal cells (lactic acid fermentation):**
+
+$$\text{Pyruvate} + \mathrm{NADH} \xrightarrow{\text{LDH}} \text{Lactate} + \mathrm{NAD}^+$$
+
+- Net yield: 2 ATP per glucose (only from glycolysis)
+- Lactate accumulates in muscles, causing fatigue and cramping
+- Lactate is transported to the liver and converted back to pyruvate (Cori cycle), which can be oxidised in the Krebs cycle or converted back to glucose
+
+**In yeast and plant cells (alcoholic fermentation):**
+
+$$\text{Pyruvate} \xrightarrow{\text{decarboxylase}} \text{Ethanal} + \mathrm{CO}_2$$
+
+$$\text{Ethanal} + \mathrm{NADH} \xrightarrow{\text{alcohol dehydrogenase}} \text{Ethanol} + \mathrm{NAD}^+$$
+
+- Net yield: 2 ATP per glucose
+- $\mathrm{CO}_2$ and ethanol are produced as waste products
+- This process is used in brewing (beer) and baking (bread rises due to $\mathrm{CO}_2$ production)
+
+---
+
+## Cancer Biology
+
+### What is Cancer?
+
+Cancer is a group of diseases characterised by uncontrolled cell division, leading to the formation of malignant tumours that can invade surrounding tissues and spread to other parts of the body (metastasis).
+
+### Causes of Cancer
+
+Cancer is caused by mutations in genes that regulate the cell cycle. These mutations can be caused by:
+
+| Factor               | Description                                                                                                          |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Chemical carcinogens | Chemicals that damage DNA (e.g., tar in cigarette smoke, benzene, asbestos, aflatoxin in mouldy peanuts)            |
+| Radiation            | Ionising radiation (X-rays, gamma rays, UV light) causes DNA damage                                                |
+| Viral infection      | Some viruses integrate their DNA into the host genome, disrupting tumour suppressor genes or activating oncogenes     |
+| Hereditary factors   | Inherited mutations in tumour suppressor genes (e.g., BRCA1/BRCA2 mutations increase breast cancer risk)              |
+| Chronic inflammation | Inflammatory cells produce reactive oxygen species that can damage DNA                                            |
+
+### Types of Cancer-Related Genes
+
+| Gene Type               | Normal Function                                   | Effect When Mutated                                          |
+| ----------------------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| Proto-oncogenes         | Promote controlled cell division (accelerate cell cycle) | Become **oncogenes** when mutated; cause excessive cell division |
+| Tumour suppressor genes | Inhibit cell division; promote DNA repair; trigger apoptosis | Lose function when mutated; cell division is no longer restrained |
+| Examples                | Proto-oncogene: ras (signals for cell division) | p53 (tumour suppressor; halts cell cycle for DNA repair or triggers apoptosis) |
+
+### Tumour Suppressor p53
+
+The **p53 protein** is often called the "guardian of the genome." It plays a critical role in preventing cancer:
+
+1. If DNA damage is detected, p53 halts the cell cycle (at G1 checkpoint) to allow time for DNA repair
+2. If the damage is repairable, p53 activates DNA repair enzymes
+3. If the damage is too severe to repair, p53 triggers **apoptosis** (programmed cell death), preventing the damaged cell from dividing and potentially becoming cancerous
+4. Approximately 50% of all human cancers involve mutations in the p53 gene
+
+### Benign vs Malignant Tumours
+
+| Feature            | Benign Tumour                              | Malignant Tumour                                  |
+| ------------------ | ------------------------------------------ | ------------------------------------------------- |
+| Growth rate        | Slow                                       | Rapid                                             |
+| Encapsulation      | Encapsulated (contained within a fibrous capsule) | Not encapsulated; invades surrounding tissue   |
+| Metastasis         | Does NOT spread to other parts of the body | CAN spread (metastasise) via blood or lymph      |
+| Cell differentiation | Well-differentiated (cells look normal)   | Poorly differentiated (cells look abnormal)      |
+| Health impact      | Usually harmless unless pressing on organs  | Life-threatening if untreated                    |
+| Recurrence         | Rarely recurs after removal                | May recur after removal                           |
+
+### Worked Example: Carcinogens and DNA Damage
+
+A person smokes 20 cigarettes per day for 30 years. Explain how the chemicals in cigarette smoke can lead to lung cancer, referring to the role of proto-oncogenes and tumour suppressor genes.
+
+<details>
+<summary>Solution</summary>
+
+Cigarette smoke contains over 60 known carcinogens, including benzopyrene (a polycyclic aromatic hydrocarbon) and nitrosamines. These chemicals enter the lungs during inhalation and are absorbed into lung epithelial cells.
+
+1. **DNA damage:** Carcinogens are metabolised into reactive intermediates that bind to DNA, forming DNA adducts. These adducts cause mutations during DNA replication. Benzopyrene, for example, causes a specific G to T transversion mutation in the p53 gene.
+
+2. **Proto-oncogene activation:** Mutations can convert proto-oncogenes (e.g., ras) into oncogenes, causing them to be permanently activated. The ras oncogene produces a protein that continuously signals cells to divide, even in the absence of growth factor signals.
+
+3. **Tumour suppressor gene inactivation:** Mutations can inactivate tumour suppressor genes (e.g., p53). Without functional p53, cells with damaged DNA are not arrested for repair and do not undergo apoptosis. Mutations accumulate, and damaged cells continue to divide uncontrollably.
+
+4. **Multiple mutations required:** A single mutation is usually insufficient to cause cancer. Cancer typically requires mutations in multiple genes (approximately 5-10 driver mutations). The long duration of exposure (30 years) allows multiple mutations to accumulate in the same cell lineage.
+
+5. **Tumour formation:** Once enough mutations accumulate, a cell begins dividing uncontrollably, forming a malignant tumour that can invade surrounding lung tissue and metastasise to other organs via the bloodstream or lymphatic system.
+
+</details>
+
+---
+
+## Additional Problem Set
+
+**Problem 11:** Compare aerobic and anaerobic respiration in terms of location, substrates, products, and ATP yield. Explain why anaerobic respiration produces much less ATP per glucose molecule.
+
+If you get this wrong, revise: Cellular Respiration in Detail
+
+<details>
+<summary>Solution</summary>
+
+| Feature       | Aerobic Respiration                                  | Anaerobic Respiration (animals)                        |
+| ------------- | ---------------------------------------------------- | ------------------------------------------------------- |
+| Location      | Cytoplasm (glycolysis) + mitochondria (link reaction, Krebs cycle, oxidative phosphorylation) | Cytoplasm only (glycolysis only)                       |
+| Oxygen        | Required (final electron acceptor)                    | Not required                                            |
+| Substrates    | Glucose                                              | Glucose                                                 |
+| Products      | $\mathrm{CO}_2$, $\mathrm{H}_2\mathrm{O}$, ATP (30-32) | Lactate, ATP (2)                                        |
+| ATP yield     | Approximately 30-32 ATP per glucose                    | 2 ATP per glucose                                       |
+| NAD$^+$ regeneration | Via oxidative phosphorylation (electron transport chain) | Via conversion of pyruvate to lactate (NADH oxidised to NAD$^+$) |
+
+Anaerobic respiration produces much less ATP because only glycolysis occurs, yielding a net 2 ATP. The much larger ATP yield of aerobic respiration comes from oxidative phosphorylation, which requires the electron transport chain in the inner mitochondrial membrane. NADH and FADH$_2$ from glycolysis, the link reaction, and the Krebs cycle donate electrons to the electron transport chain, and the energy released pumps protons across the membrane. The resulting proton gradient drives ATP synthase, producing approximately 28-30 ATP. Without oxygen as the final electron acceptor, the electron transport chain cannot operate, and this massive ATP yield is lost.
+
+</details>
+
+**Problem 12:** Explain the roles of proto-oncogenes and tumour suppressor genes in regulating the cell cycle. Explain how mutations in both types of gene can contribute to cancer development.
+
+If you get this wrong, revise: Cancer Biology
+
+<details>
+<summary>Solution</summary>
+
+**Proto-oncogenes** promote cell division when activated by growth factor signals. They encode proteins involved in cell cycle progression (e.g., ras encodes a GTPase that transmits growth signals; myc encodes a transcription factor that activates genes for cell division). When mutated, proto-oncogenes become **oncogenes** that are permanently activated, causing cells to divide continuously even without external growth signals. This is analogous to a car with a stuck accelerator.
+
+**Tumour suppressor genes** inhibit cell division, promote DNA repair, or trigger apoptosis when DNA is damaged. For example, p53 halts the cell cycle at the G1 checkpoint if DNA damage is detected, allowing time for repair; if damage is irreparable, p53 triggers apoptosis. When mutated, tumour suppressor genes lose their function, so damaged cells continue dividing without repair or death. This is analogous to a car with no brakes.
+
+Cancer typically requires mutations in BOTH types of gene: an oncogene drives excessive cell division (accelerator stuck), while loss of tumour suppressor function removes the brakes that would normally halt or eliminate damaged cells. This combination allows cells to divide uncontrollably and accumulate further mutations, leading to malignant tumour formation.
+
+</details>
+
+---
+
+
+---
+
+## Membrane Transport in Detail
+
+### Facilitated Diffusion
+
+Facilitated diffusion is the passive movement of molecules across a membrane via transmembrane proteins. Like simple diffusion, it moves molecules down their concentration gradient and does not require energy. Unlike simple diffusion, it requires specific carrier proteins or channel proteins.
+
+| Feature               | Simple Diffusion                     | Facilitated Diffusion                           |
+| --------------------- | ------------------------------------ | ------------------------------------------------ |
+| Requires proteins     | No                                   | Yes (channel proteins or carrier proteins)       |
+| Selective              | No (any small, non-polar molecule)  | Yes (specific to particular molecules)            |
+| Saturation             | No (rate increases with concentration indefinitely) | Yes (rate plateaus when all proteins are occupied) |
+| Energy required        | No                                   | No                                               |
+| Direction              | Down concentration gradient          | Down concentration gradient                        |
+| Molecules transported  | $\mathrm{O}_2$, $\mathrm{CO}_2$, small lipids, water | Glucose (via GLUT transporters), amino acids, ions ($\mathrm{Na}^+$, $\mathrm{K}^+$) |
+
+**Channel proteins:**
+
+- Form water-filled pores through the membrane
+- Allow specific ions or molecules to pass through by diffusion
+- Types:
+  - **Ion channels:** Allow specific ions to pass (e.g., $\mathrm{Na}^+$ channels, $\mathrm{K}^+$ channels, $\mathrm{Ca}^{2+}$ channels)
+  - **Aquaporins:** Channel proteins specific to water molecules; allow rapid osmosis (approximately 10 times faster than diffusion through the lipid bilayer)
+- **Gated channels:** Open or close in response to specific stimuli:
+  - **Voltage-gated channels:** Open in response to changes in membrane potential (essential for nerve impulse transmission)
+  - **Ligand-gated channels:** Open when a specific chemical (ligand) binds (e.g., neurotransmitter-gated channels at synapses)
+  - **Mechanically-gated channels:** Open in response to physical deformation (e.g., in hair cells of the cochlea)
+
+**Carrier proteins:**
+
+- Bind to specific molecules and undergo a conformational change to transport them across the membrane
+- Can transport larger molecules (e.g., glucose, amino acids) that cannot pass through channels
+- Exhibit saturation kinetics: when all carrier proteins are occupied, the transport rate plateaus regardless of further increases in concentration
+- Example: GLUT1 transporter for glucose in red blood cells
+
+### Active Transport
+
+Active transport moves molecules against their concentration gradient (from low to high concentration), requiring energy in the form of ATP.
+
+| Feature               | Primary Active Transport                        | Secondary Active Transport (Co-transport)                       |
+| --------------------- | ------------------------------------------------ | ---------------------------------------------------------------- |
+| Energy source          | ATP hydrolysis directly                               | Uses an ion gradient established by primary active transport    |
+| Direct ATP use         | Yes                                                    | No (indirect)                                                      |
+| Example               | $\mathrm{Na}^+/\mathrm{K}^+$ pump; $\mathrm{H}^+$ ATPase in stomach | $\mathrm{Na}^+$-glucose co-transport in small intestine; $\mathrm{Na}^+$-amino acid co-transport |
+| Direction             | Can move substances in either direction              | Moves both the driving ion and the transported substance in the same (symport) or opposite (antiport) direction |
+
+**The sodium-potassium pump (detailed mechanism):**
+
+1. Three $\mathrm{Na}^+$ ions bind to the intracellular side of the pump protein
+2. ATP binds and is hydrolysed to ADP and $\mathrm{P}_i$
+3. The phosphate group is transferred to the pump protein (phosphorylation), changing its conformation
+4. The conformational change exposes the $\mathrm{Na}^+$ binding sites to the extracellular side; $\mathrm{Na}^+$ is released
+5. Two $\mathrm{K}^+$ ions from the extracellular side bind to the pump
+6. The phosphate group is released (dephosphorylation), returning the pump to its original conformation
+7. The conformational change exposes the $\mathrm{K}^+$ binding sites to the intracellular side; $\mathrm{K}^+$ is released
+
+**Significance of the sodium-potassium pump:**
+
+- Maintains the resting potential of neurons (by creating concentration gradients for $\mathrm{Na}^+$ and $\mathrm{K}^+$)
+- Maintains cell volume (by controlling osmotic balance)
+- Provides the $\mathrm{Na}^+$ gradient that drives secondary active transport (e.g., $\mathrm{Na}^+$-glucose co-transport in the small intestine and kidney)
+- Essential for nerve impulse transmission and muscle contraction
+
+### Bulk Transport: Endocytosis and Exocytosis
+
+Large molecules (proteins, polysaccharides) and particles are transported across the membrane in membrane-bound vesicles.
+
+| Process        | Description                                                                                                                | Energy Required | Example                                               |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------------------------------------------- |
+| Endocytosis    | Cell membrane engulfs material, forming a vesicle inside the cell                                                    | Yes (ATP)       | White blood cells engulfing bacteria (phagocytosis)    |
+| Exocytosis     | Vesicles inside the cell fuse with the cell membrane, releasing their contents outside                                    | Yes (ATP)       | Release of neurotransmitters at synapses; secretion of mucus and enzymes |
+| Phagocytosis   | "Cell eating": large solid particles are engulfed by extensions of the membrane (pseudopodia)                              | Yes (ATP)       | Phagocytes engulfing bacteria                         |
+| Pinocytosis   | "Cell drinking": small droplets of extracellular fluid are taken into the cell in small vesicles                           | Yes (ATP)       | Uptake of dissolved nutrients by microorganisms        |
+
+---
+
+## Protein Synthesis in Detail
+
+### Transcription
+
+Transcription is the process of copying the genetic code from DNA into mRNA.
+
+**Steps:**
+
+1. **Initiation:** RNA polymerase binds to the promoter region of the gene (upstream of the coding sequence). Transcription factors help position the polymerase correctly.
+2. **Elongation:** RNA polymerase unwinds the DNA double helix and synthesises a complementary mRNA strand in the 5' to 3' direction, using the template (antisense) strand of DNA. RNA polymerase adds RNA nucleotides complementary to the DNA template: A pairs with U (not T in RNA), G pairs with C.
+3. **Termination:** RNA polymerase reaches a terminator sequence and detaches from the DNA. The pre-mRNA is released.
+
+**Post-transcriptional modifications (in eukaryotes only):**
+
+1. **5' capping:** A modified guanine nucleotide (7-methylguanosine) is added to the 5' end. This protects the mRNA from degradation and helps ribosomes recognise it for translation.
+2. **3' polyadenylation:** A poly-A tail (150-200 adenine nucleotides) is added to the 3' end. This aids in mRNA stability and export from the nucleus.
+3. **Splicing:** Introns (non-coding regions) are removed, and exons (coding regions) are joined together by the spliceosome. Alternative splicing allows a single gene to produce multiple different mRNA variants (and therefore multiple different proteins).
+
+### Translation
+
+Translation is the process of synthesising a polypeptide chain from the mRNA code.
+
+**Steps:**
+
+1. **Initiation:** The small ribosomal subunit binds to the 5' end of the mRNA and moves along until it reaches the start codon (AUG). The initiator tRNA carrying methionine binds to the start codon. The large ribosomal subunit joins, forming the complete ribosome with three sites: A (aminoacyl), P (peptidyl), and E (exit).
+2. **Elongation:** A tRNA carrying the appropriate amino acid enters the A site, its anticodon base-pairing with the codon on the mRNA. A peptide bond forms between the amino acid in the P site and the new amino acid in the A site (catalysed by peptidyl transferase). The ribosome translocates by one codon: the empty tRNA moves to the E site and exits; the tRNA with the growing polypeptide moves to the P site; the next codon is exposed in the A site.
+3. **Termination:** When a stop codon (UAA, UAG, or UGA) is reached in the A site, no tRNA can bind. A release factor protein enters the A site, causing the polypeptide to be released and the ribosome to dissociate.
+
+**One gene, one polypeptide (generally):** Each gene codes for a specific polypeptide chain. The sequence of codons on the mRNA determines the sequence of amino acids in the polypeptide.
+
 :::tip
 Diagnostic Test
 Ready to test your understanding of **Cell Biology and Biochemistry**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-cell-biology-biochemistry) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
@@ -1173,5 +1473,215 @@ Ready to test your understanding of **Cell Biology and Biochemistry**? The [diag
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Cell Biology and Biochemistry with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
 
+---
+
+## Cell Division in Detail
+
+### The Cell Cycle
+
+| Phase                  | Description                                                                                                               | Duration (typical mammalian cell)  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| G1 (Gap 1)             | Cell grows in size; synthesises proteins and organelles; carries out normal metabolic functions; G1 checkpoint checks cell size and DNA integrity | ~10-12 hours                      |
+| S (Synthesis)          | DNA replication occurs; each chromosome is duplicated to form two sister chromatids joined at the centromere               | ~6-8 hours                        |
+| G2 (Gap 2)             | Cell continues to grow; synthesises proteins needed for mitosis (e.g., tubulin for spindle fibres); G2 checkpoint checks DNA replication is complete and error-free | ~3-4 hours                        |
+| M (Mitosis)            | Nuclear division; sister chromatids separate and move to opposite poles of the cell                                       | ~1-2 hours                        |
+| C (Cytokinesis)        | Cytoplasm divides; two daughter cells are formed                                                                           | Occurs with or after M phase       |
+
+**Total cell cycle duration:** ~24 hours (varies widely: intestinal epithelial cells divide every ~12 hours; nerve cells rarely or never divide after maturity)
+
+### Control of the Cell Cycle
+
+The cell cycle is controlled by **cyclins** and **cyclin-dependent kinases (CDKs):**
+
+| Checkpoint             | Location                  | What is Checked                                                                                                           | Outcome if Failed                     |
+| ---------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| G1 checkpoint (restriction point) | Late G1 phase      | Cell size adequate? Nutrients available? Growth signals present? DNA undamaged?                                          | Cell enters G0 (resting phase) or undergoes apoptosis |
+| G2 checkpoint          | End of G2 phase            | DNA replication complete and error-free? All proteins needed for mitosis synthesised?                                     | Cell cycle arrests; DNA repair attempted; apoptosis if damage is irreparable |
+| M checkpoint (spindle assembly checkpoint) | Metaphase of mitosis | Are all chromosomes properly attached to spindle fibres at the metaphase plate?                                           | Anaphase is delayed; prevents unequal distribution of chromosomes |
+
+**Cyclin-CDK mechanism:**
+- Cyclins are proteins whose concentration rises and falls at specific points in the cell cycle
+- CDKs are enzymes that are always present but inactive on their own
+- When a cyclin binds to a CDK, the cyclin-CDK complex becomes active and phosphorylates target proteins, triggering the next phase of the cell cycle
+- After the phase is complete, the cyclin is degraded and the CDK becomes inactive again
+- Different cyclins control different checkpoints (e.g., cyclin D-CDK4/6 for G1 checkpoint; cyclin B-CDK1 for G2/M transition)
+
+### Mitosis vs Meiosis: Detailed Comparison
+
+| Feature                  | Mitosis                                                                                                                   | Meiosis                                                                                                                   |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Number of divisions        | 1                                                                                                                         | 2 (meiosis I and meiosis II)                                                                                              |
+| Number of daughter cells    | 2                                                                                                                         | 4                                                                                                                         |
+| Chromosome number           | Same as parent (diploid $\rightarrow$ diploid, 2n $\rightarrow$ 2n)                                                    | Half of parent (diploid $\rightarrow$ haploid, 2n $\rightarrow$ n)                                                      |
+| Genetic variation           | No (daughter cells are genetically identical to the parent and to each other)                                            | Yes (daughter cells are genetically different from the parent and from each other due to crossing over and independent assortment) |
+| Crossing over               | No                                                                                                                        | Yes (during prophase I)                                                                                                   |
+| Homologous pairs separate   | No (sister chromatids separate in anaphase)                                                                             | Yes (homologous chromosomes separate in anaphase I)                                                                       |
+| Sister chromatids separate   | Yes (in anaphase)                                                                                                        | Yes (in anaphase II, NOT anaphase I)                                                                                     |
+| Occurs in                   | Somatic cells (body cells) for growth, repair, and asexual reproduction                                                 | Germ cells in the gonads (testes and ovaries) to produce gametes                                                         |
+| Metaphase I alignment        | Individual chromosomes line up at the metaphase plate                                                                   | Homologous pairs line up at the metaphase plate (bivalents/tetrads)                                                     |
+
+### Meiosis I vs Meiosis II
+
+| Feature                  | Meiosis I                                                                                                                 | Meiosis II                                                                                                                 |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Prophase                  | Homologous chromosomes pair up (synapsis) to form bivalents; crossing over occurs between non-sister chromatids         | No pairing of homologous chromosomes; no crossing over                                                                  |
+| Metaphase                 | Bivalents (homologous pairs) align at the metaphase plate; one chromosome from each pair faces each pole                  | Individual chromosomes (each consisting of two sister chromatids) align at the metaphase plate                           |
+| Anaphase                  | Homologous chromosomes separate and move to opposite poles (sister chromatids remain attached at the centromere)          | Sister chromatids separate and move to opposite poles                                                                    |
+| Telophase                 | Two daughter cells are formed, each with half the number of chromosomes (each chromosome still consists of two chromatids) | Four daughter cells are formed, each with half the number of chromosomes (each chromosome consists of a single chromatid)  |
+| Reduction division?        | Yes (diploid $\rightarrow$ haploid)                                                                                      | No (haploid $\rightarrow$ haploid, but each chromosome is now a single chromatid)                                        |
+
+### The Significance of Meiosis
+
+1. **Produces haploid gametes:** Ensures that fertilisation restores the diploid chromosome number (n + n = 2n)
+2. **Generates genetic variation through:**
+   - **Crossing over (recombination):** During prophase I, non-sister chromatids of homologous chromosomes exchange segments of DNA at chiasmata. This creates new combinations of alleles on the same chromosome
+   - **Independent assortment:** During metaphase I, the orientation of each bivalent on the metaphase plate is random. With 23 pairs of chromosomes in humans, this gives $2^{23}$ ($\approx$ 8.4 million) possible combinations of chromosomes in the gametes
+3. **Prevents chromosome doubling:** Without meiosis, the chromosome number would double with each generation (2n $\rightarrow$ 4n $\rightarrow$ 8n...)
+
+---
+
+## Stem Cells
+
+### Types of Stem Cells
+
+| Type                    | Source                                                                                                                     | Potency                              | Uses / Potential Uses                           |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------------------- |
+| Totipotent              | Zygote; early embryo (up to 4-cell stage in humans)                                                                       | Can develop into ANY cell type AND extraembryonic tissues (placenta, umbilical cord) | Research; not used therapeutically              |
+| Pluripotent              | Embryonic stem cells (from the inner cell mass of the blastocyst, ~5-7 days after fertilisation)                           | Can develop into ANY cell type of the body (over 200 types), but NOT extraembryonic tissues | Research; potential for regenerative medicine; treatment of degenerative diseases |
+| Multipotent              | Adult (somatic) stem cells found in specific tissues (bone marrow, skin, brain, liver)                                    | Can develop into a limited range of cell types related to their tissue of origin | Bone marrow transplants; skin grafts; treatment of leukaemia |
+| Unipotent                 | Committed to developing into only ONE cell type                                                                           | Can only produce one cell type        | Limited use; muscle satellite cells             |
+
+### Sources of Stem Cells
+
+| Source                  | Type                  | Advantages                                                                                                                | Disadvantages / Ethical Issues             |
+| ----------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Embryos (IVF clinics)   | Embryonic (pluripotent) | Can differentiate into any cell type; unlimited self-renewal in culture                                                | Ethical concerns (destruction of embryo); risk of tumour formation if not properly controlled |
+| Umbilical cord blood    | Adult (multipotent)     | Rich in haematopoietic stem cells; less rejection risk (fewer MHC molecules on cord blood cells); non-invasive collection | Limited number of stem cells per cord; only treats blood-related disorders |
+| Bone marrow             | Adult (multipotent)     | Well-established technique (bone marrow transplants since 1960s); donor can regenerate marrow                          | Painful extraction; risk of infection; limited cell types |
+| Induced pluripotent stem cells (iPSCs) | Pluripotent (reprogrammed) | No embryo destruction; patient-specific (no rejection risk); can differentiate into any cell type | Risk of mutations during reprogramming; less efficient than embryonic stem cells |
+| Adipose tissue (fat)    | Adult (multipotent)     | Abundant source; easy extraction (liposuction); can differentiate into bone, cartilage, fat, muscle cells                | Limited differentiation potential compared to embryonic stem cells |
+
+### Induced Pluripotent Stem Cells (iPSCs)
+
+- Discovered by Shinya Yamanaka (Nobel Prize, 2012)
+- Adult somatic cells (e.g., skin fibroblasts) are reprogrammed to a pluripotent state by introducing four transcription factors: Oct4, Sox2, Klf4, and c-Myc (the "Yamanaka factors")
+- iPSCs behave similarly to embryonic stem cells but avoid the ethical issues associated with embryo destruction
+- Potential applications: patient-specific cell therapy (e.g., replacing damaged neurons in Parkinson's disease), drug testing on patient-specific cells, disease modelling
+
+---
+
+## Common Pitfalls
+
+- **Chromosomes and chromatids are different.** Before DNA replication: each chromosome consists of ONE chromatid. After DNA replication (S phase): each chromosome consists of TWO sister chromatids joined at the centromere. After anaphase of mitosis (or anaphase II of meiosis): the chromatids separate and are now called chromosomes
+- **In meiosis I, homologous chromosomes separate, NOT sister chromatids.** Sister chromatids separate in meiosis II (and in mitosis). If you confuse these, you will get the wrong chromosome numbers in the daughter cells
+- **The cell cycle has THREE checkpoints (G1, G2, M), not two.** Each checkpoint checks for different things
+- **Mitosis produces 2 genetically identical diploid daughter cells; meiosis produces 4 genetically different haploid daughter cells.** This is the fundamental distinction
+
+---
+
+## Biological Molecules in Detail
+
+### Carbohydrates
+
+| Type                    | Elements              | Description                                                                                                               | Examples                                 | Function(s)                             |
+| ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------- |
+| Monosaccharides          | C, H, O               | Single sugar units; general formula (CH$_2$O)$_n$; sweet-tasting; soluble in water                                      | Glucose ($\alpha$ and $\beta$), fructose, galactose, ribose, deoxyribose | Energy source; building blocks for larger carbohydrates; ribose/deoxyribose in nucleic acids |
+| Disaccharides            | C, H, O               | Two monosaccharides joined by a glycosidic bond (condensation reaction); general formula C$_{12}$H$_{22}$O$_{11}$        | Maltose (glucose + glucose); sucrose (glucose + fructose); lactose (glucose + galactose) | Energy source; transport form of sugars  |
+| Polysaccharides          | C, H, O               | Many monosaccharides joined by glycosidic bonds; insoluble (except glycogen); large molecules                             | Starch (plants), glycogen (animals), cellulose (plants), chitin (insects, fungi) | Energy storage (starch, glycogen); structural support (cellulose, chitin) |
+
+**Starch:** A mixture of two polysaccharides:
+- **Amylose:** Unbranched chain of $\alpha$-glucose molecules joined by 1,4-glycosidic bonds; forms a helix; 20-30% of starch
+- **Amylopectin:** Branched chain of $\alpha$-glucose molecules with 1,4-glycosidic bonds in the main chain and 1,6-glycosidic bonds at branch points; 70-80% of starch; more readily digested than amylose because the branches provide more ends for enzymes to work on
+
+**Cellulose:** Long, unbranched chains of $\beta$-glucose joined by 1,4-glycosidic bonds. Every alternate $\beta$-glucose molecule is rotated 180 degrees, allowing hydrogen bonds to form between adjacent chains. These hydrogen bonds create strong, rigid microfibrils that provide structural support to plant cell walls. Cellulose is NOT digestible by humans because we lack the enzyme cellulase.
+
+**Glycogen:** Highly branched polymer of $\alpha$-glucose (similar to amylopectin but more branched); stored in liver and muscle cells; the many branch points provide many ends for rapid glycogenolysis when glucose is needed.
+
+### Lipids
+
+| Type                    | Description                                                                                                               | Examples                                 | Function(s)                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------- |
+| Triglycerides             | Glycerol + 3 fatty acids joined by ester bonds (condensation reaction)                                                   | Fats (solid at room temp, mostly saturated); oils (liquid at room temp, mostly unsaturated) | Energy storage (long-term); insulation; buoyancy; protection |
+| Phospholipids             | Glycerol + 2 fatty acids + phosphate group (hydrophilic head, hydrophobic tails)                                         | Lecithin                                 | Main component of cell membranes; forms the phospholipid bilayer |
+| Cholesterol               | Steroid lipid (four fused carbon rings); small, flat molecule                                                            | Found in animal cell membranes           | Modulates membrane fluidity; precursor for steroid hormones (testosterone, oestrogen, cortisol) and bile salts |
+| Waxes                      | Long-chain fatty acids bonded to long-chain alcohols                                                                     | Cuticle on plant leaves; beeswax; earwax | Waterproof coating; protection           |
+
+### Proteins
+
+| Level                   | Description                                                                                                               | Type of Bond                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| Primary structure         | The specific sequence of amino acids in the polypeptide chain, determined by the gene (DNA sequence)                       | Peptide bonds (between amino acids)      |
+| Secondary structure       | Regular folding patterns of the polypeptide chain caused by hydrogen bonding between amino groups and carboxyl groups of the peptide backbone | Hydrogen bonds                          |
+| Tertiary structure        | The overall 3D shape of a single polypeptide chain, stabilised by various interactions                                    | Hydrogen bonds; ionic bonds; disulfide bridges; hydrophobic interactions |
+| Quaternary structure      | The arrangement of two or more polypeptide chains (subunits) into a functional protein                                    | Same as tertiary (plus interactions between subunits) |
+
+| Protein Type             | Description                                                                                                               | Examples                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Globular proteins         | Roughly spherical; soluble in water; function mainly in metabolic roles (enzymes, antibodies, hormones, transport proteins) | Haemoglobin; enzymes (amylase, catalase); antibodies; insulin |
+| Fibrous proteins          | Long, rod-shaped; insoluble in water; function mainly in structural roles                                                 | Collagen (tendons, skin, bones); keratin (hair, nails); elastin (artery walls, skin) |
+
+### Nucleic Acids
+
+| Component               | DNA                                                                                                                       | RNA                                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Full name                 | Deoxyribonucleic acid                                                                                                     | Ribonucleic acid                                                                                                         |
+| Sugar                     | Deoxyribose (one fewer oxygen than ribose)                                                                               | Ribose                                                                                                                   |
+| Bases                     | Adenine (A), Thymine (T), Cytosine (C), Guanine (G)                                                                      | Adenine (A), Uracil (U), Cytosine (C), Guanine (G)                                                                       |
+| Structure                 | Double-stranded helix (two antiparallel strands held together by hydrogen bonds between complementary base pairs)          | Usually single-stranded (though it can fold back on itself to form secondary structures such as hairpin loops)             |
+| Base pairing               | A-T (2 hydrogen bonds); G-C (3 hydrogen bonds)                                                                          | A-U (2 hydrogen bonds); G-C (3 hydrogen bonds)                                                                          |
+| Strands                   | Antiparallel (one strand runs 5' $\rightarrow$ 3', the other runs 3' $\rightarrow$ 5')                                  | Single strand (5' $\rightarrow$ 3')                                                                                     |
+| Location                  | Nucleus (in eukaryotes); also in mitochondria and chloroplasts                                                            | Nucleus (mRNA is transcribed here); cytoplasm (mRNA is translated here); also in ribosomes (rRNA)                      |
+| Types                     | One type (DNA)                                                                                                           | mRNA (messenger); tRNA (transfer); rRNA (ribosomal)                                                                      |
+| Function                  | Stores genetic information; passes genetic information from one generation to the next; template for RNA synthesis      | mRNA: carries genetic information from DNA to the ribosome for protein synthesis. tRNA: carries amino acids to the ribosome. rRNA: structural and catalytic component of ribosomes |
+
+### Water
+
+| Property of Water        | Importance to Living Organisms                                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Solvent                    | Water is an excellent solvent for polar and ionic substances (due to its polarity); many biochemical reactions take place in aqueous solution |
+| High specific heat capacity | Water absorbs a lot of heat energy before its temperature changes significantly; this helps organisms maintain a stable internal temperature (homeostasis) and prevents large temperature fluctuations in aquatic environments |
+| High latent heat of vaporisation | A lot of energy is required to evaporate water; this makes sweating an effective cooling mechanism for mammals; evaporation of water from tropical forests contributes to cloud formation and rainfall |
+| Cohesion and surface tension | Hydrogen bonds between water molecules create strong cohesion; this allows water to be pulled through xylem vessels (transpiration stream); surface tension allows some insects to walk on water |
+| High density (ice floats)  | Water is less dense as a solid (ice) than as a liquid because hydrogen bonds hold water molecules in an open lattice structure; this insulates the water below, allowing aquatic organisms to survive in winter |
+| Transparency              | Water is transparent to visible light; this allows photosynthesis to occur in aquatic environments (light can penetrate to submerged plants and algae) |
+| Reactant                  | Water is a reactant in hydrolysis reactions (e.g., digestion of polymers) and photosynthesis; a product of condensation reactions and aerobic respiration |
+
+---
+
+## Enzymes in Detail
+
+### Lock-and-Key vs Induced-Fit Model
+
+| Model                   | Description                                                                                                               | Evidence                                                                                                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Lock and key              | The active site of the enzyme has a rigid, fixed shape that is exactly complementary to the shape of the substrate (like a key fits a lock) | Explains enzyme specificity but is an oversimplification                                        |
+| Induced fit               | The active site is flexible; when the substrate enters the active site, the enzyme changes shape slightly to fit more closely around the substrate; this puts strain on the substrate, weakening bonds and lowering the activation energy | Supported by X-ray crystallography studies showing enzyme-substrate complexes; explains why some enzymes can catalyse reactions of slightly different substrates |
+
+### Factors Affecting Enzyme Activity
+
+| Factor                  | Effect                                                                                                                    | Graph Shape                              | Explanation                                                                                                              |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Temperature              | Rate increases up to an optimum, then decreases sharply                                                                    | Bell curve                               | Increasing temperature increases kinetic energy (more enzyme-substrate collisions); above the optimum, the enzyme denatures (active site changes shape and substrate can no longer bind) |
+| pH                       | Rate increases up to an optimum, then decreases                                                                            | Bell curve                               | Changes in pH alter the charges on amino acid residues in the active site, disrupting the ionic and hydrogen bonds that maintain the tertiary structure; extreme pH causes denaturation |
+| Substrate concentration   | Rate increases proportionally at low concentrations, then plateaus (Vmax)                                                 | Hyperbolic (rectangular) curve           | At low [substrate], increasing [substrate] increases the number of enzyme-substrate collisions; at high [substrate], all active sites are occupied at all times (enzyme saturation); Vmax depends on enzyme concentration |
+| Enzyme concentration     | Rate increases proportionally                                                                                              | Straight line (through origin)            | More enzyme molecules = more active sites available = more enzyme-substrate complexes formed per unit time             |
+| Inhibitor concentration  | Depends on inhibitor type (competitive or non-competitive)                                                                | Varies                                   | See below                                                                                                                |
+
+### Types of Inhibition
+
+| Type                    | Description                                                                                                               | Effect on Vmax                           | Effect on K$_m$                           | Reversibility                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------- | --------------------------------- |
+| Competitive              | Inhibitor has a similar shape to the substrate and competes for the active site                                            | Vmax unchanged (high [substrate] outcompetes inhibitor) | K$_m$ increased (higher [substrate] needed to reach half Vmax) | Reversible (can be overcome by increasing [substrate]) |
+| Non-competitive          | Inhibitor binds to a site other than the active site (allosteric site), causing a conformational change that alters the active site | Vmax decreased (inhibitor cannot be overcome) | K$_m$ unchanged (substrate affinity is not affected, but maximum rate is reduced) | Usually reversible                   |
+
+---
+
+## Common Pitfalls
+
+- **Starch is NOT digestible by all organisms.** Humans can digest starch (amylase breaks the $\alpha$-glycosidic bonds) but CANNOT digest cellulose ($\beta$-glycosidic bonds). Herbivores (cows, rabbits) can digest cellulose because they have symbiotic bacteria in their gut that produce cellulase
+- **Lipids contain more energy per gram than carbohydrates (approximately 39 kJ/g vs 17 kJ/g).** This is because lipids have a higher proportion of C-H bonds (which release more energy when oxidised) and very little oxygen (more energy released per gram of carbon oxidised)
+- **DNA and RNA differ in three ways: sugar (deoxyribose vs ribose), bases (T vs U), and structure (double-stranded vs single-stranded).** Students often forget one of these differences
+- **The primary structure of a protein is determined by the DNA sequence (gene).** Changes in the DNA sequence (mutations) can alter the primary structure, which can change the tertiary structure, which can change the function of the protein. This is the molecular basis of many genetic diseases (e.g., sickle cell anaemia: a single amino acid change in the beta-globin protein)
+- **Non-competitive inhibition reduces Vmax but does NOT change K$_m$.** Competitive inhibition increases K$_m$ but does NOT change Vmax. Students frequently confuse these effects**
+:::

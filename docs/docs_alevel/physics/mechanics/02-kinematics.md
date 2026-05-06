@@ -181,7 +181,8 @@ $$g \approx 9.81 \mathrm{ m s}^{-2}$$
 This was established by Galileo's experiments and is a consequence of the equivalence principle
 (mass cancels in $F = ma = mg$).
 
-:::info Board Note Some boards use $g = 9.8$ m s$^{-2}$ or $g = 10$ m s$^{-2}$ in numerical
+:::info
+info
 problems. Always use the value specified in the question.
 :::
 
@@ -388,7 +389,8 @@ $$\boxed{\mathbf{v}_{AB} = \mathbf{v}_A - \mathbf{v}_B}$$
 
 This is the velocity A appears to have when observed from B's frame of reference.
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info
+info
 
 ### Resolving into Components
 
@@ -728,7 +730,8 @@ $\sqrt{17.3^2 + 31.4^2} = 35.8$ m s$^{-1}$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Kinematics**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-kinematics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Kinematics with other physics topics to test synthesis under exam conditions.
@@ -736,7 +739,8 @@ Ready to test your understanding of **Kinematics**? The [diagnostic test](/docs/
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Applying SUVAT equations to non-uniform acceleration:** The five SUVAT equations ONLY apply when acceleration is CONSTANT. If a question involves a changing force (e.g., a spring, air resistance), acceleration is not constant and SUVAT cannot be used. Use calculus (integration) or energy methods instead.
 
@@ -746,4 +750,5 @@ See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for in
 
 - **Forgetting that air resistance changes the motion:** In many projectile questions, air resistance is neglected. But if a question mentions air resistance, remember: the horizontal component of velocity DECREASES (it is no longer constant), the time of flight DECREASES (the object reaches a lower maximum height), and the trajectory is no longer a perfect parabola.
 
+:::
 :::

@@ -299,7 +299,8 @@ Examples: water supply, electricity distribution, railway networks.
 $MC \lt AC$. Regulatory options: average cost pricing ($P = AC$), price cap regulation, public
 ownership.
 
-:::info Board-Specific Note AQA emphasises the role of Ofwat (water) and Ofgem (energy) as UK
+:::info
+info
 regulators, including RPI-X price cap regulation. Edexcel requires understanding of how regulation
 can create **X-inefficiency** — the monopoly has no incentive to minimise costs if the regulator
 simply allows cost-plus pricing. CIE (9708) often asks students to compare **public ownership vs

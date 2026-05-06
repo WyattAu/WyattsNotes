@@ -74,7 +74,8 @@ Clearly $f \circ g \neq g \circ f$.
 
 </details>
 
-:::warning When computing $f \circ g$, always apply $g$ first, then $f$. Think of it as reading
+:::warning
+warning
 right to left: $(f \circ g)(x) = f(g(x))$.
 :::
 
@@ -259,7 +260,8 @@ $$y = af(x - p) + q$$
 represents: horizontal translation by $p$ (right), vertical stretch by factor $a$, vertical
 translation by $q$ (up).
 
-:::tip Apply horizontal transformations first (inside the function), then vertical transformations
+:::tip
+tip
 (outside). The order inside-out matters.
 :::
 
@@ -747,7 +749,8 @@ $\left(\frac{-2+1}{3}, 2 \times 5 + 4\right) = \left(-\frac{1}{3}, 14\right)$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Functions**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-functions) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions with other pure mathematics topics to test synthesis under exam conditions.

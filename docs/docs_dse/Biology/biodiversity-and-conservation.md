@@ -354,7 +354,8 @@ New species arise without geographic separation. Mechanisms include:
   same area (e.g., different host plants for insects)
 - **Sexual selection:** Different mating preferences or displays lead to reproductive isolation
 
-:::info In the DSE, allopatric speciation is the most commonly tested form. When answering questions
+:::info
+info
 on speciation, always clearly identify the geographic barrier, explain how gene flow is interrupted,
 describe the different selection pressures on each population, and explain how reproductive
 isolation arises.
@@ -654,7 +655,8 @@ triple bond in $\mathrm{N}_2$ is very strong and requires significant energy to 
 | Decomposition / ammonification | Decomposers break down dead organisms and urea/excreted waste, releasing ammonia ($\mathrm{NH}_3$)        | Decomposer bacteria and fungi                                                                                    |
 | Denitrification                | Nitrate ($\mathrm{NO}_3^-$) is converted back to $\mathrm{N}_2$ gas, returning it to the atmosphere       | Denitrifying bacteria (e.g., _Pseudomonas_, _Paracoccus_)                                                        |
 
-:::warning A common DSE error is writing that plants absorb nitrogen gas ($\mathrm{N}_2$) from the
+:::warning
+warning
 atmosphere. Plants cannot use atmospheric nitrogen directly. They can only absorb nitrogen in the
 form of nitrate ($\mathrm{NO}_3^-$) or ammonium ($\mathrm{NH}_4^+$) ions through their roots.
 Atmospheric nitrogen must first be fixed by bacteria or lightning.
@@ -929,11 +931,358 @@ If you get this wrong, revise: Human Impact -- Climate Change; Conservation Stra
 
 ---
 
-:::tip Diagnostic Test
+
+---
+
+## Invasive Species
+
+### What is an Invasive Species?
+
+An invasive (non-native) species is one that has been introduced to an area outside its natural range and that causes ecological, economic, or human health harm. Not all introduced species become invasive -- many fail to establish, and some integrate without causing significant damage.
+
+### Impact of Invasive Species
+
+| Impact Type         | Description                                                                                                                   | Example                                                                 |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Predation           | Invasive predators can devastate native wildlife populations that have evolved without such predation pressure                      | Cats and rats in New Zealand; brown tree snake in Guam (eliminated 10 of 12 native bird species) |
+| Competition         | Invasive species outcompete native species for resources (food, light, water, nesting sites)                                      | Grey squirrel outcompeting red squirrel in the UK (grey carries squirrelpox virus) |
+| Disease            | Invasive species can introduce diseases to which native species have no immunity                                                | Dutch elm disease fungus; chytrid fungus devastating amphibian populations globally |
+| Habitat alteration  | Invasive plants can change soil chemistry, fire regimes, and water cycles                                                           | Water hyacinth blocking waterways; kudzu smothering native vegetation in the southeastern US |
+| Hybridisation       | Invasive species can hybridise with native species, reducing genetic purity of native populations                                  | Introduced mallard ducks hybridising with native duck species |
+
+### Case Study: Water Hyacinth (_Eichhornia crassipes_)
+
+| Feature            | Detail                                                                                                                      |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| Origin            | Amazon basin, South America                                                                                               |
+| Introduction       | Introduced as an ornamental plant; now found in tropical and subtropical regions worldwide                                    |
+| Growth rate        | Extremely rapid; can double in population size in approximately 2 weeks under optimal conditions                                     |
+| Problems caused     | Blocks waterways; reduces light and oxygen for aquatic life; interferes with fishing and transport; increases water loss through transpiration; creates breeding grounds for mosquitoes (malaria risk) |
+| Control methods    | Physical removal; biological control (weevils _Neochetina eichhorniae_ and _N. bruchi_); herbicides (limited effectiveness) |
+
+### Case Study: Cane Toad (_Rhinella marina_) in Australia
+
+The cane toad was introduced to Australia in 1935 to control cane beetles. It failed to control the beetles but became a major invasive species:
+
+- Toxic bufotoxins kill native predators (snakes, lizards, crocodiles, dingoes)
+- Competes with native species for food and habitat
+- Reproduces rapidly (up to 30,000 eggs per clutch, multiple clutches per year)
+- No natural predators in Australia
+- Population has spread across northern and eastern Australia
+- Current population: over 200 million
+- Control methods: physical removal, trapping, community campaigns, research into biological control
+
+---
+
+## Conservation Genetics
+
+### Genetic Bottlenecks
+
+A genetic bottleneck occurs when a population undergoes a drastic reduction in size, losing a significant portion of its genetic diversity.
+
+**Consequences of reduced genetic diversity:**
+
+1. **Reduced adaptive potential:** With less genetic variation, the population is less able to adapt to changing environmental conditions
+2. **Increased homozygosity:** Recessive deleterious alleles become more common (inbreeding depression)
+3. **Inbreeding depression:** Mating between closely related individuals increases homozygosity, expressing harmful recessive alleles; reduced fertility, higher juvenile mortality, increased susceptibility to disease
+4. **Reduced evolutionary potential:** Less raw material for natural selection to act upon
+
+### The 50/500 Rule
+
+| Number | Purpose                                    |
+| ------ | ------------------------------------------- |
+| 50     | Minimum to prevent short-term inbreeding depression |
+| 500    | Minimum to maintain long-term evolutionary potential   |
+
+### Genetic Rescue
+
+Genetic rescue involves introducing individuals from a different population to increase genetic diversity in a small, inbred population.
+
+- **Successful example:** Florida panther (introduced Texas individuals to increase genetic diversity; improved survival and reproductive success)
+- **Risks:** Outbreeding depression (if populations are too genetically distinct, the hybrid offspring may have reduced fitness)
+
+---
+
+## Climate Change and Conservation
+
+### Effects of Climate Change on Biodiversity
+
+| Effect                          | Mechanism                                                                                                           | Affected Species/Ecosystems        |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| Range shifts                     | Species move towards poles or to higher elevations to track suitable temperature conditions             | Arctic species; alpine plants; montane amphibians |
+| Ocean acidification              | Dissolved $\mathrm{CO}_2$ lowers ocean pH; impairs calcification in corals, molluscs, and planktonic organisms | Coral reefs; pteropods; shellfish |
+| Altered phenology              | Seasonal events shift in timing; may create mismatches between species interactions                | Pollinators and flowering plants; migratory birds and food availability |
+| Increased extreme weather         | More frequent droughts, floods, storms damage habitats and kill organisms directly                             | Coral reefs; forests; coastal ecosystems |
+| Sea level rise                  | Coastal habitats are inundated; saltwater intrusion into freshwater ecosystems                                    | Mangroves; salt marshes; low-lying islands |
+| Changing rainfall patterns        | Altered distribution of freshwater and food resources                                                      | Savanna ecosystems; wetlands; migratory species |
+
+### Conservation Strategies for Climate Change
+
+| Strategy                      | Description                                                                                                               |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Protected area networks         | Connected reserves that allow species to migrate in response to changing climate (corridors)                |
+| Assisted migration              | Deliberately moving species to more suitable habitat as their current range becomes uninhabitable              |
+| Ex situ conservation           | Captive breeding programmes, seed banks, and gene banks as a safety net for species that cannot survive in the wild    |
+| Habitat restoration           | Restoring degraded ecosystems to increase resilience and absorb climate refugees                        |
+| Reducing greenhouse emissions  | The most important long-term strategy; transitioning to renewable energy; reducing deforestation            |
+
+:::tip
+tip
 Ready to test your understanding of **Biodiversity and Conservation**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-biodiversity-conservation) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Biodiversity and Conservation with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
 
+---
+
+## Ecological Succession
+
+### Primary Succession
+
+Primary succession occurs on **bare, lifeless substrate** where no soil exists -- for example, on newly formed volcanic rock, sand dunes, or land exposed by retreating glaciers.
+
+| Stage                     | Description                                                                                                               | Pioneer Species / Key Features              |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Bare substrate              | No soil; rock, sand, or ash surface; hostile environment (no organic matter, no water retention, extreme temperatures) | None initially                              |
+| Colonisation                | **Pioneer species** colonise: lichens, algae, mosses. Lichens secrete acids that weather the rock, beginning soil formation. Wind-blown spores and seeds arrive | Lichens (symbiosis of fungi and algae); cyanobacteria |
+| Soil development            | As pioneer organisms die and decompose, organic matter accumulates, forming a thin layer of **humus**. This improves water retention and nutrient content | Mosses, liverworts                         |
+| Herbaceous stage            | Grasses and small herbaceous plants colonise the developing soil. Their roots further stabilise the soil and add more organic matter | Grasses, ferns, small herbs                 |
+| Shrub stage                 | Shrubs and small woody plants appear. They outcompete the grasses for light and nutrients                                | Shrubs (e.g., gorse, bramble), small trees |
+| Climax community            | A stable, self-sustaining community dominated by large trees. The community remains relatively stable unless disrupted by a major disturbance | Oak forest, tropical rainforest, depending on climate |
+
+### Secondary Succession
+
+Secondary succession occurs on **previously occupied land** where the existing community has been disturbed or destroyed, but the soil remains intact.
+
+| Feature                  | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Trigger                  | Fire, flooding, deforestation, abandonment of farmland, hurricane damage                                               |
+| Starting point            | Soil already present (with seeds, spores, and organic matter), so succession is faster than primary succession           |
+| Early colonisers          | Grasses and herbaceous plants (not lichens, since soil already exists)                                                   |
+| Intermediate species       | Shrubs and fast-growing trees (e.g., birch, pine)                                                                       |
+| Climax community          | Slower-growing, shade-tolerant trees eventually dominate (e.g., oak, beech)                                              |
+| Time scale                | Typically 50-200 years to reach climax community (compared to hundreds to thousands of years for primary succession)    |
+
+### Plagioclimax
+
+A plagioclimax is a stable community that is prevented from reaching its natural climax community by **human activity** or other persistent factors.
+
+| Example                                 | Description                                                                                                               |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Grazed grassland (e.g., the South Downs) | Regular sheep/cattle grazing prevents shrubs and trees from establishing; the grassland is maintained artificially        |
+| Heather moorland                         | Managed burning prevents tree colonisation; heather is maintained as the dominant vegetation                             |
+| Managed forest / plantation             | Regular harvesting and replanting prevents natural succession from occurring                                             |
+| Mown lawns and parks                     | Regular mowing prevents the natural succession to scrub and woodland                                                     |
+
+### Key Terms
+
+| Term                     | Definition                                                                                                                |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Pioneer species           | The first organisms to colonise a bare substrate; typically hardy, tolerant of extreme conditions, fast-growing, and able to fix nitrogen (if applicable) |
+| Climax community          | The final, stable community in succession; dominated by slow-growing, long-lived species; relatively self-sustaining       |
+| Sere                     | The sequence of stages in succession from pioneer to climax                                                             |
+| Deflected succession      | Succession that is diverted from its natural course by human activity or other factors (producing a plagioclimax)        |
+
+---
+
+## Biogeography
+
+### Continental Drift and Species Distribution
+
+The theory of continental drift (proposed by Alfred Wegener, 1912; confirmed by plate tectonics in the 1960s) explains many patterns in species distribution.
+
+| Evidence from Biogeography | Description                                                                                                               |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Matching fossils           | Identical fossil species (e.g., _Mesosaurus_, _Glossopteris_) found on continents now separated by oceans (South America, Africa, India, Antarctica, Australia) -- these organisms could not have crossed the oceans, so the continents must have once been joined |
+| Endemic species on islands | Oceanic islands (volcanic origin) have unique species that evolved from colonisers that arrived by wind or sea -- they resemble species on the nearest mainland but are distinct |
+| Australian fauna           | Australia has been isolated for ~30-40 million years; its unique marsupial fauna (kangaroos, koalas, wombats, platypus) evolved in the absence of placental mammal competition |
+| Convergent evolution       | Similar habitats on different continents have produced ecologically equivalent but evolutionarily unrelated species (e.g., cacti in Americas vs. euphorbias in Africa; marsupial moles in Australia vs. placental moles elsewhere) |
+
+### Island Biogeography (MacArthur and Wilson, 1967)
+
+The theory of island biogeography predicts species richness on islands based on two opposing processes:
+
+| Factor                | Effect on Species Richness                                                                                                  |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Island size (area)     | Larger islands have higher species richness (more habitats, larger populations less prone to extinction, larger "target" for colonisation) |
+| Distance from mainland | Islands closer to the mainland have higher species richness (easier for species to colonise)                              |
+
+$$S = cA^z$$
+
+Where:
+- $S$ = number of species
+- $A$ = island area
+- $c$ = constant (depends on the taxonomic group and biogeographic region)
+- $z$ = constant (typically 0.2-0.35)
+
+At equilibrium, the rate of colonisation equals the rate of extinction, and the number of species remains relatively stable.
+
+---
+
+## Sampling Techniques in Detail
+
+### Random Sampling
+
+1. Mark out a study area using a tape measure
+2. Use random number tables or a random number generator to select coordinates for sampling points
+3. Place a quadrat at each selected coordinate
+4. Record the species present and/or their abundance within the quadrat
+5. Repeat for multiple quadrats (typically 10-30) to obtain a representative sample
+
+### Systematic Sampling
+
+1. Mark out a **transect line** (a straight line across the study area, from one side to the other)
+2. Place quadrats at regular intervals along the transect (e.g., every 2 metres)
+3. This is useful for studying how species distribution changes along an environmental gradient (e.g., from sea shore inland, from edge to centre of a woodland)
+
+### Quadrat Size Guidelines
+
+| Habitat                  | Recommended Quadrat Size                                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Grassland                | 0.5 m $\times$ 0.5 m or 1 m $\times$ 1 m                                                                              |
+| Heathland / moorland      | 1 m $\times$ 1 m or 2 m $\times$ 2 m                                                                                  |
+| Woodland (ground flora)   | 1 m $\times$ 1 m                                                                                                         |
+| Rocky shore (small organisms) | 0.25 m $\times$ 0.25 m                                                                                             |
+
+### Calculating Species Diversity
+
+**Species richness:** The number of different species in a given area (a simple count).
+
+**Simpson's Diversity Index (SDI):**
+
+$$D = 1 - \sum \left( \frac{n}{N} \right)^2$$
+
+Where:
+- $n$ = number of individuals of a particular species
+- $N$ = total number of individuals of all species
+- $D$ ranges from 0 (no diversity, only one species) to approaching 1 (maximum diversity, many species with equal abundance)
+
+**Interpretation:**
+- $D$ close to 0: low diversity; the community is dominated by one or a few species; ecosystem is less stable and more vulnerable to disturbance
+- $D$ close to 1: high diversity; many species with similar abundances; ecosystem is more stable and resilient
+
+### Capture-Mark-Release-Recapture
+
+Used to estimate the population size of **mobile animals** (e.g., insects, small mammals, fish).
+
+**Lincoln-Petersen Index:**
+
+$$N = \frac{M \times C}{R}$$
+
+Where:
+- $N$ = estimated total population size
+- $M$ = number of animals captured and marked in the first sample
+- $C$ = total number of animals captured in the second sample
+- $R$ = number of marked animals recaptured in the second sample
+
+**Assumptions:**
+1. The proportion of marked to unmarked animals in the second sample is the same as in the total population
+2. Marks are not lost and do not affect the animal's survival or behaviour
+3. The population is closed (no births, deaths, immigration, or emigration between samples)
+4. All individuals have an equal chance of being captured (random mixing)
+5. Sufficient time has passed for marked individuals to mix back into the population
+
+### Common Pitfalls
+
+- **Quadrats must be placed randomly**, not subjectively (e.g., placing quadrats only where there are many plants introduces sampling bias)
+- **Simpson's Diversity Index takes both species richness AND evenness into account**, unlike species richness alone. Two communities can have the same number of species but very different diversity indices if one is dominated by a single species
+- **The capture-mark-release-recapture method assumes a closed population.** If animals are born, die, or migrate between the two samples, the estimate will be inaccurate
+
+---
+
+## Classification Systems
+
+### The Three-Domain System (Carl Woese, 1990)
+
+Based on molecular evidence (rRNA sequencing), Woese proposed three domains above the kingdom level:
+
+| Domain                  | Cell Type                  | Description                                                                                                               | Examples                                 |
+| ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| **Bacteria**             | Prokaryotic                | Unicellular; no nucleus; no membrane-bound organelles; cell wall contains peptidoglycan; circular DNA; 70S ribosomes       | _E. coli_, _Staphylococcus_, _Cyanobacteria_ |
+| **Archaea**              | Prokaryotic                | Unicellular; no nucleus; no membrane-bound organelles; cell wall does NOT contain peptidoglycan (contains pseudopeptidoglycan or other polymers); often found in extreme environments; some genes have introns (like eukaryotes) | Methanogens; halophiles; thermophiles; _Sulfolobus_ |
+| **Eukarya**              | Eukaryotic                 | Unicellular or multicellular; nucleus and membrane-bound organelles; linear DNA with introns; 80S ribosomes; cytoskeleton; sexual reproduction common | Animals, plants, fungi, protists        |
+
+### The Five-Kingdom System (Whittaker, 1969)
+
+| Kingdom                 | Cell Type                  | Cell Wall                  | Nutrition                     | Examples                                 |
+| ----------------------- | -------------------------- | -------------------------- | ----------------------------- | --------------------------------------- |
+| **Prokaryotae** (Monera) | Prokaryotic                | Peptidoglycan              | Various (autotrophic, heterotrophic, saprotrophic) | Bacteria, cyanobacteria               |
+| **Protoctista** (Protista) | Eukaryotic                | Some have cellulose        | Various                       | Amoeba, paramecium, algae, seaweed     |
+| **Fungi**                | Eukaryotic                 | Chitin                     | Saprotrophic (extracellular digestion) | Mushrooms, yeasts, moulds, _Penicillium_ |
+| **Plantae**              | Eukaryotic                 | Cellulose                  | Autotrophic (photosynthesis)  | Mosses, ferns, conifers, flowering plants |
+| **Animalia**             | Eukaryotic                 | No cell wall               | Heterotrophic (ingestion)     | Insects, fish, amphibians, reptiles, birds, mammals |
+
+### Binomial Nomenclature
+
+- Devised by Carl Linnaeus (1758)
+- Each species is given a two-part Latin name:
+  - **Genus name** (capitalised, e.g., _Homo_)
+  - **Species name** (lowercase, e.g., _sapiens_)
+- The full name is written in italics (or underlined if handwritten): _Homo sapiens_
+- This system is universal (used worldwide) and avoids confusion caused by common names (e.g., "puma", "cougar", "mountain lion" all refer to _Puma concolor_)
+
+### Classification Hierarchy
+
+$$\text{Domain} \rightarrow \text{Kingdom} \rightarrow \text{Phylum} \rightarrow \text{Class} \rightarrow \text{Order} \rightarrow \text{Family} \rightarrow \text{Genus} \rightarrow \text{Species}$$
+
+**Mnemonic:** "Dear King Philip Came Over For Good Soup"
+
+Each level is called a **taxon** (plural: taxa). Species within the same genus are more closely related than species in different genera; species within the same family are more closely related than those in different families, and so on.
+
+### Viruses -- Classification Debate
+
+Viruses are NOT classified in any of the three domains because:
+
+| Feature                  | Living Organisms                                                                                                         | Viruses                                                                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Cell structure            | Have cells (prokaryotic or eukaryotic)                                                                                 | Acellular (no cell structure); consist of genetic material (DNA or RNA) enclosed in a protein coat (capsid); some have a lipid envelope |
+| Metabolism                | Carry out metabolic reactions (respiration, etc.)                                                                       | No metabolism of their own; do not carry out respiration, nutrition, or excretion                                         |
+| Reproduction              | Reproduce independently (cell division, sexual reproduction)                                                            | Can only replicate inside a host cell; they are obligate intracellular parasites                                           |
+| Response to stimuli       | Can respond to environmental stimuli                                                                                    | No response to stimuli                                                                                                   |
+| Homeostasis               | Maintain a stable internal environment                                                                                 | No homeostasis                                                                                                           |
+
+### Extremophiles
+
+Extremophiles are organisms, predominantly archaea, that thrive in extreme environments:
+
+| Type                    | Environment                                                                                                               | Example                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Thermophiles              | High temperature (45-80 degrees C or higher)                                                                             | _Thermus aquaticus_ (source of Taq polymerase for PCR); archaea near deep-sea hydrothermal vents |
+| Hyperthermophiles         | Very high temperature (above 80 degrees C)                                                                               | _Pyrolobus fumarii_ (grows at 113 degrees C)                                                    |
+| Halophiles                | High salt concentration                                                                                                  | Halobacterium (turns salt lakes pink due to bacteriorhodopsin pigment)                           |
+| Acidophiles               | Low pH (acidic environments, pH < 3)                                                                                     | _Acidithiobacillus ferrooxidans_ (lives in acid mine drainage, pH ~1.5)                           |
+| Alkaliphiles              | High pH (alkaline environments, pH > 9)                                                                                 | _Natronomonas_ (lives in soda lakes)                                                             |
+| Barophiles (piezophiles)  | High pressure                                                                                                             | Archaea and bacteria in deep ocean trenches (>1000 atmospheres)                                    |
+
+---
+
+## Biodiversity and Ecosystem Stability
+
+### Relationship Between Biodiversity and Stability
+
+Higher biodiversity generally leads to greater ecosystem stability:
+
+1. **Productivity stability:** Ecosystems with higher species diversity tend to have more stable productivity (total biomass production) over time, because if one species declines, others can compensate
+2. **Resistance:** High-diversity ecosystems are more resistant to change (e.g., more resistant to invasion by alien species, because more ecological niches are already filled)
+3. **Resilience:** High-diversity ecosystems recover more quickly after disturbance (e.g., fire, drought), because there are more species with different traits that can survive and re-establish the community
+4. **Trophic stability:** In diverse food webs, each species has multiple food sources and multiple predators, so the loss of one species is less likely to cause a cascade of extinctions
+
+### The Intermediate Disturbance Hypothesis
+
+- Proposed by Joseph Connell (1978)
+- Ecosystems with intermediate levels of disturbance have the HIGHEST species diversity
+- Low disturbance: competitive exclusion reduces diversity (the best competitor dominates and excludes others)
+- High disturbance: only the most tolerant or opportunistic species survive (pioneer species)
+- Intermediate disturbance: prevents competitive exclusion by periodically reducing the dominance of the strongest competitors, allowing a wider variety of species to coexist
+
+---
+
+## Common Pitfalls
+
+- **Archaea and Bacteria are BOTH prokaryotes, but they are in DIFFERENT domains.** They differ in cell wall composition (peptidoglycan vs. pseudopeptidoglycan), rRNA sequences, and membrane lipid structure
+- **Viruses are NOT considered living organisms.** They do not have cells, do not carry out metabolism, and cannot reproduce independently. They are not classified in any domain or kingdom
+- **The binomial name always has TWO parts: genus (capitalised) and species (lowercase).** Both parts should be italicised (or underlined). The genus name can be abbreviated to its initial letter after the first use (e.g., _H. sapiens_)
+- **"Endemic" and "native" are different terms.** "Endemic" means a species is found naturally in only ONE geographic area and nowhere else. "Native" means a species occurs naturally in an area (but may also occur elsewhere). For example, kangaroos are endemic to Australia; oak trees are native to many countries but not endemic to any single one**
+- **Species richness and species diversity are NOT the same thing.** Species richness is a simple count of the number of species. Species diversity (e.g., Simpson's Diversity Index) takes both species richness AND evenness (relative abundance of each species) into account**
+:::

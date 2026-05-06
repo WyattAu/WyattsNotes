@@ -179,7 +179,8 @@ $$1 - e^2 \geq 0 \implies e^2 \leq 1 \implies e \leq 1$$
 
 Combining both results: $0 \leq e \leq 1$. $\blacksquare$
 
-:::warning An exam question may ask you to justify $e \leq 1$. The key argument is that kinetic
+:::warning
+warning
 energy cannot increase during a collision.
 :::
 
@@ -224,7 +225,8 @@ $$J_y = \int_{t_1}^{t_2}F_y\,dt = \Delta p_y = m v_{y,\mathrm{final}} - m v_{y,\
 
 This is particularly useful for oblique impacts where the impulse acts in a specific direction.
 
-:::info The impulse-momentum theorem is the bridge between Newton's Second Law (a differential
+:::info
+info
 equation) and conservation of momentum (an algebraic constraint). It tells us exactly how much
 momentum a force transfers over a given time interval.
 :::
@@ -393,7 +395,8 @@ $$\tan\beta = \frac{v_t}{|v_n|} = \frac{u\sin\alpha}{e\,u\cos\alpha} = \frac{\ta
 
 ### 9.3 Angle relationships
 
-:::info Since $0 \lt{} e \leq 1$, we have $\tan\beta = \dfrac{\tan\alpha}{e} \geq \tan\alpha$, so
+:::info
+info
 $\beta \geq \alpha$. The particle always rebounds at an angle greater than or equal to the angle of
 incidence. Equality holds only when $e = 1$ (perfectly elastic), recovering the law of reflection.
 :::
@@ -896,7 +899,8 @@ Section 8.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Momentum**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-momentum) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Momentum with other topics to test synthesis under exam conditions.

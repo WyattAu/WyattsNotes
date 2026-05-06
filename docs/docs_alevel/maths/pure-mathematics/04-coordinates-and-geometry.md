@@ -170,7 +170,8 @@ $$\left(x + \frac{D}{2}\right)^2 + \left(y + \frac{E}{2}\right)^2 = \frac{D^2 + 
 This is a circle with centre $\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius
 $\sqrt{\frac{D^2 + E^2}{4} - F}$, provided the right-hand side is positive. $\blacksquare$
 
-:::tip To find the centre and radius from the general form, always complete the square in $x$ and
+:::tip
+tip
 $y$. This is faster and less error-prone than memorising the formula.
 :::
 
@@ -417,7 +418,8 @@ $$
 Subtracting the first equation from the second and third eliminates $F$, yielding a $2 \times 2$
 system in $D$ and $E$. Solve for $D$ and $E$, then substitute back to find $F$.
 
-:::warning If the three points are collinear, the system has no solution (no circle passes through
+:::warning
+warning
 three collinear points). You can check collinearity by verifying that the gradient between the first
 two points equals the gradient between the second two.
 :::

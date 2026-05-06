@@ -57,7 +57,8 @@ By definition, $\Delta H_f^\circ$ of any element in its standard state = 0.
 
 $$\Delta H_f^\circ(\mathrm{C}_{(s,\mathrm{ graphite})}) = 0 \quad ; \quad \Delta H_f^\circ(\mathrm{H}_{2(g)}) = 0$$
 
-:::warning $\Delta H_f^\circ$ always refers to 1 mole of the compound formed. The definition
+:::warning
+warning
 involves formation FROM elements, not the other way around.
 :::
 

@@ -225,7 +225,8 @@ traffic based on predetermined security rules.
 | Application-layer | Inspects actual content                       | Application (L7) |
 | Next-generation   | Combines all above + IDS/IPS, deep inspection | All layers       |
 
-:::info Board-specific
+:::info
+info
 
 - **AQA** requires symmetric encryption (AES), asymmetric encryption (RSA), digital signatures,
   SSL/TLS, firewalls, and malware types

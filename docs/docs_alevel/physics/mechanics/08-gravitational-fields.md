@@ -532,7 +532,8 @@ An object in a circular orbit needs a speed increase of $(\sqrt{2} - 1) \times 1
 to escape. This is why spacecraft use gravitational slingshots or multi-stage rockets rather than a
 single impulse to escape Earth's gravity efficiently.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info
+info
 
 <details>
 <summary>Problem 11</summary>
@@ -629,7 +630,8 @@ m s$^{-1} = 10.7$ km s$^{-1}$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Gravitational Fields**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-gravitational-fields) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Gravitational Fields with other physics topics to test synthesis under exam conditions.
@@ -637,7 +639,8 @@ Ready to test your understanding of **Gravitational Fields**? The [diagnostic te
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Confusing gravitational field strength g with gravitational force:** g = GM/r squared is the field strength (force per unit mass, N/kg). The gravitational force on an object is F = mg = GMm/r squared. Field strength does not depend on the test mass; force does. This distinction matters in exam questions about orbits and satellites.
 
@@ -647,4 +650,5 @@ See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for in
 
 - **Assuming gravitational force shields or cancels inside a shell:** Inside a uniform spherical shell, the gravitational field strength is ZERO at every point (not just the centre). This is a consequence of the shell theorem. Between two concentric shells, only the mass of the inner shell contributes to the field at that point.
 
+:::
 :::

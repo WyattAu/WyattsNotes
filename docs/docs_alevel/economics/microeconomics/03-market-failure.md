@@ -26,14 +26,16 @@ $$P \neq MSC \quad \mathrm{or equivalently} \quad MSB \neq MSC$$
 This leads to a **deadweight welfare loss**: the total surplus (consumer + producer + third-party)
 is not maximised.
 
-:::warning Common Pitfall Market failure does not mean the market has "failed" in a colloquial
+:::warning
+warning
 sense. It means the _outcome_ is suboptimal — there exists a reallocation that could make at least
 one person better off without making anyone worse off (Pareto improvement).
 :::
 
 ## 2. Types of Market Failure
 
-:::info Board-Specific Note **AQA** requires detailed analysis of all four types of externality
+:::info
+info
 (production/consumption, positive/negative) with diagrammatic welfare loss triangles. **Edexcel**
 emphasises the distinction between private and social costs/benefits using demand-supply diagrams.
 **CIE (9708)** covers market failure in the context of allocative efficiency and requires
@@ -338,7 +340,8 @@ market failure worsens the outcome.
 6. **Principal-agent problems**: government officials (agents) may not act in the public's
    (principal's) interest
 
-:::tip Exam Technique When evaluating government intervention, always consider government failure. A
+:::tip
+tip
 strong answer acknowledges that government intervention is not automatically superior to the market
 — it depends on the relative severity of market failure vs government failure in each specific case.
 :::
@@ -354,7 +357,8 @@ education, healthcare, vaccinations.
 **Demerit goods**: goods that the government believes consumers _should_ consume less of. Examples:
 alcohol, tobacco, illegal drugs.
 
-:::warning Common Pitfall Merit and demerit goods are normative concepts — they depend on value
+:::warning
+warning
 judgements about what is "good" or "bad" for people. This is different from positive externalities
 (which are objective welfare effects on third parties). Many merit goods also generate positive
 externalities, but the concepts are distinct.

@@ -420,7 +420,8 @@ since $\mathrm{Re}(w) \leq |w|$ for any complex $w$. Taking square roots gives t
 
 ## 7. Common Pitfalls
 
-:::warning Common Pitfall
+:::warning
+warning
 1. **Argument range:** Always specify whether your argument is the principal value $(-\pi, \pi]$ or the
    general value. When multiplying or dividing complex numbers, the resulting argument may fall
    outside the principal range and must be adjusted.

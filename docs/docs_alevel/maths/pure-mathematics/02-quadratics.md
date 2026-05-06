@@ -359,7 +359,8 @@ non-negative when $a > 0$ and always non-positive when $a < 0$, with equality on
 5. Select the intervals that satisfy the original inequality, respecting strict ($>$, $<$) vs
    non-strict ($\geq$, $\leq$) conditions.
 
-:::tip When the inequality is non-strict ($\geq$ or $\leq$), include the roots of the numerator but
+:::tip
+tip
 **never** include points where the denominator is zero.
 :::
 

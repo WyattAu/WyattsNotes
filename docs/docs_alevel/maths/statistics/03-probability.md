@@ -180,7 +180,8 @@ $P(A \cap B) = P(A)P(B)$. $\blacksquare$
 **Intuition.** Independence means knowing $B$ occurred gives you **no information** about $A$. The
 probability of $A$ is the same whether or not $B$ has happened.
 
-:::warning "Independent" and "mutually exclusive" are **different** concepts. If $A$ and $B$ are
+:::warning
+warning
 mutually exclusive and both have positive probability, they are **not** independent (since
 $P(A \cap B) = 0 \neq P(A)P(B)$).
 :::
@@ -450,7 +451,8 @@ $$= \tfrac{1 + 8 + 27 + 48 + 50 + 36}{12} = \tfrac{170}{12} = \tfrac{85}{6}$$
 
 $$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \tfrac{85}{6} - \tfrac{49}{4} = \tfrac{170 - 147}{12} = \tfrac{23}{12} \approx 1.917$$
 
-:::info For a fair die, $E(X) = 3.5$ and $\mathrm{Var}(X) = 35/12 \approx 2.917$. The biased die
+:::info
+info
 above has the same mean but smaller variance, meaning its outcomes are more concentrated around the
 centre.
 :::

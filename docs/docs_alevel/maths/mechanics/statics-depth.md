@@ -266,7 +266,8 @@ $$\alpha = \arctan(1.25) \approx 51.3^\circ$$
 
 The minimum angle is approximately $51.3^\circ$.
 
-:::warning Common Pitfall
+:::warning
+warning
 In ladder problems, always take moments about the **foot** of the ladder (or the point where two
 unknown forces act) to eliminate as many unknowns as possible from the moment equation.
 :::

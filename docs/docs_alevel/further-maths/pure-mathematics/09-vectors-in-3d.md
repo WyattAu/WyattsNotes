@@ -165,7 +165,8 @@ $\mathbf{b}$, and its direction is given by the right-hand rule.
 - $\mathbf{i}\times\mathbf{j} = \mathbf{k}$, $\mathbf{j}\times\mathbf{k} = \mathbf{i}$,
   $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
 
-:::warning The cross product is **not** commutative:
+:::warning
+warning
 $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is only defined in 3D.
 :::
 
@@ -358,7 +359,8 @@ $\square$
 - $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$
   are coplanar
 
-:::info The scalar triple product being zero is a test for coplanarity. If four points $A$, $B$,
+:::info
+info
 $C$, $D$ are coplanar, then
 $\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$.
 :::

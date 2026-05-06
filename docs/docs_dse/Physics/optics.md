@@ -795,7 +795,8 @@ For the A-Level treatment of this topic, see [Refraction and Total Internal Refl
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Optics**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-optics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Optics with other physics topics to test synthesis under exam conditions.

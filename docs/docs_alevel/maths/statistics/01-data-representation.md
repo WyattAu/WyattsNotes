@@ -72,7 +72,8 @@ mode.
 - The median is robust to outliers but ignores the magnitude of extreme values.
 - The mode is useful for categorical data.
 
-:::warning For skewed distributions, the median is a better measure of central tendency than the
+:::warning
+warning
 mean. A few extreme values can pull the mean far from the centre of the data.
 :::
 
@@ -147,7 +148,8 @@ $$\mathrm{Upper fence} = Q_3 + 1.5 \times \mathrm{IQR}$$
 
 Values outside these fences are potential outliers.
 
-:::warning Different boards may define outliers differently. Always check your board's convention.
+:::warning
+warning
 Some use $1.5 \times$ IQR, others use different multipliers.
 :::
 
@@ -223,7 +225,8 @@ $$S_2 = \frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}$$
 - $S \lt{} 0$: negative skew (left tail longer).
 - $S = 0$: symmetric distribution.
 
-:::info Pearson's first coefficient is more commonly examined at A-level. The second coefficient is
+:::info
+info
 useful when quartiles are already known and the standard deviation has not been calculated. Both
 give the same sign of skewness but may differ in magnitude.
 :::
@@ -268,7 +271,8 @@ $$M_i = \frac{0.6745\left(x_i - \tilde{x}\right)}{\mathrm{MAD}}$$
 
 An observation is flagged as an outlier if $|M_i| \gt{} 3.5$.
 
-:::tip The modified z-score is more robust than the standard z-score because it uses the median and
+:::tip
+tip
 MAD, which are themselves resistant to outliers. The factor $0.6745$ is the $0.75$-quantile of the
 standard normal distribution, so the modified z-score is on a comparable scale to the standard
 z-score for normally distributed data.
@@ -296,7 +300,8 @@ To construct a box plot:
    the largest data value within the upper fence.
 5. Plot any values outside the fences as individual points (these are the outliers).
 
-:::warning The whiskers extend to the most extreme data values _within_ the fences, not to the
+:::warning
+warning
 fences themselves. If no values lie outside the fences, the whiskers extend to the minimum and
 maximum of the dataset.
 :::
@@ -320,7 +325,8 @@ When two or more box plots are drawn on the same scale, compare:
 - **Skewness**: do the distributions differ in shape?
 - **Outliers**: does one distribution have more extreme values?
 
-:::warning When comparing distributions, always comment on both location and spread. A statement
+:::warning
+warning
 such as "distribution A has a higher median" is incomplete without also addressing how the spreads
 compare.
 :::
@@ -357,7 +363,8 @@ of each group. To compare two distributions:
 2. Read off medians, quartiles, and percentiles from each curve.
 3. Compare location (medians), spread (IQR), and shape (skewness).
 
-:::tip To read a value from an ogive: draw a horizontal line from the desired cumulative frequency
+:::tip
+tip
 to the curve, then drop a vertical line to the $x$-axis. The reverse process gives the cumulative
 frequency for a given $x$-value.
 :::
@@ -419,7 +426,8 @@ $20 \lt{} x \le{} 30$.
 
 $$Q_2 = 20 + \left(23.5 - 17\right) \cdot \frac{10}{18} = 20 + 6.5 \cdot \frac{10}{18} = 20 + \frac{65}{18} \approx 23.6$$
 
-:::info Linear interpolation assumes data are uniformly distributed within each class. This is an
+:::info
+info
 approximation; the true quantile may differ if the data are not uniformly spread within the class.
 :::
 

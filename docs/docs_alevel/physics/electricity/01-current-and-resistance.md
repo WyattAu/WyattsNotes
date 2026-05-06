@@ -180,7 +180,8 @@ resistant to current flow.
 | Silicon    | $6.4 \times 10^{2}$      |
 | Glass      | $\sim 10^{12}$           |
 
-:::warning Common Pitfall Resistivity is a property of the material. Resistance is a property of a
+:::warning
+warning
 particular component. A long thin copper wire has high resistance but copper still has low
 resistivity.
 :::
@@ -513,12 +514,14 @@ where $n$ is much smaller, $V_H$ is much larger and easier to measure.
 
 </details>
 
-:::warning Common Pitfall In the Hall effect formula $V_H = BI/(nqd)$, $d$ is the thickness in the
+:::warning
+warning
 direction of the magnetic field, not the width of the conductor perpendicular to the current. Sketch
 the geometry carefully.
 :::
 
-:::tip Exam Technique When asked to determine whether a semiconductor is n-type or p-type using the
+:::tip
+tip
 Hall effect, focus on the _sign_ of the Hall voltage. Electrons (negative charge) deflect to one
 side, holes (positive charge) deflect to the opposite side.
 :::

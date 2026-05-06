@@ -464,7 +464,8 @@ void discrete_distribution_demo() {
 }
 ```
 
-:::info `std::discrete_distribution` uses the Walker alias method internally, which provides $O(1)$
+:::info
+info
 sampling time after an $O(n)$ setup phase. This is optimal for distributions that are sampled many
 times with the same weights [N4950 §29.6.4.5].
 :::
@@ -555,7 +556,8 @@ void engine_benchmark() {
 }
 ```
 
-:::tip Never use `std::random_device` inside a tight loop. Seed a PRNG engine with one
+:::tip
+tip
 `random_device` call, then use the engine for all subsequent random values. `random_device` may make
 an OS syscall for every call, which is orders of magnitude slower than a PRNG.
 :::

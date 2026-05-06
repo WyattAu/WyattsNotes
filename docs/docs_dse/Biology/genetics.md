@@ -393,7 +393,8 @@ When constructing genetic diagrams for DSE examinations, follow these convention
 6. Read off the genotypic and phenotypic ratios
 7. Answer the question using the ratios
 
-:::info The forked-line method is generally faster for dihybrid crosses when both genes show
+:::info
+info
 standard Mendelian ratios. Use a Punnett square when the genes are linked or when you need to show
 all individual genotypes. For X-linked crosses, always use a Punnett square since the gamete
 combinations differ between males and females.
@@ -1078,6 +1079,175 @@ A **frameshift mutation** is an insertion or deletion of nucleotides that is NOT
 
 ---
 
+## Gene Regulation
+
+### Why Gene Regulation Matters
+
+Every cell in an organism contains the same DNA (same genes). However, not all genes are expressed in every cell at all times. Gene regulation allows cells to:
+
+- Differentiate into specialised cell types (e.g., muscle cells express muscle proteins; nerve cells express neurotransmitter-related genes)
+- Respond to changes in the environment (e.g., producing enzymes only when a substrate is available)
+- Maintain homeostasis (e.g., regulating insulin production based on blood glucose levels)
+- Progress through the cell cycle in a controlled manner
+
+### Gene Regulation in Prokaryotes: The Lac Operon
+
+The **lac operon** in _E. coli_ is the classic model of gene regulation. It controls the production of enzymes needed to metabolise lactose.
+
+**Components:**
+
+| Component       | Description                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Structural genes | lacZ (beta-galactosidase, breaks down lactose into glucose and galactose), lacY (permease, transports lactose into the cell), lacA (transacetylase, function less well understood) |
+| Promoter        | DNA sequence where RNA polymerase binds to transcribe the structural genes                                         |
+| Operator        | DNA sequence between the promoter and structural genes; acts as an on/off switch controlled by a repressor protein  |
+| Regulator gene  | lacI gene, located upstream; produces the lac repressor protein                                                   |
+
+**Mechanism of the lac operon:**
+
+**When lactose is ABSENT (repression):**
+
+1. The regulator gene (lacI) is continuously transcribed and translated, producing the lac repressor protein
+2. The repressor binds to the operator, physically blocking RNA polymerase from transcribing the structural genes
+3. The structural genes (lacZ, lacY, lacA) are NOT transcribed
+4. No beta-galactosidase or permease is produced (wasting energy on unnecessary enzymes is avoided)
+
+**When lactose is PRESENT (induction):**
+
+1. Lactose enters the cell (in small amounts via constitutively produced permease)
+2. Lactose is converted to **allolactose** (an isomer of lactose) by beta-galactosidase
+3. Allolactose acts as an **inducer**: it binds to the repressor protein, changing its shape
+4. The repressor can no longer bind to the operator
+5. RNA polymerase binds to the promoter and transcribes the structural genes
+6. Beta-galactosidase and permease are produced, enabling efficient lactose metabolism
+
+**Positive control by glucose (catabolite repression):**
+
+When both glucose AND lactose are present, _E. coli_ preferentially uses glucose (more efficient energy source). The lac operon is not fully activated because:
+
+1. Low glucose leads to high cAMP (cyclic AMP) levels
+2. cAMP binds to the **CAP protein** (catabolite activator protein)
+3. The cAMP-CAP complex binds to a site upstream of the promoter, enhancing RNA polymerase binding
+4. When glucose is HIGH, cAMP is LOW; the cAMP-CAP complex does not form; the lac operon is transcribed at a low rate even if lactose is present
+
+### Gene Regulation in Eukaryotes
+
+Eukaryotic gene regulation is more complex than prokaryotic regulation, involving multiple levels of control:
+
+| Level of Regulation | Description                                                                                                         |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Transcriptional     | Control of whether a gene is transcribed into mRNA (transcription factors, enhancers, silencers, chromatin structure) |
+| Post-transcriptional | mRNA processing (splicing, capping, poly-A tail); alternative splicing produces different proteins from the same gene |
+| Translational       | Control of whether mRNA is translated into protein (microRNAs, RNA interference, initiation factors)                |
+| Post-translational  | Modification of proteins after synthesis (phosphorylation, glycosylation, proteolytic cleavage, ubiquitin-mediated degradation) |
+
+**Transcription factors:**
+
+- Proteins that bind to specific DNA sequences (promoters, enhancers) and regulate transcription
+- **Activators:** Enhance transcription by helping RNA polymerase bind to the promoter
+- **Repressors:** Inhibit transcription by blocking RNA polymerase binding or recruiting chromatin-modifying enzymes
+- Hormones can act as transcription factors: steroid hormones (e.g., oestrogen, testosterone) enter the cell, bind to intracellular receptors, and the hormone-receptor complex acts as a transcription factor, binding to specific DNA sequences and regulating gene expression
+
+### Epigenetics
+
+Epigenetics refers to heritable changes in gene expression that do NOT involve changes to the DNA sequence itself.
+
+| Epigenetic Mechanism | Description                                                                                                                        |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| DNA methylation      | Addition of methyl groups (-CH$_3$) to cytosine bases, typically at CpG islands near gene promoters; usually associated with gene silencing |
+| Histone modification | Acetylation, methylation, or phosphorylation of histone proteins; affects how tightly DNA is wound around histones (chromatin structure) |
+| Non-coding RNA       | MicroRNAs (miRNAs) and small interfering RNAs (siRNAs) that bind to mRNA and inhibit translation or promote degradation                       |
+
+:::info
+Epigenetic changes are REVERSIBLE (unlike mutations) and can be influenced by environmental factors (diet, stress, toxins). This has important implications for understanding how environmental exposures affect gene expression and disease risk across generations. However, epigenetic changes should NOT be confused with Lamarckian inheritance of acquired characteristics -- the DNA sequence itself is unchanged.
+:::
+
+---
+
+## Chromosome Mutations
+
+### Changes in Chromosome Number
+
+| Type                  | Description                                                                                                      | Example                                        |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| Polyploidy            | Having extra complete sets of chromosomes (3n, 4n, etc.)                                                         | Common in plants (wheat is hexaploid, 6n)      |
+| Aneuploidy            | Having one extra or one missing chromosome                                                                        | Down syndrome (trisomy 21, 47 chromosomes)     |
+| Trisomy               | Having three copies of a chromosome instead of two                                                                | Trisomy 21 (Down syndrome), Trisomy 18 (Edwards syndrome) |
+| Monosomy              | Having only one copy of a chromosome instead of two                                                              | Monosomy X (Turner syndrome, 45 chromosomes)   |
+
+**Causes of aneuploidy -- non-disjunction:**
+
+Non-disjunction is the failure of homologous chromosomes (meiosis I) or sister chromatids (meiosis II) to separate properly during meiosis. This produces gametes with an abnormal number of chromosomes.
+
+If a gamete with an extra chromosome (n+1) is fertilised by a normal gamete (n), the resulting zygote has 2n+1 chromosomes (trisomy). If a gamete missing a chromosome (n-1) is fertilised, the zygote has 2n-1 chromosomes (monosomy).
+
+### Changes in Chromosome Structure
+
+| Type             | Description                                                                                           | Consequence                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Deletion         | A segment of a chromosome is lost                                                                    | Genes on the deleted segment are lost; often lethal   |
+| Duplication      | A segment is repeated                                                                                | Extra copies of genes; may affect gene dosage          |
+| Inversion        | A segment is reversed (flipped end-to-end)                                                           | Genes are present but in wrong order; may affect meiosis |
+| Translocation    | A segment breaks off and attaches to a non-homologous chromosome                                      | Can create fusion genes; e.g., Philadelphia chromosome in CML |
+
+---
+
+## Additional Problem Set
+
+**Problem 11:** Explain how the lac operon in _E. coli_ is regulated when (a) only glucose is present in the medium, (b) only lactose is present, and (c) both glucose and lactose are present.
+
+If you get this wrong, revise: Gene Regulation -- Gene Regulation in Prokaryotes: The Lac Operon
+
+<details>
+<summary>Solution</summary>
+
+(a) **Only glucose present:** The lac repressor (produced by lacI) binds to the operator, blocking transcription of lacZ, lacY, and lacA. Additionally, high glucose means low cAMP, so the cAMP-CAP complex does not form, providing no positive stimulation. The lac operon is OFF. _E. coli_ uses glucose directly.
+
+(b) **Only lactose present:** Lactose enters the cell (via low basal permease) and is converted to allolactose. Allolactose binds to the repressor, causing it to detach from the operator. Additionally, low glucose means high cAMP; the cAMP-CAP complex binds upstream of the promoter, enhancing RNA polymerase binding. The lac operon is fully ON. _E. coli_ produces beta-galactosidase and permease to metabolise lactose.
+
+(c) **Both glucose and lactose present:** Lactose/allolactose inactivates the repressor (operator is unblocked), but high glucose means low cAMP, so the cAMP-CAP complex does not form. The lac operon is transcribed at a LOW rate (not fully activated). _E. coli_ preferentially uses glucose and only slowly metabolises lactose. Once glucose is depleted, cAMP levels rise, cAMP-CAP forms, and the lac operon becomes fully active.
+
+</details>
+
+**Problem 12:** A couple has a child with Down syndrome (trisomy 21). Explain the chromosomal event that most likely caused this condition. Why does the risk of Down syndrome increase with maternal age?
+
+If you get this wrong, revise: Chromosome Mutations -- Changes in Chromosome Number
+
+<details>
+<summary>Solution</summary>
+
+Down syndrome is most commonly caused by **non-disjunction** during meiosis. Non-disjunction is the failure of homologous chromosome 21 to separate during anaphase I of meiosis (or the failure of sister chromatids of chromosome 21 to separate during anaphase II). This produces an egg (or sperm) with two copies of chromosome 21 instead of one. When this gamete fuses with a normal gamete (carrying one copy of chromosome 21), the resulting zygote has three copies of chromosome 21 (trisomy 21), giving a total of 47 chromosomes.
+
+The risk increases with maternal age because:
+
+- Oocytes begin meiosis during foetal development and arrest at prophase I for decades until ovulation
+- The longer an oocyte remains arrested, the greater the chance that cohesin proteins (which hold homologous chromosomes together) deteriorate
+- Deteriorated cohesin may fail to hold homologous chromosomes together properly, increasing the risk of non-disjunction during the first meiotic division
+- Additionally, accumulated damage to the meiotic machinery over time may contribute
+
+The risk is approximately 1 in 1,500 at age 20, 1 in 350 at age 35, and approximately 1 in 100 at age 40.
+
+</details>
+
+**Problem 13:** Compare the structure and function of mRNA, tRNA, and rRNA. Explain why all three types of RNA are necessary for protein synthesis.
+
+If you get this wrong, revise: Protein Synthesis; Gene Regulation
+
+<details>
+<summary>Solution</summary>
+
+| Type  | Structure                                                             | Function                                                                                     |
+| ----- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| mRNA  | Single-stranded; carries a copy of the genetic code from DNA; has a 5' cap and 3' poly-A tail | Carries the genetic information from the nucleus to the ribosome; determines the amino acid sequence of the protein |
+| tRNA  | Cloverleaf shape in 2D; has an anticodon loop and an amino acid attachment site (3' end) | Carries specific amino acids to the ribosome; anticodon base-pairs with the codon on the mRNA, ensuring the correct amino acid is inserted |
+| rRNA  | Single-stranded with folded regions; combined with proteins to form ribosomes | Forms the structural and catalytic core of the ribosome; catalyses peptide bond formation between amino acids |
+
+All three are necessary because: mRNA provides the template (the "message"), tRNA brings the correct building blocks (amino acids) based on the codon-anticodon matching, and rRNA forms the ribosome (the "factory") where the mRNA is read and amino acids are linked together. Without any one of these, protein synthesis cannot occur.
+
+</details>
+
+---
+
 :::tip
 Diagnostic Test
 Ready to test your understanding of **Genetics**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-genetics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
@@ -1085,5 +1255,202 @@ Ready to test your understanding of **Genetics**? The [diagnostic test](/docs/ds
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Genetics with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
 
+---
+
+## Genetic Diseases
+
+### Autosomal Dominant Disorders
+
+| Disorder              | Gene / Chromosome        | Description                                                                                                               | Inheritance Pattern                   |
+| ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| Huntington's disease   | HTT gene on chromosome 4 | Progressive neurodegenerative disorder; caused by expanded CAG trinucleotide repeat (codes for glutamine); symptoms typically appear after age 35 (chorea, dementia, personality changes); lethal                       | Autosomal dominant; 50% chance of inheriting if one parent affected; homozygous dominant is rare (often more severe, earlier onset) |
+| Marfan syndrome        | FBN1 gene on chromosome 15 | Defect in fibrillin-1 protein (connective tissue); tall stature, long limbs, dislocated eye lenses, aortic aneurysm                           | Autosomal dominant                     |
+| Achondroplasia         | FGFR3 gene on chromosome 4 | Most common form of dwarfism; mutation in fibroblast growth factor receptor 3 causes impaired cartilage formation; short limbs, normal trunk             | Autosomal dominant; 75% of cases are new mutations (not inherited) |
+| Familial hypercholesterolaemia | LDLR gene on chromosome 19 | Defective or absent LDL receptors; high blood cholesterol from birth; increased risk of early heart disease              | Autosomal dominant; codominant (heterozygotes have ~2x normal cholesterol; homozygotes have ~4x) |
+
+### Autosomal Recessive Disorders
+
+| Disorder              | Gene / Chromosome        | Description                                                                                                               | Carrier Frequency                    |
+| ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| Cystic fibrosis         | CFTR gene on chromosome 7 | Defective chloride ion channel; thick, sticky mucus in lungs, pancreas, and digestive system; recurrent lung infections; pancreatic insufficiency; shortened life expectancy (~40-50 years with treatment) | ~1 in 25 in Caucasian populations |
+| Sickle cell anaemia     | HBB gene on chromosome 11 | Mutation in beta-globin gene (GAG $\rightarrow$ GTG, Glu $\rightarrow$ Val at position 6); produces abnormal haemoglobin (HbS); RBCs become sickle-shaped under low oxygen; block capillaries; pain crises, organ damage, anaemia | ~1 in 10 in African populations |
+| Phenylketonuria (PKU)   | PAH gene on chromosome 12 | Deficiency of phenylalanine hydroxylase; cannot convert phenylalanine to tyrosine; phenylalanine accumulates, causing brain damage and intellectual disability if untreated; treated with low-phenylalanine diet from birth | ~1 in 50 in Caucasian populations  |
+| Tay-Sachs disease       | HEXA gene on chromosome 15 | Deficiency of hexosaminidase A; lipid (GM2 ganglioside) accumulates in nerve cells; progressive neurological deterioration; death usually by age 4-5 | ~1 in 27 in Ashkenazi Jewish populations |
+| Albinism               | Various genes (TYR, OCA2) | Deficiency of melanin production; lack of pigment in skin, hair, and eyes; vision problems (photophobia, nystagmus); increased risk of skin cancer | Varies by population                |
+
+### Sex-Linked Disorders
+
+| Disorder              | Gene / Chromosome        | Description                                                                                                               | Affected Sex                          |
+| ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| Haemophilia A           | F8 gene on X chromosome   | Deficiency of clotting factor VIII; blood does not clot properly; prolonged bleeding after injury; spontaneous internal bleeding into joints (haemarthrosis) | Primarily males (X$^h$Y); females rarely affected (need X$^h$X$^h$) |
+| Red-green colour blindness | Opsin genes on X chromosome | Defective photopigments in cone cells; cannot distinguish between red and green; most common in males (~8% of males vs ~0.5% of females in Caucasian populations) | Primarily males                      |
+| Duchenne muscular dystrophy | DMD gene on X chromosome  | Absence of dystrophin protein; progressive muscle weakness and degeneration; affected boys typically lose the ability to walk by age 12; life expectancy ~20-30 years | Males only (X-linked recessive)      |
+
+### Pedigree Analysis
+
+| Feature                          | Autosomal Dominant                                | Autosomal Recessive                                | X-Linked Recessive                              |
+| -------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------- |
+| Affected children from unaffected parents | No (at least one parent must be affected)   | Yes (both parents can be unaffected carriers)     | No (mother must be a carrier or father affected) |
+| Both sexes affected              | Yes (approximately equal)                         | Yes (approximately equal)                         | Mostly males; females rarely affected            |
+| Skips generations                | No (appears in every generation)                  | Yes (can skip generations through carriers)       | Yes (can skip through carrier females            |
+| Father-to-son transmission       | Possible                                          | Possible                                          | No (father passes Y to son, not X)               |
+| Affected female with unaffected male: all children affected? | Yes (she passes the dominant allele to all children) | No (children are carriers at most)              | No (sons receive Y from father; daughters receive one normal X) |
+
+---
+
+## Karyotyping and Chromosomal Analysis
+
+### Human Karyotype
+
+- A karyotype is a photograph of the chromosomes of a cell, arranged in pairs according to size and banding pattern
+- Human somatic cells are diploid (2n = 46): 22 pairs of autosomes + 1 pair of sex chromosomes (XX or XY)
+- Karyotyping is performed by:
+  1. Collecting cells (e.g., from blood, amniotic fluid, or chorionic villus sampling)
+  2. Stimulating the cells to divide
+  3. Arresting cell division in metaphase (using colchicine) -- when chromosomes are most condensed and visible
+  4. Staining the chromosomes (Giemsa stain produces characteristic banding patterns)
+  5. Photographing and arranging the chromosomes in homologous pairs
+
+### Chromosomal Abnormalities
+
+**Numerical abnormalities (aneuploidy):**
+
+| Condition                  | Karyotype   | Description                                                                                                               | Symptoms                                           |
+| -------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Down syndrome (trisomy 21)  | 47,XX,+21 or 47,XY,+21 | Extra copy of chromosome 21; most common chromosomal abnormality; incidence increases with maternal age                     | Intellectual disability; characteristic facial features; heart defects; increased risk of leukaemia |
+| Edwards syndrome (trisomy 18) | 47,XX,+18 or 47,XY,+18 | Extra copy of chromosome 18; severe developmental abnormalities; most affected infants die within the first year             | Severe intellectual disability; heart defects; clenched fists; rocker-bottom feet |
+| Patau syndrome (trisomy 13) | 47,XX,+13 or 47,XY,+13 | Extra copy of chromosome 13; severe abnormalities; most die within the first year                                        | Severe intellectual disability; cleft lip/palate; polydactyly; heart defects |
+| Klinefelter syndrome        | 47,XXY      | Extra X chromosome in a male                                                                                              | Tall stature; small testes; infertility; gynaecomastia; mild learning difficulties |
+| Turner syndrome             | 45,X0       | Missing one X chromosome in a female                                                                                      | Short stature; webbed neck; lack of ovarian development; infertility; no puberty without hormone treatment |
+| Triple X syndrome           | 47,XXX      | Extra X chromosome in a female                                                                                           | Usually normal; tall stature; may have learning difficulties |
+| Jacob's syndrome            | 47,XYY      | Extra Y chromosome in a male                                                                                             | Usually normal; tall stature; may have mild learning difficulties |
+
+**Structural abnormalities:**
+
+| Type                        | Description                                                                                                               | Effect                                  |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Deletion                     | A segment of a chromosome is lost                                                                                       | Cri-du-chat syndrome: deletion on chromosome 5 (short arm); severe intellectual disability; cat-like cry in infants |
+| Duplication                  | A segment of a chromosome is duplicated (present twice)                                                                 | May cause developmental abnormalities depending on the genes involved |
+| Inversion                    | A segment of a chromosome is reversed (flipped 180 degrees)                                                            | May disrupt gene function if the breakpoint occurs within a gene; may cause problems during meiosis |
+| Translocation                | A segment of one chromosome breaks off and attaches to another chromosome                                              | Reciprocal translocation: two chromosomes exchange segments; Robertsonian translocation: two acrocentric chromosomes (13, 14, 15, 21, 22) fuse at the centromere |
+| Robertsonian translocation    | A type of translocation involving acrocentric chromosomes where the long arms fuse and the short arms are lost           | Can cause Down syndrome if a Robertsonian translocation involves chromosome 21; a carrier (45 chromosomes) is phenotypically normal but at risk of having children with Down syndrome |
+
+### Pre-Natal Diagnosis
+
+| Method                          | Timing              | Description                                                                                                               | Risks                                  |
+| ------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| Amniocentesis                    | 15-20 weeks         | A needle is inserted through the abdomen into the amniotic sac; a sample of amniotic fluid (containing foetal cells) is withdrawn; cells are cultured and karyotyped | ~0.5-1% risk of miscarriage          |
+| Chorionic villus sampling (CVS)  | 10-13 weeks         | A sample of chorionic villi (placental tissue) is obtained via a needle through the abdomen or a catheter through the cervix; cells are karyotyped directly | ~1-2% risk of miscarriage             |
+| Non-invasive prenatal testing (NIPT) | 10+ weeks      | Cell-free foetal DNA is extracted from the mother's blood and analysed for chromosomal abnormalities using sequencing technology | No risk to the foetus (blood test only); high sensitivity for trisomy 21, 18, 13 |
+
+---
+
+## Common Pitfalls
+
+- **Dominant does NOT mean more common.** A dominant allele is expressed when only one copy is present, but it can still be rare in the population (e.g., Huntington's disease is dominant but rare; polydactyly is dominant but uncommon)
+- **A carrier is a heterozygote who shows no symptoms.** This term is used for recessive disorders and X-linked disorders, NOT for dominant disorders (a person with a dominant disorder cannot be an unaffected carrier)
+- **X-linked recessive disorders affect males more frequently than females.** Males have only one X chromosome, so a single recessive allele on the X chromosome will be expressed. Females need two copies (homozygous recessive) to be affected
+- **Down syndrome can be caused by trisomy 21 OR Robertsonian translocation.** Most cases (95%) are caused by non-disjunction during meiosis, but some are caused by a translocation involving chromosome 21 -- in these cases, one parent may be a balanced carrier (45 chromosomes, phenotypically normal)
+
+---
+
+## DNA Technology in Detail
+
+### Restriction Enzymes (Restriction Endonucleases)
+
+- Proteins produced by bacteria as a defence mechanism against bacteriophages (viruses that infect bacteria)
+- They recognise specific short DNA sequences (recognition sites, typically 4-8 base pairs long) and cut the DNA at or near these sites
+- The recognition sites are **palindromic** -- the sequence reads the same on both strands in the 5' to 3' direction (e.g., GAATTC on one strand reads CTTAAG on the complementary strand)
+
+| Type                    | Cut Pattern                                                                                                               | Result                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| **Blunt end cutters**     | Cut straight through both strands at the same position in the recognition site                                           | Flat ends; can be joined to any other blunt end, but less efficient and less specific |
+| **Sticky end cutters**    | Cut at staggered positions on the two strands, creating short single-stranded overhangs (sticky ends)                     | The single-stranded overhangs can base-pair with complementary overhangs from another fragment; more efficient and more specific joining |
+
+| Enzyme                  | Recognition Site (5' $\rightarrow$ 3')                                                                                  | Cut Type                                |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| EcoRI                   | GAATTC                                                                                                                    | Sticky ends (5' overhang: AATT)          |
+| BamHI                   | GGATCC                                                                                                                    | Sticky ends (5' overhang: GATC)          |
+| HindIII                 | AAGCTT                                                                                                                    | Sticky ends (5' overhang: AGCT)          |
+| SmaI                    | CCCGGG                                                                                                                    | Blunt ends                                |
+
+### DNA Ligase
+
+- An enzyme that joins DNA fragments by forming phosphodiester bonds between adjacent nucleotides
+- Used to join:
+  - Insert DNA and plasmid vector in genetic engineering
+  - Okazaki fragments during DNA replication (natural role)
+- DNA ligase is more efficient at joining sticky ends than blunt ends because the complementary overhangs hold the fragments in the correct position
+
+### PCR (Polymerase Chain Reaction) in Detail
+
+PCR is a technique used to amplify a specific region of DNA in vitro (outside a living cell).
+
+**Steps in each cycle:**
+
+| Step                    | Temperature              | What Happens                                                                                                              | Duration (approximate)   |
+| ----------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| 1. Denaturation           | 94-96 degrees C           | Double-stranded DNA template is heated to separate the two strands (breaks hydrogen bonds between base pairs)             | 30 seconds              |
+| 2. Annealing              | 50-65 degrees C           | Temperature is lowered; short DNA primers (forward and reverse) bind to complementary sequences on the target DNA; the annealing temperature depends on the primer sequence | 30 seconds              |
+| 3. Extension              | 72 degrees C              | Taq polymerase (heat-stable DNA polymerase from _Thermus aquaticus_) adds nucleotides to the 3' end of each primer, synthesising new DNA strands complementary to the template | 1-2 minutes (depending on length of target DNA) |
+
+**Key features of PCR:**
+
+| Feature                  | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Primers                  | Short, single-stranded DNA sequences (typically 18-25 bases) that are complementary to the regions flanking the target DNA; they define the start and end points of the amplified region |
+| Taq polymerase           | Heat-stable DNA polymerase from _Thermus aquaticus_ (a thermophilic bacterium); does not denature at 95 degrees C (unlike human DNA polymerase); essential because the high temperatures in each cycle would destroy most enzymes |
+| Nucleotides              | Free dNTPs (deoxynucleoside triphosphates: dATP, dTTP, dCTP, dGTP) provide the building blocks for new DNA strands      |
+| Exponential amplification | Each cycle doubles the amount of DNA; after 30 cycles, there are approximately $2^{30}$ ($\approx$ 1 billion) copies of the target region |
+| Thermocycler             | A programmable machine that automatically cycles through the temperature changes                                          |
+
+### Gel Electrophoresis
+
+| Feature                  | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Principle                | DNA fragments are negatively charged (due to phosphate groups); when placed in an electric field, they migrate towards the positive electrode (anode) |
+| Gel medium               | Agarose gel (a polysaccharide from seaweed); acts as a molecular sieve -- smaller fragments move through the pores more easily and travel further |
+| Separation               | DNA fragments are separated by SIZE (not by charge -- all fragments have the same charge-to-mass ratio); smaller fragments travel further, larger fragments travel less far |
+| Staining                 | DNA is not visible; the gel is stained with a DNA-binding dye (e.g., ethidium bromide, GelRed) that fluoresces under UV light |
+| DNA ladder (marker)       | A set of DNA fragments of known sizes run in a separate lane; used to estimate the size of unknown fragments by comparing their distance travelled with the ladder |
+| Applications             | Comparing DNA fragments (e.g., in genetic fingerprinting, forensic analysis, paternity testing); checking the results of PCR and restriction digestion; diagnosing genetic diseases (e.g., detecting the sickle cell mutation) |
+
+---
+
+## Genetic Fingerprinting (DNA Profiling)
+
+### Process
+
+1. **Extract DNA:** DNA is extracted from a sample (blood, saliva, hair root, semen)
+2. **PCR amplification:** Specific regions of DNA are amplified using primers that target **short tandem repeats (STRs)** or **variable number tandem repeats (VNTRs)**
+3. **Gel electrophoresis:** The amplified fragments are separated by size using gel electrophoresis (or capillary electrophoresis)
+4. **Visualisation:** The DNA bands are visualised and compared between samples
+
+### STRs (Short Tandem Repeats)
+
+- STRs are short sequences of DNA (typically 2-6 base pairs) that are repeated multiple times in tandem
+- The number of repeats varies between individuals (e.g., one person might have ATCG repeated 7 times at a particular locus; another might have it repeated 12 times)
+- The FBI uses a panel of 13 standard STR loci (CODIS) for forensic DNA profiling in the United States
+- The probability of two unrelated individuals having the same DNA profile at all 13 loci is less than 1 in a trillion
+
+### Applications
+
+| Application              | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Forensic science          | Matching DNA from crime scenes to suspects or victims; DNA evidence can confirm presence at a scene, establish innocence, or link serial crimes |
+| Paternity testing         | Comparing the STR profile of a child with that of the alleged father; the child must inherit one allele at each locus from each biological parent |
+| Identifying disaster victims | DNA profiles from remains are compared with profiles from family members or personal belongings (e.g., toothbrush) |
+| Immigration cases         | Confirming family relationships when documentation is disputed                                                           |
+| Conservation biology      | Monitoring genetic diversity in endangered populations; identifying illegal trade in wildlife products (e.g., elephant ivory, rhino horn) |
+
+---
+
+## Common Pitfalls
+
+- **Restriction enzymes cut at specific recognition sites; they do NOT cut at random.** The recognition sequence must be present in the DNA for the enzyme to cut it. Different enzymes recognise different sequences
+- **Sticky ends are more useful than blunt ends in genetic engineering because the complementary overhangs ensure that the DNA fragments are joined in the correct orientation.** Blunt ends can be joined in either orientation, and the process is less efficient
+- **PCR amplifies a SPECIFIC region of DNA, not the entire genome.** The region amplified is determined by the primers used
+- **Gel electrophoresis separates DNA by SIZE (length), not by charge.** All DNA fragments carry the same charge per unit length (negative charge from phosphate groups), so charge does not affect separation; smaller fragments travel further because they move through the gel pores more easily
+- **DNA profiling compares the NUMBER OF REPEATS at specific loci, NOT the sequence of bases.** The bases in the repeat are the same between individuals; what varies is how many times the repeat occurs**
+:::

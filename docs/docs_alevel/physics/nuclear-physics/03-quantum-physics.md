@@ -312,7 +312,8 @@ the general inequality $\Delta x \cdot \Delta p \geq \hbar/2$.
 
 $\square$
 
-:::warning Common Pitfalls The uncertainty principle is often stated as "measurement disturbs the
+:::warning
+warning
 system." While this is a consequence, it is not the fundamental origin. The principle follows from
 the mathematics of wave superposition — it is intrinsic to the wave nature of matter, not an
 artifact of clumsy measurement. A particle **does not simultaneously possess** a well-defined
@@ -504,7 +505,8 @@ $$\lambda = \frac{hc}{\Delta E} = \frac{1240\,\mathrm{eV nm}}{4.9\,\mathrm{eV}} 
 
 which is in the UV — consistent with the observed UV emission from the Hg vapour.
 
-:::tip Exam Technique The Franck-Hertz experiment is often asked as "describe how the experiment
+:::tip
+tip
 confirms quantised energy levels." The key points are: (1) the periodic current drops occur at
 multiples of $4.9$ V, (2) this corresponds to a fixed energy loss per collision, (3) the fixed
 energy loss can only be explained by discrete (quantised) energy levels in the Hg atom.
@@ -531,7 +533,8 @@ $$\boxed{\int_{-\infty}^{\infty} |\psi(x)|^2\,dx = 1}$$
 This is the **normalisation condition**. A wave function that satisfies this condition is said to be
 **normalised**.
 
-:::warning Common Pitfalls $\psi(x)$ itself is not a probability — it can be negative or complex.
+:::warning
+warning
 Only $|\psi(x)|^2 = \psi^*(x)\psi(x)$ has physical meaning as a probability density. Also, $\psi(x)$
 is not directly measurable; only $|\psi(x)|^2$ is observable.
 :::
@@ -630,7 +633,8 @@ For the first three states:
 - **$n = 3$:** $|\psi_3(x)|^2 = (2/L)\sin^2(3\pi x/L)$. Two nodes at $x = L/3$ and $x = 2L/3$. Three
   maxima.
 
-:::warning Common Pitfalls The probability density $|\psi|^2$ can be zero at certain positions
+:::warning
+warning
 (nodes), but the probability of finding the particle in an **interval** of finite width containing a
 node is not zero. When asked "what is the probability at position $x$," the correct answer is zero
 for any single point (probability densities are per unit length). Always integrate over an interval.

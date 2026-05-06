@@ -112,7 +112,8 @@ $$= \frac{0.95 \times 0.01}{0.95 \times 0.01 + 0.10 \times 0.99} = \frac{0.0095}
 
 So even with a positive test, there is only about an 8.8% chance of having the disease.
 
-:::warning Common Pitfall
+:::warning
+warning
 This counterintuitive result arises because the disease is rare. The number of false positives far
 exceeds the number of true positives. This is the **base rate fallacy** -- ignoring the prior
 probability of the condition.
@@ -272,7 +273,8 @@ $$P(A' \cap B') = P((A \cup B)') = 1 - P(A \cup B) = 1 - P(A) - P(B) + P(A)P(B)$
 
 $$= (1 - P(A))(1 - P(B)) = P(A') \cdot P(B') \quad \blacksquare$$
 
-:::warning Common Pitfall
+:::warning
+warning
 "Independent" and "mutually exclusive" are different concepts. In fact, if $A$ and $B$ are both
 non-trivial (positive probability) and mutually exclusive, they **cannot** be independent:
 $P(A \cap B) = 0 \neq P(A)P(B)$.

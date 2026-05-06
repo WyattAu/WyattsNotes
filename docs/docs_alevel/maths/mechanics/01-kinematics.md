@@ -810,7 +810,8 @@ $w\,\Delta t = u^2\sin^2\theta / (2g)$ for some $\Delta t \gt{} 0$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Kinematics**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-kinematics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Kinematics with other topics to test synthesis under exam conditions.

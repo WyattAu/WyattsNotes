@@ -220,7 +220,8 @@ However, the gig economy also reduces monopsony power in some respects: lower ba
 increase labour supply elasticity, and platforms enable workers to switch between employers more
 easily than in traditional company-town settings.
 
-:::info Board-Specific Note CIE (9708) may ask students to assess whether gig economy workers are
+:::info
+info
 employees or self-employed, and the implications for labour market regulation. AQA has examined the
 gig economy in the context of labour market flexibility. Edexcel often links the gig economy to
 wider debates about competition and regulation.
@@ -328,7 +329,8 @@ The net effect of trade unions on economic welfare is ambiguous and context-depe
   disrupt supply chains).
 - In competitive labour markets, wage increases above equilibrium unambiguously reduce employment.
 
-:::info Board-Specific Note AQA frequently asks students to evaluate whether trade unions are a
+:::info
+info
 force for good or harm in the labour market — both sides must be discussed for full marks. Edexcel
 (Theme 3) links trade unions to broader debates about government intervention. OCR may ask about the
 impact of declining union membership on wage inequality.

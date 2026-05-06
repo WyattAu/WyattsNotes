@@ -312,7 +312,8 @@ $$\log_2(n!) = n\log_2 n - n\log_2 e + O(\log n) = \Omega(n \log n)$$
 Therefore, any comparison-based sorting algorithm requires at least $\Omega(n \log n)$ comparisons
 in the worst case. $\square$
 
-:::info Board-specific This lower bound explains why merge sort and quick sort (both $O(n \log n)$)
+:::info
+info
 are asymptotically optimal among comparison-based sorts. Non-comparison sorts (radix sort, counting
 sort) can beat $O(n \log n)$ but have restrictions on key types.
 :::

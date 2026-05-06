@@ -94,7 +94,8 @@ and OBR) suggest that for income tax, the UK is to the **left** of $t^*$ — mea
 reduce revenue, not increase it. For corporation tax, the evidence is more contested; some studies
 suggest the UK may be closer to $t^*$ due to capital mobility.
 
-:::info Board-Specific Note CIE (9708) and Edexcel both require understanding of the Laffer curve.
+:::info
+info
 AQA tends to focus more on the income and substitution effects of tax changes rather than the Laffer
 curve explicitly, though it can be used in evaluation. OCR includes the Laffer curve in the context
 of fiscal policy.
@@ -177,7 +178,8 @@ and 1983. The short-term social costs were substantial, and some economists argu
 benefits were oversold — UK productivity growth remained below that of Germany and France for much
 of the period.
 
-:::info Board-Specific Note OCR (H460) specifically requires knowledge of Thatcherite reforms and
+:::info
+info
 their effects on the UK economy. Edexcel (A) references Thatcherism in the context of
 market-oriented policies. AQA and CIE may expect examples but do not mandate specific knowledge of
 the Thatcher era.
@@ -251,7 +253,8 @@ has been criticised for incentivising rebadging existing training rather than cr
 opportunities. The key lesson is that **institutional quality matters as much as spending** — simply
 investing more in education without reforming how it is delivered yields diminishing returns.
 
-:::info Board-Specific Note Edexcel (A) expects candidates to discuss specific UK education policies
+:::info
+info
 as examples of interventionist supply-side policy. CIE (9708) accepts any country example but
 rewards specificity. AQA does not mandate particular policy knowledge but values well-explained
 real-world examples. OCR (H460) links education policy to labour market outcomes.
@@ -531,7 +534,8 @@ This "productivity puzzle" has been attributed to:
 The UK lags behind comparable economies, suggesting scope for improvement through supply-side
 reforms that learn from international best practice.
 
-:::tip Exam Technique When evaluating supply-side policies, use international comparisons. "South
+:::tip
+tip
 Korea achieved 7% annual growth for three decades by investing 5% of GDP in education" is more
 persuasive than abstract arguments. But always acknowledge differences in context — policies that
 work in one country may not transfer directly.
@@ -721,7 +725,8 @@ suggests that fiscal devolution may be necessary but not sufficient.
 
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Assuming supply-side policies work quickly:** Most supply-side policies have very long implementation lags. Education reforms take 10-20 years to affect productivity. Infrastructure projects take 5-10 years. Supply-side policy cannot address a short-run recession -- demand-side policy is needed for that.
 

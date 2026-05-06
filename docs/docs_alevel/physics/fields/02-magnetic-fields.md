@@ -312,7 +312,8 @@ left-hand rule to wire 2 for the force direction:
 - **Same-direction currents** $\to$ attractive force
 - **Opposite-direction currents** $\to$ repulsive force
 
-:::tip Exam Technique To remember the direction: same-direction currents attract, opposite-direction
+:::tip
+tip
 currents repel. Think of it as two parallel beams of particles moving together (attract) versus
 head-on (repel).
 :::
@@ -364,7 +365,8 @@ that drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular t
 - $v = E/B$: straight line (velocity selector).
 - $v \gt E/B$: **prolate cycloid** (loops with self-intersections).
 
-:::warning Common Pitfall: the drift velocity $v_d = E/B$ is independent of the particle's initial
+:::warning
+warning
 velocity and charge. Even a stationary particle will drift at this speed. The drift direction is
 always $\mathbf{E} \times \mathbf{B}$, perpendicular to both fields.
 :::

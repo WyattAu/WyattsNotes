@@ -133,7 +133,8 @@ $$F_{\max} = \mu R$$
 
 In A Level, we usually assume $\mu_s = \mu_k = \mu$.
 
-:::warning The friction force is not always $\mu R$. It adjusts to match the applied force up to the
+:::warning
+warning
 maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
 :::
 
@@ -253,7 +254,8 @@ $$F = \mu R$$
 
 The word "limiting" is the signal to set $F = \mu R$ rather than $F \lt{} \mu R$.
 
-:::tip In exam questions, the phrases "on the point of slipping," "about to move," and "in limiting
+:::tip
+tip
 equilibrium" all mean the same thing: set $F = \mu R$.
 :::
 
@@ -446,7 +448,8 @@ $$P + \mu mg\cos\alpha - mg\sin\alpha = ma$$
 
 $$a = \frac{P}{m} - g(\sin\alpha - \mu\cos\alpha)$$
 
-:::tip The sign in front of the friction term $\mu mg\cos\alpha$ depends on the direction of motion
+:::tip
+tip
 (or the tendency to move). Always draw a clear diagram and think about which way friction acts.
 :::
 
@@ -471,7 +474,8 @@ $$P\cos\alpha - \mu P\sin\alpha = mg\sin\alpha + \mu mg\cos\alpha$$
 
 $$P = \frac{mg(\sin\alpha + \mu\cos\alpha)}{\cos\alpha - \mu\sin\alpha}$$
 
-:::warning If $\cos\alpha - \mu\sin\alpha \leq 0$, i.e. $\mu \geq \cot\alpha$, then no finite
+:::warning
+warning
 horizontal force can move the block up the slope (pushing horizontally jams the block into the
 surface).
 :::

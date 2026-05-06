@@ -641,7 +641,8 @@ $$T(t) = T_s + (T_0 - T_s)e^{-t/\tau}$$
 
 where $\tau = C / (hA)$ is the time constant.
 
-:::info Newton's law of cooling is an approximation valid for small temperature differences and when
+:::info
+info
 radiation is not the dominant mechanism. At large temperature differences, the $T^4$ dependence of
 radiation becomes significant and the cooling is faster than predicted by Newton's law.
 :::
@@ -1563,7 +1564,8 @@ For the A-Level treatment of this topic, see [Thermal Properties](https://alevel
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Heat and Gases**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-heat-gases) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Heat and Gases with other physics topics to test synthesis under exam conditions.

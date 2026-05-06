@@ -744,3 +744,212 @@ student could modify the experiment to increase confidence in their conclusion.
 - **Protein synthesis and gene expression** --> Review [./molecular-biology](./molecular-biology)
 - **Enzymes and metabolic pathways** --> Review [./human-physiology](./human-physiology)
 
+---
+
+## 8. Population Genetics (Extended)
+
+### Hardy-Weinberg with Lethal Alleles
+
+When a recessive allele is lethal (homozygous individuals die before reproduction), the population
+deviates from Hardy-Weinberg expectations:
+
+$$q' = \frac{q(1 - sq)}{1 - sq^2}$$
+
+where $s$ is the selection coefficient against homozygotes ($s = 1$ for lethal). Each generation, the
+frequency of the deleterious allele decreases, but the rate of decrease slows as $q$ becomes small
+(because most copies of the allele are "hidden" in heterozygotes).
+
+**Equilibrium between mutation and selection:**
+
+For a recessive lethal allele with mutation rate $\mu$:
+
+$$\hat{q} = \sqrt{\frac{\mu}{s}}$$
+
+This is the balance between new mutations introducing the allele and selection removing it.
+
+### Genetic Drift in Small Populations
+
+Genetic drift causes random fluctuations in allele frequencies that are more pronounced in small
+populations:
+
+$$\sigma^2_{\Delta q} = \frac{p(1-p)}{2N_e}$$
+
+where $N_e$ is the effective population size.
+
+**Consequences:**
+- Alleles can be lost or fixed regardless of their selective advantage or disadvantage.
+- Genetic diversity decreases over time in small populations.
+- **Founder effect**: a small number of individuals establish a new population, carrying only a
+  subset of the source population's alleles.
+- **Bottleneck effect**: a sharp population reduction reduces genetic diversity.
+
+### Gene Flow
+
+Migration between populations introduces new alleles:
+
+$$\Delta p = m(p_m - p_r)$$
+
+where $m$ is the migration rate, $p_m$ is the allele frequency in migrants, and $p_r$ is the
+allele frequency in residents. Gene flow tends to homogenise populations and counteract the effects
+of selection and drift.
+
+---
+
+## 9. Advanced Genetic Crosses
+
+### Trihybrid Cross
+
+A cross involving three genes, each with two alleles, on different chromosomes.
+
+For a trihybrid cross $AaBbCc \times AaBbCc$:
+
+$$\text{Expected phenotypic ratio} = 27:9:9:9:3:3:3:1$$
+
+This ratio arises from $2^3 = 8$ phenotype classes based on the presence or absence of the dominant
+allele at each of three loci.
+
+### Sex-Linked Dihybrid Cross
+
+When two genes are both on the X chromosome, they are linked and do not assort independently.
+
+**Example**: In _Drosophila_, red eyes ($w^+$, dominant) and normal wings ($m^+$, dominant) are both on the
+X chromosome. A female $w^+ m^+ / w\; m$ is crossed with a white-eyed, miniature-winged male
+$w\; m / Y$.
+
+**F1 females**: $w^+ m^+ / w\; m$ (all heterozygous at both loci)
+**F1 males**: $w^+ m^+ / Y$ (receive the father's X chromosome)
+
+If the genes are linked with a recombination frequency of $30\%$, the F1 female crossed with a
+double-recessive male would produce:
+- $35\%$ parental: red normal ($w^+ m^+$), white miniature ($w\; m$)
+- $15\%$ recombinant: red miniature ($w^+ m$), white normal ($w\; m^+$)
+
+### Incomplete Dominance and Codominance in Crosses
+
+**Incomplete dominance in dihybrid cross:**
+
+In four-o'clock plants, flower colour shows incomplete dominance ($RR$ = red, $Rr$ = pink, $rr$ = white)
+and flower shape shows incomplete dominance ($SS$ = ruffled, $Ss$ = wavy, $ss$ = smooth).
+
+Cross: $RRss \times rrSS$
+
+F1: all $RrSs$ (pink, wavy)
+
+F2 ($RrSs \times RrSs$): $9$ phenotypic classes instead of $4$:
+
+| Phenotype combination | Genotype fraction |
+| -------------------- | ---------------- |
+| Pink ruffled         | $1/16$            |
+| Pink wavy            | $2/16$            |
+| Pink smooth          | $1/16$            |
+| Red ruffled          | $1/16$            |
+| Red wavy             | $2/16$            |
+| Red smooth           | $1/16$            |
+| White ruffled        | $1/16$            |
+| White wavy           | $2/16$            |
+| White smooth         | $1/16$            |
+
+---
+
+## 10. Chromosomal Abnormalities
+
+### Numerical Abnormalities (Aneuploidy)
+
+**Non-disjunction**: the failure of homologous chromosomes (Meiosis I) or sister chromatids (Meiosis II)
+to separate properly, resulting in gametes with abnormal chromosome numbers.
+
+| Condition           | Chromosome | Karyotype | Features                                                      |
+| ------------------ | ---------- | --------- | ------------------------------------------------------------- |
+| **Down syndrome**  | 21         | $47,XX,+21$ or $47,XY,+21$ | Trisomy 21; intellectual disability; flat facial profile; single palmar crease; congenital heart defects. Risk increases with maternal age. |
+| **Patau syndrome**  | 13         | $47,+13$  | Trisomy 13; severe intellectual disability; cleft lip/palate; polydactyly; most die within first year. |
+| **Edwards syndrome** | 18         | $47,+18$  | Trisomy 18; low birth weight; rocker-bottom feet; most die within first year. |
+| **Turner syndrome** | X          | $45,X$    | Monosomy X; female; short stature; webbed neck; ovarian dysgenesis (sterile). |
+| **Klinefelter syndrome** | X       | $47,XXY$  | Male; tall stature; gynaecomastia; small testes; reduced fertility. |
+
+### Structural Abnormalities
+
+- **Deletion**: loss of a chromosomal segment (e.g., Cri du chat syndrome: deletion on chromosome 5).
+- **Duplication**: a segment is repeated, increasing gene dosage.
+- **Inversion**: a segment is reversed $180^\circ$. Can cause problems during meiosis if a crossover
+  occurs within the inverted region (producing dicentric and acentric fragments).
+- **Translocation**: exchange of segments between non-homologous chromosomes.
+  - **Reciprocal translocation**: two chromosomes exchange segments (e.g., Robertsonian translocation
+    between chromosomes 14 and 21 is a cause of familial Down syndrome).
+  - **Philadelphia chromosome**: reciprocal translocation t(9;22) producing BCR-ABL fusion gene,
+    causing chronic myeloid leukaemia (CML).
+
+---
+
+## 11. Genetic Counselling and Risk Assessment
+
+### Pedigree Analysis for Autosomal Recessive Disorders
+
+For cystic fibrosis (CF), an autosomal recessive disorder ($1$ in $2500$ live births in Northern European
+populations):
+
+- Carrier frequency: $2q = 2 \times \frac{1}{50} = \frac{1}{25}$
+- Risk for two carriers: $\frac{1}{25} \times \frac{1}{25} \times \frac{1}{4} = \frac{1}{2500}$
+- Risk for a known carrier + random partner: $\frac{1}{25} \times \frac{1}{4} = \frac{1}{100}$
+- Risk for a known carrier + partner with negative family history: $\frac{1}{25} \times \frac{1}{250} = \frac{1}{6250}$
+
+### Genetic Screening
+
+- **Newborn screening**: PKU, hypothyroidism, sickle-cell disease (heel-prick test).
+- **Carrier screening**: offered to individuals with family history or in high-risk ethnic groups
+  (e.g., Tay-Sachs in Ashkenazi Jews, thalassaemia in Mediterranean populations).
+- **Prenatal diagnosis**: amniocentesis ($15$--$20$ weeks; karyotyping, biochemical tests, DNA analysis),
+  chorionic villus sampling (CVS, $10$--$13$ weeks).
+- **Preimplantation genetic diagnosis (PGD)**: IVF embryos are tested for genetic conditions
+  before implantation; allows selection of unaffected embryos.
+
+---
+
+## Exam-Style Problems (Extended)
+
+<details>
+<summary>Problem 9: Extended Response -- Genetic Counselling</summary>
+
+A couple has a family history of cystic fibrosis (CF). The husband's sister has CF. The wife has no
+family history of CF. The population carrier frequency is $1$ in $25$. (a) Calculate the probability
+that the husband is a carrier. (b) Calculate the probability that their first child will have CF.
+(c) Explain why genetic counselling would recommend carrier testing for both individuals before
+providing risk estimates. (d) Describe two prenatal diagnostic techniques that could be used if the
+couple is at risk.
+
+</details>
+
+<details>
+<summary>Problem 10: Quantitative -- Hardy-Weinberg with Migration</summary>
+
+Island A has an allele frequency of $p = 0.8$ for a dominant trait. Island B has $p = 0.3$. Each
+generation, $10\%$ of the population of Island A migrates to Island B, replacing $10\%$ of the Island
+B population (which dies or emigrates). Calculate the new allele frequency on Island B after one
+generation of migration. Predict the allele frequency on Island B after many generations of continued
+migration at this rate.
+
+</details>
+
+<details>
+<summary>Problem 11: Extended Response -- Non-Disjunction and Karyotype Analysis</summary>
+
+A karyotype shows $47,XX,+13$ (Patau syndrome). (a) Explain the meiotic error that produced this
+karyotype, identifying whether non-disjunction occurred in Meiosis I or Meiosis II. (b) Explain why
+the mother's age is a significant risk factor for trisomy. (c) Compare and contrast the clinical
+features of trisomy 13, trisomy 18, and trisomy 21. (d) Explain why Patau and Edwards syndromes
+have much poorer prognoses than Down syndrome.
+
+</details>
+
+<details>
+<summary>Problem 12: Data Analysis -- Epistasis and Biochemical Pathway</summary>
+
+In summer squash, fruit colour is controlled by two genes. Gene $W$ determines whether pigment is
+produced ($W$ = pigment, $w$ = no pigment, white epistatic). Gene $Y$ determines colour when $W$ is
+present ($Y$ = yellow, $y$ = green). A dihybrid cross ($WwYy \times WwYy$) produces: white = $412$,
+yellow = $298$, green = $96$, total = $806$. (a) Perform a chi-squared test to determine whether the
+data fit the expected $12:3:1$ epistatic ratio ($p = 0.05$, critical value $= 5.99$ for $2$ df).
+(b) Identify the most deviant phenotype class and propose an explanation. (c) Explain how this
+epistatic interaction reflects the underlying biochemical pathway.
+
+</details>
+

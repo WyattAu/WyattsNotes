@@ -40,7 +40,8 @@ $$\omega = \frac{2\pi}{T} = 2\pi f$$
 
 where $T$ is the period (time for one revolution) and $f$ is the frequency.
 
-:::info Board Coverage AQA, Edexcel, OCR (A), and CIE all require radian measure for angular
+:::info
+info
 quantities. AQA and Edexcel may accept degrees in some contexts but radians are expected in
 formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$.
 :::
@@ -80,7 +81,8 @@ $\mathbf{a}(t) = -\omega^2 \mathbf{r}(t)$ is always antiparallel to the position
 it always points towards the centre, regardless of where the particle is on the circle. Even though
 the speed is constant, the _direction_ of velocity changes continuously, requiring acceleration.
 
-:::info Board Coverage AQA: Both geometric and calculus derivations are accepted. Edexcel: Geometric
+:::info
+info
 derivation is the standard approach; calculus is optional extension work. OCR (A): Either method
 accepted; the geometric proof appears more frequently in mark schemes. CIE: The geometric method is
 the primary derivation required; calculus is useful for STEP/matriculation preparation.
@@ -208,7 +210,8 @@ $$\boxed{v_{\min} = \sqrt{\frac{rg(\tan\theta - \mu)}{1 + \mu\tan\theta}}}$$
 assistance. At higher angles, velodromes use banking up to $45^\circ$ so cyclists can maintain speed
 through tight turns. The normal reaction alone provides the centripetal force at the design speed.
 
-:::info Board Coverage AQA: Banked curves without friction are standard; friction on banked curves
+:::info
+info
 is extension material. Edexcel: Both frictionless and friction cases may appear in CP2. OCR (A):
 Frictionless derivation is core; friction is stretch/challenge. CIE: Frictionless is required;
 friction on banked curves occasionally appears in P2 as a harder question.
@@ -538,7 +541,8 @@ regardless of the angle or string length. A larger angle $\alpha$ (wider circle)
 period (faster motion). As $\alpha \to 0$, the period approaches $T = 2\pi\sqrt{L/g}$, which is the
 period of a simple pendulum for small oscillations.
 
-:::warning Common Pitfall The period of a conical pendulum is $T = 2\pi\sqrt{L\cos\alpha/g}$, which
+:::warning
+warning
 is **shorter** than the small-angle simple pendulum period $T = 2\pi\sqrt{L/g}$. Do not confuse
 these two results. The conical pendulum has an additional $\cos\alpha$ factor because only the
 vertical component of tension balances gravity.

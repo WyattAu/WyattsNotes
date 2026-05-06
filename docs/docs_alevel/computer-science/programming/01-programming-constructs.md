@@ -218,7 +218,8 @@ $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$ (the golden ratio).
 $\psi = \frac{1-\sqrt{5}}{2}$. The solution is $T(n) = A\phi^n + B\psi^n$. Since $|\psi| \lt{} 1$,
 $T(n) = \Theta(\phi^n)$. $\square$
 
-:::warning Pitfall Naive recursive Fibonacci has exponential time complexity. Use memoisation or
+:::warning
+warning
 iteration for $O(n)$ time:
 
 ```python

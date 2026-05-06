@@ -674,7 +674,8 @@ insufficient energy to sustain higher levels.
 
 $$\mathrm{Energy available at level } n = 0.1^n \times \mathrm{Energy at producer level}$$
 
-:::info The 10% rule is an approximation. Actual transfer efficiency ranges from about 5% to 20%
+:::info
+info
 depending on the ecosystem and the organisms involved. Cold-blooded organisms are more
 energy-efficient than warm-blooded ones. In DSE calculations, use 10% unless the question specifies
 otherwise.
@@ -784,7 +785,8 @@ $$\mathrm{NPP} = \mathrm{energy stored in plant biomass}$$
 - **Wetlands:** Land saturated with water (marshes, swamps, bogs); high productivity; important for
   water filtration and flood control
 
-:::info In DSE questions on biomes, you may be asked to interpret climate graphs (temperature and
+:::info
+info
 precipitation plotted by month). Key features to identify: annual temperature range, wet and dry
 seasons, total precipitation. Match these to the biome descriptions above.
 :::
@@ -894,7 +896,8 @@ Major causes (often remembered by the acronym HIPPO):
   sustainable use, fair sharing of benefits from genetic resources
 - **Ramsar Convention:** Protection of wetlands of international importance
 
-:::warning A common DSE exam pitfall is confusing bioaccumulation with biomagnification. Remember:
+:::warning
+warning
 bioaccumulation is within an individual; biomagnification is across trophic levels. Both terms can
 appear in the same question.
 :::
@@ -1365,7 +1368,8 @@ Without this context, it is possible that Pond A has high diversity but is pollu
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Evolution and Ecology**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-evolution-ecology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Evolution and Ecology with other biology topics to test synthesis under exam conditions.
@@ -1374,7 +1378,184 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 :::
 
 
-:::danger Common Pitfalls
+---
+
+## Population Ecology
+
+### Population Growth Models
+
+**Exponential growth (J-shaped curve):**
+
+Under ideal conditions (unlimited resources, no predators, no disease), populations grow exponentially:
+
+$$\frac{dN}{dt} = rN$$
+
+Where $N$ = population size, $r$ = intrinsic rate of natural increase, $t$ = time.
+
+Exponential growth produces a J-shaped curve. This phase is characteristic of populations introduced to a new environment with abundant resources.
+
+**Logistic growth (S-shaped curve):**
+
+In reality, resources are limited. Population growth slows as it approaches the carrying capacity ($K$):
+
+$$\frac{dN}{dt} = rN\left(\frac{K - N}{K}\right)$$
+
+Where $K$ = carrying capacity (maximum population size the environment can sustain).
+
+The logistic growth curve has three phases:
+1. **Lag phase:** Slow growth while the population adjusts to the environment
+2. **Exponential phase:** Rapid growth (approaching exponential)
+3. **Stationary phase:** Growth rate declines to zero as the population reaches carrying capacity; birth rate approximately equals death rate
+
+### Factors Affecting Population Size
+
+| Factor Type      | Description                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Abiotic factors  | Temperature, water availability, light, pH, mineral nutrients, salinity                                             |
+| Biotic factors    | Food availability, predation, competition, disease, parasitism                                                 |
+| Density-dependent | Factors whose effect increases with population density (e.g., competition for resources, disease transmission, predation) |
+| Density-independent | Factors whose effect is independent of population density (e.g., natural disasters, temperature extremes, seasonal changes) |
+
+### Carrying Capacity
+
+The carrying capacity ($K$) of an environment is the maximum population size that can be sustained indefinitely by the available resources.
+
+**Factors determining carrying capacity:**
+
+- Food availability (primary limiting factor in most ecosystems)
+- Water supply
+- Space/shelter availability
+- Disease prevalence (increases with density)
+- Competition intensity (increases with density)
+
+### Human Population Growth
+
+The human population has grown exponentially over the past 200 years due to:
+
+- Advances in medicine and public health (reduced death rate, especially infant mortality)
+- Improved agricultural productivity (Green Revolution)
+- Improved sanitation and clean water supply
+- Antibiotics and vaccines
+
+**Demographic transition model:**
+
+| Stage | Birth Rate | Death Rate | Population Growth | Description                                                     |
+| ----- | ---------- | ---------- | ---------------- | --------------------------------------------------------------- |
+| 1     | High       | High       | Low              | Pre-industrial; high birth and death rates; population stable     |
+| 2     | High       | Falling    | Rapidly increasing | Industrialising; death rate falls due to medicine/sanitation   |
+| 3     | Falling    | Low        | Increasing but slowing | Birth rate falls due to contraception, education, urbanisation |
+| 4     | Low        | Low        | Low (stable)      | Post-industrial; both rates are low; population is stable       |
+
+---
+
+## Ecological Relationships
+
+### Symbiosis
+
+| Relationship         | Effect on A | Effect on B | Example                                                       |
+| -------------------- | ----------- | ----------- | ------------------------------------------------------------- |
+| Mutualism            | +           | +           | Lichen (fungus + alga); mycorrhizae (fungus + plant roots); coral + zooxanthellae |
+| Commensalism         | +           | 0           | Barnacles on a whale (barnacles benefit from transport; whale is unaffected) |
+| Parasitism           | +           | -           | Tapeworm in human intestine; _Plasmodium_ in red blood cells; mistletoe on a tree |
+| Predation            | +           | -           | Lion and zebra; owl and mouse; shark and fish                     |
+| Herbivory            | +           | -           | Rabbit and grass; caterpillar and leaf                             |
+| Competition          | -           | -           | Two species competing for the same resource (e.g., two species of Paramecium) |
+
+### Interspecific vs Intraspecific Competition
+
+| Type                  | Description                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Intraspecific         | Competition between individuals of the SAME species (e.g., oak trees competing for light)                              |
+| Interspecific         | Competition between individuals of DIFFERENT species (e.g., oak trees and maple trees competing for light)                 |
+
+**Competitive exclusion principle:** Two species cannot occupy exactly the same ecological niche in the same habitat. If they compete for the same limited resource, one species will outcompete the other, leading to the competitive exclusion of the weaker competitor. The two species can coexist only if they occupy slightly different niches (resource partitioning).
+
+**Resource partitioning:** When two species share a habitat, they may divide the resources to reduce competition. For example, different species of warblers feed on insects at different heights in the same tree canopy.
+
+
+
+---
+
+## Biomes
+
+### Major Biomes
+
+| Biome                   | Climate                                                                                                                   | Vegetation                                                                                                               | Fauna                                                                                                                    | Soil                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------- |
+| Tropical rainforest       | Hot and wet all year; high rainfall (2000+ mm/year); high humidity; little seasonal variation                           | Dense, multi-layered canopy (emergent, canopy, understorey, forest floor); high biodiversity; broad-leaved evergreen trees; epiphytes, lianas, ferns | Highest biodiversity of any biome; monkeys, toucans, jaguars, tree frogs, butterflies, ants, snakes                  | Nutrient-poor (rapid decomposition and nutrient uptake by plants); thin topsoil |
+| Temperate deciduous forest | Moderate rainfall (750-1500 mm/year); four distinct seasons (warm summers, cold winters)                                | Deciduous trees (oak, beech, maple) that lose leaves in autumn; understorey of shrubs and spring-flowering plants       | Deer, squirrels, foxes, owls, woodpeckers, insects                                                                    | Fertile (rich in organic matter from leaf litter) |
+| Coniferous forest (taiga) | Cold winters; moderate rainfall (400-1000 mm/year); short growing season                                                  | Evergreen coniferous trees (pine, spruce, fir, larch); needle-like leaves (reduce water loss and snow damage); dense canopy reduces understorey | Moose, bears, wolves, lynx, beavers, owls, crossbills                                                                | Acidic; low in nutrients; thick layer of pine needles slows decomposition |
+| Savanna (tropical grassland) | Hot all year; distinct wet and dry seasons; moderate rainfall (500-1500 mm/year); seasonal droughts                      | Tall grasses with scattered trees (baobab, acacia); frequent fires maintain the grassland                                 | Large herbivores (zebras, wildebeest, gazelles, elephants); predators (lions, cheetahs, hyenas)                    | Thin; frequent fires prevent deep soil development |
+| Desert                   | Very hot days; cold nights; very low rainfall (<250 mm/year); high evaporation rates                                      | Sparse vegetation; succulents (cacti); deep root systems; water-storing tissues; small or absent leaves (reduce transpiration) | Camels, snakes, lizards, scorpions, kangaroo rats, fennec foxes                                                      | Low organic matter; sandy or rocky; saline |
+| Tundra                   | Very cold; short cool summers; low rainfall (150-250 mm/year); permafrost (permanently frozen subsoil)                    | Low-growing vegetation: mosses, lichens, sedges, dwarf shrubs; no trees (permafrost prevents deep root growth)          | Caribou (reindeer), arctic foxes, polar bears (near coast), snowy owls, lemmings, migratory birds                 | Permafrost; thin active layer thaws in summer; low in nutrients |
+| Temperate grassland       | Moderate rainfall (500-900 mm/year); hot summers, cold winters                                                            | Dominated by grasses; few trees (drought and fire prevent tree growth); deep root systems                               | Bison, antelope, prairie dogs, coyotes, hawks, grasshoppers                                                          | Deep, fertile topsoil (mollisols); high organic matter from grass roots |
+| Freshwater                | Variable; depends on depth, flow rate, latitude                                                                           | Aquatic plants (reed beds, water lilies, algae, phytoplankton)                                                          | Fish, amphibians, invertebrates (dragonfly larvae, water beetles), water birds                                         | Sediment at bottom; nutrient-rich or oligotrophic |
+| Marine                   | Stable temperature (oceans buffer temperature changes); high salinity                                                      | Phytoplankton (basis of marine food web); seaweed; kelp forests; coral reefs (in warm, shallow tropical waters)         | Fish, whales, dolphins, sharks, crustaceans, molluscs, coral polyps                                                  | Sediment on ocean floor; rocky or sandy coasts |
+
+### Interpreting Climate Graphs
+
+Climate graphs show both temperature (line graph) and precipitation (bar chart) for a given location over a 12-month period.
+
+| Biome clue              | What to look for on the climate graph                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Tropical rainforest       | High temperature all year (>20 degrees C); high rainfall all year (>150 mm/month)                                        |
+| Savanna                  | High temperature all year; distinct wet season (high rainfall) and dry season (very low rainfall)                         |
+| Desert                   | High temperature; very low rainfall all year (<20 mm/month)                                                              |
+| Temperate grassland       | Moderate temperature range; moderate, fairly even rainfall; may have a slight drought in summer                            |
+| Temperate deciduous forest | Moderate temperature range with four seasons; moderate, fairly even rainfall throughout the year                           |
+| Coniferous forest         | Long cold winters; short cool summers; moderate, fairly even rainfall                                                     |
+| Tundra                   | Very low temperatures all year (may be below 0 degrees C for much of the year); low rainfall                               |
+
+---
+
+## Ecological Techniques and Data Analysis
+
+### Measuring Abundance
+
+| Method                    | Description                                                                                                               | Most Suitable For                         |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| Density                   | Count of individuals per unit area (e.g., per m$^2$)                                                                   | Small, stationary or slow-moving organisms (plants, limpets, barnacles) |
+| Frequency                 | Percentage of quadrats in which a species is present (NOT a count of individuals)                                      | Plants that are difficult to count individually (e.g., grass) |
+| Percentage cover          | Estimate of the proportion of ground within a quadrat that is covered by a species (using a gridded quadrat for accuracy) | Plants (especially when individual plants are hard to distinguish, e.g., grass, moss) |
+
+### Standard Deviation
+
+Standard deviation is a measure of the spread of data around the mean. It is used to assess the reliability of data:
+
+$$s = \sqrt{\frac{\sum (x - \bar{x})^2}{n - 1}}$$
+
+Where:
+- $s$ = standard deviation
+- $x$ = each individual value
+- $\bar{x}$ = mean
+- $n$ = number of values
+
+| Interpretation              | Description                                                                                                               |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Large standard deviation     | Data points are widely spread from the mean; lower reliability; more variation in the data                              |
+| Small standard deviation     | Data points are close to the mean; higher reliability; less variation in the data                                       |
+| Overlap of standard deviation bars | If standard deviation bars on a bar chart overlap, the difference between the means is NOT statistically significant; the difference could be due to random variation |
+| No overlap of standard deviation bars | The difference between the means IS likely to be statistically significant (though a proper statistical test such as a t-test is needed to confirm this) |
+
+### Student's t-test
+
+Used to determine whether the difference between the means of two sets of data is statistically significant.
+
+- Null hypothesis ($H_0$): There is no significant difference between the two means
+- If the calculated t-value exceeds the critical value (at $p < 0.05$ and the appropriate degrees of freedom), the null hypothesis is REJECTED and the difference is considered statistically significant
+- If the calculated t-value is less than the critical value, the null hypothesis is ACCEPTED and the difference is NOT statistically significant
+
+---
+
+## Common Pitfalls
+
+- **Biomes are determined by CLIMATE (temperature and rainfall), not by latitude alone.** Two locations at the same latitude can have very different biomes if their climate differs (e.g., due to ocean currents, altitude, or rain shadow effects)
+- **Tropical rainforest soils are NOT fertile.** Despite the lush vegetation, the soil is nutrient-poor because nutrients are rapidly taken up by plants and locked in the biomass. When the forest is cleared for agriculture, the soil quickly becomes infertile because the nutrient cycle is disrupted
+- **Permafrost prevents tree growth in the tundra, NOT cold temperatures alone.** Coniferous forests grow at similar latitudes to tundra but where the soil is not permanently frozen; the deep root systems of trees cannot penetrate the permafrost layer**
+- **Frequency is the percentage of quadrats containing a species, NOT the number of individuals.** Students often confuse frequency with density. Frequency tells you how widely distributed a species is, not how abundant it is**
+- **Standard deviation measures the SPREAD of data, not the accuracy of the mean.** A small standard deviation means the data points are close to the mean (consistent/reliable), but it does not tell you whether the mean itself is correct**
+:::danger
+danger
 
 - **Confusing Lamarckism with Darwinian evolution:** Lamarck proposed that acquired characteristics are inherited (e.g., a giraffe stretches its neck and passes the longer neck to offspring). Darwin proposed natural selection of random mutations. DSE exams frequently test this distinction. Only Darwinian evolution is accepted by modern biology.
 
@@ -1384,4 +1565,130 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 
 - **Assuming natural selection always leads to "better" organisms:** Natural selection produces organisms that are BETTER ADAPTED to their CURRENT environment, not objectively "better" or "more advanced." If the environment changes, previously advantageous traits can become disadvantageous. Evolution has no direction or goal.
 
+
+---
+
+## Nutrient Cycles in Detail
+
+### The Nitrogen Cycle
+
+Nitrogen is essential for the synthesis of amino acids (proteins), nucleotides (DNA, RNA), and ATP. Although nitrogen gas (N$_2$) makes up approximately 78% of the atmosphere, it is unusable by most organisms because the triple bond in N$_2$ is very strong and requires a lot of energy to break.
+
+| Process                    | Description                                                                                                               | Organisms Involved                      |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **Nitrogen fixation**         | Conversion of atmospheric N$_2$ into ammonia (NH$_3$) or ammonium ions (NH$_4^+$)                                     | Nitrogen-fixing bacteria: _Rhizobium_ (symbiotic, in root nodules of legumes); _Azotobacter_ (free-living in soil); blue-green algae (cyanobacteria); lightning (converts N$_2$ to NOx, which washes into soil as nitrate) |
+| **Nitrification**             | Conversion of ammonium ions (NH$_4^+$) into nitrite (NO$_2^-$) and then nitrate (NO$_3^-$)                              | Nitrifying bacteria: _Nitrosomonas_ (NH$_4^+$ $\rightarrow$ NO$_2^-$); _Nitrobacter_ (NO$_2^-$ $\rightarrow$ NO$_3^-$); these are aerobic bacteria (require oxygen) |
+| **Absorption by plants**      | Plants absorb nitrate (NO$_3^-$) and ammonium (NH$_4^+$) ions from the soil through their roots (active transport)      | Plants                                  |
+| **Assimilation**              | Plants incorporate nitrogen into amino acids, proteins, nucleotides, and other organic compounds                         | Plants; animals obtain nitrogen by eating plants or other animals |
+| **Ammonification**            | Decomposition of organic nitrogen (proteins, urea, nucleic acids) in dead organisms and waste into ammonium (NH$_4^+$)  | Decomposer bacteria and fungi           |
+| **Denitrification**           | Conversion of nitrate (NO$_3^-$) back into nitrogen gas (N$_2$), which returns to the atmosphere                        | Denitrifying bacteria: _Pseudomonas denitrificans_, _Thiobacillus denitrificans_; these are anaerobic bacteria (found in waterlogged, oxygen-poor soils) |
+
+### The Carbon Cycle
+
+| Process                    | Description                                                                                                               | Carbon Form                          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| **Photosynthesis**            | Plants, algae, and some bacteria convert CO$_2$ and water into glucose and oxygen using light energy                   | CO$_2$ in atmosphere $\rightarrow$ glucose in organisms |
+| **Respiration**               | All organisms break down glucose (and other organic molecules) to release energy, producing CO$_2$ as a waste product   | Glucose $\rightarrow$ CO$_2$ released to atmosphere |
+| **Combustion**                | Burning of fossil fuels (coal, oil, natural gas) and biomass releases CO$_2$ that was previously locked in organic matter | Organic carbon $\rightarrow$ CO$_2$ released to atmosphere |
+| **Decomposition**             | Decomposers break down dead organic matter, releasing CO$_2$ through respiration                                      | Organic carbon $\rightarrow$ CO$_2$ released to atmosphere |
+| **Feeding**                   | Carbon passes from one trophic level to the next through food chains                                                   | Carbon moves through the food web    |
+| **Fossilisation**             | Organic matter is buried and compressed over millions of years, forming fossil fuels (coal, oil, natural gas)           | Carbon locked in fossil fuels        |
+| **Ocean absorption**           | CO$_2$ dissolves in ocean water; some is used by marine organisms for photosynthesis and shell formation                | CO$_2$ in atmosphere $\rightarrow$ dissolved CO$_2$ and carbonate ions in oceans |
+
+### The Phosphorus Cycle
+
+Unlike the carbon and nitrogen cycles, the phosphorus cycle has NO significant gaseous phase. Phosphorus cycles mainly between the land and oceans.
+
+| Process                    | Description                                                                                                               |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Weathering**               | Phosphorus is released from rocks (phosphate minerals such as apatite) by weathering (physical breakdown and chemical dissolution by weak acids in rainwater) |
+| **Absorption by plants**      | Plants absorb phosphate ions (PO$_4^{3-}$) from the soil through their roots                                           |
+| **Assimilation**              | Plants incorporate phosphorus into organic molecules (DNA, RNA, ATP, phospholipids); animals obtain phosphorus by eating plants |
+| **Decomposition and excretion** | Decomposers break down dead organisms and release phosphate back into the soil; animals excrete phosphate in urine       |
+| **Sedimentation**             | Phosphate is washed into rivers and eventually reaches the oceans, where it accumulates in marine sediments                |
+| **Geological uplift**          | Over millions of years, marine sediments are uplifted by geological processes, exposing phosphate-containing rocks on land -- completing the cycle |
+
+---
+
+## Ecological Relationships
+
+### Symbiosis
+
+| Type                    | Description                                                                                                               | Effect on A | Effect on B | Example                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | --------------------------------------- |
+| **Mutualism**              | Both organisms benefit                                                                                                    | +          | +          | Lichens (fungus + algae); _Rhizobium_ in root nodules; mycorrhizae; clownfish and sea anemone; cleaner fish and larger fish |
+| **Commensalism**           | One organism benefits; the other is unaffected                                                                           | +          | 0          | Barnacles on whales; epiphytic orchids on trees; remora fish and sharks |
+| **Parasitism**             | One organism (parasite) benefits at the expense of the other (host)                                                     | +          | -          | Tapeworms in human intestine; _Plasmodium_ (malaria) in red blood cells; fleas on mammals; mistletoe on trees |
+
+### Competition
+
+| Type                    | Description                                                                                                               | Example                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| **Intraspecific competition** | Competition between individuals of the SAME species for the same limited resources (food, water, mates, territory, light) | Trees in a forest competing for light; male deer competing for mates during the rut |
+| **Interspecific competition** | Competition between individuals of DIFFERENT species for the same limited resources                                      | Lions and hyenas competing for prey; different plant species competing for soil minerals and light |
+
+**Competitive exclusion principle (Gause's principle):** Two species cannot coexist in the same habitat if they occupy exactly the same ecological niche. One species will outcompete the other, leading to the exclusion of the weaker competitor.
+
+**Resource partitioning:** To avoid competitive exclusion, similar species evolve to use slightly different resources or exploit the same resource at different times or in different ways.
+
+| Example                                 | Resource Partitioning Mechanism                                                                                 |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Darwin's finches on the Galapagos Islands | Different beak sizes and shapes allow different finch species to eat different food types (seeds of different sizes, insects, cactus flowers) |
+| Warblers in a coniferous forest         | Five species of warbler feed in different parts of the same tree (one at the top, one in the middle, one near the trunk, etc.) |
+| Lions and leopards in African savanna   | Lions hunt larger prey in groups during the day; leopards hunt smaller prey alone at night                     |
+
+### Predation
+
+Predation has significant effects on population dynamics and community structure:
+
+1. **Regulation of prey population size:** Predators keep prey populations below carrying capacity
+2. **Evolution of adaptations:** Predator-prey relationships drive the evolution of adaptations in both species (e.g., speed, camouflage, warning colouration)
+3. **Trophic cascades:** Changes in the population of a top predator can have cascading effects through the entire food web
+
+| Adaptation              | Predator Example                 | Prey Example                        |
+| ----------------------- | -------------------------------- | ----------------------------------- |
+| Camouflage (crypsis)    | Tiger stripes; owl feather pattern | Stick insects; leaf-tailed geckos; Arctic hare (white in winter) |
+| Warning colouration (aposematism) | --                          | Poison dart frogs; wasps; ladybirds (bright colours warn predators of toxicity or unpalatability) |
+| Mimicry -- Batesian      | --                              | Hoverfly (looks like a wasp but is harmless); king snake (looks like coral snake) |
+| Mimicry -- Mullerian    | --                              | Several species of unpalatable butterflies that look similar (all benefit from shared warning signal) |
+| Chemical defences        | --                              | Skunks (spray); bombardier beetle (hot chemical spray); poison dart frogs (batrachotoxin) |
+| Physical defences        | --                              | Porcupine (quills); tortoise (shell); armadillo (armour) |
+| Group defence            | Wolves (pack hunting)           | Musk oxen (circle around young); sardines (schooling) |
+
+---
+
+## Human Impact on Ecosystems
+
+### Eutrophication
+
+Eutrophication is the excessive enrichment of water bodies with nutrients (especially nitrates and phosphates), leading to excessive algal growth.
+
+| Stage                  | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| 1. Nutrient input        | Nitrates (from fertilisers, sewage) and phosphates (from detergents, fertilisers) enter rivers and lakes                 |
+| 2. Algal bloom          | The increased nutrient concentration stimulates rapid growth of algae (algal bloom) on the surface of the water           |
+| 3. Light blockage       | The dense layer of algae on the surface blocks sunlight from reaching aquatic plants deeper in the water                   |
+| 4. Plant death          | Submerged aquatic plants die because they cannot photosynthesise without sufficient light                                 |
+| 5. Decomposition        | Bacteria decompose the dead plants and algae; this process uses up dissolved oxygen in the water                          |
+| 6. Oxygen depletion     | Dissolved oxygen levels drop (hypoxia or anoxia); fish and other aquatic organisms die from oxygen deprivation             |
+| 7. Further decomposition | Dead fish and organisms are decomposed by bacteria, further depleting oxygen levels; the ecosystem is severely degraded   |
+
+### Deforestation
+
+| Impact                  | Description                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Loss of biodiversity    | Habitat destruction leads to species extinction; tropical rainforests contain over 50% of all terrestrial species            |
+| Soil erosion            | Tree roots stabilise soil; without trees, topsoil is washed away by rain, leading to loss of fertile land and sedimentation in rivers |
+| Increased CO$_2$        | Trees absorb CO$_2$ through photosynthesis; deforestation reduces this carbon sink, contributing to global warming          |
+| Disruption of water cycle | Trees play a crucial role in transpiration, which contributes to cloud formation and rainfall; deforestation reduces local rainfall |
+| Flooding                | With fewer trees to intercept rainfall and absorb water, surface run-off increases, leading to more frequent and severe flooding |
+| Climate change          | Deforestation in tropical regions is a major contributor to global greenhouse gas emissions (approximately 10-15% of total) |
+
+### Common Pitfalls
+
+- **The nitrogen cycle involves LIVING organisms (bacteria) to convert nitrogen between forms.** Plants CANNOT absorb atmospheric N$_2$ directly; they can only absorb nitrate (NO$_3^-$) and ammonium (NH$_4^+$) ions
+- **Nitrification is an aerobic process (requires oxygen); denitrification is an anaerobic process (occurs in oxygen-poor conditions).** This is why waterlogged soils (e.g., rice paddies) can lead to nitrogen loss through denitrification
+- **Decomposers are essential for nutrient cycling.** Without decomposers, nutrients would remain locked in dead organisms and waste, and plants would eventually run out of mineral ions
+- **Eutrophication is caused by excess NUTRIENTS, not toxic chemicals.** The problem is too many nutrients (nitrates and phosphates), not pollution in the conventional sense**
+- **Batesian mimicry benefits the mimic (harmless species looks like harmful species); Mullerian mimicry benefits all species involved (all are harmful/unpalatable).** Students often confuse these two types of mimicry**
 :::

@@ -149,7 +149,8 @@ So not all primes less than 10 are odd. The claim is **false**. The counterexamp
 
 All five cases confirmed. $\blacksquare$
 
-:::warning Proof by exhaustion is only valid when the number of cases is genuinely finite and
+:::warning
+warning
 manageable. You cannot use exhaustion for "all integers" or "all real numbers."
 :::
 
@@ -184,7 +185,8 @@ To prove a statement $P(n)$ for all integers $n \geq n_0$:
 3. **Inductive step:** Using the hypothesis, prove $P(k+1)$ is true.
 4. **Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all $n \geq n_0$.
 
-:::info The principle of mathematical induction is equivalent to the well-ordering principle: every
+:::info
+info
 non-empty set of positive integers has a least element. If $P(n_0)$ is true but some $P(m)$ with
 $m \gt{} n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least element,
 contradicting the inductive step.

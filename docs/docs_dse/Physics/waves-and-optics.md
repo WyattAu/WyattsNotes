@@ -117,7 +117,8 @@ $$n = \frac{c}{v}$$
 
 Where $c$ is the speed of light in vacuum and $v$ is the speed of light in the medium.
 
-:::info When a wave enters a denser medium (higher refractive index), it slows down and bends
+:::info
+info
 **towards** the normal. When entering a less dense medium, it speeds up and bends **away** from the
 normal.
 :::
@@ -275,7 +276,8 @@ $$\beta = 10\log_{10}\left(\frac{I}{I_0}\right)$$
 
 Where $I_0 = 10^{-12} \mathrm{ W/m}^2$ is the threshold of hearing.
 
-:::warning Loudness is a subjective measure (perceived by the ear) while intensity is an objective
+:::warning
+warning
 physical quantity. A $10 \mathrm{ dB}$ increase corresponds to a $10\times$ increase in intensity,
 but is perceived as roughly a doubling of loudness.
 :::
@@ -439,7 +441,8 @@ internal reflection and travels along the fibre.
 - Medical endoscopy
 - Decorative lighting
 
-:::warning In exam questions, always check whether you need to calculate the critical angle or the
+:::warning
+warning
 acceptance angle. The acceptance angle is the maximum angle at which light can enter the fibre and
 still undergo total internal reflection.
 :::
@@ -743,7 +746,8 @@ Damping reduces the amplitude of oscillations over time by dissipating energy.
 - **Critical damping:** System returns to equilibrium in the shortest time without oscillating
 - **Over-damping:** System returns to equilibrium slowly without oscillating
 
-:::warning In real-world applications, some damping is often deliberately introduced to prevent
+:::warning
+warning
 excessive vibrations at resonance. Car shock absorbers and building dampers are examples.
 :::
 
@@ -1174,7 +1178,8 @@ states of matter.*
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Waves and Optics**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-waves-optics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Waves and Optics with other physics topics to test synthesis under exam conditions.
@@ -1183,7 +1188,8 @@ See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instr
 :::
 
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Confusing the law of reflection with the law of refraction:** The law of reflection states that the angle of incidence equals the angle of reflection (both measured from the normal). Refraction follows Snell's law: n1 sin(i) = n2 sin(r), where the angles are measured from the normal. Students often measure angles from the surface instead of the normal in both cases.
 

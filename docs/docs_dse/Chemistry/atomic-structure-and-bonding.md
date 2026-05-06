@@ -77,7 +77,8 @@ Electrons fill orbitals in order of increasing energy:
 
 $$1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6s \lt 4f \lt 5d \lt 6p$$
 
-:::warning Note that $4s$ fills before $3d$, but $3d$ loses electrons before $4s$ when forming
+:::warning
+warning
 cations. This is because the $4s$ orbital is at a higher energy than $3d$ once electrons are in the
 $3d$ subshell.
 :::
@@ -108,7 +109,8 @@ For transition metals, use the noble gas core notation:
 - Chromium ($Z = 24$): $[\mathrm{Ar}]\, 4s^1\, 3d^5$ (exception: half-full subshells are more
   stable)
 
-:::tip Exceptions to remember: Cr is $4s^1\, 3d^5$ (not $4s^2\, 3d^4$) and Cu is $4s^1\, 3d^{10}$
+:::tip
+tip
 (not $4s^2\, 3d^9$). These arise because half-filled and fully-filled $d$ subshells have extra
 stability.
 :::
@@ -553,7 +555,8 @@ Bonds formed:
 
 $$\Delta H = (1652 + 996) - (1490 + 1852) = 2648 - 3342 = -694 \mathrm{ kJ/mol}$$
 
-:::warning Bond enthalpies are average values. For precise calculations, use standard enthalpy of
+:::warning
+warning
 formation data instead. Bond enthalpy calculations are less accurate for reactions involving liquids
 or solids because they only account for gaseous state bonds.
 :::

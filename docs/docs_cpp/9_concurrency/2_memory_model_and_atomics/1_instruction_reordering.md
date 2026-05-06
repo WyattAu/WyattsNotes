@@ -304,7 +304,8 @@ relationships.
 
 ## Concrete Example: Reordering Bug
 
-:::warning The following program demonstrates how the absence of proper memory ordering can lead to
+:::warning
+warning
 unexpected results. It contains intentional data races and is for educational purposes only. Do not
 write code like this in production.
 :::
@@ -338,7 +339,8 @@ int main() {
 }
 ```
 
-:::warning This program may print `data = 0` on some architectures (notably ARM and POWER). The
+:::warning
+warning
 compiler may reorder `data = 42` after `ready = true`, or the hardware may reorder the stores due to
 store buffering. On x86, stores are not reordered with other stores (TSO), so this particular
 example would likely work on x86 but fail on ARM. This is a common source of subtle cross-platform

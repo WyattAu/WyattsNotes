@@ -73,7 +73,8 @@ $$
 
 where $\overline{z_2} = c - di$ is the _complex conjugate_ of $z_2$.
 
-:::warning When computing $\arg(z)$, always check the quadrant of $(a, b)$. The formula
+:::warning
+warning
 $\theta = \arctan(b/a)$ only gives the correct principal argument when $a > 0$.
 :::
 
@@ -292,7 +293,8 @@ z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies)}
 \end{aligned}
 $$
 
-:::info CIE and Edexcel FP2 require the exponential form. AQA accepts it but also works extensively
+:::info
+info
 with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem.
 :::
 

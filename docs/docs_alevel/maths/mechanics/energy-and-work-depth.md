@@ -384,7 +384,8 @@ $$T_A = 3g \implies 50(d - 0.8) = 29.4 \implies d = 1.388\;\mathrm{m}$$
 But $1.388 \lt 2$, contradiction. This problem needs a 2D treatment with the particle hanging below
 the line, with both strings at angles.
 
-:::warning Common Pitfall
+:::warning
+warning
 Elastic potential energy problems often require careful consideration of whether strings are taut or
 slack at different points in the motion. Always check the assumptions about extensions at each stage.
 :::

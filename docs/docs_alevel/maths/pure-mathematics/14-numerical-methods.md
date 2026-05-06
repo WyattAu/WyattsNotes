@@ -174,7 +174,8 @@ Newton-Raphson fails when:
 - $f'(x_n)$ is close to zero (the next iterate jumps far away).
 - The starting point is not close enough to the root.
 
-:::warning Always check that Newton-Raphson is converging. If the iterates oscillate or diverge, try
+:::warning
+warning
 a different starting point.
 :::
 
@@ -196,7 +197,8 @@ The root is near $\alpha \approx -2.10$, so the iterate has been sent in the wro
 next iterate $x_2$ will be pulled back, but convergence is erratic compared to a well-chosen
 starting point.
 
-:::warning Before applying Newton-Raphson, sketch $f(x)$ or compute $f'(x)$ to check that the
+:::warning
+warning
 tangent is not close to horizontal near your starting point.
 :::
 

@@ -62,7 +62,8 @@ Only $G$ in the AD equation ($AD = C + I + G + (X - M)$) represents spending on 
 Transfer payments are not directly part of $G$ — they affect $AD$ indirectly through their effect on
 disposable income and hence consumption ($C$).
 
-:::warning Common Pitfall Transfer payments (benefits, pensions) are NOT part of $G$ in the AD
+:::warning
+warning
 formula. They are a government outlay but not a purchase of goods and services. They affect $C$, not
 $G$ directly. However, exam questions sometimes use "government spending" loosely — always clarify
 what is meant.
@@ -199,7 +200,8 @@ $$\frac{D}{Y} = \frac{D_t}{Y_t}$$
 This is the preferred measure of debt sustainability, since a large absolute debt is manageable if
 GDP is also large.
 
-:::warning Common Pitfall Deficit and debt are different. A country can have a large debt but a
+:::warning
+warning
 small (or zero) deficit if it is running a balanced budget. The deficit is a _flow_ (per year),
 while the debt is a _stock_ (accumulated). Reducing the deficit does _not_ reduce the debt — it
 merely slows the rate at which debt grows. Only a surplus reduces the debt.
@@ -587,7 +589,8 @@ Partially false. Crowding out was limited during 2008–09 because: (1) The econ
 
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Including transfer payments as part of G in the AD equation:** Transfer payments (benefits, pensions) are NOT part of government spending G in AD = C + I + G + (X-M). They affect AD indirectly through their effect on disposable income and therefore consumption C. Including them as G leads to double counting.
 

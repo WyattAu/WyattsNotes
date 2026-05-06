@@ -629,7 +629,8 @@ For the A-Level treatment of this topic, see [Coordinates and Geometry](https://
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Coordinate Geometry**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-coordinate-geometry) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Coordinate Geometry with other DSE mathematics topics to test synthesis under exam conditions.

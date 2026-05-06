@@ -890,11 +890,458 @@ Yoghurt is produced using _Lactobacillus bulgaricus_ and _Streptococcus thermoph
 
 ---
 
-:::tip Diagnostic Test
+## Industrial Microbiology
+
+### Industrial Production Using Microorganisms
+
+Microorganisms are used in large-scale industrial processes to produce a wide range of products. The key advantages of using microorganisms include: rapid growth, easy cultivation, ability to use cheap raw materials, and the production of valuable metabolites.
+
+### Fermentation Technology
+
+**Batch fermentation:**
+
+- All nutrients (substrate) are added at the beginning
+- Microorganisms grow through lag phase, exponential phase, stationary phase, and death phase
+- Products are harvested at the end of the process
+- The fermenter is cleaned and sterilised before the next batch
+- Advantages: simple; suitable for small-scale production; easy to control contamination
+- Disadvantages: downtime between batches; lower productivity; conditions change over time (nutrient depletion, waste accumulation)
+
+**Continuous fermentation:**
+
+- Nutrients are continuously added, and products are continuously removed
+- Microorganisms are maintained in the exponential (log) phase of growth, maximising productivity
+- Advantages: higher productivity; no downtime; consistent product quality
+- Disadvantages: risk of contamination over long periods; difficult to maintain optimal conditions; mutations can reduce product quality over time
+
+**Primary vs Secondary Metabolites:**
+
+| Type                 | Description                                                                                                   | Production Phase           | Examples                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------- |
+| Primary metabolites   | Substances produced during active growth (exponential phase); essential for growth and survival                | Exponential/log phase       | Amino acids, ethanol, organic acids (citric acid), enzymes |
+| Secondary metabolites | Substances produced after the main growth phase (stationary phase); not essential for growth                  | Stationary phase           | Antibiotics (penicillin), pigments, toxins |
+
+### Antibiotic Production: Penicillin
+
+Penicillin is produced by the fungus _Penicillium chrysogenum_ in a **fed-batch fermentation** process.
+
+**Process:**
+
+1. _Penicillium chrysogenum_ is grown in a large fermenter (stainless steel vessel, 50,000-200,000 dm$^3$) containing a sterile nutrient medium (sugar, nitrogen source, minerals)
+2. The fermenter is continuously stirred and aerated to ensure even distribution of nutrients and oxygen
+3. Temperature is maintained at approximately 25-27 degrees C (optimal for fungal growth and penicillin production)
+4. pH is maintained at approximately 6.5-7.0 by adding acid or alkali
+5. During the exponential growth phase, the fungus grows rapidly but produces little penicillin (primary metabolism)
+6. After the growth phase, when nutrients begin to deplete, the fungus switches to secondary metabolism and begins producing penicillin
+7. Glucose is fed in slowly (fed-batch): high glucose concentrations repress penicillin production, so glucose is added gradually to maintain a low but steady concentration
+8. The fermentation runs for approximately 6-8 days
+9. Penicillin is extracted from the filtrate using solvent extraction or ion-exchange chromatography
+
+**Key points for DSE:**
+
+- Penicillin is a **secondary metabolite** -- it is produced during the stationary phase, not during active growth
+- High glucose concentration represses penicillin synthesis (catabolite repression), so glucose is added slowly (fed-batch)
+- The process requires aseptic (sterile) conditions to prevent contamination by other microorganisms
+
+### Enzyme Production Using Microorganisms
+
+Microorganisms are the main source of industrial enzymes because they can be cultured in large quantities and their enzyme production can be optimised through genetic modification and selection.
+
+| Enzyme            | Source Microorganism         | Industrial Application                                                                                          |
+| ----------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Proteases         | _Bacillus subtilis_, _Bacillus licheniformis_ | Biological detergents (break down protein stains); food processing (tenderising meat, cheese making)       |
+| Amylases          | _Bacillus amyloliquefaciens_, _Aspergillus niger_ | Starch processing (convert starch to sugars); brewing; baking (improve dough quality)                    |
+| Lipases           | _Candida rugosa_, _Thermomyces lanuginosus_ | Biological detergents (break down fat stains); food processing (flavour development in cheese)              |
+| Pectinases        | _Aspergillus niger_          | Fruit juice clarification (break down pectin, which causes cloudiness)                                          |
+| Lactase           | _Kluyveromyces lactis_       | Production of lactose-free milk for lactose-intolerant individuals                                               |
+| Cellulases        | _Trichoderma reesei_         | Biofuel production (break down cellulose in plant biomass to glucose for fermentation); textile industry (stone-washing denim) |
+| Taq polymerase    | _Thermus aquaticus_          | PCR (polymerase chain reaction) -- heat-stable DNA polymerase that can withstand the high temperatures of PCR cycles |
+
+### Bioremediation
+
+Bioremediation is the use of microorganisms to clean up contaminated environments (soil, water).
+
+| Application                | Microorganism                         | Mechanism                                                                                                               |
+| -------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Oil spill cleanup          | _Pseudomonas putida_, _Alcanivorax_  | Break down hydrocarbons in crude oil into less harmful substances; can be enhanced by adding nutrients (biostimulation)   |
+| Heavy metal removal        | _Pseudomonas_, _Bacillus_            | Accumulate heavy metals (lead, cadmium, mercury) from contaminated soil and water                                        |
+| Sewage treatment           | Mixed microbial communities           | Break down organic matter in wastewater through aerobic and anaerobic processes                                          |
+| Pesticide degradation      | _Pseudomonas_, _Bacillus_            | Produce enzymes that degrade organophosphate and carbamate pesticides                                                  |
+| Plastic degradation        | _Ideonella sakaiensis_               | Produces PETase enzyme that breaks down PET plastic into monomers                                                      |
+
+---
+
+## Antibiotic Resistance: Detailed Mechanisms
+
+### How Bacteria Become Resistant
+
+| Mechanism                    | Molecular Basis                                                                                                              | Antibiotic Affected        |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| Enzymatic inactivation       | Bacteria produce enzymes that chemically modify or destroy the antibiotic molecule                                        | Beta-lactamase breaks down penicillin |
+| Target modification          | Mutations alter the molecular target of the antibiotic (e.g., altered ribosomes, altered penicillin-binding proteins)      | MRSA (altered PBP2a); rifampicin resistance (altered RNA polymerase) |
+| Efflux pumps                 | Membrane proteins actively pump the antibiotic out of the cell, reducing its intracellular concentration                   | Tetracycline resistance; multi-drug resistance in Gram-negative bacteria |
+| Reduced permeability         | Mutations reduce the number or size of porins in the outer membrane, limiting antibiotic entry                             | Gram-negative resistance to beta-lactams and quinolones |
+| Biofilm formation           | Bacteria embedded in a protective extracellular matrix; reduced penetration of antibiotics and reduced metabolic activity   | Chronic infections; catheter-associated infections |
+
+### Horizontal Gene Transfer of Resistance
+
+Antibiotic resistance genes can spread between bacteria of different species through horizontal gene transfer, much faster than vertical transmission (parent to offspring via binary fission).
+
+| Method        | Description                                                                                                              |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Conjugation   | Direct transfer of plasmids (circular DNA carrying resistance genes) between two bacteria connected by a pilus         |
+| Transformation | Uptake of free DNA from the environment (released when bacteria die); the DNA may contain resistance genes             |
+| Transduction  | Bacteriophages (viruses) carry bacterial DNA from one cell to another during infection; the DNA may include resistance genes |
+
+**Plasmids** are particularly important in the spread of antibiotic resistance because:
+
+- They can carry multiple resistance genes at once (multi-drug resistance)
+- They can be transferred between different species of bacteria via conjugation
+- They replicate independently of the bacterial chromosome, so they are maintained even without selection pressure (though there is a metabolic cost)
+
+---
+
+## Additional Problem Set
+
+**Problem 11:** Describe the process of penicillin production by _Penicillium chrysogenum_ in a fermenter. Explain why glucose is added slowly (fed-batch) rather than all at once.
+
+If you get this wrong, revise: Industrial Microbiology -- Antibiotic Production
+
+<details>
+<summary>Solution</summary>
+
+_Penicillium chrysogenum_ is cultured in a large stirred-tank fermenter with controlled conditions (temperature 25-27 degrees C, pH 6.5-7.0, continuous aeration and stirring). During the exponential growth phase, the fungus grows rapidly but produces little penicillin. Once growth slows and nutrients deplete (stationary phase), the fungus switches to secondary metabolism and begins producing penicillin.
+
+Glucose is added slowly (fed-batch) because high glucose concentrations repress penicillin biosynthesis through catabolite repression. When glucose is abundant, the fungus preferentially uses it for growth and does not produce secondary metabolites. By adding glucose gradually, the glucose concentration is maintained at a low level that supports fungal metabolism without repressing penicillin synthesis. This maximises penicillin yield. The fed-batch approach also allows the fermentation to be run for longer (6-8 days) compared to a simple batch process, further increasing total production.
+
+</details>
+
+**Problem 12:** Explain how bacteria can become resistant to the antibiotic penicillin through (a) the production of beta-lactamase and (b) alteration of penicillin-binding proteins. Describe how resistance genes can spread between different species of bacteria.
+
+If you get this wrong, revise: Antibiotic Resistance -- Detailed Mechanisms
+
+<details>
+<summary>Solution</summary>
+
+(a) **Beta-lactamase production:** A mutation in the bacterial genome (or acquisition of a plasmid carrying the bla gene) enables the bacterium to produce the enzyme beta-lactamase. This enzyme hydrolyses the beta-lactam ring in penicillin, rendering the antibiotic inactive. The modified penicillin molecule can no longer bind to its target and is excreted from the cell. The bacterium survives despite the presence of the antibiotic.
+
+(b) **Altered penicillin-binding proteins (PBPs):** Penicillin normally works by binding to PBPs on the bacterial cell membrane, inhibiting the transpeptidase enzyme that cross-links peptidoglycan during cell wall synthesis. A mutation in the gene encoding PBPs can alter the protein's shape, reducing penicillin's ability to bind. The transpeptidase continues to function, allowing the bacterium to synthesise its cell wall normally even in the presence of penicillin. This is the mechanism of MRSA resistance.
+
+**Horizontal gene transfer:** Resistance genes can spread between different bacterial species through:
+- **Conjugation:** A plasmid carrying resistance genes is transferred through a pilus from a donor bacterium to a recipient
+- **Transformation:** Free DNA containing resistance genes (released from dead bacteria) is taken up by competent bacteria
+- **Transduction:** A bacteriophage transfers bacterial DNA (including resistance genes) from one bacterium to another during infection
+
+These mechanisms allow resistance to spread much more rapidly than vertical transmission alone (binary fission), creating multi-drug-resistant strains that pose serious public health threats.
+
+</details>
+
+---
+
+
+---
+
+## Genetic Engineering: Detailed Techniques
+
+### Restriction Enzymes
+
+Restriction endonucleases are enzymes that cut DNA at specific recognition sequences (usually 4-8 base pairs long). They are essential tools in genetic engineering because they allow precise cutting of DNA at known locations.
+
+| Feature              | Description                                                                                                               |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Recognition sequence | A specific palindromic DNA sequence (reads the same 5' to 3' on both strands)                                       |
+| Cut type             | Most produce "sticky ends" (single-stranded overhangs); some produce "blunt ends" (cut straight across both strands)         |
+| EcoRI example        | Recognition sequence: GAATTC; cuts between G and A on both strands, producing sticky ends with 5' overhangs of AATT           |
+| Specificity          | Each enzyme recognises only one specific sequence; over 3,000 different restriction enzymes have been identified                |
+
+**Sticky ends vs blunt ends:**
+
+- **Sticky ends:** The single-stranded overhangs are complementary between fragments cut with the same enzyme. This allows DNA fragments from different sources to be joined together because the complementary bases pair by hydrogen bonding. Sticky ends are preferred in genetic engineering because they allow directional insertion (the DNA can only be inserted in one orientation).
+- **Blunt ends:** Both strands are cut at the same position. Blunt ends can be joined to any other blunt end (regardless of the enzyme used), but this is less efficient and allows insertion in either orientation.
+
+### DNA Ligase
+
+DNA ligase joins DNA fragments by catalysing the formation of phosphodiester bonds between adjacent nucleotides. It is used to:
+- Join the target gene into the plasmid vector after both have been cut with the same restriction enzyme
+- Seal nicks in the sugar-phosphate backbone of DNA
+
+### Polymerase Chain Reaction (PCR)
+
+PCR is a technique for amplifying a specific segment of DNA exponentially, producing millions of copies from a tiny starting sample.
+
+**Requirements:**
+
+- **Template DNA:** The DNA containing the target sequence to be amplified
+- **Primers:** Two short single-stranded DNA sequences (15-30 bases each) that are complementary to the regions flanking the target sequence on opposite strands. Forward primer binds to the start of the target; reverse primer binds to the complementary strand at the end of the target
+- **Taq polymerase:** A heat-stable DNA polymerase from _Thermus aquaticus_ (a bacterium living in hot springs). It can withstand the high temperatures (95 degrees C) used in PCR without denaturing
+- **Free nucleotides:** dATP, dTTP, dCTP, dGTP (the building blocks for DNA synthesis)
+- **Buffer:** Contains Mg$^{2+}$ ions (cofactor for Taq polymerase) and optimal pH
+
+**PCR cycle (repeated 25-35 times):**
+
+1. **Denaturation (95 degrees C, 30 seconds):** The double-stranded DNA template is heated to separate it into two single strands
+2. **Annealing (55-65 degrees C, 30 seconds):** The temperature is lowered to allow primers to bind (anneal) to their complementary sequences on the single-stranded template by hydrogen bonding
+3. **Extension (72 degrees C, 30-60 seconds):** Taq polymerase synthesises new DNA strands from the primers, using the template as a guide. The rate is approximately 1000 bases per minute
+
+**After n cycles:** $2^n$ copies of the target sequence are produced (assuming 100% efficiency).
+
+**Applications of PCR:**
+
+| Application              | Description                                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| Forensic science         | Amplifying DNA from tiny blood samples or hair follicles for DNA fingerprinting and criminal identification          |
+| Medical diagnosis        | Detecting pathogen DNA in patient samples (e.g., HIV, tuberculosis, COVID-19)                                         |
+| Genetic testing           | Detecting genetic mutations associated with inherited diseases (e.g., cystic fibrosis, Huntington's disease)            |
+| Evolutionary biology     | Amplifying ancient DNA from fossils; comparing DNA sequences between species                                          |
+| Paternity testing         | Comparing DNA profiles between child, mother, and alleged father                                                |
+| Gene cloning              | Amplifying a specific gene for insertion into a vector                                                          |
+
+### Gel Electrophoresis
+
+Gel electrophoresis separates DNA fragments by size. DNA is negatively charged (due to phosphate groups) and moves towards the positive electrode.
+
+**Process:**
+
+1. DNA samples are cut with restriction enzymes, producing fragments of different lengths
+2. DNA fragments are loaded into wells in an agarose gel
+3. An electric current is applied across the gel
+4. DNA fragments migrate through the gel towards the positive electrode
+5. Smaller fragments move faster and further; larger fragments move slower and less far
+6. The DNA is visualised by staining with a fluorescent dye (e.g., ethidium bromide) and viewing under UV light
+
+**Applications:**
+
+- **DNA fingerprinting:** Comparing the banding patterns of DNA fragments between individuals. Every individual (except identical twins) has a unique DNA profile due to variations in non-coding DNA (short tandem repeats, STRs)
+- **PCR product verification:** Confirming that PCR amplified the correct size fragment
+- **Analysing genetic disorders:** Identifying the presence or absence of specific alleles
+
+### Worked Example: Genetic Engineering -- Producing Human Insulin in Bacteria
+
+Describe the steps involved in producing human insulin using genetic engineering, explaining why each step is necessary.
+
+<details>
+<summary>Solution</summary>
+
+1. **Isolation of the insulin gene:** mRNA for human insulin is extracted from pancreatic beta cells. Reverse transcriptase is used to make complementary DNA (cDNA) from the mRNA. cDNA is used instead of genomic DNA because eukaryotic genes contain introns, and bacteria cannot remove introns (they lack spliceosomes). If genomic DNA were used, the protein produced would include intron-encoded amino acids and would be non-functional.
+
+2. **Cutting the DNA:** The insulin cDNA and a plasmid vector are both cut with the same restriction enzyme (e.g., EcoRI). This produces complementary sticky ends on both the cDNA and the plasmid.
+
+3. **Ligation:** DNA ligase joins the insulin cDNA into the plasmid by catalysing phosphodiester bonds between the sticky ends, creating a recombinant plasmid.
+
+4. **Transformation:** The recombinant plasmid is introduced into _E. coli_ bacteria by making the bacterial cells permeable (using heat shock or electroporation). Not all bacteria take up the plasmid.
+
+5. **Selection:** Bacteria that took up the plasmid are selected using an antibiotic resistance marker gene on the plasmid. When grown on agar containing the antibiotic, only transformed bacteria (with the plasmid) survive.
+
+6. **Culture and expression:** Transformed bacteria are grown in large fermenters. They transcribe and translate the insulin gene, producing human insulin (as proinsulin, which is later processed to active insulin).
+
+7. **Purification:** Insulin is extracted from the bacterial culture and purified for medical use.
+
+</details>
+
+
+---
+
+## The Carbon Cycle and Microorganisms
+
+### Role of Microorganisms in Carbon Cycling
+
+| Process                    | Microorganisms Involved               | Description                                                                                                               |
+| -------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Decomposition               | Bacteria and fungi (saprotrophs)      | Break down dead organic matter (plants, animals, waste); release CO$_2$ through respiration; recycle carbon and nutrients back into the ecosystem |
+| Carbon fixation              | Cyanobacteria; chemosynthetic bacteria | Convert inorganic carbon (CO$_2$ or bicarbonate) into organic compounds                                               |
+| Methanogenesis               | Methanogenic archaea (strict anaerobes) | Produce methane (CH$_4$) from organic matter in anaerobic environments (wetlands, rice paddies, landfill sites, guts of ruminants); methane is a potent greenhouse gas (25x more warming potential than CO$_2$ over 100 years) |
+| Methane oxidation            | Methanotrophic bacteria               | Oxidise methane (CH$_4$) to CO$_2$ and water in aerobic environments (soil, water); help to mitigate methane emissions       |
+
+### Decomposition in Detail
+
+Decomposition is the breakdown of dead organic matter by decomposers (bacteria and fungi). The rate of decomposition depends on:
+
+| Factor                  | Faster Decomposition                                                                                                      | Slower Decomposition                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Temperature              | Warm (higher enzyme activity)                                                                                            | Cold (lower enzyme activity)                                                                                             |
+| Moisture                 | Damp (provides medium for enzyme activity and decomposer growth)                                                         | Dry (decomposers need water; desert conditions slow decomposition)                                                      |
+| Oxygen                  | Aerobic (aerobic decomposers are more efficient)                                                                         | Anaerobic (slower; produces methane instead of CO$_2$)                                                                  |
+| C:N ratio of the material | Low (nitrogen-rich material, e.g., fresh grass)                                                                          | High (carbon-rich material, e.g., wood, autumn leaves); the material is tough and low in nitrogen (a limiting nutrient for decomposer growth) |
+| Surface area             | Large (e.g., cut or shredded material)                                                                                    | Small (e.g., whole logs)                                                                                                 |
+
+**Compost production:** A practical application of decomposition. Organic waste (food scraps, garden waste) is piled in a compost heap; bacteria and fungi decompose the organic matter, producing a nutrient-rich compost that can be used as fertiliser. Regular turning of the heap introduces oxygen (promoting aerobic decomposition) and speeds up the process.
+
+---
+
+## Antibiotics: Mechanisms and Resistance in Detail
+
+### Mechanisms of Action
+
+| Mechanism                | Description                                                                                                               | Example                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Inhibit cell wall synthesis | Interfere with the synthesis of peptidoglycan; weaken the cell wall; the bacterium bursts due to osmotic pressure (only affect growing bacteria) | Penicillin (binds to and inhibits transpeptidase enzymes that cross-link peptidoglycan); vancomycin; cephalosporins |
+| Inhibit protein synthesis | Bind to bacterial 70S ribosomes (which differ from eukaryotic 80S ribosomes) and interfere with translation                   | Tetracycline (binds to 30S subunit, prevents tRNA binding); erythromycin (binds to 50S subunit, prevents translocation); streptomycin |
+| Inhibit DNA replication  | Interfere with DNA gyrase (topoisomerase II) which is needed for DNA supercoiling during replication                       | Ciprofloxacin; nalidixic acid                                                                              |
+| Disrupt cell membrane    | Insert into the bacterial cell membrane, forming pores that cause leakage of cellular contents                            | Polymyxin B (binds to lipopolysaccharide in Gram-negative outer membrane)                                         |
+| Inhibit metabolic pathways | Act as antimetabolites (structural analogues of essential metabolites); competitively inhibit enzymes in metabolic pathways | Sulfonamides (competitive inhibitors of dihydropteroate synthase, blocking folate synthesis); trimethoprim  |
+
+### Antibiotic Spectrum
+
+| Type                    | Description                                                                                                               | Example                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Narrow-spectrum          | Effective against only a limited range of bacteria (specific Gram-positive or Gram-negative)                            | Penicillin V (Gram-positive); vancomycin (Gram-positive); isoniazid (mycobacteria) |
+| Broad-spectrum          | Effective against a wide range of bacteria (both Gram-positive and Gram-negative)                                       | Tetracycline; ampicillin; ciprofloxacin; chloramphenicol                                          |
+
+### Why Antibiotics Do Not Affect Viruses
+
+| Reason                   | Explanation                                                                                                               |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| No cell wall              | Many antibiotics target bacterial cell wall synthesis; viruses have no cell wall (they have a protein capsid, not peptidoglycan) |
+| No ribosomes              | Many antibiotics target bacterial 70S ribosomes; viruses do not have ribosomes (they use the host cell's ribosomes to translate their mRNA) |
+| No independent metabolism  | Many antibiotics target bacterial metabolic pathways; viruses have no metabolism of their own (they rely entirely on the host cell's metabolic machinery) |
+| Viruses are inside host cells | Viruses replicate inside host cells; an antibiotic that interferes with viral replication would also need to affect the host cell, causing unacceptable side effects |
+
+---
+
+## Biotechnology in Agriculture
+
+### Genetically Modified (GM) Crops
+
+| Crop                    | Modification                                                                                                               | Benefit                                  | Controversy                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------- |
+| Bt maize / Bt cotton     | Gene from _Bacillus thuringiensis_ inserted; plant produces Bt toxin protein that kills insect pests (lepidopteran larvae) | Reduced need for chemical insecticides; higher yields | Potential harm to non-target insects (e.g., butterflies); development of resistance in pests |
+| Golden Rice              | Genes for beta-carotene synthesis inserted; rice grains produce beta-carotene (precursor of vitamin A)                  | Addresses vitamin A deficiency in developing countries (a major cause of childhood blindness) | Intellectual property concerns; acceptance by local communities; long-term environmental effects |
+| Roundup Ready soybeans   | Gene for glyphosate resistance inserted (EPSPS enzyme); crop can be sprayed with glyphosate herbicide without being killed | Simplifies weed control; higher yields | Development of herbicide-resistant weeds ("superweeds"); dependence on single herbicide company |
+| Virus-resistant papaya    | Gene from papaya ringspot virus inserted; plant is resistant to the virus                                              | Saved the Hawaiian papaya industry from ringspot virus | Public concern about eating viral genes    |
+| Herbicide-resistant oilseed rape | Modified to be resistant to specific herbicides                                                                      | Easier weed management in crop fields     | Gene flow to wild relatives; creation of "superweeds" |
+
+### Methods of Introducing Genes into Plants
+
+| Method                    | Description                                                                                                               |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Agrobacterium-mediated transformation | _Agrobacterium tumefaciens_ is a soil bacterium that naturally transfers a segment of its Ti (tumour-inducing) plasmid (T-DNA) into plant cells, causing crown gall disease. Scientists replace the tumour-causing genes with the desired gene and use the bacterium as a natural gene delivery vector |
+| Biolistics (gene gun)      | Microscopic gold or tungsten particles coated with DNA are fired at high speed into plant cells using a gene gun; some particles penetrate the nucleus and the DNA is incorporated into the plant genome |
+| Protoplast transformation   | The plant cell wall is removed (using cellulase enzyme) to create protoplasts; DNA is introduced using electroporation or PEG (polyethylene glycol); the cell wall is then regenerated |
+
+---
+
+## Common Pitfalls
+
+- **Antibiotics are produced by MICROORGANISMS, not by pharmaceutical companies from scratch.** Most antibiotics are derived from fungi (e.g., penicillin from _Penicillium_) or bacteria (e.g., streptomycin from _Streptomyces_). Pharmaceutical companies isolate, purify, and mass-produce them
+- **Broad-spectrum antibiotics kill BOTH Gram-positive and Gram-negative bacteria, including beneficial bacteria in the gut.** This can cause diarrhoea and secondary infections (e.g., _Clostridium difficile_ infection). Narrow-spectrum antibiotics target specific bacteria and cause less disruption to the normal microbiome
+- **Antibiotic resistance is a NATURAL phenomenon accelerated by human activity.** Resistance genes exist naturally in soil bacteria (they produce antibiotics to compete with other bacteria and need resistance genes to protect themselves). Overuse and misuse of antibiotics in medicine and agriculture SELECT for resistant bacteria, increasing the frequency of resistance genes in the population
+- **Bt crops produce the Bt toxin protein, NOT live bacteria.** The plant cells synthesise the Bt protein from the inserted bacterial gene. When an insect eats the plant tissue, the toxin is activated in the insect's alkaline gut and kills the insect by forming pores in its gut lining**
+:::tip
+tip
 Ready to test your understanding of **Microorganisms and Biotechnology**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-microorganisms-biotechnology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Microorganisms and Biotechnology with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
 
+---
+
+## Industrial Biotechnology Applications
+
+### Bioremediation
+
+Bioremediation is the use of microorganisms (bacteria, fungi, algae) to break down or remove environmental pollutants.
+
+| Type                  | Description                                                                                                               | Example                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| **In situ** bioremediation | Treatment occurs at the site of contamination without excavating the polluted material                                | Adding nutrients (bio-stimulation) or microorganisms (bio-augmentation) to contaminated soil or groundwater |
+| **Ex situ** bioremediation | Contaminated material is excavated and treated elsewhere (e.g., in a bioreactor or landfill)                          | Contaminated soil is removed and treated in a controlled facility |
+
+| Pollutant              | Microorganism Used           | Mechanism                                                                                                                 |
+| ---------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Oil spills              | _Pseudomonas_, _Alcanivorax_ | Hydrocarbon-degrading bacteria break down oil components into less harmful substances                                    |
+| Heavy metals            | Certain bacteria, fungi      | Microorganisms can accumulate, transform, or immobilise heavy metals (e.g., reducing Cr(VI) to less toxic Cr(III))        |
+| Pesticides              | Various soil bacteria        | Enzymes produced by bacteria break down pesticide molecules                                                               |
+| Sewage and wastewater    | Mixed microbial communities  | Aerobic and anaerobic bacteria break down organic matter in sewage treatment plants                                       |
+| Plastic degradation      | _Ideonella sakaiensis_       | Bacterium discovered in 2016 that can break down PET (polyethylene terephthalate) plastic using PETase enzymes            |
+
+### Biofuels
+
+| Biofuel                | Source Material              | Description                                                                                                               | Advantages                          | Disadvantages                       |
+| ---------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------- |
+| Bioethanol              | Sugarcane, maize, wheat      | Produced by yeast fermentation of sugars; can be blended with petrol or used pure (E85)                                  | Renewable; reduces CO2 emissions    | Competes with food production; lower energy density than petrol |
+| Biodiesel               | Vegetable oils, animal fats  | Produced by transesterification of oils with methanol; can be used in diesel engines                                      | Renewable; biodegradable            | Competes with food production; higher NOx emissions |
+| Biogas (methane)        | Organic waste, manure, sewage | Produced by anaerobic digestion of organic matter by methanogenic archaea; used for heating and electricity generation    | Uses waste materials; reduces landfill | Lower energy density; methane leaks are potent greenhouse gas |
+| Biobutanol              | Sugarcane, maize, cellulose  | Produced by bacterial fermentation (e.g., _Clostridium acetobutylicum_); can be used in petrol engines without modification | Higher energy density than ethanol; can use existing infrastructure | More expensive to produce; less efficient fermentation |
+
+### Biotechnology in Medicine
+
+| Application            | Description                                                                                                               | Example                                 |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Recombinant insulin      | Human insulin gene inserted into _E. coli_ or yeast; bacteria/yeast produce human insulin for diabetics                 | Humulin (recombinant human insulin)     |
+| Recombinant vaccines     | Pathogen antigens produced by genetically modified organisms; safer than live attenuated vaccines                        | Hepatitis B vaccine (yeast-produced surface antigen); HPV vaccine |
+| Monoclonal antibodies    | Identical antibodies produced by a single clone of B cells (hybridoma technology); used in diagnosis, cancer therapy, autoimmune diseases | Trastuzumab (breast cancer); adalimumab (rheumatoid arthritis); rapid COVID-19 antigen tests |
+| Gene therapy             | Functional copies of a defective gene are delivered to a patient's cells using a viral vector                            | Treatment of severe combined immunodeficiency (SCID); retinal dystrophy |
+| Stem cell therapy        | Embryonic or adult stem cells are used to replace damaged or diseased cells and tissues                                 | Bone marrow transplants for leukaemia; potential for treating Parkinson's, spinal cord injury |
+| PCR in diagnosis         | Polymerase chain reaction used to amplify and detect pathogen DNA in patient samples                                     | COVID-19 testing; HIV viral load testing; genetic disease screening |
+| ELISA                    | Enzyme-linked immunosorbent assay; uses antibodies and enzymes to detect specific antigens or antibodies in blood samples  | HIV testing; pregnancy testing (hCG detection); COVID-19 antibody testing |
+
+### Monoclonal Antibody Production (Hybridoma Method)
+
+1. **Immunisation:** A mouse is injected with the target antigen, stimulating B cells to produce antibodies against it
+2. **B cell extraction:** B cells are removed from the mouse's spleen
+3. **Cell fusion:** The B cells are fused with **myeloma cells** (cancerous B cells that divide indefinitely) using polyethylene glycol (PEG) or electrofusion
+4. **Hybridoma cells:** The fused cells are called hybridomas; they combine the antibody-producing ability of B cells with the immortality of myeloma cells
+5. **Selection:** Cells are grown in HAT medium -- only hybridoma cells survive (unfused B cells die naturally; unfused myeloma cells are killed by the HAT medium because they lack the enzyme HGPRT)
+6. **Screening:** Individual hybridoma cells are cultured separately and tested to identify those producing the desired antibody
+7. **Cloning:** The selected hybridoma is cloned to produce a large population of identical cells, all producing the same monoclonal antibody
+8. **Large-scale production:** The hybridoma cells are grown in large bioreactors; antibodies are harvested from the culture medium
+
+---
+
+## Microbiology Techniques
+
+### Aseptic Technique
+
+Aseptic technique is essential when working with microorganisms in the laboratory to prevent contamination of cultures and protect the operator from potentially pathogenic organisms.
+
+| Technique              | Description                                                                                                               | Purpose                                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| Flaming the loop         | The inoculating loop is heated until it glows red hot in a Bunsen burner flame                                          | Sterilises the loop before and after use |
+| Working near a Bunsen flame | All procedures are carried out close to the upward current of hot air created by a Bunsen burner                      | Creates a sterile zone; airborne contaminants are drawn away from the work area |
+| Sterilising equipment    | Petri dishes, pipettes, and culture media are sterilised by autoclaving (high-pressure steam at 121 degrees C for 15 minutes) | Kills all microorganisms including endospores |
+| Opening Petri dishes minimally | Petri dish lids are only partially lifted and never placed face-down on the bench                                | Prevents airborne contamination of the agar surface |
+| Disinfecting surfaces    | The bench surface is wiped with 70% ethanol before and after the procedure                                              | Kills any microorganisms on the bench   |
+
+### Growing Microorganisms in Culture
+
+| Component            | Description                                                                                                               |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Culture medium        | Contains nutrients required for microbial growth (carbohydrates, nitrogen source, minerals, vitamins)                  |
+| Agar                 | A polysaccharide derived from seaweed; used as a solidifying agent in culture media; melts at ~85 degrees C and solidifies at ~42 degrees C |
+| Nutrient broth        | Liquid culture medium; used for growing large numbers of bacteria in suspension                                          |
+| Nutrient agar         | Solid culture medium in Petri dishes; used for obtaining isolated colonies of bacteria                                    |
+| Selective media        | Contains substances that inhibit the growth of certain microorganisms while allowing others to grow                    | MacConkey agar (inhibits Gram-positive bacteria; allows Gram-negative) |
+| Differential media     | Contains indicators that allow different types of microorganisms to be distinguished by their appearance               | Blood agar (differentiates bacteria by haemolysis patterns) |
+| Incubation             | Cultures are typically incubated at 25-30 degrees C (for environmental bacteria) or 37 degrees C (for human pathogens) for 24-48 hours |
+| Inverted Petri dishes  | Cultured plates are stored upside down to prevent condensation from dripping onto the agar surface                        |
+
+### Measuring Bacterial Growth
+
+| Method                  | Description                                                                                                               | Advantages                          | Disadvantages                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------- |
+| **Direct count** (microscopy) | Counting bacteria in a known volume under a microscope using a haemocytometer (counting chamber)                     | Quick; does not require incubation    | Cannot distinguish living from dead cells |
+| **Viable count** (colony counting) | Diluting a sample, spreading it on agar plates, incubating, and counting the colonies that grow (each colony originates from a single living cell) | Only counts living (viable) cells; widely used | Requires incubation time (24-48 hours); colonies may not be visible if very small |
+| **Turbidity** (optical density) | Measuring the cloudiness (turbidity) of a liquid culture using a spectrophotometer -- more cells = more turbid        | Quick; non-destructive; can monitor growth continuously | Cannot distinguish living from dead cells; less accurate at very low or very high densities |
+| **Dry mass**             | Filtering a known volume of culture, drying the filter paper and cells, and weighing                                      | Direct measurement of biomass         | Destructive; time-consuming; cannot monitor same culture continuously |
+
+### Bacterial Growth Curve
+
+| Phase                  | Description                                                                                                               | Rate of Division   | Rate of Death  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------ | -------------- |
+| **Lag phase**            | Bacteria are adapting to the new environment; synthesising enzymes and other molecules needed for growth; no significant increase in cell number | Low/zero          | Low            |
+| **Exponential (log) phase** | Bacteria are dividing at their maximum rate; population doubles at regular intervals (generation time)                    | Maximum           | Low            |
+| **Stationary phase**     | Growth rate equals death rate; nutrients are becoming depleted; toxic waste products are accumulating; population size stabilises | Decreasing        | Increasing     |
+| **Death (decline) phase** | Death rate exceeds growth rate; nutrients exhausted; toxic waste products at high levels; population declines               | Near zero         | High           |
+
+---
+
+## Common Pitfalls
+
+- **Antibiotics are produced by microorganisms, NOT by the human body.** Penicillin is produced by the fungus _Penicocillium_; streptomycin by _Streptomyces_
+- **Antibiotics target bacterial cells, NOT viruses.** Viruses have no cell walls, ribosomes, or metabolic processes that antibiotics can target. Taking antibiotics for a viral infection is ineffective and contributes to antibiotic resistance
+- **Bacteriostatic antibiotics STOP bacterial growth (do not kill); bactericidal antibiotics KILL bacteria.** Knowing the difference is important for treating immunocompromised patients (who need bactericidal antibiotics since their immune system cannot finish the job)**
+- **In PCR, the enzyme used is Taq polymerase (from _Thermus aquaticus_), NOT DNA polymerase from human cells.** Taq polymerase is heat-stable and does not denature at the high temperatures (95 degrees C) used in PCR**
+- **Restriction enzymes cut DNA at specific recognition sequences, producing either blunt ends or sticky ends.** Sticky ends (with single-stranded overhangs) are more useful in genetic engineering because they facilitate the joining of DNA fragments from different sources**
+- **In bioremediation, "in situ" means treating the pollution on-site, NOT in a laboratory or bioreactor.** "Ex situ" means removing the contaminated material for treatment elsewhere**
+:::

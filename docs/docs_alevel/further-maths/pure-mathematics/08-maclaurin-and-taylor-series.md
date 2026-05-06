@@ -262,7 +262,8 @@ $$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \mathrm{for } |x| < 1}$$
 
 $\square$
 
-:::tip The geometric series is the foundation for many other series. The Maclaurin series for
+:::tip
+tip
 $\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it.
 :::
 

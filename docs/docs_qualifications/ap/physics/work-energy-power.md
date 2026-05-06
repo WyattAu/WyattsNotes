@@ -621,7 +621,8 @@ $$F_{\mathrm{total resist}}(30) = 1440 + 200 = 1640 \mathrm{ N}$$
 The car cannot maintain $30 \mathrm{ m/s}$ with the same driving force -- air resistance increases
 too rapidly.
 
-:::info Air resistance (drag) force is given by $F_D = \frac{1}{2}\rho C_D A v^2$, where $\rho$ is
+:::info
+info
 air density, $C_D$ is the drag coefficient, and $A$ is the cross-sectional area. This quadratic
 dependence on velocity is why fuel consumption increases dramatically at high speeds.
 :::

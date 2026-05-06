@@ -44,7 +44,8 @@ $$h(k) = k \bmod m$$
 **Choosing $m$.** Avoid powers of 2 (patterns in keys align with binary structure). Choose $m$ to be
 a **prime** not close to a power of 2.
 
-:::warning Pitfall If $m = 2^p$ and keys have patterns in their low-order bits (e.g., even numbers),
+:::warning
+warning
 the hash function will map many keys to the same bucket.
 :::
 

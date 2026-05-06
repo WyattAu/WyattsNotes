@@ -32,7 +32,8 @@ Dynamic equilibrium is established when:
 - The position of equilibrium describes the relative amounts of reactants and products.
 - Equilibrium can be approached from either direction.
 
-:::warning Equilibrium can only be established in a closed system. If a product is allowed to escape
+:::warning
+warning
 (e.g., a gas leaving an open container), equilibrium will never be reached.
 :::
 
@@ -95,7 +96,8 @@ pressure.
 
 </details>
 
-:::warning Adding an inert gas at constant volume does NOT change the equilibrium position, because
+:::warning
+warning
 the partial pressures (and therefore concentrations) of the reacting gases remain unchanged. Adding
 an inert gas at constant total pressure does shift equilibrium towards the side with more moles of
 gas, because the partial pressures of the reacting gases decrease.

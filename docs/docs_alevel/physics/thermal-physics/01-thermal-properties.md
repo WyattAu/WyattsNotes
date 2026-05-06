@@ -55,7 +55,8 @@ $$\boxed{\langle x^2\rangle^{1/2} \propto \sqrt{t}}$$
 This is a hallmark signature of Brownian motion and provided the first direct evidence for the
 existence of atoms and molecules.
 
-:::info Board Coverage AQA: Brownian motion is required practical observation. Edexcel: Explanation
+:::info
+info
 in terms of molecular bombardment. OCR (A): Historical context and Einstein's analysis. CIE:
 Qualitative and quantitative treatment.
 :::
@@ -87,7 +88,8 @@ $$\boxed{Q = mL}$$
 increasing kinetic energy, so the temperature remains constant despite energy input. Vaporisation
 requires much more energy than fusion because gas molecules are completely separated.
 
-:::warning Common Pitfall Do not confuse specific heat capacity (which raises temperature) with
+:::warning
+warning
 latent heat (which changes state at constant temperature). In a heating curve, the flat sections are
 phase changes (latent heat), and the sloped sections are temperature changes (specific heat
 capacity).
@@ -278,7 +280,8 @@ $\square$
 moment of inertia. For a diatomic molecule, rotation about the bond axis does not count (moment of
 inertia is negligible), leaving only 2 rotational DOF.
 
-:::warning Common Pitfall At A-Level, vibrational DOF are not considered (they are significant only
+:::warning
+warning
 at high temperatures). The equipartition theorem applies to each fully-excited quadratic DOF. At
 room temperature, diatomic molecules have 5 active DOF (3 translational + 2 rotational), not 6.
 :::
@@ -305,7 +308,8 @@ As temperature increases, the distribution broadens and the peak shifts right (f
 but the area under the curve stays normalised to 1 (total probability). As mass increases, the
 distribution narrows and shifts left (heavier molecules move more slowly at the same temperature).
 
-:::info Board Coverage AQA: Qualitative understanding of the distribution shape. Edexcel: Comparison
+:::info
+info
 of speeds at different temperatures. OCR (A): Ratio of speeds for different gases. CIE: Quantitative
 use of all three speed measures.
 :::

@@ -459,7 +459,8 @@ $\square$
 materials involved), not of the individual bodies. For a perfectly elastic collision ($e = 1$), the
 relative speed is unchanged -- the bodies bounce off each other just as fast as they approached.
 
-:::warning Common Pitfall The coefficient of restitution applies along the **line of centres** (the
+:::warning
+warning
 line joining the centres of the two bodies at the moment of impact). In oblique collisions, only the
 components along this line are used in the restitution equation. The perpendicular components are
 governed by the smoothness of the surfaces.

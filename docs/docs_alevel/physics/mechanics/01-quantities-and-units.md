@@ -775,7 +775,8 @@ s$^{-2}$), so the result is consistent with the accepted value. $\square$
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Quantities and Units**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-quantities-units) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quantities and Units with other physics topics to test synthesis under exam conditions.

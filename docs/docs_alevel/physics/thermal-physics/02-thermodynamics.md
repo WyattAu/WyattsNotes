@@ -42,7 +42,8 @@ where:
 - $Q$ is the energy transferred to the system by heating (J) — positive if heat flows in
 - $W$ is the work done **on** the system (J) — positive if work is done on the system
 
-:::warning Common Pitfall Sign conventions vary. Some textbooks use $\Delta U = Q - W$ where $W$ is
+:::warning
+warning
 work done **by** the system. Always check which convention is being used. We use the "physics"
 convention where $W$ is work done on the system.
 :::
@@ -308,7 +309,8 @@ molecular arrangements (high $W$). Melting increases entropy because molecules g
 more configurations. Similarly, vaporisation produces a much larger entropy increase because gas
 molecules have far more positional freedom.
 
-:::tip Exam Technique When asked about the second law, state it clearly (Clausius or Kelvin form),
+:::tip
+tip
 give a consequence (no 100% efficient engine), and explain in terms of entropy if possible. On a
 $p$-$V$ diagram, the Carnot cycle encloses the maximum possible area for given temperature limits.
 :::

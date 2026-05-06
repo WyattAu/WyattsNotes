@@ -288,7 +288,8 @@ $$A^n = PD^n P^{-1}$$
 
 since $D^n$ is simply the diagonal matrix with each eigenvalue raised to the power $n$.
 
-:::warning Common Pitfall
+:::warning
+warning
 Not all matrices are diagonalisable. A matrix is diagonalisable if and only if it has a full set of
 linearly independent eigenvectors. A matrix with repeated eigenvalues may or may not be
 diagonalisable.

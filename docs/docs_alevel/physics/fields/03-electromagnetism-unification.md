@@ -246,7 +246,8 @@ Maxwell's unification showed that all these phenomena are described by the same 
 quantum nature of EM radiation (photons) would later be explained by Planck and Einstein, but the
 classical wave description remains valid and powerful.
 
-:::info Board Note The derivation of $c = 1/\sqrt{\mu_0\varepsilon_0}$ is required by Edexcel and
+:::info
+info
 CIE. AQA and OCR (A) expect you to know the result and its significance but may not require the full
 derivation.
 :::
@@ -379,7 +380,8 @@ V.
 This tiny voltage in metals explains why Hall probes use **semiconductors** (with much lower $n$) to
 get measurable voltages.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+:::info
+info
 
 CIE P4 covers the Hall effect explicitly, including the derivation of $V_H = BI/(ntq)$. AQA mentions
 Hall probes as a method of measuring magnetic fields but does not require the full theory. Edexcel
@@ -507,7 +509,8 @@ decreasing cyclotron frequency.
 just 11 cm and accelerated protons to 80 keV. Modern cyclotrons in hospitals produce radioactive
 isotopes for PET scans by accelerating protons to energies of 10--20 MeV.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
+:::info
+info
 
 AQA mentions the cyclotron briefly as an application of circular motion in magnetic fields. Edexcel
 does not typically require detailed knowledge. CIE P4 covers the cyclotron in moderate detail,
@@ -714,7 +717,8 @@ increase proportionally ($r = mv/(qB)$), keeping the period $T = 2\pi r/v = 2\pi
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Electromagnetism**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-electromagnetism-unification) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electromagnetism with other physics topics to test synthesis under exam conditions.
@@ -722,7 +726,8 @@ Ready to test your understanding of **Electromagnetism**? The [diagnostic test](
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Forgetting Lenz's law when determining induced current direction:** Lenz's law states that the induced e.m.f. opposes the CHANGE in flux, not the flux itself. If flux is increasing, the induced current creates a field opposing the increase. If flux is decreasing, the induced current tries to maintain it. Students often oppose the flux itself rather than the change.
 
@@ -732,4 +737,5 @@ See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for in
 
 - **Not recognising when flux linkage is changing:** An e.m.f. is only induced when there is a RATE OF CHANGE of flux or flux linkage. A coil in a constant magnetic field produces no e.m.f. even if the flux through it is large. The change can come from moving the coil, changing the field, changing the area, or rotating the coil.
 
+:::
 :::

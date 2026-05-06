@@ -110,7 +110,8 @@ have a constant phase relationship. This requires:
 - Same frequency (and hence wavelength)
 - Constant phase difference
 
-:::warning Common Pitfall Two waves from independent sources (e.g., two light bulbs) are generally
+:::warning
+warning
 not coherent because the phase difference fluctuates randomly. Interference requires coherent
 sources, typically produced by splitting a single wave.
 :::
@@ -168,7 +169,8 @@ visible.
 
 The first minimum of the single-slit pattern occurs at $\sin\theta = \lambda/a$.
 
-:::tip Exam Technique When asked to describe Young's experiment, always mention: coherent source
+:::tip
+tip
 (single slit before the double slit), narrow slits, monochromatic light, and the small-angle
 approximation. Quote the fringe spacing formula and explain each variable.
 :::
@@ -707,7 +709,8 @@ maxima become narrower and brighter.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Superposition and Interference**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-superposition-interference) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Superposition and Interference with other physics topics to test synthesis under exam conditions.

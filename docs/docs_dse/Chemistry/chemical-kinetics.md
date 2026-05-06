@@ -322,7 +322,8 @@ Where:
 - $n$ = order of reaction with respect to B
 - Overall order = $m + n$
 
-:::warning The orders $m$ and $n$ are determined experimentally. They are NOT necessarily equal to
+:::warning
+warning
 the stoichiometric coefficients $a$ and $b$.
 :::
 

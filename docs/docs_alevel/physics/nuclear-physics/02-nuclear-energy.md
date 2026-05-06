@@ -230,7 +230,8 @@ For $\prescript{238}{}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{}{92}\math
 - $E_b^{\mathrm{added}} \approx 4.9$ MeV while $E_f \approx 5.5$ MeV.
 - Since $E_b^{\mathrm{added}} \lt{} E_f$, thermal neutrons cannot induce fission.
 
-:::warning Common Pitfall Do not confuse "fissile" with "radioactive." U-238 is highly radioactive
+:::warning
+warning
 but is not fissile --- it cannot sustain a chain reaction with thermal neutrons. The only naturally
 occurring fissile isotope is U-235 (0.72\% of natural uranium).
 :::
@@ -318,7 +319,8 @@ The $\sim 200$ MeV released per U-235 fission is distributed as follows:
 | Anti-neutrinos                    | $\sim 12$      | Lost (escape reactor)      |
 | **Total recoverable**             | **$\sim 193$** |                            |
 
-:::warning Common Pitfall Approximately 12 MeV per fission ($\sim 6\%$) is carried away by
+:::warning
+warning
 anti-neutrinos, which interact so weakly that they escape the reactor entirely. When calculating
 thermal power output, use $\sim 200$ MeV total but $\sim 193$ MeV recoverable. The neutrino energy
 is unrecoverable.
@@ -351,7 +353,8 @@ abundant than uranium and produces less long-lived transuranic waste.
 | Intermediate (ILW) | Some shielding required       | Reactor components    | Engineered facilities    |
 | Low Level (LLW)    | Minimal radioactivity         | Contaminated clothing | Near-surface disposal    |
 
-:::tip Exam Technique When discussing nuclear waste, always connect half-life to disposal strategy.
+:::tip
+tip
 Short half-life isotopes can be stored and left to decay. Long half-life isotopes (thousands to
 millions of years) require geological disposal relying on multiple barriers: waste form
 (vitrification), container (steel/copper), buffer (bentonite clay), and host rock (granite/clay).
@@ -425,7 +428,8 @@ The **effective** multiplication factor $k_{\mathrm{eff}}$ accounts for neutron 
 absorption: $k_{\mathrm{eff}} = k_{\infty} \cdot P_{\mathrm{non-leak}}$, where $k_{\infty}$ is the
 infinite-medium factor and $P_{\mathrm{non-leak}}$ is the non-leakage probability.
 
-:::tip Exam Technique When asked about reactor control, state the precise condition: "The reactor is
+:::tip
+tip
 critical when $k_{\mathrm{eff}} = 1$. Control rods absorb neutrons to reduce $k_{\mathrm{eff}}$
 below 1 for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for steady power."
 :::
@@ -456,7 +460,8 @@ where $\bar{\lambda} \approx 0.08\,\mathrm{s}^{-1}$. For $k_{\mathrm{eff}} = 1.0
 $\tau_{\mathrm{eff}} \approx 0.0065 / (0.08 \times 0.001) \approx 81$ s --- easily manageable by
 mechanical control systems. $\square$
 
-:::warning Common Pitfall The reactor period is not the prompt neutron lifetime. The reactor
+:::warning
+warning
 responds on the timescale set by delayed neutrons ($\sim$tens of seconds), provided
 $k_{\mathrm{eff}} \lt 1 + \beta$. Only if $k_{\mathrm{eff}}$ exceeds $1 + \beta$ does the reactor
 become "prompt supercritical" and uncontrollable.
@@ -499,7 +504,8 @@ for compact gamma shielding. **Water** provides both shielding and moderation in
 | Thermal efficiency  | $\sim 33\%$                         | $\sim 41\%$                                 |
 | Steam cycle         | Secondary loop (no boiling in core) | Direct (CO$_2$ heats water in boiler)       |
 
-:::tip Exam Technique For reactor comparison questions, the key trade-off is: PWRs use water as both
+:::tip
+tip
 moderator and coolant (simpler but lower efficiency), while AGRs separate them (graphite moderator,
 CO$_2$ coolant), allowing higher temperature and thus higher efficiency from
 $\eta \lt{} 1 - T_c/T_h$.
@@ -654,7 +660,8 @@ the iron core exceeds the Chandrasekhar limit ($\sim 1.4\,M_\odot$), it collapse
 supernova, whose energy drives the creation of elements heavier than iron via the s-process and
 r-process.
 
-:::warning Common Pitfall The "iron peak" is often simplified to "iron is the most stable nucleus."
+:::warning
+warning
 Strictly, Ni-62 has the highest $E_b/A$ (8.7945 MeV/nucleon versus Fe-56's 8.7906 MeV/nucleon), but
 Fe-56 is produced in greater abundance because the alpha process favours nuclei with $N = Z$.
 :::
@@ -935,7 +942,8 @@ fusion, if achieved practically, promises such high energy output per unit fuel 
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Nuclear Energy**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-nuclear-energy) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Nuclear Energy with other physics topics to test synthesis under exam conditions.
@@ -943,7 +951,8 @@ Ready to test your understanding of **Nuclear Energy**? The [diagnostic test](/d
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Confusing nuclear fission with nuclear fusion:** Fission splits a HEAVY nucleus into lighter fragments (uranium-235 split by a neutron). Fusion joins LIGHT nuclei into a heavier one (hydrogen isotopes fusing into helium). Both release energy because the binding energy per nucleon curve peaks around iron-56. Fission and fusion move towards this peak from opposite sides.
 

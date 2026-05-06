@@ -374,7 +374,8 @@ $$y_{n+1} = y_n + \frac{h}{2}(k_1 + k_2)$$
 This is a **second order** method with global error proportional to $h^2$, offering significantly
 better accuracy than the basic Euler method for the same step size.
 
-:::warning Common Pitfall
+:::warning
+warning
 
 Euler's method can produce wildly inaccurate results for stiff equations or when the step size is too
 large. Always check whether the approximation is reasonable by comparing with qualitative behaviour
@@ -601,7 +602,8 @@ For the A-Level Further Maths treatment of this topic, see [Differential Equatio
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Differential Equations**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-differential-equations) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differential Equations with other IB mathematics topics to test synthesis under exam conditions.

@@ -181,7 +181,8 @@ twice the speed requires **four times** the braking distance. This quadratic dep
 consequence of energy conservation: kinetic energy scales as $v^2$, so removing that energy requires
 friction to act over a distance proportional to $v^2$.
 
-:::warning Common Pitfall Students sometimes write "energy is lost" when friction acts. Energy is
+:::warning
+warning
 never lost -- it is transferred from mechanical to thermal (internal) energy. The total energy of
 the closed system is always conserved. Only **mechanical** energy ($E_k + E_p$) decreases.
 :::

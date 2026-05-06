@@ -128,7 +128,8 @@ For a velocity-time graph:
 - Area under the graph = displacement
 - A straight line indicates uniform acceleration
 
-:::tip The area under a velocity-time graph gives displacement. For non-linear graphs, use counting
+:::tip
+tip
 squares or integration.
 :::
 
@@ -188,7 +189,8 @@ Time of flight:
 
 $$T = \frac{2u\sin\theta}{g}$$
 
-:::info In projectile motion, the horizontal and vertical motions are **independent** of each other.
+:::info
+info
 They share only the common variable $t$ (time).
 :::
 
@@ -266,7 +268,8 @@ force on body `A`.
 
 $$F_{AB} = -F_{BA}$$
 
-:::warning Newton's third law pairs act on **different** bodies. Never add action-reaction pairs
+:::warning
+warning
 together as they do not act on the same object.
 :::
 
@@ -349,7 +352,8 @@ $$f_k = \mu_k N$$
 
 Where $\mu$ is the coefficient of friction and $N$ is the normal reaction force.
 
-:::tip $\mu_k \lt \mu_s$ is always true. Kinetic friction is less than the maximum static friction.
+:::tip
+tip
 :::
 
 ### Worked Example 6
@@ -438,7 +442,8 @@ Or equivalently:
 
 $$E_{k1} + E_{p1} = E_{k2} + E_{p2} + W_{\mathrm{lost to friction}}$$
 
-:::info When applying conservation of energy, always identify all forms of energy at each point in
+:::info
+info
 the motion.
 :::
 
@@ -684,7 +689,8 @@ The centripetal force required is:
 
 $$F_c = \frac{mv^2}{r} = m\omega^2 r$$
 
-:::warning Centripetal force is **not** a new force. It is the name given to the resultant force
+:::warning
+warning
 directed towards the centre of the circle. It is provided by gravity, tension, friction, normal
 reaction, or a combination of these.
 :::

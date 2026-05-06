@@ -208,7 +208,11 @@ class MDXValidator:
         if stripped.startswith("```"):
             return
 
-        if re.search(r"<p\b[^>]*>", stripped):
+        for m in re.finditer(r"<p\b[^>]*>", stripped):
+            start = m.start()
+            in_inline_code = stripped[:start].count("`") % 2 != 0
+            if in_inline_code:
+                continue
             self.errors.append(
                 f"{filename}:{lineno}: raw HTML <p> tag found (MDX doesn't support these)"
             )

@@ -68,7 +68,8 @@ The $n \times n$ identity matrix $\mathbf{I}_n$ satisfies
 $\mathbf{A}\mathbf{I}_n = \mathbf{I}_n\mathbf{A} = \mathbf{A}$ for any
 $\mathbf{A} \in M_{m \times n}(\mathbb{R})$.
 
-:::warning Matrix multiplication is not commutative. Always check the order: $\mathbf{AB}$ means
+:::warning
+warning
 "apply $\mathbf{B}$ first, then $\mathbf{A}$." When composing transformations, the rightmost matrix
 is applied first.
 :::
@@ -366,7 +367,8 @@ Each has $\det = -1$, confirming orientation reversal.
 
 ## 7. Eigenvalues and Eigenvectors
 
-:::info Eigenvalues and eigenvectors are on the AQA syllabus only. Edexcel, OCR, and CIE do not
+:::info
+info
 require this topic at A Level.
 :::
 

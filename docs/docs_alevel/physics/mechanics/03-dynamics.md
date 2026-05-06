@@ -58,7 +58,8 @@ $1 \mathrm{ N} = 1 \mathrm{ kg m s}^{-2}$.
 
 $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
-:::warning Common Pitfall The two forces in a Newton's third law pair act on **different bodies**.
+:::warning
+warning
 They do **not** cancel. The normal reaction from a table on a book and the book's weight are **not**
 a third law pair (both act on the book). The third law pair of the book's weight is the
 gravitational pull of the book on the Earth.
@@ -408,7 +409,8 @@ $$mg - kv^2 = ma$$
 
 At terminal velocity: $v_T = \sqrt{\frac{mg}{k}}$.
 
-:::info Board Note CIE and Edexcel may expect you to know both drag models qualitatively. AQA
+:::info
+info
 focuses on the qualitative description of terminal velocity.
 :::
 
@@ -765,7 +767,8 @@ m s$^{-1}$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Dynamics**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-dynamics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics with other physics topics to test synthesis under exam conditions.
@@ -773,7 +776,8 @@ Ready to test your understanding of **Dynamics**? The [diagnostic test](/docs/al
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Confusing mass and weight:** Mass (kg) is a scalar that measures the amount of matter and is constant everywhere. Weight (N) is a VECTOR force equal to mg and varies with gravitational field strength. On the Moon, mass is the same but weight is about 1/6 of Earth weight. Never use "kg" as a unit of force or "N" as a unit of mass.
 

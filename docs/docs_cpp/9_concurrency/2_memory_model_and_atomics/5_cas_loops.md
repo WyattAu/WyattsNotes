@@ -54,7 +54,8 @@ bool compare_exchange_strong(T& expected, T desired,
 On failure, `expected` is updated to the current value of the atomic variable, allowing the caller
 to recompute `desired` and retry.
 
-:::tip Use `compare_exchange_weak` inside CAS loops because spurious failures are harmless (the loop
+:::tip
+tip
 retries). Use `compare_exchange_strong` when you need to know whether the CAS actually failed due to
 a value mismatch (e.g., when you want to take a different action on real failure vs spurious
 failure).

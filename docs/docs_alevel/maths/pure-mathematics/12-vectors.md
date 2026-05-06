@@ -207,7 +207,8 @@ $$x = a_1 + tb_1, \quad y = a_2 + tb_2, \quad z = a_3 + tb_3$$
 
 In 2D, eliminating $t$: $\dfrac{x - a_1}{b_1} = \dfrac{y - a_2}{b_2}$.
 
-:::warning A vector equation of a line is not unique. Different points on the line can be used as
+:::warning
+warning
 $\mathbf{a}$, and the direction vector $\mathbf{b}$ can be any non-zero scalar multiple of the
 direction. Always check your answer gives a point and direction consistent with the question.
 :::
@@ -224,7 +225,8 @@ The parametric form is:
 
 $$x = x_0 + td_1, \quad y = y_0 + td_2, \quad z = z_0 + td_3$$
 
-:::tip To convert from two points $A$ and $B$ to the vector equation, use $A$ as the position vector
+:::tip
+tip
 and $\overrightarrow{AB}$ as the direction vector. Alternatively, use $B$ and $\overrightarrow{BA}$
 --- both give the same line.
 :::
@@ -841,7 +843,8 @@ The adjacent sides are not perpendicular, so $ABCD$ is **not** a rectangle.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Vectors**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-vectors) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Vectors with other pure mathematics topics to test synthesis under exam conditions.

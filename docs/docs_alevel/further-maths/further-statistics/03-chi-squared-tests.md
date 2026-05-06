@@ -104,7 +104,8 @@ $$\chi^2_{\mathrm{Yates}} = \sum\frac{(|O_i - E_i| - 0.5)^2}{E_i}$$
 
 This correction makes the test more conservative (less likely to reject $H_0$).
 
-:::warning Yates' correction should only be applied to $2 \times 2$ tables. For larger tables, merge
+:::warning
+warning
 categories if expected frequencies are too small.
 :::
 

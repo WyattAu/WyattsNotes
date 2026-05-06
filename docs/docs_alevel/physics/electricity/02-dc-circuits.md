@@ -291,7 +291,8 @@ for balance.
 
 </details>
 
-:::warning Common Pitfall The Wheatstone bridge balance condition only holds when the galvanometer
+:::warning
+warning
 current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's laws (or Thevenin
 analysis) to find the galvanometer current.
 :::
@@ -438,7 +439,8 @@ Note the very small shunt resistance — most current bypasses the galvanometer.
 
 </details>
 
-:::warning Common Pitfall A voltmeter with insufficiently high resistance can significantly alter
+:::warning
+warning
 the circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule of thumb:
 $R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error).
 :::
@@ -752,7 +754,8 @@ $S = R \times 60/40 = 10 \times 1.5 = 15\,\Omega$.
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **DC Circuits**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-dc-circuits) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine DC Circuits with other physics topics to test synthesis under exam conditions.
@@ -760,7 +763,8 @@ Ready to test your understanding of **DC Circuits**? The [diagnostic test](/docs
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
-:::danger Common Pitfalls
+:::danger
+danger
 
 - **Applying Kirchhoff's second law incorrectly to parallel circuits:** The sum of p.d.s around ANY closed loop equals the sum of e.m.f.s. In a parallel circuit, each branch is a separate loop. The p.d. across each parallel branch equals the e.m.f. of the supply, not a fraction of it.
 

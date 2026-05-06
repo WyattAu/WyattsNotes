@@ -81,7 +81,8 @@ screened by conductors (Faraday cages), whereas gravitational fields cannot. Thi
 are two types of electric charge that can rearrange themselves to cancel external fields, but there
 is only one type of mass.
 
-:::info Board Coverage AQA: Comparison table is an expected synoptic link with gravitational fields
+:::info
+info
 (Paper 2). Edexcel: Explicit comparison required in CP3. OCR (A): Potential energy comparison is
 commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in P4.
 :::
@@ -229,7 +230,8 @@ as the area under the force--distance curve ($W = \int F\,dr$), the energy in a 
 area under the voltage--charge curve. Both represent stored field energy, and both can be recovered
 as useful work when the system returns to its equilibrium state.
 
-:::info Board Coverage AQA: Energy stored in capacitors is required (6.4.3). Edexcel: Required in
+:::info
+info
 Topic 11 (capacitor energy and charging/discharging graphs). OCR (A): Required in 6.3.2, including
 deriving energy from the area under a $V$--$Q$ graph. CIE: Required in P3 (Chapter 22), including
 the three equivalent forms.

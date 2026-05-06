@@ -279,7 +279,8 @@ for 4 bits. Overflow detected: positive + positive yielded negative. ✓
 
 </details>
 
-:::info Board-specific
+:::info
+info
 
 - **AQA:** Requires two's complement for 8-bit and 16-bit numbers.
 - **CIE:** Requires two's complement for 8-bit numbers specifically.

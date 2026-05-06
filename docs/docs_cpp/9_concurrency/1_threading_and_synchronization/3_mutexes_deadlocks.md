@@ -155,7 +155,8 @@ public:
 };
 ```
 
-:::tip Prefer `std::mutex` over `std::recursive_mutex` when possible. `std::recursive_mutex` often
+:::tip
+tip
 indicates a design issue where lock ownership boundaries are unclear. Use it only when interfacing
 with recursive code structures that you cannot refactor.
 :::

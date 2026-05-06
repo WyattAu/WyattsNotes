@@ -142,7 +142,8 @@ In all particle interactions, the following quantities are **always conserved**:
 | Baryon number ($B$) | Yes |
 | Strangeness ($S$) | Strong and EM only (not weak) |
 
-:::warning Common Pitfall Strangeness is conserved by the strong and electromagnetic interactions but
+:::warning
+warning
 **not** by the weak interaction. Strange particles are always produced in pairs (associated production)
 via the strong interaction (conserving $S$) but decay individually via the weak interaction.
 :::

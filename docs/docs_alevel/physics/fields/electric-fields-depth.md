@@ -153,7 +153,8 @@ A practical method uses conducting paper with electrodes painted on:
 3. Plot the equipotential lines by joining points of equal voltage.
 4. Draw field lines perpendicular to the equipotentials.
 
-:::warning Common Pitfall Equipotential lines and field lines are perpendicular, but this does NOT mean
+:::warning
+warning
 the field is zero on an equipotential. The field is non-zero and perpendicular; only the component
 tangent to the surface is zero.
 :::

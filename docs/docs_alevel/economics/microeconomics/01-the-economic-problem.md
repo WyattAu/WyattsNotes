@@ -49,7 +49,8 @@ $$\mathrm{Opportunity cost of } A = \max_{B \neq A} \{U(B)\}$$
 where $U(B)$ is the utility (or value) of alternative $B$. This is not the sum of all alternatives —
 only the single best one that was rejected.
 
-:::warning Common Pitfall Students often state that opportunity cost is "everything you give up."
+:::warning
+warning
 This is incorrect. It is the value of the _next-best_ alternative only. If you spend £10 on a book
 when your next-best option is a film ticket costing £10, the opportunity cost is the film ticket —
 not the book, not the £10 itself, and not the film ticket _plus_ a coffee.
@@ -118,7 +119,8 @@ consumer's optimal bundle — depends on the shape of the utility function and t
 minimum acceptable threshold, rather than optimising. This accounts for bounded rationality —
 limited cognitive capacity and information.
 
-:::info Board-Specific Note AQA (4.1.1.1) and Edexcel (Theme 1, 1.1.1) both require understanding of
+:::info
+info
 rational decision making as the basis of economic behaviour. OCR (H460, Micro 1.1) places particular
 emphasis on _behavioural_ challenges to rationality — be prepared to discuss how bounded
 rationality, heuristics, and framing effects undermine the assumption of rational utility
@@ -163,7 +165,8 @@ A **linear PPF** (straight line) arises when resources are perfectly adaptable �
 cost of $X$ in terms of $Y$ is constant. A **convex PPF** would imply decreasing opportunity cost —
 rare but possible if there are economies of scale.
 
-:::info Board-Specific Note AQA frequently asks students to explain _why_ the PPF is bowed outward
+:::info
+info
 (concave) and to calculate opportunity cost from a numerical table or diagram. Edexcel (Theme 1)
 often presents PPF data in table form and asks students to plot and interpret. CIE (9708) may ask
 for a formal derivation or for students to identify the shape from a production function. OCR tends

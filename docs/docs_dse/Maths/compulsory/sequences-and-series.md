@@ -980,7 +980,8 @@ For the A-Level treatment of this topic, see [Sequences and Series](https://alev
 
 ---
 
-:::tip Diagnostic Test
+:::tip
+tip
 Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-sequences-series) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other DSE mathematics topics to test synthesis under exam conditions.

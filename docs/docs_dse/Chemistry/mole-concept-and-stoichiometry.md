@@ -37,7 +37,8 @@ For ionic compounds, the term **relative formula mass** is used, calculated the 
 
 $$M_r(\mathrm{NaCl}) = 23.0 + 35.5 = 58.5$$
 
-:::info DSE exams frequently ask you to calculate $M_r$ as a first step in larger stoichiometry
+:::info
+info
 problems. Memorise the common values: H = 1.0, C = 12.0, N = 14.0, O = 16.0, Na = 23.0, Mg = 24.3,
 Al = 27.0, S = 32.1, Cl = 35.5, K = 39.1, Ca = 40.1, Fe = 55.8, Cu = 63.5, Zn = 65.4.
 :::

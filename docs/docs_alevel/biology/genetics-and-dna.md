@@ -858,6 +858,513 @@ Probability of an affected child ($ff$) $= \frac{1}{4} = 25\%$.
 
 ---
 
+## 11. DNA Replication in Detail
+
+### 11.1 The Replication Fork
+
+DNA replication is **semi-conservative** (each new DNA molecule contains one original strand and one new strand), **bidirectional** (replication proceeds in both directions from each origin of replication), and **semi-discontinuous** (the leading strand is synthesised continuously, but the lagging strand is synthesised discontinuously as Okazaki fragments).
+
+At each replication fork:
+
+**Leading strand:**
+- Synthesised continuously in the 5' to 3' direction (same direction as fork movement).
+- DNA polymerase III extends the leading strand continuously.
+- Only one RNA primer is needed.
+
+**Lagging strand:**
+- Synthesised discontinuously in the 5' to 3' direction (opposite to fork movement).
+- Multiple RNA primers are laid down by **primase** at intervals of approximately 1000--2000 nucleotides (in prokaryotes) or 100--200 nucleotides (in eukaryotes).
+- DNA polymerase III extends each primer, creating **Okazaki fragments**.
+- DNA polymerase I removes the RNA primers and replaces them with DNA.
+- **DNA ligase** joins the Okazaki fragments by catalysing phosphodiester bond formation between adjacent fragments.
+
+### 11.2 Enzymes of DNA Replication
+
+| Enzyme | Function |
+| ------ | -------- |
+| Helicase | Unwinds the double helix by breaking hydrogen bonds between bases |
+| DNA gyrase (topoisomerase II) | Relieves supercoiling ahead of the replication fork by cutting, rotating, and resealing DNA |
+| Single-strand binding proteins (SSBs) | Stabilise the separated single strands, preventing them from re-annealing or being degraded by nucleases |
+| Primase | Synthesises short RNA primers (approximately 10 nucleotides) complementary to the template strand |
+| DNA polymerase III | Main replication enzyme; adds nucleotides to the 3' end of the growing strand (5' to 3' synthesis); has 3' to 5' exonuclease (proofreading) activity |
+| DNA polymerase I | Removes RNA primers (5' to 3' exonuclease) and replaces them with DNA |
+| DNA ligase | Joins adjacent DNA fragments by forming phosphodiester bonds |
+
+### 11.3 Calculating the Number of Strands After Multiple Replications Cycles
+
+**Meselson-Stahl experiment principle:** if DNA is replicated in medium containing only $\mathrm{^{14}N}$ (light nitrogen) after being grown in $\mathrm{^{15}N}$ (heavy nitrogen):
+
+| Generation | Strand Composition | Density |
+| ---------- | ----------------- | ------- |
+| 0 (parent) | All $\mathrm{^{15}N\text{-}^{15}N}$ | Heavy |
+| 1 | All $\mathrm{^{15}N\text{-}^{14}N}$ (hybrid) | Intermediate |
+| 2 | 50% hybrid, 50% $\mathrm{^{14}N\text{-}^{14}N}$ | Two bands |
+| 3 | 25% hybrid, 75% $\mathrm{^{14}N\text{-}^{14}N}$ | Two bands |
+| n | $\frac{1}{2^{n-1}}$ hybrid, $1 - \frac{1}{2^{n-1}}$ light | Two bands |
+
+After $n$ generations, the proportion of hybrid (intermediate density) DNA is $\frac{1}{2^{n-1}}$.
+
+## 12. Protein Synthesis in Detail
+
+### 12.1 Transcription: Initiation, Elongation, Termination
+
+**Initiation (in eukaryotes):**
+1. Transcription factors bind to the **promoter region** (e.g., TATA box, CAAT box) upstream of the gene.
+2. RNA polymerase II binds to the transcription factor complex, forming the **transcription initiation complex**.
+3. The DNA double helix is unwound (approximately 17 base pairs), forming the **transcription bubble**.
+
+**Elongation:**
+1. RNA polymerase moves along the template strand in the 3' to 5' direction, synthesising mRNA in the 5' to 3' direction.
+2. Free RNA nucleotides are added by complementary base pairing (A--U, T--A, G--C, C--G).
+3. Behind the RNA polymerase, the DNA re-forms the double helix and the mRNA is released.
+
+**Termination:**
+1. In eukaryotes, RNA polymerase continues past a **polyadenylation signal** (AAUAAA) in the pre-mRNA.
+2. The pre-mRNA is cleaved approximately 10--35 nucleotides downstream of this signal.
+3. **Poly-A polymerase** adds approximately 200 adenine nucleotides to the 3' end (the poly-A tail), which protects the mRNA from degradation and aids in export from the nucleus.
+
+### 12.2 Post-Transcriptional Modification
+
+In eukaryotes, the primary transcript (pre-mRNA) undergoes three modifications:
+
+1. **5' capping**: a modified guanine nucleotide (7-methylguanosine) is added to the 5' end. The cap protects the mRNA from degradation and is recognised by ribosomes during translation initiation.
+2. **Splicing**: **introns** (non-coding regions) are removed and **exons** (coding regions) are joined together by the **spliceosome** (a complex of snRNPs -- small nuclear ribonucleoproteins). Alternative splicing allows a single gene to produce multiple different proteins (e.g., the _DSCAM_ gene in _Drosophila_ can produce 38,000 different protein variants from a single gene through alternative splicing).
+3. **3' polyadenylation**: described above.
+
+### 12.3 Translation: Detailed Mechanism
+
+**Initiation:**
+1. The small ribosomal subunit (40S in eukaryotes, 30S in prokaryotes) binds to the 5' cap of the mRNA and scans along the mRNA until it reaches the **start codon** (AUG).
+2. The initiator tRNA (carrying methionine, Met) binds to the start codon via its anticodon (UAC).
+3. The large ribosomal subunit (60S in eukaryotes, 50S in prokaryotes) joins, forming the complete ribosome.
+4. The initiator tRNA is in the **P site** (peptidyl site). The **A site** (aminoacyl site) is empty.
+
+**Elongation:**
+1. An aminoacyl-tRNA carrying the next amino acid enters the A site, where its anticodon base-pairs with the mRNA codon.
+2. A **peptide bond** forms between the amino acid in the P site and the amino acid in the A site. This reaction is catalysed by **peptidyl transferase** (an rRNA ribozyme in the large subunit).
+3. The ribosome **translocates** (moves 3 nucleotides along the mRNA): the now-empty tRNA in the P site moves to the **E site** (exit site) and is released; the tRNA carrying the growing polypeptide moves from the A site to the P site; a new codon enters the A site.
+
+**Termination:**
+1. When a **stop codon** (UAA, UAG, or UGA) enters the A site, no tRNA can bind.
+2. **Release factor proteins** bind to the stop codon.
+3. The polypeptide is released from the tRNA in the P site.
+4. The ribosomal subunits dissociate, and the mRNA is released.
+
+### 12.4 Calculating: Number of Nucleotides, Codons, and Amino Acids
+
+| Relationship | Calculation |
+| ------------ | ----------- |
+| Amino acids in protein = | $\frac{\text{mRNA nucleotides}}{3}$ (subtract 3 for stop codon) |
+| mRNA nucleotides = | Number of amino acids $\times 3$ (plus 3 for stop codon) |
+| DNA template strand nucleotides = | Same as mRNA nucleotides (plus introns in eukaryotes) |
+| tRNA molecules required = | Number of amino acids (one per amino acid) |
+| ATP required for translation = | $2 \times$ number of amino acids (1 for tRNA charging, 1 for translocation per elongation step) |
+
+## 13. Epigenetics in Depth
+
+### 13.1 DNA Methylation
+
+DNA methylation involves the addition of a methyl group ($\mathrm{-CH_3}$) to the 5-carbon of cytosine bases, forming **5-methylcytosine** ($5\mathrm{mC}$). This is catalysed by **DNA methyltransferases** and occurs primarily at **CpG dinucleotides** (cytosine followed by guanine).
+
+- **Hypermethylation** of gene promoter regions generally **silences** gene expression by preventing transcription factors from binding.
+- **Hypomethylation** generally **activates** gene expression.
+
+DNA methylation patterns are heritable during cell division: after DNA replication, the maintenance methyltransferase (DNMT1) methylates the new strand to match the old (template) strand.
+
+### 13.2 Histone Modification
+
+Histones are proteins around which DNA is wrapped to form nucleosomes. Histone tails (the N-terminal ends) can be chemically modified:
+
+| Modification | Effect on Transcription | Enzyme |
+| ------------ | ---------------------- | ------ |
+| Acetylation (of lysine) | Activates (loosens DNA-histone interaction) | Histone acetyltransferase (HAT) |
+| Deacetylation | Represses (tightens DNA-histone interaction) | Histone deacetylase (HDAC) |
+| Methylation | Can activate or repress, depending on which residue | Histone methyltransferase |
+| Phosphorylation | Usually activates | Kinases |
+
+Acetylation adds an acetyl group ($\mathrm{-COCH_3}$) to lysine residues, neutralising the positive charge. This reduces the electrostatic attraction between the positively charged histone tails and the negatively charged DNA backbone, loosening the chromatin structure and allowing transcription factors and RNA polymerase to access the DNA.
+
+### 13.3 Epigenetics and Disease
+
+| Condition | Epigenetic Change |
+| --------- | ----------------- |
+| Cancer | Global hypomethylation (causing genomic instability) combined with hypermethylation of tumour suppressor gene promoters (silencing them) |
+| Angelman syndrome | Maternal allele of _UBE3A_ is deleted or silenced; paternal allele is normally silenced by imprinting |
+| Prader-Willi syndrome | Paternal allele of _SNURF-SNRPN_ is deleted or silenced; maternal allele is normally silenced by imprinting |
+| Agouti mouse model | Maternal diet (methyl donors: folate, B12) affects offspring coat colour and disease susceptibility via epigenetic changes at the _A^vy_ locus |
+
+## 14. Mutations: Advanced Analysis
+
+### 14.1 Types of Point Mutations
+
+| Mutation Type | Effect on Protein | Example |
+| ------------- | ---------------- | ------- |
+| Silent (same-sense) | No change in amino acid (degeneracy of the genetic code) | GAA $\to$ GAG (both code for Glu) |
+| Missense | One amino acid is changed | GAA $\to$ GUA (Glu $\to$ Val) -- sickle cell mutation in the $\beta$-globin gene |
+| Nonsense | Codon becomes a stop codon; protein is truncated | UAU $\to$ UAA (Tyr $\to$ stop) |
+| Frameshift | Insertion or deletion of nucleotides (not a multiple of 3) shifts the reading frame, changing all downstream amino acids | Deletion of one nucleotide in the _CFTR_ gene causes cystic fibrosis |
+
+### 14.2 Mutagenic Agents
+
+| Agent | Type | Mechanism |
+| ----- | ---- | --------- |
+| UV radiation | Physical | Causes thymine dimers (covalent bonds between adjacent thymine bases), distorting the DNA helix and blocking replication |
+| X-rays, gamma rays | Physical | Ionising radiation causes DNA strand breaks and base damage |
+| Benzopyrene (in tobacco smoke) | Chemical | Forms bulky DNA adducts that distort the helix |
+| Nitrous acid | Chemical | Deaminates cytosine to uracil (causing C $\to$ T transition after replication) |
+| Ethidium bromide | Chemical | Intercalates between base pairs, causing insertions or deletions during replication |
+
+### 14.3 Mutation Rates
+
+The spontaneous mutation rate in humans is approximately $1.2 \times 10^{-8}$ mutations per base pair per generation. Given a haploid genome of approximately $3.2 \times 10^9$ base pairs, each human acquires approximately 40--70 new mutations per generation.
+
+Most mutations are **neutral** (have no effect on fitness) because:
+- They occur in non-coding DNA (introns, intergenic regions).
+- They are silent mutations (due to the degeneracy of the genetic code).
+- The amino acid change does not significantly affect protein function.
+
+A small fraction of mutations are **deleterious** (reduce fitness) and are removed by natural selection. An even smaller fraction are **advantageous** (increase fitness) and may be favoured by natural selection.
+
+## 15. Gene Therapy and Genetic Screening
+
+### 15.1 Genetic Screening Programmes
+
+Genetic screening tests populations or individuals for specific genetic conditions:
+
+| Programme | Test | Purpose |
+| --------- | ---- | ------- |
+| Newborn blood spot test (heel prick) | Screening for sickle cell disease, cystic fibrosis, PKU, hypothyroidism | Early detection allows immediate treatment, preventing disability or death |
+| Antenatal screening | NIPT (non-invasive prenatal testing): cell-free fetal DNA in maternal blood; nuchal translucency ultrasound | Detect chromosomal abnormalities (Down syndrome, Edwards syndrome, Patau syndrome) |
+| Carrier screening | Testing for cystic fibrosis, sickle cell trait, Tay-Sachs carrier status | Inform reproductive decisions; identify couples at risk of having affected children |
+| BRCA testing | Testing for mutations in BRCA1 and BRCA2 genes | Identify increased risk of breast and ovarian cancer; guide surveillance and prophylactic measures |
+
+### 15.2 Ethical Issues in Genetic Screening
+
+| Issue | Arguments For | Arguments Against |
+| ----- | ------------- | ----------------- |
+| Newborn screening | Early treatment saves lives; cost-effective | Parental anxiety; false positives; privacy concerns |
+| Prenatal screening | Allows informed decision-making; reduces burden of disease | May lead to termination for non-lethal conditions; disability rights concerns |
+| Carrier screening | Allows informed reproductive choices | Potential discrimination; stigmatisation; psychological impact |
+| Predictive testing (adult-onset) | Allows surveillance and early intervention | No cure for many conditions; psychological burden; insurance discrimination |
+
+### 15.3 PCR in Genetic Diagnosis
+
+PCR is used to diagnose genetic diseases by amplifying the DNA region containing the mutation and analysing the product:
+
+- **Gel electrophoresis**: detecting insertions/deletions that change PCR product size.
+- **Allele-specific PCR**: primers that only amplify the mutant or wild-type allele.
+- **Restriction digest**: if the mutation creates or destroys a restriction site, different fragment sizes result.
+- **DNA sequencing**: directly reading the sequence to identify the mutation.
+
+### 15.4 Genetic Fingerprinting: Paternity Testing
+
+The child inherits one allele at each locus from each parent.
+
+**Worked Example.** At an STR locus: Mother = 12, 15; Child = 12, 18; Alleged Father 1 = 14, 18; Alleged Father 2 = 10, 15.
+
+The child inherited allele 12 from the mother. The child inherited allele 18 from the biological father. Father 1 has allele 18 and could be the father. Father 2 does not have allele 18 and cannot be the father.
+
+With multiple loci tested, the probability of paternity can exceed 99.9%.
+
+## 16. The Genetic Code: Properties
+
+### 16.1 Key Features
+
+| Property | Description |
+| -------- | ----------- |
+| Triplet | Each codon consists of 3 nucleotides, coding for one amino acid |
+| Degenerate (redundant) | 64 codons but only 20 amino acids; most amino acids are coded for by more than one codon |
+| Non-overlapping | Each nucleotide is part of only one codon |
+| Universal | The same genetic code is used by almost all organisms (with minor exceptions in mitochondria and some protozoa) |
+| Unambiguous | Each codon specifies only one amino acid (no codon codes for two different amino acids) |
+| Start and stop signals | AUG = start codon (also codes for methionine); UAA, UAG, UGA = stop codons |
+
+### 16.2 Consequences of Degeneracy
+
+The degeneracy of the genetic code means that some mutations (silent/same-sense mutations) do not change the amino acid sequence of the protein:
+
+- Leucine is coded by 6 codons: UUA, UUG, CUU, CUC, CUA, CUG.
+- A mutation from CUU to CUC still produces leucine (silent mutation).
+- A mutation from CUU to CCU changes leucine to proline (missense mutation).
+
+Degeneracy is not random: the first two bases of a codon are usually more important than the third. Mutations at the third position (wobble position) are more likely to be silent.
+
+### 16.3 Calculating the Number of Possible Codons
+
+With 4 bases (A, U, C, G) in groups of 3: $4^3 = 64$ possible codons.
+
+61 codons code for amino acids, 3 are stop codons (UAA, UAG, UGA), and 1 is the start codon (AUG, which also codes for methionine).
+
+---
+
+## 17. Genetic Technology: CRISPR Applications
+
+### 17.1 CRISPR-Cas9 in Medicine
+
+CRISPR-Cas9 has revolutionised genetic research and holds great promise for treating genetic diseases:
+
+| Application | Status | Details |
+| ----------- | ------ | ------- |
+| Sickle cell disease | Clinical trials | Editing the _BCL11A_ gene in haematopoietic stem cells to reactivate fetal haemoglobin (HbF) production |
+| Beta-thalassaemia | Clinical trials | Similar approach to sickle cell disease |
+| Duchenne muscular dystrophy | Preclinical | Editing the dystrophin gene in muscle stem cells |
+| Cancer immunotherapy | Clinical trials | Knocking out PD-1 receptor in T cells (CAR-T cells) |
+| HIV | Preclinical | Disrupting the CCR5 co-receptor gene in T cells (making them resistant to HIV entry) |
+| Hereditary blindness | Clinical trials | Editing retinal cells to restore vision |
+
+### 17.2 Ethical Considerations
+
+| Issue | For | Against |
+| ----- | --- | ------ |
+| Germline editing | Could eliminate genetic diseases from future generations | Changes are heritable; unknown long-term effects; "designer babies" concern |
+| Somatic editing | Treats existing patients; not heritable | Expensive; off-target effects; access inequality |
+| Enhancement | Could improve human capabilities | Ethical concerns about fairness, consent, social pressure |
+| Gene drives | Could eliminate disease vectors (mosquitoes) | Unpredictable ecological consequences; irreversible |
+
+---
+
+## 18. Advanced DNA Technology: Next-Generation Sequencing
+
+### 18.1 Sanger vs Next-Generation Sequencing (NGS)
+
+| Feature | Sanger Sequencing | NGS (e.g., Illumina) |
+| ------- | ---------------- | -------------------- |
+| Throughput | One fragment at a time (up to $\approx 1000\ \mathrm{bp}$) | Millions of fragments simultaneously |
+| Cost per genome | $\approx \$3000$ (human) | $\approx \$100$--$600$ (human) |
+| Speed | Days to weeks for a genome | Hours to days |
+| Read length | Up to $\approx 1000\ \mathrm{bp}$ | Short ($100$--$300\ \mathrm{bp}$ for Illumina) |
+| Accuracy | Very high ($99.99\%$) | High but with more errors per read (compensated by depth of coverage) |
+| Applications | Single genes, small regions | Whole genomes, transcriptomes, epigenomes |
+
+### 18.2 Applications of NGS
+
+- **Whole genome sequencing**: identifying mutations in patients with rare genetic diseases.
+- **Whole exome sequencing**: sequencing only the protein-coding regions ($\approx 1.5\%$ of the genome), which is cheaper and more focused than whole genome sequencing.
+- **RNA-seq**: sequencing the entire transcriptome to quantify gene expression levels and identify alternative splicing.
+- **Metagenomics**: sequencing all DNA in an environmental sample (e.g., gut microbiome, soil, ocean water) to identify all the organisms present without culturing them.
+
+## 19. Epigenetics: Mechanisms and Inheritance
+
+### 19.1 DNA Methylation
+
+DNA methylation involves the addition of a methyl group ($\mathrm{-CH_3}$) to cytosine bases, specifically at CpG sites (cytosine followed by guanine). Methylation is catalysed by DNA methyltransferases (DNMTs).
+
+- **Hypermethylation** of promoter regions generally **silences** gene expression by preventing transcription factor binding or recruiting proteins that compact chromatin.
+- **Hypomethylation** of promoter regions generally **activates** gene expression.
+
+**Pattern maintenance:** after DNA replication, the maintenance methyltransferase DNMT1 copies the methylation pattern from the parental strand to the daughter strand. This is how methylation patterns are inherited through cell division (mitosis).
+
+### 19.2 Histone Modification
+
+Histones are proteins around which DNA is wrapped to form nucleosomes. Histone tails can be chemically modified:
+
+| Modification | Enzyme | Effect on Gene Expression |
+| ------------ | ------ | ------------------------ |
+| Acetylation (addition of acetyl group to lysine) | Histone acetyltransferases (HATs) | **Activates** expression: neutralises positive charge on histone, reducing affinity for negatively charged DNA, loosening chromatin |
+| Deacetylation (removal of acetyl group) | Histone deacetylases (HDACs) | **Silences** expression: increases affinity between histones and DNA, compacting chromatin |
+| Methylation (addition of methyl group to lysine or arginine) | Histone methyltransferases (HMTs) | Can activate or silence depending on which residue is modified (e.g., H3K4me3 activates; H3K9me3 and H3K27me3 silence) |
+
+### 19.3 Epigenetics and Disease
+
+| Disease | Epigenetic Mechanism |
+| ------- | ------------------- |
+| Cancer | Global hypomethylation (genomic instability) combined with hypermethylation of tumour suppressor gene promoters (silencing tumour suppressors) |
+| Prader-Willi syndrome | Deletion or silencing of paternal genes on chromosome 15 (imprinting disorder) |
+| Angelman syndrome | Deletion or silencing of maternal genes on chromosome 15 (same region as Prader-Willi, but opposite parent) |
+| Beckwith-Wiedemann syndrome | Loss of imprinting at 11p15 (overgrowth disorder) |
+
+### 19.4 Epigenetic Inheritance
+
+Most epigenetic marks are erased during gametogenesis and after fertilisation, but some escape this reprogramming:
+
+- **Genomic imprinting**: certain genes are expressed in a parent-of-origin-specific manner (e.g., IGF2 is expressed only from the paternal allele; H19 is expressed only from the maternal allele). Imprinting is established during gametogenesis and maintained after fertilisation.
+- **Transgenerational epigenetic inheritance**: in some cases, environmental exposures (e.g., diet, stress, toxins) can cause epigenetic changes that are transmitted across multiple generations. Evidence from animal studies (e.g., Agouti mouse model, where maternal diet affects offspring coat colour and disease risk via methylation of the Agouti gene).
+
+:::warning
+Common Pitfall Students often confuse epigenetic changes with genetic mutations. Epigenetic changes alter gene expression without changing the DNA sequence. They are potentially reversible (unlike mutations). However, epigenetic changes can be inherited through cell division (mitosis) and, in rare cases, across generations (transgenerational epigenetic inheritance). Genetic mutations are permanent changes to the DNA sequence itself.
+:::
+
+## 20. Genetic Disorders: Detailed Analysis
+
+### 20.1 Cystic Fibrosis (CF)
+
+- **Gene:** CFTR (cystic fibrosis transmembrane conductance regulator) on chromosome 7.
+- **Mutation:** most common is $\Delta$F508 (deletion of phenylalanine at position 508), a three-nucleotide deletion.
+- **Inheritance:** autosomal recessive. Carriers are heterozygous and unaffected (approximately 1 in 25 people of Northern European descent).
+- **Protein function:** CFTR is a chloride channel in epithelial cell membranes. The mutation causes misfolded CFTR protein, which is degraded before reaching the membrane.
+- **Symptoms:** thick, sticky mucus in the lungs (recurrent infections); pancreatic insufficiency (blocked ducts prevent enzyme delivery to the intestine); male infertility (absence of vas deferens); salty sweat (elevated $\mathrm{Cl^-}$ in sweat -- diagnostic test).
+- **Treatment:** physiotherapy (chest percussion to clear mucus); antibiotics for lung infections; pancreatic enzyme supplements; CFTR modulators (e.g., ivacaftor, lumacaftor) that improve CFTR protein function; gene therapy trials.
+
+### 20.2 Huntington's Disease
+
+- **Gene:** HTT (huntingtin) on chromosome 4.
+- **Mutation:** expanded CAG trinucleotide repeat in the coding region (polyglutamine expansion). Normal: 10--35 repeats; disease: > 36 repeats.
+- **Inheritance:** autosomal dominant. Every child of an affected individual has a 50% chance of inheriting the disease.
+- **Anticipation:** the number of CAG repeats tends to increase in successive generations (especially when inherited from the father), causing earlier onset and more severe disease.
+- **Symptoms:** progressive neurodegeneration (especially in the striatum); involuntary movements (chorea); cognitive decline; psychiatric symptoms (depression, psychosis). Onset typically 35--45 years; death 15--20 years after onset.
+- **Genetic counselling:** predictive genetic testing is available. This raises ethical issues: would you want to know you will develop an untreatable disease?
+
+### 20.3 Sickle Cell Anaemia
+
+- **Gene:** HBB ($\beta$-globin) on chromosome 11.
+- **Mutation:** point mutation (missense) -- codon GAG (glutamic acid) $\to$ GTG (valine) at position 6 of the $\beta$-globin chain.
+- **Inheritance:** autosomal recessive.
+- **Effect on protein:** valine is hydrophobic (glutamic acid is hydrophilic). The mutation causes haemoglobin S (HbS) to polymerise under low $\mathrm{O_2}$ conditions, deforming red blood cells into a sickle shape.
+- **Symptoms:** chronic haemolytic anaemia; painful vaso-occlusive crises (sickled cells block small blood vessels); increased risk of infection (splenic damage); stroke; organ damage.
+- **Heterozygote advantage:** carriers ($Hb^A Hb^S$) have some resistance to malaria (Plasmodium falciparum has difficulty infecting sickled cells; infected sickled cells are removed more rapidly by the spleen).
+
+## 21. Protein Synthesis: Detailed Mechanism
+
+### 21.1 Transcription (in Eukaryotes)
+
+1. **Initiation**: RNA polymerase II binds to the promoter region (TATA box, approximately 25 bp upstream of the transcription start site) with the help of general transcription factors (TFIID, TFIIA, TFIIB, etc.).
+2. **Elongation**: RNA polymerase II unwinds the DNA double helix and synthesises mRNA in the 5' $\to$ 3' direction, using the antisense (template) strand as a template. The DNA strand that has the same sequence as the mRNA (but with T instead of U) is called the sense strand (coding strand).
+3. **Termination**: RNA polymerase II continues past the polyadenylation signal (AAUAAA). The pre-mRNA is cleaved approximately 20--30 nucleotides downstream, and a poly-A tail is added by polyadenylate polymerase.
+
+### 21.2 Post-Transcriptional Processing
+
+Before mRNA leaves the nucleus, it undergoes three modifications:
+
+| Modification | Description | Function |
+| ------------ | ----------- | -------- |
+| 5' capping | Addition of 7-methylguanosine cap | Protects mRNA from degradation; aids ribosome binding during translation |
+| Splicing | Removal of introns by the spliceosome (snRNPs); joining of exons | Produces mature mRNA with a continuous coding sequence; alternative splicing allows one gene to produce multiple protein isoforms |
+| 3' polyadenylation | Addition of approximately 200 adenine nucleotides (poly-A tail) | Protects mRNA from exonuclease degradation; aids export from nucleus; facilitates translation |
+
+### 21.3 Translation
+
+1. **Initiation**: the small ribosomal subunit (40S in eukaryotes) binds to the 5' cap of the mRNA and scans along the mRNA until it finds the start codon (AUG). The initiator tRNA (carrying methionine) binds to the start codon in the P site. The large ribosomal subunit (60S) joins, forming the complete 80S ribosome.
+2. **Elongation**: aminoacyl-tRNAs enter the A site, where the anticodon pairs with the mRNA codon. A peptide bond forms between the amino acid in the P site and the amino acid in the A site (catalysed by peptidyl transferase, which is rRNA -- a ribozyme). The ribosome translocates by one codon: the empty tRNA moves to the E site and exits; the tRNA with the growing polypeptide moves from A to P.
+3. **Termination**: when a stop codon (UAA, UAG, UGA) enters the A site, a release factor binds (no tRNA has an anticodon for stop codons). The polypeptide is released, and the ribosome subunits dissociate.
+
+### 21.4 Calculations: From DNA to Protein
+
+**Example:** A gene has 1,500 base pairs of coding sequence (excluding introns).
+
+Number of codons $= \frac{1500}{3} = 500$ codons.
+
+Number of amino acids in the protein $= 500 - 1 = 499$ (the stop codon does not code for an amino acid).
+
+Molecular weight of the protein $= 499 \times 110 \approx 54,890\ \mathrm{Da}$ (average amino acid molecular weight $\approx 110\ \mathrm{Da}$).
+
+**Example:** If the mutation rate is $10^{-9}$ mutations per base pair per cell division, and a gene has 1,500 base pairs:
+
+Probability of a mutation in this gene per cell division $= 1500 \times 10^{-9} = 1.5 \times 10^{-6}$ (approximately 1 in 667,000 cell divisions).
+
+## 22. Genetic Engineering: Detailed Protocols
+
+### 22.1 Restriction Enzymes (Restriction Endonucleases)
+
+Restriction enzymes are bacterial enzymes that cut DNA at specific recognition sequences (usually palindromic, 4--8 base pairs):
+
+| Enzyme | Recognition Sequence | Cut Type | Sticky/Blunt |
+| ------ | -------------------- | -------- | ------------ |
+| EcoRI | 5'-GAATTC-3' | Cuts between G and A | Sticky ends (5' overhang: AATT) |
+| BamHI | 5'-GGATCC-3' | Cuts between G and G | Sticky ends (5' overhang: GATC) |
+| HindIII | 5'-AAGCTT-3' | Cuts between A and A | Sticky ends (5' overhang: AGCT) |
+| SmaI | 5'-CCCGGG-3' | Cuts between C and C | Blunt ends |
+
+**Sticky ends** are more useful for genetic engineering because complementary sticky ends can base-pair (via hydrogen bonds), allowing DNA fragments from different sources to be joined. DNA ligase then seals the sugar-phosphate backbone.
+
+### 22.2 Gel Electrophoresis
+
+Gel electrophoresis separates DNA fragments by size:
+
+1. DNA samples are loaded into wells in an agarose gel.
+2. An electric current is applied. DNA is negatively charged (phosphate backbone), so it moves towards the positive electrode (anode).
+3. Smaller fragments move faster and travel further; larger fragments move slower and stay closer to the wells.
+4. The gel is stained with a DNA-binding dye (e.g., ethidium bromide or GelRed) and visualised under UV light.
+
+**Applications:** separating DNA fragments after restriction digest; analysing PCR products; DNA fingerprinting (forensics, paternity testing); detecting mutations (e.g., sickle cell mutation alters a restriction site).
+
+### 22.3 Polymerase Chain Reaction (PCR)
+
+PCR amplifies a specific DNA sequence exponentially:
+
+| Step | Temperature | Duration | What Happens |
+| ---- | ----------- | -------- | ------------ |
+| Denaturation | 95 degrees C | 30 s | DNA double helix separates into single strands |
+| Annealing | 55--65 degrees C | 30 s | Primers (forward and reverse) bind to complementary sequences flanking the target |
+| Extension | 72 degrees C | 30 s -- 2 min | Taq DNA polymerase synthesises new DNA strands (extends from primers) |
+
+After $n$ cycles, the number of copies of the target sequence $= 2^n$. After 30 cycles: $2^{30} \approx 1.07 \times 10^9$ copies.
+
+**Requirements for PCR:**
+- Template DNA (the DNA to be amplified).
+- Two primers (short, single-stranded DNA sequences, typically 18--25 nucleotides, complementary to the sequences flanking the target).
+- Taq polymerase (thermostable DNA polymerase from _Thermus aquaticus_, a thermophilic bacterium; active at 72 degrees C).
+- Free nucleotides (dATP, dTTP, dCTP, dGTP).
+- Buffer (maintains optimal pH for the enzyme).
+- $\mathrm{Mg^{2+}}$ ions (cofactor for Taq polymerase).
+
+**Applications:** forensic DNA analysis; prenatal diagnosis of genetic diseases; detecting pathogens (e.g., COVID-19 RT-PCR); cloning genes; sequencing.
+
+### 22.4 DNA Fingerprinting (DNA Profiling)
+
+DNA fingerprinting analyses highly variable regions of the genome:
+
+1. **Mini-satellites (VNTRs)**: variable number tandem repeats -- short sequences (10--100 bp) repeated a variable number of times at specific loci. Each person has a unique combination of repeat numbers.
+2. **Micro-satellites (STRs)**: short tandem repeats -- sequences of 2--6 bp repeated a variable number of times (e.g., the tetranucleotide repeat GATA). STR analysis is the standard method in forensic DNA profiling (the UK National DNA Database uses 10 STR loci).
+
+**Process:**
+1. Extract DNA from the sample.
+2. PCR to amplify the STR loci (using fluorescently labelled primers).
+3. Capillary electrophoresis to separate fragments by size.
+4. Compare the fragment sizes to a reference database.
+
+**Calculating the match probability:**
+
+If each STR locus has a probability of a random match of approximately 0.1 (10%), and 10 loci are analysed:
+
+$$P(\text{random match at all 10 loci}) = 0.1^{10} = 1 \times 10^{-10} \text{ (1 in 10 billion)}$$
+
+This is well below the world population ($\approx 8$ billion), so the match is essentially unique.
+
+## 23. Mutations: Types and Effects
+
+### 23.1 Types of Gene Mutation
+
+| Type | Description | Effect on Protein |
+| ---- | ----------- | ----------------- |
+| Substitution (point mutation) | One base pair is replaced by another | May change one amino acid (missense), create a stop codon (nonsense), or have no effect (silent) |
+| Deletion | One or more base pairs are removed | Frameshift if not a multiple of 3; all downstream codons are changed |
+| Insertion | One or more base pairs are added | Frameshift if not a multiple of 3 |
+| Duplication | A segment of DNA is copied and inserted | May alter gene dosage or protein function |
+| Inversion | A segment of DNA is reversed | May disrupt gene if break occurs within the gene |
+| Translocation | A segment moves to a new location (possibly on a different chromosome) | May create a fusion gene (e.g., Philadelphia chromosome) |
+
+### 23.2 Effects of Mutations
+
+| Effect | Description | Example |
+| ------ | ----------- | ------- |
+| Neutral (silent) | No change in amino acid sequence (due to degeneracy of the genetic code) | GAA $\to$ GAG (both code for glutamic acid) |
+| Missense | One amino acid is changed | Sickle cell: GAG $\to$ GTG (glutamic acid $\to$ valine at position 6 of $\beta$-globin) |
+| Nonsense | A sense codon is changed to a stop codon | Duchenne muscular dystrophy: premature stop codon in dystrophin gene |
+| Frameshift | Insertion or deletion (not multiple of 3) shifts the reading frame | Cystic fibrosis: $\Delta$F508 (3-bp deletion -- actually NOT a frameshift, but a deletion of one amino acid) |
+| Splice site | Mutation at an exon-intron boundary affects mRNA splicing | $\beta$-thalassaemia: mutations at splice sites cause abnormal mRNA processing |
+
+### 23.3 Mutagenic Agents
+
+| Agent | Type | Mechanism | Example |
+| ----- | ---- | --------- | ------- |
+| UV radiation | Physical | Causes thymine dimers (covalent bonds between adjacent thymines), which distort the DNA helix and block replication | Xeroderma pigmentosum: inability to repair thymine dimers causes extreme UV sensitivity and skin cancer |
+| Ionising radiation (X-rays, gamma rays) | Physical | Causes double-strand breaks; can delete or rearrange large segments of DNA | Increased cancer risk after radiation exposure |
+| Tobacco smoke | Chemical | Contains over 60 carcinogens, including benzopyrene (causes G $\to$ T transversions) | Lung cancer: mutations in p53 gene |
+| Aflatoxin (from _Aspergillus flavus_) | Chemical | Causes G $\to$ T transversions, especially in the p53 gene | Liver cancer (hepatocellular carcinoma) |
+| Mustard gas | Chemical | Alkylates guanine (adds alkyl group), causing mispairing | DNA cross-linking; carcinogenic |
+
+### 23.4 DNA Repair Mechanisms
+
+| Mechanism | Description | What It Repairs |
+| --------- | ----------- | --------------- |
+| Mismatch repair | Corrects errors made during DNA replication (wrong base incorporated) | Single base mismatches; small insertion/deletion loops |
+| Base excision repair (BER) | Damaged base is removed by a glycosylase; AP endonuclease cuts the backbone; DNA polymerase fills the gap | Deaminated bases (e.g., uracil in DNA); oxidised bases |
+| Nucleotide excision repair (NER) | A short stretch of DNA containing the damage is excised; DNA polymerase fills the gap | Thymine dimers (UV damage); bulky chemical adducts |
+| Double-strand break repair (HR) | Homologous recombination: uses sister chromatid as template | Double-strand breaks (ionising radiation) |
+| Double-strand break repair (NHEJ) | Non-homologous end joining: broken ends are directly rejoined (error-prone) | Double-strand breaks; can cause small insertions/deletions |
+
+---
+
 :::tip
 Diagnostic Test
 Ready to test your understanding of **Genetics and DNA**? The [diagnostic test](/docs/alevel/biology/diagnostics/diag-genetics-dna) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
@@ -866,3 +1373,470 @@ Ready to test your understanding of **Genetics and DNA**? The [diagnostic test](
 
 See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## 24. Genetic Screening and Counselling
+
+### 24.1 Genetic Screening Programmes
+
+| Condition | Screening Method | When | Target Population |
+| --------- | ---------------- | ---- | ----------------- |
+| Phenylketonuria (PKU) | Guthrie test (blood spot analysed for phenylalanine level) | Days 5--8 after birth | All newborns |
+| Sickle cell disease | Blood test (haemoglobin electrophoresis) | Newborn screening or antenatal carrier screening | Newborns in high-prevalence areas; carriers in at-risk populations |
+| Cystic fibrosis | Immunoreactive trypsin assay (IRT) on blood spot; confirmed by genetic testing | Newborn screening | All newborns |
+| Down syndrome | Non-invasive prenatal testing (NIPT): cell-free fetal DNA in maternal blood; confirmed by amniocentesis/chorionic villus sampling | 10--12 weeks (NIPT); 15--20 weeks (amniocentesis) | All pregnant women (NIPT); women with risk factors (amniocentesis) |
+| Huntington's disease | Genetic test (CAG repeat expansion in HTT gene) | Adults with family history (with genetic counselling) | At-risk individuals (presymptomatic testing available) |
+| BRCA1/BRCA2 mutations | Genetic testing (sequencing) | Adults with family history of breast/ovarian cancer | Women with strong family history |
+
+### 24.2 Prenatal Diagnostic Techniques
+
+| Technique | Timing | What It Detects | Risk |
+| --------- | ------ | --------------- | ---- |
+| Amniocentesis | 15--20 weeks | Chromosomal abnormalities; genetic disorders (DNA analysis of fetal cells in amniotic fluid) | 0.5--1% risk of miscarriage |
+| Chorionic villus sampling (CVS) | 11--14 weeks | Chromosomal abnormalities; genetic disorders (DNA analysis of placental cells) | 1--2% risk of miscarriage |
+| Non-invasive prenatal testing (NIPT) | 10--12 weeks | Chromosomal abnormalities (trisomies 21, 18, 13); sex chromosome aneuploidies | No risk to fetus (blood test) |
+| Ultrasound | 12 weeks (nuchal translucency) + 18--20 weeks (anomaly scan) | Structural abnormalities; nuchal translucency (Down syndrome risk) | No risk to fetus |
+
+### 24.3 Genetic Counselling
+
+Genetic counselling provides information and support to individuals and families affected by or at risk of genetic disorders:
+
+1. **Taking a family history**: constructing a pedigree chart to identify patterns of inheritance.
+2. **Risk assessment**: calculating the probability of an individual being a carrier or being affected.
+3. **Explaining options**: discussing genetic testing, prenatal diagnosis, reproductive options (pre-implantation genetic diagnosis, PGD).
+4. **Providing emotional support**: helping individuals cope with the psychological impact of genetic information.
+5. **Informed consent**: ensuring individuals understand the implications of genetic testing (including the possibility of unexpected findings).
+
+### 24.4 Pre-implantation Genetic Diagnosis (PGD)
+
+PGD is used during IVF to test embryos for specific genetic conditions before implantation:
+
+1. Eggs are collected from the mother and fertilised with the father's sperm in vitro.
+2. Embryos develop to the 8-cell stage (approximately 3 days).
+3. One or two cells (blastomeres) are removed from each embryo (biopsy).
+4. The cells are tested for the genetic condition (by PCR for single-gene disorders or FISH/NGS for chromosomal abnormalities).
+5. Only embryos free of the condition are implanted into the mother's uterus.
+
+**Ethical considerations:**
+- "Designer babies": PGD could potentially be used for non-medical trait selection (sex selection, physical characteristics).
+- Discarded embryos: embryos found to carry the condition are destroyed.
+- Access and cost: PGD is expensive and not universally available.
+
+## 25. Genomics and Personalised Medicine
+
+### 25.1 The Human Genome: Key Statistics
+
+| Feature | Data |
+| ------- | ---- |
+| Total genome size | 3.2 billion base pairs |
+| Number of protein-coding genes | Approximately 20,000--25,000 |
+| Percentage of genome that codes for proteins | Approximately 1.5% |
+| Percentage that is repetitive (transposons, LINEs, SINEs) | Approximately 50% |
+| Number of common SNPs | Approximately 10 million |
+| Percentage of genome that is conserved (shared with other mammals) | Approximately 5% |
+| Total length of all genes | Approximately 1.5% of genome |
+
+### 25.2 Non-Coding DNA: Functions
+
+Most of the genome does not code for proteins, but this non-coding DNA is not "junk":
+
+| Type of Non-Coding DNA | Function |
+| --------------------- | -------- |
+| Regulatory sequences | Promoters, enhancers, silencers, insulators -- control when, where, and how much genes are expressed |
+| Introns | Removed during mRNA splicing; may contain regulatory sequences |
+| Telomeres | Protect chromosome ends from degradation; shorten with each cell division; linked to ageing |
+| Centromeres | Site of kinetochore assembly; essential for chromosome segregation during mitosis |
+| Repetitive elements (LINEs, SINEs, transposons) | "Jumping genes" that can move within the genome; some carry regulatory sequences |
+| Non-coding RNAs (miRNA, lncRNA, snRNA, snoRNA) | Regulatory roles in gene expression, chromatin structure, X-inactivation |
+| Pseudogenes | Non-functional copies of genes; evidence for evolution |
+
+## 26. DNA Sequencing Technologies
+
+### 26.1 Sanger Sequencing (First Generation)
+
+| Feature | Details |
+| ------- | ------- |
+| Principle | Chain-termination method; modified nucleotides (ddNTPs) randomly terminate DNA synthesis |
+| Process | 4 separate reactions (one per ddNTP: ddATP, ddCTP, ddGTP, ddTTP); fragments separated by gel electrophoresis; sequence read from band pattern |
+| Read length | 500--1000 base pairs per reaction |
+| Throughput | Low (one fragment at a time) |
+| Accuracy | Very high (99.99%) |
+| Use today | Small-scale sequencing; confirming Sanger sequences; clinical diagnostics |
+
+### 26.2 Next-Generation Sequencing (NGS)
+
+| Feature | Sanger | NGS (e.g., Illumina) |
+| ------- | ------ | ------------------- |
+| Cost per genome | ~\$5,000--10,000 | ~\$100--1,000 |
+| Time | Weeks to months | Hours to days |
+| Throughput | One fragment per run | Millions of fragments simultaneously (massively parallel) |
+| Read length | 500--1000 bp | 50--300 bp (short read) |
+| Applications | Individual gene sequencing; clinical diagnostics | Whole-genome sequencing; metagenomics; transcriptomics; epigenomics |
+
+### 26.3 Bioinformatics
+
+DNA sequencing generates enormous amounts of data. Bioinformatics is the computational analysis of biological data:
+
+| Task | Description |
+| ---- | ----------- |
+| Sequence assembly | Piecing together millions of short reads into a complete genome (like solving a jigsaw puzzle) |
+| Gene annotation | Identifying coding sequences, regulatory elements, and functional elements within the genome |
+| Comparative genomics | Comparing genomes between species to identify conserved regions and evolutionary relationships |
+| Variant calling | Identifying SNPs, insertions, deletions, and structural variants compared to a reference genome |
+
+## 27. Genetic Engineering: Restriction Enzymes and Recombinant DNA
+
+### 27.1 Restriction Endonucleases (Restriction Enzymes)
+
+Restriction enzymes cut DNA at specific recognition sequences (palindromic sequences):
+
+| Enzyme | Recognition Sequence | Cut Type | Blunt/Sticky |
+| ------ | -------------------- | -------- | ------------ |
+| EcoRI | 5'-GAATTC-3' | Cuts between G and A on both strands | Sticky (5' overhang: AATT) |
+| BamHI | 5'-GGATCC-3' | Cuts between G and G on both strands | Sticky (5' overhang: GATC) |
+| HindIII | 5'-AAGCTT-3' | Cuts between A and A on both strands | Sticky (5' overhang: AGCT) |
+| SmaI | 5'-CCCGGG-3' | Cuts between C and G on both strands | Blunt (no overhang) |
+
+### 27.2 DNA Ligase
+
+DNA ligase joins DNA fragments by forming phosphodiester bonds between the 3'-OH of one nucleotide and the 5'-phosphate of the next:
+
+| Feature | DNA Ligase | Restriction Enzyme |
+| ------- | ---------- | ----------------- |
+| Function | Joins DNA fragments (seals nicks in the sugar-phosphate backbone) | Cuts DNA at specific recognition sequences |
+| Bond formed | Phosphodiester bond | Breaks phosphodiester bond |
+| Energy source | ATP | None required |
+| Use in genetic engineering | Joining insert DNA to vector DNA (plasmid) | Cutting open the plasmid vector and excising the gene of interest |
+
+### 27.3 Steps in Genetic Engineering
+
+| Step | Description |
+| ---- | ----------- |
+| 1. Isolation | Gene of interest is identified and cut out of donor DNA using restriction enzymes |
+| 2. Vector preparation | Plasmid is cut open with the same restriction enzyme (produces complementary sticky ends) |
+| 3. Insertion | Gene of interest is mixed with cut plasmid; DNA ligase seals the recombinant plasmid |
+| 4. Transformation | Recombinant plasmid is introduced into host bacteria (heat shock or electroporation) |
+| 5. Selection | Bacteria are grown on selective media (e.g., antibiotic resistance gene on plasmid); only transformed bacteria survive |
+| 6. Screening | Colonies are screened to confirm the gene has been inserted correctly (e.g., using antibiotic resistance + blue-white screening with lacZ) |
+
+## 28. DNA Replication in Detail
+
+### 28.1 The Replication Fork
+
+| Enzyme/Protein | Function |
+| -------------- | -------- |
+| Helicase | Breaks hydrogen bonds between complementary base pairs; unwinds the double helix; moves in the 5' $\to$ 3' direction along the template strand |
+| DNA polymerase III | Adds nucleotides to the 3' end of the growing strand (5' $\to$ 3' synthesis); proofreads (3' $\to$ 5' exonuclease activity) |
+| DNA polymerase I | Replaces RNA primers with DNA nucleotides |
+| Primase | Synthesises short RNA primers (~10 nucleotides) complementary to the template strand; provides a free 3'-OH for DNA polymerase to start |
+| DNA ligase | Forms phosphodiester bonds between adjacent Okazaki fragments on the lagging strand |
+| Single-strand binding proteins (SSBs) | Stabilise the unwound single-stranded DNA; prevent it from re-annealing or being degraded |
+| Topoisomerase (DNA gyrase) | Relieves tension ahead of the replication fork by cutting, untwisting, and rejoining the DNA double helix |
+
+### 28.2 Leading Strand vs Lagging Strand
+
+| Feature | Leading Strand | Lagging Strand |
+| ------- | ------------- | -------------- |
+| Direction of synthesis | Continuous, in the 5' $\to$ 3' direction (same direction as fork movement) | Discontinuous; synthesised in short Okazaki fragments (100--1000 nucleotides in prokaryotes; 100--200 in eukaryotes) |
+| Primers required | One initial RNA primer | Multiple RNA primers (one per Okazaki fragment) |
+| Speed | Faster (continuous) | Slower (requires repeated primer synthesis and ligation) |
+
+### 28.3 Calculating DNA Replication
+
+If a human cell has 6.4 Gbp (3.2 billion base pairs per haploid genome; 6.4 billion in diploid) and DNA polymerase adds ~50 nucleotides per second:
+
+$$\text{Time for leading strand} = \frac{3.2 \times 10^9}{50} = 64 \times 10^6\ \text{seconds} \approx 740\ \text{days}$$
+
+In practice, replication takes hours because:
+- Multiple replication origins (eukaryotes have ~10,000 origins; bacteria have one).
+- Bidirectional replication (two forks per origin).
+
+## 29. Protein Synthesis: Transcription in Detail
+
+### 29.1 Transcription Initiation
+
+| Step | What Happens |
+| ---- | ----------- |
+| 1 | RNA polymerase binds to the promoter region upstream of the gene (in eukaryotes, transcription factors must first bind) |
+| 2 | RNA polymerase unwinds the DNA double helix (about 17 base pairs) |
+| 3 | RNA polymerase begins synthesising mRNA complementary to the template (antisense) strand in the 5' $\to$ 3' direction |
+
+### 29.2 Transcription Elongation and Termination
+
+| Step | What Happens |
+| ---- | ----------- |
+| Elongation | RNA polymerase moves along the template strand; adds complementary RNA nucleotides (A pairs with U on RNA; T pairs with A; G pairs with C; C pairs with G) |
+| Termination | RNA polymerase reaches a terminator sequence; detaches from the DNA; the pre-mRNA is released |
+
+### 29.3 Post-Transcriptional Modification (Eukaryotes Only)
+
+| Modification | Description | Why It Matters |
+| ------------ | ----------- | -------------- |
+| 5' capping | A modified guanine nucleotide (7-methylguanosine) is added to the 5' end | Protects mRNA from degradation; helps ribosome recognise the mRNA |
+| 3' poly-A tail | ~200 adenine nucleotides are added to the 3' end | Protects mRNA from degradation; aids export from nucleus |
+| Splicing | Introns (non-coding regions) are removed; exons (coding regions) are joined together by the spliceosome | Produces mature mRNA containing only coding sequences; alternative splicing can produce different proteins from the same gene |
+
+## 30. Mutations and DNA Repair
+
+### 30.1 Types of Gene Mutations
+
+| Mutation Type | Description | Effect on Protein |
+| ------------- | ----------- | ----------------- |
+| Substitution (point mutation) | One base pair is replaced by another | May change one amino acid (missense); may not change any amino acid (silent); may introduce a premature stop codon (nonsense) |
+| Insertion | One or more nucleotides are inserted into the sequence | Frameshift; changes all codons downstream of the insertion; usually severe |
+| Deletion | One or more nucleotides are removed from the sequence | Frameshift; changes all codons downstream; usually severe |
+| Duplication | A section of DNA is duplicated | May cause a frameshift or add extra amino acids |
+| Inversion | A section of DNA is reversed | May or may not affect the protein depending on location and whether it disrupts the reading frame |
+
+### 30.2 Causes of Mutation
+
+| Cause | Description | Examples |
+| ----- | ----------- | -------- |
+| Spontaneous mutations | Occur naturally during DNA replication (errors by DNA polymerase); tautomeric shifts in bases | DNA polymerase occasionally inserts the wrong nucleotide; spontaneous deamination of cytosine to uracil |
+| Mutagens (chemical) | Chemicals that damage or alter DNA | Nitrous acid (deaminates bases); benzopyrene (in tobacco smoke; adds bulky groups to DNA); mustard gas (cross-links DNA strands) |
+| Mutagens (physical) | High-energy radiation that damages DNA | UV light (causes thymine dimers; adjacent thymines become covalently bonded); ionising radiation (X-rays, gamma rays; cause single- and double-strand breaks) |
+| Biological agents | Viruses that integrate into DNA; transposons (jumping genes) | HPV integrates into host DNA; LINEs and SINEs cause mutations when they insert into genes |
+
+### 30.3 DNA Repair Mechanisms
+
+| Mechanism | What It Repairs | How It Works |
+| --------- | --------------- | ------------ |
+| Proofreading (3' $\to$ 5' exonuclease) | Mismatched bases during DNA replication | DNA polymerase III (prokaryotes) or DNA polymerase $\delta$/$\varepsilon$ (eukaryotes) detect and remove mismatched nucleotides immediately |
+| Mismatch repair | Mismatches missed by proofreading | After replication, MutS (bacteria) or MSH proteins (eukaryotes) detect mismatches; the incorrect strand is identified, excised, and replaced |
+| Excision repair | Damaged bases (e.g., thymine dimers, deaminated bases) | Endonuclease cuts out the damaged section; DNA polymerase fills in the correct sequence; DNA ligase seals the gap |
+
+## 31. Genetic Disorders
+
+### 31.1 Single Gene Disorders
+
+| Disorder | Gene | Mutation | Inheritance | Symptoms |
+| -------- | ---- | -------- | ----------- | -------- |
+| Cystic fibrosis | CFTR (chromosome 7) | Deletion of 3 nucleotides ($\Delta$F508); loss of phenylalanine at position 508 | Autosomal recessive | Thick mucus in lungs and pancreas; chronic lung infections; malabsorption; male infertility |
+| Sickle cell anaemia | HBB (chromosome 11) | Missense mutation (substitution); glutamic acid $\to$ valine at position 6 of $\beta$-globin | Autosomal recessive | Sickled RBCs; block capillaries; pain crises; organ damage; anaemia |
+| Huntington's disease | HTT (chromosome 4) | CAG trinucleotide repeat expansion (> 35 repeats) | Autosomal dominant | Progressive neurodegeneration; chorea (involuntary movements); dementia; death 15--20 years after onset |
+| Haemophilia A | F8 (X chromosome) | Various mutations (inversions, point mutations, deletions) | X-linked recessive | Deficiency of clotting factor VIII; prolonged bleeding; joint damage (haemarthrosis) |
+| Duchenne muscular dystrophy | DMD (X chromosome) | Deletions/duplications causing frameshift in dystrophin gene | X-linked recessive | Progressive muscle weakness; loss of ambulation by age 12; death by age 20--30 (cardiac/respiratory failure) |
+
+### 31.2 Chromosomal Disorders
+
+| Disorder | Chromosomal Abnormality | Karyotype | Symptoms |
+| -------- | ---------------------- | --------- | -------- |
+| Down syndrome (trisomy 21) | Extra copy of chromosome 21 | 47,XX,+21 or 47,XY,+21 | Intellectual disability; flat facial profile; single palmar crease; congenital heart defects; increased risk of leukaemia and Alzheimer's |
+| Turner syndrome | Monosomy X (only one X chromosome) | 45,X | Female; short stature; webbed neck; underdeveloped ovaries (infertility); no puberty without hormone treatment |
+| Klinefelter syndrome | Extra X chromosome in males | 47,XXY | Male; tall; reduced fertility (small testes); gynaecomastia (breast development); learning difficulties (mild) |
+
+## 32. Epigenetics
+
+### 32.1 What Is Epigenetics?
+
+Epigenetics is the study of heritable changes in gene expression that do NOT involve changes to the DNA sequence.
+
+| Mechanism | Description | Effect on Gene Expression |
+| --------- | ----------- | ------------------------ |
+| DNA methylation | Methyl group ($-\mathrm{CH_3}$) added to cytosine bases at CpG sites (usually in promoter regions) | Methylated DNA = gene is silenced (switched off); unmethylated DNA = gene is active (switched on) |
+| Histone modification | Acetyl groups, methyl groups, or phosphate groups added to histone tails | Acetylation of histones = chromatin is less condensed (euchromatin) = gene is active; deacetylation = chromatin is more condensed (heterochromatin) = gene is silenced |
+| Non-coding RNA | miRNA binds to mRNA and prevents translation or targets it for degradation | Decreases protein production from the target gene |
+
+### 32.2 Epigenetics and Disease
+
+| Disease | Epigenetic Mechanism |
+| ------- | ------------------- |
+| Cancer | Global DNA hypomethylation (genomic instability) + hypermethylation of tumour suppressor gene promoters (e.g., p16, BRCA1); histone modification abnormalities |
+| Angelman syndrome | Maternal UBE3A gene is deleted or silenced (methylated) on the maternal chromosome; paternal copy is normally silenced in certain brain regions by genomic imprinting |
+| Prader-Willi syndrome | Paternal region of chromosome 15 is deleted or silenced; maternal copy is normally imprinted (silenced) in this region |
+
+## 33. PCR (Polymerase Chain Reaction)
+
+### 33.1 What Is PCR?
+
+PCR is a laboratory technique used to amplify a specific region of DNA, producing millions of copies from a small sample.
+
+### 33.2 The Three Steps (Each Cycle)
+
+| Step | Temperature | What Happens |
+| ---- | ----------- | ----------- |
+| Denaturation | 95$\degree$C | DNA double helix is unwound; hydrogen bonds between complementary base pairs are broken; two single strands are produced |
+| Annealing | 55--65$\degree$C (depends on primers) | Primers (short, single-stranded DNA sequences, typically 18--25 nucleotides) bind to their complementary sequences at the 3' ends of the target region on each strand |
+| Extension (elongation) | 72$\degree$C (optimum for Taq polymerase) | Taq polymerase (thermostable DNA polymerase from _Thermus aquaticus_) adds nucleotides to the 3' end of each primer, synthesising new DNA strands |
+
+### 33.3 Exponential Amplification
+
+| Cycle | Number of DNA Molecules |
+| ----- | ---------------------- |
+| 0 (start) | 1 |
+| 1 | 2 |
+| 2 | 4 |
+| 3 | 8 |
+| n | $2^n$ |
+| 30 | $2^{30} \approx 1.07 \times 10^9$ (over 1 billion copies) |
+| 32 | $2^{32} \approx 4.29 \times 10^9$ (over 4 billion copies) |
+
+### 33.4 PCR vs DNA Replication
+
+| Feature | PCR | In Vivo DNA Replication |
+| ------- | --- | --------------------- |
+| Enzyme | Taq polymerase (thermostable) | DNA polymerase III (prokaryotes) / DNA polymerase $\delta$ (eukaryotes) |
+| Primers | Synthetic, specific to target region | RNA primase synthesises RNA primers |
+| Helicase | Not needed (heat denatures DNA) | Required to unwind the double helix |
+| Temperature | Cycled between 95, 55--65, and 72$\degree$C | Constant 37$\degree$C |
+| Speed | ~30 cycles in ~2 hours | ~8 hours for the whole human genome |
+
+## 34. Gel Electrophoresis
+
+### 34.1 Principles
+
+| Principle | Description |
+| --------- | ----------- |
+| Separation by size | DNA fragments are separated based on their size (length in base pairs) |
+| Movement towards positive electrode | DNA is negatively charged (phosphate backbone); moves towards the positive electrode (anode) |
+| Agarose gel | Porous gel matrix; acts as a molecular sieve; smaller fragments move faster and further |
+| Staining | DNA is visualised using a fluorescent dye that intercalates between DNA bases (e.g., ethidium bromide, SYBR Safe) |
+
+### 34.2 Procedure
+
+| Step | Description |
+| ---- | ----------- |
+| 1 | Agarose powder is dissolved in buffer and heated to form a gel |
+| 2 | The gel is poured into a casting tray and a comb is inserted to form wells |
+| 3 | Once set, the gel is placed in a tank filled with electrophoresis buffer |
+| 4 | DNA samples are mixed with a loading dye (for visibility) and loaded into the wells |
+| 5 | An electric current is applied; DNA fragments migrate towards the positive electrode |
+| 6 | Smaller fragments travel further; larger fragments are retarded by the gel matrix |
+| 7 | A DNA ladder (standard) of known fragment sizes is run alongside the samples for comparison |
+| 8 | The gel is stained and viewed under UV light; band positions are compared to the ladder to estimate fragment sizes |
+
+## 35. Genetic Fingerprinting in Practice
+
+### 35.1 DNA Fingerprinting Process
+
+| Step | Description |
+| ---- | ----------- |
+| 1. DNA extraction | DNA is isolated from a biological sample (blood, saliva, hair root, semen) |
+| 2. PCR amplification | Specific STR loci are amplified using primers complementary to flanking regions |
+| 3. Electrophoresis | PCR products are separated by size on an agarose or polyacrylamide gel |
+| 4. Analysis | Band pattern is compared between samples; statistical analysis calculates the probability of a match |
+
+### 35.2 Key STR Loci Used in Forensics (UK)
+
+| Locus | Chromosome | Repeat Unit | Number of Alleles |
+| ----- | ---------- | ---------- | ----------------- |
+| D21S11 | 21 | TCTA | ~30 |
+| D18S51 | 18 | AGAA | ~20 |
+| D16S539 | 16 | GATA | ~10 |
+| TH01 | 11 | TCAT | ~8 |
+| D8S1179 | 8 | TATC | ~12 |
+| vWA | 12 | TCTA | ~12 |
+| FGA | 4 | TTTC | ~25 |
+
+### 35.3 Applications
+
+| Application | Description |
+| ----------- | ----------- |
+| Criminal cases | Matching DNA from a crime scene to a suspect; exonerating the innocent |
+| Paternity testing | Comparing a child's DNA profile to the alleged father; the child must inherit one allele from each parent at each locus |
+| Identification of remains | Comparing DNA from unidentified remains to relatives of missing persons |
+| Immigration disputes | Proving family relationships when documentation is insufficient |
+
+## 36. Non-Mendelian Inheritance
+
+### 36.1 Codominance
+
+Codominance occurs when both alleles are expressed equally in the heterozygote (neither is dominant):
+
+| Example | Genotypes and Phenotypes |
+| ------- | ---------------------- |
+| Blood groups (ABO system) | $\mathrm{I^AI^A}$ = blood group A; $\mathrm{I^BI^B}$ = blood group B; $\mathrm{I^AI^B}$ = blood group AB (both A and B antigens expressed); $\mathrm{ii}$ = blood group O |
+| Sickle cell trait | $\mathrm{Hb^AHb^A}$ = normal (HbA only); $\mathrm{Hb^SHb^S}$ = sickle cell disease (HbS only); $\mathrm{Hb^AHb^S}$ = sickle cell trait (both HbA and HbS produced; carrier) |
+
+### 36.2 Sex-Linked Inheritance: Worked Example
+
+A woman who is a carrier for colour blindness (X$^N$X$^c$) has a child with a man with normal vision (X$^N$Y).
+
+| Possible gametes from mother | X$^N$ or X$^c$ (50% each) |
+| Possible gametes from father | X$^N$ or Y (50% each) |
+
+| Offspring | Probability | Phenotype |
+| --------- | ---------- | --------- |
+| X$^N$X$^N$ (daughter) | 25% | Normal vision |
+| X$^N$X$^c$ (daughter) | 25% | Carrier (normal vision, but carrier) |
+| X$^N$Y (son) | 25% | Normal vision |
+| X$^c$Y (son) | 25% | Colour blind |
+
+Note: All daughters have normal vision (even carriers), but 50% are carriers. Half of sons are colour blind. This is why sex-linked recessive conditions are much more common in males.
+
+## 43. Non-Disjunction and Chromosomal Abnormalities
+
+### 43.1 What Is Non-Disjunction?
+
+Non-disjunction is the failure of homologous chromosomes or sister chromatids to separate properly during meiosis I or meiosis II. This produces gametes with an abnormal number of chromosomes (aneuploidy).
+
+| Stage | What Fails to Separate | Result |
+| ----- | -------------------- | ------ |
+| Meiosis I | Homologous chromosomes | All four gametes are abnormal (two with an extra chromosome, two missing one) |
+| Meiosis II | Sister chromatids | Two gametes are normal, two are abnormal (one with extra, one missing) |
+
+### 43.2 Common Chromosomal Disorders
+
+| Disorder | Chromosome | Karyotype | Key Features |
+| -------- | ---------- | --------- | ------------ |
+| Down syndrome (trisomy 21) | Chromosome 21 | 47,XX,+21 or 47,XY,+21 | Learning difficulties; flat facial profile; heart defects; increased risk of leukaemia; incidence increases with maternal age |
+| Turner syndrome | Sex chromosome | 45,X | Female; short stature; webbed neck; infertility (streak ovaries); no puberty without hormone treatment |
+| Klinefelter syndrome | Sex chromosome | 47,XXY | Male; tall; small testes; infertility; gynaecomastia; mild learning difficulties |
+| Patau syndrome (trisomy 13) | Chromosome 13 | 47,XX,+13 or 47,XY,+13 | Severe intellectual disability; cleft lip/palate; heart defects; most die within first year |
+| Edwards syndrome (trisomy 18) | Chromosome 18 | 47,XX,+18 or 47,XY,+18 | Severe intellectual disability; low birth weight; rocker-bottom feet; most die within first year |
+
+## 44. DNA Technology: Sanger Sequencing
+
+### 44.1 Principle
+
+Sanger sequencing (chain-termination method) determines the order of nucleotide bases in a DNA fragment by using modified nucleotides (dideoxynucleotides, ddNTPs) that terminate DNA synthesis at specific positions.
+
+### 44.2 Steps
+
+| Step | Description |
+| ---- | ----------- |
+| 1. Denaturation | The DNA template is heated to ~95$^\circ$C to separate the double helix into single strands |
+| 2. Annealing | A primer binds to the template strand at the 3' end of the region to be sequenced |
+| 3. Extension | DNA polymerase extends the primer; the reaction mix contains normal dNTPs plus four types of fluorescently labelled ddNTPs (ddATP, ddCTP, ddGTP, ddTTP) |
+| 4. Termination | When a ddNTP is incorporated (instead of a normal dNTP), synthesis stops because the ddNTP lacks the 3'-OH group needed for the next phosphodiester bond |
+| 5. Separation | The resulting fragments of different lengths are separated by capillary electrophoresis |
+| 6. Detection | A laser detects the fluorescent label on the terminal ddNTP of each fragment; the sequence is read from shortest to longest fragment |
+
+### 44.3 Interpreting Results
+
+| Output | Description |
+| ------ | ----------- |
+| Electropherogram (chromatogram) | Shows a series of coloured peaks, one per base; the sequence is read from left to right (5' to 3') |
+| Quality score | Each base is assigned a quality score (Phred score) indicating the confidence of the base call; scores above 20 are considered reliable |
+
+## 45. Genetic Engineering: Steps in Detail
+
+### 45.1 Overview of Recombinant DNA Technology
+
+| Step | Description |
+| ---- | ----------- |
+| 1. Identify the desired gene | Locate the gene of interest using DNA probes or genome databases |
+| 2. Isolate the gene | Cut the gene out of the donor DNA using restriction endonucleases; alternatively, use reverse transcriptase to make cDNA from mRNA |
+| 3. Insert into a vector | The gene is ligated into a plasmid vector (using DNA ligase) that contains a promoter, selectable marker (e.g., antibiotic resistance gene), and origin of replication |
+| 4. Transform host cells | The recombinant plasmid is introduced into host cells (e.g., _E. coli_) by transformation (heat shock or electroporation) |
+| 5. Select transformed cells | Cells are grown on agar containing the antibiotic; only cells that have taken up the plasmid (with the resistance gene) survive |
+| 6. Identify positive clones | Use gene probes or PCR to confirm that the host cells contain the desired gene (not just the plasmid) |
+| 7. Grow and harvest | Positive clones are cultured in large fermenters; the protein product is extracted and purified |
+
+### 45.2 Restriction Endonucleases
+
+| Feature | Description |
+| ------- | ----------- |
+| What they do | Cut DNA at specific recognition sequences (usually 4--8 base pairs long); some produce sticky ends, others produce blunt ends |
+| Sticky ends | Single-stranded overhangs; complementary sticky ends on different DNA fragments can base-pair (anneal); DNA ligase seals the nicks to form recombinant DNA |
+| Blunt ends | Cut straight across both strands; no overhang; can be ligated to any other blunt-ended fragment but less efficient than sticky-end ligation |
+| Example | EcoRI recognises GAATTC and cuts between G and A, producing sticky ends with 5'-AATT overhangs |
+
+### 45.3 DNA Ligase
+
+| Feature | Description |
+| ------- | ----------- |
+| Function | Catalyses the formation of phosphodiester bonds between adjacent nucleotides; seals nicks in the sugar-phosphate backbone |
+| Use in genetic engineering | Joins the sugar-phosphate backbone of the inserted gene to the plasmid vector after the sticky ends have base-paired |
+| ATP requirement | Uses ATP (or NAD$^+$ in some bacteria) as an energy source to form each phosphodiester bond |
+
+---
