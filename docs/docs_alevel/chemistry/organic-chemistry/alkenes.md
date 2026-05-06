@@ -203,6 +203,138 @@ The reaction is the addition of $\mathrm{Br}_2$ across the double bond, as descr
 do not react with bromine water at room temperature (they require UV light for radical
 substitution).
 
+## Stereochemistry of Alkenes
+
+### E/Z Isomerism
+
+Restricted rotation about the C=C bond means that substituents on either side of the double bond have fixed positions. When each carbon of the double bond carries two different substituents, two distinct stereoisomers exist: the $E$ (entgegen, opposite) and $Z$ (zusammen, together) isomers.
+
+The **Cahn-Ingold-Prelog (CIP) priority rules** assign priority to substituents on each carbon:
+
+1. Higher atomic number = higher priority.
+2. If the same atom, compare the next atoms in the chain.
+3. Double bonds are treated as if each doubly-bonded atom is duplicated.
+
+**$Z$ isomer:** The higher-priority substituents on each carbon are on the same side of the double bond.
+
+**$E$ isomer:** The higher-priority substituents on each carbon are on opposite sides.
+
+**Worked Example.** Assign $E$ or $Z$ to the following structure: $\mathrm{CH}_3\mathrm{CH}=\mathrm{C}(\mathrm{CH}_3)\mathrm{COOH}$.
+
+Left carbon of the double bond: substituents are $\mathrm{CH}_3$ and $\mathrm{H}$. Priority: $\mathrm{CH}_3 \gt \mathrm{H}$ (atomic number of $\mathrm{C} \gt \mathrm{H}$).
+
+Right carbon: substituents are $\mathrm{CH}_3$ and $\mathrm{COOH}$. For $\mathrm{COOH}$: the atoms directly bonded are $\mathrm{C}$, $\mathrm{O}$, $\mathrm{O}$; for $\mathrm{CH}_3$: the atoms directly bonded are $\mathrm{H}$, $\mathrm{H}$, $\mathrm{H}$. Since $\mathrm{O} \gt \mathrm{H}$, $\mathrm{COOH}$ has higher priority than $\mathrm{CH}_3$.
+
+If the higher-priority groups ($\mathrm{CH}_3$ on the left, $\mathrm{COOH}$ on the right) are on the same side: $Z$. If on opposite sides: $E$.
+
+### Physical Differences Between E and Z Isomers
+
+$E$ and $Z$ isomers have different physical properties:
+
+- Different boiling points (differences in dipole moment and packing).
+- Different melting points.
+- Different $R_f$ values in chromatography.
+- Different NMR spectra (different coupling constants between vinyl protons).
+
+The coupling constant $J$ between the two vinyl protons is typically larger for trans ($E$) isomers ($J \approx 12$--$18\,\mathrm{Hz}$) than for cis ($Z$) isomers ($J \approx 6$--$12\,\mathrm{Hz}$).
+
+### Hydrogenation of Alkenes
+
+Alkenes react with hydrogen gas in the presence of a metal catalyst (Ni, Pd, or Pt) to form alkanes:
+
+$$
+\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H}_2 \xrightarrow{\mathrm{Ni}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_3
+$$
+
+**Conditions:** Room temperature and pressure with a nickel catalyst (or $\mathrm{H}_2$ with Pd/C at room temperature).
+
+The reaction is stereospecific: hydrogen adds from the same face of the double bond (syn addition), producing the alkane. For cyclic alkenes, both hydrogens end up on the same face.
+
+The enthalpy of hydrogenation provides a quantitative measure of alkene stability:
+
+| Alkene | $\Delta H_\mathrm{hydrogenation}$ ($\mathrm{kJ/mol}$) |
+|---|---|
+| Ethene | $-137$ |
+| (Z)-but-2-ene | $-120$ |
+| (E)-but-2-ene | $-116$ |
+| 2-methylpropene (tetrasubstituted) | $-119$ |
+
+More substituted alkenes are more stable and have less negative (less exothermic) hydrogenation enthalpies. (E)-but-2-ene is more stable than (Z)-but-2-ene because the two methyl groups are on opposite sides, minimising steric repulsion.
+
+## Addition of Water (Hydration)
+
+### Direct Hydration
+
+Alkenes react with steam in the presence of a phosphoric acid catalyst ($\mathrm{H}_3\mathrm{PO}_4$) at $300^\circ\mathrm{C}$ and $60\,\mathrm{atm}$ to form alcohols:
+
+$$
+\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{H}_2\mathrm{O} \xrightarrow{\mathrm{H}_3\mathrm{PO}_4,\,300^\circ\mathrm{C}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}
+$$
+
+This follows Markovnikov's rule. The reaction is reversible, so yield is limited by the equilibrium position. Industrial conditions use high pressure to shift equilibrium towards the product (fewer moles of gas on the product side).
+
+### Hydroboration-Oxidation (Anti-Markovnikov Hydration)
+
+Hydroboration-oxidation gives the anti-Markovnikov alcohol:
+
+$$
+\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 \xrightarrow{\mathrm{BH}_3\cdot\mathrm{THF}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH}
+$$
+
+The borane adds in a syn fashion, and the oxidation step replaces boron with $-\mathrm{OH}$. The overall result is that the $-\mathrm{OH}$ ends up on the less substituted carbon (anti-Markovnikov), the opposite of direct hydration or acid-catalysed hydration.
+
+## Oxidation of Alkenes
+
+### Reaction with Acidified Potassium Manganate(VII)
+
+Cold, dilute, acidified $\mathrm{KMnO}_4$ oxidises the C=C bond to form a vicinal diol (glycol):
+
+$$
+\mathrm{CH}_2=\mathrm{CH}_2 + [\mathrm{O}] + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_2\mathrm{OHCH}_2\mathrm{OH}
+$$
+
+The purple $\mathrm{MnO}_4^-$ is reduced to colourless $\mathrm{Mn}^{2+}$, providing a second test for unsaturation alongside bromine water.
+
+### Oxidative Cleavage with Hot Concentrated $\mathrm{KMnO}_4$
+
+Hot concentrated $\mathrm{KMnO}_4$ cleaves the double bond, converting each carbon to its highest oxidation state:
+
+| Alkene type | Product(s) |
+|---|---|
+| $\mathrm{RCH}=\mathrm{CH}_2$ | $\mathrm{RCOOH} + \mathrm{CO}_2$ |
+| $\mathrm{RCH}=\mathrm{CHR}'$ | $\mathrm{RCOOH} + \mathrm{R}'\mathrm{COOH}$ |
+| $\mathrm{R}_2\mathrm{C}=\mathrm{CR}'_2$ | $\mathrm{R}_2\mathrm{C}=\mathrm{O} + \mathrm{R}'_2\mathrm{C}=\mathrm{O}$ |
+
+This reaction can be used to determine the position of the double bond in an unknown alkene by identifying the carbonyl products.
+
+### Ozonolysis
+
+Ozone ($\mathrm{O}_3$) cleaves the C=C bond at low temperature ($-78^\circ\mathrm{C}$) to form ozonides, which are reduced by dimethyl sulphide or zinc to give carbonyl compounds:
+
+$$
+\mathrm{RCH}=\mathrm{CHR}' \xrightarrow{\mathrm{O}_3} \xrightarrow{\mathrm{Zn}} \mathrm{RCHO} + \mathrm{R}'\mathrm{CHO}
+$$
+
+Ozonolysis is more useful than permanganate cleavage because it gives aldehydes (not further oxidised to carboxylic acids), providing more information about the original alkene structure.
+
+## Industrial Importance of Alkenes
+
+### Ethene
+
+Ethene is the most important organic chemical in industry:
+
+- **Poly(ethene)** -- the world's most widely used plastic.
+- **Ethanol** -- direct hydration with steam.
+- **Ethanol** (indirect) -- absorption in $\mathrm{H}_2\mathrm{SO}_4$ followed by hydrolysis.
+- **Ethane-1,2-diol (antifreeze)** -- oxidation of ethene with oxygen and a silver catalyst.
+- **Halogenoethanes** -- addition of HCl, HBr, etc.
+
+### Propene
+
+- **Poly(propene)** -- high-strength plastic for ropes and containers.
+- **Propan-2-ol** -- hydration of propene.
+- **Propanal / propanone** -- hydration followed by oxidation.
+
 ## Common Pitfalls
 
 1. **Violating Markovnikov's rule.** The hydrogen of HX always adds to the carbon with more
@@ -268,6 +400,58 @@ $$
 
 Each repeating unit has the same molar mass as the monomer (the double bond opens but no atoms are
 lost or gained in addition polymerisation).
+
+</details>
+
+<details>
+<summary>Problem 3</summary>
+
+Predict the products of the following reactions and state the mechanism:
+
+(a) But-2-ene with $\mathrm{Br}_2$ in $\mathrm{CCl}_4$ at room temperature.
+
+(b) 2-methylpropene with $\mathrm{HBr}$ in the presence of peroxides.
+
+**Solution:**
+
+(a) Anti addition of bromine via the bromonium ion mechanism. But-2-ene exists as two stereoisomers (E and Z).
+
+For (E)-but-2-ene: the product is the racemic mixture $(2R,3R)$-2,3-dibromobutane and $(2S,3S)$-2,3-dibromobutane (the meso compound $(2R,3S)$ is NOT formed from the E isomer because the bromonium ion intermediate is opened by anti attack).
+
+For (Z)-but-2-ene: the product is meso-$(2R,3S)$-2,3-dibromobutane (the two bromine atoms add to the same face and then anti opening gives the meso form).
+
+(b) In the presence of peroxides, the reaction follows the **anti-Markovnikov** pathway (Kharasch effect). The peroxide generates a bromine radical, which adds to the less substituted carbon of the double bond:
+
+$$
+(\mathrm{CH}_3)_2\mathrm{C}=\mathrm{CH}_2 + \mathrm{Br}\cdot \to (\mathrm{CH}_3)_2\mathrm{CBrCH}_2\cdot
+$$
+
+$$
+(\mathrm{CH}_3)_2\mathrm{CBrCH}_2\cdot + \mathrm{HBr} \to (\mathrm{CH}_3)_2\mathrm{CBrCH}_3 + \mathrm{Br}\cdot
+$$
+
+Product: 1-bromo-2-methylpropane (anti-Markovnikov). Without peroxides, the product would be 2-bromo-2-methylpropane (Markovnikov).
+
+</details>
+
+<details>
+<summary>Problem 4</summary>
+
+Explain how ozonolysis can be used to determine the position of the double bond in an unknown alkene. An unknown alkene $\mathrm{C}_6\mathrm{H}_{12}$ produces ethanal and butanal on ozonolysis followed by reduction. Identify the alkene.
+
+**Solution:**
+
+Ozonolysis cleaves the C=C bond and replaces each carbon of the double bond with a carbonyl group. The products tell us what was on each side of the double bond.
+
+The products are ethanal ($\mathrm{CH}_3\mathrm{CHO}$) and butanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO}$). The original double bond was between the carbon that became ethanal and the carbon that became butanal:
+
+$$
+\mathrm{CH}_3\mathrm{CH}=\mathrm{CHCH}_2\mathrm{CH}_2\mathrm{CH}_3
+$$
+
+The alkene is **hex-2-ene** (which exists as E and Z isomers).
+
+Check: $\mathrm{C}_6\mathrm{H}_{12}$ has one degree of unsaturation (one C=C bond). Hex-2-ene: $\mathrm{C}_6\mathrm{H}_{12}$. Correct.
 
 </details>
 

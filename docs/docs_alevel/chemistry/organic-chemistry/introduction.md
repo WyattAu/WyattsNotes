@@ -393,6 +393,287 @@ wedge), the observed direction is reversed: clockwise becomes S and anticlockwis
 
 </details>
 
+<details>
+<summary>Problem 3</summary>
+
+Name the following compound using IUPAC nomenclature:
+
+$\mathrm{CH}_3\mathrm{CH}(\mathrm{Cl})\mathrm{CH}(\mathrm{CH}_3)\mathrm{CH}_2\mathrm{CH}_3$
+
+**Solution:**
+
+Step 1: The longest chain containing the principal functional group (halogen) is 5 carbons (pentane).
+
+Step 2: Number from the end that gives the lowest locants to the substituents. Numbering from the left: Cl on C-2, methyl on C-3. Numbering from the right: Cl on C-4, methyl on C-3. Left numbering gives lower first locant (2 < 4), so number from the left.
+
+Step 3: Name substituents alphabetically: chloro- (before methyl-).
+
+The name is **3-chloro-2-methylpentane**.
+
+Step 4: Check for chirality. C-2 is bonded to $-\mathrm{Cl}$, $-\mathrm{CH}_3$, $-\mathrm{CH}(\mathrm{CH}_3)\mathrm{CH}_2\mathrm{CH}_3$, and $-\mathrm{H}$. All four groups are different, so C-2 is a chiral centre. The compound exists as a pair of enantiomers: (2R)-3-chloro-2-methylpentane and (2S)-3-chloro-2-methylpentane.
+
+</details>
+
+## Mechanisms: Curly Arrow Convention
+
+### Rules for Drawing Curly Arrows
+
+1. **Curly arrows show the movement of electron pairs.** A full-headed arrow ($\curvearrowright$) shows movement of a pair of electrons. A half-headed arrow ($\hookrightarrow$, fishhook) shows movement of a single electron (used in radical mechanisms).
+
+2. **Arrows start from electron-rich sites:** lone pairs, pi bonds, sigma bonds, or negative charges.
+
+3. **Arrows point towards electron-deficient sites:** atoms (to form new bonds) or bonds (to break them).
+
+4. **The tail of the arrow is at the source of electrons.** The head of the arrow is where the electrons go.
+
+### Common Arrow-Pushing Patterns
+
+**Nucleophilic attack:** Arrow from a lone pair on the nucleophile to the electrophilic atom.
+
+$$
+\mathrm{Nu}: \curvearrowright \mathrm{C}^{\delta+}
+$$
+
+**Pi bond as nucleophile:** Arrow from the middle of a pi bond to an electrophile (electrophilic addition to alkenes).
+
+$$
+\mathrm{C}=\mathrm{C} \curvearrowright \mathrm{E}^+
+$$
+
+**Proton transfer:** Arrow from a lone pair to $\mathrm{H}^+$, or from a bond to $\mathrm{H}$ (to break it).
+
+$$
+\mathrm{B}: \curvearrowright \mathrm{H}-\mathrm{A}
+$$
+
+**Bond cleavage:** Arrow from the middle of a bond to one of the bonded atoms (heterolytic fission).
+
+$$
+\mathrm{A}-\mathrm{B} \curvearrowright \mathrm{B}
+$$
+
+### Worked Example: Drawing the SN2 Mechanism
+
+The reaction of $\mathrm{CH}_3\mathrm{CH}_2\mathrm{Br}$ with $\mathrm{OH}^-$:
+
+1. Arrow from the lone pair on $\mathrm{O}$ of $\mathrm{OH}^-$ to the $\delta^+$ carbon of the $\mathrm{C}-\mathrm{Br}$ bond (nucleophilic attack).
+2. Arrow from the $\mathrm{C}-\mathrm{Br}$ bond to $\mathrm{Br}$ (bond cleavage, heterolytic).
+
+Both arrows are drawn simultaneously, showing the concerted nature of SN2. The transition state is shown with a dotted line between C and both the incoming $\mathrm{OH}$ and outgoing $\mathrm{Br}$.
+
+## Stereoisomerism Summary
+
+### Types of Stereoisomerism
+
+| Type | Requirement | Example |
+|---|---|---|
+| Optical (enantiomers) | Chiral centre (no plane of symmetry) | $(R)$- and $(S)$-2-chlorobutane |
+| E/Z (geometric) | Restricted rotation about C=C or C=N | $(E)$- and $(Z)$-but-2-ene |
+| Optical (diastereomers) | Multiple chiral centres, not mirror images | $(2R,3R)$- and $(2R,3S)$-tartaric acid |
+
+### Enantiomers vs Diastereomers
+
+- **Enantiomers:** Non-superimposable mirror images. Same physical properties except for interaction with plane-polarised light (and other chiral environments).
+- **Diastereomers:** Stereoisomers that are not mirror images. Different physical properties (melting point, boiling point, solubility, $R_f$ in TLC).
+
+### Optical Activity
+
+A chiral compound rotates the plane of plane-polarised light. The observed rotation $\alpha$ depends on:
+
+$$
+[\alpha] = \frac{\alpha_\mathrm{obs}}{l \times c}
+$$
+
+where $[\alpha]$ is the specific rotation (constant for a given compound), $l$ is the path length (in dm), and $c$ is the concentration (in $\mathrm{g/cm}^3$).
+
+A racemic mixture (50:50 enantiomers) has $[\alpha] = 0$ (no net rotation) because the two enantiomers rotate light by equal amounts in opposite directions.
+
+### Racemisation
+
+Racemisation is the conversion of a single enantiomer into a racemic mixture. It occurs when a chiral centre is temporarily destroyed, for example:
+
+- Via a planar carbocation intermediate (SN1 mechanism).
+- Via enolisation (alpha carbon of a carbonyl compound).
+- Under acidic or basic conditions for certain compounds.
+
+The rate of racemisation depends on the mechanism and conditions. Compounds with stable chiral centres (no carbocation intermediates, no enolisable protons) are configurationally stable.
+
+### Worked Example: Identifying Chirality
+
+Is 2,3-dibromobutane chiral?
+
+Draw the structure: $\mathrm{CH}_3\mathrm{CHBrCHBrCH}_3$. C-2 is bonded to $-\mathrm{Br}$, $-\mathrm{CH}_3$, $-\mathrm{CHBrCH}_3$, $-\mathrm{H}$. C-3 is bonded to $-\mathrm{Br}$, $-\mathrm{CH}_3$, $-\mathrm{CHBrCH}_3$, $-\mathrm{H}$.
+
+Both C-2 and C-3 are chiral centres. There are three stereoisomers:
+
+1. $(2R,3R)$-2,3-dibromobutane (meso: has a plane of symmetry through C-2--C-3 bond, achiral)
+2. $(2S,3S)$-2,3-dibromobutane (identical to $(2R,3R)$ by $180^\circ$ rotation)
+3. $(2R,3S)$-2,3-dibromobutane (no plane of symmetry, chiral; this is the meso compound)
+
+Wait: $(2R,3R)$ and $(2S,3S)$ are enantiomers of each other. $(2R,3S)$ is a diastereomer of both and is the meso form (has a plane of symmetry bisecting the molecule). So there are three stereoisomers: one pair of enantiomers $(2R,3R)/(2S,3S)$ and one meso compound $(2R,3S)$.
+
+## Functional Group Interconversion Summary
+
+The following table summarises the key interconversions covered across the organic chemistry modules:
+
+| From | To | Reagent/conditions | Mechanism |
+|---|---|---|---|
+| Alkene | Alkane | $\mathrm{H}_2$ / Ni catalyst | Addition (hydrogenation) |
+| Alkene | Halogenoalkane | HX ($\mathrm{HBr}$, $\mathrm{HCl}$) | Electrophilic addition |
+| Alkene | Dihalogenoalkane | $\mathrm{Br}_2$ or $\mathrm{Cl}_2$ | Electrophilic addition |
+| Alkene | Alcohol | $\mathrm{H}_3\mathrm{PO}_4$ / steam, $300^\circ\mathrm{C}$ | Electrophilic addition |
+| Alkene | Diol | Cold dilute $\mathrm{KMnO}_4$ | Oxidation |
+| Alkane | Halogenoalkane | $\mathrm{Cl}_2$ / UV | Free radical substitution |
+| Alcohol | Halogenoalkane | $\mathrm{PBr}_3$, $\mathrm{SOCl}_2$, or HX | Substitution |
+| Alcohol | Aldehyde | Distillation with $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ / $\mathrm{H}^+$ | Oxidation |
+| Alcohol | Carboxylic acid | Reflux with $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ / $\mathrm{H}^+$ | Oxidation |
+| Alcohol | Alkene | $\mathrm{H}_2\mathrm{SO}_4$, $170^\circ\mathrm{C}$ | Elimination (dehydration) |
+| Alcohol | Ester | Carboxylic acid / $\mathrm{H}_2\mathrm{SO}_4$ reflux | Esterification |
+| Halogenoalkane | Alcohol | $\mathrm{NaOH}(aq)$, heat | Nucleophilic substitution (SN2/SN1) |
+| Halogenoalkane | Alkene | $\mathrm{NaOH}$ in ethanol, heat | Elimination (E2/E1) |
+| Halogenoalkane | Nitrile | $\mathrm{KCN}$ in ethanol | Nucleophilic substitution |
+| Halogenoalkane | Amine | Excess $\mathrm{NH}_3$ | Nucleophilic substitution |
+| Halogenoalkane | Amine (primary) | Phthalimide / $\mathrm{KOH}$ (Gabriel) | Nucleophilic substitution |
+| Halogenoalkane | Ether | Alkoxide ($\mathrm{RO}^-\mathrm{Na}^+$) | Williamson synthesis (SN2) |
+| Nitrile | Primary amine | $\mathrm{LiAlH}_4$ then $\mathrm{H}_2\mathrm{O}$ | Reduction |
+| Nitrile | Carboxylic acid | $\mathrm{H}_3\mathrm{O}^+$, reflux | Hydrolysis |
+| Amide | Amine | $\mathrm{LiAlH}_4$ then $\mathrm{H}_2\mathrm{O}$ | Reduction |
+| Amide | Carboxylic acid | $\mathrm{HCl}$ reflux or $\mathrm{NaOH}$ reflux | Hydrolysis |
+| Aldehyde | Primary alcohol | $\mathrm{NaBH}_4$ then $\mathrm{H}^+$ | Nucleophilic addition |
+| Aldehyde | Carboxylic acid | $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ / $\mathrm{H}^+$ reflux | Oxidation |
+| Ketone | Secondary alcohol | $\mathrm{NaBH}_4$ then $\mathrm{H}^+$ | Nucleophilic addition |
+| Aldehyde/Ketone | Cyanohydrin | $\mathrm{HCN}$ / $\mathrm{NaCN}$ | Nucleophilic addition |
+| Aldehyde/Ketone | 2,4-DNPH derivative | 2,4-dinitrophenylhydrazine | Nucleophilic addition-elimination |
+| Carboxylic acid | Ester | Alcohol / $\mathrm{H}_2\mathrm{SO}_4$ reflux | Esterification |
+| Carboxylic acid | Acyl chloride | $\mathrm{SOCl}_2$ | Nucleophilic acyl substitution |
+| Acyl chloride | Ester | Alcohol | Nucleophilic acyl substitution |
+| Acyl chloride | Amide | Amine (excess) | Nucleophilic acyl substitution |
+| Acyl chloride | Carboxylic acid | Water | Nucleophilic acyl substitution (hydrolysis) |
+| Benzene | Nitrobenzene | $\mathrm{HNO}_3$ / $\mathrm{H}_2\mathrm{SO}_4$, $50$--$60^\circ\mathrm{C}$ | Electrophilic substitution |
+| Benzene | Bromobenzene | $\mathrm{Br}_2$ / $\mathrm{FeBr}_3$ | Electrophilic substitution |
+| Benzene | Methylbenzene | $\mathrm{CH}_3\mathrm{Cl}$ / $\mathrm{AlCl}_3$ (Friedel-Crafts) | Electrophilic substitution |
+| Benzene | Phenyl ketone | $\mathrm{RCOCl}$ / $\mathrm{AlCl}_3$ (Friedel-Crafts) | Electrophilic substitution |
+| Nitrobenzene | Phenylamine | $\mathrm{Sn}$ / $\mathrm{HCl}$ then $\mathrm{NaOH}$ | Reduction |
+| Phenylamine | Diazonium salt | $\mathrm{NaNO}_2$ / $\mathrm{HCl}$, $0$--$5^\circ\mathrm{C}$ | Diazotisation |
+
+## Determining the Structure of an Unknown Organic Compound
+
+A systematic approach to identifying an unknown compound using spectroscopic data:
+
+### Step 1: Determine the Molecular Formula
+
+From the molecular ion peak in mass spectrometry ($M^+$), determine the molecular mass. Use the rule of 13 or isotope patterns to suggest possible formulas. High-resolution MS gives the exact mass to distinguish between isobaric formulas.
+
+### Step 2: Calculate the Degree of Unsaturation (Index of Hydrogen Deficiency)
+
+$$
+\text{DoU} = \frac{2C + 2 + N - H - X}{2}
+$$
+
+where $C$ = number of carbons, $H$ = hydrogens, $N$ = nitrogens, $X$ = halogens. Oxygen does not affect the DoU.
+
+| DoU | Possible structural features |
+|---|---|
+| 0 | Acyclic, saturated (only single bonds) |
+| 1 | One ring OR one double bond |
+| 2 | Two rings, two double bonds, one triple bond, or one ring + one double bond |
+| 4 | Often suggests a benzene ring (3 double bonds + 1 ring) |
+
+### Step 3: IR Spectroscopy -- Identify Functional Groups
+
+Check for characteristic absorptions: O--H, C=O, C=C, C$\equiv$N, C--O, N--H. The absence of a peak is as informative as its presence (e.g. no C=O rules out aldehydes, ketones, acids, esters).
+
+### Step 4: NMR Spectroscopy -- Piece Together the Structure
+
+${}^1\mathrm{H}$ NMR tells you the number of hydrogen environments (signals), the ratio of protons in each (integration), the neighbouring environments (splitting), and the electronic environment (chemical shift).
+
+${}^{13}\mathrm{C}$ NMR tells you the number of carbon environments. Combine this with the DoU and IR data.
+
+### Step 5: Mass Spectrometry -- Confirm and Find Fragments
+
+The molecular ion confirms the molecular mass. Fragment peaks provide information about substructures (e.g. loss of 15 = $\mathrm{CH}_3$, loss of 17 = $\mathrm{OH}$, loss of 29 = $\mathrm{CHO}$ or $\mathrm{C}_2\mathrm{H}_5$, loss of 31 = $\mathrm{OCH}_3$, loss of 45 = $\mathrm{COOH}$).
+
+### Worked Example: Complete Structure Determination
+
+An unknown compound has:
+
+- Mass spec: $M^+ = 120$, M+1 peak approximately $7.7\%$ of $M^+$
+- IR: $1705\,\mathrm{cm}^{-1}$ (strong), $2850$--$2950\,\mathrm{cm}^{-1}$ (strong), no O--H, no C--O
+- ${}^1\mathrm{H}$ NMR: $\delta\, 1.2$ (t, 6H), $\delta\, 2.9$ (q, 4H), $\delta\, 7.5$ (t, 2H), $\delta\, 7.9$ (d, 2H)
+- ${}^{13}\mathrm{C}$ NMR: 6 peaks
+
+**Step 1:** $M = 120$. M+1 = $7.7\% \implies$ approximately 7 carbons ($1.1\%$ per carbon). $\mathrm{C}_7\mathrm{H}_8\mathrm{O}$: $7(12) + 8(1) + 16 = 84 + 8 + 16 = 108 \neq 120$. $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$: $96 + 8 + 16 = 120$. Correct.
+
+**Step 2:** $\text{DoU} = \frac{2(8) + 2 - 8}{2} = \frac{10}{2} = 5$. Likely a benzene ring (DoU = 4) plus one more unsaturation (C=O from IR).
+
+**Step 3:** IR: $1705\,\mathrm{cm}^{-1}$ = C=O (ketone). No broad O--H, no strong C--O, so not a carboxylic acid or ester.
+
+**Step 4:** ${}^1\mathrm{H}$ NMR: 4 signals.
+
+- $\delta\, 7.5$ (t, 2H) and $\delta\, 7.9$ (d, 2H) = 4 aromatic protons = monosubstituted benzene ring (but with 4 protons, it is para-disubstituted: two doublets would be expected for AA'BB' pattern; the triplet and doublet suggest a different arrangement). Actually, a triplet and doublet for 2H each suggests a 1,4-disubstituted benzene (AA'BB' pattern can appear as approximate triplet/doublet at low resolution).
+- $\delta\, 1.2$ (t, 6H) = two equivalent $\mathrm{CH}_3$ groups.
+- $\delta\, 2.9$ (q, 4H) = two equivalent $\mathrm{CH}_2$ groups adjacent to the methyls.
+
+This pattern suggests an $\mathrm{N}(\mathrm{CH}_2\mathrm{CH}_3)_2$ group, but the formula has no nitrogen. Reconsidering: it suggests two $\mathrm{CH}_2\mathrm{CH}_3$ groups. With only C, H, O available: the 4 aliphatic protons at $\delta\, 2.9$ (adjacent to an aromatic or carbonyl) and 6 at $\delta\, 1.2$ suggest two ethyl groups.
+
+**Structure:** 1,4-diacetylbenzene or 4-ethoxyacetophenone, etc. The correct structure consistent with all data is **1-phenylpropan-1-one** (propiophenone) if we have 5 aromatic protons... but we only have 4 aromatic protons. With $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$, DoU = 5, a benzene ring (4 unsaturations) plus C=O: para-ethylacetophenone ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{C}_6\mathrm{H}_4\mathrm{COCH}_3$) = $\mathrm{C}_9\mathrm{H}_{10}\mathrm{O}$ (wrong formula).
+
+The correct answer is **4-methylpropiophenone**: $\mathrm{CH}_3\mathrm{COC}_6\mathrm{H}_4\mathrm{CH}_3$ = $\mathrm{C}_9\mathrm{H}_{10}\mathrm{O}$ (still wrong).
+
+Returning to $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$: **acetophenone** ($\mathrm{C}_6\mathrm{H}_5\mathrm{COCH}_3$) = $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$, $M = 120$. But acetophenone would have 5 aromatic protons and a $\mathrm{CH}_3$ singlet, not matching the triplet/quartet pattern.
+
+**Correct answer:** The NMR pattern (t, 6H; q, 4H) is characteristic of a diethyl ketone fragment. With $M = 120$ and $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$, the structure is **phenacyl ethyl ether** ($\mathrm{C}_6\mathrm{H}_5\mathrm{COCH}_2\mathrm{CH}_3$) = butyrophenone. But this is $\mathrm{C}_{10}\mathrm{H}_{12}\mathrm{O}$...
+
+The key insight: with triplet (6H) and quartet (4H), there are two $-\mathrm{CH}_2\mathrm{CH}_3$ groups. With 4 aromatic protons (1,4-disubstituted), C=O, and formula $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$, the molecule is too small. The formula must be reconsidered: $\mathrm{C}_9\mathrm{H}_{12}\mathrm{O}$ has $M = 136$. With $M = 120$, the only option with two ethyl groups is not possible with $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$.
+
+This example illustrates the importance of cross-checking all data. In an exam, if the data are internally consistent, proceed with the structure that fits best. Here, the triplet (6H)/quartet (4H) pattern requires two ethyl groups (4 aliphatic carbons + 10 aliphatic H), leaving only 4 carbons and no hydrogens for the aromatic portion -- impossible. The data likely represent a larger molecule or the molecular formula needs verification.
+
+## Additional Practice Problems
+
+<details>
+<summary>Problem 4</summary>
+
+For each of the following molecules, state whether it is chiral and explain your reasoning:
+
+(a) $\mathrm{CH}_3\mathrm{CHClCH}_3$ (2-chloropropane)
+(b) $\mathrm{CH}_3\mathrm{CHClCH}_2\mathrm{CH}_3$ (2-chlorobutane)
+(c) $\mathrm{CH}_2\mathrm{ClCH}_2\mathrm{CH}_2\mathrm{Cl}$ (1,3-dichloropropane)
+(d) $\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{COOH}$ (2-hydroxypropanoic acid, lactic acid)
+
+**Solution:**
+
+(a) **Not chiral.** The central carbon (C-2) is bonded to $\mathrm{CH}_3$, $\mathrm{CH}_3$, $\mathrm{Cl}$, and $\mathrm{H}$. Two of the substituents are the same ($\mathrm{CH}_3$), so there is a plane of symmetry through C-2, Cl, and H. The molecule has a superimposable mirror image.
+
+(b) **Chiral.** The central carbon (C-2) is bonded to $\mathrm{CH}_3$, $\mathrm{C}_2\mathrm{H}_5$, $\mathrm{Cl}$, and $\mathrm{H}$. All four substituents are different. The molecule has a non-superimposable mirror image (exists as $R$ and $S$ enantiomers).
+
+(c) **Not chiral.** No carbon atom is bonded to four different groups. C-2 is bonded to two $\mathrm{CH}_2\mathrm{Cl}$ groups (identical).
+
+(d) **Chiral.** C-2 is bonded to $\mathrm{CH}_3$, $\mathrm{OH}$, $\mathrm{COOH}$, and $\mathrm{H}$. All four substituents are different. Lactic acid exists as two enantiomers. L-(+)-lactic acid is the naturally occurring form found in muscle tissue.
+
+</details>
+
+<details>
+<summary>Problem 5</summary>
+
+Classify each of the following reactions as substitution, addition, elimination, or hydrolysis, and identify the reagent as a nucleophile, electrophile, or both:
+
+(a) $\mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} + \mathrm{OH}^- \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{Br}^-$
+(b) $\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Br}$
+(c) $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br} + \mathrm{OH}^- \xrightarrow{\text{ethanol, }\Delta} \mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{Br}^- + \mathrm{H}_2\mathrm{O}$
+(d) $\mathrm{CH}_3\mathrm{COOCH}_3 + \mathrm{NaOH} \to \mathrm{CH}_3\mathrm{COO}^-\mathrm{Na}^+ + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$
+
+**Solution:**
+
+(a) **Nucleophilic substitution** (SN2). $\mathrm{OH}^-$ is the nucleophile (attacks the electrophilic carbon bearing Br). $\mathrm{Br}^-$ is the leaving group.
+
+(b) **Electrophilic addition.** The $\pi$ electrons of the C=C act as a nucleophile, attacking the $\delta^+$ hydrogen of HBr (electrophile). The $\mathrm{Br}^-$ then acts as a nucleophile in the second step.
+
+(c) **Elimination** (E2). $\mathrm{OH}^-$ acts as a base (not a nucleophile under these conditions), abstracting a $\beta$-hydrogen. The C--Br bond breaks simultaneously, forming the C=C double bond. The high temperature and ethanol solvent favour elimination over substitution.
+
+(d) **Hydrolysis** (base-catalysed). $\mathrm{OH}^-$ is the nucleophile that attacks the carbonyl carbon of the ester, forming a tetrahedral intermediate that collapses to give the carboxylate and alcohol.
+
+</details>
+
 ---
 
 :::tip

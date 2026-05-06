@@ -410,3 +410,184 @@ $\Delta G \lt 0$. The entropy gain from the increased disorder of the liquid pha
 compensates for the enthalpy cost of breaking the hydrogen-bonded lattice.
 
 </details>
+
+<details>
+<summary>Problem 3</summary>
+
+For the reaction $2\mathrm{NO}_2(g) \rightleftharpoons \mathrm{N}_2\mathrm{O}_4(g)$ at $298\,\mathrm{K}$:
+
+$\Delta H^\circ = -57.2\,\mathrm{kJ/mol}$, $\Delta S^\circ = -175.8\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+
+(a) Calculate $\Delta G^\circ$ and $K_p$ at $298\,\mathrm{K}$.
+(b) At what temperature does $K_p = 1$?
+(c) Explain qualitatively whether increasing temperature increases or decreases the yield of $\mathrm{N}_2\mathrm{O}_4$.
+
+**Solution:**
+
+(a)
+
+$$
+\Delta G^\circ = -57200 - 298 \times (-175.8) = -57200 + 52388 = -4812\,\mathrm{J/mol} = -4.81\,\mathrm{kJ/mol}
+$$
+
+$$
+K_p = \exp\left(\frac{4812}{8.314 \times 298}\right) = \exp(1.943) = 6.98
+$$
+
+(b) $K_p = 1$ when $\Delta G^\circ = 0$:
+
+$$
+T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{-57200}{-175.8} = 325\,\mathrm{K}
+$$
+
+(c) The forward reaction is exothermic ($\Delta H^\circ \lt 0$) and decreases entropy ($\Delta S^\circ \lt 0$). Increasing temperature makes $\Delta G^\circ$ less negative (eventually positive), so $K_p$ decreases. The yield of $\mathrm{N}_2\mathrm{O}_4$ decreases with increasing temperature. This is consistent with Le Chatelier's principle.
+
+</details>
+
+## Entropy in Chemical Processes
+
+### Entropy of Phase Changes
+
+At a phase transition, $\Delta G = 0$, so $\Delta S = \Delta H / T$.
+
+For vaporisation: $\Delta S_\mathrm{vap} = \Delta H_\mathrm{vap} / T_\mathrm{boil}$
+
+Trouton's rule: $\Delta S_\mathrm{vap} \approx 85\,\mathrm{J\,mol^{-1}\,K^{-1}}$ for most non-polar liquids. Deviations indicate hydrogen bonding (e.g. water: $\Delta S_\mathrm{vap} = 109\,\mathrm{J\,mol^{-1}\,K^{-1}}$, due to extra ordering in the liquid from H-bonds).
+
+### Entropy of Mixing
+
+When two ideal gases (or two ideal solutions) mix, the entropy always increases:
+
+$$
+\Delta S_\mathrm{mix} = -nR(x_1 \ln x_1 + x_2 \ln x_2)
+$$
+
+where $x_1$ and $x_2$ are the mole fractions. For equal amounts ($x_1 = x_2 = 0.5$):
+
+$$
+\Delta S_\mathrm{mix} = -nR(0.5 \ln 0.5 + 0.5 \ln 0.5) = -nR(-0.693) = 5.76n\,\mathrm{J/K}
+$$
+
+This is the thermodynamic basis for diffusion: gases spontaneously mix because the mixed state has higher entropy.
+
+### The Third Law of Thermodynamics
+
+The entropy of a perfect crystal at absolute zero is zero:
+
+$$
+S(0\,\mathrm{K}) = 0
+$$
+
+This provides the reference point for absolute entropies ($S^\circ$ values tabulated in data books). Unlike enthalpy, entropy has an absolute scale.
+
+### Worked Example: Calculating $\Delta S^\circ$ from Absolute Entropies
+
+Calculate $\Delta S^\circ$ for the combustion of methane:
+
+$$
+\mathrm{CH}_4(g) + 2\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(l)
+$$
+
+$S^\circ$ values: $\mathrm{CH}_4(g) = 186.3$, $\mathrm{O}_2(g) = 205.1$, $\mathrm{CO}_2(g) = 213.7$, $\mathrm{H}_2\mathrm{O}(l) = 69.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+
+$$
+\Delta S^\circ = [213.7 + 2(69.9)] - [186.3 + 2(205.1)] = 353.5 - 596.5 = -243.0\,\mathrm{J\,mol^{-1}\,K^{-1}}
+$$
+
+The entropy decreases because 3 moles of gas produce 1 mole of gas + 2 moles of liquid. The decrease in the number of gaseous molecules dominates.
+
+## Gibbs Free Energy in Biological Systems
+
+ATP hydrolysis is the energy currency of cells:
+
+$$
+\mathrm{ATP} + \mathrm{H}_2\mathrm{O} \to \mathrm{ADP} + \mathrm{P}_i \quad \Delta G^\circ = -30.5\,\mathrm{kJ/mol}
+$$
+
+The large negative $\Delta G^\circ$ makes this reaction thermodynamically favourable, and it is coupled to endergonic (unfavourable) reactions in the cell. For example, the synthesis of glucose-6-phosphate from glucose and phosphate ($\Delta G^\circ = +13.8\,\mathrm{kJ/mol}$) is driven by coupling with ATP hydrolysis:
+
+$$
+\mathrm{Glucose} + \mathrm{P}_i + \mathrm{ATP} \to \mathrm{Glucose\text{-}6\text{-}phosphate} + \mathrm{ADP}
+$$
+
+$$
+\Delta G^\circ_\mathrm{overall} = 13.8 + (-30.5) = -16.7\,\mathrm{kJ/mol}
+$$
+
+The coupled reaction is spontaneous because the overall $\Delta G^\circ$ is negative.
+
+## Thermodynamic Cycles
+
+### Born-Haber Cycles (Recap)
+
+Born-Haber cycles apply Hess's Law to ionic compound formation. They are covered in detail in [Born-Haber Cycles](./born-haber-cycles).
+
+### Enthalpy-Entropy Compensation
+
+Some reactions show enthalpy-entropy compensation: a more exothermic $\Delta H$ is offset by a more negative $\Delta S$, so $\Delta G$ changes less than expected. This is common in:
+
+- Solvent reorganisation around dissolved species.
+- Protein folding (hydrophobic effect).
+- Ligand binding.
+
+## Worked Examples: Comprehensive Gibbs Free Energy Problems
+
+### Problem: Predicting Spontaneity at Different Temperatures
+
+For the reaction $\mathrm{C}(\text{graphite}) + \mathrm{CO}_2(g) \rightleftharpoons 2\mathrm{CO}(g)$:
+
+$$
+\Delta H^\circ = +173\,\mathrm{kJ/mol}, \quad \Delta S^\circ = +176\,\mathrm{J\,mol^{-1}\,K^{-1}}
+$$
+
+(a) Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$ and $1000\,\mathrm{K}$.
+
+(b) At what temperature does the reaction become spontaneous?
+
+(c) Calculate $K$ at $1000\,\mathrm{K}$.
+
+**(a)** At $298\,\mathrm{K}$:
+
+$$
+\Delta G^\circ = 173 \times 10^3 - 298 \times 176 = 173000 - 52448 = +120{,}552\,\mathrm{J/mol} = +120.6\,\mathrm{kJ/mol}
+$$
+
+Not spontaneous at room temperature.
+
+At $1000\,\mathrm{K}$:
+
+$$
+\Delta G^\circ = 173 \times 10^3 - 1000 \times 176 = 173000 - 176000 = -3000\,\mathrm{J/mol} = -3.0\,\mathrm{kJ/mol}
+$$
+
+Spontaneous at $1000\,\mathrm{K}$.
+
+**(b)** $\Delta G^\circ = 0$ when:
+
+$$
+T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{173 \times 10^3}{176} = 983\,\mathrm{K}
+$$
+
+**(c)** At $1000\,\mathrm{K}$:
+
+$$
+K = \exp\left(\frac{-\Delta G^\circ}{RT}\right) = \exp\left(\frac{3000}{8.314 \times 1000}\right) = \exp(0.361) = 1.43
+$$
+
+$K > 1$, confirming that products are favoured.
+
+### Problem: Using Gibbs Energy to Predict Decomposition
+
+Will $\mathrm{Ag}_2\mathrm{CO}_3(s)$ decompose at $500\,\mathrm{K}$?
+
+$$
+\mathrm{Ag}_2\mathrm{CO}_3(s) \to \mathrm{Ag}_2\mathrm{O}(s) + \mathrm{CO}_2(g)
+$$
+
+$\Delta H^\circ = +82\,\mathrm{kJ/mol}$, $\Delta S^\circ = +170\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+
+$$
+\Delta G^\circ = 82000 - 500 \times 170 = 82000 - 85000 = -3000\,\mathrm{J/mol}
+$$
+
+$\Delta G^\circ < 0$, so the decomposition is spontaneous at $500\,\mathrm{K}$. (The threshold temperature is $T = 82000/170 = 482\,\mathrm{K}$.)

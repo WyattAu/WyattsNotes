@@ -327,6 +327,263 @@ $\mathrm{CH}_4 \lt \mathrm{CH}_3\mathrm{Cl} \lt \mathrm{CH}_3\mathrm{NH}_2 \lt \
 
 </details>
 
+<details>
+<summary>Example 4: Determining polarity of complex molecules</summary>
+
+Is $\mathrm{BF}_3$ polar or non-polar?
+
+Boron trifluoride has trigonal planar geometry ($\mathrm{sp}^2$ hybridisation, 3 bonding pairs, 0 lone pairs). The three B-F bond dipoles are arranged at $120^\circ$ to each other. The vector sum of the three bond dipoles is zero (by symmetry), so $\mathrm{BF}_3$ is **non-polar** despite having polar bonds.
+
+Contrast with $\mathrm{PF}_3$: phosphorus has 5 valence electrons. Three are used in P-F bonds, leaving one lone pair. Total electron domains = 4, giving trigonal pyramidal geometry (similar to $\mathrm{NH}_3$). The bond dipoles do not cancel, so $\mathrm{PF}_3$ is **polar**.
+
+</details>
+
+<details>
+<summary>Example 5: Comparing bond strengths</summary>
+
+Explain why the $\mathrm{C}\equiv\mathrm{N}$ triple bond ($891\,\mathrm{kJ/mol}$) is stronger than the $\mathrm{C}=\mathrm{O}$ double bond ($745\,\mathrm{kJ/mol}$), which is stronger than the $\mathrm{C}-\mathrm{O}$ single bond ($358\,\mathrm{kJ/mol}$).
+
+The bond strength increases with bond order because:
+
+1. More shared electron pairs between the nuclei means greater electrostatic attraction holding the atoms together.
+2. The additional bonds (pi bonds) have shorter bond lengths, placing the nuclei closer together where the Coulombic attraction is stronger.
+3. Breaking a triple bond requires breaking three bonding interactions, whereas a single bond requires breaking only one.
+
+Bond lengths: $\mathrm{C}-\mathrm{O}$ ($143\,\mathrm{pm}$) $>$ $\mathrm{C}=\mathrm{O}$ ($123\,\mathrm{pm}$) $>$ $\mathrm{C}\equiv\mathrm{N}$ ($116\,\mathrm{pm}$). Shorter bonds are generally stronger.
+
+</details>
+
+## Electronegativity and Bond Polarity in Detail
+
+### The Pauling Scale
+
+Electronegativity ($\chi$) is the ability of an atom to attract the bonding electrons in a covalent bond. Pauling electronegativity values:
+
+| Element | $\chi$ |
+|---|---|
+| F | 3.98 |
+| O | 3.44 |
+| N | 3.04 |
+| Cl | 3.16 |
+| C | 2.55 |
+| S | 2.58 |
+| H | 2.20 |
+| P | 2.19 |
+| Na | 0.93 |
+| K | 0.82 |
+
+### Predicting Bond Type from Electronegativity Difference
+
+$$
+\Delta\chi = |\chi_A - \chi_B|
+$$
+
+| $\Delta\chi$ | Bond type | Character |
+|---|---|---|
+| 0--0.4 | Non-polar covalent | Electrons shared equally |
+| 0.4--1.7 | Polar covalent | Electrons shared unequally |
+| $>$1.7 | Ionic | Electron transfer |
+
+### Dipole Moments
+
+A dipole moment $\mu$ is a measure of the separation of charge in a polar bond:
+
+$$
+\mu = q \times d
+$$
+
+where $q$ is the magnitude of the partial charge and $d$ is the distance between the charges. Dipole moments are measured in Debye (D). For comparison: $\mu(\mathrm{HCl}) = 1.08\,\mathrm{D}$, $\mu(\mathrm{HF}) = 1.82\,\mathrm{D}$, $\mu(\mathrm{H}_2\mathrm{O}) = 1.85\,\mathrm{D}$.
+
+A molecule has a net dipole moment only if the individual bond dipoles do not cancel by symmetry. This is why $\mathrm{CO}_2$ (linear, two equal and opposite dipoles) is non-polar but $\mathrm{H}_2\mathrm{O}$ (bent, dipoles do not cancel) is polar.
+
+### Intermolecular Forces in Detail
+
+#### London Forces (Instantaneous Dipole-Induced Dipole)
+
+London forces exist between all molecules and atoms. They arise from instantaneous fluctuations in the electron cloud that create temporary dipoles, which induce dipoles in neighbouring molecules.
+
+Factors affecting London force strength:
+
+1. **Number of electrons:** More electrons = larger electron cloud = larger instantaneous dipoles = stronger London forces.
+2. **Shape:** Greater surface area of contact between molecules = stronger London forces. Linear molecules (e.g. $n$-pentane, bp $36^\circ\mathrm{C}$) have stronger London forces than branched isomers (e.g. 2,2-dimethylpropane, bp $10^\circ\mathrm{C}$) because linear molecules can pack more closely.
+3. **Polarisability:** Larger atoms/molecules have more diffuse electron clouds that are more easily distorted (more polarisable), leading to stronger London forces. $\mathrm{I}_2$ has stronger London forces than $\mathrm{Cl}_2$.
+
+#### Permanent Dipole-Dipole Forces
+
+Exist between polar molecules. The partial positive end of one molecule is attracted to the partial negative end of another. These are stronger than London forces between molecules of similar size.
+
+#### Hydrogen Bonding
+
+A special, strong type of dipole-dipole interaction that occurs when hydrogen is covalently bonded to a highly electronegative atom (N, O, or F). The hydrogen carries a large partial positive charge and is small enough to approach closely to the lone pair on N, O, or F of a neighbouring molecule.
+
+Requirements for hydrogen bonding:
+1. H bonded to N, O, or F.
+2. A lone pair on N, O, or F on the neighbouring molecule.
+
+Hydrogen bonds are typically $5$--$40\,\mathrm{kJ/mol}$, compared with $0.1$--$5\,\mathrm{kJ/mol}$ for dipole-dipole and London forces.
+
+**Effects of hydrogen bonding:**
+- Abnormally high boiling points (e.g. $\mathrm{H}_2\mathrm{O}$ boils at $100^\circ\mathrm{C}$; $\mathrm{H}_2\mathrm{S}$ boils at $-60^\circ\mathrm{C}$ despite being heavier).
+- Lower density of ice than water (hydrogen bonds hold water molecules in an open hexagonal lattice).
+- The solubility of organic molecules in water (molecules that can hydrogen bond with water, such as alcohols and sugars, are more soluble).
+- Secondary structure of proteins (hydrogen bonds between amino acid residues form alpha helices and beta sheets).
+
+### Solubility and Intermolecular Forces
+
+"Like dissolves like" is a consequence of intermolecular forces:
+
+- Polar solvents (water) dissolve polar and ionic solutes (ion-dipole interactions).
+- Non-polar solvents (hexane) dissolve non-polar solutes (London forces).
+- Substances that can hydrogen bond with water (small alcohols, sugars, ammonia) are water-soluble.
+
+**Worked Example.** Explain why $\mathrm{C}_6\mathrm{H}_5\mathrm{OH}$ is partially soluble in water while $\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3$ is insoluble.
+
+Phenol ($\mathrm{C}_6\mathrm{H}_5\mathrm{OH}$) can form hydrogen bonds with water through its $-\mathrm{OH}$ group, providing a favourable interaction that partially overcomes the hydrophobic effect of the benzene ring. Toluene ($\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3$) cannot form hydrogen bonds with water; its only intermolecular interactions with water are weak London forces, which cannot compensate for the strong water-water hydrogen bonds that must be broken.
+
+## Giant Ionic Structures
+
+Ionic compounds form giant ionic lattices in which cations and anions are arranged in a regular repeating pattern, held together by strong electrostatic attraction in all directions.
+
+### Properties of Ionic Compounds
+
+- **High melting and boiling points** -- due to the strength of ionic bonds throughout the lattice. For example, $\mathrm{NaCl}$ melts at $801^\circ\mathrm{C}$.
+- **Brittle** -- when a force is applied, layers of ions shift, bringing like charges into contact. The resulting repulsion causes the crystal to shatter.
+- **Electrical conductivity** -- conduct electricity when molten or dissolved (ions are free to move), but not when solid (ions are fixed in the lattice).
+- **Solubility in polar solvents** -- polar solvents (water) solvate the ions, overcoming the lattice enthalpy. Insoluble in non-polar solvents.
+
+### Lattice Structures
+
+| Structure | Coordination number | Example | Description |
+|---|---|---|---|
+| NaCl (rock salt) | 6:6 | $\mathrm{NaCl}$, $\mathrm{MgO}$ | Octahedral coordination; face-centred cubic arrangement |
+| CsCl | 8:8 | $\mathrm{CsCl}$ | Cubic coordination; body-centred arrangement |
+| ZnS (zinc blende) | 4:4 | $\mathrm{ZnS}$ | Tetrahedral coordination |
+
+## Giant Metallic Structures
+
+Metals consist of a regular lattice of positive metal ions surrounded by a sea of delocalised electrons. The metallic bond is the electrostatic attraction between the metal cations and the delocalised electrons.
+
+### Properties of Metals Explained
+
+| Property | Explanation |
+|---|---|
+| Electrical conductivity | Delocalised electrons are free to move under an applied potential difference |
+| Thermal conductivity | Delocalised electrons transfer kinetic energy through the lattice |
+| Malleability and ductility | Layers of cations can slide over each other without breaking the metallic bond (the electron sea adjusts) |
+| High melting points (generally) | Strength of metallic bonding depends on charge density of cations and number of delocalised electrons |
+| Variable melting points | $\mathrm{Na}$ (mp $98^\circ\mathrm{C}$, 1 delocalised electron per ion) vs $\mathrm{Al}$ (mp $661^\circ\mathrm{C}$, 3 delocalised electrons per ion) |
+
+## Giant Covalent Structures
+
+### Diamond
+
+Each carbon atom is covalently bonded to four others in a tetrahedral arrangement. This creates a rigid, three-dimensional network with very strong covalent bonds throughout.
+
+- Extremely hard (hardest natural substance)
+- Very high melting point ($> 3500^\circ\mathrm{C}$)
+- Insulator (no delocalised electrons)
+- Insoluble in all solvents
+
+### Graphite
+
+Each carbon atom is bonded to three others in a layered hexagonal structure. The fourth electron per carbon is delocalised above and below the layers.
+
+- Soft and slippery (layers can slide over each other)
+- High melting point (strong covalent bonds within layers)
+- Electrical conductor parallel to layers (delocalised electrons)
+- Insoluble in all solvents
+
+### Silicon(IV) Oxide ($\mathrm{SiO}_2$)
+
+Each silicon atom is covalently bonded to four oxygen atoms, and each oxygen is bonded to two silicon atoms, forming a giant covalent structure similar to diamond.
+
+- Very high melting point ($\approx 1700^\circ\mathrm{C}$)
+- Hard and insoluble
+- Electrical insulator
+
+### Comparison of Giant Structures
+
+| Property | Ionic | Metallic | Giant covalent |
+|---|---|---|---|
+| Melting point | High | Variable (often high) | Very high |
+| Electrical conductivity (solid) | No | Yes | No (except graphite) |
+| Electrical conductivity (molten) | Yes | N/A | N/A |
+| Solubility in water | Usually soluble | Insoluble | Insoluble |
+| Hardness | Brittle | Malleable | Hard (except graphite) |
+
+## VSEPR Theory: Comprehensive Examples
+
+### Common Molecular Geometries
+
+| Electron pairs | Bonding pairs | Lone pairs | Geometry | Bond angle | Example |
+|---|---|---|---|---|---|
+| 2 | 2 | 0 | Linear | $180^\circ$ | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$ |
+| 3 | 3 | 0 | Trigonal planar | $120^\circ$ | $\mathrm{BF}_3$, $\mathrm{NO}_3^-$ |
+| 3 | 2 | 1 | Bent/V-shaped | $<120^\circ$ | $\mathrm{SO}_2$, $\mathrm{SnCl}_2$ |
+| 4 | 4 | 0 | Tetrahedral | $109.5^\circ$ | $\mathrm{CH}_4$, $\mathrm{NH}_4^+$ |
+| 4 | 3 | 1 | Trigonal pyramidal | $<109.5^\circ$ | $\mathrm{NH}_3$ ($107^\circ$) |
+| 4 | 2 | 2 | Bent/V-shaped | $<109.5^\circ$ | $\mathrm{H}_2\mathrm{O}$ ($104.5^\circ$) |
+| 5 | 5 | 0 | Trigonal bipyramidal | $90^\circ$, $120^\circ$ | $\mathrm{PCl}_5$ |
+| 5 | 4 | 1 | Seesaw | -- | $\mathrm{SF}_4$ |
+| 5 | 3 | 2 | T-shaped | $90^\circ$ | $\mathrm{ClF}_3$ |
+| 5 | 2 | 3 | Linear | $180^\circ$ | $\mathrm{XeF}_2$, $\mathrm{I}_3^-$ |
+| 6 | 6 | 0 | Octahedral | $90^\circ$ | $\mathrm{SF}_6$ |
+| 6 | 5 | 1 | Square pyramidal | $<90^\circ$ | $\mathrm{BrF}_5$ |
+| 6 | 4 | 2 | Square planar | $90^\circ$ | $\mathrm{XeF}_4$ |
+
+### Effect of Lone Pairs on Bond Angle
+
+Lone pairs occupy more space than bonding pairs because they are held by only one nucleus and spread out more. This compresses the bond angles:
+
+- $\mathrm{NH}_3$: ideal tetrahedral $109.5^\circ$, actual $107^\circ$ (one lone pair compresses)
+- $\mathrm{H}_2\mathrm{O}$: ideal tetrahedral $109.5^\circ$, actual $104.5^\circ$ (two lone pairs compress more)
+- $\mathrm{CH}_4$: exactly $109.5^\circ$ (no lone pairs)
+
+## Additional Practice Problems
+
+<details>
+<summary>Problem 3</summary>
+
+Predict the shape and bond angle of $\mathrm{ClF}_3$ and explain your reasoning.
+
+**Solution:**
+
+Chlorine has 7 valence electrons, and each fluorine contributes 1, giving a total of $7 + 3(1) = 10$ valence electrons, or 5 electron pairs (3 bonding pairs + 2 lone pairs). This corresponds to a trigonal bipyramidal electron pair geometry.
+
+The lone pairs occupy equatorial positions (minimising repulsion by being at $120^\circ$ to three other pairs rather than $90^\circ$). The three fluorine atoms occupy the remaining equatorial and two axial positions, giving a **T-shaped** molecular geometry.
+
+Bond angles: The axial F--Cl--equatorial F angle is $90^\circ$. The equatorial F--Cl--equatorial F angle is less than $120^\circ$ due to lone pair repulsion.
+
+</details>
+
+<details>
+<summary>Problem 4</summary>
+
+Explain why $\mathrm{SiO}_2$ has a very high melting point ($\approx 1700^\circ\mathrm{C}$) while $\mathrm{CO}_2$ sublimes at $-78^\circ\mathrm{C}$, despite both containing group 4 elements bonded to oxygen.
+
+**Solution:**
+
+$\mathrm{SiO}_2$ forms a giant covalent (macromolecular) structure in which each silicon atom is covalently bonded to four oxygen atoms and each oxygen to two silicon atoms, creating a continuous three-dimensional network of strong covalent bonds ($\mathrm{Si}-\mathrm{O} = 464\,\mathrm{kJ/mol}$). Melting requires breaking these strong covalent bonds throughout the entire structure, which requires a very large amount of energy.
+
+$\mathrm{CO}_2$ consists of discrete linear molecules ($\mathrm{O}=\mathrm{C}=\mathrm{O}$) held together by weak intermolecular London forces. Sublimation requires only overcoming these weak intermolecular forces ($\approx 8\,\mathrm{kJ/mol}$), not breaking the strong covalent bonds within the molecule.
+
+The difference arises because silicon (in period 3) can form four single bonds to oxygen, creating an extended network, while carbon (in period 2) is too small to coordinate four oxygen atoms and instead forms stable double bonds in individual $\mathrm{CO}_2$ molecules.
+
+</details>
+
+<details>
+<summary>Problem 5</summary>
+
+Explain why $\mathrm{NH}_3$ has a higher boiling point ($-33^\circ\mathrm{C}$) than $\mathrm{PH}_3$ ($-88^\circ\mathrm{C}$) and $\mathrm{CH}_4$ ($-162^\circ\mathrm{C}$), despite having a lower molar mass than $\mathrm{PH}_3$.
+
+**Solution:**
+
+$\mathrm{NH}_3$ can form hydrogen bonds (N--H bonds with N having a lone pair), which are much stronger ($5$--$40\,\mathrm{kJ/mol}$) than the London forces and dipole-dipole interactions in $\mathrm{PH}_3$ and $\mathrm{CH}_4$. The hydrogen bonding in ammonia requires significantly more energy to overcome, giving it a much higher boiling point than expected from its molar mass alone.
+
+$\mathrm{PH}_3$ cannot form hydrogen bonds (P is not electronegative enough, and P--H bonds are not polar enough), so it relies on dipole-dipole forces and London forces only. $\mathrm{CH}_4$ is non-polar and relies on London forces only. Between $\mathrm{PH}_3$ and $\mathrm{CH}_4$, $\mathrm{PH}_3$ has a higher boiling point because it has more electrons (stronger London forces) and additional dipole-dipole interactions.
+
+</details>
+
 ---
 
 :::tip

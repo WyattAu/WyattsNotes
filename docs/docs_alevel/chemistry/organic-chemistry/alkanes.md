@@ -287,6 +287,81 @@ Catalytic cracking also produces higher-quality gasoline (higher octane rating d
    alkane $\mathrm{C}_n\mathrm{H}_{2n+2}$, the stoichiometric oxygen requirement is $\frac{3n+1}{2}$
    moles per mole of alkane.
 
+6. **Confusing thermal and catalytic cracking.** Thermal cracking uses higher temperatures without a catalyst and produces alkenes via free radical chemistry. Catalytic cracking uses lower temperatures with a zeolite catalyst and produces more branched and cyclic products.
+
+7. **Assuming all C--H bonds are equally reactive.** In radical halogenation, tertiary C--H bonds are weaker and more reactive than secondary, which are more reactive than primary. This selectivity is much more pronounced for bromine than for chlorine.
+
+## Radical Halogenation: Selectivity and Relative Rates
+
+### Reactivity of Different C--H Bonds
+
+| C--H bond type | Bond enthalpy ($\mathrm{kJ/mol}$) | Relative reactivity (Cl) | Relative reactivity (Br) |
+|---|---|---|---|
+| Primary ($1^\circ$) | 410 | 1 | 1 |
+| Secondary ($2^\circ$) | 395 | 3.8 | 82 |
+| Tertiary ($3^\circ$) | 380 | 5.0 | 1600 |
+
+Chlorine is relatively unselective (only a 5:1 preference for tertiary over primary) because the first propagation step is only slightly endothermic, so the transition state is early (reactant-like) and the energy difference between C--H bond types is small.
+
+Bromine is highly selective (1600:1 for tertiary over primary) because the first propagation step is significantly endothermic, so the transition state is late (product-like) and the full energy difference between C--H bond types is expressed.
+
+### Calculating Product Distributions
+
+**Worked Example.** Predict the relative amounts of 1-chloropropane and 2-chloropropane from the chlorination of propane.
+
+Propane has 6 primary hydrogens and 2 secondary hydrogens.
+
+Relative amount of 1-chloropropane $= 6 \times 1 = 6$
+
+Relative amount of 2-chloropropane $= 2 \times 3.8 = 7.6$
+
+Percentage of 1-chloropropane $= 6 / (6 + 7.6) \times 100 = 44\%$
+
+Percentage of 2-chloropropane $= 7.6 / (6 + 7.6) \times 100 = 56\%$
+
+The secondary product predominates despite having fewer hydrogens, because each secondary hydrogen is nearly 4 times more reactive.
+
+## Detailed Fractional Distillation of Crude Oil
+
+### Fraction Composition
+
+| Fraction | Carbon range | Boiling range ($^\circ\mathrm{C}$) | Uses |
+|---|---|---|---|
+| Refinery gas | $\mathrm{C}_1$--$\mathrm{C}_4$ | Below 25 | Bottled gas, fuel |
+| Petrol (gasoline) | $\mathrm{C}_5$--$\mathrm{C}_{10}$ | $30$--$150$ | Motor fuel |
+| Naphtha | $\mathrm{C}_6$--$\mathrm{C}_{14}$ | $100$--$200$ | Petrochemical feedstock |
+| Kerosene (paraffin) | $\mathrm{C}_{10}$--$\mathrm{C}_{16}$ | $150$--$250$ | Jet fuel, heating |
+| Diesel oil | $\mathrm{C}_{14}$--$\mathrm{C}_{20}$ | $220$--$350$ | Diesel engines |
+| Fuel oil | $\mathrm{C}_{18}$--$\mathrm{C}_{30}$ | $350$--$500$ | Ship fuel, power stations |
+| Bitumen | $\mathrm{C}_{30}+$ | Above 500 | Road surfacing, roofing |
+
+### Why Demand Exceeds Supply
+
+Modern demand favours lighter fractions (petrol, diesel, naphtha) over heavier fractions (fuel oil, bitumen). Cracking and reforming convert surplus heavy fractions into more valuable lighter products.
+
+### Catalytic Reforming
+
+Catalytic reforming converts straight-chain alkanes into branched alkanes and cycloalkanes (which have higher octane ratings) using a platinum catalyst at $500^\circ\mathrm{C}$. This is the primary industrial source of aromatic hydrocarbons (benzene, methylbenzene) which are produced by the dehydrogenation of cycloalkanes.
+
+## Greenhouse Effect and Carbon Footprint
+
+### Carbon Dioxide as a Greenhouse Gas
+
+$\mathrm{CO}_2$ absorbs infrared radiation emitted by the Earth's surface and re-radiates it back towards the surface, warming the atmosphere. The concentration of atmospheric $\mathrm{CO}_2$ has increased from approximately $280\,\mathrm{ppm}$ (pre-industrial) to over $420\,\mathrm{ppm}$ (2024), primarily due to combustion of fossil fuels.
+
+### Global Warming Potential (GWP)
+
+| Greenhouse gas | GWP (100-year) | Atmospheric lifetime | Primary source |
+|---|---|---|---|
+| $\mathrm{CO}_2$ | 1 | 100--1000 years | Fossil fuel combustion |
+| $\mathrm{CH}_4$ | 28 | 12 years | Natural gas leaks, agriculture |
+| $\mathrm{N}_2\mathrm{O}$ | 265 | 114 years | Fertiliser use, industrial |
+| $\mathrm{CF}_4$ (CFC-14) | 6,630 | 50,000 years | Electronics industry |
+
+### Carbon Capture and Storage (CCS)
+
+CCS involves capturing $\mathrm{CO}_2$ from point sources (power stations, cement works) and storing it underground in depleted oil/gas reservoirs or deep saline aquifers. Pre-combustion capture (gasification), post-combustion capture (amine scrubbing), and oxy-fuel combustion are the three main approaches.
+
 ## Practice Problems
 
 <details>
@@ -346,6 +421,197 @@ tertiary radical $(\mathrm{CH}_3)_3\mathrm{C}^\bullet$ is stabilised by hypercon
 nine neighbouring C--H bonds and the inductive effect of three methyl groups, making it
 significantly lower in energy than the primary radical
 $\mathrm{CH}_3\mathrm{CH}^\bullet(\mathrm{CH}_3)\mathrm{CH}_3$.
+
+</details>
+
+<details>
+<summary>Problem 3</summary>
+
+Write equations for the complete and incomplete combustion of butane ($\mathrm{C}_4\mathrm{H}_{10}$). Calculate the enthalpy change for complete combustion using bond enthalpies, and explain why incomplete combustion occurs in limited oxygen.
+
+**Solution:**
+
+Complete combustion:
+
+$$
+2\mathrm{C}_4\mathrm{H}_{10}(g) + 13\mathrm{O}_2(g) \to 8\mathrm{CO}_2(g) + 10\mathrm{H}_2\mathrm{O}(l)
+$$
+
+Incomplete combustion (producing CO):
+
+$$
+2\mathrm{C}_4\mathrm{H}_{10}(g) + 9\mathrm{O}_2(g) \to 8\mathrm{CO}(g) + 10\mathrm{H}_2\mathrm{O}(l)
+$$
+
+Further incomplete combustion (producing C):
+
+$$
+2\mathrm{C}_4\mathrm{H}_{10}(g) + 5\mathrm{O}_2(g) \to 8\mathrm{C}(s) + 10\mathrm{H}_2\mathrm{O}(l)
+$$
+
+Incomplete combustion occurs when the supply of oxygen is insufficient for all carbon to be fully oxidised to $\mathrm{CO}_2$. The products are a mixture of $\mathrm{CO}_2$, $\mathrm{CO}$, $\mathrm{C}$ (soot), and unburnt hydrocarbons. $\mathrm{CO}$ is toxic because it binds irreversibly to haemoglobin, reducing the blood's oxygen-carrying capacity.
+
+Enthalpy of complete combustion using bond enthalpies (per mole of butane):
+
+Bonds broken: $10 \times \mathrm{C-H}$ ($10 \times 413 = 4130$) + $3 \times \mathrm{C-C}$ ($3 \times 347 = 1041$) + $\frac{13}{2} \times \mathrm{O=O}$ ($6.5 \times 498 = 3237$) = $8408\,\mathrm{kJ/mol}$
+
+Bonds formed: $4 \times 2 \times \mathrm{C=O}$ ($8 \times 805 = 6440$) + $5 \times 2 \times \mathrm{O-H}$ ($10 \times 464 = 4640$) = $11080\,\mathrm{kJ/mol}$
+
+$$
+\Delta H_c = 8408 - 11080 = -2672\,\mathrm{kJ/mol}
+$$
+
+The literature value is $-2877\,\mathrm{kJ/mol}$. The discrepancy arises from using mean bond enthalpies rather than specific values for butane and its products.
+
+</details>
+
+## Conformations of Alkanes
+
+### Free Rotation About Sigma Bonds
+
+Rotation about single ($\sigma$) bonds is relatively free, giving alkanes a range of conformations. For ethane, the two methyl groups can rotate relative to each other:
+
+- **Eclipsed conformation:** H atoms on the front and back carbons are aligned. Highest energy due to torsional strain and steric repulsion between electron clouds.
+- **Staggered conformation:** H atoms on the front carbon are positioned between those on the back carbon. Lowest energy (most stable).
+- **The torsional barrier** is approximately $12\,\mathrm{kJ/mol}$ for ethane, small enough to allow rapid rotation at room temperature.
+
+### Conformations of Butane
+
+Butane has two important staggered conformations:
+
+- **Anti conformation:** The two methyl groups are maximally separated ($180^\circ$ dihedral angle). Lowest energy.
+- **Gauche conformation:** The two methyl groups are $60^\circ$ apart. Higher energy than anti by approximately $3.7\,\mathrm{kJ/mol}$ due to van der Waals repulsion between the methyl groups.
+
+The energy difference between anti and gauche is small, so both conformations are populated at room temperature, with the anti conformation being more abundant.
+
+## Environmental and Industrial Significance
+
+### Crude Oil and Fractional Distillation
+
+Crude oil is a mixture of hydrocarbons that is separated by fractional distillation based on boiling point:
+
+| Fraction | Carbon range | Boiling range ($^\circ\mathrm{C}$) | Uses |
+|---|---|---|---|
+| Refinery gas | $\mathrm{C}_1$--$\mathrm{C}_4$ | Below 40 | Fuel gas, LPG |
+| Gasoline (petrol) | $\mathrm{C}_5$--$\mathrm{C}_{10}$ | 40--170 | Motor fuel |
+| Naphtha | $\mathrm{C}_6$--$\mathrm{C}_{12}$ | 60--200 | Petrochemical feedstock |
+| Kerosene | $\mathrm{C}_{10}$--$\mathrm{C}_{16}$ | 170--250 | Jet fuel, heating |
+| Diesel | $\mathrm{C}_{14}$--$\mathrm{C}_{20}$ | 250--340 | Diesel engines |
+| Fuel oil | $\mathrm{C}_{20}$--$\mathrm{C}_{40}$ | 340--500 | Ship fuel, power stations |
+| Bitumen | $>\mathrm{C}_{50}$ | Above 500 | Roads, roofing |
+
+### Cracking
+
+Larger hydrocarbons (high boiling fractions) are in less demand than smaller ones. **Cracking** breaks large molecules into smaller, more useful ones:
+
+**Thermal cracking:** High temperature ($400$--$900^\circ\mathrm{C}$) and pressure. Produces a mixture of alkanes and alkenes. Free radical mechanism. Used to produce ethene.
+
+$$
+\mathrm{C}_{10}\mathrm{H}_{22} \xrightarrow{\Delta} \mathrm{C}_8\mathrm{H}_{18} + \mathrm{C}_2\mathrm{H}_4
+$$
+
+**Catalytic cracking:** Lower temperature ($450^\circ\mathrm{C}$) with a zeolite catalyst. Produces branched alkanes and cycloalkanes (better for petrol, higher octane rating).
+
+### Octane Rating
+
+The octane rating measures the resistance of a fuel to premature detonation (knocking) in a petrol engine:
+
+- **2,2,4-trimethylpentane** (iso-octane): octane rating = 100 (very resistant to knocking).
+- **Heptane:** octane rating = 0 (knocks severely).
+- Branched and cyclic alkanes have higher octane ratings than straight-chain alkanes.
+
+Catalytic cracking increases octane rating by producing more branched molecules. Tetraethyl lead ($\mathrm{Pb}(\mathrm{C}_2\mathrm{H}_5)_4$) was historically used as an anti-knock additive but is now banned due to lead toxicity.
+
+## Additional Practice Problems
+
+<details>
+<summary>Problem 3</summary>
+
+Write the mechanism for the radical chlorination of propane, showing all propagation and termination steps. Explain why 1-chloropropane and 2-chloropropane are both formed, and predict which is the major product.
+
+**Solution:**
+
+**Initiation:**
+
+$$
+\mathrm{Cl}_2 \xrightarrow{\mathrm{UV}} 2\mathrm{Cl}\cdot
+$$
+
+**Propagation (pathway to 1-chloropropane):**
+
+$$
+\mathrm{Cl}\cdot + \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_3 \to \mathrm{HCl} + \mathrm{CH}_2\cdot\mathrm{CH}_2\mathrm{CH}_3 \quad (\text{abstracts a primary H})
+$$
+
+$$
+\mathrm{CH}_2\cdot\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{Cl}_2 \to \mathrm{CH}_2\mathrm{ClCH}_2\mathrm{CH}_3 + \mathrm{Cl}\cdot
+$$
+
+**Propagation (pathway to 2-chloropropane):**
+
+$$
+\mathrm{Cl}\cdot + \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_3 \to \mathrm{HCl} + \mathrm{CH}_3\mathrm{CH}\cdot\mathrm{CH}_3 \quad (\text{abstracts a secondary H})
+$$
+
+$$
+\mathrm{CH}_3\mathrm{CH}\cdot\mathrm{CH}_3 + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{CHClCH}_3 + \mathrm{Cl}\cdot
+$$
+
+**Termination:**
+
+$$
+\mathrm{Cl}\cdot + \mathrm{Cl}\cdot \to \mathrm{Cl}_2
+$$
+
+$$
+\mathrm{Cl}\cdot + \mathrm{R}\cdot \to \mathrm{RCl}
+$$
+
+$$
+\mathrm{R}\cdot + \mathrm{R}'\cdot \to \mathrm{RR}'
+$$
+
+(where R and R' are any organic radicals formed)
+
+**Major product:** 1-chloropropane predominates statistically because propane has 6 primary hydrogens vs 2 secondary hydrogens. However, the selectivity factor for chlorination is only about 3.8:1 (secondary:primary), so:
+
+- 1-chloropropane: $6 \times 1 = 6$ (relative yield)
+- 2-chloropropane: $2 \times 3.8 = 7.6$ (relative yield)
+
+Percentage of 2-chloropropane $= 7.6/(6 + 7.6) = 56\%$. The secondary product (2-chloropropane) is the major product despite fewer secondary hydrogens.
+
+</details>
+
+<details>
+<summary>Problem 4</summary>
+
+$10.0\,\mathrm{g}$ of an alkane is completely burned in excess oxygen. The $\mathrm{CO}_2$ produced is absorbed by $\mathrm{NaOH}$ solution, causing an increase in mass of $30.8\,\mathrm{g}$. Identify the alkane.
+
+**Solution:**
+
+Mass of $\mathrm{CO}_2$ absorbed $= 30.8\,\mathrm{g}$.
+
+$$
+n(\mathrm{CO}_2) = \frac{30.8}{44.0} = 0.700\,\mathrm{mol}
+$$
+
+If the alkane has formula $\mathrm{C}_n\mathrm{H}_{2n+2}$, combustion produces $n$ moles of $\mathrm{CO}_2$:
+
+$$
+n = 0.700
+$$
+
+Molar mass of alkane $= 10.0/0.700 \times (1/n)$... Wait: $n(\text{alkane}) = n(\mathrm{CO}_2)/n_\mathrm{C}$.
+
+If 1 mol alkane produces $n$ mol $\mathrm{CO}_2$: $n(\text{alkane}) = 0.700/n$.
+
+$M = 10.0/n(\text{alkane}) = 10.0n/0.700 = 14.3n$.
+
+For $\mathrm{C}_5\mathrm{H}_{12}$: $M = 60 + 12 = 72$. $14.3n = 72 \implies n = 5.03 \approx 5$.
+
+The alkane is **pentane** ($\mathrm{C}_5\mathrm{H}_{12}$, $M = 72.0\,\mathrm{g/mol}$).
+
+Check: $n(\text{pentane}) = 10.0/72.0 = 0.139\,\mathrm{mol}$. $n(\mathrm{CO}_2) = 5 \times 0.139 = 0.694\,\mathrm{mol}$. $m(\mathrm{CO}_2) = 0.694 \times 44.0 = 30.5\,\mathrm{g}$ (close to $30.8\,\mathrm{g}$; the small discrepancy is due to rounding).
 
 </details>
 

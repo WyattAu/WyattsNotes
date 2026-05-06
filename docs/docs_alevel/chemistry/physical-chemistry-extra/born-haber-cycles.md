@@ -363,3 +363,144 @@ ionic model -- specifically, some degree of covalent bonding (orbital overlap) t
 equation does not account for.
 
 </details>
+
+<details>
+<summary>Problem 3</summary>
+
+Explain why the lattice enthalpy of $\mathrm{NaCl}$ ($-788\,\mathrm{kJ/mol}$) is much less exothermic than that of $\mathrm{MgO}$ ($-3844\,\mathrm{kJ/mol}$), even though the ionic radii are similar ($r(\mathrm{Na}^+) \approx 102\,\mathrm{pm}$, $r(\mathrm{Mg}^{2+}) \approx 72\,\mathrm{pm}$; $r(\mathrm{Cl}^-) \approx 181\,\mathrm{pm}$, $r(\mathrm{O}^{2-}) \approx 140\,\mathrm{pm}$).
+
+**Solution:**
+
+The Born-Lande equation shows that the lattice enthalpy is proportional to $\frac{z^+ z^-}{r_0}$.
+
+For NaCl: $z^+ z^- = 1 \times 1 = 1$, $r_0 \approx 102 + 181 = 283\,\mathrm{pm}$.
+
+For MgO: $z^+ z^- = 2 \times 2 = 4$, $r_0 \approx 72 + 140 = 212\,\mathrm{pm}$.
+
+The charge product for MgO is 4 times that of NaCl, and the ionic separation is smaller. The combined effect gives:
+
+$$
+\frac{\Delta H_\mathrm{lat}(\mathrm{MgO})}{\Delta H_\mathrm{lat}(\mathrm{NaCl})} \approx \frac{4}{1} \times \frac{283}{212} \approx 5.3
+$$
+
+This ratio ($5.3$) is close to the experimental ratio ($3844/788 = 4.9$), confirming that the primary factor is the product of ionic charges. The higher charges produce much stronger Coulombic attraction, resulting in a more exothermic lattice enthalpy.
+
+</details>
+
+<details>
+<summary>Problem 4</summary>
+
+The second electron affinity of oxygen is $+798\,\mathrm{kJ/mol}$ (endothermic). Explain why this value is endothermic despite the fact that electron affinities are typically exothermic.
+
+**Solution:**
+
+The first electron affinity of oxygen is exothermic ($-141\,\mathrm{kJ/mol}$) because the incoming electron is attracted to the nuclear charge of the neutral oxygen atom, and energy is released as the electron enters the $2p$ subshell.
+
+The second electron affinity involves adding an electron to the oxide ion $\mathrm{O}^-$, which already carries a negative charge. The incoming electron is repelled by the negative charge of the ion. Energy must be supplied to overcome this electrostatic repulsion and force the second electron into the $2p$ subshell. Therefore, the process is endothermic.
+
+This is a general principle: all second and subsequent electron affinities are endothermic because they involve overcoming repulsion from an already negatively charged ion. The first electron affinity is usually exothermic (except for noble gases and nitrogen).
+
+</details>
+
+## Applications of Born-Haber Cycles
+
+### Predicting Stability of Ionic Compounds
+
+Born-Haber cycles can be used to predict whether an ionic compound is thermodynamically stable (i.e. whether $\Delta H_f^\circ$ is negative). If the sum of all the energetic steps except lattice enthalpy is less exothermic (or more endothermic) than the lattice enthalpy, the compound is stable.
+
+**Example:** Why does $\mathrm{MgCl}$ not exist, but $\mathrm{MgCl}_2$ does?
+
+For hypothetical $\mathrm{MgCl}$: $\Delta H_f^\circ = \Delta H_\mathrm{at}(\mathrm{Mg}) + \Delta H_\mathrm{at}(\mathrm{Cl}) + \mathrm{IE}_1(\mathrm{Mg}) + \mathrm{EA}_1(\mathrm{Cl}) + \Delta H_\mathrm{lat}(\mathrm{MgCl})$
+
+$= 148 + 122 + 738 + (-349) + \Delta H_\mathrm{lat}(\mathrm{MgCl})$
+
+The lattice enthalpy of $\mathrm{MgCl}$ (with singly charged ions) would be relatively small. Even if $\Delta H_\mathrm{lat}(\mathrm{MgCl}) \approx -700\,\mathrm{kJ/mol}$, the sum is approximately $+148 + 122 + 738 - 349 - 700 = -41\,\mathrm{kJ/mol}$, only weakly exothermic.
+
+For $\mathrm{MgCl}_2$: the doubly charged $\mathrm{Mg}^{2+}$ produces a much more exothermic lattice enthalpy ($-2526\,\mathrm{kJ/mol}$), and the overall $\Delta H_f^\circ = -641\,\mathrm{kJ/mol}$, making it much more stable.
+
+The second ionisation energy of magnesium ($+1451\,\mathrm{kJ/mol}$) is more than compensated by the greatly increased lattice enthalpy of the $2+$ compound. This is the thermodynamic reason why Group 2 metals form $2+$ ions rather than $+$ ions.
+
+### Enthalpy of Hydration and Solubility Trends
+
+The solubility of an ionic compound depends on the balance between lattice enthalpy and hydration enthalpy:
+
+$$
+\Delta H_\mathrm{sol}^\circ = \Delta H_\mathrm{lat,diss}^\circ + \Delta H_\mathrm{hyd}^\circ
+$$
+
+For a salt to be soluble, $\Delta G_\mathrm{sol}^\circ$ must be negative. Since $\Delta G = \Delta H - T\Delta S$, and $\Delta S_\mathrm{sol}$ is usually positive for simple salts (ions dispersed in solution have more freedom than in the ordered lattice), the enthalpy term does not need to be negative -- it just needs to be sufficiently small.
+
+**Trend in Group 2 sulphate solubility:**
+
+| Salt | $\Delta H_\mathrm{lat,diss}^\circ$ ($\mathrm{kJ/mol}$) | $\Delta H_\mathrm{hyd}^\circ$ ($\mathrm{kJ/mol}$) | $\Delta H_\mathrm{sol}^\circ$ ($\mathrm{kJ/mol}$) |
+|---|---|---|---|
+| $\mathrm{MgSO}_4$ | $+3054$ | $-2856$ | $+198$ |
+| $\mathrm{CaSO}_4$ | $+2666$ | $-2602$ | $+64$ |
+| $\mathrm{SrSO}_4$ | $+2520$ | $-2444$ | $+76$ |
+| $\mathrm{BaSO}_4$ | $+2422$ | $-2328$ | $+94$ |
+
+Group 2 sulphates become less soluble down the group. As the ionic radius of the cation increases, the lattice enthalpy decreases (less exothermic) and the hydration enthalpy also decreases (less exothermic). However, the hydration enthalpy decreases more rapidly than the lattice enthalpy because the small cation has a much higher charge density and its hydration is particularly favourable. The net result is that $\Delta H_\mathrm{sol}^\circ$ becomes more endothermic down the group.
+
+**Trend in Group 2 hydroxide solubility:** Group 2 hydroxides become *more* soluble down the group. Here, the lattice enthalpy decreases much more rapidly than the hydration enthalpy because the small anion ($\mathrm{OH}^-$) is common and the change in lattice enthalpy with cation size dominates. The net $\Delta H_\mathrm{sol}^\circ$ becomes less endothermic (or more exothermic) down the group.
+
+### Polarising Power and Solubility
+
+The polarising power of a cation ($\phi = z^+/r^+$, where $z^+$ is the charge and $r^+$ is the ionic radius) determines the degree of covalent character in an ionic bond. Highly polarising cations (small, highly charged) distort the electron cloud of large, easily polarised anions, introducing covalent character.
+
+| Cation | $\phi$ | Effect |
+|---|---|---|
+| $\mathrm{Li}^+$ | High | $\mathrm{LiCl}$ is partially covalent; soluble in organic solvents |
+| $\mathrm{Mg}^{2+}$ | Very high | $\mathrm{MgCl}_2$ has some covalent character |
+| $\mathrm{Al}^{3+}$ | Extremely high | $\mathrm{AlCl}_3$ is covalent (sublimes at $178^\circ\mathrm{C}$) |
+
+## Perfect Ionic Model vs Reality
+
+### Born-Lande Equation (Theoretical Lattice Enthalpy)
+
+The Born-Lande equation calculates the theoretical lattice enthalpy assuming perfect ionic bonding:
+
+$$
+\Delta H_\mathrm{lat}^\circ = -\frac{N_A M z^+ z^- e^2}{4\pi\varepsilon_0 r_0}\left(1 - \frac{1}{n}\right)
+$$
+
+where $N_A$ is Avogadro's number, $M$ is the Madelung constant (depends on crystal structure), $z^+$ and $z^-$ are the ionic charges, $r_0$ is the internuclear distance, and $n$ is the Born exponent (related to the electron configuration of the ions, typically 5--12).
+
+### Comparing Theoretical and Experimental Values
+
+| Compound | Theoretical ($\mathrm{kJ/mol}$) | Experimental ($\mathrm{kJ/mol}$) | Difference |
+|---|---|---|---|
+| $\mathrm{NaCl}$ | $-770$ | $-787$ | $17$ (small) |
+| $\mathrm{AgCl}$ | $-770$ | $-905$ | $135$ (large) |
+| $\mathrm{MgO}$ | $-3795$ | $-3791$ | $4$ (negligible) |
+| $\mathrm{AlCl}_3$ | $-5220$ | $-5492$ | $272$ (large) |
+
+When the experimental value is less exothermic than the theoretical value, it indicates covalent character (the ions are not fully charged, so the electrostatic attraction is weaker than predicted). The discrepancy is largest for compounds where Fajans' rules predict significant covalent character (small, highly charged cation + large, polarisable anion).
+
+## Enthalpy of Atomisation and Electron Affinity
+
+### Enthalpy of Atomisation
+
+This is the enthalpy change when one mole of gaseous atoms is formed from an element in its standard state. For metals, this involves breaking metallic bonds; for non-metals (diatomic), it involves breaking covalent bonds.
+
+| Element | $\Delta H_\mathrm{at}$ ($\mathrm{kJ/mol}$) | Note |
+|---|---|---|
+| Na | $+108$ | Per atom of Na(s) |
+| Mg | $+148$ | Per atom of Mg(s) |
+| Al | $+330$ | Per atom of Al(s) |
+| Cl | $+122$ | Per atom of $\mathrm{Cl}_2(g)$ (half the bond enthalpy) |
+| O | $+249$ | Per atom of $\mathrm{O}_2(g)$ (half the bond enthalpy) |
+| N | $+473$ | Per atom of $\mathrm{N}_2(g)$ (half the triple bond enthalpy) |
+
+### Electron Affinity
+
+The first electron affinity is the enthalpy change when one mole of gaseous atoms each gains one electron. It is exothermic for most atoms (energy is released).
+
+The second electron affinity is always endothermic: adding an electron to a negatively charged ion requires energy to overcome electrostatic repulsion.
+
+| Process | $\Delta H$ ($\mathrm{kJ/mol}$) |
+|---|---|
+| $\mathrm{Cl}(g) + e^- \to \mathrm{Cl}^-(g)$ | $-349$ |
+| $\mathrm{O}(g) + e^- \to \mathrm{O}^-(g)$ | $-141$ |
+| $\mathrm{O}^-(g) + e^- \to \mathrm{O}^{2-}(g)$ | $+798$ |
+
+The large positive second EA of oxygen ($+798\,\mathrm{kJ/mol}$) is a major reason why the formation of ionic oxides is less exothermic than expected, and why many metal oxides have significant covalent character.

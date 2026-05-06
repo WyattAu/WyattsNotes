@@ -925,7 +925,340 @@ password twice to confirm it was typed correctly).
 
 </details>
 
-:::
+---
+
+## Common Pitfalls
+
+1. **Confusing SQL WHERE and HAVING clauses:** WHERE filters individual ROWS before grouping. HAVING filters GROUPS after a GROUP BY clause. Use WHERE for conditions on individual records (e.g., price > 100) and HAVING for conditions on aggregate values (e.g., COUNT(*) > 5). Applying aggregate functions in a WHERE clause will cause an error.
+
+2. **Off-by-one errors in loop conditions:** When using a loop to process n items, students frequently set the loop condition incorrectly (e.g., using <= n instead of < n, or starting the counter at 1 instead of 0). Always trace through the loop manually for a small example to verify the boundary conditions are correct.
+
+3. **Not normalising databases sufficiently:** A database table should not contain redundant data. If a customer's address appears in multiple order records, the design is not normalised. Each piece of data should appear in only one place. Violating normalisation leads to update anomalies, insertion anomalies, and deletion anomalies.
+
+4. **Confusing PRIMARY KEY with FOREIGN KEY:** A primary key uniquely identifies each record in its table and cannot be NULL. A foreign key is a field in one table that references the primary key of another table, establishing a relationship. A field can be both a primary key in its own table and a foreign key referencing another table.
+
+5. **Assignment vs comparison in IF statements:** Using `=` (assignment) instead of `==` (comparison) in an IF condition will assign the value rather than compare it. This is one of the most common logical errors in programming.
+
+6. **Forgetting to initialise variables:** Using a variable before assigning it a value leads to undefined behaviour. Always initialise variables before use, especially counters and accumulators in loops.
+
+7. **Infinite WHILE loops:** If the loop condition never becomes false, the program will run indefinitely. Always ensure the loop variable is updated inside the loop body.
+
+8. **Array index out of bounds:** Accessing an index that does not exist (e.g., index 5 in an array of size 5, where valid indices are 0--4) causes a runtime error. Remember that arrays are 0-indexed in most languages.
+
+9. **DELETE without WHERE:** Executing `DELETE FROM Student` without a WHERE clause removes ALL records from the table. This is irreversible. Always double-check the WHERE clause.
+
+10. **Confusing function and procedure:** A function returns a value; a procedure does not. In DSE ICT, this distinction is tested. If the algorithm needs to produce a result, use a function with a RETURN statement.
+
+---
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Trace Table</summary>
+
+Trace the following algorithm with inputs `A = 5`, `B = 3`.
+
+```python
+BEGIN
+    INPUT A, B
+    SET result = A
+    WHILE B > 0
+        SET result = result + A
+        SET B = B - 1
+    ENDWHILE
+    OUTPUT result
+END
+```
+
+(a) Complete the trace table.
+
+(b) State what this algorithm calculates.
+
+Answer:
+
+(a)
+
+| Iteration | B   | result | B > 0 |
+| --------- | --- | ------ | ----- |
+| Initial   | 3   | 5      | True  |
+| 1         | 2   | 10     | True  |
+| 2         | 1   | 15     | True  |
+| 3         | 0   | 20     | False |
+
+Output: `result = 20`
+
+(b) This algorithm calculates `A * (B + 1)`. With A=5, B=3, it computes 5 * 4 = 20. Alternatively, it can be described as multiplying A by (initial B + 1).
+
+</details>
+
+<details>
+<summary>Question 2: Sorting Algorithm</summary>
+
+(a) Write pseudocode for a bubble sort algorithm that sorts an array of N numbers in ascending order.
+
+(b) Trace the first two passes of the bubble sort on the array: `[5, 3, 8, 1, 4]`.
+
+Answer:
+
+(a)
+
+```python
+BEGIN
+    INPUT N
+    FOR i = 0 TO N - 1
+        INPUT numbers[i]
+    NEXT i
+    FOR i = 0 TO N - 2
+        FOR j = 0 TO N - 2 - i
+            IF numbers[j] > numbers[j + 1] THEN
+                SET temp = numbers[j]
+                SET numbers[j] = numbers[j + 1]
+                SET numbers[j + 1] = temp
+            ENDIF
+        NEXT j
+    NEXT i
+    FOR i = 0 TO N - 1
+        OUTPUT numbers[i]
+    NEXT i
+END
+```
+
+(b) Initial array: `[5, 3, 8, 1, 4]`
+
+**Pass 1 (i=0):**
+
+| j | Compare       | Action        | Array after swap     |
+| - | ------------- | ------------- | -------------------- |
+| 0 | 5 > 3         | Swap          | [3, 5, 8, 1, 4]      |
+| 1 | 5 > 8         | No swap       | [3, 5, 8, 1, 4]      |
+| 2 | 8 > 1         | Swap          | [3, 5, 1, 8, 4]      |
+| 3 | 8 > 4         | Swap          | [3, 5, 1, 4, 8]      |
+
+After Pass 1: `[3, 5, 1, 4, 8]` (8 is in final position)
+
+**Pass 2 (i=1):**
+
+| j | Compare       | Action        | Array after swap     |
+| - | ------------- | ------------- | -------------------- |
+| 0 | 3 > 5         | No swap       | [3, 5, 1, 4, 8]      |
+| 1 | 5 > 1         | Swap          | [3, 1, 5, 4, 8]      |
+| 2 | 5 > 4         | Swap          | [3, 1, 4, 5, 8]      |
+
+After Pass 2: `[3, 1, 4, 5, 8]` (5 and 8 are in final positions)
+
+</details>
+
+<details>
+<summary>Question 3: Database Normalisation</summary>
+
+A company records orders in a single table:
+
+| OrderID | CustomerName | CustomerAddress | ProductCode | ProductName | Quantity | UnitPrice |
+| ------- | ------------ | --------------- | ----------- | ----------- | -------- | --------- |
+| 001     | Chan         | 10 Main St      | P01         | Keyboard    | 2        | 200       |
+| 002     | Lee          | 5 Oak Rd        | P02         | Mouse       | 1        | 150       |
+| 003     | Chan         | 10 Main St      | P02         | Mouse       | 3        | 150       |
+
+(a) Identify the redundancies in this table.
+
+(b) Convert this table to Third Normal Form (3NF). Show all tables with primary keys and foreign keys.
+
+(c) Explain why the normalised design is better than the original.
+
+Answer:
+
+(a) Redundancies:
+- CustomerName and CustomerAddress are repeated for Chan (appears in OrderID 001 and 003).
+- ProductName and UnitPrice are repeated for P02/Mouse (appears in OrderID 002 and 003).
+- If Chan's address changes, multiple records must be updated (update anomaly).
+
+(b) **3NF Tables:**
+
+**Customer** (CustomerID PK, CustomerName, CustomerAddress)
+
+| CustomerID | CustomerName | CustomerAddress |
+| ---------- | ------------ | --------------- |
+| C01        | Chan         | 10 Main St      |
+| C02        | Lee          | 5 Oak Rd        |
+
+**Product** (ProductCode PK, ProductName, UnitPrice)
+
+| ProductCode | ProductName | UnitPrice |
+| ----------- | ----------- | --------- |
+| P01         | Keyboard    | 200       |
+| P02         | Mouse       | 150       |
+
+**Order** (OrderID PK, CustomerID FK, OrderDate)
+
+| OrderID | CustomerID FK |
+| ------- | ------------- |
+| 001     | C01           |
+| 002     | C02           |
+| 003     | C01           |
+
+**OrderLine** (OrderID FK, ProductCode FK, Quantity) -- composite PK
+
+| OrderID FK | ProductCode FK | Quantity |
+| ---------- | -------------- | -------- |
+| 001        | P01            | 2        |
+| 002        | P02            | 1        |
+| 003        | P02            | 3        |
+
+(c) The normalised design eliminates data redundancy (customer and product details stored once), improves data integrity (no update, insertion, or deletion anomalies), and makes queries more flexible (e.g., finding all orders by a customer is done via the CustomerID foreign key).
+
+</details>
+
+<details>
+<summary>Question 4: SQL Queries</summary>
+
+Given the following tables from the normalised design above:
+
+- Customer (CustomerID, CustomerName, CustomerAddress)
+- Product (ProductCode, ProductName, UnitPrice)
+- Order (OrderID, CustomerID, OrderDate)
+- OrderLine (OrderID, ProductCode, Quantity)
+
+Write SQL queries for:
+
+(a) List all customer names who live on "Main St".
+
+(b) Find the total quantity of each product ordered.
+
+(c) Find the customer name and product name for all orders.
+
+(d) Find the total revenue (Quantity * UnitPrice) for each order.
+
+Answer:
+
+(a)
+
+```sql
+SELECT CustomerName
+FROM Customer
+WHERE CustomerAddress LIKE '%Main St%';
+```
+
+(b)
+
+```sql
+SELECT ProductCode, SUM(Quantity) AS TotalQuantity
+FROM OrderLine
+GROUP BY ProductCode;
+```
+
+(c)
+
+```sql
+SELECT Customer.CustomerName, Product.ProductName
+FROM Customer
+JOIN Order ON Customer.CustomerID = Order.CustomerID
+JOIN OrderLine ON Order.OrderID = OrderLine.OrderID
+JOIN Product ON OrderLine.ProductCode = Product.ProductCode;
+```
+
+(d)
+
+```sql
+SELECT Order.OrderID, SUM(OrderLine.Quantity * Product.UnitPrice) AS TotalRevenue
+FROM Order
+JOIN OrderLine ON Order.OrderID = OrderLine.OrderID
+JOIN Product ON OrderLine.ProductCode = Product.ProductCode
+GROUP BY Order.OrderID;
+```
+
+</details>
+
+<details>
+<summary>Question 5: Programming with Functions</summary>
+
+(a) Write a function in pseudocode that takes an array of numbers and returns the average.
+
+(b) Write a procedure that takes a student's score and prints the corresponding grade (A: >= 80, B: >= 60, C: >= 40, F: < 40).
+
+(c) Explain the difference between a function and a procedure.
+
+Answer:
+
+(a)
+
+```python
+FUNCTION calculateAverage(numbers, size)
+    SET total = 0
+    FOR i = 0 TO size - 1
+        total = total + numbers[i]
+    NEXT i
+    RETURN total / size
+END FUNCTION
+```
+
+(b)
+
+```python
+PROCEDURE printGrade(score)
+    IF score >= 80 THEN
+        OUTPUT "Grade: A"
+    ELSE IF score >= 60 THEN
+        OUTPUT "Grade: B"
+    ELSE IF score >= 40 THEN
+        OUTPUT "Grade: C"
+    ELSE
+        OUTPUT "Grade: F"
+    ENDIF
+END PROCEDURE
+```
+
+(c) A **function** performs a task and returns a value to the calling code (using a RETURN statement). It can be used within expressions (e.g., `x = calculateAverage(arr, 5)`). A **procedure** performs a task but does not return a value. It is called as a standalone statement (e.g., `printGrade(75)`). The key distinction in DSE ICT is whether the subprogram produces a return value.
+
+</details>
+
+<details>
+<summary>Question 6: File Handling and Data Processing</summary>
+
+A text file `scores.txt` contains student scores, one per line. Write a program that:
+
+(a) Reads all scores from the file.
+
+(b) Calculates and outputs the average score.
+
+(c) Counts and outputs how many students scored above the average.
+
+Answer:
+
+```python
+BEGIN
+    SET scores = empty array
+    SET count = 0
+    SET total = 0
+
+    OPEN FILE "scores.txt" FOR READ
+        WHILE NOT end of file
+            READ score FROM FILE
+            APPEND score TO scores
+            total = total + score
+            count = count + 1
+        ENDWHILE
+    CLOSE FILE
+
+    IF count > 0 THEN
+        SET average = total / count
+        OUTPUT "Average: " + average
+
+        SET aboveAverage = 0
+        FOR i = 0 TO count - 1
+            IF scores[i] > average THEN
+                aboveAverage = aboveAverage + 1
+            ENDIF
+        NEXT i
+        OUTPUT "Students above average: " + aboveAverage
+    ELSE
+        OUTPUT "No data found."
+    ENDIF
+END
+```
+
+This program reads scores into an array while accumulating the total. It then computes the average, iterates through the array again to count scores above average, and outputs both results.
+
+</details>
 
 :::
 

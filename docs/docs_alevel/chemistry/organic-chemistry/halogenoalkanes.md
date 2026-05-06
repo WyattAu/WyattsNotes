@@ -222,6 +222,121 @@ making them more reactive in the troposphere and less likely to reach the strato
 (hydrofluorocarbons, which contain no chlorine and do not deplete ozone but are potent greenhouse
 gases).
 
+### Green Chemistry Alternatives
+
+The Montreal Protocol is widely regarded as the most successful international environmental agreement. Key milestones:
+
+- 1987: Original protocol -- 50% reduction in CFC production by 2000.
+- 1990 (London Amendment): Complete phase-out of CFCs by 2000.
+- 1992 (Copenhagen Amendment): Accelerated phase-out; HCFCs to be phased out by 2030.
+- 2007: Accelerated HCFC phase-out for developing countries.
+
+Current replacements include:
+
+| Compound class | Example | Ozone impact | Global warming impact |
+|---|---|---|---|
+| HFCs | $\mathrm{CF}_3\mathrm{CH}_2\mathrm{F}$ (HFC-134a) | Zero (no chlorine) | High (GWP $\approx 1430$) |
+| HFOs (hydrofluoroolefins) | $\mathrm{CF}_3\mathrm{CF}=\mathrm{CH}_2$ (HFO-1234yf) | Zero | Low (GWP $\approx 4$) |
+| Natural refrigerants | $\mathrm{NH}_3$, $\mathrm{CO}_2$, hydrocarbons | Zero | Zero or low |
+
+HFOs are the latest generation of refrigerants, designed to have both zero ozone depletion potential and very low global warming potential.
+
+## Hydrolysis of Halogenoalkanes in Detail
+
+### Experimental Determination of Rate
+
+The rate of hydrolysis of halogenoalkanes can be followed by measuring the rate of appearance of halide ions (e.g. using $\mathrm{AgNO}_3$ to precipitate the halide):
+
+$$
+\mathrm{R-X} + \mathrm{H}_2\mathrm{O} \to \mathrm{R-OH} + \mathrm{X}^-
+$$
+
+Adding $\mathrm{AgNO}_3(aq)$ produces a precipitate ($\mathrm{AgCl}$, $\mathrm{AgBr}$, or $\mathrm{AgI}$) whose appearance can be timed. The time for the precipitate to appear is inversely proportional to the rate of hydrolysis.
+
+| Halogenoalkane | Time for $\mathrm{AgNO}_3$ precipitate | Relative rate |
+|---|---|---|
+| 1-chlorobutane | Slowest | 1 |
+| 1-bromobutane | Intermediate | 50 |
+| 1-iodobutane | Fastest | 10,000 |
+
+The rate differences correlate with C--X bond strength: $\mathrm{C}-\mathrm{I} \lt \mathrm{C}-\mathrm{Br} \lt \mathrm{C}-\mathrm{Cl}$.
+
+### Effect of Solvent on SN1 vs SN2
+
+The choice of solvent can determine which mechanism operates:
+
+- **Polar protic solvents** (water, ethanol, carboxylic acids) stabilise ions through hydrogen bonding. They stabilise the carbocation intermediate and the leaving group, favouring SN1.
+- **Polar aprotic solvents** (acetone, DMSO, DMF, acetonitrile) solvate cations strongly but do not solvate anions well. The nucleophile remains relatively unsolvated and highly reactive, favouring SN2.
+
+## Ozone Depletion and the Montreal Protocol
+
+### The Catalytic Cycle
+
+In the stratosphere, UV radiation breaks CFCs into chlorine radicals:
+
+$$
+\mathrm{CFCl}_3 \xrightarrow{\mathrm{UV}} \mathrm{CFCl}_2\cdot + \mathrm{Cl}\cdot
+$$
+
+The chlorine radical catalytically destroys ozone:
+
+$$
+\mathrm{Cl}\cdot + \mathrm{O}_3 \to \mathrm{ClO}\cdot + \mathrm{O}_2
+$$
+
+$$
+\mathrm{ClO}\cdot + \mathrm{O}_3 \to \mathrm{Cl}\cdot + 2\mathrm{O}_2
+$$
+
+Net reaction: $2\mathrm{O}_3 \to 3\mathrm{O}_2$
+
+One chlorine radical can destroy approximately $100{,}000$ ozone molecules before being removed from the cycle (by forming $\mathrm{HCl}$, which diffuses back to the troposphere).
+
+### Why CFCs Are Particularly Damaging
+
+CFCs are inert in the troposphere (no reactions with $\mathrm{OH}$ radicals or water). They have atmospheric lifetimes of 50--100 years, allowing them to reach the stratosphere intact. Once there, UV photolysis releases the chlorine radical. The combination of stability in the lower atmosphere and reactivity in the upper atmosphere makes CFCs uniquely harmful.
+
+### Montreal Protocol Milestones
+
+| Year | Milestone |
+|---|---|
+| 1985 | Vienna Convention for the Protection of the Ozone Layer |
+| 1987 | Montreal Protocol signed -- 50\% cut in CFC production by 2000 |
+| 1990 | London Amendment -- complete phase-out of CFCs by 2000 |
+| 1992 | Copenhagen Amendment -- accelerated phase-out to 1996 |
+| 2007 | Accelerator Amendment -- HCFC phase-out by 2030 for developed nations |
+| 2016 | Kigali Amendment -- phase-down of HFCs (potent greenhouse gases) |
+
+### Green Chemistry Alternatives
+
+| Compound | ODP | GWP | Notes |
+|---|---|---|---|
+| $\mathrm{CFCl}_3$ (CFC-11) | 1.0 | 4,660 | Banned |
+| $\mathrm{CF}_2\mathrm{Cl}_2$ (CFC-12) | 1.0 | 10,900 | Banned |
+| $\mathrm{CHF}_2\mathrm{Cl}$ (HCFC-22) | 0.05 | 1,810 | Being phased out |
+| $\mathrm{CH}_2\mathrm{FCF}_3$ (HFC-134a) | 0 | 1,430 | Replacement; high GWP |
+| $\mathrm{CF}_3\mathrm{CH}=\mathrm{CH}_2$ (HFO-1234yf) | 0 | 4 | Next-generation; low GWP |
+
+ODP = Ozone Depletion Potential (relative to CFC-11). GWP = Global Warming Potential (100-year, relative to $\mathrm{CO}_2$).
+
+### Hydrolysis Rate Data
+
+| Halogenoalkane | Relative rate of hydrolysis with $\mathrm{NaOH}(aq)$ |
+|---|---|
+| $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{I}$ | Fastest |
+| $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}$ | Fast |
+| $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{Cl}$ | Slow |
+| $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{F}$ | Very slow (practically inert) |
+
+### Solvent Effects on SN1 vs SN2
+
+| Solvent type | Effect on SN1 | Effect on SN2 |
+|---|---|---|
+| Polar protic (water, ethanol) | Favours -- stabilises carbocation and leaving group | Disfavoured -- solvates nucleophile, reducing its reactivity |
+| Polar aprotic (acetone, DMSO, DMF) | Disfavoured -- carbocation poorly stabilised | Favoured -- nucleophile not solvated, remains highly reactive |
+
+This explains why $\mathrm{NaOH}$ in water favours substitution, while $\mathrm{NaOH}$ in ethanol favours elimination.
+
 ## Common Pitfalls
 
 1. **Confusing SN1 and SN2 conditions.** Memorise the table: primary/SN2, tertiary/SN1, strong
@@ -289,6 +404,52 @@ energy for cleavage, giving a slower reaction rate.
 Additionally, $\mathrm{Cl}^-$ is a poorer leaving group than $\mathrm{I}^-$ because $\mathrm{Cl}^-$
 is a stronger base (more willing to accept a proton, less willing to depart with its lone pair). The
 larger, more polarisable $\mathrm{I}^-$ stabilises the departing negative charge more effectively.
+
+</details>
+
+<details>
+<summary>Problem 3</summary>
+
+Propose a synthesis of butanenitrile ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CN}$) starting from butan-1-ol. State all reagents and conditions.
+
+**Solution:**
+
+Step 1: Convert butan-1-ol to 1-bromobutane using $\mathrm{PBr}_3$ (or concentrated $\mathrm{HBr}$):
+
+$$
+\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} \xrightarrow{\mathrm{PBr}_3} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}
+$$
+
+Step 2: Nucleophilic substitution with cyanide ion:
+
+$$
+\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br} \xrightarrow{\mathrm{KCN},\,\text{ethanol, reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CN}
+$$
+
+The mechanism is SN2 (primary halogenoalkane). The cyanide ion attacks from the opposite side of the C--Br bond, giving the nitrile with an extended carbon chain (one extra carbon). $\mathrm{KCN}$ is used instead of $\mathrm{NaCN}$ because $\mathrm{KCN}$ is more soluble in ethanol. The reaction is heated under reflux to increase the rate.
+
+</details>
+
+<details>
+<summary>Problem 4</summary>
+
+Explain why tertiary halogenoalkanes undergo elimination rather than substitution with a strong base in ethanol, whereas primary halogenoalkanes undergo substitution. Discuss the role of the solvent.
+
+**Solution:**
+
+**Tertiary halogenoalkanes** form stable carbocation intermediates (SN1/E1). With a strong base ($\mathrm{OH}^-$) at elevated temperature, the elimination pathway (E1 or E2) is favoured because:
+
+1. The carbocation intermediate is readily formed (stable tertiary carbocation).
+2. The base is present in high concentration and can abstract a $\beta$-hydrogen competitively.
+3. At elevated temperature, elimination is entropically favoured (produces more particles: alkene + water vs alcohol).
+
+**Primary halogenoalkanes** cannot form stable carbocations (the primary carbocation is too high in energy). They react via a concerted SN2 mechanism in which the nucleophile attacks as the leaving group departs. In a polar protic solvent (water), the nucleophile ($\mathrm{OH}^-$) is the strongest available nucleophile and substitution predominates.
+
+**Role of solvent:**
+
+- **Aqueous solution** (polar protic): Favours substitution. The solvent stabilises the transition state and the ionic products. The nucleophile ($\mathrm{OH}^-$) is well-solvated but still the strongest nucleophile present.
+- **Ethanol** (polar protic but less polar than water): Favours elimination. The lower polarity reduces the nucleophilicity of $\mathrm{OH}^-$ and the solvation of the carbocation, while the higher temperature (required for ethanol as solvent) shifts the competition towards elimination.
+- **Polar aprotic** (e.g. DMSO, acetone): Favours SN2. The nucleophile is not solvated and retains its full reactivity.
 
 </details>
 

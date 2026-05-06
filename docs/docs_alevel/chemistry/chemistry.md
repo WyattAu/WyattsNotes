@@ -95,3 +95,59 @@ All boards require demonstration of practical competence. The following skills a
 Each module page is self-contained but cross-referenced. Work through them in the order listed above -- the physical chemistry modules (atomic structure through thermodynamics) form the conceptual foundation, after which organic chemistry and transition metals build on those principles.
 
 Worked examples are provided throughout. Attempt them before reading the solution. Practice problems at the end of each section are designed to be representative of examination questions across all four boards.
+
+## Key Formulae Summary
+
+### Physical Chemistry
+
+| Topic | Key Equations |
+|---|---|
+| Quantitative | $n = \frac{m}{M}$, $c = \frac{n}{V}$, $pV = nRT$, $\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$ |
+| Acids/Bases | $\mathrm{pH} = -\log[\mathrm{H}^+]$, $K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}$, $K_w = [\mathrm{H}^+][\mathrm{OH}^-]$, $\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$ |
+| Equilibrium | $K_c = \frac{\prod[\mathrm{products}]^a}{\prod[\mathrm{reactants}]^b}$, $K_p = \frac{\prod p_i^{a_i}}{\prod p_j^{b_j}}$, $K_p = K_c(RT)^{\Delta n}$ |
+| Thermodynamics | $\Delta G = \Delta H - T\Delta S$, $\Delta G^\circ = -RT\ln K$, $q = mc\Delta T$ |
+| Kinetics | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac{\ln 2}{k}$ (first-order) |
+| Electrochemistry | $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$, $\Delta G^\circ = -nFE^\circ$, $Q = It$, $n = \frac{Q}{F}$, $E = E^\circ - \frac{RT}{nF}\ln Q$ |
+| Born-Haber | $\Delta H_f = \Delta H_\mathrm{at} + \sum \mathrm{IE} + \Delta H_\mathrm{at}(\text{anion}) + \sum \mathrm{EA} + \Delta H_\mathrm{lat}$ |
+
+### Organic Chemistry
+
+| Topic | Key Reactions |
+|---|---|
+| Alkanes | Radical substitution: $\mathrm{RH} + \mathrm{X}_2 \xrightarrow{\mathrm{UV}} \mathrm{RX} + \mathrm{HX}$ |
+| Alkenes | Electrophilic addition: $\mathrm{C=C} + \mathrm{HX}$, $\mathrm{C=C} + \mathrm{X}_2$, $\mathrm{C=C} + \mathrm{H}_2\mathrm{O}$ (acid) |
+| Halogenoalkanes | SN2: $\mathrm{R-X} + \mathrm{OH}^- \to \mathrm{R-OH} + \mathrm{X}^-$; E2: $\mathrm{R-X} + \mathrm{OH}^- \to \text{alkene} + \mathrm{X}^- + \mathrm{H}_2\mathrm{O}$ |
+| Alcohols | Oxidation: $1^\circ \to$ aldehyde $\to$ acid; $2^\circ \to$ ketone; Dehydration $\to$ alkene |
+| Carbonyls | Nucleophilic addition: $\mathrm{NaBH}_4$ reduction; 2,4-DNPH test; Tollens' test |
+| Carboxylic acids | Esterification with alcohol/$\mathrm{H}_2\mathrm{SO}_4$; React with $\mathrm{NaHCO}_3$ |
+| Amines | Diazotisation: $\mathrm{ArNH}_2 \to \mathrm{ArN}_2^+$; Coupling reactions; Reduction of nitriles |
+| Arenes | Electrophilic substitution: nitration, halogenation, Friedel-Crafts alkylation/acylation |
+
+### Inorganic Chemistry
+
+| Topic | Key Concepts |
+|---|---|
+| Transition metals | Variable oxidation states, complex ions, crystal field theory, colour, catalysis |
+| Periodicity | Trends in atomic radius, IE, melting point across periods and down groups |
+| Group 2 | Reactivity with water, solubility trends (sulphates decrease, hydroxides increase) |
+| Group 7 | Displacement reactions, oxidising power trend, halide tests with $\mathrm{AgNO}_3$ |
+
+## Examination Strategy
+
+### Time Management
+
+- Allocate time proportionally to marks (e.g. 1 minute per mark for a 90-mark paper).
+- Attempt all questions; do not leave blanks.
+- Show working clearly -- method marks are available even if the final answer is wrong.
+
+### Common Areas Where Marks Are Lost
+
+1. **Significant figures:** Use the same number of significant figures as the data in the question (typically 3).
+2. **Units:** Always include units in the final answer.
+3. **State symbols:** Include (s), (l), (g), (aq) in equations unless told otherwise.
+4. **Balancing equations:** Always check that equations are balanced.
+5. **Explain, do not describe:** Exam questions often require explanation (mechanism, reason), not just a description of what happens.
+
+### Data Book Usage
+
+All exam boards provide a data booklet with standard electrode potentials, specific heat capacities, and other constants. Familiarise yourself with its layout before the exam so you can find data quickly.

@@ -183,6 +183,52 @@ $$
 
 This is analogous to the Arrhenius equation (see [Chemical Kinetics](./chemical-kinetics)).
 
+**Worked Example.** For the reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$, $\Delta H^\circ = +58.0\,\mathrm{kJ/mol}$ and $K_p = 0.115$ at $298\,\mathrm{K}$. Calculate $K_p$ at $350\,\mathrm{K}$.
+
+$$
+\ln\left(\frac{K_2}{0.115}\right) = -\frac{58000}{8.314}\left(\frac{1}{350} - \frac{1}{298}\right)
+$$
+
+$$
+\ln\left(\frac{K_2}{0.115}\right) = -6977 \times (0.002857 - 0.003356) = -6977 \times (-4.99 \times 10^{-4}) = +3.48
+$$
+
+$$
+\frac{K_2}{0.115} = e^{3.48} = 32.5
+$$
+
+$$
+K_2 = 32.5 \times 0.115 = 3.73
+$$
+
+$K_p$ increases significantly with temperature, consistent with the endothermic forward reaction being favoured at higher temperature.
+
+### Relationship Between $K_c$ and $K_p$
+
+For gas-phase reactions, $K_c$ and $K_p$ are related by:
+
+$$
+K_p = K_c(RT)^{\Delta n_g}
+$$
+
+where $\Delta n_g$ is the change in the number of moles of gas (products minus reactants).
+
+**Worked Example.** For $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$ at $500\,\mathrm{K}$, $K_c = 6.0 \times 10^{-2}\,\mathrm{mol^{-2}\,dm^6}$. Calculate $K_p$.
+
+$\Delta n_g = 2 - (1 + 3) = -2$.
+
+$$
+K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2} = \frac{6.0 \times 10^{-2}}{(8.314 \times 500)^2} = \frac{0.060}{(4157)^2} = \frac{0.060}{1.728 \times 10^7} = 3.5 \times 10^{-9}\,\mathrm{Pa^{-2}}
+$$
+
+Note: if $K_c$ is in $\mathrm{mol/dm^3}$, $R$ must be in consistent units. Alternatively, work in $\mathrm{atm}$: $R = 0.0821\,\mathrm{dm^3\,atm\,mol^{-1}\,K^{-1}}$.
+
+$$
+K_p = \frac{0.060}{(0.0821 \times 500)^2} = \frac{0.060}{(41.05)^2} = \frac{0.060}{1685} = 3.6 \times 10^{-5}\,\mathrm{atm^{-2}}
+$$
+
+Always state the pressure units when giving $K_p$.
+
 ### Concentration / Pressure
 
 Changing concentrations or partial pressures shifts the equilibrium position but does **not** change $K$ (at constant temperature). The system re-equilibrates such that the ratio of products to reactants returns to the same $K$ value.
@@ -295,6 +341,106 @@ The solubility is reduced by a factor of approximately $10^4$.
 
 5. **Reversing $K$ incorrectly.** If a reaction is reversed, $K_\mathrm{new} = 1/K_\mathrm{original}$. If the stoichiometry is multiplied by $n$, $K_\mathrm{new} = K_\mathrm{original}^n$.
 
+6. **Using concentration units incorrectly in $K_p$.** $K_p$ uses partial pressures (atm, Pa, or bar). Partial pressure $p_i = x_i \times p_\mathrm{total}$, where $x_i$ is the mole fraction.
+
+7. **Assuming that changing the amount of a solid affects the equilibrium.** Changing the amount of a pure solid or liquid has no effect on the equilibrium position because its activity is constant.
+
+## The Relationship Between $K_c$ and $K_p$
+
+For a gas-phase reaction:
+
+$$
+a\mathrm{A}(g) + b\mathrm{B}(g) \rightleftharpoons c\mathrm{C}(g) + d\mathrm{D}(g)
+$$
+
+The relationship between $K_p$ and $K_c$ is:
+
+$$
+K_p = K_c(RT)^{\Delta n}
+$$
+
+where $\Delta n = (c + d) - (a + b)$ is the change in the number of moles of gas, $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$, and $T$ is in Kelvin.
+
+**Important:** When $\Delta n = 0$ (equal moles of gas on both sides), $K_p = K_c$.
+
+**Worked Example.** For $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$ at $298\,\mathrm{K}$:
+
+$$
+\Delta n = 2 - (1 + 3) = -2
+$$
+
+$$
+K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2}
+$$
+
+The units of $K_p$ and $K_c$ differ when $\Delta n \neq 0$. Always check units carefully.
+
+## Partition Coefficients and Distribution
+
+A related concept to equilibrium constants is the partition coefficient, which describes the distribution of a solute between two immiscible solvents:
+
+$$
+K_\mathrm{partition} = \frac{[\text{solute}]_\mathrm{organic}}{[\text{solute}]_\mathrm{aqueous}}
+$$
+
+This is constant at a given temperature and is used in solvent extraction. If a solute is more soluble in the organic phase, $K_\mathrm{partition} \gt 1$, and extraction with an organic solvent is efficient.
+
+### Worked Example: Multiple Extractions
+
+$100\,\mathrm{cm}^3$ of an aqueous solution contains $5.0\,\mathrm{g}$ of an organic compound. The partition coefficient between diethyl ether and water is 4.0. Calculate how much of the compound is extracted by:
+
+(a) One extraction with $100\,\mathrm{cm}^3$ of ether.
+
+(b) Two extractions with $50\,\mathrm{cm}^3$ of ether each.
+
+**(a)** $K = \frac{c_\mathrm{ether}}{c_\mathrm{water}} = 4.0$
+
+Let $x$ = mass extracted. $c_\mathrm{ether} = x/100$, $c_\mathrm{water} = (5.0 - x)/100$.
+
+$$
+4.0 = \frac{x/100}{(5.0 - x)/100} = \frac{x}{5.0 - x}
+$$
+
+$$
+4(5.0 - x) = x \implies 20 - 4x = x \implies x = 4.0\,\mathrm{g}
+$$
+
+**(b)** First extraction with $50\,\mathrm{cm}^3$: Let $x_1$ = mass extracted.
+
+$$
+4.0 = \frac{x_1/50}{(5.0 - x_1)/100} = \frac{2x_1}{5.0 - x_1}
+$$
+
+$$
+4(5.0 - x_1) = 2x_1 \implies 20 - 4x_1 = 2x_1 \implies x_1 = 3.33\,\mathrm{g}
+$$
+
+Remaining: $5.0 - 3.33 = 1.67\,\mathrm{g}$.
+
+Second extraction with $50\,\mathrm{cm}^3$: Let $x_2$ = mass extracted.
+
+$$
+4.0 = \frac{x_2/50}{(1.67 - x_2)/100} = \frac{2x_2}{1.67 - x_2}
+$$
+
+$$
+4(1.67 - x_2) = 2x_2 \implies x_2 = 1.11\,\mathrm{g}
+$$
+
+Total extracted: $3.33 + 1.11 = 4.44\,\mathrm{g}$.
+
+Two extractions with half the volume each extract more ($4.44\,\mathrm{g}$) than one extraction with the full volume ($4.0\,\mathrm{g}$). Multiple extractions are always more efficient than a single extraction of the same total volume.
+
+## Acid-Base Equilibria (Brief Link)
+
+The equilibrium constant for the dissociation of a weak acid is the acid dissociation constant, $K_a$. The relationship between $K_a$ and $K_b$ for a conjugate acid-base pair at $298\,\mathrm{K}$ is:
+
+$$
+K_a \times K_b = K_w = 1.0 \times 10^{-14}
+$$
+
+This is a specific application of the general principle that $K_\mathrm{forward} \times K_\mathrm{reverse} = 1$ for a pair of conjugate reactions. See [Acids, Bases and Buffers](./acids-bases) for the full treatment.
+
 ## Practice Problems
 
 <details>
@@ -350,6 +496,169 @@ $[\mathrm{Cl}^-] = \frac{0.0050 \times 40.0}{50.0} = 0.0040\,\mathrm{mol/dm}^3$
 $Q = [\mathrm{Ag}^+][\mathrm{Cl}^-] = 0.0020 \times 0.0040 = 8.0 \times 10^{-6}$
 
 Since $Q = 8.0 \times 10^{-6} \gt K_{sp} = 1.8 \times 10^{-10}$, a precipitate of $\mathrm{AgCl}$ will form.
+
+</details>
+
+<details>
+<summary>Problem 3</summary>
+
+At $298\,\mathrm{K}$, the equilibrium $\mathrm{PCl}_5(g) \rightleftharpoons \mathrm{PCl}_3(g) + \mathrm{Cl}_2(g)$ has $K_p = 12.5\,\mathrm{kPa}$. A sample of $\mathrm{PCl}_5$ is placed in a sealed vessel at $298\,\mathrm{K}$. At equilibrium, the total pressure is $200\,\mathrm{kPa}$ and the partial pressure of $\mathrm{Cl}_2$ is $95\,\mathrm{kPa}$. Calculate the partial pressures of $\mathrm{PCl}_5$ and $\mathrm{PCl}_3$ at equilibrium and verify that they satisfy $K_p$.
+
+**Solution:**
+
+At equilibrium: $p(\mathrm{Cl}_2) = 95\,\mathrm{kPa}$.
+
+From the stoichiometry, $p(\mathrm{PCl}_3) = p(\mathrm{Cl}_2) = 95\,\mathrm{kPa}$ (1:1 ratio).
+
+Total pressure: $p(\mathrm{PCl}_5) + p(\mathrm{PCl}_3) + p(\mathrm{Cl}_2) = 200\,\mathrm{kPa}$
+
+$$
+p(\mathrm{PCl}_5) = 200 - 95 - 95 = 10\,\mathrm{kPa}
+$$
+
+Verification:
+
+$$
+K_p = \frac{p(\mathrm{PCl}_3) \times p(\mathrm{Cl}_2)}{p(\mathrm{PCl}_5)} = \frac{95 \times 95}{10} = \frac{9025}{10} = 902.5\,\mathrm{kPa}
+$$
+
+This does not equal $K_p = 12.5\,\mathrm{kPa}$, indicating that the given data is inconsistent with $K_p = 12.5\,\mathrm{kPa}$. Either the total pressure or the $\mathrm{Cl}_2$ partial pressure is incorrect for the stated $K_p$.
+
+Let us instead use $K_p = 12.5\,\mathrm{kPa}$ and total pressure $= 200\,\mathrm{kPa}$ to find the correct partial pressures.
+
+Let $x = p(\mathrm{PCl}_5)$ at equilibrium. Then $p(\mathrm{PCl}_3) = p(\mathrm{Cl}_2) = 200 - x$ (since they are equal).
+
+$$
+K_p = \frac{(200 - x)^2}{x} = 12.5
+$$
+
+$$
+(200 - x)^2 = 12.5x
+$$
+
+$$
+40000 - 400x + x^2 = 12.5x
+$$
+
+$$
+x^2 - 412.5x + 40000 = 0
+$$
+
+Using the quadratic formula:
+
+$$
+x = \frac{412.5 \pm \sqrt{412.5^2 - 4 \times 40000}}{2} = \frac{412.5 \pm \sqrt{170156 - 160000}}{2} = \frac{412.5 \pm \sqrt{10156}}{2} = \frac{412.5 \pm 100.8}{2}
+$$
+
+$x = 256.7$ or $x = 155.9$. Since $p(\mathrm{PCl}_3) = 200 - x$ must be positive, $x = 155.9\,\mathrm{kPa}$.
+
+$p(\mathrm{PCl}_5) = 155.9\,\mathrm{kPa}$, $p(\mathrm{PCl}_3) = p(\mathrm{Cl}_2) = 44.1\,\mathrm{kPa}$.
+
+Check: $K_p = (44.1)^2 / 155.9 = 1945 / 155.9 = 12.5\,\mathrm{kPa}$. Correct.
+
+</details>
+
+<details>
+<summary>Problem 4</summary>
+
+The common ion effect: Calculate the solubility of $\mathrm{CaF}_2$ in (a) pure water and (b) $0.050\,\mathrm{mol/dm}^3$ $\mathrm{CaCl}_2$ solution. $K_{sp}(\mathrm{CaF}_2) = 3.9 \times 10^{-11}$.
+
+**Solution:**
+
+(a) In pure water: $\mathrm{CaF}_2(s) \rightleftharpoons \mathrm{Ca}^{2+}(aq) + 2\mathrm{F}^-(aq)$
+
+Let $s$ = solubility. $[\mathrm{Ca}^{2+}] = s$, $[\mathrm{F}^-] = 2s$.
+
+$$
+K_{sp} = s(2s)^2 = 4s^3 = 3.9 \times 10^{-11}
+$$
+
+$$
+s = \sqrt[3]{\frac{3.9 \times 10^{-11}}{4}} = \sqrt[3]{9.75 \times 10^{-12}} = 2.14 \times 10^{-4}\,\mathrm{mol/dm}^3
+$$
+
+(b) In $0.050\,\mathrm{mol/dm}^3$ $\mathrm{CaCl}_2$: $[\mathrm{Ca}^{2+}]_\mathrm{from\ CaCl_2} = 0.050\,\mathrm{mol/dm}^3$.
+
+$$
+K_{sp} = [\mathrm{Ca}^{2+}]_\mathrm{total}[\mathrm{F}^-]^2 = (0.050 + s)(2s)^2 \approx 0.050 \times 4s^2
+$$
+
+(The approximation $0.050 + s \approx 0.050$ is valid because $s$ will be very small compared to $0.050$.)
+
+$$
+0.200s^2 = 3.9 \times 10^{-11}
+$$
+
+$$
+s^2 = 1.95 \times 10^{-10}
+$$
+
+$$
+s = 1.40 \times 10^{-5}\,\mathrm{mol/dm}^3
+$$
+
+The solubility in $0.050\,\mathrm{mol/dm}^3$ $\mathrm{CaCl}_2$ ($1.40 \times 10^{-5}\,\mathrm{mol/dm}^3$) is approximately 15 times less than in pure water ($2.14 \times 10^{-4}\,\mathrm{mol/dm}^3$). The common ion ($\mathrm{Ca}^{2+}$) suppresses the dissolution of $\mathrm{CaF}_2$.
+
+</details>
+
+<details>
+<summary>Problem 5</summary>
+
+The equilibrium $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$ has $\Delta H = +58\,\mathrm{kJ/mol}$ and $K_p = 0.115\,\mathrm{atm}$ at $298\,\mathrm{K}$.
+
+(a) If the total pressure is increased, predict the effect on the equilibrium position.
+(b) If the temperature is increased to $350\,\mathrm{K}$, predict whether $K_p$ increases or decreases, and explain.
+(c) $1.00\,\mathrm{mol}$ of $\mathrm{N}_2\mathrm{O}_4$ is placed in a $10.0\,\mathrm{dm}^3$ vessel at $298\,\mathrm{K}$. Calculate the equilibrium partial pressures of both gases.
+
+**Solution:**
+
+(a) Increasing total pressure favours the side with fewer moles of gas. Here, 1 mole of $\mathrm{N}_2\mathrm{O}_4$ produces 2 moles of $\mathrm{NO}_2$, so increasing pressure shifts equilibrium to the left (favouring $\mathrm{N}_2\mathrm{O}_4$).
+
+(b) The forward reaction is endothermic ($\Delta H > 0$). Increasing temperature shifts equilibrium to the right (endothermic direction), so $K_p$ increases. This is consistent with the van 't Hoff equation: $\ln(K_2/K_1) = -(\Delta H/R)(1/T_2 - 1/T_1)$.
+
+(c) Let $x$ = moles of $\mathrm{N}_2\mathrm{O}_4$ dissociated.
+
+At equilibrium: $n(\mathrm{N}_2\mathrm{O}_4) = 1.00 - x$, $n(\mathrm{NO}_2) = 2x$, total moles $= 1.00 + x$.
+
+Total pressure: use $pV = nRT$:
+
+$$
+p_\mathrm{total} = \frac{(1.00 + x)RT}{V} = \frac{(1.00 + x) \times 8.314 \times 298}{10.0 \times 10^{-3}} = (1.00 + x) \times 247{,}700\,\mathrm{Pa}
+$$
+
+Partial pressures: $p(\mathrm{N}_2\mathrm{O}_4) = \frac{1.00 - x}{1.00 + x} \times p_\mathrm{total}$, $p(\mathrm{NO}_2) = \frac{2x}{1.00 + x} \times p_\mathrm{total}$.
+
+$$
+K_p = \frac{p(\mathrm{NO}_2)^2}{p(\mathrm{N}_2\mathrm{O}_4)} = \frac{(2x)^2}{(1.00 - x)(1.00 + x)} \times p_\mathrm{total} = \frac{4x^2}{1 - x^2} \times p_\mathrm{total}
+$$
+
+Since $K_p = 0.115\,\mathrm{atm} = 0.115 \times 101325 = 11652\,\mathrm{Pa}$:
+
+$$
+11652 = \frac{4x^2}{1 - x^2} \times 247700(1 + x)
+$$
+
+This requires iterative solution or approximation. Assuming $x \ll 1$:
+
+$$
+11652 \approx 4x^2 \times 247700
+$$
+
+$$
+x^2 \approx \frac{11652}{990800} = 0.01176
+$$
+
+$$
+x \approx 0.108\,\mathrm{mol}
+$$
+
+$n(\mathrm{NO}_2) = 2 \times 0.108 = 0.217\,\mathrm{mol}$, $n(\mathrm{N}_2\mathrm{O}_4) = 0.892\,\mathrm{mol}$.
+
+$p(\mathrm{NO}_2) = \frac{0.217}{1.108} \times 247700(1.108) = 0.217 \times 247700 = 53751\,\mathrm{Pa} = 0.531\,\mathrm{atm}$
+
+$p(\mathrm{N}_2\mathrm{O}_4) = 0.892 \times 247700 = 220948\,\mathrm{Pa} = 2.18\,\mathrm{atm}$
+
+Verify: $K_p = (0.531)^2 / 2.18 = 0.282/2.18 = 0.129\,\mathrm{atm}$ (close to $0.115$, the discrepancy is due to the approximation).
 
 </details>
 

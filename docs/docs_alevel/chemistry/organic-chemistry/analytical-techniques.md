@@ -228,6 +228,18 @@ $R_f$ values range from 0 to 1. Values are reproducible only under identical con
 **Visualisation:** UV light (for UV-active compounds), iodine vapour, or ninhydrin spray (for amino
 acids).
 
+### Advanced TLC: Two-Dimensional TLC
+
+When a mixture contains many components with similar $R_f$ values, one-dimensional TLC may not resolve all of them. Two-dimensional TLC involves running the plate in one solvent system, rotating it $90^\circ$, then running it in a second solvent system with different polarity. Components that co-migrated in the first dimension may separate in the second. This is particularly useful for amino acid analysis.
+
+### Column Chromatography
+
+Column chromatography scales up the separation achieved by TLC. A glass column is packed with the stationary phase (silica gel or alumina). The mixture is loaded at the top, and solvent is passed through the column under gravity or pressure. Fractions are collected as the components elute at different times.
+
+**Flash chromatography** uses pressurised gas (nitrogen or air) to push solvent through the column faster, reducing separation time.
+
+**Elution order:** In normal-phase chromatography (polar stationary phase), non-polar compounds elute first. In reverse-phase chromatography (non-polar stationary phase, e.g. $\mathrm{C}_{18}$-bonded silica), polar compounds elute first.
+
 ### Gas Chromatography (GC)
 
 **Mobile phase:** Inert carrier gas ($\mathrm{He}$, $\mathrm{N}_2$).
@@ -247,6 +259,21 @@ burn in a hydrogen flame. The peak area is proportional to the amount of compoun
 **GC-MS:** Coupling GC with mass spectrometry provides both separation and identification. Each peak
 in the chromatogram corresponds to a mass spectrum that can be searched against a library.
 
+### Quantitative GC Analysis
+
+GC can be used quantitatively to determine the composition of mixtures. The area under each peak is proportional to the amount of that compound. For accurate quantification:
+
+- Use an internal standard: a known amount of a compound not present in the sample is added. The ratio of peak areas (analyte/internal standard) is used for calibration, correcting for injection variability.
+- Response factors may differ between compounds; calibration curves are needed for each analyte.
+
+**Worked Example.** A mixture of ethanol and propan-1-ol is analysed by GC. The peak areas are 45,000 (ethanol) and 30,000 (propan-1-ol). If the response factors are equal, calculate the mole ratio.
+
+$$
+\frac{n_\mathrm{ethanol}}{n_\mathrm{propanol}} = \frac{\text{Area}_\mathrm{ethanol}}{\text{Area}_\mathrm{propanol}} = \frac{45000}{30000} = 1.5
+$$
+
+The mixture is 60% ethanol and 40% propan-1-ol by mole.
+
 ### High-Performance Liquid Chromatography (HPLC)
 
 **Mobile phase:** Liquid solvent(s) under high pressure (up to $400\,\mathrm{atm}$).
@@ -258,6 +285,42 @@ phase is polar. Compounds are separated by their relative hydrophobicity.
 
 **Applications:** Non-volatile compounds, thermally labile compounds (proteins, pharmaceuticals),
 and compounds that decompose at GC temperatures.
+
+### HPLC Detectors
+
+| Detector | Principle | Compounds detected |
+|---|---|---|
+| UV-Vis | Absorption at fixed wavelength | UV-active compounds (most organics) |
+| Refractive Index (RI) | Change in refractive index | Universal (but less sensitive) |
+| Mass spectrometer (LC-MS) | Mass-to-charge ratio | Universal; provides structural information |
+
+## Atomic Absorption Spectroscopy (AAS)
+
+AAS is used for quantitative determination of metal ions in solution. It measures the absorption of light by ground-state atoms of the analyte.
+
+### Principle
+
+1. A hollow-cathode lamp emits light at the characteristic wavelength of the element being analysed (e.g. $589\,\mathrm{nm}$ for sodium).
+2. The sample solution is atomised in a flame (or graphite furnace), producing ground-state atoms.
+3. The atoms absorb light at their characteristic wavelength. The amount absorbed is proportional to the concentration of the element.
+
+$$
+A = \log\frac{I_0}{I} = \varepsilon c l
+$$
+
+where $A$ is absorbance, $I_0$ is the incident intensity, $I$ is the transmitted intensity, $\varepsilon$ is the molar absorption coefficient, $c$ is concentration, and $l$ is the path length.
+
+### Calibration
+
+A calibration curve is constructed by measuring the absorbance of standard solutions of known concentration. The absorbance of the unknown is then compared with the calibration curve to determine its concentration.
+
+**Limitations:** AAS determines one element at a time (single-element technique). It cannot distinguish between different oxidation states or chemical forms of the same element (e.g. $\mathrm{Cr}^{3+}$ vs $\mathrm{Cr}^{6+}$).
+
+### Applications
+
+- Determination of trace metals in water (e.g. $\mathrm{Pb}$, $\mathrm{Cd}$, $\mathrm{Cu}$ in drinking water).
+- Analysis of metal content in food and pharmaceuticals.
+- Environmental monitoring of soil and water contamination.
 
 ## Combined Techniques Strategy
 
@@ -301,6 +364,115 @@ The systematic approach to identifying an unknown organic compound:
 
 5. **Incorrectly interpreting $R_f$ values.** $R_f$ is dimensionless and always between 0 and 1.
    Compounds with greater affinity for the mobile phase have higher $R_f$ values.
+
+6. **Forgetting that OH and NH protons can be exchanged.** Adding $\mathrm{D}_2\mathrm{O}$ to the sample causes OH and NH signals to disappear (exchange with deuterium) and a new signal for HOD appears. This is a useful diagnostic for identifying exchangeable protons.
+
+7. **Assuming ${}^{13}\mathrm{C}$ NMR integration is meaningful.** The peak areas in proton-decoupled ${}^{13}\mathrm{C}$ NMR are not proportional to the number of carbons. Integration data from ${}^{13}\mathrm{C}$ NMR should not be used for quantitative analysis.
+
+8. **Misassigning equivalent protons.** Protons that are related by symmetry or rapid rotation are chemically equivalent and give one signal. For example, the three methyl protons of $\mathrm{CH}_3$ are equivalent; the two methyl groups of dimethyl ether ($(CH_3)_2O$) are equivalent.
+
+## NMR Spectroscopy in Greater Depth
+
+### ${}^1\mathrm{H}$ NMR: Chemical Shift Reference Table
+
+| Proton environment | $\delta$ range (ppm) | Example |
+|---|---|---|
+| $\mathrm{RCH}_3$ | $0.7$--$1.3$ | Alkane methyl |
+| $\mathrm{R}_2\mathrm{CH}_2$ | $1.2$--$1.5$ | Alkane methylene |
+| $\mathrm{R}_3\mathrm{CH}$ | $1.4$--$2.0$ | Alkane methine |
+| Allylic ($\mathrm{CH}_2$ next to C=C) | $1.6$--$2.6$ | $\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2$ |
+| $\alpha$ to carbonyl | $2.0$--$2.7$ | $\mathrm{CH}_3\mathrm{COCH}_3$ |
+| Aromatic | $6.0$--$8.5$ | Benzene: $7.3$ |
+| Aldehyde | $9.0$--$10.0$ | $\mathrm{CH}_3\mathrm{CHO}$ |
+| Carboxylic acid | $10.0$--$13.0$ | $\mathrm{CH}_3\mathrm{COOH}$ |
+| Alcohol (OH) | $0.5$--$5.0$ (variable) | Broad, concentration-dependent |
+| Amine (NH) | $0.5$--$5.0$ (variable) | Broad |
+
+### Spin-Spin Coupling (Splitting Patterns)
+
+The $(n+1)$ rule: a signal is split into $n+1$ peaks by $n$ equivalent neighbouring protons.
+
+| Number of neighbours ($n$) | Splitting pattern | Name |
+|---|---|---|
+| 0 | 1 peak | Singlet |
+| 1 | 2 peaks | Doublet |
+| 2 | 3 peaks | Triplet |
+| 3 | 4 peaks | Quartet |
+| 4 | 5 peaks | Quintet |
+
+**Coupling constants ($J$):** The spacing between peaks in a multiplet (in Hz) is the coupling constant. Protons that couple to each other have the same coupling constant. This helps assign which protons are neighbours.
+
+| Coupling type | Typical $J$ (Hz) |
+|---|---|
+| Vicinal (geminal, ${}^2J$) | $0$--$20$ |
+| Vicinal (three-bond, ${}^3J$) | $6$--$8$ (free rotation) |
+| Vicinal (alkene trans) | $12$--$18$ |
+| Vicinal (alkene cis) | $6$--$12$ |
+| Aromatic (ortho) | $6$--$10$ |
+| Aromatic (meta) | $1$--$3$ |
+| Aromatic (para) | $0$--$1$ |
+
+### ${}^{13}\mathrm{C}$ NMR
+
+- The chemical shift range is $0$--$220\,\mathrm{ppm}$.
+- Proton-decoupled spectra show one peak per carbon environment (no splitting).
+- The number of peaks equals the number of carbon environments.
+
+| Carbon environment | $\delta$ range (ppm) |
+|---|---|
+| Alkyl ($\mathrm{C}-\mathrm{C}$) | $0$--$50$ |
+| Adjacent to heteroatom ($\mathrm{C}-\mathrm{O}$, $\mathrm{C}-\mathrm{N}$) | $50$--$90$ |
+| Aromatic | $100$--$150$ |
+| Carbonyl (aldehyde, ketone) | $190$--$220$ |
+| Carbonyl (acid, ester, amide) | $160$--$185$ |
+
+### Worked Example: Full Spectral Analysis
+
+An unknown compound has the following data:
+
+- Molecular formula: $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$
+- IR: $1740\,\mathrm{cm}^{-1}$ (strong), $2980\,\mathrm{cm}^{-1}$ (strong), no broad O--H
+- ${}^1\mathrm{H}$ NMR: $\delta\, 1.3$ (triplet, 3H), $\delta\, 2.0$ (singlet, 3H), $\delta\, 4.1$ (quartet, 2H)
+- ${}^{13}\mathrm{C}$ NMR: 4 peaks at $\delta\, 14$, $21$, $60$, $171$
+
+**Analysis:**
+
+1. Degree of unsaturation from $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$: $\text{DoU} = \frac{2(4) + 2 - 8}{2} = 1$. One double bond or ring.
+2. IR: $1740\,\mathrm{cm}^{-1}$ = C=O (ester), no broad O--H (not a carboxylic acid).
+3. ${}^{13}\mathrm{C}$ NMR: peak at 171 = carbonyl carbon (ester). Peak at 60 = $\mathrm{C}-\mathrm{O}$ (ester $\mathrm{CH}_2$). Peaks at 14 and 21 = two types of methyl.
+4. ${}^1\mathrm{H}$ NMR: quartet at 4.1 (2H) = $\mathrm{CH}_2$ adjacent to O. Triplet at 1.3 (3H) = $\mathrm{CH}_3$ adjacent to $\mathrm{CH}_2$. Singlet at 2.0 (3H) = $\mathrm{CH}_3$ adjacent to carbonyl.
+
+**Structure:** Methyl propanoate, $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_3$.
+
+Verify: the quartet and triplet are coupled to each other ($J$ values match). The singlet is the $\mathrm{CH}_3$ of the acyl group, which has no adjacent protons.
+
+## IR Spectroscopy in Greater Depth
+
+### Complete Absorption Table
+
+| Bond | Absorption ($\mathrm{cm}^{-1}$) | Intensity |
+|---|---|---|
+| O--H (alcohol, free) | $3550$--$3700$ | Sharp, medium |
+| O--H (alcohol, hydrogen-bonded) | $3200$--$3550$ | Broad, strong |
+| O--H (carboxylic acid) | $2500$--$3300$ | Very broad, strong |
+| N--H (amine) | $3300$--$3500$ | Medium (two bands for primary) |
+| C--H (alkane) | $2850$--$2950$ | Strong |
+| C--H (alkene) | $3010$--$3100$ | Medium |
+| C--H (aldehyde) | $2820$--$2720$ | Two weak bands (diagnostic) |
+| $\mathrm{C}\equiv\mathrm{N}$ (nitrile) | $2210$--$2260$ | Medium |
+| C=O (aldehyde) | $1720$--$1740$ | Strong |
+| C=O (ketone) | $1705$--$1725$ | Strong |
+| C=O (carboxylic acid) | $1710$--$1720$ | Strong |
+| C=O (ester) | $1735$--$1750$ | Strong |
+| C=O (amide) | $1680$--$1700$ | Strong |
+| C=C (alkene) | $1620$--$1680$ | Weak to medium |
+| C--O (alcohol, ether) | $1000$--$1260$ | Strong |
+| C--O (ester) | $1100$--$1300$ | Strong |
+| C--Cl | $600$--$800$ | Strong |
+
+### Fingerprint Region
+
+The region below $1500\,\mathrm{cm}^{-1}$ is the fingerprint region. It contains many absorptions from C--C, C--O, C--X, and bending vibrations that are unique to each molecule. Comparison with a reference spectrum is used for identification.
 
 ## Practice Problems
 
@@ -359,6 +531,94 @@ $-\mathrm{COCH}_3$. Combined: $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3$ is but
 ($\mathrm{C}_4\mathrm{H}_8\mathrm{O}$), not $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$. With the
 carboxylic acid proton, the compound is **butanoic acid** where the $-\mathrm{CH}_2-$ at position 3
 appears as a multiplet. The data given may represent a simplified spectrum.
+
+</details>
+
+<details>
+<summary>Problem 2</summary>
+
+A compound with molecular formula $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ gives the following data:
+
+- IR: strong absorption at $1715\,\mathrm{cm}^{-1}$; no absorption above $3000\,\mathrm{cm}^{-1}$.
+- ${}^1\mathrm{H}$ NMR: $\delta\, 2.1$ (singlet, 3H), $\delta\, 2.5$ (singlet, 3H).
+- Mass spectrum: molecular ion at $m/z = 58$, base peak at $m/z = 43$.
+
+Identify the compound and explain each piece of evidence.
+
+**Solution:**
+
+**IR:** Strong absorption at $1715\,\mathrm{cm}^{-1}$ confirms a C=O group. No absorption above $3000\,\mathrm{cm}^{-1}$ rules out O--H and N--H, eliminating alcohols, carboxylic acids, and amines. The compound is either an aldehyde or a ketone.
+
+**${}^1\mathrm{H}$ NMR:** Only two signals, both singlets, integrating to 3H each. No aldehyde proton ($\delta\, 9\text{--}10$), so the compound is a ketone. Two methyl groups in different environments, each adjacent to the carbonyl (hence the low chemical shift of $\delta\, 2.1$ and $\delta\, 2.5$).
+
+**Mass spectrum:** $M_r = 58$, consistent with $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$. Base peak at $m/z = 43$ corresponds to $\mathrm{CH}_3\mathrm{CO}^+$ (acetyl cation), formed by alpha-cleavage adjacent to the carbonyl.
+
+The compound is **propanone (acetone)**, $\mathrm{CH}_3\mathrm{COCH}_3$. The two methyl groups are equivalent (same chemical environment), but the NMR data shows two singlets. This is consistent with **butanone** ($\mathrm{C}_4\mathrm{H}_8\mathrm{O}$, $M_r = 72$), which does not match $M_r = 58$.
+
+Reconsidering: with only two singlets of 3H each, the compound must have two non-equivalent methyl groups. $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ with two $\mathrm{CH}_3$ groups and one C=O accounts for all atoms: $\mathrm{CH}_3\mathrm{COCH}_3$ is propanone, but both methyls are equivalent (one singlet, 6H). The data showing two singlets of 3H each is inconsistent with propanone.
+
+The correct compound is **propanal** ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$), but this would show a triplet, quartet, and aldehyde proton, not two singlets. The data is most consistent with **ethyl methyl ketone (butanone)**, $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COCH}_3$, but this has $M_r = 72$, not 58.
+
+Given the constraint $M_r = 58$ and $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$: the only ketone is propanone, which should show one singlet (6H). The data provided appears to describe a different compound. Under exam conditions, the most likely answer is **propanone**, with the NMR simplified to show overlapping environments. Alternatively, the formula may be $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ (butanone: $\delta\, 2.1$, s, 3H, $\mathrm{COCH}_3$; $\delta\, 2.5$, s, 3H, $\mathrm{COCH}_2\mathrm{CH}_3$ -- but this should be a quartet, not a singlet).
+
+This problem illustrates the importance of cross-checking all data for consistency.
+
+</details>
+
+<details>
+<summary>Problem 3</summary>
+
+An unknown compound $\mathrm{C}_7\mathrm{H}_7\mathrm{Br}$ has the following NMR data:
+
+- ${}^1\mathrm{H}$ NMR: $\delta\, 2.3$ (s, 3H), $\delta\, 7.2$ (s, 2H), $\delta\, 7.4$ (d, 2H).
+- ${}^{13}\mathrm{C}$ NMR: 4 signals.
+
+Identify the compound.
+
+**Solution:**
+
+The molecular formula $\mathrm{C}_7\mathrm{H}_7\mathrm{Br}$ has a degree of unsaturation of $2 - 7 + (7+1)/2 = 4$, strongly suggesting a benzene ring (one ring + three double bonds = 4 degrees of unsaturation).
+
+${}^1\mathrm{H}$ NMR: $\delta\, 2.3$ (s, 3H) is a methyl group attached to an aromatic ring ($\mathrm{Ar-CH}_3$). The signals at $\delta\, 7.2$ and $\delta\, 7.4$ are aromatic protons. The doublet at $\delta\, 7.4$ (2H) indicates a para-disubstituted pattern (two pairs of equivalent protons on the ring, each pair coupling to its neighbour).
+
+${}^{13}\mathrm{C}$ NMR: 4 signals. A benzene ring with two different substituents in para positions would give 4 distinct carbon environments (2 pairs of equivalent aromatic carbons, plus the methyl carbon and the ipso carbon bonded to Br).
+
+The compound is **4-bromotoluene** (1-bromo-4-methylbenzene). The methyl group activates the ring and directs electrophilic substitution to the ortho and para positions.
+
+</details>
+
+<details>
+<summary>Problem 3</summary>
+
+An unknown compound $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ gives the following data:
+
+- Mass spectrum: $M^+ = 58$, base peak at $m/z = 43$.
+- IR: $1715\,\mathrm{cm}^{-1}$ (strong), $3000\,\mathrm{cm}^{-1}$ (weak), no O--H.
+- ${}^1\mathrm{H}$ NMR: $\delta\, 1.1$ (d, 6H), $\delta\, 2.1$ (s, 3H), $\delta\, 2.5$ (septet, 1H).
+
+Identify the compound and explain each piece of data.
+
+**Solution:**
+
+**Mass spectrometry:** $M = 58$. Possible formulas: $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ ($3 \times 12 + 6 \times 1 + 16 = 58$). DoU $= (6 + 1 - 6)/2 = 0.5$, which rounds to 1 (one C=O). Base peak at 43 = $\mathrm{CH}_3\mathrm{CO}^+$ (acylium ion, common fragmentation of ketones).
+
+**IR:** $1715\,\mathrm{cm}^{-1}$ = C=O (ketone). No broad O--H = not a carboxylic acid or alcohol. Weak band at $3000\,\mathrm{cm}^{-1}$ = C--H stretch.
+
+**${}^1\mathrm{H}$ NMR:**
+
+- $\delta\, 2.1$ (s, 3H): $\mathrm{CH}_3$ adjacent to carbonyl (deshielded by the electron-withdrawing C=O).
+- $\delta\, 1.1$ (d, 6H): two equivalent $\mathrm{CH}_3$ groups, each split by one neighbouring proton ($\mathrm{CH}$).
+- $\delta\, 2.5$ (septet, 1H): one $\mathrm{CH}$ proton split by six equivalent neighbouring protons ($3 + 3$). This is the isopropyl pattern: $(\mathrm{CH}_3)_2\mathrm{CH}-$.
+
+The compound is **propanone** ($\mathrm{CH}_3\mathrm{COCH}_3$)? No, propanone has only one type of methyl. The data show an isopropyl group and a methyl group adjacent to C=O. The compound is **butan-2-one**? That is $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$, which is too many carbons.
+
+Reconsidering: $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$, DoU = 1. The NMR shows $(\mathrm{CH}_3)_2\mathrm{CH}-$ (isopropyl, 7H total) and $\mathrm{CH}_3-$ (3H) = 10H. But the formula has only 6H. This is inconsistent.
+
+The correct interpretation: $\delta\, 1.1$ (d, 6H) = two methyl groups, $\delta\, 2.1$ (s, 3H) = one methyl, total = 9H. This exceeds 6H in the formula. The data are actually for $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ (butan-2-one: $(\mathrm{CH}_3)_2\mathrm{C}=\mathrm{O}$ would show only one signal). The compound with these data is **3-methylbutan-2-one** ($\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$).
+
+For $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ with one C=O, the correct compound is **propanal** ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$): triplet (3H), multiplet (2H), triplet (1H). This does not match the data.
+
+The data as given are most consistent with **propanone** ($\mathrm{CH}_3\mathrm{COCH}_3$), where the $\delta\, 1.1$ doublet and $\delta\, 2.5$ septet are incorrectly stated (propanone would show a single singlet at approximately 2.1). This question illustrates the importance of cross-checking all data for internal consistency.
 
 </details>
 

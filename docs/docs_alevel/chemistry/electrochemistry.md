@@ -169,6 +169,52 @@ where $n$ is the number of moles of electrons transferred and $F$ is the Faraday
 - $E^\circ_\mathrm{cell} \gt 0$ indicates thermodynamic feasibility, not necessarily a fast reaction (kinetic barriers may exist).
 - Non-standard conditions (concentrations other than $1\,\mathrm{mol/dm}^3$) change the actual cell EMF via the Nernst equation (beyond A-Level but useful to note).
 
+### The Nernst Equation
+
+The Nernst equation relates the cell potential under non-standard conditions to the standard cell potential:
+
+$$
+E = E^\circ - \frac{RT}{nF}\ln Q
+$$
+
+where $Q$ is the reaction quotient (same form as the equilibrium expression but with initial concentrations).
+
+At $298\,\mathrm{K}$, substituting $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$ and $F = 96485\,\mathrm{C/mol}$:
+
+$$
+E = E^\circ - \frac{0.0257}{n}\ln Q = E^\circ - \frac{0.0592}{n}\log_{10} Q
+$$
+
+**Worked Example.** Calculate the cell EMF for a $\mathrm{Zn}/\mathrm{Cu}$ cell where $[\mathrm{Zn}^{2+}] = 0.010\,\mathrm{mol/dm}^3$ and $[\mathrm{Cu}^{2+}] = 2.0\,\mathrm{mol/dm}^3$ at $298\,\mathrm{K}$.
+
+$E^\circ_\mathrm{cell} = +1.10\,\mathrm{V}$ (from above). $n = 2$.
+
+$$
+Q = \frac{[\mathrm{Zn}^{2+}]}{[\mathrm{Cu}^{2+}]} = \frac{0.010}{2.0} = 0.005
+$$
+
+$$
+E = 1.10 - \frac{0.0592}{2}\log_{10}(0.005) = 1.10 - 0.0296 \times (-2.30) = 1.10 + 0.068 = 1.17\,\mathrm{V}
+$$
+
+The non-standard cell EMF is higher than the standard value because the product ion ($\mathrm{Zn}^{2+}$) concentration is lower and the reactant ion ($\mathrm{Cu}^{2+}$) concentration is higher than standard conditions, driving the reaction further to the right.
+
+### Concentration Cells
+
+A concentration cell consists of two half-cells with the same redox couple but different concentrations. The cell EMF arises purely from the concentration difference:
+
+$$
+E_\mathrm{cell} = -\frac{0.0592}{n}\log_{10}\frac{[\mathrm{M}^{n+}]_\mathrm{dilute}}{[\mathrm{M}^{n+}]_\mathrm{concentrated}}
+$$
+
+**Example:** A $\mathrm{Cu}/\mathrm{Cu}^{2+}$ concentration cell with $[\mathrm{Cu}^{2+}]_\mathrm{left} = 0.001\,\mathrm{mol/dm}^3$ and $[\mathrm{Cu}^{2+}]_\mathrm{right} = 1.0\,\mathrm{mol/dm}^3$:
+
+$$
+E = -\frac{0.0592}{2}\log_{10}\frac{0.001}{1.0} = -0.0296 \times (-3) = +0.089\,\mathrm{V}
+$$
+
+The dilute half-cell acts as the anode (oxidation), and the concentrated half-cell acts as the cathode (reduction). Equilibrium is reached when the concentrations equalise.
+
 ## Conventional Cell Representation
 
 Cells are written as:
@@ -206,6 +252,37 @@ Overall: $2\mathrm{H}_2 + \mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O}$
 **Advantages:** Higher efficiency than combustion; no pollution (only water as product); quiet operation.
 
 **Disadvantages:** Hydrogen storage and transport challenges; expensive catalysts (platinum); limited infrastructure.
+
+**Efficiency calculation:** The maximum theoretical efficiency of a fuel cell is:
+
+$$
+\text{Efficiency} = \frac{\Delta G^\circ}{\Delta H^\circ} \times 100
+$$
+
+For the $\mathrm{H}_2/\mathrm{O}_2$ fuel cell at $298\,\mathrm{K}$:
+
+$$
+\Delta G^\circ = -2 \times 237 = -474\,\mathrm{kJ/mol}, \quad \Delta H^\circ = -2 \times 286 = -572\,\mathrm{kJ/mol}
+$$
+
+$$
+\text{Efficiency} = \frac{474}{572} \times 100 = 83\%
+$$
+
+In practice, efficiencies of 40--60% are achieved due to overpotentials (additional voltage required beyond the theoretical value), internal resistance, and fuel crossover.
+
+**Overpotential:** The actual operating voltage of a fuel cell is less than the theoretical $E^\circ_\mathrm{cell} = 1.23\,\mathrm{V}$ for $\mathrm{H}_2/\mathrm{O}_2$. Typical operating voltages are $0.6$--$0.8\,\mathrm{V}$. The difference is the overpotential, caused by kinetic barriers at the electrodes (especially the oxygen reduction reaction at the cathode, which is inherently slow).
+
+### Other Fuel Cell Types
+
+| Type | Fuel | Electrolyte | Operating temp | Application |
+|---|---|---|---|---|
+| PEM (proton exchange membrane) | $\mathrm{H}_2$ | Solid polymer | 80$^\circ$C | Vehicles |
+| Alkaline (AFC) | $\mathrm{H}_2$ | KOH solution | 60--200$^\circ$C | Space (Apollo) |
+| Solid oxide (SOFC) | $\mathrm{H}_2$, CO, $\mathrm{CH}_4$ | Yttria-stabilised zirconia | 500--1000$^\circ$C | Power stations |
+| Molten carbonate (MCFC) | $\mathrm{H}_2$, CO, $\mathrm{CH}_4$ | $\mathrm{Li}_2\mathrm{CO}_3/\mathrm{K}_2\mathrm{CO}_3$ | 650$^\circ$C | Power stations |
+
+Solid oxide fuel cells can use carbon monoxide and methane directly as fuels (internal reforming), and their high operating temperature makes them suitable for combined heat and power systems.
 
 ### Batteries
 
@@ -342,6 +419,92 @@ The $\mathrm{Fe}^{2+}$ is further oxidised and reacts with $\mathrm{OH}^-$ to fo
 
 5. **Stating that a reaction "will occur" based only on $E^\circ_\mathrm{cell} \gt 0$.** Thermodynamic feasibility does not guarantee kinetic viability. The reaction may be too slow to observe.
 
+6. **Confusing $E^\circ_\mathrm{cell}$ with $E^\circ$ of individual half-cells.** $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$. Always subtract the anode potential from the cathode potential.
+
+7. **Forgetting that the SHE is defined at specific conditions.** The standard hydrogen electrode operates at $298\,\mathrm{K}$, $100\,\mathrm{kPa}$ $\mathrm{H}_2$ pressure, and $1.0\,\mathrm{mol/dm}^3$ $\mathrm{H}^+$ concentration. Any deviation requires the Nernst equation.
+
+## Electrochemical Series and Predicting Reactions
+
+### Using $E^\circ$ to Predict Spontaneity
+
+A redox reaction is thermodynamically feasible if $E^\circ_\mathrm{cell} \gt 0$ (i.e. $\Delta G^\circ \lt 0$). However:
+
+1. A positive $E^\circ_\mathrm{cell}$ indicates thermodynamic feasibility, not kinetic likelihood. Some reactions with positive $E^\circ_\mathrm{cell}$ are extremely slow (e.g. $\mathrm{H}_2$ + $\mathrm{O}_2$ at room temperature).
+2. The reaction may require a catalyst, activation energy, or specific conditions to proceed at an appreciable rate.
+3. Non-standard conditions can reverse the feasibility (use the Nernst equation).
+
+### Disproportionation and Comproportionation
+
+**Disproportionation:** A species in an intermediate oxidation state simultaneously oxidises and reduces itself:
+
+$$
+2\mathrm{Cu}^+(aq) \to \mathrm{Cu}(s) + \mathrm{Cu}^{2+}(aq)
+$$
+
+Check feasibility: $E^\circ_\mathrm{cell} = E^\circ(\mathrm{Cu}^+/\mathrm{Cu}) - E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}^+) = 0.52 - 0.15 = +0.37\,\mathrm{V}$. Spontaneous. $\mathrm{Cu}^+$ disproportionates in aqueous solution.
+
+**Comproportionation:** The reverse of disproportionation. Two species in different oxidation states react to form a species in an intermediate state:
+
+$$
+\mathrm{Fe}(s) + 2\mathrm{Fe}^{3+}(aq) \to 3\mathrm{Fe}^{2+}(aq)
+$$
+
+## Standard Electrode Potential Data Table
+
+| Half-equation | $E^\circ$ (V) |
+|---|---|
+| $\mathrm{F}_2 + 2e^- \rightleftharpoons 2\mathrm{F}^-$ | $+2.87$ |
+| $\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \rightleftharpoons \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}$ | $+1.51$ |
+| $\mathrm{Cl}_2 + 2e^- \rightleftharpoons 2\mathrm{Cl}^-$ | $+1.36$ |
+| $\mathrm{Cr}_2\mathrm{O}_7^{2-} + 14\mathrm{H}^+ + 6e^- \rightleftharpoons 2\mathrm{Cr}^{3+} + 7\mathrm{H}_2\mathrm{O}$ | $+1.33$ |
+| $\mathrm{O}_2 + 4\mathrm{H}^+ + 4e^- \rightleftharpoons 2\mathrm{H}_2\mathrm{O}$ | $+1.23$ |
+| $\mathrm{Br}_2 + 2e^- \rightleftharpoons 2\mathrm{Br}^-$ | $+1.07$ |
+| $\mathrm{NO}_3^- + 4\mathrm{H}^+ + 3e^- \rightleftharpoons \mathrm{NO} + 2\mathrm{H}_2\mathrm{O}$ | $+0.96$ |
+| $\mathrm{Ag}^+ + e^- \rightleftharpoons \mathrm{Ag}$ | $+0.80$ |
+| $\mathrm{Fe}^{3+} + e^- \rightleftharpoons \mathrm{Fe}^{2+}$ | $+0.77$ |
+| $\mathrm{I}_2 + 2e^- \rightleftharpoons 2\mathrm{I}^-$ | $+0.54$ |
+| $\mathrm{Cu}^+ + e^- \rightleftharpoons \mathrm{Cu}$ | $+0.52$ |
+| $\mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} + 4e^- \rightleftharpoons 4\mathrm{OH}^-$ | $+0.40$ |
+| $\mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu}$ | $+0.34$ |
+| $2\mathrm{H}^+ + 2e^- \rightleftharpoons \mathrm{H}_2$ | $0.00$ (by definition) |
+| $\mathrm{Pb}^{2+} + 2e^- \rightleftharpoons \mathrm{Pb}$ | $-0.13$ |
+| $\mathrm{Sn}^{2+} + 2e^- \rightleftharpoons \mathrm{Sn}$ | $-0.14$ |
+| $\mathrm{Ni}^{2+} + 2e^- \rightleftharpoons \mathrm{Ni}$ | $-0.25$ |
+| $\mathrm{Fe}^{2+} + 2e^- \rightleftharpoons \mathrm{Fe}$ | $-0.44$ |
+| $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$ | $-0.76$ |
+| $\mathrm{Al}^{3+} + 3e^- \rightleftharpoons \mathrm{Al}$ | $-1.66$ |
+| $\mathrm{Mg}^{2+} + 2e^- \rightleftharpoons \mathrm{Mg}$ | $-2.37$ |
+| $\mathrm{Na}^+ + e^- \rightleftharpoons \mathrm{Na}$ | $-2.71$ |
+| $\mathrm{Ca}^{2+} + 2e^- \rightleftharpoons \mathrm{Ca}$ | $-2.87$ |
+| $\mathrm{K}^+ + e^- \rightleftharpoons \mathrm{K}$ | $-2.93$ |
+| $\mathrm{Li}^+ + e^- \rightleftharpoons \mathrm{Li}$ | $-3.04$ |
+
+## Electrolysis in Industry
+
+### Extraction of Aluminium (Hall-Heroult Process)
+
+- **Ore:** Bauxite ($\mathrm{Al}_2\mathrm{O}_3$), purified to alumina.
+- **Electrolyte:** Molten cryolite ($\mathrm{Na}_3\mathrm{AlF}_6$) at approximately $950^\circ\mathrm{C}$. Cryolite lowers the melting point of $\mathrm{Al}_2\mathrm{O}_3$ from $2072^\circ\mathrm{C}$ to approximately $950^\circ\mathrm{C}$, making the process economically viable.
+- **Electrodes:** Carbon (graphite) anode and cathode.
+
+Cathode: $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}(l)$
+
+Anode: $2\mathrm{O}^{2-} \to \mathrm{O}_2 + 4e^-$
+
+The oxygen reacts with the carbon anode: $\mathrm{C} + \mathrm{O}_2 \to \mathrm{CO}_2$. The anode is consumed and must be regularly replaced.
+
+### Electroplating
+
+Electroplating deposits a thin layer of a metal onto a conductive surface. The object to be plated is the cathode, the plating metal is the anode, and the electrolyte contains ions of the plating metal.
+
+**Example:** Copper plating of a steel spoon.
+
+- Cathode (spoon): $\mathrm{Cu}^{2+}(aq) + 2e^- \to \mathrm{Cu}(s)$
+- Anode (copper): $\mathrm{Cu}(s) \to \mathrm{Cu}^{2+}(aq) + 2e^-$
+- Electrolyte: $\mathrm{CuSO}_4(aq)$
+
+The concentration of $\mathrm{Cu}^{2+}$ in solution remains constant because the anode dissolves at the same rate as the cathode deposits copper.
+
 ## Practice Problems
 
 <details>
@@ -392,7 +555,138 @@ $$
 
 </details>
 
----
+<details>
+<summary>Problem 3</summary>
+
+A voltaic cell is constructed from a $\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq)$ half-cell and an $\mathrm{Ag}(s) \mid \mathrm{Ag}^+(aq)$ half-cell. Calculate the standard cell EMF, write the conventional cell representation, and determine $\Delta G^\circ$.
+
+Given: $E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\,\mathrm{V}$, $E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\,\mathrm{V}$.
+
+**Solution:**
+
+$\mathrm{Zn}$ has the more negative $E^\circ$, so it is oxidised (anode). $\mathrm{Ag}^+$ is reduced (cathode).
+
+$E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode} = 0.80 - (-0.76) = +1.56\,\mathrm{V}$
+
+Conventional cell representation:
+
+$$
+\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Ag}^+(aq) \mid \mathrm{Ag}(s)
+$$
+
+Half-equations:
+
+Anode: $\mathrm{Zn}(s) \to \mathrm{Zn}^{2+}(aq) + 2e^-$
+
+Cathode: $\mathrm{Ag}^+(aq) + e^- \to \mathrm{Ag}(s)$
+
+Overall (multiplying the cathode equation by 2): $\mathrm{Zn}(s) + 2\mathrm{Ag}^+(aq) \to \mathrm{Zn}^{2+}(aq) + 2\mathrm{Ag}(s)$
+
+$n = 2$ electrons transferred.
+
+$$
+\Delta G^\circ = -nFE^\circ_\mathrm{cell} = -2 \times 96485 \times 1.56 = -301,000\,\mathrm{J/mol} = -301\,\mathrm{kJ/mol}
+$$
+
+The large negative $\Delta G^\circ$ confirms that the reaction is strongly spontaneous under standard conditions.
+
+</details>
+
+<details>
+<summary>Problem 4</summary>
+
+In the electrolysis of aqueous $\mathrm{CuSO}_4$ using inert platinum electrodes:
+(a) Identify the products at each electrode.
+(b) Write half-equations.
+(c) Calculate the volume of gas produced at the anode when a current of $0.50\,\mathrm{A}$ passes for 1 hour at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$.
+
+**Solution:**
+
+(a) At the cathode: $\mathrm{Cu}^{2+}$ is below hydrogen in the reactivity series, so copper is deposited (not hydrogen). At the anode: $\mathrm{SO}_4^{2-}$ is not a halide, so oxygen is evolved from water.
+
+(b) Cathode: $\mathrm{Cu}^{2+}(aq) + 2e^- \to \mathrm{Cu}(s)$
+
+Anode: $4\mathrm{OH}^-(aq) \to \mathrm{O}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) + 4e^-$
+
+(c) $Q = 0.50 \times 3600 = 1800\,\mathrm{C}$
+
+$n(e^-) = 1800 / 96485 = 0.01866\,\mathrm{mol}$
+
+From the anode half-equation, 4 moles of electrons produce 1 mole of $\mathrm{O}_2$:
+
+$n(\mathrm{O}_2) = 0.01866 / 4 = 0.00467\,\mathrm{mol}$
+
+Using $pV = nRT$:
+
+$$
+V = \frac{nRT}{p} = \frac{0.00467 \times 8.314 \times 298}{100 \times 10^3} = \frac{11.57}{100000} = 1.16 \times 10^{-4}\,\mathrm{m}^3 = 0.116\,\mathrm{dm}^3 = 116\,\mathrm{cm}^3
+$$
+
+</details>
+
+<details>
+<summary>Problem 5</summary>
+
+A concentration cell is constructed with two $\mathrm{Cu}$ electrodes. One half-cell contains $\mathrm{Cu}^{2+}$ at $1.00\,\mathrm{mol/dm}^3$ and the other contains $\mathrm{Cu}^{2+}$ at $0.00100\,\mathrm{mol/dm}^3$ at $298\,\mathrm{K}$.
+
+(a) Write the conventional cell representation.
+(b) Calculate $E_\mathrm{cell}$ using the Nernst equation.
+(c) Identify the anode and cathode and explain the direction of electron flow.
+
+**Solution:**
+
+(a)
+
+$$
+\mathrm{Cu}(s) \mid \mathrm{Cu}^{2+}(0.00100\,\mathrm{mol/dm}^3) \parallel \mathrm{Cu}^{2+}(1.00\,\mathrm{mol/dm}^3) \mid \mathrm{Cu}(s)
+$$
+
+(b) The overall reaction is:
+
+$$
+\mathrm{Cu}^{2+}(\text{concentrated}) + \mathrm{Cu}(s) \rightleftharpoons \mathrm{Cu}(s) + \mathrm{Cu}^{2+}(\text{dilute})
+$$
+
+Using the Nernst equation:
+
+$$
+E_\mathrm{cell} = E^\circ_\mathrm{cell} - \frac{RT}{nF}\ln Q = 0 - \frac{RT}{2F}\ln\frac{[\mathrm{Cu}^{2+}]_\mathrm{dilute}}{[\mathrm{Cu}^{2+}]_\mathrm{concentrated}}
+$$
+
+$$
+E_\mathrm{cell} = -\frac{0.02569}{2}\ln\frac{0.00100}{1.00} = -0.01285 \times \ln(10^{-3}) = -0.01285 \times (-6.908) = +0.0888\,\mathrm{V}
+$$
+
+(c) The half-cell with the lower concentration ($0.00100\,\mathrm{mol/dm}^3$) is the anode (oxidation: $\mathrm{Cu} \to \mathrm{Cu}^{2+} + 2e^-$). The half-cell with the higher concentration ($1.00\,\mathrm{mol/dm}^3$) is the cathode (reduction: $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$). Electrons flow from the dilute side (anode) to the concentrated side (cathode).
+
+</details>
+
+<details>
+<summary>Problem 6</summary>
+
+In the electrolysis of molten $\mathrm{NaCl}$, a current of $2.00\,\mathrm{A}$ is passed for 2.00 hours. Calculate:
+(a) The mass of sodium produced at the cathode.
+(b) The volume of chlorine gas produced at the anode at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$.
+
+**Solution:**
+
+(a) Cathode: $\mathrm{Na}^+ + e^- \to \mathrm{Na}(l)$. $n = 1$.
+
+$Q = It = 2.00 \times 7200 = 14400\,\mathrm{C}$
+
+$n(e^-) = 14400/96485 = 0.1493\,\mathrm{mol}$
+
+$n(\mathrm{Na}) = 0.1493\,\mathrm{mol}$ (1 electron per Na atom)
+
+$m(\mathrm{Na}) = 0.1493 \times 22.99 = 3.43\,\mathrm{g}$
+
+(b) Anode: $2\mathrm{Cl}^- \to \mathrm{Cl}_2 + 2e^-$. $n = 2$.
+
+$n(\mathrm{Cl}_2) = 0.1493/2 = 0.0747\,\mathrm{mol}$
+
+$V = nRT/p = 0.0747 \times 8.314 \times 298 / (100 \times 10^3) = 1.85 \times 10^{-3}\,\mathrm{m}^3 = 1.85\,\mathrm{dm}^3$
+
+</details>
 
 :::tip
 Diagnostic Test
