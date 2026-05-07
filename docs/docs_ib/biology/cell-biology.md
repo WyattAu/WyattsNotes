@@ -944,3 +944,490 @@ SA:V ratio during early embryonic development.
 
 </details>
 
+---
+
+## Additional Worked Examples
+
+**Worked Example: Prokaryotic vs Eukaryotic Cell Comparison**
+
+(a) Calculate the volume of a typical _E. coli_ cell (rod-shaped, $2\;\mathrm{\mu m}$ long, $0.5\;\mathrm{\mu m}$
+diameter) and a typical human liver cell (spherical, $20\;\mathrm{\mu m}$ diameter). (b) Calculate the
+surface-area-to-volume ratio for each. (c) Explain why prokaryotes can rely on simple diffusion for many
+processes while eukaryotes require specialised transport systems.
+
+<details>
+<summary>Solution</summary>
+
+(a) _E. coli_ (approximate as cylinder with hemispherical ends):
+Volume of cylindrical part: $\pi r^2 h = \pi \times (0.25)^2 \times 1.5 = 0.295\;\mathrm{\mu m}^3$
+Volume of hemispherical ends: $\frac{4}{3}\pi r^3 = \frac{4}{3}\pi(0.25)^3 = 0.065\;\mathrm{\mu m}^3$
+Total volume: $0.295 + 0.065 = 0.36\;\mathrm{\mu m}^3$
+
+Human liver cell (sphere):
+Volume $= \frac{4}{3}\pi r^3 = \frac{4}{3}\pi(10)^3 = 4189\;\mathrm{\mu m}^3$
+
+(b) _E. coli_ surface area:
+Cylindrical part: $2\pi rh = 2\pi \times 0.25 \times 1.5 = 2.36\;\mathrm{\mu m}^2$
+Hemispherical ends: $4\pi r^2 = 4\pi(0.25)^2 = 0.785\;\mathrm{\mu m}^2$
+Total SA: $2.36 + 0.785 = 3.14\;\mathrm{\mu m}^2$
+SA:V $= 3.14 / 0.36 = 8.7\;\mathrm{\mu m}^{-1}$
+
+Human liver cell SA $= 4\pi r^2 = 4\pi(10)^2 = 1257\;\mathrm{\mu m}^2$
+SA:V $= 1257 / 4189 = 0.30\;\mathrm{\mu m}^{-1}$
+
+(c) _E. coli_ has a SA:V ratio approximately $29\times$ higher than the liver cell. This high ratio means
+that the cell surface is large relative to its volume, allowing efficient diffusion of oxygen, nutrients,
+and waste products throughout the cell. The small size also means that no internal structure is far from
+the cell membrane. Eukaryotic cells, being much larger, cannot rely on diffusion alone; they require:
+endomembrane systems (ER, Golgi) for intracellular transport, cytoskeletal tracks for vesicle movement,
+specialised organelles (mitochondria for ATP production, lysosomes for waste processing), and membrane
+transport proteins for selective uptake and export.
+
+</details>
+
+**Worked Example: Osmosis and Water Potential**
+
+A plant cell with a water potential of $-400\;\mathrm{kPa}$ is placed in a solution with water potential
+of $-200\;\mathrm{kPa}$. The pressure potential of the cell is $+100\;\mathrm{kPa}$. (a) Calculate the
+solute potential of the cell. (b) Predict the direction of water movement. (c) Describe what happens to
+the cell over time (include changes in turgor pressure, volume, and water potential). (d) Repeat the
+analysis if the external solution has a water potential of $-800\;\mathrm{kPa}$.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\Psi = \Psi_s + \Psi_p$, so $\Psi_s = \Psi - \Psi_p = -400 - 100 = -500\;\mathrm{kPa}$.
+
+(b) Water moves from higher water potential to lower water potential. External $= -200\;\mathrm{kPa}$;
+cell $= -400\;\mathrm{kPa}$. Water moves **into** the cell (from $-200$ to $-400\;\mathrm{kPa}$).
+
+(c) As water enters:
+- The cell volume increases (the cell wall restricts expansion, so the cell becomes turgid).
+- Turgor pressure ($\Psi_p$) increases.
+- As $\Psi_p$ increases, the cell's water potential ($\Psi = \Psi_s + \Psi_p$) becomes less negative.
+- Equilibrium is reached when $\Psi_{cell} = \Psi_{external} = -200\;\mathrm{kPa}$:
+  $-500 + \Psi_p = -200$, so $\Psi_p = +300\;\mathrm{kPa}$.
+- The cell is fully turgid.
+
+(d) External $= -800\;\mathrm{kPa}$; cell $= -400\;\mathrm{kPa}$. Water moves **out of** the cell.
+- The cell volume decreases.
+- Turgor pressure decreases (from $+100$ toward $0$).
+- Eventually, the cell membrane pulls away from the cell wall (**plasmolysis**).
+- $\Psi_p$ reaches $0$ (no pressure against the wall). The cell's water potential $= \Psi_s = -500\;\mathrm{kPa}$.
+- Since $-500 > -800$, water continues to leave until the solute potential becomes more negative
+  (concentration increases). Equilibrium when $\Psi_{cell} = -800\;\mathrm{kPa}$:
+  $\Psi_s + 0 = -800\;\mathrm{kPa}$, so $\Psi_s = -800\;\mathrm{kPa}$. The cell has lost significant
+  water and is plasmolysed.
+
+</details>
+
+**Worked Example: Membrane Transport Quantification**
+
+A red blood cell has an internal $\mathrm{K}^+$ concentration of $140\;\mathrm{mmol/L}$ and an external
+$\mathrm{K}^+$ concentration of $5\;\mathrm{mmol/L}$ at $37^\circ\mathrm{C}$. The membrane potential is
+$-12\;\mathrm{mV}$ (inside negative). (a) Calculate the $\mathrm{K}^+$ equilibrium potential. (b) Calculate
+the net electrochemical driving force on $\mathrm{K}^+$. (c) In which direction does the $\mathrm{Na}^+/K^+$
+pump move $\mathrm{K}^+$? (d) How many ATP molecules are needed to pump $1000\;\mathrm{K}^+$ ions into
+the cell?
+
+<details>
+<summary>Solution</summary>
+
+(a) $E_{\mathrm{K}} = \frac{RT}{zF}\ln\frac{[\mathrm{K}^+]_{out}}{[\mathrm{K}^+]_{in}} = \frac{8.314 \times 310}{1 \times 96485}\ln\frac{5}{140}$
+$= 0.0267 \times \ln(0.0357) = 0.0267 \times (-3.332) = -88.9\;\mathrm{mV}$
+
+(b) Net driving force $= V_m - E_{\mathrm{K}} = -12 - (-88.9) = +76.9\;\mathrm{mV}$.
+The positive value means the driving force is outward (favouring $\mathrm{K}^+$ efflux).
+
+(c) The $\mathrm{Na}^+/K^+$ pump moves $\mathrm{K}^+$ **into** the cell (against its concentration gradient
+and electrochemical gradient), using ATP to actively transport $\mathrm{K}^+$ from the extracellular
+fluid ($5\;\mathrm{mmol/L}$) to the intracellular fluid ($140\;\mathrm{mmol/L}$).
+
+(d) The $\mathrm{Na}^+/K^+$ pump moves $2\;\mathrm{K}^+$ in per ATP hydrolysed.
+ATP needed $= 1000 / 2 = 500$ ATP molecules.
+
+In molar terms: $1000\;\mathrm{K}^+$ ions $= 1000 / (6.022 \times 10^{23}) = 1.66 \times 10^{-21}\;\mathrm{mol\;K}^+$.
+ATP $= 500 / (6.022 \times 10^{23}) = 8.30 \times 10^{-22}\;\mathrm{mol\;ATP}$.
+
+</details>
+
+**Worked Example: Cell Cycle and Mitotic Index**
+
+A researcher counts cells in an onion root tip preparation:
+- Interphase: $250$ cells
+- Prophase: $30$ cells
+- Metaphase: $15$ cells
+- Anaphase: $10$ cells
+- Telophase: $5$ cells
+Total: $310$ cells
+
+(a) Calculate the mitotic index. (b) If the total cell cycle takes $20$ hours, estimate the duration of
+each phase. (c) Explain why the mitotic index varies between different tissues. (d) A mutagen is applied
+to the root tip, and the mitotic index drops to $5\%$. Explain two possible mechanisms.
+
+<details>
+<summary>Solution</summary>
+
+(a) Mitotic index $= \frac{\text{cells in mitosis}}{\text{total cells}} \times 100$
+$= \frac{30 + 15 + 10 + 5}{310} \times 100 = \frac{60}{310} \times 100 = 19.4\%$
+
+(b) Duration of each phase is proportional to the fraction of cells in that phase:
+Total time $= 20\;\mathrm{h} = 1200\;\mathrm{min}$.
+
+- Interphase: $\frac{250}{310} \times 1200 = 968\;\mathrm{min} = 16.1\;\mathrm{h}$
+- Prophase: $\frac{30}{310} \times 1200 = 116\;\mathrm{min} = 1.9\;\mathrm{h}$
+- Metaphase: $\frac{15}{310} \times 1200 = 58\;\mathrm{min}$
+- Anaphase: $\frac{10}{310} \times 1200 = 39\;\mathrm{min}$
+- Telophase: $\frac{5}{310} \times 1200 = 19\;\mathrm{min}$
+
+(c) The mitotic index varies between tissues because different tissues have different rates of cell division:
+- Rapidly dividing tissues (root tips, bone marrow, skin basal layer, intestinal crypts) have high
+  mitotic indices ($10$--$20\%$).
+- Slowly dividing or non-dividing tissues (neurons, cardiac muscle, mature lymphocytes) have very low
+  mitotic indices ($<1\%$).
+- The mitotic index reflects the proportion of time cells spend in mitosis relative to the total cell
+  cycle, which depends on the tissue's need for cell renewal.
+
+(d) Possible mechanisms for a reduced mitotic index after mutagen exposure:
+1. **Cell cycle arrest**: DNA damage activates checkpoint proteins (p53, ATM/ATR) that arrest the cell
+   cycle at G1/S or G2/M checkpoints, preventing cells from entering mitosis until DNA is repaired.
+2. **Apoptosis**: if DNA damage is too severe to repair, the cell undergoes programmed cell death,
+   reducing the total number of cells and the number of cells entering mitosis.
+3. **Cell death (necrosis)**: the mutagen may be cytotoxic, directly killing cells.
+4. **Senescence**: damaged cells may enter a permanent state of cell cycle arrest (senescence), no
+   longer dividing.
+
+</details>
+
+**Worked Example: Electron Microscopy and Resolution**
+
+(a) Calculate the resolving power of a light microscope with a numerical aperture (NA) of $1.4$ using
+green light ($\lambda = 550\;\mathrm{nm}$). (b) Calculate the resolving power of a transmission electron
+microscope (TEM) with an accelerating voltage of $80\;\mathrm{kV}$ ($\lambda \approx 0.005\;\mathrm{nm}$)
+and NA $= 0.02$ (based on aperture angle). (c) A ribosome is approximately $25\;\mathrm{nm}$ in diameter.
+Can it be resolved with each microscope? (d) Explain the difference between TEM and SEM in terms of
+image formation and the type of specimens each is best suited for.
+
+<details>
+<summary>Solution</summary>
+
+(a) Resolution $d = \frac{0.61\lambda}{\mathrm{NA}} = \frac{0.61 \times 550}{1.4} = 240\;\mathrm{nm} = 0.24\;\mathrm{\mu m}$.
+
+(b) TEM resolution $d = \frac{0.61 \times 0.005}{0.02} = 0.153\;\mathrm{nm}$.
+
+(In practice, TEM resolution is limited by lens aberrations to approximately $0.1$--$0.2\;\mathrm{nm}$,
+which is sufficient to resolve individual atoms in crystalline specimens.)
+
+(c) Ribosome diameter $= 25\;\mathrm{nm}$.
+- Light microscope: resolution $= 240\;\mathrm{nm}$. $25 < 240$, so the ribosome is **smaller than the
+  resolution limit**. It cannot be resolved (individual ribosomes are invisible under light microscopy).
+- TEM: resolution $= 0.153\;\mathrm{nm}$. $25 > 0.153$, so the ribosome is **easily resolved**. TEM can
+  clearly visualise ribosomes and their subunits.
+
+(d) **TEM**: a beam of electrons passes through an ultra-thin specimen ($<100\;\mathrm{nm}$ thick).
+Denser regions scatter more electrons, appearing dark in the image (bright-field imaging). TEM produces
+2D images showing internal cellular ultrastructure (organelles, membranes, ribosomes, cytoskeleton).
+Specimens must be fixed, dehydrated, and embedded in resin; staining with heavy metals (uranyl acetate,
+lead citrate) enhances contrast.
+
+**SEM**: a focused beam of electrons scans the surface of a specimen. Secondary electrons emitted from
+the surface are collected to produce a 3D-like image of the surface topography. SEM shows external
+surface features (cell surface, organelle surfaces, microvilli) with great depth of field. Specimens
+are coated with a thin layer of metal (gold or platinum) to enhance electron emission.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing resolution and magnification**: magnification makes things bigger; resolution determines
+  whether two closely spaced objects can be distinguished as separate. Increasing magnification beyond
+  the resolution limit produces a larger but blurry image.
+- **Stating that prokaryotes have no internal membranes**: many prokaryotes have internal membrane
+  infoldings (mesosomes, thylakoids in cyanobacteria, chromatophores in photosynthetic bacteria).
+- **Confusing osmosis and diffusion**: osmosis is the specific case of diffusion of water across a
+  selectively permeable membrane; diffusion is the general movement of molecules from high to low
+  concentration.
+- **Assuming all active transport uses ATP directly**: some secondary active transport uses the
+  electrochemical gradient established by a primary active transporter (e.g., $\mathrm{Na}^+$/glucose
+  co-transport uses the $\mathrm{Na}^+$ gradient created by the $\mathrm{Na}^+/K^+$ pump).
+- **Confusing chromosomes and chromatids**: a chromosome consists of one or two chromatids. Before
+  replication: 1 chromosome = 1 chromatid. After replication: 1 chromosome = 2 sister chromatids.
+  After anaphase: each chromatid is now an independent chromosome.
+- **Forgetting that mitosis produces genetically identical daughter cells**: the purpose of mitosis is
+  growth, repair, and asexual reproduction; meiosis produces genetically unique gametes.
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 13: Extended Response -- Endosymbiotic Theory</summary>
+
+(a) Describe the endosymbiotic theory for the origin of mitochondria and chloroplasts. (b) Provide four
+pieces of evidence that support this theory. (c) Explain why mitochondria and chloroplasts have retained
+some of their own genes despite having transferred most genes to the nucleus. (d) Explain why
+mitochondria are inherited maternally in most animals.
+
+</details>
+
+<details>
+<summary>Answer 13</summary>
+
+(a) The endosymbiotic theory proposes that mitochondria and chloroplasts originated from free-living
+prokaryotes that were engulfed by a larger host cell (probably an archaeon). The engulfed prokaryotes
+formed a symbiotic relationship with the host: the host provided protection and nutrients; the endosymbionts
+provided ATP (mitochondria, from an alpha-proteobacterium) or organic compounds from photosynthesis
+(chloroplasts, from a cyanobacterium). Over billions of years, the endosymbionts lost many genes (transferred
+to the host nucleus) and became integrated as organelles.
+
+(b) Evidence:
+1. **Double membrane**: mitochondria and chloroplasts are surrounded by two membranes; the inner membrane
+  is thought to be the original prokaryotic membrane, and the outer membrane is derived from the host's
+  phagocytic vacuole.
+2. **Own DNA**: both organelles contain circular DNA, similar to prokaryotic chromosomes (not linear
+  like nuclear DNA). The DNA does not associate with histones.
+3. **70S ribosomes**: both contain ribosomes of similar size and structure to prokaryotic ribosomes
+  (70S, not 80S like eukaryotic cytoplasmic ribosomes). They are sensitive to antibiotics that inhibit
+  prokaryotic protein synthesis (e.g., chloramphenicol, tetracycline).
+4. **Binary fission**: both reproduce by binary fission, not by mitosis.
+5. **Phylogenetic evidence**: ribosomal RNA sequences from mitochondria are most closely related to
+  alpha-proteobacteria; chloroplast rRNA is most closely related to cyanobacteria.
+6. **Transit peptides**: proteins imported into mitochondria and chloroplasts have N-terminal signal
+  sequences that are cleaved after import, similar to prokaryotic signal peptides.
+
+(c) Mitochondria and chloroplasts have retained some genes because:
+- The encoded proteins are highly hydrophobic (e.g., membrane proteins of the electron transport chain)
+  and would be difficult to import through the organelle membranes if encoded in the nucleus.
+- Local control of gene expression allows rapid response to changes in the organelle's environment
+  (e.g., redox state) without waiting for nuclear gene regulation.
+- Co-translational insertion of hydrophobic proteins into the inner membrane requires local mRNA
+  translation by organelle ribosomes.
+
+(d) Maternal inheritance of mitochondria occurs because:
+- The sperm contributes very few (if any) mitochondria to the zygote. The mitochondria in the sperm's
+  midpiece are destroyed after fertilisation (in many species, the sperm mitochondria are targeted for
+  degradation by ubiquitin-proteasome pathways in the oocyte).
+- The egg (oocyte) contains a large number of mitochondria ($>100{,}000$), which vastly outnumber any
+  sperm-derived mitochondria.
+- This means all mitochondrial DNA in an individual is derived from the mother, which is the basis for
+  mitochondrial DNA tracing in evolutionary and forensic studies (mitochondrial Eve).
+
+</details>
+
+<details>
+<summary>Problem 14: Quantitative -- Serial Dilution and Cell Counting</summary>
+
+A bacterial culture has an OD600 (optical density at 600 nm) of 1.2. A calibration curve shows that
+OD600 = 1.0 corresponds to $8 \times 10^8$ cells/mL. A serial dilution is performed: $100\;\mathrm{\mu L}$
+of culture is added to $900\;\mathrm{\mu L}$ of sterile broth (dilution factor $10^{-1}$), and this is
+repeated for 6 serial dilutions. $100\;\mathrm{\mu L}$ of the $10^{-6}$ dilution is spread on an agar
+plate, yielding $72$ colonies. (a) Calculate the cell concentration in the original culture from the OD600.
+(b) Calculate the viable cell concentration from the plate count. (c) Calculate the percentage of viable
+cells. (d) Explain why the OD600 count and the viable count differ.
+
+</details>
+
+<details>
+<summary>Answer 14</summary>
+
+(a) From OD600: concentration $= 1.2 \times 8 \times 10^8 = 9.6 \times 10^8$ cells/mL.
+
+(b) From plate count: $72$ colonies on the $10^{-6}$ dilution plate, with $100\;\mathrm{\mu L}$ plated.
+Concentration $= \frac{72}{0.1\;\mathrm{mL}} \times 10^6 = 7.2 \times 10^8$ cells/mL.
+
+(c) Percentage viable $= \frac{7.2 \times 10^8}{9.6 \times 10^8} \times 100 = 75\%$.
+
+(d) The OD600 counts all cells (both viable and dead) because it measures light scattering by all
+particles in suspension. The plate count only measures viable (living) cells that can form colonies.
+The $25\%$ difference represents dead or non-viable cells in the culture, which may have been killed
+by nutrient depletion, toxin accumulation, or being in a dormant (non-culturable) state.
+
+</details>
+
+<details>
+<summary>Problem 15: Extended Response -- Stem Cells and Cell Differentiation</summary>
+
+(a) Define totipotent, pluripotent, and multipotent stem cells, giving an example of each. (b) Describe
+the process of cell differentiation, explaining the role of transcription factors. (c) Explain how
+therapeutic cloning (somatic cell nuclear transfer) could be used to generate patient-specific stem
+cells. (d) Evaluate the ethical arguments for and against embryonic stem cell research.
+
+</details>
+
+<details>
+<summary>Answer 15</summary>
+
+(a) **Totipotent**: can differentiate into any cell type AND extraembryonic tissues (placenta, yolk sac).
+Example: the zygote and early blastomeres (up to the 4-cell stage in humans).
+
+**Pluripotent**: can differentiate into any cell type of the body (all three germ layers: ectoderm,
+mesoderm, endoderm) but NOT extraembryonic tissues. Example: embryonic stem cells (ESCs) derived from
+the inner cell mass of the blastocyst.
+
+**Multipotent**: can differentiate into a limited range of cell types within a particular lineage.
+Example: haematopoietic stem cells (bone marrow) can produce all blood cell types but not nerve or
+muscle cells; mesenchymal stem cells can produce bone, cartilage, and fat cells.
+
+(b) Cell differentiation is the process by which unspecialised stem cells become specialised cell types
+with specific structures and functions. The fundamental mechanism is **differential gene expression**:
+all cells in an organism have the same genome, but different cell types express different subsets of
+genes. This is controlled by:
+
+1. **Transcription factors**: proteins that bind to regulatory sequences (enhancers, promoters) of
+   specific genes, activating or repressing their transcription. Combinations of transcription factors
+   establish cell-type-specific gene expression programmes.
+2. **Epigenetic modifications**: DNA methylation and histone modifications create heritable patterns
+   of gene activation/silencing that are maintained through cell division (see [./genetics-advanced](./genetics-advanced)).
+3. **External signals**: growth factors, hormones, and cell-cell interactions (e.g., Notch signalling)
+   activate intracellular signalling cascades that modulate transcription factor activity.
+
+Once a cell is committed to a particular lineage, its fate is progressively restricted by the activation
+of new transcription factors and the silencing of genes for alternative lineages.
+
+(c) Therapeutic cloning (SCNT):
+1. A somatic cell (e.g., skin fibroblast) is taken from the patient.
+2. The nucleus is extracted from the somatic cell.
+3. The nucleus is injected into an enucleated oocyte (egg cell with its nucleus removed).
+4. The reconstructed oocyte is stimulated (electrically or chemically) to begin dividing.
+5. After 5--7 days, a blastocyst forms. The inner cell mass is extracted to generate embryonic stem
+   cells that are genetically identical to the patient.
+6. These stem cells can be directed to differentiate into the required cell type (e.g., dopaminergic
+   neurons for Parkinson's disease, insulin-producing beta cells for diabetes) and transplanted back
+   into the patient without risk of immune rejection.
+
+(d) Ethical arguments:
+- **For**: potential to treat currently incurable diseases (Parkinson's, diabetes, spinal cord injury);
+  the embryos used are typically surplus IVF embryos that would otherwise be destroyed; the potential
+  to alleviate suffering outweighs the moral status of a blastocyst (a collection of approximately
+  $150$ cells that has no nervous system, consciousness, or capacity for suffering).
+- **Against**: the embryo has moral status from the moment of conception and should not be destroyed
+  for research; creating embryos specifically for research commodifies human life; adult stem cells
+  and induced pluripotent stem cells (iPSCs) offer alternatives that do not require embryo destruction;
+  slippery slope argument: acceptance of embryonic research could lead to reproductive cloning.
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **Membrane transport and proteins**: Review [./molecular-biology](./molecular-biology) for membrane protein structure and fluid mosaic model.
+- **Enzymes and metabolism**: Review [./metabolism-cell-biology](./metabolism-cell-biology) for ATP, respiration, and photosynthesis in organelles.
+- **Cell division and meiosis**: Review [./genetics](./genetics) for meiosis and genetic recombination.
+- **DNA replication in organelles**: Review [./genetics-advanced](./genetics-advanced) for mitochondrial DNA replication and inheritance.
+- **Immune cells and phagocytosis**: Review [./immunology](./immunology) for specialised cell types of the immune system.
+
+---
+
+## Supplementary: Membrane Structure and Transport in Detail (HL Extension)
+
+### The Fluid Mosaic Model
+
+The fluid mosaic model (Singer and Nicolson, 1972) describes the cell membrane as a two-dimensional
+fluid of lipids and proteins. Key features:
+
+**Fluidity**: phospholipids and proteins can move laterally within the membrane (lateral diffusion)
+but rarely flip between leaflets (transverse diffusion, or "flip-flop," requires flippase enzymes).
+Membrane fluidity depends on:
+- **Temperature**: higher temperature = more fluid.
+- **Fatty acid composition**: more unsaturated fatty acids (C=C double bonds create kinks) = more fluid.
+- **Cholesterol**: at high temperatures, cholesterol restricts movement (reducing fluidity); at low
+  temperatures, it prevents tight packing (maintaining fluidity). Cholesterol acts as a "fluidity buffer."
+
+**Asymmetry**: the two leaflets of the membrane are not identical. For example:
+- Glycolipids and glycoproteins are found on the extracellular face (cell recognition, signalling).
+- Phosphatidylinositol is enriched on the cytoplasmic face (serves as a docking site for signalling
+  proteins).
+- Flippases, floppases, and scramblases maintain and regulate membrane asymmetry.
+
+### Types of Membrane Proteins
+
+**Integral (transmembrane) proteins**: span the entire membrane, with hydrophobic regions (typically
+alpha helices) embedded in the lipid bilayer. Examples: ion channels, G-protein coupled receptors
+(GPCRs), transport proteins.
+
+**Peripheral proteins**: associated with the membrane surface (extracellular or cytoplasmic face) via
+non-covalent interactions (electrostatic, hydrogen bonds) with integral proteins or lipid head groups.
+Examples: spectrin (cytoskeleton linkage), some enzymes.
+
+**Anchored proteins**: attached to the membrane via a lipid modification (e.g., GPI anchor, prenylation,
+myristoylation). Examples: alkaline phosphatase (GPI-anchored), Ras (prenylated).
+
+### Types of Membrane Transport
+
+| Type | Direction | Energy | Carrier | Example |
+|------|-----------|--------|---------|---------|
+| Simple diffusion | High to low conc. | None (passive) | None | $\mathrm{O}_2$, $\mathrm{CO}_2$, ethanol, steroid hormones |
+| Facilitated diffusion | High to low conc. | None (passive) | Channel or carrier protein | Glucose (via GLUT transporters), $\mathrm{Na}^+$ (via leak channels) |
+| Primary active transport | Low to high conc. | ATP | Pump protein | $\mathrm{Na}^+/K^+$ pump, $\mathrm{Ca}^{2+}$ pump, $\mathrm{H}^+/K^+$ pump |
+| Secondary active transport | Low to high conc. | Ion gradient | Symporter or antiporter | $\mathrm{Na}^+$/glucose symporter (SGLT1), $\mathrm{Na}^+/\mathrm{Ca}^{2+}$ exchanger |
+| Bulk transport | Variable | ATP | Vesicles | Endocytosis, exocytosis, phagocytosis |
+
+### Channel Proteins
+
+Ion channels are transmembrane pores that allow specific ions to pass through. They are gated
+(opened/closed) by specific stimuli:
+
+- **Voltage-gated channels**: open in response to changes in membrane potential. Examples: voltage-gated
+  $\mathrm{Na}^+$ channels (action potential initiation), voltage-gated $\mathrm{K}^+$ channels (action
+  potential repolarisation), voltage-gated $\mathrm{Ca}^{2+}$ channels (neurotransmitter release).
+- **Ligand-gated channels**: open when a specific ligand (neurotransmitter, hormone) binds. Examples:
+  nicotinic ACh receptor (opens when ACh binds at NMJ), GABA_A receptor (opens when GABA binds,
+  allowing $\mathrm{Cl}^-$ influx, hyperpolarising the cell).
+- **Mechanically-gated channels**: open in response to physical deformation. Examples: stretch receptors
+  in the skin, auditory hair cells in the cochlea.
+- **Aquaporins**: channels specifically for water (not ions). Essential for rapid water transport in
+  kidney collecting ducts (regulated by ADH) and plant cells.
+
+### The Sodium-Potassium Pump ($\mathrm{Na}^+/K^+$-ATPase)
+
+The $\mathrm{Na}^+/K^+$ pump maintains the resting membrane potential and electrochemical gradients
+essential for nerve impulse transmission, secondary active transport, and osmotic balance.
+
+**Mechanism**:
+1. Three $\mathrm{Na}^+$ ions bind from the cytoplasmic side.
+2. ATP is hydrolysed, transferring a phosphate group to the pump (phosphorylation).
+3. Phosphorylation causes a conformational change, exposing the $\mathrm{Na}^+$ binding sites to the
+   extracellular side. $\mathrm{Na}^+$ is released.
+4. Two $\mathrm{K}^+$ ions bind from the extracellular side.
+5. Dephosphorylation causes another conformational change, exposing $\mathrm{K}^+$ to the cytoplasmic
+   side. $\mathrm{K}^+$ is released.
+
+**Net effect**: $3\;\mathrm{Na}^+$ out, $2\;\mathrm{K}^+$ in, per ATP hydrolysed.
+**Electrogenic**: moves 1 net positive charge out per cycle (3 out, 2 in), contributing to the
+negative resting membrane potential (approximately $-3$ to $-5\;\mathrm{mV}$).
+
+**Energy cost**: the $\mathrm{Na}^+/K^+$ pump consumes approximately $30$--$40\%$ of the total ATP
+produced by a resting neuron and $10$--$20\%$ of total body ATP at rest.
+
+### Worked Example: Resting Membrane Potential Calculation
+
+Using the Goldman equation (constant field approximation) for a neuron:
+
+$$V_m = \frac{RT}{F}\ln\frac{P_{\mathrm{Na}}[\mathrm{Na}^+]_{out} + P_{\mathrm{K}}[\mathrm{K}^+]_{out} + P_{\mathrm{Cl}}[\mathrm{Cl}^-]_{in}}{P_{\mathrm{Na}}[\mathrm{Na}^+]_{in} + P_{\mathrm{K}}[\mathrm{K}^+]_{in} + P_{\mathrm{Cl}}[\mathrm{Cl}^-]_{out}}$$
+
+At $37^\circ\mathrm{C}$ ($RT/F = 26.7\;\mathrm{mV}$), with:
+- $[\mathrm{Na}^+]_{out} = 145\;\mathrm{mM}$, $[\mathrm{Na}^+]_{in} = 12\;\mathrm{mM}$
+- $[\mathrm{K}^+]_{out} = 4\;\mathrm{mM}$, $[\mathrm{K}^+]_{in} = 155\;\mathrm{mM}$
+- $[\mathrm{Cl}^-]_{out} = 110\;\mathrm{mM}$, $[\mathrm{Cl}^-]_{in} = 4\;\mathrm{mM}$
+- $P_{\mathrm{Na}} = 0.04$, $P_{\mathrm{K}} = 1.0$, $P_{\mathrm{Cl}} = 0.45$
+
+Calculate the resting membrane potential.
+
+<details>
+<summary>Solution</summary>
+
+Numerator $= 0.04 \times 145 + 1.0 \times 4 + 0.45 \times 4 = 5.8 + 4.0 + 1.8 = 11.6$
+
+Denominator $= 0.04 \times 12 + 1.0 \times 155 + 0.45 \times 110 = 0.48 + 155 + 49.5 = 204.98$
+
+$V_m = 26.7 \times \ln(11.6 / 204.98) = 26.7 \times \ln(0.0566) = 26.7 \times (-2.871) = -76.6\;\mathrm{mV}$
+
+This is close to the typical neuronal resting potential of $-70\;\mathrm{mV}$. The difference reflects
+the contribution of the electrogenic $\mathrm{Na}^+/K^+$ pump (approximately $-3$ to $-5\;\mathrm{mV}$),
+which is not included in the Goldman equation.
+
+</details>
+

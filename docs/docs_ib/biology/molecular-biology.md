@@ -985,3 +985,510 @@ acids may be beneficial.
 
 </details>
 
+---
+
+## Additional Worked Examples
+
+**Worked Example: Protein Structure and Amino Acid Properties**
+
+A protein has the following amino acid sequence at its N-terminus:
+Met-Ala-Glu-Lys-Leu-Val-Pro-Phe-Arg-Ser-Cys
+
+(a) Identify the amino acids that are: hydrophobic, hydrophilic, acidic, basic, and those that can
+form disulphide bonds. (b) At pH 7.4, which amino acids will be positively charged and which will be
+negatively charged? (c) Predict the likely secondary structure of the sequence
+Ala-Leu-Val-Pro-Phe. (d) Explain how the sequence Glu-Lys might affect protein folding through
+ionic interactions.
+
+<details>
+<summary>Solution</summary>
+
+(a) Classification:
+- **Hydrophobic**: Ala, Leu, Val, Phe (non-polar R groups)
+- **Hydrophilic/polar**: Ser, Glu, Lys, Arg (polar or charged R groups)
+- **Acidic (negatively charged at neutral pH)**: Glu (glutamic acid, $\mathrm{p}K_a \approx 4.3$)
+- **Basic (positively charged at neutral pH)**: Lys (lysine, $\mathrm{p}K_a \approx 10.5$), Arg (arginine, $\mathrm{p}K_a \approx 12.5$)
+- **Disulphide bond formation**: Cys (cysteine) -- two Cys residues can form a covalent disulphide bridge ($-\mathrm{S}-\mathrm{S}-$)
+- **Structural/disruptive**: Pro (proline) -- its cyclic R group creates a rigid kink in the polypeptide chain
+- **Special**: Met (methionine) -- moderately hydrophobic, can be the start amino acid
+
+(b) At pH 7.4:
+- **Positively charged**: Lys (side chain $\mathrm{NH}_3^+$), Arg (side chain guanidinium $\mathrm{NH}_2^+$),
+  and the N-terminal amino group ($\mathrm{NH}_3^+$).
+- **Negatively charged**: Glu (side chain $\mathrm{COO}^-$), and the C-terminal carboxyl group ($\mathrm{COO}^-$).
+- **Neutral**: Ala, Leu, Val, Pro, Phe, Ser, Cys, Met.
+
+(c) The sequence Ala-Leu-Val-Phe consists of small and hydrophobic amino acids (except for the Pro disruption).
+Without Pro, this would be a strong candidate for an alpha helix (hydrophobic amino acids often form helical
+regions in globular proteins, especially in the core). However, Pro is a known **helix breaker** because
+its rigid cyclic structure cannot adopt the phi/psi angles required for alpha-helical conformation. The
+Ala-Leu-Val segment may form part of a helix, but Pro terminates it.
+
+(d) At pH 7.4, Glu is negatively charged ($\mathrm{COO}^-$) and Lys is positively charged ($\mathrm{NH}_3^+$).
+These two residues, if close in the folded protein (even if distant in the primary sequence), can form
+an **ionic bond (salt bridge)**: the negatively charged carboxylate of Glu is attracted to the positively
+charged ammonium of Lys. Salt bridges stabilise the tertiary structure of proteins and are particularly
+important in extremophilic proteins (e.g., thermophilic enzymes have more salt bridges for heat stability).
+
+</details>
+
+**Worked Example: Enzyme Catalysis and Activation Energy**
+
+An enzyme-catalysed reaction has an activation energy ($E_a$) of $35\;\mathrm{kJ/mol}$. The uncatalysed
+reaction has an activation energy of $85\;\mathrm{kJ/mol}$. The reaction is carried out at $310\;\mathrm{K}$
+($37^\circ\mathrm{C}$). (a) Calculate the rate enhancement factor using the Arrhenius equation
+($k = Ae^{-E_a/RT}$, where $R = 8.314\;\mathrm{J/(mol \cdot K)}$). (b) If the temperature is
+increased by $10^\circ\mathrm{C}$ ($320\;\mathrm{K}$), calculate the new rate enhancement. (c) Explain
+why the rate enhancement is a ratio, not an absolute value. (d) Explain how the enzyme lowers the
+activation energy.
+
+<details>
+<summary>Solution</summary>
+
+(a) Rate ratio $= \frac{k_{catalysed}}{k_{uncatalysed}} = \frac{Ae^{-E_{a(cat)}/RT}}{Ae^{-E_{a(uncat)}/RT}}$
+(assuming the pre-exponential factor $A$ is the same for both)
+$= e^{-(E_{a(cat)} - E_{a(uncat)})/RT}$
+$= e^{-(35000 - 85000)/(8.314 \times 310)}$
+$= e^{-(-50000)/2577}$
+$= e^{19.40}$
+$= 2.62 \times 10^8$
+
+The enzyme increases the reaction rate by approximately $262$ million times.
+
+(b) At $320\;\mathrm{K}$:
+$= e^{50000/(8.314 \times 320)}$
+$= e^{50000/2660}$
+$= e^{18.80}$
+$= 1.47 \times 10^8$
+
+The rate enhancement is slightly lower at the higher temperature ($147$ million vs $262$ million times).
+This is because the uncatalysed reaction also speeds up with temperature (exponential dependence on $T$),
+partially closing the gap.
+
+(c) The rate enhancement is a ratio because it represents how many times faster the enzyme makes the
+reaction compared to no enzyme, at the same temperature. It is dimensionless and independent of the
+absolute reaction rate, the enzyme concentration, and the substrate concentration (as long as the
+enzyme is operating under $V_{max}$ conditions).
+
+(d) The enzyme lowers the activation energy by:
+1. **Binding the substrate** in the active site, creating an enzyme-substrate (ES) complex. The enzyme
+   holds the substrate in a conformation that strains bonds (distorting the substrate toward the
+   transition state geometry).
+2. **Stabilising the transition state**: the active site is complementary to the transition state (not
+   the substrate). Binding energy released when the transition state is formed lowers the energy barrier.
+3. **Providing a favourable microenvironment**: the active site may exclude water (reducing dielectric
+   constant), orient catalytic groups precisely, or provide acidic/basic residues that participate
+   directly in the reaction (acid-base catalysis, covalent catalysis).
+4. **Induced fit**: the enzyme changes conformation upon substrate binding, optimising the active site
+   geometry for catalysis.
+
+</details>
+
+**Worked Example: DNA and RNA Comparison**
+
+(a) A double-stranded DNA molecule has $2400$ base pairs and is $42\%$ GC. Calculate the number of
+hydrogen bonds and the length of the DNA molecule. (b) If this DNA is transcribed into mRNA and the
+mRNA is $2100$ nucleotides long, how many introns were present and what was the total length of the
+introns? (c) The mRNA is translated. How many amino acids are in the resulting protein (excluding
+the stop codon)? (d) Explain why RNA is less stable than DNA and how this affects its biological
+function.
+
+<details>
+<summary>Solution</summary>
+
+(a) Total base pairs $= 2400$. Total nucleotides $= 4800$.
+GC content $= 42\%$: $\mathrm{G} + \mathrm{C} = 0.42 \times 4800 = 2016$ nucleotides.
+$\mathrm{G} = \mathrm{C} = 1008$ nucleotides each.
+$\mathrm{A} + \mathrm{T} = 0.58 \times 4800 = 2784$ nucleotides.
+$\mathrm{A} = \mathrm{T} = 1392$ nucleotides each.
+
+Hydrogen bonds: $\mathrm{G} \equiv \mathrm{C}$ (3 H-bonds) and $\mathrm{A} = \mathrm{T}$ (2 H-bonds).
+Total H-bonds $= 1008 \times 3 + 1392 \times 2 = 3024 + 2784 = 5808$ hydrogen bonds.
+
+Length: $0.34\;\mathrm{nm}$ per base pair. Total length $= 2400 \times 0.34 = 816\;\mathrm{nm} = 0.816\;\mathrm{\mu m}$.
+
+(b) Coding sequence: $2100$ nucleotides (mature mRNA).
+Pre-mRNA length: $2400 \times 2$ (both strands are transcribed? No -- only one strand is transcribed).
+Actually, the DNA coding region is $2400\;\mathrm{bp}$ on one strand. But not all of the DNA may be
+transcribed. If the gene spans $2400\;\mathrm{bp}$ of DNA (template strand), the primary transcript
+(pre-mRNA) would be approximately $2400\;\mathrm{nt}$ long (ignoring the promoter and terminator
+regions beyond the gene).
+
+Wait -- the pre-mRNA includes both exons and introns. If the gene is $2400\;\mathrm{bp}$ of transcribed
+DNA:
+Pre-mRNA $= 2400\;\mathrm{nt}$. Mature mRNA $= 2100\;\mathrm{nt}$.
+Total intron length $= 2400 - 2100 = 300\;\mathrm{nt}$.
+
+But this assumes the gene is exactly $2400\;\mathrm{bp}$. The question does not specify this directly.
+If the DNA is $2400\;\mathrm{bp}$ total and the mRNA is $2100\;\mathrm{nt}$, the introns account for
+$300\;\mathrm{nt}$. The number of introns cannot be determined without additional information (e.g.,
+knowing the exon sizes).
+
+(c) Amino acids: $2100 / 3 = 700$ codons. If the last codon is a stop codon, the protein has
+$699$ amino acids.
+
+(d) RNA is less stable than DNA because:
+- RNA contains ribose (with a $2'$-$\mathrm{OH}$ group) instead of deoxyribose. The $2'$-$\mathrm{OH}$
+  makes RNA susceptible to alkaline hydrolysis (it can act as a nucleophile, attacking the phosphodiester
+  bond).
+- RNA is typically single-stranded, so it has no complementary strand for repair.
+- Uracil in RNA (instead of thymine) makes it harder to detect and repair deamination damage.
+- These properties make RNA suitable as a transient informational molecule (mRNA) and catalytic molecule
+  (ribozymes, rRNA, tRNA), but unsuitable for long-term genetic storage. DNA's stability (deoxyribose,
+  double-stranded, thymine) makes it ideal as the permanent genetic material.
+
+</details>
+
+**Worked Example: Competitive and Non-Competitive Inhibition Graphically**
+
+An enzyme has $K_m = 5.0\;\mathrm{mM}$ and $V_{max} = 100\;\mathrm{\mu mol/min}$. A competitive
+inhibitor at $2.0\;\mathrm{mM}$ gives $K_m^{app} = 15.0\;\mathrm{mM}$, $V_{max}^{app} = 100$.
+A non-competitive inhibitor at $5.0\;\mathrm{mM}$ gives $K_m^{app} = 5.0\;\mathrm{mM}$,
+$V_{max}^{app} = 50$. (a) Sketch the Michaelis-Menten curves for all three conditions. (b) Calculate
+the initial velocity ($v$) at $[S] = 5.0\;\mathrm{mM}$ for each condition. (c) Calculate the
+substrate concentration needed to reach $50\%$ of $V_{max}$ in each condition.
+
+<details>
+<summary>Solution</summary>
+
+(a) [Students should sketch $v$ vs $[S]$ curves:]
+- No inhibitor: hyperbolic curve reaching $V_{max} = 100$ at high $[S]$, half-maximal at $[S] = K_m = 5.0$.
+- Competitive: curve reaches the same $V_{max} = 100$ but is shifted to the right (half-maximal at
+  $[S] = K_m^{app} = 15.0$). The initial slope is lower.
+- Non-competitive: curve reaches a lower $V_{max}^{app} = 50$ but has the same half-maximal point
+  ($[S] = K_m = 5.0$). The curve is lower at all substrate concentrations.
+
+(b) $v = \frac{V_{max}[S]}{K_m + [S]}$:
+
+No inhibitor: $v = \frac{100 \times 5.0}{5.0 + 5.0} = 50\;\mathrm{\mu mol/min}$
+
+Competitive: $v = \frac{100 \times 5.0}{15.0 + 5.0} = \frac{500}{20} = 25\;\mathrm{\mu mol/min}$
+
+Non-competitive: $v = \frac{50 \times 5.0}{5.0 + 5.0} = \frac{250}{10} = 25\;\mathrm{\mu mol/min}$
+
+At $[S] = K_m$, both inhibitors reduce the velocity by the same amount ($50\%$), but by different
+mechanisms.
+
+(c) $50\%$ of $V_{max}$ is achieved when $[S] = K_m$ (by definition).
+
+- No inhibitor: $[S] = 5.0\;\mathrm{mM}$
+- Competitive: $[S] = K_m^{app} = 15.0\;\mathrm{mM}$
+- Non-competitive: $[S] = K_m^{app} = 5.0\;\mathrm{mM}$ (same $K_m$, but $50\%$ of the reduced
+  $V_{max}^{app} = 25$, achieved at $[S] = 5.0\;\mathrm{mM}$).
+
+For the non-competitive inhibitor, to reach $50\%$ of the original $V_{max}$ ($= 50\;\mathrm{\mu mol/min}$):
+$v = \frac{50[S]}{5 + [S]} = 50$, which requires $[S] \to \infty$ (the enzyme can never reach the
+original $V_{max}$). This illustrates a key difference: competitive inhibition can be overcome by
+increasing $[S]$, but non-competitive cannot.
+
+</details>
+
+**Worked Example: Water Properties and Biological Significance**
+
+(a) Explain why water has a high specific heat capacity ($4.18\;\mathrm{J/(g \cdot ^\circ C)}$) and
+why this is important for organisms. (b) Calculate the energy required to raise the temperature of
+$70\;\mathrm{kg}$ of water (human body) by $1^\circ\mathrm{C}$. (c) Explain why ice floats on water
+and why this is ecologically significant. (d) Explain the role of water as a solvent for biological
+molecules, distinguishing between hydrophilic and hydrophobic substances.
+
+<details>
+<summary>Solution</summary>
+
+(a) Water has a high specific heat capacity because of **hydrogen bonding**: energy input must first
+break hydrogen bonds between water molecules before the kinetic energy (temperature) of individual
+molecules can increase. This means water absorbs a large amount of heat energy with only a small
+temperature change. Biological significance: water buffers temperature changes in organisms and
+environments (oceans, large lakes), providing thermal stability for biochemical reactions.
+
+(b) $Q = mc\Delta T = 70000\;\mathrm{g} \times 4.18\;\mathrm{J/(g \cdot ^\circ C)} \times 1^\circ\mathrm{C} = 292{,}600\;\mathrm{J} = 292.6\;\mathrm{kJ}$.
+
+(c) Ice floats because it is less dense than liquid water. In ice, each water molecule forms 4 hydrogen
+bonds in a rigid, open hexagonal lattice that is less densely packed than the disordered arrangement in
+liquid water. Ecological significance: the layer of ice on the surface of lakes and ponds insulates the
+water below, preventing it from freezing solid and allowing aquatic organisms to survive winter. If ice
+sank, water bodies would freeze from the bottom up, killing most aquatic life.
+
+(d) Water is an excellent solvent for polar and ionic substances (**hydrophilic**) because its polar
+molecules can form hydrogen bonds and ion-dipole interactions with solutes. Examples: $\mathrm{Na}^+$,
+$\mathrm{Cl}^-$, glucose, amino acids, DNA, proteins dissolve in water.
+
+Non-polar substances (**hydrophobic**) cannot form hydrogen bonds with water and are insoluble. Examples:
+lipids, cholesterol, steroid hormones. In aqueous environments, hydrophobic molecules aggregate (hydrophobic
+effect), which is the driving force for membrane formation (lipid bilayers) and protein folding
+(hydrophobic core).
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing alpha helices and beta sheets**: alpha helices are spiral structures stabilised by
+  hydrogen bonds between the C=O of residue $i$ and the N-H of residue $i+4$; beta sheets are extended
+  strands stabilised by hydrogen bonds between adjacent strands (parallel or antiparallel).
+- **Confusing primary structure with amino acid sequence**: they are the same thing. The primary structure
+  IS the sequence of amino acids.
+- **Assuming all enzymes are proteins**: ribozymes (e.g., rRNA in ribosomes, self-splicing introns) are
+  RNA molecules with catalytic activity.
+- **Confusing DNA and RNA bases**: DNA has A, T, G, C; RNA has A, U, G, C. Uracil replaces thymine.
+- **Forgetting that the genetic code is degenerate but not ambiguous**: most amino acids are coded for
+  by more than one codon (degenerate), but each codon codes for only one amino acid (not ambiguous).
+- **Confusing saturated and unsaturated fatty acids**: saturated fats have no double bonds (straight
+  chains, solid at room temperature); unsaturated fats have one or more C=C double bonds (kinked chains,
+  liquid at room temperature).
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 13: Extended Response -- Protein Denaturation and Renaturation</summary>
+
+(a) Describe the four levels of protein structure, giving examples of the bonds and interactions that
+stabilise each level. (b) Explain how heat, pH changes, and heavy metals cause protein denaturation.
+(c) Explain why some proteins can renature after denaturation while others cannot. (d) Explain why
+denaturation of an enzyme abolishes its catalytic activity but does not destroy its primary structure.
+
+</details>
+
+<details>
+<summary>Answer 13</summary>
+
+(a) **Primary structure**: the sequence of amino acids, stabilised by peptide (covalent) bonds.
+Example: insulin A chain = 21 amino acids, B chain = 30 amino acids.
+
+**Secondary structure**: local folding into regular structures (alpha helix, beta pleated sheet),
+stabilised by hydrogen bonds between backbone C=O and N-H groups (not R groups).
+
+**Tertiary structure**: the overall 3D folding of a single polypeptide chain, stabilised by:
+- Hydrophobic interactions (hydrophobic R groups cluster in the interior)
+- Hydrogen bonds (between R groups)
+- Ionic bonds (salt bridges between charged R groups)
+- Disulphide bonds (covalent bonds between Cys residues)
+- Van der Waals forces (between closely packed atoms)
+
+**Quaternary structure**: the arrangement of multiple polypeptide subunits into a functional protein,
+stabilised by the same interactions as tertiary structure (but between subunits, not within a subunit).
+Example: haemoglobin ($\alpha_2\beta_2$, four subunits).
+
+(b) **Heat**: increases kinetic energy, disrupting weak interactions (hydrogen bonds, hydrophobic
+interactions, ionic bonds). The protein unfolds, exposing hydrophobic R groups. At very high
+temperatures, peptide bonds may also break.
+
+**pH changes**: alter the ionisation state of R groups. At extreme pH, acidic groups may be protonated
+(or basic groups deprotonated), disrupting ionic bonds and salt bridges. This changes the charge
+distribution, causing unfolding.
+
+**Heavy metals** (e.g., $\mathrm{Hg}^{2+}$, $\mathrm{Pb}^{2+}$, $\mathrm{Ag}^+$): bind to sulfhydryl
+groups ($-\mathrm{SH}$) of cysteine residues, forming strong covalent or coordination bonds that disrupt
+disulphide bridges and the active site geometry of enzymes. Heavy metals can also bind to carboxyl and
+amino groups, disrupting ionic bonds.
+
+(c) **Renaturable proteins**: small, single-domain proteins (e.g., ribonuclease A, as demonstrated by
+Anfinsen's experiment) can refold spontaneously after denaturation because the primary structure
+contains all the information needed for correct folding. The protein follows the thermodynamically most
+stable conformation (the native state has the lowest free energy).
+
+**Non-renaturable proteins**: large, multi-domain proteins or those with disulphide bonds may not
+refold correctly because: (1) the denatured state has many possible conformations, and the correct
+one may not be found within a reasonable time (kinetic trapping); (2) disulphide bonds may form
+incorrectly; (3) aggregation may occur (exposed hydrophobic groups of multiple unfolded proteins
+stick together irreversibly); (4) chaperone proteins (normally present in the cell) are absent in
+vitro.
+
+(d) Denaturation disrupts the secondary, tertiary, and quaternary structure of the enzyme, destroying
+the precise 3D arrangement of the active site. Without the correct active site geometry, the enzyme
+cannot bind its substrate or catalyse the reaction. However, denaturation does not break peptide bonds
+(the primary structure is preserved). If the denaturing agent is removed (and the protein is renaturable),
+the enzyme can regain its activity.
+
+</details>
+
+<details>
+<summary>Problem 14: Quantitative -- Nucleic Acid Quantitation</summary>
+
+A DNA sample has an absorbance at $260\;\mathrm{nm}$ ($A_{260}$) of $0.50$ in a $1\;\mathrm{cm}$
+cuvette. The absorbance at $280\;\mathrm{nm}$ ($A_{280}$) is $0.28$. (a) Calculate the DNA
+concentration in $\mathrm{\mu g/mL}$ (using the conversion: $A_{260} = 1.0$ corresponds to
+$50\;\mathrm{\mu g/mL}$ double-stranded DNA). (b) Calculate the $A_{260}/A_{280}$ ratio and assess
+the purity of the sample. (c) If the sample is diluted $1:10$ before measurement, what was the original
+concentration? (d) Explain why protein contamination increases $A_{280}$.
+
+</details>
+
+<details>
+<summary>Answer 14</summary>
+
+(a) DNA concentration $= A_{260} \times 50\;\mathrm{\mu g/mL} = 0.50 \times 50 = 25\;\mathrm{\mu g/mL}$.
+
+(b) $A_{260}/A_{280} = 0.50 / 0.28 = 1.79$.
+Pure DNA has a ratio of approximately $1.8$. A ratio of $1.79$ indicates good purity (minimal protein
+contamination). Ratios below $1.7$ suggest significant protein contamination; ratios above $2.0$ suggest
+RNA contamination or other contaminants.
+
+(c) Original concentration $= 25 \times 10 = 250\;\mathrm{\mu g/mL}$.
+
+(d) Proteins contain aromatic amino acids (tryptophan, tyrosine) that absorb UV light at $280\;\mathrm{nm}$
+(with a weaker absorbance at $260\;\mathrm{nm}$). When protein is present as a contaminant in the DNA
+sample, it increases $A_{280}$ more than $A_{260}$, lowering the $A_{260}/A_{280}$ ratio. Pure DNA
+has minimal absorbance at $280\;\mathrm{nm}$ (DNA bases absorb maximally at $260\;\mathrm{nm}$).
+
+</details>
+
+<details>
+<summary>Problem 15: Extended Response -- Carbohydrates: Structure and Function</summary>
+
+Compare and contrast the structures and functions of: (a) starch (amylose and amylopectin), (b)
+cellulose, (c) glycogen, and (d) chitin. For each, describe: the type of glycosidic bond, whether
+it is alpha or beta, the degree of branching, the organisms that produce it, and its biological
+function. Explain why humans can digest starch and glycogen but not cellulose or chitin.
+
+</details>
+
+<details>
+<summary>Answer 15</summary>
+
+| Feature | Starch (amylose) | Starch (amylopectin) | Glycogen | Cellulose | Chitin |
+|---------|-----------------|---------------------|----------|-----------|--------|
+| **Monomer** | $\alpha$-glucose | $\alpha$-glucose | $\alpha$-glucose | $\beta$-glucose | N-acetylglucosamine |
+| **Bond** | $\alpha$-1,4 | $\alpha$-1,4 and $\alpha$-1,6 | $\alpha$-1,4 and $\alpha$-1,6 | $\beta$-1,4 | $\beta$-1,4 |
+| **Structure** | Helical (spiral) | Branched helices | Highly branched | Linear, parallel chains (microfibrils) | Linear, parallel chains |
+| **Branching** | None | Every 24--30 residues | Every 8--12 residues | None | None |
+| **Producers** | Plants | Plants | Animals, fungi | Plants, algae | Fungi, arthropods, some animals |
+| **Function** | Energy storage | Energy storage | Energy storage (rapid mobilisation) | Structural (cell walls) | Structural (exoskeletons, fungal walls) |
+
+**Why humans can digest starch/glycogen but not cellulose/chitin**:
+
+Humans produce **amylase** (in saliva and pancreas) that hydrolyses $\alpha$-1,4 glycosidic bonds
+and **isomaltase** (brush border enzyme) that hydrolyses $\alpha$-1,6 bonds. These enzymes can access
+the glycosidic bonds in starch and glycogen because the $\alpha$ configuration creates a helical
+structure with bonds accessible to the enzyme active site.
+
+Humans do not produce **cellulase** or **chitinase**, the enzymes needed to hydrolyse $\beta$-1,4
+glycosidic bonds. The $\beta$ configuration creates linear, tightly packed chains (in cellulose) or
+chains with bulky N-acetyl groups (in chitin) that are inaccessible to human digestive enzymes.
+Cellulose and chitin pass through the digestive system as dietary fibre (insoluble fibre).
+
+Ruminants (cows, sheep) and termites can digest cellulose because they harbour symbiotic microorganisms
+(bacteria, protozoa) in their digestive tracts that produce cellulase.
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **Enzyme kinetics in detail**: Review [./metabolism-cell-biology](./metabolism-cell-biology) for Michaelis-Menten kinetics, inhibition types, and enzyme regulation.
+- **DNA replication and transcription**: Review [./genetics-advanced](./genetics-advanced) for detailed mechanisms of DNA and RNA synthesis.
+- **Cell membranes and lipids**: Review [./cell-biology](./cell-biology) for membrane structure and the fluid mosaic model.
+- **Protein synthesis**: Review [./genetics-advanced](./genetics-advanced) for translation and post-translational modifications.
+- **Immunology and antibody structure**: Review [./immunology](./immunology) for immunoglobulin structure and antigen-antibody interactions.
+- **Plant biology and carbohydrates**: Review [./plant-biology](./plant-biology) for cellulose, starch, and transport sugars.
+
+---
+
+## Supplementary: Molecular Biology Techniques (HL Extension)
+
+### Gel Electrophoresis Principles
+
+Gel electrophoresis separates DNA, RNA, or protein molecules based on their size, charge, and shape
+by applying an electric field across a gel matrix.
+
+**DNA electrophoresis**:
+- DNA is negatively charged (phosphate backbone) and migrates toward the positive electrode (anode).
+- Agarose gel: concentration $0.5$--$2.0\%$ (higher concentration = smaller pores = better separation
+  of small fragments). Suitable for fragments $100$--$25{,}000\;\mathrm{bp}$.
+- Polyacrylamide gel (PAGE): higher resolution, suitable for fragments $1$--$1000\;\mathrm{bp}$.
+- Migration distance is inversely proportional to the log of fragment size (larger fragments move
+  more slowly through the gel matrix).
+- A DNA ladder (fragments of known size) is run alongside samples for size estimation.
+
+**Visualisation**: DNA is stained with ethidium bromide or SYBR Safe (intercalates between bases and
+fluoresces under UV light). Alternatively, samples can be loaded with loading dye (contains glycerol
+or sucrose to make the sample denser than the buffer, plus tracking dyes).
+
+### Polymerase Chain Reaction (PCR) -- Detailed Mechanism
+
+PCR amplifies a specific DNA sequence exponentially. Components:
+- **Template DNA**: the DNA containing the target sequence.
+- **Two primers**: short, single-stranded DNA oligonucleotides (typically $18$--$25\;\mathrm{nt}$)
+  complementary to the regions flanking the target. The $3'$ end of each primer faces the target sequence.
+- **Taq DNA polymerase**: a thermostable DNA polymerase from _Thermus aquaticus_ (optimum temperature
+  $72^\circ\mathrm{C}$, withstands the $95^\circ\mathrm{C}$ denaturation step).
+- **dNTPs**: deoxynucleoside triphosphates (dATP, dCTP, dGTP, dTTP) -- building blocks for DNA synthesis.
+- **Buffer**: provides optimal pH and $\mathrm{Mg}^{2+}$ concentration (cofactor for Taq polymerase).
+
+**Three-step cycle** (repeated $25$--$35$ times):
+
+1. **Denaturation** ($94$--$98^\circ\mathrm{C}$, $30\;\mathrm{s}$): hydrogen bonds break, separating
+   the double-stranded DNA into single strands.
+
+2. **Annealing** ($50$--$65^\circ\mathrm{C}$, $30\;\mathrm{s}$): primers hybridise (bind) to their
+   complementary sequences on the single-stranded template. The annealing temperature depends on the
+   primer sequences (typically $3$--$5^\circ\mathrm{C}$ below the primer $T_m$).
+
+3. **Extension** ($72^\circ\mathrm{C}$, $1\;\mathrm{min/kb}$): Taq polymerase extends the primers,
+  synthesising new DNA strands complementary to the template.
+
+**Result**: after $n$ cycles, $2^n$ copies of the target are produced (plus the original template).
+
+### Restriction Enzyme Analysis
+
+Restriction enzymes recognise specific palindromic DNA sequences and cut both strands, producing
+fragments of defined lengths. Applications:
+
+- **DNA fingerprinting**: VNTR (variable number tandem repeat) or STR (short tandem repeat) analysis.
+  PCR amplifies multiple STR loci, and the fragment sizes are compared between samples.
+- **Diagnostic testing**: detecting the presence of a disease-causing mutation by checking whether a
+  restriction site is created or destroyed by the mutation (RFLP -- restriction fragment length
+  polymorphism).
+- **Cloning**: cutting both the insert and vector with the same enzyme(s) produces compatible ends
+  for ligation.
+
+### DNA Sequencing
+
+**Sanger sequencing** (chain termination method):
+1. Four separate reactions are set up, each containing the template, primer, DNA polymerase, dNTPs,
+   and a different ddNTP (dideoxynucleotide: lacks the $3'$-$\mathrm{OH}$ group needed for chain
+   elongation).
+2. When a ddNTP is incorporated, chain termination occurs. Each reaction produces a mixture of
+   fragments of different lengths, each ending with the specific ddNTP.
+3. Fragments are separated by capillary electrophoresis and detected by fluorescence (modern automated
+   sequencers use fluorescently labelled ddNTPs, allowing all four reactions in one tube).
+
+**Next-generation sequencing (NGS)**: massively parallel sequencing technologies that sequence
+millions of DNA fragments simultaneously. Examples: Illumina (sequencing by synthesis), PacBio
+(single-molecule real-time sequencing), Oxford Nanopore (sequencing by measuring current changes
+as DNA passes through a protein nanopore). NGS has revolutionised genomics, enabling whole-genome
+sequencing in hours at rapidly decreasing cost.
+
+### Worked Example: Restriction Fragment Length Analysis
+
+A gene has a single EcoRI site (GAATTC) in its normal allele but the site is mutated (GAATTC $\to$
+GAA TTC, introducing a 1 bp insertion that destroys the site) in a disease allele. The gene is
+$3000\;\mathrm{bp}$ long. (a) How many fragments are produced by EcoRI digestion of each allele?
+(b) If the EcoRI site is at position $1500$, what are the fragment sizes for each allele? (c) How
+could this be used for genetic diagnosis?
+
+<details>
+<summary>Solution</summary>
+
+(a) Normal allele: one EcoRI site produces 2 fragments.
+Disease allele: no EcoRI site (the site is destroyed by the mutation), producing 1 fragment
+(the uncut gene).
+
+(b) Normal allele: fragments are $1500\;\mathrm{bp}$ and $1500\;\mathrm{bp}$ (EcoRI cuts at position
+$1500$).
+Disease allele: single fragment of $3001\;\mathrm{bp}$ (3000 bp gene + 1 bp insertion).
+
+(c) Diagnostic use: extract genomic DNA from the patient, digest with EcoRI, run on agarose gel.
+- If the patient is homozygous normal: 2 bands at $1500\;\mathrm{bp}$.
+- If the patient is homozygous disease: 1 band at $3001\;\mathrm{bp}$.
+- If the patient is heterozygous: 3 bands at $3001$, $1500$, and $1500\;\mathrm{bp}$.
+
+This is a simple form of RFLP analysis. In practice, PCR amplification of the region followed by
+restriction digestion (PCR-RFLP) is more commonly used for diagnostic testing, as it requires less
+DNA and is faster.
+
+</details>
+

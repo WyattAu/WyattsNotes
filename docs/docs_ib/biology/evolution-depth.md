@@ -908,3 +908,764 @@ in the same region, construct the most parsimonious phylogenetic tree and identi
 - **Ecology and populations** --> Review [./ecology](./ecology)
 - **Classification and taxonomy** --> Review [./ecology](./ecology)
 - **Genetic engineering techniques** --> Review [./genetics-advanced](./genetics-advanced)
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Hardy-Weinberg with Selection**
+
+In a population of moths, the allele for dark colour ($D$) is dominant over light colour ($d$). The
+initial allele frequencies are $p = 0.2$ and $q = 0.8$. Light-coloured moths have a survival rate of
+$60\%$ (selection coefficient $s = 0.4$ against the recessive phenotype). (a) Calculate the genotype
+frequencies before selection. (b) Calculate the relative fitness of each genotype. (c) Calculate the
+allele frequencies after one generation of selection. (d) How many generations would it take for the
+frequency of $d$ to drop below $0.5$?
+
+<details>
+<summary>Solution</summary>
+
+(a) Before selection: $p = 0.2$, $q = 0.8$.
+$P(DD) = p^2 = 0.04$
+$P(Dd) = 2pq = 0.32$
+$P(dd) = q^2 = 0.64$
+
+(b) Relative fitness ($w$):
+- $DD$: $w = 1.0$ (dark moths have no disadvantage)
+- $Dd$: $w = 1.0$ (dominant phenotype, no disadvantage)
+- $dd$: $w = 1 - s = 1 - 0.4 = 0.6$
+
+(c) Mean fitness: $\bar{w} = p^2 w_{DD} + 2pq w_{Dd} + q^2 w_{dd}$
+$= 0.04(1.0) + 0.32(1.0) + 0.64(0.6) = 0.04 + 0.32 + 0.384 = 0.744$
+
+After selection, the frequency of $d$ is:
+$q' = \frac{q^2 w_{dd} + pq w_{Dd}}{\bar{w}} = \frac{0.64(0.6) + 0.2 \times 0.8(1.0)}{0.744}$
+$= \frac{0.384 + 0.16}{0.744} = \frac{0.544}{0.744} = 0.731$
+
+$p' = 1 - q' = 0.269$
+
+After one generation: $p = 0.269$, $q = 0.731$.
+
+(d) We need to track $q$ over successive generations. Using the recurrence relation:
+$q' = \frac{q^2(1-s) + pq}{\bar{w}}$ where $\bar{w} = 1 - sq^2$.
+
+For selection against a recessive, the change in $q$ per generation is approximately:
+$\Delta q \approx -\frac{spq^2}{1 - sq^2}$
+
+This is slow when $q$ is small (because most $d$ alleles are hidden in heterozygotes). Let me compute
+successively:
+
+Gen 0: $q = 0.8$, $p = 0.2$, $\bar{w} = 1 - 0.4(0.64) = 0.744$
+$q' = (0.64 \times 0.6 + 0.16)/0.744 = 0.544/0.744 = 0.731$
+
+Gen 1: $q = 0.731$, $p = 0.269$, $\bar{w} = 1 - 0.4(0.534) = 0.786$
+$q' = (0.534 \times 0.6 + 0.269 \times 0.731)/0.786 = (0.321 + 0.197)/0.786 = 0.518/0.786 = 0.659$
+
+Gen 2: $q = 0.659$, $\bar{w} = 1 - 0.4(0.434) = 0.826$
+$q' = (0.434 \times 0.6 + 0.341 \times 0.659)/0.826 = (0.261 + 0.225)/0.826 = 0.486/0.826 = 0.588$
+
+Gen 3: $q = 0.588$, $\bar{w} = 1 - 0.4(0.346) = 0.862$
+$q' = (0.346 \times 0.6 + 0.412 \times 0.588)/0.862 = (0.208 + 0.242)/0.862 = 0.450/0.862 = 0.522$
+
+So after approximately $4$ generations, $q < 0.5$.
+
+</details>
+
+**Worked Example: Genetic Drift in a Small Population**
+
+A small island population of $20$ birds (10 males, 10 females) has an allele $A$ at frequency $p = 0.7$.
+(a) Calculate the expected heterozygosity ($H_e = 2pq$). (b) Calculate the effective population size
+($N_e$). (c) Calculate the expected heterozygosity after 5 generations of drift. (d) Explain why
+genetic drift has a stronger effect in small populations.
+
+<details>
+<summary>Solution</summary>
+
+(a) $H_e = 2pq = 2 \times 0.7 \times 0.3 = 0.42$.
+
+(b) For a population with equal sex ratio: $N_e = \frac{4N_m N_f}{N_m + N_f} = \frac{4 \times 10 \times 10}{10 + 10} = \frac{400}{20} = 20$.
+(Since $N_m = N_f$, $N_e = N = 20$.)
+
+(c) Heterozygosity declines each generation by a factor of $(1 - \frac{1}{2N_e})$:
+$H_t = H_0 \times (1 - \frac{1}{2N_e})^t = 0.42 \times (1 - \frac{1}{40})^5 = 0.42 \times (0.975)^5$
+$(0.975)^5 = 0.881$
+$H_5 = 0.42 \times 0.881 = 0.370$
+
+After 5 generations, heterozygosity has declined from $0.42$ to $0.370$ (a loss of approximately $12\%$).
+
+(d) Genetic drift is the random fluctuation of allele frequencies due to sampling error in each generation.
+In small populations, the sampling error is proportionally larger (each individual represents a larger
+fraction of the gene pool), so allele frequencies fluctuate more dramatically. In large populations,
+sampling effects average out. Genetic drift can lead to fixation or loss of alleles regardless of their
+adaptive value, reducing genetic variation. This is why small, isolated populations are more vulnerable
+to inbreeding depression and have reduced evolutionary potential.
+
+</details>
+
+**Worked Example: Constructing a Phylogenetic Tree**
+
+Five species share the following presence/absence of derived characters (1 = present, 0 = absent):
+
+| Character | Species A | Species B | Species C | Species D | Species E (outgroup) |
+|-----------|-----------|-----------|-----------|-----------|---------------------|
+| 1         | 1         | 1         | 1         | 1         | 0                   |
+| 2         | 1         | 1         | 0         | 0         | 0                   |
+| 3         | 1         | 1         | 1         | 0         | 0                   |
+| 4         | 1         | 0         | 1         | 0         | 0                   |
+| 5         | 0         | 1         | 0         | 1         | 0                   |
+
+(a) Construct the most parsimonious cladogram. (b) Identify all synapomorphies (shared derived characters)
+at each node. (c) Identify any homoplasies (convergent evolution or reversals).
+
+<details>
+<summary>Solution</summary>
+
+(a) Working from the outgroup (Species E, all characters = 0):
+
+Character 1 is shared by A, B, C, D -- this is the first split (E branches off first).
+
+Remaining group: A, B, C, D all have character 1.
+
+Character 2: present in A and B only. This groups A + B together.
+Character 5: present in B and D only. This is a homoplasy (see below).
+
+Character 3: present in A, B, C (not D). This groups A, B, C together.
+Character 4: present in A and C (not B). This is a homoplasy.
+
+Most parsimonious tree (based on fewest changes):
+```
+         ┌── A (chars 2, 3, 4)
+    ┌────┤
+    │    └── B (chars 2, 3, 5)
+────┤
+    │    ┌── C (char 3, 4)
+    └────┤
+         └── D (char 5)
+
+E (outgroup)
+```
+
+Node 1 (root): splits E from {A,B,C,D}. Synapomorphy: character 1.
+Node 2: splits {A,B} from {C,D}. Synapomorphy: character 2.
+Node 3: splits A from B. No unambiguous synapomorphy (character 4 in A and character 5 in B are
+autapomorphies or homoplasies).
+Node 4: splits C from D. No clear synapomorphy at this node.
+
+(b) Synapomorphies:
+- Node 1 (A+B+C,D vs E): character 1
+- Node 2 (A+B vs C+D): character 2
+
+(c) Homoplasies:
+- Character 3 appears in A, B, C but not D. If the tree groups (A,B) and (C,D), then character 3 either
+  evolved independently in the A+B clade and in C (convergent evolution), or was present in the ancestor
+  of A+B+C+D and lost in D (reversal).
+- Character 4 appears in A and C but not B. This requires either convergent evolution or a reversal.
+- Character 5 appears in B and D but not A or C. This requires convergent evolution (independent gains)
+  since B and D are on different branches.
+
+The most parsimonious tree minimises the number of homoplasies. The tree above requires 3 homoplasies
+(characters 3, 4, 5). Alternative trees would need to be evaluated to find the one requiring the fewest
+total character state changes.
+
+</details>
+
+**Worked Example: Speciation by Polyploidy**
+
+A diploid plant species has $2n = 14$ ($n = 7$). (a) An individual undergoes autopolyploidy. What is
+the chromosome number of the tetraploid offspring? (b) Explain why the tetraploid is reproductively
+isolated from the diploid parent. (c) If the diploid parent produces gametes with $n = 7$ and the
+tetraploid produces gametes with $n = 14$, what chromosome number would a triploid hybrid have, and
+why would it be sterile?
+
+<details>
+<summary>Solution</summary>
+
+(a) Tetraploid: $4n = 28$. The individual has 4 copies of each of the 7 chromosomes.
+
+(b) The tetraploid is reproductively isolated because:
+- Diploid gametes: $n = 7$
+- Tetraploid gametes: $n = 14$
+- Hybrid offspring: $7 + 14 = 21$ (triploid)
+- During meiosis in the triploid, chromosomes cannot pair properly (there are 3 copies of each chromosome
+  instead of 2). This leads to unbalanced gametes, resulting in sterility.
+- This is **post-zygotic reproductive isolation** (hybrid sterility).
+
+(c) Triploid hybrid: $3n = 21$. During meiosis, the 3 homologous chromosomes attempt to pair, but
+synapsis is irregular. Some chromosomes may form trivalents (3 chromosomes paired), others may form
+bivalent + univalent (2 paired + 1 unpaired). This leads to gametes with random numbers of chromosomes
+(7, 8, 9, etc.), most of which are non-viable. The triploid is therefore sterile.
+
+This mechanism (polyploidy leading to instant speciation) is common in plants and rare in animals.
+Approximately $70\%$ of flowering plant species have undergone at least one polyploidisation event in
+their evolutionary history.
+
+</details>
+
+**Worked Example: Bottleneck Effect and Genetic Diversity**
+
+A population of $10{,}000$ individuals is reduced to $50$ individuals by a natural disaster (population
+bottleneck). Before the bottleneck, the frequency of a neutral allele $B$ is $0.3$. (a) What is the
+probability that allele $B$ is lost from the population during the bottleneck? (b) After the bottleneck,
+the population recovers to $10{,}000$ individuals. Explain why the genetic diversity of the recovered
+population is lower than the original. (c) The bottleneck population has a higher frequency of a rare
+genetic disease (autosomal recessive, allele $d$). Explain this observation.
+
+<details>
+<summary>Solution</summary>
+
+(a) The probability that allele $B$ is lost depends on the sampling process. If we model this as a binomial
+sampling of $2N_e = 100$ gene copies (from the $50$ surviving individuals), the probability that zero
+copies of $B$ are sampled is $(1 - 0.3)^{100} = 0.7^{100} \approx 3.2 \times 10^{-16}$.
+
+However, this calculation assumes the bottleneck survivors are a perfectly random sample, which is
+unlikely. In practice, the founder effect during bottlenecks can dramatically change allele frequencies
+or eliminate alleles. The key point is that rare alleles (low frequency) are much more likely to be lost
+than common alleles. If $B$ had frequency $0.01$, $P(\text{loss}) = 0.99^{100} \approx 0.366$ ($37\%$).
+
+(b) The bottleneck reduces the number of alleles in the population because many alleles present in the
+original $10{,}000$ individuals are not represented among the $50$ survivors. When the population recovers,
+it can only regenerate the alleles carried by the $50$ founders. The effective population size during
+the bottleneck was very small ($N_e \approx 50$), causing rapid genetic drift that fixed some alleles
+and eliminated others. The recovered population has reduced heterozygosity and fewer alleles (allelic
+richness) compared to the pre-bottleneck population.
+
+This is observed in cheetahs (_Acinonyx jubatus_), which experienced a severe bottleneck approximately
+$10{,}000$ years ago. Modern cheetahs have extremely low genetic diversity and are susceptible to
+disease and reproductive abnormalities.
+
+(c) A rare disease allele ($d$) that was at very low frequency in the original population may, by chance,
+be over-represented among the bottleneck survivors. Genetic drift in the small bottleneck population
+can cause large, random changes in allele frequency. If several of the $50$ survivors happened to carry
+the $d$ allele, its frequency would increase substantially, leading to a higher disease incidence in the
+recovered population. This is an example of the **founder effect**.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing Lamarckian and Darwinian evolution**: Lamarck proposed inheritance of acquired characteristics
+  (e.g., giraffes stretch their necks and pass longer necks to offspring); Darwin proposed natural selection
+  acting on random variation. Only Darwinian evolution is supported by evidence.
+- **Assuming evolution has a direction or goal**: evolution is not progressive or teleological; it is the
+  non-random survival of randomly generated variants. "More evolved" is not a meaningful concept.
+- **Confusing homology with analogy**: homologous structures share a common ancestry (e.g., bat wing and
+  human arm); analogous structures have similar function but different evolutionary origins (e.g., bat wing
+  and insect wing). Convergent evolution produces analogy, not homology.
+- **Misapplying Hardy-Weinberg**: H-W assumes no selection, no mutation, no migration, random mating, large
+  population, and no genetic drift. Deviation from H-W indicates that one or more of these conditions is
+  violated, but it does not identify which one.
+- **Assuming natural selection always produces optimal adaptations**: natural selection produces adaptations
+  that are "good enough" for the current environment, constrained by historical legacy (e.g., the blind
+  spot in the vertebrate eye), genetic correlations, and physical/chemical constraints.
+- **Confusing genetic drift and natural selection**: drift is random change in allele frequency (stronger
+  in small populations); selection is non-random change (favours beneficial alleles).
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 6: Extended Response -- Evidence for Evolution</summary>
+
+Describe and explain four types of evidence that support the theory of evolution by natural selection.
+For each type, provide a specific example and explain how it supports common descent. (a) Palaeontological
+evidence, (b) anatomical evidence, (c) molecular evidence, (d) biogeographical evidence.
+
+</details>
+
+<details>
+<summary>Answer 6</summary>
+
+(a) **Palaeontological evidence (fossil record)**:
+Fossils show a sequence of progressively changing forms over geological time, documenting the evolution
+of major groups. Example: the evolution of the horse (_Equidae_) from _Hyracotherium_ (Eocene, $55\;\mathrm{Ma}$,
+dog-sized, four-toed) through _Mesohippus_, _Merychippus_, to modern _Equus_ (toe reduction from 4 to 1,
+increase in body size, changes in tooth morphology for grass-eating). Transitional fossils (e.g.,
+_Tiktaalik_, showing features intermediate between fish and tetrapods) demonstrate that major evolutionary
+transitions occurred through gradual modification of existing structures. The fossil record also shows
+patterns of mass extinction followed by adaptive radiation of surviving groups.
+
+(b) **Anatomical evidence (comparative anatomy)**:
+Homologous structures (same evolutionary origin, potentially different function) indicate common ancestry.
+Example: the pentadactyl limb (five-digit limb) in vertebrates -- the human arm, whale flipper, bat wing,
+and cat leg all have the same basic bone structure (humerus, radius, ulna, carpals, metacarpals, phalanges)
+despite different functions (manipulation, swimming, flying, walking). Vestigial structures (remnants of
+structures that had a function in ancestors but are reduced or non-functional in descendants) also support
+evolution: the human appendix (remnant of a larger caecum in herbivorous ancestors), pelvic bones in
+whales, wings in flightless birds, and eyes in cave-dwelling fish.
+
+(c) **Molecular evidence**:
+All organisms use the same genetic code (DNA/RNA, universal codons), the same basic biochemical pathways
+(glycolysis, Krebs cycle), and share homologous genes and proteins. The degree of molecular similarity
+reflects evolutionary relatedness. Example: cytochrome c is a highly conserved protein; humans and
+chimpanzees have identical cytochrome c sequences, while humans and yeast differ by approximately $45\%$
+of amino acids. Molecular clocks (based on neutral mutation rates) allow estimation of divergence times
+that are consistent with the fossil record. Pseudogenes (non-functional copies of genes that have
+accumulated mutations) provide a record of gene duplications and losses in evolutionary history.
+
+(d) **Biogeographical evidence**:
+The geographic distribution of species reflects evolutionary history. Species on oceanic islands are
+typically more similar to species on the nearest mainland than to species on other islands (despite
+similar environments), indicating colonisation from the mainland followed by adaptive radiation. Example:
+Darwin's finches on the Galapagos Islands are all descended from a single South American finch ancestor
+and have diversified into species with different beak shapes adapted to different food sources. The
+unique fauna of Australia (marsupials) reflects its long isolation after the breakup of Gondwana;
+convergent evolution produced marsupial equivalents of placental mammals (e.g., Tasmanian tiger
+resembled wolves; marsupial mole resembles placental moles).
+
+</details>
+
+<details>
+<summary>Problem 7: Quantitative -- Selection Coefficients and Fitness</summary>
+
+In a population of beetles, three colour morphs exist: green (genotype $GG$), brown ($Gg$), and black
+($gg$). A researcher measures the survival and reproductive success of each genotype:
+
+| Genotype | Number born | Number surviving to reproduce | Average offspring per survivor |
+|----------|------------|------------------------------|-------------------------------|
+| $GG$     | 300        | 240                          | 8                             |
+| $Gg$     | 600        | 420                          | 6                             |
+| $gg$     | 100        | 50                           | 4                             |
+
+(a) Calculate the absolute fitness of each genotype. (b) Calculate the relative fitness of each genotype.
+(c) Calculate the selection coefficient against each genotype. (d) What type of selection is this?
+(e) Predict the evolutionary outcome.
+
+</details>
+
+<details>
+<summary>Answer 7</summary>
+
+(a) Absolute fitness ($W$) = number surviving $\times$ average offspring per survivor:
+- $GG$: $240 \times 8 = 1920$
+- $Gg$: $420 \times 6 = 2520$
+- $gg$: $50 \times 4 = 200$
+
+(b) Relative fitness ($w$) = absolute fitness / maximum absolute fitness:
+Maximum absolute fitness $= 2520$ ($Gg$).
+- $GG$: $1920/2520 = 0.762$
+- $Gg$: $2520/2520 = 1.000$
+- $gg$: $200/2520 = 0.079$
+
+(c) Selection coefficient $s = 1 - w$:
+- $GG$: $s = 1 - 0.762 = 0.238$
+- $Gg$: $s = 0$
+- $gg$: $s = 1 - 0.079 = 0.921$
+
+(d) This is **heterozygote advantage** (overdominance, balancing selection). The heterozygote ($Gg$) has
+the highest fitness, while both homozygotes have lower fitness. This is the genetic basis for the
+maintenance of genetic polymorphism.
+
+(e) Under heterozygote advantage, both alleles are maintained in the population at a stable equilibrium
+frequency. The equilibrium frequency of $g$ is:
+$\hat{q} = \frac{s_{GG}}{s_{GG} + s_{gg}} = \frac{0.238}{0.238 + 0.921} = \frac{0.238}{1.159} = 0.205$
+
+The equilibrium frequency of $G$ is $\hat{p} = 1 - 0.205 = 0.795$.
+
+At equilibrium, $P(GG) = 0.632$, $P(Gg) = 0.326$, $P(gg) = 0.042$.
+
+This is analogous to sickle-cell allele maintenance in malaria-endemic regions: $HbS$ heterozygotes have
+malaria resistance, while both homozygotes have reduced fitness (normal homozygotes: susceptible to malaria;
+$HbS$ homozygotes: sickle-cell anaemia).
+
+</details>
+
+<details>
+<summary>Problem 8: Extended Response -- Reproductive Isolation Mechanisms</summary>
+
+Two populations of salamanders live on opposite sides of a mountain range. Describe the types of
+reproductive isolation that could prevent them from interbreeding, classifying each as pre-zygotic or
+post-zygotic and providing a specific example for each type.
+
+</details>
+
+<details>
+<summary>Answer 8</summary>
+
+**Pre-zygotic barriers** (prevent mating or fertilisation):
+
+1. **Habitat isolation**: the populations occupy different habitats and do not encounter each other.
+   Example: one population lives in fast-flowing streams, the other in still ponds.
+
+2. **Temporal isolation**: the populations breed at different times.
+   Example: one population breeds in spring, the other in autumn.
+
+3. **Behavioural isolation**: the populations have different courtship rituals that are not recognised
+   by the other.
+   Example: different pheromone compositions or courtship dances.
+
+4. **Mechanical isolation**: physical differences prevent successful mating.
+   Example: incompatible genital morphology (less common in salamanders, more common in insects with
+   "lock-and-key" genitalia).
+
+5. **Gametic isolation**: even if mating occurs, the sperm cannot fertilise the egg.
+   Example: species-specific egg jelly layers that only allow conspecific sperm to penetrate.
+
+**Post-zygotic barriers** (reduce fitness of hybrid offspring):
+
+6. **Hybrid inviability**: the zygote does not develop properly or the offspring die early.
+   Example: developmental abnormalities in hybrid embryos due to incompatible gene regulatory networks.
+
+7. **Hybrid sterility**: hybrids survive but are sterile.
+   Example: mules (horse $\times$ donkey) are viable but sterile because chromosomes cannot pair properly
+   during meiosis. In salamanders, triploid hybrids would be sterile.
+
+8. **Hybrid breakdown**: first-generation hybrids are viable and fertile, but subsequent generations show
+   reduced fitness.
+   Example: F2 hybrids have lower survival or fertility than F1 hybrids.
+
+The mountain range could initially cause **allopatric speciation** by creating geographic isolation.
+Over time, genetic drift and natural selection (different environments on each side) would lead to
+divergence, potentially creating multiple pre-zygotic and post-zygotic barriers. If the populations
+were to come into secondary contact, these barriers would maintain them as separate species.
+
+</details>
+
+<details>
+<summary>Problem 9: Data Analysis -- Allele Frequency Change Over Time</summary>
+
+A population of butterflies is monitored for the frequency of the melanic allele ($M$) over 10 years.
+Industrial pollution darkens tree bark during this period.
+
+| Year | $p$ (frequency of $M$) | $q$ (frequency of $m$) |
+|------|----------------------|----------------------|
+| 0    | 0.10                 | 0.90                 |
+| 2    | 0.25                 | 0.75                 |
+| 4    | 0.45                 | 0.55                 |
+| 6    | 0.62                 | 0.38                 |
+| 8    | 0.74                 | 0.26                 |
+| 10   | 0.80                 | 0.20                 |
+
+(a) Plot $p$ vs time. (b) Calculate the selection coefficient $s$ against the recessive ($mm$) phenotype
+using the data from year 0 to year 10 (assume the population is in H-W equilibrium each year and
+selection is against the homozygous recessive). (c) After year 10, pollution is reduced and tree bark
+lightens. Predict the trend in $p$ over the next 10 years. (d) Explain how this example illustrates
+natural selection rather than genetic drift.
+
+</details>
+
+<details>
+<summary>Answer 9</summary>
+
+(a) [Students should plot $p$ on the y-axis ($0$ to $1$) and year on the x-axis ($0$ to $10$). The curve
+is S-shaped (sigmoidal), characteristic of selection against a recessive phenotype: slow change when
+$q$ is high (most $M$ alleles are in heterozygotes and protected from selection), accelerating as $q$
+decreases, then slowing again as $p$ approaches $1$.]
+
+(b) For selection against a recessive with fitness $w_{mm} = 1 - s$ and $w_{MM} = w_{Mm} = 1$:
+$q' = \frac{q(1 - sq)}{1 - sq^2}$
+
+Using year 0: $q = 0.90$, $q^2 = 0.81$. Year 10: $q = 0.20$.
+Over 10 years (approximately 5 generations if the generation time is 2 years):
+
+This is complex to solve analytically. Using the approximate formula for one generation:
+$\Delta q \approx -sq^2(1-q)$
+
+From year 0 to 2: $\Delta q = 0.90 - 0.75 = 0.15$, $q \approx 0.90$.
+$0.15 \approx s \times 0.81 \times 0.10 = 0.081s$, so $s \approx 1.85$.
+
+This is greater than 1, which is impossible. This suggests the selection is very strong (near-lethal
+against $mm$ on dark bark) or that more than one generation occurred in 2 years.
+
+If the generation time is 1 year (10 generations in 10 years):
+Using the exact formula iteratively with $s = 0.5$:
+Gen 0: $q = 0.900$
+Gen 1: $q = 0.900(1 - 0.5 \times 0.900)/(1 - 0.5 \times 0.810) = 0.900 \times 0.550/0.595 = 0.832$
+Gen 2: $q = 0.832(1 - 0.5 \times 0.832)/(1 - 0.5 \times 0.692) = 0.832 \times 0.584/0.654 = 0.743$
+...
+
+With $s \approx 0.5$ and 10 generations, the trajectory approximately matches the data. The exact
+value of $s$ depends on the number of generations, but the selection is clearly strong.
+
+(c) After pollution reduction, the selective advantage reverses: light-coloured ($mm$) butterflies are now
+better camouflaged on light bark, while melanic ($MM$, $Mm$) butterflies are more visible to predators.
+The frequency of $M$ would decrease (and $m$ would increase) as selection now acts against the melanic
+phenotype. This is exactly what was observed with the peppered moth (_Biston betularia_) in England
+after the Clean Air Acts of the 1950s--1970s.
+
+(d) This is natural selection rather than drift because: (1) the change is directional and consistent
+over time (always increasing), which is unlikely to be random; (2) the change is correlated with an
+environmental change (pollution darkening bark); (3) the mechanism is known (differential predation
+by birds based on camouflage); (4) the magnitude and direction of change are consistent with the
+predicted effect of selection. In genetic drift, the direction of change would be random and not
+consistently correlated with environmental change.
+
+</details>
+
+<details>
+<summary>Problem 10: Extended Response -- Convergent Evolution vs Divergent Evolution</summary>
+
+(a) Define convergent evolution and divergent evolution, providing two examples of each. (b) Explain
+why convergent evolution is common in certain environments. (c) Describe how analogous structures can
+be distinguished from homologous structures using molecular evidence. (d) Explain how the repeated
+evolution of camera-type eyes in cephalopods (squid) and vertebrates illustrates convergent evolution
+at both the anatomical and molecular levels.
+
+</details>
+
+<details>
+<summary>Answer 10</summary>
+
+(a) **Convergent evolution**: unrelated species independently evolve similar traits due to similar
+environmental pressures or selective forces. Examples: (1) wings in bats (mammals), birds (aves), and
+insects (arthropods) -- all used for powered flight but evolved independently from different ancestral
+structures; (2) streamlined body shape in dolphins (mammals), sharks (fish), and ichthyosaurs (extinct
+reptiles) -- all adapted for fast swimming in aquatic environments.
+
+**Divergent evolution**: related species evolve different traits from a common ancestor, usually due to
+adapting to different environments. Examples: (1) Darwin's finches -- one ancestral finch species
+diversified into species with different beak shapes adapted to different food sources; (2) the mammalian
+limb -- the same basic pentadactyl structure has been modified into the horse hoof, bat wing, whale
+flipper, and human hand.
+
+(b) Convergent evolution is common when: (1) physical laws constrain the solutions available to
+organisms (e.g., only certain shapes are aerodynamically efficient); (2) similar ecological niches
+exist in different geographic regions (e.g., desert environments favour succulent plants and
+nocturnal animals regardless of continent); (3) there are a limited number of optimal solutions to
+a given problem (e.g., camera-type eyes are highly effective for image formation, so they evolved
+independently in vertebrates, cephalopods, and some cnidarians).
+
+(c) Anatomically similar structures can be distinguished by comparing their developmental origins
+and underlying genetic basis:
+- **Homologous structures**: develop from the same embryonic tissues, are controlled by homologous
+  genes (e.g., Hox genes), and have similar underlying anatomy despite different functions. Molecular
+  analysis shows they share orthologous genes (genes descended from a common ancestor).
+- **Analogous structures**: develop from different embryonic tissues, may be controlled by different
+  genes (or the same genes co-opted independently), and have different internal anatomy despite
+  superficial similarity. Molecular analysis shows they use paralogous genes (gene duplications) or
+  different genes altogether.
+
+(d) Camera-type eyes in cephalopods and vertebrates:
+- **Anatomical convergence**: both have a lens, retina, iris, and vitreous humour, and form an inverted
+  image on the retina. However, the developmental origins differ: the vertebrate eye develops as an
+  outgrowth of the brain (the optic cup), while the cephalopod eye develops from an invagination of the
+  skin (ectoderm). The vertebrate retina is "inverted" (photoreceptors face away from the light source,
+  requiring light to pass through other retinal layers), while the cephalopod retina is "everted"
+  (photoreceptors face the light source directly). The cephalopod eye is arguably better designed.
+- **Molecular convergence**: both eyes use opsins (light-sensitive proteins) for phototransduction, but
+  the specific opsins differ (vertebrates use ciliary opsins; cephalopods use rhabdomeric opsins). Both
+  use similar phototransduction cascades (G-protein coupled), but the specific proteins are products of
+  different gene families. This demonstrates that natural selection can arrive at similar functional
+  solutions (camera-type eye) using different molecular toolkits -- a remarkable example of convergent
+  evolution at multiple levels.
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **Genetics and inheritance patterns**: Review [./genetics](./genetics) for Mendelian genetics, meiosis, and chromosome behaviour.
+- **DNA, mutations, and molecular biology**: Review [./molecular-biology](./molecular-biology) for mutation types and DNA structure.
+- **Advanced genetics and genetic engineering**: Review [./genetics-advanced](./genetics-advanced) for DNA technology, PCR, and genetic modification.
+- **Ecology and populations**: Review [./ecology](./ecology) for population dynamics, communities, and biogeography.
+- **Immunology and pathogen evolution**: Review [./immunology](./immunology) for coevolution of hosts and pathogens, antigenic variation.
+
+---
+
+## Supplementary: Molecular Clocks and Phylogenetics (HL Extension)
+
+### The Molecular Clock Concept
+
+The molecular clock hypothesis, proposed by Zuckerkandl and Pauling (1962), states that the rate
+of molecular evolution (nucleotide or amino acid substitution) is approximately constant over time
+and among lineages. If the rate is known, the amount of molecular divergence between two species
+can be used to estimate the time since they shared a common ancestor.
+
+**Calibration**: the clock must be calibrated using known divergence times from the fossil record.
+For example, if two species diverged $10\;\mathrm{Ma}$ and differ by $5\%$ in a given gene, the
+substitution rate is $0.5\%$ per million years.
+
+### Types of Molecular Markers
+
+Different genes and genomic regions evolve at different rates, making them suitable for different
+timescales of evolutionary analysis:
+
+| Marker | Substitution rate | Time depth | Application |
+|--------|-------------------|------------|-------------|
+| rRNA (18S, 28S) | Very slow | $>500\;\mathrm{Ma}$ | Deep phylogeny (kingdoms, phyla) |
+| Mitochondrial COI ("DNA barcode") | Moderate | $1$--$100\;\mathrm{Ma}$ | Species identification, recent divergences |
+| Mitochondrial control region | Fast | $0.01$--$1\;\mathrm{Ma}$ | Population genetics, intraspecific variation |
+| Microsatellites (STRs) | Very fast | $<0.01\;\mathrm{Ma}$ | Individual identification, parentage |
+| Pseudogenes | Fast (no functional constraint) | Variable | Gene family evolution |
+
+### Assumptions and Limitations of the Molecular Clock
+
+1. **Rate constancy**: the clock assumes a constant substitution rate. In reality, rates vary due to:
+   - Generation time (shorter generation = more replications per year = faster molecular evolution).
+   - Metabolic rate (higher metabolism = more oxidative damage = faster mutation rate).
+   - Body size (smaller organisms tend to have faster rates).
+   - DNA repair efficiency.
+   - Functional constraints (conserved genes evolve more slowly than non-functional sequences).
+
+2. **Neutral theory**: the clock works best for neutral mutations (not subject to natural selection).
+   Positively selected sites evolve faster (adaptive evolution); negatively selected (purifying
+   selection) sites evolve more slowly.
+
+3. **Saturation**: at large evolutionary distances, multiple substitutions at the same site can
+   obscure the true number of changes (multiple hits). This leads to underestimation of divergence.
+
+### Phylogenetic Tree Construction Methods
+
+**Distance-based methods** (e.g., neighbour-joining):
+1. Calculate a pairwise distance matrix (number of substitutions between each pair of sequences).
+2. Build a tree that minimises the total tree length (sum of all branch lengths).
+3. Fast and widely used but discard information about specific substitutions.
+
+**Character-based methods** (e.g., maximum parsimony, maximum likelihood, Bayesian inference):
+- **Maximum parsimony**: finds the tree requiring the fewest evolutionary changes. Simple but
+  sensitive to long-branch attraction (long branches may be artefactually grouped together).
+- **Maximum likelihood**: finds the tree that maximises the probability of observing the data given
+  a specific model of evolution (e.g., Jukes-Cantor, HKY85, GTR). Computationally intensive but
+  statistically rigorous.
+- **Bayesian inference**: calculates the posterior probability of each tree given the data and a
+  prior. Provides probability distributions for tree topology and branch lengths. Used in programs
+  like MrBayes and BEAST.
+
+### Interpreting Phylogenetic Trees
+
+- The root represents the common ancestor of all taxa in the tree.
+- Branch lengths can represent the number of substitutions (in a cladogram, all branches are equal
+  length) or the amount of evolutionary change (in a phylogram, branch lengths are proportional to
+  the number of substitutions).
+- **Monophyletic group (clade)**: an ancestor and ALL of its descendants. All members share a most
+  recent common ancestor not shared with any member outside the group.
+- **Paraphyletic group**: an ancestor and SOME (but not all) of its descendants. Example: "reptiles"
+  (excludes birds, which are descended from reptiles).
+- **Polyphyletic group**: taxa that do not share a most recent common ancestor within the group.
+  Example: "warm-blooded animals" (birds and mammals, whose common ancestor was cold-blooded).
+
+### Worked Example: Molecular Clock Dating with Multiple Loci
+
+Three species of finch from the Galapagos Islands are compared at two genes:
+
+Gene A (slow clock, rate $= 1 \times 10^{-9}$ substitutions/site/year):
+- Species 1 vs 2: $12$ substitutions per $1000\;\mathrm{bp}$
+- Species 1 vs 3: $18$ substitutions per $1000\;\mathrm{bp}$
+- Species 2 vs 3: $6$ substitutions per $1000\;\mathrm{bp}$
+
+Gene B (fast clock, rate $= 5 \times 10^{-9}$ substitutions/site/year):
+- Species 1 vs 2: $50$ substitutions per $1000\;\mathrm{bp}$
+- Species 1 vs 3: $80$ substitutions per $1000\;\mathrm{bp}$
+- Species 2 vs 3: $30$ substitutions per $1000\;\mathrm{bp}$
+
+(a) Construct the most parsimonious tree. (b) Estimate divergence times using each gene separately.
+(c) Explain why the two genes give different time estimates.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Gene A**: the smallest distance is between species 2 and 3 ($6/1000$). The larger distances are
+species 1 vs 2 ($12/1000$) and species 1 vs 3 ($18/1000$). Since $12 + 6 = 18$, the tree is:
+```
+     ┌── Species 2 (6 substitutions from node)
+─────┤
+     └────── Species 3 (12 from node)
+         (root)── Species 1
+```
+Species 2 and 3 are sister taxa; species 1 is the outgroup.
+
+**Gene B**: same topology (smallest distance between 2 and 3: $30/1000$; $50 + 30 = 80$).
+
+Both genes support the same tree topology: (2,3) are sister taxa.
+
+(b) **Gene A**: rate $= 1 \times 10^{-9}$ subs/site/year.
+- Species 2--3 divergence: $6/1000 = 0.006$ subs/site. Time $= 0.006 / (2 \times 10^{-9}) = 3 \times 10^6$ years $= 3\;\mathrm{Ma}$.
+  (Dividing by 2 because substitutions accumulate on both lineages.)
+- Species 1--(2,3) divergence: $(12 + 6)/2000 = 0.009$ subs/site from the root. Or: the distance from
+  species 1 to the common ancestor of 1,2,3: $(12 - 3)/1000 = 0.009$ (correcting for the 2--3 split).
+  Time $= 0.009 / (2 \times 10^{-9}) = 4.5\;\mathrm{Ma}$.
+
+**Gene B**: rate $= 5 \times 10^{-9}$ subs/site/year.
+- Species 2--3: $30/1000 = 0.030$. Time $= 0.030 / (2 \times 5 \times 10^{-9}) = 3.0 \times 10^6 = 3.0\;\mathrm{Ma}$.
+- Species 1--(2,3): $(50 - 15)/1000 = 0.035$. Time $= 0.035 / (2 \times 5 \times 10^{-9}) = 3.5\;\mathrm{Ma}$.
+
+(c) The two genes give slightly different divergence times for the deeper node (Gene A: $4.5\;\mathrm{Ma}$;
+Gene B: $3.5\;\mathrm{Ma}$). This discrepancy is due to:
+- Rate variation between genes (the molecular clock is not perfectly constant).
+- Stochastic variation (random nature of mutation).
+- Different functional constraints on the two genes (Gene B may have slightly relaxed constraints,
+  leading to a faster effective rate in one lineage).
+- Multiple hits at the same site (saturation), which is more problematic for the faster-evolving Gene B.
+
+Using multiple loci and methods that account for rate variation (relaxed molecular clock models) can
+provide more accurate estimates.
+
+</details>
+
+---
+
+## Supplementary: Evolutionary Developmental Biology (Evo-Devo) (HL Extension)
+
+### What is Evo-Devo?
+
+Evolutionary developmental biology (evo-devo) studies how changes in developmental processes generate
+evolutionary change. The central insight is that evolution acts not only on genes but on the **genetic
+regulatory networks** that control development.
+
+### Key Concepts
+
+**Modularity**: developmental processes are modular -- different body parts (segments, organs) develop
+relatively independently under the control of specific sets of genes. This allows changes in one
+module without affecting others, facilitating evolutionary innovation.
+
+**Heterotopy**: change in the location of a developmental process. Example: the expression of
+legs instead of antennae in _Drosophila_ (Antennapedia mutation) is a heterotopic change.
+
+**Heterochrony**: change in the timing of a developmental process. Example: **paedomorphosis** (retention
+of juvenile features in adults) -- the axolotl retains larval gills and aquatic lifestyle as an adult.
+**Hypermorphosis** (extended development) produces larger or more complex features.
+
+**Gene duplication**: duplication of developmental genes (e.g., Hox clusters, PAX genes) allows one copy
+to maintain the original function while the other is free to evolve new functions (neofunctionalisation)
+or subdivide the original function (subfunctionalisation). The four Hox clusters in vertebrates arose
+from two rounds of whole-genome duplication early in vertebrate evolution.
+
+### Examples of Evo-Devo
+
+**Stickleback pelvic reduction**: freshwater stickleback populations have lost their pelvic spines.
+This is caused by deletion of a pelvic-specific enhancer of the _Pitx1_ gene. The _Pitx1_ gene still
+functions normally in other tissues (head, jaw), but the loss of the pelvic enhancer prevents expression
+in the pelvic region. This illustrates how changes in regulatory elements (not coding sequences) can
+produce morphological evolution.
+
+**Darwin's finches**: variation in beak shape and size is controlled in part by the expression levels
+of _BMP4_ (broad, deep beaks) and _Calmodulin_ (long, pointed beaks). Small changes in the timing
+and level of expression of these genes during embryonic development produce the diverse beak morphologies
+observed across the Galapagos finch species.
+
+**Sonic hedgehog (_Shh_) and limb development**: the zone of polarising activity (ZPA) at the posterior
+of the limb bud produces Shh protein, which establishes the anterior-posterior axis of the limb. The
+amount of Shh produced determines the number and type of digits. Mutations affecting Shh expression
+can cause polydactyly (extra digits) or loss of digits.
+
+**Snake limblessness**: snakes lost their limbs during evolution. The _Shh_ and _HoxD_ expression domains
+in the limb buds of snake embryos are reduced or absent compared to limbed reptiles. Changes in the
+regulatory DNA controlling these genes (not the genes themselves) are responsible for limb loss.
+
+### Worked Example: Calculating Morphological Change Rate
+
+A fossil sequence shows that the average body size of a mammal lineage increased from $5\;\mathrm{kg}$
+to $50\;\mathrm{kg}$ over $10$ million years. (a) Calculate the rate of body size increase in
+$\mathrm{mg/year}$. (b) Using the equation for exponential growth of body size ($M_t = M_0 e^{rt}$),
+calculate the rate constant $r$. (c) If Cope's rule (the tendency for lineages to increase in body
+size over time) applies, predict the body size after $20$ million years from the original ancestor.
+
+<details>
+<summary>Solution</summary>
+
+(a) Rate of change: $\frac{50\;\mathrm{kg} - 5\;\mathrm{kg}}{10 \times 10^6\;\mathrm{years}} = \frac{45}{10^7} = 4.5 \times 10^{-6}\;\mathrm{kg/year} = 4.5\;\mathrm{mg/year}$.
+
+(b) $M_t = M_0 e^{rt}$: $50 = 5 e^{10r}$.
+$e^{10r} = 10$, so $10r = \ln(10) = 2.303$, $r = 0.230\;\mathrm{Ma}^{-1}$.
+
+(c) After $20\;\mathrm{Ma}$: $M = 5 e^{0.230 \times 20} = 5 e^{4.605} = 5 \times 100 = 500\;\mathrm{kg}$.
+
+Cope's rule predicts continued body size increase, but in reality, body size eventually plateaus due
+to physiological and ecological constraints (larger organisms require more food, have longer generation
+times, and face biomechanical limitations). Many lineages do not follow Cope's rule; body size can
+decrease (island dwarfism) or fluctuate depending on environmental conditions.
+
+</details>

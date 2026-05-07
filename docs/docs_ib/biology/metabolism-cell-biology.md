@@ -858,3 +858,600 @@ absorption spectrum are similar but not identical.
 - **Plant biology -- transpiration and transport** --> Review [./plant-biology](./plant-biology)
 - **Human physiology -- gas exchange** --> Review [./human-physiology](./human-physiology)
 - **Genetics -- enzyme genes** --> Review [./genetics](./genetics)
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Calculating ATP Yield from Palmitic Acid Oxidation**
+
+Palmitic acid (16-carbon saturated fatty acid, C16:0) undergoes complete $\beta$-oxidation. Calculate the
+net ATP yield, assuming the malate-aspartate shuttle transfers NADH from glycolysis into the mitochondria
+and using the updated P/O ratios ($\mathrm{NADH} = 2.5\;\mathrm{ATP}$, $\mathrm{FADH}_2 = 1.5\;\mathrm{ATP}$).
+
+<details>
+<summary>Solution</summary>
+
+Step 1: Activation of palmitic acid to palmitoyl-CoA.
+- Requires 2 ATP equivalents (ATP $\to$ AMP + $\mathrm{PP_i}$, equivalent to 2 ATP hydrolysed).
+
+Step 2: $\beta$-oxidation cycles.
+- Palmitoyl-CoA (16C) undergoes $16/2 - 1 = 7$ cycles of $\beta$-oxidation.
+- Each cycle produces: 1 $\mathrm{FADH}_2$, 1 NADH, and 1 acetyl-CoA (2C).
+- After 7 cycles: $7\;\mathrm{FADH}_2$, $7\;\mathrm{NADH}$, and $8$ acetyl-CoA.
+
+Step 3: Oxidation of products through the ETC and Krebs cycle.
+- $7\;\mathrm{FADH}_2 \times 1.5 = 10.5\;\mathrm{ATP}$
+- $7\;\mathrm{NADH} \times 2.5 = 17.5\;\mathrm{ATP}$
+- $8$ acetyl-CoA enter Krebs cycle: each produces $3\;\mathrm{NADH} + 1\;\mathrm{FADH}_2 + 1\;\mathrm{GTP}$:
+  $8 \times (3 \times 2.5 + 1 \times 1.5 + 1) = 8 \times (7.5 + 1.5 + 1) = 8 \times 10 = 80\;\mathrm{ATP}$
+
+Step 4: Net ATP yield.
+$\text{Total} = 10.5 + 17.5 + 80 - 2 = 106\;\mathrm{ATP}$
+
+Using the traditional P/O ratios ($\mathrm{NADH} = 3$, $\mathrm{FADH}_2 = 2$):
+$7 \times 2 + 7 \times 3 + 8 \times 12 - 2 = 14 + 21 + 96 - 2 = 129\;\mathrm{ATP}$
+
+</details>
+
+**Worked Example: Respiratory Quotient and Substrate Utilisation**
+
+A patient in a metabolic chamber consumes $280\;\mathrm{mL}$ of $\mathrm{O}_2$ per minute and produces
+$252\;\mathrm{mL}$ of $\mathrm{CO}_2$ per minute. (a) Calculate the respiratory quotient (RQ). (b)
+Identify the primary metabolic substrate being oxidised. (c) If the patient consumes $400\;\mathrm{kcal}$
+per hour, calculate the energy equivalent per litre of $\mathrm{O}_2$ consumed.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\mathrm{RQ} = \frac{\mathrm{CO}_2\text{ produced}}{\mathrm{O}_2\text{ consumed}} = \frac{252}{280} = 0.90$
+
+(b) Interpretation of RQ values:
+- $\mathrm{RQ} = 1.0$: pure carbohydrate (glucose: $\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 6\mathrm{O}_2 \to 6\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O}$)
+- $\mathrm{RQ} = 0.7$: pure fat (e.g., palmitic acid: $\mathrm{C}_{16}\mathrm{H}_{32}\mathrm{O}_2 + 23\mathrm{O}_2 \to 16\mathrm{CO}_2 + 16\mathrm{H}_2\mathrm{O}$, $\mathrm{RQ} = 16/23 = 0.696$)
+- $\mathrm{RQ} = 0.8$: protein
+- $\mathrm{RQ} = 0.9$: mixed substrate, approximately $50\%$ carbohydrate and $50\%$ fat.
+
+The patient is oxidising a mix of carbohydrates and fats.
+
+(c) $\mathrm{O}_2$ consumption per hour: $280 \times 60 = 16800\;\mathrm{mL} = 16.8\;\mathrm{L/h}$.
+Energy per litre of $\mathrm{O}_2$: $\frac{400}{16.8} = 23.8\;\mathrm{kcal/L\;O}_2$.
+
+This is close to the typical value for a mixed diet ($\approx 20.1$ for fat, $\approx 21.1$ for protein,
+$\approx 5.0$ for carbohydrate per litre of $\mathrm{O}_2$ -- the weighted average is approximately
+$20\text{--}22\;\mathrm{kcal/L\;O}_2$).
+
+</details>
+
+**Worked Example: Inhibitor Type Determination from Lineweaver-Burk Plot**
+
+An enzyme has a $V_{max}$ of $120\;\mathrm{\mu mol/min}$ and a $K_m$ of $4.0\;\mathrm{mM}$. In the
+presence of an inhibitor, the apparent $V_{max}$ is $120\;\mathrm{\mu mol/min}$ and the apparent $K_m$
+is $12.0\;\mathrm{mM}$. (a) Identify the type of inhibitor. (b) Calculate the inhibitor constant $K_i$
+if the inhibitor concentration is $2.0\;\mathrm{mM}$. (c) Sketch the expected Lineweaver-Burk plot
+showing both the uninhibited and inhibited reactions. (d) At a substrate concentration of
+$4.0\;\mathrm{mM}$, what fraction of the enzyme's maximum velocity is achieved in the presence and
+absence of the inhibitor?
+
+<details>
+<summary>Solution</summary>
+
+(a) The inhibitor increases $K_m$ (from $4.0$ to $12.0\;\mathrm{mM}$) but does not change $V_{max}$.
+This is characteristic of a **competitive inhibitor**.
+
+(b) For competitive inhibition: $\alpha = \frac{K_m^{app}}{K_m} = \frac{12.0}{4.0} = 3$.
+$\alpha = 1 + \frac{[I]}{K_i}$, so $3 = 1 + \frac{2.0}{K_i}$, giving $K_i = 1.0\;\mathrm{mM}$.
+
+(c) Lineweaver-Burk plot ($1/v$ vs $1/[S]$):
+- Uninhibited: x-intercept $= -1/K_m = -0.25$, y-intercept $= 1/V_{max} = 0.00833$
+- Inhibited: x-intercept $= -1/K_m^{app} = -0.0833$, y-intercept $= 1/V_{max} = 0.00833$
+Both lines intersect on the y-axis (same $1/V_{max}$). The inhibited line has a steeper slope
+(slope $= K_m/V_{max}$ increases from $4/120$ to $12/120$).
+
+(d) Without inhibitor: at $[S] = K_m = 4.0\;\mathrm{mM}$, $v = \frac{V_{max} \times [S]}{K_m + [S]} = \frac{120 \times 4}{4 + 4} = 60\;\mathrm{\mu mol/min}$. Fraction $= 60/120 = 0.50$ ($50\%$).
+
+With inhibitor: $v = \frac{V_{max} \times [S]}{K_m^{app} + [S]} = \frac{120 \times 4}{12 + 4} = 30\;\mathrm{\mu mol/min}$. Fraction $= 30/120 = 0.25$ ($25\%$).
+
+The competitive inhibitor reduces the velocity to half at $[S] = K_m$.
+
+</details>
+
+**Worked Example: Photosynthetic Electron Transport and Chemiosmosis**
+
+In an experiment, isolated chloroplasts are illuminated in the presence of DCMU (an inhibitor that blocks
+electron flow from PSII to plastoquinone). (a) Explain the effect of DCMU on non-cyclic photophosphorylation.
+(b) Predict the effect on the production of: NADPH, ATP, and $\mathrm{O}_2$. (c) Explain whether cyclic
+photophosphorylation would still occur and what its products would be.
+
+<details>
+<summary>Solution</summary>
+
+(a) DCMU (3-(3,4-dichlorophenyl)-1,1-dimethylurea) binds to the $\mathrm{Q_B}$ binding site on the
+D1 protein of PSII, blocking the transfer of electrons from plastoquinone $\mathrm{Q_A}$ to plastoquinone
+$\mathrm{Q_B}$. This stops electron flow from PSII through the entire non-cyclic electron transport chain.
+
+(b) Effects on non-cyclic photophosphorylation:
+- **NADPH**: production stops. Electrons cannot reach PSI via the ETC, so PSI cannot reduce $\mathrm{NADP}^+$.
+- **ATP**: production from non-cyclic photophosphorylation stops. The proton gradient across the thylakoid
+  membrane is not established because electron flow through the cytochrome $b_6f$ complex (which pumps
+  protons) is blocked.
+- **$\mathrm{O}_2$**: production stops. $\mathrm{O}_2$ is produced by the photolysis of water at PSII,
+  but DCMU blocks the downstream acceptor, so electrons from water cannot be passed on and the entire
+  process stalls.
+
+(c) Cyclic photophosphorylation involves only PSI (not PSII). Electrons from PSI are passed to ferredoxin,
+then to the cytochrome $b_6f$ complex (via ferredoxin-plastoquinone reductase, FQR), and back to
+plastocyanin (PC), which returns them to PSI. This creates a proton gradient without producing NADPH or
+$\mathrm{O}_2$.
+
+Since DCMU blocks PSII but not PSI, cyclic photophosphorylation **can still occur**. Products: ATP only
+(no NADPH, no $\mathrm{O}_2$). This is why DCMU-treated chloroplasts can still produce some ATP but no
+NADPH.
+
+</details>
+
+**Worked Example: Fermentation Rate and Ethanol Production**
+
+Baker's yeast (_Saccharomyces cerevisiae_) is used to ferment glucose anaerobically in a bioreactor.
+The fermentation equation is:
+$$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\;\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\;\mathrm{CO}_2$$
+
+The bioreactor contains $100\;\mathrm{L}$ of $0.5\;\mathrm{mol/L}$ glucose solution. After $8$ hours,
+$15\;\mathrm{mol}$ of $\mathrm{CO}_2$ have been produced. (a) Calculate the percentage of glucose consumed.
+(b) Calculate the volume of $\mathrm{CO}_2$ produced at $25^\circ\mathrm{C}$ and $1\;\mathrm{atm}$
+(ideal gas: $V = nRT/P$, $R = 0.0821\;\mathrm{L\;atm/(mol\;K)}$). (c) Calculate the mass of ethanol
+produced. (d) Explain why fermentation eventually stops even if glucose remains.
+
+<details>
+<summary>Solution</summary>
+
+(a) From the equation, $1\;\mathrm{mol}$ glucose produces $2\;\mathrm{mol}\;\mathrm{CO}_2$.
+$15\;\mathrm{mol\;CO}_2$ corresponds to $15/2 = 7.5\;\mathrm{mol}$ glucose consumed.
+Total glucose initially: $100 \times 0.5 = 50\;\mathrm{mol}$.
+Percentage consumed: $\frac{7.5}{50} \times 100 = 15\%$.
+
+(b) $T = 25 + 273 = 298\;\mathrm{K}$.
+$V = \frac{nRT}{P} = \frac{15 \times 0.0821 \times 298}{1} = 366.9\;\mathrm{L\;CO}_2$.
+
+(c) $1\;\mathrm{mol}$ glucose produces $2\;\mathrm{mol}$ ethanol.
+Ethanol produced: $7.5 \times 2 = 15\;\mathrm{mol}$.
+Molar mass of ethanol ($\mathrm{C}_2\mathrm{H}_5\mathrm{OH}$) $= 2(12) + 6(1) + 16 = 46\;\mathrm{g/mol}$.
+Mass: $15 \times 46 = 690\;\mathrm{g}$ ethanol.
+
+(d) Fermentation eventually stops because:
+- Ethanol is toxic to yeast at concentrations above approximately $12$--$15\%$ (v/v), denaturing enzymes
+  and disrupting membrane integrity.
+- The accumulation of waste products (ethanol, other metabolites) lowers the pH and creates unfavourable
+  conditions.
+- Nutrients other than glucose (nitrogen sources, vitamins, minerals) may become depleted.
+- The declining pH and increasing ethanol concentration inhibit yeast enzyme activity, including the
+  enzymes of glycolysis.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing substrate-level phosphorylation with oxidative phosphorylation**: substrate-level phosphorylation
+  directly transfers a phosphate group from a substrate to ADP (occurs in glycolysis and Krebs cycle);
+  oxidative phosphorylation uses the proton gradient and ATP synthase (ETC).
+- **Stating that the Krebs cycle directly produces large amounts of ATP**: the Krebs cycle produces
+  $1\;\mathrm{GTP}$ (equivalent to $1\;\mathrm{ATP}$) per turn. Most ATP comes from oxidative phosphorylation
+  driven by NADH and $\mathrm{FADH}_2$ from the Krebs cycle.
+- **Confusing the roles of PS I and PS II**: PS II comes first in the electron transport chain (P680),
+  extracts electrons from water ($\mathrm{O}_2$ evolution), and passes them to the ETC; PS I (P700)
+  receives electrons from the ETC and uses them to reduce $\mathrm{NADP}^+$.
+- **Forgetting that glycolysis occurs in the cytoplasm, not the mitochondria**: only the link reaction,
+  Krebs cycle, and oxidative phosphorylation occur in the mitochondria.
+- **Confusing photorespiration with photosynthesis**: photorespiration is a wasteful process in which
+  Rubisco binds $\mathrm{O}_2$ instead of $\mathrm{CO}_2$, consuming energy and releasing $\mathrm{CO}_2$
+  without producing sugar. It is favoured at high temperatures and low $\mathrm{CO}_2$ concentrations.
+- **Assuming $V_{max}$ is always achievable**: $V_{max}$ is a theoretical maximum approached asymptotically;
+  it is never truly reached because it would require infinite substrate concentration.
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 6: Extended Response -- Control of Respiration</summary>
+
+Describe how the rate of cellular respiration is controlled, explaining the roles of: (a) ATP/ADP ratio,
+(b) feedback inhibition of phosphofructokinase (PFK), (c) availability of $\mathrm{NAD}^+$, and
+(d) oxygen availability. Explain how each mechanism ensures that ATP production matches cellular demand.
+
+</details>
+
+<details>
+<summary>Answer 6</summary>
+
+(a) **ATP/ADP ratio as a cellular energy signal**: when ATP levels are high (energy charge is high),
+the cell has sufficient energy and respiration slows. When ATP is consumed (e.g., during muscle contraction),
+ADP and AMP levels rise. AMP is a particularly powerful allosteric activator of PFK. A high ADP/ATP ratio
+stimulates respiration by increasing the rate of oxidative phosphorylation (more ADP available to accept
+phosphate from ATP synthase), which in turn increases the rate of the ETC, Krebs cycle, and glycolysis.
+
+(b) **Phosphofructokinase (PFK) regulation**: PFK catalyses the committed step of glycolysis (fructose-6-phosphate
+$\to$ fructose-1,6-bisphosphate) and is the major rate-limiting enzyme. It is allosterically:
+- **Activated by**: AMP, ADP, fructose-2,6-bisphosphate (F2,6BP, a potent activator in liver cells)
+- **Inhibited by**: ATP, citrate (signals abundant energy and TCA intermediates respectively)
+High ATP inhibits PFK even though ATP is a substrate for the PFK reaction -- this is called **substrate
+inhibition** and ensures glycolysis slows when energy is abundant. Citrate inhibition provides a link
+between glycolysis and the Krebs cycle.
+
+(c) **$\mathrm{NAD}^+$ availability**: $\mathrm{NAD}^+$ is required for glycolysis (step 6: glyceraldehyde-3-phosphate
+dehydrogenase) and for the Krebs cycle (three dehydrogenase reactions). Under aerobic conditions,
+$\mathrm{NADH}$ is reoxidised to $\mathrm{NAD}^+$ by the ETC. Under anaerobic conditions, $\mathrm{NAD}^+$
+is regenerated by fermentation (lactate dehydrogenase in animals; alcohol dehydrogenase in yeast). If
+$\mathrm{NAD}^+$ is depleted, both glycolysis and the Krebs cycle stop.
+
+(d) **Oxygen availability**: oxygen is the terminal electron acceptor of the ETC. Without oxygen, the ETC
+stops, the proton gradient dissipates, ATP synthase ceases, and oxidative phosphorylation halts. NADH
+and $\mathrm{FADH}_2$ accumulate, $\mathrm{NAD}^+$ is depleted, and the Krebs cycle stops. The cell
+switches to fermentation to regenerate $\mathrm{NAD}^+$ and maintain glycolysis. This is why hypoxia
+rapidly shifts metabolism from aerobic to anaerobic pathways.
+
+</details>
+
+<details>
+<summary>Problem 7: Quantitative -- Photosynthetic Efficiency</summary>
+
+A leaf with surface area $50\;\mathrm{cm}^2$ absorbs $200\;\mathrm{\mu mol}$ of photons per second
+(PAR). The quantum yield of $\mathrm{CO}_2$ fixation is $0.05\;\mathrm{mol\;CO}_2/\mathrm{mol\;photons}$.
+(a) Calculate the rate of $\mathrm{CO}_2$ fixation in $\mathrm{\mu mol/s}$. (b) Calculate the rate
+of glucose synthesis in $\mathrm{nmol/s}$. (c) The leaf respires at a rate of $1.0\;\mathrm{\mu mol\;CO}_2/s$.
+Calculate the net $\mathrm{CO}_2$ fixation rate. (d) If the leaf is exposed to light for $10$ hours,
+calculate the total mass of glucose produced (net). Molar mass of glucose $= 180\;\mathrm{g/mol}$.
+
+</details>
+
+<details>
+<summary>Answer 7</summary>
+
+(a) Rate of $\mathrm{CO}_2$ fixation:
+$200\;\mathrm{\mu mol\;photons/s} \times 0.05 = 10\;\mathrm{\mu mol\;CO}_2/s}$
+
+(b) Glucose synthesis: $6\;\mathrm{CO}_2 \to 1$ glucose.
+$10\;\mathrm{\mu mol\;CO}_2/s \div 6 = 1.667\;\mathrm{\mu mol\;glucose/s} = 1667\;\mathrm{nmol\;glucose/s}$
+
+(c) Net $\mathrm{CO}_2$ fixation: $10 - 1.0 = 9.0\;\mathrm{\mu mol\;CO}_2/s}$
+Net glucose: $9.0 \div 6 = 1.5\;\mathrm{\mu mol\;glucose/s}$
+
+(d) Total time: $10 \times 3600 = 36000\;\mathrm{s}$.
+Total net glucose: $1.5 \times 36000 = 54000\;\mathrm{\mu mol} = 0.054\;\mathrm{mol}$.
+Mass: $0.054 \times 180 = 9.72\;\mathrm{g}$ glucose.
+
+</details>
+
+<details>
+<summary>Problem 8: Extended Response -- C4 and CAM Photosynthesis</summary>
+
+Compare C3, C4, and CAM photosynthesis with respect to: (a) the initial carbon fixation product and enzyme,
+(b) the spatial or temporal separation of $\mathrm{CO}_2$ fixation and the Calvin cycle, (c) the
+advantage under conditions of high temperature and water stress, and (d) the energetic cost relative
+to C3 photosynthesis. Provide one example plant for each type.
+
+</details>
+
+<details>
+<summary>Answer 8</summary>
+
+(a) **C3**: initial fixation by Rubisco in mesophyll cells, producing 3-phosphoglycerate (3-PGA, a 3-carbon
+compound). Example: wheat, rice, soybean.
+
+**C4**: initial fixation by PEP carboxylase in mesophyll cells, producing oxaloacetate (4-carbon), which
+is converted to malate. Example: maize, sugarcane.
+
+**CAM**: initial fixation by PEP carboxylase at night, producing malate stored in vacuoles. During the
+day, malate is decarboxylated and $\mathrm{CO}_2$ enters the Calvin cycle. Example: pineapple, cactus,
+jade plant.
+
+(b) **C3**: no separation; fixation and Calvin cycle occur in mesophyll chloroplasts simultaneously.
+
+**C4**: **spatial separation**. $\mathrm{CO}_2$ is initially fixed in mesophyll cells (by PEP carboxylase),
+then the 4-carbon acid (malate) is transported to bundle-sheath cells, where it releases $\mathrm{CO}_2$
+for the Calvin cycle (Rubisco). This concentrates $\mathrm{CO}_2$ around Rubisco.
+
+**CAM**: **temporal separation**. Stomata open at night; $\mathrm{CO}_2$ is fixed into malate and stored
+in vacuoles. Stomata close during the day; malate is released from vacuoles, decarboxylated, and the
+$\mathrm{CO}_2$ enters the Calvin cycle.
+
+(c) **Advantage under heat and water stress**:
+- In C3 plants, high temperatures increase photorespiration (Rubisco's affinity for $\mathrm{O}_2$
+  increases relative to $\mathrm{CO}_2$), reducing photosynthetic efficiency.
+- C4 plants concentrate $\mathrm{CO}_2$ in bundle-sheath cells (to $10$--$60\times$ atmospheric levels),
+  effectively suppressing photorespiration. They also have higher water-use efficiency because PEP
+  carboxylase has a much higher affinity for $\mathrm{CO}_2$ than Rubisco, allowing stomata to be
+  partially closed.
+- CAM plants minimise water loss by opening stomata only at night (when temperatures are lower and
+  humidity is higher). They are extremely water-efficient but grow more slowly due to limited carbon
+  storage capacity.
+
+(d) **Energetic cost**:
+- C3: $3\;\mathrm{ATP}$ and $2\;\mathrm{NADPH}$ per $\mathrm{CO}_2$ fixed ($18\;\mathrm{ATP}$ and
+  $12\;\mathrm{NADPH}$ per glucose).
+- C4: $5\;\mathrm{ATP}$ and $2\;\mathrm{NADPH}$ per $\mathrm{CO}_2$ fixed ($30\;\mathrm{ATP}$ and
+  $12\;\mathrm{NADPH}$ per glucose). The extra $2\;\mathrm{ATP}$ per $\mathrm{CO}_2$ are needed to
+  regenerate PEP (via pyruvate phosphate dikinase in mesophyll cells). C4 costs approximately $67\%$
+  more energy than C3.
+- CAM: similar total cost to C4 when all steps are considered, but distributed differently between
+  day and night. The cost of transporting malate into and out of vacuoles adds to the energetic burden.
+
+</details>
+
+<details>
+<summary>Problem 9: Data Analysis -- Oxygen Dissociation Curve Shift</summary>
+
+The following data show the percentage saturation of haemoglobin at different $\mathrm{pO}_2$ values
+under normal conditions and in the presence of 2,3-BPG:
+
+| $\mathrm{pO}_2$ (kPa) | Normal saturation (%) | + 2,3-BPG (%) |
+|------------------------|----------------------|---------------|
+| 1.0                    | 5                    | 2             |
+| 2.0                    | 15                   | 8             |
+| 3.0                    | 30                   | 18            |
+| 5.0                    | 60                   | 42            |
+| 8.0                    | 85                   | 72            |
+| 10.0                   | 92                   | 82            |
+| 13.3                   | 97                   | 92            |
+
+(a) Sketch both curves on the same axes. (b) At a $\mathrm{pO}_2$ of $5.0\;\mathrm{kPa}$ (typical
+of active muscle tissue), how much more $\mathrm{O}_2$ is unloaded in the presence of 2,3-BPG compared
+to normal conditions? (c) Explain the molecular mechanism by which 2,3-BPG shifts the curve. (d) Explain
+why 2,3-BPG levels increase at high altitude and how this is beneficial.
+
+</details>
+
+<details>
+<summary>Answer 9</summary>
+
+(a) The + 2,3-BPG curve is shifted to the right (lower saturation at each $\mathrm{pO}_2$). Both curves
+are sigmoidal (S-shaped).
+
+(b) At $5.0\;\mathrm{kPa}$:
+- Normal saturation: $60\%$. If arterial saturation is $97\%$, then $97 - 60 = 37\%$ of $\mathrm{O}_2$
+  is unloaded.
+- + 2,3-BPG: $42\%$. $\mathrm{O}_2$ unloaded: $92 - 42 = 50\%$.
+- Additional unloading: $50 - 37 = 13\%$ more $\mathrm{O}_2$ is unloaded in the presence of 2,3-BPG.
+
+(c) 2,3-BPG (2,3-bisphosphoglycerate) is a highly negatively charged molecule that binds to the central
+cavity of deoxyhaemoglobin (the T state). It stabilises the T state, making it harder for $\mathrm{O}_2$
+to bind (lowering haemoglobin's affinity for $\mathrm{O}_2$). This shifts the oxygen dissociation curve
+to the right, facilitating $\mathrm{O}_2$ unloading in tissues.
+
+(d) At high altitude, $\mathrm{pO}_2$ is lower, so less $\mathrm{O}_2$ loads onto haemoglobin in the
+lungs. The body compensates by increasing 2,3-BPG production (via the Rapoport-Luebering shunt in
+glycolysis), which shifts the curve to the right. This reduces haemoglobin's affinity for $\mathrm{O}_2$,
+so more $\mathrm{O}_2$ is unloaded in tissues, partially compensating for the reduced loading. However,
+the shift also reduces loading in the lungs, so the net effect is a compromise.
+
+</details>
+
+<details>
+<summary>Problem 10: Extended Response -- Uncouplers and Brown Fat</summary>
+
+2,4-dinitrophenol (DNP) is a proton ionophore that makes the inner mitochondrial membrane permeable to
+protons. (a) Explain the effect of DNP on oxidative phosphorylation. (b) Predict what happens to
+$\mathrm{O}_2$ consumption, $\mathrm{CO}_2$ production, and heat production in the presence of DNP.
+(c) Explain the role of uncoupling protein 1 (UCP1, thermogenin) in brown adipose tissue (BAT) and
+how it relates to DNP's mechanism. (d) Explain why DNP was used as a weight-loss drug in the 1930s
+and why it is extremely dangerous.
+
+</details>
+
+<details>
+<summary>Answer 10</summary>
+
+(a) Normally, the proton gradient across the inner mitochondrial membrane drives ATP synthesis via ATP
+synthase (chemiosmotic coupling). DNP carries protons across the inner mitochondrial membrane, bypassing
+ATP synthase. This **dissipates the proton gradient** (uncouples electron transport from ATP synthesis).
+The ETC continues to operate (electrons still flow from NADH/$\mathrm{FADH}_2$ to $\mathrm{O}_2$), but
+the energy released is not captured as ATP. Instead, it is released as heat.
+
+(b) Effects of DNP:
+- **$\mathrm{O}_2$ consumption**: increases dramatically. Without the proton gradient to slow the ETC
+  (normally, a high gradient inhibits further proton pumping), electron transport proceeds at maximum rate.
+- **$\mathrm{CO}_2$ production**: increases because the Krebs cycle accelerates to replenish NADH and
+  $\mathrm{FADH}_2$ consumed by the hyperactive ETC.
+- **ATP production**: decreases sharply (or stops). ATP synthase has no proton gradient to drive it.
+- **Heat production**: increases enormously. All the energy from electron transport that would normally
+  produce ATP is released as heat.
+
+(c) Brown adipose tissue (BAT) contains numerous mitochondria with UCP1 (thermogenin) in their inner
+membrane. UCP1 is a physiological uncoupling protein that, when activated (by fatty acids released from
+triacylglycerol in response to cold or sympathetic stimulation), allows protons to leak back into the
+matrix, generating heat without producing ATP. This is **non-shivering thermogenesis**, essential for
+newborns (who have little white fat for insulation) and hibernating animals. BAT uncoupling is regulated
+and controlled, unlike the non-specific uncoupling caused by DNP.
+
+(d) DNP was used as a weight-loss drug because it increases metabolic rate (the body burns more fuel to
+maintain ATP levels, depleting fat and carbohydrate stores). However, it is extremely dangerous because:
+- The hyperthermia can be fatal (body temperature can exceed $41^\circ\mathrm{C}$, causing protein
+  denaturation and brain damage).
+- ATP depletion affects all energy-dependent processes (nerve conduction, muscle contraction, ion pumps),
+  potentially causing coma and cardiac arrest.
+- The dose-response curve is very steep; a small overdose can be lethal. There is no safe therapeutic
+  window. DNP deaths continue to occur from illicit use as a weight-loss supplement.
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **Enzyme structure and function**: Review [./molecular-biology](./molecular-biology) for protein structure, active sites, and enzyme classification.
+- **Membrane transport and proton gradients**: Review [./cell-biology](./cell-biology) for membrane structure and transport proteins.
+- **Plant transport and transpiration**: Review [./plant-biology](./plant-biology) for stomatal regulation and transpiration efficiency.
+- **Gas exchange and haemoglobin**: Review [./human-physiology](./human-physiology) for respiratory physiology and oxygen transport.
+- **ATP and cellular energy**: Review [./cell-biology](./cell-biology) for mitochondria structure and ATP synthase.
+- **Gene regulation of metabolic enzymes**: Review [./genetics-advanced](./genetics-advanced) for operon regulation of metabolic pathways.
+
+---
+
+## Supplementary: Detailed Metabolic Pathways (HL Extension)
+
+### Glycolysis -- Step-by-Step
+
+Glycolysis occurs in the cytoplasm and converts 1 glucose ($\mathrm{C}_6$) to 2 pyruvate ($\mathrm{C}_3$),
+producing a net gain of 2 ATP and 2 NADH. It consists of 10 steps:
+
+**Investment phase** (consumes 2 ATP):
+
+1. **Hexokinase**: glucose $\to$ glucose-6-phosphate (G6P). Consumes 1 ATP. Traps glucose inside the
+   cell (G6P cannot cross the membrane). Hexokinase is inhibited by its product G6P.
+
+2. **Phosphoglucose isomerase**: G6P $\to$ fructose-6-phosphate (F6P). Isomerisation (aldose to ketose).
+
+3. **Phosphofructokinase-1 (PFK-1)**: F6P $\to$ fructose-1,6-bisphosphate (F1,6BP). Consumes 1 ATP.
+   **This is the committed step and the main rate-limiting step of glycolysis.** PFK-1 is allosterically
+   activated by AMP and F2,6BP; inhibited by ATP and citrate.
+
+4. **Aldolase**: F1,6BP $\to$ glyceraldehyde-3-phosphate (G3P) + dihydroxyacetone phosphate (DHAP).
+
+5. **Triose phosphate isomerase**: DHAP $\to$ G3P. Equilibrium favours DHAP, but G3P is continuously
+   removed by the next step, pulling the reaction forward.
+
+**Payoff phase** (produces 4 ATP, 2 NADH):
+
+6. **Glyceraldehyde-3-phosphate dehydrogenase**: G3P + $\mathrm{NAD}^+$ + $\mathrm{P_i}$ $\to$
+   1,3-bisphosphoglycerate (1,3BPG) + NADH. This step is the **oxidation** of glycolysis (aldehyde
+   to carboxylic acid) and produces NADH.
+
+7. **Phosphoglycerate kinase**: 1,3BPG + ADP $\to$ 3-phosphoglycerate (3PG) + ATP. **Substrate-level
+   phosphorylation.** Since each glucose produces 2 G3P, this step produces 2 ATP (recovery of the
+   2 ATP invested).
+
+8. **Phosphoglycerate mutase**: 3PG $\to$ 2-phosphoglycerate (2PG).
+
+9. **Enolase**: 2PG $\to$ phosphoenolpyruvate (PEP) + $\mathrm{H}_2\mathrm{O}$. Elimination of water
+   creates a high-energy phosphate bond.
+
+10. **Pyruvate kinase**: PEP + ADP $\to$ pyruvate + ATP. **Substrate-level phosphorylation.** Produces
+    2 ATP. Pyruvate kinase is activated by F1,6BP (feedforward activation).
+
+**Net equation**: $\mathrm{Glucose} + 2\mathrm{NAD}^+ + 2\mathrm{ADP} + 2\mathrm{P}_i \to 2\;\text{pyruvate} + 2\mathrm{NADH} + 2\mathrm{ATP} + 2\mathrm{H}_2\mathrm{O}$
+
+### Fate of Pyruvate
+
+**Aerobic conditions**: pyruvate enters the mitochondrial matrix via the pyruvate carrier. In the matrix,
+pyruvate dehydrogenase complex (PDC) converts pyruvate to acetyl-CoA:
+$$\text{Pyruvate} + \mathrm{NAD}^+ + \mathrm{CoA} \to \text{acetyl-CoA} + \mathrm{NADH} + \mathrm{CO}_2$$
+
+PDC is a multi-enzyme complex containing 3 enzymes and 5 cofactors (TPP, lipoamide, CoA, FAD, $\mathrm{NAD}^+$).
+It produces 1 NADH per pyruvate (2 per glucose).
+
+**Anaerobic conditions** (in animal cells): pyruvate is reduced to lactate by lactate dehydrogenase (LDH):
+$$\text{Pyruvate} + \mathrm{NADH} + \mathrm{H}^+ \to \text{lactate} + \mathrm{NAD}^+$$
+
+This regenerates $\mathrm{NAD}^+$, allowing glycolysis to continue. The lactate is transported to the
+liver (Cori cycle), where it is converted back to glucose (gluconeogenesis, costing 6 ATP per lactate).
+
+**Anaerobic conditions** (in yeast): pyruvate is decarboxylated to acetaldehyde (by pyruvate decarboxylase)
+and then reduced to ethanol (by alcohol dehydrogenase):
+$$\text{Pyruvate} \to \text{acetaldehyde} + \mathrm{CO}_2 \to \text{ethanol} + \mathrm{NAD}^+$$
+
+### The Krebs Cycle (Citric Acid Cycle / TCA Cycle)
+
+Location: mitochondrial matrix. One turn per acetyl-CoA (2 turns per glucose).
+
+1. **Citrate synthase**: acetyl-CoA (2C) + oxaloacetate (4C) $\to$ citrate (6C). Thioester bond of
+   acetyl-CoA provides energy.
+
+2. **Aconitase**: citrate $\to$ isocitrate (via cis-aconitate intermediate). Isomerisation.
+
+3. **Isocitrate dehydrogenase**: isocitrate + $\mathrm{NAD}^+$ $\to$ $\alpha$-ketoglutarate (5C) +
+   $\mathrm{NADH} + \mathrm{CO}_2$. **Rate-limiting step of the Krebs cycle.** Activated by ADP,
+   $\mathrm{Ca}^{2+}$; inhibited by ATP, NADH, succinyl-CoA.
+
+4. **$\alpha$-Ketoglutarate dehydrogenase complex**: $\alpha$-ketoglutarate + $\mathrm{NAD}^+ + \mathrm{CoA}$
+   $\to$ succinyl-CoA (4C) + $\mathrm{NADH} + \mathrm{CO}_2$. Similar to PDC.
+
+5. **Succinyl-CoA synthetase**: succinyl-CoA + GDP + $\mathrm{P}_i$ $\to$ succinate + GTP + CoA.
+   **Substrate-level phosphorylation** (GTP $\approx$ ATP).
+
+6. **Succinate dehydrogenase**: succinate + FAD $\to$ fumarate + $\mathrm{FADH}_2$. This enzyme is part
+   of complex II of the electron transport chain (inner mitochondrial membrane).
+
+7. **Fumarase**: fumarate + $\mathrm{H}_2\mathrm{O}$ $\to$ malate. Hydration.
+
+8. **Malate dehydrogenase**: malate + $\mathrm{NAD}^+$ $\to$ oxaloacetate + $\mathrm{NADH}$.
+
+**Per turn**: 3 NADH, 1 $\mathrm{FADH}_2$, 1 GTP, 2 $\mathrm{CO}_2$.
+**Per glucose**: 6 NADH, 2 $\mathrm{FADH}_2$, 2 GTP, 4 $\mathrm{CO}_2$.
+
+### The Electron Transport Chain (ETC) and Oxidative Phosphorylation
+
+Location: inner mitochondrial membrane. Four protein complexes and two mobile carriers:
+
+**Complex I (NADH:ubiquinone oxidoreductase)**: accepts electrons from NADH, passes them to ubiquinone
+(coenzyme Q). Pumps 4 $\mathrm{H}^+$ from matrix to intermembrane space.
+
+**Complex II (succinate dehydrogenase)**: accepts electrons from $\mathrm{FADH}_2$ (from the Krebs cycle
+and fatty acid oxidation), passes them to ubiquinone. Does NOT pump protons.
+
+**Ubiquinone (CoQ)**: a mobile lipid-soluble carrier that shuttles electrons from Complex I and II
+to Complex III.
+
+**Complex III (cytochrome $bc_1$ complex)**: accepts electrons from ubiquinone, passes them to
+cytochrome c. Pumps 4 $\mathrm{H}^+$ (Q cycle).
+
+**Cytochrome c**: a small mobile protein that carries electrons from Complex III to Complex IV.
+
+**Complex IV (cytochrome c oxidase)**: accepts electrons from cytochrome c, passes them to
+$\mathrm{O}_2$ (the terminal electron acceptor), producing $\mathrm{H}_2\mathrm{O}$. Pumps 2
+$\mathrm{H}^+$.
+
+**Total proton pumping**: NADH donates electrons to Complex I (4 $\mathrm{H}^+$) $\to$ III (4 $\mathrm{H}^+$)
+$\to$ IV (2 $\mathrm{H}^+$) = 10 $\mathrm{H}^+$ per NADH.
+$\mathrm{FADH}_2$ donates to Complex II (0 $\mathrm{H}^+$) $\to$ III (4 $\mathrm{H}^+$) $\to$ IV (2 $\mathrm{H}^+$)
+= 6 $\mathrm{H}^+$ per $\mathrm{FADH}_2$.
+
+**ATP synthase (Complex V)**: uses the proton gradient ($\Delta\mathrm{pH} + \Delta\Psi$, the protonmotive
+force) to drive ATP synthesis. Approximately 4 $\mathrm{H}^+$ are needed per ATP (3 for ATP synthesis
++ 1 for transport of $\mathrm{P}_i$ and ADP).
+
+**ATP yield (modern P/O ratios)**:
+- NADH: $10/4 = 2.5\;\mathrm{ATP}$
+- $\mathrm{FADH}_2$: $6/4 = 1.5\;\mathrm{ATP}$
+
+**Total ATP per glucose** (aerobic):
+- Glycolysis: 2 ATP (net) + 2 NADH (2 $\times$ 2.5 = 5 ATP, but 2 ATP used for transport = 3 ATP
+  with malate-aspartate shuttle; 1.5 ATP with glycerol-3-phosphate shuttle)
+- Pyruvate dehydrogenase: 2 NADH ($2 \times 2.5 = 5$ ATP)
+- Krebs cycle: 6 NADH ($6 \times 2.5 = 15$ ATP) + 2 $\mathrm{FADH}_2$ ($2 \times 1.5 = 3$ ATP)
+  + 2 GTP
+- **Total**: $2 + 3 + 5 + 15 + 3 + 2 = 30$ ATP (with malate-aspartate shuttle).
+
+### Worked Example: Complete ATP Accounting
+
+A student runs a $100\;\mathrm{m}$ sprint (anaerobic, $10$ seconds). (a) How many ATP molecules are
+available from phosphocreatine and anaerobic glycolysis? (b) The student then jogs for $30$ minutes
+(aerobic). How many ATP molecules are produced from the complete oxidation of $5$ molecules of glucose?
+(c) Explain why the sprinter experiences muscle fatigue after the race.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Sprint (anaerobic)**:
+- Phosphocreatine: approximately $3$--$5$ ATP equivalents per second of maximal effort. Over $10$ seconds:
+  approximately $30$--$50$ ATP per myosin head. Total cellular ATP from PCr: approximately $5 \times 10^{18}$
+  ATP per muscle fibre (rough estimate).
+- Anaerobic glycolysis: $2\;\mathrm{ATP}$ per glucose. Muscle glycogen stores provide glucose-6-phosphate
+  directly (bypassing hexokinase, saving 1 ATP per glucose, so effectively $3\;\mathrm{ATP}$ per glucose).
+  Glycolytic rate during maximal sprint: approximately $1\;\mathrm{mol}$ ATP per kg muscle per minute.
+
+(b) **Jogging (aerobic, 30 min = 1800 s)**:
+5 glucose molecules $\times 30\;\mathrm{ATP/glucose} = 150\;\mathrm{ATP}$.
+In moles: $150\;\mathrm{mol}$ ATP.
+In molecules: $150 \times 6.022 \times 10^{23} = 9.03 \times 10^{25}$ ATP molecules.
+
+(c) **Muscle fatigue** after sprinting:
+- Phosphocreatine stores are depleted within $10$--$15$ seconds.
+- Anaerobic glycolysis produces lactate, which dissociates to lactate $+$ $\mathrm{H}^+$, lowering
+  intracellular pH (acidosis). Low pH inhibits key glycolytic enzymes (especially PFK-1) and
+  interferes with calcium release from the SR, reducing contractile force.
+- ADP and $\mathrm{P}_i$ accumulate, reducing the free energy of ATP hydrolysis.
+- Potassium ions accumulate in the T-tubules, reducing excitability.
+
+</details>

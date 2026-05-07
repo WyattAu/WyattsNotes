@@ -1022,3 +1022,534 @@ restrictive lung disease (e.g., pulmonary fibrosis).
 
 </details>
 
+---
+
+## Additional Worked Examples
+
+**Worked Example: Cardiac Output and Blood Pressure**
+
+A patient has a heart rate of $72\;\mathrm{bpm}$ and a stroke volume of $70\;\mathrm{mL}$. (a) Calculate
+the cardiac output. (b) If the mean arterial pressure is $93\;\mathrm{mmHg}$, calculate the total
+peripheral resistance (TPR). (c) During exercise, heart rate increases to $150\;\mathrm{bpm}$ and stroke
+volume increases to $120\;\mathrm{mL}$. Calculate the new cardiac output and the percentage increase.
+(d) Explain how the baroreceptor reflex responds to a sudden drop in blood pressure.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\text{CO} = \text{HR} \times \text{SV} = 72 \times 70 = 5040\;\mathrm{mL/min} = 5.04\;\mathrm{L/min}$.
+
+(b) $\text{MAP} = \text{CO} \times \text{TPR}$, so $\text{TPR} = \text{MAP} / \text{CO}$.
+Need consistent units. $\text{CO} = 5040\;\mathrm{mL/min} = 0.084\;\mathrm{L/s}$.
+$\text{TPR} = 93 / 0.084 = 1107\;\mathrm{mmHg \cdot s/L}$ (or $\text{PRU}$, peripheral resistance units).
+Normal TPR $= 1000$--$1200\;\mathrm{PRU}$.
+
+(c) $\text{CO}_{exercise} = 150 \times 120 = 18000\;\mathrm{mL/min} = 18.0\;\mathrm{L/min}$.
+Percentage increase $= \frac{18.0 - 5.04}{5.04} \times 100 = 257\%$.
+
+(d) Baroreceptor reflex (drop in blood pressure):
+1. **Baroreceptors** in the aortic arch and carotid sinus detect decreased stretch (lower pressure).
+2. They send fewer action potentials via the vagus (CN X) and glossopharyngeal (CN IX) nerves to the
+   **vasomotor centre** and **cardiovascular centre** in the medulla oblongata.
+3. The medulla **increases** sympathetic outflow and **decreases** parasympathetic outflow.
+4. Effects: increased heart rate (noradrenaline on SA node), increased stroke volume (noradrenaline on
+   ventricular muscle), and vasoconstriction (noradrenaline on arterioles).
+5. These changes increase cardiac output and TPR, restoring blood pressure toward normal.
+6. This is a **negative feedback** mechanism.
+
+</details>
+
+**Worked Example: Digestion and Absorption Calculations**
+
+A meal contains $50\;\mathrm{g}$ of protein, $80\;\mathrm{g}$ of carbohydrate, and $20\;\mathrm{g}$ of fat.
+(a) Calculate the total energy content of the meal in kcal. (b) Calculate the volume of gastric juice
+needed to digest the protein, assuming pepsin requires a pH of $2$ and the stomach secretes $\mathrm{HCl}$
+at $0.15\;\mathrm{mol/L}$. (c) Calculate the minimum volume of bile needed to emulsify the fat, assuming
+each gram of fat requires $10\;\mathrm{mL}$ of bile for adequate emulsification. (d) Calculate the
+number of ATP molecules theoretically produced from the absorbed glucose (from the carbohydrate).
+
+<details>
+<summary>Solution</summary>
+
+(a) Energy content (using Atwater factors):
+- Protein: $50 \times 4 = 200\;\mathrm{kcal}$
+- Carbohydrate: $80 \times 4 = 320\;\mathrm{kcal}$
+- Fat: $20 \times 9 = 180\;\mathrm{kcal}$
+- Total: $200 + 320 + 180 = 700\;\mathrm{kcal}$
+
+(b) This requires knowledge of the buffering capacity of the meal. In practice, the stomach secretes
+approximately $2$--$3\;\mathrm{L}$ of gastric juice per meal. The question as stated cannot be precisely
+answered without additional information (the buffering capacity of the meal, the initial pH of the
+stomach contents). The key point is that parietal cells secrete $\mathrm{HCl}$ at approximately
+$0.15\;\mathrm{mol/L}$, and approximately $2$--$3\;\mathrm{L}$ is produced per meal.
+
+(c) Volume of bile $= 20 \times 10 = 200\;\mathrm{mL}$.
+Note: the liver produces approximately $500$--$1000\;\mathrm{mL}$ of bile per day, stored and concentrated
+in the gallbladder. The gallbladder releases bile in response to CCK (cholecystokinin) when fat enters
+the duodenum.
+
+(d) Glucose from $80\;\mathrm{g}$ carbohydrate (assuming all is digestible starch/sugar):
+$80\;\mathrm{g} / 180\;\mathrm{g/mol} = 0.444\;\mathrm{mol}$ glucose.
+Complete oxidation: $1$ glucose $\to$ $30$--$32\;\mathrm{ATP}$ (using modern P/O ratios).
+Total ATP $= 0.444 \times 32 \times 6.022 \times 10^{23} = 8.56 \times 10^{24}$ ATP molecules.
+
+</details>
+
+**Worked Example: Renal Function and Clearance**
+
+A patient produces $1440\;\mathrm{mL}$ of urine per day. The urine creatinine concentration is
+$1.5\;\mathrm{g/L}$ and the plasma creatinine concentration is $0.010\;\mathrm{g/L}$. (a) Calculate the
+creatinine clearance. (b) The patient's inulin clearance is $110\;\mathrm{mL/min}$. What does this value
+represent? (c) The urine glucose concentration is $2.0\;\mathrm{g/L}$ and the plasma glucose is
+$1.0\;\mathrm{g/L}$. Calculate the glucose clearance and explain the significance of this value.
+(d) If the GFR is $125\;\mathrm{mL/min}$ and $99\%$ of the filtered water is reabsorbed, calculate the
+expected daily urine volume.
+
+<details>
+<summary>Solution</summary>
+
+(a) Creatinine clearance $= \frac{U \times V}{P}$ where $U = 1.5\;\mathrm{g/L}$, $P = 0.010\;\mathrm{g/L}$,
+$V = 1440\;\mathrm{mL/day} = 1.0\;\mathrm{mL/min}$.
+
+$\text{Clearance} = \frac{1.5 \times 1.0}{0.010} = 150\;\mathrm{mL/min}$.
+
+Normal creatinine clearance (men): $105$--$125\;\mathrm{mL/min}$. This patient has an elevated clearance,
+which may indicate high muscle mass (creatine is converted to creatinine, which is filtered by the
+glomerulus and not significantly reabsorbed or secreted -- actually, creatinine IS slightly secreted,
+so clearance slightly overestimates GFR).
+
+(b) Inulin clearance of $110\;\mathrm{mL/min}$ represents the **glomerular filtration rate (GFR)**.
+Inulin is an ideal marker for GFR because it is freely filtered at the glomerulus and neither reabsorbed
+nor secreted by the renal tubules. Normal GFR is approximately $120$--$130\;\mathrm{mL/min}$; $110$ is
+slightly reduced but within or near normal range.
+
+(c) Glucose clearance $= \frac{2.0 \times 1.0}{1.0} = 2.0\;\mathrm{mL/min}$.
+
+This is much lower than GFR ($110\;\mathrm{mL/min}$), indicating that glucose is almost completely
+reabsorbed in the proximal convoluted tubule. Normally, glucose clearance is approximately $0$ (all
+filtered glucose is reabsorbed). A clearance of $2.0\;\mathrm{mL/min}$ suggests some glucose is spilling
+into the urine, which occurs when plasma glucose exceeds the renal threshold (approximately
+$180\;\mathrm{mg/dL} = 1.8\;\mathrm{g/L}$). This patient's plasma glucose ($1.0\;\mathrm{g/L}$) is below
+the threshold, so the small clearance may reflect tubular dysfunction or incomplete reabsorption.
+
+(d) Expected daily urine volume:
+Filtration rate $= 125\;\mathrm{mL/min} \times 60 \times 24 = 180{,}000\;\mathrm{mL/day} = 180\;\mathrm{L/day}$.
+If $99\%$ is reabsorbed: urine volume $= 180 \times 0.01 = 1.8\;\mathrm{L/day}$.
+
+This matches normal urine output ($1$--$2\;\mathrm{L/day}$).
+
+</details>
+
+**Worked Example: Hormonal Control of Blood Glucose**
+
+After a carbohydrate-rich meal, blood glucose rises from $5.0$ to $8.5\;\mathrm{mmol/L}$. (a) Describe
+the hormonal response. (b) Calculate the total mass of glucose in the blood if blood volume is $5\;\mathrm{L}$
+(molar mass of glucose $= 180\;\mathrm{g/mol}$). (c) Explain how insulin promotes glucose uptake into
+muscle and adipose cells. (d) A type 1 diabetic patient has a fasting blood glucose of $15\;\mathrm{mmol/L}$.
+Explain why glucose appears in the urine.
+
+<details>
+<summary>Solution</summary>
+
+(a) Hormonal response to rising blood glucose:
+1. Beta cells of the pancreatic islets detect increased blood glucose (via GLUT2 transporters and
+   glucokinase, which phosphorylates glucose, triggering ATP production and closure of $\mathrm{K}^+_{ATP}$
+   channels, depolarising the cell and opening voltage-gated $\mathrm{Ca}^{2+}$ channels).
+2. $\mathrm{Ca}^{2+}$ influx triggers exocytosis of insulin-containing secretory vesicles.
+3. **Insulin** is released into the blood and acts on target cells (liver, muscle, adipose tissue).
+4. **Glucagon** secretion by alpha cells is suppressed (paracrine inhibition by insulin and direct
+   effect of high glucose on alpha cells).
+5. Blood glucose returns to normal ($4$--$6\;\mathrm{mmol/L}$) within approximately $2$ hours.
+
+(b) At $8.5\;\mathrm{mmol/L}$: mass of glucose $= 8.5 \times 10^{-3}\;\mathrm{mol/L} \times 5\;\mathrm{L} \times 180\;\mathrm{g/mol} = 7.65\;\mathrm{g}$.
+At $5.0\;\mathrm{mmol/L}$: $5.0 \times 10^{-3} \times 5 \times 180 = 4.5\;\mathrm{g}$.
+Increase: $7.65 - 4.5 = 3.15\;\mathrm{g}$ of glucose in the blood.
+
+(c) Insulin promotes glucose uptake by:
+1. Binding to insulin receptors (tyrosine kinase receptors) on the cell membrane.
+2. Triggering an intracellular signalling cascade involving IRS-1, PI3K, and Akt.
+3. Akt promotes the translocation of **GLUT4** vesicles from intracellular stores to the cell membrane.
+4. GLUT4 transporters increase the membrane's permeability to glucose, allowing facilitated diffusion
+  of glucose into the cell down its concentration gradient.
+5. In muscle, glucose is used for glycogen synthesis or glycolysis. In adipose tissue, glucose is used
+  for triglyceride synthesis.
+
+(d) In type 1 diabetes, the beta cells are destroyed (autoimmune), so no insulin is produced. Without
+insulin:
+- GLUT4 translocation does not occur, so glucose cannot enter muscle and adipose cells efficiently.
+- Blood glucose remains elevated ($15\;\mathrm{mmol/L}$, well above the normal renal threshold of
+  approximately $10\;\mathrm{mmol/L}$).
+- The filtered load of glucose exceeds the maximum tubular reabsorption capacity ($T_m$).
+- The excess glucose is excreted in the urine (**glycosuria**), creating an osmotic diuresis (the
+  glucose in the tubule draws water with it, producing large volumes of urine -- polyuria).
+
+</details>
+
+**Worked Example: Oxygen-Haemoglobin Dissociation and Bohr Effect**
+
+At sea level, alveolar $\mathrm{pO}_2 = 13.3\;\mathrm{kPa}$, tissue $\mathrm{pO}_2 = 4.0\;\mathrm{kPa}$.
+Tissue $\mathrm{pCO}_2 = 6.0\;\mathrm{kPa}$ and tissue pH $= 7.2$. (a) Using the oxygen dissociation
+curve, estimate the percentage saturation of haemoglobin in the lungs and in the tissues (under normal
+conditions and Bohr-shifted conditions). (b) Explain the molecular mechanism of the Bohr effect.
+(c) Calculate the oxygen delivery per litre of blood if haemoglobin concentration is $150\;\mathrm{g/L}$
+and each gram carries $1.34\;\mathrm{mL\;O}_2$, comparing normal and Bohr-shifted conditions.
+
+<details>
+<summary>Solution</summary>
+
+(a) Normal conditions (pH 7.4):
+- Lungs ($\mathrm{pO}_2 = 13.3\;\mathrm{kPa}$): $\approx 97\%$ saturated.
+- Tissues ($\mathrm{pO}_2 = 4.0\;\mathrm{kPa}$): $\approx 55\%$ saturated.
+- $\mathrm{O}_2$ unloaded: $97 - 55 = 42\%$.
+
+Bohr-shifted conditions (pH 7.2, high $\mathrm{pCO}_2$):
+- Lungs: $\approx 97\%$ (the curve shift has minimal effect at high $\mathrm{pO}_2$).
+- Tissues: $\approx 35\%$ (the curve is shifted to the right, so saturation is lower at the same $\mathrm{pO}_2$).
+- $\mathrm{O}_2$ unloaded: $97 - 35 = 62\%$.
+
+The Bohr effect increases $\mathrm{O}_2$ unloading by $20$ percentage points ($62\%$ vs $42\%$).
+
+(b) The Bohr effect is caused by:
+1. $\mathrm{H}^+$ (from carbonic acid: $\mathrm{CO}_2 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{H}_2\mathrm{CO}_3 \rightleftharpoons \mathrm{H}^+ + \mathrm{HCO}_3^-$) binds to haemoglobin, stabilising the T (tense, deoxygenated) state.
+2. $\mathrm{H}^+$ binds to specific amino acid residues (His residues on the beta chains), forming salt
+   bridges that stabilise the deoxygenated conformation.
+3. Increased $\mathrm{CO}_2$ also promotes carbamino formation ($\mathrm{CO}_2$ binding to the N-terminal
+   amino groups of haemoglobin chains), further stabilising the T state.
+4. The combined effect shifts the oxygen dissociation curve to the right, reducing haemoglobin's
+   affinity for $\mathrm{O}_2$ and facilitating $\mathrm{O}_2$ release in metabolically active tissues
+   (which produce $\mathrm{CO}_2$ and $\mathrm{H}^+$).
+
+(c) Total $\mathrm{O}_2$-carrying capacity per litre: $150 \times 1.34 = 201\;\mathrm{mL\;O}_2/L$.
+
+Normal conditions: $\mathrm{O}_2$ delivered $= 201 \times 0.42 = 84.4\;\mathrm{mL\;O}_2/L\;blood}$.
+Bohr-shifted conditions: $\mathrm{O}_2$ delivered $= 201 \times 0.62 = 124.6\;\mathrm{mL\;O}_2/L\;blood}$.
+
+The Bohr effect increases oxygen delivery by approximately $47\%$ during exercise.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing tidal volume and vital capacity**: tidal volume is the volume of air in a normal breath
+  ($\approx 500\;\mathrm{mL}$); vital capacity is the maximum volume that can be exhaled after maximum
+  inhalation ($\approx 4.5\;\mathrm{L}$).
+- **Confusing the hepatic portal vein and hepatic vein**: the portal vein carries nutrient-rich blood
+  from the gut to the liver (for processing); the hepatic vein carries processed blood from the liver
+  to the vena cava.
+- **Forgetting that the loop of Henle creates a concentration gradient, not directly concentrated urine**:
+  the loop of Henle establishes the medullary osmotic gradient; water reabsorption in the collecting
+  duct (under ADH control) actually produces concentrated urine.
+- **Confusing spermatogenesis and oogenesis**: spermatogenesis produces 4 sperm from each primary
+  spermatocyte continuously from puberty; oogenesis produces 1 ovum (plus 2--3 polar bodies) from each
+  primary oocyte, with meiosis I arrested at prophase I until puberty and meiosis II at fertilisation.
+- **Stating that the SA node initiates contraction of the ventricles**: the SA node initiates atrial
+  contraction; the impulse reaches the ventricles via the AV node, bundle of His, and Purkinje fibres,
+  after a delay that allows the atria to contract first.
+- **Confusing antibodies and antibiotics**: antibodies are produced by the immune system (B cells) against
+  specific antigens; antibiotics are drugs that kill or inhibit bacteria.
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 13: Extended Response -- Liver and Metabolic Integration</summary>
+
+The liver plays a central role in metabolic integration. Describe the liver's role in: (a) carbohydrate
+metabolism (glycogenesis, glycogenolysis, gluconeogenesis), (b) lipid metabolism (lipogenesis, beta-oxidation,
+lipoprotein synthesis), (c) protein metabolism (deamination, transamination, urea synthesis), and
+(d) detoxification (alcohol metabolism, drug metabolism). Explain how these processes are hormonally
+regulated.
+
+</details>
+
+<details>
+<summary>Answer 13</summary>
+
+(a) **Carbohydrate metabolism**:
+- **Glycogenesis**: conversion of excess glucose to glycogen for storage. Stimulated by insulin (after
+  a meal). The enzyme glycogen synthase is activated by insulin (via dephosphorylation by protein
+  phosphatase 1).
+- **Glycogenolysis**: breakdown of glycogen to glucose-6-phosphate. Stimulated by glucagon and adrenaline.
+  The enzyme glycogen phosphorylase is activated by phosphorylation (protein kinase A, activated by cAMP).
+- **Gluconeogenesis**: synthesis of glucose from non-carbohydrate precursors (lactate, glycerol, alanine).
+  Stimulated by glucagon and cortisol. Key enzymes (PEPCK, fructose-1,6-bisphosphatase, glucose-6-phosphatase)
+  are induced by glucagon and repressed by insulin.
+
+(b) **Lipid metabolism**:
+- **Lipogenesis**: conversion of excess glucose to fatty acids and triglycerides. Stimulated by insulin.
+  Acetyl-CoA carboxylase (rate-limiting enzyme) is activated by insulin.
+- **Beta-oxidation**: breakdown of fatty acids to acetyl-CoA for energy (in liver mitochondria, the
+  acetyl-CoA cannot enter the Krebs cycle at high rates; instead, it is converted to ketone bodies).
+  Stimulated by glucagon (when blood glucose is low).
+- **Lipoprotein synthesis**: the liver synthesises VLDL (very-low-density lipoprotein) to transport
+  triglycerides to peripheral tissues, and HDL (high-density lipoprotein) for reverse cholesterol
+  transport. VLDL synthesis is stimulated by insulin.
+
+(c) **Protein metabolism**:
+- **Deamination**: removal of the amino group from amino acids, producing ammonia ($\mathrm{NH}_3$) and
+  a keto acid. The keto acid can enter the Krebs cycle or be used for gluconeogenesis.
+- **Transamination**: transfer of an amino group from one amino acid to a keto acid, producing a different
+  amino acid. Catalysed by transaminases (aminotransferases), which require pyridoxal phosphate
+  (vitamin $\mathrm{B}_6$) as a cofactor.
+- **Urea synthesis (ornithine cycle)**: ammonia (highly toxic) is converted to urea (less toxic) in the
+  liver. The urea cycle occurs partly in mitochondria and partly in the cytoplasm. Urea is excreted by
+  the kidneys. The cost is $4\;\mathrm{ATP}$ per urea synthesised (2 ATP are used to make carbamoyl
+  phosphate; 1 ATP is used to make argininosuccinate; 1 ATP is hydrolysed to AMP).
+
+(d) **Detoxification**:
+- **Alcohol metabolism**: ethanol is oxidised by alcohol dehydrogenase (ADH) to acetaldehyde (toxic),
+  then by aldehyde dehydrogenase (ALDH) to acetate (harmless), which enters general metabolism.
+  Acetaldehyde accumulation causes the unpleasant symptoms of hangover and is responsible for
+  alcohol-related liver damage (cirrhosis).
+- **Drug metabolism (phase I and II)**: phase I reactions (cytochrome P450 enzymes in the smooth ER)
+  modify the drug by oxidation, reduction, or hydrolysis; phase II reactions conjugate the drug or
+  its metabolites with polar groups (glucuronic acid, glutathione, sulphate) to increase water
+  solubility for renal excretion.
+
+Hormonal regulation: insulin promotes storage (glycogenesis, lipogenesis, protein synthesis); glucagon
+and adrenaline promote mobilisation (glycogenolysis, gluconeogenesis, lipolysis). Cortisol promotes
+gluconeogenesis and protein catabolism during prolonged stress.
+
+</details>
+
+<details>
+<summary>Problem 14: Quantitative -- ECG Interpretation</summary>
+
+An ECG recording shows the following intervals:
+- P wave duration: $120\;\mathrm{ms}$ (normal: $< 120\;\mathrm{ms}$)
+- PR interval: $200\;\mathrm{ms}$ (normal: $120$--$200\;\mathrm{ms}$)
+- QRS complex duration: $80\;\mathrm{ms}$ (normal: $80$--$120\;\mathrm{ms}$)
+- QT interval: $400\;\mathrm{ms}$ (normal: $350$--$440\;\mathrm{ms}$)
+- Heart rate: $75\;\mathrm{bpm}$
+
+(a) Correlate each ECG component with the corresponding cardiac event. (b) Are any of the intervals
+abnormal? (c) Calculate the corrected QT interval ($\mathrm{QTc} = \mathrm{QT} / \sqrt{RR}$). (d)
+Explain what first-degree heart block looks like on an ECG.
+
+</details>
+
+<details>
+<summary>Answer 14</summary>
+
+(a) ECG correlations:
+- **P wave**: atrial depolarisation (SA node impulse spreads through both atria).
+- **PR interval**: time from the start of atrial depolarisation to the start of ventricular depolarisation;
+  includes AV node delay.
+- **QRS complex**: ventricular depolarisation (impulse spreads through the bundle of His, bundle branches,
+  and Purkinje fibres). The atria also repolarise during this interval, but the signal is masked by the
+  large ventricular depolarisation.
+- **QT interval**: ventricular depolarisation plus repolarisation (represents the duration of ventricular
+  action potential).
+- **T wave**: ventricular repolarisation.
+
+(b) All intervals are within or at the upper limit of normal:
+- P wave: $120\;\mathrm{ms}$ (at the upper limit; $< 120$ is strictly normal).
+- PR interval: $200\;\mathrm{ms}$ (at the upper limit of normal; $> 200\;\mathrm{ms}$ indicates
+  first-degree heart block).
+- QRS: $80\;\mathrm{ms}$ (normal).
+- QT: $400\;\mathrm{ms}$ (normal).
+
+The PR interval of $200\;\mathrm{ms}$ is borderline and may indicate **first-degree heart block**.
+
+(c) RR interval $= 60 / 75 = 0.80\;\mathrm{s}$.
+$\mathrm{QTc} = 400 / \sqrt{0.80} = 400 / 0.894 = 447\;\mathrm{ms}$.
+Normal $\mathrm{QTc}$ is $< 440\;\mathrm{ms}$ (men) or $< 450\;\mathrm{ms}$ (women). This is borderline
+prolonged. A prolonged QTc increases the risk of torsades de pointes (a type of ventricular tachycardia).
+
+(d) **First-degree heart block**: every P wave is followed by a QRS complex (no dropped beats), but the
+PR interval is prolonged ($> 200\;\mathrm{ms}$). This indicates delayed conduction through the AV node.
+It is often benign but may progress to higher-degree blocks. Causes include ischaemic heart disease,
+drug effects (beta-blockers, calcium channel blockers, digoxin), and age-related fibrosis of the
+conduction system.
+
+</details>
+
+<details>
+<summary>Problem 15: Extended Response -- Kidney and Osmoregulation</summary>
+
+Describe the mechanism by which the kidney produces concentrated urine under the influence of antidiuretic
+hormone (ADH, vasopressin). Include: (a) the role of the loop of Henle in creating the medullary osmotic
+gradient, (b) the role of the vasa recta in maintaining the gradient, (c) the mechanism of ADH action
+on the collecting duct, and (d) the difference between water reabsorption in the presence and absence
+of ADH.
+
+</details>
+
+<details>
+<summary>Answer 15</summary>
+
+(a) **Loop of Henle and the medullary gradient**:
+- The **descending limb** is permeable to water but not to solutes. As filtrate descends into the
+  increasingly hypertonic medulla, water leaves by osmosis, concentrating the filtrate.
+- The **thin ascending limb** is impermeable to water but permeable to $\mathrm{Na}^+$ and $\mathrm{Cl}^-$,
+  which diffuse passively into the medullary interstitium (countercurrent multiplication).
+- The **thick ascending limb** actively transports $\mathrm{Na}^+$, $\mathrm{K}^+$, and $\mathrm{Cl}^-$
+  out of the filtrate via the $\mathrm{Na}^+/2\mathrm{Cl}^-/\mathrm{K}^+$ co-transporter (NKCC2),
+  further diluting the filtrate and concentrating the medulla. This segment is impermeable to water.
+- The result is a gradient from approximately $300\;\mathrm{mOsm}$ (cortex) to $1200\;\mathrm{mOsm}$
+  (inner medulla).
+
+(b) **Vasa recta (countercurrent exchange)**:
+- The vasa recta are hairpin-shaped capillaries that run alongside the loop of Henle.
+- As blood descends into the medulla, water leaves the blood (drawn out by the high osmolarity) and
+  solutes enter (from the concentrated interstitium).
+- As blood ascends, the reverse occurs: solutes leave the blood and water enters.
+- This countercurrent exchange prevents the vasa recta from "washing out" the medullary gradient.
+  The vasa recta carry away the excess water and solutes while maintaining the gradient.
+
+(c) **ADH action on the collecting duct**:
+1. ADH is released from the posterior pituitary in response to increased plasma osmolarity (detected by
+   osmoreceptors in the hypothalamus) or decreased blood volume (detected by baroreceptors).
+2. ADH binds to V2 receptors on the basolateral membrane of principal cells in the collecting duct.
+3. This activates a G-protein-coupled signalling cascade, increasing intracellular cAMP.
+4. cAMP activates protein kinase A (PKA), which triggers the insertion of **aquaporin-2 (AQP2)** water
+   channels into the apical membrane via vesicle trafficking.
+5. Water exits the collecting duct through AQP2 channels and enters the blood through constitutively
+   present AQP3/AQP4 channels on the basolateral membrane.
+
+(d) **With vs without ADH**:
+- **With ADH**: the collecting duct is highly permeable to water. As filtrate passes through the
+  hypertonic medulla, water is reabsorbed, producing concentrated urine (up to $1200\;\mathrm{mOsm}$,
+  as low as $500\;\mathrm{mL/day}$).
+- **Without ADH** (e.g., diabetes insipidus, or after large fluid intake): AQP2 channels are removed
+  from the apical membrane. The collecting duct is impermeable to water. Dilute urine is produced
+  (approximately $50\;\mathrm{mOsm}$, up to $20\;\mathrm{L/day}$), regardless of the medullary gradient.
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **Cell membrane and transport**: Review [./cell-biology](./cell-biology) for membrane proteins, osmosis, and active transport.
+- **Gas exchange and haemoglobin**: Review [./human-physiology](./human-physiology) for the oxygen dissociation curve (within this document).
+- **Nervous system and heart regulation**: Review [./nervous-system](./nervous-system) for autonomic control of heart rate and reflex arcs.
+- **Immunology and defence**: Review [./immunology](./immunology) for fever, inflammation, and antibody production.
+- **Metabolism and ATP**: Review [./metabolism-cell-biology](./metabolism-cell-biology) for cellular respiration and energy production in tissues.
+
+---
+
+## Supplementary: Endocrine System in Detail (HL Extension)
+
+### Hormone Classification
+
+Hormones are classified by their chemical structure, which determines their mechanism of action:
+
+| Class | Examples | Solubility | Receptor location | Mechanism |
+|-------|---------|------------|-------------------|-----------|
+| **Peptide/protein** | Insulin, glucagon, ADH, FSH, LH, TSH, GH | Hydrophilic | Cell surface (GPCR or tyrosine kinase) | Second messenger cascade (cAMP, IP3/DAG, Ca2+) |
+| **Steroid** | Cortisol, testosterone, oestradiol, progesterone, aldosterone | Lipophilic | Intracellular (cytoplasmic or nuclear) | Directly modulate gene transcription |
+| **Amino acid derivative** | Thyroxine (T4), triiodothyronine (T3), adrenaline, noradrenaline | Mixed | Adrenaline: cell surface; T3/T4: intracellular | Second messenger (adrenaline) or gene transcription (T3/T4) |
+
+### Peptide Hormones: Insulin Signalling Pathway (Detailed)
+
+Insulin is a peptide hormone (51 amino acids, two chains linked by disulphide bonds) produced by
+beta cells of the pancreatic islets of Langerhans.
+
+**Synthesis and secretion**:
+1. Preproinsulin is synthesised on ribosomes bound to the rough ER.
+2. The signal peptide is cleaved in the ER lumen, producing proinsulin.
+3. Proinsulin is transported to the Golgi, where it is packaged into secretory vesicles.
+4. In the vesicles, proinsulin is cleaved by prohormone convertases (PC1/PC3) and carboxypeptidase E,
+   producing insulin (A chain + B chain) and C-peptide.
+5. Glucose enters the beta cell via GLUT2 transporters and is phosphorylated by glucokinase.
+6. Increased ATP closes $\mathrm{K}^+_{\mathrm{ATP}}$ channels, depolarising the cell.
+7. Voltage-gated $\mathrm{Ca}^{2+}$ channels open; $\mathrm{Ca}^{2+}$ influx triggers exocytosis of
+   insulin vesicles.
+
+**Insulin receptor signalling**:
+1. Insulin binds to the insulin receptor (a receptor tyrosine kinase) on the target cell surface.
+2. The receptor autophosphorylates on tyrosine residues.
+3. Insulin receptor substrates (IRS-1, IRS-2) bind to the receptor and are phosphorylated.
+4. IRS activates PI3K (phosphoinositide 3-kinase), which generates PIP3 from PIP2.
+5. PIP3 activates PDK1, which phosphorylates Akt (protein kinase B).
+6. Akt phosphorylates multiple targets:
+   - **GLUT4 translocation**: Akt promotes the movement of GLUT4 vesicles to the cell membrane
+     (in muscle and adipose tissue), increasing glucose uptake.
+   - **Glycogen synthesis**: Akt inactivates GSK-3 (glycogen synthase kinase 3), which normally
+     inhibits glycogen synthase. Net effect: increased glycogen synthesis.
+   - **Protein synthesis**: Akt activates mTOR, stimulating protein synthesis and cell growth.
+   - **Lipogenesis**: Akt activates SREBP (sterol regulatory element-binding protein), promoting
+     fatty acid and triglyceride synthesis.
+
+### Steroid Hormones: Cortisol Action
+
+Cortisol is a glucocorticoid produced by the zona fasciculata of the adrenal cortex. It is
+lipophilic and diffuses directly through the plasma membrane.
+
+**Mechanism of action**:
+1. Cortisol diffuses through the cell membrane and binds to the glucocorticoid receptor (GR) in the
+   cytoplasm. The GR is bound to heat shock proteins (HSPs) that keep it inactive.
+2. Cortisol binding causes a conformational change, releasing HSPs and exposing the nuclear
+   localisation signal.
+3. The cortisol-GR complex translocates to the nucleus.
+4. The complex binds to glucocorticoid response elements (GREs) in the promoter regions of target genes,
+   recruiting co-activators or co-repressors and modulating transcription.
+5. Alternatively, the cortisol-GR complex can interact with other transcription factors (e.g., NF-$\kappa$B)
+   in the cytoplasm, inhibiting their activity (transrepression). This is how cortisol suppresses
+   inflammation (by blocking NF-$\kappa$B, which activates inflammatory gene expression).
+
+**Effects of cortisol**:
+- **Metabolic**: increases blood glucose by promoting gluconeogenesis (in the liver), reducing glucose
+  uptake by peripheral tissues, and promoting protein catabolism (muscle wasting) and lipolysis.
+- **Anti-inflammatory**: suppresses the immune response by inhibiting cytokine production, reducing
+  leukocyte migration, and promoting apoptosis of lymphocytes.
+- **Stress response**: cortisol is the end product of the HPA (hypothalamic-pituitary-adrenal) axis,
+  released in response to physical or psychological stress.
+
+### The Hypothalamic-Pituitary Axis
+
+The hypothalamus controls the anterior pituitary via releasing and inhibiting hormones, which are
+transported through the hypophyseal portal system:
+
+| Hypothalamic hormone | Effect on anterior pituitary | Target gland | Main hormone |
+|---------------------|------------------------------|-------------|-------------|
+| GnRH | Stimulates | Gonads | FSH, LH |
+| TRH | Stimulates | Thyroid | TSH |
+| CRH | Stimulates | Adrenal cortex | ACTH |
+| GHRH | Stimulates | Liver, bones | GH |
+| Somatostatin | Inhibits | -- | GH, TSH |
+| Dopamine (PIH) | Inhibits | -- | Prolactin |
+
+**Negative feedback**: hormones produced by the target glands (thyroid hormones, cortisol, sex steroids)
+feed back to the hypothalamus and pituitary to inhibit further release of releasing hormones and
+tropic hormones. This maintains hormone levels within a narrow physiological range.
+
+Example (thyroid axis):
+- Low $\mathrm{T}_3/\mathrm{T}_4$ $\to$ hypothalamus releases TRH $\to$ pituitary releases TSH $\to$
+  thyroid releases $\mathrm{T}_3/\mathrm{T}_4$ $\to$ blood levels rise $\to$ $\mathrm{T}_3/\mathrm{T}_4$
+  inhibit TRH and TSH release $\to$ thyroid hormone production decreases.
+
+### Worked Example: Hormone Dosage and Half-Life
+
+A drug containing cortisol is administered intravenously at a dose of $200\;\mathrm{mg}$. The
+elimination half-life of cortisol is $90\;\mathrm{minutes}$. (a) Calculate the plasma concentration
+after $6$ hours if the volume of distribution is $10\;\mathrm{L}$. (b) How long until the plasma
+concentration falls below $5\;\mathrm{mg/L}$? (c) Explain why cortisol must be administered
+more frequently than aldosterone (half-life $\approx 20\;\mathrm{minutes}$).
+
+<details>
+<summary>Solution</summary>
+
+(a) Initial concentration: $C_0 = 200 / 10 = 20\;\mathrm{mg/L}$.
+
+After $6$ hours ($360\;\mathrm{minutes}$): number of half-lives $= 360 / 90 = 4$.
+$C = C_0 \times (0.5)^4 = 20 \times 0.0625 = 1.25\;\mathrm{mg/L}$.
+
+(b) We need $C < 5\;\mathrm{mg/L}$: $20 \times (0.5)^n < 5$.
+$(0.5)^n < 0.25$, so $n > 2$ half-lives.
+Time $= 2 \times 90 = 180\;\mathrm{minutes} = 3\;\mathrm{hours}$.
+
+(c) Aldosterone has a shorter half-life ($20\;\mathrm{min}$) than cortisol ($90\;\mathrm{min}$),
+so aldosterone must be administered more frequently or by continuous infusion to maintain therapeutic
+levels. The shorter half-life means aldosterone is cleared from the blood more rapidly. However,
+aldosterone is also produced locally in some tissues (paracrine action), and its effects are
+mediated by mineralocorticoid receptors that have high affinity (requiring lower concentrations).
+In practice, aldosterone is replaced by fludrocortisone (a synthetic mineralocorticoid with a
+longer half-life) in patients with adrenal insufficiency.
+
+</details>
+

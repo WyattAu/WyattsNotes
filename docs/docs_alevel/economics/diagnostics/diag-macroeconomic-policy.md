@@ -161,3 +161,123 @@ New deficit $= 442.8 - 472 = -\pounds 29.2$~bn (surplus of $\pounds 29.2$~bn).
 Improvement $= 50 + 29.2 = \pounds 79.2$~bn (from $\pounds 50$~bn deficit to $\pounds 29.2$~bn surplus).
 
 The J-curve illustrates that exchange rate depreciation initially worsens the trade balance before improving it -- the full benefits may take 1--2 years to materialise.
+
+---
+
+## Section 3: Extended Macroeconomic Policy Practice
+
+**UT-4 (Extension).** An economy has the following data: $C = 200 + 0.8Y_d$, $I = 150$, $G = 250$, $T = 0.25Y$, $X = 100$, $M = 50 + 0.15Y$. (a) Calculate equilibrium GDP. (b) Calculate the government spending multiplier and the tax multiplier. (c) The government increases spending by 20 while simultaneously increasing the tax rate to 30%. Calculate the new equilibrium. (d) Calculate the change in the government budget balance.
+
+**Solution:**
+
+(a) $Y = C + I + G + X - M$.
+$Y = 200 + 0.8(Y - 0.25Y) + 150 + 250 + 100 - (50 + 0.15Y)$.
+$Y = 200 + 0.6Y + 150 + 250 + 100 - 50 - 0.15Y$.
+$Y = 650 + 0.45Y$.
+$0.55Y = 650 \Rightarrow Y = 1181.82$.
+
+(b) $k_G = \frac{1}{1 - MPC(1-t) + MPM} = \frac{1}{1 - 0.8(0.75) + 0.15} = \frac{1}{1 - 0.6 + 0.15} = \frac{1}{0.55} = 1.818$.
+
+Tax multiplier: $k_T = \frac{-MPC}{0.55} = \frac{-0.8}{0.55} = -1.455$.
+
+(c) With $G = 270$ and $t = 0.30$:
+$Y = 200 + 0.8(Y - 0.3Y) + 150 + 270 + 100 - (50 + 0.15Y)$.
+$Y = 200 + 0.56Y + 150 + 270 + 100 - 50 - 0.15Y$.
+$Y = 670 + 0.41Y$.
+$0.59Y = 670 \Rightarrow Y = 1135.59$.
+
+GDP has FALLEN from 1181.82 to 1135.59 (a decrease of 46.23). Despite the fiscal expansion (higher $G$), the tax increase more than offsets it because it reduces disposable income and consumption.
+
+(d) Original budget: $T = 0.25 \times 1181.82 = 295.46$. $G = 250$. Surplus $= 295.46 - 250 = +45.46$.
+New budget: $T = 0.30 \times 1135.59 = 340.68$. $G = 270$. Surplus $= 340.68 - 270 = +70.68$.
+The budget surplus has increased by 25.22, from 45.46 to 70.68. The balanced budget multiplier is NOT 1 here because of proportional taxation and imports (leakages).
+
+---
+
+**UT-5 (Extension): AD/AS with Simultaneous Shocks.** An economy has AD: $Y = 600 - 2P$, SRAS: $Y = 4P - 200$, and LRAS: $Y^* = 500$. (a) Find the current equilibrium and identify any output gap. (b) A positive supply shock shifts SRAS right by 80 units (new SRAS: $Y = 4P - 280$). Calculate the new equilibrium. (c) Simultaneously, consumer confidence falls, shifting AD left by 100 (new AD: $Y = 500 - 2P$). Calculate the combined effect. (d) Is the economy now in a recessionary or inflationary gap?
+
+**Solution:**
+
+(a) $600 - 2P = 4P - 200 \Rightarrow 800 = 6P \Rightarrow P = 133.33$, $Y = 333.33$.
+Output gap: $500 - 333.33 = 166.67$ (recessionary gap).
+
+(b) With new SRAS: $600 - 2P = 4P - 280 \Rightarrow 880 = 6P \Rightarrow P = 146.67$, $Y = 306.67$.
+Output gap: $500 - 306.67 = 193.33$ (larger recessionary gap!).
+The positive supply shock actually worsened the recessionary gap in the short run because it reduced the price level, which (through the real balance effect) could further reduce AD. But in this model, AD is fixed, so the lower price level simply means a new intersection at lower output. Wait -- this seems wrong.
+
+Let me recheck. New SRAS: $Y = 4P - 280$. At $P = 146.67$: $Y = 586.67 - 280 = 306.67$. Yes, output has fallen. But a rightward shift of SRAS should INCREASE output for a given AD. Let me reconsider.
+
+$600 - 2P = 4P - 280$: $880 = 6P \Rightarrow P = 146.67$. $Y = 600 - 2(146.67) = 306.67$.
+
+Wait, this is LESS output than before (333.33). That cannot be right for a rightward SRAS shift. Let me re-examine.
+
+Original SRAS: $Y = 4P - 200$. At $P = 133.33$: $Y = 533.33 - 200 = 333.33$. Correct.
+
+New SRAS: $Y = 4P - 280$. The intercept has DECREASED (from -200 to -280), which means for any given $P$, output is LOWER. This is a LEFTWARD shift, not a rightward shift. I defined the shift incorrectly.
+
+A rightward shift by 80 means: new SRAS $= 4P - 200 + 80 = 4P - 120$.
+
+Let me redo: $600 - 2P = 4P - 120 \Rightarrow 720 = 6P \Rightarrow P = 120$, $Y = 600 - 240 = 360$.
+Output has increased from 333.33 to 360 (correct for a rightward SRAS shift). Output gap: $500 - 360 = 140$ (smaller recessionary gap).
+
+(c) Combined shocks: new AD $Y = 500 - 2P$, new SRAS $Y = 4P - 120$.
+$500 - 2P = 4P - 120 \Rightarrow 620 = 6P \Rightarrow P = 103.33$, $Y = 500 - 206.67 = 293.33$.
+
+(d) Output gap: $500 - 293.33 = 206.67$ (large recessionary gap). The negative AD shock dominates, pushing output well below potential. The positive supply shock partially offset the price level increase but not the output decline.
+
+---
+
+**IT-4 (Extension): Fiscal Policy and Debt Dynamics.** A country has GDP = $\pounds 2000$bn, government debt = $\pounds 1800$bn (90% of GDP), budget deficit = $\pounds 100$bn (5% of GDP), and the interest rate on government debt = 4%. GDP grows at 2% per year and inflation is 3%. (a) Calculate the primary deficit. (b) Calculate the debt-stabilising primary balance. (c) If the government maintains the current primary deficit, calculate the debt-to-GDP ratio after 5 years (using the approximation $b_{t+1} \approx (1 + r - g - \pi)b_t - p$). (d) What primary surplus is needed to reduce the debt ratio to 60% of GDP within 10 years?
+
+**Solution:**
+
+(a) Interest payments $= 0.04 \times 1800 = \pounds 72\text{bn}$.
+Total deficit = primary deficit + interest payments. $100 = \text{primary deficit} + 72$.
+Primary deficit $= \pounds 28\text{bn}$ (1.4% of GDP).
+
+(b) Debt-stabilising condition: the debt ratio is stable when $b_{t+1} = b_t$, i.e., $(r - g - \pi)b = p$.
+Nominal GDP growth $= g + \pi = 2 + 3 = 5\%$. Real interest rate on debt $= r - \pi = 4 - 3 = 1\%$.
+Using the approximation: $(r - g_{nominal})b = p$ where $r$ is nominal rate and $g_{nominal} = 5\%$.
+$(0.04 - 0.05) \times 90 = p \Rightarrow -0.01 \times 90 = p \Rightarrow p = -0.9$.
+
+The debt-stabilising primary balance is a SURPLUS of 0.9% of GDP ($\pounds 18\text{bn}$). Since the current primary balance is a DEFICIT of 1.4%, the debt ratio is rising.
+
+(c) Year-by-year debt ratio evolution ($b_0 = 90\%$, $p = -1.4\%$, $r - g_{nominal} = -1\%$):
+$b_{t+1} = (1 - 0.01)b_t - (-1.4) = 0.99b_t + 1.4$.
+$b_1 = 0.99(90) + 1.4 = 89.1 + 1.4 = 90.5$.
+$b_2 = 0.99(90.5) + 1.4 = 89.6 + 1.4 = 91.0$.
+$b_3 = 0.99(91.0) + 1.4 = 90.1 + 1.4 = 91.5$.
+$b_4 = 0.99(91.5) + 1.4 = 90.6 + 1.4 = 92.0$.
+$b_5 = 0.99(92.0) + 1.4 = 91.1 + 1.4 = 92.5$.
+
+The debt ratio rises from 90% to 92.5% after 5 years. Despite the favourable interest rate-growth differential (nominal GDP growth exceeds the interest rate), the primary deficit pushes the debt ratio up.
+
+(d) To reduce $b$ from 90% to 60% in 10 years:
+$b_{10} = 60 = (0.99)^{10} \times 90 + p \times \frac{1 - 0.99^{10}}{1 - 0.99}$.
+$(0.99)^{10} = 0.9044$. $90 \times 0.9044 = 81.4$.
+$\frac{1 - 0.9044}{0.01} = 9.56$.
+$60 = 81.4 + 9.56p$.
+$9.56p = -21.4 \Rightarrow p = -2.24\%$ of GDP.
+
+A primary surplus of 2.24% of GDP ($\pounds 44.8\text{bn}$) sustained for 10 years would reduce the debt ratio from 90% to 60%.
+
+---
+
+**IT-5 (Extension): Monetary Policy Transmission.** The Bank of England raises the Bank Rate from 3% to 4%. (a) If the interest elasticity of investment is $-0.5$ and investment was $\pounds 300$bn, calculate the change in investment. (b) If the multiplier is 2, calculate the change in GDP. (c) If the exchange rate appreciates by 3% as a result, and exports are $\pounds 500$bn with a PED of $-0.8$, calculate the change in export revenue. (d) Calculate the total estimated change in AD.
+
+**Solution:**
+
+(a) Interest elasticity: $\% \Delta I = \epsilon_I \times \% \Delta r = -0.5 \times \left(\frac{4 - 3}{3} \times 100\right) = -0.5 \times 33.3\% = -16.7\%$.
+$\Delta I = -16.7\% \times 300 = -\pounds 50\text{bn}$. New investment $= \pounds 250\text{bn}$.
+
+(b) $\Delta Y = k \times \Delta I = 2 \times (-50) = -\pounds 100\text{bn}$.
+
+(c) Exchange rate appreciation of 3% makes UK exports 3% more expensive in foreign currency terms.
+$\% \Delta X = PED_X \times \% \Delta P = -0.8 \times 3 = -2.4\%$.
+$\Delta X = -2.4\% \times 500 = -\pounds 12\text{bn}$. New exports $= \pounds 488\text{bn}$.
+
+(d) Total change in AD $= \Delta I + k_{net\_exports} \times \Delta X$.
+The export change also goes through the multiplier: $\Delta Y_{exports} = 2 \times (-12) = -\pounds 24\text{bn}$.
+Total $\Delta Y = -100 - 24 = -\pounds 124\text{bn}$.
+
+If GDP was $\pounds 2000$bn, this is a contraction of 6.2%. This is a large effect, illustrating the power of monetary policy. In practice, the effects are spread over 2-3 years and may be partially offset by other factors (e.g., falling inflation boosts real incomes).

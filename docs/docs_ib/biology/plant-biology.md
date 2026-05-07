@@ -1020,3 +1020,570 @@ $35^\circ\mathrm{C}$ and $70\%$ humidity.
 
 </details>
 
+---
+
+## Additional Worked Examples
+
+**Worked Example: Phloem Transport and Mass Flow Hypothesis**
+
+A source leaf produces sucrose at a rate of $5\;\mathrm{\mu mol/h}$ and loads it into the phloem.
+The sieve tube has a radius of $15\;\mathrm{\mu m}$ and the concentration difference between source
+and sink is $500\;\mathrm{mmol/L}$ ($0.5\;\mathrm{mol/L}$). (a) Explain the mass flow (pressure flow)
+hypothesis of phloem transport. (b) Calculate the osmotic pressure difference using the van't Hoff
+equation ($\Pi = iCRT$) at $25^\circ\mathrm{C}$. (c) Explain why phloem transport is bidirectional,
+unlike xylem transport.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Mass flow (pressure flow) hypothesis** (Munch, 1930):
+1. **Loading**: sucrose is actively transported (loaded) into the sieve tube at the source (e.g., a
+   photosynthetic leaf) by companion cells. This increases the solute concentration inside the sieve tube.
+2. **Water uptake**: the high solute concentration lowers the water potential, causing water to enter the
+   sieve tube from the xylem by osmosis. This creates high hydrostatic pressure at the source.
+3. **Flow**: the pressure gradient drives bulk flow of the sap (sucrose solution) through the sieve tubes
+   from source to sink (region of lower pressure).
+4. **Unloading**: at the sink (e.g., a growing root or fruit), sucrose is actively removed from the sieve
+   tube by sink cells. This increases the water potential inside the sieve tube, causing water to leave
+   by osmosis and reducing the hydrostatic pressure at the sink.
+5. The pressure difference between source (high) and sink (low) maintains the flow.
+
+(b) $\Pi = iCRT$, where $i = 1$ (sucrose does not ionise), $C = 0.5\;\mathrm{mol/L}$,
+$R = 8.314\;\mathrm{J/(mol \cdot K)}$, $T = 298\;\mathrm{K}$.
+
+$\Pi = 1 \times 0.5 \times 8.314 \times 298 = 1238\;\mathrm{kPa} = 12.4\;\mathrm{atm}$.
+
+This osmotic pressure difference drives water uptake at the source and contributes to the pressure
+gradient for mass flow.
+
+(c) Phloem transport can be bidirectional because different sieve tubes (or different sieve elements
+within the same sieve tube) can transport sap in different directions simultaneously. A leaf can be
+a source (exporting sucrose to roots) and a sink (importing sucrose for its own growth) at different
+times or for different compounds. Xylem transport is always unidirectional (upward, from roots to
+leaves) because it is driven by transpiration pull (a negative pressure) and root pressure, both of
+which only operate in one direction.
+
+</details>
+
+**Worked Example: Mineral Ion Uptake and Active Transport**
+
+A plant root absorbs nitrate ($\mathrm{NO}_3^-$) from a soil solution containing $2.0\;\mathrm{mmol/L}$
+$\mathrm{NO}_3^-$. The root cell cytoplasm has a $\mathrm{NO}_3^-$ concentration of $50\;\mathrm{mmol/L}$.
+The membrane potential is $-120\;\mathrm{mV}$ (inside negative). (a) Calculate the equilibrium potential
+for $\mathrm{NO}_3^-$ at $25^\circ\mathrm{C}$. (b) Calculate the electrochemical driving force. (c) In
+which direction does the driving force act? (d) What type of transport is required for nitrate uptake?
+
+<details>
+<summary>Solution</summary>
+
+(a) $E_{\mathrm{NO}_3} = \frac{RT}{zF}\ln\frac{[\mathrm{NO}_3^-]_{out}}{[\mathrm{NO}_3^-]_{in}}$
+$= \frac{0.0267}{-1}\ln\frac{2.0}{50.0}$
+$= -0.0267 \times \ln(0.04)$
+$= -0.0267 \times (-3.219)$
+$= +85.9\;\mathrm{mV}$
+
+(b) Driving force $= V_m - E_{\mathrm{ion}} = -120 - 85.9 = -205.9\;\mathrm{mV}$.
+
+(c) The negative driving force means the electrochemical gradient favours $\mathrm{NO}_3^-$ uptake
+(into the cell, against the concentration gradient but aided by the membrane potential). Wait -- the
+concentration gradient favours efflux ($50$ inside vs $2$ outside), but the electrical gradient
+(attracting the negative $\mathrm{NO}_3^-$ into the negatively charged cell) is very strong.
+
+Let me recalculate: the net electrochemical potential for $\mathrm{NO}_3^-$ inside the cell is
+$\Delta\mu = zF(V_m - E_{\mathrm{ion}}) = (-1) \times F \times (-205.9\;\mathrm{mV}) = +205.9\;\mathrm{mV}$.
+This positive value means the ion is more stable inside; uptake is favoured by the electrical gradient
+but opposed by the concentration gradient. The net effect: the electrical gradient ($-120\;\mathrm{mV}$
+attracting $\mathrm{NO}_3^-$) outweighs the concentration gradient (favouring efflux).
+
+(d) Since nitrate is being accumulated against its concentration gradient (from $2$ to $50\;\mathrm{mmol/L}$),
+**active transport** is required. Specifically, nitrate is taken up by nitrate transporters (NRT1 and NRT2
+families) that use the proton gradient ($\mathrm{H}^+$ co-transport): nitrate enters the cell together
+with protons (symport), driven by the proton electrochemical gradient maintained by the plasma membrane
+$\mathrm{H}^+$-ATPase (primary active transport).
+
+</details>
+
+**Worked Example: Photoperiodism and Flowering**
+
+A short-day plant (SDP) flowers when the night length exceeds a critical dark period of $12$ hours.
+A long-day plant (LDP) flowers when the night length is less than a critical dark period of $10$ hours.
+(a) On June 21 (summer solstice, day length $= 15$ hours at a temperate latitude), will each plant flower?
+(b) On December 21 (winter solstice, day length $= 9$ hours), will each plant flower? (c) A SDP is
+given a $15$-hour night with a 10-minute flash of red light ($660\;\mathrm{nm}$) in the middle of the
+dark period. Will it flower? (d) If the red flash is followed immediately by far-red light
+($730\;\mathrm{nm}$), will it flower?
+
+<details>
+<summary>Solution</summary>
+
+(a) June 21: day $= 15\;\mathrm{h}$, night $= 9\;\mathrm{h}$.
+- SDP: critical dark period $= 12\;\mathrm{h}$. Night $= 9\;\mathrm{h} < 12\;\mathrm{h}$. **No flowering.**
+- LDP: critical dark period $= 10\;\mathrm{h}$. Night $= 9\;\mathrm{h} < 10\;\mathrm{h}$. **Flowering.**
+
+(b) December 21: day $= 9\;\mathrm{h}$, night $= 15\;\mathrm{h}$.
+- SDP: night $= 15\;\mathrm{h} > 12\;\mathrm{h}$. **Flowering.**
+- LDP: night $= 15\;\mathrm{h} > 10\;\mathrm{h}$. **No flowering.**
+
+(c) The red flash in the middle of the dark period converts $\mathrm{P_{fr}}$ (the active form of
+phytochrome) from $\mathrm{P_r}$. This interrupts the dark period -- the plant perceives the $15$-hour
+night as two shorter nights ($7.5\;\mathrm{h}$ each), both below the critical dark period.
+**No flowering** in the SDP.
+
+(d) Far-red light converts $\mathrm{P_{fr}}$ back to $\mathrm{P_r}$. If the red flash is immediately
+followed by far-red, the net effect is as if no flash occurred (the phytochrome system is reversed).
+**The plant flowers** (the dark period is perceived as continuous).
+
+This is the classic **red/far-red reversible** phytochrome response, discovered by Borthwick and Hendricks
+(1952), which demonstrated that phytochrome is the photoreceptor for photoperiodism.
+
+</details>
+
+**Worked Example: Translocation of Auxin and Apical Dominance**
+
+A researcher applies radioactive IAA ($^{14}\mathrm{C}$-labelled auxin) to the tip of a shoot and
+measures its distribution after $24$ hours. The results show that most of the radioactivity is
+concentrated in the stem below the apex, with very little in the lateral buds. (a) Explain the
+polar (basipetal) transport of auxin. (b) Explain the mechanism of apical dominance. (c) If the
+apical bud is removed, predict the effect on lateral bud growth. (d) If IAA is applied to the
+decapitated stump, predict the effect.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Polar auxin transport**: auxin (IAA) is transported directionally from the shoot apex toward the
+base (basipetal transport). This is mediated by **PIN proteins** (auxin efflux carriers) that are
+localised on the basal (bottom) side of cells. The mechanism:
+1. IAA enters the cell from the apical side via diffusion or AUX1 influx carriers.
+2. PIN efflux carriers on the basal membrane pump IAA into the cell wall space below.
+3. IAA enters the next cell from its apical side, and the process repeats.
+4. The net result is unidirectional (top-to-bottom) transport.
+
+(b) **Apical dominance**: the apical bud produces auxin, which is transported basipetally through the
+stem. High auxin concentrations in the stem inhibit the growth of lateral buds. Two proposed mechanisms:
+1. **Direct inhibition**: auxin is transported into lateral buds and directly suppresses their growth
+   at high concentrations.
+2. **Indirect (nutrient diversion) hypothesis**: auxin promotes stem elongation, and the actively
+   growing stem is a stronger sink for nutrients (sugars, minerals) than the lateral buds. The lateral
+   buds are starved of nutrients and remain dormant.
+
+Current evidence supports a combination of both mechanisms, with auxin-regulated genes (including those
+encoding transcription factors like BRANCHED1) playing a key role.
+
+(c) **Apical bud removal (decapitation)**: the source of auxin is removed. Auxin levels in the stem drop,
+releasing the lateral buds from inhibition. The lateral buds begin to grow, producing branches. This
+is widely used in horticulture (pruning to promote bushier growth).
+
+(d) **IAA applied to decapitated stump**: the exogenous auxin replaces the apical bud's auxin source.
+Auxin levels in the stem are restored, and the lateral buds remain inhibited. No branching occurs.
+This experiment confirms that auxin is the signal responsible for apical dominance.
+
+</details>
+
+**Worked Example: Seed Germination and Gibberellins**
+
+A seed of barley (_Hordeum vulgare_) is germinating. The aleurone layer produces amylase in response
+to gibberellic acid ($\mathrm{GA}_3$) from the embryo. (a) Describe the signal transduction pathway
+from $\mathrm{GA}_3$ perception to amylase gene expression. (b) Calculate the rate of starch
+breakdown if the amylase produces $0.5\;\mathrm{mg}$ of maltose per minute from a starch substrate.
+How long would it take to break down $500\;\mathrm{mg}$ of starch? (c) Explain why this mechanism
+is important in brewing.
+
+<details>
+<summary>Solution</summary>
+
+(a) GA signal transduction in barley aleurone cells:
+1. $\mathrm{GA}_3$ diffuses from the embryo to the aleurone layer.
+2. $\mathrm{GA}_3$ binds to its receptor (GID1) in the aleurone cell cytoplasm.
+3. The GA-GID1 complex interacts with DELLA repressor proteins, promoting their ubiquitination by the
+   SCF ubiquitin ligase complex and subsequent degradation by the $26\mathrm{S}$ proteasome.
+4. DELLA proteins normally repress the transcription factor GAMYB. Their degradation releases GAMYB.
+5. GAMYB binds to the promoter of amylase genes (e.g., high-pI and low-pI $\alpha$-amylase) and activates
+   their transcription.
+6. Amylase mRNA is translated, and amylase is secreted into the endosperm, where it hydrolyses starch
+   to maltose (a disaccharide).
+
+(b) Rate $= 0.5\;\mathrm{mg/min}$. Time for $500\;\mathrm{mg}$: $500 / 0.5 = 1000\;\mathrm{min} = 16.7\;\mathrm{h}$.
+
+Note: in practice, amylase activity is not linear indefinitely. As the starch is depleted, the rate
+slows (substrate limitation), and product inhibition (maltose inhibits amylase) further reduces the rate.
+
+(c) In brewing:
+1. Barley grains are germinated ("malting"), during which the embryo produces GA, stimulating the
+   aleurone to produce amylase.
+2. Amylase breaks down the endosperm starch into fermentable sugars (maltose, glucose).
+3. The malted barley is dried and crushed. Hot water is added ("mashing"), reactivating the amylase.
+4. The resulting sugar solution ("wort") is fermented by yeast to produce alcohol.
+5. Understanding GA and amylase is important for optimising malting conditions (temperature, moisture,
+  duration) to maximise sugar yield.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing xylem and phloem transport direction**: xylem transports water and minerals upward
+  (unidirectional, from roots to leaves); phloem transports organic nutrients (sucrose, amino acids)
+  bidirectionally (source to sink).
+- **Stating that transpiration is "wasteful"**: while transpiration does cause water loss, it also
+  provides the driving force for water uptake and mineral transport, cools the leaf, and maintains
+  turgor pressure.
+- **Confusing phototropism and photoperiodism**: phototropism is directional growth toward light
+  (controlled by auxin); photoperiodism is the response to day/night length that controls flowering
+  (controlled by phytochrome).
+- **Assuming all plant hormones act independently**: plant hormones interact in complex ways. For example,
+  auxin and cytokinin interact to control organogenesis (high auxin:cytokinin ratio promotes roots;
+  low ratio promotes shoots).
+- **Confusing $\mathrm{P}_r$ and $\mathrm{P}_{fr}$**: $\mathrm{P}_r$ (red-absorbing) is the inactive
+  form; $\mathrm{P}_{fr}$ (far-red-absorbing) is the biologically active form. Red light converts
+  $\mathrm{P}_r$ to $\mathrm{P}_{fr}$; far-red light converts $\mathrm{P}_{fr}$ back to $\mathrm{P}_r$.
+- **Forgetting that transpiration rate depends on the vapour pressure deficit**, not just temperature:
+  humidity is equally important. High humidity (low vapour pressure deficit) reduces transpiration even
+  at high temperatures.
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 13: Extended Response -- Xylem Structure and Water Transport</summary>
+
+Describe the structure of xylem vessels and explain how their structure is adapted for long-distance
+water transport. Include: (a) the role of lignin, (b) the importance of vessel diameter, (c) the
+formation of bordered pits, (d) the role of capillary action, and (e) why the cohesion-tension theory
+is the accepted explanation for water movement in plants.
+
+</details>
+
+<details>
+<summary>Answer 13</summary>
+
+(a) **Lignin**: xylem vessels are heavily lignified (impregnated with lignin, a complex polymer of
+phenolic compounds). Lignin provides:
+- Mechanical strength and rigidity, preventing collapse of the vessel under the large negative tension
+  (up to $-2\;\mathrm{MPa}$) generated by transpiration pull.
+- Waterproofing, making the vessel walls impermeable to water (so water moves through the lumen, not
+  the walls).
+- Protection against pathogens and decay (lignin is resistant to enzymatic degradation).
+
+(b) **Vessel diameter**: wider vessels offer less resistance to flow (Poiseuille's law: flow rate is
+proportional to $r^4$). However, wider vessels are more vulnerable to cavitation (air bubble formation)
+and collapse. Plants balance efficiency (wide vessels) and safety (narrow vessels, tracheids). Vessels
+in tropical vines can be $>500\;\mathrm{\mu m}$ wide; in cold climates, vessels are narrower to reduce
+freezing-induced cavitation.
+
+(c) **Bordered pits**: thin areas in the vessel wall where lignification is reduced. They allow lateral
+water movement between adjacent vessels. The pit membrane (a modified primary cell wall) is porous but
+strong. If an air bubble (embolism) enters one vessel, the pit membrane prevents the air from spreading
+to adjacent vessels, containing the damage. This is called **air-seeding** prevention.
+
+(d) **Capillary action**: the narrow diameter of xylem vessels and tracheids creates a meniscus at the
+air-water interface. Adhesion of water to the hydrophilic vessel walls and cohesion between water
+molecules generates a capillary force that can raise water by approximately $0.5$--$1\;\mathrm{m}$
+(depending on vessel diameter). While capillary action contributes to water rise in small plants,
+it is insufficient to explain water transport in tall trees ($>10\;\mathrm{m}$). The main driving force
+is transpiration pull.
+
+(e) **Cohesion-tension theory** (Dixon and Joly, 1894):
+1. Water evaporates from mesophyll cell walls in the leaf (transpiration), creating a negative water
+   potential at the leaf surface.
+2. This negative potential pulls water from the xylem, generating tension (negative pressure) in the
+   water column.
+3. Water molecules are held together by hydrogen bonds (cohesion) and adhere to the hydrophilic xylem
+   walls (adhesion), transmitting the tension down the entire water column from leaf to root.
+4. Water enters the roots from the soil by osmosis (driven by the lower water potential in the root xylem).
+5. The result is a continuous column of water under tension, pulled upward by transpiration.
+
+Evidence: xylem sap is under negative pressure (measured with pressure chambers); cutting a stem causes
+air to be drawn in (demonstrating tension); the system can transport water to the top of the tallest
+trees ($>100\;\mathrm{m}$).
+
+</details>
+
+<details>
+<summary>Problem 14: Data Analysis -- Mineral Deficiency Symptoms</summary>
+
+A hydroponics experiment grows tomato plants in nutrient solutions lacking specific mineral ions.
+The following symptoms are observed:
+
+| Missing ion | Symptom |
+|------------|---------|
+| Nitrogen | Yellowing of older leaves, stunted growth |
+| Magnesium | Interveinal chlorosis (yellowing between veins) in older leaves |
+| Iron | Interveinal chlorosis in young leaves |
+| Calcium | Deformed, necrotic growing tips; blossom end rot of fruit |
+| Phosphorus | Dark green leaves with purple pigmentation; poor root growth |
+
+(a) Explain the biochemical role of each ion that accounts for the observed symptom. (b) Explain
+why nitrogen and magnesium deficiency symptoms appear in older leaves first, while iron deficiency
+appears in younger leaves first. (c) A plant shows both interveinal chlorosis and necrotic leaf tips.
+Suggest which two ions might be deficient and explain how you would confirm this.
+
+</details>
+
+<details>
+<summary>Answer 14</summary>
+
+(a) **Nitrogen**: nitrogen is a component of amino acids, proteins, nucleotides, and chlorophyll.
+Deficiency causes reduced chlorophyll production (chlorosis), reduced protein synthesis (stunted growth),
+and the plant mobilises nitrogen from older leaves (where it has been incorporated into proteins that
+are broken down) and transports it to younger leaves. Hence older leaves yellow first.
+
+**Magnesium**: magnesium is the central atom of the chlorophyll molecule (essential for chlorophyll
+structure and function). Deficiency reduces chlorophyll production, causing chlorosis. Magnesium is
+mobile in the plant and is redistributed from older to younger leaves.
+
+**Iron**: iron is required for chlorophyll synthesis (as a cofactor for enzymes in the chlorophyll
+biosynthetic pathway), though it is not part of the chlorophyll molecule itself. Iron is immobile in
+the plant (it precipitates as insoluble compounds in older tissues and cannot be easily remobilised).
+New leaves develop chlorosis because they cannot obtain iron from older leaves.
+
+**Calcium**: calcium is a component of the middle lamella (calcium pectate, which cements cell walls
+together). It is also a signalling ion (second messenger). Calcium is immobile in the phloem (it
+cannot be remobilised from older tissues). Growing tips and young leaves are affected first because
+they cannot receive calcium from older parts. Blossom end rot results from insufficient calcium
+delivery to the fruit.
+
+**Phosphorus**: phosphorus is a component of ATP, nucleic acids (DNA, RNA), and phospholipids
+(cell membranes). Deficiency causes poor root growth (low ATP for active transport), dark green
+leaves (accumulation of chlorophyll relative to growth), and anthocyanin (purple pigment) accumulation
+(a stress response).
+
+(b) **Mobile nutrients** (N, P, K, Mg) can be remobilised from older leaves and transported to growing
+regions via the phloem. Deficiency symptoms therefore appear first in older leaves.
+
+**Immobile nutrients** (Ca, Fe, B, Zn, Mn) cannot be remobilised. Once deposited in older tissues,
+they remain there. Deficiency symptoms appear first in younger leaves and growing tips, which receive
+insufficient supply from the roots.
+
+(c) The combination of interveinal chlorosis and necrotic leaf tips suggests:
+- **Interveinal chlorosis**: magnesium (older leaves) or iron (younger leaves) deficiency.
+- **Necrotic tips**: potassium deficiency (marginal necrosis is characteristic) or calcium deficiency
+  (growing tip necrosis).
+
+To confirm: perform tissue analysis (measure ion concentrations in the affected and unaffected leaves)
+and compare to known deficiency thresholds. Alternatively, add back suspected missing ions one at a time
+to the hydroponic solution and observe symptom resolution.
+
+</details>
+
+<details>
+<summary>Problem 15: Extended Response -- Plant Responses to Abiotic Stress</summary>
+
+Describe the adaptations of plants to three abiotic stresses: (a) water stress (drought), (b) salinity,
+and (c) extreme temperatures. For each stress, describe the physiological and biochemical adaptations,
+including the role of specific hormones and osmoprotectants.
+
+</details>
+
+<details>
+<summary>Answer 15</summary>
+
+(a) **Water stress (drought)**:
+- **Stomatal closure**: ABA (abscisic acid) is produced in roots (in response to low soil water potential)
+  and leaves (in response to low turgor). ABA binds to receptors on guard cells, causing:
+  - Efflux of $\mathrm{K}^+$ and $\mathrm{Cl}^-$ from guard cells (through ion channels).
+  - Loss of water by osmosis from guard cells.
+  - Guard cells become flaccid, closing the stomatal pore.
+  This reduces transpiration and water loss but also reduces $\mathrm{CO}_2$ uptake and photosynthesis.
+- **Root-to-shoot ratio increase**: drought stimulates root growth over shoot growth, improving water
+  uptake capacity.
+- **Osmotic adjustment**: accumulation of compatible solutes (proline, glycine betaine, trehalose,
+  soluble sugars) that lower the osmotic potential of cells, maintaining water uptake and turgor
+  without interfering with enzyme function.
+- **Leaf adaptations**: smaller leaves, thicker cuticle, sunken stomata, leaf rolling (reduces
+  exposed surface area), leaf abscission (in severe drought).
+
+(b) **Salinity**:
+- **Problem**: high $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ concentrations in soil lower the water
+  potential, making water uptake difficult (physiological drought). $\mathrm{Na}^+$ is also toxic to
+  enzymes at high concentrations.
+- **Ion exclusion**: roots actively exclude $\mathrm{Na}^+$ by the SOS1 $\mathrm{Na}^+/H^+$ antiporter
+  on the plasma membrane, pumping $\mathrm{Na}^+$ out of root cells.
+- **Ion compartmentalisation**: $\mathrm{Na}^+$ is sequestered in vacuoles by the tonoplast
+  $\mathrm{Na}^+/H^+$ antiporter (NHX), keeping it away from cytoplasmic enzymes.
+- **Salt glands**: some halophytes (salt-tolerant plants) have specialised salt glands that excrete
+  excess salt onto the leaf surface, where it crystallises.
+- **Compatible solutes**: accumulation of proline, glycine betaine, and polyols for osmotic adjustment.
+- **Morphological adaptations**: succulence (water storage in fleshy leaves), reduced leaf area.
+
+(c) **Extreme temperatures**:
+- **Heat stress**:
+  - **Heat shock proteins (HSPs)**: produced in response to rapid temperature increase. HSPs act as
+    molecular chaperones, preventing protein denaturation and assisting in refolding damaged proteins.
+  - **Membrane fluidity**: membranes become too fluid at high temperatures. Plants adjust lipid
+    composition (increase saturated fatty acids) to maintain optimal membrane fluidity.
+  - **Evaporative cooling**: transpiration cools the leaf (approximately $2^\circ\mathrm{C}$ below
+    air temperature).
+- **Cold stress**:
+  - **Membrane fluidity**: membranes become too rigid at low temperatures. Plants increase the
+    proportion of unsaturated fatty acids (more double bonds, creating kinks) to maintain fluidity.
+  - **Antifreeze proteins**: some plants produce proteins that inhibit ice crystal growth.
+  - **Supercooling**: some cells can remain liquid below $0^\circ\mathrm{C}$ by accumulating solutes
+    that depress the freezing point.
+  - **Cold acclimation (hardening)**: exposure to gradually decreasing temperatures triggers
+    changes in gene expression (via CBF/DREB transcription factors), increasing tolerance to
+    subsequent freezing. This involves accumulation of soluble sugars, proline, and antifreeze
+    proteins.
+  - **ABA**: involved in both cold and drought responses, promoting stomatal closure and
+    stress-responsive gene expression.
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **Cell membrane and transport**: Review [./cell-biology](./cell-biology) for membrane structure, osmosis, and active transport.
+- **Enzymes and protein structure**: Review [./molecular-biology](./molecular-biology) for enzyme kinetics and protein folding.
+- **Photosynthesis and light reactions**: Review [./metabolism-cell-biology](./metabolism-cell-biology) for light absorption, electron transport, and the Calvin cycle.
+- **Genetics and gene expression**: Review [./genetics-advanced](./genetics-advanced) for transcription factors and gene regulation in plant development.
+- **Ecology and biomes**: Review [./ecology](./ecology) for plant adaptations to different biomes and ecosystems.
+
+---
+
+## Supplementary: Plant Hormones in Detail (HL Extension)
+
+### Overview of Plant Hormones (Phytohormones)
+
+Plant hormones are signalling molecules produced in small quantities that regulate growth, development,
+and responses to environmental stimuli. Unlike animal hormones, they are not produced in specialised
+glands; instead, they are synthesised in various tissues and can act locally or be transported to
+distant sites.
+
+### Auxin (IAA -- Indole-3-Acetic Acid)
+
+**Sites of synthesis**: shoot apical meristem, young leaves, developing seeds.
+
+**Transport**: polar (basipetal) transport via PIN efflux carriers. Auxin moves from the shoot apex
+toward the base. This directional transport is essential for its role in tropisms and apical dominance.
+
+**Functions**:
+- **Cell elongation**: auxin stimulates cell elongation in the shoot by activating proton pumps
+  ($\mathrm{H}^+$-ATPases) on the plasma membrane. The resulting acidification of the cell wall
+  activates expansins (proteins that loosen cross-links between cellulose microfibrils), allowing
+  the wall to stretch under turgor pressure (the **acid growth hypothesis**).
+- **Apical dominance**: auxin produced by the apical bud suppresses lateral bud growth (see worked
+  examples above).
+- **Root initiation**: auxin promotes the formation of lateral roots and adventitious roots. This is
+  used commercially in rooting powders.
+- **Fruit development**: auxin promotes fruit set (prevents fruit abscission after fertilisation).
+  Synthetic auxins (e.g., 2,4-D) are used as herbicides (selective for broadleaf plants because
+  they are more sensitive to auxin than grasses).
+- **Tropisms**: differential auxin distribution causes bending toward (phototropism) or away from
+  (gravitropism) stimuli.
+
+**Phototropism mechanism**: light is perceived by phototropins (blue-light receptors) on the shoot
+tip. Auxin is redistributed to the shaded side of the shoot. Cells on the shaded side elongate more
+than cells on the lit side, causing the shoot to bend toward light.
+
+### Gibberellins (GAs)
+
+**Sites of synthesis**: young leaves, roots, developing seeds.
+
+**Transport**: not polar; moves through the phloem and xylem.
+
+**Functions**:
+- **Stem elongation**: gibberellins stimulate cell division and elongation in the internodes.
+  Application of GA to dwarf varieties (e.g., dwarf peas, dwarf maize) causes them to grow to
+  normal height (dwarfism in these varieties is caused by GA deficiency or insensitivity).
+- **Seed germination**: GA produced by the embryo diffuses to the aleurone layer, stimulating
+  amylase production (see worked example above). Amylase breaks down starch in the endosperm,
+  providing sugars for the growing embryo.
+- **Bolting**: GA promotes flowering in long-day plants and rosette plants (biennials that flower
+  in the second year after exposure to cold, vernalisation, followed by long days).
+- **Fruit development**: GA promotes fruit set in some species (e.g., grapes, where GA application
+  produces larger, seedless fruit).
+
+### Cytokinins
+
+**Sites of synthesis**: root apical meristem (primary site), also shoot tips.
+
+**Transport**: moves through the xylem (upward from roots to shoots).
+
+**Functions**:
+- **Cell division**: cytokinins promote cytokinesis (cell division), working in conjunction with
+  auxin. The auxin:cytokinin ratio determines organogenesis in tissue culture:
+  - High auxin : low cytokinin $\to$ roots
+  - Low auxin : high cytokinin $\to$ shoots
+  - Balanced ratio $\to$ callus (undifferentiated tissue)
+- **Delay senescence**: cytokinins slow leaf ageing (senescence) by maintaining protein synthesis
+  and chlorophyll content. This is used commercially (cytokinin sprays to extend shelf life of
+  cut flowers and vegetables).
+- **Apical bud growth**: cytokinins counteract auxin's inhibition of lateral buds, promoting
+  lateral bud outgrowth.
+- **Shoot apical dominance**: the balance between auxin (from the shoot apex) and cytokinins
+  (from the roots) determines the degree of apical dominance.
+
+### Abscisic Acid (ABA)
+
+**Site of synthesis**: leaves, stems, root caps (especially in response to stress).
+
+**Functions**:
+- **Stomatal closure**: ABA is the primary hormone responsible for closing stomata during water
+  stress. It binds to receptors on guard cell membranes, triggering $\mathrm{K}^+$ efflux,
+  loss of turgor, and stomatal closure.
+- **Seed dormancy**: ABA maintains seed dormancy by inhibiting germination. High ABA levels
+  during seed development prevent premature germination. Dormancy is broken when ABA levels
+  decline (e.g., after stratification -- cold treatment -- or imbibition).
+- **Stress responses**: ABA mediates responses to drought, salinity, and cold stress by
+  activating stress-responsive genes (via AREB/ABF transcription factors).
+
+### Ethylene ($\mathrm{C}_2\mathrm{H}_4$)
+
+**Site of synthesis**: ripening fruits, senescing tissues, stressed tissues.
+
+**Unique property**: ethylene is a gas, so it can diffuse between cells and between plants
+(acting as a signalling molecule between individuals).
+
+**Functions**:
+- **Fruit ripening**: ethylene triggers the conversion of starch to sugars, cell wall breakdown
+  (softening), chlorophyll degradation (colour change from green to red/yellow), and volatile
+  production (aroma). This is used commercially: unripe fruit is shipped and then exposed to
+  ethylene to induce ripening on arrival ("climacteric" fruits like bananas, tomatoes, apples).
+- **Leaf abscission**: ethylene promotes the breakdown of the abscission zone (cell wall degradation
+  by cellulase and pectinase), causing leaves, flowers, and fruit to fall.
+- **Triple response**: in dark-grown seedlings, ethylene causes: inhibition of stem elongation,
+  thickening of the stem, and horizontal growth (apical hook). This is a diagnostic test for
+  ethylene sensitivity.
+- **Senescence**: ethylene accelerates ageing in leaves and flowers.
+
+### Interactions Between Hormones
+
+Plant hormones rarely act in isolation; their effects are modulated by interactions:
+- **Auxin and cytokinin**: antagonistic in apical dominance (auxin inhibits, cytokinin promotes
+  lateral bud growth); synergistic in cell division (both required).
+- **Auxin and ethylene**: auxin stimulates ethylene production (auxin upregulates ACC synthase,
+  the rate-limiting enzyme in ethylene biosynthesis). High auxin in root tips causes ethylene
+  production, which inhibits root elongation.
+- **GA and ABA**: antagonistic in seed germination (GA promotes, ABA inhibits). The GA:ABA ratio
+  determines whether a seed germinates or remains dormant.
+- **Cytokinin and ABA**: cytokinin delays senescence; ABA promotes stress responses that may
+  lead to senescence.
+
+### Worked Example: Hormone Interaction in Apical Dominance
+
+A plant is decapitated (apical bud removed). In one treatment, cytokinin is applied to the cut
+surface; in another, auxin is applied. In a third, both are applied. (a) Predict the effect on
+lateral bud growth in each treatment. (b) Explain the mechanism.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Decapitation only**: lateral buds grow (apical dominance is released).
+**Decapitation + cytokinin**: lateral buds grow more vigorously than decapitation alone (cytokinin
+promotes lateral bud outgrowth).
+**Decapitation + auxin**: lateral buds remain inhibited (auxin restores apical dominance).
+**Decapitation + auxin + cytokinin**: intermediate effect; the outcome depends on the relative
+concentrations (cytokinin partially overrides auxin's inhibitory effect).
+
+(b) **Mechanism**: the apical bud is the primary source of auxin, which is transported basipetally
+through the stem. High auxin in the stem inhibits lateral bud growth (directly, by suppressing
+cell division in lateral bud meristems, and indirectly, by maintaining the stem as a strong nutrient
+sink). Cytokinin, produced primarily in the roots and transported upward, promotes lateral bud growth
+by stimulating cell division. The balance between auxin (inhibitory) and cytokinin (promotory)
+determines whether lateral buds remain dormant or grow. Removing the apical bud eliminates the auxin
+source; applying auxin restores it; applying cytokinin provides an additional growth stimulus.
+
+</details>
+

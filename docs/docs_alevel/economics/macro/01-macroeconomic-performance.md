@@ -838,3 +838,451 @@ danger
 - **Misinterpreting the Phillips curve as a stable trade-off:** The short-run Phillips curve shifts when inflation expectations change. A government cannot permanently exploit the inflation-unemployment trade-off -- attempting to do so only produces accelerating inflation in the long run.
 
 :::
+
+## 8. Advanced Macroeconomic Analysis
+
+### 8.1 GDP Calculations: Comprehensive Worked Examples
+
+**Example: Constructing GDP from expenditure data.**
+
+An economy has the following components (GBP billions):
+
+| Component | Value |
+|-----------|-------|
+| Household consumption (C) | 1,200 |
+| Gross fixed capital formation (I) | 350 |
+| Government consumption (G) | 400 |
+| Exports (X) | 500 |
+| Imports (M) | 550 |
+
+**GDP calculation:**
+$$\text{GDP} = C + I + G + (X - M) = 1200 + 350 + 400 + (500 - 550) = 1900$$
+
+Current account balance $= X - M = 500 - 550 = -50$ (deficit).
+
+**Real GDP adjustment:**
+If the GDP deflator is 110 (base year = 100):
+$$\text{Real GDP} = \frac{1900}{110} \times 100 = 1727.27$$
+
+GDP growth rate from previous year (Real GDP was 1650):
+$$g = \frac{1727.27 - 1650}{1650} \times 100 = 4.68\%$$
+
+**Per capita adjustment:**
+If population = 68 million:
+$$\text{GDP per capita} = \frac{1900}{68} = \pounds 27{,}941$$
+$$\text{Real GDP per capita} = \frac{1727.27}{68} = \pounds 25{,}395$$
+
+### 8.2 Inflation Calculations with Weighted Index
+
+**Example: CPI construction from basket data.**
+
+| Item | Base quantity | Base price (2019) | Current price (2024) | Weight |
+|------|--------------|---------------------|-----------------|--------|
+| Bread | 10 units | GBP 1.00 | GBP 1.30 | 3% |
+| Petrol | 100 litres | GBP 1.20 | GBP 1.55 | 5% |
+| Housing | 1 unit | GBP 1,000/mo | GBP 1,150/mo | 30% |
+| Clothing | 5 items | GBP 30/item | GBP 35/item | 4% |
+| Entertainment | 20 units | GBP 10/unit | GBP 12/unit | 8% |
+| Transport | 50 trips | GBP 5/trip | GBP 5/trip | 10% |
+| Other | 40% | Various | +4% on average | 40% |
+
+**Laspeyres CPI calculation:**
+
+Cost of base basket at current prices:
+$$\text{Basket cost}_{2024} = 10(1.30) + 100(1.55) + 1(1150) + 5(35) + 20(12) + 50(5) + \text{Other}(1.04 \times \text{Other}_{2019})$$
+$$= 13 + 155 + 1150 + 175 + 240 + 250 + \text{Other}$$
+
+The "Other" category at base prices cost, say, GBP 500. At current prices: $500 \times 1.04 = 520$.
+$$\text{Total}_{2024} = 13 + 155 + 1150 + 175 + 240 + 250 + 520 = 2503$$
+
+Cost of base basket at base prices:
+$$\text{Total}_{2019} = 10(1.00) + 100(1.20) + 1(1000) + 5(30) + 20(10) + 50(5) + 500 = 10 + 120 + 1000 + 150 + 200 + 250 + 500 = 2230$$
+
+$$\text{CPI}_{2024} = \frac{2503}{2230} \times 100 = 112.24$$
+
+$$\text{Inflation rate} = \frac{112.24 - 100}{100} \times 100 = 12.24\%$$
+
+### 8.3 Unemployment and Okun's Law: Detailed Application
+
+**Example.** Using Okun's Law with the Phillips curve.
+
+Suppose the economy is at full employment ($u^* = 5\%$). The government pursues expansionary policy that reduces unemployment to 3%.
+
+**Okun's Law:**
+$$\frac{Y - Y^*}{Y^*} = -\beta(u - u^*) = -2(0.03 - 0.05) = -2(-0.02) = 0.04$$
+
+Output rises 4% above potential.
+
+**Phillips curve (short-run):**
+$$\pi = \pi^e - \beta(u - u^*) = 3 - 2(0.03 - 0.05) = 3 + 0.04 = 7\%$$
+
+**Dynamic adjustment:**
+- Year 1: $u = 3\%$, $\pi = 7\%$. Workers' expectations start adjusting: $\pi^e$ rises towards 7%.
+- Year 2: $u = 5\%$ (policy wears off), $\pi^e = 5\%$, $\pi = 5\%$.
+- Year 3: $u = 5\%$, $\pi^e = 5\%$, $\pi = 5\%$. Long-run equilibrium restored.
+
+The temporary reduction in unemployment came at the cost of temporarily higher inflation (7%), but in the long run, both return to their natural rates. The attempt to exploit the Phillips curve trade-off was self-defeating.
+
+### 8.4 Balance of Payments: Detailed Calculation
+
+**Example.** Constructing the current account from data.
+
+| Component | GBP billions |
+|-----------|-------------|
+| Exports of goods | 350 |
+| Imports of goods | 470 |
+| Exports of services | 280 |
+| Imports of services | 180 |
+| Primary income: received | 180 |
+| Primary income: paid | 220 |
+| Secondary income: received | 15 |
+| Secondary income: paid | 40 |
+
+**Current account calculation:**
+- Trade in goods: $350 - 470 = -120$
+- Trade in services: $280 - 180 = +100$
+- Primary income: $180 - 220 = -40$
+- Secondary income: $15 - 40 = -25$
+- **Current account: $-120 + 100 - 40 - 25 = -\text{GBP } 85\text{bn}$ (deficit)**
+
+**As a percentage of GDP:** If GDP = GBP 2,200bn:
+$$\text{CA deficit} = \frac{85}{2200} \times 100 = 3.86\%$$
+
+**Interpretation:** The UK has a persistent current account deficit of approximately 4% of GDP, reflecting the structural trade deficit in goods partly offset by the surplus in services. The primary income deficit reflects net payments to foreign investors.
+
+### 8.5 The Phillips Curve: Numerical Analysis
+
+**Example: Adaptive expectations and accelerating inflation.**
+
+Suppose the Phillips curve is $\pi_t = \pi_t^e - 0.5(u - u^*)$ where $u^* = 5\%$ and $\pi^e_t = \pi_{t-1}$ (adaptive expectations). Initial inflation = 3%.
+
+The government keeps unemployment at 3% indefinitely.
+
+| Year | $u$ | $\pi^e$ | $\pi$ |
+|------|-----|---------|------|
+| 0 | 5% | 3.0% | 3.0% |
+| 1 | 3% | 3.0% | 4.0% |
+| 2 | 3% | 4.0% | 5.0% |
+| 3 | 3% | 5.0% | 6.0% |
+| 4 | 3% | 6.0% | 7.0% |
+| 5 | 3% | 7.0% | 8.0% |
+
+Inflation accelerates by 1 percentage point per year indefinitely. This is **accelerating inflation** -- the defining characteristic of the expectations-augmented Phillips curve when unemployment is held below the natural rate. Eventually, the rising inflation forces the government to abandon the expansionary policy, triggering a painful disinflation.
+
+## 9. Exam-Style Questions with Full Mark Schemes
+
+**Question 1 (25 marks).** "The UK's current account deficit is a serious problem that requires urgent correction." Evaluate this statement.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Arguments that the deficit is serious (10 marks):**
+- Persistent deficit since 1984: suggests a structural problem, not a cyclical one.
+- Financing: the deficit must be financed by capital inflows (FDI, portfolio investment). If confidence wanes, the pound depreciates sharply, causing imported inflation and a cost-of-living crisis.
+- Debt accumulation: sustained deficits increase the UK's net international investment position (NIIP), meaning more income flows out in future.
+- Current account deficit = 3.9% of GDP (2023). This is above the Maastricht Treaty criterion of 3%.
+- Post-Brexit concerns: leaving the EU single market introduced trade frictions, potentially worsening the goods deficit.
+
+**Arguments that the deficit is not a problem (10 marks):**
+- The UK is a net debtor because it is a service economy with financial sector strength. The services surplus partially offsets the goods deficit.
+- Capital inflows reflect confidence in the UK economy: foreign investors choose to invest in UK assets, suggesting they expect positive returns.
+- The deficit finances productive investment: much of the UK's import bill consists of capital goods (machinery, components for export-oriented industries).
+- The deficit has been persistent for 40 years without triggering a crisis, suggesting it is sustainable.
+- Comparisons: the US also runs persistent current account deficits, and the US dollar is the world's reserve currency. Deficits are not inherently problematic.
+
+**Evaluation (5 marks):**
+- The deficit reflects both structural features (service-based economy, financial centre) and potential vulnerabilities (dependence on foreign capital).
+- The key question is whether capital inflows are stable or "hot money" that could reverse quickly. Portfolio flows are more volatile than FDI.
+- The deficit is most problematic when the exchange rate is perceived as overvalued (making UK exports uncompetitive).
+- Policy: supply-side policies to improve competitiveness, rather than demand contraction (which would reduce imports by reducing income).
+- Conclusion: the deficit requires monitoring but not panic. The UK's position as a financial centre and service exporter provides a structural basis for the deficit, but vulnerability to shifts in investor confidence remains.
+</details>
+
+**Question 2 (12 marks).** Explain why deflation can be more damaging than moderate inflation. In your answer, refer to the concepts of debt deflation, the zero lower bound, and the paradox of thrift.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Debt deflation (4 marks):**
+When prices fall, the real value of debt rises. Borrowers' real debt burden increases, leading to higher defaults and financial instability (Fisher, 1933). Defaulting firms cut investment and lay off workers, reducing AD further, causing more deflation -- a vicious cycle. This was the experience of Japan from the 1990s to the present.
+
+**Zero lower bound (4 marks):**
+Central banks set nominal interest rates to stimulate the economy during recessions. If interest rates are already near zero, they cannot be cut further (the ZLB). This constrains monetary policy and may necessitate unconventional tools (QE, negative rates). The ZLB means the self-correcting mechanism is impaired.
+
+**Paradox of thrift (4 marks):**
+When prices fall, the real value of money rises. Households defer consumption (waiting for lower prices), reducing AD further. This reduces output, causing more deflation. The individual rational choice (save more during deflation) leads to a collectively irrational outcome (everyone is worse off because the economy contracts).
+
+**Japan's Lost Decades illustrate all three:**
+- Persistent deflation since the 1990s despite near-zero interest rates.
+- High public debt and a declining population have made the ZLB binding for decades.
+- Consumer spending has been weak despite low interest rates, partly due to deflationary expectations.
+</details>
+
+## 10. Extended Worked Examples
+
+### 10.1 Real vs Nominal GDP: A Decade of Growth
+
+**Example.** A country's nominal GDP and GDP deflator data over 10 years:
+
+| Year | Nominal GDP (bn) | GDP Deflator | Real GDP (bn) | Real Growth |
+|:---:|:---:|:---:|:---:|:---:|
+| 2015 | 1,800 | 100.0 | 1,800.0 | -- |
+| 2016 | 1,850 | 102.0 | 1,813.7 | 0.76% |
+| 2017 | 1,920 | 104.5 | 1,837.3 | 1.30% |
+| 2018 | 1,960 | 106.0 | 1,849.1 | 0.64% |
+| 2019 | 2,000 | 108.0 | 1,851.9 | 0.15% |
+| 2020 | 1,880 | 109.5 | 1,716.9 | -7.29% |
+| 2021 | 2,050 | 112.0 | 1,830.4 | 6.61% |
+| 2022 | 2,200 | 117.5 | 1,872.3 | 2.29% |
+| 2023 | 2,280 | 121.0 | 1,884.3 | 0.64% |
+| 2024 | 2,350 | 123.0 | 1,910.6 | 1.39% |
+
+**Calculations (Year 2016 as example):**
+Real GDP $= \frac{1850}{102.0} \times 100 = 1813.7$.
+Growth $= \frac{1813.7 - 1800.0}{1800.0} \times 100 = 0.76\%$.
+
+**Analysis:**
+- The recession of 2020 (COVID-19) caused a 7.29% decline in real GDP -- the largest annual decline since the Second World War.
+- The recovery in 2021 (6.61%) was strong but did not fully offset the 2020 loss (cumulative loss over 2 years: $1 - 0.9924 \times 0.9871 \times 0.9985 \times 0.9271 \times 1.0661 = 1 - 0.9497 = 5.03\%$).
+- By 2024, real GDP was only 6.1% above the 2015 level (average annual growth of 0.59%). This is weak compared to the post-WWII average of 2.5%.
+- Inflation was moderate until 2022 (deflator rose to 117.5 from 108.0 in 2019, representing 8.8% cumulative inflation over 3 years).
+
+**Real GDP per capita (population = 67 million, growing 0.5% per year):**
+
+| Year | Real GDP per capita | Growth |
+|:---:|:---:|:---:|
+| 2015 | 26,866 | -- |
+| 2020 | 24,713 | -1.66%/yr |
+| 2024 | 27,053 | +0.89%/yr |
+
+Real GDP per capita growth has been even weaker than real GDP growth because population growth dilutes per capita figures. This is the most relevant measure of living standards.
+
+### 10.2 Unemployment: Comprehensive Decomposition
+
+**Example.** A country has a working-age population of 55 million. Of these, 2 million are not in the labour force (students, retirees, disabled, discouraged workers). The labour force is 53 million. Employment is 49 million.
+
+**Key measures:**
+- Unemployment rate: $(53 - 49)/53 = 7.55\%$.
+- Employment rate: $49/55 = 89.1\%$.
+- Inactivity rate: $2/55 = 3.6\%$.
+- Labour force participation rate: $53/55 = 96.4\%$.
+
+**Decomposition of unemployment (4 million unemployed):**
+- Frictional: 1.2 million (30%) -- people between jobs.
+- Structural: 2.0 million (50%) -- skills mismatch, geographical immobility.
+- Cyclical: 0.8 million (20%) -- due to the output gap.
+
+**Natural rate of unemployment:** $u^* = \text{frictional} + \text{structural} = 1.2 + 2.0 = 3.2$ million.
+$u^* = 3.2/53 = 6.04\%$.
+
+**Output gap (Okun's Law):** $g = -\beta(u - u^*) = -2(7.55 - 6.04) = -2(1.51) = -3.02\%$.
+
+If potential output is GBP 2,200bn, the output gap is $0.0302 \times 2200 = \text{GBP } 66.4\text{bn}$.
+
+**Cost of unemployment:**
+- Lost output: GBP 66.4bn per year.
+- Fiscal cost: unemployment benefits (4 million x GBP 6,000/year) = GBP 24bn. Lost tax revenue (4 million x GBP 15,000 average tax) = GBP 60bn. Total fiscal cost: GBP 84bn.
+- Social cost: mental health deterioration, family breakdown, crime. Estimated at 20-50% of the fiscal cost.
+- Hysteresis risk: if cyclical unemployment becomes structural (skills atrophy, discouragement), the natural rate rises, permanently reducing potential output.
+
+**Policy implications:**
+- Cyclical unemployment (0.8 million): addressed by expansionary fiscal and monetary policy.
+- Structural unemployment (2.0 million): addressed by retraining programmes, education reform, regional policy, and labour market flexibility.
+- Frictional unemployment (1.2 million): can be reduced by improving job matching (online job platforms, better careers advice) but cannot be eliminated entirely (some friction is efficient).
+
+### 10.3 Inflation: Costs and Distributional Effects
+
+**Example.** Inflation is 8% in year 1 and 4% in year 2. Three individuals have different financial situations:
+
+| | Person A (saver) | Person B (borrower) | Person C (wage earner) |
+|---|---|---|---|
+| Cash savings | GBP 100,000 | 0 | GBP 10,000 |
+| Mortgage | 0 | GBP 200,000 | GBP 150,000 |
+| Salary | Retired (fixed pension) | Self-employed | Employed |
+| Salary growth | 0% | 10% | 3% |
+
+**Year 1 (8% inflation):**
+- Person A: real value of savings falls by 8%. Loss $= 8,000$. Fixed pension buys 8% less.
+- Person B: real value of mortgage debt falls by 8%. Gain $= 16,000$. Income rises 10%, so real income rises 2%.
+- Person C: real value of mortgage debt falls by 8%. Gain $= 12,000$. But salary rises only 3%, so real income falls 5%. Net: gain on mortgage partially offset by falling real wages.
+
+**Year 2 (4% inflation):**
+- Person A: real value of savings falls by 4%. Cumulative loss $= 8,000 + 3,680 = 11,680$ (compounding).
+- Person B: real value of mortgage debt falls by 4%. Cumulative gain $= 16,000 + 7,680 = 23,680$.
+- Person C: salary rises 3%, real income falls 1%. Mortgage gain: $12,000 + 5,760 = 17,760$. Net gain: 17,760 - loss from real wage decline.
+
+**Distributional conclusion:** inflation redistributes from savers (Person A) to borrowers (Persons B and C). This is why retired people (who are typically net savers with fixed incomes) are particularly vulnerable to inflation. Young people with mortgages benefit from unexpected inflation (they borrowed at fixed nominal rates but repay in depreciated currency).
+
+**Shoe-leather costs:** At 8% inflation, the opportunity cost of holding cash is high. If Person A reduces cash holdings from 10,000 to 5,000 and makes 2 extra trips to the bank per month, the time cost is approximately 1 hour/month. At GBP 15/hour, annual cost $= 180$. This is a deadweight loss of inflation.
+
+**Menu costs:** If a firm with 100 products changes prices 4 times per year instead of once, and each price change costs GBP 50 (admin, printing, computer systems), total menu costs $= 100 \times 4 \times 50 = 20,000$ per year. This is also a deadweight loss.
+
+### 10.4 The Balance of Payments: A Structured Analysis
+
+**Example.** The UK's balance of payments (2023, approximate figures, GBP billions):
+
+| Component | Amount |
+|---|:---:|
+| Exports of goods | 380 |
+| Imports of goods | 510 |
+| Exports of services | 420 |
+| Imports of services | 270 |
+| Primary income: received | 220 |
+| Primary income: paid | 270 |
+| Secondary income: received | 25 |
+| Secondary income: paid | 55 |
+
+**Current account calculation:**
+- Trade in goods: $380 - 510 = -130$.
+- Trade in services: $420 - 270 = +150$.
+- Primary income: $220 - 270 = -50$.
+- Secondary income: $25 - 55 = -30$.
+- Current account: $-130 + 150 - 50 - 30 = -60$.
+
+The UK has a current account deficit of GBP 60bn (approximately 2.4% of GDP).
+
+**Capital and financial account:** To finance the 60bn deficit, the UK must attract net capital inflows of 60bn. These take the form of:
+- FDI: net inflows of approximately 20bn (the UK is a major recipient of FDI, particularly in technology and financial services).
+- Portfolio investment: net inflows of approximately 30bn (foreign investors buying UK government bonds and equities).
+- Other investment: net inflows of approximately 10bn (bank lending, currency deposits).
+
+**Sustainability assessment:**
+- The deficit is financed by stable FDI (33%) and more volatile portfolio flows (50%).
+- The UK's net international investment position (NIIP) is approximately -25% of GDP, meaning the UK owes more to foreigners than foreigners owe to the UK.
+- The primary income deficit (-50bn) reflects the cost of servicing this net external debt.
+- If investor confidence wanes, portfolio outflows could trigger a sharp depreciation of sterling, causing imported inflation and a cost-of-living crisis.
+- However, the UK has never defaulted on its debt, has an independent central bank, and issues debt in its own currency -- factors that support investor confidence.
+
+**Long-term trend:** The UK has run a current account deficit in every year since 1984. The persistent deficit reflects structural factors:
+- Deindustrialisation: the UK imports more manufactured goods than it exports.
+- Services surplus: the UK exports financial, legal, and creative services, but the surplus is not large enough to offset the goods deficit.
+- Low household savings rate: the UK saves less than other major economies, requiring capital inflows to finance investment.
+
+## 11. Extended Worked Examples
+
+### 11.1 Measuring Economic Welfare: Beyond GDP
+
+**Example.** GDP has well-known limitations as a welfare measure. Construct alternative welfare indicators for two countries.
+
+**Country A and Country B:**
+
+| Indicator | Country A | Country B |
+|---|:---:|:---:|
+| GDP per capita (USD) | 50,000 | 30,000 |
+| Gini coefficient | 0.41 | 0.28 |
+| Life expectancy (years) | 78 | 82 |
+| Average working hours/week | 42 | 35 |
+| Air quality index (PM2.5) | 15 | 8 |
+| Homicide rate (per 100k) | 5.0 | 1.0 |
+| Tertiary education (%) | 45% | 55% |
+| CO2 emissions (tonnes/capita) | 15 | 6 |
+| Mental health (WHO-5 score) | 52 | 68 |
+
+**Human Development Index (HDI):**
+HDI = geometric mean of (health index, education index, income index).
+Health index = (life expectancy - 20) / (85 - 20) = (78 - 20)/65 = 0.892 (A), (82 - 20)/65 = 0.954 (B).
+Income index = $\ln(GDP/cap) - \ln(100) / \ln(75000) - \ln(100)$ = $(10.82 - 4.61) / (11.22 - 4.61) = 6.21 / 6.61 = 0.939$ (A).
+Income index (B) = $(10.31 - 4.61) / 6.61 = 5.70 / 6.61 = 0.862$.
+
+Assuming education indices of 0.85 (A) and 0.90 (B):
+HDI (A) $= (0.892 \times 0.85 \times 0.939)^{1/3} = (0.712)^{1/3} = 0.893$.
+HDI (B) $= (0.954 \times 0.90 \times 0.862)^{1/3} = (0.740)^{1/3} = 0.904$.
+
+Country B has a higher HDI despite lower GDP per capita, because it scores higher on health and education.
+
+**GDP per capita adjusted for inequality (index):**
+Using the Atkinson adjustment with $\epsilon = 1$:
+$y^* = y(1 - G)$. A: $50{,}000 \times (1 - 0.41) = 29{,}500$. B: $30{,}000 \times (1 - 0.28) = 21{,}600$.
+The inequality gap between A and B is much smaller when adjusted: 29,500 vs 21,600 (ratio 1.37) instead of 50,000 vs 30,000 (ratio 1.67).
+
+**Genuine Progress Indicator (GPI):**
+$\text{GPI} = \text{Personal consumption} + \text{Public goods} - \text{Social costs} - \text{Environmental costs}$.
+
+Country A: GPI $= 30{,}000 + 10{,}000 - 5{,}000 - 8{,}000 = 27{,}000$.
+Country B: GPI $= 18{,}000 + 12{,}000 - 2{,}000 - 3{,}000 = 25{,}000$.
+
+The GPI gap is even smaller (27,000 vs 25,000, ratio 1.08). Country A's higher GDP is partly offset by higher social costs (crime, inequality) and environmental costs (pollution, CO2).
+
+**Key insight:** GDP per capita significantly overstates the welfare gap between countries. When health, education, inequality, and environmental quality are accounted for, the gap narrows dramatically. Country B achieves 92% of Country A's GPI with only 60% of its GDP per capita.
+
+### 11.2 Index Numbers: Chain-Linking
+
+**Example.** GDP is measured in constant prices using a base year. However, using a fixed base year creates distortions over time as relative prices change. Chain-linking addresses this.
+
+**Fixed-base method (2015 = 100):**
+
+| Year | Nominal GDP | GDP Deflator | Real GDP (2015 prices) | Growth |
+|:---:|:---:|:---:|:---:|:---:|
+| 2015 | 2,000 | 100 | 2,000 | -- |
+| 2020 | 2,200 | 115 | 1,913 | -1.78%/yr |
+| 2025 | 2,600 | 130 | 2,000 | +0.89%/yr |
+
+The fixed-base method uses 2015 price weights. By 2025, these weights are 10 years old and may not reflect current spending patterns.
+
+**Chain-linking method:** Recalculates weights each year using the previous year's prices.
+
+| Year | Real GDP (chained) | Growth |
+|:---:|:---:|:---:|
+| 2015 | 2,000 | -- |
+| 2016 | 2,050 | 2.50% |
+| 2017 | 2,080 | 1.46% |
+| 2018 | 2,040 | -1.92% |
+| 2019 | 1,960 | -3.92% |
+| 2020 | 1,850 | -5.61% |
+| 2021 | 1,950 | 5.41% |
+| 2022 | 2,020 | 3.59% |
+| 2023 | 2,050 | 1.49% |
+| 2024 | 2,080 | 1.46% |
+| 2025 | 2,100 | 0.96% |
+
+**Comparison:** The chained measure shows a deeper recession in 2019-2020 (because recent price weights give more weight to sectors that contracted most, like services) and a slower recovery. The fixed-base measure understates the severity of the recession.
+
+The ONS switched to chain-linked GDP in 2003, and all current UK GDP figures use chain-linked measures. This is important for accurate growth measurement, especially when the economy undergoes structural change (e.g., deindustrialisation, the rise of the service sector).
+
+### 11.3 Composite Indicators: Construction and Limitations
+
+**Example.** Constructing a "Prosperity Index" for UK regions.
+
+**Components and weights:**
+
+| Component | Weight | Data source |
+|---|:---:|---|
+| GDP per capita | 20% | ONS |
+| Employment rate | 15% | ONS |
+| Median hourly pay | 10% | ONS |
+| Life expectancy | 10% | ONS |
+| Educational attainment | 10% | DfE |
+| Crime rate | 10% | ONS |
+| Air quality | 10% | Defra |
+| Housing affordability | 10% | ONS |
+| Broadband access | 5% | Ofcom |
+
+**Methodology:**
+1. Each component is normalised to a 0-100 scale (min-max normalisation).
+2. The normalised scores are multiplied by their weights and summed.
+
+**Example: London vs North East:**
+
+| Component | London (normalised) | North East (normalised) |
+|---|:---:|:---:|
+| GDP per capita | 95 | 40 |
+| Employment rate | 85 | 70 |
+| Median pay | 92 | 55 |
+| Life expectancy | 80 | 65 |
+| Education | 85 | 50 |
+| Crime | 45 | 60 |
+| Air quality | 30 | 65 |
+| Housing affordability | 15 | 70 |
+| Broadband | 90 | 75 |
+
+**Composite score:**
+London: $0.2(95) + 0.15(85) + 0.1(92) + 0.1(80) + 0.1(85) + 0.1(45) + 0.1(30) + 0.1(15) + 0.05(90) = 19 + 12.75 + 9.2 + 8 + 8.5 + 4.5 + 3 + 1.5 + 4.5 = 70.95$.
+
+North East: $0.2(40) + 0.15(70) + 0.1(55) + 0.1(65) + 0.1(50) + 0.1(60) + 0.1(65) + 0.1(70) + 0.05(75) = 8 + 10.5 + 5.5 + 6.5 + 5 + 6 + 6.5 + 7 + 3.75 = 58.75$.
+
+London scores 71 vs North East 59. London is stronger on economic indicators (GDP, pay, employment) but weaker on quality of life (air quality, housing affordability, crime). The North East performs better on liveability indicators.
+
+**Limitations of composite indicators:**
+1. Weight selection is subjective: different weights give different rankings.
+2. Correlation: GDP per capita and median pay are highly correlated, effectively double-weighting the same underlying factor.
+3. Normalisation method: min-max normalisation is sensitive to outliers.
+4. Missing dimensions: the index does not capture social capital, civic engagement, or cultural amenities.
+5. Aggregation: adding scores assumes they are perfectly substitutable (trading 10 points of GDP for 10 points of air quality). In reality, some dimensions may have threshold effects or complementarities.

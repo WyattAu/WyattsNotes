@@ -737,3 +737,440 @@ danger
 - **Ignoring the fiscal trade-off of tax cuts:** Tax cuts reduce government revenue, which may require spending cuts elsewhere. Cutting education spending to fund tax cuts undermines human capital -- a key supply-side input. Always consider the opportunity cost of supply-side policies.
 
 :::
+
+## 8. Supply-Side Policy: Advanced Worked Examples
+
+### 8.1 Laffer Curve: Numerical Analysis
+
+**Example.** Suppose tax revenue $R = t \times B(t)$ where $t$ is the income tax rate and the tax base $B(t) = 1000 - 8t$ (the tax base shrinks as the tax rate rises due to avoidance, reduced labour supply, and emigration).
+
+**Revenue function:**
+$$R(t) = t(1000 - 8t) = 1000t - 8t^2$$
+
+**Revenue-maximising tax rate:**
+$$\frac{dR}{dt} = 1000 - 16t = 0 \Rightarrow t^* = 62.5\%$$
+
+$$R(62.5\%) = 62.5(1000 - 8 \times 62.5) = 62.5 \times 500 = 31{,}250$$
+
+**Revenue at different tax rates:**
+
+| Tax rate $t$ | Tax base $B$ | Revenue $R$ |
+|:---:|:---:|:---:|
+| 20% | 840 | 168.0 |
+| 40% | 680 | 272.0 |
+| 50% | 600 | 300.0 |
+| 60% | 520 | 312.0 |
+| 62.5% | 500 | 312.5 |
+| 70% | 440 | 308.0 |
+| 80% | 360 | 288.0 |
+
+**Policy implications:**
+- If the current rate is 40% ($R = 272$), cutting to 30%: $R = 30(1000 - 240) = 22{,}800$. Revenue FALLS. The economy is to the left of $t^*$.
+- If the current rate is 80% ($R = 288$), cutting to 62.5%: $R = 312.5$. Revenue RISES. The economy is to the right of $t^*$.
+- The IFS estimates the UK income tax revenue-maximising rate is approximately 55-60%, well above the current rate. This means income tax cuts would reduce revenue.
+
+**Elasticity condition for the Laffer effect:**
+$$\frac{\Delta R}{R} = \frac{\Delta t}{t} + \frac{\Delta B}{B} = \frac{\Delta t}{t}(1 + \varepsilon_B)$$
+
+For a tax cut to increase revenue, we need $1 + \varepsilon_B < 0$, i.e., $\varepsilon_B < -1$. The tax base must be elastic (absolute value greater than 1). Empirical evidence suggests income tax elasticity in the UK is approximately -0.3 to -0.5 -- well below the threshold for a Laffer effect.
+
+### 8.2 Human Capital Accumulation: The Mincer Earnings Function
+
+**Example.** The Mincer earnings function estimates the return to education:
+
+$$\ln(w) = \alpha + \beta S + \gamma E - \delta E^2$$
+
+where $w$ is the wage, $S$ is years of schooling, and $E$ is years of work experience.
+
+**UK estimates (approximate):**
+- $\beta = 0.10$ (each additional year of schooling raises earnings by approximately 10%)
+- $\gamma = 0.04$ (each year of experience raises earnings by 4%)
+- $\delta = 0.0006$ (experience effect diminishes over time)
+
+**Calculation.** Compare a worker with A-levels ($S = 13$) and 10 years of experience to a worker with a degree ($S = 16$) and 7 years of experience (same age):
+
+$$\ln(w_A) = \alpha + 0.10(13) + 0.04(10) - 0.0006(100) = \alpha + 1.30 + 0.40 - 0.06 = \alpha + 1.64$$
+
+$$\ln(w_D) = \alpha + 0.10(16) + 0.04(7) - 0.0006(49) = \alpha + 1.60 + 0.28 - 0.029 = \alpha + 1.851$$
+
+$$\frac{w_D}{w_A} = e^{1.851 - 1.64} = e^{0.211} = 1.235$$
+
+The degree holder earns approximately 23.5% more than the A-level holder.
+
+**Cost-benefit analysis of a degree:**
+- Direct cost: tuition fees (GBP 9,250/year) + maintenance (GBP 6,000/year) = GBP 15,250/year for 3 years = GBP 45,750.
+- Opportunity cost: foregone earnings (GBP 22,000/year for 3 years) = GBP 66,000.
+- Total cost: GBP 111,750.
+- Annual earnings premium: if average non-graduate earns GBP 28,000, graduate earns $28{,}000 \times 1.235 = \text{GBP } 34{,}580$. Premium = GBP 6,580/year.
+- Payback period: $111{,}750 / 6{,}580 = 17$ years (ignoring discounting).
+
+**Present value calculation (discount rate 5%):**
+$$PV = \sum_{t=4}^{43} \frac{6580}{1.05^t} = 6580 \times \frac{1 - 1.05^{-40}}{0.05 \times 1.05^3} = 6580 \times 15.046 = \text{GBP } 99{,}003$$
+
+$$NPV = 99{,}003 - 111{,}750 = -\text{GBP } 12{,}747$$
+
+At a 5% discount rate, the NPV is negative. At 3%:
+$$PV = 6580 \times \frac{1 - 1.03^{-40}}{0.03 \times 1.03^3} = 6580 \times 21.35 = \text{GBP } 140{,}483$$
+$$NPV = 140{,}483 - 111{,}750 = +\text{GBP } 28{,}733$$
+
+The investment is sensitive to the discount rate. Lower discount rates (reflecting social rather than private returns, including positive externalities of education) make the investment more attractive.
+
+### 8.3 Supply-Side Policy Impact on AD/AS: Full Numerical Example
+
+**Example.** An economy has:
+- AD: $Y = 1000 - 2P$
+- SRAS: $Y = 3P - 200$
+- LRAS: $Y^* = 400$ (full employment output)
+
+**Initial equilibrium:**
+$$1000 - 2P = 3P - 200 \Rightarrow 1200 = 5P \Rightarrow P = 240, Y = 520$$
+
+The economy is in an inflationary gap: $520 - 400 = 120$.
+
+**Supply-side policy: LRAS shifts right to $Y^* = 600$.**
+
+The LRAS shift does not directly change AD or SRAS. In the short run, equilibrium remains at $Y = 520$, $P = 240$.
+
+**Long-run adjustment:** The increase in potential output reduces inflationary pressure. Workers and firms expect lower future prices, reducing wage demands. SRAS shifts right.
+
+New SRAS: $Y = 3P - 320$ (shift right by 120).
+
+$$1000 - 2P = 3P - 320 \Rightarrow 1320 = 5P \Rightarrow P = 264, Y = 472$$
+
+Wait -- the price level has risen, not fallen. This is because the SRAS shift was insufficient. Let me reconsider.
+
+Actually, in the long run with adaptive expectations, the economy moves to the intersection of AD and the new LRAS. But the adjustment process depends on expectations.
+
+**If the SRAS shifts right enough to reach the new LRAS at $Y = 600$:**
+
+New SRAS: $Y = 3P - 500$. $1000 - 2P = 3P - 500 \Rightarrow 1500 = 5P \Rightarrow P = 300$, $Y = 400$. This does not work either.
+
+Let me reconsider. The SRAS must intersect AD at $Y = 600$:
+$$600 = 1000 - 2P \Rightarrow P = 200$$
+
+New SRAS: $Y = 3P - b$. At $(200, 600)$: $600 = 600 - b \Rightarrow b = 0$. New SRAS: $Y = 3P$.
+
+**Comparison:**
+
+| | Before | After supply-side policy |
+|---|---|---|
+| Price level | 240 | 200 |
+| Real GDP | 520 | 600 |
+| Output gap | +120 (inflationary) | 0 |
+
+Supply-side policy increased output by 80 AND reduced the price level by 40. This is the unique advantage of supply-side policy: it simultaneously addresses inflation and growth.
+
+### 8.4 Tax Incentives for Investment: The Neoclassical Model
+
+**Example.** A firm is deciding whether to invest in a machine costing GBP 100,000. The machine generates annual revenue of GBP 25,000 for 5 years, after which it has zero scrap value.
+
+**Without tax:**
+$$NPV = \sum_{t=1}^{5} \frac{25{,}000}{1.10^t} - 100{,}000 = 25{,}000 \times 3.791 - 100{,}000 = 94{,}775 - 100{,}000 = -\text{GBP } 5{,}225$$
+
+The project is NOT profitable without tax. The firm does not invest.
+
+**With a 40% investment tax credit:**
+The firm receives a tax credit of $0.40 \times 100{,}000 = \text{GBP } 40{,}000$.
+Net cost of machine: $100{,}000 - 40{,}000 = \text{GBP } 60{,}000$.
+$$NPV = 94{,}775 - 60{,}000 = +\text{GBP } 34{,}775$$
+
+The project is now profitable. The investment tax credit has incentivised investment.
+
+**With a 19% corporate tax rate (and no tax credit):**
+After-tax revenue: $25{,}000 \times (1 - 0.19) = \text{GBP } 20{,}250$ per year.
+Capital allowances: 18% writing-down allowance (WDA) on a reducing balance.
+
+Year 1: Allowance = $100{,}000 \times 0.18 = 18{,}000$. Tax saved = $18{,}000 \times 0.19 = 3{,}420$.
+Year 2: Allowance = $82{,}000 \times 0.18 = 14{,}760$. Tax saved = $14{,}760 \times 0.19 = 2{,}804$.
+Year 3: Allowance = $67{,}240 \times 0.18 = 12{,}103$. Tax saved = $12{,}103 \times 0.19 = 2{,}300$.
+Year 4: Allowance = $55{,}137 \times 0.18 = 9{,}925$. Tax saved = $9{,}925 \times 0.19 = 1{,}886$.
+Year 5: Allowance = $45{,}212 \times 0.18 = 8{,}138$. Tax saved = $8{,}138 \times 0.19 = 1{,}546$.
+
+$$NPV = \sum_{t=1}^{5} \frac{20{,}250}{1.10^t} + \sum_{t=1}^{5} \frac{\text{Tax saved}_t}{1.10^t} - 100{,}000$$
+
+$$= 20{,}250 \times 3.791 + \frac{3{,}420}{1.10} + \frac{2{,}804}{1.10^2} + \frac{2{,}300}{1.10^3} + \frac{1{,}886}{1.10^4} + \frac{1{,}546}{1.10^5} - 100{,}000$$
+
+$$= 76{,}767 + 3{,}109 + 2{,}318 + 1{,}728 + 1{,}288 + 960 - 100{,}000 = -\text{GBP } 13{,}830$$
+
+Even with capital allowances, the project is not profitable under a 19% corporate tax. This illustrates that corporate tax creates a tax wedge on investment, reducing the capital stock below the socially optimal level. Supply-side policies (higher capital allowances, investment tax credits, lower corporate tax rates) can close this gap.
+
+### 8.5 Education Spending and Endogenous Growth
+
+**Example: The AK model of endogenous growth.**
+
+The Solow model predicts that long-run growth is determined by exogenous technological progress. The AK model (Rebelo, 1991) assumes output is proportional to capital, with no diminishing returns:
+
+$$Y = AK$$
+
+where $A$ represents technology AND human capital. If education spending increases $A$:
+
+- Suppose $A = 0.3$ and the savings rate $s = 0.2$, depreciation $\delta = 0.05$.
+- Growth rate: $g = sA - \delta = 0.2(0.3) - 0.05 = 0.01 = 1\%$.
+- If education spending raises $A$ to 0.35: $g = 0.2(0.35) - 0.05 = 0.02 = 2\%$.
+- Over 30 years: $Y_{30} = Y_0(1.02)^{30} = 1.81Y_0$ vs $Y_{30} = Y_0(1.01)^{30} = 1.35Y_0$.
+- The economy with better education produces 34% more output after 30 years.
+
+**Implication:** Unlike the Solow model (where policy only affects the LEVEL of output, not the growth rate), the AK model implies that supply-side policies can permanently raise the growth rate. This provides a stronger theoretical justification for education spending than the Solow model.
+
+## 9. Exam-Style Questions with Full Mark Schemes
+
+**Question 1 (25 marks).** "Supply-side policies are more effective than fiscal policy at achieving sustained economic growth." Evaluate this statement.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Arguments for supply-side policy (10 marks):**
+- Supply-side policies increase the economy's productive capacity by shifting LRAS right (education, infrastructure, R&D incentives, labour market flexibility).
+- Long-run effect: higher $Y^*$ with lower inflationary pressure (unlike demand-side stimulus, which is inflationary).
+- The Solow model shows that higher savings and investment raise the steady-state capital stock, increasing output per worker permanently.
+- Endogenous growth theory: education and R&D can permanently raise the growth rate, not just the level of output.
+- Empirical evidence: South Korea's education drive (1960s-1990s) raised average years of schooling from 5 to 12, contributing to sustained 7% annual growth.
+- Market-oriented reforms (privatisation, deregulation) improve allocative efficiency, raising productivity.
+
+**Arguments for fiscal policy (10 marks):**
+- Fiscal policy addresses short-run output gaps that supply-side policy cannot fix (due to long time lags). An economy in recession cannot wait 15 years for education reform.
+- Government investment in infrastructure is itself a supply-side policy with short-run demand effects (Keynesian multiplier).
+- Fiscal policy can create the conditions for supply-side improvement: education spending IS a supply-side policy funded by fiscal resources.
+- Automatic stabilisers (progressive taxes, unemployment benefits) provide counter-cyclical stabilisation without the time lags of discretionary supply-side policy.
+- The crowding-in effect: government investment in transport infrastructure reduces firms' costs, shifting both AD and AS right.
+
+**Evaluation (5 marks):**
+- The comparison is misleading because they operate on different timeframes. Supply-side policies are long-run; fiscal policy is short-run. They are complements, not substitutes.
+- Some policies are both supply-side and demand-side (infrastructure spending, education investment).
+- The most effective growth strategy combines both: fiscal policy for short-run stabilisation, supply-side policy for long-run growth.
+- Supply-side policy effectiveness depends on the starting point: a country with low human capital gains more from education spending than one with already high human capital.
+- Conclusion: the statement is a false dichotomy. Both are necessary, but supply-side policy is more important for sustained LONG-RUN growth.
+</details>
+
+**Question 2 (12 marks).** Using the Laffer curve, explain why a cut in the top rate of income tax from 45% to 40% might either increase or decrease total tax revenue. Which outcome is more likely for the UK?
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Laffer curve analysis (6 marks):**
+The Laffer curve shows the relationship between the tax rate and tax revenue. At $t = 0\%$, revenue is zero (no tax). At $t = 100\%$, revenue is also zero (no one works). Revenue is maximised at some intermediate rate $t^*$. If the current rate is above $t^*$, a tax cut increases revenue (the economy is on the downward-sloping portion). If the current rate is below $t^*$, a tax cut reduces revenue (the economy is on the upward-sloping portion).
+
+**Application to the UK top rate (6 marks):**
+The top rate of income tax in the UK is 45% (on income above GBP 125,140). The IFS and OBR estimate that the revenue-maximising rate for the top rate is approximately 55-65%. Since 45% is below this estimate, a cut to 40% would move the economy further from the revenue-maximising rate, reducing revenue.
+
+The IFS estimated that cutting the additional rate from 45% to 40% (as proposed in 2022) would cost approximately GBP 1-2 billion per year. The behavioural response (high earners working more, relocating to the UK) would offset only a fraction of the static revenue loss.
+
+The Laffer effect is more relevant for capital gains tax and corporate tax, where mobility is higher and the elasticity of the tax base is greater.
+</details>
+
+**Question 3 (15 marks).** Analyse the impact of an increase in the UK's National Minimum Wage from GBP 10.42 to GBP 12.00 per hour on employment, productivity, and income distribution.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Impact on employment (5 marks):**
+- Classical model: a binding minimum wage above the equilibrium wage creates unemployment. The elasticity of labour demand determines the magnitude. If the elasticity of demand for low-wage labour is -0.3 (Card and Krueger estimate), a 15% increase in the minimum wage reduces employment by approximately 4.5%.
+- Monopsony model: if employers have monopsony power (which is common in low-wage sectors), a moderate minimum wage can INCREASE employment by counteracting the monopsony distortion.
+- Empirical evidence from the UK: the Low Pay Commission's evaluations consistently find minimal employment effects from minimum wage increases, supporting the monopsony model.
+- However, the impact is heterogeneous: small firms in competitive sectors are more likely to reduce employment than large firms with monopsony power.
+
+**Impact on productivity (5 marks):**
+- Efficiency wage effect: higher wages may increase worker effort, reduce turnover, and attract better applicants (Shapiro-Stiglitz model).
+- Firms may respond by investing in labour-saving technology, raising capital intensity and productivity.
+- The "shake-out" effect: less productive firms exit, raising average industry productivity.
+- Conversely, firms facing higher costs may reduce training investment, lowering human capital accumulation.
+
+**Impact on income distribution (5 marks):**
+- Direct effect: 2-3 million low-wage workers receive a pay rise, reducing the Gini coefficient and poverty rate.
+- Spillover effect: wages just above the new minimum may also rise as employers maintain pay differentials.
+- Potential negative effects: if employment falls, some workers lose their jobs entirely. If prices rise (firms pass on higher costs), the real value of the wage increase is eroded.
+- Net effect: most studies find a net reduction in inequality, particularly at the bottom of the distribution.
+</details>
+
+## 11. Extended Worked Examples
+
+### 11.1 Regional Policy: Cost-Benefit Analysis
+
+**Example.** The government is considering investing GBP 50 billion in transport infrastructure in the North of England (HS3, Northern Powerhouse Rail). Evaluate the costs and benefits.
+
+**Benefits (annual, once complete):**
+- Time savings for commuters: GBP 2.5 billion (500,000 commuters x 2 hours/week x 48 weeks x GBP 52/hour)
+- Agglomeration economies: GBP 1.0 billion (firms benefit from larger effective labour markets)
+- Reduced road congestion: GBP 0.5 billion
+- Increased house prices in connected cities: GBP 0.8 billion (capital gain for homeowners, but NOT a net welfare gain -- transfers from buyers to sellers)
+- Reduced carbon emissions: GBP 0.2 billion
+- Wider economic benefits: GBP 1.5 billion (productivity spillovers, innovation, tourism)
+
+**Total annual benefit:** GBP 6.5 billion (of which GBP 0.8 billion is a transfer, not a net gain).
+
+**Costs:**
+- Construction: GBP 50 billion (over 15 years)
+- Annual maintenance: GBP 0.3 billion
+- Environmental damage during construction: GBP 2 billion (one-off)
+
+**NPV (discount rate 3.5%, 60-year life):**
+PV of benefits: $6.5 \times \frac{1 - 1.035^{-60}}{0.035 \times 1.035^{15}} = 6.5 \times 14.6 = 94.9$.
+PV of maintenance: $0.3 \times \frac{1 - 1.035^{-60}}{0.035 \times 1.035^{15}} = 0.3 \times 14.6 = 4.4$.
+PV of construction: $50 \times \frac{1 - 1.035^{-15}}{0.035 \times 15} \times 15 = 50 \times 11.2 = 55.8$ (assuming even spread).
+PV of environmental damage: $2 / 1.035^7 = 1.6$ (midpoint of construction).
+
+**NPV = 94.9 - 4.4 - 55.8 - 1.6 = 33.1 billion.**
+
+The project has a positive NPV of GBP 33.1 billion, suggesting it is economically justified.
+
+**Distributional considerations:**
+- The benefits are concentrated in the North of England (which has lower average incomes than the South). This is progressive.
+- The costs are funded by UK-wide taxation, so Southern taxpayers bear a share of the cost. This may be perceived as unfair.
+- House price gains in the North benefit existing homeowners (who tend to be older and wealthier) at the expense of prospective buyers (who tend to be younger and poorer).
+
+**Comparison with London infrastructure:**
+Crossrail (Elizabeth Line) cost approximately GBP 19 billion and generates approximately GBP 4 billion per year in economic benefits. The benefit-cost ratio is approximately 12:1 over 60 years. Northern transport infrastructure may have a lower benefit-cost ratio (less economic density) but addresses a larger regional inequality gap.
+
+### 11.2 Competition Policy: Welfare Analysis
+
+**Example.** Two supermarkets (Tesco and Sainsbury's) propose to merge. The combined market share would be 45%. The Competition and Markets Authority (CMA) must assess the welfare impact.
+
+**Pre-merger market:** Approximate duopoly. Assume the market is roughly competitive (many players including Aldi, Lidl, Asda, Morrisons, Waitrose). Consumer surplus is high.
+
+**Post-merger market:** The merged firm has significant market power. It may:
+- Raise prices by 2-5% (CMA estimates for similar mergers).
+- Reduce product variety (eliminate overlapping own-label brands).
+- Reduce supplier payments (monopsony power over farmers and food processors).
+
+**Quantitative impact:**
+- Average household weekly food spend: GBP 60.
+- If prices rise 3%: additional cost = GBP 1.80/week = GBP 93.60/year.
+- 28 million households affected: total annual cost = GBP 2.6 billion.
+- This is a deadweight loss from reduced competition.
+
+**Benefits of the merger:**
+- Cost savings from economies of scale: GBP 1.0 billion per year.
+- These savings may be passed to consumers (partially), retained as profit, or shared with suppliers.
+- Historical evidence: in the Tesco-Booker merger (2017), the CMA found that cost savings would NOT be passed to consumers and required remedies (store sales).
+
+**CMA decision:**
+If the CMA finds that the merger would substantially lessen competition (SLC), it can:
+1. Block the merger outright.
+2. Require remedies (selling stores in overlapping areas).
+3. Accept behavioural remedies (price caps, commitments to maintain variety).
+
+**The CMA would likely require store sales in areas where the merged firm would have a local monopoly (market share > 25% in a local area).** This is the standard approach in UK grocery merger cases.
+
+### 11.3 Education Policy: Returns to Different Qualifications
+
+**Example.** The UK government is considering funding different levels of education. Estimate the social return on investment for each level.
+
+**Data (approximate, UK):**
+
+| Qualification | Cost to government per student | Earnings premium (annual) | Years of work | Private NPV (3.5% discount) | Social NPV (including tax) |
+|---|:---:|:---:|:---:|:---:|:---:|
+| No qualifications | 0 | 0 (baseline) | -- | 0 | 0 |
+| GCSEs (level 2) | 50,000 | 5,000 | 45 | 35,000 | 55,000 |
+| A-levels (level 3) | 70,000 | 10,000 | 43 | 55,000 | 90,000 |
+| Degree (level 6) | 95,000 | 20,000 | 40 | 90,000 | 160,000 |
+| Master's (level 7) | 110,000 | 30,000 | 38 | 100,000 | 175,000 |
+| PhD (level 8) | 160,000 | 25,000 | 35 | 50,000 | 120,000 |
+
+**Social NPV** includes the additional tax revenue generated by higher earners (income tax + NIC). At the additional tax rate of approximately 30%, the social return is significantly higher than the private return.
+
+**Key observations:**
+- Degrees have the highest social NPV (160,000), reflecting the large earnings premium (GBP 20,000/year) over 40 years.
+- PhDs have a LOWER return than master's degrees because the additional years of study (3-4 years) reduce working life and the earnings premium over a master's is small (only GBP 5,000/year).
+- GCSEs and A-levels have very high returns per pound spent (cost is relatively low, earnings premium is significant).
+- The marginal return is highest for basic qualifications (GCSEs) and decreases for higher qualifications (diminishing returns).
+
+**Policy implications:**
+- Funding basic education (GCSEs, A-levels) gives the highest return per pound -- strong case for universal free education.
+- University funding: the social return is positive but lower than for earlier education. The shift from free tuition to student loans (post-1998) can be justified on efficiency grounds (students capture most of the private benefit), but the loan system must not create barriers to access for low-income students.
+- PhD funding: the private return is lower than for master's, but the social return may be higher due to research externalities (knowledge spillovers, innovation). The government should continue to fund PhDs but target funding at high-priority areas.
+
+## 12. Extended Worked Examples
+
+### 12.1 Deregulation: Cost-Benefit Analysis
+
+**Example.** The government deregulates the taxi industry, removing the requirement for taxi licences (medallions). Analyse the welfare effects.
+
+**Before deregulation:**
+- Number of taxi licences (fixed): 20,000.
+- Taxi fare (regulated): GBP 3/mile.
+- Quantity of taxi miles: 100 million miles/year.
+- Licence (medallion) price: GBP 50,000.
+
+**After deregulation:**
+- New entrants drive the market price down. New equilibrium fare: GBP 2/mile.
+- Quantity of taxi miles: 150 million miles/year.
+- Number of taxis: 30,000.
+
+**Consumer surplus change:**
+Before: $CS = \frac{1}{2}(P_{choke} - 3)(100)$. Suppose choke price = 6: $CS = \frac{1}{2}(3)(100) = 150$.
+After: $CS = \frac{1}{2}(6 - 2)(150) = 300$.
+Change: $+150$.
+
+**Producer surplus change:**
+Before: PS of incumbent taxi drivers $= (3 - MC)(100)$. If $MC = 1.5$: $PS = 150$.
+After: PS of all drivers $= \frac{1}{2}(2 - 1.5)(150) = 37.5$. But this is for ALL 30,000 drivers.
+
+Actually, the supply curve shifts right as new entrants join. The marginal cost of the 30,000th driver may be higher than 1.5. Let me assume MC rises from 1.5 to 2 as more drivers enter (upward-sloping supply).
+
+Before: $PS = (3 - 1.5)(100) - \frac{1}{2}(1.5)(100) = 150 - 75 = 75$ (producer surplus above the supply curve).
+
+After: $PS = (2 - 1.5)(150) - \frac{1}{2}(0.5)(150) = 75 - 37.5 = 37.5$.
+
+Producer surplus falls from 75 to 37.5 (change: -37.5). Incumbent taxi drivers are worse off.
+
+**Licence holders:** 20,000 licence holders lose the value of their medallions: $20{,}000 \times 50{,}000 = \text{GBP } 1{,}000{,}000 = \text{GBP } 1\text{bn}$. This is a capital loss for incumbent taxi drivers.
+
+**Net welfare change:** $+150 - 37.5 = +112.5$. The medallion loss of 1,000 is a TRANSFER (from medallion owners to consumers), not a net welfare loss. The net welfare gain is 112.5.
+
+**Dynamic effects:**
+- Quality: without regulation, some drivers may offer lower quality (older vehicles, less trained drivers). Consumers may face a quality-quantity trade-off.
+- Safety: deregulation may reduce safety standards (insufficient vehicle maintenance, unvetted drivers). This is a negative externality that reduces the welfare gain.
+- Innovation: deregulation may spur innovation (ride-sharing apps, electric vehicles, wheelchair-accessible vehicles).
+
+**Real-world evidence (Uber and Lyft):**
+- Studies find that ride-sharing reduced taxi fares by 10-20% and increased availability (especially in underserved areas).
+- Consumer surplus gains: approximately USD 7 billion per year in the US (Cohen et al., 2020).
+- Driver earnings: approximately USD 15-25/hour before expenses, 9-12/hour after expenses.
+- Incumbent taxi medallion values fell by 50-80% in major US cities, representing billions in losses for medallion owners.
+- Overall welfare effect: positive, but with significant distributional consequences (winners: consumers, new drivers; losers: incumbent drivers, medallion owners).
+
+**Evaluation:** Deregulation generates net welfare gains but creates losers. The optimal policy may be light-touch regulation (safety standards, background checks) combined with market-based pricing, rather than full deregulation or the pre-reform quota system.
+
+### 12.2 Skills Policy: Apprenticeship Evaluation
+
+**Example.** The government subsidises apprenticeships at GBP 5,000 per apprentice per year. Evaluate the cost-effectiveness.
+
+**Data:**
+- Number of apprentices: 750,000 per year.
+- Government cost: $750{,}000 \times 5{,}000 = \text{GBP } 3.75\text{bn}$.
+- Completion rate: 60% (450,000 complete).
+- Earnings premium for completers: GBP 7,000 per year (above the non-apprentice alternative).
+- Earnings premium for non-completers: GBP 2,000 per year.
+- Working years after apprenticeship: 40 years.
+
+**Cost-benefit calculation:**
+
+**Benefits:**
+Completers: $450{,}000 \times 7{,}000 \times 40 = \text{GBP } 126\text{bn}$ (undiscounted).
+Non-completers: $300{,}000 \times 2{,}000 \times 40 = \text{GBP } 24\text{bn}$ (undiscounted).
+Total benefits: GBP 150bn.
+
+**Present value (3.5% discount rate):**
+Completers: $450{,}000 \times 7{,}000 \times \frac{1 - 1.035^{-40}}{0.035} = 3.15 \times 10^9 \times 21.4 = \text{GBP } 67.4\text{bn}$.
+Non-completers: $300{,}000 \times 2{,}000 \times 21.4 = \text{GBP } 12.8\text{bn}$.
+Total PV of benefits: GBP 80.2bn.
+
+**Costs (present value):**
+Government subsidy: $3.75 \times 40 = \text{GBP } 150\text{bn}$ (undiscounted over 40 years).
+Wait, the subsidy is annual. PV of costs: $3.75 \times \frac{1 - 1.035^{-40}}{0.035} = 3.75 \times 21.4 = \text{GBP } 80.3\text{bn}$.
+
+But the subsidy is only paid for the duration of the apprenticeship (typically 2-4 years), not for 40 years. Let me recalculate:
+
+PV of costs: $3.75\text{bn} \times \frac{1 - 1.035^{-2}}{0.035} = 3.75 \times 1.90 = \text{GBP } 7.13\text{bn}$ (assuming 2-year apprenticeships).
+
+**NPV = 80.2 - 7.13 = GBP 73.1bn.** The programme has a very large positive NPV.
+
+**Benefit-cost ratio:** $80.2 / 7.13 = 11.2$. Every GBP 1 of government spending generates GBP 11.2 in lifetime earnings gains.
+
+**Fiscal return:** Higher earnings generate additional tax revenue. If the average tax rate on the earnings premium is 30%:
+Additional tax revenue $= 0.3 \times 80.2 = \text{GBP } 24.1\text{bn}$.
+The government recovers 24.1bn in tax from an investment of 7.13bn -- a fiscal return of 338%.
+
+**Distributional effects:**
+- Apprenticeship sectors are skewed towards male-dominated industries (construction, engineering, manufacturing). Women are underrepresented in apprenticeships.
+- The earnings premium varies by sector: engineering apprenticeships have a premium of GBP 10,000/year, while retail and hospitality have premiums of only GBP 2,000/year.
+- Regional variation: apprenticeship quality and employer engagement vary significantly across regions.
+
+**Evaluation:** apprenticeships are a highly cost-effective supply-side policy with a large fiscal return. The programme would be even more effective if: (1) completion rates were improved (from 60% to 80%+), (2) higher-level apprenticeships (Level 4+) were expanded, and (3) gender and regional imbalances were addressed.

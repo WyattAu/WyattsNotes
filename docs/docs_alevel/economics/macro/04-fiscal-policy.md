@@ -601,3 +601,305 @@ danger
 - **Misapplying the balanced budget multiplier:** The balanced budget multiplier of 1 holds only for lump-sum taxes. If taxes are proportional (MPT > 0), the balanced budget multiplier is less than 1 because some of the tax increase reduces autonomous consumption. Always check the type of tax in the question.
 
 :::
+
+## 11. Extended Worked Examples
+
+### 11.1 Full Fiscal Policy Impact Analysis
+
+**Example.** An economy has the following characteristics:
+- MPC = 0.75, MPT = 0.2, MPM = 0.15
+- Current GDP = GBP 2,000 billion
+- Potential GDP = GBP 2,100 billion
+- Inflation = 1.5% (below 2% target)
+- Current budget deficit = GBP 80 billion
+
+The government increases spending by GBP 40 billion, financed entirely by borrowing.
+
+**Step 1: Calculate the multiplier.**
+$$k = \frac{1}{MPS + MPT + MPM} = \frac{1}{0.25 + 0.2 + 0.15} = \frac{1}{0.6} = 1.667$$
+
+**Step 2: Calculate the change in GDP.**
+$$\Delta Y = k \times \Delta G = 1.667 \times 40 = \text{GBP } 66.7 \text{ billion}$$
+
+**Step 3: Assess the output gap.**
+Current gap $= 2100 - 2000 = \text{GBP } 100\text{bn}$. The fiscal expansion closes $66.7/100 = 66.7\%$ of the gap. New GDP $= 2066.7\text{bn}$.
+
+**Step 4: Estimate the change in the budget deficit.**
+New tax revenue: $\Delta T = MPT \times \Delta Y = 0.2 \times 66.7 = \text{GBP } 13.3\text{bn}$.
+New deficit $= 80 + 40 - 13.3 = \text{GBP } 106.7\text{bn}$ (higher due to spending increase partially offset by higher revenue).
+
+**Step 5: Assess crowding out.**
+If the economy has a large output gap (as here), crowding out is minimal because idle resources are available. The interest rate effect is small. The estimated crowding out factor might be only 10-20%, meaning the effective multiplier is approximately $1.667 \times 0.85 = 1.42$.
+
+**Step 6: Long-run adjustment.**
+As GDP approaches potential output, the labour market tightens, wages rise, SRAS shifts left, and the price level rises. The long-run effect is primarily on prices, not output. If the output gap is fully closed, further stimulus would be purely inflationary.
+
+### 11.2 Debt Dynamics Worked Example
+
+**Example.** A country has:
+- Debt-to-GDP ratio: 95%
+- Nominal GDP growth: 4.5% (real 2.5% + inflation 2%)
+- Average interest rate on debt: 3.8%
+- Primary deficit: 2% of GDP
+
+**Step 1: Apply the debt dynamics equation.**
+$$\Delta\left(\frac{D}{Y}\right) \approx (r - g)\frac{D}{Y} + \frac{\text{primary deficit}}{Y}$$
+$$= (3.8\% - 4.5\%) \times 95\% + 2\%$$
+$$= (-0.7\%) \times 0.95 + 2\%$$
+$$= -0.665\% + 2\% = 1.335\%$$
+
+The debt ratio rises by approximately 1.34 percentage points per year.
+
+**Step 2: Interpretation.**
+Even though $g > r$ (GDP growth exceeds the interest rate), the debt ratio still rises because the primary deficit is large. The favourable interest-growth differential is not sufficient to offset the ongoing borrowing.
+
+**Step 3: Policy implications.**
+To stabilise the debt ratio ($\Delta(D/Y) = 0$), the primary deficit must be reduced to:
+$$\frac{\text{required primary surplus}}{Y} = -(r - g)\frac{D}{Y} = 0.7\% \times 95\% = 0.665\%$$
+
+The government needs a primary SURPLUS of 0.665% of GDP (currently running a 2% primary deficit). This requires fiscal tightening of approximately 2.67% of GDP -- a very significant adjustment.
+
+### 11.3 Comparative Statics: Tax Cut vs Spending Increase
+
+**Example.** Compare a GBP 50 billion tax cut vs a GBP 50 billion spending increase, given MPC = 0.7, MPT = 0.15, MPM = 0.2.
+
+**Multiplier:** $k = 1/(0.3 + 0.15 + 0.2) = 1/0.65 = 1.538$.
+
+**Tax cut:** Initial consumption increase $= MPC \times \Delta T = 0.7 \times 50 = \text{GBP } 35\text{bn}$.
+$\Delta Y_{tax} = 1.538 \times 35 = \text{GBP } 53.8\text{bn}$.
+
+**Spending increase:** Direct injection of GBP 50bn.
+$\Delta Y_{spend} = 1.538 \times 50 = \text{GBP } 76.9\text{bn}$.
+
+**Difference:** The spending increase is 43% more effective ($76.9/53.8 = 1.43$). This is because the tax cut is partially saved ($30\%$ of the tax cut is not spent), whereas government spending is a direct injection.
+
+**Debt impact:**
+Tax cut: revenue falls by GBP 50bn, new deficit increases by $50 - 0.15 \times 53.8 = 50 - 8.1 = \text{GBP } 41.9\text{bn}$.
+Spending: outlays rise by GBP 50bn, new deficit increases by $50 - 0.15 \times 76.9 = 50 - 11.5 = \text{GBP } 38.5\text{bn}$.
+
+The spending increase actually creates LESS additional debt relative to its GDP impact (GBP 38.5bn debt for GBP 76.9bn GDP vs GBP 41.9bn debt for GBP 53.8bn GDP).
+
+## 12. Exam-Style Questions with Full Mark Schemes
+
+**Question 1 (25 marks).** "The UK government should prioritise reducing the budget deficit over investing in infrastructure." Evaluate this statement.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Arguments for deficit reduction:**
+- High debt-to-GDP ratio (approximately 100% in 2024) creates vulnerability to rising interest rates. As the BoE raises rates, debt servicing costs increase, crowding out other spending.
+- Intergenerational equity: current borrowing passes the cost to future taxpayers.
+- Market confidence: large deficits may trigger gilt market volatility and credit rating downgrades (as seen during the 2022 mini-budget crisis, when gilt yields spiked after unfunded tax cuts).
+- The $r > g$ problem: if interest rates exceed growth, the debt ratio becomes unstable without primary surpluses.
+- Fiscal rules: the Office for Budget Responsibility and the government's own fiscal mandate require debt to be falling as a share of GDP by the fifth year of the forecast.
+
+**Arguments for infrastructure investment:**
+- Multiplier effects: infrastructure spending has a high multiplier (estimated 1.0-1.5 for investment vs 0.3-0.5 for current spending), so the net fiscal cost is lower than the headline figure.
+- Supply-side benefits: infrastructure (transport, broadband, energy) shifts LRAS right, increasing potential output and tax revenue in the long run.
+- Low borrowing costs: despite the debt level, UK gilt yields remain relatively low by historical standards, suggesting the market does not view UK debt as unsustainable.
+- The opportunity cost of underinvestment: the UK has a well-documented productivity puzzle. Infrastructure investment addresses the supply-side constraints that have held back growth since 2008.
+- Counter-cyclical: if the economy is below potential, deficit-financed infrastructure is expansionary when needed.
+
+**Evaluation:**
+- The trade-off is not as stark as it appears. Well-targeted infrastructure investment can be fiscally responsible if it generates returns exceeding the cost of borrowing. If the social rate of return on infrastructure exceeds the government's borrowing cost (approximately 4%), the investment pays for itself over time.
+- The 2022 mini-budget showed the dangers of unfunded tax cuts (which worsened the deficit without productive investment). But infrastructure spending is qualitatively different from tax cuts.
+- A balanced approach: reduce the structural deficit gradually while protecting capital investment. This is essentially the approach the OBR recommends.
+- Conclusion: deficit reduction and infrastructure investment are not mutually exclusive. The priority should be the COMPOSITION of spending -- shifting from current to capital expenditure while ensuring the overall fiscal position is sustainable.
+
+**Mark allocation:** Knowledge and Understanding (6 marks), Application (6 marks), Analysis (6 marks), Evaluation (7 marks).
+</details>
+
+**Question 2 (12 marks).** The government is considering raising the top rate of income tax from 45% to 50% on income above GBP 125,140. Using the concept of the Laffer curve, analyse the likely impact on tax revenue.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Laffer curve analysis (4 marks):**
+The Laffer curve suggests that there exists a tax rate $t^*$ that maximises revenue. If the current rate is below $t^*$, raising it increases revenue. If above $t^*$, raising it decreases revenue.
+
+**Evidence for the UK (4 marks):**
+- When the top rate was 50% (2010-2013), the IFS estimated that it raised approximately GBP 100m per year while costing the economy approximately GBP 500m in economic activity (a net fiscal cost).
+- The elasticity of taxable income for top earners is estimated at approximately 0.45-0.50 (Saez, 2012). This means a 10% increase in the marginal tax rate reduces the taxable income base by approximately 4.5-5%.
+- Revenue change: $\Delta R \approx t \times \Delta B + B \times \Delta t$, where $B$ is the tax base. If the tax base is GBP 200bn and elasticity is 0.5, a 5 percentage point increase (from 45% to 50%) gives:
+$\Delta B = -0.5 \times (5/45) \times 200 = -$11.1bn.
+$\Delta R = 0.50 \times (200 - 11.1) - 0.45 \times 200 = 94.45 - 90 = \text{GBP } 4.45\text{bn}$ (positive but modest).
+
+**Evaluation (4 marks):**
+- The revenue gain is modest (GBP 4.45bn is approximately 0.2% of GDP) but the economic cost may be larger than the revenue gain (behavioural responses include tax avoidance, reduced entrepreneurship, emigration of high earners).
+- However, the revenue estimate is highly uncertain and depends on the elasticity estimate, which varies across studies.
+- Equity argument: even if revenue is not maximised, a higher top rate may be justified on fairness grounds (reducing post-tax inequality).
+- Conclusion: a modest revenue increase is likely, but the Laffer curve suggests the UK is approaching the revenue-maximising rate for top income tax. The equity-efficiency trade-off is the key consideration.
+</details>
+
+**Question 3 (25 marks).** "Expansionary fiscal policy is always more effective than expansionary monetary policy in reducing unemployment during a recession." Evaluate this statement.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Arguments for fiscal policy superiority:**
+- Direct injection: government spending directly increases AD, whereas monetary policy works indirectly through interest rates and bank lending.
+- Zero lower bound: in a deep recession, interest rates may already be near zero, limiting monetary policy's effectiveness (the liquidity trap). Fiscal policy has no such constraint.
+- Targeted spending: infrastructure investment creates jobs directly in specific sectors, whereas interest rate cuts may not reach SMEs or households with fixed-rate mortgages.
+- Multiplier effects: fiscal policy has a higher multiplier when monetary policy is accommodative (the central bank keeps rates low to prevent crowding out).
+
+**Arguments for monetary policy superiority:**
+- Speed: the MPC can change interest rates within days; fiscal policy requires parliamentary approval (months to years).
+- Flexibility: interest rates can be adjusted frequently and reversibly; government spending programs are politically difficult to reverse.
+- No increase in government debt: monetary expansion does not add to the national debt, whereas fiscal expansion requires borrowing.
+- Transmission breadth: interest rate changes affect the entire economy simultaneously; government spending is sector-specific.
+
+**Conditions determining relative effectiveness:**
+- Depth of recession: the deeper the recession, the more effective fiscal policy (high multiplier, low crowding out).
+- Nature of the shock: demand shock (fiscal more effective); supply shock (monetary accommodation may be needed).
+- Openness of economy: in a highly open economy (high MPM), fiscal policy has a smaller multiplier (leakage to imports).
+- State of the banking system: if banks are not lending (post-crisis), monetary policy is less effective.
+
+**Evaluation:**
+- The statement is too absolute. Effectiveness depends on context.
+- Best practice: coordinated fiscal-monetary policy (fiscal expansion with monetary accommodation, as in 2020).
+- The COVID-19 response demonstrated that massive fiscal expansion (furlough) was essential when monetary policy alone was insufficient (rates already at 0.1%).
+- However, the 2022 inflation showed that sustained fiscal expansion can undermine monetary policy objectives (the BoE raised rates to fight inflation partly caused by fiscal stimulus).
+- Conclusion: neither policy is universally superior. The optimal approach depends on the nature and severity of the recession, the state of public finances, and the position of interest rates relative to the zero lower bound.
+</details>
+
+## 11. Extended Worked Examples
+
+### 11.1 Automatic Stabilisers: Quantitative Analysis
+
+**Example.** An economy has a progressive income tax system and unemployment benefits.
+
+Tax brackets: 0% on first GBP 12,570, 20% on GBP 12,571-50,270, 40% on GBP 50,271-125,140, 45% above GBP 125,140.
+
+Average tax rate at different income levels:
+
+| Gross income | Tax paid | Average tax rate |
+|:---:|:---:|:---:|
+| GBP 20,000 | 1,486 | 7.4% |
+| GBP 35,000 | 4,486 | 12.8% |
+| GBP 50,000 | 7,486 | 15.0% |
+| GBP 80,000 | 17,486 | 21.9% |
+| GBP 150,000 | 47,486 | 31.7% |
+
+**Progressivity effect:** If GDP falls 5%, tax revenue falls by MORE than 5% because higher earners (who pay higher rates) see their incomes fall proportionally more in a recession (bonuses, capital gains, overtime). The IMF estimates that the elasticity of tax revenue to GDP in the UK is approximately 1.1-1.3. A 5% GDP fall reduces tax revenue by 5.5-6.5%.
+
+**Numerical example:** GDP = GBP 2,200bn, tax revenue = GBP 500bn. GDP falls 5% to 2,090bn.
+Tax revenue falls by $500 \times 0.05 \times 1.2 = 30$. New tax revenue = 470bn.
+
+Simultaneously, unemployment benefit spending rises. Unemployment goes from 4% to 7% (1.02 million additional unemployed). Additional UB cost $= 1.02 \times 15{,}000 = 15.3$bn.
+
+**Automatic stabiliser magnitude:** The budget deficit automatically widens by $30 + 15.3 = 45.3$bn. This is equivalent to a fiscal stimulus of $45.3 / 2090 = 2.2\%$ of GDP, implemented with zero legislative delay.
+
+**Multiplier effect:** If the multiplier is 1.2, the automatic stabilisers raise GDP by $1.2 \times 45.3 = 54.4$bn, partially offsetting the original 110bn decline. The automatic stabilisers absorb approximately 49% of the shock.
+
+### 11.2 Debt Dynamics: Advanced Scenarios
+
+**Example.** Three countries have different debt dynamics:
+
+**Country A (UK-like):** $b = 100\%$, $r = 4\%$, $g_{nominal} = 5\%$, $p = -3\%$ (primary deficit).
+$\Delta b = (0.04 - 0.05)(1.0) + (-0.03) = -0.01 - 0.03 = -0.04$.
+The debt ratio falls by 4 percentage points per year. Despite running a primary deficit, the debt ratio is falling because $g > r$.
+
+**Country B (Italy-like):** $b = 140\%$, $r = 3.5\%$, $g_{nominal} = 2\%$, $p = -1\%$.
+$\Delta b = (0.035 - 0.02)(1.4) + (-0.01) = 0.021 - 0.01 = 0.011$.
+The debt ratio rises by 1.1 percentage points per year. The snowball effect ($r > g$) is pushing the debt ratio up. A primary surplus of 1.1% would be needed to stabilise the debt ratio.
+
+**Country C (Japan-like):** $b = 250\%$, $r = 1\%$, $g_{nominal} = 3\%$, $p = -5\%$.
+$\Delta b = (0.01 - 0.03)(2.5) + (-0.05) = -0.05 - 0.05 = -0.10$.
+Despite an enormous debt ratio and a large primary deficit, the debt ratio is falling by 10 percentage points per year because $r \ll g$.
+
+**Key lesson:** the interest rate-growth differential ($r - g$) is more important for debt sustainability than the debt level itself. When $r < g$, debt can be sustainable even at very high levels. When $r > g$, even moderate debt levels can become unstable.
+
+### 11.3 Ricardian Equivalence: Numerical Illustration
+
+**Example.** The government cuts taxes by GBP 100bn today, financing the cut with borrowing (no spending cuts). According to Ricardian equivalence, households should save the entire tax cut because they anticipate future tax increases to repay the debt.
+
+**Non-Ricardian outcome (Keynesian):**
+Households spend 80% of the tax cut (MPC = 0.8). $\Delta C = 80$.
+$\Delta Y = k \times \Delta C = 2 \times 80 = 160$. GDP rises by 160.
+Budget deficit increases by 100 (tax cut) + 0 (no spending change) = 100.
+Household saving increases by $100 - 80 = 20$ (the unspent portion of the tax cut).
+
+**Ricardian outcome:**
+Households save 100% of the tax cut. $\Delta C = 0$.
+$\Delta Y = 0$. No change in GDP.
+Budget deficit increases by 100.
+Household saving increases by 100 (exactly offsetting the government dissaving).
+National saving (government + private) is unchanged: $-100 + 100 = 0$.
+
+**Partial Ricardian equivalence (empirically realistic):**
+Households save 40% of the tax cut. $\Delta C = 60$.
+$\Delta Y = 2 \times 60 = 120$.
+Household saving increases by $100 - 60 = 40$.
+National saving change: $-100 + 40 = -60$. National saving falls, which may raise interest rates and crowd out investment.
+
+**Why full Ricardian equivalence is unlikely:**
+- Liquidity constraints: low-income households cannot borrow against future income, so they spend the tax cut.
+- Myopia: households may not anticipate future tax liabilities.
+- Finite lifetimes: if households do not care about their heirs (no bequest motive), they will not save for future tax increases that occur after their death.
+- Imperfect capital markets: households cannot borrow at the government's interest rate.
+- Empirical evidence: tax cuts DO stimulate consumption, but by less than the Keynesian model predicts (suggesting partial Ricardian behaviour).
+
+## 12. Extended Worked Examples
+
+### 12.1 Government Spending Multiplier: Open Economy
+
+**Example.** The UK is a highly open economy. Analyse the government spending multiplier incorporating the exchange rate channel.
+
+**Standard multiplier:** $k = \frac{1}{1 - MPC(1-t) + MPM} = \frac{1}{0.85} = 1.18$ (from earlier calculation).
+
+**With exchange rate effect:** Expansionary fiscal policy raises UK interest rates (government borrowing increases demand for loanable funds). Higher interest rates attract foreign capital, appreciating sterling. The appreciation reduces net exports.
+
+**Numerical illustration:** GBP 50bn increase in government spending.
+
+Step 1: Direct multiplier effect: $\Delta Y = 1.18 \times 50 = 59$.
+
+Step 2: Interest rate effect. Government borrowing of 50bn pushes the 10-year gilt yield up by 0.3 percentage points. This attracts GBP 30bn of foreign capital.
+
+Step 3: Exchange rate effect. Sterling appreciates by 2% (approximate elasticity). Export revenue falls by $0.3 \times 2 = 0.6\%$. On export revenue of 500bn: loss = 3bn. Import spending rises by $0.5 \times 2 = 1\%$. On import spending of 600bn: gain = 6bn. Net export change: $-3 + 6 = +3$bn... wait, this is wrong. Currency appreciation makes imports cheaper (increasing import QUANTITY and value) and exports more expensive (reducing export QUANTITY and value). Both effects REDUCE net exports.
+
+Net export change $= -3 - 6 = -9$bn (net exports fall by 9bn).
+
+Step 4: Multiplier on net export change: $\Delta Y = 1.18 \times (-9) = -10.6$.
+
+**Total effect:** $\Delta Y = 59 - 10.6 = 48.4$bn.
+
+**Effective multiplier:** $48.4 / 50 = 0.97$. The open-economy multiplier is LESS than 1 because the exchange rate appreciation partially offsets the fiscal expansion.
+
+**This is the Mundell-Fleming result:** in an open economy with flexible exchange rates and mobile capital, fiscal policy is less effective because the exchange rate appreciation crowds out net exports. The more open the economy (higher MPM) and the more mobile capital (higher interest elasticity of capital flows), the smaller the fiscal multiplier.
+
+**Implication for the UK:** the UK's fiscal multiplier is estimated at 0.6-1.2 (OBR, 2023), which is significantly below the simple textbook multiplier of 2+. This reflects the UK's openness (MPM approximately 0.3) and the importance of the exchange rate channel.
+
+### 12.2 Tax Policy: Optimal Income Tax Theory
+
+**Example.** The Mirrlees Review (2011) analysed optimal tax policy for the UK. Apply the key principles.
+
+**Optimal top rate of income tax:**
+The Laffer curve analysis gives the revenue-maximising top rate at approximately 55-60%. But the OPTIMAL rate balances revenue against efficiency and equity.
+
+**Mirrlees framework:**
+The optimal tax rate for income bracket $z$ is:
+$$\tau_z = \frac{1 - g(z)}{1 - g(z) + a \times e(z)}$$
+
+where $g(z)$ is the social marginal welfare weight (how much society values an extra pound for someone at income $z$), $a$ is the Pareto parameter (measuring inequality at the top), and $e(z)$ is the elasticity of taxable income.
+
+**Numerical application:**
+- For the top 1% (income > GBP 150,000): $g(z) = 0.2$ (society values their welfare less than average), $a = 1.5$, $e(z) = 0.5$.
+- $\tau = \frac{1 - 0.2}{1 - 0.2 + 1.5 \times 0.5} = \frac{0.8}{0.8 + 0.75} = \frac{0.8}{1.55} = 51.6\%$.
+
+- For median earners (income GBP 35,000): $g(z) = 1.0$, $a = 1.5$, $e(z) = 0.1$.
+- $\tau = \frac{1 - 1.0}{1 - 1.0 + 1.5 \times 0.1} = \frac{0}{0.15} = 0\%$.
+
+Wait, this gives zero tax at the median, which is because the social marginal welfare weight is 1.0 (equal value). The formula actually gives the MARGINAL tax rate that maximises a social welfare function that values income transfers from high-weight to low-weight individuals.
+
+**The Mirrlees Review conclusions:**
+- The optimal top rate of income tax is approximately 40-50% (below the revenue-maximising rate of 55-60%).
+- The optimal basic rate is approximately 20-25%.
+- National Insurance should be integrated with income tax (a single progressive tax).
+- Tax bases should be broad (few deductions and exemptions) to keep rates low.
+- Capital gains should be taxed at the same rate as income (to prevent tax arbitrage).
+
+**Current UK policy vs Mirrlees recommendations:**
+- Top rate: 45% (within the Mirrlees range of 40-50%).
+- Basic rate: 20% (within range).
+- NIC integration: NOT implemented. NIC is a separate tax on earnings, creating an anomaly where employed and self-employed people face different effective rates.
+- Capital gains: taxed at 18-28% (below the income tax rate of 20-45%). NOT aligned with income tax.
+- Tax base: relatively broad by international standards, but with significant deductions (pension contributions, ISA exemption, enterprise zones).
+
+**Evaluation:** The UK tax system broadly follows Mirrlees principles but falls short in several areas (NIC non-integration, CGT misalignment). The Mirrlees framework is theoretically elegant but difficult to implement because it requires precise estimates of behavioural elasticities, which are uncertain and time-varying.

@@ -1076,3 +1076,650 @@ antibiotic treatment of streptococcal pharyngitis reduces the risk of developing
 - **Genetics and V(D)J recombination** --> Review [./genetics](./genetics)
 - **Human physiology -- circulatory system** --> Review [./human-physiology](./human-physiology)
 - **Enzyme kinetics (ELISA)** --> Review [./metabolism-cell-biology](./metabolism-cell-biology)
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Calculating Antibody Titre**
+
+A patient's serum is serially diluted and tested for the presence of IgM antibodies against a pathogen:
+
+| Dilution | Antibody detected? |
+|----------|-------------------|
+| 1:2      | Yes               |
+| 1:4      | Yes               |
+| 1:8      | Yes               |
+| 1:16     | Yes               |
+| 1:32     | Yes               |
+| 1:64     | Yes               |
+| 1:128    | No                |
+| 1:256    | No                |
+
+(a) What is the antibody titre? (b) A convalescent sample from the same patient taken 2 weeks later
+shows a titre of $1:2048$. Calculate the fold increase. (c) Explain the clinical significance of a
+rising titre. (d) Why is IgM detection preferred for early diagnosis of acute infection?
+
+<details>
+<summary>Solution</summary>
+
+(a) The titre is the highest dilution at which the antibody is still detectable: **$1:64$**.
+
+(b) Fold increase $= 2048 / 64 = 32$-fold increase.
+
+(c) A rising titre (4-fold or greater increase between acute and convalescent samples) indicates a
+recent or ongoing infection. It demonstrates that the immune system is actively producing antibodies
+against the pathogen, confirming acute rather than past infection or prior vaccination. A single
+positive result cannot distinguish between past and current infection; the rising titre provides
+this temporal information.
+
+(d) IgM is the first antibody class produced in a primary immune response (appears within $1$--$2$ weeks
+of infection, peaks at $2$--$4$ weeks, then declines). IgG appears later ($2$--$4$ weeks) and persists
+long-term. Detection of IgM therefore indicates a **recent or current** infection, while IgG indicates
+either past infection, vaccination, or a later stage of current infection. IgM is also a pentamer
+(10 antigen-binding sites), making it very effective at agglutination and complement activation even
+at low concentrations.
+
+</details>
+
+**Worked Example: Clonal Selection and Memory Cell Calculation**
+
+In a primary immune response, a single B cell with the appropriate receptor is activated and expands
+into a clone of $5000$ plasma cells and $200$ memory B cells. Each plasma cell secretes $1000$ antibody
+molecules per second. (a) Calculate the total antibody production rate of the clone. (b) Upon secondary
+exposure, memory B cells rapidly expand. If each memory B cell gives rise to a clone of $10{,}000$
+plasma cells, calculate the secondary response antibody production rate. (c) Calculate the fold increase
+in antibody production rate between primary and secondary responses. (d) Explain why the secondary
+response is faster and produces more antibody.
+
+<details>
+<summary>Solution</summary>
+
+(a) Primary response: $5000$ plasma cells $\times 1000$ antibodies/s $= 5 \times 10^6$ antibodies/s
+from this clone. In practice, multiple B cell clones are activated (polyclonal response), but this
+illustrates the principle for a single clone.
+
+(b) Secondary response: $200$ memory B cells $\times 10{,}000$ plasma cells each $= 2 \times 10^6$
+plasma cells.
+Antibody production rate: $2 \times 10^6 \times 1000 = 2 \times 10^9$ antibodies/s.
+
+(c) Fold increase $= (2 \times 10^9) / (5 \times 10^6) = 400$-fold increase.
+
+(d) The secondary response is faster and stronger because:
+- **More memory cells**: the primary response generates many memory B cells ($200$ in this example)
+  that persist for years. Upon re-exposure, all memory cells are activated simultaneously.
+- **Higher affinity**: memory B cells have undergone somatic hypermutation and affinity maturation in
+  germinal centres during the primary response. Their receptors have higher affinity for the antigen,
+  leading to more efficient activation and antibody production.
+- **Class switching**: memory B cells have already undergone class switching (to IgG, IgA, or IgE),
+  allowing immediate production of high-affinity IgG (which is more effective than IgM).
+- **Isotype switching to IgG**: IgG has a longer half-life ($\approx 21$ days vs $5$ days for IgM),
+  better opsonisation (binds Fc receptors on phagocytes), and activates complement more efficiently.
+- **Faster kinetics**: memory B cells are pre-activated (express lower activation thresholds) and
+  require less co-stimulation than naive B cells.
+
+</details>
+
+**Worked Example: ELISA Calculation**
+
+A sandwich ELISA is used to measure the concentration of a viral antigen in patient serum. The
+standard curve is generated using known antigen concentrations:
+
+| Antigen concentration (ng/mL) | Absorbance at 450 nm |
+|-------------------------------|---------------------|
+| 0                             | 0.050               |
+| 5                             | 0.150               |
+| 10                            | 0.250               |
+| 20                            | 0.450               |
+| 40                            | 0.850               |
+| 80                            | 1.650               |
+
+A patient sample gives an absorbance of $0.550$. (a) Plot the standard curve and determine the
+antigen concentration in the patient sample. (b) The positive threshold (determined from negative
+controls) is $0.200$. Is the patient positive? (c) Calculate the signal-to-noise ratio if the
+negative control absorbance is $0.060$. (d) Explain the principle of the sandwich ELISA and why
+two antibodies are required.
+
+<details>
+<summary>Solution</summary>
+
+(a) Using the standard curve (approximately linear from $0$ to $40\;\mathrm{ng/mL}$):
+Slope $= (0.850 - 0.050) / (40 - 0) = 0.800 / 40 = 0.020\;\mathrm{(AU \cdot mL)/ng}$.
+Y-intercept $= 0.050$.
+
+For the patient sample: $0.550 = 0.020 \times C + 0.050$.
+$C = (0.550 - 0.050) / 0.020 = 0.500 / 0.020 = 25\;\mathrm{ng/mL}$.
+
+(b) Patient absorbance $= 0.550 > 0.200$ (positive threshold). **The patient is positive** for the
+viral antigen.
+
+(c) Signal-to-noise ratio $= \text{patient signal} / \text{negative control} = 0.550 / 0.060 = 9.2$.
+A ratio $> 3$ is generally considered significant; this result is well above that threshold.
+
+(d) **Sandwich ELISA principle**:
+1. A **capture antibody** (specific to the antigen) is coated on the bottom of the microplate well.
+2. Patient sample is added. If the antigen is present, it binds to the capture antibody.
+3. A **detection antibody** (also specific to the antigen, but binding to a different epitope) is added.
+   This antibody is conjugated to an enzyme (e.g., horseradish peroxidase, HRP).
+4. A substrate for the enzyme is added. The enzyme converts the substrate to a coloured product.
+5. The absorbance is proportional to the amount of antigen in the sample.
+
+Two antibodies are needed because: (1) the capture antibody immobilises the antigen; (2) the detection
+antibody provides specificity and signal amplification. Using two antibodies that bind different epitopes
+increases assay specificity (reducing false positives from cross-reactive substances).
+
+</details>
+
+**Worked Example: HIV and the Immune System**
+
+HIV targets $\mathrm{CD4}^+$ T helper cells. A patient's blood test shows:
+$\mathrm{CD4}^+$ T cell count $= 350\;\mathrm{cells/\mu L}$ (normal: $500$--$1600$),
+viral load $= 50{,}000\;\mathrm{copies/mL}$.
+(a) What stage of HIV infection does this represent? (b) Explain how HIV depletes $\mathrm{CD4}^+$
+cells. (c) Explain why opportunistic infections occur at this stage. (d) Explain how antiretroviral
+therapy (ART) works.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\mathrm{CD4}^+$ count of $350\;\mathrm{cells/\mu L}$ falls in the range of $200$--$500$,
+which corresponds to **stage 2 (chronic HIV infection)** or early stage 3. AIDS is defined as
+$\mathrm{CD4}^+ < 200\;\mathrm{cells/\mu L}$ or the presence of an AIDS-defining illness. This
+patient has not yet progressed to AIDS but has significant immunosuppression.
+
+(b) HIV depletes $\mathrm{CD4}^+$ T cells through multiple mechanisms:
+1. **Direct viral killing**: HIV replicates inside $\mathrm{CD4}^+$ cells, producing new virions that
+   bud from the cell membrane, causing cell lysis.
+2. **Syncytium formation**: HIV envelope glycoproteins on infected cells bind to $\mathrm{CD4}$ on
+   uninfected cells, causing cell fusion and forming multinucleated syncytia that die.
+3. **Apoptosis**: HIV infection triggers programmed cell death through various pathways (Fas/FasL,
+   caspase activation).
+4. **Immune-mediated killing**: cytotoxic T lymphocytes (CTLs) recognise and kill HIV-infected
+   $\mathrm{CD4}^+$ cells (this is beneficial for controlling the virus but also depletes $\mathrm{CD4}^+$
+   cells).
+5. **Chronic immune activation**: persistent viral replication keeps the immune system activated,
+   leading to exhaustion and apoptosis of uninfected bystander $\mathrm{CD4}^+$ cells.
+
+(c) Opportunistic infections occur because $\mathrm{CD4}^+$ T helper cells are essential for
+coordinating both cell-mediated and humoral immune responses:
+- They activate macrophages (via IFN-$\gamma$) to kill intracellular pathogens.
+- They provide help to B cells for antibody production (CD40L-CD40 interaction, cytokine secretion).
+- They activate CTLs (via IL-2).
+- With reduced $\mathrm{CD4}^+$ cells, all these functions are impaired. Pathogens that are normally
+  controlled (e.g., _Pneumocystis jirovecii_, _Mycobacterium avium_, _Candida_, cytomegalovirus)
+  cause severe, life-threatening infections.
+
+(d) **Antiretroviral therapy (ART)** typically uses a combination of three drugs from at least two classes:
+1. **Nucleoside/nucleotide reverse transcriptase inhibitors (NRTIs)**: competitive substrates that
+   cause chain termination during viral DNA synthesis (e.g., AZT/zidovudine, tenofovir).
+2. **Non-nucleoside reverse transcriptase inhibitors (NNRTIs)**: allosteric inhibitors that bind
+   RT and change its conformation, preventing DNA synthesis (e.g., efavirenz).
+3. **Protease inhibitors (PIs)**: inhibit HIV protease, preventing cleavage of viral polyproteins
+   into functional proteins (e.g., ritonavir).
+4. **Integrase inhibitors**: block HIV integrase, preventing integration of viral DNA into the host
+   genome (e.g., raltegravir).
+5. **Entry inhibitors/fusion inhibitors**: block viral entry (e.g., maraviroc blocks CCR5 co-receptor;
+   enfuvirtide blocks gp41-mediated fusion).
+
+ART does not cure HIV (the latent reservoir persists) but suppresses viral replication to undetectable
+levels, allowing immune recovery and preventing disease progression.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing antigens and antibodies**: antigens are molecules that trigger an immune response; antibodies
+  are proteins produced by B cells that bind to specific antigens.
+- **Confusing active and passive immunity**: active immunity = the body produces its own antibodies (natural
+  infection or vaccination); passive immunity = pre-formed antibodies are transferred (maternal IgG across
+  placenta, antivenom injection).
+- **Assuming all bacteria are pathogens**: most bacteria are harmless or beneficial; only a minority are
+  pathogenic.
+- **Confusing primary and secondary immune responses**: primary response = slow, weak, IgM first; secondary
+  response = fast, strong, predominantly IgG (memory-dependent).
+- **Confusing T cells and B cells**: T cells mediate cell-mediated immunity (CTLs kill infected cells;
+  helper T cells coordinate the response); B cells produce antibodies (humoral immunity).
+- **Assuming vaccines provide immediate protection**: most vaccines require time (weeks) for the primary
+  response and booster doses to develop full immunity. Some vaccines require multiple doses.
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 6: Extended Response -- Complement System</summary>
+
+Describe the three pathways of complement activation (classical, lectin, alternative). For each pathway:
+(a) identify the trigger, (b) describe the key steps leading to C3 convertase formation, (c) explain
+the common terminal pathway (membrane attack complex, MAC), and (d) describe three biological
+consequences of complement activation. (e) Explain how complement regulation prevents damage to
+host cells.
+
+</details>
+
+<details>
+<summary>Answer 6</summary>
+
+**Classical pathway**:
+(a) Trigger: antibody-antigen complexes (IgM or IgG bound to antigen).
+(b) Steps: C1q binds to the Fc region of antibody. This activates C1r and C1s (serine proteases).
+C1s cleaves C4 into C4a and C4b, and C2 into C2a and C2b. C4b2a forms the **C3 convertase**
+on the pathogen surface.
+
+**Lectin pathway**:
+(a) Trigger: mannose-binding lectin (MBL) binds to mannose residues on microbial surfaces.
+(b) Steps: MBL is associated with MASP-1 and MASP-2 (mannose-associated serine proteases), analogous
+to C1r/C1s. MASP-2 cleaves C4 and C2, forming the same C4b2a C3 convertase.
+
+**Alternative pathway**:
+(a) Trigger: spontaneous hydrolysis of C3 (tickover) on microbial surfaces. Foreign surfaces lack
+regulatory proteins (e.g., factor H), allowing amplification.
+(b) Steps: C3b binds to the microbial surface and combines with factor B. Factor D cleaves factor B,
+forming C3bBb (the alternative pathway C3 convertase). This is stabilised by properdin (factor P).
+
+**Common terminal pathway (all three pathways)**:
+The C3 convertase cleaves C3 into C3a (anaphylatoxin) and C3b (opsonin). C3b binds to the surface
+and combines with the convertase to form C5 convertase. C5 convertase cleaves C5 into C5a (anaphylatoxin,
+chemotactic factor) and C5b. C5b initiates the assembly of the **membrane attack complex (MAC)**:
+C5b recruits C6, C7, C8, and multiple C9 molecules. C9 polymerises to form a transmembrane pore
+(approximately $10\;\mathrm{nm}$ diameter) that disrupts the target cell's membrane integrity, causing
+osmotic lysis.
+
+(d) **Three biological consequences**:
+1. **Opsonisation**: C3b deposited on the pathogen surface binds to CR1 (complement receptor 1) on
+   phagocytes, enhancing phagocytosis.
+2. **Inflammation**: C3a and C5a (anaphylatoxins) cause mast cell degranulation (histamine release),
+   vasodilation, increased vascular permeability, and recruitment of neutrophils (C5a is a potent
+   chemoattractant).
+3. **Cell lysis**: the MAC forms pores in the membrane of gram-negative bacteria, enveloped viruses,
+   and parasite-infected cells, causing osmotic lysis and death.
+
+(e) **Complement regulation** prevents damage to host cells:
+- **Decay-accelerating factor (DAF, CD55)**: dissociates C3 convertases on host cell surfaces.
+- **Membrane cofactor protein (MCP, CD46)**: acts as a cofactor for factor I-mediated cleavage of
+  C3b and C4b on host cells.
+- **Factor H**: soluble regulator that binds to host cell surfaces (via sialic acid and glycosaminoglycans)
+  and promotes C3b inactivation by factor I.
+- **CD59 (protectin)**: inhibits MAC formation by preventing C9 polymerisation on host cells.
+- **C1 inhibitor (C1-INH)**: inactivates C1r and C1s, preventing excessive classical pathway activation.
+- **Viral evasion**: some viruses produce complement regulatory protein homologues (e.g., vaccinia virus
+  VCP, herpesvirus complement control proteins) to evade complement-mediated destruction.
+
+</details>
+
+<details>
+<summary>Problem 7: Data Analysis -- Blood Type Genetics and Paternity</summary>
+
+A mother has blood type A (genotype unknown) and a child has blood type O. (a) What are the possible
+genotypes of the mother? (b) What blood types are possible for the father? (c) If a man with blood
+type AB is accused of being the father, can he be excluded? (d) Explain why blood type alone is
+insufficient for definitive paternity testing.
+
+</details>
+
+<details>
+<summary>Answer 7</summary>
+
+(a) The mother is blood type A. Possible genotypes: $I^A I^A$ or $I^A i$.
+
+(b) The child is blood type O (genotype $ii$). Each parent must contribute an $i$ allele.
+Therefore, the mother must be $I^A i$ (she contributed the $i$ allele).
+The father must also contribute an $i$ allele, so the father must have at least one $i$ allele.
+Possible father genotypes: $I^A i$ (blood type A), $I^B i$ (blood type B), or $ii$ (blood type O).
+
+(c) The accused man has blood type AB (genotype $I^A I^B$). He can only contribute $I^A$ or $I^B$
+alleles to his offspring. He cannot contribute an $i$ allele. Therefore, he **cannot be the father**
+of a blood type O child. He is **excluded**.
+
+(d) Blood type alone is insufficient for definitive paternity testing because:
+- Many men share the same blood type (e.g., approximately $36\%$ of the population is blood type O;
+  a very large number of men cannot be excluded based on blood type O alone).
+- Blood typing can only exclude a man, never definitively include him (it provides exclusion, not
+  identification).
+- Modern paternity testing uses DNA profiling (STR analysis), which examines multiple highly
+  variable genetic loci and can provide paternity probabilities $> 99.99\%$.
+
+</details>
+
+<details>
+<summary>Problem 8: Extended Response -- Monoclonal Antibodies in Medicine</summary>
+
+Describe the production of monoclonal antibodies using the hybridoma technique (Kohler and Milstein,
+1975). (a) Explain each step of the process. (b) Explain why myeloma cells and B cells are fused.
+(c) Describe three therapeutic applications of monoclonal antibodies, explaining the mechanism of
+action for each. (d) Explain the difference between murine, chimeric, humanised, and fully human
+monoclonal antibodies.
+
+</details>
+
+<details>
+<summary>Answer 8</summary>
+
+(a) **Hybridoma technique**:
+1. **Immunisation**: a mouse is injected with the target antigen. The mouse's immune system produces
+   B cells that secrete antibodies specific to the antigen.
+2. **Cell harvest**: splenocytes (including antibody-producing B cells) are harvested from the mouse's
+   spleen.
+3. **Cell fusion**: splenocytes are fused with myeloma cells (immortal cancer cells) using
+   polyethylene glycol (PEG) or electrofusion.
+4. **Selection**: the cell mixture is cultured in HAT medium (hypoxanthine-aminopterin-thymidine).
+   Myeloma cells lack HGPRT (an enzyme for the salvage pathway) and die. Unfused B cells have limited
+   lifespan and die. Only hybridomas (fused B cell + myeloma) survive because the B cell provides
+   HGPRT and the myeloma provides immortality.
+5. **Screening**: hybridoma supernatants are tested for the desired antibody (using ELISA or similar).
+6. **Cloning**: positive hybridomas are subcloned by limiting dilution (single cell per well) to ensure
+   monoclonality.
+7. **Expansion and storage**: the monoclonal hybridoma is expanded in culture or in mice (ascites
+   production). Cells are cryopreserved.
+
+(b) **Why fuse myeloma and B cells**: B cells produce the desired antibody but cannot divide
+indefinitely in culture (they die after a few divisions). Myeloma cells are immortal (divide
+indefinitely) but do not produce the desired antibody. The hybridoma combines the antibody-producing
+capability of the B cell with the immortality of the myeloma cell.
+
+(c) **Therapeutic applications**:
+1. **Trastuzumab (Herceptin)**: a monoclonal antibody against HER2 (human epidermal growth factor
+   receptor 2), overexpressed in approximately $25\%$ of breast cancers. Mechanism: binds HER2,
+   blocking downstream signalling (inhibiting cell proliferation), and flags the cancer cell for
+   destruction by NK cells (ADCC -- antibody-dependent cellular cytotoxicity).
+
+2. **Rituximab**: targets CD20 on B cells. Used in non-Hodgkin lymphoma and rheumatoid arthritis.
+   Mechanism: binds CD20, causing complement-dependent cytotoxicity (CDC), ADCC, and direct
+   apoptosis of B cells. This depletes malignant or auto-reactive B cells.
+
+3. **Adalimumab (Humira)**: a monoclonal antibody against TNF-$\alpha$ (tumour necrosis factor-alpha).
+   Used in rheumatoid arthritis, Crohn's disease, and other autoimmune conditions. Mechanism: binds
+   and neutralises TNF-$\alpha$, preventing it from binding to its receptors and triggering
+   inflammation.
+
+(d) **Antibody types by human content**:
+- **Murine**: $100\%$ mouse protein. High immunogenicity in humans (human anti-mouse antibody, HAMA,
+  response). Largely replaced by newer types.
+- **Chimeric**: approximately $65\%$ human (constant regions), $35\%$ mouse (variable regions).
+  Named with "-ximab" suffix (e.g., rituximab). Reduced immunogenicity compared to murine.
+- **Humanised**: approximately $90\%$ human (all but the CDRs, complementarity-determining regions,
+  are human). Named with "-zumab" suffix (e.g., trastuzumab). Lower immunogenicity.
+- **Fully human**: $100\%$ human protein. Produced using phage display or transgenic mice with human
+  immunoglobulin genes. Named with "-umab" suffix (e.g., adalimumab). Minimal immunogenicity.
+
+</details>
+
+<details>
+<summary>Problem 9: Extended Response -- Hypersensitivity Reactions</summary>
+
+Compare and contrast the four types of hypersensitivity reactions (I, II, III, IV). For each type:
+(a) give the mechanism, (b) provide a specific example, (c) state the time course, and (d) identify
+the key effector molecules or cells involved.
+
+</details>
+
+<details>
+<summary>Answer 9</summary>
+
+| Feature | Type I (Immediate) | Type II (Cytotoxic) | Type III (Immune complex) | Type IV (Delayed-type) |
+|---------|-------------------|--------------------|------------------------|----------------------|
+| **Mechanism** | IgE-mediated; mast cell degranulation | IgG/IgM against cell-surface antigens; complement activation, ADCC | Immune complexes deposit in tissues; complement activation, neutrophil recruitment | T cell-mediated (Th1 and CTL); delayed hypersensitivity |
+| **Time course** | Minutes (immediate); late phase 2--8 hours | Hours to days | Hours to days (serum sickness: 7--10 days) | 48--72 hours (delayed) |
+| **Example** | Asthma, hay fever, anaphylaxis, food allergy | Goodpasture syndrome, transfusion reactions, haemolytic disease of newborn | Serum sickness, systemic lupus erythematosus (SLE), Arthus reaction | Tuberculin skin test (Mantoux), contact dermatitis (poison ivy), type 1 diabetes |
+| **Key effectors** | IgE, mast cells, basophils, eosinophils, histamine, leukotrienes | IgG, IgM, complement (MAC), NK cells (ADCC), macrophages | IgG, IgM, complement (C3a, C5a), neutrophils, MAC | Th1 cells (IFN-$\gamma$, IL-2), CTLs (perforin, granzyme), macrophages |
+| **Antibody involved?** | Yes (IgE) | Yes (IgG, IgM) | Yes (IgG, IgM) | No (T cell-mediated) |
+
+(d) Type I is mediated by IgE binding to Fc receptors on mast cells, triggering degranulation
+(histamine, heparin, tryptase, leukotrienes). Type II involves antibodies targeting specific cells
+(e.g., blood cells). Type III involves circulating immune complexes that deposit in small blood
+vessels, joints, and kidneys, triggering inflammation. Type IV is the only type not involving
+antibodies; it is mediated by sensitised T cells.
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **Cell membrane and receptor proteins**: Review [./cell-biology](./cell-biology) for membrane protein structure and signalling.
+- **Protein structure and antibodies**: Review [./molecular-biology](./molecular-biology) for immunoglobulin structure and antigen binding.
+- **Genetics and V(D)J recombination**: Review [./genetics](./genetics) for antibody diversity generation.
+- **Human physiology -- blood and circulation**: Review [./human-physiology](./human-physiology) for blood cell types and circulatory pathways.
+- **Molecular biology -- DNA technology**: Review [./genetics-advanced](./genetics-advanced) for monoclonal antibody production techniques.
+
+---
+
+## Supplementary: Antibody Diversity -- V(D)J Recombination (HL Extension)
+
+### The Challenge of Antibody Diversity
+
+The adaptive immune system must be able to recognise an essentially unlimited number of different
+antigens (estimated $> 10^{11}$ different specificities). However, the human genome contains only
+approximately $20{,}000$ protein-coding genes. The solution is the generation of antibody diversity
+through combinatorial and somatic mechanisms during B cell development in the bone marrow.
+
+### Antibody Structure Recap
+
+An immunoglobulin (Ig) molecule consists of:
+- **Two identical heavy chains** ($\mu$, $\delta$, $\gamma$, $\epsilon$, or $\alpha$ -- determining the
+  antibody class: IgM, IgD, IgG, IgE, or IgA).
+- **Two identical light chains** ($\kappa$ or $\lambda$).
+
+Each chain has:
+- **Variable region ($V$)**: at the N-terminus, contains the antigen-binding site. The heavy chain
+  variable region ($V_H$) and light chain variable region ($V_L$) together form the antigen-binding
+  site (two per antibody molecule).
+- **Constant region ($C$)**: determines the effector function (complement activation, Fc receptor
+  binding, placental transfer).
+
+### V(D)J Recombination
+
+The variable region of the heavy chain is encoded by three gene segments: **V (variable)**, **D
+(diversity)**, and **J (joining)**. The light chain uses only V and J segments.
+
+**Heavy chain locus (chromosome 14)**:
+- Approximately $40$--$45$ functional V gene segments
+- $23$ functional D gene segments
+- $6$ functional J gene segments
+
+**Light chain loci**:
+- $\kappa$ locus (chromosome 2): approximately $40$ V, $5$ J segments
+- $\lambda$ locus (chromosome 22): approximately $30$ V, $4$ J segments
+
+During B cell development:
+1. A D segment randomly joins to a J segment (D-J joining).
+2. A V segment randomly joins to the D-J unit (V-DJ joining).
+3. This forms a complete VDJ unit, which is transcribed together with the $\mu$ constant region to
+   produce the heavy chain of IgM.
+4. The light chain undergoes V-J joining (either $\kappa$ or $\lambda$ locus) to produce the light chain.
+5. Any successful heavy-light chain combination produces a pre-B cell receptor, followed by a B cell
+   receptor.
+
+### Sources of Antibody Diversity
+
+1. **Combinatorial diversity**: the random combination of V, D, and J segments produces many different
+   variable regions. Heavy chain: $45 \times 23 \times 6 = 6210$ combinations. Light chain: approximately
+   $40 \times 5 = 200$ ($\kappa$) or $30 \times 4 = 120$ ($\lambda$). Combined: $6210 \times 320
+   \approx 2 \times 10^6$ combinations.
+
+2. **Junctional diversity**: during V-D and D-J joining, the enzyme terminal deoxynucleotidyl transferase
+   (TdT) adds random nucleotides (P nucleotides and N nucleotides) at the junctions. Additionally,
+   exonucleases may trim nucleotides from the ends of the segments before joining. This imprecise joining
+   dramatically increases diversity, contributing an estimated $3 \times 10^7$ additional combinations.
+
+3. **Combinatorial association**: any heavy chain can pair with any light chain, further multiplying
+   diversity.
+
+4. **Somatic hypermutation**: after antigen exposure, activated B cells in germinal centres undergo
+   point mutations in the variable region at a rate of approximately $10^{-3}$ per base pair per
+   generation ($10^6\times$ the normal mutation rate). This produces B cell clones with higher or
+   lower affinity for the antigen. Those with higher affinity are selected for survival (affinity
+   maturation).
+
+5. **Class switching**: the constant region of the heavy chain can be changed (from IgM to IgG, IgA,
+   or IgE) by a DNA recombination event called switch recombination. The variable region (and
+   therefore antigen specificity) remains the same, but the effector function changes.
+
+### Worked Example: Calculating Antibody Diversity
+
+Given the following numbers of functional gene segments:
+- Heavy chain: $44$ V, $27$ D, $6$ J
+- $\kappa$ light chain: $38$ V, $5$ J
+- $\lambda$ light chain: $29$ V, $4$ J
+
+(a) Calculate the combinatorial diversity from V(D)J recombination alone. (b) If junctional diversity
+adds a factor of approximately $10^7$ for the heavy chain, calculate the total diversity including
+junctional and combinatorial mechanisms. (c) If somatic hypermutation introduces an average of $5$
+mutations per variable region (which has $300\;\mathrm{bp}$), and each mutation can be one of $3$
+possible nucleotide changes, calculate the additional diversity from somatic hypermutation for a
+single B cell clone.
+
+<details>
+<summary>Solution</summary>
+
+(a) Heavy chain combinations: $44 \times 27 \times 6 = 7128$.
+$\kappa$ light chain: $38 \times 5 = 190$.
+$\lambda$ light chain: $29 \times 4 = 116$.
+Total light chain: $190 + 116 = 306$.
+Combinatorial diversity: $7128 \times 306 = 2{,}181{,}168 \approx 2.2 \times 10^6$.
+
+(b) With junctional diversity ($\times 10^7$ for heavy chain):
+$7128 \times 10^7 \times 306 = 2.2 \times 10^{13}$.
+
+(c) Somatic hypermutation: for $5$ mutations in $300\;\mathrm{bp}$, each mutation has $3$ possible
+nucleotide changes. The number of distinct sequences generated:
+$\binom{300}{5} \times 3^5 = \frac{300!}{5! \times 295!} \times 243$
+$\binom{300}{5} \approx 2.05 \times 10^{10}$
+$2.05 \times 10^{10} \times 243 \approx 5 \times 10^{12}$
+
+So a single B cell clone can generate approximately $5 \times 10^{12}$ variant sequences through
+somatic hypermutation. In practice, not all variants will be viable (some will introduce stop codons
+or destabilise the protein), but this illustrates the enormous potential for affinity maturation.
+
+</details>
+
+### The Major Histocompatibility Complex (MHC)
+
+The MHC (called HLA in humans -- Human Leukocyte Antigen) is a cluster of genes on chromosome 6 that
+encode cell-surface proteins responsible for presenting antigens to T cells.
+
+**Class I MHC (HLA-A, -B, -C)**:
+- Expressed on **all nucleated cells**.
+- Present **endogenous antigens** (intracellular proteins, e.g., viral proteins, tumour antigens)
+  to $\mathrm{CD8}^+$ cytotoxic T cells (CTLs).
+- Structure: heavy chain ($\alpha$ chain) + $\beta_2$-microglobulin. The antigen-binding groove is
+  formed by the $\alpha_1$ and $\alpha_2$ domains.
+- Pathway: intracellular proteins are degraded by the proteasome, transported into the ER by TAP
+  (transporter associated with antigen processing), loaded onto MHC class I, and displayed on the
+  cell surface.
+
+**Class II MHC (HLA-DR, -DP, -DQ)**:
+- Expressed on **antigen-presenting cells** (dendritic cells, macrophages, B cells).
+- Present **exogenous antigens** (extracellular proteins, e.g., bacteria, toxins) to $\mathrm{CD4}^+$
+  helper T cells.
+- Structure: $\alpha$ chain + $\beta$ chain. The antigen-binding groove is formed by the $\alpha_1$
+  and $\beta_1$ domains.
+- Pathway: extracellular proteins are endocytosed, degraded in endolysosomes, loaded onto MHC class II
+  (assisted by HLA-DM), and displayed on the cell surface.
+
+**Polymorphism**: MHC genes are the most polymorphic in the human genome (thousands of alleles per
+gene). This diversity ensures that at least some individuals in a population can present peptides from
+any pathogen (balancing selection). MHC differences between individuals are the molecular basis for
+transplant rejection (the immune system recognises foreign MHC as non-self).
+
+### T Cell Development and Selection
+
+T cells develop in the thymus from bone marrow-derived progenitors:
+
+1. **Double-negative stage** ($\mathrm{CD4}^-\mathrm{CD8}^-$): T cell receptor (TCR) beta chain
+   rearrangement occurs. Successful rearrangement produces the pre-TCR, which signals for proliferation
+   and alpha chain rearrangement.
+
+2. **Double-positive stage** ($\mathrm{CD4}^+\mathrm{CD8}^+$): TCR alpha chain rearrangement completes.
+   Cells that produce a functional TCR are selected for further development.
+
+3. **Positive selection** (in the thymic cortex): double-positive T cells interact with cortical
+   thymic epithelial cells expressing MHC class I and class II. T cells whose TCR can recognise
+   self-MHC (weakly) receive survival signals. T cells that cannot recognise any self-MHC die by
+   neglect (apoptosis). This ensures MHC restriction (T cells only recognise antigens presented by
+   self-MHC).
+
+4. **Negative selection** (in the thymic medulla): T cells that react strongly to self-antigens
+   presented by self-MHC are deleted by apoptosis (clonal deletion). This eliminates self-reactive
+   T cells and establishes central tolerance. Medullary thymic epithelial cells (mTECs) express
+   AIRE (autoimmune regulator), which promotes the expression of tissue-specific antigens in the
+   thymus, allowing negative selection against these antigens.
+
+5. **Single-positive stage**: surviving T cells become either $\mathrm{CD4}^+$ (if selected on MHC class II)
+   or $\mathrm{CD8}^+$ (if selected on MHC class I) and exit the thymus as naive T cells.
+
+Approximately $98\%$ of developing T cells die in the thymus (negative selection and failed positive
+selection). Only about $2\%$ survive to enter the circulation as mature, self-tolerant T cells.
+
+### Types of Hypersensitivity -- Extended Table
+
+| Feature | Type I (Immediate) | Type II (Cytotoxic) | Type III (Immune complex) | Type IV (Delayed) |
+|---------|-------------------|--------------------|------------------------|----------------------|
+| **Onset** | Seconds--minutes | Hours--days | Hours--days | 48--72 hours |
+| **Mediator** | IgE, mast cells | IgG, IgM, complement | IgG, IgM, complement | T cells (Th1, CTL) |
+| **Mechanism** | Allergen cross-links IgE on mast cells | Antibody binds cell surface antigen | Circulating immune complexes deposit in tissues | Sensitised T cells release cytokines |
+| **Example** | Hay fever, anaphylaxis | Haemolytic disease of newborn | Serum sickness | Contact dermatitis, TB test |
+| **Treatment** | Antihistamines, adrenaline, allergen avoidance | Immunosuppressants, plasmapheresis | Anti-inflammatory drugs, immunosuppressants | Topical corticosteroids, calcineurin inhibitors |
+
+### ABO Blood Group System -- Extended Details
+
+The ABO blood group is determined by the presence of specific carbohydrate antigens on the surface
+of red blood cells:
+
+- **Type A**: N-acetylgalactosamine (GalNAc) antigen. Anti-B antibodies in plasma.
+- **Type B**: Galactose antigen. Anti-A antibodies in plasma.
+- **Type AB**: both A and B antigens. No anti-A or anti-B antibodies.
+- **Type O**: neither A nor B antigen. Both anti-A and anti-B antibodies.
+
+The antigens are synthesised by glycosyltransferases encoded by the ABO gene on chromosome 9.
+The O allele encodes an inactive enzyme (frameshift mutation), so no antigen is produced.
+
+**Universal donor**: type O (no A or B antigens to trigger recipient's antibodies). Can donate red
+blood cells to any type in emergencies (but only after cross-matching for other antigens).
+
+**Universal recipient**: type AB (no anti-A or anti-B antibodies to react with donor antigens). Can
+receive red blood cells from any type.
+
+**Haemolytic disease of the newborn (HDNB)**: if an Rh-negative mother carries an Rh-positive
+fetus, she may produce anti-Rh (anti-D) IgG antibodies (usually during the second pregnancy, when
+fetal red cells cross the placenta during delivery and sensitise the mother). These IgG antibodies
+cross the placenta in subsequent pregnancies and destroy fetal Rh-positive red blood cells, causing
+anaemia, jaundice, oedema, and in severe cases, hydrops fetalis (heart failure). Prevention:
+RhoGAM (anti-D immunoglobulin) is administered to the Rh-negative mother at 28 weeks' gestation
+and within 72 hours of delivery to prevent sensitisation.
+
+### Worked Example: Blood Transfusion Compatibility
+
+A patient with blood type B- (B negative, meaning Rh D negative) requires a blood transfusion.
+The blood bank has the following units available: A+, A-, B+, B-, AB+, AB-, O+, O-.
+(a) Which units can be safely transfused? (b) Explain the basis for compatibility. (c) Why is
+Rh compatibility particularly important for women of childbearing age?
+
+<details>
+<summary>Solution</summary>
+
+(a) Compatible units for a B- recipient:
+- **ABO**: the recipient has anti-A antibodies. Only B or O red blood cells are compatible (no A antigen).
+- **Rh**: the recipient is Rh-negative and may have anti-D antibodies if previously sensitised. Only
+  Rh-negative units are safe.
+- **Compatible**: B- and O-.
+
+(b) ABO compatibility: the recipient's anti-A antibodies would attack any donor red blood cells
+with the A antigen (types A and AB), causing a transfusion reaction (agglutination, complement
+activation, haemolysis). Type B has the B antigen (no reaction with anti-A). Type O has neither A
+nor B antigens (universal donor for ABO).
+
+Rh compatibility: if the recipient has been previously sensitised to the D antigen (via pregnancy,
+transfusion, or trauma), their anti-D antibodies would attack Rh+ donor cells. Even if not sensitised,
+transfusion with Rh+ blood could sensitise the recipient for future pregnancies.
+
+(c) Rh compatibility is critical for women of childbearing age because:
+- If an Rh-negative woman receives Rh+ blood, she will be sensitised to the D antigen.
+- In a subsequent pregnancy with an Rh-positive fetus, her anti-D IgG antibodies can cross the
+  placenta and destroy fetal red blood cells (haemolytic disease of the newborn).
+- This can be prevented by using only Rh-negative blood products for Rh-negative women of
+  childbearing age.
+
+</details>

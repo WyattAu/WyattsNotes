@@ -753,3 +753,722 @@ approximately $1$ in $25$. How does this affect the probability for a random mat
 - **Enzyme kinetics and metabolism** --> Review [./metabolism-cell-biology](./metabolism-cell-biology)
 - **Evolution and population genetics** --> Review [./evolution-depth](./evolution-depth)
 - **Immunology and antibodies** --> Review [./immunology](./immunology)
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Nucleotide Counting and Chargaff's Rules**
+
+A double-stranded DNA molecule is $1200\;\mathrm{bp}$ long and contains $300$ adenine bases on one strand.
+(a) Determine the number of each nucleotide on both strands. (b) Calculate the total number of hydrogen
+bonds holding the two strands together. (c) If this DNA codes for a protein, what is the maximum number
+of amino acids in the protein?
+
+<details>
+<summary>Solution</summary>
+
+(a) In double-stranded DNA, A pairs with T and G pairs with C (Chargaff's rules: $A = T$, $G = C$).
+
+If strand 1 has $300$ A, then:
+- Strand 1: $A = 300$, and strand 2 (complementary) has $T = 300$ at those positions.
+- Total $T$ in the molecule: the $300$ T on strand 2 that pair with the $300$ A on strand 1. But strand 1 also has its own T bases.
+
+Total base pairs $= 1200$. Total nucleotides $= 2400$.
+
+Let $A_1$ be the number of A on strand 1 $= 300$.
+Then $T_2 = A_1 = 300$ (T on strand 2 pairing with A on strand 1).
+
+Since the molecule has $2400$ total nucleotides, and $A_{total} = T_{total}$, $G_{total} = C_{total}$:
+$A_{total} + T_{total} + G_{total} + C_{total} = 2400$
+$2A_{total} + 2G_{total} = 2400$
+$A_{total} + G_{total} = 1200$
+
+But we only know $A_1 = 300$, not $A_{total}$. We need more information. If the problem states that one strand has $300$ A bases, then:
+- Strand 1 has $A_1 = 300$, so strand 2 has $T_2 = 300$ at those positions.
+- Strand 1 has $1200 - 300 = 900$ remaining positions. If $G_1 = x$, then $C_1 = y$ and $T_1 = z$ where $x + y + z = 900$.
+- Without additional information about the GC content, we cannot determine unique values. However, the key relationships are:
+  - $A_{total} = T_{total}$ and $G_{total} = C_{total}$.
+  - If the GC content is $40\%$, then $G_{total} = C_{total} = 0.20 \times 2400 = 480$ each, and $A_{total} = T_{total} = 240$ each.
+
+(b) A--T pairs have 2 hydrogen bonds; G--C pairs have 3 hydrogen bonds.
+If GC content is $40\%$: $480$ G--C pairs $\times 3 = 1440$ H-bonds; $240$ A--T pairs $\times 2 = 480$ H-bonds. Total $= 1920$ H-bonds.
+
+(c) Maximum amino acids $= \frac{1200}{3} = 400$ amino acids (assuming no stop codons in the coding sequence, which is unrealistic; the actual number would be fewer due to stop codons and non-coding regions).
+
+</details>
+
+**Worked Example: Restriction Mapping**
+
+A circular plasmid of $5000\;\mathrm{bp}$ is digested individually and in combination with two restriction
+enzymes, EcoRI and BamHI. The results are:
+
+- EcoRI alone: $2000\;\mathrm{bp}$, $3000\;\mathrm{bp}$
+- BamHI alone: $1500\;\mathrm{bp}$, $3500\;\mathrm{bp}$
+- EcoRI + BamHI: $500\;\mathrm{bp}$, $1000\;\mathrm{bp}$, $1500\;\mathrm{bp}$, $2000\;\mathrm{bp}$
+
+Determine the restriction map showing the positions and order of the EcoRI and BamHI sites.
+
+<details>
+<summary>Solution</summary>
+
+From single digests:
+- EcoRI produces 2 fragments ($2000$ and $3000$), so there are 2 EcoRI sites.
+- BamHI produces 2 fragments ($1500$ and $3500$), so there are 2 BamHI sites.
+
+Total fragments from double digest: 4, which equals $2 \times 2$ (the expected number for 2 enzymes with 2 sites each, if no sites overlap).
+
+The double digest fragments sum to: $500 + 1000 + 1500 + 2000 = 5000\;\mathrm{bp}$ (correct).
+
+To construct the map, compare single and double digest fragments:
+- The $1500\;\mathrm{bp}$ fragment appears in both BamHI alone and the double digest. This means one BamHI--BamHI fragment is not cut by EcoRI. So the $1500\;\mathrm{bp}$ BamHI fragment remains intact in the double digest.
+- The $2000\;\mathrm{bp}$ EcoRI fragment appears in both EcoRI alone and the double digest. So one EcoRI--EcoRI fragment is not cut by BamHI.
+
+Working through the overlaps:
+- The $2000\;\mathrm{bp}$ EcoRI fragment (from single digest) is cut into $500 + 1500$ in the double digest (since $500 + 1500 = 2000$). Wait -- $2000$ appears in the double digest, so this fragment is NOT cut by BamHI.
+- The $3000\;\mathrm{bp}$ EcoRI fragment is cut by BamHI into $1000 + 2000$ in the double digest. ($1000 + 2000 = 3000$.)
+
+So BamHI cuts within the $3000\;\mathrm{bp}$ EcoRI fragment, splitting it into $1000$ and $2000$.
+
+Now: the $1500\;\mathrm{bp}$ BamHI fragment is not cut by EcoRI (it appears intact in the double digest). The $3500\;\mathrm{bp}$ BamHI fragment is cut by EcoRI into $500 + 1000 + 2000 = 3500$. That gives 3 fragments from one region, but we only have $500$ and $1000$ and $1500$ and $2000$ in the double digest.
+
+Let me reconsider: the $3500\;\mathrm{bp}$ BamHI fragment is cut by EcoRI. Since the $2000\;\mathrm{bp}$ EcoRI fragment is uncut, the EcoRI sites must lie within the $3500\;\mathrm{bp}$ BamHI fragment. The $3500\;\mathrm{bp}$ region is cut by 2 EcoRI sites into 3 pieces. But we need these pieces plus the intact $1500\;\mathrm{bp}$ fragment to give the double digest fragments.
+
+The $3500\;\mathrm{bp}$ BamHI fragment, when cut by 2 EcoRI sites, produces 3 fragments that sum to $3500$. From the double digest, the fragments within this region would be $500$, $1000$, and $2000$ ($500 + 1000 + 2000 = 3500$).
+
+So the order around the circular plasmid is: BamHI -- $500$ -- EcoRI -- $1000$ -- EcoRI -- $2000$ -- BamHI -- $1500$ -- (back to start).
+
+Verification: EcoRI to EcoRI $= 1000\;\mathrm{bp}$ (short fragment), and the other EcoRI to EcoRI (going the other way around) $= 500 + 1500 + 2000 = 4000$. But EcoRI alone gave $2000$ and $3000$. This does not match.
+
+Let me redo this more carefully. Label the four sites in order around the circle: let us place them as positions on a linear map $0$ to $5000$.
+
+BamHI sites at positions $0$ and $1500$ (giving fragments $1500$ and $3500$).
+EcoRI sites need to be placed such that EcoRI-to-EcoRI distances are $2000$ and $3000$.
+
+If EcoRI sites are at positions $a$ and $b$ (with $a < b$), then $b - a = 2000$ (or $3000$) and $(5000 - b) + a = 3000$ (or $2000$).
+
+Case 1: $b - a = 2000$, $(5000 - b) + a = 3000$.
+
+Now, BamHI cuts at $0$ and $1500$. The double digest fragments come from cutting at all four sites.
+
+Case 1a: Place $a = 500$, $b = 2500$. Sites in order: $0$ (BamHI), $500$ (EcoRI), $1500$ (BamHI), $2500$ (EcoRI).
+Fragments: $500 - 0 = 500$, $1500 - 500 = 1000$, $2500 - 1500 = 1000$, $5000 - 2500 = 2500$.
+Double digest: $500, 1000, 1000, 2500$. This does not match ($500, 1000, 1500, 2000$).
+
+Case 1b: Place $a = 500$, $b = 2500$ is wrong. Let me try $a = 2000$, $b = 4000$. Sites in order: $0$ (BamHI), $1500$ (BamHI), $2000$ (EcoRI), $4000$ (EcoRI).
+Fragments: $1500, 500, 2000, 1000$. That gives $500, 1000, 1500, 2000$. This matches.
+
+So the restriction map (going clockwise from position 0):
+- BamHI at $0$
+- BamHI at $1500$
+- EcoRI at $2000$
+- EcoRI at $4000$
+
+Fragments: BamHI--BamHI $= 1500$; BamHI--EcoRI $= 500$; EcoRI--EcoRI $= 2000$; EcoRI--BamHI $= 1000$.
+
+Verification: EcoRI alone: $2000$ (between the two EcoRI sites) and $3000$ (the rest of the circle). BamHI alone: $1500$ and $3500$. Double digest: $500, 1000, 1500, 2000$. All correct.
+
+</details>
+
+**Worked Example: Sanger Sequencing Reading**
+
+A Sanger sequencing reaction using the ddNTP chain termination method produces the following gel
+electrophoresis results (read from bottom to top, smallest to largest fragment):
+
+| Fragment size (from bottom) | Lane A | Lane T | Lane C | Lane G |
+|--------------------------|--------|--------|--------|--------|
+| 1 (shortest)             |        |        | band   |        |
+| 2                        |        | band   |        |        |
+| 3                        |        |        |        | band   |
+| 4                        | band   |        |        |        |
+| 5                        |        |        | band   |        |
+| 6                        |        | band   |        |        |
+| 7                        | band   |        |        |        |
+| 8                        |        |        |        | band   |
+| 9                        |        |        | band   |        |
+| 10                       | band   |        |        |        |
+
+Determine the sequence of the template strand ($5' \to 3'$) and the complementary strand.
+
+<details>
+<summary>Solution</summary>
+
+In Sanger sequencing, each lane shows fragments terminating with a specific ddNTP. The bands are read
+from shortest (bottom) to longest (top), giving the sequence of the **newly synthesised strand** in the
+$5' \to 3'$ direction.
+
+Reading from position 1 to 10: C, T, G, A, C, T, A, G, C, A.
+
+New strand ($5' \to 3'$): $5'$-CTGACTAGCA-$3'$
+
+The new strand is synthesised complementary to the template strand. The template strand is read in
+the $3' \to 5'$ direction by DNA polymerase, so:
+
+Template strand ($3' \to 5'$): $3'$-GACTGATCGT-$5'$, which written $5' \to 3'$ is:
+$5'$-TGCTAGTCAG-$3'$
+
+The coding strand (same as new strand, $5' \to 3'$): $5'$-CTGACTAGCA-$3'$
+
+Translation (assuming the reading frame starts at position 1):
+Codons: CTG, ACT, AGC, A
+Amino acids: Leu, Thr, Ser (the last nucleotide is incomplete)
+
+</details>
+
+**Worked Example: Genetic Probability with Multiple Genes**
+
+In humans, albinism is caused by an autosomal recessive allele ($a$). Cystic fibrosis is caused by an
+autosomal recessive allele ($c$). Both conditions are rare. A couple, both phenotypically normal, have
+a child with both albinism and cystic fibrosis. (a) What are the genotypes of the parents? (b) What is
+the probability that their next child will be phenotypically normal (neither condition)? (c) What is
+the probability that their next child will be a carrier of both conditions but phenotypically normal?
+
+<details>
+<summary>Solution</summary>
+
+(a) Since the child has both conditions ($aacc$), each parent must carry at least one recessive allele
+for each gene. Both parents are phenotypically normal, so their genotypes are $AaCc$.
+
+(b) For each gene independently, $Aa \times Aa \to \frac{3}{4}$ normal phenotype.
+$P(\text{normal for both}) = \frac{3}{4} \times \frac{3}{4} = \frac{9}{16}$
+
+(c) Carrier of both but normal: genotype must be $AaCc$.
+$P(AaCc) = P(Aa) \times P(Cc) = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$
+
+(Note: this assumes the two genes are on different chromosomes. If linked, the calculation would
+differ depending on the recombination frequency.)
+
+</details>
+
+**Worked Example: Analysing a Pedigree for X-Linked Dominant Inheritance**
+
+A family shows the following pattern for a rare disorder:
+- A affected father (I-1) and unaffected mother (I-2) have 4 children: 2 affected daughters, 1 unaffected daughter, 1 affected son.
+- One affected daughter (II-1) marries an unaffected man (II-2) and has 2 affected daughters and 1 unaffected son.
+
+(a) Determine the mode of inheritance. (b) State the genotypes of all individuals. (c) Calculate the
+probability that II-1 and II-2's next child will be affected.
+
+<details>
+<summary>Solution</summary>
+
+(a) Key observations:
+- Affected father passes the condition to both sons and daughters (rules out Y-linked).
+- All affected fathers' daughters are affected (consistent with X-linked dominant).
+- An affected father has an affected son: this rules out X-linked inheritance (fathers pass X only to daughters, Y to sons). An affected son means he received a Y from his father, so the trait must be autosomal dominant.
+
+Wait -- re-reading: the affected father has an affected son. Under X-linked dominant, a father passes his X to daughters and Y to sons, so sons of an affected father should be unaffected. Since there IS an affected son, this is **autosomal dominant**.
+
+(b) Let $D$ = dominant (affected), $d$ = recessive (unaffected).
+- I-1: $Dd$ (affected, must carry $d$ since the condition is rare)
+- I-2: $dd$ (unaffected)
+- Children of I-1 $\times$ I-2: each has $\frac{1}{2}$ probability of $Dd$ (affected) or $dd$ (unaffected).
+- II-1 (affected daughter): $Dd$
+- II-2 (unaffected husband): $dd$
+- II-1 $\times$ II-2: each child has $\frac{1}{2}$ probability of being $Dd$ (affected) or $dd$ (unaffected).
+
+(c) Probability next child is affected: $\frac{1}{2}$.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing PCR primers with RNA primers**: PCR uses DNA primers (short, synthetic, heat-stable); in vivo replication uses RNA primers synthesised by primase.
+- **Assuming sticky ends from different enzymes are compatible**: only fragments cut with the same restriction enzyme (or enzymes producing identical overhangs) can be ligated directly.
+- **Forgetting that qPCR measures DNA amount, not RNA**: to measure gene expression (RNA), you must first perform reverse transcription (RT-qPCR).
+- **Misidentifying the template strand in Sanger sequencing**: the gel bands represent the newly synthesised strand, not the template.
+- **Assuming autosomal dominant conditions cannot skip generations**: while rare, reduced penetrance can cause an individual to carry the allele without expressing the phenotype.
+- **Confusing recombination frequency with map distance for large distances**: recombination frequency plateaus at $50\%$ for genes far apart or on different chromosomes, so map distances $> 50\;\mathrm{cM}$ require mapping functions (e.g., Kosambi or Haldane).
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 6: Extended Response -- Nucleotide Excision Repair</summary>
+
+UV radiation causes thymine dimers (covalent bonds between adjacent thymine bases on the same DNA strand).
+(a) Explain why thymine dimers are problematic for DNA replication and transcription. (b) Describe the
+process of nucleotide excision repair (NER) in eukaryotic cells, naming all key proteins involved. (c)
+Explain why individuals with xeroderma pigmentosum (XP) have a greatly increased risk of skin cancer.
+(d) Compare NER with base excision repair (BER), explaining when each is used.
+
+</details>
+
+<details>
+<summary>Answer 6</summary>
+
+(a) Thymine dimers distort the DNA double helix, causing a kink. During replication, DNA polymerase
+cannot read past the dimer, stalling the replication fork and potentially leading to double-strand breaks
+or error-prone translesion synthesis. During transcription, RNA polymerase may stall or incorporate
+incorrect nucleotides, producing mutated mRNA and potentially dysfunctional proteins.
+
+(b) Nucleotide excision repair in eukaryotes (global genome NER):
+1. **Damage recognition**: the XPC-RAD23B complex recognises the helix distortion caused by the thymine dimer.
+2. **Verification**: TFIIH (containing XPB and XPD helicases) verifies the damage and unwinds approximately $20$--$30\;\mathrm{bp}$ of DNA around the lesion.
+3. **Incision**: endonucleases XPG (cuts $3'$ to the damage) and XPF-ERCC1 (cuts $5'$ to the damage) excise an oligonucleotide of approximately $24$--$32$ nucleotides.
+4. **Gap filling**: DNA polymerases $\delta$ or $\varepsilon$ (with PCNA) synthesise new DNA using the undamaged strand as a template.
+5. **Ligation**: DNA ligase I seals the nick.
+
+(c) Xeroderma pigmentosum is caused by mutations in NER genes (XPA through XPG). Without functional NER,
+thymine dimers accumulate. Each dimer is a potential mutation site; mutations in tumour suppressor genes
+(e.g., p53) or proto-oncogenes can lead to uncontrolled cell division and skin cancer. XP patients are
+extremely sensitive to UV light and develop skin cancers at a young age.
+
+(d) NER removes bulky, helix-distorting lesions (thymine dimers, chemical adducts) by excising a
+segment of approximately $30$ nucleotides. BER removes small, non-helix-distorting base modifications
+(deaminated bases, oxidised bases like 8-oxoguanine, alkylated bases) by excising a single damaged base:
+a specific DNA glycosylase recognises and removes the damaged base, AP endonuclease cuts the backbone,
+DNA polymerase $\beta$ fills the single-nucleotide gap, and DNA ligase seals it.
+
+</details>
+
+<details>
+<summary>Problem 7: Quantitative -- PCR Efficiency and Copy Number</summary>
+
+A qPCR reaction starts with $10^4$ copies of a target DNA fragment. After 30 cycles, the fluorescence
+signal reaches the threshold. (a) Assuming $100\%$ efficiency (doubling each cycle), calculate the
+theoretical number of copies after 30 cycles. (b) If the actual efficiency is $92\%$ (each cycle
+produces $1.92\times$ copies), calculate the actual number of copies. (c) The reaction contains
+$100\;\mathrm{\mu L}$ total volume. Calculate the final concentration in copies/$\mathrm{\mu L}$.
+(d) Explain why PCR efficiency is typically less than $100\%$.
+
+</details>
+
+<details>
+<summary>Answer 7</summary>
+
+(a) At $100\%$ efficiency, copies double each cycle: $N = N_0 \times 2^n = 10^4 \times 2^{30}$.
+$2^{10} = 1024 \approx 10^3$, so $2^{30} = (2^{10})^3 \approx 10^9$.
+$N = 10^4 \times 1.074 \times 10^9 = 1.074 \times 10^{13}$ copies.
+
+More precisely: $2^{30} = 1073741824$.
+$N = 10000 \times 1073741824 = 1.074 \times 10^{13}$ copies.
+
+(b) At $92\%$ efficiency: $N = N_0 \times (1 + E)^n = 10^4 \times (1.92)^{30}$.
+$(1.92)^{30}$: $\ln(1.92) = 0.6523$, so $30 \times 0.6523 = 19.569$, $e^{19.569} = 3.17 \times 10^8$.
+$N = 10^4 \times 3.17 \times 10^8 = 3.17 \times 10^{12}$ copies.
+
+(c) Concentration: $\frac{3.17 \times 10^{12}}{100} = 3.17 \times 10^{10}$ copies/$\mu\mathrm{L}$.
+
+(d) PCR efficiency is less than $100\%$ because: primers may anneal imperfectly, DNA polymerase may
+dissociate from the template, secondary structures in the DNA may block polymerase progression,
+reagents become limiting in later cycles, and the denaturation temperature may not fully separate all
+DNA strands.
+
+</details>
+
+<details>
+<summary>Problem 8: Extended Response -- Transcription Factors and Development</summary>
+
+The Hox genes are a family of transcription factors that control body plan development in animals.
+(a) Explain what is meant by "transcription factor" and describe the general structure of a
+sequence-specific transcription factor. (b) Explain the concept of colinearity as it applies to Hox
+genes. (c) A mutation in a Hox gene causes a homeotic transformation (e.g., legs developing in place
+of antennae in _Drosophila_). Explain how a single gene mutation can cause such a dramatic phenotypic
+change. (d) Discuss why Hox genes are highly conserved across animal phyla.
+
+</details>
+
+<details>
+<summary>Answer 8</summary>
+
+(a) A transcription factor is a protein that binds to specific DNA sequences (enhancers or promoters)
+and regulates (activates or represses) the transcription of target genes. General structure of a
+sequence-specific transcription factor:
+- **DNA-binding domain**: recognises and binds to a specific DNA sequence (e.g., zinc finger,
+  helix-turn-helix, leucine zipper, basic helix-loop-helix motifs).
+- **Activation domain** (or repression domain): interacts with other transcription factors, co-activators,
+  or components of the basal transcription machinery (e.g., RNA polymerase II) to modulate transcription.
+- **Regulatory domain**: responds to signalling molecules (e.g., ligand binding, phosphorylation) that
+  control the transcription factor's activity.
+
+(b) Colinearity refers to the correspondence between the order of Hox genes on the chromosome and their
+spatial expression pattern along the anterior-posterior axis of the embryo. Hox genes at the $3'$ end of
+the cluster are expressed anteriorly; those at the $5'$ end are expressed posteriorly. Additionally, the
+temporal order of expression follows the chromosomal order: $3'$ genes are expressed earlier in
+development.
+
+(c) Hox genes encode transcription factors that regulate the expression of many downstream genes
+involved in segment identity. A mutation in a Hox gene changes the spatial expression pattern of the
+transcription factor, causing the wrong set of downstream genes to be activated in a given body segment.
+For example, in _Drosophila_, the _Antennapedia_ mutation causes the Antennapedia protein (normally
+expressed in thoracic segments) to be expressed in the head, activating leg-development genes instead
+of antenna-development genes. This illustrates the concept of a **master regulatory gene**: one gene
+controlling the expression of an entire developmental programme.
+
+(d) Hox genes are highly conserved because they control fundamental aspects of body plan development.
+Mutations in Hox genes typically have severe consequences (often lethal), creating strong purifying
+selection against changes. The homeobox domain (the DNA-binding region) is particularly conserved
+because it must recognise specific DNA sequences; even small changes could alter target gene
+recognition. The conservation of Hox genes across bilaterians (from fruit flies to humans) reflects
+their essential role in a developmental toolkit that evolved in the common ancestor of all bilaterian
+animals.
+
+</details>
+
+<details>
+<summary>Problem 9: Data Analysis -- Codon Usage and tRNA Abundance</summary>
+
+The following table shows the codon usage frequency (per 1000 codons) for leucine in a bacterial genome
+and the corresponding tRNA gene copy number:
+
+| Codon | Usage (per 1000) | tRNA gene copies |
+|-------|-------------------|-------------------|
+| UUA   | 12                | 1                 |
+| UUG   | 35                | 3                 |
+| CUU   | 14                | 2                 |
+| CUC   | 10                | 1                 |
+| CUA   | 7                 | 1                 |
+| CUG   | 52                | 5                 |
+
+(a) Explain the correlation between codon usage and tRNA gene copy number. (b) A synthetic gene for
+human insulin is to be expressed in this bacterium. The human insulin gene uses the following leucine
+codons: CUG ($40\%$), UUA ($20\%$), CUU ($15\%$), CUA ($15\%$), UUG ($10\%$). Suggest how the gene
+could be optimised for expression in this bacterium. (c) Explain why codon optimisation increases
+protein yield.
+
+</details>
+
+<details>
+<summary>Answer 9</summary>
+
+(a) There is a positive correlation between codon usage frequency and tRNA gene copy number. Codons used
+more frequently (e.g., CUG with $52$ per $1000$) have more tRNA gene copies ($5$ copies), while rare
+codons (e.g., CUA with $7$ per $1000$) have fewer tRNA gene copies ($1$ copy). This ensures that
+abundant tRNAs match the most frequently used codons, maximising translational efficiency.
+
+(b) The human insulin gene uses some rare codons in the bacterium (UUA, CUA). To optimise expression,
+replace rare codons with synonymous codons that are frequently used in the bacterium:
+- Replace UUA ($12$ per $1000$) with CUG ($52$ per $1000$) or UUG ($35$ per $1000$).
+- Replace CUA ($7$ per $1000$) with CUG ($52$ per $1000$).
+- Keep CUG and UUG (already well-matched).
+- Keep CUU ($14$ per $1000$ with $2$ tRNA copies) -- acceptable.
+
+This is **codon optimisation**: synthesising a gene with codons preferred by the host organism.
+
+(c) Codon optimisation increases protein yield because:
+- When a rare codon is encountered, the corresponding tRNA is scarce. The ribosome pauses or stalls while
+  waiting for the correct aminoacyl-tRNA.
+- Prolonged stalling can cause ribosome dissociation (drop-off), premature termination, or mRNA
+  degradation.
+- Codon optimisation ensures abundant tRNAs are available for each codon, maintaining fast, smooth
+  translation and maximising protein output per mRNA molecule.
+
+</details>
+
+<details>
+<summary>Problem 10: Extended Response -- CRISPR-Cas9 Gene Editing</summary>
+
+CRISPR-Cas9 is a revolutionary gene editing technology. (a) Describe the natural function of CRISPR-Cas
+in bacteria. (b) Explain how CRISPR-Cas9 has been adapted for genome editing in eukaryotic cells,
+including the roles of the guide RNA and Cas9 nuclease. (c) A researcher wants to knock out a gene in
+human cells using CRISPR-Cas9. Describe the design of the guide RNA and explain how a frameshift
+mutation is introduced. (d) Discuss two off-target effects of CRISPR-Cas9 and how they might be
+minimised. (e) Evaluate the ethical implications of germline gene editing in humans.
+
+</details>
+
+<details>
+<summary>Answer 10</summary>
+
+(a) CRISPR-Cas is an adaptive immune system in bacteria and archaea. When a bacterium survives a
+bacteriophage infection, it incorporates fragments of the phage DNA (spacers) into the CRISPR array in
+its genome. Upon subsequent infection by the same phage, the CRISPR array is transcribed and processed
+into CRISPR RNAs (crRNAs). These crRNAs guide Cas proteins to the matching phage DNA, where Cas cleaves
+the DNA, destroying the phage genome and protecting the bacterium.
+
+(b) In the genome editing adaptation:
+- A **single guide RNA (sgRNA)** is designed: it combines the crRNA (containing a $20$-nucleotide
+  sequence complementary to the target DNA) and the tracrRNA (which binds Cas9) into a single molecule.
+- The **Cas9 nuclease** is the endonuclease that cuts DNA. It is directed to the target by the sgRNA.
+- The target site must be immediately upstream of a **protospacer adjacent motif (PAM)**, which is
+  $5'$-NGG-$3'$ for _Streptococcus pyogenes_ Cas9.
+- Cas9 creates a double-strand break (DSB) $3$ bp upstream of the PAM.
+- The cell repairs the DSB by either non-homologous end joining (NHEJ), which often introduces
+  insertions/deletions (indels) causing frameshift mutations, or homology-directed repair (HDR), which
+  can incorporate a desired sequence if a donor template is provided.
+
+(c) To knock out a gene:
+1. Design a $20$-nt sgRNA complementary to an early exon of the target gene, immediately upstream of a
+   PAM ($5'$-NGG-$3'$).
+2. The sgRNA directs Cas9 to create a DSB in the exon.
+3. NHEJ repairs the break but often introduces small indels (1--10 bp).
+4. If the indel size is not a multiple of 3, it causes a frameshift, changing the reading frame downstream.
+5. The frameshift typically introduces a premature stop codon, producing a truncated, non-functional
+   protein -- effectively knocking out the gene.
+
+(d) Off-target effects:
+1. **Cas9 cutting at genomic sites with similar (but not identical) sequences**: the sgRNA may tolerate
+   up to 3--5 mismatches, especially in the $5'$ end of the guide. This can cause DSBs at unintended
+   locations, potentially disrupting other genes or regulatory elements.
+   Minimisation: use bioinformatics to select sgRNAs with minimal similarity to other genomic sites;
+   use Cas9 variants with higher fidelity (e.g., eSpCas9, HiFi Cas9); use paired nickases (two Cas9
+   nickases that create single-strand breaks on opposite strands, requiring two nearby recognition
+   events).
+
+2. **Large deletions or chromosomal rearrangements**: simultaneous DSBs at the target site and an
+   off-target site (or two target sites) can cause deletion of the intervening sequence, inversions, or
+   translocations.
+   Minimisation: use transient Cas9 expression (mRNA or ribonucleoprotein delivery rather than plasmid);
+   validate edits by whole-genome sequencing.
+
+(e) Ethical implications of germline editing:
+- Germline edits are heritable, affecting all future generations without their consent.
+- Unintended off-target mutations in the germline could be passed on, potentially causing disease.
+- There is a risk of creating "designer babies" -- editing for non-therapeutic traits (intelligence,
+  appearance, athletic ability), which could exacerbate social inequality.
+- The technology could widen the gap between wealthy and poor nations if only the wealthy can access it.
+- Proponents argue germline editing could eliminate devastating genetic diseases (e.g., Huntington's
+  disease, cystic fibrosis) from family lines.
+- The 2018 He Jiankui case (CRISPR-edited babies in China) was widely condemned for lack of ethical
+  oversight, inadequate informed consent, and uncertain safety.
+
+</details>
+
+<details>
+<summary>Problem 11: Quantitative -- Southern Blot and DNA Fingerprinting</summary>
+
+A forensic DNA sample is analysed using a VNTR (variable number tandem repeat) probe. The suspect's DNA
+produces two bands at $3200\;\mathrm{bp}$ and $5600\;\mathrm{bp}$. A crime scene sample produces two
+bands at $3200\;\mathrm{bp}$ and $5600\;\mathrm{bp}$. The VNTR allele frequencies in the population are:
+$3200\;\mathrm{bp} = 0.15$, $5600\;\mathrm{bp} = 0.08$, and the remaining alleles collectively have a
+combined frequency of $0.77$. (a) Assuming Hardy-Weinberg equilibrium, calculate the probability of this
+specific genotype in the population. (b) If three independent VNTR loci are tested and all match between
+the suspect and the crime scene sample, and the match probabilities for the other two loci are
+$1/120$ and $1/85$, calculate the combined probability of a random match. (c) Explain why this
+probability does not equal the probability of the suspect's guilt.
+
+</details>
+
+<details>
+<summary>Answer 11</summary>
+
+(a) The suspect is heterozygous: genotype is $3200/5600$.
+$P(\text{genotype}) = 2 \times p_{3200} \times p_{5600} = 2 \times 0.15 \times 0.08 = 0.024 = 1/41.7$.
+
+This is the probability that a randomly selected individual from the population has this specific genotype
+at this locus.
+
+(b) Combined probability (product rule, assuming loci are independent):
+$P_{combined} = \frac{1}{41.7} \times \frac{1}{120} \times \frac{1}{85} = \frac{1}{425340}$
+
+Approximately $1$ in $425{,}000$.
+
+(c) The match probability is NOT the probability of guilt because:
+- It gives the probability that a randomly selected person would match the DNA profile, not the
+  probability that the suspect is the source of the DNA.
+- The correct interpretation requires Bayesian reasoning: $P(\text{guilt} | \text{match})$ depends on
+  the prior probability of guilt (based on other evidence).
+- In a city of $10$ million people, $10{,}000{,}000 / 425{,}340 \approx 23.5$ people would be expected
+  to match this profile by chance alone.
+- Other evidence (alibi, eyewitness testimony, motive) must be considered alongside the DNA evidence.
+
+</details>
+
+<details>
+<summary>Problem 12: Extended Response -- Comparative Genomics</summary>
+
+The human genome contains approximately $20{,}000$ protein-coding genes, while _E. coli_ has approximately
+$4{,}300$. However, humans have only about $1.5$ times as many protein domains (functional units) as
+_E. coli_. (a) Explain how humans generate proteomic complexity far greater than the number of genes
+would suggest. (b) Describe the role of alternative splicing, with a specific example. (c) Explain how
+post-translational modifications expand proteome diversity. (d) The pufferfish (_Fugu rubripes_) genome
+is only $365\;\mathrm{Mb}$ (human: $3200\;\mathrm{Mb}$) but contains a similar number of genes. Explain
+this observation.
+
+</details>
+
+<details>
+<summary>Answer 12</summary>
+
+(a) Humans generate proteomic complexity through several mechanisms:
+- **Alternative splicing**: one gene can produce multiple mRNA isoforms, each encoding a different
+  protein variant. Approximately $95\%$ of human multi-exon genes undergo alternative splicing, producing
+  an estimated $5$--$10$ protein isoforms per gene on average.
+- **Post-translational modifications (PTMs)**: phosphorylation, glycosylation, acetylation, ubiquitination,
+  etc., can alter protein activity, localisation, stability, and interactions without changing the amino
+  acid sequence.
+- **Combinatorial protein interactions**: proteins can form different complexes with different partners,
+  creating functional diversity.
+- **RNA editing**: nucleotide changes in mRNA after transcription (e.g., A-to-I editing) can produce
+  protein variants not encoded in the genome.
+- **Proteolytic processing**: proteins can be cleaved into different active fragments (e.g., proinsulin
+  to insulin).
+
+(b) Alternative splicing: the _troponin T_ (TNNT) gene has $18$ exons. Through alternative splicing of
+$11$ of these exons, TNNT produces $64$ different mRNA isoforms in different muscle types (cardiac vs.
+skeletal). Each isoform has slightly different calcium-binding properties, fine-tuning muscle contraction
+in different tissues. Another classic example is the _DSG2_ (desmoglein-2) gene, which has multiple
+isoforms with different adhesive properties.
+
+(c) Post-translational modifications:
+- **Phosphorylation**: adding a phosphate group can activate or deactivate enzymes (e.g., glycogen
+  phosphorylase is activated by phosphorylation). A single protein can be phosphorylated at multiple
+  sites, creating a "phosphocode" with $2^n$ possible states ($n$ = number of phosphorylation sites).
+- **Glycosylation**: addition of sugar chains can affect protein folding, stability, cell-surface
+  localisation, and cell-cell recognition. Different glycosylation patterns on the same protein create
+  functional variants (glycoforms).
+- **Ubiquitination**: marking proteins for degradation by the proteasome, or altering their activity or
+  localisation.
+
+(d) The pufferfish genome is compact because:
+- It has much less non-coding DNA (fewer introns, shorter introns, less intergenic sequence, fewer
+  repetitive elements and transposons).
+- Pufferfish genes have shorter $3'$ and $5'$ UTRs.
+- The number and types of protein-coding genes are similar because all vertebrates share a common set
+  of genes. The difference in genome size is due to "junk DNA" (non-coding, mostly repetitive sequences),
+  not to gene number. This is known as the **C-value paradox**: genome size does not correlate with
+  organismal complexity.
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **DNA structure and mutations**: Review [./molecular-biology](./molecular-biology) for base pairing, DNA structure, and mutation types.
+- **Cell division and chromosomes**: Review [./cell-biology](./cell-biology) for mitosis, meiosis overview, and chromosome structure.
+- **Mendelian genetics and inheritance**: Review [./genetics](./genetics) for monohybrid and dihybrid crosses, sex linkage.
+- **Evolution and population genetics**: Review [./evolution-depth](./evolution-depth) for Hardy-Weinberg equilibrium, selection, and genetic drift.
+- **Enzyme kinetics**: Review [./metabolism-cell-biology](./metabolism-cell-biology) for Michaelis-Menten kinetics applied to restriction enzymes and polymerases.
+- **Immunology and antibody diversity**: Review [./immunology](./immunology) for V(D)J recombination as a mechanism of generating diversity through DNA rearrangement.
+
+---
+
+## Supplementary: Genetic Engineering Applications (HL Extension)
+
+### Genetically Modified Organisms (GMOs) -- Case Studies
+
+**Golden Rice**:
+- Developed by Potrykus and Beyer (2000) to address vitamin A deficiency (VAD), which causes
+  approximately $500{,}000$ cases of childhood blindness annually.
+- Two genes from daffodil (_psy_, phytoene synthase) and one from bacterium (_crtI_, phytoene desaturase)
+  were introduced into rice, enabling the endosperm to produce beta-carotene (provitamin A).
+- Golden Rice 2 (2005) used a maize _psy_ gene, achieving much higher beta-carotene levels ($37\;\mathrm{\mu g/g}$).
+- Challenges: public opposition to GMOs, regulatory hurdles, acceptance by farmers and consumers,
+  degradation of beta-carotene during storage and cooking.
+
+**Bt Cotton**:
+- Engineered to express a gene from _Bacillus thuringiensis_ (Bt) that produces Cry protein toxins
+  lethal to lepidopteran pests (cotton bollworm).
+- Benefits: reduced insecticide use ($>50\%$ reduction in some regions), increased yield, reduced
+  production costs.
+- Concerns: resistance evolution in pest populations (managed by refuge planting -- non-Bt crops
+  planted nearby to maintain susceptible pest populations), impact on non-target organisms (minimal
+  for most non-target species but some concern for beneficial insects).
+
+**GloFish**:
+- Zebrafish genetically modified with a fluorescent protein gene (originally from a jellyfish, GFP,
+  or from coral, RFP). Originally developed for environmental monitoring (fluoresces in the presence
+  of certain pollutants).
+- First GM animal approved for sale as a pet (2003 in the US).
+- Ethical considerations: environmental release concerns (GloFish are sterile, reducing this risk),
+  precedent for GM pet animals.
+
+### Gene Therapy
+
+Gene therapy aims to treat or cure genetic diseases by introducing functional copies of genes into
+a patient's cells.
+
+**Types**:
+1. **Somatic gene therapy**: targets body cells (not germ cells). Changes are not heritable.
+   Example: Luxturna (voretigene neparvovec) treats retinal dystrophy caused by RPE65 mutations by
+   delivering a functional RPE65 gene via AAV vector.
+2. **Germline gene therapy**: targets germ cells or embryos. Changes are heritable. Currently banned
+   in most countries due to ethical concerns (He Jiankui case, 2018).
+
+**Vectors**:
+- **Viral vectors**: adenovirus (large capacity, transient expression), AAV (small capacity, long-term
+  expression, low immunogenicity), lentivirus (integrates into genome, stable expression, risk of
+  insertional mutagenesis).
+- **Non-viral vectors**: liposomes, naked DNA injection, electroporation. Lower efficiency but safer.
+
+**Challenges**:
+- Immune response to the vector (especially for repeat administrations).
+- Targeting the correct tissue.
+- Achieving sufficient and sustained expression.
+- Risk of insertional mutagenesis (viral integration near oncogenes can cause cancer).
+- Ethical considerations: access, cost (current gene therapies cost $\$0.5$--$2$ million per treatment).
+
+### Pharmacogenomics
+
+Pharmacogenomics studies how genetic variation affects drug response. Examples:
+
+| Gene | Variant | Drug affected | Effect |
+|------|---------|--------------|--------|
+| CYP2C19 | Poor metaboliser (*2, *3) | Clopidogrel (antiplatelet) | Reduced activation of prodrug; higher cardiovascular events |
+| CYP2D6 | Ultra-rapid metaboliser (*1xN) | Codeine | Faster conversion to morphine; risk of respiratory depression |
+| VKORC1 | -1639 G>A | Warfarin (anticoagulant) | Reduced VKORC1 expression; lower warfarin dose needed |
+| HLA-B*57:01 | Present | Abacavir (HIV drug) | High risk of severe hypersensitivity reaction |
+| TPMT | Low activity variants | Azathioprine (immunosuppressant) | Reduced drug inactivation; higher toxicity risk |
+
+### DNA Fingerprinting in Forensics
+
+DNA fingerprinting (DNA profiling) analyses short tandem repeats (STRs) at multiple loci:
+
+**Procedure**:
+1. Extract DNA from biological evidence (blood, saliva, hair, semen).
+2. PCR amplify STR loci (typically $13$--$20$ loci in the CODIS system -- Combined DNA Index System).
+3. Capillary electrophoresis separates PCR products by size.
+4. Automated fragment analysis determines the number of repeats at each locus.
+5. The DNA profile is compared to:
+   - A reference sample from the suspect.
+   - The national DNA database (millions of profiles).
+   - Population frequency databases (to calculate match probability).
+
+**Interpretation**:
+- If the DNA profile from the evidence matches the suspect, the **match probability** (probability that
+  a randomly selected person would match) is calculated. For $13$ CODIS loci, the match probability is
+  typically $< 1$ in $10^{13}$ (less than one in the world population).
+- The **combined paternity index (CPI)** or **likelihood ratio** is used to present the strength of
+  evidence in court.
+
+**Limitations**:
+- Partial profiles (degraded DNA, small or mixed samples) are less discriminating.
+- Contamination can produce false matches.
+- Related individuals share more DNA and have higher match probabilities.
+- Laboratory errors can occur (sample mix-ups, contamination).
+
+### Worked Example: STR Analysis and Match Probability
+
+A forensic sample is analysed at 3 STR loci with the following results:
+
+| Locus | Evidence genotype | Suspect genotype | Population allele frequencies |
+|-------|-------------------|-----------------|------------------------------|
+| D3S1358 | 15, 17 | 15, 17 | $p_{15} = 0.25$, $p_{17} = 0.20$ |
+| vWA | 14, 16 | 14, 16 | $p_{14} = 0.22$, $p_{16} = 0.15$ |
+| FGA | 22, 24 | 22, 24 | $p_{22} = 0.18$, $p_{24} = 0.10$ |
+
+(a) Calculate the match probability at each locus assuming Hardy-Weinberg equilibrium.
+(b) Calculate the combined match probability. (c) If the suspect's brother is also a potential
+source of the DNA, explain why the match probability is higher for the brother.
+
+<details>
+<summary>Solution</summary>
+
+(a) For each locus, the probability of a random match is:
+$P = p_i^2 + p_j^2$ if homozygous, or $2p_ip_j$ if heterozygous.
+
+D3S1358 (15,17): $P = 2 \times 0.25 \times 0.20 = 0.100$
+vWA (14,16): $P = 2 \times 0.22 \times 0.15 = 0.066$
+FGA (22,24): $P = 2 \times 0.18 \times 0.10 = 0.036$
+
+(b) Combined match probability (product rule, assuming loci are independent):
+$P_{combined} = 0.100 \times 0.066 \times 0.036 = 0.000238 = 1/4202$
+
+Approximately 1 in $4200$ people would be expected to match this profile. With more loci (13 CODIS loci),
+the match probability would be $< 1$ in $10^{10}$.
+
+(c) Siblings share on average $50\%$ of their alleles. The brother has a $50\%$ chance of sharing
+each allele with the suspect (vs. the population frequency for a random person). The sibling match
+probability is much higher than the random match probability. For a rough estimate: at each locus,
+the brother has approximately a $50\%$ chance of sharing each allele, so the probability of matching
+at one locus is approximately $(0.5)^2 + (0.5)^2 = 0.50$ (if homozygous) or $2 \times 0.5 \times 0.5 = 0.50$
+(if heterozygous). Across 3 loci: approximately $0.5^3 = 0.125$ ($1$ in $8$). This is far higher
+than the random match probability ($1$ in $4202$), illustrating why the suspect's relationship to
+other potential sources of DNA is relevant in forensic analysis.
+
+</details>

@@ -901,3 +901,699 @@ can lead to involuntary movements (dyskinesias).
 - **Muscle contraction and energy** --> Review [./metabolism-cell-biology](./metabolism-cell-biology)
 - **Homeostasis and hormonal control** --> Review [./human-physiology](./human-physiology)
 - **Immune system and neuromuscular disorders** --> Review [./immunology](./immunology)
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Graded Potential Summation at the Axon Hillock**
+
+A neuron receives three simultaneous excitatory postsynaptic potentials (EPSPs) and one inhibitory
+postsynaptic potential (IPSP). EPSP1 depolarises the membrane by $+8\;\mathrm{mV}$, EPSP2 by $+5\;\mathrm{mV}$,
+EPSP3 by $+3\;\mathrm{mV}$, and IPSP1 hyperpolarises by $-6\;\mathrm{mV}$. The resting potential is
+$-70\;\mathrm{mV}$ and the threshold is $-55\;\mathrm{mV}$. (a) Calculate the net change in membrane
+potential. (b) Will an action potential be generated? (c) If EPSP2 arrives $2\;\mathrm{ms}$ after the
+others (the membrane time constant is $5\;\mathrm{ms}$), recalculate and determine whether an action
+potential is generated. Assume the decay of EPSP1 and IPSP1 is negligible within this window.
+
+<details>
+<summary>Solution</summary>
+
+(a) Net change $= +8 + 5 + 3 - 6 = +10\;\mathrm{mV}$.
+Membrane potential: $-70 + 10 = -60\;\mathrm{mV}$.
+
+(b) $-60\;\mathrm{mV} > -55\;\mathrm{mV}$? No, $-60\;\mathrm{mV}$ is more negative than $-55\;\mathrm{mV}$.
+The threshold of $-55\;\mathrm{mV}$ is not reached. No action potential is generated.
+
+(c) If EPSP2 arrives $2\;\mathrm{ms}$ later, with a time constant of $5\;\mathrm{ms}$, EPSP1 and IPSP1
+and EPSP3 have decayed by a factor of $e^{-t/\tau} = e^{-2/5} = e^{-0.4} \approx 0.670$.
+
+Remaining EPSP1 at the time of EPSP2: $8 \times 0.670 = 5.36\;\mathrm{mV}$.
+Remaining IPSP1: $6 \times 0.670 = 4.02\;\mathrm{mV}$.
+Remaining EPSP3: $3 \times 0.670 = 2.01\;\mathrm{mV}$.
+
+When EPSP2 arrives, the remaining depolarisation is $5.36 + 2.01 = 7.37\;\mathrm{mV}$ and the remaining
+hyperpolarisation is $4.02\;\mathrm{mV}$. With EPSP2 ($+5\;\mathrm{mV}$): net $= 7.37 + 5 - 4.02 = 8.35\;\mathrm{mV}$.
+Membrane potential: $-70 + 8.35 = -61.65\;\mathrm{mV}$. Still below threshold. No action potential.
+
+For an action potential to fire, the neuron needs additional excitatory input or less inhibitory input.
+
+</details>
+
+**Worked Example: Myelination and Conduction Velocity**
+
+A myelinated axon has a diameter of $10\;\mathrm{\mu m}$ and internode length of $1.5\;\mathrm{mm}$.
+An unmyelinated axon of the same diameter conducts at $5\;\mathrm{m/s}$. (a) Estimate the conduction
+velocity of the myelinated axon. (b) Calculate the time for an action potential to travel $1\;\mathrm{m}$
+along each type of axon. (c) Explain why myelination increases conduction velocity. (d) In multiple
+sclerosis, demyelination occurs. Predict the effect on conduction velocity and explain the symptoms.
+
+<details>
+<summary>Solution</summary>
+
+(a) Myelination increases conduction velocity approximately $5$--$100\times$ compared to unmyelinated axons
+of the same diameter. For a $10\;\mathrm{\mu m}$ myelinated axon, conduction velocity is typically
+$50$--$70\;\mathrm{m/s}$ (approximately $6\;\mathrm{m/s}$ per $\mathrm{\mu m}$ diameter for myelinated
+axons). Using the empirical relationship: $v \approx 6 \times d = 6 \times 10 = 60\;\mathrm{m/s}$.
+
+(b) Time $= \text{distance} / \text{velocity}$.
+- Unmyelinated: $1 / 5 = 0.20\;\mathrm{s} = 200\;\mathrm{ms}$.
+- Myelinated: $1 / 60 = 0.0167\;\mathrm{s} = 16.7\;\mathrm{ms}$.
+
+The myelinated axon is approximately $12\times$ faster.
+
+(c) Myelination increases conduction velocity because:
+- The myelin sheath is an insulator that increases membrane resistance and decreases membrane capacitance.
+- Action potentials "jump" from one node of Ranvier to the next (**saltatory conduction**). Depolarisation
+  at one node is sufficient to depolarise the next node to threshold, because current loss through the
+  membrane is minimal along the internode (high resistance).
+- This is much faster than the continuous propagation of action potentials along an unmyelinated axon,
+  where each segment must be depolarised sequentially.
+
+(d) In multiple sclerosis, demyelination exposes the axon membrane, increasing capacitance and decreasing
+  resistance. This causes: slowed conduction velocity, conduction block (action potential fails to reach
+  the next node), and aberrant conduction (current "leaking" to adjacent axons). Symptoms include
+  visual disturbances (optic neuritis), muscle weakness, numbness, coordination problems, and fatigue,
+  reflecting disrupted neural signalling in the CNS.
+
+</details>
+
+**Worked Example: Nernst Equation for Multiple Ions**
+
+A neuron has the following intracellular and extracellular ion concentrations:
+
+| Ion | Intracellular (mM) | Extracellular (mM) |
+|-----|-------------------|-------------------|
+| $\mathrm{Na}^+$ | 15 | 145 |
+| $\mathrm{K}^+$ | 150 | 4.5 |
+| $\mathrm{Cl}^-$ | 10 | 110 |
+| $\mathrm{Ca}^{2+}$ | 0.0001 | 2.0 |
+
+Temperature $= 37^\circ\mathrm{C}$. (a) Calculate the equilibrium potential for each ion using the Nernst
+equation ($E = \frac{RT}{zF}\ln\frac{[\text{ion}]_{out}}{[\text{ion}]_{in}}$, where $R = 8.314\;\mathrm{J/(mol\cdot K)}$,
+$F = 96485\;\mathrm{C/mol}$). (b) The resting membrane potential is $-70\;\mathrm{mV}$. For each ion,
+state whether the driving force favours influx or efflux. (c) If the membrane is $50\times$ more
+permeable to $\mathrm{K}^+$ than to $\mathrm{Na}^+$ and $10\times$ more permeable to $\mathrm{K}^+$ than
+to $\mathrm{Cl}^-$, use the Goldman equation to estimate the resting potential.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\frac{RT}{F} = \frac{8.314 \times 310}{96485} = 0.0267\;\mathrm{V} = 26.7\;\mathrm{mV}$ (at $37^\circ\mathrm{C}$).
+
+$E_{\mathrm{Na}} = \frac{26.7}{1} \ln\frac{145}{15} = 26.7 \times \ln(9.67) = 26.7 \times 2.269 = +60.6\;\mathrm{mV}$
+
+$E_{\mathrm{K}} = \frac{26.7}{1} \ln\frac{4.5}{150} = 26.7 \times \ln(0.030) = 26.7 \times (-3.507) = -93.6\;\mathrm{mV}$
+
+$E_{\mathrm{Cl}} = \frac{26.7}{-1} \ln\frac{110}{10} = -26.7 \times \ln(11) = -26.7 \times 2.398 = -64.0\;\mathrm{mV}$
+
+$E_{\mathrm{Ca}} = \frac{26.7}{2} \ln\frac{2.0}{0.0001} = 13.35 \times \ln(20000) = 13.35 \times 9.903 = +132.2\;\mathrm{mV}$
+
+(b) Driving force $= V_m - E_{\text{ion}}$ (where positive means outward, negative means inward):
+- $\mathrm{Na}^+$: $-70 - 60.6 = -130.6\;\mathrm{mV}$ (strong inward driving force)
+- $\mathrm{K}^+$: $-70 - (-93.6) = +23.6\;\mathrm{mV}$ (outward driving force)
+- $\mathrm{Cl}^-$: $-70 - (-64.0) = -6.0\;\mathrm{mV}$ (small inward driving force)
+- $\mathrm{Ca}^{2+}$: $-70 - 132.2 = -202.2\;\mathrm{mV}$ (very strong inward driving force)
+
+(c) Goldman equation (only monovalent ions):
+$V_m = \frac{RT}{F}\ln\frac{P_{\mathrm{Na}}[\mathrm{Na}^+]_{out} + P_{\mathrm{K}}[\mathrm{K}^+]_{out} + P_{\mathrm{Cl}}[\mathrm{Cl}^-]_{in}}{P_{\mathrm{Na}}[\mathrm{Na}^+]_{in} + P_{\mathrm{K}}[\mathrm{K}^+]_{in} + P_{\mathrm{Cl}}[\mathrm{Cl}^-]_{out}}$
+
+Let $P_{\mathrm{K}} = 50$, $P_{\mathrm{Na}} = 1$, $P_{\mathrm{Cl}} = 5$:
+$V_m = 26.7 \times \ln\frac{1 \times 145 + 50 \times 4.5 + 5 \times 10}{1 \times 15 + 50 \times 150 + 5 \times 110}$
+$= 26.7 \times \ln\frac{145 + 225 + 50}{15 + 7500 + 550}$
+$= 26.7 \times \ln\frac{420}{8065}$
+$= 26.7 \times \ln(0.0521)$
+$= 26.7 \times (-2.954)$
+$= -78.9\;\mathrm{mV}$
+
+This is close to the typical resting potential of approximately $-70\;\mathrm{mV}$. The difference reflects
+the contribution of the $\mathrm{Na}^+/K^+$-ATPase (electrogenic pump, which exports $3\;\mathrm{Na}^+$
+for every $2\;\mathrm{K}^+$ imported, adding a small negative contribution).
+
+</details>
+
+**Worked Example: Synaptic Transmission Quantification**
+
+A neuromuscular junction releases $300$ synaptic vesicles per action potential. Each vesicle contains
+$5000$ acetylcholine (ACh) molecules. The postsynaptic membrane has $10^8$ nicotinic ACh receptors, each
+requiring binding of $2$ ACh molecules to open. Each open channel allows $20{,}000\;\mathrm{Na}^+$ ions
+to pass before ACh is hydrolysed. (a) Calculate the total number of ACh molecules released. (b) Calculate
+the maximum number of receptors that can be activated. (c) Calculate the total $\mathrm{Na}^+$ influx
+if all released ACh activates receptors. (d) Explain why only a fraction of released ACh molecules
+reach receptors.
+
+<details>
+<summary>Solution</summary>
+
+(a) Total ACh released: $300 \times 5000 = 1{,}500{,}000$ molecules.
+
+(b) Each receptor needs 2 ACh molecules. Maximum activated receptors: $1{,}500{,}000 / 2 = 750{,}000$ receptors.
+Since there are $10^8$ total receptors, only $0.75\%$ of receptors are activated.
+
+(c) Total $\mathrm{Na}^+$ influx: $750{,}000 \times 20{,}000 = 1.5 \times 10^{10}$ ions.
+Charge: $1.5 \times 10^{10} \times 1.6 \times 10^{-19}\;\mathrm{C} = 2.4 \times 10^{-9}\;\mathrm{C}$.
+
+To convert to current: if this charge enters in $1\;\mathrm{ms}$:
+$I = Q/t = 2.4 \times 10^{-9} / 10^{-3} = 2.4\;\mathrm{\mu A}$.
+
+(d) Not all released ACh reaches receptors because:
+- ACh diffuses away from the synaptic cleft (some is lost to the extracellular space).
+- Acetylcholinesterase in the synaptic cleft hydrolyses ACh to acetate and choline before it reaches
+  receptors (this is essential for terminating the signal rapidly).
+- Some ACh molecules may rebind to presynaptic autoreceptors or be taken up by the presynaptic terminal.
+
+</details>
+
+**Worked Example: Reflex Arc and Neural Pathway Analysis**
+
+A reflex arc involves the following sequence: pain receptor (in finger) $\to$ sensory neuron $\to$
+interneuron in spinal cord $\to$ motor neuron $\to$ effector muscle (biceps, causing withdrawal). (a)
+Name the type of reflex and explain its adaptive significance. (b) Calculate the minimum response time
+if the path length is $0.8\;\mathrm{m}$ (finger to spinal cord to biceps) and the slowest conduction
+velocity is $50\;\mathrm{m/s}$ (including synaptic delay of $0.5\;\mathrm{ms}$ per synapse, and there
+are 2 synapses). (c) Explain why this reflex can occur before the brain perceives pain. (d) Describe
+the role of the interneuron in this reflex.
+
+<details>
+<summary>Solution</summary>
+
+(a) This is a **withdrawal reflex** (flexor reflex), specifically a **polysynaptic reflex** (involves
+at least one interneuron). Its adaptive significance is to rapidly remove a body part from a harmful
+stimulus (e.g., touching a hot surface) before tissue damage occurs, minimising injury.
+
+(b) Conduction time: $0.8\;\mathrm{m} / 50\;\mathrm{m/s} = 0.016\;\mathrm{s} = 16\;\mathrm{ms}$.
+Synaptic delay: $2 \times 0.5 = 1\;\mathrm{ms}$.
+Neuromuscular junction delay: approximately $1\;\mathrm{ms}$.
+Total minimum response time: $16 + 1 + 1 = 18\;\mathrm{ms}$.
+
+(c) The reflex arc involves only the spinal cord (the sensory neuron synapses directly or via interneuron
+onto the motor neuron in the spinal cord). The signal does not need to travel to the brain to produce the
+motor response. The brain receives the pain signal subsequently (via ascending tracts), which is why
+you feel pain a fraction of a second after you have already withdrawn your hand.
+
+(d) The interneuron has several roles:
+- It allows the reflex to involve **reciprocal inhibition**: when the flexor (biceps) is activated,
+  the interneuron simultaneously inhibits the extensor (triceps) motor neuron, preventing opposing
+  muscles from contracting simultaneously.
+- It allows the signal to be **modulated** (e.g., by descending input from the brain, which can
+  suppress or enhance the reflex).
+- It can distribute the signal to multiple motor neurons, producing a coordinated multi-muscle response.
+- In some reflexes, interneurons connect to the opposite side of the spinal cord (contralateral reflex),
+  coordinating responses across both sides of the body.
+
+</details>
+
+---
+
+## Additional Common Pitfalls
+
+- **Confusing graded potentials with action potentials**: graded potentials are local, decremental, and
+  can be depolarising or hyperpolarising; action potentials are all-or-none, propagated without decrement,
+  and always depolarising.
+- **Stating that action potentials get weaker with distance**: action potentials are actively regenerated
+  at each point along the axon; they do not decay with distance (except in demyelinated axons).
+- **Confusing the refractory periods**: the absolute refractory period is due to inactivation of voltage-gated
+  $\mathrm{Na}^+$ channels (no new action possible); the relative refractory period is due to the
+  hyperpolarisation from open $\mathrm{K}^+$ channels (action possible but requires stronger stimulus).
+- **Forgetting that the $\mathrm{Na}^+/K^+$ pump is active transport (requires ATP)**: it is not facilitated
+  diffusion. It moves $3\;\mathrm{Na}^+$ out and $2\;\mathrm{K}^+$ in against their concentration gradients.
+- **Confusing temporal and spatial summation**: temporal summation = multiple PSPs from the same synapse
+  arriving in rapid succession; spatial summation = multiple PSPs from different synapses arriving simultaneously.
+- **Assuming all neurotransmitters are excitatory**: neurotransmitters can be excitatory (e.g., glutamate,
+  ACh at neuromuscular junctions) or inhibitory (e.g., GABA, glycine), depending on the receptor type.
+
+---
+
+## Additional Exam-Style Problems with Full Solutions
+
+<details>
+<summary>Problem 6: Extended Response -- Synaptic Plasticity and Learning</summary>
+
+Long-term potentiation (LTP) is a cellular mechanism underlying learning and memory. (a) Describe the
+sequence of events at a glutamatergic synapse that leads to LTP in the hippocampus (NMDA receptor-dependent
+pathway). (b) Explain the roles of the NMDA receptor and the AMPA receptor. (c) Explain why the NMDA
+receptor is described as a "coincidence detector." (d) Describe the structural changes that occur during
+LTP maintenance. (e) Explain how LTP relates to the Hebbian learning rule.
+
+</details>
+
+<details>
+<summary>Answer 6</summary>
+
+(a) LTP induction at a hippocampal CA1 synapse:
+1. A presynaptic neuron releases glutamate, binding to both AMPA and NMDA receptors on the postsynaptic
+   membrane.
+2. Under basal conditions, the NMDA receptor's $\mathrm{Mg}^{2+}$ block prevents $\mathrm{Ca}^{2+}$
+   entry even when glutamate is bound.
+3. When a high-frequency stimulus (tetanus) causes strong depolarisation (via AMPA receptor activation),
+   the $\mathrm{Mg}^{2+}$ block is expelled from the NMDA receptor channel.
+4. With glutamate bound and the $\mathrm{Mg}^{2+}$ block removed, $\mathrm{Ca}^{2+}$ flows through
+   the NMDA receptor into the postsynaptic neuron.
+5. The rise in intracellular $\mathrm{Ca}^{2+}$ activates **CaMKII** (calcium/calmodulin-dependent
+   protein kinase II) and other kinases.
+6. CaMKII phosphorylates existing AMPA receptors, increasing their conductance.
+7. CaMKII also triggers the insertion of additional AMPA receptors from intracellular vesicles into the
+   postsynaptic membrane.
+8. The postsynaptic neuron may release a retrograde messenger (e.g., nitric oxide) that enhances
+   glutamate release from the presynaptic terminal (presynaptic LTP).
+
+(b) **AMPA receptor**: an ionotropic glutamate receptor permeable to $\mathrm{Na}^+$ (and some
+$\mathrm{K}^+$). It mediates fast excitatory postsynaptic potentials (EPSPs). It is responsible for the
+initial depolarisation that removes the $\mathrm{Mg}^{2+}$ block from the NMDA receptor.
+
+**NMDA receptor**: an ionotropic glutamate receptor permeable to $\mathrm{Na}^+$, $\mathrm{K}^+$, and
+$\mathrm{Ca}^{2+}$. It requires both glutamate binding AND sufficient depolarisation (to remove the
+$\mathrm{Mg}^{2+}$ block). The $\mathrm{Ca}^{2+}$ influx through NMDA receptors is the trigger for LTP
+induction.
+
+(c) The NMDA receptor is a "coincidence detector" because it requires two simultaneous conditions:
+1. Glutamate must be present (presynaptic neuron is active).
+2. The postsynaptic membrane must be sufficiently depolarised (the postsynaptic neuron is active).
+Only when both pre- and postsynaptic neurons fire together does $\mathrm{Ca}^{2+}$ enter through the NMDA
+receptor, triggering LTP. This ensures that synaptic strengthening occurs only for synapses where there
+is correlated activity -- the basis of associative learning.
+
+(d) Structural changes during LTP maintenance:
+- **Postsynaptic**: increase in the number and size of dendritic spines (the small protrusions on
+  dendrites that receive synaptic inputs), enlargement of the postsynaptic density, and insertion of
+  additional AMPA receptors.
+- **Presynaptic**: increased number of synaptic vesicles docked at the active zone, enlarged active
+  zone, and increased probability of vesicle release.
+- These structural changes require protein synthesis (both local dendritic and somatic) and gene
+  transcription (CREB-mediated), making LTP long-lasting (hours to days).
+
+(e) Hebbian learning rule: "neurons that fire together, wire together." LTP is the cellular realisation
+of this principle. When a presynaptic neuron consistently fires just before (or simultaneously with) a
+postsynaptic neuron, the synaptic connection between them is strengthened. This allows neural circuits
+to encode associations between co-occurring events, forming the basis of learning and memory.
+
+</details>
+
+<details>
+<summary>Problem 7: Data Analysis -- Drug Effects on Synaptic Transmission</summary>
+
+A researcher investigates the effect of three drugs on synaptic transmission at a cholinergic synapse:
+
+| Drug | Effect observed |
+|------|----------------|
+| Drug X | No EPSP recorded |
+| Drug Y | Prolonged EPSP; muscle contracts but does not relax |
+| Drug Z | Reduced EPSP amplitude; normal shape |
+
+For each drug: (a) identify the likely molecular target, (b) name a specific drug that produces this
+effect, (c) explain the mechanism, and (d) explain the clinical or experimental significance.
+
+</details>
+
+<details>
+<summary>Answer 7</summary>
+
+**Drug X: No EPSP recorded**
+(a) Likely target: nicotinic ACh receptor (blocked).
+(b) Specific drug: **curare** (d-tubocurarine) or **alpha-bungarotoxin**.
+(c) Mechanism: curare is a competitive antagonist at nicotinic ACh receptors. It binds to the receptor
+  without activating it, preventing ACh from binding. No ion channel opening, no depolarisation, no EPSP.
+(d) Significance: curare was historically used as arrow poison (causes paralysis and respiratory failure
+  by blocking neuromuscular transmission). It is used experimentally to study neuromuscular function
+  and clinically as a muscle relaxant during surgery (modern derivatives: pancuronium, vecuronium).
+
+**Drug Y: Prolonged EPSP; muscle contracts but does not relax**
+(a) Likely target: acetylcholinesterase (inhibited).
+(b) Specific drug: **neostigmine** or **organophosphates** (e.g., sarin, malathion).
+(c) Mechanism: acetylcholinesterase normally hydrolyses ACh in the synaptic cleft, terminating the signal.
+  Inhibition of this enzyme causes ACh to accumulate, producing prolonged depolarisation and sustained
+  muscle contraction (fasciculations, then paralysis due to depolarisation block).
+(d) Significance: neostigmine is used to treat myasthenia gravis (autoimmune destruction of ACh receptors)
+  by increasing the amount of ACh available to the remaining receptors. Organophosphate poisoning (pesticides,
+  nerve agents) causes fatal respiratory failure and is treated with atropine and pralidoxime.
+
+**Drug Z: Reduced EPSP amplitude; normal shape**
+(a) Likely target: voltage-gated $\mathrm{Ca}^{2+}$ channels at the presynaptic terminal (partially blocked).
+(b) Specific drug: **magnesium** ($\mathrm{Mg}^{2+}$) or **omega-conotoxin**.
+(c) Mechanism: voltage-gated $\mathrm{Ca}^{2+}$ channels open when the action potential arrives at the
+  presynaptic terminal, allowing $\mathrm{Ca}^{2+}$ influx that triggers vesicle fusion and ACh release.
+  Partial blockage reduces $\mathrm{Ca}^{2+}$ entry, reducing the number of vesicles released and therefore
+  the EPSP amplitude.
+(d) Significance: $\mathrm{Mg}^{2+}$ is used to treat pre-eclampsia (it reduces neuromuscular excitability).
+  $\mathrm{Mg}^{2+}$ deficiency (hypomagnesaemia) can cause hyperreflexia and tetany.
+
+</details>
+
+<details>
+<summary>Problem 8: Extended Response -- Autonomic Nervous System Comparison</summary>
+
+Compare the sympathetic and parasympathetic divisions of the autonomic nervous system with respect to:
+(a) origin of preganglionic neurons, (b) length of pre- and postganglionic fibres, (c) neurotransmitters
+at pre- and postganglionic synapses, (d) receptor types at target organs, (e) effects on heart rate,
+pupil diameter, bronchiole diameter, digestive activity, and adrenal medulla, and (f) overall function
+("fight or flight" vs "rest and digest").
+
+</details>
+
+<details>
+<summary>Answer 8</summary>
+
+| Feature | Sympathetic | Parasympathetic |
+|---------|------------|----------------|
+| **Origin** | Thoracolumbar (T1--L2/L3) spinal cord | Cranial nerves (III, VII, IX, X) + sacral spinal cord (S2--S4) |
+| **Preganglionic fibre** | Short | Long |
+| **Ganglion location** | Paravertebral chain (close to spinal cord) or prevertebral | Close to or within target organ |
+| **Postganglionic fibre** | Long | Short |
+| **Preganglionic NT** | Acetylcholine (ACh) | Acetylcholine (ACh) |
+| **Preganglionic receptor** | Nicotinic (N_N) | Nicotinic (N_N) |
+| **Postganglionic NT** | Noradrenaline (NA) | Acetylcholine (ACh) |
+| **Postganglionic receptor** | $\alpha$-adrenergic ($\alpha_1, \alpha_2$) or $\beta$-adrenergic ($\beta_1, \beta_2, \beta_3$) | Muscarinic (M1, M2, M3) |
+| **Heart rate** | Increases ($\beta_1$) | Decreases (M2) |
+| **Pupil** | Dilates ($\alpha_1$) | Constricts (M3) |
+| **Bronchioles** | Dilate ($\beta_2$) | Constrict (M3) |
+| **Digestion** | Inhibits ($\alpha_2$, $\beta_2$) | Stimulates (M1, M3) |
+| **Adrenal medulla** | Stimulates (ACh on chromaffin cells, releasing adrenaline + NA) | No effect |
+| **Overall** | Fight or flight | Rest and digest |
+
+(f) The sympathetic system prepares the body for emergency action: increasing heart rate, blood pressure,
+and blood glucose; dilating airways; diverting blood to skeletal muscles; and dilating pupils. The
+parasympathetic system promotes recovery and maintenance: slowing heart rate, stimulating digestion,
+constricting pupils, and promoting urination/defecation. Most organs receive dual innervation, allowing
+fine-tuned balance between the two systems.
+
+</details>
+
+<details>
+<summary>Problem 9: Quantitative -- Hodgkin-Huxley Current Clamp Analysis</summary>
+
+In a current clamp experiment, a depolarising current of $2\;\mathrm{nA}$ is injected into a squid giant
+axon (diameter $500\;\mathrm{\mu m}$) at time $t = 0$. The membrane resistance is $1000\;\Omega\cdot\mathrm{cm}^2$
+and the membrane capacitance is $1\;\mathrm{\mu F/cm}^2$. (a) Calculate the membrane time constant $\tau$.
+(b) Calculate the steady-state depolarisation if no action potential fires. (c) Explain why an action
+potential does fire when the current is sufficient to depolarise the membrane above threshold.
+
+</details>
+
+<details>
+<summary>Answer 9</summary>
+
+(a) $\tau = R_m \times C_m = 1000\;\Omega\cdot\mathrm{cm}^2 \times 1 \times 10^{-6}\;\mathrm{F/cm}^2 = 10^{-3}\;\mathrm{s} = 1\;\mathrm{ms}$.
+
+(b) For a cylindrical axon: surface area per unit length $= \pi \times d = \pi \times 500 \times 10^{-4}\;\mathrm{cm} = 0.157\;\mathrm{cm}^2/\text{cm}$.
+
+Input resistance per unit length: $R_{in} = R_m / (\pi \times d) = 1000 / 0.157 = 6366\;\Omega/\text{cm}$.
+
+For a finite patch: $\Delta V = I \times R_{in}$.
+
+If the current is injected uniformly: $\Delta V = I / (g_m \times A)$, where $g_m = 1/R_m = 10^{-3}\;\mathrm{S/cm}^2$.
+
+For a $1\;\mathrm{cm}$ length patch: $\Delta V = 2 \times 10^{-9}\;\mathrm{A} / (10^{-3}\;\mathrm{S/cm}^2 \times 0.157\;\mathrm{cm}^2) = 2 \times 10^{-9} / 1.57 \times 10^{-4} = 1.27 \times 10^{-5}\;\mathrm{V} = 0.0127\;\mathrm{mV}$.
+
+This very small depolarisation reflects the large surface area of the squid giant axon. In practice, a
+point current injection would produce a larger local depolarisation that decays exponentially with distance.
+
+(c) An action potential fires when the local depolarisation reaches threshold ($-55\;\mathrm{mV}$, or
+approximately $15\;\mathrm{mV}$ above rest). At threshold, voltage-gated $\mathrm{Na}^+$ channels open,
+allowing rapid $\mathrm{Na}^+$ influx that further depolarises the membrane (positive feedback). This
+regenerative cycle produces the all-or-none action potential, which is independent of the stimulus
+strength (once threshold is reached).
+
+</details>
+
+<details>
+<summary>Problem 10: Extended Response -- Neurodegenerative Diseases</summary>
+
+Compare and contrast Alzheimer's disease and Parkinson's disease with respect to: (a) the brain regions
+primarily affected, (b) the key molecular/pathological features (protein aggregates), (c) the
+neurotransmitter systems disrupted, (d) the characteristic symptoms, and (e) the current treatment
+strategies and their limitations.
+
+</details>
+
+<details>
+<summary>Answer 10</summary>
+
+| Feature | Alzheimer's disease | Parkinson's disease |
+|---------|-------------------|-------------------|
+| **Primary brain regions** | Cerebral cortex (especially temporal, frontal, parietal), hippocampus | Substantia nigra pars compacta, basal ganglia, later cortex |
+| **Key pathology** | Amyloid-$\beta$ plaques (extracellular), neurofibrillary tangles (intracellular, hyperphosphorylated tau protein) | Lewy bodies (intracellular aggregates of $\alpha$-synuclein) |
+| **Neurotransmitter affected** | Acetylcholine (loss of cholinergic neurons in basal forebrain/nucleus basalis) | Dopamine (loss of dopaminergic neurons in substantia nigra) |
+| **Early symptoms** | Short-term memory loss, difficulty finding words, spatial disorientation | Tremor at rest, bradykinesia (slowness of movement), rigidity, postural instability |
+| **Later symptoms** | Confusion, personality changes, loss of executive function, language impairment | Dementia (in later stages), depression, sleep disorders, autonomic dysfunction |
+| **Treatment** | Cholinesterase inhibitors (donepezil, rivastigmine, galantamine) to increase ACh; NMDA receptor antagonist (memantine); palliative | L-DOPA (dopamine precursor); dopamine agonists (ropinirole, pramipexole); MAO-B inhibitors; deep brain stimulation |
+| **Treatment limitations** | Do not slow disease progression; only temporarily improve symptoms; side effects include nausea, insomnia | L-DOPA effectiveness declines over time; dyskinesias (involuntary movements); does not halt neurodegeneration |
+
+Both diseases involve the accumulation of misfolded protein aggregates, progressive loss of specific
+neuronal populations, and currently have no cure. Research is focused on: immunotherapy (antibodies against
+amyloid-$\beta$ or $\alpha$-synuclein), preventing protein aggregation, stem cell therapy, and early
+detection using biomarkers (PET imaging, cerebrospinal fluid analysis).
+
+</details>
+
+---
+
+## Cross-References to Related Topics
+
+- **Cell membrane structure and ion channels**: Review [./cell-biology](./cell-biology) for membrane proteins and fluid mosaic model.
+- **Muscle contraction and calcium**: Review [./metabolism-cell-biology](./metabolism-cell-biology) for actin-myosin interaction and ATP in muscle contraction.
+- **Homeostasis and feedback**: Review [./human-physiology](./human-physiology) for thermoregulation and blood glucose homeostasis.
+- **Immune system and neuromuscular disorders**: Review [./immunology](./immunology) for myasthenia gravis and multiple sclerosis.
+- **Endocrine system**: Review [./human-physiology](./human-physiology) for adrenaline, cortisol, and hormone-receptor interactions.
+
+---
+
+## Supplementary: Muscle Contraction in Detail (HL Extension)
+
+### Types of Muscle Tissue
+
+| Feature | Skeletal | Cardiac | Smooth |
+|---------|----------|---------|--------|
+| **Control** | Voluntary (somatic NS) | Involuntary (autonomic NS) | Involuntary (autonomic NS) |
+| **Striation** | Striated | Striated | Non-striated |
+| **Nuclei** | Multinucleated | Uninucleated (sometimes binucleated) | Uninucleated (spindle-shaped) |
+| **Gap junctions** | No | Yes (intercalated discs) | Yes (in single-unit type) |
+| **Regeneration** | Limited (satellite cells) | Very limited | Good |
+| **Contraction speed** | Fast | Intermediate | Slow |
+| **Fatigue** | Yes | No (resists fatigue) | No |
+
+### Sliding Filament Mechanism of Skeletal Muscle Contraction
+
+Skeletal muscle cells (fibres) contain bundles of **myofibrils**, each composed of repeating units
+called **sarcomeres**. The sarcomere is the functional unit of muscle contraction, bounded by Z-lines
+(Z-discs).
+
+**Key proteins**:
+- **Thick filaments**: composed of **myosin**. Each myosin molecule has a globular head (with
+  ATPase activity and actin-binding site) and a long tail. Approximately 300 myosin molecules per
+  thick filament, arranged in a bipolar fashion (heads pointing toward the centre on one half and
+  away on the other).
+- **Thin filaments**: composed of **actin** (globular protein polymerised into a double helix),
+  **tropomyosin** (covers myosin-binding sites on actin), and **troponin** (calcium-binding complex:
+  troponin C binds $\mathrm{Ca}^{2+}$, troponin I inhibits actin-myosin interaction, troponin T
+  binds tropomyosin).
+
+**Sliding filament theory**:
+1. **Resting state**: tropomyosin covers the myosin-binding sites on actin. Myosin heads are in the
+   "cocked" position, bound to ADP and $\mathrm{P_i}$.
+2. **Calcium release**: an action potential arrives at the neuromuscular junction, triggering muscle
+   depolarisation. The action potential travels along the sarcolemma and into T-tubules, triggering
+   $\mathrm{Ca}^{2+}$ release from the sarcoplasmic reticulum (via ryanodine receptors).
+3. **Calcium binding**: $\mathrm{Ca}^{2+}$ binds to troponin C, causing a conformational change that
+   moves tropomyosin away from the myosin-binding sites on actin.
+4. **Cross-bridge formation**: myosin heads bind to exposed sites on actin, forming cross-bridges.
+5. **Power stroke**: the myosin head pivots, pulling the thin filament toward the centre of the
+   sarcomere. ADP and $\mathrm{P_i}$ are released.
+6. **Detachment**: ATP binds to the myosin head, causing it to detach from actin.
+7. **Cocking**: ATP is hydrolysed to ADP and $\mathrm{P_i}$, re-cocking the myosin head.
+8. The cycle repeats as long as $\mathrm{Ca}^{2+}$ and ATP are available.
+
+The result: thin filaments slide past thick filaments, the Z-lines move closer together, and the
+sarcomere shortens. The muscle fibre shortens (contraction).
+
+**Evidence for the sliding filament theory**:
+- During contraction, the A band (length of thick filaments) does not change.
+- The I band (thin filaments only) and H zone (thick filaments only) shorten.
+- This is consistent with filaments sliding past each other, not themselves shortening.
+
+### Excitation-Contraction Coupling
+
+The sequence of events linking the action potential to muscle contraction:
+
+1. Action potential arrives at the neuromuscular junction (NMJ).
+2. Voltage-gated $\mathrm{Ca}^{2+}$ channels open on the presynaptic terminal; $\mathrm{Ca}^{2+}$ influx
+   triggers ACh vesicle exocytosis.
+3. ACh binds to nicotinic receptors on the motor end plate, opening $\mathrm{Na}^+$ channels.
+4. End-plate potential (EPP) depolarises the muscle fibre membrane to threshold, generating a muscle
+   action potential.
+5. The action potential propagates along the sarcolemma and into the T-tubules (invaginations of the
+   sarcolemma).
+6. Depolarisation of the T-tubule activates dihydropyridine receptors (DHPR, L-type $\mathrm{Ca}^{2+}$
+   channels), which mechanically couple to ryanodine receptors on the sarcoplasmic reticulum (SR).
+7. Ryanodine receptors open, releasing $\mathrm{Ca}^{2+}$ from the SR into the sarcoplasm.
+8. $\mathrm{Ca}^{2+}$ binds to troponin, initiating cross-bridge cycling (contraction).
+9. Relaxation: $\mathrm{Ca}^{2+}$ is actively pumped back into the SR by SERCA pumps ($\mathrm{Ca}^{2+}$-ATPase).
+   As $\mathrm{Ca}^{2+}$ concentration drops, $\mathrm{Ca}^{2+}$ dissociates from troponin, tropomyosin
+   re-covers actin, and cross-bridges cannot form.
+
+### Motor Unit Recruitment
+
+A **motor unit** consists of a single motor neuron and all the muscle fibres it innervates. The
+number of fibres per motor unit varies:
+- **Small motor units** (1--10 fibres): fine, precise movements (eye muscles, fingers).
+- **Large motor units** (1000+ fibres): powerful, coarse movements (leg muscles, postural muscles).
+
+**Gradation of muscle force**:
+1. **Recruitment**: increasing force by activating more motor units (spatial summation).
+2. **Rate coding**: increasing force by increasing the firing frequency of active motor neurons
+   (temporal summation). At low frequency, individual twitches are distinct; at higher frequency,
+   twitches summate (tetanus), producing sustained contraction.
+
+### Energy Sources for Muscle Contraction
+
+- **ATP** (immediate source): powers the myosin head cycle and $\mathrm{Ca}^{2+}$ pumps. Muscle stores
+  only enough ATP for approximately $2$--$3$ seconds of maximal contraction.
+- **Phosphocreatine (creatine phosphate)**: rapidly regenerates ATP from ADP (via creatine kinase):
+  $\mathrm{PCr} + \mathrm{ADP} \to \mathrm{Cr} + \mathrm{ATP}$. Provides energy for approximately
+  $10$--$15$ seconds of maximal effort.
+- **Anaerobic glycolysis**: breaks down glycogen to lactate, producing $2\;\mathrm{ATP}$ per glucose.
+  Provides energy for approximately $30$--$60$ seconds of intense activity. Causes muscle fatigue
+  (lactate accumulation, $\mathrm{pH}$ decrease).
+- **Aerobic respiration**: complete oxidation of glucose (and fatty acids) via the Krebs cycle and ETC.
+  Produces approximately $30$--$32\;\mathrm{ATP}$ per glucose. Provides sustained energy for prolonged
+  activity. Dominant during rest and low-intensity exercise.
+
+### Worked Example: Muscle Force and Cross-Bridge Cycling
+
+A muscle fibre has $10^5$ sarcomeres in series along its length and $10^3$ thick filaments per
+sarcomere cross-section. Each thick filament has approximately 300 myosin heads, and each myosin
+head generates a force of $4\;\mathrm{pN}$ ($4 \times 10^{-12}\;\mathrm{N}$). (a) Calculate the
+maximum force per sarcomere cross-section. (b) Calculate the maximum force of the entire fibre.
+(c) If each power stroke moves the thin filament by $5\;\mathrm{nm}$, calculate the work done by
+one cross-bridge per cycle. (d) Calculate the total work per contraction cycle if $50\%$ of
+myosin heads are attached simultaneously.
+
+<details>
+<summary>Solution</summary>
+
+(a) Force per sarcomere cross-section $= 10^3$ thick filaments $\times 300$ heads $\times 4\;\mathrm{pN}$
+$= 300{,}000 \times 4 \times 10^{-12} = 1.2 \times 10^{-6}\;\mathrm{N} = 1.2\;\mathrm{\mu N}$.
+
+(b) In a series arrangement, the force is the same along the entire length (force is transmitted,
+  not summed). So the maximum force of the fibre is the same as the force per cross-section:
+  $1.2\;\mathrm{\mu N}$.
+
+Note: this is the isometric force (no shortening). In practice, muscle fibres contain thousands of
+myofibrils in parallel, so the total force is multiplied by the number of myofibrils.
+
+(c) Work per cross-bridge per cycle $= \text{force} \times \text{distance} = 4 \times 10^{-12}\;\mathrm{N}
+\times 5 \times 10^{-9}\;\mathrm{m} = 2 \times 10^{-20}\;\mathrm{J}$.
+
+(d) If $50\%$ of heads are attached: $0.50 \times 300{,}000 = 150{,}000$ attached heads per
+cross-section.
+Total work per cross-section per cycle $= 150{,}000 \times 2 \times 10^{-20} = 3 \times 10^{-15}\;\mathrm{J}$.
+
+</details>
+
+---
+
+## Supplementary: Brain Regions and Higher Functions (HL Extension)
+
+### Cerebral Cortex
+
+The cerebral cortex is the outer layer of the cerebrum, approximately $2$--$4\;\mathrm{mm}$ thick,
+and is responsible for higher cognitive functions. It is divided into four lobes:
+
+**Frontal lobe**: motor cortex (primary motor area, premotor cortex, supplementary motor area --
+planning and executing voluntary movements), prefrontal cortex (decision-making, personality, social
+behaviour, working memory, planning), Broca's area (speech production, left hemisphere in most people).
+
+**Parietal lobe**: somatosensory cortex (receiving touch, temperature, pain, proprioception information
+from the contralateral side of the body), spatial awareness and navigation, integration of sensory
+information.
+
+**Temporal lobe**: primary auditory cortex, Wernicke's area (speech comprehension, left hemisphere),
+hippocampus (memory formation -- new explicit/declarative memories), amygdala (emotion, fear conditioning,
+emotional memory).
+
+**Occipital lobe**: primary visual cortex (receiving input from the retina via the thalamus; processing
+visual information such as edges, orientation, motion, and colour).
+
+**Motor and sensory homunculi**: the primary motor cortex and somatosensory cortex are organised as
+"maps" of the body (homunculi). The area of cortex devoted to each body part is proportional to the
+complexity of movement (motor) or density of sensory innervation (sensory), not to the size of the
+body part. The hands, face, and lips have disproportionately large cortical representations.
+
+### The Limbic System
+
+A group of interconnected brain structures involved in emotion, motivation, memory, and olfaction:
+
+- **Amygdala**: fear processing, emotional memory, threat detection. Damage causes reduced fear
+  responses (Kluver-Bucy syndrome in animals: tameness, hyperphagia, hypersexuality).
+- **Hippocampus**: formation of new episodic and spatial memories (consolidation). Damage (e.g., in
+  Alzheimer's disease or bilateral temporal lobectomy) causes anterograde amnesia (inability to form
+  new memories).
+- **Hypothalamus**: homeostatic regulation (body temperature, hunger, thirst, circadian rhythm),
+  endocrine control (pituitary gland), autonomic nervous system regulation.
+- **Cingulate gyrus**: emotion, pain processing, conflict monitoring (cognitive control).
+
+### Memory Systems
+
+**Declarative (explicit) memory**: facts and events that can be consciously recalled. Involves the
+hippocampus (acquisition), medial temporal lobe (consolidation), and neocortex (long-term storage).
+- **Episodic memory**: personal experiences (what, where, when).
+- **Semantic memory**: general knowledge and facts.
+
+**Non-declarative (implicit) memory**: skills and habits that are unconscious. Does not require the
+hippocampus.
+- **Procedural memory**: motor skills (riding a bicycle, typing) -- basal ganglia and cerebellum.
+- **Priming**: exposure to a stimulus facilitates subsequent processing.
+- **Classical conditioning**: association between stimuli -- amygdala (emotional conditioning),
+  cerebellum (motor conditioning).
+
+**Long-term potentiation (LTP)**: see worked examples above -- the cellular basis of learning and
+memory in the hippocampus.
+
+**Memory consolidation**: the transfer of memories from the hippocampus to the neocortex for long-term
+storage. This process occurs during sleep (especially slow-wave sleep and REM sleep) and can take
+weeks to years. The reactivation of hippocampal-neocortical circuits during sleep "replays" memory
+patterns, strengthening synaptic connections in the neocortex.
+
+### Neuroplasticity
+
+The brain's ability to reorganise itself by forming new neural connections throughout life:
+
+- **Synaptic plasticity**: LTP and LTD (long-term depression) strengthen or weaken synaptic connections.
+- **Structural plasticity**: dendritic spines grow or retract in response to experience. London taxi
+  drivers have enlarged posterior hippocampi (spatial memory demands).
+- **Functional plasticity**: undamaged brain areas can take over functions of damaged areas (e.g.,
+  after stroke, adjacent cortex can assume the functions of the damaged region).
+- **Critical periods**: some functions have sensitive periods during which they must be experienced
+  for normal development. Example: binocular vision requires balanced visual input during early
+  childhood; if one eye is deprived (strabismus, cataract), the visual cortex will not develop
+  normal binocular connections, and the deficit is largely irreversible after age 8--10.
+
+### Worked Example: Lesion Studies and Brain Function
+
+A patient presents with the following symptoms after a stroke: inability to produce fluent speech
+(non-fluent, effortful speech with short phrases), impaired writing ability, but intact
+comprehension of spoken and written language. (a) Identify the likely location of the lesion.
+(b) Name the syndrome. (c) Explain why comprehension is preserved. (d) A second patient has fluent
+but meaningless speech with poor comprehension. Identify the lesion location and syndrome.
+
+<details>
+<summary>Solution</summary>
+
+(a) The lesion is likely in **Broca's area** (inferior frontal gyrus, Brodmann areas 44 and 45) in the
+**left hemisphere** (in right-handed individuals and most left-handed individuals, language is
+lateralised to the left hemisphere).
+
+(b) The syndrome is **Broca's aphasia** (expressive aphasia, non-fluent aphasia).
+
+(c) Comprehension is preserved because **Wernicke's area** (posterior superior temporal gyrus, Brodmann
+area 22) and the connections between Wernicke's area and Broca's area (the arcuate fasciculus) are
+intact. The patient can understand language but cannot produce it fluently because the motor speech
+planning area (Broca's area) is damaged.
+
+(d) The second patient has **Wernicke's aphasia** (receptive aphasia, fluent aphasia). The lesion is in
+**Wernicke's area** in the left temporal lobe. Speech is fluent (rate and rhythm are normal) but
+contains incorrect words, neologisms (made-up words), and meaningless phrases ("word salad").
+Comprehension is severely impaired because the area responsible for language comprehension is damaged.
+The patient is often unaware of their deficits (anosognosia), unlike patients with Broca's aphasia,
+who are typically aware of and frustrated by their difficulty.
+
+</details>

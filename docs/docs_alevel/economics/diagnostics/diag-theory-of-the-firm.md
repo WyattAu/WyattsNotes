@@ -228,3 +228,119 @@ $\pi_F = (85 - 40)(30) = \pounds 1350$.
 Firm H earns $\pounds 2025$ by cheating vs $\pounds 1800$ by complying -- a gain of $\pounds 225$. This incentive to cheat is why cartels are inherently unstable.
 
 **Anti-dumping laws:** If the cartel raises price to $\pounds 100$ but one firm cheats by selling excess output abroad at lower prices (dumping), anti-dumping laws allow importing countries to impose tariffs on goods sold below fair market value. This reduces the profitability of cheating on international cartels and provides a mechanism to prevent predatory pricing strategies that could drive domestic competitors out of business.
+
+---
+
+## Section 3: Extended Theory of the Firm Practice
+
+**UT-4 (Extension).** A perfectly competitive firm has total cost $TC = 100 + 20Q + 2Q^2$. The market price is $\pounds 60$. (a) Calculate the profit-maximising output. (b) Calculate the profit. (c) Calculate the shutdown price. (d) At what price would the firm earn zero economic profit? (e) Derive the firm's short-run supply curve.
+
+**Solution:**
+
+(a) $MC = 20 + 4Q$. Set $P = MC$: $60 = 20 + 4Q \Rightarrow Q = 10$.
+
+(b) $TR = 60 \times 10 = 600$. $TC = 100 + 200 + 200 = 500$. $\pi = 100$.
+
+(c) Shutdown price = minimum AVC. $VC = 20Q + 2Q^2$. $AVC = 20 + 2Q$. $AVC$ is minimised at $Q = 0$, giving $AVC_{min} = 20$. Shutdown price $= \pounds 20$.
+
+(d) Zero economic profit: $P = ATC_{min}$. $ATC = 100/Q + 20 + 2Q$.
+$\frac{dATC}{dQ} = -100/Q^2 + 2 = 0 \Rightarrow Q^2 = 50 \Rightarrow Q = 7.07$.
+$ATC_{min} = 100/7.07 + 20 + 2(7.07) = 14.14 + 20 + 14.14 = 48.28$.
+Zero-profit price $= \pounds 48.28$.
+
+(e) Short-run supply curve: $P = MC$ for $P \geq$ shutdown price.
+$P = 20 + 4Q \Rightarrow Q = (P - 20)/4$ for $P \geq 20$.
+For $P < 20$: $Q = 0$.
+
+---
+
+**UT-5 (Extension): Natural Monopoly Regulation.** A natural monopoly has $TC = 200 + 10Q$ and faces demand $P = 50 - Q$. (a) Calculate the unregulated monopoly outcome (price, quantity, profit). (b) Calculate the outcome under marginal cost pricing regulation. (c) Calculate the outcome under average cost pricing regulation. (d) Compare the deadweight loss under each regime.
+
+**Solution:**
+
+(a) Unregulated monopoly: $MR = 50 - 2Q$. $MC = 10$. $MR = MC$: $50 - 2Q = 10 \Rightarrow Q = 20$, $P = 30$.
+Profit: $TR = 600$, $TC = 200 + 200 = 400$. $\pi = 200$.
+
+(b) Marginal cost pricing: $P = MC \Rightarrow 50 - Q = 10 \Rightarrow Q = 40$, $P = 10$.
+Revenue $= 400$. $TC = 200 + 400 = 600$. Profit $= -200$ (loss).
+The firm cannot survive at this price without a subsidy of 200. This is the allocatively efficient outcome.
+
+(c) Average cost pricing: $P = AC \Rightarrow 50 - Q = 200/Q + 10$.
+$50 - Q = 200/Q + 10 \Rightarrow 40 - Q = 200/Q \Rightarrow 40Q - Q^2 = 200 \Rightarrow Q^2 - 40Q + 200 = 0$.
+$Q = \frac{40 \pm \sqrt{1600 - 800}}{2} = \frac{40 \pm 28.28}{2}$. Taking the lower root: $Q = 5.86$, $P = 44.14$.
+Taking the higher root: $Q = 34.14$, $P = 15.86$.
+
+The relevant solution is $Q = 34.14$ (higher output, lower price). Let me verify: $AC = 200/34.14 + 10 = 5.86 + 10 = 15.86 = P$. Confirmed.
+
+(d) DWL comparison:
+- Unregulated monopoly: DWL $= \frac{1}{2}(30 - 10)(40 - 20) = \frac{1}{2}(20)(20) = 200$.
+- MC pricing: DWL $= 0$ (allocatively efficient).
+- AC pricing: DWL $= \frac{1}{2}(15.86 - 10)(40 - 34.14) = \frac{1}{2}(5.86)(5.86) = 17.2$.
+
+AC pricing eliminates most (91.4%) of the DWL while allowing the firm to break even. This is why regulators often use AC pricing (or a variant like price cap regulation) rather than MC pricing.
+
+---
+
+**UT-6 (Extension): Price Discrimination.** A cinema has two segments: adults and students. Adult demand: $P_A = 20 - 0.1Q_A$. Student demand: $P_S = 12 - 0.1Q_S$. The cinema's marginal cost is $\pounds 4$ per ticket and fixed costs are $\pounds 500$. (a) Calculate the profit-maximising price and quantity for each segment under third-degree price discrimination. (b) Calculate total profit. (c) Calculate the outcome under a single uniform price. (d) Which pricing strategy is more profitable?
+
+**Solution:**
+
+(a) Adults: $MR_A = 20 - 0.2Q_A = 4 \Rightarrow Q_A = 80$, $P_A = 12$.
+Students: $MR_S = 12 - 0.2Q_S = 4 \Rightarrow Q_S = 40$, $P_S = 8$.
+
+(b) Total $Q = 120$. $TR = 12 \times 80 + 8 \times 40 = 960 + 320 = 1280$.
+$TC = 500 + 4 \times 120 = 980$. Profit $= 300$.
+
+(c) Aggregate demand: $Q = Q_A + Q_S = (200 - 10P_A) + (120 - 10P_S)$. At a single price $P$: $Q = 320 - 20P$ for $P \leq 12$.
+$P = 16 - 0.05Q$ for $Q \leq 120$.
+$MR = 16 - 0.1Q = 4 \Rightarrow Q = 120$, $P = 10$.
+
+Wait -- let me check. At $P = 10$: $Q_A = 200 - 100 = 100$. $Q_S = 120 - 100 = 20$. Total $= 120$. Correct.
+
+$TR = 10 \times 120 = 1200$. $TC = 980$. Profit $= 220$.
+
+(d) Price discrimination yields profit of 300 vs uniform pricing profit of 220. Price discrimination is more profitable by 80 (36.4% more). This is why cinemas, airlines, and other firms with identifiable market segments practice price discrimination.
+
+Consumer surplus comparison:
+- Adults with discrimination: $\frac{1}{2}(20 - 12)(80) = 320$. Without: $\frac{1}{2}(20 - 10)(100) = 500$. Adults lose 180.
+- Students with discrimination: $\frac{1}{2}(12 - 8)(40) = 80$. Without: $\frac{1}{2}(12 - 10)(20) = 20$. Students gain 60.
+Net CS change: $-180 + 60 = -120$. Overall consumer surplus falls, but some consumers (students) benefit.
+
+---
+
+**IT-4 (Extension): Contestable Market Theory.** An airline route is served by a single firm with demand $P = 200 - Q$ and total cost $TC = 1000 + 40Q$. (a) Calculate the monopoly outcome. (b) If the market is perfectly contestable (no sunk costs, free entry and exit), calculate the "limit price" the monopolist would charge. (c) Compare prices, outputs, and welfare under monopoly vs contestable monopoly. (d) What conditions must hold for the market to be contestable?
+
+**Solution:**
+
+(a) Monopoly: $MR = 200 - 2Q = 40 \Rightarrow Q = 80$, $P = 120$.
+Profit $= (120 - 40)(80) - 1000 = 5400$.
+
+(b) Under contestability, the threat of entry forces the incumbent to charge a price low enough that a potential entrant cannot make a profit. The entrant's break-even condition: $P = AC_{min}$.
+$AC = 1000/Q + 40$. $AC_{min} = 40$ at $Q \to \infty$. But at any finite $Q$: $AC > 40$.
+
+For a potential entrant to break even at price $P$: $P = AC = 1000/Q + 40$. At $P$, demand is $Q = 200 - P$.
+
+If the incumbent serves the entire market at price $P$: $P = 1000/(200 - P) + 40$.
+$P - 40 = 1000/(200 - P)$. $(P - 40)(200 - P) = 1000$.
+$200P - P^2 - 8000 + 40P = 1000$. $P^2 - 240P + 9000 = 0$.
+$P = \frac{240 \pm \sqrt{57600 - 36000}}{2} = \frac{240 \pm \sqrt{21600}}{2} = \frac{240 \pm 147}{2}$.
+$P = 46.5$ or $P = 193.5$.
+
+The relevant solution is $P = 46.5$ (the lower price). At this price: $Q = 200 - 46.5 = 153.5$.
+Incumbent profit $= (46.5 - 40)(153.5) - 1000 = 997.75 - 1000 = -2.25 \approx 0$.
+
+The incumbent charges approximately 46.5, just enough to deter entry, earning approximately zero economic profit.
+
+(c) Comparison:
+
+| | Monopoly | Contestable |
+|---|:---:|:---:|
+| Price | 120 | 46.5 |
+| Quantity | 80 | 153.5 |
+| Profit | 5400 | 0 |
+| Consumer surplus | 3200 | 11760.1 |
+| DWL | 3200 | 0 |
+
+The contestable market achieves near-competitive outcomes despite having only one firm.
+
+(d) Conditions for contestability: (1) No sunk costs -- the entrant can recover all investment upon exit (e.g., planes can be redeployed to other routes). (2) Free entry and exit -- no legal barriers (licences, slots). (3) Technology access -- the entrant has access to the same technology. (4) Information symmetry -- the entrant knows the incumbent's costs and demand. In practice, airline routes are NOT perfectly contestable because airport slots are scarce (sunk entry cost) and loyalty programmes create switching costs.

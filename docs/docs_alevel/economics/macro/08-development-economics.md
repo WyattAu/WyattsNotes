@@ -584,8 +584,443 @@ countries." Evaluate this statement.
 Arguments that growth and sustainability are incompatible: (1) Growth increases resource use and pollution (more energy, more waste, more deforestation). (2) The environmental Kuznets curve may not apply to CO$_2$ emissions — global warming is a cumulative problem, not a local one. (3) Developing countries may be tempted to "grow now, clean up later" — but by then, environmental damage may be irreversible (deforestation, species extinction, climate tipping points). (4) Exponential growth on a finite planet is physically impossible (the "limits to growth" argument, Club of Rome, 1972). Arguments that they are compatible: (1) **Decoupling** — it is possible to grow while reducing environmental impact through technology (renewable energy, electric vehicles, circular economy). (2) The EKC hypothesis suggests environmental quality improves beyond a certain income level. (3) **Green growth** — investing in renewable energy and sustainable agriculture can be both environmentally beneficial and economically productive (e.g., solar panel manufacturing in China). (4) **Leapfrogging** — developing countries can skip polluting stages of development (e.g., going straight to mobile phones without landline networks, or to solar without coal). (5) The SDGs explicitly recognise that economic growth, social inclusion, and environmental protection must go hand in hand. Evaluation: growth and sustainability are compatible **if** the right policies are in place: carbon pricing, investment in renewable energy, protection of natural capital, international cooperation on climate change. Without these policies, growth will continue to degrade the environment. The key challenge is political will and international coordination.
 </details>
 
-:::
+## 11. The Solow Growth Model: Formal Treatment
 
-:::
+### 11.1 The Production Function and Steady State
 
-:::
+The Solow model (Solow, 1956) describes long-run economic growth through capital accumulation, labour force growth, and technological progress.
+
+**Production function:**
+$$Y = F(K, L) = K^\alpha L^{1-\alpha}$$
+
+In per-worker terms:
+$$y = \frac{Y}{L} = \left(\frac{K}{L}\right)^\alpha = k^\alpha$$
+
+where $k = K/L$ is capital per worker and $y = Y/L$ is output per worker.
+
+**Capital accumulation:**
+$$\dot{k} = s \cdot y - (n + \delta) \cdot k$$
+
+where $s$ is the savings rate, $n$ is the population growth rate, and $\delta$ is the depreciation rate.
+
+- $s \cdot y = s \cdot k^\alpha$ is investment per worker.
+- $(n + \delta) \cdot k$ is break-even investment (the investment needed to maintain the current capital-labour ratio as the population grows and capital depreciates).
+
+### 11.2 Solving for the Steady State
+
+At the steady state, $\dot{k} = 0$:
+
+$$s \cdot k^{*\alpha} = (n + \delta) \cdot k^*$$
+
+$$k^* = \left(\frac{s}{n + \delta}\right)^{\frac{1}{1-\alpha}}$$
+
+$$y^* = \left(\frac{s}{n + \delta}\right)^{\frac{\alpha}{1-\alpha}}$$
+
+**Key predictions:**
+
+1. **Higher savings rate $\Rightarrow$ higher steady-state income.** But the transition to the new steady state involves higher growth temporarily; once reached, growth returns to $n$.
+
+2. **Higher population growth $\Rightarrow$ lower steady-state income per capita.** More people dilute the capital stock. However, total GDP growth is higher ($n$ is larger).
+
+3. **In the steady state, per capita growth is zero** (without technological progress). All growth in output per worker comes from technological progress, not capital accumulation.
+
+### 11.3 Worked Example: Solow Model Calculations
+
+**Example.** A country has $\alpha = 0.3$, $s = 0.2$, $n = 0.02$, $\delta = 0.05$.
+
+**Steady-state capital per worker:**
+$$k^* = \left(\frac{0.2}{0.02 + 0.05}\right)^{\frac{1}{0.7}} = \left(\frac{0.2}{0.07}\right)^{1.4286} = (2.857)^{1.4286}$$
+
+$\ln(k^*) = 1.4286 \times \ln(2.857) = 1.4286 \times 1.050 = 1.500$
+$k^* = e^{1.500} = 4.482$
+
+**Steady-state output per worker:**
+$$y^* = (4.482)^{0.3} = e^{0.3 \times \ln(4.482)} = e^{0.3 \times 1.500} = e^{0.450} = 1.568$$
+
+**If savings rate increases to $s' = 0.3$:**
+$$k^{**} = \left(\frac{0.3}{0.07}\right)^{1.4286} = (4.286)^{1.4286}$$
+$\ln(k^{**}) = 1.4286 \times \ln(4.286) = 1.4286 \times 1.455 = 2.079$
+$k^{**} = e^{2.079} = 8.000$
+$y^{**} = (8.000)^{0.3} = e^{0.3 \times \ln(8)} = e^{0.3 \times 2.079} = e^{0.624} = 1.866$
+
+The higher savings rate increases output per worker by $1.866/1.568 - 1 = 19\%$.
+
+### 11.4 Solow Model with Technological Progress
+
+Adding labour-augmenting technological progress at rate $g$:
+
+$$Y = K^\alpha (AL)^{1-\alpha}$$
+
+$$\hat{y} = \frac{Y}{AL} = \hat{k}^\alpha$$
+
+The steady state in "effective labour" terms:
+
+$$\hat{k}^* = \left(\frac{s}{n + g + \delta}\right)^{\frac{1}{1-\alpha}}$$
+
+**Key result: in the steady state with technological progress, output per EFFECTIVE worker is constant, but output per ACTUAL worker grows at rate $g$.**
+
+$$g_y = g \quad \text{(long-run growth rate of output per capita)}$$
+
+This is the most important prediction of the Solow model: long-run per capita growth is determined solely by the rate of technological progress, not by the savings rate or population growth. Policy can affect the LEVEL of income but not its long-run GROWTH RATE.
+
+### 11.5 Evaluation of the Solow Model
+
+**Strengths:**
+- Provides a clear, parsimonious framework for understanding growth
+- Predicts conditional convergence (poorer countries grow faster if they have similar steady states)
+- Identifies the centrality of technological progress for long-run growth
+- Consistent with the broad empirical patterns (capital accumulation alone cannot sustain growth)
+
+**Limitations:**
+- Technological progress is exogenous (assumed, not explained). The model does not explain WHY technology improves -- this is the starting point for endogenous growth theory (Romer, 1990).
+- The savings rate is also exogenous. Why do some countries save more than others?
+- Assumes perfect competition and constant returns to scale in capital and labour.
+- Ignores human capital (addressed by Mankiw-Romer-Weil, 1992).
+- Predicts convergence that is not observed in practice (sub-Saharan Africa has diverged from rich countries).
+
+## 12. Poverty Traps: Theory and Evidence
+
+### 12.1 Definition
+
+A **poverty trap** is a self-reinforcing mechanism that causes poverty to persist. Low income $\Rightarrow$ low saving/investment $\Rightarrow$ low growth $\Rightarrow$ low income. The economy is "trapped" at a low-income equilibrium.
+
+### 12.2 Types of Poverty Traps
+
+**1. Savings trap.** At very low incomes, households cannot save because all income is spent on subsistence consumption. The savings rate is effectively zero, so $k^*$ is near zero, and the economy cannot accumulate capital.
+
+Mathematically: if $s = 0$ for $y < y_{subsistence}$, then $k^* = 0$ and $y^* = 0$. The economy cannot grow.
+
+**2. Big push trap.** Multiple industries must develop simultaneously for any single industry to be profitable. If infrastructure, education, and manufacturing all require each other to be viable, no individual sector can develop alone. A "big push" (coordinated investment) is needed to escape the trap (Rosenstein-Rodan, 1943).
+
+**3. Human capital trap.** Poor health and malnutrition reduce cognitive development and physical capacity, lowering labour productivity. Low productivity $\Rightarrow$ low income $\Rightarrow$ poor health and malnutrition $\Rightarrow$ lower productivity. Breaking the cycle requires external intervention (e.g., mass vaccination, school feeding programmes).
+
+**4. Demographic trap.** High infant mortality leads families to have many children (as insurance). High fertility $\Rightarrow$ population growth outpaces economic growth $\Rightarrow$ income per capita falls. Lower income $\Rightarrow$ continued high infant mortality.
+
+**5. Institutional trap.** Corruption, insecure property rights, and political instability discourage investment. Low investment $\Rightarrow$ low growth $\Rightarrow$ weak institutions (governments lack the revenue to build effective institutions). Breaking out requires institutional reform, but reform requires political will from leaders who benefit from the status quo (Acemoglu and Robinson, 2012).
+
+### 12.3 Evidence for and Against Poverty Traps
+
+**Evidence for:**
+- Sachs (2005): tropical Africa is caught in a poverty trap. External aid is needed to provide the "big push."
+- Countries that received large aid inflows (Botswana, South Korea) escaped poverty.
+- Microfinance studies show that small capital injections can generate persistent income gains for the poorest households.
+
+**Evidence against:**
+- Easterly (2006): aid has not produced growth in many countries despite trillions of dollars. The problem is not a lack of resources but poor institutions and governance.
+- Many countries have escaped poverty without large aid inflows (China, India post-1991).
+- The "middle-income trap" (countries that grow rapidly to middle-income status but then stagnate) may reflect institutional bottlenecks rather than poverty traps per se.
+
+**Evaluation:** Poverty traps exist in theory but are heterogeneous. The appropriate policy depends on the specific trap. Aid can help in some cases (health, education) but cannot substitute for institutional reform and good governance.
+
+## 13. Trade vs Aid for Development
+
+### 13.1 Arguments for Trade
+
+- **Comparative advantage**: countries specialise according to their comparative advantage, achieving higher output and lower prices than autarky.
+- **Access to technology**: trade exposes developing countries to advanced technologies and management practices (learning by doing, technology transfer through FDI).
+- **Economies of scale**: access to global markets allows firms in developing countries to achieve economies of scale not possible in small domestic markets.
+- **Discipline on governments**: international competition forces governments to maintain sound policies (avoiding the protectionism-inflation cycle).
+- **Evidence**: East Asian tigers (South Korea, Taiwan, Singapore, Hong Kong) achieved rapid growth through export-oriented industrialisation, not aid.
+
+### 13.2 Arguments for Aid
+
+- **Infrastructure financing**: developing countries lack the domestic savings to finance roads, ports, and power stations. Aid can fill the savings-investment gap.
+- **Human capital**: aid funds education, healthcare, and nutrition, building the human capital needed for growth.
+- **Catalytic role**: aid can "crowd in" private investment by improving infrastructure and reducing risk (the "CDF" -- complementary development finance -- argument).
+- **Emergency relief**: humanitarian aid saves lives during famines, natural disasters, and conflicts.
+- **Market failures**: aid can address market failures that private capital ignores (basic research, tropical disease treatment, climate adaptation in poor countries).
+
+### 13.3 Empirical Evidence
+
+**Pro-aid:** Sachs et al. (2004) argue that aid has a positive effect on growth when governance is adequate and aid is well-targeted. Burnside and Dollar (2000) found that aid promotes growth in countries with good fiscal, monetary, and trade policies.
+
+**Anti-aid:** Easterly (2006) and Moyo (2009) argue that aid has failed to promote growth and may have done harm by:
+- Sustaining corrupt governments (aid revenue replaces tax revenue, reducing accountability)
+- Creating dependency (recipients become dependent on aid rather than developing domestic revenue sources)
+- Distorting local economies (large aid inflows can cause "Dutch disease" -- the local currency appreciates, making exports less competitive)
+- Being poorly targeted (much aid is "tied" to donor country procurement, reducing its value)
+
+**The evidence is mixed.** The meta-analysis by Doucouliagos and Paldam (2009) found a statistically insignificant effect of aid on growth. However, specific types of aid (health, education, infrastructure) may be effective even if aggregate aid is not.
+
+### 13.4 Evaluation
+
+The trade vs aid debate is a false dichotomy. Optimal development strategy combines both:
+- Trade to drive growth (export-oriented industrialisation, participation in global value chains)
+- Aid to finance the prerequisites for trade (infrastructure, human capital, institutional reform)
+- The key is that aid should be COMPLEMENTARY to trade, not a substitute for it. Aid that builds roads, ports, and educated workforces enhances a country's ability to trade.
+
+## 14. Exam-Style Questions with Full Mark Schemes
+
+**Question 1 (25 marks).** "Foreign aid is more effective than international trade in promoting economic development in low-income countries." Evaluate this statement.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Analysis of aid (10 marks):**
+- Fills the savings-investment gap (Harrod-Domar model): low-income countries have savings rates of 5-10%, far below the 20-30% needed for rapid growth. Aid provides the additional investment capital.
+- Builds human capital: education aid (primary schooling, teacher training) and health aid (vaccination, malaria prevention) improve labour productivity.
+- Finances infrastructure: roads, ports, electricity grids are prerequisites for industrialisation but cannot be financed domestically.
+- Addresses market failures: private investors will not fund basic research on tropical diseases or climate adaptation in poor countries (positive externalities, no profit motive).
+- Evidence: aid helped eradicate smallpox, reduced HIV/AIDS mortality, and funded infrastructure in many developing countries.
+
+**Analysis of trade (10 marks):**
+- Comparative advantage: trade allows countries to specialise and access larger markets, achieving higher output than autarky.
+- Technology transfer: FDI and trade expose developing countries to advanced technologies and management practices.
+- Competition: international competition forces firms to innovate and reduce costs.
+- Evidence: East Asian tigers achieved per capita income growth of 6-10% per year for three decades through export-oriented industrialisation. China's post-1978 growth was driven by trade and FDI.
+- Limitations: terms of trade bias against primary commodity exporters (Prebisch-Singer hypothesis); trade can create dependency; exposure to global shocks (2008 financial crisis, commodity price volatility).
+
+**Evaluation (5 marks):**
+- The statement presents a false dichotomy. Aid and trade are complementary, not substitutes.
+- Aid is most effective when it finances the prerequisites for trade (infrastructure, human capital).
+- Trade is most effective when countries have the institutional capacity to participate (legal systems, property rights).
+- Aid without trade creates dependency; trade without aid may leave the poorest behind.
+- Conclusion: the optimal development strategy uses aid strategically to build the capacity for trade-driven growth.
+
+**Mark allocation:** Knowledge (6), Application (6), Analysis (6), Evaluation (7).
+</details>
+
+**Question 2 (12 marks).** Using the Solow model, explain why a one-off increase in the savings rate leads to temporary higher growth but does not permanently increase the growth rate of output per worker.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Step 1: Effect on the steady state (4 marks).**
+Higher $s$ increases $k^* = [s/(n+\delta)]^{1/(1-\alpha)}$. The new steady state has higher capital per worker and higher output per worker. However, once the new steady state is reached, $\dot{k} = 0$ and per capita growth returns to zero (without technological progress). The savings rate affects the LEVEL of income, not its long-run GROWTH rate.
+
+**Step 2: Transition dynamics (4 marks).**
+When $s$ increases, investment exceeds break-even investment at the old $k^*$. Capital accumulates ($\dot{k} > 0$), and output per worker rises. During the transition, the growth rate of $y$ is positive (diminishing as the economy approaches the new steady state). The growth rate follows a path from high to zero, asymptotically approaching the new steady state.
+
+**Step 3: With technological progress (4 marks).**
+With labour-augmenting technological progress at rate $g$, the steady-state growth rate of output per worker is $g$ regardless of $s$. The savings rate affects the LEVEL of output per effective worker ($\hat{y}^*$) but not its growth rate. This is the key Solow prediction: long-run growth is driven by technology, not capital accumulation alone.
+</details>
+
+**Question 3 (25 marks).** "Institutional quality is the most important determinant of economic development." Evaluate this statement with reference to the Solow model, the Lewis model, and empirical evidence.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Arguments that institutions are paramount (10 marks):**
+- Acemoglu and Robinson (2012): "Why Nations Fail" argues that extractive institutions (which concentrate power and wealth in a narrow elite) prevent development, while inclusive institutions (which distribute power broadly and encourage participation) promote it.
+- Evidence: North and South Korea had similar income levels in 1945 but diverged dramatically due to institutional differences. Botswana (inclusive institutions) developed successfully despite being resource-rich, while Nigeria (extractive institutions) did not.
+- Institutions determine the savings rate, the quality of education, property rights, and the efficiency of government -- all of which are factors in the Solow model.
+- The Solow model treats the savings rate as exogenous, but in reality, savings rates are determined by institutions (financial development, social safety nets, macroeconomic stability).
+
+**Arguments that institutions are not the only determinant (10 marks):**
+- The Solow model shows that factor accumulation ($K$ and $L$) and technology ($A$) also determine output. Even with perfect institutions, a country with no capital or technology will be poor.
+- Geography matters: landlocked countries, tropical climates, disease burden, and resource endowments affect productivity independently of institutions (Sachs, 2001).
+- Culture and social norms: Weber's "Protestant ethic" thesis, social trust, and attitudes toward education and entrepreneurship influence economic behaviour.
+- The Lewis model highlights the role of structural transformation (moving labour from low-productivity agriculture to high-productivity industry), which depends on both institutions and factor endowments.
+- Technology transfer: countries that are geographically proximate to technology leaders benefit from spillovers regardless of institutional quality.
+
+**Evaluation (5 marks):**
+- Institutions are necessary but not sufficient. Good institutions facilitate development but cannot create it without capital, labour, and technology.
+- The direction of causality is debated: do good institutions cause development, or does development create the conditions for good institutions?
+- The most convincing view is that institutions are a deep determinant of development that shapes the incentives for factor accumulation and technological adoption. But institutions interact with geography, culture, and policy in complex ways.
+- Conclusion: institutional quality is arguably the most IMPORTANT determinant because it influences all other factors (savings, investment, education, innovation). However, it is not the ONLY determinant, and institutional reform alone cannot compensate for geographic disadvantages or a lack of capital.
+</details>
+
+## 11. Extended Worked Examples
+
+### 11.1 Harrod-Domar Model: Full Application
+
+**Example.** A developing country has a capital-output ratio of 3.5 and a savings rate of 15%.
+
+**Harrod-Domar growth rate:** $g = s / v = 0.15 / 3.5 = 4.29\%$.
+
+**To achieve 7% growth (target):**
+$7 = s / 3.5 \Rightarrow s = 24.5\%$. The savings rate must nearly double from 15% to 24.5%.
+
+**Alternative: reduce the capital-output ratio.**
+$7 = 0.15 / v \Rightarrow v = 2.14$. The capital-output ratio must fall from 3.5 to 2.14 -- a 39% improvement in capital efficiency.
+
+**Foreign aid to fill the savings gap:**
+Savings gap $= (s_{required} - s_{actual}) \times Y = (0.245 - 0.15) \times 100 = 9.5$ (if GDP = 100).
+The country needs foreign aid or FDI of 9.5% of GDP to achieve the growth target.
+
+**Two-gap model (Chenery and Strout):**
+Gap 1 (savings gap): the difference between required investment and domestic savings.
+Gap 2 (foreign exchange gap): the difference between required imports and export earnings.
+
+If required investment $= 24.5\%$ of GDP, domestic savings $= 15\%$, and required imports $= 30\%$ of GDP while exports $= 20\%$:
+- Savings gap $= 24.5 - 15 = 9.5\%$ of GDP.
+- Foreign exchange gap $= 30 - 20 = 10\%$ of GDP.
+- The binding constraint is the foreign exchange gap (10% > 9.5%). The country needs 10% of GDP in foreign aid.
+
+**Limitations of the Harrod-Domar model:**
+- Assumes a fixed capital-output ratio (no substitutability between capital and labour).
+- Assumes constant savings rate (independent of income level and interest rates).
+- Ignores technological progress and human capital.
+- The model is a useful starting point but too simplistic for policy analysis.
+
+### 11.2 Lewis Dual-Sector Model: Numerical Simulation
+
+**Example.** An economy has two sectors:
+
+**Traditional (agricultural) sector:**
+- Labour force: 60 million
+- MPL in agriculture: constant at $200 (subsistence wage)
+- Surplus labour: 30 million (workers whose MPL = 0 or near 0)
+
+**Modern (industrial) sector:**
+- Initial labour: 10 million
+- MPL in industry: $MPL = 5000 - 100L$ (declining as more labour is added)
+- Capital accumulation rate: 5% per year (reinvested profits)
+- Wage premium: industrial wage = 1.5 x subsistence = $300
+
+**Lewis turning point:** Surplus labour is exhausted when 30 million workers have been transferred.
+
+**Year 1:** Industrial MPL at $L = 10$: $MPL = 5000 - 1000 = 4000$. Profit per worker $= 4000 - 300 = 3700$. Total profit $= 3700 \times 10 = 37{,}000$. Capital accumulation $= 0.05 \times 37{,}000 = 1850$.
+
+The industrial sector absorbs workers until $MPL = 300$: $5000 - 100L = 300 \Rightarrow L = 47$.
+37 workers are transferred (from 10 to 47). But only 30 surplus workers are available, so the turning point is reached.
+
+Wait, the Lewis model involves a gradual transfer. Let me simulate year by year.
+
+**Simplified simulation:**
+Each year, the industrial sector hires workers up to the point where $MPL$ = industrial wage (300). The number of workers hired depends on the capital stock (which grows through reinvested profits).
+
+Assume output in industry $= 50L - L^2$ (so $MPL = 50 - 2L$). Capital is needed: each worker requires $K/L = 2$ units of capital.
+
+Year 1: $K = 20$ (for 10 workers). Industrial wage = 300. Hire until $MPL = 300$: $50 - 2L = 300$ is impossible ($L$ would be negative). This doesn't work.
+
+**Simpler approach:** Let industrial output $= A \times K^{0.3}L^{0.7}$ with $A = 1$. Initial $K = 100$, $L = 10$.
+Output $= 100^{0.3} \times 10^{0.7} = 3.98 \times 5.01 = 19.94$.
+$MPL = 0.7 \times 19.94 / 10 = 1.40$.
+Industrial wage $= 1.5 \times 0.2 = 0.3$ (if agricultural MPL = 0.2).
+Since $MPL = 1.40 > 0.3$, the industrial sector wants to hire more workers.
+
+**Key insight of the Lewis model:** in the early stages, the industrial sector can hire unlimited labour at the subsistence wage. Profits are reinvested, expanding the capital stock and absorbing more labour. Growth is rapid because:
+1. Labour is cheap (no wage pressure).
+2. Profits are high (large gap between MPL and wage).
+3. The savings rate in the industrial sector is high (capitalists reinvest profits).
+
+**The turning point** occurs when surplus labour is exhausted. After this point:
+- Industrial wages must rise to attract additional workers from agriculture.
+- Profits fall (higher wages squeeze the profit share).
+- The growth rate slows.
+- The economy enters the "neoclassical" phase where labour is fully employed and wages are determined by marginal product.
+
+**Empirical example: China (1980-2015).**
+- 1980: 80% of the labour force in agriculture. Massive surplus labour.
+- 1980-2010: approximately 250 million workers transferred from agriculture to industry and services. GDP growth averaged 10%.
+- 2010 onwards: labour shortages in coastal factories. Wages rising 10-15% per year. The Lewis turning point has been reached (or is close).
+- Growth has slowed from 10% to 6% as the surplus labour source is depleted.
+
+### 11.3 Aid vs Trade: A Quantitative Comparison
+
+**Example.** Country X has GDP = USD 50bn. It receives USD 2bn in foreign aid and exports USD 8bn.
+
+**Aid scenario (current policy):**
+- Aid = 4% of GDP.
+- Government spending financed by aid: USD 2bn (assumed 100% effective, which is optimistic).
+- Multiplier: 1.5. GDP increase from aid = $2 \times 1.5 = 3$bn (6% of GDP).
+- But: aid dependency, Dutch disease (appreciation of the real exchange rate reduces export competitiveness), and governance issues reduce the effective multiplier. Realistic multiplier: 0.8-1.2.
+- Net GDP increase: $2 \times 1.0 = 2$bn (4% of GDP).
+
+**Trade scenario (alternative policy):**
+- The government negotiates a free trade agreement that increases exports by 20%.
+- New exports: $8 \times 1.2 = 9.6$bn. Increase: 1.6bn.
+- Import tariff revenue lost: USD 0.3bn (assuming 15% average tariff on imports of 2bn).
+- Multiplier on net exports: 1.5. GDP increase $= 1.6 \times 1.5 = 2.4$bn (4.8% of GDP).
+- Additional dynamic gains: technology transfer, competition, economies of scale. Estimated additional 1% of GDP per year over 10 years.
+
+**Comparison over 10 years (compounding):**
+
+| Year | GDP with aid | GDP with trade | Difference |
+|:---:|:---:|:---:|:---:|
+| 0 | 50.0 | 50.0 | 0.0 |
+| 1 | 52.0 | 52.4 | +0.4 |
+| 5 | 56.1 | 57.6 | +1.5 |
+| 10 | 63.4 | 66.7 | +3.3 |
+
+The trade-led strategy generates 5.2% higher GDP after 10 years than the aid-led strategy. This gap widens over time because trade generates dynamic gains (productivity growth) while aid generates a static one-off boost.
+
+**Evaluation:**
+- Aid is essential for humanitarian purposes (famine relief, healthcare, education) and cannot be replaced by trade policy.
+- The comparison is misleading because aid and trade are not substitutes -- the optimal strategy uses both.
+- Aid can SUPPORT trade-led development by financing infrastructure, education, and institutional reform.
+- The aid effectiveness literature (Burnside and Dollar, 2000) suggests that aid works well in countries with good institutions and poorly in countries with bad institutions.
+
+### 11.4 Poverty Trap: Mathematical Model
+
+**Example.** An economy has a production function $Y = K^{0.3}L^{0.7}$ and a savings rate $s = f(Y)$ that depends on income:
+
+$$s(Y) = \begin{cases} 0.05 & \text{if } Y < Y^* \\ 0.20 & \text{if } Y \geq Y^* \end{cases}$$
+
+where $Y^* = 100$ is a "threshold" income above which households can afford to save more (they are above subsistence).
+
+**Low-income trap:** If $Y_0 < Y^*$, savings rate = 5%. Steady state: $k^* = (0.05 / 0.05)^{1/0.7} = 1$. $y^* = 1^{0.3} = 1$. $Y^*_{trap} = 1 \times L = L$. (Using $\delta = 0.05$, $n = 0$.)
+
+This gives $y^* = (s/(\delta + n))^{0.3/(1-0.3)} = (0.05/0.05)^{0.429} = 1$. The economy is trapped at $y = 1$, which is below the threshold $Y^* = 100$.
+
+**High-income equilibrium:** If $Y_0 \geq Y^*$, savings rate = 20%. Steady state: $k^* = (0.20/0.05)^{1/0.7} = 4^{1.429} = 6.96$. $y^* = 6.96^{0.3} = 1.84$.
+
+The economy has TWO stable steady states: a poverty trap ($y = 1$) and a developed equilibrium ($y = 1.84$). The threshold $Y^* = 100$ determines which equilibrium the economy converges to.
+
+**Big push:** A one-time aid transfer of $\Delta Y = 99$ (to push the economy from $y = 1$ to $y = 100$) would shift the economy to the high savings rate and the high-income equilibrium. The required transfer is large, but the permanent benefit is enormous: once the economy escapes the trap, it remains on the high-growth path without further aid.
+
+**Policy implication:** development aid is most effective when it is targeted at pushing economies over a critical threshold (infrastructure, education, health) that enables self-sustaining growth. Small, fragmented aid programmes that do not reach the threshold may be wasted.
+
+## 12. Extended Worked Examples
+
+### 12.1 Industrial Policy: The East Asian Model
+
+**Example.** South Korea's development strategy (1960-1995) combined trade openness with targeted industrial policy.
+
+**Phase 1: Import substitution (1950s-1960):**
+- High tariffs on manufactured goods to protect infant industries.
+- Government-directed credit to priority sectors (textiles, cement, fertilisers).
+- Result: GDP growth 4% per year, but inefficient industries, balance of payments crises.
+
+**Phase 2: Export-led growth (1960s-1980s):**
+- Shift from import substitution to export promotion.
+- Unified exchange rate, export subsidies, reduced tariffs on imported inputs for exporters.
+- Government-directed credit to export-oriented industries (steel, shipbuilding, electronics).
+- Chaebols (family-owned conglomerates) as instruments of industrial policy: Hyundai, Samsung, LG received preferential credit, tax breaks, and monopoly rights in exchange for meeting export targets.
+- Result: GDP growth 8-10% per year, exports grew from USD 0.05bn (1962) to USD 30bn (1980).
+
+**Quantitative impact:**
+- GDP per capita rose from USD 158 (1960) to USD 12,000 (1995) -- a 76-fold increase.
+- Exports as % of GDP rose from 3% to 35%.
+- Manufacturing as % of GDP rose from 14% to 30%.
+- Poverty rate fell from 50% to 5%.
+
+**Policy evaluation:**
+- The government picked winners effectively (steel, shipbuilding, electronics became globally competitive). But it also picked losers (heavy chemical industry was over-invested).
+- The chaebol system created concentration of economic power, political corruption, and suppressed SME development.
+- The 1997 Asian Financial Crisis exposed the fragility of the model: excessive debt, government-guaranteed lending, and weak financial regulation.
+- Post-crisis reforms: financial liberalisation, corporate governance reform, reduced government intervention.
+
+**Lessons for other developing countries:**
+1. Industrial policy CAN work when combined with export discipline (firms must compete in international markets).
+2. Government capacity and bureaucratic quality are critical (South Korea had a highly educated, meritocratic civil service).
+3. Political commitment to macroeconomic stability (low inflation, competitive exchange rate) is a prerequisite.
+4. The model is difficult to replicate: South Korea benefited from specific geopolitical circumstances (US military support, access to the US market, Japanese technology transfer) that are not available to most developing countries today.
+
+### 12.2 Microfinance: Does It Reduce Poverty?
+
+**Example.** A microfinance institution (MFI) lends USD 500 to a woman in rural Bangladesh to start a small business (sewing). Interest rate: 25% per year. Repayment period: 12 months (weekly repayments).
+
+**Cost of the loan:** Total repayment $= 500 \times 1.25 = 625$. Weekly repayment $= 625/52 = 12.02$.
+
+**Business viability:** If the woman earns USD 15/week from sewing (after costs):
+- Weekly profit: $15 - 12.02 = 2.98$.
+- Annual profit: $2.98 \times 52 = 155$.
+- Return on investment: $155 / 500 = 31\%$.
+
+The business is viable. After repaying the loan, the woman has a profitable business and savings of USD 155.
+
+**If the business earns only USD 10/week:**
+- Weekly profit: $10 - 12.02 = -2.02$ (loss).
+- The woman cannot repay the loan from business income. She may use household income, borrow from moneylenders, or default.
+
+**Microfinance interest rates:** 25% may seem high, but MFIs face high operating costs (visiting clients in rural areas weekly, processing many small loans). The operating cost of lending USD 500 is proportionally much higher than lending USD 50,000. The Grameen Bank's average interest rate is approximately 20%.
+
+**Impact evaluation (RCT evidence):**
+- Banerjee, Duflo, et al. (2015): a randomised controlled trial in Hyderabad, India found that microfinance increased business activity by 33% among existing business owners but had NO significant effect on poverty, consumption, or health outcomes.
+- The positive effects were concentrated among those who were already entrepreneurs; microfinance did not create new businesses among the poorest.
+- Women's empowerment effects were mixed: some studies found increased decision-making power within the household, others found increased domestic violence (due to husbands' resentment of wives' financial independence).
+
+**Evaluation:**
+- Microfinance is not a poverty panacea. It is a useful tool for existing entrepreneurs who lack access to formal credit.
+- The poorest (who are not entrepreneurs) do not benefit from microfinance and may be harmed by taking on debt they cannot repay.
+- The most effective poverty reduction strategies combine microfinance with other interventions (health, education, infrastructure, social protection).
+- Microfinance works best when complemented by business training, savings products, and insurance.

@@ -634,3 +634,393 @@ more than producers." Evaluate this statement using tax incidence analysis.
 <summary>Hint</summary>
 The benefit of a subsidy is distributed in the same way as a tax burden: the more inelastic side receives more benefit. With elastic demand (consumers can easily switch) and inelastic supply (producers cannot easily exit), producers receive a larger share of the subsidy benefit. The statement is incorrect: producers benefit more. The price consumers pay falls by less than the price producers receive increases.
 </details>
+
+## 15. Advanced Elasticity Applications
+
+### 15.1 Income Elasticity and the Business Cycle
+
+Income elasticity of demand is critical for understanding how different sectors perform during the business cycle:
+
+**Cyclical goods (YED > 1):** demand rises more than proportionally during booms and falls more during recessions. Examples: luxury cars, foreign holidays, restaurant meals, airline travel. These sectors experience amplified fluctuations.
+
+**Defensive goods (0 < YED < 1):** demand is relatively stable across the cycle. Examples: food, utilities, basic healthcare, public transport. These sectors are less affected by recessions.
+
+**Inferior goods (YED < 0):** demand rises during recessions and falls during booms. Examples: discount retailers, instant noodles, public transport. These sectors may be counter-cyclical.
+
+**Worked example.** During the 2008-09 recession, UK GDP fell by 6%. Using YED estimates:
+- Restaurant demand (YED = 1.5): falls by $1.5 \times 6\% = 9\%$.
+- Supermarket food demand (YED = 0.3): falls by $0.3 \times 6\% = 1.8\%$.
+- Discount retailer demand (YED = -0.5): rises by $0.5 \times 6\% = 3\%$.
+
+This explains why budget retailers (Aldi, Lidl) grew during the recession while upmarket restaurants suffered.
+
+### 15.2 Cross-Price Elasticity and Competition Policy
+
+Cross-price elasticity is used by competition authorities to define the relevant market:
+
+**Worked example.** The CMA is investigating a merger between two coffee shop chains. XED between the two chains' products is estimated at 1.8 (strong substitutes). XED between the chains and independent coffee shops is 0.3 (weak substitutes). XED between the chains and tea shops is 0.1 (very weak substitutes).
+
+The high XED (1.8) between the two chains suggests they operate in the same relevant market. The merger would significantly reduce competition. The CMA might block the merger or require remedies (selling some stores).
+
+The low XED with tea shops (0.1) suggests they are not close substitutes and should not be included in the relevant market definition.
+
+### 15.3 Elasticity and Total Revenue: Graphical Analysis
+
+**Worked example with linear demand.** A firm faces demand $Q = 100 - 2P$.
+
+Inverse demand: $P = 50 - Q/2$. Revenue: $TR = 50Q - Q^2/2$.
+
+**PED at different points:**
+At $Q = 25, P = 37.50$: PED $= (37.5/25) \times (-2) = -3.0$ (elastic).
+At $Q = 50, P = 25$: PED $= (25/50) \times (-2) = -1.0$ (unit elastic).
+At $Q = 75, P = 12.50$: PED $= (12.5/75) \times (-2) = -0.33$ (inelastic).
+
+**TR at different points:**
+$TR(25) = 50(25) - 625 = 625$.
+$TR(50) = 50(50) - 1250 = 1250$ (maximum).
+$TR(75) = 50(75) - 2812.5 = 937.50$.
+
+This confirms: TR is maximised where $|\text{PED}| = 1$ (at the midpoint of the demand curve).
+
+## 16. Exam-Style Questions with Full Mark Schemes
+
+**Question 1 (12 marks).** The government imposes a specific tax of GBP 8 per unit on a good with demand $Q_D = 200 - 4P$ and supply $Q_S = 4P - 40$. (a) Calculate the new equilibrium price and quantity. (b) Calculate the consumer and producer burden of the tax. (c) Calculate the deadweight loss.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**(a) New equilibrium (4 marks).**
+Original equilibrium: $200 - 4P = 4P - 40 \Rightarrow 240 = 8P \Rightarrow P^* = 30$, $Q^* = 80$.
+
+With tax: supply shifts to $Q_S = 4(P_d - 8) - 40 = 4P_d - 72$.
+$200 - 4P_d = 4P_d - 72 \Rightarrow 272 = 8P_d \Rightarrow P_d = 34$, $Q = 64$.
+$P_s = 34 - 8 = 26$.
+
+**(b) Tax incidence (4 marks).**
+Consumer burden: $P_d - P^* = 34 - 30 = \text{GBP } 4$ (out of 8).
+Producer burden: $P^* - P_s = 30 - 26 = \text{GBP } 4$ (out of 8).
+Ratio: $1:1$ (equal burden because demand and supply have equal slopes, hence equal elasticity at the equilibrium).
+
+**(c) Deadweight loss (4 marks).**
+$\text{DWL} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times 8 \times (80 - 64) = \frac{1}{2} \times 8 \times 16 = \text{GBP } 64$.
+</details>
+
+**Question 2 (25 marks).** "The price mechanism is the most effective method of resource allocation in a market economy." Evaluate this statement.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Arguments for the price mechanism (10 marks):**
+- Signalling: prices convey information about scarcity, quality, and consumer preferences. High prices signal high demand or scarce supply, incentivising production and conservation.
+- Incentive: the profit motive drives firms to produce efficiently (minimise costs) and innovate (develop new products).
+- Rationing: prices allocate goods to those willing and able to pay the most, which (under certain conditions) maximises total surplus.
+- Adam Smith's "invisible hand": individuals pursuing self-interest are led, as if by an invisible hand, to promote the social interest.
+- First Theorem of Welfare Economics: competitive equilibrium is Pareto efficient (maximises total surplus).
+
+**Arguments against / limitations (10 marks):**
+- Market failure: externalities, public goods, information asymmetry, and market power cause the price mechanism to misallocate resources.
+- Equity concerns: the price mechanism allocates based on willingness to pay, which reflects income/wealth, not need or merit. Essential goods (healthcare, education) may be under-consumed by the poor.
+- Short-run price rigidity: menu costs, contracts, and imperfect information cause prices to adjust slowly, leading to persistent disequilibrium.
+- Public goods: the price mechanism cannot provide non-excludable, non-rivalrous goods because the free-rider problem prevents payment.
+- Externalities: the price mechanism ignores external costs and benefits. Pollution is under-priced; education is under-consumed.
+- Behavioural factors: consumers and firms may not be rational (prospect theory, bounded rationality, framing effects).
+
+**Evaluation (5 marks):**
+- The price mechanism is highly effective for allocating most goods and services in a market economy but is NOT the most effective method for ALL types of goods.
+- For private goods in competitive markets, the price mechanism is superior to central planning (as demonstrated by the collapse of command economies).
+- For public goods, merit goods, and goods with significant externalities, the price mechanism fails and government intervention is needed.
+- The best approach is a mixed economy: the price mechanism for most allocation, supplemented by government intervention to correct market failures and address equity concerns.
+- Conclusion: the statement is too absolute. The price mechanism is the most effective method for ALLOCATIVE EFFICIENCY but not for EQUITY or the provision of public goods.
+</details>
+
+**Question 3 (12 marks).** A government is considering imposing a maximum price (price ceiling) of GBP 5 on a good with demand $Q_D = 100 - 8P$ and supply $Q_S = 4P - 20$. The equilibrium price is GBP 10. (a) Calculate the shortage created by the price ceiling. (b) Calculate the change in consumer surplus. (c) Evaluate whether the price ceiling benefits consumers overall.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**(a) Shortage (4 marks).**
+At $P_c = 5$: $Q_D = 100 - 8(5) = 60$, $Q_S = 4(5) - 20 = 0$.
+The supply is zero at $P = 5$ (below the supply curve intercept of $P = 5$ where $Q_S = 0$).
+Actually, supply intercept: $4P - 20 = 0 \Rightarrow P = 5$. So $Q_S = 0$ at the ceiling price.
+Shortage $= 60 - 0 = 60$ units. The market completely dries up.
+
+Wait, let me reconsider. The supply curve $Q_S = 4P - 20$ has intercept at $P = 5$. So at $P_c = 5$, $Q_S = 0$. This means the price ceiling is set exactly at the supply intercept, so the market ceases to function.
+
+For a more interesting case, set $P_c = 7$:
+$Q_D = 100 - 8(7) = 44$, $Q_S = 4(7) - 20 = 8$. Shortage $= 44 - 8 = 36$ units.
+
+**(b) Change in consumer surplus (4 marks).**
+Original CS: at $P^* = 10$, $Q^* = 100 - 80 = 20$. Choke price $= 100/8 = 12.5$.
+$\text{CS}_{orig} = \int_0^{20} [(12.5 - Q/8) - 10]\,dQ = \int_0^{20} [2.5 - Q/8]\,dQ = [2.5Q - Q^2/16]_0^{20} = 50 - 25 = 25$.
+
+New CS (at $P_c = 7$): quantity traded $= 8$. But only 8 units are available, and demand at $P_c = 7$ is 44.
+CS is the area between the demand curve and $P_c = 7$ for $Q = 0$ to $8$: $\int_0^8 [(12.5 - Q/8) - 7]\,dQ = \int_0^8 [5.5 - Q/8]\,dQ = [5.5Q - Q^2/16]_0^8 = 44 - 4 = 40$.
+
+Change in CS: $40 - 25 = +15$. Consumer surplus INCREASES for those who can still buy the good, but many consumers (36 out of 44 who want the good at the ceiling price) cannot obtain it. The change in TOTAL consumer welfare is ambiguous.
+
+**(c) Evaluation (4 marks):**
+- Consumers who obtain the good gain (CS increases from 25 to 40).
+- Consumers who are excluded from the market lose (they would have bought at $P = 10$ but cannot buy at $P = 7$).
+- Non-price rationing: those who cannot buy may queue, pay bribes, or accept lower quality. These costs are not captured in the CS calculation.
+- Producer surplus falls to zero (producers exit the market).
+- DWL: $\frac{1}{2}(10 - 7)(20 - 8) = \frac{1}{2}(3)(12) = 18$.
+- Conclusion: the price ceiling benefits some consumers but harms others and creates a net welfare loss. The statement that it "benefits consumers" is misleading without qualification.
+</details>
+
+## 10. Extended Worked Examples
+
+### 10.1 Consumer Choice: Indifference Curve Analysis
+
+**Example.** A consumer has a budget of GBP 100 to spend on food ($F$) and clothing ($C$). The price of food is $P_F = \pounds 5$ and the price of clothing is $P_C = \pounds 10$. The consumer's utility function is $U = F^{0.5}C^{0.5}$ (Cobb-Douglas).
+
+**Budget constraint:** $5F + 10C = 100 \Rightarrow F = 20 - 2C$.
+
+**Optimal consumption:** $MRS = MU_F/MU_C = \frac{0.5F^{-0.5}C^{0.5}}{0.5F^{0.5}C^{-0.5}} = C/F$.
+
+Set $MRS = P_F/P_C$: $C/F = 5/10 = 0.5 \Rightarrow C = 0.5F$.
+
+Substitute into budget constraint: $5F + 10(0.5F) = 100 \Rightarrow 5F + 5F = 100 \Rightarrow F = 10$, $C = 5$.
+
+**Utility:** $U = (10)^{0.5}(5)^{0.5} = \sqrt{50} = 7.07$.
+
+**Effect of a price change:** Suppose $P_F$ rises from 5 to 8.
+
+New budget constraint: $8F + 10C = 100 \Rightarrow F = 12.5 - 1.25C$.
+$MRS = P_F/P_C = 8/10 = 0.8 \Rightarrow C = 0.8F$.
+$8F + 10(0.8F) = 100 \Rightarrow 16F = 100 \Rightarrow F = 6.25$, $C = 5$.
+
+**Substitution and income effects:**
+- Substitution effect: holding utility constant at 7.07, the change in $F$ due to the price ratio change.
+  $C = 0.8F$ and $U = F^{0.5}(0.8F)^{0.5} = \sqrt{0.8}F = 7.07 \Rightarrow F = 7.91$.
+  Substitution effect: $F$ falls from 10 to 7.91 (a decrease of 2.09).
+
+- Income effect: the price increase reduces real purchasing power.
+  Income effect: $F$ falls from 7.91 to 6.25 (a decrease of 1.66).
+
+Total effect: $F$ falls from 10 to 6.25 (decrease of 3.75 = 2.09 + 1.66).
+
+Since food is a normal good (income effect reinforces substitution effect), both effects work in the same direction: less food is consumed when the price rises.
+
+### 10.2 Government Intervention: Agricultural Price Support
+
+**Example.** The EU Common Agricultural Policy (CAP) guarantees a minimum price for wheat. Demand: $Q_D = 500 - 2P$. Supply: $Q_S = 3P - 100$. The guaranteed price is $\pounds 120$ per tonne.
+
+**Free market equilibrium:** $500 - 2P = 3P - 100 \Rightarrow 600 = 5P \Rightarrow P = 120$, $Q = 260$.
+
+Interesting -- the guaranteed price equals the market equilibrium price. Let me use a lower guaranteed price to make the example meaningful.
+
+Actually, the guaranteed price is typically ABOVE the market equilibrium. Let me recalculate with the guaranteed price at 140.
+
+**Free market:** $P = 120$, $Q = 260$ (as above).
+
+**With price floor at 140:**
+$Q_D = 500 - 280 = 220$. $Q_S = 420 - 100 = 320$.
+Excess supply: $320 - 220 = 100$ tonnes. The government must buy 100 tonnes.
+
+**Cost to the government:** $140 \times 100 = \pounds 14{,}000$.
+
+**Welfare analysis:**
+CS before: $\frac{1}{2}(250 - 120)(260) = 16{,}900$. (Demand choke price: $Q = 0 \Rightarrow P = 250$.)
+CS after: $\frac{1}{2}(250 - 140)(220) = 12{,}100$. Change: $-4{,}800$.
+
+PS before: $\frac{1}{2}(120 - 33.33)(260) = 11{,}267$. (Supply choke: $Q = 0 \Rightarrow P = 100/3 = 33.33$.)
+PS after: $\frac{1}{2}(140 - 33.33)(320) = 17{,}067$. Change: $+5{,}800$.
+
+Government cost: 14,000.
+Net welfare change: $-4{,}800 + 5{,}800 - 14{,}000 = -13{,}000$.
+
+**Deadweight loss:** The price support creates DWL through two channels:
+1. Overproduction: $320 - 260 = 60$ tonnes produced at a cost exceeding the value to consumers. DWL $= \frac{1}{2}(140 - 120)(60) = 600$.
+2. Underconsumption: $260 - 220 = 40$ tonnes not consumed despite consumer willingness to pay exceeding the cost of production. DWL $= \frac{1}{2}(140 - 120)(40) = 400$.
+Total DWL $= 1000$.
+
+The remaining 12,000 of welfare loss is a pure transfer from taxpayers to producers (via government purchases). This is not a DWL per se, but it represents a redistribution that may be considered undesirable on equity grounds.
+
+### 10.3 Multi-Market Analysis: Indirect Taxes and Cross-Price Effects
+
+**Example.** The government imposes a tax on petrol. Petrol demand: $Q_P = 1000 - 5P_P$. Petrol supply: $Q_P = 4P_P - 200$. The cross-price elasticity between petrol and electric vehicles (EVs) is $+0.3$. EV demand: $Q_E = 200 + 0.5P_P$ (EV demand increases when petrol price rises).
+
+**Initial petrol equilibrium:** $1000 - 5P_P = 4P_P - 200 \Rightarrow 1200 = 9P_P \Rightarrow P_P = 133.33$, $Q_P = 333.33$.
+
+**Tax of GBP 20 per litre on petrol:** $Q_P = 4(P_P - 20) - 200 = 4P_P - 280$.
+$1000 - 5P_P = 4P_P - 280 \Rightarrow 1280 = 9P_P \Rightarrow P_P = 142.22$. Consumers pay 142.22.
+Producers receive $142.22 - 20 = 122.22$. $Q_P = 1000 - 5(142.22) = 288.89$.
+
+**Effect on EVs:** Petrol price rises from 133.33 to 142.22 ($\% \Delta P_P = (142.22 - 133.33)/133.33 = 6.67\%$).
+$\% \Delta Q_E = XED \times \% \Delta P_P = 0.3 \times 6.67 = 2.0\%$.
+EV demand increases by 2.0%.
+
+**Environmental benefit:** If the average petrol car emits 120g/km of $\text{CO}_2$ and the average EV emits 0g/km (indirectly), and each car drives 12,000 km/year:
+$\text{CO}_2$ saved per switched car $= 120 \times 12000 / 10^6 = 1.44$ tonnes/year.
+
+If 2% of the 333,333 car owners switch: $0.02 \times 333{,}333 = 6{,}667$ cars switch.
+Total $\text{CO}_2$ saved $= 6{,}667 \times 1.44 = 9{,}600$ tonnes/year.
+
+**Revenue and DWL:**
+Tax revenue $= 20 \times 288.89 = 5{,}778$.
+DWL $= \frac{1}{2} \times 20 \times (333.33 - 288.89) = \frac{1}{2} \times 20 \times 44.44 = 444.4$.
+
+**Net environmental benefit:** If the social cost of carbon is GBP 50/tonne: $9{,}600 \times 50 = 480{,}000$.
+Net benefit $= 480{,}000 - 444.4 = 479{,}556$. The tax generates a large net social benefit through the EV switching channel, far exceeding the DWL.
+
+### 10.4 Subsidy Analysis with Elasticity
+
+**Example.** The government provides a production subsidy for solar panels. Demand: $P = 5000 - 0.5Q$. Supply: $P = 2000 + 0.3Q$. The subsidy is GBP 500 per panel.
+
+**Without subsidy:** $5000 - 0.5Q = 2000 + 0.3Q \Rightarrow 3000 = 0.8Q \Rightarrow Q = 3750$, $P = 3125$.
+
+**With subsidy:** Supply shifts down: $P = 1500 + 0.3Q$.
+$5000 - 0.5Q = 1500 + 0.3Q \Rightarrow 3500 = 0.8Q \Rightarrow Q = 4375$.
+
+Consumer price: $P_c = 5000 - 0.5(4375) = 2812.5$. Consumers save $3125 - 2812.5 = 312.5$ per panel.
+Producer receives: $P_p = 2812.5 + 500 = 3312.5$. Producers gain $3312.5 - 3125 = 187.5$ per panel.
+
+**Incidence:** Consumer share $= 312.5/500 = 62.5\%$. Producer share $= 187.5/500 = 37.5\%$.
+Consumers bear a larger share because demand is less elastic than supply:
+$PED = -0.5 \times 3125/3750 = -0.417$ (inelastic). $PES = (1/0.3) \times 3125/3750 = 2.78$ (elastic).
+
+**Government cost:** $500 \times 4375 = 2{,}187{,}500$.
+
+**Positive externality correction:** If the marginal external benefit per solar panel is GBP 600 (reduced pollution, energy security):
+Social optimum: $MSB = MPB + 500$. $5000 + 500 - 0.5Q = 2000 + 0.3Q \Rightarrow 3500 = 0.8Q \Rightarrow Q = 4375$.
+
+The subsidy of GBP 500 achieves an output of 4375, which is close to (but not exactly) the social optimum of 4375. If the MEB were exactly 500, the subsidy would be perfectly set. In this case, the subsidy slightly under-corrects (optimal subsidy would be 600, not 500). The remaining DWL from under-correction: $\frac{1}{2}(600 - 500)(Q^*_{MEB=600} - 4375)$. Since the MEB is 600 but the subsidy is 500, there is still a small under-provision.
+
+**DWL of the subsidy (relative to the first-best):**
+With MEB = 600 and subsidy = 500: the effective MPC becomes $2000 + 0.3Q - 500 = 1500 + 0.3Q$.
+MSB = MPB + MEB = $5000 - 0.5Q + 600 = 5600 - 0.5Q$.
+Social optimum: $5600 - 0.5Q = 2000 + 0.3Q \Rightarrow 3600 = 0.8Q \Rightarrow Q^* = 4500$.
+
+The subsidy achieves $Q = 4375$ vs the social optimum of 4500. The remaining DWL:
+$DWL = \frac{1}{2}(MSB_{4375} - MSC_{4375})(4500 - 4375)$.
+$MSB_{4375} = 5600 - 0.5(4375) = 3412.5$. $MSC_{4375} = 2000 + 0.3(4375) = 3312.5$.
+$DWL = \frac{1}{2}(3412.5 - 3312.5)(125) = \frac{1}{2}(100)(125) = 6250$.
+
+The subsidy is close to optimal but not perfect. A subsidy of GBP 600 would be first-best.
+
+## 11. Extended Worked Examples
+
+### 11.1 Market Equilibrium with Multiple Interventions
+
+**Example.** The market for cigarettes has demand $Q_D = 200 - 4P$ and supply $Q_S = 6P - 80$. The government imposes: (1) a specific tax of GBP 5 per pack, (2) a price floor of GBP 30, and (3) a maximum production quota of 40 packs.
+
+**Step 1: Free market equilibrium.**
+$200 - 4P = 6P - 80 \Rightarrow 280 = 10P \Rightarrow P = 28$, $Q = 88$.
+
+**Step 2: With tax only.**
+$Q_S = 6(P - 5) - 80 = 6P - 110$.
+$200 - 4P = 6P - 110 \Rightarrow 310 = 10P \Rightarrow P = 31$ (consumer price). Producer receives 26.
+$Q = 200 - 124 = 76$.
+
+**Step 3: With tax AND price floor of 30.**
+The price floor of 30 is BELOW the consumer price with tax (31), so the price floor is NOT binding. The equilibrium is the same as Step 2: $P = 31$, $Q = 76$.
+
+If the price floor were 35: consumers pay 35. $Q_D = 200 - 140 = 60$. $Q_S$ at producer price $= 35 - 5 = 30$: $Q_S = 6(30) - 80 = 100$. Excess supply $= 100 - 60 = 40$. The government would need to buy 40 packs (costing $40 \times 30 = 1200$).
+
+**Step 4: With tax AND production quota of 40.**
+The quota restricts supply to 40 units. At $Q = 40$: demand price $= P_D = (200 - 40)/4 = 40$. Supply price $= P_S = (40 + 80)/6 = 20$. With tax: producer receives $P_S = P_D - 5 = 35$. But $P_S$ at $Q = 40$ is 20, so producers are willing to supply at 20 but receive 35. The tax drives a wedge.
+
+Actually, with the quota: supply is fixed at 40. The price is determined by demand: $P_D = 40$. Producer receives $40 - 5 = 35$. The quota rent is $35 - 20 = 15$ per unit (the difference between what producers receive and their minimum supply price). Total quota rent $= 15 \times 40 = 600$.
+
+**Combined effect:** The quota (40) is more restrictive than the tax alone (76). The combined policy results in:
+- Higher consumer price (40 vs 31 with tax alone).
+- Higher producer revenue per unit (35 vs 26 with tax alone).
+- Lower quantity (40 vs 76).
+- Quota rent of 600 (captured by whoever holds the quota rights).
+- Tax revenue $= 5 \times 40 = 200$ (vs $5 \times 76 = 380$ with tax alone).
+
+**Total government revenue:** tax revenue (200) + quota auction revenue (if quotas are auctioned, 600) = 800.
+
+**Welfare comparison:**
+
+| Policy | P consumer | Q | CS | PS | Govt revenue | DWL |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| None | 28 | 88 | 968 | 361 | 0 | 0 |
+| Tax only | 31 | 76 | 578 | 288 | 380 | 120 |
+| Tax + quota | 40 | 40 | 100 | 400 + 600 | 200 | 560 |
+
+The combined tax and quota is highly distortionary: DWL increases from 120 (tax only) to 560 (tax + quota). The quota is a blunt instrument that creates more DWL than the tax because it prevents the market from adjusting along the supply curve.
+
+### 11.2 Agricultural Markets: Buffer Stock Scheme
+
+**Example.** The government establishes a buffer stock scheme for wheat. The target price is GBP 200 per tonne. Demand: $Q_D = 1000 - 2P$. Supply: $Q_S = 3P - 200$.
+
+**Free market equilibrium:** $1000 - 2P = 3P - 200 \Rightarrow 1200 = 5P \Rightarrow P = 240$, $Q = 520$.
+
+Since the target price (200) is BELOW the market price (240), the buffer stock is irrelevant -- the market price is already above the target. The government does not need to intervene.
+
+**If the target price is 280 (above market price):**
+At $P = 280$: $Q_D = 1000 - 560 = 440$. $Q_S = 840 - 200 = 640$.
+Excess supply $= 640 - 440 = 200$ tonnes. The government buys 200 tonnes and stores them.
+
+**Cost to government:** $280 \times 200 = 56{,}000$.
+Storage cost: GBP 10/tonne/year. Annual storage cost $= 2000$.
+
+**If a bad harvest reduces supply:** New supply $Q_S = 2P - 100$.
+New equilibrium: $1000 - 2P = 2P - 100 \Rightarrow 1100 = 4P \Rightarrow P = 275$, $Q = 450$.
+The market price (275) is still below the target (280), so the government releases some stocks.
+Government releases: enough to push price to 280. At $P = 280$: $Q_D = 440$, $Q_S = 460$. Excess supply of 20. The government does NOT need to release stocks (supply exceeds demand even at the target price).
+
+**If supply falls further:** $Q_S = P$.
+$1000 - 2P = P \Rightarrow P = 333.33$, $Q = 333.33$.
+Market price (333.33) is above target (280). The government sells stocks: $Q_D(280) = 440$, $Q_S(280) = 80$. Shortage $= 360$. The government sells 360 tonnes from its buffer stock.
+
+Revenue from sales: $280 \times 360 = 100{,}800$.
+
+**Buffer stock balance sheet:**
+- Bought: 200 tonnes at 280 = 56,000.
+- Sold: 360 tonnes at 280 = 100,800.
+- Storage costs: 200 tonnes x 10/tonne x N years.
+- Net profit: $100{,}800 - 56{,}000 - 2000N = 44{,}800 - 2000N$.
+
+If stored for 5 years: net profit $= 44{,}800 - 10{,}000 = 34{,}800$.
+If stored for 22.4 years: net profit $= 0$.
+
+**Problems with buffer stock schemes:**
+1. Expensive: storage costs erode the profit margin.
+2. Market distortion: the target price sends the wrong signal to farmers (over-production).
+3. Quality deterioration: stored commodities may deteriorate.
+4. Political manipulation: governments may set the target price too high to win farmer votes.
+5. International trade: buffer stocks may conflict with WTO rules (they are a form of domestic support).
+
+**EU Common Agricultural Policy (CAP):** The EU operated a buffer stock scheme from the 1960s to the 1990s. By the 1980s, the "butter mountains" and "wine lakes" had become a political embarrassment. The scheme was reformed in 1992 (MacSharry reforms) and again in 2003, shifting from price support to direct income support for farmers.
+
+### 11.3 Black Markets: Price Controls with Enforcement
+
+**Example.** The government imposes a maximum rent of GBP 1,000/month on apartments. The free market rent is GBP 1,500/month. Demand: $Q_D = 2000 - P$ (where P is monthly rent). Supply: $Q_S = P - 500$.
+
+**Free market:** $2000 - P = P - 500 \Rightarrow 2500 = 2P \Rightarrow P = 1250$, $Q = 750$.
+
+Wait, the free market rent is given as 1500 but the equilibrium gives 1250. Let me adjust the functions.
+
+Demand: $Q_D = 3000 - P$. Supply: $Q_S = P - 1500$.
+$3000 - P = P - 1500 \Rightarrow 4500 = 2P \Rightarrow P = 2250$, $Q = 750$.
+
+Hmm, still not matching. Let me just use the given free market equilibrium:
+
+At free market: $P = 1500$, $Q = 750$.
+Demand: $Q_D = a - bP$. $750 = a - 1500b$. Supply: $Q_S = cP - d$. $750 = 1500c - d$.
+
+Let me use: $Q_D = 2000 - 0.833P$, $Q_S = P - 750$. At $P = 1500$: $Q_D = 750.5 \approx 750$, $Q_S = 750$. Good enough.
+
+**With rent control at P = 1000:**
+$Q_D = 2000 - 833 = 1167$. $Q_S = 1000 - 750 = 250$.
+Shortage $= 1167 - 250 = 917$ apartments.
+
+**Black market:** Landlords and tenants may illegally trade at above the controlled price. Suppose enforcement is imperfect: probability of detection for illegal renting is 20%, and the fine is GBP 5,000.
+
+**Landlord's expected revenue from black market:** If the black market price is $P_b$:
+Expected revenue $= P_b \times 0.80 - 5000 \times 0.20 = 0.8P_b - 1000$.
+
+Landlords will participate in the black market if expected revenue exceeds the controlled price:
+$0.8P_b - 1000 > 1000 \Rightarrow P_b > 2500$.
+
+At $P_b = 2500$: expected revenue $= 1000$ (same as legal rent). The black market price must exceed 2500 for landlords to participate. This is well above the free market price of 1500, suggesting that the black market is not profitable for landlords.
+
+But this assumes the fine is 5000 and detection probability is 20%. If the fine is lower (1000) or detection is less likely (5%):
+
+Expected revenue $= P_b \times 0.95 - 1000 \times 0.05 = 0.95P_b - 50$.
+$0.95P_b - 50 > 1000 \Rightarrow P_b > 1105$.
+
+Now the black market price only needs to exceed 1105 for landlords to participate. The black market would operate at a price between 1105 and 1500 (the free market price).
+
+**With weak enforcement:** approximately $Q_S = 750$ apartments are available (same as free market), but they trade at $P_b \approx 1400$ (slightly below free market due to the risk premium). Consumers pay 1400 instead of 1000 (the controlled price). The rent control is entirely ineffective -- the black market undermines it.
+
+**Key insight:** price controls create black markets unless enforcement is extremely rigorous. The resources devoted to enforcement (inspections, legal proceedings) are a deadweight loss. In practice, most economists recommend income support (housing benefit) rather than rent control as a way to help low-income renters without distorting the market.

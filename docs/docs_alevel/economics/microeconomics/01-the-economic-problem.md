@@ -682,3 +682,267 @@ Common Pitfalls
 - **Assuming all points inside the PPF represent unemployment:** A point inside the PPF can also represent productive inefficiency (resources are employed but misallocated -- e.g., highly skilled workers doing unskilled tasks). Not all inefficiency is due to unemployment.
 
 :::
+
+## 8. Advanced Worked Examples
+
+### 8.1 PPF with Increasing Opportunity Costs: Full Calculations
+
+**Example.** An economy produces two goods: capital goods ($K$) and consumer goods ($C$). The PPF is given by:
+
+$$C = 100 - 0.01K^2$$
+
+**Current production:** $K = 40$, $C = 100 - 0.01(1600) = 84$.
+
+**Opportunity cost of increasing $K$ from 40 to 50:**
+$$\Delta C = C(50) - C(40) = (100 - 0.01(2500)) - (100 - 0.01(1600)) = 75 - 84 = -9$$
+
+The opportunity cost of 10 additional units of $K$ is 9 units of $C$.
+
+**Marginal opportunity cost at $K = 40$:**
+$$\frac{dC}{dK} = -0.02K = -0.02(40) = -0.8$$
+
+At $K = 40$, each additional unit of $K$ costs 0.8 units of $C$.
+
+**At $K = 60$:**
+$$\frac{dC}{dK} = -0.02(60) = -1.2$$
+
+Each additional unit of $K$ now costs 1.2 units of $C$. The opportunity cost has increased, reflecting the concave shape of the PPF (increasing opportunity cost).
+
+**At $K = 80$:**
+$$\frac{dC}{dK} = -0.02(80) = -1.6$$
+
+The opportunity cost continues to rise. This is because resources are not perfectly adaptable: as more capital goods are produced, resources that are less suited to capital goods production must be used, requiring larger sacrifices of consumer goods.
+
+**Maximum possible production:**
+- If $K = 0$: $C = 100$ (all resources to consumer goods).
+- If $C = 0$: $0 = 100 - 0.01K^2 \Rightarrow K = 100$ (all resources to capital goods).
+
+### 8.2 Economic Growth and the PPF
+
+**Example.** The PPF shifts outward due to economic growth.
+
+**Capital accumulation.** If the economy produces at $K = 60$, $C = 64$, and the capital stock grows at 5% per year:
+
+$$K_{t+1} = K_t + 0.05K_t = 1.05K_t$$
+
+The new PPF (next period): $C = 100(1.05)^2 - 0.01K^2 \approx 110.25 - 0.01K^2$.
+
+Wait -- this is not quite right. Capital accumulation shifts the PPF outward because it increases the economy's productive capacity. If the PPF shifts proportionally:
+
+$$C = a(100 - 0.01K^2)$$
+
+where $a = 1.05$ (5% growth). New PPF: $C = 105 - 0.0105K^2$.
+
+**Maximum production after growth:**
+- $K = 0$: $C = 105$ (was 100). Consumer goods capacity has risen by 5%.
+- $C = 0$: $K = \sqrt{10500} = 102.47$ (was 100). Capital goods capacity has risen by 2.47%.
+
+**Asymmetric growth.** Suppose technological progress only affects capital goods production. The new PPF becomes:
+$$C = 100 - 0.01K^2 + 0.001K$$
+
+This PPF has shifted outward more on the capital goods axis than the consumer goods axis. The economy can now produce more capital goods for any given level of consumer goods.
+
+**Implications for future growth:** Producing more capital goods today (moving along the PPF towards $K$) leads to more outward shifting of the PPF in the future. This is the fundamental trade-off between current consumption and future growth.
+
+**China vs India comparison (illustrative):**
+- China invested 45% of GDP in capital goods for decades, shifting its PPF outward rapidly (average 9% annual growth, 1980-2020).
+- India invested 30% of GDP, with slower PPF expansion (average 6% annual growth).
+- China sacrificed more current consumption but achieved higher future productive capacity. India chose more current consumption at the cost of slower growth.
+
+### 8.3 Opportunity Cost in Production Decisions
+
+**Example.** A farmer has 100 hectares of land and can grow wheat or barley.
+
+The production possibilities (millions of tonnes):
+
+| Wheat (million tonnes) | Barley (million tonnes) | Marginal opportunity cost of wheat |
+|:---:|:---:|:---:|
+| 0 | 5.0 | -- |
+| 1.0 | 4.8 | 0.2 barley |
+| 2.0 | 4.4 | 0.4 barley |
+| 3.0 | 3.6 | 0.8 barley |
+| 4.0 | 2.4 | 1.2 barley |
+| 5.0 | 0.0 | 2.4 barley |
+
+**Current production:** 2 million tonnes of wheat, 4.4 million tonnes of barley.
+
+**Decision: increase wheat production by 1 million tonnes.**
+Opportunity cost: 0.8 million tonnes of barley (marginal cost between 2.0 and 3.0).
+
+**If wheat price = GBP 200/tonne, barley price = GBP 150/tonne:**
+Revenue at current production: $2(200) + 4.4(150) = 400 + 660 = 1060$.
+
+Revenue after switching to 3 million tonnes of wheat:
+$3(200) + 3.6(150) = 600 + 540 = 1140$.
+
+Revenue gain: $1140 - 1060 = \text{GBP } 80\text{m}$. The farmer should produce more wheat.
+
+**What if barley price rises to GBP 200/tonne?**
+Revenue at current production: $2(200) + 4.4(200) = 400 + 880 = 1280$.
+Revenue at 3 million tonnes of wheat: $3(200) + 3.6(200) = 600 + 720 = 1320$.
+
+Revenue gain: $1320 - 1280 = \text{GBP } 40\text{m}$. Still worth producing more wheat.
+
+**What if barley price rises to GBP 250/tonne?**
+Revenue at current production: $2(200) + 4.4(250) = 400 + 1100 = 1500$.
+Revenue at 3 million tonnes of wheat: $3(200) + 3.6(250) = 600 + 900 = 1500$.
+
+Revenue gain: 0. The farmer is indifferent between producing 2 and 3 million tonnes of wheat.
+
+**What if barley price rises to GBP 300/tonne?**
+Revenue at current production: $2(200) + 4.4(300) = 400 + 1320 = 1720$.
+Revenue at 3 million tonnes of wheat: $3(200) + 3.6(300) = 600 + 1080 = 1680$.
+
+Revenue change: $-40\text{m}$. The farmer should produce LESS wheat (more barley). The opportunity cost of wheat production has increased relative to its value.
+
+**Key insight:** The optimal production point depends on the relative prices of the two goods. The farmer should produce where the marginal rate of transformation (MRT = opportunity cost) equals the price ratio ($P_w/P_b$).
+
+### 8.4 Comparative Advantage: Full Numerical Analysis
+
+**Example.** Two countries, UK and Portugal, produce cloth and wine. Output per worker per day:
+
+| | Cloth (metres) | Wine (litres) |
+|---|:---:|:---:|
+| UK | 4 | 2 |
+| Portugal | 1 | 3 |
+
+**Absolute advantage:**
+- UK: produces more cloth (4 > 1). Absolute advantage in cloth.
+- Portugal: produces more wine (3 > 2). Absolute advantage in wine.
+
+**Opportunity costs:**
+
+| | Opportunity cost of 1m cloth | Opportunity cost of 1L wine |
+|---|---|---|
+| UK | 2/4 = 0.5L wine | 4/2 = 2m cloth |
+| Portugal | 3/1 = 3L wine | 1/3 = 0.33m cloth |
+
+**Comparative advantage:**
+- UK: lower opportunity cost of cloth (0.5L vs 3L). Comparative advantage in cloth.
+- Portugal: lower opportunity cost of wine (0.33m vs 2m). Comparative advantage in wine.
+
+**Gains from trade.** Suppose the UK has 100 workers and Portugal has 100 workers.
+
+**Without trade (autarky):** Each country splits workers 50-50.
+
+UK: Cloth = $50 \times 4 = 200$m, Wine = $50 \times 2 = 100$L.
+Portugal: Cloth = $50 \times 1 = 50$m, Wine = $50 \times 3 = 150$L.
+Total: Cloth = 250m, Wine = 250L.
+
+**With specialisation:**
+UK: 100 workers in cloth. Cloth = $100 \times 4 = 400$m, Wine = 0.
+Portugal: 100 workers in wine. Cloth = 0, Wine = $100 \times 3 = 300$L.
+Total: Cloth = 400m, Wine = 300L.
+
+**Gains from specialisation:**
+- Cloth: $400 - 250 = 150$m more.
+- Wine: $300 - 250 = 50$L more.
+- Total world output has increased by 150m cloth and 50L wine.
+
+**Terms of trade.** For trade to benefit both, the exchange rate must lie between the opportunity costs:
+$$0.33 < \frac{P_{cloth}}{P_{wine}} < 2$$
+
+Suppose the terms of trade are 1m cloth = 1L wine.
+
+**If UK exports 150m cloth and imports 150L wine:**
+UK consumption: Cloth = $400 - 150 = 250$m, Wine = $150$L.
+Portugal consumption: Cloth = $150$m, Wine = $300 - 150 = 150$L.
+
+**Comparison with autarky:**
+
+| | UK Cloth | UK Wine | Portugal Cloth | Portugal Wine |
+|---|:---:|:---:|:---:|:---:|
+| Autarky | 200 | 100 | 50 | 150 |
+| Trade | 250 | 150 | 150 | 150 |
+| Gain | +50 | +50 | +100 | 0 |
+
+The UK gains 50m cloth and 50L wine. Portugal gains 100m cloth (but no wine). Both are better off in at least one good and no worse off in the other.
+
+**Unequal gains:** The gains are not evenly distributed. Portugal gains more from trade because the terms of trade (1:1) are closer to Portugal's opportunity cost (0.33:1) than the UK's (2:1). The UK captures more of the gains. This is a general result: the country whose opportunity cost is closer to the terms of trade gains less.
+
+### 8.5 Production Possibility Frontier with Trade
+
+**Example.** A small open economy can produce food ($F$) and clothing ($C$). Its PPF is:
+
+$$F = 500 - 0.005C^2$$
+
+**Autarky equilibrium (no trade):**
+The domestic price ratio is $P_F/P_C = 0.01C$ (the slope of the PPF). If consumer preferences give an MRS of 2 (consumers value food at twice clothing):
+
+$$0.01C = 2 \Rightarrow C = 200, F = 500 - 0.005(40000) = 300$$
+
+**With trade at world price ratio $P_F/P_C = 1$:**
+The economy specialises according to comparative advantage. The world price of 1 is BELOW the autarky price of 2, meaning food is relatively cheaper on world markets. The economy should export food (its comparative advantage) and import clothing.
+
+**Optimal production with trade:**
+Set MRT = world price ratio: $0.01C = 1 \Rightarrow C = 100$.
+$F = 500 - 0.005(10000) = 450$.
+
+**Consumption with trade:**
+The economy can trade at the world price. If it exports 150 units of food at price ratio 1, it imports 150 units of clothing.
+
+Consumption: $F = 450 - 150 = 300$, $C = 100 + 150 = 250$.
+
+**Comparison:**
+
+| | Food | Clothing | Utility (assume $U = F^{0.5}C^{0.5}$) |
+|---|:---:|:---:|:---:|
+| Autarky | 300 | 200 | $\sqrt{300 \times 200} = 244.9$ |
+| Trade | 300 | 250 | $\sqrt{300 \times 250} = 273.9$ |
+
+Utility has increased by 11.8% due to trade. The economy can now consume a bundle that was previously unattainable (outside the PPF).
+
+## 9. Exam-Style Questions with Full Mark Schemes
+
+**Question 1 (25 marks).** "Free trade always benefits all countries involved." Evaluate this statement using the theory of comparative advantage and real-world evidence.
+
+<details>
+<summary>Full Mark Scheme</summary>
+**Arguments for free trade (10 marks):**
+- Comparative advantage (Ricardo, 1817): even if one country is absolutely more efficient in all goods, specialisation and trade benefit both countries. The PPF expands through trade, allowing consumption beyond the domestic production possibility frontier.
+- Gains from trade: lower prices for consumers (imports are cheaper), access to greater variety, economies of scale through larger markets, increased competition raising efficiency.
+- Empirical evidence: post-WWII trade liberalisation (GATT/WTO) coincided with unprecedented global growth. Countries that opened to trade (South Korea, China, Vietnam) experienced rapid growth.
+- Dynamic gains: trade facilitates technology transfer, knowledge spillovers, and competitive pressure that drives innovation.
+
+**Arguments against free trade (10 marks):**
+- Distributional effects: trade creates winners and winners within countries. Workers in import-competing industries lose jobs and face wage cuts (e.g., manufacturing workers in the US Rust Belt, Northern England). The aggregate gains do not compensate the losers unless redistribution occurs.
+- Infant industry argument: new industries in developing countries cannot compete with established foreign firms. Temporary protection allows them to develop economies of scale and learning curves (East Asian Tigers used this successfully).
+- Strategic industries: defence, energy, and food security may require domestic production regardless of comparative advantage.
+- Externalities: free trade may encourage a "race to the bottom" in environmental and labour standards as countries compete for investment.
+- Terms of trade: the Prebisch-Singer hypothesis argues that primary commodity exporters face declining terms of trade over time, making trade less beneficial.
+
+**Evaluation (5 marks):**
+- Free trade increases aggregate welfare but the distribution of gains is uneven. The key policy question is not whether to trade but how to manage the distributional consequences.
+- Compensation mechanisms (retraining programmes, regional development funds) are essential but often underfunded.
+- The infant industry argument is valid in theory but easily abused -- many "infant" industries never grow up (e.g., car manufacturing in many developing countries).
+- Conclusion: free trade is generally beneficial but requires complementary policies to address inequality and market failures.
+</details>
+
+**Question 2 (12 marks).** An economy produces capital goods ($K$) and consumer goods ($C$) according to the PPF $C = 200 - 0.02K^2$. (a) Calculate the maximum output of each good. (b) Find the opportunity cost of the 50th unit of capital goods. (c) If the economy currently produces $K = 60$, how much does a 5% increase in the capital stock shift the PPF outward (assuming proportional growth)?
+
+<details>
+<summary>Full Mark Scheme</summary>
+**(a) Maximum output (3 marks).**
+If $K = 0$: $C = 200$. Maximum consumer goods = 200.
+If $C = 0$: $0 = 200 - 0.02K^2 \Rightarrow K^2 = 10000 \Rightarrow K = 100$. Maximum capital goods = 100.
+
+**(b) Opportunity cost of the 50th unit of $K$ (4 marks).**
+The marginal opportunity cost at $K = 50$ is given by the slope of the PPF:
+$$\frac{dC}{dK} = -0.04K = -0.04(50) = -2$$
+
+The opportunity cost of the 50th unit of capital goods is 2 units of consumer goods.
+
+Alternatively, using discrete changes:
+$C(50) = 200 - 0.02(2500) = 150$.
+$C(49) = 200 - 0.02(2401) = 151.98$.
+Opportunity cost $= 151.98 - 150 = 1.98 \approx 2$.
+
+**(c) PPF shift from 5% capital growth (5 marks).**
+A 5% increase in the capital stock means the productive capacity of the economy grows by 5%. If the PPF shifts proportionally:
+$$C = 1.05(200 - 0.02K^2) = 210 - 0.021K^2$$
+
+New maximum consumer goods: $C = 210$ (was 200). Increase of 10 units (5%).
+New maximum capital goods: $K = \sqrt{210/0.021} = \sqrt{10000} = 100$. No change in maximum $K$ because the proportional shift preserves the ratio.
+
+Wait -- let me recalculate: $0 = 210 - 0.021K^2 \Rightarrow K^2 = 10000 \Rightarrow K = 100$. The maximum $K$ is unchanged. But the new PPF allows more of BOTH goods at interior points. For example, at $K = 50$: $C = 210 - 0.021(2500) = 210 - 52.5 = 157.5$ (was 150). The economy can produce 5% more consumer goods at any given level of capital goods production.
+</details>
