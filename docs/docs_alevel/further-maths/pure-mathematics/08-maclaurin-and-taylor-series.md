@@ -595,10 +595,548 @@ $\dfrac{e^{-x^2} - 1}{x^2} = -1 + \dfrac{x^2}{2} - \cdots \to \boxed{-1}$ as $x 
 
 </details>
 
-:::
+---
+
+## 7. Advanced Worked Examples
+
+### Example 7.1: Maclaurin series of a composite function
+
+**Problem.** Find the Maclaurin series of $f(x) = \dfrac{1}{\sqrt{1 + x^2}}$ up to the $x^6$ term.
+
+**Solution.** Use the binomial series with $n = -1/2$:
+
+$(1 + u)^{-1/2} = 1 - \dfrac{u}{2} + \dfrac{3u^2}{8} - \dfrac{5u^3}{16} + \dfrac{35u^4}{128} - \cdots$
+
+Substituting $u = x^2$:
+
+$$\frac{1}{\sqrt{1+x^2}} = 1 - \frac{x^2}{2} + \frac{3x^4}{8} - \frac{5x^6}{16} + \cdots$$
+
+Valid for $|x^2| < 1$, i.e., $|x| < 1$.
+
+### Example 7.2: Taylor series and error bounds
+
+**Problem.** Use the Taylor series of $\cos x$ about $x = 0$ to approximate $\cos(0.2)$ and bound the error.
+
+**Solution.** $\cos x = 1 - \dfrac{x^2}{2} + \dfrac{x^4}{24} - \dfrac{x^6}{720} + \cdots$
+
+Using three terms: $\cos(0.2) \approx 1 - 0.02 + \dfrac{0.0016}{24} = 1 - 0.02 + 0.0000667 = 0.980067$.
+
+Error bound: the next term is $\dfrac{(0.2)^6}{720} = \dfrac{6.4 \times 10^{-7}}{720} \approx 8.9 \times 10^{-10}$.
+
+So $|\text{error}| < 10^{-9}$.
+
+### Example 7.3: Product of two Maclaurin series
+
+**Problem.** Find the Maclaurin series of $e^x \cos x$ up to the $x^4$ term.
+
+**Solution.** $e^x = 1 + x + \dfrac{x^2}{2} + \dfrac{x^3}{6} + \dfrac{x^4}{24} + \cdots$
+
+$\cos x = 1 - \dfrac{x^2}{2} + \dfrac{x^4}{24} - \cdots$
+
+Multiplying and collecting terms:
+
+$1$: $1 \times 1 = 1$
+$x$: $1 \cdot x = x$
+$x^2$: $1 \cdot (-x^2/2) + x \cdot x = -x^2/2 + x^2 = x^2/2$
+$x^3$: $1 \cdot 0 + x \cdot (-x^2/2) + (x^2/2) \cdot x = -x^3/2 + x^3/2 = 0$
+$x^4$: $1 \cdot (x^4/24) + x \cdot 0 + (x^2/2)(-x^2/2) + (x^3/6) \cdot x = x^4/24 - x^4/4 + x^4/6 = (1 - 6 + 4)x^4/24 = -x^4/24$
+
+$$e^x\cos x = 1 + x + \frac{x^2}{2} - \frac{x^4}{24} + \cdots$$
+
+### Example 7.4: Series expansion of an inverse function
+
+**Problem.** Find the Maclaurin series of $\sec x$ up to the $x^4$ term.
+
+**Solution.** Write $\sec x = \dfrac{1}{\cos x} = (1 - x^2/2 + x^4/24 - \cdots)^{-1}$.
+
+Using $(1 - u)^{-1} = 1 + u + u^2 + \cdots$ with $u = x^2/2 - x^4/24 + \cdots$:
+
+$$\sec x = 1 + \left(\frac{x^2}{2} - \frac{x^4}{24}\right) + \left(\frac{x^2}{2}\right)^2 + \cdots$$
+
+$$= 1 + \frac{x^2}{2} + \left(-\frac{x^4}{24} + \frac{x^4}{4}\right) + \cdots = 1 + \frac{x^2}{2} + \frac{5x^4}{24} + \cdots$$
+
+### Example 7.5: Using series to find a limit
+
+**Problem.** Evaluate $\displaystyle\lim_{x\to 0}\frac{x - \sin x}{x^3}$.
+
+**Solution.** $\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
+
+$$\frac{x - \sin x}{x^3} = \frac{x - x + x^3/6 - x^5/120 + \cdots}{x^3} = \frac{1}{6} - \frac{x^2}{120} + \cdots \to \boxed{\frac{1}{6}}$$
+
+### Example 7.6: Maclaurin series by differentiation
+
+**Problem.** Find the Maclaurin series of $f(x) = (1 + x)^3 e^x$ up to the $x^3$ term.
+
+**Solution.** $f(x) = (1 + 3x + 3x^2 + x^3)e^x$.
+
+$e^x = 1 + x + x^2/2 + x^3/6 + \cdots$
+
+$$f(x) = (1 + 3x + 3x^2 + x^3)(1 + x + x^2/2 + x^3/6)$$
+
+$1$: $1 \times 1 = 1$
+$x$: $1 + 3 = 4$
+$x^2$: $1/2 + 3 + 3 = 13/2$
+$x^3$: $1/6 + 3/2 + 3 + 1 = 1/6 + 9/6 + 18/6 + 6/6 = 34/6 = 17/3$
+
+$$f(x) = 1 + 4x + \frac{13x^2}{2} + \frac{17x^3}{3} + \cdots$$
+
+### Example 7.7: Convergence of alternating series
+
+**Problem.** How many terms of $\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}$ are needed to approximate $\ln 2$ with an error less than $0.001$?
+
+**Solution.** This is the alternating harmonic series, with $S = \ln 2$. The error after $N$ terms is bounded by the absolute value of the $(N+1)$-th term:
+
+$$|\text{error}| \leq \frac{1}{N+1} < 0.001 \implies N + 1 > 1000 \implies N \geq 1000$$
+
+So at least 1000 terms are needed.
+
+### Example 7.8: Taylor series and approximation of definite integrals
+
+**Problem.** Use the Maclaurin series of $e^{-x^2}$ to approximate $\displaystyle\int_0^{1/2} e^{-x^2}\,dx$ to 5 decimal places.
+
+**Solution.** $e^{-x^2} = 1 - x^2 + \dfrac{x^4}{2} - \dfrac{x^6}{6} + \dfrac{x^8}{24} - \cdots$
+
+$$\int_0^{1/2}e^{-x^2}\,dx = \left[x - \frac{x^3}{3} + \frac{x^5}{10} - \frac{x^7}{42} + \frac{x^9}{216}\right]_0^{1/2}$$
+
+$$= \frac{1}{2} - \frac{1}{24} + \frac{1}{320} - \frac{1}{5376} + \frac{1}{110592}$$
+
+$$= 0.5 - 0.041667 + 0.003125 - 0.000186 + 0.000009 = 0.461281$$
+
+The error is bounded by the next term: $\dfrac{1}{11 \times 2^{11}} = \dfrac{1}{22528} \approx 0.000044$.
+
+So the integral $\approx 0.4613$ to 4 decimal places.
+
+---
+
+## 8. Connections to Other Topics
+
+### 8.1 Maclaurin series and differential equations
+
+The Maclaurin series provides a method for solving differential equations by substituting a power series ansatz. See [Differential Equations](/docs/docs_alevel/further-maths/pure-mathematics/07-differential-equations).
+
+### 8.2 Taylor series and complex numbers
+
+Euler's formula $e^{i\theta} = \cos\theta + i\sin\theta$ is the link between exponential series and trigonometric series. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+
+### 8.3 Binomial series and further algebra
+
+The binomial expansion is essential for partial fraction decomposition and generating functions. See [Further Algebra](/docs/docs_alevel/further-maths/pure-mathematics/03-further-algebra).
+
+---
+
+## 9. Additional Exam-Style Questions
+
+### Question 11
+
+**(a)** Find the Maclaurin series of $\ln\!\left(\dfrac{1 + x}{1 - x}\right)$ up to the $x^5$ term.
+
+**(b)** State the range of validity.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** $\ln\!\left(\dfrac{1+x}{1-x}\right) = \ln(1+x) - \ln(1-x)$
+
+$\ln(1+x) = x - \dfrac{x^2}{2} + \dfrac{x^3}{3} - \dfrac{x^4}{4} + \dfrac{x^5}{5} - \cdots$
+
+$\ln(1-x) = -x - \dfrac{x^2}{2} - \dfrac{x^3}{3} - \dfrac{x^4}{4} - \dfrac{x^5}{5} - \cdots$
+
+$$\ln\!\left(\frac{1+x}{1-x}\right) = 2x + \frac{2x^3}{3} + \frac{2x^5}{5} + \cdots$$
+
+**(b)** Valid for $-1 < x < 1$ (intersection of validity of $\ln(1+x)$ and $\ln(1-x)$).
+
+</details>
+
+### Question 12
+
+Use series to find $\displaystyle\lim_{x\to 0}\frac{1 - \cos x - \frac{x^2}{2}}{x^4}$.
+
+<details>
+<summary>Solution</summary>
+
+$\cos x = 1 - \dfrac{x^2}{2} + \dfrac{x^4}{24} - \cdots$
+
+$$\frac{1 - \cos x - x^2/2}{x^4} = \frac{1 - (1 - x^2/2 + x^4/24 - \cdots) - x^2/2}{x^4} = \frac{-x^4/24 + \cdots}{x^4} \to \boxed{-\frac{1}{24}}$$
+
+</details>
+
+### Question 13
+
+**Prove by induction** that $\displaystyle\frac{d^n}{dx^n}(xe^x) = (x + n)e^x$ for all $n \geq 0$.
+
+<details>
+<summary>Solution</summary>
+
+**Base case ($n = 0$):** $\dfrac{d^0}{dx^0}(xe^x) = xe^x = (x+0)e^x$. True.
+
+**Inductive step.** Assume $\dfrac{d^k}{dx^k}(xe^x) = (x+k)e^x$.
+
+$$\frac{d^{k+1}}{dx^{k+1}}(xe^x) = \frac{d}{dx}[(x+k)e^x] = e^x + (x+k)e^x = (x+k+1)e^x \quad \blacksquare$$
+
+</details>
+
+### Question 14
+
+Find the Maclaurin series of $\sqrt{\cos x}$ up to the $x^4$ term.
+
+<details>
+<summary>Solution</summary>
+
+$\cos x = 1 - \dfrac{x^2}{2} + \dfrac{x^4}{24} - \cdots$
+
+$\sqrt{\cos x} = (1 - x^2/2 + x^4/24 - \cdots)^{1/2}$
+
+Using $(1+u)^{1/2} = 1 + u/2 - u^2/8 + \cdots$ with $u = -x^2/2 + x^4/24$:
+
+$u^2 = x^4/4 + \cdots$
+
+$$\sqrt{\cos x} = 1 + \frac{1}{2}\!\left(-\frac{x^2}{2} + \frac{x^4}{24}\right) - \frac{1}{8}\!\left(\frac{x^4}{4}\right) + \cdots$$
+
+$$= 1 - \frac{x^2}{4} + \frac{x^4}{48} - \frac{x^4}{32} + \cdots = 1 - \frac{x^2}{4} - \frac{x^4}{96} + \cdots$$
+
+</details>
+
+### Question 15
+
+Use the Maclaurin series for $\arctan x$ to show that $\displaystyle 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots = \frac{\pi}{4}$.
+
+<details>
+<summary>Solution</summary>
+
+$\arctan x = x - \dfrac{x^3}{3} + \dfrac{x^5}{5} - \dfrac{x^7}{7} + \cdots$ for $|x| \leq 1$.
+
+Setting $x = 1$:
+
+$$\arctan 1 = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots = \frac{\pi}{4}$$
+
+Therefore $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1} = \frac{\pi}{4}$. $\blacksquare$
+
+</details>
 
 :::
 
-:::
+---
 
-:::
+## 10. Advanced Worked Examples
+
+### Example 10.1: Maclaurin series of $e^x\sin x$
+
+**Problem.** Find the Maclaurin series of $e^x\sin x$ up to the term in $x^5$.
+
+**Solution.** $e^x = 1+x+\dfrac{x^2}{2}+\dfrac{x^3}{6}+\dfrac{x^4}{24}+\dfrac{x^5}{120}+\cdots$
+
+$\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
+
+Multiplying and collecting terms up to $x^5$:
+
+$e^x\sin x = \left(1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\frac{x^5}{120}\right)\!\left(x-\frac{x^3}{6}+\frac{x^5}{120}\right)$
+
+$= x - \frac{x^3}{6} + \frac{x^5}{120} + x^2 - \frac{x^4}{6} + \frac{x^5}{120} + \frac{x^3}{2} - \frac{x^5}{12} + \frac{x^4}{6} - \frac{x^5}{72} + \frac{x^5}{24} - \frac{x^6}{144} + \cdots$
+
+$= x + x^2 + \dfrac{x^3}{3} - \boxed{\dfrac{x^5}{30} + O(x^6)}$
+
+Wait, let me be more careful:
+
+$x^5$ coefficient: $\dfrac{1}{120} + \dfrac{1}{120} - \dfrac{1}{12} - \dfrac{1}{72} + \dfrac{1}{24}$
+
+$= \dfrac{6 + 6 - 30 - 5 + 15}{720} = \dfrac{-8}{720} = -\dfrac{1}{90}$.
+
+So $e^x\sin x = x + x^2 + \dfrac{x^3}{3} - \dfrac{x^5}{30} + \cdots$
+
+Let me recompute the $x^4$ and $x^5$ terms carefully:
+
+$x^4$: from $(-\frac{1}{6}x^4)(1) + (x^4/24)(x/x)... $ Actually:
+
+- $1 \times (-\frac{x^3}{6})$ contributes nothing to $x^4$
+- $x \times (-\frac{x^3}{6}) = -\frac{x^4}{6}$ ✓
+- $\frac{x^2}{2} \times x = \frac{x^3}{2}$ (not $x^4$)
+
+$x^4$ terms: $x \cdot (-\frac{x^3}{6}) = -\frac{x^4}{6}$ and $\frac{x^4}{24} \cdot x$... no, that's $x^5$.
+
+Actually $x^4$ comes from: $x \cdot (-\frac{x^3}{6}) = -\frac{x^4}{6}$.
+
+So coefficient of $x^4$ is $-\dfrac{1}{6}$.
+
+$$\boxed{e^x\sin x = x + x^2 + \frac{x^3}{3} - \frac{x^4}{6} - \frac{x^5}{30} + O(x^6)}$$
+
+### Example 10.2: Taylor series about a non-zero point
+
+**Problem.** Find the Taylor series of $\ln x$ about $x = 1$ up to the term in $(x-1)^4$.
+
+**Solution.** $f(x) = \ln x$, $f(1) = 0$.
+
+$f'(x) = \dfrac{1}{x}$, $f'(1) = 1$.
+$f''(x) = -\dfrac{1}{x^2}$, $f''(1) = -1$.
+$f'''(x) = \dfrac{2}{x^3}$, $f'''(1) = 2$.
+$f^{(4)}(x) = -\dfrac{6}{x^4}$, $f^{(4)}(1) = -6$.
+
+$$\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \cdots$$
+
+### Example 10.3: Using series to evaluate a limit
+
+**Problem.** Find $\displaystyle\lim_{x \to 0} \frac{e^x - 1 - x - \frac{x^2}{2}}{x^3}$.
+
+**Solution.** $e^x = 1 + x + \dfrac{x^2}{2} + \dfrac{x^3}{6} + \dfrac{x^4}{24} + \cdots$
+
+$$\frac{e^x - 1 - x - x^2/2}{x^3} = \frac{x^3/6 + x^4/24 + \cdots}{x^3} = \frac{1}{6} + \frac{x}{24} + \cdots$$
+
+$$\boxed{\lim_{x \to 0} = \frac{1}{6}}$$
+
+### Example 10.4: Convergence of a Maclaurin series
+
+**Problem.** Find the radius of convergence of the Maclaurin series of $\ln(1+x)$.
+
+**Solution.** $\ln(1+x) = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$.
+
+Ratio test: $\left|\dfrac{a_{n+1}}{a_n}\right| = \dfrac{n}{n+1}|x| \to |x|$.
+
+Converges when $|x| < 1$. At $x = 1$: alternating harmonic series (converges). At $x = -1$: $-\sum \dfrac{1}{n}$ (diverges).
+
+Radius of convergence: $\boxed{1}$, interval: $(-1, 1]$.
+
+### Example 10.5: Series solution to estimate a definite integral
+
+**Problem.** Use a Maclaurin series to estimate $\displaystyle\int_0^{0.5} e^{-x^2}\,dx$ to 4 decimal places.
+
+**Solution.** $e^{-x^2} = 1 - x^2 + \dfrac{x^4}{2} - \dfrac{x^6}{6} + \dfrac{x^8}{24} - \cdots$
+
+$$\int_0^{0.5} e^{-x^2}\,dx = \left[x - \frac{x^3}{3} + \frac{x^5}{10} - \frac{x^7}{42} + \frac{x^9}{216} - \cdots\right]_0^{0.5}$$
+
+$= 0.5 - \dfrac{0.125}{3} + \dfrac{0.03125}{10} - \dfrac{0.0078125}{42} + \dfrac{0.001953125}{216}$
+
+$= 0.5 - 0.04167 + 0.003125 - 0.000186 + 0.000009 = \boxed{0.4613}$ (4 d.p.)
+
+### Example 10.6: Differentiating a known series
+
+**Problem.** By differentiating the Maclaurin series for $\dfrac{1}{1-x}$, find the Maclaurin series for $\dfrac{1}{(1-x)^2}$.
+
+**Solution.** $\dfrac{1}{1-x} = \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \cdots$
+
+Differentiating: $\dfrac{1}{(1-x)^2} = \sum_{n=1}^{\infty} nx^{n-1} = \sum_{n=0}^{\infty} (n+1)x^n = 1 + 2x + 3x^2 + 4x^3 + \cdots$
+
+### Example 10.7: Multiplying two Taylor series
+
+**Problem.** Find the Maclaurin series of $\cos x \cdot e^{-x}$ up to $x^4$.
+
+**Solution.** $\cos x = 1 - \dfrac{x^2}{2} + \dfrac{x^4}{24} - \cdots$
+
+$e^{-x} = 1 - x + \dfrac{x^2}{2} - \dfrac{x^3}{6} + \dfrac{x^4}{24} - \cdots$
+
+Multiplying: $(1 - \frac{x^2}{2} + \frac{x^4}{24})(1 - x + \frac{x^2}{2} - \frac{x^3}{6} + \frac{x^4}{24})$
+
+$= 1 - x + \frac{x^2}{2} - \frac{x^3}{6} + \frac{x^4}{24} - \frac{x^2}{2} + \frac{x^3}{2} - \frac{x^4}{4} + \frac{x^4}{24} + \cdots$
+
+$= 1 - x + 0 - \frac{x^3}{3} + \left(\frac{1}{24}-\frac{1}{4}+\frac{1}{24}\right)x^4 + \cdots$
+
+Wait: $\frac{1}{24}-\frac{6}{24}+\frac{1}{24} = -\frac{4}{24} = -\frac{1}{6}$.
+
+$$\boxed{\cos x \cdot e^{-x} = 1 - x - \frac{x^3}{3} - \frac{x^4}{6} + O(x^5)}$$
+
+---
+
+## 11. Common Pitfalls
+
+| Pitfall | Correct Approach |
+|---|---|
+| Confusing the Maclaurin series (about $x=0$) with a general Taylor series | Maclaurin: $a=0$; Taylor: $f(x) = \sum \dfrac{f^{(n)}(a)}{n!}(x-a)^n$ |
+| Forgetting the factorial in the denominator | Each term has $\dfrac{f^{(n)}(0)}{n!}x^n$, not $\dfrac{f^{(n)}(0)}{n}x^n$ |
+| Using a series outside its radius of convergence | Always check: e.g., $\ln(1+x)$ converges only for $-1 < x \leq 1$ |
+| Incorrectly multiplying series | Collect like powers carefully; use a table if needed |
+
+---
+
+## 12. Additional Exam-Style Questions
+
+### Question 8
+
+Find the Maclaurin series of $(1+x)^{-1/2}$ and determine its radius of convergence.
+
+<details>
+<summary>Solution</summary>
+
+$(1+x)^{-1/2} = 1 - \dfrac{x}{2} + \dfrac{3x^2}{8} - \dfrac{5x^3}{16} + \dfrac{35x^4}{128} - \cdots$
+
+Using the general binomial: $\displaystyle\sum_{n=0}^{\infty} \binom{-1/2}{n} x^n$.
+
+Radius of convergence: $|x| < 1$ (from the binomial series convergence condition).
+
+</details>
+
+### Question 9
+
+**Prove that** $\displaystyle\int_0^1 \frac{\ln(1+x)}{x}\,dx = \frac{\pi^2}{12}$.
+
+<details>
+<summary>Solution</summary>
+
+$\ln(1+x) = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$ for $|x| < 1$.
+
+$\dfrac{\ln(1+x)}{x} = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^{n-1}}{n}$.
+
+$\displaystyle\int_0^1 \frac{\ln(1+x)}{x}\,dx = \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2} = \eta(2) = \frac{\pi^2}{12}$.
+
+This is the Dirichlet eta function evaluated at 2. $\blacksquare$
+
+</details>
+
+### Question 10
+
+Use the Maclaurin series for $\sin x$ to find $\sin 0.1$ correct to 8 decimal places.
+
+<details>
+<summary>Solution</summary>
+
+$\sin 0.1 = 0.1 - \dfrac{0.001}{6} + \dfrac{0.00001}{120} - \cdots = 0.1 - 0.00016667 + 0.00000008 - \cdots$
+
+$\boxed{\sin 0.1 \approx 0.09983342}$
+
+The $x^7$ term contributes approximately $10^{-12}$, which is negligible.
+
+</details>
+
+---
+
+## 13. Advanced Topics
+
+### 13.1 Lagrange form of the remainder
+
+The error in truncating a Taylor series after $n$ terms is:
+
+$$R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}$$
+
+for some $c$ between $a$ and $x$. This gives a bound on the truncation error.
+
+### 13.2 Power series solutions of ODEs
+
+The Maclaurin series method can solve ODEs that cannot be solved by standard methods. Substitute $y = \sum a_n x^n$ into the ODE and equate coefficients.
+
+### 13.3 Standard Maclaurin series (reference)
+
+| Function | Series | Radius |
+|---|---|---|
+| $e^x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{x^n}{n!}$ | $\infty$ |
+| $\sin x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | $\infty$ |
+| $\cos x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$ | $\infty$ |
+| $\ln(1+x)$ | $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$ | $1$ |
+| $(1+x)^\alpha$ | $\displaystyle\sum_{n=0}^{\infty} \binom{\alpha}{n}x^n$ | $1$ |
+| $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$ | $1$ |
+| $\dfrac{1}{1-x}$ | $\displaystyle\sum_{n=0}^{\infty} x^n$ | $1$ |
+
+### 13.4 Using series to prove identities
+
+Many trigonometric identities can be derived from series. For example, $e^{ix} = \cos x + i\sin x$ implies all the standard addition formulae.
+
+---
+
+## 14. Further Exam-Style Questions
+
+### Question 11
+
+Find the Maclaurin series of $\dfrac{\sin x}{x}$ and determine $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$.
+
+<details>
+<summary>Solution</summary>
+
+$\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
+
+$\dfrac{\sin x}{x} = 1 - \dfrac{x^2}{6} + \dfrac{x^4}{120} - \cdots$
+
+$\displaystyle\lim_{x \to 0} \frac{\sin x}{x} = 1$ (the constant term).
+
+</details>
+
+### Question 12
+
+**Prove that** the Maclaurin series of $\cos x$ converges to $\cos x$ for all real $x$.
+
+<details>
+<summary>Solution</summary>
+
+The $n$-th derivative of $\cos x$ is one of $\pm\cos x$ or $\pm\sin x$, so $|f^{(n)}(c)| \leq 1$ for all $c$ and $n$.
+
+By the Lagrange remainder: $|R_n(x)| \leq \dfrac{|x|^{n+1}}{(n+1)!}$.
+
+For any fixed $x$: $\displaystyle\lim_{n \to \infty} \frac{|x|^{n+1}}{(n+1)!} = 0$ (factorial grows faster than exponential).
+
+Therefore $R_n(x) \to 0$ and the series converges to $\cos x$. $\blacksquare$
+
+</details>
+
+### Question 13
+
+Use series to evaluate $\displaystyle\lim_{x \to 0} \frac{\tan x - x}{x^3}$.
+
+<details>
+<summary>Solution</summary>
+
+$\tan x = x + \dfrac{x^3}{3} + \dfrac{2x^5}{15} + \cdots$
+
+$\dfrac{\tan x - x}{x^3} = \dfrac{x^3/3 + 2x^5/15 + \cdots}{x^3} = \dfrac{1}{3} + \dfrac{2x^2}{15} + \cdots$
+
+$\boxed{\displaystyle\lim_{x \to 0} \frac{\tan x - x}{x^3} = \frac{1}{3}}$
+
+</details>
+
+---
+
+## 15. Advanced Topics
+
+### 15.1 Power series solutions of differential equations
+
+For an ODE $y'' + p(x)y' + q(x)y = 0$, assume $y = \sum_{n=0}^{\infty} a_n x^n$.
+
+Substitute into the ODE and equate coefficients of each power of $x$ to zero. This gives a recurrence relation for $a_n$.
+
+### 15.2 The exponential generating function
+
+$E(x) = \sum_{n=0}^{\infty} \dfrac{a_n x^n}{n!}$.
+
+This is useful in combinatorics and probability (e.g., the exponential generating function of the Bernoulli numbers).
+
+### 15.3 Binomial series — convergence at the endpoints
+
+$(1+x)^\alpha$ converges at $x = 1$ when $\alpha > -1$ and at $x = -1$ when $\alpha > 0$.
+
+Example: $(1+x)^{1/2}$ converges at $x = 1$ (giving $\sqrt{2}$) but diverges at $x = -1$.
+
+### 15.4 Series acceleration
+
+Techniques like Euler acceleration or Shanks transformation can speed up the convergence of slowly converging alternating series.
+
+---
+
+## 16. Further Exam-Style Questions
+
+### Question 14
+
+Find the Maclaurin series of $\ln(1-x^2)$ up to $x^6$ and state the radius of convergence.
+
+<details>
+<summary>Solution</summary>
+
+$\ln(1-u) = -\displaystyle\sum_{n=1}^{\infty} \frac{u^n}{n}$ for $|u| < 1$. With $u = x^2$:
+
+$\ln(1-x^2) = -\displaystyle\sum_{n=1}^{\infty} \frac{x^{2n}}{n} = -x^2 - \dfrac{x^4}{2} - \dfrac{x^6}{3} - \cdots$
+
+Radius of convergence: $|x^2| < 1 \implies |x| < 1$. At $x = 1$: $-\sum \dfrac{1}{n}$ diverges.
+
+$\boxed{\ln(1-x^2) = -x^2 - \dfrac{x^4}{2} - \dfrac{x^6}{3} + O(x^8)}$, radius $= 1$.
+
+</details>
+
+### Question 15
+
+**Prove that** $\displaystyle\sum_{n=1}^{\infty} \frac{n}{2^n} = 2$.
+
+<details>
+<summary>Solution</summary>
+
+$S = \displaystyle\sum_{n=1}^{\infty} \frac{n}{2^n} = \sum_{n=1}^{\infty} n x^n\Big|_{x=1/2}$.
+
+We know $\displaystyle\sum_{n=1}^{\infty} n x^{n-1} = \frac{1}{(1-x)^2}$ for $|x| < 1$.
+
+So $\displaystyle\sum_{n=1}^{\infty} n x^n = \frac{x}{(1-x)^2}$.
+
+At $x = 1/2$: $S = \dfrac{1/2}{(1/2)^2} = \dfrac{1/2}{1/4} = 2$. $\blacksquare$
+
+</details>

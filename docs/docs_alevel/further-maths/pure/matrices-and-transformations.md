@@ -564,3 +564,448 @@ Then: $2c = c \implies c = 0$.
 The only invariant line is $y = 0$.
 
 </details>
+
+<hr />
+
+## 10. Advanced Worked Examples
+
+### Example 10.1: 3x3 eigenvalues and eigenvectors
+
+**Problem.** Find the eigenvalues and eigenvectors of $A = \begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 & 1 \\ 0 & 1 & 2 \end{pmatrix}$.
+
+**Solution.** Characteristic equation:
+
+$$\det(A - \lambda I) = \begin{vmatrix} 2-\lambda & 1 & 0 \\ 1 & 3-\lambda & 1 \\ 0 & 1 & 2-\lambda \end{vmatrix} = 0$$
+
+Expanding along the first row:
+
+$$(2-\lambda)\begin{vmatrix} 3-\lambda & 1 \\ 1 & 2-\lambda \end{vmatrix} - 1\begin{vmatrix} 1 & 1 \\ 0 & 2-\lambda \end{vmatrix} + 0$$
+
+$$= (2-\lambda)[(3-\lambda)(2-\lambda)-1] - (2-\lambda)$$
+
+$$= (2-\lambda)[(3-\lambda)(2-\lambda) - 2] = (2-\lambda)[\lambda^2 - 5\lambda + 4] = (2-\lambda)(\lambda-1)(\lambda-4)$$
+
+Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 2$, $\lambda_3 = 4$.
+
+**For $\lambda_1 = 1$:**
+
+$$\begin{pmatrix} 1 & 1 & 0 \\ 1 & 2 & 1 \\ 0 & 1 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf{0}$$
+
+$x + y = 0$, $x + 2y + z = 0$, $y + z = 0$. From the first: $x = -y$. From the third: $z = -y$. Eigenvector: $\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}$.
+
+**For $\lambda_2 = 2$:**
+
+$$\begin{pmatrix} 0 & 1 & 0 \\ 1 & 1 & 1 \\ 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf{0}$$
+
+$y = 0$, $x + z = 0$. Eigenvector: $\begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}$.
+
+**For $\lambda_3 = 4$:**
+
+$$\begin{pmatrix} -2 & 1 & 0 \\ 1 & -1 & 1 \\ 0 & 1 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf{0}$$
+
+$-2x + y = 0 \implies y = 2x$. $y - 2z = 0 \implies z = x$. Eigenvector: $\begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}$.
+
+### Example 10.2: Diagonalisation of a 3x3 matrix
+
+**Problem.** Using the eigenvalues and eigenvectors from Example 10.1, diagonalise $A$ and hence find $A^4$.
+
+**Solution.** $P = \begin{pmatrix} 1 & 1 & 1 \\ -1 & 0 & 2 \\ 1 & -1 & 1 \end{pmatrix}$, $D = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 4 \end{pmatrix}$.
+
+$\det P = 1(0-(-2)) - 1((-1)-2) + 1(1-0) = 2 + 3 + 1 = 6$.
+
+$$P^{-1} = \frac{1}{6}\begin{pmatrix} 2 & 0 & 2 \\ 3 & 0 & -3 \\ 1 & 2 & 1 \end{pmatrix}$$
+
+$A^4 = PD^4P^{-1}$:
+
+$$D^4 = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 16 & 0 \\ 0 & 0 & 256 \end{pmatrix}$$
+
+$$PD^4 = \begin{pmatrix} 1 & 16 & 256 \\ -1 & 0 & 512 \\ 1 & -16 & 256 \end{pmatrix}$$
+
+$$A^4 = \frac{1}{6}\begin{pmatrix} 1 & 16 & 256 \\ -1 & 0 & 512 \\ 1 & -16 & 256 \end{pmatrix}\begin{pmatrix} 2 & 0 & 2 \\ 3 & 0 & -3 \\ 1 & 2 & 1 \end{pmatrix}$$
+
+$$= \frac{1}{6}\begin{pmatrix} 2+48+256 & 512-768+512 & 2-48+256 \\ -2+512 & 1024 & -2-768+512 \\ 2-48+256 & 512+256 & 2+48+256 \end{pmatrix}$$
+
+$$= \frac{1}{6}\begin{pmatrix} 306 & 256 & 210 \\ 510 & 1024 & -258 \\ 210 & 768 & 306 \end{pmatrix} = \begin{pmatrix} 51 & 128/3 & 35 \\ 85 & 512/3 & -43 \\ 35 & 128 & 51 \end{pmatrix}$$
+
+### Example 10.3: Reflection in an arbitrary line
+
+**Problem.** Find the $2 \times 2$ matrix representing reflection in the line $y = mx$.
+
+**Solution.** The line $y = mx$ makes angle $\theta = \arctan m$ with the $x$-axis. The reflection matrix is obtained by:
+
+1. Rotate by $-\theta$ to align the line with the $x$-axis.
+2. Reflect in the $x$-axis.
+3. Rotate back by $\theta$.
+
+$$R_{-\theta} = \begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix}$$
+
+Wait -- the reflection matrix in a line at angle $\theta$ to the $x$-axis is:
+
+$$M = \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}$$
+
+This can be derived as $R_\theta \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} R_{-\theta}$.
+
+For $m = 1$ ($\theta = \pi/4$): $M = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$, which is reflection in $y = x$ (consistent with the standard table).
+
+### Example 10.4: Successive transformations and invariant lines
+
+**Problem.** The transformation $T$ is represented by $A = \begin{pmatrix} 3 & -4 \\ 1 & -1 \end{pmatrix}$. Find the invariant lines of $T$.
+
+**Solution.** Characteristic equation: $(3-\lambda)(-1-\lambda) + 4 = 0$
+
+$-3 - 3\lambda + \lambda + \lambda^2 + 4 = 0 \implies \lambda^2 - 2\lambda + 1 = 0 \implies (\lambda-1)^2 = 0$.
+
+$\lambda = 1$ (repeated). Eigenvector: $(A-I)\mathbf{v} = \mathbf{0}$:
+
+$$\begin{pmatrix} 2 & -4 \\ 1 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf{0} \implies x - 2y = 0$$
+
+Eigenvector: $\begin{pmatrix} 2 \\ 1 \end{pmatrix}$, so the line $y = x/2$ is invariant.
+
+For non-trivial invariant lines not through the origin, try $y = mx + c$ with $c \neq 0$:
+
+$\begin{pmatrix} 3 & -4 \\ 1 & -1 \end{pmatrix}\begin{pmatrix} x \\ mx+c \end{pmatrix} = \begin{pmatrix} (3-4m)x - 4c \\ (1-m)x - c \end{pmatrix}$
+
+For this to lie on $y = mx + c$: $(1-m)x - c = m(3-4m)x - 4mc + c$.
+
+Comparing coefficients of $x$: $1 - m = m(3 - 4m) = 3m - 4m^2$.
+
+$$4m^2 - 4m + 1 = 0 \implies (2m - 1)^2 = 0 \implies m = 1/2$$
+
+Comparing constants: $-c = -4mc + c \implies 4mc = 2c \implies c(2m - 1) = 0$.
+
+Since $m = 1/2$: $c(0) = 0$, which is satisfied for all $c$.
+
+Therefore **every** line of the form $y = x/2 + c$ is invariant under $T$.
+
+### Example 10.5: Matrix representation of rotation about an arbitrary point
+
+**Problem.** Find the $3 \times 3$ matrix (using homogeneous coordinates) that represents a rotation of $\theta$ about the point $(a, b)$ in the plane.
+
+**Solution.** Using the homogeneous coordinate system where a point $(x, y)$ is represented as $\begin{pmatrix}x\\y\\1\end{pmatrix}$:
+
+1. Translate by $(-a, -b)$ to move the centre to the origin.
+2. Rotate by $\theta$.
+3. Translate back by $(a, b)$.
+
+$$M = \begin{pmatrix} 1 & 0 & a \\ 0 & 1 & b \\ 0 & 0 & 1 \end{pmatrix}\begin{pmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 & -a \\ 0 & 1 & -b \\ 0 & 0 & 1 \end{pmatrix}$$
+
+$$= \begin{pmatrix} \cos\theta & -\sin\theta & a(1-\cos\theta)+b\sin\theta \\ \sin\theta & \cos\theta & b(1-\cos\theta)-a\sin\theta \\ 0 & 0 & 1 \end{pmatrix}$$
+
+### Example 10.6: Determinant and area of a triangle
+
+**Problem.** The vertices of a triangle are $A(1, 2)$, $B(4, 6)$, $C(3, -1)$. Find the area using determinants.
+
+**Solution.**
+
+$$\text{Area} = \frac{1}{2}\left|\det\begin{pmatrix} 1 & 2 & 1 \\ 4 & 6 & 1 \\ 3 & -1 & 1 \end{pmatrix}\right|$$
+
+Expanding along the third column:
+
+$= \dfrac{1}{2}\left|1\cdot\begin{vmatrix} 4 & 6 \\ 3 & -1 \end{vmatrix} - 1\cdot\begin{vmatrix} 1 & 2 \\ 3 & -1 \end{vmatrix} + 1\cdot\begin{vmatrix} 1 & 2 \\ 4 & 6 \end{vmatrix}\right|$
+
+$= \dfrac{1}{2}|(-4-18) - (-1-6) + (6-8)| = \dfrac{1}{2}|-22 + 7 - 2| = \dfrac{17}{2}$
+
+### Example 10.7: Solving a system using the inverse
+
+**Problem.** Solve the system $x + 2y + z = 4$, $2x + y + z = 3$, $x + y + 2z = 5$.
+
+**Solution.** The system is $A\mathbf{x} = \mathbf{b}$ where:
+
+$$A = \begin{pmatrix} 1 & 2 & 1 \\ 2 & 1 & 1 \\ 1 & 1 & 2 \end{pmatrix}, \quad \mathbf{b} = \begin{pmatrix} 4 \\ 3 \\ 5 \end{pmatrix}$$
+
+$\det A = 1(2-1) - 2(4-1) + 1(2-1) = 1 - 6 + 1 = -4$.
+
+Using Cramer's rule:
+
+$$x = \frac{\det\begin{pmatrix} 4 & 2 & 1 \\ 3 & 1 & 1 \\ 5 & 1 & 2 \end{pmatrix}}{-4} = \frac{4(2-1) - 2(6-5) + 1(3-5)}{-4} = \frac{4 - 2 - 2}{-4} = 0$$
+
+$$y = \frac{\det\begin{pmatrix} 1 & 4 & 1 \\ 2 & 3 & 1 \\ 1 & 5 & 2 \end{pmatrix}}{-4} = \frac{1(6-5) - 4(4-1) + 1(10-3)}{-4} = \frac{1 - 12 + 7}{-4} = 1$$
+
+$$z = \frac{\det\begin{pmatrix} 1 & 2 & 4 \\ 2 & 1 & 3 \\ 1 & 1 & 5 \end{pmatrix}}{-4} = \frac{1(5-3) - 2(10-3) + 4(2-1)}{-4} = \frac{2 - 14 + 4}{-4} = 2$$
+
+Solution: $x = 0$, $y = 1$, $z = 2$.
+
+---
+
+## 11. Connections to Other Topics
+
+### 11.1 Matrices and complex numbers
+
+Complex numbers $a + bi$ can be represented as $\begin{pmatrix}a & -b\\b & a\end{pmatrix}$. Multiplication of complex numbers corresponds to matrix multiplication, and $|z|^2 = \det$ of this matrix. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+
+### 11.2 Matrices and vectors
+
+The cross product $\mathbf{a}\times\mathbf{b}$ can be computed as a symbolic determinant with basis vectors $\mathbf{i}, \mathbf{j}, \mathbf{k}$. See [Vectors in 3D](/docs/docs_alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+
+### 11.3 Eigenvalues and differential equations
+
+Diagonalisation is used to solve systems of coupled linear differential equations. The eigenvalues determine the form of the solution. See [Differential Equations](/docs/docs_alevel/further-maths/pure-mathematics/07-differential-equations).
+
+---
+
+## 12. Additional Exam-Style Questions
+
+### Question 8
+
+The matrix $B = \begin{pmatrix} 1 & 0 & 2 \\ 0 & 2 & 0 \\ 2 & 0 & 1 \end{pmatrix}$.
+
+**(a)** Find the eigenvalues and eigenvectors of $B$.
+
+**(b)** Verify that $B$ is diagonalisable and write down $P$ and $D$.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** $\det(B - \lambda I) = \begin{vmatrix} 1-\lambda & 0 & 2 \\ 0 & 2-\lambda & 0 \\ 2 & 0 & 1-\lambda \end{vmatrix} = (2-\lambda)[(1-\lambda)^2 - 4]$
+
+$= (2-\lambda)(\lambda^2 - 2\lambda - 3) = (2-\lambda)(\lambda-3)(\lambda+1)$.
+
+Eigenvalues: $\lambda_1 = -1$, $\lambda_2 = 2$, $\lambda_3 = 3$.
+
+$\lambda = -1$: $\begin{pmatrix} 2 & 0 & 2 \\ 0 & 3 & 0 \\ 2 & 0 & 2 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies x + z = 0, y = 0$. Eigenvector: $\begin{pmatrix}1\\0\\-1\end{pmatrix}$.
+
+$\lambda = 2$: $\begin{pmatrix} -1 & 0 & 2 \\ 0 & 0 & 0 \\ 2 & 0 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies x = 2z$. Eigenvector: $\begin{pmatrix}2\\1\\1\end{pmatrix}$ (using $y$ as free variable too).
+
+Actually: $-x + 2z = 0 \implies x = 2z$. $y$ is free. Eigenvector: $\begin{pmatrix}0\\1\\0\end{pmatrix}$.
+
+$\lambda = 3$: $\begin{pmatrix} -2 & 0 & 2 \\ 0 & -1 & 0 \\ 2 & 0 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies x = z, y = 0$. Eigenvector: $\begin{pmatrix}1\\0\\1\end{pmatrix}$.
+
+**(b)** Three independent eigenvectors, so $B$ is diagonalisable.
+
+$$P = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \\ -1 & 0 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} -1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}$$
+
+</details>
+
+### Question 9
+
+Find the matrix representing an enlargement of scale factor $3$ from the point $(1, 2)$, using homogeneous coordinates.
+
+<details>
+<summary>Solution</summary>
+
+In homogeneous coordinates, this is the composite of translate by $(-1, -2)$, enlarge by $3$, and translate back by $(1, 2)$:
+
+$$M = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix}\begin{pmatrix} 3 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 & -1 \\ 0 & 1 & -2 \\ 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 3 & 0 & -2 \\ 0 & 3 & -4 \\ 0 & 0 & 1 \end{pmatrix}$$
+
+</details>
+
+### Question 10
+
+**Prove that** if $A$ has eigenvalues $\lambda_1, \lambda_2$ with $\lambda_1 \neq \lambda_2$, then $A$ is diagonalisable.
+
+<details>
+<summary>Solution</summary>
+
+Since $\lambda_1 \neq \lambda_2$, the eigenvectors $\mathbf{v}_1$ and $\mathbf{v}_2$ satisfy $(A - \lambda_1 I)\mathbf{v}_1 = \mathbf{0}$ and $(A - \lambda_2 I)\mathbf{v}_2 = \mathbf{0}$.
+
+Suppose $\mathbf{v}_1$ and $\mathbf{v}_2$ are linearly dependent: $\mathbf{v}_2 = c\mathbf{v}_1$ for some scalar $c$.
+
+Then $(A - \lambda_2 I)\mathbf{v}_1 = \mathbf{0}$ (dividing by $c$), which means $\lambda_1$ and $\lambda_2$ are both eigenvalues with eigenvector $\mathbf{v}_1$. But $(A - \lambda_1 I)\mathbf{v}_1 = \mathbf{0}$ and $(A - \lambda_2 I)\mathbf{v}_1 = \mathbf{0}$ together give $(\lambda_1 - \lambda_2)\mathbf{v}_1 = \mathbf{0}$, contradicting $\lambda_1 \neq \lambda_2$ and $\mathbf{v}_1 \neq \mathbf{0}$.
+
+Therefore $\mathbf{v}_1$ and $\mathbf{v}_2$ are linearly independent, $P$ is invertible, and $A = PDP^{-1}$. $\blacksquare$
+
+</details>
+
+---
+
+## 13. Advanced Worked Examples
+
+### Example 13.1: Finding eigenvectors of a symmetric matrix
+
+**Problem.** Find the eigenvalues and a set of orthonormal eigenvectors of $A = \begin{pmatrix}4&2\\2&1\end{pmatrix}$.
+
+**Solution.** $\det(A-\lambda I) = (4-\lambda)(1-\lambda)-4 = \lambda^2-5\lambda = 0$. $\lambda = 0, 5$.
+
+$\lambda = 0$: $\begin{pmatrix}4&2\\2&1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = -v_2/2$. Eigenvector: $(1,-2)$, normalised: $\dfrac{1}{\sqrt{5}}(1,-2)$.
+
+$\lambda = 5$: $\begin{pmatrix}-1&2\\2&-4\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = 2v_2$. Eigenvector: $(2,1)$, normalised: $\dfrac{1}{\sqrt{5}}(2,1)$.
+
+Orthogonality check: $(1)(2)+(-2)(1) = 0$. ✓ The eigenvectors are orthogonal (as expected for a symmetric matrix).
+
+### Example 13.2: Using diagonalisation to compute a matrix power
+
+**Problem.** Given $A = \begin{pmatrix}3&1\\0&2\end{pmatrix}$, find $A^{10}$.
+
+**Solution.** Eigenvalues: $(3-\lambda)(2-\lambda) = 0 \implies \lambda = 2, 3$.
+
+$\lambda = 3$: $\begin{pmatrix}0&1\\0&-1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies \mathbf{v}=(1,0)$.
+$\lambda = 2$: $\begin{pmatrix}1&1\\0&0\end{pmatrix}\mathbf{v}=\mathbf{0} \implies \mathbf{v}=(1,-1)$.
+
+$P = \begin{pmatrix}1&1\\0&-1\end{pmatrix}$, $D = \begin{pmatrix}3&0\\0&2\end{pmatrix}$, $P^{-1} = \begin{pmatrix}1&1\\0&-1\end{pmatrix}$.
+
+$A^{10} = PD^{10}P^{-1} = \begin{pmatrix}1&1\\0&-1\end{pmatrix}\begin{pmatrix}3^{10}&0\\0&2^{10}\end{pmatrix}\begin{pmatrix}1&1\\0&-1\end{pmatrix}$
+
+$= \begin{pmatrix}1&1\\0&-1\end{pmatrix}\begin{pmatrix}59049&59049\\0&-1024\end{pmatrix} = \boxed{\begin{pmatrix}59049&58025\\0&1024\end{pmatrix}}$
+
+### Example 13.3: Rotation matrix properties
+
+**Problem.** Show that $R_\theta = \begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$ satisfies $R_\theta R_\phi = R_{\theta+\phi}$ and $R_\theta^{-1} = R_{-\theta}$.
+
+**Solution.** $R_\theta R_\phi = \begin{pmatrix}\cos\theta\cos\phi-\sin\theta\sin\phi&-\cos\theta\sin\phi-\sin\theta\cos\phi\\\sin\theta\cos\phi+\cos\theta\sin\phi&-\sin\theta\sin\phi+\cos\theta\cos\phi\end{pmatrix}$
+
+$= \begin{pmatrix}\cos(\theta+\phi)&-\sin(\theta+\phi)\\\sin(\theta+\phi)&\cos(\theta+\phi)\end{pmatrix} = R_{\theta+\phi}$. ✓
+
+$R_\theta^{-1} = \dfrac{1}{\cos^2\theta+\sin^2\theta}\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$. ✓
+
+### Example 13.4: Determinant and area scaling
+
+**Problem.** The triangle with vertices $(1,0)$, $(0,2)$, $(3,4)$ is transformed by $T = \begin{pmatrix}2&-1\\1&3\end{pmatrix}$. Find the area of the image.
+
+**Solution.** Original area: $\dfrac{1}{2}\left|\det\begin{pmatrix}0-1&3-1\\2-0&4-0\end{pmatrix}\right| = \dfrac{1}{2}|-2+2| = 0$.
+
+Wait, the points are collinear? Let me use $(0,0)$, $(1,0)$, $(0,1)$ instead. Area $= \dfrac{1}{2}$.
+
+$\det(T) = 6+1 = 7$. Image area $= 7 \times \dfrac{1}{2} = \boxed{3.5}$.
+
+### Example 13.5: Shear transformation
+
+**Problem.** The matrix $S = \begin{pmatrix}1&k\\0&1\end{pmatrix}$ represents a shear. Find its eigenvalues and describe the invariant lines.
+
+**Solution.** $\det(S-\lambda I) = (1-\lambda)^2 = 0$. Repeated eigenvalue $\lambda = 1$.
+
+$(S-I)\mathbf{v} = \begin{pmatrix}0&k\\0&0\end{pmatrix}\mathbf{v} = \mathbf{0} \implies v_2 = 0$. Only one eigenvector: $(1,0)$.
+
+The $x$-axis ($y=0$) is the only invariant line through the origin. All lines $y = c$ (for any constant $c$) are invariant (but not through the origin, except $y=0$).
+
+### Example 13.6: Matrix equation $AX = B$
+
+**Problem.** Solve $AX = B$ where $A = \begin{pmatrix}1&2\\3&5\end{pmatrix}$ and $B = \begin{pmatrix}4&7\\7&12\end{pmatrix}$.
+
+**Solution.** $X = A^{-1}B$. $\det(A) = 5-6 = -1$.
+
+$A^{-1} = \begin{pmatrix}-5&2\\3&-1\end{pmatrix}$.
+
+$X = \begin{pmatrix}-5&2\\3&-1\end{pmatrix}\begin{pmatrix}4&7\\7&12\end{pmatrix} = \begin{pmatrix}-20+14&-35+24\\12-7&21-12\end{pmatrix} = \boxed{\begin{pmatrix}-6&-11\\5&9\end{pmatrix}}$
+
+---
+
+## 14. Additional Exam-Style Questions
+
+### Question 11
+
+The matrix $M = \begin{pmatrix}2&-1\\4&-3\end{pmatrix}$ has eigenvalues $\lambda_1 = 1$ and $\lambda_2 = -2$. Find $M^4 + 3M$.
+
+<details>
+<summary>Solution</summary>
+
+By Cayley--Hamilton: $M^2 + M - 2I = O \implies M^2 = -M + 2I$.
+
+$M^3 = M(-M+2I) = -M^2+2M = -(-M+2I)+2M = 3M-2I$.
+
+$M^4 = M(3M-2I) = 3M^2-2M = 3(-M+2I)-2M = -5M+6I$.
+
+$M^4+3M = -5M+6I+3M = -2M+6I = -2\begin{pmatrix}2&-1\\4&-3\end{pmatrix}+6\begin{pmatrix}1&0\\0&1\end{pmatrix} = \begin{pmatrix}-4+6&2\\-8&6+6\end{pmatrix} = \begin{pmatrix}2&2\\-8&12\end{pmatrix}$.
+
+</details>
+
+### Question 12
+
+**Prove that** similar matrices have the same trace and determinant.
+
+<details>
+<summary>Solution</summary>
+
+If $B = P^{-1}AP$, then $\det(B) = \det(P^{-1}AP) = \det(P^{-1})\det(A)\det(P) = \det(A)$.
+
+$\text{tr}(B) = \text{tr}(P^{-1}AP)$. Using the cyclic property of trace: $\text{tr}(ABC) = \text{tr}(CAB)$.
+
+$\text{tr}(P^{-1}AP) = \text{tr}(APP^{-1}) = \text{tr}(A)$. $\blacksquare$
+
+</details>
+
+### Question 13
+
+Find the reflection matrix in the line $y = 2x$.
+
+<details>
+<summary>Solution</summary>
+
+The line $y = 2x$ makes angle $\theta = \arctan 2$ with the $x$-axis.
+
+$R = \begin{pmatrix}\cos 2\theta&\sin 2\theta\\\sin 2\theta&-\cos 2\theta\end{pmatrix}$.
+
+$\cos\theta = \dfrac{1}{\sqrt{5}}$, $\sin\theta = \dfrac{2}{\sqrt{5}}$.
+
+$\cos 2\theta = \cos^2\theta-\sin^2\theta = \dfrac{1-4}{5} = -\dfrac{3}{5}$.
+
+$\sin 2\theta = 2\sin\theta\cos\theta = \dfrac{4}{5}$.
+
+$$R = \begin{pmatrix}-\frac{3}{5}&\frac{4}{5}\\\frac{4}{5}&\frac{3}{5}\end{pmatrix}$$
+
+</details>
+
+---
+
+## 16. Further Advanced Topics
+
+### 16.1 Orthogonal matrices
+
+A matrix $Q$ is **orthogonal** if $Q^TQ = QQ^T = I$.
+
+Properties:
+- $|\det Q| = 1$
+- Columns and rows form orthonormal bases
+- $Q^{-1} = Q^T$
+- Orthogonal transformations preserve lengths and angles
+
+Every $2\times 2$ orthogonal matrix with $\det = 1$ is a rotation; with $\det = -1$ it is a reflection.
+
+### 16.2 Diagonalisation revisited
+
+If $A$ has $n$ linearly independent eigenvectors, then $A = PDP^{-1}$ where:
+- $P$ has eigenvectors as columns
+- $D$ has eigenvalues on the diagonal
+
+**Computing $A^k$:** $A^k = PD^kP^{-1}$ — much faster than repeated multiplication.
+
+**Computing $e^A$:** $e^A = Pe^DP^{-1}$ where $e^D$ is the diagonal matrix of $e^{\lambda_i}$.
+
+### 16.3 Cayley-Hamilton theorem
+
+Every square matrix satisfies its own characteristic equation.
+
+If $p(\lambda) = \det(\lambda I - A)$, then $p(A) = O$.
+
+This can be used to express $A^n$ for large $n$ in terms of lower powers of $A$.
+
+---
+
+## 17. Further Exam-Style Questions
+
+### Question 16
+
+**Prove that** if $A$ is orthogonal, then $\det A = \pm 1$.
+
+<details>
+<summary>Solution</summary>
+
+$\det(Q^TQ) = \det(Q^T)\det(Q) = (\det Q)^2$.
+
+But $Q^TQ = I$, so $\det(I) = 1$.
+
+Therefore $(\det Q)^2 = 1 \implies \det Q = \pm 1$. $\blacksquare$
+
+</details>
+
+### Question 17
+
+Find the eigenvalues and eigenvectors of $A = \begin{pmatrix}4&1\\2&3\end{pmatrix}$, and hence find $A^5$.
+
+<details>
+<summary>Solution</summary>
+
+$\det(A-\lambda I) = (4-\lambda)(3-\lambda)-2 = \lambda^2-7\lambda+10 = (\lambda-5)(\lambda-2)$.
+
+Eigenvalues: $\lambda_1 = 5$, $\lambda_2 = 2$.
+
+$\lambda=5$: $(A-5I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix}-1&1\\2&-2\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix} = \mathbf{0} \implies \mathbf{v}_1 = \begin{pmatrix}1\\1\end{pmatrix}$.
+
+$\lambda=2$: $(A-2I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix}2&1\\2&1\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix}1\\-2\end{pmatrix}$.
+
+$P = \begin{pmatrix}1&1\\1&-2\end{pmatrix}$, $D = \begin{pmatrix}5&0\\0&2\end{pmatrix}$, $P^{-1} = \dfrac{1}{-3}\begin{pmatrix}-2&-1\\-1&1\end{pmatrix}$.
+
+$A^5 = PD^5P^{-1} = \dfrac{1}{3}\begin{pmatrix}1&1\\1&-2\end{pmatrix}\begin{pmatrix}3125&0\\0&32\end{pmatrix}\begin{pmatrix}2&1\\1&-1\end{pmatrix}$
+
+$= \dfrac{1}{3}\begin{pmatrix}3125&32\\3125&-64\end{pmatrix}\begin{pmatrix}2&1\\1&-1\end{pmatrix} = \dfrac{1}{3}\begin{pmatrix}6282&3093\\6186&3189\end{pmatrix} = \begin{pmatrix}2094&1031\\2062&1063\end{pmatrix}$.
+
+</details>

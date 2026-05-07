@@ -829,3 +829,385 @@ Banking the curve dramatically reduces the required friction coefficient from 0.
 </details>
 
 :::
+
+---
+
+## 8. Advanced Worked Examples
+
+### Example 8.1: Conical pendulum
+
+**Problem.** A conical pendulum consists of a particle of mass $0.5\,\mathrm{kg}$ on a string of length $1\,\mathrm{m}$ making angle $\theta$ with the vertical. It rotates with angular speed $4\,\mathrm{rad\,s^{-1}}$. Find $\theta$.
+
+**Solution.** Resolving vertically: $T\cos\theta = mg = 4.9\,\mathrm{N}$.
+
+Resolving horizontally: $T\sin\theta = m\omega^2 r = 0.5 \times 16 \times \sin\theta = 8\sin\theta$.
+
+Dividing: $\tan\theta = \dfrac{8\sin\theta}{4.9/\cos\theta}$. Actually:
+
+$$\frac{T\sin\theta}{T\cos\theta} = \tan\theta = \frac{m\omega^2 L\sin\theta}{mg} = \frac{\omega^2 L \sin\theta}{g}$$
+
+$$\cos\theta = \frac{g}{\omega^2 L} = \frac{9.8}{16} = 0.6125$$
+
+$$\boxed{\theta \approx 52.2°}$$
+
+### Example 8.2: Car on a banked curve — maximum speed formula
+
+**Problem.** A car of mass $m$ travels around a banked curve of radius $r$ at banking angle $\alpha$ with friction coefficient $\mu$. Find the maximum safe speed.
+
+**Solution.** At maximum speed, friction acts down the slope. Resolving perpendicular to surface: $N = mg\cos\alpha + \dfrac{mv^2}{r}\sin\alpha$.
+
+Resolving along surface: $\dfrac{mv^2}{r}\cos\alpha = mg\sin\alpha + \mu N$.
+
+$$\frac{mv^2}{r}\cos\alpha = mg\sin\alpha + \mu mg\cos\alpha + \frac{\mu mv^2}{r}\sin\alpha$$
+
+$$v^2\!\left(\frac{\cos\alpha}{r} - \frac{\mu\sin\alpha}{r}\right) = g(\sin\alpha + \mu\cos\alpha)$$
+
+$$\boxed{v_{\max}^2 = \frac{rg(\sin\alpha + \mu\cos\alpha)}{\cos\alpha - \mu\sin\alpha}}$$
+
+### Example 8.3: Vertical circle — minimum speed at the top (rod)
+
+**Problem.** A particle of mass $m$ is attached to a light rod of length $l$ and rotates in a vertical circle. Find the minimum angular speed for complete circles.
+
+**Solution.** At the top: $T + mg = m\omega^2 l$. For a rod, $T \geq 0$ (can push). Minimum: $T = 0$:
+
+$$mg = m\omega_{\min}^2 l \implies \boxed{\omega_{\min} = \sqrt{\frac{g}{l}}}$$
+
+### Example 8.4: Energy approach to vertical circles
+
+**Problem.** A particle of mass $0.2\,\mathrm{kg}$ on a light inextensible string of length $0.5\,\mathrm{m}$ is projected horizontally from the lowest point. Find the minimum speed for complete circles.
+
+**Solution.** At the top: $v_{\text{top}}^2 \geq gr = 4.9$.
+
+Energy conservation: $\dfrac{1}{2}mu^2 = \dfrac{1}{2}mv_{\text{top}}^2 + mg(2r)$.
+
+$$u^2 = gr + 4gr = 5gr = 5 \times 9.8 \times 0.5 = 24.5$$
+
+$$\boxed{u_{\min} = \sqrt{24.5} \approx 4.95\,\mathrm{m\,s^{-1}}}$$
+
+### Example 8.5: Tension at arbitrary angle in vertical circle
+
+**Problem.** A particle of mass $m$ on a string of length $r$ moves in a vertical circle. At angle $\theta$ from the downward vertical, find the tension.
+
+**Solution.** Resolving toward the centre:
+
+$$\boxed{T = \frac{mv^2}{r} + mg\cos\theta}$$
+
+At the bottom ($\theta = 0$): $T = \dfrac{mv^2}{r} + mg$ (maximum).
+At the top ($\theta = \pi$): $T = \dfrac{mv^2}{r} - mg$ (minimum).
+
+### Example 8.6: Non-uniform circular motion
+
+**Problem.** A disc rotates with angular acceleration $\alpha = -0.2\omega\,\mathrm{rad\,s^{-2}}$. If $\omega = 10\,\mathrm{rad\,s^{-1}}$ at $t = 0$, find $\omega(t)$.
+
+**Solution.** $\dfrac{d\omega}{dt} = -0.2\omega$. Separable:
+
+$$\int \frac{d\omega}{\omega} = \int -0.2\,dt \implies \ln\omega = -0.2t + \ln 10$$
+
+$$\boxed{\omega = 10e^{-0.2t}}$$
+
+---
+
+## 9. Common Pitfalls
+
+| Pitfall | Correct Approach |
+|---|---|
+| Confusing the centripetal force direction | It always points toward the centre of the circle |
+| Forgetting that normal reaction changes on a banked surface | Resolve perpendicular to the surface |
+| Using $v = r\omega$ with inconsistent units | $v$ in $\mathrm{m\,s^{-1}}$, $r$ in $\mathrm{m}$, $\omega$ in $\mathrm{rad\,s^{-1}}$ |
+| Assuming tension is constant in vertical motion | $T$ varies; use energy conservation for $v$, then Newton's second law for $T$ |
+
+---
+
+## 10. Additional Exam-Style Questions
+
+### Question 8
+
+A particle of mass $m$ moves in a horizontal circle of radius $r$ on the inside of a smooth hemispherical bowl of radius $R$. Find the speed $v$ in terms of $R$, $r$, and $g$.
+
+<details>
+<summary>Solution</summary>
+
+$N\sin\theta = \dfrac{mv^2}{r}$ where $\sin\theta = \dfrac{r}{R}$, and $N\cos\theta = mg$.
+
+$\tan\theta = \dfrac{v^2}{rg} \implies \dfrac{r}{\sqrt{R^2-r^2}} = \dfrac{v^2}{rg}$.
+
+$$\boxed{v^2 = \frac{r^2 g}{\sqrt{R^2 - r^2}}}$$
+
+</details>
+
+### Question 9
+
+A bead of mass $m$ slides on a smooth circular wire of radius $a$ in a vertical plane. It is projected from the lowest point with speed $\sqrt{6ga}$. Find the speed and reaction at $60°$ above the lowest point.
+
+<details>
+<summary>Solution</summary>
+
+Energy: $\dfrac{1}{2}m \cdot 6ga = \dfrac{1}{2}mv^2 + mga(1-\cos 60°)$.
+
+$3mga = \dfrac{1}{2}mv^2 + \dfrac{mga}{2} \implies v^2 = 5ga$.
+
+Radial: $R - mg\cos 60° = \dfrac{mv^2}{a} = 5mg$.
+
+$R = 5mg + \dfrac{mg}{2} = \boxed{\dfrac{11mg}{2}}$.
+
+</details>
+
+### Question 10
+
+**Prove that** for a particle on a string in vertical circular motion, the string goes slack when $v^2 < gr$ at the highest point.
+
+<details>
+<summary>Solution</summary>
+
+At the top, measuring $\theta$ from the upward vertical: $T + mg\cos\theta = \dfrac{mv^2}{r}$.
+
+At the top ($\theta = 0$): $T = \dfrac{mv^2}{r} - mg$.
+
+The string goes slack when $T = 0$: $v^2 = gr$. If $v^2 < gr$ at any point approaching the top, the particle leaves the circular path. $\blacksquare$
+
+</details>
+
+---
+
+## 11. Connections to Other Topics
+
+### 11.1 Circular motion and projectiles
+
+Both involve resolving forces in 2D and applying Newton's second law. See [Projectile Motion](/docs/docs_alevel/further-maths/further-mechanics/01-projectile-motion).
+
+### 11.2 Circular motion and differential equations
+
+Angular motion with non-constant angular acceleration leads to ODEs. See [Differential Equations](/docs/docs_alevel/further-maths/pure-mathematics/07-differential-equations).
+
+### 11.3 Energy conservation in circular motion
+
+Vertical circular motion problems often require energy methods combined with force resolution.
+
+---
+
+## 12. Key Results Summary
+
+| Quantity | Formula |
+|---|---|
+| Centripetal acceleration | $a = \omega^2 r = \dfrac{v^2}{r}$ |
+| Centripetal force | $F = m\omega^2 r = \dfrac{mv^2}{r}$ |
+| Linear speed | $v = \omega r$ |
+| Angular speed | $\omega = \dfrac{v}{r} = \dfrac{2\pi}{T}$ |
+| Period | $T = \dfrac{2\pi}{\omega}$ |
+| Conical pendulum: $\cos\theta$ | $\cos\theta = \dfrac{g}{\omega^2 l}$ |
+| Vertical circle (top): min speed (string) | $v_{\min} = \sqrt{gr}$ |
+| Vertical circle (top): min speed (rod) | $v_{\min} = 0$ |
+| Vertical circle: max speed at bottom | $v_{\max} = \sqrt{u^2 + 4gr}$ (energy) |
+
+---
+
+## 13. Further Exam-Style Questions
+
+### Question 11
+
+A car of mass $1200\,\mathrm{kg}$ travels at $15\,\mathrm{m\,s^{-1}}$ around a horizontal circular track of radius $50\,\mathrm{m}$. Find the minimum coefficient of friction required.
+
+<details>
+<summary>Solution</summary>
+
+$F = \dfrac{mv^2}{r} = \dfrac{1200 \times 225}{50} = 5400\,\mathrm{N}$.
+
+$F = \mu mg \implies \mu = \dfrac{5400}{1200 \times 9.8} = \dfrac{5400}{11760}$.
+
+$\boxed{\mu \approx 0.459}$
+
+</details>
+
+### Question 12
+
+**Prove that** for uniform circular motion, the work done by the centripetal force in one complete revolution is zero.
+
+<details>
+<summary>Solution</summary>
+
+The centripetal force is always perpendicular to the velocity (tangent to the circle).
+
+Work done: $W = \int \mathbf{F}\cdot d\mathbf{s} = \int F\cos 90°\,ds = \int 0\,ds = 0$.
+
+Since $\mathbf{F} \perp \mathbf{v}$ at every instant, no work is done and the kinetic energy remains constant. $\blacksquare$
+
+</details>
+
+---
+
+## 14. Advanced Topics
+
+### 14.1 Angular momentum
+
+The angular momentum of a particle of mass $m$ moving with velocity $\mathbf{v}$ at position $\mathbf{r}$ from a point $O$ is:
+
+$$\mathbf{L} = \mathbf{r} \times m\mathbf{v} = mr^2\boldsymbol{\omega}$$
+
+For a rigid body rotating about a fixed axis: $L = I\omega$ where $I$ is the moment of inertia.
+
+### 14.2 Angular impulse
+
+The angular impulse-momentum principle states:
+
+$$\int_{t_1}^{t_2} \boldsymbol{\tau}\,dt = \Delta \mathbf{L} = I\omega_2 - I\omega_1$$
+
+where $\boldsymbol{\tau}$ is the torque about the axis.
+
+### 14.3 Non-uniform circular motion and SHM
+
+For small oscillations, the component of gravity tangential to a circular arc is approximately $-mg\theta$, giving simple harmonic motion with period $T = 2\pi\sqrt{l/g}$ (the simple pendulum).
+
+### 14.4 Motion in a vertical circle: general analysis
+
+For a particle of mass $m$ on a string of length $r$ in a vertical circle:
+
+- At any angle $\theta$ from the bottom: $T = \dfrac{mv^2}{r} + mg\cos\theta$... wait, let me be careful with sign conventions.
+
+Actually measuring $\theta$ from the downward vertical, with the centre of the circle above:
+
+Resolving radially (toward centre, upward): $T - mg\cos\theta = \dfrac{mv^2}{r}$.
+
+At the bottom ($\theta = 0$): $T = \dfrac{mv^2}{r} + mg$ (maximum tension).
+At the top ($\theta = \pi$): $T = \dfrac{mv^2}{r} - mg$ (minimum tension).
+
+By energy conservation between bottom and angle $\theta$:
+
+$\dfrac{1}{2}mu^2 = \dfrac{1}{2}mv^2 + mgr(1-\cos\theta)$
+
+$v^2 = u^2 - 2gr(1-\cos\theta)$.
+
+Substituting: $T = \dfrac{m[u^2 - 2gr(1-\cos\theta)]}{r} + mg\cos\theta = \dfrac{mu^2}{r} - 2mg + 3mg\cos\theta$.
+
+At the top: $T_{\text{top}} = \dfrac{mu^2}{r} - 2mg - 3mg = \dfrac{mu^2}{r} - 5mg$.
+
+For the string not to go slack: $T_{\text{top}} \geq 0 \implies u^2 \geq 5gr$, giving $u_{\min} = \sqrt{5gr}$.
+
+---
+
+## 15. Further Exam-Style Questions
+
+### Question 13
+
+A particle of mass $0.1\,\mathrm{kg}$ is attached to a string of length $0.8\,\mathrm{m}$ and whirled in a horizontal circle at $3\,\mathrm{rad\,s^{-1}}$. The string makes an angle of $30°$ with the vertical. Find the tension.
+
+<details>
+<summary>Solution</summary>
+
+Vertically: $T\cos 30° = 0.1 \times 9.8 = 0.98\,\mathrm{N}$.
+
+$T = \dfrac{0.98}{\cos 30°} = \dfrac{0.98}{\sqrt{3}/2} = \boxed{1.132\,\mathrm{N}}$.
+
+Check: horizontally, $T\sin 30° = m\omega^2 r$ where $r = 0.8\sin 30° = 0.4\,\mathrm{m}$.
+
+$T\sin 30° = 1.132 \times 0.5 = 0.566\,\mathrm{N}$.
+
+$m\omega^2 r = 0.1 \times 9 \times 0.4 = 0.36\,\mathrm{N}$.
+
+These don't match, which means the given angle is inconsistent with the given angular speed. The correct angle satisfies:
+
+$\cos\theta = \dfrac{g}{\omega^2 l} = \dfrac{9.8}{9 \times 0.8} = 1.361 > 1$.
+
+This is impossible, meaning the particle cannot maintain circular motion at $3\,\mathrm{rad\,s^{-1}}$ with string length $0.8\,\mathrm{m}$ (it would need to be horizontal, which requires infinite $\omega$).
+
+</details>
+
+### Question 14
+
+**Derive** the condition for a particle to complete a vertical circle on the outside of a smooth sphere (losing contact at some point).
+
+<details>
+<summary>Solution</summary>
+
+At angle $\theta$ from the top, resolving radially:
+
+$mg\cos\theta - N = \dfrac{mv^2}{r}$.
+
+The particle loses contact when $N = 0$: $v^2 = gr\cos\theta$.
+
+By energy from the top: $\dfrac{1}{2}mv^2 = mgr(1-\cos\theta)$.
+
+$gr\cos\theta = 2gr(1-\cos\theta) \implies \cos\theta = 2 - 2\cos\theta \implies 3\cos\theta = 2 \implies \cos\theta = 2/3$.
+
+The particle leaves the sphere at $\theta = \arccos(2/3) \approx 48.2°$ from the top.
+
+</details>
+
+---
+
+## 16. Further Advanced Topics
+
+### 16.1 Motion on the inside of a vertical circle
+
+For a particle sliding on the inside of a smooth vertical sphere of radius $r$, the condition for maintaining contact is:
+
+$$v^2 \leq gr\cos\theta$$
+
+where $\theta$ is measured from the downward vertical.
+
+By energy conservation from the top:
+
+$$2gr(1-\cos\theta) \leq gr\cos\theta \implies \cos\theta \geq \frac{2}{3}$$
+
+The particle leaves the surface at $\theta = \arccos(2/3)$.
+
+### 16.2 Banking angle for zero friction
+
+On a banked curve, the frictionless condition is:
+
+$$\tan\alpha = \frac{v^2}{rg}$$
+
+where $\alpha$ is the banking angle. This means for a given speed $v$ and radius $r$, there is an ideal banking angle that requires no friction at all.
+
+### 16.3 Angular impulse and momentum
+
+Angular impulse: $\displaystyle\int_0^T \tau\,dt = \Delta L = I(\omega_2 - \omega_1)$.
+
+This is analogous to the linear impulse-momentum theorem and is useful for impact problems involving rotation.
+
+### 16.4 Non-uniform circular motion as a 2D problem
+
+When angular acceleration is present, the equations of motion in polar coordinates are:
+
+Radial: $m(\ddot{r} - r\dot{\theta}^2) = F_r$
+
+Tangential: $m(r\ddot{\theta} + 2\dot{r}\dot{\theta}) = F_\theta$
+
+For circular motion ($r = \text{const}$): $\dot{r} = \ddot{r} = 0$, giving:
+
+$-mr\dot{\theta}^2 = F_r$ (centripetal) and $mr\ddot{\theta} = F_\theta$ (tangential).
+
+---
+
+## 17. Further Exam-Style Questions
+
+### Question 15
+
+A particle of mass $m$ moves in a circle of radius $r$ with angular acceleration $\ddot{\theta} = \alpha$ (constant). Find the tangential force and the radial force as functions of time.
+
+<details>
+<summary>Solution</summary>
+
+$\dot{\theta} = \alpha t + \omega_0$.
+
+Tangential: $F_\theta = mr\ddot{\theta} = \boxed{mr\alpha}$.
+
+Radial: $F_r = -mr\dot{\theta}^2 = -mr(\alpha t + \omega_0)^2$.
+
+The radial force increases quadratically with time as the speed increases.
+
+</details>
+
+### Question 16
+
+**Prove that** the period of a simple pendulum (small oscillations) is $T = 2\pi\sqrt{l/g}$.
+
+<details>
+<summary>Solution</summary>
+
+For small $\theta$: $\sin\theta \approx \theta$. The restoring torque is $-mgl\theta$.
+
+$ml^2\ddot{\theta} = -mgl\theta \implies \ddot{\theta} + \dfrac{g}{l}\theta = 0$.
+
+This is SHM with $\omega^2 = g/l$. Period: $T = \dfrac{2\pi}{\omega} = \boxed{2\pi\sqrt{l/g}}$. $\blacksquare$
+
+</details>

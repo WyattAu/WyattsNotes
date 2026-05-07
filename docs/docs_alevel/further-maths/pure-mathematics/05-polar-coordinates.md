@@ -527,10 +527,559 @@ $= \dfrac{1}{2}\left[2\pi - 3\sqrt{3}\right] = \pi - \dfrac{3\sqrt{3}}{2}$.
 
 </details>
 
-:::
+---
 
-:::
+## 7. Advanced Worked Examples
 
-:::
+### Example 7.1: Area between two curves with careful intersection analysis
 
-:::
+**Problem.** Find the area of the region that lies inside both $r = 1 + \cos\theta$ and $r = 3\cos\theta$.
+
+**Solution.** Setting $1 + \cos\theta = 3\cos\theta$:
+
+$$1 = 2\cos\theta \implies \theta = \pm\frac{\pi}{3}$$
+
+Both curves are symmetric about the initial line, so we compute from $0$ to $\pi/3$ and double.
+
+For $0 \leq \theta \leq \pi/3$: $3\cos\theta \geq 1 + \cos\theta$ (since $2\cos\theta \geq 1$), so $r_{\text{outer}} = 3\cos\theta$ and $r_{\text{inner}} = 1 + \cos\theta$.
+
+$$A = 2\cdot\frac{1}{2}\int_0^{\pi/3}\bigl[9\cos^2\theta - (1+\cos\theta)^2\bigr]\,d\theta = \int_0^{\pi/3}\bigl[9\cos^2\theta - 1 - 2\cos\theta - \cos^2\theta\bigr]\,d\theta$$
+
+$$= \int_0^{\pi/3}\bigl[8\cos^2\theta - 2\cos\theta - 1\bigr]\,d\theta = \int_0^{\pi/3}\bigl[4(1+\cos 2\theta) - 2\cos\theta - 1\bigr]\,d\theta$$
+
+$$= \int_0^{\pi/3}(3 + 4\cos 2\theta - 2\cos\theta)\,d\theta = \left[3\theta + 2\sin 2\theta - 2\sin\theta\right]_0^{\pi/3}$$
+
+$$= \pi + 2\cdot\frac{\sqrt{3}}{2} - 2\cdot\frac{\sqrt{3}}{2} = \pi$$
+
+### Example 7.2: Converting Cartesian to polar and sketching
+
+**Problem.** Convert $x^2 + y^2 = 2y$ to polar form and sketch the curve.
+
+**Solution.** Substituting $x = r\cos\theta$, $y = r\sin\theta$, $r^2 = x^2 + y^2$:
+
+$$r^2 = 2r\sin\theta \implies r = 2\sin\theta \quad (r \neq 0)$$
+
+This is a circle with centre $(0, 1)$ and radius $1$ (since $r = 2a\sin\theta$ with $a = 1$).
+
+The curve passes through the pole at $\theta = 0$ and $\theta = \pi$, and has maximum $r = 2$ at $\theta = \pi/2$.
+
+### Example 7.3: Finding where tangents are vertical or horizontal
+
+**Problem.** For the cardioid $r = 2(1 - \cos\theta)$, find all points where the tangent is horizontal.
+
+**Solution.** $r = 2(1 - \cos\theta)$, $\dfrac{dr}{d\theta} = 2\sin\theta$.
+
+Horizontal tangents occur when $\dfrac{dy}{d\theta} = 0$:
+
+$$\frac{dr}{d\theta}\sin\theta + r\cos\theta = 0 \implies 2\sin^2\theta + 2(1 - \cos\theta)\cos\theta = 0$$
+
+$$2\sin^2\theta + 2\cos\theta - 2\cos^2\theta = 0 \implies 2(1 - \cos^2\theta) + 2\cos\theta - 2\cos^2\theta = 0$$
+
+$$2 - 2\cos^2\theta + 2\cos\theta - 2\cos^2\theta = 0 \implies 2 - 4\cos^2\theta + 2\cos\theta = 0$$
+
+$$2\cos^2\theta - \cos\theta - 1 = 0 \implies (2\cos\theta + 1)(\cos\theta - 1) = 0$$
+
+$\cos\theta = -1/2 \implies \theta = 2\pi/3$ or $\theta = 4\pi/3$.
+$\cos\theta = 1 \implies \theta = 0$.
+
+At $\theta = 2\pi/3$: $r = 2(1 + 1/2) = 3$. Point: $(-3/2, 3\sqrt{3}/2)$.
+At $\theta = 4\pi/3$: $r = 2(1 + 1/2) = 3$. Point: $(-3/2, -3\sqrt{3}/2)$.
+At $\theta = 0$: $r = 0$ (the cusp -- not a smooth horizontal tangent).
+
+### Example 7.4: Volume of revolution in polar coordinates
+
+**Problem.** The region enclosed by $r = 1 + \cos\theta$ is rotated about the initial line. Find the volume of revolution.
+
+**Solution.** Using the parametric volume formula with $y = r\sin\theta = (1+\cos\theta)\sin\theta$ and $dx = \dfrac{dx}{d\theta}\,d\theta$:
+
+$x = r\cos\theta = (1+\cos\theta)\cos\theta$, $\dfrac{dx}{d\theta} = -\sin\theta - 2\cos\theta\sin\theta = -\sin\theta(1 + 2\cos\theta)$.
+
+By symmetry, integrate from $0$ to $\pi$ and double:
+
+$$V = 2\pi\int_0^{\pi} y^2\,\frac{dx}{d\theta}\,d\theta = 2\pi\int_0^{\pi}(1+\cos\theta)^2\sin^2\theta\cdot[-\sin\theta(1+2\cos\theta)]\,d\theta$$
+
+Let $u = \cos\theta$, $du = -\sin\theta\,d\theta$. When $\theta = 0$: $u = 1$. When $\theta = \pi$: $u = -1$.
+
+$$V = 2\pi\int_{-1}^{1}(1+u)^2(1-u^2)(1+2u)\,du$$
+
+Expanding $(1+u)^2(1-u^2)(1+2u) = (1+2u+u^2)(1-u^2)(1+2u)$.
+
+Note: $(1+u)^2(1-u^2) = (1+u)^2(1-u)(1+u) = (1+u)^3(1-u)$.
+
+So the integrand is $(1+u)^4(1-u)$.
+
+Let $v = 1+u$:
+
+$$V = 2\pi\int_0^2 v^4(2-v)\,dv = 2\pi\int_0^2(2v^4 - v^5)\,dv = 2\pi\left[\frac{2v^5}{5} - \frac{v^6}{6}\right]_0^2$$
+
+$$= 2\pi\left(\frac{64}{5} - \frac{64}{6}\right) = 2\pi\cdot\frac{64(6-5)}{30} = \frac{128\pi}{15}$$
+
+---
+
+## 8. Connections to Other Topics
+
+### 8.1 Polar coordinates and complex numbers
+
+The polar form of a complex number $z = re^{i\theta}$ is the same as polar coordinates $(r, \theta)$. Multiplication of complex numbers corresponds to combining polar coordinates: $r_1 e^{i\theta_1} \cdot r_2 e^{i\theta_2} = r_1 r_2 e^{i(\theta_1+\theta_2)}$. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+
+### 8.2 Polar area and further calculus
+
+The polar area formula $\frac{1}{2}\int r^2\,d\theta$ is a direct application of integration techniques. Setting up these integrals requires care with limits. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+
+### 8.3 Polar curves and parametric differentiation
+
+The gradient formula for polar curves is derived from parametric differentiation. The expressions for $dx/d\theta$ and $dy/d\theta$ use the product rule. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+
+---
+
+## 9. Additional Exam-Style Questions
+
+### Question 11
+
+A curve has polar equation $r = a(1 + \cos\theta)$ where $a > 0$.
+
+**(a)** Find the area enclosed by the curve.
+
+**(b)** Find the equation of the tangent at $\theta = \pi/2$ in Cartesian form.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** By symmetry:
+
+$$A = 2\cdot\frac{1}{2}\int_0^{\pi}a^2(1+\cos\theta)^2\,d\theta = a^2\int_0^{\pi}\left(\frac{3}{2}+2\cos\theta+\frac{\cos 2\theta}{2}\right)d\theta = \frac{3\pi a^2}{2}$$
+
+**(b)** At $\theta = \pi/2$: $r = a$, point $(0, a)$.
+
+$dr/d\theta = -a\sin\theta$, so $dr/d\theta|_{\pi/2} = -a$.
+
+$$\frac{dy}{dx} = \frac{(-a)(1) + a(0)}{(-a)(0) - a(1)} = \frac{-a}{-a} = 1$$
+
+Tangent: $y - a = 1(x - 0)$, i.e., $y = x + a$.
+
+</details>
+
+### Question 12
+
+Find the area of the finite region bounded by the curve $r = 2 + \cos\theta$ and the lines $\theta = 0$ and $\theta = \pi$.
+
+<details>
+<summary>Solution</summary>
+
+$$A = \frac{1}{2}\int_0^{\pi}(2+\cos\theta)^2\,d\theta = \frac{1}{2}\int_0^{\pi}(4 + 4\cos\theta + \cos^2\theta)\,d\theta$$
+
+$$= \frac{1}{2}\int_0^{\pi}\left(\frac{9}{2} + 4\cos\theta + \frac{\cos 2\theta}{2}\right)d\theta = \frac{1}{2}\left[\frac{9\theta}{2} + 4\sin\theta + \frac{\sin 2\theta}{4}\right]_0^{\pi} = \frac{9\pi}{4}$$
+
+</details>
+
+### Question 13
+
+**Prove that** the polar curve $r = \dfrac{a}{\cos\theta}$ is a vertical line, and state its Cartesian equation.
+
+<details>
+<summary>Solution</summary>
+
+$r = \dfrac{a}{\cos\theta} \implies r\cos\theta = a \implies x = a$.
+
+This is the vertical line $x = a$. $\blacksquare$
+
+</details>
+
+### Question 14
+
+The curve $C$ has polar equation $r = 4\sin 2\theta$ for $0 \leq \theta \leq \pi/2$.
+
+**(a)** Find the area of one petal.
+
+**(b)** Find the angle at which the tangent to $C$ is parallel to the initial line.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** One petal of $r = 4\sin 2\theta$ is traced from $\theta = 0$ to $\theta = \pi/2$:
+
+$$A = \frac{1}{2}\int_0^{\pi/2}16\sin^2 2\theta\,d\theta = 8\int_0^{\pi/2}\frac{1-\cos 4\theta}{2}\,d\theta = 4\left[\theta - \frac{\sin 4\theta}{4}\right]_0^{\pi/2} = 2\pi$$
+
+**(b)** Tangent parallel to the initial line means $dy/d\theta = 0$:
+
+$r = 4\sin 2\theta$, $dr/d\theta = 8\cos 2\theta$.
+
+$\dfrac{dy}{d\theta} = 8\cos 2\theta\sin\theta + 4\sin 2\theta\cos\theta = 8\cos 2\theta\sin\theta + 8\sin\theta\cos^2\theta$
+
+$= 8\sin\theta(\cos 2\theta + \cos^2\theta) = 8\sin\theta(2\cos^2\theta - 1 + \cos^2\theta) = 8\sin\theta(3\cos^2\theta - 1)$
+
+$= 0$ when $\sin\theta = 0$ (i.e., $\theta = 0$, where $r = 0$) or $\cos^2\theta = 1/3$, i.e., $\cos\theta = \pm 1/\sqrt{3}$.
+
+For $0 \leq \theta \leq \pi/2$: $\theta = \arccos(1/\sqrt{3})$.
+
+</details>
+
+### Question 15
+
+Find the maximum distance from the origin to any point on the curve $r = 2 + 3\sin\theta$.
+
+<details>
+<summary>Solution</summary>
+
+The distance from the origin is $|r|$. Since $2 + 3\sin\theta \geq 2 - 3 = -1$, the maximum of $|r|$ could occur at the maximum of $r$ or the minimum of $r$ (if negative).
+
+$dr/d\theta = 3\cos\theta = 0 \implies \theta = \pi/2$ or $\theta = 3\pi/2$.
+
+At $\theta = \pi/2$: $r = 5$ (maximum).
+At $\theta = 3\pi/2$: $r = -1$.
+
+$|r| = 5$ at $\theta = \pi/2$ and $|r| = 1$ at $\theta = 3\pi/2$.
+
+The maximum distance is $\boxed{5}$.
+
+</details>
+
+---
+
+## 8. Advanced Worked Examples
+
+### Example 8.1: Area enclosed by a limacon
+
+**Problem.** Find the area enclosed by the limacon $r = 2 + \cos\theta$.
+
+**Solution.** Since $r = 2 + \cos\theta > 0$ for all $\theta$, the curve is a single loop.
+
+$$A = \frac{1}{2}\int_0^{2\pi} (2+\cos\theta)^2\,d\theta = \frac{1}{2}\int_0^{2\pi} (4 + 4\cos\theta + \cos^2\theta)\,d\theta$$
+
+$$= \frac{1}{2}\int_0^{2\pi} \!\left(4 + 4\cos\theta + \frac{1+\cos 2\theta}{2}\right)d\theta = \frac{1}{2}\int_0^{2\pi} \!\left(\frac{9}{2} + 4\cos\theta + \frac{\cos 2\theta}{2}\right)d\theta$$
+
+$$= \frac{1}{2}\left[\frac{9\theta}{2} + 4\sin\theta + \frac{\sin 2\theta}{4}\right]_0^{2\pi} = \frac{1}{2} \cdot 9\pi = \boxed{\frac{9\pi}{2}}$$
+
+### Example 8.2: Tangents to a polar curve
+
+**Problem.** Find the angle $\psi$ between the tangent and the radius vector for $r = a(1+\cos\theta)$ at $\theta = \pi/2$.
+
+**Solution.** $\tan\psi = \dfrac{r}{dr/d\theta}$.
+
+$dr/d\theta = -a\sin\theta$. At $\theta = \pi/2$: $r = a$, $dr/d\theta = -a$.
+
+$\tan\psi = \dfrac{a}{-a} = -1 \implies \psi = \dfrac{3\pi}{4}$ (or $135°$).
+
+The tangent makes an angle of $135°$ with the outward radius vector.
+
+### Example 8.3: Cartesian equation of a spiral
+
+**Problem.** Convert the spiral $r = e^{2\theta}$ to Cartesian form.
+
+**Solution.** $r = e^{2\theta} \implies \ln r = 2\theta \implies \theta = \dfrac{1}{2}\ln r$.
+
+Since $\theta = \arctan(y/x)$ and $r = \sqrt{x^2+y^2}$:
+
+$$\arctan\!\left(\frac{y}{x}\right) = \frac{1}{2}\ln(x^2+y^2)$$
+
+$$\frac{y}{x} = \exp\!\left(\frac{1}{2}\ln(x^2+y^2)\right) = \sqrt{x^2+y^2}$$
+
+$$\frac{y^2}{x^2} = x^2 + y^2 \implies y^2 = x^2(x^2+y^2)$$
+
+### Example 8.4: Area between two polar curves
+
+**Problem.** Find the area inside $r = 3\cos\theta$ and outside $r = 1 + \cos\theta$.
+
+**Solution.** First find intersection points: $3\cos\theta = 1 + \cos\theta \implies 2\cos\theta = 1 \implies \theta = \pm\pi/3$.
+
+$$A = \frac{1}{2}\int_{-\pi/3}^{\pi/3} \!\left[(3\cos\theta)^2 - (1+\cos\theta)^2\right]\,d\theta$$
+
+$$= \frac{1}{2}\int_{-\pi/3}^{\pi/3} (9\cos^2\theta - 1 - 2\cos\theta - \cos^2\theta)\,d\theta = \frac{1}{2}\int_{-\pi/3}^{\pi/3} (8\cos^2\theta - 2\cos\theta - 1)\,d\theta$$
+
+$$= \frac{1}{2}\int_{-\pi/3}^{\pi/3} \!\left(4 + 4\cos 2\theta - 2\cos\theta - 1\right)d\theta = \frac{1}{2}\int_{-\pi/3}^{\pi/3} (3 + 4\cos 2\theta - 2\cos\theta)\,d\theta$$
+
+$$= \frac{1}{2}\left[3\theta + 2\sin 2\theta - 2\sin\theta\right]_{-\pi/3}^{\pi/3}$$
+
+$$= \frac{1}{2}\left[\pi + 2\sin\frac{2\pi}{3} - 2\sin\frac{\pi}{3} - \left(-\pi - 2\sin\frac{2\pi}{3} + 2\sin\frac{\pi}{3}\right)\right]$$
+
+$$= \frac{1}{2}\left[2\pi + 2\sqrt{3} - \sqrt{3} + 2\sqrt{3} - \sqrt{3}\right] = \frac{1}{2}(2\pi + 2\sqrt{3}) = \boxed{\pi + \sqrt{3}}$$
+
+### Example 8.5: Converting a parametric curve to polar
+
+**Problem.** The curve $x = \dfrac{2t}{1+t^2}$, $y = \dfrac{1-t^2}{1+t^2}$ is given in parametric form. Show it is a circle in polar form.
+
+**Solution.** $x^2 + y^2 = \dfrac{4t^2 + (1-t^2)^2}{(1+t^2)^2} = \dfrac{4t^2 + 1 - 2t^2 + t^4}{(1+t^2)^2} = \dfrac{(1+t^2)^2}{(1+t^2)^2} = 1$.
+
+So $r = 1$ for all $t$. This is the unit circle.
+
+$\cos\theta = \dfrac{x}{r} = \dfrac{2t}{1+t^2}$, $\sin\theta = \dfrac{1-t^2}{1+t^2}$. Using $t = \tan(\theta/2)$:
+
+$\cos\theta = \cos\theta$ and $\sin\theta = \sin\theta$. Consistent.
+
+### Example 8.6: Arc length of a cardioid
+
+**Problem.** Find the total arc length of the cardioid $r = a(1 + \cos\theta)$.
+
+**Solution.** $s = \displaystyle\int_0^{2\pi} \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2}\,d\theta$.
+
+$r = a(1+\cos\theta)$, $dr/d\theta = -a\sin\theta$.
+
+$r^2 + (dr/d\theta)^2 = a^2(1+\cos\theta)^2 + a^2\sin^2\theta = a^2(1+2\cos\theta+\cos^2\theta+\sin^2\theta) = 2a^2(1+\cos\theta) = 4a^2\cos^2(\theta/2)$.
+
+$$s = \int_0^{2\pi} 2a|\cos(\theta/2)|\,d\theta$$
+
+For $0 \leq \theta \leq 2\pi$: $\cos(\theta/2) \geq 0$ when $0 \leq \theta \leq \pi$ and $\leq 0$ when $\pi \leq \theta \leq 2\pi$.
+
+$$s = 2a\!\left[\int_0^{\pi} \cos(\theta/2)\,d\theta + \int_{\pi}^{2\pi} (-\cos(\theta/2))\,d\theta\right] = 2a[2+2] = \boxed{8a}$$
+
+---
+
+## 9. Common Pitfalls
+
+| Pitfall | Correct Approach |
+|---|---|
+| Forgetting the $\frac{1}{2}$ in the polar area formula | $A = \dfrac{1}{2}\displaystyle\int r^2\,d\theta$, not $\int r^2\,d\theta$ |
+| Not checking if $r$ changes sign when finding enclosed areas | If $r < 0$, the curve is on the opposite side; split the integral at sign changes |
+| Confusing the angle $\psi$ (tangent-radius angle) with $\theta$ | $\tan\psi = r / (dr/d\theta)$; the tangent to the curve makes angle $\theta + \psi$ with the initial line |
+| Using the wrong limits for symmetric curves | Exploit symmetry: if the curve is symmetric about $\theta = 0$, integrate from $0$ to $\pi$ and double |
+
+---
+
+## 10. Additional Exam-Style Questions
+
+### Question 8
+
+Find the area of the region enclosed by one loop of the curve $r^2 = 4\cos 2\theta$.
+
+<details>
+<summary>Solution</summary>
+
+This is a lemniscate. One loop is traced for $-\pi/4 \leq \theta \leq \pi/4$.
+
+$$A = \frac{1}{2}\int_{-\pi/4}^{\pi/4} 4\cos 2\theta\,d\theta = 2\!\left[\frac{\sin 2\theta}{2}\right]_{-\pi/4}^{\pi/4} = 2(1-(-1)) = 4 \text{... wait}$$
+
+$A = \int_{-\pi/4}^{\pi/4} 2\cos 2\theta\,d\theta = [\sin 2\theta]_{-\pi/4}^{\pi/4} = 1 - (-1) = 2$. Wait, using the formula:
+
+$A = \dfrac{1}{2}\displaystyle\int r^2\,d\theta = \dfrac{1}{2}\int_{-\pi/4}^{\pi/4} 4\cos 2\theta\,d\theta = 2[\sin 2\theta]_{-\pi/4}^{\pi/4} = 2 \times 2 = \boxed{4}$.
+
+</details>
+
+### Question 9
+
+**Prove that** the tangent to $r = a\sec\theta$ is perpendicular to the radius vector at every point.
+
+<details>
+<summary>Solution</summary>
+
+$r = a\sec\theta \implies dr/d\theta = a\sec\theta\tan\theta$.
+
+$\tan\psi = \dfrac{r}{dr/d\theta} = \dfrac{a\sec\theta}{a\sec\theta\tan\theta} = \cot\theta$.
+
+So $\psi = \pi/2 - \theta$. The tangent makes angle $\theta + \psi = \pi/2$ with the initial line, i.e., perpendicular to the radius vector. $\blacksquare$
+
+</details>
+
+### Question 10
+
+Find the Cartesian equation of the curve $r = 2a\cos\theta + 2b\sin\theta$ and identify it.
+
+<details>
+<summary>Solution</summary>
+
+$r = 2a\cos\theta + 2b\sin\theta \implies r^2 = 2ar\cos\theta + 2br\sin\theta$.
+
+$$x^2 + y^2 = 2ax + 2by \implies (x-a)^2 + (y-b)^2 = a^2 + b^2$$
+
+This is a circle with centre $(a, b)$ and radius $\sqrt{a^2+b^2}$.
+
+</details>
+
+---
+
+## 11. Connections to Other Topics
+
+### 11.1 Polar coordinates and complex numbers
+
+The polar form $z = r(\cos\theta+i\sin\theta)$ is identical to polar coordinates $(r,\theta)$. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+
+### 11.2 Polar curves and calculus
+
+Finding tangents, areas, and arc lengths in polar coordinates requires differentiation and integration. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+
+### 11.3 Polar coordinates and parametric equations
+
+Polar curves are a special case of parametric equations with $x = r(\theta)\cos\theta$ and $y = r(\theta)\sin\theta$.
+
+---
+
+## 12. Key Results Summary
+
+| Quantity | Formula |
+|---|---|
+| Cartesian from polar | $x = r\cos\theta$, $y = r\sin\theta$ |
+| Polar from Cartesian | $r = \sqrt{x^2+y^2}$, $\theta = \arctan(y/x)$ |
+| Polar area | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$ |
+| Polar arc length | $s = \displaystyle\int_\alpha^\beta \sqrt{r^2+\left(\dfrac{dr}{d\theta}\right)^2}\,d\theta$ |
+| Tangent-radius angle | $\tan\psi = \dfrac{r}{dr/d\theta}$ |
+| Tangent to $x$-axis | $\dfrac{dy}{dx} = \dfrac{r'\sin\theta + r\cos\theta}{r'\cos\theta - r\sin\theta}$ |
+
+---
+
+## 13. Further Exam-Style Questions
+
+### Question 11
+
+A curve has polar equation $r = a(1+\cos\theta)$ (cardioid). Find the area enclosed by the curve.
+
+<details>
+<summary>Solution</summary>
+
+Since $r > 0$ for all $\theta$, integrate from $0$ to $2\pi$:
+
+$A = \dfrac{1}{2}\displaystyle\int_0^{2\pi} a^2(1+\cos\theta)^2\,d\theta = \dfrac{a^2}{2}\displaystyle\int_0^{2\pi} \!\left(\dfrac{3}{2}+2\cos\theta+\dfrac{\cos 2\theta}{2}\right)d\theta$
+
+$= \dfrac{a^2}{2}\!\left[\dfrac{3\theta}{2}+2\sin\theta+\dfrac{\sin 2\theta}{4}\right]_0^{2\pi} = \dfrac{a^2}{2}\cdot 3\pi = \boxed{\dfrac{3\pi a^2}{2}}$
+
+</details>
+
+### Question 12
+
+**Prove that** the curve $r = 2a\cos\theta$ is a circle of radius $a$ centred at $(a, 0)$.
+
+<details>
+<summary>Solution</summary>
+
+$r = 2a\cos\theta \implies r^2 = 2ar\cos\theta \implies x^2+y^2 = 2ax \implies (x-a)^2+y^2 = a^2$.
+
+This is a circle with centre $(a,0)$ and radius $a$. $\blacksquare$
+
+</details>
+
+---
+
+## 14. Advanced Topics
+
+### 14.1 The pedal equation
+
+The pedal equation of a curve gives the distance $p$ from the origin to the tangent as a function of $r$:
+
+$$p = r\sin\psi = \frac{r^2}{\sqrt{r^2+(dr/d\theta)^2}}$$
+
+### 14.2 The $p-r$ equation
+
+For a conic with focus at the origin and directrix at distance $d$: $r = \dfrac{ed}{1+e\cos\theta}$ where $e$ is the eccentricity.
+
+- $e < 1$: ellipse
+- $e = 1$: parabola
+- $e > 1$: hyperbola
+
+### 14.3 Rose curves
+
+Curves of the form $r = a\cos(n\theta)$ or $r = a\sin(n\theta)$ produce rose curves.
+
+- If $n$ is odd: $n$ petals
+- If $n$ is even: $2n$ petals
+
+### 14.4 Limacons
+
+$r = a + b\cos\theta$:
+- $a > b$: dimpled limacon (no inner loop)
+- $a = b$: cardioid
+- $a < b$: limacon with inner loop
+
+---
+
+## 15. Further Exam-Style Questions
+
+### Question 13
+
+Sketch the curve $r = 1 + 2\cos\theta$ and find the area of the inner loop.
+
+<details>
+<summary>Solution</summary>
+
+Since $1 + 2\cos\theta = 0$ when $\cos\theta = -1/2$, i.e., $\theta = 2\pi/3$ and $\theta = 4\pi/3$, the inner loop exists between these angles.
+
+Area of inner loop: $A = \dfrac{1}{2}\displaystyle\int_{2\pi/3}^{4\pi/3} (1+2\cos\theta)^2\,d\theta$.
+
+$= \dfrac{1}{2}\displaystyle\int_{2\pi/3}^{4\pi/3} (1+4\cos\theta+4\cos^2\theta)\,d\theta = \dfrac{1}{2}\displaystyle\int_{2\pi/3}^{4\pi/3} (3+4\cos\theta+2\cos 2\theta)\,d\theta$
+
+$= \dfrac{1}{2}\!\left[3\theta+4\sin\theta+\sin 2\theta\right]_{2\pi/3}^{4\pi/3}$
+
+$= \dfrac{1}{2}\!\left[(4\pi-2\pi)+4\!\left(-\dfrac{\sqrt{3}}{2}-\dfrac{\sqrt{3}}{2}\right)+\!\left(\dfrac{\sqrt{3}}{2}-\dfrac{\sqrt{3}}{2}\right)\right] = \dfrac{1}{2}(2\pi-4\sqrt{3}) = \boxed{\pi-2\sqrt{3}}$
+
+</details>
+
+### Question 14
+
+**Prove that** the area enclosed by one petal of $r = a\cos(3\theta)$ is $\dfrac{\pi a^2}{12}$.
+
+<details>
+<summary>Solution</summary>
+
+One petal is traced for $-\pi/6 \leq \theta \leq \pi/6$.
+
+$A = \dfrac{1}{2}\displaystyle\int_{-\pi/6}^{\pi/6} a^2\cos^2(3\theta)\,d\theta = \dfrac{a^2}{2}\displaystyle\int_{-\pi/6}^{\pi/6} \frac{1+\cos 6\theta}{2}\,d\theta$
+
+$= \dfrac{a^2}{4}\!\left[\theta+\dfrac{\sin 6\theta}{6}\right]_{-\pi/6}^{\pi/6} = \dfrac{a^2}{4}\!\left(\dfrac{\pi}{3}+0\right) = \boxed{\dfrac{\pi a^2}{12}}$. $\blacksquare$
+
+</details>
+
+---
+
+## 16. Further Advanced Topics
+
+### 16.1 Polar form of conics
+
+Using the focus-directrix definition, all conics with a focus at the origin have polar equation:
+
+$$r = \frac{ed}{1+e\cos\theta}$$
+
+where $e$ is the eccentricity and $d$ is the distance from the focus to the directrix.
+
+- $e = 0$: circle ($r = d$)
+- $0 < e < 1$: ellipse
+- $e = 1$: parabola
+- $e > 1$: hyperbola
+
+### 16.2 Spirals
+
+- **Archimedean spiral:** $r = a\theta$ — equally spaced turns
+- **Logarithmic spiral:** $r = ae^{b\theta}$ — self-similar
+- **Hyperbolic spiral:** $r = a/\theta$
+
+The logarithmic spiral appears in nature (nautilus shells, hurricanes, galaxies).
+
+### 16.3 Tangents at the pole
+
+If $r = 0$ at $\theta = \theta_0$, the tangent at the pole is the line $\theta = \theta_0 + \dfrac{\pi}{2}$ (perpendicular to the initial line).
+
+### 16.4 Converting parametric curves to polar
+
+Many parametric curves can be simplified in polar form. The cardioid, limacon, and rose curves are most naturally expressed in polar coordinates.
+
+---
+
+## 17. Further Exam-Style Questions
+
+### Question 15
+
+Find the area inside $r = 1 + \sin\theta$ and outside $r = 1$.
+
+<details>
+<summary>Solution</summary>
+
+$1 + \sin\theta = 1$ when $\sin\theta = 0$, i.e., $\theta = 0, \pi$.
+
+The curve $r = 1 + \sin\theta$ is a cardioid. The circle $r = 1$ is entirely inside the cardioid.
+
+The required area is:
+
+$A = \dfrac{1}{2}\displaystyle\int_0^{2\pi} [(1+\sin\theta)^2 - 1]\,d\theta = \dfrac{1}{2}\displaystyle\int_0^{2\pi} (2\sin\theta + \sin^2\theta)\,d\theta$
+
+$= \dfrac{1}{2}\displaystyle\int_0^{2\pi} \!\left(2\sin\theta + \frac{1-\cos 2\theta}{2}\right)d\theta = \dfrac{1}{2}\!\left[-2\cos\theta + \frac{\theta}{2} - \frac{\sin 2\theta}{4}\right]_0^{2\pi} = \dfrac{1}{2}\cdot\dfrac{\pi}{2} = \boxed{\dfrac{\pi}{4}}$.
+
+</details>
+
+### Question 16
+
+**Prove that** the spiral $r = e^{a\theta}$ intersects each radial line $\theta = \theta_0$ at exactly one point.
+
+<details>
+<summary>Solution</summary>
+
+At $\theta = \theta_0$: $r = e^{a\theta_0}$, which is unique (single-valued function).
+
+For a given $\theta_0$, there is exactly one value of $r$, so the spiral intersects each radial line exactly once. $\blacksquare$
+
+</details>

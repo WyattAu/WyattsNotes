@@ -770,12 +770,350 @@ then B," you must undo B first, then undo A.
 
 :::
 
-:::
+---
+
+## 8. Advanced Worked Examples
+
+### Example 8.1: Diagonalisation of a 3×3 matrix
+
+**Problem.** Diagonalise $\mathbf{A} = \begin{pmatrix}2&1&0\\0&2&0\\0&1&3\end{pmatrix}$.
+
+**Solution.** Find eigenvalues: $\det(\mathbf{A}-\lambda\mathbf{I}) = 0$.
+
+$$\det\begin{pmatrix}2-\lambda&1&0\\0&2-\lambda&0\\0&1&3-\lambda\end{pmatrix} = (2-\lambda)^2(3-\lambda) = 0$$
+
+$\lambda_1 = 2$ (repeated), $\lambda_2 = 3$.
+
+For $\lambda = 2$: $(\mathbf{A}-2\mathbf{I})\mathbf{v} = \mathbf{0}$ gives $\begin{pmatrix}0&1&0\\0&0&0\\0&1&1\end{pmatrix}\mathbf{v} = \mathbf{0}$, so $v_2 = 0$ and $v_3 = 0$, with $v_1$ free. Only one eigenvector: $(1,0,0)$. Since the geometric multiplicity (1) is less than the algebraic multiplicity (2), $\mathbf{A}$ is **not diagonalisable**.
+
+### Example 8.2: Finding $\mathbf{A}^n$ using Cayley--Hamilton
+
+**Problem.** For $\mathbf{A} = \begin{pmatrix}1&2\\0&3\end{pmatrix}$, find $\mathbf{A}^5$.
+
+**Solution.** By Cayley--Hamilton, $\mathbf{A}^2 - 4\mathbf{A} + 3\mathbf{I} = \mathbf{O}$, so $\mathbf{A}^2 = 4\mathbf{A} - 3\mathbf{I}$.
+
+$\mathbf{A}^3 = \mathbf{A}(4\mathbf{A}-3\mathbf{I}) = 4(4\mathbf{A}-3\mathbf{I}) - 3\mathbf{A} = 13\mathbf{A} - 12\mathbf{I}$.
+
+$\mathbf{A}^4 = 13(4\mathbf{A}-3\mathbf{I}) - 12\mathbf{A} = 40\mathbf{A} - 39\mathbf{I}$.
+
+$\mathbf{A}^5 = 40(4\mathbf{A}-3\mathbf{I}) - 39\mathbf{A} = 121\mathbf{A} - 120\mathbf{I}$.
+
+$= 121\begin{pmatrix}1&2\\0&3\end{pmatrix} - 120\begin{pmatrix}1&0\\0&1\end{pmatrix} = \begin{pmatrix}121&242\\0&363\end{pmatrix} - \begin{pmatrix}120&0\\0&120\end{pmatrix} = \boxed{\begin{pmatrix}1&242\\0&243\end{pmatrix}}$
+
+### Example 8.3: Invariant points and invariant lines
+
+**Problem.** $\mathbf{A} = \begin{pmatrix}3&1\\0&2\end{pmatrix}$. Find all invariant points and invariant lines of the transformation $\mathbf{x} \mapsto \mathbf{Ax}$.
+
+**Solution.** **Invariant points:** $\mathbf{Ax} = \mathbf{x} \implies (\mathbf{A}-\mathbf{I})\mathbf{x} = \mathbf{0}$.
+
+$$\begin{pmatrix}2&1\\0&1\end{pmatrix}\mathbf{x} = \mathbf{0} \implies x_2 = 0, \; 2x_1 = 0$$
+
+Only the origin $(0,0)$ is an invariant point.
+
+**Invariant lines through the origin:** These are the eigenspaces. Eigenvalues: $(3-\lambda)(2-\lambda) = 0$, so $\lambda = 3$ and $\lambda = 2$.
+
+For $\lambda = 3$: $\begin{pmatrix}0&1\\0&-1\end{pmatrix}\mathbf{v} = \mathbf{0} \implies v_2 = 0$. Line: $y = 0$ (the $x$-axis).
+
+For $\lambda = 2$: $\begin{pmatrix}1&1\\0&0\end{pmatrix}\mathbf{v} = \mathbf{0} \implies v_1 + v_2 = 0$. Line: $y = -x$.
+
+### Example 8.4: Determinant as a scaling factor
+
+**Problem.** The matrix $\mathbf{T} = \begin{pmatrix}2&1\\-1&3\end{pmatrix}$ represents a transformation. A triangle has vertices $(0,0)$, $(1,0)$, $(0,1)$. Find the area of its image.
+
+**Solution.** $\det(\mathbf{T}) = 6 - (-1) = 7$.
+
+Original area $= \dfrac{1}{2}$. Image area $= |\det(\mathbf{T})| \times \text{original area} = 7 \times \dfrac{1}{2} = \boxed{3.5}$.
+
+### Example 8.5: Commutator and non-commuting matrices
+
+**Problem.** For $\mathbf{A} = \begin{pmatrix}0&1\\0&0\end{pmatrix}$ and $\mathbf{B} = \begin{pmatrix}0&0\\1&0\end{pmatrix}$, compute the commutator $[\mathbf{A}, \mathbf{B}] = \mathbf{AB} - \mathbf{BA}$.
+
+**Solution.** $\mathbf{AB} = \begin{pmatrix}0&1\\0&0\end{pmatrix}\begin{pmatrix}0&0\\1&0\end{pmatrix} = \begin{pmatrix}1&0\\0&0\end{pmatrix}$.
+
+$\mathbf{BA} = \begin{pmatrix}0&0\\1&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{pmatrix} = \begin{pmatrix}0&0\\0&1\end{pmatrix}$.
+
+$\boxed{[\mathbf{A},\mathbf{B}] = \begin{pmatrix}1&0\\0&-1\end{pmatrix}}$
+
+Since $[\mathbf{A},\mathbf{B}] \neq \mathbf{O}$, $\mathbf{A}$ and $\mathbf{B}$ do not commute.
+
+### Example 8.6: Matrix representing successive transformations
+
+**Problem.** Transformation $R$ is a reflection in the line $y = x\sqrt{3}$. Transformation $S$ is a rotation by $90°$ anticlockwise about the origin. Find the matrix representing $RS$.
+
+**Solution.** The line $y = x\sqrt{3}$ makes angle $60°$ with the $x$-axis.
+
+$R = \begin{pmatrix}\cos 120°&\sin 120°\\\sin 120°&-\cos 120°\end{pmatrix} = \begin{pmatrix}-\frac{1}{2}&\frac{\sqrt{3}}{2}\\\frac{\sqrt{3}}{2}&\frac{1}{2}\end{pmatrix}$.
+
+$S = \begin{pmatrix}0&-1\\1&0\end{pmatrix}$.
+
+$RS = \begin{pmatrix}-\frac{1}{2}&\frac{\sqrt{3}}{2}\\\frac{\sqrt{3}}{2}&\frac{1}{2}\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix} = \begin{pmatrix}\frac{\sqrt{3}}{2}&\frac{1}{2}\\\frac{1}{2}&-\frac{\sqrt{3}}{2}\end{pmatrix}$.
+
+$\det(RS) = -\dfrac{3}{4} - \dfrac{1}{4} = -1$ and $\text{tr}(RS) = 0$, confirming this is a reflection.
+
+### Example 8.7: Finding the inverse of a 3×3 matrix
+
+**Problem.** Find $\mathbf{A}^{-1}$ where $\mathbf{A} = \begin{pmatrix}1&0&2\\0&1&-1\\1&1&0\end{pmatrix}$.
+
+**Solution.** $\det(\mathbf{A}) = 1(0+1) - 0 + 2(0-1) = 1 - 2 = -1 \neq 0$.
+
+$\mathbf{A}^{-1} = \dfrac{1}{-1}\begin{pmatrix}1&2&-2\\-1&-2&1\\-1&-1&1\end{pmatrix} = \boxed{\begin{pmatrix}-1&-2&2\\1&2&-1\\1&1&-1\end{pmatrix}}$
+
+---
+
+## 9. Common Pitfalls
+
+| Pitfall | Correct Approach |
+|---|---|
+| Assuming all matrices are diagonalisable | Check geometric multiplicity equals algebraic multiplicity for each eigenvalue |
+| Forgetting that $(\mathbf{AB})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1}$ | The order reverses |
+| Computing $\det(\mathbf{A}+\mathbf{B}) = \det(\mathbf{A})+\det(\mathbf{B})$ | In general, $\det(\mathbf{A}+\mathbf{B}) \neq \det(\mathbf{A})+\det(\mathbf{B})$ |
+| Mixing up row and column operations | Column operations change the determinant differently from row operations |
+
+---
+
+## 10. Additional Exam-Style Questions
+
+### Question 8
+
+Find the eigenvalues and eigenvectors of $\mathbf{A} = \begin{pmatrix}4&-1\\2&1\end{pmatrix}$. Hence write down $\mathbf{P}$ and $\mathbf{D}$ such that $\mathbf{P}^{-1}\mathbf{A}\mathbf{P} = \mathbf{D}$.
+
+<details>
+<summary>Solution</summary>
+
+$\det(\mathbf{A}-\lambda\mathbf{I}) = (4-\lambda)(1-\lambda)+2 = \lambda^2-5\lambda+6 = 0$. $\lambda = 2, 3$.
+
+$\lambda = 2$: $\begin{pmatrix}2&-1\\2&-1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies 2v_1-v_2=0 \implies \mathbf{v}=(1,2)$.
+
+$\lambda = 3$: $\begin{pmatrix}1&-1\\2&-2\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1=v_2 \implies \mathbf{v}=(1,1)$.
+
+$\mathbf{P} = \begin{pmatrix}1&1\\2&1\end{pmatrix}$, $\mathbf{D} = \begin{pmatrix}2&0\\0&3\end{pmatrix}$.
+
+</details>
+
+### Question 9
+
+**Prove that** if $\lambda$ is an eigenvalue of $\mathbf{A}$ with eigenvector $\mathbf{v}$, then $\lambda^2$ is an eigenvalue of $\mathbf{A}^2$ with the same eigenvector.
+
+<details>
+<summary>Solution</summary>
+
+$\mathbf{Av} = \lambda\mathbf{v}$.
+
+$\mathbf{A}^2\mathbf{v} = \mathbf{A}(\mathbf{Av}) = \mathbf{A}(\lambda\mathbf{v}) = \lambda(\mathbf{Av}) = \lambda(\lambda\mathbf{v}) = \lambda^2\mathbf{v}$.
+
+Therefore $\lambda^2$ is an eigenvalue of $\mathbf{A}^2$ with eigenvector $\mathbf{v}$. $\blacksquare$
+
+</details>
+
+### Question 10
+
+The transformation represented by $\mathbf{M} = \begin{pmatrix}a&b\\c&d\end{pmatrix}$ maps the unit square to a parallelogram of area 6. Given $a+d = 5$ and $ad-bc = 6$, find the eigenvalues of $\mathbf{M}$.
+
+<details>
+<summary>Solution</summary>
+
+The characteristic equation: $\lambda^2 - (a+d)\lambda + \det(\mathbf{M}) = \lambda^2 - 5\lambda + 6 = 0$.
+
+$(\lambda-2)(\lambda-3) = 0$.
+
+$\boxed{\lambda = 2 \text{ and } \lambda = 3}$
+
+</details>
 
 :::
 
-:::
+---
 
-:::
+## 11. Connections to Other Topics
 
-:::
+### 11.1 Matrices and complex numbers
+
+Complex eigenvalues lead to rotation-scaling transformations. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+
+### 11.2 Matrices and vectors
+
+The cross product can be written as a matrix multiplication. See [Vectors in 3D](/docs/docs_alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+
+### 11.3 Matrices and further algebra
+
+Cayley--Hamilton connects matrices to polynomial algebra. See [Further Algebra](/docs/docs_alevel/further-maths/pure-mathematics/03-further-algebra).
+
+---
+
+## 12. Key Results Summary
+
+| Result | Formula/Condition |
+|---|---|
+| Invertibility | $\mathbf{A}$ is invertible $\iff$ $\det(\mathbf{A}) \neq 0$ |
+| $(\mathbf{AB})^{-1}$ | $\mathbf{B}^{-1}\mathbf{A}^{-1}$ |
+| $(\mathbf{AB})^T$ | $\mathbf{B}^T\mathbf{A}^T$ |
+| $\det(\mathbf{AB})$ | $\det(\mathbf{A})\det(\mathbf{B})$ |
+| Trace of product | $\text{tr}(\mathbf{AB}) = \text{tr}(\mathbf{BA})$ |
+| Cayley--Hamilton | $\mathbf{A}$ satisfies its own characteristic equation |
+| Diagonalisability | All eigenvalues must have geometric multiplicity $=$ algebraic multiplicity |
+| Area scaling | $|\det(\mathbf{T})| \times$ original area $=$ image area |
+
+---
+
+## 13. Further Exam-Style Questions
+
+### Question 11
+
+Find the matrix representing a stretch of scale factor 3 parallel to the $y$-axis followed by a reflection in the $x$-axis.
+
+<details>
+<summary>Solution</summary>
+
+Stretch: $S = \begin{pmatrix}1&0\\0&3\end{pmatrix}$. Reflection: $R = \begin{pmatrix}1&0\\0&-1\end{pmatrix}$.
+
+Combined: $RS = \begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}1&0\\0&3\end{pmatrix} = \begin{pmatrix}1&0\\0&-3\end{pmatrix}$.
+
+$\boxed{\begin{pmatrix}1&0\\0&-3\end{pmatrix}}$
+
+</details>
+
+### Question 12
+
+**Prove that** $\det(\mathbf{A}^T) = \det(\mathbf{A})$ for any square matrix $\mathbf{A}$.
+
+<details>
+<summary>Solution</summary>
+
+The determinant can be computed by cofactor expansion along any row or column. Expanding $\det(\mathbf{A})$ along row $i$ and $\det(\mathbf{A}^T)$ along column $i$ (which is row $i$ of $\mathbf{A}$) gives the same expression, since the cofactors are the same.
+
+Formally: this follows from the permutation definition of the determinant. $\blacksquare$
+
+</details>
+
+---
+
+## 14. Advanced Topics
+
+### 14.1 Eigenvalues and the characteristic polynomial
+
+The characteristic polynomial of $\mathbf{A}$ is $p(\lambda) = \det(\mathbf{A}-\lambda\mathbf{I})$.
+
+Properties:
+- The sum of eigenvalues equals the trace: $\sum \lambda_i = \mathrm{tr}(\mathbf{A})$
+- The product of eigenvalues equals the determinant: $\prod \lambda_i = \det(\mathbf{A})$
+- $\mathbf{A}$ is invertible iff no eigenvalue is zero
+
+### 14.2 Jordan normal form
+
+Not all matrices are diagonalisable. The Jordan normal form is a generalisation where the diagonal matrix $\mathbf{D}$ may have 1s on the superdiagonal (Jordan blocks).
+
+For example, if $\mathbf{A}$ has a repeated eigenvalue $\lambda$ with only one eigenvector:
+
+$$\mathbf{P}^{-1}\mathbf{AP} = \begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}$$
+
+### 14.3 Orthogonal diagonalisation
+
+A real symmetric matrix $\mathbf{A}$ can always be diagonalised by an orthogonal matrix: $\mathbf{A} = \mathbf{Q}\mathbf{D}\mathbf{Q}^T$ where $\mathbf{Q}^T = \mathbf{Q}^{-1}$.
+
+The Spectral Theorem states that $\mathbf{A} = \sum_{i=1}^{n} \lambda_i \mathbf{q}_i\mathbf{q}_i^T$ where $\lambda_i$ are eigenvalues and $\mathbf{q}_i$ are orthonormal eigenvectors.
+
+### 14.4 Matrix norms
+
+The Frobenius norm: $\|\mathbf{A}\|_F = \sqrt{\sum_{i,j} a_{ij}^2} = \sqrt{\mathrm{tr}(\mathbf{A}^T\mathbf{A})}$.
+
+The spectral norm: $\|\mathbf{A}\|_2 = \sigma_{\max}$ (largest singular value).
+
+---
+
+## 15. Further Exam-Style Questions
+
+### Question 14
+
+Find the eigenvalues and eigenvectors of $\mathbf{A} = \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\end{pmatrix}$.
+
+<details>
+<summary>Solution</summary>
+
+$\det(\mathbf{A}-\lambda\mathbf{I}) = (1-\lambda)^3 - 3(1-\lambda) - 2 + 3(1-\lambda) = (1-\lambda)^3 - 3(1-\lambda) + 3(1-\lambda) - 2$.
+
+Wait, let me compute directly. $\det\begin{pmatrix}1-\lambda&1&1\\1&1-\lambda&1\\1&1&1-\lambda\end{pmatrix}$.
+
+$= (1-\lambda)[(1-\lambda)^2-1] - 1[(1-\lambda)-1] + 1[1-(1-\lambda)]$
+
+$= (1-\lambda)[1-2\lambda+\lambda^2-1] + \lambda + \lambda = (1-\lambda)(\lambda^2-2\lambda) + 2\lambda$
+
+$= (1-\lambda)\lambda(\lambda-2) + 2\lambda = \lambda[(1-\lambda)(\lambda-2)+2] = \lambda[\lambda-2-\lambda^2+2\lambda+2] = \lambda[-\lambda^2+3\lambda] = \lambda^2(3-\lambda)$.
+
+Eigenvalues: $\lambda = 0$ (double) and $\lambda = 3$.
+
+$\lambda = 0$: $\begin{pmatrix}1&1&1\\1&1&1\\1&1&1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1+v_2+v_3=0$. Two independent eigenvectors: $(1,-1,0)$ and $(1,0,-1)$.
+
+$\lambda = 3$: $\begin{pmatrix}-2&1&1\\1&-2&1\\1&1&-2\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1=v_2=v_3$. Eigenvector: $(1,1,1)$.
+
+</details>
+
+### Question 15
+
+**Prove that** similar matrices have the same eigenvalues.
+
+<details>
+<summary>Solution</summary>
+
+If $\mathbf{B} = \mathbf{P}^{-1}\mathbf{AP}$, then:
+
+$\det(\mathbf{B}-\lambda\mathbf{I}) = \det(\mathbf{P}^{-1}\mathbf{AP}-\lambda\mathbf{I}) = \det(\mathbf{P}^{-1}(\mathbf{A}-\lambda\mathbf{I})\mathbf{P})$
+
+$= \det(\mathbf{P}^{-1})\det(\mathbf{A}-\lambda\mathbf{I})\det(\mathbf{P}) = \det(\mathbf{A}-\lambda\mathbf{I})$.
+
+Since the characteristic polynomials are identical, the eigenvalues are the same. $\blacksquare$
+
+</details>
+
+---
+
+## 16. Further Advanced Topics
+
+### 16.1 LU decomposition
+
+Any square matrix $\mathbf{A}$ can be decomposed as $\mathbf{A} = \mathbf{L}\mathbf{U}$ where $\mathbf{L}$ is lower triangular and $\mathbf{U}$ is upper triangular. This is used for efficient numerical solution of systems $\mathbf{Ax} = \mathbf{b}$.
+
+### 16.2 The Cayley--Hamilton theorem — applications
+
+Since $\mathbf{A}$ satisfies $p(\mathbf{A}) = \mathbf{O}$ where $p$ is the characteristic polynomial:
+- $\mathbf{A}^{-1}$ can be computed from $\mathbf{A}^n$ terms
+- $\mathbf{A}^n$ for large $n$ can be reduced using the recurrence
+
+### 16.3 Singular Value Decomposition (SVD)
+
+Any $m \times n$ matrix $\mathbf{A}$ can be written as $\mathbf{A} = \mathbf{U}\boldsymbol{\Sigma}\mathbf{V}^T$ where $\mathbf{U}$ and $\mathbf{V}$ are orthogonal and $\boldsymbol{\Sigma}$ is diagonal with non-negative singular values.
+
+### 16.4 Positive definite matrices
+
+A symmetric matrix $\mathbf{A}$ is positive definite if $\mathbf{x}^T\mathbf{A}\mathbf{x} > 0$ for all $\mathbf{x} \neq \mathbf{0}$.
+
+Equivalent conditions: all eigenvalues positive, all leading principal minors positive.
+
+---
+
+## 17. Further Exam-Style Questions
+
+### Question 16
+
+Find $\det(\mathbf{A})$ where $\mathbf{A} = \begin{pmatrix}1&2&3\\4&5&6\\7&8&0\end{pmatrix}$.
+
+<details>
+<summary>Solution</summary>
+
+$\det(\mathbf{A}) = 1(0-48) - 2(0-42) + 3(32-35) = -48 + 84 - 9 = \boxed{27}$.
+
+</details>
+
+### Question 17
+
+**Prove that** the trace of a matrix equals the sum of its eigenvalues (with multiplicity).
+
+<details>
+<summary>Solution</summary>
+
+The characteristic polynomial is $p(\lambda) = (-1)^n[\lambda^n - (\text{tr}\,\mathbf{A})\lambda^{n-1} + \cdots + (-1)^n\det(\mathbf{A})]$.
+
+By Vieta's formulae, the coefficient of $\lambda^{n-1}$ equals $-(\lambda_1 + \lambda_2 + \cdots + \lambda_n)$.
+
+Therefore $\text{tr}\,\mathbf{A} = \lambda_1 + \lambda_2 + \cdots + \lambda_n$. $\blacksquare$
+
+</details>

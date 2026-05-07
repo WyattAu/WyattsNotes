@@ -957,3 +957,1043 @@ mix depends on the economy's specific constraints (e.g., a capital-scarce econom
 from tax cuts; an economy with skill mismatches may benefit more from training).
 
 </details>
+
+## National Income in Depth (HL Extension)
+
+### Real vs. Nominal GDP: Comprehensive Analysis
+
+**Nominal GDP** values output at current market prices. Changes in nominal GDP reflect both changes
+in the quantities of goods and services produced and changes in their prices.
+
+**Real GDP** values output at constant (base year) prices, isolating the effect of quantity changes
+from price changes.
+
+$$\text{Real GDP}_t = \sum_{i=1}^{n} P_{i,0} \cdot Q_{i,t}$$
+
+Where $P_{i,0}$ is the base-year price of good $i$ and $Q_{i,t}$ is the quantity produced in year $t$.
+
+### The GDP Deflator in Detail
+
+The GDP deflator is the most comprehensive price index because it covers all domestically produced
+goods and services (consumption, investment, government spending, and net exports):
+
+$$\text{GDP Deflator}_t = \frac{\text{Nominal GDP}_t}{\text{Real GDP}_t} \times 100$$
+
+Unlike the CPI, the GDP deflator:
+- Includes capital goods and government services (not just consumer goods)
+- Excludes imported goods (the CPI includes imports if consumers buy them)
+- Uses a **Paasche-type** index (current-period quantities as weights), which tends to understate
+  inflation compared to the CPI (Laspeyres index)
+
+### GDP per Capita Calculations
+
+$$\text{GDP per capita} = \frac{\text{GDP}}{\text{Population}}$$
+
+$$\text{Real GDP per capita} = \frac{\text{Real GDP}}{\text{Population}}$$
+
+**Limitations as a welfare measure:**
+
+- Distribution-blind: GDP per capita of `USD 50,000` is consistent with one person earning all income
+  or with perfectly equal distribution
+- Non-market activities excluded: subsistence farming, household production, volunteer work
+- Environmental costs ignored: pollution and resource depletion may increase GDP
+- Quality improvements difficult to capture: a smartphone today costs less (in real terms) than a
+  basic mobile phone 20 years ago, yet delivers far more value
+- Does not measure leisure: two countries with the same GDP per capita may have very different
+  working hours
+- Informal economy: countries with large informal sectors have GDP figures that significantly
+  understate actual economic activity
+
+### Chain-Weighted Real GDP
+
+Modern national accounts use **chain-weighting** to avoid the substitution bias of fixed-weight
+indices. Chain-weighted GDP uses a moving base year, averaging Laspeyres and Paasche measures:
+
+$$\text{Chain-weighted growth rate} = \sqrt{\text{Laspeyres growth rate} \times \text{Paasche growth rate}}$$
+
+This provides a more accurate measure of real growth, particularly when relative prices change
+significantly.
+
+### Common Pitfalls in National Income Accounting
+
+- Comparing nominal GDP across years without adjusting for inflation. Always use real GDP for
+  time-series comparisons.
+- Using GDP per capita as a direct measure of individual income. GDP per capita is an average; median
+  income provides a better picture of the typical person's experience.
+- Double counting intermediate goods. Only final goods and services should be included in GDP.
+- Confusing GDP with GNI. GDP measures output within borders; GNI measures income earned by
+  residents regardless of location. For countries with large FDI inflows (e.g., Ireland), GDP
+  significantly exceeds GNI.
+
+## AD/AS Model: Comprehensive Shifting Factors (HL Extension)
+
+### Comprehensive List of AD Shift Factors
+
+| Factor | Direction of AD Shift | Mechanism |
+|--------|----------------------|-----------|
+| Consumer confidence rises | Rightward | $C \uparrow$ |
+| Interest rates fall | Rightward | $C \uparrow, I \uparrow$ |
+| Income taxes cut | Rightward | $Y_d \uparrow \implies C \uparrow$ |
+| Government spending rises | Rightward | $G \uparrow$ directly |
+| Wealth increases (house prices, stocks) | Rightward | $C \uparrow$ (wealth effect) |
+| Exchange rate depreciates | Rightward | $X \uparrow, M \downarrow$ |
+| Foreign income rises | Rightward | $X \uparrow$ |
+| Population growth | Rightward | More consumers $\implies C \uparrow$ |
+| Consumer expectations of inflation rise | Rightward | $C \uparrow$ (buy now before prices rise) |
+| Inflation expectations fall | Leftward | $C \downarrow$ (defer purchases) |
+| Business confidence falls | Leftward | $I \downarrow$ |
+| Corporation tax rises | Leftward | $I \downarrow$ (lower after-tax returns) |
+
+### Comprehensive List of SRAS Shift Factors
+
+| Factor | Direction of SRAS Shift | Mechanism |
+|--------|------------------------|-----------|
+| Wage rates fall | Rightward | Lower production costs |
+| Raw material prices fall | Rightward | Lower production costs |
+| Energy prices fall | Rightward | Lower production costs |
+| Technology improves | Rightward | Higher productivity |
+| Subsidies increase | Rightward | Lower effective costs |
+| Exchange rate depreciates | Rightward (if imported inputs) | Cheaper inputs in domestic currency |
+| Adverse supply shock (oil price spike) | Leftward | Higher production costs |
+| Indirect tax (VAT) increases | Leftward | Higher costs passed to prices |
+| Good harvest | Rightward | Lower food costs |
+| Natural disaster | Leftward | Supply disruption |
+
+### AD-AS Diagram Analysis Framework
+
+For any AD/AS question, follow this systematic approach:
+
+1. **Identify the initial equilibrium** (intersection of AD, SRAS, and ideally LRAS)
+2. **Identify which curve(s) shift** and in which direction
+3. **Determine the short-run effects** on price level, output, and employment
+4. **Identify the type of gap** created (inflationary or recessionary)
+5. **Describe the long-run adjustment** (if applicable) through wage and price flexibility
+6. **Evaluate the policy implications**
+
+## Keynesian Multiplier Algebra (HL Extension)
+
+### Derivation of the Multiplier from the Consumption Function
+
+Starting with the equilibrium condition in an open economy with government:
+
+$$Y = C + I + G + X - M$$
+
+Substituting the consumption function $C = a + b(Y - T)$ and the import function $M = mY$:
+
+$$Y = a + b(Y - T) + I + G + X - mY$$
+
+Assuming a proportional tax $T = tY$:
+
+$$Y = a + bY - btY + I + G + X - mY$$
+
+$$Y - bY + btY + mY = a + I + G + X$$
+
+$$Y(1 - b + bt + m) = a + I + G + X$$
+
+$$Y = \frac{a + I + G + X}{1 - b(1 - t) + m}$$
+
+The denominator is the sum of all leakages:
+
+$$k = \frac{1}{1 - b(1 - t) + m} = \frac{1}{\text{MPS} + \text{MPT} + \text{MPM}}$$
+
+### The Tax Multiplier
+
+A change in autonomous taxes $\Delta T$ changes disposable income by $\Delta T$, which changes
+consumption by $b \cdot \Delta T$ (where $b$ is MPC):
+
+$$\Delta Y = \frac{-b}{1 - b(1 - t) + m} \cdot \Delta T$$
+
+The tax multiplier is:
+
+$$k_T = \frac{-b}{1 - b(1 - t) + m}$$
+
+The tax multiplier is always smaller in absolute value than the spending multiplier because a tax
+change affects only disposable income, not spending directly. Some of the tax change is absorbed by
+reduced saving.
+
+**Relationship:**
+
+$$|k_G| = \frac{1}{1 - b(1 - t) + m} > |k_T| = \frac{b}{1 - b(1 - t) + m}$$
+
+Since $b < 1$, the spending multiplier always exceeds the absolute value of the tax multiplier.
+
+### Balanced Budget Multiplier: Proof
+
+If $\Delta G = \Delta T$ (lump-sum taxes for simplicity):
+
+$$\Delta Y = k_G \cdot \Delta G + k_T \cdot \Delta T = \frac{1}{1-b}\Delta G + \frac{-b}{1-b}\Delta T$$
+
+$$\Delta Y = \frac{\Delta G - b \cdot \Delta G}{1 - b} = \frac{\Delta G(1 - b)}{1 - b} = \Delta G$$
+
+The balanced budget multiplier equals 1, regardless of the MPC. An equal increase in government
+spending and taxes increases GDP by exactly the amount of the spending increase.
+
+### Worked Example: Full Multiplier Algebra
+
+An economy has: $a = 300$, $b = 0.8$, $t = 0.25$, $m = 0.1$, $I = 500$, $G = 400$, $X = 200$.
+
+$k = \frac{1}{1 - 0.8(1 - 0.25) + 0.1} = \frac{1}{1 - 0.6 + 0.1} = \frac{1}{0.5} = 2$
+
+$Y^* = 2 \times (300 + 500 + 400 + 200) = 2 \times 1400 = 2800$
+
+If $G$ increases by 50: $\Delta Y = 2 \times 50 = 100$. New $Y^* = 2900$.
+
+If $T$ increases by 50 (lump sum): $k_T = \frac{-0.8}{0.5} = -1.6$. $\Delta Y = -1.6 \times 50 = -80$.
+
+If both $G$ and $T$ increase by 50: $\Delta Y = 100 - 80 = 20 = \Delta G$. The balanced budget
+multiplier is confirmed.
+
+## Phillips Curve Analysis in Depth (HL Extension)
+
+### Short-Run Phillips Curve: Algebra
+
+The expectations-augmented Phillips curve:
+
+$$\pi_t = \pi_t^e - \alpha(u_t - u_n) + \varepsilon_t$$
+
+Where:
+- $\pi_t$ is the actual inflation rate in period $t$
+- $\pi_t^e$ is the expected inflation rate
+- $u_t$ is the actual unemployment rate
+- $u_n$ is the natural rate of unemployment (NAIRU)
+- $\alpha$ is the slope parameter (how quickly inflation responds to unemployment gaps)
+- $\varepsilon_t$ is a supply shock term
+
+**Implications:**
+
+- When $u_t < u_n$: $\pi_t > \pi_t^e$ (inflation exceeds expectations; unemployment below natural rate)
+- When $u_t = u_n$: $\pi_t = \pi_t^e$ (inflation equals expectations; economy at natural rate)
+- When $u_t > u_n$: $\pi_t < \pi_t^e$ (inflation below expectations; unemployment above natural rate)
+
+### Adaptive Expectations and the Acceleration Hypothesis
+
+Under adaptive expectations, agents form expectations based on past inflation:
+
+$$\pi_t^e = \pi_{t-1}$$
+
+If the government tries to maintain $u_t < u_n$ permanently:
+
+Period 1: $\pi_1 = \pi_0 - \alpha(u_1 - u_n)$. Since $u_1 < u_n$, $\pi_1 > \pi_0$.
+Period 2: $\pi_2^e = \pi_1$. $\pi_2 = \pi_1 - \alpha(u_1 - u_n) > \pi_1$.
+Period 3: $\pi_3^e = \pi_2$. $\pi_3 = \pi_2 - \alpha(u_1 - u_n) > \pi_2$.
+
+Inflation accelerates without bound. This is the **accelerationist hypothesis** (Friedman, 1968;
+Phelps, 1967).
+
+### Long-Run Phillips Curve
+
+In the long run, expectations catch up to reality ($\pi_t^e = \pi_t$):
+
+$$\pi_t = \pi_t - \alpha(u_t - u_n) + \varepsilon_t$$
+
+$$0 = -\alpha(u_t - u_n) + \varepsilon_t$$
+
+$$u_t = u_n + \frac{\varepsilon_t}{\alpha}$$
+
+In the absence of supply shocks ($\varepsilon_t = 0$), $u_t = u_n$ regardless of the inflation rate.
+The LRPC is vertical at $u_n$.
+
+### The Sacrifice Ratio
+
+The sacrifice ratio measures the cumulative loss in output (as a percentage of one year's GDP)
+required to reduce inflation by one percentage point:
+
+$$\text{Sacrifice ratio} = \frac{\text{Cumulative }\%\Delta Y \text{ below trend}}{\text{Reduction in inflation}}$$
+
+Typical estimates for advanced economies range from 1.5 to 3. A sacrifice ratio of 2 means that
+reducing inflation by 1 percentage point requires a cumulative output loss equal to 2% of annual GDP.
+
+### The NAIRU and Hysteresis
+
+The NAIRU is not fixed. **Hysteresis** refers to the phenomenon where a prolonged period of high
+unemployment can raise the natural rate itself:
+
+- Long-term unemployed workers lose skills and become detached from the labour force
+- Discouraged workers stop searching and exit the labour force
+- Capital stock depreciates during long recessions, reducing the economy's productive capacity
+- Insider-outsider dynamics: employed workers (insiders) resist wage cuts, keeping wages above the
+  level needed to employ the long-term unemployed (outsiders)
+
+If hysteresis is significant, the LRPC may shift rightward after a deep recession, implying that
+the costs of unemployment are permanent rather than temporary.
+
+### Common Pitfalls in Phillips Curve Analysis
+
+- Drawing the LRPC as downward-sloping. The LRPC is always vertical at the NAIRU.
+- Assuming the short-run trade-off is a menu for policymakers. The trade-off exists only for
+  unexpected inflation.
+- Confusing adaptive and rational expectations. Adaptive expectations are backward-looking (based
+  on past inflation); rational expectations use all available information and may predict policy
+  correctly, rendering systematic demand management ineffective.
+
+## Monetary Policy Transmission Mechanism (HL Extension)
+
+### Interest Rate Channel
+
+The traditional channel through which monetary policy affects the real economy:
+
+1. Central bank changes the policy rate (e.g., bank rate)
+2. Commercial banks adjust their lending and deposit rates
+3. Changes in borrowing costs affect household consumption ($C$) and business investment ($I$)
+4. Changes in $C$ and $I$ shift AD
+
+**Interest sensitivity of components:**
+
+- **Investment**: highly sensitive to interest rates. The present value of future cash flows falls
+  when the discount rate rises. Projects that were profitable at lower rates may become unviable
+  at higher rates
+- **Housing**: mortgage interest is a significant component of housing costs. Higher rates reduce
+  housing demand, construction activity, and house prices
+- **Consumer durables**: purchases of cars, appliances, and furniture are often financed, so they
+  are sensitive to interest rate changes
+- **Consumption generally**: the substitution effect of higher rates encourages saving over spending;
+  the income effect (higher interest income for savers) partially offsets this
+
+### Exchange Rate Channel
+
+1. Central bank raises domestic interest rates
+2. Higher returns attract foreign capital inflows (hot money)
+3. Increased demand for the domestic currency causes appreciation
+4. Appreciation makes exports more expensive and imports cheaper
+5. Net exports ($X - M$) fall, reducing AD
+
+$$r \uparrow \implies \text{Capital inflows} \uparrow \implies \text{Exchange rate} \uparrow \implies (X - M) \downarrow \implies \text{AD} \downarrow$$
+
+### Asset Price Channel
+
+1. Central bank lowers interest rates
+2. Lower rates make bonds less attractive relative to equities and property
+3. Increased demand for equities and property raises their prices
+4. Higher asset prices increase household wealth (wealth effect), boosting consumption
+5. Higher share prices lower the cost of equity financing for firms, encouraging investment
+6. Higher property values increase collateral for borrowing, relaxing credit constraints
+
+$$r \downarrow \implies \text{Asset prices} \uparrow \implies \text{Wealth} \uparrow \implies C \uparrow \implies \text{AD} \uparrow$$
+
+### Expectations Channel (Forward Guidance)
+
+Central bank communication about the expected future path of policy rates shapes expectations:
+
+- If the central bank signals that rates will remain low for an extended period, households and
+  firms may bring forward spending and investment decisions
+- If the central bank credibly commits to an inflation target, inflation expectations remain
+  anchored, reducing the sacrifice ratio
+- Forward guidance can be effective even when policy rates are at the zero lower bound
+
+### Credit Channel
+
+1. Central bank raises reserve requirements or conducts open market sales
+2. Bank reserves decrease, reducing banks' capacity to lend
+3. Banks tighten lending standards (higher collateral requirements, stricter credit assessments)
+4. Credit-constrained households and firms reduce spending and investment
+5. AD falls
+
+The credit channel amplifies the interest rate channel and is particularly important during
+financial crises when banks are reluctant to lend.
+
+### Limitations of Monetary Policy
+
+- **Zero lower bound (ZLB)**: nominal interest rates cannot fall significantly below zero
+  (otherwise cash would be preferable to bank deposits). At the ZLB, conventional monetary policy
+  is exhausted, requiring unconventional measures (quantitative easing, negative interest rates,
+  forward guidance)
+- **Lags**: monetary policy works with long and variable lags (typically 12--18 months for the full
+  effect on inflation)
+- **Velocity of circulation**: if $V$ falls (as during a liquidity trap), increasing $M$ may not
+  increase $P \times Y$
+- **Banking sector health**: if banks are undercapitalised, they may not transmit lower policy rates
+  to lending rates
+- **Global factors**: in small open economies, domestic interest rates are constrained by
+  international capital flows (the trilemma: cannot simultaneously have fixed exchange rate, free
+  capital movement, and independent monetary policy)
+
+## Fiscal Policy in Depth (HL Extension)
+
+### Automatic Stabilisers
+
+Automatic stabilisers are features of the tax and transfer system that automatically dampen
+economic fluctuations without any deliberate policy action:
+
+- **Progressive income taxes**: as incomes rise during booms, taxpayers move into higher brackets,
+  paying a larger fraction of income in tax. During recessions, falling incomes reduce tax
+  liabilities, leaving more disposable income
+- **Unemployment benefits**: when unemployment rises during recessions, transfer payments
+  automatically increase, supporting household incomes and cushioning the fall in consumption
+- **Welfare benefits**: means-tested benefits automatically increase when incomes fall
+- **Corporate taxes**: profits fall during recessions, reducing corporate tax liabilities
+
+**Effect on the multiplier:** automatic stabilisers reduce the effective multiplier by increasing
+the cyclically-adjusted budget deficit during recessions (providing stimulus) and reducing it
+during booms (restraining demand).
+
+### Discretionary vs. Automatic Fiscal Policy
+
+| Feature | Automatic | Discretionary |
+|---------|-----------|---------------|
+| Timing | Immediate (built into the system) | Subject to recognition, decision, and implementation lags |
+| Political process | No legislation required | Requires legislative approval |
+| Cyclical sensitivity | Automatically counter-cyclical | May be pro-cyclical if poorly timed |
+| Predictability | Highly predictable | Uncertain (depends on political negotiations) |
+
+### Crowding Out
+
+**Full crowding out:** in a classical (full-employment) economy, increased government spending
+raises demand for loanable funds, increasing the interest rate and reducing private investment by
+exactly the amount of the fiscal expansion. $\Delta G$ is fully offset by $\Delta I$.
+
+$$\Delta Y = 0 \text{ (in the classical case)}$$
+
+**Partial crowding out:** in a Keynesian framework with idle resources, the interest rate rise
+reduces some investment but not all. The net increase in output is positive but smaller than the
+simple multiplier predicts.
+
+$$0 < \Delta Y < k \cdot \Delta G$$
+
+**No crowding out:** at the zero lower bound or in a deep recession (liquidity trap), increased
+government spending does not raise interest rates because the central bank accommodates the fiscal
+expansion. The full multiplier operates:
+
+$$\Delta Y = k \cdot \Delta G$$
+
+**Factors determining the degree of crowding out:**
+
+- State of the economy: more crowding out at full employment, less during recessions
+- Elasticity of investment demand for interest rates: more elastic investment $\implies$ more
+  crowding out
+- Central bank response: if the central bank accommodates (maintains interest rates), crowding out
+  is minimised
+- Openness of the economy: higher interest rates attract capital inflows, appreciating the
+  exchange rate and reducing net exports (further crowding out)
+
+### Ricardian Equivalence
+
+Proposed by Robert Barro (1974), Ricardian equivalence states that households are forward-looking
+and understand that current deficit spending must be financed by future taxes. Therefore:
+
+$$\text{Tax cut today} = \text{Tax increase tomorrow (with interest)}$$
+
+Households save the entire tax cut to pay future taxes, leaving consumption unchanged:
+
+$$\Delta C = 0, \quad \Delta S = \Delta T_{\text{cut}}$$
+
+**Conditions for Ricardian equivalence to hold:**
+
+1. Perfect capital markets (households can borrow and save freely)
+2. Infinite horizons (households care about their descendants' welfare through bequests)
+3. Lump-sum taxes (not distortionary)
+4. Full information about future government obligations
+
+**Why Ricardian equivalence typically fails in practice:**
+
+- Borrowing constraints: liquidity-constrained households cannot save a tax cut for future taxes
+- Myopia: many households do not plan beyond the short term
+- Finite lives: people do not fully internalise the tax burden on future generations
+- Distortionary taxes: future taxes are not lump-sum but affect incentives
+- Uncertainty: households may not know the timing or magnitude of future tax increases
+
+Empirical evidence overwhelmingly rejects Ricardian equivalence. Tax cuts do stimulate consumption,
+particularly for liquidity-constrained households, but the multiplier is smaller than predicted by
+simple Keynesian models.
+
+### Common Pitfalls in Fiscal Policy
+
+- Confusing the cyclical deficit with the structural deficit. The cyclical deficit reflects the
+  state of the economy; only the structural deficit reflects the government's discretionary fiscal
+  stance.
+- Assuming crowding out is always significant. In a recession with idle resources and low interest
+  rates, crowding out may be negligible.
+- Stating that government debt is always harmful. If debt is used to finance productive investment
+  (infrastructure, education), it can enhance growth and be self-financing.
+
+## Supply-Side Policies: Laffer Curve (HL Extension)
+
+### The Laffer Curve
+
+The Laffer curve illustrates the theoretical relationship between the tax rate and tax revenue:
+
+$$\text{Tax revenue} = t \times Y(t)$$
+
+Where $Y(t)$ is the tax base (income, output), which depends on the tax rate. At $t = 0$, revenue
+is zero. At $t = 100\%$, revenue is also zero (no one works or invests if all income is taxed).
+Between these extremes, there is a revenue-maximising tax rate $t^*$.
+
+**Implications:**
+
+- For tax rates above $t^*$, reducing the tax rate can increase revenue by stimulating economic
+  activity
+- For tax rates below $t^*$, reducing the tax rate decreases revenue
+- The position of $t^*$ is empirically uncertain and debated. Most estimates for income tax place
+  it between 50% and 70%
+- The Laffer curve does not imply that all tax cuts pay for themselves. Empirical evidence suggests
+  that tax cuts typically reduce revenue, though they may partly pay for themselves through growth
+  effects
+
+### Market-Based vs. Interventionist Supply-Side Policies: Evaluation
+
+| Criterion | Market-Based | Interventionist |
+|-----------|-------------|-----------------|
+| Speed of impact | Faster (tax cuts work quickly) | Slower (education, infrastructure take years) |
+| Fiscal cost | Revenue loss (tax cuts) | Direct spending required |
+| Equity impact | May increase inequality | Can reduce inequality |
+| Risk of government failure | Lower (less direct intervention) | Higher (inefficient allocation, corruption) |
+| Risk of market failure | Higher (deregulation may cause externalities) | Lower (government can correct failures) |
+| Political feasibility | Varies (tax cuts popular, deregulation controversial) | Varies (spending popular, taxes unpopular) |
+
+## Economic Growth Models (HL Extension)
+
+### Solow Growth Model: Comprehensive Analysis
+
+The Solow model (1956) explains long-run economic growth through capital accumulation, labour
+growth, and technological progress.
+
+**Production function:**
+
+$$Y = F(K, L)$$
+
+In per-worker terms ($y = Y/L$, $k = K/L$):
+
+$$y = f(k)$$
+
+**Capital accumulation:**
+
+$$\dot{k} = s \cdot f(k) - (n + \delta)k$$
+
+Where $s$ is the savings rate, $n$ is the population growth rate, and $\delta$ is the depreciation
+rate.
+
+- $s \cdot f(k)$: investment per worker (a fraction $s$ of output per worker)
+- $(n + \delta)k$: break-even investment (the investment needed to maintain the existing
+  capital-labour ratio as the labour force grows and capital depreciates)
+
+**Steady state:** where $\dot{k} = 0$, so $s \cdot f(k^*) = (n + \delta)k^*$.
+
+At the steady state, capital per worker and output per worker are constant.
+
+**Convergence:**
+
+Starting from any $k_0$, the economy converges to $k^*$ because:
+- If $k < k^*$: $s \cdot f(k) > (n + \delta)k$, so $k$ rises
+- If $k > k^*$: $s \cdot f(k) < (n + \delta)k$, so $k$ falls
+
+**Effect of parameter changes:**
+
+- Higher savings rate $s$: shifts the investment curve upward; $k^*$ increases; higher output per
+  worker in the long run, but NOT higher long-run growth (output per worker is constant at the
+  steady state)
+- Higher population growth $n$: shifts the break-even investment line upward; $k^*$ decreases; lower
+  output per worker (more workers sharing the same capital stock)
+- Higher depreciation $\delta$: same effect as higher $n$
+- Technological progress: shifts the production function upward; increases $k^*$ and $y^*$; is the
+  only source of sustained growth in output per worker
+
+**Golden Rule of capital accumulation:** the savings rate that maximises steady-state consumption
+per worker:
+
+$$c^* = f(k^*) - (n + \delta)k^*$$
+
+Consumption is maximised where the slope of the production function equals $(n + \delta)$:
+
+$$f'(k^{**}) = n + \delta$$
+
+$$\text{MPK} = n + \delta$$
+
+If the actual savings rate is higher than the golden rule rate, the economy is dynamically
+inefficient: reducing saving would increase both current and future consumption.
+
+### Human Capital in the Solow Model
+
+An augmented Solow model (Mankiw, Romer, Weil, 1992) includes human capital $H$:
+
+$$Y = K^\alpha H^\beta (AL)^{1-\alpha-\beta}$$
+
+Where $H$ represents the stock of human capital. This model explains more of the cross-country
+variation in income per capita than the basic Solow model, but still predicts convergence (albeit
+conditional on human capital).
+
+### Productivity and Total Factor Productivity (TFP)
+
+**Total factor productivity** (TFP, or the Solow residual) measures the portion of output growth
+not explained by growth in inputs (capital and labour):
+
+$$\frac{\Delta A}{A} = \frac{\Delta Y}{Y} - \alpha \frac{\Delta K}{K} - (1 - \alpha) \frac{\Delta L}{L}$$
+
+Where $A$ is TFP and $\alpha$ is capital's share of income (approximately $1/3$ in most economies).
+
+TFP captures:
+- Technological progress
+- Institutional quality
+- Resource allocation efficiency
+- Management practices
+- Knowledge spillovers
+
+In most advanced economies, TFP accounts for the majority of long-run growth. In developing
+countries, capital accumulation typically accounts for a larger share.
+
+## Additional Practice Problems
+
+<details>
+<summary>Problem 8: Comprehensive Multiplier Analysis</summary>
+
+An economy has the following characteristics:
+- Autonomous consumption: `USD 100` billion
+- MPC: 0.75
+- Proportional tax rate: 20%
+- MPM: 0.15
+- Investment: `USD 250` billion
+- Government spending: `USD 300` billion
+- Exports: `USD 120` billion
+- Autonomous imports: `USD 40` billion
+
+(a) Calculate the equilibrium level of output.
+
+(b) Calculate the spending multiplier, tax multiplier, and balanced budget multiplier.
+
+(c) If the government wants to close a recessionary gap of `USD 80` billion, by how much should it
+increase government spending? By how much should it cut taxes to achieve the same result?
+
+(a) $k = \frac{1}{\mathrm{MPS} + t \cdot \mathrm{MPC} + \mathrm{MPM}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15} = \frac{1}{0.25 + 0.15 + 0.15} = \frac{1}{0.55} = 1.818$
+
+Autonomous expenditure $= C_{\text{aut}} + I + G + X - M_{\text{aut}} = 100 + 250 + 300 + 120 - 40 = 730$
+
+$Y^* = k \times \text{Autonomous expenditure} = 1.818 \times 730 = 1327.3$ billion USD
+
+(b) Spending multiplier: $k_G = 1.818$
+
+Tax multiplier: $k_T = \frac{-\mathrm{MPC}}{1 - \mathrm{MPC}(1-t) + \mathrm{MPM}} = \frac{-0.75}{0.55} = -1.364$
+
+Balanced budget multiplier: $k_B = k_G + k_T = 1.818 + (-1.364) = 0.454$
+
+(With proportional taxes, the balanced budget multiplier is not exactly 1; it depends on the
+tax rate. For lump-sum taxes, $k_B = 1$.)
+
+(c) Using government spending: $\Delta Y = k_G \cdot \Delta G \implies 80 = 1.818 \cdot \Delta G \implies \Delta G = 44.0$ billion
+
+Using tax cuts: $\Delta Y = k_T \cdot \Delta T \implies 80 = -1.364 \cdot \Delta T \implies \Delta T = -58.6$ billion (a tax cut of 58.6 billion)
+
+Government spending is more effective than tax cuts (a smaller change is needed) because the full
+spending injection goes directly into aggregate expenditure, whereas a tax cut is partly saved.
+
+</details>
+
+<details>
+<summary>Problem 9: AD-AS with Simultaneous Shocks</summary>
+
+An economy is in long-run equilibrium. Simultaneously, consumer confidence falls and the government
+implements a major infrastructure programme.
+
+(a) Analyse the short-run effects on output, employment, and the price level.
+
+(b) Explain the long-run adjustment process.
+
+(c) Under what conditions would the price level remain unchanged in the short run?
+
+(a) Two simultaneous shifts:
+
+1. Consumer confidence falls $\implies$ AD shifts leftward (reducing output, employment, and the
+   price level)
+2. Infrastructure programme $\implies$ both AD shifts rightward (increasing $G$) and LRAS shifts
+   rightward (increasing productive capacity)
+
+The net short-run effect depends on the relative magnitudes:
+- If the AD shift from infrastructure exceeds the AD shift from lost confidence, AD shifts
+  net-rightward: output, employment, and price level rise
+- If the AD shifts offset each other, but LRAS shifts right: output rises, price level may fall
+- If the confidence effect dominates, AD shifts net-leftward: output, employment, and price level
+  fall
+
+(b) In the long run, the economy self-corrects to potential output. If short-run output is above
+  potential, wages and prices rise, shifting SRAS leftward. If below potential, wages and prices
+  fall, shifting SRAS rightward. The LRAS shift from infrastructure is permanent, so long-run
+  potential output is higher than originally.
+
+(c) The price level remains unchanged if the leftward AD shift from falling confidence exactly
+  offsets the rightward AD shift from government spending. In this case, AD does not shift net,
+  but LRAS shifts rightward. Output increases while the price level stays the same. This is the
+  ideal supply-side outcome: growth without inflation.
+
+</details>
+
+<details>
+<summary>Problem 10: Expectations-Augmented Phillips Curve</summary>
+
+An economy has a natural rate of unemployment of $5\%$ and a Phillips curve parameter $\alpha = 0.5$.
+Initially, inflation is $2\%$ and unemployment is $5\%$. In period 1, the government stimulates the
+economy, reducing unemployment to $3\%$. Assume adaptive expectations.
+
+(a) Calculate inflation in periods 1 through 5.
+
+(b) What happens to the short-run Phillips curve over time?
+
+(c) How much output is gained permanently from this policy?
+
+(a) Period 0: $u = 5\%$, $\pi = 2\%$, $\pi^e = 2\%$
+
+Period 1: $u = 3\%$. $\pi_1 = \pi_0 - 0.5(3 - 5) = 2 - 0.5(-2) = 2 + 1 = 3\%$
+
+Period 2: $\pi_2^e = \pi_1 = 3\%$. If $u = 3\%$ still: $\pi_2 = 3 - 0.5(-2) = 4\%$
+
+Period 3: $\pi_3^e = 4\%$. $\pi_3 = 4 - 0.5(-2) = 5\%$
+
+Period 4: $\pi_4^e = 5\%$. $\pi_4 = 5 - 0.5(-2) = 6\%$
+
+Period 5: $\pi_5^e = 6\%$. $\pi_5 = 6 - 0.5(-2) = 7\%$
+
+Inflation accelerates by 1 percentage point per period: 2%, 3%, 4%, 5%, 6%, 7%.
+
+(b) The SRPC shifts upward by 1 percentage point each period as expectations adjust. Each SRPC is
+parallel to the previous one but shifted upward by the change in expected inflation.
+
+(c) Zero. The permanent output gain is zero because in the long run, unemployment returns to the
+natural rate ($5\%$) and output returns to potential. The only permanent effect is higher inflation.
+The government cannot permanently reduce unemployment below the NAIRU through demand-side policies
+alone.
+
+</details>
+
+<details>
+<summary>Problem 11: Solow Model Comparative Statics</summary>
+
+An economy has a Cobb-Douglas production function $y = k^{0.3}$ (per-worker terms). The savings
+rate is $s = 0.2$, the population growth rate is $n = 0.02$, and the depreciation rate is
+$\delta = 0.05$.
+
+(a) Find the steady-state capital per worker and output per worker.
+
+(b) What happens to steady-state output per worker if the savings rate increases to $s = 0.3$?
+
+(c) What happens if population growth increases to $n = 0.04$?
+
+(a) Steady state: $s \cdot k^{0.3} = (n + \delta)k$
+
+$0.2 \cdot k^{0.3} = 0.07 \cdot k$
+
+$0.2 = 0.07 \cdot k^{0.7}$
+
+$k^{0.7} = 0.2 / 0.07 = 2.857$
+
+$k^* = 2.857^{1/0.7} = 2.857^{1.429}$
+
+$\ln k^* = 1.429 \times \ln 2.857 = 1.429 \times 1.050 = 1.500$
+
+$k^* = e^{1.500} = 4.482$
+
+$y^* = k^{*0.3} = 4.482^{0.3}$
+
+$\ln y^* = 0.3 \times \ln 4.482 = 0.3 \times 1.500 = 0.450$
+
+$y^* = e^{0.450} = 1.568$
+
+(b) With $s = 0.3$: $0.3 \cdot k^{0.3} = 0.07 \cdot k$
+
+$k^{0.7} = 0.3/0.07 = 4.286$
+
+$k^* = 4.286^{1.429}$
+
+$\ln k^* = 1.429 \times 1.455 = 2.079$
+
+$k^* = e^{2.079} = 7.997$
+
+$y^* = 7.997^{0.3}$
+
+$\ln y^* = 0.3 \times 2.079 = 0.624$
+
+$y^* = e^{0.624} = 1.866$
+
+Steady-state output per worker rises from 1.568 to 1.866 (a 19% increase). However, the growth
+rate of output per worker in the steady state remains zero -- the higher savings rate produces a
+one-time level effect, not a permanent growth effect.
+
+(c) With $n = 0.04$, $s = 0.2$: $0.2 \cdot k^{0.3} = 0.09 \cdot k$
+
+$k^{0.7} = 0.2/0.09 = 2.222$
+
+$k^* = 2.222^{1.429}$
+
+$\ln k^* = 1.429 \times 0.799 = 1.142$
+
+$k^* = e^{1.142} = 3.133$
+
+$y^* = 3.133^{0.3}$
+
+$\ln y^* = 0.3 \times 1.142 = 0.343$
+
+$y^* = e^{0.343} = 1.409$
+
+Higher population growth reduces steady-state output per worker from 1.568 to 1.409 (a 10%
+decline). More workers share the same capital stock, reducing capital per worker. This explains
+why rapidly growing populations may experience lower growth in output per capita.
+
+</details>
+
+<details>
+<summary>Problem 12: Monetary and Fiscal Policy Coordination</summary>
+
+An economy is in a deep recession with output 15% below potential. The central bank has already cut
+interest rates to near zero (the zero lower bound). Evaluate the effectiveness of monetary and
+fiscal policy in this situation, using IS-LM analysis.
+
+**Monetary policy at the ZLB:**
+
+With interest rates at or near zero, conventional monetary policy is exhausted. The LM curve is
+horizontal at the ZLB (liquidity trap). Further increases in the money supply do not lower interest
+rates because the opportunity cost of holding money is already negligible. Monetary policy is
+ineffective in stimulating output.
+
+Options:
+- Quantitative easing (QE): central bank purchases long-term bonds and other assets to reduce
+  long-term interest rates and increase the money supply. May have limited effectiveness if banks
+  hold the excess reserves rather than lending them out.
+- Forward guidance: committing to keep rates low for an extended period to shape expectations.
+  Can reduce long-term rates and boost confidence.
+- Negative interest rates: technically possible but may cause cash hoarding and distort bank
+  profitability.
+
+**Fiscal policy at the ZLB:**
+
+Fiscal policy is highly effective at the ZLB because there is no crowding out. The IS curve shifts
+rightward, but since the LM curve is horizontal, the interest rate does not rise. The full
+multiplier operates:
+
+$$\Delta Y = k \cdot \Delta G$$
+
+There is no offsetting increase in interest rates to crowd out private investment.
+
+**Policy coordination:**
+
+- Expansionary fiscal policy shifts IS rightward, increasing output
+- If the central bank accommodates by keeping rates low (LM does not shift), there is no crowding
+  out and the full multiplier operates
+- If fiscal expansion raises inflation expectations, real interest rates fall further (the Fisher
+  effect), providing additional stimulus
+- Coordination between fiscal and monetary authorities is essential: the central bank must commit
+  to maintaining low rates despite potential inflationary pressure from fiscal expansion
+
+This analysis supports the use of aggressive fiscal stimulus during deep recessions at the ZLB,
+as demonstrated by fiscal responses to the 2008 financial crisis and the COVID-19 pandemic.
+
+</details>
+
+## Exchange Rate Systems and the Trilemma (HL Extension)
+
+### The Impossible Trinity (Trilemma)
+
+A country cannot simultaneously maintain all three of:
+
+1. **Fixed exchange rate**
+2. **Free capital movement**
+3. **Independent monetary policy**
+
+It must choose two of the three.
+
+| Choice | Examples | Implications |
+|--------|----------|-------------|
+| Fixed rate + Free capital | Hong Kong (USD peg), Eurozone | No independent monetary policy |
+| Fixed rate + Independent monetary policy | China (pre-2005, capital controls) | Must restrict capital flows |
+| Free capital + Independent monetary policy | US, UK, Australia, Canada | Floating exchange rate |
+
+### Floating Exchange Rate: Advantages and Disadvantages
+
+**Advantages:**
+
+- Automatic stabiliser: the exchange rate adjusts to correct current account imbalances
+- Independent monetary policy: the central bank can set interest rates for domestic objectives
+- No need for large foreign exchange reserves (the market determines the rate)
+- Absorbs external shocks: a commodity exporter facing a terms-of-trade shock sees its
+  currency depreciate, cushioning the impact on the domestic economy
+
+**Disadvantages:**
+
+- Volatility: exchange rate fluctuations create uncertainty for trade and investment
+- Speculation: speculative capital flows can cause excessive volatility (as in the 1997 Asian
+  financial crisis)
+- Imported inflation: depreciation raises the cost of imports
+- Lack of discipline: governments may pursue irresponsible fiscal or monetary policies, knowing
+  the exchange rate will adjust
+
+### Fixed Exchange Rate: Advantages and Disadvantages
+
+**Advantages:**
+
+- Certainty for traders and investors (reduces transaction costs and exchange rate risk)
+- Disciplines monetary and fiscal policy (the government must maintain the peg)
+- Anchors inflation expectations (particularly when pegged to a low-inflation currency)
+- Facilitates trade and investment with the anchor currency country
+
+**Disadvantages:**
+
+- Loss of independent monetary policy (the central bank must set rates to maintain the peg)
+- Need for large foreign exchange reserves (to defend against speculative attacks)
+- Vulnerability to speculative attacks (if markets believe the peg is unsustainable)
+- Misalignment: the fixed rate may diverge from the equilibrium rate, causing trade imbalances
+- "Imported" monetary policy: the country effectively adopts the anchor country's monetary
+  policy, which may not be appropriate for its economic conditions
+
+### The Mundell-Fleming Model
+
+The Mundell-Fleming model extends the IS-LM framework to an open economy with international
+capital mobility.
+
+**Key result with floating exchange rates and perfect capital mobility:**
+
+- Fiscal policy is **ineffective**: an increase in government spending raises interest rates,
+  attracting capital inflows that appreciate the exchange rate, reducing net exports and offsetting
+  the fiscal expansion. Output is unchanged
+- Monetary policy is **highly effective**: an increase in the money supply lowers interest rates,
+  causing capital outflows that depreciate the exchange rate, increasing net exports. Output
+  increases by the full multiplier
+
+$$\Delta G > 0 \implies \Delta Y = 0 \quad \text{(fiscal policy is fully crowded out)}$$
+$$\Delta M^s > 0 \implies \Delta Y > 0 \quad \text{(monetary policy is fully effective)}$$
+
+**Key result with fixed exchange rates and perfect capital mobility:**
+
+- Fiscal policy is **highly effective**: an increase in government spending raises interest rates,
+  attracting capital inflows. The central bank must intervene (buy foreign currency, sell domestic
+  currency) to prevent appreciation. This increases the money supply, amplifying the fiscal
+  expansion
+- Monetary policy is **ineffective**: the central bank cannot independently change the money
+  supply. Any attempt to increase the money supply lowers interest rates, causing capital
+  outflows and downward pressure on the exchange rate. The central bank must sell reserves to
+  defend the peg, reversing the money supply increase
+
+$$\Delta G > 0 \implies \Delta Y > 0 \quad \text{(fiscal policy is amplified)}$$
+$$\Delta M^s > 0 \implies \Delta Y = 0 \quad \text{(monetary policy is fully offset)}$$
+
+### Currency Crises: First-Generation and Second-Generation Models
+
+**First-generation models (Krugman, 1979):** currency crises are caused by fundamental
+inconsistencies between domestic macroeconomic policies and the fixed exchange rate. If a
+government runs persistent fiscal deficits financed by central bank credit creation, foreign
+exchange reserves are depleted and the peg becomes unsustainable. The crisis occurs when
+reserves reach a critical threshold.
+
+**Second-generation models (Obstfeld, 1994):** currency crises can be self-fulfilling. Even if
+the government's policies are consistent with maintaining the peg, a speculative attack may
+raise the cost of defending the peg (through higher interest rates that cause a recession). The
+government may rationally choose to abandon the peg if the economic costs of defense exceed the
+costs of devaluation. If speculators anticipate this, they attack, and the crisis becomes a
+self-fulfilling prophecy.
+
+**Policy implications:**
+
+- Maintaining a fixed exchange rate requires fiscal and monetary discipline
+- Large reserves and strong institutional credibility reduce vulnerability to speculative attacks
+- Flexible exchange rates provide an automatic adjustment mechanism but create uncertainty
+- Capital controls can provide a buffer but come at the cost of reduced access to international
+  capital markets
+
+### Common Pitfalls in Exchange Rate Analysis
+
+- Confusing nominal and real exchange rates. A nominal depreciation does not always improve
+  competitiveness if it is offset by higher domestic inflation
+- Assuming that a current account deficit is always caused by an overvalued exchange rate. It
+  may reflect excess domestic demand or structural factors
+- Stating that a fixed exchange rate eliminates exchange rate risk. It eliminates nominal risk
+  but not real risk (if the peg is abandoned, the adjustment can be sudden and large)
+- Confusing the trilemma options. Many countries operate managed floats that are neither fully
+  fixed nor fully floating, occupying an intermediate position
+
+## Additional Practice Problems
+
+<details>
+<summary>Problem 13: Trilemma and Policy Analysis</summary>
+
+Country Z has a fixed exchange rate pegged to the US dollar. Capital flows are freely mobile.
+
+(a) If the US Federal Reserve raises interest rates, what must Country Z's central bank do?
+
+(b) If Country Z wants to reduce unemployment through monetary stimulus, what trade-off does it
+face?
+
+(c) Evaluate the options available to Country Z.
+
+(a) If the Fed raises US interest rates, the interest rate differential (US rate minus Country Z
+  rate) increases. Capital flows from Z to the US, putting downward pressure on Z's currency.
+
+To maintain the peg, Country Z's central bank must:
+1. Raise its own interest rates to match or exceed the Fed's increase (losing monetary policy
+   independence)
+2. Sell foreign exchange reserves to buy its own currency (depleting reserves)
+
+Option 1 is the sustainable approach; option 2 is temporary.
+
+(b) To reduce unemployment, Country Z would need to lower interest rates (expansionary monetary
+  policy). But this would:
+- Increase the interest rate differential against the US, causing capital outflows
+- Put downward pressure on the exchange rate
+- Require the central bank to sell reserves
+
+If the central bank persists, reserves will be depleted and the peg will collapse. This is the
+  fundamental trade-off: Country Z cannot have an independent monetary policy while
+  maintaining a fixed peg with free capital mobility.
+
+(c) **Options for Country Z:**
+
+1. **Maintain the peg and accept US monetary policy:** sacrifice domestic objectives (unemployment
+   remains high) for exchange rate stability. This is the current position
+
+2. **Abandon the peg (float):** regain monetary policy independence. The currency will depreciate,
+   boosting exports but causing imported inflation and higher foreign debt costs. This solves the
+   policy trade-off but creates exchange rate uncertainty
+
+3. **Impose capital controls:** restrict capital outflows, allowing some monetary independence while
+   maintaining the peg. Effective in the short run but distorts capital allocation, reduces
+   investor confidence, and is difficult to enforce
+
+4. **Establish a currency board:** a stronger form of fixed exchange rate where the domestic
+   currency is fully backed by foreign reserves. Provides maximum credibility but eliminates
+   all monetary flexibility
+
+5. **Join a monetary union:** adopt the US dollar (dollarisation) or join a regional monetary union.
+   Eliminates exchange rate risk entirely but permanently sacrifices monetary sovereignty
+
+The optimal choice depends on Country Z's specific circumstances: the importance of trade with
+  the US, the credibility of its institutions, the depth of its financial markets, and the
+  nature of the shocks it faces.
+
+</details>
+
+<details>
+<summary>Problem 14: Mundell-Fleming Comparative Analysis</summary>
+
+An open economy with perfect capital mobility and a floating exchange rate. The IS curve is
+$Y = 800 - 40r$ and the LM curve is $Y = 400 + 20r$. The net export function is $NX = 100 - 5e$
+where $e$ is the exchange rate (higher $e$ means depreciation).
+
+(a) Find the initial equilibrium.
+
+(b) The government increases spending by 50. Analyse the impact on output, interest rates, and
+the exchange rate.
+
+(c) The central bank increases the money supply, shifting LM to $Y = 500 + 20r$. Analyse the
+  impact.
+
+(a) $800 - 40r = 400 + 20r \implies 400 = 60r \implies r = 6.67\%$
+
+$Y = 800 - 40(6.67) = 800 - 266.7 = 533.3$
+
+(b) New IS: $Y = 850 - 40r$
+
+$850 - 40r = 400 + 20r \implies 450 = 60r \implies r = 7.5\%$
+
+But with perfect capital mobility and floating rates, the interest rate is pinned to the world
+rate. The IS shift raises the interest rate, attracting capital inflows. The exchange rate
+appreciates ($e$ falls), reducing net exports. The IS curve shifts back to its original
+position.
+
+$\Delta Y = 0$: fiscal policy is completely ineffective under floating rates with perfect capital
+  mobility.
+
+(c) New LM: $Y = 500 + 20r$
+
+$800 - 40r = 500 + 20r \implies 300 = 60r \implies r = 5.0\%$
+
+$Y = 800 - 40(5.0) = 800 - 200 = 600$
+
+The interest rate falls from 6.67% to 5.0%, causing capital outflows and exchange rate
+  depreciation. The depreciation increases net exports, shifting IS rightward and amplifying
+  the monetary stimulus.
+
+$\Delta Y = 600 - 533.3 = 66.7$: monetary policy is highly effective under floating rates.
+
+</details>

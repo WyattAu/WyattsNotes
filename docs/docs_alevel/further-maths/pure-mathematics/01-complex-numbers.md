@@ -793,6 +793,466 @@ Therefore: $\displaystyle\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k} = \frac{n - 1}{2
 
 :::
 
-:::
+---
 
-:::
+## 8. Advanced Worked Examples
+
+### Example 8.1: De Moivre's theorem for $\cos 5\theta$
+
+**Problem.** Express $\cos 5\theta$ in terms of $\cos\theta$.
+
+**Solution.** By de Moivre: $(\cos\theta + i\sin\theta)^5 = \cos 5\theta + i\sin 5\theta$.
+
+Expanding by the binomial theorem:
+
+$$(\cos\theta + i\sin\theta)^5 = \cos^5\theta + 5i\cos^4\theta\sin\theta - 10\cos^3\theta\sin^2\theta - 10i\cos^2\theta\sin^3\theta + 5\cos\theta\sin^4\theta + i\sin^5\theta$$
+
+Equating real parts:
+
+$$\boxed{\cos 5\theta = 16\cos^5\theta - 20\cos^3\theta + 5\cos\theta}$$
+
+### Example 8.2: Solving $z^6 = -64$
+
+**Problem.** Solve $z^6 = -64$, giving answers in exponential form.
+
+**Solution.** $-64 = 64e^{i\pi}$. The 6th roots are:
+
+$$z_k = 64^{1/6} \exp\!\left(\frac{i(\pi + 2k\pi)}{6}\right) = 2\exp\!\left(\frac{i(2k+1)\pi}{6}\right)$$
+
+for $k = 0, 1, 2, 3, 4, 5$.
+
+$z_0 = 2e^{i\pi/6}$, $z_1 = 2e^{i\pi/2}$, $z_2 = 2e^{5i\pi/6}$, $z_3 = 2e^{7i\pi/6}$, $z_4 = 2e^{3i\pi/2}$, $z_5 = 2e^{11i\pi/6}$.
+
+These lie on a circle of radius 2, at angles $30°, 90°, 150°, 210°, 270°, 330°$.
+
+### Example 8.3: Loci — perpendicular bisector
+
+**Problem.** Find the Cartesian equation of the locus $|z - 3 - 4i| = |z + 1 - 2i|$.
+
+**Solution.** Let $z = x + iy$.
+
+$$|z - (3+4i)| = |z - (-1+2i)|$$
+
+$$\sqrt{(x-3)^2 + (y-4)^2} = \sqrt{(x+1)^2 + (y-2)^2}$$
+
+Squaring: $(x-3)^2 + (y-4)^2 = (x+1)^2 + (y-2)^2$.
+
+$$x^2 - 6x + 9 + y^2 - 8y + 16 = x^2 + 2x + 1 + y^2 - 4y + 4$$
+
+$$-8x - 4y + 20 = 0 \implies \boxed{2x + y = 5}$$
+
+This is the perpendicular bisector of the segment joining $3+4i$ and $-1+2i$.
+
+### Example 8.4: Region defined by an inequality
+
+**Problem.** Shade on an Argand diagram the region defined by $|z - 2i| \leq 3$ and $0 \leq \arg(z) \leq \dfrac{\pi}{4}$.
+
+**Solution.** $|z - 2i| \leq 3$ is the closed disc of radius 3 centred at $2i$ (i.e., $(0, 2)$).
+
+$0 \leq \arg(z) \leq \dfrac{\pi}{4}$ is the sector between the positive real axis and the line $y = x$ (for $x \geq 0$).
+
+The required region is the intersection: a segment of the disc in the first quadrant between angles $0$ and $\pi/4$.
+
+### Example 8.5: Complex transformation — rotation and enlargement
+
+**Problem.** The transformation $T$ maps the complex plane by $w = (1+i)z + 2i$. Describe $T$ fully and find the image of the line $\mathrm{Re}(z) = 1$.
+
+**Solution.** $w = (1+i)z + 2i = \sqrt{2}\,e^{i\pi/4}\,z + 2i$.
+
+$T$ is an enlargement by scale factor $\sqrt{2}$, rotation by $45°$ anticlockwise about the origin, followed by a translation by $2i$.
+
+For $\mathrm{Re}(z) = 1$: $z = 1 + it$. $w = (1+i)(1+it) + 2i = 1 + it + i - t + 2i = (1-t) + i(3+t)$.
+
+$\mathrm{Re}(w) = 1-t$, $\mathrm{Im}(w) = 3+t$. Eliminating $t$: $\mathrm{Im}(w) = 3 + (1 - \mathrm{Re}(w)) = 4 - \mathrm{Re}(w)$.
+
+The image is the line $\boxed{u + v = 4}$ (where $w = u + iv$).
+
+### Example 8.6: Sum of roots of unity
+
+**Problem.** Show that $\displaystyle\sum_{k=0}^{n-1} \omega^k = 0$ where $\omega = e^{2\pi i/n}$.
+
+**Solution.** This is a geometric series with ratio $\omega \neq 1$:
+
+$$\sum_{k=0}^{n-1} \omega^k = \frac{1 - \omega^n}{1 - \omega} = \frac{1 - 1}{1 - \omega} = 0$$
+
+$\blacksquare$
+
+### Example 8.7: Product of roots of unity
+
+**Problem.** Show that the product of all $n$-th roots of unity is $(-1)^{n+1}$.
+
+**Solution.** The $n$-th roots of unity are the roots of $z^n - 1 = 0$. By Vieta's formulae, the product of all roots is $(-1)^n \times (-1) = (-1)^{n+1}$.
+
+Alternatively: the roots are $1, \omega, \omega^2, \ldots, \omega^{n-1}$, so the product is $\omega^{0+1+2+\cdots+(n-1)} = \omega^{n(n-1)/2} = e^{\pi i(n-1)} = (-1)^{n-1} = (-1)^{n+1}$. $\blacksquare$
+
+---
+
+## 9. Common Pitfalls
+
+| Pitfall | Correct Approach |
+|---|---|
+| Forgetting that $\arg(z)$ is measured from the positive real axis | $\arg(z)$ is the angle anticlockwise from the positive $x$-axis, range $(-\pi, \pi]$ or $[0, 2\pi)$ |
+| Confusing $|z-w|$ with $|z|-|w|$ | $|z-w|$ is the distance between $z$ and $w$; in general $|z-w| \neq |z|-|w|$ |
+| Missing roots when solving $z^n = w$ | There are always exactly $n$ distinct roots; check your $k$ values cover $0$ to $n-1$ |
+| Incorrectly applying de Moivre to non-integer powers | De Moivre's theorem $(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$ holds for integer $n$ only |
+
+---
+
+## 10. Additional Exam-Style Questions
+
+### Question 8
+
+Solve $z^4 = 8(1 + i\sqrt{3})$, giving roots in the form $r(\cos\theta + i\sin\theta)$.
+
+<details>
+<summary>Solution</summary>
+
+$8(1+i\sqrt{3}) = 16e^{i\pi/3}$.
+
+$z_k = 2\exp\!\left(\dfrac{i(\pi/3 + 2k\pi)}{4}\right)$ for $k = 0, 1, 2, 3$.
+
+$z_0 = 2(\cos 15° + i\sin 15°)$, $z_1 = 2(\cos 105° + i\sin 105°)$, $z_2 = 2(\cos 195° + i\sin 195°)$, $z_3 = 2(\cos 285° + i\sin 285°)$.
+
+</details>
+
+### Question 9
+
+**Prove that** $\cos^4\theta = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta$.
+
+<details>
+<summary>Solution</summary>
+
+$\cos^2\theta = \dfrac{1+\cos 2\theta}{2}$.
+
+$\cos^4\theta = \left(\dfrac{1+\cos 2\theta}{2}\right)^{\!2} = \dfrac{1 + 2\cos 2\theta + \cos^2 2\theta}{4}$.
+
+$\cos^2 2\theta = \dfrac{1+\cos 4\theta}{2}$.
+
+$\cos^4\theta = \dfrac{1}{4} + \dfrac{\cos 2\theta}{2} + \dfrac{1+\cos 4\theta}{8} = \dfrac{3}{8} + \dfrac{\cos 2\theta}{2} + \dfrac{\cos 4\theta}{8}$. $\blacksquare$
+
+</details>
+
+### Question 10
+
+The complex number $z$ satisfies $|z-1| = |z+1|$ and $|z-3i| = 3$. Find $z$.
+
+<details>
+<summary>Solution</summary>
+
+$|z-1| = |z+1|$: perpendicular bisector of $1$ and $-1$, giving $\mathrm{Re}(z) = 0$. So $z = iy$.
+
+$|z-3i| = 3 \implies |iy - 3i| = 3 \implies |y-3| = 3 \implies y - 3 = \pm 3$.
+
+$y = 6$ or $y = 0$. So $z = 6i$ or $z = 0$.
+
+</details>
+
+---
+
+## 11. Connections to Other Topics
+
+### 11.1 Complex numbers and matrices
+
+Complex eigenvalues of 2×2 matrices correspond to rotation-scaling transformations. See [Matrices](/docs/docs_alevel/further-maths/pure-mathematics/02-matrices).
+
+### 11.2 Complex numbers and hyperbolic functions
+
+$e^{ix} = \cos x + i\sin x$ connects exponential, trigonometric, and hyperbolic functions. See [Hyperbolic Functions](/docs/docs_alevel/further-maths/pure-mathematics/06-hyperbolic-functions).
+
+### 11.3 Complex numbers and polar coordinates
+
+Argand diagrams and polar form $(r, \theta)$ connect to polar coordinates. See [Polar Coordinates](/docs/docs_alevel/further-maths/pure-mathematics/05-polar-coordinates).
+
+---
+
+## 12. Key Results Summary
+
+| Result | Formula |
+|---|---|
+| Modulus | $|z| = \sqrt{a^2+b^2}$ for $z = a+bi$ |
+| Argument | $\arg(z) = \arctan(b/a)$ (adjusting for quadrant) |
+| Euler's formula | $e^{i\theta} = \cos\theta+i\sin\theta$ |
+| De Moivre | $(\cos\theta+i\sin\theta)^n = \cos n\theta+i\sin n\theta$ |
+| $n$-th roots of unity | $z_k = e^{2\pi ik/n}$, $k = 0, \ldots, n-1$ |
+| Locus: circle | $|z-a|=r$ |
+| Locus: perpendicular bisector | $|z-a|=|z-b|$ |
+| Locus: half-line | $\arg(z-a) = \theta$ |
+
+---
+
+## 13. Further Exam-Style Questions
+
+### Question 11
+
+Solve $z^3 = -8i$, giving roots in Cartesian form.
+
+<details>
+<summary>Solution</summary>
+
+$-8i = 8e^{-i\pi/2}$. Roots: $z_k = 2\exp\!\left(\dfrac{-i\pi/2 + 2k\pi i}{3}\right)$ for $k=0,1,2$.
+
+$z_0 = 2e^{-i\pi/6} = 2\!\left(\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) = \sqrt{3}-i$.
+
+$z_1 = 2e^{i\pi/2} = 2i$.
+
+$z_2 = 2e^{7i\pi/6} = 2\!\left(-\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) = -\sqrt{3}-i$.
+
+$\boxed{z = \sqrt{3}-i,\; 2i,\; -\sqrt{3}-i}$
+
+</details>
+
+### Question 12
+
+**Prove that** $|z_1 z_2| = |z_1||z_2|$ for any complex numbers $z_1, z_2$.
+
+<details>
+<summary>Solution</summary>
+
+Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$.
+
+$z_1 z_2 = r_1 r_2 e^{i(\theta_1+\theta_2)}$.
+
+$|z_1 z_2| = r_1 r_2 = |z_1||z_2|$. $\blacksquare$
+
+</details>
+
+---
+
+## 14. Advanced Topics
+
+### 14.1 The exponential form of complex numbers
+
+Any non-zero complex number can be written as $z = re^{i\theta}$ where $r = |z|$ and $\theta = \arg(z)$.
+
+This form makes multiplication and division particularly simple:
+- $z_1 z_2 = r_1 r_2 e^{i(\theta_1+\theta_2)}$
+- $z_1/z_2 = (r_1/r_2) e^{i(\theta_1-\theta_2)}$
+
+### 14.2 Euler's identity
+
+Setting $\theta = \pi$ in Euler's formula: $e^{i\pi} + 1 = 0$.
+
+This connects five fundamental constants: $e$, $i$, $\pi$, $1$, and $0$.
+
+### 14.3 Complex conjugate and roots of polynomials
+
+If $P(z)$ is a polynomial with real coefficients and $z = a + bi$ is a root, then $\bar{z} = a - bi$ is also a root. This is because $\overline{P(z)} = P(\bar{z})$ for real-coefficient polynomials.
+
+### 14.4 Regions in the Argand diagram
+
+| Inequality | Region |
+|---|---|
+| $\|z-a\| < r$ | Interior of circle (open disc) |
+| $\|z-a\| \leq r$ | Closed disc |
+| $\alpha < \arg(z-a) < \beta$ | Sector (angular region) |
+| $\mathrm{Re}(z) > k$ | Half-plane to the right of $x = k$ |
+| $\mathrm{Im}(z) > k$ | Half-plane above $y = k$ |
+
+### 14.5 The exponential form of $\sin$ and $\cos$
+
+From $e^{i\theta} = \cos\theta + i\sin\theta$ and $e^{-i\theta} = \cos\theta - i\sin\theta$:
+
+$$\cos\theta = \frac{e^{i\theta}+e^{-i\theta}}{2}, \qquad \sin\theta = \frac{e^{i\theta}-e^{-i\theta}}{2i}$$
+
+These are essential for deriving trigonometric identities and solving certain integrals.
+
+---
+
+## 15. Further Exam-Style Questions
+
+### Question 13
+
+Express $\dfrac{1+e^{i\theta}}{1-e^{i\theta}}$ in the form $a+bi$.
+
+<details>
+<summary>Solution</summary>
+
+$\dfrac{1+e^{i\theta}}{1-e^{i\theta}} = \dfrac{e^{i\theta/2}(e^{-i\theta/2}+e^{i\theta/2})}{e^{i\theta/2}(e^{-i\theta/2}-e^{i\theta/2})} = \dfrac{2\cos(\theta/2)}{-2i\sin(\theta/2)} = \dfrac{i\cos(\theta/2)}{\sin(\theta/2)} = \boxed{i\cot(\theta/2)}$
+
+</details>
+
+### Question 14
+
+**Prove that** the sum of the $n$-th roots of unity is zero.
+
+<details>
+<summary>Solution</summary>
+
+The $n$-th roots of unity are $1, \omega, \omega^2, \ldots, \omega^{n-1}$ where $\omega = e^{2\pi i/n}$.
+
+This is a geometric series: $\displaystyle\sum_{k=0}^{n-1} \omega^k = \frac{1-\omega^n}{1-\omega} = \frac{1-1}{1-\omega} = 0$. $\blacksquare$
+
+</details>
+
+### Question 15
+
+Find all complex numbers $z$ such that $z\bar{z} + z + \bar{z} = 3$.
+
+<details>
+<summary>Solution</summary>
+
+Let $z = x+iy$. Then $\bar{z} = x-iy$ and $z\bar{z} = x^2+y^2$.
+
+$x^2+y^2 + 2x = 3 \implies (x+1)^2 + y^2 = 4$.
+
+This is a circle with centre $(-1, 0)$ and radius $2$. All complex numbers on this circle satisfy the equation.
+
+</details>
+
+---
+
+## 16. Further Advanced Topics
+
+### 16.1 The fundamental theorem of algebra
+
+Every polynomial of degree $n \geq 1$ with complex coefficients has exactly $n$ roots (counting multiplicity) in the complex numbers.
+
+This means: every polynomial can be factored as $P(z) = a(z - z_1)(z - z_2)\cdots(z - z_n)$.
+
+### 16.2 Complex numbers as rotations and dilations
+
+Multiplication by $re^{i\theta}$ represents:
+- Dilation by scale factor $r$
+- Rotation by angle $\theta$ anticlockwise
+
+This provides a geometric interpretation of all complex arithmetic.
+
+### 16.3 $n$-th roots of any complex number
+
+To solve $z^n = w = re^{i\phi}$:
+
+$$z_k = r^{1/n} \exp\!\left(\frac{i(\phi + 2k\pi)}{n}\right) \quad \text{for } k = 0, 1, \ldots, n-1$$
+
+The roots lie on a circle of radius $r^{1/n}$, equally spaced.
+
+### 16.4 The complex exponential function
+
+$e^z = e^{x+iy} = e^x(\cos y + i\sin y)$ for $z = x + iy$.
+
+Key properties:
+- $|e^z| = e^x$
+- $\arg(e^z) = y$ (mod $2\pi$)
+- $e^{z_1+z_2} = e^{z_1}e^{z_2}$
+- $e^z \neq 0$ for all $z$
+- $e^z = 1 \iff z = 2k\pi i$ for some integer $k$
+
+---
+
+## 17. Further Exam-Style Questions
+
+### Question 16
+
+Find all complex numbers $z$ such that $z^4 = -16$.
+
+<details>
+<summary>Solution</summary>
+
+$-16 = 16e^{i\pi}$. Roots: $z_k = 2\exp\!\left(\dfrac{i(\pi+2k\pi)}{4}\right)$ for $k=0,1,2,3$.
+
+$z_0 = 2e^{i\pi/4} = \sqrt{2}+i\sqrt{2}$, $z_1 = 2e^{i3\pi/4} = -\sqrt{2}+i\sqrt{2}$,
+
+$z_2 = 2e^{i5\pi/4} = -\sqrt{2}-i\sqrt{2}$, $z_3 = 2e^{i7\pi/4} = \sqrt{2}-i\sqrt{2}$.
+
+</details>
+
+### Question 17
+
+**Prove that** for any complex number $z$: $\overline{z_1 z_2} = \bar{z}_1 \cdot \bar{z}_2$.
+
+<details>
+<summary>Solution</summary>
+
+Let $z_1 = a+bi$ and $z_2 = c+di$.
+
+$z_1 z_2 = (ac-bd) + (ad+bc)i$.
+
+$\overline{z_1 z_2} = (ac-bd) - (ad+bc)i$.
+
+$\bar{z}_1 \cdot \bar{z}_2 = (a-bi)(c-di) = ac - adi - bci + bdi^2 = (ac-bd) - (ad+bc)i$.
+
+Equal. $\blacksquare$
+
+</details>
+
+### Question 18
+
+The complex numbers $z$ and $w$ satisfy $|z| = 3$, $|w| = 4$, and $|z+w| = 5$. Find $|z-w|$.
+
+<details>
+<summary>Solution</summary>
+
+$|z+w|^2 = |z|^2 + |w|^2 + 2\mathrm{Re}(z\bar{w}) = 9+16+2\mathrm{Re}(z\bar{w}) = 25$.
+
+$\mathrm{Re}(z\bar{w}) = 0$.
+
+$|z-w|^2 = |z|^2 + |w|^2 - 2\mathrm{Re}(z\bar{w}) = 9+16-0 = 25$.
+
+$\boxed{|z-w| = 5}$
+
+</details>
+
+---
+
+## 18. Further Advanced Topics
+
+### 18.1 Riemann surfaces and multi-valued functions
+
+The complex logarithm, $n$-th root, and inverse trigonometric functions are all multi-valued. Branch cuts are used to define single-valued branches (principal values).
+
+### 18.2 The complex plane and stereographic projection
+
+The extended complex plane $\hat{\mathbb{C}} = \mathbb{C} \cup \{\infty\}$ is topologically a sphere (the Riemann sphere). Stereographic projection maps each point on the sphere (except the north pole) to a unique point in the complex plane.
+
+### 18.3 Complex analysis connections
+
+While complex analysis (Cauchy's theorem, residue calculus) is beyond A-Level, the fundamental concepts appear:
+- Cauchy's integral formula: $f(a) = \dfrac{1}{2\pi i}\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
+- Residue theorem: $\displaystyle\oint_C f(z)\,dz = 2\pi i \sum \text{Res}(f, a_k)$
+
+These are mentioned for context and further study.
+
+### 18.4 De Moivre's theorem — number theory applications
+
+De Moivre's theorem connects complex numbers to number theory:
+- Fermat's theorem on sums of two squares: $p \equiv 1 \pmod 4 \implies p = a^2 + b^2$
+- Wilson's theorem: $(p-1)! \equiv -1 \pmod p$ for prime $p$
+
+---
+
+## 19. Further Exam-Style Questions
+
+### Question 19
+
+Express $\cos 5\theta + i\sin 5\theta$ in terms of $\cos\theta$ and $\sin\theta$ using the binomial theorem.
+
+<details>
+<summary>Solution</summary>
+
+$(\cos\theta + i\sin\theta)^5 = \cos^5\theta + 5i\cos^4\theta\sin\theta - 10\cos^3\theta\sin^2\theta - 10i\cos^2\theta\sin^3\theta + 5\cos\theta\sin^4\theta + i\sin^5\theta$.
+
+Real part: $\cos 5\theta = \cos^5\theta - 10\cos^3\theta\sin^2\theta + 5\cos\theta\sin^4\theta$.
+
+Using $\sin^2\theta = 1-\cos^2\theta$:
+
+$= \cos^5\theta - 10\cos^3\theta(1-\cos^2\theta) + 5\cos\theta(1-\cos^2\theta)^2$
+
+$= \cos^5\theta - 10\cos^3\theta + 10\cos^5\theta + 5\cos\theta - 10\cos^3\theta + 5\cos^5\theta$
+
+$= \boxed{16\cos^5\theta - 20\cos^3\theta + 5\cos\theta}$.
+
+</details>
+
+### Question 20
+
+**Prove that** $|z+w|^2 + |z-w|^2 = 2(|z|^2+|w|^2)$ for all complex numbers $z, w$ (the parallelogram law).
+
+<details>
+<summary>Solution</summary>
+
+$|z+w|^2 + |z-w|^2 = (z+w)(\bar{z}+\bar{w}) + (z-w)(\bar{z}-\bar{w})$
+
+$= |z|^2+z\bar{w}+w\bar{z}+|w|^2 + |z|^2-z\bar{w}-w\bar{z}+|w|^2 = 2|z|^2 + 2|w|^2$.
+
+This is the parallelogram law: the sum of squares of the diagonals equals the sum of squares of all four sides. $\blacksquare$
+
+</details>

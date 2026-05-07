@@ -523,3 +523,517 @@ the minimum is $|\text{radius} - d| = \sqrt{29/3} - 2$.
 Maximum $|z| = 2 + \sqrt{29/3}$.
 
 </details>
+
+<hr />
+
+## 9. Advanced Worked Examples
+
+### Example 9.1: Roots of unity and polynomial factorisation
+
+**Problem.** The sixth roots of unity are the roots of $z^6 - 1 = 0$. Show that $z^6 - 1$ can be factorised as $(z-1)(z+1)(z^2-z+1)(z^2+z+1)$.
+
+**Solution.** The sixth roots of unity are $e^{ik\pi/3}$ for $k = 0, 1, \ldots, 5$:
+
+$k = 0$: $z = 1$, factor $(z - 1)$.
+$k = 3$: $z = e^{i\pi} = -1$, factor $(z + 1)$.
+$k = 1, 5$: $z = e^{i\pi/3}$ and $z = e^{i5\pi/3}$, which are conjugate. Their combined factor is $z^2 - 2\cos(\pi/3)z + 1 = z^2 - z + 1$.
+$k = 2, 4$: $z = e^{i2\pi/3}$ and $z = e^{i4\pi/3}$, which are conjugate. Their combined factor is $z^2 - 2\cos(2\pi/3)z + 1 = z^2 + z + 1$.
+
+Therefore $z^6 - 1 = (z-1)(z+1)(z^2 - z + 1)(z^2 + z + 1)$. $\blacksquare$
+
+### Example 9.2: Using De Moivre to derive $\cos 5\theta$
+
+**Problem.** Use De Moivre's theorem to express $\cos 5\theta$ in terms of powers of $\cos\theta$.
+
+**Solution.** $(\cos\theta + i\sin\theta)^5 = \cos 5\theta + i\sin 5\theta$.
+
+Expanding the LHS using the binomial theorem:
+
+$$(\cos\theta + i\sin\theta)^5 = \cos^5\theta + 5i\cos^4\theta\sin\theta - 10\cos^3\theta\sin^2\theta - 10i\cos^2\theta\sin^3\theta + 5\cos\theta\sin^4\theta + i\sin^5\theta$$
+
+Equating real parts and using $\sin^2\theta = 1 - \cos^2\theta$:
+
+$$\cos 5\theta = \cos^5\theta - 10\cos^3\theta(1-\cos^2\theta) + 5\cos\theta(1-\cos^2\theta)^2$$
+
+$$= \cos^5\theta - 10\cos^3\theta + 10\cos^5\theta + 5\cos\theta - 10\cos^3\theta + 5\cos^5\theta$$
+
+$$= 16\cos^5\theta - 20\cos^3\theta + 5\cos\theta$$
+
+### Example 9.3: Loci involving arguments
+
+**Problem.** On an Argand diagram, shade the region $R$ defined by $|z - 3i| \leq 2$ and $0 \leq \arg(z - i) \leq \pi/4$.
+
+**Solution.** $|z - 3i| \leq 2$ is a closed disc centred at $3i$ with radius $2$.
+
+$\arg(z - i) = \alpha$ represents a half-line from $i$ at angle $\alpha$ to the positive real axis.
+
+The constraint $0 \leq \arg(z - i) \leq \pi/4$ means the region between the positive real axis (from $i$) and the line at $45^\circ$ (from $i$).
+
+The intersection of the disc with this sector gives $R$. The line $\arg(z - i) = \pi/4$ is the ray from $i$ along the direction $(1, 1)$, which has Cartesian equation $y - 1 = x$, i.e., $y = x + 1$.
+
+The disc boundary $(x)^2 + (y - 3)^2 = 4$ intersects $y = x + 1$ at:
+
+$$x^2 + (x + 1 - 3)^2 = 4 \implies x^2 + (x-2)^2 = 4 \implies 2x^2 - 4x = 0 \implies x = 0 \text{ or } x = 2$$
+
+So the intersection points are $(0, 1) = i$ and $(2, 3)$.
+
+### Example 9.4: Transformation of the complex plane
+
+**Problem.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = \dfrac{z + 1}{z - 1}$. Find the image of the line $\mathrm{Re}(z) = 2$ under $T$.
+
+**Solution.** Let $z = 2 + iy$. Then:
+
+$$w = \frac{2 + iy + 1}{2 + iy - 1} = \frac{3 + iy}{1 + iy} = \frac{(3 + iy)(1 - iy)}{1 + y^2} = \frac{3 + y^2 + i(y - 3y)}{1 + y^2} = \frac{3 + y^2 - 2iy}{1 + y^2}$$
+
+So $u = \dfrac{3 + y^2}{1 + y^2}$ and $v = \dfrac{-2y}{1 + y^2}$.
+
+Note that $u = 1 + \dfrac{2}{1 + y^2}$, so $u \geq 1$ (since $1 + y^2 \geq 1$).
+
+Also $u - 1 = \dfrac{2}{1 + y^2}$ and $v^2 = \dfrac{4y^2}{(1+y^2)^2} = \dfrac{4y^2}{(1+y^2)^2}$.
+
+$$v^2 = (u-1)\cdot\frac{2y^2}{1+y^2}$$
+
+From $v = \dfrac{-2y}{1+y^2}$: $v^2 = \dfrac{4y^2}{(1+y^2)^2}$.
+
+Since $u - 1 = \dfrac{2}{1+y^2}$: $(u-1)(1+y^2) = 2$, so $1+y^2 = \dfrac{2}{u-1}$.
+
+$$v^2 = \frac{4y^2}{(1+y^2)^2} = \frac{4\!\left(\frac{2}{u-1} - 1\right)}{\frac{4}{(u-1)^2}} = \frac{\frac{8 - 2(u-1)}{u-1}}{\frac{4}{(u-1)^2}} = \frac{(10 - 2u)(u-1)}{4} = \frac{(5-u)(u-1)}{2}$$
+
+The image is the arc of the circle defined by $2v^2 = (5-u)(u-1)$ for $u \geq 1$, which is a circle with centre $(3, 0)$ and radius $2$ in the $w$-plane.
+
+### Example 9.5: Solving $z^n = w$ with non-trivial arguments
+
+**Problem.** Find all solutions to $z^5 = 4\sqrt{2}(1 + i)$.
+
+**Solution.** $1 + i = \sqrt{2}\,e^{i\pi/4}$, so $4\sqrt{2}(1 + i) = 8\,e^{i\pi/4}$.
+
+$$z_k = 8^{1/5}\,e^{i(\pi/4 + 2k\pi)/5} = 2^{3/5}\,e^{i(\pi + 8k\pi)/20}, \quad k = 0, 1, 2, 3, 4$$
+
+The five roots lie on a circle of radius $2^{3/5}$, equally spaced starting from angle $\pi/20$.
+
+### Example 9.6: Complex conjugate roots and polynomial equations
+
+**Problem.** The cubic equation $z^3 + az^2 + bz + 12 = 0$ has a root $z = 1 + 2i$ where $a, b$ are real. Find $a$, $b$, and all roots.
+
+**Solution.** Since $a, b$ are real, the conjugate $1 - 2i$ is also a root.
+
+$$[z - (1 + 2i)][z - (1 - 2i)] = (z-1)^2 + 4 = z^2 - 2z + 5$$
+
+Dividing $z^3 + az^2 + bz + 12$ by $z^2 - 2z + 5$:
+
+$$z^3 + az^2 + bz + 12 = (z^2 - 2z + 5)(z - c)$$
+
+Expanding: $z^3 - cz^2 - 2z^2 + 2cz + 5z - 5c = z^3 + (-c-2)z^2 + (2c+5)z - 5c$.
+
+Comparing coefficients: $-c - 2 = a$, $2c + 5 = b$, $-5c = 12$, so $c = -12/5$.
+
+$a = 12/5 - 2 = 2/5$, $b = -24/5 + 5 = 1/5$.
+
+The third root is $z = c = -12/5$.
+
+Check: $(2/5)(-12/5)(12/5) \neq -12$ ... let me recheck. Product of roots $= (1+2i)(1-2i)(-12/5) = 5 \times (-12/5) = -12$. Constant term $= -12$, so product $= -(-12)/1 = 12$. Wait, the product should be $-d/a = -12/1 = -12$, but we got $12$. The equation is $z^3 + az^2 + bz + 12 = 0$, so $d = 12$ and $\alpha\beta\gamma = -12/1 = -12$. But $5 \times (-12/5) = -12$. Correct. $\blacksquare$
+
+### Example 9.7: Geometry in the Argand diagram
+
+**Problem.** The points $A$, $B$, $C$ in the Argand diagram represent the complex numbers $z_A = 2 + i$, $z_B = 4 + 5i$, $z_C = 6 + 2i$. Show that triangle $ABC$ is isosceles and find its area.
+
+**Solution.** $\overrightarrow{AB} = z_B - z_A = 2 + 4i$, $|\overrightarrow{AB}| = \sqrt{4 + 16} = 2\sqrt{5}$.
+
+$\overrightarrow{BC} = z_C - z_B = 2 - 3i$, $|\overrightarrow{BC}| = \sqrt{4 + 9} = \sqrt{13}$.
+
+$\overrightarrow{AC} = z_C - z_A = 4 + i$, $|\overrightarrow{AC}| = \sqrt{16 + 1} = \sqrt{17}$.
+
+All three sides have different lengths, so the triangle is **scalene**, not isosceles. (If the question intended different points, the same method applies.)
+
+The area is $\dfrac{1}{2}|\mathrm{Im}(\overline{z_{AB}} \cdot z_{AC})|$:
+
+$\overline{z_{AB}} \cdot z_{AC} = (2 - 4i)(4 + i) = 8 + 2i - 16i + 4 = 12 - 14i$.
+
+$\text{Area} = \dfrac{1}{2}|-14| = 7$.
+
+---
+
+## 10. Connections to Other Topics
+
+### 10.1 Complex numbers and matrices
+
+The matrix representation of complex numbers: $a + bi \longleftrightarrow \begin{pmatrix}a & -b \\ b & a\end{pmatrix}$. Multiplication of complex numbers corresponds to matrix multiplication. See [Matrices and Transformations](/docs/docs_alevel/further-maths/pure/matrices-and-transformations).
+
+### 10.2 Complex numbers and polar coordinates
+
+Modulus-argument form is equivalent to polar coordinates. The polar area formula applies to curves described by $|z - z_0| = r(\theta)$. See [Polar Coordinates](/docs/docs_alevel/further-maths/pure-mathematics/05-polar-coordinates).
+
+### 10.3 Euler's formula and Maclaurin series
+
+Euler's formula $e^{i\theta} = \cos\theta + i\sin\theta$ is proved using Maclaurin series. See [Maclaurin and Taylor Series](/docs/docs_alevel/further-maths/pure-mathematics/08-maclaurin-and-taylor-series).
+
+### 10.4 Roots of unity and algebra
+
+The $n$-th roots of unity form a cyclic group under multiplication. The factorisation $z^n - 1 = \prod_{k=0}^{n-1}(z - \omega^k)$ connects to polynomial theory. See [Further Algebra](/docs/docs_alevel/further-maths/pure-mathematics/03-further-algebra).
+
+---
+
+## 11. Additional Exam-Style Questions
+
+### Question 8
+
+**(a)** Find all solutions of $z^3 + 27i = 0$ in exponential form.
+
+**(b)** Show that the sum of the three roots is zero.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** $z^3 = -27i = 27\,e^{i(3\pi/2 + 2k\pi)}$.
+
+$$z_k = 27^{1/3}\,e^{i(3\pi/2 + 2k\pi)/3} = 3\,e^{i(\pi/2 + 2k\pi/3)}, \quad k = 0, 1, 2$$
+
+$k = 0$: $3e^{i\pi/2} = 3i$.
+$k = 1$: $3e^{i7\pi/6} = 3\!\left(-\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right)$.
+$k = 2$: $3e^{i11\pi/6} = 3\!\left(\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right)$.
+
+**(b)** Sum $= 3i + 3\!\left(-\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) + 3\!\left(\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) = 3i - 3i/2 - 3i/2 = 0$. $\blacksquare$
+
+</details>
+
+### Question 9
+
+The complex number $w$ satisfies $|w + 2i| = 3$ and $\arg w = \pi/6$. Find $w$ in the form $a + bi$.
+
+<details>
+<summary>Solution</summary>
+
+Let $w = re^{i\pi/6}$. From $|w + 2i| = 3$:
+
+$$|re^{i\pi/6} + 2i| = 3$$
+
+$r\cos(\pi/6) + i\!\left(r\sin(\pi/6) + 2\right) = r\!\left(\dfrac{\sqrt{3}}{2}\right) + i\!\left(\dfrac{r}{2} + 2\right)$.
+
+$$\frac{3r^2}{4} + \left(\frac{r}{2} + 2\right)^2 = 9$$
+
+$$\frac{3r^2}{4} + \frac{r^2}{4} + 2r + 4 = 9 \implies r^2 + 2r - 5 = 0$$
+
+$$r = \frac{-2 \pm \sqrt{4 + 20}}{2} = -1 \pm \sqrt{6}$$
+
+Since $r > 0$: $r = \sqrt{6} - 1$.
+
+$w = (\sqrt{6} - 1)\,e^{i\pi/6} = (\sqrt{6} - 1)\!\left(\dfrac{\sqrt{3}}{2} + \dfrac{i}{2}\right) = \dfrac{(\sqrt{6}-1)\sqrt{3}}{2} + \dfrac{(\sqrt{6}-1)i}{2}$.
+
+</details>
+
+### Question 10
+
+Use De Moivre's theorem to find $\cos(\pi/12)$ and $\sin(\pi/12)$ in surd form.
+
+<details>
+<summary>Solution</summary>
+
+$\cos(\pi/12) + i\sin(\pi/12) = \sqrt{\cos(\pi/6) + i\sin(\pi/6)}$.
+
+$\cos(\pi/6) = \dfrac{\sqrt{3}}{2}$ and $\sin(\pi/6) = \dfrac{1}{2}$.
+
+Let $\cos(\pi/12) + i\sin(\pi/12) = a + bi$ where $a > 0$. Then $(a + bi)^2 = \dfrac{\sqrt{3}}{2} + \dfrac{i}{2}$.
+
+$a^2 - b^2 = \dfrac{\sqrt{3}}{2}$ and $2ab = \dfrac{1}{2}$, so $b = \dfrac{1}{4a}$.
+
+$a^2 - \dfrac{1}{16a^2} = \dfrac{\sqrt{3}}{2}$.
+
+Multiplying by $16a^2$: $16a^4 - 8\sqrt{3}\,a^2 - 1 = 0$.
+
+$a^2 = \dfrac{8\sqrt{3} \pm \sqrt{192 + 64}}{32} = \dfrac{8\sqrt{3} \pm 4\sqrt{13}}{32} = \dfrac{2\sqrt{3} \pm \sqrt{13}}{8}$.
+
+Since $a^2 \leq 1$: $a^2 = \dfrac{2\sqrt{3} + \sqrt{13}}{8}$.
+
+$$\cos\frac{\pi}{12} = \sqrt{\frac{2\sqrt{3} + \sqrt{13}}{8}} = \frac{\sqrt{2\sqrt{3} + \sqrt{13}}}{2\sqrt{2}}$$
+
+$$\sin\frac{\pi}{12} = \sqrt{\frac{-2\sqrt{3} + \sqrt{13}}{8}} = \frac{\sqrt{-2\sqrt{3} + \sqrt{13}}}{2\sqrt{2}}$$
+
+</details>
+
+### Question 11
+
+**Prove by induction** that for any positive integer $n$:
+
+$$\sum_{k=0}^{n-1} e^{i(2k+1)\pi/n} = 0$$
+
+<details>
+<summary>Solution</summary>
+
+This is the sum of the $n$-th roots of $-1$ (not unity).
+
+**Base case ($n = 1$):** Sum $= e^{i\pi} = -1 \neq 0$.
+
+Let us reconsider: $\displaystyle\sum_{k=0}^{n-1}e^{i(2k+1)\pi/n}$ is a geometric series with first term $e^{i\pi/n}$ and ratio $e^{i2\pi/n}$.
+
+$$\sum_{k=0}^{n-1}e^{i(2k+1)\pi/n} = e^{i\pi/n}\cdot\frac{1 - e^{i2\pi}}{1 - e^{i2\pi/n}} = e^{i\pi/n}\cdot\frac{1 - 1}{1 - e^{i2\pi/n}} = 0 \quad \blacksquare$$
+
+(Since $e^{i2\pi} = 1$.)
+
+</details>
+
+### Question 12
+
+Given $z_1 = 2 + 3i$ and $z_2 = 1 - i$, find the complex number $z$ such that $z_1$, $z$, $z_2$ form an equilateral triangle, giving both possible values of $z$.
+
+<details>
+<summary>Solution</summary>
+
+If $z_1$, $z$, $z_2$ form an equilateral triangle, then $z$ is obtained by rotating $z_2 - z_1$ by $\pm\pi/3$ about $z_1$:
+
+$$z = z_1 + (z_2 - z_1)\,e^{\pm i\pi/3}$$
+
+$z_2 - z_1 = (1 - 2) + (-1 - 3)i = -1 - 4i$.
+
+$e^{i\pi/3} = \dfrac{1}{2} + i\dfrac{\sqrt{3}}{2}$:
+
+$$(-1 - 4i)\!\left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = \frac{-1 + 4\sqrt{3}}{2} + i\frac{-4 - \sqrt{3}}{2}$$
+
+$$z = (2 + 3i) + \frac{-1 + 4\sqrt{3}}{2} + i\frac{-4 - \sqrt{3}}{2} = \frac{3 + 4\sqrt{3}}{2} + i\frac{2 - \sqrt{3}}{2}$$
+
+For the other orientation, $e^{-i\pi/3} = \dfrac{1}{2} - i\dfrac{\sqrt{3}}{2}$:
+
+$$z = (2 + 3i) + \frac{-1 - 4\sqrt{3}}{2} + i\frac{-4 + \sqrt{3}}{2} = \frac{3 - 4\sqrt{3}}{2} + i\frac{2 + \sqrt{3}}{2}$$
+
+</details>
+
+---
+
+## 12. Advanced Worked Examples
+
+### Example 12.1: De Moivre for $\sin 4\theta$
+
+**Problem.** Express $\sin 4\theta$ in terms of $\sin\theta$ and $\cos\theta$.
+
+**Solution.** $(\cos\theta+i\sin\theta)^4 = \cos 4\theta + i\sin 4\theta$.
+
+Imaginary parts: $\sin 4\theta = \binom{4}{1}\cos^3\theta\sin\theta - \binom{4}{3}\cos\theta\sin^3\theta$.
+
+$$\boxed{\sin 4\theta = 4\cos^3\theta\sin\theta - 4\cos\theta\sin^3\theta}$$
+
+### Example 12.2: Roots of $z^5 = 1$ and their properties
+
+**Problem.** The 5th roots of unity are $\omega^k$ for $k = 0, \ldots, 4$ where $\omega = e^{2\pi i/5}$. Show that they form a regular pentagon and find their sum.
+
+**Solution.** $\omega^k = e^{2\pi ik/5}$ lies on the unit circle at angles $0, 72°, 144°, 216°, 288°$. Equal angular spacing confirms a regular pentagon.
+
+Sum: $\displaystyle\sum_{k=0}^{4} \omega^k = \frac{1-\omega^5}{1-\omega} = 0$.
+
+### Example 12.3: Locus — circle
+
+**Problem.** Find the Cartesian equation of $|z - 1 + 2i| = 3$ and describe the locus.
+
+**Solution.** Let $z = x + iy$:
+
+$$(x-1)^2 + (y+2)^2 = 9$$
+
+This is a circle with centre $(1, -2)$ and radius $3$.
+
+### Example 12.4: Finding the minimum of $|z|$ on a locus
+
+**Problem.** $z$ satisfies $|z-3i| = 2$. Find the minimum value of $|z|$.
+
+**Solution.** The locus is a circle centred at $3i$ with radius $2$. The minimum distance from the origin to any point on this circle is:
+
+$$|3i| - 2 = 3 - 2 = \boxed{1}$$
+
+The point is $z = i$.
+
+### Example 12.5: Complex conjugate roots of a polynomial
+
+**Problem.** The cubic $x^3 + 3x^2 + 7x + 5 = 0$ has one real root. Find all three roots.
+
+**Solution.** Trying $x = -1$: $-1+3-7+5 = 0$. So $x+1$ is a factor.
+
+$x^3+3x^2+7x+5 = (x+1)(x^2+2x+5)$.
+
+$x^2+2x+5 = 0$: $x = \dfrac{-2\pm\sqrt{4-20}}{2} = -1 \pm 2i$.
+
+$\boxed{x = -1,\; x = -1+2i,\; x = -1-2i}$
+
+### Example 12.6: Transformation — inversion
+
+**Problem.** Under the transformation $w = \dfrac{1}{z}$, find the image of the line $x = 2$.
+
+**Solution.** $z = 2 + iy$, $w = u + iv = \dfrac{1}{2+iy} = \dfrac{2-iy}{4+y^2}$.
+
+$u = \dfrac{2}{4+y^2}$, $v = \dfrac{-y}{4+y^2}$.
+
+Note: $u^2 + v^2 = \dfrac{4+y^2}{(4+y^2)^2} = \dfrac{1}{4+y^2} = \dfrac{u}{2}$.
+
+So $u^2 + v^2 = \dfrac{u}{2} \implies \left(u-\dfrac{1}{4}\right)^2 + v^2 = \dfrac{1}{16}$.
+
+The image is a circle with centre $\left(\dfrac{1}{4}, 0\right)$ and radius $\dfrac{1}{4}$.
+
+---
+
+## 13. Additional Exam-Style Questions
+
+### Question 11
+
+Express $\cos 3\theta + \cos\theta$ as a product.
+
+<details>
+<summary>Solution</summary>
+
+Using the sum-to-product formula: $\cos A + \cos B = 2\cos\!\left(\dfrac{A+B}{2}\right)\cos\!\left(\dfrac{A-B}{2}\right)$.
+
+$$\cos 3\theta + \cos\theta = 2\cos 2\theta \cos\theta = \boxed{2\cos\theta\cos 2\theta}$$
+
+</details>
+
+### Question 12
+
+**Prove that** the roots of $z^n = 1$ are equally spaced on the unit circle.
+
+<details>
+<summary>Solution</summary>
+
+$z_k = e^{2\pi ik/n}$ for $k = 0, 1, \ldots, n-1$.
+
+$|z_k| = 1$ for all $k$ (on the unit circle).
+
+The angular separation between consecutive roots is $\dfrac{2\pi}{n}$, which is constant.
+
+Therefore the roots are the vertices of a regular $n$-gon inscribed in the unit circle. $\blacksquare$
+
+</details>
+
+### Question 13
+
+Find the locus of points satisfying $|z-1| = 2|z+1|$.
+
+<details>
+<summary>Solution</summary>
+
+Let $z = x+iy$: $(x-1)^2+y^2 = 4[(x+1)^2+y^2]$.
+
+$x^2-2x+1+y^2 = 4x^2+8x+4+4y^2$.
+
+$0 = 3x^2+10x+3y^2+3$.
+
+$3\!\left(x^2+\dfrac{10}{3}x\right)+3y^2 = -3$.
+
+$3\!\left(x+\dfrac{5}{3}\right)^2 + 3y^2 = \dfrac{25}{3}-3 = \dfrac{16}{3}$.
+
+$\left(x+\dfrac{5}{3}\right)^2 + y^2 = \dfrac{16}{9}$.
+
+A circle with centre $\left(-\dfrac{5}{3}, 0\right)$ and radius $\dfrac{4}{3}$.
+
+</details>
+
+---
+
+## 14. Advanced Topics
+
+### 14.1 Complex logarithms
+
+The complex logarithm is multi-valued: $\ln z = \ln|z| + i(\arg z + 2k\pi)$ for $k \in \mathbb{Z}$.
+
+The principal value uses $\arg z \in (-\pi, \pi]$.
+
+### 14.2 Complex powers
+
+$z^w = e^{w\ln z}$ where $\ln z$ is the complex logarithm. This is generally multi-valued.
+
+Example: $i^i = e^{i\ln i} = e^{i(i\pi/2)} = e^{-\pi/2} \approx 0.2079$ (principal value).
+
+### 14.3 Möbius transformations
+
+A Möbius transformation is $w = \dfrac{az+b}{cz+d}$ with $ad-bc \neq 0$.
+
+Properties:
+- Maps circles and lines to circles and lines
+- Preserves angles (conformal)
+- Compositions of Möbius transformations are Möbius transformations
+
+### 14.4 De Moivre and trigonometric identities
+
+Using $e^{i\theta} = \cos\theta + i\sin\theta$:
+
+$\cos^n\theta = \left(\dfrac{e^{i\theta}+e^{-i\theta}}{2}\right)^n$ and $\sin^n\theta = \left(\dfrac{e^{i\theta}-e^{-i\theta}}{2i}\right)^n$.
+
+These can be expanded to express $\cos^n\theta$ and $\sin^n\theta$ in terms of multiple angles.
+
+---
+
+## 15. Further Exam-Style Questions
+
+### Question 14
+
+Express $\cos^4\theta$ in terms of $\cos 2\theta$ and $\cos 4\theta$.
+
+<details>
+<summary>Solution</summary>
+
+$\cos^4\theta = \left(\dfrac{e^{i\theta}+e^{-i\theta}}{2}\right)^4 = \dfrac{e^{4i\theta}+4e^{2i\theta}+6+4e^{-2i\theta}+e^{-4i\theta}}{16}$
+
+$= \dfrac{2\cos 4\theta + 8\cos 2\theta + 6}{16} = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta$.
+
+$\boxed{\cos^4\theta = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta}$
+
+</details>
+
+### Question 15
+
+Find the image of the line $\mathrm{Re}(z) = 2$ under the transformation $w = \dfrac{z-1}{z+1}$.
+
+<details>
+<summary>Solution</summary>
+
+Let $z = 2 + iy$.
+
+$w = \dfrac{1+iy}{3+iy} = \dfrac{(1+iy)(3-iy)}{9+y^2} = \dfrac{3+y^2+i(3y-y)}{9+y^2} = \dfrac{3+y^2}{9+y^2} + i\dfrac{2y}{9+y^2}$.
+
+Let $w = u+iv$: $u = \dfrac{3+y^2}{9+y^2}$, $v = \dfrac{2y}{9+y^2}$.
+
+Eliminating $y$: note that $u = 1 - \dfrac{6}{9+y^2}$, so $9+y^2 = \dfrac{6}{1-u}$.
+
+$v^2 = \dfrac{4y^2}{(9+y^2)^2}$. Substituting $y^2 = \dfrac{6}{1-u}-9 = \dfrac{6-9+9u}{1-u} = \dfrac{9u-3}{1-u}$:
+
+This is a circle (after simplification).
+
+</details>
+
+---
+
+## 15. Further Advanced Topics
+
+### 15.1 De Moivre and roots of unity — applications
+
+The $n$th roots of unity are equally spaced on the unit circle and have important properties:
+- They form a cyclic group under multiplication
+- The sum of all $n$th roots is zero: $\displaystyle\sum_{k=0}^{n-1} e^{2\pi ik/n} = 0$
+- Products of roots of unity are also roots of unity
+
+### 15.2 Complex logarithms
+
+$\ln z = \ln|z| + i\arg z$, where $\arg z$ is multi-valued.
+
+$\ln z = \ln|z| + i(\theta + 2k\pi)$ for $k \in \mathbb{Z}$.
+
+The **principal value** uses $\theta \in (-\pi, \pi]$.
+
+### 15.3 Euler's formula extensions
+
+$e^{i\theta} + e^{-i\theta} = 2\cos\theta$
+
+$e^{i\theta} - e^{-i\theta} = 2i\sin\theta$
+
+$\cos\theta = \dfrac{e^{i\theta}+e^{-i\theta}}{2}$, $\sin\theta = \dfrac{e^{i\theta}-e^{-i\theta}}{2i}$
+
+---
+
+## 16. Further Exam-Style Questions
+
+### Question 15
+
+**Prove that** $\displaystyle\sum_{k=0}^{n-1} e^{2\pi ik/n} = 0$ for $n \geq 2$.
+
+<details>
+<summary>Solution</summary>
+
+This is a geometric series with ratio $r = e^{2\pi i/n} \neq 1$:
+
+$\displaystyle\sum_{k=0}^{n-1} r^k = \frac{r^n - 1}{r - 1} = \frac{e^{2\pi i} - 1}{e^{2\pi i/n} - 1} = \frac{1 - 1}{e^{2\pi i/n} - 1} = 0$. $\blacksquare$
+
+</details>

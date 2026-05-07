@@ -392,3 +392,228 @@ $$\beta_2 = 70 - 10 \times 1.204 = 70 - 12.0 = 58.0 \mathrm{ dB}$$
 
 If you get this wrong, revise: Waves / Sound Intensity
 
+---
+
+## Data Analysis Techniques for DSE Physics
+
+### Significant Figures
+
+All final answers should be given to an appropriate number of significant figures (s.f.):
+
+- Raw data is recorded to the precision of the measuring instrument.
+- Calculated results should have the same number of s.f. as the least precise input value.
+- Intermediate calculations should keep at least one extra s.f. to avoid rounding errors.
+
+**Examples:**
+
+| Measurement          | Significant Figures |
+| -------------------- | ------------------- |
+| $12.5 \mathrm{ cm}$  | 3                   |
+| $0.0040 \mathrm{ kg}$ | 2 (leading zeros are not significant) |
+| $1500 \mathrm{ m}$   | Ambiguous (2, 3, or 4). Use scientific notation: $1.5 \times 10^3$ (2 s.f.) |
+
+### Uncertainty and Error Analysis
+
+**Absolute uncertainty:** The range within which the true value is expected to lie.
+e.g., $L = (25.0 \pm 0.5) \mathrm{ cm}$.
+
+**Percentage uncertainty:** $\frac{\Delta x}{x} \times 100\%$.
+
+**Combining uncertainties:**
+
+For addition/subtraction: add absolute uncertainties.
+
+$$z = x + y \implies \Delta z = \Delta x + \Delta y$$
+
+For multiplication/division and powers: add percentage uncertainties in quadrature.
+
+$$z = x^a y^b \implies \frac{\Delta z}{z} = \sqrt{\left(a\frac{\Delta x}{x}\right)^2 + \left(b\frac{\Delta y}{y}\right)^2}$$
+
+**Example:** $A = \frac{1}{2}mv^2$ with $m = (0.200 \pm 0.002) \mathrm{ kg}$, $v = (3.0 \pm 0.1) \mathrm{ m/s}$:
+
+$$A = \frac{1}{2}(0.200)(3.0)^2 = 0.90 \mathrm{ J}$$
+
+$$\frac{\Delta A}{A} = \sqrt{\left(\frac{0.002}{0.200}\right)^2 + \left(2 \times \frac{0.1}{3.0}\right)^2} = \sqrt{0.0001 + 0.0044} = \sqrt{0.0045} = 6.7\%$$
+
+$$\Delta A = 0.067 \times 0.90 = 0.06 \mathrm{ J}$$
+
+$$A = (0.90 \pm 0.06) \mathrm{ J}$$
+
+### Graphical Analysis
+
+**Line of best fit:** Draw a straight line that passes through as many data points as possible,
+with approximately equal numbers of points above and below the line.
+
+**Determining uncertainty from graphs:**
+1. Draw the line of best fit and calculate its gradient.
+2. Draw the steepest and shallowest reasonable lines (worst-fit lines) through the error bars.
+3. The uncertainty in the gradient is half the difference between the worst-fit gradients.
+
+**Linearising data:** Many physical relationships are not linear. Plot transformed variables to
+obtain a straight line:
+
+| Relationship        | Plot (y vs x)    | Gradient    | Intercept |
+| ------------------- | ---------------- | ----------- | --------- |
+| $y = ax + b$        | $y$ vs $x$       | $a$         | $b$       |
+| $y = ax^2$          | $y$ vs $x^2$     | $a$         | $0$       |
+| $y = a/x$           | $y$ vs $1/x$     | $a$         | $0$       |
+| $y = a\sqrt{x}$     | $y$ vs $\sqrt{x}$ | $a$       | $0$       |
+| $v^2 = u^2 + 2as$   | $v^2$ vs $s$     | $2a$        | $u^2$     |
+| $T^2 = \frac{4\pi^2}{g}L$ | $T^2$ vs $L$ | $\frac{4\pi^2}{g}$ | $0$  |
+
+---
+
+## Practical Skills
+
+### Measuring Instruments
+
+| Instrument              | Precision              | Notes                                     |
+| ----------------------- | ---------------------- | ----------------------------------------- |
+| Metre rule              | $\pm 1 \mathrm{ mm}$   | Parallax error possible                   |
+| Vernier calipers        | $\pm 0.05 \mathrm{ mm}$| For internal/external dimensions          |
+| Micrometer screw gauge  | $\pm 0.01 \mathrm{ mm}$| Zero error must be checked                |
+| Stopwatch               | $\pm 0.01 \mathrm{ s}$ | Reaction time dominates; use electronic   |
+| Thermometer             | $\pm 0.5^\circ\mathrm{C}$ | Mercury or alcohol                     |
+| Ammeter                 | $\pm$ half smallest division | Connected in series                  |
+| Voltmeter               | $\pm$ half smallest division | Connected in parallel                 |
+| Protractor              | $\pm 0.5^\circ$        | Align carefully with normal               |
+
+### Systematic vs Random Errors
+
+| Type        | Cause                         | Effect                           | Reduction                     |
+| ----------- | ----------------------------- | -------------------------------- | ----------------------------- |
+| Systematic  | Faulty instrument, zero error | All readings shifted same way    | Calibrate, use different method |
+| Random      | Fluctuations, human judgement | Readings spread above and below  | Repeat and average             |
+
+### Zero Error Correction
+
+A zero error occurs when an instrument does not read zero when it should. Always check and correct:
+
+**Positive zero error:** Instrument reads too high. Subtract the zero error from all readings.
+
+**Negative zero error:** Instrument reads too low. Add the magnitude of the zero error to all
+readings.
+
+**Example:** A micrometer reads $0.03 \mathrm{ mm}$ when fully closed (positive zero error).
+A measurement of $5.47 \mathrm{ mm}$ gives a corrected value of $5.47 - 0.03 = 5.44 \mathrm{ mm}$.
+
+---
+
+## Exam Technique for DSE Physics
+
+### Structured Questions
+
+DSE Physics Paper 1 contains structured questions. Each question typically has 3-8 parts, progressing
+from basic recall to calculation and explanation.
+
+**Approach:**
+1. Read the entire question before starting. Later parts may give hints for earlier parts.
+2. Show all working clearly. Method marks are awarded even if the final answer is wrong.
+3. Use the correct number of significant figures in final answers (usually 3 s.f.).
+4. Include units in every calculated answer.
+5. For explanations, use precise physics terminology.
+
+### Common Error Patterns in DSE Exams
+
+| Error Type                      | Example                                       | Correction                                    |
+| ------------------------------- | --------------------------------------------- | --------------------------------------------- |
+| Unit conversion                 | $1 \mathrm{ cm} = 0.01 \mathrm{ m}$           | Always convert to SI before calculating       |
+| Wrong formula                   | Using $v = f\lambda$ for standing waves       | Check which formula applies to the situation  |
+| Sign errors                     | Forgetting negative sign in $v = u + at$      | Define positive direction clearly             |
+| Confusing quantities           | Speed vs velocity, mass vs weight             | Check definitions before answering            |
+| Missing steps                   | Jumping from $F = ma$ to numerical answer     | Show substitution clearly                     |
+| Incomplete explanations         | "Because of gravity"                          | State the principle and link to the scenario |
+
+### Multiple Choice Strategy
+
+DSE Physics Paper 2 consists of multiple choice questions. Key strategies:
+
+1. **Eliminate obviously wrong answers first.**
+2. **Check dimensions:** If the answer should be a force (N) and an option has units of energy (J), eliminate it.
+3. **Estimate:** Quick mental arithmetic can often eliminate wrong options.
+4. **Check extreme cases:** What happens if $m \to 0$, $R \to \infty$, etc.?
+5. **Do not leave blanks:** There is no penalty for wrong answers in DSE.
+
+---
+
+## Problem Set (Mixed Topics)
+
+**Problem 9.** A steel wire of length $2.0 \mathrm{ m}$ and cross-sectional area
+$2.0 \times 10^{-6} \mathrm{ m}^2$ is stretched by $1.0 \mathrm{ mm}$. The Young's modulus of
+steel is $2.0 \times 10^{11} \mathrm{ Pa}$. Calculate the tension in the wire and the elastic
+potential energy stored.
+
+<details>
+<summary>Solution</summary>
+
+$$\mathrm{Stress} = E \times \mathrm{strain} = 2.0 \times 10^{11} \times \frac{1.0 \times 10^{-3}}{2.0} = 1.0 \times 10^{8} \mathrm{ Pa}$$
+
+$$F = \mathrm{Stress} \times A = 1.0 \times 10^{8} \times 2.0 \times 10^{-6} = 200 \mathrm{ N}$$
+
+$$E_p = \frac{1}{2}Fx = \frac{1}{2} \times 200 \times 1.0 \times 10^{-3} = 0.10 \mathrm{ J}$$
+
+</details>
+
+If you get this wrong, revise: Mechanics / Elasticity
+
+**Problem 10.** A radioactive source has a half-life of $5.0 \mathrm{ years}$. The initial
+activity is $800 \mathrm{ Bq}$. Calculate the activity after $20 \mathrm{ years}$ and the time
+for the activity to fall to $50 \mathrm{ Bq}$.
+
+<details>
+<summary>Solution</summary>
+
+After $20 \mathrm{ years}$: number of half-lives $= 20/5.0 = 4$
+
+$$A = A_0 \times \left(\frac{1}{2}\right)^4 = 800 \times \frac{1}{16} = 50 \mathrm{ Bq}$$
+
+For $A = 50 \mathrm{ Bq}$: $50 = 800 \times (1/2)^{t/5}$
+
+$$(1/2)^{t/5} = 50/800 = 1/16 = (1/2)^4$$
+
+$$t/5 = 4 \implies t = 20 \mathrm{ years}$$
+
+(This is consistent: after 4 half-lives, the activity is $1/16$ of the original.)
+
+</details>
+
+If you get this wrong, revise: Nuclear Physics / Radioactive Decay
+
+**Problem 11.** In a Young's double-slit experiment, the fringe spacing is $0.80 \mathrm{ mm}$
+when light of wavelength $600 \mathrm{ nm}$ is used. The screen is $1.5 \mathrm{ m}$ from the
+slits. Find the slit separation.
+
+<details>
+<summary>Solution</summary>
+
+$$\Delta y = \frac{\lambda D}{d} \implies d = \frac{\lambda D}{\Delta y} = \frac{600 \times 10^{-9} \times 1.5}{0.80 \times 10^{-3}} = \frac{9.0 \times 10^{-7}}{8.0 \times 10^{-4}} = 1.125 \times 10^{-3} \mathrm{ m} = 1.13 \mathrm{ mm}$$
+
+</details>
+
+If you get this wrong, revise: Waves / Interference
+
+**Problem 12.** A convex mirror has a focal length of $15 \mathrm{ cm}$. An object of height
+$4.0 \mathrm{ cm}$ is placed $25 \mathrm{ cm}$ from the mirror. Find the image position,
+magnification, and nature.
+
+<details>
+<summary>Solution</summary>
+
+For a convex mirror, $f = -15 \mathrm{ cm}$ (real-is-positive convention).
+
+$$\frac{1}{v} + \frac{1}{u} = \frac{1}{f} \implies \frac{1}{v} = \frac{1}{-15} - \frac{1}{25} = -\frac{1}{15} - \frac{1}{25} = \frac{-5 - 3}{75} = -\frac{8}{75}$$
+
+$$v = -9.38 \mathrm{ cm}$$
+
+The image is virtual ($v < 0$), $9.38 \mathrm{ cm}$ behind the mirror.
+
+$$m = -\frac{v}{u} = -\frac{-9.38}{25} = 0.375$$
+
+Image height: $h_i = 0.375 \times 4.0 = 1.50 \mathrm{ cm}$
+
+The image is **virtual**, **upright**, and **diminished**.
+
+</details>
+
+If you get this wrong, revise: Optics / Curved Mirrors
+

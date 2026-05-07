@@ -1512,4 +1512,405 @@ Common Pitfalls
 
 - **Misidentifying the direction of induced current:** When applying Lenz's law, first determine whether the flux through the coil is increasing or decreasing. If increasing, the induced current creates a magnetic field that OPPOSES the increase. If decreasing, the induced current creates a field that TRIES TO MAINTAIN the flux. Then use the right-hand grip rule to find the current direction.
 
-:::
+---
+
+## Derivations
+
+### Derivation: Electric Field Strength from Coulomb's Law
+
+A point charge $Q$ produces an electric field. A test charge $q$ placed at distance $r$ from $Q$
+experiences a force given by Coulomb's law:
+
+$$F = \frac{kQq}{r^2} = \frac{Qq}{4\pi\varepsilon_0 r^2}$$
+
+The electric field strength is defined as the force per unit positive charge:
+
+$$E = \frac{F}{q} = \frac{kQ}{r^2} = \frac{Q}{4\pi\varepsilon_0 r^2}$$
+
+For a uniform field between parallel plates (potential difference $V$, separation $d$):
+
+$$E = \frac{V}{d}$$
+
+### Derivation: Capacitor Energy
+
+A capacitor of capacitance $C$ charged to potential difference $V$ stores charge $Q = CV$.
+
+The work done to add a small charge $dq$ when the capacitor is at potential $v$ is:
+
+$$dW = v\, dq = \frac{q}{C}\, dq$$
+
+The total work to charge from $0$ to $Q$:
+
+$$W = \int_0^Q \frac{q}{C}\, dq = \frac{1}{2}\frac{Q^2}{C} = \frac{1}{2}CV^2 = \frac{1}{2}QV$$
+
+This energy is stored in the electric field between the plates.
+
+### Derivation: Time Constant of an RC Circuit
+
+In an RC circuit, when a capacitor $C$ is charged through a resistor $R$ from a supply voltage
+$V_0$, the charge on the capacitor at time $t$ is:
+
+$$Q = Q_0(1 - e^{-t/RC})$$
+
+where $Q_0 = CV_0$ is the maximum charge.
+
+The time constant $\tau = RC$ is the time for the charge to reach $(1 - 1/e) \approx 63.2\%$ of
+its maximum value. At $t = \tau$: $Q = Q_0(1 - e^{-1}) = 0.632Q_0$.
+
+At $t = 5\tau$: $Q = Q_0(1 - e^{-5}) = 0.993Q_0$ (effectively fully charged).
+
+During discharge: $Q = Q_0 e^{-t/RC}$, so at $t = \tau$: $Q = 0.368Q_0$.
+
+### Derivation: Force on a Charge in Combined Electric and Magnetic Fields
+
+A charge $q$ moving with velocity $v$ in a region with both electric field $E$ and magnetic field
+$B$ experiences:
+
+$$\vec{F} = q\vec{E} + q\vec{v} \times \vec{B}$$
+
+For the velocity selector (used in mass spectrometers), $\vec{E}$ and $\vec{B}$ are perpendicular
+to each other and to the velocity. The forces balance when:
+
+$$qE = qvB \implies v = \frac{E}{B}$$
+
+Only charges with this specific velocity pass through undeflected.
+
+---
+
+## Experimental Methods
+
+### Investigating Ohm's Law
+
+**Apparatus:** A variable resistor (rheostat), an ammeter, a voltmeter, a test resistor, a
+battery, and connecting wires.
+
+**Procedure:**
+1. Connect the test resistor in series with the ammeter and rheostat. Connect the voltmeter in
+   parallel across the test resistor.
+2. Adjust the rheostat to obtain different values of current.
+3. Record pairs of voltage $V$ and current $I$.
+4. Plot $I$ (y-axis) versus $V$ (x-axis).
+5. A straight line through the origin confirms Ohm's law. The gradient equals $1/R$.
+
+**Precautions:**
+- Use a low voltage to avoid heating the resistor.
+- Wait for readings to stabilise before recording.
+- Ensure good electrical connections to minimise contact resistance.
+
+### Measuring Capacitance Using a Reed Switch
+
+**Apparatus:** A capacitor, a reed switch driven by an AC signal of known frequency $f$, a
+resistor, a DC power supply, and a voltmeter.
+
+**Procedure:**
+1. The reed switch alternately charges the capacitor (from the supply voltage $V$) and
+   discharges it (through a microammeter) at frequency $f$.
+2. The charge per cycle: $Q = CV$.
+3. The average current through the microammeter: $I = Qf = CVf$.
+4. Calculate: $C = I/(Vf)$.
+
+### Determining the Charge-to-Mass Ratio of an Electron
+
+**Apparatus:** An electron deflection tube, a power supply for the electron gun, Helmholtz coils
+to produce a uniform magnetic field, and measuring equipment.
+
+**Procedure:**
+1. Accelerate electrons through a known potential difference $V_a$.
+2. The electrons enter a region of uniform magnetic field $B$ and travel in a circular arc.
+3. Measure the radius $r$ of the circular path.
+4. The kinetic energy: $\frac{1}{2}mv^2 = eV_a$.
+5. The magnetic force provides the centripetal force: $evB = \frac{mv^2}{r}$.
+6. Combining: $\frac{e}{m} = \frac{2V_a}{B^2 r^2}$.
+
+---
+
+## Data Analysis and Uncertainty
+
+### Uncertainty in RC Circuit Measurements
+
+When measuring the time constant $\tau = RC$:
+
+$$\frac{\Delta\tau}{\tau} = \sqrt{\left(\frac{\Delta R}{R}\right)^2 + \left(\frac{\Delta C}{C}\right)^2}$$
+
+**Example:** $R = (10.0 \pm 0.5) \mathrm{ k}\Omega$, $C = (100 \pm 5) \mathrm{ \mu F}$:
+
+$$\tau = RC = 10.0 \times 10^3 \times 100 \times 10^{-6} = 1.00 \mathrm{ s}$$
+
+$$\frac{\Delta\tau}{\tau} = \sqrt{(0.05)^2 + (0.05)^2} = \sqrt{0.005} = 0.0707 = 7.1\%$$
+
+$$\Delta\tau = 0.071 \times 1.00 = 0.07 \mathrm{ s}$$
+
+$$\tau = (1.00 \pm 0.07) \mathrm{ s}$$
+
+### Analysing Exponential Decay Data
+
+When verifying the discharge equation $Q = Q_0 e^{-t/RC}$:
+- Plot $\ln Q$ (y-axis) versus $t$ (x-axis).
+- A straight line with negative gradient confirms exponential decay.
+- The gradient equals $-1/(RC)$.
+- The y-intercept equals $\ln Q_0$.
+
+---
+
+## Additional Worked Examples
+
+### Worked Example 11
+
+A $200 \mathrm{ \mu F}$ capacitor is charged to $50 \mathrm{ V}$ and then disconnected from the
+supply. It is then connected across an uncharged $300 \mathrm{ \mu F}$ capacitor.
+
+(a) Calculate the final common voltage across both capacitors.
+
+(b) Calculate the energy stored before and after connection, and explain the energy loss.
+
+<details>
+<summary>Solution</summary>
+
+(a) Charge on the charged capacitor: $Q = C_1 V_1 = 200 \times 10^{-6} \times 50 = 0.010 \mathrm{ C}$
+
+When connected in parallel, charge is conserved: $Q = (C_1 + C_2)V_f$
+
+$$V_f = \frac{Q}{C_1 + C_2} = \frac{0.010}{200 \times 10^{-6} + 300 \times 10^{-6}} = \frac{0.010}{500 \times 10^{-6}} = 20 \mathrm{ V}$$
+
+(b) Energy before: $E_i = \frac{1}{2}C_1 V_1^2 = \frac{1}{2}(200 \times 10^{-6})(2500) = 0.250 \mathrm{ J}$
+
+Energy after: $E_f = \frac{1}{2}(C_1 + C_2)V_f^2 = \frac{1}{2}(500 \times 10^{-6})(400) = 0.100 \mathrm{ J}$
+
+Energy lost: $\Delta E = 0.250 - 0.100 = 0.150 \mathrm{ J}$
+
+This energy is dissipated as heat in the connecting wires and as electromagnetic radiation during
+the transient current flow when the capacitors are connected.
+
+</details>
+
+### Worked Example 12
+
+A $470 \mathrm{ \mu F}$ capacitor is charged through a $100 \mathrm{ k}\Omega$ resistor from a
+$12 \mathrm{ V}$ supply.
+
+(a) Calculate the time constant.
+
+(b) Calculate the charge on the capacitor after one time constant.
+
+(c) Calculate the time for the capacitor to reach $95\%$ of its maximum charge.
+
+(d) Calculate the current in the circuit at $t = 0$ and at $t = \tau$.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\tau = RC = 100 \times 10^3 \times 470 \times 10^{-6} = 47.0 \mathrm{ s}$
+
+(b) After one time constant: $Q = Q_0(1 - e^{-1}) = 0.632 Q_0$
+
+$$Q_0 = CV_0 = 470 \times 10^{-6} \times 12 = 5.64 \times 10^{-3} \mathrm{ C}$$
+
+$$Q = 0.632 \times 5.64 \times 10^{-3} = 3.56 \times 10^{-3} \mathrm{ C}$$
+
+(c) $Q/Q_0 = 0.95 = 1 - e^{-t/\tau}$
+
+$$e^{-t/\tau} = 0.05 \implies -t/\tau = \ln(0.05) = -3.00$$
+
+$$t = 3.00\tau = 3.00 \times 47.0 = 141 \mathrm{ s}$$
+
+(d) At $t = 0$: $I_0 = V_0/R = 12/(100 \times 10^3) = 1.20 \times 10^{-4} \mathrm{ A} = 120 \mathrm{ \mu A}$
+
+At $t = \tau$: $I = I_0 e^{-1} = 120 \times 0.368 = 44.1 \mathrm{ \mu A}$
+
+</details>
+
+### Worked Example 13
+
+An electron is accelerated from rest through a potential difference of $2000 \mathrm{ V}$ and
+then enters a uniform magnetic field of $5.0 \times 10^{-3} \mathrm{ T}$ perpendicular to its
+velocity. Calculate the radius of the circular path.
+
+(Electron charge $= 1.6 \times 10^{-19} \mathrm{ C}$, electron mass $= 9.11 \times 10^{-31} \mathrm{ kg}$)
+
+<details>
+<summary>Solution</summary>
+
+Kinetic energy gained: $\frac{1}{2}mv^2 = eV$
+
+$$v = \sqrt{\frac{2eV}{m}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 2000}{9.11 \times 10^{-31}}} = \sqrt{\frac{6.4 \times 10^{-16}}{9.11 \times 10^{-31}}} = \sqrt{7.03 \times 10^{14}} = 2.65 \times 10^7 \mathrm{ m/s}$$
+
+$$r = \frac{mv}{eB} = \frac{9.11 \times 10^{-31} \times 2.65 \times 10^7}{1.6 \times 10^{-19} \times 5.0 \times 10^{-3}} = \frac{2.41 \times 10^{-23}}{8.0 \times 10^{-22}} = 0.0301 \mathrm{ m} = 3.01 \mathrm{ cm}$$
+
+</details>
+
+---
+
+## Exam-Style Questions
+
+### Question 1 (DSE Structured)
+
+(a) Define capacitance.
+
+(b) A $100 \mathrm{ \mu F}$ capacitor is connected in series with a $1.0 \mathrm{ M}\Omega$
+resistor and a $6.0 \mathrm{ V}$ battery.
+
+(i) Calculate the time constant.
+
+(ii) Calculate the maximum energy stored in the capacitor.
+
+(iii) Calculate the voltage across the capacitor after $30 \mathrm{ s}$.
+
+(iv) Sketch a graph showing how the current in the circuit varies with time.
+
+<details>
+<summary>Solution</summary>
+
+(a) Capacitance is the ratio of the charge stored on a capacitor to the potential difference
+across it: $C = Q/V$. The SI unit is the farad (F), where $1 \mathrm{ F} = 1 \mathrm{ C/V}$.
+
+(b) (i) $\tau = RC = 1.0 \times 10^6 \times 100 \times 10^{-6} = 100 \mathrm{ s}$
+
+(ii) $E_{\max} = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-6})(36) = 1.8 \times 10^{-3} \mathrm{ J} = 1.8 \mathrm{ mJ}$
+
+(iii) $V_C = V_0(1 - e^{-t/\tau}) = 6.0(1 - e^{-30/100}) = 6.0(1 - e^{-0.30}) = 6.0(1 - 0.741) = 6.0 \times 0.259 = 1.55 \mathrm{ V}$
+
+(iv) The current starts at $I_0 = V_0/R = 6.0/10^6 = 6.0 \mathrm{ \mu A}$ and decays
+exponentially: $I = I_0 e^{-t/\tau}$. The graph is an exponential decay curve starting at
+$6.0 \mathrm{ \mu A}$ and approaching zero. At $t = \tau = 100 \mathrm{ s}$, the current has
+fallen to $6.0 \times 0.368 = 2.21 \mathrm{ \mu A}$.
+
+</details>
+
+### Question 2 (DSE Structured)
+
+(a) State Coulomb's law.
+
+(b) Two point charges, $q_1 = +3.0 \mathrm{ \mu C}$ and $q_2 = -5.0 \mathrm{ \mu C}$, are
+separated by $0.20 \mathrm{ m}$ in a vacuum.
+
+(i) Calculate the force between them. Is it attractive or repulsive?
+
+(ii) Calculate the electric field strength at the midpoint between the two charges.
+
+(iii) At what point on the line joining the charges is the electric field strength zero?
+
+<details>
+<summary>Solution</summary>
+
+(a) Coulomb's law states that the force between two point charges is directly proportional to
+the product of the charges and inversely proportional to the square of the distance between
+them: $F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}$. The force is attractive for opposite
+charges and repulsive for like charges.
+
+(b) (i) $F = \frac{|q_1 q_2|}{4\pi\varepsilon_0 r^2} = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}}{(0.20)^2} = \frac{8.99 \times 10^9 \times 1.5 \times 10^{-11}}{0.04} = \frac{0.1349}{0.04} = 3.37 \mathrm{ N}$
+
+The force is **attractive** (opposite charges).
+
+(ii) At the midpoint ($r = 0.10 \mathrm{ m}$ from each charge):
+
+$E_1$ (from $+3.0 \mathrm{ \mu C}$, pointing away): $E_1 = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6}}{(0.10)^2} = \frac{2.697 \times 10^4}{0.01} = 2.70 \times 10^6 \mathrm{ V/m}$
+
+$E_2$ (from $-5.0 \mathrm{ \mu C}$, pointing towards it): $E_2 = \frac{8.99 \times 10^9 \times 5.0 \times 10^{-6}}{(0.10)^2} = \frac{4.495 \times 10^4}{0.01} = 4.50 \times 10^6 \mathrm{ V/m}$
+
+Since both fields point in the same direction (from $+q_1$ towards $-q_2$):
+
+$$E_{\mathrm{net}} = E_1 + E_2 = 2.70 \times 10^6 + 4.50 \times 10^6 = 7.20 \times 10^6 \mathrm{ V/m}$$
+
+(iii) The zero-field point must be outside the charges, on the side of the smaller charge
+($q_1 = +3.0 \mathrm{ \mu C}$), since the larger charge dominates near the midpoint.
+
+Let the point be distance $x$ from $q_1$ (beyond $q_1$). Distance from $q_2 = x + 0.20$.
+
+$$\frac{kq_1}{x^2} = \frac{kq_2}{(x + 0.20)^2}$$
+
+$$\frac{3.0}{x^2} = \frac{5.0}{(x + 0.20)^2}$$
+
+$$3.0(x + 0.20)^2 = 5.0x^2$$
+
+$$3.0(x^2 + 0.40x + 0.04) = 5.0x^2$$
+
+$$3x^2 + 1.2x + 0.12 = 5x^2$$
+
+$$2x^2 - 1.2x - 0.12 = 0$$
+
+$$x = \frac{1.2 \pm \sqrt{1.44 + 0.96}}{4} = \frac{1.2 \pm \sqrt{2.40}}{4} = \frac{1.2 \pm 1.549}{4}$$
+
+Taking the positive root: $x = \frac{1.2 + 1.549}{4} = 0.687 \mathrm{ m}$ from $q_1$.
+
+</details>
+
+### Question 3 (DSE Structured)
+
+(a) Explain the difference between electric potential and electric field strength.
+
+(b) Two parallel metal plates are separated by $5.0 \mathrm{ cm}$ with a potential difference of
+$500 \mathrm{ V}$ across them.
+
+(i) Calculate the electric field strength between the plates.
+
+(ii) An electron enters the field midway between the plates, moving perpendicular to the field
+with speed $3.0 \times 10^7 \mathrm{ m/s}$. Calculate the vertical deflection of the electron
+as it exits the plates (plate length $= 10 \mathrm{ cm}$).
+
+(iii) Calculate the angle at which the electron leaves the field.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Electric potential** ($V$) is the electric potential energy per unit charge at a point:
+$V = E_p/q$. It is a scalar quantity with unit volt (V).
+
+**Electric field strength** ($E$) is the force per unit positive charge at a point: $E = F/q$.
+It is a vector quantity with unit $\mathrm{ V/m}$ or $\mathrm{ N/C}$. The field points from
+high potential to low potential.
+
+(b) (i) $E = V/d = 500/0.05 = 10000 \mathrm{ V/m} = 10.0 \mathrm{ kV/m}$
+
+(ii) The electron enters horizontally. Time to cross the plates:
+
+$$t = \frac{L}{v_x} = \frac{0.10}{3.0 \times 10^7} = 3.33 \times 10^{-9} \mathrm{ s}$$
+
+Vertical acceleration: $a = \frac{eE}{m} = \frac{1.6 \times 10^{-19} \times 10000}{9.11 \times 10^{-31}} = \frac{1.6 \times 10^{-15}}{9.11 \times 10^{-31}} = 1.76 \times 10^{15} \mathrm{ m/s}^2$
+
+Vertical deflection: $y = \frac{1}{2}at^2 = \frac{1}{2}(1.76 \times 10^{15})(3.33 \times 10^{-9})^2 = 0.5 \times 1.76 \times 10^{15} \times 1.11 \times 10^{-17} = 9.76 \times 10^{-3} \mathrm{ m} = 9.76 \mathrm{ mm}$
+
+(iii) Vertical velocity at exit: $v_y = at = 1.76 \times 10^{15} \times 3.33 \times 10^{-9} = 5.86 \times 10^6 \mathrm{ m/s}$
+
+$$\theta = \tan^{-1}\left(\frac{v_y}{v_x}\right) = \tan^{-1}\left(\frac{5.86 \times 10^6}{3.0 \times 10^7}\right) = \tan^{-1}(0.195) = 11.0^\circ$$
+
+</details>
+
+### Question 4 (DSE Structured)
+
+(a) Describe the structure and operation of a simple AC generator.
+
+(b) A rectangular coil of 100 turns, dimensions $0.05 \mathrm{ m} \times 0.08 \mathrm{ m}$, rotates
+at $50 \mathrm{ rev/s}$ in a magnetic field of $0.3 \mathrm{ T}$.
+
+(i) Calculate the peak EMF.
+
+(ii) Write the expression for the EMF as a function of time.
+
+(iii) Calculate the RMS EMF.
+
+(iv) The coil is connected to a $50 \Omega$ resistor. Calculate the average power dissipated.
+
+<details>
+<summary>Solution</summary>
+
+(a) An AC generator consists of a rectangular coil rotating in a uniform magnetic field. As the
+coil rotates, the magnetic flux through the coil changes sinusoidally, inducing an EMF by
+Faraday's law. Slip rings and brushes provide continuous electrical contact with the external
+circuit. The EMF varies sinusoidally, producing alternating current.
+
+(b) (i) $\omega = 2\pi \times 50 = 314.2 \mathrm{ rad/s}$
+
+$A = 0.05 \times 0.08 = 0.004 \mathrm{ m}^2$
+
+$$\varepsilon_0 = NBA\omega = 100 \times 0.3 \times 0.004 \times 314.2 = 37.7 \mathrm{ V}$$
+
+(ii) $\varepsilon = 37.7\sin(314.2t) \mathrm{ V}$
+
+(assuming the EMF is zero at $t = 0$)
+
+(iii) $\varepsilon_{\mathrm{RMS}} = \frac{\varepsilon_0}{\sqrt{2}} = \frac{37.7}{1.414} = 26.7 \mathrm{ V}$
+
+(iv) Average power: $P = \frac{\varepsilon_{\mathrm{RMS}}^2}{R} = \frac{(26.7)^2}{50} = \frac{712.9}{50} = 14.3 \mathrm{ W}$
+
+</details>
+

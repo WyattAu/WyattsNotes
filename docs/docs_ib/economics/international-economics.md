@@ -963,3 +963,887 @@ Net welfare effect $= 100 - 200 = -\$100$. The customs union reduces welfare in 
 trade diversion exceeds trade creation.
 
 </details>
+
+## Comparative Advantage: Advanced Analysis (HL Extension)
+
+### Opportunity Cost Ratios and Specialisation
+
+The principle of comparative advantage states that countries should specialise in the production of
+goods for which they have the lowest opportunity cost. The gains from trade arise from the
+difference between the autarky (no-trade) opportunity cost ratios and the terms of trade.
+
+**Formal framework:**
+
+Let $a_1$ and $a_2$ be the unit labour requirements for goods 1 and 2 in Country A, and $b_1$
+and $b_2$ in Country B. The opportunity cost of good 1 in terms of good 2 is:
+
+- Country A: $\mathrm{OC}_A = a_1 / a_2$
+- Country B: $\mathrm{OC}_B = b_1 / b_2$
+
+Country A has a comparative advantage in good 1 if $\mathrm{OC}_A < \mathrm{OC}_B$.
+
+The terms of trade must lie between the two opportunity cost ratios:
+
+$$\mathrm{OC}_A < \text{ToT} < \mathrm{OC}_B$$
+
+Any terms of trade within this range makes both countries better off than under autarky.
+
+### Numerical Example with Production Possibilities
+
+Two countries, France and Japan, can produce wine and electronics. Labour supply: France = 100
+workers, Japan = 100 workers.
+
+|                | Wine (bottles/worker) | Electronics (units/worker) |
+|----------------|----------------------|---------------------------|
+| France         | 8                    | 4                         |
+| Japan          | 2                    | 10                        |
+
+**Opportunity costs:**
+
+- France: 1 wine costs $4/8 = 0.5$ electronics; 1 electronic costs $8/4 = 2$ wine
+- Japan: 1 wine costs $10/2 = 5$ electronics; 1 electronic costs $2/10 = 0.2$ wine
+
+France has a comparative advantage in wine (0.5 < 5). Japan has a comparative advantage in
+electronics (0.2 < 2).
+
+**Autarky (50 workers in each industry):**
+
+- France: $50 \times 8 = 400$ wine, $50 \times 4 = 200$ electronics
+- Japan: $50 \times 2 = 100$ wine, $50 \times 10 = 500$ electronics
+- World: 500 wine, 700 electronics
+
+**After complete specialisation:**
+
+- France: $100 \times 8 = 800$ wine, 0 electronics
+- Japan: 0 wine, $100 \times 10 = 1000$ electronics
+- World: 800 wine, 1000 electronics
+
+Both goods increase: +300 wine, +300 electronics.
+
+**With trade at 1 wine = 1 electronic:**
+
+If France exports 300 wine to Japan and imports 300 electronics:
+- France consumes: 500 wine, 300 electronics (gains: +100 wine, +100 electronics vs. autarky)
+- Japan consumes: 300 wine, 700 electronics (gains: +200 wine, +200 electronics vs. autarky)
+
+Both countries are strictly better off.
+
+### Limitations of Comparative Advantage in Practice
+
+- **Transport costs**: if transport costs exceed the difference in opportunity costs, trade is not
+  beneficial
+- **Factor immobility**: workers cannot easily switch industries, especially in the short run.
+  Specialisation may cause structural unemployment
+- **Diminishing returns**: the Ricardian model assumes constant returns; in reality, increasing
+  specialisation may face diminishing returns
+- **Dynamic comparative advantage**: comparative advantage can change over time through investment
+  in human capital, technology, and infrastructure (South Korea's shift from agriculture to
+  electronics)
+- **Strategic trade policy**: governments may subsidise industries to create comparative advantage
+  in sectors with economies of scale (e.g., Airbus vs. Boeing)
+
+## Terms of Trade: Calculations and Significance (HL Extension)
+
+### Terms of Trade Calculation
+
+The terms of trade index measures the ratio of export prices to import prices:
+
+$$\mathrm{ToT} = \frac{P_X}{P_M} \times 100$$
+
+Where $P_X$ is the export price index and $P_M$ is the import price index, both with base year = 100.
+
+**Worked example:**
+
+| Year | Export Price Index | Import Price Index | ToT    |
+|------|-------------------|-------------------|--------|
+| 2020 | 100               | 100               | 100.0  |
+| 2021 | 110               | 105               | 104.8  |
+| 2022 | 120               | 125               | 96.0   |
+
+The ToT improved by 4.8% in 2021 (favourable: exports rose faster than imports). The ToT
+deteriorated by 8.4% in 2022 (unfavourable: import prices rose faster than export prices).
+
+### When an Improving ToT Is Not Beneficial
+
+An improving ToT is not always good for the economy:
+
+1. **Volume effect**: if the ToT improves because export prices rise (due to supply constraints,
+   not quality improvements), export volumes may fall. If the volume decline outweighs the price
+   increase, export revenue falls
+2. **Income ToT**: $\text{Income ToT} = \text{ToT} \times \text{Volume of exports}$. A ToT
+   improvement with a large volume decline may reduce the income ToT
+3. **Import cost effect**: if the ToT improves because import prices fall (e.g., lower oil prices),
+   it may reflect weak global demand that also reduces demand for the country's exports
+
+### Significance for Development
+
+Developing countries that export primary commodities often face deteriorating terms of trade:
+- Primary commodity prices are volatile and subject to long-term decline (Prebisch-Singer
+  hypothesis)
+- Manufactured goods prices tend to rise due to technological improvements and monopoly pricing
+- This creates a transfer of real income from commodity-exporting developing countries to
+  manufactured-goods-exporting developed countries
+
+## Balance of Payments in Depth (HL Extension)
+
+### Detailed Account Structure
+
+**Current Account:**
+
+| Component | Credits (+) | Debits (-) |
+|-----------|------------|------------|
+| Trade in goods | Exports of goods | Imports of goods |
+| Trade in services | Exports of services | Imports of services |
+| Primary income | Investment income from abroad, compensation of employees from abroad | Investment income paid abroad, compensation paid to foreign workers |
+| Secondary income | Transfers received (remittances in, aid received) | Transfers paid (remittances out, aid given) |
+
+**Financial Account:**
+
+| Component | Credits (+) | Debits (-) |
+|-----------|------------|------------|
+| Direct investment | FDI inflows (foreigners investing domestically) | FDI outflows (domestic firms investing abroad) |
+| Portfolio investment | Foreign purchase of domestic securities | Domestic purchase of foreign securities |
+| Other investment | Foreign loans to domestic entities, deposits from abroad | Domestic loans abroad, deposits overseas |
+| Reserve assets | Decrease in reserves (using reserves to support currency) | Increase in reserves (accumulating reserves) |
+
+Note: the sign convention for reserve assets is reversed. An increase in reserves (buying foreign
+currency) is recorded as a debit (-), because it represents a capital outflow from the domestic
+economy.
+
+### The Balance of Payments Identity
+
+$$\mathrm{CA} + \mathrm{KA} + \mathrm{FA} + \mathrm{EO} = 0$$
+
+Where CA = Current Account, KA = Capital Account, FA = Financial Account, EO = Errors and
+Omissions.
+
+A current account deficit ($\mathrm{CA} < 0$) must be financed by:
+- A capital account surplus ($\mathrm{KA} > 0$)
+- A financial account surplus ($\mathrm{FA} > 0$): net capital inflows
+
+### The Current Account and the Exchange Rate
+
+Under a floating exchange rate, the current account should self-correct through the exchange rate
+mechanism:
+
+1. A current account deficit means the supply of domestic currency (from importers selling domestic
+   currency to buy foreign currency) exceeds demand (from exporters converting foreign earnings)
+2. The exchange rate depreciates
+3. Exports become cheaper, imports become more expensive
+4. The trade balance improves (assuming the Marshall-Lerner condition holds)
+
+In practice, self-correction may be slow due to the J-curve effect and inelastic short-run demand.
+
+### Sustainability of Current Account Deficits
+
+A current account deficit is sustainable if financed by:
+
+- **FDI inflows**: long-term, stable, and productive. FDI finances investment that generates future
+  export capacity
+- **Long-term borrowing**: mature debt profiles with manageable repayment schedules
+- **Reserve drawdowns**: using accumulated reserves (temporary)
+
+A current account deficit is unsustainable if financed by:
+
+- **Short-term portfolio flows** ("hot money"): volatile and subject to sudden reversal
+- **Excessive borrowing**: leading to debt accumulation beyond repayment capacity
+- **Reserve depletion**: reserves are finite and cannot be run down indefinitely
+
+## Exchange Rate Determination: Advanced (HL Extension)
+
+### Purchasing Power Parity (PPP)
+
+**Absolute PPP:** the exchange rate should equal the ratio of national price levels:
+
+$$S = \frac{P_{\text{domestic}}}{P_{\text{foreign}}}$$
+
+**Relative PPP:** the rate of depreciation should equal the inflation differential:
+
+$$\%\Delta S \approx \pi_{\text{domestic}} - \pi_{\text{foreign}}$$
+
+**Big Mac Index (The Economist):** a light-hearted but instructive application of PPP. If a Big
+Mac costs `USD 5.50` in the US and `EUR 4.50` in the Eurozone, the PPP-implied exchange rate is
+$5.50/4.50 = 1.22$ USD/EUR. If the actual exchange rate is 1.10 USD/EUR, the euro is
+undervalued by approximately 10% relative to PPP.
+
+**Limitations of PPP:**
+
+- Non-tradable goods (housing, services) are included in price levels but cannot be arbitraged
+  across countries
+- Transport costs and trade barriers prevent goods from being perfectly tradable
+- Quality differences in goods across countries
+- Differences in consumption patterns and preferences
+- PPP is a long-run theory; short-run deviations are large and persistent
+
+### Interest Rate Parity
+
+**Covered Interest Rate Parity (CIRP):**
+
+$$F = S \times \frac{1 + i_{\text{domestic}}}{1 + i_{\text{foreign}}}$$
+
+Where $F$ is the forward exchange rate and $S$ is the spot rate. If CIRP does not hold, risk-free
+arbitrage is possible (borrow in the low-interest currency, convert at the spot rate, invest in
+the high-interest currency, and lock in the forward rate).
+
+**Uncovered Interest Rate Parity (UIP):**
+
+$$E(S_{t+1}) = S_t \times \frac{1 + i_{\text{domestic}}}{1 + i_{\text{foreign}}}$$
+
+Where $E(S_{t+1})$ is the expected future spot rate. UIP states that the expected return on
+domestic and foreign assets should be equal when adjusted for expected exchange rate changes.
+
+**Implication:** a country with higher interest rates should see its currency depreciate (to
+offset the interest rate advantage). In practice, high-interest-rate currencies often appreciate
+in the short run (the "forward premium puzzle").
+
+### The Marshall-Lerner Condition: Derivation
+
+The trade balance in domestic currency (assuming imports are denominated in foreign currency and
+then converted):
+
+$$\mathrm{TB} = P_X \cdot X(S) - S \cdot P_M^* \cdot M(S)$$
+
+Where $S$ is the domestic currency price of foreign currency (an increase in $S$ represents
+depreciation).
+
+For a depreciation to improve the trade balance, the derivative of TB with respect to $S$ must be
+positive. This condition simplifies to:
+
+$$|\mathrm{PED}_X| + |\mathrm{PED}_M| > 1$$
+
+Where $\mathrm{PED}_X = \frac{\%\Delta X}{\%\Delta S}$ and $\mathrm{PED}_M = \frac{\%\Delta M}{\%\Delta S}$.
+
+**Empirical estimates:** in the short run (within 1 year), PED values are typically low (sum < 1),
+so the Marshall-Lerner condition is not satisfied. In the medium to long run (2--5 years), PED
+values increase and the condition is usually satisfied. The J-curve describes this transition.
+
+### J-Curve: Detailed Analysis
+
+**Phase 1 (short run, 0--6 months):**
+
+- Import contracts are denominated in foreign currency and fixed in the short term
+- Depreciation raises the domestic currency cost of existing import contracts
+- Export volumes cannot adjust immediately (production capacity constraints, new marketing efforts)
+- The trade balance **worsens**
+
+**Phase 2 (adjustment, 6--18 months):**
+
+- New contracts are negotiated at the new exchange rate
+- Domestic consumers substitute away from expensive imports toward domestic alternatives
+- Foreign buyers respond to cheaper export prices by increasing orders
+- The trade balance begins to **improve**
+
+**Phase 3 (long run, 18+ months):**
+
+- Full adjustment of trade flows
+- If the Marshall-Lerner condition holds, the trade balance is **higher** than before depreciation
+- The long-run improvement may be partially offset by higher domestic inflation (imported inflation)
+  feeding into wages and other costs
+
+## Trade Protection: Detailed Welfare Analysis (HL Extension)
+
+### Tariff Revenue Calculation
+
+A tariff of $t$ per unit on a small country importing quantity $Q_{\text{imports}}$ generates
+revenue:
+
+$$\text{Tariff revenue} = t \times Q_{\text{imports}}$$
+
+**Worked example:** A small country imports 50,000 units at a world price of `USD 100`. A specific
+tariff of `USD 20` per unit is imposed.
+
+Post-tariff domestic price = `USD 120`.
+
+New import quantity: if domestic demand falls to 80,000 and domestic supply rises to 60,000,
+imports = $80,000 - 60,000 = 20,000$.
+
+Tariff revenue $= 20 \times 20,000 = \text{USD 400,000}$.
+
+### Quota Analysis with Welfare
+
+A quota of $Q_{\text{quota}}$ units raises the domestic price to the level where total domestic
+demand minus domestic supply equals the quota:
+
+$$Q_d(P_{\text{quota}}) - Q_s(P_{\text{quota}}) = Q_{\text{quota}}$$
+
+**Welfare effects compared to free trade:**
+
+- Consumer surplus: decreases (higher price, lower quantity consumed)
+- Producer surplus: increases (higher price, higher quantity supplied domestically)
+- Quota rent: the difference between the domestic price and the world price, multiplied by the
+  quota quantity. This rent accrues to:
+  - Foreign producers (if they hold the export licences)
+  - The domestic government (if licences are auctioned)
+  - Domestic importers (if licences are allocated administratively)
+- Deadweight loss: two triangles (consumption and production DWL), same structure as a tariff
+
+### Optimal Tariff Argument
+
+For a **large country** (one that can influence world prices), a small tariff can improve national
+welfare by improving the terms of trade. The optimal tariff maximises:
+
+$$\text{Welfare gain from ToT improvement} - \text{DWL from reduced trade}$$
+
+The optimal tariff rate is approximately:
+
+$$t^* \approx \frac{1}{\mathrm{PED}_{\text{foreign export supply}} - 1}$$
+
+This argument does not apply to small countries (which are price takers) and ignores retaliation
+by trading partners.
+
+## Economic Integration Stages (HL Extension)
+
+### Detailed Comparison of Integration Levels
+
+| Feature | FTA | Customs Union | Common Market | Monetary Union |
+|---------|-----|---------------|---------------|----------------|
+| Tariff-free trade among members | Yes | Yes | Yes | Yes |
+| Common external tariff | No | Yes | Yes | Yes |
+| Free movement of labour | No | No | Yes | Yes |
+| Free movement of capital | No | No | Yes | Yes |
+| Common currency | No | No | No | Yes |
+| Common monetary policy | No | No | No | Yes |
+| Common fiscal policy | No | No | No | Partial |
+| Sovereignty implications | Low | Moderate | High | Very high |
+
+### Costs and Benefits of Each Stage
+
+**Free Trade Area:**
+
+- Benefits: increased trade, consumer choice, efficiency gains through comparative advantage
+- Costs: trade diversion, administrative complexity (rules of origin), adjustment costs for
+  industries exposed to competition
+
+**Customs Union:**
+
+- Additional benefits: simplified trade administration (single external tariff), stronger
+  bargaining power in negotiations with non-members
+- Additional costs: loss of independent trade policy (members cannot set their own tariffs toward
+  non-members)
+
+**Common Market:**
+
+- Additional benefits: labour mobility reduces structural unemployment, capital flows to most
+  productive uses, economies of scale for firms serving a larger market
+- Additional costs: pressure on wages (migration may depress wages in host countries), brain drain
+  from poorer regions, regulatory harmonisation costs
+
+**Monetary Union:**
+
+- Additional benefits: elimination of exchange rate uncertainty and transaction costs, price
+  transparency, lower interest rates for previously high-inflation members, increased trade and
+  investment within the union
+- Additional costs: loss of independent monetary policy and exchange rate as adjustment
+  mechanisms, need for fiscal transfers between members, loss of seigniorage revenue,
+  asymmetric shock absorption (one-size-fits-all monetary policy)
+
+## WTO and Trade Disputes (HL Extension)
+
+### The Dispute Settlement Process
+
+1. **Consultations**: the complaining country requests formal consultations with the defendant
+2. **Panel establishment**: if consultations fail, a dispute settlement panel of 3--5 experts is
+   established
+3. **Panel ruling**: the panel issues a report based on WTO agreements and evidence
+4. **Appellate Body review**: either party may appeal to the Appellate Body (7 members), which can
+   uphold, modify, or reverse the panel's legal findings
+5. **Adoption**: the DSB adopts the report unless there is a consensus against adoption
+6. **Compliance**: the losing party must bring its measures into compliance. If it cannot do so
+   immediately, it must negotiate compensation or accept retaliation by the winning party
+
+### Notable Trade Disputes
+
+- **US -- Steel Tariffs (2002)**: the US imposed tariffs of up to 30% on steel imports. The WTO
+  ruled the tariffs illegal. The EU, Japan, and other countries threatened retaliatory tariffs.
+  The US removed the tariffs in 2003
+- **EU -- Bananas**: a long-running dispute over EU preferential access for ACP (African,
+  Caribbean, Pacific) banana exporters. The WTO ruled against the EU multiple times
+- **US -- Boeing vs. EU -- Airbus**: mutual complaints about subsidies to their respective
+  aircraft manufacturers. The largest dispute in WTO history
+- **US -- China (various)**: disputes over intellectual property, technology transfer, market
+  access, and industrial subsidies
+
+### Criticism and Reform Needs
+
+- **Appellate Body crisis**: since 2019, the US has blocked appointments to the Appellate Body,
+  rendering it inoperative. This undermines the WTO's ability to resolve disputes definitively
+- **Consensus requirement**: decision-making by consensus makes reforms difficult and allows
+  individual members to block progress
+- **Outdated rules**: WTO rules do not adequately cover digital trade, data flows, state-owned
+  enterprises, or environmental standards
+- **Development dimension**: developing countries argue that WTO rules favour advanced economies
+  and constrain their policy space for industrialisation
+
+## FDI: Advantages and Disadvantages (HL Extension)
+
+### For Host Countries
+
+**Advantages:**
+
+1. **Capital formation**: FDI supplements domestic savings, particularly important in developing
+   countries where savings rates are low
+2. **Technology transfer**: MNCs bring advanced production techniques, management practices, and
+   quality standards. Spillovers occur through labour turnover, supply chain linkages, and
+   demonstration effects
+3. **Employment**: direct job creation in the MNC's operations, plus indirect employment through
+   supply chains and multiplier effects
+4. **Export development**: FDI often targets export markets, improving the host country's trade
+   balance and integration into global value chains
+5. **Human capital development**: training programmes raise worker skills, which may diffuse to
+   the broader economy
+6. **Tax revenue**: MNC profits are subject to corporate taxation (subject to transfer pricing
+   concerns)
+7. **Infrastructure**: some FDI projects include investment in roads, ports, power, and
+   telecommunications that benefit the broader economy
+
+**Disadvantages:**
+
+1. **Profit repatriation**: a significant share of MNC profits flows back to the home country,
+   reducing the net benefit of capital inflows. In some cases, profit outflows exceed new FDI
+   inflows
+2. **Crowding out**: MNCs may outcompete domestic firms through superior technology, scale, and
+   marketing, leading to consolidation and reduced domestic entrepreneurship
+3. **Environmental degradation**: weak environmental regulations in host countries may attract
+   "pollution haven" FDI, where MNCs relocate polluting activities
+4. **Exploitation**: low wages, poor working conditions, and weak labour protections in export
+   processing zones
+5. **Limited linkages**: if MNCs import inputs and export finished goods with minimal domestic
+   sourcing, backward and forward linkages are weak, limiting spillovers
+6. **Vulnerability**: dependence on a few large MNCs creates vulnerability to decisions made abroad
+   (divestment, relocation)
+7. **Tax avoidance**: transfer pricing and profit shifting can significantly reduce tax revenues
+
+### For Home Countries
+
+**Advantages:**
+
+1. **Repatriated profits**: income from foreign operations contributes to the current account
+2. **Market access**: FDI provides access to growing foreign markets that may be difficult to
+   serve through exports alone (bypassing trade barriers)
+3. **Lower costs**: offshoring production to lower-cost countries reduces costs, increasing
+   profitability and potentially lowering consumer prices at home
+4. **Competitiveness**: global operations allow firms to exploit comparative advantages across
+   locations, enhancing overall efficiency
+
+**Disadvantages:**
+
+1. **Job losses**: offshoring production destroys jobs at home, particularly in manufacturing.
+   Workers displaced may face long-term unemployment or wage depression
+2. **Technology transfer abroad**: investing abroad may create future competitors (e.g., Western
+   firms transferring technology to Chinese partners who later compete globally)
+3. **Tax base erosion**: profit shifting to low-tax jurisdictions reduces home-country tax
+   revenues
+4. **Dependency**: reliance on foreign production creates supply chain vulnerability (as
+   demonstrated by COVID-19 disruptions)
+
+## Development Economics: Growth Models (HL Extension)
+
+### Harrod-Domar Model
+
+The Harrod-Domar model (1939, 1946) was one of the first formal models of economic growth. It
+relates the growth rate to the savings rate and the capital-output ratio:
+
+$$g = \frac{s}{v}$$
+
+Where $g$ is the growth rate of output, $s$ is the savings rate ($S/Y$), and $v$ is the
+incremental capital-output ratio (ICOR), defined as $v = \Delta K / \Delta Y = I / \Delta Y$.
+
+**Derivation:** in equilibrium, saving equals investment ($S = I$). Saving is $sY$. Investment is
+$I = v \cdot \Delta Y$ (each unit of additional output requires $v$ units of additional capital).
+
+$$sY = v \cdot \Delta Y$$
+
+$$\frac{\Delta Y}{Y} = \frac{s}{v}$$
+
+**Implications:**
+
+- Higher savings rate $\implies$ higher growth
+- Lower capital-output ratio (more efficient use of capital) $\implies$ higher growth
+- Growth is proportional to the savings rate: there are no diminishing returns to capital
+
+**Limitations:**
+
+- Assumes a fixed capital-output ratio (no factor substitution)
+- No role for labour or technological progress
+- Implies that growth is unstable: if the actual growth rate deviates from the warranted rate
+  ($g_w = s/v$), the economy diverges rather than converging (the "knife-edge" problem)
+- The model ignores demand-side constraints: saving may not automatically translate into
+  productive investment
+
+### Lewis Dual-Sector Model
+
+Arthur Lewis (1954) proposed a model of structural change in developing economies based on the
+coexistence of two sectors:
+
+1. **Traditional (subsistence) sector**: characterised by surplus labour (low marginal
+   productivity of labour, near-zero), low wages at subsistence level, and informal production
+2. **Modern (industrial) sector**: characterised by higher productivity, profit-maximising
+   firms, and wages above the subsistence level
+
+**The process of development:**
+
+1. The modern sector offers a wage slightly above the subsistence level, attracting surplus labour
+   from the traditional sector
+2. Since the marginal product of labour in the traditional sector is near zero, transferring
+   workers to the modern sector does not reduce traditional sector output
+3. Profits in the modern sector are reinvested, expanding the capital stock and absorbing more
+   labour
+4. This process continues until the surplus labour is exhausted (the **Lewis turning point**)
+5. After the turning point, further labour transfer requires offering higher wages, and the
+   economy enters the neoclassical growth phase
+
+**Key insights:**
+
+- The source of growth is capital accumulation in the modern sector, financed by profits
+- The availability of surplus labour keeps wages low, maintaining high profits and investment
+- Development involves structural change: shifting resources from low-productivity agriculture
+   to high-productivity industry
+- The model helps explain why some developing countries have grown rapidly (e.g., East Asian
+  "tiger economies") through labour-intensive manufacturing export
+
+**Limitations:**
+
+- Assumes surplus labour exists in the traditional sector (not always the case)
+- Assumes profits are reinvested (capital flight and conspicuous consumption may reduce
+  reinvestment)
+- Ignores urban unemployment and informal sector growth in cities
+- Assumes constant returns to scale in the modern sector
+- Does not account for technological progress or human capital
+
+### Structural Change and Industrialisation
+
+**Chenery's patterns of development:** as countries develop, the share of agriculture in GDP and
+employment falls, while the shares of manufacturing and services rise. This structural change is
+driven by:
+
+1. **Engel's Law**: as incomes rise, the share of spending on food falls (reducing agriculture's
+   share)
+2. **Productivity growth**: manufacturing and services experience faster productivity growth than
+   agriculture
+3. **Demand shifts**: demand shifts toward manufactured goods and services with higher income
+   elasticity
+
+**Import substitution industrialisation (ISI):** a strategy of replacing imported manufactured
+goods with domestically produced ones, using tariffs and subsidies. Common in Latin America and
+South Asia from the 1950s to 1970s.
+
+- Initial success in building domestic industries
+- Eventually led to inefficiency, lack of competition, and balance of payments problems (imported
+  capital goods required for industrialisation)
+- Largely abandoned in favour of export-oriented industrialisation
+
+**Export-oriented industrialisation (EOI):** a strategy of promoting exports of manufactured
+goods, using incentives for export-oriented FDI and investment. Common in East Asia from the
+1960s onward.
+
+- Achieved remarkable growth in South Korea, Taiwan, Singapore, and Hong Kong
+- Forced domestic firms to compete internationally, driving efficiency and innovation
+- Integrated into global value chains, facilitating technology transfer
+
+## Measuring Development: Composite Indicators (HL Extension)
+
+### HDI Calculation: Comprehensive Walkthrough
+
+The HDI uses a geometric mean to combine three dimension indices:
+
+$$\text{HDI} = (I_{\text{health}} \times I_{\text{education}} \times I_{\text{income}})^{1/3}$$
+
+**Dimension indices:**
+
+$$I = \frac{\text{Actual} - \text{Minimum}}{\text{Maximum} - \text{Minimum}}$$
+
+**Goalposts:**
+
+| Dimension | Indicator | Min | Max |
+|-----------|-----------|-----|-----|
+| Health | Life expectancy at birth | 20 | 85 |
+| Education (mean years) | Mean years of schooling | 0 | 15 |
+| Education (expected years) | Expected years of schooling | 0 | 18 |
+| Income | GNI per capita (PPP, USD) | 100 | 75,000 |
+
+The GNI index uses logarithms to reflect diminishing marginal utility of income:
+
+$$I_{\text{income}} = \frac{\ln(\text{GNI per capita}) - \ln(100)}{\ln(75{,}000) - \ln(100)}$$
+
+**Why geometric mean?** Since 2010, the UNDP has used the geometric mean (instead of the
+arithmetic mean) to ensure that a very low score in one dimension cannot be fully compensated by
+high scores in others. This reflects the principle that each dimension is essential for human
+development.
+
+### Gender-Related Development Index (GDI)
+
+The GDI adjusts the HDI for gender inequality:
+
+$$\text{GDI} = \frac{\text{Female HDI}}{\text{Male HDI}}$$
+
+It is calculated as the ratio of female HDI to male HDI, adjusted for the overall level of HDI.
+A GDI of 1 indicates perfect gender parity. A GDI below 1 indicates that female achievement is
+lower than male achievement.
+
+### Gender Inequality Index (GII)
+
+The GII measures gender inequality across three dimensions:
+
+1. **Reproductive health**: maternal mortality ratio and adolescent birth rate
+2. **Empowerment**: parliamentary representation and educational attainment at secondary and higher
+   levels
+3. **Labour market**: female participation in the labour force relative to male participation
+
+GII ranges from 0 (no inequality) to 1 (maximum inequality). Lower values indicate less gender
+inequality.
+
+### Multidimensional Poverty Index (MPI)
+
+The MPI, developed by UNDP and OPHI, measures poverty across three dimensions with ten indicators:
+
+| Dimension | Indicators (weights) |
+|-----------|---------------------|
+| Health (1/3) | Nutrition (1/6), Child mortality (1/6) |
+| Education (1/3) | Years of schooling (1/6), School attendance (1/6) |
+| Living standards (1/3) | Electricity (1/18), Sanitation (1/18), Drinking water (1/18), Flooring (1/18), Cooking fuel (1/18), Assets (1/18) |
+
+**Calculation:**
+
+1. For each household, determine the number of weighted indicators in which the household is
+   deprived
+2. A household is "multidimensionally poor" if deprived in at least one-third of the weighted
+   indicators (threshold $\geq 33.3\%$)
+3. $H$ = headcount ratio (proportion of population that is multidimensionally poor)
+4. $A$ = average deprivation share among the poor (average proportion of indicators in which poor
+   households are deprived)
+5. $\text{MPI} = H \times A$
+
+**Advantages over income-based measures:**
+
+- Captures non-income dimensions of poverty
+- Reveals the composition of poverty (which deprivations are most prevalent)
+- Identifies overlaps between deprivations (households that are deprived in multiple dimensions
+  simultaneously)
+
+## Additional Practice Problems
+
+<details>
+<summary>Problem 7: Terms of Trade with Export and Import Volumes</summary>
+
+A country has the following data:
+
+| Year | Export Price Index | Import Price Index | Export Volume Index | Import Volume Index |
+|------|-------------------|-------------------|--------------------|--------------------|
+| 2020 | 100 | 100 | 100 | 100 |
+| 2021 | 115 | 110 | 95 | 105 |
+| 2022 | 130 | 140 | 90 | 100 |
+
+(a) Calculate the terms of trade for each year.
+
+(b) Calculate the income terms of trade for each year.
+
+(c) In which year was the country's purchasing power of exports highest?
+
+(a) $\text{ToT} = \frac{P_X}{P_M} \times 100$
+
+2020: $\text{ToT} = 100.0$
+2021: $\text{ToT} = 115/110 \times 100 = 104.5$
+2022: $\text{ToT} = 130/140 \times 100 = 92.9$
+
+(b) Income ToT $= \text{ToT} \times \text{Export Volume Index} / 100$
+
+2020: $100.0 \times 100/100 = 100.0$
+2021: $104.5 \times 95/100 = 99.3$
+2022: $92.9 \times 90/100 = 83.6$
+
+(c) The purchasing power of exports (income ToT) was highest in 2020 (100.0). Despite the ToT
+improving in 2021, the decline in export volume more than offset the price improvement. By 2022,
+both the ToT and export volumes had deteriorated, significantly reducing the country's capacity
+to import.
+
+</details>
+
+<details>
+<summary>Problem 8: Exchange Rate with Interest Rate Parity</summary>
+
+The spot exchange rate is `USD 1.20` per euro. The one-year interest rate in the Eurozone is $1\%$
+and in the US is $3\%$.
+
+(a) Calculate the forward exchange rate implied by covered interest rate parity.
+
+(b) Does UIP predict the euro will appreciate or depreciate over the next year?
+
+(c) If the actual forward rate is `USD 1.18` per euro, is there an arbitrage opportunity?
+
+(a) CIRP: $F = S \times \frac{1 + i_{\text{USD}}}{1 + i_{\text{EUR}}} = 1.20 \times \frac{1.03}{1.01} = 1.20 \times 1.0198 = 1.2238$
+
+The forward rate is `USD 1.2238` per euro.
+
+(b) UIP predicts that the euro will **depreciate** against the dollar because US interest rates
+are higher. The expected future spot rate is:
+
+$E(S) = 1.20 \times 1.03/1.01 = 1.2238$
+
+Wait -- the US rate is higher, so $F > S$, meaning fewer dollars per euro, which means the euro
+is expected to depreciate. Actually, in our notation, $S$ is USD per EUR, so $F = 1.2238 > S =
+1.20$, meaning the euro is expected to appreciate. This is because the US dollar has the higher
+interest rate, and UIP says the higher-yielding currency should depreciate. Let me reconsider.
+
+If $S$ = domestic currency per foreign currency, and the domestic (US) rate is higher, then:
+
+$F = S \times (1 + i_d)/(1 + i_f) = 1.20 \times 1.03/1.01 = 1.2238$
+
+The forward rate is higher (more USD per EUR), which means the EUR is expected to appreciate.
+This contradicts the standard UIP prediction because the formula shows the higher-interest
+currency (USD) should have a forward discount.
+
+The issue is the quotation convention. In standard notation, if $S$ is quoted as USD/EUR, then
+the euro is the "foreign" currency and the US rate is the "domestic" rate. With $i_d > i_f$,
+$F > S$, meaning the foreign currency (EUR) is expected to appreciate. This is incorrect
+according to UIP, which says the higher-interest currency should depreciate.
+
+The correct interpretation: since $i_{\text{USD}} = 3\% > i_{\text{EUR}} = 1\%$, UIP predicts the
+USD should depreciate against the EUR. So the forward rate of 1.2238 USD/EUR means the EUR is
+stronger (USD depreciated), which is consistent with UIP.
+
+(c) Actual forward rate $F_{\text{actual}} = 1.18$ USD/EUR vs. CIRP-implied $F = 1.2238$ USD/EUR.
+
+The euro is cheaper in the forward market than CIRP predicts. An arbitrageur can:
+1. Borrow euros at 1%
+2. Convert to USD at spot: $1 \text{ EUR} \to 1.20 \text{ USD}$
+3. Invest USD at 3%: $1.20 \times 1.03 = 1.236 \text{ USD after 1 year}$
+4. Sell USD forward at 1.18: $1.236 / 1.18 = 1.0475 \text{ EUR}$
+5. Repay euro loan: $1 \times 1.01 = 1.01 \text{ EUR}$
+
+Risk-free profit: $1.0475 - 1.01 = 0.0375 \text{ EUR}$ per euro borrowed. This is an
+arbitrage opportunity.
+
+</details>
+
+<details>
+<summary>Problem 9: Harrod-Domar and Lewis Model Application</summary>
+
+Country Z has a savings rate of 15%, an incremental capital-output ratio (ICOR) of 4, and a
+population growth rate of 2% per year.
+
+(a) Using the Harrod-Domar model, calculate the required savings rate to achieve 7% GDP growth.
+
+(b) How does the Lewis dual-sector model explain the growth of Country Z if it has a large
+agricultural sector with surplus labour?
+
+(c) Evaluate the limitations of both models for policy analysis.
+
+(a) Harrod-Domar: $g = s / v$
+
+Required savings rate: $s = g \times v = 0.07 \times 4 = 0.28$ (28%)
+
+Current savings rate is 15%, which yields $g = 0.15/4 = 3.75\%$. With population growing at 2%,
+GDP per capita grows at only $3.75\% - 2\% = 1.75\%$.
+
+To achieve 7% growth, the country needs to nearly double its savings rate to 28%. This could be
+achieved through:
+- Increasing domestic saving (tax incentives, financial development)
+- Attracting foreign saving (FDI, external borrowing, aid)
+- Reducing the ICOR to 2.14 ($s = 0.15 / v$, for $g = 0.07$: $v = 0.15/0.07 = 2.14$) through
+  more efficient investment
+
+(b) Lewis model: Country Z's surplus agricultural labour provides a pool of workers who can be
+  absorbed by the industrial sector at wages slightly above subsistence. The modern sector
+  reinvests profits, expanding capital and employment. Growth continues until the surplus labour
+  is exhausted (Lewis turning point), after which wages rise and the economy transitions to
+  neoclassical growth.
+
+Key conditions for the Lewis mechanism to work:
+- Industrial profits must be reinvested (not consumed or sent abroad)
+- The modern sector must be able to expand (access to capital, technology, markets)
+- Surplus labour must exist in agriculture (marginal product of labour $\approx 0$)
+- Institutions must support the transfer (property rights, contract enforcement, infrastructure)
+
+(c) **Harrod-Domar limitations:**
+- Fixed ICOR assumption: no factor substitution or technological progress
+- Ignores the quality of investment (some investment is more productive than others)
+- Knife-edge instability: the model does not have a stable equilibrium
+- No role for labour force growth or human capital
+- Savings may not translate into productive investment (capital flight, corruption)
+
+**Lewis model limitations:**
+- Surplus labour may not exist in all developing countries
+- Urban unemployment may coexist with rural surplus labour (Harris-Todaro model)
+- Profits may not be reinvested (capital flight, elite consumption)
+- Ignores agricultural productivity growth (which is important for feeding growing urban
+  populations)
+- Assumes constant wage premium in the modern sector
+
+</details>
+
+<details>
+<summary>Problem 10: Comprehensive Balance of Payments Analysis</summary>
+
+A small open economy has the following data for 2025 (in billions of USD):
+
+| Item | Amount |
+|------|--------|
+| Exports of goods | 280 |
+| Imports of goods | 350 |
+| Exports of services | 120 |
+| Imports of services | 90 |
+| Investment income received | 45 |
+| Investment income paid | 80 |
+| Workers' remittances received | 15 |
+| Workers' remittances sent abroad | 5 |
+| Foreign aid received | 10 |
+| FDI inflows | 60 |
+| FDI outflows | 20 |
+| Portfolio investment inflows | 30 |
+| Portfolio investment outflows | 45 |
+| Other investment (net) | +15 |
+| Change in reserves | -12 (reserves increase) |
+
+(a) Calculate the current account balance and its main components.
+
+(b) Calculate the financial account balance.
+
+(c) Does the balance of payments identity hold? If not, calculate errors and omissions.
+
+(d) Assess the sustainability of the external position.
+
+(a) **Trade in goods:** $280 - 350 = -70$
+
+**Trade in services:** $120 - 90 = +30$
+
+**Primary income:** $45 - 80 = -35$
+
+**Secondary income:** $15 - 5 + 10 = +20$ (remittances received minus sent, plus aid received)
+
+**Current account:** $-70 + 30 - 35 + 20 = -55$ billion USD (deficit)
+
+The main driver is the goods trade deficit (-70), partially offset by services surplus (+30) and
+secondary income (+20).
+
+(b) **Financial account:**
+
+- FDI: $60 - 20 = +40$
+- Portfolio investment: $30 - 45 = -15$
+- Other investment: $+15$
+- Reserve assets: $-12$ (increase in reserves is a debit)
+
+Financial account: $40 - 15 + 15 - 12 = +28$ billion USD
+
+(c) $\text{CA} + \text{KA} + \text{FA} + \text{EO} = 0$
+
+$-55 + 0 + 28 + \text{EO} = 0 \implies \text{EO} = +27$ billion USD
+
+The statistical discrepancy is +27 billion, which is large (suggesting significant measurement
+issues, possibly unrecorded capital flows or trade misinvoicing).
+
+(d) **Sustainability assessment:**
+
+- Current account deficit of 55 billion is significant
+- The deficit is financed by FDI inflows (+40), which are stable and productive
+- However, portfolio investment is a net outflow (-15), suggesting domestic investors are
+  seeking better returns abroad
+- The large errors and omissions (27 billion) raise concerns about data quality and possible
+  unrecorded flows
+- Reserves are increasing (12 billion), which provides a buffer but is unusual for a deficit
+  country (suggests possible intervention to prevent depreciation)
+
+Overall, the external position is moderately sustainable if FDI inflows continue and the
+goods trade deficit narrows over time. However, the large statistical discrepancy warrants
+caution.
+
+</details>

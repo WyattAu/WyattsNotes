@@ -1199,4 +1199,461 @@ danger
 
 - **Confusing diffraction with interference:** Diffraction is the spreading of waves around obstacles or through gaps. Interference is the superposition of waves from two coherent sources to produce a pattern of maxima and minima. They are different phenomena, though both demonstrate the wave nature of light. A diffraction grating produces an interference pattern.
 
-:::
+---
+
+## Derivations
+
+### Derivation: Snell's Law from Wave Theory
+
+When a plane wave crosses a boundary between two media at angle $\theta_1$ (in medium 1 with wave
+speed $v_1$) and $\theta_2$ (in medium 2 with wave speed $v_2$), the wavefront must be continuous
+across the boundary.
+
+Consider a wavefront AB that just touches the boundary at point A. By the time point B of the
+wavefront reaches the boundary at point C, the wave at point A has already travelled into medium 2.
+
+The distance BC $= v_1 \Delta t$ and the distance AD $= v_2 \Delta t$, where $\Delta t$ is the
+time for the wavefront to sweep across the boundary.
+
+The triangles ABC and ACD share the hypotenuse AC. The angle of incidence $\theta_1$ is related
+to AC and BC:
+
+$$\sin\theta_1 = \frac{BC}{AC} = \frac{v_1 \Delta t}{AC}$$
+
+Similarly:
+
+$$\sin\theta_2 = \frac{AD}{AC} = \frac{v_2 \Delta t}{AC}$$
+
+Dividing: $\frac{\sin\theta_1}{\sin\theta_2} = \frac{v_1}{v_2}$
+
+Since the refractive index $n = c/v$:
+
+$$\frac{\sin\theta_1}{\sin\theta_2} = \frac{v_1}{v_2} = \frac{c/(n_2)}{c/(n_1)} = \frac{n_2}{n_1}$$
+
+$$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
+
+### Derivation: Path Difference for Thin Film Interference
+
+Light of wavelength $\lambda$ in air is incident on a thin film of thickness $t$ and refractive
+index $n$. Part of the light reflects from the top surface, and part transmits into the film and
+reflects from the bottom surface.
+
+The optical path difference between the two reflected rays is:
+
+$$\Delta = 2nt\cos\theta_r$$
+
+where $\theta_r$ is the angle of refraction inside the film.
+
+However, there is an additional phase change of $\pi$ (half wavelength) for the ray reflected from
+the top surface (reflection from a denser medium). The ray reflected from the bottom surface
+does not experience this phase change (reflection from a less dense medium).
+
+**Constructive interference** (bright fringe): $\Delta = 2nt\cos\theta_r = (m + \frac{1}{2})\lambda$
+for $m = 0, 1, 2, \ldots$
+
+**Destructive interference** (dark fringe): $\Delta = 2nt\cos\theta_r = m\lambda$
+for $m = 0, 1, 2, \ldots$
+
+For normal incidence ($\theta_r = 0$): $\Delta = 2nt$.
+
+---
+
+## Experimental Methods
+
+### Determining the Wavelength of Light Using Young's Double Slits
+
+**Apparatus:** A monochromatic light source, a single slit, a double slit, a screen, and a metre
+rule.
+
+**Procedure:**
+1. Set up the light source, single slit (to ensure coherence), and double slit.
+2. Place the screen at distance $D$ from the double slit ($D \geq 1 \mathrm{ m}$ for accuracy).
+3. Measure the fringe spacing $\Delta y$ by measuring the distance across several fringes and
+   dividing by the number of spacings.
+4. Calculate: $\lambda = \frac{\Delta y \cdot d}{D}$
+
+**Precautions:**
+- Use a monochromatic source for clear fringes.
+- Ensure $D \gg d$ for the small-angle approximation to be valid.
+- Measure across many fringes (e.g., 10) to reduce the percentage uncertainty in $\Delta y$.
+
+**Sources of error:**
+- Difficulty in measuring the exact positions of the fringe maxima (broad, not sharp).
+- Uncertainty in the slit separation $d$ (very small, typically fractions of a mm).
+- $D$ may not be measured accurately if the screen is curved.
+
+### Measuring the Refractive Index of Air Using a Michelson Interferometer
+
+**Principle:** In a Michelson interferometer, light is split into two beams that travel different
+paths before recombining. If one path passes through a vacuum chamber and the other through air,
+inserting air into the chamber changes the optical path length.
+
+**Procedure:**
+1. Set up the interferometer with white light (for easy identification of zero path difference).
+2. Evacuate the chamber and observe the interference pattern.
+3. Slowly admit air into the chamber and count the number of fringes $N$ that pass a reference
+   point.
+4. The optical path change: $\Delta = 2(n_{\mathrm{air}} - 1)L = N\lambda$
+5. Calculate: $n_{\mathrm{air}} = 1 + \frac{N\lambda}{2L}$
+
+where $L$ is the length of the chamber.
+
+---
+
+## Data Analysis and Uncertainty
+
+### Uncertainty in Wavelength from Double Slit
+
+Given $\lambda = \frac{\Delta y \cdot d}{D}$:
+
+$$\frac{\Delta\lambda}{\lambda} = \sqrt{\left(\frac{\Delta(\Delta y)}{\Delta y}\right)^2 + \left(\frac{\Delta d}{d}\right)^2 + \left(\frac{\Delta D}{D}\right)^2}$$
+
+**Example:** $\Delta y = (0.80 \pm 0.02) \mathrm{ mm}$, $d = (0.50 \pm 0.01) \mathrm{ mm}$,
+$D = (1.50 \pm 0.01) \mathrm{ m}$:
+
+$$\lambda = \frac{0.80 \times 10^{-3} \times 0.50 \times 10^{-3}}{1.50} = 2.67 \times 10^{-7} \mathrm{ m} = 267 \mathrm{ nm}$$
+
+$$\frac{\Delta\lambda}{\lambda} = \sqrt{\left(\frac{0.02}{0.80}\right)^2 + \left(\frac{0.01}{0.50}\right)^2 + \left(\frac{0.01}{1.50}\right)^2} = \sqrt{0.000625 + 0.0004 + 0.0000444} = \sqrt{0.001069} = 0.0327 = 3.3\%$$
+
+$$\Delta\lambda = 0.033 \times 267 = 8.8 \mathrm{ nm}$$
+
+$$\lambda = (267 \pm 9) \mathrm{ nm}$$
+
+---
+
+## Additional Worked Examples
+
+### Worked Example 11
+
+A light ray enters a glass prism of refractive index $1.52$ at an angle of incidence of
+$50^\circ$. The prism has an apex angle of $60^\circ$. Calculate the angle of emergence.
+
+<details>
+<summary>Solution</summary>
+
+At the first face: $1.00 \times \sin 50^\circ = 1.52 \times \sin r_1$
+
+$$\sin r_1 = \frac{0.766}{1.52} = 0.504 \implies r_1 = 30.2^\circ$$
+
+Angle of incidence at the second face: $r_2 = A - r_1 = 60^\circ - 30.2^\circ = 29.8^\circ$
+
+Check for TIR: critical angle $\theta_c = \sin^{-1}(1/1.52) = 41.1^\circ$. Since $29.8^\circ < 41.1^\circ$,
+no TIR occurs.
+
+At the second face: $1.52 \times \sin 29.8^\circ = 1.00 \times \sin\theta_e$
+
+$$\sin\theta_e = 1.52 \times 0.497 = 0.755 \implies \theta_e = 49.0^\circ$$
+
+</details>
+
+### Worked Example 12
+
+In a single-slit diffraction experiment, light of wavelength $550 \mathrm{ nm}$ passes through a
+slit of width $0.10 \mathrm{ mm}$. The screen is $2.0 \mathrm{ m}$ away. Calculate the width of
+the central maximum.
+
+<details>
+<summary>Solution</summary>
+
+For the first minimum in single-slit diffraction: $a\sin\theta = \lambda$, where $a$ is the slit
+width.
+
+$$\sin\theta_1 = \frac{\lambda}{a} = \frac{550 \times 10^{-9}}{0.10 \times 10^{-3}} = 5.5 \times 10^{-3}$$
+
+For small angles: $\sin\theta \approx \theta \approx \tan\theta$
+
+Width of central maximum $= 2y_1 = 2 \times D\tan\theta_1 \approx 2D\theta_1$
+
+$$= 2 \times 2.0 \times 5.5 \times 10^{-3} = 0.022 \mathrm{ m} = 22 \mathrm{ mm}$$
+
+</details>
+
+### Worked Example 13
+
+A plano-convex lens has a refractive index of $1.55$ and one surface with radius of curvature
+$20 \mathrm{ cm}$. The other surface is flat. Calculate the focal length.
+
+<details>
+<summary>Solution</summary>
+
+Using the lensmaker's equation: $\frac{1}{f} = (n - 1)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$
+
+For a plano-convex lens with the curved surface facing left ($R_1 = +20 \mathrm{ cm}$) and the
+flat surface facing right ($R_2 = \infty$):
+
+$$\frac{1}{f} = (1.55 - 1)\left(\frac{1}{20} - \frac{1}{\infty}\right) = 0.55 \times \frac{1}{20} = 0.0275$$
+
+$$f = \frac{1}{0.0275} = 36.4 \mathrm{ cm}$$
+
+</details>
+
+---
+
+## Exam-Style Questions
+
+### Question 1 (DSE Structured)
+
+A student uses a converging lens to project an image of a illuminated object onto a screen.
+
+(a) When the object is placed $30 \mathrm{ cm}$ from the lens, a sharp image is formed on a
+screen $120 \mathrm{ cm}$ from the lens. Calculate the focal length of the lens.
+
+(b) The object is now moved to $20 \mathrm{ cm}$ from the lens. Without calculation, describe
+the nature of the new image and explain your reasoning.
+
+(c) The student wants to use this lens as a simple magnifying glass. What is the maximum
+magnification achievable if the near point of the user is $25 \mathrm{ cm}$?
+
+<details>
+<summary>Solution</summary>
+
+(a) $u = 30 \mathrm{ cm}$, $v = 120 \mathrm{ cm}$
+
+$$\frac{1}{f} = \frac{1}{30} + \frac{1}{120} = \frac{4 + 1}{120} = \frac{5}{120} = \frac{1}{24}$$
+
+$$f = 24 \mathrm{ cm}$$
+
+(b) When the object is at $20 \mathrm{ cm}$ (which is less than $f = 24 \mathrm{ cm}$), the
+object is inside the focal length. No real image can be formed on a screen. The image is
+**virtual**, **upright**, and **magnified**, appearing on the same side of the lens as the object.
+
+(c) For maximum magnification with a simple magnifying glass, the virtual image should be at the
+near point ($25 \mathrm{ cm}$). Using $v = -25 \mathrm{ cm}$ (virtual image):
+
+$$\frac{1}{24} = \frac{1}{u} + \frac{1}{-25}$$
+
+$$\frac{1}{u} = \frac{1}{24} + \frac{1}{25} = \frac{25 + 24}{600} = \frac{49}{600}$$
+
+$$u = \frac{600}{49} = 12.24 \mathrm{ cm}$$
+
+$$m = \frac{|v|}{u} = \frac{25}{12.24} = 2.04$$
+
+Maximum magnification is approximately **2.0**.
+
+</details>
+
+### Question 2 (DSE Structured)
+
+(a) State the conditions necessary for total internal reflection to occur.
+
+(b) An optical fibre has a core of refractive index $1.48$ and cladding of refractive index
+$1.42$.
+
+(i) Calculate the critical angle at the core-cladding boundary.
+
+(ii) Calculate the maximum angle of incidence at the fibre end face for which light will be
+totally internally reflected along the fibre (the acceptance angle).
+
+(c) Explain why optical fibres are used for telecommunications instead of copper cables, giving
+two advantages.
+
+<details>
+<summary>Solution</summary>
+
+(a) Two conditions for total internal reflection:
+1. Light must travel from a denser medium to a less dense medium ($n_1 > n_2$).
+2. The angle of incidence must exceed the critical angle ($\theta_i > \theta_c$).
+
+(b) (i) $\sin\theta_c = \frac{n_{\mathrm{cladding}}}{n_{\mathrm{core}}} = \frac{1.42}{1.48} = 0.9595$
+
+$$\theta_c = \sin^{-1}(0.9595) = 73.7^\circ$$
+
+(ii) The maximum angle inside the fibre (measured from the fibre axis) for TIR is
+$90^\circ - 73.7^\circ = 16.3^\circ$.
+
+Using Snell's law at the end face:
+$n_{\mathrm{air}}\sin\theta_{\max} = n_{\mathrm{core}}\sin(16.3^\circ) = 1.48 \times 0.281 = 0.416$
+
+$$\theta_{\max} = \sin^{-1}(0.416) = 24.6^\circ$$
+
+(c) Two advantages of optical fibres over copper cables:
+1. **Much higher bandwidth:** Optical fibres can carry far more data per second than copper
+   cables, enabling high-speed internet and telecommunications.
+2. **Lower signal loss (attenuation):** Signals in optical fibres can travel much longer
+   distances without requiring amplification compared to electrical signals in copper.
+
+(Other valid answers: immune to electromagnetic interference, lighter weight, more secure.)
+
+</details>
+
+### Question 3 (DSE Structured)
+
+(a) Distinguish between a continuous spectrum and a line spectrum.
+
+(b) Light from a discharge tube containing hydrogen is passed through a diffraction grating with
+$300 \mathrm{ lines/mm}$. A bright line is observed at an angle of $18.5^\circ$ in the first
+order. Calculate the wavelength of this line.
+
+(c) Explain how the line spectrum of hydrogen provides evidence for the existence of discrete
+energy levels in atoms.
+
+<details>
+<summary>Solution</summary>
+
+(a) A **continuous spectrum** contains all wavelengths over a continuous range (e.g., the
+spectrum from a hot filament or the Sun). A **line spectrum** consists of discrete, well-defined
+wavelengths (bright lines on a dark background for emission, or dark lines on a continuous
+background for absorption).
+
+(b) $d = \frac{1}{300 \times 10^3} = 3.33 \times 10^{-6} \mathrm{ m}$
+
+For first order ($n = 1$): $d\sin\theta = \lambda$
+
+$$\lambda = 3.33 \times 10^{-6} \times \sin 18.5^\circ = 3.33 \times 10^{-6} \times 0.317 = 1.06 \times 10^{-6} \mathrm{ m} = 1060 \mathrm{ nm}$$
+
+(Note: This is in the infrared region.)
+
+(c) The line spectrum of hydrogen shows that atoms only emit (or absorb) light at specific,
+discrete wavelengths. By $E = hf = hc/\lambda$, this means photons of only specific energies
+are emitted. This is explained by electrons existing in discrete energy levels: when an
+electron transitions from a higher level to a lower level, it emits a photon with energy equal
+to the difference between the two levels: $\Delta E = hf$. The discrete wavelengths correspond
+to specific energy level differences, providing evidence for quantised energy levels.
+
+</details>
+
+### Question 4 (DSE Structured)
+
+(a) What is meant by the term "coherent" when applied to light sources?
+
+(b) In a Young's double-slit experiment using light of wavelength $580 \mathrm{ nm}$, the slit
+separation is $0.40 \mathrm{ mm}$ and the screen is $2.5 \mathrm{ m}$ from the slits.
+
+(i) Calculate the fringe spacing.
+
+(ii) Calculate the distance from the central maximum to the third bright fringe.
+
+(iii) If the slit separation is reduced to $0.20 \mathrm{ mm}$, describe and explain the
+effect on the fringe pattern.
+
+(c) Explain why a single slit is placed before the double slit in this experiment.
+
+<details>
+<summary>Solution</summary>
+
+(a) Two sources are coherent if they emit waves with a constant phase relationship (i.e., the
+phase difference between them does not change with time). For light, this means the waves must
+have the same frequency and a constant phase difference.
+
+(b) (i) $\Delta y = \frac{\lambda D}{d} = \frac{580 \times 10^{-9} \times 2.5}{0.40 \times 10^{-3}} = \frac{1.45 \times 10^{-6}}{4.0 \times 10^{-4}} = 3.63 \times 10^{-3} \mathrm{ m} = 3.63 \mathrm{ mm}$
+
+(ii) Third bright fringe ($n = 3$): $y_3 = 3\Delta y = 3 \times 3.63 = 10.9 \mathrm{ mm}$
+
+(iii) If the slit separation is halved, the fringe spacing doubles ($\Delta y \propto 1/d$).
+The fringes become wider and more spread out. However, the fringes also become less bright
+because less light passes through each narrower slit.
+
+(c) The single slit acts as a point source of light. Light from an extended source (e.g., a
+lamp) would create multiple sets of interference patterns that overlap and wash out. The single
+slit ensures that the light reaching the double slit is coherent (comes from a single point).
+This is necessary for a stable, observable interference pattern.
+
+</details>
+
+### Question 5 (DSE Structured)
+
+(a) Explain what is meant by polarisation of light.
+
+(b) Unpolarised light of intensity $I_0$ is incident on two polarising filters. The first has
+its transmission axis vertical, and the second has its transmission axis at $60^\circ$ to the
+vertical. Calculate the intensity of light transmitted through both filters.
+
+(c) A third polarising filter is now inserted between the first two, with its transmission axis
+at $30^\circ$ to the vertical. Calculate the new intensity of the transmitted light and
+compare it with the intensity in part (b).
+
+(d) State one application of polarised light and explain how it works.
+
+<details>
+<summary>Solution</summary>
+
+(a) Polarisation is the process of restricting the oscillations of a transverse wave to a
+single plane. For light, this means the electric field oscillates in only one direction.
+Unpolarised light has oscillations in all directions perpendicular to the direction of
+propagation.
+
+(b) After the first filter (vertical): $I_1 = \frac{1}{2}I_0$ (half the light passes, as
+unpolarised light has equal components in all directions).
+
+After the second filter (at $60^\circ$ to vertical): Using Malus's law:
+
+$$I_2 = I_1\cos^2 60^\circ = \frac{1}{2}I_0 \times (0.5)^2 = \frac{1}{2}I_0 \times 0.25 = 0.125I_0 = \frac{I_0}{8}$$
+
+(c) After the first filter: $I_1 = \frac{1}{2}I_0$
+
+After the second filter (at $30^\circ$):
+$$I_2 = I_1\cos^2 30^\circ = \frac{1}{2}I_0 \times \left(\frac{\sqrt{3}}{2}\right)^2 = \frac{1}{2}I_0 \times 0.75 = 0.375I_0$$
+
+After the third filter (at $60^\circ$ to vertical, which is $30^\circ$ from the second filter's
+axis):
+$$I_3 = I_2\cos^2 30^\circ = 0.375I_0 \times 0.75 = 0.281I_0$$
+
+This is greater than $0.125I_0$ (from part b). Inserting an intermediate polariser actually
+**increases** the transmitted intensity. This is because the intermediate filter rotates the
+polarisation direction in two $30^\circ$ steps rather than one $60^\circ$ step, and
+$\cos^2 30^\circ \times \cos^2 30^\circ > \cos^2 60^\circ$.
+
+(d) **Application: Polaroid sunglasses.** Reflected light from horizontal surfaces (roads, water)
+is partially polarised in the horizontal plane. Polaroid sunglasses have their transmission
+axis vertical, so they block the horizontally polarised reflected glare while allowing other
+light to pass. This reduces glare and improves visual comfort.
+
+(Other valid applications: liquid crystal displays (LCDs), stress analysis in engineering using
+photoelasticity, optical activity in sugar solutions.)
+
+### Extended Analysis: Resolution of Diffraction Grating
+
+The resolving power $R$ of a diffraction grating is its ability to distinguish between two
+closely spaced wavelengths:
+
+$$R = \frac{\lambda}{\Delta\lambda} = nN$$
+
+where $n$ is the order number and $N$ is the total number of illuminated slits.
+
+**Example:** A grating with $500 \mathrm{ lines/mm}$ is illuminated over a width of
+$2.0 \mathrm{ cm}$ in the second order.
+
+$$N = 500 \times 10^3 \times 0.02 = 10000 \mathrm{ slits}$$
+
+$$R = nN = 2 \times 10000 = 20000$$
+
+Minimum resolvable wavelength difference at $\lambda = 550 \mathrm{ nm}$:
+
+$$\Delta\lambda = \frac{\lambda}{R} = \frac{550}{20000} = 0.0275 \mathrm{ nm}$$
+
+### Extended Worked Example: Single Slit Width
+
+In a single-slit diffraction experiment, the first minimum is observed at an angle of
+$3.0^\circ$ when light of wavelength $620 \mathrm{ nm}$ is used. Calculate the slit width.
+
+<details>
+<summary>Solution</summary>
+
+$$a\sin\theta = \lambda$$
+
+$$a = \frac{\lambda}{\sin\theta} = \frac{620 \times 10^{-9}}{\sin 3.0^\circ} = \frac{620 \times 10^{-9}}{0.0523} = 1.19 \times 10^{-5} \mathrm{ m} = 0.0119 \mathrm{ mm}$$
+
+</details>
+
+### Extended Worked Example: Dispersion in a Prism
+
+A prism has apex angle $60^\circ$ and refractive index $1.52$ for sodium light
+($\lambda = 589 \mathrm{ nm}$). Calculate the angle of minimum deviation.
+
+<details>
+<summary>Solution</summary>
+
+At minimum deviation, the ray passes symmetrically through the prism:
+
+$$n = \frac{\sin\left(\frac{A + D_m}{2}\right)}{\sin\left(\frac{A}{2}\right)}$$
+
+$$1.52 = \frac{\sin\left(\frac{60 + D_m}{2}\right)}{\sin 30^\circ} = \frac{\sin\left(\frac{60 + D_m}{2}\right)}{0.5}$$
+
+$$\sin\left(\frac{60 + D_m}{2}\right) = 1.52 \times 0.5 = 0.760$$
+
+$$\frac{60 + D_m}{2} = \sin^{-1}(0.760) = 49.5^\circ$$
+
+$$60 + D_m = 99.0^\circ \implies D_m = 39.0^\circ$$
+
+</details>
+

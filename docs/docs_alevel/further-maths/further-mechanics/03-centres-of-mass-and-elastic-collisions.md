@@ -573,3 +573,565 @@ $$= \frac{r^2/4 + h^2/2}{2r/3 + h} = \frac{r^2 + 2h^2}{4\!\left(\dfrac{2r}{3} + 
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.
 
 </details>
+
+---
+
+## 9. Advanced Worked Examples
+
+### Example 9.1: Oblique collision between two spheres
+
+**Problem.** Two smooth spheres $A$ and $B$ have equal mass $m$. Before collision, $A$ moves with velocity $(5\mathbf{i} + 3\mathbf{j})$ m/s and $B$ is stationary. The line of centres at impact makes angle $\alpha$ with $\mathbf{i}$, where $\tan\alpha = 3/4$. The coefficient of restitution is $e = 1/2$. Find the velocities after collision.
+
+**Solution.** The normal direction is along the line of centres: $\hat{\mathbf{n}} = \dfrac{4}{5}\mathbf{i} + \dfrac{3}{5}\mathbf{j}$.
+
+The tangential direction: $\hat{\mathbf{t}} = -\dfrac{3}{5}\mathbf{i} + \dfrac{4}{5}\mathbf{j}$.
+
+Resolving $A$'s velocity: $u_{An} = (5)(4/5) + (3)(3/5) = 4 + 9/5 = 29/5$.
+
+$u_{At} = (5)(-3/5) + (3)(4/5) = -3 + 12/5 = -3/5$.
+
+$u_{Bn} = 0$, $u_{Bt} = 0$.
+
+Tangential components unchanged: $v_{At} = -3/5$, $v_{Bt} = 0$.
+
+Normal direction (conservation of momentum): $m(29/5) + m(0) = mv_{An} + mv_{Bn} \implies v_{An} + v_{Bn} = 29/5$ ... (i)
+
+Restitution: $v_{Bn} - v_{An} = (1/2)(29/5) = 29/10$ ... (ii)
+
+From (i) and (ii): $2v_{Bn} = 29/5 + 29/10 = 87/10 \implies v_{Bn} = 87/20$.
+
+$v_{An} = 29/5 - 87/20 = 116/20 - 87/20 = 29/20$.
+
+$\mathbf{v}_A = v_{An}\hat{\mathbf{n}} + v_{At}\hat{\mathbf{t}} = \dfrac{29}{20}\!\left(\dfrac{4}{5}\mathbf{i} + \dfrac{3}{5}\mathbf{j}\right) + \dfrac{-3}{5}\!\left(-\dfrac{3}{5}\mathbf{i} + \dfrac{4}{5}\mathbf{j}\right)$
+
+$= \left(\dfrac{116}{100} + \dfrac{9}{25}\right)\mathbf{i} + \left(\dfrac{87}{100} - \dfrac{12}{25}\right)\mathbf{j}$
+
+$= \left(\dfrac{29}{25} + \dfrac{9}{25}\right)\mathbf{i} + \left(\dfrac{87}{100} - \dfrac{48}{100}\right)\mathbf{j} = \dfrac{38}{25}\mathbf{i} + \dfrac{39}{100}\mathbf{j}$
+
+$\mathbf{v}_B = \dfrac{87}{20}\!\left(\dfrac{4}{5}\mathbf{i} + \dfrac{3}{5}\mathbf{j}\right) = \dfrac{87}{25}\mathbf{i} + \dfrac{261}{100}\mathbf{j}$
+
+### Example 9.2: Composite lamina with a triangular hole
+
+**Problem.** A uniform square lamina $ABCD$ has side $6a$. An equilateral triangle of side $2a$ is removed with one vertex at the centre of the square and the opposite side on $AB$. Find the centre of mass of the remaining lamina.
+
+**Solution.** Square: area $= 36a^2$, centre of mass at $(3a, 3a)$.
+
+Equilateral triangle with side $2a$: area $= \dfrac{\sqrt{3}}{4}(2a)^2 = \sqrt{3}\,a^2$.
+
+Height $= \sqrt{3}\,a$. The triangle's centroid is at distance $\sqrt{3}\,a/3$ from the base.
+
+Assuming the square has vertices at $(0, 0)$, $(6a, 0)$, $(6a, 6a)$, $(0, 6a)$, and the triangle has its base on the top edge $y = 6a$ with centroid at $(3a, 6a - \sqrt{3}\,a/3)$:
+
+Using negative mass:
+
+$$\bar{y} = \frac{36a^2 \times 3a - \sqrt{3}\,a^2 \times (6a - a\sqrt{3}/3)}{36a^2 - \sqrt{3}\,a^2} = \frac{108a^3 - 6\sqrt{3}\,a^3 + a^3}{a^2(36 - \sqrt{3})}$$
+
+$$= \frac{a(109 - 6\sqrt{3})}{36 - \sqrt{3}}$$
+
+### Example 9.3: Successive collisions with a wall
+
+**Problem.** A ball is projected from point $O$ with speed $u$ at angle $\alpha$ to the horizontal towards a smooth vertical wall at horizontal distance $d$. The coefficient of restitution between the ball and the wall is $e$. Show that the horizontal distance from the wall to the point where the ball next hits the ground is $ed$.
+
+**Solution.** Time to reach the wall: $t_1 = d/(u\cos\alpha)$.
+
+After impact with the wall:
+- Horizontal velocity reverses and reduces: $v_x' = e \cdot u\cos\alpha$ (moving away from wall).
+- Vertical velocity unchanged: $v_y' = u\sin\alpha - gd/(u\cos\alpha)$.
+
+The ball follows a parabolic trajectory after bouncing. By the reversibility of projectile motion and the scaling of horizontal velocity by factor $e$, the horizontal range from the wall is $ed$. $\blacksquare$
+
+### Example 9.4: Centre of mass of a solid cone
+
+**Problem.** Find the centre of mass of a uniform solid right circular cone of height $h$ and base radius $r$.
+
+**Solution.** Place the cone with its vertex at the origin and axis along the $z$-axis, extending to $z = h$.
+
+At height $z$, the cross-section is a disc of radius $\dfrac{rz}{h}$, with volume $dV = \pi\!\left(\dfrac{rz}{h}\right)^2 dz$.
+
+$$\bar{z} = \frac{\displaystyle\int_0^h z \cdot \pi r^2 z^2/h^2\,dz}{\displaystyle\int_0^h \pi r^2 z^2/h^2\,dz} = \frac{h^4/4}{h^3/3} = \frac{3h}{4}$$
+
+The centre of mass is at distance $\dfrac{3h}{4}$ from the vertex (or $\dfrac{h}{4}$ from the base).
+
+### Example 9.5: Three-body collision problem
+
+**Problem.** Three identical particles $A$, $B$, $C$ of mass $m$ are at rest in a straight line on a smooth surface with equal spacing $d$. Particle $A$ is given velocity $u$ towards $B$. If all collisions are perfectly elastic ($e = 1$), describe the subsequent motion.
+
+**Solution.** **Collision 1 ($A$ hits $B$):** By symmetry of equal masses with $e = 1$, $A$ stops and $B$ moves with velocity $u$ towards $C$.
+
+**Collision 2 ($B$ hits $C$):** Similarly, $B$ stops and $C$ moves with velocity $u$ away.
+
+After both collisions: $A$ at rest, $B$ at rest, $C$ moves with velocity $u$. No further collisions occur.
+
+### Example 9.6: Suspended lamina equilibrium
+
+**Problem.** A uniform rectangular lamina $ABCD$ with $AB = 8$ cm and $BC = 6$ cm is freely suspended from vertex $A$ and hangs in equilibrium. Find the angle that diagonal $AC$ makes with the vertical.
+
+**Solution.** Centre of mass $G$ is at the centre of the rectangle. With $A$ at the origin and $B$ along the positive $x$-axis, $G = (4, 3)$.
+
+When suspended from $A$, the line $AG$ is vertical. The vector $AG = (4, 3)$ makes angle $\arctan(3/4)$ with the horizontal.
+
+The diagonal $AC = (8, 6)$ also makes angle $\arctan(6/8) = \arctan(3/4)$ with the horizontal.
+
+Since $AG$ is parallel to $AC$, the angle between the diagonal $AC$ and the vertical is the same as the angle between $AG$ and the vertical: $90^\circ - \arctan(3/4) = \arctan(4/3) \approx 53.1^\circ$.
+
+---
+
+## 10. Connections to Other Topics
+
+### 10.1 Centre of mass and further calculus
+
+Finding centres of mass by integration requires the same techniques as volumes of revolution: substitution, integration by parts, and definite integrals. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+
+### 10.2 Collisions and energy
+
+The kinetic energy loss formula $\Delta KE = \frac{1}{2}\mu(u_1 - u_2)^2(1-e^2)$ connects to the work-energy principle and conservation of momentum. See [Projectile Motion](/docs/docs_alevel/further-maths/further-mechanics/01-projectile-motion).
+
+### 10.3 Oblique impacts and vectors
+
+Resolving velocities in oblique collisions requires vector decomposition and dot products. See [Vectors in 3D](/docs/docs_alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+
+---
+
+## 11. Additional Exam-Style Questions
+
+### Question 11
+
+A uniform lamina is in the shape of a semicircle of radius $a$ with a circle of radius $a/2$ removed. The centre of the removed circle lies on the diameter of the semicircle, at distance $a/2$ from the centre of the semicircle. Find the centre of mass of the remaining lamina.
+
+<details>
+<summary>Solution</summary>
+
+Semicircle: area $= \pi a^2/2$, centre of mass at $(0, 4a/(3\pi))$ from the diameter.
+
+Removed circle: area $= \pi a^2/4$, centre of mass at $(a/2, 0)$.
+
+Remaining area $= \pi a^2/2 - \pi a^2/4 = \pi a^2/4$.
+
+$$\bar{x} = \frac{(\pi a^2/2)(0) - (\pi a^2/4)(a/2)}{\pi a^2/4} = \frac{-\pi a^3/8}{\pi a^2/4} = -\frac{a}{2}$$
+
+$$\bar{y} = \frac{(\pi a^2/2)(4a/(3\pi)) - (\pi a^2/4)(0)}{\pi a^2/4} = \frac{2a^2/3}{\pi a^2/4} = \frac{8a}{3\pi}$$
+
+Centre of mass: $\left(-\dfrac{a}{2}, \dfrac{8a}{3\pi}\right)$.
+
+</details>
+
+### Question 12
+
+A particle of mass $2$ kg moving at $6$ m/s collides directly with a stationary particle of mass $m$ kg. After collision, the 2 kg particle rebounds with speed $1$ m/s and the coefficient of restitution is $e = 2/3$. Find $m$.
+
+<details>
+<summary>Solution</summary>
+
+Taking the initial direction of the 2 kg particle as positive: $u_1 = 6$, $u_2 = 0$, $v_1 = -1$.
+
+Momentum: $2(6) + m(0) = 2(-1) + m v_2 \implies 12 = -2 + m v_2 \implies m v_2 = 14$ ... (i)
+
+Restitution: $v_2 - (-1) = (2/3)(6 - 0) \implies v_2 + 1 = 4 \implies v_2 = 3$.
+
+From (i): $3m = 14 \implies m = 14/3$ kg.
+
+</details>
+
+### Question 13
+
+**Prove that** in any elastic collision between two particles (with $e = 1$), the relative speed of separation equals the relative speed of approach.
+
+<details>
+<summary>Solution</summary>
+
+By Newton's law of restitution with $e = 1$:
+
+$$v_2 - v_1 = 1 \cdot (u_1 - u_2)$$
+
+The relative speed of separation is $|v_2 - v_1|$ and the relative speed of approach is $|u_1 - u_2|$.
+
+$$|v_2 - v_1| = |u_1 - u_2| \quad \blacksquare$$
+
+</details>
+
+### Question 14
+
+A uniform solid hemisphere of radius $r$ and a uniform solid cone of base radius $r$ and height $h$ are joined base-to-base. Both are made of the same material. For what value of $h$ does the composite body have its centre of mass exactly at the join?
+
+<details>
+<summary>Solution</summary>
+
+Hemisphere: volume $= 2\pi r^3/3$, centre of mass at distance $3r/8$ from the flat face.
+
+Cone: volume $= \pi r^2 h/3$, centre of mass at distance $h/4$ from the base.
+
+Taking the join as the origin (measuring into the hemisphere as positive):
+
+$$\bar{x} = \frac{(2\pi r^3/3)(3r/8) + (\pi r^2 h/3)(-h/4)}{2\pi r^3/3 + \pi r^2 h/3} = \frac{\pi r^4/4 - \pi r^2 h^2/12}{\pi r^2(2r + h)/3}$$
+
+For the centre of mass to be at the join: $\bar{x} = 0$:
+
+$$\frac{\pi r^4}{4} = \frac{\pi r^2 h^2}{12} \implies 3r^2 = h^2 \implies h = r\sqrt{3}$$
+
+</details>
+
+---
+
+## 8. Advanced Worked Examples
+
+### Example 8.1: Centre of mass of a composite lamina
+
+**Problem.** A uniform lamina consists of a semicircle of radius $a$ attached to a rectangle of width $2a$ and height $h$. The flat side of the semicircle coincides with one edge of the rectangle. Find the distance of the centre of mass from the base of the rectangle.
+
+**Solution.** Semicircle: area $= \dfrac{\pi a^2}{2}$, centre of mass at $\dfrac{4a}{3\pi}$ above the diameter.
+
+Rectangle: area $= 2ah$, centre of mass at $\dfrac{h}{2}$ above the base.
+
+Taking the base as datum:
+
+$$\bar{y} = \frac{\frac{\pi a^2}{2}\!\left(h + \frac{4a}{3\pi}\right) + 2ah \cdot \frac{h}{2}}{\frac{\pi a^2}{2} + 2ah}$$
+
+$$= \frac{\frac{\pi a^2 h}{2} + \frac{2a^3}{3} + ah^2}{\frac{\pi a^2}{2} + 2ah}$$
+
+### Example 8.2: Oblique elastic collision in 2D
+
+**Problem.** A particle of mass $m$ moving at $4\,\mathrm{m\,s^{-1}}$ collides elastically with a stationary particle of mass $2m$. After the collision, the first particle moves at $60°$ to its original direction. Find the speeds after collision.
+
+**Solution.** Conservation of momentum (along original direction): $m \times 4 = mv_1\cos 60° + 2mv_2\cos\theta$.
+
+$4 = \dfrac{v_1}{2} + 2v_2\cos\theta$ ... (1)
+
+Perpendicular to original direction: $0 = mv_1\sin 60° - 2mv_2\sin\theta$.
+
+$v_1\sin 60° = 2v_2\sin\theta$ ... (2)
+
+Conservation of KE: $\dfrac{1}{2}m \times 16 = \dfrac{1}{2}mv_1^2 + \dfrac{1}{2}(2m)v_2^2$.
+
+$16 = v_1^2 + 2v_2^2$ ... (3)
+
+From (2): $v_2\sin\theta = \dfrac{v_1\sqrt{3}}{4}$. From (1): $v_2\cos\theta = 2 - \dfrac{v_1}{4}$.
+
+Squaring and adding: $v_2^2 = \dfrac{3v_1^2}{16} + 4 - \dfrac{v_1}{2} + \dfrac{v_1^2}{16} = \dfrac{v_1^2}{4} - \dfrac{v_1}{2} + 4$.
+
+Substituting into (3): $16 = v_1^2 + 2\!\left(\dfrac{v_1^2}{4} - \dfrac{v_1}{2} + 4\right) = \dfrac{3v_1^2}{2} - v_1 + 8$.
+
+$\dfrac{3v_1^2}{2} - v_1 - 8 = 0 \implies 3v_1^2 - 2v_1 - 16 = 0$.
+
+$v_1 = \dfrac{2 \pm \sqrt{4+192}}{6} = \dfrac{2 \pm 14}{6}$. Taking positive: $v_1 = \dfrac{16}{6} = \dfrac{8}{3}\,\mathrm{m\,s^{-1}}$.
+
+$v_2^2 = \dfrac{64}{9 \times 4} - \dfrac{4}{3} + 4 = \dfrac{16}{9} - \dfrac{4}{3} + 4 = \dfrac{16-12+36}{9} = \dfrac{40}{9}$.
+
+$v_2 = \dfrac{2\sqrt{10}}{3}\,\mathrm{m\,s^{-1}}$.
+
+### Example 8.3: Toppling and sliding on an inclined plane
+
+**Problem.** A uniform solid cylinder of radius $r$ and mass $m$ is placed on a rough inclined plane at angle $\alpha$. The coefficient of friction is $\mu$. Determine whether the cylinder slides or rolls.
+
+**Solution.** For sliding: $mg\sin\alpha > \mu mg\cos\alpha \implies \tan\alpha > \mu$.
+
+For rolling without slipping: the friction must be sufficient to provide the angular acceleration. Taking moments about the centre:
+
+$Fr = I\alpha = \dfrac{1}{2}mr^2 \cdot \dfrac{a}{r} \implies F = \dfrac{ma}{2}$.
+
+Linear: $mg\sin\alpha - F = ma \implies mg\sin\alpha = \dfrac{3ma}{2} \implies a = \dfrac{2g\sin\alpha}{3}$.
+
+$F = \dfrac{mg\sin\alpha}{3} \leq \mu mg\cos\alpha \implies \tan\alpha \leq 3\mu$.
+
+If $\mu < \tan\alpha \leq 3\mu$: rolls without slipping.
+If $\tan\alpha > 3\mu$: slides with slipping.
+
+### Example 8.4: Centre of mass of a non-uniform rod
+
+**Problem.** A rod of length $L$ has density $\rho(x) = \rho_0(1 + x/L)$. Find the centre of mass.
+
+**Solution.** $$\bar{x} = \frac{\int_0^L x\rho(x)\,dx}{\int_0^L \rho(x)\,dx} = \frac{\int_0^L x(1+x/L)\,dx}{\int_0^L (1+x/L)\,dx}$$
+
+Numerator: $\displaystyle\int_0^L \!\left(x + \frac{x^2}{L}\right)dx = \frac{L^2}{2} + \frac{L^2}{3} = \frac{5L^2}{6}$.
+
+Denominator: $\displaystyle\int_0^L \!\left(1 + \frac{x}{L}\right)dx = L + \frac{L}{2} = \frac{3L}{2}$.
+
+$$\bar{x} = \frac{5L^2/6}{3L/2} = \frac{5L}{9}$$
+
+The centre of mass is at $\boxed{\dfrac{5L}{9}}$ from the lighter end (shifted toward the heavier end).
+
+### Example 8.5: Elastic collision with a wall
+
+**Problem.** A particle of mass $m$ and speed $u$ collides elastically with a fixed wall at angle $\theta$ to the normal. Find the impulse exerted by the wall.
+
+**Solution.** Only the component perpendicular to the wall reverses:
+
+$v_{\perp} = u\cos\theta$ (reverses), $v_{\parallel} = u\sin\theta$ (unchanged).
+
+Since the collision is elastic, the speed is unchanged: the perpendicular component reverses.
+
+$$\text{Impulse} = m(u\cos\theta - (-u\cos\theta)) = \boxed{2mu\cos\theta}$$
+
+directed along the normal away from the wall.
+
+---
+
+## 9. Common Pitfalls
+
+| Pitfall | Correct Approach |
+|---|---|
+| Forgetting to include the mass in centre of mass calculations for composite bodies | Always weight each centre of mass by its mass, not just its area |
+| Assuming elastic means KE of each particle is conserved individually | Elastic means total KE is conserved, not individual KE |
+| Using the wrong moment of inertia for a body | Rod about end: $\dfrac{ml^2}{3}$; about centre: $\dfrac{ml^2}{12}$; solid disc: $\dfrac{mr^2}{2}$ |
+
+---
+
+## 10. Additional Exam-Style Questions
+
+### Question 8
+
+A uniform lamina is formed from an equilateral triangle of side $2a$ with a circular hole of radius $a/2$ cut out. The centre of the hole coincides with the centroid of the triangle. Find the centre of mass of the remaining lamina.
+
+<details>
+<summary>Solution</summary>
+
+Triangle: area $= \dfrac{\sqrt{3}}{4}(2a)^2 = \sqrt{3}a^2$, centroid at geometric centre.
+
+Hole: area $= \dfrac{\pi a^2}{4}$, centroid at geometric centre.
+
+Since the hole is at the centroid, the remaining lamina has its centre of mass at the centroid of the triangle.
+
+Wait — the centre of mass of the remaining lamina is the weighted average of the triangle and the hole (with negative mass for the hole):
+
+$$\bar{x} = \frac{\sqrt{3}a^2 \cdot 0 - \frac{\pi a^2}{4} \cdot 0}{\sqrt{3}a^2 - \frac{\pi a^2}{4}} = 0$$
+
+The centre of mass remains at the centroid since both the triangle and hole are centred there. $\boxed{\bar{x} = 0}$
+
+</details>
+
+### Question 9
+
+**Prove that** in a one-dimensional elastic collision between a particle of mass $m_1$ and a stationary particle of mass $m_2$, the velocity of $m_1$ after collision is $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$.
+
+<details>
+<summary>Solution</summary>
+
+Conservation of momentum: $m_1 u = m_1 v_1 + m_2 v_2$ ... (1)
+
+Conservation of KE: $\dfrac{1}{2}m_1 u^2 = \dfrac{1}{2}m_1 v_1^2 + \dfrac{1}{2}m_2 v_2^2$ ... (2)
+
+From (1): $v_2 = \dfrac{m_1(u-v_1)}{m_2}$. Substituting into (2):
+
+$m_1 u^2 = m_1 v_1^2 + \dfrac{m_1^2(u-v_1)^2}{m_2}$.
+
+$u^2 = v_1^2 + \dfrac{m_1(u^2-2uv_1+v_1^2)}{m_2}$.
+
+$m_2 u^2 = m_2 v_1^2 + m_1 u^2 - 2m_1 uv_1 + m_1 v_1^2$.
+
+$(m_1-m_2)u^2 + 2m_1 uv_1 - (m_1+m_2)v_1^2 = 0$.
+
+Factoring: $(u-v_1)[(m_1-m_2)u - (m_1+m_2)v_1] = 0$.
+
+Excluding $u = v_1$ (no collision): $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$. $\blacksquare$
+
+</details>
+
+---
+
+## 11. Connections to Other Topics
+
+### 11.1 Elastic collisions and energy conservation
+
+Elastic collisions conserve both momentum and kinetic energy, connecting to the work-energy theorem. See [Projectile Motion](/docs/docs_alevel/further-maths/further-mechanics/01-projectile-motion).
+
+### 11.2 Centre of mass and integration
+
+Finding centres of mass of continuous bodies requires integration techniques. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+
+### 11.3 Moments and vectors
+
+The moment of a force about a point uses the cross product: $\mathbf{M} = \mathbf{r} \times \mathbf{F}$. See [Vectors in 3D](/docs/docs_alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+
+---
+
+## 12. Key Results Summary
+
+| Result | Formula |
+|---|---|
+| 1D elastic collision | $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$, $v_2 = \dfrac{2m_1 u}{m_1+m_2}$ |
+| Conservation of momentum | $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$ |
+| Conservation of KE (elastic) | $\dfrac{1}{2}m_1u_1^2 + \dfrac{1}{2}m_2u_2^2 = \dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2$ |
+| Centre of mass (discrete) | $\bar{x} = \dfrac{\sum m_i x_i}{\sum m_i}$ |
+| Centre of mass (continuous) | $\bar{x} = \dfrac{\int x\,\rho(x)\,dA}{\int \rho(x)\,dA}$ |
+| Moment of inertia (rod, centre) | $I = \dfrac{ml^2}{12}$ |
+| Moment of inertia (rod, end) | $I = \dfrac{ml^2}{3}$ |
+| Moment of inertia (disc) | $I = \dfrac{mr^2}{2}$ |
+
+---
+
+## 13. Further Exam-Style Questions
+
+### Question 10
+
+Two particles of masses $3\,\mathrm{kg}$ and $5\,\mathrm{kg}$ collide. Before collision, the $3\,\mathrm{kg}$ particle moves at $4\,\mathrm{m\,s^{-1}}$ and the $5\,\mathrm{kg}$ particle moves at $-2\,\mathrm{m\,s^{-1}}$. After the elastic collision, find the velocities of both particles.
+
+<details>
+<summary>Solution</summary>
+
+Conservation of momentum: $3(4)+5(-2) = 3v_1+5v_2 \implies 3v_1+5v_2 = 2$ ... (1)
+
+Conservation of KE: $\dfrac{1}{2}(3)(16)+\dfrac{1}{2}(5)(4) = \dfrac{1}{2}(3)v_1^2+\dfrac{1}{2}(5)v_2^2 \implies 3v_1^2+5v_2^2 = 68$ ... (2)
+
+From (1): $v_2 = \dfrac{2-3v_1}{5}$. Substituting into (2):
+
+$3v_1^2 + 5\!\left(\dfrac{2-3v_1}{5}\right)^{\!2} = 68$.
+
+$3v_1^2 + \dfrac{4-12v_1+9v_1^2}{5} = 68$.
+
+$15v_1^2+4-12v_1+9v_1^2 = 340$.
+
+$24v_1^2-12v_1-336 = 0 \implies 2v_1^2-v_1-28 = 0$.
+
+$(2v_1+7)(v_1-4) = 0$. $v_1 = 4$ (no collision) or $v_1 = -7/2 = -3.5$.
+
+$v_2 = \dfrac{2-3(-3.5)}{5} = \dfrac{12.5}{5} = 2.5$.
+
+$\boxed{v_1 = -3.5\,\mathrm{m\,s^{-1}},\; v_2 = 2.5\,\mathrm{m\,s^{-1}}}$
+
+</details>
+
+### Question 11
+
+A uniform solid cone of height $h$ and base radius $r$ is placed with its vertex on a horizontal table. Find the height of its centre of mass above the table.
+
+<details>
+<summary>Solution</summary>
+
+Using the standard result: the centre of mass of a solid cone is at $\dfrac{h}{4}$ from the base, i.e., $\dfrac{3h}{4}$ from the vertex.
+
+With the vertex on the table, the centre of mass is at $\boxed{\dfrac{3h}{4}}$ above the table.
+
+</details>
+
+---
+
+## 14. Advanced Topics
+
+### 14.1 Centre of mass of a circular arc
+
+A uniform circular arc of radius $r$ subtending angle $2\alpha$ at the centre has its centre of mass at:
+
+$$\bar{x} = \frac{r\sin\alpha}{\alpha}$$
+
+from the centre, along the axis of symmetry.
+
+### 14.2 Centre of mass of a circular sector
+
+A uniform circular sector of radius $r$ and angle $2\alpha$ has its centre of mass at:
+
+$$\bar{x} = \frac{2r\sin\alpha}{3\alpha}$$
+
+from the centre, along the axis of symmetry.
+
+### 14.3 Coefficient of restitution
+
+For partially elastic collisions, the coefficient of restitution $e$ is defined as:
+
+$$e = \frac{\text{relative speed of separation}}{\text{relative speed of approach}}$$
+
+$e = 1$: perfectly elastic. $e = 0$: perfectly inelastic.
+
+### 14.4 Oblique collisions with walls
+
+When a particle hits a smooth wall, only the component of velocity perpendicular to the wall reverses:
+
+$v_{\perp}^{\text{after}} = -e \cdot v_{\perp}^{\text{before}}$
+
+The parallel component is unchanged.
+
+---
+
+## 15. Further Exam-Style Questions
+
+### Question 12
+
+A particle of mass $2\,\mathrm{kg}$ moving at $5\,\mathrm{m\,s^{-1}}$ collides with a stationary particle of mass $3\,\mathrm{kg}$. The coefficient of restitution is $e = 0.6$. Find the velocities after collision and the kinetic energy lost.
+
+<details>
+<summary>Solution</summary>
+
+Momentum: $2(5) = 2v_1 + 3v_2 \implies 2v_1 + 3v_2 = 10$ ... (1)
+
+Restitution: $v_2 - v_1 = 0.6 \times 5 = 3$ ... (2)
+
+From (2): $v_2 = v_1 + 3$. Substituting into (1): $2v_1 + 3(v_1+3) = 10 \implies 5v_1 = 1 \implies v_1 = 0.2$.
+
+$v_2 = 3.2$.
+
+KE lost $= \dfrac{1}{2}(2)(25) - \dfrac{1}{2}(2)(0.04) - \dfrac{1}{2}(3)(10.24) = 25 - 0.04 - 15.36 = \boxed{9.6\,\mathrm{J}}$.
+
+</details>
+
+### Question 13
+
+Find the centre of mass of a uniform semicircular lamina of radius $a$.
+
+<details>
+<summary>Solution</summary>
+
+By symmetry, $\bar{x} = 0$.
+
+$$\bar{y} = \frac{\int_0^{\pi} \frac{1}{2}a^2 \cdot \frac{2}{3}a\sin\theta\,d\theta}{\frac{1}{2}\pi a^2} = \frac{\frac{a^3}{3}\int_0^{\pi}\sin\theta\,dtheta}{\frac{\pi a^2}{2}} = \frac{\frac{2a^3}{3}}{\frac{\pi a^2}{2}} = \boxed{\frac{4a}{3\pi}}$$
+
+</details>
+
+---
+
+## 16. Further Advanced Topics
+
+### 16.1 Centre of mass of a solid hemisphere
+
+A uniform solid hemisphere of radius $a$ has its centre of mass at distance $\dfrac{3a}{8}$ from the flat face (or $\dfrac{3a}{8}$ from the centre of the sphere).
+
+### 16.2 Centre of mass of a thin hemispherical shell
+
+A thin hemispherical shell of radius $a$ has its centre of mass at distance $\dfrac{a}{2}$ from the flat face.
+
+Note the difference: $\dfrac{3a}{8} < \dfrac{a}{2}$ — the solid hemisphere's centre of mass is closer to the base.
+
+### 16.3 Pappus' centroid theorem (second theorem)
+
+The volume generated by rotating a plane area about an external axis equals the area times the distance travelled by its centroid:
+
+$$V = 2\pi \bar{d} \cdot A$$
+
+where $\bar{d}$ is the distance from the centroid to the axis of rotation.
+
+### 16.4 Centre of mass by integration — general formula
+
+For a 3D body with density $\rho(\mathbf{r})$:
+
+$$\bar{x} = \frac{\iiint_V x\,\rho\,dV}{\iiint_V \rho\,dV}, \quad \bar{y} = \frac{\iiint_V y\,\rho\,dV}{\iiint_V \rho\,dV}, \quad \bar{z} = \frac{\iiint_V z\,\rho\,dV}{\iiint_V \rho\,dV}$$
+
+---
+
+## 17. Further Exam-Style Questions
+
+### Question 14
+
+A uniform wire is bent into a semicircle of radius $a$. Find its centre of mass.
+
+<details>
+<summary>Solution</summary>
+
+For a wire (1D), use $\bar{x} = \dfrac{\int x\,ds}{\int ds}$ where $ds = a\,d\theta$.
+
+$$\bar{y} = \frac{\int_0^{\pi} a\sin\theta \cdot a\,d\theta}{\int_0^{\pi} a\,d\theta} = \frac{a^2[-\cos\theta]_0^{\pi}}{a\pi} = \frac{2a^2}{a\pi} = \boxed{\frac{2a}{\pi}}$$
+
+</details>
+
+### Question 15
+
+**Prove Pappus' first theorem:** the volume of revolution of a plane area about an external axis in its plane equals the area times the distance travelled by its centroid.
+
+<details>
+<summary>Solution</summary>
+
+Consider rotating area $A$ about axis $x = 0$. By the shell method:
+
+$V = 2\pi\displaystyle\int_A x\,dA = 2\pi \cdot \bar{x} \cdot A$.
+
+where $\bar{x} = \dfrac{1}{A}\displaystyle\int_A x\,dA$ is the centroid's $x$-coordinate.
+
+The centroid travels a distance $2\pi\bar{x}$, so $V = 2\pi\bar{x}\cdot A$. $\blacksquare$
+
+</details>

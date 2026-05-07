@@ -1061,3 +1061,971 @@ Potential government failures include:
 - Administrative costs of implementing and monitoring the subsidy reduce its net benefit.
 
 </details>
+
+## Consumer Choice Theory (HL Extension)
+
+### Budget Constraints
+
+A consumer's budget constraint represents all combinations of two goods they can afford given their
+income and the prices of the goods. If a consumer has income $M$, the price of good $X$ is $P_X$, and
+the price of good $Y$ is $P_Y$:
+
+$$P_X \cdot X + P_Y \cdot Y = M$$
+
+The budget line has:
+- **Slope** $= -P_X / P_Y$ (the opportunity cost of one more unit of $X$ in terms of $Y$)
+- **X-intercept** $= M / P_X$ (maximum quantity of $X$ affordable)
+- **Y-intercept** $= M / P_Y$ (maximum quantity of $Y$ affordable)
+
+The budget constraint shifts outward when income increases or when the price of both goods falls
+proportionally. A change in the price of one good rotates the budget line around the intercept of
+the other good.
+
+### Indifference Curves
+
+An indifference curve shows all combinations of two goods that give the consumer the same level of
+utility (satisfaction). The consumer is indifferent between any two points on the same curve.
+
+**Properties of indifference curves:**
+
+1. **Downward-sloping**: to maintain the same utility, consuming more of one good requires consuming
+   less of the other
+2. **Convex to the origin**: due to the diminishing marginal rate of substitution
+3. **Cannot intersect**: if two curves intersected, a point would simultaneously represent two
+   different utility levels, which is a logical contradiction
+4. **Higher curves represent higher utility**: the further from the origin, the greater the
+   combination of goods consumed and therefore the higher the utility
+
+### Marginal Rate of Substitution (MRS)
+
+The MRS measures the rate at which a consumer is willing to trade one good for another while
+maintaining the same utility level:
+
+$$\mathrm{MRS}_{XY} = -\frac{\Delta Y}{\Delta X}$$
+
+At any point on the indifference curve, the MRS equals the absolute value of the slope of the
+indifference curve. As the consumer moves down along the curve, the MRS diminishes: the more of $X$
+and the less of $Y$ consumed, the less $Y$ the consumer is willing to give up for an additional unit
+of $X$.
+
+The MRS also equals the ratio of marginal utilities:
+
+$$\mathrm{MRS}_{XY} = \frac{MU_X}{MU_Y}$$
+
+### Consumer Equilibrium
+
+A rational consumer maximises utility subject to their budget constraint. The optimal consumption
+bundle occurs where the indifference curve is tangent to the budget line:
+
+$$\mathrm{MRS}_{XY} = \frac{P_X}{P_Y}$$
+
+Or equivalently:
+
+$$\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$$
+
+This condition states that the marginal utility per dollar spent must be equal across all goods. If
+$\frac{MU_X}{P_X} > \frac{MU_Y}{P_Y}$, the consumer should buy more $X$ and less $Y$ until the
+ratio equalises.
+
+### Income and Substitution Effects
+
+When the price of a good changes, the total effect on quantity demanded can be decomposed into:
+
+1. **Substitution effect**: the change in consumption due to the change in relative prices, holding
+   utility constant. The substitution effect is always negative (price and quantity move in opposite
+   directions)
+2. **Income effect**: the change in consumption due to the change in real purchasing power (real
+   income). The direction depends on whether the good is normal or inferior
+
+**For a normal good:**
+- Both income and substitution effects work in the same direction
+- When price falls, both effects increase quantity demanded
+- The demand curve slopes downward
+
+**For an inferior good:**
+- The substitution effect increases quantity demanded when price falls
+- The income effect decreases quantity demanded (because the consumer is effectively richer and
+  switches to superior goods)
+- If the income effect is smaller than the substitution effect, the demand curve still slopes
+  downward (most inferior goods)
+- If the income effect outweighs the substitution effect, the demand curve slopes upward: this is a
+  **Giffen good** (extremely rare; requires the good to be a staple that dominates the budget of
+  very poor consumers)
+
+**Numerical example:**
+
+A consumer has income $M = 100$, $P_X = 5$, $P_Y = 2$. The consumer's utility function is
+$U = X^{0.5} \cdot Y^{0.5}$.
+
+Budget constraint: $5X + 2Y = 100$
+
+$\mathrm{MRS} = \frac{MU_X}{MU_Y} = \frac{0.5 X^{-0.5} Y^{0.5}}{0.5 X^{0.5} Y^{-0.5}} = \frac{Y}{X}$
+
+Setting $\mathrm{MRS} = P_X / P_Y$:
+
+$$\frac{Y}{X} = \frac{5}{2} \implies Y = 2.5X$$
+
+Substituting into the budget constraint:
+
+$$5X + 2(2.5X) = 100 \implies 10X = 100 \implies X^* = 10, \quad Y^* = 25$$
+
+### Common Pitfalls in Consumer Choice
+
+- Drawing indifference curves that slope upward or that intersect. Indifference curves must be
+  downward-sloping and non-intersecting.
+- Confusing the MRS with the budget line slope. At equilibrium they are equal, but they represent
+  different concepts (subjective trade-off vs. market trade-off).
+- Assuming all inferior goods are Giffen goods. A Giffen good is a special case where the income
+  effect dominates the substitution effect. Most inferior goods have a normally-shaped demand curve.
+
+## Production Theory (HL Extension)
+
+### Isoquants and Isocost Lines
+
+An **isoquant** shows all combinations of two inputs (typically capital $K$ and labour $L$) that
+produce the same level of output. Isoquants are analogous to indifference curves in consumer theory.
+
+**Properties of isoquants:**
+
+1. Downward-sloping: to maintain the same output, using more of one input requires using less of the
+   other
+2. Convex to the origin: due to the diminishing marginal rate of technical substitution (MRTS)
+3. Higher isoquants represent higher output levels
+
+The **marginal rate of technical substitution** (MRTS) measures the rate at which one input can be
+substituted for another while maintaining output:
+
+$$\mathrm{MRTS}_{LK} = -\frac{\Delta K}{\Delta L} = \frac{MP_L}{MP_K}$$
+
+An **isocost line** shows all combinations of inputs that cost the same total amount. If the wage
+rate is $w$ and the rental rate of capital is $r$:
+
+$$wL + rK = C$$
+
+The slope of the isocost line is $-w/r$.
+
+### Cost Minimisation
+
+A firm minimises the cost of producing a given level of output where the isoquant is tangent to the
+isocost line:
+
+$$\mathrm{MRTS}_{LK} = \frac{w}{r}$$
+
+Or equivalently:
+
+$$\frac{MP_L}{w} = \frac{MP_K}{r}$$
+
+This condition states that the marginal product per dollar spent must be equal across all inputs.
+
+### Returns to Scale
+
+Returns to scale describe how output changes when all inputs are increased proportionally:
+
+- **Constant returns to scale**: doubling all inputs exactly doubles output. $f(tK, tL) = t \cdot f(K, L)$
+- **Increasing returns to scale**: doubling all inputs more than doubles output. $f(tK, tL) > t \cdot f(K, L)$
+- **Decreasing returns to scale**: doubling all inputs less than doubles output. $f(tK, tL) < t \cdot f(K, L)$
+
+Returns to scale determine the shape of the long-run average cost (LRAC) curve: increasing returns
+produce a downward-sloping LRAC, constant returns produce a flat LRAC, and decreasing returns
+produce an upward-sloping LRAC.
+
+### Cobb-Douglas Production Function
+
+The Cobb-Douglas production function is widely used in economics:
+
+$$Q = A \cdot K^\alpha \cdot L^\beta$$
+
+Where $A$ is total factor productivity, $\alpha$ is the output elasticity of capital, and $\beta$ is
+the output elasticity of labour.
+
+**Returns to scale with Cobb-Douglas:**
+
+- If $\alpha + \beta = 1$: constant returns to scale
+- If $\alpha + \beta > 1$: increasing returns to scale
+- If $\alpha + \beta < 1$: decreasing returns to scale
+
+**Marginal products:**
+
+$$MP_K = \frac{\partial Q}{\partial K} = \alpha \cdot A \cdot K^{\alpha - 1} \cdot L^\beta = \alpha \cdot \frac{Q}{K}$$
+
+$$MP_L = \frac{\partial Q}{\partial L} = \beta \cdot A \cdot K^\alpha \cdot L^{\beta - 1} = \beta \cdot \frac{Q}{L}$$
+
+**Worked example:** A firm has the production function $Q = 10K^{0.4}L^{0.6}$, $w = 20$, $r = 40$.
+
+Cost minimisation: $\frac{MP_L}{w} = \frac{MP_K}{r}$
+
+$$\frac{0.6 \cdot 10K^{0.4}L^{-0.4}}{20} = \frac{0.4 \cdot 10K^{-0.6}L^{0.6}}{40}$$
+
+$$\frac{0.6L^{-0.4}K^{0.4}}{20} = \frac{0.4K^{-0.6}L^{0.6}}{40}$$
+
+$$\frac{0.6}{20} \cdot \frac{K^{0.4}}{L^{0.4}} = \frac{0.4}{40} \cdot \frac{L^{0.6}}{K^{0.6}}$$
+
+$$0.03 \cdot \left(\frac{K}{L}\right)^{0.4} = 0.01 \cdot \left(\frac{L}{K}\right)^{0.6}$$
+
+$$3 \cdot \left(\frac{K}{L}\right)^{0.4} = \left(\frac{L}{K}\right)^{0.6}$$
+
+$$3 = \left(\frac{L}{K}\right)^{0.6} \cdot \left(\frac{L}{K}\right)^{0.4} = \frac{L}{K}$$
+
+$$L = 3K$$
+
+The optimal capital-labour ratio is $K/L = 1/3$. For every unit of capital, the firm should employ
+3 units of labour.
+
+## Oligopoly Models in Depth (HL Extension)
+
+### Cournot Duopoly
+
+In the Cournot model (1838), each firm independently chooses its output quantity, taking the rival's
+output as given. Firms choose quantities simultaneously.
+
+**Setup:** Two firms (1 and 2) produce a homogeneous good with market demand $P = a - bQ$, where
+$Q = q_1 + q_2$. Each firm has constant marginal cost $c$.
+
+**Firm 1's profit:**
+
+$$\pi_1 = P \cdot q_1 - c \cdot q_1 = (a - bq_1 - bq_2 - c) \cdot q_1$$
+
+**Best response function:** maximising $\pi_1$ with respect to $q_1$:
+
+$$\frac{\partial \pi_1}{\partial q_1} = a - 2bq_1 - bq_2 - c = 0$$
+
+$$q_1 = \frac{a - c}{2b} - \frac{q_2}{2}$$
+
+By symmetry, Firm 2's best response is:
+
+$$q_2 = \frac{a - c}{2b} - \frac{q_1}{2}$$
+
+**Nash equilibrium (Cournot equilibrium):** substituting one best response into the other:
+
+$$q_1^* = q_2^* = \frac{a - c}{3b}$$
+
+$$Q^* = \frac{2(a - c)}{3b}, \quad P^* = \frac{a + 2c}{3}$$
+
+**Comparison with monopoly and perfect competition:**
+
+| Market Structure   | Total Output            | Price                    |
+| ------------------ | ----------------------- | ------------------------ |
+| Perfect competition | $Q_c = \frac{a-c}{b}$  | $P_c = c$                |
+| Cournot duopoly     | $Q^{Co} = \frac{2(a-c)}{3b}$ | $P^{Co} = \frac{a+2c}{3}$ |
+| Monopoly           | $Q_m = \frac{a-c}{2b}$ | $P_m = \frac{a+c}{2}$   |
+
+Cournot output is between monopoly and perfect competition. As the number of firms increases,
+Cournot output approaches the competitive level.
+
+### Bertrand Duopoly
+
+In the Bertrand model (1883), each firm independently chooses its price, taking the rival's price
+as given. Firms set prices simultaneously.
+
+**Result with homogeneous goods:** the Nash equilibrium is both firms setting $P = MC = c$.
+
+If $P_1 > P_2 = c$, Firm 1 sells nothing. If $P_1 < P_2$, Firm 1 captures the entire market.
+Each firm has an incentive to undercut the other until price equals marginal cost. This is known as
+the **Bertrand paradox**: just two firms are sufficient to achieve the perfectly competitive outcome
+when products are homogeneous and firms compete on price.
+
+**With differentiated products:** the demand for each firm depends on both prices. If demand is:
+
+$$q_1 = a - bP_1 + dP_2$$
+$$q_2 = a - bP_2 + dP_1$$
+
+Where $d$ measures the degree of substitutability ($0 < d < b$). In this case, prices exceed
+marginal cost, and the equilibrium depends on the degree of differentiation.
+
+### Stackelberg Duopoly
+
+In the Stackelberg model, one firm (the **leader**) moves first by choosing its quantity, and the
+other firm (the **follower**) observes this and then chooses its quantity.
+
+**Solution:**
+
+1. The follower solves its Cournot best response given the leader's output $q_1$:
+   $$q_2 = \frac{a - c}{2b} - \frac{q_1}{2}$$
+
+2. The leader anticipates this response and maximises its profit:
+   $$\pi_1 = (a - bq_1 - bq_2(q_1) - c) \cdot q_1$$
+   $$\pi_1 = \left(a - bq_1 - b\left(\frac{a-c}{2b} - \frac{q_1}{2}\right) - c\right) q_1$$
+   $$\pi_1 = \left(\frac{a - c}{2} - \frac{bq_1}{2}\right) q_1$$
+
+   Maximising: $\frac{\partial \pi_1}{\partial q_1} = \frac{a - c}{2} - bq_1 = 0$
+
+   $$q_1^* = \frac{a - c}{2b}, \quad q_2^* = \frac{a - c}{4b}$$
+
+**First-mover advantage:** the Stackelberg leader produces twice as much as the follower and earns
+higher profit. Total output is $Q^* = \frac{3(a-c)}{4b}$, which exceeds Cournot output but is
+still less than competitive output. This demonstrates the value of commitment and strategic
+leadership.
+
+### Kinked Demand Curve: Formal Analysis
+
+The kinked demand curve model (Sweezy, 1939) explains price rigidity in oligopoly. The model
+assumes:
+
+- If a firm raises its price, rivals do **not** follow (demand is elastic above the kink)
+- If a firm lowers its price, rivals **match** the cut (demand is inelastic below the kink)
+
+This creates a discontinuity in the MR curve at the current price and quantity. The result is that
+small changes in marginal cost within the gap in the MR curve do not change the profit-maximising
+price, explaining price rigidity.
+
+**Limitations of the kinked demand curve model:**
+
+- It does not explain how the initial price is determined
+- It assumes asymmetric behaviour by rivals (matching price cuts but not price increases)
+- Empirical evidence for the model is mixed; price rigidity may be better explained by menu costs
+  or implicit collusion
+
+### Game Theory and Oligopoly
+
+Game theory provides a rigorous framework for analysing strategic interaction in oligopoly.
+
+**Payoff matrix example -- pricing game:**
+
+Two firms, A and B, can each set a High price or a Low price. Payoffs (profit in millions):
+
+|                  | B: High Price | B: Low Price |
+| ---------------- | ------------- | ------------ |
+| **A: High Price** | (10, 10)      | (2, 12)      |
+| **A: Low Price**  | (12, 2)       | (5, 5)       |
+
+**Analysis:**
+
+- If B chooses High: A earns 10 (High) vs. 12 (Low). A chooses Low.
+- If B chooses Low: A earns 2 (High) vs. 5 (Low). A chooses Low.
+- Low is A's dominant strategy. By symmetry, Low is B's dominant strategy.
+- Nash equilibrium: (Low, Low) with payoffs (5, 5).
+- Both would be better off at (High, High) with (10, 10) -- a prisoner's dilemma.
+
+**Collusion and cartels as a prisoner's dilemma:**
+
+If firms successfully collude (agree to restrict output and raise prices), joint profits are
+maximised. However, each firm has an incentive to cheat by secretly lowering price or exceeding its
+quota. The payoff structure mirrors the prisoner's dilemma:
+
+|                      | B: Comply (cartel) | B: Cheat    |
+| -------------------- | ------------------ | ----------- |
+| **A: Comply (cartel)**| (8, 8)             | (3, 12)     |
+| **A: Cheat**         | (12, 3)            | (5, 5)      |
+
+The Nash equilibrium is (Cheat, Cheat), which is Pareto inferior to (Comply, Comply). This is why
+cartels are inherently unstable and require enforcement mechanisms (monitoring, penalties, or
+repeated interaction with the threat of punishment).
+
+**Sequential games in oligopoly:**
+
+In a sequential (Stackelberg) game, the first mover gains an advantage. The leader commits to a
+high output, and the follower responds with a lower output. This can be analysed using backward
+induction.
+
+### Common Pitfalls in Oligopoly
+
+- Confusing Cournot and Bertrand models. Cournot assumes firms choose quantities; Bertrand assumes
+  firms choose prices. The outcomes differ significantly.
+- Stating that the kinked demand curve explains why prices change. It actually explains why prices
+  are stable (rigid).
+- Assuming that oligopoly always leads to higher prices than monopoly. In Bertrand competition
+  with homogeneous goods, price equals marginal cost.
+- Forgetting that game theory predictions depend on the payoff structure. Different assumptions about
+  demand, costs, and firm behaviour lead to different equilibria.
+
+## Price Discrimination in Depth (HL Extension)
+
+### First-Degree (Perfect) Price Discrimination
+
+The monopolist charges each consumer their exact maximum willingness to pay. The monopolist captures
+the entire consumer surplus.
+
+**Welfare effects:**
+
+- Consumer surplus falls to zero
+- Producer surplus increases by the full amount of the former consumer surplus
+- Deadweight loss is eliminated -- the monopolist produces the competitive quantity
+- Total output equals the perfectly competitive output (where $P = MC$)
+- Allocative efficiency is achieved, but all surplus goes to the producer
+
+$$\text{Profit} = \text{Total consumer surplus (under single price)} + \text{Producer surplus (under single price)}$$
+
+**Requirements for first-degree price discrimination:**
+
+1. Perfect knowledge of every consumer's willingness to pay
+2. Ability to prevent resale
+3. Market power
+
+In practice, perfect price discrimination is rare because firms cannot perfectly observe each
+consumer's willingness to pay. Approximations include personalised pricing (online, based on
+browsing history), negotiation (car dealerships, real estate), and auctions.
+
+### Second-Degree Price Discrimination
+
+The monopolist offers different pricing options (quantity-based blocks, versioning, self-selection),
+and consumers self-select into the option that maximises their utility.
+
+**Block pricing:** the price per unit varies with the quantity purchased:
+
+$$\text{Total revenue} = P_1 Q_1 + P_2 (Q_2 - Q_1) + P_3 (Q_3 - Q_2) + \cdots$$
+
+Where $P_1 > P_2 > P_3$ (declining block pricing). This captures some consumer surplus from
+consumers who buy in larger quantities.
+
+**Numerical example:** A cinema charges `USD 8` for the first ticket, `USD 6` for the second, and `USD 4` for
+each additional ticket (up to 5). A consumer who buys 4 tickets pays:
+
+$$\text{Total} = 8 + 6 + 4 + 4 = \text{USD 22}$$
+
+Average price per ticket $= 22/4 = \text{USD 5.50$, which is less than the single-ticket price of USD 8.}$
+
+### Third-Degree Price Discrimination
+
+The monopolist separates consumers into groups with different price elasticities of demand and charges
+each group a different price.
+
+**Rule:** charge the higher price to the group with the less elastic demand.
+
+**Mathematical derivation:**
+
+For each market segment $i$, the monopolist maximises:
+
+$$\pi_i = P_i(Q_i) \cdot Q_i - C(Q_1 + Q_2 + \cdots + Q_n)$$
+
+The first-order condition is:
+
+$$\mathrm{MR}_i = MC \quad \forall \; i$$
+
+Since $\mathrm{MR}_i = P_i(1 + 1/\mathrm{PED}_i)$, and $\mathrm{MR}_i = MC$ for all segments:
+
+$$P_i(1 + 1/\mathrm{PED}_i) = P_j(1 + 1/\mathrm{PED}_j) = MC$$
+
+Rearranging:
+
+$$\frac{P_i}{P_j} = \frac{1 + 1/\mathrm{PED}_j}{1 + 1/\mathrm{PED}_i}$$
+
+If $|\mathrm{PED}_i| < |\mathrm{PED}_j|$ (market $i$ has less elastic demand), then $P_i > P_j$.
+
+**Worked example:** A monopolist serves two markets with demand curves:
+
+Market 1 (adults): $P_1 = 40 - Q_1$, $\mathrm{PED}_1 = -2$ at equilibrium
+Market 2 (students): $P_2 = 25 - Q_2$, $\mathrm{PED}_2 = -3$ at equilibrium
+Total cost: $\mathrm{TC} = 50 + 5(Q_1 + Q_2)$, so $MC = 5$.
+
+For each market: $MR = MC = 5$.
+
+Market 1: $\mathrm{MR}_1 = 40 - 2Q_1 = 5 \implies Q_1 = 17.5$, $P_1 = 40 - 17.5 = 22.5$
+
+Market 2: $\mathrm{MR}_2 = 25 - 2Q_2 = 5 \implies Q_2 = 10$, $P_2 = 25 - 10 = 15$
+
+Total profit $= P_1 Q_1 + P_2 Q_2 - \mathrm{TC} = 22.5(17.5) + 15(10) - 50 - 5(27.5)$
+$= 393.75 + 150 - 50 - 137.5 = 356.25$
+
+Verification: $\frac{P_1}{P_2} = \frac{22.5}{15} = 1.5$
+
+$$\frac{1 + 1/\mathrm{PED}_2}{1 + 1/\mathrm{PED}_1} = \frac{1 + 1/(-3)}{1 + 1/(-2)} = \frac{1 - 1/3}{1 - 1/2} = \frac{2/3}{1/2} = \frac{4}{3} \approx 1.33$$
+
+The slight discrepancy arises because PED values vary along the demand curve; the condition holds
+exactly only at the equilibrium quantities.
+
+**Conditions for price discrimination:**
+
+1. Market power (price maker)
+2. Ability to segment the market (prevent arbitrage/resale between segments)
+3. Different price elasticities of demand in different segments
+
+**Welfare effects of third-degree price discrimination:**
+
+- Consumer surplus decreases in the less elastic market (higher price) and may increase in the more
+  elastic market (lower price)
+- Total output may increase or decrease relative to single-price monopoly
+- If total output increases, welfare may increase (the DWL reduction from higher output may offset
+  the DWL from misallocation between markets)
+- If total output decreases, welfare unambiguously decreases
+
+### Common Pitfalls in Price Discrimination
+
+- Assuming that price discrimination always reduces consumer surplus. Consumers in the more elastic
+  market may face lower prices than under uniform pricing.
+- Confusing price discrimination with price differentiation due to cost differences. Price
+  discrimination requires the same product to be sold at different prices not justified by cost
+  differences.
+- Stating that a monopolist charges "whatever they want" under price discrimination. Even with
+  price discrimination, the monopolist must optimise within the constraints of each market's
+  demand curve.
+
+## Factor Markets (HL Extension)
+
+### Factor Demand
+
+A firm demands factors of production (labour, capital, land) to produce output. The demand for a
+factor is a **derived demand** -- it depends on the demand for the product that the factor produces.
+
+### Marginal Revenue Product (MRP)
+
+The marginal revenue product of labour is the additional revenue generated by employing one more
+unit of labour:
+
+$$\mathrm{MRP}_L = \mathrm{MR} \times \mathrm{MP}_L$$
+
+Where $\mathrm{MP}_L$ is the marginal product of labour and $\mathrm{MR}$ is marginal revenue.
+
+Under perfect competition in the product market ($\mathrm{MR} = P$):
+
+$$\mathrm{MRP}_L = P \times \mathrm{MP}_L = \mathrm{VMP}_L$$
+
+Where $\mathrm{VMP}_L$ is the value of the marginal product.
+
+Under monopoly ($\mathrm{MR} < P$):
+
+$$\mathrm{MRP}_L < \mathrm{VMP}_L$$
+
+A profit-maximising firm hires labour up to the point where:
+
+$$\mathrm{MRP}_L = \mathrm{MRC}_L$$
+
+Where $\mathrm{MRC}_L$ (marginal resource cost) is the additional cost of hiring one more unit of
+labour.
+
+### Marginal Resource Cost (MRC)
+
+In a perfectly competitive labour market, the firm is a wage taker and $\mathrm{MRC}_L = w$ (the
+wage rate). The firm faces a horizontal supply curve for labour.
+
+$$\text{Labour demand rule (perfect competition): } \mathrm{MRP}_L = w$$
+
+### Monopsony
+
+A monopsony is a market with a single buyer of a factor of production (typically labour). The
+monopsonist faces an upward-sloping supply curve for labour and must pay a higher wage to attract
+additional workers.
+
+If the labour supply curve is $w = a + bL$, the total cost of labour is:
+
+$$\mathrm{TC}_L = w \cdot L = (a + bL) \cdot L = aL + bL^2$$
+
+$$\mathrm{MRC}_L = \frac{d\mathrm{TC}_L}{dL} = a + 2bL$$
+
+The MRC curve lies above the supply (average cost of labour) curve. The monopsonist hires where
+$\mathrm{MRP}_L = \mathrm{MRC}_L$, but pays the wage indicated by the supply curve at that
+quantity.
+
+**Comparison with competitive labour market:**
+
+- A monopsony hires **fewer** workers than a competitive market
+- A monopsony pays a **lower** wage than a competitive market
+- There is a deadweight loss from the underemployment of labour
+
+**Worked example:** A monopsonist faces labour supply $w = 20 + 2L$ and $\mathrm{MRP}_L = 100 - 2L$.
+
+$\mathrm{MRC}_L = 20 + 4L$
+
+Setting $\mathrm{MRP}_L = \mathrm{MRC}_L$:
+
+$$100 - 2L = 20 + 4L \implies 80 = 6L \implies L^* = 13.33$$
+
+Wage paid $= 20 + 2(13.33) = 46.67$
+
+Under competitive conditions: $\mathrm{MRP}_L = w$, so $100 - 2L = 20 + 2L \implies 80 = 4L \implies L_c = 20$,
+$w_c = 20 + 2(20) = 60$.
+
+The monopsony hires 13.33 workers at a wage of 46.67, compared to 20 workers at a wage of 60 under
+competition. The deadweight loss arises from the 6.67 workers who would be employed competitively
+(between $L^* = 13.33$ and $L_c = 20$) but are not hired by the monopsonist.
+
+### Transfer Earnings and Economic Rent
+
+**Transfer earnings** are the minimum payment required to keep a factor of production in its current
+use. If a factor earns less than its transfer earnings, it will move to its next best alternative.
+
+**Economic rent** is any payment above transfer earnings:
+
+$$\text{Economic rent} = \text{Total factor income} - \text{Transfer earnings}$$
+
+The proportion of economic rent to total income depends on the elasticity of the factor supply:
+
+- **Perfectly inelastic supply** (vertical): all income is economic rent (e.g., land in the short
+  run)
+- **Perfectly elastic supply** (horizontal): all income is transfer earnings (e.g., unskilled
+  labour in a competitive market)
+- **Upward-sloping supply**: income is a mix of transfer earnings and economic rent
+
+**Factor mobility:**
+
+- **Occupationally mobile**: workers can move between different types of jobs (requires training,
+  education)
+- **Geographically mobile**: workers can move between different locations
+- High factor mobility increases the elasticity of factor supply, reducing economic rent
+- Low factor mobility decreases the elasticity of factor supply, increasing economic rent
+
+### Common Pitfalls in Factor Markets
+
+- Confusing MRP with VMP. MRP $= MR \times MP_L$; VMP $= P \times MP_L$. They are equal only under
+  perfect competition in the product market.
+- Confusing monopsony with monopoly. Monopoly is a single seller; monopsony is a single buyer.
+- Stating that a minimum wage always reduces employment. In a monopsony, a minimum wage set at or
+  below the competitive wage can increase both employment and wages.
+- Confusing transfer earnings with economic profit. Transfer earnings are a cost to the firm; they
+  are part of the normal return to the factor.
+
+## Government Intervention: Welfare Analysis (HL Extension)
+
+### Deadweight Loss Calculations
+
+The deadweight loss (DWL) from any government intervention that creates a wedge between the
+marginal benefit and marginal cost of a good can be calculated using the formula:
+
+$$\mathrm{DWL} = \frac{1}{2} \times (P_{\text{distortion}}) \times (Q_{\text{loss}})$$
+
+Where $P_{\text{distortion}}$ is the difference between the marginal benefit and marginal cost at the
+distorted quantity, and $Q_{\text{loss}}$ is the reduction in quantity from the efficient level.
+
+### Comprehensive Welfare Analysis of a Tax
+
+For a specific tax $t$ on a good with linear demand $P = a - bQ$ and supply $P = c + dQ$:
+
+**Pre-tax equilibrium:**
+
+$$a - bQ = c + dQ \implies Q_0 = \frac{a - c}{b + d}, \quad P_0 = \frac{ad + bc}{b + d}$$
+
+**Post-tax equilibrium:** supply shifts to $P = c + dQ + t$:
+
+$$a - bQ_t = c + dQ_t + t \implies Q_t = \frac{a - c - t}{b + d}$$
+
+$$P_d = a - bQ_t = a - \frac{b(a - c - t)}{b + d} = \frac{a(b + d) - b(a - c - t)}{b + d} = \frac{ad + bc + bt}{b + d}$$
+
+$$P_s = P_d - t = \frac{ad + bc - dt}{b + d}$$
+
+**Welfare changes:**
+
+$$\Delta\mathrm{CS} = -\frac{1}{2}(P_d - P_0)(Q_0 + Q_t)$$
+
+$$\Delta\mathrm{PS} = -\frac{1}{2}(P_0 - P_s)(Q_0 + Q_t)$$
+
+$$\text{Tax revenue} = t \times Q_t$$
+
+$$\mathrm{DWL} = \frac{1}{2} \times t \times (Q_0 - Q_t) = \frac{t^2}{2(b + d)}$$
+
+### Welfare Analysis of a Subsidy
+
+For a per-unit subsidy $s$, the supply curve shifts downward to $P = c + dQ - s$:
+
+$$a - bQ = c + dQ - s \implies Q_s = \frac{a - c + s}{b + d}$$
+
+$$P_d = a - bQ_s = \frac{ad + bc - bs}{b + d}$$
+
+$$P_s = P_d + s = \frac{ad + bc + ds}{b + d}$$
+
+The subsidy cost is $s \times Q_s$. The DWL of the subsidy is:
+
+$$\mathrm{DWL} = \frac{1}{2} \times s \times (Q_s - Q_0) = \frac{s^2}{2(b + d)}$$
+
+### Welfare Analysis of a Price Ceiling
+
+A binding price ceiling $P_{\text{ceil}} < P_0$ creates:
+
+- Quantity demanded: $Q_d = (a - P_{\text{ceil}}) / b$
+- Quantity supplied: $Q_s = (P_{\text{ceil}} - c) / d$
+- Shortage: $Q_d - Q_s$
+
+$$\Delta\mathrm{CS} = (P_0 - P_{\text{ceil}})Q_s - \frac{1}{2}(P_0 - P_{\text{ceil}})(Q_0 - Q_s) - \frac{1}{2}(P_0 - P_{\text{ceil}})(Q_d - Q_0)$$
+
+The first term is the gain to consumers who still buy the good. The second and third terms are losses
+from reduced consumption. The net effect is ambiguous and depends on the parameters.
+
+$$\mathrm{DWL} = \frac{1}{2}(P_{\text{ceil}} - c)(Q_0 - Q_s) + \frac{1}{2}(a - P_{\text{ceil}})(Q_d - Q_0)$$
+
+The first triangle is the loss from inefficiently low production. The second is the loss from
+foregone mutually beneficial transactions.
+
+### Welfare Analysis of a Price Floor
+
+A binding price floor $P_{\text{floor}} > P_0$ creates:
+
+- Quantity demanded: $Q_d = (a - P_{\text{floor}}) / b$
+- Quantity supplied: $Q_s = (P_{\text{floor}} - c) / d$
+- Surplus: $Q_s - Q_d$
+
+$$\mathrm{DWL} = \frac{1}{2}(P_{\text{floor}} - c)(Q_s - Q_0) + \frac{1}{2}(a - P_{\text{floor}})(Q_0 - Q_d)$$
+
+If the government purchases the surplus at the floor price, the total cost is
+$P_{\text{floor}} \times (Q_s - Q_d)$, adding to the welfare loss.
+
+### Common Pitfalls in Welfare Analysis
+
+- Confusing the change in consumer surplus with the change in total welfare. A tax reduces both CS
+  and PS, and the net welfare loss is the DWL.
+- Forgetting that the DWL triangle depends on the change in quantity, not the change in price.
+- Calculating government revenue from a quota as positive. Unless licences are auctioned, the quota
+  revenue may accrue to foreign producers or importers, not the government.
+- Drawing the DWL on the wrong side of the supply and demand curves. Always identify the pre- and
+  post-intervention quantities and the area between the supply and demand curves.
+
+## Additional Practice Problems
+
+<details>
+<summary>Problem 8: Consumer Choice and MRS</summary>
+
+A consumer has utility function $U = X \cdot Y$ and income $M = 200$. The price of $X$ is $P_X = 10$
+and the price of $Y$ is $P_Y = 5$.
+
+(a) Find the optimal consumption bundle.
+
+(b) If the price of $X$ rises to $P_X = 20$, find the new optimal bundle.
+
+(c) Decompose the change in $X$ consumption into substitution and income effects.
+
+(a) $\mathrm{MRS}_{XY} = \frac{MU_X}{MU_Y} = \frac{Y}{X}$
+
+Setting $\mathrm{MRS} = P_X / P_Y$:
+
+$$\frac{Y}{X} = \frac{10}{5} = 2 \implies Y = 2X$$
+
+Budget constraint: $10X + 5Y = 200$
+
+$10X + 5(2X) = 200 \implies 20X = 200 \implies X^* = 10, \quad Y^* = 20$
+
+(b) New MRS condition: $\frac{Y}{X} = \frac{20}{5} = 4 \implies Y = 4X$
+
+New budget constraint: $20X + 5Y = 200$
+
+$20X + 5(4X) = 200 \implies 40X = 200 \implies X^{**} = 5, \quad Y^{**} = 20$
+
+(c) To decompose: at the new prices, find the bundle that gives the original utility $U = 10 \times 20 = 200$.
+
+$XY = 200$ and $Y = 4X \implies 4X^2 = 200 \implies X^2 = 50 \implies X^C = \sqrt{50} \approx 7.07$
+
+$Y^C = 4 \times 7.07 = 28.28$
+
+**Substitution effect:** $X^C - X^* = 7.07 - 10 = -2.93$ (decrease in $X$ due to substitution toward $Y$)
+
+**Income effect:** $X^{**} - X^C = 5 - 7.07 = -2.07$ (decrease in $X$ due to reduced purchasing power)
+
+**Total effect:** $-2.93 + (-2.07) = -5$ (from 10 to 5)
+
+Both effects reduce consumption of $X$, confirming it is a normal good.
+
+</details>
+
+<details>
+<summary>Problem 9: Cournot Duopoly with Calculation</summary>
+
+Two firms compete in a Cournot duopoly. Market demand is $P = 100 - Q$ where $Q = q_1 + q_2$. Both
+firms have $MC = 10$.
+
+(a) Find the Cournot equilibrium output, price, and profit for each firm.
+
+(b) Compare with the monopoly outcome.
+
+(c) What would happen if the firms colluded?
+
+(a) Firm 1's profit: $\pi_1 = (100 - q_1 - q_2 - 10)q_1 = (90 - q_1 - q_2)q_1$
+
+FOC: $90 - 2q_1 - q_2 = 0 \implies q_1 = 45 - 0.5q_2$
+
+By symmetry: $q_2 = 45 - 0.5q_1$
+
+Substituting: $q_1 = 45 - 0.5(45 - 0.5q_1) = 45 - 22.5 + 0.25q_1 = 22.5 + 0.25q_1$
+
+$0.75q_1 = 22.5 \implies q_1^* = q_2^* = 30$
+
+$Q^* = 60$, $P^* = 100 - 60 = 40$
+
+$\pi_1 = \pi_2 = (40 - 10) \times 30 = 900$
+
+(b) Monopoly: $\mathrm{MR} = 100 - 2Q = MC = 10 \implies Q_m = 45$, $P_m = 55$
+
+$\pi_m = (55 - 10) \times 45 = 2025$
+
+Under Cournot, total output is higher (60 vs. 45), price is lower (40 vs. 55), and total profit
+is lower (1800 vs. 2025).
+
+(c) If firms collude (act as a monopoly), each produces $Q_m / 2 = 22.5$.
+
+$\pi_{\text{collusion}} = (55 - 10) \times 22.5 = 1012.5$ per firm.
+
+Each firm earns more under collusion ($1012.5$) than under Cournot ($900$), but each has an
+incentive to cheat: if Firm 1 cheats and Firm 2 produces $22.5$:
+
+$q_1 = 45 - 0.5(22.5) = 33.75$, $Q = 56.25$, $P = 43.75$
+
+$\pi_1^{\text{cheat}} = (43.75 - 10) \times 33.75 = 1139.06 > 1012.5$
+
+This confirms the prisoner's dilemma structure of collusion.
+
+</details>
+
+<details>
+<summary>Problem 10: Third-Degree Price Discrimination</summary>
+
+A cinema serves two markets: adults and students. The demand curves are:
+
+Adults: $P_A = 30 - 0.5Q_A$
+Students: $P_S = 20 - 0.5Q_S$
+
+The cinema's marginal cost is constant at $MC = 4$ per ticket. There are no fixed costs.
+
+(a) Calculate the profit-maximising price and quantity for each market under third-degree price
+discrimination.
+
+(b) Calculate total profit with and without price discrimination (assuming a single price for all
+customers with combined demand).
+
+(a) Market A: $\mathrm{MR}_A = 30 - Q_A = 4 \implies Q_A = 26$, $P_A = 30 - 13 = 17$
+
+Market S: $\mathrm{MR}_S = 20 - Q_S = 4 \implies Q_S = 16$, $P_S = 20 - 8 = 12$
+
+$\pi_A = (17 - 4) \times 26 = 338$
+
+$\pi_S = (12 - 4) \times 16 = 128$
+
+Total profit $= 338 + 128 = 466$
+
+(b) Combined demand: $P = 30 - 0.5Q$ for $Q \leq 20$ (when $P > 20$), and $P = 20 - 0.5(Q - 20) = 30 - 0.5Q$
+for $Q > 20$. Actually, we need to sum horizontally.
+
+For $P \geq 20$: only adults buy. $Q_A = 60 - 2P$, $Q_S = 0$.
+For $P < 20$: both buy. $Q_A = 60 - 2P$, $Q_S = 40 - 2P$. Total $Q = 100 - 4P$, so $P = 25 - 0.25Q$.
+
+$\mathrm{MR} = 25 - 0.5Q = 4 \implies Q = 42$
+
+$P = 25 - 0.25(42) = 14.5$
+
+$Q_A = 60 - 2(14.5) = 31$, $Q_S = 40 - 2(14.5) = 11$
+
+$\pi_{\text{single}} = (14.5 - 4) \times 42 = 441$
+
+Price discrimination yields higher profit ($466 > 441$), confirming that the firm benefits from
+segmenting the market. Students pay less ($12$ vs. $14.5$), while adults pay more ($17$ vs. $14.5$).
+
+</details>
+
+<details>
+<summary>Problem 11: Monopsony and Minimum Wage</summary>
+
+A coal mine is the sole employer in a remote town. The labour supply is $w = 10 + L$ and the
+$\mathrm{MRP}_L = 50 - 2L$.
+
+(a) Find the profit-maximising wage and employment level.
+
+(b) Calculate the deadweight loss compared to a competitive labour market.
+
+(c) The government introduces a minimum wage of $w = 22$. Analyse the effect on employment and
+wages.
+
+(a) $\mathrm{MRC}_L = 10 + 2L$
+
+Setting $\mathrm{MRP}_L = \mathrm{MRC}_L$:
+
+$50 - 2L = 10 + 2L \implies 40 = 4L \implies L^* = 10$
+
+Wage $= 10 + 10 = 20$
+
+(b) Competitive equilibrium: $\mathrm{MRP}_L = w$, so $50 - 2L = 10 + L \implies 40 = 3L \implies L_c = 13.33$,
+$w_c = 23.33$.
+
+The monopsony under-employs by $13.33 - 10 = 3.33$ workers. The DWL is:
+
+$$\mathrm{DWL} = \frac{1}{2} \times (\mathrm{MRP}_{L=10} - w_{L=10}) \times (L_c - L^*)$$
+
+At $L = 10$: $\mathrm{MRP}_L = 50 - 20 = 30$, $w = 20$.
+
+$\mathrm{DWL} = \frac{1}{2} \times (30 - 20) \times (13.33 - 10) = \frac{1}{2} \times 10 \times 3.33 = 16.67$
+
+(c) With minimum wage $w_{\min} = 22$:
+
+For $L \leq 12$ (where supply wage $= 22$), the $\mathrm{MRC}$ is constant at $22$.
+For $L > 12$, the firm must pay above $22$ to attract more workers.
+
+The firm now faces: $\mathrm{MRC} = 22$ for $L \leq 12$.
+
+$\mathrm{MRP}_L = 22 \implies 50 - 2L = 22 \implies 2L = 28 \implies L = 14$.
+
+But at $L = 14$, the supply wage would be $10 + 14 = 24 > 22$, so the firm must pay $24$ for
+the 14th worker. The $\mathrm{MRC}$ jumps at $L = 12$.
+
+For $L > 12$: $\mathrm{MRC}_L = 10 + 2L$ (back to the original supply curve).
+
+Setting $\mathrm{MRP}_L = \mathrm{MRC}_L$ at $22$: the firm hires $L = 14$ workers at a wage of
+$w = \max(22, 10 + 14) = 24$ for the 14th worker. But the minimum wage is only binding up to
+$L = 12$.
+
+More precisely, the firm faces $\mathrm{MRC} = 22$ for the first 12 workers. The $\mathrm{MRP}$
+at $L = 12$ is $50 - 24 = 26 > 22$, so the firm wants to hire more. For $L > 12$, the
+$\mathrm{MRC}$ reverts to $10 + 2L$.
+
+Setting $50 - 2L = 10 + 2L \implies L = 10$, but this is at the original equilibrium. The firm
+hires where the horizontal portion of MRC (at 22) intersects MRP:
+
+$50 - 2L = 22 \implies L = 14$
+
+Since $14 > 12$, the firm must check whether the 13th and 14th workers have $\mathrm{MRC} > 22$.
+At $L = 13$: $\mathrm{MRC} = 10 + 2(13) = 36 > \mathrm{MRP}_{L=13} = 50 - 26 = 24$. So the
+firm will not hire the 13th worker.
+
+The firm hires $L = 12$ workers at $w = 22$.
+
+Employment increased from 10 to 12 (compared to the monopsony without minimum wage), and the
+wage increased from 20 to 22. This demonstrates that in a monopsony, a minimum wage can
+increase both employment and wages -- the opposite of the competitive case.
+
+</details>
+
+<details>
+<summary>Problem 12: Comprehensive Welfare Analysis</summary>
+
+A market has demand $Q_d = 100 - P$ and supply $Q_s = P - 20$.
+
+(a) Find the equilibrium and calculate total welfare (CS + PS).
+
+(b) The government imposes a price floor at $P = 65$ and purchases the resulting surplus. Calculate
+the change in welfare and the cost to the government.
+
+(c) Alternatively, the government provides a subsidy of `USD 10` per unit. Compare the welfare
+effects with the price floor.
+
+(a) Equilibrium: $100 - P = P - 20 \implies 2P = 120 \implies P_0 = 60$, $Q_0 = 40$.
+
+$\mathrm{CS} = \frac{1}{2}(100 - 60)(40) = 800$
+
+$\mathrm{PS} = \frac{1}{2}(60 - 20)(40) = 800$
+
+Total welfare $= 1600$.
+
+(b) Price floor at $P_f = 65$:
+
+$Q_d = 100 - 65 = 35$, $Q_s = 65 - 20 = 45$.
+
+Surplus $= 45 - 35 = 10$ units. Government purchases 10 units at `USD 65` each.
+
+Cost to government $= 65 \times 10 = 650$.
+
+New CS $= \frac{1}{2}(100 - 65)(35) = 612.5$. $\Delta\mathrm{CS} = 612.5 - 800 = -187.5$
+
+New PS $= \frac{1}{2}(65 - 20)(45) = 1012.5$. $\Delta\mathrm{PS} = 1012.5 - 800 = +212.5$
+
+Government cost $= 650$. However, the government acquires goods worth $(100 - 65)/2 \times 10 + 35 \times 10$
+... more simply, the government's surplus from buying and destroying the goods is zero.
+
+$\mathrm{DWL} = \frac{1}{2}(65 - 60)(40 - 35) + \frac{1}{2}(65 - 60)(45 - 40) = \frac{1}{2}(5)(5) + \frac{1}{2}(5)(5) = 12.5 + 12.5 = 25$
+
+Total welfare change $= -187.5 + 212.5 - 650 = -625$. The net welfare loss including government
+spending is `USD 625`.
+
+(c) Subsidy of $s = 10$: new supply is $Q_s = P - 20 + 10$, or $P = Q_s + 10$. The supply curve
+shifts down.
+
+In demand-supply form: $Q_d = 100 - P$, $P = Q_s + 10$, so $Q_s = P - 10$.
+
+$100 - P = P - 10 \implies 2P = 110 \implies P_d = 55$, $P_s = 45$.
+
+$Q_s = 45$. Subsidy cost $= 10 \times 45 = 450$.
+
+New CS $= \frac{1}{2}(100 - 55)(45) = 1012.5$. $\Delta\mathrm{CS} = +212.5$
+
+New PS $= \frac{1}{2}(45 - 20)(45) = 562.5$. $\Delta\mathrm{PS} = 562.5 - 800 = -237.5$
+
+$\mathrm{DWL} = \frac{1}{2} \times 10 \times (45 - 40) = 25$
+
+Net welfare change (including government cost) $= 212.5 - 237.5 - 450 = -475$
+
+Both policies create the same DWL of 25 (coincidentally, because the quantity distortions are the
+same). However, the price floor costs the government more (650 vs. 450) and creates a larger net
+welfare loss. The subsidy is less costly overall because consumers benefit from lower prices.
+
+</details>

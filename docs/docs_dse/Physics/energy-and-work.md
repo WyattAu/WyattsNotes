@@ -581,3 +581,535 @@ Ready to test your understanding of **Energy and Work**? The [diagnostic test](/
 See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
+---
+
+## Derivations
+
+### Derivation: Work-Energy Theorem
+
+Starting from Newton's second law for constant mass:
+
+$$F = ma = m\frac{dv}{dt}$$
+
+The work done by a net force over a displacement from $s_1$ to $s_2$:
+
+$$W = \int_{s_1}^{s_2} F\, ds = \int_{s_1}^{s_2} m\frac{dv}{dt}\, ds = \int_{v_1}^{v_2} mv\, dv = \left[\frac{1}{2}mv^2\right]_{v_1}^{v_2} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
+
+Therefore:
+
+$$W_{\mathrm{net}} = \Delta E_k = E_{k,f} - E_{k,i}$$
+
+This is the work-energy theorem: the net work done on an object equals its change in kinetic
+energy.
+
+### Derivation: Elastic Potential Energy of a Spring
+
+For a spring obeying Hooke's law, $F = kx$, the force varies linearly with extension. The work
+done in stretching the spring from $x = 0$ to $x = x$ is:
+
+$$W = \int_0^x F\, dx' = \int_0^x kx'\, dx' = \left[\frac{1}{2}kx'^2\right]_0^x = \frac{1}{2}kx^2$$
+
+This work is stored as elastic potential energy: $E_p = \frac{1}{2}kx^2$.
+
+This is the area of a triangle under the force-extension graph (base $= x$, height $= kx$):
+
+$$E_p = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times x \times kx = \frac{1}{2}kx^2$$
+
+### Derivation: Escape Velocity
+
+The escape velocity is the minimum speed needed for an object to escape a gravitational field
+(i.e., reach infinity with zero kinetic energy). By conservation of energy:
+
+$$\frac{1}{2}mv_e^2 - \frac{GMm}{R} = 0 + 0$$
+
+$$\frac{1}{2}mv_e^2 = \frac{GMm}{R}$$
+
+$$v_e = \sqrt{\frac{2GM}{R}}$$
+
+For Earth: $v_e = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.37 \times 10^6}} = \sqrt{1.25 \times 10^8} = 11200 \mathrm{ m/s} \approx 11.2 \mathrm{ km/s}$
+
+### Derivation: Power-Velocity Relation
+
+$$P = \frac{dW}{dt} = \frac{d(Fs)}{dt} = F\frac{ds}{dt} = Fv$$
+
+More generally, $P = \vec{F} \cdot \vec{v} = Fv\cos\theta$, where $\theta$ is the angle between
+the force and velocity vectors.
+
+---
+
+## Experimental Methods
+
+### Determining the Spring Constant Using Energy Conservation
+
+**Apparatus:** A spring, a set of known masses, a metre rule, and a motion sensor (or video analysis).
+
+**Procedure:**
+1. Hang the spring vertically and attach a mass $m$.
+2. Pull the mass down a known distance $x_0$ from the equilibrium position and release.
+3. Measure the maximum speed $v_{\max}$ at the equilibrium position using a motion sensor.
+4. By energy conservation: $\frac{1}{2}kx_0^2 = \frac{1}{2}mv_{\max}^2$
+5. Calculate: $k = m\frac{v_{\max}^2}{x_0^2}$
+6. Repeat for different masses and extensions, plot $v_{\max}^2$ versus $x_0^2$, and find the
+   gradient $= k/m$.
+
+**Comparison with static method:** The static method (measuring extension under different loads)
+assumes Hooke's law is obeyed. The dynamic method verifies this independently through energy
+conservation.
+
+### Verifying Conservation of Energy on an Inclined Plane
+
+**Apparatus:** An inclined plane, a trolley, light gates, a metre rule, and a mass balance.
+
+**Procedure:**
+1. Measure the mass $m$ of the trolley.
+2. Set the inclined plane at angle $\theta$ and measure the height $h$ from the top to the
+   bottom.
+3. Release the trolley from rest at the top and use light gates to measure the speed $v$ at
+   the bottom.
+4. Calculate: $\Delta E_p = mgh$ and $E_k = \frac{1}{2}mv^2$.
+5. Compare $\Delta E_p$ with $E_k$. The difference is the work done against friction.
+6. Vary $\theta$ and plot $E_k/E_p$ versus $\theta$ to see how the fraction of energy
+   conserved changes.
+
+### Investigating Power Output of a Motor
+
+**Apparatus:** A small electric motor, a string, a set of masses, a metre rule, a stopwatch,
+an ammeter, and a voltmeter.
+
+**Procedure:**
+1. Attach a mass $m$ to the motor via a string over a pulley.
+2. Measure the time $t$ for the motor to lift the mass through a height $h$.
+3. Record the voltage $V$ and current $I$.
+4. Calculate useful power: $P_{\mathrm{out}} = mgh/t$.
+5. Calculate electrical power input: $P_{\mathrm{in}} = VI$.
+6. Calculate efficiency: $\eta = P_{\mathrm{out}} / P_{\mathrm{in}}$.
+7. Repeat for different masses and plot efficiency versus load.
+
+**Expected result:** Efficiency is low for very light loads (most energy lost to overcoming
+internal friction) and for very heavy loads (motor draws high current, high copper losses).
+Maximum efficiency occurs at intermediate loads.
+
+---
+
+## Data Analysis and Uncertainty
+
+### Uncertainty in Energy Calculations
+
+When calculating $E_k = \frac{1}{2}mv^2$, the percentage uncertainty is:
+
+$$\frac{\Delta E_k}{E_k} = \sqrt{\left(\frac{\Delta m}{m}\right)^2 + \left(2\frac{\Delta v}{v}\right)^2}$$
+
+Note the factor of 2 on the velocity uncertainty because $E_k \propto v^2$.
+
+**Example:** Mass $(0.200 \pm 0.001) \mathrm{ kg}$, velocity $(3.00 \pm 0.05) \mathrm{ m/s}$:
+
+$$E_k = \frac{1}{2}(0.200)(3.00)^2 = 0.900 \mathrm{ J}$$
+
+$$\frac{\Delta E_k}{E_k} = \sqrt{\left(\frac{0.001}{0.200}\right)^2 + \left(2 \times \frac{0.05}{3.00}\right)^2} = \sqrt{0.000025 + 0.001111} = \sqrt{0.001136} = 0.0337 = 3.4\%$$
+
+$$\Delta E_k = 0.034 \times 0.900 = 0.031 \mathrm{ J}$$
+
+$$E_k = (0.90 \pm 0.03) \mathrm{ J}$$
+
+### Linearising Energy Data
+
+To verify $E_k \propto v^2$: plot $E_k$ (y-axis) versus $v^2$ (x-axis). A straight line through
+the origin confirms the relationship, and the gradient equals $m/2$.
+
+To verify $E_p \propto h$: plot $E_p$ (y-axis) versus $h$ (x-axis). A straight line through the
+origin with gradient $mg$ confirms the relationship.
+
+---
+
+## Additional Worked Examples
+
+### Worked Example 10
+
+A $0.5 \mathrm{ kg}$ ball is thrown vertically upward with speed $15 \mathrm{ m/s}$ from the
+top of a building $20 \mathrm{ m}$ tall. Air resistance is negligible. Find:
+(a) the maximum height above the ground reached by the ball,
+(b) the speed of the ball just before it hits the ground.
+
+<details>
+<summary>Solution</summary>
+
+(a) At maximum height above the launch point, $v = 0$:
+
+$$h_{\max} = \frac{v_0^2}{2g} = \frac{15^2}{2 \times 9.81} = \frac{225}{19.62} = 11.47 \mathrm{ m}$$
+
+Maximum height above ground: $H = 20 + 11.47 = 31.5 \mathrm{ m}$
+
+(b) Taking ground as reference. Total energy at launch: $E = E_k + E_p = \frac{1}{2}(0.5)(225) + 0.5 \times 9.81 \times 20 = 56.25 + 98.1 = 154.35 \mathrm{ J}$
+
+At ground level, all energy is kinetic:
+
+$$\frac{1}{2}(0.5)v^2 = 154.35$$
+
+$$v = \sqrt{\frac{2 \times 154.35}{0.5}} = \sqrt{617.4} = 24.8 \mathrm{ m/s}$$
+
+</details>
+
+### Worked Example 11
+
+A spring of spring constant $200 \mathrm{ N/m}$ is compressed by $0.05 \mathrm{ m}$ and used
+to launch a $0.1 \mathrm{ kg}$ ball horizontally from a table of height $1.5 \mathrm{ m}$. The
+spring transfers $80\%$ of its energy to the ball. Find the horizontal distance the ball travels
+before hitting the ground.
+
+<details>
+<summary>Solution</summary>
+
+Energy stored in spring: $E_p = \frac{1}{2}(200)(0.05)^2 = 0.25 \mathrm{ J}$
+
+Kinetic energy of ball: $E_k = 0.80 \times 0.25 = 0.20 \mathrm{ J}$
+
+$$v = \sqrt{\frac{2E_k}{m}} = \sqrt{\frac{2 \times 0.20}{0.1}} = \sqrt{4.0} = 2.0 \mathrm{ m/s}$$
+
+Time to fall $1.5 \mathrm{ m}$: $h = \frac{1}{2}gt^2 \implies t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{2 \times 1.5}{9.81}} = \sqrt{0.306} = 0.553 \mathrm{ s}$
+
+Horizontal distance: $d = vt = 2.0 \times 0.553 = 1.11 \mathrm{ m}$
+
+</details>
+
+### Worked Example 12
+
+A car of mass $1200 \mathrm{ kg}$ accelerates uniformly from $10 \mathrm{ m/s}$ to $25 \mathrm{ m/s}$
+over a distance of $200 \mathrm{ m}$ against a constant resistive force of $600 \mathrm{ N}$. Find
+the average force developed by the engine and the average power.
+
+<details>
+<summary>Solution</summary>
+
+Change in kinetic energy: $\Delta E_k = \frac{1}{2}(1200)(25^2 - 10^2) = 600(625 - 100) = 600 \times 525 = 315000 \mathrm{ J}$
+
+Work against resistance: $W_r = 600 \times 200 = 120000 \mathrm{ J}$
+
+Total work by engine: $W_{\mathrm{engine}} = \Delta E_k + W_r = 315000 + 120000 = 435000 \mathrm{ J}$
+
+$$F_{\mathrm{engine}} = \frac{W_{\mathrm{engine}}}{d} = \frac{435000}{200} = 2175 \mathrm{ N}$$
+
+Time taken: $d = \frac{1}{2}(u + v)t \implies t = \frac{2d}{u + v} = \frac{400}{35} = 11.43 \mathrm{ s}$
+
+$$P_{\mathrm{avg}} = \frac{W_{\mathrm{engine}}}{t} = \frac{435000}{11.43} = 38060 \mathrm{ W} = 38.1 \mathrm{ kW}$$
+
+</details>
+
+---
+
+## Exam-Style Questions
+
+### Question 1 (DSE Structured)
+
+A student investigates how the stopping distance of a car depends on its speed. She measures the
+stopping distance $d$ from speed $v$ for several trials on a level road.
+
+| Speed $v$ (m/s) | Stopping distance $d$ (m) |
+| --------------- | ------------------------- |
+| 5.0             | 4.2                       |
+| 10.0            | 16.8                      |
+| 15.0            | 37.5                      |
+| 20.0            | 66.0                      |
+| 25.0            | 103.0                     |
+
+(a) Plot a graph of $d$ against $v^2$. What relationship does this suggest?
+
+(b) The student suggests that the work done by friction equals the initial kinetic energy:
+$\mu mgd = \frac{1}{2}mv^2$. Use the graph to find the coefficient of friction $\mu$.
+
+(c) State two assumptions made in this model.
+
+(d) Explain why the actual stopping distance is typically longer than the value predicted by this
+model.
+
+<details>
+<summary>Solution</summary>
+
+(a)
+
+| $v^2$ (m$^2$/s$^2$) | $d$ (m) |
+| -------------------- | ------- |
+| 25                   | 4.2     |
+| 100                  | 16.8    |
+| 225                  | 37.5    |
+| 400                  | 66.0    |
+| 625                  | 103.0   |
+
+The graph of $d$ versus $v^2$ is approximately a straight line through the origin, confirming
+$d \propto v^2$.
+
+(b) Gradient of the line of best fit:
+
+$$\mathrm{Gradient} = \frac{\Delta d}{\Delta v^2} \approx \frac{103.0 - 4.2}{625 - 25} = \frac{98.8}{600} = 0.165 \mathrm{ s}^2$$
+
+From $\mu mgd = \frac{1}{2}mv^2$: $d = \frac{v^2}{2\mu g}$, so gradient $= \frac{1}{2\mu g}$.
+
+$$\mu = \frac{1}{2g \times \mathrm{gradient}} = \frac{1}{2 \times 9.81 \times 0.165} = \frac{1}{3.237} = 0.309$$
+
+(c) Assumptions:
+1. The braking force (friction) is constant throughout the stopping distance.
+2. The road is level (no component of weight assists or opposes braking).
+3. All the initial kinetic energy is converted to work against friction (no other energy losses
+   or gains).
+
+(d) In practice, the braking force is not constant: it builds up as the brakes engage, and may
+decrease if the brakes overheat. Additionally, the driver's reaction time adds to the total
+stopping distance (thinking distance + braking distance), and road conditions (wet, icy) may
+reduce the friction coefficient.
+
+</details>
+
+### Question 2 (DSE Structured)
+
+A roller coaster car of mass $500 \mathrm{ kg}$ starts from rest at point A, height $30 \mathrm{ m}$
+above the ground. It descends to point B at height $5 \mathrm{ m}$, then rises to point C at height
+$20 \mathrm{ m}$. The total energy lost to friction between A and C is $5000 \mathrm{ J}$.
+
+(a) Calculate the speed of the car at point B, neglecting friction.
+
+(b) Calculate the speed of the car at point C, including friction.
+
+(c) If the average frictional force over the track from A to C is $200 \mathrm{ N}$, estimate the
+total track length from A to C.
+
+(d) The car then descends from C to D at ground level. If the same average frictional force acts,
+find the speed at D.
+
+<details>
+<summary>Solution</summary>
+
+(a) Conservation of energy from A to B (no friction):
+
+$$\frac{1}{2}mv_B^2 = mg(h_A - h_B) = 500 \times 9.81 \times (30 - 5) = 500 \times 9.81 \times 25 = 122625 \mathrm{ J}$$
+
+$$v_B = \sqrt{\frac{2 \times 122625}{500}} = \sqrt{490.5} = 22.1 \mathrm{ m/s}$$
+
+(b) With friction from A to C:
+
+$$E_{\mathrm{initial}} = mgh_A = 500 \times 9.81 \times 30 = 147150 \mathrm{ J}$$
+
+$$E_{\mathrm{final}} = mgh_C + \frac{1}{2}mv_C^2 = 500 \times 9.81 \times 20 + \frac{1}{2}(500)v_C^2 = 98100 + 250v_C^2$$
+
+$$147150 = 98100 + 250v_C^2 + 5000$$
+
+$$250v_C^2 = 147150 - 98100 - 5000 = 44050$$
+
+$$v_C = \sqrt{\frac{44050}{250}} = \sqrt{176.2} = 13.3 \mathrm{ m/s}$$
+
+(c) Energy lost to friction $= 5000 \mathrm{ J} = f \times L = 200 \times L$:
+
+$$L = \frac{5000}{200} = 25 \mathrm{ m}$$
+
+(d) From C to D: $\Delta h = 20 \mathrm{ m}$.
+
+Energy available: $mgh_C - W_{\mathrm{friction}}$
+
+$$\frac{1}{2}mv_D^2 = \frac{1}{2}mv_C^2 + mg(h_C - h_D) - f \times L_{CD}$$
+
+We need $L_{CD}$. From the height difference: the track length is at least $20 \mathrm{ m}$ (if
+straight down), but the actual length depends on the track shape. Assuming similar track geometry
+to the A-to-C section, we need more information. If we assume the track from C to D is $20 \mathrm{ m}$
+(a minimum estimate):
+
+$$\frac{1}{2}(500)v_D^2 = 44050 + 500 \times 9.81 \times 20 - 200 \times 20 = 44050 + 98100 - 4000 = 138150$$
+
+$$v_D = \sqrt{\frac{2 \times 138150}{500}} = \sqrt{552.6} = 23.5 \mathrm{ m/s}$$
+
+</details>
+
+### Question 3 (DSE Structured)
+
+(a) Define power and state its SI unit.
+
+(b) A lift motor has a power output of $15 \mathrm{ kW}$. It lifts a total mass of
+$1200 \mathrm{ kg}$ at constant speed. Calculate the speed of the lift.
+
+(c) The lift is only $85\%$ efficient. Calculate the electrical power input.
+
+(d) The motor has a label that says "15 kW, 240 V". Calculate the current it draws and the
+cost of running it for 8 hours at `USD 1.20` per kWh.
+
+<details>
+<summary>Solution</summary>
+
+(a) Power is the rate of doing work (or rate of energy transfer): $P = W/t$. SI unit: watt (W),
+where $1 \mathrm{ W} = 1 \mathrm{ J/s}$.
+
+(b) At constant speed, the force equals the weight: $F = mg = 1200 \times 9.81 = 11772 \mathrm{ N}$
+
+$$v = \frac{P}{F} = \frac{15000}{11772} = 1.27 \mathrm{ m/s}$$
+
+(c) $P_{\mathrm{in}} = \frac{P_{\mathrm{out}}}{\eta} = \frac{15000}{0.85} = 17647 \mathrm{ W} = 17.6 \mathrm{ kW}$
+
+(d) Current at rated power: $I = \frac{P}{V} = \frac{15000}{240} = 62.5 \mathrm{ A}$
+
+Energy consumed: $E = P_{\mathrm{in}} \times t = 17.647 \times 8 = 141.2 \mathrm{ kWh}$
+
+Cost: $141.2 \times 1.20 = \$169.44$
+
+</details>
+
+### Question 4 (DSE Structured)
+
+Two trolleys A and B are on a smooth horizontal track. Trolley A has mass $2.0 \mathrm{ kg}$ and
+trolley B has mass $1.0 \mathrm{ kg}$. Trolley A moves towards B at $4.0 \mathrm{ m/s}$ and
+trolley B is stationary. They collide and stick together.
+
+(a) Calculate the velocity of the combined trolleys after the collision.
+
+(b) Calculate the kinetic energy before and after the collision, and the energy lost.
+
+(c) Explain why kinetic energy is not conserved in this collision, even though momentum is.
+
+(d) If the collision were elastic instead, calculate the velocities of both trolleys after the
+collision.
+
+<details>
+<summary>Solution</summary>
+
+(a) By conservation of momentum:
+
+$$m_A u_A = (m_A + m_B)v$$
+
+$$2.0 \times 4.0 = (2.0 + 1.0)v$$
+
+$$v = \frac{8.0}{3.0} = 2.67 \mathrm{ m/s}$$
+
+(b) Before: $E_{k,i} = \frac{1}{2}(2.0)(4.0)^2 = 16.0 \mathrm{ J}$
+
+After: $E_{k,f} = \frac{1}{2}(3.0)(2.67)^2 = \frac{1}{2}(3.0)(7.13) = 10.7 \mathrm{ J}$
+
+Energy lost: $\Delta E_k = 16.0 - 10.7 = 5.3 \mathrm{ J}$ (converted to thermal energy, sound,
+and deformation)
+
+(c) Momentum is always conserved in a closed system because there is no external force. Kinetic
+energy is only conserved in perfectly elastic collisions. In this perfectly inelastic collision,
+some kinetic energy is converted to other forms (heat, sound, permanent deformation) because the
+objects stick together and deform. The work done in deforming the objects accounts for the
+"missing" kinetic energy.
+
+(d) For an elastic collision, both momentum and kinetic energy are conserved.
+
+Momentum: $2.0 \times 4.0 = 2.0v_A + 1.0v_B \implies 8.0 = 2v_A + v_B \quad (1)$
+
+KE: $\frac{1}{2}(2.0)(4.0)^2 = \frac{1}{2}(2.0)v_A^2 + \frac{1}{2}(1.0)v_B^2 \implies 16 = 2v_A^2 + \frac{1}{2}v_B^2 \quad (2)$
+
+From (1): $v_B = 8 - 2v_A$. Substituting into (2):
+
+$$16 = 2v_A^2 + \frac{1}{2}(8 - 2v_A)^2 = 2v_A^2 + \frac{1}{2}(64 - 32v_A + 4v_A^2) = 2v_A^2 + 32 - 16v_A + 2v_A^2$$
+
+$$4v_A^2 - 16v_A + 32 = 16$$
+
+$$4v_A^2 - 16v_A + 16 = 0$$
+
+$$v_A^2 - 4v_A + 4 = 0$$
+
+$$(v_A - 2)^2 = 0 \implies v_A = 2.0 \mathrm{ m/s}$$
+
+$$v_B = 8 - 2(2) = 4.0 \mathrm{ m/s}$$
+
+After the elastic collision: A moves at $2.0 \mathrm{ m/s}$ and B moves at $4.0 \mathrm{ m/s}$.
+(A transfers all its "excess" speed to B.)
+
+</details>
+
+### Question 5 (DSE Structured)
+
+A $3.0 \mathrm{ kg}$ block is attached to a spring of spring constant $150 \mathrm{ N/m}$ on a
+smooth horizontal surface. The block is displaced $0.10 \mathrm{ m}$ from the equilibrium
+position and released from rest.
+
+(a) Calculate the total energy of the system.
+
+(b) Calculate the maximum speed of the block.
+
+(c) Calculate the speed of the block when it is $0.05 \mathrm{ m}$ from the equilibrium position.
+
+(d) Calculate the acceleration of the block when it is $0.05 \mathrm{ m}$ from the equilibrium
+position.
+
+(e) Sketch a graph showing how the kinetic energy and potential energy vary with displacement
+over one complete oscillation.
+
+<details>
+<summary>Solution</summary>
+
+(a) $E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}(150)(0.10)^2 = \frac{1}{2}(150)(0.01) = 0.75 \mathrm{ J}$
+
+(b) Maximum speed occurs at equilibrium ($x = 0$), where all energy is kinetic:
+
+$$\frac{1}{2}mv_{\max}^2 = 0.75 \implies v_{\max} = \sqrt{\frac{2 \times 0.75}{3.0}} = \sqrt{0.50} = 0.707 \mathrm{ m/s}$$
+
+(c) At $x = 0.05 \mathrm{ m}$:
+
+$$E_k = E_{\mathrm{total}} - \frac{1}{2}kx^2 = 0.75 - \frac{1}{2}(150)(0.0025) = 0.75 - 0.1875 = 0.5625 \mathrm{ J}$$
+
+$$v = \sqrt{\frac{2E_k}{m}} = \sqrt{\frac{2 \times 0.5625}{3.0}} = \sqrt{0.375} = 0.612 \mathrm{ m/s}$$
+
+(d) $F = -kx = -150 \times 0.05 = -7.5 \mathrm{ N}$
+
+$$a = \frac{F}{m} = \frac{-7.5}{3.0} = -2.5 \mathrm{ m/s}^2$$
+
+(The negative sign indicates the acceleration is directed towards the equilibrium position.)
+
+(e) The KE is maximum at $x = 0$ (parabolic decrease with $x$): $E_k = \frac{1}{2}k(A^2 - x^2)$.
+The PE is maximum at $x = \pm A$ (parabolic increase with $x$): $E_p = \frac{1}{2}kx^2$.
+The total energy $E_k + E_p = 0.75 \mathrm{ J}$ is constant (a horizontal line). The KE and PE
+curves are inverted parabolas that sum to the constant total.
+
+### Extended Derivation: Power Dissipated by a Falling Object
+
+An object of mass $m$ falls from height $h$. The power dissipated by air resistance at any
+instant is:
+
+$$P_{\mathrm{air}} = F_{\mathrm{air}} \times v = (mg - ma) \times v$$
+
+At terminal velocity, $a = 0$, so $F_{\mathrm{air}} = mg$ and:
+
+$$P_{\mathrm{terminal}} = mgv_{\mathrm{terminal}}$$
+
+The gravitational power input ($mgv$) exactly equals the power dissipated by air resistance.
+
+### Extended Worked Example: Terminal Velocity
+
+A raindrop of mass $5.0 \times 10^{-7} \mathrm{ kg}$ falls through air. The air resistance
+force is given by $F_{\mathrm{air}} = kv^2$, where $k = 2.0 \times 10^{-5} \mathrm{ kg/m}$.
+Calculate the terminal velocity.
+
+<details>
+<summary>Solution</summary>
+
+At terminal velocity: $mg = kv_{\mathrm{terminal}}^2$
+
+$$v_{\mathrm{terminal}} = \sqrt{\frac{mg}{k}} = \sqrt{\frac{5.0 \times 10^{-7} \times 9.81}{2.0 \times 10^{-5}}} = \sqrt{\frac{4.905 \times 10^{-6}}{2.0 \times 10^{-5}}} = \sqrt{0.245} = 0.495 \mathrm{ m/s}$$
+
+</details>
+
+### Extended Worked Example: Efficiency of a Machine
+
+A machine lifts a load of $800 \mathrm{ kg}$ through $5.0 \mathrm{ m}$ in $30 \mathrm{ s}$. The
+machine is powered by an electric motor connected to a $240 \mathrm{ V}$ supply drawing
+$12 \mathrm{ A}$.
+
+(a) Calculate the useful power output.
+(b) Calculate the electrical power input.
+(c) Calculate the efficiency.
+(d) If the motor runs for 8 hours per day, calculate the daily energy cost at `USD 1.50` per
+kWh.
+
+<details>
+<summary>Solution</summary>
+
+(a) $P_{\mathrm{out}} = \frac{mgh}{t} = \frac{800 \times 9.81 \times 5.0}{30} = \frac{39240}{30} = 1308 \mathrm{ W}$
+
+(b) $P_{\mathrm{in}} = VI = 240 \times 12 = 2880 \mathrm{ W}$
+
+(c) $\eta = \frac{1308}{2880} \times 100\% = 45.4\%$
+
+(d) Daily energy consumption: $E = P_{\mathrm{in}} \times t = 2880 \times 8 = 23040 \mathrm{ Wh} = 23.04 \mathrm{ kWh}$
+
+Daily cost: $23.04 \times 1.50 = \$34.56$
+
+</details>
+
+</details>
+

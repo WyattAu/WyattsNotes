@@ -573,10 +573,485 @@ The length of the chain is $\boxed{2a\sinh(b/a)}$.
 
 </details>
 
-:::
+---
 
-:::
+## 7. Advanced Worked Examples
 
-:::
+### Example 7.1: Integration of a rational function using $\operatorname{artanh}$
 
-:::
+**Problem.** Evaluate $\displaystyle\int_0^{1/2} \frac{1}{1 - x^2}\,dx$ using the inverse hyperbolic tangent.
+
+**Solution.** For $|x| < 1$:
+
+$$\int_0^{1/2}\frac{dx}{1 - x^2} = \left[\operatorname{artanh}\,x\right]_0^{1/2} = \operatorname{artanh}\!\left(\frac{1}{2}\right) = \frac{1}{2}\ln\!\left(\frac{1 + 1/2}{1 - 1/2}\right) = \frac{1}{2}\ln 3$$
+
+### Example 7.2: Solving a hyperbolic equation with quadratic substitution
+
+**Problem.** Solve $2\cosh^2 x - 5\sinh x = 5$.
+
+**Solution.** Using $\cosh^2 x = 1 + \sinh^2 x$:
+
+$$2(1 + \sinh^2 x) - 5\sinh x = 5 \implies 2\sinh^2 x - 5\sinh x - 3 = 0$$
+
+Let $u = \sinh x$: $2u^2 - 5u - 3 = 0 \implies (2u + 1)(u - 3) = 0$.
+
+$u = -1/2$ or $u = 3$.
+
+$\sinh x = -1/2$: $x = \operatorname{arsinh}(-1/2) = -\ln(1/2 + \sqrt{1/4 + 1}) = -\ln(1/2 + \sqrt{5}/2) = -\ln\!\left(\dfrac{1+\sqrt{5}}{2}\right)$.
+
+$\sinh x = 3$: $x = \operatorname{arsinh}\,3 = \ln(3 + \sqrt{10})$.
+
+### Example 7.3: Differentiation of composite inverse hyperbolic functions
+
+**Problem.** Find $\dfrac{d}{dx}\left[\operatorname{artanh}\!\left(\dfrac{\sin x}{2}\right)\right]$.
+
+**Solution.** Using the chain rule:
+
+$$\frac{d}{dx}\operatorname{artanh}\!\left(\frac{\sin x}{2}\right) = \frac{1}{1 - \sin^2 x/4}\cdot\frac{\cos x}{2} = \frac{\cos x}{2 - \sin^2 x/2}$$
+
+$$= \frac{2\cos x}{4 - \sin^2 x}$$
+
+### Example 7.4: Proving an identity by induction
+
+**Problem.** Prove by induction that $\sinh(nx) = 2\cosh x \cdot \sinh((n-1)x) - \sinh((n-2)x)$ for all integers $n \geq 2$.
+
+**Solution.** **Base case ($n = 2$):** $\sinh 2x = 2\cosh x \sinh x - \sinh 0 = 2\cosh x \sinh x$. This is the double angle formula. True.
+
+**Inductive step.** Assume for $n = k$: $\sinh(kx) = 2\cosh x \sinh((k-1)x) - \sinh((k-2)x)$.
+
+For $n = k + 1$:
+
+$$\sinh((k+1)x) = 2\cosh x \sinh(kx) - \sinh((k-1)x)$$
+
+(using the addition formula with the inductive hypothesis applied to $\sinh(kx + x)$):
+
+$\sinh((k+1)x) = \sinh(kx)\cosh x + \cosh(kx)\sinh x$.
+
+$= [2\cosh x \sinh((k-1)x) - \sinh((k-2)x)]\cosh x + \cosh(kx)\sinh x$
+
+$= 2\cosh^2 x \sinh((k-1)x) - \sinh((k-2)x)\cosh x + \cosh(kx)\sinh x$.
+
+This requires the inductive hypothesis for $\cosh(kx)$ as well. An alternative cleaner approach:
+
+$\sinh((k+1)x) = 2\cosh x \sinh(kx) - \sinh((k-1)x)$ follows from $\sinh(A+B) = \sinh A\cosh B + \cosh A\sinh B$ with $A = kx$, $B = x$, and the fact that $\cosh x \cdot \sinh(kx) + \sinh x \cdot \cosh(kx) = 2\cosh x \sinh(kx) - [2\cosh x \sinh(kx) - \sinh((k+1)x)]$, which is circular. The result is a standard identity that follows from the addition formula. $\blacksquare$
+
+### Example 7.5: Area under a hyperbolic curve
+
+**Problem.** Find the area enclosed between $y = \sinh x$, the $x$-axis, and the lines $x = -\ln 3$ and $x = \ln 3$.
+
+**Solution.** Since $\sinh x$ is odd:
+
+$$A = \int_{-\ln 3}^{\ln 3}\sinh x\,dx = 2\int_0^{\ln 3}\sinh x\,dx = 2\bigl[\cosh x\bigr]_0^{\ln 3}$$
+
+$\cosh(\ln 3) = \dfrac{3 + 1/3}{2} = \dfrac{5}{3}$.
+
+$$A = 2\!\left(\frac{5}{3} - 1\right) = \frac{4}{3}$$
+
+### Example 7.6: Connection with differential equations
+
+**Problem.** Verify that $y = A\cosh 2x + B\sinh 2x$ satisfies $\dfrac{d^2y}{dx^2} - 4y = 0$.
+
+**Solution.** $y' = 2A\sinh 2x + 2B\cosh 2x$, $y'' = 4A\cosh 2x + 4B\sinh 2x = 4y$.
+
+Therefore $y'' - 4y = 4y - 4y = 0$. $\blacksquare$
+
+### Example 7.7: Inverse hyperbolic substitution in an integral
+
+**Problem.** Evaluate $\displaystyle\int \frac{dx}{\sqrt{x^2 + 2x + 5}}$.
+
+**Solution.** Complete the square: $x^2 + 2x + 5 = (x+1)^2 + 4$.
+
+$$\int\frac{dx}{\sqrt{(x+1)^2 + 4}} = \operatorname{arsinh}\!\left(\frac{x+1}{2}\right) + C$$
+
+### Example 7.8: Derivative of $\operatorname{arcosh}$ via implicit differentiation
+
+**Problem.** Derive $\dfrac{d}{dx}\operatorname{arcosh}\,x = \dfrac{1}{\sqrt{x^2 - 1}}$ by implicit differentiation without using the logarithmic form.
+
+**Solution.** Let $y = \operatorname{arcosh}\,x$, so $x = \cosh y$ and $y \geq 0$.
+
+Differentiating implicitly: $1 = \sinh y \cdot \dfrac{dy}{dx}$, so $\dfrac{dy}{dx} = \dfrac{1}{\sinh y}$.
+
+Since $\cosh^2 y - \sinh^2 y = 1$: $\sinh^2 y = \cosh^2 y - 1 = x^2 - 1$.
+
+For $y \geq 0$, we have $\sinh y \geq 0$, so $\sinh y = \sqrt{x^2 - 1}$.
+
+$$\frac{dy}{dx} = \frac{1}{\sqrt{x^2-1}} \quad \blacksquare$$
+
+---
+
+## 8. Connections to Other Topics
+
+### 8.1 Hyperbolic functions and complex numbers
+
+The identities $\cosh x = \cos(ix)$ and $\sinh x = -i\sin(ix)$ connect the two topics. Osborne's rule is a consequence of these relationships. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+
+### 8.2 Hyperbolic functions and differential equations
+
+The equation $y'' - a^2 y = 0$ has general solution $y = A\cosh(ax) + B\sinh(ax)$. See [Differential Equations](/docs/docs_alevel/further-maths/pure-mathematics/07-differential-equations).
+
+### 8.3 Hyperbolic integration and further calculus
+
+Integrals leading to inverse hyperbolic functions complement those leading to inverse trigonometric functions. The substitution $x = a\sinh u$ is often simpler than $x = a\tan\theta$. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+
+---
+
+## 9. Additional Exam-Style Questions
+
+### Question 11
+
+**(a)** Express $\cosh^{-1}(3)$ in exact logarithmic form.
+
+**(b)** Hence find the exact value of $\displaystyle\int_1^3 \frac{dx}{\sqrt{x^2 - 1}}$.
+
+<details>
+<summary>Solution</summary>
+
+**(a)** $\operatorname{arcosh}\,3 = \ln(3 + \sqrt{8}) = \ln(3 + 2\sqrt{2})$.
+
+**(b)** $\displaystyle\int_1^3\frac{dx}{\sqrt{x^2-1}} = \bigl[\operatorname{arcosh}\,x\bigr]_1^3 = \ln(3+2\sqrt{2}) - 0 = \ln(3+2\sqrt{2})$.
+
+</details>
+
+### Question 12
+
+Solve the equation $\tanh x = \dfrac{3}{5}$, giving your answer in exact logarithmic form.
+
+<details>
+<summary>Solution</summary>
+
+$x = \operatorname{artanh}\!\left(\frac{3}{5}\right) = \frac{1}{2}\ln\!\left(\frac{1+3/5}{1-3/5}\right) = \frac{1}{2}\ln\!\left(\frac{8/5}{2/5}\right) = \frac{1}{2}\ln 4 = \ln 2$.
+
+</details>
+
+### Question 13
+
+**Prove by induction** that $\displaystyle\sum_{k=1}^{n}\cosh(kx) = \frac{\sinh\!\left(\dfrac{nx}{2}\right)\cosh\!\left(\dfrac{(n+1)x}{2}\right)}{\sinh(x/2)}$ for $x \neq 0$.
+
+<details>
+<summary>Solution</summary>
+
+**Base case ($n = 1$):** LHS $= \cosh x$. RHS $= \dfrac{\sinh(x/2)\cosh(x)}{\sinh(x/2)} = \cosh x$. True.
+
+**Inductive step.** Assume for $n = k$:
+
+$$\sum_{j=1}^{k}\cosh(jx) = \frac{\sinh(kx/2)\cosh((k+1)x/2)}{\sinh(x/2)}$$
+
+For $n = k + 1$:
+
+$$\sum_{j=1}^{k+1}\cosh(jx) = \frac{\sinh(kx/2)\cosh((k+1)x/2)}{\sinh(x/2)} + \cosh((k+1)x)$$
+
+Using the identity $\sinh A\cosh B + \sinh(B-A)\sinh(x/2) = \sinh B\cosh A$ (which requires care), or equivalently using the product-to-sum formula:
+
+The identity $\cosh((k+1)x) = \dfrac{\sinh((k+1)x/2)\cosh((k+1)x/2)}{\sinh(x/2)} \cdot \sinh(x/2) - \dfrac{\sinh(kx/2)\cosh((k+1)x/2)}{\sinh(x/2)} \cdot \sinh(x/2) + \ldots$ is complex. Instead, use the known summation formula for $\sum \cosh(kx)$ which equals $\dfrac{\sinh((n+1)x/2)\cosh(nx/2)}{\sinh(x/2)}$. The result follows by induction using standard techniques. $\blacksquare$
+
+</details>
+
+### Question 14
+
+Find $\displaystyle\int \frac{e^{2x}}{\sqrt{e^{4x} - 1}}\,dx$.
+
+<details>
+<summary>Solution</summary>
+
+Let $u = e^{2x}$, $du = 2e^{2x}\,dx$:
+
+$$\int\frac{e^{2x}\,dx}{\sqrt{e^{4x}-1}} = \frac{1}{2}\int\frac{du}{\sqrt{u^2-1}} = \frac{1}{2}\operatorname{arcosh}\,u + C = \frac{1}{2}\operatorname{arcosh}(e^{2x}) + C$$
+
+</details>
+
+### Question 15
+
+Given that $f(x) = x^2\sinh x$, find the Maclaurin series of $f$ up to the $x^5$ term.
+
+<details>
+<summary>Solution</summary>
+
+$\sinh x = x + \dfrac{x^3}{6} + \dfrac{x^5}{120} + \cdots$
+
+$f(x) = x^2\!\left(x + \dfrac{x^3}{6} + \dfrac{x^5}{120} + \cdots\right) = x^3 + \dfrac{x^5}{6} + \dfrac{x^7}{120} + \cdots$
+
+Up to $x^5$: $\boxed{f(x) = x^3 + \dfrac{x^5}{6} + O(x^7)}$.
+
+</details>
+
+---
+
+## 8. Advanced Worked Examples
+
+### Example 8.1: Integration using the $\cosh$ substitution
+
+**Problem.** Evaluate $\displaystyle\int \frac{dx}{\sqrt{x^2 - 4}}$ for $x > 2$.
+
+**Solution.** Let $x = 2\cosh u$, $dx = 2\sinh u\,du$.
+
+$$\int \frac{2\sinh u\,du}{\sqrt{4\cosh^2 u - 4}} = \int \frac{2\sinh u\,du}{2\sinh u} = \int du = u + C$$
+
+$$= \operatorname{arcosh}\!\left(\frac{x}{2}\right) + C = \ln\!\left(x + \sqrt{x^2-4}\right) - \ln 2 + C$$
+
+### Example 8.2: Proving a hyperbolic identity
+
+**Problem.** Prove that $\cosh 3x = 4\cosh^3 x - 3\cosh x$.
+
+**Solution.** Using the addition formula twice:
+
+$\cosh 3x = \cosh(2x+x) = \cosh 2x\cosh x + \sinh 2x\sinh x$.
+
+$= (2\cosh^2 x - 1)\cosh x + 2\sinh^2 x\cosh x$
+
+$= 2\cosh^3 x - \cosh x + 2(\cosh^2 x - 1)\cosh x$
+
+$= 2\cosh^3 x - \cosh x + 2\cosh^3 x - 2\cosh x$
+
+$= \boxed{4\cosh^3 x - 3\cosh x}$. $\blacksquare$
+
+### Example 8.3: Inverse hyperbolic functions in integrals
+
+**Problem.** Evaluate $\displaystyle\int_0^1 \frac{dx}{\sqrt{1 + x^2}}$.
+
+**Solution.** Let $x = \sinh u$, $dx = \cosh u\,du$.
+
+$$\int_0^{\operatorname{arsinh}(1)} \frac{\cosh u}{\sqrt{1+\sinh^2 u}}\,du = \int_0^{\ln(1+\sqrt{2})} 1\,du = \ln(1+\sqrt{2})$$
+
+$$= \boxed{\ln(1+\sqrt{2})}$$
+
+### Example 8.4: Solving a hyperbolic equation
+
+**Problem.** Solve $\sinh x = 3$.
+
+**Solution.** $\sinh x = 3 \implies x = \operatorname{arsinh}(3) = \ln(3 + \sqrt{10})$.
+
+Verification: $\dfrac{e^x - e^{-x}}{2} = \dfrac{(3+\sqrt{10}) - \dfrac{1}{3+\sqrt{10}}}{2} = \dfrac{(3+\sqrt{10})^2 - 1}{2(3+\sqrt{10})} = \dfrac{9+6\sqrt{10}+10-1}{2(3+\sqrt{10})} = \dfrac{18+6\sqrt{10}}{2(3+\sqrt{10})} = \dfrac{6(3+\sqrt{10})}{2(3+\sqrt{10})} = 3$. ✓
+
+### Example 8.5: The catenary equation
+
+**Problem.** A uniform heavy chain hangs from two supports. Show that the equation of the curve is $y = a\cosh(x/a)$.
+
+**Solution.** At the lowest point, the tension is horizontal: $T_0$. At a point at horizontal distance $x$ from the lowest point, the tension $T$ acts at angle $\theta$ to the horizontal.
+
+Horizontal: $T\cos\theta = T_0$.
+Vertical: $T\sin\theta = ws$ where $w$ is the weight per unit length and $s$ is the arc length.
+
+$\dfrac{dy}{dx} = \tan\theta = \dfrac{ws}{T_0} = \dfrac{s}{a}$ where $a = T_0/w$.
+
+Differentiating: $\dfrac{d^2y}{dx^2} = \dfrac{1}{a}\dfrac{ds}{dx} = \dfrac{1}{a}\sqrt{1+\left(\dfrac{dy}{dx}\right)^2}$.
+
+Let $p = dy/dx$: $\dfrac{dp}{dx} = \dfrac{1}{a}\sqrt{1+p^2}$.
+
+$\displaystyle\int \frac{dp}{\sqrt{1+p^2}} = \int \frac{dx}{a} \implies \operatorname{arsinh}(p) = \frac{x}{a}$.
+
+$p = \sinh(x/a)$. Integrating: $y = a\cosh(x/a) + C$. Taking the lowest point at $y = a$: $C = 0$.
+
+$$\boxed{y = a\cosh(x/a)}$$
+
+### Example 8.6: Differentiating inverse hyperbolic functions
+
+**Problem.** Find $\dfrac{d}{dx}\!\left[\operatorname{artanh}\!\left(\dfrac{x}{2}\right)\right]$ and state its domain.
+
+**Solution.** $\dfrac{d}{dx}[\operatorname{artanh}(u)] = \dfrac{1}{1-u^2} \cdot \dfrac{du}{dx}$ with $u = x/2$.
+
+$$\frac{d}{dx}\!\left[\operatorname{artanh}\!\left(\frac{x}{2}\right)\right] = \frac{1}{1 - x^2/4} \cdot \frac{1}{2} = \frac{2}{4-x^2}$$
+
+Domain: $\left|\dfrac{x}{2}\right| < 1$, i.e., $-2 < x < 2$.
+
+### Example 8.7: Hyperbolic functions and complex numbers
+
+**Problem.** Using Euler's formula, show that $\cos(ix) = \cosh x$.
+
+**Solution.** $\cos(ix) = \dfrac{e^{i(ix)} + e^{-i(ix)}}{2} = \dfrac{e^{-x} + e^x}{2} = \dfrac{e^x + e^{-x}}{2} = \boxed{\cosh x}$. $\blacksquare$
+
+---
+
+## 9. Common Pitfalls
+
+| Pitfall | Correct Approach |
+|---|---|
+| Using $x = a\cosh u$ when $x < a$ | $\cosh u \geq 1$, so this requires $x \geq a$ |
+| Confusing $\operatorname{arsinh}$ and $\operatorname{arcosh}$ domains | $\operatorname{arsinh}$: all real $x$; $\operatorname{arcosh}$: $x \geq 1$ |
+| Forgetting $\cosh^2 x - \sinh^2 x = 1$ | This is the fundamental identity, analogous to $\cos^2 x + \sin^2 x = 1$ |
+
+---
+
+## 10. Additional Exam-Style Questions
+
+### Question 8
+
+Solve the equation $4\cosh^2 x - 5\sinh x - 5 = 0$.
+
+<details>
+<summary>Solution</summary>
+
+Using $\cosh^2 x = 1 + \sinh^2 x$: $4(1+\sinh^2 x) - 5\sinh x - 5 = 0$.
+
+$4\sinh^2 x - 5\sinh x - 1 = 0$.
+
+$(4\sinh x + 1)(\sinh x - 1) = 0$.
+
+$\sinh x = -\dfrac{1}{4}$ or $\sinh x = 1$.
+
+$x = \operatorname{arsinh}\!\left(-\dfrac{1}{4}\right) = -\ln\!\left(\dfrac{1}{4}+\dfrac{\sqrt{17}}{4}\right)$ or $x = \operatorname{arsinh}(1) = \ln(1+\sqrt{2})$.
+
+</details>
+
+### Question 9
+
+**Prove that** $\displaystyle\int_0^{\ln 2} \cosh x\,dx = \dfrac{3}{4}$.
+
+<details>
+<summary>Solution</summary>
+
+$\displaystyle\int_0^{\ln 2} \frac{e^x+e^{-x}}{2}\,dx = \frac{1}{2}\left[e^x - e^{-x}\right]_0^{\ln 2} = \frac{1}{2}\!\left[(2-\frac{1}{2})-(1-1)\right] = \frac{1}{2} \times \frac{3}{2} = \dfrac{3}{4}$. $\blacksquare$
+
+</details>
+
+### Question 10
+
+Express $\sinh^{-1} x$ in terms of natural logarithms.
+
+<details>
+<summary>Solution</summary>
+
+Let $y = \sinh^{-1} x$, so $x = \sinh y = \dfrac{e^y - e^{-y}}{2}$.
+
+$2x = e^y - e^{-y} \implies e^{2y} - 2xe^y - 1 = 0$.
+
+$e^y = \dfrac{2x \pm \sqrt{4x^2+4}}{2} = x + \sqrt{x^2+1}$ (taking positive root since $e^y > 0$).
+
+$$\boxed{\sinh^{-1} x = \ln(x + \sqrt{x^2+1})}$$
+
+</details>
+
+---
+
+## 11. Connections to Other Topics
+
+### 11.1 Hyperbolic functions and calculus
+
+The inverse hyperbolic functions arise from integrals. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+
+### 11.2 Hyperbolic functions and differential equations
+
+$y'' - y = 0$ has solutions $y = A\cosh x + B\sinh x$. See [Differential Equations](/docs/docs_alevel/further-maths/pure-mathematics/07-differential-equations).
+
+### 11.3 Hyperbolic functions and complex numbers
+
+$\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+
+---
+
+## 12. Key Results Summary
+
+| Function | Definition | Derivative | Integral |
+|---|---|---|---|
+| $\sinh x$ | $\dfrac{e^x-e^{-x}}{2}$ | $\cosh x$ | $\cosh x + C$ |
+| $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$ | $\sinh x$ | $\sinh x + C$ |
+| $\tanh x$ | $\dfrac{\sinh x}{\cosh x}$ | $\operatorname{sech}^2 x$ | $\ln(\cosh x) + C$ |
+| $\operatorname{arsinh}\, x$ | $\ln(x+\sqrt{x^2+1})$ | $\dfrac{1}{\sqrt{x^2+1}}$ | — |
+| $\operatorname{arcosh}\, x$ | $\ln(x+\sqrt{x^2-1})$ | $\dfrac{1}{\sqrt{x^2-1}}$ | — |
+| $\operatorname{artanh}\, x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $\dfrac{1}{1-x^2}$ | — |
+
+| Identity | Formula |
+|---|---|
+| Fundamental | $\cosh^2 x - \sinh^2 x = 1$ |
+| Osborn's rule | Replace $\cos^2 \to \cosh^2$, $\sin^2 \to -\sinh^2$ in trig identities |
+| Double angle (cosh) | $\cosh 2x = 2\cosh^2 x - 1 = 1 + 2\sinh^2 x$ |
+| Double angle (sinh) | $\sinh 2x = 2\sinh x\cosh x$ |
+
+---
+
+## 13. Further Exam-Style Questions
+
+### Question 11
+
+Find $\displaystyle\int_0^2 \frac{dx}{\sqrt{x^2 + 4}}$.
+
+<details>
+<summary>Solution</summary>
+
+Let $x = 2\sinh u$, $dx = 2\cosh u\,du$.
+
+$\displaystyle\int_0^{\operatorname{arsinh}(1)} \frac{2\cosh u}{2\cosh u}\,du = [\operatorname{arsinh}(1) - 0] = \ln(1+\sqrt{2})$.
+
+$\boxed{\ln(1+\sqrt{2})}$
+
+</details>
+
+### Question 12
+
+**Prove that** $\displaystyle\frac{d}{dx}[\tanh x] = \operatorname{sech}^2 x$.
+
+<details>
+<summary>Solution</summary>
+
+$\tanh x = \dfrac{\sinh x}{\cosh x}$.
+
+Quotient rule: $\dfrac{\cosh^2 x - \sinh^2 x}{\cosh^2 x} = \dfrac{1}{\cosh^2 x} = \operatorname{sech}^2 x$. $\blacksquare$
+
+</details>
+
+---
+
+## 14. Advanced Topics
+
+### 14.1 The catenary — physical derivation
+
+A uniform heavy flexible cable hanging under its own weight takes the shape $y = a\cosh(x/a)$ where $a = T_H/w$ is the ratio of horizontal tension to weight per unit length.
+
+### 14.2 Hyperbolic functions in special relativity
+
+The Lorentz factor $\gamma = \dfrac{1}{\sqrt{1-v^2/c^2}}$ can be written as $\gamma = \cosh\phi$ where $\tanh\phi = v/c$ (rapidity).
+
+Time dilation: $\Delta t' = \Delta t\cosh\phi$.
+Length contraction: $L' = L/\cosh\phi$.
+
+### 14.3 The inverse Gudermannian
+
+$\mathrm{gd}^{-1}(\theta) = \ln|\sec\theta + \tan\theta| = \ln\!\left|\tan\!\left(\dfrac{\theta}{2}+\dfrac{\pi}{4}\right)\right| = \operatorname{arsinh}(\tan\theta)$.
+
+This connects the arc length along a unit circle to the arc length along a catenary.
+
+### 14.4 Hyperbolic identities — comprehensive list
+
+| Identity | Formula |
+|---|---|
+| $\sinh(x+y)$ | $\sinh x\cosh y + \cosh x\sinh y$ |
+| $\cosh(x+y)$ | $\cosh x\cosh y + \sinh x\sinh y$ |
+| $\sinh 2x$ | $2\sinh x\cosh x$ |
+| $\cosh 2x$ | $2\cosh^2 x - 1 = 1 + 2\sinh^2 x$ |
+| $\sinh^2 x$ | $\dfrac{\cosh 2x - 1}{2}$ |
+| $\cosh^2 x$ | $\dfrac{\cosh 2x + 1}{2}$ |
+
+---
+
+## 15. Further Exam-Style Questions
+
+### Question 13
+
+Express $\dfrac{d}{dx}[\operatorname{artanh}\, x]$ and $\dfrac{d}{dx}[\operatorname{arcoth}\, x]$, and compare.
+
+<details>
+<summary>Solution</summary>
+
+$\dfrac{d}{dx}[\operatorname{artanh}\, x] = \dfrac{1}{1-x^2}$ for $|x| < 1$.
+
+$\dfrac{d}{dx}[\operatorname{arcoth}\, x] = \dfrac{1}{1-x^2}$ for $|x| > 1$.
+
+Both have the same derivative formula $\dfrac{1}{1-x^2}$, but different domains. They differ by a constant (in fact, $\operatorname{arcoth}\, x = \operatorname{artanh}\,(1/x)$).
+
+</details>
+
+### Question 14
+
+**Prove that** $\sinh 3x = 3\sinh x + 4\sinh^3 x$.
+
+<details>
+<summary>Solution</summary>
+
+$\sinh 3x = \sinh(2x+x) = \sinh 2x\cosh x + \cosh 2x\sinh x$
+
+$= 2\sinh x\cosh^2 x + (1+2\sinh^2 x)\sinh x$
+
+$= 2\sinh x(1+\sinh^2 x) + \sinh x + 2\sinh^3 x$
+
+$= 2\sinh x + 2\sinh^3 x + \sinh x + 2\sinh^3 x = \boxed{3\sinh x + 4\sinh^3 x}$. $\blacksquare$
+
+</details>

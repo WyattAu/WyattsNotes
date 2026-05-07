@@ -1482,4 +1482,382 @@ Common Pitfalls
 
 - **Misidentifying the direction of the normal reaction force:** The normal reaction force is always PERPENDICULAR to the surface of contact, not necessarily vertical. On an inclined plane, the normal reaction is perpendicular to the slope, not straight up. Including a vertical normal force on a slope is a common error that leads to incorrect force resolution.
 
-:::
+---
+
+## Derivations
+
+### Derivation: Velocity-Time Graph for Projectile Motion
+
+For a projectile launched at angle $\theta$ with initial speed $u$:
+
+**Horizontal component:** $v_x = u\cos\theta = \mathrm{constant}$ (no horizontal force)
+
+**Vertical component:** $v_y = u\sin\theta - gt$
+
+The resultant velocity at any time:
+
+$$v = \sqrt{v_x^2 + v_y^2} = \sqrt{(u\cos\theta)^2 + (u\sin\theta - gt)^2}$$
+
+At maximum height: $v_y = 0$, so $t_{\max} = \frac{u\sin\theta}{g}$ and $v_{\max\ h} = u\cos\theta$.
+
+The angle of the velocity vector below the horizontal at time $t$: $\alpha = \tan^{-1}\left(\frac{gt - u\sin\theta}{u\cos\theta}\right)$
+
+### Derivation: Work Done by a Variable Force (General)
+
+For a force $F(x)$ that varies with position, the work done from $x_1$ to $x_2$ is:
+
+$$W = \int_{x_1}^{x_2} F(x)\, dx$$
+
+This equals the area under the force-displacement graph.
+
+**Special case: Hooke's law ($F = kx$):**
+
+$$W = \int_0^x kx'\, dx' = \frac{1}{2}kx^2$$
+
+**Special case: Inverse square force ($F = A/x^2$):**
+
+$$W = \int_{x_1}^{x_2} \frac{A}{x^2}\, dx = \left[-\frac{A}{x}\right]_{x_1}^{x_2} = A\left(\frac{1}{x_1} - \frac{1}{x_2}\right)$$
+
+This applies to gravitational and electrostatic forces.
+
+### Derivation: Time of Flight for a Projectile on an Elevated Launch
+
+When a projectile is launched from height $h$ above the landing level:
+
+Vertical: $y = u_y t - \frac{1}{2}gt^2$
+
+At landing: $-h = u\sin\theta \cdot t - \frac{1}{2}gt^2$
+
+$$\frac{1}{2}gt^2 - u\sin\theta \cdot t - h = 0$$
+
+Using the quadratic formula:
+
+$$t = \frac{u\sin\theta + \sqrt{u^2\sin^2\theta + 2gh}}{g}$$
+
+(The positive root is taken since time must be positive.)
+
+The horizontal range is: $R = u\cos\theta \cdot t = u\cos\theta \cdot \frac{u\sin\theta + \sqrt{u^2\sin^2\theta + 2gh}}{g}$
+
+---
+
+## Experimental Methods
+
+### Determining the Acceleration of Free Fall Using a Simple Pendulum
+
+**Apparatus:** A string, a small dense bob, a retort stand, a protractor, a metre rule, and a
+stopwatch.
+
+**Procedure:**
+1. Set up the pendulum with a string of length $L$ (measured from the pivot to the centre of
+   the bob).
+2. Displace the bob through a small angle ($< 10^\circ$) and release it.
+3. Time 20 complete oscillations and divide by 20 to find the period $T$.
+4. Repeat for different lengths $L$.
+5. Plot $T^2$ (y-axis) versus $L$ (x-axis). The gradient equals $4\pi^2/g$.
+
+**Theory:** For small angles, $T = 2\pi\sqrt{L/g}$, so $T^2 = \frac{4\pi^2}{g}L$.
+
+**Sources of error:**
+- The angle may not be small enough for the simple pendulum approximation.
+- The string may stretch slightly.
+- Reaction time of the stopwatch operator (reduced by timing many oscillations).
+- The pivot may not be perfectly fixed.
+
+**Improvements:** Use a light gate for timing. Use an inextensible wire. Ensure small angles.
+
+### Verifying the Principle of Conservation of Momentum
+
+**Apparatus:** Two trolleys on a friction-compensated track, light gates, and a data logger.
+
+**Procedure:**
+1. Set up the track so a single trolley moves at constant velocity (friction compensated).
+2. Measure the mass of each trolley: $m_1$ and $m_2$.
+3. Launch trolley 1 towards stationary trolley 2. Use light gates to measure velocities
+   before ($u_1$, $u_2 = 0$) and after ($v_1$, $v_2$) the collision.
+4. Calculate total momentum before: $p_{\mathrm{before}} = m_1 u_1 + m_2 u_2$
+5. Calculate total momentum after: $p_{\mathrm{after}} = m_1 v_1 + m_2 v_2$
+6. Compare $p_{\mathrm{before}}$ and $p_{\mathrm{after}}$. They should be approximately equal.
+7. Repeat for different masses and initial velocities.
+8. Also calculate KE before and after to determine if the collision is elastic.
+
+**Expected results:** Momentum is conserved in all collisions. KE is conserved only in elastic
+collisions.
+
+### Measuring the Spring Constant Dynamically
+
+**Apparatus:** A spring, a set of masses, a motion sensor or video camera, and a metre rule.
+
+**Procedure:**
+1. Hang a spring vertically and attach a mass $m$.
+2. Displace the mass downward and release, setting up simple harmonic motion.
+3. Measure the period $T$ of oscillation.
+4. Repeat for different masses.
+5. Plot $T^2$ (y-axis) versus $m$ (x-axis). The gradient equals $4\pi^2/k$.
+
+**Theory:** $T = 2\pi\sqrt{m/k}$, so $T^2 = \frac{4\pi^2}{k}m$.
+
+**Comparison with static method:** The static method (measuring extension under load) gives
+$k = F/x$. The dynamic method gives $k = 4\pi^2 m / T^2$. Both should agree if Hooke's law
+is obeyed.
+
+---
+
+## Additional Worked Examples
+
+### Worked Example 11
+
+A block of mass $5.0 \mathrm{ kg}$ slides from rest down a curved ramp from height
+$3.0 \mathrm{ m}$. At the bottom, it collides with and sticks to a stationary block of mass
+$3.0 \mathrm{ kg}$. The combined blocks then slide across a rough horizontal surface
+($\mu_k = 0.3$) before coming to rest. Find the total distance travelled on the rough surface.
+
+<details>
+<summary>Solution</summary>
+
+Speed at bottom of ramp (conservation of energy, no friction):
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 3.0} = \sqrt{58.86} = 7.67 \mathrm{ m/s}$$
+
+Perfectly inelastic collision: $(m_1 + m_2)v' = m_1 v$
+
+$$v' = \frac{m_1 v}{m_1 + m_2} = \frac{5.0 \times 7.67}{8.0} = 4.79 \mathrm{ m/s}$$
+
+Energy dissipated on rough surface = initial KE of combined blocks:
+
+$$\frac{1}{2}(8.0)(4.79)^2 = \mu_k (8.0)(9.81) d$$
+
+$$91.8 = 23.5d$$
+
+$$d = \frac{91.8}{23.5} = 3.90 \mathrm{ m}$$
+
+</details>
+
+### Worked Example 12
+
+A rocket of mass $1000 \mathrm{ kg}$ is launched vertically from rest. The engine provides a
+constant thrust of $25000 \mathrm{ N}$ for $10 \mathrm{ s}$. The mass decreases at a constant
+rate as fuel is burned. Assume $g = 9.81 \mathrm{ m/s}^2$ and neglect air resistance.
+
+(a) If the fuel burn rate is $50 \mathrm{ kg/s}$, calculate the velocity of the rocket at
+burnout ($t = 10 \mathrm{ s}$).
+
+(b) Calculate the height of the rocket at burnout.
+
+<details>
+<summary>Solution</summary>
+
+(a) This requires the rocket equation, but for DSE we simplify. The average mass during the burn:
+
+$$m_{\mathrm{avg}} = \frac{1000 + (1000 - 50 \times 10)}{2} = \frac{1000 + 500}{2} = 750 \mathrm{ kg}$$
+
+Average net force: $F_{\mathrm{net}} = T - m_{\mathrm{avg}}g = 25000 - 750 \times 9.81 = 25000 - 7358 = 17642 \mathrm{ N}$
+
+Average acceleration: $a = F_{\mathrm{net}} / m_{\mathrm{avg}} = 17642 / 750 = 23.5 \mathrm{ m/s}^2$
+
+Velocity at burnout: $v = at = 23.5 \times 10 = 235 \mathrm{ m/s}$
+
+(More precisely, the acceleration increases as mass decreases, so the actual velocity is higher.
+For a full treatment, use $v = v_0 + u\ln(m_0/m_f) - gt$, but this is beyond the DSE scope.)
+
+(b) Using average acceleration: $h = \frac{1}{2}at^2 = \frac{1}{2}(23.5)(100) = 1175 \mathrm{ m}$
+
+</details>
+
+### Worked Example 13
+
+A uniform ladder of length $5.0 \mathrm{ m}$ and mass $20 \mathrm{ kg}$ leans against a smooth
+vertical wall at angle $\theta = 65^\circ$ to the horizontal. The floor is rough. A person of
+mass $70 \mathrm{ kg}$ stands on the ladder at a distance of $3.0 \mathrm{ m}$ from the bottom.
+Find the minimum coefficient of static friction between the ladder and the floor for the
+ladder to be in equilibrium.
+
+<details>
+<summary>Solution</summary>
+
+Forces: weight of ladder $20g$ (at centre, $2.5 \mathrm{ m}$ from bottom), weight of person
+$70g$ (at $3.0 \mathrm{ m}$ from bottom), normal reaction from wall $R_W$ (horizontal, at
+top), normal reaction from floor $R_F$ (vertical, at bottom), friction $f$ (horizontal, at
+bottom).
+
+Resolving vertically: $R_F = 20g + 70g = 90g = 882.9 \mathrm{ N}$
+
+Resolving horizontally: $f = R_W$
+
+Taking moments about the bottom of the ladder:
+
+Clockwise: $20g \times 2.5\cos 65^\circ + 70g \times 3.0\cos 65^\circ$
+
+Anticlockwise: $R_W \times 5.0\sin 65^\circ$
+
+$$R_W \times 5.0\sin 65^\circ = g\cos 65^\circ(20 \times 2.5 + 70 \times 3.0)$$
+
+$$R_W \times 4.532 = 9.81 \times 0.4226 \times (50 + 210)$$
+
+$$R_W \times 4.532 = 4.146 \times 260 = 1078$$
+
+$$R_W = 237.8 \mathrm{ N}$$
+
+For equilibrium: $f \leqslant \mu_s R_F$
+
+$$\mu_s \geqslant \frac{f}{R_F} = \frac{R_W}{R_F} = \frac{237.8}{882.9} = 0.269$$
+
+Minimum coefficient of static friction: $\mu_s = 0.27$.
+
+</details>
+
+---
+
+## Exam-Style Questions
+
+### Question 1 (DSE Structured)
+
+A $0.50 \mathrm{ kg}$ ball is attached to a string of length $1.0 \mathrm{ m}$ and released from
+rest when the string makes $60^\circ$ with the vertical.
+
+(a) Calculate the speed of the ball at the lowest point.
+
+(b) Calculate the tension in the string at the lowest point.
+
+(c) Calculate the speed of the ball when the string makes $30^\circ$ with the vertical on the
+other side.
+
+(d) Explain why the ball does not reach $60^\circ$ on the other side if air resistance is
+present.
+
+<details>
+<summary>Solution</summary>
+
+(a) Height drop: $h = L(1 - \cos 60^\circ) = 1.0(1 - 0.5) = 0.50 \mathrm{ m}$
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 0.50} = \sqrt{9.81} = 3.13 \mathrm{ m/s}$$
+
+(b) At the lowest point: $T - mg = \frac{mv^2}{L}$
+
+$$T = mg + \frac{mv^2}{L} = 0.50 \times 9.81 + \frac{0.50 \times 9.81}{1.0} = 4.905 + 4.905 = 9.81 \mathrm{ N}$$
+
+(c) At $30^\circ$ on the other side: height above lowest point $= L(1 - \cos 30^\circ) = 1.0(1 - 0.866) = 0.134 \mathrm{ m}$
+
+$$v^2 = 2g(h_{\mathrm{start}} - h_{\mathrm{current}}) = 2 \times 9.81 \times (0.50 - 0.134) = 2 \times 9.81 \times 0.366 = 7.18$$
+
+$$v = \sqrt{7.18} = 2.68 \mathrm{ m/s}$$
+
+(d) Air resistance does negative work on the ball, dissipating energy as heat. The total
+mechanical energy decreases, so the ball cannot reach the same height on the other side. The
+final height will be less than the initial height by an amount equal to the total energy lost
+to air resistance.
+
+</details>
+
+### Question 2 (DSE Structured)
+
+Two ice skaters, A ($60 \mathrm{ kg}$) and B ($80 \mathrm{ kg}$), face each other on frictionless
+ice. They push off each other and A moves away at $3.0 \mathrm{ m/s}$.
+
+(a) Calculate the velocity of B after the push.
+
+(b) Calculate the kinetic energy of each skater after the push.
+
+(c) Explain why the total kinetic energy increases during the push.
+
+(d) If A had pushed harder so that A's speed was $4.0 \mathrm{ m/s}$, calculate the speed of B
+and the change in total kinetic energy compared with part (b).
+
+<details>
+<summary>Solution</summary>
+
+(a) By conservation of momentum (initially at rest):
+
+$$0 = m_A v_A + m_B v_B$$
+
+$$0 = 60 \times 3.0 + 80 \times v_B$$
+
+$$v_B = -\frac{180}{80} = -2.25 \mathrm{ m/s}$$
+
+(B moves at $2.25 \mathrm{ m/s}$ in the opposite direction to A.)
+
+(b) $E_{k,A} = \frac{1}{2}(60)(3.0)^2 = 270 \mathrm{ J}$
+
+$E_{k,B} = \frac{1}{2}(80)(2.25)^2 = 202.5 \mathrm{ J}$
+
+Total KE $= 270 + 202.5 = 472.5 \mathrm{ J}$
+
+(c) The skaters convert internal chemical energy (from their muscles) into kinetic energy during
+the push. The push is an internal force that does work on the system. Total momentum is
+conserved (internal forces cannot change the total momentum of a system), but the internal
+energy is converted to kinetic energy, so the total KE increases.
+
+(d) $v_B = \frac{60 \times 4.0}{80} = 3.0 \mathrm{ m/s}$
+
+$E_{k,A} = \frac{1}{2}(60)(16) = 480 \mathrm{ J}$
+
+$E_{k,B} = \frac{1}{2}(80)(9) = 360 \mathrm{ J}$
+
+New total KE $= 480 + 360 = 840 \mathrm{ J}$
+
+Change $= 840 - 472.5 = 367.5 \mathrm{ J}$ increase.
+
+</details>
+
+### Question 3 (DSE Structured)
+
+A car of mass $1500 \mathrm{ kg}$ travels at $20 \mathrm{ m/s}$ around a banked curve of radius
+$50 \mathrm{ m}$. The banking angle is $25^\circ$.
+
+(a) Calculate the speed at which no friction is required to keep the car on the curve.
+
+(b) If the car travels at $25 \mathrm{ m/s}$, does it tend to slide up or down the bank? Which
+direction does friction act?
+
+(c) Calculate the minimum coefficient of friction required for the car to travel at
+$25 \mathrm{ m/s}$ without sliding.
+
+<details>
+<summary>Solution</summary>
+
+(a) For no friction: the horizontal component of the normal reaction provides the centripetal
+force.
+
+$$N\sin\theta = \frac{mv^2}{r}, \quad N\cos\theta = mg$$
+
+Dividing: $\tan\theta = \frac{v^2}{rg}$
+
+$$v = \sqrt{rg\tan\theta} = \sqrt{50 \times 9.81 \times \tan 25^\circ} = \sqrt{50 \times 9.81 \times 0.4663} = \sqrt{228.7} = 15.1 \mathrm{ m/s}$$
+
+(b) Since the car is travelling faster ($25 \mathrm{ m/s}$) than the no-friction speed
+($15.1 \mathrm{ m/s}$), it tends to slide **up** the bank. Friction acts **down** the bank to
+provide additional centripetal force.
+
+(c) At $25 \mathrm{ m/s}$, friction acts down the bank. Resolving forces:
+
+Horizontally: $N\sin\theta + f\cos\theta = \frac{mv^2}{r}$
+
+Vertically: $N\cos\theta - f\sin\theta = mg$
+
+From the vertical equation: $N = \frac{mg + f\sin\theta}{\cos\theta}$
+
+Substituting into the horizontal equation:
+
+$$\frac{(mg + f\sin\theta)\sin\theta}{\cos\theta} + f\cos\theta = \frac{mv^2}{r}$$
+
+$$mg\tan\theta + f\tan\theta\sin\theta + f\cos\theta = \frac{mv^2}{r}$$
+
+$$f(\tan\theta\sin\theta + \cos\theta) = \frac{mv^2}{r} - mg\tan\theta$$
+
+$$f = \frac{m(v^2/r - g\tan\theta)}{\tan\theta\sin\theta + \cos\theta}$$
+
+$v^2/r = 625/50 = 12.5$, $g\tan\theta = 9.81 \times 0.4663 = 4.575$
+
+Numerator: $1500(12.5 - 4.575) = 1500 \times 7.925 = 11888$
+
+Denominator: $0.4663 \times 0.4226 + 0.9063 = 0.197 + 0.906 = 1.103$
+
+$$f = \frac{11888}{1.103} = 10778 \mathrm{ N}$$
+
+From the vertical equation: $N = \frac{1500 \times 9.81 + 10778 \times 0.4226}{0.9063} = \frac{14715 + 4555}{0.9063} = \frac{19270}{0.9063} = 21262 \mathrm{ N}$
+
+$$\mu_s \geqslant \frac{f}{N} = \frac{10778}{21262} = 0.507$$
+
+Minimum coefficient of static friction: $\mu_s = 0.51$.
+
+</details>
+

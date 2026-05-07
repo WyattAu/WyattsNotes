@@ -1762,6 +1762,361 @@ Ready to test your understanding of **Nuclear Physics**? The [diagnostic test](/
 See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
+---
+
+## Derivations
+
+### Derivation: Radioactive Decay Law
+
+The rate of decay of a radioactive sample is proportional to the number of undecayed nuclei:
+
+$$\frac{dN}{dt} = -\lambda N$$
+
+Separating variables and integrating:
+
+$$\int_{N_0}^{N} \frac{dN}{N} = \int_0^t -\lambda\, dt$$
+
+$$\ln N - \ln N_0 = -\lambda t$$
+
+$$N = N_0 e^{-\lambda t}$$
+
+Since activity $A = \lambda N$:
+
+$$A = A_0 e^{-\lambda t}$$
+
+### Derivation: Half-Life Relation
+
+At $t = t_{1/2}$, $N = N_0/2$:
+
+$$\frac{N_0}{2} = N_0 e^{-\lambda t_{1/2}}$$
+
+$$\frac{1}{2} = e^{-\lambda t_{1/2}}$$
+
+$$\ln\left(\frac{1}{2}\right) = -\lambda t_{1/2}$$
+
+$$-\ln 2 = -\lambda t_{1/2}$$
+
+$$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{\lambda}$$
+
+### Derivation: Mass-Energy Equivalence Applied to Nuclear Reactions
+
+In a nuclear reaction, the total mass of the products differs from the total mass of the
+reactants. The mass defect $\Delta m$ corresponds to the energy released (or absorbed):
+
+$$\Delta E = \Delta m \cdot c^2$$
+
+For $1 \mathrm{ u}$ of mass defect:
+
+$$\Delta E = 1.661 \times 10^{-27} \times (3.0 \times 10^8)^2 = 1.495 \times 10^{-10} \mathrm{ J} = 931.5 \mathrm{ MeV}$$
+
+This is used to calculate binding energies and energy released in fission/fusion.
+
+### Derivation: Binding Energy per Nucleon
+
+The binding energy of a nucleus with $Z$ protons and $N$ neutrons (mass number $A = Z + N$):
+
+$$B = [Zm_p + Nm_n - m_{\mathrm{nucleus}}]c^2$$
+
+where $m_{\mathrm{nucleus}}$ is the actual mass of the nucleus.
+
+The binding energy per nucleon is $B/A$. Plotting $B/A$ versus $A$ shows:
+- Light nuclei (low $A$): increasing $B/A$ (fusion releases energy).
+- Iron-56 ($A = 56$): maximum $B/A$ (most stable nucleus).
+- Heavy nuclei (high $A$): decreasing $B/A$ (fission releases energy).
+
+---
+
+## Experimental Methods
+
+### Investigating Radioactive Decay with a Geiger-Muller Tube
+
+**Apparatus:** A Geiger-Muller (GM) tube connected to a counter/timer, a radioactive source
+(e.g., cobalt-60 or radon-220), and a ruler.
+
+**Procedure:**
+1. Place the GM tube at a fixed distance from the source.
+2. Record the count rate at regular time intervals (e.g., every 30 seconds for radon-220, which
+   has a short half-life of about 55 seconds).
+3. Subtract the background count rate (measured with the source removed) from each reading.
+4. Plot corrected count rate (or $\ln(\mathrm{count\ rate})$) versus time.
+5. The half-life is determined from the time for the count rate to halve, or from the gradient
+   of the ln(count rate) versus time graph.
+
+**Sources of error:**
+- Statistical fluctuations in radioactive decay (random nature).
+- Background radiation changes during the experiment.
+- Dead time of the GM tube (it cannot register counts during a brief recovery period after each
+  detection).
+
+**Improvements:** Take longer counting times to reduce statistical uncertainty. Repeat the
+experiment several times and average.
+
+### Determining the Half-Life of a Long-Lived Source
+
+For a source with a half-life much longer than the practical measurement time, measure the
+activity at two widely separated times $t_1$ and $t_2$:
+
+$$A_1 = A_0 e^{-\lambda t_1}, \quad A_2 = A_0 e^{-\lambda t_2}$$
+
+$$\frac{A_1}{A_2} = e^{-\lambda(t_1 - t_2)}$$
+
+$$\lambda = \frac{\ln(A_1/A_2)}{t_2 - t_1}$$
+
+$$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{(t_2 - t_1)\ln 2}{\ln(A_1/A_2)}$$
+
+---
+
+## Data Analysis and Uncertainty
+
+### Statistical Uncertainty in Count Rate Measurements
+
+Radioactive decay is a random process. The number of counts $N$ in time $t$ follows Poisson
+statistics. The standard deviation is $\sqrt{N}$.
+
+For a count rate $R = N/t$:
+
+$$\Delta R = \frac{\sqrt{N}}{t} = \frac{\sqrt{Rt}}{t} = \sqrt{\frac{R}{t}}$$
+
+**Example:** A GM tube records $1200$ counts in $60 \mathrm{ s}$.
+
+Count rate: $R = 1200/60 = 20 \mathrm{ counts/s}$
+
+Uncertainty: $\Delta R = \sqrt{1200}/60 = 34.6/60 = 0.58 \mathrm{ counts/s}$
+
+$$R = (20.0 \pm 0.6) \mathrm{ counts/s}$$
+
+After subtracting background ($5.0 \pm 0.3 \mathrm{ counts/s}$):
+
+$$R_{\mathrm{net}} = (20.0 - 5.0) \pm \sqrt{0.6^2 + 0.3^2} = 15.0 \pm 0.67 \mathrm{ counts/s}$$
+
+$$R_{\mathrm{net}} = (15.0 \pm 0.7) \mathrm{ counts/s}$$
+
+### Analysing Decay Data with Logarithmic Plots
+
+Plot $\ln A$ (y-axis) versus $t$ (x-axis). The equation $\ln A = \ln A_0 - \lambda t$ gives:
+
+- **Gradient** $= -\lambda$
+- **Y-intercept** $= \ln A_0$
+- **Half-life** $= \ln 2 / |\mathrm{gradient}|$
+
+The uncertainty in $\lambda$ is estimated from the worst-fit lines on the graph.
+
+---
+
+## Additional Worked Examples
+
+### Worked Example 11
+
+A sample contains two radioactive isotopes: X (half-life $6.0 \mathrm{ hours}$, initial activity
+$800 \mathrm{ Bq}$) and Y (half-life $3.0 \mathrm{ hours}$, initial activity $400 \mathrm{ Bq}$).
+Calculate the total activity after $12 \mathrm{ hours}$.
+
+<details>
+<summary>Solution</summary>
+
+For X: number of half-lives in 12 hours $= 12/6 = 2$
+
+$$A_X = 800 \times \left(\frac{1}{2}\right)^2 = 800 \times 0.25 = 200 \mathrm{ Bq}$$
+
+For Y: number of half-lives in 12 hours $= 12/3 = 4$
+
+$$A_Y = 400 \times \left(\frac{1}{2}\right)^4 = 400 \times 0.0625 = 25 \mathrm{ Bq}$$
+
+$$A_{\mathrm{total}} = 200 + 25 = 225 \mathrm{ Bq}$$
+
 </details>
+
+### Worked Example 12
+
+Calculate the energy released when a uranium-235 nucleus undergoes fission, given:
+
+- Mass of U-235 $= 235.0439 \mathrm{ u}$
+- Mass of Ba-141 $= 140.9139 \mathrm{ u}$
+- Mass of Kr-92 $= 91.8973 \mathrm{ u}$
+- Mass of 2 neutrons $= 2 \times 1.0087 = 2.0174 \mathrm{ u}$
+- $1 \mathrm{ u} = 931.5 \mathrm{ MeV}/c^2$
+
+<details>
+<summary>Solution</summary>
+
+$$\Delta m = 235.0439 - (140.9139 + 91.8973 + 2.0174) = 235.0439 - 234.8286 = 0.2153 \mathrm{ u}$$
+
+$$\Delta E = 0.2153 \times 931.5 = 200.6 \mathrm{ MeV}$$
+
+</details>
+
+### Worked Example 13
+
+A nuclear power station produces $1500 \mathrm{ MW}$ of electrical power with an overall
+efficiency of $33\%$. Each fission of U-235 releases approximately $200 \mathrm{ MeV}$ of energy.
+Calculate the mass of U-235 consumed per day.
+
+<details>
+<summary>Solution</summary>
+
+Total thermal power: $P_{\mathrm{thermal}} = 1500/0.33 = 4545 \mathrm{ MW} = 4.545 \times 10^9 \mathrm{ W}$
+
+Energy per day: $E = 4.545 \times 10^9 \times 86400 = 3.93 \times 10^{14} \mathrm{ J}$
+
+Energy per fission: $200 \mathrm{ MeV} = 200 \times 1.6 \times 10^{-13} = 3.2 \times 10^{-11} \mathrm{ J}$
+
+Number of fissions per day: $N = \frac{3.93 \times 10^{14}}{3.2 \times 10^{-11}} = 1.23 \times 10^{25}$
+
+Mass of U-235 per day: $m = N \times 235 \times 1.661 \times 10^{-27} = 1.23 \times 10^{25} \times 3.90 \times 10^{-25} = 4.80 \mathrm{ kg}$
+
+</details>
+
+---
+
+## Exam-Style Questions
+
+### Question 1 (DSE Structured)
+
+(a) Define the term "half-life".
+
+(b) A radioactive isotope has a half-life of $8.0 \mathrm{ days}$. A sample initially contains
+$4.0 \times 10^{20}$ undecayed nuclei.
+
+(i) Calculate the number of undecayed nuclei after $24 \mathrm{ days}$.
+
+(ii) Calculate the decay constant.
+
+(iii) Calculate the initial activity.
+
+(iv) How long does it take for the activity to fall to $5.0 \times 10^8 \mathrm{ Bq}$?
+
+<details>
+<summary>Solution</summary>
+
+(a) The half-life is the time taken for half of the radioactive nuclei in a sample to decay
+(or equivalently, for the activity to fall to half its initial value).
+
+(b) (i) Number of half-lives in $24 \mathrm{ days}$: $n = 24/8 = 3$
+
+$$N = N_0 \times \left(\frac{1}{2}\right)^3 = 4.0 \times 10^{20} \times 0.125 = 5.0 \times 10^{19}$$
+
+(ii) $\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{8.0 \times 24 \times 3600} = \frac{0.693}{691200} = 1.00 \times 10^{-6} \mathrm{ s}^{-1}$
+
+(iii) $A_0 = \lambda N_0 = 1.00 \times 10^{-6} \times 4.0 \times 10^{20} = 4.0 \times 10^{14} \mathrm{ Bq}$
+
+(iv) $A = 5.0 \times 10^8 = A_0 e^{-\lambda t} = 4.0 \times 10^{14} e^{-\lambda t}$
+
+$$e^{-\lambda t} = \frac{5.0 \times 10^8}{4.0 \times 10^{14}} = 1.25 \times 10^{-6}$$
+
+$$-\lambda t = \ln(1.25 \times 10^{-6}) = -13.59$$
+
+$$t = \frac{13.59}{1.00 \times 10^{-6}} = 1.36 \times 10^7 \mathrm{ s} = 157 \mathrm{ days}$$
+
+</details>
+
+### Question 2 (DSE Structured)
+
+(a) Explain what is meant by "binding energy per nucleon".
+
+(b) The following data are for several nuclei:
+
+| Nucleus   | Mass (u)  | Nucleon number $A$ |
+| --------- | --------- | ------------------ |
+| H-2       | 2.01410   | 2                  |
+| He-4      | 4.00260   | 4                  |
+| C-12      | 12.00000  | 12                 |
+| Fe-56     | 55.93494  | 56                 |
+| U-235     | 235.04393 | 235                |
+
+Mass of proton $= 1.00728 \mathrm{ u}$, mass of neutron $= 1.00867 \mathrm{ u}$.
+
+(i) Calculate the binding energy of He-4 in MeV.
+
+(ii) Calculate the binding energy per nucleon of He-4 and Fe-56.
+
+(iii) Explain why energy is released when light nuclei undergo fusion and when heavy nuclei
+undergo fission.
+
+<details>
+<summary>Solution</summary>
+
+(a) The binding energy per nucleon is the total binding energy of a nucleus divided by its mass
+number $A$. It represents the average energy needed to remove one nucleon from the nucleus. A
+higher binding energy per nucleon indicates greater nuclear stability.
+
+(b) (i) He-4 has 2 protons and 2 neutrons.
+
+$$\Delta m = (2 \times 1.00728 + 2 \times 1.00867) - 4.00260 = 2.01456 + 2.01734 - 4.00260 = 0.03030 \mathrm{ u}$$
+
+$$B = 0.03030 \times 931.5 = 28.2 \mathrm{ MeV}$$
+
+(ii) He-4: $B/A = 28.2/4 = 7.05 \mathrm{ MeV/nucleon}$
+
+Fe-56 (26 protons, 30 neutrons):
+
+$$\Delta m = (26 \times 1.00728 + 30 \times 1.00867) - 55.93494 = 26.18928 + 30.26010 - 55.93494 = 0.51444 \mathrm{ u}$$
+
+$$B = 0.51444 \times 931.5 = 479.2 \mathrm{ MeV}$$
+
+$$B/A = 479.2/56 = 8.56 \mathrm{ MeV/nucleon}$
+
+(iii) The binding energy per nucleon curve peaks around Fe-56. Light nuclei (lower $B/A$) can
+increase their $B/A$ by fusing together (moving towards the peak), releasing energy equal to
+the difference in binding energies. Heavy nuclei (lower $B/A$ than the peak) can increase their
+$B/A$ by splitting apart (fission), also releasing energy. In both cases, the products have a
+higher binding energy per nucleon than the reactants, meaning they are more stable.
+
+</details>
+
+### Question 3 (DSE Structured)
+
+(a) Describe the operation of a Geiger-Muller tube.
+
+(b) In a radiation experiment, a student measures the following count rates at different
+distances from a gamma source:
+
+| Distance $d$ (cm) | Count rate $R$ (counts/min) |
+| ----------------- | --------------------------- |
+| 2.0               | 3600                       |
+| 4.0               | 900                        |
+| 6.0               | 400                        |
+| 8.0               | 225                        |
+| 10.0              | 144                        |
+
+(i) Explain why the count rate decreases with distance.
+
+(ii) Plot a suitable graph to verify the inverse square law.
+
+(iii) The background count rate is $20 \mathrm{ counts/min}$. Calculate the corrected count
+rate at $d = 4.0 \mathrm{ cm}$ and the percentage correction.
+
+<details>
+<summary>Solution</summary>
+
+(a) A Geiger-Muller tube consists of a metal cylinder (cathode) with a thin wire (anode) running
+along its axis, filled with an inert gas at low pressure. A high voltage is applied between
+the anode and cathode. When radiation enters the tube through a thin mica window, it ionises
+gas atoms. The ions are accelerated by the electric field, producing further ionisation
+(townsend avalanche). This creates a pulse of current that is registered as one count. The
+quenching gas (e.g., halogen) absorbs UV photons to prevent secondary discharges.
+
+(b) (i) Gamma radiation obeys the inverse square law: $R \propto 1/d^2$. As the distance
+increases, the radiation is spread over a larger area, so the count rate decreases.
+
+(ii) Plot $R$ (y-axis) versus $1/d^2$ (x-axis):
+
+| $1/d^2$ (cm$^{-2}$) | $R$ (counts/min) |
+| -------------------- | ----------------- |
+| 0.250                | 3600              |
+| 0.0625               | 900               |
+| 0.0278               | 400               |
+| 0.0156               | 225               |
+| 0.0100               | 144               |
+
+The graph is approximately a straight line through the origin, confirming the inverse square
+law.
+
+(iii) Corrected count rate at $d = 4.0 \mathrm{ cm}$: $R_{\mathrm{corrected}} = 900 - 20 = 880 \mathrm{ counts/min}$
+
+Percentage correction: $\frac{20}{900} \times 100\% = 2.2\%$
+
+The background correction is small at close range but becomes more significant at larger
+distances where the count rate is lower.
+
 </details>
 

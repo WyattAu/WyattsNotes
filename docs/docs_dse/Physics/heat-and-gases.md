@@ -1573,3 +1573,373 @@ Ready to test your understanding of **Heat and Gases**? The [diagnostic test](/d
 See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
+---
+
+## Derivations
+
+### Derivation: Ideal Gas Law from Empirical Gas Laws
+
+**Boyle's law** (constant temperature): $PV = \text{constant}$, or $P \propto 1/V$
+
+**Charles's law** (constant pressure): $V/T = \text{constant}$, or $V \propto T$
+
+**Pressure law** (constant volume): $P/T = \text{constant}$, or $P \propto T$
+
+Combining all three: $PV/T = \text{constant}$ for a fixed mass of gas.
+
+For $n$ moles of ideal gas:
+
+$$PV = nRT$$
+
+where $R = 8.31 \mathrm{ J/(mol\cdot K)}$ is the molar gas constant.
+
+For one mole: $PV = RT$. At STP ($T = 273 \mathrm{ K}$, $P = 1.01 \times 10^5 \mathrm{ Pa}$):
+$V = RT/P = 8.31 \times 273 / (1.01 \times 10^5) = 0.0224 \mathrm{ m}^3 = 22.4 \mathrm{ litres}$.
+
+### Derivation: Kinetic Theory Pressure Formula
+
+Consider $N$ molecules in a cubic container of side $L$. A molecule of mass $m$ moving with
+velocity component $u_x$ in the x-direction bounces off a wall. The change in momentum per
+collision is $\Delta p = 2mu_x$. The time between collisions with the same wall is $2L/u_x$.
+
+Force on wall from one molecule: $F = \frac{\Delta p}{\Delta t} = \frac{2mu_x}{2L/u_x} = \frac{mu_x^2}{L}$
+
+Total force on wall from all $N$ molecules: $F = \frac{m}{L}\sum_{i=1}^{N} u_{xi}^2$
+
+Pressure: $P = \frac{F}{L^2} = \frac{m}{L^3}\sum u_{xi}^2 = \frac{mN\overline{u_x^2}}{V}$
+
+Since $\overline{u^2} = \overline{u_x^2} + \overline{u_y^2} + \overline{u_z^2} = 3\overline{u_x^2}$ (random motion):
+
+$$PV = \frac{1}{3}Nm\overline{u^2} = \frac{2}{3}N \times \frac{1}{2}m\overline{u^2} = \frac{2}{3}N \times \overline{E_k}$$
+
+This is the kinetic theory equation: $PV = \frac{2}{3}N\overline{E_k}$.
+
+### Derivation: Root-Mean-Square Speed
+
+From the kinetic theory equation and ideal gas law:
+
+$$PV = nRT = \frac{2}{3}N\overline{E_k} = \frac{2}{3}N \times \frac{1}{2}m\overline{u^2} = \frac{1}{3}Nm\overline{u^2}$$
+
+$$\overline{u^2} = \frac{3RT}{M}$$
+
+where $M = Nm/N_A = mN_A$ is the molar mass.
+
+The root-mean-square speed: $u_{\mathrm{rms}} = \sqrt{\overline{u^2}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3k_BT}{m}}$
+
+where $k_B = R/N_A = 1.38 \times 10^{-23} \mathrm{ J/K}$ is Boltzmann's constant.
+
+---
+
+## Experimental Methods
+
+### Determining the Specific Heat Capacity of a Metal
+
+**Apparatus:** A metal block (e.g., aluminium) with two holes (for thermometer and heater), an
+immersion heater, a thermometer, an ammeter, a voltmeter, a stopwatch, and insulation.
+
+**Procedure:**
+1. Measure the mass $m$ of the metal block.
+2. Insert the heater and thermometer, and insulate the block.
+3. Record the initial temperature $T_i$.
+4. Switch on the heater, record the voltage $V$ and current $I$.
+5. After time $t$, record the final temperature $T_f$.
+6. Calculate: $c = \frac{VIt}{m(T_f - T_i)}$
+
+**Sources of error:**
+- Heat loss to the surroundings despite insulation.
+- Non-uniform temperature within the block.
+- The heater and thermometer have their own heat capacities.
+
+**Improvements:** Plot temperature versus time, extrapolate the cooling portion back to estimate
+the temperature that would have been reached without heat loss. Repeat and average.
+
+### Verifying Boyle's Law
+
+**Apparatus:** A column of air trapped in a sealed glass tube by a column of oil (or mercury),
+connected to a pressure gauge or manometer.
+
+**Procedure:**
+1. Record the pressure $P$ and the length $L$ (proportional to volume) of the trapped air.
+2. Vary the pressure by adjusting the oil reservoir.
+3. Record pairs of $P$ and $L$.
+4. Plot $P$ (y-axis) versus $1/L$ (x-axis). A straight line through the origin confirms
+   Boyle's law ($P \propto 1/V$).
+5. Alternatively, plot $PV$ (y-axis) versus $P$ (x-axis). A horizontal line confirms $PV = \text{const}$.
+
+**Precautions:**
+- Allow time for the gas to reach thermal equilibrium after each pressure change.
+- Keep the temperature constant throughout.
+
+### Investigating the Pressure Law
+
+**Apparatus:** A flask of air connected to a pressure gauge, immersed in a water bath with a
+thermometer.
+
+**Procedure:**
+1. Heat the water bath gradually and record pairs of pressure $P$ and temperature $T$ (in kelvin).
+2. Plot $P$ (y-axis) versus $T$ (x-axis).
+3. A straight line through the origin confirms $P \propto T$ (pressure law).
+
+---
+
+## Data Analysis and Uncertainty
+
+### Uncertainty in Specific Heat Capacity
+
+For $c = \frac{VIt}{m\Delta T}$:
+
+$$\frac{\Delta c}{c} = \sqrt{\left(\frac{\Delta V}{V}\right)^2 + \left(\frac{\Delta I}{I}\right)^2 + \left(\frac{\Delta t}{t}\right)^2 + \left(\frac{\Delta m}{m}\right)^2 + \left(\frac{\Delta(\Delta T)}{\Delta T}\right)^2}$$
+
+The temperature difference uncertainty is: $\Delta(\Delta T) = \sqrt{(\Delta T_f)^2 + (\Delta T_i)^2}$
+
+**Example:** $V = (12.0 \pm 0.1) \mathrm{ V}$, $I = (2.00 \pm 0.02) \mathrm{ A}$,
+$t = (300 \pm 1) \mathrm{ s}$, $m = (0.500 \pm 0.001) \mathrm{ kg}$,
+$\Delta T = (25.0 \pm 0.5)^\circ\mathrm{C}$:
+
+$$c = \frac{12.0 \times 2.00 \times 300}{0.500 \times 25.0} = \frac{7200}{12.5} = 576 \mathrm{ J/(kg\cdot{}^\circ C)}$$
+
+$$\frac{\Delta c}{c} = \sqrt{(0.0083)^2 + (0.01)^2 + (0.0033)^2 + (0.002)^2 + (0.02)^2} = \sqrt{0.000069 + 0.0001 + 0.000011 + 0.000004 + 0.0004} = \sqrt{0.000584} = 0.0242 = 2.4\%$$
+
+$$\Delta c = 0.024 \times 576 = 14 \mathrm{ J/(kg\cdot{}^\circ C)}$$
+
+$$c = (576 \pm 14) \mathrm{ J/(kg\cdot{}^\circ C)}$$
+
+---
+
+## Additional Worked Examples
+
+### Worked Example 11
+
+A gas in a cylinder with a movable piston is compressed isothermally at $300 \mathrm{ K}$ from
+volume $5.0 \times 10^{-3} \mathrm{ m}^3$ at pressure $1.0 \times 10^5 \mathrm{ Pa}$ to volume
+$2.0 \times 10^{-3} \mathrm{ m}^3$. Calculate the final pressure and the work done on the gas.
+
+<details>
+<summary>Solution</summary>
+
+By Boyle's law: $P_1 V_1 = P_2 V_2$
+
+$$P_2 = \frac{P_1 V_1}{V_2} = \frac{1.0 \times 10^5 \times 5.0 \times 10^{-3}}{2.0 \times 10^{-3}} = 2.5 \times 10^5 \mathrm{ Pa}$$
+
+Work done on the gas during isothermal compression:
+
+$$W = nRT\ln\left(\frac{V_2}{V_1}\right)$$
+
+Since $nRT = P_1 V_1 = 1.0 \times 10^5 \times 5.0 \times 10^{-3} = 500 \mathrm{ J}$:
+
+$$W = 500 \times \ln\left(\frac{2.0}{5.0}\right) = 500 \times \ln(0.4) = 500 \times (-0.916) = -458 \mathrm{ J}$$
+
+The negative sign means work is done **on** the gas (volume decreases). The magnitude is
+$458 \mathrm{ J}$.
+
+</details>
+
+### Worked Example 12
+
+A room measures $5.0 \mathrm{ m} \times 4.0 \mathrm{ m} \times 3.0 \mathrm{ m}$ and contains air
+at $20^\circ\mathrm{C}$ and $1.01 \times 10^5 \mathrm{ Pa}$.
+
+(a) Calculate the number of moles of air in the room.
+
+(b) Calculate the number of air molecules.
+
+(c) If the temperature rises to $25^\circ\mathrm{C}$ at constant pressure, calculate the mass
+of air that leaves the room.
+
+(Molar mass of air $= 29 \mathrm{ g/mol}$)
+
+<details>
+<summary>Solution</summary>
+
+(a) Volume: $V = 5.0 \times 4.0 \times 3.0 = 60.0 \mathrm{ m}^3$
+
+$$n = \frac{PV}{RT} = \frac{1.01 \times 10^5 \times 60.0}{8.31 \times 293} = \frac{6.06 \times 10^6}{2434.8} = 2489 \mathrm{ mol}$$
+
+(b) $N = n \times N_A = 2489 \times 6.02 \times 10^{23} = 1.50 \times 10^{27}$ molecules
+
+(c) At constant pressure, $V \propto T$. The volume at $25^\circ\mathrm{C}$ ($298 \mathrm{ K}$):
+
+$$V_2 = V_1 \times \frac{T_2}{T_1} = 60.0 \times \frac{298}{293} = 61.0 \mathrm{ m}^3$$
+
+The room volume is fixed at $60.0 \mathrm{ m}^3$, so the excess air ($1.0 \mathrm{ m}^3$ at
+$298 \mathrm{ K}$) leaves.
+
+Moles leaving: $n_{\mathrm{out}} = n_1 \times \left(1 - \frac{T_1}{T_2}\right) = 2489 \times \left(1 - \frac{293}{298}\right) = 2489 \times 0.0168 = 41.8 \mathrm{ mol}$
+
+Mass leaving: $m = 41.8 \times 0.029 = 1.21 \mathrm{ kg}$
+
+</details>
+
+### Worked Example 13
+
+Calculate the root-mean-square speed of nitrogen molecules ($M = 28 \mathrm{ g/mol}$) at:
+(a) $0^\circ\mathrm{C}$, (b) $100^\circ\mathrm{C}$.
+
+<details>
+<summary>Solution</summary>
+
+$$u_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}}$$
+
+(a) At $0^\circ\mathrm{C}$ ($273 \mathrm{ K}$):
+
+$$u_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.31 \times 273}{0.028}} = \sqrt{\frac{6806.3}{0.028}} = \sqrt{243080} = 493 \mathrm{ m/s}$$
+
+(b) At $100^\circ\mathrm{C}$ ($373 \mathrm{ K}$):
+
+$$u_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.31 \times 373}{0.028}} = \sqrt{\frac{9298.6}{0.028}} = \sqrt{332093} = 576 \mathrm{ m/s}$$
+
+Note: $u_{\mathrm{rms}}$ increases with temperature but depends on the square root of $T$,
+so doubling the absolute temperature only increases $u_{\mathrm{rms}}$ by a factor of $\sqrt{2} \approx 1.41$.
+
+</details>
+
+---
+
+## Exam-Style Questions
+
+### Question 1 (DSE Structured)
+
+(a) State the assumptions of the kinetic theory of gases.
+
+(b) A gas cylinder contains $2.0 \mathrm{ mol}$ of an ideal gas at temperature $300 \mathrm{ K}$
+and pressure $2.0 \times 10^6 \mathrm{ Pa}$.
+
+(i) Calculate the volume of the gas.
+
+(ii) Calculate the total kinetic energy of the gas molecules.
+
+(iii) Calculate the root-mean-square speed of the molecules if the molar mass is $4.0 \mathrm{ g/mol}$.
+
+(c) Explain why real gases deviate from ideal gas behaviour at high pressures and low temperatures.
+
+<details>
+<summary>Solution</summary>
+
+(a) Assumptions of the kinetic theory:
+1. The gas consists of a large number of small molecules in random motion.
+2. Collisions between molecules and with the walls are perfectly elastic.
+3. The volume of the molecules is negligible compared to the volume of the container.
+4. Intermolecular forces (other than during collisions) are negligible.
+5. The time spent in collisions is negligible compared to the time between collisions.
+
+(b) (i) $V = \frac{nRT}{P} = \frac{2.0 \times 8.31 \times 300}{2.0 \times 10^6} = \frac{4986}{2.0 \times 10^6} = 2.49 \times 10^{-3} \mathrm{ m}^3$
+
+(ii) From $PV = \frac{2}{3}N\overline{E_k}$: $\overline{E_k} = \frac{3PV}{2N} = \frac{3PV}{2nN_A}$
+
+Alternatively, $\overline{E_k} = \frac{3}{2}k_BT = \frac{3}{2} \times \frac{R}{N_A} \times T = \frac{3RT}{2N_A}$
+
+Total KE $= N \times \overline{E_k} = nN_A \times \frac{3RT}{2N_A} = \frac{3}{2}nRT = \frac{3}{2} \times 2.0 \times 8.31 \times 300 = 7479 \mathrm{ J}$
+
+(iii) $u_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3 \times 8.31 \times 300}{0.004}} = \sqrt{\frac{7479}{0.004}} = \sqrt{1.87 \times 10^6} = 1367 \mathrm{ m/s}$
+
+(c) At high pressures, molecules are forced close together, so the volume of the molecules
+themselves becomes significant compared to the container volume (assumption 3 fails). At low
+temperatures, molecules move more slowly, so intermolecular forces become significant
+(assumption 4 fails), and the gas may even liquefy.
+
+</details>
+
+### Question 2 (DSE Structured)
+
+A student carries out an experiment to determine the specific heat capacity of water. She heats
+$0.200 \mathrm{ kg}$ of water using an immersion heater of power $50 \mathrm{ W}$. The following
+data are recorded:
+
+| Time (s) | Temperature ($^\circ\mathrm{C}$) |
+| ------- | ------------------------------ |
+| 0       | 20.0                           |
+| 60      | 23.5                           |
+| 120     | 27.2                           |
+| 180     | 30.8                           |
+| 240     | 34.7                           |
+| 300     | 38.3                           |
+
+(a) Plot a graph of temperature versus time and determine the rate of temperature rise.
+
+(b) Calculate the specific heat capacity of water from the gradient.
+
+(c) The accepted value is $4186 \mathrm{ J/(kg\cdot{}^\circ C)}$. Calculate the percentage
+error and suggest two reasons for any discrepancy.
+
+<details>
+<summary>Solution</summary>
+
+(a) The graph of temperature versus time is approximately linear. The gradient (rate of temperature
+rise) from a line of best fit:
+
+$$\mathrm{Gradient} = \frac{\Delta T}{\Delta t} \approx \frac{38.3 - 20.0}{300 - 0} = \frac{18.3}{300} = 0.0610^\circ\mathrm{C/s}$$
+
+(b) $P = mc \times \frac{\Delta T}{\Delta t} \implies c = \frac{P}{m \times \mathrm{gradient}} = \frac{50}{0.200 \times 0.0610} = \frac{50}{0.0122} = 4100 \mathrm{ J/(kg\cdot{}^\circ C)}$
+
+(c) Percentage error $= \frac{|4100 - 4186|}{4186} \times 100\% = \frac{86}{4186} \times 100\% = 2.1\%$
+
+Two reasons for discrepancy:
+1. **Heat loss to the surroundings**: Some electrical energy heats the container and the air,
+   not just the water.
+2. **Incomplete stirring**: The temperature may not be uniform, so the recorded temperature may
+   not represent the average water temperature.
+
+</details>
+
+### Question 3 (DSE Structured)
+
+(a) Distinguish between evaporation and boiling.
+
+(b) $0.050 \mathrm{ kg}$ of ice at $-10^\circ\mathrm{C}$ is added to $0.300 \mathrm{ kg}$ of water
+at $40^\circ\mathrm{C}$ in an insulated container. Calculate the final temperature of the
+mixture.
+
+(Specific heat capacity of ice $= 2100 \mathrm{ J/(kg\cdot{}^\circ C)}$,
+specific latent heat of fusion of ice $= 334000 \mathrm{ J/kg}$,
+specific heat capacity of water $= 4200 \mathrm{ J/(kg\cdot{}^\circ C)}$)
+
+<details>
+<summary>Solution</summary>
+
+(a) **Evaporation** occurs at any temperature, only at the surface, and is a slow process. It
+causes cooling because the most energetic molecules escape. **Boiling** occurs at a specific
+temperature (the boiling point), throughout the liquid, and is a rapid process involving
+bubble formation. Both involve a change of state from liquid to gas.
+
+(b) First, check if all the ice melts. Energy to warm ice to $0^\circ\mathrm{C}$:
+
+$$Q_1 = 0.050 \times 2100 \times 10 = 1050 \mathrm{ J}$$
+
+Energy to melt ice at $0^\circ\mathrm{C}$:
+
+$$Q_2 = 0.050 \times 334000 = 16700 \mathrm{ J}$$
+
+Total energy needed to melt all ice: $Q_1 + Q_2 = 1050 + 16700 = 17750 \mathrm{ J}$
+
+Maximum energy available from water cooling to $0^\circ\mathrm{C}$:
+
+$$Q_{\max} = 0.300 \times 4200 \times 40 = 50400 \mathrm{ J}$$
+
+Since $50400 > 17750$, all the ice melts and the final temperature is above $0^\circ\mathrm{C}$.
+
+Energy available after melting ice: $50400 - 17750 = 32650 \mathrm{ J}$
+
+This energy warms the melted ice and cools the original water:
+
+$$(0.050 \times 4200 + 0.300 \times 4200) \times \Delta T = 32650$$
+
+$$4200(0.050 + 0.300) \times \Delta T = 32650$$
+
+$$4200 \times 0.350 \times \Delta T = 32650$$
+
+$$1470\Delta T = 32650$$
+
+$$\Delta T = 22.2^\circ\mathrm{C}$$
+
+Final temperature $= 0 + 22.2 = 22.2^\circ\mathrm{C}$.
+
+(Alternatively: $0.300 \times 4200 \times (40 - T_f) = 0.050 \times 2100 \times 10 + 0.050 \times 334000 + 0.050 \times 4200 \times T_f$)
+
+$$50400 - 1260T_f = 1050 + 16700 + 210T_f$$
+
+$$50400 - 17750 = 1470T_f$$
+
+$$T_f = 22.2^\circ\mathrm{C}$
+
+</details>
+

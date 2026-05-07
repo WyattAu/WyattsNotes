@@ -804,6 +804,496 @@ Ready to test your understanding of **Optics**? The [diagnostic test](/docs/dse/
 See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
 
+---
+
+## Derivations
+
+### Derivation: Critical Angle for Total Internal Reflection
+
+Total internal reflection occurs when light travelling from a denser medium (refractive index $n_1$)
+to a less dense medium ($n_2$) strikes the boundary at an angle greater than the critical angle.
+At the critical angle $\theta_c$, the refracted ray travels along the boundary ($\theta_r = 90^\circ$):
+
+$$n_1 \sin\theta_c = n_2 \sin 90^\circ = n_2$$
+
+$$\sin\theta_c = \frac{n_2}{n_1}$$
+
+For light going from glass ($n_1 = 1.5$) to air ($n_2 = 1.0$):
+
+$$\sin\theta_c = \frac{1.0}{1.5} = 0.667 \implies \theta_c = 41.8^\circ$$
+
+Total internal reflection only occurs when light travels from a denser to a less dense medium
+($n_1 > n_2$), because otherwise $\sin\theta_c > 1$ which is impossible.
+
+### Derivation: Thin Lens Equation
+
+For a thin converging lens, consider a ray from the top of an object at distance $u$ from the
+lens, passing through the lens and forming an image at distance $v$. By similar triangles formed
+with the principal axis and the focal point:
+
+From the object side: $\frac{h_o}{u} = \frac{h_i}{v}$ (magnification triangles)
+
+From the focal point triangles:
+
+$$\frac{h_o}{u - f} = \frac{h_i}{f} \quad \text{and} \quad \frac{h_o}{f} = \frac{h_i}{v - f}$$
+
+From the second pair: $\frac{h_o}{f} = \frac{h_i}{v - f}$
+
+Combining with the magnification $m = h_i/h_o = v/u$:
+
+$$\frac{1}{f} = \frac{h_o}{h_i \cdot f} = \frac{1}{(v - f)} \cdot \frac{v}{u}$$
+
+After simplification:
+
+$$\frac{1}{f} = \frac{1}{v} + \frac{1}{u}$$
+
+This is the thin lens equation. The sign convention used in DSE is the **real-is-positive**
+convention: real objects have $u > 0$, real images have $v > 0$, and converging lenses have $f > 0$.
+
+### Derivation: Minimum Deviation by a Prism
+
+A ray passes through a prism of refractive index $n$ and apex angle $A$. At minimum deviation
+$D_m$, the ray passes symmetrically through the prism:
+
+$$\theta_1 = \theta_2 = \frac{A + D_m}{2}$$
+
+The angle of incidence at each face equals the angle of emergence. At the first face, by Snell's
+law:
+
+$$n = \frac{\sin\theta_1}{\sin r_1}$$
+
+At minimum deviation, the ray inside the prism is parallel to the base, so $r_1 = r_2 = A/2$:
+
+$$n = \frac{\sin\left(\frac{A + D_m}{2}\right)}{\sin\left(\frac{A}{2}\right)}$$
+
+This is the prism formula. Rearranging allows determination of $n$ by measuring $A$ and $D_m$.
+
+---
+
+## Experimental Methods
+
+### Determining the Refractive Index of a Glass Block
+
+**Apparatus:** A rectangular glass block, four pins, a protractor, a ruler, and a sheet of paper.
+
+**Procedure:**
+1. Place the glass block on the paper and trace its outline.
+2. Draw a normal at the point of entry. Insert pins P1 and P2 to define the incident ray.
+3. Looking through the block from the other side, insert pins P3 and P4 so they appear in line
+   with the images of P1 and P2.
+4. Remove the block and draw the refracted ray through P3 and P4.
+5. Measure the angle of incidence $\theta_i$ and angle of refraction $\theta_r$.
+6. Repeat for several angles and plot $\sin\theta_i$ (y-axis) versus $\sin\theta_r$ (x-axis).
+7. The gradient equals the refractive index $n$.
+
+**Sources of error:**
+- Difficulty aligning the pins precisely (parallax error).
+- The glass block may not be perfectly rectangular.
+- The faces of the block may not be perfectly parallel.
+
+### Measuring the Focal Length of a Converging Lens
+
+**Method 1: Distant object method**
+Focus the image of a distant object (e.g., a window or lamp outside the laboratory) on a screen.
+The image distance approximately equals the focal length $f$.
+
+**Method 2: Lens formula method**
+1. Place a illuminated object (e.g., a lit wire mesh) at a measured distance $u$ from the lens.
+2. Move the screen until a sharp image is formed. Record the image distance $v$.
+3. Repeat for different values of $u$.
+4. Plot $1/v$ (y-axis) versus $1/u$ (x-axis). The intercepts on both axes give $1/f$.
+5. Alternatively, plot $uv$ (y-axis) versus $(u + v)$ (x-axis). The gradient equals $f$.
+
+**Method 3: Magnification method**
+Since $m = v/u$ and $\frac{1}{f} = \frac{1}{u} + \frac{1}{v} = \frac{m + 1}{v}$:
+
+Plot $m$ (y-axis) versus $v$ (x-axis). The gradient equals $1/f$.
+
+### Determining the Critical Angle and Refractive Index of a Semi-Circular Block
+
+**Apparatus:** A semi-circular glass block, a ray box, and a protractor.
+
+**Procedure:**
+1. Place the semi-circular block on paper with the flat face along a marked line.
+2. Direct a ray of light towards the centre of the flat face.
+3. Vary the angle of incidence until the refracted ray just disappears (the reflected ray
+   suddenly becomes much brighter).
+4. This is the critical angle $\theta_c$. Measure it with a protractor.
+5. Calculate: $n = 1/\sin\theta_c$.
+
+**Key point:** The ray is directed at the **centre** of the flat face so that it strikes the
+curved surface at normal incidence (no refraction at the curved surface). Only refraction at
+the flat face matters.
+
+---
+
+## Data Analysis and Uncertainty
+
+### Uncertainty in Refractive Index Measurements
+
+When determining $n$ from $\sin\theta_i = n\sin\theta_r$:
+
+If plotting $\sin\theta_i$ versus $\sin\theta_r$, the gradient gives $n$. The uncertainty in the
+gradient is found from the line of best fit and worst-fit lines.
+
+**Example:** A student measures $\theta_i = (40 \pm 1)^\circ$ and $\theta_r = (25 \pm 1)^\circ$.
+
+$$n = \frac{\sin 40^\circ}{\sin 25^\circ} = \frac{0.6428}{0.4226} = 1.521$$
+
+$$\frac{\Delta n}{n} = \sqrt{\left(\frac{\cos\theta_i \cdot \Delta\theta_i}{\sin\theta_i}\right)^2 + \left(\frac{\cos\theta_r \cdot \Delta\theta_r}{\sin\theta_r}\right)^2}$$
+
+Converting $\Delta\theta = 1^\circ = 0.0175 \mathrm{ rad}$:
+
+$$\frac{\Delta n}{n} = \sqrt{\left(\frac{0.766 \times 0.0175}{0.6428}\right)^2 + \left(\frac{0.906 \times 0.0175}{0.4226}\right)^2} = \sqrt{(0.0208)^2 + (0.0376)^2} = \sqrt{0.000433 + 0.001414} = \sqrt{0.001847} = 0.0430 = 4.3\%$$
+
+$$\Delta n = 0.043 \times 1.521 = 0.065$$
+
+$$n = (1.52 \pm 0.07)$$
+
+---
+
+## Additional Worked Examples
+
+### Worked Example 11
+
+A glass fibre (core refractive index $1.50$, cladding refractive index $1.45$) is used for
+total internal reflection.
+
+(a) Calculate the critical angle at the core-cladding boundary.
+
+(b) Light enters the fibre end at an angle of $20^\circ$ to the axis. Show whether the light
+undergoes total internal reflection inside the fibre.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\sin\theta_c = \frac{n_{\mathrm{cladding}}}{n_{\mathrm{core}}} = \frac{1.45}{1.50} = 0.967$
+
+$$\theta_c = \sin^{-1}(0.967) = 75.2^\circ$$
+
+(b) The light enters the fibre and refracts. At the core-cladding boundary, the angle of
+incidence (measured from the normal to the boundary) is $90^\circ - 20^\circ = 70^\circ$.
+
+Since $70^\circ < \theta_c = 75.2^\circ$, the light does **not** undergo total internal
+reflection. The maximum entry angle for total internal reflection is found from:
+
+$$n_{\mathrm{air}}\sin\theta_{\max} = n_{\mathrm{core}}\sin(90^\circ - \theta_c) = 1.50 \times \sin 14.8^\circ = 1.50 \times 0.256 = 0.383$$
+
+$$\theta_{\max} = \sin^{-1}(0.383) = 22.5^\circ$$
+
+An entry angle of $20^\circ$ is less than $22.5^\circ$, so the light does undergo TIR. (Note:
+the angle of incidence at the boundary is $90^\circ - \theta_{\mathrm{refracted}}$ inside the
+fibre, not $90^\circ - 20^\circ$. A full calculation using Snell's law at the entry face is
+needed.)
+
 </details>
+
+### Worked Example 12
+
+An object of height $3.0 \mathrm{ cm}$ is placed $20 \mathrm{ cm}$ from a converging lens of
+focal length $15 \mathrm{ cm}$. Find the image position, height, and nature (real/virtual,
+upright/inverted, magnified/diminished).
+
+<details>
+<summary>Solution</summary>
+
+Using the thin lens equation: $\frac{1}{f} = \frac{1}{v} + \frac{1}{u}$
+
+$$\frac{1}{15} = \frac{1}{v} + \frac{1}{20}$$
+
+$$\frac{1}{v} = \frac{1}{15} - \frac{1}{20} = \frac{4 - 3}{60} = \frac{1}{60}$$
+
+$$v = 60 \mathrm{ cm}$$
+
+Magnification: $m = \frac{v}{u} = \frac{60}{20} = 3.0$
+
+Image height: $h_i = m \times h_o = 3.0 \times 3.0 = 9.0 \mathrm{ cm}$
+
+The image is **real** ($v > 0$), **inverted** ($m > 0$ with real-is-positive convention), and
+**magnified** ($|m| > 1$). It forms $60 \mathrm{ cm}$ on the opposite side of the lens.
+
+</details>
+
+### Worked Example 13
+
+Light of wavelength $590 \mathrm{ nm}$ is incident normally on a diffraction grating with
+$400 \mathrm{ lines/mm}$. Calculate the angles of the first two orders and the maximum number
+of orders visible.
+
+<details>
+<summary>Solution</summary>
+
+$$d = \frac{1}{400 \times 10^3} = 2.50 \times 10^{-6} \mathrm{ m}$$
+
+First order ($n = 1$):
+
+$$\sin\theta_1 = \frac{\lambda}{d} = \frac{590 \times 10^{-9}}{2.50 \times 10^{-6}} = 0.236$$
+
+$$\theta_1 = \sin^{-1}(0.236) = 13.6^\circ$$
+
+Second order ($n = 2$):
+
+$$\sin\theta_2 = \frac{2\lambda}{d} = 0.472$$
+
+$$\theta_2 = \sin^{-1}(0.472) = 28.2^\circ$$
+
+Maximum order: $n_{\max} = \frac{d}{\lambda} = \frac{2.50 \times 10^{-6}}{590 \times 10^{-9}} = 4.24$
+
+Maximum number of orders = **4** (since $n$ must be an integer and $\sin\theta \leq 1$).
+
+</details>
+
+---
+
+## Exam-Style Questions
+
+### Question 1 (DSE Structured)
+
+A student investigates refraction using a rectangular glass block. She measures the angle of
+incidence and angle of refraction for several rays.
+
+| Angle of incidence $\theta_i$ ($^\circ$) | Angle of refraction $\theta_r$ ($^\circ$) |
+| --------------------------------------- | ---------------------------------------- |
+| 15                                     | 10                                      |
+| 30                                     | 19                                      |
+| 45                                     | 28                                      |
+| 60                                     | 35                                      |
+| 75                                     | 40                                      |
+
+(a) Plot a graph of $\sin\theta_i$ against $\sin\theta_r$ and determine the refractive index of
+the glass.
+
+(b) Calculate the critical angle for the glass-air boundary.
+
+(c) The student estimates the angular uncertainty as $\pm 1^\circ$. Calculate the uncertainty in
+the refractive index.
+
+(d) Explain why total internal reflection cannot occur when light travels from air into glass.
+
+<details>
+<summary>Solution</summary>
+
+(a)
+
+| $\sin\theta_i$ | $\sin\theta_r$ |
+| -------------- | -------------- |
+| 0.259          | 0.174          |
+| 0.500          | 0.326          |
+| 0.707          | 0.469          |
+| 0.866          | 0.574          |
+| 0.966          | 0.643          |
+
+Gradient of line of best fit $= \frac{\Delta\sin\theta_i}{\Delta\sin\theta_r} \approx \frac{0.966 - 0.259}{0.643 - 0.174} = \frac{0.707}{0.469} = 1.51$
+
+The refractive index $n = 1.51$.
+
+(b) $\sin\theta_c = \frac{1}{n} = \frac{1}{1.51} = 0.662$
+
+$$\theta_c = \sin^{-1}(0.662) = 41.5^\circ$$
+
+(c) The uncertainty in $n$ from the graph is estimated from the worst-fit lines. For a single
+data point at $\theta_i = 45^\circ$, $\theta_r = 28^\circ$:
+
+$\Delta\theta = 1^\circ = 0.0175 \mathrm{ rad}$
+
+$\sin(45 \pm 1) = 0.707 \pm 0.012$, $\sin(28 \pm 1) = 0.469 \pm 0.015$
+
+The percentage uncertainty in $n$ from the gradient depends on the spread of the worst-fit lines.
+Approximately: $\frac{\Delta n}{n} \approx 3\%$ to $5\%$, giving $\Delta n \approx 0.05$ to $0.08$.
+
+(d) Total internal reflection requires light to travel from a denser medium ($n_1$) to a less
+dense medium ($n_2$), so that $\sin\theta_c = n_2/n_1 < 1$. When light travels from air
+($n = 1.0$) to glass ($n = 1.51$), the equivalent critical angle would have
+$\sin\theta_c = 1.51/1.0 = 1.51 > 1$, which is impossible. Therefore TIR cannot occur.
+
+</details>
+
+### Question 2 (DSE Structured)
+
+A compound microscope consists of an objective lens of focal length $0.5 \mathrm{ cm}$ and an
+eyepiece lens of focal length $2.5 \mathrm{ cm}$. The two lenses are separated by $15 \mathrm{ cm}$.
+An object is placed $0.6 \mathrm{ cm}$ from the objective lens.
+
+(a) Calculate the position of the image formed by the objective lens.
+
+(b) Calculate the position of the final image formed by the eyepiece.
+
+(c) Calculate the total magnification of the microscope.
+
+(d) State two differences between a compound microscope and an astronomical telescope.
+
+<details>
+<summary>Solution</summary>
+
+(a) Objective lens: $u_1 = 0.6 \mathrm{ cm}$, $f_1 = 0.5 \mathrm{ cm}$
+
+$$\frac{1}{v_1} = \frac{1}{f_1} - \frac{1}{u_1} = \frac{1}{0.5} - \frac{1}{0.6} = 2.0 - 1.667 = 0.333$$
+
+$$v_1 = 3.0 \mathrm{ cm}$$
+
+The objective forms a real, inverted, magnified image $3.0 \mathrm{ cm}$ from the objective.
+
+(b) This image acts as the object for the eyepiece. The distance from the eyepiece is:
+
+$$u_2 = 15 - 3.0 = 12.0 \mathrm{ cm}$$
+
+$$\frac{1}{v_2} = \frac{1}{f_2} - \frac{1}{u_2} = \frac{1}{2.5} - \frac{1}{12.0} = 0.400 - 0.0833 = 0.317$$
+
+$$v_2 = 3.16 \mathrm{ cm}$$
+
+The final image is real, formed $3.16 \mathrm{ cm}$ from the eyepiece on the opposite side.
+
+(c) Magnification of objective: $m_1 = \frac{v_1}{u_1} = \frac{3.0}{0.6} = 5.0$
+
+Magnification of eyepiece: $m_2 = \frac{v_2}{u_2} = \frac{3.16}{12.0} = 0.263$
+
+Total magnification: $M = m_1 \times m_2 = 5.0 \times 0.263 = 1.3$
+
+(Note: In a normal microscope, the final image is virtual at the near point. The calculation
+above gives a real image because the object is not at the standard position. Typically the
+eyepiece is used as a magnifying glass with the intermediate image at its focal point.)
+
+(d) Two differences:
+1. A microscope is used to view nearby objects; a telescope is used to view distant objects.
+2. In a microscope, the objective forms a real, magnified image; in a telescope, the objective
+   forms a real, diminished image at its focal point.
+
+</details>
+
+### Question 3 (DSE Structured)
+
+A ray of white light strikes one face of an equilateral glass prism ($60^\circ$) at an angle of
+incidence of $45^\circ$. The refractive index of the glass for red light is $1.514$ and for
+violet light is $1.532$.
+
+(a) Calculate the angle of refraction at the first face for red light.
+
+(b) Calculate the angle of incidence at the second face for red light.
+
+(c) Calculate the angle of emergence for red light.
+
+(d) Calculate the angle of deviation for red light.
+
+(e) Calculate the angular dispersion between red and violet light.
+
+<details>
+<summary>Solution</summary>
+
+(a) At the first face: $n\sin\theta_r = \sin\theta_i$
+
+$$1.514\sin\theta_r = \sin 45^\circ = 0.7071$$
+
+$$\sin\theta_r = \frac{0.7071}{1.514} = 0.467$$
+
+$$\theta_r = 27.8^\circ$$
+
+(b) The angle of incidence at the second face:
+
+$$\theta_{i2} = A - \theta_r = 60^\circ - 27.8^\circ = 32.2^\circ$$
+
+(c) At the second face: $n\sin\theta_{i2} = \sin\theta_{e}$
+
+$$\sin\theta_e = 1.514 \times \sin 32.2^\circ = 1.514 \times 0.533 = 0.807$$
+
+$$\theta_e = 53.8^\circ$$
+
+(d) Deviation: $D = \theta_i + \theta_e - A = 45^\circ + 53.8^\circ - 60^\circ = 38.8^\circ$
+
+(e) For violet light:
+
+$$\sin\theta_{r,\mathrm{violet}} = \frac{\sin 45^\circ}{1.532} = \frac{0.7071}{1.532} = 0.462$$
+
+$$\theta_{r,\mathrm{violet}} = 27.5^\circ$$
+
+$$\theta_{i2,\mathrm{violet}} = 60^\circ - 27.5^\circ = 32.5^\circ$$
+
+$$\sin\theta_{e,\mathrm{violet}} = 1.532 \times \sin 32.5^\circ = 1.532 \times 0.537 = 0.823$$
+
+$$\theta_{e,\mathrm{violet}} = 55.4^\circ$$
+
+$$D_{\mathrm{violet}} = 45^\circ + 55.4^\circ - 60^\circ = 40.4^\circ$$
+
+Angular dispersion: $\Delta D = 40.4^\circ - 38.8^\circ = 1.6^\circ$
+
+</details>
+
+### Question 4 (DSE Structured)
+
+(a) Explain what is meant by the term "wavefront".
+
+(b) State Huygens' principle.
+
+(c) Use Huygens' principle to explain why a wave spreads out when passing through a narrow gap.
+
+(d) A plane wave of wavelength $0.5 \mathrm{ m}$ passes through a gap of width $1.0 \mathrm{ m}$.
+Describe the diffraction pattern observed and explain how it differs if the gap width is
+reduced to $0.3 \mathrm{ m}$.
+
+<details>
+<summary>Solution</summary>
+
+(a) A wavefront is a surface (or line in 2D) on which all points are in phase. For a plane wave,
+wavefronts are parallel lines or planes. For a circular wave, wavefronts are concentric circles.
+
+(b) Huygens' principle states that every point on a wavefront acts as a source of secondary
+wavelets. These wavelets spread out at the wave speed. The new wavefront at a later time is
+the envelope (tangent surface) of all these secondary wavelets.
+
+(c) When a plane wave passes through a narrow gap, each point within the gap acts as a source
+of secondary wavelets (by Huygens' principle). These wavelets spread out in all directions
+beyond the gap. The new wavefront is no longer plane but curved, causing the wave to spread
+out (diffract). The narrower the gap relative to the wavelength, the more the wave spreads out,
+because fewer secondary sources contribute and their curved wavelets dominate.
+
+(d) With a gap of $1.0 \mathrm{ m}$ ($d/\lambda = 2$), moderate diffraction occurs. The wave
+spreads out somewhat beyond the gap, but there is still a relatively well-defined beam
+direction with some spreading at the edges.
+
+With a gap of $0.3 \mathrm{ m}$ ($d/\lambda = 0.6$, gap is smaller than the wavelength), very
+significant diffraction occurs. The wave spreads out into a wide semicircular pattern beyond
+the gap, similar to a point source. The wavefront is almost completely circular.
+
+</details>
+
+### Question 5 (DSE Structured)
+
+(a) Explain the difference between a real image and a virtual image.
+
+(b) An object is placed $8.0 \mathrm{ cm}$ from a diverging lens of focal length $12 \mathrm{ cm}$.
+Find the image position, magnification, and nature.
+
+(c) A converging lens forms an image of an object on a screen placed $50 \mathrm{ cm}$ from the
+lens. The image is three times the size of the object. Find the focal length of the lens and
+the object distance.
+
+<details>
+<summary>Solution</summary>
+
+(a) A **real image** is formed where light rays actually converge. It can be projected onto a
+screen and is always inverted. A **virtual image** is formed where light rays only appear to
+diverge from; the rays do not actually pass through the image position. It cannot be projected
+onto a screen and is always upright.
+
+(b) For a diverging lens, $f = -12 \mathrm{ cm}$ (using real-is-positive convention).
+
+$$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{-12} - \frac{1}{8} = -\frac{1}{12} - \frac{1}{8} = \frac{-2 - 3}{24} = -\frac{5}{24}$$
+
+$$v = -4.8 \mathrm{ cm}$$
+
+The negative sign indicates a virtual image, $4.8 \mathrm{ cm}$ from the lens on the same
+side as the object.
+
+$$m = \frac{v}{u} = \frac{-4.8}{8} = -0.60$$
+
+The image is **virtual**, **upright**, and **diminished** (60% of the object height).
+
+(c) The image is real (on a screen), so $v = +50 \mathrm{ cm}$.
+
+Since $m = 3$ and the image is real (inverted): $|m| = v/u = 3$, so $u = v/3 = 50/3 = 16.7 \mathrm{ cm}$.
+
+$$\frac{1}{f} = \frac{1}{v} + \frac{1}{u} = \frac{1}{50} + \frac{1}{16.7} = 0.0200 + 0.0599 = 0.0799$$
+
+$$f = 12.5 \mathrm{ cm}$$
+
 </details>
 
