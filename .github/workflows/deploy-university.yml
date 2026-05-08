@@ -1,6 +1,3 @@
-concurrency:
-  group: deploy
-  cancel-in-progress: false
 name: Deploy University to Cloudflare Pages
 
 on:

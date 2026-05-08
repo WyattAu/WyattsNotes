@@ -1,6 +1,3 @@
-concurrency:
-  group: deploy
-  cancel-in-progress: false
 name: Deploy A-Levels to Cloudflare Pages
 
 on:
