@@ -53,7 +53,7 @@ jobs:
       - name: Build
         run: npx docusaurus build --config docusaurus.programming.config.ts
         env:
-          NODE_OPTIONS: --max-old-space-size=6144 --optimize-for-size --max-semi-space-size=128
+          NODE_OPTIONS: --max-old-space-size=7168
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
