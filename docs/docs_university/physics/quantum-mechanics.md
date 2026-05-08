@@ -1800,4 +1800,509 @@ $\psi(x) = A(a^2 - x^2)$ for $|x| \lt a$ (and zero otherwise) to estimate the gr
 energy of the infinite square well $V(x) = 0$ for $|x| \lt L$ and $V(x) = \infty$ otherwise.
 Take $a = L$ as a fixed parameter. Compare your result with the exact ground state energy
 $E_1 = \pi^2\hbar^2/(2mL^2)$ and calculate the percentage error. Comment on why the variational
-estimate is higher than the exact result..
+estimate is higher than the exact result.
+
+## 9. Identical Particles and Exchange Symmetry
+
+### 9.1 Symmetrisation Postulate
+
+For a system of $N$ identical particles, the wavefunction must satisfy:
+
+$$\psi(\ldots, \mathbf{r}_i, \ldots, \mathbf{r}_j, \ldots) = \pm\psi(\ldots, \mathbf{r}_j, \ldots, \mathbf{r}_i, \ldots)$$
+
+- **Bosons** (integer spin): symmetric ($+$ sign). Any number can occupy the same state.
+- **Fermions** (half-integer spin): antisymmetric ($-$ sign). Pauli exclusion: no two fermions can occupy the same state.
+
+For two particles, the properly symmetrised states are:
+
+$$\psi_S = \frac{1}{\sqrt{2}}\left[\psi_a(1)\psi_b(2) + \psi_b(1)\psi_a(2)\right] \quad \text{(bosons)}$$
+
+$$\psi_A = \frac{1}{\sqrt{2}}\left[\psi_a(1)\psi_b(2) - \psi_b(1)\psi_a(2)\right] \quad \text{(fermions)}$$
+
+### 9.2 Exchange Interaction
+
+Even without an explicit interaction potential, the requirement of (anti)symmetry leads to an effective **exchange interaction**. For two electrons in a box, the probability of finding them close together differs between the triplet (spatially antisymmetric, spin symmetric) and singlet (spatially symmetric, spin antisymmetric) states:
+
+$$|\psi_{\text{triplet}}|^2 = 0 \quad \text{when } \mathbf{r}_1 = \mathbf{r}_2$$
+
+$$|\psi_{\text{singlet}}|^2 > 0 \quad \text{when } \mathbf{r}_1 = \mathbf{r}_2$$
+
+The triplet state keeps electrons apart (effective repulsion), while the singlet allows them to be close. This is the origin of the **Hund's first rule**: parallel spins are energetically favourable for atoms because the exchange interaction lowers the Coulomb repulsion.
+
+### 9.3 The Helium Atom
+
+The helium Hamiltonian (ignoring nuclear motion):
+
+$$\hat{H} = -\frac{\hbar^2}{2m_e}\left(\nabla_1^2 + \nabla_2^2\right) - \frac{2e^2}{4\pi\varepsilon_0 r_1} - \frac{2e^2}{4\pi\varepsilon_0 r_2} + \frac{e^2}{4\pi\varepsilon_0|\mathbf{r}_1 - \mathbf{r}_2|}$$
+
+**Ground state (parahelium):** Both electrons in the $1s$ orbital with opposite spins (singlet). The spatial part is symmetric: $\psi_{100}(\mathbf{r}_1)\psi_{100}(\mathbf{r}_2)$.
+
+**First-order perturbation theory** for the electron-electron repulsion:
+
+$$E^{(1)} = \frac{5}{4}\frac{e^2}{4\pi\varepsilon_0 a_0} = \frac{5}{2}\times 13.6\ \text{eV} = 34.0\ \text{eV}$$
+
+The unperturbed ground state energy is $E^{(0)} = 2 \times (-54.4\ \text{eV}) = -108.8$ eV (two electrons in $Z = 2$ Coulomb potential). Including perturbation: $E \approx -108.8 + 34.0 = -74.8$ eV. The experimental value is $-79.0$ eV.
+
+**Excited states:** When one electron is excited to $1s\,nl$, the spin configuration matters:
+
+- **Parahelium** (singlet, $S = 0$): symmetric spatial, antisymmetric spin. Lower energy for given configuration.
+- **Orthohelium** (triplet, $S = 1$): antisymmetric spatial, symmetric spin. Higher energy.
+
+The **exchange integral** $K$ and **direct integral** $J$:
+
+$$J = \iint |\psi_a(1)|^2\frac{e^2}{4\pi\varepsilon_0 r_{12}}|\psi_b(2)|^2\, d^3r_1 d^3r_2$$
+
+$$K = \iint \psi_a^*(1)\psi_b^*(2)\frac{e^2}{4\pi\varepsilon_0 r_{12}}\psi_b(1)\psi_a(2)\, d^3r_1 d^3r_2$$
+
+The energy splitting between singlet and triplet is $2K$, with the triplet lower by $2K$.
+
+<details>
+<summary>Worked Example 9.1: Helium $1s2s$ States</summary>
+
+For the $1s\,2s$ configuration of helium:
+
+$$J_{1s,2s} = \frac{e^2}{4\pi\varepsilon_0}\int |\psi_{1s}(1)|^2\frac{1}{r_{12}}|\psi_{2s}(2)|^2\, d^3r_1 d^3r_2$$
+
+$$K_{1s,2s} = \frac{e^2}{4\pi\varepsilon_0}\int \psi_{1s}^*(1)\psi_{2s}^*(2)\frac{1}{r_{12}}\psi_{2s}(1)\psi_{1s}(2)\, d^3r_1 d^3r_2$$
+
+Evaluating these (using the multipole expansion $1/r_{12} = \sum_l r_<^l/r_>^{l+1}\,P_l(\cos\theta)$):
+
+$$J_{1s,2s} \approx 0.42\ \text{Ry} = 5.7\ \text{eV}$$
+
+$$K_{1s,2s} \approx 0.032\ \text{Ry} = 0.43\ \text{eV}$$
+
+The singlet (parahelium) has energy $E = E_0 + J + K$, and the triplet (orthohelium) has $E = E_0 + J - K$.
+
+The splitting: $E_{\text{singlet}} - E_{\text{triplet}} = 2K \approx 0.86$ eV. This is the exchange splitting.
+
+The orthohelium $2^3S$ state is metastable: it cannot decay to the ground state by electric dipole transition (because $\Delta S = 0$ for E1 transitions, and the ground state is a singlet). Its lifetime is $\sim 10^4$ s.
+
+</details>
+
+### 9.4 Slater Determinants
+
+For $N$ fermions, the antisymmetric wavefunction is efficiently written as a **Slater determinant**:
+
+$$\Psi(1, 2, \ldots, N) = \frac{1}{\sqrt{N!}}\begin{vmatrix} \phi_1(1) & \phi_2(1) & \cdots & \phi_N(1) \\ \phi_1(2) & \phi_2(2) & \cdots & \phi_N(2) \\ \vdots & \vdots & \ddots & \vdots \\ \phi_1(N) & \phi_2(N) & \cdots & \phi_N(N) \end{vmatrix}$$
+
+**Properties:**
+- Swapping any two rows (particles) changes the sign
+- If any two columns (orbitals) are identical, the determinant vanishes (Pauli exclusion)
+- The normalisation is correct if the spin-orbitals $\phi_i$ are orthonormal
+
+## 10. Variational Methods
+
+### 10.1 The Variational Principle
+
+For any trial wavefunction $\psi_{\text{trial}}$ (normalised), the expectation value of the Hamiltonian is an upper bound on the true ground state energy:
+
+$$E_{\text{trial}} = \langle\psi_{\text{trial}}|\hat{H}|\psi_{\text{trial}}\rangle \geq E_0$$
+
+The equality holds if and only if $\psi_{\text{trial}} = \psi_0$.
+
+### 10.2 The Hydrogen Molecule Ion $H_2^+$
+
+The simplest molecule: one electron in the field of two protons separated by distance $R$. The Hamiltonian:
+
+$$\hat{H} = -\frac{\hbar^2}{2m_e}\nabla^2 - \frac{e^2}{4\pi\varepsilon_0 r_A} - \frac{e^2}{4\pi\varepsilon_0 r_B} + \frac{e^2}{4\pi\varepsilon_0 R}$$
+
+**LCAO trial function:** $\psi_\pm = N_\pm[\psi_{1s}(\mathbf{r}_A) \pm \psi_{1s}(\mathbf{r}_B)]$
+
+The energies:
+
+$$E_\pm(R) = E_{1s} + \frac{e^2}{4\pi\varepsilon_0 R} + \frac{J \pm K}{1 \pm S}$$
+
+where $S = \langle\psi_A|\psi_B\rangle$ is the overlap integral, $J$ is the Coulomb integral, and $K$ is the exchange integral.
+
+- $E_-$ (bonding): has a minimum at $R \approx 2.5\,a_0$, giving a binding energy of $\sim 1.8$ eV (experiment: 2.8 eV).
+- $E_+$ (antibonding): monotonically decreases, no bound state.
+
+### 10.3 The Hydrogen Molecule $H_2$
+
+With two electrons, the full Hamiltonian includes the electron-electron repulsion. Using the variational method with properly (anti)symmetrised spatial-spin wavefunctions:
+
+**Bonding (singlet):** $E_{\text{singlet}} = 2E_{1s} + \frac{e^2}{R} + \frac{2J + 2K}{1 + S^2}$
+
+**Antibonding (triplet):** $E_{\text{triplet}} = 2E_{1s} + \frac{e^2}{R} + \frac{2J - 2K}{1 - S^2}$
+
+The equilibrium bond length is $R_e \approx 1.4\,a_0$ with binding energy $\sim 3.5$ eV (experiment: 4.75 eV).
+
+<details>
+<summary>Worked Example 10.1: Variational Estimate for Helium Ground State</summary>
+
+Use the trial function $\psi_{\text{trial}} = (Z_{\text{eff}}^3/\pi a_0^3)\exp(-Z_{\text{eff}}r_1/a_0)\exp(-Z_{\text{eff}}r_2/a_0)$ where $Z_{\text{eff}}$ is a variational parameter.
+
+The energy expectation value (treating the electron-electron repulsion as a perturbation):
+
+$$E(Z_{\text{eff}}) = 2\times\frac{Z_{\text{eff}}^2}{2}\text{Ry} - 2\times\frac{Z_{\text{eff}} Z}{1}\text{Ry} + \frac{5}{8}Z_{\text{eff}}\text{Ry}$$
+
+$$= \left(Z_{\text{eff}}^2 - 4Z_{\text{eff}} + \frac{5}{4}Z_{\text{eff}}\right)\text{Ry} = \left(Z_{\text{eff}}^2 - \frac{11}{4}Z_{\text{eff}}\right)\text{Ry}$$
+
+Minimising: $\partial E/\partial Z_{\text{eff}} = (2Z_{\text{eff}} - 11/4) = 0 \implies Z_{\text{eff}} = 11/8 = 1.375$.
+
+$$E = \left(\frac{121}{64} - \frac{121}{32}\right)\text{Ry} = -\frac{121}{64}\text{Ry} = -2.848\text{Ry} = -77.5\ \text{eV}$$
+
+The exact (non-relativistic) ground state energy is $-79.0$ eV, so the variational result is within 2%.
+
+The effective charge $Z_{\text{eff}} = 1.375 < 2$ reflects the screening of the nuclear charge by the other electron: each electron partially shields the nucleus from the other, reducing the effective charge from $Z = 2$ to $Z_{\text{eff}} \approx 1.375$.
+
+</details>
+
+## 11. Time-Dependent Perturbation Theory
+
+### 11.1 Fermi's Golden Rule
+
+For a time-dependent perturbation $\hat{V}(t) = \hat{V}\,e^{-i\omega t}$ applied to an initial state $|i\rangle$, the transition rate to a continuum of final states $|f\rangle$ is:
+
+$$\Gamma_{i \to f} = \frac{2\pi}{\hbar}|\langle f|\hat{V}|i\rangle|^2\rho(E_f)$$
+
+where $\rho(E_f)$ is the density of final states at energy $E_f = E_i + \hbar\omega$.
+
+**Derivation.** Using first-order time-dependent perturbation theory, the transition amplitude to state $|f\rangle$ is:
+
+$$c_f(t) = -\frac{i}{\hbar}\int_0^t \langle f|\hat{V}|i\rangle\,e^{i\omega_{fi}t'}\, dt'$$
+
+For a sinusoidal perturbation at frequency $\omega$:
+
+$$|c_f|^2 = \frac{|\langle f|\hat{V}|i\rangle|^2}{\hbar^2}\frac{\sin^2[(\omega_{fi} - \omega)t/2]}{(\omega_{fi} - \omega)^2/4}$$
+
+In the long-time limit, $\sin^2(xt)/x^2 \to 2\pi t\,\delta(x)$, giving:
+
+$$\frac{|c_f|^2}{t} = \frac{2\pi}{\hbar^2}|\langle f|\hat{V}|i\rangle|^2\,\delta(E_f - E_i - \hbar\omega)$$
+
+Summing over all final states with density $\rho(E_f)$:
+
+$$\Gamma = \int \frac{d|c_f|^2}{dt}\,\rho(E_f)\,dE_f = \frac{2\pi}{\hbar}|\langle f|\hat{V}|i\rangle|^2\rho(E_f) \quad \blacksquare$$
+
+### 11.2 Selection Rules for Electric Dipole Transitions
+
+The electric dipole matrix element:
+
+$$\langle f|\hat{\mathbf{d}}|i\rangle = -e\langle f|\mathbf{r}|i\rangle$$
+
+For hydrogen-like atoms, the selection rules are:
+
+- $\Delta l = \pm 1$ (parity change required)
+- $\Delta m = 0, \pm 1$ (for $z$, $x \pm iy$ polarisation respectively)
+- $\Delta n$ unrestricted
+
+The transition rate for $2p \to 1s$ in hydrogen:
+
+$$A_{2p \to 1s} = \frac{\omega^3}{3\pi\varepsilon_0\hbar c^3}|\langle 1s|e\mathbf{r}|2p\rangle|^2$$
+
+With $|\langle 1s|z|2p, m=0\rangle| = \frac{2^7\sqrt{2}}{3^5}a_0$, this gives $A_{2p \to 1s} \approx 6.3 \times 10^8$ s$^{-1}$, corresponding to a lifetime $\tau \approx 1.6$ ns.
+
+### 11.3 Spontaneous Emission and Einstein Coefficients
+
+The **Einstein $A$ coefficient** (spontaneous emission rate) is related to the $B$ coefficient (stimulated emission/absorption):
+
+$$A_{21} = \frac{\hbar\omega^3}{\pi^2 c^3}B_{21}$$
+
+This relation, derived by Einstein in 1917 using thermodynamic arguments (detailed balance in a blackbody radiation field), was one of the first indications that spontaneous emission requires quantum electrodynamics.
+
+<details>
+<summary>Worked Example 11.1: Selection Rules for Hydrogen</summary>
+
+Consider the transition $3d \to 1s$ in hydrogen. Is this an allowed E1 transition?
+
+The matrix element involves the integral $\langle n'l'm'|\mathbf{r}|nlm\rangle = \langle 1,0,0|r_q|3,2,m\rangle$ where $r_q$ is a spherical tensor component.
+
+By the Wigner--Eckart theorem and parity selection rules:
+- $\Delta l = 0 - 2 = -2 \neq \pm 1$: **forbidden for E1**
+
+The $3d \to 1s$ transition can proceed via:
+- **E2 (electric quadrupole):** $\Delta l = 0, \pm 2$, rate $\sim \alpha(kR)^2$ times slower than E1
+- **M1 (magnetic dipole):** requires $\Delta l = 0$, not applicable here
+- **Two-photon decay:** $3d \to 2p \to 1s$ (two successive E1 transitions)
+
+The $3d \to 2p$ transition ($\Delta l = -1$) is E1-allowed and dominates, with $A_{3d \to 2p} \sim 6.4 \times 10^7$ s$^{-1}$.
+
+</details>
+
+## 12. Scattering Theory
+
+### 12.1 Partial Wave Analysis
+
+For a spherically symmetric potential $V(r)$, the scattering amplitude can be expanded in partial waves:
+
+$$f(\theta) = \frac{1}{2ik}\sum_{l=0}^{\infty}(2l + 1)(e^{2i\delta_l} - 1)P_l(\cos\theta) = \frac{1}{k}\sum_{l=0}^{\infty}(2l + 1)e^{i\delta_l}\sin\delta_l\,P_l(\cos\theta)$$
+
+where $\delta_l$ is the phase shift for partial wave $l$.
+
+**Optical theorem:**
+
+$$\sigma_{\text{total}} = \frac{4\pi}{k}\,\text{Im}\,f(0) = \frac{4\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)\sin^2\delta_l$$
+
+**Partial wave unitarity bound:** $\sin^2\delta_l \leq 1$, so the maximum contribution of partial wave $l$ to the cross section is:
+
+$$\sigma_l^{\max} = \frac{4\pi}{k^2}(2l + 1)$$
+
+### 12.2 The Born Approximation
+
+For a weak potential, the scattering amplitude to first order is:
+
+$$f(\theta, \phi) \approx -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{k}'\cdot\mathbf{r}'}V(\mathbf{r}')\,d^3r'$$
+
+where $\mathbf{k}'$ is the scattered wave vector and $\mathbf{q} = \mathbf{k}' - \mathbf{k}$ is the momentum transfer.
+
+For the Yukawa potential $V(r) = (V_0/r)e^{-\mu r}$:
+
+$$f(\theta) = -\frac{2m V_0}{\hbar^2(\mu^2 + q^2)}, \quad q = 2k\sin(\theta/2)$$
+
+Setting $\mu = 0$ (Coulomb potential), this reproduces the Rutherford scattering formula.
+
+### 12.3 Resonance Scattering
+
+When the scattering energy is near a quasi-bound state, the phase shift passes through $\pi/2$ (resonance):
+
+$$\delta_l(E) \approx \delta_{\text{bg}} + \arctan\!\left(\frac{\Gamma/2}{E_R - E}\right)$$
+
+where $E_R$ is the resonance energy and $\Gamma$ is the width. The cross section has the Breit--Wigner form:
+
+$$\sigma_l(E) = \frac{4\pi}{k^2}(2l+1)\frac{(\Gamma/2)^2}{(E - E_R)^2 + (\Gamma/2)^2}$$
+
+At resonance ($E = E_R$): $\sigma_l^{\max} = \frac{4\pi}{k^2}(2l+1)$ (unitarity limit).
+
+<details>
+<summary>Worked Example 12.1: Low-Energy Scattering and Scattering Length</summary>
+
+For $s$-wave scattering ($l = 0$) at low energy ($ka \ll 1$), only the $l = 0$ phase shift contributes:
+
+$$\sigma \approx \frac{4\pi}{k^2}\sin^2\delta_0 \approx 4\pi a_s^2$$
+
+where the **scattering length** $a_s$ is defined by $k\cot\delta_0 \to -1/a_s$ as $k \to 0$.
+
+For a hard sphere of radius $a$: $\delta_0 = -ka$ (exact), giving $a_s = a$ and $\sigma = 4\pi a^2$ (four times the geometric cross section $\pi a^2$ --- a purely quantum result).
+
+For the $^3$He--$^4$He system: $a_s \approx 1.4$ nm (positive, indicating a repulsive effective potential). For the neutron--proton system (triplet): $a_s \approx 5.4$ fm (positive, with a bound state --- the deuteron). For singlet: $a_s \approx -23.7$ fm (negative, indicating a virtual state).
+
+</details>
+
+<details>
+<summary>Worked Example 12.2: Born Approximation for a Gaussian Potential</summary>
+
+Consider $V(r) = V_0\,e^{-r^2/(2a^2)}$.
+
+$$f(\theta) = -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{q}\cdot\mathbf{r}}V_0 e^{-r^2/(2a^2)}\,d^3r$$
+
+$$= -\frac{m V_0}{2\pi\hbar^2}(2\pi a^2)^{3/2}e^{-q^2 a^2/2} = -\frac{m V_0}{\hbar^2}(2\pi)^{1/2}a^3\,e^{-2k^2a^2\sin^2(\theta/2)}$$
+
+The total cross section:
+
+$$\sigma = \int |f|^2\,d\Omega = 2\pi\int_0^\pi |f|^2\sin\theta\,d\theta$$
+
+At low energy ($ka \ll 1$): $f \approx -\frac{mV_0}{\hbar^2}(2\pi)^{1/2}a^3$ (independent of $\theta$), giving:
+
+$$\sigma \approx 4\pi\left(\frac{mV_0}{\hbar^2}\right)^2 2\pi\,a^6 = \frac{8\pi^2 m^2 V_0^2 a^6}{\hbar^4}$$
+
+The Born approximation is valid when $|V_0| \ll \hbar^2/(ma^2)$, i.e., the potential is weak compared to the kinetic energy associated with the length scale $a$.
+
+</details>
+
+## Common Pitfalls (Additional)
+
+1. **Symmetrisation applies to the full wavefunction:** For fermions, the overall wavefunction (spatial $\otimes$ spin $\otimes$ any other degrees of freedom) must be antisymmetric. A symmetric spatial part requires an antisymmetric spin part (singlet), and vice versa. Do not apply (anti)symmetrisation to spatial and spin parts separately without ensuring the correct combined symmetry.
+
+2. **The variational principle gives an upper bound:** $E_{\text{trial}} \geq E_0$ always. If you obtain a variational energy lower than the known exact ground state energy, you have made an error in the calculation (wrong normalisation, incorrect matrix element, or the trial function is not in the correct Hilbert space).
+
+3. **Fermi's Golden Rule applies to transitions to a continuum:** For transitions to discrete states, use the Rabi formula instead. The density of states $\rho(E_f)$ is essential --- if it is zero, the transition rate is zero regardless of the matrix element.
+
+4. **The Born approximation assumes a weak potential:** The condition is $m|V_0|a/\hbar^2 \ll 1$ where $a$ is the range of the potential. For strong potentials (like the nuclear potential or hard spheres), the Born approximation gives qualitatively wrong results. Use partial wave analysis instead.
+
+5. **Resonances require careful treatment:** Near a resonance, perturbation theory breaks down. The Breit--Wigner formula is non-perturbative in the width $\Gamma$. The scattering length can be much larger than the range of the potential near a resonance (the unitarity limit).
+
+## Problems (Additional)
+
+<details>
+<summary>Problem 19: Exchange Energy in Lithium</summary>
+
+Lithium ($Z = 3$) has the electron configuration $1s^2 2s^1$. Using the variational method with $Z_{\text{eff}}$ for the $1s$ electrons:
+
+(a) Calculate $Z_{\text{eff}}$ for the $1s$ electrons, treating the $2s$ electron as a perturbation.
+
+(b) Calculate the ionisation energy (removing the $2s$ electron) and compare with the experimental value of 5.39 eV.
+
+(c) Explain why the $2s$ electron is effectively screened by $Z_{\text{eff}} \approx 1.26$.
+
+**Solution:**
+
+(a) For the $1s$ electrons, the effective charge is reduced from $Z = 3$ by screening from the other $1s$ electron and partial penetration of the $2s$ electron. The $1s$ electrons screen each other partially: using the helium result, $Z_{\text{eff}}(1s) \approx Z - 5/16 = 3 - 0.3125 = 2.69$.
+
+(b) The $2s$ electron sees an effective nuclear charge of $Z_{\text{eff}}(2s) \approx 3 - 2 \times 0.85 = 1.3$ (Slater's rules). The energy:
+
+$$E_{2s} = -\frac{Z_{\text{eff}}^2}{n^2}\times 13.6\ \text{eV} = -\frac{1.3^2}{4}\times 13.6 = -\frac{1.69}{4}\times 13.6 = -5.75\ \text{eV}$$
+
+The ionisation energy is $|E_{2s}| = 5.75$ eV, close to the experimental 5.39 eV. The discrepancy reflects the crudeness of the Slater screening constants.
+
+(c) The $2s$ electron has significant radial extent beyond the $1s$ core, so it sees a nearly bare nuclear charge at small $r$ but is screened by both $1s$ electrons at large $r$. The effective charge $Z_{\text{eff}} \approx 1.26$ (using Hartree--Fock) represents this average screening.
+
+</details>
+
+<details>
+<summary>Problem 20: Partial Wave Analysis for Square Well</summary>
+
+Consider scattering from the attractive square well $V(r) = -V_0$ for $r < a$ and $V(r) = 0$ for $r > a$.
+
+(a) Show that the $s$-wave phase shift satisfies:
+
+$$\delta_0 = -ka + \arctan\!\left(\frac{k}{\kappa}\tan(\kappa a)\right)$$
+
+where $\kappa = \sqrt{2m(V_0 + E)}/\hbar$ and $k = \sqrt{2mE}/\hbar$.
+
+(b) Show that a bound state exists at energy $E = -|E|$ when $\kappa_0 a = \pi/2$ where $\kappa_0 = \sqrt{2m(V_0 - |E|)}/\hbar$.
+
+(c) Show that the scattering length diverges as a new bound state appears.
+
+**Solution:**
+
+(a) Inside the well ($r < a$), the radial wavefunction for $l = 0$ is $u(r) = A\sin(\kappa r)$. Outside ($r > a$), $u(r) = B\sin(kr + \delta_0)$.
+
+Matching $u$ and $u'$ at $r = a$:
+
+$$\kappa\cos(\kappa a) = k\cos(ka + \delta_0)/\sin(ka + \delta_0)\cdot k$$
+
+Wait: $\kappa\cot(\kappa a) = k\cot(ka + \delta_0)$.
+
+$$\cot(ka + \delta_0) = \frac{\kappa}{k}\cot(\kappa a)$$
+
+$$ka + \delta_0 = \arccot\!\left(\frac{\kappa}{k}\cot(\kappa a)\right) = \arctan\!\left(\frac{k}{\kappa}\tan(\kappa a)\right)$$
+
+$$\delta_0 = -ka + \arctan\!\left(\frac{k}{\kappa}\tan(\kappa a)\right)$$
+
+(b) A bound state has $E < 0$, so $k = i\kappa'$ where $\kappa' = \sqrt{2m|E|}/\hbar$. The bound state condition is that the exterior solution decays exponentially: $u(r) = Be^{-\kappa' r}$. Matching:
+
+$$\kappa\cot(\kappa a) = -\kappa'$$
+
+As $|E| \to 0$: $\kappa' \to 0$, so $\kappa\cot(\kappa a) \to 0$, giving $\kappa a = \pi/2$ (the threshold for the first bound state).
+
+(c) The scattering length $a_s = -\lim_{k \to 0}(\delta_0/k)$. As $\kappa a \to \pi/2$, $\tan(\kappa a) \to \infty$, so:
+
+$$\delta_0 \approx -ka + \arctan(\infty) = -ka + \pi/2$$
+
+$$a_s = -\frac{1}{k}\left(-ka + \frac{\pi}{2}\right) = a - \frac{\pi}{2k}$$
+
+As $k \to 0$: $a_s \to \pm\infty$ (diverges), changing sign as the bound state appears.
+
+</details>
+
+## 13. WKB Approximation
+
+### 13.1 The WKB Method
+
+The WKB (Wentzel--Kramers--Brillouin) method provides approximate solutions to the one-dimensional Schrodinger equation when the potential varies slowly compared to the de Broglie wavelength.
+
+The ansatz $\psi(x) = A(x)e^{iS(x)/\hbar}$ substituted into $-\frac{\hbar^2}{2m}\psi'' + V\psi = E\psi$ gives, to leading order in $\hbar$:
+
+$$S(x) = \pm\int^x p(x')\,dx', \quad p(x) = \sqrt{2m[E - V(x)]}$$
+
+The WKB wavefunctions:
+
+$$\psi(x) \approx \frac{C}{\sqrt{p(x)}}\exp\!\left(\pm\frac{i}{\hbar}\int^x p(x')\,dx'\right) \quad \text{(classically allowed, } E > V\text{)}$$
+
+$$\psi(x) \approx \frac{C}{\sqrt{|p(x)|}}\exp\!\left(\pm\frac{1}{\hbar}\int^x |p(x')|\,dx'\right) \quad \text{(classically forbidden, } E < V\text{)}$$
+
+### 13.2 Connection Formulas
+
+At a classical turning point ($E = V(x_0)$), the WKB approximation breaks down. The Airy function connects the oscillating and decaying solutions:
+
+$$\frac{2}{\sqrt{p(x)}}\cos\!\left(\frac{1}{\hbar}\int_x^{x_0} p(x')\,dx' - \frac{\pi}{4}\right) \longleftrightarrow \frac{1}{\sqrt{|p(x)|}}\exp\!\left(-\frac{1}{\hbar}\int_{x_0}^x |p(x')|\,dx'\right)$$
+
+### 13.3 Bohr--Sommerfeld Quantisation
+
+The WKB quantisation condition for a bound state in a potential well with turning points $a$ and $b$:
+
+$$\int_a^b p(x)\,dx = \left(n + \frac{1}{2}\right)\pi\hbar, \quad n = 0, 1, 2, \ldots$$
+
+The factor of $1/2$ (Maslov index) accounts for the phase loss at each turning point.
+
+**Application: Harmonic oscillator.** $V(x) = \frac{1}{2}m\omega^2 x^2$. Turning points at $x = \pm\sqrt{2E/(m\omega^2)}$.
+
+$$\int_{-A}^{A}\sqrt{2mE - m^2\omega^2 x^2}\,dx = \frac{\pi E}{\omega} = \left(n + \frac{1}{2}\right)\pi\hbar$$
+
+$$E_n = \left(n + \frac{1}{2}\right)\hbar\omega$$
+
+The WKB gives the exact result for the harmonic oscillator --- a fortunate coincidence due to the quadratic potential.
+
+**Application: Power-law potential.** For $V(x) = V_0|x/a|^\alpha$:
+
+$$E_n \propto \left(n + \frac{1}{2}\right)^{2\alpha/(\alpha+2)}$$
+
+<details>
+<summary>Worked Example 13.1: WKB Tunnelling Through a Barrier</summary>
+
+For a potential barrier $V(x) = V_0(1 - x^2/a^2)$ for $|x| < a$, with $E < V_0$, the WKB transmission probability is:
+
+$$T \approx \exp\!\left(-\frac{2}{\hbar}\int_{-a_0}^{a_0}\sqrt{2m(V_0(1 - x^2/a^2) - E)}\,dx\right)$$
+
+where $a_0 = a\sqrt{1 - E/V_0}$ is the classical turning point.
+
+$$T \approx \exp\!\left(-\frac{2}{\hbar}\sqrt{2mV_0}\int_{-a_0}^{a_0}\sqrt{1 - E/V_0 - x^2/a^2}\,dx\right)$$
+
+$$= \exp\!\left(-\frac{2}{\hbar}\sqrt{2mV_0}\cdot\frac{\pi a^2}{2a}(1 - E/V_0)\right)$$
+
+$$= \exp\!\left(-\frac{\pi a}{\hbar}\sqrt{2mV_0}\left(1 - \frac{E}{V_0}\right)\right)$$
+
+For alpha decay ($V_0 \approx 25$ MeV, $a \approx 30$ fm, $E = 5$ MeV, $m = 4 \times 931.5$ MeV/$c^2$):
+
+$$\frac{\pi a}{\hbar c}\sqrt{2mc^2 V_0}\left(1 - \frac{E}{V_0}\right) = \frac{\pi \times 30\,\text{fm}}{197\,\text{MeV}\cdot\text{fm}}\sqrt{2 \times 3726 \times 25}\times 0.8$$
+
+$$= 0.479 \times 432.6 \times 0.8 = 165.7$$
+
+$$T \approx e^{-165.7} \approx 5 \times 10^{-73}$$
+
+This extremely small probability explains the enormously long half-lives of alpha-emitting nuclei ($\sim 10^9$ years for $^{238}$U). The Geiger--Nuttall law relates $\log T_{1/2}$ to $E^{-1/2}$, consistent with the WKB exponential dependence.
+
+</details>
+
+## 14. Density Functional Theory: Conceptual Overview
+
+### 14.1 The Hohenberg--Kohn Theorems
+
+**Theorem 1:** The ground-state electron density $n(\mathbf{r})$ uniquely determines the external potential $V_{\text{ext}}(\mathbf{r})$ (up to an additive constant), and hence the full many-body Hamiltonian and all ground-state properties.
+
+**Theorem 2:** The ground-state energy is a functional of the density: $E[n] = F_{\text{HK}}[n] + \int V_{\text{ext}}(\mathbf{r})n(\mathbf{r})\,d^3r$, and the variational principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{r})$.
+
+### 14.2 Kohn--Sham Equations
+
+The interacting system is mapped to a fictitious system of non-interacting electrons in an effective potential:
+
+$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\text{eff}}[n](\mathbf{r})\right]\psi_i(\mathbf{r}) = \varepsilon_i\psi_i(\mathbf{r})$$
+
+$$n(\mathbf{r}) = \sum_{i=1}^{N}|\psi_i(\mathbf{r})|^2 \quad \text{(summing over occupied states)}$$
+
+$$V_{\text{eff}} = V_{\text{ext}} + V_H[n] + V_{\text{xc}}[n]$$
+
+$$V_H[n](\mathbf{r}) = e^2\int\frac{n(\mathbf{r}')}{|\mathbf{r} - \mathbf{r}'|}\,d^3r' \quad \text{(Hartree potential)}$$
+
+The exchange-correlation functional $V_{\text{xc}}[n]$ contains all many-body effects beyond the classical Hartree approximation.
+
+### 14.3 Self-Interaction Error
+
+The Hartree potential includes the interaction of each electron with itself. This **self-interaction error** is not cancelled by the local density approximation (LDA) for $V_{\text{xc}}$. Consequences:
+
+- Wrong asymptotic behaviour: $V_{\text{eff}}(r \to \infty) \to -e^2/r$ (correct) vs. $V_{\text{eff}} \to 0$ (LDA, wrong)
+- Underestimation of band gaps by 30--50\%
+- Incorrect description of charge transfer excitations
+
+Hybrid functionals (e.g., B3LYP, HSE06) and range-separated functionals partially correct this.
+
+<details>
+<summary>Worked Example 14.1: Thomas--Fermi Theory</summary>
+
+The simplest density functional theory: the Thomas--Fermi model treats the kinetic energy as a local functional of the density:
+
+$$T_{\text{TF}}[n] = \frac{3\hbar^2}{10m}(3\pi^2)^{2/3}\int n^{5/3}(\mathbf{r})\,d^3r = C_{\text{TF}}\int n^{5/3}\,d^3r$$
+
+For an atom with nuclear charge $Ze$, minimising $E[n] = T_{\text{TF}}[n] - Ze^2\int n(\mathbf{r})/r\,d^3r + \frac{1}{2}e^2\iint n(\mathbf{r})n(\mathbf{r}')/|\mathbf{r}-\mathbf{r}'|\,d^3rd^3r'$:
+
+The variational equation gives:
+
+$$C_{\text{TF}}\,n^{2/3} = \frac{Ze^2}{r} - e^2\int\frac{n(\mathbf{r}')}{|\mathbf{r}-\mathbf{r}'|}\,d^3r'$$
+
+This integral equation can be solved by scaling: $n(r) = (Z/a_0^3)\,g(r/a_0 Z^{-1/3})$ where $g$ is a universal function.
+
+The Thomas--Fermi energy: $E_{\text{TF}} = -\frac{3}{7}(9\pi/2)^{2/3}\frac{Z^{7/3}e^2}{2a_0} = -20.8\,Z^{7/3}$ eV.
+
+This gives reasonable total energies for heavy atoms but fails qualitatively for light atoms (no shell structure, no chemical bonding).
+
+</details>

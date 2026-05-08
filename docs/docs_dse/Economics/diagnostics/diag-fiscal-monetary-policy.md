@@ -237,3 +237,95 @@ New trade balance $= 384 - 530 = -\text{HK\$}146$ billion. The deficit **widens*
 4. **Forgetting the impossible trinity:** Under a fixed exchange rate with free capital mobility, monetary policy is not independent. Students often prescribe interest rate changes for Hong Kong without recognising the Currency Board constraint.
 
 5. **Assuming the full multiplier materialises:** Time lags (recognition lag, decision lag, implementation lag, impact lag), crowding out, and behavioural responses mean the actual multiplier is typically 30--50% of the theoretical maximum in empirical studies.
+
+## Additional DSE Exam-Style Questions
+
+### EQ-7: Laffer Curve and Optimal Taxation
+
+**Question:** The government of Country A currently levies a flat income tax rate of 30%. Taxable income before tax is $\$500$ billion. Empirical research suggests that the taxable income elasticity (the percentage change in taxable income in response to a 1% change in the net-of-tax rate) is 0.4. (a) Calculate current tax revenue. (b) If the government increases the tax rate to 35%, calculate the new tax revenue. Does the Laffer curve predict that this will increase or decrease revenue? (c) Calculate the revenue-maximising tax rate. (d) Explain why the revenue-maximising tax rate is not the optimal tax rate from a welfare perspective.
+
+**Solution:**
+
+(a) Current tax revenue $= 0.30 \times 500 = \$150$ billion.
+
+(b) The net-of-tax rate falls from $1 - 0.30 = 0.70$ to $1 - 0.35 = 0.65$. This is a change of $\frac{0.65 - 0.70}{0.70} = -7.14\%$.
+
+Taxable income changes by: $0.4 \times (-7.14\%) = -2.86\%$.
+
+New taxable income $= 500 \times (1 - 0.0286) = \$485.7$ billion.
+
+New tax revenue $= 0.35 \times 485.7 = \$170.0$ billion.
+
+Tax revenue increases from $\$150$B to $\$170$B. The Laffer curve predicts that at a 30% tax rate, we are on the upward-sloping portion of the curve (below the revenue-maximising rate), so a tax rate increase still raises revenue.
+
+(c) The revenue-maximising tax rate is where $\frac{dR}{dt} = 0$. With a taxable income elasticity of $e = 0.4$:
+
+Revenue $R = t \times B(t)$, where $B(t)$ is the tax base.
+
+$\frac{dR}{dt} = B + t \times \frac{dB}{dt} = 0$.
+
+Using the elasticity formulation: $\frac{dB}{dt} = -\frac{e \times B}{1 - t}$.
+
+$B + t \times \frac{-eB}{1-t} = 0$. $1 - \frac{et}{1-t} = 0$. $1 - t = et$. $1 = t(e + 1)$. $t^* = \frac{1}{e + 1} = \frac{1}{1.4} = 71.4\%$.
+
+The revenue-maximising tax rate is approximately 71.4%.
+
+(d) The revenue-maximising tax rate is not optimal from a welfare perspective because: (i) at a 71.4% tax rate, the deadweight loss is enormous -- a large amount of economic activity is discouraged purely to raise revenue; (ii) the marginal cost of public funds (the welfare cost of raising an additional dollar of revenue) exceeds 1 at high tax rates, meaning each dollar of revenue costs society more than a dollar in welfare; (iii) high tax rates create incentives for tax avoidance and evasion, distorting economic decisions. The optimal tax rate balances the marginal benefit of government spending against the marginal deadweight loss of taxation. For most economies, this optimal rate is well below the revenue-maximising rate -- typically in the range of 30--50% for income taxes.
+
+### EQ-8: Phillips Curve and the Trade-off Between Inflation and Unemployment
+
+**Question:** An economy has the following Phillips curve: $\pi = \pi^e - 0.5(u - 5) + 0.1x$, where $\pi$ is inflation, $\pi^e$ is expected inflation, $u$ is the unemployment rate, and $x$ is a supply shock (0 in normal times). The natural rate of unemployment is 5%. (a) If expected inflation is 3% and actual unemployment is 5%, calculate the inflation rate. (b) If the government uses expansionary policy to reduce unemployment to 3%, calculate the inflation rate in the short run (assuming expectations are unchanged). (c) In the long run, expectations adjust. Calculate the long-run inflation rate if the government permanently maintains unemployment at 3%. (d) Explain why there is no long-run trade-off between inflation and unemployment.
+
+**Solution:**
+
+(a) $\pi = 3 - 0.5(5 - 5) + 0 = 3\%$. When unemployment equals the natural rate and there is no supply shock, inflation equals expected inflation (3%).
+
+(b) With $u = 3$: $\pi = 3 - 0.5(3 - 5) + 0 = 3 - 0.5(-2) = 3 + 1 = 4\%$.
+
+Inflation rises to 4%. The government achieves lower unemployment (3% vs 5%) at the cost of higher inflation (4% vs 3%). This is the short-run Phillips curve trade-off.
+
+(c) In the long run, expected inflation adjusts to actual inflation: $\pi^e = \pi$. Substituting $\pi^e = \pi$:
+
+$\pi = \pi - 0.5(3 - 5)$. $0 = -0.5(-2) = 1$. This is a contradiction.
+
+The correct long-run analysis: when expectations catch up, the short-run Phillips curve shifts up. In the long run, unemployment returns to the natural rate regardless of inflation. If the government tries to keep unemployment at 3%, it must continually generate accelerating inflation (the accelerationist hypothesis). The long-run Phillips curve is vertical at $u = 5\%$.
+
+The long-run inflation rate depends on the monetary policy stance (money supply growth). If the central bank accommodates the fiscal expansion by increasing the money supply, inflation will rise to whatever level is consistent with $u = 5\%$ on the long-run Phillips curve.
+
+(d) The long-run Phillips curve is vertical because in the long run, all prices and wages are flexible. Workers and firms adjust their expectations to the actual inflation rate. Nominal wages rise to match inflation, eliminating any real wage effect. The real wage returns to its equilibrium level, and unemployment returns to the natural rate. Any attempt to keep unemployment below the natural rate requires ever-increasing inflation (as expectations continuously catch up), which is unsustainable. This is the **natural rate hypothesis** (Friedman, 1968; Phelps, 1967).
+
+### EQ-9: Fiscal Policy and Automatic Stabilisers
+
+**Question:** An economy's tax system has a marginal tax rate of 25% and unemployment benefits that replace 40% of previous wages. The economy enters a recession: GDP falls from $\$1000$ billion to $\$900$ billion, and unemployment rises from 5% to 8%. There are 50 million workers, and the average wage is $\$50{,}000$. (a) Calculate the automatic change in tax revenue. (b) Calculate the automatic increase in unemployment benefit spending. (c) Calculate the automatic change in the budget balance. (d) Explain how automatic stabilisers work and why they are superior to discretionary fiscal policy.
+
+**Solution:**
+
+(a) GDP falls by $\$100$ billion. With a marginal tax rate of 25%, tax revenue falls by approximately $0.25 \times 100 = \$25$ billion. (This is approximate because it assumes the entire GDP decline is taxable income; in practice, some of the GDP decline is corporate profit and some is labour income with different tax treatments.)
+
+(b) Unemployment rises from 5% to 8%, an increase of 3 percentage points. New unemployed workers $= 0.03 \times 50{,}000{,}000 = 1{,}500{,}000$.
+
+Annual unemployment benefit per worker $= 0.40 \times 50{,}000 = \$20{,}000$.
+
+Increase in unemployment benefit spending $= 1{,}500{,}000 \times 20{,}000 = \$30$ billion.
+
+(c) Automatic change in budget balance $= -25 \text{ (revenue loss)} - 30 \text{ (spending increase)} = -\$55$ billion.
+
+The budget deficit automatically widens by $\$55$ billion. This is an automatic stabiliser: the deficit provides stimulus without any deliberate government action.
+
+(d) **How automatic stabilisers work:** During a recession, falling incomes reduce tax revenue (progressive tax system means tax revenue falls faster than income) and rising unemployment increases transfer payments (unemployment benefits, welfare). These automatic changes in the budget balance partially offset the decline in aggregate demand, cushioning the recession. During a boom, the reverse happens: rising incomes increase tax revenue and falling unemployment reduces transfers, cooling the economy.
+
+**Why they are superior to discretionary policy:**
+1. **No time lag:** Automatic stabilisers respond immediately to economic conditions, whereas discretionary policy involves recognition lags, decision lags, and implementation lags (potentially 12--18 months).
+2. **No political bias:** Automatic stabilisers are built into the tax and transfer system and operate without political negotiation. Discretionary policy is subject to political considerations (elections, lobbying) that may delay or distort the response.
+3. **Counter-cyclical by design:** They automatically provide stimulus during recessions and restraint during booms, without requiring policymakers to correctly identify the phase of the business cycle.
+4. **Predictable:** Firms and households can anticipate the automatic stabiliser effects, reducing uncertainty.
+
+**Limitation:** The magnitude of automatic stabilisers is limited by the tax rate and benefit structure. A country with low tax rates and limited social benefits (like Hong Kong) has weaker automatic stabilisers than a European welfare state.
+
+## Additional Common Pitfalls
+
+6. **Confusing the budget deficit with the national debt:** The budget deficit is a *flow* (the annual shortfall of revenue over spending). The national debt is a *stock* (the accumulated total of all past deficits minus surpluses). A country can have a large debt but a small deficit (or even a surplus), and vice versa. In DSE questions, read carefully whether the question asks about the deficit or the debt.
+
+7. **Applying the multiplier formula without checking the conditions:** The simple multiplier $\frac{1}{1-MPC}$ assumes: (i) no taxation, (ii) no imports, (iii) no capacity constraints (the economy has spare resources), (iv) constant prices. If any of these conditions fail, the actual multiplier is smaller. In an economy at full employment, the multiplier is approximately zero because output cannot increase; the only effect is higher prices.
+
+8. **Assuming monetary policy is equally effective across exchange rate regimes:** Under a fixed exchange rate (like Hong Kong's Currency Board), monetary policy is not independent. Under a floating exchange rate, monetary policy affects the economy through the interest rate channel, the exchange rate channel, and the asset price channel. The relative importance of these channels depends on the economy's openness (the Mundell-Fleming model). For a small open economy with a floating exchange rate, the exchange rate channel may dominate, potentially weakening the domestic effect of monetary policy.

@@ -1851,3 +1851,444 @@ This is the Ampere-Maxwell law. $\blacksquare$
 *Cross-reference:* Section 7.4, Section 1.1.
 
 </details>
+
+## 9. Waveguides and Cavities
+
+### 9.1 Rectangular Waveguides
+
+A rectangular waveguide with dimensions $a$ (width) and $b$ (height) supports electromagnetic waves propagating in the $z$-direction. Two families of modes exist: **TE** (transverse electric, $E_z = 0$) and **TM** (transverse magnetic, $B_z = 0$).
+
+**TE$_{mn}$ modes.** The longitudinal field is $B_z = B_0\cos(m\pi x/a)\cos(n\pi y/b)\,e^{i(kz-\omega t)}$.
+
+The transverse fields are determined from $B_z$ via:
+
+$$E_x = \frac{i\omega}{k_c^2}\frac{\partial B_z}{\partial y}, \quad E_y = -\frac{i\omega}{k_c^2}\frac{\partial B_z}{\partial x}$$
+
+$$B_x = \frac{-ik}{k_c^2}\frac{\partial B_z}{\partial x}, \quad B_y = \frac{-ik}{k_c^2}\frac{\partial B_z}{\partial y}$$
+
+where $k_c^2 = (m\pi/a)^2 + (n\pi/b)^2$ is the cutoff wavenumber.
+
+**Cutoff frequency:** Waves propagate only when $\omega > \omega_{c,mn}$ where:
+
+$$f_{c,mn} = \frac{c}{2}\sqrt{\left(\frac{m}{a}\right)^2 + \left(\frac{n}{b}\right)^2}$$
+
+The dominant (lowest frequency) mode is TE$_{10}$ with $f_{c,10} = c/(2a)$ (for $a > b$).
+
+**Dispersion relation:**
+
+$$k = \sqrt{\frac{\omega^2}{c^2} - k_c^2}, \quad v_{\text{phase}} = \frac{\omega}{k} = \frac{c}{\sqrt{1 - (\omega_c/\omega)^2}} > c$$
+
+$$v_{\text{group}} = \frac{d\omega}{dk} = c\sqrt{1 - \left(\frac{\omega_c}{\omega}\right)^2} < c$$
+
+The product $v_p \cdot v_g = c^2$.
+
+### 9.2 Waveguide Impedance and Power Flow
+
+The wave impedance for TE modes:
+
+$$Z_{\text{TE}} = \frac{E_x}{H_y} = \frac{\omega\mu_0}{k} = \frac{Z_0}{\sqrt{1 - (f_c/f)^2}}$$
+
+where $Z_0 = \sqrt{\mu_0/\varepsilon_0} \approx 377\,\Omega$ is the impedance of free space.
+
+The time-averaged power carried by TE$_{10}$ mode:
+
+$$\langle P \rangle = \frac{ab}{4}E_0^2\frac{\beta}{\omega\mu_0} = \frac{ab}{4Z_{\text{TE}}}E_0^2$$
+
+where $\beta = k$ is the propagation constant and $E_0$ is the peak electric field.
+
+### 9.3 Resonant Cavities
+
+A rectangular cavity of dimensions $a \times b \times d$ supports standing waves at resonant frequencies:
+
+$$f_{mnp} = \frac{c}{2}\sqrt{\left(\frac{m}{a}\right)^2 + \left(\frac{n}{b}\right)^2 + \left(\frac{p}{d}\right)^2}$$
+
+where $m, n, p$ are non-negative integers (not all zero). For TM modes, $p \geq 1$; for TE modes, $m$ and $n$ cannot both be zero.
+
+**Quality factor:**
+
+$$Q = \frac{\omega \times \text{energy stored}}{\text{power dissipated}} = \frac{2\pi \times \text{energy stored}}{\text{energy lost per cycle}}$$
+
+For a cavity with conducting walls of conductivity $\sigma$:
+
+$$Q \approx \frac{V}{S\,\delta} \cdot \frac{3}{2}$$
+
+where $V$ is the cavity volume, $S$ is the surface area, and $\delta$ is the skin depth.
+
+<details>
+<summary>Worked Example 9.1: X-Band Waveguide</summary>
+
+Standard X-band waveguide (WR-90) has $a = 22.86$ mm, $b = 10.16$ mm.
+
+(a) Cutoff frequency of TE$_{10}$ mode:
+
+$$f_{c,10} = \frac{c}{2a} = \frac{3 \times 10^8}{2 \times 22.86 \times 10^{-3}} = \frac{3 \times 10^8}{4.572 \times 10^{-2}} = 6.56\ \text{GHz}$$
+
+(b) At $f = 10$ GHz (within X-band), is TE$_{10}$ the only propagating mode?
+
+Cutoff of TE$_{01}$: $f_{c,01} = c/(2b) = 3 \times 10^8/(2 \times 10.16 \times 10^{-3}) = 14.76$ GHz.
+
+Cutoff of TE$_{20}$: $f_{c,20} = c/a = 13.12$ GHz.
+
+Since $6.56 < 10 < 13.12$ GHz, only TE$_{10}$ propagates. This single-mode operation is essential for low-loss, distortion-free signal transmission.
+
+(c) Guide wavelength at 10 GHz:
+
+$$\lambda_g = \frac{\lambda}{\sqrt{1 - (f_c/f)^2}} = \frac{30\ \text{mm}}{\sqrt{1 - (6.56/10)^2}} = \frac{30}{\sqrt{1 - 0.430}} = \frac{30}{0.755} = 39.7\ \text{mm}$$
+
+(d) Phase and group velocities:
+
+$$v_p = \frac{c}{\sqrt{1 - (f_c/f)^2}} = \frac{3 \times 10^8}{0.755} = 3.97 \times 10^8\ \text{m/s} = 1.32\,c$$
+
+$$v_g = c\sqrt{1 - (f_c/f)^2} = 3 \times 10^8 \times 0.755 = 2.27 \times 10^8\ \text{m/s} = 0.756\,c$$
+
+Check: $v_p \times v_g = 1.32c \times 0.756c = c^2$. $\checkmark$
+
+</details>
+
+## 10. Radiation from Accelerating Charges
+
+### 10.1 Larmor Formula
+
+A non-relativistic charge $q$ undergoing acceleration $\mathbf{a}$ radiates power:
+
+$$P = \frac{q^2 a^2}{6\pi\varepsilon_0 c^3}$$
+
+For an oscillating dipole $\mathbf{p} = q\mathbf{d}\cos\omega t$ with acceleration $a = \omega^2 d$:
+
+$$P = \frac{q^2 \omega^4 d^2}{12\pi\varepsilon_0 c^3} = \frac{\omega^4 p_0^2}{12\pi\varepsilon_0 c^3}$$
+
+where $p_0 = qd$ is the dipole moment amplitude.
+
+**Radiation resistance:** Equating $P = \frac{1}{2}I_0^2 R_{\text{rad}}$ for an antenna of length $\ell$ carrying current $I_0$ at frequency $\omega$:
+
+$$R_{\text{rad}} = \frac{\mu_0 c}{6\pi}\left(\frac{\omega \ell}{c}\right)^2 = \frac{\pi}{6}Z_0\left(\frac{\ell}{\lambda}\right)^2 \approx 197\left(\frac{\ell}{\lambda}\right)^2\ \Omega$$
+
+### 10.2 Electric Dipole Radiation
+
+The radiation fields from an oscillating electric dipole at distance $r \gg \lambda$:
+
+$$\mathbf{E} = -\frac{\mu_0 \omega^2 p_0}{4\pi r}\sin\theta\, e^{i(kr - \omega t)}\,\hat{\boldsymbol{\theta}}$$
+
+$$\mathbf{B} = -\frac{\mu_0 \omega^2 p_0}{4\pi c\, r}\sin\theta\, e^{i(kr - \omega t)}\,\hat{\boldsymbol{\phi}}$$
+
+The angular distribution of radiated power:
+
+$$\frac{dP}{d\Omega} = \frac{\mu_0 p_0^2 \omega^4}{32\pi^2 c}\sin^2\theta$$
+
+The total power (integrating over solid angle):
+
+$$P = \frac{\mu_0 p_0^2 \omega^4}{12\pi c}$$
+
+The radiation pattern is toroidal (doughnut-shaped), with zero radiation along the dipole axis ($\theta = 0, \pi$) and maximum in the equatorial plane ($\theta = \pi/2$).
+
+### 10.3 Relativistic Radiation: Liénard--Wiechert Potentials
+
+For a relativistic charge with velocity $\boldsymbol{\beta} = \mathbf{v}/c$ and acceleration $\dot{\boldsymbol{\beta}}$:
+
+$$P = \frac{q^2}{6\pi\varepsilon_0 c}\gamma^6\left[(\dot{\boldsymbol{\beta}})^2 - (\boldsymbol{\beta} \times \dot{\boldsymbol{\beta}})^2\right]$$
+
+For linear acceleration ($\boldsymbol{\beta} \parallel \dot{\boldsymbol{\beta}}$):
+
+$$P = \frac{q^2}{6\pi\varepsilon_0 c}\gamma^6\dot{\beta}^2$$
+
+For circular acceleration ($\boldsymbol{\beta} \perp \dot{\boldsymbol{\beta}}$, e.g., synchrotron):
+
+$$P = \frac{q^2}{6\pi\varepsilon_0 c}\gamma^4\dot{\beta}^2 = \frac{q^2 c}{6\pi\varepsilon_0}\frac{\gamma^4}{R^2}$$
+
+where $R$ is the radius of curvature. The $\gamma^4$ factor (vs. $\gamma^6$ for linear) explains why synchrotron radiation is significant for relativistic electrons but negligible for protons at the same energy ($\gamma$ is $m_p/m_e \approx 1836$ times smaller).
+
+**Synchrotron radiation spectrum:** The critical frequency is $\omega_c = \frac{3}{2}\gamma^3\frac{c}{R}$. The spectrum peaks near $\omega_c$ and extends to high harmonics, making synchrotron radiation a powerful broadband source from infrared to X-rays.
+
+<details>
+<summary>Worked Example 10.1: Synchrotron Radiation from a Storage Ring</summary>
+
+The Diamond Light Source operates at $E = 3$ GeV electron energy with a ring circumference of 561.6 m.
+
+(a) Lorentz factor: $\gamma = E/(m_e c^2) = 3 \times 10^9/(0.511 \times 10^6) = 5871$.
+
+(b) For a bending magnet with radius $R = 7.1$ m:
+
+$$P = \frac{e^2 c}{6\pi\varepsilon_0}\frac{\gamma^4}{R^2} = \frac{(1.6 \times 10^{-19})^2 \times 3 \times 10^8}{6\pi \times 8.85 \times 10^{-12}}\frac{(5871)^4}{(7.1)^2}$$
+
+$$= \frac{2.56 \times 10^{-38} \times 3 \times 10^8}{1.669 \times 10^{-10}}\frac{1.187 \times 10^{15}}{50.4}$$
+
+$$= 4.60 \times 10^{-20} \times 2.355 \times 10^{13} = 1.08 \times 10^{-6}\ \text{W per electron}$$
+
+With a beam current of 300 mA ($I = 0.3$ A, $N = I/e = 1.875 \times 10^{18}$ electrons/s):
+
+Total power $= 1.08 \times 10^{-6} \times 1.875 \times 10^{18} \times \frac{561.6}{(2\pi \times 7.1)}$
+
+Wait: the power per electron is already the total radiated power. The total synchrotron radiation power from the ring is:
+
+$$P_{\text{total}} = N_{\text{stored}} \times P_{\text{per electron}} \times \frac{\text{bending length}}{\text{circumference}}$$
+
+For a rough estimate: $P_{\text{total}} \approx 0.3 \times 3 \times 10^9 \times \frac{1.08 \times 10^{-6}}{1.6 \times 10^{-19}} \times \frac{2\pi \times 7.1}{561.6} \approx 500$ kW.
+
+The actual Diamond power is about 400 kW, consistent with this estimate.
+
+(c) Critical frequency:
+
+$$\omega_c = \frac{3}{2}\gamma^3\frac{c}{R} = \frac{3}{2}(5871)^3\frac{3 \times 10^8}{7.1} = 1.5 \times 2.02 \times 10^{11} \times 4.23 \times 10^7 = 1.28 \times 10^{19}\ \text{rad/s}$$
+
+$$\hbar\omega_c = 1.055 \times 10^{-34} \times 1.28 \times 10^{19} = 1.35 \times 10^{-15}\ \text{J} = 8.4\ \text{keV}$$
+
+This is in the hard X-ray range, suitable for protein crystallography and materials science.
+
+</details>
+
+## 11. Advanced Electrodynamics
+
+### 11.1 Multipole Expansion
+
+The scalar potential of a localised charge distribution at large distances ($r \gg d$, where $d$ is the size of the distribution):
+
+$$\phi(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0}\left[\frac{Q}{r} + \frac{\mathbf{p}\cdot\hat{\mathbf{r}}}{r^2} + \frac{1}{2}\sum_{ij}Q_{ij}\frac{\hat{r}_i\hat{r}_j}{r^3} + \cdots\right]$$
+
+**Monopole term:** $Q = \int \rho\, dV$ (total charge).
+
+**Dipole term:** $\mathbf{p} = \int \mathbf{r}'\,\rho(\mathbf{r}')\,dV'$ (electric dipole moment).
+
+**Quadrupole term:** $Q_{ij} = \int (3r'_ir'_j - r'^2\delta_{ij})\,\rho(\mathbf{r}')\,dV'$ (traceless quadrupole tensor).
+
+The quadrupole term is important for nuclei with spin $I \geq 1$ and for non-spherical charge distributions. The quadrupole moment $Q = Q_{zz}$ (in the principal axis frame) characterises the deviation from spherical symmetry.
+
+### 11.2 Gauge Transformations and Potentials
+
+The scalar and vector potentials are not unique. The **gauge transformation**:
+
+$$\mathbf{A}' = \mathbf{A} + \nabla\chi, \quad \phi' = \phi - \frac{\partial\chi}{\partial t}$$
+
+leaves $\mathbf{E}$ and $\mathbf{B}$ unchanged for any scalar function $\chi(\mathbf{r}, t)$.
+
+**Common gauges:**
+
+| Gauge | Condition | Use |
+|-------|-----------|-----|
+| Coulomb | $\nabla \cdot \mathbf{A} = 0$ | Static problems, quantum mechanics |
+| Lorenz | $\nabla \cdot \mathbf{A} + \frac{1}{c^2}\frac{\partial\phi}{\partial t} = 0$ | Relativistic problems, radiation |
+| Temporal | $\phi = 0$ | Some scattering problems |
+
+In the Lorenz gauge, both $\mathbf{A}$ and $\phi$ satisfy wave equations with sources:
+
+$$\Box^2\mathbf{A} = -\mu_0\mathbf{J}, \quad \Box^2\phi = -\frac{\rho}{\varepsilon_0}$$
+
+where $\Box^2 = \nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$ is the d'Alembertian.
+
+### 11.3 Electromagnetic Stress-Energy Tensor
+
+The electromagnetic stress-energy tensor $T^{\mu\nu}$ encodes the energy density, momentum density, and stress:
+
+$$T^{00} = \frac{1}{2}\left(\varepsilon_0 E^2 + \frac{B^2}{\mu_0}\right) \quad \text{(energy density)}$$
+
+$$T^{0i} = \frac{1}{c}(\mathbf{E} \times \mathbf{B})_i = \frac{S_i}{c} \quad \text{(momentum density)}$$
+
+$$T^{ij} = -\varepsilon_0 E_i E_j - \frac{1}{\mu_0}B_i B_j + \frac{1}{2}\delta_{ij}\left(\varepsilon_0 E^2 + \frac{B^2}{\mu_0}\right) \quad \text{(Maxwell stress tensor)}$$
+
+**Conservation law:** $\partial_\mu T^{\mu\nu} = -f^\nu$ where $f^\nu$ is the Lorentz force density on charges.
+
+**Radiation pressure:** For a normally incident plane wave with intensity $I$:
+
+$$P_{\text{rad}} = \frac{I}{c} = \frac{1}{2}\varepsilon_0 E_0^2$$
+
+For a perfect reflector, the radiation pressure is $2I/c$ (momentum transfer is doubled).
+
+<details>
+<summary>Worked Example 11.1: Radiation Pressure from Sunlight</summary>
+
+Solar constant at Earth: $I = 1361$ W/m$^2$.
+
+Radiation pressure on a perfectly absorbing surface:
+
+$$P = \frac{I}{c} = \frac{1361}{3 \times 10^8} = 4.54 \times 10^{-6}\ \text{N/m}^2 = 4.54\ \mu\text{Pa}$$
+
+For a perfect reflector: $P = 9.07\,\mu\text{Pa}$.
+
+This is tiny compared to atmospheric pressure ($10^5$ Pa), but is significant for:
+- Solar sails: A 100 m $\times$ 100 m sail with 90% reflectivity experiences $F \approx 0.12$ N, producing acceleration $a \approx 0.6$ mm/s$^2$ for a 100 kg sail.
+- Asteroid deflection: Sustained radiation pressure can perturb asteroid orbits over years.
+- Atom optics: Laser cooling uses radiation pressure to slow atoms to microkelvin temperatures.
+
+</details>
+
+## Common Pitfalls (Additional)
+
+1. **$v_p > c$ does not violate relativity:** The phase velocity in a waveguide exceeds $c$, but no information or energy travels faster than $c$. The group velocity (signal velocity) is always $v_g < c$. Similarly, the refracted phase front in a prism can appear to move faster than $c$, but the actual signal does not.
+
+2. **Gauge choice matters for potentials, not fields:** Different gauges give different $\mathbf{A}$ and $\phi$ for the same $\mathbf{E}$ and $\mathbf{B}$. In quantum mechanics, the Hamiltonian depends on the gauge, but all physical observables are gauge-invariant. The Aharonov--Bohm effect shows that even in regions where $\mathbf{E} = \mathbf{B} = 0$, the vector potential $\mathbf{A}$ has measurable physical effects.
+
+3. **Multipole expansion convergence:** The multipole expansion converges only outside a sphere that encloses all charges. Inside the charge distribution, the expansion diverges and must not be used. The expansion parameter is $d/r$ where $d$ is the source size and $r$ is the observation distance.
+
+4. **Radiation fields vs. near fields:** At distances $r \ll \lambda$ (near field), the fields are dominated by $1/r^2$ (induction) and $1/r^3$ (electrostatic/magnetostatic) terms. The radiation fields ($\propto 1/r$) dominate only in the far field ($r \gg \lambda$). Do not apply the Larmor formula or radiation resistance in the near field.
+
+5. **Poynting vector is not unique:** The Poynting vector $\mathbf{S} = \mathbf{E} \times \mathbf{H}$ is gauge-dependent and can be nonzero even in static situations (e.g., a charged capacitor in a constant magnetic field). Only the surface integral $\oint \mathbf{S} \cdot d\mathbf{a}$ (total power flow) is physically meaningful.
+
+## Problems (Additional)
+
+<details>
+<summary>Problem 19: TE$_{10}$ Mode Field Patterns</summary>
+
+For a rectangular waveguide ($a \times b$) operating in TE$_{10}$ mode at frequency $f$:
+
+(a) Write the complete expressions for all six field components ($E_x, E_y, E_z, B_x, B_y, B_z$).
+
+(b) Sketch the field pattern: show the direction and relative magnitude of $\mathbf{E}$ and $\mathbf{B}$ in the $xy$-plane at $z = 0$.
+
+(c) Find the positions of maximum surface current density on the walls and explain why the waveguide loss is minimised by making the broad wall dimension $a$ as large as possible (for a given $f$).
+
+**Solution:**
+
+(a) For TE$_{10}$: $B_z = B_0\cos(\pi x/a)\,e^{i(\beta z - \omega t)}$.
+
+$$E_x = 0, \quad E_y = \frac{i\omega\mu_0 a}{\pi}B_0\sin\!\left(\frac{\pi x}{a}\right)e^{i(\beta z - \omega t)}$$
+
+$$E_z = 0$$
+
+$$B_x = -\frac{i\beta a}{\pi}B_0\sin\!\left(\frac{\pi x}{a}\right)e^{i(\beta z - \omega t)}, \quad B_y = 0$$
+
+$$B_z = B_0\cos\!\left(\frac{\pi x}{a}\right)e^{i(\beta z - \omega t)}$$
+
+(b) The electric field $E_y$ is purely vertical, with a $\sin(\pi x/a)$ profile: zero at the side walls ($x = 0, a$) and maximum at the centre ($x = a/2$). The magnetic field forms closed loops in the $xz$-plane.
+
+(c) Surface current $\mathbf{K} = \hat{\mathbf{n}} \times \mathbf{H}$. On the broad walls ($y = 0, b$): $\mathbf{K}$ has components from $B_x$ and $B_z$, with maximum at $x = a/2$ (where $\sin(\pi x/a) = 1$). The power loss per unit length is:
+
+$$P_{\text{loss}} = \frac{R_s}{2}\oint |\mathbf{K}|^2\, dl$$
+
+where $R_s = \sqrt{\omega\mu_0/(2\sigma)}$ is the surface resistance. For fixed $f$, increasing $a$ reduces the current density on the broad walls and increases the power-handling capacity.
+
+</details>
+
+<details>
+<summary>Problem 20: Antenna Radiation Pattern</summary>
+
+A half-wave dipole antenna of length $\ell = \lambda/2$ carries a sinusoidal current distribution:
+
+$$I(z) = I_0\cos(kz), \quad -\lambda/4 \leq z \leq \lambda/4$$
+
+(a) Calculate the radiation fields $\mathbf{E}$ and $\mathbf{B}$ in the far field.
+
+(b) Find the angular distribution of radiated power $dP/d\Omega$.
+
+(c) Calculate the total radiated power and the radiation resistance. Compare with the short-dipole result $R_{\text{rad}} = 197(\ell/\lambda)^2\,\Omega$.
+
+**Solution:**
+
+(a) The vector potential in the far field:
+
+$$A_z = \frac{\mu_0}{4\pi}\frac{e^{ikr}}{r}\int_{-\lambda/4}^{\lambda/4}I_0\cos(kz')\,e^{-ikz'\cos\theta}\,dz'$$
+
+The integral evaluates to:
+
+$$A_z = \frac{\mu_0 I_0}{4\pi}\frac{e^{ikr}}{r}\frac{2\cos\!\left(\frac{\pi}{2}\cos\theta\right)}{k\sin^2\theta}$$
+
+The radiation fields:
+
+$$E_\theta = ikA_z\sin\theta = \frac{i\mu_0 c I_0}{4\pi}\frac{e^{ikr}}{r}\frac{\cos\!\left(\frac{\pi}{2}\cos\theta\right)}{\sin\theta}$$
+
+$$B_\phi = E_\theta/c$$
+
+(b) The angular distribution:
+
+$$\frac{dP}{d\Omega} = \frac{r^2}{2Z_0}|E_\theta|^2 = \frac{Z_0 I_0^2}{32\pi^2}\frac{\cos^2\!\left(\frac{\pi}{2}\cos\theta\right)}{\sin^2\theta}$$
+
+(c) Total power:
+
+$$P = \frac{Z_0 I_0^2}{32\pi^2}\int_0^{2\pi}\!\!\int_0^\pi \frac{\cos^2\!\left(\frac{\pi}{2}\cos\theta\right)}{\sin^2\theta}\sin\theta\,d\theta\,d\phi$$
+
+$$= \frac{Z_0 I_0^2}{16\pi}\int_0^\pi \frac{\cos^2\!\left(\frac{\pi}{2}\cos\theta\right)}{\sin\theta}\,d\theta$$
+
+With the substitution $u = \cos\theta$: $\int_{-1}^{1}\frac{\cos^2(\pi u/2)}{1-u^2}\,du = 1.2188$ (the Siegel integral).
+
+$$P = \frac{377 \times 1.2188}{16\pi}I_0^2 = 9.16\,I_0^2$$
+
+Radiation resistance: $R_{\text{rad}} = 2P/I_0^2 = 18.3\,\Omega$.
+
+For comparison, a short dipole ($\ell \ll \lambda$) of length $\lambda/2$ would give $R_{\text{rad}} = 197 \times 0.25 = 49.3\,\Omega$. The half-wave dipole has lower radiation resistance because the current distribution (cosine) has less total effective acceleration than a uniform current.
+
+The directivity of the half-wave dipole is $D = 1.64$ (2.15 dBi), slightly higher than the short dipole ($D = 1.5$).
+
+</details>
+
+## 12. Special Relativity and Electromagnetism
+
+### 12.1 Covariant Formulation
+
+Maxwell's equations in covariant form using the field tensor $F^{\mu\nu}$:
+
+$$\partial_\mu F^{\mu\nu} = \mu_0 J^\nu \quad \text{(inhomogeneous)}$$
+
+$$\partial_\lambda F_{\mu\nu} + \partial_\mu F_{\nu\lambda} + \partial_\nu F_{\lambda\mu} = 0 \quad \text{(homogeneous / Bianchi identity)}$$
+
+The electromagnetic field tensor:
+
+$$F^{\mu\nu} = \begin{pmatrix} 0 & -E_x/c & -E_y/c & -E_z/c \\ E_x/c & 0 & -B_z & B_y \\ E_y/c & B_z & 0 & -B_x \\ E_z/c & -B_y & B_x & 0 \end{pmatrix}$$
+
+The dual tensor: $\tilde{F}^{\mu\nu} = \frac{1}{2}\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$.
+
+The Lorentz force: $f^\mu = qF^{\mu\nu}u_\nu$ where $u^\nu = \gamma(c, \mathbf{v})$ is the four-velocity.
+
+### 12.2 Lorentz Transformation of Fields
+
+Under a boost with velocity $v$ along the $x$-axis:
+
+$$E'_x = E_x, \quad B'_x = B_x$$
+
+$$E'_y = \gamma(E_y - vB_z), \quad B'_y = \gamma\!\left(B_y + \frac{v}{c^2}E_z\right)$$
+
+$$E'_z = \gamma(E_z + vB_y), \quad B'_z = \gamma\!\left(B_z - \frac{v}{c^2}E_y\right)$$
+
+**Key insight:** $\mathbf{E}$ and $\mathbf{B}$ mix under Lorentz transformations. What appears as a pure electric field in one frame becomes a mixture of electric and magnetic fields in another. There is no frame-independent distinction between $\mathbf{E}$ and $\mathbf{B}$.
+
+**Invariants:** $E^2 - c^2B^2$ and $\mathbf{E}\cdot\mathbf{B}$ are Lorentz invariants. A pure radiation field ($E = cB$, $\mathbf{E}\perp\mathbf{B}$) satisfies both invariants being zero.
+
+### 12.3 Electromagnetic Field Momentum and Angular Momentum
+
+**Field momentum density:**
+
+$$\mathbf{g} = \frac{\mathbf{S}}{c^2} = \varepsilon_0\mathbf{E} \times \mathbf{B}$$
+
+**Field angular momentum:** $\mathbf{L} = \int \mathbf{r} \times \mathbf{g}\, d^3r$.
+
+**Conservation:** $\frac{d}{dt}\left(\mathbf{p}_{\text{mech}} + \mathbf{p}_{\text{field}}\right) = 0$.
+
+For a charge and a magnetic monopole (if they exist), the field angular momentum $\mathbf{L} = -qg\hat{\mathbf{r}}/(4\pi)$ is quantised in units of $\hbar/2$, leading to the Dirac charge quantisation condition $eg = n\hbar/2$.
+
+<details>
+<summary>Worked Example 12.1: Fields of a Moving Point Charge</summary>
+
+A point charge $q$ at rest at the origin has $\mathbf{E} = q\hat{\mathbf{r}}/(4\pi\varepsilon_0 r^2)$, $\mathbf{B} = 0$.
+
+In a frame moving with velocity $v$ along the $x$-axis, the fields at the boosted position are:
+
+$$E'_y = \gamma\frac{qy'}{4\pi\varepsilon_0(r'^2 + \gamma^2 v^2 t'^2)^{3/2}}, \quad B'_z = -\frac{v}{c^2}E'_y$$
+
+At $t' = 0$: $\mathbf{E}'$ is still radial (from the instantaneous position) but with an enhanced transverse component by factor $\gamma$. The magnetic field is $\mathbf{B}' = -\mathbf{v} \times \mathbf{E}'/c^2$, circulating around the direction of motion.
+
+The Poynting vector $\mathbf{S}' = \mathbf{E}' \times \mathbf{B}'/\mu_0$ is nonzero even for a uniformly moving charge (it points outward and forward, indicating energy flow in the direction of motion).
+
+For ultrarelativistic motion ($\gamma \gg 1$): the fields are concentrated in a thin disk of angular width $\sim 1/\gamma$ around the plane perpendicular to the motion. This is the basis of **synchrotron radiation** patterns.
+
+</details>
+
+## 13. Plasma Physics: Brief Overview
+
+### 13.1 Debye Shielding in Plasmas
+
+A plasma screens electric fields over the **Debye length**:
+
+$$\lambda_D = \sqrt{\frac{\varepsilon_0 k_B T}{n_e e^2}}$$
+
+For $n_e = 10^{18}$ m$^{-3}$, $T = 10^4$ K: $\lambda_D = 7.4 \times 10^{-5}$ m $= 74\,\mu$m.
+
+The plasma frequency:
+
+$$\omega_p = \sqrt{\frac{n_e e^2}{m_e \varepsilon_0}}$$
+
+For $n_e = 10^{18}$ m$^{-3}$: $\omega_p = 5.64 \times 10^{10}$ rad/s, $f_p = 8.98$ GHz. EM waves with $\omega < \omega_p$ cannot propagate (evanescent).
+
+### 13.2 Plasma Oscillations
+
+Small displacements of the electron cloud create restoring forces, leading to **Langmuir waves**:
+
+$$\omega_{\text{Langmuir}} = \omega_p\left(1 + \frac{3k_BT}{2m_e}\frac{k^2}{\omega_p^2}\right)^{-1/2}$$
+
+At long wavelengths ($k \to 0$): $\omega \to \omega_p$ (undamped). With ion motion: the ion-acoustic wave has $\omega^2 = k^2 c_s^2/(1 + k^2\lambda_D^2)$ where $c_s = \sqrt{k_BT/m_i}$.

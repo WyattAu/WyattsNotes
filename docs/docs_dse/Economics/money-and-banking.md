@@ -1182,3 +1182,279 @@ If you get this wrong, revise: [Transmission Mechanism of Monetary Policy](#tran
 
 </details>
 
+---
+
+## Extended Problem Set: Advanced Money and Banking
+
+### Problem 9: Banking Crisis and Contagion
+
+Bank A has deposits of HK$500 billion, reserves of HK$40 billion, and loans of HK$460 billion. The required reserve ratio is 8%. Bank B has deposits of HK$300 billion, reserves of HK$30 billion, and loans of HK$270 billion. Bank A and Bank B are major counterparties in the interbank market.
+
+(a) Calculate each bank's actual reserve ratio, required reserves, and excess reserves.
+(b) A rumour causes depositors to withdraw HK$50 billion from Bank A. Calculate Bank A's new reserve ratio and explain whether it is solvent.
+(c) If Bank A sells HK$30 billion of its loans to Bank B at face value, can Bank B afford this purchase? What happens to Bank B's reserve ratio?
+(d) Explain how this scenario illustrates contagion risk and why the HKMA's lender of last resort function is important.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Bank A:** Actual reserve ratio $= 40/500 = 8\%$. Required reserves $= 0.08 \times 500 = 40$. Excess reserves $= 40 - 40 = 0$. Bank A has zero excess reserves and is fully loaned up.
+
+**Bank B:** Actual reserve ratio $= 30/300 = 10\%$. Required reserves $= 0.08 \times 300 = 24$. Excess reserves $= 30 - 24 = 6$ billion.
+
+(b) After HK$50B withdrawal: Deposits $= 450$. Reserves $= 40 - 50 = -10$.
+
+Bank A's reserves are negative -- it cannot meet the withdrawal. It must either: (i) borrow from the interbank market, (ii) sell assets (loans), or (iii) borrow from the HKMA as lender of last resort. Bank A is technically solvent (assets $= 460 + 40 = 500 >$ liabilities $= 500$) but illiquid (cannot meet short-term obligations).
+
+(c) If Bank A sells HK$30B of loans: it receives HK$30B in cash, raising reserves to $-10 + 30 = 20$. New deposits $= 450$. New reserve ratio $= 20/450 = 4.4\%$ (below the 8% requirement). Bank A still needs more liquidity.
+
+For Bank B: it pays HK$30B, reducing reserves to $30 - 30 = 0$. Deposits unchanged at 300. New reserve ratio $= 0/300 = 0\%$. Bank B now has zero reserves and cannot meet any withdrawals. The loan purchase has transmitted Bank A's liquidity crisis to Bank B.
+
+(d) This illustrates **contagion risk**: the failure or distress of one bank can spread to other banks through interbank connections. When Bank A sells assets to Bank B, it transfers its liquidity problem to Bank B. If Bank B cannot absorb the shock, it may also fail, spreading the crisis further.
+
+The HKMA's **lender of last resort** (LOLR) function is critical because: (i) it provides emergency liquidity to solvent but illiquid banks (like Bank A), preventing fire sales of assets at depressed prices; (ii) by lending to Bank A, the HKMA prevents the contagion from spreading to Bank B and the wider banking system; (iii) the mere existence of a LOLR reduces the likelihood of bank runs because depositors know the central bank stands behind the system. In Hong Kong, the HKMA operates a Discount Window for this purpose, and the Deposit Protection Scheme (covering up to HK$500,000 per depositor) provides additional confidence.
+
+</details>
+
+If you get this wrong, revise: [Banking System Stability](#banking-system-stability)
+
+### Problem 10: Interest Rate Risk and Bank Profitability
+
+A bank has the following balance sheet (in HK$ billion):
+
+| Assets | Liabilities |
+|---|---|
+| Fixed-rate loans (5 years, 4%): 400 | Fixed-rate deposits (1 year, 2%): 300 |
+| Floating-rate loans (HIBOR + 2%): 200 | Floating-rate deposits (HIBOR + 0.5%): 250 |
+| Reserves (0%): 50 | Equity: 100 |
+
+HIBOR is currently 3%. The bank expects HIBOR to rise to 5% over the next year.
+
+(a) Calculate the bank's net interest margin (NIM) at the current HIBOR.
+(b) Calculate the bank's NIM if HIBOR rises to 5%.
+(c) Calculate the bank's duration gap and explain what it means for interest rate risk.
+(d) Suggest two strategies the bank could use to manage its interest rate risk.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Interest income:** Fixed-rate loans $= 400 \times 4\% = 16$. Floating-rate loans $= 200 \times (3\% + 2\%) = 200 \times 5\% = 10$. Total income $= 26$.
+
+**Interest expense:** Fixed-rate deposits $= 300 \times 2\% = 6$. Floating-rate deposits $= 250 \times (3\% + 0.5\%) = 250 \times 3.5\% = 8.75$. Total expense $= 14.75$.
+
+NIM $= (26 - 14.75) / 650 = 11.25 / 650 = 1.73\%$.
+
+(b) At HIBOR $= 5\%$:
+
+**Interest income:** Fixed-rate $= 16$ (unchanged). Floating-rate $= 200 \times (5\% + 2\%) = 14$. Total $= 30$.
+
+**Interest expense:** Fixed-rate $= 6$ (unchanged). Floating-rate $= 250 \times (5\% + 0.5\%) = 250 \times 5.5\% = 13.75$. Total $= 19.75$.
+
+NIM $= (30 - 19.75) / 650 = 10.25 / 650 = 1.58\%$.
+
+NIM falls from 1.73% to 1.58% because the bank's floating-rate liabilities reprice faster than its floating-rate assets, and the fixed-rate assets do not reprice at all. The bank is **asset-sensitive** with a negative duration gap.
+
+(c) The bank has more rate-sensitive liabilities (HK$250B floating + HK$300B fixed maturing in 1 year $=$ HK$550B within 1 year) than rate-sensitive assets (HK$200B floating + HK$0B fixed maturing within 1 year $=$ HK$200B within 1 year). The repricing gap is $200 - 550 = -\text{HK}\$350$ billion. This means when rates rise, the bank's interest expense rises faster than its interest income, compressing the NIM.
+
+(d) **Strategy 1 -- Interest rate swaps:** The bank can enter a receive-fixed, pay-floating interest rate swap on a notional amount of HK$350 billion. This converts some of its floating-rate liabilities to fixed-rate, reducing its negative repricing gap.
+
+**Strategy 2 -- Increase floating-rate lending:** The bank can issue more floating-rate loans (or convert some fixed-rate loans to floating) to increase its rate-sensitive assets. For example, offering mortgage products indexed to HIBOR rather than fixed rates.
+
+**Strategy 3 -- Lengthen deposit maturity:** The bank can offer higher rates on longer-term fixed deposits, reducing the amount of deposits that reprice quickly.
+
+</details>
+
+If you get this wrong, revise: [Bank Management](#bank-management)
+
+### Problem 11: Monetary Policy and Asset Price Bubbles
+
+The central bank observes that property prices have risen by 30% over the past two years while rent yields have fallen from 4% to 2.5%. The GDP deflator has risen by 6% over the same period. The base interest rate is 2%.
+
+(a) Calculate the real appreciation of property prices (inflation-adjusted).
+(b) Calculate the rental yield and explain what the declining yield suggests about market conditions.
+(c) Explain the dilemma for the central bank: should it raise interest rates to address the property bubble, even if general inflation is low?
+(d) Evaluate the use of macroprudential tools (e.g., loan-to-value ratio caps, stress testing) as an alternative to interest rate policy for addressing asset price bubbles.
+
+<details>
+<summary>Solution</summary>
+
+(a) Nominal property price increase $= 30\%$. General inflation $= 6\%$. Real appreciation $= \frac{1.30}{1.06} - 1 = 22.6\%$. Property prices have risen 22.6% in real terms over two years -- approximately 10.7% per year in real terms.
+
+(b) Initial rental yield $= 4\%$. Current yield $= 2.5\%$. The rental yield has fallen by 37.5% relative. The declining yield (rising price-to-rent ratio) suggests that property prices are rising much faster than rents. This is a classic sign of a potential bubble: prices are being driven by speculative expectations of future price increases rather than fundamental rental value. If the yield falls below the cost of borrowing, the investment only makes sense if prices continue to rise.
+
+(c) **Dilemma:** Raising interest rates to cool the property market would also slow the broader economy. If general inflation is low (6% over two years $=$ 3% per year), the central bank may not have a mandate to raise rates. Using interest rates to target asset prices risks causing unnecessary economic damage. However, not acting risks a larger bubble and a more painful correction later (as Hong Kong experienced in 1997 and 2008).
+
+(d) **Macroprudential tools evaluation:**
+
+*Advantages over interest rate policy:*
+- **Targeted:** LTV caps and stress testing affect the property market directly without raising borrowing costs for the rest of the economy.
+- **Flexible:** Can be tightened or loosened quickly in response to property market conditions.
+- **Address the root cause:** By limiting leverage in property purchases, macroprudential tools reduce the fuel for speculative buying.
+
+*Disadvantages:*
+- **Regulatory arbitrage:** Buyers may find ways around the rules (e.g., using shell companies, offshore borrowing).
+- **May not prevent all bubbles:** If buyers have sufficient cash (no leverage needed), LTV caps are ineffective.
+- **Complexity:** Designing and enforcing macroprudential regulations requires significant regulatory capacity.
+
+*Hong Kong context:* The HKMA has extensively used macroprudential tools including LTV ratio caps (currently 50--60% for most residential mortgages), stamp duties (Special Stamp Duty, Buyer's Stamp Duty, Ad Valorem Stamp Duty), and stress testing requirements for banks. These measures have been partially effective in cooling speculative demand while allowing the HKMA to maintain interest rates aligned with the Fed.
+
+</details>
+
+If you get this wrong, revise: [Monetary Policy and Asset Prices](#monetary-policy-and-asset-prices)
+
+### Problem 12: Digital Currencies and the Future of Money
+
+Central banks worldwide are exploring Central Bank Digital Currencies (CBDCs). The HKMA has been researching the "e-HKD" since 2021.
+
+(a) Explain three differences between a CBDC and a cryptocurrency like Bitcoin.
+(b) Explain two potential benefits and two risks of introducing a CBDC in Hong Kong.
+(c) If the HKMA introduces an e-HKD that pays interest, how would this affect the demand for bank deposits? What implications does this have for the banking system?
+(d) Evaluate whether Hong Kong should introduce a CBDC given its existing efficient payment systems (Octopus, FPS, Faster Payment System).
+
+<details>
+<summary>Solution</summary>
+
+(a) **Three differences:**
+1. **Issuer:** A CBDC is issued and backed by the central bank (sovereign money). Bitcoin is issued by a decentralised network with no backing.
+2. **Value stability:** A CBDC is denominated in the national currency and maintains stable value (like cash). Bitcoin is highly volatile (its value fluctuates based on market sentiment).
+3. **Legal tender status:** A CBDC would have legal tender status, meaning it must be accepted as payment for debts. Bitcoin has no legal tender status in Hong Kong.
+
+(b) **Benefits:** (i) Financial inclusion: unbanked individuals can access digital payments directly through the central bank. (ii) Payment efficiency: faster, cheaper cross-border payments compared to the current correspondent banking system. (iii) Monetary policy transmission: the interest rate on CBDC could serve as a direct monetary policy tool (a floor on interest rates).
+
+**Risks:** (i) Bank disintermediation: if consumers hold CBDC instead of bank deposits, banks lose a cheap funding source, reducing their ability to lend. (ii) Cybersecurity: a centralised digital currency system is a single point of failure; a successful cyberattack could be catastrophic. (iii) Privacy: CBDC transactions could be fully traceable by the government, raising surveillance concerns.
+
+(c) If the e-HKD pays interest (say 2%), and bank deposits pay less (say 1.5%), rational depositors would shift funds from banks to CBDC. This reduces bank deposits, forcing banks to raise deposit rates or find alternative funding (wholesale funding, which is more expensive). The result is higher lending rates, reduced credit availability, and potentially a contraction of the money supply through the deposit multiplier.
+
+The magnitude depends on the interest rate differential and the substitutability of CBDC for deposits. If the CBDC is designed with holding limits (e.g., maximum HK$100,000 per person), this limits the disintermediation effect.
+
+(d) **Evaluation:**
+
+Hong Kong already has efficient digital payment systems: the Octopus card (transit and retail), FPS (Faster Payment System for bank-to-bank transfers), and various mobile payment platforms. The marginal benefit of a CBDC in terms of payment efficiency is therefore relatively small.
+
+However, a CBDC could provide: (i) a common digital infrastructure that interoperates with all existing systems, (ii) programmable money for smart contracts and conditional payments (e.g., government subsidies that can only be spent on designated goods), and (iii) a platform for cross-border payments with mainland China (connecting with the digital RMB).
+
+The decision should weigh the costs of implementation against these incremental benefits, while carefully managing the risks to financial stability.
+
+</details>
+
+If you get this wrong, revise: [Future of Money](#future-of-money)
+
+</details>
+
+---
+
+## Additional Problems: DSE Exam-Style Money and Banking
+
+### Problem 13: Open Market Operations Step by Step
+
+The central bank wants to reduce the money supply by HK$400 billion. The required reserve ratio is 10%. The banking system currently has zero excess reserves.
+
+(a) Calculate the required open market sale of government bonds.
+(b) Trace the first three rounds of the contraction process in a table.
+(c) How many rounds does it take for 95% of the total contraction to occur?
+(d) Explain why the actual contraction will be smaller than the theoretical maximum.
+
+<details>
+<summary>Solution</summary>
+
+(a) Money multiplier $= 1/0.10 = 10$. Required bond sale $= 400/10 = \text{HK}\$40$ billion.
+
+(b) | Round | Deposits | Reserves | Loans |
+|---|---|---|---|
+| 0 | -40 | -40 | 0 |
+| 1 | 0 | -36 | -36 |
+| 2 | -36 | -32.4 | -32.4 |
+| 3 | -32.4 | -29.16 | -29.16 |
+
+Total after 3 rounds: Deposits reduced by $40 + 36 + 32.4 = 108.4$ billion (of 400 total).
+
+(c) After $n$ rounds, the cumulative contraction $= 40 \times (1 + 0.9 + 0.9^2 + ... + 0.9^{n-1}) = 40 \times \frac{1 - 0.9^n}{1 - 0.9} = 400 \times (1 - 0.9^n)$.
+
+For 95%: $0.9^n = 0.05$. $n = \ln(0.05)/\ln(0.9) = -2.996/-0.1054 = 28.4$ rounds.
+
+It takes approximately 29 rounds for 95% of the contraction to occur.
+
+(d) The actual contraction will be smaller because: (i) banks may hold excess reserves (especially during uncertain times); (ii) the public may hold more cash (currency drain), reducing the deposit multiplier; (iii) some borrowers may not redeposit loans into the banking system; (iv) banks may be unwilling to reduce lending if loan demand is strong (they may sell other assets instead).
+
+</details>
+
+If you get this wrong, revise: [Open Market Operations](#open-market-operations)
+
+### Problem 14: Inflation Targeting and Central Bank Credibility
+
+A central bank has an inflation target of 2% with a tolerance band of $\pm 1\%$. Actual inflation has been 5% for the past two years. The public expects inflation to be 6% next year. The Phillips curve is $\pi = \pi^e - 0.5(u - 5) + s$, where $s$ is a supply shock (0 this year).
+
+(a) If the central bank wants to reduce inflation to 2%, calculate the required unemployment rate using the Phillips curve.
+(b) Calculate the sacrifice ratio (the cumulative unemployment cost of reducing inflation by 1 percentage point) if each percentage point of disinflation requires the unemployment rate to exceed the natural rate by 2 percentage points for one year.
+(c) Explain how central bank credibility can reduce the sacrifice ratio.
+(d) Evaluate the advantages and disadvantages of inflation targeting compared to exchange rate targeting for Hong Kong.
+
+<details>
+<summary>Solution</summary>
+
+(a) Target $\pi = 2\%$. With $\pi^e = 6\%$ and $s = 0$: $2 = 6 - 0.5(u - 5)$. $0.5(u - 5) = 4$. $u - 5 = 8$. $u = 13\%$.
+
+The central bank must engineer unemployment of 13% (8 percentage points above the natural rate of 5%) for one year to reduce inflation to 2%. This is an extremely high cost.
+
+(b) Sacrifice ratio: reducing inflation from 5% to 2% requires a 3 percentage point reduction. If each 1pp reduction costs 2 percentage-point-years of excess unemployment: sacrifice ratio $= 2 \times 3 = 6$ percentage-point-years.
+
+Total cost $= 6$ percentage-point-years. If the labour force is 4 million, this represents $0.06 \times 4{,}000{,}000 \times 1 = 240{,}000$ person-years of unemployment.
+
+(c) If the central bank is credible (the public believes it will achieve its target), $\pi^e$ falls. If $\pi^e = 2\%$ (instead of 6%): $2 = 2 - 0.5(u - 5)$. $u = 5\%$. No excess unemployment is needed! Credibility eliminates the sacrifice ratio entirely.
+
+In practice, credibility is built through: (i) a track record of meeting targets, (ii) central bank independence, (iii) transparent communication (forward guidance), and (iv) institutional commitment (legislated mandates).
+
+(d) **Inflation targeting vs exchange rate targeting for Hong Kong:**
+
+*Exchange rate targeting (current system -- Currency Board):*
+- Advantages: provides clear nominal anchor; eliminates exchange rate uncertainty for trade; constrains monetary policy to be disciplined; has worked well for 40 years.
+- Disadvantages: no independent monetary policy; imports US monetary conditions (which may be inappropriate for HK); cannot respond to domestic shocks; requires large reserve holdings.
+
+*Inflation targeting (hypothetical):*
+- Advantages: allows independent monetary policy; central bank can respond to domestic inflation and output gaps; more flexible exchange rate could absorb external shocks.
+- Disadvantages: loss of exchange rate stability would increase transaction costs for trade (Hong Kong's trade-to-GDP ratio > 300%); requires a track record of central bank credibility (which the HKMA has not built in this domain); could trigger capital flight and a sharp depreciation during the transition.
+
+**Conclusion:** For Hong Kong, the benefits of exchange rate stability (critical for an international financial centre and trade hub) outweigh the benefits of monetary independence. The Currency Board should be maintained, with fiscal policy and macroprudential tools used for domestic stabilisation.
+
+</details>
+
+If you get this wrong, revise: [Inflation Targeting](#inflation-targeting)
+
+### Problem 15: Financial Intermediation and Economic Development
+
+Country Y has an underdeveloped financial system: only 20% of the population has bank accounts, the stock market capitalisation is 5% of GDP, and most lending is to the government rather than the private sector. Country Z has a developed financial system: 90% bank account coverage, stock market capitalisation of 120% of GDP, and active venture capital and corporate bond markets.
+
+(a) Explain four channels through which financial development promotes economic growth.
+(b) If Country Y's savings rate is 15% of GDP and Country Z's is 30%, and both have the same production function $Y = K^{0.3}L^{0.7}$, calculate the steady-state GDP per capita ratio.
+(c) Explain why financial development may have diminishing returns at very high levels (financialisation risks).
+(d) Suggest three specific policies Country Y should implement to develop its financial system.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Four channels:**
+1. **Capital mobilisation and allocation:** Financial intermediaries (banks, stock markets) pool savings from many small savers and allocate them to the most productive investments. Without financial markets, savings remain idle or are invested in low-return activities (e.g., gold, real estate speculation).
+2. **Risk management:** Financial markets allow risk to be diversified (portfolio diversification, insurance, hedging). This enables firms to undertake risky but high-return investments (innovation, R&D) that they would not undertake without risk-sharing mechanisms.
+3. **Information production:** Banks and credit rating agencies produce information about borrowers' creditworthiness, reducing adverse selection and moral hazard. This lowers the cost of capital and improves the efficiency of lending.
+4. **Liquidity provision:** Financial markets allow savers to convert illiquid assets (long-term investments) into liquid claims (bank deposits, tradable securities). This encourages saving by reducing the liquidity risk of long-term investment.
+
+(b) In the Solow model, steady-state capital per worker is proportional to $(s/n)^{1/(1-\alpha)}$, where $s$ is the saving rate, $n$ is the population growth rate, and $\alpha = 0.3$.
+
+Steady-state $k^* \propto s^{1/0.7} = s^{1.429}$.
+
+GDP per capita ratio $= (s_Z / s_Y)^{1.429} = (30/15)^{1.429} = 2^{1.429} = 2.70$.
+
+Country Z's GDP per capita is approximately 2.7 times Country Y's, purely due to the higher saving rate enabled by financial development.
+
+(c) **Financialisation risks:** At very high levels of financial development, the financial sector may grow to a size that is disproportionate to the real economy. Risks include: (i) resources (especially talent) flowing to finance from more productive sectors (engineering, science); (ii) excessive leverage and asset price bubbles (as in the 2008 financial crisis); (iii) rent-seeking through financial engineering rather than productive investment; (iv) increased systemic risk from complex, interconnected financial products. The marginal benefit of additional financial development diminishes and may eventually turn negative.
+
+(d) **Policies for Country Y:**
+1. **Expand financial inclusion:** Use mobile banking technology to reach unbanked populations. Implement simplified KYC (know-your-customer) procedures and microfinance products for low-income households.
+2. **Develop capital markets:** Create a securities regulator, establish disclosure requirements, and introduce corporate bond and equity markets. Start with government bonds to establish a yield curve, then gradually introduce corporate securities.
+3. **Strengthen legal infrastructure:** Enforce property rights, contract law, and creditor rights. Weak legal enforcement discourages lending because lenders cannot recover loans from defaulting borrowers. Establish bankruptcy laws that balance debtor protection with creditor rights.
+4. **Promote competition:** Reduce barriers to entry for foreign banks (which bring expertise and technology). Encourage fintech innovation (digital payments, peer-to-peer lending, robo-advisors) to challenge incumbents.
+
+</details>
+
+If you get this wrong, revise: [Financial Development](#financial-development)
+

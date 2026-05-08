@@ -230,3 +230,301 @@ Combining: $-3 < x < 1$.
 Solution: $x \in (-3,\; 1)$.
 
 A common mistake is forgetting the domain restriction. If the base were between 0 and 1, the inequality would reverse.
+
+---
+
+## Worked Examples
+
+### WE-1: Solving a System of Inequalities
+
+**Question:**
+
+Solve the simultaneous inequalities:
+
+$$2x + 3 > x + 7 \quad \text{and} \quad 3x - 1 \leq 2x + 5$$
+
+**Solution:**
+
+First inequality: $2x + 3 > x + 7 \implies x > 4$.
+
+Second inequality: $3x - 1 \leq 2x + 5 \implies x \leq 6$.
+
+Both must hold: $4 < x \leq 6$, i.e. $x \in (4,\; 6]$.
+
+---
+
+### WE-2: Quadratic Inequality with Equal Roots
+
+**Question:**
+
+Find the range of values of $k$ for which $x^2 - 6x + k > 0$ for all real $x$.
+
+**Solution:**
+
+For the quadratic to be always positive (since the leading coefficient $1 > 0$), we need $\Delta < 0$.
+
+$$\Delta = 36 - 4k < 0 \implies k > 9$$
+
+When $k = 9$: $\Delta = 0$, and $x^2 - 6x + 9 = (x-3)^2 \geq 0$. The inequality is strict ($>$), so $x = 3$ gives $0 \not> 0$.
+
+Therefore $k > 9$ (strictly).
+
+---
+
+### WE-3: Absolute Value Inequality
+
+**Question:**
+
+Solve $|3x - 4| \leq 8$.
+
+**Solution:**
+
+$$-8 \leq 3x - 4 \leq 8$$
+
+$$-4 \leq 3x \leq 12$$
+
+$$-\frac{4}{3} \leq x \leq 4$$
+
+Solution: $x \in \left[-\dfrac{4}{3},\; 4\right]$.
+
+---
+
+### WE-4: Inequality with Rational Expression
+
+**Question:**
+
+Solve $\dfrac{x^2 - 1}{x^2 + 1} > 0$.
+
+**Solution:**
+
+The denominator $x^2 + 1 > 0$ for all real $x$ (always positive).
+
+Therefore the sign of the expression is determined by the numerator alone:
+
+$x^2 - 1 > 0 \implies (x-1)(x+1) > 0 \implies x < -1$ or $x > 1$.
+
+Solution: $x \in (-\infty,\; -1) \cup (1,\; \infty)$.
+
+---
+
+### WE-5: Non-Linear Inequality
+
+**Question:**
+
+Solve $x^3 - x^2 - x + 1 \leq 0$.
+
+**Solution:**
+
+$$x^3 - x^2 - x + 1 = x^2(x - 1) - (x - 1) = (x - 1)(x^2 - 1) = (x - 1)^2(x + 1)$$
+
+Critical values: $x = 1$ (double root) and $x = -1$.
+
+Sign chart:
+
+| Interval | Test | $(x-1)^2$ | $(x+1)$ | Product |
+|---|---|---|---|---|
+| $x < -1$ | $x = -2$ | $+$ | $-$ | $-$ |
+| $-1 < x < 1$ | $x = 0$ | $+$ | $+$ | $+$ |
+| $x > 1$ | $x = 2$ | $+$ | $+$ | $+$ |
+
+The expression is non-positive when $x \leq -1$ or $x = 1$.
+
+Solution: $x \in (-\infty,\; -1] \cup \{1\}$.
+
+---
+
+### WE-6: Quadratic Inequality with No Real Roots
+
+**Question:**
+
+Show that $x^2 + 4x + 5 > 0$ for all real $x$.
+
+**Solution:**
+
+$$\Delta = 16 - 20 = -4 < 0$$
+
+Since the discriminant is negative and the leading coefficient is positive, the quadratic is always positive.
+
+Alternatively, completing the square:
+
+$$x^2 + 4x + 5 = (x + 2)^2 + 1 \geq 1 > 0$$
+
+---
+
+### WE-7: Inequality Involving Square Roots
+
+**Question:**
+
+Solve $\sqrt{2x + 1} \leq x + 1$.
+
+**Solution:**
+
+Domain: $2x + 1 \geq 0 \implies x \geq -\dfrac{1}{2}$. Also RHS $= x + 1$.
+
+Since $\sqrt{2x+1} \geq 0$, we need $x + 1 \geq 0$, i.e. $x \geq -1$.
+
+Combined domain: $x \geq -\dfrac{1}{2}$.
+
+Squaring both sides: $2x + 1 \leq x^2 + 2x + 1 \implies 0 \leq x^2$, which is true for all real $x$.
+
+So the solution is the domain: $x \in \left[-\dfrac{1}{2},\; \infty\right)$.
+
+**DSE Exam Technique:** When squaring both sides of an inequality, always check the domain and the sign of both sides. Squaring is only valid when both sides are non-negative.
+
+---
+
+### WE-8: Product of Two Linear Inequalities
+
+**Question:**
+
+Solve $(2x - 3)(x + 4) > 0$.
+
+**Solution:**
+
+Critical values: $x = \dfrac{3}{2}$ and $x = -4$.
+
+Since the quadratic opens upward (leading coefficient $= 2 > 0$):
+
+The product is positive outside the roots.
+
+Solution: $x < -4$ or $x > \dfrac{3}{2}$, i.e. $x \in (-\infty,\; -4) \cup \left(\dfrac{3}{2},\; \infty\right)$.
+
+---
+
+## Common Pitfalls
+
+1. **Forgetting to flip the inequality when multiplying or dividing by a negative number.** If you multiply or divide both sides of an inequality by a negative quantity, you MUST reverse the inequality sign. This is the single most common error in inequality problems.
+
+2. **Cross-multiplying without considering the sign of the denominator.** When solving $\dfrac{A}{B} > 0$, you cannot simply write $A > 0$ because the sign depends on $B$. Use a sign chart or consider cases.
+
+3. **Including values that make the denominator zero.** When solving rational inequalities, the values that make the denominator zero must be EXCLUDED from the solution set, even if the numerator is also zero at those points.
+
+4. **Incorrectly handling double roots.** A double root does not change the sign of the expression (it "bounces off" the axis). So at a double root, the expression equals zero, and the inequality direction determines whether to include or exclude it.
+
+5. **Not checking the domain before squaring.** When solving $\sqrt{f(x)} > g(x)$, you must first establish that $f(x) \geq 0$ and $g(x) \geq 0$ before squaring both sides. Squaring an inequality where one side is negative gives incorrect results.
+
+---
+
+## DSE Exam-Style Questions
+
+### DSE-1
+
+Find the range of values of $x$ for which:
+
+(a) $x^2 - 5x + 6 < 0$ (2 marks)
+(b) $2x^2 + 3x - 2 \geq 0$ (3 marks)
+(c) Both inequalities in (a) and (b) are satisfied simultaneously. (2 marks)
+
+**Solution:**
+
+(a) $(x - 2)(x - 3) < 0 \implies 2 < x < 3$, i.e. $x \in (2,\; 3)$.
+
+(b) $(2x - 1)(x + 2) \geq 0$.
+
+Critical values: $x = \dfrac{1}{2}$ and $x = -2$.
+
+Opens upward: $x \leq -2$ or $x \geq \dfrac{1}{2}$, i.e. $x \in (-\infty,\; -2] \cup \left[\dfrac{1}{2},\; \infty\right)$.
+
+(c) Intersection of $(2,\; 3)$ and $(-\infty,\; -2] \cup \left[\dfrac{1}{2},\; \infty\right)$:
+
+$(2,\; 3) \cap \left[\dfrac{1}{2},\; \infty\right) = (2,\; 3)$.
+
+Solution: $x \in (2,\; 3)$.
+
+---
+
+### DSE-2
+
+Find the range of values of $k$ for which the equation $x^2 + 2kx + k^2 + 3 = 0$ has:
+
+(a) Two distinct real roots. (2 marks)
+(b) No real roots. (1 mark)
+(c) Real roots that are both positive. (4 marks)
+
+**Solution:**
+
+(a) $\Delta = (2k)^2 - 4(k^2 + 3) = 4k^2 - 4k^2 - 12 = -12 < 0$ for all $k$.
+
+There are NEVER two distinct real roots. The answer is: no such value of $k$ exists.
+
+(b) $\Delta < 0$ for all $k$, so there are no real roots for all values of $k$.
+
+(c) Since the equation never has real roots, there is no value of $k$ for which both roots are positive.
+
+---
+
+### DSE-3
+
+Solve the inequality $\dfrac{x^2 - 4x + 3}{x^2 - 9} \leq 0$. (5 marks)
+
+**Solution:**
+
+$$\frac{(x-1)(x-3)}{(x-3)(x+3)} = \frac{x - 1}{x + 3}$$
+
+provided $x \neq 3$ (makes denominator zero in original) and $x \neq -3$.
+
+$\dfrac{x - 1}{x + 3} \leq 0$.
+
+Critical values: $x = -3$ (excluded) and $x = 1$ (included).
+
+Sign chart:
+
+| Interval | Test | Sign |
+|---|---|---|
+| $x < -3$ | $x = -4$ | $+$ |
+| $-3 < x < 1$ | $x = 0$ | $-$ |
+| $x > 1$ | $x = 2$ | $+$ |
+
+Including $x = 1$, excluding $x = -3$ and $x = 3$.
+
+Solution: $x \in (-3,\; 1] \cup (3,\; \infty)$? No -- checking: for $x > 3$, $\dfrac{x-1}{x+3} > 0$, which does not satisfy $\leq 0$.
+
+Correct solution: $x \in (-3,\; 1]$.
+
+---
+
+### DSE-4
+
+Solve $|x - 3| > |2x + 1|$. (4 marks)
+
+**Solution:**
+
+Square both sides (both sides are non-negative after taking absolute value):
+
+$$(x - 3)^2 > (2x + 1)^2$$
+
+$$x^2 - 6x + 9 > 4x^2 + 4x + 1$$
+
+$$0 > 3x^2 + 10x - 8$$
+
+$$3x^2 + 10x - 8 < 0$$
+
+$$(3x - 2)(x + 4) < 0$$
+
+$$-4 < x < \frac{2}{3}$$
+
+Solution: $x \in \left(-4,\; \dfrac{2}{3}\right)$.
+
+---
+
+### DSE-5
+
+Find the range of values of $x$ for which both $\dfrac{x}{x - 2} > 0$ and $x^2 - 4x + 3 < 0$ are satisfied. (5 marks)
+
+**Solution:**
+
+First inequality: $\dfrac{x}{x - 2} > 0$.
+
+Critical values: $x = 0$ and $x = 2$.
+
+Sign chart: positive for $x < 0$ and $x > 2$.
+
+Solution: $x \in (-\infty,\; 0) \cup (2,\; \infty)$.
+
+Second inequality: $(x - 1)(x - 3) < 0 \implies 1 < x < 3$.
+
+Solution: $x \in (1,\; 3)$.
+
+Intersection: $((-\infty,\; 0) \cup (2,\; \infty)) \cap (1,\; 3) = (2,\; 3)$.
+
+Solution: $x \in (2,\; 3)$.

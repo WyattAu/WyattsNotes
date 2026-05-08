@@ -1861,3 +1861,5 @@ Minimum coefficient of static friction: $\mu_s = 0.51$.
 
 </details>
 
+
+:::

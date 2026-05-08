@@ -1277,3 +1277,243 @@ If you get this wrong, revise: [Trade Barriers](#trade-barriers)
 
 </details>
 
+---
+
+## Extended Problem Set: Advanced International Trade and Finance
+
+### Problem 9: Comparative Advantage with Three Countries
+
+Three countries can produce computers and textiles with the following labour requirements (hours per unit):
+
+| | Computers | Textiles |
+|---|---|---|
+| Hong Kong | 10 | 5 |
+| Mainland China | 30 | 3 |
+| Vietnam | 50 | 2 |
+
+(a) Which country has an absolute advantage in each good?
+(b) Calculate the opportunity cost of 1 computer in each country.
+(c) If each country has 1000 labour hours, calculate the production possibility for each country under autarky (assuming equal split).
+(d) Which country should specialise in which good? Calculate the gains from trade if they specialise completely and trade at an exchange rate of 1 computer $= 4$ textiles.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Absolute advantage in computers:** Hong Kong (10 hours vs 30 and 50). **Absolute advantage in textiles:** Vietnam (2 hours vs 3 and 5). Mainland China has no absolute advantage in either good.
+
+(b) Opportunity cost of 1 computer:
+- Hong Kong: $5/10 = 0.5$ textiles.
+- Mainland China: $3/30 = 0.1$ textiles.
+- Vietnam: $2/50 = 0.04$ textiles.
+
+(c) **Autarky** (500 hours on each):
+- Hong Kong: 50 computers, 100 textiles.
+- Mainland China: 16.67 computers, 166.67 textiles.
+- Vietnam: 10 computers, 250 textiles.
+- World total: 76.67 computers, 516.67 textiles.
+
+(d) Vietnam has the lowest opportunity cost for computers (0.04 textiles per computer) -- comparative advantage in computers. Hong Kong has the lowest opportunity cost for textiles (2 computers per textile) -- comparative advantage in textiles. Mainland China has an intermediate position and should specialise in textiles (opportunity cost of 1 textile = 0.1 computers, lower than Hong Kong's 2).
+
+With specialisation: Vietnam: 20 computers. Hong Kong: 200 textiles. China: 333.33 textiles. World: 20 computers, 533.33 textiles.
+
+If Vietnam exports 10 computers at 1:4, it receives 40 textiles. Vietnam consumes 10 computers and 40 textiles. Hong Kong receives 20 computers for 80 textiles. Hong Kong consumes 20 computers and 120 textiles. China consumes 0 computers and 253.33 textiles.
+
+Compared to autarky, Vietnam gains ($10 - 10 = 0$ computers, $40 - 250 = $ actually needs to import textiles). This shows that three-country trade requires careful allocation to ensure all gain.
+
+</details>
+
+If you get this wrong, revise: [Comparative Advantage](#comparative-advantage)
+
+### Problem 10: Exchange Rate Pass-Through and Inflation
+
+A country imports 40% of its consumption basket. The domestic currency depreciates by 15%. The import price elasticity of demand is 0.6, and domestic producers' mark-up over costs is 20%.
+
+(a) Calculate the immediate impact on import prices in domestic currency terms.
+(b) If importers pass through 80% of the exchange rate change to consumers, calculate the effect on the CPI.
+(c) Explain why exchange rate pass-through is typically incomplete.
+(d) Apply this analysis to Hong Kong, where imports are approximately 180% of GDP.
+
+<details>
+<summary>Solution</summary>
+
+(a) A 15% depreciation increases the domestic currency price of imports by 15% (assuming foreign exporters do not change their prices in foreign currency). The immediate impact on import prices is $+15\%$.
+
+(b) If 80% pass-through: import prices rise by $0.80 \times 15\% = 12\%$.
+
+CPI weight of imports is 40%. Direct effect on CPI $= 0.40 \times 12\% = 4.8\%$.
+
+If domestic producers raise prices by 3% (matching part of the import price increase), the domestic component (60% weight) contributes $0.60 \times 3\% = 1.8\%$.
+
+Total CPI impact $= 4.8\% + 1.8\% = 6.6\%$.
+
+(c) Exchange rate pass-through is typically incomplete because:
+1. **Foreign exporter pricing-to-market:** Foreign firms may absorb some of the exchange rate change by reducing profit margins to maintain market share.
+2. **Domestic distribution costs:** A significant portion of the final price consists of domestic costs (transport, retail margin, local taxes) that do not change with the exchange rate.
+3. **Long-term contracts:** Many import prices are set by contracts denominated in domestic currency, delaying the pass-through.
+4. **Substitution:** Consumers may switch to domestically produced substitutes when import prices rise.
+
+(d) **Hong Kong context:** Hong Kong's import-to-GDP ratio exceeds 180% due to the re-export trade. For the CPI basket, the direct import content is approximately 40--50%. The Linked Exchange Rate means the HKD moves with the USD. When the USD appreciates, the HKD appreciates against other currencies, making non-USD imports cheaper and HKD exports more expensive.
+
+</details>
+
+If you get this wrong, revise: [Exchange Rates and Inflation](#exchange-rates-and-inflation)
+
+### Problem 11: Balance of Payments and the Mundell-Fleming Model
+
+A small open economy with a floating exchange rate has:
+IS: $Y = 1000 - 50r + 2e$
+LM: $Y = 200 + 50r$
+BP: $Y = 500 + 100r - 10e$
+(where $e$ is the exchange rate, domestic currency per foreign currency).
+
+(a) Calculate the equilibrium output, interest rate, and exchange rate.
+(b) The government increases spending by 100. Calculate the new equilibrium and explain the crowding-out mechanism.
+(c) Under a fixed exchange rate, would fiscal policy be more or less effective?
+(d) How does this relate to Hong Kong's Currency Board?
+
+<details>
+<summary>Solution</summary>
+
+(a) From LM: $r = (Y - 200)/50$.
+
+IS: $Y = 1000 - (Y - 200) + 2e = 1200 - Y + 2e$. So $2Y = 1200 + 2e$, $Y = 600 + e$.
+
+BP: $Y = 500 + 2(Y - 200) - 10e = 500 + 2Y - 400 - 10e = 100 + 2Y - 10e$.
+
+$-Y = 100 - 10e$. $Y = 10e - 100$.
+
+Setting equal: $600 + e = 10e - 100$. $700 = 9e$. $e = 77.78$.
+
+$Y = 600 + 77.78 = 677.78$. $r = (677.78 - 200)/50 = 9.56\%$.
+
+(b) New IS: $Y = 1100 - 50r + 2e$. $Y = 1100 - (Y - 200) + 2e = 1300 - Y + 2e$. $Y = 650 + e$.
+
+Setting equal to BP: $650 + e = 10e - 100$. $750 = 9e$. $e = 83.33$.
+
+$Y = 733.33$. $r = 10.67\%$.
+
+The fiscal expansion increases output by 8.2% but raises interest rates, causing currency appreciation. The appreciation reduces net exports, partially offsetting the fiscal stimulus.
+
+(c) Under a fixed exchange rate, fiscal policy is **more effective**. The government spending increase raises interest rates, attracting capital inflows. The central bank must intervene to prevent appreciation (buying foreign currency, selling domestic currency), which increases the money supply and reinforces the fiscal expansion.
+
+(d) **Hong Kong's Currency Board:** With a fixed exchange rate and free capital mobility, monetary policy is not independent (follows the Fed). Fiscal policy is the primary tool for domestic stabilisation. Any fiscal expansion that raises HK interest rates attracts capital inflows, forcing the HKMA to expand the money supply, amplifying the stimulus.
+
+</details>
+
+If you get this wrong, revise: [Mundell-Fleming Model](#mundell-fleming-model)
+
+### Problem 12: Foreign Direct Investment and Development
+
+An MNC invests USD 500 million in a manufacturing plant. Expected annual profit: USD 80 million for 20 years. Required return: 10%. The host country offers a tax holiday (0% tax for 5 years, then 20%).
+
+(a) Calculate the NPV without the tax holiday (20% tax throughout).
+(b) Calculate the NPV with the tax holiday.
+(c) Calculate the value of the tax holiday.
+(d) Explain benefits and costs of FDI for the host country.
+
+<details>
+<summary>Solution</summary>
+
+(a) After-tax profit $= 80 \times 0.80 = 64$ million.
+
+NPV $= -500 + 64 \times \frac{1 - 1.10^{-20}}{0.10} = -500 + 64 \times 8.514 = -500 + 544.9 = 44.9$ million.
+
+(b) Years 1--5: profit $= 80$. Years 6--20: profit $= 64$.
+
+NPV $= -500 + 80 \times 3.791 + 64 \times 7.606 \times 0.621 = -500 + 303.3 + 302.1 = 105.4$ million.
+
+(c) Value of tax holiday $= 105.4 - 44.9 = 60.5$ million.
+
+(d) **Benefits:** capital inflows, technology transfer, employment creation, export development, productivity spillovers. **Costs:** profit repatriation, crowding out of domestic firms, environmental degradation, labour exploitation, dependence on foreign capital. China's experience demonstrates both: FDI was crucial for industrialisation and export growth, but profit repatriation now creates a growing primary income deficit in the BOP.
+
+</details>
+
+If you get this wrong, revise: [Foreign Direct Investment](#foreign-direct-investment)
+
+</details>
+
+---
+
+## Additional Problems: DSE Exam-Style Integration
+
+### Problem 13: Currency Crises and Speculative Attacks
+
+Country X has a fixed exchange rate of 1 USD = 5 LC. Foreign reserves = USD 20 billion. Monetary base = LC 150 billion. Net domestic credit = LC 50 billion.
+
+(a) Verify the monetary base identity: NFA + NDA = Monetary Base.
+(b) If the government finances a fiscal deficit of LC 10 billion by borrowing from the central bank, calculate the effect on reserves (assuming the peg is maintained).
+(c) If speculative attacks cause the central bank to lose USD 5 billion, what happens to the monetary base?
+(d) Using the Krugman (1979) first-generation model, explain why persistent fiscal deficits lead to inevitable currency crises.
+
+<details>
+<summary>Solution</summary>
+
+(a) NFA = $5 \times 20 = $ LC 100 billion. NDA = 50 billion. NFA + NDA = 150 billion = Monetary base. Verified.
+
+(b) Domestic credit increases to 60 billion. Monetary base rises to 160 billion. To maintain the peg, the central bank sells USD reserves and buys LC, reducing NFA. New NFA = $150 - 60 = 90$ billion = USD 18 billion. Reserves fall by USD 2 billion.
+
+(c) NFA falls to $100 - 25 = 75$ billion = USD 15 billion. New monetary base = 75 + 60 = 135 billion. The monetary base contracts by LC 15 billion (10%), which is contractionary.
+
+(d) The Krugman model shows that fiscal deficits financed by central bank credit creation cause continuous reserve loss. The process is self-reinforcing: fiscal deficit $\to$ money creation $\to$ excess supply of money $\to$ capital outflow $\to$ reserve loss $\to$ speculation $\to$ more reserve loss $\to$ crisis. Reserves are finite; when exhausted, devaluation is forced.
+
+</details>
+
+If you get this wrong, revise: [Currency Crises](#currency-crises)
+
+### Problem 14: Global Value Chains and Trade in Value Added
+
+A smartphone is designed in the US (USD 200 value added), uses chips from Taiwan (USD 100), a display from South Korea (USD 80), assembled in China (USD 30 value added), and sold in Europe for USD 500.
+
+(a) Calculate gross exports for each economy.
+(b) Calculate China's domestic value added share.
+(c) If the US imposes a 25% tariff on Chinese exports, calculate the effective tariff rate on China's value added.
+(d) Explain why gross trade statistics overstate the US-China trade imbalance.
+
+<details>
+<summary>Solution</summary>
+
+(a) Gross exports: US = USD 200 (design services to China), Taiwan = USD 100 (chips to China), South Korea = USD 80 (display to China), China = USD 500 (finished phone to Europe).
+
+(b) China's domestic value added = USD 30. Share = $30/500 = 6\%$. China's gross export is 94% foreign value added.
+
+(c) Tariff on gross value = $0.25 \times 500 = $ USD 125. Effective tariff on Chinese value added = $125/30 = 417\%$. The 25% nominal tariff translates to a 417% effective rate on China's actual contribution.
+
+(d) Traditional statistics record the full USD 500 as Chinese exports to the EU, but USD 470 of this represents value added by the US, Taiwan, and South Korea. The bilateral US-China trade imbalance is much smaller in value-added terms than in gross terms. The OECD-WTO TiVA database addresses this by decomposing trade into domestic and foreign value added.
+
+Hong Kong is a re-export hub: its gross trade figures massively overstate domestic value added. Most Hong Kong "exports" are goods produced elsewhere, with Hong Kong adding value through logistics and finance.
+
+</details>
+
+If you get this wrong, revise: [Global Value Chains](#global-value-chains)
+
+### Problem 15: Development Strategies -- ISI vs Export Promotion
+
+Country D considers two strategies:
+- ISI: 50% tariff on imports.
+- EP: 5% tariff with production subsidy of 20 per unit.
+
+Domestic demand: $Q_d = 1000 - 5P$. Supply: $Q_s = -200 + 10P$. World price $P_w = 50$.
+
+(a) Calculate welfare under free trade, ISI, and EP.
+(b) Which strategy has smaller DWL? Why?
+(c) Using South Korea and Latin America as examples, evaluate which strategy is more effective for development.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Free trade:** $P = 50$. $Q_d = 750$, $Q_s = 300$. Imports = 450. CS = 56,250. PS = 4,500. Total welfare = 60,750.
+
+**ISI (50% tariff):** $P = 75$. $Q_d = 625$, $Q_s = 550$. Imports = 75. CS = 39,062.5. PS = 15,125. Tariff revenue = 1,875. Welfare = 56,062.5. DWL = 4,687.5.
+
+**EP (5% tariff + subsidy 20):** Consumer price = 52.5. Producer receives 72.5. $Q_d = 737.5$, $Q_s = 525$. Imports = 212.5. CS = 54,391. PS = 13,781. Subsidy cost = 10,500. Tariff revenue = 531. Net welfare = 58,203. DWL = 2,547.
+
+(b) EP has smaller DWL (2,547 vs 4,687.5). The subsidy distorts production (overproduction) but keeps prices low for consumers. The tariff distorts both production and consumption, creating larger DWL.
+
+(c) **South Korea (EP):** Pursued export-oriented industrialisation from the 1960s. Faced international competition, forcing efficiency. GDP per capita rose from USD 158 (1960) to over USD 30,000 (2020). **Latin America (ISI):** Protected industries became inefficient. Fiscal deficits ballooned. The 1980s "lost decade" of debt crises and stagnation followed.
+
+EP outperforms ISI because: (1) international competition forces efficiency; (2) access to world markets enables scale economies; (3) export earnings provide foreign exchange; (4) EP is self-correcting (uncompetitive firms fail), while ISI rewards inefficiency.
+
+</details>
+
+If you get this wrong, revise: [Development Strategies](#development-strategies)
+

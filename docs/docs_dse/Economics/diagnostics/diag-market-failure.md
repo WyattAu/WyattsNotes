@@ -203,3 +203,149 @@ $\frac{1}{2} \times 0.3(100) \times (100 - 62.5) = \frac{1}{2} \times 30 \times 
 The government should tax driving first because the DWL from overconsumption of driving (\$562.50)
 is far larger than from factory overproduction (\$61.25). This demonstrates that the government
 should prioritise correcting the largest market failures first when resources are limited.
+
+## Additional DSE Exam-Style Questions
+
+### EQ-1: Positive Externalities and Education Subsidy
+
+**Question:** The market for university education has demand $P = 200 - 0.5Q$ and supply $P = 40 + Q$, where $P$ is in thousands of HKD and $Q$ is in thousands of students. University education generates positive externalities (a more educated workforce, lower crime rates, better civic participation) with a constant marginal external benefit of $MEB = 30$. (a) Calculate the market equilibrium quantity and price. (b) Calculate the socially optimal quantity and price. (c) Calculate the Pigouvian subsidy per student needed to achieve the social optimum. (d) Calculate the deadweight loss of the free market outcome.
+
+**Solution:**
+
+(a) Market equilibrium: $200 - 0.5Q = 40 + Q$, $1.5Q = 160$, $Q_m = 106.67$, $P_m = \$146.67$ (thousand).
+
+(b) Social optimum: $MSB = MPB + MEB = 200 - 0.5Q + 30 = 230 - 0.5Q$. Set $MSB = MSC = 40 + Q$.
+
+$230 - 0.5Q = 40 + Q$, $1.5Q = 190$, $Q^* = 126.67$.
+
+Price consumers pay (from demand curve): $P_b = 200 - 0.5(126.67) = \$136.67$.
+Price producers receive (from supply curve): $P_s = 40 + 126.67 = \$166.67$.
+
+(c) The Pigouvian subsidy $= MEB = 30$ (thousand HKD per student).
+
+Verification: With subsidy of 30, the effective demand becomes $P + 30 = 200 - 0.5Q + 30 = 230 - 0.5Q$. Set equal to supply: $230 - 0.5Q = 40 + Q$, which gives $Q = 126.67 = Q^*$. The subsidy works.
+
+Alternatively, the subsidy should equal the MEB at the optimal quantity: $MEB = 30$ (constant), so the subsidy is 30 regardless of the quantity.
+
+(d) DWL of underconsumption:
+
+$$DWL = \frac{1}{2} \times MEB \times (Q^* - Q_m) = \frac{1}{2} \times 30 \times (126.67 - 106.67) = \frac{1}{2} \times 30 \times 20 = 300$$
+
+The DWL is $\$300$ thousand (or $\$300,000$ in absolute terms). This represents the net social benefit that is forgone because the market produces too few university graduates.
+
+### EQ-2: Congestion Charging in Hong Kong
+
+**Question:** A major tunnel in Hong Kong has a demand curve for vehicle crossings of $P = 80 - 0.2Q$ (where $P$ is HKD per crossing and $Q$ is thousands of crossings per hour). The marginal private cost of a crossing is constant at $P = 20$ (fuel, toll). However, each additional vehicle adds to congestion, with marginal external cost $MEC = 0.3Q$. (a) Calculate the free market equilibrium number of crossings. (b) Calculate the socially optimal number of crossings. (c) Calculate the optimal congestion charge. (d) Calculate the reduction in DWL. (e) Evaluate the practical difficulties of implementing congestion charging in Hong Kong.
+
+**Solution:**
+
+(a) Free market: $P = MPC = 20$. Demand: $80 - 0.2Q = 20$, $0.2Q = 60$, $Q_m = 300$ thousand crossings per hour.
+
+(b) Social optimum: $MSC = MPC + MEC = 20 + 0.3Q$. Set $MSC = MSB = 80 - 0.2Q$.
+
+$20 + 0.3Q = 80 - 0.2Q$, $0.5Q = 60$, $Q^* = 120$ thousand crossings per hour.
+
+Price at social optimum: $P^* = 80 - 0.2(120) = \text{HK}\$56$ per crossing.
+
+(c) Optimal congestion charge $= MEC$ at $Q^* = 120$: $t = 0.3 \times 120 = \text{HK}\$36$ per crossing.
+
+Verification: With the charge, the effective private cost becomes $20 + 36 = 56$. At $P = 56$: $Q = (80 - 56)/0.2 = 120 = Q^*$.
+
+(d) DWL without the charge:
+
+$$DWL = \frac{1}{2} \times MEC_{at Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(300) \times (300 - 120) = \frac{1}{2} \times 90 \times 180 = \text{HK}\$8{,}100$$
+
+(thousands, i.e., HK$8.1 million per hour).
+
+With the charge, DWL is eliminated entirely (assuming perfect implementation).
+
+(e) **Practical difficulties in Hong Kong:**
+1. **Political acceptability:** Drivers would strongly oppose any new charge, especially if public transport alternatives are perceived as inadequate. The 2019 experience with the proposed electronic road pricing pilot showed significant public resistance.
+2. **Equity concerns:** A flat congestion charge is regressive -- it represents a larger proportion of income for lower-income drivers. Essential workers (delivery drivers, taxi drivers) who must drive during peak hours would be disproportionately affected.
+3. **Technology and enforcement:** Requires electronic tracking (GPS or license plate recognition), raising privacy concerns. evasion through alternative routes could shift congestion rather than eliminate it.
+4. **Cross-harbour alternatives:** Hong Kong's geography means there are limited alternatives to the major tunnels. If one tunnel is charged, traffic may divert to other tunnels, simply shifting the congestion.
+5. **Dynamic pricing complexity:** The optimal charge varies by time of day and traffic conditions. A static charge is easier to implement but less efficient; dynamic pricing requires sophisticated real-time systems.
+
+### EQ-3: Common Resources and the Tragedy of the Commons
+
+**Question:** A fishing ground is open access. The total cost of fishing as a function of the number of boats $B$ is $TC = 10B + 0.5B^2$ (in thousands of HKD). The total revenue from fishing is $TR = 50B - 0.2B^2$. (a) Calculate the number of boats under open access (where average revenue equals average cost). (b) Calculate the socially optimal number of boats (where marginal revenue equals marginal cost). (c) Explain why open access leads to overfishing. (d) Suggest two policy solutions and explain how they internalise the externality.
+
+**Solution:**
+
+(a) Under open access, boats enter until economic profit is zero: $AR = AC$.
+
+$AR = \frac{TR}{B} = 50 - 0.2B$. $AC = \frac{TC}{B} = 10 + 0.5B$.
+
+$50 - 0.2B = 10 + 0.5B$, $0.7B = 40$, $B_{OA} = 57.14$ boats.
+
+(b) Social optimum: $MR = MC$.
+
+$MR = \frac{dTR}{dB} = 50 - 0.4B$. $MC = \frac{dTC}{dB} = 10 + B$.
+
+$50 - 0.4B = 10 + B$, $1.4B = 40$, $B^* = 28.57$ boats.
+
+(c) Under open access, each boat owner considers only their private cost and revenue, not the externality they impose on others. Each additional boat reduces the catch per boat (because the fish stock is finite), imposing a cost on all other boats. This negative externality means individual boat owners enter even when the marginal social cost exceeds the marginal social benefit, leading to too many boats and overfishing. This is the **tragedy of the commons**: common-pool resources are overexploited because no individual has an incentive to conserve them.
+
+(d) **Policy solution 1 -- ITQs (Individual Transferable Quotas):** The government sets a total allowable catch (corresponding to $B^* = 28.57$ boats) and distributes quotas to fishers. Quotas are tradeable, so the most efficient fishers buy quotas from less efficient ones. This creates property rights over the resource, internalising the externality. Fishers now have an incentive to conserve the fish stock because the quota represents a valuable asset whose future value depends on the sustainability of the stock.
+
+**Policy solution 2 -- Licensing (limited entry):** The government issues a fixed number of fishing licences ($B^* = 28.57$) and restricts access to licence holders. This directly limits the number of boats to the socially optimal level. However, licences are less efficient than ITQs because they do not allow reallocation to more efficient fishers (unless licences are also tradeable).
+
+### EQ-4: Information Asymmetry in Healthcare
+
+**Question:** In the market for health insurance, individuals know their own health status but insurance companies do not. There are two types of individuals: healthy (probability of illness $= 0.1$, medical cost if ill $= \$100{,}000$) and unhealthy (probability of illness $= 0.5$, medical cost if ill $= \$100{,}000$). The population is 60% healthy and 40% unhealthy. Each individual has income of $\$200{,}000$ and utility $U = \sqrt{W}$ where $W$ is wealth. (a) Calculate the actuarially fair premium for each type. (b) If the insurer cannot distinguish between types and must offer a single premium, what premium would it charge? (c) Explain the adverse selection problem that arises. (d) How does mandatory health insurance (as in Hong Kong's Voluntary Health Insurance Scheme) address this problem?
+
+**Solution:**
+
+(a) Expected cost for healthy: $0.1 \times 100{,}000 = \$10{,}000$. Fair premium $= \$10{,}000$.
+
+Expected cost for unhealthy: $0.5 \times 100{,}000 = \$50{,}000$. Fair premium $= \$50{,}000$.
+
+(b) Pooled expected cost $= 0.6 \times 10{,}000 + 0.4 \times 50{,}000 = 6{,}000 + 20{,}000 = \$26{,}000$.
+
+The insurer would charge a pooled premium of $\$26,000$ (plus a loading for admin costs and profit).
+
+(c) At a pooled premium of $\$26{,}000$:
+- Healthy individuals: Expected benefit $= \$10{,}000$, but premium $= \$26{,}000$. They are paying more than their expected cost. Many healthy individuals would choose not to buy insurance (they are better off self-insuring).
+- Unhealthy individuals: Expected benefit $= \$50{,}000$, premium $= \$26{,}000$. They get a good deal and will definitely buy.
+
+As healthy individuals drop out, the risk pool becomes sicker. The insurer must raise the premium, causing more healthy people to leave. This spiral continues until only the unhealthy remain in the pool -- the "adverse selection death spiral." The market may collapse entirely, leaving unhealthy individuals without coverage.
+
+(d) **Mandatory insurance** (or an individual mandate) addresses adverse selection by requiring everyone to buy insurance regardless of health status. This forces healthy individuals into the risk pool, keeping average costs down. Hong Kong's Voluntary Health Insurance Scheme (VHIS) is a step in this direction, though it is voluntary rather than mandatory. Tax incentives for purchasing VHIS-certified plans encourage participation. A fully mandatory system (as in Singapore's Medishield Life) eliminates adverse selection entirely because everyone is in the pool by law. The trade-off is reduced individual choice and the potential for cross-subsidisation from healthy to unhealthy individuals.
+
+### EQ-5: Cost-Benefit Analysis of a Public Project
+
+**Question:** The Hong Kong government is considering building a new MTR line costing HK$150 billion. The line will generate: (i) HK$8 billion per year in fare revenue for 40 years, (ii) HK$3 billion per year in time savings for commuters, (iii) HK$2 billion per year in reduced road congestion and pollution. The discount rate is 4%. (a) Calculate the net present value (NPV) of the project. (b) Calculate the benefit-cost ratio. (c) Should the government proceed with the project? (d) Discuss three non-quantifiable factors that should be considered.
+
+**Solution:**
+
+(a) Annual benefits $= 8 + 3 + 2 = \text{HK}\$13$ billion.
+
+Present value of benefits (40-year annuity at 4%):
+
+$$PV = \frac{C}{r}\left(1 - \frac{1}{(1+r)^n}\right) = \frac{13}{0.04}\left(1 - \frac{1}{(1.04)^{40}}\right)$$
+
+$(1.04)^{40} = 4.8010$. $PV = 325 \times (1 - 0.2083) = 325 \times 0.7917 = \text{HK}\$257.3$ billion.
+
+$NPV = PV_{benefits} - PV_{costs} = 257.3 - 150 = \text{HK}\$107.3$ billion.
+
+(b) Benefit-cost ratio $= \frac{257.3}{150} = 1.72$.
+
+(c) Yes. The NPV is positive (HK$107.3 billion) and the benefit-cost ratio exceeds 1 (1.72), meaning the project generates HK$1.72 of benefits for every HK$1 of cost. The government should proceed.
+
+(d) **Non-quantifiable factors:**
+1. **Equity and accessibility:** The new line may improve access to employment and services for low-income communities, reducing spatial inequality. The distributional impact depends on which areas the line serves.
+2. **Environmental impact:** Construction generates noise, dust, and disruption. The permanent environmental benefit (reduced road traffic) must be weighed against the construction impact. Tunnelling may affect groundwater and heritage sites.
+3. **Strategic planning:** The line may unlock development potential in new areas (e.g., the Northern Metropolis), generating agglomeration economies and land value capture. These dynamic effects are difficult to quantify but may be substantial.
+4. **Contingent liabilities:** Cost overruns are common in large infrastructure projects (Hong Kong's Express Rail Link exceeded its budget significantly). The government must account for the risk of cost escalation.
+
+## Common Pitfalls
+
+1. **Confusing the Pigouvian tax rate with the tax revenue:** The optimal Pigouvian tax equals the marginal external cost at the *optimal* quantity ($Q^*$), not at the market quantity ($Q_m$). Tax revenue equals the tax rate multiplied by the *post-tax* quantity. These are different because the tax changes the quantity.
+
+2. **Vertically summing demands for private goods:** For private goods, market demand is the horizontal summation of individual demands (add quantities at each price). For public goods, it is the vertical summation (add willingness to pay at each quantity). Mixing these up is a common error in DSE exams.
+
+3. **Assuming government intervention always improves welfare:** Government intervention can itself create inefficiency: regulatory capture (regulators serve the industry they regulate), information problems (government has imperfect information about optimal tax levels), and bureaucratic costs. The DSE often requires evaluating whether government intervention actually improves on the market outcome.
+
+4. **Ignoring the second-best principle:** If there are multiple market failures, correcting one does not necessarily improve welfare. In a second-best world with pre-existing distortions (e.g., taxes, other externalities), removing one distortion can make things worse. This is why cost-benefit analysis is important for specific policy proposals.
+
+5. **Confusing public goods with publicly provided goods:** A public good is defined by non-excludability and non-rivalry (e.g., national defence, street lighting). Many goods provided by the government (e.g., public healthcare, public education) are actually private goods (rival and excludable) that are publicly provided for equity reasons. They are not public goods in the economic sense.

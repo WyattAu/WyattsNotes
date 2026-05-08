@@ -1054,3 +1054,255 @@ If you get this wrong, revise: [Fiscal Policy vs Monetary Policy](#fiscal-policy
 
 </details>
 
+---
+
+## Extended Problem Set: Advanced Fiscal and Monetary Policy
+
+### Problem 9: Balanced Budget Multiplier
+
+The government increases both spending and taxes by HK$100 billion simultaneously. The MPC is 0.75.
+
+(a) Calculate the change in equilibrium GDP from the spending increase alone.
+(b) Calculate the change in equilibrium GDP from the tax increase alone.
+(c) Calculate the net change in GDP. What is the balanced budget multiplier?
+
+<details>
+<summary>Solution</summary>
+
+(a) Spending multiplier $= \frac{1}{1 - 0.75} = 4$. Change from spending $= 4 \times 100 = \text{HK}\$400$ billion.
+
+(b) Tax multiplier $= \frac{-0.75}{1 - 0.75} = -3$. Change from tax $= -3 \times 100 = -\text{HK}\$300$ billion.
+
+(c) Net change $= 400 - 300 = \text{HK}\$100$ billion.
+
+The balanced budget multiplier $= 1$. Equal increases in government spending and taxation increase GDP by exactly the amount of the increase. This is because the spending injection is fully absorbed by the economy, while the tax increase only reduces consumption by the MPC fraction.
+
+</details>
+
+If you get this wrong, revise: [Fiscal Multipliers](#fiscal-multipliers)
+
+### Problem 10: Crowding Out with a Loanable Funds Model
+
+An economy has national saving $S = 200 + 5r$ (where $r$ is the real interest rate in %) and planned investment $I = 500 - 10r$. The government initially has a balanced budget ($G = T$). It then increases spending by HK$80 billion, financing it entirely by borrowing (no tax change).
+
+(a) Calculate the initial equilibrium interest rate and investment.
+(b) Calculate the new equilibrium interest rate and investment after the spending increase.
+(c) Calculate the amount of crowding out.
+(d) Explain why complete crowding out would occur if saving is perfectly interest-inelastic.
+
+<details>
+<summary>Solution</summary>
+
+(a) Initial: $S = I$. $200 + 5r = 500 - 10r$. $15r = 300$. $r = 20\%$. $I = 500 - 10(20) = 300$.
+
+(b) Government borrowing of 80 reduces national saving by 80 at every interest rate. New saving: $S' = 200 + 5r - 80 = 120 + 5r$.
+
+$S' = I$: $120 + 5r = 500 - 10r$. $15r = 380$. $r = 25.33\%$. $I' = 500 - 10(25.33) = 246.7$.
+
+(c) Crowding out $= I - I' = 300 - 246.7 = \text{HK}\$53.3$ billion.
+
+The HK$80 billion in government spending crowds out HK$53.3 billion in private investment. The net increase in aggregate demand $= 80 - 53.3 = 26.7$ billion.
+
+(d) If saving is perfectly interest-inelastic ($S$ does not respond to $r$), then any government borrowing reduces the pool of loanable funds available for private investment by exactly the amount borrowed. The interest rate rises until investment falls by the full amount of the government borrowing. In this case, the fiscal multiplier is zero: government spending completely crowds out private spending.
+
+</details>
+
+If you get this wrong, revise: [Crowding Out](#crowding-out)
+
+### Problem 11: Fiscal Policy in Hong Kong Under the Currency Board
+
+Hong Kong's government increases infrastructure spending by HK$50 billion during a recession. The HKD is pegged at 7.8 to the USD. The MPC is 0.7, the marginal propensity to import is 0.35, and there is no income tax.
+
+(a) Calculate the fiscal multiplier.
+(b) Calculate the change in equilibrium GDP.
+(c) Explain why the multiplier may be smaller in Hong Kong than in a larger, less open economy.
+(d) If the US Federal Reserve simultaneously raises interest rates, explain the interaction effect on Hong Kong's economy.
+
+<details>
+<summary>Solution</summary>
+
+(a) With imports (and no tax): multiplier $= \frac{1}{1 - MPC + MPM} = \frac{1}{1 - 0.70 + 0.35} = \frac{1}{0.65} = 1.538$.
+
+(b) $\Delta GDP = 1.538 \times 50 = \text{HK}\$76.9$ billion.
+
+(c) Hong Kong's multiplier (1.538) is much smaller than a closed economy's multiplier ($\frac{1}{1-0.7} = 3.33$). This is because Hong Kong is extremely open: the MPM of 0.35 means 35 cents of every additional dollar of income leaks out as imports. This "import leakage" significantly dampens the multiplier effect. Additionally, Hong Kong's small size means supply constraints may limit the output response (especially in the construction sector for infrastructure projects).
+
+(d) If the Fed raises rates simultaneously, the HKMA must follow to maintain the peg. Higher Hong Kong interest rates would:
+- Raise the cost of borrowing for the infrastructure projects (the government and its contractors face higher financing costs).
+- Reduce private consumption and investment, partially offsetting the fiscal expansion.
+- Appreciate the HKD within the Convertibility Zone, reducing net exports.
+
+The net effect is ambiguous: the fiscal expansion stimulates the economy while the monetary contraction (imported from the Fed) dampens it. The fiscal multiplier would be smaller than the 1.538 calculated above because the interest rate increase introduces additional crowding out.
+
+</details>
+
+If you get this wrong, revise: [Fiscal Policy Effectiveness](#fiscal-policy-effectiveness)
+
+### Problem 12: Quantitative Easing and the Money Supply
+
+The HKMA conducts open market operations, purchasing HK$30 billion of Exchange Fund Bills from commercial banks. The required reserve ratio is 5%. Banks hold 3% of deposits as excess reserves, and the public's currency-deposit ratio is 10%.
+
+(a) Calculate the money multiplier.
+(b) Calculate the maximum change in the broad money supply.
+(c) If banks decide to hold 8% excess reserves (a conservative posture during uncertainty), recalculate the money multiplier and the change in broad money.
+(d) Explain why QE may be less effective during a financial crisis.
+
+<details>
+<summary>Solution</summary>
+
+(a) Money multiplier with excess reserves and currency drain:
+
+$$m = \frac{1 + cr}{rrr + er + cr} = \frac{1 + 0.10}{0.05 + 0.03 + 0.10} = \frac{1.10}{0.18} = 6.11$$
+
+(b) $\Delta M = m \times \Delta B = 6.11 \times 30 = \text{HK}\$183.3$ billion.
+
+(c) With $er = 0.08$:
+
+$$m = \frac{1.10}{0.05 + 0.08 + 0.10} = \frac{1.10}{0.23} = 4.78$$
+
+$\Delta M = 4.78 \times 30 = \text{HK}\$143.5$ billion.
+
+The increase in excess reserves from 3% to 8% reduces the money multiplier from 6.11 to 4.78 and the broad money expansion from HK$183.3B to HK$143.5B -- a reduction of HK$39.8 billion. This demonstrates how banks' risk appetite affects the transmission of monetary policy.
+
+(d) During a financial crisis:
+1. Banks become risk-averse and hold large excess reserves rather than lending them out.
+2. Borrowers (firms and households) are pessimistic about the future and reduce borrowing even at low rates.
+3. The velocity of money may fall (people hoard cash), offsetting the increase in money supply.
+4. Asset prices may be depressed, reducing collateral values and further constraining lending.
+5. The normal interest rate channel may be exhausted (zero lower bound), forcing reliance on QE which works primarily through portfolio rebalancing and signalling effects.
+
+</details>
+
+If you get this wrong, revise: [Monetary Policy Tools](#monetary-policy-tools)
+
+### Problem 13: AD-AS Model with Supply Shocks
+
+An economy is in long-run equilibrium at $P = 100$, $Y = 1000$ (potential output). An adverse supply shock (e.g., an oil price increase) shifts the SRAS leftward by 5% at every price level. The SRAS is relatively flat: a 1% increase in output above potential raises prices by 0.5%. The government has MPC $= 0.8$ and the central bank follows a strict inflation target of 2%.
+
+(a) Calculate the short-run effect on output and price level.
+(b) If the government uses fiscal policy to restore output to potential, what is the cost in terms of inflation?
+(c) If the central bank tightens monetary policy to control inflation, what is the cost in terms of output?
+(d) Explain the concept of stagflation and why it presents a policy dilemma.
+
+<details>
+<summary>Solution</summary>
+
+(a) The SRAS shift reduces output by approximately 5% and raises prices. New short-run equilibrium: $Y_{SR} = 950$, $P_{SR} = 100 + 0.5 \times 50 = 125$ (using the given Phillips curve relationship).
+
+More precisely, the adverse supply shock shifts SRAS left. At the original price level $P = 100$, firms now produce 5% less: $Y = 950$. The resulting excess demand pushes prices up along the new SRAS until a new short-run equilibrium is reached. Output falls below potential and prices rise -- this is stagflation.
+
+(b) To restore $Y = 1000$ through fiscal policy, the government must shift AD rightward. The required AD shift depends on the SRAS slope. With a relatively flat SRAS, a moderate AD shift restores output but causes significant inflation (prices rise above 125).
+
+(c) To control inflation back to 2% (price level target $= 100 \times 1.02 = 102$), the central bank must reduce AD. This requires raising interest rates, which reduces investment and consumption. Output falls further below 950, creating a deeper recession.
+
+(d) Stagflation -- simultaneous high inflation and high unemployment (output below potential) -- presents a policy dilemma because demand-side policies cannot solve both problems simultaneously:
+- Expansionary policy (increase AD) reduces unemployment but worsens inflation.
+- Contractionary policy (reduce AD) reduces inflation but worsens unemployment.
+
+The only way to resolve stagflation is through supply-side policies that shift SRAS rightward (e.g., reducing oil dependency, improving technology, deregulating markets) or by waiting for the supply shock to dissipate (e.g., oil prices falling back).
+
+</details>
+
+If you get this wrong, revise: [AD-AS Model](#ad-as-model)
+
+</details>
+
+---
+
+## Additional Problems: Fiscal Policy and Monetary Policy Integration
+
+### Problem 14: Government Debt Sustainability
+
+Country G has debt-to-GDP ratio of 90%, nominal GDP growth of 5%, nominal interest rate on debt of 4%, and a primary deficit of 2% of GDP.
+
+(a) Using the debt dynamics equation, determine whether the debt ratio is rising or falling.
+(b) Calculate the primary balance required to stabilise the debt ratio at 90%.
+(c) If the government reduces the primary deficit to zero, how long will it take for the debt ratio to fall to 60%?
+(d) Apply this analysis to Japan (debt/GDP > 250%) and explain why Japan has not faced a debt crisis.
+
+<details>
+<summary>Solution</summary>
+
+(a) $\Delta d \approx (r - g) \times d + p = (0.04 - 0.05) \times 0.90 + 0.02 = -0.009 + 0.02 = 0.011$.
+
+The debt ratio is **rising** by 1.1 percentage points per year. Despite the favourable interest-growth differential ($g > r$), the primary deficit drives the ratio upward.
+
+(b) For stabilisation: $\Delta d = 0$. $(r - g) \times d + p = 0$. $p = -(r - g) \times d = -(-0.01) \times 0.90 = 0.009 = 0.9\%$.
+
+The government needs a primary surplus of 0.9% of GDP (or a primary deficit no larger than 0.9%).
+
+(c) With primary balance = 0: $\Delta d = (r - g) \times d = -0.01d$.
+
+This is a differential equation: $\frac{dd}{dt} = -0.01d$. Solution: $d(t) = 0.90 \times e^{-0.01t}$.
+
+Set $d(t) = 0.60$: $0.60 = 0.90 \times e^{-0.01t}$. $e^{-0.01t} = 0.667$. $-0.01t = \ln(0.667) = -0.405$. $t = 40.5$ years.
+
+It takes approximately 40.5 years for the debt ratio to fall from 90% to 60% with a balanced primary budget. This illustrates that debt reduction is a very slow process.
+
+(d) **Japan's situation:** Japan has a debt/GDP ratio exceeding 250%, far above the 90% threshold often cited as dangerous. Yet Japan has not faced a debt crisis because:
+1. **Most debt is domestically held:** Over 90% of Japanese government bonds (JGBs) are held by Japanese institutions (banks, insurance companies, the Bank of Japan). There is no dependence on foreign investors who could suddenly withdraw.
+2. **Low interest rates:** The Bank of Japan's yield curve control policy keeps JGB yields near zero. Even with a debt/GDP of 250%, the interest burden is only about 1% of GDP ($0.25 \times 0.004 = 0.001$, assuming a 0.4% yield).
+3. **Current account surplus:** Japan runs a persistent current account surplus, meaning it is a net creditor to the world. The government can always borrow from its own citizens' savings.
+4. **High domestic savings rate:** Japan's aging population saves heavily, providing a ready source of government financing.
+
+**Risk:** Japan's situation is sustainable as long as domestic investors continue to buy JGBs at low yields. If inflation rises (forcing the BoJ to raise rates) or if the aging population dissaves (reducing domestic savings), the dynamics could change rapidly.
+
+</details>
+
+If you get this wrong, revise: [Government Debt](#government-debt)
+
+### Problem 15: Supply-Side Policy Evaluation
+
+An economy faces the following problems: potential GDP growth has fallen from 3% to 1.5% over the past decade, productivity growth is stagnant, and youth unemployment is 15%.
+
+The government proposes: (i) reduce corporate tax from 20% to 15%, (ii) increase public investment in infrastructure by 1% of GDP, (iii) introduce apprenticeship programmes for vocational training.
+
+(a) Explain how each policy affects aggregate supply (both short-run and long-run).
+(b) Calculate the fiscal cost of the corporate tax cut if corporate tax revenue is currently 4% of GDP and GDP is USD 2,000 billion. Use a tax elasticity of 0.4.
+(c) Calculate the long-run GDP impact if the infrastructure investment has a fiscal multiplier of 1.5 and also increases potential GDP by 0.3% per year.
+(d) Critically evaluate supply-side policies as a solution to secular stagnation.
+
+<details>
+<summary>Solution</summary>
+
+(a) (i) **Corporate tax cut:** Reduces the cost of capital, encouraging investment. In the SRAS, lower costs shift SRAS right (lower prices, higher output). In the long run, higher investment increases the capital stock, shifting LRAS right (higher potential GDP).
+
+(ii) **Infrastructure investment:** Increases AD in the short run (government spending). Also increases AS by improving productivity (better transport reduces logistics costs, reliable power reduces production disruptions). The supply-side effect shifts both SRAS and LRAS right.
+
+(iii) **Apprenticeship programmes:** Reduces structural unemployment by improving the match between workers' skills and employer needs. Shifts LRAS right by increasing the effective labour supply (more workers with relevant skills).
+
+(b) Current corporate tax revenue $= 0.04 \times 2000 = \text{USD } 80$ billion.
+
+With a 5 percentage point cut (from 20% to 15%, a 25% reduction in the rate): the tax base expands due to the lower rate. Using a tax elasticity of 0.4 (the tax base expands by 0.4% for every 1% reduction in the rate):
+
+Base expansion $= 0.4 \times 25\% = 10\%$. New tax base $= 1.10 \times$ original base.
+
+New revenue $= 0.15 \times 1.10 \times \text{original base} = 0.165 \times \text{original base}$.
+
+Original base $= 80 / 0.20 = 400$ billion. New revenue $= 0.165 \times 400 = 66$ billion.
+
+Fiscal cost $= 80 - 66 = \text{USD } 14$ billion (0.7% of GDP). The Laffer curve effect recovers 30% of the static revenue loss.
+
+(c) **Short-run demand effect:** $\Delta Y = 1.5 \times 20 = \text{USD } 30$ billion (1.5% of GDP).
+
+**Long-run supply effect:** 0.3% higher potential GDP per year from infrastructure. After 10 years, cumulative supply boost $= (1.003^{10} - 1) \times 2000 = 0.034 \times 2000 = \text{USD } 61$ billion (3% above baseline).
+
+Total effect after 10 years: demand effect (one-time) + supply effect (cumulative) $= 30 + 61 = \text{USD } 91$ billion increase in GDP.
+
+(d) **Evaluation of supply-side policies for secular stagnation:**
+
+*Strengths:*
+- Supply-side policies address the root cause of slow growth (low productivity, low investment) rather than treating symptoms (low demand).
+- Infrastructure investment has both demand and supply effects, providing a "double dividend."
+- Unlike demand stimulus, supply-side policies do not create inflationary pressure.
+
+*Limitations:*
+- Supply-side policies have long implementation lags (infrastructure takes 5--15 years, education reforms take a generation).
+- The effectiveness of tax cuts in stimulating investment depends on business confidence and the availability of profitable investment opportunities (which may be lacking during secular stagnation).
+- Supply-side policies cannot address demand shortfalls in the short run. A comprehensive approach combines supply-side reform with demand management.
+- "Secular stagnation" (a persistent shortfall of aggregate demand due to demographic headwinds, inequality, and low natural interest rates) may require structural demand-side policies (fiscal expansion, redistribution) in addition to supply-side reforms.
+
+</details>
+
+If you get this wrong, revise: [Supply-Side Policy](#supply-side-policy)
+

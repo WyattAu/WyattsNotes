@@ -1136,3 +1136,153 @@ If you get this wrong, revise: [Cost-Benefit Analysis of Government Intervention
 
 </details>
 
+---
+
+## Extended Problem Set: Advanced Market Failure Analysis
+
+### Problem 9: Coase Theorem and Property Rights
+
+A factory produces noise that disturbs 100 nearby residents. The factory's profit from operating is HK$5 million per year. Each resident would be willing to pay HK$80,000 per year for silence. The cost of installing soundproofing at the factory is HK$3 million per year.
+
+(a) Calculate the total cost of the noise externality.
+(b) Is it efficient for the factory to install soundproofing? Explain using the Coase theorem.
+(c) If transaction costs are zero and the residents have the right to silence, what outcome does the Coase theorem predict?
+(d) If transaction costs are high (e.g., organising 100 residents is costly), explain why the Coase theorem may not work and government intervention may be needed.
+
+<details>
+<summary>Solution</summary>
+
+(a) Total external cost $= 100 \times 80{,}000 = \text{HK}\$8$ million per year.
+
+(b) The factory earns HK$5M from operating but creates HK$8M in external costs. Net social benefit of operating without soundproofing $= 5 - 8 = -\text{HK}\$3$ million (negative, so it is inefficient).
+
+With soundproofing: factory earns $5 - 3 = \text{HK}\$2$ million (profit after soundproofing cost). External cost $= 0$. Net social benefit $= \text{HK}\$2$ million (positive). So it is efficient for the factory to install soundproofing and continue operating.
+
+(c) Under the Coase theorem, if residents have the right to silence:
+- The factory can offer to pay residents for the right to make noise. If the factory pays each resident at least HK$80,000, the total payment would be at least HK$8M, which exceeds the factory's profit (HK$5M). The factory would not do this.
+- Alternatively, the factory can install soundproofing at HK$3M, which is less than its profit (HK$5M). The factory installs soundproofing and continues to earn HK$2M.
+- The efficient outcome is achieved: soundproofing is installed, the factory operates, and residents enjoy silence.
+
+(d) If transaction costs are high:
+- Organising 100 residents to negotiate is costly (time, legal fees, coordination problems).
+- Free riders may refuse to contribute to negotiation costs, hoping others will bear the burden.
+- Some residents may hold out for higher payments, blocking the deal.
+- Information asymmetry: residents may not know the true cost of soundproofing or the factory's profit.
+
+When transaction costs are significant, the Coase theorem's prediction of efficient bargaining fails. Government intervention (e.g., noise regulations requiring soundproofing, or a Pigouvian tax equal to the external cost) can achieve the efficient outcome at lower cost than private bargaining.
+
+</details>
+
+If you get this wrong, revise: [Coase Theorem and Property Rights](#coase-theorem-and-property-rights)
+
+### Problem 10: Merit Goods and Demerit Goods
+
+Cigarettes are a demerit good. The market demand is $Q_d = 500 - 5P$ and supply is $Q_s = -100 + 10P$ (in thousands of packs per month, $P$ in HKD). Each pack of cigarettes generates an external cost of HK$8 (healthcare costs, second-hand smoke).
+
+(a) Calculate the free market equilibrium.
+(b) Calculate the socially optimal quantity.
+(c) Calculate the optimal specific tax and the resulting deadweight loss reduction.
+(d) If the government also imposes a ban on smoking in public places (reducing demand by 15% at every price), calculate the new equilibrium with both policies in place.
+
+<details>
+<summary>Solution</summary>
+
+(a) $500 - 5P = -100 + 10P$. $600 = 15P$. $P^* = 40$. $Q^* = 500 - 200 = 300$ thousand packs.
+
+(b) Social optimum: $MSC = MPC + MEC$. New supply: $Q_s = -100 + 10(P - 8) = -100 + 10P - 80 = -180 + 10P$.
+
+$500 - 5P = -180 + 10P$. $680 = 15P$. $P^*_{social} = 45.33$. $Q^*_{social} = 500 - 226.67 = 273.33$ thousand packs.
+
+(c) Optimal tax $= MEC = \text{HK}\$8$ per pack.
+
+New equilibrium with tax: $500 - 5P_b = -100 + 10(P_b - 8)$. $500 - 5P_b = -100 + 10P_b - 80$. $680 = 15P_b$. $P_b = 45.33$. $P_s = 37.33$. $Q = 273.33$.
+
+DWL before tax $= 0.5 \times 8 \times (300 - 273.33) = 0.5 \times 8 \times 26.67 = 106.7$.
+
+With tax, the externality is fully internalised, so DWL from the externality is eliminated. Total DWL $= 0$ (assuming no other distortions).
+
+(d) Demand falls by 15%: $Q_d' = 0.85(500 - 5P) = 425 - 4.25P$.
+
+With tax: $425 - 4.25P_b = -180 + 10(P_b - 8)$. $425 - 4.25P_b = -180 + 10P_b - 80$. $685 = 14.25P_b$. $P_b = 48.07$. $Q = 425 - 4.25(48.07) = 425 - 204.3 = 220.7$.
+
+The combination of tax and public smoking ban reduces consumption from 300 to 220.7 thousand packs (a 26.4% reduction). The price to consumers rises from 40 to 48.07. The ban amplifies the effect of the tax by reducing demand directly (shifting the demand curve inward), providing a public health benefit beyond what the tax alone achieves.
+
+</details>
+
+If you get this wrong, revise: [Government Intervention Methods](#government-intervention-methods)
+
+### Problem 11: Tragedy of the Commons -- Fisheries Management
+
+Hong Kong's fishing grounds are open access. The relationship between the number of fishing boats $B$ and the total catch $C$ (in tonnes per month) is $C = 100B - 0.5B^2$. The cost per boat per month is HK$200,000$, and the market price of fish is HK$10,000 per tonne.
+
+(a) Calculate the number of boats under open access.
+(b) Calculate the socially optimal number of boats.
+(c) Calculate the maximum sustainable yield.
+(d) Design a policy to achieve the socially optimal outcome, explaining how it addresses the externality.
+
+<details>
+<summary>Solution</summary>
+
+(a) Under open access, boats enter until profit per boat $= 0$: Average Revenue per boat $=$ Average Cost.
+
+Total revenue $= 10{,}000 \times C = 10{,}000(100B - 0.5B^2) = 1{,}000{,}000B - 5000B^2$.
+
+AR per boat $= \frac{TR}{B} = 1{,}000{,}000 - 5000B$.
+
+Set AR $=$ AC: $1{,}000{,}000 - 5000B = 200{,}000$. $5000B = 800{,}000$. $B_{OA} = 160$ boats.
+
+(b) Social optimum: Marginal Revenue $=$ Marginal Cost.
+
+$MR = \frac{dTR}{dB} = 1{,}000{,}000 - 10{,}000B$. $MC = 200{,}000$ (cost per boat).
+
+$1{,}000{,}000 - 10{,}000B = 200{,}000$. $10{,}000B = 800{,}000$. $B^* = 80$ boats.
+
+(c) Maximum sustainable yield: maximise $C = 100B - 0.5B^2$.
+
+$\frac{dC}{dB} = 100 - B = 0$. $B_{MSY} = 100$ boats. $C_{max} = 100(100) - 0.5(100)^2 = 10000 - 5000 = 5000$ tonnes.
+
+(d) **Policy: Individual Transferable Quotas (ITQs).**
+
+The government sets a total allowable catch corresponding to $B^* = 80$ boats: $C^* = 100(80) - 0.5(80)^2 = 8000 - 3200 = 4800$ tonnes. The government issues ITQs totalling 4800 tonnes, distributed among existing fishers. Quotas are tradeable.
+
+This works because: (i) it creates property rights over the fish stock, internalising the externality (each fisher now faces the full social cost of their fishing on others); (ii) tradeable quotas allow the most efficient fishers to buy additional quota, maximising the value of the fishery; (iii) fishers have an incentive to conserve the stock because the quota represents a valuable asset whose future value depends on sustainability. Hong Kong's Agriculture, Fisheries and Conservation Department has explored ITQ systems as part of its fisheries management strategy.
+
+</details>
+
+If you get this wrong, revise: [Common Resources](#common-resources)
+
+### Problem 12: Information Asymmetry and Warranties
+
+A new electronics store sells laptops. High-quality laptops cost the store HK$6,000 and are valued by consumers at HK$10,000. Low-quality laptops cost HK$3,000 and are valued by consumers at HK$4,000. 60% of laptops in the market are high quality and 40% are low quality. Consumers cannot distinguish quality before purchase.
+
+(a) What is the expected value of a laptop to a risk-neutral consumer?
+(b) If the store sells all laptops at a single price, what is the highest price it can charge? What happens to the quality mix?
+(c) The store offers a warranty: it will replace any faulty laptop within one year. High-quality laptops have a 10% failure rate; low-quality laptops have a 50% failure rate. The replacement cost to the store equals the wholesale cost. Calculate the expected warranty cost per laptop for each type.
+(d) Can the warranty serve as a signalling device to separate high-quality from low-quality laptops?
+
+<details>
+<summary>Solution</summary>
+
+(a) Expected value $= 0.6 \times 10{,}000 + 0.4 \times 4{,}000 = 6000 + 1600 = \text{HK}\$7{,}600$.
+
+(b) The highest single price the store can charge is HK$7,600 (the expected value to consumers). At this price: high-quality laptops cost HK$6,000 (profit = 1,600 each). Low-quality laptops cost HK$3,000 (profit = 4,600 each).
+
+Both types are profitable, so the store sells both. However, this assumes the store is willing to sell at a price below the high-quality valuation (10,000). If the store tried to charge HK$10,000, consumers would only buy if they knew the laptop was high-quality, which they do not.
+
+(c) Expected warranty cost for high-quality laptop $= 0.10 \times 6{,}000 = \text{HK}\$600$.
+Expected warranty cost for low-quality laptop $= 0.50 \times 3{,}000 = \text{HK}\$1{,}500$.
+
+(d) The warranty can serve as a signalling device if the cost of offering it differs between types. The key condition for a separating equilibrium is that the warranty cost for low-quality producers must be high enough that they prefer not to offer it.
+
+If the store offers the warranty and charges a premium: the total cost for high-quality $= 6000 + 600 = 6600$. The total cost for low-quality $= 3000 + 1500 = 4500$.
+
+If the warranty price is set at HK$9,000 (with warranty), high-quality profit $= 9000 - 6600 = 2400$. Low-quality profit $= 9000 - 4500 = 4500$. Both still profit, so the warranty does not separate the types at this price.
+
+For separation, the warranty cost must be large enough relative to the quality difference. If the store offers a "premium warranty" with full replacement at no cost to the consumer, the cost per high-quality laptop $= 600 + 600 = 1200$ and per low-quality $= 1500 + 1500 = 3000$. The price differential needed for separation depends on the specific market structure.
+
+In practice, warranties do serve as partial signals because: (i) high-quality producers are more willing to offer generous warranties (lower expected cost), (ii) the warranty period can be calibrated so that only high-quality producers find it profitable, and (iii) reputation effects make warranties more valuable for firms that plan to stay in the market.
+
+</details>
+
+If you get this wrong, revise: [Information Asymmetry](#information-asymmetry)
+

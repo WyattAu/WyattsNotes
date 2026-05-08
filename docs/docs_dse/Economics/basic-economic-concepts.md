@@ -1232,3 +1232,170 @@ If you get this wrong, revise: [Division of Labour](#division-of-labour)
 
 </details>
 
+---
+
+## Extended Problem Set: Advanced Basic Economic Concepts
+
+### Problem 9: PPC and Economic Growth
+
+A country's PPC for capital goods ($K$) and consumer goods ($C$) is given by $K = 400 - C - 0.005C^2$, where $0 \le C \le 200$. Currently producing at $C = 100$, $K = 250$.
+
+(a) Verify that $(100, 250)$ lies on the PPC.
+(b) Calculate the opportunity cost of producing the 101st unit of consumer goods.
+(c) If the country invests in new technology, shifting the PPC outward to $K = 480 - C - 0.005C^2$, by how much does the maximum possible output of each good increase?
+(d) Explain why the PPC is concave and relate this to the concept of increasing opportunity cost using a Hong Kong example.
+
+<details>
+<summary>Solution</summary>
+
+(a) At $C = 100$: $K = 400 - 100 - 0.005(10000) = 400 - 100 - 50 = 250$. Verified.
+
+(b) The marginal rate of transformation (opportunity cost) is $MRT = \left|\frac{dK}{dC}\right| = |{-1 - 0.01C}| = 1 + 0.01C$.
+
+At $C = 100$: $MRT = 1 + 1 = 2$. The 101st unit of consumer goods costs 2 units of capital goods in opportunity cost.
+
+(c) New PPC intercept: when $C = 0$, $K = 480$. When $K = 0$: $0 = 480 - C - 0.005C^2$. $0.005C^2 + C - 480 = 0$. $C = \frac{-1 + \sqrt{1 + 9.6}}{0.01} = \frac{-1 + \sqrt{10.6}}{0.01} = \frac{-1 + 3.256}{0.01} = 225.6$.
+
+Maximum capital goods: $400 \to 480$ (increase of 80 units, 20%). Maximum consumer goods: $200 \to 225.6$ (increase of 25.6 units, 12.8%).
+
+(d) The PPC is concave because resources are not perfectly adaptable to producing both goods. As the economy shifts resources from capital goods to consumer goods, it must first use resources best suited to consumer goods production (low opportunity cost). As it continues shifting, it must use resources increasingly less suited to consumer goods (high opportunity cost). This is the **law of increasing opportunity cost**.
+
+**Hong Kong example:** In the 1970s, Hong Kong shifted resources from manufacturing to services. Initially, workers in low-skill assembly could be retrained for service jobs relatively easily (low opportunity cost). As the shift continued, the remaining manufacturing workers had skills very specific to manufacturing (e.g., textile machine operators) that were harder to transfer to services, requiring more retraining and creating higher opportunity costs.
+
+</details>
+
+If you get this wrong, revise: [PPC and Opportunity Cost](#ppc-and-opportunity-cost)
+
+### Problem 10: Mixed Economy -- Government Intervention in Hong Kong Housing
+
+Hong Kong's housing market has the following characteristics: average flat price $= $HK$6$ million, median household income $= $HK$27,500/month, price-to-income ratio $= 18.2$ (one of the highest in the world). The government provides public rental housing (PRH) to 30% of the population at average rent of $HK$2,000/month.
+
+(a) Calculate how many months of income are needed to buy an average flat.
+(b) Explain the market failure that justifies government provision of public housing.
+(c) Calculate the implicit subsidy received by a PRH household if the market rent for an equivalent flat is $HK$15,000/month.
+(d) Evaluate whether expanding public housing is the best solution to Hong Kong's affordability crisis.
+
+<details>
+<summary>Solution</summary>
+
+(a) Months of income $= 6{,}000{,}000 / 27{,}500 = 218$ months $= 18.2$ years. This assumes the household saves 100% of income, which is impossible. With a 50% savings rate, it would take 36.4 years.
+
+(b) The market failures justifying government intervention in housing:
+
+1. **Positive externalities:** Adequate housing improves health outcomes, educational attainment, and productivity. These benefits accrue to society, not just the homeowner, meaning the private market underprovides housing relative to the social optimum.
+
+2. **Equity concern (not strictly a market failure):** Housing is a basic necessity. The market allocates housing based on willingness to pay, which is correlated with income. Low-income households cannot afford adequate housing even though the social benefit of housing them exceeds the private cost. This is a merit good argument.
+
+3. **Land market imperfections:** Hong Kong's land supply is controlled by the government, and the land market is subject to speculation and oligopolistic practices by major developers. The resulting high land prices distort the housing market, creating a market failure.
+
+4. **Information asymmetry:** Quality and safety standards in housing are difficult for individual buyers/renters to assess, creating a role for government regulation (building codes, safety inspections).
+
+(c) Implicit monthly subsidy $= 15{,}000 - 2{,}000 = \text{HK}\$13{,}000$.
+
+Annual subsidy $= 13{,}000 \times 12 = \text{HK}\$156{,}000$.
+
+With approximately 2 million PRH residents (30% of 7.5 million population, ~700,000 households): total annual subsidy $= 700{,}000 \times 156{,}000 = \text{HK}\$109.2$ billion. This is a substantial fiscal commitment.
+
+(d) **Evaluation:**
+
+*Arguments for expanding PRH:*
+- Provides immediate relief for low-income households who cannot afford private housing.
+- The long waiting list (average 5.5 years) indicates significant unmet demand.
+- Reduces income inequality and improves social mobility.
+
+*Arguments against relying solely on PRH:*
+- Long construction lag (5--10 years from planning to completion).
+- Concentrates low-income households in specific estates, potentially creating social segregation.
+- Does not address the root cause (high land prices).
+- Large fiscal burden.
+
+*Alternative/complementary approaches:*
+- Increase land supply to reduce the equilibrium price of private housing.
+- Starter homes / subsidised homeownership (Home Ownership Scheme).
+- Rent control (with caveats about quality deterioration).
+- Mortgage interest deduction (though this may inflate prices).
+
+A comprehensive approach combining supply-side reform (land release) with targeted demand-side support (HOS, PRH) is likely more effective than any single policy.
+
+</details>
+
+If you get this wrong, revise: [Economic Systems and Government Intervention](#economic-systems-and-government-intervention)
+
+### Problem 11: Specialisation and Trade with Unequal Country Sizes
+
+Country A (large) can produce 1000 wheat or 500 cloth. Country B (small) can produce 100 wheat or 400 cloth.
+
+(a) Calculate opportunity costs and identify comparative advantages.
+(b) If they specialise and trade at 1 wheat $= 0.8$ cloth, show gains from trade.
+(c) What happens if Country B is so small that its entire production is insufficient to meet Country A's import demand? Does trade still benefit both?
+(d) Relate this to the Hong Kong-mainland China trade relationship.
+
+<details>
+<summary>Solution</summary>
+
+(a) Opportunity cost of 1 wheat:
+- Country A: $500/1000 = 0.5$ cloth.
+- Country B: $400/100 = 4$ cloth.
+
+Country A has a **comparative advantage in wheat** (lower opportunity cost: 0.5 vs 4). Country B has a **comparative advantage in cloth** (opportunity cost of 1 cloth: A $= 2$ wheat, B $= 0.25$ wheat).
+
+(b) Without trade (50/50 split): A produces 500 wheat, 250 cloth. B produces 50 wheat, 200 cloth. World: 550 wheat, 450 cloth.
+
+With specialisation: A produces 1000 wheat, 0 cloth. B produces 0 wheat, 400 cloth. World: 1000 wheat, 400 cloth.
+
+At 1 wheat $= 0.8$ cloth: If A exports 200 wheat to B for 160 cloth:
+A consumes 800 wheat, 160 cloth (gains: +300 wheat, -90 cloth). B consumes 200 wheat, 240 cloth (gains: +150 wheat, +40 cloth). Both gain.
+
+(c) If A wants to import 500 cloth (half its pre-trade consumption), B can only supply 400 cloth (its entire capacity). In this case, trade is limited by B's capacity. B specialises fully in cloth (400 units), A partially specialises (produces some cloth itself).
+
+A produces 600 wheat, 200 cloth (not fully specialised). Trade: A exports 100 wheat for 80 cloth. A consumes 500 wheat, 280 cloth. B consumes 100 wheat, 320 cloth. Both still gain compared to autarky, but the gains are smaller than in part (b) because B's small size limits the extent of specialisation and trade.
+
+(d) **Hong Kong-mainland China:** This is analogous to the A-B relationship. China (Country A) is vast, while Hong Kong (Country B) is tiny. Hong Kong cannot supply all of China's import needs (food, raw materials, consumer goods). However, Hong Kong specialises in high-value services (finance, logistics, professional services) where its comparative advantage is strongest. China's demand for these services far exceeds what Hong Kong can supply, so Hong Kong operates at full capacity, and both gain from trade. The key insight is that even a very small economy can benefit enormously from trade with a large one, as long as it specialises according to comparative advantage.
+
+</details>
+
+If you get this wrong, revise: [Specialisation and Trade](#specialisation-and-trade)
+
+### Problem 12: Opportunity Cost in Everyday Decision-Making
+
+A university student in Hong Kong has the following options for the summer:
+- Option A: Internship at a bank, paying HK$15,000/month for 2 months.
+- Option B: Summer school, costing HK$30,000 in tuition, but the course will increase starting salary by HK$5,000/month for the first 3 years of employment.
+- Option C: Travel and leisure, valued by the student at HK$20,000 in utility.
+
+The student's discount rate is 6% per annum. The student graduates in one year and expects to work for 3 years after graduation before pursuing further studies.
+
+(a) Calculate the net present value of each option.
+(b) Which option has the highest NPV? What is the opportunity cost of choosing it?
+(c) How would the analysis change if the student expects to work for 10 years after graduation?
+(d) Explain why the concept of opportunity cost is central to rational decision-making.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Option A (Internship):** NPV $= 15{,}000 \times 2 = \text{HK}\$30{,}000$.
+
+**Option B (Summer school):** Cost $= 30{,}000$. Benefit $= 5{,}000/month \times 36$ months $= 180{,}000$ (nominal), but this starts one year from now.
+
+NPV of benefits $= \sum_{t=13}^{48} \frac{5000}{(1.005)^t}$ where the monthly discount rate $= 0.5\%$.
+
+Approximation: annual discount rate $= 6\%$. PV of annuity of 3 years starting in 1 year $= \frac{5000 \times 12}{0.06} \times \frac{1 - 1.06^{-3}}{1.06} = \frac{60{,}000}{0.06} \times \frac{1 - 0.8396}{1.06} = 1{,}000{,}000 \times 0.1515 = 151{,}500$.
+
+NPV of Option B $= 151{,}500 - 30{,}000 = \text{HK}\$121{,}500$.
+
+**Option C (Travel):** NPV $= \text{HK}\$20{,}000$.
+
+(b) Option B has the highest NPV (HK$121,500). The opportunity cost of choosing Option B is the next best alternative: Option A with NPV of HK$30,000. (The opportunity cost is the foregone value, not the cost of the chosen option.)
+
+(c) With 10 years of work: PV of benefits $= \frac{60{,}000}{0.06} \times \frac{1 - 1.06^{-10}}{1.06} = 1{,}000{,}000 \times \frac{1 - 0.5584}{1.06} = 1{,}000{,}000 \times 0.4183 = 418{,}300$.
+
+NPV of Option B $= 418{,}300 - 30{,}000 = \text{HK}\$388{,}300$.
+
+Option B becomes even more attractive with a longer working horizon because the salary increase compounds over more years.
+
+(d) Opportunity cost is central to rational decision-making because it forces the decision-maker to consider the **full cost** of a choice, including the value of the best alternative forgone. Without considering opportunity cost, the student might think Option B "costs" only HK$30,000 (the tuition fee). But the true cost includes the HK$30,000 in foregone internship earnings. Rational decision-making requires comparing the **net benefits** of all alternatives (benefits minus all costs, including opportunity costs) and choosing the one with the highest net benefit. This principle applies to all economic decisions: individual consumption, firm production, government policy, and international trade.
+
+</details>
+
+If you get this wrong, revise: [Opportunity Cost](#opportunity-cost)
+

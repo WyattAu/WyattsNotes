@@ -1837,3 +1837,7 @@ The peptide bond forms between the carboxyl group of one amino acid and the amin
 | Not all proteins | Have quaternary structure; many functional proteins consist of a single polypeptide chain (e.g., myoglobin, lysozyme) |
 
 ---
+
+:::
+
+:::

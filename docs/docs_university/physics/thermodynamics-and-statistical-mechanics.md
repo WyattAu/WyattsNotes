@@ -1997,3 +1997,367 @@ distinguishable. Always include the $1/N!$ factor in the partition function for 
 This is not an optional correction — it is required by quantum mechanics (indistinguishability of
 identical particles) and ensures that entropy is extensive.
 :::
+
+## 13. Nonequilibrium Thermodynamics
+
+### 13.1 Entropy Production and the Second Law
+
+For a system not in equilibrium, the second law takes the form:
+
+$$\frac{dS}{dt} = \frac{dS_e}{dt} + \frac{dS_i}{dt} \geq 0$$
+
+where $dS_e/dt$ is the entropy exchange with the environment (can be positive or negative) and $dS_i/dt \geq 0$ is the **entropy production** rate (always non-negative).
+
+For coupled transport processes (heat flow $\mathbf{J}_q$ and particle flow $\mathbf{J}_n$ driven by $\nabla(1/T)$ and $-\nabla(\mu/T)$):
+
+$$\frac{dS_i}{dt} = \int\left[\mathbf{J}_q \cdot \nabla\!\left(\frac{1}{T}\right) - \mathbf{J}_n \cdot \nabla\!\left(\frac{\mu}{T}\right)\right] dV \geq 0$$
+
+### 13.2 Onsager Reciprocal Relations
+
+In the linear regime (small gradients), the fluxes are linear functions of the forces:
+
+$$J_i = \sum_j L_{ij}F_j$$
+
+**Onsager's theorem:** The Onsager coefficients satisfy $L_{ij} = L_{ji}$ (when the forces and fluxes are chosen as conjugate pairs). This is a consequence of microscopic reversibility and has important implications:
+
+- **Thermoelectric effects:** The Seebeck coefficient and Peltier coefficient are related: $\Pi = ST$ (Kelvin relation).
+- **Cross-diffusion:** The diffusivity of species A in a gradient of species B equals the diffusivity of B in a gradient of A.
+
+### 13.3 Boltzmann Transport Equation
+
+The Boltzmann equation describes the evolution of the distribution function $f(\mathbf{r}, \mathbf{v}, t)$:
+
+$$\frac{\partial f}{\partial t} + \mathbf{v}\cdot\nabla_{\mathbf{r}}f + \frac{\mathbf{F}}{m}\cdot\nabla_{\mathbf{v}}f = \left(\frac{\partial f}{\partial t}\right)_{\text{coll}}$$
+
+The collision integral is often approximated by the **relaxation time approximation**:
+
+$$\left(\frac{\partial f}{\partial t}\right)_{\text{coll}} \approx -\frac{f - f_0}{\tau(\mathbf{v})}$$
+
+where $f_0$ is the equilibrium (Maxwell--Boltzmann) distribution and $\tau$ is the relaxation time.
+
+The **$H$-theorem:** Define $H = \int f\ln f\, d^3v$. The Boltzmann equation implies $dH/dt \leq 0$, with equality only at equilibrium. This is the microscopic basis of the second law.
+
+### 13.4 Fick's Law and Diffusion
+
+**Fick's first law:** $J = -D\nabla n$ where $D$ is the diffusion coefficient.
+
+**Fick's second law (diffusion equation):** $\partial n/\partial t = D\nabla^2 n$.
+
+**Einstein relation:** $D = \mu k_B T$ where $\mu$ is the mobility.
+
+**Green's function solution** (point source at origin, $t = 0$):
+
+$$n(\mathbf{r}, t) = \frac{N}{(4\pi Dt)^{3/2}}\exp\!\left(-\frac{r^2}{4Dt}\right)$$
+
+The mean squared displacement: $\langle r^2 \rangle = 6Dt$.
+
+<details>
+<summary>Worked Example 13.1: Thermal Diffusion (Soret Effect)</summary>
+
+In a mixture of two gases with a temperature gradient, particles tend to migrate toward the cold end. The mass flux includes a thermal diffusion term:
+
+$$\mathbf{J}_n = -D\nabla n - nD_T\nabla T$$
+
+where $D_T$ is the thermal diffusion coefficient. The **Soret coefficient** $S_T = D_T/D$ characterises the strength of the effect.
+
+For a $50$--$50$ mixture of $^3$He--$^4$He below 2 K, $S_T$ is large and positive: $^3$He migrates toward the warm end. This is exploited in $^3$He--$^4$He dilution refrigerators, the workhorses of millikelvin physics.
+
+The steady-state concentration gradient is:
+
+$$\frac{\nabla n}{n} = -S_T\,\nabla T$$
+
+For $S_T = 0.01$ K$^{-1}$ and $\Delta T = 0.1$ K across a 10 cm column:
+
+$$\frac{\Delta n}{n} = S_T \Delta T = 0.001 = 0.1\%$$
+
+</details>
+
+## 14. Kinetic Theory in Detail
+
+### 14.1 Maxwell--Boltzmann Distribution
+
+The velocity distribution of an ideal gas at temperature $T$:
+
+$$f(\mathbf{v}) = n\left(\frac{m}{2\pi k_B T}\right)^{3/2}\exp\!\left(-\frac{mv^2}{2k_B T}\right)$$
+
+**Speed distribution** (integrating over angles):
+
+$$f(v)\,dv = 4\pi n\left(\frac{m}{2\pi k_B T}\right)^{3/2}v^2\exp\!\left(-\frac{mv^2}{2k_B T}\right)dv$$
+
+**Characteristic speeds:**
+
+- Most probable: $v_p = \sqrt{2k_BT/m}$
+- Mean: $\langle v \rangle = \sqrt{8k_BT/(\pi m)} = \frac{2}{\sqrt{\pi}}v_p$
+- RMS: $v_{\text{rms}} = \sqrt{3k_BT/m} = \sqrt{3/2}\,v_p$
+
+### 14.2 Mean Free Path and Collisions
+
+The **mean free path** for hard-sphere molecules of diameter $d$:
+
+$$\ell = \frac{1}{\sqrt{2}\,n\pi d^2}$$
+
+The factor $\sqrt{2}$ accounts for the relative motion of the scattering partners.
+
+The **collision frequency:** $\nu = \langle v \rangle/\ell = \sqrt{2}\,n\pi d^2\langle v\rangle$.
+
+For air at STP ($n \approx 2.5 \times 10^{25}$ m$^{-3}$, $d \approx 3.7 \times 10^{-10}$ m):
+
+$$\ell = \frac{1}{\sqrt{2} \times 2.5 \times 10^{25} \times \pi \times (3.7 \times 10^{-10})^2} = \frac{1}{1.52 \times 10^7} = 66\ \text{nm}$$
+
+$$\nu = \frac{445\ \text{m/s}}{66 \times 10^{-9}\,\text{m}} = 6.7 \times 10^9\ \text{s}^{-1}$$
+
+### 14.3 Transport Coefficients
+
+**Viscosity (gas):** $\eta = \frac{1}{3}n m \langle v \rangle \ell = \frac{1}{3}\rho\langle v \rangle\ell$.
+
+**Thermal conductivity:** $\kappa = \frac{1}{3}n\langle v \rangle\ell\,c_V = \frac{1}{3}\rho\langle v \rangle\ell\,c_v$ where $c_v$ is the specific heat per unit mass.
+
+**Self-diffusion:** $D = \frac{1}{3}\langle v \rangle\ell$.
+
+**Chapman--Enskog theory** gives more accurate expressions with numerical corrections:
+
+$$\eta = \frac{5}{16}\frac{\sqrt{\pi m k_B T}}{\pi d^2}$$
+
+<details>
+<summary>Worked Example 14.1: Effusion Through a Small Hole</summary>
+
+A container of nitrogen ($m = 28$ amu, $T = 300$ K) has a small hole of area $A$. The effusion rate (molecules per second escaping):
+
+$$\Phi = \frac{1}{4}n\langle v\rangle A = \frac{1}{4}n\sqrt{\frac{8k_BT}{\pi m}}\,A$$
+
+At $P = 100$ Pa, $T = 300$ K: $n = P/(k_BT) = 100/(1.38 \times 10^{-23} \times 300) = 2.42 \times 10^{22}$ m$^{-3}$.
+
+$$\langle v \rangle = \sqrt{\frac{8 \times 1.38 \times 10^{-23} \times 300}{\pi \times 28 \times 1.66 \times 10^{-27}}} = \sqrt{\frac{3.31 \times 10^{-20}}{1.46 \times 10^{-25}}} = \sqrt{2.27 \times 10^5} = 476\ \text{m/s}$$
+
+$$\Phi = \frac{1}{4} \times 2.42 \times 10^{22} \times 476 \times A = 2.88 \times 10^{24}\,A\ \text{s}^{-1}$$
+
+For $A = 1\,\text{mm}^2 = 10^{-6}\,\text{m}^2$: $\Phi = 2.88 \times 10^{18}$ molecules/s.
+
+**Knudsen effusion:** The ratio of effusion rates for two gases with masses $m_1$ and $m_2$:
+
+$$\frac{\Phi_1}{\Phi_2} = \sqrt{\frac{m_2}{m_1}}$$
+
+This is the basis for isotope separation by gaseous diffusion.
+
+</details>
+
+## 15. Information Theory and Statistical Mechanics
+
+### 15.1 Shannon Entropy
+
+The **Shannon entropy** of a probability distribution $\{p_i\}$:
+
+$$S_{\text{Shannon}} = -\sum_i p_i\ln p_i$$
+
+This is mathematically identical to the Boltzmann entropy (up to the constant $k_B$), providing a deep connection between information theory and thermodynamics.
+
+**Maximum entropy principle:** The least biased probability distribution, given constraints (e.g., fixed mean energy), is the one that maximises the Shannon entropy. This reproduces the canonical ensemble: maximising $S$ subject to $\sum p_i E_i = \langle E \rangle$ gives the Boltzmann distribution.
+
+### 15.2 Landauer's Principle
+
+Erasing one bit of information in a memory element necessarily dissipates at least:
+
+$$E \geq k_B T \ln 2$$
+
+of energy as heat. This establishes a fundamental lower bound on the energy cost of computation.
+
+**Reversible computation:** If no information is erased (e.g., in logically reversible operations like NOT), no energy dissipation is required in principle. This motivates research into reversible computing architectures.
+
+### 15.3 Maxwell's Demon
+
+Maxwell's demon appears to violate the second law by sorting fast and slow molecules, creating a temperature difference from an initially uniform gas without doing work.
+
+**Resolution (Bennett, 1982):** The demon must acquire information about molecular speeds (measurement) and then erase this information to reset its memory. By Landauer's principle, erasing the information costs at least $k_B T \ln 2$ per bit, exactly compensating the entropy decrease of the gas. The second law is upheld: $dS_{\text{gas}} + dS_{\text{demon}} \geq 0$.
+
+<details>
+<summary>Worked Example 15.1: Maximum Entropy Distribution</summary>
+
+Find the probability distribution on $\{1, 2, 3, \ldots\}$ that maximises $S = -\sum_n p_n\ln p_n$ subject to the constraint $\sum_n n\,p_n = \mu$ (fixed mean).
+
+Using Lagrange multipliers:
+
+$$\frac{\partial}{\partial p_n}\left[-\sum_n p_n\ln p_n - \lambda\sum_n p_n - \beta\sum_n n\,p_n\right] = 0$$
+
+$$-\ln p_n - 1 - \lambda - \beta n = 0 \implies p_n = e^{-1-\lambda}\,e^{-\beta n}$$
+
+Normalising $\sum_n p_n = 1$: $p_n = (1 - e^{-\beta})\,e^{-\beta n}$ (geometric distribution).
+
+The constraint $\mu = \sum n\,p_n = e^{-\beta}/(1 - e^{-\beta}) = 1/(e^\beta - 1)$, so $\beta = \ln(1 + 1/\mu)$.
+
+For $\mu = 5$: $\beta = \ln(1.2) = 0.182$, $p_n = 0.167 \times e^{-0.182n}$.
+
+This shows that the exponential (geometric) distribution arises naturally from maximum entropy with a constraint on the mean value --- a deep connection between information theory and statistical physics.
+
+</details>
+
+## Common Pitfalls (Additional)
+
+1. **Onsager relations require careful force-flux pairing:** The reciprocal relations $L_{ij} = L_{ji}$ hold only when the forces $F_i$ and fluxes $J_i$ are properly chosen as conjugate pairs (both contributing positively to $dS_i/dt$). An incorrect pairing can lead to wrong cross-coefficients.
+
+2. **The relaxation time approximation is not exact:** Setting $(\partial f/\partial t)_{\text{coll}} = -(f - f_0)/\tau$ assumes a single relaxation time for all processes. In reality, $\tau$ depends on velocity (energy), and different scattering processes have different time scales. The approximation works well for order-of-magnitude estimates but fails for quantitatively accurate transport predictions.
+
+3. **Effusion vs. hydrodynamic flow:** Effusion (molecular flow through a small hole) occurs when the hole diameter is much smaller than the mean free path ($d \ll \ell$, Knudsen number $\gg 1$). For larger holes ($d \gg \ell$), hydrodynamic flow (described by the Navier--Stokes equations) dominates. The transition between regimes is important in vacuum systems.
+
+4. **Landauer's bound is per bit, not per operation:** Only logically irreversible operations (those that erase information) incur the $k_BT\ln 2$ cost. Logically reversible operations (e.g., swapping two bits) have no minimum energy cost in principle, though real physical implementations always have some dissipation.
+
+5. **Maximum entropy is not the same as most probable:** The maximum entropy distribution is the least biased distribution consistent with the constraints. It may not be the distribution you would observe in a specific realisation. The ergodic hypothesis connects time averages to ensemble averages, but the convergence can be very slow for systems with long-range interactions or glassy dynamics.
+
+## Problems (Additional)
+
+<details>
+<summary>Problem 21: Thermal Conductivity of a Gas</summary>
+
+Calculate the thermal conductivity of argon at STP using kinetic theory.
+
+Data: $m = 40$ amu, $d = 3.6 \times 10^{-10}$ m, $c_V = (3/2)k_B$ (monatomic), $n = 2.69 \times 10^{25}$ m$^{-3}$.
+
+Compare with the experimental value of $\kappa = 0.0177$ W/(m$\cdot$K) and comment on the discrepancy.
+
+**Solution:**
+
+Mean speed: $\langle v \rangle = \sqrt{8k_BT/(\pi m)} = \sqrt{8 \times 1.38 \times 10^{-23} \times 300/(\pi \times 40 \times 1.66 \times 10^{-27})} = \sqrt{1.59 \times 10^5} = 399$ m/s.
+
+Mean free path: $\ell = 1/(\sqrt{2}\,n\pi d^2) = 1/(1.414 \times 2.69 \times 10^{25} \times \pi \times 1.296 \times 10^{-19}) = 1/(1.38 \times 10^7) = 72.5$ nm.
+
+$$\kappa = \frac{1}{3}\rho\langle v\rangle\ell\,c_v = \frac{1}{3}\frac{nm\langle v\rangle\ell \times 3k_B}{2m} = \frac{1}{2}n\langle v\rangle\ell\,k_B$$
+
+$$= \frac{1}{2} \times 2.69 \times 10^{25} \times 399 \times 72.5 \times 10^{-9} \times 1.38 \times 10^{-23}$$
+
+$$= \frac{1}{2} \times 2.69 \times 10^{25} \times 399 \times 10^{-9} \times 72.5 \times 1.38 \times 10^{-23}$$
+
+$$= 0.5 \times 2.69 \times 10^{25} \times 3.995 \times 10^2 \times 10^{-9} \times 10^{-23}$$
+
+$$= 0.5 \times 2.69 \times 3.995 \times 72.5 \times 10^{-5} = 0.5 \times 7789 \times 10^{-5} = 0.0390\ \text{W/(m}\cdot\text{K)}$$
+
+The kinetic theory prediction (0.039) overestimates the experimental value (0.0177) by about a factor of 2.2. This discrepancy is systematic and is resolved by the Chapman--Enskog theory, which gives:
+
+$$\kappa_{\text{CE}} = \frac{25}{32}\kappa_{\text{simple}} \approx 0.78 \times 0.039 = 0.030\ \text{W/(m}\cdot\text{K)}$$
+
+Still an overestimate; the remaining discrepancy is due to the hard-sphere model not accurately representing the real intermolecular potential of argon (which has an attractive well that reduces the effective collision cross-section at lower temperatures).
+
+</details>
+
+<details>
+<summary>Problem 22: Boltzmann $H$-Theorem</summary>
+
+(a) Show that for a spatially uniform gas, the Boltzmann equation with the BGK collision operator $C[f] = -(f - f_0)/\tau$ leads to $dH/dt \leq 0$ where $H = \int f\ln f\, d^3v$.
+
+(b) Identify the equilibrium state where $dH/dt = 0$.
+
+**Solution:**
+
+(a) For a spatially uniform gas with no external forces: $\partial f/\partial t = -(f - f_0)/\tau$.
+
+$$\frac{dH}{dt} = \int \frac{\partial f}{\partial t}(1 + \ln f)\,d^3v = -\frac{1}{\tau}\int(f - f_0)(1 + \ln f)\,d^3v$$
+
+$$= -\frac{1}{\tau}\left[\int f\,d^3v - \int f_0\,d^3v + \int f\ln f\,d^3v - \int f_0\ln f\,d^3v\right]$$
+
+Since $\int f\,d^3v = \int f_0\,d^3v = n$ (number conservation):
+
+$$\frac{dH}{dt} = -\frac{1}{\tau}\left[\int f\ln f\,d^3v - \int f_0\ln f\,d^3v\right]$$
+
+$$= -\frac{1}{\tau}\int (f - f_0)\ln f\,d^3v$$
+
+Using the Gibbs inequality $\int (f - f_0)\ln f\,d^3v \geq 0$ (since $x\ln x - x + 1 \geq 0$ with equality at $x = 1$):
+
+$$\frac{dH}{dt} = -\frac{1}{\tau}\int(f - f_0)(\ln f - \ln f_0)\,d^3v - \frac{1}{\tau}\int(f - f_0)\ln f_0\,d^3v$$
+
+$$= -\frac{1}{\tau}\int(f - f_0)\ln(f/f_0)\,d^3v - \frac{\ln f_0}{\tau}\int(f - f_0)\,d^3v$$
+
+$$= -\frac{1}{\tau}\int(f - f_0)\ln(f/f_0)\,d^3v$$
+
+Since $x\ln x \geq x - 1$ for $x > 0$ (with equality at $x = 1$), the integrand $(f/f_0)\ln(f/f_0) - (f/f_0) + 1 \geq 0$, so $\int(f - f_0)\ln(f/f_0)\,d^3v \geq 0$.
+
+Therefore $\frac{dH}{dt} \leq 0$. $\blacksquare$
+
+(b) $dH/dt = 0$ requires $f = f_0$ everywhere, i.e., the distribution is Maxwell--Boltzmann. This is the equilibrium state, as expected.
+
+</details>
+
+## 16. Statistical Mechanics of Interacting Systems
+
+### 16.1 The Ising Model Revisited
+
+The 1D Ising model was solved exactly by Ising (1925) using the transfer matrix method. The 2D Ising model was solved by Onsager (1944), providing one of the most important exact results in statistical mechanics.
+
+**Correlation functions:** The spin-spin correlation function:
+
+$$\langle\sigma_i\sigma_j\rangle = \tanh^n(\beta J)$$
+
+for the 1D chain with $n = |i - j|$. The **correlation length**:
+
+$$\xi = -\frac{1}{\ln\tanh(\beta J)}$$
+
+As $T \to T_c^-$: $\xi \to \infty$ (critical point).
+
+**Scaling near $T_c$:** The correlation function takes the scaling form:
+
+$$\langle\sigma_0\sigma_r\rangle \sim \frac{e^{-r/\xi}}{r^{(d-2+\eta)}}$$
+
+where $\eta$ is a critical exponent ($\eta = 1/4$ for the 2D Ising model).
+
+### 16.2 Renormalisation Group (Conceptual)
+
+The **renormalisation group** (RG) provides a framework for understanding critical phenomena. The key idea: progressively integrate out short-wavelength fluctuations, rescaling, and look for fixed points.
+
+**RG flow diagram:**
+
+1. Start with a Hamiltonian $H_0$ with coupling constants $\{K_i\}$.
+2. Integrate out short-wavelength modes (thin out the lattice).
+3. Rescale lengths: $x' = x/b$ ($b > 1$).
+4. Rescale spins: $\sigma' = b^{(d-2+\eta)/2}\sigma$.
+5. Repeat.
+
+**Fixed points:** Values of the coupling constants that are invariant under RG transformation. Fixed points correspond to scale-invariant theories (critical points).
+
+- **Gaussian fixed point:** The mean-field critical exponents ($\eta = 0$, $\nu = 1/2$).
+- **Wilson--Fisher fixed point:** The nontrivial fixed point of the $\phi^4$ theory in $d < 4$ dimensions, giving non-mean-field exponents.
+- **IR-stable fixed point:** Controls the low-energy (long-wavelength) physics.
+
+** epsilon expansion:** Expand in $\epsilon = 4 - d$. At one loop:
+
+$$\beta_u = \epsilon u - \frac{3}{16\pi^2}u^2 + \cdots$$
+
+$$\beta_\lambda = \epsilon\lambda - \frac{3}{16\pi^2}\lambda u + \cdots$$
+
+Setting $\beta_u = 0$: $u^* = 16\pi^2\epsilon/3 + O(\epsilon^2)$.
+
+The critical exponents to order $\epsilon$:
+
+$$\nu = \frac{1}{2} + \frac{\epsilon}{6} + O(\epsilon^2)$$
+
+For $\epsilon = 1$ ($d = 3$): $\nu = 2/3 \approx 0.667$ (compare with the numerical value $\nu \approx 0.630$).
+
+### 16.3 Mean-Field Theory of Phase Transitions
+
+The **Landau free energy** for a scalar order parameter $\phi$ near $T_c$:
+
+$$f(\phi, T) = f_0(T) + \frac{a_0}{2}(T - T_c)\phi^2 + \frac{b}{4}\phi^4$$
+
+**Mean-field exponents:** $\alpha = 0$ (jump in $C$), $\beta = 1/2$, $\gamma = 1$, $\delta = 3$, $\eta = 0$.
+
+These are exact above the upper critical dimension $d_u = 4$. Below $d_u$, fluctuations modify the exponents (as computed by the epsilon expansion).
+
+**Ginzburg criterion:** Mean-field theory is valid when the fluctuation contribution to the free energy is small compared to the mean-field part:
+
+$$\xi^d \ll (T_c - T)^{-(4-d)/2}\frac{1}{b^2}$$
+
+This gives a **Ginzburg temperature** $T_G$ below which fluctuations become important. For conventional superconductors ($\xi_0 \sim 100$ nm, $T_c \sim 10$ K): $T_G/T_c \sim 10^{-14}$ (mean-field is excellent). For high-$T_c$ superconductors ($\xi_0 \sim 1$ nm, $T_c \sim 100$ K): $T_G/T_c \sim 1$ (fluctuations are important, explaining the broad fluctuation regime above $T_c$).
+
+<details>
+<summary>Worked Example 16.1: RG Flow for the Gaussian Model</summary>
+
+Consider the Gaussian (free field) model: $\mathcal{H} = \int d^dr\left[\frac{1}{2}(\nabla\phi)^2 + \frac{1}{2}r_0\phi^2\right]$.
+
+After thinning out modes in the shell $\Lambda/b < |k| < \Lambda$ and rescaling:
+
+1. Integrate out short-wavelength modes: the correlation function $\xi$ transforms as $\xi' = \xi/b$.
+2. The rescaled coupling: $r_0' = b^2 r_0$ (since $r_0$ has dimensions of mass$^2$ and we rescale $\phi' = b^{(d-2)/2}\phi$).
+
+The RG flow for $r_0$: $\frac{dr_0}{d\ln b} = 2r_0$ (relevant operator).
+
+This means $r_0$ grows under RG, flowing away from the Gaussian fixed point ($r_0 = 0$). The fixed point is unstable, indicating that the disordered phase ($r_0 > 0$, $\phi = 0$ is stable) is separated from the ordered phase by the critical point.
+
+The correlation length exponent: $\xi \propto r_0^{-1/2}$, giving $\nu = 1/2$ (the mean-field value).
+
+</details>

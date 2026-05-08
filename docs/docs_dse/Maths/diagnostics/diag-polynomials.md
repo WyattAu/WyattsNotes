@@ -219,3 +219,326 @@ Roots: $x = 1, 2, 3$.
 $A = (1, 0)$, $B = (2, 0)$, $C = (3, 0)$.
 
 Since all three points lie on the $x$-axis, they are collinear, and the area of triangle $ABC$ is $0$.
+
+---
+
+## Worked Examples
+
+### WE-1: Factor Theorem with Multiple Factors
+
+**Question:**
+
+Given that $x - 1$, $x + 2$, and $x - 3$ are factors of $P(x) = x^3 + ax^2 + bx + c$, find $a$, $b$, and $c$.
+
+**Solution:**
+
+Since $x - 1$, $x + 2$, and $x - 3$ are all factors of the cubic $P(x)$, we can write:
+
+$$P(x) = (x - 1)(x + 2)(x - 3)$$
+
+Expanding: $(x - 1)(x^2 - x - 6) = x^3 - x^2 - 6x - x^2 + x + 6 = x^3 - 2x^2 - 5x + 6$.
+
+Therefore $a = -2$, $b = -5$, $c = 6$.
+
+---
+
+### WE-2: Remainder When Dividing by Quadratic
+
+**Question:**
+
+When $P(x) = x^3 + 2x^2 - 5x + 1$ is divided by $x^2 - x - 2$, find the quotient and remainder.
+
+**Solution:**
+
+Since we divide a cubic by a quadratic, the remainder has degree at most 1: $R(x) = Ax + B$.
+
+$$P(x) = Q(x)(x^2 - x - 2) + Ax + B$$
+
+Factorising: $x^2 - x - 2 = (x - 2)(x + 1)$.
+
+$P(2) = 8 + 8 - 10 + 1 = 7 = A(2) + B = 2A + B$. ... (1)
+
+$P(-1) = -1 + 2 + 5 + 1 = 7 = A(-1) + B = -A + B$. ... (2)
+
+(1) - (2): $3A = 0 \implies A = 0$. Then $B = 7$.
+
+Remainder $= 7$.
+
+For the quotient: $P(x) - 7 = x^3 + 2x^2 - 5x - 6$.
+
+Dividing by $x^2 - x - 2$: the leading term is $x$, giving $x(x^2 - x - 2) = x^3 - x^2 - 2x$.
+
+$P(x) - 7 - x(x^2 - x - 2) = 3x^2 - 3x - 6 = 3(x^2 - x - 2)$.
+
+So $Q(x) = x + 3$, Remainder $= 7$.
+
+---
+
+### WE-3: Using Factor Theorem to Fully Factorise
+
+**Question:**
+
+Fully factorise $P(x) = 2x^3 - x^2 - 13x - 6$.
+
+**Solution:**
+
+By the factor theorem, try integer factors of $-6$ divided by factors of $2$: $\pm 1, \pm 2, \pm 3, \pm 6, \pm \dfrac{1}{2}, \pm \dfrac{3}{2}$.
+
+$P(3) = 2(27) - 9 - 39 - 6 = 54 - 54 = 0$. So $(x - 3)$ is a factor.
+
+Divide $2x^3 - x^2 - 13x - 6$ by $(x - 3)$:
+
+$$\begin{array}{r|l}
+x - 3 & 2x^3 - x^2 - 13x - 6 \\
+\hline
+& 2x^2 \\
+& 2x^3 - 6x^2 \\
+\hline
+& \phantom{2x^3} 5x^2 - 13x \\
+& \phantom{2x^3} 5x^2 - 15x \\
+\hline
+& \phantom{2x^3 x^2} 2x - 6 \\
+& \phantom{2x^3 x^2} 2x - 6 \\
+\hline
+& \phantom{2x^3 x^2} 0 \\
+\end{array}$$
+
+$P(x) = (x - 3)(2x^2 + 5x + 2) = (x - 3)(2x + 1)(x + 2)$.
+
+---
+
+### WE-4: Symmetric Sums of Roots
+
+**Question:**
+
+If $\alpha$, $\beta$, $\gamma$ are the roots of $2x^3 - 3x^2 + 4x - 5 = 0$, find $\dfrac{1}{\alpha} + \dfrac{1}{\beta} + \dfrac{1}{\gamma}$.
+
+**Solution:**
+
+By Vieta's formulas (for $ax^3 + bx^2 + cx + d = 0$):
+
+$\alpha + \beta + \gamma = \dfrac{3}{2}$, $\alpha\beta + \beta\gamma + \gamma\alpha = 2$, $\alpha\beta\gamma = \dfrac{5}{2}$.
+
+$$\frac{1}{\alpha} + \frac{1}{\beta} + \frac{1}{\gamma} = \frac{\alpha\beta + \beta\gamma + \gamma\alpha}{\alpha\beta\gamma} = \frac{2}{5/2} = \frac{4}{5}$$
+
+---
+
+### WE-5: Finding the Remainder Without Division
+
+**Question:**
+
+Find the remainder when $x^{100} + x^{50} + 1$ is divided by $x^2 - 1$.
+
+**Solution:**
+
+$x^2 - 1 = (x - 1)(x + 1)$.
+
+Remainder has the form $Ax + B$.
+
+At $x = 1$: $P(1) = 1 + 1 + 1 = 3 = A + B$. ... (1)
+
+At $x = -1$: $P(-1) = 1 + 1 + 1 = 3 = -A + B$. ... (2)
+
+(1) + (2): $2B = 6 \implies B = 3$, $A = 0$.
+
+Remainder $= 3$.
+
+---
+
+### WE-6: Polynomial Identity Method
+
+**Question:**
+
+Find constants $A$, $B$, $C$ such that $\dfrac{3x + 7}{(x + 1)(x + 2)} = \dfrac{A}{x + 1} + \dfrac{B}{x + 2}$.
+
+**Solution:**
+
+$$3x + 7 = A(x + 2) + B(x + 1)$$
+
+At $x = -1$: $-3 + 7 = A(1) + 0 \implies A = 4$.
+
+At $x = -2$: $-6 + 7 = 0 + B(-1) \implies B = -1$.
+
+Verification: $\dfrac{4}{x+1} - \dfrac{1}{x+2} = \dfrac{4(x+2) - (x+1)}{(x+1)(x+2)} = \dfrac{4x + 8 - x - 1}{(x+1)(x+2)} = \dfrac{3x + 7}{(x+1)(x+2)}$. Correct.
+
+---
+
+### WE-7: Reciprocal Equation Roots
+
+**Question:**
+
+If $\alpha$ and $\beta$ are the roots of $2x^2 + 3x - 4 = 0$, find the equation whose roots are $\dfrac{1}{\alpha^2}$ and $\dfrac{1}{\beta^2}$.
+
+**Solution:**
+
+$\alpha + \beta = -\dfrac{3}{2}$, $\alpha\beta = -2$.
+
+$$\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \frac{9}{4} + 4 = \frac{25}{4}$$
+
+$$\alpha^2 \beta^2 = 4$$
+
+$$\frac{1}{\alpha^2} + \frac{1}{\beta^2} = \frac{\alpha^2 + \beta^2}{\alpha^2 \beta^2} = \frac{25/4}{4} = \frac{25}{16}$$
+
+$$\frac{1}{\alpha^2} \cdot \frac{1}{\beta^2} = \frac{1}{4}$$
+
+Required equation: $x^2 - \dfrac{25}{16}x + \dfrac{1}{4} = 0$, i.e. $16x^2 - 25x + 4 = 0$.
+
+---
+
+### WE-8: Polynomial Graph Behaviour
+
+**Question:**
+
+For $P(x) = -x^4 + 4x^2 - 3$, find:
+
+(a) The $x$-intercepts.
+(b) The $y$-intercept.
+(c) The maximum value of $P(x)$.
+
+**Solution:**
+
+(a) $-x^4 + 4x^2 - 3 = 0 \implies x^4 - 4x^2 + 3 = 0$.
+
+Let $u = x^2$: $u^2 - 4u + 3 = 0 \implies (u-1)(u-3) = 0$.
+
+$u = 1 \implies x = \pm 1$. $u = 3 \implies x = \pm\sqrt{3}$.
+
+$x$-intercepts: $(-\sqrt{3}, 0), (-1, 0), (1, 0), (\sqrt{3}, 0)$.
+
+(b) $P(0) = -3$. $y$-intercept: $(0, -3)$.
+
+(c) Let $v = x^2 \geq 0$. $P(x) = -(v^2 - 4v + 3) = -(v - 2)^2 + 4 - 3 = -(v-2)^2 + 1$.
+
+Maximum is $1$ when $v = 2$, i.e. $x^2 = 2$, so $x = \pm\sqrt{2}$.
+
+---
+
+## Common Pitfalls
+
+1. **Testing the wrong value in the factor theorem.** For the factor $(x - a)$, you must evaluate $P(a)$, not $P(-a)$. For $(x + a)$, evaluate $P(-a)$. The sign is the most common source of error in factor theorem problems.
+
+2. **Not verifying the factorisation.** After polynomial division, always expand the quotient times divisor plus remainder to verify you get back the original polynomial. This catches arithmetic errors.
+
+3. **Incorrect Vieta's sign conventions.** For $ax^3 + bx^2 + cx + d = 0$: sum of roots $= -b/a$, sum of pairwise products $= c/a$, product $= -d/a$. The alternating signs are easy to confuse.
+
+4. **Assuming a polynomial has rational roots.** Not all polynomials factorise with rational roots. If the rational root theorem yields no valid candidates, the polynomial may have irrational or complex roots.
+
+5. **Forgetting the degree of the remainder.** When dividing by a polynomial of degree $m$, the remainder has degree less than $m$. Dividing by a quadratic gives a linear (or constant) remainder, not a quadratic one.
+
+---
+
+## DSE Exam-Style Questions
+
+### DSE-1
+
+Let $P(x) = x^3 - 4x^2 + x + 6$.
+
+(a) Show that $(x + 1)$ is a factor of $P(x)$. (1 mark)
+(b) Hence factorise $P(x)$ completely. (3 marks)
+(c) Solve $P(x) = 0$. (1 mark)
+(d) Sketch the graph of $y = P(x)$, indicating the $x$-intercepts and the $y$-intercept. (3 marks)
+
+**Solution:**
+
+(a) $P(-1) = -1 - 4 - 1 + 6 = 0$. Confirmed.
+
+(b) Divide by $(x + 1)$: $x^3 - 4x^2 + x + 6 = (x+1)(x^2 - 5x + 6) = (x+1)(x-2)(x-3)$.
+
+(c) $x = -1$, $x = 2$, $x = 3$.
+
+(d) $y$-intercept: $(0, 6)$. $x$-intercepts: $(-1, 0)$, $(2, 0)$, $(3, 0)$. The cubic has positive leading coefficient, so it goes from bottom-left to top-right, crossing the $x$-axis at each root.
+
+---
+
+### DSE-2
+
+When $P(x) = 2x^3 + px^2 + qx + 3$ is divided by $(x - 1)$, the remainder is $6$. When divided by $(x + 2)$, the remainder is $-15$.
+
+(a) Find $p$ and $q$. (4 marks)
+(b) Find the remainder when $P(x)$ is divided by $(x - 2)(x + 1)$. (3 marks)
+
+**Solution:**
+
+(a) $P(1) = 2 + p + q + 3 = 6 \implies p + q = 1$. ... (1)
+
+$P(-2) = -16 + 4p - 2q + 3 = -15 \implies 4p - 2q = -2 \implies 2p - q = -1$. ... (2)
+
+(1) + (2): $3p = 0 \implies p = 0$, $q = 1$.
+
+(b) $P(x) = 2x^3 + x + 3$.
+
+Remainder when divided by $(x-2)(x+1)$: let $R(x) = Ax + B$.
+
+$P(2) = 16 + 2 + 3 = 21 = 2A + B$. ... (1)
+
+$P(-1) = -2 - 1 + 3 = 0 = -A + B$. ... (2)
+
+(1) + (2): $3B = 21 \implies B = 7$, $A = 7$.
+
+Remainder $= 7x + 7$.
+
+---
+
+### DSE-3
+
+The equation $x^3 + ax^2 + bx + c = 0$ has roots $\alpha$, $\beta$, $\gamma$ where $\alpha + \beta + \gamma = 6$, $\alpha\beta + \beta\gamma + \gamma\alpha = 11$, and $\alpha\beta\gamma = 6$.
+
+(a) Find $a$, $b$, and $c$. (2 marks)
+(b) Find the values of $\alpha^2 + \beta^2 + \gamma^2$. (2 marks)
+(c) Find the equation whose roots are $\alpha + 1$, $\beta + 1$, $\gamma + 1$. (3 marks)
+
+**Solution:**
+
+(a) $a = -6$, $b = 11$, $c = -6$.
+
+Equation: $x^3 - 6x^2 + 11x - 6 = 0 = (x-1)(x-2)(x-3)$.
+
+(b) $\alpha^2 + \beta^2 + \gamma^2 = (\alpha + \beta + \gamma)^2 - 2(\alpha\beta + \beta\gamma + \gamma\alpha) = 36 - 22 = 14$.
+
+(c) Sum of new roots: $(\alpha+1) + (\beta+1) + (\gamma+1) = 6 + 3 = 9$.
+
+Sum of pairwise products: $(\alpha+1)(\beta+1) + (\beta+1)(\gamma+1) + (\gamma+1)(\alpha+1) = (\alpha\beta + \alpha + \beta + 1) + \ldots = 11 + 2 \times 6 + 3 = 26$.
+
+Product: $(\alpha+1)(\beta+1)(\gamma+1) = \alpha\beta\gamma + (\alpha\beta + \beta\gamma + \gamma\alpha) + (\alpha + \beta + \gamma) + 1 = 6 + 11 + 6 + 1 = 24$.
+
+Equation: $x^3 - 9x^2 + 26x - 24 = 0$.
+
+---
+
+### DSE-4
+
+(a) Express $\dfrac{5x - 1}{(x + 2)(2x - 1)}$ in partial fractions. (4 marks)
+(b) Hence find $\displaystyle\int \frac{5x - 1}{(x + 2)(2x - 1)} \, dx$. (2 marks)
+
+**Solution:**
+
+(a) $\dfrac{5x - 1}{(x + 2)(2x - 1)} = \dfrac{A}{x + 2} + \dfrac{B}{2x - 1}$.
+
+$5x - 1 = A(2x - 1) + B(x + 2)$.
+
+At $x = -2$: $-11 = A(-5) \implies A = \dfrac{11}{5}$.
+
+At $x = \dfrac{1}{2}$: $\dfrac{5}{2} - 1 = B\left(\dfrac{5}{2}\right) \implies B = 1$.
+
+$$\frac{5x - 1}{(x + 2)(2x - 1)} = \frac{11/5}{x + 2} + \frac{1}{2x - 1}$$
+
+(b) $\displaystyle\int \left(\frac{11/5}{x+2} + \frac{1}{2x-1}\right) dx = \frac{11}{5}\ln|x + 2| + \frac{1}{2}\ln|2x - 1| + C$.
+
+---
+
+### DSE-5
+
+$P(x) = x^4 + ax^3 + bx^2 + cx + d$ has roots $1, -1, 2, -3$.
+
+(a) Find $a$, $b$, $c$, $d$. (3 marks)
+(b) Find the value of $P'(1)$. (3 marks)
+
+**Solution:**
+
+(a) $P(x) = (x-1)(x+1)(x-2)(x+3) = (x^2 - 1)(x^2 + x - 6) = x^4 + x^3 - 6x^2 - x^2 - x + 6 = x^4 + x^3 - 7x^2 - x + 6$.
+
+$a = 1$, $b = -7$, $c = -1$, $d = 6$.
+
+(b) $P'(x) = 4x^3 + 3x^2 - 14x - 1$.
+
+$P'(1) = 4 + 3 - 14 - 1 = -8$.

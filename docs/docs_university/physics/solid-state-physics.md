@@ -1791,3 +1791,535 @@ $+\pi/a$ in each direction, not from $0$ to $a$. When calculating the Fermi wave
 use $k_F = (3\pi^2 n)^{1/3}$ --- the factor of $3\pi^2$ (not $6\pi^2$) accounts for the factor
 of 2 from spin.
 :::
+
+## 12. Advanced Topics in Superconductivity
+
+### 12.1 Ginzburg--Landau Theory
+
+The Ginzburg--Landau (GL) theory provides a phenomenological description of superconductivity near $T_c$ using a complex order parameter $\psi(\mathbf{r})$ where $|\psi|^2 = n_s$ is the superfluid density.
+
+The GL free energy functional:
+
+$$\mathcal{F} = \mathcal{F}_n + \alpha|\psi|^2 + \frac{\beta}{2}|\psi|^4 + \frac{1}{2m^*}\left|\left(-i\hbar\nabla - e^*\mathbf{A}\right)\psi\right|^2 + \frac{|\mathbf{B}|^2}{2\mu_0}$$
+
+where $\alpha = \alpha_0(T - T_c)$ (negative below $T_c$), $\beta > 0$, $m^* = 2m_e$, $e^* = 2e$ (Cooper pair charge), and $\mathbf{A}$ is the vector potential.
+
+Minimising with respect to $\psi^*$ gives the **first GL equation**:
+
+$$\alpha\psi + \beta|\psi|^2\psi + \frac{1}{2m^*}\left(-i\hbar\nabla - e^*\mathbf{A}\right)^2\psi = 0$$
+
+Minimising with respect to $\mathbf{A}$ gives the **second GL equation** (supercurrent):
+
+$$\mathbf{J}_s = \frac{e^*\hbar}{m^*}\left(\psi^*\nabla\psi - \psi\nabla\psi^*\right) - \frac{e^{*2}}{m^*}|\psi|^2\mathbf{A}$$
+
+### 12.2 Coherence Length and Penetration Depth
+
+Two fundamental length scales emerge from the GL theory:
+
+**Coherence length** (characterises the spatial variation of $|\psi|$):
+
+$$\xi(T) = \sqrt{\frac{\hbar^2}{2m^*|\alpha|}} = \frac{\xi_0}{\sqrt{1 - T/T_c}}$$
+
+**Penetration depth** (characterises the decay of $\mathbf{B}$):
+
+$$\lambda(T) = \sqrt{\frac{m^*}{\mu_0 e^{*2}|\psi_\infty|^2}} = \frac{\lambda_0}{\sqrt{1 - T/T_c}}$$
+
+where $|\psi_\infty|^2 = |\alpha|/\beta$ is the bulk equilibrium value.
+
+The ratio of these length scales determines the superconductor type:
+
+$$\kappa = \frac{\lambda}{\xi}$$
+
+- $\kappa < 1/\sqrt{2}$: Type I (positive surface energy)
+- $\kappa > 1/\sqrt{2}$: Type II (negative surface energy, mixed state favourable)
+
+### 12.3 Abrikosov Vortices
+
+In the mixed state of a Type II superconductor ($B_{c1} < B < B_{c2}$), magnetic flux penetrates in quantised vortices, each carrying one flux quantum:
+
+$$\Phi_0 = \frac{h}{2e} = 2.07 \times 10^{-15}\ \mathrm{Wb}$$
+
+The vortex core (radius $\sim\xi$) is in the normal state, while supercurrents circulate around it (decaying over $\sim\lambda$).
+
+The upper critical field from GL theory:
+
+$$B_{c2} = \frac{\Phi_0}{2\pi\xi^2}$$
+
+The lower critical field:
+
+$$B_{c1} = \frac{\Phi_0}{4\pi\lambda^2}\ln\kappa$$
+
+The thermodynamic critical field:
+
+$$B_c = \frac{\Phi_0}{2\pi\sqrt{2}\xi\lambda}$$
+
+These satisfy $B_{c1} < B_c < B_{c2}$ for $\kappa > 1/\sqrt{2}$.
+
+### 12.4 Flux Quantisation and Josephson Effect
+
+**Flux quantisation.** The GL order parameter must be single-valued. Integrating the supercurrent around a closed loop enclosing flux $\Phi$:
+
+$$\oint \nabla\theta \cdot d\mathbf{l} = \frac{2\pi\Phi}{\Phi_0} = 2\pi n$$
+
+where $\theta$ is the phase of $\psi$ and $n$ is an integer. Hence $\Phi = n\Phi_0$.
+
+**DC Josephson effect.** For a superconductor--insulator--superconductor (SIS) junction with phase difference $\delta$:
+
+$$I = I_c \sin\delta$$
+
+where $I_c$ is the critical current.
+
+**AC Josephson effect.** Applying a voltage $V$ across the junction causes the phase to evolve as $\dot{\delta} = 2eV/\hbar$, giving:
+
+$$I = I_c\sin\!\left(\delta_0 + \frac{2eV}{\hbar}t\right)$$
+
+The oscillation frequency $\nu = 2eV/h$ provides the basis for the Josephson voltage standard: $V = n(h/2e)\nu$.
+
+<details>
+<summary>Worked Example 12.1: Type I vs Type II Classification</summary>
+
+Niobium has $\xi_0 = 39$ nm and $\lambda_0 = 39$ nm, giving $\kappa = \lambda/\xi = 1.0 > 1/\sqrt{2} \approx 0.71$. Therefore Nb is Type II.
+
+$$B_{c2} = \frac{\Phi_0}{2\pi\xi^2} = \frac{2.07 \times 10^{-15}}{2\pi \times (39 \times 10^{-9})^2} = \frac{2.07 \times 10^{-15}}{9.55 \times 10^{-15}} \approx 0.217\ \mathrm{T}$$
+
+The experimental $B_{c2}(0) \approx 0.4$ T. The discrepancy arises because the GL expressions use $\xi$ and $\lambda$ at $T_c$, while the actual values differ at $T = 0$.
+
+For aluminium: $\xi_0 = 1600$ nm, $\lambda_0 = 16$ nm, $\kappa = 0.01 \ll 1/\sqrt{2}$. Al is strongly Type I.
+
+</details>
+
+<details>
+<summary>Worked Example 12.2: Josephson Junction Frequency</summary>
+
+A voltage $V = 1\ \mu$V is applied across a Josephson junction:
+
+$$\nu = \frac{2eV}{h} = \frac{2 \times 1.602 \times 10^{-19} \times 10^{-6}}{6.626 \times 10^{-34}} = \frac{3.204 \times 10^{-25}}{6.626 \times 10^{-34}} = 4.836 \times 10^{8}\ \mathrm{Hz} \approx 483.6\ \mathrm{MHz}$$
+
+The convenient relation is $\nu/\text{GHz} = 483.6 \times V/\mu\text{V}$. This precise frequency-voltage relation is used to maintain the volt standard worldwide.
+
+</details>
+
+## 13. Topological Insulators and Semimetals
+
+### 13.1 Berry Phase
+
+When an electron adiabatically traverses a closed loop in $\mathbf{k}$-space, its Bloch state acquires a geometric phase:
+
+$$\gamma_n(\mathcal{C}) = i\oint_{\mathcal{C}} \langle u_{n\mathbf{k}}|\nabla_{\mathbf{k}} u_{n\mathbf{k}}\rangle \cdot d\mathbf{k}$$
+
+The **Berry curvature** is the $\mathbf{k}$-space analog of a magnetic field:
+
+$$\boldsymbol{\Omega}_n(\mathbf{k}) = \nabla_{\mathbf{k}} \times \langle u_{n\mathbf{k}}|i\nabla_{\mathbf{k}} u_{n\mathbf{k}}\rangle$$
+
+The Berry phase for a loop $\mathcal{C}$ enclosing area $\mathcal{A}$ is:
+
+$$\gamma = \int_{\mathcal{A}} \boldsymbol{\Omega} \cdot d\mathcal{A}$$
+
+For graphene near a Dirac point, the Berry phase is $\gamma = \pi$ (a half-flux quantum), which leads to the **absence of backscattering** and contributes to the high mobility of graphene.
+
+### 13.2 Topological Insulators
+
+A **topological insulator** (TI) is an insulator in the bulk but has conducting states on its surface. These surface states are topologically protected: they cannot be removed by surface impurities or disorder (as long as time-reversal symmetry is preserved).
+
+**Key properties:**
+- Bulk has a band gap, but the surface has gapless Dirac-like states
+- Surface states have a single Dirac cone (spin-momentum locking)
+- The $Z_2$ topological invariant $\nu = 1$ distinguishes TIs ($\nu = 1$) from trivial insulators ($\nu = 0$)
+
+**2D topological insulator** (quantum spin Hall insulator): Time-reversal-symmetric 2D system with helical edge states. The conductance is quantised: $G = 2e^2/h$ (one channel per edge, with opposite spins moving in opposite directions).
+
+**Examples:** Bi$_2$Se$_3$, Bi$_2$Te$_3$, Sb$_2$Te$_3$ (3D TIs); HgTe/CdTe quantum wells (2D TIs).
+
+### 13.3 Weyl and Dirac Semimetals
+
+**Weyl semimetals** have band touchings at discrete points (Weyl nodes) in the Brillouin zone where the dispersion is linear in all three directions:
+
+$$\varepsilon(\mathbf{k}) = \pm\hbar v_F |\mathbf{k} - \mathbf{k}_W|$$
+
+Weyl nodes come in pairs of opposite chirality and are topologically protected. Key signatures:
+- **Fermi arcs**: Surface states connecting projections of Weyl nodes of opposite chirality
+- **Chiral anomaly**: In parallel $\mathbf{E}$ and $\mathbf{B}$ fields, charge is pumped between Weyl nodes, giving negative magnetoresistance
+- **Anomalous Hall effect**: Even without magnetic order
+
+**Dirac semimetals** have fourfold-degenerate Dirac points (two overlapping Weyl points of opposite chirality). Examples: Na$_3$Bi, Cd$_3$As$_2$.
+
+<details>
+<summary>Worked Example 13.1: Chern Number and Quantum Hall Effect</summary>
+
+The **Chern number** for a 2D band is the integral of the Berry curvature over the Brillouin zone:
+
+$$C = \frac{1}{2\pi}\int_{\text{BZ}} \Omega_z(\mathbf{k})\, d^2k$$
+
+The Chern number is an integer (topological invariant). The Hall conductivity is quantised:
+
+$$\sigma_{xy} = C\frac{e^2}{h}$$
+
+For the integer quantum Hall effect with filling factor $\nu$, $C = \nu$.
+
+The TKNN formula (Thouless, Kohmoto, Nightingale, den Nijs, 1982) established that the quantum Hall conductance is a topological invariant, explaining its remarkable precision and robustness against disorder.
+
+</details>
+
+## 14. Many-Body Physics in Solids
+
+### 14.1 Electron--Electron Interactions: Screening
+
+In a metal, the Coulomb interaction between electrons is screened by the other electrons. The **Thomas--Fermi screening wavevector**:
+
+$$q_{\text{TF}}^2 = \frac{e^2 g(\varepsilon_F)}{\varepsilon_0} = \frac{4k_F}{\pi a_0}$$
+
+where $a_0 = 4\pi\varepsilon_0\hbar^2/(m_e e^2)$ is the Bohr radius. The screened potential:
+
+$$V_{\text{scr}}(r) = \frac{e^2}{4\pi\varepsilon_0 r}\,e^{-q_{\text{TF}} r}$$
+
+The screening length $\lambda_{\text{TF}} = 1/q_{\text{TF}} \sim 0.5$ Å in metals (about one atomic spacing), meaning the Coulomb interaction is very short-ranged.
+
+### 14.2 The Hubbard Model
+
+The Hubbard model captures the competition between kinetic energy (delocalisation) and on-site Coulomb repulsion (localisation):
+
+$$\hat{H} = -t\sum_{\langle i,j\rangle,\sigma}\hat{c}_{i\sigma}^\dagger\hat{c}_{j\sigma} + U\sum_i \hat{n}_{i\uparrow}\hat{n}_{i\downarrow}$$
+
+where $t$ is the hopping integral and $U$ is the on-site repulsion energy.
+
+**Limiting cases:**
+- $U \ll t$: Weakly correlated metal (well-described by band theory)
+- $U \gg t$: Mott insulator (each site has exactly one electron, localised by strong repulsion)
+- $U/t \sim 1$: Strongly correlated regime (intermediate coupling), relevant for transition metal oxides
+
+The half-filled Hubbard model on a bipartite lattice has a metal--insulator transition at $U_c \sim W$ (bandwidth). For $U > U_c$, the system is a Mott insulator even though band theory predicts a metal.
+
+### 14.3 Quasiparticles and Fermi Liquid Theory
+
+Landau's **Fermi liquid theory** (1956) states that the low-energy excitations of an interacting Fermi system can be described as **quasiparticles** --- weakly interacting fermions with renormalised parameters:
+
+- Effective mass $m^*$ (renormalised by interactions)
+- Residual quasiparticle--quasiparticle interactions described by Landau parameters $F_l$
+
+The quasiparticle lifetime goes as $\tau \propto 1/(\varepsilon - \varepsilon_F)^2$, so quasiparticles near the Fermi surface are well-defined (long-lived).
+
+**Experimental signatures of Fermi liquid behaviour:**
+- $C_V = \gamma T$ with enhanced $\gamma \propto m^*$
+- $\rho = \rho_0 + AT^2$ (quadratic temperature dependence)
+- Pauli-like susceptibility $\chi$ (temperature-independent)
+
+**Non-Fermi liquid** behaviour occurs in many correlated systems (cuprates near optimal doping, heavy fermion materials near quantum critical points) where $\rho \propto T$ (linear) or other anomalous power laws are observed.
+
+### 14.4 Kondo Effect
+
+When a magnetic impurity (e.g., a single Fe atom) is embedded in a non-magnetic metal, the impurity spin is screened by conduction electrons at low temperature, forming a singlet state. This is the **Kondo effect**.
+
+The Kondo temperature $T_K$ sets the energy scale:
+
+$$k_B T_K \sim D\,e^{-1/(N(E_F)J)}$$
+
+where $D$ is the bandwidth and $J$ is the exchange coupling. Below $T_K$:
+- The resistivity increases logarithmically: $\Delta\rho \propto \ln(T_K/T)$
+- The impurity moment is fully screened
+- A narrow resonance (Kondo resonance) appears at the Fermi level in the density of states
+
+<details>
+<summary>Worked Example 14.1: Mott Transition</summary>
+
+Consider the Hubbard model at half-filling on a Bethe lattice (infinite coordination number) with bandwidth $W = 12t$.
+
+The Mott transition occurs when $U \sim W$. For typical transition metal oxides:
+- VO$_2$: $U \sim 1$--$2$ eV, $W \sim 2$ eV --- near the transition (VO$_2$ undergoes a metal--insulator transition at $T_c = 340$ K)
+- NiO: $U \sim 5$--$8$ eV, $W \sim 2$ eV --- deep in the insulating regime
+- SrVO$_3$: $U \sim 1$--$3$ eV, $W \sim 3$ eV --- correlated metal
+
+In the Mott insulator NiO, band theory predicts a partially filled $3d$ band (metal), but strong correlations open a gap of $\sim 4$ eV between the lower and upper Hubbard bands. This is why DFT (which underestimates correlations) incorrectly predicts NiO to be metallic, while DFT+$U$ or GW methods correctly give an insulator.
+
+</details>
+
+<details>
+<summary>Worked Example 14.2: Effective Mass Enhancement</summary>
+
+In a heavy fermion material like CeCu$_2$Si$_2$, the electronic specific heat coefficient is $\gamma \approx 1$ J/(mol$\cdot$K$^2$), compared with the free electron value $\gamma_0 \approx 1$ mJ/(mol$\cdot$K$^2$).
+
+The mass enhancement:
+
+$$\frac{m^*}{m_e} = \frac{\gamma}{\gamma_0} \approx \frac{1000}{1} = 1000$$
+
+This enormous enhancement arises from the Kondo effect: the $4f$ electrons of Ce hybridise with conduction electrons, forming heavy quasiparticles. The Kondo temperature $T_K \sim 10$ K is the characteristic energy scale.
+
+Similarly, the Pauli susceptibility is enhanced: $\chi/\chi_0 = m^*/m_e = 1000$.
+
+</details>
+
+## 15. Advanced Semiconductor Physics
+
+### 15.1 MOSFET Operation in Detail
+
+In an n-channel MOSFET, the gate voltage $V_G$ controls the channel charge:
+
+**Threshold voltage:**
+
+$$V_T = V_{FB} + 2\phi_F + \frac{\sqrt{2\varepsilon_s q N_A(2\phi_F)}}{C_{ox}}$$
+
+where $V_{FB}$ is the flat-band voltage, $\phi_F = (k_BT/q)\ln(N_A/n_i)$ is the bulk Fermi potential, and $C_{ox} = \varepsilon_{ox}/t_{ox}$ is the oxide capacitance.
+
+**Drain current (long-channel, above threshold):**
+
+$$I_D = \mu_n C_{ox}\frac{W}{L}\left[\left(V_G - V_T\right)V_D - \frac{V_D^2}{2}\right] \quad \text{(linear region)}$$
+
+$$I_D = \frac{1}{2}\mu_n C_{ox}\frac{W}{L}(V_G - V_T)^2 \quad \text{(saturation, } V_D \geq V_G - V_T \text{)}$$
+
+**Subthreshold swing:** Below threshold, the current decreases exponentially:
+
+$$I_D \propto e^{qV_G/(nk_BT)}$$
+
+where $n = 1 + C_d/C_{ox}$ and $C_d$ is the depletion capacitance. The minimum subthreshold swing at room temperature is $S = nk_BT\ln 10/q \approx 60$ mV/decade.
+
+### 15.2 Bipolar Junction Transistor (BJT)
+
+A BJT consists of three semiconductor regions: emitter (E), base (B), collector (C). In active mode (E-B forward biased, C-B reverse biased):
+
+**Ebers--Moll model:**
+
+$$I_E = I_{ES}\left(e^{V_{BE}/V_T} - 1\right) - \alpha_R I_{CS}\left(e^{V_{BC}/V_T} - 1\right)$$
+
+$$I_C = \alpha_F I_{ES}\left(e^{V_{BE}/V_T} - 1\right) - I_{CS}\left(e^{V_{BC}/V_T} - 1\right)$$
+
+where $\alpha_F$ is the forward current gain (typically $0.98$--$0.998$) and $V_T = k_BT/e$.
+
+The common-emitter current gain $\beta = \alpha_F/(1 - \alpha_F)$. For $\alpha_F = 0.99$: $\beta = 99$.
+
+### 15.3 Excitons and Polaritons
+
+**Wannier--Mott excitons** (in semiconductors with small $\varepsilon_r$ and small effective mass):
+
+$$E_n = E_g - \frac{\mu e^4}{2(4\pi\varepsilon_0\varepsilon_r)^2\hbar^2 n^2} = E_g - \frac{R^*}{n^2}$$
+
+where $R^* = \frac{\mu}{m_e\varepsilon_r^2} \times 13.6$ eV is the effective Rydberg.
+
+For GaAs ($m_e^* = 0.067m_e$, $m_h^* = 0.45m_e$, $\varepsilon_r = 12.9$):
+
+$$\mu = \frac{0.067 \times 0.45}{0.067 + 0.45}m_e = 0.058m_e$$
+
+$$R^* = \frac{0.058}{12.9^2} \times 13.6 = \frac{0.058}{166.4} \times 13.6 = 4.7\ \text{meV}$$
+
+$$a_B^* = \frac{\varepsilon_r m_e}{\mu}a_0 = \frac{12.9}{0.058} \times 0.529\ \text{Å} = 118\ \text{Å} \approx 12\ \text{nm}$$
+
+The large exciton Bohr radius means excitons are easily dissociated by thermal energy at room temperature in most semiconductors.
+
+**Polaritons** form when excitons strongly couple to photons in a microcavity, producing hybrid light-matter quasiparticles with dispersion:
+
+$$E_{\pm}(k) = \frac{1}{2}\left(E_{\text{cav}}(k) + E_{\text{exc}}(k)\right) \pm \frac{1}{2}\sqrt{\Omega_R^2 + \delta^2(k)}$$
+
+where $\Omega_R$ is the Rabi splitting and $\delta = E_{\text{cav}} - E_{\text{exc}}$ is the detuning.
+
+<details>
+<summary>Worked Example 15.1: MOSFET Drain Current</summary>
+
+An n-channel MOSFET has $\mu_n = 450$ cm$^2$/(V$\cdot$s), $C_{ox} = 34.5$ nF/cm$^2$ ($t_{ox} = 10$ nm SiO$_2$), $W = 10$ $\mu$m, $L = 1$ $\mu$m, $V_T = 0.7$ V.
+
+For $V_G = 2$ V, $V_D = 0.5$ V (linear region since $V_D < V_G - V_T = 1.3$ V):
+
+$$I_D = 450 \times 34.5 \times 10^{-9} \times \frac{10 \times 10^{-4}}{1 \times 10^{-4}}\left[1.3 \times 0.5 - \frac{0.25}{2}\right]$$
+
+$$= 450 \times 3.45 \times 10^{-7} \times 10 \times [0.65 - 0.125]$$
+
+$$= 1.55 \times 10^{-3} \times 0.525 = 8.14 \times 10^{-4}\ \text{A} = 0.814\ \text{mA}$$
+
+At saturation ($V_D = 2$ V):
+
+$$I_D = \frac{1}{2} \times 450 \times 34.5 \times 10^{-9} \times 10 \times (1.3)^2 = 1.30\ \text{mA}$$
+
+</details>
+
+## Common Pitfalls (Additional)
+
+1. **GL theory is valid only near $T_c$**: The Ginzburg--Landau theory is a mean-field expansion that assumes the order parameter varies slowly in space and is small. It cannot describe the full temperature range or the strong-coupling limit. BCS theory provides the microscopic justification for the GL phenomenological parameters.
+
+2. **Topological invariants are robust but not invincible**: Topological surface states are protected against disorder that preserves the underlying symmetry (e.g., time-reversal for $Z_2$ TIs). Breaking that symmetry (e.g., magnetic doping of a TI) can gap out the surface states. Similarly, interactions can sometimes destroy topological phases.
+
+3. **Hubbard $U$ is not the bare Coulomb energy**: The effective $U$ in the Hubbard model is significantly reduced from the bare Coulomb repulsion ($\sim 20$ eV for $3d$ electrons) by screening. Typical values are $U \sim 2$--$8$ eV for transition metal oxides.
+
+4. **MOSFET scaling limits**: As transistors shrink below $\sim 10$ nm, short-channel effects (drain-induced barrier lowering, punch-through) dominate, and the subthreshold swing cannot be reduced below 60 mV/decade with conventional thermionic emission. This motivates research into tunnel FETs and other steep-slope devices.
+
+5. **Effective mass can be negative or anisotropic**: The curvature $d^2\varepsilon/dk^2$ determines the sign of $m^*$. Near band maxima, $m^* < 0$ (holes). In multivalley semiconductors like silicon, the effective mass tensor has longitudinal ($m_l$) and transverse ($m_t$) components that differ significantly ($m_l/m_t \approx 5$ for Si).
+
+## Problems (Additional)
+
+<details>
+<summary>Problem 19: GL Coherence Length and Penetration Depth</summary>
+
+A Type II superconductor has $\xi_0 = 5$ nm and $\lambda_0 = 50$ nm at $T = 0$. At $T = 0.9\,T_c$:
+
+(a) Calculate $\xi(T)$, $\lambda(T)$, and $\kappa(T)$.
+
+(b) Calculate $B_{c1}$ and $B_{c2}$ at $T = 0.9\,T_c$.
+
+(c) How many flux quanta per unit area are present at $B = B_{c2}/2$?
+
+**Solution:**
+
+(a) At $T = 0.9\,T_c$: $1 - T/T_c = 0.1$.
+
+$$\xi = \frac{\xi_0}{\sqrt{0.1}} = \frac{5}{0.316} = 15.8\ \text{nm}, \quad \lambda = \frac{50}{\sqrt{0.1}} = 158\ \text{nm}$$
+
+$$\kappa = \lambda/\xi = 10 \quad \text{(independent of } T\text{)}$$
+
+(b) $B_{c2} = \frac{\Phi_0}{2\pi\xi^2} = \frac{2.07 \times 10^{-15}}{2\pi \times (15.8 \times 10^{-9})^2} = \frac{2.07 \times 10^{-15}}{1.57 \times 10^{-15}} = 1.32\ \text{T}$
+
+$$B_{c1} = \frac{\Phi_0}{4\pi\lambda^2}\ln\kappa = \frac{2.07 \times 10^{-15}}{4\pi \times (158 \times 10^{-9})^2}\ln 10 = \frac{2.07 \times 10^{-15}}{3.14 \times 10^{-13}} \times 2.303 = 1.52 \times 10^{-3}\ \text{T} = 1.52\ \text{mT}$$
+
+(c) At $B = B_{c2}/2 = 0.66$ T: number of flux quanta per m$^2$ = $B/\Phi_0 = 0.66/(2.07 \times 10^{-15}) = 3.19 \times 10^{14}\ \text{m}^{-2}$.
+
+Average spacing between vortices: $a \approx (2\Phi_0/(\sqrt{3}B))^{1/2} = (2 \times 2.07 \times 10^{-15}/(1.73 \times 0.66))^{1/2} = 60\ \text{nm}$.
+
+</details>
+
+<details>
+<summary>Problem 20: Berry Phase in a Tight-Binding Model</summary>
+
+Consider a spinless particle on a 1D lattice with Hamiltonian:
+
+$$\hat{H} = \sum_n \left(t\,e^{i\phi}\,\hat{c}_n^\dagger\hat{c}_{n+1} + t\,e^{-i\phi}\,\hat{c}_{n+1}^\dagger\hat{c}_n\right)$$
+
+(a) Show that the dispersion is $\varepsilon(k) = -2t\cos(k + \phi)$.
+
+(b) Calculate the Berry phase for an electron traversing the Brillouin zone $-\pi/a \to \pi/a$.
+
+(c) Show that the Berry phase is $\gamma = 2\pi\phi/(2\pi/a)$ and interpret physically.
+
+**Solution:**
+
+(a) Substituting $\psi_k(n) = e^{ikna}/\sqrt{N}$:
+
+$$\varepsilon(k)\psi_k(n) = t\,e^{i\phi}\,e^{ika}\psi_k(n) + t\,e^{-i\phi}\,e^{-ika}\psi_k(n)$$
+
+$$\varepsilon(k) = t\,e^{i(k+\phi)a} + t\,e^{-i(k+\phi)a} = -2t\cos(k + \phi)$$
+
+(b) The Bloch function is $u_k(n) = e^{i\phi n}$ (up to normalisation). The Berry connection:
+
+$$A(k) = \langle u_k | i\partial_k | u_k \rangle = i \cdot i\phi = -\phi$$
+
+Wait, more carefully. In a continuum formulation:
+
+$$A(k) = \langle u_k | \frac{\partial}{\partial k} | u_k \rangle = \frac{\partial}{\partial k}(\arg u_k) = \frac{\partial}{\partial k}(0) = 0$$
+
+since $u_k(x) = e^{ikx}$ has $\partial_k \ln u_k = ix$ and $\langle u_k|ix|u_k\rangle$ averages to zero.
+
+Actually, for this model the Berry phase arises from the $\phi$-dependent phase winding. Let us use the proper formulation. The wavefunction $\psi_k(x) = e^{ikx}u_k(x)$ where $u_k$ has the periodicity of the lattice. With the flux $\phi$, the Berry connection picks up an extra term. The Berry phase for one circuit of the BZ is:
+
+$$\gamma = \oint A(k)\,dk = 2\pi\phi$$
+
+(c) The Berry phase $\gamma = 2\pi\phi$ is directly proportional to the flux $\phi$ per unit cell. This is the **Aharonov--Bohm effect** in a lattice: the flux threading each plaquette shifts the band minimum and modifies the group velocity. For $\phi = \pi$, the band is inverted ($\varepsilon = 2t\cos k$), which is the basis for the Rice--Mele model of topological insulators.
+
+</details>
+
+<details>
+<summary>Problem 21: Semiconductor Device Analysis</summary>
+
+A silicon p-n junction has $N_A = 10^{24}$ m$^{-3}$ and $N_D = 10^{22}$ m$^{-3}$ at $T = 300$ K.
+
+(a) Calculate the built-in potential $V_0$.
+
+(b) Calculate the depletion width $W$ and the depletion capacitance per unit area at zero bias.
+
+(c) Under forward bias $V = 0.5$ V, calculate the current density. Assume $I_0/A = 10^{-12}$ A/m$^2$.
+
+(d) What is the breakdown voltage if the critical field for Zener breakdown in Si is $E_{\text{crit}} \approx 3 \times 10^8$ V/m?
+
+**Solution:**
+
+(a) $V_0 = \frac{k_BT}{e}\ln\frac{N_A N_D}{n_i^2} = 0.02585 \times \ln\frac{10^{24} \times 10^{22}}{(1.5 \times 10^{16})^2}$
+
+$$= 0.02585 \times \ln\frac{10^{46}}{2.25 \times 10^{32}} = 0.02585 \times \ln(4.44 \times 10^{13})$$
+
+$$= 0.02585 \times 31.43 = 0.812\ \text{V}$$
+
+(b) $W = \sqrt{\frac{2\varepsilon_s V_0}{e}\left(\frac{1}{N_A} + \frac{1}{N_D}\right)}$
+
+Since $N_D \ll N_A$, the depletion region extends mainly into the n-side:
+
+$$W \approx \sqrt{\frac{2 \times 11.7 \times 8.85 \times 10^{-12} \times 0.812}{1.6 \times 10^{-19} \times 10^{22}}} = \sqrt{\frac{1.68 \times 10^{-10}}{1.6 \times 10^{-3}}} = \sqrt{1.05 \times 10^{-7}} = 3.24 \times 10^{-4}\ \text{m} = 0.324\ \text{mm}$$
+
+This is a wide depletion region because of the asymmetric doping.
+
+$$C/A = \frac{\varepsilon_s}{W} = \frac{11.7 \times 8.85 \times 10^{-12}}{3.24 \times 10^{-4}} = 3.19 \times 10^{-7}\ \text{F/m}^2 = 319\ \text{nF/m}^2$$
+
+(c) $J = J_0(e^{eV/(k_BT)} - 1) = 10^{-12}(e^{0.5/0.02585} - 1) = 10^{-12}(e^{19.34} - 1) = 10^{-12} \times 2.48 \times 10^8 = 2.48 \times 10^{-4}\ \text{A/m}^2 = 0.248\ \text{mA/m}^2$
+
+(d) The maximum field occurs at the metallurgical junction and for a one-sided junction is approximately $E_{\max} = 2V_0/W$. For breakdown: $V_{BD} \approx E_{\text{crit}} \cdot W_{BD}/2$.
+
+With $W_{BD} = \sqrt{2\varepsilon_s V_{BD}/(eN_D)}$ (one-sided):
+
+$$V_{BD} = \frac{\varepsilon_s E_{\text{crit}}^2}{2eN_D} = \frac{11.7 \times 8.85 \times 10^{-12} \times (3 \times 10^8)^2}{2 \times 1.6 \times 10^{-19} \times 10^{22}} = \frac{9.29 \times 10^{-1}}{3.2 \times 10^{-3}} = 290\ \text{V}$$
+
+</details>
+
+## 16. Advanced Semiconductor Physics (Continued)
+
+### 16.1 Quantum Hall Effect
+
+When a 2D electron gas (2DEG) is placed in a strong perpendicular magnetic field at low temperature, the Hall resistance shows quantised plateaux:
+
+$$R_{xy} = \frac{h}{\nu e^2} = \frac{R_K}{\nu}$$
+
+where $\nu = 1, 2, 3, \ldots$ is an integer and $R_K = h/e^2 \approx 25812.8\,\Omega$ is the von Klitzing constant.
+
+**Integer Quantum Hall Effect (IQHE)** (von Klitzing, 1980):
+
+- Occurs when the filling factor $\nu = n_{2D}h/(eB)$ is an integer
+- At these plateaux, the longitudinal resistance $R_{xx} = 0$ (dissipationless transport)
+- The quantisation is exact to better than 1 part in $10^{10}$, providing the resistance standard
+
+**Fractional Quantum Hall Effect (FQHE)** (Tsui, Stormer, Gossard, 1982):
+
+- Plateaux at $\nu = 1/3, 2/3, 2/5, 3/7, \ldots$
+- Arises from electron--electron correlations (Laughlin wavefunction)
+- Described by Chern--Simons topological field theory
+
+**Composite fermions:** At $\nu = 1/2$, the FQHE electrons bind two flux quanta to become "composite fermions" that see zero effective field. The FQHE of electrons maps to the IQHE of composite fermions, elegantly explaining the observed sequence of fractions.
+
+### 16.2 Mesoscopic Physics
+
+Mesoscopic systems are intermediate in size between microscopic (atomic) and macroscopic (bulk). Key length scales:
+
+- **Phase coherence length** $L_\phi$: distance over which the electron maintains phase coherence (typically $1$--$10\,\mu$m at low $T$)
+- **Mean free path** $\ell$: distance between elastic scattering events
+- **Thermal length** $L_T = \hbar v_F/(k_BT)$
+
+When the sample size $L < L_\phi$, quantum interference effects become observable:
+
+- **Aharonov--Bohm oscillations:** Periodic oscillations in magnetoresistance as $B$ varies, with period $\Delta B = \Phi_0/A$ where $A$ is the area enclosed by the paths.
+- **Weak localisation:** Quantum interference of backscattered paths enhances the probability of returning to the origin, increasing the resistance. This is destroyed by a magnetic field (negative magnetoresistance).
+- **Universal conductance fluctuations:** Sample-specific, reproducible fluctuations in conductance of order $e^2/h$.
+
+### 16.3 Thermoelectric Effects
+
+**Seebeck effect:** A temperature gradient $\nabla T$ produces an electric field $\mathbf{E} = S\nabla T$ where $S$ is the Seebeck coefficient.
+
+**Peltier effect:** A current $I$ through a junction produces heat flow $\dot{Q} = \Pi I$ where $\Pi = ST$ (Kelvin relation).
+
+**Figure of merit:** $ZT = S^2\sigma T/\kappa$ where $\sigma$ is electrical conductivity and $\kappa$ is thermal conductivity.
+
+The **Mott formula** relates the Seebeck coefficient to the energy derivative of the conductivity:
+
+$$S = -\frac{\pi^2 k_B^2 T}{3e}\frac{d\ln\sigma(\epsilon)}{d\epsilon}\bigg|_{\epsilon_F}$$
+
+Best thermoelectric materials: Bi$_2$Te$_3$ ($ZT \approx 1$ at 300 K), PbTe ($ZT \approx 1.5$ at 700 K), SnSe ($ZT \approx 2.6$ at 923 K).
+
+<details>
+<summary>Worked Example 16.1: Quantum Hall Plateaux</summary>
+
+A 2DEG in a GaAs/AlGaAs heterostructure has $n_{2D} = 3 \times 10^{15}$ m$^{-2}$.
+
+(a) At $B = 10$ T: $\nu = n_{2D}h/(eB) = 3 \times 10^{15} \times 6.626 \times 10^{-34}/(1.6 \times 10^{-19} \times 10) = 3 \times 10^{15} \times 4.14 \times 10^{-16} = 1.24$.
+
+The filling factor $\nu \approx 1.24$ is close to $\nu = 1$, so the $\nu = 1$ plateau is observed with:
+
+$$R_{xy} = \frac{h}{e^2} = 25812.8\,\Omega$$
+
+(b) To observe the $\nu = 2$ plateau, we need $B = n_{2D}h/(2e) = 5$ T.
+
+(c) The cyclotron energy at $B = 10$ T:
+
+$$\hbar\omega_c = \hbar\frac{eB}{m^*} = \frac{1.055 \times 10^{-34} \times 1.6 \times 10^{-19} \times 10}{0.067 \times 9.11 \times 10^{-31}} = \frac{1.688 \times 10^{-33}}{6.10 \times 10^{-32}} = 0.0277\,\text{eV} = 27.7\,\text{meV}$$
+
+For IQHE plateaux to be resolved: $k_BT \ll \hbar\omega_c$, i.e., $T \ll 27.7/0.0862 \approx 321$ K. Experiments are typically done at $T < 4$ K.
+
+</details>
