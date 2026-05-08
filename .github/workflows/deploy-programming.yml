@@ -36,6 +36,7 @@ jobs:
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
           sudo swapon /swapfile
+          sudo sysctl vm.swappiness=100
           free -h
 
       - uses: pnpm/action-setup@v6
@@ -52,7 +53,7 @@ jobs:
       - name: Build
         run: npx docusaurus build --config docusaurus.programming.config.ts
         env:
-          NODE_OPTIONS: --max-old-space-size=8192 --optimize-for-size --max-semi-space-size=256
+          NODE_OPTIONS: --max-old-space-size=6144 --optimize-for-size --max-semi-space-size=128
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
