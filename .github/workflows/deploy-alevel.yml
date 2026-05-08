@@ -1,3 +1,6 @@
+concurrency:
+  group: deploy
+  cancel-in-progress: false
 name: Deploy A-Levels to Cloudflare Pages
 
 on:
@@ -48,7 +51,7 @@ jobs:
       - name: Build
         run: npx docusaurus build --config docusaurus.alevel.config.ts
         env:
-          NODE_OPTIONS: --max-old-space-size=11264 --optimize-for-size --max-semi-space-size=256
+          NODE_OPTIONS: --max-old-space-size=14336 --optimize-for-size --max-semi-space-size=256
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
