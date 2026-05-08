@@ -523,7 +523,7 @@ MVCC maintains multiple versions of each data item, allowing readers to access a
 
 A **bitmap index** stores bitmaps for each distinct value of an attribute. For a column with $V$ distinct values and $n$ rows, the index consists of $V$ bitmaps, each of $n$ bits.
 
-**Example.** Column "colour" with values {Red, Green, Blue} and 8 rows:
+**Example.** Column "colour" with values `\{Red, Green, Blue\}` and 8 rows:
 
 | Row | Colour |
 |-----|--------|
@@ -586,19 +586,19 @@ Insert rectangles into an R-tree with maximum 3 entries per node:
 
 R1 = (1, 1, 3, 3), R2 = (2, 2, 4, 4), R3 = (5, 5, 7, 7), R4 = (6, 1, 8, 3), R5 = (1, 5, 3, 7).
 
-*Insert R1:* Root = leaf {R1}. MBR = (1, 1, 3, 3).
-*Insert R2:* Leaf {R1, R2}. MBR = (1, 1, 4, 4).
-*Insert R3:* Leaf {R1, R2, R3}. MBR = (1, 1, 7, 7). Full (3 entries).
+*Insert R1:* Root = leaf `{R1}`. MBR = (1, 1, 3, 3).
+*Insert R2:* Leaf `{R1, R2}`. MBR = (1, 1, 4, 4).
+*Insert R3:* Leaf `{R1, R2, R3}`. MBR = (1, 1, 7, 7). Full (3 entries).
 *Insert R4:* Leaf is full. Split.
-  - R1, R2 are close together. R3 is far. Best split: {R1, R2} and {R3, R4}.
+  - R1, R2 are close together. R3 is far. Best split: `{R1, R2}` and `{R3, R4}`.
   - Split 1 MBR: (1, 1, 4, 4). Split 2 MBR: (5, 1, 8, 7).
   - Create internal node with two children.
 *Insert R5:* Which leaf to insert into? R5 = (1, 5, 3, 7).
   - Enlargement for split 1 (1,1,4,4): new MBR = (1, 1, 4, 7), enlargement = 4*3 - 3*3 = 3.
   - Enlargement for split 2 (5,1,8,7): no overlap, no enlargement needed... wait, R5 (1,5,3,7) does overlap with (5,1,8,7)? No, R5's x-range [1,3] and split 2's x-range [5,8] don't overlap. So R5 goes into split 1.
-  - Split 1: {R1, R2, R5}. MBR = (1, 1, 4, 7). Full again!
-  - Split split 1: {R1, R2} and {R5}. Or {R1, R5} and {R2}.
-  - Choose {R1, R2} (MBR 1,1,4,4) and {R5} (MBR 1,5,3,7). Minimum total enlargement.
+  - Split 1: `{R1, R2, R5}`. MBR = (1, 1, 4, 7). Full again!
+  - Split split 1: `{R1, R2}` and `{R5}`. Or `{R1, R5}` and `{R2}`.
+  - Choose `{R1, R2}` (MBR 1,1,4,4) and `{R5}` (MBR 1,5,3,7). Minimum total enlargement.
 
 Final R-tree:
 ```

@@ -817,7 +817,7 @@ A user reports that a web application is slow. Investigation steps:
 
 1. **ping server:** RTT = 2 ms. Network latency is fine.
 2. **traceroute server:** No unexpected hops. Path is direct.
-3. **curl -o /dev/null -w "%{time_total}" http://server/page:** 5 seconds. Slow!
+3. **curl -o /dev/null -w "%{`time_total`}" http://server/page:** 5 seconds. Slow!
 4. **tcpdump -i eth0 host server and port 80:** Observe TCP retransmissions. Many packets retransmitted after ~200 ms.
 5. **ethtool eth0:** Check for errors. `rx_errors: 0, tx_errors: 0, collisions: 0`. No physical layer issues.
 6. **ss -s:** `TCP: 5000 (estab 4800, closed 150, orphaned 0, timewait 50)`.
