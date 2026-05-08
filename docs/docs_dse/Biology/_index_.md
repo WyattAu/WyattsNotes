@@ -32,7 +32,7 @@ Complete revision notes for HKDSE Biology, covering the full syllabus with worke
 
 - **[Evolution and Ecology](./evolution-and-ecology)** -- Natural selection, evidence for evolution, population ecology, nutrient cycles, and human impact on ecosystems
 - **[Evolution](./evolution)** -- Population genetics, Hardy-Weinberg principle, genetic drift, speciation, adaptation, antibiotic resistance, classification systems, and phylogenetic trees
-- **[Biodiversity and Conservation](./dse-biology-biodiversity-conservation)** -- Classification systems, five-kingdom system, binomial nomenclature, species richness, and conservation strategies
+- **[Biodiversity and Conservation](./biodiversity-and-conservation)** -- Classification systems, five-kingdom system, binomial nomenclature, species richness, and conservation strategies
 
 ## Plant Biology
 
