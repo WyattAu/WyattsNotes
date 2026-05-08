@@ -260,7 +260,7 @@ Steps:
 4. Compute physical address: frame number || offset.
 
 If page directory entry 170 gives frame 0x3F and page table entry 299 gives frame 0x1A5:
-Physical address = 0x1A5 << 12 | 0x0C1C = 0x1A50C1C.
+Physical address = `0x1A5 << 12` | `0x0C1C` = `0x1A50C1C`.
 
 TLB hit: If the TLB caches the mapping for this virtual page, steps 1--3 are skipped, reducing the translation to one memory access.
 </details>
