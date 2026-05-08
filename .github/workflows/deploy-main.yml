@@ -51,7 +51,7 @@ jobs:
       - name: Build
         run: pnpm run build
         env:
-          NODE_OPTIONS: --max-old-space-size=7168
+          NODE_OPTIONS: --max-old-space-size=11264
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
