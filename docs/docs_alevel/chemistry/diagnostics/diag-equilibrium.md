@@ -274,3 +274,84 @@ $$x = \frac{-1.74 \times 10^{-5} + \sqrt{6.990 \times 10^{-8}}}{2} = \frac{-1.74
 $$\text{pH} = -\log(1.235 \times 10^{-4}) = 3.91$$
 
 The pH change is from $2.88$ to $3.91$, a change of $1.03$ units (not 2 units). This is because diluting a weak acid increases the percentage dissociation (from $1.32\%$ to $12.4\%$), partially compensating for the lower concentration. The student's reasoning would only apply to a strong acid.
+
+---
+
+### Additional Practice Problems
+
+#### UT-4: Heterogeneous Equilibrium
+
+**Question:** For the equilibrium $\mathrm{NH}_4\mathrm{HS}(s) \rightleftharpoons \mathrm{NH}_3(g) + \mathrm{H}_2\mathrm{S}(g)$, the total pressure at equilibrium is $0.660\,\mathrm{atm}$ at $298\,\mathrm{K}$. Calculate $K_p$.
+
+**Solution:**
+
+Since the solid does not appear in the expression:
+
+$$K_p = p(\mathrm{NH}_3) \times p(\mathrm{H}_2\mathrm{S})$$
+
+From stoichiometry, $p(\mathrm{NH}_3) = p(\mathrm{H}_2\mathrm{S}) = \frac{0.660}{2} = 0.330\,\mathrm{atm}$ (1 mark).
+
+$$K_p = 0.330 \times 0.330 = 0.109\,\mathrm{atm}^2$$ (1 mark).
+
+#### UT-5: Le Chatelier Applied
+
+**Question:** For the equilibrium $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g) \quad \Delta H = -92\,\mathrm{kJ\,mol^{-1}}$, predict and explain the effect of each change on the equilibrium yield of ammonia:
+
+(a) Increasing pressure
+(b) Increasing temperature
+(c) Adding a catalyst
+(d) Removing $\mathrm{NH}_3$ as it is formed
+
+**Solution:**
+
+(a) Increasing pressure favours the side with fewer moles of gas. There are 4 mol of gas on the left and 2 mol on the right. The equilibrium shifts to the right, **increasing the ammonia yield** (1 mark).
+
+(b) Increasing temperature favours the endothermic direction. Since the forward reaction is exothermic ($\Delta H < 0$), the equilibrium shifts to the left, **decreasing the ammonia yield** (1 mark).
+
+(c) A catalyst increases the rate of both forward and reverse reactions equally. It has **no effect** on the equilibrium position or yield. The system reaches equilibrium faster but the yield is unchanged (1 mark).
+
+(d) Removing $\mathrm{NH}_3$ decreases its partial pressure (concentration). The equilibrium shifts to the right to replace the $\mathrm{NH}_3$, **increasing the yield** of $\mathrm{NH}_3$ per pass through the reactor (1 mark). This is the principle behind the industrial Haber process, where $\mathrm{NH}_3$ is continually condensed out.
+
+#### IT-4: Equilibrium and Thermodynamics Combined
+
+**Question:** For the reaction $\mathrm{CO}(g) + \mathrm{H}_2\mathrm{O}(g) \rightleftharpoons \mathrm{CO}_2(g) + \mathrm{H}_2(g)$:
+
+$\Delta H^\circ = -41\,\mathrm{kJ\,mol^{-1}}$, $\Delta S^\circ = -42\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+
+(a) Calculate $K_p$ at $298\,\mathrm{K}$.
+
+(b) At what temperature does $K_p = 1$?
+
+(c) If the reaction starts with $1.00\,\mathrm{atm}$ of $\mathrm{CO}$ and $1.00\,\mathrm{atm}$ of $\mathrm{H}_2\mathrm{O}$ and no products, calculate the equilibrium partial pressures at $298\,\mathrm{K}$.
+
+**Solution:**
+
+(a) $\Delta G^\circ = -41000 - 298 \times (-42) = -41000 + 12516 = -28484\,\mathrm{J\,mol^{-1}}$
+
+$$K_p = \exp\left(\frac{28484}{8.314 \times 298}\right) = \exp(11.50) = 9.89 \times 10^4$$
+
+Since $\Delta n = 0$, $K_p$ is dimensionless (1 mark).
+
+(b) $K_p = 1$ when $\Delta G^\circ = 0$:
+
+$$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{-41000}{-0.042} = 976\,\mathrm{K}$$ (1 mark).
+
+(c) ICE table (pressures in atm):
+
+| | $\mathrm{CO}$ | $\mathrm{H}_2\mathrm{O}$ | $\mathrm{CO}_2$ | $\mathrm{H}_2$ |
+|---|---|---|---|---|
+| Initial | 1.00 | 1.00 | 0 | 0 |
+| Change | $-x$ | $-x$ | $+x$ | $+x$ |
+| Equilibrium | $1-x$ | $1-x$ | $x$ | $x$ |
+
+$$K_p = \frac{x^2}{(1-x)^2} = 9.89 \times 10^4$$
+
+$$\frac{x}{1-x} = \sqrt{9.89 \times 10^4} = 314.5$$
+
+$$x = 314.5(1-x) = 314.5 - 314.5x$$
+
+$$315.5x = 314.5$$
+
+$$x = 0.997\,\mathrm{atm}$$
+
+Equilibrium: $p(\mathrm{CO}) = p(\mathrm{H}_2\mathrm{O}) = 0.003\,\mathrm{atm}$, $p(\mathrm{CO}_2) = p(\mathrm{H}_2) = 0.997\,\mathrm{atm}$ (1 mark).

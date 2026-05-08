@@ -615,6 +615,196 @@ Check: $n(\text{pentane}) = 10.0/72.0 = 0.139\,\mathrm{mol}$. $n(\mathrm{CO}_2) 
 
 </details>
 
+## Advanced Alkanes
+
+### Combustion Calculations: Incomplete Combustion and Environmental Impact
+
+Incomplete combustion occurs when oxygen supply is limited, producing carbon monoxide and/or carbon (soot) in addition to (or instead of) carbon dioxide.
+
+$$\mathrm{C}_n\mathrm{H}_{2n+2} + \frac{3n+1}{2}\mathrm{O}_2 \to n\mathrm{CO} + (n+1)\mathrm{H}_2\mathrm{O} \quad \text{(partial)}$$
+
+$$\mathrm{C}_n\mathrm{H}_{2n+2} + \frac{n+1}{2}\mathrm{O}_2 \to n\mathrm{C} + (n+1)\mathrm{H}_2\mathrm{O} \quad \text{(very limited)}$$
+
+**Environmental impact of combustion products:**
+
+| Product | Environmental Effect |
+|---|---|
+| $\mathrm{CO}_2$ | Greenhouse gas, contributes to global warming |
+| $\mathrm{CO}$ | Toxic (binds to haemoglobin, reducing $\mathrm{O}_2$ transport) |
+| $\mathrm{C}$ (soot/particulates) | Respiratory problems, global dimming |
+| $\mathrm{NO}_x$ | Acid rain, photochemical smog (formed from $\mathrm{N}_2$ in air at high temperature) |
+| $\mathrm{SO}_2$ | Acid rain (from sulphur impurities in fuel) |
+
+### Free Radical Substitution: Advanced Mechanism
+
+The mechanism proceeds through three stages. Using ethane and chlorine as an example:
+
+**Stage 1 -- Initiation:**
+$$\mathrm{Cl}_2 \xrightarrow{h\nu} 2\mathrm{Cl}^\bullet$$
+
+The Cl--Cl bond ($243\,\mathrm{kJ/mol}$) is homolytically cleaved by UV light. The bond dissociation energy must be supplied by a photon with energy $E \geq 243\,\mathrm{kJ/mol}$, corresponding to $\lambda \leq 493\,\mathrm{nm}$ (visible blue-green light).
+
+**Stage 2 -- Propagation:**
+$$\mathrm{Cl}^\bullet + \mathrm{CH}_3\mathrm{CH}_3 \to \mathrm{CH}_3\mathrm{CH}_2^\bullet + \mathrm{HCl}$$
+$$\mathrm{CH}_3\mathrm{CH}_2^\bullet + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Cl} + \mathrm{Cl}^\bullet$$
+
+The chain carrier ($\mathrm{Cl}^\bullet$) is regenerated, allowing the chain to continue.
+
+**Stage 3 -- Termination:**
+$$2\mathrm{Cl}^\bullet \to \mathrm{Cl}_2$$
+$$2\mathrm{CH}_3\mathrm{CH}_2^\bullet \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3 \quad \text{(butane)}$$
+$$\mathrm{CH}_3\mathrm{CH}_2^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Cl}$$
+
+Termination produces a mixture of products, which is why free radical substitution is not a useful synthetic method for preparing pure haloalkanes.
+
+### Relative Reactivity of Halogens in Free Radical Substitution
+
+The reactivity of halogens in free radical substitution with alkanes follows the trend:
+
+$$\mathrm{F}_2 \gg \mathrm{Cl}_2 > \mathrm{Br}_2 \gg \mathrm{I}_2$$
+
+| Halogen | Bond dissociation energy (kJ/mol) | Reactivity | Selectivity |
+|---|---|---|---|
+| $\mathrm{F}_2$ | 158 | Extremely high (explosive) | Very low (random substitution) |
+| $\mathrm{Cl}_2$ | 243 | Moderate | Moderate (3:1 primary:secondary) |
+| $\mathrm{Br}_2$ | 193 | Low (requires heat or UV) | High (1600:1 primary:secondary) |
+| $\mathrm{I}_2$ | 151 | Negligible (reaction is endothermic) | -- |
+
+Fluorine reacts too violently to be useful. Iodine does not react because the H-abstraction step is endothermic (the H--I bond formed, $297\,\mathrm{kJ/mol}$, is weaker than the C--H bond broken, $\approx 410\,\mathrm{kJ/mol}$ for primary C--H).
+
+### Bond Dissociation Energies and Radical Stability
+
+| C--H Bond | Bond dissociation energy (kJ/mol) | Radical formed |
+|---|---|---|
+| $\mathrm{CH}_3$--H (primary) | 439 | $\mathrm{CH}_3^\bullet$ (least stable) |
+| $\mathrm{CH}_3\mathrm{CH}_2$--H (primary) | 423 | $\mathrm{CH}_3\mathrm{CH}_2^\bullet$ |
+| $(\mathrm{CH}_3)_2\mathrm{CH}$--H (secondary) | 413 | $(\mathrm{CH}_3)_2\mathrm{CH}^\bullet$ |
+| $(\mathrm{CH}_3)_3\mathrm{C}$--H (tertiary) | 404 | $(\mathrm{CH}_3)_3\mathrm{C}^\bullet$ (most stable) |
+| $\mathrm{H}_2\mathrm{C}=\mathrm{CH}$--H (vinylic) | 465 | $\mathrm{H}_2\mathrm{C}=\mathrm{CH}^\bullet$ (very unstable) |
+| $\mathrm{Ph}$--H (benzylic C--H) | 473 (Ph--H) | $\mathrm{Ph}^\bullet$ |
+| $\mathrm{PhCH}_2$--H (benzylic) | 375 | $\mathrm{PhCH}_2^\bullet$ (very stable) |
+
+Radical stability: **benzylic $\approx$ tertiary $>$ secondary $>$ primary $>$ methyl $>$ vinylic**
+
+Weaker bonds break more easily, producing more stable radicals. The stability of tertiary radicals arises from hyperconjugation (electron donation from adjacent C--H and C--C sigma bonds into the half-filled $p$ orbital) and inductive effects (electron-donating alkyl groups stabilise the electron-deficient radical centre).
+
+### Isomer Counting for Alkanes
+
+| Carbon atoms | Number of structural isomers |
+|---|---|
+| 1 | 1 (methane) |
+| 2 | 1 (ethane) |
+| 3 | 1 (propane) |
+| 4 | 2 (butane, 2-methylpropane) |
+| 5 | 3 (pentane, 2-methylbutane, 2,2-dimethylpropane) |
+| 6 | 5 |
+| 7 | 9 |
+| 8 | 18 |
+| 9 | 35 |
+| 10 | 75 |
+
+### Environmental Chemistry: Catalytic Converters
+
+Catalytic converters reduce the emissions from internal combustion engines:
+
+- **Reduction catalyst (platinum, palladium):** Converts $\mathrm{NO}_x$ to $\mathrm{N}_2$ and $\mathrm{O}_2$:
+$$2\mathrm{NO} \to \mathrm{N}_2 + \mathrm{O}_2$$
+$$2\mathrm{NO}_2 \to \mathrm{N}_2 + 2\mathrm{O}_2$$
+
+- **Oxidation catalyst (platinum, rhodium):** Converts $\mathrm{CO}$ to $\mathrm{CO}_2$ and unburnt hydrocarbons to $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$:
+$$2\mathrm{CO} + \mathrm{O}_2 \to 2\mathrm{CO}_2$$
+$$\mathrm{C}_n\mathrm{H}_{2n+2} + \frac{3n+1}{2}\mathrm{O}_2 \to n\mathrm{CO}_2 + (n+1)\mathrm{H}_2\mathrm{O}$$
+
+**Limitations:**
+- Catalytic converters only work at high temperatures ($> 300^\circ\mathrm{C}$), so they are ineffective during cold starts.
+- Lead compounds (from leaded petrol) poison the catalyst by coating the active sites.
+- Sulphur compounds in fuel can produce $\mathrm{SO}_2$ and $\mathrm{SO}_3$ which can deactivate the catalyst.
+
+### Cracking: Thermal vs Catalytic
+
+| Feature | Thermal cracking | Catalytic cracking |
+|---|---|---|
+| Temperature | $700$--$900^\circ\mathrm{C}$ | $450$--$500^\circ\mathrm{C}$ |
+| Pressure | High ($\approx 7000\,\mathrm{kPa}$) | Slightly above atmospheric |
+| Catalyst | None | Zeolite (aluminosilicate) |
+| Products | High proportion of alkenes, some shorter alkanes | Branched alkanes, cycloalkanes, aromatic hydrocarbons |
+| Carbon chain length | Shorter chains | Shorter chains |
+| Process | Free radical mechanism | Carbocation (ionic) mechanism |
+
+### Common Pitfalls
+
+1. **Writing balanced combustion equations:** For $\mathrm{C}_n\mathrm{H}_{2n+2}$, the coefficient of $\mathrm{O}_2$ is $\frac{3n+1}{2}$, not $n + \frac{n+1}{2}$ (these are the same, but students often get the algebra wrong). For odd $n$, $\frac{3n+1}{2}$ is not an integer, so double the entire equation.
+
+2. **Confusing substitution and addition:** Alkanes undergo substitution (one atom replaces another). Alkenes undergo addition (atoms add across the double bond). Students sometimes write addition reactions for alkanes.
+
+3. **Forgetting that free radical substitution produces a mixture:** The product mixture includes all possible isomers plus side products from termination steps. This is why free radical substitution is not used for synthesis.
+
+4. **Bond dissociation energy vs mean bond enthalpy:** Bond dissociation energy is for breaking a specific bond in a specific molecule. Mean bond enthalpy is an average across different molecules. Use bond dissociation energies for radical stability arguments, not mean bond enthalpies.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Write an equation for the incomplete combustion of butane ($\mathrm{C}_4\mathrm{H}_{10}$) that produces carbon monoxide. State two environmental problems caused by incomplete combustion.
+
+**Mark Scheme:**
+
+$$2\mathrm{C}_4\mathrm{H}_{10} + 9\mathrm{O}_2 \to 8\mathrm{CO} + 10\mathrm{H}_2\mathrm{O}$$ (2 marks for correct balanced equation).
+
+Two from (1 mark each): Carbon monoxide is toxic because it binds irreversibly to haemoglobin in red blood cells, reducing the blood's oxygen-carrying capacity. Carbon monoxide is a colourless, odourless gas so it is difficult to detect. Soot/particulates cause respiratory problems and contribute to global dimming.
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+Explain the term **homolytic fission**. Use the reaction between methane and chlorine to describe the mechanism of free radical substitution, including all three stages. (6 marks)
+
+**Mark Scheme:**
+
+Homolytic fission: the breaking of a covalent bond in which each bonding electron is taken by one of the atoms, producing two free radicals, each with an unpaired electron (1 mark).
+
+Initiation: $\mathrm{Cl}_2 \xrightarrow{h\nu} 2\mathrm{Cl}^\bullet$ (1 mark).
+
+Propagation: $\mathrm{Cl}^\bullet + \mathrm{CH}_4 \to \mathrm{CH}_3^\bullet + \mathrm{HCl}$ and $\mathrm{CH}_3^\bullet + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{Cl} + \mathrm{Cl}^\bullet$ (2 marks for both propagation steps).
+
+Termination: any two radicals combine, e.g. $2\mathrm{Cl}^\bullet \to \mathrm{Cl}_2$ or $\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$ (1 mark).
+
+The chain carrier ($\mathrm{Cl}^\bullet$) is regenerated in the propagation step, allowing the chain reaction to continue (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+Explain why free radical substitution of propane with bromine is more selective than with chlorine, and predict the major organic product.
+
+**Mark Scheme:**
+
+The H-abstraction step with bromine is endothermic (or only slightly exothermic), so the transition state resembles the radical product (1 mark). This means the stability of the radical product strongly influences the activation energy: the more stable radical (secondary) has a lower activation energy, giving greater selectivity (1 mark).
+
+With chlorine, the H-abstraction step is highly exothermic, so the transition state resembles the reactant and radical stability has less influence on the rate, giving lower selectivity (1 mark).
+
+The major product is **2-bromopropane** because the secondary hydrogen is abstracted preferentially over the primary hydrogens (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (5 marks)</summary>
+
+A student cracks a long-chain alkane $\mathrm{C}_{16}\mathrm{H}_{34}$ and obtains a mixture including propene ($\mathrm{C}_3\mathrm{H}_6$) and an alkane. Write a balanced equation for this cracking reaction and state the type of cracking most likely to produce propene.
+
+**Mark Scheme:**
+
+$$\mathrm{C}_{16}\mathrm{H}_{34} \to \mathrm{C}_3\mathrm{H}_6 + \mathrm{C}_{13}\mathrm{H}_{28}$$ (2 marks for correct balanced equation).
+
+The cracking that produces an alkene (propene) is **thermal cracking** (1 mark), which operates at high temperature ($700$--$900^\circ\mathrm{C}$) and produces a high proportion of alkenes via a free radical mechanism (1 mark).
+
+Catalytic cracking produces mainly branched and cyclic alkanes/aromatics, not primarily alkenes (1 mark).
+
+</details>
+
 ---
 
 :::tip

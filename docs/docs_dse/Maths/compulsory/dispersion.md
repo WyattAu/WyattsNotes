@@ -616,3 +616,260 @@ Ready to test your understanding of **Dispersion**? The [diagnostic test](/docs/
 
 See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+For statistics problems in DSE Paper 1:
+
+1. When computing the mean, show the sum divided by $n$ before giving the decimal.
+2. When computing variance, use the computational formula $\sigma^2 = \dfrac{\sum x_i^2}{n} - \bar{x}^2$ and show both terms.
+3. For grouped data, show the class marks and the coding method clearly in a table.
+4. For the coding method, state the assumed mean $A$ and class width $h$.
+5. For box plots, label all five values (min, $Q_1$, $Q_2$, $Q_3$, max).
+
+### Significant Figures
+
+The DSE typically requires answers to be given to 3 significant figures unless the question specifies otherwise. Exact fractions are preferred when they arise naturally.
+
+### Common DSE Question Types
+
+1. **Combined mean and variance** of two groups.
+2. **Grouped data** mean and standard deviation using the coding method.
+3. **Effect of linear transformations** on mean and variance.
+4. **Box-and-whisker plots** with outlier identification.
+5. **Coefficient of variation** for comparing relative dispersion.
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 13: Effect of adding a data point**
+
+A dataset $\{2, 5, 8, 11, 14\}$ has mean $\bar{x} = 8$ and variance $\sigma^2 = 20$. Find the new mean and variance if the value $20$ is added.
+
+<details>
+<summary>Solution</summary>
+
+New $n' = 6$. New sum $= 40 + 20 = 60$. New mean $\bar{x}' = \dfrac{60}{6} = 10$.
+
+$\sum x_i^2 = 4 + 25 + 64 + 121 + 196 = 410$. New $\sum x_i^2 = 410 + 400 = 810$.
+
+New variance: $\sigma'^2 = \dfrac{810}{6} - 10^2 = 135 - 100 = 35$.
+
+</details>
+
+**Worked Example 14: Standardised scores**
+
+In an exam, the mean is 60 and the standard deviation is 10. Student A scores 75 and Student B scores 55. Express each score as a standardised score (z-score).
+
+<details>
+<summary>Solution</summary>
+
+$$z_A = \frac{75 - 60}{10} = 1.5$$
+
+$$z_B = \frac{55 - 60}{10} = -0.5$$
+
+Student A scored 1.5 standard deviations above the mean; Student B scored 0.5 standard deviations below.
+
+</details>
+
+**Worked Example 15: Finding data from summary statistics**
+
+A dataset of 5 positive integers has mean 6 and variance 4. Find all possible datasets.
+
+<details>
+<summary>Solution</summary>
+
+$\sum x_i = 30$ and $\dfrac{\sum x_i^2}{5} - 36 = 4 \implies \sum x_i^2 = 200$.
+
+We need five positive integers summing to 30 with squares summing to 200.
+
+If the data is symmetric around 6: try $\{4, 5, 6, 7, 8\}$.
+
+Sum $= 30$. $\sum x_i^2 = 16 + 25 + 36 + 49 + 64 = 190 \neq 200$.
+
+Try $\{2, 6, 6, 6, 10\}$: sum $= 30$, $\sum x_i^2 = 4 + 36 + 36 + 36 + 100 = 212 \neq 200$.
+
+Try $\{4, 4, 6, 8, 8\}$: sum $= 30$, $\sum x_i^2 = 16 + 16 + 36 + 64 + 64 = 196 \neq 200$.
+
+Try $\{3, 5, 7, 7, 8\}$: sum $= 30$, $\sum x_i^2 = 9 + 25 + 49 + 49 + 64 = 196 \neq 200$.
+
+Try $\{4, 4, 8, 6, 8\}$: sum $= 30$, $\sum x_i^2 = 16 + 16 + 64 + 36 + 64 = 196$.
+
+Try $\{2, 6, 6, 8, 8\}$: sum $= 30$, $\sum x_i^2 = 4 + 36 + 36 + 64 + 64 = 204$.
+
+Try $\{4, 6, 6, 6, 8\}$: sum $= 30$, $\sum x_i^2 = 16 + 36 + 36 + 36 + 64 = 188$.
+
+There may be no solution with 5 positive integers. Let me try $\{2, 5, 7, 7, 9\}$: sum $= 30$, $\sum x_i^2 = 4 + 25 + 49 + 49 + 81 = 208$.
+
+$\{3, 5, 6, 8, 8\}$: sum $= 30$, $\sum x_i^2 = 9 + 25 + 36 + 64 + 64 = 198$.
+
+$\{4, 5, 6, 7, 8\}$: $\sum x_i^2 = 190$. Need 200. The deficit is 10. If we change 5 to 6 and 6 to 5: $\{4, 6, 5, 7, 8\}$: same sum of squares.
+
+If we change 4 to 5 and 8 to 7: $\{5, 5, 6, 7, 7\}$: $\sum x_i^2 = 25 + 25 + 36 + 49 + 49 = 184$.
+
+The minimum $\sum x_i^2$ for sum 30 with 5 positive integers is achieved by values closest to 6.
+
+The constraints may not be satisfiable with integers. In an exam, this would typically be solved numerically.
+
+</details>
+
+**Worked Example 16: Grouped data variance with coding**
+
+For the frequency distribution below, find the standard deviation using the assumed mean method.
+
+| Class | Frequency |
+|---|---|
+| 5 -- 9 | 3 |
+| 10 -- 14 | 7 |
+| 15 -- 19 | 12 |
+| 20 -- 24 | 5 |
+| 25 -- 29 | 3 |
+
+<details>
+<summary>Solution</summary>
+
+Class marks: $7$, $12$, $17$, $22$, $27$. $A = 17$, $h = 5$.
+
+$d_i$: $-2$, $-1$, $0$, $1$, $2$.
+
+| $f_i$ | $d_i$ | $f_id_i$ | $f_id_i^2$ |
+|---|---|---|---|
+| 3 | $-2$ | $-6$ | 12 |
+| 7 | $-1$ | $-7$ | 7 |
+| 12 | 0 | 0 | 0 |
+| 5 | 1 | 5 | 5 |
+| 3 | 2 | 6 | 12 |
+
+$n = 30$, $\sum f_id_i = -2$, $\sum f_id_i^2 = 36$.
+
+$\bar{d} = \dfrac{-2}{30} = -\dfrac{1}{15}$.
+
+$\sigma_d^2 = \dfrac{36}{30} - \left(-\dfrac{1}{15}\right)^2 = 1.2 - \dfrac{1}{225} = \dfrac{269}{225}$.
+
+$\sigma^2 = \dfrac{269}{225} \times 25 = \dfrac{269}{9} \approx 29.89$.
+
+$\sigma = \sqrt{\dfrac{269}{9}} = \dfrac{\sqrt{269}}{3} \approx 5.47$.
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** Two groups of students took the same test. Group A: $n_1 = 40$, $\bar{x}_1 = 65$, $\sigma_1 = 8$. Group B: $n_2 = 60$, $\bar{x}_2 = 72$, $\sigma_2 = 10$. Find the overall mean and standard deviation.
+
+<details>
+<summary>Solution</summary>
+
+Combined mean: $\bar{x}_c = \dfrac{40(65) + 60(72)}{100} = \dfrac{2600 + 4320}{100} = 69.2$.
+
+Combined variance:
+
+$$\sigma_c^2 = \frac{40(64) + 60(100) + 40(65 - 69.2)^2 + 60(72 - 69.2)^2}{100}$$
+
+$$= \frac{2560 + 6000 + 40(17.64) + 60(7.84)}{100}$$
+
+$$= \frac{8560 + 705.6 + 470.4}{100} = \frac{9736}{100} = 97.36$$
+
+$$\sigma_c = \sqrt{97.36} \approx 9.87$$
+
+</details>
+
+**DSE Practice 2.** The heights (in cm) of 8 students are: 158, 162, 165, 168, 170, 172, 175, 180. After converting to feet (1 cm = 0.03281 ft), find the mean and standard deviation in feet.
+
+<details>
+<summary>Solution</summary>
+
+Let $Y = 0.03281X$. Then $\bar{y} = 0.03281\bar{x}$ and $\sigma_Y = 0.03281\sigma_X$.
+
+$\bar{x} = \dfrac{158 + 162 + 165 + 168 + 170 + 172 + 175 + 180}{8} = \dfrac{1350}{8} = 168.75$ cm.
+
+$\bar{y} = 0.03281 \times 168.75 \approx 5.537$ ft.
+
+$\sigma_X = \sqrt{\dfrac{\sum x_i^2}{8} - 168.75^2}$.
+
+$\sum x_i^2 = 24964 + 26244 + 27225 + 28224 + 28900 + 29584 + 30625 + 32400 = 228166$.
+
+$\sigma_X^2 = \dfrac{228166}{8} - 28476.5625 = 28520.75 - 28476.5625 = 44.1875$.
+
+$\sigma_X = \sqrt{44.1875} \approx 6.647$ cm.
+
+$\sigma_Y = 0.03281 \times 6.647 \approx 0.2181$ ft.
+
+</details>
+
+**DSE Practice 3.** For the dataset $\{1, 3, 5, 7, 9, 11, 13\}$, find the mean deviation (mean absolute deviation) and compare it with the standard deviation.
+
+<details>
+<summary>Solution</summary>
+
+$\bar{x} = \dfrac{49}{7} = 7$.
+
+Mean deviation $= \dfrac{|1-7| + |3-7| + |5-7| + |7-7| + |9-7| + |11-7| + |13-7|}{7} = \dfrac{6 + 4 + 2 + 0 + 2 + 4 + 6}{7} = \dfrac{24}{7} \approx 3.43$.
+
+$\sigma^2 = \dfrac{1 + 9 + 25 + 49 + 81 + 121 + 169}{7} - 49 = \dfrac{455}{7} - 49 = 65 - 49 = 16$.
+
+$\sigma = 4$.
+
+The standard deviation (4) is greater than the mean deviation (3.43), which is always the case for datasets that are not constant.
+
+</details>
+
+**DSE Practice 4.** A set of data has $\bar{x} = 50$ and $\sigma = 4$. If every value is increased by $k$, the new standard deviation becomes 10. Find $k$ and explain your answer.
+
+<details>
+<summary>Solution</summary>
+
+Adding a constant $k$ does not change the standard deviation. Therefore, the new standard deviation should still be $\sigma = 4$, not $10$.
+
+There is no value of $k$ that changes the standard deviation from 4 to 10 by addition alone. To change the standard deviation, we would need to multiply by a constant. If $Y = aX + b$, then $\sigma_Y = |a|\sigma_X$. For $\sigma_Y = 10$: $|a| = \dfrac{10}{4} = 2.5$.
+
+The question likely intends a multiplication, not just addition. If $Y = 2.5X + k$, then $\sigma_Y = 10$ for any $k$.
+
+</details>
+
+**DSE Practice 5.** The table shows the distribution of marks in a test.
+
+| Marks | Frequency |
+|---|---|
+| 0 -- 19 | 4 |
+| 20 -- 39 | 10 |
+| 40 -- 59 | 22 |
+| 60 -- 79 | 14 |
+| 80 -- 100 | 5 |
+
+Estimate the mean and standard deviation.
+
+<details>
+<summary>Solution</summary>
+
+Class marks: $9.5$, $29.5$, $49.5$, $69.5$, $89.5$. Class widths: 20, 20, 20, 20, 21.
+
+For the coding method with equal class widths (using width 20): $A = 49.5$, $h = 20$.
+
+$d_i$: $-2$, $-1$, $0$, $1$, $2$ (approximately; the last class has width 21).
+
+Using approximate equal widths:
+
+| $f_i$ | $x_i$ | $d_i$ | $f_id_i$ | $f_id_i^2$ |
+|---|---|---|---|---|
+| 4 | 9.5 | $-2$ | $-8$ | 16 |
+| 10 | 29.5 | $-1$ | $-10$ | 10 |
+| 22 | 49.5 | 0 | 0 | 0 |
+| 14 | 69.5 | 1 | 14 | 14 |
+| 5 | 89.5 | 2 | 10 | 20 |
+
+$n = 55$, $\sum f_id_i = 6$, $\sum f_id_i^2 = 60$.
+
+$\bar{x} = 49.5 + \dfrac{6}{55} \times 20 = 49.5 + 2.18 = 51.68 \approx 51.7$.
+
+$\sigma_d^2 = \dfrac{60}{55} - \left(\dfrac{6}{55}\right)^2 = 1.0909 - 0.0119 = 1.079$.
+
+$\sigma^2 = 1.079 \times 400 = 431.6$. $\sigma = \sqrt{431.6} \approx 20.8$.
+
+</details>

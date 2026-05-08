@@ -869,3 +869,169 @@ Ready to test your understanding of **Functions**? The [diagnostic test](/docs/d
 
 See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+For function problems in DSE Paper 1:
+
+1. When determining the domain, explicitly state each restriction (division by zero, square root, logarithm).
+2. When sketching graphs, label all intercepts, asymptotes, and key points.
+3. When checking injectivity/surjectivity, provide a specific counterexample.
+4. When finding the range, show the maximum/minimum value and justify why it is attainable.
+
+### Significant Figures
+
+Exact values are preferred. Decimal answers to 3 significant figures.
+
+### Common DSE Question Types
+
+1. **Domain and range** determination for various function types.
+2. **Injectivity/surjectivity** proofs and counterexamples.
+3. **Graph sketching** with transformations.
+4. **Composite function** evaluation and domain finding.
+5. **Piecewise function** evaluation and graphing.
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 9: Determining injectivity**
+
+Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{R}$?
+
+<details>
+<summary>Solution</summary>
+
+$f(0) = 0$, $f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$, $f(-\sqrt{3}) = 0$.
+
+Since $f(0) = f(\sqrt{3}) = f(-\sqrt{3})$ and the inputs are distinct, $f$ is not injective on $\mathbb{R}$.
+
+Note: $f$ is injective on $[1, \infty)$ since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) > 0$ for $x > 1$.
+
+</details>
+
+**Worked Example 10: Surjectivity**
+
+Is $f(x) = x^2 + 1$ surjective if the codomain is $\mathbb{R}$?
+
+<details>
+<summary>Solution</summary>
+
+No. Since $x^2 \geq 0$ for all real $x$, we have $f(x) = x^2 + 1 \geq 1$. The value $0 \in \mathbb{R}$ is not attained. Therefore $f$ is not surjective onto $\mathbb{R}$.
+
+If the codomain is restricted to $[1, \infty)$, then $f$ is surjective.
+
+</details>
+
+**Worked Example 11: Graph of a piecewise function**
+
+Sketch the graph of $f(x) = \begin{cases} |x| & \text{if } x \leq 2 \\ x^2 - 2x & \text{if } x > 2 \end{cases}$
+
+<details>
+<summary>Solution</summary>
+
+For $x \leq 2$: $f(x) = |x|$, which is a V-shape with vertex at $(0, 0)$.
+
+At $x = 2$: $f(2) = 2$.
+
+For $x > 2$: $f(x) = x^2 - 2x = (x-1)^2 - 1$.
+
+At $x = 2^+$: $f(2) = 4 - 4 = 0$.
+
+There is a jump discontinuity at $x = 2$: $f(2) = 2$ but $\lim_{x \to 2^+} f(x) = 0$.
+
+For $x > 2$, the function is a parabola with vertex at $(1, -1)$, but since $x > 2$, we only see the right branch, which is strictly increasing.
+
+</details>
+
+**Worked Example 12: Even and odd function properties**
+
+If $f$ is an odd function and $g$ is an even function, determine whether $f \circ g$ is even, odd, or neither.
+
+<details>
+<summary>Solution</summary>
+
+$$(f \circ g)(-x) = f(g(-x)) = f(g(x)) = (f \circ g)(x)$$
+
+Since $g$ is even: $g(-x) = g(x)$.
+
+So $(f \circ g)(-x) = (f \circ g)(x)$, which means $f \circ g$ is even.
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** Let $f(x) = \dfrac{2x + 3}{x - 1}$. Find the domain, range, and determine whether $f$ is injective.
+
+<details>
+<summary>Solution</summary>
+
+Domain: $x \neq 1$, so $\mathrm{dom}(f) = \mathbb{R} \setminus \{1\}$.
+
+$f(x) = 2 + \dfrac{5}{x - 1}$.
+
+For $x > 1$: as $x \to 1^+$, $f(x) \to +\infty$; as $x \to +\infty$, $f(x) \to 2^+$. Range: $(2, +\infty)$.
+
+For $x < 1$: as $x \to 1^-$, $f(x) \to -\infty$; as $x \to -\infty$, $f(x) \to 2^-$. Range: $(-\infty, 2)$.
+
+Combined range: $\mathbb{R} \setminus \{2\}$.
+
+$f$ is injective: for $x > 1$, $f$ is strictly decreasing (derivative $-5/(x-1)^2 < 0$); for $x < 1$, $f$ is also strictly decreasing. And no value from $(2, +\infty)$ overlaps with $(-\infty, 2)$.
+
+</details>
+
+**DSE Practice 2.** Let $f(x) = x^2 - 2x + 3$ for $x \geq 1$. Find the range and determine whether $f$ has an inverse.
+
+<details>
+<summary>Solution</summary>
+
+$f(x) = (x - 1)^2 + 2$. Since $x \geq 1$ and the vertex is at $(1, 2)$, $f$ is strictly increasing on $[1, \infty)$.
+
+Range: $[2, \infty)$.
+
+Since $f$ is strictly increasing (hence injective) on $[1, \infty)$, it has an inverse.
+
+</details>
+
+**DSE Practice 3.** A function is defined by $f(x) = \lfloor x \rfloor$ (the greatest integer less than or equal to $x$). Find $f(3.7)$, $f(-2.1)$, and $f(0)$.
+
+<details>
+<summary>Solution</summary>
+
+$f(3.7) = 3$, $f(-2.1) = -3$, $f(0) = 0$.
+
+</details>
+
+**DSE Practice 4.** Determine whether $f(x) = x^3 + x$ is odd, even, or neither.
+
+<details>
+<summary>Solution</summary>
+
+$$f(-x) = (-x)^3 + (-x) = -x^3 - x = -(x^3 + x) = -f(x)$$
+
+Since $f(-x) = -f(x)$, $f$ is odd.
+
+</details>
+
+**DSE Practice 5.** The function $f$ is defined on $\mathbb{R}$ by $f(x) = ax^2 + bx + c$. Given that $f(0) = 5$, $f(1) = 4$, and $f(-1) = 10$, find $a$, $b$, and $c$.
+
+<details>
+<summary>Solution</summary>
+
+$f(0) = c = 5$.
+
+$f(1) = a + b + 5 = 4 \implies a + b = -1 \quad \text{(i)}$.
+
+$f(-1) = a - b + 5 = 10 \implies a - b = 5 \quad \text{(ii)}$.
+
+(i) + (ii): $2a = 4 \implies a = 2$. From (i): $b = -3$.
+
+$f(x) = 2x^2 - 3x + 5$.
+
+</details>

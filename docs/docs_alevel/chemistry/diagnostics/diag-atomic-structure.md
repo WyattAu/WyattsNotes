@@ -189,3 +189,45 @@ Consider the elements Na, Mg, Al, Si, P, S, Cl, and Ar.
 - **Ar**: Monatomic with only very weak van der Waals forces between atoms. Lowest melting point.
 
 (c) Phosphorus ($[\text{Ne}]\,3s^2\,3p^3$) has **five** valence electrons, while silicon ($[\text{Ne}]\,3s^2\,3p^2$) has **four**. When P substitutes for Si in the lattice, four of P's valence electrons form covalent bonds with neighbouring Si atoms, but the **fifth electron is not required for bonding** and becomes a delocalised electron. This creates an **n-type semiconductor** (negative charge carriers), significantly increasing electrical conductivity at room temperature because the extra electrons can move freely through the lattice.
+
+---
+
+### Additional Practice Problems
+
+#### UT-4: Ionisation Energy Calculation
+
+**Question:** The first three ionisation energies of aluminium are $578$, $1817$, and $2745\,\mathrm{kJ\,mol^{-1}}$. Explain why the second ionisation energy is so much larger than the first, and why the third is larger still but the jump from second to third is smaller than from first to second.
+
+**Solution:**
+
+The first ionisation removes a $3p$ electron from Al ($[\text{Ne}]\,3s^2\,3p^1$). This is a relatively easy removal because the $3p$ electron is shielded by the $[\text{Ne}]\,3s^2$ core and is far from the nucleus (1 mark).
+
+The second ionisation removes a $3s$ electron from $\mathrm{Al}^+$ ($[\text{Ne}]\,3s^2$). The jump ($1817 - 578 = 1239\,\mathrm{kJ/mol}$) is large because: (a) the remaining $3s$ electrons are closer to the nucleus than the $3p$ electron (lower energy subshell), (b) there is less shielding after removing the $3p$ electron, and (c) the effective nuclear charge experienced by the $3s$ electrons is higher (1 mark).
+
+The third ionisation removes the second $3s$ electron from $\mathrm{Al}^{2+}$ ($[\text{Ne}]\,3s^1$). The jump ($2745 - 1817 = 928\,\mathrm{kJ/mol}$) is smaller than the first jump because both electrons being removed are from the same subshell ($3s$), so the change in effective nuclear charge and shielding is less dramatic (1 mark).
+
+#### UT-5: Mass Spectrometry and Isotopic Abundance
+
+**Question:** Naturally occurring boron has two isotopes: $\mathrm{^{10}B}$ and $\mathrm{^{11}B}$. The relative atomic mass of boron is $10.81$. Calculate the percentage abundance of each isotope.
+
+**Solution:**
+
+Let $x$ be the fraction of $\mathrm{^{10}B}$ and $(1-x)$ be the fraction of $\mathrm{^{11}B}$.
+
+$$10.81 = 10.00x + 11.00(1-x) = 10.00x + 11.00 - 11.00x = 11.00 - x$$
+
+$$x = 11.00 - 10.81 = 0.19$$
+
+$\mathrm{^{10}B}$: $19.0\%$, $\mathrm{^{11}B}$: $81.0\%$
+
+#### IT-4: Periodic Trends and Thermodynamics
+
+**Question:** Explain why the first ionisation energy of oxygen ($1314\,\mathrm{kJ/mol}$) is lower than that of nitrogen ($1402\,\mathrm{kJ/mol}$), despite oxygen having a higher nuclear charge. Relate this to the electronic configurations.
+
+**Solution:**
+
+Nitrogen has the electron configuration $1s^2\,2s^2\,2p^3$ with one electron in each of the three $2p$ orbitals (Hund's rule). Each electron in a separate orbital experiences minimal electron-electron repulsion within the subshell (1 mark).
+
+Oxygen has the configuration $1s^2\,2s^2\,2p^4$, meaning one of the $2p$ orbitals must contain a pair of electrons. The paired electrons in the same orbital repel each other, making it easier to remove one of them compared to removing an unpaired electron from nitrogen (1 mark).
+
+Although oxygen has a higher nuclear charge ($+8$ vs $+7$), the extra electron-electron repulsion from the paired configuration outweighs the increased nuclear attraction, resulting in a lower first ionisation energy (1 mark).

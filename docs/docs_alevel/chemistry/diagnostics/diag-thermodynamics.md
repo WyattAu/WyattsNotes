@@ -259,3 +259,62 @@ This differs from the experimental value of $-137\,\text{kJ mol}^{-1}$ because b
 - $\Delta H$ is the vertical difference between products and reactants
 
 (c) Despite being exothermic ($\Delta H \lt 0$), the reaction has a significant activation energy ($E_a$). The H--H bond ($436\,\text{kJ mol}^{-1}$) and the C$=$C $\pi$-bond (part of the $612\,\text{kJ mol}^{-1}$) must be broken before new bonds can form. At room temperature, very few molecules have sufficient kinetic energy ($\geq E_a$) to overcome this barrier. A metal catalyst (e.g., Ni, Pd, or Pt) provides an alternative pathway by adsorbing both $\text{H}_2$ and $\text{C}_2\text{H}_4$ onto its surface, weakening the H--H bond and lowering the activation energy.
+
+---
+
+### Additional Practice Problems
+
+#### UT-4: Hess's Law with Combustion Data
+
+**Question:** Use the following standard enthalpies of combustion to calculate the standard enthalpy change for the hydrogenation of propene to propane:
+
+$$\mathrm{C}_3\mathrm{H}_6(g) + \mathrm{H}_2(g) \to \mathrm{C}_3\mathrm{H}_8(g)$$
+
+$\Delta H_c^\circ(\mathrm{C}_3\mathrm{H}_6) = -2058\,\mathrm{kJ\,mol^{-1}}$
+
+$\Delta H_c^\circ(\mathrm{C}_3\mathrm{H}_8) = -2220\,\mathrm{kJ\,mol^{-1}}$
+
+$\Delta H_c^\circ(\mathrm{H}_2) = -286\,\mathrm{kJ\,mol^{-1}}$
+
+**Solution:**
+
+Hess's Law cycle:
+
+Reactants $\to$ Products $\to$ Combustion products ($\mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$)
+
+Path 1 (indirect): Reactants $\to$ combustion products: $\Delta H_c(\mathrm{C}_3\mathrm{H}_6) + \Delta H_c(\mathrm{H}_2) = -2058 + (-286) = -2344\,\mathrm{kJ\,mol^{-1}}$
+
+Path 2 (via products): Products $\to$ combustion products: $\Delta H_c(\mathrm{C}_3\mathrm{H}_8) = -2220\,\mathrm{kJ\,mol^{-1}}$
+
+$$\Delta H^\circ = \text{Path 1} - \text{Path 2} = -2344 - (-2220) = -124\,\mathrm{kJ\,mol^{-1}}$$ (2 marks).
+
+The hydrogenation is exothermic, as expected for converting a C=C double bond to two C--H single bonds.
+
+#### IT-4: Born-Haber and Entropy Combined
+
+**Question:** Calculate the lattice energy of $\mathrm{CaF}_2$ using a Born-Haber cycle and the following data:
+
+| Quantity | Value (kJ mol$^{-1}$) |
+|---|---|
+| $\Delta H_f^\circ(\mathrm{CaF}_2)$ | $-1220$ |
+| $\Delta H_{\text{atom}}(\mathrm{Ca})$ | $+178$ |
+| $\Delta H_{\text{atom}}(\mathrm{F}_2)$ (per $\frac{1}{2}\mathrm{F}_2$) | $+79$ |
+| First IE of Ca | $+590$ |
+| Second IE of Ca | $+1145$ |
+| Electron affinity of F | $-328$ |
+
+**Solution:**
+
+Born-Haber cycle for $\mathrm{CaF}_2$:
+
+$$\Delta H_f^\circ = \Delta H_{\text{atom}}(\mathrm{Ca}) + \Delta H_{\text{atom}}(\mathrm{F}_2) \times 2 + \text{IE}_1 + \text{IE}_2 + \text{EA} \times 2 + \text{Lattice Energy}$$
+
+$$-1220 = 178 + 79 \times 2 + 590 + 1145 + (-328) \times 2 + \text{LE}$$
+
+$$-1220 = 178 + 158 + 590 + 1145 - 656 + \text{LE}$$
+
+$$-1220 = 1415 + \text{LE}$$
+
+$$\text{LE} = -1220 - 1415 = -2635\,\mathrm{kJ\,mol^{-1}}$$ (2 marks).
+
+The large (negative) lattice energy reflects the high charges on $\mathrm{Ca}^{2+}$ and $\mathrm{F}^-$ and the small ionic radii, both of which increase the electrostatic attraction in the lattice (1 mark).

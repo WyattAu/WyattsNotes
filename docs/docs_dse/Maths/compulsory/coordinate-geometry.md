@@ -637,3 +637,254 @@ Ready to test your understanding of **Coordinate Geometry**? The [diagnostic tes
 
 See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+For coordinate geometry problems in DSE Paper 1:
+
+1. Write the formula before substituting (e.g., distance formula, midpoint formula, gradient formula).
+2. For circle equations, show the completing-the-square steps.
+3. For intersection problems, show the substitution and the resulting quadratic.
+4. When finding tangents, state that the tangent is perpendicular to the radius.
+5. For locus problems, start with "Let $P = (x, y)$" and derive the equation step by step.
+
+### Significant Figures
+
+Length and distance answers to 3 significant figures unless exact forms are possible. Coordinate values involving square roots should be left in exact form.
+
+### Common DSE Question Types
+
+1. **Finding equations of circles** from given conditions (centre and radius, three points, diameter).
+2. **Circle-line intersection** (tangent condition using discriminant or distance formula).
+3. **Locus problems** (equidistant from points, ratio of distances).
+4. **Area of triangle** using coordinate formula or shoelace formula.
+5. **Perpendicular bisector** and reflection problems.
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 13: Equation of a circle tangent to both axes**
+
+Find the equation of the circle in the first quadrant that is tangent to both coordinate axes and has radius $3$.
+
+<details>
+<summary>Solution</summary>
+
+Since the circle is in the first quadrant and tangent to both axes, the centre is at $(r, r) = (3, 3)$.
+
+Equation: $(x - 3)^2 + (y - 3)^2 = 9$.
+
+Expanding: $x^2 + y^2 - 6x - 6y + 9 = 0$.
+
+</details>
+
+**Worked Example 14: Intersection of two circles**
+
+Find the points of intersection of $x^2 + y^2 = 5$ and $x^2 + y^2 - 4x - 2y + 1 = 0$.
+
+<details>
+<summary>Solution</summary>
+
+Subtract the second equation from the first:
+
+$$5 - (-4x - 2y + 1) = 0 \implies 4x + 2y - 6 = 0 \implies 2x + y = 3 \implies y = 3 - 2x$$
+
+Substituting into $x^2 + y^2 = 5$:
+
+$$x^2 + (3 - 2x)^2 = 5 \implies x^2 + 9 - 12x + 4x^2 = 5 \implies 5x^2 - 12x + 4 = 0$$
+
+$$(5x - 2)(x - 2) = 0 \implies x = \frac{2}{5} \;\text{or}\; x = 2$$
+
+$x = \dfrac{2}{5} \implies y = 3 - \dfrac{4}{5} = \dfrac{11}{5}$. Point: $\left(\dfrac{2}{5}, \dfrac{11}{5}\right)$.
+
+$x = 2 \implies y = 3 - 4 = -1$. Point: $(2, -1)$.
+
+</details>
+
+**Worked Example 15: Shortest distance from a point to a circle**
+
+Find the shortest distance from $P(5, 3)$ to the circle $x^2 + y^2 - 4x + 2y - 4 = 0$.
+
+<details>
+<summary>Solution</summary>
+
+Centre: $(2, -1)$, $r^2 = 4 + 1 + 4 = 9 \implies r = 3$.
+
+Distance from $P$ to centre: $d = \sqrt{(5-2)^2 + (3-(-1))^2} = \sqrt{9 + 16} = 5$.
+
+Shortest distance from $P$ to the circle: $d - r = 5 - 3 = 2$.
+
+</details>
+
+**Worked Example 16: Locus - equidistant from two points**
+
+Find the equation of the locus of points equidistant from $A(1, 3)$ and $B(5, 7)$.
+
+<details>
+<summary>Solution</summary>
+
+Let $P = (x, y)$. Then $PA = PB$:
+
+$$\sqrt{(x-1)^2 + (y-3)^2} = \sqrt{(x-5)^2 + (y-7)^2}$$
+
+Squaring:
+
+$$(x-1)^2 + (y-3)^2 = (x-5)^2 + (y-7)^2$$
+
+$$x^2 - 2x + 1 + y^2 - 6y + 9 = x^2 - 10x + 25 + y^2 - 14y + 49$$
+
+$$8x + 8y = 64 \implies x + y = 8$$
+
+This is the perpendicular bisector of $AB$, as expected.
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** The line $y = mx + 1$ is tangent to the circle $x^2 + y^2 = 4$. Find the possible values of $m$.
+
+<details>
+<summary>Solution</summary>
+
+Substitute $y = mx + 1$ into $x^2 + y^2 = 4$:
+
+$$x^2 + (mx + 1)^2 = 4 \implies (1 + m^2)x^2 + 2mx - 3 = 0$$
+
+For tangency: $\Delta = 0$:
+
+$$4m^2 + 12(1 + m^2) = 0 \implies 4m^2 + 12 + 12m^2 = 0 \implies 16m^2 + 12 = 0$$
+
+$m^2 = -\dfrac{12}{16} = -\dfrac{3}{4} < 0$.
+
+No real values of $m$ satisfy this condition. The line $y = mx + 1$ is never tangent to $x^2 + y^2 = 4$.
+
+Wait -- let me recheck. $\Delta = (2m)^2 - 4(1 + m^2)(-3) = 4m^2 + 12(1 + m^2) = 4m^2 + 12 + 12m^2 = 16m^2 + 12 > 0$ for all real $m$. This means the line always intersects the circle at two points, never tangent.
+
+Actually, the distance from the centre $(0,0)$ to the line $mx - y + 1 = 0$ is:
+
+$$d = \frac{|1|}{\sqrt{m^2 + 1}} = \frac{1}{\sqrt{m^2 + 1}}$$
+
+For tangency: $d = r = 2$, i.e., $\dfrac{1}{\sqrt{m^2 + 1}} = 2 \implies \sqrt{m^2 + 1} = \dfrac{1}{2} \implies m^2 + 1 = \dfrac{1}{4} \implies m^2 = -\dfrac{3}{4}$.
+
+No real solution. Confirmed: the line is never tangent to the circle.
+
+</details>
+
+**DSE Practice 2.** A circle touches the $y$-axis at $(0, 3)$ and passes through $(2, 1)$. Find its equation.
+
+<details>
+<summary>Solution</summary>
+
+Since the circle touches the $y$-axis at $(0, 3)$, the centre lies on the horizontal line $y = 3$, so the centre is $C(r, 3)$ where $r$ is the radius.
+
+Equation: $(x - r)^2 + (y - 3)^2 = r^2$.
+
+Substituting $(2, 1)$: $(2 - r)^2 + (1 - 3)^2 = r^2 \implies 4 - 4r + r^2 + 4 = r^2 \implies 8 - 4r = 0 \implies r = 2$.
+
+Centre: $(2, 3)$, radius: $2$.
+
+Equation: $(x - 2)^2 + (y - 3)^2 = 4$, or $x^2 + y^2 - 4x - 6y + 9 = 0$.
+
+</details>
+
+**DSE Practice 3.** Find the equation of the circle passing through $(1, 0)$, $(0, 1)$, and $(-1, 0)$.
+
+<details>
+<summary>Solution</summary>
+
+General form: $x^2 + y^2 + Dx + Ey + F = 0$.
+
+$(1, 0)$: $1 + D + F = 0 \quad \text{(i)}$.
+
+$(0, 1)$: $1 + E + F = 0 \quad \text{(ii)}$.
+
+$(-1, 0)$: $1 - D + F = 0 \quad \text{(iii)}$.
+
+(i) - (iii): $2D = 0 \implies D = 0$.
+
+From (i): $F = -1$.
+
+From (ii): $E = 0$.
+
+Equation: $x^2 + y^2 - 1 = 0$, i.e., $x^2 + y^2 = 1$ (the unit circle).
+
+</details>
+
+**DSE Practice 4.** The line $\ell$ passes through $A(2, 1)$ and $B(6, k)$. If the distance from the origin to $\ell$ is $\dfrac{6\sqrt{5}}{5}$, find $k$.
+
+<details>
+<summary>Solution</summary>
+
+Gradient of $\ell$: $m = \dfrac{k - 1}{4}$.
+
+Equation: $y - 1 = \dfrac{k-1}{4}(x - 2) \implies (k-1)x - 4y + (4 - 2k + 4) = 0 \implies (k-1)x - 4y + (8 - 2k) = 0$.
+
+Distance from $(0, 0)$ to $\ell$:
+
+$$\frac{|8 - 2k|}{\sqrt{(k-1)^2 + 16}} = \frac{6\sqrt{5}}{5}$$
+
+Squaring:
+
+$$\frac{(8 - 2k)^2}{k^2 - 2k + 17} = \frac{36}{5}$$
+
+$$5(4 - k)^2 = 36(k^2 - 2k + 17)$$
+
+$$5(k^2 - 8k + 16) = 36k^2 - 72k + 612$$
+
+$$5k^2 - 40k + 80 = 36k^2 - 72k + 612$$
+
+$$31k^2 - 32k + 532 = 0$$
+
+$\Delta = 1024 - 4(31)(532) = 1024 - 65968 < 0$.
+
+No real solution for $k$. Let me recheck the algebra.
+
+Actually, let me recompute. The line through $(2,1)$ and $(6,k)$: using the two-point form:
+
+$$\frac{y - 1}{k - 1} = \frac{x - 2}{4} \implies 4(y - 1) = (k - 1)(x - 2)$$
+
+$$(k-1)x - 4y - 2(k-1) + 4 = 0 \implies (k-1)x - 4y - 2k + 6 = 0$$
+
+Distance from $(0,0)$:
+
+$$\frac{|6 - 2k|}{\sqrt{(k-1)^2 + 16}} = \frac{6\sqrt{5}}{5}$$
+
+$$25(6 - 2k)^2 = 36(k^2 - 2k + 17)$$
+
+$$25(4k^2 - 24k + 36) = 36k^2 - 72k + 612$$
+
+$$100k^2 - 600k + 900 = 36k^2 - 72k + 612$$
+
+$$64k^2 - 528k + 288 = 0 \implies 8k^2 - 66k + 36 = 0 \implies 4k^2 - 33k + 18 = 0$$
+
+$$(4k - 3)(k - 6) = 0 \implies k = \frac{3}{4} \;\text{or}\; k = 6$$
+
+</details>
+
+**DSE Practice 5.** Find the coordinates of the points on the circle $x^2 + y^2 = 13$ where the tangent is parallel to the line $2x + 3y = 7$.
+
+<details>
+<summary>Solution</summary>
+
+The gradient of $2x + 3y = 7$ is $m = -\dfrac{2}{3}$.
+
+The tangent at $(x_1, y_1)$ on $x^2 + y^2 = 13$ is $x_1 x + y_1 y = 13$, with gradient $m = -\dfrac{x_1}{y_1}$.
+
+Setting equal: $-\dfrac{x_1}{y_1} = -\dfrac{2}{3} \implies 3x_1 = 2y_1 \implies y_1 = \dfrac{3}{2}x_1$.
+
+Substituting into $x_1^2 + y_1^2 = 13$:
+
+$$x_1^2 + \frac{9}{4}x_1^2 = 13 \implies \frac{13}{4}x_1^2 = 13 \implies x_1^2 = 4 \implies x_1 = \pm 2$$
+
+$x_1 = 2 \implies y_1 = 3$. $x_1 = -2 \implies y_1 = -3$.
+
+Points: $(2, 3)$ and $(-2, -3)$.
+
+</details>

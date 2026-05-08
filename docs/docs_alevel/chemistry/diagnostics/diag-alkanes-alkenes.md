@@ -249,3 +249,61 @@ Partial pressures (at $1.00\,\text{atm}$):
 $$K_p = \frac{p(\text{C}_2\text{H}_4) \times p(\text{H}_2)}{p(\text{C}_2\text{H}_6)} = \frac{0.2308 \times 0.2308}{0.5385} = \frac{0.05327}{0.5385} = 0.0989\,\text{atm}$$
 
 (c) While Le Chatelier's principle predicts that low pressure favours the side with more moles of gas (2 mol products vs 1 mol reactant), cracking is carried out at relatively low pressure for a different reason: to **prevent unwanted side reactions** such as polymerisation of ethene, which occurs at high pressures. At very low pressures, the yield of ethene per pass is lower, but the product is cleaner and the conditions are safer and more controllable. In practice, steam is often added to dilute the ethane (reducing the effective partial pressure) while allowing operation at moderate total pressures for practical engineering reasons.
+
+---
+
+### Additional Practice Problems
+
+#### UT-4: Polymerisation Calculations
+
+**Question:** Poly(ethene) is produced from ethene monomer. Calculate:
+
+(a) The number of ethene monomers in a poly(ethene) chain with molar mass $28\,000\,\mathrm{g\,mol^{-1}}$.
+
+(b) The mass of poly(ethene) produced from $1.00\,\mathrm{kg}$ of ethene, assuming 95% conversion efficiency.
+
+**Solution:**
+
+(a) One ethene monomer ($\mathrm{C}_2\mathrm{H}_4$) has $M_r = 28.0$. In the polymer, each monomer contributes a $-\mathrm{CH}_2-\mathrm{CH}_2-$ unit with $M_r = 28.0$ (the double bond opens, but no atoms are lost in addition polymerisation) (1 mark).
+
+Number of monomers $= 28000/28.0 = 1000$ (1 mark).
+
+(b) $n(\text{ethene}) = 1000/28.0 = 35.7\,\mathrm{mol}$
+
+Theoretical mass of polymer $= 35.7 \times 28.0 = 1000\,\mathrm{g}$
+
+Actual mass $= 1000 \times 0.95 = 950\,\mathrm{g}$ (1 mark).
+
+#### UT-5: Stereochemistry of Bromine Addition
+
+**Question:** $(Z)$-but-2-ene reacts with bromine. Draw the product(s) and explain the stereochemistry.
+
+**Solution:**
+
+$(Z)$-but-2-ene has both methyl groups on the same side of the double bond. The reaction proceeds via anti addition: the bromonium ion intermediate forms, and $\mathrm{Br}^-$ attacks from the opposite side (1 mark).
+
+The product is a **racemic mixture** of $(2R,3S)$-2,3-dibromobutane and $(2S,3R)$-2,3-dibromobutane. These two products are enantiomers (non-superimposable mirror images) (1 mark).
+
+The meso compound $(2R,3R)$-2,3-dibromobutane is NOT formed because anti addition from the $(Z)$ isomer always places the bromine atoms on opposite faces of the original double bond, giving the $RS/SR$ pair (1 mark).
+
+#### IT-4: Alkanes, Alkenes, and Quantitative Chemistry
+
+**Question:** $5.00\,\mathrm{g}$ of a mixture of an alkane and an alkene (both containing only carbon and hydrogen) is completely burned in excess oxygen. The $\mathrm{CO}_2$ produced is absorbed and found to have a mass of $15.4\,\mathrm{g}$. When the original mixture is reacted with bromine water, $2.50\,\mathrm{g}$ of the mixture reacts (the alkene component only). Identify the alkane and alkene.
+
+**Solution:**
+
+Total moles of $\mathrm{CO}_2$: $15.4/44.0 = 0.350\,\mathrm{mol}$
+
+The alkene component reacts with bromine water (the alkane does not). Mass of alkene $= 2.50\,\mathrm{g}$, mass of alkane $= 5.00 - 2.50 = 2.50\,\mathrm{g}$ (1 mark).
+
+The alkene reacts with $\mathrm{Br}_2$ to give a dibromo compound. If the alkene is $\mathrm{C}_n\mathrm{H}_{2n}$:
+
+Moles of alkene: $2.50/(14n + 2) = 2.50/(14n + 2)$
+
+The alkane is $\mathrm{C}_m\mathrm{H}_{2m+2}$. Moles of alkane: $2.50/(14m + 2)$
+
+Total moles of C from both: $n \times n(\text{alkene}) + m \times n(\text{alkane}) = 0.350$
+
+Since both components have equal mass ($2.50\,\mathrm{g}$ each), try equal carbon numbers first. If both are $\mathrm{C}_4$: ethene and butane? But ethene is a gas ($M = 28$), $n = 2.50/28 = 0.0893\,\mathrm{mol}$, contributing $0.179\,\mathrm{mol}$ C. Butane: $n = 2.50/58 = 0.0431\,\mathrm{mol}$, contributing $0.172\,\mathrm{mol}$ C. Total C $= 0.179 + 0.172 = 0.351\,\mathrm{mol}$ (matches $0.350$) (1 mark).
+
+The mixture is **ethene** ($\mathrm{C}_2\mathrm{H}_4$) and **butane** ($\mathrm{C}_4\mathrm{H}_{10}$) (1 mark).

@@ -634,6 +634,281 @@ For the A-Level treatment of this topic, see [Trigonometry](https://alevel.wyatt
 
 ---
 
+## DSE Exam Technique
+
+### Showing Working
+
+For trigonometry problems in DSE Paper 1:
+
+1. When solving equations, always find the **principal value** first, then use the general solution formula.
+2. State the domain restriction and verify each solution falls within the given interval.
+3. For proof questions, work from one side to the other, showing each identity used.
+4. For 3D problems, draw a clear diagram and label all right-angled triangles used.
+
+### Significant Figures
+
+Angle answers should be given to 3 significant figures unless exact values are possible (e.g., $30^\circ$, $45^\circ$, $60^\circ$). Length answers to 3 significant figures.
+
+### Common DSE Question Types
+
+1. **Solving trigonometric equations** within a specified interval.
+2. **Proving identities** using Pythagorean, quotient, and double angle formulas.
+3. **2D problems** using sine rule, cosine rule, and area formula.
+4. **3D problems** involving angles between lines and planes.
+5. **Bearing problems** requiring careful diagram construction.
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 13: Proving an identity**
+
+Prove that $\dfrac{1 - \cos 2\theta}{1 + \cos 2\theta} = \tan^2 \theta$.
+
+<details>
+<summary>Solution</summary>
+
+Starting from the LHS, using $\cos 2\theta = 1 - 2\sin^2\theta = 2\cos^2\theta - 1$:
+
+$$\frac{1 - (1 - 2\sin^2\theta)}{1 + (2\cos^2\theta - 1)} = \frac{2\sin^2\theta}{2\cos^2\theta} = \frac{\sin^2\theta}{\cos^2\theta} = \tan^2\theta$$
+
+This equals the RHS. $\qed$
+
+</details>
+
+**Worked Example 14: 3D angle between line and plane**
+
+In the cuboid $ABCDEFGH$ where $AB = 6$, $BC = 8$, $CG = 4$, find the angle between the diagonal $BH$ and the face $ABCD$.
+
+<details>
+<summary>Solution</summary>
+
+$BH = \sqrt{6^2 + 8^2 + 4^2} = \sqrt{36 + 64 + 16} = \sqrt{116} = 2\sqrt{29}$.
+
+The projection of $BH$ onto the base $ABCD$ is the diagonal $BD = \sqrt{6^2 + 8^2} = 10$.
+
+The angle between $BH$ and the base is $\phi$ where $\cos\phi = \dfrac{BD}{BH} = \dfrac{10}{2\sqrt{29}} = \dfrac{5}{\sqrt{29}}$.
+
+$$\phi = \arccos\!\left(\frac{5}{\sqrt{29}}\right) \approx 21.8^\circ$$
+
+</details>
+
+**Worked Example 15: Equation with double angle**
+
+Solve $\cos 2\theta + 3\cos\theta + 2 = 0$ for $0 \leq \theta < 2\pi$.
+
+<details>
+<summary>Solution</summary>
+
+Using $\cos 2\theta = 2\cos^2\theta - 1$:
+
+$$2\cos^2\theta - 1 + 3\cos\theta + 2 = 0$$
+
+$$2\cos^2\theta + 3\cos\theta + 1 = 0$$
+
+Let $u = \cos\theta$: $2u^2 + 3u + 1 = 0 \implies (2u + 1)(u + 1) = 0$.
+
+$u = -\dfrac{1}{2}$ or $u = -1$.
+
+$\cos\theta = -\dfrac{1}{2} \implies \theta = \dfrac{2\pi}{3}, \dfrac{4\pi}{3}$.
+
+$\cos\theta = -1 \implies \theta = \pi$.
+
+Solutions: $\theta = \dfrac{2\pi}{3},\; \pi,\; \dfrac{4\pi}{3}$.
+
+</details>
+
+**Worked Example 16: Ambiguous case of sine rule**
+
+In $\triangle ABC$, $a = 8$, $b = 10$, $A = 40^\circ$. Find all possible values of $B$.
+
+<details>
+<summary>Solution</summary>
+
+By the sine rule: $\dfrac{\sin B}{10} = \dfrac{\sin 40^\circ}{8}$.
+
+$$\sin B = \frac{10\sin 40^\circ}{8} = \frac{10(0.6428)}{8} = 0.8035$$
+
+Since $\sin B < 1$ and $b > a$ (i.e., $10 > 8$), there is exactly one solution:
+
+$$B = \arcsin(0.8035) \approx 53.5^\circ$$
+
+(Note: the ambiguous case does not arise here because $b > a$ means $\angle B > \angle A$, so $B$ must be acute.)
+
+$C = 180^\circ - 40^\circ - 53.5^\circ = 86.5^\circ$.
+
+$c = \dfrac{8\sin 86.5^\circ}{\sin 40^\circ} \approx \dfrac{8(0.9981)}{0.6428} \approx 12.4$.
+
+</details>
+
+**Worked Example 17: Area of triangle with sine rule**
+
+In $\triangle ABC$, $a = 7$, $b = 5$, $C = 60^\circ$. Find the area and the length of $c$.
+
+<details>
+<summary>Solution</summary>
+
+$$\mathrm{Area} = \frac{1}{2}ab\sin C = \frac{1}{2}(7)(5)\sin 60^\circ = \frac{35\sqrt{3}}{4} \approx 15.16$$
+
+By the cosine rule:
+
+$$c^2 = 7^2 + 5^2 - 2(7)(5)\cos 60^\circ = 49 + 25 - 35 = 39$$
+
+$$c = \sqrt{39} \approx 6.24$$
+
+</details>
+
+**Worked Example 18: Equation combining sin and cos**
+
+Solve $3\sin\theta + 4\cos\theta = 5$ for $0^\circ \leq \theta < 360^\circ$.
+
+<details>
+<summary>Solution</summary>
+
+Express $3\sin\theta + 4\cos\theta$ in the form $R\sin(\theta + \alpha)$.
+
+$$R = \sqrt{3^2 + 4^2} = 5, \quad \alpha = \arctan\!\left(\frac{4}{3}\right) \approx 53.13^\circ$$
+
+$$5\sin(\theta + 53.13^\circ) = 5 \implies \sin(\theta + 53.13^\circ) = 1$$
+
+$$\theta + 53.13^\circ = 90^\circ + 360^\circ n$$
+
+$$\theta = 36.87^\circ + 360^\circ n$$
+
+In $[0^\circ, 360^\circ)$: $\theta = 36.9^\circ$ (to 3 s.f.).
+
+Verification: $3\sin 36.87^\circ + 4\cos 36.87^\circ = 3(0.6) + 4(0.8) = 1.8 + 3.2 = 5$. Correct.
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** Prove that $\sin\theta + \cos\theta = \sqrt{2}\sin\!\left(\theta + \dfrac{\pi}{4}\right)$.
+
+<details>
+<summary>Solution</summary>
+
+$$\sqrt{2}\sin\!\left(\theta + \frac{\pi}{4}\right) = \sqrt{2}\!\left(\sin\theta\cos\frac{\pi}{4} + \cos\theta\sin\frac{\pi}{4}\right)$$
+
+$$= \sqrt{2}\!\left(\sin\theta \cdot \frac{\sqrt{2}}{2} + \cos\theta \cdot \frac{\sqrt{2}}{2}\right) = \sin\theta + \cos\theta \qed$$
+
+</details>
+
+**DSE Practice 2.** In $\triangle ABC$, $a = 5$, $b = 7$, $c = 8$. Find (a) the largest angle, (b) the area.
+
+<details>
+<summary>Solution</summary>
+
+(a) The largest angle is $C$ (opposite the longest side $c = 8$):
+
+$$\cos C = \frac{5^2 + 7^2 - 8^2}{2(5)(7)} = \frac{25 + 49 - 64}{70} = \frac{10}{70} = \frac{1}{7}$$
+
+$$C = \arccos\!\left(\frac{1}{7}\right) \approx 81.8^\circ$$
+
+(b) Using the area formula with two sides and the included angle:
+
+$$\mathrm{Area} = \frac{1}{2}(5)(7)\sin C = \frac{35}{2}\sqrt{1 - \frac{1}{49}} = \frac{35}{2}\sqrt{\frac{48}{49}} = \frac{35}{2} \cdot \frac{4\sqrt{3}}{7} = 10\sqrt{3} \approx 17.3$$
+
+</details>
+
+**DSE Practice 3.** Solve $2\cos^2\theta - 3\sin\theta + 3 = 0$ for $0^\circ \leq \theta < 360^\circ$.
+
+<details>
+<summary>Solution</summary>
+
+Replace $\cos^2\theta = 1 - \sin^2\theta$:
+
+$$2(1 - \sin^2\theta) - 3\sin\theta + 3 = 0$$
+
+$$-2\sin^2\theta - 3\sin\theta + 5 = 0$$
+
+$$2\sin^2\theta + 3\sin\theta - 5 = 0$$
+
+Let $u = \sin\theta$: $2u^2 + 3u - 5 = 0 \implies (2u + 5)(u - 1) = 0$.
+
+$u = -\dfrac{5}{2}$ (reject, since $|\sin\theta| \leq 1$) or $u = 1$.
+
+$\sin\theta = 1 \implies \theta = 90^\circ$.
+
+</details>
+
+**DSE Practice 4.** A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the ground, the angle of elevation of $P$ is $32^\circ$. From point $B$, which is $50$ m from $A$ on a bearing of $080^\circ$ from $A$, the angle of elevation of $P$ is $24^\circ$. Find the height of the tower.
+
+<details>
+<summary>Solution</summary>
+
+Let the height be $h$, and let $QA = x$ m, $QB = y$ m.
+
+$\tan 32^\circ = \dfrac{h}{x} \implies x = \dfrac{h}{\tan 32^\circ}$.
+
+$\tan 24^\circ = \dfrac{h}{y} \implies y = \dfrac{h}{\tan 24^\circ}$.
+
+In $\triangle QAB$, the angle at $Q$ is $80^\circ$ (bearing from $A$ to $B$ is $080^\circ$). By the cosine rule:
+
+$$AB^2 = x^2 + y^2 - 2xy\cos 80^\circ$$
+
+$$2500 = \frac{h^2}{\tan^2 32^\circ} + \frac{h^2}{\tan^2 24^\circ} - \frac{2h^2 \cos 80^\circ}{\tan 32^\circ \cdot \tan 24^\circ}$$
+
+$$h^2 = \frac{2500}{\dfrac{1}{\tan^2 32^\circ} + \dfrac{1}{\tan^2 24^\circ} - \dfrac{2\cos 80^\circ}{\tan 32^\circ \cdot \tan 24^\circ}}$$
+
+$$\tan 32^\circ \approx 0.6249, \quad \tan 24^\circ \approx 0.4452$$
+
+$$h^2 = \frac{2500}{2.561 + 5.043 - 2(0.1736)(3.605)} = \frac{2500}{7.604 - 1.251} = \frac{2500}{6.353} \approx 393.5$$
+
+$$h \approx 19.8 \text{ m}$$
+
+</details>
+
+**DSE Practice 5.** In $\triangle ABC$, $a = 6$, $B = 45^\circ$, and the area is $9\sqrt{2}$. Find the two possible values of $b$.
+
+<details>
+<summary>Solution</summary>
+
+$$\mathrm{Area} = \frac{1}{2}ac\sin B = \frac{1}{2}(6)c\sin 45^\circ = 3c \cdot \frac{\sqrt{2}}{2} = \frac{3\sqrt{2}}{2}c$$
+
+$$\frac{3\sqrt{2}}{2}c = 9\sqrt{2} \implies c = 6$$
+
+By the cosine rule: $b^2 = a^2 + c^2 - 2ac\cos B = 36 + 36 - 2(6)(6)\cos 45^\circ = 72 - 36\sqrt{2}$.
+
+$$b = \sqrt{72 - 36\sqrt{2}} = 6\sqrt{2 - \sqrt{2}} \approx 5.12$$
+
+Actually, let me use the sine rule: $\dfrac{b}{\sin B} = \dfrac{a}{\sin A}$.
+
+$\dfrac{b}{\sin 45^\circ} = \dfrac{6}{\sin A}$, so $b = \dfrac{6\sin 45^\circ}{\sin A} = \dfrac{3\sqrt{2}}{\sin A}$.
+
+Also $\dfrac{c}{\sin C} = \dfrac{6}{\sin A}$, so $\sin C = \dfrac{6\sin A}{c} = \sin A$ (since $c = 6$).
+
+This means $C = A$ or $C = 180^\circ - A$.
+
+If $C = A$: $A + B + C = 2A + 45^\circ = 180^\circ \implies A = 67.5^\circ$, $C = 67.5^\circ$.
+
+$b = \dfrac{6\sin 45^\circ}{\sin 67.5^\circ} = \dfrac{6 \cdot \frac{\sqrt{2}}{2}}{\cos 22.5^\circ} = \dfrac{3\sqrt{2}}{\cos 22.5^\circ} \approx \dfrac{4.243}{0.9239} \approx 4.59$.
+
+If $C = 180^\circ - A$: since $A + C = 180^\circ$, and $A + B + C = 180^\circ$, this gives $B = 0^\circ$, which is degenerate. So only one valid triangle exists with $b \approx 4.59$.
+
+</details>
+
+**DSE Practice 6.** The points $A$, $B$, and $C$ are on level ground. $AB = 200$ m, $BC = 150$ m, and $\angle ABC = 110^\circ$. Find the shortest distance from $C$ to the road passing through $A$ and $B$.
+
+<details>
+<summary>Solution</summary>
+
+The shortest distance from $C$ to the line $AB$ is the perpendicular distance $h$.
+
+$$\mathrm{Area\ of\ } \triangle ABC = \frac{1}{2}(AB)(BC)\sin\angle ABC = \frac{1}{2}(200)(150)\sin 110^\circ = 15000\sin 110^\circ$$
+
+$$= 15000\cos 20^\circ \approx 15000(0.9397) \approx 14095.5$$
+
+Also $\mathrm{Area} = \dfrac{1}{2}(AB)(h) = 100h$.
+
+$$h = \frac{14095.5}{100} \approx 141 \text{ m}$$
+
+</details>
+
+---
+
 :::tip
 Diagnostic Test
 Ready to test your understanding of **Trigonometry**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-trigonometry) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.

@@ -741,3 +741,171 @@ $$
 The measured value is $-56.1\,\mathrm{kJ/mol}$, suggesting additional endothermic contributions (the enthalpy of dissociation of ethanoic acid is endothermic, consuming some of the heat released by neutralisation). The reaction is less exothermic because the weak acid must first dissociate, which is an endothermic process.
 
 </details>
+
+## Advanced Thermodynamic Calculations
+
+### Gibbs Free Energy and Equilibrium
+
+The relationship between $\Delta G^\circ$ and the equilibrium constant:
+
+$$\Delta G^\circ = -RT\ln K$$
+
+This is one of the most important equations in A-Level chemistry. It connects thermodynamics (energetics) with equilibrium (composition).
+
+**Worked Example:** Calculate $K_c$ at $298\,\mathrm{K}$ for a reaction with $\Delta G^\circ = -5.40\,\mathrm{kJ/mol}$.
+
+$$-5400 = -8.314 \times 298 \times \ln K_c$$
+
+$$\ln K_c = \frac{5400}{8.314 \times 298} = \frac{5400}{2478} = 2.179$$
+
+$$K_c = e^{2.179} = 8.84$$
+
+Since $\Delta G^\circ < 0$, $K > 1$, confirming the reaction is spontaneous and products are favoured at equilibrium.
+
+**Worked Example:** Calculate the temperature at which $\Delta G = 0$ for the reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$, given $\Delta H^\circ = +57.2\,\mathrm{kJ/mol}$ and $\Delta S^\circ = +175.8\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}$.
+
+At $\Delta G = 0$: $0 = \Delta H^\circ - T\Delta S^\circ$
+
+$$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{57200}{175.8} = 325\,\mathrm{K}$$
+
+Below $325\,\mathrm{K}$, $\Delta G < 0$ and the forward reaction is spontaneous. Above $325\,\mathrm{K}$, $\Delta G > 0$ and the reverse reaction is spontaneous. At $325\,\mathrm{K}$, the system is at equilibrium ($K = 1$).
+
+### Entropy Calculations
+
+**Worked Example:** Calculate $\Delta S^\circ$ for the reaction $\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$.
+
+$S^\circ$ values: $\mathrm{CaCO}_3(s) = 92.9\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}}$, $\mathrm{CaO}(s) = 38.1\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$, $\mathrm{CO}_2(g) = 213.7\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$.
+
+$$\Delta S^\circ = S^\circ(\mathrm{CaO}) + S^\circ(\mathrm{CO}_2) - S^\circ(\mathrm{CaCO}_3)$$
+
+$$= 38.1 + 213.7 - 92.9 = 158.9\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$$
+
+The entropy change is positive, as expected: a solid decomposes to give a gas (increased disorder).
+
+### Born-Haber and Hess's Law Applications
+
+**Worked Example:** Use Hess's Law to calculate $\Delta H_f^\circ$ for $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l)$.
+
+Given data:
+- $\mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$, $\Delta H = -393.5\,\mathrm{kJ/mol}$
+- $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$, $\Delta H = -285.8\,\mathrm{kJ/mol}$
+- $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l) + 3\mathrm{O}_2(g) \to 2\mathrm{CO}_2(g) + 3\mathrm{H}_2\mathrm{O}(l)$, $\Delta H = -1367\,\mathrm{kJ/mol}$
+
+By Hess's Law:
+
+$$2(\mathrm{C} \to \mathrm{CO}_2) + 3(\mathrm{H}_2 + \tfrac{1}{2}\mathrm{O}_2 \to \mathrm{H}_2\mathrm{O}) - (\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 3\mathrm{O}_2 \to 2\mathrm{CO}_2 + 3\mathrm{H}_2\mathrm{O}) = \Delta H_f^\circ(\mathrm{C}_2\mathrm{H}_5\mathrm{OH})$$
+
+$$2(-393.5) + 3(-285.8) - (-1367) = -787.0 - 857.4 + 1367 = -277.4\,\mathrm{kJ/mol}$$
+
+$\Delta H_f^\circ(\mathrm{C}_2\mathrm{H}_5\mathrm{OH}) = -277\,\mathrm{kJ/mol}$ (to 3 s.f.)
+
+### Gibbs Free Energy: Predicting Feasibility
+
+**Worked Example:** Is the reduction of $\mathrm{TiO}_2$ to $\mathrm{Ti}$ by carbon thermodynamically feasible at $1500\,\mathrm{K}$?
+
+$$\mathrm{TiO}_2(s) + 2\mathrm{C}(s) \to \mathrm{Ti}(s) + 2\mathrm{CO}(g)$$
+
+$\Delta H^\circ = +877\,\mathrm{kJ/mol}$, $\Delta S^\circ = +193\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
+
+$$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = 877000 - 1500 \times 193 = 877000 - 289500 = 587500\,\mathrm{J/mol} = +588\,\mathrm{kJ/mol}$$
+
+$\Delta G^\circ > 0$, so the reaction is not thermodynamically feasible at $1500\,\mathrm{K}$.
+
+At what temperature does it become feasible?
+
+$$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{877000}{193} = 4544\,\mathrm{K}$$
+
+The reaction becomes feasible above approximately $4544\,\mathrm{K}$ (extremely high temperature, impractical). In practice, the Kroll process (reduction with $\mathrm{Mg}$ or $\mathrm{Cl}_2$) is used.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Define the term standard enthalpy change of reaction, $\Delta H^\circ_\mathrm{r}$. Explain why the standard enthalpy change of neutralisation of a strong acid with a strong base is always approximately $-57\,\mathrm{kJ/mol}$ regardless of which strong acid and strong base are used.
+
+**Mark Scheme:**
+
+$\Delta H^\circ_\mathrm{r}$ is the enthalpy change when the reaction occurs under standard conditions with all reactants and products in their standard states (1 mark).
+
+The neutralisation of any strong acid with any strong base has the same net ionic equation:
+
+$$\mathrm{H}^+(aq) + \mathrm{OH}^-(aq) \to \mathrm{H}_2\mathrm{O}(l)$$ (1 mark).
+
+The specific acid and base are irrelevant because strong acids and bases are fully dissociated in solution (1 mark). The enthalpy change depends only on the formation of the O--H bond in water, which is the same in every case (1 mark). Minor differences arise from the enthalpies of dilution of different ions (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+For the reaction $\mathrm{A}(g) + 2\mathrm{B}(g) \to \mathrm{C}(g) + \mathrm{D}(g)$:
+
+$\Delta H^\circ = -85\,\mathrm{kJ/mol}$, $\Delta S^\circ = -120\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
+
+(a) Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$. (2 marks)
+
+(b) State whether the reaction is feasible at $298\,\mathrm{K}$, explaining your answer. (1 mark)
+
+(c) Calculate the temperature above which the reaction becomes non-spontaneous. (2 marks)
+
+(d) State the effect of increasing the pressure on the position of equilibrium. (1 mark)
+
+**Mark Scheme:**
+
+(a) $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -85000 - 298 \times (-120) = -85000 + 35760 = -49240\,\mathrm{J/mol} = -49.2\,\mathrm{kJ/mol}$ (1 mark for substitution, 1 mark for answer).
+
+(b) $\Delta G^\circ < 0$, so the reaction is feasible (spontaneous) at $298\,\mathrm{K}$ (1 mark).
+
+(c) $\Delta G^\circ = 0$: $T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{-85000}{-120} = 708\,\mathrm{K}$ (1 mark). Above $708\,\mathrm{K}$, $\Delta G^\circ > 0$ and the reaction is non-spontaneous (1 mark).
+
+(d) 3 moles of gas on the left, 2 moles on the right. Increasing pressure favours the side with fewer moles (products), shifting the equilibrium to the right (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+Explain why the entropy change for the reaction $\mathrm{NH}_4\mathrm{Cl}(s) \to \mathrm{NH}_3(g) + \mathrm{HCl}(g)$ is positive.
+
+**Mark Scheme:**
+
+A solid is converted into two gases (2 marks). Gases have much higher entropy than solids because the particles are free to move in all directions (1 mark). The number of particles increases from 1 to 2, and the disorder increases (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (5 marks)</summary>
+
+Use the following data to calculate the lattice enthalpy of $\mathrm{KCl}$ using a Born-Haber cycle:
+
+- $\Delta H_f^\circ(\mathrm{KCl}) = -437\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{K}) = +89\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{Cl}) = +122\,\mathrm{kJ/mol}$
+- $\mathrm{IE}_1(\mathrm{K}) = +419\,\mathrm{kJ/mol}$
+- $\mathrm{EA}_1(\mathrm{Cl}) = -349\,\mathrm{kJ/mol}$
+
+**Mark Scheme:**
+
+$$\Delta H_\mathrm{lat}^\circ = \Delta H_f^\circ - \Delta H_\mathrm{at}^\circ(\mathrm{K}) - \Delta H_\mathrm{at}^\circ(\mathrm{Cl}) - \mathrm{IE}_1(\mathrm{K}) - \mathrm{EA}_1(\mathrm{Cl})$$ (1 mark for equation)
+
+$$= -437 - 89 - 122 - 419 - (-349)$$ (1 mark for substitution)
+
+$$= -437 - 89 - 122 - 419 + 349 = -718\,\mathrm{kJ/mol}$$ (1 mark for arithmetic)
+
+The lattice enthalpy of KCl is $-718\,\mathrm{kJ/mol}$ (1 mark for answer with sign).
+
+The negative sign indicates the process of forming the ionic lattice from gaseous ions is exothermic (1 mark).
+
+</details>
+
+---
+
+:::tip
+Diagnostic Test
+Ready to test your understanding of **Thermodynamics**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-thermodynamics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Thermodynamics with other chemistry topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
+:::

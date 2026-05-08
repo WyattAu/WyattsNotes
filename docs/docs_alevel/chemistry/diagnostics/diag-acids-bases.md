@@ -261,3 +261,59 @@ $$\text{pH} = -\log(3.533 \times 10^{-6}) = 5.45$$
 More accurately, methyl red (pH 4.4--6.2) would be the best indicator. However, if the options are methyl orange (3.1--4.4) and phenolphthalein (8.3--10.0), **methyl orange** is more appropriate because it is closer to the acidic equivalence point, although neither is perfect. Phenolphthalein would change colour well before the equivalence point is reached (at pH $\approx 8.3$), giving a significant endpoint error. Methyl orange at least changes in the acidic region, though the pH at equivalence (5.45) is slightly above its ideal range. Bromocresol green or methyl red would be the ideal choice, but methyl orange is the more suitable of the two given options.
 
 **Correction:** The equivalence pH of $5.45$ actually falls within methyl orange's transition if we consider the gradual colour change. In practice, methyl orange is commonly used for strong acid-weak base titrations.
+
+---
+
+### Additional Practice Problems
+
+#### UT-4: Buffer pH After Addition of Acid
+
+**Question:** A buffer solution contains $0.200\,\mathrm{mol\,dm^{-3}}$ ethanoic acid ($K_a = 1.74 \times 10^{-5}\,\mathrm{mol\,dm^{-3}}$) and $0.100\,\mathrm{mol\,dm^{-3}}$ sodium ethanoate. Calculate the pH change when $0.0050\,\mathrm{mol}$ of $\mathrm{HCl}$ is added to $100\,\mathrm{cm}^3$ of this buffer.
+
+**Solution:**
+
+Initial pH:
+
+$$\text{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{[\mathrm{CH}_3\mathrm{COOH}]} = 4.76 + \log\frac{0.100}{0.200} = 4.76 - 0.301 = 4.46$$ (1 mark)
+
+After adding $\mathrm{HCl}$: $\mathrm{HCl}$ reacts with $\mathrm{CH}_3\mathrm{COO}^-$ to form $\mathrm{CH}_3\mathrm{COOH}$:
+
+$n(\mathrm{HCl}) = 0.0050\,\mathrm{mol}$
+
+$n(\mathrm{CH}_3\mathrm{COO}^-)$ initially $= 0.100 \times 0.100 = 0.0100\,\mathrm{mol}$
+
+$n(\mathrm{CH}_3\mathrm{COOH})$ initially $= 0.200 \times 0.100 = 0.0200\,\mathrm{mol}$
+
+After reaction:
+
+$n(\mathrm{CH}_3\mathrm{COO}^-) = 0.0100 - 0.0050 = 0.0050\,\mathrm{mol}$
+
+$n(\mathrm{CH}_3\mathrm{COOH}) = 0.0200 + 0.0050 = 0.0250\,\mathrm{mol}$
+
+New pH:
+
+$$\text{pH} = 4.76 + \log\frac{0.0050/0.100}{0.0250/0.100} = 4.76 + \log\frac{0.0500}{0.250} = 4.76 + \log(0.200) = 4.76 - 0.699 = 4.06$$ (1 mark)
+
+pH change: $4.06 - 4.46 = -0.40\,\mathrm{pH}$ units.
+
+For comparison, adding the same amount of $\mathrm{HCl}$ to $100\,\mathrm{cm}^3$ of pure water would give:
+
+$[\mathrm{H}^+] = 0.0050/0.100 = 0.0500\,\mathrm{mol\,dm^{-3}}$, pH $= 1.30$
+
+The buffer limits the pH change to $0.40$ units, compared to a change of $5.70$ units for pure water (1 mark).
+
+#### UT-5: pH of Salt Solutions
+
+**Question:** Predict whether aqueous solutions of the following salts will be acidic, basic, or neutral, and calculate the pH where possible:
+
+(a) $\mathrm{NaCl}$ (b) $\mathrm{NH}_4\mathrm{Cl}$ (c) $\mathrm{CH}_3\mathrm{COONa}$ (d) $\mathrm{NaHCO}_3$
+
+**Solution:**
+
+(a) $\mathrm{NaCl}$: $\mathrm{Na}^+$ is the conjugate acid of a strong base ($\mathrm{NaOH}$); $\mathrm{Cl}^-$ is the conjugate base of a strong acid ($\mathrm{HCl}$). Neither ion hydrolyses. Solution is **neutral**, pH $= 7$ (1 mark).
+
+(b) $\mathrm{NH}_4\mathrm{Cl}$: $\mathrm{NH}_4^+$ is the conjugate acid of the weak base $\mathrm{NH}_3$. $\mathrm{NH}_4^+$ hydrolyses: $\mathrm{NH}_4^+ + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{NH}_3 + \mathrm{H}_3\mathrm{O}^+$. Solution is **acidic** (1 mark).
+
+(c) $\mathrm{CH}_3\mathrm{COONa}$: $\mathrm{CH}_3\mathrm{COO}^-$ is the conjugate base of the weak acid $\mathrm{CH}_3\mathrm{COOH}$. It hydrolyses: $\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{CH}_3\mathrm{COOH} + \mathrm{OH}^-$. Solution is **basic** (1 mark).
+
+(d) $\mathrm{NaHCO}_3$: $\mathrm{HCO}_3^-$ can act as both an acid and a base (amphoteric). It is the conjugate base of $\mathrm{H}_2\mathrm{CO}_3$ (weak acid) and the conjugate acid of $\mathrm{CO}_3^{2-}$ (weak base). Since $K_a(\mathrm{HCO}_3^-) < K_b(\mathrm{HCO}_3^-)$, the basic character predominates and the solution is **slightly basic**, pH $\approx 8.3$ (1 mark).

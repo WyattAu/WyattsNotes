@@ -688,6 +688,173 @@ $V = nRT/p = 0.0747 \times 8.314 \times 298 / (100 \times 10^3) = 1.85 \times 10
 
 </details>
 
+## Advanced Electrochemistry
+
+### Standard Electrode Potentials and Feasibility
+
+The standard electrode potential of a cell indicates whether a redox reaction is feasible:
+
+$$E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$$
+
+If $E^\circ_\mathrm{cell} > +0.27\,\mathrm{V}$, the reaction is considered thermodynamically feasible (proceeds to a significant extent) under standard conditions. If $E^\circ_\mathrm{cell} < +0.27\mathrm{V}$, the equilibrium lies to the left and the reaction does not proceed significantly.
+
+### Worked Example: Predicting Redox Reactions
+
+Will $\mathrm{Zn}$ displace $\mathrm{Cu}$ from $\mathrm{CuSO}_4$ solution?
+
+Half-equations:
+- $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$, $E^\circ = -0.76\,\mathrm{V}$
+- $\mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu}$, $E^\circ = +0.34\mathrm{V}$
+
+Zinc is the more reactive metal (more negative $E^\circ$), so it will be oxidised (anode). Copper ions will be reduced (cathode).
+
+$$E^\circ_\mathrm{cell} = 0.34 - (-0.76) = +1.10\,\mathrm{V}$$
+
+Since $E^\circ_\mathrm{cell} > +0.27\,\mathrm{V}$, the reaction is feasible:
+
+$$\mathrm{Zn}(s) + \mathrm{Cu}^{2+}(aq) \to \mathrm{Zn}^{2+}(aq) + \mathrm{Cu}(s)$$
+
+### Worked Example: Non-Standard Conditions (Nernst Equation)
+
+The Nernst equation calculates the cell potential under non-standard conditions:
+
+$$E = E^\circ - \frac{RT}{nF}\ln Q$$
+
+Where $Q$ is the reaction quotient.
+
+**Calculate the cell potential for $\mathrm{Zn}|\mathrm{Zn}^{2+}(0.010\,\mathrm{mol\,dm^{-3})||\mathrm{Cu}^{2+}(0.001\,\mathrm{mol\,dm^{-3})|\mathrm{Cu}$ at $298\,\mathrm{K}$.**
+
+$$E^\circ_\mathrm{cell} = 0.34 - (-0.76) = 1.10\,\mathrm{V}$$
+
+$$Q = \frac{[\mathrm{Cu}^{2+}]}{[\mathrm{Zn}^{+}]} = \frac{0.001}{0.010} = 0.10$$
+
+$$E = 1.10 - \frac{8.314 \times 298}{2 \times 96485}\ln(0.10)$$
+
+$$= 1.10 - \frac{2478}{192970}\ln(0.10)$$
+
+$$= 1.10 - 0.01284 \times (-2.303)$$
+
+$$= 1.10 + 0.0296 = 1.13\,\mathrm{V}$$
+
+The cell potential is slightly higher than $E^\circ$ because the lower product concentration ([Cu2+]) drives the reaction further to the right.
+
+### Storage Cells and Fuel Cells
+
+**Lead-acid accumulator:**
+
+- Anode (discharge): $\mathrm{Pb}(s) + \mathrm{SO}_4^{2-}(aq) \rightleftharpoons \mathrm{PbSO}_4(s) + 2e^-$, $E^\circ = -0.36\,\mathrm{V}$
+- Cathode (discharge): $\mathrm{PbO}_2(s) + \mathrm{SO}_4^{2-}(aq) + 4\mathrm{H}^+(aq) + 2e^- \rightleftharpoons \mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l)$, $E^\circ = +1.69\mathrm{V}$
+
+$E^\circ_\mathrm{cell} = 1.69 - (-0.36) = 2.05\,\mathrm{V}$
+
+During charging, the reactions are reversed.
+
+**Hydrogen fuel cell:**
+
+- Anode: $2\mathrm{H}_2 + 2\mathrm{H}_2\mathrm{O} \to 4\mathrm{H}^+ + 4e^-$
+- Cathode: $\mathrm{O}_2 + 4\mathrm{H}^+ + 4e^- \to 2\mathrm{H}_2\mathrm{O}$
+
+Overall: $2\mathrm{H}_2 + \mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O}$
+
+$E^\circ_\mathrm{cell} = 1.23\,\mathrm{V}$ (theoretical). Practical voltage is lower due to overpotentials and internal resistance.
+
+### Electrolysis: Quantitative Analysis
+
+**Worked Example:** How long does it take to deposit $0.500\,\mathrm{g}$ of nickel from $\mathrm{NiSO}_4$ solution using a current of $2.50\,\mathrm{A}$?
+
+$$\mathrm{Ni}^{2+} + 2e^- \to \mathrm{Ni}$$
+
+$$n(\mathrm{Ni}) = \frac{m}{M} = \frac{0.500}{58.69} = 0.00852\,\mathrm{mol}$$
+
+$$Q = n \times z \times F = 0.00852 \times 2 \times 96485 = 1643\,\mathrm{C}$$
+
+$$t = \frac{Q}{I} = \frac{1643}{2.50} = 657\,\mathrm{s} = 11.0\,\mathrm{min}$$
+
+### Electrochemical Series and Displacement Reactions
+
+The electrochemical series arranges species in order of their standard electrode potentials:
+
+| Species | $E^\circ$ (V) |
+|---|---|
+| $\mathrm{Li}^+/\mathrm{Li}$ | $-3.03$ |
+| $\mathrm{K}^+/\mathrm{K}$ | $-2.93$ |
+| $\mathrm{Na}^+/\mathrm{Na}$ | $-2.71$ |
+| $\mathrm{Mg}^{2+}/\mathrm{Mg}$ | $-2.37$ |
+| $\mathrm{Al}^{3+}/\mathrm{Al}$ | $-1.66$ |
+| $\mathrm{Zn}^{2+}/\mathrm{Zn}$ | $-0.76$ |
+| $\mathrm{Fe}^{2+}/\mathrm{Fe}$ | $-0.44$ |
+| $\mathrm{Ni}^{2+}/\mathrm{Ni}$ | $-0.25$ |
+| $\mathrm{Sn}^{2+}/\mathrm{Sn}$ | $-0.14$ |
+| $\mathrm{Pb}^{2+}/\mathrm{Pb}$ | $-0.13$ |
+| $2\mathrm{H}^+/\mathrm{H}_2$ | $0.00$ |
+| $\mathrm{Cu}^{2+}/\mathrm{Cu}$ | $+0.34$ |
+| $\mathrm{I}_2/\mathrm{I}^-$ | $+0.54$ |
+| $\mathrm{Ag}^+/\mathrm{Ag}$ | $+0.80$ |
+| $\mathrm{Br}_2/\mathrm{Br}^-$ | $+1.07$ |
+| $\mathrm{Cl}_2/\mathrm{Cl}^-$ | $+1.36$ |
+| $\mathrm{F}_2/\mathrm{F}^-$ | $+2.87$ |
+
+A species will reduce any species below it in the series (more negative $E^\circ$). A species will be oxidised by any species above it (more positive $E^\circ$).
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+A voltaic cell is constructed using the half-cells $\mathrm{Fe}^{2+}|\mathrm{Fe}$ ($E^\circ = -0.44\,\mathrm{V}$) and $\mathrm{Ag}^+|\mathrm{Ag}$ ($E^\circ = +0.80\,\mathrm{V}$).
+
+(a) Write the overall cell equation. (2 marks)
+
+(b) Calculate $E^\circ_\mathrm{cell}$. (1 mark)
+
+(c) Identify the anode and cathode. (2 marks)
+
+**Mark Scheme:**
+
+(a) $\mathrm{Fe}(s) + 2\mathrm{Ag}^+(aq) \to \mathrm{Fe}^{2+}(aq) + 2\mathrm{Ag}(s)$ (1 mark for correct equation, 1 mark for balancing).
+
+(b) $E^\circ_\mathrm{cell} = 0.80 - (-0.44) = +1.24\,\mathrm{V}$ (1 mark).
+
+(c) Anode = Fe electrode (oxidation occurs; Fe is oxidised to $\mathrm{Fe}^{2+}$) (1 mark). Cathode = Ag electrode (reduction occurs; $\mathrm{Ag}^+$ is reduced to Ag) (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+In the electrolysis of molten $\mathrm{PbBr}_2$ using inert electrodes:
+
+(a) Write the half-equations at each electrode. (2 marks)
+
+(b) Explain why the electrolyte must be molten rather than aqueous. (2 marks)
+
+(c) Calculate the volume of bromine gas produced at the anode when a current of $0.500\,\mathrm{A}$ is passed for 30.0 minutes at $298\,\mathrm{K}$ and $101\,\mathrm{kPa}$. (2 marks)
+
+**Mark Scheme:**
+
+(a) Cathode: $\mathrm{Pb}^{2+} + 2e^- \to \mathrm{Pb}(l)$ (1 mark). Anode: $2\mathrm{Br}^- \to \mathrm{Br}_2(g) + 2e^-$ (1 mark).
+
+(b) In aqueous solution, water would be preferentially discharged at the cathode ($\mathrm{H}^+$ is reduced before $\mathrm{Pb}^{2+}$) and at the anode ($\mathrm{OH}^-$ is oxidised before $\mathrm{Br}^-$ in dilute solution). Molten $\mathrm{PbBr}_2$ ensures only $\mathrm{Pb}^{2+}$ and $\mathrm{Br}^-$ ions are present (1 mark).
+
+(c) $Q = It = 0.500 \times 1800 = 900\,\mathrm{C}$ (0.5 mark). $n(e^-) = 900/96485 = 0.00933\,\mathrm{mol}$ (0.5 marks). $n(\mathrm{Br}_2) = 0.00933/2 = 0.00467\,\mathrm{mol}$ (0.5 marks). $V = nRT/p = 0.00467 \times 8.314 \times 298 / 101000 = 0.114\,\mathrm{dm}^3 = 114\,\mathrm{cm}^3$ (0.5 marks).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+State and explain two differences between a primary cell and a secondary cell.
+
+**Mark Scheme:**
+
+1. A primary cell is not rechargeable; a secondary cell is rechargeable (1 mark). Primary cells produce electricity from irreversible chemical reactions; secondary cells can have the reactions reversed by applying an external voltage (1 mark).
+
+2. Primary cells have a limited lifetime (until the reactants are consumed); secondary cells can be recharged many times (1 mark). Secondary cells are more expensive initially but more cost-effective over their lifetime (1 mark).
+
+</details>
+
+---
+
 :::tip
 Diagnostic Test
 Ready to test your understanding of **Electrochemistry**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-electrochemistry) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.

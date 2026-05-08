@@ -105,3 +105,135 @@ The debt ratio is **rising** by approximately 2.2 percentage points per year. Th
 (iii) **Labour market deregulation**: Reduces hiring and firing costs, increases labour market flexibility. This reduces structural unemployment (easier for firms to hire during recovery, workers more willing to accept jobs) and shifts LRAS right by making the labour market more efficient.
 
 (c) The critic's argument has some merit but oversimplifies. Corporate tax cuts do primarily benefit business owners and shareholders in the short run. However, the economic argument is that lower corporate taxes: (1) increase investment (firms have more funds and higher after-tax returns), which increases the capital stock and wages; (2) make the country more attractive for foreign direct investment; (3) reduce the incentive for profit shifting and tax avoidance. The key question is whether the supply-side response is large enough to offset the revenue loss. If the tax cut is well-designed and the economy has room for investment, it can increase total tax revenue through a larger tax base (Laffer curve effect). However, if corporate taxes are already low or if firms simply pocket the savings without investing, the benefits may not trickle down.
+
+## Additional DSE Exam-Style Questions
+
+### EQ-1: Budget Deficit and National Debt Dynamics
+
+**Question:** An economy has GDP $= \text{HK\$}3{,}000$ billion, government revenue $= \text{HK\$}600$ billion, government expenditure $= \text{HK\$}750$ billion, and outstanding national debt $= \text{HK\$}1{,}800$ billion. The average interest rate on government debt is $3\%$ and the GDP growth rate is $4\%$. (a) Calculate the budget deficit as a percentage of GDP. (b) Calculate the debt-to-GDP ratio. (c) Using the debt dynamics equation $\Delta d = (r - g) \cdot d_0 + p$, where $p$ is the primary deficit-to-GDP ratio, determine whether the debt ratio is rising or falling. (d) If the government wants to stabilise the debt ratio at its current level, what primary balance (as a percentage of GDP) must it achieve?
+
+**Solution:**
+
+(a) Budget deficit $= 750 - 600 = \text{HK\$}150$ billion. As a percentage of GDP: $\frac{150}{3000} \times 100\% = 5\%$.
+
+(b) Debt-to-GDP ratio $= \frac{1800}{3000} = 60\%$.
+
+(c) Primary deficit $= $ Budget deficit $-$ Interest payments $= 150 - (0.03 \times 1800) = 150 - 54 = \text{HK\$}96$ billion. Primary deficit ratio $p = \frac{96}{3000} = 3.2\%$.
+
+$\Delta d = (r - g) \cdot d_0 + p = (0.03 - 0.04) \times 0.60 + 0.032 = -0.006 + 0.032 = 0.026$.
+
+The debt ratio is **rising** by approximately 2.6 percentage points per year. Despite the favourable interest-growth differential ($g \gt r$), the large primary deficit drives the debt ratio upward.
+
+(d) For a stable debt ratio, $\Delta d = 0$: $(r - g) \cdot d_0 + p = 0$, so $p = -(r - g) \cdot d_0 = -(0.03 - 0.04) \times 0.60 = 0.006 = 0.6\%$.
+
+The government needs a **primary deficit** of at most $0.6\%$ of GDP, or equivalently a primary surplus of $-0.6\%$. Current primary deficit is $3.2\%$, so it must reduce spending or increase revenue by $(3.2\% - 0.6\%) \times 3000 = \text{HK\$}78$ billion.
+
+### EQ-2: Discretionary Fiscal Policy with the AD-AS Model
+
+**Question:** An economy is in long-run equilibrium at price level $P = 100$ and real output $Y = \text{HK\$}2{,}000$ billion. Potential output is $Y^* = \text{HK\$}2{,}000$ billion. The government increases spending by $\text{HK\$}80$ billion. The MPC $= 0.75$, the tax rate $t = 0.2$, and the MPM $= 0.15$. (a) Calculate the full fiscal multiplier. (b) Calculate the change in equilibrium output. (c) If the SRAS is upward-sloping with a price sensitivity such that the price level rises by 5% when output rises by 10%, estimate the new equilibrium price level and output, accounting for the crowding out effect through rising prices. (d) Evaluate the effectiveness of this fiscal expansion.
+
+**Solution:**
+
+(a) The multiplier with taxes and imports: $k = \frac{1}{1 - MPC(1 - t) + MPM} = \frac{1}{1 - 0.75(1 - 0.2) + 0.15} = \frac{1}{1 - 0.60 + 0.15} = \frac{1}{0.55} = 1.818$.
+
+(b) $\Delta Y = 1.818 \times 80 = \text{HK\$}145.5$ billion (theoretical maximum without crowding out).
+
+(c) Output increase $= \frac{145.5}{2000} = 7.27\%$. Given the SRAS relationship (5% price rise for 10% output rise), the price rise $= 5\% \times \frac{7.27}{10} = 3.64\%$. New price level $= 100 \times 1.0364 = 103.64$.
+
+The rising price level reduces the real value of the money supply and raises interest rates, crowding out some investment. If the crowding out effect reduces the multiplier by 20%, the effective multiplier $= 1.818 \times 0.80 = 1.455$. Effective $\Delta Y = 1.455 \times 80 = \text{HK\$}116.4$ billion. New output $= 2000 + 116.4 = \text{HK\$}2{,}116.4$ billion.
+
+(d) The fiscal expansion is moderately effective. It closes part of any output gap (if one existed), but the crowding out effect and inflationary pressure reduce its impact. The multiplier of 1.455 (after crowding out) means the $\text{HK\$}80$B spending generates only $\text{HK\$}116.4$B of additional output. The policy is most effective when: (1) the economy has significant spare capacity (flat SRAS), (2) interest rates are not already near zero, and (3) the spending is on productive infrastructure rather than recurrent expenditure.
+
+### EQ-3: Quantitative Easing and Balance Sheet Effects
+
+**Question:** The central bank undertakes quantitative easing (QE) by purchasing $\text{HK\$}200$ billion of government bonds from commercial banks. (a) Explain how QE differs from conventional open market operations. (b) If banks hold 5% of the new reserves as excess reserves and the required reserve ratio is 8%, calculate the maximum expansion of broad money supply. (c) The central bank's balance sheet before QE shows assets of $\text{HK\$}800$B (all government bonds) and liabilities of $\text{HK\$}800$B (currency in circulation $\text{HK\$}300$B, bank reserves $\text{HK\$}500$B). Show the balance sheet after QE. (d) Discuss two risks of large-scale QE.
+
+**Solution:**
+
+(a) Conventional OMOs involve small-scale purchases of short-term government bonds to target a short-term interest rate. QE involves **large-scale** purchases of **longer-term** assets (government bonds, sometimes corporate bonds) when short-term rates are already near zero. QE aims to directly lower long-term interest rates, flatten the yield curve, and increase the money supply when conventional policy is exhausted (liquidity trap).
+
+(b) New reserves $= \text{HK\$}200$B. Excess reserves held $= 0.05 \times 200 = \text{HK\$}10$B. Reserves available for lending $= 200 - 10 = \text{HK\$}190$B.
+
+Maximum expansion $= \frac{190}{0.08} = \text{HK\$}2{,}375$ billion of broad money.
+
+(c) After QE:
+- **Assets:** Government bonds $= 800 + 200 = \text{HK\$}1{,}000$B.
+- **Liabilities:** Currency $= \text{HK\$}300$B, Bank reserves $= 500 + 200 = \text{HK\$}700$B. Total liabilities $= \text{HK\$}1{,}000$B.
+
+(d) Two risks:
+1. **Asset price inflation and financial instability:** QE pushes investors into riskier assets (search for yield), inflating stock, bond, and property prices beyond fundamentals. When QE unwinds, these asset bubbles may burst.
+2. **Exit strategy difficulty:** Selling $\text{HK\$}200$B of bonds could depress bond prices and raise interest rates sharply, disrupting financial markets. The central bank may become trapped -- unable to normalise its balance sheet without causing market turmoil.
+
+### EQ-4: Hong Kong's Fiscal Policy Under the Linked Exchange Rate
+
+**Question:** Hong Kong operates a Currency Board system with the HKD pegged at 7.8 to the USD. (a) Explain why Hong Kong's monetary policy is essentially determined by the US Federal Reserve. (b) Hong Kong's government records a budget deficit of HK\$100 billion during a recession. Since the HKMA cannot independently set interest rates, what fiscal tools remain available? (c) Calculate the impact on Hong Kong's fiscal reserves if the deficit persists for 3 years at HK\$100B per year, starting from fiscal reserves of HK\$800B. (d) Evaluate the sustainability of Hong Kong's fiscal position under prolonged economic downturn.
+
+**Solution:**
+
+(a) Under the Currency Board arrangement, the HKMA must maintain full backing of the monetary base with US dollar reserves. When the Fed raises rates, capital flows from HK to the US, the HKMA must sell USD and buy HKD to maintain the peg, reducing the HK money supply and pushing HK interest rates up to match US rates. Hong Kong has **no independent monetary policy** -- this is the impossible trinity in action (fixed exchange rate + free capital mobility = no independent monetary policy).
+
+(b) Since monetary policy is unavailable, Hong Kong must rely on:
+1. **Discretionary fiscal policy:** Increasing government spending on infrastructure, stimulus payments (e.g., consumption vouchers), tax rebates.
+2. **Countercyclical fiscal buffers:** Drawing down fiscal reserves accumulated during boom years.
+3. **Supply-side measures:** Reducing land premiums to lower housing costs, streamlining business registration, investing in innovation and technology.
+4. **Exchange rate flexibility (limited):** While the peg is maintained, the HKD can trade within the Convertibility Zone (7.75--7.85), providing marginal adjustment.
+
+(c) Year 1: Reserves $= 800 - 100 = 700$. Year 2: $700 - 100 = 600$. Year 3: $600 - 100 = 500$.
+
+After 3 years, fiscal reserves $= \text{HK\$}500$ billion (a 37.5% decline).
+
+(d) Sustainability assessment: Hong Kong's fiscal reserves are among the world's largest relative to GDP (approximately 20--25% of GDP), providing a substantial buffer. A 3-year deficit of HK\$300B is manageable. However, prolonged deficits combined with rising social welfare spending (ageing population, healthcare) could erode reserves over a decade. Hong Kong has no central bank to monetise debt, so deficits must be financed from reserves or bond issuance. The government's credit rating and investor confidence depend on maintaining adequate reserves. A prudent approach is to maintain fiscal reserves equivalent to at least 12 months of government expenditure.
+
+### EQ-5: Taxation and Labour Supply -- Income and Substitution Effects
+
+**Question:** A worker earns HK\$30,000 per month and works 160 hours. The government introduces a flat tax of 10% on income above HK\$15,000 (the personal allowance). The worker's after-tax hourly wage falls from HK\$187.5 to HK\$175. (a) Calculate the worker's monthly tax payment and after-tax income. (b) Using the income and substitution effects framework, explain how the tax might affect the worker's labour supply. (c) If the worker's elasticity of labour supply is $-0.2$, calculate the percentage change in hours worked. (d) Explain the Laffer curve concept and identify the tax rate at which revenue is maximised, assuming a revenue-maximising tax rate of 40%.
+
+**Solution:**
+
+(a) Taxable income $= 30{,}000 - 15{,}000 = \text{HK\$}15{,}000$. Tax $= 0.10 \times 15{,}000 = \text{HK\$}1{,}500$. After-tax income $= 30{,}000 - 1{,}500 = \text{HK\$}28{,}500$.
+
+(b) The tax creates two opposing effects on labour supply:
+1. **Substitution effect:** The after-tax wage falls (from HK\$187.5 to HK\$175), making leisure cheaper relative to work. The worker substitutes towards leisure and **reduces** labour supply.
+2. **Income effect:** The lower after-tax income makes the worker feel poorer. To maintain their standard of living, the worker may **increase** labour supply (work more hours to compensate).
+
+The net effect depends on which effect dominates. For low-income workers, the income effect tends to dominate (work more). For high-income workers with high target incomes, the substitution effect often dominates (work less).
+
+(c) Elasticity of labour supply $= \frac{\%\Delta H}{\%\Delta W}$. Percentage change in after-tax wage $= \frac{175 - 187.5}{187.5} = -6.67\%$.
+
+$\%\Delta H = -0.2 \times (-6.67\%) = 1.33\%$. Hours increase by $1.33\%$ to $160 \times 1.0133 = 162.1$ hours. The negative elasticity means the income effect dominates (backward-bending supply curve).
+
+(d) The Laffer curve shows the relationship between the tax rate and tax revenue. At a tax rate of 0%, revenue is zero. As the tax rate rises, revenue initially increases, but beyond a certain point, higher rates discourage economic activity so much that revenue **falls**. At a 100% tax rate, nobody works and revenue is zero. The revenue-maximising rate is where the Laffer curve peaks. If this peak is at 40%, then raising the tax rate above 40% would actually **reduce** total tax revenue by shrinking the tax base more than the higher rate compensates.
+
+### EQ-6: Monetary Policy in a Small Open Economy
+
+**Question:** Country S is a small open economy with a floating exchange rate. The central bank raises the policy interest rate by 1 percentage point. (a) Explain the effect on the exchange rate, using the interest rate parity condition. (b) If exports are HK\$400 billion and imports are HK\$500 billion, and the Marshall-Lerner condition holds with PED of exports $= 0.8$ and PED of imports $= 1.2$, calculate the effect of a 5% currency appreciation on the trade balance. (c) Explain why the impact on GDP differs between a small open economy and a large closed economy. (d) The central bank simultaneously sells domestic bonds worth HK\$50 billion. Calculate the combined effect on the money supply given a money multiplier of 5.
+
+**Solution:**
+
+(a) Higher domestic interest rates attract foreign capital inflows, as investors seek higher returns. The increased demand for the domestic currency causes it to **appreciate**. By uncovered interest rate parity: $i_d = i_f + \frac{E^e - E}{E}$. If $i_d$ rises and $i_f$ and $E^e$ are unchanged, $E$ (the spot exchange rate, domestic currency per foreign currency) must fall -- meaning the domestic currency appreciates.
+
+(b) Current trade balance $= X - M = 400 - 500 = -\text{HK\$}100$ billion (deficit).
+
+A 5% appreciation makes exports 5% more expensive for foreigners and imports 5% cheaper domestically.
+
+$\%\Delta X = -PED_X \times \%\Delta P_X = -0.8 \times 5 = -4\%$. New exports $= 400 \times 0.96 = \text{HK\$}384$ billion.
+
+$\%\Delta M = -PED_M \times \%\Delta P_M = -1.2 \times (-5) = +6\%$. New imports $= 500 \times 1.06 = \text{HK\$}530$ billion.
+
+New trade balance $= 384 - 530 = -\text{HK\$}146$ billion. The deficit **widens** by HK\$46 billion because the Marshall-Lerner condition is just satisfied ($PED_X + PED_M = 2.0 \gt 1$), but the appreciation initially worsens the trade balance in the short run (J-curve effect).
+
+(c) In a **small open economy**, higher interest rates cause currency appreciation, which significantly reduces net exports. The negative export effect partially or fully offsets the contractionary domestic effect of higher rates on investment and consumption. In a **large closed economy**, the exchange rate channel is absent, so higher rates reduce GDP primarily through lower investment and consumption. The net effect of monetary tightening is therefore **smaller** in a small open economy with a floating exchange rate than in a closed economy -- this is the Mundell-Fleming result.
+
+(d) Selling HK\$50 billion in bonds removes HK\$50 billion from bank reserves. With a money multiplier of 5: $\Delta M = 5 \times (-50) = -\text{HK\$}250$ billion. The money supply contracts by HK\$250 billion, reinforcing the contractionary effect of the interest rate increase.
+
+## Common Pitfalls
+
+1. **Confusing the spending multiplier with the tax multiplier:** The spending multiplier is $\frac{1}{1-MPC}$ while the tax multiplier is $\frac{-MPC}{1-MPC}$. The tax multiplier is always smaller in absolute value because households save a portion of any tax cut (the MPS leaks out of the circular flow immediately).
+
+2. **Ignoring leakages in the multiplier:** The simple multiplier $\frac{1}{1-MPC}$ overestimates the real-world impact. Students must account for taxation (reducing disposable income), imports (leakage to foreign economies), and savings. The full multiplier is $\frac{1}{1 - MPC(1-t) + MPM}$.
+
+3. **Applying demand-side policy to supply-side problems:** Stagflation (simultaneous high inflation and high unemployment) cannot be solved by shifting AD alone. Demand expansion worsens inflation; demand contraction worsens unemployment. Supply-side policies are needed.
+
+4. **Forgetting the impossible trinity:** Under a fixed exchange rate with free capital mobility, monetary policy is not independent. Students often prescribe interest rate changes for Hong Kong without recognising the Currency Board constraint.
+
+5. **Assuming the full multiplier materialises:** Time lags (recognition lag, decision lag, implementation lag, impact lag), crowding out, and behavioural responses mean the actual multiplier is typically 30--50% of the theoretical maximum in empirical studies.

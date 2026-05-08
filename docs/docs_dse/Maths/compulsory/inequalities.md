@@ -625,3 +625,226 @@ Ready to test your understanding of **Inequalities**? The [diagnostic test](/doc
 
 See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+---
+
+## Rational Inequalities
+
+### Method
+
+To solve $\dfrac{f(x)}{g(x)} > 0$ (or $\geq, <, \leq$):
+
+1. Find the zeros of $f(x)$ and $g(x)$ (the critical points).
+2. Note that $g(x) \neq 0$ -- these points are always excluded.
+3. Construct a sign diagram across all intervals defined by the critical points.
+4. Select intervals satisfying the inequality.
+5. Include critical points from the numerator (where $f(x) = 0$) only for $\geq$ or $\leq$.
+
+### Worked Example
+
+Solve $\dfrac{x^2 - 3x + 2}{x + 1} \leq 0$.
+
+<details>
+<summary>Solution</summary>
+
+Factor: $\dfrac{(x - 1)(x + 2)}{x + 1} \leq 0$.
+
+Critical points: $x = -2$, $x = -1$, $x = 1$. Note $x \neq -1$.
+
+| Interval | $(-\infty, -2)$ | $(-2, -1)$ | $(-1, 1)$ | $(1, \infty)$ |
+|---|---|---|---|---|
+| Sign | $-$ | $+$ | $-$ | $+$ |
+
+The expression is $\leq 0$ when $x \leq -2$ or $-1 < x \leq 1$.
+
+Solution: $(-\infty, -2] \cup (-1, 1]$.
+
+</details>
+
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+For inequality problems in DSE Paper 1:
+
+1. When solving quadratic inequalities, always find the roots and sketch the parabola or draw a sign chart.
+2. When multiplying or dividing by a negative, explicitly state that the inequality sign reverses.
+3. For rational inequalities, clearly identify points where the denominator is zero and exclude them.
+4. For system of inequalities, draw each solution on a number line and identify the intersection.
+
+### Significant Figures
+
+Exact answers are preferred. If an approximate numerical answer is required, use 3 significant figures.
+
+### Common DSE Question Types
+
+1. **Quadratic inequalities with parameters** (find the range of a parameter).
+2. **Absolute value inequalities** (split into cases).
+3. **Rational inequalities** (sign diagram method).
+4. **Systems of inequalities** (intersection of solution sets).
+5. **Inequalities involving the discriminant** (condition for real roots).
+
+---
+
+## Additional Worked Examples
+
+**Worked Example: Inequality with quadratic and absolute value**
+
+Solve $|x^2 - 4x + 3| < 3x - 5$.
+
+<details>
+<summary>Solution</summary>
+
+The RHS must be positive: $3x - 5 > 0 \implies x > \dfrac{5}{3}$.
+
+Case 1: $x^2 - 4x + 3 \geq 0$, i.e., $(x-1)(x-3) \geq 0 \implies x \leq 1$ or $x \geq 3$.
+
+Combined with $x > \dfrac{5}{3}$: $x \geq 3$.
+
+The inequality becomes $x^2 - 4x + 3 < 3x - 5 \implies x^2 - 7x + 8 < 0$.
+
+Roots: $x = \dfrac{7 \pm \sqrt{49 - 32}}{2} = \dfrac{7 \pm \sqrt{17}}{2}$.
+
+$\dfrac{7 - \sqrt{17}}{2} \approx 1.44$ and $\dfrac{7 + \sqrt{17}}{2} \approx 5.56$.
+
+Intersection with $x \geq 3$: $3 \leq x < \dfrac{7 + \sqrt{17}}{2}$.
+
+Case 2: $x^2 - 4x + 3 < 0$, i.e., $1 < x < 3$.
+
+Combined with $x > \dfrac{5}{3}$: $\dfrac{5}{3} < x < 3$.
+
+The inequality becomes $-(x^2 - 4x + 3) < 3x - 5 \implies -x^2 + 4x - 3 < 3x - 5 \implies -x^2 + x + 2 < 0 \implies x^2 - x - 2 > 0$.
+
+$(x - 2)(x + 1) > 0 \implies x < -1$ or $x > 2$.
+
+Intersection with $\dfrac{5}{3} < x < 3$: $2 < x < 3$.
+
+Combined solution: $2 < x < \dfrac{7 + \sqrt{17}}{2}$.
+
+</details>
+
+**Worked Example: Quadratic inequality with parameter**
+
+Find the range of $m$ such that $mx^2 + (m - 1)x + m > 0$ for all real $x$.
+
+<details>
+<summary>Solution</summary>
+
+Case 1: $m = 0$. The inequality becomes $-x > 0 \implies x < 0$, which is not true for all real $x$. Reject.
+
+Case 2: $m \neq 0$. For $mx^2 + (m-1)x + m > 0$ for all real $x$, we need $m > 0$ and $\Delta < 0$:
+
+$$\Delta = (m - 1)^2 - 4m^2 = m^2 - 2m + 1 - 4m^2 = -3m^2 - 2m + 1 < 0$$
+
+$$3m^2 + 2m - 1 > 0 \implies (3m - 1)(m + 1) > 0 \implies m < -1 \;\text{or}\; m > \dfrac{1}{3}$$
+
+Combined with $m > 0$: $m > \dfrac{1}{3}$.
+
+</details>
+
+**Worked Example: System with three inequalities**
+
+Solve the system: $x^2 - 2x - 15 \leq 0$, $|x - 1| \leq 4$, $x > 0$.
+
+<details>
+<summary>Solution</summary>
+
+From $x^2 - 2x - 15 \leq 0$: $(x - 5)(x + 3) \leq 0 \implies -3 \leq x \leq 5$.
+
+From $|x - 1| \leq 4$: $-4 \leq x - 1 \leq 4 \implies -3 \leq x \leq 5$.
+
+From $x > 0$: $x \in (0, \infty)$.
+
+Intersection: $(0, 5]$.
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** Solve $\dfrac{2x - 1}{x + 3} \geq 1$.
+
+<details>
+<summary>Solution</summary>
+
+$$\frac{2x - 1}{x + 3} - 1 \geq 0 \implies \frac{2x - 1 - x - 3}{x + 3} \geq 0 \implies \frac{x - 4}{x + 3} \geq 0$$
+
+Critical points: $x = -3$ (excluded) and $x = 4$ (included).
+
+| Interval | $(-\infty, -3)$ | $(-3, 4)$ | $(4, \infty)$ |
+|---|---|---|---|
+| Sign | $+$ | $-$ | $+$ |
+
+Solution: $(-\infty, -3) \cup [4, \infty)$.
+
+</details>
+
+**DSE Practice 2.** Find the range of $k$ for which $kx^2 - 2kx + 3 > 0$ for all real $x$.
+
+<details>
+<summary>Solution</summary>
+
+Case $k = 0$: $3 > 0$ for all real $x$. So $k = 0$ works.
+
+Case $k \neq 0$: Need $k > 0$ and $\Delta < 0$:
+
+$$\Delta = 4k^2 - 12k = 4k(k - 3) < 0 \implies 0 < k < 3$$
+
+Combined with $k = 0$: the answer is $0 \leq k < 3$.
+
+</details>
+
+**DSE Practice 3.** Solve $|2x - 3| > |x + 1|$.
+
+<details>
+<summary>Solution</summary>
+
+Square both sides (both sides non-negative):
+
+$$(2x - 3)^2 > (x + 1)^2 \implies 4x^2 - 12x + 9 > x^2 + 2x + 1$$
+
+$$3x^2 - 14x + 8 > 0 \implies (3x - 2)(x - 4) > 0$$
+
+Solution: $x < \dfrac{2}{3}$ or $x > 4$.
+
+</details>
+
+**DSE Practice 4.** Find all real values of $x$ satisfying $x^2 - 2|x| - 8 < 0$.
+
+<details>
+<summary>Solution</summary>
+
+Let $t = |x| \geq 0$: $t^2 - 2t - 8 < 0 \implies (t - 4)(t + 2) < 0 \implies -2 < t < 4$.
+
+Since $t \geq 0$: $0 \leq t < 4$, i.e., $|x| < 4 \implies -4 < x < 4$.
+
+</details>
+
+**DSE Practice 5.** Given that $x^2 + 2(k + 1)x + 9 > 0$ for all real $x$, find the range of $k$.
+
+<details>
+<summary>Solution</summary>
+
+$\Delta < 0$: $4(k + 1)^2 - 36 < 0 \implies (k + 1)^2 < 9 \implies -3 < k + 1 < 3 \implies -4 < k < 2$.
+
+</details>
+
+**DSE Practice 6.** Solve the inequality $\dfrac{x^2 - x - 6}{x^2 - 4} \leq 0$.
+
+<details>
+<summary>Solution</summary>
+
+$$\frac{x^2 - x - 6}{x^2 - 4} = \frac{(x - 3)(x + 2)}{(x - 2)(x + 2)} = \frac{x - 3}{x - 2}$$
+
+for $x \neq -2$.
+
+$\dfrac{x - 3}{x - 2} \leq 0$: $2 < x \leq 3$.
+
+But $x \neq -2$, which is not in $[2, 3]$ anyway.
+
+Solution: $(2, 3]$.
+
+</details>

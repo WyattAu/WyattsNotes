@@ -166,3 +166,74 @@ For each topic test (6 questions, max 24 marks):
 | Transition Metals | d-d transitions and colour origin | UT-1 |
 | Transition Metals | Ligand exchange and $K_{\text{stab}}$ | UT-2 |
 | Transition Metals | Catalytic cycle construction | IT-1 |
+
+## Diagnostic Test Matrix
+
+### How to Use the Test Matrix
+
+Each diagnostic test contains questions rated by difficulty and type:
+
+- **UT (Unit Test):** Tests a single concept in isolation. Use these to identify specific gaps in understanding.
+- **IT (Integration Test):** Combines two or more topics. Use these once unit tests are mastered.
+
+**Self-marking protocol:**
+1. Attempt all questions under timed conditions (5 minutes per mark).
+2. Mark against the worked solutions.
+3. For each incorrect answer, identify whether the error was conceptual (need to re-study the topic) or arithmetic (need more practice).
+4. Record results in the tracking table below.
+
+### Topic Cross-Reference Table
+
+| Diagnostic File | Topics Covered | Core Content File |
+|---|---|---|
+| diag-atomic-structure | Electron configuration, IE trends, atomic orbitals | atomic-structure.md |
+| diag-bonding-structure | VSEPR, intermolecular forces, ionic/covalent bonding | bonding-and-structure.md |
+| diag-quantitative-chemistry | Moles, titration, gas calculations, uncertainties | quantitative-chemistry.md |
+| diag-kinetics | Rate equations, Arrhenius, mechanisms, catalysts | kinetics.md |
+| diag-equilibrium | $K_c$, $K_p$, Le Chatelier, heterogeneous equilibrium | equilibrium.md |
+| diag-thermodynamics | Enthalpy, entropy, Gibbs energy, Born-Haber | thermodynamics.md, entropy-and-gibbs.md, born-haber-cycles.md |
+| diag-acids-bases | pH, weak acids, buffers, titration curves, indicators | acids-bases.md |
+| diag-electrochemistry | Electrode potentials, cells, electrolysis, feasibility | electrochemistry.md |
+| diag-organic-introduction | Nomenclature, isomerism, chirality, reaction types | organic-chemistry/introduction.md |
+| diag-alkanes-alkenes | Free radicals, cracking, electrophilic addition, polymers | organic-chemistry/alkanes.md, organic-chemistry/alkenes.md |
+| diag-halogenoalkanes-alcohols | SN1/SN2, elimination, oxidation, esterification | organic-chemistry/halogenoalkanes.md, organic-chemistry/alcohols.md |
+| diag-carbonyl-arenes-amines | Nucleophilic addition, electrophilic substitution, diazotisation | organic-chemistry/carbonyl-compounds.md, organic-chemistry/arenes.md, organic-chemistry/amines.md |
+| diag-transition-metals | d-d transitions, CFSE, ligand exchange, catalysis | transition-metals.md |
+
+### Progress Tracking Template
+
+Copy this table and fill in your scores after each attempt. Aim for 80%+ before moving to integration tests.
+
+| Topic | Date | Score | Time (min) | Weakest Area | Action |
+|---|---|---|---|---|---|
+| Atomic Structure | | /25 | | | |
+| Bonding & Structure | | /25 | | | |
+| Quantitative Chemistry | | /25 | | | |
+| Kinetics | | /25 | | | |
+| Equilibrium | | /25 | | | |
+| Thermodynamics | | /25 | | | |
+| Acids & Bases | | /25 | | | |
+| Electrochemistry | | /25 | | | |
+| Organic Introduction | | /25 | | | |
+| Alkanes & Alkenes | | /25 | | | |
+| Halogenoalkanes & Alcohols | | /25 | | | |
+| Carbonyl, Arenes & Amines | | /25 | | | |
+| Transition Metals | | /25 | | | |
+
+### Building a Personal Test Matrix
+
+1. **Baseline assessment:** Take all 13 diagnostic tests without preparation. Record scores.
+2. **Identify priority topics:** Sort by score (lowest first). These are your priority topics.
+3. **Study cycle:** For each priority topic, study the core content file, then re-take the diagnostic test. Repeat until 80%+ is achieved.
+4. **Integration phase:** Once all unit test scores are 80%+, focus on integration test questions (IT-1, IT-2, IT-3).
+5. **Exam simulation:** Select one question from each of 5 different topics and complete them in 25 minutes under exam conditions.
+
+### Common Error Patterns and Remedies
+
+| Error Pattern | Likely Cause | Remedy |
+|---|---|---|
+| Correct method, wrong answer | Arithmetic error | Slow down; show all working; use a calculator for complex arithmetic |
+| Wrong method, correct steps for that method | Misread the question | Underline key words; identify what is being asked before starting |
+| Blank answer | Knowledge gap | Return to core content notes; work through relevant worked examples |
+| Partial credit only | Incomplete explanation | Practice writing full explanations with all key marking points |
+| Runs out of time | Poor time management | Practice under timed conditions; skip hard questions and return later |

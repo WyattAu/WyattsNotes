@@ -732,3 +732,286 @@ Ready to test your understanding of **Geometries**? The [diagnostic test](/docs/
 
 See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+For geometry problems in DSE Paper 1:
+
+1. When using the distance or midpoint formula, write the formula before substituting.
+2. When finding the equation of a line, state the gradient and a point, then apply the point-slope form.
+3. For circle problems, show the completing-the-square steps to find centre and radius.
+4. For 3D problems, clearly identify the right-angled triangles used and label the diagram.
+5. For area problems, show which formula is being used and justify the values substituted.
+
+### Significant Figures
+
+Length answers to 3 significant figures unless exact. Angle answers to nearest degree or 3 s.f. as appropriate.
+
+### Common DSE Question Types
+
+1. **Circle equations** (finding centre, radius, tangent equations).
+2. **2D area problems** (shoelace formula, Heron's formula).
+3. **3D distance and angle** problems.
+4. **Arc length and sector area** calculations.
+5. **Parallel/perpendicular line** problems.
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 13: Two circles touching externally**
+
+Circle $C_1$ has centre $(1, 2)$ and radius $3$. Circle $C_2$ has centre $(7, 2)$ and radius $r$. If $C_1$ and $C_2$ touch externally, find $r$.
+
+<details>
+<summary>Solution</summary>
+
+For external tangency, the distance between centres equals the sum of the radii:
+
+$$d = \sqrt{(7 - 1)^2 + (2 - 2)^2} = 6$$
+
+$$3 + r = 6 \implies r = 3$$
+
+</details>
+
+**Worked Example 14: Area of a regular hexagon**
+
+A regular hexagon has side length $a$. Find its area in terms of $a$.
+
+<details>
+<summary>Solution</summary>
+
+A regular hexagon can be divided into 6 equilateral triangles, each with side $a$.
+
+Area of one equilateral triangle: $\dfrac{\sqrt{3}}{4}a^2$.
+
+Total area: $6 \times \dfrac{\sqrt{3}}{4}a^2 = \dfrac{3\sqrt{3}}{2}a^2$.
+
+</details>
+
+**Worked Example 15: Shortest distance between skew lines (3D)**
+
+In 3D, find the distance between the point $P(1, 2, 3)$ and the line through $A(4, 5, 6)$ and $B(7, 8, 9)$.
+
+<details>
+<summary>Solution</summary>
+
+Direction vector of the line: $\mathbf{d} = (3, 3, 3)$, simplified to $(1, 1, 1)$.
+
+Vector $\overrightarrow{AP} = (1 - 4, 2 - 5, 3 - 6) = (-3, -3, -3)$.
+
+The cross product $\overrightarrow{AP} \times \mathbf{d} = (-3, -3, -3) \times (1, 1, 1)$.
+
+Since $\overrightarrow{AP}$ is parallel to $\mathbf{d}$ (one is $-3$ times the other), the point $P$ lies on the line.
+
+The distance is $0$.
+
+Verification: $P$ lies on the line through $A$ in direction $(1,1,1)$ since $(1, 2, 3) = (4, 5, 6) + (-1)(1, 1, 1)$. So $P$ is on the line and the distance is $0$.
+
+</details>
+
+**Worked Example 16: 3D tetrahedron volume**
+
+Find the volume of the tetrahedron with vertices $A(0, 0, 0)$, $B(2, 0, 0)$, $C(0, 3, 0)$, $D(0, 0, 4)$.
+
+<details>
+<summary>Solution</summary>
+
+The volume of a tetrahedron with vertices at the origin and on the coordinate axes is:
+
+$$V = \frac{1}{6}|x_B \cdot y_C \cdot z_D| = \frac{1}{6}(2)(3)(4) = 4$$
+
+Alternatively, using the scalar triple product:
+
+$$V = \frac{1}{6}|\overrightarrow{AB} \cdot (\overrightarrow{AC} \times \overrightarrow{AD})| = \frac{1}{6}|(2, 0, 0) \cdot ((0, 3, 0) \times (0, 0, 4))|$$
+
+$$(0, 3, 0) \times (0, 0, 4) = (12, 0, 0)$$
+
+$$V = \frac{1}{6}|(2)(12)| = \frac{1}{6}(24) = 4$$
+
+</details>
+
+**Worked Example 17: Angle between two lines in 3D**
+
+Find the angle between the lines joining $A(1, 0, 0)$ to $B(0, 1, 0)$ and $A$ to $C(0, 0, 1)$.
+
+<details>
+<summary>Solution</summary>
+
+$\overrightarrow{AB} = (-1, 1, 0)$, $\overrightarrow{AC} = (-1, 0, 1)$.
+
+$$\cos\theta = \frac{|(-1)(-1) + (1)(0) + (0)(1)|}{\sqrt{1 + 1 + 0} \cdot \sqrt{1 + 0 + 1}} = \frac{1}{\sqrt{2}\sqrt{2}} = \frac{1}{2}$$
+
+$$\theta = 60^\circ$$
+
+</details>
+
+**Worked Example 18: Equation of tangent to a circle with general form**
+
+Find the equation of the tangent to $x^2 + y^2 - 4x + 6y - 12 = 0$ at the point $(5, 1)$.
+
+<details>
+<summary>Solution</summary>
+
+First verify $(5, 1)$ lies on the circle: $25 + 1 - 20 + 6 - 12 = 0$. Confirmed.
+
+Using the tangent formula for the general circle equation $x^2 + y^2 + Dx + Ey + F = 0$:
+
+Replace $x^2 \to x \cdot 5$, $y^2 \to y \cdot 1$, $x \to \dfrac{x + 5}{2}$, $y \to \dfrac{y + 1}{2}$:
+
+$$5x + y - 4\cdot\frac{x + 5}{2} + 6\cdot\frac{y + 1}{2} - 12 = 0$$
+
+$$5x + y - 2x - 10 + 3y + 3 - 12 = 0$$
+
+$$3x + 4y - 19 = 0$$
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** Find the equation of the circle which passes through $(0, 0)$ and $(0, 4)$ and has its centre on the line $x - y + 2 = 0$.
+
+<details>
+<summary>Solution</summary>
+
+Let the centre be $C(h, k)$. Since $C$ lies on $x - y + 2 = 0$: $h - k + 2 = 0 \implies k = h + 2$.
+
+$CA^2 = CB^2$ where $A = (0, 0)$ and $B = (0, 4)$:
+
+$$h^2 + k^2 = h^2 + (k - 4)^2 \implies k^2 = k^2 - 8k + 16 \implies 8k = 16 \implies k = 2$$
+
+$h = k - 2 = 0$.
+
+Centre: $(0, 2)$. $r^2 = 0^2 + 2^2 = 4$.
+
+Equation: $x^2 + (y - 2)^2 = 4$, or $x^2 + y^2 - 4y = 0$.
+
+</details>
+
+**DSE Practice 2.** In $\triangle ABC$, $A = (1, -2)$, $B = (5, 4)$, and $C = (8, 1)$. Find the equation of the median from $A$ and the equation of the altitude from $B$.
+
+<details>
+<summary>Solution</summary>
+
+**Median from $A$:** Midpoint of $BC$: $M = \left(\dfrac{5+8}{2}, \dfrac{4+1}{2}\right) = (6.5, 2.5)$.
+
+Gradient of $AM$: $m = \dfrac{2.5 - (-2)}{6.5 - 1} = \dfrac{4.5}{5.5} = \dfrac{9}{11}$.
+
+Equation: $y + 2 = \dfrac{9}{11}(x - 1) \implies 11y + 22 = 9x - 9 \implies 9x - 11y - 31 = 0$.
+
+**Altitude from $B$:** Gradient of $AC$: $m_{AC} = \dfrac{1 - (-2)}{8 - 1} = \dfrac{3}{7}$.
+
+Gradient of altitude: $m_\perp = -\dfrac{7}{3}$.
+
+Equation through $B(5, 4)$: $y - 4 = -\dfrac{7}{3}(x - 5) \implies 3y - 12 = -7x + 35 \implies 7x + 3y - 47 = 0$.
+
+</details>
+
+**DSE Practice 3.** A sector of a circle of radius $10\mathrm{ cm}$ has perimeter $30\mathrm{ cm}$. Find the area of the sector.
+
+<details>
+<summary>Solution</summary>
+
+Perimeter of sector $= 2r + r\theta = 20 + 10\theta = 30$.
+
+$10\theta = 10 \implies \theta = 1$ rad.
+
+$$\mathrm{Area} = \frac{1}{2}r^2\theta = \frac{1}{2}(100)(1) = 50\mathrm{ cm}^2$$
+
+</details>
+
+**DSE Practice 4.** Two circles $C_1: (x - 1)^2 + y^2 = 9$ and $C_2: (x - 5)^2 + y^2 = 25$ intersect at $A$ and $B$. Find the length of the common chord $AB$.
+
+<details>
+<summary>Solution</summary>
+
+Centres: $O_1 = (1, 0)$, $O_2 = (5, 0)$. Radii: $r_1 = 3$, $r_2 = 5$.
+
+Distance between centres: $d = 4$.
+
+The common chord is perpendicular to $O_1O_2$ (the $x$-axis) and passes through the midpoint.
+
+By symmetry, the common chord is the line $x = c$ for some $c$.
+
+Substituting $x = c$ into $C_1$: $(c - 1)^2 + y^2 = 9 \implies y^2 = 9 - (c - 1)^2$.
+
+Substituting $x = c$ into $C_2$: $(c - 5)^2 + y^2 = 25 \implies y^2 = 25 - (c - 5)^2$.
+
+Setting equal: $9 - (c - 1)^2 = 25 - (c - 5)^2$.
+
+$9 - c^2 + 2c - 1 = 25 - c^2 + 10c - 25$
+
+$8 + 2c = 10c \implies 8c = 8 \implies c = 1$.
+
+$y^2 = 9 - 0 = 9 \implies y = \pm 3$. Points: $(1, 3)$ and $(1, -3)$.
+
+$AB = 6$.
+
+</details>
+
+**DSE Practice 5.** Find the angle between the planes $2x - y + 2z = 3$ and $x + 2y - 2z = 1$.
+
+<details>
+<summary>Solution</summary>
+
+Normal to first plane: $\mathbf{n_1} = (2, -1, 2)$. Normal to second plane: $\mathbf{n_2} = (1, 2, -2)$.
+
+$$\cos\theta = \frac{|2(1) + (-1)(2) + 2(-2)|}{\sqrt{4 + 1 + 4} \cdot \sqrt{1 + 4 + 4}} = \frac{|2 - 2 - 4|}{3 \cdot 3} = \frac{4}{9}$$
+
+$$\theta = \arccos\!\left(\frac{4}{9}\right) \approx 63.6^\circ$$
+
+</details>
+
+**DSE Practice 6.** A pyramid has a rectangular base $ABCD$ with $AB = 8$, $BC = 6$. The vertex $V$ is directly above the centre of the base, and $VA = 10$. Find the angle between the face $VAB$ and the base $ABCD$.
+
+<details>
+<summary>Solution</summary>
+
+The centre of the rectangle is $O = (4, 3, 0)$ (taking $A$ at the origin).
+
+$VA = 10$, $OA = \sqrt{4^2 + 3^2} = 5$.
+
+$VO = \sqrt{VA^2 - OA^2} = \sqrt{100 - 25} = \sqrt{75} = 5\sqrt{3}$.
+
+Height of the pyramid: $h = 5\sqrt{3}$.
+
+The midpoint of $AB$ is $M = (4, 0, 0)$.
+
+$VM = \sqrt{VO^2 + OM^2} = \sqrt{75 + 9} = \sqrt{84} = 2\sqrt{21}$.
+
+The angle between face $VAB$ and the base is the angle between $VM$ and $OM$:
+
+$$\cos\phi = \frac{OM}{VM} = \frac{3}{2\sqrt{21}} = \frac{\sqrt{21}}{14}$$
+
+$$\phi = \arccos\!\left(\frac{\sqrt{21}}{14}\right) \approx 69.2^\circ$$
+
+</details>
+
+**DSE Practice 7.** The line $3x + 4y - 25 = 0$ intersects the circle $x^2 + y^2 = 25$ at $A$ and $B$. Find the area of the minor segment cut off by the chord $AB$.
+
+<details>
+<summary>Solution</summary>
+
+Distance from the centre $(0, 0)$ to the line:
+
+$$d = \frac{|25|}{5} = 5$$
+
+Since $d = r = 5$, the line is tangent to the circle (not a chord). There is no minor segment -- the line touches the circle at exactly one point.
+
+The point of contact: the foot of the perpendicular from $(0,0)$ to $3x + 4y = 25$.
+
+$3x + 4y = 25$ and $y = \dfrac{3}{4}x$ (the perpendicular from the origin).
+
+$3x + 4 \cdot \dfrac{3}{4}x = 25 \implies 6x = 25 \implies x = \dfrac{25}{6}$, $y = \dfrac{25}{8}$.
+
+Point of tangency: $\left(\dfrac{25}{6}, \dfrac{25}{8}\right)$.
+
+Since the line is tangent (not a secant), the area of the minor segment is $0$.
+
+</details>

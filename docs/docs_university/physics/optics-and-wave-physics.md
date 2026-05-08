@@ -1779,3 +1779,247 @@ From the matrix $\begin{pmatrix} A & B \\ C & D \end{pmatrix}$: $s' = -A/C = -1/
 from the second lens, so 60 cm to the left, but this is the object distance for a virtual object). The
 effective focal length: $-1/C = -60$ cm. The image forms where parallel output rays converge: at $f_2 = -15$ cm.
 Total magnification: $M = A - s'C = 1 - (-15)(1/60) = 1 + 1/4 = 5/4 = 1.25$ (upright, slightly magnified).
+
+---
+
+## 10. Fourier Optics
+
+### 10.1 Fraunhofer Diffraction as a Fourier Transform
+
+The Fraunhofer diffraction pattern of an aperture with transmittance function $t(x, y)$ illuminated by a plane wave is proportional to the 2D Fourier transform of the aperture function:
+
+$$E(u, v) \propto \iint t(x,y)\, e^{-2\pi i(ux + vy)}\, dx\, dy = \mathcal{F}\{t(x,y)\}(u, v)$$
+
+where $u = \sin\theta_x/\lambda$ and $v = \sin\theta_y/\lambda$ are the spatial frequencies.
+
+**Theorem 10.1.** The intensity in the Fraunhofer diffraction pattern is
+
+$$I(u,v) = I_0\,|\tilde{t}(u,v)|^2$$
+
+where $\tilde{t}(u,v) = \mathcal{F}\{t(x,y)\}(u,v)$ is the Fourier transform of the aperture function.
+
+*Proof.* The Huygens-Fresnel principle in the far field gives:
+
+$$E(x',y') = \frac{e^{ikr}}{i\lambda r}\iint t(x,y)\, e^{-ik(xx' + yy')/r}\, dx\, dy$$
+
+In the far field, $r \approx D$ and the phase factor $e^{-ik(xx' + yy')/r}$ is exactly the kernel of the Fourier transform. $\blacksquare$
+
+### 10.2 Convolution Theorem for Diffraction
+
+**Theorem 10.2 (Convolution theorem).** If an aperture function is the convolution $t = t_1 * t_2$, the diffraction pattern is the product of the individual diffraction patterns:
+
+$$\mathcal{F}\{t_1 * t_2\} = \mathcal{F}\{t_1\} \cdot \mathcal{F}\{t_2\}$$
+
+**Corollary.** If an aperture is the product $t = t_1 \cdot t_2$, the diffraction pattern is the convolution of the individual patterns:
+
+$$\mathcal{F}\{t_1 \cdot t_2\} = \mathcal{F}\{t_1\} * \mathcal{F}\{t_2\}$$
+
+### 10.3 Worked Example: Diffraction Grating via Fourier Transform
+
+**Problem.** Use the Fourier transform to derive the intensity pattern of a grating with $N$ slits of width $a$ and spacing $d$.
+
+<details>
+<summary>Solution</summary>
+
+The transmittance of a single slit centred at $x = 0$ is $t_{\mathrm{slit}}(x) = \mathrm{rect}(x/a)$. The full grating is $N$ slits:
+
+$$t(x) = \sum_{n=0}^{N-1} t_{\mathrm{slit}}(x - nd) = t_{\mathrm{slit}}(x) * \sum_{n=0}^{N-1} \delta(x - nd)$$
+
+The Fourier transform is:
+
+$$\tilde{t}(u) = \mathcal{F}\{t_{\mathrm{slit}}\} \cdot \mathcal{F}\left\{\sum_{n=0}^{N-1}\delta(x - nd)\right\}$$
+
+$$= a\,\mathrm{sinc}(\pi a u) \cdot \sum_{n=0}^{N-1} e^{-2\pi i n d u} = a\,\mathrm{sinc}(\pi a u) \cdot \frac{\sin(N\pi d u)}{\sin(\pi d u)}$$
+
+The intensity is:
+
+$$I(u) = I_0\,a^2\,\mathrm{sinc}^2(\pi a u)\,\frac{\sin^2(N\pi d u)}{\sin^2(\pi d u)}$$
+
+The first factor is the single-slit envelope; the second is the $N$-slit interference pattern. Principal maxima occur at $du = m$ (integer $m$), giving the grating equation $d\sin\theta = m\lambda$.
+
+$\blacksquare$
+
+</details>
+
+### 10.4 Worked Example: Circular Aperture and the Airy Pattern
+
+**Problem.** Compute the Fraunhofer diffraction pattern of a circular aperture of radius $a$.
+
+<details>
+<summary>Solution</summary>
+
+The aperture function is $t(r) = 1$ for $r \leq a$ and $t(r) = 0$ for $r > a$. By circular symmetry, the Fourier transform in polar coordinates is:
+
+$$\tilde{t}(q) = 2\pi\int_0^a J_0(2\pi q r)\, r\, dr$$
+
+where $J_0$ is the Bessel function of the first kind and $q = \sin\theta/\lambda$ is the radial spatial frequency. Using the identity:
+
+$$\int_0^a J_0(2\pi q r)\, r\, dr = \frac{a}{2\pi q}J_1(2\pi q a)$$
+
+$$\tilde{t}(q) = \pi a^2 \cdot \frac{2J_1(\alpha)}{\alpha}$$
+
+where $\alpha = 2\pi a q = 2\pi a\sin\theta/\lambda$. The intensity is:
+
+$$I(\theta) = I_0\left(\frac{2J_1(\alpha)}{\alpha}\right)^2$$
+
+This is the **Airy pattern**. The first zero occurs at $\alpha = 3.832$, giving the angular radius of the first dark ring:
+
+$$\sin\theta_1 = 1.22\,\frac{\lambda}{d}$$
+
+where $d = 2a$ is the diameter.
+
+$\blacksquare$
+
+</details>
+
+---
+
+## 11. Coherence Theory
+
+### 11.1 Temporal Coherence
+
+A source has finite **temporal coherence** if the emitted light has a finite bandwidth $\Delta\nu$. The **coherence time** is
+
+$$\tau_c \sim \frac{1}{\Delta\nu}$$
+
+and the **coherence length** is
+
+$$L_c = c\,\tau_c \sim \frac{c}{\Delta\nu} = \frac{\lambda^2}{\Delta\lambda}$$
+
+For a Michelson interferometer, fringes are visible only when the path difference is less than $L_c$.
+
+### 11.2 Spatial Coherence
+
+The **spatial coherence** of a source is characterised by the **coherence area** $A_c$. For a circular source of angular radius $\Delta\theta$:
+
+$$A_c \approx \frac{\lambda^2}{\pi(\Delta\theta)^2}$$
+
+The van Cittert-Zernike theorem states that the spatial coherence of an incoherent source is given by the Fourier transform of the source intensity distribution.
+
+**Theorem 11.1 (van Cittert-Zernike).** The mutual coherence function of a quasi-monochromatic incoherent source with intensity distribution $I(\xi, \eta)$ is
+
+$$\Gamma(\Delta x, \Delta y) = \iint I(\xi, \eta)\, e^{-2\pi i(\xi\,\Delta x + \eta\,\Delta y)/(\lambda z)}\, d\xi\, d\eta$$
+
+This is proportional to the Fourier transform of $I(\xi, \eta)$.
+
+### 11.3 Worked Example: Coherence Length of a Sodium Lamp
+
+**Problem.** A sodium lamp emits the D line at $\lambda = 589$ nm with a linewidth $\Delta\lambda \approx 0.6$ nm. Find the coherence length and the maximum path difference for which fringes are visible in a Michelson interferometer.
+
+<details>
+<summary>Solution</summary>
+
+$$L_c = \frac{\lambda^2}{\Delta\lambda} = \frac{(589 \times 10^{-9})^2}{0.6 \times 10^{-9}} = \frac{3.47 \times 10^{-13}}{6 \times 10^{-10}} \approx 5.78 \times 10^{-4}\,\mathrm{m} \approx 0.578\,\mathrm{mm}$$
+
+For a He-Ne laser ($\lambda = 632.8$ nm, $\Delta\lambda \sim 10^{-6}$ nm):
+
+$$L_c = \frac{(632.8 \times 10^{-9})^2}{10^{-15}} \approx 400\,\mathrm{m}$$
+
+The enormous coherence length of the laser is why it produces sharp fringes over very large path differences. $\blacksquare$
+
+</details>
+
+---
+
+## 12. Detailed Diffraction Theory
+
+### 12.1 Fresnel and Fraunhofer Diffraction
+
+**Fresnel diffraction** (near-field): the observation screen is close enough that the curvature of the wavefronts matters. The Fresnel diffraction integral is:
+
+$$E(P) = \frac{i}{\lambda}\iint \frac{E(Q)}{r_{QP}}\, e^{ikr_{QP}}\, dS$$
+
+**Fraunhofer diffraction** (far-field): the observation screen is far enough that the phase variation across the aperture can be approximated as linear. This occurs when:
+
+$$R \gg \frac{a^2}{\lambda}$$
+
+where $a$ is the aperture size and $R$ is the distance to the screen.
+
+### 12.2 Fresnel Zones
+
+For a point $P$ at distance $R$ from an aperture, the **Fresnel zones** are annular regions where the path length from $P$ differs by $\lambda/2$. The $n$-th Fresnel zone has inner radius:
+
+$$r_n = \sqrt{n\lambda R + \frac{n^2\lambda^2}{4}} \approx \sqrt{n\lambda R}$$
+
+**Zone plate.** A Fresnel zone plate blocks alternate zones, producing a focused beam. It acts as a lens with focal length $f = r_1^2/\lambda$.
+
+### 12.3 Fresnel Diffraction from a Straight Edge
+
+For a semi-infinite plane ($x > 0$), the Fresnel integral gives the intensity at a point $P$:
+
+$$I(P) = \frac{I_0}{2}\left[\left(C(u) + \frac{1}{2}\right)^2 + \left(S(u) + \frac{1}{2}\right)^2\right]$$
+
+where $C(u)$ and $S(u)$ are the Fresnel integrals and $u = x\sqrt{2/(\lambda R)}$ is the Fresnel number. At the geometric shadow edge ($u = 0$): $I/I_0 = 1/4$ (not zero!), demonstrating the failure of geometric optics.
+
+---
+
+## 13. Polarisation in Detail
+
+### 13.1 Jones Calculus
+
+The **Jones vector** represents the polarisation state of a monochromatic plane wave:
+
+$$\mathbf{E} = \begin{pmatrix} E_x \\ E_y \end{pmatrix} = \begin{pmatrix} A_x\,e^{i\delta_x} \\ A_y\,e^{i\delta_y} \end{pmatrix}$$
+
+Optical elements are represented by $2 \times 2$ matrices:
+
+- **Linear polariser** at angle $\theta$: $\mathbf{P}(\theta) = \begin{pmatrix}\cos^2\theta & \sin\theta\cos\theta \\ \sin\theta\cos\theta & \sin^2\theta\end{pmatrix}$
+
+- **Quarter-wave plate** (fast axis horizontal, retardation $\pi/2$): $\mathbf{Q} = \begin{pmatrix}1 & 0 \\ 0 & e^{i\pi/2}\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & i\end{pmatrix}$
+
+- **Half-wave plate** (retardation $\pi$): $\mathbf{H} = \begin{pmatrix}1 & 0 \\ 0 & e^{i\pi}\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & -1\end{pmatrix}$
+
+**Theorem 13.1.** The output of a sequence of optical elements is the product of their Jones matrices applied to the input Jones vector:
+
+$$\mathbf{E}_{\mathrm{out}} = \mathbf{M}_n \cdots \mathbf{M}_2\,\mathbf{M}_1\,\mathbf{E}_{\mathrm{in}}$$
+
+### 13.2 Stokes Parameters
+
+For partially polarised light, the **Stokes parameters** are:
+
+$$S_0 = |E_x|^2 + |E_y|^2, \quad S_1 = |E_x|^2 - |E_y|^2, \quad S_2 = 2\,\mathrm{Re}(E_x E_y^*), \quad S_3 = 2\,\mathrm{Im}(E_x E_y^*)$$
+
+The **degree of polarisation** is
+
+$$P = \frac{\sqrt{S_1^2 + S_2^2 + S_3^2}}{S_0}$$
+
+For fully polarised light: $P = 1$. For unpolarised light: $S_1 = S_2 = S_3 = 0$.
+
+### 13.3 Worked Example: Polarisation by Multiple Reflections
+
+**Problem.** Unpolarised light is incident on a stack of $N$ glass plates at the Brewster angle. Find the degree of polarisation of the transmitted light.
+
+<details>
+<summary>Solution</summary>
+
+At the Brewster angle $\theta_B$, the reflected light for the $p$-polarisation has zero amplitude ($r_p = 0$). The $s$-polarisation is partially reflected with reflectance $R_s = ((n_1\cos\theta_i - n_2\cos\theta_t)/(n_1\cos\theta_i + n_2\cos\theta_t))^2$.
+
+For one interface, the transmitted $p$-intensity is $T_p = 1$ and the transmitted $s$-intensity is $T_s = 1 - R_s$. After $N$ interfaces:
+
+$$I_p^{(N)} = I_0/2, \quad I_s^{(N)} = (I_0/2)(1 - R_s)^N$$
+
+The degree of polarisation:
+
+$$P = \frac{I_p^{(N)} - I_s^{(N)}}{I_p^{(N)} + I_s^{(N)}} = \frac{1 - (1 - R_s)^N}{1 + (1 - R_s)^N}$$
+
+For $N \to \infty$: $P \to 1$. This is the principle behind "pile-of-plates" polarisers. For glass ($n = 1.5$) at $\theta_B \approx 56.3°$: $R_s \approx ((1.5 \times 0.555 - \cos\theta_t)/(1.5 \times 0.555 + \cos\theta_t))^2$.
+
+For five plates: $P = (1 - (1 - R_s)^5)/(1 + (1 - R_s)^5) \approx 50\%$.
+
+$\blacksquare$
+
+</details>
+
+---
+
+## 14. Common Pitfalls
+
+- **Confusing Fraunhofer and Fresnel diffraction.** Fraunhofer (far-field) patterns are Fourier transforms; Fresnel (near-field) patterns involve Fresnel integrals. The transition occurs at $R \sim a^2/\lambda$.
+
+- **Ignoring the phase in interference calculations.** Phase differences determine constructive and destructive interference. Always track the optical path length carefully.
+
+- **Misidentifying Brewster's angle.** Brewster's angle is for the *reflected* beam, not the transmitted beam. At Brewster's angle, the reflected light is purely $s$-polarised.
+
+- **Neglecting the difference between intensity and amplitude.** Interference patterns depend on amplitudes (add with phases), while intensities add without phases for incoherent sources. The visibility of fringes is determined by the coherence of the source.
+
+- **Forgetting that the Airy pattern involves $J_1$, not $J_0$.** The first zero of $J_1(x)$ is at $x = 3.832$, not at $x = 2.405$ (which is the first zero of $J_0$).

@@ -601,3 +601,190 @@ Ready to test your understanding of **Functions (Advanced)**? The [diagnostic te
 
 See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+For function problems in DSE Paper 1:
+
+1. When finding the domain of a composite function, explicitly state $\mathrm{dom}(g)$ and the condition $g(x) \in \mathrm{dom}(f)$.
+2. When finding an inverse, write $y = f(x)$, solve for $x$, and then interchange.
+3. When checking invertibility, verify that the function is one-to-one (strictly increasing or decreasing on the domain).
+4. For transformation problems, clearly identify the sequence of transformations from inside out.
+
+### Significant Figures
+
+Coordinate answers should be exact where possible. Decimal answers to 3 significant figures.
+
+### Common DSE Question Types
+
+1. **Domain of composite functions** (especially with square roots and rational functions).
+2. **Finding inverse functions** (restricted quadratics, rational functions).
+3. **Transformation of points** (tracking specific points through a series of transformations).
+4. **Self-inverse verification** (show $f^{-1} = f$).
+5. **Range finding** (using the discriminant method for rational functions).
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 13: Domain with nested functions**
+
+Let $f(x) = \dfrac{1}{\sqrt{x - 2}}$ and $g(x) = x^2 + 1$. Find $\mathrm{dom}(f \circ g)$ and $\mathrm{dom}(g \circ f)$.
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{dom}(f) = (2, \infty)$ (need $x - 2 > 0$). $\mathrm{dom}(g) = \mathbb{R}$.
+
+**$f \circ g$:** Need $g(x) \in \mathrm{dom}(f)$, i.e., $x^2 + 1 > 2 \implies x^2 > 1 \implies x < -1$ or $x > 1$.
+
+$\mathrm{dom}(f \circ g) = (-\infty, -1) \cup (1, \infty)$.
+
+**$g \circ f$:** Need $x \in \mathrm{dom}(f) = (2, \infty)$.
+
+$\mathrm{dom}(g \circ f) = (2, \infty)$.
+
+</details>
+
+**Worked Example 14: Inverse of a restricted rational function**
+
+Let $f(x) = \dfrac{2x}{x - 3}$ for $x > 3$. Find $f^{-1}$.
+
+<details>
+<summary>Solution</summary>
+
+First, check one-to-one: $f(x) = 2 + \dfrac{6}{x - 3}$. For $x > 3$, $x - 3 > 0$, so $\dfrac{6}{x-3} > 0$ and is strictly decreasing. Therefore $f$ is strictly decreasing and hence one-to-one on $(3, \infty)$.
+
+Set $y = \dfrac{2x}{x - 3}$:
+
+$$y(x - 3) = 2x \implies yx - 3y = 2x \implies x(y - 2) = 3y$$
+
+$$x = \frac{3y}{y - 2}$$
+
+$$f^{-1}(x) = \frac{3x}{x - 2}$$
+
+To find the domain of $f^{-1}$: since $\mathrm{range}(f)$ must equal $\mathrm{dom}(f^{-1})$.
+
+As $x \to 3^+$, $f(x) \to +\infty$. As $x \to +\infty$, $f(x) \to 2^+$.
+
+$\mathrm{range}(f) = (2, \infty)$, so $\mathrm{dom}(f^{-1}) = (2, \infty)$.
+
+</details>
+
+**Worked Example 15: Even and odd functions**
+
+Determine whether $f(x) = \dfrac{x}{x^2 + 1}$ is even, odd, or neither.
+
+<details>
+<summary>Solution</summary>
+
+$$f(-x) = \frac{-x}{(-x)^2 + 1} = \frac{-x}{x^2 + 1} = -f(x)$$
+
+Since $f(-x) = -f(x)$ for all real $x$, $f$ is an odd function.
+
+</details>
+
+**Worked Example 16: Range using discriminant**
+
+Find the range of $f(x) = \dfrac{x^2 - x + 1}{x^2 + x + 1}$.
+
+<details>
+<summary>Solution</summary>
+
+Let $y = \dfrac{x^2 - x + 1}{x^2 + x + 1}$. Since $x^2 + x + 1 = \left(x + \dfrac{1}{2}\right)^2 + \dfrac{3}{4} > 0$ for all $x$:
+
+$$y(x^2 + x + 1) = x^2 - x + 1 \implies (y - 1)x^2 + (y + 1)x + (y - 1) = 0$$
+
+For real $x$, $\Delta \geq 0$:
+
+$$(y + 1)^2 - 4(y - 1)^2 \geq 0 \implies (y + 1 - 2y + 2)(y + 1 + 2y - 2) \geq 0$$
+
+$$(-y + 3)(3y - 1) \geq 0 \implies (y - 3)(3y - 1) \leq 0 \implies \frac{1}{3} \leq y \leq 3$$
+
+Range: $\left[\dfrac{1}{3},\; 3\right]$.
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** Let $f(x) = \dfrac{3x - 1}{x + 2}$ and $g(x) = \dfrac{x + 1}{x - 1}$. Find $(g \circ f)(2)$.
+
+<details>
+<summary>Solution</summary>
+
+$f(2) = \dfrac{6 - 1}{2 + 2} = \dfrac{5}{4}$.
+
+$(g \circ f)(2) = g\!\left(\dfrac{5}{4}\right) = \dfrac{5/4 + 1}{5/4 - 1} = \dfrac{9/4}{1/4} = 9$.
+
+</details>
+
+**DSE Practice 2.** The function $f$ is defined by $f(x) = 2x^2 - 8x + 5$ for $x \geq 2$. Find the range of $f$ and the value of $x$ for which $f(x) = 1$.
+
+<details>
+<summary>Solution</summary>
+
+$f(x) = 2(x - 2)^2 - 3$. Since $x \geq 2$ and the vertex is at $x = 2$: range is $[-3, \infty)$.
+
+$2(x - 2)^2 - 3 = 1 \implies (x - 2)^2 = 2 \implies x = 2 + \sqrt{2}$ (positive root since $x \geq 2$).
+
+</details>
+
+**DSE Practice 3.** The graph of $y = f(x)$ passes through $(0, -1)$ and has a local maximum at $(3, 4)$. Find the coordinates of the corresponding points on $y = -f(2x + 1) + 3$.
+
+<details>
+<summary>Solution</summary>
+
+For $(0, -1)$: $2x + 1 = 0 \implies x = -\dfrac{1}{2}$. $y = -(-1) + 3 = 4$. Point: $\left(-\dfrac{1}{2},\; 4\right)$.
+
+For the maximum at $(3, 4)$: $2x + 1 = 3 \implies x = 1$. $y = -(4) + 3 = -1$. The maximum becomes a minimum at $\left(1,\; -1\right)$.
+
+</details>
+
+**DSE Practice 4.** Let $f(x) = x^3 - 3x$. Show that $f$ is not one-to-one on $\mathbb{R}$, but is one-to-one on $[1, \infty)$. Find $f^{-1}(0)$.
+
+<details>
+<summary>Solution</summary>
+
+$f(0) = 0$, $f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$, $f(-\sqrt{3}) = 0$. Since $f$ takes the same value at three different points, it is not one-to-one on $\mathbb{R}$.
+
+For $x \geq 1$: $f'(x) = 3x^2 - 3 = 3(x^2 - 1) \geq 0$ (with equality only at $x = 1$). So $f$ is strictly increasing on $[1, \infty)$ and hence one-to-one.
+
+$f^{-1}(0)$: solve $x^3 - 3x = 0 \implies x(x^2 - 3) = 0$. On $[1, \infty)$: $x = \sqrt{3}$. So $f^{-1}(0) = \sqrt{3}$.
+
+</details>
+
+**DSE Practice 5.** Let $h(x) = f(x) + g(x)$ where $f(x) = x^2$ and $g(x) = \dfrac{1}{x - 1}$. Find the domain of $h$.
+
+<details>
+<summary>Solution</summary>
+
+$\mathrm{dom}(f) = \mathbb{R}$, $\mathrm{dom}(g) = \mathbb{R} \setminus \{1\}$.
+
+$\mathrm{dom}(h) = \mathrm{dom}(f) \cap \mathrm{dom}(g) = \mathbb{R} \setminus \{1\}$.
+
+</details>
+
+**DSE Practice 6.** Given $f(x) = \dfrac{x}{x + 1}$ for $x \neq -1$, find $f^{-1}$ and solve $f(x) = f^{-1}(x)$.
+
+<details>
+<summary>Solution</summary>
+
+$y = \dfrac{x}{x + 1} \implies y(x + 1) = x \implies yx + y = x \implies x(1 - y) = -y \implies x = \dfrac{y}{y - 1}$.
+
+$f^{-1}(x) = \dfrac{x}{x - 1}$.
+
+$f(x) = f^{-1}(x)$: $\dfrac{x}{x + 1} = \dfrac{x}{x - 1}$.
+
+If $x = 0$: both sides equal $0$. So $x = 0$ is a solution.
+
+If $x \neq 0$: $\dfrac{1}{x + 1} = \dfrac{1}{x - 1} \implies x - 1 = x + 1 \implies -1 = 1$, contradiction.
+
+Solution: $x = 0$.
+
+</details>

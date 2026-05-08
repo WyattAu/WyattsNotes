@@ -674,6 +674,192 @@ Classify each of the following reactions as substitution, addition, elimination,
 
 </details>
 
+## Advanced Organic Chemistry Introduction
+
+### Functional Group Priority Table (IUPAC Nomenclature)
+
+When naming organic compounds, the principal functional group gets the lowest possible locant. Priority order (highest to lowest):
+
+| Priority | Functional Group | Suffix | Prefix |
+|---|---|---|---|
+| 1 | Carboxylic acid | -oic acid | -- |
+| 2 | Ester | -oate | alkoxycarbonyl- |
+| 3 | Amide | -amide | amido- |
+| 4 | Nitrile | -nitrile | cyano- |
+| 5 | Aldehyde | -al | oxo- |
+| 6 | Ketone | -one | oxo- |
+| 7 | Alcohol | -ol | hydroxy- |
+| 8 | Amine | -amine | amino- |
+| 9 | Alkene | -ene | -- |
+| 10 | Alkyne | -yne | -- |
+| 11 | Halogenoalkane | -- | halo- (chloro-, bromo-, iodo-) |
+| 12 | Ether | -- | alkoxy- |
+
+**Worked Example:** Name $\mathrm{HOOC}-\mathrm{CH}(\mathrm{OH})-\mathrm{CH}_2-\mathrm{CH}_2-\mathrm{NH}_2$.
+
+The carboxylic acid has highest priority (suffix). Number from the carboxylic acid end:
+
+$\mathrm{HOOC}$ (C-1), $\mathrm{CH}(\mathrm{OH})$ (C-2), $\mathrm{CH}_2$ (C-3), $\mathrm{CH}_2(\mathrm{NH}_2)$ (C-4).
+
+Name: **4-amino-2-hydroxybutanoic acid**
+
+### CIP Priority Rules for $R$/$S$ Configuration
+
+The Cahn-Ingold-Prelog (CIP) rules assign priority to substituents on a chiral centre:
+
+1. **Higher atomic number = higher priority.** $\mathrm{I} > \mathrm{Br} > \mathrm{Cl} > \mathrm{F} > \mathrm{O} > \mathrm{N} > \mathrm{C} > \mathrm{H}$
+
+2. **If the first atoms are the same, look at the next atoms in the chain** until a difference is found. Treat multiple bonds as if the atom is bonded to an equivalent number of the same atom by single bonds.
+
+3. **Orient the molecule** so the lowest priority group (usually H) points away from you. Trace 1 $\to$ 2 $\to$ 3:
+   - Clockwise = $R$ (Rectus)
+   - Anticlockwise = $S$ (Sinister)
+
+**Worked Example:** Assign $R$/$S$ to lactic acid: $\mathrm{CH}_3-\mathrm{CH}(\mathrm{OH})-\mathrm{COOH}$.
+
+The chiral centre is C-2, bonded to: $\mathrm{CH}_3$, $\mathrm{OH}$, $\mathrm{COOH}$, $\mathrm{H}$.
+
+Priority order: $\mathrm{OH}$ (O bonded to H) > $\mathrm{COOH}$ (C bonded to O,O) > $\mathrm{CH}_3$ (C bonded to H,H,H) > $\mathrm{H}$.
+
+With H pointing away: 1($\mathrm{OH}$) $\to$ 2($\mathrm{COOH}$) $\to$ 3($\mathrm{CH}_3$) is clockwise.
+
+Lactic acid is **$(S)$-lactic acid** (L-(+)-lactic acid).
+
+### Reaction Classification: Complete Reference
+
+| Reaction type | Bond change | Typical reagents | Example |
+|---|---|---|---|
+| **Nucleophilic substitution** (SN1/SN2) | One group replaced by a nucleophile | $\mathrm{OH}^-$, $\mathrm{CN}^-$, $\mathrm{NH}_3$ | Halogenoalkane $\to$ alcohol |
+| **Electrophilic addition** | Two groups add across C=C or C$\equiv$C | $\mathrm{HBr}$, $\mathrm{Br}_2$, $\mathrm{H}_2\mathrm{SO}_4$ | Alkene $\to$ dibromoalkane |
+| **Electrophilic substitution** | Electrophile replaces H on aromatic ring | $\mathrm{Br}^+$, $\mathrm{NO}_2^+$, $\mathrm{CH}_3\mathrm{CO}^+$ | Benzene $\to$ bromobenzene |
+| **Elimination** (E1/E2) | Loss of small molecule to form C=C | Base in ethanol, $\Delta$ | Halogenoalkane $\to$ alkene |
+| **Nucleophilic addition** | Nucleophile adds to C=O | $\mathrm{NaBH}_4$, $\mathrm{LiAlH}_4$, $\mathrm{HCN}$ | Aldehyde $\to$ alcohol |
+| **Nucleophilic addition-elimination** | Addition to C=O followed by loss | $\mathrm{NH}_3$, $\mathrm{H}_2\mathrm{O}$, alcohols | Acyl chloride $\to$ amide |
+| **Oxidation** | Increase in O:C ratio or loss of H | $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7/\mathrm{H}^+$, acidified $\mathrm{KMnO}_4$ | Primary alcohol $\to$ aldehyde $\to$ acid |
+| **Reduction** | Decrease in O:C ratio or gain of H | $\mathrm{NaBH}_4$, $\mathrm{LiAlH}_4$, $\mathrm{H}_2$/Ni | Aldehyde $\to$ primary alcohol |
+| **Hydrolysis** | Reaction with water (often base/acid-catalysed) | $\mathrm{NaOH}(\mathrm{aq})$, $\mathrm{H}^+(\mathrm{aq})$ | Ester $\to$ acid + alcohol |
+| **Condensation** | Two molecules join with loss of small molecule | Concentrated $\mathrm{H}_2\mathrm{SO}_4$, $\Delta$ | Alcohol + acid $\to$ ester + $\mathrm{H}_2\mathrm{O}$ |
+| **Free radical substitution** | Atom replaced via radical chain | $\mathrm{Cl}_2/h\nu$, $\mathrm{Br}_2/h\nu$ | Alkane $\to$ haloalkane |
+| **Free radical addition** | Radicals add across C=C | $\mathrm{HF}$, peroxides, $\Delta$ | Anti-Markovnikov alkene addition |
+
+### Structural Isomerism: Complete Classification
+
+**Chain isomerism:** Different carbon skeleton.
+- $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3$ (butane) vs $\mathrm{CH}(\mathrm{CH}_3)_3$ (2-methylpropane)
+
+**Positional isomerism:** Same functional group, different position on the chain.
+- $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH}$ (propan-1-ol) vs $\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$ (propan-2-ol)
+
+**Functional group isomerism:** Different functional groups, same molecular formula.
+- $\mathrm{C}_2\mathrm{H}_6\mathrm{O}$: ethanol ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$) vs methoxymethane ($\mathrm{CH}_3\mathrm{OCH}_3$)
+- $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$: propanal vs propanone (acetone) vs methyl ethanoate vs prop-2-en-1-ol
+
+**Metamerism** (less common): Same functional group but different alkyl groups on either side.
+- $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OCH}_2\mathrm{CH}_3$ (diethyl ether) vs $\mathrm{CH}_3\mathrm{OCH}_2\mathrm{CH}_2\mathrm{CH}_3$ (methyl propyl ether)
+
+### Stereoisomerism: Complete Classification
+
+**Geometric (cis-trans / E-Z) isomerism:**
+- Requires restricted rotation (C=C double bond or cyclic structure)
+- Each carbon of the double bond must have two different groups
+- E (entgegen): highest priority groups on opposite sides
+- Z (zusammen): highest priority groups on same side
+
+**Optical isomerism:**
+- Requires a chiral centre (carbon bonded to four different groups)
+- Non-superimposable mirror images (enantiomers)
+- Same physical properties except for rotation of plane-polarised light and reactions with other chiral molecules
+
+### Curly Arrow Conventions: Full Reference
+
+1. **Curly arrows show the movement of electron pairs.** A full-headed arrow ($\curvearrowright$) shows movement of a pair of electrons. A half-headed arrow ($\hookrightarrow$) shows movement of a single electron (used in radical mechanisms).
+
+2. **Arrows always start from a source of electrons:** a lone pair, a $\pi$ bond, or a $\sigma$ bond.
+
+3. **Arrows always point to where the electrons are going:** to an atom (forming a new bond or lone pair) or to the middle of a bond (breaking it).
+
+4. **Nucleophilic attack:** Arrow starts from the nucleophile's lone pair and points to the electrophilic atom.
+
+5. **Electrophilic attack:** Arrow starts from the $\pi$ bond and points to the electrophile.
+
+6. **Bond breaking (heterolytic):** Arrow from the middle of the bond to the more electronegative atom (which takes both electrons).
+
+7. **Bond breaking (homolytic):** Two half-headed arrows, one from the bond to each atom.
+
+### Common Pitfalls
+
+1. **Confusing nucleophiles and electrophiles:** A nucleophile is electron-rich (lone pair or negative charge) and attacks electron-deficient centres. An electrophile is electron-deficient (positive charge, partial positive, or empty orbital) and accepts electrons.
+
+2. **Drawing curly arrows incorrectly:** Arrows must start from electron sources and point to electron sinks. Common errors include drawing arrows from atoms without lone pairs, or arrows that point to nothing.
+
+3. **Identifying chiral centres:** A carbon bonded to four different groups is chiral. "Different groups" means structurally different, not just different positions. $\mathrm{CH}_2\mathrm{ClCH}_2\mathrm{CH}_2\mathrm{Cl}$ is not chiral because the two $\mathrm{CH}_2\mathrm{Cl}$ groups are identical.
+
+4. **Nomenclature: functional group vs substituent:** The principal functional group determines the suffix. All other functional groups are named as prefixes. Students often use the wrong suffix or forget to include all substituents.
+
+5. **E/Z vs cis/trans:** Use E/Z for all cases. Use cis/trans only for simple cases with two identical substituents (e.g. cis-but-2-ene, trans-but-2-ene). When substituents are different, only E/Z is unambiguous.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Identify the chiral centres in the following molecules and state the total number of stereoisomers for each:
+
+(a) 2,3-dibromobutane
+(b) 2,3-dibromopentane
+
+**Mark Scheme:**
+
+(a) 2,3-dibromobutane: $\mathrm{CH}_3-\mathrm{CH}(\mathrm{Br})-\mathrm{CH}(\mathrm{Br})-\mathrm{CH}_3$. Both C-2 and C-3 are chiral centres (each bonded to $\mathrm{CH}_3$, $\mathrm{H}$, $\mathrm{Br}$, and $\mathrm{CH}(\mathrm{Br})\mathrm{CH}_3$) (1 mark for each chiral centre, 2 marks total).
+
+Maximum number of stereoisomers $= 2^n = 2^2 = 4$. However, there is a meso compound (the $RS$ isomer has a plane of symmetry), so there are **3 stereoisomers** ($RR$, $SS$, and $RS$ meso) (1 mark).
+
+(b) 2,3-dibromopentane: $\mathrm{CH}_3-\mathrm{CH}_2-\mathrm{CH}(\mathrm{Br})-\mathrm{CH}(\mathrm{Br})-\mathrm{CH}_3$. Both C-2 and C-3 are chiral centres (each bonded to four different groups: C-2 is bonded to $\mathrm{CH}_3$, $\mathrm{H}$, $\mathrm{Br}$, $\mathrm{CH}(\mathrm{Br})\mathrm{CH}_2\mathrm{CH}_3$) (1 mark).
+
+No meso compound is possible (the two halves of the molecule are different: C-1 is $\mathrm{CH}_3$ but C-5 is $\mathrm{CH}_3$ on one side vs $\mathrm{CH}_2\mathrm{CH}_3$ on the other). Total stereoisomers $= 2^2 = 4$ ($RR$, $SS$, $RS$, $SR$) (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+For the reaction $\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}\mathrm{CH}_3 + \mathrm{Br}_2 \to \mathrm{CH}_3\mathrm{CHBrCHBrCH}_3$:
+
+(a) Draw the mechanism using curly arrows. (3 marks)
+(b) State the stereochemistry of the products. (3 marks)
+
+**Mark Scheme:**
+
+(a) Mechanism (3 marks):
+- The $\pi$ electrons of the C=C attack one Br atom in $\mathrm{Br}_2$, forming a C--Br bond and heterolytically cleaving the Br--Br bond (the arrow goes from the $\pi$ bond to one Br, and another arrow goes from the Br--Br bond to the other Br, forming $\mathrm{Br}^-$) (2 marks).
+- The $\mathrm{Br}^-$ ion then attacks the carbocation from the opposite side (back-side attack), forming the second C--Br bond (1 mark).
+
+(b) The product has **two new chiral centres** (C-2 and C-3), each of which can be $R$ or $S$ (1 mark). The anti addition (bromine adds from opposite faces of the double bond) gives the **$RS$** and **$SR$** diastereomers as the products (2 marks). These are enantiomers of each other, forming a racemic mixture. (The $RR$ and $SS$ diastereomers are NOT formed because they would require syn addition.)
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+Classify and explain the type of isomerism shown by each pair:
+
+(a) $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$ and $\mathrm{CH}_3\mathrm{COCH}_3$
+(b) $(R)$-2-chlorobutane and $(S)$-2-chlorobutane
+(c) $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Cl}$ and $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHClCH}_3$
+(d) $\mathrm{CH}_3\mathrm{CH}=\mathrm{CHCH}_3$ (cis) and $\mathrm{CH}_3\mathrm{CH}=\mathrm{CHCH}_3$ (trans)
+
+**Mark Scheme:**
+
+(a) **Functional group isomerism** (1 mark). Both have formula $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ but propanal has an aldehyde group and propanone has a ketone group. Different functional groups, same molecular formula (1 mark).
+
+(b) **Optical isomerism** (1 mark). They are non-superimposable mirror images (enantiomers) with the same molecular formula and structural formula but different spatial arrangements at the chiral centre (C-2) (1 mark).
+
+(c) **Positional isomerism** (1 mark). Both are chlorobutanes ($\mathrm{C}_4\mathrm{H}_9\mathrm{Cl}$) with the Cl at different positions on the carbon chain (1 mark).
+
+(d) **Geometric (E/Z) isomerism** (1 mark). Restricted rotation around the C=C double bond gives two different spatial arrangements. The cis isomer has both $\mathrm{CH}_3$ groups on the same side; the trans isomer has them on opposite sides (1 mark).
+
+</details>
+
 ---
 
 :::tip

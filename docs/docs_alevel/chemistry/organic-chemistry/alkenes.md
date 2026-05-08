@@ -455,6 +455,270 @@ Check: $\mathrm{C}_6\mathrm{H}_{12}$ has one degree of unsaturation (one C=C bon
 
 </details>
 
+## Worked Examples: Electrophilic Addition in Detail
+
+### Example 1: Addition of HBr to 3-methylpent-2-ene
+
+**Reaction:** $(\mathrm{CH}_3)_2\mathrm{C}=\mathrm{CHCH}_2\mathrm{CH}_3 + \mathrm{HBr}$
+
+**Step 1 (rate-determining):** The $\pi$ electrons attack $\delta^+\mathrm{H}$ of HBr. Markovnikov addition: H adds to the less substituted carbon.
+
+The less substituted carbon is $\mathrm{CH}$ (bonded to one methyl and one $\mathrm{CH}_2\mathrm{CH}_3$ group). The more substituted carbon is $\mathrm{C}(\mathrm{CH}_3)_2$ (bonded to two methyl groups). H adds to the $\mathrm{CH}$ carbon.
+
+Carbocation formed: $(\mathrm{CH}_3)_2\overset{+}{\mathrm{C}}\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3$ (tertiary carbocation).
+
+**Step 2 (fast):** $\mathrm{Br}^-$ attacks the tertiary carbocation.
+
+**Product:** 3-bromo-3-methylpentane: $(\mathrm{CH}_3)_2\mathrm{CBrCH}_2\mathrm{CH}_2\mathrm{CH}_3$
+
+### Example 2: Stereochemistry of Bromine Addition to Cyclohexene
+
+**Reaction:** $\mathrm{C}_6\mathrm{H}_{10}$ (cyclohexene) $+ \mathrm{Br}_2 \to$ trans-1,2-dibromocyclohexane
+
+**Mechanism:**
+
+Step 1: The $\pi$ electrons of cyclohexene attack one bromine atom of $\mathrm{Br}_2$, forming a bromonium ion intermediate. The bromonium ion is a three-membered ring with a positive charge distributed over the bromine and both carbons.
+
+Step 2: $\mathrm{Br}^-$ attacks the bromonium ion from the **opposite side** (anti addition) at either carbon of the three-membered ring.
+
+**Product:** The two bromine atoms end up on opposite faces of the ring (trans configuration). The product is a racemic mixture of $(1R,2R)$-1,2-dibromocyclohexane and $(1S,2S)$-1,2-dibromocyclohexane.
+
+### Example 3: Hydration of Propene to Propan-2-ol
+
+**Direct hydration:**
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H}_2\mathrm{O} \xrightarrow{\mathrm{H}_3\mathrm{PO}_4,\,300^\circ\mathrm{C},\,60\,\mathrm{atm}} \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$$
+
+Markovnikov addition: H adds to the less substituted carbon (terminal carbon with more H), giving the secondary alcohol propan-2-ol.
+
+**Acid-catalysed mechanism:**
+
+1. Protonation of the alkene by $\mathrm{H}_3\mathrm{O}^+$ to form the more stable secondary carbocation.
+2. Nucleophilic attack by water on the carbocation.
+3. Deprotonation to yield propan-2-ol.
+
+### Example 4: Oxidative Cleavage of an Unknown Alkene
+
+An unknown alkene $\mathrm{C}_7\mathrm{H}_{12}$ is treated with hot, concentrated $\mathrm{KMnO}_4$. The products are pentanoic acid and ethanoic acid. Identify the alkene.
+
+**Analysis:** Oxidative cleavage of the C=C bond converts each carbon to its highest oxidation state. The products tell us what was on each side of the double bond:
+
+- Pentanoic acid ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH}$) comes from the fragment $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}=$.
+- Ethanoic acid ($\mathrm{CH}_3\mathrm{COOH}$) comes from the fragment $=\mathrm{CHCH}_3$.
+
+Reconstructing: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}=\mathrm{CHCH}_3$
+
+**Identity:** Hept-2-ene ($\mathrm{C}_7\mathrm{H}_{14}$... wait, check). $\mathrm{C}_7\mathrm{H}_{12}$ has $\text{DoU} = \frac{2(7) + 2 - 12}{2} = 1$. Hept-2-ene is $\mathrm{C}_7\mathrm{H}_{14}$ with $\text{DoU} = 1$.
+
+The formula must be $\mathrm{C}_7\mathrm{H}_{14}$, not $\mathrm{C}_7\mathrm{H}_{12}$. If the problem states $\mathrm{C}_7\mathrm{H}_{12}$, the molecule has an additional degree of unsaturation (a ring or a second double bond). In this case, the product analysis is still valid, and the structure would be hept-2-ene (the given formula may contain a typo; in an exam, use the product information to deduce the structure).
+
+### Example 5: E/Z Assignment with CIP Rules
+
+Assign $E$ or $Z$ to 1-bromo-2-chloropropene: $\mathrm{BrCH}=\mathrm{C}(\mathrm{Cl})\mathrm{CH}_3$.
+
+**Left carbon of the double bond:** substituents are $\mathrm{Br}$ and $\mathrm{H}$.
+
+Priority: $\mathrm{Br}$ (atomic number 35) $>$ $\mathrm{H}$ (atomic number 1). Higher priority: $\mathrm{Br}$.
+
+**Right carbon:** substituents are $\mathrm{Cl}$ and $\mathrm{CH}_3$.
+
+Priority: $\mathrm{Cl}$ (atomic number 17) $>$ $\mathrm{C}$ (atomic number 6). Higher priority: $\mathrm{Cl}$.
+
+If $\mathrm{Br}$ and $\mathrm{Cl}$ are on the **same side**: $Z$. If on **opposite sides**: $E$.
+
+### Example 6: Anti-Markovnikov Addition via Peroxide Effect
+
+**Reaction:** Propene + HBr (with organic peroxides) $\to$ 1-bromopropane
+
+**Mechanism (free radical):**
+
+Initiation: Peroxide bond homolysis:
+
+$$\mathrm{ROOR} \xrightarrow{\Delta} 2\mathrm{RO}\cdot$$
+
+Propagation 1: The radical adds to the **less substituted** carbon (to form the more stable secondary radical):
+
+$$\mathrm{RO}\cdot + \mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 \to \mathrm{ROCH}_2\mathrm{CH}\cdot\mathrm{CH}_3$$
+
+Wait -- the $\mathrm{RO}\cdot$ radical is not the chain carrier for HBr addition. The correct mechanism involves the bromine radical:
+
+$$\mathrm{RO}\cdot + \mathrm{HBr} \to \mathrm{ROH} + \mathrm{Br}\cdot$$
+
+$$\mathrm{Br}\cdot + \mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 \to \mathrm{CH}_3\mathrm{CH}\cdot\mathrm{CH}_2\mathrm{Br}$$
+
+The bromine radical adds to the **less substituted** carbon to form the more stable secondary radical (on C2).
+
+Propagation 2:
+
+$$\mathrm{CH}_3\mathrm{CH}\cdot\mathrm{CH}_2\mathrm{Br} + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br} + \mathrm{Br}\cdot$$
+
+**Product:** 1-bromopropane (anti-Markovnikov).
+
+**Important:** The peroxide effect only works with HBr, not HCl or HI. HCl has a bond that is too strong for radical homolysis, and HI reacts so readily via ionic addition that the radical pathway cannot compete.
+
+### Example 7: Polymer Identification from Monomer
+
+**Monomer:** $\mathrm{CH}_2=\mathrm{CHCl}$ (chloroethene/vinyl chloride)
+
+**Polymer:** Poly(chloroethene) / PVC
+
+$$n\,\mathrm{CH}_2=\mathrm{CHCl} \to \mathrm{--}(\mathrm{CH}_2\mathrm{CHCl})_n\mathrm{--}$$
+
+**Properties:** Rigid, flame-retardant (due to chlorine content), used for pipes and window frames. Addition of plasticisers makes flexible PVC for cable insulation and flooring.
+
+**Environmental concern:** PVC disposal by incineration produces $\mathrm{HCl}$ gas and potentially toxic dioxins. Recycling is preferred.
+
+## Practical Techniques for Alkene Reactions
+
+### Required Practical: Testing for Unsaturaton (AQA RP 6)
+
+**Objective:** To use bromine water to distinguish between an alkane and an alkene.
+
+**Procedure:**
+1. Add $2\,\mathrm{cm}^3$ of cyclohexane to one test tube and $2\,\mathrm{cm}^3$ of cyclohexene to another.
+2. Add bromine water (orange-brown) dropwise to each tube, shaking after each addition.
+3. Record the number of drops required for the bromine colour to persist.
+
+**Expected results:**
+- Cyclohexane: bromine colour persists (no reaction at room temperature).
+- Cyclohexene: bromine colour is immediately decolourised (electrophilic addition).
+
+**Safety:** Bromine water is toxic and corrosive. Wear gloves and eye protection. Work in a fume cupboard.
+
+### Preparation and Purification of an Organic Liquid (Distillation)
+
+After an addition reaction, the product may need to be purified by distillation:
+
+1. Set up a simple distillation apparatus with a round-bottom flask, fractionating column (or Liebig condenser for simple distillation), thermometer, condenser, and receiving flask.
+2. Add anti-bumping granules to the flask.
+3. Heat gently and collect the fraction that distils at the expected boiling point of the product.
+4. For alkenes produced by elimination, the product can be passed through a drying tube (containing $\mathrm{CaCl}_2$) to remove water vapour before collection.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Explain, with reference to the mechanism, why the reaction of propene with HBr produces 2-bromopropane as the major product.
+
+**Mark Scheme:**
+
+5 marks:
+- The mechanism is electrophilic addition (1 mark).
+- The $\pi$ electrons of the C=C bond attack the $\delta^+$ hydrogen of HBr (1 mark).
+- The H adds to the less substituted carbon (terminal carbon), forming a secondary carbocation (1 mark).
+- The secondary carbocation is more stable than the alternative primary carbocation due to inductive electron donation from the methyl group and hyperconjugation (1 mark).
+- $\mathrm{Br}^-$ attacks the secondary carbocation to give 2-bromopropane (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+Describe the mechanism for the reaction between cyclohexene and bromine. Explain why the product has a trans configuration.
+
+**Mark Scheme:**
+
+6 marks:
+- The $\pi$ electrons of cyclohexene attack one bromine atom of $\mathrm{Br}_2$ (1 mark).
+- The Br--Br bond breaks heterolytically, forming a bromonium ion intermediate (three-membered ring with Br) (1 mark).
+- The bromonium ion prevents free rotation, and the second $\mathrm{Br}^-$ attacks from the opposite side of the ring (anti addition) (1 mark).
+- This results in the two bromine atoms being on opposite faces (trans) of the cyclohexane ring (1 mark).
+- The product is a racemic mixture of $(1R,2R)$- and $(1S,2S)$-1,2-dibromocyclohexane (1 mark).
+- Diagram showing the bromonium ion intermediate and curly arrows (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+State two chemical tests that could be used to distinguish between cyclohexane and cyclohexene. For each test, state the reagent, the observation with cyclohexane, and the observation with cyclohexene.
+
+**Mark Scheme:**
+
+4 marks (2 marks per test, 1 mark for reagent and conditions, 1 mark for observations):
+
+Test 1: Bromine water. Cyclohexane: no reaction, orange colour persists. Cyclohexene: orange colour decolourised (2 marks).
+
+Test 2: Acidified $\mathrm{KMnO}_4$. Cyclohexane: no reaction, purple colour persists. Cyclohexene: purple colour decolourised, colourless $\mathrm{Mn}^{2+}$ formed (2 marks).
+
+</details>
+
+<details>
+<summary>Q4 (5 marks)</summary>
+
+An alkene $\mathrm{C}_5\mathrm{H}_{10}$ is treated with hot, concentrated $\mathrm{KMnO}_4$. The products are propanoic acid and ethanoic acid. Deduce the structure of the alkene.
+
+**Mark Scheme:**
+
+5 marks:
+- Oxidative cleavage converts each carbon of the double bond to a carboxylic acid (1 mark).
+- Propanoic acid ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$) indicates the fragment $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}=$ on one side (1 mark).
+- Ethanoic acid ($\mathrm{CH}_3\mathrm{COOH}$) indicates the fragment $=\mathrm{CHCH}_3$ on the other side (1 mark).
+- Combining: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}=\mathrm{CHCH}_3$ (pent-2-ene) (1 mark).
+- Verification: $\mathrm{C}_5\mathrm{H}_{10}$, one degree of unsaturation, consistent with one C=C bond (1 mark).
+
+</details>
+
+<details>
+<summary>Q5 (4 marks)</summary>
+
+Explain why the addition polymerisation of ethene requires an initiator, whereas the addition of bromine to ethene does not.
+
+**Mark Scheme:**
+
+4 marks:
+- Addition polymerisation involves free radical initiation (1 mark). The C=C bond in ethene has a high bond enthalpy and will not spontaneously open; an initiator (e.g. organic peroxide or oxygen under high pressure) generates free radicals that attack the C=C bond (1 mark).
+- Bromine addition is an electrophilic addition (1 mark). The $\mathrm{Br}_2$ molecule is polarised by the $\pi$ electrons of ethene ($\mathrm{Br}^{\delta+}\text{-}\mathrm{Br}^{\delta-}$), and the electrophilic $\mathrm{Br}^{\delta+}$ is attacked directly by the nucleophilic $\pi$ bond without any initiator (1 mark).
+
+</details>
+
+## Multi-Step Synthesis Planning with Alkenes
+
+Alkenes serve as key starting materials in multi-step synthesis because they can be transformed into a wide range of functional groups.
+
+### Synthesis Planning Example
+
+**Target:** 2-hydroxypropanoic acid (lactic acid) from propene.
+
+Step 1: Anti-Markovnikov addition of HBr (peroxide effect):
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \xrightarrow{\text{peroxides}} \mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3$$
+
+Step 2: Hydrolysis to propan-1-ol:
+
+$$\mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{NaOH}(aq) \to \mathrm{HOCH}_2\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{NaBr}$$
+
+Step 3: Oxidation to propanal (distillation conditions):
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} \xrightarrow{[\mathrm{O}],\,\text{distillation}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$$
+
+Step 4: Cyanohydrin formation:
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} + \mathrm{HCN} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN}$$
+
+Step 5: Acid hydrolysis of the nitrile:
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN} + 2\mathrm{H}_2\mathrm{O} + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH} + \mathrm{NH}_4^+$$
+
+This gives 2-hydroxybutanoic acid. For lactic acid specifically, a different approach:
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 \xrightarrow{\mathrm{HBr}/\text{peroxides}} \mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3$$
+
+Actually, lactic acid is 2-hydroxypropanoic acid ($\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{COOH}$). A more direct route from propene:
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 \xrightarrow{\mathrm{H}_2\mathrm{O}/\mathrm{H}^+} \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3 \xrightarrow{[\mathrm{O}]} \mathrm{CH}_3\mathrm{COCH}_3$$
+
+Since direct oxidation of propan-2-ol gives propanone (ketone, not further oxidised), we need a different approach. The most efficient route is:
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 \xrightarrow{\mathrm{H}_2\mathrm{O}/\mathrm{H}^+} \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$$
+
+Then use the cyanohydrin route on ethanal (derived from ethanol oxidation):
+
+$$\mathrm{CH}_3\mathrm{CHO} + \mathrm{HCN} \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CN} \xrightarrow{\mathrm{H}_3\mathrm{O}^+} \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{COOH}$$
+
+This demonstrates the importance of choosing the correct disconnection strategy in retrosynthesis.
+
 ---
 
 :::tip

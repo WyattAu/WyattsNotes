@@ -527,6 +527,222 @@ Data: $\mathrm{IE}_1(\mathrm{N}) = 1402\,\mathrm{kJ/mol}$, $\mathrm{IE}_1(\mathr
 
 </details>
 
+## Advanced Ionisation Energy Problems
+
+<details>
+<summary>Problem 7</summary>
+
+The successive ionisation energies of element X are shown below:
+
+| $n$ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| IE ($\mathrm{kJ/mol}$) | 578 | 1817 | 2745 | 11578 | 14842 | 18377 | 23327 | 27466 | 31862 | 37216 | 42640 |
+
+(a) In which group of the periodic table is element X? (1 mark)
+
+(b) Identify element X. (1 mark)
+
+(c) Explain the large jump between the third and fourth ionisation energies. (2 marks)
+
+(d) Predict the formula of the oxide formed by element X. (1 mark)
+
+**Solution:**
+
+(a) Group 13. The large jump between the 3rd and 4th ionisation energies indicates that the first three electrons are in the outer shell (valence electrons), and the 4th electron is removed from an inner shell.
+
+(b) Aluminium ($\mathrm{Al}$, $Z = 13$). The first ionisation energy (578 kJ/mol) matches the known value for aluminium.
+
+(c) The first three electrons are removed from the $n = 3$ shell ($3s^2 3p^1$). The fourth electron must be removed from the $n = 2$ shell ($2p^6$), which is much closer to the nucleus and more strongly held. The large increase in ionisation energy reflects the transition from valence to core electrons (1 mark for identifying the shell transition, 1 mark for explaining that inner shell electrons experience less shielding and are closer to the nucleus).
+
+(d) $\mathrm{Al}_2\mathrm{O}_3$. Aluminium is in Group 13 and forms a $3+$ ion. Oxygen forms a $2-$ ion. The formula requires charge balance: $2 \times 3+ = 3 \times 2-$, giving $\mathrm{Al}_2\mathrm{O}_3$.
+
+</details>
+
+<details>
+<summary>Problem 8</summary>
+
+A mass spectrum of an organic compound shows the following peaks:
+
+- $m/z = 92$ (M+, 100% relative intensity)
+- $m/z = 93$ (M+1, 7.7% relative intensity)
+- $m/z = 94$ (M+2, 0.3% relative intensity)
+- $m/z = 65$ (base fragment)
+- $m/z = 91$ (major fragment, tropylium ion)
+
+(a) Determine the molecular formula. (3 marks)
+
+(b) Suggest the identity of the compound. (1 mark)
+
+(c) Explain the origin of the peak at $m/z = 91$. (2 marks)
+
+**Solution:**
+
+(a) M+1 = 7.7% suggests approximately $7.7/1.1 = 7$ carbon atoms. $7 \times 12 = 84$. Remaining mass = $92 - 84 = 8$, which corresponds to 8 hydrogen atoms. The molecular formula is $\mathrm{C}_7\mathrm{H}_8$. Verification: $\text{DoU} = \frac{2(7) + 2 - 8}{2} = 4$. This is consistent with a benzene ring (4 degrees of unsaturation: one ring + three double bonds in the aromatic system).
+
+M+2 = 0.3% is consistent with two $^{13}\mathrm{C}$ atoms: $C(7,2) \times (0.011)^2 = 21 \times 0.000121 = 0.25\%$, close to the observed value.
+
+(b) $\mathrm{C}_7\mathrm{H}_8$ is consistent with **toluene** ($\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3$).
+
+(c) The peak at $m/z = 91$ corresponds to the tropylium ion ($\mathrm{C}_7\mathrm{H}_7^+$), formed by loss of one hydrogen atom from the methyl group followed by ring expansion of the resulting benzyl cation. The tropylium ion has a cyclic, aromatic structure ($\mathrm{C}_7\mathrm{H}_7^+$, $6\,\pi$ electrons satisfying Huckel's rule) that makes it exceptionally stable, explaining its high intensity in the mass spectrum.
+
+</details>
+
+## Electron Configuration and Periodicity in Detail
+
+### Shielding and Penetration Effects
+
+Not all electrons in the same principal shell shield equally. The $s$ orbital penetrates closer to the nucleus than the $p$ orbital, and $p$ penetrates closer than $d$. This means:
+
+- $s$ electrons experience less shielding (higher $Z_\mathrm{eff}$) than $p$ electrons in the same shell.
+- The $4s$ orbital is lower in energy than $3d$ for $Z \le 20$ because the $4s$ electron penetrates through the inner shell electron cloud more effectively.
+- For $Z > 20$, the increasing nuclear charge pulls the $3d$ electrons closer, and $3d$ drops below $4s$ in energy.
+
+### Effective Nuclear Charge Calculations for Period 3
+
+| Element | $Z$ | Configuration | $\sigma$ | $Z_\mathrm{eff}$ (valence) |
+|---|---|---|---|---|
+| Na | 11 | $[\mathrm{Ne}]3s^1$ | $10 \times 0.85 = 8.5$ | $11 - 8.5 = 2.5$ |
+| Mg | 12 | $[\mathrm{Ne}]3s^2$ | $1 \times 0.35 + 10 \times 0.85 = 8.85$ | $12 - 8.85 = 3.15$ |
+| Al | 13 | $[\mathrm{Ne}]3s^2 3p^1$ | $2 \times 0.35 + 10 \times 0.85 = 9.20$ | $13 - 9.20 = 3.80$ |
+| Si | 14 | $[\mathrm{Ne}]3s^2 3p^2$ | $3 \times 0.35 + 10 \times 0.85 = 9.55$ | $14 - 9.55 = 4.45$ |
+| P | 15 | $[\mathrm{Ne}]3s^2 3p^3$ | $4 \times 0.35 + 10 \times 0.85 = 9.90$ | $15 - 9.90 = 5.10$ |
+| S | 16 | $[\mathrm{Ne}]3s^2 3p^4$ | $5 \times 0.35 + 10 \times 0.85 = 10.25$ | $16 - 10.25 = 5.75$ |
+| Cl | 17 | $[\mathrm{Ne}]3s^2 3p^5$ | $6 \times 0.35 + 10 \times 0.85 = 10.60$ | $17 - 10.60 = 6.40$ |
+| Ar | 18 | $[\mathrm{Ne}]3s^2 3p^6$ | $7 \times 0.35 + 10 \times 0.85 = 10.95$ | $18 - 10.95 = 7.05$ |
+
+The steady increase in $Z_\mathrm{eff}$ across the period explains the general increase in first ionisation energy.
+
+### Anomalous Trends: Quantitative Treatment
+
+The drop from Be to B:
+
+- $\mathrm{IE}_1(\mathrm{Be}) = 899\,\mathrm{kJ/mol}$ ($2s^2$, filled subshell)
+- $\mathrm{IE}_1(\mathrm{B}) = 801\,\mathrm{kJ/mol}$ ($2s^2 2p^1$)
+
+The $2p$ electron in boron is shielded by the two $2s$ electrons (which have the same $n$ value but different $\ell$). The $2s$ orbital penetrates more effectively than $2p$, so the $2s$ electrons are held more tightly and shield the $2p$ electron more effectively than $2p$ electrons shield each other. This reduces $Z_\mathrm{eff}$ for the $2p$ electron, making it easier to remove.
+
+The drop from N to P:
+
+- $\mathrm{IE}_1(\mathrm{N}) = 1402\,\mathrm{kJ/mol}$ ($2p^3$, half-filled)
+- $\mathrm{IE}_1(\mathrm{O}) = 1314\,\mathrm{kJ/mol}$ ($2p^4$)
+
+In nitrogen ($2p^3$), each $p$ orbital has one electron (Hund's rule). In oxygen ($2p^4$), one orbital must contain two paired electrons. The pairing energy (exchange energy lost + Coulombic repulsion between paired electrons) makes the fourth electron less tightly held.
+
+Exchange energy stabilisation for half-filled subshells: A half-filled $p^3$ configuration has three electrons with parallel spins. The number of exchange interactions is $\binom{3}{2} = 3$. For $p^4$, the number of parallel spin pairs is $\binom{3}{2} = 3$ (among the three unpaired electrons) plus the exchange between one of the unpaired electrons and the paired electron if spins are parallel. The net exchange stabilisation decreases slightly when the subshell goes from half-filled to more-than-half-filled.
+
+### Mass Spectrometry: Fragmentation Patterns
+
+Understanding fragmentation patterns is essential for identifying organic compounds from mass spectra.
+
+**Common fragmentation pathways:**
+
+| Fragment | $m/z$ | Origin |
+|---|---|---|
+| $\mathrm{CH}_3^+$ | 15 | Loss of alkyl group |
+| $\mathrm{OH}^+$ | 17 | Alcohols, carboxylic acids |
+| $\mathrm{C}_2\mathrm{H}_5^+$ | 29 | Ethyl group |
+| $\mathrm{CHO}^+$ | 29 | Aldehydes |
+| $\mathrm{CH}_3\mathrm{CO}^+$ | 43 | Methyl ketones |
+| $\mathrm{COOH}^+$ | 45 | Carboxylic acids |
+| $\mathrm{C}_6\mathrm{H}_5^+$ | 77 | Aromatic compounds |
+| $\mathrm{C}_7\mathrm{H}_7^+$ | 91 | Benzyl/tropylium ion |
+
+**Alpha cleavage:** The bond adjacent to the carbonyl group breaks, producing an acylium ion. For example, in propanone ($\mathrm{CH}_3\mathrm{COCH}_3$), alpha cleavage gives $\mathrm{CH}_3\mathrm{CO}^+$ at $m/z = 43$ (base peak) and $\mathrm{CH}_3^+$ at $m/z = 15$.
+
+**McLafferty rearrangement:** A hydrogen atom six atoms away from a carbonyl group transfers to the carbonyl oxygen, with simultaneous cleavage of the bond between the $\alpha$- and $\beta$-carbons. This produces an enol radical cation and a neutral alkene. For butanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO}$), McLafferty rearrangement gives $\mathrm{C}_2\mathrm{H}_4\mathrm{O}^{+\bullet}$ at $m/z = 44$.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (4 marks)</summary>
+
+Explain why the first ionisation energy of sodium is lower than that of magnesium, and why the first ionisation energy of aluminium is lower than that of magnesium.
+
+**Mark Scheme:**
+
+Na < Mg (2 marks): Both have electrons in the $3s$ subshell. Magnesium has a higher nuclear charge ($Z = 12$ vs $Z = 11$) with similar shielding, so the outer electrons are held more tightly, giving a higher ionisation energy (1 mark). The $3s^2$ configuration of Mg also has the added stability of a filled subshell (1 mark).
+
+Al < Mg (2 marks): The electron removed from Al is a $3p$ electron, which is higher in energy than the $3s$ electrons of Mg (1 mark). The $3p$ electron is further from the nucleus on average and is shielded by the $3s^2$ electrons, making it easier to remove (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (5 marks)</summary>
+
+The mass spectrum of a compound shows a molecular ion peak at $m/z = 78$ (100%) and a base peak at $m/z = 77$ (M-1). The M+1 peak at $m/z = 79$ has 6.7% relative intensity. A significant peak also appears at $m/z = 51$.
+
+(a) Suggest the molecular formula. (2 marks)
+
+(b) Identify the compound. (1 mark)
+
+(c) Explain the peak at $m/z = 77$. (1 mark)
+
+(d) Suggest the identity of the fragment at $m/z = 51$. (1 mark)
+
+**Mark Scheme:**
+
+(a) M+1 = 6.7% gives approximately $6.7/1.1 \approx 6$ carbon atoms (1 mark). $\mathrm{C}_6\mathrm{H}_6$: $M = 72 + 6 = 78$. Molecular formula: $\mathrm{C}_6\mathrm{H}_6$ (1 mark).
+
+(b) Benzene ($\mathrm{C}_6\mathrm{H}_6$) (1 mark).
+
+(c) The peak at $m/z = 77$ is $\mathrm{C}_6\mathrm{H}_5^+$ (phenyl cation), formed by loss of one hydrogen atom from the molecular ion (1 mark).
+
+(d) The peak at $m/z = 51$ is $\mathrm{C}_4\mathrm{H}_3^+$, formed by further fragmentation of the phenyl cation (loss of $\mathrm{C}_2\mathrm{H}_2$ from $\mathrm{C}_6\mathrm{H}_5^+$: $77 - 26 = 51$) (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (6 marks)</summary>
+
+Define the term first ionisation energy. The first five ionisation energies of an element are shown below:
+
+| $n$ | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| IE ($\mathrm{kJ/mol}$) | 738 | 1451 | 7733 | 10540 | 13630 |
+
+(a) Identify the element. (1 mark)
+
+(b) Explain why there is a large increase between the second and third ionisation energies. (2 marks)
+
+(c) Write the electron configuration of the ion formed after the second ionisation. (1 mark)
+
+(d) Explain why the ion in part (c) has a smaller ionic radius than the atom. (2 marks)
+
+**Mark Scheme:**
+
+(a) Magnesium ($\mathrm{Mg}$, $Z = 12$) (1 mark).
+
+(b) The first two electrons are removed from the $3s$ subshell (valence electrons) (1 mark). The third electron is removed from the $2p$ subshell (core electrons), which is closer to the nucleus and experiences less shielding, so much more energy is required (1 mark).
+
+(c) $\mathrm{Mg}^{2+}$: $1s^2 2s^2 2p^6$ or $[\mathrm{Ne}]$ (1 mark).
+
+(d) When electrons are removed, the remaining electrons experience less electron-electron repulsion and are pulled closer to the nucleus by the unchanged nuclear charge (1 mark). The increased effective nuclear charge per electron reduces the ionic radius (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (5 marks)</summary>
+
+High-resolution mass spectrometry gives the molecular ion peak of a compound at $m/z = 60.0575$. Two possible molecular formulas are $\mathrm{C}_3\mathrm{H}_8\mathrm{O}$ and $\mathrm{C}_2\mathrm{H}_4\mathrm{O}_2$.
+
+(a) Calculate the exact mass of each formula. (2 marks)
+
+(b) Identify the correct formula. (1 mark)
+
+(c) The compound gives a positive iodoform test. Suggest the identity of the compound. (2 marks)
+
+**Mark Scheme:**
+
+(a) $\mathrm{C}_3\mathrm{H}_8\mathrm{O}$: $3(12.0000) + 8(1.0078) + 15.9949 = 36.0000 + 8.0625 + 15.9949 = 60.0574$ (1 mark).
+
+$\mathrm{C}_2\mathrm{H}_4\mathrm{O}_2$: $2(12.0000) + 4(1.0078) + 2(15.9949) = 24.0000 + 4.0313 + 31.9898 = 60.0211$ (1 mark).
+
+(b) The measured value ($60.0575$) matches $\mathrm{C}_3\mathrm{H}_8\mathrm{O}$ (60.0574) much more closely than $\mathrm{C}_2\mathrm{H}_4\mathrm{O}_2$ (60.0211). The correct formula is $\mathrm{C}_3\mathrm{H}_8\mathrm{O}$ (1 mark).
+
+(c) A positive iodoform test indicates a $\mathrm{CH}_3\mathrm{CO}-$ group. With the formula $\mathrm{C}_3\mathrm{H}_8\mathrm{O}$, the compound is **propan-2-ol** ($\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$). Under the iodoform test conditions, propan-2-ol is oxidised to propanone, which contains the $\mathrm{CH}_3\mathrm{CO}-$ group (1 mark for propan-2-ol, 1 mark for explanation).
+
+</details>
+
 ---
 
 :::tip

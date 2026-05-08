@@ -478,6 +478,301 @@ The aromatic diazonium ion is stabilised by resonance delocalisation of the posi
 
 </details>
 
+## Worked Examples: Amines in Depth
+
+### Example 1: Basicity Calculations
+
+**Calculate the pH of a $0.10\,\mathrm{mol\,dm^{-3}}$ solution of methylamine ($\mathrm{p}K_b = 3.37$).**
+
+$K_b = 10^{-3.37} = 4.27 \times 10^{-4}$
+
+The equilibrium: $\mathrm{CH}_3\mathrm{NH}_2 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{CH}_3\mathrm{NH}_3^+ + \mathrm{OH}^-$
+
+$$K_b = \frac{[\mathrm{CH}_3\mathrm{NH}_3^+][\mathrm{OH}^-]}{[\mathrm{CH}_3\mathrm{NH}_2]} = \frac{x^2}{0.10 - x} \approx \frac{x^2}{0.10}$$
+
+$$x = \sqrt{K_b \times 0.10} = \sqrt{4.27 \times 10^{-5}} = 6.54 \times 10^{-3}\,\mathrm{mol\,dm^{-3}}$$
+
+$$\mathrm{pOH} = -\log(6.54 \times 10^{-3}) = 2.18$$
+
+$$\mathrm{pH} = 14 - 2.18 = 11.82$$
+
+**Conclusion:** A $0.10\,\mathrm{mol\,dm^{-3}}$ solution of methylamine has a pH of 11.82, confirming it is a weak base (not fully dissociated).
+
+### Example 2: Multi-Step Synthesis of p-Nitroaniline from Benzene
+
+Step 1: Nitration of benzene:
+
+$$\mathrm{C}_6\mathrm{H}_6 \xrightarrow[\text{conc. }\mathrm{H}_2\mathrm{SO}_4]{\text{conc. }\mathrm{HNO}_3,\,50\text{--}60^\circ\mathrm{C}} \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2$$
+
+Step 2: Reduction of nitrobenzene to aniline:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 \xrightarrow{\mathrm{Sn}/\mathrm{HCl},\,\text{then }\mathrm{NaOH}} \mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2$$
+
+Step 3: Acetylation (protecting group) with ethanoyl chloride to give acetanilide:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2 + \mathrm{CH}_3\mathrm{COCl} \to \mathrm{C}_6\mathrm{H}_5\mathrm{NHCOCH}_3 + \mathrm{HCl}$$
+
+The acetanilide amide group is a weaker activator than the free amine and directs para, minimising di-nitration.
+
+Step 4: Nitration of acetanilide (para-directing, gives mainly p-nitroacetanilide):
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{NHCOCH}_3 \xrightarrow[\text{conc. }\mathrm{H}_2\mathrm{SO}_4]{\text{dilute }\mathrm{HNO}_3,\,\lt 5^\circ\mathrm{C}} 4\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{NHCOCH}_3$$
+
+Step 5: Hydrolysis of the amide protecting group:
+
+$$4\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{NHCOCH}_3 \xrightarrow{\mathrm{H}^+,\,\text{reflux}} 4\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{NH}_2 + \mathrm{CH}_3\mathrm{COOH}$$
+
+The product is 4-nitroaniline.
+
+### Example 3: Diazotisation and Coupling Mechanism
+
+**Formation of the azo dye from benzenediazonium chloride and 2-naphthol:**
+
+Step 1: Diazotisation (at $0$--$5^\circ\mathrm{C}$):
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2 + \mathrm{NaNO}_2 + 2\mathrm{HCl} \to \mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^- + \mathrm{NaCl} + 2\mathrm{H}_2\mathrm{O}$$
+
+Step 2: Coupling with 2-naphthol (in alkaline conditions):
+
+In alkaline solution, 2-naphthol is deprotonated to the naphthoxide ion, which is more nucleophilic at the position para to the $-\mathrm{O}^-$ group (position 1):
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{C}_{10}\mathrm{H}_7\mathrm{O}^- \to \mathrm{C}_6\mathrm{H}_5\mathrm{N}=\mathrm{NC}_{10}\mathrm{H}_6\mathrm{OH}$$
+
+The azo compound is intensely coloured (orange-red). The extended conjugation across the $-\mathrm{N}=\mathrm{N}-$ linkage and both aromatic systems shifts absorption into the visible region.
+
+**Mechanism of coupling:**
+1. The diazonium ion acts as an electrophile at the terminal nitrogen.
+2. The naphthoxide ion attacks the terminal nitrogen, forming a new N--N bond.
+3. Rearomatisation of the naphthalene ring restores aromaticity.
+4. Protonation gives the final azo compound.
+
+### Example 4: Distinguishing Amines by Solubility
+
+Three unlabelled bottles contain phenylamine, ethylamine, and triethylamine. How can they be distinguished?
+
+**Test 1: Solubility in water.**
+- Ethylamine: soluble (small aliphatic amine, forms hydrogen bonds with water).
+- Triethylamine: partially soluble (larger, less hydrogen bonding).
+- Phenylamine: nearly insoluble in water (only slightly soluble due to the hydrophobic benzene ring).
+
+**Test 2: Reaction with dilute HCl.**
+All three dissolve in dilute HCl to form ammonium salts. This does not distinguish them.
+
+**Test 3: Bromine water.**
+- Phenylamine: decolourises bromine water (activated ring, tribromophenol forms as white precipitate).
+- Ethylamine: no reaction with bromine water.
+- Triethylamine: no reaction with bromine water.
+
+**Test 4: Acidity of the conjugate acid.**
+- Measure the pH of the aqueous ammonium salt solutions.
+- Ethylammonium chloride: pH $\approx 6$ (weak conjugate acid of a moderately strong base).
+- Phenylammonium chloride: pH $\approx 4$ (stronger conjugate acid of a weaker base).
+
+### Example 5: Quantitative Analysis of an Amine
+
+**A sample of ethylamine ($2.00\,\mathrm{g}$) is dissolved in water and titrated with $0.500\,\mathrm{mol\,dm^{-3}}$ HCl. The endpoint is reached at $22.2\,\mathrm{cm}^3$. Calculate the percentage purity of the ethylamine.**
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{NH}_2 + \mathrm{HCl} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{NH}_3^+\mathrm{Cl}^-$$
+
+Moles of HCl used: $n = c \times V = 0.500 \times 0.0222 = 0.0111\,\mathrm{mol}$
+
+Moles of ethylamine (1:1 ratio): $0.0111\,\mathrm{mol}$
+
+Mass of pure ethylamine: $m = n \times M = 0.0111 \times 45.08 = 0.500\,\mathrm{g}$
+
+Percentage purity: $\frac{0.500}{2.00} \times 100 = 25.0\%$
+
+### Example 6: Synthesis via Diazonium Salt Substitutions
+
+**Target:** 4-iodobenzoic acid from benzene.
+
+Step 1: Nitration: $\mathrm{C}_6\mathrm{H}_6 \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4} \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2$
+
+Step 2: Reduction: $\mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 \xrightarrow{\mathrm{Sn}/\mathrm{HCl}} \mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2$
+
+Step 3: Diazotisation: $\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2 \xrightarrow{\mathrm{NaNO}_2/\mathrm{HCl},\,0\text{--}5^\circ\mathrm{C}} \mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^-$
+
+Step 4: Sandmeyer reaction with KI: $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{KI} \to \mathrm{C}_6\mathrm{H}_5\mathrm{I} + \mathrm{N}_2 + \mathrm{K}^+$
+
+Step 5: Nitration of iodobenzene (iodine is ortho/para directing but deactivating; need vigorous conditions):
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{I} \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4,\,\Delta} 4\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{I} \text{ (major)}$$
+
+Step 6: Oxidation of the methyl group... wait, there is no methyl group. We need the carboxylic acid directly.
+
+Alternative approach: Use the Sandmeyer reaction with $\mathrm{CuCN}$ to introduce the nitrile, then hydrolyse to the carboxylic acid.
+
+Step 4 (revised): Sandmeyer with CuCN: $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{CuCN} \to \mathrm{C}_6\mathrm{H}_5\mathrm{CN} + \mathrm{N}_2$
+
+Step 5: Hydrolysis of benzonitrile: $\mathrm{C}_6\mathrm{H}_5\mathrm{CN} + 2\mathrm{H}_2\mathrm{O} + \mathrm{H}^+ \xrightarrow{\text{reflux}} \mathrm{C}_6\mathrm{H}_5\mathrm{COOH} + \mathrm{NH}_4^+$
+
+Step 6: Iodination of benzoic acid: The $-\mathrm{COOH}$ group is meta-directing, so this gives 3-iodobenzoic acid, not the desired 4-isomer.
+
+Correct approach: Nitrate first, then reduce, then diazotise, then introduce iodine para to the nitro group, then convert the nitro group to carboxylic acid via the nitrile.
+
+The key lesson: the order of steps in multi-step aromatic synthesis is critical. Always plan the directing group strategy before beginning.
+
+### Example 7: Buffer Solution Containing an Amine
+
+**Calculate the pH of a buffer solution containing $0.100\,\mathrm{mol\,dm^{-3}}$ ethylamine and $0.150\,\mathrm{mol\,dm^{-3}}$ ethylammonium chloride. $\mathrm{p}K_b(\text{ethylamine}) = 3.37$.**
+
+First, convert to $\mathrm{p}K_a$:
+
+$$\mathrm{p}K_a + \mathrm{p}K_b = 14.00$$
+$$\mathrm{p}K_a = 14.00 - 3.37 = 10.63$$
+
+Using the Henderson-Hasselbalch equation:
+
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{base}]}{[\mathrm{acid}]} = 10.63 + \log\frac{0.100}{0.150} = 10.63 + \log(0.667) = 10.63 - 0.176 = 10.45$$
+
+The buffer has a pH of 10.45, which is within one unit of $\mathrm{p}K_a$ (10.63), so it is effective.
+
+## Practical Techniques for Amine Reactions
+
+### Required Practical: Preparation of a Pure Organic Solid (Azo Dye)
+
+**Objective:** To prepare an azo dye from benzenediazonium chloride and phenol.
+
+**Apparatus:** Ice bath, thermometer, beakers, measuring cylinders, glass rod, filter funnel, filter paper, oven.
+
+**Safety:** Diazonium salts are potentially explosive when dry. Keep them in solution. Wear eye protection. Phenol is toxic and corrosive. Work in a fume cupboard.
+
+**Procedure:**
+
+Part A -- Diazotisation:
+1. Dissolve $3.5\,\mathrm{g}$ of phenylamine in $20\,\mathrm{cm}^3$ of dilute HCl in a beaker. Cool in an ice bath to $0$--$5^\circ\mathrm{C}$.
+2. Prepare a solution of sodium nitrite ($2.5\,\mathrm{g}$ in $10\,\mathrm{cm}^3$ water). Cool in the ice bath.
+3. Slowly add the sodium nitrite solution to the phenylamine solution, maintaining the temperature below $5^\circ\mathrm{C}$ by adding ice if necessary.
+4. Stir for 5 minutes in the ice bath. The benzenediazonium chloride solution is now ready.
+
+Part B -- Coupling:
+5. Dissolve $3.0\,\mathrm{g}$ of phenol in $30\,\mathrm{cm}^3$ of $\mathrm{NaOH}(aq)$ in a separate beaker. Cool in the ice bath.
+6. Slowly pour the diazonium solution into the phenol solution, with stirring, keeping the temperature below $10^\circ\mathrm{C}$.
+7. An orange-red precipitate of the azo dye forms immediately.
+8. Filter under reduced pressure using a Buchner funnel.
+9. Wash the solid with cold water, then recrystallise from hot ethanol.
+10. Dry the crystals in an oven at $50^\circ\mathrm{C}$.
+
+**Purification by recrystallisation:** Dissolve the crude product in the minimum volume of hot ethanol. Filter hot to remove insoluble impurities. Cool slowly to allow crystals to form. Filter and dry.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (6 marks)</summary>
+
+Explain why phenylamine is a weaker base than ammonia. Refer to the structure of both molecules in your answer.
+
+**Mark Scheme:**
+
+6 marks:
+- Ammonia accepts a proton on the lone pair of the nitrogen atom (1 mark).
+- In phenylamine, the nitrogen lone pair is delocalised into the benzene ring through resonance overlap with the $\pi$ system (1 mark).
+- This delocalisation reduces the electron density on the nitrogen lone pair, making it less available to accept a proton (1 mark).
+- In the protonated form (phenylammonium ion), the lone pair is no longer available for delocalisation, so the protonated form is less stabilised relative to the free base (1 mark).
+- Therefore, the equilibrium $\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{C}_6\mathrm{H}_5\mathrm{NH}_3^+ + \mathrm{OH}^-$ lies further to the left than for ammonia (1 mark).
+- Quantitative evidence: $\mathrm{p}K_b(\text{phenylamine}) = 9.38$ vs $\mathrm{p}K_b(\mathrm{NH}_3) = 4.75$ (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (5 marks)</summary>
+
+Describe the preparation of benzenediazonium chloride from phenylamine. Explain why the temperature must be kept below $5^\circ\mathrm{C}$.
+
+**Mark Scheme:**
+
+5 marks:
+- Dissolve phenylamine in excess dilute HCl (to form phenylammonium chloride) and cool in ice to $0$--$5^\circ\mathrm{C}$ (1 mark).
+- Add aqueous sodium nitrite ($\mathrm{NaNO}_2$) slowly with stirring, maintaining the temperature below $5^\circ\mathrm{C}$ (1 mark).
+- The nitrous acid ($\mathrm{HNO}_2$) generated in situ reacts with the phenylammonium ion to form the diazonium salt (1 mark).
+- Above $5^\circ\mathrm{C}$, the diazonium salt decomposes, releasing nitrogen gas and forming phenol (via reaction with water) (1 mark).
+- The low temperature stabilises the diazonium ion long enough for it to be used in subsequent reactions (coupling or Sandmeyer) (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (7 marks)</summary>
+
+Starting from benzene, propose a synthesis of 4-hydroxyazobenzene (an azo dye). Your answer should include reagents and conditions for each step, and should explain why each step is necessary.
+
+**Mark Scheme:**
+
+7 marks:
+
+Step 1: Nitration of benzene with $\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4$ at $50$--$60^\circ\mathrm{C}$ to give nitrobenzene (1 mark).
+
+Step 2: Reduction of nitrobenzene with $\mathrm{Sn}/\mathrm{HCl}$ followed by basification with $\mathrm{NaOH}$ to give phenylamine (1 mark).
+
+Step 3: Diazotisation with $\mathrm{NaNO}_2/\mathrm{HCl}$ at $0$--$5^\circ\mathrm{C}$ to give benzenediazonium chloride (1 mark).
+
+Step 4: Coupling with phenol in alkaline conditions ($\mathrm{NaOH}$) to give 4-hydroxyazobenzene (1 mark).
+
+Explanation marks:
+- The nitro group is needed because it can be reduced to an amine, which is the precursor for the diazonium salt (1 mark).
+- The diazonium salt is essential because it acts as an electrophile in the coupling reaction with phenol (1 mark).
+- Alkaline conditions are needed for coupling with phenol because the phenoxide ion is more nucleophilic than phenol itself (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (4 marks)</summary>
+
+A student attempts to prepare phenylamine by heating nitrobenzene with tin and concentrated hydrochloric acid, but forgets to add sodium hydroxide at the end. Explain what product is obtained and why.
+
+**Mark Scheme:**
+
+4 marks:
+- The product is phenylammonium chloride, not phenylamine (1 mark).
+- The reduction of nitrobenzene with $\mathrm{Sn}/\mathrm{HCl}$ produces the ammonium salt directly because the reaction occurs in acidic solution (1 mark).
+- The phenylammonium ion ($\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_3^+$) is the conjugate acid of phenylamine and is stable in acidic solution (1 mark).
+- Adding $\mathrm{NaOH}$ is necessary to deprotonate the ammonium ion and liberate the free amine (1 mark).
+
+</details>
+
+<details>
+<summary>Q5 (5 marks)</summary>
+
+Explain the difference between the reactions of primary aliphatic amines and primary aromatic amines with nitrous acid.
+
+**Mark Scheme:**
+
+5 marks:
+- Primary aromatic amines (e.g. phenylamine) react with $\mathrm{HNO}_2$ at $0$--$5^\circ\mathrm{C}$ to form stable diazonium salts (1 mark).
+- The diazonium ion is stabilised by resonance delocalisation of the positive charge over the nitrogen atoms and into the benzene ring (1 mark).
+- Primary aliphatic amines (e.g. ethylamine) react with $\mathrm{HNO}_2$ to give a complex mixture of products including alcohols, alkenes, and nitrogen gas (1 mark).
+- The aliphatic diazonium ion ($\mathrm{RCH}_2\mathrm{N}_2^+$) has no aromatic system to stabilise the positive charge, so it immediately decomposes (1 mark).
+- This difference is exploited synthetically: aromatic diazonium salts are useful intermediates, while the aliphatic reaction is not synthetically useful (1 mark).
+
+</details>
+
+## Retrosynthesis with Amines
+
+### Key Disconnections
+
+| Target | Disconnection | Forward reagents |
+|---|---|---|
+| Primary amine $\mathrm{R-NH_2}$ | $\mathrm{C-N}$ bond | $\mathrm{R-X} + \text{excess }\mathrm{NH}_3$ |
+| Aromatic amine | $\mathrm{NO}_2 \to \mathrm{NH}_2$ | $\mathrm{Sn}/\mathrm{HCl}$ then $\mathrm{NaOH}$ |
+| Nitrile $\mathrm{R-CN}$ | $\mathrm{C-CN}$ bond | $\mathrm{R-X} + \mathrm{KCN}$ |
+| Amide $\mathrm{RCONH_2}$ | $\mathrm{C-N}$ bond | $\mathrm{RCOCl} + \text{excess }\mathrm{NH}_3$ |
+| Azo dye | $\mathrm{Ar-N=N-Ar'}$ | Diazotisation + coupling |
+
+### Worked Retrosynthesis
+
+**Target:** 4-amino-2-methylbenzoic acid from toluene.
+
+Step 1: Oxidation of toluene to benzoic acid would place $-\mathrm{COOH}$ para to $-\mathrm{CH}_3$, which is not the desired arrangement.
+
+Better approach:
+
+1. Nitration of toluene: $-\mathrm{CH}_3$ is ortho/para directing. Nitration gives a mixture of 2-nitrotoluene and 4-nitrotoluene. Separate by fractional distillation or recrystallisation to isolate 2-nitrotoluene (the ortho product).
+
+2. Oxidation of the methyl group: $2\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{CH}_3 \xrightarrow{\mathrm{KMnO}_4,\,\Delta} 2\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{COOH}$ (2-nitrobenzoic acid).
+
+3. Reduction of the nitro group: $2\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{COOH} \xrightarrow{\mathrm{Sn}/\mathrm{HCl},\,\mathrm{NaOH}} 2\text{-}\mathrm{H}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{COOH}$ (2-aminobenzoic acid).
+
+This is 2-amino (not 4-amino). The 4-isomer requires a different approach, demonstrating the importance of directing group strategy.
+
 ---
 
 :::tip

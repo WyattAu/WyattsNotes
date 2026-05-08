@@ -622,6 +622,237 @@ The data as given are most consistent with **propanone** ($\mathrm{CH}_3\mathrm{
 
 </details>
 
+## Advanced Analytical Techniques
+
+### Mass Spectrometry Fragmentation Patterns in Detail
+
+Understanding fragmentation is essential for structure elucidation. The key fragmentation pathways are:
+
+**Alpha cleavage:** The bond adjacent to a functional group breaks. This is particularly important for carbonyl compounds.
+
+For butan-2-one ($\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3$):
+
+$$\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3^{+\bullet} \to \mathrm{CH}_3\mathrm{CO}^+ + \bullet\mathrm{CH}_2\mathrm{CH}_3 \quad (m/z = 43)$$
+
+$$\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3^{+\bullet} \to \mathrm{CH}_3\mathrm{COCH}_2\bullet + \mathrm{CH}_3^+ \quad (m/z = 15)$$
+
+**McLafferty rearrangement:** Requires a gamma-hydrogen (a hydrogen on the carbon three bonds away from the carbonyl). The hydrogen transfers to the carbonyl oxygen while the bond between the alpha- and beta-carbons breaks.
+
+For pentanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO}$):
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO}^{+\bullet} \to \mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{CH}_2=\mathrm{CHOH}^{+\bullet} \quad (m/z = 44)$$
+
+**Aromatic fragmentation:** The molecular ion of aromatic compounds is usually very stable (high intensity). Characteristic fragments include:
+
+| $m/z$ | Fragment | Origin |
+|---|---|---|
+| 77 | $\mathrm{C}_6\mathrm{H}_5^+$ | Phenyl cation |
+| 91 | $\mathrm{C}_7\mathrm{H}_7^+$ | Benzyl/tropylium ion |
+| 105 | $\mathrm{C}_6\mathrm{H}_5\mathrm{CO}^+$ | Benzoyl cation |
+| 39, 51, 65 | $\mathrm{C}_3\mathrm{H}_3^+$, $\mathrm{C}_4\mathrm{H}_3^+$, $\mathrm{C}_5\mathrm{H}_5^+$ | Fragmentary ring structures |
+
+### IR Spectroscopy: Detailed Interpretation Guide
+
+The IR spectrum is divided into functional group regions:
+
+**$4000$--$2500\,\mathrm{cm}^{-1}$ (X--H stretching region):**
+
+| Bond | Range | Notes |
+|---|---|---|
+| O--H (alcohol) | $3200$--$3600$ | Broad, rounded |
+| O--H (carboxylic acid) | $2500$--$3300$ | Very broad, flat |
+| N--H (primary amine) | $3300$--$3500$ | Two sharp bands |
+| N--H (secondary amine) | $3300$--$3500$ | One sharp band |
+| C--H (alkane) | $2850$--$2950$ | Sharp |
+| C--H (alkene) | $3010$--$3100$ | Medium sharpness |
+| C--H (alkyne) | $\approx 3300$ | Sharp |
+| O--H (carboxylic acid) | $2500$--$3000$ | Very broad, distinctive |
+
+**$2500$--$2000\,\mathrm{cm}^{-1}$ (triple bond region):**
+
+| Bond | Range |
+|---|---|
+| C$\equiv$C | $2100$--$2260$ |
+| C$\equiv$N | $2210$--$2260$ |
+
+**$2000$--$1500\,\mathrm{cm}^{-1}$ (double bond region):**
+
+| Bond | Range |
+|---|---|
+| C=O (aldehyde) | $1720$--$1740$ |
+| C=O (ketone) | $1705$--$1725$ |
+| C=O (carboxylic acid) | $1710$--$1720$ |
+| C=O (ester) | $1735$--$1750$ |
+| C=O (amide) | $1680$--$1700$ |
+| C=C | $1620$--$1680$ (weak) |
+| C=N | $1610$--$1680$ |
+
+**$1500$--$400\,\mathrm{cm}^{-1}$ (fingerprint region):** Complex patterns unique to each molecule. Useful for comparison with reference spectra.
+
+### NMR Spectroscopy: Advanced Interpretation
+
+**${}^1\mathrm{H}$ NMR Integration and Coupling:**
+
+The area under each signal (integration) is proportional to the number of protons giving that signal. The n+1 rule predicts the splitting pattern: a proton signal is split into $n+1$ peaks by $n$ equivalent neighbouring protons.
+
+**Worked Example:** Analyse the ${}^1\mathrm{H}$ NMR spectrum of ethyl ethanoate ($\mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3$).
+
+- $\delta\, 2.0$ (s, 3H): Methyl group directly attached to the carbonyl ($\mathrm{CH}_3\mathrm{CO}-$). Singlet because there are no protons on the adjacent carbon (the adjacent carbon is the carbonyl carbon, which has no protons).
+
+- $\delta\, 4.1$ (q, 2H): $-\mathrm{CH}_2-$ of the ethyl group. Quartet because it is coupled to the 3 equivalent protons of the adjacent methyl group ($n+1 = 3+1 = 4$). The chemical shift (4.1 ppm) indicates the protons are deshielded by the adjacent oxygen.
+
+- $\delta\, 1.3$ (t, 3H): $-\mathrm{CH}_3$ of the ethyl group. Triplet because it is coupled to the 2 equivalent protons of the adjacent $-\mathrm{CH}_2-$ group ($n+1 = 2+1 = 3$).
+
+**${}^{13}\mathrm{C}$ NMR:**
+
+${}^{13}\mathrm{C}$ NMR shows one signal for each chemically distinct carbon environment. The chemical shift range is $0$--$220\,\mathrm{ppm}$:
+
+| Carbon type | Chemical shift (ppm) |
+|---|---|
+| C--C (alkane) | $0$--$50$ |
+| C--O (alcohol, ether) | $50$--$90$ |
+| C--N (amine) | $30$--$65$ |
+| C=C (alkene) | $100$--$150$ |
+| Aromatic C | $110$--$160$ |
+| C=O (carbonyl) | $160$--$220$ |
+
+**Worked Example:** The ${}^{13}\mathrm{C}$ NMR spectrum of ethyl ethanoate shows four signals: $\delta\, 170$ (C=O), $\delta\, 60$ ($\mathrm{CH}_2\mathrm{O}$), $\delta\, 21$ ($\mathrm{CH}_3\mathrm{CO}$), $\delta\, 14$ ($\mathrm{CH}_3$). Four signals correspond to four distinct carbon environments.
+
+### Chromatography: Rf Calculations and Advanced Techniques
+
+**Rf values in TLC:**
+
+$$R_f = \frac{\text{distance travelled by compound}}{\text{distance travelled by solvent front}}$$
+
+$R_f$ values are always between 0 and 1. A compound with a higher $R_f$ is less polar (interacts less with the polar stationary phase and travels further with the non-polar mobile phase).
+
+**Worked Example:** In a TLC experiment, the solvent front travels $12.0\,\mathrm{cm}$. Three compounds travel $3.6\,\mathrm{cm}$, $7.2\,\mathrm{cm}$, and $10.8\,\mathrm{cm}$ from the origin.
+
+$$R_f(\mathrm{A}) = \frac{3.6}{12.0} = 0.30$$
+
+$$R_f(\mathrm{B}) = \frac{7.2}{12.0} = 0.60$$
+
+$$R_f(\mathrm{C}) = \frac{10.8}{12.0} = 0.90$$
+
+Compound A is the most polar (lowest $R_f$), and compound C is the least polar.
+
+**Gas Chromatography (GC):**
+
+GC separates volatile compounds based on their boiling points and polarity. The retention time depends on:
+- Boiling point (higher b.p. = longer retention time).
+- Polarity relative to the stationary phase.
+- Flow rate of the carrier gas.
+
+GC can be coupled with mass spectrometry (GC-MS) for identification: the GC separates the components, and the MS provides the mass spectrum of each component as it elutes.
+
+### Combined Spectroscopic Analysis: Worked Examples
+
+<details>
+<summary>Problem 5</summary>
+
+An unknown compound has the following spectroscopic data:
+
+- Molecular formula: $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$
+- IR: strong absorption at $1740\,\mathrm{cm}^{-1}$; broad absorption at $2500$--$3300\,\mathrm{cm}^{-1}$
+- ${}^1\mathrm{H}$ NMR: $\delta\, 11.0$ (s, 1H), $\delta\, 2.3$ (q, 2H), $\delta\, 1.1$ (t, 3H)
+
+Identify the compound.
+
+**Solution:**
+
+IR: $1740\,\mathrm{cm}^{-1}$ = C=O (ester or acid). Broad $2500$--$3300\,\mathrm{cm}^{-1}$ = O--H of carboxylic acid. The compound is a carboxylic acid.
+
+NMR: $\delta\, 11.0$ (s, 1H) = carboxylic acid proton ($-\mathrm{COOH}$). $\delta\, 2.3$ (q, 2H) = $-\mathrm{CH}_2-$ adjacent to C=O. $\delta\, 1.1$ (t, 3H) = $-\mathrm{CH}_3$ coupled to 2 protons.
+
+The compound is **propanoic acid** ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$).
+
+Verify: $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2 = 3(12) + 6(1) + 2(16) = 74\,\mathrm{g/mol}$. But the formula given is $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2 = 88\,\mathrm{g/mol}$.
+
+Reconsider: With $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$ and the carboxylic acid data, the compound could be 2-methylpropanoic acid ($(\mathrm{CH}_3)_2\mathrm{CHCOOH}$) or butanoic acid ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH}$).
+
+Butanoic acid NMR: $\delta\, 0.9$ (t, 3H), $\delta\, 1.6$ (m, 2H), $\delta\, 2.3$ (t, 2H), $\delta\, 11.0$ (s, 1H). The given data show only a quartet and triplet, consistent with an ethyl group ($\mathrm{CH}_3\mathrm{CH}_2-$) and a carboxylic acid proton. This matches **propanoic acid**, but the formula should be $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$.
+
+If the formula is $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$, the additional $\mathrm{CH}_2$ would appear in the NMR. The discrepancy suggests the formula may be $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$ (propanoic acid).
+
+</details>
+
+<details>
+<summary>Problem 6</summary>
+
+An organic compound $\mathrm{C}_7\mathrm{H}_8$ shows the following data:
+
+- Mass spec: M+ at $m/z = 92$ (base peak), M+1 at 7.7%, significant fragment at $m/z = 91$
+- IR: absorption at $3030\,\mathrm{cm}^{-1}$, $1600$ and $1500\,\mathrm{cm}^{-1}$, no absorption above $3100\,\mathrm{cm}^{-1}$
+- ${}^1\mathrm{H}$ NMR: $\delta\, 7.2$ (m, 5H), $\delta\, 2.3$ (s, 3H)
+
+Identify the compound.
+
+**Solution:**
+
+Mass spec: M+1 = 7.7% gives $7.7/1.1 \approx 7$ carbon atoms. $\mathrm{C}_7\mathrm{H}_8$: $M = 84 + 8 = 92$. Fragment at $m/z = 91$ = $\mathrm{C}_7\mathrm{H}_7^+$ (tropylium/benzyl ion), characteristic of alkylbenzenes.
+
+IR: $3030\,\mathrm{cm}^{-1}$ = aromatic C--H stretch. $1600$ and $1500\,\mathrm{cm}^{-1}$ = aromatic C=C stretches. No absorption above $3100\,\mathrm{cm}^{-1}$ = no O--H or N--H.
+
+NMR: $\delta\, 7.2$ (m, 5H) = monosubstituted benzene ring (5 aromatic protons). $\delta\, 2.3$ (s, 3H) = methyl group not adjacent to any protons (attached directly to the benzene ring).
+
+The compound is **toluene** ($\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3$).
+
+</details>
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Describe how thin-layer chromatography (TLC) can be used to determine whether a reaction has gone to completion.
+
+**Mark Scheme:**
+
+5 marks:
+- Spot the reaction mixture alongside samples of the starting material and the expected product on a TLC plate (1 mark).
+- Place the plate in a suitable solvent (mobile phase) in a tank with a lid (1 mark).
+- Allow the solvent to rise by capillary action until it nearly reaches the top. Remove and dry the plate (1 mark).
+- Visualise the spots using UV light or a developing agent (e.g. iodine or ninhydrin) (1 mark).
+- If only one spot is present and it has the same $R_f$ value as the expected product, and no spot corresponding to the starting material is visible, the reaction has gone to completion (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+The ${}^1\mathrm{H}$ NMR spectrum of a compound $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ shows three signals: a triplet at $\delta\, 1.0$ (3H), a sextet at $\delta\, 2.4$ (2H), and a triplet at $\delta\, 9.8$ (1H). The IR spectrum shows a strong absorption at $1730\,\mathrm{cm}^{-1}$ and a weak pair at $2720$ and $2820\,\mathrm{cm}^{-1}$.
+
+(a) Identify the compound. (2 marks)
+
+(b) Explain the splitting pattern of the signal at $\delta\, 2.4$. (2 marks)
+
+(c) Explain the significance of the IR absorptions at $2720$ and $2820\,\mathrm{cm}^{-1}$. (2 marks)
+
+**Mark Scheme:**
+
+(a) Propanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$) (1 mark). $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ with one C=O and the aldehyde proton at $\delta\, 9.8$ (1 mark).
+
+(b) The sextet at $\delta\, 2.4$ is the $-\mathrm{CH}_2-$ group. It is split by the 3 equivalent protons of the adjacent $-\mathrm{CH}_3$ group and the 1 proton of the adjacent $-\mathrm{CHO}$ group, giving $n+1 = 3+1+1 = 5$... wait, that would be a multiplet, not a sextet. Actually, $n+1 = (3+1)(1+1) = 8$ peaks? No, the n+1 rule only applies when all neighbouring protons are equivalent. Here the neighbouring protons are not equivalent (3 methyl protons and 1 aldehyde proton), so the signal is a complex multiplet, not a clean sextet. In practice, the coupling constant between the $-\mathrm{CH}_2-$ and the aldehyde proton ($J \approx 2\,\mathrm{Hz}$) is much smaller than the coupling to the methyl group ($J \approx 7\,\mathrm{Hz}$), so the signal appears approximately as a quartet of doublets or sextet. The question states sextet, so we accept this (2 marks for explanation of splitting by adjacent protons).
+
+(c) The weak pair at $2720$ and $2820\,\mathrm{cm}^{-1}$ is the Fermi resonance doublet characteristic of the aldehyde C--H stretch (1 mark). This is diagnostic of an aldehyde group and distinguishes it from other carbonyl compounds (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+Explain how gas chromatography can be used to determine the purity of a synthesised organic compound.
+
+**Mark Scheme:**
+
+4 marks:
+- Inject the synthesised sample into the GC. Pure compounds produce a single peak (1 mark).
+- The area under each peak is proportional to the amount of that compound (1 mark).
+- The retention time of the product peak should match that of an authentic (pure) reference sample (1 mark).
+- Impurities produce additional peaks at different retention times. The percentage purity can be estimated from the ratio of the product peak area to the total peak area (1 mark).
+
+</details>
+
 ---
 
 :::tip

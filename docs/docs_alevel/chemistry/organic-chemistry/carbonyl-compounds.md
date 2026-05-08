@@ -533,7 +533,278 @@ $$
 
 **Stereochemistry:** The product (2-hydroxy-2-methylpropanenitrile) has a chiral centre at the carbon bearing the $-\mathrm{OH}$, $-\mathrm{CN}$, $-\mathrm{CH}_3$, and $-\mathrm{CH}_3$ groups. The nucleophile attacks from either face of the planar carbonyl, giving a racemic mixture (50:50 mixture of enantiomers).
 
+## Worked Examples: Carbonyl Chemistry in Depth
+
+### Example 1: Distinguishing Aldehydes and Ketones Using Chemical Tests
+
+**Four unlabelled bottles contain ethanal, propanone, ethanol, and ethanoic acid. How can they be distinguished?**
+
+**Step 1: Tollens' reagent.**
+- Ethanal: silver mirror (positive).
+- Propanone: no reaction (negative).
+- Ethanol: no reaction (negative).
+- Ethanoic acid: no reaction (negative).
+
+Tollens' test identifies ethanal. The remaining three are: propanone, ethanol, ethanoic acid.
+
+**Step 2: 2,4-DNPH test.**
+- Propanone: orange-yellow precipitate (positive -- contains C=O).
+- Ethanol: no precipitate (negative -- no C=O).
+- Ethanoic acid: orange-yellow precipitate (positive -- contains C=O).
+
+2,4-DNPH identifies ethanol (negative). Remaining: propanone and ethanoic acid.
+
+**Step 3: Sodium carbonate test.**
+- Propanone: no effervescence (ketone, not acidic).
+- Ethanoic acid: effervescence ($\mathrm{CO}_2$ produced from reaction with $\mathrm{Na}_2\mathrm{CO}_3$).
+
+### Example 2: Nucleophilic Addition Mechanism with NaBH4
+
+**Reduction of butanal to butan-1-ol:**
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO} \xrightarrow{\mathrm{NaBH}_4,\,\text{then }\mathrm{H}^+} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH}$$
+
+**Mechanism:**
+
+Step 1: The hydride ion ($\mathrm{H}^-$) from $\mathrm{BH}_4^-$ attacks the electrophilic carbonyl carbon of butanal. The $\pi$ electrons of C=O move onto the oxygen, forming a tetrahedral alkoxide intermediate:
+
+$$\mathrm{H}^- + \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}(\mathrm{O}^-)\mathrm{H}$$
+
+Step 2: Acid work-up protonates the alkoxide:
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}(\mathrm{O}^-)\mathrm{H} + \mathrm{H}_3\mathrm{O}^+ \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} + \mathrm{H}_2\mathrm{O}$$
+
+**Stereochemistry:** The hydride attacks from either face of the planar carbonyl, giving a racemic mixture if the carbonyl carbon is prochiral (attached to four different groups after addition).
+
+### Example 3: Aldol Condensation Calculation
+
+**Ethanal ($\mathrm{CH}_3\mathrm{CHO}$, $M = 44.05\,\mathrm{g/mol}$) undergoes an aldol condensation followed by dehydration. Calculate the maximum mass of product that can be obtained from $5.00\,\mathrm{g}$ of ethanal.**
+
+$$2\mathrm{CH}_3\mathrm{CHO} \xrightarrow{\mathrm{NaOH}} \mathrm{CH}_3\mathrm{CH}=\mathrm{CHCHO} + \mathrm{H}_2\mathrm{O}$$
+
+Moles of ethanal: $n = \frac{5.00}{44.05} = 0.1135\,\mathrm{mol}$
+
+From the equation, 2 moles of ethanal give 1 mole of product.
+
+Theoretical moles of product: $\frac{0.1135}{2} = 0.0568\,\mathrm{mol}$
+
+Molar mass of crotonaldehyde ($\mathrm{CH}_3\mathrm{CH}=\mathrm{CHCHO}$): $M = 4(12) + 6(1) + 16 = 70.09\,\mathrm{g/mol}$
+
+Maximum mass: $m = 0.0568 \times 70.09 = 3.98\,\mathrm{g}$
+
+### Example 4: Cyanohydrin Formation -- Synthesis Planning
+
+**Propose a synthesis of 2-hydroxybutanoic acid from propanal.**
+
+Step 1: Cyanohydrin formation:
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} + \mathrm{HCN} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN}$$
+
+Step 2: Acid hydrolysis of the nitrile:
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN} + 2\mathrm{H}_2\mathrm{O} + \mathrm{H}^+ \xrightarrow{\text{reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH} + \mathrm{NH}_4^+$$
+
+The product is 2-hydroxybutanoic acid. The cyanohydrin reaction extends the carbon chain by one carbon and introduces both $-\mathrm{OH}$ and $-\mathrm{COOH}$ groups in a single sequence.
+
+### Example 5: Acyl Chloride Reactivity
+
+**Write equations for the reactions of benzoyl chloride ($\mathrm{C}_6\mathrm{H}_5\mathrm{COCl}$) with water, ethanol, ammonia, and methylamine.**
+
+(a) Hydrolysis:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{COCl} + \mathrm{H}_2\mathrm{O} \to \mathrm{C}_6\mathrm{H}_5\mathrm{COOH} + \mathrm{HCl}$$
+
+Observation: Vigorous, exothermic. HCl fumes observed. Benzoic acid forms as a white solid.
+
+(b) Alcoholysis:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{COCl} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \to \mathrm{C}_6\mathrm{H}_5\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{HCl}$$
+
+Observation: Exothermic. HCl fumes. Fruity smell of ethyl benzoate.
+
+(c) With ammonia:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{COCl} + 2\mathrm{NH}_3 \to \mathrm{C}_6\mathrm{H}_5\mathrm{CONH}_2 + \mathrm{NH}_4\mathrm{Cl}$$
+
+Observation: White solid of benzamide forms. $\mathrm{NH}_4\mathrm{Cl}$ also forms as a white solid.
+
+(d) With methylamine:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{COCl} + 2\mathrm{CH}_3\mathrm{NH}_2 \to \mathrm{C}_6\mathrm{H}_5\mathrm{CONHCH}_3 + \mathrm{CH}_3\mathrm{NH}_3^+\mathrm{Cl}^-$$
+
+Observation: White solid of N-methylbenzamide forms.
+
+### Example 6: Carbonyl IR Interpretation
+
+**An IR spectrum shows a strong absorption at $1735\,\mathrm{cm}^{-1}$ and a broad absorption at $2500$--$3300\,\mathrm{cm}^{-1}$. Identify the functional groups present.**
+
+- $1735\,\mathrm{cm}^{-1}$: C=O stretch in the ester region ($1735$--$1750\,\mathrm{cm}^{-1}$). This could be an ester, aldehyde, or acid chloride. The absence of aldehyde C--H stretches ($2820$--$2720\,\mathrm{cm}^{-1}$) rules out aldehyde.
+- Broad $2500$--$3300\,\mathrm{cm}^{-1}$: This broad, flat absorption is characteristic of the O--H stretch of a carboxylic acid (hydrogen-bonded dimer).
+
+**Conclusion:** The compound contains a carboxylic acid group ($-\mathrm{COOH}$). The C=O absorption at $1735\,\mathrm{cm}^{-1}$ is consistent with a carboxylic acid ($1710$--$1720\,\mathrm{cm}^{-1}$ is more typical, but the exact position depends on the specific compound and solvent).
+
+### Example 7: Multi-Step Synthesis with Carbonyl Compounds
+
+**Target:** Phenylethanoic acid from benzene.
+
+Step 1: Friedel-Crafts acylation:
+
+$$\mathrm{C}_6\mathrm{H}_6 + \mathrm{CH}_3\mathrm{COCl} \xrightarrow{\mathrm{AlCl}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{COCH}_3 + \mathrm{HCl}$$
+
+Step 2: Oxidation of the methyl group on the ketone (haloform reaction or similar):
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{COCH}_3 + 3\mathrm{I}_2 + 4\mathrm{NaOH} \to \mathrm{C}_6\mathrm{H}_5\mathrm{COONa} + \mathrm{CHI}_3 + 3\mathrm{NaI} + 3\mathrm{H}_2\mathrm{O}$$
+
+Step 3: Acidification:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{COONa} + \mathrm{HCl} \to \mathrm{C}_6\mathrm{H}_5\mathrm{COOH} + \mathrm{NaCl}$$
+
+The iodoform reaction cleaves a methyl ketone to a carboxylic acid with one fewer carbon, providing a useful route to aromatic carboxylic acids.
+
+## Practical Techniques for Carbonyl Chemistry
+
+### Required Practical: Preparation of an Organic Solid (Aspirin) (AQA RP 11)
+
+**Objective:** To prepare aspirin (2-ethanoyloxybenzoic acid) from salicylic acid and ethanoic anhydride.
+
+**Safety:** Ethanoic anhydride is corrosive and a lachrymator. Concentrated phosphoric acid is corrosive. Wear eye protection and gloves. Work in a fume cupboard.
+
+**Procedure:**
+1. Weigh $5.00\,\mathrm{g}$ of 2-hydroxybenzoic acid (salicylic acid) into a conical flask.
+2. Add $7\,\mathrm{cm}^3$ of ethanoic anhydride and 5 drops of concentrated $\mathrm{H}_3\mathrm{PO}_4$ (catalyst).
+3. Heat the mixture in a water bath at $50$--$60^\circ\mathrm{C}$ for 15 minutes with occasional swirling.
+4. Allow to cool, then add $20\,\mathrm{cm}^3$ of cold water to hydrolyse excess anhydride.
+5. Cool in an ice bath. The crude aspirin precipitates as a white solid.
+6. Filter under reduced pressure using a Buchner funnel.
+7. Recrystallise from hot ethanol/water mixture.
+8. Dry the purified product in an oven at $50^\circ\mathrm{C}$.
+
+**Purification assessment:**
+- Determine the melting point of the purified product (pure aspirin melts at $135^\circ\mathrm{C}$).
+- Carry out a 2,4-DNPH test: aspirin contains no free carbonyl group (the $-\mathrm{OH}$ of salicylic acid has been esterified), so 2,4-DNPH should be negative. However, trace salicylic acid impurity would give a positive test.
+- Carry out iron(III) chloride test: salicylic acid gives a violet colour with $\mathrm{FeCl}_3$ (phenol group); pure aspirin does not (the phenol is esterified).
+
+**Yield calculation:**
+
+$$\text{Theoretical moles of aspirin} = \frac{5.00}{138.12} = 0.0362\,\mathrm{mol}$$
+$$\text{Theoretical mass} = 0.0362 \times 180.16 = 6.52\,\mathrm{g}$$
+$$\text{Percentage yield} = \frac{\text{actual mass}}{6.52} \times 100$$
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Describe a chemical test to distinguish between propanal and propanone. State the reagent, the observation with each compound, and the type of reaction occurring.
+
+**Mark Scheme:**
+
+5 marks:
+
+**Test:** Tollens' reagent (ammoniacal silver nitrate) (1 mark).
+
+**Procedure:** Add a few drops of Tollens' reagent to each compound in a clean test tube and warm gently in a water bath.
+
+**Propanal:** Silver mirror forms on the test tube (1 mark). The aldehyde is oxidised to the carboxylate ion, and $\mathrm{Ag}^+$ is reduced to metallic silver (1 mark).
+
+**Propanone:** No silver mirror forms (no reaction) (1 mark). Ketones are not oxidised by Tollens' reagent (1 mark).
+
 </details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+A compound $\mathrm{X}$ has the molecular formula $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. Compound $\mathrm{X}$ gives a positive 2,4-DNPH test and a positive iodoform test. Compound $\mathrm{X}$ does not give a silver mirror with Tollens' reagent. Deduce the structure of $\mathrm{X}$.
+
+**Mark Scheme:**
+
+6 marks:
+- Positive 2,4-DNPH: compound $\mathrm{X}$ contains a carbonyl group (C=O) (1 mark).
+- Does not give a silver mirror: compound $\mathrm{X}$ is not an aldehyde; it is a ketone (1 mark).
+- Positive iodoform test: compound $\mathrm{X}$ contains a $\mathrm{CH}_3\mathrm{CO}-$ group (methyl ketone) (1 mark).
+- $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ has one degree of unsaturation (consistent with one C=O) (1 mark).
+- The compound is butan-2-one: $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3$ (1 mark).
+- Verification: $M = 4(12) + 8(1) + 16 = 72\,\mathrm{g/mol}$. Contains $\mathrm{CH}_3\mathrm{CO}-$ group. Not an aldehyde. Correct (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (5 marks)</summary>
+
+Write the mechanism for the reaction of propanal with hydrogen cyanide. Explain why the product is formed as a racemic mixture.
+
+**Mark Scheme:**
+
+5 marks:
+- The cyanide ion ($\mathrm{CN}^-$) attacks the electrophilic carbonyl carbon of propanal (1 mark).
+- The $\pi$ electrons move onto the oxygen, forming a tetrahedral alkoxide intermediate (1 mark).
+- The alkoxide is protonated by $\mathrm{HCN}$ (or water during work-up) to give the cyanohydrin (1 mark).
+- The carbonyl carbon is prochiral (after addition, it bears four different groups: $-\mathrm{OH}$, $-\mathrm{CN}$, $-\mathrm{CH}_3$, and $-\mathrm{CH}_2\mathrm{CH}_3$) (1 mark).
+- The $\mathrm{CN}^-$ can attack from either face of the planar carbonyl with equal probability, producing a 50:50 mixture of enantiomers (racemate) (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (4 marks)</summary>
+
+Explain why $\mathrm{NaBH}_4$ reduces aldehydes and ketones but does not reduce carboxylic acids.
+
+**Mark Scheme:**
+
+4 marks:
+- $\mathrm{NaBH}_4$ is a source of hydride ions ($\mathrm{H}^-$), which act as nucleophiles attacking the electrophilic carbonyl carbon (1 mark).
+- In aldehydes and ketones, the carbonyl carbon is sufficiently electrophilic (partially positive due to the polar C=O bond) for nucleophilic attack (1 mark).
+- In carboxylic acids, the carbonyl carbon is less electrophilic because the $-\mathrm{OH}$ group donates electron density through resonance, and the acid protonates the $\mathrm{BH}_4^-$, destroying the reducing agent before it can attack (1 mark).
+- A stronger reducing agent such as $\mathrm{LiAlH}_4$ is needed for carboxylic acids (1 mark).
+
+</details>
+
+<details>
+<summary>Q5 (5 marks)</summary>
+
+Ethyl ethanoate can be prepared by two different methods: (a) from ethanoic acid and ethanol using an acid catalyst, and (b) from ethanoyl chloride and ethanol. Compare these two methods.
+
+**Mark Scheme:**
+
+5 marks:
+
+Method (a): Reversible equilibrium; acid catalyst ($\mathrm{H}_2\mathrm{SO}_4$) required; heat under reflux; excess of one reactant needed to drive equilibrium; slower reaction (1 mark for description, 1 mark for equilibrium/reversibility).
+
+Method (b): Irreversible; no catalyst required; rapid at room temperature; HCl gas evolved; higher yield (1 mark for description, 1 mark for irreversibility).
+
+Comparison: Method (b) gives a higher yield and does not require heating, but uses the more expensive and hazardous ethanoyl chloride. Method (a) uses cheaper reagents but gives a lower yield unless excess reagent is used or water is removed (1 mark).
+
+</details>
+
+## Retrosynthesis with Carbonyl Compounds
+
+### Key Disconnections
+
+| Target | Disconnection | Forward reagents |
+|---|---|---|
+| Primary alcohol | $\mathrm{C-OH}$ from aldehyde | Aldehyde + $\mathrm{NaBH}_4$ |
+| Secondary alcohol | $\mathrm{C-OH}$ from ketone | Ketone + $\mathrm{NaBH}_4$ |
+| Carboxylic acid | $\mathrm{C-COOH}$ from ester | Ester + $\mathrm{NaOH}$, reflux |
+| Ester | $\mathrm{C-O-CO}$ | $\mathrm{RCOCl} + \mathrm{R'OH}$ |
+| Amide | $\mathrm{C-NH}$ | $\mathrm{RCOCl} + \mathrm{NH}_3$ |
+| Cyanohydrin | $\mathrm{C(CN)(OH)}$ | Aldehyde/ketone + $\mathrm{HCN}$ |
+| $\alpha,\beta$-unsaturated carbonyl | Aldol dehydration | 2 aldehydes + $\mathrm{NaOH}$, $\Delta$ |
+
+### Worked Retrosynthesis
+
+**Target:** $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH}$ (2-hydroxybutanoic acid)
+
+Retrosynthetic analysis:
+
+1. The $-\mathrm{COOH}$ could come from hydrolysis of a nitrile. Disconnect: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN}$
+
+2. The cyanohydrin comes from nucleophilic addition of $\mathrm{HCN}$ to an aldehyde: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} + \mathrm{HCN}$
+
+3. Propanal comes from oxidation of propan-1-ol: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} \Leftarrow \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} + [\mathrm{O}]$
+
+**Forward synthesis:**
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} \xrightarrow{[\mathrm{O}],\,\text{distillation}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO} \xrightarrow{\mathrm{HCN}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CN} \xrightarrow{\mathrm{H}_3\mathrm{O}^+,\,\text{reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{COOH}$$
 
 ---
 

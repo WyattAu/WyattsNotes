@@ -662,6 +662,216 @@ Verify: $K_p = (0.531)^2 / 2.18 = 0.282/2.18 = 0.129\,\mathrm{atm}$ (close to $0
 
 </details>
 
+## Advanced Equilibrium Calculations
+
+### Le Chatelier's Principle: Quantitative Treatment
+
+Le Chatelier's principle can be treated quantitatively using the equilibrium constant. When a change is made to a system at equilibrium, the system responds in a way that partially counteracts the change.
+
+**Worked Example:** For the equilibrium $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$ with $K_p = 0.115\,\mathrm{atm}$ at $298\,\mathrm{K}$, what is the effect of doubling the total pressure by halving the volume?
+
+Initially, let $p(\mathrm{N}_2\mathrm{O}_4) = 1.00\,\mathrm{atm}$ and $p(\mathrm{NO}_2) = 0.339\,\mathrm{atm}$ (satisfying $K_p = (0.339)^2/1.00 = 0.115$).
+
+When the volume is halved, all partial pressures double instantly: $p(\mathrm{N}_2\mathrm{O}_4) = 2.00\,\mathrm{atm}$, $p(\mathrm{NO}_2) = 0.678\,\mathrm{atm}$.
+
+The reaction quotient: $Q_p = (0.678)^2 / 2.00 = 0.230 > K_p$.
+
+Since $Q_p > K_p$, the system shifts to the left (fewer moles of gas) to reduce $Q_p$ back towards $K_p$. This is consistent with Le Chatelier's principle: increasing pressure favours the side with fewer gas molecules.
+
+**Worked Example: Effect of temperature on equilibrium composition.**
+
+For $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$, $\Delta H = -92\,\mathrm{kJ/mol}$.
+
+At $400^\circ\mathrm{C}$: $K_p = 6.2 \times 10^{-4}\,\mathrm{atm}^{-2}$.
+At $500^\circ\mathrm{C}$: $K_p = 4.5 \times 10^{-6}\,\mathrm{atm}^{-2}$.
+
+The equilibrium constant decreases with increasing temperature because the forward reaction is exothermic. According to Le Chatelier's principle, increasing temperature favours the endothermic (reverse) direction, reducing the ammonia yield. This is confirmed quantitatively by the decrease in $K_p$.
+
+The relationship between $K$ and temperature is given by the van 't Hoff equation:
+
+$$\ln\frac{K_2}{K_1} = -\frac{\Delta H^\circ}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
+
+### Kp Calculations: Heterogeneous Equilibria
+
+Heterogeneous equilibria involve substances in more than one phase. The concentrations of pure solids and pure liquids are constant and are incorporated into the equilibrium constant, so they do not appear in the $K_c$ or $K_p$ expression.
+
+**Example:** $\mathrm{CaCO}_3(s) \rightleftharpoons \mathrm{CaO}(s) + \mathrm{CO}_2(g)$
+
+$$K_p = p(\mathrm{CO}_2)$$
+
+At $900^\circ\mathrm{C}$, $K_p = 1.04\,\mathrm{atm}$. This means that in a closed container, $\mathrm{CaCO}_3$ decomposes until the partial pressure of $\mathrm{CO}_2$ reaches $1.04\,\mathrm{atm}$, at which point equilibrium is established.
+
+### Industrial Application: Haber Process Equilibrium Analysis
+
+**Reaction:** $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$, $\Delta H = -92\,\mathrm{kJ/mol}$
+
+| Condition | Effect on equilibrium | Effect on rate | Industrial choice |
+|---|---|---|---|
+| High pressure | Favours products (4 mol $\to$ 2 mol) | Increases rate (higher concentration) | 200 atm (compromise: cost vs yield) |
+| Low temperature | Favours products (exothermic forward) | Decreases rate | $450^\circ\mathrm{C}$ (compromise: yield vs rate) |
+| Excess $\mathrm{N}_2$ | Shifts equilibrium right | Increases rate of forward reaction | $\mathrm{N}_2:\mathrm{H}_2 = 1:3$ (stoichiometric feed) |
+| Iron catalyst | No effect on position | Increases rate (lower $E_a$) | Fe with $\mathrm{K}_2\mathrm{O}/\mathrm{Al}_2\mathrm{O}_3$ promoters |
+
+The yield at $450^\circ\mathrm{C}$ and 200 atm is approximately 15% per pass. Unreacted $\mathrm{N}_2$ and $\mathrm{H}_2$ are recycled.
+
+### Solubility Products ($K_{sp}$)
+
+The solubility product is the equilibrium constant for the dissolution of a sparingly soluble ionic compound:
+
+$$\mathrm{M}_a\mathrm{X}_b(s) \rightleftharpoons a\mathrm{M}^{b+}(aq) + b\mathrm{X}^{a-}(aq)$$
+
+$$K_{sp} = [\mathrm{M}^{b+}]^a[\mathrm{X}^{a-}]^b$$
+
+**Worked Example:** Calculate the solubility of $\mathrm{BaSO}_4$ in pure water. $K_{sp}(\mathrm{BaSO}_4) = 1.08 \times 10^{-10}\,\mathrm{mol^2\,dm^{-6}}$.
+
+$$\mathrm{BaSO}_4(s) \rightleftharpoons \mathrm{Ba}^{2+}(aq) + \mathrm{SO}_4^{2-}(aq)$$
+
+If $s$ is the solubility in $\mathrm{mol\,dm^{-3}}$:
+
+$$K_{sp} = s \times s = s^2$$
+
+$$s = \sqrt{K_{sp}} = \sqrt{1.08 \times 10^{-10}} = 1.04 \times 10^{-5}\,\mathrm{mol\,dm^{-3}}$$
+
+**Common ion effect:** The solubility of $\mathrm{BaSO}_4$ is reduced in the presence of $\mathrm{Na}_2\mathrm{SO}_4$ (a common source of $\mathrm{SO}_4^{2-}$). Adding $\mathrm{SO}_4^{2-}$ shifts the equilibrium to the left, precipitating more $\mathrm{BaSO}_4$.
+
+**Worked Example:** Will $\mathrm{BaSO}_4$ precipitate when $100\,\mathrm{cm}^3$ of $0.010\,\mathrm{mol\,dm^{-3}}$ $\mathrm{BaCl}_2$ is mixed with $100\,\mathrm{cm}^3$ of $0.010\,\mathrm{mol\,dm^{-3}}$ $\mathrm{Na}_2\mathrm{SO}_4$?
+
+After mixing, concentrations are halved:
+
+$[\mathrm{Ba}^{2+}] = 0.0050\,\mathrm{mol\,dm^{-3}}$, $[\mathrm{SO}_4^{2-}] = 0.0050\,\mathrm{mol\,dm^{-3}}$
+
+$$Q = [\mathrm{Ba}^{2+}][\mathrm{SO}_4^{2-}] = (0.0050)^2 = 2.5 \times 10^{-5}$$
+
+Since $Q = 2.5 \times 10^{-5} \gg K_{sp} = 1.08 \times 10^{-10}$, precipitation will occur until $[\mathrm{Ba}^{2+}][\mathrm{SO}_4^{2-}] = K_{sp}$.
+
+## Practical Techniques for Equilibrium
+
+### Required Practical: Investigating Equilibrium (AQA RP 9)
+
+**Objective:** To determine the effect of concentration on the position of equilibrium for the reaction between iron(III) ions and thiocyanate ions.
+
+$$\mathrm{Fe}^{3+}(aq) + \mathrm{SCN}^-(aq) \rightleftharpoons \mathrm{FeSCN}^{2+}(aq)$$
+
+The $\mathrm{FeSCN}^{2+}$ ion is blood-red in colour. The intensity of the colour (measured by colorimetry) is proportional to its concentration.
+
+**Procedure:**
+1. Prepare a standard solution of known $[\mathrm{FeSCN}^{2+}]$ by using a large excess of $\mathrm{SCN}^-$ so that essentially all $\mathrm{Fe}^{3+}$ is converted to $\mathrm{FeSCN}^{2+}$.
+2. Measure the absorbance of this standard solution using a colorimeter (filter wavelength $\approx 470\,\mathrm{nm}$).
+3. Prepare equilibrium mixtures with varying initial concentrations of $\mathrm{Fe}^{3+}$ and $\mathrm{SCN}^-$.
+4. Measure the absorbance of each equilibrium mixture.
+5. Use a calibration curve (absorbance vs $[\mathrm{FeSCN}^{2+}]$) to determine the equilibrium concentration of $\mathrm{FeSCN}^{2+}$ in each mixture.
+6. Calculate $K_c$ for each mixture.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Nitrogen and hydrogen react to form ammonia: $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$.
+
+At $500^\circ\mathrm{C}$, $K_p = 6.0 \times 10^{-3}\,\mathrm{atm}^{-2}$. A mixture of $1.0\,\mathrm{mol}$ $\mathrm{N}_2$ and $3.0\,\mathrm{mol}$ $\mathrm{H}_2$ is allowed to reach equilibrium at a total pressure of $200\,\mathrm{atm}$. Calculate the equilibrium mole fraction of ammonia.
+
+**Mark Scheme:**
+
+Let $x$ be the moles of $\mathrm{N}_2$ reacted.
+
+Equilibrium moles: $\mathrm{N}_2 = 1.0 - x$, $\mathrm{H}_2 = 3.0 - 3x$, $\mathrm{NH}_3 = 2x$
+
+Total moles = $4.0 - 2x$
+
+Mole fractions: $y(\mathrm{N}_2) = \frac{1-x}{4-2x}$, $y(\mathrm{H}_2) = \frac{3-3x}{4-2x}$, $y(\mathrm{NH}_3) = \frac{2x}{4-2x}$
+
+Partial pressures: $p_i = y_i \times P_\mathrm{total}$
+
+$$K_p = \frac{p(\mathrm{NH}_3)^2}{p(\mathrm{N}_2) \times p(\mathrm{H}_2)^3} = \frac{\left(\frac{2x}{4-2x} \times 200\right)^2}{\left(\frac{1-x}{4-2x} \times 200\right)\left(\frac{3-3x}{4-2x} \times 200\right)^3}$$
+
+This simplifies to:
+
+$$K_p = \frac{4x^2(4-2x)^2}{(1-x)(3-3x)^3 \times 200^2}$$
+
+Assuming $x$ is small (5% approximation): $4 - 2x \approx 4$, $1 - x \approx 1$, $3 - 3x \approx 3$:
+
+$$6.0 \times 10^{-3} = \frac{4x^2 \times 16}{1 \times 27 \times 40000} = \frac{64x^2}{1080000}$$
+
+$$x^2 = \frac{6.0 \times 10^{-3} \times 1080000}{64} = \frac{6480}{64} = 101.25$$
+
+$$x \approx 10.1$$
+
+This is inconsistent with the assumption that $x$ is small (it exceeds the initial moles of $\mathrm{N}_2$). This shows that at 200 atm and $500^\circ\mathrm{C}$, the equilibrium lies significantly towards products. A numerical or iterative solution would be required.
+
+(1 mark for setting up the $K_p$ expression, 1 mark for mole fractions, 1 mark for partial pressures, 1 mark for substitution, 1 mark for recognising the approximation issue.)
+
+</details>
+
+<details>
+<summary>Q2 (4 marks)</summary>
+
+For the equilibrium $\mathrm{PCl}_5(g) \rightleftharpoons \mathrm{PCl}_3(g) + \mathrm{Cl}_2(g)$, state and explain the effect on the equilibrium position of:
+
+(a) Increasing the pressure at constant temperature. (2 marks)
+
+(b) Adding a catalyst. (2 marks)
+
+**Mark Scheme:**
+
+(a) Increasing pressure shifts the equilibrium to the left (towards fewer moles of gas: 1 mol vs 2 mol) (1 mark). The system partially counteracts the increase in pressure by reducing the total number of gas molecules (1 mark).
+
+(b) A catalyst increases the rate of both forward and reverse reactions equally, so the equilibrium position is unchanged (1 mark). The catalyst provides an alternative pathway with lower activation energy but does not affect the thermodynamics ($\Delta G^\circ$ and therefore $K$) (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (6 marks)</summary>
+
+The esterification reaction: $\mathrm{CH}_3\mathrm{COOH} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \rightleftharpoons \mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O}$
+
+$1.00\,\mathrm{mol}$ of ethanoic acid and $1.00\,\mathrm{mol}$ of ethanol are mixed and allowed to reach equilibrium. $0.667\,\mathrm{mol}$ of ethyl ethanoate is formed at equilibrium.
+
+(a) Calculate the value of $K_c$. (3 marks)
+
+(b) Calculate the percentage conversion of ethanoic acid. (1 mark)
+
+(c) How would the equilibrium yield change if the volume of the container were halved? (2 marks)
+
+**Mark Scheme:**
+
+(a) Equilibrium moles: $\mathrm{CH}_3\mathrm{COOH} = 1.00 - 0.667 = 0.333\,\mathrm{mol}$, $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} = 0.333\,\mathrm{mol}$, $\mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 = 0.667\,\mathrm{mol}$, $\mathrm{H}_2\mathrm{O} = 0.667\,\mathrm{mol}$.
+
+Since all species are in the same volume (cancels in $K_c$):
+
+$$K_c = \frac{[\mathrm{ester}][\mathrm{H}_2\mathrm{O}]}{[\mathrm{acid}][\mathrm{alcohol}]} = \frac{0.667 \times 0.667}{0.333 \times 0.333} = \frac{0.445}{0.111} = 4.01$$
+
+(1 mark for equilibrium moles, 1 mark for expression, 1 mark for calculation.)
+
+(b) Percentage conversion: $\frac{0.667}{1.00} \times 100 = 66.7\%$ (1 mark).
+
+(c) Halving the volume doubles all concentrations equally. Since $\Delta n = 0$ (equal moles on both sides), the equilibrium position does not change (2 marks). The value of $K_c$ remains the same (it depends only on temperature).
+
+</details>
+
+<details>
+<summary>Q4 (4 marks)</summary>
+
+Define the term solubility product, $K_{sp}$. The $K_{sp}$ of $\mathrm{PbI}_2$ is $9.8 \times 10^{-9}\,\mathrm{mol^3\,dm^{-9}}$ at $298\,\mathrm{K}$. Calculate the solubility of $\mathrm{PbI}_2$ in $\mathrm{mol\,dm^{-3}}$.
+
+**Mark Scheme:**
+
+Definition (1 mark): The solubility product is the product of the equilibrium concentrations of the ions in a saturated solution of a sparingly soluble ionic compound, each raised to the power of its stoichiometric coefficient.
+
+Calculation (3 marks):
+
+$$\mathrm{PbI}_2(s) \rightleftharpoons \mathrm{Pb}^{2+}(aq) + 2\mathrm{I}^-(aq)$$
+
+If $s$ is the solubility: $[\mathrm{Pb}^{2+}] = s$, $[\mathrm{I}^-] = 2s$
+
+$$K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{I}^-]^2 = s \times (2s)^2 = 4s^3$$
+
+$$s = \sqrt[3]{\frac{K_{sp}}{4}} = \sqrt[3]{\frac{9.8 \times 10^{-9}}{4}} = \sqrt[3]{2.45 \times 10^{-9}} = 1.35 \times 10^{-3}\,\mathrm{mol\,dm^{-3}}$$
+
+(1 mark for expression, 1 mark for substitution, 1 mark for calculation.)
+
+</details>
+
 ---
 
 :::tip

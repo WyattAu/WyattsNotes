@@ -2069,3 +2069,994 @@ The coefficient of variation $= 98.5/122.1 = 0.81$, indicating substantial risk 
 expected return.
 
 </details>
+
+## Sensitivity Analysis (HL Extension)
+
+### What is Sensitivity Analysis?
+
+**Sensitivity analysis** examines how the results of an economic calculation (typically NPV or CBA)
+change when one or more input variables are varied. It identifies which variables have the greatest
+impact on the outcome and therefore require the most accurate estimation.
+
+### One-Way Sensitivity Analysis
+
+Each variable is changed individually while holding all others constant. The results are typically
+presented in a sensitivity table or tornado diagram.
+
+**Example:** A project has NPV that depends on three variables:
+
+- Discount rate (base case: 8%)
+- Annual benefit (base case: USD 50 million)
+- Project life (base case: 10 years)
+
+| Variable | Pessimistic | Base | Optimistic |
+|---|---|---|---|
+| Discount rate = 5% | -- | USD 68.4m | -- |
+| Discount rate = 8% | -- | USD 68.4m | -- |
+| Discount rate = 12% | -- | USD 68.4m | -- |
+| Annual benefit = USD 40m | USD 8.4m | USD 68.4m | USD 128.4m |
+| Annual benefit = USD 60m | -- | -- | -- |
+| Project life = 5 years | USD 20.0m | USD 68.4m | USD 102.6m |
+| Project life = 15 years | -- | -- | -- |
+
+Recalculating with each variable changed to pessimistic and optimistic values:
+
+**Discount rate 5%:** annuity factor (10 years) $= 7.722$. NPV $= -200 + 50 \times 7.722 = 186.1$ million
+**Discount rate 12%:** annuity factor (10 years) $= 5.650$. NPV $= -200 + 50 \times 5.650 = 82.5$ million
+
+**Annual benefit USD 40m:** NPV $= -200 + 40 \times 6.710 = 68.4$ million
+**Annual benefit USD 60m:** NPV $= -200 + 60 \times 6.710 = 202.6$ million
+
+**Project life 5 years (8%):** annuity factor $= 3.993$. NPV $= -200 + 50 \times 3.993 = -0.4$ million
+**Project life 15 years (8%):** annuity factor $= 8.559$. NPV $= -200 + 50 \times 8.559 = 228.0$ million
+
+**Sensitivity ranking (by NPV range):**
+
+1. Project life: USD -0.4m to USD 228.0m (range: 228.4m) -- most sensitive
+2. Annual benefit: USD 68.4m to USD 202.6m (range: 134.2m)
+3. Discount rate: USD 82.5m to USD 186.1m (range: 103.6m) -- least sensitive
+
+The project is most sensitive to the project life assumption.
+
+### Scenario Analysis
+
+Scenario analysis changes multiple variables simultaneously to reflect coherent "stories" about the
+future:
+
+| Scenario | Discount rate | Annual benefit | Project life | NPV |
+|---|---|---|---|---|
+| Pessimistic | 12% | USD 40m | 5 years | -48.0m |
+| Base | 8% | USD 50m | 10 years | 68.4m |
+| Optimistic | 5% | USD 60m | 15 years | 363.1m |
+
+The pessimistic scenario yields a negative NPV, suggesting the project is risky.
+
+### Break-Even Analysis
+
+A special case of sensitivity analysis that identifies the critical value at which NPV = 0.
+
+**Break-even annual benefit:**
+
+$0 = -200 + B \times 6.710 \implies B = 200/6.710 = 29.8$ million
+
+The annual benefit must exceed USD 29.8 million (60% of the base case) for the project to be viable.
+
+**Break-even project life:**
+
+$0 = -200 + 50 \times \text{AF}(n, 8\%)$
+
+$\text{AF}(n, 8\%) = 4.0$
+
+Solving: $\frac{1 - 1.08^{-n}}{0.08} = 4.0 \implies 1 - 1.08^{-n} = 0.32 \implies 1.08^{-n} = 0.68$
+
+$n = -\frac{\ln 0.68}{\ln 1.08} = \frac{0.3857}{0.0770} = 5.01$ years
+
+The project must last at least 5 years to break even.
+
+## Discounting in Cost-Benefit Analysis: Advanced Topics (HL Extension)
+
+### Social Discount Rate
+
+The **social discount rate** (SDR) reflects society's preference for present over future
+consumption. It is typically lower than market interest rates because:
+
+1. Society has a longer time horizon than private individuals
+2. Future generations are not represented in current markets (intergenerational equity)
+3. Market rates include risk premiums that may not apply to public projects
+
+**The Ramsey formula:**
+
+$$r = \delta + \eta \times g$$
+
+Where:
+- $r$ = social discount rate
+- $\delta$ = pure rate of time preference (how much society discounts future utility simply
+  because it is in the future; Stern Review used $\delta = 0.1\%$)
+- $\eta$ = elasticity of marginal utility of consumption (how quickly the marginal value of
+  consumption declines as income rises; typically $\eta \in [1, 2]$)
+- $g$ = growth rate of per capita consumption
+
+**Numerical comparison:**
+
+Stern Review (2006): $\delta = 0.1\%$, $\eta = 1$, $g = 1.3\%$: $r = 0.1 + 1.3 = 1.4\%$
+
+Nordhaus (2007): $\delta = 3\%$, $\eta = 2$, $g = 1.3\%$: $r = 3 + 2.6 = 5.6\%$
+
+The difference between a 1.4% and 5.6% discount rate has dramatic implications for long-term
+projects:
+
+Present value of USD 1 billion received in 100 years:
+
+At 1.4%: $1/(1.014)^{100} = 1/4.06 = 0.246$ billion (USD 246 million)
+At 5.6%: $1/(1.056)^{100} = 1/258.5 = 0.004$ billion (USD 4 million)
+
+The Stern discount rate values benefits 100 years hence at 60 times the Nordhaus rate.
+
+### Hyperbolic Discounting
+
+**Hyperbolic discounting** describes the empirical observation that individuals discount the
+near future at a much higher rate than the distant future:
+
+$$\text{Hyperbolic: } d(t) = \frac{1}{(1 + \alpha t)^{\beta/\alpha}}$$
+
+vs. exponential discounting:
+
+$$\text{Exponential: } d(t) = \frac{1}{(1 + r)^t}$$
+
+**Implications:**
+
+1. **Time inconsistency:** individuals plan to save more in the future than they actually do
+   (the "planning fallacy"). In period 0, they prefer USD 110 in period 2 to USD 100 in period 1.
+   But in period 1, they prefer USD 100 immediately to USD 110 in period 2
+2. **Commitment devices:** hyperbolic discounting explains demand for commitment mechanisms
+   (pension plans with penalties for early withdrawal, Christmas savings clubs)
+3. **Environmental policy:** hyperbolic discounting implies even stronger arguments for
+   immediate climate action, because near-term costs are overweighted relative to long-term
+   benefits
+
+### Shadow Pricing
+
+When market prices do not reflect true social costs and benefits (due to externalities, taxes,
+subsidies, or market failures), **shadow prices** are used in CBA to estimate the true
+economic value.
+
+**Examples:**
+
+1. **Unemployed labour:** the opportunity cost of employing an unemployed worker is not the
+   market wage but the value of their leisure time plus any unemployment benefits they
+   forgo. Shadow wage $< $ market wage
+2. **Foreign exchange:** in developing countries with overvalued exchange rates, the shadow
+   exchange rate exceeds the official rate
+3. **Environmental costs:** carbon emissions have a social cost (the social cost of carbon, or
+   SCC) that exceeds the market price of carbon (if a carbon price exists at all). The US
+   Interagency Working Group estimated SCC at USD 51/tonne (2020)
+
+## Regression Analysis Basics (HL Extension)
+
+### Simple Linear Regression
+
+**The regression model:**
+
+$$Y_i = \beta_0 + \beta_1 X_i + \epsilon_i$$
+
+Where:
+- $Y_i$ = dependent variable (the variable being explained)
+- $X_i$ = independent variable (the explanatory variable)
+- $\beta_0$ = intercept (the value of $Y$ when $X = 0$)
+- $\beta_1$ = slope coefficient (the change in $Y$ for a one-unit change in $X$)
+- $\epsilon_i$ = error term (the difference between the actual and predicted value of $Y$)
+
+**Ordinary Least Squares (OLS) estimation:**
+
+The OLS estimator minimises the sum of squared residuals:
+
+$$\min_{\beta_0, \beta_1} \sum_{i=1}^{n} (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i)^2$$
+
+The OLS estimators are:
+
+$$\hat{\beta}_1 = \frac{\sum(X_i - \bar{X})(Y_i - \bar{Y})}{\sum(X_i - \bar{X})^2} = \frac{\text{Cov}(X, Y)}{\text{Var}(X)}$$
+
+$$\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1 \bar{X}$$
+
+### Goodness of Fit: $R^2$
+
+The coefficient of determination ($R^2$) measures the proportion of the variation in $Y$
+explained by the variation in $X$:
+
+$$R^2 = 1 - \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\sum(Y_i - \hat{Y}_i)^2}{\sum(Y_i - \bar{Y})^2}$$
+
+$R^2 \in [0, 1]$: $R^2 = 0$ means $X$ explains none of the variation in $Y$; $R^2 = 1$ means
+$X$ explains all of the variation.
+
+**Adjusted $R^2$** accounts for the number of regressors:
+
+$$\bar{R}^2 = 1 - \frac{\text{SSR}/(n - k - 1)}{\text{SST}/(n - 1)}$$
+
+Where $k$ is the number of independent variables and $n$ is the sample size.
+
+### Numerical Example: Consumption Function
+
+An economist estimates the consumption function $C = \beta_0 + \beta_1 Y_d + \epsilon$ using
+the following data:
+
+| Observation | Disposable income ($Y_d$, USD thousands) | Consumption ($C$, USD thousands) |
+|---|---|---|
+| 1 | 10 | 8 |
+| 2 | 20 | 15 |
+| 3 | 30 | 22 |
+| 4 | 40 | 28 |
+| 5 | 50 | 35 |
+
+$\bar{X} = 30$, $\bar{Y} = 21.6$
+
+$\sum(X_i - \bar{X})(Y_i - \bar{Y})$:
+
+$= (-20)(-13.6) + (-10)(-6.6) + (0)(0.4) + (10)(6.4) + (20)(13.4)$
+$= 272 + 66 + 0 + 64 + 268 = 670$
+
+$\sum(X_i - \bar{X})^2 = 400 + 100 + 0 + 100 + 400 = 1000$
+
+$\hat{\beta}_1 = 670/1000 = 0.67$
+
+$\hat{\beta}_0 = 21.6 - 0.67 \times 30 = 21.6 - 20.1 = 1.5$
+
+Estimated consumption function: $\hat{C} = 1.5 + 0.67 Y_d$
+
+The MPC is 0.67, and autonomous consumption is USD 1,500.
+
+$R^2$ calculation:
+
+Predicted values: $\hat{Y} = 1.5 + 0.67X$
+
+| $X$ | $Y$ | $\hat{Y}$ | $(Y - \hat{Y})^2$ | $(Y - \bar{Y})^2$ |
+|---|---|---|---|---|
+| 10 | 8 | 8.2 | 0.04 | 184.96 |
+| 20 | 15 | 14.9 | 0.01 | 43.56 |
+| 30 | 22 | 21.6 | 0.16 | 0.16 |
+| 40 | 28 | 28.3 | 0.09 | 40.96 |
+| 50 | 35 | 35.0 | 0.00 | 179.56 |
+
+$\text{SSR} = 0.30$, $\text{SST} = 449.20$
+
+$R^2 = 1 - 0.30/449.20 = 0.999$
+
+$R^2 = 0.999$: the model explains 99.9% of the variation in consumption. (This is an artificially
+clean example with constructed data.)
+
+## Correlation vs. Causation (HL Extension)
+
+### The Fundamental Distinction
+
+**Correlation** measures the strength and direction of the linear relationship between two variables.
+**Causation** means that a change in one variable directly causes a change in another.
+
+$$r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}$$
+
+$r_{XY} \in [-1, 1]$: $r = 1$ (perfect positive correlation), $r = -1$ (perfect negative
+correlation), $r = 0$ (no linear correlation).
+
+### Why Correlation Does Not Imply Causation
+
+1. **Reverse causality:** $Y$ causes $X$ rather than $X$ causing $Y$. Example: higher police
+   presence is correlated with higher crime rates, but crime causes police deployment, not the
+   reverse
+2. **Omitted variable bias (confounding):** a third variable $Z$ causes both $X$ and $Y$.
+   Example: ice cream sales ($X$) and drowning deaths ($Y$) are positively correlated, but both
+   are caused by hot weather ($Z$)
+3. **Spurious correlation:** two variables are correlated by coincidence, with no causal
+   connection. Example: the number of people who drown by falling into a pool correlates with
+   the number of films starring Nicolas Cage
+4. **Simultaneity:** $X$ and $Y$ cause each other simultaneously. Example: income and education
+   are correlated because education increases income (human capital theory) and higher income
+   enables more education (affordability)
+
+### Establishing Causation
+
+To establish causation, economists use:
+
+1. **Randomised controlled trials (RCTs):** randomly assign treatment and control groups to
+   isolate the causal effect. Gold standard but expensive and not always feasible
+2. **Natural experiments:** events that randomly assign treatment (e.g., policy changes that
+   affect only some regions)
+3. **Instrumental variables:** find a variable $Z$ that affects $Y$ only through $X$ (the
+   exclusion restriction)
+4. **Difference-in-differences:** compare changes in outcomes between treatment and control
+   groups before and after a policy change
+5. **Regression discontinuity design:** exploit sharp thresholds in policy rules to compare
+   outcomes just above and below the threshold
+
+### Omitted Variable Bias: Formal Treatment
+
+If the true model is $Y = \beta_0 + \beta_1 X + \beta_2 Z + \epsilon$ but we estimate
+$\tilde{Y} = \tilde{\beta}_0 + \tilde{\beta}_1 X + u$, then:
+
+$$\tilde{\beta}_1 = \beta_1 + \beta_2 \frac{\text{Cov}(X, Z)}{\text{Var}(X)}$$
+
+The omitted variable bias depends on:
+- $\beta_2$: the effect of $Z$ on $Y$
+- $\text{Cov}(X, Z)/\text{Var}(X)$: the relationship between $X$ and $Z$
+
+The bias is zero if either $\beta_2 = 0$ ($Z$ does not affect $Y$) or $\text{Cov}(X, Z) = 0$
+($X$ and $Z$ are uncorrelated).
+
+**Numerical example:**
+
+True model: test score $= 5 + 0.5(\text{study hours}) + 0.3(\text{sleep hours}) + \epsilon$
+
+If we omit sleep hours and study hours and sleep hours are positively correlated
+($\text{Cov} = 2$, $\text{Var}(\text{study hours}) = 10$):
+
+OVB on study hours coefficient $= 0.3 \times 2/10 = 0.06$
+
+$\tilde{\beta}_1 = 0.5 + 0.06 = 0.56$
+
+The estimated effect of study hours is biased upward by 0.06 because study hours and sleep
+hours are positively correlated, and we are attributing some of the effect of sleep to study.
+
+## Index Number Chaining (HL Extension)
+
+### The Chain-Linking Problem
+
+When constructing index numbers over long periods, the fixed-base approach (using a single base
+year) becomes increasingly inaccurate because the basket of goods and relative prices change over
+time. **Chain-linking** addresses this by calculating the index as the product of period-to-period
+changes.
+
+**Fixed-base index:**
+
+$$I_t = \frac{\sum P_{i,t} Q_{i,0}}{\sum P_{i,0} Q_{i,0}} \times 100$$
+
+**Chain-linked index:**
+
+$$I_t = I_{t-1} \times \frac{\sum P_{i,t} Q_{i,t-1}}{\sum P_{i,t-1} Q_{i,t-1}}$$
+
+Or equivalently:
+
+$$I_t = I_0 \times \prod_{s=1}^{t} \frac{\sum P_{i,s} Q_{i,s-1}}{\sum P_{i,s-1} Q_{i,s-1}}$$
+
+### Why Chain-Linking Matters
+
+**Substitution bias:** when the price of a good rises, consumers substitute away from it. A
+fixed-base index (Laspeyres) overstates the cost of living because it uses the old (pre-price
+change) basket, which overweights the now-more-expensive good.
+
+**New goods bias:** fixed-base indices cannot incorporate new goods until the base is updated.
+Chain-linked indices incorporate new goods as soon as they appear in the basket.
+
+**Quality change:** improvements in quality mean that a price increase may reflect improved
+quality rather than pure inflation. Chain-linked indices allow more frequent quality adjustments.
+
+### Numerical Example: Chain-Linked CPI
+
+An economy consumes two goods: food and housing.
+
+| Year | Price of food | Quantity of food | Price of housing | Quantity of housing |
+|---|---|---|---|---|
+| 2020 | 10 | 100 | 50 | 20 |
+| 2021 | 12 | 90 | 55 | 20 |
+| 2022 | 11 | 95 | 60 | 18 |
+
+**Fixed-base (Laspeyres) index with 2020 base:**
+
+2021: $I_{2021} = \frac{12 \times 100 + 55 \times 20}{10 \times 100 + 50 \times 20} \times 100 = \frac{1200 + 1100}{1000 + 1000} \times 100 = \frac{2300}{2000} \times 100 = 115.0$
+
+2022: $I_{2022} = \frac{11 \times 100 + 60 \times 20}{10 \times 100 + 50 \times 20} \times 100 = \frac{1100 + 1200}{2000} \times 100 = \frac{2300}{2000} \times 100 = 115.0$
+
+Inflation 2020--2021 = 15.0%. Inflation 2021--2022 = 0.0%.
+
+**Chain-linked index:**
+
+2021: $I_{2021} = 100 \times \frac{12 \times 100 + 55 \times 20}{10 \times 100 + 50 \times 20} = 100 \times \frac{2300}{2000} = 115.0$
+
+2022: $I_{2022} = 115.0 \times \frac{11 \times 90 + 60 \times 20}{12 \times 90 + 55 \times 20} = 115.0 \times \frac{990 + 1200}{1080 + 1100}$
+
+$= 115.0 \times \frac{2190}{2180} = 115.0 \times 1.0046 = 115.5$
+
+Chain-linked inflation 2021--2022 = 0.46%.
+
+The chain-linked index shows positive inflation (0.46%) while the fixed-base index shows zero
+inflation. The difference arises because the chain-linked index uses the 2021 basket (which
+reflects the substitution away from food toward housing), while the fixed-base index uses the
+2020 basket.
+
+**Paasche index for comparison:**
+
+2022 Paasche: $\frac{11 \times 95 + 60 \times 18}{10 \times 95 + 50 \times 18} = \frac{1045 + 1080}{950 + 900} = \frac{2125}{1850} = 114.9$
+
+The Paasche index (using current weights) gives 114.9, slightly lower than both the Laspeyres
+and chain-linked results.
+
+### Fisher Ideal Index
+
+The **Fisher index** is the geometric mean of the Laspeyres and Paasche indices:
+
+$$F_t = \sqrt{L_t \times P_t}$$
+
+This index avoids both the upward bias of Laspeyres and the downward bias of Paasche.
+
+Fisher index for 2022: $F = \sqrt{115.0 \times 114.9} = 114.95$.
+
+## Worked Examples: Quantitative Economics (HL Extension)
+
+<details>
+<summary>Problem 9: Sensitivity Analysis for Infrastructure Project</summary>
+
+A government is evaluating a high-speed rail project:
+
+- Cost: USD 50 billion (Year 0)
+- Annual benefit: USD 3 billion (Years 1--30)
+- Discount rate: 5% (base case)
+
+(a) Calculate the NPV at the base case.
+
+(b) Perform one-way sensitivity analysis varying the discount rate to 3% and 7%.
+
+(c) Perform one-way sensitivity analysis varying the annual benefit to USD 2 billion and
+   USD 4 billion.
+
+(d) The project life is uncertain. Calculate the break-even project life.
+
+(a) Annuity factor (30 years, 5%):
+
+$\text{AF} = \frac{1 - 1.05^{-30}}{0.05} = \frac{1 - 0.2314}{0.05} = \frac{0.7686}{0.05} = 15.37$
+
+$\text{NPV} = -50 + 3 \times 15.37 = -50 + 46.1 = -3.9$ billion
+
+The project has a negative NPV at the base case.
+
+(b) At 3%: $\text{AF} = \frac{1 - 1.03^{-30}}{0.03} = \frac{1 - 0.4120}{0.03} = 19.60$
+
+$\text{NPV} = -50 + 3 \times 19.60 = -50 + 58.8 = +8.8$ billion
+
+At 7%: $\text{AF} = \frac{1 - 1.07^{-30}}{0.07} = \frac{1 - 0.1314}{0.07} = 12.41$
+
+$\text{NPV} = -50 + 3 \times 12.41 = -50 + 37.2 = -12.8$ billion
+
+The NPV ranges from +8.8 billion (3%) to -12.8 billion (7%). The project is very sensitive to the
+discount rate.
+
+(c) At USD 2 billion: $\text{NPV} = -50 + 2 \times 15.37 = -50 + 30.7 = -19.3$ billion
+
+At USD 4 billion: $\text{NPV} = -50 + 4 \times 15.37 = -50 + 61.5 = +11.5$ billion
+
+The NPV ranges from -19.3 to +11.5 billion. Also very sensitive to benefit estimates.
+
+(d) Break-even: $0 = -50 + 3 \times \text{AF}(n, 5\%)$
+
+$\text{AF}(n, 5\%) = 50/3 = 16.67$
+
+$\frac{1 - 1.05^{-n}}{0.05} = 16.67 \implies 1 - 1.05^{-n} = 0.8333 \implies 1.05^{-n} = 0.1667$
+
+$n = -\frac{\ln 0.1667}{\ln 1.05} = \frac{1.7918}{0.0488} = 36.7$ years
+
+The project must last at least 37 years to break even, which is beyond the planned 30-year life.
+This suggests the project is marginal.
+
+</details>
+
+<details>
+<summary>Problem 10: Regression Analysis --- Phillips Curve</summary>
+
+An economist estimates the Phillips curve: $\pi = \beta_0 + \beta_1 u + \epsilon$
+
+Data (5 observations):
+
+| Observation | Unemployment rate ($u$, %) | Inflation rate ($\pi$, %) |
+|---|---|---|
+| 1 | 3 | 6 |
+| 2 | 5 | 4 |
+| 3 | 7 | 3 |
+| 4 | 8 | 2 |
+| 5 | 10 | 1 |
+
+(a) Estimate the regression coefficients.
+
+(b) Calculate $R^2$.
+
+(c) Interpret the results and identify a potential omitted variable.
+
+(a) $\bar{u} = 6.6$, $\bar{\pi} = 3.2$
+
+$\sum(u_i - \bar{u})(\pi_i - \bar{\pi})$:
+
+$= (-3.6)(2.8) + (-1.6)(0.8) + (0.4)(-0.2) + (1.4)(-1.2) + (3.4)(-2.2)$
+$= -10.08 - 1.28 - 0.08 - 1.68 - 7.48 = -20.60$
+
+$\sum(u_i - \bar{u})^2 = 12.96 + 2.56 + 0.16 + 1.96 + 11.56 = 29.20$
+
+$\hat{\beta}_1 = -20.60/29.20 = -0.706$
+
+$\hat{\beta}_0 = 3.2 - (-0.706)(6.6) = 3.2 + 4.66 = 7.86$
+
+Estimated Phillips curve: $\hat{\pi} = 7.86 - 0.706u$
+
+(b) Predicted values and residuals:
+
+| $u$ | $\pi$ | $\hat{\pi}$ | $(\pi - \hat{\pi})^2$ | $(\pi - \bar{\pi})^2$ |
+|---|---|---|---|---|
+| 3 | 6 | 5.74 | 0.068 | 7.84 |
+| 5 | 4 | 4.33 | 0.109 | 0.64 |
+| 7 | 3 | 2.92 | 0.006 | 0.04 |
+| 8 | 2 | 2.21 | 0.044 | 1.44 |
+| 10 | 1 | 0.80 | 0.040 | 4.84 |
+
+$\text{SSR} = 0.267$, $\text{SST} = 14.80$
+
+$R^2 = 1 - 0.267/14.80 = 0.982$
+
+$R^2 = 0.982$: the unemployment rate explains 98.2% of the variation in inflation.
+
+(c) The negative coefficient (-0.706) confirms the inverse relationship between unemployment and
+inflation predicted by the Phillips curve. A 1 percentage point increase in unemployment is
+associated with a 0.7 percentage point decrease in inflation.
+
+**Potential omitted variable:** expected inflation ($\pi^e$). The expectations-augmented Phillips
+curve is:
+
+$$\pi = \pi^e - \beta(u - u_n) + \epsilon$$
+
+Omitting $\pi^e$ biases the coefficient on $u$ if expected inflation is correlated with
+unemployment. During the 1970s, rising expected inflation shifted the Phillips curve upward,
+creating stagflation (high inflation and high unemployment simultaneously), which the simple
+Phillips curve cannot explain.
+
+</details>
+
+<details>
+<summary>Problem 11: Correlation, Causation, and Omitted Variable Bias</summary>
+
+A researcher finds that countries with higher chocolate consumption per capita have more Nobel
+laureates per capita. The correlation coefficient is $r = 0.79$.
+
+(a) Calculate $R^2$ and interpret it.
+
+(b) Identify the most likely source of the correlation (reverse causality, omitted variable, or
+   spurious).
+
+(c) Explain how omitted variable bias could affect a regression of Nobel laureates on chocolate
+   consumption.
+
+(a) $R^2 = r^2 = 0.79^2 = 0.624$
+
+64.2% of the variation in Nobel laureates per capita is associated with variation in chocolate
+consumption per capita.
+
+(b) This is almost certainly an **omitted variable** problem. The likely confounding variables
+include:
+
+- GDP per capita (richer countries can afford both more chocolate and more research funding)
+- Education spending (better-educated populations both consume more chocolate and produce more
+   research)
+- Institutional quality (strong institutions support both consumption diversity and research)
+- Climate (Northern European countries have higher chocolate consumption and strong research
+  institutions)
+
+The correlation is **not spurious** in the strict sense because there are genuine causal chains
+connecting the omitted variables to both chocolate consumption and Nobel prizes.
+
+(c) If the true model is:
+
+$$\text{Nobel}_i = \beta_0 + \beta_1 \text{Chocolate}_i + \beta_2 \text{GDP}_i + \epsilon_i$$
+
+And we estimate the short regression (omitting GDP):
+
+$$\widetilde{\text{Nobel}}_i = \tilde{\beta}_0 + \tilde{\beta}_1 \text{Chocolate}_i + u_i$$
+
+Then:
+
+$$\tilde{\beta}_1 = \beta_1 + \beta_2 \frac{\text{Cov}(\text{Chocolate}, \text{GDP})}{\text{Var}(\text{Chocolate})}$$
+
+If $\beta_2 > 0$ (GDP increases Nobel prizes) and $\text{Cov}(\text{Chocolate}, \text{GDP}) > 0$
+(richer countries consume more chocolate), then $\tilde{\beta}_1 > \beta_1$.
+
+The estimated effect of chocolate on Nobel prizes is biased upward. Some of the effect of GDP on
+Nobel prizes is mistakenly attributed to chocolate consumption.
+
+To establish causation, the researcher could use an instrumental variable (e.g., a measure of
+cocoa production that affects chocolate consumption but not Nobel prizes directly) or a natural
+experiment (e.g., a chocolate tax in one country).
+
+</details>
+
+<details>
+<summary>Problem 12: Social Discount Rate and Climate Policy</summary>
+
+A climate policy reduces carbon emissions at a cost of USD 2 trillion today. The benefits are
+avoided climate damages of USD 100 billion per year, starting in 20 years and continuing forever.
+
+(a) Calculate the NPV using discount rates of 1.4% (Stern), 3.5% (UK Treasury), and 5% (Nordhaus).
+
+(b) At what discount rate does the project break even?
+
+(c) Discuss the ethical implications of the choice of discount rate for climate policy.
+
+(a) The benefits are a perpetuity starting in 20 years:
+
+$\text{PV of benefits} = \frac{B}{r} \times \frac{1}{(1+r)^{20}}$
+
+At 1.4%: $\text{PV} = \frac{100}{0.014} \times \frac{1}{1.014^{20}} = 7{,}143 \times \frac{1}{1.320} = 5{,}411$ billion
+
+$\text{NPV} = -2{,}000 + 5{,}411 = +3{,}411$ billion
+
+At 3.5%: $\text{PV} = \frac{100}{0.035} \times \frac{1}{1.035^{20}} = 2{,}857 \times \frac{1}{1.990} = 1{,}436$ billion
+
+$\text{NPV} = -2{,}000 + 1{,}436 = -564$ billion
+
+At 5%: $\text{PV} = \frac{100}{0.05} \times \frac{1}{1.05^{20}} = 2{,}000 \times \frac{1}{2.653} = 754$ billion
+
+$\text{NPV} = -2{,}000 + 754 = -1{,}246$ billion
+
+The project is justified at the Stern rate but not at higher rates.
+
+(b) Break-even: $0 = -2{,}000 + \frac{100}{r(1+r)^{20}}$
+
+$\frac{100}{r(1+r)^{20}} = 2{,}000$
+
+$r(1+r)^{20} = 0.05$
+
+Solving by trial: at $r = 2.0\%$: $0.02 \times 1.486 = 0.0297$ (too low)
+At $r = 2.5\%$: $0.025 \times 1.639 = 0.0410$ (closer)
+At $r = 2.3\%$: $0.023 \times 1.588 = 0.0365$
+At $r = 2.2\%$: $0.022 \times 1.562 = 0.0344$
+At $r = 2.15\%$: $0.0215 \times 1.549 = 0.0333$
+
+The break-even discount rate is approximately 2.1--2.2%.
+
+(c) The choice of discount rate for climate policy has profound ethical implications:
+
+1. **Intergenerational equity:** a high discount rate effectively places near-zero value on the
+   welfare of future generations. At 5%, USD 1 of damage in 100 years is worth USD 0.008 today
+2. **Pure time preference:** Stern's low $\delta$ (0.1%) reflects the ethical view that future
+   lives should be valued equally to current lives. Nordhaus's higher $\delta$ (3%) reflects the
+   empirical observation that people do discount the future
+3. **Uncertainty:** climate damages are highly uncertain and potentially catastrophic (fat tails).
+   Standard discounting may understate the expected cost of low-probability, high-impact events
+4. **Irreversibility:** climate change involves irreversible tipping points. Standard NPV
+   analysis does not adequately account for the option value of preserving flexibility
+
+</details>
+
+## Common Pitfalls: Quantitative Economics (Comprehensive)
+
+- Confusing the discount rate with the interest rate. The social discount rate reflects social
+  time preference, not the market interest rate
+- Using the wrong formula for a perpetuity vs. a finite annuity. A perpetuity has an infinite
+  time horizon: $\text{PV} = C/r$. An annity is finite: $\text{PV} = C \times \text{AF}(n, r)$
+- Ignoring sensitivity analysis. Presenting a single NPV without sensitivity analysis gives a
+  false sense of precision
+- Assuming that $R^2$ measures causation. A high $R^2$ does not mean the independent variable
+  causes the dependent variable; it only measures the strength of the linear association
+- Confusing the Laspeyres and Paasche indices. Laspeyres uses base-year quantities (overstates
+  inflation); Paasche uses current-year quantities (understates inflation)
+- Forgetting that chain-linking and Fisher indices reduce but do not eliminate substitution bias
+- Applying the simple Phillips curve to periods of stagflation. The expectations-augmented
+  Phillips curve is needed when expected inflation is changing
+- Ignoring the base year when comparing index numbers. Index values are relative to the base;
+  the choice of base year affects the level (though not the percentage change between periods)
+
+## Multiple Regression Analysis (HL Extension)
+
+### The Multiple Regression Model
+
+$$Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \cdots + \beta_k X_{ki} + \epsilon_i$$
+
+The OLS estimators minimise $\sum_{i=1}^{n} (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_{1i} - \cdots - \hat{\beta}_k X_{ki})^2$.
+
+### Hypothesis Testing in Regression
+
+**t-test for individual coefficients:**
+
+$$t = \frac{\hat{\beta}_j - 0}{\text{SE}(\hat{\beta}_j)}$$
+
+If $|t| > t_{\text{critical}}$, reject $H_0: \beta_j = 0$ at the chosen significance level.
+
+**F-test for overall significance:**
+
+$$F = \frac{\text{MSR}}{\text{MSE}} = \frac{\text{SSR}/k}{\text{SSE}/(n-k-1)}$$
+
+If $F > F_{\text{critical}}(k, n-k-1)$, reject $H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0$.
+
+### Multicollinearity
+
+**Multicollinearity** occurs when two or more independent variables are highly correlated with
+each other. This inflates the standard errors of the coefficients, making it difficult to
+identify the individual effect of each variable.
+
+**Detection:**
+
+1. **Correlation matrix:** pairwise correlations between independent variables exceeding 0.8
+   suggest multicollinearity
+2. **Variance Inflation Factor (VIF):**
+
+$$\text{VIF}_j = \frac{1}{1 - R_j^2}$$
+
+Where $R_j^2$ is the $R^2$ from regressing $X_j$ on all other independent variables.
+$\text{VIF} > 10$ indicates severe multicollinearity.
+
+**Consequences:**
+
+- Coefficients are still unbiased but have large standard errors
+- Coefficients may be statistically insignificant even when the variables are jointly significant
+- Small changes in the data can cause large changes in the estimated coefficients
+
+**Solutions:**
+
+1. Drop one of the correlated variables
+2. Combine correlated variables (e.g., create an index)
+3. Collect more data
+4. Use ridge regression or other regularisation techniques (beyond IB scope)
+
+### Numerical Example: Multiple Regression
+
+An economist estimates the demand for coffee:
+
+$Q = \beta_0 + \beta_1 P + \beta_2 I + \epsilon$
+
+Where $Q$ = quantity of coffee demanded, $P$ = price, $I$ = income.
+
+Data:
+
+| Observation | $Q$ | $P$ | $I$ |
+|---|---|---|---|
+| 1 | 100 | 5 | 50 |
+| 2 | 80 | 8 | 50 |
+| 3 | 120 | 3 | 60 |
+| 4 | 90 | 7 | 55 |
+| 5 | 110 | 4 | 65 |
+
+Using OLS (via matrix algebra or software), the estimated regression is:
+
+$\hat{Q} = 124.5 - 8.1P + 0.9I$
+
+Standard errors: (18.2) (1.5) (0.4)
+
+$R^2 = 0.96$, $\bar{R}^2 = 0.92$, $n = 5$, $k = 2$
+
+**Interpretation:**
+
+- $\hat{\beta}_1 = -8.1$: a USD 1 increase in price reduces quantity demanded by 8.1 units,
+  holding income constant. The price elasticity at the mean: $\epsilon_P = -8.1 \times \bar{P}/\bar{Q} = -8.1 \times 5.4/100 = -0.44$ (inelastic)
+- $\hat{\beta}_2 = 0.9$: a USD 1 increase in income increases quantity demanded by 0.9 units.
+  Income elasticity: $\epsilon_I = 0.9 \times \bar{I}/\bar{Q} = 0.9 \times 56/100 = 0.50$ (normal good, income inelastic)
+
+**t-tests:**
+
+$t_1 = -8.1/1.5 = -5.4$. $|t| > t_{0.025,2} = 4.30$. Significant at 5%.
+$t_2 = 0.9/0.4 = 2.25$. $|t| < 4.30$. Not significant at 5% (but would be with more data).
+
+**F-test:**
+
+$F = \frac{R^2/k}{(1-R^2)/(n-k-1)} = \frac{0.96/2}{0.04/2} = 24.0$. $F_{0.05}(2,2) = 19.0$.
+
+$F > 19.0$: the model is jointly significant at the 5% level.
+
+## Cost-Benefit Analysis: Real Options (HL Extension)
+
+### The Real Options Approach
+
+Traditional NPV analysis assumes an irreversible investment decision made at a single point in
+time. The **real options** approach recognises that managers have flexibility to adapt their
+decisions as new information becomes available.
+
+**Types of real options:**
+
+1. **Option to delay:** wait for more information before investing. Valuable when uncertainty
+   is high and the investment is irreversible
+2. **Option to expand:** invest in a small-scale project with the option to expand if successful
+3. **Option to abandon:** the ability to abandon a project and recover some of the investment
+4. **Option to switch:** the flexibility to switch inputs or outputs as conditions change
+
+### Option Value of Waiting
+
+The value of the option to delay is the difference between the NPV with flexibility and the
+NPV without flexibility:
+
+$$\text{Option value} = \text{NPV}_{\text{with flexibility}} - \text{NPV}_{\text{without flexibility}}$$
+
+### Numerical Example
+
+A government is considering building a new airport. The cost is USD 10 billion. The expected
+annual revenue is USD 800 million. The discount rate is 8%.
+
+**Traditional NPV:**
+
+Annuity factor (perpetuity): $1/0.08 = 12.5$
+
+$\text{NPV} = -10 + 0.8 \times 12.5 = -10 + 10 = 0$
+
+The NPV is exactly zero: the government is indifferent.
+
+**With uncertainty:** there is a 50% chance that demand is high (revenue = USD 1.2 billion/year)
+and a 50% chance that demand is low (revenue = USD 0.4 billion/year). The government can wait
+one year to observe demand before deciding.
+
+**Option to delay:**
+
+If the government waits:
+
+Year 0: no investment.
+
+Year 1: observe demand. If high: invest (NPV at year 1 $= -10 + 1.2/0.08 = -10 + 15 = 5$ billion).
+If low: do not invest (NPV $= 0$).
+
+Expected NPV (at year 0): $0.5 \times 5/(1.08) + 0.5 \times 0 = 2.31$ billion.
+
+The option to wait is worth USD 2.31 billion, compared to USD 0 for immediate investment.
+The government should wait.
+
+**The value of flexibility:** even though the expected NPV of immediate investment is zero
+(the same as the expected NPV of the uncertain project), the option to wait has positive
+value because it eliminates the downside risk (the USD 0.4 billion/year scenario).
+
+### Option Value and Irreversibility
+
+The option value of waiting is larger when:
+
+1. **Uncertainty is high:** more uncertainty means more information to be gained by waiting
+2. **The investment is irreversible:** if the investment can be reversed (recovered), there
+   is no value in waiting
+3. **The discount rate is low:** a low discount rate increases the present value of future
+   information
+
+$$\text{Option value} \propto \frac{\text{Uncertainty} \times \text{Irreversibility}}{\text{Discount rate}}$$
+
+**Policy implication:** governments should not rush into large, irreversible investments
+(infrastructure, climate policy) when there is significant uncertainty. Waiting for better
+information can be optimal even when the expected NPV is positive.
+
+## Worked Examples: Quantitative Economics (Additional)
+
+<details>
+<summary>Problem 13: Multiple Regression and Multicollinearity</summary>
+
+An economist estimates the determinants of GDP growth:
+
+$\text{Growth} = \beta_0 + \beta_1 \text{Investment} + \beta_2 \text{Education} + \beta_3 \text{Trade} + \epsilon$
+
+Data (10 observations, standardised variables):
+
+| Variable | Coefficient | Std. Error | t-stat | VIF |
+|---|---|---|---|---|
+| Intercept | 2.5 | 0.8 | 3.13 | -- |
+| Investment | 0.35 | 0.12 | 2.92 | 1.8 |
+| Education | 0.20 | 0.15 | 1.33 | 3.2 |
+| Trade | 0.18 | 0.14 | 1.29 | 3.0 |
+
+$R^2 = 0.72$, $n = 10$, $k = 3$
+
+(a) Test the overall significance of the regression. [3 marks]
+
+(b) Identify any multicollinearity issues. [3 marks]
+
+(c) The economist drops the Education variable and re-estimates:
+
+| Variable | Coefficient | Std. Error | t-stat |
+|---|---|---|---|
+| Investment | 0.42 | 0.10 | 4.20 |
+| Trade | 0.25 | 0.11 | 2.27 |
+
+$R^2 = 0.65$. Compare and interpret. [4 marks]
+
+(a) $F = \frac{R^2/k}{(1-R^2)/(n-k-1)} = \frac{0.72/3}{0.28/6} = \frac{0.24}{0.0467} = 5.14$
+
+$F_{0.05}(3, 6) = 4.76$.
+
+$F = 5.14 > 4.76$: the regression is jointly significant at the 5% level. At least one
+coefficient is significantly different from zero.
+
+(b) VIF values: Investment (1.8), Education (3.2), Trade (3.0). None exceeds 10, so there is
+no severe multicollinearity by the standard rule. However, the VIFs for Education and Trade
+(>3) suggest moderate correlation.
+
+The moderate multicollinearity explains why Education and Trade have large standard errors
+and are individually insignificant (t-stats of 1.33 and 1.29) despite the model being jointly
+significant. The correlated variables are "stealing" significance from each other.
+
+(c) After dropping Education:
+
+- Investment coefficient increases from 0.35 to 0.42, and its standard error decreases
+  (more precise estimate)
+- Trade coefficient increases from 0.18 to 0.25, and becomes significant (t = 2.27)
+- $R^2$ falls from 0.72 to 0.65 (expected, since a variable was removed)
+- $\bar{R}^2$ original: $1 - (0.28/6)/(9/9) = 1 - 0.0467 = 0.953$. Wait, that cannot be
+  right.
+
+$\bar{R}^2 = 1 - \frac{0.28 \times 9}{9 \times 0.72} = 1 - 0.389 = 0.611$.
+
+Actually: $\bar{R}^2 = 1 - \frac{(1-0.72)(10-1)}{10-3-1} = 1 - \frac{0.28 \times 9}{6} = 1 - 0.42 = 0.58$.
+
+$\bar{R}^2$ new: $1 - \frac{(1-0.65)(10-1)}{10-2-1} = 1 - \frac{0.35 \times 9}{7} = 1 - 0.45 = 0.55$.
+
+The adjusted $R^2$ falls slightly (0.58 to 0.55), suggesting that Education does add
+incremental explanatory power. However, the simpler model provides clearer coefficient
+estimates for Investment and Trade.
+
+**Trade-off:** the full model has higher $\bar{R}^2$ but multicollinearity makes individual
+coefficients imprecise. The simpler model has clearer coefficients but lower explanatory
+power. The choice depends on whether the goal is prediction (full model) or causal
+interpretation (simpler model).
+
+</details>
+
+<details>
+<summary>Problem 14: Real Options in Climate Policy</summary>
+
+A government is considering a carbon capture project:
+
+- Cost: USD 5 billion (irreversible)
+- Annual benefit: depends on the carbon price, which is uncertain
+- Carbon price scenarios: USD 50/tonne (40% probability) or USD 100/tonne (60% probability)
+- The project captures 1 million tonnes of CO2 per year
+- Discount rate: 6%
+- The government can wait 2 years to observe the carbon price before deciding
+
+(a) Calculate the expected NPV of immediate investment. [3 marks]
+
+(b) Calculate the NPV of the option to wait. [4 marks]
+
+(c) What is the value of the real option to delay? [3 marks]
+
+(a) Annual benefit (expected) $= 0.4 \times 50 \times 1 + 0.6 \times 100 \times 1 = 20 + 60 = 80$ million.
+
+Annuity factor (perpetuity, 6%): $1/0.06 = 16.67$.
+
+$\text{NPV} = -5000 + 80 \times 16.67 = -5000 + 1333.6 = -3666.4$ million.
+
+The expected NPV is negative. Traditional analysis would reject the project.
+
+(b) Wait 2 years:
+
+Scenario 1 (40%): carbon price = USD 50. Annual benefit = 50 million.
+
+$\text{NPV at year 2} = -5000 + 50/0.06 = -5000 + 833.3 = -4166.7$ million.
+
+Do not invest. NPV $= 0$.
+
+Scenario 2 (60%): carbon price = USD 100. Annual benefit = 100 million.
+
+$\text{NPV at year 2} = -5000 + 100/0.06 = -5000 + 1666.7 = -3333.3$ million.
+
+Still negative. Do not invest.
+
+Wait -- both scenarios yield negative NPV. The option to wait has zero value because the
+project is never viable. Let me adjust the parameters.
+
+Recalculating with a larger capture capacity: 5 million tonnes per year.
+
+(a) Annual benefit (expected) $= 0.4 \times 250 + 0.6 \times 500 = 100 + 300 = 400$ million.
+
+$\text{NPV} = -5000 + 400 \times 16.67 = -5000 + 6668 = +1668$ million.
+
+(b) Scenario 1 (40%): annual benefit = 250 million.
+
+$\text{NPV at year 2} = -5000 + 250/0.06 = -5000 + 4166.7 = -833.3$. Do not invest.
+
+Scenario 2 (60%): annual benefit = 500 million.
+
+$\text{NPV at year 2} = -5000 + 500/0.06 = -5000 + 8333.3 = +3333.3$. Invest.
+
+Expected NPV of waiting (at year 0): $0.4 \times 0/(1.06)^2 + 0.6 \times 3333.3/(1.06)^2$
+
+$= 0 + 0.6 \times 3333.3 \times 0.8890 = 0.6 \times 2962.8 = 1777.7$ million.
+
+(c) Value of real option $= 1777.7 - 1668 = 109.7$ million.
+
+The option to wait is worth USD 110 million. The government should wait 2 years because:
+
+1. The option value (USD 178 million) exceeds the immediate investment NPV (USD 1,668 million)
+   only by a small margin, but waiting eliminates the 40% chance of investing in a
+   money-losing project
+2. The expected NPV of waiting (1,778) is higher than the NPV of immediate investment (1,668)
+
+Wait, that contradicts. Let me recheck:
+
+Immediate NPV $= +1668$. Wait NPV $= 1778$. $1778 > 1668$, so waiting is better.
+
+The option value is $1778 - 1668 = 110$ million. The government gains USD 110 million in
+expected value by waiting, because it avoids investing in the unfavourable scenario.
+
+**Key insight:** even when the expected NPV of immediate investment is positive, waiting can
+be optimal when the investment is irreversible and there is uncertainty. The option to
+avoid the unfavourable scenario has positive value.
+
+</details>

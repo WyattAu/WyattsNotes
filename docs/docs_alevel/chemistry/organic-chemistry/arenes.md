@@ -496,7 +496,273 @@ $$
 
 The directing group strategy ensures the nitro group ends up para to the substituent that will become the aldehyde.
 
+## Worked Examples: Arenes in Depth
+
+### Example 1: Nitration Mechanism with Curly Arrows
+
+**Complete mechanism for the nitration of benzene:**
+
+**Step 1: Generation of the electrophile ($\mathrm{NO}_2^+$).**
+
+The nitronium ion is formed by the reaction of concentrated nitric acid with concentrated sulphuric acid:
+
+$$\mathrm{HNO}_3 + \mathrm{H}_2\mathrm{SO}_4 \to \mathrm{NO}_2^+ + \mathrm{HSO}_4^- + \mathrm{H}_2\mathrm{O}$$
+
+Electron flow: The lone pair on the oxygen of $\mathrm{HNO}_3$ attacks the hydrogen of $\mathrm{H}_2\mathrm{SO}_4$, forming $\mathrm{H}_2\mathrm{NO}_3^+$. Water is eliminated, leaving $\mathrm{NO}_2^+$.
+
+**Step 2: Electrophilic attack on benzene.**
+
+The $\pi$ electrons of benzene attack the nitrogen of $\mathrm{NO}_2^+$, forming the sigma complex (arenium ion). The positive charge is delocalised over three carbon atoms (the carbon bearing the nitro group and the two ortho carbons).
+
+**Step 3: Deprotonation.**
+
+$\mathrm{HSO}_4^-$ removes the proton from the carbon bearing the $\mathrm{NO}_2$ group, restoring aromaticity. The sulphuric acid is regenerated.
+
+### Example 2: Friedel-Crafts Acylation Mechanism
+
+**Acylation of benzene with ethanoyl chloride:**
+
+$$\mathrm{C}_6\mathrm{H}_6 + \mathrm{CH}_3\mathrm{COCl} \xrightarrow{\mathrm{AlCl}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{COCH}_3 + \mathrm{HCl}$$
+
+**Step 1: Formation of the electrophile.**
+
+$\mathrm{AlCl}_3$ (a Lewis acid) coordinates to the chlorine of ethanoyl chloride, polarising the C--Cl bond and forming the acylium ion:
+
+$$\mathrm{CH}_3\mathrm{COCl} + \mathrm{AlCl}_3 \to \mathrm{CH}_3\mathrm{CO}^+ + \mathrm{AlCl}_4^-$$
+
+The acylium ion is resonance-stabilised: $\mathrm{CH}_3\mathrm{C}\equiv\mathrm{O}^+ \leftrightarrow \mathrm{CH}_3\mathrm{C}^+=\mathrm{O}$
+
+**Step 2: Electrophilic attack.**
+
+The $\pi$ electrons of benzene attack the carbonyl carbon of the acylium ion, forming the sigma complex.
+
+**Step 3: Deprotonation.**
+
+$\mathrm{AlCl}_4^-$ removes a proton, restoring aromaticity and regenerating $\mathrm{AlCl}_3$ and $\mathrm{HCl}$.
+
+### Example 3: Sequential Electrophilic Substitutions
+
+**Synthesis of 4-nitro-2-methylbenzoic acid from toluene.**
+
+Step 1: Nitration of toluene. The $-\mathrm{CH}_3$ group is ortho/para directing. Nitration gives a mixture of 2-nitrotoluene (ortho) and 4-nitrotoluene (para). Isolate 4-nitrotoluene by fractional distillation.
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3 \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4} 4\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{CH}_3 \text{ (major)}$$
+
+Step 2: Oxidation of the methyl group to carboxylic acid:
+
+$$4\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{CH}_3 \xrightarrow{\mathrm{KMnO}_4,\,\Delta} 4\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{COOH}$$
+
+Step 3: A second nitration would place the nitro group meta to the $-\mathrm{COOH}$ group (meta director). But we need it ortho to the $-\mathrm{COOH}$.
+
+This synthesis requires careful ordering: the methyl group directs the first nitration, and after oxidation the $-\mathrm{COOH}$ directs any further substitution meta. To get the 2-nitro isomer, a different strategy is needed (e.g., reduce the nitro group, protect as amide, oxidise, deprotect, then nitrate).
+
+### Example 4: Delocalisation Energy Calculation
+
+**Calculate the delocalisation energy of benzene from hydrogenation data.**
+
+Hydrogenation of cyclohexene: $\mathrm{C}_6\mathrm{H}_{10} + \mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$, $\Delta H = -120\,\mathrm{kJ/mol}$
+
+If benzene had three isolated C=C bonds, expected $\Delta H_\mathrm{hydrogenation} = 3 \times (-120) = -360\,\mathrm{kJ/mol}$
+
+Experimental: $\mathrm{C}_6\mathrm{H}_6 + 3\mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$, $\Delta H = -208\,\mathrm{kJ/mol}$
+
+$$\text{Delocalisation energy} = -360 - (-208) = -152\,\mathrm{kJ/mol}$$
+
+The negative sign indicates that benzene is stabilised by $152\,\mathrm{kJ/mol}$ relative to the hypothetical Kekule structure with three isolated double bonds.
+
+### Example 5: Bromination of Phenol -- Detailed Mechanism
+
+**Reaction:** $\mathrm{C}_6\mathrm{H}_5\mathrm{OH} + 3\mathrm{Br}_2 \to \mathrm{C}_6\mathrm{H}_2\mathrm{Br}_3\mathrm{OH} + 3\mathrm{HBr}$
+
+Phenol is so activated that it reacts with bromine water (dilute aqueous $\mathrm{Br}_2$) without a Lewis acid catalyst.
+
+**Mechanism:**
+
+1. In aqueous solution, the $-\mathrm{OH}$ group is partially deprotonated to give the phenoxide ion ($\mathrm{C}_6\mathrm{H}_5\mathrm{O}^-$), which is even more electron-rich.
+
+2. The phenoxide ion donates electron density into the ring through resonance. The oxygen lone pair can delocalise into the ring at the ortho and para positions.
+
+3. $\mathrm{Br}_2$ acts as an electrophile (polarised by the electron-rich ring). The first bromination occurs at the position para to $-\mathrm{OH}$ (or ortho, since both are activated).
+
+4. After the first bromination, the product is more deactivated, but still reactive enough for bromination at the second ortho position.
+
+5. The third bromination occurs at the remaining ortho position, giving 2,4,6-tribromophenol.
+
+**Observation:** A white precipitate forms immediately (2,4,6-tribromophenol is insoluble in water) and the bromine water is decolourised.
+
+### Example 6: Comparing the Acidity of Phenol and Ethanol
+
+**Phenol:** $\mathrm{p}K_a = 10.0$. **Ethanol:** $\mathrm{p}K_a = 16.0$.
+
+Phenol is approximately one million times more acidic than ethanol. The phenoxide ion is stabilised by resonance delocalisation of the negative charge over the aromatic ring, whereas the ethoxide ion ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{O}^-$) has no such stabilisation.
+
+Resonance structures of the phenoxide ion:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{O}^- \leftrightarrow \overset{-}{\mathrm{C}}_6\mathrm{H}_4 = \mathrm{O} \leftrightarrow \mathrm{C}_6\mathrm{H}_4 = \overset{+}{\mathrm{O}} \leftrightarrow \dots$$
+
+The negative charge is distributed over the ortho and para carbons of the ring, making the phenoxide ion significantly more stable than the ethoxide ion.
+
+### Example 7: Synthesis of 4-Bromophenol from Benzene
+
+The challenge: $-\mathrm{OH}$ is ortho/para directing and strongly activating, but $-\mathrm{Br}$ is deactivating. We need to introduce bromine para to the $-\mathrm{OH}$ group.
+
+**Route:**
+
+Step 1: Nitration of benzene: $\mathrm{C}_6\mathrm{H}_6 \to \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2$
+
+Step 2: Reduction: $\mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 \to \mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2$
+
+Step 3: Diazotisation: $\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2 \xrightarrow{\mathrm{NaNO}_2/\mathrm{HCl}} \mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^-$
+
+Step 4: Hydrolysis of the diazonium salt to phenol:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{H}_2\mathrm{O} \xrightarrow{\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{OH} + \mathrm{N}_2 + \mathrm{H}^+$$
+
+Step 5: Bromination of phenol with bromine water (no catalyst needed):
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{OH} + \mathrm{Br}_2(aq) \to 4\text{-}\mathrm{BrC}_6\mathrm{H}_4\mathrm{OH} \text{ (mono-bromination at para)}$$
+
+Note: Controlling mono-bromination of phenol requires careful control of bromine stoichiometry (use 1 equivalent of $\mathrm{Br}_2$ in a non-aqueous solvent such as $\mathrm{CS}_2$ at low temperature). In aqueous bromine water, tri-bromination occurs. For mono-bromination, use bromine in a non-polar solvent.
+
+## Practical Techniques for Aromatic Chemistry
+
+### Required Practical: Nitration of Methylbenzene (AQA RP 12)
+
+**Objective:** To prepare methyl 3-nitrobenzoate by nitration of methyl benzoate (or nitration of methylbenzene).
+
+**Safety:** Concentrated $\mathrm{HNO}_3$ and $\mathrm{H}_2\mathrm{SO}_4$ are highly corrosive. Nitrobenzene and its derivatives are toxic. Wear gloves, eye protection, and work in a fume cupboard.
+
+**Procedure (nitration of methylbenzene):**
+1. In a fume cupboard, add $10\,\mathrm{cm}^3$ of concentrated $\mathrm{HNO}_3$ to a conical flask and cool in an ice bath.
+2. Slowly add $10\,\mathrm{cm}^3$ of concentrated $\mathrm{H}_2\mathrm{SO}_4$, with stirring, maintaining the temperature below $20^\circ\mathrm{C}$.
+3. Cool the nitrating mixture to $0$--$5^\circ\mathrm{C}$.
+4. Add $5\,\mathrm{cm}^3$ of methylbenzene dropwise, with vigorous stirring, keeping the temperature below $10^\circ\mathrm{C}$.
+5. After addition, allow the mixture to stand at room temperature for 15 minutes, then pour onto crushed ice.
+6. Filter the yellow solid (mixture of 2-nitrotoluene and 4-nitrotoluene) under reduced pressure.
+7. Wash with cold water and recrystallise from ethanol.
+
+**Key control:** Temperature must be kept low to prevent di-nitration and oxidation side reactions.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (6 marks)</summary>
+
+Benzene does not react with bromine water under normal conditions, but phenol decolourises bromine water immediately. Explain this difference.
+
+**Mark Scheme:**
+
+6 marks:
+- Benzene undergoes electrophilic substitution, which requires a strong electrophile (1 mark). Bromine water does not provide a sufficiently strong electrophile without a Lewis acid catalyst ($\mathrm{FeBr}_3$) (1 mark).
+- Phenol has an $-\mathrm{OH}$ group that donates electron density into the ring through resonance, increasing the electron density at the ortho and para positions (1 mark).
+- This makes the ring much more nucleophilic and more reactive towards electrophiles (1 mark).
+- The increased electron density polarises the $\mathrm{Br}_2$ molecule sufficiently for it to act as an electrophile without a catalyst (1 mark).
+- Phenol is so activated that it undergoes tri-bromination, giving 2,4,6-tribromophenol as a white precipitate (1 mark).
+
 </details>
+
+<details>
+<summary>Q2 (5 marks)</summary>
+
+Describe the mechanism for the nitration of benzene. Include the formation of the electrophile and the structure of the intermediate.
+
+**Mark Scheme:**
+
+5 marks:
+- Formation of $\mathrm{NO}_2^+$: $\mathrm{HNO}_3 + \mathrm{H}_2\mathrm{SO}_4 \to \mathrm{NO}_2^+ + \mathrm{HSO}_4^- + \mathrm{H}_2\mathrm{O}$ (1 mark).
+- Electrophilic attack: $\pi$ electrons attack $\mathrm{NO}_2^+$, forming the sigma complex (arenium ion) with the positive charge delocalised over three carbons (1 mark).
+- Deprotonation: $\mathrm{HSO}_4^-$ removes $\mathrm{H}^+$ from the sigma complex, restoring aromaticity (1 mark).
+- Overall equation: $\mathrm{C}_6\mathrm{H}_6 + \mathrm{HNO}_3 \to \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 + \mathrm{H}_2\mathrm{O}$ (1 mark).
+- Curly arrow diagram showing electron flow for the electrophilic attack and deprotonation steps (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+Explain why Friedel-Crafts acylation is preferred over Friedel-Crafts alkylation for introducing alkyl groups onto the benzene ring.
+
+**Mark Scheme:**
+
+4 marks:
+- Friedel-Crafts alkylation produces an alkylbenzene that is more reactive than the starting material (alkyl groups are activating), leading to polyalkylation (1 mark).
+- Friedel-Crafts acylation produces an aryl ketone, and the acyl group is electron-withdrawing (deactivating), preventing further substitution (1 mark).
+- The acylium ion ($\mathrm{RCO}^+$) is resonance-stabilised, so no carbocation rearrangement occurs (1 mark).
+- The ketone product can subsequently be reduced to the alkyl group (e.g. Clemmensen reduction), providing a controlled route to linear alkylbenzenes (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (6 marks)</summary>
+
+Starting from benzene, propose a synthesis of 3-bromonitrobenzene. Explain the order of steps and justify your choice of reagents.
+
+**Mark Scheme:**
+
+6 marks:
+
+Step 1: Nitration of benzene (1 mark): $\mathrm{C}_6\mathrm{H}_6 \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4}} \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2$ (1 mark).
+
+Step 2: Bromination of nitrobenzene (1 mark): $\mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 \xrightarrow{\mathrm{Br}_2/\mathrm{FeBr}_3}} 3\text{-}\mathrm{BrC}_6\mathrm{H}_4\mathrm{NO}_2$ (1 mark).
+
+Justification (2 marks):
+- The $-\mathrm{NO}_2$ group is meta-directing (1 mark), so bromination after nitration places bromine at the meta position (1 mark).
+- If bromination were done first, the $-\mathrm{Br}$ group (ortho/para director) would place the nitro group at the ortho/para positions, giving the wrong isomer.
+
+</details>
+
+<details>
+<summary>Q5 (4 marks)</summary>
+
+Explain the term delocalisation energy as applied to benzene. State the experimental evidence for the delocalised model of benzene.
+
+**Mark Scheme:**
+
+4 marks:
+- Delocalisation energy is the extra stability of benzene compared with the hypothetical Kekule structure with three isolated double bonds (1 mark).
+- Evidence 1: All C--C bond lengths in benzene are equal ($139\,\mathrm{pm}$), intermediate between single ($154\,\mathrm{pm}$) and double ($134\,\mathrm{pm}$) bonds (1 mark).
+- Evidence 2: The enthalpy of hydrogenation of benzene ($-208\,\mathrm{kJ/mol}$) is less exothermic than three times the enthalpy of hydrogenation of cyclohexene ($3 \times -120 = -360\,\mathrm{kJ/mol}$), giving a delocalisation energy of $152\,\mathrm{kJ/mol}$ (1 mark).
+- Evidence 3: Benzene undergoes substitution (preserving the ring) rather than addition (which would destroy the aromatic system), indicating the ring is unusually stable (1 mark).
+
+</details>
+
+## Retrosynthesis with Arenes
+
+### Key Disconnections
+
+| Target | Disconnection | Forward reagents |
+|---|---|---|
+| Nitroarene | Electrophilic nitration | $\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4$ |
+| Aryl ketone | Friedel-Crafts acylation | $\mathrm{RCOCl}/\mathrm{AlCl}_3$ |
+| Phenol | Diazonium salt hydrolysis | $\mathrm{ArN}_2^+ + \mathrm{H}_2\mathrm{O},\,\Delta$ |
+| Haloarene | Electrophilic halogenation | $\mathrm{Br}_2/\mathrm{FeBr}_3$ or Sandmeyer |
+| Azo dye | Diazonium coupling | $\mathrm{ArN}_2^+ + \text{phenol/amine}$ |
+
+### Directing Group Strategy in Multi-Step Synthesis
+
+When planning the synthesis of polysubstituted benzenes, the order of introducing substituents is critical. The directing effects must be considered:
+
+1. Introduce activating groups first (they make subsequent reactions easier).
+2. If a meta-directing group is needed, introduce it last (or protect activating groups during steps requiring meta substitution).
+3. Remember that strongly deactivating groups (e.g. $-\mathrm{NO}_2$) essentially stop further electrophilic substitution.
+
+**Worked example: Synthesis of 3-amino-4-methylbenzoic acid from toluene.**
+
+Step 1: Nitration of toluene (ortho/para directing). The major product is 4-nitrotoluene.
+
+Step 2: Oxidation of methyl to carboxylic acid: 4-nitrotoluene $\to$ 4-nitrobenzoic acid.
+
+Step 3: Reduction of nitro group: 4-nitrobenzoic acid $\to$ 4-aminobenzoic acid.
+
+Wait -- we need 3-amino, not 4-amino. The correct approach:
+
+Step 1: Nitration of toluene gives 2-nitrotoluene (ortho) and 4-nitrotoluene (para). We need 2-nitrotoluene.
+
+Step 2: Oxidation: 2-nitrotoluene $\to$ 2-nitrobenzoic acid.
+
+Step 3: Reduction: 2-nitrobenzoic acid $\to$ 2-aminobenzoic acid.
+
+But we need 3-amino-4-methylbenzoic acid, which has three substituents. This requires a different approach entirely, demonstrating the complexity of multi-substituted aromatic synthesis.
 
 ---
 

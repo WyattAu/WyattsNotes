@@ -1847,3 +1847,1192 @@ goods trade deficit narrows over time. However, the large statistical discrepanc
 caution.
 
 </details>
+
+## Purchasing Power Parity: Calculations (HL Extension)
+
+### Absolute PPP: Numerical Application
+
+The Big Mac Index (The Economist) provides an accessible application of absolute PPP.
+
+**Example calculation:**
+
+| Country | Big Mac price (local currency) | Big Mac price (USD) | Exchange rate (LCU/USD) | PPP-implied rate | Over/undervaluation |
+|---------|-------------------------------|--------------------|-----------------------|----------------|-------------------|
+| USA | 5.50 | 5.50 | 1.00 | 1.00 | -- |
+| UK | 3.79 | 5.50 | 0.79 | 0.69 | Overvalued by 14% |
+| Japan | 450 | 5.50 | 149 | 81.8 | Undervalued by 45% |
+| China | 22 | 5.50 | 7.24 | 4.00 | Undervalued by 45% |
+| Switzerland | 7.02 | 5.50 | 0.89 | 1.28 | Overvalued by 44% |
+
+**PPP-implied exchange rate** $= P_{\text{domestic}} / P_{\text{USA}}$
+
+For Japan: PPP rate $= 450 / 5.50 = 81.8$ JPY/USD. Actual rate $= 149$. Japan is undervalued
+by $(149 - 81.8) / 81.8 \times 100 = 82\%$.
+
+Wait, let me recalculate more carefully:
+
+Over/undervaluation $= \frac{\text{PPP rate} - \text{Actual rate}}{\text{PPP rate}} \times 100$
+
+For Japan: $(81.8 - 149) / 81.8 \times 100 = -82\%$ (undervalued by 82%).
+
+**Limitations of the Big Mac Index:**
+
+- Non-tradable inputs (labour, rent, local ingredients) make up a significant share of the
+  Big Mac price, violating the assumption of identical goods
+- The Big Mac is a single product and not representative of overall price levels
+- Tax differences, trade barriers, and local market power distort the comparison
+- Non-tradable sectors (housing, services) are a growing share of GDP in advanced economies
+- The index assumes identical quality across countries
+
+### Relative PPP: Inflation Differential Calculations
+
+**Worked example:**
+
+The exchange rate between the euro and the US dollar is EUR/USD $= 1.20$. Eurozone inflation is
+$3\%$ and US inflation is $2\%$.
+
+Predicted change in EUR/USD:
+
+$$\%\Delta S \approx \pi_{\text{EUR}} - \pi_{\text{US}} = 3\% - 2\% = 1\%$$
+
+The euro is expected to depreciate by approximately 1% against the dollar. New rate $= 1.20 \times 1.01
+= 1.212$ USD/EUR.
+
+**Verification with exact formula:**
+
+$$\frac{S_1}{S_0} = \frac{1 + \pi_{\text{EUR}}}{1 + \pi_{\text{US}}} = \frac{1.03}{1.02} = 1.0098$$
+
+New rate $= 1.20 \times 1.0098 = 1.212$ USD/EUR.
+
+The euro depreciates because higher inflation in the Eurozone erodes its purchasing power
+relative to the dollar.
+
+### Real Exchange Rate
+
+The **real exchange rate** adjusts the nominal exchange rate for relative price levels:
+
+$$q = \frac{S \cdot P_{\text{domestic}}}{P_{\text{foreign}}}$$
+
+An increase in $q$ represents a **real depreciation** (the domestic currency loses purchasing
+power).
+
+If PPP holds exactly, $q = 1$ at all times. Deviations from PPP indicate competitiveness
+changes:
+
+$$q > 1 \implies \text{domestic goods are more expensive relative to foreign (real appreciation)}$$
+$$q < 1 \implies \text{domestic goods are cheaper (real depreciation)}$$
+
+## Transfer Pricing (HL Extension)
+
+### Definition and Mechanism
+
+Transfer pricing refers to the prices at which goods, services, and intangible assets are
+traded between related entities within a multinational corporation.
+
+MNCs can manipulate transfer prices to shift profits to low-tax jurisdictions:
+
+$$\text{Revenue in high-tax country} \downarrow \implies \text{Tax liability} \downarrow$$
+$$\text{Revenue in low-tax country} \uparrow \implies \text{After-tax profit} \uparrow$$
+
+**Example:** A pharmaceutical company manufactures a drug at cost of USD 2 per unit in Ireland
+(corporate tax rate 12.5%) and sells it to its subsidiary in Germany (corporate tax rate 30%)
+at a transfer price of USD 8 per unit. The drug retails in Germany for USD 15.
+
+Profit in Ireland $= 8 - 2 = $6 per unit. Tax $= 6 \times 0.125 = $0.75$ per unit.
+
+Profit in Germany $= 15 - 8 = $7 per unit. Tax $= 7 \times 0.30 = $2.10$ per unit.
+
+Total profit $= 6 + 7 = 13$. Total tax $= 0.75 + 2.10 = $2.85$.
+
+If the transfer price were USD 12:
+
+Profit in Ireland $= 12 - 2 = $10. Tax $= 10 \times 0.125 = $1.25$.
+
+Profit in Germany $= 15 - 12 = $3$. Tax $= 3 \times 0.30 = $0.90$.
+
+Total tax $= 1.25 + 0.90 = 2.15$. Total profit unchanged at $13.
+
+By raising the transfer price, the MNC shifts $2$ of profit from Germany (30% tax) to Ireland
+(12.5% tax), saving $0.70$ per unit in tax.
+
+**Regulatory responses:**
+
+1. **Arm's length principle**: transfer prices should be set as if the transaction were between
+   independent (unrelated) parties
+2. **Country-by-country reporting**: requiring MNCs to report revenue, profit, taxes, and
+   employees in each jurisdiction
+3. **Base erosion and profit shifting (BEPS)**: OECD/G20 project to address tax avoidance
+   strategies that exploit gaps in tax rules
+4. **Global minimum corporate tax**: the OECD/G20 agreement on a 15% minimum corporate tax rate,
+   reducing the incentive for profit shifting
+
+## Optimum Currency Areas and the Euro Crisis (HL Extension)
+
+### Mundell's Criteria (1961)
+
+An optimum currency area (OCA) is a region where the benefits of sharing a common currency
+outweigh the costs of losing monetary independence.
+
+Mundell identified the key criterion: **labour mobility**. If workers can move freely between
+regions, asymmetric shocks (a recession in one region) can be addressed through migration
+rather than monetary policy.
+
+**Other OCA criteria:**
+
+1. **Labour mobility**: workers move from depressed regions to booming regions, restoring
+   equilibrium without exchange rate adjustment
+2. **Wage and price flexibility**: if wages can fall in depressed regions, competitiveness is
+   restored without exchange rate depreciation
+3. **Fiscal transfers**: automatic fiscal transfers from booming to depressed regions
+   (e.g., unemployment insurance, federal tax systems)
+4. **Similar business cycles**: synchronised cycles reduce the need for independent
+   monetary policy
+5. **Product diversification**: diversified economies are less vulnerable to
+   sector-specific shocks
+6. **Financial integration**: integrated capital markets can smooth consumption across
+   regions
+
+### The Eurozone: A Suboptimal Currency Area?
+
+The Eurozone has been criticised as failing to meet several OCA criteria:
+
+1. **Limited labour mobility**: linguistic, cultural, and institutional barriers restrict
+   movement between Eurozone countries. Unlike the US, Europe lacks a common language, and
+   pension and qualification recognition remain imperfect
+
+2. **Wage rigidity**: European labour markets are less flexible than the US, particularly
+   in southern European countries (Greece, Italy, Spain, Portugal). Wages do not adjust
+   downward sufficiently to restore competitiveness
+
+3. **Insufficient fiscal transfers**: the EU budget is approximately 1% of EU GDP, far below
+   the 10--20% of federal budgets in countries like the US. Automatic stabilisers
+   between Eurozone countries are weak
+
+4. **Divergent business cycles**: Germany's export-oriented economy experienced a boom
+   while southern European countries faced recession after 2008, requiring different
+   monetary policies that a single currency cannot provide
+
+5. **Asymmetric shocks**: the 2008 financial crisis and the subsequent sovereign debt
+   crisis hit Greece, Ireland, Portugal, Spain, and Italy much harder than Germany and the
+   Netherlands, yet all shared the same monetary policy
+
+### The Eurozone Sovereign Debt Crisis (2010--2012)
+
+**Causes:**
+
+1. After adopting the euro, peripheral countries (Greece, Portugal, Spain, Ireland) enjoyed
+   lower interest rates due to perceived elimination of exchange rate risk (convergence
+   trade)
+2. Lower rates fuelled credit booms and asset price bubbles (particularly in Ireland and
+   Spain)
+3. When the 2008 financial crisis hit, revenues fell while debt obligations remained,
+   revealing that the "convergence" was illusory
+4. Markets questioned the solvency of Greece, leading to a spike in bond yields and a
+   self-fulfilling crisis
+
+**Policy responses:**
+
+1. **Austerity**: the ECB and EU required fiscal consolidation (spending cuts, tax increases)
+   as a condition for bailouts, which deepened recessions
+2. **Outright Monetary Transactions (OMT)**: the ECB's programme to purchase sovereign
+   bonds of distressed countries in the secondary market, which calmed markets
+3. **European Stability Mechanism (ESM)**: a permanent rescue fund for Eurozone members
+
+**Evaluation:**
+
+- The ECB's eventual intervention (OMT) was effective at calming markets but came late
+- Austerity policies caused deep recessions and social costs in peripheral countries
+- The crisis revealed the need for banking union, fiscal union, and capital markets
+  union alongside monetary union -- the "incomplete OCA" argument
+- Greece's GDP fell by 25% between 2008 and 2016, with unemployment reaching 27.5%
+- Ireland recovered relatively quickly, partly because its export-oriented economy
+  benefited from the euro's depreciation
+
+## Commodity Super-Cycles and Terms of Trade Volatility (HL Extension)
+
+### Commodity Super-Cycles
+
+A commodity super-cycle is a prolonged period (typically 20--40 years) of abnormally high or low
+commodity prices, driven by structural shifts in global demand.
+
+**Historical super-cycles:**
+
+1. **Late 1800s--early 1900s**: industrialisation drove demand for raw materials and
+   energy. Prices of metals, rubber, and oil rose
+2. **1950s--1970s**: post-war reconstruction and the rapid industrialisation of Japan and
+   Europe sustained high commodity demand
+3. **2000s**: China's industrialisation drove the most recent super-cycle, with oil peaking
+   at USD 147 per barrel in 2008 and metals reaching record highs
+
+**Implications for commodity-exporting developing countries:**
+
+During a super-cycle upswing:
+
+$$\text{ToT improve} \implies \text{Higher export revenue} \implies \text{Higher government
+savings} \implies \text{Higher investment}$$
+
+During a super-cycle downswing:
+
+$$\text{ToT deteriorate} \implies \text{Lower export revenue} \implies \text{Fiscal deficits} \implies
+\text{Debt accumulation}$$
+
+The volatility of commodity prices makes fiscal planning extremely difficult for
+commodity-dependent developing countries.
+
+### Managing Commodity Price Volatility
+
+1. **Sovereign wealth funds**: save resource revenues during boom periods to stabilise
+   spending during busts (e.g., Norway's Government Pension Fund Global)
+2. **Hedging**: commodity futures and options can lock in prices, but this is expensive
+   and requires sophisticated financial infrastructure
+3. **Diversification**: reducing dependence on a narrow range of commodity exports
+4. **Stabilisation funds**: Chile's Structural Balance Rule and Copper Stabilisation Fund
+   provide a model for counter-cyclical fiscal policy
+
+## Worked Examples: International Economics (HL Extension)
+
+<details>
+<summary>Problem 11: PPP Calculation and Exchange Rate Forecast</summary>
+
+The following data are available:
+
+| Country | CPI (local currency, base 2020 = 100) |
+|---------|--------------------------------------|
+| USA | 120 |
+| UK | 108 |
+| Japan | 95 |
+| India | 130 |
+
+The exchange rate in 2020 was GBP/USD $= 0.75$ and JPY/USD $= 110$ and INR/USD $= 75$.
+
+(a) Calculate the PPP-implied exchange rate for each currency against the USD.
+
+(b) Determine whether each currency is overvalued or undervalued against the USD.
+
+(c) Forecast the exchange rate in one year if US inflation is 2.5%, UK inflation is 4%, and
+Japan inflation is 1%.
+
+(a) PPP-implied GBP/USD $= 108/120 = 0.90$
+
+PPP-implied JPY/USD $= 95/120 = 0.792$
+
+For India: if CPI $= 130$, PPP-implied INR/USD $= 130/120 = 1.083$
+
+(b) UK: actual $= 0.75$, PPP $= 0.90$. Overvalued by $(0.90 - 0.75)/0.90 \times 100 = 16.7\%$
+
+Japan: actual $= 110$, PPP $= 0.792$. Undervalued by $(0.792 - 110)/0.792 \times 100 = -13{,}888\%$
+
+More precisely, the actual rate is 110 JPY/USD while PPP implies 0.792 USD/JPY, or
+$1/0.792 = 126.3$ JPY/USD. The yen is overvalued (too few yen per dollar), not undervalued.
+Correction: actual $= 110$ JPY/USD, PPP $= 126.3$ JPY/USD. Since $110 < 126.3$, the yen is
+overvalued (stronger than PPP predicts).
+
+India: actual $= 75$ INR/USD, PPP $= 1.083$ USD/INR, or $92.3$ INR/USD. Since $75 < 92.3$, the rupee
+is overvalued.
+
+(c) Relative PPP: $\%\Delta S \approx \pi_{\text{domestic}} - \pi_{\text{US}}$
+
+GBP/USD: $\%\Delta = 4.0\% - 2.5\% = 1.5\%$. New rate $= 0.75 \times 1.015 = 0.761$
+
+JPY/USD: $\%\Delta = 1.0\% - 2.5\% = -1.5\%$. New rate $= 110 \times (1 - 0.015) = 108.35$
+
+INR/USD: $\%\Delta \approx \pi_{\text{India}} - \pi_{\text{US}}$. If India's inflation is 6%:
+New rate $= 75 \times (1 + 0.06 - 0.025) = 75 \times 1.035 = 77.63$
+
+</details>
+
+<details>
+<summary>Problem 12: Eurozone Crisis Analysis</summary>
+
+In 2010, Greece's government debt was 130% of GDP, its budget deficit was 15% of GDP, and its
+10-year bond yield was 10%. Germany's government debt was 80% of GDP, its deficit was 4% of GDP,
+and its bond yield was 3%.
+
+(a) Why were bond yields so much higher in Greece than Germany despite both using the euro?
+
+(b) Explain why the euro may have contributed to Greece's problems.
+
+(c) Evaluate the effectiveness of the policy response to the crisis.
+
+(a) Bond yields reflect the perceived risk of default. Even though both countries use the euro,
+investors demanded much higher yields on Greek bonds because:
+
+- Greece's debt was far higher (130% vs. 80% of GDP), increasing default risk
+- Greece's deficit was nearly four times larger (15% vs. 4%), indicating unsustainable
+  fiscal dynamics
+- Greece had a history of fiscal misreporting (it revised its deficit figures upward in 2009)
+- Greece's tax collection was weak, with a large informal economy reducing revenue
+- Germany had stronger institutions, a more diversified economy, and greater fiscal credibility
+
+Under a common currency, investors cannot be compensated for country-specific risk through
+currency depreciation (the "original sin" problem for emerging markets), so they demand higher
+interest rates instead.
+
+(b) The euro contributed to Greece's problems because:
+
+1. **Lower borrowing costs**: before joining the euro, Greece paid high interest rates
+   (partly reflecting drachma depreciation risk). Euro adoption eliminated this risk premium,
+   leading to a credit-fuelled consumption and investment boom
+2. **Loss of exchange rate adjustment**: when competitiveness declined, Greece could not
+   devalue. In a flexible exchange rate regime, drachma depreciation would have restored
+   competitiveness gradually; under the euro, the only adjustment mechanisms are internal
+   devaluation (wage cuts, price cuts), which are slow and painful
+3. **Capital market integration**: low interest rates encouraged borrowing from core
+   European banks, which accumulated large exposures to Greek sovereign debt
+4. **No lender of last resort**: the ECB was not initially designed to act as a lender of
+   last resort for sovereign governments
+
+(c) **Austerity**: fiscal consolidation deepened Greece's recession. GDP fell by 25% (2008--2016).
+   Unemployment rose to 27.5%. Social spending cuts reduced health and education outcomes.
+  The fiscal multiplier in a depressed economy is high, so austerity was particularly
+  self-defeating
+
+**ECB intervention (OMT, 2012)**: Mario Draghi's commitment to "do whatever it takes" and the OMT
+programme calmed bond markets and reduced sovereign spreads. This was effective but came too
+late to prevent deep recessions
+
+**Structural reforms**: labour market and product market reforms were implemented, but
+short-term social costs were severe
+
+**Long-term lesson**: the crisis demonstrated that monetary union without fiscal union,
+banking union, and political union is unstable. Subsequent reforms (banking union, European
+Stability Mechanism, Capital Markets Union) address some gaps but progress is incomplete.
+
+</details>
+
+<details>
+<summary>Problem 13: Terms of Trade and Development Policy</summary>
+
+Country X is a copper exporter. The following data show its terms of trade and income terms of
+trade:
+
+| Year | Export Price Index | Import Price Index | ToT | Export Volume Index | Income ToT |
+|------|-------------------|-------------------|-----|--------------------|-----------|
+| 2018 | 100 | 100 | 100.0 | 100 | 100.0 |
+| 2019 | 110 | 105 | 104.8 | 95 | 99.6 |
+| 2020 | 125 | 140 | 89.3 | 80 | 71.4 |
+| 2021 | 105 | 120 | 87.5 | 90 | 78.8 |
+| 2022 | 115 | 115 | 100.0 | 105 | 105.0 |
+
+(a) Calculate the annual percentage change in the ToT for each year.
+
+(b) Explain the Income ToT result in 2020. What happened?
+
+(c) What policies could Country X implement to reduce ToT volatility?
+
+(a) 2019: $(104.8 - 100.0)/100.0 \times 100 = 4.8\%$ (improvement)
+
+2020: $(89.3 - 104.8)/104.8 \times 100 = -14.8\%$ (sharp deterioration)
+
+2021: $(87.5 - 89.3)/89.3 \times 100 = -2.0\%$ (further deterioration)
+
+2022: $(100.0 - 87.5)/87.5 \times 100 = 14.3\%$ (strong improvement)
+
+(b) In 2020, the ToT deteriorated by 14.8% due to the COVID-19 pandemic reducing demand for
+copper (export prices fell) while import prices rose (supply chain disruptions). However, the
+Income ToT fell even more dramatically (from 99.6 to 71.4, a 28.3% decline) because export
+volumes also fell sharply. The ToT improvement in 2022 was driven by post-pandemic recovery in
+demand for copper, with both prices and volumes recovering.
+
+(c) Policies to reduce ToT volatility:
+
+1. **Sovereign wealth fund**: save copper revenue during price booms (2022) to stabilise
+   government spending during busts (2020)
+2. **Economic diversification**: develop manufacturing and services to reduce dependence on
+   copper, which is subject to super-cycle volatility
+3. **Forward contracts**: hedging copper sales on futures markets to lock in prices
+4. **Value-added processing**: refine copper domestically rather than exporting raw
+   ore, capturing more of the value chain
+5. **Counter-cyclical fiscal policy**: save during booms, spend during recessions
+6. **Stabilisation fund**: similar to Chile's ESSF, create a fund that accumulates
+   resources when copper prices are high and disburses when they are low
+
+</details>
+
+## Common Pitfalls: International Economics (Comprehensive)
+
+- Assuming that a current account deficit always requires devaluation. The deficit may reflect
+  productive investment that generates future export capacity
+- Confusing absolute and relative PPP. Absolute PPP is a poor short-run predictor; relative
+  PPP is more useful but still imprecise
+- Applying the Marshall-Lerner condition without considering the J-curve. A depreciation
+  worsens the current account in the short run, even when the condition holds in the
+  long run
+- Assuming that the Big Mac Index accurately measures PPP. Non-tradable inputs and
+  local market conditions make it an imprecise indicator
+- Confusing the optimum currency area criteria with the Eurozone reality. The OCA
+  framework is useful for analysis even if the Eurozone fails to meet several criteria
+- Ignoring transfer pricing when evaluating FDI. Reported profits may significantly
+  understate the true profitability of MNC operations in host countries
+- Assuming that the Eurozone crisis proves monetary union is impossible. The crisis
+  revealed the need for complementary institutions (fiscal union, banking union), not the
+  abandonment of monetary union
+
+## Exchange Rate Regimes: Comparative Analysis (HL Extension)
+
+### Types of Exchange Rate Regimes
+
+1. **Currency union:** countries share a common currency and a common central bank
+   (e.g., Eurozone, CFA franc zone)
+2. **Currency board:** domestic currency is fully backed by foreign reserves and convertible
+   at a fixed rate (e.g., Hong Kong dollar pegged to USD)
+3. **Fixed (pegged) exchange rate:** the central bank intervenes to maintain a target rate,
+   with some flexibility (e.g., Saudi riyal pegged to USD)
+4. **Crawling peg:** the exchange rate is adjusted periodically in small, pre-announced
+   amounts (e.g., Nicaragua's crawling peg against USD)
+5. **Managed float:** the exchange rate is determined by market forces, but the central bank
+   intervenes occasionally to smooth volatility (e.g., India, Singapore)
+6. **Free float:** the exchange rate is determined entirely by market forces without
+   government intervention (e.g., USD, AUD, NZD)
+
+### The Impossible Trinity (Trilemma)
+
+A country cannot simultaneously maintain:
+
+1. A fixed exchange rate
+2. Free capital mobility
+3. An independent monetary policy
+
+It must choose two of the three:
+
+| Regime | Fixed exchange rate | Free capital mobility | Independent monetary policy |
+|---|---|---|---|
+| Currency board | Yes | Yes | No |
+| Bretton Woods (1950s--60s) | Yes | No | Yes |
+| Free float (e.g., USA) | No | Yes | Yes |
+| Capital controls (e.g., China, pre-2005) | Yes | No | Yes |
+
+### Advantages and Disadvantages of Each Regime
+
+**Fixed exchange rates:**
+
+*Advantages:*
+- Reduces exchange rate uncertainty, promoting trade and investment
+- Disciplines monetary policy (prevents inflationary finance)
+- Reduces transaction costs for international trade
+
+*Disadvantages:*
+- Requires large foreign exchange reserves to defend the peg
+- Loss of independent monetary policy (the interest rate must match the anchor currency)
+- Vulnerable to speculative attacks (as in the 1997 Asian financial crisis)
+- Requires fiscal discipline (fiscal deficits put pressure on the peg)
+
+**Floating exchange rates:**
+
+*Advantages:*
+- Automatic adjustment to external shocks (the exchange rate absorbs the shock)
+- Independent monetary policy (the central bank can set interest rates for domestic objectives)
+- No need for large foreign exchange reserves
+
+*Disadvantages:*
+- Exchange rate volatility creates uncertainty for trade and investment
+- Potential for excessive volatility (speculative bubbles, overshooting)
+- May lead to misalignment (persistently overvalued or undervalued exchange rates)
+
+### The Asian Financial Crisis (1997--1998): A Case Study
+
+**Causes:**
+
+1. **Fixed exchange rates with free capital mobility:** Thailand, Indonesia, and South Korea
+   maintained fixed or semi-fixed exchange rates while liberalising capital accounts, creating
+   the impossible trinity problem
+2. **Short-term foreign currency debt:** firms and banks borrowed in USD at low interest rates,
+   creating currency mismatches (revenues in local currency, debts in USD)
+3. **Speculative attack:** when investors lost confidence, capital outflows forced central banks
+   to deplete reserves defending the peg
+4. **Contagion:** the crisis spread from Thailand to Indonesia, South Korea, Malaysia, and the
+   Philippines
+
+**Sequence of events:**
+
+$$\text{Capital inflows} \implies \text{Credit boom} \implies \text{Asset price bubble}$$
+$$\implies \text{Loss of confidence} \implies \text{Capital outflows}$$
+$$\implies \text{Reserve depletion} \implies \text{Forced devaluation}$$
+$$\implies \text{Currency crisis} \implies \text{Banking crisis} \implies \text{Recession}$$
+
+**Impact:**
+
+- Thai baht: lost 50% of its value against USD
+- Indonesian rupiah: lost 80%
+- South Korean won: lost 50%
+- GDP declines: Thailand -10.5%, Indonesia -13.1%, South Korea -5.1% (1998)
+- Poverty increased dramatically: Indonesian poverty rate rose from 11% to 20%
+
+**Lessons:**
+
+1. The impossible trinity matters: fixed rates + free capital flows + independent monetary
+   policy is unsustainable
+2. Short-term foreign currency debt is dangerous for emerging markets
+3. Capital account liberalisation should be sequenced carefully (domestic financial reform
+   before capital account opening)
+4. International financial architecture needs a better mechanism for resolving sovereign debt
+   crises (the IMF's role was controversial)
+
+## Trade Creation and Trade Diversion: Formal Treatment (HL Extension)
+
+### Customs Unions and Welfare Effects
+
+A **customs union** eliminates tariffs between member countries and establishes a common external
+tariff against non-members. The welfare effects depend on whether the union creates or diverts
+trade.
+
+**Trade creation:** the union causes a member country to import a good from a lower-cost producer
+within the union instead of producing it domestically at higher cost. This improves welfare.
+
+**Trade diversion:** the union causes a member country to import a good from a higher-cost producer
+within the union instead of from a lower-cost producer outside the union. This reduces welfare.
+
+### Numerical Example
+
+Country A imports good X. The domestic cost of production is USD 100 per unit.
+
+- Country B (potential union partner): cost USD 80 per unit
+- Country C (outside the union): cost USD 60 per unit
+
+Before the customs union, Country A has a 50% tariff on all imports:
+
+- Cost of importing from B: $80 \times 1.50 = 120$ (more expensive than domestic, so A produces)
+- Cost of importing from C: $60 \times 1.50 = 90$ (cheaper than domestic, so A imports from C)
+
+A imports from C at a landed cost of USD 90.
+
+After forming a customs union with B (tariff-free between A and B; 50% tariff on C):
+
+- Cost of importing from B: USD 80 (no tariff)
+- Cost of importing from C: $60 \times 1.50 = 90$ (tariff still applies)
+
+A now imports from B at USD 80 instead of from C at USD 90.
+
+**Analysis:**
+
+- **Trade creation:** A switches from domestic production (USD 100) to importing from B (USD 80).
+  This is a welfare gain of USD 20 per unit on the quantity previously produced domestically
+- **Trade diversion:** A switches from importing from C (USD 60) to importing from B (USD 80).
+  This is a welfare loss of USD 20 per unit on the quantity previously imported from C
+
+**Net welfare effect:**
+
+If A imports 100 units, previously all from C at USD 60:
+
+New cost $= 100 \times 80 = 8{,}000$
+Old cost $= 100 \times 90 = 9{,}000$ (including tariff revenue)
+
+Consumer cost falls by USD 1,000. Government loses tariff revenue of $100 \times 30 = 3{,}000$.
+Producer surplus: domestic production was zero before and remains zero.
+
+Net welfare effect $= 1{,}000 - 3{,}000 = -2{,}000$.
+
+**Trade diversion dominates:** the customs union reduces welfare because the lower-cost producer
+(C at USD 60) is replaced by the higher-cost partner (B at USD 80), and the tariff revenue
+loss exceeds the consumer gain.
+
+This illustrates Viner's (1950) key insight: customs unions are not always welfare-improving.
+The net effect depends on the relative costs of domestic, partner, and world producers.
+
+### Conditions for Net Welfare Gain
+
+A customs union is more likely to improve welfare when:
+
+1. The partners' costs are close to world costs (minimising trade diversion)
+2. The union covers a large share of world trade (reducing the scope for trade diversion)
+3. Demand is elastic (so trade creation is large relative to trade diversion)
+4. The pre-union tariff is high (so removing the tariff creates large efficiency gains)
+5. The union partners are geographically close (low transport costs increase competitiveness)
+
+## Exam-Style Questions: International Economics (HL Extension)
+
+<details>
+<summary>Question 1: Impossible Trinity Application (10 marks)</summary>
+
+Country M currently has a fixed exchange rate against the USD, free capital mobility, and
+an independent monetary policy. It faces rising inflation (8%) while the US inflation rate is 2%.
+
+(a) Explain why Country M's current position is unsustainable. [4 marks]
+
+(b) Analyse two policy options: (i) devalue the peg, (ii) impose capital controls. [6 marks]
+
+(a) By the impossible trinity, Country M cannot simultaneously maintain all three: a fixed
+exchange rate, free capital mobility, and independent monetary policy. With free capital
+mobility and a fixed exchange rate, Country M's interest rate must match the US rate. If
+Country M tries to raise interest rates to fight inflation while the US keeps rates low,
+the interest differential attracts capital inflows, putting upward pressure on the exchange
+rate. The central bank must sell domestic currency (increasing the money supply, which is
+inflationary) to maintain the peg, undermining its inflation-fighting objective.
+
+(b) **(i) Devalue the peg:**
+
+A devaluation makes exports cheaper and imports more expensive. The Marshall-Lerner condition
+must hold for the current account to improve. In the short run, the J-curve effect may worsen
+the trade balance. Devaluation is also inflationary (import prices rise). However, it restores
+competitiveness and does not require capital controls.
+
+**(ii) Impose capital controls:**
+
+Capital controls break the link between domestic and foreign interest rates, restoring monetary
+policy independence. The central bank can raise interest rates to fight inflation without
+triggering capital inflows. However, capital controls reduce investor confidence, may discourage
+FDI, and create opportunities for evasion (capital flight through informal channels).
+
+**Evaluation:** devaluation is more market-friendly but may not address the underlying inflation
+problem. Capital controls restore monetary autonomy but damage financial integration. The best
+option depends on Country M's specific circumstances: the credibility of its institutions, the
+elasticity of its exports, and the duration of the inflation problem.
+
+</details>
+
+<details>
+<summary>Question 2: Trade Creation and Diversion (10 marks)</summary>
+
+Countries A, B, and C produce good Y at costs of USD 50, USD 40, and USD 30 per unit
+respectively. Country A has a 40% tariff on imports. Country A imports 200 units per year.
+
+(a) From which country does A import before any customs union? [2 marks]
+
+(b) A and B form a customs union. Calculate the welfare effect. [4 marks]
+
+(c) A and C form a customs union instead. Calculate the welfare effect. [4 marks]
+
+(a) Landed cost from B: $40 \times 1.40 = 56$. Landed cost from C: $30 \times 1.40 = 42$.
+
+A imports from C (42 < 50 < 56). Total cost $= 200 \times 42 = 8{,}400$. Tariff revenue $= 200 \times 12 = 2{,}400$.
+
+(b) A-B customs union: tariff-free with B, 40% tariff on C.
+
+Landed cost from B: 40. Landed cost from C: $30 \times 1.40 = 42$.
+
+A switches to importing from B at USD 40.
+
+New cost $= 200 \times 40 = 8{,}000$. Tariff revenue $= 0$.
+
+Consumer saving $= 8{,}400 - 8{,}000 = 400$. Government loses tariff revenue of 2,400.
+
+Net welfare $= 400 - 2{,}400 = -2{,}000$. Trade diversion dominates.
+
+A replaces imports from the efficient producer (C at 30) with imports from the less efficient
+partner (B at 40), and the tariff revenue loss exceeds the consumer gain.
+
+(c) A-C customs union: tariff-free with C, 40% tariff on B.
+
+Landed cost from C: 30. Landed cost from B: $40 \times 1.40 = 56$.
+
+A imports from C at USD 30.
+
+New cost $= 200 \times 30 = 6{,}000$. Tariff revenue $= 0$.
+
+Consumer saving $= 8{,}400 - 6{,}000 = 2{,}400$. Government loses tariff revenue of 2,400.
+
+Net welfare $= 2{,}400 - 2{,}400 = 0$.
+
+No trade diversion because C was already the lowest-cost producer. There is pure trade creation:
+A switches from domestic production to importing from the lowest-cost source.
+
+</details>
+
+<details>
+<summary>Question 3: Asian Financial Crisis and the Trilemma (10 marks)</summary>
+
+Thailand maintained a fixed exchange rate (baht pegged at 25 to USD) with free capital mobility
+in the 1990s. In 1996--97, Thai current account deficits reached 8% of GDP, and short-term
+external debt was USD 70 billion (50% of GDP).
+
+(a) Using the impossible trinity, explain Thailand's vulnerability. [4 marks]
+
+(b) Explain how the crisis unfolded once speculative pressure began. [3 marks]
+
+(c) Evaluate the IMF's response to the crisis. [3 marks]
+
+(a) Thailand maintained a fixed exchange rate and free capital mobility, sacrificing independent
+monetary policy. When the US raised interest rates in 1994--95, Thailand could not follow suit
+because its economy was slowing. The interest differential (Thai rates < US rates) encouraged
+capital outflows, putting downward pressure on the baht.
+
+To defend the peg, the Bank of Thailand had to sell USD reserves and buy baht, depleting
+reserves from USD 39 billion (1996) to USD 2 billion (July 1997). Once reserves were exhausted,
+the peg collapsed.
+
+The vulnerability was amplified by currency mismatches: Thai firms and banks had borrowed
+heavily in USD (short-term external debt = 50% of GDP). When the baht was devalued, the local
+currency cost of servicing USD debt doubled, triggering a wave of defaults.
+
+(b) Once speculative pressure intensified:
+
+1. Hedge funds and investors sold baht short, betting on devaluation
+2. The Bank of Thailand spent reserves defending the peg
+3. On 2 July 1997, Thailand abandoned the peg; the baht fell from 25 to 56 per USD
+4. Thai firms with USD-denominated debt could not service their obligations
+5. The banking crisis spread to Indonesia, South Korea, and Malaysia (contagion)
+6. GDP fell 10.5% in 1998; the stock market lost 75% of its value
+
+(c) **IMF evaluation:**
+
+*IMF actions:* provided USD 17 billion in loans, conditioned on fiscal austerity, high interest
+rates, and structural reforms (bank closures, privatisation).
+
+*Criticism:*
+1. **Fiscal austerity was contractionary:** the IMF required budget surpluses during a deep
+   recession, worsening the downturn
+2. **High interest rates:** the IMF recommended raising interest rates to defend the currency,
+   but this deepened the recession and increased corporate bankruptcies
+3. **Bank closures:** the IMF mandated the closure of 56 Thai finance companies, triggering a
+   banking panic and credit crunch
+4. **One-size-fits-all:** the same policy package was applied to all affected countries,
+   ignoring different circumstances
+
+*Defence:* the IMF argued that restoring confidence required fiscal and monetary discipline,
+and that the alternative (unconditional lending) would have created moral hazard.
+
+**Lesson:** the IMF's response has since been reformed. The 2010 IMF lending framework allows
+more counter-cyclical policies (deficit spending during recessions) and more flexible conditionality.
+
+</details>
+
+## Case Study: Brexit and Trade Policy (HL Extension)
+
+### The Economics of Brexit
+
+The UK's decision to leave the EU (2016 referendum, 2020 exit) provides a case study in trade
+policy, customs unions, and the costs of trade barriers.
+
+**Trade effects:**
+
+1. **New trade barriers:** the UK-EU Trade and Cooperation Agreement (TCA) eliminated tariffs
+   on goods but introduced customs checks, rules of origin requirements, and regulatory
+   barriers. Non-tariff barriers (NTBs) are estimated to increase trade costs by 10--15%
+2. **Services:** the TCA provides limited access for UK service providers to the EU market.
+   Services account for 80% of the UK economy and were the primary source of Brexit-related
+   economic costs
+3. **Trade diversion:** UK imports from the EU fell post-Brexit, partially replaced by
+   imports from other countries (trade diversion away from the most efficient EU producers)
+4. **Foreign direct investment:** UK FDI inflows fell relative to comparator countries, as
+   the UK became less attractive as a gateway to the EU single market
+
+**Quantitative estimates (various studies, 2020--2024):**
+
+- UK GDP is estimated to be 2.5--4.0% lower than it would have been within the EU
+- UK-EU trade in goods fell by approximately 15% (after accounting for COVID and other factors)
+- UK services exports to the EU fell by approximately 8%
+- The UK's share of EU FDI inflows fell from 22% (2016) to 8% (2022)
+
+**Evaluation:**
+
+Brexit illustrates the economic costs of leaving a customs union:
+
+1. **Trade creation was reversed:** goods that were traded freely within the EU now face
+   barriers, reducing trade and welfare
+2. **New trade diversion:** UK firms source from non-EU countries (with higher costs) due to
+   EU rules of origin requirements
+3. **Regulatory divergence:** the UK's ability to set independent regulations is a benefit of
+   sovereignty but creates additional trade barriers with the EU
+4. **Long-run effects uncertain:** the full impact depends on the UK's ability to negotiate
+   new trade agreements and the extent of regulatory divergence
+
+## FDI and Development: Extended Analysis (HL Extension)
+
+### Types of FDI
+
+1. **Horizontal FDI:** the firm replicates its production process in the host country to serve
+   the local market (market-seeking). Common in manufacturing and services. E.g., Toyota
+   building assembly plants in the US, UK, and Thailand
+2. **Vertical FDI:** the firm locates different stages of production in different countries to
+   exploit factor cost differences (efficiency-seeking). Common in labour-intensive
+   manufacturing. E.g., Apple designing in California, assembling in China
+3. **Export-platform FDI:** the firm establishes production in a host country to export to
+   third countries. E.g., electronics firms in Singapore exporting to the US and EU
+
+### Determinants of FDI
+
+**Pull factors (host country characteristics):**
+
+1. **Market size:** GDP and GDP per capita determine the potential market for goods and services
+2. **Labour costs:** lower wages attract labour-intensive manufacturing (but skill levels matter)
+3. **Natural resources:** resource-seeking FDI targets countries with mineral, oil, or
+   agricultural endowments
+4. **Infrastructure:** transport, energy, and telecommunications infrastructure reduce
+   production and distribution costs
+5. **Institutional quality:** rule of law, property rights, and contract enforcement reduce
+   the risk of FDI
+6. **Tax incentives:** lower corporate tax rates, tax holidays, and special economic zones
+   attract FDI
+
+**Push factors (home country characteristics):**
+
+1. **Saturated domestic markets:** firms seek growth in emerging markets
+2. **High production costs:** firms relocate labour-intensive activities to lower-cost countries
+3. **Regulatory constraints:** environmental and labour regulations may push firms to relocate
+
+### FDI and Economic Development: Empirical Evidence
+
+**Positive effects:**
+
+1. **Capital formation:** FDI contributes to gross fixed capital formation, especially in
+   capital-scarce developing countries
+2. **Technology transfer:** MNCs bring advanced technology, management practices, and
+   organisational know-how. Borensztein, De Gregorio, and Lee (1998) find that FDI has a
+   positive effect on growth only when the host country has a minimum threshold of human
+   capital (secondary school enrolment > 0.69 years)
+3. **Export competitiveness:** FDI can help host countries integrate into global value chains
+4. **Employment:** FDI creates jobs, though often in specific sectors and regions
+5. **Productivity spillovers:** domestic firms may benefit from proximity to MNCs through
+   labour mobility, supply chain linkages, and demonstration effects
+
+**Negative effects:**
+
+1. **Crowding out:** FDI may displace domestic firms that cannot compete with MNCs
+2. **Enclave economies:** FDI in extractive industries may have limited linkages to the
+   domestic economy (low multiplier effects)
+3. **Profit repatriation:** MNC profits flow to the home country, reducing the net benefit to
+   the host country
+4. **Environmental degradation:** weak environmental regulation may attract polluting industries
+5. **Labour exploitation:** FDI in low-wage countries may involve poor working conditions
+
+### FDI Spillovers: Formal Analysis
+
+The spillover effect of FDI on domestic firms can be modelled as:
+
+$$\text{TFP}_{d,i} = \alpha + \beta \text{FDI}_{s,j} + \gamma X_i + \epsilon_i$$
+
+Where:
+- $\text{TFP}_{d,i}$ = total factor productivity of domestic firm $i$
+- $\text{FDI}_{s,j}$ = FDI presence in sector $j$ (e.g., share of sector employment or output)
+- $X_i$ = firm characteristics (size, age, export status)
+- $\beta$ = spillover coefficient
+
+Empirical estimates of $\beta$ are mixed:
+
+- **Positive spillovers:** Aitken and Harrison (1999) find positive horizontal spillovers in
+  Venezuela, but only for firms with above-average technology
+- **Negative spillovers (market stealing):** Javorcik (2004) finds negative horizontal
+  spillovers in Lithuania (FDI competes with domestic firms) but positive backward spillovers
+  (domestic suppliers benefit from MNC demand)
+- **Conditional spillovers:** the magnitude and direction of spillovers depend on the
+   technology gap between MNCs and domestic firms, the absorptive capacity of domestic firms,
+   and the degree of competition
+
+## Exam-Style Questions: International Economics (Additional)
+
+<details>
+<summary>Question 4: FDI and Spillovers (10 marks)</summary>
+
+Country X attracts FDI in its manufacturing sector. The FDI share of manufacturing employment
+is 30%. Research estimates the following spillover effects:
+
+- Horizontal spillover: $\beta_H = -0.02$ (FDI competes with domestic firms)
+- Backward spillover: $\beta_B = +0.05$ (domestic suppliers benefit)
+- Forward spillover: $\beta_F = +0.01$ (domestic buyers benefit)
+
+The average TFP of domestic manufacturing firms is 1.00 (base year).
+
+(a) Calculate the net effect on domestic TFP from a 10 percentage point increase in FDI
+   share. [4 marks]
+
+(b) Under what conditions would horizontal spillovers be positive? [3 marks]
+
+(c) Evaluate the policy of offering tax incentives to attract FDI. [3 marks]
+
+(a) Change in FDI share: $\Delta \text{FDI} = 10$ percentage points.
+
+Horizontal effect: $-0.02 \times 10 = -0.20$ (TFP decrease from competition)
+Backward effect: $+0.05 \times 10 = +0.50$ (TFP increase from supply chain linkages)
+Forward effect: $+0.01 \times 10 = +0.10$ (TFP increase from access to better inputs)
+
+Net effect on TFP: $-0.20 + 0.50 + 0.10 = +0.40$.
+
+New TFP $= 1.00 + 0.40 = 1.40$. Domestic firms are 40% more productive.
+
+(b) Horizontal spillovers are positive when:
+
+1. **Technology demonstration:** domestic firms learn from MNCs by observing their production
+   techniques and management practices
+2. **Labour mobility:** workers trained by MNCs move to domestic firms, transferring knowledge
+3. **Competition effect:** MNC competition forces domestic firms to innovate and improve
+   efficiency (this is positive when domestic firms are capable of responding)
+4. **Small technology gap:** when the gap between MNC and domestic technology is moderate,
+   domestic firms can imitate and adapt. If the gap is too large, domestic firms cannot
+   compete and are crowded out
+
+(c) **Evaluation of tax incentives:**
+
+*Advantages:*
+1. Signal commitment to openness, attracting additional FDI beyond the direct incentive
+2. Create jobs and increase tax revenue from economic activity (even if the corporate tax
+   rate is lower)
+3. Facilitate technology transfer and productivity spillovers
+
+*Disadvantages:*
+1. **Race to the bottom:** countries compete by offering increasingly generous incentives,
+   eroding the tax base without increasing net FDI (investment is diverted rather than created)
+2. **Revenue cost:** tax incentives reduce government revenue, potentially reducing spending
+   on public goods (education, infrastructure) that are more important for long-run growth
+3. **Rent-seeking:** MNCs may negotiate incentives that exceed the benefits they create
+4. **Temporary:** firms may leave when incentives expire (footloose FDI)
+
+**Recommendation:** tax incentives should be targeted at FDI with high spillover potential
+(high-tech, export-oriented, with strong supply chain linkages) rather than applied broadly.
+They should be time-limited and performance-based.
+
+</details>
+
+<details>
+<summary>Question 5: Current Account Sustainability (10 marks)</summary>
+
+Country Y has the following balance of payments data (USD billion):
+
+| Item | Value |
+|---|---|
+| Exports of goods | 120 |
+| Imports of goods | 180 |
+| Exports of services | 60 |
+| Imports of services | 40 |
+| Primary income (net) | -25 |
+| Secondary income (net) | 5 |
+| Net FDI inflow | 30 |
+| Net portfolio investment | 15 |
+| Net other investment | -10 |
+| Reserve assets change | -5 |
+
+(a) Calculate the current account balance. [3 marks]
+
+(b) Calculate the capital and financial account balance. [2 marks]
+
+(c) Is the current account deficit sustainable? Discuss using the savings-investment identity.
+   [5 marks]
+
+(a) Current account $= (120 - 180) + (60 - 40) + (-25) + 5 = -60 + 20 - 25 + 5 = -60$ billion.
+
+Country Y has a current account deficit of USD 60 billion.
+
+(b) Capital and financial account $= 30 + 15 - 10 = 35$ billion.
+
+Current account (-60) + capital account (35) + reserve change (-5) $= -60 + 35 - 5 = -30$.
+
+This does not sum to zero, suggesting errors and omissions of USD 30 billion.
+
+(c) **Sustainability analysis using the savings-investment identity:**
+
+$\text{CA} = S - I = (S_{\text{private}} + S_{\text{government}}) - I$
+
+A current account deficit of USD 60 billion means $I - S = 60$ billion: the country invests
+60 billion more than it saves, financing the gap with foreign capital inflows.
+
+**Is this sustainable?**
+
+The deficit is sustainable if:
+
+1. **The deficit finances productive investment:** if FDI (30 billion) finances productive
+   capacity that generates future export earnings, the deficit is sustainable. Portfolio
+   investment (15 billion) is more volatile and may reverse
+2. **The debt trajectory is manageable:** if the country's external debt-to-GDP ratio is
+   stable or declining, the deficit is sustainable. If it is rising rapidly, a crisis may
+   ensue
+3. **The exchange rate is flexible:** a floating exchange rate provides an automatic
+   adjustment mechanism (depreciation improves competitiveness)
+4. **The country has credible institutions:** investors are more willing to finance deficits
+   in countries with strong institutions
+
+**Warning signs:**
+
+- The deficit (60 billion) is large relative to FDI inflows (30 billion). The remaining 30
+  billion is financed by portfolio investment and other flows, which are more volatile
+- The reserve change is negative (USD 5 billion outflow), suggesting the central bank is
+  selling reserves to support the currency
+- If GDP is, say, USD 500 billion, the CA deficit is 12% of GDP -- above the 5% threshold
+  often cited as a warning level
+
+**Recommendation:** the deficit is likely unsustainable at current levels. Policy options include:
+
+1. Fiscal consolidation (increase $S_{\text{government}}$)
+2. Structural reforms to boost competitiveness and exports
+3. Allow exchange rate depreciation to improve the current account
+4. Macroprudential measures to reduce capital flow volatility
+
+</details>
+
+## Comparative Advantage: Formal Treatment (HL Extension)
+
+### Ricardian Model with Two Countries
+
+Country A can produce 1 unit of cloth with 4 labour hours or 1 unit of wine with 8 labour hours.
+Country B can produce 1 unit of cloth with 6 labour hours or 1 unit of wine with 6 labour hours.
+
+**Opportunity costs:**
+
+| | Cloth (per unit of wine) | Wine (per unit of cloth) |
+|---|---|---|
+| Country A | 2 cloth | 0.5 wine |
+| Country B | 1 cloth | 1 wine |
+
+Country A has a comparative advantage in cloth (lower opportunity cost: 0.5 wine < 1 wine).
+Country B has a comparative advantage in wine (lower opportunity cost: 1 cloth < 2 cloth).
+
+**Gains from trade:**
+
+Before trade (autarky): if each country allocates 12 labour hours equally (6 to each good):
+
+Country A: cloth $= 6/4 = 1.5$, wine $= 6/8 = 0.75$. Total world output: 3 cloth, 1.5 wine.
+Country B: cloth $= 6/6 = 1$, wine $= 6/6 = 1$. Total world output: 3 cloth, 1.5 wine.
+
+With specialisation (A produces only cloth, B produces only wine):
+
+Country A: cloth $= 12/4 = 3$, wine $= 0$.
+Country B: cloth $= 0$, wine $= 12/6 = 2$.
+Total world output: 3 cloth, 2 wine.
+
+World wine output increases from 1.5 to 2 (a gain of 0.5 wine). Both countries can consume
+more wine through trade.
+
+**Terms of trade:** the world price of wine (in terms of cloth) must be between the two
+autarky prices: $0.5 \leq P_w/P_c \leq 1$.
+
+If the world price is $P_w/P_c = 0.75$ (1 wine $= 0.75$ cloth):
+
+Country A exports cloth, imports wine. Gains from 1 unit of export:
+- Cost of producing 1 cloth: 4 hours
+- Revenue from 1 cloth: $1/0.75 = 1.33$ wine (worth 10.67 hours of domestic wine production)
+- Gain: $10.67 - 4 = 6.67$ hours worth of wine per unit of cloth exported
+
+Country B exports wine, imports cloth. Gains from 1 unit of export:
+- Cost of producing 1 wine: 6 hours
+- Revenue from 1 wine: 0.75 cloth (worth 4.5 hours of domestic cloth production)
+- Gain: $4.5 - 6 = -1.5$ hours
+
+Wait, this gives a loss for Country B. Let me recalculate.
+
+At $P_w/P_c = 0.75$: 1 cloth trades for 1.33 wine.
+
+Country A (exporting cloth): produces 1 cloth (4 hours). Trades for 1.33 wine. To produce
+1.33 wine domestically would take $1.33 \times 8 = 10.67$ hours. Gain: $10.67 - 4 = 6.67$ hours.
+
+Country B (exporting wine): produces 1 wine (6 hours). Trades for 0.75 cloth. To produce
+0.75 cloth domestically would take $0.75 \times 6 = 4.5$ hours. Gain: $4.5 - 6 = -1.5$ hours.
+
+This gives a loss for Country B because the terms of trade are too favourable to Country A.
+The price must be within the autarky range: $0.5 \leq P_w/P_c \leq 1$.
+
+At $P_w/P_c = 0.75$: this is within the range. Let me recalculate for Country B.
+
+Country B exports 1 wine, receives 0.75 cloth. Cost of producing 1 wine domestically: 6 hours.
+Value of 0.75 cloth if produced domestically: 4.5 hours. But Country B receives 0.75 cloth
+for 6 hours of work. To get 0.75 cloth domestically would take 4.5 hours. So Country B
+is "spending" 6 hours to get what would cost 4.5 hours domestically. This is a loss.
+
+The issue is that at $P_w/P_c = 0.75$, 1 wine buys only 0.75 cloth. Country B's autarky
+exchange rate is 1:1 (6 hours each). For trade to benefit Country B, the terms of trade
+must be at least 1:1 in Country B's favour.
+
+Let me reconsider. The terms of trade must satisfy: Country A gains from exporting cloth,
+and Country B gains from exporting wine.
+
+For Country A to gain from exporting cloth: the world price of cloth (in wine) must exceed
+Country A's opportunity cost of cloth: $P_c/P_w > 0.5$, i.e., $P_w/P_c < 2$.
+
+For Country B to gain from exporting wine: the world price of wine (in cloth) must exceed
+Country B's opportunity cost of wine: $P_w/P_c > 1$.
+
+So the mutually beneficial range is: $1 < P_w/P_c < 2$.
+
+At $P_w/P_c = 1.5$: 1 wine $= 1.5$ cloth.
+
+Country A: exports 1 cloth, gets $1/1.5 = 0.667$ wine. Cost: 4 hours. Value domestically:
+$0.667 \times 8 = 5.33$ hours. Gain: 1.33 hours per unit of cloth exported.
+
+Country B: exports 1 wine, gets 1.5 cloth. Cost: 6 hours. Value domestically:
+$1.5 \times 6 = 9$ hours. Gain: 3 hours per unit of wine exported.
+
+Both countries gain. The terms of trade (1.5) is closer to Country B's autarky price (1),
+so Country B gains more (3 hours vs. 1.33 hours).
+
+### Limitations of the Ricardian Model
+
+1. **Labour-only production:** ignores other factors of production (capital, land)
+2. **Constant returns to scale:** ignores economies of scale
+3. **Zero transport costs:** trade costs reduce the gains from trade
+4. **Perfect labour mobility within countries:** workers can move freely between sectors
+5. **Complete specialisation:** the model predicts complete specialisation, but in practice
+   countries produce some of most goods
+
+### The Heckscher-Ohlin Model (Extension)
+
+The Heckscher-Ohlin (H-O) model explains comparative advantage through factor endowments:
+
+** theorem:** a country exports goods that intensively use its abundant factor and imports
+goods that intensively use its scarce factor.
+
+**Stolper-Samuelson theorem:** trade increases the real return to the abundant factor and
+reduces the real return to the scarce factor. In a labour-abundant country, trade increases
+wages and reduces rents.
+
+**Factor price equalisation:** trade in goods leads to equalisation of factor prices
+(wages, rents) across countries, even without factor mobility.
+
+**Empirical test -- Leontief paradox (1953):** Wassily Leontief found that the US (a
+capital-abundant country) exported labour-intensive goods and imported capital-intensive
+goods, contradicting the H-O prediction. Possible explanations:
+
+1. US labour is more skilled (human capital), so "labour-intensive" exports actually reflect
+   human capital intensity
+2. The US exports technology-intensive goods where the classification of factors is ambiguous
+3. Trade barriers (tariffs) distort the pattern of trade
+
+## Exam-Style Questions: International Economics (Additional)
+
+<details>
+<summary>Question 6: Comparative Advantage and Trade Gains (10 marks)</summary>
+
+Country X and Country Y produce two goods: cars and wheat. Labour requirements (hours per unit):
+
+| | Cars | Wheat |
+|---|---|---|
+| Country X | 100 | 10 |
+| Country Y | 80 | 20 |
+
+Each country has 1000 labour hours available.
+
+(a) Which country has an absolute advantage in each good? [2 marks]
+
+(b) Which country has a comparative advantage in each good? [2 marks]
+
+(c) If the countries specialise and trade at a price of 1 car = 7 wheat, calculate the
+   gains from trade for each country. [6 marks]
+
+(a) Country Y has an absolute advantage in cars (80 < 100 hours). Country X has an absolute
+advantage in wheat (10 < 20 hours).
+
+(b) Opportunity costs:
+
+Country X: 1 car $= 100/10 = 10$ wheat. 1 wheat $= 10/100 = 0.1$ cars.
+Country Y: 1 car $= 80/20 = 4$ wheat. 1 wheat $= 20/80 = 0.25$ cars.
+
+Country X has a comparative advantage in wheat (lower opportunity cost: 0.1 < 0.25 cars).
+Country Y has a comparative advantage in cars (lower opportunity cost: 4 < 10 wheat).
+
+(c) **Autarky (no trade):**
+
+Assume each country splits labour equally: 500 hours to each good.
+
+Country X: cars $= 500/100 = 5$, wheat $= 500/10 = 50$.
+Country Y: cars $= 500/80 = 6.25$, wheat $= 500/20 = 25$.
+Total: 11.25 cars, 75 wheat.
+
+**With specialisation:**
+
+Country X produces only wheat: $1000/10 = 100$ wheat.
+Country Y produces only cars: $1000/80 = 12.5$ cars.
+Total: 12.5 cars, 100 wheat.
+
+World output increases by 1.25 cars and 25 wheat.
+
+**With trade at 1 car = 7 wheat:**
+
+Suppose Country Y exports 6 cars and imports 42 wheat:
+
+Country Y: consumes $12.5 - 6 = 6.5$ cars, $0 + 42 = 42$ wheat.
+Country X: consumes $0 + 6 = 6$ cars, $100 - 42 = 58$ wheat.
+
+**Gains from trade:**
+
+Country X: was consuming 5 cars and 50 wheat. Now: 6 cars and 58 wheat. Gain: +1 car, +8 wheat.
+Country Y: was consuming 6.25 cars and 25 wheat. Now: 6.5 cars and 42 wheat. Gain: +0.25 cars, +17 wheat.
+
+Both countries gain from trade.
+
+</details>

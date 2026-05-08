@@ -670,3 +670,228 @@ Ready to test your understanding of **Logarithms**? The [diagnostic test](/docs/
 
 See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+For logarithm problems in DSE Paper 1:
+
+1. Always state the domain restriction before solving (argument of logarithm must be positive).
+2. When using logarithm laws, write the law explicitly before applying it.
+3. When converting between exponential and logarithmic form, show the intermediate step.
+4. After solving, verify each solution satisfies the domain restriction.
+
+### Significant Figures
+
+Exact logarithmic answers are preferred. If a numerical approximation is required, use 3 significant figures. When the question asks for an answer "correct to 3 significant figures," the calculator value should be stated.
+
+### Common DSE Question Types
+
+1. **Solving logarithmic equations** (combine, convert, solve, check domain).
+2. **Solving exponential equations** (take logs, bring down exponents).
+3. **Change of base** problems.
+4. **Logarithmic inequalities** (consider the base: $> 1$ or $< 1$).
+5. **Applications** (compound interest, half-life, pH, Richter scale).
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 11: Logarithmic equation with different bases**
+
+Solve $\log_2 x + \log_3 x = 5$.
+
+<details>
+<summary>Solution</summary>
+
+By the change of base formula: $\log_3 x = \dfrac{\log_2 x}{\log_2 3}$.
+
+Let $u = \log_2 x$:
+
+$$u + \frac{u}{\log_2 3} = 5 \implies u\!\left(1 + \frac{1}{\log_2 3}\right) = 5$$
+
+$$u \cdot \frac{\log_2 3 + 1}{\log_2 3} = 5 \implies u = \frac{5\log_2 3}{1 + \log_2 3}$$
+
+$$\log_2 x = \frac{5\log_2 3}{\log_2 6} = \log_6 3^5 = \log_6 243$$
+
+$$x = 2^{\frac{5\log_2 3}{\log_2 6}} = 243^{1/\log_2 6}$$
+
+This can also be written as $x = 6^{\log_6 243} = 243$? Let me verify: $\log_2 243 + \log_3 243 = \log_2 243 + \dfrac{\log_2 243}{\log_2 3} = \log_2 243\!\left(1 + \dfrac{1}{\log_2 3}\right)$.
+
+$\log_2 243 = \log_2 3^5 = 5\log_2 3$.
+
+$5\log_2 3 \cdot \dfrac{1 + \log_2 3}{\log_2 3} = 5(1 + \log_2 3)$.
+
+Is this $= 5$? Only if $\log_2 3 = 0$, which is false. So $x = 243$ is incorrect.
+
+The exact answer is $x = 2^{\frac{5\log_2 3}{\log_2 6}}$.
+
+</details>
+
+**Worked Example 12: Exponential equation with three terms**
+
+Solve $4^x - 5 \cdot 2^x + 6 = 0$.
+
+<details>
+<summary>Solution</summary>
+
+Let $u = 2^x$ ($u > 0$): $u^2 - 5u + 6 = 0 \implies (u - 2)(u - 3) = 0$.
+
+$u = 2$ or $u = 3$.
+
+$2^x = 2 \implies x = 1$.
+
+$2^x = 3 \implies x = \log_2 3 = \dfrac{\log 3}{\log 2} \approx 1.58$.
+
+</details>
+
+**Worked Example 13: Logarithmic identity proof**
+
+Prove that $\log_a b \cdot \log_b c \cdot \log_c a = 1$.
+
+<details>
+<summary>Solution</summary>
+
+Using the change of base formula:
+
+$$\log_a b = \frac{\log b}{\log a}, \quad \log_b c = \frac{\log c}{\log b}, \quad \log_c a = \frac{\log a}{\log c}$$
+
+Multiplying:
+
+$$\frac{\log b}{\log a} \cdot \frac{\log c}{\log b} \cdot \frac{\log a}{\log c} = 1 \qed$$
+
+</details>
+
+**Worked Example 14: Solving a system of exponential equations**
+
+Solve the system $2^x \cdot 3^y = 108$ and $2^x + 3^y = 21$.
+
+<details>
+<summary>Solution</summary>
+
+From the first equation: $2^x = \dfrac{108}{3^y}$.
+
+Substituting into the second: $\dfrac{108}{3^y} + 3^y = 21$.
+
+Let $u = 3^y$ ($u > 0$): $\dfrac{108}{u} + u = 21 \implies u^2 - 21u + 108 = 0 \implies (u - 9)(u - 12) = 0$.
+
+$u = 9$ or $u = 12$.
+
+Case 1: $3^y = 9 \implies y = 2$. Then $2^x = \dfrac{108}{9} = 12 \implies x = \log_2 12$.
+
+Case 2: $3^y = 12 \implies y = \log_3 12$. Then $2^x = \dfrac{108}{12} = 9 \implies x = \log_2 9$.
+
+Solutions: $(x, y) = (\log_2 12,\; 2)$ and $(\log_2 9,\; \log_3 12)$.
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** Solve $\log_2(2x - 1) + \log_2(x + 3) = 4$.
+
+<details>
+<summary>Solution</summary>
+
+Domain: $2x - 1 > 0 \implies x > \dfrac{1}{2}$, and $x + 3 > 0 \implies x > -3$. Combined: $x > \dfrac{1}{2}$.
+
+$\log_2[(2x - 1)(x + 3)] = 4 \implies (2x - 1)(x + 3) = 16$.
+
+$2x^2 + 5x - 3 = 16 \implies 2x^2 + 5x - 19 = 0$.
+
+$x = \dfrac{-5 \pm \sqrt{25 + 152}}{4} = \dfrac{-5 \pm \sqrt{177}}{4}$.
+
+$\dfrac{-5 + \sqrt{177}}{4} \approx \dfrac{-5 + 13.30}{4} \approx 2.08 > \dfrac{1}{2}$. Accepted.
+
+$\dfrac{-5 - \sqrt{177}}{4} \approx -4.58 < \dfrac{1}{2}$. Rejected.
+
+Solution: $x = \dfrac{-5 + \sqrt{177}}{4}$.
+
+</details>
+
+**DSE Practice 2.** If $\log_4 x + \log_4(x - 6) = 2$, find $x$.
+
+<details>
+<summary>Solution</summary>
+
+Domain: $x > 0$ and $x - 6 > 0 \implies x > 6$.
+
+$\log_4[x(x - 6)] = 2 \implies x(x - 6) = 16 \implies x^2 - 6x - 16 = 0$.
+
+$(x - 8)(x + 2) = 0 \implies x = 8$ or $x = -2$.
+
+Since $x > 6$: $x = 8$.
+
+</details>
+
+**DSE Practice 3.** Solve the inequality $\log_3(x - 2) \leq 2$.
+
+<details>
+<summary>Solution</summary>
+
+Domain: $x - 2 > 0 \implies x > 2$.
+
+Since base $3 > 1$, the inequality sign is preserved: $x - 2 \leq 3^2 = 9$.
+
+$x \leq 11$.
+
+Combined: $2 < x \leq 11$.
+
+</details>
+
+**DSE Practice 4.** The population of a city was 2 million in 2020 and 3 million in 2025. Assuming exponential growth, in what year will the population reach 5 million?
+
+<details>
+<summary>Solution</summary>
+
+$P(t) = P_0 \cdot a^t$ where $t$ is years from 2020.
+
+$P_0 = 2$, $P(5) = 3$: $2a^5 = 3 \implies a^5 = 1.5 \implies a = 1.5^{1/5}$.
+
+For $P(t) = 5$: $2 \cdot 1.5^{t/5} = 5 \implies 1.5^{t/5} = 2.5$.
+
+$t = 5 \cdot \dfrac{\ln 2.5}{\ln 1.5} = 5 \cdot \dfrac{0.9163}{0.4055} \approx 11.3$ years.
+
+Year: $2020 + 11.3 \approx 2031$ (during 2031).
+
+</details>
+
+**DSE Practice 5.** Simplify $\dfrac{\log_{27} 8}{\log_{\sqrt{3}} 2}$.
+
+<details>
+<summary>Solution</summary>
+
+$$\log_{27} 8 = \frac{\log 8}{\log 27} = \frac{3\log 2}{3\log 3} = \frac{\log 2}{\log 3}$$
+
+$$\log_{\sqrt{3}} 2 = \frac{\log 2}{\log \sqrt{3}} = \frac{\log 2}{\frac{1}{2}\log 3} = \frac{2\log 2}{\log 3}$$
+
+$$\frac{\log_{27} 8}{\log_{\sqrt{3}} 2} = \frac{\log 2 / \log 3}{2\log 2 / \log 3} = \frac{1}{2}$$
+
+</details>
+
+**DSE Practice 6.** Given that $2\log_a x - \log_a(x^2 - 1) = 1$, express $x$ in terms of $a$.
+
+<details>
+<summary>Solution</summary>
+
+Domain: $x > 0$, $x^2 - 1 > 0 \implies x > 1$.
+
+$\log_a\dfrac{x^2}{x^2 - 1} = 1 \implies \dfrac{x^2}{x^2 - 1} = a$.
+
+$x^2 = a(x^2 - 1) \implies x^2 = ax^2 - a \implies x^2(a - 1) = a$.
+
+$x^2 = \dfrac{a}{a - 1}$.
+
+$x = \sqrt{\dfrac{a}{a - 1}}$ (positive root since $x > 1 > 0$).
+
+This requires $\dfrac{a}{a - 1} > 0$, i.e., $a > 1$ or $a < 0$.
+
+Also need $x > 1$: $\dfrac{a}{a - 1} > 1 \implies \dfrac{a - a + 1}{a - 1} > 0 \implies \dfrac{1}{a - 1} > 0 \implies a > 1$.
+
+Answer: $x = \sqrt{\dfrac{a}{a - 1}}$ for $a > 1$.
+
+</details>

@@ -735,6 +735,224 @@ Absolute uncertainty $= 1.430 \times 10^{-3} \times 0.017 = 0.024 \times 10^{-3}
 
 Result: $(1.43 \pm 0.02) \times 10^{-3}\,\mathrm{mol}$
 
+## Advanced Quantitative Chemistry
+
+### Back-Titration Calculations
+
+Back-titration is used to determine the concentration of a solution that reacts with a standard solution but does not have a suitable indicator. The procedure involves adding excess standard reagent and then titrating the excess.
+
+**Worked Example:** $25.0\,\mathrm{cm}^3$ of an impure sample of $\mathrm{H}_2\mathrm{SO}_4$ is reacted with $25.0\,\mathrm{cm}^3$ of $0.500\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$. The excess $\mathrm{NaOH}$ requires $15.0\,\mathrm{cm}^3$ of $0.200\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl}$ for neutralisation. Calculate the concentration of $\mathrm{H}_2\mathrm{SO}_4$.
+
+$$\mathrm{H}_2\mathrm{SO}_4 + 2\mathrm{NaOH} \to \mathrm{Na}_2\mathrm{SO}_4 + 2\mathrm{H}_2\mathrm{O}$$
+
+Moles of $\mathrm{NaOH}$ added: $0.500 \times 0.0250 = 0.0125\,\mathrm{mol}$
+
+Moles of $\mathrm{HCl}$ used in back-titration: $0.200 \times 0.0150 = 0.00300\,\mathrm{mol}$
+
+Moles of excess $\mathrm{NaOH}$: $0.00300\,\mathrm{mol}$
+
+Moles of $\mathrm{NaOH}$ that reacted with $\mathrm{H}_2\mathrm{SO}_4$: $0.0125 - 0.00300 = 0.00950\,\mathrm{mol}$
+
+From the stoichiometry (1 mol $\mathrm{H}_2\mathrm{SO}_4$ reacts with 2 mol $\mathrm{NaOH}$):
+
+$$n(\mathrm{H}_2\mathrm{SO}_4) = \frac{0.00950}{2} = 0.00475\,\mathrm{mol}$$
+
+$$c(\mathrm{H}_2\mathrm{SO}_4) = \frac{0.00475}{0.0250} = 0.190\,\mathrm{mol\,dm^{-3}}$$
+
+### Redox Titration Calculations
+
+**Worked Example:** $25.0\,\mathrm{cm}^3$ of potassium manganate(VII) solution was used to titrate $20.0\,\mathrm{cm}^3$ of an iron(II) sulphate solution. The mean titre was $19.6\,\mathrm{cm}^3$ and the $\mathrm{KMnO}_4$ concentration was $0.0200\,\mathrm{mol\,dm^{-3}$. Calculate the concentration of the iron(II) solution.
+
+$$\mathrm{MnO}_4^- + 5\mathrm{Fe}^{2+} + 8\mathrm{H}^+ \to \mathrm{Mn}^{2+} + 5\mathrm{Fe}^{3+} + 4\mathrm{H}_2\mathrm{O}$$
+
+$$n(\mathrm{KMnO}_4) = 0.0200 \times 0.0196 = 3.92 \times 10^{-4}\,\mathrm{mol}$$
+
+From stoichiometry (5 mol $\mathrm{Fe}^{2+}$ per 1 mol $\mathrm{MnO}_4^-$):
+
+$$n(\mathrm{Fe}^{2+}) = 5 \times 3.92 \times 10^{-4} = 1.96 \times 10^{-3}\,\mathrm{mol}$$
+
+$$c(\mathrm{Fe}^{2+}) = \frac{1.96 \times 10^{-3}}{0.0200} = 0.0980\,\mathrm{mol\,dm^{-3}}$$
+
+### Gas Volume Calculations
+
+**Worked Example:** Calculate the volume of $\mathrm{CO}_2$ produced when $10.0\,\mathrm{g}$ of calcium carbonate is heated with excess hydrochloric acid, at $298\,\mathrm{K}$ and $101\,\mathrm{kPa}$.
+
+$$\mathrm{CaCO}_3(s) + 2\mathrm{HCl}(aq) \to \mathrm{CaCl}_2(aq) + \mathrm{CO}_2(g) + \mathrm{H}_2\mathrm{O}(l)$$
+
+$$n(\mathrm{CaCO}_3) = \frac{10.0}{100.09} = 0.0999\,\mathrm{mol}$$
+
+$$n(\mathrm{CO}_2) = 0.0999\,\mathrm{mol}$$ (1:1 stoichiometry)
+
+$$V = \frac{nRT}{p} = \frac{0.0999 \times 8.314 \times 298}{101000} = \frac{247.5}{101000} = 2.45 \times 10^{-3}\,\mathrm{m}^3 = 2.45\,\mathrm{dm}^3$$
+
+$$V = 2450\,\mathrm{cm}^3$$
+
+### Empirical and Molecular Formula Determination
+
+**Worked Example:** A compound contains $40.0\%$ carbon, $6.7\%$ hydrogen and $53.3\%$ oxygen by mass.
+
+Step 1: Assume $100\,\mathrm{g}$ of compound.
+
+Moles of C: $40.0/12.01 = 3.33\,\mathrm{mol}$
+
+Moles of H: $6.7/1.008 = 6.65\,\mathrm{mol}$
+
+Moles of O: $53.3/16.00 = 3.33\,\mathrm{mol}$
+
+Step 2: Divide by the smallest number of moles to get the simplest ratio.
+
+Ratio: C : H : O = 3.33 : 6.65 : 3.33 = 1 : 2 : 1
+
+Empirical formula: $\mathrm{CH}_2\mathrm{O}$
+
+Step 3: If $M_r = 62$, calculate the molecular formula.
+
+$\mathrm{CH}_2\mathrm{O}$: $M_r = 12 + 2 + 16 = 30$. Since $62/30 = 2.07 \approx 2$, the molecular formula is $\mathrm{C}_2\mathrm{H}_4\mathrm{O}_2$ (ethane-1,2-diol).
+
+### Water of Crystallisation
+
+Some ionic compounds crystallise with water molecules incorporated into the crystal lattice. The water molecules are called water of crystallisation.
+
+**Worked Example:** $5.00\,\mathrm{g}$ of hydrated magnesium sulphate, $\mathrm{MgSO}_4 \cdot x\mathrm{H}_2\mathrm{O}$, was heated to constant mass. The anhydrous mass remaining was $2.44\,\mathrm{g}$. Calculate $x$.
+
+Mass of water lost: $5.00 - 2.44 = 2.56\,\mathrm{g}$
+
+Moles of water: $2.56/18.02 = 0.142\,\mathrm{mol}$
+
+Moles of anhydrous $\mathrm{MgSO}_4$: $2.44/120.4 = 0.0203\,\mathrm{mol}$
+
+$$x = \frac{0.142}{0.0203} = 7.00$$
+
+The formula is $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$ (Epsom salts).
+
+### Limiting Reactant and Percentage Yield
+
+**Worked Example:** $6.50\,\mathrm{g}$ of zinc reacts with excess $2.00\,\mathrm{mol\,dm^{-3}}$ sulphuric acid. The mass of zinc remaining is $2.00\,\mathrm{g}$.
+
+$$\mathrm{Zn} + \mathrm{H}_2\mathrm{SO}_4 \to \mathrm{ZnSO}_4 + \mathrm{H}_2$$
+
+$$n(\mathrm{Zn}) = \frac{6.50 - 2.00}{65.38} = \frac{4.50}{65.38} = 0.0688\,\mathrm{mol}$$
+
+Theoretical mass of $\mathrm{H}_2$: $n(\mathrm{H}_2) = 0.0688\,\mathrm{mol}$ (1:1)
+
+$$m(\mathrm{H}_2) = 0.0688 \times 2.016 = 0.139\,\mathrm{g}$$
+
+If only $0.098\,\mathrm{g}$ of $\mathrm{H}_2$ was collected:
+
+$$\text{Percentage yield} = \frac{0.098}{0.139} \times 100 = 70.5\%$$
+
+### Atom Economy
+
+Atom economy measures the efficiency of a reaction in terms of how much of the reactants end up in the desired product:
+
+$$\text{Atom economy} = \frac{M_r \text{ of desired product}}{\text{Sum of } M_r \text{ of all products}} \times 100\%$$
+
+**Worked Example:** Compare the atom economy of two routes to ethanol.
+
+Route 1: Hydration of ethene (addition reaction)
+$$\mathrm{C}_2\mathrm{H}_4 + \mathrm{H}_2\mathrm{O} \to \mathrm{C}_2\mathrm{H}_5\mathrm{OH}$$
+
+$$\text{Atom economy} = \frac{46.0}{46.0} \times 100 = 100\%$$
+
+Route 2: Fermentation (single product)
+$$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{CO}_2$$
+
+$$\text{Atom economy} = \frac{2 \times 46.0}{2 \times 46.0 + 2 \times 44.0} \times 100 = \frac{92.0}{180.0} \times 100 = 51.1\%$$
+
+Addition reactions always have 100% atom economy (assuming no side reactions). This is a key advantage of addition reactions in green chemistry.
+
+### Common Pitfalls
+
+1. **Moles calculation with volume in $\mathrm{cm}^3$:** Always convert to $\mathrm{dm}^3$ before calculating moles. $250\,\mathrm{cm}^3 = 0.250\,\mathrm{dm}^3$, not $250\,\mathrm{dm}^3$. This is the most common numerical error in quantitative chemistry.
+
+2. **Stoichiometry in titration calculations:** Always write the balanced equation first and identify the mole ratio. Students frequently assume a 1:1 ratio when it is not (e.g. $\mathrm{H}_2\mathrm{SO}_4$ and $\mathrm{NaOH}$ is 1:2).
+
+3. **Back-titration logic:** In a back-titration, the moles of excess reagent (determined from the titration) must be subtracted from the moles of reagent originally added to find the moles that actually reacted with the analyte.
+
+4. **Significant figures:** The answer to a calculation should be given to the same number of significant figures as the least precise measurement. If a mass is given as $2.5\,\mathrm{g}$ (2 s.f.), the answer should be to 2 s.f.
+
+5. **Ideal gas equation units:** $p$ must be in pascals ($\mathrm{Pa}$), $V$ in $\mathrm{m}^3$, $n$ in mol, $T$ in $\mathrm{K}$. Common conversions: $1\,\mathrm{atm} = 101325\,\mathrm{Pa}$, $1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$, $1\,\mathrm{cm}^3 = 10^{-6}\,\mathrm{m}^3$.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Calculate the percentage of oxygen by mass in $\mathrm{Mg}\left(\mathrm{NO}_3\right)_2$.
+
+**Mark Scheme:**
+
+$M_r = 24.3 + 2(14.0 + 3 \times 16.0) = 24.3 + 62.0 + 96.0 = 148.3\,\mathrm{g/mol}$ (1 mark).
+
+Mass of O: $6 \times 16.0 = 96.0\,\mathrm{g}$ (1 mark).
+
+$$\%\,\mathrm{O} = \frac{96.0}{148.3} \times 100 = 64.7\%$$ (2 marks for calculation, 1 mark for answer to 3 s.f.).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+$2.00\,\mathrm{g}$ of impure calcium carbonate reacts with excess hydrochloric acid, producing $480\,\mathrm{cm}^3$ of $\mathrm{CO}_2$ at room temperature and pressure ($101\,\mathrm{kPa}$, $298\,\mathrm{K}$).
+
+(a) Calculate the percentage purity of the calcium carbonate. (4 marks)
+
+(b) Identify two sources of error in this experiment. (2 marks)
+
+**Mark Scheme:**
+
+(a) $n(\mathrm{CO}_2) = \frac{pV}{RT} = \frac{101000 \times 480 \times 10^{-6}}{8.314 \times 298} = \frac{48.5}{2478} = 0.0196\,\mathrm{mol}$ (1 mark).
+
+From $\mathrm{CaCO}_3 + 2\mathrm{HCl} \to \mathrm{CaCl}_2 + \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$: $n(\mathrm{CaCO}_3) = n(\mathrm{CO}_2) = 0.0196\,\mathrm{mol}$ (1 mark).
+
+Mass of pure $\mathrm{CaCO}_3$: $0.0196 \times 100.09 = 1.96\,\mathrm{g}$ (1 mark).
+
+Percentage purity: $\frac{1.96}{2.00} \times 100 = 98.0\%$ (1 mark).
+
+(b) Two from: $\mathrm{CO}_2$ may be partially soluble in water, reducing the measured volume (1 mark). Temperature and pressure may not be exactly $298\,\mathrm{K}$ and $101\,\mathrm{kPa}$ (1 mark). The reaction may not have gone to completion. Gas collection errors (water displacement may not be perfectly quantitative).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+$0.500\,\mathrm{g}$ of an unknown metal M reacts with excess dilute hydrochloric acid to produce $120\,\mathrm{cm}^3$ of hydrogen gas at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$. Identify the metal.
+
+**Mark Scheme:**
+
+$$n(\mathrm{H}_2) = \frac{pV}{RT} = \frac{100000 \times 120 \times 10^{-6}}{8.314 \times 298} = \frac{12.0}{2478} = 0.00484\,\mathrm{mol}$$ (1 mark)
+
+Assume M has valency $+2$: $n(\mathrm{M}) = \frac{0.00484}{2} = 0.00242\,\mathrm{mol}$ (1 mark).
+
+$$A_r(\mathrm{M}) = \frac{0.500}{0.00242} = 207\,\mathrm{g/mol}$$
+
+The metal is **lead** ($A_r = 207$, Group 2, forms $\mathrm{Pb}^{2+}$, valency 2) (2 marks).
+
+</details>
+
+<details>
+<summary>Q4 (5 marks)</summary>
+
+In a titration to determine the concentration of ethanoic acid in vinegar, $25.0\,\mathrm{cm}^3$ of vinegar was diluted to $250\,\mathrm{cm}^3$ in a volumetric flask. $25.0\,\mathrm{cm}^3$ of this diluted solution was titrated with $0.100\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$, requiring $18.4\,\mathrm{cm}^3$ for neutralisation. Calculate the concentration of ethanoic acid in the original vinegar in $\mathrm{g\,dm^{-3}}$.
+
+**Mark Scheme:**
+
+$$n(\mathrm{NaOH}) = 0.100 \times 0.0184 = 1.84 \times 10^{-3}\,\mathrm{mol}$$ (1 mark)
+
+$$\mathrm{CH}_3\mathrm{COOH} + \mathrm{NaOH} \to \mathrm{CH}_3\mathrm{COONa} + \mathrm{H}_2\mathrm{O}$$
+
+$n(\mathrm{CH}_3\mathrm{COOH})$ in $25.0\,\mathrm{cm}^3$ of diluted solution $= 1.84 \times 10^{-3}\,\mathrm{mol}$ (1 mark).
+
+$n(\mathrm{CH}_3\mathrm{COOH})$ in $250\,\mathrm{cm}^3$ of diluted solution $= 1.84 \times 10^{-3} \times 10 = 0.0184\,\mathrm{mol}$ (1 mark).
+
+This equals $n(\mathrm{CH}_3\mathrm{COOH})$ in $25.0\,\mathrm{cm}^3$ of original vinegar.
+
+$$c(\mathrm{CH}_3\mathrm{COOH}) = \frac{0.0184}{0.0250} = 0.736\,\mathrm{mol\,dm^{-3}}$$
+
+$$\text{Concentration in } \mathrm{g\,dm^{-3}} = 0.736 \times 60.05 = 44.2\,\mathrm{g\,dm^{-3}}$$ (2 marks).
+
+</details>
+
 ---
 
 :::tip

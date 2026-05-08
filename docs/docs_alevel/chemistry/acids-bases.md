@@ -884,6 +884,222 @@ $\mathrm{CH}_3\mathrm{COOH}$ and $\mathrm{CH}_3\mathrm{COONa}$: Ethanoic acid is
 
 </details>
 
+## Advanced Acid-Base Calculations
+
+### pH of Weak Acids: Beyond the Approximation
+
+The standard approximation for weak acid pH assumes $[\mathrm{H}^+] \ll [\mathrm{HA}]_0$. When this assumption fails (very dilute or very strong weak acids), the quadratic formula must be used.
+
+**Worked Example:** Calculate the pH of a $1.00 \times 10^{-4}\,\mathrm{mol\,dm^{-3}}$ solution of ethanoic acid ($K_a = 1.74 \times 10^{-5}$).
+
+Let $x = [\mathrm{H}^+] = [\mathrm{CH}_3\mathrm{COO}^-]$.
+
+$$K_a = \frac{x^2}{1.00 \times 10^{-4} - x} = 1.74 \times 10^{-5}$$
+
+$$x^2 = 1.74 \times 10^{-5}(1.00 \times 10^{-4} - x) = 1.74 \times 10^{-9} - 1.74 \times 10^{-5}x$$
+
+$$x^2 + 1.74 \times 10^{-5}x - 1.74 \times 10^{-9} = 0$$
+
+Using the quadratic formula:
+
+$$x = \frac{-1.74 \times 10^{-5} + \sqrt{(1.74 \times 10^{-5})^2 + 4(1.74 \times 10^{-9})}}{2}$$
+
+$$x = \frac{-1.74 \times 10^{-5} + \sqrt{3.03 \times 10^{-10} + 6.96 \times 10^{-9}}}{2} = \frac{-1.74 \times 10^{-5} + \sqrt{7.26 \times 10^{-9}}}{2}$$
+
+$$x = \frac{-1.74 \times 10^{-5} + 8.52 \times 10^{-5}}{2} = \frac{6.78 \times 10^{-5}}{2} = 3.39 \times 10^{-5}\,\mathrm{mol\,dm^{-3}}$$
+
+$$\mathrm{pH} = -\log(3.39 \times 10^{-5}) = 4.47$$
+
+Check: $\frac{3.39 \times 10^{-5}}{1.00 \times 10^{-4}} \times 100 = 33.9\%$ dissociation. Since this exceeds 5%, the approximation was not valid and the quadratic solution was necessary.
+
+### Buffer Capacity and pH Range
+
+A buffer is most effective when $\mathrm{pH} = \mathrm{p}K_a$ (where $[\mathrm{HA}] = [\mathrm{A}^-]$). The useful range is $\mathrm{p}K_a \pm 1$.
+
+**Worked Example:** How many moles of $\mathrm{NaOH}$ must be added to $500\,\mathrm{cm}^3$ of $0.200\,\mathrm{mol\,dm^{-3}}$ ethanoic acid ($\mathrm{p}K_a = 4.76$) to produce a buffer with pH $= 5.00$?
+
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$$
+
+$$5.00 = 4.76 + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$$
+
+$$\log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 0.24$$
+
+$$\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 10^{0.24} = 1.74$$
+
+Initial moles of ethanoic acid: $n = 0.200 \times 0.500 = 0.100\,\mathrm{mol}$
+
+Let $x$ = moles of $\mathrm{NaOH}$ added. Then $[\mathrm{A}^-] = x$ and $[\mathrm{HA}] = 0.100 - x$.
+
+$$\frac{x}{0.100 - x} = 1.74$$
+
+$$x = 1.74(0.100 - x) = 0.174 - 1.74x$$
+
+$$2.74x = 0.174$$
+
+$$x = 0.0635\,\mathrm{mol}$$
+
+So $0.0635\,\mathrm{mol}$ of $\mathrm{NaOH}$ must be added. This converts $0.0635\,\mathrm{mol}$ of ethanoic acid to sodium ethanoate, leaving $0.0365\,\mathrm{mol}$ of ethanoic acid unreacted.
+
+### pH Curves: Titration of a Weak Acid with a Strong Base
+
+The titration of ethanoic acid with $\mathrm{NaOH}$ produces a characteristic S-shaped pH curve:
+
+**Key regions:**
+
+1. **Initial pH:** pH of the weak acid (higher than for a strong acid of the same concentration because the weak acid is only partially dissociated).
+
+2. **Buffer region:** After some $\mathrm{NaOH}$ has been added, the solution contains both $\mathrm{CH}_3\mathrm{COOH}$ and $\mathrm{CH}_3\mathrm{COO}^-$, forming a buffer. The pH changes slowly in this region.
+
+3. **Half-equivalence point:** When half the acid has been neutralised, $[\mathrm{HA}] = [\mathrm{A}^-]$ and $\mathrm{pH} = \mathrm{p}K_a$. This is a useful experimental method for determining $\mathrm{p}K_a$.
+
+4. **Equivalence point:** pH $> 7$ (alkaline) because the salt of a weak acid and strong base hydrolyses: $\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{CH}_3\mathrm{COOH} + \mathrm{OH}^-$.
+
+5. **Beyond equivalence:** pH is determined by the excess $\mathrm{OH}^-$.
+
+**Worked Example:** Calculate the pH at the equivalence point when $25.0\,\mathrm{cm}^3$ of $0.100\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$ is added to $25.0\,\mathrm{cm}^3$ of $0.100\,\mathrm{mol\,dm^{-3}}$ ethanoic acid ($K_a = 1.74 \times 10^{-5}$).
+
+At equivalence: $n(\mathrm{CH}_3\mathrm{COO}^-) = 0.100 \times 0.0250 = 2.50 \times 10^{-3}\,\mathrm{mol}$
+
+Total volume $= 50.0\,\mathrm{cm}^3 = 0.0500\,\mathrm{dm}^3$
+
+$[\mathrm{CH}_3\mathrm{COO}^-] = \frac{2.50 \times 10^{-3}}{0.0500} = 0.0500\,\mathrm{mol\,dm^{-3}}$
+
+The ethanoate ion hydrolyses:
+
+$$\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{CH}_3\mathrm{COOH} + \mathrm{OH}^-$$
+
+$$K_b = \frac{K_w}{K_a} = \frac{1.00 \times 10^{-14}}{1.74 \times 10^{-5}} = 5.75 \times 10^{-10}$$
+
+$$K_b = \frac{[\mathrm{OH}^-]^2}{[\mathrm{CH}_3\mathrm{COO}^-]} = \frac{x^2}{0.0500} = 5.75 \times 10^{-10}$$
+
+$$x = \sqrt{5.75 \times 10^{-10} \times 0.0500} = 5.37 \times 10^{-6}\,\mathrm{mol\,dm^{-3}}$$
+
+$$\mathrm{pOH} = -\log(5.37 \times 10^{-6}) = 5.27$$
+
+$$\mathrm{pH} = 14 - 5.27 = 8.73$$
+
+### Choosing an Indicator
+
+An indicator is chosen so that its colour change range overlaps with the steep part of the titration curve at the equivalence point.
+
+| Titration type | Equivalence point pH | Suitable indicator |
+|---|---|---|
+| Strong acid / strong base | 7.0 | Bromothymol blue (6.0--7.6) |
+| Weak acid / strong base | 8--9 | Phenolphthalein (8.2--10.0) |
+| Strong acid / weak base | 4--6 | Methyl orange (3.1--4.4) |
+| Weak acid / weak base | $\approx 7$ | None ideal; use pH meter |
+
+### Polyprotic Acids
+
+Sulfuric acid ($\mathrm{H}_2\mathrm{SO}_4$) is a diprotic acid:
+
+- First dissociation: complete ($\mathrm{H}_2\mathrm{SO}_4 \to \mathrm{H}^+ + \mathrm{HSO}_4^-$, strong acid).
+- Second dissociation: partial ($\mathrm{HSO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{SO}_4^{2-}$, $K_{a2} = 1.02 \times 10^{-2}$).
+
+**Worked Example:** Calculate the pH of $0.050\,\mathrm{mol\,dm^{-3}}$ $\mathrm{H}_2\mathrm{SO}_4$.
+
+The first dissociation gives $[\mathrm{H}^+] = 0.050\,\mathrm{mol\,dm^{-3}$ and $[\mathrm{HSO}_4^-] = 0.050\,\mathrm{mol\,dm^{-3}$.
+
+For the second dissociation: let $x$ be the additional $[\mathrm{H}^+]$ from $\mathrm{HSO}_4^-$.
+
+$$K_{a2} = \frac{(0.050 + x)(x)}{0.050 - x} = 1.02 \times 10^{-2}$$
+
+Approximation: $0.050 + x \approx 0.050$, $0.050 - x \approx 0.050$:
+
+$$x = 1.02 \times 10^{-2} = 0.0102\,\mathrm{mol\,dm^{-3}}$$
+
+Check: $\frac{0.0102}{0.050} \times 100 = 20.4\%$ -- the approximation is marginal. For greater accuracy, use the quadratic formula. However, for A-Level purposes:
+
+$$[\mathrm{H}^+]_\text{total} \approx 0.050 + 0.010 = 0.060\,\mathrm{mol\,dm^{-3}}$$
+
+$$\mathrm{pH} = -\log(0.060) = 1.22$$
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Calculate the pH of $0.050\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$. Then calculate the pH after $10.0\,\mathrm{cm}^3$ of this $\mathrm{NaOH}$ is added to $25.0\,\mathrm{cm}^3$ of $0.100\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl}$.
+
+**Mark Scheme:**
+
+Part 1: $\mathrm{NaOH}$ is a strong base: $[\mathrm{OH}^-] = 0.050\,\mathrm{mol\,dm^{-3}}$.
+
+$\mathrm{pOH} = -\log(0.050) = 1.30$
+
+$\mathrm{pH} = 14 - 1.30 = 12.70$ (1 mark).
+
+Part 2: $n(\mathrm{HCl}) = 0.100 \times 0.0250 = 2.50 \times 10^{-3}\,\mathrm{mol}$
+
+$n(\mathrm{NaOH}) = 0.050 \times 0.0100 = 5.00 \times 10^{-4}\,\mathrm{mol}$
+
+$\mathrm{NaOH}$ is the limiting reagent. After reaction: $n(\mathrm{HCl})_\text{excess} = 2.50 \times 10^{-3} - 5.00 \times 10^{-4} = 2.00 \times 10^{-3}\,\mathrm{mol}$
+
+Total volume $= 35.0\,\mathrm{cm}^3 = 0.0350\,\mathrm{dm}^3$
+
+$[\mathrm{H}^+] = \frac{2.00 \times 10^{-3}}{0.0350} = 0.0571\,\mathrm{mol\,dm^{-3}}$
+
+$\mathrm{pH} = -\log(0.0571) = 1.24$ (1 mark for moles, 1 mark for excess, 1 mark for concentration, 1 mark for pH.)
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+A buffer solution is prepared by adding $0.100\,\mathrm{mol}$ of sodium ethanoate to $250\,\mathrm{cm}^3$ of $0.400\,\mathrm{mol\,dm^{-3}}$ ethanoic acid ($\mathrm{p}K_a = 4.76$).
+
+(a) Calculate the pH of the buffer. (3 marks)
+
+(b) Calculate the pH after $1.00\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl}$ is added to $25.0\,\mathrm{cm}^3$ of the buffer. (3 marks)
+
+**Mark Scheme:**
+
+(a) $n(\mathrm{CH}_3\mathrm{COOH}) = 0.400 \times 0.250 = 0.100\,\mathrm{mol}$ (1 mark).
+
+$n(\mathrm{CH}_3\mathrm{COO}^-) = 0.100\,\mathrm{mol}$
+
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{[\mathrm{CH}_3\mathrm{COOH}]} = 4.76 + \log\frac{0.100}{0.100} = 4.76 + 0 = 4.76$$ (1 mark for expression, 1 mark for answer.)
+
+(b) $n(\mathrm{HCl}) = 1.00 \times 0.001 = 1.00 \times 10^{-3}\,\mathrm{mol}$
+
+In $25.0\,\mathrm{cm}^3$ of buffer: $n(\mathrm{CH}_3\mathrm{COOH}) = \frac{0.100}{250} \times 25 = 0.0100\,\mathrm{mol}$
+
+$n(\mathrm{CH}_3\mathrm{COO}^-) = 0.0100\,\mathrm{mol}$
+
+After adding $\mathrm{HCl}$: $n(\mathrm{CH}_3\mathrm{COOH}) = 0.0100 + 0.001 = 0.0110\,\mathrm{mol}$
+
+$n(\mathrm{CH}_3\mathrm{COO}^-) = 0.0100 - 0.001 = 0.0090\,\mathrm{mol}$
+
+$$\mathrm{pH} = 4.76 + \log\frac{0.0090}{0.0110} = 4.76 + \log(0.818) = 4.76 - 0.087 = 4.67$$
+
+(1 mark for calculating moles after reaction, 1 mark for expression, 1 mark for answer.)
+
+</details>
+
+<details>
+<summary>Q3 (5 marks)</summary>
+
+Define the term $\mathrm{p}K_a$. Explain why the $\mathrm{p}K_a$ of chloroethanoic acid ($\mathrm{CH}_2\mathrm{ClCOOH}$, $\mathrm{p}K_a = 2.86$) is lower than that of ethanoic acid ($\mathrm{CH}_3\mathrm{COOH}$, $\mathrm{p}K_a = 4.76$).
+
+**Mark Scheme:**
+
+$\mathrm{p}K_a = -\log K_a$, where $K_a$ is the acid dissociation constant (1 mark). A lower $\mathrm{p}K_a$ means a stronger acid (greater dissociation).
+
+Chlorine is more electronegative than hydrogen, so it withdraws electron density from the carboxyl group through the inductive effect (1 mark). This destabilises the undissociated acid (makes the O--H bond more polar and easier to break) (1 mark) and stabilises the carboxylate anion by delocalising the negative charge more effectively (1 mark). The net effect is to increase $K_a$ (and decrease $\mathrm{p}K_a$), making chloroethanoic acid a stronger acid than ethanoic acid (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (4 marks)</summary>
+
+Explain why the equivalence point in the titration of ethanoic acid with sodium hydroxide has a pH greater than 7.
+
+**Mark Scheme:**
+
+At the equivalence point, all the ethanoic acid has been converted to sodium ethanoate (2 marks). The ethanoate ion is the conjugate base of a weak acid and therefore hydrolyses in water: $\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{CH}_3\mathrm{COOH} + \mathrm{OH}^-$ (1 mark). The production of $\mathrm{OH}^-$ makes the solution alkaline, so the pH is greater than 7 (1 mark).
+
+</details>
+
 ---
 
 :::tip

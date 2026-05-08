@@ -235,3 +235,79 @@ The stereochemistry is inverted: $(R)$ reactant gives $(S)$ product. This is cal
 This produces a **racemic mixture** (50:50 $(R)$ and $(S)$), which is **optically inactive** because the rotations of the two enantiomers cancel out.
 
 (c) In the SN2 transition state, the nucleophile and leaving group are collinear (180$^\circ$) with the central carbon. As the nucleophile approaches from one side and the leaving group departs from the other, the three remaining substituents flip through a trigonal planar arrangement. This backside attack results in inversion of the stereochemistry at the chiral centre. The configuration changes because the spatial arrangement of substituents around the chiral carbon is reversed -- what was the front becomes the back, and vice versa.
+
+---
+
+### Additional Practice Problems
+
+#### UT-4: Nomenclature Challenge
+
+**Question:** Name the following compounds using IUPAC nomenclature:
+
+(a) $\mathrm{CH}_3\mathrm{CH}(\mathrm{CH}_3)\mathrm{CH}_2\mathrm{CH}(\mathrm{Cl})\mathrm{CH}_2\mathrm{CH}_3$
+
+(b) $\mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CH}_3$
+
+(c) $\mathrm{HOOC}\mathrm{CH}_2\mathrm{CH}(\mathrm{NH}_2)\mathrm{COOH}$
+
+(d) $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CHO}$
+
+**Solution:**
+
+(a) Find the longest carbon chain: 6 carbons (hexane). Number to give the lowest locants: substituents at C-2 (methyl) and C-4 (chloro).
+
+Name: **4-chloro-2-methylhexane** (1 mark).
+
+(b) Longest chain: 5 carbons (pentane). Substituents at C-1 (bromo) and C-3 (hydroxy).
+
+Name: **3-bromopentan-1-ol** (1 mark).
+
+(c) The longest chain containing the carboxylic acid group has 3 carbons. Number from the carboxylic acid end. Substituent at C-2 (amino).
+
+Name: **2-aminopropanedioic acid** (also known as aspartic acid) (1 mark).
+
+(d) The highest priority functional group is the aldehyde (suffix: -al). The ketone is named as a substituent (prefix: oxo-). Longest chain: 5 carbons.
+
+Name: **4-oxopentanal** (1 mark).
+
+#### UT-5: Functional Group Identification
+
+**Question:** A compound $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ gives the following test results:
+
+- Reacts with 2,4-DNP to give an orange precipitate
+- Gives a silver mirror with Tollens' reagent
+- Does not decolourise bromine water
+
+Identify the compound and explain each test result.
+
+**Solution:**
+
+The positive 2,4-DNP test indicates a carbonyl group (aldehyde or ketone) (1 mark).
+
+The positive Tollens' test (silver mirror) indicates an aldehyde (not a ketone) (1 mark).
+
+The failure to decolourise bromine water confirms there is no C=C double bond (1 mark).
+
+The molecular formula $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ with an aldehyde group: possible structures are butanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO}$) and 2-methylpropanal ($\mathrm{CH}_3\mathrm{CH}(\mathrm{CH}_3)\mathrm{CHO}$). Both are consistent with the test results.
+
+#### IT-4: Multi-Step Synthesis with Stereochemistry
+
+**Question:** Starting from $(R)$-butan-2-ol, propose reagents and conditions for a two-step synthesis of $(S)$-butan-2-amine, explaining the stereochemical outcome.
+
+**Solution:**
+
+Step 1: Convert $(R)$-butan-2-ol to a leaving group. Use $\mathrm{SOCl}_2$ (thionyl chloride) with pyridine to give $(S)$-2-chlorobutane via SN2 with Walden inversion (1 mark).
+
+Step 2: Nucleophilic substitution with ammonia. Excess $\mathrm{NH}_3$ in ethanol gives $(R)$-butan-2-amine via SN2 with a second Walden inversion (1 mark).
+
+Overall: $(R) \xrightarrow{\text{SN2}} (S) \xrightarrow{\text{SN2}} (R)$
+
+This gives the wrong enantiomer. To obtain $(S)$-butan-2-amine from $(R)$-butan-2-ol, we need an odd number of inversions.
+
+**Correct route:** Use an SN1 reaction for step 1 (to give a racemic mixture) or use a two-step sequence with one SN2 step:
+
+Step 1: Oxidise $(R)$-butan-2-ol to butan-2-one (using acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$). This destroys the chiral centre (1 mark).
+
+Step 2: Reductive amination: butan-2-one + $\mathrm{NH}_3$ + $\mathrm{NaBH}_3\mathrm{CN}$ gives racemic butan-2-amine (1 mark).
+
+This produces a racemic mixture, not a single enantiomer. To obtain a single enantiomer, a chiral resolving agent or enzymatic resolution would be needed. This illustrates the challenge of stereospecific synthesis with amines.

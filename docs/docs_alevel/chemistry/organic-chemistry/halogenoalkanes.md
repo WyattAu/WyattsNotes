@@ -453,6 +453,324 @@ Explain why tertiary halogenoalkanes undergo elimination rather than substitutio
 
 </details>
 
+## Worked Examples: SN2 Mechanism in Detail
+
+### Example 1: Reaction of 1-bromobutane with NaOH
+
+**Reaction:** $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br} + \mathrm{NaOH}(aq) \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} + \mathrm{NaBr}$
+
+**Mechanism (SN2):**
+
+Step 1: The $\mathrm{OH}^-$ ion approaches the carbon bearing the bromine from the side opposite to the C--Br bond (backside attack at $180^\circ$ to the leaving group).
+
+Step 2: As the C--O bond begins to form, the C--Br bond weakens and elongates. A transition state is formed in which the central carbon is partially bonded to both $\mathrm{OH}$ and $\mathrm{Br}$, with the three remaining groups arranged in a trigonal planar geometry.
+
+Transition state: $[\mathrm{HO}\cdots\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3\cdots\mathrm{Br}]^{\ddagger}$
+
+Step 3: The C--Br bond breaks completely as the C--O bond forms completely. The product butan-1-ol is formed with **inversion of configuration** at the carbon centre (Walden inversion).
+
+**Rate equation:** Rate $= k[\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}][\mathrm{OH}^-]$
+
+The reaction is second-order overall (first-order with respect to each reactant).
+
+### Example 2: Multi-Step Synthesis via Nucleophilic Substitution
+
+**Target:** Synthesise 2-aminobutane from butan-2-ol.
+
+Step 1: Convert butan-2-ol to 2-bromobutane using concentrated HBr:
+
+$$\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O}$$
+
+Step 2: Nucleophilic substitution with excess ammonia:
+
+$$\mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{CH}_3 + \mathrm{NH}_3 \to \mathrm{CH}_3\mathrm{CH}(\mathrm{NH}_2)\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{HBr}$$
+
+The excess ammonia ensures that the primary amine is the major product, minimising further alkylation to secondary and tertiary amines.
+
+### Example 3: Demonstrating the Rate Law Experimentally
+
+**Aim:** To determine the rate equation for the hydrolysis of 1-bromobutane.
+
+**Method:**
+1. Prepare solutions of 1-bromobutane in ethanol at known concentrations.
+2. Prepare solutions of $\mathrm{NaOH}$ at known concentrations.
+3. Mix the solutions and start a timer.
+4. At regular intervals, quench aliquots in ice-cold water and titrate the remaining $\mathrm{OH}^-$ with standardised $\mathrm{HCl}$ using phenolphthalein indicator.
+5. Plot $[\mathrm{OH}^-]$ against time for various initial concentrations.
+
+**Expected results:**
+- When $[\mathrm{1\text{-}bromobutane}]$ is doubled (keeping $[\mathrm{OH}^-]$ constant), the initial rate doubles.
+- When $[\mathrm{OH}^-]$ is doubled (keeping $[\mathrm{1\text{-}bromobutane}]$ constant), the initial rate doubles.
+- This confirms: Rate $= k[\mathrm{1\text{-}bromobutane}][\mathrm{OH}^-]$ (second-order overall).
+
+### Example 4: Competition Between SN1 and E1
+
+**Reaction:** 2-bromo-2-methylpropane with ethanol at $50^\circ\mathrm{C}$.
+
+$$\mathrm{(CH}_3)_3\mathrm{CBr} \xrightarrow{\mathrm{EtOH},\,50^\circ\mathrm{C}} \mathrm{(CH}_3)_2\mathrm{C}=\mathrm{CH}_2 + \mathrm{(CH}_3)_3\mathrm{COCH}_2\mathrm{CH}_3$$
+
+Both products form via the same carbocation intermediate:
+
+$$(\mathrm{CH}_3)_3\mathrm{CBr} \xrightarrow{\text{slow}} (\mathrm{CH}_3)_3\mathrm{C}^+ + \mathrm{Br}^-$$
+
+**E1 pathway (major):** The carbocation loses a proton to the solvent:
+
+$$(\mathrm{CH}_3)_3\mathrm{C}^+ \xrightarrow{-\mathrm{H}^+} (\mathrm{CH}_3)_2\mathrm{C}=\mathrm{CH}_2 \text{ (2-methylpropene)}$$
+
+**SN1 pathway (minor):** The carbocation is attacked by ethanol:
+
+$$(\mathrm{CH}_3)_3\mathrm{C}^+ + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \to (\mathrm{CH}_3)_3\mathrm{COCH}_2\mathrm{CH}_3 \text{ (2-ethoxy-2-methylpropane)}$$
+
+At elevated temperature, elimination predominates (higher activation energy pathway favoured by Arrhenius equation).
+
+### Example 5: Hydrolysis Rate Comparison Using AgNO3
+
+**Aim:** Compare the rates of hydrolysis of 1-chlorobutane, 1-bromobutane, and 1-iodobutane.
+
+**Method:**
+1. Prepare three test tubes each containing $5\,\mathrm{cm}^3$ of ethanol and $1\,\mathrm{cm}^3$ of the halogenoalkane.
+2. Place all three in a water bath at $60^\circ\mathrm{C}$.
+3. Add $2\,\mathrm{cm}^3$ of $\mathrm{AgNO}_3(aq)$ to each test tube simultaneously.
+4. Record the time for the first appearance of a precipitate.
+
+**Results:**
+
+| Halogenoalkane | Time for precipitate | Identity of precipitate |
+|---|---|---|
+| 1-chlorobutane | Very slow (minutes) | $\mathrm{AgCl}$ (white) |
+| 1-bromobutane | Moderate (seconds) | $\mathrm{AgBr}$ (cream) |
+| 1-iodobutane | Fast (immediate) | $\mathrm{AgI}$ (yellow) |
+
+**Conclusion:** The rate of hydrolysis increases in the order $\mathrm{C}\text{-}\mathrm{Cl} \lt \mathrm{C}\text{-}\mathrm{Br} \lt \mathrm{C}\text{-}\mathrm{I}$, consistent with the decreasing bond enthalpy: $\mathrm{C}\text{-}\mathrm{Cl} \,(339\,\mathrm{kJ/mol}) \gt \mathrm{C}\text{-}\mathrm{Br} \,(276\,\mathrm{kJ/mol}) \gt \mathrm{C}\text{-}\mathrm{I} \,(238\,\mathrm{kJ/mol})$.
+
+### Example 6: Using KCN for Chain Extension
+
+**Target:** Convert bromoethane to butanoic acid (extending the carbon chain by two carbons).
+
+Step 1: Nucleophilic substitution with $\mathrm{KCN}$:
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} + \mathrm{KCN} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CN} + \mathrm{KBr}$$
+
+Step 2: Hydrolysis of the nitrile to carboxylic acid (reflux with dilute $\mathrm{HCl}$):
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CN} + 2\mathrm{H}_2\mathrm{O} + \mathrm{HCl} \xrightarrow{\text{reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH} + \mathrm{NH}_4\mathrm{Cl}$$
+
+**Mechanism of Step 1 (SN2):** The $\mathrm{CN}^-$ ion attacks the electrophilic carbon of bromoethane from the opposite side of the C--Br bond. The C--Br bond breaks as the C--CN bond forms, giving propanenitrile. The chain has been extended by one carbon.
+
+**Note:** Using $\mathrm{KCN}$ rather than $\mathrm{NaCN}$ is preferred because $\mathrm{KCN}$ has greater solubility in ethanol, the typical reaction solvent. The use of $\mathrm{KCN}$ (or $\mathrm{NaCN}$) in ethanol ensures the cyanide ion is available as a free nucleophile.
+
+### Example 7: SN1 Stereochemistry
+
+**Reaction:** Hydrolysis of (R)-2-bromobutane in aqueous ethanol.
+
+$$\mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{HBr}$$
+
+**Mechanism (SN1):**
+
+Step 1 (slow): Heterolytic cleavage of the C--Br bond forms a planar secondary carbocation:
+
+$$\mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{CH}_3 \to \mathrm{CH}_3\overset{+}{\mathrm{C}}\mathrm{HCH}_2\mathrm{CH}_3 + \mathrm{Br}^-$$
+
+Step 2 (fast): Water attacks the planar carbocation from either face with equal probability:
+
+$$\mathrm{CH}_3\overset{+}{\mathrm{C}}\mathrm{HCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH}_2^+)\mathrm{CH}_2\mathrm{CH}_3$$
+
+Step 3: Deprotonation gives the alcohol:
+
+$$\mathrm{CH}_3\mathrm{CH}(\mathrm{OH}_2^+)\mathrm{CH}_2\mathrm{CH}_3 \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{H}^+$$
+
+**Stereochemistry:** The product is a racemic mixture of (R)-butan-2-ol and (S)-butan-2-ol. The planar carbocation intermediate can be attacked with equal probability from either face, resulting in racemisation.
+
+## Practical Techniques for Halogenoalkane Reactions
+
+### Required Practical: Investigating the Hydrolysis of Halogenoalkanes (AQA RP 8)
+
+**Objective:** To compare the rates of hydrolysis of primary halogenoalkanes with different halogen atoms.
+
+**Apparatus:** Test tubes, water bath, thermometer, stopwatch, pipettes, 1-chlorobutane, 1-bromobutane, 1-iodobutane, ethanol, silver nitrate solution ($0.1\,\mathrm{mol/dm}^3$).
+
+**Safety:** Halogenoalkanes are irritants. Wear eye protection and gloves. Ethanol is flammable. Silver nitrate stains skin.
+
+**Procedure:**
+1. Add $2\,\mathrm{cm}^3$ of ethanol to each of three test tubes labelled Cl, Br, I.
+2. Add 5 drops of the appropriate halogenoalkane to each tube.
+3. Place all three tubes in a water bath maintained at $60^\circ\mathrm{C}$.
+4. Add $1\,\mathrm{cm}^3$ of $\mathrm{AgNO}_3(aq)$ to each tube and start the stopwatch.
+5. Record the time for the first permanent appearance of a precipitate in each tube.
+
+**Key control variables:** Temperature (use the same water bath), volume of ethanol (same solvent environment), concentration of $\mathrm{AgNO}_3$ (same in each tube), volume of halogenoalkane.
+
+**Sources of error:**
+- Subjectivity in judging the first appearance of precipitate. Use a white tile behind the test tubes and define the endpoint clearly.
+- Temperature fluctuations. Use a thermostatically controlled water bath.
+- Evaporation of volatile halogenoalkanes. Keep test tubes stoppered between readings.
+
+### Purification of Organic Products After Nucleophilic Substitution
+
+After a nucleophilic substitution reaction, the crude product typically contains unreacted starting materials, solvent, inorganic salts, and the desired product. A standard purification procedure:
+
+1. **Separation:** Transfer the reaction mixture to a separating funnel. If the product is organic, add water and a suitable organic solvent (e.g. diethyl ether). Shake and allow the layers to separate. Collect the organic layer.
+2. **Washing:** Wash the organic layer with water to remove water-soluble impurities, then with sodium hydrogencarbonate solution to remove any acidic impurities (caution: $\mathrm{CO}_2$ evolution), then with brine (saturated $\mathrm{NaCl}$) to remove residual water.
+3. **Drying:** Add a drying agent (anhydrous $\mathrm{MgSO}_4$ or $\mathrm{Na}_2\mathrm{SO}_4$) to the organic layer. Swirl and allow to stand for 10 minutes. Filter off the drying agent.
+4. **Distillation:** Purify the product by simple distillation, collecting the fraction that boils at the expected boiling point of the product.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (6 marks)</summary>
+
+Bromoethane reacts with aqueous sodium hydroxide to form ethanol.
+
+(a) Write the mechanism for this reaction. (4 marks)
+
+(b) Explain how the rate of this reaction would change if the concentration of both reactants were doubled. (2 marks)
+
+**Mark Scheme:**
+
+(a) 4 marks:
+- Curly arrow from lone pair/negative charge on $\mathrm{OH}^-$ to the C atom bonded to Br (1 mark).
+- Curly arrow from the middle of the C--Br bond to the Br atom (1 mark).
+- Correct transition state or intermediate showing partial bonds (1 mark).
+- Correct product $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$ and $\mathrm{Br}^-$ (1 mark).
+
+(b) 2 marks:
+- The reaction is second-order (first-order with respect to each reactant) (1 mark).
+- Doubling both concentrations increases the rate by a factor of $2 \times 2 = 4$ (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (5 marks)</summary>
+
+Explain why the hydrolysis of 2-chloro-2-methylpropane is faster than the hydrolysis of 1-chlorobutane, even though the C--Cl bond in 1-chlorobutane is weaker.
+
+**Mark Scheme:**
+
+5 marks:
+- 2-chloro-2-methylpropane reacts via SN1 (1 mark).
+- 1-chlorobutane reacts via SN2 (1 mark).
+- The SN1 rate-determining step involves formation of a tertiary carbocation, which is stabilised by hyperconjugation and inductive effects from three methyl groups (1 mark).
+- The primary carbocation required for 1-chlorobutane to react via SN1 is too unstable to form (1 mark).
+- Therefore, 1-chlorobutane must react via SN2, which has a higher activation energy than the SN1 pathway available to the tertiary halogenoalkane (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (7 marks)</summary>
+
+A student carried out an experiment to determine the order of reaction with respect to hydroxide ions for the hydrolysis of 1-bromobutane. The following data were obtained at constant temperature, with the concentration of 1-bromobutane kept constant:
+
+| $[\mathrm{OH}^-]$ ($\mathrm{mol\,dm^{-3}}$) | Initial rate ($\mathrm{mol\,dm^{-3}\,s^{-1}}$) |
+|---|---|
+| 0.020 | $4.0 \times 10^{-5}$ |
+| 0.040 | $8.0 \times 10^{-5}$ |
+| 0.060 | $1.2 \times 10^{-4}$ |
+| 0.080 | $1.6 \times 10^{-4}$ |
+
+(a) Deduce the order of reaction with respect to hydroxide ions. (2 marks)
+
+(b) Calculate the value of the rate constant, including units. (3 marks)
+
+(c) State the overall order of the reaction. (1 mark)
+
+(d) State and explain the effect on the rate of doubling the concentration of 1-bromobutane only. (1 mark)
+
+**Mark Scheme:**
+
+(a) 2 marks: When $[\mathrm{OH}^-]$ doubles, the rate doubles (e.g. $0.020 \to 0.040$: rate $4.0 \to 8.0$). This first-order relationship holds for all data pairs (1 mark). Therefore the reaction is first-order with respect to $\mathrm{OH}^-$ (1 mark).
+
+(b) 3 marks: From rate $= k[\mathrm{1\text{-}bromobutane}]^1[\mathrm{OH}^-]^1$:
+
+$k = \frac{\text{rate}}{[\mathrm{1\text{-}bromobutane}][\mathrm{OH}^-]}$
+
+Using the first data point and assuming $[\mathrm{1\text{-}bromobutane}] = c$:
+
+$k = \frac{4.0 \times 10^{-5}}{c \times 0.020} = \frac{2.0 \times 10^{-3}}{c}$
+
+Units: $\frac{\mathrm{mol\,dm^{-3}\,s^{-1}}}{\mathrm{mol\,dm^{-3}} \times \mathrm{mol\,dm^{-3}}} = \mathrm{mol^{-1}\,dm^3\,s^{-1}}$ (1 mark for correct calculation, 1 mark for correct units, 1 mark for method).
+
+(c) 1 mark: Second-order overall (first-order with respect to each reactant).
+
+(d) 1 mark: The rate would double (1 mark) because the rate equation is first-order with respect to 1-bromobutane (the rate is directly proportional to its concentration).
+
+</details>
+
+<details>
+<summary>Q4 (6 marks)</summary>
+
+Describe an experiment to compare the rates of hydrolysis of 1-chlorobutane, 1-bromobutane, and 1-iodobutane. Explain why the results would differ.
+
+**Mark Scheme:**
+
+6 marks:
+
+Method (3 marks):
+- Equal volumes of ethanol and equal volumes of each halogenoalkane in separate test tubes (1 mark).
+- Heat in the same water bath at the same temperature (1 mark).
+- Add equal volumes of $\mathrm{AgNO}_3(aq)$ simultaneously and time the appearance of precipitate (1 mark).
+
+Explanation (3 marks):
+- C--I bond is weakest ($238\,\mathrm{kJ/mol}$) so hydrolysis is fastest (1 mark).
+- C--Cl bond is strongest ($339\,\mathrm{kJ/mol}$) so hydrolysis is slowest (1 mark).
+- The rate-determining step involves breaking the C--X bond, so bond enthalpy determines the rate (1 mark).
+
+</details>
+
+<details>
+<summary>Q5 (5 marks)</summary>
+
+Propose a mechanism for the reaction of 2-bromo-2-methylpropane with warm aqueous ethanol, explaining why a mixture of products is formed.
+
+**Mark Scheme:**
+
+5 marks:
+- Rate-determining step: heterolytic fission of C--Br bond to form tertiary carbocation and $\mathrm{Br}^-$ (1 mark for equation, 1 mark for identification as slow step).
+- Substitution product: nucleophilic attack by ethanol on the carbocation, followed by proton loss to give the ether (1 mark).
+- Elimination product: loss of a proton from the carbocation to give 2-methylpropene (1 mark).
+- The carbocation intermediate is attacked by either ethanol (substitution) or loses a proton (elimination), giving a mixture (1 mark).
+
+</details>
+
+## Retrosynthesis with Halogenoalkanes
+
+Retrosynthetic analysis involves working backwards from the target molecule to identify suitable starting materials and reagents. Halogenoalkanes are versatile intermediates in retrosynthesis because they can be prepared from alcohols and can be converted to many other functional groups.
+
+### General Retrosynthetic Disconnections for Halogenoalkanes
+
+| Target | Disconnection | Equivalent synthons | Forward reagents |
+|---|---|---|---|
+| Alcohol $\mathrm{R-OH}$ | $\mathrm{C}\text{-}\mathrm{OH} \to \mathrm{C}\text{-}\mathrm{X}$ | $\mathrm{R-X}$ + $\mathrm{OH}^-$ | $\mathrm{NaOH}(aq)$, SN2 |
+| Nitrile $\mathrm{R-CN}$ | $\mathrm{C}\text{-}\mathrm{CN} \to \mathrm{C}\text{-}\mathrm{X}$ | $\mathrm{R-X}$ + $\mathrm{CN}^-$ | $\mathrm{KCN}$, ethanol |
+| Amine $\mathrm{R-NH_2}$ | $\mathrm{C}\text{-}\mathrm{NH_2} \to \mathrm{C}\text{-}\mathrm{X}$ | $\mathrm{R-X}$ + $\mathrm{NH_3}$ | Excess $\mathrm{NH_3}$ |
+| Ether $\mathrm{R-O-R'}$ | $\mathrm{C}\text{-}\mathrm{O} \to \mathrm{C}\text{-}\mathrm{X}$ | $\mathrm{R-X}$ + $\mathrm{R'O}^-$ | Williamson synthesis |
+| Alkene $\mathrm{C=C}$ | $\mathrm{C=C} \to \mathrm{C-C-X}$ | Elimination of HX | $\mathrm{KOH}$ in ethanol, $\Delta$ |
+
+### Worked Retrosynthesis Example
+
+**Target:** 3-phenylpropan-1-amine ($\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{NH}_2$)
+
+Retrosynthetic analysis:
+
+1. Disconnect the $\mathrm{C}\text{-}\mathrm{NH}_2$ bond: the amine comes from the nitrile $\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CN}$ via reduction with $\mathrm{LiAlH}_4$.
+
+2. Disconnect the $\mathrm{C}\text{-}\mathrm{CN}$ bond: the nitrile comes from 3-phenyl-1-bromopropane ($\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}$) via SN2 with $\mathrm{KCN}$.
+
+3. Disconnect the $\mathrm{C}\text{-}\mathrm{Br}$ bond: the bromoalkane comes from 3-phenylpropan-1-ol via $\mathrm{PBr}_3$.
+
+4. The alcohol comes from the reduction of 3-phenylpropanal ($\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO}$) with $\mathrm{NaBH}_4$.
+
+5. The aldehyde comes from Friedel-Crafts acylation of benzene with propanoyl chloride ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COCl}$), followed by Clemmensen reduction.
+
+**Forward synthesis:**
+
+$$\mathrm{C}_6\mathrm{H}_6 \xrightarrow{\mathrm{CH}_3\mathrm{CH}_2\mathrm{COCl},\,\mathrm{AlCl}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{COCH}_2\mathrm{CH}_3 \xrightarrow[\mathrm{Zn(Hg)}]{\mathrm{HCl}} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3$$
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3 \xrightarrow{\mathrm{Br}_2,\,h\nu} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CHBrCH}_3 + \mathrm{C}_6\mathrm{H}_5\mathrm{CHBrCH}_2\mathrm{CH}_3$$
+
+Note: Radical bromination gives a mixture. A more controlled route would use the following:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH} \xrightarrow{\mathrm{LiAlH}_4} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} \xrightarrow{\mathrm{PBr}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br} \xrightarrow{\mathrm{KCN}} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CN} \xrightarrow{\mathrm{LiAlH}_4} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{NH}_2$$
+
 ---
 
 :::tip

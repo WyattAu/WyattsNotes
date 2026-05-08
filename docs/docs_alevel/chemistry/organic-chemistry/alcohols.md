@@ -517,6 +517,259 @@ $$
 
 The reaction is an equilibrium. To drive it forward, use an excess of ethanol or remove water as it forms.
 
+## Worked Examples: Alcohols in Depth
+
+### Example 1: Oxidation of a Primary Alcohol -- Step-by-Step
+
+**Oxidation of butan-1-ol to butanoic acid.**
+
+**Stage 1: Alcohol to aldehyde.**
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} \xrightarrow{[\mathrm{O}],\,\text{distillation}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO} + \mathrm{H}_2\mathrm{O}$$
+
+Conditions: Distillation with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. The aldehyde (butanal, b.p. $75^\circ\mathrm{C}$) distils off as it forms, before it can be further oxidised. The orange dichromate turns green.
+
+**Stage 2: Aldehyde to carboxylic acid.**
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CHO} \xrightarrow{[\mathrm{O}],\,\text{reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH} + \mathrm{H}_2\mathrm{O}$$
+
+Conditions: Reflux with excess acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. The aldehyde remains in the reaction mixture and is further oxidised to butanoic acid.
+
+**Mechanism of Stage 1:**
+1. The alcohol oxygen attacks the chromium(VI) centre, displacing water and forming a chromate ester.
+2. A base removes the $\alpha$-proton, and the C--H electrons transfer as a hydride to the chromium, forming the C=O bond.
+3. Chromium(VI) is reduced to chromium(IV), which disproportionates to chromium(III).
+
+### Example 2: Dehydration Mechanism with Carbocation Rearrangement
+
+**Dehydration of 3,3-dimethylbutan-1-ol with concentrated $\mathrm{H}_2\mathrm{SO}_4$.**
+
+Step 1: Protonation: $\mathrm{(CH}_3)_3\mathrm{CCH}_2\mathrm{CH}_2\mathrm{OH} + \mathrm{H}^+ \to \mathrm{(CH}_3)_3\mathrm{CCH}_2\mathrm{CH}_2\mathrm{OH}_2^+$
+
+Step 2: Loss of water forms a primary carbocation (unstable):
+
+$$\mathrm{(CH}_3)_3\mathrm{CCH}_2\mathrm{CH}_2\mathrm{OH}_2^+ \to \mathrm{(CH}_3)_3\mathrm{CCH}_2\mathrm{CH}_2^+ + \mathrm{H}_2\mathrm{O}$$
+
+Step 3: Hydride shift from the adjacent carbon to form a more stable tertiary carbocation:
+
+$$\mathrm{(CH}_3)_3\mathrm{CCH}_2\mathrm{CH}_2^+ \to \mathrm{(CH}_3)_2\overset{+}{\mathrm{C}}\mathrm{CH}_2\mathrm{CH}(\mathrm{CH}_3)_2$$
+
+Step 4: Loss of a proton gives the alkene:
+
+$$\mathrm{(CH}_3)_2\overset{+}{\mathrm{C}}\mathrm{CH}_2\mathrm{CH}(\mathrm{CH}_3)_2 \to \mathrm{(CH}_3)_2\mathrm{C}=\mathrm{CHCH}(\mathrm{CH}_3)_2 + \mathrm{H}^+$$
+
+The product is 2,3,3-trimethylbut-1-ene. The carbocation rearrangement (hydride shift) occurs because the tertiary carbocation is much more stable than the primary carbocation.
+
+### Example 3: Williamson Ether Synthesis Planning
+
+**Target:** Ethoxybenzene (phenetole) from phenol.
+
+The Williamson ether synthesis requires an alkoxide and a halogenoalkane. Phenol is acidic enough to be deprotonated by $\mathrm{NaOH}$:
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{OH} + \mathrm{NaOH} \to \mathrm{C}_6\mathrm{H}_5\mathrm{O}^-\mathrm{Na}^+ + \mathrm{H}_2\mathrm{O}$$
+
+Then reaction with bromoethane (SN2):
+
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{O}^- + \mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} \to \mathrm{C}_6\mathrm{H}_5\mathrm{OCH}_2\mathrm{CH}_3 + \mathrm{Br}^-$$
+
+**Important:** The halogenoalkane must be primary to avoid elimination. If we used 2-bromopropane, elimination would compete strongly with substitution.
+
+### Example 4: Esterification Yield Calculation
+
+**In the preparation of ethyl ethanoate, $6.00\,\mathrm{g}$ of ethanoic acid ($M = 60.05\,\mathrm{g/mol}$) is reacted with excess ethanol in the presence of concentrated $\mathrm{H}_2\mathrm{SO}_4$. After purification, $4.20\,\mathrm{g}$ of ethyl ethanoate ($M = 88.11\,\mathrm{g/mol}$) is obtained. Calculate the percentage yield.**
+
+$$n(\text{ethanoic acid}) = \frac{6.00}{60.05} = 0.0999\,\mathrm{mol}$$
+
+Theoretical moles of ethyl ethanoate (1:1 ratio): $0.0999\,\mathrm{mol}$
+
+Theoretical mass: $0.0999 \times 88.11 = 8.80\,\mathrm{g}$
+
+$$\text{Percentage yield} = \frac{4.20}{8.80} \times 100 = 47.7\%$$
+
+The yield is less than 50% because esterification is a reversible equilibrium. Using excess ethanol or removing water would improve the yield.
+
+### Example 5: Multi-Step Synthesis with Alcohol Intermediates
+
+**Target:** Propanoic acid from propene.
+
+Step 1: Markovnikov addition of HBr:
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CHBrCH}_3$$
+
+Step 2: Substitution with aqueous NaOH (SN2 on a secondary halide -- gives a mixture with some elimination, but substitution predominates in aqueous conditions):
+
+$$\mathrm{CH}_3\mathrm{CHBrCH}_3 + \mathrm{NaOH}(aq) \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$$
+
+Step 3: Oxidation of propan-2-ol with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ under reflux:
+
+$$\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3 \xrightarrow{[\mathrm{O}],\,\text{reflux}} \mathrm{CH}_3\mathrm{COCH}_3$$
+
+This gives propanone (a ketone), not propanoic acid. Ketones cannot be further oxidised by $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$.
+
+**Corrected route:** Use anti-Markovnikov addition to get the primary alcohol:
+
+$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \xrightarrow{\text{peroxides}} \mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3$$
+
+$$\mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{NaOH}(aq) \to \mathrm{HOCH}_2\mathrm{CH}_2\mathrm{CH}_3$$
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} \xrightarrow{[\mathrm{O}],\,\text{reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$$
+
+This gives propanoic acid as required. The key was using the anti-Markovnikov addition to obtain the primary alcohol.
+
+### Example 6: Lucas Test Interpretation
+
+Three unlabelled bottles contain butan-1-ol, butan-2-ol, and 2-methylpropan-2-ol. Describe the Lucas test results.
+
+**Procedure:** Add $2\,\mathrm{cm}^3$ of Lucas reagent (anhydrous $\mathrm{ZnCl}_2$ in concentrated $\mathrm{HCl}$) to $1\,\mathrm{cm}^3$ of each alcohol at room temperature.
+
+**Results:**
+
+| Alcohol | Observation | Time | Mechanism |
+|---|---|---|---|
+| 2-methylpropan-2-ol | Immediate cloudiness | $< 10\,\mathrm{s}$ | SN1 (tertiary carbocation forms rapidly) |
+| Butan-2-ol | Cloudiness develops | $1$--$5\,\mathrm{min}$ | SN1 (secondary carbocation forms more slowly) |
+| Butan-1-ol | No cloudiness | $> 30\,\mathrm{min}$ | SN2 is very slow in acidic, non-aqueous medium |
+
+The cloudiness is caused by the formation of the insoluble chloroalkane.
+
+### Example 7: Conversion of Alcohol to Halogenoalkane -- Reagent Comparison
+
+**Convert ethanol to a halogenoalkane using three different reagents.**
+
+**Method 1:** Concentrated HBr (heat under reflux).
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} + \mathrm{H}_2\mathrm{O}$$
+
+Product: Bromoethane. Mechanism: SN2 (protonated $-\mathrm{OH}_2^+$ is the leaving group).
+
+**Method 2:** $\mathrm{PBr}_3$ (room temperature).
+
+$$3\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{PBr}_3 \to 3\mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} + \mathrm{H}_3\mathrm{PO}_3$$
+
+Product: Bromoethane. Mechanism: SN2 (bromide from $\mathrm{PBr}_3$ is the nucleophile).
+
+**Method 3:** $\mathrm{SOCl}_2$ (pyridine, room temperature).
+
+$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{SOCl}_2 \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Cl} + \mathrm{SO}_2 + \mathrm{HCl}$$
+
+Product: Chloroethane (not bromoethane). Mechanism: SN2. Advantage: gaseous byproducts escape, driving the reaction to completion.
+
+## Practical Techniques for Alcohol Chemistry
+
+### Required Practical: Oxidation of a Primary Alcohol (AQA RP 7)
+
+**Objective:** To oxidise ethanol to ethanoic acid and determine the enthalpy change.
+
+**Safety:** Acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ is toxic, corrosive, and an oxidising agent. Chromium(VI) compounds are carcinogenic. Wear gloves, eye protection, and work in a fume cupboard.
+
+**Procedure:**
+1. Add $20\,\mathrm{cm}^3$ of ethanol to a round-bottom flask.
+2. Slowly add $40\,\mathrm{cm}^3$ of acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ solution.
+3. Reflux the mixture for 30 minutes. The orange solution turns green.
+4. Distil the product, collecting the fraction that boils at $118^\circ\mathrm{C}$ (ethanoic acid).
+5. Test the distillate with $\mathrm{Na}_2\mathrm{CO}_3$: effervescence ($\mathrm{CO}_2$) confirms a carboxylic acid.
+
+**Purification:** The crude ethanoic acid can be purified by fractional distillation.
+
+### Distillation vs Reflux -- When to Use Each
+
+| Technique | Purpose | Apparatus |
+|---|---|---|
+| Distillation | Separate a volatile product from the reaction mixture | Round-bottom flask, still head, condenser, receiver |
+| Reflux | Heat a reaction mixture without losing volatile components | Round-bottom flask, condenser pointing downward |
+
+**Rule of thumb:** If the product is volatile and you want to isolate it, use distillation. If the reaction needs prolonged heating without loss of reactants or solvent, use reflux.
+
+For the oxidation of primary alcohols:
+- To isolate the aldehyde: distil the product as it forms (lower b.p. than the alcohol).
+- To produce the carboxylic acid: reflux (keep the aldehyde in the mixture for further oxidation).
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Describe how you would distinguish between butan-1-ol, butan-2-ol, and 2-methylpropan-2-ol using acidified potassium dichromate(VI). State the observations for each.
+
+**Mark Scheme:**
+
+5 marks:
+
+Butan-1-ol: Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. Orange solution turns green. Product is butanoic acid (primary alcohol oxidises to carboxylic acid under reflux) (2 marks for observation + product).
+
+Butan-2-ol: Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. Orange solution turns green. Product is butanone (secondary alcohol oxidises to ketone) (2 marks for observation + product).
+
+2-methylpropan-2-ol: Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. No colour change (solution remains orange). Tertiary alcohols are not oxidised (1 mark for observation).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+Explain the mechanism for the acid-catalysed dehydration of butan-2-ol to form but-2-ene. Include the role of the acid catalyst.
+
+**Mark Scheme:**
+
+6 marks:
+- Protonation: $\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH}_2^+)\mathrm{CH}_2\mathrm{CH}_3$ (1 mark). The acid catalyst protonates the $-\mathrm{OH}$ group, converting it to $-\mathrm{OH}_2^+$, a good leaving group.
+- Loss of water (rate-determining step): Formation of a secondary carbocation (1 mark).
+- Deprotonation: Loss of a proton from an adjacent carbon, forming the C=C double bond (1 mark).
+- Zaitsev's rule: The major product is but-2-ene (more substituted alkene) rather than but-1-ene (1 mark).
+- The acid catalyst is regenerated (1 mark for showing $\mathrm{H}^+$ on the product side).
+- Curly arrow mechanism (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (5 marks)</summary>
+
+A student prepares ethyl ethanoate from ethanoic acid and ethanol using concentrated $\mathrm{H}_2\mathrm{SO}_4$ as a catalyst. The student obtains a yield of 55%.
+
+(a) Write the equation for the reaction. (1 mark)
+
+(b) Suggest two ways the student could increase the yield. (2 marks)
+
+(c) Explain why the yield can never reach 100% under these conditions. (2 marks)
+
+**Mark Scheme:**
+
+(a) $\mathrm{CH}_3\mathrm{COOH} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \rightleftharpoons \mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O}$ (1 mark).
+
+(b) Use excess of one reactant (e.g. ethanol) (1 mark). Remove water as it forms using a Dean-Stark apparatus or molecular sieves (1 mark).
+
+(c) The reaction is an equilibrium, so some reactants always remain (1 mark). At equilibrium, the rates of the forward and reverse reactions are equal (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (4 marks)</summary>
+
+Explain why $\mathrm{SOCl}_2$ is preferred over concentrated $\mathrm{HCl}$ for converting an alcohol to a chloroalkane in organic synthesis.
+
+**Mark Scheme:**
+
+4 marks:
+- $\mathrm{SOCl}_2$ produces gaseous byproducts ($\mathrm{SO}_2$ and $\mathrm{HCl}$) that escape from the reaction mixture (1 mark).
+- This drives the reaction to completion (Le Chatelier's principle) (1 mark).
+- The product is obtained in higher purity without the need for separation from aqueous reagents (1 mark).
+- Concentrated $\mathrm{HCl}$ gives an equilibrium (reversible reaction) that requires removal of water to drive to completion (1 mark).
+
+</details>
+
+<details>
+<summary>Q5 (5 marks)</summary>
+
+Propose a mechanism for the reaction of ethanol with ethanoyl chloride to form ethyl ethanoate. Explain why this reaction is preferred over the acid-catalysed esterification of ethanoic acid with ethanol.
+
+**Mark Scheme:**
+
+5 marks:
+- Nucleophilic attack: The oxygen lone pair of ethanol attacks the electrophilic carbonyl carbon of ethanoyl chloride (1 mark).
+- Tetrahedral intermediate forms as the $\pi$ electrons move onto the oxygen (1 mark).
+- The $\mathrm{Cl}^-$ is expelled as the C=O reforms (1 mark).
+- $\mathrm{Cl}^-$ removes a proton from the $-\mathrm{OH}_2^+$ group, yielding ethyl ethanoate and $\mathrm{HCl}$ (1 mark).
+- This reaction is preferred because it is irreversible (no equilibrium) and proceeds rapidly at room temperature without a catalyst, giving a higher yield (1 mark).
+
 </details>
 
 ---

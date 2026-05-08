@@ -188,3 +188,54 @@ The enthalpy of atomisation ($+717\,\text{kJ mol}^{-1}$) represents the energy r
 $$\text{Average C--C bond enthalpy in diamond} = \frac{717}{2} = 358.5\,\text{kJ mol}^{-1}$$
 
 This is slightly higher than the standard C--C bond enthalpy of $347\,\text{kJ mol}^{-1}$, reflecting the fact that diamond's rigid tetrahedral network creates slightly stronger bonds due to the constrained geometry and lack of bond rotation.
+
+---
+
+### Additional Practice Problems
+
+#### UT-4: Predicting Molecular Polarity
+
+**Question:** For each of the following molecules, predict whether it is polar or non-polar, and explain your reasoning:
+
+(a) $\mathrm{BF}_3$ (trigonal planar)
+(b) $\mathrm{NF}_3$ (trigonal pyramidal)
+(c) $\mathrm{SF}_4$ (see-saw)
+(d) $\mathrm{XeF}_4$ (square planar)
+
+**Solution:**
+
+(a) **Non-polar.** $\mathrm{BF}_3$ has trigonal planar geometry with three identical B--F bonds. The bond dipoles are equal in magnitude and arranged at $120^\circ$ to each other. The vector sum of the bond dipoles is zero, so the molecule has no net dipole moment (1 mark).
+
+(b) **Polar.** $\mathrm{NF}_3$ has trigonal pyramidal geometry (one lone pair on N). The N--F bond dipoles do not cancel because the molecule is not symmetrical. The lone pair also contributes to the asymmetry. The net dipole moment points from the N towards the base of the pyramid, but the lone pair creates a dipole in the opposite direction. The net dipole is actually small and points from F to N (1 mark).
+
+(c) **Polar.** $\mathrm{SF}_4$ has a see-saw geometry with one lone pair. The axial and equatorial bonds have different bond angles ($180^\circ$ vs $120^\circ$), and the lone pair distorts the geometry. The bond dipoles do not cancel, giving a net dipole moment (1 mark).
+
+(d) **Non-polar.** $\mathrm{XeF}_4$ has square planar geometry with two lone pairs. The four Xe--F bonds are arranged symmetrically at $90^\circ$ in a plane. The bond dipoles cancel in pairs (opposite bonds have equal and opposite dipoles), giving a net dipole moment of zero (1 mark).
+
+#### UT-5: Ionic Character and Electronegativity
+
+**Question:** Use electronegativity values to estimate the percentage ionic character of the bonds in $\mathrm{BeCl}_2$ ($\Delta\chi = 1.57$), $\mathrm{MgCl}_2$ ($\Delta\chi = 1.85$), and $\mathrm{AlCl}_3$ ($\Delta\chi = 1.55$). Comment on the bonding in $\mathrm{AlCl}_3$.
+
+**Solution:**
+
+The empirical relationship between electronegativity difference and percent ionic character is approximately: $\%\,\text{ionic} \approx 16|\Delta\chi| + 3.5|\Delta\chi|^2$.
+
+$\mathrm{BeCl}_2$: $\%\,\text{ionic} \approx 16(1.57) + 3.5(1.57)^2 = 25.1 + 8.6 = 33.7\%$
+
+$\mathrm{MgCl}_2$: $\%\,\text{ionic} \approx 16(1.85) + 3.5(1.85)^2 = 29.6 + 12.0 = 41.6\%$
+
+$\mathrm{AlCl}_3$: $\%\,\text{ionic} \approx 16(1.55) + 3.5(1.55)^2 = 24.8 + 8.4 = 33.2\%$
+
+$\mathrm{AlCl}_3$ has relatively low ionic character despite $\mathrm{Al}$ being a metal. In the solid state, $\mathrm{AlCl}_3$ forms a layer lattice with significant covalent character (it sublimes at $178^\circ\mathrm{C}$ rather than melting, suggesting molecular $\mathrm{Al}_2\mathrm{Cl}_6$ units in the gas phase). The high charge density of the small $\mathrm{Al}^{3+}$ ion polarises the large $\mathrm{Cl}^-$ ion, drawing electron density towards the cation and increasing covalent character (Fajans' rules) (1 mark).
+
+#### IT-4: Bonding and Physical Properties
+
+**Question:** Explain why $\mathrm{SiO}_2$ has a melting point of $1713^\circ\mathrm{C}$ while $\mathrm{CO}_2$ sublimes at $-78^\circ\mathrm{C}$, even though both C and Si are in Group 4 and both compounds contain oxygen.
+
+**Solution:**
+
+$\mathrm{SiO}_2$ has a giant covalent (macromolecular) structure in which each silicon atom is bonded to four oxygen atoms in a tetrahedral arrangement, and each oxygen atom bridges two silicon atoms ($\text{--Si--O--Si--}$). This creates a continuous three-dimensional network of strong covalent bonds ($\text{Si--O}: 452\,\mathrm{kJ/mol}$) throughout the entire crystal. To melt $\mathrm{SiO}_2$, a large number of these strong covalent bonds must be broken, requiring a large amount of energy (2 marks).
+
+$\mathrm{CO}_2$ consists of simple discrete molecules with double bonds ($\text{C}= \text{O}: 799\,\mathrm{kJ/mol}$). The covalent bonds within each molecule are strong, but the molecules are held together only by weak London dispersion forces between molecules. Melting (or sublimation) only requires overcoming these weak intermolecular forces, not breaking the covalent bonds within the molecules (1 mark).
+
+The key difference is that silicon (Period 3) can expand its octet and form four single bonds to oxygen, creating the extended network. Carbon (Period 2) cannot expand its octet beyond eight electrons and forms stable double bonds instead, producing discrete $\mathrm{O}=\text{C}=\text{O}$ molecules (1 mark).

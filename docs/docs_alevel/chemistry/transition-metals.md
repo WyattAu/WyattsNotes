@@ -640,6 +640,233 @@ The catalyst provides an alternative pathway with lower activation energy. The o
 
 </details>
 
+## Crystal Field Theory and Colour in Detail
+
+### Crystal Field Splitting
+
+When a transition metal ion is surrounded by six ligands in an octahedral arrangement, the five degenerate $d$-orbitals split into two energy levels:
+
+- **$t_{2g}$ orbitals** ($d_{xy}$, $d_{xz}$, $d_{yz}$): Lower energy. These orbitals point between the ligands and experience less repulsion.
+- **$e_g$ orbitals** ($d_{x^2-y^2}$, $d_{z^2}$): Higher energy. These orbitals point directly at the ligands and experience more repulsion.
+
+The energy difference between the two sets is the crystal field splitting energy, $\Delta_o$ (or $10\mathrm{Dq}$).
+
+### Crystal Field Stabilisation Energy (CFSE)
+
+The CFSE is the net energy lowering of the $d$-electrons relative to the hypothetical spherical field (where all five $d$-orbitals are degenerate). Each $t_{2g}$ electron stabilises the complex by $-0.4\Delta_o$, and each $e_g$ electron destabilises it by $+0.6\Delta_o$.
+
+**Worked Example: CFSE of $[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{2+}$**
+
+$\mathrm{Fe}^{2+}$ has the electron configuration $[\mathrm{Ar}]\,3d^6$.
+
+$\mathrm{H}_2\mathrm{O}$ is a weak-field ligand, so the complex is high-spin:
+
+$$t_{2g}^4\,e_g^2$$
+
+$$\text{CFSE} = 4(-0.4\Delta_o) + 2(0.6\Delta_o) = -1.6\Delta_o + 1.2\Delta_o = -0.4\Delta_o$$
+
+For $\mathrm{H}_2\mathrm{O}$, $\Delta_o \approx 10400\,\mathrm{cm}^{-1}$:
+
+$$\text{CFSE} = -0.4 \times 10400 = -4160\,\mathrm{cm}^{-1}$$
+
+The negative sign indicates stabilisation.
+
+**Worked Example: CFSE of $[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$**
+
+$\mathrm{CN}^-$ is a strong-field ligand, so the complex is low-spin:
+
+$$t_{2g}^6\,e_g^0$$
+
+$$\text{CFSE} = 6(-0.4\Delta_o) + 0(0.6\Delta_o) = -2.4\Delta_o$$
+
+For $\mathrm{CN}^-$, $\Delta_o \approx 33000\,\mathrm{cm}^{-1}$:
+
+$$\text{CFSE} = -2.4 \times 33000 = -79200\,\mathrm{cm}^{-1}$$
+
+The much larger CFSE for the cyanide complex explains why low-spin complexes are more stable with strong-field ligands: the pairing energy cost is more than compensated by the large $\Delta_o$.
+
+### The Spectrochemical Series
+
+Ligands are arranged in order of increasing crystal field splitting energy:
+
+$$\mathrm{I}^- \lt \mathrm{Br}^- \lt \mathrm{Cl}^- \lt \mathrm{F}^- \lt \mathrm{OH}^- \lt \mathrm{H}_2\mathrm{O} \lt \mathrm{NH}_3 \lt \text{en} \lt \mathrm{NO}_2^- \lt \mathrm{CN}^- \lt \mathrm{CO}$$
+
+Weak-field ligands (left) give small $\Delta_o$ and high-spin complexes. Strong-field ligands (right) give large $\Delta_o$ and low-spin complexes.
+
+### Colour and Absorption of Light
+
+Transition metal complexes are coloured because they absorb visible light. The absorbed photon promotes an electron from a $t_{2g}$ orbital to an $e_g$ orbital:
+
+$$E = h\nu = hc/\lambda = \Delta_o$$
+
+The colour observed is the complementary colour of the light absorbed.
+
+**Worked Example:** $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ absorbs light at $\lambda = 510\,\mathrm{nm}$ (green). The transmitted/reflected light is purple/violet, which is the observed colour.
+
+$$\Delta_o = \frac{hc}{\lambda} = \frac{6.626 \times 10^{-34} \times 2.998 \times 10^8}{510 \times 10^{-9}} = 3.89 \times 10^{-19}\,\mathrm{J}$$
+
+Converting to $\mathrm{cm}^{-1}$: $\frac{1}{\lambda} = \frac{1}{510 \times 10^{-7}\,\mathrm{cm}} = 19608\,\mathrm{cm}^{-1}$
+
+| Complex | $\Delta_o$ ($\mathrm{cm}^{-1}$) | $\lambda_{\max}$ (nm) | Colour observed |
+|---|---|---|---|
+| $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ | 20,300 | 493 | Purple |
+| $[\mathrm{V}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ | 17,800 | 562 | Green |
+| $[\mathrm{Cr}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ | 17,400 | 575 | Violet |
+| $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ | 9,300 | 1075 | Pink |
+| $[\mathrm{Ni}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ | 8,500 | 1176 | Green |
+
+### Why $\mathrm{Zn}^{2+}$ and $\mathrm{Sc}^{3+}$ Complexes Are Colourless
+
+$\mathrm{Zn}^{2+}$ has the electron configuration $[\mathrm{Ar}]\,3d^{10}$ (full $d$ subshell). All $d$-orbitals are fully occupied, so no $d$-$d$ transitions are possible. The complexes are colourless.
+
+$\mathrm{Sc}^{3+}$ has the electron configuration $[\mathrm{Ar}]$ (empty $d$ subshell). There are no $d$-electrons to promote, so no $d$-$d$ transitions occur. The complexes are colourless.
+
+## Ligand Exchange Reactions
+
+Ligand exchange involves the substitution of one ligand for another in a transition metal complex:
+
+$$[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}(aq) + 4\mathrm{NH}_3(aq) \rightleftharpoons [\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}(aq) + 4\mathrm{H}_2\mathrm{O}(l)$$
+
+This reaction is easily observed: the pale blue $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ion turns deep blue when $\mathrm{NH}_3$ is added.
+
+### Factors Affecting Ligand Exchange
+
+1. **Ligand field strength:** Stronger ligands (higher in the spectrochemical series) displace weaker ligands. $\mathrm{CN}^-$ displaces $\mathrm{H}_2\mathrm{O}$, but $\mathrm{H}_2\mathrm{O}$ does not displace $\mathrm{CN}^-$.
+
+2. **Concentration:** Adding a large excess of the incoming ligand drives the equilibrium towards the substituted complex.
+
+3. **Steric effects:** Bulky ligands may be unable to coordinate due to steric hindrance, even if they are stronger field ligands.
+
+4. **Entropy:** If the exchange increases the number of particles (e.g. bidentate replacing two monodentate ligands), the entropy change favours the substitution (chelate effect).
+
+### The Chelate Effect
+
+Bidentate and multidentate ligands form more stable complexes than monodentate ligands with the same donor atoms. This is the chelate effect.
+
+$$[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+} + \text{en} \to [\mathrm{Cu}(\text{en})(\mathrm{H}_2\mathrm{O})_4]^{2+} + 2\mathrm{H}_2\mathrm{O}$$
+
+(en = ethane-1,2-diamine, a bidentate ligand)
+
+The chelate effect is partly entropic: one bidentate ligand replacing two monodentate ligands increases the number of free particles in solution, increasing entropy.
+
+### Worked Example: Stepwise Ligand Exchange
+
+When concentrated $\mathrm{HCl}$ is added to $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}(aq)$, the following stepwise substitutions occur:
+
+$$[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+} + \mathrm{Cl}^- \rightleftharpoons [\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_5\mathrm{Cl}]^+ + \mathrm{H}_2\mathrm{O}$$
+
+$$[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_5\mathrm{Cl}]^+ + \mathrm{Cl}^- \rightleftharpoons [\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_4\mathrm{Cl}_2] + \mathrm{H}_2\mathrm{O}$$
+
+$$\ldots \to [\mathrm{CuCl}_4]^{2-} + 6\mathrm{H}_2\mathrm{O}$$
+
+The colour changes from pale blue ($\mathrm{H}_2\mathrm{O}$ ligands) through green to yellow ($\mathrm{Cl}^-$ ligands). The yellow colour of $[\mathrm{CuCl}_4]^{2-}$ indicates a smaller $\Delta_o$ for $\mathrm{Cl}^-$ than for $\mathrm{H}_2\mathrm{O}$.
+
+## Variable Oxidation States in Detail
+
+### Vanadium Oxidation States
+
+Vanadium exhibits oxidation states from +2 to +5. The colours of vanadium ions in aqueous solution:
+
+| Oxidation state | Ion | Colour |
+|---|---|---|
+| +2 | $\mathrm{V}^{2+}$ | Violet |
+| +3 | $\mathrm{V}^{3+}$ | Green |
+| +4 | $\mathrm{VO}^{2+}$ | Blue |
+| +5 | $\mathrm{VO}_2^+$ | Yellow |
+
+These can be interconverted by reduction with zinc and acid:
+
+$$\mathrm{VO}_2^+ \xrightarrow{\mathrm{Zn},\,\mathrm{H}^+} \mathrm{VO}^{2+} \xrightarrow{\mathrm{Zn},\,\mathrm{H}^+} \mathrm{V}^{3+} \xrightarrow{\mathrm{Zn},\,\mathrm{H}^+} \mathrm{V}^{2+}$$
+
+### Chromium Oxidation States
+
+Chromium exhibits oxidation states from +2 to +6:
+
+| Oxidation state | Ion/Compound | Colour |
+|---|---|---|
+| +2 | $\mathrm{Cr}^{2+}(aq)$ | Blue |
+| +3 | $\mathrm{Cr}^{3+}(aq)$ | Green/violet |
+| +6 | $\mathrm{CrO}_4^{2-}(aq)$ | Yellow |
+| +6 | $\mathrm{Cr}_2\mathrm{O}_7^{2-}(aq)$ | Orange |
+
+**Dichromate-chromate equilibrium:**
+
+$$\mathrm{Cr}_2\mathrm{O}_7^{2-}(aq) + \mathrm{H}_2\mathrm{O}(l) \rightleftharpoons 2\mathrm{CrO}_4^{2-}(aq) + 2\mathrm{H}^+(aq)$$
+
+Adding acid shifts the equilibrium to the left (orange dichromate). Adding alkali shifts it to the right (yellow chromate).
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Explain why $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ is blue but $[\mathrm{Zn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ is colourless.
+
+**Mark Scheme:**
+
+$[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ contains $\mathrm{Cu}^{2+}$ with the electron configuration $[\mathrm{Ar}]\,3d^9$ (1 mark). The $d$-orbitals are split by the octahedral crystal field of water ligands (1 mark). An electron can be promoted from a $t_{2g}$ orbital to an $e_g$ orbital by absorbing visible light (1 mark). The complementary colour (blue) is transmitted/reflected.
+
+$[\mathrm{Zn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ contains $\mathrm{Zn}^{2+}$ with the electron configuration $[\mathrm{Ar}]\,3d^{10}$ (1 mark). All $d$-orbitals are fully occupied, so no $d$-$d$ electron transitions are possible, and no visible light is absorbed (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+Describe the colour changes observed when excess concentrated ammonia solution is added to a solution containing $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}(aq)$ ions. Write equations for the reactions occurring.
+
+**Mark Scheme:**
+
+Initial solution: Pale blue (1 mark).
+
+On adding a few drops of $\mathrm{NH}_3$: A pale blue precipitate of $\mathrm{Cu}(\mathrm{OH})_2$ forms (1 mark):
+
+$$[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+} + 2\mathrm{NH}_3 \to \mathrm{Cu}(\mathrm{OH})_2(s) + 2\mathrm{NH}_4^+ + 4\mathrm{H}_2\mathrm{O}$$
+
+(1 mark for equation.)
+
+On adding excess $\mathrm{NH}_3$: The precipitate dissolves to form a deep blue solution (1 mark):
+
+$$\mathrm{Cu}(\mathrm{OH})_2(s) + 4\mathrm{NH}_3 \to [\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+} + 2\mathrm{OH}^-$$
+
+(1 mark for equation.)
+
+The deep blue colour is due to the tetraamminecopper(II) complex, which has a different crystal field splitting than the hexaaqua complex, absorbing different wavelengths of light (1 mark for explanation of colour change).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+Explain what is meant by the term ligand. Give one example of a bidentate ligand and explain why it forms more stable complexes than monodentate ligands.
+
+**Mark Scheme:**
+
+A ligand is a molecule or ion that can donate a lone pair of electrons to a transition metal ion to form a coordinate (dative covalent) bond (1 mark).
+
+Example of a bidentate ligand: ethane-1,2-diamine ($\mathrm{H}_2\mathrm{NCH}_2\mathrm{CH}_2\mathrm{NH}_2$, "en") or oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$) (1 mark).
+
+Bidentate ligands form more stable complexes because of the chelate effect: the entropy change is more favourable (one ligand replaces two, releasing two molecules) and the chelate ring structure provides additional stability through the macrocyclic effect (1 mark for entropy, 1 mark for ring structure).
+
+</details>
+
+<details>
+<summary>Q4 (5 marks)</summary>
+
+The complex $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ is diamagnetic, whereas $[\mathrm{CoF}_6]^{3-}$ is paramagnetic with four unpaired electrons. Explain these observations using crystal field theory.
+
+**Mark Scheme:**
+
+$\mathrm{Co}^{3+}$ has the electron configuration $[\mathrm{Ar}]\,3d^6$ (1 mark).
+
+$\mathrm{NH}_3$ is a strong-field ligand (high in the spectrochemical series), so $\Delta_o$ is large (1 mark). The pairing energy is less than $\Delta_o$, so all six $d$-electrons pair in the $t_{2g}$ orbitals: $t_{2g}^6\,e_g^0$ (low-spin, diamagnetic) (1 mark).
+
+$\mathrm{F}^-$ is a weak-field ligand, so $\Delta_o$ is small (1 mark). The pairing energy is greater than $\Delta_o$, so the electrons occupy both $t_{2g}$ and $e_g$ orbitals following Hund's rule: $t_{2g}^4\,e_g^2$ (high-spin, paramagnetic with four unpaired electrons) (1 mark).
+
+</details>
+
+---
+
 :::tip
 Diagnostic Test
 Ready to test your understanding of **Transition Metals**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-transition-metals) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.

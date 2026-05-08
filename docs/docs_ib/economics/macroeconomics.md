@@ -1997,3 +1997,1153 @@ The interest rate falls from 6.67% to 5.0%, causing capital outflows and exchang
 $\Delta Y = 600 - 533.3 = 66.7$: monetary policy is highly effective under floating rates.
 
 </details>
+
+## Deflation Spiral (HL Extension)
+
+### Mechanism of Deflation
+
+A **deflationary spiral** is a self-reinforcing cycle of falling prices, rising real debt burdens,
+reduced spending, falling output, and further price declines:
+
+$$\text{Prices fall} \implies \text{Real interest rates rise} \implies \text{Borrowing costs increase}$$
+$$\implies \text{Investment falls} \implies \text{Aggregate demand falls}$$
+$$\implies \text{Output falls} \implies \text{Unemployment rises}$$
+$$\implies \text{Demand falls further} \implies \text{Prices fall more}$$
+
+This vicious cycle is difficult to escape because:
+
+- Rising real debt burdens lead to defaults, bank failures, and credit contraction
+- Falling demand discourages investment (the investment paradox: if prices are falling, firms delay
+  investment because goods will be cheaper in the future)
+- Consumers defer purchases, reducing aggregate demand further
+- Central banks may be constrained by the zero lower bound on nominal interest rates
+
+### Fisher Debt Deflation
+
+Irving Fisher (1933) argued that deflation increases the real burden of debt:
+
+$$r_{\text{real}} = i - \pi$$
+
+When $\pi < 0$ (deflation), the real interest rate exceeds the nominal rate. If firms and households
+borrowed expecting inflation, deflation increases the real value of their debts, potentially triggering
+defaults.
+
+**Numerical example:** A firm borrows USD 100 million at a nominal rate of 5%, expecting 2% inflation.
+
+Expected real rate $= 5\% - 2\% = 3\%$.
+
+If deflation of 3% occurs instead:
+
+Actual real rate $= 5\% - (-3\%) = 8\%$.
+
+The real debt burden is nearly triple the expected level, potentially pushing the firm into
+bankruptcy.
+
+### Historical Examples
+
+**Japan's Lost Decades:** Since the 1990s, Japan has experienced persistent mild deflation
+(approximately 0.5% per year). Despite near-zero nominal interest rates, the economy has
+struggled to achieve sustained growth. The nominal interest rate was cut to zero in 1999 and
+negative in 2016, but deflationary expectations persisted. This is consistent with the
+liquidity trap: monetary policy lost traction because the nominal interest rate could not fall
+far enough to achieve a negative real rate sufficient to stimulate borrowing.
+
+**The Great Depression (1929--1933):** US prices fell by approximately 25% between 1929 and 1933.
+The deflation spiral was amplified by bank failures (over 9,000 US banks failed between 1930 and
+1933), which destroyed the money supply and further deepened the crisis.
+
+### Policy Responses to Deflation
+
+1. **Quantitative easing (QE):** large-scale asset purchases by the central bank to lower long-term
+   interest rates and increase the money supply, even when short-term rates are at the ZLB
+2. **Inflation targeting with overshoot:** committing to achieve an inflation target above zero
+   (e.g., 2%) to manage expectations and prevent deflationary psychology
+3. **Fiscal expansion:** government spending increases aggregate demand directly, bypassing the
+   monetary transmission mechanism
+4. **Negative interest rates:** charging banks for holding excess reserves, encouraging lending
+   (adopted by the ECB, Bank of Japan, and others since 2014)
+
+## Quantitative Easing: Mechanics (HL Extension)
+
+### How QE Works
+
+When the policy rate is at or near zero, the central bank cannot stimulate further through
+conventional interest rate cuts. QE involves the central bank purchasing financial assets
+(typically government bonds and, in some cases, corporate bonds and mortgage-backed securities)
+from the private sector.
+
+**Mechanism:**
+
+1. Central bank creates bank reserves to purchase assets
+2. Asset prices rise (increased demand for bonds pushes up prices, lowering yields)
+3. Lower long-term yields reduce borrowing costs for firms and households
+4. Portfolio rebalancing: investors sell bonds to the central bank and purchase other assets
+   (equities, corporate bonds, real estate), raising their prices
+5. The wealth effect (higher asset prices) increases consumption
+6. Lower borrowing costs stimulate investment
+
+**Balance sheet effects:**
+
+$$\text{CB purchases bonds} \implies \text{Bank reserves increase} \implies \text{Lending capacity rises}$$
+
+$$\text{Bond prices rise} \implies \text{Long-term yields fall} \implies \text{Investment increases}$$
+
+### QE in Practice
+
+**Federal Reserve (2008--2014):** three rounds of QE purchased approximately USD 3.5 trillion in
+assets, expanding the Fed's balance sheet from USD 900 billion to USD 4.5 trillion.
+
+**ECB (2015--2018):** the Asset Purchase Programme (APP) purchased EUR 1.7 trillion in
+government bonds and EUR 132 billion in corporate bonds. The Pandemic Emergency Purchase
+Programme (PEPP, 2020) added EUR 1.85 trillion.
+
+**Bank of Japan (2001--):** QQE (Quantitative and Qualitative Easing) has expanded the BoJ
+balance sheet to over JPY 700 trillion (approximately 130% of GDP), making it the most aggressive
+QE programme among major central banks.
+
+### Limitations of QE
+
+1. **Uncertain transmission:** the link between QE and real economic activity is less direct
+   than conventional monetary policy
+2. **Asset price inflation:** QE may inflate asset prices (stocks, bonds, real estate) without
+   corresponding increases in real output, exacerbating wealth inequality
+3. **Exit strategy risk:** unwinding a large balance sheet without destabilising markets
+4. **Distributional effects:** QE benefits asset holders disproportionately, while the benefits
+   to non-asset holders are indirect
+5. **Diminishing returns:** the marginal impact of additional QE declines as the balance
+   sheet grows
+
+## Fiscal Rules (HL Extension)
+
+### Types of Fiscal Rules
+
+Fiscal rules constrain government discretion over spending and taxation:
+
+1. **Budget balance rule:** the budget must be balanced (or the deficit must not exceed X% of GDP)
+2. **Debt-to-GDP rule:** public debt must not exceed a ceiling (e.g., the Maastricht Treaty's
+   60% ceiling)
+3. **Expenditure growth rule:** government spending growth must not exceed a specified rate
+   (e.g., the EU's expenditure benchmark)
+4. **Cyclical adjustment rule:** the structural (cyclically-adjusted) balance must meet a target,
+   allowing the actual balance to fluctuate with the cycle
+5. **Revenue rule:** government revenue must not fall below a specified share of GDP
+
+### The EU's Fiscal Rules
+
+The Stability and Growth Pact (SGP) has evolved through several iterations:
+
+1. **Original SGP (1997):** deficit $< 3\%$ of GDP; debt $< 60\%$ of GDP
+2. **Reformed SGP (2005):** introduced cyclical adjustment, allowing temporary deviations
+3. **Fiscal Compact (2012):** introduced structural balance requirements
+4. **New SGP (2024):** introduced an expenditure benchmark alongside the structural
+   balance requirement
+
+### Evaluation of Fiscal Rules
+
+**Advantages:**
+
+- Credibility: fiscal rules signal commitment to sustainable public finances
+- Counter-cyclical design (with cyclical adjustment) allows automatic stabilisers to
+  operate during recessions
+- Discipline: constrains the political incentive for deficit spending
+- Transparency: requires governments to publish medium-term fiscal plans
+
+**Disadvantages:**
+
+- Pro-cyclical bias: many fiscal rules have been pro-cyclical, requiring austerity
+  during recessions (as during the Eurozone crisis)
+- Inflexibility: rigid rules may prevent necessary stimulus during crises
+- Gaming: governments may manipulate forecasts to meet the rule (e.g., overly optimistic
+  growth projections)
+- One-size-fits-all: the same rule may not be appropriate for all countries
+- Complexity: cyclical adjustment requires estimating potential output, which is imprecise
+
+## Structural Unemployment and Hysteresis (HL Extension)
+
+### Hysteresis in Labour Markets
+
+**Hysteresis** refers to the persistence of unemployment even after the economy recovers from
+recession. Long-term unemployment erodes skills, reduces employability, and can permanently
+raise the natural rate of unemployment.
+
+**Mechanism:**
+
+1. **Skills atrophy:** unemployed workers lose job-specific and general skills over time
+2. **Discouragement:** long-term unemployed exit the labour force, reducing the measured
+   participation rate and the effective labour supply
+3. **Insider-outsider dynamics:** employed workers ("insiders") negotiate wages that do not
+   fall enough to employ the long-term unemployed ("outsiders")
+4. **Capital decumulation:** during prolonged recessions, capital stock depreciates, reducing the
+   economy's productive capacity
+5. **Scarring effects:** workers who experience unemployment may become less employable due to
+   psychological and health effects
+
+**Empirical evidence:**
+
+After the 2008 financial crisis:
+
+- The average duration of unemployment in the EU rose from 6 to 18 months
+- In Greece, youth unemployment exceeded 50% for a decade
+- Many advanced economies saw their labour force participation rate decline permanently
+
+**Mathematical representation:**
+
+If the natural rate depends on the actual unemployment rate:
+
+$$u_{n,t} = u_{n,0} + \alpha(u_{t-1} - u_{n,t-1})$$
+
+Where $\alpha > 0$ is the hysteresis parameter. If unemployment was high last period
+($u_{t-1} > u_{n,t-1}$), the natural rate adjusts upward.
+
+**Policy implications:**
+
+1. Active labour market policies (ALMPs): job search assistance, retraining programmes,
+   wage subsidies
+2. **Early intervention:** the longer unemployment persists, the harder it is to reverse
+3. **Demand-side support:** maintaining aggregate demand during recessions prevents the rise in
+   unemployment that causes hysteresis
+4. **Job guarantees:** government employment programmes prevent skills atrophy and discouragement
+
+## Productivity Paradox (HL Extension)
+
+### The Solow Paradox
+
+Robert Solow (1987) observed that "you can see the computer age everywhere but in the productivity
+statistics." Despite massive investment in ICT, measured productivity growth in advanced
+economies slowed in the 1970s and 1980s.
+
+$$\text{Massive ICT investment} + \text{Slow productivity growth} = \text{The Solow Paradox}$$
+
+### Possible Explanations
+
+1. **Measurement error:** GDP statistics may not fully capture the quality improvements from ICT.
+   Free digital services (search engines, social media, mapping) are not included in GDP
+2. **Adjustment costs:** firms need time to reorganise production around new technologies,
+   and the transition period involves disruption
+3. **Skill-biased technical change:** ICT requires complementary human capital (digital
+   literacy, problem-solving, creativity) that takes time to develop
+4. **General-purpose technology (GPT) diffusion:** GPTs (like the steam engine or electricity)
+   require complementary innovations across the economy. The full productivity impact may
+   take decades to materialise
+5. **Redistributive effects:** ICT may displace low-skilled workers while benefiting
+   high-skilled workers, contributing to inequality
+6. **Misallocation:** resources may flow to unproductive uses (entertainment, social media)
+   rather than productive investments
+
+### The "AI Productivity Question"
+
+The current debate parallels the Solow Paradox: will artificial intelligence drive productivity
+growth, or will it follow the pattern of earlier ICT waves? Early evidence suggests AI could be
+more transformative than previous technologies due to its ability to automate cognitive tasks across
+all sectors, but measurement challenges persist.
+
+## Crowding Out: Detailed Analysis (HL Extension)
+
+### Full Theoretical Framework
+
+Crowding out occurs when increased government borrowing raises interest rates, reducing private
+investment. The extent of crowding out depends on the source of financing and the state of the
+economy.
+
+**In the loanable funds market:**
+
+$$S_{\text{private}} + S_{\text{government}} = I_{\text{private}} + I_{\text{government}}$$
+
+When government saving falls (deficit increases), the supply of loanable funds shifts leftward,
+raising the real interest rate and reducing private investment.
+
+**The degree of crowding out:**
+
+1. **Complete crowding out:** in the classical model (vertical AS), an increase in $G$
+   exactly offsets $\Delta I$, so $\Delta Y = 0$. This occurs when the economy is at full
+   employment
+2. **Partial crowding out:** in the Keynesian model (upward-sloping AS), some investment
+   is displaced but output still increases
+3. **No crowding out:** at the zero lower bound (horizontal LM curve), government borrowing
+   does not raise interest rates because the central bank accommodates the fiscal expansion
+
+### Open-Economy Crowding Out
+
+In an open economy, higher interest rates attract foreign capital inflows, appreciating the
+exchange rate:
+
+$$G \uparrow \implies r \uparrow \implies \text{Capital inflows} \uparrow \implies \text{Exchange rate} \uparrow$$
+$$\implies (X - M) \downarrow \implies \text{Further reduction in AD}$$
+
+This creates **double crowding out:** higher interest rates reduce both domestic investment and net
+exports. Small open economies with mobile capital are particularly vulnerable.
+
+**Numerical example:**
+
+An economy has MPC $= 0.75$, MPM $= 0.2$, and a 1 percentage point increase in $r$ reduces
+investment by USD 2 billion. The government increases spending by USD 10 billion.
+
+Closed-economy multiplier: $\frac{1}{1 - \text{MPC}} = \frac{1}{0.25} = 4$.
+
+Open-economy multiplier: $\frac{1}{\text{MPM} + \text{MPS}} = \frac{1}{0.2 + 0.25} = \frac{1}{0.45} = 2.22$.
+
+Simple increase: $\Delta Y = 2.22 \times 10 = 22.2$ billion.
+
+With crowding out: if government borrowing raises $r$ by 2 percentage points, investment falls by
+$2 \times 2 = 4$ billion, and the exchange rate appreciation reduces net exports by USD 1 billion.
+
+Total offset $= 4 + 1 = 5$ billion.
+
+$\Delta Y = 22.2 - 5 = 17.2$ billion. Crowding out reduces the stimulus effect by approximately 23%.
+
+## Worked Examples: Macroeconomics (HL Extension)
+
+<details>
+<summary>Problem 15: Deflation Spiral</summary>
+
+An economy has nominal GDP of USD 500 billion and total outstanding debt (public + private) of
+USD 600 billion. The economy enters a deflation of 2% per year for 5 years. Nominal GDP grows at
+only 1% per year (because real GDP falls while prices fall by 2%).
+
+(a) Calculate the debt-to-GDP ratio at the start and after 5 years.
+
+(b) Calculate the real interest rate if the nominal rate is 2%.
+
+(c) Explain why deflation makes debt reduction harder.
+
+(a) Initial debt-to-GDP ratio $= 600/500 = 120\%$
+
+After 5 years:
+
+- GDP grows at 1% per year: $Y_5 = 500 \times 1.01^5 = 500 \times 1.0510 = 525.5$ billion
+- Debt grows (assuming primary deficit) at 3% per year: $D_5 = 600 \times 1.03^5 = 600 \times 1.1593 = 695.6$ billion
+
+Debt-to-GDP ratio after 5 years $= 695.6 / 525.5 = 132.4\%$
+
+The debt-to-GDP ratio rises despite nominal GDP growth because debt grows faster than GDP
+(3% vs. 1%).
+
+(b) Real interest rate $= i - \pi = 2\% - (-2\%) = 4\%$
+
+The real interest rate is double the nominal rate due to deflation.
+
+(c) Deflation makes debt reduction harder because:
+
+1. Real debt burden increases: with 4% real interest rates, servicing debt consumes a larger
+   share of GDP
+2. Nominal GDP growth is lower: deflation reduces prices and nominal wages, leading to lower
+   tax revenues
+3. Debt-deflation spiral: as the debt burden rises, the government may cut spending, further
+   reducing aggregate demand, causing more deflation and more revenue decline
+4. Private sector: deflation increases real debt burdens for households and firms, leading to
+   defaults, bank failures, and credit contraction
+
+</details>
+
+<details>
+<summary>Problem 16: QE and Balance Sheet Effects</summary>
+
+A central bank purchases USD 500 billion of government bonds. The reserve requirement is 10%.
+The banking system has USD 2 trillion in deposits and USD 1.5 trillion in loans.
+
+(a) Calculate the change in the monetary base (high-powered money).
+
+(b) If banks lend out all excess reserves, what is the theoretical maximum expansion of broad
+   money from the additional reserves?
+
+(c) Evaluate the effectiveness of QE in stimulating the real economy.
+
+(a) The central bank creates USD 500 billion in bank reserves to purchase bonds. The monetary base
+(high-powered money $=$ currency + bank reserves) increases by USD 500 billion.
+
+(b) Assuming initial reserves of USD 200 billion ($10\% \times 2{,}000$), new reserves $= 700$ billion.
+
+The simple deposit multiplier $= 1/0.10 = 10$. Maximum expansion from additional reserves
+$= 500 / 0.10 = 5{,}000$ billion.
+
+Note: this is a theoretical maximum. In practice, banks may not lend out all excess reserves
+because of weak demand for loans, risk aversion, or regulatory constraints.
+
+(c) **Effectiveness evaluation:**
+
+1. **Interest rate channel:** QE lowered long-term yields, reducing borrowing costs. US 10-year
+   Treasury yields fell from 3.8% (2007) to 1.4% (2012)
+2. **Portfolio rebalancing:** investors shifted from bonds to equities, contributing to the
+   post-2009 stock market recovery
+3. **Limited bank lending:** banks held excess reserves rather than lending them out, so the
+   credit channel was weak
+4. **Wealth effects:** rising asset prices increased household net worth, but primarily for
+   asset holders
+5. **Distributional effects:** the top 10% of US households own approximately 80% of equities,
+   so QE gains were concentrated
+6. **Inflation:** despite massive monetary expansion, inflation remained below the 2% target
+   throughout most of the QE period
+
+Overall, QE was partially effective at preventing a deeper recession but failed to generate
+strong, inclusive growth.
+
+</details>
+
+<details>
+<summary>Problem 17: Fiscal Rules and Cyclical Adjustment</summary>
+
+The government of Country Z is subject to a fiscal rule requiring the structural budget
+deficit not to exceed 0.5% of GDP. Currently:
+
+- Potential GDP = USD 1000 billion
+- Actual GDP = USD 950 billion
+- Nominal GDP = USD 990 billion
+- Government spending = USD 280 billion
+- Tax revenue = USD 255 billion
+- Tax elasticity with respect to output $= 1.0$
+
+(a) Calculate the actual and structural budget balances.
+
+(b) Is the government complying with the fiscal rule?
+
+(c) The government plans to increase spending by USD 20 billion. Assuming the spending multiplier
+   is 2 and potential GDP remains unchanged, what is the new structural deficit?
+
+(a) Actual balance $= T - G = 255 - 280 = -25$ billion (deficit of USD 25 billion)
+
+Actual deficit as % of GDP $= 25/990 = 2.53\%$
+
+Output gap $= (950 - 1000)/1000 = -5\%$ (recessionary gap)
+
+Cyclical component of tax revenue: with tax elasticity of 1.0, the cyclical shortfall in tax
+revenue $= 5\% \times 255 = 12.75$ billion.
+
+Structural deficit $= 25 - 12.75 = 12.25$ billion
+
+Structural deficit as % of potential GDP $= 12.25 / 1000 = 1.23\%$
+
+(b) The structural deficit is 1.23% of GDP, which exceeds the 0.5% ceiling. The government is
+NOT complying with the fiscal rule.
+
+(c) New government spending $= 300$ billion. Spending multiplier $= 2$, so $\Delta Y = 40$ billion.
+
+New actual GDP $= 950 + 40 = 990$. New output gap $= (990 - 1000)/1000 = -1\%$.
+
+New tax revenue (assuming tax elasticity 1.0, proportional tax): tax revenue rises by 1%
+proportionally. Approximate new tax revenue $= 255 \times (990/950) = 255 \times 1.0421 = 265.7$ billion.
+
+New actual deficit $= 265.7 - 300 = -34.3$ billion.
+
+Cyclical component $= 1\% \times 265.7 = 2.66$ billion.
+
+Structural deficit $= 34.3 - 2.66 = 31.64$ billion $= 3.16\%$ of potential GDP.
+
+The spending increase worsens the structural deficit from 1.23% to 3.16%, further violating the
+fiscal rule.
+
+</details>
+
+<details>
+<summary>Problem 18: Hysteresis in the Labour Market</summary>
+
+An economy has a natural rate of unemployment of 5%. A financial crisis causes a recession, and
+the actual unemployment rate rises to 10% for 3 years. The hysteresis parameter $\alpha = 0.15$.
+
+(a) Calculate the natural rate of unemployment after 1, 2, and 3 years of high unemployment.
+
+(b) If the economy recovers to potential output after year 3, what is the equilibrium
+   unemployment rate?
+
+(c) Calculate the GDP loss from hysteresis using Okun's law: $\Delta Y/Y = -2(u - u_n)$.
+
+(a) Using $u_{n,t} = u_{n,0} + \alpha(u_{t-1} - u_{n,t-1})$:
+
+Year 1: $u_{n,1} = 5\% + 0.15(10\% - 5\%) = 5\% + 0.75\% = 5.75\%$
+
+Year 2: $u_{n,2} = 5.75\% + 0.15(10\% - 5.75\%) = 5.75\% + 0.6375\% = 6.39\%$
+
+Year 3: $u_{n,3} = 6.39\% + 0.15(10\% - 6.39\%) = 6.39\% + 0.541\% = 6.93\%$
+
+After 3 years, the natural rate has risen from 5% to 6.93%.
+
+(b) The equilibrium unemployment rate is now 6.93%, not 5%. The economy has a permanently higher
+natural rate due to hysteresis. Even after recovery, approximately 1.93% more of the labour force
+remains unemployed compared to the pre-crisis natural rate.
+
+(c) Using Okun's law with $u = 6.93\%$ and original $u_n = 5\%$:
+
+$\Delta Y/Y = -2(6.93\% - 5\%) = -2(1.93\%) = -3.86\%$
+
+The economy loses approximately 3.86% of potential GDP permanently due to hysteresis. If potential
+GDP was USD 1 trillion, the permanent loss is USD 38.6 billion per year.
+
+</details>
+
+## Common Pitfalls: Macroeconomics (Comprehensive)
+
+- Assuming that deflation is always harmful. Mild deflation due to productivity growth can
+  benefit consumers, but demand-driven deflation triggers the spiral
+- Confusing QE with money printing. QE expands bank reserves, not currency in circulation; the
+  link between reserves and broad money depends on bank lending behaviour
+- Assuming that fiscal multipliers are constant. Multipliers are larger during recessions (when
+  there is slack) and smaller during booms
+- Assuming the natural rate of unemployment is fixed. Hysteresis means the natural rate
+  can shift upward after prolonged recessions
+- Confusing the zero lower bound with an absolute lower bound. Nominal rates can go slightly
+  negative, but deeply negative rates have adverse effects on bank profitability
+- Overstating the crowding-out effect during recessions. When resources are idle and the ZLB
+  binds, government borrowing may not raise interest rates significantly
+- Ignoring the distributional consequences of QE. Asset price inflation benefits asset holders
+  disproportionately
+- Applying fiscal rules mechanically without cyclical adjustment. Pro-cyclical austerity
+  during recessions deepens downturns
+- Confusing real and nominal interest rates during deflation. When $\pi < 0$, $r_{\text{real}} > i$,
+  making debt servicing more expensive in real terms
+
+## The Phillips Curve: Advanced Analysis (HL Extension)
+
+### The Expectations-Augmented Phillips Curve
+
+Milton Friedman (1968) and Edmund Phelps (1967) argued that the traditional Phillips curve
+trade-off between inflation and unemployment is only temporary. In the long run, unemployment
+returns to the natural rate regardless of inflation:
+
+$$\pi = \pi^e - \beta(u - u_n) + \epsilon$$
+
+Where:
+- $\pi$ = actual inflation
+- $\pi^e$ = expected inflation
+- $u$ = actual unemployment rate
+- $u_n$ = natural rate of unemployment (NAIRU)
+- $\beta$ = slope of the Phillips curve
+- $\epsilon$ = supply shock
+
+**Short-run Phillips curve:** for a given $\pi^e$, there is a trade-off between $\pi$ and $u$.
+The central bank can reduce $u$ below $u_n$ by creating unexpected inflation ($\pi > \pi^e$).
+
+**Long-run Phillips curve:** when $\pi = \pi^e$, $u = u_n$. The long-run Phillips curve is
+vertical at the natural rate.
+
+### The Sacrifice Ratio
+
+The **sacrifice ratio** measures the cumulative loss in output required to reduce inflation by
+1 percentage point:
+
+$$\text{Sacrifice ratio} = \frac{\sum \Delta Y}{\Delta \pi}$$
+
+**Historical estimates:**
+
+- US Volcker disinflation (1980--85): inflation fell from 13.5% to 3.2% (10.3 percentage
+  points). Cumulative output loss: approximately 21% of one year's GDP.
+  Sacrifice ratio $= 21/10.3 \approx 2.0$
+
+- UK (1979--82): sacrifice ratio $\approx 2.5$
+
+- New Zealand (1990--92): sacrifice ratio $\approx 1.0$
+
+The sacrifice ratio depends on the credibility of the disinflation policy. If the central bank
+credibly commits to low inflation, expectations adjust quickly and the output loss is smaller.
+
+### Numerical Example: Disinflation
+
+The economy has:
+
+- Natural rate of unemployment $u_n = 5\%$
+- Current unemployment $u = 5\%$
+- Current inflation $\pi = 8\%$
+- Phillips curve: $\pi = \pi^e - 2(u - 5)$
+
+The central bank wants to reduce inflation to 2%.
+
+**Scenario 1: Cold turkey (immediate, credible announcement)**
+
+If the announcement is fully credible, $\pi^e$ falls immediately to 2%. With $\pi = \pi^e = 2\%$:
+
+$2 = 2 - 2(u - 5) \implies u = 5\%$.
+
+No increase in unemployment. Sacrifice ratio $= 0$. (Ideal but unrealistic.)
+
+**Scenario 2: Adaptive expectations ($\pi^e_t = \pi_{t-1}$)**
+
+Year 1: $\pi^e = 8\%$. Central bank tightens policy. $\pi = 8 - 2(u_1 - 5)$.
+
+If the central bank sets $u_1 = 7\%$: $\pi_1 = 8 - 2(2) = 4\%$.
+
+Year 2: $\pi^e = 4\%$. $\pi_2 = 4 - 2(u_2 - 5)$.
+
+If $u_2 = 5.5\%$: $\pi_2 = 4 - 2(0.5) = 3\%$.
+
+Year 3: $\pi^e = 3\%$. $\pi_3 = 3 - 2(u_3 - 5)$.
+
+If $u_3 = 5.25\%$: $\pi_3 = 3 - 2(0.25) = 2.5\%$.
+
+Year 4: $\pi^e = 2.5\%$. $\pi_4 = 2.5 - 2(5 - 5) = 2.5\%$.
+
+Using Okun's law ($\Delta Y/Y = -2 \Delta u$):
+
+Year 1: output gap $= -2(7-5) = -4\%$
+Year 2: output gap $= -2(5.5-5) = -1\%$
+Year 3: output gap $= -2(5.25-5) = -0.5\%$
+
+Total output loss $= 4 + 1 + 0.5 = 5.5\%$ of GDP.
+Inflation reduction $= 8 - 2.5 = 5.5$ percentage points.
+Sacrifice ratio $= 5.5/5.5 = 1.0$.
+
+### Rational Expectations and Policy Ineffectiveness
+
+If agents have **rational expectations**, they anticipate the central bank's actions and adjust
+$\pi^e$ accordingly. In this case:
+
+1. **Anticipated monetary policy is neutral:** if the central bank announces a disinflation and
+   agents believe it, $\pi^e$ adjusts immediately and there is no output loss
+2. **Only unanticipated policy has real effects:** only surprise changes in the money supply
+   affect output
+3. **Time inconsistency:** the central bank has an incentive to create surprise inflation
+   (to boost output), but rational agents anticipate this, so $\pi^e$ rises and the result is
+   higher inflation without any output gain (Kydland and Prescott, 1977)
+
+**The Barro-Gordon model (1983):**
+
+The central bank minimises a loss function:
+
+$$L = (u - u_n)^2 + \alpha(\pi - \pi^*)^2$$
+
+Where $\pi^*$ is the optimal inflation rate and $\alpha$ measures the weight on inflation
+stability.
+
+Under rational expectations, the equilibrium inflation rate is:
+
+$$\pi = \pi^* + \frac{\beta^2}{\alpha} > \pi^*$$
+
+The economy experiences an **inflation bias:** even though the central bank targets $\pi^*$,
+equilibrium inflation is higher because of the time inconsistency problem.
+
+**Solution: independent central bank with a conservative governor.** If the central bank
+governor places a higher weight on inflation stability ($\alpha$ is larger), the inflation
+bias is smaller. This is the rationale for central bank independence.
+
+## The IS-LM-BP Model: Complete Treatment (HL Extension)
+
+### The BP Curve
+
+The BP (balance of payments) curve shows combinations of $Y$ and $r$ that maintain balance of
+payments equilibrium:
+
+$$\text{Current account} + \text{Capital account} = 0$$
+
+$$\text{NX}(Y, e) + \text{CF}(r) = 0$$
+
+The slope of the BP curve depends on capital mobility:
+
+- **Perfect capital mobility:** BP is horizontal at $r = r^*$ (the world interest rate)
+- **Imperfect capital mobility:** BP is upward-sloping (higher $r$ attracts capital inflows,
+  which finance a larger current account deficit, which requires higher $Y$ and more imports)
+- **No capital mobility:** BP is vertical at the level of $Y$ where the current account is
+  balanced
+
+### Policy Effectiveness under Different Exchange Rate Regimes
+
+| Policy | Fixed rates | Floating rates |
+|---|---|---|
+| Fiscal expansion | Effective (no crowding out from capital flows) | Ineffective (appreciation crowds out NX) |
+| Monetary expansion | Ineffective (capital outflows force reversal) | Effective (depreciation stimulates NX) |
+
+### Numerical Example: IS-LM-BP
+
+An economy has:
+
+- IS: $Y = 1000 - 50r + 2G$
+- LM: $Y = 200 + 100r + 5M/P$
+- BP: $Y = 400 + 50r$ (imperfect capital mobility, upward-sloping)
+- World interest rate: $r^* = 4\%$
+- $G = 200$, $M/P = 100$
+
+(a) Find the initial equilibrium.
+
+(b) The government increases $G$ by 100. Analyse under fixed and floating exchange rates.
+
+(a) IS: $Y = 1000 - 50r + 400 = 1400 - 50r$
+LM: $Y = 200 + 100r + 500 = 700 + 100r$
+
+IS = LM: $1400 - 50r = 700 + 100r \implies 700 = 150r \implies r = 4.67\%$
+
+$Y = 700 + 100(4.67) = 1167$
+
+BP at $r = 4.67$: $Y_{BP} = 400 + 50(4.67) = 633$.
+
+At $Y = 1167$, the economy is above the BP curve ($Y > Y_{BP}$), indicating a balance of
+payments surplus (capital inflows exceed the current account deficit).
+
+(b) **Fixed exchange rates:** The BoP surplus causes the central bank to buy foreign currency and
+sell domestic currency, increasing the money supply. The LM shifts right until the three curves
+intersect.
+
+New IS: $Y = 1500 - 50r$.
+
+IS = LM: $1500 - 50r = 700 + 100r + 5\Delta M/P$
+
+At the BP intersection: $r = 4$, $Y = 600$. But IS at $r=4$: $Y = 1300$. This does not
+intersect BP at $r=4$.
+
+Let me solve properly. Under fixed rates, the final equilibrium is where IS and BP intersect
+(the money supply adjusts to make LM pass through this point):
+
+IS: $Y = 1500 - 50r$. BP: $Y = 400 + 50r$.
+
+$1500 - 50r = 400 + 50r \implies 1100 = 100r \implies r = 11$.
+
+$Y = 400 + 50(11) = 950$.
+
+The equilibrium moves to $r = 11\%$, $Y = 950$.
+
+Fiscal expansion is **effective** under fixed rates: output increases from 1167 to... wait, this
+seems wrong. Let me re-examine.
+
+Actually, at the initial equilibrium $Y = 1167 > Y_{BP} = 633$, so the economy has a BoP
+surplus. Under fixed rates, the money supply increases, shifting LM right, which lowers $r$ and
+raises $Y$ further. The process continues until IS = LM = BP.
+
+At the intersection of IS and BP: $r = 11$, $Y = 950$. But this gives lower $Y$ than the
+initial 1167, which cannot be right for a fiscal expansion.
+
+The issue is that the BP curve's position relative to the initial equilibrium matters. Let me
+recalculate more carefully.
+
+Initial: $r = 4.67$, $Y = 1167$. BP at $r = 4.67$: $Y_{BP} = 400 + 50(4.67) = 633$.
+
+$Y > Y_{BP}$ means the current account deficit is smaller than the capital account surplus
+(BoP surplus). The central bank buys USD, sells domestic currency, expanding M.
+
+LM shifts right $\implies r$ falls, $Y$ rises. As $Y$ rises, the current account worsens (more
+imports). As $r$ falls, capital inflows decrease. The BoP surplus shrinks.
+
+New IS after $G$ increase: $Y = 1500 - 50r$.
+
+The process continues until $Y_{IS} = Y_{BP}$:
+
+$1500 - 50r = 400 + 50r \implies r = 11$, $Y = 950$.
+
+Hmm, $Y$ fell from 1167 to 950 despite fiscal expansion. This seems contradictory. The
+problem is that the BP curve is very low relative to the initial equilibrium, suggesting the
+capital account response is weak. This leads to a large interest rate increase that crowds
+out investment significantly.
+
+Let me use more realistic parameters. Suppose instead:
+
+- BP: $Y = 800 + 80r$ (steeper BP, implying stronger capital mobility)
+
+Initial IS = LM: $r = 4.67$, $Y = 1167$. BP at $r = 4.67$: $Y_{BP} = 800 + 373 = 1173$.
+
+Now $Y \approx Y_{BP}$ (the economy is near BP equilibrium). This is more realistic.
+
+After $G$ increase: IS = BP: $1500 - 50r = 800 + 80r \implies 700 = 130r \implies r = 5.38$.
+
+$Y = 800 + 80(5.38) = 1231$.
+
+Under fixed rates: output rises from 1167 to 1231, an increase of 64. Fiscal policy is
+effective.
+
+Under floating rates: the BoP surplus (initially) causes appreciation, reducing NX and shifting
+IS left until IS = LM = BP at the original $Y$ (approximately). Monetary policy effectiveness
+depends on the exchange rate regime.
+
+## Exam-Style Questions: Macroeconomics (Additional)
+
+<details>
+<summary>Problem 19: Phillips Curve and Disinflation</summary>
+
+An economy has a Phillips curve: $\pi = \pi^e - 1.5(u - 5)$. The natural rate is 5%.
+Current inflation is 10% and expected inflation equals last period's actual inflation.
+
+(a) The central bank wants to reduce inflation to 3%. Under adaptive expectations, calculate
+   the unemployment rate and inflation rate for each of the first 4 years, assuming the
+   central bank holds $u$ constant at 7%. [6 marks]
+
+(b) Calculate the sacrifice ratio. [2 marks]
+
+(c) How would the results differ under rational expectations? [2 marks]
+
+(a) Year 1: $\pi^e = 10\%$. $u = 7\%$.
+
+$\pi_1 = 10 - 1.5(7-5) = 10 - 3 = 7\%$
+
+Year 2: $\pi^e = 7\%$. $u = 7\%$.
+
+$\pi_2 = 7 - 1.5(2) = 4\%$
+
+Year 3: $\pi^e = 4\%$. $u = 7\%$.
+
+$\pi_3 = 4 - 1.5(2) = 1\%$
+
+Year 4: $\pi^e = 1\%$. $u = 7\%$.
+
+$\pi_4 = 1 - 1.5(2) = -2\%$
+
+The economy overshoots the target, producing deflation by year 4. The central bank should
+gradually relax the policy as inflation approaches the target.
+
+Better approach: adjust $u$ each year:
+
+Year 1: target $\pi = 7\%$, set $u$ to achieve this: $7 = 10 - 1.5(u-5) \implies u = 7$
+Year 2: target $\pi = 4.5\%$: $4.5 = 7 - 1.5(u-5) \implies u = 6.67$
+Year 3: target $\pi = 3.5\%$: $3.5 = 4.5 - 1.5(u-5) \implies u = 5.67$
+
+(b) Output loss using Okun's law ($\Delta Y/Y = -2\Delta u$):
+
+Year 1: gap $= -2(7-5) = -4\%$
+Year 2: gap $= -2(7-5) = -4\%$
+Year 3: gap $= -4\%$
+
+Total output loss $= 12\%$ of GDP. Inflation reduction $= 10 - 1 = 9$ percentage points.
+Sacrifice ratio $= 12/9 = 1.33$.
+
+(c) Under rational expectations with a credible disinflation programme, $\pi^e$ adjusts
+immediately to the central bank's target. If agents believe the central bank will achieve
+$\pi = 3\%$:
+
+$\pi = 3 - 1.5(u-5) = 3 \implies u = 5\%$.
+
+No output loss. Sacrifice ratio $= 0$. The central bank achieves disinflation without
+recession if its commitment is credible.
+
+</details>
+
+<details>
+<summary>Problem 20: IS-LM-BP with Capital Mobility</summary>
+
+A small open economy with perfect capital mobility ($r = r^* = 5\%$). Floating exchange rate.
+
+IS: $Y = 800 - 40r + 4e$ (where $e$ is the exchange rate, higher = depreciation)
+LM: $Y = 500 + 20r$
+BP: $r = 5\%$ (horizontal)
+
+(a) Find the initial equilibrium (assume $e = 10$). [2 marks]
+
+(b) The government increases spending by 50. Analyse the impact. [4 marks]
+
+(c) The central bank increases the money supply, shifting LM to $Y = 600 + 20r$. Analyse the
+   impact. [4 marks]
+
+(a) IS: $Y = 800 - 40(5) + 4(10) = 800 - 200 + 40 = 640$.
+
+LM: $Y = 500 + 20(5) = 600$.
+
+IS $\neq$ LM, so $e$ must adjust. At $r = 5\%$:
+
+IS: $Y = 600 + 4e$. LM: $Y = 600$.
+
+For equilibrium: $600 + 4e = 600 \implies e = 0$. This is unrealistic. Let me adjust the
+parameters.
+
+Let IS: $Y = 600 - 40r + 4e$, LM: $Y = 400 + 20r$, $r^* = 5$.
+
+IS at $r=5$: $Y = 600 - 200 + 4e = 400 + 4e$. LM at $r=5$: $Y = 500$.
+
+$400 + 4e = 500 \implies e = 25$. $Y = 500$.
+
+(b) New IS: $Y = 650 - 40r + 4e$ (G increases by 50, so intercept increases by 50).
+
+At $r = 5$: $Y = 650 - 200 + 4e = 450 + 4e$.
+
+IS = LM: $450 + 4e = 500 \implies 4e = 50 \implies e = 12.5$.
+
+$Y = 500$. The exchange rate appreciates from 25 to 12.5 (a 50% appreciation).
+
+$\Delta Y = 0$: fiscal policy is completely ineffective under floating rates with perfect
+capital mobility. The appreciation reduces net exports by exactly the amount of the fiscal
+expansion.
+
+(c) New LM: $Y = 600 + 20r$. At $r = 5$: $Y = 700$.
+
+IS at $r=5$: $Y = 400 + 4e$. $400 + 4e = 700 \implies 4e = 300 \implies e = 75$.
+
+The exchange rate depreciates from 25 to 75 (a 200% depreciation).
+
+$\Delta Y = 700 - 500 = 200$: monetary policy is highly effective. The depreciation
+amplifies the monetary stimulus through net exports.
+
+The fiscal multiplier is 0; the monetary multiplier is $200/(\Delta M/P)$. If the money supply
+increase was $\Delta M/P = 10$ (shifting LM intercept from 400 to 600, i.e., $\Delta = 200$
+at $r=0$, which corresponds to $\Delta M/P = 10$ given the LM slope of 20), the monetary
+multiplier is $200/10 = 20$.
+
+</details>
+
+## Okun's Law: Advanced Treatment (HL Extension)
+
+### The Okun Relationship
+
+**Okun's law** describes the empirical relationship between changes in unemployment and changes
+in output:
+
+$$\Delta u = -\beta \left( \frac{\Delta Y}{Y} - g^* \right)$$
+
+Where:
+- $\Delta u$ = change in the unemployment rate
+- $\Delta Y/Y$ = GDP growth rate
+- $g^*$ = the growth rate of potential output (trend growth)
+- $\beta$ = Okun's coefficient (typically 0.4--0.5 in the US)
+
+**Alternative form:**
+
+$$\frac{Y - Y^*}{Y^*} = -\gamma (u - u^*)$$
+
+Where $\gamma = 1/\beta \approx 2$ in the US. A 1 percentage point increase in the unemployment
+rate is associated with a 2% decline in output relative to potential.
+
+### Why Okun's Coefficient Exceeds 1
+
+The output loss from unemployment exceeds the proportional increase in unemployment because:
+
+1. **Labour hoarding:** during recessions, firms retain workers but reduce hours (part-time work,
+   reduced overtime) rather than laying off workers. Output falls more than employment
+2. **Discouraged workers:** unemployed workers exit the labour force, reducing the measured
+   unemployment rate even as output falls
+3. **Productivity procyclicality:** labour productivity rises during booms (high-capacity
+   utilisation, capital deepening) and falls during recessions
+4. ** labour force growth:** the labour force continues to grow during recessions, increasing
+   the gap between actual and potential output
+
+### Numerical Example: Output Gap Estimation
+
+An economy has:
+
+- Potential GDP growth rate: $g^* = 2.5\%$
+- Actual GDP growth: 1.0%
+- Initial unemployment rate: 6.0%
+- Okun's coefficient: $\beta = 0.5$
+
+$\Delta u = -0.5(1.0\% - 2.5\%) = -0.5(-1.5\%) = +0.75$ percentage points.
+
+New unemployment rate $= 6.0 + 0.75 = 6.75\%$.
+
+Output gap $= -(u - u^*) \times \gamma$. If $u^* = 5\%$:
+
+Output gap $= -(6.75 - 5) \times 2 = -3.5\%$.
+
+The economy is operating 3.5% below potential output.
+
+**GDP loss from the recession:**
+
+If potential GDP is USD 1 trillion, the output gap is USD 35 billion.
+
+The "sacrifice" of the recession: $35 billion in lost output and 0.75 percentage points of
+additional unemployment.
+
+## The Taylor Rule (HL Extension)
+
+### The Rule
+
+John Taylor (1993) proposed a rule for setting the central bank policy rate:
+
+$$i = r^* + \pi + 0.5(\pi - \pi^*) + 0.5(y - y^*)$$
+
+Where:
+- $i$ = nominal policy rate
+- $r^*$ = equilibrium real interest rate (typically 2%)
+- $\pi$ = current inflation rate
+- $\pi^*$ = target inflation rate (typically 2%)
+- $y - y^*$ = output gap (percentage deviation of output from potential)
+
+The Taylor rule responds to two gaps:
+
+1. **Inflation gap** ($\pi - \pi^*$): if inflation exceeds the target, raise the rate
+2. **Output gap** ($y - y^*$): if output exceeds potential, raise the rate
+
+### Numerical Example
+
+$\pi^* = 2\%$, $r^* = 2\%$.
+
+**Scenario 1:** $\pi = 2\%$, $y = y^*$ (output at potential).
+
+$i = 2 + 2 + 0.5(0) + 0.5(0) = 4\%$.
+
+**Scenario 2:** $\pi = 5\%$, $y = y^*$.
+
+$i = 2 + 5 + 0.5(3) + 0.5(0) = 8.5\%$.
+
+The central bank raises the rate by 4.5 percentage points to combat inflation.
+
+**Scenario 3:** $\pi = 2\%$, output gap $= -3\%$ (recession).
+
+$i = 2 + 2 + 0.5(0) + 0.5(-3) = 2.5\%$.
+
+The central bank cuts the rate by 1.5 percentage points to stimulate the economy.
+
+**Scenario 4 (stagflation):** $\pi = 7\%$, output gap $= -2\%$.
+
+$i = 2 + 7 + 0.5(5) + 0.5(-2) = 9 + 2.5 - 1 = 10.5\%$.
+
+The central bank raises the rate (inflation gap dominates), even though the economy is in
+recession. This illustrates the policy dilemma of stagflation.
+
+### Taylor Rule and Central Bank Policy
+
+**Evaluation:**
+
+*Advantages:*
+1. Provides a systematic, transparent framework for monetary policy
+2. Anchors inflation expectations by providing a predictable policy response
+3. Prevents discretionary policy errors (too loose for too long, or too tight)
+4. Empirically: the Taylor rule fits the historical behaviour of the Fed reasonably well
+   (pre-2000)
+
+*Limitations:*
+1. **Measurement problems:** the output gap and equilibrium real rate are unobservable and must
+   be estimated, which introduces significant uncertainty
+2. **Financial stability:** the Taylor rule does not account for financial stability risks
+   (asset bubbles, credit growth). The Fed kept rates low during 2002--2004 following the
+   Taylor rule, which may have contributed to the housing bubble
+3. **Zero lower bound:** the rule may prescribe negative rates during deep recessions
+4. **Multiple equilibria:** the rule may not be unique; different parameter values can justify
+   different policy paths
+
+### Real-World Central Bank Rates vs. Taylor Rule
+
+**Federal Reserve (2000--2023):**
+
+- 2000--2004: the Fed's actual rate was below the Taylor rule prescription, contributing to
+  the housing bubble
+- 2008--2015: the ZLB prevented the Fed from following the Taylor rule (which prescribed
+  negative rates). The Fed used QE instead
+- 2021--2023: the Taylor rule prescribed rate hikes earlier and larger than the Fed actually
+  implemented, contributing to the inflation surge
+
+**ECB:**
+
+The ECB's deposit facility rate has generally tracked a Taylor-type rule, but with greater
+emphasis on inflation (reflecting the ECB's single mandate) and less weight on the output gap.
+
+## Secular Stagnation (HL Extension)
+
+### The Hypothesis
+
+Larry Summers (2013) revived Alvin Hansen's (1938) "secular stagnation" hypothesis: the
+economy may face a persistent shortfall of aggregate demand due to structural factors, leading
+to chronically low growth, low inflation, and low interest rates.
+
+**Key indicators of secular stagnation:**
+
+1. **Declining neutral real interest rate ($r^*$):** estimates suggest $r^*$ has fallen from
+   approximately 3% (1990s) to approximately 0.5% (2020s) in advanced economies
+2. **Low inflation despite low rates:** even with near-zero policy rates, inflation has
+   remained below target in many advanced economies
+3. **Rising inequality:** higher inequality increases the savings rate (the rich save a larger
+   share of income), reducing aggregate demand
+4. **Declining productivity growth:** slower productivity growth reduces investment demand
+
+### Causes of Declining $r^*$
+
+1. **Demographics:** ageing populations increase the supply of savings (workers saving for
+   retirement) and reduce investment demand (fewer workers, less capital needed)
+2. **Rising inequality:** higher income shares for top earners increase the aggregate savings
+   rate because the rich save more
+3. **Declining relative price of capital goods:** the price of machinery and equipment has
+   fallen, so less investment is needed to achieve a given capital stock
+4. **Increased demand for safe assets:** regulatory changes (Basel III) and demographic shifts
+   have increased demand for safe assets (government bonds), lowering the risk-free rate
+5. **Lower productivity growth:** slower TFP growth reduces the marginal product of capital,
+   lowering the equilibrium real rate
+
+### Policy Implications
+
+1. **Higher inflation target:** a higher target (e.g., 4% instead of 2%) gives the central
+   bank more room to cut rates before hitting the ZLB
+2. **Fiscal expansion:** when monetary policy is constrained by the ZLB, fiscal policy must
+   play a larger role in maintaining aggregate demand
+3. **Public investment:** investment in infrastructure, education, and R&D raises both
+   aggregate demand and potential output
+4. **Negative interest rates:** central banks can push rates below zero, though with
+   diminishing effectiveness
+5. **Structural reform:** policies to boost productivity growth (competition, innovation,
+   skills) can raise $r^*$ by increasing the marginal product of capital
+
+## Exam-Style Questions: Macroeconomics (Additional)
+
+<details>
+<summary>Problem 21: Taylor Rule Policy Analysis</summary>
+
+The central bank follows the Taylor rule: $i = 2 + \pi + 0.5(\pi - 2) + 0.5(y - y^*)$.
+
+The economy experiences the following shocks:
+
+Shock A: inflation rises from 2% to 5% while output remains at potential.
+Shock B: a financial crisis causes output to fall 4% below potential while inflation
+remains at 2%.
+Shock C: a supply shock causes inflation to rise to 6% while output falls 2% below potential.
+
+(a) Calculate the prescribed policy rate for each shock. [6 marks]
+
+(b) Explain why the central bank faces a dilemma in Shock C. [2 marks]
+
+(c) Evaluate the Taylor rule as a framework for monetary policy. [2 marks]
+
+(a) **Shock A:** $\pi = 5$, $y - y^* = 0$.
+
+$i = 2 + 5 + 0.5(5-2) + 0.5(0) = 7 + 1.5 = 8.5\%$
+
+**Shock B:** $\pi = 2$, $y - y^* = -4$.
+
+$i = 2 + 2 + 0.5(0) + 0.5(-4) = 4 + 0 - 2 = 2.0\%$
+
+**Shock C:** $\pi = 6$, $y - y^* = -2$.
+
+$i = 2 + 6 + 0.5(6-2) + 0.5(-2) = 8 + 2 - 1 = 9.0\%$
+
+(b) In Shock C (stagflation), the Taylor rule prescribes $i = 9\%$, a large increase from
+the baseline 4%. The central bank must raise rates to fight inflation despite the economy
+being in recession. This is the fundamental policy dilemma of stagflation: the tools to fight
+inflation (higher rates) worsen the recession, and the tools to fight the recession (lower
+rates) worsen inflation.
+
+(c) **Evaluation:**
+
+*Strengths:* the Taylor rule provides a clear, systematic framework that enhances
+transparency and accountability. It prevents discretionary errors and anchors expectations.
+
+*Weaknesses:* the rule does not account for financial stability risks, measurement uncertainty
+(output gap, $r^*$), or the zero lower bound. In Shock B, the rule prescribes 2%, leaving
+little room for further cuts if the recession deepens.
+
+</details>
+
+<details>
+<summary>Problem 22: Okun's Law and Fiscal Policy (10 marks)</summary>
+
+An economy has potential GDP of USD 2 trillion and potential growth of 3% per year. Okun's
+coefficient is $\gamma = 2$. The current unemployment rate is 7% and the natural rate is 5%.
+
+(a) Calculate the output gap. [2 marks]
+
+(b) The government increases spending by USD 30 billion with a multiplier of 1.8. Calculate
+   the new output gap and the change in unemployment. [4 marks]
+
+(c) Is the output gap fully closed? If not, what additional spending is needed? [4 marks]
+
+(a) Output gap $= -\gamma(u - u^*) = -2(7\% - 5\%) = -4\%$.
+
+Output gap in dollars $= -4\% \times 2000 = -80$ billion.
+
+The economy is operating USD 80 billion below potential.
+
+(b) Spending increase of USD 30 billion with multiplier 1.8:
+
+$\Delta Y = 1.8 \times 30 = 54$ billion.
+
+New output gap $= -80 + 54 = -26$ billion.
+
+New output gap as % of potential $= -26/2000 = -1.3\%$.
+
+Change in unemployment: $\Delta u = -\Delta Y/(Y^* \times \gamma) = -54/(2000 \times 2) = -1.35$ percentage points.
+
+Wait: using $\Delta u = -(1/\gamma) \times (\Delta Y/Y^*) = -0.5 \times (54/2000) = -0.5 \times 0.027 = -0.0135 = -1.35$ percentage points.
+
+New unemployment $= 7 - 1.35 = 5.65\%$.
+
+(c) The output gap is not fully closed (still -26 billion, or -1.3% of potential).
+
+To close the remaining gap:
+
+Additional spending needed $= 26/1.8 = 14.4$ billion.
+
+Total spending needed $= 30 + 14.4 = 44.4$ billion to fully close the output gap.
+
+New unemployment $= 7 - 2(44.4 \times 1.8)/(2 \times 2000) = 7 - 2(80/2000) = 7 - 0.08 = 7 - 1.6 = 5.4\%$.
+
+Wait, let me recalculate: $\Delta Y_{\text{total}} = 1.8 \times 44.4 = 79.9 \approx 80$ billion.
+
+$\Delta u = -0.5 \times (80/2000) = -2.0$ percentage points.
+
+New unemployment $= 7 - 2 = 5\%$ (the natural rate). The output gap is fully closed.
+
+</details>

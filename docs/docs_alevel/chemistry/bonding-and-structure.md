@@ -584,6 +584,152 @@ $\mathrm{PH}_3$ cannot form hydrogen bonds (P is not electronegative enough, and
 
 </details>
 
+## Advanced Bonding and Structure
+
+### Intermolecular Forces: Detailed Comparison
+
+| Force | Strength ($\mathrm{kJ/mol}$) | Directionality | Example |
+|---|---|---|---|
+| London (dispersion) | $0.1$--$40$ | Non-directional | All molecules |
+| Dipole-dipole | $3$--$5$ | Between partial charges | $\mathrm{CH}_3\mathrm{Cl}$ |
+| Hydrogen bonding | $5$--$40$ | Along H-bond axis (linear) | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$ |
+| Ion-dipole | $5$--$50$ | Between ion and partial charge | $\mathrm{Na}^+$ with $\mathrm{H}_2\mathrm{O}$ |
+| Ionic bonding | $200$--$4000$ | Between ions in lattice | $\mathrm{NaCl}$ |
+| Covalent (single) | $200$--$400$ | Directional (along bond axis) | $\mathrm{C}-\mathrm{C}$ |
+| Metallic bonding | $100$--$500$ | Non-directional (sea of electrons) | Fe, Cu |
+
+### Electronegativity and Bond Polarity
+
+The Pauling electronegativity scale:
+
+| Element | Electronegativity |
+|---|---|
+| F | 3.98 (highest) |
+| O | 3.44 |
+| N | 3.04 |
+| Cl | 3.16 |
+| C | 2.55 |
+| H | 2.20 |
+| Si | 1.90 |
+| Na | 0.93 |
+| K | 0.82 |
+| Cs | 0.79 (lowest) |
+
+**Electronegativity trends:**
+- Increases across a period (increasing nuclear charge, decreasing atomic radius)
+- Decreases down a group (increasing atomic radius, increased shielding)
+
+### VSEPR Theory: Advanced Shapes
+
+**Molecules with lone pairs on the central atom:**
+
+| Electron domains | Lone pairs | Bonding pairs | Shape | Example |
+|---|---|---|---|---|
+| 3 | 1 | 2 | Bent ($\approx 104.5^\circ$) | $\mathrm{H}_2\mathrm{O}$, $\mathrm{SO}_2$ |
+| 4 | 2 | 2 | Bent ($\approx 104.5^\circ$) | $\mathrm{H}_2\mathrm{S}$ |
+| 4 | 1 | 3 | Trigonal pyramidal ($\approx 107^\circ$) | $\mathrm{NH}_3}$ |
+| 5 | 2 | 3 | T-shaped ($\approx 90^\circ$, $180^\circ$) | $\mathrm{ClF}_3$ |
+| 5 | 1 | 4 | See-saw | $\mathrm{SF}_4$ |
+| 6 | 2 | 4 | Square planar | $\mathrm{XeF}_4$ |
+| 6 | 1 | 5 | Square pyramidal | $\mathrm{BrF}_5$ |
+
+Lone pairs occupy more space than bonding pairs because they are held closer to the nucleus. This compresses the bond angles in molecules with lone pairs.
+
+### Hybridisation and Bonding
+
+| Hybridisation | Geometry | Bond angle | Example |
+|---|---|---|---|
+| $sp$ | Linear | $180^\circ$ | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$ |
+| $sp^2$ | Trigonal planar | $120^\circ$ | $\mathrm{BF}_3}$, $\mathrm{C}_6\mathrm{H}_6$ |
+| $sp^3$ | Tetrahedral | $109.5^\circ$ | $\mathrm{CH}_4}$, $\mathrm{NH}_3}$, $\mathrm{H}_2\mathrm{O}$ |
+| $sp^3d$ | Trigonal bipyramidal | $90^\circ$, $120^\circ$ | $\mathrm{PCl}_5}$ |
+| $sp^3d^2$ | Octahedral | $90^\circ$ | $\mathrm{SF}_6}$ |
+
+### Metallic Bonding and Properties
+
+The delocalised electron model explains the properties of metals:
+
+- **Electrical conductivity:** Delocalised electrons are free to move when a voltage is applied.
+- **Thermal conductivity:** Delocalised electrons transfer kinetic energy (heat) through the metal.
+- **Malleability and ductility:** Layers of metal cations can slide over each other without breaking the metallic bonding because the delocalised electrons adjust to maintain bonding.
+- **Melting and boiling points:** High, because the metallic bonds (electrostatic attraction between cations and delocalised electrons) are strong.
+
+### Giant Covalent Structures: Diamond vs Graphite
+
+**Diamond:** Each carbon is $sp^3$ hybridised, bonded tetrahedrally to four other carbons by strong covalent bonds ($347\,\mathrm{kJ/mol}$). This creates a rigid three-dimensional network. Diamond is the hardest known natural substance (hardness 10 on the Mohs scale). It is an electrical insulator because all valence electrons are localised in covalent bonds.
+
+**Graphite:** Each carbon is $sp^2$ hybridised, bonded to three other carbons in layers. The fourth valence electron is delocalised across the layer (one electron per carbon in the $p_z$ orbital), forming a sea of delocalised electrons within each layer. Graphite conducts electricity parallel to the layers (through the delocalised electrons) but not perpendicular to them. The layers are held together by weak London forces, allowing graphite to be a good lubricant. The interlayer distance ($335\,\mathrm{pm}$) is much larger than the C--C bond length within layers ($142\,\mathrm{pm}$).
+
+### Ionic Bonding: Lattice Energy and Melting Points
+
+The melting point of an ionic compound depends on the strength of the electrostatic attraction between ions, which is proportional to $\frac{z^+ z^-}{r_+ + r_-}$:
+
+| Compound | Charge product | Ionic radii sum (pm) | Melting point ($^\circ\mathrm{C}$) |
+|---|---|---|---|
+| $\mathrm{NaCl}$ | $1 \times 1$ | $102 + 181 = 283$ | 801 |
+| $\mathrm{MgO}$ | $2 \times 2$ | $72 + 140 = 212$ | 2852 |
+| $\mathrm{Al}_2\mathrm{O}_3$ | $3 \times 2$ | $54 + 140 = 194$ | 2072 |
+
+Higher charge and smaller ionic radii give stronger electrostatic attraction and higher melting points.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+Explain why the boiling point of water ($100^\circ\mathrm{C}$) is much higher than that of hydrogen sulphide ($-60^\circ\mathrm{C}$), even though $\mathrm{H}_2\mathrm{S}$ has a higher molar mass than $\mathrm{H}_2\mathrm{O}$.
+
+**Mark Scheme:**
+
+Water can form hydrogen bonds between molecules because oxygen is highly electronegative and has two lone pairs (2 marks). Each $\mathrm{H}_2\mathrm{O}$ molecule can form up to four hydrogen bonds (two as donor via H, two as acceptor via O), creating an extensive three-dimensional network of strong intermolecular forces (1 mark).
+
+$\mathrm{H}_2\mathrm{S}$ cannot form hydrogen bonds because sulphur is much less electronegative than oxygen and the S--H bond is only weakly polar (1 mark). $\mathrm{H}_2\mathrm{S}$ molecules interact only through weaker dipole-dipole forces and London forces (1 mark).
+
+</details>
+
+<details>
+<summary>Q2 (6 marks)</summary>
+
+Draw the dot-and-cross diagram for the carbonate ion, $\mathrm{CO}_3^{2-$. Explain the bond lengths observed in the ion.
+
+**Mark Scheme:**
+
+Dot-and-cross diagram (2 marks):
+- Central C atom with 4 electrons in outer shell.
+- Each O atom with 6 electrons in outer shell.
+- Two single C--O bonds and one C=O double bond.
+- The two O atoms with single bonds each have 3 lone pairs and 1 negative charge (shown as a bracket with 2- charge on the outside).
+
+All three C--O bonds have equal length, intermediate between a single ($154\,\mathrm{pm}$) and a double ($134\,\mathrm{pm}$) bond (2 marks). This is because the $\pi$ electrons of the C=O double bond are delocalised over all three oxygen atoms, giving each C--O bond a bond order of $4/3$ (1 mark). The resonance structures show the negative charge distributed over the three oxygen atoms (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (4 marks)</summary>
+
+Explain why sodium chloride has a high melting point, whereas chlorine is a gas at room temperature.
+
+**Mark Scheme:**
+
+Sodium chloride has a giant ionic lattice structure with strong electrostatic attraction between $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ ions throughout the crystal (2 marks). Melting requires overcoming these strong ionic bonds, which requires a large amount of thermal energy, giving a high melting point.
+
+Chlorine ($\mathrm{Cl}_2$) consists of simple covalent molecules held together by weak London dispersion forces (1 mark). Only a small amount of energy is needed to overcome these weak intermolecular forces, so chlorine is a gas at room temperature (1 mark).
+
+</details>
+
+<details>
+<summary>Q4 (5 marks)</summary>
+
+Explain, in terms of electronegativity, why the bond in $\mathrm{HCl}$ is polar covalent.
+
+**Mark Scheme:**
+
+Chlorine ($\chi = 3.16$) is significantly more electronegative than hydrogen ($\chi = 2.20$) (1 mark). The electronegativity difference ($\Delta\chi = 0.96$) is between 0.4 and 1.7, indicating a polar covalent bond (1 mark).
+
+The chlorine atom attracts the shared electron pair more strongly than hydrogen, creating a dipole: $\mathrm{H}^{\delta+}\text{-}\mathrm{Cl}^{\delta-}$ (2 marks). The bond is covalent (electrons are shared, not transferred) but polar (unequal sharing) (1 mark).
+
+</details>
+
 ---
 
 :::tip

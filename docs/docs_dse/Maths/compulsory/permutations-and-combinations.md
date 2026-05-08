@@ -562,3 +562,273 @@ $$420 - 120 = 300$$
 - **Binomial Theorem:** The connection between Pascal's triangle and binomial coefficients extends to the binomial expansion and the binomial distribution.
 - **Quadratics:** Factorials and combinatorial expressions sometimes simplify to quadratic forms. See [quadratics.md](quadratics)).
 
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+In DSE Maths Paper 2 (MC) you select the answer; in Paper 1 you must show full working. For counting problems, examiners expect:
+
+1. State whether order matters (permutation vs combination).
+2. For casework, clearly label each case and sum at the end.
+3. For complementary counting, explicitly state the total and the complement.
+4. Write the formula before substituting values, e.g., $\binom{n}{r} = \dfrac{n!}{r!(n-r)!}$.
+
+### Significant Figures
+
+Final numerical answers should typically be given to 3 significant figures unless the question specifies otherwise. Intermediate combinatorial values (factorials, binomial coefficients) are exact integers and must not be rounded.
+
+### Common DSE Question Types
+
+1. **Arrangement with restrictions** (gaps, adjacency, specific positions).
+2. **Selection with group constraints** (at least $k$ from a group, at most $m$ from another).
+3. **Binomial expansion** (coefficient of a specific term, constant term, middle term).
+4. **Distributing objects into boxes** (stars and bars, inclusion-exclusion).
+5. **Division into groups** (equal groups, indistinguishable groups).
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 15: Arrangements with vowel adjacency**
+
+In how many ways can the letters of the word "EQUATION" be arranged so that all three vowels (E, U, A, I, O -- five vowels) appear together?
+
+<details>
+<summary>Solution</summary>
+
+The word "EQUATION" has 8 distinct letters. The vowels are E, U, A, I, O (5 letters) and the consonants are Q, T, N (3 letters).
+
+Treat the 5 vowels as a single block. We have 4 units to arrange: {VOWELS}, Q, T, N.
+
+$$4! = 24$$
+
+Within the vowel block, the 5 vowels can be arranged in $5! = 120$ ways.
+
+$$24 \times 120 = 2880$$
+
+</details>
+
+**Worked Example 16: Selection with identical objects**
+
+A box contains 4 red balls and 6 blue balls. In how many ways can 5 balls be selected if at least 3 are red?
+
+<details>
+<summary>Solution</summary>
+
+| Red | Blue | Ways |
+|---|---|---|
+| 3 | 2 | $\binom{4}{3} \times \binom{6}{2} = 4 \times 15 = 60$ |
+| 4 | 1 | $\binom{4}{4} \times \binom{6}{1} = 1 \times 6 = 6$ |
+
+Total: $60 + 6 = 66$.
+
+Note: we cannot select 5 red balls since only 4 red balls exist.
+
+</details>
+
+**Worked Example 17: Circular arrangement with gender alternation**
+
+In how many ways can 4 men and 4 women sit around a round table if men and women must alternate?
+
+<details>
+<summary>Solution</summary>
+
+First, seat the 4 men around the table: $(4 - 1)! = 3! = 6$ ways (circular permutation).
+
+This creates 4 gaps between the men. Place the 4 women into these 4 gaps: $4! = 24$ ways.
+
+$$6 \times 24 = 144$$
+
+</details>
+
+**Worked Example 18: Number of divisors**
+
+Find the number of positive divisors of $N = 2^3 \times 3^2 \times 5$.
+
+<details>
+<summary>Solution</summary>
+
+A divisor of $N$ has the form $2^a \times 3^b \times 5^c$ where $0 \leq a \leq 3$, $0 \leq b \leq 2$, $0 \leq c \leq 1$.
+
+Number of choices for $a$: $4$ (i.e., $0, 1, 2, 3$).
+
+Number of choices for $b$: $3$ (i.e., $0, 1, 2$).
+
+Number of choices for $c$: $2$ (i.e., $0, 1$).
+
+$$4 \times 3 \times 2 = 24$$
+
+</details>
+
+**Worked Example 19: Binomial expansion with fractional index**
+
+Find the first three terms in the expansion of $(1 + 2x)^{-1/2}$ in ascending powers of $x$.
+
+<details>
+<summary>Solution</summary>
+
+Using the generalised binomial theorem:
+
+$$(1 + 2x)^{-1/2} = \binom{-1/2}{0} + \binom{-1/2}{1}(2x) + \binom{-1/2}{2}(2x)^2 + \cdots$$
+
+$$\binom{-1/2}{0} = 1$$
+
+$$\binom{-1/2}{1} = \frac{-1/2}{1} = -\frac{1}{2}$$
+
+$$\binom{-1/2}{2} = \frac{(-1/2)(-3/2)}{2!} = \frac{3}{8}$$
+
+Therefore:
+
+$$(1 + 2x)^{-1/2} = 1 - \frac{1}{2}(2x) + \frac{3}{8}(4x^2) + \cdots = 1 - x + \frac{3}{2}x^2 + \cdots$$
+
+</details>
+
+**Worked Example 20: Derangement**
+
+In how many ways can 5 letters be placed into 5 addressed envelopes so that no letter goes into the correct envelope?
+
+<details>
+<summary>Solution</summary>
+
+This is a derangement problem. The number of derangements of $n$ objects is:
+
+$$!n = n!\left(1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \cdots + \frac{(-1)^n}{n!}\right)$$
+
+For $n = 5$:
+
+$$!5 = 5!\left(1 - 1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{24} - \frac{1}{120}\right) = 120 \times \frac{44}{120} = 44$$
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** A committee of 5 is to be chosen from 7 men and 5 women. Find the number of ways to select the committee if it must contain exactly 2 women and the committee must include either Mr. A or Mr. B (or both).
+
+<details>
+<summary>Solution</summary>
+
+Total ways with exactly 2 women: $\binom{5}{2} \times \binom{7}{3} = 10 \times 35 = 350$.
+
+Subtract committees with neither Mr. A nor Mr. B: $\binom{5}{2} \times \binom{5}{3} = 10 \times 10 = 100$.
+
+$$350 - 100 = 250$$
+
+</details>
+
+**DSE Practice 2.** Find the coefficient of $x^3$ in the expansion of $(1 + x)(2 - x)^6$.
+
+<details>
+<summary>Solution</summary>
+
+First expand $(2 - x)^6$ up to $x^3$:
+
+$$(2 - x)^6 = 2^6 - \binom{6}{1}2^5 x + \binom{6}{2}2^4 x^2 - \binom{6}{3}2^3 x^3 + \cdots = 64 - 192x + 240x^2 - 160x^3 + \cdots$$
+
+Multiply by $(1 + x)$:
+
+$$(1 + x)(64 - 192x + 240x^2 - 160x^3) = 64 - 192x + 240x^2 - 160x^3 + 64x - 192x^2 + 240x^3 + \cdots$$
+
+$$= 64 - 128x + 48x^2 + 80x^3 + \cdots$$
+
+The coefficient of $x^3$ is $80$.
+
+</details>
+
+**DSE Practice 3.** 6 boys and 4 girls are to be seated in a row of 10 chairs. In how many ways can they be arranged if no two girls sit next to each other and the two youngest boys must sit at the two ends?
+
+<details>
+<summary>Solution</summary>
+
+The two youngest boys must sit at the ends: $2! = 2$ ways.
+
+The remaining 4 boys sit in the middle 8 positions: we choose 4 of the remaining 8 positions and arrange the 4 boys: $\binom{8}{4} \times 4! = 70 \times 24 = 1680$.
+
+The 4 boys in the middle create 5 gaps (including the gap between the two end boys and the first middle boy, etc.). We need to choose 4 of these 5 gaps for the girls: $\binom{5}{4} = 5$.
+
+Arrange the 4 girls: $4! = 24$.
+
+$$2 \times 1680 \times 5 \times 24 = 403200$$
+
+</details>
+
+**DSE Practice 4.** Find the term independent of $x$ in the expansion of $\left(x^2 + \dfrac{1}{x}\right)^3 \left(1 - \dfrac{1}{x}\right)^5$.
+
+<details>
+<summary>Solution</summary>
+
+First factor: $\left(x^2 + \dfrac{1}{x}\right)^3$. General term: $\binom{3}{r}(x^2)^{3-r}\!\left(\dfrac{1}{x}\right)^r = \binom{3}{r} x^{6-3r}$.
+
+For the power of $x$ to be $k$: $k = 6 - 3r$.
+
+- $r = 0$: $x^6$
+- $r = 1$: $x^3$
+- $r = 2$: $x^0$ (constant)
+- $r = 3$: $x^{-3}$
+
+Second factor: $(1 - x^{-1})^5$. General term: $\binom{5}{s}(-1)^s x^{-s}$.
+
+We need the total power of $x$ to be 0. From the first factor, take $x^{6-3r}$; from the second, take $(-1)^s x^{-s}$. Total power: $6 - 3r - s = 0$, i.e., $s = 6 - 3r$.
+
+Since $0 \leq s \leq 5$:
+
+- $r = 0$: $s = 6$ (reject, $s > 5$)
+- $r = 1$: $s = 3$: coefficient $= \binom{3}{1} \cdot \binom{5}{3}(-1)^3 = 3 \times 10 \times (-1) = -30$
+- $r = 2$: $s = 0$: coefficient $= \binom{3}{2} \cdot \binom{5}{0}(-1)^0 = 3 \times 1 = 3$
+
+Term independent of $x$: $-30 + 3 = -27$.
+
+</details>
+
+**DSE Practice 5.** Prove that the sum of all binomial coefficients $\binom{n}{0} + \binom{n}{1} + \cdots + \binom{n}{n} = 2^n$.
+
+<details>
+<summary>Solution</summary>
+
+Consider $(1 + 1)^n$. By the binomial theorem:
+
+$$(1 + 1)^n = \sum_{k=0}^{n} \binom{n}{k} 1^{n-k} \cdot 1^k = \sum_{k=0}^{n} \binom{n}{k}$$
+
+Therefore:
+
+$$\sum_{k=0}^{n} \binom{n}{k} = 2^n \qed$$
+
+</details>
+
+**DSE Practice 6.** A password consists of 4 characters. Each character is a letter (A to Z) or a digit (0 to 9). How many passwords contain at least one digit and at least one letter, if characters may be repeated?
+
+<details>
+<summary>Solution</summary>
+
+Total passwords (with repetition): $36^4 = 1679616$.
+
+All-letter passwords: $26^4 = 456976$.
+
+All-digit passwords: $10^4 = 10000$.
+
+Passwords with at least one digit and at least one letter:
+
+$$1679616 - 456976 - 10000 = 1212640$$
+
+</details>
+
+**DSE Practice 7.** In how many ways can 12 students be divided into 3 groups of 4 to work on 3 different projects?
+
+<details>
+<summary>Solution</summary>
+
+Choose 4 from 12 for Project 1: $\binom{12}{4} = 495$.
+
+Choose 4 from remaining 8 for Project 2: $\binom{8}{4} = 70$.
+
+The last 4 go to Project 3: $\binom{4}{4} = 1$.
+
+$$495 \times 70 \times 1 = 34650$$
+
+Note: we do NOT divide by $3!$ here because the projects are distinct (labelled), unlike the case of indistinguishable groups.
+
+</details>
+

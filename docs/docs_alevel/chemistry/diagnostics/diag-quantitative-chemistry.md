@@ -259,3 +259,31 @@ $$\text{CH}_3\text{COO}^-(aq) + \text{H}_2\text{O}(l) \rightleftharpoons \text{C
 This produces $\text{OH}^-$ ions, making the solution alkaline ($\text{pH} \gt 7$).
 
 The first equivalence point (at $10.0\,\text{cm}^3$) represents the point where all $\text{HCl}$ has been neutralised but the $\text{CH}_3\text{COOH}$ has not yet been titrated. The solution at this point contains $\text{CH}_3\text{COOH}$ and $\text{NaCl}$, so the pH is determined by the weak acid alone ($\text{pH}$ approximately equal to $\frac{1}{2}\text{p}K_a - \frac{1}{2}\log[\text{HA}]$).
+
+---
+
+### Additional Practice Problems
+
+#### UT-4: Percentage Yield in Multi-Step Synthesis
+
+**Question:** In a three-step synthesis, the percentage yields are 85%, 72%, and 90% respectively. If $10.0\,\mathrm{g}$ of starting material is used, calculate the mass of final product obtained.
+
+**Solution:**
+
+Overall yield $= 0.85 \times 0.72 \times 0.90 = 0.551 = 55.1\%$ (1 mark).
+
+Mass of final product $= 10.0 \times 0.551 = 5.51\,\mathrm{g}$ (assuming 1:1 molar ratio in each step; if the molar ratios differ, the calculation must account for the molar mass changes at each step) (1 mark).
+
+This illustrates the importance of high yields in each step of a multi-step synthesis. Even with relatively good individual yields (72--90%), the overall yield drops to 55%, meaning nearly half the starting material is lost.
+
+#### UT-5: Ideal Gas Equation Unit Consistency
+
+**Question:** A student calculates the volume of gas produced using $V = nRT/p$ with $n = 0.050\,\mathrm{mol}$, $R = 8.314$, $T = 298$, and $p = 100$. They obtain $V = 123.7$. Identify the error and give the correct answer in $\mathrm{cm}^3$.
+
+**Solution:**
+
+The student used $p = 100$ without units. If they intended $100\,\mathrm{kPa}$, they needed to convert to pascals: $p = 100000\,\mathrm{Pa}$ (1 mark).
+
+$$V = \frac{nRT}{p} = \frac{0.050 \times 8.314 \times 298}{100000} = \frac{123.9}{100000} = 1.24 \times 10^{-3}\,\mathrm{m}^3 = 1.24\,\mathrm{dm}^3 = 1240\,\mathrm{cm}^3$$
+
+The student's answer of $123.7$ is actually correct numerically but lacks units. If they meant $\mathrm{dm}^3$, their answer is close. The key error was likely not tracking units through the calculation (1 mark).

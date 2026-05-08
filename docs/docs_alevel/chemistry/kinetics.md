@@ -704,6 +704,185 @@ $$
 
 </details>
 
+## Advanced Kinetics: Rate-Determining Step and Mechanisms
+
+### Rate-Determining Step
+
+In a multi-step reaction, the slowest step determines the overall rate. The rate equation reflects the molecularity of the rate-determining step.
+
+**Example:** The reaction between propanone and iodine in acidic solution:
+
+$$\mathrm{CH}_3\mathrm{COCH}_3 + \mathrm{I}_2 \to \mathrm{CH}_2\mathrm{ICOCH}_3 + \mathrm{HI}$$
+
+The observed rate equation is: Rate $= k[\mathrm{CH}_3\mathrm{COCH}_3}][\mathrm{H}^+]$
+
+Iodine does not appear in the rate equation, despite being a reactant. This means iodine participates in a fast step after the rate-determining step.
+
+**Proposed mechanism:**
+
+Step 1 (slow, rate-determining): Protonation of propanone:
+
+$$\mathrm{CH}_3\mathrm{COCH}_3 + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{C(OH}^+)\mathrm{CH}_3$$
+
+Step 2 (fast): Enolisation:
+
+$$\mathrm{CH}_3\mathrm{C(OH}^+)\mathrm{CH}_3 \to \mathrm{CH}_2=\mathrm{C(OH})\mathrm{CH}_3 + \mathrm{H}^+$$
+
+Step 3 (fast): Reaction with iodine:
+
+$$\mathrm{CH}_2=\mathrm{C(OH})\mathrm{CH}_3 + \mathrm{I}_2 \to \mathrm{CH}_2\mathrm{ICOCH}_3 + \mathrm{HI}$$
+
+The rate equation (Rate $= k[\mathrm{CH}_3\mathrm{COCH}_3}][\mathrm{H}^+]$) matches step 1, confirming it is the rate-determining step.
+
+### Steady-State Approximation (Brief Introduction)
+
+For some mechanisms, the rate equation derived from the rate-determining step does not match the experimental data because an intermediate accumulates. The steady-state approximation assumes that the concentration of the intermediate remains constant (its rate of formation equals its rate of consumption).
+
+**Example:** The decomposition of $\mathrm{N}_2\mathrm{O}_5$:
+
+$$2\mathrm{N}_2\mathrm{O}_5 \to 4\mathrm{NO}_2 + \mathrm{O}_2$$
+
+Mechanism:
+
+Step 1: $\mathrm{N}_2\mathrm{O}_5 \rightleftharpoons \mathrm{NO}_2 + \mathrm{NO}_3$ (fast equilibrium, $K_1$)
+
+Step 2: $\mathrm{NO}_2 + \mathrm{NO}_3 \to \mathrm{NO} + \mathrm{O}_2 + \mathrm{NO}_2$ (slow)
+
+Step 3: $\mathrm{NO} + \mathrm{NO}_3 \to 2\mathrm{NO}_2$ (fast)
+
+Applying the steady-state approximation to the intermediates $\mathrm{NO}_2$ and $\mathrm{NO}_3$ gives the rate equation:
+
+$$\text{Rate} = k[\mathrm{N}_2\mathrm{O}_5]$$
+
+This is first-order with respect to $\mathrm{N}_2\mathrm{O}_5$, consistent with experimental observation.
+
+### Catalysis in Detail
+
+**Heterogeneous catalysis:** The catalyst provides a surface on which reactant molecules adsorb. Adsorption weakens the bonds within the reactant molecules, lowering the activation energy. Examples:
+
+- Haber process: Iron catalyst for $\mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons 2\mathrm{NH}_3$
+- Contact process: $\mathrm{V}_2\mathrm{O}_5$ catalyst for $2\mathrm{SO}_2 + \mathrm{O}_2 \rightleftharpoons 2\mathrm{SO}_3$
+
+**Homogeneous catalysis:** The catalyst is in the same phase as the reactants. Example:
+
+- Acid-catalysed esterification: $\mathrm{H}^+$ catalyses $\mathrm{CH}_3\mathrm{COOH} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \rightleftharpoons \mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O}$
+
+**Autocatalysis:** A product of the reaction acts as a catalyst for the reaction. Example:
+
+- The reaction $\mathrm{MnO}_4^- + 5\mathrm{Fe}^{2+} + 8\mathrm{H}^+ \to \mathrm{Mn}^{2+} + 5\mathrm{Fe}^{3+} + 4\mathrm{H}_2\mathrm{O}$ is catalysed by $\mathrm{Mn}^{2+}$ ions, which are produced in the reaction. The rate initially increases as more $\mathrm{Mn}^{2+}$ accumulates, then decreases as reactants are consumed.
+
+### Practical Techniques: Determining Rate Equations (AQA RP 8)
+
+**Method 1: Initial rates method.**
+
+1. Measure the initial rate at several different starting concentrations of one reactant (keeping others constant).
+2. Plot initial rate vs concentration.
+3. If the graph is linear, the reaction is first-order with respect to that reactant.
+4. If the graph is a horizontal line, the reaction is zero-order.
+
+**Method 2: Continuous monitoring.**
+
+Monitor the concentration of a reactant or product over time. Common techniques:
+- **Colorimetry:** Measure absorbance of a coloured species at regular intervals.
+- **Gas collection:** Measure the volume of gas produced at regular intervals.
+- **Titration:** Quench aliquots at regular intervals and titrate to determine concentration.
+- **pH measurement:** Monitor pH for reactions involving $\mathrm{H}^+$ or $\mathrm{OH}^-$.
+
+**Method 3: Half-life method.**
+
+For a first-order reaction, the half-life is constant and independent of concentration. Plot concentration vs time and measure the time for the concentration to halve at several points. If the half-life is constant, the reaction is first-order.
+
+$$t_{1/2} = \frac{\ln 2}{k} = \frac{0.693}{k}$$
+
+### Arrhenius Applications: Catalyst Effect on Activation Energy
+
+**Worked Example:** A reaction has $E_a = 75\,\mathrm{kJ/mol}$ without a catalyst and $E_a = 50\,\mathrm{kJ/mol}$ with a catalyst. Calculate the ratio of rate constants at $298\,\mathrm{K}$, assuming the pre-exponential factor $A$ is unchanged.
+
+$$\frac{k_\text{cat}}{k_\text{uncat}} = \frac{Ae^{-E_{a,\text{cat}}/RT}}{Ae^{-E_{a,\text{uncat}}/RT}} = e^{(E_{a,\text{uncat}} - E_{a,\text{cat}})/RT}$$
+
+$$= e^{(75000 - 50000)/(8.314 \times 298)} = e^{25000/2478} = e^{10.09} = 2.4 \times 10^4$$
+
+The catalyst increases the rate by a factor of approximately 24,000 at $298\,\mathrm{K}$.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (5 marks)</summary>
+
+The reaction $\mathrm{A} + 2\mathrm{B} \to \mathrm{C}$ was studied at $298\,\mathrm{K}$. The following initial rate data were obtained:
+
+| $[\mathrm{A}]$ ($\mathrm{mol\,dm^{-3}}$) | $[\mathrm{B}]$ ($\mathrm{mol\,dm^{-3}}$) | Initial rate ($\mathrm{mol\,dm^{-3}\,s^{-1}}$) |
+|---|---|---|
+| 0.10 | 0.10 | $1.2 \times 10^{-4}$ |
+| 0.20 | 0.10 | $2.4 \times 10^{-4}$ |
+| 0.10 | 0.20 | $4.8 \times 10^{-4}$ |
+
+(a) Deduce the rate equation. (3 marks)
+
+(b) Calculate the value of the rate constant, including units. (2 marks)
+
+**Mark Scheme:**
+
+(a) Comparing experiments 1 and 2: $[\mathrm{A}]$ doubles, rate doubles. First-order with respect to $\mathrm{A}$ (1 mark).
+
+Comparing experiments 1 and 3: $[\mathrm{B}]$ doubles, rate quadruples ($\times 4$). Second-order with respect to $\mathrm{B}$ (1 mark).
+
+Rate equation: Rate $= k[\mathrm{A}][\mathrm{B}]^2$ (1 mark).
+
+(b) Using experiment 1: $1.2 \times 10^{-4} = k \times 0.10 \times (0.10)^2 = k \times 0.001$
+
+$k = \frac{1.2 \times 10^{-4}}{0.001} = 0.12\,\mathrm{mol}^{-2}\,\mathrm{dm}^6\,\mathrm{s}^{-1}$ (1 mark for calculation, 1 mark for units).
+
+</details>
+
+<details>
+<summary>Q2 (4 marks)</summary>
+
+Explain the term activation energy. Describe how a catalyst increases the rate of a chemical reaction.
+
+**Mark Scheme:**
+
+Activation energy is the minimum energy that colliding particles must have for a reaction to occur (1 mark). It is the energy difference between the reactants and the transition state (1 mark).
+
+A catalyst provides an alternative reaction pathway with a lower activation energy (1 mark). More particles have energy $\geq E_a$ (lower threshold), so a greater proportion of collisions are successful, increasing the rate. The catalyst is not consumed in the reaction (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (5 marks)</summary>
+
+For a first-order reaction, the concentration of reactant falls from $0.200\,\mathrm{mol\,dm^{-3}}$ to $0.100\,\mathrm{mol\,dm^{-3}}$ in 120 s.
+
+(a) Calculate the rate constant. (2 marks)
+
+(b) Calculate the half-life. (1 mark)
+
+(c) Calculate the time for the concentration to fall to $0.025\,\mathrm{mol\,dm^{-3}$. (2 marks)
+
+**Mark Scheme:**
+
+(a) For first-order: $\ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt$
+
+$\ln(0.100) = \ln(0.200) - k \times 120$
+
+$-2.303 = -1.609 - 120k$
+
+$120k = 1.609 - 2.303 = -0.694$
+
+$k = \frac{0.694}{120} = 5.78 \times 10^{-3}\,\mathrm{s}^{-1}$ (1 mark for equation, 1 mark for value.)
+
+(b) $t_{1/2} = \frac{\ln 2}{k} = \frac{0.693}{5.78 \times 10^{-3}} = 120\,\mathrm{s}$ (1 mark.)
+
+(c) $0.025\,\mathrm{mol\,dm^{-3} = 0.200 \times \left(\frac{1}{2}\right)^n$ where $n$ is the number of half-lives.
+
+$\frac{0.025}{0.200} = 0.125 = \left(\frac{1}{2}\right)^3$, so $n = 3$ half-lives.
+
+$t = 3 \times 120 = 360\,\mathrm{s}$ (2 marks.)
+
+</details>
+
+---
+
 :::tip
 Diagnostic Test
 Ready to test your understanding of **Chemical Kinetics**? The [diagnostic test](/docs/alevel/chemistry/diagnostics/diag-kinetics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.

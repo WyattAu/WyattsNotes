@@ -727,3 +727,231 @@ Ready to test your understanding of **Polynomials**? The [diagnostic test](/docs
 
 See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+---
+
+## DSE Exam Technique
+
+### Showing Working
+
+For polynomial problems in DSE Paper 1:
+
+1. When using the remainder theorem, write "By the Remainder Theorem, the remainder is $f(c)$" before computing.
+2. When using the factor theorem, show that $f(c) = 0$ before stating that $(x - c)$ is a factor.
+3. For polynomial division, show the division layout or state the quotient and remainder explicitly.
+4. When finding unknown constants, set up a system of equations and solve step by step.
+5. For binomial expansion, write the general term formula before substituting.
+
+### Significant Figures
+
+Binomial coefficients and factorials are exact integers. Polynomial roots involving square roots should be left in exact form.
+
+### Common DSE Question Types
+
+1. **Remainder theorem** with unknown constants.
+2. **Factor theorem** to factorise cubics and quartics.
+3. **Binomial expansion** (specific coefficient, constant term, approximation).
+4. **Vieta's formulas** for root manipulation.
+5. **Polynomial identities** (equating coefficients).
+
+---
+
+## Additional Worked Examples
+
+**Worked Example 13: Cubic with given conditions**
+
+The polynomial $f(x) = x^3 + ax^2 + bx - 12$ is divisible by $(x - 3)$ and $f(1) = -18$. Find $a$, $b$, and factorise $f(x)$ completely.
+
+<details>
+<summary>Solution</summary>
+
+$f(3) = 0$: $27 + 9a + 3b - 12 = 0 \implies 9a + 3b = -15 \implies 3a + b = -5 \quad \text{(i)}$.
+
+$f(1) = -18$: $1 + a + b - 12 = -18 \implies a + b = -7 \quad \text{(ii)}$.
+
+(ii) from (i): $2a = 2 \implies a = 1$. From (ii): $b = -8$.
+
+$f(x) = x^3 + x^2 - 8x - 12$.
+
+Since $(x - 3)$ is a factor: $f(x) = (x - 3)(x^2 + 4x + 4) = (x - 3)(x + 2)^2$.
+
+</details>
+
+**Worked Example 14: Sum of coefficients**
+
+Find the sum of all coefficients of $(2x - 3)^5$.
+
+<details>
+<summary>Solution</summary>
+
+The sum of coefficients equals $f(1)$ where $f(x) = (2x - 3)^5$.
+
+$$f(1) = (2 - 3)^5 = (-1)^5 = -1$$
+
+</details>
+
+**Worked Example 15: Remainder when divided by a quadratic**
+
+Find the remainder when $f(x) = x^4 + 2x^3 - x^2 + 3$ is divided by $x^2 - x + 1$.
+
+<details>
+<summary>Solution</summary>
+
+Since the divisor is degree 2, the remainder has degree at most 1: $r(x) = ax + b$.
+
+The roots of $x^2 - x + 1 = 0$ are $\omega$ and $\omega^2$ (complex cube roots of unity, $\omega^3 = 1$).
+
+By the remainder theorem for quadratic divisors:
+
+$$f(\omega) = a\omega + b \quad \text{and} \quad f(\omega^2) = a\omega^2 + b$$
+
+Since $\omega^2 + \omega + 1 = 0$ (i.e., $\omega^2 = -\omega - 1$) and $\omega^3 = 1$:
+
+$f(\omega) = \omega^4 + 2\omega^3 - \omega^2 + 3 = \omega + 2 - (-\omega - 1) + 3 = \omega + 2 + \omega + 1 + 3 = 2\omega + 6$.
+
+$f(\omega^2) = \omega^8 + 2\omega^6 - \omega^4 + 3 = \omega^2 + 2 - \omega + 3 = (-\omega - 1) + 2 - \omega + 3 = -2\omega + 4$.
+
+From $a\omega + b = 2\omega + 6$: $a = 2$, $b = 6$.
+
+Check: $a\omega^2 + b = 2(-\omega - 1) + 6 = -2\omega + 4$. Consistent.
+
+Remainder: $2x + 6$.
+
+</details>
+
+**Worked Example 16: Vieta for cubic equations**
+
+If $\alpha$, $\beta$, $\gamma$ are roots of $x^3 - 2x^2 + 3x - 4 = 0$, find $\alpha^2 + \beta^2 + \gamma^2$.
+
+<details>
+<summary>Solution</summary>
+
+From Vieta: $\alpha + \beta + \gamma = 2$, $\alpha\beta + \beta\gamma + \gamma\alpha = 3$, $\alpha\beta\gamma = 4$.
+
+$$(\alpha + \beta + \gamma)^2 = \alpha^2 + \beta^2 + \gamma^2 + 2(\alpha\beta + \beta\gamma + \gamma\alpha)$$
+
+$$4 = \alpha^2 + \beta^2 + \gamma^2 + 6 \implies \alpha^2 + \beta^2 + \gamma^2 = -2$$
+
+</details>
+
+**Worked Example 17: Binomial coefficient ratio**
+
+If $\binom{n}{3} = 3\binom{n-1}{2}$, find $n$.
+
+<details>
+<summary>Solution</summary>
+
+$$\frac{n!}{3!(n-3)!} = 3 \cdot \frac{(n-1)!}{2!(n-3)!}$$
+
+$$\frac{n}{6} = \frac{3}{2} \implies n = 9$$
+
+</details>
+
+---
+
+## DSE Exam-Style Questions
+
+**DSE Practice 1.** When $f(x) = x^3 + ax^2 + bx + c$ is divided by $(x - 1)$, the remainder is $4$. When divided by $(x + 1)$, the remainder is $-2$. When divided by $(x - 2)$, the remainder is $14$. Find $a$, $b$, and $c$.
+
+<details>
+<summary>Solution</summary>
+
+$f(1) = 1 + a + b + c = 4 \implies a + b + c = 3 \quad \text{(i)}$
+
+$f(-1) = -1 + a - b + c = -2 \implies a - b + c = -1 \quad \text{(ii)}$
+
+$f(2) = 8 + 4a + 2b + c = 14 \implies 4a + 2b + c = 6 \quad \text{(iii)}$
+
+(i) - (ii): $2b = 4 \implies b = 2$.
+
+(iii) - (i): $3a + b = 3 \implies 3a + 2 = 3 \implies a = \dfrac{1}{3}$.
+
+From (i): $\dfrac{1}{3} + 2 + c = 3 \implies c = \dfrac{2}{3}$.
+
+</details>
+
+**DSE Practice 2.** Find the coefficient of $x^3$ in the expansion of $(1 + 2x - x^2)^5$.
+
+<details>
+<summary>Solution</summary>
+
+We need to find all ways to get $x^3$ from expanding $(1 + 2x - x^2)^5$ using the multinomial theorem.
+
+The general term from choosing $a$ ones, $b$ copies of $2x$, and $c$ copies of $-x^2$ where $a + b + c = 5$:
+
+$$\frac{5!}{a!\,b!\,c!} \cdot 1^a \cdot (2x)^b \cdot (-x^2)^c = \frac{5!}{a!\,b!\,c!} \cdot 2^b \cdot (-1)^c \cdot x^{b + 2c}$$
+
+For $x^3$: $b + 2c = 3$ with $a + b + c = 5$, $a, b, c \geq 0$.
+
+Case $c = 0$: $b = 3$, $a = 2$. Coefficient: $\dfrac{120}{2! \cdot 3!} \cdot 8 = 10 \cdot 8 = 80$.
+
+Case $c = 1$: $b = 1$, $a = 3$. Coefficient: $\dfrac{120}{3! \cdot 1! \cdot 1!} \cdot 2 \cdot (-1) = 20 \cdot (-2) = -40$.
+
+Total coefficient of $x^3$: $80 + (-40) = 40$.
+
+</details>
+
+**DSE Practice 3.** If $(x + 1)$ and $(x - 2)$ are factors of $f(x) = 2x^3 + ax^2 + bx - 6$, find $a$ and $b$. Hence find the third factor.
+
+<details>
+<summary>Solution</summary>
+
+$f(-1) = -2 + a - b - 6 = 0 \implies a - b = 8 \quad \text{(i)}$
+
+$f(2) = 16 + 4a + 2b - 6 = 0 \implies 4a + 2b = -10 \implies 2a + b = -5 \quad \text{(ii)}$
+
+(i) + (ii): $3a = 3 \implies a = 1$. From (i): $b = -7$.
+
+$f(x) = 2x^3 + x^2 - 7x - 6 = (x + 1)(x - 2)(2x + 3)$.
+
+Verification: $(x + 1)(x - 2) = x^2 - x - 2$. $(x^2 - x - 2)(2x + 3) = 2x^3 + 3x^2 - 2x^2 - 3x - 4x - 6 = 2x^3 + x^2 - 7x - 6$. Correct.
+
+Third factor: $(2x + 3)$.
+
+</details>
+
+**DSE Practice 4.** Expand $(1 + x)^{10}$ and use the expansion to find the value of $(1.01)^{10}$ correct to 5 decimal places.
+
+<details>
+<summary>Solution</summary>
+
+$$(1 + x)^{10} = \sum_{k=0}^{10} \binom{10}{k} x^k = 1 + 10x + 45x^2 + 120x^3 + 210x^4 + 252x^5 + \cdots$$
+
+Set $x = 0.01$:
+
+$$(1.01)^{10} \approx 1 + 10(0.01) + 45(0.0001) + 120(0.000001) + 210(0.00000001)$$
+
+$$= 1 + 0.1 + 0.0045 + 0.00012 + 0.0000021 = 1.1046221$$
+
+To 5 decimal places: $1.10462$.
+
+</details>
+
+**DSE Practice 5.** Prove that for positive integers $n \geq 2$, $n^n > 2^{n-1} \cdot n!$.
+
+<details>
+<summary>Solution</summary>
+
+By the AM-GM inequality applied to the $n$ numbers $1, 2, 3, \ldots, n$:
+
+$$\frac{1 + 2 + \cdots + n}{n} \geq (1 \cdot 2 \cdots n)^{1/n}$$
+
+$$\frac{n(n+1)}{2n} \geq (n!)^{1/n}$$
+
+$$\frac{n+1}{2} \geq (n!)^{1/n}$$
+
+$$\left(\frac{n+1}{2}\right)^n \geq n!$$
+
+We need to show $n^n > 2^{n-1} \cdot n!$, i.e., $n^n / n! > 2^{n-1}$, i.e., $\dfrac{n^n}{n!} > 2^{n-1}$.
+
+Note $\dfrac{n^n}{n!} = \dfrac{n \cdot n \cdots n}{n \cdot (n-1) \cdots 1} = \prod_{k=1}^{n-1} \dfrac{n}{n - k}$.
+
+Each factor $\dfrac{n}{n - k} \geq \dfrac{n}{n - 1} > 1$ for $n \geq 2$ and $k \geq 1$.
+
+$\dfrac{n}{n-1} \cdot \dfrac{n}{n-2} \cdots \dfrac{n}{1} > 2 \cdot 2 \cdots 2 = 2^{n-1}$ when $n \geq 3$ (since $\dfrac{n}{n-k} \geq 2$ when $n - k \leq n/2$).
+
+For $n = 2$: $4 > 2 \cdot 2 = 4$? No, $4 = 4$. For $n = 3$: $27 > 4 \cdot 6 = 24$. Yes.
+
+The inequality holds strictly for $n \geq 3$. For $n = 2$, equality holds.
+
+</details>

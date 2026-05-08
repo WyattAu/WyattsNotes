@@ -504,3 +504,287 @@ The second electron affinity is always endothermic: adding an electron to a nega
 | $\mathrm{O}^-(g) + e^- \to \mathrm{O}^{2-}(g)$ | $+798$ |
 
 The large positive second EA of oxygen ($+798\,\mathrm{kJ/mol}$) is a major reason why the formation of ionic oxides is less exothermic than expected, and why many metal oxides have significant covalent character.
+
+## Worked Examples: Advanced Born-Haber Calculations
+
+### Example 1: Born-Haber Cycle for CaCl2
+
+**Calculate the lattice enthalpy of $\mathrm{CaCl}_2$.**
+
+Given data:
+- $\Delta H_f^\circ(\mathrm{CaCl}_2) = -796\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{Ca}) = +178\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{Cl}) = +122\,\mathrm{kJ/mol}$ (per mole of Cl atoms, i.e. $\frac{1}{2}\Delta H_\mathrm{BE}(\mathrm{Cl}_2)$)
+- $\mathrm{IE}_1(\mathrm{Ca}) = +590\,\mathrm{kJ/mol}$
+- $\mathrm{IE}_2(\mathrm{Ca}) = +1145\,\mathrm{kJ/mol}$
+- $\mathrm{EA}_1(\mathrm{Cl}) = -349\,\mathrm{kJ/mol}$
+
+**Step 1: Write out all the enthalpy changes.**
+
+For $\mathrm{CaCl}_2$: 1 Ca atom and 2 Cl atoms are involved.
+
+- Atomisation of Ca: $+178\,\mathrm{kJ/mol}$ (1 mole)
+- Atomisation of Cl: $+122\,\mathrm{kJ/mol}$ (2 moles): $2 \times 122 = +244\,\mathrm{kJ/mol}$
+- First IE of Ca: $+590\,\mathrm{kJ/mol}$
+- Second IE of Ca: $+1145\,\mathrm{kJ/mol}$
+- First EA of Cl (2 moles): $2 \times (-349) = -698\,\mathrm{kJ/mol}$
+
+**Step 2: Apply Hess's Law.**
+
+$$\Delta H_f^\circ = \Delta H_\mathrm{at}(\mathrm{Ca}) + 2\Delta H_\mathrm{at}(\mathrm{Cl}) + \mathrm{IE}_1 + \mathrm{IE}_2 + 2\mathrm{EA}_1(\mathrm{Cl}) + \Delta H_\mathrm{lat}^\circ$$
+
+$$\Delta H_\mathrm{lat}^\circ = \Delta H_f^\circ - \Delta H_\mathrm{at}(\mathrm{Ca}) - 2\Delta H_\mathrm{at}(\mathrm{Cl}) - \mathrm{IE}_1 - \mathrm{IE}_2 - 2\mathrm{EA}_1(\mathrm{Cl})$$
+
+$$\Delta H_\mathrm{lat}^\circ = -796 - 178 - 244 - 590 - 1145 - (-698)$$
+
+$$\Delta H_\mathrm{lat}^\circ = -796 - 178 - 244 - 590 - 1145 + 698 = -2255\,\mathrm{kJ/mol}$$
+
+### Example 2: Born-Haber Cycle for Al2O3
+
+**Calculate the lattice enthalpy of $\mathrm{Al}_2\mathrm{O}_3$.**
+
+Given data:
+- $\Delta H_f^\circ(\mathrm{Al}_2\mathrm{O}_3) = -1676\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{Al}) = +330\,\mathrm{kJ/mol}$ (per atom)
+- $\Delta H_\mathrm{at}^\circ(\mathrm{O}) = +249\,\mathrm{kJ/mol}$ (per atom)
+- $\mathrm{IE}_1(\mathrm{Al}) = +578\,\mathrm{kJ/mol}$
+- $\mathrm{IE}_2(\mathrm{Al}) = +1817\,\mathrm{kJ/mol}$
+- $\mathrm{IE}_3(\mathrm{Al}) = +2745\,\mathrm{kJ/mol}$
+- $\mathrm{EA}_1(\mathrm{O}) = -141\,\mathrm{kJ/mol}$
+- $\mathrm{EA}_2(\mathrm{O}) = +798\,\mathrm{kJ/mol}$
+
+**Step 1: Sum all contributions except lattice enthalpy.**
+
+For $\mathrm{Al}_2\mathrm{O}_3$: 2 Al atoms and 3 O atoms.
+
+$$\text{Sum} = 2(330) + 3(249) + 2(578 + 1817 + 2745) + 3(-141 + 798)$$
+
+$$= 660 + 747 + 2(5140) + 3(657)$$
+
+$$= 660 + 747 + 10280 + 1971 = 13658\,\mathrm{kJ/mol}$$
+
+**Step 2: Apply Hess's Law.**
+
+$$\Delta H_\mathrm{lat}^\circ = \Delta H_f^\circ - \text{Sum} = -1676 - 13658 = -15334\,\mathrm{kJ/mol}$$
+
+The extremely exothermic lattice enthalpy of $\mathrm{Al}_2\mathrm{O}_3$ reflects the high charges on the ions ($\mathrm{Al}^{3+}$ and $\mathrm{O}^{2-}$) and their relatively small ionic radii. This explains the very high melting point ($2072^\circ\mathrm{C}$) and hardness of aluminium oxide.
+
+### Example 3: Comparing Lattice Enthalpies -- Group 2 Chlorides
+
+| Compound | $\Delta H_\mathrm{lat}^\circ$ ($\mathrm{kJ/mol}$) | Cation radius (pm) |
+|---|---|---|
+| $\mathrm{BeCl}_2$ | $-3017$ | 45 |
+| $\mathrm{MgCl}_2$ | $-2526$ | 72 |
+| $\mathrm{CaCl}_2$ | $-2255$ | 100 |
+| $\mathrm{SrCl}_2$ | $-2153$ | 118 |
+| $\mathrm{BaCl}_2$ | $-2056$ | 135 |
+
+**Trend analysis:** The lattice enthalpy becomes less exothermic down Group 2 as the cation radius increases. The electrostatic attraction between the cation and the chloride ions decreases with increasing distance (the $1/r$ term in the Born-Lande equation). The anion ($\mathrm{Cl}^-$, $r = 181\,\mathrm{pm}$) is constant, so the trend is driven entirely by the changing cation size.
+
+### Example 4: Enthalpy of Solution Calculation
+
+**Calculate the enthalpy of solution of $\mathrm{CaF}_2$.**
+
+Given:
+- $\Delta H_\mathrm{lat}^\circ(\mathrm{CaF}_2) = -2635\,\mathrm{kJ/mol}$ (lattice formation, so dissociation = $+2635$)
+- $\Delta H_\mathrm{hyd}^\circ(\mathrm{Ca}^{2+}) = -1650\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{hyd}^\circ(\mathrm{F}^-) = -515\,\mathrm{kJ/mol}$
+
+$$\Delta H_\mathrm{sol}^\circ = \Delta H_\mathrm{lat,diss}^\circ + \Delta H_\mathrm{hyd}^\circ(\mathrm{Ca}^{2+}) + 2\Delta H_\mathrm{hyd}^\circ(\mathrm{F}^-)$$
+
+$$\Delta H_\mathrm{sol}^\circ = +2635 + (-1650) + 2(-515) = 2635 - 1650 - 1030 = -45\,\mathrm{kJ/mol}$$
+
+The enthalpy of solution is exothermic ($-45\,\mathrm{kJ/mol}$), which is consistent with the high solubility of $\mathrm{CaF}_2$ in acidic solution (the $\mathrm{F}^-$ is removed as $\mathrm{HF}$, shifting the equilibrium).
+
+### Example 5: Using Born-Haber Data to Determine Covalent Character
+
+**The experimental lattice enthalpy of $\mathrm{AgI}$ is $-889\,\mathrm{kJ/mol}$. The theoretical (Born-Lande) value is $-795\,\mathrm{kJ/mol}$. Account for the difference.**
+
+Wait -- here the experimental value is MORE exothermic than the theoretical. This is unusual. Let me reconsider.
+
+For $\mathrm{AgI}$:
+- Experimental $\Delta H_\mathrm{lat}^\circ = -889\,\mathrm{kJ/mol}$
+- Theoretical $\Delta H_\mathrm{lat}^\circ = -795\,\mathrm{kJ/mol}$
+
+The experimental value is more exothermic by $94\,\mathrm{kJ/mol}$. This indicates that additional bonding interactions exist beyond the purely ionic model. The $\mathrm{Ag}^+$ ion has a $d^{10}$ configuration, and the $d$-electrons can participate in some covalent bonding with the large, polarisable $\mathrm{I}^-$ ion. This covalent contribution strengthens the lattice relative to the purely electrostatic model.
+
+In most cases (e.g. $\mathrm{AlCl}_3$, $\mathrm{BeCl}_2$), the experimental lattice enthalpy is **less** exothermic than the theoretical value because covalent character reduces the effective ionic charges, weakening the electrostatic attraction.
+
+**General rule:** When experimental $\Delta H_\mathrm{lat}^\circ$ is less exothermic than theoretical, covalent character is present (ions are not fully charged). When experimental is more exothermic, additional bonding (e.g. covalent contribution, van der Waals) strengthens the lattice.
+
+### Example 6: Predicting Which Compound Forms -- Why MgCl2 Exists but MgCl Does Not
+
+**Use Born-Haber cycles to explain why $\mathrm{MgCl}_2$ is stable but $\mathrm{MgCl}$ is not.**
+
+For hypothetical $\mathrm{MgCl}$:
+
+| Step | Enthalpy ($\mathrm{kJ/mol}$) |
+|---|---|
+| $\Delta H_\mathrm{at}(\mathrm{Mg})$ | $+148$ |
+| $\Delta H_\mathrm{at}(\mathrm{Cl})$ | $+122$ |
+| $\mathrm{IE}_1(\mathrm{Mg})$ | $+738$ |
+| $\mathrm{EA}_1(\mathrm{Cl})$ | $-349$ |
+| $\Delta H_\mathrm{lat}(\mathrm{MgCl})$ (estimated) | $-700$ |
+| **$\Delta H_f^\circ(\mathrm{MgCl})$** | **$-41$** |
+
+The enthalpy of formation is only weakly exothermic ($-41\,\mathrm{kJ/mol}$). The entropy change for forming a solid from gaseous atoms is negative ($\Delta S^\circ < 0$), so $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ would be positive at room temperature.
+
+For $\mathrm{MgCl}_2$:
+
+| Step | Enthalpy ($\mathrm{kJ/mol}$) |
+|---|---|
+| $\Delta H_\mathrm{at}(\mathrm{Mg})$ | $+148$ |
+| $2\Delta H_\mathrm{at}(\mathrm{Cl})$ | $+244$ |
+| $\mathrm{IE}_1(\mathrm{Mg})$ | $+738$ |
+| $\mathrm{IE}_2(\mathrm{Mg})$ | $+1451$ |
+| $2\mathrm{EA}_1(\mathrm{Cl})$ | $-698$ |
+| $\Delta H_\mathrm{lat}(\mathrm{MgCl}_2)$ | $-2526$ |
+| **$\Delta H_f^\circ(\mathrm{MgCl}_2)$** | **$-643$** |
+
+The much more exothermic lattice enthalpy of $\mathrm{MgCl}_2$ (due to the $2+$ charge on $\mathrm{Mg}$) more than compensates for the high second ionisation energy. The overall $\Delta H_f^\circ$ is strongly negative ($-643\,\mathrm{kJ/mol}$), making $\mathrm{MgCl}_2$ thermodynamically stable.
+
+## Practical Applications and Calculations
+
+### Using Born-Haber Cycles to Calculate Electron Affinities
+
+When the electron affinity is unknown, it can be calculated from the Born-Haber cycle if all other quantities are known.
+
+**Example: Calculate the first electron affinity of chlorine from the following data for NaCl.**
+
+- $\Delta H_f^\circ(\mathrm{NaCl}) = -411\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{Na}) = +108\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{Cl}) = +122\,\mathrm{kJ/mol}$
+- $\mathrm{IE}_1(\mathrm{Na}) = +496\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{lat}^\circ(\mathrm{NaCl}) = -788\,\mathrm{kJ/mol}$
+
+$$\Delta H_f^\circ = \Delta H_\mathrm{at}(\mathrm{Na}) + \Delta H_\mathrm{at}(\mathrm{Cl}) + \mathrm{IE}_1 + \mathrm{EA}_1 + \Delta H_\mathrm{lat}^\circ$$
+
+$$\mathrm{EA}_1 = \Delta H_f^\circ - \Delta H_\mathrm{at}(\mathrm{Na}) - \Delta H_\mathrm{at}(\mathrm{Cl}) - \mathrm{IE}_1 - \Delta H_\mathrm{lat}^\circ$$
+
+$$\mathrm{EA}_1 = -411 - 108 - 122 - 496 - (-788) = -411 - 108 - 122 - 496 + 788 = -349\,\mathrm{kJ/mol}$$
+
+### Enthalpy of Hydration Trends and Calculations
+
+The enthalpy of hydration becomes more exothermic as:
+
+1. Ionic charge increases (stronger ion-dipole interactions): $\mathrm{Na}^+ (-406) \lt \mathrm{Mg}^{2+} (-1920) \lt \mathrm{Al}^{3+} (-4660\,\mathrm{kJ/mol})$
+2. Ionic radius decreases (higher charge density): $\mathrm{Li}^+ (-520) \gt \mathrm{Na}^+ (-406) \gt \mathrm{K}^+ (-322)\,\mathrm{kJ/mol}$
+
+**Example:** Why does $\mathrm{Li}^+$ have a more exothermic hydration enthalpy than $\mathrm{Na}^+$?
+
+$\mathrm{Li}^+$ has a smaller ionic radius ($76\,\mathrm{pm}$) than $\mathrm{Na}^+$ ($102\,\mathrm{pm}$). The charge density ($z^+/r^+$) of $\mathrm{Li}^+$ is higher, producing stronger ion-dipole interactions with water molecules. More energy is released when water molecules solvate the smaller, more highly charged ion.
+
+## Exam-Style Questions with Full Mark Schemes
+
+<details>
+<summary>Q1 (6 marks)</summary>
+
+Define the term lattice enthalpy of formation. Use a Born-Haber cycle to calculate the lattice enthalpy of potassium fluoride ($\mathrm{KF}$) given the following data:
+
+- $\Delta H_f^\circ(\mathrm{KF}) = -568\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{K}) = +89\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{F}) = +79\,\mathrm{kJ/mol}$
+- $\mathrm{IE}_1(\mathrm{K}) = +419\,\mathrm{kJ/mol}$
+- $\mathrm{EA}_1(\mathrm{F}) = -328\,\mathrm{kJ/mol}$
+
+**Mark Scheme:**
+
+Definition (1 mark): The enthalpy change when one mole of an ionic solid is formed from its constituent gaseous ions under standard conditions.
+
+Calculation (5 marks):
+
+$$\Delta H_\mathrm{lat}^\circ = \Delta H_f^\circ - \Delta H_\mathrm{at}(\mathrm{K}) - \Delta H_\mathrm{at}(\mathrm{F}) - \mathrm{IE}_1(\mathrm{K}) - \mathrm{EA}_1(\mathrm{F})$$
+
+$$= -568 - 89 - 79 - 419 - (-328) = -568 - 89 - 79 - 419 + 328 = -827\,\mathrm{kJ/mol}$$
+
+(1 mark for correct equation setup, 1 mark for correct substitution, 1 mark for arithmetic, 1 mark for correct sign convention, 1 mark for correct answer with units.)
+
+</details>
+
+<details>
+<summary>Q2 (5 marks)</summary>
+
+The experimental lattice enthalpy of $\mathrm{MgCl}_2$ is $-2526\,\mathrm{kJ/mol}$, while the theoretical value calculated from the Born-Lande equation is $-2328\,\mathrm{kJ/mol}$. Explain the difference between these values.
+
+**Mark Scheme:**
+
+5 marks:
+- The experimental value is more exothermic than the theoretical value (1 mark).
+- The Born-Lande equation assumes purely ionic bonding with point charges (1 mark).
+- The difference indicates additional bonding interactions beyond the purely ionic model (1 mark).
+- $\mathrm{Mg}^{2+}$ is a small, highly charged cation with high polarising power (Fajans' rule) (1 mark).
+- Some degree of covalent bonding (orbital overlap) occurs between $\mathrm{Mg}^{2+}$ and $\mathrm{Cl}^-$, which adds to the overall lattice stability and makes the experimental value more exothermic than the purely electrostatic prediction (1 mark).
+
+</details>
+
+<details>
+<summary>Q3 (7 marks)</summary>
+
+The second electron affinity of oxygen is endothermic. Explain why this is the case. Use the following data to construct a Born-Haber cycle for $\mathrm{MgO}$ and calculate a value for the lattice enthalpy:
+
+- $\Delta H_f^\circ(\mathrm{MgO}) = -602\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{Mg}) = +148\,\mathrm{kJ/mol}$
+- $\Delta H_\mathrm{at}^\circ(\mathrm{O}) = +248\,\mathrm{kJ/mol}$
+- $\mathrm{IE}_1(\mathrm{Mg}) = +738\,\mathrm{kJ/mol}$
+- $\mathrm{IE}_2(\mathrm{Mg}) = +1451\,\mathrm{kJ/mol}$
+- $\mathrm{EA}_1(\mathrm{O}) = -141\,\mathrm{kJ/mol}$
+- $\mathrm{EA}_2(\mathrm{O}) = +798\,\mathrm{kJ/mol}$
+
+**Mark Scheme:**
+
+Explanation of endothermic $\mathrm{EA}_2$ (2 marks): Adding an electron to $\mathrm{O}^-$ requires energy to overcome electrostatic repulsion between the incoming electron and the negative charge of the oxide ion (1 mark). Energy must be supplied, so the process is endothermic (1 mark).
+
+Born-Haber calculation (5 marks):
+
+$$\Delta H_\mathrm{lat}^\circ = -602 - 148 - 248 - 738 - 1451 - (-141) - 798$$
+
+$$= -602 - 148 - 248 - 738 - 1451 + 141 - 798 = -3844\,\mathrm{kJ/mol}$$
+
+(1 mark for correct equation, 1 mark for including all terms with correct signs, 1 mark for arithmetic, 1 mark for correct answer, 1 mark for units.)
+
+</details>
+
+<details>
+<summary>Q4 (4 marks)</summary>
+
+Explain why the lattice enthalpy of $\mathrm{NaF}$ ($-924\,\mathrm{kJ/mol}$) is more exothermic than that of $\mathrm{NaI}$ ($-704\,\mathrm{kJ/mol}$).
+
+**Mark Scheme:**
+
+4 marks:
+- Both compounds contain $\mathrm{Na}^+$ ions, so the difference is due to the anion (1 mark).
+- $\mathrm{F}^-$ has a smaller ionic radius ($133\,\mathrm{pm}$) than $\mathrm{I}^-$ ($220\,\mathrm{pm}$) (1 mark).
+- The smaller interionic distance in NaF means the ions are closer together, so the Coulombic attraction is stronger (1 mark).
+- From the Born-Lande equation, lattice enthalpy is proportional to $1/r_0$, so a smaller $r_0$ gives a more exothermic value (1 mark).
+
+</details>
+
+<details>
+<summary>Q5 (6 marks)</summary>
+
+The enthalpy of solution of $\mathrm{CaCl}_2$ is $-83\,\mathrm{kJ/mol}$. The hydration enthalpy of $\mathrm{Ca}^{2+}$ is $-1650\,\mathrm{kJ/mol}$ and that of $\mathrm{Cl}^-$ is $-381\,\mathrm{kJ/mol}$.
+
+(a) Calculate the lattice dissociation enthalpy of $\mathrm{CaCl}_2$. (3 marks)
+
+(b) Use your answer to explain why $\mathrm{CaCl}_2$ is soluble in water. (3 marks)
+
+**Mark Scheme:**
+
+(a) 3 marks:
+
+$$\Delta H_\mathrm{sol}^\circ = \Delta H_\mathrm{lat,diss}^\circ + \Delta H_\mathrm{hyd}^\circ(\mathrm{Ca}^{2+}) + 2\Delta H_\mathrm{hyd}^\circ(\mathrm{Cl}^-)$$
+
+$$-83 = \Delta H_\mathrm{lat,diss}^\circ + (-1650) + 2(-381)$$
+
+$$-83 = \Delta H_\mathrm{lat,diss}^\circ - 1650 - 762$$
+
+$$\Delta H_\mathrm{lat,diss}^\circ = -83 + 1650 + 762 = +2329\,\mathrm{kJ/mol}$$
+
+(1 mark for correct equation, 1 mark for correct substitution, 1 mark for correct answer.)
+
+(b) 3 marks:
+- The enthalpy of solution is exothermic ($-83\,\mathrm{kJ/mol}$), meaning that the hydration enthalpy more than compensates for the lattice dissociation enthalpy (1 mark).
+- The dissolution process releases heat overall, favouring solubility (1 mark).
+- Additionally, the entropy change for dissolution is positive (ions become dispersed in solution, increasing disorder), so $\Delta G = \Delta H - T\Delta S$ is negative, confirming the process is thermodynamically spontaneous (1 mark).
+
+</details>
