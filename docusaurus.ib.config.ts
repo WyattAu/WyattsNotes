@@ -32,8 +32,8 @@ const admonitionsConfig = {
   },
 };
 
-const remarkPluginsConfig = {
-  beforeDefaultRemarkPlugins: [remarkGridTable],
+const   remarkPluginsConfig = {
+  beforeDefaultRemarkPlugins: [remarkGridTable, require.resolve('./src/plugins/escape-jsx-braces/index.js')],
   remarkPlugins: [remarkMath, remarkCodeSnippets],
 };
 
@@ -219,21 +219,7 @@ const config: Config = {
         routeBasePath: '/docs/ib',
         sidebarPath: require.resolve('./sidebars/sidebar_ib.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_ib/{dir}',
-        frontMatter: {
-          format: 'md',
-        },
         ...commonDocsPluginConfig,
-      },
-    ],
-    ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
-    [
-      '@r74tech/docusaurus-plugin-panzoom',
-      {
-        selector: '.mermaid svg',
-      },
-    ],
-  ],
-
   markdown: {
     mermaid: true,
   },

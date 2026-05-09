@@ -32,8 +32,8 @@ const admonitionsConfig = {
   },
 };
 
-const remarkPluginsConfig = {
-  beforeDefaultRemarkPlugins: [remarkGridTable],
+const   remarkPluginsConfig = {
+  beforeDefaultRemarkPlugins: [remarkGridTable, require.resolve('./src/plugins/escape-jsx-braces/index.js')],
   remarkPlugins: [remarkMath, remarkCodeSnippets],
 };
 
