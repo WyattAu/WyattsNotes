@@ -218,6 +218,9 @@ const config: Config = {
         routeBasePath: '/docs/dse',
         sidebarPath: require.resolve('./sidebars/sidebar_dse.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_dse/{dir}',
+        frontMatter: {
+          format: 'md',
+        },
         ...commonDocsPluginConfig,
       },
     ],

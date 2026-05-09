@@ -43,8 +43,8 @@ broken down by hydrolysis.
 Lipids are not true polymers but assemble through non-covalent interactions. Phospholipids have a
 hydrophilic phosphate head and hydrophobic fatty acid tails, forming the basis of cell membranes.
 
-**Amino acid structure:** Central carbon bonded to an amino group ($\text{'\{'}NH{'\}'}_2$), carboxyl group
-($\text{'\{'}COOH{'\}'}$), hydrogen, and a variable R group. There are 20 standard amino acids. Peptide bonds
+**Amino acid structure:** Central carbon bonded to an amino group ($\text{NH{}_2$), carboxyl group
+($\text{COOH{}$), hydrogen, and a variable R group. There are 20 standard amino acids. Peptide bonds
 form between the carboxyl group of one amino acid and the amino group of the next via condensation.
 
 **Protein structure levels:**
@@ -98,12 +98,12 @@ affinity between enzyme and substrate.
 | Nucleus                | DNA storage, transcription, mRNA processing                 |
 | Nucleolus              | rRNA synthesis, ribosome assembly                           |
 | Rough ER               | Protein synthesis (ribosome-studded), folding, modification |
-| Smooth ER              | Lipid synthesis, detoxification, $\text{'\{'}Ca{'\}'}^{2+}$ storage  |
+| Smooth ER              | Lipid synthesis, detoxification, $\text{Ca{}^{2+}$ storage  |
 | Golgi apparatus        | Protein sorting, modification, packaging into vesicles      |
 | Mitochondria           | Aerobic respiration, ATP production (chemiosmosis)          |
 | Chloroplasts           | Photosynthesis (in plants and algae)                        |
 | Lysosomes              | Intracellular digestion (hydrolytic enzymes at pH ~5)       |
-| Peroxisomes            | Breakdown of fatty acids, detoxification of $\text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'}_2$ via catalase |
+| Peroxisomes            | Breakdown of fatty acids, detoxification of $\text{H{}_2\text{O{}_2$ via catalase |
 | Vacuoles               | Storage, turgor pressure (central vacuole in plants)        |
 | Cytoskeleton           | Structural support, intracellular transport, cell division  |
 
@@ -143,7 +143,7 @@ pressure in plant cells). Isotonic solutions produce no net movement.
 
 ### Photosynthesis
 
-$$6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \text{'\{'}light energy{'\}'} \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$$
+$$6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \text{light energy{} \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$$
 
 **Light-dependent reactions (thylakoid membrane):**
 
@@ -155,7 +155,7 @@ $$6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \text{'\{'}light energy{'\}'} \t
 
 **Calvin cycle (stroma):**
 
-1. **Carbon fixation:** RuBisCO catalyses $\mathrm{CO{}_2 + \text{'\{'}RuBP (5C){'\}'} \to 2 \times \text{'\{'}3-PGA (3C){'\}'}$.
+1. **Carbon fixation:** RuBisCO catalyses $\mathrm{CO{}_2 + \text{RuBP (5C){} \to 2 \times \text{3-PGA (3C){}$.
 2. **Reduction:** 3-PGA is phosphorylated by ATP and reduced by NADPH to G3P.
 3. **Regeneration:** Most G3P is used to regenerate RuBP (uses 5 of every 6 G3P molecules; 1 G3P
    is the net product per 3 $\mathrm{CO{}_2$ fixed).
@@ -165,7 +165,7 @@ produced. To produce one glucose requires 6 turns: 18 ATP + 12 NADPH.
 
 ### Cellular Respiration
 
-$$\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2 \to 6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \sim 30\text{'\{'}--{'\}'}32\,\mathrm{ATP{}$$
+$$\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2 \to 6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \sim 30\text{--{}32\,\mathrm{ATP{}$$
 
 | Stage                     | Location                     | O$_2$ Required? | Net ATP Yield          |
 | ------------------------- | ---------------------------- | --------------- | ---------------------- |
@@ -205,7 +205,7 @@ Three stages of cell signalling:
    - **Intracellular receptors:** Ligands (steroid hormones, thyroid hormones) diffuse through the
      membrane and bind receptors in the cytoplasm or nucleus.
 2. **Transduction:** Signal is relayed and amplified, often via phosphorylation cascades (kinases add
-   phosphate groups; phosphatases remove them). Secondary messengers (cAMP, $\text{'\{'}Ca{'\}'}^{2+}$) amplify
+   phosphate groups; phosphatases remove them). Secondary messengers (cAMP, $\text{Ca{}^{2+}$) amplify
    the signal.
 3. **Response:** Cellular response such as gene expression, enzyme activation, or cytoskeletal
    rearrangement.
@@ -284,7 +284,7 @@ meiosis, producing gametes with abnormal chromosome numbers.
 
 ### Central Dogma
 
-$$\text{'\{'}DNA{'\}'} \xrightarrow{\text{'\{'}transcription{'\}'}} \text{'\{'}RNA{'\}'} \xrightarrow{\text{'\{'}translation{'\}'}} \text{'\{'}Protein{'\}'}$$
+$$\text{DNA{} \xrightarrow{\text{transcription{}} \text{RNA{} \xrightarrow{\text{translation{}} \text{Protein{}$$
 
 ### Transcription (in prokaryotes)
 
@@ -479,14 +479,14 @@ rates determines species number.
 | Cycle            | Reservoir                  | Key Processes                                      |
 | ---------------- | -------------------------- | -------------------------------------------------- |
 | Carbon           | Atmosphere, ocean, fossil fuels | Photosynthesis, respiration, combustion, decomposition |
-| Nitrogen         | Atmosphere ($\text{'\{'}N{'\}'}_2$) | Nitrogen fixation, nitrification, denitrification  |
+| Nitrogen         | Atmosphere ($\text{N{}_2$) | Nitrogen fixation, nitrification, denitrification  |
 | Phosphorus       | Rock, sediment             | Weathering, absorption by plants, decomposition    |
 | Water            | Oceans, atmosphere, glaciers | Evaporation, condensation, precipitation, transpiration |
 
-**Nitrogen cycle details:** Atmospheric $\text{'\{'}N{'\}'}_2$ is fixed by nitrogen-fixing bacteria
-(Rhizobium in legume root nodules, cyanobacteria) or lightning into $\text{'\{'}NH{'\}'}_3$ (ammonia).
-Nitrifying bacteria convert $\text{'\{'}NH{'\}'}_3 \to \text{'\{'}NO{'\}'}_2^- \to \text{'\{'}NO{'\}'}_3^-$ (usable by plants).
-Denitrifying bacteria convert $\text{'\{'}NO{'\}'}_3^- \to \text{'\{'}N{'\}'}_2$ back to the atmosphere.
+**Nitrogen cycle details:** Atmospheric $\text{N{}_2$ is fixed by nitrogen-fixing bacteria
+(Rhizobium in legume root nodules, cyanobacteria) or lightning into $\text{NH{}_3$ (ammonia).
+Nitrifying bacteria convert $\text{NH{}_3 \to \text{NO{}_2^- \to \text{NO{}_3^-$ (usable by plants).
+Denitrifying bacteria convert $\text{NO{}_3^- \to \text{N{}_2$ back to the atmosphere.
 
 ### Common Pitfalls
 

@@ -979,7 +979,7 @@ $v = \sqrt{u^2 - 2gh}$. $\blacksquare$
 
 ### 14.1 Projectile with linear air resistance
 
-With air resistance proportional to velocity ($\mathbf{'\{'}F{'\}'}_{\text{'\{'}drag{'\}'}} = -mk\mathbf{'\{'}v{'\}'}$):
+With air resistance proportional to velocity ($\mathbf{'\{'}F{'\}'}_{\text{drag{}} = -mk\mathbf{'\{'}v{'\}'}$):
 
 Horizontal: $m\ddot{x} = -mk\dot{x} \implies \dot{x} = u\cos\theta\,e^{-kt}$.
 
@@ -1088,7 +1088,7 @@ With quadratic drag ($F = kv^2$), the equations of motion become coupled nonline
 
 Rockets and fireworks involve variable mass and thrust. The thrust equation is:
 
-$$m\frac{dv}{dt} = F_{\text{'\{'}thrust{'\}'}} - mg - F_{\text{'\{'}drag{'\}'}}$$
+$$m\frac{dv}{dt} = F_{\text{thrust{}} - mg - F_{\text{drag{}}$$
 
 where $m$ decreases as fuel is consumed.
 

@@ -1895,7 +1895,7 @@ A voltage $V = 1\ \mu$V is applied across a Josephson junction:
 
 $$\nu = \frac{2eV}{h} = \frac{2 \times 1.602 \times 10^{-19} \times 10^{-6}}{6.626 \times 10^{-34}} = \frac{3.204 \times 10^{-25}}{6.626 \times 10^{-34}} = 4.836 \times 10^{8}\ \mathrm{Hz{} \approx 483.6\ \mathrm{MHz{}$$
 
-The convenient relation is $\nu/\text{'\{'}GHz{'\}'} = 483.6 \times V/\mu\text{'\{'}V{'\}'}$. This precise frequency-voltage relation is used to maintain the volt standard worldwide.
+The convenient relation is $\nu/\text{GHz{} = 483.6 \times V/\mu\text{V{}$. This precise frequency-voltage relation is used to maintain the volt standard worldwide.
 
 </details>
 
@@ -1948,7 +1948,7 @@ Weyl nodes come in pairs of opposite chirality and are topologically protected. 
 
 The **Chern number** for a 2D band is the integral of the Berry curvature over the Brillouin zone:
 
-$$C = \frac{1}{2\pi}\int_{\text{'\{'}BZ{'\}'}} \Omega_z(\mathbf{'\{'}k{'\}'})\, d^2k$$
+$$C = \frac{1}{2\pi}\int_{\text{BZ{}} \Omega_z(\mathbf{'\{'}k{'\}'})\, d^2k$$
 
 The Chern number is an integer (topological invariant). The Hall conductivity is quantised:
 
@@ -1966,13 +1966,13 @@ The TKNN formula (Thouless, Kohmoto, Nightingale, den Nijs, 1982) established th
 
 In a metal, the Coulomb interaction between electrons is screened by the other electrons. The **Thomas--Fermi screening wavevector**:
 
-$$q_{\text{'\{'}TF{'\}'}}^2 = \frac{e^2 g(\varepsilon_F)}{\varepsilon_0} = \frac{4k_F}{\pi a_0}$$
+$$q_{\text{TF{}}^2 = \frac{e^2 g(\varepsilon_F)}{\varepsilon_0} = \frac{4k_F}{\pi a_0}$$
 
 where $a_0 = 4\pi\varepsilon_0\hbar^2/(m_e e^2)$ is the Bohr radius. The screened potential:
 
-$$V_{\text{'\{'}scr{'\}'}}(r) = \frac{e^2}{4\pi\varepsilon_0 r}\,e^{-q_{\text{'\{'}TF{'\}'}} r}$$
+$$V_{\text{scr{}}(r) = \frac{e^2}{4\pi\varepsilon_0 r}\,e^{-q_{\text{TF{}} r}$$
 
-The screening length $\lambda_{\text{'\{'}TF{'\}'}} = 1/q_{\text{'\{'}TF{'\}'}} \sim 0.5$ Å in metals (about one atomic spacing), meaning the Coulomb interaction is very short-ranged.
+The screening length $\lambda_{\text{TF{}} = 1/q_{\text{TF{}} \sim 0.5$ Å in metals (about one atomic spacing), meaning the Coulomb interaction is very short-ranged.
 
 ### 14.2 The Hubbard Model
 
@@ -2061,9 +2061,9 @@ where $V_{FB}$ is the flat-band voltage, $\phi_F = (k_BT/q)\ln(N_A/n_i)$ is the 
 
 **Drain current (long-channel, above threshold):**
 
-$$I_D = \mu_n C_{ox}\frac{W}{L}\left[\left(V_G - V_T\right)V_D - \frac{V_D^2}{2}\right] \quad \text{'\{'}(linear region){'\}'}$$
+$$I_D = \mu_n C_{ox}\frac{W}{L}\left[\left(V_G - V_T\right)V_D - \frac{V_D^2}{2}\right] \quad \text{(linear region){}$$
 
-$$I_D = \frac{1}{2}\mu_n C_{ox}\frac{W}{L}(V_G - V_T)^2 \quad \text{'\{'}(saturation, {'\}'} V_D \geq V_G - V_T \text{'\{'}){'\}'}$$
+$$I_D = \frac{1}{2}\mu_n C_{ox}\frac{W}{L}(V_G - V_T)^2 \quad \text{(saturation, {} V_D \geq V_G - V_T \text{){}$$
 
 **Subthreshold swing:** Below threshold, the current decreases exponentially:
 
@@ -2097,17 +2097,17 @@ For GaAs ($m_e^* = 0.067m_e$, $m_h^* = 0.45m_e$, $\varepsilon_r = 12.9$):
 
 $$\mu = \frac{0.067 \times 0.45}{0.067 + 0.45}m_e = 0.058m_e$$
 
-$$R^* = \frac{0.058}{12.9^2} \times 13.6 = \frac{0.058}{166.4} \times 13.6 = 4.7\ \text{'\{'}meV{'\}'}$$
+$$R^* = \frac{0.058}{12.9^2} \times 13.6 = \frac{0.058}{166.4} \times 13.6 = 4.7\ \text{meV{}$$
 
-$$a_B^* = \frac{\varepsilon_r m_e}{\mu}a_0 = \frac{12.9}{0.058} \times 0.529\ \text{'\{'}Å{'\}'} = 118\ \text{'\{'}Å{'\}'} \approx 12\ \text{'\{'}nm{'\}'}$$
+$$a_B^* = \frac{\varepsilon_r m_e}{\mu}a_0 = \frac{12.9}{0.058} \times 0.529\ \text{Å{} = 118\ \text{Å{} \approx 12\ \text{nm{}$$
 
 The large exciton Bohr radius means excitons are easily dissociated by thermal energy at room temperature in most semiconductors.
 
 **Polaritons** form when excitons strongly couple to photons in a microcavity, producing hybrid light-matter quasiparticles with dispersion:
 
-$$E_{\pm}(k) = \frac{1}{2}\left(E_{\text{'\{'}cav{'\}'}}(k) + E_{\text{'\{'}exc{'\}'}}(k)\right) \pm \frac{1}{2}\sqrt{\Omega_R^2 + \delta^2(k)}$$
+$$E_{\pm}(k) = \frac{1}{2}\left(E_{\text{cav{}}(k) + E_{\text{exc{}}(k)\right) \pm \frac{1}{2}\sqrt{\Omega_R^2 + \delta^2(k)}$$
 
-where $\Omega_R$ is the Rabi splitting and $\delta = E_{\text{'\{'}cav{'\}'}} - E_{\text{'\{'}exc{'\}'}}$ is the detuning.
+where $\Omega_R$ is the Rabi splitting and $\delta = E_{\text{cav{}} - E_{\text{exc{}}$ is the detuning.
 
 <details>
 <summary>Worked Example 15.1: MOSFET Drain Current</summary>
@@ -2120,11 +2120,11 @@ $$I_D = 450 \times 34.5 \times 10^{-9} \times \frac{10 \times 10^{-4}}{1 \times 
 
 $$= 450 \times 3.45 \times 10^{-7} \times 10 \times [0.65 - 0.125]$$
 
-$$= 1.55 \times 10^{-3} \times 0.525 = 8.14 \times 10^{-4}\ \text{'\{'}A{'\}'} = 0.814\ \text{'\{'}mA{'\}'}$$
+$$= 1.55 \times 10^{-3} \times 0.525 = 8.14 \times 10^{-4}\ \text{A{} = 0.814\ \text{mA{}$$
 
 At saturation ($V_D = 2$ V):
 
-$$I_D = \frac{1}{2} \times 450 \times 34.5 \times 10^{-9} \times 10 \times (1.3)^2 = 1.30\ \text{'\{'}mA{'\}'}$$
+$$I_D = \frac{1}{2} \times 450 \times 34.5 \times 10^{-9} \times 10 \times (1.3)^2 = 1.30\ \text{mA{}$$
 
 </details>
 
@@ -2157,17 +2157,17 @@ A Type II superconductor has $\xi_0 = 5$ nm and $\lambda_0 = 50$ nm at $T = 0$. 
 
 (a) At $T = 0.9\,T_c$: $1 - T/T_c = 0.1$.
 
-$$\xi = \frac{\xi_0}{\sqrt{0.1}} = \frac{5}{0.316} = 15.8\ \text{'\{'}nm{'\}'}, \quad \lambda = \frac{50}{\sqrt{0.1}} = 158\ \text{'\{'}nm{'\}'}$$
+$$\xi = \frac{\xi_0}{\sqrt{0.1}} = \frac{5}{0.316} = 15.8\ \text{nm{}, \quad \lambda = \frac{50}{\sqrt{0.1}} = 158\ \text{nm{}$$
 
-$$\kappa = \lambda/\xi = 10 \quad \text{'\{'}(independent of {'\}'} T\text{'\{'}){'\}'}$$
+$$\kappa = \lambda/\xi = 10 \quad \text{(independent of {} T\text{){}$$
 
-(b) $B_{c2} = \frac{\Phi_0}{2\pi\xi^2} = \frac{2.07 \times 10^{-15}}{2\pi \times (15.8 \times 10^{-9})^2} = \frac{2.07 \times 10^{-15}}{1.57 \times 10^{-15}} = 1.32\ \text{'\{'}T{'\}'}$
+(b) $B_{c2} = \frac{\Phi_0}{2\pi\xi^2} = \frac{2.07 \times 10^{-15}}{2\pi \times (15.8 \times 10^{-9})^2} = \frac{2.07 \times 10^{-15}}{1.57 \times 10^{-15}} = 1.32\ \text{T{}$
 
-$$B_{c1} = \frac{\Phi_0}{4\pi\lambda^2}\ln\kappa = \frac{2.07 \times 10^{-15}}{4\pi \times (158 \times 10^{-9})^2}\ln 10 = \frac{2.07 \times 10^{-15}}{3.14 \times 10^{-13}} \times 2.303 = 1.52 \times 10^{-3}\ \text{'\{'}T{'\}'} = 1.52\ \text{'\{'}mT{'\}'}$$
+$$B_{c1} = \frac{\Phi_0}{4\pi\lambda^2}\ln\kappa = \frac{2.07 \times 10^{-15}}{4\pi \times (158 \times 10^{-9})^2}\ln 10 = \frac{2.07 \times 10^{-15}}{3.14 \times 10^{-13}} \times 2.303 = 1.52 \times 10^{-3}\ \text{T{} = 1.52\ \text{mT{}$$
 
-(c) At $B = B_{c2}/2 = 0.66$ T: number of flux quanta per m$^2$ = $B/\Phi_0 = 0.66/(2.07 \times 10^{-15}) = 3.19 \times 10^{14}\ \text{'\{'}m{'\}'}^{-2}$.
+(c) At $B = B_{c2}/2 = 0.66$ T: number of flux quanta per m$^2$ = $B/\Phi_0 = 0.66/(2.07 \times 10^{-15}) = 3.19 \times 10^{14}\ \text{m{}^{-2}$.
 
-Average spacing between vortices: $a \approx (2\Phi_0/(\sqrt{3}B))^{1/2} = (2 \times 2.07 \times 10^{-15}/(1.73 \times 0.66))^{1/2} = 60\ \text{'\{'}nm{'\}'}$.
+Average spacing between vortices: $a \approx (2\Phi_0/(\sqrt{3}B))^{1/2} = (2 \times 2.07 \times 10^{-15}/(1.73 \times 0.66))^{1/2} = 60\ \text{nm{}$.
 
 </details>
 
@@ -2221,7 +2221,7 @@ A silicon p-n junction has $N_A = 10^{24}$ m$^{-3}$ and $N_D = 10^{22}$ m$^{-3}$
 
 (c) Under forward bias $V = 0.5$ V, calculate the current density. Assume $I_0/A = 10^{-12}$ A/m$^2$.
 
-(d) What is the breakdown voltage if the critical field for Zener breakdown in Si is $E_{\text{'\{'}crit{'\}'}} \approx 3 \times 10^8$ V/m?
+(d) What is the breakdown voltage if the critical field for Zener breakdown in Si is $E_{\text{crit{}} \approx 3 \times 10^8$ V/m?
 
 **Solution:**
 
@@ -2229,25 +2229,25 @@ A silicon p-n junction has $N_A = 10^{24}$ m$^{-3}$ and $N_D = 10^{22}$ m$^{-3}$
 
 $$= 0.02585 \times \ln\frac{10^{46}}{2.25 \times 10^{32}} = 0.02585 \times \ln(4.44 \times 10^{13})$$
 
-$$= 0.02585 \times 31.43 = 0.812\ \text{'\{'}V{'\}'}$$
+$$= 0.02585 \times 31.43 = 0.812\ \text{V{}$$
 
 (b) $W = \sqrt{\frac{2\varepsilon_s V_0}{e}\left(\frac{1}{N_A} + \frac{1}{N_D}\right)}$
 
 Since $N_D \ll N_A$, the depletion region extends mainly into the n-side:
 
-$$W \approx \sqrt{\frac{2 \times 11.7 \times 8.85 \times 10^{-12} \times 0.812}{1.6 \times 10^{-19} \times 10^{22}}} = \sqrt{\frac{1.68 \times 10^{-10}}{1.6 \times 10^{-3}}} = \sqrt{1.05 \times 10^{-7}} = 3.24 \times 10^{-4}\ \text{'\{'}m{'\}'} = 0.324\ \text{'\{'}mm{'\}'}$$
+$$W \approx \sqrt{\frac{2 \times 11.7 \times 8.85 \times 10^{-12} \times 0.812}{1.6 \times 10^{-19} \times 10^{22}}} = \sqrt{\frac{1.68 \times 10^{-10}}{1.6 \times 10^{-3}}} = \sqrt{1.05 \times 10^{-7}} = 3.24 \times 10^{-4}\ \text{m{} = 0.324\ \text{mm{}$$
 
 This is a wide depletion region because of the asymmetric doping.
 
-$$C/A = \frac{\varepsilon_s}{W} = \frac{11.7 \times 8.85 \times 10^{-12}}{3.24 \times 10^{-4}} = 3.19 \times 10^{-7}\ \text{'\{'}F/m{'\}'}^2 = 319\ \text{'\{'}nF/m{'\}'}^2$$
+$$C/A = \frac{\varepsilon_s}{W} = \frac{11.7 \times 8.85 \times 10^{-12}}{3.24 \times 10^{-4}} = 3.19 \times 10^{-7}\ \text{F/m{}^2 = 319\ \text{nF/m{}^2$$
 
-(c) $J = J_0(e^{eV/(k_BT)} - 1) = 10^{-12}(e^{0.5/0.02585} - 1) = 10^{-12}(e^{19.34} - 1) = 10^{-12} \times 2.48 \times 10^8 = 2.48 \times 10^{-4}\ \text{'\{'}A/m{'\}'}^2 = 0.248\ \text{'\{'}mA/m{'\}'}^2$
+(c) $J = J_0(e^{eV/(k_BT)} - 1) = 10^{-12}(e^{0.5/0.02585} - 1) = 10^{-12}(e^{19.34} - 1) = 10^{-12} \times 2.48 \times 10^8 = 2.48 \times 10^{-4}\ \text{A/m{}^2 = 0.248\ \text{mA/m{}^2$
 
-(d) The maximum field occurs at the metallurgical junction and for a one-sided junction is approximately $E_{\max} = 2V_0/W$. For breakdown: $V_{BD} \approx E_{\text{'\{'}crit{'\}'}} \cdot W_{BD}/2$.
+(d) The maximum field occurs at the metallurgical junction and for a one-sided junction is approximately $E_{\max} = 2V_0/W$. For breakdown: $V_{BD} \approx E_{\text{crit{}} \cdot W_{BD}/2$.
 
 With $W_{BD} = \sqrt{2\varepsilon_s V_{BD}/(eN_D)}$ (one-sided):
 
-$$V_{BD} = \frac{\varepsilon_s E_{\text{'\{'}crit{'\}'}}^2}{2eN_D} = \frac{11.7 \times 8.85 \times 10^{-12} \times (3 \times 10^8)^2}{2 \times 1.6 \times 10^{-19} \times 10^{22}} = \frac{9.29 \times 10^{-1}}{3.2 \times 10^{-3}} = 290\ \text{'\{'}V{'\}'}$$
+$$V_{BD} = \frac{\varepsilon_s E_{\text{crit{}}^2}{2eN_D} = \frac{11.7 \times 8.85 \times 10^{-12} \times (3 \times 10^8)^2}{2 \times 1.6 \times 10^{-19} \times 10^{22}} = \frac{9.29 \times 10^{-1}}{3.2 \times 10^{-3}} = 290\ \text{V{}$$
 
 </details>
 
@@ -2318,7 +2318,7 @@ $$R_{xy} = \frac{h}{e^2} = 25812.8\,\Omega$$
 
 (c) The cyclotron energy at $B = 10$ T:
 
-$$\hbar\omega_c = \hbar\frac{eB}{m^*} = \frac{1.055 \times 10^{-34} \times 1.6 \times 10^{-19} \times 10}{0.067 \times 9.11 \times 10^{-31}} = \frac{1.688 \times 10^{-33}}{6.10 \times 10^{-32}} = 0.0277\,\text{'\{'}eV{'\}'} = 27.7\,\text{'\{'}meV{'\}'}$$
+$$\hbar\omega_c = \hbar\frac{eB}{m^*} = \frac{1.055 \times 10^{-34} \times 1.6 \times 10^{-19} \times 10}{0.067 \times 9.11 \times 10^{-31}} = \frac{1.688 \times 10^{-33}}{6.10 \times 10^{-32}} = 0.0277\,\text{eV{} = 27.7\,\text{meV{}$$
 
 For IQHE plateaux to be resolved: $k_BT \ll \hbar\omega_c$, i.e., $T \ll 27.7/0.0862 \approx 321$ K. Experiments are typically done at $T < 4$ K.
 

@@ -194,7 +194,7 @@ IR spectroscopy measures the absorption of infrared radiation by molecular bonds
 when the photon energy matches the energy difference between vibrational states:
 
 $$
-\Delta E = h\nu = \frac{hc}{\lambda}
+\Delta E = h\nu = \frac`\{hc}`{\lambda}
 $$
 
 Only bonds with a change in dipole moment during vibration are IR-active.

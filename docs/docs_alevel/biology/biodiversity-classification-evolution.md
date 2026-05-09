@@ -1271,7 +1271,7 @@ CITES (Convention on International Trade in Endangered Species) regulates intern
 
 Mean density per quadrat $= \frac{\sum n_i}{k}$ (where $n_i$ = number in quadrat $i$; $k$ = number of quadrats).
 
-Total population estimate $= \text{'\{'}mean density{'\}'} \times \frac{\text{'\{'}total area{'\}'}}{\text{'\{'}quadrat area{'\}'}}$.
+Total population estimate $= \text{mean density{} \times \frac{\text{total area{}}{\text{quadrat area{}}$.
 
 **Standard deviation:**
 
@@ -1279,7 +1279,7 @@ $$s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}}$$
 
 Standard error $= \frac{s}{\sqrt{n}}$.
 
-95% confidence interval $= \bar{x} \pm 1.96 \times \text{'\{'}standard error{'\}'}$.
+95% confidence interval $= \bar{x} \pm 1.96 \times \text{standard error{}$.
 
 ### 23.2 Belt Transect
 
@@ -1308,15 +1308,15 @@ Are plant species distributed independently of soil pH?
 | Species B | 10 | 30 | 40 | 80 |
 | Total | 55 | 50 | 45 | 150 |
 
-Expected values: $E = \frac{\text{'\{'}row total{'\}'} \times \text{'\{'}column total{'\}'}}{\text{'\{'}grand total{'\}'}}$
+Expected values: $E = \frac{\text{row total{} \times \text{column total{}}{\text{grand total{}}$
 
-$E_{A,\text{'\{'}acidic{'\}'}} = \frac{70 \times 55}{150} = 25.7$
+$E_{A,\text{acidic{}} = \frac{70 \times 55}{150} = 25.7$
 
 $\chi^2 = \sum \frac{(O - E)^2}{E} = \frac{(45-25.7)^2}{25.7} + \frac{(20-23.3)^2}{23.3} + \frac{(5-21)^2}{21} + \frac{(10-29.3)^2}{29.3} + \frac{(30-26.7)^2}{26.7} + \frac{(40-24)^2}{24}$
 
 $\chi^2 = 14.5 + 0.47 + 12.2 + 12.7 + 0.41 + 10.7 = 50.98$
 
-Degrees of freedom $= (\text{'\{'}rows{'\}'} - 1) \times (\text{'\{'}columns{'\}'} - 1) = 1 \times 2 = 2$.
+Degrees of freedom $= (\text{rows{} - 1) \times (\text{columns{} - 1) = 1 \times 2 = 2$.
 
 Critical value at $p = 0.05$ with 2 df = 5.99. Since $50.98 > 5.99$, we reject the null hypothesis: there is a significant association between species distribution and soil pH.
 
@@ -1355,7 +1355,7 @@ If the observed genotype frequencies differ significantly from the expected Hard
 
 **Example:** In a population of snails, the observed and expected genotype frequencies are:
 
-| Genotype | Observed | Expected ($\mathrm{H\text{'\{'}-{'\}'}W}$) |
+| Genotype | Observed | Expected ($\mathrm{H\text{-{}W}$) |
 | -------- | -------- | ------------------------------- |
 | BB (brown) | 160 | 144 ($= 0.36 \times 400$) |
 | Bb (brown) | 120 | 192 ($= 0.48 \times 400$) |
@@ -1479,7 +1479,7 @@ Since $3.27 > 2.101$, we reject the null hypothesis: there is a statistically si
 
 The molecular clock uses the rate of neutral mutations to estimate when two species diverged from a common ancestor:
 
-$$\text{'\{'}Time since divergence{'\}'} = \frac{\text{'\{'}Number of nucleotide differences{'\}'}}{2 \times \text{'\{'}Mutation rate per year{'\}'}}$$
+$$\text{Time since divergence{} = \frac{\text{Number of nucleotide differences{}}{2 \times \text{Mutation rate per year{}}$$
 
 **Assumptions:**
 - The mutation rate is constant over time.
@@ -1567,7 +1567,7 @@ A biodiversity hotspot is a region with:
 
 | Method | Formula | When to Use |
 | ------ | ------- | ----------- |
-| Quadrat density | $\text{'\{'}Population{'\}'} = \text{'\{'}mean density per quadrat{'\}'} \times \text{'\{'}total area{'\}'}$ | Plants and sessile (non-moving) animals |
+| Quadrat density | $\text{Population{} = \text{mean density per quadrat{} \times \text{total area{}$ | Plants and sessile (non-moving) animals |
 | Mark-release-recapture (Lincoln index) | $N = \frac{M \times C}{R}$ (M = marked first catch, C = total second catch, R = recaptured marked) | Mobile animals |
 | Belt transect | Count organisms in quadrats along a continuous transect | Studying distribution along a gradient |
 

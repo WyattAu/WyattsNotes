@@ -155,9 +155,9 @@ $$f(x) = \frac{1}{1 - x^2} = \frac{1}{(1-x)(1+x)} = \frac{1}{2}\left(\frac{1}{1-
 
 Each fraction is a geometric series:
 
-$$\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n \quad \text{'\{'}for {'\}'} |x| \lt 1$$
+$$\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n \quad \text{for {} |x| \lt 1$$
 
-$$\frac{1}{1+x} = \sum_{n=0}^{\infty} (-x)^n = \sum_{n=0}^{\infty} (-1)^n x^n \quad \text{'\{'}for {'\}'} |x| \lt 1$$
+$$\frac{1}{1+x} = \sum_{n=0}^{\infty} (-x)^n = \sum_{n=0}^{\infty} (-1)^n x^n \quad \text{for {} |x| \lt 1$$
 
 Therefore:
 

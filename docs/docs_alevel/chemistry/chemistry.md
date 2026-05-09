@@ -106,9 +106,9 @@ Worked examples are provided throughout. Attempt them before reading the solutio
 | Acids/Bases | $\mathrm{pH{} = -\log[\mathrm{H{}^+]$, $K_a = \frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}$, $K_w = [\mathrm{H{}^+][\mathrm{OH{}^-]$, $\mathrm{pH{} = \mathrm{p{}K_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}$ |
 | Equilibrium | $K_c = \frac{\prod[\mathrm{products{}]^a}{\prod[\mathrm{reactants{}]^b}$, $K_p = \frac{\prod p_i^{a_i}}{\prod p_j^{b_j}}$, $K_p = K_c(RT)^{\Delta n}$ |
 | Thermodynamics | $\Delta G = \Delta H - T\Delta S$, $\Delta G^\circ = -RT\ln K$, $q = mc\Delta T$ |
-| Kinetics | $\text{'\{'}rate{'\}'} = k[\mathrm{A{}]^m[\mathrm{B{}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac{\ln 2}{k}$ (first-order) |
+| Kinetics | $\text{rate{} = k[\mathrm{A{}]^m[\mathrm{B{}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac{\ln 2}{k}$ (first-order) |
 | Electrochemistry | $E^\circ_\mathrm{cell{} = E^\circ_\mathrm{cathode{} - E^\circ_\mathrm{anode{}$, $\Delta G^\circ = -nFE^\circ$, $Q = It$, $n = \frac{Q}{F}$, $E = E^\circ - \frac{RT}{nF}\ln Q$ |
-| Born-Haber | $\Delta H_f = \Delta H_\mathrm{at{} + \sum \mathrm{IE{} + \Delta H_\mathrm{at{}(\text{'\{'}anion{'\}'}) + \sum \mathrm{EA{} + \Delta H_\mathrm{lat{}$ |
+| Born-Haber | $\Delta H_f = \Delta H_\mathrm{at{} + \sum \mathrm{IE{} + \Delta H_\mathrm{at{}(\text{anion{}) + \sum \mathrm{EA{} + \Delta H_\mathrm{lat{}$ |
 
 ### Organic Chemistry
 
@@ -116,7 +116,7 @@ Worked examples are provided throughout. Attempt them before reading the solutio
 |---|---|
 | Alkanes | Radical substitution: $\mathrm{RH{} + \mathrm{X{}_2 \xrightarrow{\mathrm{UV{}} \mathrm{RX{} + \mathrm{HX{}$ |
 | Alkenes | Electrophilic addition: $\mathrm{C=C{} + \mathrm{HX{}$, $\mathrm{C=C{} + \mathrm{X{}_2$, $\mathrm{C=C{} + \mathrm{H{}_2\mathrm{O{}$ (acid) |
-| Halogenoalkanes | SN2: $\mathrm{R-X{} + \mathrm{OH{}^- \to \mathrm{R-OH{} + \mathrm{X{}^-$; E2: $\mathrm{R-X{} + \mathrm{OH{}^- \to \text{'\{'}alkene{'\}'} + \mathrm{X{}^- + \mathrm{H{}_2\mathrm{O{}$ |
+| Halogenoalkanes | SN2: $\mathrm{R-X{} + \mathrm{OH{}^- \to \mathrm{R-OH{} + \mathrm{X{}^-$; E2: $\mathrm{R-X{} + \mathrm{OH{}^- \to \text{alkene{} + \mathrm{X{}^- + \mathrm{H{}_2\mathrm{O{}$ |
 | Alcohols | Oxidation: $1^\circ \to$ aldehyde $\to$ acid; $2^\circ \to$ ketone; Dehydration $\to$ alkene |
 | Carbonyls | Nucleophilic addition: $\mathrm{NaBH{}_4$ reduction; 2,4-DNPH test; Tollens' test |
 | Carboxylic acids | Esterification with alcohol/$\mathrm{H{}_2\mathrm{SO{}_4$; React with $\mathrm{NaHCO{}_3$ |
@@ -166,12 +166,12 @@ A-Level Chemistry requires significant mathematical competence. The following sk
 
 - **Plotting data:** Choose appropriate scales, label axes with quantities and units.
 - **Drawing lines of best fit:** For linear relationships, draw the best straight line through the data points.
-- **Determining the gradient:** $\text{'\{'}gradient{'\}'} = \frac{\Delta y}{\Delta x}$. For an Arrhenius plot ($\ln k$ vs $1/T$), the gradient is $-E_a/R$.
+- **Determining the gradient:** $\text{gradient{} = \frac{\Delta y}{\Delta x}$. For an Arrhenius plot ($\ln k$ vs $1/T$), the gradient is $-E_a/R$.
 - **Determining the y-intercept:** The intercept on a $\ln k$ vs $1/T$ plot gives $\ln A$.
 
 ### Error Analysis
 
-- **Percentage error:** $\frac{\text{'\{'}absolute error{'\}'}}{\text{'\{'}measured value{'\}'}} \times 100\%$.
+- **Percentage error:** $\frac{\text{absolute error{}}{\text{measured value{}} \times 100\%$.
 - **Propagation of errors:** For multiplication/division, add percentage errors. For addition/subtraction, add absolute errors.
 - **Significant figures:** Final answers should be given to the same number of significant figures as the least precise data in the question (typically 3 s.f.).
 
@@ -245,9 +245,9 @@ Step 2: Oxidation with $\mathrm{KMnO{}_4/\Delta$ gives benzoic acid. But $-\math
 
 **Correct route:** Start with phenol (or make it from benzene via the diazonium salt).
 
-$\mathrm{C{}_6\mathrm{H{}_6 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2 \xrightarrow{\mathrm{Sn{}/\mathrm{HCl{},\,\mathrm{NaOH{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2 \xrightarrow{\mathrm{NaNO{}_2/\mathrm{HCl{},\,0\text{'\{'}--{'\}'}5^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+\mathrm{Cl{}^- \xrightarrow{\mathrm{H{}_2\mathrm{O{},\,\Delta} \mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{}$
+$\mathrm{C{}_6\mathrm{H{}_6 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2 \xrightarrow{\mathrm{Sn{}/\mathrm{HCl{},\,\mathrm{NaOH{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2 \xrightarrow{\mathrm{NaNO{}_2/\mathrm{HCl{},\,0\text{--{}5^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+\mathrm{Cl{}^- \xrightarrow{\mathrm{H{}_2\mathrm{O{},\,\Delta} \mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{}$
 
-Then Kolbe-Schmitt reaction: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{} + \mathrm{CO{}_2 \xrightarrow{\mathrm{NaOH{},\,125^\circ\mathrm{C{},\,\text{'\{'}then {'\}'}\mathrm{H{}^+} 4\text{'\{'}-{'\}'}\mathrm{HOC{}_6\mathrm{H{}_4\mathrm{COOH{}$
+Then Kolbe-Schmitt reaction: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{} + \mathrm{CO{}_2 \xrightarrow{\mathrm{NaOH{},\,125^\circ\mathrm{C{},\,\text{then {}\mathrm{H{}^+} 4\text{-{}\mathrm{HOC{}_6\mathrm{H{}_4\mathrm{COOH{}$
 
 The Kolbe-Schmitt reaction places the $-\mathrm{COOH{}$ group para to the $-\mathrm{OH{}$ group due to the ortho/para directing effect of the phenoxide ion.
 
@@ -255,7 +255,7 @@ The Kolbe-Schmitt reaction places the $-\mathrm{COOH{}$ group para to the $-\mat
 
 **Propose a synthesis of 2-aminopropanoic acid (alanine) from propene.**
 
-Step 1: Anti-Markovnikov addition of HBr: $\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{'\{'}peroxides{'\}'}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$
+Step 1: Anti-Markovnikov addition of HBr: $\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{peroxides{}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$
 
 Step 2: Nucleophilic substitution with $\mathrm{KCN{}$: $\mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 + \mathrm{KCN{} \to \mathrm{NCCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$
 

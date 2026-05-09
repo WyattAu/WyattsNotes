@@ -1838,17 +1838,17 @@ HK Electric's demand: $P = 200 - 0.001Q$ (in HKD/MWh, Q in MWh). MC = 40 HKD/MWh
 
 (a) $MR = 200 - 0.002Q = MC = 40$. $0.002Q = 160$. $Q = 80\,000$ MWh. $P = 200 - 80 = 120$ HKD/MWh.
 
-Profit $= (120 - 40) \times 80\,000 - 500\,000 = 6\,400\,000 - 500\,000 = \text{'\{'}HK{'\}'}\$5.9$ million.
+Profit $= (120 - 40) \times 80\,000 - 500\,000 = 6\,400\,000 - 500\,000 = \text{HK{}\$5.9$ million.
 
 Competitive output: $P = MC = 40$. $Q_c = 200\,000 - 40\,000 = 160\,000$ MWh.
 
-DWL $= 0.5 \times (120 - 40) \times (160\,000 - 80\,000) = 0.5 \times 80 \times 80\,000 = \text{'\{'}HK{'\}'}\$3.2$ million.
+DWL $= 0.5 \times (120 - 40) \times (160\,000 - 80\,000) = 0.5 \times 80 \times 80\,000 = \text{HK{}\$3.2$ million.
 
 (b) Perfect (first-degree) price discrimination: the monopolist charges each consumer their willingness to pay, producing where $P = MC = 40$. $Q = 160\,000$.
 
 Profit $= \int_0^{160000} (200 - 0.001Q - 40) dQ - 500\,000 = \int_0^{160000} (160 - 0.001Q) dQ - 500\,000$.
 
-$= [160Q - 0.0005Q^2]_0^{160000} - 500\,000 = 25\,600\,000 - 12\,800\,000 - 500\,000 = \text{'\{'}HK{'\}'}\$12.3$ million.
+$= [160Q - 0.0005Q^2]_0^{160000} - 500\,000 = 25\,600\,000 - 12\,800\,000 - 500\,000 = \text{HK{}\$12.3$ million.
 
 DWL = 0 (allocative efficiency is achieved -- the monopolist produces the competitive quantity).
 

@@ -75,7 +75,7 @@ of spectral lines or the spectra of multi-electron atoms; could not explain the 
 Louis de Broglie proposed that all matter exhibits wave-particle duality:
 
 $$
-\lambda = \frac{h}{p} = \frac{h}{mv}
+\lambda = \frac{h}{p} = \frac{h}`\{mv}`
 $$
 
 This explained why only certain orbits are stable: the electron wavelength must fit as a standing

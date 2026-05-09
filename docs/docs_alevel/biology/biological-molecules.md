@@ -982,7 +982,7 @@ Bile salts (produced in the liver and stored in the gall bladder) emulsify fats 
 
 Pancreatic lipase hydrolyses triglycerides at the oil-water interface:
 
-$$\text{'\{'}Triglyceride{'\}'} + 2\ \text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'} \to \text{'\{'}Monoacylglycerol{'\}'} + 2\ \text{'\{'}Fatty acids{'\}'}$$
+$$\text{Triglyceride{} + 2\ \text{H{}_2\text{O{} \to \text{Monoacylglycerol{} + 2\ \text{Fatty acids{}$$
 
 The products (monoacylglycerol and fatty acids) are absorbed into the epithelial cells of the ileum by simple diffusion (they are non-polar and can cross the phospholipid bilayer).
 
@@ -1272,7 +1272,7 @@ Water always moves from a region of higher water potential to a region of lower 
 6. Mark the solvent front and the position of each pigment spot.
 7. Calculate the $R_f$ value for each pigment:
 
-$$R_f = \frac{\text{'\{'}distance travelled by pigment{'\}'}}{\text{'\{'}distance travelled by solvent front{'\}'}}$$
+$$R_f = \frac{\text{distance travelled by pigment{}}{\text{distance travelled by solvent front{}}$$
 
 Typical $R_f$ values (petroleum ether:acetone solvent):
 
@@ -1289,7 +1289,7 @@ Typical $R_f$ values (petroleum ether:acetone solvent):
 
 Triglycerides (triacylglycerols) consist of one glycerol molecule esterified to three fatty acid molecules:
 
-$$\text{'\{'}Glycerol{'\}'} + 3\text{'\{'} fatty acids{'\}'} \rightleftharpoons \text{'\{'}triglyceride{'\}'} + 3\text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'}$$
+$$\text{Glycerol{} + 3\text{ fatty acids{} \rightleftharpoons \text{triglyceride{} + 3\text{H{}_2\text{O{}$$
 
 **Fatty acid types:**
 
@@ -1489,7 +1489,7 @@ This is a straight line: $y = mx + c$ where:
 
 A triglyceride consists of one glycerol molecule esterified to three fatty acid chains:
 
-$$\text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'} \to \text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{H_2O{}$$
+$$\text{Glycerol{} + 3\ \text{Fatty acids{} \to \text{Triglyceride{} + 3\ \mathrm{H_2O{}$$
 
 | Fatty Acid Type | Bond Type | State at Room Temperature | Examples |
 | --------------- | --------- | ------------------------ | -------- |
@@ -1702,13 +1702,13 @@ Even at very high $[S]$, the inhibited enzyme never reaches the original $V_{max
 
 ### 37.1 Triglyceride Synthesis (Esterification)
 
-$$\text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'} \xrightarrow{\text{'\{'}esterase{'\}'}} \text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{H_2O{}$$
+$$\text{Glycerol{} + 3\ \text{Fatty acids{} \xrightarrow{\text{esterase{}} \text{Triglyceride{} + 3\ \mathrm{H_2O{}$$
 
 This is a **condensation reaction** (water is released).
 
 ### 37.2 Triglyceride Breakdown (Hydrolysis)
 
-$$\text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{H_2O{} \xrightarrow{\text{'\{'}lipase{'\}'}} \text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'}$$
+$$\text{Triglyceride{} + 3\ \mathrm{H_2O{} \xrightarrow{\text{lipase{}} \text{Glycerol{} + 3\ \text{Fatty acids{}$$
 
 This is a **hydrolysis reaction** (water is used to break bonds).
 
@@ -1748,7 +1748,7 @@ All amino acids share the same basic structure:
 
 Amino acids join by condensation reactions (peptide bond formation):
 
-$$\text{'\{'}Amino acid 1{'\}'} + \text{'\{'}Amino acid 2{'\}'} \to \text{'\{'}Dipeptide{'\}'} + \mathrm{H_2O{}$$
+$$\text{Amino acid 1{} + \text{Amino acid 2{} \to \text{Dipeptide{} + \mathrm{H_2O{}$$
 
 The peptide bond forms between the carboxyl group of one amino acid and the amino group of the next. The bond is a C--N bond (specifically, a carbon-nitrogen single bond with partial double-bond character due to resonance).
 

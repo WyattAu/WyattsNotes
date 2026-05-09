@@ -20,7 +20,7 @@ hide_table_of_contents: true
 Angle with ground: $\tan \theta = \frac{9}{3} = 3$. $\theta = \arctan(3) \approx 71.6^\circ$.
 
 (c) The angle of depression from the cliff equals the angle of elevation from the boat: $35^\circ$.
-$\tan 35^\circ = \frac{\text{'\{'}opposite{'\}'}}{\text{'\{'}adjacent{'\}'}} = \frac{80}{d}$. $d = \frac{80}{\tan 35^\circ} = \frac{80}{0.7002} \approx 114.3$ m.
+$\tan 35^\circ = \frac{\text{opposite{}}{\text{adjacent{}} = \frac{80}{d}$. $d = \frac{80}{\tan 35^\circ} = \frac{80}{0.7002} \approx 114.3$ m.
 
 ### UT-2: Area and Volume
 **Question:** (a) Calculate the area of a triangle with base 12 cm and height 8 cm. (b) A cylinder has radius 5 cm and height 10 cm. Calculate its volume and total surface area. (c) A cone has slant height 13 cm and base radius 5 cm. Calculate its volume. (d) A sphere has surface area $144\pi$ cm$^2$. Calculate its volume.
@@ -66,7 +66,7 @@ Angle between tangent and diameter $= 90^\circ$ (tangent perpendicular to radius
 
 **Solution:**
 
-(a) Volume $= \frac{1}{3} \times \text{'\{'}base area{'\}'} \times \text{'\{'}height{'\}'} = \frac{1}{3} \times 100 \times 12 = 400$ cm$^3$.
+(a) Volume $= \frac{1}{3} \times \text{base area{} \times \text{height{} = \frac{1}{3} \times 100 \times 12 = 400$ cm$^3$.
 
 (b) Distance from centre of base to a corner $= \sqrt{5^2 + 5^2} = \sqrt{50} = 5\sqrt{2}$ cm.
 Slant edge $= \sqrt{12^2 + (5\sqrt{2})^2} = \sqrt{144 + 50} = \sqrt{194} \approx 13.93$ cm.

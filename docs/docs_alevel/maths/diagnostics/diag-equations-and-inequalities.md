@@ -92,14 +92,14 @@ The equation $|A| = |B|$ is equivalent to $A = B$ or $A = -B$.
 
 $$x^2 - 7x + 10 = 0$$
 $$(x-2)(x-5) = 0$$
-$$x = 2 \quad \text{'\{'}or{'\}'} \quad x = 5$$
+$$x = 2 \quad \text{or{} \quad x = 5$$
 
 **Case 2:** $x^2 - 5x + 6 = -(2x - 4)$
 
 $$x^2 - 5x + 6 = -2x + 4$$
 $$x^2 - 3x + 2 = 0$$
 $$(x-1)(x-2) = 0$$
-$$x = 1 \quad \text{'\{'}or{'\}'} \quad x = 2$$
+$$x = 1 \quad \text{or{} \quad x = 2$$
 
 **Verification:**
 

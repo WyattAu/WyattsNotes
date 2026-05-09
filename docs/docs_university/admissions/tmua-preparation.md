@@ -157,10 +157,10 @@ Standard deviation $s = \sqrt{s^2}$. Interquartile range: $Q_3 - Q_1$.
 
 **Discrete distributions.**
 
-*Binomial distribution.* $X \sim \text{'\{'}Bin{'\}'}(n, p)$: $P(X = k) = \binom{n}{k}p^k(1-p)^{n-k}$.
+*Binomial distribution.* $X \sim \text{Bin{}(n, p)$: $P(X = k) = \binom{n}{k}p^k(1-p)^{n-k}$.
 Mean $np$, variance $np(1-p)$.
 
-*Geometric distribution.* $X \sim \text{'\{'}Geo{'\}'}(p)$: $P(X = k) = (1-p)^{k-1}p$ for $k = 1, 2, 3, \ldots$.
+*Geometric distribution.* $X \sim \text{Geo{}(p)$: $P(X = k) = (1-p)^{k-1}p$ for $k = 1, 2, 3, \ldots$.
 Mean $1/p$, variance $(1-p)/p^2$.
 
 *Normal distribution.* $X \sim N(\mu, \sigma^2)$. The standard normal $Z = \frac{X - \mu}{\sigma}$
@@ -301,7 +301,7 @@ incomplete.
 
 > A random variable $X$ has probability density function:
 >
-> $$f(x) = \begin{cases} kx & 0 \leq x \leq 2 \\ 0 & \text{'\{'}otherwise{'\}'} \end{cases}$$
+> $$f(x) = \begin{cases} kx & 0 \leq x \leq 2 \\ 0 & \text{otherwise{} \end{cases}$$
 >
 > What is the value of $k$, and what is $\mathbb{'\{'}E{'\}'}(X)$?
 
@@ -352,7 +352,7 @@ $$t = \frac{\ln 2}{0.2} = 5 \ln 2$$
 into the constant. Actually, $5\ln 2 \approx 3.47$, and $\ln 2 \approx 0.693$. Let me reconsider.
 
 The doubling time is $t = \frac{\ln 2}{0.2} = 5\ln 2$. The half-life formula gives
-$t_{\text{'\{'}double{'\}'}} = \frac{\ln 2}{k}$ where $k = 0.2$, so $t = \frac{\ln 2}{0.2} = 5\ln 2$.
+$t_{\text{double{}} = \frac{\ln 2}{k}$ where $k = 0.2$, so $t = \frac{\ln 2}{0.2} = 5\ln 2$.
 
 Option A says $\ln 2$ hours, which is $\frac{\ln 2}{0.2}/5 = \frac{5\ln 2}{5} = \ln 2$. This would be
 the doubling time if $k = 1$, not $k = 0.2$.

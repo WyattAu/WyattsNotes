@@ -822,7 +822,7 @@ For $\lambda = 2$: $\begin{pmatrix}1&1\\0&0\end{pmatrix}\mathbf{'\{'}v{'\}'} = \
 
 **Solution.** $\det(\mathbf{'\{'}T{'\}'}) = 6 - (-1) = 7$.
 
-Original area $= \dfrac{1}{2}$. Image area $= |\det(\mathbf{'\{'}T{'\}'})| \times \text{'\{'}original area{'\}'} = 7 \times \dfrac{1}{2} = \boxed{3.5}$.
+Original area $= \dfrac{1}{2}$. Image area $= |\det(\mathbf{'\{'}T{'\}'})| \times \text{original area{} = 7 \times \dfrac{1}{2} = \boxed{3.5}$.
 
 ### Example 8.5: Commutator and non-commuting matrices
 
@@ -848,7 +848,7 @@ $S = \begin{pmatrix}0&-1\\1&0\end{pmatrix}$.
 
 $RS = \begin{pmatrix}-\frac{1}{2}&\frac{\sqrt{3}}{2}\\\frac{\sqrt{3}}{2}&\frac{1}{2}\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix} = \begin{pmatrix}\frac{\sqrt{3}}{2}&\frac{1}{2}\\\frac{1}{2}&-\frac{\sqrt{3}}{2}\end{pmatrix}$.
 
-$\det(RS) = -\dfrac{3}{4} - \dfrac{1}{4} = -1$ and $\text{'\{'}tr{'\}'}(RS) = 0$, confirming this is a reflection.
+$\det(RS) = -\dfrac{3}{4} - \dfrac{1}{4} = -1$ and $\text{tr{}(RS) = 0$, confirming this is a reflection.
 
 ### Example 8.7: Finding the inverse of a 3×3 matrix
 
@@ -916,7 +916,7 @@ The characteristic equation: $\lambda^2 - (a+d)\lambda + \det(\mathbf{'\{'}M{'\}
 
 $(\lambda-2)(\lambda-3) = 0$.
 
-$\boxed{\lambda = 2 \text{'\{'} and {'\}'} \lambda = 3}$
+$\boxed{\lambda = 2 \text{ and {} \lambda = 3}$
 
 </details>
 
@@ -948,7 +948,7 @@ Cayley--Hamilton connects matrices to polynomial algebra. See [Further Algebra](
 | $(\mathbf{'\{'}AB{'\}'})^{-1}$ | $\mathbf{'\{'}B{'\}'}^{-1}\mathbf{'\{'}A{'\}'}^{-1}$ |
 | $(\mathbf{'\{'}AB{'\}'})^T$ | $\mathbf{'\{'}B{'\}'}^T\mathbf{'\{'}A{'\}'}^T$ |
 | $\det(\mathbf{'\{'}AB{'\}'})$ | $\det(\mathbf{'\{'}A{'\}'})\det(\mathbf{'\{'}B{'\}'})$ |
-| Trace of product | $\text{'\{'}tr{'\}'}(\mathbf{'\{'}AB{'\}'}) = \text{'\{'}tr{'\}'}(\mathbf{'\{'}BA{'\}'})$ |
+| Trace of product | $\text{tr{}(\mathbf{'\{'}AB{'\}'}) = \text{tr{}(\mathbf{'\{'}BA{'\}'})$ |
 | Cayley--Hamilton | $\mathbf{'\{'}A{'\}'}$ satisfies its own characteristic equation |
 | Diagonalisability | All eigenvalues must have geometric multiplicity $=$ algebraic multiplicity |
 | Area scaling | $|\det(\mathbf{'\{'}T{'\}'})| \times$ original area $=$ image area |
@@ -1110,10 +1110,10 @@ $\det(\mathbf{'\{'}A{'\}'}) = 1(0-48) - 2(0-42) + 3(32-35) = -48 + 84 - 9 = \box
 <details>
 <summary>Solution</summary>
 
-The characteristic polynomial is $p(\lambda) = (-1)^n[\lambda^n - (\text{'\{'}tr{'\}'}\,\mathbf{'\{'}A{'\}'})\lambda^{n-1} + \cdots + (-1)^n\det(\mathbf{'\{'}A{'\}'})]$.
+The characteristic polynomial is $p(\lambda) = (-1)^n[\lambda^n - (\text{tr{}\,\mathbf{'\{'}A{'\}'})\lambda^{n-1} + \cdots + (-1)^n\det(\mathbf{'\{'}A{'\}'})]$.
 
 By Vieta's formulae, the coefficient of $\lambda^{n-1}$ equals $-(\lambda_1 + \lambda_2 + \cdots + \lambda_n)$.
 
-Therefore $\text{'\{'}tr{'\}'}\,\mathbf{'\{'}A{'\}'} = \lambda_1 + \lambda_2 + \cdots + \lambda_n$. $\blacksquare$
+Therefore $\text{tr{}\,\mathbf{'\{'}A{'\}'} = \lambda_1 + \lambda_2 + \cdots + \lambda_n$. $\blacksquare$
 
 </details>

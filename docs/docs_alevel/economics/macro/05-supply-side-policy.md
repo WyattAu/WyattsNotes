@@ -801,17 +801,17 @@ The degree holder earns approximately 23.5% more than the A-level holder.
 - Direct cost: tuition fees (GBP 9,250/year) + maintenance (GBP 6,000/year) = GBP 15,250/year for 3 years = GBP 45,750.
 - Opportunity cost: foregone earnings (GBP 22,000/year for 3 years) = GBP 66,000.
 - Total cost: GBP 111,750.
-- Annual earnings premium: if average non-graduate earns GBP 28,000, graduate earns $28\,000 \times 1.235 = \text{'\{'}GBP {'\}'} 34\,580$. Premium = GBP 6,580/year.
+- Annual earnings premium: if average non-graduate earns GBP 28,000, graduate earns $28\,000 \times 1.235 = \text{GBP {} 34\,580$. Premium = GBP 6,580/year.
 - Payback period: $111\,750 / 6\,580 = 17$ years (ignoring discounting).
 
 **Present value calculation (discount rate 5%):**
-$$PV = \sum_{t=4}^{43} \frac{6580}{1.05^t} = 6580 \times \frac{1 - 1.05^{-40}}{0.05 \times 1.05^3} = 6580 \times 15.046 = \text{'\{'}GBP {'\}'} 99\,003$$
+$$PV = \sum_{t=4}^{43} \frac{6580}{1.05^t} = 6580 \times \frac{1 - 1.05^{-40}}{0.05 \times 1.05^3} = 6580 \times 15.046 = \text{GBP {} 99\,003$$
 
-$$NPV = 99\,003 - 111\,750 = -\text{'\{'}GBP {'\}'} 12\,747$$
+$$NPV = 99\,003 - 111\,750 = -\text{GBP {} 12\,747$$
 
 At a 5% discount rate, the NPV is negative. At 3%:
-$$PV = 6580 \times \frac{1 - 1.03^{-40}}{0.03 \times 1.03^3} = 6580 \times 21.35 = \text{'\{'}GBP {'\}'} 140\,483$$
-$$NPV = 140\,483 - 111\,750 = +\text{'\{'}GBP {'\}'} 28\,733$$
+$$PV = 6580 \times \frac{1 - 1.03^{-40}}{0.03 \times 1.03^3} = 6580 \times 21.35 = \text{GBP {} 140\,483$$
+$$NPV = 140\,483 - 111\,750 = +\text{GBP {} 28\,733$$
 
 The investment is sensitive to the discount rate. Lower discount rates (reflecting social rather than private returns, including positive externalities of education) make the investment more attractive.
 
@@ -865,19 +865,19 @@ Supply-side policy increased output by 80 AND reduced the price level by 40. Thi
 **Example.** A firm is deciding whether to invest in a machine costing GBP 100,000. The machine generates annual revenue of GBP 25,000 for 5 years, after which it has zero scrap value.
 
 **Without tax:**
-$$NPV = \sum_{t=1}^{5} \frac{25\,000}{1.10^t} - 100\,000 = 25\,000 \times 3.791 - 100\,000 = 94\,775 - 100\,000 = -\text{'\{'}GBP {'\}'} 5\,225$$
+$$NPV = \sum_{t=1}^{5} \frac{25\,000}{1.10^t} - 100\,000 = 25\,000 \times 3.791 - 100\,000 = 94\,775 - 100\,000 = -\text{GBP {} 5\,225$$
 
 The project is NOT profitable without tax. The firm does not invest.
 
 **With a 40% investment tax credit:**
-The firm receives a tax credit of $0.40 \times 100\,000 = \text{'\{'}GBP {'\}'} 40\,000$.
-Net cost of machine: $100\,000 - 40\,000 = \text{'\{'}GBP {'\}'} 60\,000$.
-$$NPV = 94\,775 - 60\,000 = +\text{'\{'}GBP {'\}'} 34\,775$$
+The firm receives a tax credit of $0.40 \times 100\,000 = \text{GBP {} 40\,000$.
+Net cost of machine: $100\,000 - 40\,000 = \text{GBP {} 60\,000$.
+$$NPV = 94\,775 - 60\,000 = +\text{GBP {} 34\,775$$
 
 The project is now profitable. The investment tax credit has incentivised investment.
 
 **With a 19% corporate tax rate (and no tax credit):**
-After-tax revenue: $25\,000 \times (1 - 0.19) = \text{'\{'}GBP {'\}'} 20\,250$ per year.
+After-tax revenue: $25\,000 \times (1 - 0.19) = \text{GBP {} 20\,250$ per year.
 Capital allowances: 18% writing-down allowance (WDA) on a reducing balance.
 
 Year 1: Allowance = $100\,000 \times 0.18 = 18\,000$. Tax saved = $18\,000 \times 0.19 = 3\,420$.
@@ -886,11 +886,11 @@ Year 3: Allowance = $67\,240 \times 0.18 = 12\,103$. Tax saved = $12\,103 \times
 Year 4: Allowance = $55\,137 \times 0.18 = 9\,925$. Tax saved = $9\,925 \times 0.19 = 1\,886$.
 Year 5: Allowance = $45\,212 \times 0.18 = 8\,138$. Tax saved = $8\,138 \times 0.19 = 1\,546$.
 
-$$NPV = \sum_{t=1}^{5} \frac{20\,250}{1.10^t} + \sum_{t=1}^{5} \frac{\text{'\{'}Tax saved{'\}'}_t}{1.10^t} - 100\,000$$
+$$NPV = \sum_{t=1}^{5} \frac{20\,250}{1.10^t} + \sum_{t=1}^{5} \frac{\text{Tax saved{}_t}{1.10^t} - 100\,000$$
 
 $$= 20\,250 \times 3.791 + \frac{3\,420}{1.10} + \frac{2\,804}{1.10^2} + \frac{2\,300}{1.10^3} + \frac{1\,886}{1.10^4} + \frac{1\,546}{1.10^5} - 100\,000$$
 
-$$= 76\,767 + 3\,109 + 2\,318 + 1\,728 + 1\,288 + 960 - 100\,000 = -\text{'\{'}GBP {'\}'} 13\,830$$
+$$= 76\,767 + 3\,109 + 2\,318 + 1\,728 + 1\,288 + 960 - 100\,000 = -\text{GBP {} 13\,830$$
 
 Even with capital allowances, the project is not profitable under a 19% corporate tax. This illustrates that corporate tax creates a tax wedge on investment, reducing the capital stock below the socially optimal level. Supply-side policies (higher capital allowances, investment tax credits, lower corporate tax rates) can close this gap.
 
@@ -1110,7 +1110,7 @@ After: $PS = (2 - 1.5)(150) - \frac{1}{2}(0.5)(150) = 75 - 37.5 = 37.5$.
 
 Producer surplus falls from 75 to 37.5 (change: -37.5). Incumbent taxi drivers are worse off.
 
-**Licence holders:** 20,000 licence holders lose the value of their medallions: $20\,000 \times 50\,000 = \text{'\{'}GBP {'\}'} 1\,000\,000 = \text{'\{'}GBP {'\}'} 1\text{'\{'}bn{'\}'}$. This is a capital loss for incumbent taxi drivers.
+**Licence holders:** 20,000 licence holders lose the value of their medallions: $20\,000 \times 50\,000 = \text{GBP {} 1\,000\,000 = \text{GBP {} 1\text{bn{}$. This is a capital loss for incumbent taxi drivers.
 
 **Net welfare change:** $+150 - 37.5 = +112.5$. The medallion loss of 1,000 is a TRANSFER (from medallion owners to consumers), not a net welfare loss. The net welfare gain is 112.5.
 
@@ -1134,7 +1134,7 @@ Producer surplus falls from 75 to 37.5 (change: -37.5). Incumbent taxi drivers a
 
 **Data:**
 - Number of apprentices: 750,000 per year.
-- Government cost: $750\,000 \times 5\,000 = \text{'\{'}GBP {'\}'} 3.75\text{'\{'}bn{'\}'}$.
+- Government cost: $750\,000 \times 5\,000 = \text{GBP {} 3.75\text{bn{}$.
 - Completion rate: 60% (450,000 complete).
 - Earnings premium for completers: GBP 7,000 per year (above the non-apprentice alternative).
 - Earnings premium for non-completers: GBP 2,000 per year.
@@ -1143,29 +1143,29 @@ Producer surplus falls from 75 to 37.5 (change: -37.5). Incumbent taxi drivers a
 **Cost-benefit calculation:**
 
 **Benefits:**
-Completers: $450\,000 \times 7\,000 \times 40 = \text{'\{'}GBP {'\}'} 126\text{'\{'}bn{'\}'}$ (undiscounted).
-Non-completers: $300\,000 \times 2\,000 \times 40 = \text{'\{'}GBP {'\}'} 24\text{'\{'}bn{'\}'}$ (undiscounted).
+Completers: $450\,000 \times 7\,000 \times 40 = \text{GBP {} 126\text{bn{}$ (undiscounted).
+Non-completers: $300\,000 \times 2\,000 \times 40 = \text{GBP {} 24\text{bn{}$ (undiscounted).
 Total benefits: GBP 150bn.
 
 **Present value (3.5% discount rate):**
-Completers: $450\,000 \times 7\,000 \times \frac{1 - 1.035^{-40}}{0.035} = 3.15 \times 10^9 \times 21.4 = \text{'\{'}GBP {'\}'} 67.4\text{'\{'}bn{'\}'}$.
-Non-completers: $300\,000 \times 2\,000 \times 21.4 = \text{'\{'}GBP {'\}'} 12.8\text{'\{'}bn{'\}'}$.
+Completers: $450\,000 \times 7\,000 \times \frac{1 - 1.035^{-40}}{0.035} = 3.15 \times 10^9 \times 21.4 = \text{GBP {} 67.4\text{bn{}$.
+Non-completers: $300\,000 \times 2\,000 \times 21.4 = \text{GBP {} 12.8\text{bn{}$.
 Total PV of benefits: GBP 80.2bn.
 
 **Costs (present value):**
-Government subsidy: $3.75 \times 40 = \text{'\{'}GBP {'\}'} 150\text{'\{'}bn{'\}'}$ (undiscounted over 40 years).
-Wait, the subsidy is annual. PV of costs: $3.75 \times \frac{1 - 1.035^{-40}}{0.035} = 3.75 \times 21.4 = \text{'\{'}GBP {'\}'} 80.3\text{'\{'}bn{'\}'}$.
+Government subsidy: $3.75 \times 40 = \text{GBP {} 150\text{bn{}$ (undiscounted over 40 years).
+Wait, the subsidy is annual. PV of costs: $3.75 \times \frac{1 - 1.035^{-40}}{0.035} = 3.75 \times 21.4 = \text{GBP {} 80.3\text{bn{}$.
 
 But the subsidy is only paid for the duration of the apprenticeship (typically 2-4 years), not for 40 years. Let me recalculate:
 
-PV of costs: $3.75\text{'\{'}bn{'\}'} \times \frac{1 - 1.035^{-2}}{0.035} = 3.75 \times 1.90 = \text{'\{'}GBP {'\}'} 7.13\text{'\{'}bn{'\}'}$ (assuming 2-year apprenticeships).
+PV of costs: $3.75\text{bn{} \times \frac{1 - 1.035^{-2}}{0.035} = 3.75 \times 1.90 = \text{GBP {} 7.13\text{bn{}$ (assuming 2-year apprenticeships).
 
 **NPV = 80.2 - 7.13 = GBP 73.1bn.** The programme has a very large positive NPV.
 
 **Benefit-cost ratio:** $80.2 / 7.13 = 11.2$. Every GBP 1 of government spending generates GBP 11.2 in lifetime earnings gains.
 
 **Fiscal return:** Higher earnings generate additional tax revenue. If the average tax rate on the earnings premium is 30%:
-Additional tax revenue $= 0.3 \times 80.2 = \text{'\{'}GBP {'\}'} 24.1\text{'\{'}bn{'\}'}$.
+Additional tax revenue $= 0.3 \times 80.2 = \text{GBP {} 24.1\text{bn{}$.
 The government recovers 24.1bn in tax from an investment of 7.13bn -- a fiscal return of 338%.
 
 **Distributional effects:**

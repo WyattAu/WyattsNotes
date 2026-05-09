@@ -546,13 +546,13 @@ Since $\chi^2 = 4.00 < 7.82$, we accept the null hypothesis: the observed result
 
 The original mRNA sequence (reading frame starting at the first codon) is:
 
-$$\text{'\{'}AUG-CCU-GAC-UUU-GGC-AAG-UAA{'\}'}$$
-$$\text{'\{'}Met - Pro - Asp - Phe - Gly - Lys - Stop{'\}'}$$
+$$\text{AUG-CCU-GAC-UUU-GGC-AAG-UAA{}$$
+$$\text{Met - Pro - Asp - Phe - Gly - Lys - Stop{}$$
 
 A deletion of the third nucleotide (G) produces:
 
-$$\text{'\{'}AUG-CCU-ACU-UUG-GCA-AGU-AA...{'\}'}$$
-$$\text{'\{'}Met - Pro - Thr - Leu - Ala - Ser - ...{'\}'}$$
+$$\text{AUG-CCU-ACU-UUG-GCA-AGU-AA...{}$$
+$$\text{Met - Pro - Thr - Leu - Ala - Ser - ...{}$$
 
 Every amino acid after the deletion site has changed, and the original stop codon is no longer in frame.
 Translation continues past the original stop codon until a new stop codon is encountered, producing a
@@ -896,10 +896,10 @@ At each replication fork:
 
 | Generation | Strand Composition | Density |
 | ---------- | ----------------- | ------- |
-| 0 (parent) | All $\mathrm{^{15}N\text{'\{'}-{'\}'}^{15}N}$ | Heavy |
-| 1 | All $\mathrm{^{15}N\text{'\{'}-{'\}'}^{14}N}$ (hybrid) | Intermediate |
-| 2 | 50% hybrid, 50% $\mathrm{^{14}N\text{'\{'}-{'\}'}^{14}N}$ | Two bands |
-| 3 | 25% hybrid, 75% $\mathrm{^{14}N\text{'\{'}-{'\}'}^{14}N}$ | Two bands |
+| 0 (parent) | All $\mathrm{^{15}N\text{-{}^{15}N}$ | Heavy |
+| 1 | All $\mathrm{^{15}N\text{-{}^{14}N}$ (hybrid) | Intermediate |
+| 2 | 50% hybrid, 50% $\mathrm{^{14}N\text{-{}^{14}N}$ | Two bands |
+| 3 | 25% hybrid, 75% $\mathrm{^{14}N\text{-{}^{14}N}$ | Two bands |
 | n | $\frac{1}{2^{n-1}}$ hybrid, $1 - \frac{1}{2^{n-1}}$ light | Two bands |
 
 After $n$ generations, the proportion of hybrid (intermediate density) DNA is $\frac{1}{2^{n-1}}$.
@@ -954,7 +954,7 @@ In eukaryotes, the primary transcript (pre-mRNA) undergoes three modifications:
 
 | Relationship | Calculation |
 | ------------ | ----------- |
-| Amino acids in protein = | $\frac{\text{'\{'}mRNA nucleotides{'\}'}}{3}$ (subtract 3 for stop codon) |
+| Amino acids in protein = | $\frac{\text{mRNA nucleotides{}}{3}$ (subtract 3 for stop codon) |
 | mRNA nucleotides = | Number of amino acids $\times 3$ (plus 3 for stop codon) |
 | DNA template strand nucleotides = | Same as mRNA nucleotides (plus introns in eukaryotes) |
 | tRNA molecules required = | Number of amino acids (one per amino acid) |
@@ -1316,7 +1316,7 @@ DNA fingerprinting analyses highly variable regions of the genome:
 
 If each STR locus has a probability of a random match of approximately 0.1 (10%), and 10 loci are analysed:
 
-$$P(\text{'\{'}random match at all 10 loci{'\}'}) = 0.1^{10} = 1 \times 10^{-10} \text{'\{'} (1 in 10 billion){'\}'}$$
+$$P(\text{random match at all 10 loci{}) = 0.1^{10} = 1 \times 10^{-10} \text{ (1 in 10 billion){}$$
 
 This is well below the world population ($\approx 8$ billion), so the match is essentially unique.
 
@@ -1544,7 +1544,7 @@ DNA ligase joins DNA fragments by forming phosphodiester bonds between the 3'-OH
 
 If a human cell has 6.4 Gbp (3.2 billion base pairs per haploid genome; 6.4 billion in diploid) and DNA polymerase adds ~50 nucleotides per second:
 
-$$\text{'\{'}Time for leading strand{'\}'} = \frac{3.2 \times 10^9}{50} = 64 \times 10^6\ \text{'\{'}seconds{'\}'} \approx 740\ \text{'\{'}days{'\}'}$$
+$$\text{Time for leading strand{} = \frac{3.2 \times 10^9}{50} = 64 \times 10^6\ \text{seconds{} \approx 740\ \text{days{}$$
 
 In practice, replication takes hours because:
 - Multiple replication origins (eukaryotes have ~10,000 origins; bacteria have one).

@@ -13,44 +13,44 @@ hide_table_of_contents: true
 
 **Question:**
 
-A plane electromagnetic wave in vacuum has an electric field amplitude of $E_0 = 48\,\text{'\{'}V{'\}'}\,\text{'\{'}m{'\}'}^{-1}$ and frequency $f = 5.0 \times 10^{14}\,\text{'\{'}Hz{'\}'}$.
+A plane electromagnetic wave in vacuum has an electric field amplitude of $E_0 = 48\,\text{V{}\,\text{m{}^{-1}$ and frequency $f = 5.0 \times 10^{14}\,\text{Hz{}$.
 
 (a) Calculate the wavelength, the magnetic field amplitude $B_0$, and the intensity of the wave.
 
-(b) The wave is incident normally on a surface of area $0.010\,\text{'\{'}m{'\}'}^2$. Calculate the radiation pressure on the surface if it is (i) perfectly absorbing and (ii) perfectly reflecting.
+(b) The wave is incident normally on a surface of area $0.010\,\text{m{}^2$. Calculate the radiation pressure on the surface if it is (i) perfectly absorbing and (ii) perfectly reflecting.
 
 (c) Calculate the energy of a single photon of this radiation.
 
-Take $c = 3.00 \times 10^8\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-1}$, $\varepsilon_0 = 8.85 \times 10^{-12}\,\text{'\{'}F{'\}'}\,\text{'\{'}m{'\}'}^{-1}$, $\mu_0 = 4\pi \times 10^{-7}\,\text{'\{'}H{'\}'}\,\text{'\{'}m{'\}'}^{-1}$, $h = 6.63 \times 10^{-34}\,\text{'\{'}J{'\}'}\,\text{'\{'}s{'\}'}$.
+Take $c = 3.00 \times 10^8\,\text{m{}\,\text{s{}^{-1}$, $\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F{}\,\text{m{}^{-1}$, $\mu_0 = 4\pi \times 10^{-7}\,\text{H{}\,\text{m{}^{-1}$, $h = 6.63 \times 10^{-34}\,\text{J{}\,\text{s{}$.
 
 **Solution:**
 
-(a) Wavelength: $\lambda = c/f = 3.00 \times 10^8/(5.0 \times 10^{14}) = 6.0 \times 10^{-7}\,\text{'\{'}m{'\}'} = 600\,\text{'\{'}nm{'\}'}$ (visible light, orange)
+(a) Wavelength: $\lambda = c/f = 3.00 \times 10^8/(5.0 \times 10^{14}) = 6.0 \times 10^{-7}\,\text{m{} = 600\,\text{nm{}$ (visible light, orange)
 
-Magnetic field amplitude: $B_0 = E_0/c = 48/(3.00 \times 10^8) = 1.60 \times 10^{-7}\,\text{'\{'}T{'\}'}$
+Magnetic field amplitude: $B_0 = E_0/c = 48/(3.00 \times 10^8) = 1.60 \times 10^{-7}\,\text{T{}$
 
-Intensity: $I = \frac{1}{2}\varepsilon_0 c E_0^2 = 0.5 \times 8.85 \times 10^{-12} \times 3.00 \times 10^8 \times 2304 = 0.5 \times 8.85 \times 10^{-12} \times 6.912 \times 10^{11} = 3.06\,\text{'\{'}W{'\}'}\,\text{'\{'}m{'\}'}^{-2}$
+Intensity: $I = \frac{1}{2}\varepsilon_0 c E_0^2 = 0.5 \times 8.85 \times 10^{-12} \times 3.00 \times 10^8 \times 2304 = 0.5 \times 8.85 \times 10^{-12} \times 6.912 \times 10^{11} = 3.06\,\text{W{}\,\text{m{}^{-2}$
 
-Alternatively: $I = E_0 B_0/(2\mu_0) = 48 \times 1.60 \times 10^{-7}/(2 \times 4\pi \times 10^{-7}) = 7.68 \times 10^{-6}/(2.513 \times 10^{-6}) = 3.06\,\text{'\{'}W{'\}'}\,\text{'\{'}m{'\}'}^{-2}$
+Alternatively: $I = E_0 B_0/(2\mu_0) = 48 \times 1.60 \times 10^{-7}/(2 \times 4\pi \times 10^{-7}) = 7.68 \times 10^{-6}/(2.513 \times 10^{-6}) = 3.06\,\text{W{}\,\text{m{}^{-2}$
 
 (b) Radiation pressure:
 
-(i) Perfectly absorbing: $P = I/c = 3.06/(3.00 \times 10^8) = 1.02 \times 10^{-8}\,\text{'\{'}Pa{'\}'}$
+(i) Perfectly absorbing: $P = I/c = 3.06/(3.00 \times 10^8) = 1.02 \times 10^{-8}\,\text{Pa{}$
 
-Force on surface: $F = PA = 1.02 \times 10^{-8} \times 0.010 = 1.02 \times 10^{-10}\,\text{'\{'}N{'\}'}$
+Force on surface: $F = PA = 1.02 \times 10^{-8} \times 0.010 = 1.02 \times 10^{-10}\,\text{N{}$
 
-(ii) Perfectly reflecting: $P = 2I/c = 2.04 \times 10^{-8}\,\text{'\{'}Pa{'\}'}$
+(ii) Perfectly reflecting: $P = 2I/c = 2.04 \times 10^{-8}\,\text{Pa{}$
 
-Force: $F = 2.04 \times 10^{-10}\,\text{'\{'}N{'\}'}$
+Force: $F = 2.04 \times 10^{-10}\,\text{N{}$
 
-(c) $E_{\text{'\{'}photon{'\}'}} = hf = 6.63 \times 10^{-34} \times 5.0 \times 10^{14} = 3.32 \times 10^{-19}\,\text{'\{'}J{'\}'} = 2.07\,\text{'\{'}eV{'\}'}$
+(c) $E_{\text{photon{}} = hf = 6.63 \times 10^{-34} \times 5.0 \times 10^{14} = 3.32 \times 10^{-19}\,\text{J{} = 2.07\,\text{eV{}$
 
 ---
 ### UT-2: Intensity and Amplitude Relationship
 
 **Question:**
 
-Two coherent sources $S_1$ and $S_2$ emit waves of wavelength $\lambda = 0.50\,\text{'\{'}m{'\}'}$ in phase. A point $P$ is located $4.0\,\text{'\{'}m{'\}'}$ from $S_1$ and $5.0\,\text{'\{'}m{'\}'}$ from $S_2$.
+Two coherent sources $S_1$ and $S_2$ emit waves of wavelength $\lambda = 0.50\,\text{m{}$ in phase. A point $P$ is located $4.0\,\text{m{}$ from $S_1$ and $5.0\,\text{m{}$ from $S_2$.
 
 (a) Determine whether point $P$ is at a maximum, minimum, or neither, and calculate the ratio of the amplitude at $P$ to the amplitude from a single source.
 
@@ -60,7 +60,7 @@ Two coherent sources $S_1$ and $S_2$ emit waves of wavelength $\lambda = 0.50\,\
 
 **Solution:**
 
-(a) Path difference: $\Delta x = 5.0 - 4.0 = 1.0\,\text{'\{'}m{'\}'}$
+(a) Path difference: $\Delta x = 5.0 - 4.0 = 1.0\,\text{m{}$
 
 $\Delta x/\lambda = 1.0/0.50 = 2.0$
 
@@ -127,24 +127,24 @@ Without the middle polariser, at $\theta = 90^\circ$ the transmitted intensity w
 
 **Question:**
 
-A galaxy is moving away from Earth at a speed of $3.0 \times 10^6\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-1}$. A spectral line of wavelength $656\,\text{'\{'}nm{'\}'}$ (hydrogen alpha) is observed from this galaxy.
+A galaxy is moving away from Earth at a speed of $3.0 \times 10^6\,\text{m{}\,\text{s{}^{-1}$. A spectral line of wavelength $656\,\text{nm{}$ (hydrogen alpha) is observed from this galaxy.
 
 (a) Calculate the observed wavelength of this line. (Use the non-relativistic Doppler formula.)
 
 (b) Calculate the percentage change in the observed frequency.
 
-(c) A space probe approaching Jupiter at $2.0 \times 10^4\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-1}$ transmits a radio signal at $8.4\,\text{'\{'}GHz{'\}'}$. Calculate the frequency received by an observer on Jupiter.
+(c) A space probe approaching Jupiter at $2.0 \times 10^4\,\text{m{}\,\text{s{}^{-1}$ transmits a radio signal at $8.4\,\text{GHz{}$. Calculate the frequency received by an observer on Jupiter.
 
-Take $c = 3.00 \times 10^8\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-1}$.
+Take $c = 3.00 \times 10^8\,\text{m{}\,\text{s{}^{-1}$.
 
 **Solution:**
 
 (a) For a source moving away from the observer:
 
 $$\frac{\Delta\lambda}{\lambda} = \frac{v}{c}$$
-$$\Delta\lambda = \frac{3.0 \times 10^6}{3.00 \times 10^8} \times 656 = 0.010 \times 656 = 6.56\,\text{'\{'}nm{'\}'}$$
+$$\Delta\lambda = \frac{3.0 \times 10^6}{3.00 \times 10^8} \times 656 = 0.010 \times 656 = 6.56\,\text{nm{}$$
 
-Observed wavelength: $\lambda' = 656 + 6.56 = 662.56 \approx 663\,\text{'\{'}nm{'\}'}$ (redshifted)
+Observed wavelength: $\lambda' = 656 + 6.56 = 662.56 \approx 663\,\text{nm{}$ (redshifted)
 
 (b) $f = c/\lambda$, so $\Delta f/f = -\Delta\lambda/\lambda = -v/c = -1.0\%$
 
@@ -153,16 +153,16 @@ The frequency decreases by $1.0\%$.
 (c) The probe approaches Jupiter, so the observed frequency is higher:
 
 $$f' = f\left(\frac{c}{c - v}\right) = 8.4 \times 10^9 \times \frac{3.00 \times 10^8}{3.00 \times 10^8 - 2.0 \times 10^4}$$
-$$= 8.4 \times 10^9 \times \frac{3.00 \times 10^8}{2.9998 \times 10^8} = 8.4 \times 10^9 \times 1.000067 = 8.4006 \times 10^9\,\text{'\{'}Hz{'\}'}$$
+$$= 8.4 \times 10^9 \times \frac{3.00 \times 10^8}{2.9998 \times 10^8} = 8.4 \times 10^9 \times 1.000067 = 8.4006 \times 10^9\,\text{Hz{}$$
 
-The shift is $\Delta f = 5.6 \times 10^5\,\text{'\{'}Hz{'\}'} = 560\,\text{'\{'}kHz{'\}'}$.
+The shift is $\Delta f = 5.6 \times 10^5\,\text{Hz{} = 560\,\text{kHz{}$.
 
 ---
 ### IT-2: Standing Waves on a String (with Oscillations)
 
 **Question:**
 
-A string of length $0.80\,\text{'\{'}m{'\}'}$ and mass $4.0 \times 10^{-3}\,\text{'\{'}kg{'\}'}$ is fixed at both ends and stretched to a tension of $25\,\text{'\{'}N{'\}'}$.
+A string of length $0.80\,\text{m{}$ and mass $4.0 \times 10^{-3}\,\text{kg{}$ is fixed at both ends and stretched to a tension of $25\,\text{N{}$.
 
 (a) Calculate the speed of transverse waves on the string.
 
@@ -172,21 +172,21 @@ A string of length $0.80\,\text{'\{'}m{'\}'}$ and mass $4.0 \times 10^{-3}\,\tex
 
 **Solution:**
 
-(a) Wave speed: $v = \sqrt{T/\mu}$, where $\mu = m/l = 4.0 \times 10^{-3}/0.80 = 5.0 \times 10^{-3}\,\text{'\{'}kg{'\}'}\,\text{'\{'}m{'\}'}^{-1}$
+(a) Wave speed: $v = \sqrt{T/\mu}$, where $\mu = m/l = 4.0 \times 10^{-3}/0.80 = 5.0 \times 10^{-3}\,\text{kg{}\,\text{m{}^{-1}$
 
-$$v = \sqrt{25/(5.0 \times 10^{-3})} = \sqrt{5000} = 70.7\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-1}$$
+$$v = \sqrt{25/(5.0 \times 10^{-3})} = \sqrt{5000} = 70.7\,\text{m{}\,\text{s{}^{-1}$$
 
 (b) For a string fixed at both ends, $f_n = nv/(2l)$:
 
-Fundamental ($n = 1$): $f_1 = 70.7/(2 \times 0.80) = 44.2\,\text{'\{'}Hz{'\}'}$
+Fundamental ($n = 1$): $f_1 = 70.7/(2 \times 0.80) = 44.2\,\text{Hz{}$
 
-Second harmonic ($n = 2$): $f_2 = 2 \times 44.2 = 88.4\,\text{'\{'}Hz{'\}'}$
+Second harmonic ($n = 2$): $f_2 = 2 \times 44.2 = 88.4\,\text{Hz{}$
 
-Third harmonic ($n = 3$): $f_3 = 3 \times 44.2 = 132.6\,\text{'\{'}Hz{'\}'}$
+Third harmonic ($n = 3$): $f_3 = 3 \times 44.2 = 132.6\,\text{Hz{}$
 
 (c) Plucking at the centre excites the odd harmonics ($n = 1, 3, 5, \ldots$) most strongly because the centre is an antinode for odd harmonics and a node for even harmonics. Even harmonics ($n = 2, 4, \ldots$) have a node at the centre, so plucking there does not excite them.
 
-Fundamental wavelength: $\lambda_1 = 2l = 1.60\,\text{'\{'}m{'\}'}$
+Fundamental wavelength: $\lambda_1 = 2l = 1.60\,\text{m{}$
 
 The fundamental mode has one antinode at the centre and nodes at both ends.
 
@@ -195,7 +195,7 @@ The fundamental mode has one antinode at the centre and nodes at both ends.
 
 **Question:**
 
-P-waves (longitudinal) travel through the Earth's crust at $6.0\,\text{'\{'}km{'\}'}\,\text{'\{'}s{'\}'}^{-1}$ and through the mantle at $10.0\,\text{'\{'}km{'\}'}\,\text{'\{'}s{'\}'}^{-1}$. The crust is $35\,\text{'\{'}km{'\}'}$ thick. A P-wave is detected at a seismograph $200\,\text{'\{'}km{'\}'}$ from the epicentre.
+P-waves (longitudinal) travel through the Earth's crust at $6.0\,\text{km{}\,\text{s{}^{-1}$ and through the mantle at $10.0\,\text{km{}\,\text{s{}^{-1}$. The crust is $35\,\text{km{}$ thick. A P-wave is detected at a seismograph $200\,\text{km{}$ from the epicentre.
 
 (a) Calculate the time for the P-wave to reach the seismograph via the direct path through the crust only.
 
@@ -205,13 +205,13 @@ P-waves (longitudinal) travel through the Earth's crust at $6.0\,\text{'\{'}km{'
 
 **Solution:**
 
-(a) Direct path through crust: $t = d/v_{\text{'\{'}crust{'\}'}} = 200/6.0 = 33.3\,\text{'\{'}s{'\}'}$
+(a) Direct path through crust: $t = d/v_{\text{crust{}} = 200/6.0 = 33.3\,\text{s{}$
 
 (b) The wave travels from crust (slower) into mantle (faster), so it bends away from the normal.
 
 Critical angle (for TIR from mantle to crust):
 
-$$\sin\theta_c = \frac{v_{\text{'\{'}crust{'\}'}}}{v_{\text{'\{'}mantle{'\}'}}} = \frac{6.0}{10.0} = 0.60$$
+$$\sin\theta_c = \frac{v_{\text{crust{}}}{v_{\text{mantle{}}} = \frac{6.0}{10.0} = 0.60$$
 $$\theta_c = 36.9^\circ$$
 
 For the direct path, the wave enters the mantle at some angle. Since the wave goes from a slower medium (crust) to a faster medium (mantle), TIR cannot occur at this boundary. TIR only occurs when going from a slower medium to a faster medium if the wave is already inside the slower medium -- which is not the case here. The wave always enters the mantle (it refracts away from the normal).

@@ -106,4 +106,4 @@ Volume $= \frac{11}{6}$ cubic units.
 (c) $\mathbf{'\{'}r{'\}'} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} + \int_0^t \begin{pmatrix} 1+0.75s^2 \\ s \\ 2-0.25s^2 \end{pmatrix}\,ds = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} + \begin{pmatrix} t + 0.25t^3 \\ 0.5t^2 \\ 2t - t^3/12 \end{pmatrix}$.
 
 (d) At $t = 2$: $\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 1+3 \\ 2 \\ 2-1 \end{pmatrix} = \begin{pmatrix} 4 \\ 2 \\ 1 \end{pmatrix}$.
-$\text{'\{'}KE{'\}'} = \frac{1}{2} \times 2 \times (16+4+1) = 21$ J.
+$\text{KE{} = \frac{1}{2} \times 2 \times (16+4+1) = 21$ J.

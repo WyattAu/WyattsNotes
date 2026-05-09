@@ -765,9 +765,9 @@ The polynomial $f(x) = x^3 + ax^2 + bx - 12$ is divisible by $(x - 3)$ and $f(1)
 <details>
 <summary>Solution</summary>
 
-$f(3) = 0$: $27 + 9a + 3b - 12 = 0 \implies 9a + 3b = -15 \implies 3a + b = -5 \quad \text{'\{'}(i){'\}'}$.
+$f(3) = 0$: $27 + 9a + 3b - 12 = 0 \implies 9a + 3b = -15 \implies 3a + b = -5 \quad \text{(i){}$.
 
-$f(1) = -18$: $1 + a + b - 12 = -18 \implies a + b = -7 \quad \text{'\{'}(ii){'\}'}$.
+$f(1) = -18$: $1 + a + b - 12 = -18 \implies a + b = -7 \quad \text{(ii){}$.
 
 (ii) from (i): $2a = 2 \implies a = 1$. From (ii): $b = -8$.
 
@@ -803,7 +803,7 @@ The roots of $x^2 - x + 1 = 0$ are $\omega$ and $\omega^2$ (complex cube roots o
 
 By the remainder theorem for quadratic divisors:
 
-$$f(\omega) = a\omega + b \quad \text{'\{'}and{'\}'} \quad f(\omega^2) = a\omega^2 + b$$
+$$f(\omega) = a\omega + b \quad \text{and{} \quad f(\omega^2) = a\omega^2 + b$$
 
 Since $\omega^2 + \omega + 1 = 0$ (i.e., $\omega^2 = -\omega - 1$) and $\omega^3 = 1$:
 
@@ -856,11 +856,11 @@ $$\frac{n}{6} = \frac{3}{2} \implies n = 9$$
 <details>
 <summary>Solution</summary>
 
-$f(1) = 1 + a + b + c = 4 \implies a + b + c = 3 \quad \text{'\{'}(i){'\}'}$
+$f(1) = 1 + a + b + c = 4 \implies a + b + c = 3 \quad \text{(i){}$
 
-$f(-1) = -1 + a - b + c = -2 \implies a - b + c = -1 \quad \text{'\{'}(ii){'\}'}$
+$f(-1) = -1 + a - b + c = -2 \implies a - b + c = -1 \quad \text{(ii){}$
 
-$f(2) = 8 + 4a + 2b + c = 14 \implies 4a + 2b + c = 6 \quad \text{'\{'}(iii){'\}'}$
+$f(2) = 8 + 4a + 2b + c = 14 \implies 4a + 2b + c = 6 \quad \text{(iii){}$
 
 (i) - (ii): $2b = 4 \implies b = 2$.
 
@@ -896,9 +896,9 @@ Total coefficient of $x^3$: $80 + (-40) = 40$.
 <details>
 <summary>Solution</summary>
 
-$f(-1) = -2 + a - b - 6 = 0 \implies a - b = 8 \quad \text{'\{'}(i){'\}'}$
+$f(-1) = -2 + a - b - 6 = 0 \implies a - b = 8 \quad \text{(i){}$
 
-$f(2) = 16 + 4a + 2b - 6 = 0 \implies 4a + 2b = -10 \implies 2a + b = -5 \quad \text{'\{'}(ii){'\}'}$
+$f(2) = 16 + 4a + 2b - 6 = 0 \implies 4a + 2b = -10 \implies 2a + b = -5 \quad \text{(ii){}$
 
 (i) + (ii): $3a = 3 \implies a = 1$. From (i): $b = -7$.
 

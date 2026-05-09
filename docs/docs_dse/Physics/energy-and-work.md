@@ -613,7 +613,7 @@ This work is stored as elastic potential energy: $E_p = \frac{1}{2}kx^2$.
 
 This is the area of a triangle under the force-extension graph (base $= x$, height $= kx$):
 
-$$E_p = \frac{1}{2} \times \text{'\{'}base{'\}'} \times \text{'\{'}height{'\}'} = \frac{1}{2} \times x \times kx = \frac{1}{2}kx^2$$
+$$E_p = \frac{1}{2} \times \text{base{} \times \text{height{} = \frac{1}{2} \times x \times kx = \frac{1}{2}kx^2$$
 
 ### Derivation: Escape Velocity
 

@@ -1579,7 +1579,7 @@ $$A^+ = V \Sigma^+ U^T$$
 
 where $\Sigma^+$ is obtained from $\Sigma$ by transposing and inverting each non-zero singular value:
 
-$$(\Sigma^+)_{ii} = \begin{cases} 1/\sigma_i & \text{'\{'}if {'\}'} \sigma_i > 0 \\ 0 & \text{'\{'}if {'\}'} \sigma_i = 0 \end{cases}$$
+$$(\Sigma^+)_{ii} = \begin{cases} 1/\sigma_i & \text{if {} \sigma_i > 0 \\ 0 & \text{if {} \sigma_i = 0 \end{cases}$$
 
 **Theorem 8.5.** The pseudoinverse satisfies the four Moore--Penrose conditions:
 

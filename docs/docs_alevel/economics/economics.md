@@ -103,8 +103,8 @@ $$DWL_{tax} = \frac{1}{2} \times t \times \Delta Q$$
 $$DWL_{externality} = \frac{1}{2} \times MEC \times (Q_{mkt} - Q^*)$$
 
 **Tax incidence:**
-$$\text{'\{'}Consumer burden{'\}'} = \frac{PES}{|PED| + PES} \times t$$
-$$\text{'\{'}Producer burden{'\}'} = \frac{|PED|}{|PED| + PES} \times t$$
+$$\text{Consumer burden{} = \frac{PES}{|PED| + PES} \times t$$
+$$\text{Producer burden{} = \frac{|PED|}{|PED| + PES} \times t$$
 
 **Firm behaviour:**
 $$\pi = TR - TC = P \times Q - TC(Q)$$
@@ -120,7 +120,7 @@ Profit max: $MFCL = MRPL$
 
 **National income:**
 $$GDP = C + I + G + (X - M)$$
-$$\text{'\{'}Real GDP{'\}'} = \frac{\text{'\{'}Nominal GDP{'\}'}}{\text{'\{'}GDP Deflator{'\}'}} \times 100$$
+$$\text{Real GDP{} = \frac{\text{Nominal GDP{}}{\text{GDP Deflator{}} \times 100$$
 $$g = \frac{Y_t - Y_{t-1}}{Y_{t-1}} \times 100$$
 
 **Inflation:**
@@ -148,7 +148,7 @@ $$\dot{k} = sy - (n + \delta)k = 0 \Rightarrow k^* = \left(\frac{s}{n + \delta}\
 $$g_Y = g_A + \alpha g_K + (1-\alpha)g_L$$
 
 **Exchange rate:**
-$$\text{'\{'}Real exchange rate{'\}'} = \frac{e \times P_{domestic}}{P_{foreign}}$$
+$$\text{Real exchange rate{} = \frac{e \times P_{domestic}}{P_{foreign}}$$
 
 **Marshall-Lerner condition:**
 $$|PED_X| + |PED_M| > 1$$

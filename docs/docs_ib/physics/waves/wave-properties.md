@@ -292,7 +292,7 @@ $$
 **Open pipe** (open at both ends):
 
 $$
-f_n = \frac{nv}{2L}, \quad n = 1, 2, 3, \ldots
+f_n = \frac`\{nv}`{2L}, \quad n = 1, 2, 3, \ldots
 $$
 
 Both ends are antinodes.
@@ -300,7 +300,7 @@ Both ends are antinodes.
 **Closed pipe** (closed at one end):
 
 $$
-f_n = \frac{nv}{4L}, \quad n = 1, 3, 5, \ldots \mathrm{ (odd harmonics only){}
+f_n = \frac`\{nv}`{4L}, \quad n = 1, 3, 5, \ldots \mathrm{ (odd harmonics only){}
 $$
 
 The closed end is a node, the open end is an antinode.

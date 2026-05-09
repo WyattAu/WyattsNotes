@@ -1815,17 +1815,17 @@ $$\psi(\ldots, \mathbf{'\{'}r{'\}'}_i, \ldots, \mathbf{'\{'}r{'\}'}_j, \ldots) =
 
 For two particles, the properly symmetrised states are:
 
-$$\psi_S = \frac{1}{\sqrt{2}}\left[\psi_a(1)\psi_b(2) + \psi_b(1)\psi_a(2)\right] \quad \text{'\{'}(bosons){'\}'}$$
+$$\psi_S = \frac{1}{\sqrt{2}}\left[\psi_a(1)\psi_b(2) + \psi_b(1)\psi_a(2)\right] \quad \text{(bosons){}$$
 
-$$\psi_A = \frac{1}{\sqrt{2}}\left[\psi_a(1)\psi_b(2) - \psi_b(1)\psi_a(2)\right] \quad \text{'\{'}(fermions){'\}'}$$
+$$\psi_A = \frac{1}{\sqrt{2}}\left[\psi_a(1)\psi_b(2) - \psi_b(1)\psi_a(2)\right] \quad \text{(fermions){}$$
 
 ### 9.2 Exchange Interaction
 
 Even without an explicit interaction potential, the requirement of (anti)symmetry leads to an effective **exchange interaction**. For two electrons in a box, the probability of finding them close together differs between the triplet (spatially antisymmetric, spin symmetric) and singlet (spatially symmetric, spin antisymmetric) states:
 
-$$|\psi_{\text{'\{'}triplet{'\}'}}|^2 = 0 \quad \text{'\{'}when {'\}'} \mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}r{'\}'}_2$$
+$$|\psi_{\text{triplet{}}|^2 = 0 \quad \text{when {} \mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}r{'\}'}_2$$
 
-$$|\psi_{\text{'\{'}singlet{'\}'}}|^2 > 0 \quad \text{'\{'}when {'\}'} \mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}r{'\}'}_2$$
+$$|\psi_{\text{singlet{}}|^2 > 0 \quad \text{when {} \mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}r{'\}'}_2$$
 
 The triplet state keeps electrons apart (effective repulsion), while the singlet allows them to be close. This is the origin of the **Hund's first rule**: parallel spins are energetically favourable for atoms because the exchange interaction lowers the Coulomb repulsion.
 
@@ -1839,9 +1839,9 @@ $$\hat{H} = -\frac{\hbar^2}{2m_e}\left(\nabla_1^2 + \nabla_2^2\right) - \frac{2e
 
 **First-order perturbation theory** for the electron-electron repulsion:
 
-$$E^{(1)} = \frac{5}{4}\frac{e^2}{4\pi\varepsilon_0 a_0} = \frac{5}{2}\times 13.6\ \text{'\{'}eV{'\}'} = 34.0\ \text{'\{'}eV{'\}'}$$
+$$E^{(1)} = \frac{5}{4}\frac{e^2}{4\pi\varepsilon_0 a_0} = \frac{5}{2}\times 13.6\ \text{eV{} = 34.0\ \text{eV{}$$
 
-The unperturbed ground state energy is $E^{(0)} = 2 \times (-54.4\ \text{'\{'}eV{'\}'}) = -108.8$ eV (two electrons in $Z = 2$ Coulomb potential). Including perturbation: $E \approx -108.8 + 34.0 = -74.8$ eV. The experimental value is $-79.0$ eV.
+The unperturbed ground state energy is $E^{(0)} = 2 \times (-54.4\ \text{eV{}) = -108.8$ eV (two electrons in $Z = 2$ Coulomb potential). Including perturbation: $E \approx -108.8 + 34.0 = -74.8$ eV. The experimental value is $-79.0$ eV.
 
 **Excited states:** When one electron is excited to $1s\,nl$, the spin configuration matters:
 
@@ -1867,13 +1867,13 @@ $$K_{1s,2s} = \frac{e^2}{4\pi\varepsilon_0}\int \psi_{1s}^*(1)\psi_{2s}^*(2)\fra
 
 Evaluating these (using the multipole expansion $1/r_{12} = \sum_l r_<^l/r_>^{l+1}\,P_l(\cos\theta)$):
 
-$$J_{1s,2s} \approx 0.42\ \text{'\{'}Ry{'\}'} = 5.7\ \text{'\{'}eV{'\}'}$$
+$$J_{1s,2s} \approx 0.42\ \text{Ry{} = 5.7\ \text{eV{}$$
 
-$$K_{1s,2s} \approx 0.032\ \text{'\{'}Ry{'\}'} = 0.43\ \text{'\{'}eV{'\}'}$$
+$$K_{1s,2s} \approx 0.032\ \text{Ry{} = 0.43\ \text{eV{}$$
 
 The singlet (parahelium) has energy $E = E_0 + J + K$, and the triplet (orthohelium) has $E = E_0 + J - K$.
 
-The splitting: $E_{\text{'\{'}singlet{'\}'}} - E_{\text{'\{'}triplet{'\}'}} = 2K \approx 0.86$ eV. This is the exchange splitting.
+The splitting: $E_{\text{singlet{}} - E_{\text{triplet{}} = 2K \approx 0.86$ eV. This is the exchange splitting.
 
 The orthohelium $2^3S$ state is metastable: it cannot decay to the ground state by electric dipole transition (because $\Delta S = 0$ for E1 transitions, and the ground state is a singlet). Its lifetime is $\sim 10^4$ s.
 
@@ -1894,11 +1894,11 @@ $$\Psi(1, 2, \ldots, N) = \frac{1}{\sqrt{N!}}\begin{vmatrix} \phi_1(1) & \phi_2(
 
 ### 10.1 The Variational Principle
 
-For any trial wavefunction $\psi_{\text{'\{'}trial{'\}'}}$ (normalised), the expectation value of the Hamiltonian is an upper bound on the true ground state energy:
+For any trial wavefunction $\psi_{\text{trial{}}$ (normalised), the expectation value of the Hamiltonian is an upper bound on the true ground state energy:
 
-$$E_{\text{'\{'}trial{'\}'}} = \langle\psi_{\text{'\{'}trial{'\}'}}|\hat{H}|\psi_{\text{'\{'}trial{'\}'}}\rangle \geq E_0$$
+$$E_{\text{trial{}} = \langle\psi_{\text{trial{}}|\hat{H}|\psi_{\text{trial{}}\rangle \geq E_0$$
 
-The equality holds if and only if $\psi_{\text{'\{'}trial{'\}'}} = \psi_0$.
+The equality holds if and only if $\psi_{\text{trial{}} = \psi_0$.
 
 ### 10.2 The Hydrogen Molecule Ion $H_2^+$
 
@@ -1921,30 +1921,30 @@ where $S = \langle\psi_A|\psi_B\rangle$ is the overlap integral, $J$ is the Coul
 
 With two electrons, the full Hamiltonian includes the electron-electron repulsion. Using the variational method with properly (anti)symmetrised spatial-spin wavefunctions:
 
-**Bonding (singlet):** $E_{\text{'\{'}singlet{'\}'}} = 2E_{1s} + \frac{e^2}{R} + \frac{2J + 2K}{1 + S^2}$
+**Bonding (singlet):** $E_{\text{singlet{}} = 2E_{1s} + \frac{e^2}{R} + \frac{2J + 2K}{1 + S^2}$
 
-**Antibonding (triplet):** $E_{\text{'\{'}triplet{'\}'}} = 2E_{1s} + \frac{e^2}{R} + \frac{2J - 2K}{1 - S^2}$
+**Antibonding (triplet):** $E_{\text{triplet{}} = 2E_{1s} + \frac{e^2}{R} + \frac{2J - 2K}{1 - S^2}$
 
 The equilibrium bond length is $R_e \approx 1.4\,a_0$ with binding energy $\sim 3.5$ eV (experiment: 4.75 eV).
 
 <details>
 <summary>Worked Example 10.1: Variational Estimate for Helium Ground State</summary>
 
-Use the trial function $\psi_{\text{'\{'}trial{'\}'}} = (Z_{\text{'\{'}eff{'\}'}}^3/\pi a_0^3)\exp(-Z_{\text{'\{'}eff{'\}'}}r_1/a_0)\exp(-Z_{\text{'\{'}eff{'\}'}}r_2/a_0)$ where $Z_{\text{'\{'}eff{'\}'}}$ is a variational parameter.
+Use the trial function $\psi_{\text{trial{}} = (Z_{\text{eff{}}^3/\pi a_0^3)\exp(-Z_{\text{eff{}}r_1/a_0)\exp(-Z_{\text{eff{}}r_2/a_0)$ where $Z_{\text{eff{}}$ is a variational parameter.
 
 The energy expectation value (treating the electron-electron repulsion as a perturbation):
 
-$$E(Z_{\text{'\{'}eff{'\}'}}) = 2\times\frac{Z_{\text{'\{'}eff{'\}'}}^2}{2}\text{'\{'}Ry{'\}'} - 2\times\frac{Z_{\text{'\{'}eff{'\}'}} Z}{1}\text{'\{'}Ry{'\}'} + \frac{5}{8}Z_{\text{'\{'}eff{'\}'}}\text{'\{'}Ry{'\}'}$$
+$$E(Z_{\text{eff{}}) = 2\times\frac{Z_{\text{eff{}}^2}{2}\text{Ry{} - 2\times\frac{Z_{\text{eff{}} Z}{1}\text{Ry{} + \frac{5}{8}Z_{\text{eff{}}\text{Ry{}$$
 
-$$= \left(Z_{\text{'\{'}eff{'\}'}}^2 - 4Z_{\text{'\{'}eff{'\}'}} + \frac{5}{4}Z_{\text{'\{'}eff{'\}'}}\right)\text{'\{'}Ry{'\}'} = \left(Z_{\text{'\{'}eff{'\}'}}^2 - \frac{11}{4}Z_{\text{'\{'}eff{'\}'}}\right)\text{'\{'}Ry{'\}'}$$
+$$= \left(Z_{\text{eff{}}^2 - 4Z_{\text{eff{}} + \frac{5}{4}Z_{\text{eff{}}\right)\text{Ry{} = \left(Z_{\text{eff{}}^2 - \frac{11}{4}Z_{\text{eff{}}\right)\text{Ry{}$$
 
-Minimising: $\partial E/\partial Z_{\text{'\{'}eff{'\}'}} = (2Z_{\text{'\{'}eff{'\}'}} - 11/4) = 0 \implies Z_{\text{'\{'}eff{'\}'}} = 11/8 = 1.375$.
+Minimising: $\partial E/\partial Z_{\text{eff{}} = (2Z_{\text{eff{}} - 11/4) = 0 \implies Z_{\text{eff{}} = 11/8 = 1.375$.
 
-$$E = \left(\frac{121}{64} - \frac{121}{32}\right)\text{'\{'}Ry{'\}'} = -\frac{121}{64}\text{'\{'}Ry{'\}'} = -2.848\text{'\{'}Ry{'\}'} = -77.5\ \text{'\{'}eV{'\}'}$$
+$$E = \left(\frac{121}{64} - \frac{121}{32}\right)\text{Ry{} = -\frac{121}{64}\text{Ry{} = -2.848\text{Ry{} = -77.5\ \text{eV{}$$
 
 The exact (non-relativistic) ground state energy is $-79.0$ eV, so the variational result is within 2%.
 
-The effective charge $Z_{\text{'\{'}eff{'\}'}} = 1.375 < 2$ reflects the screening of the nuclear charge by the other electron: each electron partially shields the nucleus from the other, reducing the effective charge from $Z = 2$ to $Z_{\text{'\{'}eff{'\}'}} \approx 1.375$.
+The effective charge $Z_{\text{eff{}} = 1.375 < 2$ reflects the screening of the nuclear charge by the other electron: each electron partially shields the nucleus from the other, reducing the effective charge from $Z = 2$ to $Z_{\text{eff{}} \approx 1.375$.
 
 </details>
 
@@ -2031,7 +2031,7 @@ where $\delta_l$ is the phase shift for partial wave $l$.
 
 **Optical theorem:**
 
-$$\sigma_{\text{'\{'}total{'\}'}} = \frac{4\pi}{k}\,\text{'\{'}Im{'\}'}\,f(0) = \frac{4\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)\sin^2\delta_l$$
+$$\sigma_{\text{total{}} = \frac{4\pi}{k}\,\text{Im{}\,f(0) = \frac{4\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)\sin^2\delta_l$$
 
 **Partial wave unitarity bound:** $\sin^2\delta_l \leq 1$, so the maximum contribution of partial wave $l$ to the cross section is:
 
@@ -2055,7 +2055,7 @@ Setting $\mu = 0$ (Coulomb potential), this reproduces the Rutherford scattering
 
 When the scattering energy is near a quasi-bound state, the phase shift passes through $\pi/2$ (resonance):
 
-$$\delta_l(E) \approx \delta_{\text{'\{'}bg{'\}'}} + \arctan\!\left(\frac{\Gamma/2}{E_R - E}\right)$$
+$$\delta_l(E) \approx \delta_{\text{bg{}} + \arctan\!\left(\frac{\Gamma/2}{E_R - E}\right)$$
 
 where $E_R$ is the resonance energy and $\Gamma$ is the width. The cross section has the Breit--Wigner form:
 
@@ -2103,7 +2103,7 @@ The Born approximation is valid when $|V_0| \ll \hbar^2/(ma^2)$, i.e., the poten
 
 1. **Symmetrisation applies to the full wavefunction:** For fermions, the overall wavefunction (spatial $\otimes$ spin $\otimes$ any other degrees of freedom) must be antisymmetric. A symmetric spatial part requires an antisymmetric spin part (singlet), and vice versa. Do not apply (anti)symmetrisation to spatial and spin parts separately without ensuring the correct combined symmetry.
 
-2. **The variational principle gives an upper bound:** $E_{\text{'\{'}trial{'\}'}} \geq E_0$ always. If you obtain a variational energy lower than the known exact ground state energy, you have made an error in the calculation (wrong normalisation, incorrect matrix element, or the trial function is not in the correct Hilbert space).
+2. **The variational principle gives an upper bound:** $E_{\text{trial{}} \geq E_0$ always. If you obtain a variational energy lower than the known exact ground state energy, you have made an error in the calculation (wrong normalisation, incorrect matrix element, or the trial function is not in the correct Hilbert space).
 
 3. **Fermi's Golden Rule applies to transitions to a continuum:** For transitions to discrete states, use the Rabi formula instead. The density of states $\rho(E_f)$ is essential --- if it is zero, the transition rate is zero regardless of the matrix element.
 
@@ -2116,25 +2116,25 @@ The Born approximation is valid when $|V_0| \ll \hbar^2/(ma^2)$, i.e., the poten
 <details>
 <summary>Problem 19: Exchange Energy in Lithium</summary>
 
-Lithium ($Z = 3$) has the electron configuration $1s^2 2s^1$. Using the variational method with $Z_{\text{'\{'}eff{'\}'}}$ for the $1s$ electrons:
+Lithium ($Z = 3$) has the electron configuration $1s^2 2s^1$. Using the variational method with $Z_{\text{eff{}}$ for the $1s$ electrons:
 
-(a) Calculate $Z_{\text{'\{'}eff{'\}'}}$ for the $1s$ electrons, treating the $2s$ electron as a perturbation.
+(a) Calculate $Z_{\text{eff{}}$ for the $1s$ electrons, treating the $2s$ electron as a perturbation.
 
 (b) Calculate the ionisation energy (removing the $2s$ electron) and compare with the experimental value of 5.39 eV.
 
-(c) Explain why the $2s$ electron is effectively screened by $Z_{\text{'\{'}eff{'\}'}} \approx 1.26$.
+(c) Explain why the $2s$ electron is effectively screened by $Z_{\text{eff{}} \approx 1.26$.
 
 **Solution:**
 
-(a) For the $1s$ electrons, the effective charge is reduced from $Z = 3$ by screening from the other $1s$ electron and partial penetration of the $2s$ electron. The $1s$ electrons screen each other partially: using the helium result, $Z_{\text{'\{'}eff{'\}'}}(1s) \approx Z - 5/16 = 3 - 0.3125 = 2.69$.
+(a) For the $1s$ electrons, the effective charge is reduced from $Z = 3$ by screening from the other $1s$ electron and partial penetration of the $2s$ electron. The $1s$ electrons screen each other partially: using the helium result, $Z_{\text{eff{}}(1s) \approx Z - 5/16 = 3 - 0.3125 = 2.69$.
 
-(b) The $2s$ electron sees an effective nuclear charge of $Z_{\text{'\{'}eff{'\}'}}(2s) \approx 3 - 2 \times 0.85 = 1.3$ (Slater's rules). The energy:
+(b) The $2s$ electron sees an effective nuclear charge of $Z_{\text{eff{}}(2s) \approx 3 - 2 \times 0.85 = 1.3$ (Slater's rules). The energy:
 
-$$E_{2s} = -\frac{Z_{\text{'\{'}eff{'\}'}}^2}{n^2}\times 13.6\ \text{'\{'}eV{'\}'} = -\frac{1.3^2}{4}\times 13.6 = -\frac{1.69}{4}\times 13.6 = -5.75\ \text{'\{'}eV{'\}'}$$
+$$E_{2s} = -\frac{Z_{\text{eff{}}^2}{n^2}\times 13.6\ \text{eV{} = -\frac{1.3^2}{4}\times 13.6 = -\frac{1.69}{4}\times 13.6 = -5.75\ \text{eV{}$$
 
 The ionisation energy is $|E_{2s}| = 5.75$ eV, close to the experimental 5.39 eV. The discrepancy reflects the crudeness of the Slater screening constants.
 
-(c) The $2s$ electron has significant radial extent beyond the $1s$ core, so it sees a nearly bare nuclear charge at small $r$ but is screened by both $1s$ electrons at large $r$. The effective charge $Z_{\text{'\{'}eff{'\}'}} \approx 1.26$ (using Hartree--Fock) represents this average screening.
+(c) The $2s$ electron has significant radial extent beyond the $1s$ core, so it sees a nearly bare nuclear charge at small $r$ but is screened by both $1s$ electrons at large $r$. The effective charge $Z_{\text{eff{}} \approx 1.26$ (using Hartree--Fock) represents this average screening.
 
 </details>
 
@@ -2197,9 +2197,9 @@ $$S(x) = \pm\int^x p(x')\,dx', \quad p(x) = \sqrt{2m[E - V(x)]}$$
 
 The WKB wavefunctions:
 
-$$\psi(x) \approx \frac{C}{\sqrt{p(x)}}\exp\!\left(\pm\frac{i}{\hbar}\int^x p(x')\,dx'\right) \quad \text{'\{'}(classically allowed, {'\}'} E > V\text{'\{'}){'\}'}$$
+$$\psi(x) \approx \frac{C}{\sqrt{p(x)}}\exp\!\left(\pm\frac{i}{\hbar}\int^x p(x')\,dx'\right) \quad \text{(classically allowed, {} E > V\text{){}$$
 
-$$\psi(x) \approx \frac{C}{\sqrt{|p(x)|}}\exp\!\left(\pm\frac{1}{\hbar}\int^x |p(x')|\,dx'\right) \quad \text{'\{'}(classically forbidden, {'\}'} E < V\text{'\{'}){'\}'}$$
+$$\psi(x) \approx \frac{C}{\sqrt{|p(x)|}}\exp\!\left(\pm\frac{1}{\hbar}\int^x |p(x')|\,dx'\right) \quad \text{(classically forbidden, {} E < V\text{){}$$
 
 ### 13.2 Connection Formulas
 
@@ -2244,7 +2244,7 @@ $$= \exp\!\left(-\frac{\pi a}{\hbar}\sqrt{2mV_0}\left(1 - \frac{E}{V_0}\right)\r
 
 For alpha decay ($V_0 \approx 25$ MeV, $a \approx 30$ fm, $E = 5$ MeV, $m = 4 \times 931.5$ MeV/$c^2$):
 
-$$\frac{\pi a}{\hbar c}\sqrt{2mc^2 V_0}\left(1 - \frac{E}{V_0}\right) = \frac{\pi \times 30\,\text{'\{'}fm{'\}'}}{197\,\text{'\{'}MeV{'\}'}\cdot\text{'\{'}fm{'\}'}}\sqrt{2 \times 3726 \times 25}\times 0.8$$
+$$\frac{\pi a}{\hbar c}\sqrt{2mc^2 V_0}\left(1 - \frac{E}{V_0}\right) = \frac{\pi \times 30\,\text{fm{}}{197\,\text{MeV{}\cdot\text{fm{}}\sqrt{2 \times 3726 \times 25}\times 0.8$$
 
 $$= 0.479 \times 432.6 \times 0.8 = 165.7$$
 
@@ -2258,29 +2258,29 @@ This extremely small probability explains the enormously long half-lives of alph
 
 ### 14.1 The Hohenberg--Kohn Theorems
 
-**Theorem 1:** The ground-state electron density $n(\mathbf{'\{'}r{'\}'})$ uniquely determines the external potential $V_{\text{'\{'}ext{'\}'}}(\mathbf{'\{'}r{'\}'})$ (up to an additive constant), and hence the full many-body Hamiltonian and all ground-state properties.
+**Theorem 1:** The ground-state electron density $n(\mathbf{'\{'}r{'\}'})$ uniquely determines the external potential $V_{\text{ext{}}(\mathbf{'\{'}r{'\}'})$ (up to an additive constant), and hence the full many-body Hamiltonian and all ground-state properties.
 
-**Theorem 2:** The ground-state energy is a functional of the density: $E[n] = F_{\text{'\{'}HK{'\}'}}[n] + \int V_{\text{'\{'}ext{'\}'}}(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'})\,d^3r$, and the variational principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{'\{'}r{'\}'})$.
+**Theorem 2:** The ground-state energy is a functional of the density: $E[n] = F_{\text{HK{}}[n] + \int V_{\text{ext{}}(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'})\,d^3r$, and the variational principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{'\{'}r{'\}'})$.
 
 ### 14.2 Kohn--Sham Equations
 
 The interacting system is mapped to a fictitious system of non-interacting electrons in an effective potential:
 
-$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\text{'\{'}eff{'\}'}}[n](\mathbf{'\{'}r{'\}'})\right]\psi_i(\mathbf{'\{'}r{'\}'}) = \varepsilon_i\psi_i(\mathbf{'\{'}r{'\}'})$$
+$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\text{eff{}}[n](\mathbf{'\{'}r{'\}'})\right]\psi_i(\mathbf{'\{'}r{'\}'}) = \varepsilon_i\psi_i(\mathbf{'\{'}r{'\}'})$$
 
-$$n(\mathbf{'\{'}r{'\}'}) = \sum_{i=1}^{N}|\psi_i(\mathbf{'\{'}r{'\}'})|^2 \quad \text{'\{'}(summing over occupied states){'\}'}$$
+$$n(\mathbf{'\{'}r{'\}'}) = \sum_{i=1}^{N}|\psi_i(\mathbf{'\{'}r{'\}'})|^2 \quad \text{(summing over occupied states){}$$
 
-$$V_{\text{'\{'}eff{'\}'}} = V_{\text{'\{'}ext{'\}'}} + V_H[n] + V_{\text{'\{'}xc{'\}'}}[n]$$
+$$V_{\text{eff{}} = V_{\text{ext{}} + V_H[n] + V_{\text{xc{}}[n]$$
 
-$$V_H[n](\mathbf{'\{'}r{'\}'}) = e^2\int\frac{n(\mathbf{'\{'}r{'\}'}')}{|\mathbf{'\{'}r{'\}'} - \mathbf{'\{'}r{'\}'}'|}\,d^3r' \quad \text{'\{'}(Hartree potential){'\}'}$$
+$$V_H[n](\mathbf{'\{'}r{'\}'}) = e^2\int\frac{n(\mathbf{'\{'}r{'\}'}')}{|\mathbf{'\{'}r{'\}'} - \mathbf{'\{'}r{'\}'}'|}\,d^3r' \quad \text{(Hartree potential){}$$
 
-The exchange-correlation functional $V_{\text{'\{'}xc{'\}'}}[n]$ contains all many-body effects beyond the classical Hartree approximation.
+The exchange-correlation functional $V_{\text{xc{}}[n]$ contains all many-body effects beyond the classical Hartree approximation.
 
 ### 14.3 Self-Interaction Error
 
-The Hartree potential includes the interaction of each electron with itself. This **self-interaction error** is not cancelled by the local density approximation (LDA) for $V_{\text{'\{'}xc{'\}'}}$. Consequences:
+The Hartree potential includes the interaction of each electron with itself. This **self-interaction error** is not cancelled by the local density approximation (LDA) for $V_{\text{xc{}}$. Consequences:
 
-- Wrong asymptotic behaviour: $V_{\text{'\{'}eff{'\}'}}(r \to \infty) \to -e^2/r$ (correct) vs. $V_{\text{'\{'}eff{'\}'}} \to 0$ (LDA, wrong)
+- Wrong asymptotic behaviour: $V_{\text{eff{}}(r \to \infty) \to -e^2/r$ (correct) vs. $V_{\text{eff{}} \to 0$ (LDA, wrong)
 - Underestimation of band gaps by 30--50\%
 - Incorrect description of charge transfer excitations
 
@@ -2291,17 +2291,17 @@ Hybrid functionals (e.g., B3LYP, HSE06) and range-separated functionals partiall
 
 The simplest density functional theory: the Thomas--Fermi model treats the kinetic energy as a local functional of the density:
 
-$$T_{\text{'\{'}TF{'\}'}}[n] = \frac{3\hbar^2}{10m}(3\pi^2)^{2/3}\int n^{5/3}(\mathbf{'\{'}r{'\}'})\,d^3r = C_{\text{'\{'}TF{'\}'}}\int n^{5/3}\,d^3r$$
+$$T_{\text{TF{}}[n] = \frac{3\hbar^2}{10m}(3\pi^2)^{2/3}\int n^{5/3}(\mathbf{'\{'}r{'\}'})\,d^3r = C_{\text{TF{}}\int n^{5/3}\,d^3r$$
 
-For an atom with nuclear charge $Ze$, minimising $E[n] = T_{\text{'\{'}TF{'\}'}}[n] - Ze^2\int n(\mathbf{'\{'}r{'\}'})/r\,d^3r + \frac{1}{2}e^2\iint n(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'}')/|\mathbf{'\{'}r{'\}'}-\mathbf{'\{'}r{'\}'}'|\,d^3rd^3r'$:
+For an atom with nuclear charge $Ze$, minimising $E[n] = T_{\text{TF{}}[n] - Ze^2\int n(\mathbf{'\{'}r{'\}'})/r\,d^3r + \frac{1}{2}e^2\iint n(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'}')/|\mathbf{'\{'}r{'\}'}-\mathbf{'\{'}r{'\}'}'|\,d^3rd^3r'$:
 
 The variational equation gives:
 
-$$C_{\text{'\{'}TF{'\}'}}\,n^{2/3} = \frac{Ze^2}{r} - e^2\int\frac{n(\mathbf{'\{'}r{'\}'}')}{|\mathbf{'\{'}r{'\}'}-\mathbf{'\{'}r{'\}'}'|}\,d^3r'$$
+$$C_{\text{TF{}}\,n^{2/3} = \frac{Ze^2}{r} - e^2\int\frac{n(\mathbf{'\{'}r{'\}'}')}{|\mathbf{'\{'}r{'\}'}-\mathbf{'\{'}r{'\}'}'|}\,d^3r'$$
 
 This integral equation can be solved by scaling: $n(r) = (Z/a_0^3)\,g(r/a_0 Z^{-1/3})$ where $g$ is a universal function.
 
-The Thomas--Fermi energy: $E_{\text{'\{'}TF{'\}'}} = -\frac{3}{7}(9\pi/2)^{2/3}\frac{Z^{7/3}e^2}{2a_0} = -20.8\,Z^{7/3}$ eV.
+The Thomas--Fermi energy: $E_{\text{TF{}} = -\frac{3}{7}(9\pi/2)^{2/3}\frac{Z^{7/3}e^2}{2a_0} = -20.8\,Z^{7/3}$ eV.
 
 This gives reasonable total energies for heavy atoms but fails qualitatively for light atoms (no shell structure, no chemical bonding).
 

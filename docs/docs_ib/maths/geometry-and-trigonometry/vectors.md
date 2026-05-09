@@ -16,9 +16,9 @@ the line. The line ($\bm{r}(\gamma)$) is a sum of a point on a line ($\bm{a}$ or
 direction vector ($\bm{b}$) scaled by the parameter $\gamma$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{r}(\gamma) = \bm{r_0} + \gamma\bm{b}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Cartesian Form
@@ -26,31 +26,31 @@ $$
 Vectors in cartesian form define a vector by the definition of each coordinate of the unit vector:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \frac{x-x_0}{l} = \frac{y-y_0}{m} = \frac{z-z_0}{n}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Conversion Between Parametric Form and Cartesian Form
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{r}(\gamma) = \bm{r_0} + \gamma\bm{b}\\
-    \begin{pmatrix}
+    \begin`\{pmatrix}`
         x \\ y \\ z
-    \end{pmatrix}
+    \end`\{pmatrix}`
     =
-    \begin{pmatrix}
+    \begin`\{pmatrix}`
         x_0 \\ y_0 \\ z_0
-    \end{pmatrix}
+    \end`\{pmatrix}`
     +
     \gamma
-    \begin{pmatrix}
+    \begin`\{pmatrix}`
        l \\ m \\ n
-    \end{pmatrix}\\
+    \end`\{pmatrix}`\\
     x = x_0 + \gamma l, \quad y = y_0 + \gamma m, \quad z = z_0 + \gamma n\\
     \gamma = \frac{x-x_0}{l} = \frac{y-y_0}{m} = \frac{z-z_0}{n}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## Vector Plane
@@ -62,9 +62,9 @@ $\bm{r_0}$) on the plane and two direction vector ($\bm{b}$ and $\bm{c}$) scaled
 ($\gamma$ and $\mu$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{r}(\gamma, \mu) = \bm{r_0} + \gamma \bm{b} + \mu \bm{c}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Point-normal Form
@@ -73,10 +73,10 @@ A vector plane ($\bm{r}$) defined in point-normal form is defined by the dot pro
 normal ($\hat{n}$) and the direction vectors ($\bm{r}-\bm{r_0}$ or $\gamma \bm{b} + \mu \bm{c}$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \left(\bm{r}-\bm{r_0}\right) \cdot \hat{n} = |\bm{r}-\bm{r_0}||\hat{n}|\sin \frac{\pi}{2} = 0\\
     \bm{r} \cdot \hat{n} = \bm{r_0} \cdot \hat{n}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Cartesian Form
@@ -85,31 +85,31 @@ A vector plane ($\bm{r}$) defined in cartesian form is extended from the point-n
 expressing normal vector as its individual axis ($x,y,z$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \hat{n} =
-    \begin{pmatrix}
+    \begin`\{pmatrix}`
         a \\ b \\ c
-    \end{pmatrix}, \quad
+    \end`\{pmatrix}`, \quad
     \bm{r} =
-    \begin{pmatrix}
+    \begin`\{pmatrix}`
         x \\ y \\ z
-    \end{pmatrix}, \quad
+    \end`\{pmatrix}`, \quad
     \bm{r_0} =
-    \begin{pmatrix}
+    \begin`\{pmatrix}`
         x_0 \\ y_0 \\ z_0
-    \end{pmatrix}\\
+    \end`\{pmatrix}`\\
     a(x-x_0) + b(y-y_0) + c(z-z_0) = 0\\
     ax + by + cz = ax_0 + by_0 + cz_0
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Since $ax_0 + by_0 + cz_0$ produce a constant, the formula booklet uses a single constant $d$ to
 represent it:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     ax + by + cz = d
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## Vector Fundamentals
@@ -120,9 +120,9 @@ A vector $\bm{v}$ in 3D space is represented as a column vector:
 
 $$
 \bm{v} =
-\begin{pmatrix}
+\begin`\{pmatrix}`
     v_x \\ v_y \\ v_z
-\end{pmatrix}
+\end`\{pmatrix}`
 $$
 
 where $v_x$, $v_y$, $v_z$ are the components along the $x$, $y$, and $z$ axes respectively.
@@ -148,32 +148,32 @@ $$
 A position vector describes the position of a point relative to the origin $O$:
 
 $$
-\overrightarrow{OP} =
-\begin{pmatrix}
+\overrightarrow`\{OP}` =
+\begin`\{pmatrix}`
     x \\ y \\ z
-\end{pmatrix}
+\end`\{pmatrix}`
 $$
 
 ### Vector Addition and Subtraction
 
 $$
 \bm{a} + \bm{b} =
-\begin{pmatrix}
+\begin`\{pmatrix}`
     a_x + b_x \\ a_y + b_y \\ a_z + b_z
-\end{pmatrix}, \quad
+\end`\{pmatrix}`, \quad
 \bm{a} - \bm{b} =
-\begin{pmatrix}
+\begin`\{pmatrix}`
     a_x - b_x \\ a_y - b_y \\ a_z - b_z
-\end{pmatrix}
+\end`\{pmatrix}`
 $$
 
 ### Scalar Multiplication
 
 $$
 k\bm{v} =
-\begin{pmatrix}
+\begin`\{pmatrix}`
     kv_x \\ kv_y \\ kv_z
-\end{pmatrix}
+\end`\{pmatrix}`
 $$
 
 ## Dot Product (Scalar Product)
@@ -242,20 +242,20 @@ The direction is given by the right-hand rule.
 
 $$
 \bm{a} \times \bm{b} =
-\begin{pmatrix}
+\begin`\{pmatrix}`
     a_y b_z - a_z b_y \\ a_z b_x - a_x b_z \\ a_x b_y - a_y b_x
-\end{pmatrix}
+\end`\{pmatrix}`
 $$
 
 This can be written as a determinant:
 
 $$
 \bm{a} \times \bm{b} =
-\begin{vmatrix}
+\begin`\{vmatrix}`
     \hat{i} & \hat{j} & \hat{k}\\
     a_x & a_y & a_z\\
     b_x & b_y & b_z
-\end{vmatrix}
+\end`\{vmatrix}`
 $$
 
 ### Properties of the Cross Product
@@ -281,17 +281,17 @@ and $\bm{b} = \begin{pmatrix} 4 \\ 5 \\ 6 \end{pmatrix}$.
 
 $$
 \bm{a} \times \bm{b} =
-\begin{pmatrix}
+\begin`\{pmatrix}`
     (2)(6) - (3)(5) \\ (3)(4) - (1)(6) \\ (1)(5) - (2)(4)
-\end{pmatrix}
+\end`\{pmatrix}`
 =
-\begin{pmatrix}
+\begin`\{pmatrix}`
     12 - 15 \\ 12 - 6 \\ 5 - 8
-\end{pmatrix}
+\end`\{pmatrix}`
 =
-\begin{pmatrix}
+\begin`\{pmatrix}`
     -3 \\ 6 \\ -3
-\end{pmatrix}
+\end`\{pmatrix}`
 $$
 
 ## Intersections
@@ -347,7 +347,7 @@ t = \frac{5 - 4}{2} = \frac{1}{2}
 $$
 
 $$
-\bm{r} = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} + \frac{1}{2}\begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix} = \begin{pmatrix} 2 \\ 0.5 \\ 1.5 \end{pmatrix}
+\bm{r} = \begin`\{pmatrix}` 1 \\ 0 \\ 2 \end`\{pmatrix}` + \frac{1}{2}\begin`\{pmatrix}` 2 \\ 1 \\ -1 \end`\{pmatrix}` = \begin`\{pmatrix}` 2 \\ 0.5 \\ 1.5 \end`\{pmatrix}`
 $$
 
 Intersection point: $(2, 0.5, 1.5)$.
@@ -423,7 +423,7 @@ To find the foot of the perpendicular from point $P$ to line $\bm{r} = \bm{a} + 
 The foot $F$ satisfies:
 
 $$
-\overrightarrow{PF} \cdot \bm{b} = 0
+\overrightarrow`\{PF}` \cdot \bm{b} = 0
 $$
 
 Substitute $\bm{F} = \bm{a} + t\bm{b}$ and solve for $t$:
@@ -450,13 +450,13 @@ $B(3, 0, 1)$, and $C(0, 1, 3)$.
 Find two direction vectors in the plane:
 
 $$
-\overrightarrow{AB} = \begin{pmatrix} 2 \\ -2 \\ 2 \end{pmatrix}, \quad \overrightarrow{AC} = \begin{pmatrix} -1 \\ -1 \\ 4 \end{pmatrix}
+\overrightarrow`\{AB}` = \begin`\{pmatrix}` 2 \\ -2 \\ 2 \end`\{pmatrix}`, \quad \overrightarrow`\{AC}` = \begin`\{pmatrix}` -1 \\ -1 \\ 4 \end`\{pmatrix}`
 $$
 
 Find the normal vector using the cross product:
 
 $$
-\hat{n} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} (-2)(4) - (2)(-1) \\ (2)(-1) - (2)(4) \\ (2)(-1) - (-2)(-1) \end{pmatrix} = \begin{pmatrix} -8 + 2 \\ -2 - 8 \\ -2 - 2 \end{pmatrix} = \begin{pmatrix} -6 \\ -10 \\ -4 \end{pmatrix}
+\hat{n} = \overrightarrow`\{AB}` \times \overrightarrow`\{AC}` = \begin`\{pmatrix}` (-2)(4) - (2)(-1) \\ (2)(-1) - (2)(4) \\ (2)(-1) - (-2)(-1) \end`\{pmatrix}` = \begin`\{pmatrix}` -8 + 2 \\ -2 - 8 \\ -2 - 2 \end`\{pmatrix}` = \begin`\{pmatrix}` -6 \\ -10 \\ -4 \end`\{pmatrix}`
 $$
 
 Simplify by dividing by $-2$: $\hat{n} = \begin{pmatrix} 3 \\ 5 \\ 2 \end{pmatrix}$.
@@ -484,7 +484,7 @@ $\Pi_2: x + 4y - z = 3$.
 Extract the normal vectors:
 
 $$
-\hat{n}_1 = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}, \quad \hat{n}_2 = \begin{pmatrix} 1 \\ 4 \\ -1 \end{pmatrix}
+\hat{n}_1 = \begin`\{pmatrix}` 2 \\ -1 \\ 3 \end`\{pmatrix}`, \quad \hat{n}_2 = \begin`\{pmatrix}` 1 \\ 4 \\ -1 \end`\{pmatrix}`
 $$
 
 $$
@@ -534,7 +534,7 @@ $\Pi_1: x + y - z = 4$ and $\Pi_2: 2x - y + z = 1$.
 The direction vector of the line is perpendicular to both normals:
 
 $$
-\bm{d} = \hat{n}_1 \times \hat{n}_2 = \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix} \times \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix} = \begin{pmatrix} (1)(1) - (-1)(-1) \\ (-1)(2) - (1)(1) \\ (1)(-1) - (1)(2) \end{pmatrix} = \begin{pmatrix} 0 \\ -3 \\ -3 \end{pmatrix}
+\bm{d} = \hat{n}_1 \times \hat{n}_2 = \begin`\{pmatrix}` 1 \\ 1 \\ -1 \end`\{pmatrix}` \times \begin`\{pmatrix}` 2 \\ -1 \\ 1 \end`\{pmatrix}` = \begin`\{pmatrix}` (1)(1) - (-1)(-1) \\ (-1)(2) - (1)(1) \\ (1)(-1) - (1)(2) \end`\{pmatrix}` = \begin`\{pmatrix}` 0 \\ -3 \\ -3 \end`\{pmatrix}`
 $$
 
 Simplify: $\bm{d} = \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}$.
@@ -549,7 +549,7 @@ A point on the line is $\left(\frac{5}{3}, \frac{7}{3}, 0\right)$.
 The line of intersection is:
 
 $$
-\bm{r} = \begin{pmatrix} 5/3 \\ 7/3 \\ 0 \end{pmatrix} + t\begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}
+\bm{r} = \begin`\{pmatrix}` 5/3 \\ 7/3 \\ 0 \end`\{pmatrix}` + t\begin`\{pmatrix}` 0 \\ 1 \\ 1 \end`\{pmatrix}`
 $$
 
 ---

@@ -660,7 +660,7 @@ While the Gini coefficient is the most widely used inequality measure, it has im
 
 **The Palma ratio** is defined as:
 
-$$\text{'\{'}Palma{'\}'} = \frac{S_{90}}{S_{40}}$$
+$$\text{Palma{} = \frac{S_{90}}{S_{40}}$$
 
 where $S_{90}$ is the income share of the top 10% and $S_{40}$ is the income share of the bottom 40%. The rationale is that the "middle" 50% of the income distribution (between the 40th and 90th percentiles) is relatively stable across countries and over time, at approximately 50% of total income. Therefore, changes in overall inequality are driven almost entirely by changes at the tails.
 
@@ -676,7 +676,7 @@ Country A has dramatically higher inequality, concentrated at the top and bottom
 
 Simon Kuznets (1955) hypothesised an inverted-U relationship between inequality and economic development:
 
-$$G = f(g_Y), \quad f'(g_Y) > 0 \text{'\{'} for low {'\}'} g_Y, \quad f'(g_Y) < 0 \text{'\{'} for high {'\}'} g_Y$$
+$$G = f(g_Y), \quad f'(g_Y) > 0 \text{ for low {} g_Y, \quad f'(g_Y) < 0 \text{ for high {} g_Y$$
 
 The argument: early industrialisation draws labour from agriculture to industry, increasing inequality (industrial wages are more dispersed than agricultural incomes). Later, mass education, progressive taxation, and social welfare reduce inequality.
 
@@ -690,7 +690,7 @@ The argument: early industrialisation draws labour from agriculture to industry,
 
 **Intergenerational income elasticity (IGE)** measures the correlation between parents' and children's incomes:
 
-$$\text{'\{'}IGE{'\}'} = \frac{\partial \ln(Y_{child})}{\partial \ln(Y_{parent})}$$
+$$\text{IGE{} = \frac{\partial \ln(Y_{child})}{\partial \ln(Y_{parent})}$$
 
 If IGE $= 0.5$, a 10% increase in parental income is associated with a 5% increase in the child's income. Higher IGE means less mobility.
 
@@ -1068,7 +1068,7 @@ AHC poverty rate is higher than BHC because housing costs reduce disposable inco
 **Example.** The UK government considers a UBI of GBP 400/month for all adults (18+). Population: 53 million adults.
 
 **Cost calculation:**
-- Gross cost: $400 \times 12 \times 53\,000\,000 = \text{'\{'}GBP {'\}'} 254.4\text{'\{'}bn{'\}'}$ (approximately 10.4% of GDP).
+- Gross cost: $400 \times 12 \times 53\,000\,000 = \text{GBP {} 254.4\text{bn{}$ (approximately 10.4% of GDP).
 
 **Offset by abolishing existing benefits:**
 - Universal Credit: GBP 50bn (but UC is means-tested; abolishing it means some households lose more than they gain from UBI).
@@ -1078,8 +1078,8 @@ AHC poverty rate is higher than BHC because housing costs reduce disposable inco
 - Total existing spending replaced: GBP 187bn (if pension is included) or GBP 77bn (if pension is retained).
 
 **Net fiscal cost:**
-- With pension replacement: $254.4 - 187 = \text{'\{'}GBP {'\}'} 67.4\text{'\{'}bn{'\}'}$.
-- Without pension replacement: $254.4 - 77 = \text{'\{'}GBP {'\}'} 177.4\text{'\{'}bn{'\}'}$.
+- With pension replacement: $254.4 - 187 = \text{GBP {} 67.4\text{bn{}$.
+- Without pension replacement: $254.4 - 77 = \text{GBP {} 177.4\text{bn{}$.
 
 **Funding options:**
 1. Income tax increase: to raise GBP 177bn, the basic rate would need to rise from 20% to approximately 35% (a 15 percentage point increase). This would significantly reduce work incentives.

@@ -316,7 +316,7 @@ Transition metal complexes are coloured due to $d$-$d$ transitions. The energy g
 $d$-orbitals corresponds to visible light:
 
 $$
-\Delta E = \frac{hc}{\lambda}
+\Delta E = \frac`\{hc}`{\lambda}
 $$
 
 **Spectrochemical series** (increasing $\Delta$):

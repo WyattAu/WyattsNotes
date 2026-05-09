@@ -479,19 +479,19 @@ $$
 Step 2: Nitration (methyl is ortho/para directing; para product is major):
 
 $$
-\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_3 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4}} 4\text{'\{'}-{'\}'}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CH{}_3)(\mathrm{NO{}_2)
+\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_3 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4}} 4\text{-{}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CH{}_3)(\mathrm{NO{}_2)
 $$
 
 Step 3: Oxidation of the methyl group to carboxylic acid:
 
 $$
-4\text{'\{'}-{'\}'}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CH{}_3)(\mathrm{NO{}_2) \xrightarrow{\mathrm{KMnO{}_4,\,\Delta} 4\text{'\{'}-{'\}'}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{COOH{})(\mathrm{NO{}_2)
+4\text{-{}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CH{}_3)(\mathrm{NO{}_2) \xrightarrow{\mathrm{KMnO{}_4,\,\Delta} 4\text{-{}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{COOH{})(\mathrm{NO{}_2)
 $$
 
 Step 4: Conversion of carboxylic acid to aldehyde. This is tricky as direct reduction of an aromatic carboxylic acid typically gives the primary alcohol. A suitable route is to reduce the acid to alcohol ($\mathrm{LiAlH{}_4$), then oxidise to the aldehyde (distillation with $\mathrm{PCC{}$ or acidified $\mathrm{K{}_2\mathrm{Cr{}_2\mathrm{O{}_7$):
 
 $$
-4\text{'\{'}-{'\}'}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{COOH{})(\mathrm{NO{}_2) \xrightarrow{\mathrm{LiAlH{}_4} 4\text{'\{'}-{'\}'}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CH{}_2\mathrm{OH{})(\mathrm{NO{}_2) \xrightarrow{[\mathrm{O{}],\,\text{'\{'}distillation{'\}'}} 4\text{'\{'}-{'\}'}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CHO{})(\mathrm{NO{}_2)
+4\text{-{}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{COOH{})(\mathrm{NO{}_2) \xrightarrow{\mathrm{LiAlH{}_4} 4\text{-{}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CH{}_2\mathrm{OH{})(\mathrm{NO{}_2) \xrightarrow{[\mathrm{O{}],\,\text{distillation{}} 4\text{-{}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CHO{})(\mathrm{NO{}_2)
 $$
 
 The directing group strategy ensures the nitro group ends up para to the substituent that will become the aldehyde.
@@ -546,11 +546,11 @@ $\mathrm{AlCl{}_4^-$ removes a proton, restoring aromaticity and regenerating $\
 
 Step 1: Nitration of toluene. The $-\mathrm{CH{}_3$ group is ortho/para directing. Nitration gives a mixture of 2-nitrotoluene (ortho) and 4-nitrotoluene (para). Isolate 4-nitrotoluene by fractional distillation.
 
-$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_3 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4} 4\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{CH{}_3 \text{'\{'} (major){'\}'}$$
+$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_3 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4} 4\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{CH{}_3 \text{ (major){}$$
 
 Step 2: Oxidation of the methyl group to carboxylic acid:
 
-$$4\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{CH{}_3 \xrightarrow{\mathrm{KMnO{}_4,\,\Delta} 4\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{COOH{}$$
+$$4\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{CH{}_3 \xrightarrow{\mathrm{KMnO{}_4,\,\Delta} 4\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{COOH{}$$
 
 Step 3: A second nitration would place the nitro group meta to the $-\mathrm{COOH{}$ group (meta director). But we need it ortho to the $-\mathrm{COOH{}$.
 
@@ -566,7 +566,7 @@ If benzene had three isolated C=C bonds, expected $\Delta H_\mathrm{hydrogenatio
 
 Experimental: $\mathrm{C{}_6\mathrm{H{}_6 + 3\mathrm{H{}_2 \to \mathrm{C{}_6\mathrm{H{}_{12}$, $\Delta H = -208\,\mathrm{kJ/mol{}$
 
-$$\text{'\{'}Delocalisation energy{'\}'} = -360 - (-208) = -152\,\mathrm{kJ/mol{}$$
+$$\text{Delocalisation energy{} = -360 - (-208) = -152\,\mathrm{kJ/mol{}$$
 
 The negative sign indicates that benzene is stabilised by $152\,\mathrm{kJ/mol{}$ relative to the hypothetical Kekule structure with three isolated double bonds.
 
@@ -620,7 +620,7 @@ $$\mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+ + \mathrm{H{}_2\mathrm{O{} \xrightar
 
 Step 5: Bromination of phenol with bromine water (no catalyst needed):
 
-$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{} + \mathrm{Br{}_2(aq) \to 4\text{'\{'}-{'\}'}\mathrm{BrC{}_6\mathrm{H{}_4\mathrm{OH{} \text{'\{'} (mono-bromination at para){'\}'}$$
+$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{} + \mathrm{Br{}_2(aq) \to 4\text{-{}\mathrm{BrC{}_6\mathrm{H{}_4\mathrm{OH{} \text{ (mono-bromination at para){}$$
 
 Note: Controlling mono-bromination of phenol requires careful control of bromine stoichiometry (use 1 equivalent of $\mathrm{Br{}_2$ in a non-aqueous solvent such as $\mathrm{CS{}_2$ at low temperature). In aqueous bromine water, tri-bromination occurs. For mono-bromination, use bromine in a non-polar solvent.
 
@@ -703,7 +703,7 @@ Starting from benzene, propose a synthesis of 3-bromonitrobenzene. Explain the o
 
 Step 1: Nitration of benzene (1 mark): $\mathrm{C{}_6\mathrm{H{}_6 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2$ (1 mark).
 
-Step 2: Bromination of nitrobenzene (1 mark): $\mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2 \xrightarrow{\mathrm{Br{}_2/\mathrm{FeBr{}_3}} 3\text{'\{'}-{'\}'}\mathrm{BrC{}_6\mathrm{H{}_4\mathrm{NO{}_2$ (1 mark).
+Step 2: Bromination of nitrobenzene (1 mark): $\mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2 \xrightarrow{\mathrm{Br{}_2/\mathrm{FeBr{}_3}} 3\text{-{}\mathrm{BrC{}_6\mathrm{H{}_4\mathrm{NO{}_2$ (1 mark).
 
 Justification (2 marks):
 - The $-\mathrm{NO{}_2$ group is meta-directing (1 mark), so bromination after nitration places bromine at the meta position (1 mark).
@@ -736,7 +736,7 @@ Explain the term delocalisation energy as applied to benzene. State the experime
 | Aryl ketone | Friedel-Crafts acylation | $\mathrm{RCOCl{}/\mathrm{AlCl{}_3$ |
 | Phenol | Diazonium salt hydrolysis | $\mathrm{ArN{}_2^+ + \mathrm{H{}_2\mathrm{O{},\,\Delta$ |
 | Haloarene | Electrophilic halogenation | $\mathrm{Br{}_2/\mathrm{FeBr{}_3$ or Sandmeyer |
-| Azo dye | Diazonium coupling | $\mathrm{ArN{}_2^+ + \text{'\{'}phenol/amine{'\}'}$ |
+| Azo dye | Diazonium coupling | $\mathrm{ArN{}_2^+ + \text{phenol/amine{}$ |
 
 ### Directing Group Strategy in Multi-Step Synthesis
 

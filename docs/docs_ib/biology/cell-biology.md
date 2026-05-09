@@ -885,7 +885,7 @@ The process of breaking open cells and separating organelles by differential cen
 
 **Magnification calculation:**
 
-$$\mathrm{Magnification{} = \frac{\text{'\{'}image size{'\}'}}{\text{'\{'}actual size{'\}'}}$$
+$$\mathrm{Magnification{} = \frac{\text{image size{}}{\text{actual size{}}$$
 
 **Resolution**: the minimum distance between two points that can be distinguished as separate. The
 resolving power of a microscope is limited by the wavelength of the illuminating radiation:
@@ -1068,7 +1068,7 @@ to the root tip, and the mitotic index drops to $5\%$. Explain two possible mech
 <details>
 <summary>Solution</summary>
 
-(a) Mitotic index $= \frac{\text{'\{'}cells in mitosis{'\}'}}{\text{'\{'}total cells{'\}'}} \times 100$
+(a) Mitotic index $= \frac{\text{cells in mitosis{}}{\text{total cells{}} \times 100$
 $= \frac{30 + 15 + 10 + 5}{310} \times 100 = \frac{60}{310} \times 100 = 19.4\%$
 
 (b) Duration of each phase is proportional to the fraction of cells in that phase:

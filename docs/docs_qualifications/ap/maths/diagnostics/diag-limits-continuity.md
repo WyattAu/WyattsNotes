@@ -61,7 +61,7 @@ $$\lim_{x \to 0} \frac{x + \sin x}{x} = \lim_{x \to 0} \frac{1 + \cos x}{1} = 2$
 
 (a) L'Hopital's rule requires the limit to be of the indeterminate form $\frac{0}{0}$ or $\frac{\infty}{\infty}$. Here:
 
-$$\lim_{x \to 0}(x + \sin x) = 0 + 0 = 0 \quad \text{'\{'}and{'\}'} \quad \lim_{x \to 0} x = 0$$
+$$\lim_{x \to 0}(x + \sin x) = 0 + 0 = 0 \quad \text{and{} \quad \lim_{x \to 0} x = 0$$
 
 So the limit IS $\frac{0}{0}$ -- L'Hopital's rule is actually valid here. However, the student did not verify the indeterminate form before applying it. Let us reconsider: the student's error is failing to check the conditions. In this case, the conditions happen to be met, so the answer is correct by coincidence.
 
@@ -97,7 +97,7 @@ $$\lim_{x \to \infty} \frac{x + \sin x}{x} = 1$$
 
 Let $f$ be defined by:
 
-$$f(x) = \begin{cases} \dfrac{x^2 - 4x + 3}{x^2 - 1} & \text{'\{'}if {'\}'} x \neq 1, -1 \\ 1 & \text{'\{'}if {'\}'} x = 1 \end{cases}$$
+$$f(x) = \begin{cases} \dfrac{x^2 - 4x + 3}{x^2 - 1} & \text{if {} x \neq 1, -1 \\ 1 & \text{if {} x = 1 \end{cases}$$
 
 (a) Find $\displaystyle\lim_{x \to 1} f(x)$.
 (b) Is $f$ continuous at $x = 1$? State all three conditions for continuity at a point and verify each.
@@ -108,7 +108,7 @@ $$f(x) = \begin{cases} \dfrac{x^2 - 4x + 3}{x^2 - 1} & \text{'\{'}if {'\}'} x \n
 
 (a) Factor the numerator and denominator:
 
-$$\frac{x^2 - 4x + 3}{x^2 - 1} = \frac{(x-1)(x-3)}{(x-1)(x+1)} = \frac{x-3}{x+1} \quad \text{'\{'}for {'\}'} x \neq 1$$
+$$\frac{x^2 - 4x + 3}{x^2 - 1} = \frac{(x-1)(x-3)}{(x-1)(x+1)} = \frac{x-3}{x+1} \quad \text{for {} x \neq 1$$
 
 $$\lim_{x \to 1} f(x) = \frac{1 - 3}{1 + 1} = \frac{-2}{2} = -1$$
 
@@ -179,7 +179,7 @@ Let $f(x) = |x^2 - 4|$. Determine whether $f$ is differentiable at $x = 2$ and $
 
 **Solution:**
 
-$f(x) = |x^2 - 4| = \begin{cases} x^2 - 4 & \text{'\{'}if {'\}'} |x| \geq 2 \\ 4 - x^2 & \text{'\{'}if {'\}'} |x| \lt 2 \end{cases}$
+$f(x) = |x^2 - 4| = \begin{cases} x^2 - 4 & \text{if {} |x| \geq 2 \\ 4 - x^2 & \text{if {} |x| \lt 2 \end{cases}$
 
 **At $x = 2$:**
 

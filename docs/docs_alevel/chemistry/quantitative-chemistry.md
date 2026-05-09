@@ -632,7 +632,7 @@ $$
 **Step 6:** Calculate the percentage purity.
 
 $$
-\text{'\{'}Purity{'\}'} = \frac{1.79}{2.00} \times 100 = 89.5\%
+\text{Purity{} = \frac{1.79}{2.00} \times 100 = 89.5\%
 $$
 
 ## Water of Crystallisation
@@ -713,7 +713,7 @@ Alternatively, using molar volume: $V = 0.0999 \times 24.0 = 2.40\,\mathrm{dm{}^
 For a measurement $x \pm \Delta x$:
 
 $$
-\text{'\{'}Percentage uncertainty{'\}'} = \frac{\Delta x}{x} \times 100\%
+\text{Percentage uncertainty{} = \frac{\Delta x}{x} \times 100\%
 $$
 
 ### Combining Uncertainties
@@ -839,25 +839,25 @@ $$m(\mathrm{H{}_2) = 0.0688 \times 2.016 = 0.139\,\mathrm{g{}$$
 
 If only $0.098\,\mathrm{g{}$ of $\mathrm{H{}_2$ was collected:
 
-$$\text{'\{'}Percentage yield{'\}'} = \frac{0.098}{0.139} \times 100 = 70.5\%$$
+$$\text{Percentage yield{} = \frac{0.098}{0.139} \times 100 = 70.5\%$$
 
 ### Atom Economy
 
 Atom economy measures the efficiency of a reaction in terms of how much of the reactants end up in the desired product:
 
-$$\text{'\{'}Atom economy{'\}'} = \frac{M_r \text{'\{'} of desired product{'\}'}}{\text{'\{'}Sum of {'\}'} M_r \text{'\{'} of all products{'\}'}} \times 100\%$$
+$$\text{Atom economy{} = \frac{M_r \text{ of desired product{}}{\text{Sum of {} M_r \text{ of all products{}} \times 100\%$$
 
 **Worked Example:** Compare the atom economy of two routes to ethanol.
 
 Route 1: Hydration of ethene (addition reaction)
 $$\mathrm{C{}_2\mathrm{H{}_4 + \mathrm{H{}_2\mathrm{O{} \to \mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}$$
 
-$$\text{'\{'}Atom economy{'\}'} = \frac{46.0}{46.0} \times 100 = 100\%$$
+$$\text{Atom economy{} = \frac{46.0}{46.0} \times 100 = 100\%$$
 
 Route 2: Fermentation (single product)
 $$\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 \to 2\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{} + 2\mathrm{CO{}_2$$
 
-$$\text{'\{'}Atom economy{'\}'} = \frac{2 \times 46.0}{2 \times 46.0 + 2 \times 44.0} \times 100 = \frac{92.0}{180.0} \times 100 = 51.1\%$$
+$$\text{Atom economy{} = \frac{2 \times 46.0}{2 \times 46.0 + 2 \times 44.0} \times 100 = \frac{92.0}{180.0} \times 100 = 51.1\%$$
 
 Addition reactions always have 100% atom economy (assuming no side reactions). This is a key advantage of addition reactions in green chemistry.
 
@@ -949,7 +949,7 @@ This equals $n(\mathrm{CH{}_3\mathrm{COOH{})$ in $25.0\,\mathrm{cm{}^3$ of origi
 
 $$c(\mathrm{CH{}_3\mathrm{COOH{}) = \frac{0.0184}{0.0250} = 0.736\,\mathrm{mol\,dm^{-3}}$$
 
-$$\text{'\{'}Concentration in {'\}'} \mathrm{g\,dm^{-3}} = 0.736 \times 60.05 = 44.2\,\mathrm{g\,dm^{-3}}$$ (2 marks).
+$$\text{Concentration in {} \mathrm{g\,dm^{-3}} = 0.736 \times 60.05 = 44.2\,\mathrm{g\,dm^{-3}}$$ (2 marks).
 
 </details>
 

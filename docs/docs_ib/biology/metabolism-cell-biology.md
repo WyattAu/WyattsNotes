@@ -196,7 +196,7 @@ For each G3P (multiply by 2 for the full glucose molecule):
 Pyruvate is transported from the cytoplasm into the mitochondrial matrix, where it is converted to
 acetyl-CoA:
 
-$$\mathrm{Pyruvate{} + \mathrm{CoA{} + \mathrm{NAD{}^+ \to \mathrm{Acetyl\text{'\{'}-{'\}'}CoA} + \mathrm{CO{}_2 + \mathrm{NADH{}$$
+$$\mathrm{Pyruvate{} + \mathrm{CoA{} + \mathrm{NAD{}^+ \to \mathrm{Acetyl\text{-{}CoA} + \mathrm{CO{}_2 + \mathrm{NADH{}$$
 
 Catalysed by the **pyruvate dehydrogenase complex** (a multi-enzyme complex). Per glucose: $2$ pyruvate
 $\to$ $2$ acetyl-CoA, $2$ $\mathrm{CO{}_2$, $2$ NADH.
@@ -319,7 +319,7 @@ and the cell must rely on fermentation or anaerobic respiration.
 
 Photosynthesis converts light energy into chemical energy stored in glucose:
 
-$$6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \text{'\{'}light energy{'\}'} \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$$
+$$6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \text{light energy{} \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$$
 
 Occurs in the **chloroplasts** of plant cells (and algae, cyanobacteria). Chloroplasts have an
 outer membrane, inner membrane, stroma (fluid), and thylakoid membranes (site of the
@@ -379,7 +379,7 @@ into organic molecules ( carbohydrates).
 $\mathrm{CO{}_2$ is fixed by **ribulose-1,5-bisphosphate carboxylase/oxygenase (Rubisco)**, the most
 abundant protein on Earth:
 
-$$\mathrm{CO{}_2 + \text{'\{'}RuBP (5C){'\}'} \to 2\times\text{'\{'}3-phosphoglycerate (3-PGA, 3C){'\}'}$$
+$$\mathrm{CO{}_2 + \text{RuBP (5C){} \to 2\times\text{3-phosphoglycerate (3-PGA, 3C){}$$
 
 Rubisco catalyses approximately $10^{12}$ reactions per second globally but is inefficient:
 - **Slow turnover**: $\approx 3$ reactions per second per active site.
@@ -391,7 +391,7 @@ Rubisco catalyses approximately $10^{12}$ reactions per second globally but is i
 
 3-PGA is phosphorylated by ATP (from the light-dependent reactions) and reduced by NADPH:
 
-$$\text{'\{'}3-PGA{'\}'} + \text{'\{'}ATP{'\}'} + \text{'\{'}NADPH{'\}'} \to \text{'\{'}G3P (glyceraldehyde-3-phosphate){'\}'}$$
+$$\text{3-PGA{} + \text{ATP{} + \text{NADPH{} \to \text{G3P (glyceraldehyde-3-phosphate){}$$
 
 For every 3 $\mathrm{CO{}_2$ fixed, 6 G3P are produced, but 5 are recycled to regenerate RuBP.
 Only 1 G3P (a 3-carbon sugar) is the net gain per 3 $\mathrm{CO{}_2$.
@@ -402,7 +402,7 @@ Only 1 G3P (a 3-carbon sugar) is the net gain per 3 $\mathrm{CO{}_2$.
 
 ### Net equation of the Calvin cycle (per 3 $\mathrm{CO{}_2$):
 
-$$3\mathrm{CO{}_2 + 9\mathrm{ATP{} + 6\mathrm{NADPH{} \to \text{'\{'}G3P{'\}'} + 9\mathrm{ADP{} + 8\mathrm{P_i{} + 6\mathrm{NADP{}^+$$
+$$3\mathrm{CO{}_2 + 9\mathrm{ATP{} + 6\mathrm{NADPH{} \to \text{G3P{} + 9\mathrm{ADP{} + 8\mathrm{P_i{} + 6\mathrm{NADP{}^+$$
 
 To synthesise one glucose molecule ($6\;\mathrm{C{}$), the Calvin cycle must turn twice:
 $6\mathrm{CO{}_2 + 18\mathrm{ATP{} + 12\mathrm{NADPH{} \to \mathrm{glucose{} + 18\mathrm{ADP{} + 18\mathrm{P_i{} + 12\mathrm{NADP{}^+$.
@@ -435,7 +435,7 @@ stored $\mathrm{CO{}_2$ is released for the Calvin cycle.
 In the absence of oxygen (or when the ETC cannot keep up with demand), pyruvate is converted to
 lactate by **lactate dehydrogenase**, oxidising NADH to $\mathrm{NAD{}^+$:
 
-$$\text{'\{'}Pyruvate{'\}'} + \mathrm{NADH{} \to \text{'\{'}Lactate{'\}'} + \mathrm{NAD{}^+$$
+$$\text{Pyruvate{} + \mathrm{NADH{} \to \text{Lactate{} + \mathrm{NAD{}^+$$
 
 - Net ATP per glucose: 2 (from glycolysis only).
 - Occurs in **animal muscle cells** during intense exercise (oxygen debt) and in certain bacteria
@@ -447,8 +447,8 @@ $$\text{'\{'}Pyruvate{'\}'} + \mathrm{NADH{} \to \text{'\{'}Lactate{'\}'} + \mat
 In yeast and some plant cells, pyruvate is first decarboxylated to acetaldehyde (releasing
 $\mathrm{CO{}_2$), then reduced to ethanol:
 
-$$\text{'\{'}Pyruvate{'\}'} \xrightarrow{\text{'\{'}pyruvate decarboxylase{'\}'}} \text{'\{'}Acetaldehyde{'\}'} + \mathrm{CO{}_2$$
-$$\text{'\{'}Acetaldehyde{'\}'} + \mathrm{NADH{} \to \text{'\{'}Ethanol{'\}'} + \mathrm{NAD{}^+$$
+$$\text{Pyruvate{} \xrightarrow{\text{pyruvate decarboxylase{}} \text{Acetaldehyde{} + \mathrm{CO{}_2$$
+$$\text{Acetaldehyde{} + \mathrm{NADH{} \to \text{Ethanol{} + \mathrm{NAD{}^+$$
 
 - Net ATP per glucose: 2 (from glycolysis only).
 - Used in **brewing** (ethanol production) and **baking** ($\mathrm{CO{}_2$ production causes bread to
@@ -598,7 +598,7 @@ does the RQ suggest about the primary respiratory substrate? (c) If the tissue c
 <details>
 <summary>Answer</summary>
 
-(a) $\mathrm{RQ{} = \frac{\mathrm{CO{}_2\text{'\{'} produced{'\}'}}{\mathrm{O{}_2\text{'\{'} consumed{'\}'}} = \frac{58}{60} = 0.967$
+(a) $\mathrm{RQ{} = \frac{\mathrm{CO{}_2\text{ produced{}}{\mathrm{O{}_2\text{ consumed{}} = \frac{58}{60} = 0.967$
 
 (b) An RQ close to $1.0$ indicates that the primary substrate is **carbohydrate** (glucose), since
 the complete oxidation of glucose produces equal moles of $\mathrm{CO{}_2$ and $\mathrm{O{}_2$
@@ -887,7 +887,7 @@ Step 3: Oxidation of products through the ETC and Krebs cycle.
   $8 \times (3 \times 2.5 + 1 \times 1.5 + 1) = 8 \times (7.5 + 1.5 + 1) = 8 \times 10 = 80\;\mathrm{ATP{}$
 
 Step 4: Net ATP yield.
-$\text{'\{'}Total{'\}'} = 10.5 + 17.5 + 80 - 2 = 106\;\mathrm{ATP{}$
+$\text{Total{} = 10.5 + 17.5 + 80 - 2 = 106\;\mathrm{ATP{}$
 
 Using the traditional P/O ratios ($\mathrm{NADH{} = 3$, $\mathrm{FADH{}_2 = 2$):
 $7 \times 2 + 7 \times 3 + 8 \times 12 - 2 = 14 + 21 + 96 - 2 = 129\;\mathrm{ATP{}$
@@ -904,7 +904,7 @@ per hour, calculate the energy equivalent per litre of $\mathrm{O{}_2$ consumed.
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{RQ{} = \frac{\mathrm{CO{}_2\text{'\{'} produced{'\}'}}{\mathrm{O{}_2\text{'\{'} consumed{'\}'}} = \frac{252}{280} = 0.90$
+(a) $\mathrm{RQ{} = \frac{\mathrm{CO{}_2\text{ produced{}}{\mathrm{O{}_2\text{ consumed{}} = \frac{252}{280} = 0.90$
 
 (b) Interpretation of RQ values:
 - $\mathrm{RQ{} = 1.0$: pure carbohydrate (glucose: $\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2 \to 6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{}$)
@@ -919,7 +919,7 @@ Energy per litre of $\mathrm{O{}_2$: $\frac{400}{16.8} = 23.8\;\mathrm{kcal/L\;O
 
 This is close to the typical value for a mixed diet ($\approx 20.1$ for fat, $\approx 21.1$ for protein,
 $\approx 5.0$ for carbohydrate per litre of $\mathrm{O{}_2$ -- the weighted average is approximately
-$20\text{'\{'}--{'\}'}22\;\mathrm{kcal/L\;O{}_2$).
+$20\text{--{}22\;\mathrm{kcal/L\;O{}_2$).
 
 </details>
 
@@ -1330,26 +1330,26 @@ producing a net gain of 2 ATP and 2 NADH. It consists of 10 steps:
 10. **Pyruvate kinase**: PEP + ADP $\to$ pyruvate + ATP. **Substrate-level phosphorylation.** Produces
     2 ATP. Pyruvate kinase is activated by F1,6BP (feedforward activation).
 
-**Net equation**: $\mathrm{Glucose{} + 2\mathrm{NAD{}^+ + 2\mathrm{ADP{} + 2\mathrm{P{}_i \to 2\;\text{'\{'}pyruvate{'\}'} + 2\mathrm{NADH{} + 2\mathrm{ATP{} + 2\mathrm{H{}_2\mathrm{O{}$
+**Net equation**: $\mathrm{Glucose{} + 2\mathrm{NAD{}^+ + 2\mathrm{ADP{} + 2\mathrm{P{}_i \to 2\;\text{pyruvate{} + 2\mathrm{NADH{} + 2\mathrm{ATP{} + 2\mathrm{H{}_2\mathrm{O{}$
 
 ### Fate of Pyruvate
 
 **Aerobic conditions**: pyruvate enters the mitochondrial matrix via the pyruvate carrier. In the matrix,
 pyruvate dehydrogenase complex (PDC) converts pyruvate to acetyl-CoA:
-$$\text{'\{'}Pyruvate{'\}'} + \mathrm{NAD{}^+ + \mathrm{CoA{} \to \text{'\{'}acetyl-CoA{'\}'} + \mathrm{NADH{} + \mathrm{CO{}_2$$
+$$\text{Pyruvate{} + \mathrm{NAD{}^+ + \mathrm{CoA{} \to \text{acetyl-CoA{} + \mathrm{NADH{} + \mathrm{CO{}_2$$
 
 PDC is a multi-enzyme complex containing 3 enzymes and 5 cofactors (TPP, lipoamide, CoA, FAD, $\mathrm{NAD{}^+$).
 It produces 1 NADH per pyruvate (2 per glucose).
 
 **Anaerobic conditions** (in animal cells): pyruvate is reduced to lactate by lactate dehydrogenase (LDH):
-$$\text{'\{'}Pyruvate{'\}'} + \mathrm{NADH{} + \mathrm{H{}^+ \to \text{'\{'}lactate{'\}'} + \mathrm{NAD{}^+$$
+$$\text{Pyruvate{} + \mathrm{NADH{} + \mathrm{H{}^+ \to \text{lactate{} + \mathrm{NAD{}^+$$
 
 This regenerates $\mathrm{NAD{}^+$, allowing glycolysis to continue. The lactate is transported to the
 liver (Cori cycle), where it is converted back to glucose (gluconeogenesis, costing 6 ATP per lactate).
 
 **Anaerobic conditions** (in yeast): pyruvate is decarboxylated to acetaldehyde (by pyruvate decarboxylase)
 and then reduced to ethanol (by alcohol dehydrogenase):
-$$\text{'\{'}Pyruvate{'\}'} \to \text{'\{'}acetaldehyde{'\}'} + \mathrm{CO{}_2 \to \text{'\{'}ethanol{'\}'} + \mathrm{NAD{}^+$$
+$$\text{Pyruvate{} \to \text{acetaldehyde{} + \mathrm{CO{}_2 \to \text{ethanol{} + \mathrm{NAD{}^+$$
 
 ### The Krebs Cycle (Citric Acid Cycle / TCA Cycle)
 

@@ -109,7 +109,7 @@ When two genes are located on the **same chromosome**, they tend to be inherited
 
 The recombination frequency (RF) between two linked genes is calculated from a test cross:
 
-$$\mathrm{RF{} = \frac{\text{'\{'}Number of recombinant offspring{'\}'}}{\text{'\{'}Total number of offspring{'\}'}} \times 100\%$$
+$$\mathrm{RF{} = \frac{\text{Number of recombinant offspring{}}{\text{Total number of offspring{}} \times 100\%$$
 
 The recombination frequency is approximately equal to the **map distance** between the genes in **centiMorgans (cM)**. One centiMorgan corresponds to a 1% probability of crossing over between the two loci per meiosis.
 
@@ -331,13 +331,13 @@ The frequency decreases very slowly because most copies of the recessive allele 
 
 The molecular clock hypothesis states that mutations accumulate in DNA at a roughly constant rate, so the number of sequence differences between two species is proportional to the time since their divergence.
 
-$$\text{'\{'}Divergence time{'\}'} = \frac{d}{2\mu}$$
+$$\text{Divergence time{} = \frac{d}{2\mu}$$
 
 where $d$ is the proportion of nucleotide sites that differ between two species, and $\mu$ is the mutation rate per site per year. The factor of 2 accounts for independent accumulation of mutations in both lineages.
 
 **Worked Example.** Two species of primate differ at 3.6% of nucleotide sites in a non-coding region. The mutation rate is estimated at $\mu = 2.5 \times 10^{-9}$ substitutions per site per year.
 
-$$\text{'\{'}Time{'\}'} = \frac{0.036}{2 \times 2.5 \times 10^{-9}} = \frac{0.036}{5 \times 10^{-9}} = 7.2 \times 10^6\ \text{'\{'}years{'\}'}$$
+$$\text{Time{} = \frac{0.036}{2 \times 2.5 \times 10^{-9}} = \frac{0.036}{5 \times 10^{-9}} = 7.2 \times 10^6\ \text{years{}$$
 
 The two species diverged approximately 7.2 million years ago.
 
@@ -539,7 +539,7 @@ Common Pitfall Students often confuse epistasis with dominance. Remember: domina
 
 When two genes are linked on the same chromosome, they do not assort independently. The frequency of recombinant offspring reflects the distance between the genes.
 
-$$\text{'\{'}Recombination frequency (RF){'\}'} = \frac{\text{'\{'}Number of recombinant offspring{'\}'}}{\text{'\{'}Total offspring{'\}'}} \times 100\%$$
+$$\text{Recombination frequency (RF){} = \frac{\text{Number of recombinant offspring{}}{\text{Total offspring{}} \times 100\%$$
 
 $1\%$ recombination frequency $= 1$ centimorgan (cM) $= 1$ map unit.
 
@@ -552,7 +552,7 @@ $1\%$ recombination frequency $= 1$ centimorgan (cM) $= 1$ map unit.
 | $Ab$ | 100 | Recombinant |
 | $aB$ | 100 | Recombinant |
 
-$\text{'\{'}RF{'\}'} = \frac{100 + 100}{420 + 380 + 100 + 100} = \frac{200}{1000} = 20\%$.
+$\text{RF{} = \frac{100 + 100}{420 + 380 + 100 + 100} = \frac{200}{1000} = 20\%$.
 
 The genes $A$ and $B$ are 20 cM apart.
 
@@ -560,13 +560,13 @@ The genes $A$ and $B$ are 20 cM apart.
 
 In a three-point cross, double crossovers (DCOs) may occur less frequently than expected because one crossover event can physically interfere with a second nearby crossover.
 
-$$\text{'\{'}Coincidence (c.o.c.){'\}'} = \frac{\text{'\{'}Observed DCO frequency{'\}'}}{\text{'\{'}Expected DCO frequency{'\}'}}$$
+$$\text{Coincidence (c.o.c.){} = \frac{\text{Observed DCO frequency{}}{\text{Expected DCO frequency{}}$$
 
-$$\text{'\{'}Expected DCO frequency{'\}'} = \text{'\{'}RF{'\}'}_{AB} \times \text{'\{'}RF{'\}'}_{BC}$$
+$$\text{Expected DCO frequency{} = \text{RF{}_{AB} \times \text{RF{}_{BC}$$
 
-$$\text{'\{'}Interference{'\}'} = 1 - \text{'\{'}Coincidence{'\}'}$$
+$$\text{Interference{} = 1 - \text{Coincidence{}$$
 
-**Worked Example.** Three genes ($A$, $B$, $C$) are mapped. $\text{'\{'}RF{'\}'}_{AB} = 15\%$, $\text{'\{'}RF{'\}'}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
+**Worked Example.** Three genes ($A$, $B$, $C$) are mapped. $\text{RF{}_{AB} = 15\%$, $\text{RF{}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
 
 Expected DCO $= 0.15 \times 0.10 = 0.015 = 1.5\%$.
 
@@ -827,7 +827,7 @@ When two genes are linked on the same chromosome, the dihybrid ratio deviates fr
 | Purple, round ($Pl/pl$) | 50 | Recombinant |
 | White, long ($pL/pl$) | 50 | Recombinant |
 
-$\text{'\{'}RF{'\}'} = \frac{50 + 50}{250 + 250 + 50 + 50} = \frac{100}{600} = 16.7\%$.
+$\text{RF{} = \frac{50 + 50}{250 + 250 + 50 + 50} = \frac{100}{600} = 16.7\%$.
 
 The genes are 16.7 cM apart. Without linkage, the expected ratio would be 1:1:1:1 (150:150:150:150). The excess of parental types and deficiency of recombinant types indicate linkage.
 
@@ -998,7 +998,7 @@ A couple (both unaffected) have a child with cystic fibrosis (autosomal recessiv
 
 1. The woman's brother has CF, so both of her parents must be carriers ($Cc$). The woman's genotype is either $CC$ or $Cc$.
 2. The probability that the woman is a carrier $= 2/3$ (she is not affected, so she is either $CC$ or $Cc$; the ratio of $CC:Cc$ among unaffected siblings of an affected individual is 1:2, so $P(Cc) = 2/3$).
-3. The man is unaffected and his parents are not mentioned. If CF is rare, the population carrier frequency is approximately $q \approx \sqrt{q^2} = \sqrt{1/2500} \approx 1/50$. So $P(\text{'\{'}man is {'\}'} Cc) \approx 1/50$.
+3. The man is unaffected and his parents are not mentioned. If CF is rare, the population carrier frequency is approximately $q \approx \sqrt{q^2} = \sqrt{1/2500} \approx 1/50$. So $P(\text{man is {} Cc) \approx 1/50$.
 4. If both are carriers, the probability of an affected child is $1/4$.
 
 Overall probability of an affected child $= \frac{2}{3} \times \frac{1}{50} \times \frac{1}{4} = \frac{2}{600} = \frac{1}{300}$.
@@ -1077,11 +1077,11 @@ Common Pitfall Students often use the term "junk DNA" to describe non-coding DNA
 
 $$p = 1 - q = 1 - 0.02 = 0.98$$
 
-$$p^2 = (0.98)^2 = 0.9604 \quad \Rightarrow \quad 9604 \text{'\{'} individuals{'\}'}$$
+$$p^2 = (0.98)^2 = 0.9604 \quad \Rightarrow \quad 9604 \text{ individuals{}$$
 
-$$2pq = 2 \times 0.98 \times 0.02 = 0.0392 \quad \Rightarrow \quad 392 \text{'\{'} individuals{'\}'}$$
+$$2pq = 2 \times 0.98 \times 0.02 = 0.0392 \quad \Rightarrow \quad 392 \text{ individuals{}$$
 
-$$q^2 = (0.02)^2 = 0.0004 \quad \Rightarrow \quad 4 \text{'\{'} individuals{'\}'}$$
+$$q^2 = (0.02)^2 = 0.0004 \quad \Rightarrow \quad 4 \text{ individuals{}$$
 
 **Problem:** Sickle cell anaemia has an incidence of 1 in 2,500 in a West African population. What proportion of the population are carriers?
 
@@ -1089,7 +1089,7 @@ $$q^2 = \frac{1}{2500} = 0.0004 \quad \Rightarrow \quad q = 0.02$$
 
 $$p = 1 - 0.02 = 0.98$$
 
-$$2pq = 2 \times 0.98 \times 0.02 = 0.0392 \quad \Rightarrow \quad \text{'\{'}approximately {'\}'} 3.9\% \text{'\{'} of the population are carriers{'\}'}$$
+$$2pq = 2 \times 0.98 \times 0.02 = 0.0392 \quad \Rightarrow \quad \text{approximately {} 3.9\% \text{ of the population are carriers{}$$
 
 ### 19.2 Selection Coefficients and Fitness
 
@@ -1121,11 +1121,11 @@ The frequency of the recessive allele decreases by approximately 0.0125 per gene
 
 **Probability of allele loss in a bottleneck:** the probability that an allele with frequency $q$ is lost in a population of $N$ individuals after a bottleneck is approximately:
 
-$$P(\text{'\{'}loss{'\}'}) \approx (1-q)^{2N}$$
+$$P(\text{loss{}) \approx (1-q)^{2N}$$
 
 For allele $r$ ($q = 0.1$) with $N = 10$:
 
-$$P(\text{'\{'}loss{'\}'}) \approx (0.9)^{20} \approx 0.122$$
+$$P(\text{loss{}) \approx (0.9)^{20} \approx 0.122$$
 
 There is approximately a 12% chance that allele $r$ is lost after this bottleneck.
 
@@ -1199,7 +1199,7 @@ Genes on the same chromosome are said to be **linked**. They do not assort indep
 
 ### 21.2 Calculating Recombination Frequency
 
-Recombination frequency $= \frac{\text{'\{'}number of recombinant offspring{'\}'}}{\text{'\{'}total number of offspring{'\}'}} \times 100\%$
+Recombination frequency $= \frac{\text{number of recombinant offspring{}}{\text{total number of offspring{}} \times 100\%$
 
 **Example:** A dihybrid cross involving two linked genes (A/a and B/b) produces:
 
@@ -1521,13 +1521,13 @@ Genes on the same chromosome are linked and tend to be inherited together (do no
 
 ### 29.2 Calculating Recombination Frequency
 
-$$\text{'\{'}Recombination frequency{'\}'} = \frac{\text{'\{'}Number of recombinant offspring{'\}'}}{\text{'\{'}Total number of offspring{'\}'}} \times 100$$
+$$\text{Recombination frequency{} = \frac{\text{Number of recombinant offspring{}}{\text{Total number of offspring{}} \times 100$$
 
 **Example:** A test cross of a double heterozygote produces 400 offspring:
 - Parental types: 180 AB/ab + 170 Ab/aB = 350
 - Recombinant types: 15 Ab/aB + 35 aB/Ab = 50
 
-$$\text{'\{'}Recombination frequency{'\}'} = \frac{50}{400} \times 100 = 12.5\%$$
+$$\text{Recombination frequency{} = \frac{50}{400} \times 100 = 12.5\%$$
 
 The genes are 12.5 map units (centimorgans, cM) apart.
 
@@ -1804,9 +1804,9 @@ The gene pool is the total collection of all alleles of all genes present in a p
 
 ### 53.2 Allele Frequency
 
-$$p = \frac{\text{'\{'}Number of copies of the dominant allele{'\}'}}{\text{'\{'}Total number of alleles in the population{'\}'}}$$
+$$p = \frac{\text{Number of copies of the dominant allele{}}{\text{Total number of alleles in the population{}}$$
 
-$$q = \frac{\text{'\{'}Number of copies of the recessive allele{'\}'}}{\text{'\{'}Total number of alleles in the population{'\}'}}$$
+$$q = \frac{\text{Number of copies of the recessive allele{}}{\text{Total number of alleles in the population{}}$$
 
 Where $p + q = 1$.
 

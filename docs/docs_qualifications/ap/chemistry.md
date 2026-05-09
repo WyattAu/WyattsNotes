@@ -64,7 +64,7 @@ Hybridisation matches electron domains: 2 = sp, 3 = sp$^2$, 4 = sp$^3$, 5 = sp$^
 
 Molecular orbital (MO) theory treats electrons as delocalised over the entire molecule. For homonuclear diatomics, MO diagrams predict bond order:
 
-$$\text{'\{'}Bond order{'\}'} = \frac{(\text{'\{'}bonding {'\}'} e^-) - (\text{'\{'}antibonding {'\}'} e^-)}{2}$$
+$$\text{Bond order{} = \frac{(\text{bonding {} e^-) - (\text{antibonding {} e^-)}{2}$$
 
 $\mathrm{O{}_2$ has bond order 2 and two unpaired electrons in antibonding $\pi^*$ orbitals, explaining its paramagnetism -- a fact VSEPR and Lewis structures cannot explain.
 
@@ -76,7 +76,7 @@ London dispersion forces < dipole-dipole < hydrogen bonding < ion-dipole. Hydrog
 
 ### The Mole and Stoichiometry
 
-$$\text{'\{'}moles{'\}'} = \frac{\text{'\{'}mass{'\}'}}{\text{'\{'}molar mass{'\}'}}, \qquad \text{'\{'}particles{'\}'} = \text{'\{'}moles{'\}'} \times N_A$$
+$$\text{moles{} = \frac{\text{mass{}}{\text{molar mass{}}, \qquad \text{particles{} = \text{moles{} \times N_A$$
 
 For limiting reactant problems, divide each reactant's moles by its stoichiometric coefficient; the smallest result identifies the limiting reactant.
 
@@ -120,7 +120,7 @@ $$\Delta U = q + w, \qquad w = -P\Delta V, \qquad \Delta H = \Delta U + P\Delta 
 
 At constant pressure, $\Delta H = q_P$. Standard enthalpy of reaction:
 
-$$\Delta H_{\mathrm{rxn{}}^\circ = \sum n\Delta H_f^\circ(\text{'\{'}products{'\}'}) - \sum m\Delta H_f^\circ(\text{'\{'}reactants{'\}'})$$
+$$\Delta H_{\mathrm{rxn{}}^\circ = \sum n\Delta H_f^\circ(\text{products{}) - \sum m\Delta H_f^\circ(\text{reactants{})$$
 
 By convention, $\Delta H_f^\circ = 0$ for elements in their standard state.
 
@@ -132,7 +132,7 @@ Bomb (constant $V$): $q_{\mathrm{rxn{}} = -C_{\mathrm{cal{}}\Delta T$; convert t
 
 ### Entropy and Gibbs Free Energy
 
-$$\Delta S_{\mathrm{universe{}} = \Delta S_{\mathrm{system{}} + \Delta S_{\mathrm{surroundings{}} > 0 \quad (\text{'\{'}spontaneous{'\}'})$$
+$$\Delta S_{\mathrm{universe{}} = \Delta S_{\mathrm{system{}} + \Delta S_{\mathrm{surroundings{}} > 0 \quad (\text{spontaneous{})$$
 
 $$\Delta G = \Delta H - T\Delta S, \qquad \Delta G^\circ = -RT\ln K$$
 
@@ -159,7 +159,7 @@ For $a\mathrm{A{} + b\mathrm{B{} \rightleftharpoons c\mathrm{C{} + d\mathrm{D{}$
 
 $$K_c = \frac{[\mathrm{C{}]^c[\mathrm{D{}]^d}{[\mathrm{A{}]^a[\mathrm{B{}]^b}, \qquad K_p = K_c(RT)^{\Delta n}$$
 
-where $\Delta n = (\text{'\{'}moles gaseous products{'\}'}) - (\text{'\{'}moles gaseous reactants{'\}'})$. Solids and pure liquids are omitted.
+where $\Delta n = (\text{moles gaseous products{}) - (\text{moles gaseous reactants{})$. Solids and pure liquids are omitted.
 
 The reaction quotient $Q$ uses current concentrations. If $Q < K$, the reaction proceeds forward; if $Q > K$, it proceeds in reverse.
 
@@ -225,7 +225,7 @@ $$2.079 = \frac{E_a}{8.314}(4.762 \times 10^{-4}) \implies E_a = 36.3\;\mathrm{k
 
 $$\mathrm{pH{} = -\log[\mathrm{H{}^+], \quad \mathrm{pOH{} = -\log[\mathrm{OH{}^-], \quad \mathrm{pH{} + \mathrm{pOH{} = 14$$
 
-$$K_w = [\mathrm{H{}^+][\mathrm{OH{}^-] = 1.0 \times 10^{-14} \text{'\{'} at {'\}'} 25^\circ\mathrm{C{}$$
+$$K_w = [\mathrm{H{}^+][\mathrm{OH{}^-] = 1.0 \times 10^{-14} \text{ at {} 25^\circ\mathrm{C{}$$
 
 ### Strong and Weak Acids/Bases
 
@@ -237,7 +237,7 @@ $$K_a = \frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}, \qquad K_a \cdot 
 
 For a weak acid HA at initial concentration $C_0$:
 
-$$[\mathrm{H{}^+] = \sqrt{K_a \cdot C_0} \quad (\text{'\{'}valid when {'\}'} C_0 / K_a > 100)$$
+$$[\mathrm{H{}^+] = \sqrt{K_a \cdot C_0} \quad (\text{valid when {} C_0 / K_a > 100)$$
 
 ### Buffers
 
@@ -293,7 +293,7 @@ Measured relative to the standard hydrogen electrode (SHE), defined as $E^\circ 
 
 For non-standard conditions:
 
-$$E = E^\circ - \frac{RT}{nF}\ln Q = E^\circ - \frac{0.0592}{n}\log Q \quad (\text{'\{'}at {'\}'} 298\;\mathrm{K{})$$
+$$E = E^\circ - \frac{RT}{nF}\ln Q = E^\circ - \frac{0.0592}{n}\log Q \quad (\text{at {} 298\;\mathrm{K{})$$
 
 where $n$ is moles of electrons transferred, $F = 96485\;\mathrm{C/mol{}$, and $Q$ is the reaction quotient using activities (approximated by concentrations/partial pressures).
 

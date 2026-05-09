@@ -82,7 +82,7 @@ PCR amplifies a specific DNA sequence in vitro. For details of the basic mechani
 
 **The $C_t$ value** (threshold cycle) is the PCR cycle at which the fluorescence exceeds a defined threshold. It is inversely proportional to the logarithm of the initial template quantity:
 
-$$C_t \propto -\log(\text{'\{'}initial template amount{'\}'})$$
+$$C_t \propto -\log(\text{initial template amount{})$$
 
 A lower $C_t$ value indicates more initial template.
 
@@ -260,7 +260,7 @@ Dysbiosis (imbalance of the microbiome) is associated with:
 
 **Worked Example 1: PCR product yield.** A PCR reaction starts with 3 copies of a target sequence. After 32 cycles, how many copies are produced?
 
-$$N = 3 \times 2^{32} = 3 \times 4294967296 = 1.29 \times 10^{10}\ \text{'\{'}copies{'\}'}$$
+$$N = 3 \times 2^{32} = 3 \times 4294967296 = 1.29 \times 10^{10}\ \text{copies{}$$
 
 **Worked Example 2: Restriction fragment analysis.** A plasmid of $5000\ \mathrm{bp{}$ is cut with EcoRI at position $1000\ \mathrm{bp{}$ and with BamHI at position $3500\ \mathrm{bp{}$. How many fragments are produced and what are their sizes?
 
@@ -350,7 +350,7 @@ Vitamin A deficiency (VAD) affects approximately 250 million children worldwide,
 
 These genes enable the rice endosperm to produce $\beta$-carotene from geranylgeranyl diphosphate (GGPP), a precursor already present in the endosperm:
 
-$$\text{'\{'}GGPP{'\}'} \xrightarrow{\text{'\{'}psy{'\}'}} \text{'\{'}phytoene{'\}'} \xrightarrow{\text{'\{'}crtI{'\}'}} \text{'\{'}lycopene{'\}'} \xrightarrow{\text{'\{'}lcy (endogenous){'\}'}} \beta\text{'\{'}-carotene{'\}'}$$
+$$\text{GGPP{} \xrightarrow{\text{psy{}} \text{phytoene{} \xrightarrow{\text{crtI{}} \text{lycopene{} \xrightarrow{\text{lcy (endogenous){}} \beta\text{-carotene{}$$
 
 The lycopene cyclase (lcy) step is catalysed by an enzyme already present in rice (endogenous gene).
 
@@ -669,7 +669,7 @@ The **threshold cycle** ($C_t$) is the cycle number at which the fluorescence ex
 
 ### 18.2 Calculations in qPCR
 
-The amount of DNA doubles with each cycle: after $n$ cycles, the amount of DNA $= \text{'\{'}initial amount{'\}'} \times 2^n$.
+The amount of DNA doubles with each cycle: after $n$ cycles, the amount of DNA $= \text{initial amount{} \times 2^n$.
 
 If Sample A has $C_t = 20$ and Sample B has $C_t = 26$, the difference is 6 cycles. The starting concentration of DNA in Sample A is $2^6 = 64$ times higher than in Sample B.
 
@@ -725,7 +725,7 @@ A suspect's DNA profile matches the crime scene sample at 10 STR loci. The frequ
 
 The match probability is the product of the frequencies at all 10 loci. If the average frequency per locus is approximately $0.005$, then:
 
-$\text{'\{'}Match probability{'\}'} = (0.005)^{10} = 9.77 \times 10^{-24}$.
+$\text{Match probability{} = (0.005)^{10} = 9.77 \times 10^{-24}$.
 
 This means the probability of a random person matching the DNA profile is approximately 1 in $10^{23}$, making it virtually certain that the suspect is the source of the DNA.
 

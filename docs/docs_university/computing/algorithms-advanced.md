@@ -262,13 +262,13 @@ Solution: intervals 2, 4, 6 with weights 6, 4, 7 = 17. Verify no overlaps: [1,4)
 Given $n$ keys $k_1 < k_2 < \cdots < k_n$ with search probabilities $p_1, p_2, \ldots, p_n$ and dummy key probabilities $q_0, q_1, \ldots, q_n$ (for searches between keys), find a BST minimising the expected search cost.
 
 **Expected cost:**
-$$E[\text{'\{'}cost{'\}'}] = \sum_{i=1}^{n} (d(k_i) + 1) \cdot p_i + \sum_{j=0}^{n} (d(d_j) + 1) \cdot q_j$$
+$$E[\text{cost{}] = \sum_{i=1}^{n} (d(k_i) + 1) \cdot p_i + \sum_{j=0}^{n} (d(d_j) + 1) \cdot q_j$$
 
 where $d$ is the depth of the node and $d_j$ is the depth of dummy key $j$.
 
 **DP formulation:** Let $e[i, j]$ be the expected search cost for keys $k_i, \ldots, k_j$.
 
-$$e[i, j] = \begin{cases} q_{i-1} & \text{'\{'}if {'\}'} j = i - 1 \\ \min_{r=i}^{j}\{e[i, r-1] + e[r+1, j] + w(i, j)\} & \text{'\{'}if {'\}'} i \leq j \end{cases}$$
+$$e[i, j] = \begin{cases} q_{i-1} & \text{if {} j = i - 1 \\ \min_{r=i}^{j}\{e[i, r-1] + e[r+1, j] + w(i, j)\} & \text{if {} i \leq j \end{cases}$$
 
 where $w(i, j) = \sum_{l=i}^{j} p_l + \sum_{l=i-1}^{j} q_l$ is the total probability of the subtree.
 
@@ -321,15 +321,15 @@ Bitmask DP is used when the state involves a subset of $n$ elements (with $n \le
 
 **The Travelling Salesman Problem (TSP).** Find the shortest tour visiting all $n$ cities exactly once and returning to the start.
 
-$$dp[S][i] = \text{'\{'}minimum cost to visit all cities in {'\}'} S \text{'\{'} starting from city 0, ending at city {'\}'} i$$
+$$dp[S][i] = \text{minimum cost to visit all cities in {} S \text{ starting from city 0, ending at city {} i$$
 
 **Recurrence:**
 
-$$dp[S][i] = \min_{j \in S, j \neq i} \{dp[S \setminus \{i\}][j] + \text{'\{'}dist{'\}'}(j, i)\}$$
+$$dp[S][i] = \min_{j \in S, j \neq i} \{dp[S \setminus \{i\}][j] + \text{dist{}(j, i)\}$$
 
 **Base case:** $dp[\{0\}][0] = 0$, $dp[S][i] = \infty$ for $i \notin S$.
 
-**Answer:** $\min_i \{dp[\{0, 1, \ldots, n-1\}][i] + \text{'\{'}dist{'\}'}(i, 0)\}$.
+**Answer:** $\min_i \{dp[\{0, 1, \ldots, n-1\}][i] + \text{dist{}(i, 0)\}$.
 
 **Running time:** $O(2^n \cdot n^2)$.
 
@@ -401,29 +401,29 @@ KMP_search(T, P):
 <details>
 <summary>Worked Example: KMP String Matching</summary>
 
-Pattern: $P = \text{'\{'}ababaca{'\}'}$, Text: $T = \text{'\{'}abababaca{'\}'}$.
+Pattern: $P = \text{ababaca{}$, Text: $T = \text{abababaca{}$.
 
 Compute prefix function:
 - $\pi[0] = 0$ ("a", no proper prefix = suffix)
-- $\pi[1]$: $P[1] = \text{'\{'}b{'\}'}$, $P[0] = \text{'\{'}a{'\}'}$. No match. $\pi[1] = 0$.
-- $\pi[2]$: $P[2] = \text{'\{'}a{'\}'}$, $P[0] = \text{'\{'}a{'\}'}$. Match! $k = 1$. $\pi[2] = 1$.
-- $\pi[3]$: $P[3] = \text{'\{'}b{'\}'}$, $P[1] = \text{'\{'}b{'\}'}$. Match! $k = 2$. $\pi[3] = 2$.
-- $\pi[4]$: $P[4] = \text{'\{'}a{'\}'}$, $P[2] = \text{'\{'}a{'\}'}$. Match! $k = 3$. $\pi[4] = 3$.
-- $\pi[5]$: $P[5] = \text{'\{'}c{'\}'}$, $P[3] = \text{'\{'}b{'\}'}$. No match. $k = \pi[2] = 1$. $P[1] = \text{'\{'}b{'\}'} \neq \text{'\{'}c{'\}'}$. $k = \pi[0] = 0$. $P[0] = \text{'\{'}a{'\}'} \neq \text{'\{'}c{'\}'}$. $\pi[5] = 0$.
-- $\pi[6]$: $P[6] = \text{'\{'}a{'\}'}$, $P[0] = \text{'\{'}a{'\}'}$. Match! $k = 1$. $\pi[6] = 1$.
+- $\pi[1]$: $P[1] = \text{b{}$, $P[0] = \text{a{}$. No match. $\pi[1] = 0$.
+- $\pi[2]$: $P[2] = \text{a{}$, $P[0] = \text{a{}$. Match! $k = 1$. $\pi[2] = 1$.
+- $\pi[3]$: $P[3] = \text{b{}$, $P[1] = \text{b{}$. Match! $k = 2$. $\pi[3] = 2$.
+- $\pi[4]$: $P[4] = \text{a{}$, $P[2] = \text{a{}$. Match! $k = 3$. $\pi[4] = 3$.
+- $\pi[5]$: $P[5] = \text{c{}$, $P[3] = \text{b{}$. No match. $k = \pi[2] = 1$. $P[1] = \text{b{} \neq \text{c{}$. $k = \pi[0] = 0$. $P[0] = \text{a{} \neq \text{c{}$. $\pi[5] = 0$.
+- $\pi[6]$: $P[6] = \text{a{}$, $P[0] = \text{a{}$. Match! $k = 1$. $\pi[6] = 1$.
 
 $\pi = [0, 0, 1, 2, 3, 0, 1]$.
 
-Search in $T = \text{'\{'}abababaca{'\}'}$:
-$i=0$: $T[0]=\text{'\{'}a{'\}'}=P[0]$, $k=1$.
-$i=1$: $T[1]=\text{'\{'}b{'\}'}=P[1]$, $k=2$.
-$i=2$: $T[2]=\text{'\{'}a{'\}'}=P[2]$, $k=3$.
-$i=3$: $T[3]=\text{'\{'}b{'\}'}=P[3]$, $k=4$.
-$i=4$: $T[4]=\text{'\{'}a{'\}'}=P[4]$, $k=5$.
-$i=5$: $T[5]=\text{'\{'}b{'\}'} \neq P[5]=\text{'\{'}c{'\}'}$. $k=\pi[4]=3$. $P[3]=\text{'\{'}b{'\}'}=T[5]$, $k=4$.
-$i=6$: $T[6]=\text{'\{'}a{'\}'}=P[4]$, $k=5$.
-$i=7$: $T[7]=\text{'\{'}c{'\}'}=P[5]$, $k=6$.
-$i=8$: $T[8]=\text{'\{'}a{'\}'}=P[6]$, $k=7=m$. Match at $8-7+1=2$.
+Search in $T = \text{abababaca{}$:
+$i=0$: $T[0]=\text{a{}=P[0]$, $k=1$.
+$i=1$: $T[1]=\text{b{}=P[1]$, $k=2$.
+$i=2$: $T[2]=\text{a{}=P[2]$, $k=3$.
+$i=3$: $T[3]=\text{b{}=P[3]$, $k=4$.
+$i=4$: $T[4]=\text{a{}=P[4]$, $k=5$.
+$i=5$: $T[5]=\text{b{} \neq P[5]=\text{c{}$. $k=\pi[4]=3$. $P[3]=\text{b{}=T[5]$, $k=4$.
+$i=6$: $T[6]=\text{a{}=P[4]$, $k=5$.
+$i=7$: $T[7]=\text{c{}=P[5]$, $k=6$.
+$i=8$: $T[8]=\text{a{}=P[6]$, $k=7=m$. Match at $8-7+1=2$.
 
 Pattern found at position 2.
 </details>
@@ -528,15 +528,15 @@ An $\alpha$-approximation algorithm for a minimisation problem returns a solutio
 
 **Greedy algorithm:** Repeatedly pick the set covering the most uncovered elements.
 
-**Theorem 5.3.** The greedy algorithm gives a $(\ln n + 1)$-approximation for set cover. Furthermore, unless $\text{'\{'}P{'\}'} = \text{'\{'}NP{'\}'}$, no polynomial-time algorithm can do better than $(1 - o(1)) \ln n$.
+**Theorem 5.3.** The greedy algorithm gives a $(\ln n + 1)$-approximation for set cover. Furthermore, unless $\text{P{} = \text{NP{}$, no polynomial-time algorithm can do better than $(1 - o(1)) \ln n$.
 
 *Proof (approximation ratio).* Let $n_t$ be the number of uncovered elements after $t$ iterations. In iteration $t+1$, the greedy algorithm picks a set covering at least $n_t / \mathrm{OPT{}$ elements (since OPT sets cover all $n_t$ elements). So $n_{t+1} \leq n_t (1 - 1/\mathrm{OPT{})$. After $k = \mathrm{OPT{} \cdot \ln n$ iterations, $n_k \leq n(1 - 1/\mathrm{OPT{})^{\mathrm{OPT{} \cdot \ln n} \leq n \cdot e^{-\ln n} = 1$. $\blacksquare$
 
 ### 5.5 Inapproximability
 
-**Theorem 5.4 (PCP Theorem).** Unless $\text{'\{'}P{'\}'} = \text{'\{'}NP{'\}'}$, there is no polynomial-time algorithm that approximates MAX-3SAT to within any constant factor better than $7/8$.
+**Theorem 5.4 (PCP Theorem).** Unless $\text{P{} = \text{NP{}$, there is no polynomial-time algorithm that approximates MAX-3SAT to within any constant factor better than $7/8$.
 
-**Theorem 5.5.** Unless $\text{'\{'}P{'\}'} = \text{'\{'}NP{'\}'}$, TSP (without triangle inequality) cannot be approximated to within any polynomial factor.
+**Theorem 5.5.** Unless $\text{P{} = \text{NP{}$, TSP (without triangle inequality) cannot be approximated to within any polynomial factor.
 
 ## 6. Randomised Algorithms
 
@@ -788,17 +788,17 @@ for i = 1 to n-1:
 <details>
 <summary>Worked Example: Z-Algorithm</summary>
 
-String: $S = \text{'\{'}aabcaab{'\}'}$, $n = 7$.
+String: $S = \text{aabcaab{}$, $n = 7$.
 
 $Z[0]$ is undefined (the entire string trivially matches itself).
 
-$i = 1$: $i > r = 0$. Set $l = r = 1$. Compare: $S[0] = \text{'\{'}a{'\}'} = S[1] = \text{'\{'}a{'\}'}$, so $r = 2$. $S[1] = \text{'\{'}a{'\}'} \neq S[2] = \text{'\{'}b{'\}'}$, stop. $Z[1] = r - l = 2 - 1 = 1$. Decrement $r$: $r = 1$.
+$i = 1$: $i > r = 0$. Set $l = r = 1$. Compare: $S[0] = \text{a{} = S[1] = \text{a{}$, so $r = 2$. $S[1] = \text{a{} \neq S[2] = \text{b{}$, stop. $Z[1] = r - l = 2 - 1 = 1$. Decrement $r$: $r = 1$.
 
-$i = 2$: $i > r = 1$. Set $l = r = 2$. Compare: $S[0] = \text{'\{'}a{'\}'} \neq S[2] = \text{'\{'}b{'\}'}$, stop immediately. $Z[2] = 0$. $r = 1$.
+$i = 2$: $i > r = 1$. Set $l = r = 2$. Compare: $S[0] = \text{a{} \neq S[2] = \text{b{}$, stop immediately. $Z[2] = 0$. $r = 1$.
 
-$i = 3$: $i > r = 1$. Set $l = r = 3$. Compare: $S[0] = \text{'\{'}a{'\}'} \neq S[3] = \text{'\{'}c{'\}'}$, stop. $Z[3] = 0$. $r = 2$.
+$i = 3$: $i > r = 1$. Set $l = r = 3$. Compare: $S[0] = \text{a{} \neq S[3] = \text{c{}$, stop. $Z[3] = 0$. $r = 2$.
 
-$i = 4$: $i > r = 2$. Set $l = r = 4$. Compare: $S[0] = \text{'\{'}a{'\}'} = S[4] = \text{'\{'}a{'\}'}$, $r = 5$. $S[1] = \text{'\{'}a{'\}'} = S[5] = \text{'\{'}a{'\}'}$, $r = 6$. $S[2] = \text{'\{'}b{'\}'} = S[6] = \text{'\{'}b{'\}'}$, $r = 7$. $r = n = 7$, stop. $Z[4] = 7 - 4 = 3$. Decrement $r$: $r = 6$.
+$i = 4$: $i > r = 2$. Set $l = r = 4$. Compare: $S[0] = \text{a{} = S[4] = \text{a{}$, $r = 5$. $S[1] = \text{a{} = S[5] = \text{a{}$, $r = 6$. $S[2] = \text{b{} = S[6] = \text{b{}$, $r = 7$. $r = n = 7$, stop. $Z[4] = 7 - 4 = 3$. Decrement $r$: $r = 6$.
 
 $i = 5$: $i = 5 \leq r = 6$. $k = i - l = 5 - 4 = 1$. $Z[k] = Z[1] = 1$. $r - i + 1 = 6 - 5 + 1 = 2$. $Z[k] = 1 < 2$, so $Z[5] = 1$.
 
@@ -939,7 +939,7 @@ Given a string $S$ of length $n$, find the length of the longest subsequence tha
 
 **Recurrence:**
 
-$$dp[i][j] = \begin{cases} 1 & \text{'\{'}if {'\}'} i = j \\ 2 + dp[i+1][j-1] & \text{'\{'}if {'\}'} S[i] = S[j] \\ \max(dp[i+1][j], dp[i][j-1]) & \text{'\{'}if {'\}'} S[i] \neq S[j] \end{cases}$$
+$$dp[i][j] = \begin{cases} 1 & \text{if {} i = j \\ 2 + dp[i+1][j-1] & \text{if {} S[i] = S[j] \\ \max(dp[i+1][j], dp[i][j-1]) & \text{if {} S[i] \neq S[j] \end{cases}$$
 
 **Running time:** $O(n^2)$, space $O(n^2)$ (or $O(n)$ with optimisation).
 
@@ -950,7 +950,7 @@ $$dp[i][j] = \begin{cases} 1 & \text{'\{'}if {'\}'} i = j \\ 2 + dp[i+1][j-1] & 
 <details>
 <summary>Worked Example: Longest Palindromic Subsequence</summary>
 
-$S = \text{'\{'}character{'\}'}$, $n = 9$.
+$S = \text{character{}$, $n = 9$.
 
 DP table (diagonal entries = 1, fill bottom-up):
 
@@ -1200,9 +1200,9 @@ An **articulation point** (cut vertex) is a vertex whose removal disconnects the
 
 A vertex $u$ is an articulation point if:
 1. $u$ is the root of the DFS tree and has at least two children, OR
-2. $u$ is not the root and has a child $v$ such that no vertex in the subtree rooted at $v$ has a back edge to an ancestor of $u$. Formally: $\text{'\{'}low{'\}'}[v] \geq \text{'\{'}disc{'\}'}[u]$.
+2. $u$ is not the root and has a child $v$ such that no vertex in the subtree rooted at $v$ has a back edge to an ancestor of $u$. Formally: $\text{low{}[v] \geq \text{disc{}[u]$.
 
-An edge $(u, v)$ is a bridge if $\text{'\{'}low{'\}'}[v] > \text{'\{'}disc{'\}'}[u]$.
+An edge $(u, v)$ is a bridge if $\text{low{}[v] > \text{disc{}[u]$.
 
 <details>
 <summary>Worked Example: Finding Articulation Points</summary>

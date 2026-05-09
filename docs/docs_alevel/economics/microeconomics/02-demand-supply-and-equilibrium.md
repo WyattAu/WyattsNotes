@@ -680,7 +680,7 @@ $TR(25) = 50(25) - 625 = 625$.
 $TR(50) = 50(50) - 1250 = 1250$ (maximum).
 $TR(75) = 50(75) - 2812.5 = 937.50$.
 
-This confirms: TR is maximised where $|\text{'\{'}PED{'\}'}| = 1$ (at the midpoint of the demand curve).
+This confirms: TR is maximised where $|\text{PED{}| = 1$ (at the midpoint of the demand curve).
 
 ## 16. Exam-Style Questions with Full Mark Schemes
 
@@ -696,12 +696,12 @@ $200 - 4P_d = 4P_d - 72 \Rightarrow 272 = 8P_d \Rightarrow P_d = 34$, $Q = 64$.
 $P_s = 34 - 8 = 26$.
 
 **(b) Tax incidence (4 marks).**
-Consumer burden: $P_d - P^* = 34 - 30 = \text{'\{'}GBP {'\}'} 4$ (out of 8).
-Producer burden: $P^* - P_s = 30 - 26 = \text{'\{'}GBP {'\}'} 4$ (out of 8).
+Consumer burden: $P_d - P^* = 34 - 30 = \text{GBP {} 4$ (out of 8).
+Producer burden: $P^* - P_s = 30 - 26 = \text{GBP {} 4$ (out of 8).
 Ratio: $1:1$ (equal burden because demand and supply have equal slopes, hence equal elasticity at the equilibrium).
 
 **(c) Deadweight loss (4 marks).**
-$\text{'\{'}DWL{'\}'} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times 8 \times (80 - 64) = \frac{1}{2} \times 8 \times 16 = \text{'\{'}GBP {'\}'} 64$.
+$\text{DWL{} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times 8 \times (80 - 64) = \frac{1}{2} \times 8 \times 16 = \text{GBP {} 64$.
 </details>
 
 **Question 2 (25 marks).** "The price mechanism is the most effective method of resource allocation in a market economy." Evaluate this statement.
@@ -748,7 +748,7 @@ $Q_D = 100 - 8(7) = 44$, $Q_S = 4(7) - 20 = 8$. Shortage $= 44 - 8 = 36$ units.
 
 **(b) Change in consumer surplus (4 marks).**
 Original CS: at $P^* = 10$, $Q^* = 100 - 80 = 20$. Choke price $= 100/8 = 12.5$.
-$\text{'\{'}CS{'\}'}_{orig} = \int_0^{20} [(12.5 - Q/8) - 10]\,dQ = \int_0^{20} [2.5 - Q/8]\,dQ = [2.5Q - Q^2/16]_0^{20} = 50 - 25 = 25$.
+$\text{CS{}_{orig} = \int_0^{20} [(12.5 - Q/8) - 10]\,dQ = \int_0^{20} [2.5 - Q/8]\,dQ = [2.5Q - Q^2/16]_0^{20} = 50 - 25 = 25$.
 
 New CS (at $P_c = 7$): quantity traded $= 8$. But only 8 units are available, and demand at $P_c = 7$ is 44.
 CS is the area between the demand curve and $P_c = 7$ for $Q = 0$ to $8$: $\int_0^8 [(12.5 - Q/8) - 7]\,dQ = \int_0^8 [5.5 - Q/8]\,dQ = [5.5Q - Q^2/16]_0^8 = 44 - 4 = 40$.
@@ -847,11 +847,11 @@ Producers receive $142.22 - 20 = 122.22$. $Q_P = 1000 - 5(142.22) = 288.89$.
 $\% \Delta Q_E = XED \times \% \Delta P_P = 0.3 \times 6.67 = 2.0\%$.
 EV demand increases by 2.0%.
 
-**Environmental benefit:** If the average petrol car emits 120g/km of $\text{'\{'}CO{'\}'}_2$ and the average EV emits 0g/km (indirectly), and each car drives 12,000 km/year:
-$\text{'\{'}CO{'\}'}_2$ saved per switched car $= 120 \times 12000 / 10^6 = 1.44$ tonnes/year.
+**Environmental benefit:** If the average petrol car emits 120g/km of $\text{CO{}_2$ and the average EV emits 0g/km (indirectly), and each car drives 12,000 km/year:
+$\text{CO{}_2$ saved per switched car $= 120 \times 12000 / 10^6 = 1.44$ tonnes/year.
 
 If 2% of the 333,333 car owners switch: $0.02 \times 333\,333 = 6\,667$ cars switch.
-Total $\text{'\{'}CO{'\}'}_2$ saved $= 6\,667 \times 1.44 = 9\,600$ tonnes/year.
+Total $\text{CO{}_2$ saved $= 6\,667 \times 1.44 = 9\,600$ tonnes/year.
 
 **Revenue and DWL:**
 Tax revenue $= 20 \times 288.89 = 5\,778$.

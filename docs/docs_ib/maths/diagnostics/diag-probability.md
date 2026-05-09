@@ -27,7 +27,7 @@ A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement.
 
 **Solution:**
 
-**(a)** $P(\text{'\{'}both red{'\}'}) = \frac{5}{8} \times \frac{4}{7} = \frac{20}{56} = \frac{5}{14}$.
+**(a)** $P(\text{both red{}) = \frac{5}{8} \times \frac{4}{7} = \frac{20}{56} = \frac{5}{14}$.
 
 **(b)** By the law of total probability:
 
@@ -104,6 +104,6 @@ The constraint "at least 2 men and at least 2 women" only excludes the cases wit
 
 Excluded: 0 men, 5 women (1 way) + 1 man, 4 women (35 ways) + 5 men, 0 women (21 ways) + 4 men, 1 woman (175 ways) = 232 ways.
 
-$$\text{'\{'}Valid committees{'\}'} = 792 - 232 = 560$$
+$$\text{Valid committees{} = 792 - 232 = 560$$
 
 **(b)** For each valid committee of 5, there are 5 choices for chairperson. So: $560 \times 5 = 2800$ different chaired committees.

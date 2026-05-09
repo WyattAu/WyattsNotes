@@ -78,7 +78,7 @@ A person is randomly selected from the population and tests positive.
 
 **(c)** The hospital director wants the positive predictive value to be at least 50%. Find the minimum prevalence of the disease required to achieve this, keeping the test characteristics the same.
 
-**(d)** Explain why $\mathrm{P{}(\text{'\{'}disease{'\}'} \mid \text{'\{'}positive{'\}'}) \neq \mathrm{P{}(\text{'\{'}positive{'\}'} \mid \text{'\{'}disease{'\}'})$ in general, and state the condition under which they would be equal.
+**(d)** Explain why $\mathrm{P{}(\text{disease{} \mid \text{positive{}) \neq \mathrm{P{}(\text{positive{} \mid \text{disease{})$ in general, and state the condition under which they would be equal.
 
 [Difficulty: hard. Tests conditional probability, Bayes' theorem, and the critical distinction between the direction of conditioning.]
 
@@ -142,7 +142,7 @@ A bag contains 4 red balls and 6 blue balls. Three balls are drawn at random **w
 
 **(b)** Calculate $\mathrm{E{}(X)$ and $\mathrm{Var{}(X)$ directly from the probability distribution.
 
-**(c)** A student claims that since $\mathrm{P{}(\text{'\{'}at least one red{'\}'}) = 1 - \mathrm{P{}(\text{'\{'}no red{'\}'})$, this identity is only valid for independent events. Prove that this identity holds for any events (dependent or independent), using the addition rule.
+**(c)** A student claims that since $\mathrm{P{}(\text{at least one red{}) = 1 - \mathrm{P{}(\text{no red{})$, this identity is only valid for independent events. Prove that this identity holds for any events (dependent or independent), using the addition rule.
 
 **(d)** In a modified version of the problem, balls are drawn with replacement. Find the probability that the first red ball appears on or before the 5th draw, and express your answer in terms of a geometric distribution.
 
@@ -170,7 +170,7 @@ $$\mathrm{E{}(X) = \sum x \cdot \mathrm{P{}(X = x) = 0\left(\frac{1}{6}\right) +
 
 $$= 0 + \frac{1}{2} + \frac{6}{10} + \frac{3}{30} = \frac{1}{2} + \frac{3}{5} + \frac{1}{10} = \frac{5}{10} + \frac{6}{10} + \frac{1}{10} = \frac{12}{10} = 1.2$$
 
-**Alternative check:** $\mathrm{E{}(X) = n \times \frac{\text{'\{'}number of red{'\}'}}{\text{'\{'}total{'\}'}} = 3 \times \frac{4}{10} = 1.2$. This confirms our result.
+**Alternative check:** $\mathrm{E{}(X) = n \times \frac{\text{number of red{}}{\text{total{}} = 3 \times \frac{4}{10} = 1.2$. This confirms our result.
 
 $$\mathrm{E{}(X^2) = 0^2\left(\frac{1}{6}\right) + 1^2\left(\frac{1}{2}\right) + 2^2\left(\frac{3}{10}\right) + 3^2\left(\frac{1}{30}\right)$$
 
@@ -186,7 +186,7 @@ By the complement rule (which holds for all events):
 
 $$\mathrm{P{}(A) = \mathrm{P{}(B') = 1 - \mathrm{P{}(B)$$
 
-This is $\mathrm{P{}(\text{'\{'}at least one red{'\}'}) = 1 - \mathrm{P{}(\text{'\{'}no red{'\}'})$.
+This is $\mathrm{P{}(\text{at least one red{}) = 1 - \mathrm{P{}(\text{no red{})$.
 
 The complement rule $\mathrm{P{}(B') = 1 - \mathrm{P{}(B)$ is derived from the addition rule: since $B$ and $B'$ are mutually exclusive and exhaustive (they form a partition of the sample space):
 
@@ -196,11 +196,11 @@ So $\mathrm{P{}(B') = 1 - \mathrm{P{}(B)$.
 
 This holds for **any** events, regardless of whether individual trials are independent or dependent. The identity depends only on the fact that $B$ and $B'$ partition the sample space.
 
-**(d)** With replacement, each draw is independent with $\mathrm{P{}(\text{'\{'}red{'\}'}) = \frac{4}{10} = 0.4$.
+**(d)** With replacement, each draw is independent with $\mathrm{P{}(\text{red{}) = \frac{4}{10} = 0.4$.
 
-Let $Y$ = number of draws until the first red ball. Then $Y \sim \text{'\{'}Geo{'\}'}(0.4)$.
+Let $Y$ = number of draws until the first red ball. Then $Y \sim \text{Geo{}(0.4)$.
 
-$$\mathrm{P{}(Y \leq 5) = 1 - \mathrm{P{}(Y > 5) = 1 - \mathrm{P{}(\text{'\{'}first 5 draws are all blue{'\}'}) = 1 - (0.6)^5$$
+$$\mathrm{P{}(Y \leq 5) = 1 - \mathrm{P{}(Y > 5) = 1 - \mathrm{P{}(\text{first 5 draws are all blue{}) = 1 - (0.6)^5$$
 
 $$= 1 - 0.07776 = 0.92224 \approx 0.922$$
 
@@ -234,7 +234,7 @@ The random variable $X$ follows a binomial distribution $X \sim B(n, p)$, where 
 
 **(a)** Define $X_i$ as follows:
 
-$$X_i = \begin{cases} 1 & \text{'\{'}if the {'\}'} i\text{'\{'}-th trial is a success{'\}'} \\ 0 & \text{'\{'}if the {'\}'} i\text{'\{'}-th trial is a failure{'\}'} \end{cases}$$
+$$X_i = \begin{cases} 1 & \text{if the {} i\text{-th trial is a success{} \\ 0 & \text{if the {} i\text{-th trial is a failure{} \end{cases}$$
 
 Each $X_i$ follows a Bernoulli distribution with parameter $p$:
 
@@ -310,13 +310,13 @@ $$\mathrm{P{}(A) = \frac{5 + 4 + 3 + 2 + 1}{36} = \frac{15}{36} = \frac{5}{12}$$
 
 **For $B$ (at least one prime):** Prime numbers on a die are 2, 3, 5.
 
-$$\mathrm{P{}(\text{'\{'}prime on one roll{'\}'}) = \frac{3}{6} = \frac{1}{2}$$
+$$\mathrm{P{}(\text{prime on one roll{}) = \frac{3}{6} = \frac{1}{2}$$
 
-$$\mathrm{P{}(B) = 1 - \mathrm{P{}(\text{'\{'}no primes{'\}'}) = 1 - \left(\frac{3}{6}\right)^2 = 1 - \frac{9}{36} = \frac{27}{36} = \frac{3}{4}$$
+$$\mathrm{P{}(B) = 1 - \mathrm{P{}(\text{no primes{}) = 1 - \left(\frac{3}{6}\right)^2 = 1 - \frac{9}{36} = \frac{27}{36} = \frac{3}{4}$$
 
 (Non-prime faces are 1, 4, 6, so 3 out of 6 faces are non-prime.)
 
-**(b)** We need $\mathrm{P{}(\text{'\{'}sum{'\}'} > k) = \frac{1}{3}$.
+**(b)** We need $\mathrm{P{}(\text{sum{} > k) = \frac{1}{3}$.
 
 The number of outcomes with sum $> k$ must be $\frac{36}{3} = 12$.
 
@@ -470,7 +470,7 @@ Number studying exactly one subject:
 
 Total studying exactly one: $8 + 6 + 5 = 19$
 
-$$\mathrm{P{}(\text{'\{'}exactly one{'\}'}) = \frac{19}{40}$$
+$$\mathrm{P{}(\text{exactly one{}) = \frac{19}{40}$$
 
 **(d)** The claim is **false**. If $\mathrm{P{}(A \cup B) = \mathrm{P{}(A) + \mathrm{P{}(B)$, then from the inclusion-exclusion principle:
 

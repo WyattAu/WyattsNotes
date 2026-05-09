@@ -10,25 +10,25 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Negative Externality Diagram and Analysis
-**Question:** The market for steel has demand $P = 100 - Q$ and private supply $P = 20 + Q$. Steel production causes pollution with a marginal external cost of $\text{'\{'}MEC{'\}'} = 10 + 0.5Q$. Calculate: (a) the market equilibrium quantity and price, (b) the socially optimal quantity and price, (c) the deadweight loss of the externality. Explain how a Pigouvian tax could correct this market failure.
+**Question:** The market for steel has demand $P = 100 - Q$ and private supply $P = 20 + Q$. Steel production causes pollution with a marginal external cost of $\text{MEC{} = 10 + 0.5Q$. Calculate: (a) the market equilibrium quantity and price, (b) the socially optimal quantity and price, (c) the deadweight loss of the externality. Explain how a Pigouvian tax could correct this market failure.
 
 **Solution:**
 
 (a) Market equilibrium (private costs only): $100 - Q = 20 + Q$, $80 = 2Q$, $Q_m = 40$, $P_m = \pounds 60$.
 
-(b) Social optimum: Marginal Social Cost $= \text{'\{'}MPC{'\}'} + \text{'\{'}MEC{'\}'} = (20 + Q) + (10 + 0.5Q) = 30 + 1.5Q$.
+(b) Social optimum: Marginal Social Cost $= \text{MPC{} + \text{MEC{} = (20 + Q) + (10 + 0.5Q) = 30 + 1.5Q$.
 
-Set MSC $=$ MSB (demand): $30 + 1.5Q = 100 - Q$, $70 = 2.5Q$, $Q_{\text{'\{'}opt{'\}'}} = 28$, $P_{\text{'\{'}opt{'\}'}} = 100 - 28 = \pounds 72$.
+Set MSC $=$ MSB (demand): $30 + 1.5Q = 100 - Q$, $70 = 2.5Q$, $Q_{\text{opt{}} = 28$, $P_{\text{opt{}} = 100 - 28 = \pounds 72$.
 
-(c) Deadweight loss: $\text{'\{'}DWL{'\}'} = \frac{1}{2} \times (Q_m - Q_{\text{'\{'}opt{'\}'}}) \times (\text{'\{'}MSC at {'\}'} Q_m - \text{'\{'}MSB at {'\}'} Q_m)$.
+(c) Deadweight loss: $\text{DWL{} = \frac{1}{2} \times (Q_m - Q_{\text{opt{}}) \times (\text{MSC at {} Q_m - \text{MSB at {} Q_m)$.
 
 MSC at $Q_m = 40$: $30 + 1.5(40) = 90$. MSB at $Q_m = 40$: $100 - 40 = 60$.
 
-$\text{'\{'}DWL{'\}'} = \frac{1}{2} \times (40 - 28) \times (90 - 60) = \frac{1}{2} \times 12 \times 30 = \pounds 180$.
+$\text{DWL{} = \frac{1}{2} \times (40 - 28) \times (90 - 60) = \frac{1}{2} \times 12 \times 30 = \pounds 180$.
 
 A Pigouvian tax equal to the MEC at the socially optimal output would internalise the externality:
 
-$\text{'\{'}MEC at {'\}'} Q_{\text{'\{'}opt{'\}'}} = 28$: $10 + 0.5(28) = \pounds 24$.
+$\text{MEC at {} Q_{\text{opt{}} = 28$: $10 + 0.5(28) = \pounds 24$.
 
 A per-unit tax of $\pounds 24$ would shift the private supply curve up to: $P = (20 + 24) + Q = 44 + Q$.
 
@@ -36,13 +36,13 @@ New equilibrium: $100 - Q = 44 + Q$, $56 = 2Q$, $Q = 28$, $P = \pounds 72$. This
 
 ---
 ### UT-2: Public Goods and Free-Rider Problem
-**Question:** A town of 1000 residents is considering building a public park. Each resident's individual demand for the park is $P = 10 - 0.01Q$, where $Q$ is the park size in hectares. The marginal cost of providing the park is $\text{'\{'}MC{'\}'} = 200 + 20Q$. Calculate the socially optimal park size. Explain why the private market would underprovide this good.
+**Question:** A town of 1000 residents is considering building a public park. Each resident's individual demand for the park is $P = 10 - 0.01Q$, where $Q$ is the park size in hectares. The marginal cost of providing the park is $\text{MC{} = 200 + 20Q$. Calculate the socially optimal park size. Explain why the private market would underprovide this good.
 
 **Solution:**
 
 For a public good, the social marginal benefit is the vertical sum of all individual demand curves (since everyone consumes the same quantity).
 
-Aggregate demand (vertical sum): $P_{\text{'\{'}social{'\}'}} = 1000 \times (10 - 0.01Q) = 10000 - 10Q$.
+Aggregate demand (vertical sum): $P_{\text{social{}} = 1000 \times (10 - 0.01Q) = 10000 - 10Q$.
 
 Social optimum: set SMB $=$ SMC:
 
@@ -56,7 +56,7 @@ Why private markets underprovide: Each individual resident only values the park 
 
 ---
 ### UT-3: Government Intervention Effectiveness
-**Question:** The government bans the sale of a good with negative externalities. Using the concepts of consumer surplus, producer surplus, external cost, and deadweight loss, explain why a ban might create a larger deadweight loss than a Pigouvian tax. Use the demand $P = 80 - Q$ and supply $P = 20 + Q$ with $\text{'\{'}MEC{'\}'} = 15$ (constant).
+**Question:** The government bans the sale of a good with negative externalities. Using the concepts of consumer surplus, producer surplus, external cost, and deadweight loss, explain why a ban might create a larger deadweight loss than a Pigouvian tax. Use the demand $P = 80 - Q$ and supply $P = 20 + Q$ with $\text{MEC{} = 15$ (constant).
 
 **Solution:**
 
@@ -64,11 +64,11 @@ Market equilibrium: $80 - Q = 20 + Q$, $Q_m = 30$, $P_m = \pounds 50$.
 
 Social optimum with constant MEC $= 15$: MSC $= (20 + Q) + 15 = 35 + Q$.
 
-$35 + Q = 80 - Q$, $45 = 2Q$, $Q_{\text{'\{'}opt{'\}'}} = 22.5$, $P_{\text{'\{'}opt{'\}'}} = 80 - 22.5 = \pounds 57.50$.
+$35 + Q = 80 - Q$, $45 = 2Q$, $Q_{\text{opt{}} = 22.5$, $P_{\text{opt{}} = 80 - 22.5 = \pounds 57.50$.
 
 **Pigouvian tax of $\pounds 15$:** New supply $P = 35 + Q$.
 
-$80 - Q = 35 + Q$, $Q_t = 22.5$, $P_{\text{'\{'}buyer{'\}'}} = \pounds 57.50$.
+$80 - Q = 35 + Q$, $Q_t = 22.5$, $P_{\text{buyer{}} = \pounds 57.50$.
 
 This achieves the social optimum. DWL with tax $= 0$ (the tax perfectly corrects the externality).
 
@@ -84,17 +84,17 @@ The ban creates a DWL of $\pounds 450$, while the tax creates DWL of $\pounds 0$
 ## Integration Tests
 
 ### IT-1: Externalities and Labour Markets (with Labour Markets)
-**Question:** Education generates positive externalities because a more educated workforce increases productivity, reduces crime, and improves civic participation. The private demand for higher education is $P = 50 - 0.1Q$ and private supply is $P = 10 + 0.1Q$ (where $Q$ is in thousands of student places). The marginal external benefit is constant at $\text{'\{'}MEB{'\}'} = \pounds 8$. Calculate: (a) the market equilibrium, (b) the social optimum, (c) the subsidy needed to achieve the optimum. Discuss the equity implications of relying on a subsidy versus free provision.
+**Question:** Education generates positive externalities because a more educated workforce increases productivity, reduces crime, and improves civic participation. The private demand for higher education is $P = 50 - 0.1Q$ and private supply is $P = 10 + 0.1Q$ (where $Q$ is in thousands of student places). The marginal external benefit is constant at $\text{MEB{} = \pounds 8$. Calculate: (a) the market equilibrium, (b) the social optimum, (c) the subsidy needed to achieve the optimum. Discuss the equity implications of relying on a subsidy versus free provision.
 
 **Solution:**
 
 (a) Market equilibrium: $50 - 0.1Q = 10 + 0.1Q$, $40 = 0.2Q$, $Q_m = 200$ (thousand), $P_m = \pounds 30$.
 
-(b) Social optimum: $\text{'\{'}MSB{'\}'} = (50 - 0.1Q) + 8 = 58 - 0.1Q$. Set $\text{'\{'}MSB{'\}'} = \text{'\{'}MSC{'\}'}$:
+(b) Social optimum: $\text{MSB{} = (50 - 0.1Q) + 8 = 58 - 0.1Q$. Set $\text{MSB{} = \text{MSC{}$:
 
-$58 - 0.1Q = 10 + 0.1Q$, $48 = 0.2Q$, $Q_{\text{'\{'}opt{'\}'}} = 240$ (thousand), $P_{\text{'\{'}opt{'\}'}} = 58 - 24 = \pounds 34$.
+$58 - 0.1Q = 10 + 0.1Q$, $48 = 0.2Q$, $Q_{\text{opt{}} = 240$ (thousand), $P_{\text{opt{}} = 58 - 24 = \pounds 34$.
 
-(c) Subsidy $= \text{'\{'}MEB{'\}'} = \pounds 8$ per student place.
+(c) Subsidy $= \text{MEB{} = \pounds 8$ per student place.
 
 With $\pounds 8$ subsidy: effective supply $= 10 + 0.1Q - 8 = 2 + 0.1Q$.
 
@@ -128,7 +128,7 @@ This is the adverse selection death spiral: the inability to distinguish risk ty
 
 ---
 ### IT-3: Environmental Policy and International Trade (with The International Economy)
-**Question:** A country imposes a carbon tax of $\pounds 50$ per tonne of $\text{'\{'}CO{'\}'}_2$ on domestic steel producers. World steel price is $\pounds 500$ per tonne. The domestic supply is $P = 200 + 0.5Q$ and demand is $P = 800 - 0.5Q$. Without the tax, the country imports steel. Calculate: (a) the quantity of imports before and after the tax, (b) the change in domestic production, (c) the risk of carbon leakage. Explain how a carbon border adjustment mechanism (CBAM) could address this.
+**Question:** A country imposes a carbon tax of $\pounds 50$ per tonne of $\text{CO{}_2$ on domestic steel producers. World steel price is $\pounds 500$ per tonne. The domestic supply is $P = 200 + 0.5Q$ and demand is $P = 800 - 0.5Q$. Without the tax, the country imports steel. Calculate: (a) the quantity of imports before and after the tax, (b) the change in domestic production, (c) the risk of carbon leakage. Explain how a carbon border adjustment mechanism (CBAM) could address this.
 
 **Solution:**
 
@@ -150,9 +150,9 @@ At world price $\pounds 400$: $Q_s = 2(400 - 250) = 300$. $Q_d = 800$ (unchanged
 
 (b) Change in domestic production: $400 - 300 = 100$ fewer units. The carbon tax reduced domestic steel production by 100 units.
 
-(c) **Carbon leakage:** The carbon tax makes domestic steel less competitive, reducing domestic production (from 400 to 300 units) and increasing imports (from 400 to 500 units). The imported steel is produced in countries without carbon pricing, so global $\text{'\{'}CO{'\}'}_2$ emissions may not decrease -- they simply shift to other countries. This is carbon leakage.
+(c) **Carbon leakage:** The carbon tax makes domestic steel less competitive, reducing domestic production (from 400 to 300 units) and increasing imports (from 400 to 500 units). The imported steel is produced in countries without carbon pricing, so global $\text{CO{}_2$ emissions may not decrease -- they simply shift to other countries. This is carbon leakage.
 
-**CBAM:** A carbon border adjustment mechanism imposes a tariff on imported steel equal to the carbon tax that would have been paid had the steel been produced domestically. If imported steel generates 2 tonnes of $\text{'\{'}CO{'\}'}_2$ per tonne, the CBAM tariff $= 2 \times \pounds 50 = \pounds 100$ per tonne of imported steel. This levels the playing field, preventing carbon leakage and incentivising foreign producers to reduce their emissions. It addresses the trade-off between environmental policy and international competitiveness.
+**CBAM:** A carbon border adjustment mechanism imposes a tariff on imported steel equal to the carbon tax that would have been paid had the steel been produced domestically. If imported steel generates 2 tonnes of $\text{CO{}_2$ per tonne, the CBAM tariff $= 2 \times \pounds 50 = \pounds 100$ per tonne of imported steel. This levels the playing field, preventing carbon leakage and incentivising foreign producers to reduce their emissions. It addresses the trade-off between environmental policy and international competitiveness.
 
 ---
 

@@ -738,7 +738,7 @@ Case 2: $m \neq 0$. For $mx^2 + (m-1)x + m > 0$ for all real $x$, we need $m > 0
 
 $$\Delta = (m - 1)^2 - 4m^2 = m^2 - 2m + 1 - 4m^2 = -3m^2 - 2m + 1 < 0$$
 
-$$3m^2 + 2m - 1 > 0 \implies (3m - 1)(m + 1) > 0 \implies m < -1 \;\text{'\{'}or{'\}'}\; m > \dfrac{1}{3}$$
+$$3m^2 + 2m - 1 > 0 \implies (3m - 1)(m + 1) > 0 \implies m < -1 \;\text{or{}\; m > \dfrac{1}{3}$$
 
 Combined with $m > 0$: $m > \dfrac{1}{3}$.
 

@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-A book of mass $2$ kg rests on a table. The table is on the floor of a lift that is accelerating upward at $3 \text{'\{'} m s{'\}'}^{-2}$. (a) Draw free-body diagrams for the book and the table separately. (b) Identify which forces form Newton's third law pairs. (c) Calculate the normal force the table exerts on the book, and the normal force the floor exerts on the table (table mass $= 8$ kg).
+A book of mass $2$ kg rests on a table. The table is on the floor of a lift that is accelerating upward at $3 \text{ m s{}^{-2}$. (a) Draw free-body diagrams for the book and the table separately. (b) Identify which forces form Newton's third law pairs. (c) Calculate the normal force the table exerts on the book, and the normal force the floor exerts on the table (table mass $= 8$ kg).
 
 **Solution:**
 
@@ -31,11 +31,11 @@ A book of mass $2$ kg rests on a table. The table is on the floor of a lift that
 
 **Common misconception:** $N_{t \to b}$ and $W_b$ are NOT a third law pair. They act on the same body (the book) and are not equal unless $a = 0$.
 
-**(c) For the book (accelerating upward at $3 \text{'\{'} m s{'\}'}^{-2}$):**
+**(c) For the book (accelerating upward at $3 \text{ m s{}^{-2}$):**
 
 $$N_{t \to b} - W_b = m_b a$$
 
-$$N_{t \to b} = m_b(g + a) = 2(9.81 + 3) = 25.62 \text{'\{'} N{'\}'}$$
+$$N_{t \to b} = m_b(g + a) = 2(9.81 + 3) = 25.62 \text{ N{}$$
 
 By Newton's third law: $N_{b \to t} = 25.62$ N (downward).
 
@@ -43,7 +43,7 @@ For the table:
 
 $$N_{f \to t} - W_t - N_{b \to t} = m_t a$$
 
-$$N_{f \to t} = W_t + N_{b \to t} + m_t a = 78.48 + 25.62 + 8(3) = 78.48 + 25.62 + 24 = 128.1 \text{'\{'} N{'\}'}$$
+$$N_{f \to t} = W_t + N_{b \to t} + m_t a = 78.48 + 25.62 + 8(3) = 78.48 + 25.62 + 24 = 128.1 \text{ N{}$$
 
 ---
 
@@ -59,7 +59,7 @@ Block A ($5$ kg) rests on a rough horizontal surface ($\mu = 0.4$). It is connec
 
 For block B (taking downward as positive):
 
-$$m_B g - T = m_B a \quad \text{'\{'}--- (1){'\}'}$$
+$$m_B g - T = m_B a \quad \text{--- (1){}$$
 
 For block A (taking rightward toward pulley as positive):
 
@@ -67,7 +67,7 @@ $$T - f = m_A a$$
 
 where $f = \mu m_A g = 0.4 \times 5 \times 9.81 = 19.62$ N
 
-$$T - 19.62 = 5a \quad \text{'\{'}--- (2){'\}'}$$
+$$T - 19.62 = 5a \quad \text{--- (2){}$$
 
 Adding (1) and (2):
 
@@ -77,19 +77,19 @@ $$3(9.81) - 19.62 = 8a$$
 
 $$29.43 - 19.62 = 8a$$
 
-$$a = \frac{9.81}{8} = 1.226 \text{'\{'} m s{'\}'}^{-2}$$
+$$a = \frac{9.81}{8} = 1.226 \text{ m s{}^{-2}$$
 
 **(b) Tension:**
 
 From equation (1):
 
-$$T = m_B(g - a) = 3(9.81 - 1.226) = 3(8.584) = 25.75 \text{'\{'} N{'\}'}$$
+$$T = m_B(g - a) = 3(9.81 - 1.226) = 3(8.584) = 25.75 \text{ N{}$$
 
 **(c) Force on pulley:**
 
 The string pulls the pulley downward with tension $T$ on both sides (vertical and horizontal). These two tension forces are perpendicular.
 
-$$F_{\text{'\{'}pulley{'\}'}} = \sqrt{T^2 + T^2} = T\sqrt{2} = 25.75 \times \sqrt{2} = 36.41 \text{'\{'} N{'\}'}$$
+$$F_{\text{pulley{}} = \sqrt{T^2 + T^2} = T\sqrt{2} = 25.75 \times \sqrt{2} = 36.41 \text{ N{}$$
 
 The force on the pulley is directed at $45°$ below the horizontal, toward block A and block B.
 
@@ -125,7 +125,7 @@ $$g \tan \theta = \frac{v^2}{r}$$
 
 $$v = \sqrt{rg \tan \theta} = \sqrt{80 \times 9.81 \times \tan 20°}$$
 
-$$v = \sqrt{80 \times 9.81 \times 0.3640} = \sqrt{285.8} = 16.9 \text{'\{'} m s{'\}'}^{-1}$$
+$$v = \sqrt{80 \times 9.81 \times 0.3640} = \sqrt{285.8} = 16.9 \text{ m s{}^{-1}$$
 
 **Key insight:** At this specific speed, the horizontal component of the normal force alone provides the required centripetal force. No friction is needed. If the car goes faster, it tends to slide up; if slower, it tends to slide down.
 
@@ -150,7 +150,7 @@ Component of weight of A down the $30°$ incline: $m_A g \sin 30° = 4 \times 9.
 Component of weight of B down the $45°$ incline: $m_B g \sin 45° = 6 \times 9.81 \times 0.7071 = 41.62$ N
 
 Friction on B (opposes B's motion, so acts up the $45°$ incline):
-$$f = \mu m_B g \cos 45° = 0.3 \times 6 \times 9.81 \times 0.7071 = 12.49 \text{'\{'} N{'\}'}$$
+$$f = \mu m_B g \cos 45° = 0.3 \times 6 \times 9.81 \times 0.7071 = 12.49 \text{ N{}$$
 
 Net force driving A up / B down: $41.62 - 12.49 - 19.62 = 9.51$ N (positive, so motion in this direction)
 
@@ -166,19 +166,19 @@ Net force: $19.62 - (41.62 + 12.49) = -34.49$ N (negative, impossible)
 
 For A (up the incline positive): $T - m_A g \sin 30° = m_A a$
 
-$$T - 19.62 = 4a \quad \text{'\{'}--- (1){'\}'}$$
+$$T - 19.62 = 4a \quad \text{--- (1){}$$
 
 For B (down the incline positive): $m_B g \sin 45° - T - f = m_B a$
 
 $$41.62 - T - 12.49 = 6a$$
 
-$$29.13 - T = 6a \quad \text{'\{'}--- (2){'\}'}$$
+$$29.13 - T = 6a \quad \text{--- (2){}$$
 
 Adding (1) and (2): $9.51 = 10a$
 
-$$a = 0.951 \text{'\{'} m s{'\}'}^{-2}$$
+$$a = 0.951 \text{ m s{}^{-2}$$
 
-$$T = 19.62 + 4(0.951) = 23.42 \text{'\{'} N{'\}'}$$
+$$T = 19.62 + 4(0.951) = 23.42 \text{ N{}$$
 
 ---
 
@@ -234,7 +234,7 @@ $$T = \frac{mg}{\sqrt{3}}$$
 
 **Question:**
 
-A parcel of mass $10$ kg rests on the flatbed of a truck. The coefficient of static friction between the parcel and the flatbed is $0.5$. The truck accelerates from rest uniformly. What is the shortest time in which the truck can reach a speed of $20 \text{'\{'} m s{'\}'}^{-1}$ without the parcel sliding? What is the minimum stopping distance for the truck (from $20 \text{'\{'} m s{'\}'}^{-1}$) without the parcel sliding?
+A parcel of mass $10$ kg rests on the flatbed of a truck. The coefficient of static friction between the parcel and the flatbed is $0.5$. The truck accelerates from rest uniformly. What is the shortest time in which the truck can reach a speed of $20 \text{ m s{}^{-1}$ without the parcel sliding? What is the minimum stopping distance for the truck (from $20 \text{ m s{}^{-1}$) without the parcel sliding?
 
 **Solution:**
 
@@ -244,26 +244,26 @@ The friction force provides the acceleration for the parcel:
 
 $$f_{\max} = \mu_s mg = m a_{\max}$$
 
-$$a_{\max} = \mu_s g = 0.5 \times 9.81 = 4.905 \text{'\{'} m s{'\}'}^{-2}$$
+$$a_{\max} = \mu_s g = 0.5 \times 9.81 = 4.905 \text{ m s{}^{-2}$$
 
-**(a) Minimum time to reach $20 \text{'\{'} m s{'\}'}^{-1}$:**
+**(a) Minimum time to reach $20 \text{ m s{}^{-1}$:**
 
 $$v = u + at$$
 
 $$20 = 0 + 4.905 \times t$$
 
-$$t = \frac{20}{4.905} = 4.08 \text{'\{'} s{'\}'}$$
+$$t = \frac{20}{4.905} = 4.08 \text{ s{}$$
 
 **(b) Minimum stopping distance:**
 
 When braking, friction acts forward on the parcel (opposing relative sliding tendency):
 
-$$a_{\max} = 4.905 \text{'\{'} m s{'\}'}^{-2}$$ (same magnitude, opposite direction)
+$$a_{\max} = 4.905 \text{ m s{}^{-2}$$ (same magnitude, opposite direction)
 
 $$v^2 = u^2 + 2as$$
 
 $$0 = 20^2 + 2(-4.905)s$$
 
-$$s = \frac{400}{9.81} = 40.77 \text{'\{'} m{'\}'}$$
+$$s = \frac{400}{9.81} = 40.77 \text{ m{}$$
 
 **Key insight:** The maximum frictional force limits both the maximum acceleration and the maximum deceleration. The parcel can withstand the same magnitude of acceleration in both directions since static friction adjusts to prevent relative motion.

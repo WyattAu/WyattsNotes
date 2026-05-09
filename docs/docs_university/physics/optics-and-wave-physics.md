@@ -2046,11 +2046,11 @@ Ernst Abbe (1873) showed that a microscope forms an image by taking two Fourier 
 
 **Resolution limit:** The finest spatial frequency that can pass through the objective is:
 
-$$f_{\max} = \frac{\text{'\{'}NA{'\}'}}{\lambda}$$
+$$f_{\max} = \frac{\text{NA{}}{\lambda}$$
 
-where $\text{'\{'}NA{'\}'} = n\sin\theta$ is the numerical aperture. The minimum resolvable distance (Abbe limit):
+where $\text{NA{} = n\sin\theta$ is the numerical aperture. The minimum resolvable distance (Abbe limit):
 
-$$d_{\min} = \frac{\lambda}{2\,\text{'\{'}NA{'\}'}}$$
+$$d_{\min} = \frac{\lambda}{2\,\text{NA{}}$$
 
 For green light ($\lambda = 550$ nm) and NA = 1.4 (oil immersion): $d_{\min} \approx 196$ nm.
 
@@ -2067,7 +2067,7 @@ Since the back focal plane of a lens contains the spatial frequency spectrum of 
 
 A diffraction grating with $N$ slits of width $a$ and spacing $d$ has transmission function:
 
-$$t(x) = \sum_{n=0}^{N-1}\text{'\{'}rect{'\}'}\!\left(\frac{x - nd}{a}\right)$$
+$$t(x) = \sum_{n=0}^{N-1}\text{rect{}\!\left(\frac{x - nd}{a}\right)$$
 
 The Fraunhofer pattern is:
 
@@ -2141,13 +2141,13 @@ The fringe visibility vanishes when $\pi wd/(\lambda D) = \pi$, i.e., $d = \lamb
 
 For a candle flame ($w \approx 1$ mm) at $D = 1$ m with $\lambda = 550$ nm:
 
-$$d_{\text{'\{'}max{'\}'}} = \frac{550 \times 10^{-9} \times 1}{10^{-3}} = 5.5 \times 10^{-4}\,\text{'\{'}m{'\}'} = 0.55\,\text{'\{'}mm{'\}'}$$
+$$d_{\text{max{}} = \frac{550 \times 10^{-9} \times 1}{10^{-3}} = 5.5 \times 10^{-4}\,\text{m{} = 0.55\,\text{mm{}$$
 
 Beyond this slit separation, the fringes wash out. For a star ($w \sim 10^8$ km, $D \sim 10^{14}$ km):
 
-$$d_{\text{'\{'}max{'\}'}} = \frac{550 \times 10^{-9} \times 10^{17}}{10^{11}} = 550\,\text{'\{'}m{'\}'}$$
+$$d_{\text{max{}} = \frac{550 \times 10^{-9} \times 10^{17}}{10^{11}} = 550\,\text{m{}$$
 
-This is the basis of the Michelson stellar interferometer: by measuring $d_{\text{'\{'}max{'\}'}}$, the stellar diameter is determined.
+This is the basis of the Michelson stellar interferometer: by measuring $d_{\text{max{}}$, the stellar diameter is determined.
 
 </details>
 
@@ -2169,7 +2169,7 @@ where $R_1, R_2$ are mirror reflectivities, $g$ is the gain coefficient, and $L$
 
 The threshold gain:
 
-$$g_{\text{'\{'}th{'\}'}} = -\frac{1}{2L}\ln(R_1 R_2) = \alpha_i + \alpha_m$$
+$$g_{\text{th{}} = -\frac{1}{2L}\ln(R_1 R_2) = \alpha_i + \alpha_m$$
 
 where $\alpha_i$ is the internal loss and $\alpha_m = -\ln(R_1 R_2)/(2L)$ is the mirror loss.
 
@@ -2187,7 +2187,7 @@ where $\alpha_i$ is the internal loss and $\alpha_m = -\ln(R_1 R_2)/(2L)$ is the
 
 ### 17.3 Gaussian Beam Optics
 
-The fundamental mode ($\text{'\{'}TEM{'\}'}_{00}$) of a laser cavity is a **Gaussian beam**:
+The fundamental mode ($\text{TEM{}_{00}$) of a laser cavity is a **Gaussian beam**:
 
 $$E(r, z) = E_0\frac{w_0}{w(z)}\exp\!\left(-\frac{r^2}{w(z)^2}\right)\exp\!\left(-i\left[kz + \frac{kr^2}{2R(z)} - \zeta(z)\right]\right)$$
 
@@ -2218,7 +2218,7 @@ At a distance of 1 km, the beam radius would be $w \approx \theta \times 1000 = 
 
 1. **Coherence length limits interferometer arm difference:** In a Michelson interferometer, the path difference must not exceed the coherence length $l_c = \lambda^2/\Delta\lambda$ for fringes to be visible. White light fringes are visible only for near-zero path difference ($l_c \sim 1.5\,\mu$m), while laser fringes remain visible for path differences of many metres.
 
-2. **The Abbe limit is not a fundamental limit:** Techniques such as STED (stimulated emission depletion), PALM (photoactivated localisation microscopy), and SIM (structured illumination microscopy) can achieve resolutions well below the Abbe limit of $\lambda/(2\text{'\{'}NA{'\}'})$. The 2014 Nobel Prize in Chemistry was awarded for super-resolution microscopy.
+2. **The Abbe limit is not a fundamental limit:** Techniques such as STED (stimulated emission depletion), PALM (photoactivated localisation microscopy), and SIM (structured illumination microscopy) can achieve resolutions well below the Abbe limit of $\lambda/(2\text{NA{})$. The 2014 Nobel Prize in Chemistry was awarded for super-resolution microscopy.
 
 3. **Gaussian beams do not have sharp edges:** Unlike geometrical optics rays, Gaussian beams have no well-defined edge. The beam radius $w$ is defined as the $1/e^2$ intensity radius ($\sim 86.5\%$ of the peak). The power contained within $w$ is $1 - e^{-2} \approx 86.5\%$ of the total, not 100%.
 
@@ -2262,15 +2262,15 @@ A Fabry--Perot etalon consists of two parallel reflecting surfaces with reflecta
 
 **Solution:**
 
-(a) FSR in frequency: $\Delta\nu_{\text{'\{'}FSR{'\}'}} = c/(2d) = 3 \times 10^8/(2 \times 10^{-3}) = 1.5 \times 10^{11}$ Hz $= 150$ GHz.
+(a) FSR in frequency: $\Delta\nu_{\text{FSR{}} = c/(2d) = 3 \times 10^8/(2 \times 10^{-3}) = 1.5 \times 10^{11}$ Hz $= 150$ GHz.
 
-FSR in wavelength: $\Delta\lambda_{\text{'\{'}FSR{'\}'}} = \lambda^2/(2d) = (500 \times 10^{-9})^2/(2 \times 10^{-3}) = 1.25 \times 10^{-13}$ m $= 0.125$ nm.
+FSR in wavelength: $\Delta\lambda_{\text{FSR{}} = \lambda^2/(2d) = (500 \times 10^{-9})^2/(2 \times 10^{-3}) = 1.25 \times 10^{-13}$ m $= 0.125$ nm.
 
 (b) Finesse: $\mathcal{'\{'}F{'\}'} = \pi\sqrt{R}/(1 - R) = \pi\sqrt{0.8}/(1 - 0.8) = \pi \times 0.894/0.2 = 14.1$.
 
 (c) Minimum resolvable wavelength difference (resolution):
 
-$$\delta\lambda = \frac{\Delta\lambda_{\text{'\{'}FSR{'\}'}}}{\mathcal{'\{'}F{'\}'}} = \frac{0.125}{14.1}\ \text{'\{'}nm{'\}'} = 0.0089\ \text{'\{'}nm{'\}'} = 8.9\ \text{'\{'}pm{'\}'}$$
+$$\delta\lambda = \frac{\Delta\lambda_{\text{FSR{}}}{\mathcal{'\{'}F{'\}'}} = \frac{0.125}{14.1}\ \text{nm{} = 0.0089\ \text{nm{} = 8.9\ \text{pm{}$$
 
 This corresponds to a resolving power $\mathcal{'\{'}R{'\}'} = \lambda/\delta\lambda = 500/0.0089 \approx 56\,000$.
 
@@ -2290,9 +2290,9 @@ The second-order susceptibility $\chi^{(2)}$ is nonzero only in non-centrosymmet
 
 A beam of frequency $\omega$ generates light at $2\omega$. The intensity of the second harmonic:
 
-$$I_{2\omega} = \frac{2\omega^2 d_{\text{'\{'}eff{'\}'}}^2 I_\omega^2 L^2}{n_\omega^2 n_{2\omega} c^3 \varepsilon_0}\,\text{'\{'}sinc{'\}'}^2\!\left(\frac{\Delta k\,L}{2}\right)$$
+$$I_{2\omega} = \frac{2\omega^2 d_{\text{eff{}}^2 I_\omega^2 L^2}{n_\omega^2 n_{2\omega} c^3 \varepsilon_0}\,\text{sinc{}^2\!\left(\frac{\Delta k\,L}{2}\right)$$
 
-where $d_{\text{'\{'}eff{'\}'}} = \chi^{(2)}/2$ is the effective nonlinear coefficient and $\Delta k = k_{2\omega} - 2k_\omega$ is the phase mismatch.
+where $d_{\text{eff{}} = \chi^{(2)}/2$ is the effective nonlinear coefficient and $\Delta k = k_{2\omega} - 2k_\omega$ is the phase mismatch.
 
 **Phase matching:** Maximum conversion occurs when $\Delta k = 0$ (momentum conservation). Techniques:
 - **Birefringent phase matching:** Exploit the different refractive indices for ordinary and extraordinary polarisations.
@@ -2306,7 +2306,7 @@ where $d_{\text{'\{'}eff{'\}'}} = \chi^{(2)}/2$ is the effective nonlinear coeff
 | SFG | $\chi^{(2)}$ | $\omega_1 + \omega_2 \to \omega_3$ |
 | Pockels effect | $\chi^{(2)}$ | Linear electro-optic effect ($\Delta n \propto E$) |
 | Optical Kerr effect | $\chi^{(3)}$ | $n = n_0 + n_2 I$ (intensity-dependent refractive index) |
-| Self-focusing | $\chi^{(3)}$ | Beam collapses when $P > P_{\text{'\{'}cr{'\}'}}$ |
+| Self-focusing | $\chi^{(3)}$ | Beam collapses when $P > P_{\text{cr{}}$ |
 | Two-photon absorption | $\chi^{(3)}$ | Simultaneous absorption of two photons |
 | Stimulated Raman/Brillouin | $\chi^{(3)}$ | Inelastic scattering amplification |
 
@@ -2319,13 +2319,13 @@ Beta-barium borate (BBO) is a common nonlinear crystal for SHG of 800 nm Ti:sapp
 
 The relevant refractive indices at $\lambda = 800$ nm ($\omega$) and $\lambda = 400$ nm ($2\omega$):
 
-$n_o(800\,\text{'\{'}nm{'\}'}) = 1.6549$, $n_e(800\,\text{'\{'}nm{'\}'}) = 1.5425$ (at $\theta = 29.2°$)
+$n_o(800\,\text{nm{}) = 1.6549$, $n_e(800\,\text{nm{}) = 1.5425$ (at $\theta = 29.2°$)
 
-$n_o(400\,\text{'\{'}nm{'\}'}) = 1.7030$, $n_e(400\,\text{'\{'}nm{'\}'}) = 1.5665$ (at $\theta = 29.2°$)
+$n_o(400\,\text{nm{}) = 1.7030$, $n_e(400\,\text{nm{}) = 1.5665$ (at $\theta = 29.2°$)
 
 For Type I phase matching ($o + o \to e$): $n_e(2\omega, \theta) = n_o(\omega)$.
 
-Using Sellmeier equations, the phase matching angle is found to be $\theta_{\text{'\{'}PM{'\}'}} \approx 29.2°$.
+Using Sellmeier equations, the phase matching angle is found to be $\theta_{\text{PM{}} \approx 29.2°$.
 
 The coherence length without phase matching:
 
@@ -2345,7 +2345,7 @@ $$\eta \approx \frac{8\pi^2 \times (2.0 \times 10^{-12})^2 \times 10^{-4} \times
 
 **Compressed sensing** (Candes, Tao, Donoho, 2006) shows that signals that are **sparse** in some basis can be reconstructed from far fewer measurements than Nyquist sampling requires:
 
-$$\hat{\mathbf{'\{'}x{'\}'}} = \arg\min_{\mathbf{'\{'}x{'\}'}} \|\mathbf{'\{'}x{'\}'}\|_1 \quad \text{'\{'}subject to {'\}'} \mathbf{'\{'}y{'\}'} = \Phi\mathbf{'\{'}x{'\}'}$$
+$$\hat{\mathbf{'\{'}x{'\}'}} = \arg\min_{\mathbf{'\{'}x{'\}'}} \|\mathbf{'\{'}x{'\}'}\|_1 \quad \text{subject to {} \mathbf{'\{'}y{'\}'} = \Phi\mathbf{'\{'}x{'\}'}$$
 
 where $\Phi$ is the measurement matrix and $|\cdot|_1$ is the $L^1$ norm promoting sparsity.
 
@@ -2355,4 +2355,4 @@ where $\Phi$ is the measurement matrix and $|\cdot|_1$ is the $L^1$ norm promoti
 
 $$S = \exp\left[-\left(\frac{2\pi}{\lambda}\right)^2\langle\Delta\phi^2\rangle\right]$$
 
-For diffraction-limited imaging ($S > 0.8$): $\Delta\phi_{\text{'\{'}rms{'\}'}} < \lambda/14$. On an 8 m telescope at visible wavelengths, the deformable mirror must update at $>500$ Hz to track the Greenwood frequency $f_G \sim 100$ Hz.
+For diffraction-limited imaging ($S > 0.8$): $\Delta\phi_{\text{rms{}} < \lambda/14$. On an 8 m telescope at visible wavelengths, the deformable mirror must update at $>500$ Hz to track the Greenwood frequency $f_G \sim 100$ Hz.

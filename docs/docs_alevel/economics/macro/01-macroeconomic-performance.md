@@ -856,21 +856,21 @@ An economy has the following components (GBP billions):
 | Imports (M) | 550 |
 
 **GDP calculation:**
-$$\text{'\{'}GDP{'\}'} = C + I + G + (X - M) = 1200 + 350 + 400 + (500 - 550) = 1900$$
+$$\text{GDP{} = C + I + G + (X - M) = 1200 + 350 + 400 + (500 - 550) = 1900$$
 
 Current account balance $= X - M = 500 - 550 = -50$ (deficit).
 
 **Real GDP adjustment:**
 If the GDP deflator is 110 (base year = 100):
-$$\text{'\{'}Real GDP{'\}'} = \frac{1900}{110} \times 100 = 1727.27$$
+$$\text{Real GDP{} = \frac{1900}{110} \times 100 = 1727.27$$
 
 GDP growth rate from previous year (Real GDP was 1650):
 $$g = \frac{1727.27 - 1650}{1650} \times 100 = 4.68\%$$
 
 **Per capita adjustment:**
 If population = 68 million:
-$$\text{'\{'}GDP per capita{'\}'} = \frac{1900}{68} = \pounds 27\,941$$
-$$\text{'\{'}Real GDP per capita{'\}'} = \frac{1727.27}{68} = \pounds 25\,395$$
+$$\text{GDP per capita{} = \frac{1900}{68} = \pounds 27\,941$$
+$$\text{Real GDP per capita{} = \frac{1727.27}{68} = \pounds 25\,395$$
 
 ### 8.2 Inflation Calculations with Weighted Index
 
@@ -889,18 +889,18 @@ $$\text{'\{'}Real GDP per capita{'\}'} = \frac{1727.27}{68} = \pounds 25\,395$$
 **Laspeyres CPI calculation:**
 
 Cost of base basket at current prices:
-$$\text{'\{'}Basket cost{'\}'}_{2024} = 10(1.30) + 100(1.55) + 1(1150) + 5(35) + 20(12) + 50(5) + \text{'\{'}Other{'\}'}(1.04 \times \text{'\{'}Other{'\}'}_{2019})$$
-$$= 13 + 155 + 1150 + 175 + 240 + 250 + \text{'\{'}Other{'\}'}$$
+$$\text{Basket cost{}_{2024} = 10(1.30) + 100(1.55) + 1(1150) + 5(35) + 20(12) + 50(5) + \text{Other{}(1.04 \times \text{Other{}_{2019})$$
+$$= 13 + 155 + 1150 + 175 + 240 + 250 + \text{Other{}$$
 
 The "Other" category at base prices cost, say, GBP 500. At current prices: $500 \times 1.04 = 520$.
-$$\text{'\{'}Total{'\}'}_{2024} = 13 + 155 + 1150 + 175 + 240 + 250 + 520 = 2503$$
+$$\text{Total{}_{2024} = 13 + 155 + 1150 + 175 + 240 + 250 + 520 = 2503$$
 
 Cost of base basket at base prices:
-$$\text{'\{'}Total{'\}'}_{2019} = 10(1.00) + 100(1.20) + 1(1000) + 5(30) + 20(10) + 50(5) + 500 = 10 + 120 + 1000 + 150 + 200 + 250 + 500 = 2230$$
+$$\text{Total{}_{2019} = 10(1.00) + 100(1.20) + 1(1000) + 5(30) + 20(10) + 50(5) + 500 = 10 + 120 + 1000 + 150 + 200 + 250 + 500 = 2230$$
 
-$$\text{'\{'}CPI{'\}'}_{2024} = \frac{2503}{2230} \times 100 = 112.24$$
+$$\text{CPI{}_{2024} = \frac{2503}{2230} \times 100 = 112.24$$
 
-$$\text{'\{'}Inflation rate{'\}'} = \frac{112.24 - 100}{100} \times 100 = 12.24\%$$
+$$\text{Inflation rate{} = \frac{112.24 - 100}{100} \times 100 = 12.24\%$$
 
 ### 8.3 Unemployment and Okun's Law: Detailed Application
 
@@ -943,10 +943,10 @@ The temporary reduction in unemployment came at the cost of temporarily higher i
 - Trade in services: $280 - 180 = +100$
 - Primary income: $180 - 220 = -40$
 - Secondary income: $15 - 40 = -25$
-- **Current account: $-120 + 100 - 40 - 25 = -\text{'\{'}GBP {'\}'} 85\text{'\{'}bn{'\}'}$ (deficit)**
+- **Current account: $-120 + 100 - 40 - 25 = -\text{GBP {} 85\text{bn{}$ (deficit)**
 
 **As a percentage of GDP:** If GDP = GBP 2,200bn:
-$$\text{'\{'}CA deficit{'\}'} = \frac{85}{2200} \times 100 = 3.86\%$$
+$$\text{CA deficit{} = \frac{85}{2200} \times 100 = 3.86\%$$
 
 **Interpretation:** The UK has a persistent current account deficit of approximately 4% of GDP, reflecting the structural trade deficit in goods partly offset by the surplus in services. The primary income deficit reflects net payments to foreign investors.
 
@@ -1070,12 +1070,12 @@ Real GDP per capita growth has been even weaker than real GDP growth because pop
 - Structural: 2.0 million (50%) -- skills mismatch, geographical immobility.
 - Cyclical: 0.8 million (20%) -- due to the output gap.
 
-**Natural rate of unemployment:** $u^* = \text{'\{'}frictional{'\}'} + \text{'\{'}structural{'\}'} = 1.2 + 2.0 = 3.2$ million.
+**Natural rate of unemployment:** $u^* = \text{frictional{} + \text{structural{} = 1.2 + 2.0 = 3.2$ million.
 $u^* = 3.2/53 = 6.04\%$.
 
 **Output gap (Okun's Law):** $g = -\beta(u - u^*) = -2(7.55 - 6.04) = -2(1.51) = -3.02\%$.
 
-If potential output is GBP 2,200bn, the output gap is $0.0302 \times 2200 = \text{'\{'}GBP {'\}'} 66.4\text{'\{'}bn{'\}'}$.
+If potential output is GBP 2,200bn, the output gap is $0.0302 \times 2200 = \text{GBP {} 66.4\text{bn{}$.
 
 **Cost of unemployment:**
 - Lost output: GBP 66.4bn per year.
@@ -1194,7 +1194,7 @@ $y^* = y(1 - G)$. A: $50\,000 \times (1 - 0.41) = 29\,500$. B: $30\,000 \times (
 The inequality gap between A and B is much smaller when adjusted: 29,500 vs 21,600 (ratio 1.37) instead of 50,000 vs 30,000 (ratio 1.67).
 
 **Genuine Progress Indicator (GPI):**
-$\text{'\{'}GPI{'\}'} = \text{'\{'}Personal consumption{'\}'} + \text{'\{'}Public goods{'\}'} - \text{'\{'}Social costs{'\}'} - \text{'\{'}Environmental costs{'\}'}$.
+$\text{GPI{} = \text{Personal consumption{} + \text{Public goods{} - \text{Social costs{} - \text{Environmental costs{}$.
 
 Country A: GPI $= 30\,000 + 10\,000 - 5\,000 - 8\,000 = 27\,000$.
 Country B: GPI $= 18\,000 + 12\,000 - 2\,000 - 3\,000 = 25\,000$.

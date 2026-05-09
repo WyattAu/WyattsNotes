@@ -932,7 +932,7 @@ energy available to herbivores. (d) Explain why ecological efficiency is typical
 (a) $\mathrm{NPP{} = \mathrm{GPP{} - R_p = 18000 - 12000 = 6000\;\mathrm{kJ/m^2/year{}$
 
 (b) Assuming herbivores consume $100\%$ of NPP (which is unrealistic; typically much less):
-$\mathrm{NSP{} = \mathrm{NPP{} \times \text{'\{'}ecological efficiency{'\}'} = 6000 \times 0.10 = 600\;\mathrm{kJ/m^2/year{}$
+$\mathrm{NSP{} = \mathrm{NPP{} \times \text{ecological efficiency{} = 6000 \times 0.10 = 600\;\mathrm{kJ/m^2/year{}$
 
 (c) If $60\%$ goes to decomposers: energy available to herbivores $= 6000 \times 0.40 = 2400\;\mathrm{kJ/m^2/year{}$.
 Secondary productivity of herbivores $= 2400 \times 0.10 = 240\;\mathrm{kJ/m^2/year{}$.

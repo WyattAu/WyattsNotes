@@ -150,7 +150,7 @@ A myelinated sensory neuron has nodes of Ranvier spaced 1.2 mm apart. The action
 <details>
 <summary>Solution</summary>
 
-Conduction velocity = $\frac{\text{'\{'}distance{'\}'}}{\text{'\{'}time{'\}'}} = \frac{1.2 \times 10^{-3} \mathrm{ m{}}{10 \times 10^{-6} \mathrm{ s{}} = 120 \mathrm{ m/s{}$
+Conduction velocity = $\frac{\text{distance{}}{\text{time{}} = \frac{1.2 \times 10^{-3} \mathrm{ m{}}{10 \times 10^{-6} \mathrm{ s{}} = 120 \mathrm{ m/s{}$
 
 This is within the typical range for myelinated sensory neurons (approximately 100-120 m/s). An unmyelinated neuron of the same diameter would conduct at approximately 0.5-2 m/s, demonstrating the enormous speed advantage of myelination.
 

@@ -469,7 +469,7 @@ where $O_i$ are observed frequencies and $E_i$ are expected frequencies.
 **Expected frequency**:
 
 $$
-E_{ij} = \frac{(\mathrm{row {} i \mathrm{ total{}) \times (\mathrm{column {} j \mathrm{ total{})}{\mathrm{grand total{}}
+E_`\{ij}` = \frac{(\mathrm{row {} i \mathrm{ total{}) \times (\mathrm{column {} j \mathrm{ total{})}{\mathrm{grand total{}}
 $$
 
 **Degrees of freedom**: $\nu = (r-1)(c-1)$ where $r$ is the number of rows and $c$ is the number of

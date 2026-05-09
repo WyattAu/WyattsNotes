@@ -554,7 +554,7 @@ $$
 Dividing both sides by $-nF$:
 
 $$
-\boxed{E_{\mathrm{cell{}} = E^\circ_{\mathrm{cell{}} - \frac{RT}{nF}\ln Q}
+\boxed{E_{\mathrm{cell{}} = E^\circ_{\mathrm{cell{}} - \frac`\{RT}``\{nF}`\ln Q}
 $$
 
 This is the **Nernst equation**. At $298\mathrm{ K{}$, substituting $R = 8.314\mathrm{ J/(mol K){}$,
@@ -610,11 +610,11 @@ At equilibrium, $\Delta G = 0$, so $E_{\mathrm{cell{}} = 0$ and $Q = K$ (the equ
 Substituting into the Nernst equation:
 
 $$
-0 = E^\circ_{\mathrm{cell{}} - \frac{RT}{nF}\ln K
+0 = E^\circ_{\mathrm{cell{}} - \frac`\{RT}``\{nF}`\ln K
 $$
 
 $$
-E^\circ_{\mathrm{cell{}} = \frac{RT}{nF}\ln K = \frac{0.0592}{n}\log_{10} K \quad \mathrm{at {} 298\mathrm{ K{}
+E^\circ_{\mathrm{cell{}} = \frac`\{RT}``\{nF}`\ln K = \frac{0.0592}{n}\log_{10} K \quad \mathrm{at {} 298\mathrm{ K{}
 $$
 
 **Definition.** At equilibrium, the cell potential is zero. The standard cell potential directly
@@ -697,7 +697,7 @@ $$
 $$
 
 $$
-\boxed{E^\circ_{\mathrm{cell{}} = \frac{RT}{nF}\ln K}
+\boxed{E^\circ_{\mathrm{cell{}} = \frac`\{RT}``\{nF}`\ln K}
 $$
 
 At $298\mathrm{ K{}$:

@@ -25,7 +25,7 @@ and HL, with eigenvalues and diagonalisation appearing exclusively at HL.
 An $m \times n$ matrix $A$ is a rectangular array of real numbers with $m$ rows and $n$ columns:
 
 $$
-A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{pmatrix}
+A = \begin`\{pmatrix}` a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_`\{mn}` \end`\{pmatrix}`
 $$
 
 The entry in row $i$ and column $j$ is denoted $a_{ij}$. The set of all $m \times n$ real matrices
@@ -40,13 +40,13 @@ matrix. When the dimensions are equal ($m = n$), the matrix is called **square**
 entry-wise:
 
 $$
-(A + B)_{ij} = a_{ij} + b_{ij}
+(A + B)_`\{ij}` = a_`\{ij}` + b_`\{ij}`
 $$
 
 **Scalar multiplication.** For $k \in \mathbb{'\{'}R{'\}'}$ and $A \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$:
 
 $$
-(kA)_{ij} = k \cdot a_{ij}
+(kA)_`\{ij}` = k \cdot a_`\{ij}`
 $$
 
 These operations satisfy the following axioms (making $\mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$ a
@@ -65,7 +65,7 @@ If $A$ is $m \times p$ and $B$ is $p \times n$, then the product $C = AB$ is an 
 whose entries are:
 
 $$
-c_{ij} = \sum_{k=1}^{p} a_{ik} b_{kj}
+c_`\{ij}` = \sum_{k=1}^{p} a_`\{ik}` b_`\{kj}`
 $$
 
 This is the **dot product** of the $i$-th row of $A$ with the $j$-th column of $B$. The inner
@@ -93,7 +93,7 @@ transformations, applying $A$ then $B$ corresponds to the product $BA$ (right-to
 elsewhere:
 
 $$
-I_n = \begin{pmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end{pmatrix}
+I_n = \begin`\{pmatrix}` 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end`\{pmatrix}`
 $$
 
 For any $m \times n$ matrix $A$: $I_m A = A I_n = A$.
@@ -110,7 +110,7 @@ The **transpose** of $A \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\
 $n \times m$ matrix obtained by interchanging rows and columns:
 
 $$
-(A^T)_{ij} = a_{ji}
+(A^T)_`\{ij}` = a_`\{ji}`
 $$
 
 **Properties of the transpose:**
@@ -163,7 +163,7 @@ Check: $S + K = \begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix} = A$.
 For a $2 \times 2$ matrix:
 
 $$
-A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}
+A = \begin`\{pmatrix}` a & b \\ c & d \end`\{pmatrix}`
 $$
 
 the **determinant** is:
@@ -180,7 +180,7 @@ it is invertible and how it scales area (or volume).
 For a $3 \times 3$ matrix:
 
 $$
-A = \begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{pmatrix}
+A = \begin`\{pmatrix}` a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end`\{pmatrix}`
 $$
 
 the determinant can be computed by **cofactor expansion** along any row or column. Expanding along
@@ -268,7 +268,7 @@ The inverse is unique when it exists. A square matrix is invertible if and only 
 For $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with $\det(A) = ad - bc \neq 0$:
 
 $$
-A^{-1} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}
+A^{-1} = \frac{1}{ad - bc} \begin`\{pmatrix}` d & -b \\ -c & a \end`\{pmatrix}`
 $$
 
 This is obtained by swapping the diagonal entries, negating the off-diagonal entries, and dividing
@@ -347,13 +347,13 @@ $$
 For a $2 \times 2$ system:
 
 $$
-\begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} e \\ f \end{pmatrix}
+\begin`\{pmatrix}` a & b \\ c & d \end`\{pmatrix}` \begin`\{pmatrix}` x \\ y \end`\{pmatrix}` = \begin`\{pmatrix}` e \\ f \end`\{pmatrix}`
 $$
 
 the solution is:
 
 $$
-\begin{pmatrix} x \\ y \end{pmatrix} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} \begin{pmatrix} e \\ f \end{pmatrix} = \frac{1}{ad - bc} \begin{pmatrix} de - bf \\ -ce + af \end{pmatrix}
+\begin`\{pmatrix}` x \\ y \end`\{pmatrix}` = \frac{1}{ad - bc} \begin`\{pmatrix}` d & -b \\ -c & a \end`\{pmatrix}` \begin`\{pmatrix}` e \\ f \end`\{pmatrix}` = \frac{1}{ad - bc} \begin`\{pmatrix}` de - bf \\ -ce + af \end`\{pmatrix}`
 $$
 
 :::info[Examples]
@@ -396,32 +396,32 @@ reflection matrix is $-1$ (orientation is reversed).
 **Reflection in the $x$-axis:**
 
 $$
-R_x = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+R_x = \begin`\{pmatrix}` 1 & 0 \\ 0 & -1 \end`\{pmatrix}`
 $$
 
 **Reflection in the $y$-axis:**
 
 $$
-R_y = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}
+R_y = \begin`\{pmatrix}` -1 & 0 \\ 0 & 1 \end`\{pmatrix}`
 $$
 
 **Reflection in the line $y = x$:**
 
 $$
-R_{y=x} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
+R_{y=x} = \begin`\{pmatrix}` 0 & 1 \\ 1 & 0 \end`\{pmatrix}`
 $$
 
 **Reflection in the line $y = -x$:**
 
 $$
-R_{y=-x} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}
+R_{y=-x} = \begin`\{pmatrix}` 0 & -1 \\ -1 & 0 \end`\{pmatrix}`
 $$
 
 **Reflection in the line $y = (\tan\theta)\,x$** (a line through the origin making angle $\theta$
 with the positive $x$-axis):
 
 $$
-R_\theta = \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}
+R_\theta = \begin`\{pmatrix}` \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end`\{pmatrix}`
 $$
 
 ### Rotations
@@ -429,7 +429,7 @@ $$
 An **anticlockwise rotation** about the origin through an angle $\theta$ is represented by:
 
 $$
-R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}
+R_\theta = \begin`\{pmatrix}` \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end`\{pmatrix}`
 $$
 
 Key properties of rotation matrices:
@@ -454,7 +454,7 @@ An **enlargement** with scale factor $k$ about the origin scales all distances b
 $k \lt 0$, also rotates by $180^\circ$.
 
 $$
-E_k = \begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}
+E_k = \begin`\{pmatrix}` k & 0 \\ 0 & k \end`\{pmatrix}`
 $$
 
 - $\det(E_k) = k^2$, so the area scale factor is $k^2$.
@@ -464,13 +464,13 @@ $$
 **Stretches.** A stretch parallel to the $x$-axis with scale factor $k$:
 
 $$
-S_x = \begin{pmatrix} k & 0 \\ 0 & 1 \end{pmatrix}
+S_x = \begin`\{pmatrix}` k & 0 \\ 0 & 1 \end`\{pmatrix}`
 $$
 
 A stretch parallel to the $y$-axis with scale factor $k$:
 
 $$
-S_y = \begin{pmatrix} 1 & 0 \\ 0 & k \end{pmatrix}
+S_y = \begin`\{pmatrix}` 1 & 0 \\ 0 & k \end`\{pmatrix}`
 $$
 
 For a stretch parallel to the $x$-axis, $\det(S_x) = k$, so the area scale factor is $|k|$. If
@@ -480,13 +480,13 @@ $0 \lt k \lt 1$, the figure is compressed; if $k \gt 1$, it is expanded.
 other points horizontally in proportion to their $y$-coordinate:
 
 $$
-H_x = \begin{pmatrix} 1 & k \\ 0 & 1 \end{pmatrix}
+H_x = \begin`\{pmatrix}` 1 & k \\ 0 & 1 \end`\{pmatrix}`
 $$
 
 A vertical shear with shear factor $k$:
 
 $$
-H_y = \begin{pmatrix} 1 & 0 \\ k & 1 \end{pmatrix}
+H_y = \begin`\{pmatrix}` 1 & 0 \\ k & 1 \end`\{pmatrix}`
 $$
 
 For any shear matrix, $\det = 1$, so area is preserved. The $x$-axis (for $H_x$) or $y$-axis (for
@@ -504,7 +504,7 @@ $$
 **Example.** A rotation of $90^\circ$ anticlockwise followed by a reflection in the $x$-axis:
 
 $$
-\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}
+\begin`\{pmatrix}` 1 & 0 \\ 0 & -1 \end`\{pmatrix}` \begin`\{pmatrix}` 0 & -1 \\ 1 & 0 \end`\{pmatrix}` = \begin`\{pmatrix}` 0 & -1 \\ -1 & 0 \end`\{pmatrix}`
 $$
 
 This is equivalent to a single reflection in the line $y = -x$.
@@ -609,7 +609,7 @@ The equation $\det(A - \lambda I) = 0$ is the **characteristic equation** of $A$
 matrix $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$:
 
 $$
-\det\begin{pmatrix} a - \lambda & b \\ c & d - \lambda \end{pmatrix} = (a - \lambda)(d - \lambda) - bc = 0
+\det\begin`\{pmatrix}` a - \lambda & b \\ c & d - \lambda \end`\{pmatrix}` = (a - \lambda)(d - \lambda) - bc = 0
 $$
 
 Expanding:
@@ -884,7 +884,7 @@ when $A$ is an $n \times n$ invertible matrix.
 **For a $2 \times 2$ system:**
 
 $$
-x = \frac{\begin{vmatrix} e & b \\ f & d \end{vmatrix}}{\det(A)}, \qquad y = \frac{\begin{vmatrix} a & e \\ c & f \end{vmatrix}}{\det(A)}
+x = \frac{\begin`\{vmatrix}` e & b \\ f & d \end`\{vmatrix}`}{\det(A)}, \qquad y = \frac{\begin`\{vmatrix}` a & e \\ c & f \end`\{vmatrix}`}{\det(A)}
 $$
 
 where the numerator for $x$ replaces the first column of $A$ with $\mathbf{'\{'}b{'\}'}$, and the numerator
@@ -966,7 +966,7 @@ matrix multiplications, 2D points $(x, y)$ are extended to homogeneous coordinat
 translation by $(t_x, t_y)$ is then:
 
 $$
-T = \begin{pmatrix} 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end{pmatrix}
+T = \begin`\{pmatrix}` 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end`\{pmatrix}`
 $$
 
 Rotation and scaling in homogeneous coordinates use $3 \times 3$ matrices with the bottom row

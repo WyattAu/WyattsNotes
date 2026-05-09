@@ -374,7 +374,7 @@ When two genes are on the same chromosome, they do not assort independently. The
 deviates from $9:3:3:1$.
 
 **Recombination frequency (RF)**:
-$$\mathrm{RF{} = \frac{\text{'\{'}number of recombinant offspring{'\}'}}{\text{'\{'}total offspring{'\}'}} \times 100\%$$
+$$\mathrm{RF{} = \frac{\text{number of recombinant offspring{}}{\text{total offspring{}} \times 100\%$$
 
 - $\mathrm{RF{} < 10\%$: genes are closely linked.
 - $\mathrm{RF{} \approx 50\%$: genes assort independently (on different chromosomes or very far
@@ -930,7 +930,7 @@ the probability that their next child will be a carrier of both conditions but p
 for each gene. Both parents are phenotypically normal, so their genotypes are $AaCc$.
 
 (b) For each gene independently, $Aa \times Aa \to \frac{3}{4}$ normal phenotype.
-$P(\text{'\{'}normal for both{'\}'}) = \frac{3}{4} \times \frac{3}{4} = \frac{9}{16}$
+$P(\text{normal for both{}) = \frac{3}{4} \times \frac{3}{4} = \frac{9}{16}$
 
 (c) Carrier of both but normal: genotype must be $AaCc$.
 $P(AaCc) = P(Aa) \times P(Cc) = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$
@@ -1247,7 +1247,7 @@ probability does not equal the probability of the suspect's guilt.
 <summary>Answer 11</summary>
 
 (a) The suspect is heterozygous: genotype is $3200/5600$.
-$P(\text{'\{'}genotype{'\}'}) = 2 \times p_{3200} \times p_{5600} = 2 \times 0.15 \times 0.08 = 0.024 = 1/41.7$.
+$P(\text{genotype{}) = 2 \times p_{3200} \times p_{5600} = 2 \times 0.15 \times 0.08 = 0.024 = 1/41.7$.
 
 This is the probability that a randomly selected individual from the population has this specific genotype
 at this locus.
@@ -1260,7 +1260,7 @@ Approximately $1$ in $425\,000$.
 (c) The match probability is NOT the probability of guilt because:
 - It gives the probability that a randomly selected person would match the DNA profile, not the
   probability that the suspect is the source of the DNA.
-- The correct interpretation requires Bayesian reasoning: $P(\text{'\{'}guilt{'\}'} | \text{'\{'}match{'\}'})$ depends on
+- The correct interpretation requires Bayesian reasoning: $P(\text{guilt{} | \text{match{})$ depends on
   the prior probability of guilt (based on other evidence).
 - In a city of $10$ million people, $10\,000\,000 / 425\,340 \approx 23.5$ people would be expected
   to match this profile by chance alone.

@@ -1266,11 +1266,11 @@ An economy has potential GDP of HK$3,000 billion. The natural rate of unemployme
 
 Output gap $= -2.5 \times 3\% = -7.5\%$. The economy is producing 7.5% below potential.
 
-(b) Actual GDP $= 3000 \times (1 - 0.075) = 3000 \times 0.925 = \text{'\{'}HK{'\}'}\$2\,775$ billion.
+(b) Actual GDP $= 3000 \times (1 - 0.075) = 3000 \times 0.925 = \text{HK{}\$2\,775$ billion.
 
-(c) Required GDP increase $= 3000 - 2775 = \text{'\{'}HK{'\}'}\$225$ billion.
+(c) Required GDP increase $= 3000 - 2775 = \text{HK{}\$225$ billion.
 
-Required spending increase $= 225 / 1.8 = \text{'\{'}HK{'\}'}\$125$ billion.
+Required spending increase $= 225 / 1.8 = \text{HK{}\$125$ billion.
 
 (d) **Critique of Okun's law:**
 1. **The coefficient varies over time and across countries.** The assumption of 2.5 is an approximation. Empirical estimates for Hong Kong may differ significantly due to structural factors (high proportion of services, open economy).
@@ -1398,7 +1398,7 @@ Leakages (2050) do not equal injections (2200) -- there is a surplus of injectio
 
 (c) Multiplier with imports: $k = \frac{1}{1 - MPC + MPM} = \frac{1}{1 - 0.75 + 0.30} = \frac{1}{0.55} = 1.818$.
 
-$\Delta GDP = 1.818 \times 50 = \text{'\{'}HK{'\}'}\$90.9$ billion.
+$\Delta GDP = 1.818 \times 50 = \text{HK{}\$90.9$ billion.
 
 (d) In an open economy, some of the additional income from government spending leaks abroad as imports (MPM = 0.3 means 30 cents of every additional dollar is spent on imports). These imports do not generate domestic income, so the circular flow is smaller. In a closed economy (MPM = 0), the multiplier would be $\frac{1}{1 - 0.75} = 4$, and the same HK$50 billion would generate HK$200 billion. The import leakage reduces the multiplier from 4 to 1.818.
 
@@ -1418,7 +1418,7 @@ Country M reports the following annual changes: GDP +8%, nominal wages +5%, CPI 
 <details>
 <summary>Solution</summary>
 
-(a) Real GDP growth $= \frac{1 + \text{'\{'}nominal GDP growth{'\}'}}{1 + \text{'\{'}inflation{'\}'}} - 1$.
+(a) Real GDP growth $= \frac{1 + \text{nominal GDP growth{}}{1 + \text{inflation{}} - 1$.
 
 If nominal GDP growth is 8% and inflation (GDP deflator) is approximately the CPI (10%): real growth $= \frac{1.08}{1.10} - 1 = -1.8\%$.
 
@@ -1451,7 +1451,7 @@ Country N has GDP of USD 500 billion. Environmental damage from pollution is est
 
 (a) **Green GDP** adjusts GDP for environmental costs:
 
-$Green GDP = GDP - Environmental damage - Resource depletion = 500 - 80 - 30 = \text{'\{'}USD {'\}'} 390$ billion.
+$Green GDP = GDP - Environmental damage - Resource depletion = 500 - 80 - 30 = \text{USD {} 390$ billion.
 
 Note: There are different methods for calculating Green GDP. Some also subtract defensive expenditure: $500 - 80 - 30 - 20 = 370$ billion.
 

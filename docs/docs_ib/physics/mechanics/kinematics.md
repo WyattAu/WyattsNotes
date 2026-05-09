@@ -512,7 +512,7 @@ diagram showing the velocity components.
 The velocity of object `A` relative to object `B`:
 
 $$
-\vec{v}_{AB} = \vec{v}_A - \vec{v}_B
+\vec{v}_`\{AB}` = \vec{v}_A - \vec{v}_B
 $$
 
 ### Applications
@@ -554,17 +554,17 @@ Time to cross: $t = \dfrac{100}{2.65} = 37.7\mathrm{ s{}$.
 When acceleration is not constant, use calculus:
 
 $$
-a = \frac{dv}{dt} \implies v = \int a\,dt
+a = \frac`\{dv}``\{dt}` \implies v = \int a\,dt
 $$
 
 $$
-v = \frac{ds}{dt} \implies s = \int v\,dt
+v = \frac`\{ds}``\{dt}` \implies s = \int v\,dt
 $$
 
 And conversely:
 
 $$
-v = \frac{ds}{dt}, \quad a = \frac{dv}{dt} = \frac{d^2s}{dt^2}
+v = \frac`\{ds}``\{dt}`, \quad a = \frac`\{dv}``\{dt}` = \frac{d^2s}{dt^2}
 $$
 
 :::info[Example]

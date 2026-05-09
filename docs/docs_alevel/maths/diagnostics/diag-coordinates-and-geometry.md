@@ -250,7 +250,7 @@ Point $F$ also lies on $BE$: $\overrightarrow{OF} = \overrightarrow{OB} + t\over
 
 Equating coefficients of $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$:
 
-$$\frac{s}{3} = 1 - t \quad \text{'\{'}and{'\}'} \quad \frac{2s}{3} = \frac{t}{2}$$
+$$\frac{s}{3} = 1 - t \quad \text{and{} \quad \frac{2s}{3} = \frac{t}{2}$$
 
 From the second equation: $t = \frac{4s}{3}$.
 

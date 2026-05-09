@@ -199,7 +199,7 @@ not commutative.
 
 $$\det A = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - a_{12}(a_{21}a_{33} - a_{23}a_{31}) + a_{13}(a_{21}a_{32} - a_{22}a_{31})$$
 
-**Inverse.** $A^{-1} = \frac{1}{\det A}\text{'\{'}adj{'\}'}(A)$. A matrix is invertible if and only if $\det A \neq 0$.
+**Inverse.** $A^{-1} = \frac{1}{\det A}\text{adj{}(A)$. A matrix is invertible if and only if $\det A \neq 0$.
 
 **Eigenvalues and eigenvectors.** Solve $\det(A - \lambda I) = 0$ for eigenvalues $\lambda$, then solve
 $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ for eigenvectors $\mathbf{'\{'}v{'\}'}$.
@@ -236,7 +236,7 @@ $$P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}$$
 
 **Expected value and variance.** For a discrete random variable $X$:
 
-$$\mathbb{'\{'}E{'\}'}(X) = \sum_i x_i p_i, \quad \text{'\{'}Var{'\}'}(X) = \mathbb{'\{'}E{'\}'}(X^2) - [\mathbb{'\{'}E{'\}'}(X)]^2$$
+$$\mathbb{'\{'}E{'\}'}(X) = \sum_i x_i p_i, \quad \text{Var{}(X) = \mathbb{'\{'}E{'\}'}(X^2) - [\mathbb{'\{'}E{'\}'}(X)]^2$$
 
 **Linearity of expectation.** $\mathbb{'\{'}E{'\}'}(X + Y) = \mathbb{'\{'}E{'\}'}(X) + \mathbb{'\{'}E{'\}'}(Y)$ always, regardless of
 independence.
@@ -458,7 +458,7 @@ Since $L \geq \sqrt{2} > 0$, we have $L = \sqrt{2}$.
 > without replacement until a red ball is drawn. Let $X$ be the number of draws required.
 >
 > (i) Find $\mathbb{'\{'}E{'\}'}(X)$.
-> (ii) Find $\text{'\{'}Var{'\}'}(X)$.
+> (ii) Find $\text{Var{}(X)$.
 > (iii) Show that $\mathbb{'\{'}E{'\}'}(X) = \frac{n+1}{r+1}$.
 
 **Solution.** This is a negative hypergeometric distribution.
@@ -468,7 +468,7 @@ i.e., $I_j = 1$ if the first $j-1$ draws are all blue and the $j$-th is red.
 
 The probability that the first $j-1$ draws are all blue is:
 
-$$P(\text{'\{'}first {'\}'} j-1 \text{'\{'} are blue{'\}'}) = \frac{\binom{n-r}{j-1}}{\binom{n}{j-1}}$$
+$$P(\text{first {} j-1 \text{ are blue{}) = \frac{\binom{n-r}{j-1}}{\binom{n}{j-1}}$$
 
 provided $j - 1 \leq n - r$. Then:
 
@@ -492,15 +492,15 @@ $$\mathbb{'\{'}E{'\}'}(X) = \mathbb{'\{'}E{'\}'}(B_1) + 1 = \frac{n - r}{r + 1} 
 $\mathbb{'\{'}E{'\}'}(B_1^2)$. The blue balls are distributed multinomially among $r + 1$ gaps with equal
 probabilities $\frac{1}{r+1}$ each. For a multinomial distribution:
 
-$$\text{'\{'}Var{'\}'}(B_1) = (n-r)\cdot\frac{1}{r+1}\cdot\frac{r}{r+1} = \frac{r(n-r)}{(r+1)^2}$$
+$$\text{Var{}(B_1) = (n-r)\cdot\frac{1}{r+1}\cdot\frac{r}{r+1} = \frac{r(n-r)}{(r+1)^2}$$
 
-Since $\text{'\{'}Var{'\}'}(B_1) = \mathbb{'\{'}E{'\}'}(B_1^2) - [\mathbb{'\{'}E{'\}'}(B_1)]^2$:
+Since $\text{Var{}(B_1) = \mathbb{'\{'}E{'\}'}(B_1^2) - [\mathbb{'\{'}E{'\}'}(B_1)]^2$:
 
 $$\mathbb{'\{'}E{'\}'}(B_1^2) = \frac{r(n-r)}{(r+1)^2} + \frac{(n-r)^2}{(r+1)^2} = \frac{(n-r)(r + n - r)}{(r+1)^2} = \frac{(n-r)n}{(r+1)^2}$$
 
 Since $X = B_1 + 1$:
 
-$$\text{'\{'}Var{'\}'}(X) = \text{'\{'}Var{'\}'}(B_1) = \frac{r(n-r)}{(r+1)^2}$$
+$$\text{Var{}(X) = \text{Var{}(B_1) = \frac{r(n-r)}{(r+1)^2}$$
 
 **(iii)** This was established in part (i): $\mathbb{'\{'}E{'\}'}(X) = \frac{n+1}{r+1}$.
 

@@ -64,7 +64,7 @@ Yeast (Saccharomyces cerevisiae) is used in the industrial production of ethanol
 
 **Worked Solution**
 
-(a) $$\text{'\{'}Glucose{'\}'} \to \text{'\{'}Ethanol{'\}'} + \text{'\{'}Carbon dioxide{'\}'}$$
+(a) $$\text{Glucose{} \to \text{Ethanol{} + \text{Carbon dioxide{}$$
 
 (b) Conditions for optimal ethanol production in a bioreactor:
 

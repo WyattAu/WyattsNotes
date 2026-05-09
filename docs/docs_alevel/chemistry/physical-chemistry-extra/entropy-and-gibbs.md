@@ -507,7 +507,7 @@ $$
 The large negative $\Delta G^\circ$ makes this reaction thermodynamically favourable, and it is coupled to endergonic (unfavourable) reactions in the cell. For example, the synthesis of glucose-6-phosphate from glucose and phosphate ($\Delta G^\circ = +13.8\,\mathrm{kJ/mol{}$) is driven by coupling with ATP hydrolysis:
 
 $$
-\mathrm{Glucose{} + \mathrm{P{}_i + \mathrm{ATP{} \to \mathrm{Glucose\text{'\{'}-{'\}'}6\text{'\{'}-{'\}'}phosphate} + \mathrm{ADP{}
+\mathrm{Glucose{} + \mathrm{P{}_i + \mathrm{ATP{} \to \mathrm{Glucose\text{-{}6\text{-{}phosphate} + \mathrm{ADP{}
 $$
 
 $$
@@ -534,7 +534,7 @@ Some reactions show enthalpy-entropy compensation: a more exothermic $\Delta H$ 
 
 ### Problem: Predicting Spontaneity at Different Temperatures
 
-For the reaction $\mathrm{C{}(\text{'\{'}graphite{'\}'}) + \mathrm{CO{}_2(g) \rightleftharpoons 2\mathrm{CO{}(g)$:
+For the reaction $\mathrm{C{}(\text{graphite{}) + \mathrm{CO{}_2(g) \rightleftharpoons 2\mathrm{CO{}(g)$:
 
 $$
 \Delta H^\circ = +173\,\mathrm{kJ/mol{}, \quad \Delta S^\circ = +176\,\mathrm{J\,mol^{-1}\,K^{-1}}
@@ -598,13 +598,13 @@ $\Delta G^\circ < 0$, so the decomposition is spontaneous at $500\,\mathrm{K{}$.
 
 When two ideal gases mix, the entropy always increases because there are more ways to arrange the molecules in the larger volume.
 
-**Worked Example:** $1.0\,\mathrm{mol{}$ of $\mathrm{He{}$ and $1.0\,\mathrm{mol{}$ of $\mathrm{Ne{}$, both initially in separate $10.0\,\mathrm{dm{}^3$ containers at $298\,\mathrm{K{}$, are allowed to mix in a combined volume of $20.0\,\mathrm{dm{}^3$. Calculate $\Delta S_\text{'\{'}mix{'\}'}$.
+**Worked Example:** $1.0\,\mathrm{mol{}$ of $\mathrm{He{}$ and $1.0\,\mathrm{mol{}$ of $\mathrm{Ne{}$, both initially in separate $10.0\,\mathrm{dm{}^3$ containers at $298\,\mathrm{K{}$, are allowed to mix in a combined volume of $20.0\,\mathrm{dm{}^3$. Calculate $\Delta S_\text{mix{}$.
 
-$$\Delta S_\text{'\{'}mix{'\}'} = -nR\left(x_\mathrm{He{}\ln x_\mathrm{He{} + x_\mathrm{Ne{}\ln x_\mathrm{Ne{}\right)$$
+$$\Delta S_\text{mix{} = -nR\left(x_\mathrm{He{}\ln x_\mathrm{He{} + x_\mathrm{Ne{}\ln x_\mathrm{Ne{}\right)$$
 
 where $x_\mathrm{He{} = x_\mathrm{Ne{} = 0.5$:
 
-$$\Delta S_\text{'\{'}mix{'\}'} = -(1.0 + 1.0) \times 8.314 \times (0.5 \ln 0.5 + 0.5 \ln 0.5)$$
+$$\Delta S_\text{mix{} = -(1.0 + 1.0) \times 8.314 \times (0.5 \ln 0.5 + 0.5 \ln 0.5)$$
 
 $$= -2.0 \times 8.314 \times \ln 0.5 = -16.63 \times (-0.693) = +11.5\,\mathrm{J\,K^{-1}}$$
 
@@ -612,20 +612,20 @@ $$= -2.0 \times 8.314 \times \ln 0.5 = -16.63 \times (-0.693) = +11.5\,\mathrm{J
 
 At a phase transition, the system is at equilibrium so $\Delta G = 0$, giving:
 
-$$\Delta S_\text{'\{'}transition{'\}'} = \frac{\Delta H_\text{'\{'}transition{'\}'}}{T_\text{'\{'}transition{'\}'}}$$
+$$\Delta S_\text{transition{} = \frac{\Delta H_\text{transition{}}{T_\text{transition{}}$$
 
 | Transition | $\Delta H$ | $\Delta S$ | $\Delta G$ |
 |---|---|---|---|
-| Melting (fusion) | Positive (endothermic) | Positive (disorder increases) | 0 (at $T_\text{'\{'}m{'\}'}$) |
-| Boiling (vaporisation) | Positive (endothermic) | Positive (large increase in disorder) | 0 (at $T_\text{'\{'}b{'\}'}$) |
-| Freezing | Negative (exothermic) | Negative (order increases) | 0 (at $T_\text{'\{'}m{'\}'}$) |
-| Sublimation | Positive (endothermic) | Positive | 0 (at $T_\text{'\{'}sub{'\}'}$) |
+| Melting (fusion) | Positive (endothermic) | Positive (disorder increases) | 0 (at $T_\text{m{}$) |
+| Boiling (vaporisation) | Positive (endothermic) | Positive (large increase in disorder) | 0 (at $T_\text{b{}$) |
+| Freezing | Negative (exothermic) | Negative (order increases) | 0 (at $T_\text{m{}$) |
+| Sublimation | Positive (endothermic) | Positive | 0 (at $T_\text{sub{}$) |
 
-**Worked Example:** Calculate the entropy of vaporisation of water at $373\,\mathrm{K{}$ given $\Delta H_\text{'\{'}vap{'\}'} = +40.7\,\mathrm{kJ/mol{}$.
+**Worked Example:** Calculate the entropy of vaporisation of water at $373\,\mathrm{K{}$ given $\Delta H_\text{vap{} = +40.7\,\mathrm{kJ/mol{}$.
 
-$$\Delta S_\text{'\{'}vap{'\}'} = \frac{40700}{373} = +109\,\mathrm{J\,mol^{-1}\,K^{-1}}$$
+$$\Delta S_\text{vap{} = \frac{40700}{373} = +109\,\mathrm{J\,mol^{-1}\,K^{-1}}$$
 
-This is close to Trouton's rule ($\Delta S_\text{'\{'}vap{'\}'} \approx 88\,\mathrm{J\,mol^{-1}\,K^{-1}}$ for non-hydrogen-bonding liquids). Water is higher because of extensive hydrogen bonding in the liquid phase.
+This is close to Trouton's rule ($\Delta S_\text{vap{} \approx 88\,\mathrm{J\,mol^{-1}\,K^{-1}}$ for non-hydrogen-bonding liquids). Water is higher because of extensive hydrogen bonding in the liquid phase.
 
 ### Born-Haber Cycles and Gibbs Energy
 
@@ -648,7 +648,7 @@ $$\mathrm{ATP{} + \mathrm{H{}_2\mathrm{O{} \to \mathrm{ADP{} + \mathrm{P{}_i \qu
 
 This strongly exergonic reaction drives many endergonic processes in cells. If a reaction requires $+20\,\mathrm{kJ/mol{}$, coupling with ATP hydrolysis gives:
 
-$$\Delta G_\text{'\{'}overall{'\}'} = +20.0 + (-30.5) = -10.5\,\mathrm{kJ/mol{}$$
+$$\Delta G_\text{overall{} = +20.0 + (-30.5) = -10.5\,\mathrm{kJ/mol{}$$
 
 ### Gibbs Energy and Equilibrium: Quantitative Treatment
 
@@ -688,7 +688,7 @@ $\Delta G$ is very negative, so the forward reaction is strongly favoured initia
 
 ### Practical Applications: Gibbs Energy in Industry
 
-| Industrial Process | Reaction | $\Delta H^\circ$ (kJ/mol) | $\Delta S^\circ$ (J/mol/K) | $T_\text{'\{'}threshold{'\}'}$ (K) |
+| Industrial Process | Reaction | $\Delta H^\circ$ (kJ/mol) | $\Delta S^\circ$ (J/mol/K) | $T_\text{threshold{}$ (K) |
 |---|---|---|---|---|
 | Haber process | $\mathrm{N{}_2 + 3\mathrm{H{}_2 \to 2\mathrm{NH{}_3$ | $-92$ | $-199$ | Not applicable ($\Delta H < 0$, $\Delta S < 0$: spontaneous at low $T$) |
 | Contact process | $2\mathrm{SO{}_2 + \mathrm{O{}_2 \to 2\mathrm{SO{}_3$ | $-198$ | $-190$ | Not applicable |
@@ -755,11 +755,11 @@ The claim is **correct in practice** (combustion is feasible at all reasonable t
 <details>
 <summary>Q4 (4 marks)</summary>
 
-The melting point of sodium is $371\,\mathrm{K{}$ and $\Delta H_\text{'\{'}fus{'\}'} = +2.60\,\mathrm{kJ/mol{}$. Calculate the entropy change of fusion and explain its sign.
+The melting point of sodium is $371\,\mathrm{K{}$ and $\Delta H_\text{fus{} = +2.60\,\mathrm{kJ/mol{}$. Calculate the entropy change of fusion and explain its sign.
 
 **Mark Scheme:**
 
-$$\Delta S_\text{'\{'}fus{'\}'} = \frac{\Delta H_\text{'\{'}fus{'\}'}}{T_\text{'\{'}m{'\}'}} = \frac{2600}{371} = +7.01\,\mathrm{J\,mol^{-1}\,K^{-1}}$$ (2 marks).
+$$\Delta S_\text{fus{} = \frac{\Delta H_\text{fus{}}{T_\text{m{}} = \frac{2600}{371} = +7.01\,\mathrm{J\,mol^{-1}\,K^{-1}}$$ (2 marks).
 
 The entropy change is positive because the solid sodium becomes a liquid, which has greater disorder and more ways to arrange the particles (1 mark). The ions in the liquid are no longer fixed in a lattice and have greater freedom of movement (1 mark).
 

@@ -148,8 +148,8 @@ For each topic test (6 questions, max 24 marks):
 | Acids/Bases | pH of weak vs strong acid | IT-3 |
 | Acids/Bases | Buffer mechanism and dilution | UT-1 |
 | Acids/Bases | Indicator choice from equivalence pH | UT-2 |
-| Electrochemistry | $E_{\text{'\{'}cell{'\}'}} = E_{\text{'\{'}cathode{'\}'}} - E_{\text{'\{'}anode{'\}'}}$ | UT-1 |
-| Electrochemistry | Feasibility from $E_{\text{'\{'}cell{'\}'}}$ magnitude | UT-3 |
+| Electrochemistry | $E_{\text{cell{}} = E_{\text{cathode{}} - E_{\text{anode{}}$ | UT-1 |
+| Electrochemistry | Feasibility from $E_{\text{cell{}}$ magnitude | UT-3 |
 | Electrochemistry | Faraday calculation with mole ratio | UT-2 |
 | Organic Intro | E/Z vs cis/trans naming | UT-2 |
 | Organic Intro | Enantiomeric excess calculation | UT-2 |
@@ -164,7 +164,7 @@ For each topic test (6 questions, max 24 marks):
 | Carbonyl/Arenes/Amines | Directing effects of substituents | UT-2 |
 | Carbonyl/Arenes/Amines | Amine basicity comparison | UT-3 |
 | Transition Metals | d-d transitions and colour origin | UT-1 |
-| Transition Metals | Ligand exchange and $K_{\text{'\{'}stab{'\}'}}$ | UT-2 |
+| Transition Metals | Ligand exchange and $K_{\text{stab{}}$ | UT-2 |
 | Transition Metals | Catalytic cycle construction | IT-1 |
 
 ## Diagnostic Test Matrix

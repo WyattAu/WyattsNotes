@@ -56,7 +56,7 @@ $$
 When an electron transitions from level $n_i$ to level $n_f$:
 
 $$
-\Delta E = E_{n_f} - E_{n_i} = hf = \frac{hc}{\lambda}
+\Delta E = E_{n_f} - E_{n_i} = hf = \frac`\{hc}`{\lambda}
 $$
 
 - Emission ($n_i \gt n_f$): photon is released.
@@ -73,7 +73,7 @@ $$
 (The energy of the photon is $1.89\mathrm{ eV{}$.)
 
 $$
-\lambda = \frac{hc}{\Delta E} = \frac{1240\mathrm{ eV{}\cdot\mathrm{nm{}}{1.89\mathrm{ eV{}} = 656\mathrm{ nm{}
+\lambda = \frac`\{hc}`{\Delta E} = \frac{1240\mathrm{ eV{}\cdot\mathrm{nm{}}{1.89\mathrm{ eV{}} = 656\mathrm{ nm{}
 $$
 
 This is the red line in the Balmer series (visible spectrum of hydrogen).
@@ -256,7 +256,7 @@ $$
 The activity $A$ is the number of decays per unit time:
 
 $$
-A = \lambda N = \frac{dN}{dt}
+A = \lambda N = \frac`\{dN}``\{dt}`
 $$
 
 SI unit: becquerel ($\mathrm{Bq{}$), where $1\mathrm{ Bq{} = 1\mathrm{ decay/s{}$.
@@ -459,7 +459,7 @@ The work function of sodium is $2.28\mathrm{ eV{}$. Find the maximum kinetic ene
 when light of wavelength $400\mathrm{ nm{}$ is incident.
 
 $$
-E_{\mathrm{photon{}} = \frac{hc}{\lambda} = \frac{1240\mathrm{ eV{}\cdot\mathrm{nm{}}{400\mathrm{ nm{}} = 3.10\mathrm{ eV{}
+E_{\mathrm{photon{}} = \frac`\{hc}`{\lambda} = \frac{1240\mathrm{ eV{}\cdot\mathrm{nm{}}{400\mathrm{ nm{}} = 3.10\mathrm{ eV{}
 $$
 
 $$
@@ -477,7 +477,7 @@ $$
 All matter has wave-like properties. The de Broglie wavelength of a particle:
 
 $$
-\lambda = \frac{h}{p} = \frac{h}{mv}
+\lambda = \frac{h}{p} = \frac{h}`\{mv}`
 $$
 
 where $h = 6.626 \times 10^{-34}\mathrm{ J{}\cdot\mathrm{s{}$ is Planck's constant.
@@ -807,7 +807,7 @@ v = \sqrt{\frac{2E_k}{m_e}} = \sqrt{\frac{2 \times 8.01 \times 10^{-17}}{9.109 \
 $$
 
 $$
-\lambda = \frac{h}{mv} = \frac{6.626 \times 10^{-34}}{9.109 \times 10^{-31} \times 1.326 \times 10^7} = \frac{6.626 \times 10^{-34}}{1.208 \times 10^{-23}} = 5.49 \times 10^{-11}\mathrm{ m{}
+\lambda = \frac{h}`\{mv}` = \frac{6.626 \times 10^{-34}}{9.109 \times 10^{-31} \times 1.326 \times 10^7} = \frac{6.626 \times 10^{-34}}{1.208 \times 10^{-23}} = 5.49 \times 10^{-11}\mathrm{ m{}
 $$
 
 This wavelength is comparable to atomic spacing, suitable for electron diffraction experiments.

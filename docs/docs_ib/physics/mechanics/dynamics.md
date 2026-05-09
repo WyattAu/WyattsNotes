@@ -42,7 +42,7 @@ with friction, applied forces, and different masses to see how they affect motio
 The net force acting on an object equals the rate of change of momentum:
 
 $$
-\vec{F}_{\mathrm{net{}} = \frac{d\vec{p}}{dt}
+\vec{F}_{\mathrm{net{}} = \frac{d\vec{p}}`\{dt}`
 $$
 
 For constant mass:
@@ -279,7 +279,7 @@ Momentum is a vector quantity with SI unit $\mathrm{kg{} \cdot \mathrm{m/s{}$.
 ### Newton's Second Law (Momentum Form)
 
 $$
-\vec{F}_{\mathrm{net{}} = \frac{d\vec{p}}{dt}
+\vec{F}_{\mathrm{net{}} = \frac{d\vec{p}}`\{dt}`
 $$
 
 ### Impulse
@@ -524,7 +524,7 @@ A motor lifts a $500\mathrm{ kg{}$ elevator through a height of $20\mathrm{ m{}$
 Find the power output of the motor.
 
 $$
-P = \frac{mgh}{t} = \frac{500 \times 9.81 \times 20}{10} = 9810\mathrm{ W{} = 9.81\mathrm{ kW{}
+P = \frac`\{mgh}`{t} = \frac{500 \times 9.81 \times 20}{10} = 9810\mathrm{ W{} = 9.81\mathrm{ kW{}
 $$
 
 ---
@@ -636,7 +636,7 @@ At high speeds: $F_d \propto v^2$ (turbulent drag, e.g., air resistance on a car
 Terminal velocity is reached when drag equals the driving force (e.g., weight for a falling object):
 
 $$
-mg = kv_{\mathrm{terminal{}}^2 \implies v_{\mathrm{terminal{}} = \sqrt{\frac{mg}{k}}
+mg = kv_{\mathrm{terminal{}}^2 \implies v_{\mathrm{terminal{}} = \sqrt{\frac`\{mg}`{k}}
 $$
 
 ---

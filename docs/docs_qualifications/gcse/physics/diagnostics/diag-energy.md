@@ -23,11 +23,11 @@ hide_table_of_contents: true
 (d) Air resistance does negative work on the ball, converting some kinetic energy to thermal energy. This means not all the initial kinetic energy is converted to gravitational potential energy, so the ball reaches a lower maximum height than predicted by the ideal calculation.
 
 ### UT-2: Specific Heat Capacity
-**Question:** (a) Define specific heat capacity and state its unit. (b) Calculate the energy needed to heat 2 kg of water from $20^\circ\text{'\{'}C{'\}'}$ to $80^\circ\text{'\{'}C{'\}'}$. (Specific heat capacity of water $= 4200 \text{'\{'} J/(kg {'\}'}^\circ\text{'\{'}C){'\}'}$.) (c) A 0.5 kg metal block is heated from $25^\circ\text{'\{'}C{'\}'}$ to $225^\circ\text{'\{'}C{'\}'}$ using $45000$ J of energy. Calculate the specific heat capacity of the metal. (d) Explain why water has a much higher specific heat capacity than metals and why this is important for climate.
+**Question:** (a) Define specific heat capacity and state its unit. (b) Calculate the energy needed to heat 2 kg of water from $20^\circ\text{C{}$ to $80^\circ\text{C{}$. (Specific heat capacity of water $= 4200 \text{ J/(kg {}^\circ\text{C){}$.) (c) A 0.5 kg metal block is heated from $25^\circ\text{C{}$ to $225^\circ\text{C{}$ using $45000$ J of energy. Calculate the specific heat capacity of the metal. (d) Explain why water has a much higher specific heat capacity than metals and why this is important for climate.
 
 **Solution:**
 
-(a) Specific heat capacity is the energy required to raise the temperature of 1 kg of a substance by $1^\circ\text{'\{'}C{'\}'}$. Unit: J/(kg $^\circ$C) or J/(kg K).
+(a) Specific heat capacity is the energy required to raise the temperature of 1 kg of a substance by $1^\circ\text{C{}$. Unit: J/(kg $^\circ$C) or J/(kg K).
 
 (b) $\Delta E = mc\Delta T = 2 \times 4200 \times (80 - 20) = 2 \times 4200 \times 60 = 504,000$ J $= 504$ kJ.
 
@@ -36,19 +36,19 @@ hide_table_of_contents: true
 (d) Water has strong hydrogen bonds between molecules, which must be partially broken to increase molecular motion (temperature). Metals have metallic bonding with free electrons that transfer energy easily. Water's high SHC means it can absorb large amounts of energy with small temperature changes. This moderates coastal climates (oceans heat up slowly in summer, cool slowly in winter) and makes water effective as a coolant in engines and nuclear reactors.
 
 ### UT-3: Efficiency
-**Question:** (a) Define efficiency. (b) A power station burns $5 \times 10^8$ J of chemical energy per second and produces $1.5 \times 10^8$ W of electrical power. Calculate the efficiency. (c) Explain why it is impossible for a machine to have 100% efficiency. (d) A heat engine operates between a hot reservoir at $500^\circ\text{'\{'}C{'\}'}$ and a cold reservoir at $25^\circ\text{'\{'}C{'\}'}$. Calculate the maximum theoretical efficiency.
+**Question:** (a) Define efficiency. (b) A power station burns $5 \times 10^8$ J of chemical energy per second and produces $1.5 \times 10^8$ W of electrical power. Calculate the efficiency. (c) Explain why it is impossible for a machine to have 100% efficiency. (d) A heat engine operates between a hot reservoir at $500^\circ\text{C{}$ and a cold reservoir at $25^\circ\text{C{}$. Calculate the maximum theoretical efficiency.
 
 **Solution:**
 
-(a) Efficiency is the ratio of useful energy output to total energy input, expressed as a percentage. $\text{'\{'}Efficiency{'\}'} = \frac{\text{'\{'}useful output{'\}'}}{\text{'\{'}total input{'\}'}} \times 100\%$.
+(a) Efficiency is the ratio of useful energy output to total energy input, expressed as a percentage. $\text{Efficiency{} = \frac{\text{useful output{}}{\text{total input{}} \times 100\%$.
 
-(b) $\text{'\{'}Efficiency{'\}'} = \frac{1.5 \times 10^8}{5 \times 10^8} \times 100\% = 30\%$.
+(b) $\text{Efficiency{} = \frac{1.5 \times 10^8}{5 \times 10^8} \times 100\% = 30\%$.
 
 (c) No machine can be 100% efficient because some energy is always dissipated as thermal energy due to friction between moving parts, air resistance, and sound. These waste energy transfers cannot be eliminated entirely. Additionally, the Second Law of Thermodynamics states that in any energy transfer, some energy is always dispersed in an unordered way (increasing entropy).
 
 (d) Maximum theoretical efficiency $= 1 - \frac{T_c}{T_h}$ (using absolute temperatures in Kelvin).
 $T_c = 25 + 273 = 298$ K. $T_h = 500 + 273 = 773$ K.
-$\text{'\{'}Efficiency{'\}'} = 1 - \frac{298}{773} = 1 - 0.3855 = 0.6145 = 61.5\%$.
+$\text{Efficiency{} = 1 - \frac{298}{773} = 1 - 0.3855 = 0.6145 = 61.5\%$.
 
 ---
 
@@ -72,7 +72,7 @@ Expected KE: $156,800$ J. Energy lost $= 156,800 - 129,600 = 27,200$ J.
 (d) As the coaster descends from A to B, gravitational potential energy (proportional to height) is converted to kinetic energy (proportional to speed squared). The total mechanical energy (GPE + KE) remains constant if no friction is present. This is the conservation of energy: energy cannot be created or destroyed, only transferred from one store to another. In reality, some mechanical energy is transferred to thermal energy by friction, but the total energy (including thermal) is always conserved.
 
 ### IT-2: Power and Cost Calculations (with Electricity)
-**Question:** A kettle rated at 2.2 kW is used to boil 1.5 kg of water from $18^\circ\text{'\{'}C{'\}'}$ to $100^\circ\text{'\{'}C{'\}'}$. (a) Calculate the energy needed to heat the water. (b) Calculate the time taken if the kettle is 85% efficient. (c) If electricity costs 28p per kWh, calculate the cost of boiling the water. (d) A microwave rated at 800 W takes 3 minutes to heat the same water to $100^\circ\text{'\{'}C{'\}'}$. Calculate the efficiency of the microwave and compare the cost.
+**Question:** A kettle rated at 2.2 kW is used to boil 1.5 kg of water from $18^\circ\text{C{}$ to $100^\circ\text{C{}$. (a) Calculate the energy needed to heat the water. (b) Calculate the time taken if the kettle is 85% efficient. (c) If electricity costs 28p per kWh, calculate the cost of boiling the water. (d) A microwave rated at 800 W takes 3 minutes to heat the same water to $100^\circ\text{C{}$. Calculate the efficiency of the microwave and compare the cost.
 
 **Solution:**
 
@@ -83,9 +83,9 @@ Time $= \frac{607,765}{2200} = 276.3$ s $\approx 4.6$ minutes.
 
 (c) Energy in kWh $= 607,765 / 3,600,000 = 0.1688$ kWh. Cost $= 0.1688 \times 28 = 4.73$ p.
 
-(d) Microwave energy input $= 800 \times 180 = 144,000$ J. The useful energy required to heat 1.5 kg from $18^\circ\text{'\{'}C{'\}'}$ to $100^\circ\text{'\{'}C{'\}'}$ is 516.6 kJ, which exceeds the input of 144 kJ. This means the scenario as stated is physically impossible.
+(d) Microwave energy input $= 800 \times 180 = 144,000$ J. The useful energy required to heat 1.5 kg from $18^\circ\text{C{}$ to $100^\circ\text{C{}$ is 516.6 kJ, which exceeds the input of 144 kJ. This means the scenario as stated is physically impossible.
 
-With a more realistic scenario: the microwave heats 0.3 kg from $18^\circ\text{'\{'}C{'\}'}$ to $80^\circ\text{'\{'}C{'\}'}$ in 3 minutes.
+With a more realistic scenario: the microwave heats 0.3 kg from $18^\circ\text{C{}$ to $80^\circ\text{C{}$ in 3 minutes.
 $\Delta E = 0.3 \times 4200 \times 62 = 78,120$ J. Input $= 800 \times 180 = 144,000$ J. Efficiency $= 78,120/144,000 = 54.3\%$.
 
 Cost of microwave $= 144,000 / 3,600,000 \times 28 = 0.04 \times 28 = 1.12$ p.
@@ -93,7 +93,7 @@ Cost of microwave $= 144,000 / 3,600,000 \times 28 = 0.04 \times 28 = 1.12$ p.
 The kettle is more efficient (85% vs 54.3%) and costs 4.73p vs 1.12p, but the kettle heats more water to a higher temperature.
 
 ### IT-3: Energy Resources and Environmental Impact (with Waves)
-**Question:** (a) Compare solar and wind energy in terms of: energy source type, reliability, environmental impact, and typical output. (b) A solar panel has an area of $10 \text{'\{'} m{'\}'}^2$ and an efficiency of 18%. If the solar irradiance is $800 \text{'\{'} W/m{'\}'}^2$, calculate the power output. (c) A wind turbine has blades of length 40 m. If the wind speed is 12 m/s and the air density is $1.2 \text{'\{'} kg/m{'\}'}^3$, calculate the maximum theoretical power (use $P = \frac{1}{2}\rho A v^3$ where $A = \pi r^2$). (d) Explain why no energy resource is completely free of environmental impact.
+**Question:** (a) Compare solar and wind energy in terms of: energy source type, reliability, environmental impact, and typical output. (b) A solar panel has an area of $10 \text{ m{}^2$ and an efficiency of 18%. If the solar irradiance is $800 \text{ W/m{}^2$, calculate the power output. (c) A wind turbine has blades of length 40 m. If the wind speed is 12 m/s and the air density is $1.2 \text{ kg/m{}^3$, calculate the maximum theoretical power (use $P = \frac{1}{2}\rho A v^3$ where $A = \pi r^2$). (d) Explain why no energy resource is completely free of environmental impact.
 
 **Solution:**
 
@@ -104,9 +104,9 @@ The kettle is more efficient (85% vs 54.3%) and costs 4.73p vs 1.12p, but the ke
 | Environmental impact | Land use, manufacturing (mining for silicon), disposal of panels | Visual impact, noise, bird/bat mortality, land use |
 | Typical output | 200--400 W per panel (residential) | 2--5 MW per turbine (utility scale) |
 
-(b) Power $= \text{'\{'}irradiance{'\}'} \times \text{'\{'}area{'\}'} \times \text{'\{'}efficiency{'\}'} = 800 \times 10 \times 0.18 = 1440$ W $= 1.44$ kW.
+(b) Power $= \text{irradiance{} \times \text{area{} \times \text{efficiency{} = 800 \times 10 \times 0.18 = 1440$ W $= 1.44$ kW.
 
-(c) $A = \pi \times 40^2 = 5026.5 \text{'\{'} m{'\}'}^2$. $P = \frac{1}{2} \times 1.2 \times 5026.5 \times 12^3 = 0.6 \times 5026.5 \times 1728 = 5,211,517$ W $\approx 5.2$ MW.
+(c) $A = \pi \times 40^2 = 5026.5 \text{ m{}^2$. $P = \frac{1}{2} \times 1.2 \times 5026.5 \times 12^3 = 0.6 \times 5026.5 \times 1728 = 5,211,517$ W $\approx 5.2$ MW.
 
 In practice, the Betz limit means a turbine can extract at most 59.3% of this: $5.2 \times 0.593 \approx 3.1$ MW.
 

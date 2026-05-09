@@ -156,7 +156,7 @@ $$
 Ampere's law relates the line integral of $\vec{B}$ around a closed loop to the enclosed current:
 
 $$
-\oint_C \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{'\{'}enc{'\}'}}
+\oint_C \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc{}}
 $$
 
 ### Field Inside a Long Solenoid
@@ -189,7 +189,7 @@ $J(r) = J_0 r/R$ for $0 \le r \le R$. Find $B$ inside and outside.
 **Inside ($r \le R$):** Use a circular Amperian loop of radius $r$.
 
 $$
-I_{\text{'\{'}enc{'\}'}} = \int_0^r J(r') \cdot 2\pi r'\, dr' = \frac{2\pi J_0}{R}\int_0^r r'^2\, dr' = \frac{2\pi J_0 r^3}{3R}
+I_{\text{enc{}} = \int_0^r J(r') \cdot 2\pi r'\, dr' = \frac{2\pi J_0}{R}\int_0^r r'^2\, dr' = \frac{2\pi J_0 r^3}{3R}
 $$
 
 $$
@@ -206,7 +206,7 @@ $$
 B = \frac{\mu_0 I r^2}{2\pi R^3}
 $$
 
-**Outside ($r > R$):** $I_{\text{'\{'}enc{'\}'}} = I$.
+**Outside ($r > R$):** $I_{\text{enc{}} = I$.
 
 $$
 B = \frac{\mu_0 I}{2\pi r}
@@ -275,15 +275,15 @@ A circular loop of radius $r = 0.1$ m is in a region where the magnetic field in
 $B(t) = (0.5 + 0.2t)$ T. The loop has resistance $R = 2\,\Omega$. Find the induced current.
 
 $$
-\Phi_B = B \cdot \pi r^2 = (0.5 + 0.2t)\pi(0.1)^2 = (0.5 + 0.2t)(0.0314)\,\text{'\{'}Wb{'\}'}
+\Phi_B = B \cdot \pi r^2 = (0.5 + 0.2t)\pi(0.1)^2 = (0.5 + 0.2t)(0.0314)\,\text{Wb{}
 $$
 
 $$
-\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = -0.2 \times 0.0314 = -0.00628\,\text{'\{'}V{'\}'}
+\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = -0.2 \times 0.0314 = -0.00628\,\text{V{}
 $$
 
 $$
-I = \frac{|\mathcal{'\{'}E{'\}'}|}{R} = \frac{0.00628}{2} = 3.14\,\text{'\{'}mA{'\}'}
+I = \frac{|\mathcal{'\{'}E{'\}'}|}{R} = \frac{0.00628}{2} = 3.14\,\text{mA{}
 $$
 
 By Lenz's law, the current flows counterclockwise (viewed along $\vec{B}$) to oppose the increasing flux.
@@ -400,31 +400,31 @@ The charge and current oscillate $90°$ out of phase. Energy oscillates between 
 ($U_C = Q^2/(2C)$) and the inductor ($U_L = LI^2/2$), with total energy conserved:
 
 $$
-U_{\text{'\{'}total{'\}'}} = \frac{Q_0^2}{2C} = \frac{1}{2}LI_0^2
+U_{\text{total{}} = \frac{Q_0^2}{2C} = \frac{1}{2}LI_0^2
 $$
 
 :::info[Example: LC circuit energy analysis]
 
-An LC circuit has $L = 10$ mH and $C = 100\,\mu\text{'\{'}F{'\}'}$. The capacitor is initially charged to
-$Q_0 = 50\,\mu\text{'\{'}C{'\}'}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the
+An LC circuit has $L = 10$ mH and $C = 100\,\mu\text{F{}$. The capacitor is initially charged to
+$Q_0 = 50\,\mu\text{C{}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the
 charge when the current is half its maximum value.
 
-(a) $f = \frac{1}{2\pi\sqrt{LC}} = \frac{1}{2\pi\sqrt{(0.01)(10^{-4})}} = \frac{1}{2\pi \times 10^{-3}} = 159\,\text{'\{'}Hz{'\}'}$
+(a) $f = \frac{1}{2\pi\sqrt{LC}} = \frac{1}{2\pi\sqrt{(0.01)(10^{-4})}} = \frac{1}{2\pi \times 10^{-3}} = 159\,\text{Hz{}$
 
-(b) $I_0 = Q_0\omega = Q_0/\sqrt{LC} = (50 \times 10^{-6})/\sqrt{10^{-6}} = 50 \times 10^{-6}/10^{-3} = 0.05\,\text{'\{'}A{'\}'} = 50\,\text{'\{'}mA{'\}'}$
+(b) $I_0 = Q_0\omega = Q_0/\sqrt{LC} = (50 \times 10^{-6})/\sqrt{10^{-6}} = 50 \times 10^{-6}/10^{-3} = 0.05\,\text{A{} = 50\,\text{mA{}$
 
-(c) When $I = I_0/2 = 25\,\text{'\{'}mA{'\}'}$:
-
-$$
-U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.01)(0.025)^2 = 3.125 \times 10^{-6}\,\text{'\{'}J{'\}'}
-$$
+(c) When $I = I_0/2 = 25\,\text{mA{}$:
 
 $$
-U_C = U_{\text{'\{'}total{'\}'}} - U_L = \frac{(50 \times 10^{-6})^2}{2(10^{-4})} - 3.125 \times 10^{-6} = 12.5 \times 10^{-6} - 3.125 \times 10^{-6} = 9.375 \times 10^{-6}\,\text{'\{'}J{'\}'}
+U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.01)(0.025)^2 = 3.125 \times 10^{-6}\,\text{J{}
 $$
 
 $$
-Q = \sqrt{2CU_C} = \sqrt{2(10^{-4})(9.375 \times 10^{-6})} = \sqrt{1.875 \times 10^{-9}} = 43.3\,\mu\text{'\{'}C{'\}'}
+U_C = U_{\text{total{}} - U_L = \frac{(50 \times 10^{-6})^2}{2(10^{-4})} - 3.125 \times 10^{-6} = 12.5 \times 10^{-6} - 3.125 \times 10^{-6} = 9.375 \times 10^{-6}\,\text{J{}
+$$
+
+$$
+Q = \sqrt{2CU_C} = \sqrt{2(10^{-4})(9.375 \times 10^{-6})} = \sqrt{1.875 \times 10^{-9}} = 43.3\,\mu\text{C{}
 $$
 
 :::
@@ -435,10 +435,10 @@ The four Maxwell's equations unify electricity and magnetism:
 
 | Equation | Law | Integral Form |
 |---|---|---|
-| Gauss's Law for Electricity | Electric charges produce electric fields | $\oint \vec{E} \cdot d\vec{A} = \dfrac{Q_{\text{'\{'}enc{'\}'}}}{\epsilon_0}$ |
+| Gauss's Law for Electricity | Electric charges produce electric fields | $\oint \vec{E} \cdot d\vec{A} = \dfrac{Q_{\text{enc{}}}{\epsilon_0}$ |
 | Gauss's Law for Magnetism | No magnetic monopoles | $\oint \vec{B} \cdot d\vec{A} = 0$ |
 | Faraday's Law | Changing magnetic fields produce electric fields | $\oint \vec{E} \cdot d\vec{l} = -\dfrac{d\Phi_B}{dt}$ |
-| Ampere-Maxwell Law | Currents and changing electric fields produce magnetic fields | $\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{'\{'}enc{'\}'}} + \mu_0\epsilon_0\dfrac{d\Phi_E}{dt}$ |
+| Ampere-Maxwell Law | Currents and changing electric fields produce magnetic fields | $\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc{}} + \mu_0\epsilon_0\dfrac{d\Phi_E}{dt}$ |
 
 ### The Displacement Current
 
@@ -453,7 +453,7 @@ $$
 :::info[Example: Displacement current in a charging capacitor]
 
 A parallel plate capacitor with plate area $A$ and separation $d$ is being charged by a current $I$.
-Find the magnetic field at distance $r$ from the axis between the plates ($r < R_{\text{'\{'}plate{'\}'}}$).
+Find the magnetic field at distance $r$ from the axis between the plates ($r < R_{\text{plate{}}$).
 
 The displacement current equals the conduction current (by charge conservation):
 
@@ -531,8 +531,8 @@ This is the same as the field inside a wire of radius $R$ carrying current $I$.
    time constant, (b) the current at $t = 10$ ms, and (c) the voltage across the inductor at
    $t = 10$ ms.
 
-6. An LC circuit has $L = 25$ mH and $C = 40\,\mu\text{'\{'}F{'\}'}$. The maximum charge on the capacitor is
-   $80\,\mu\text{'\{'}C{'\}'}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the total
+6. An LC circuit has $L = 25$ mH and $C = 40\,\mu\text{F{}$. The maximum charge on the capacitor is
+   $80\,\mu\text{C{}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the total
    energy in the circuit.
 
 <details>
@@ -549,14 +549,14 @@ $I_2 = 5$ A. Find the net magnetic field at the center of the loop.
 
 The field from the straight wire at the center of the loop (distance $d = 0.1$ m):
 
-$$B_{\text{'\{'}wire{'\}'}} = \frac{\mu_0 I_1}{2\pi d} = \frac{(4\pi \times 10^{-7})(10)}{2\pi(0.1)} = \frac{2 \times 10^{-5}}{0.1} = 2.0 \times 10^{-4}\,\text{'\{'}T{'\}'}$$
+$$B_{\text{wire{}} = \frac{\mu_0 I_1}{2\pi d} = \frac{(4\pi \times 10^{-7})(10)}{2\pi(0.1)} = \frac{2 \times 10^{-5}}{0.1} = 2.0 \times 10^{-4}\,\text{T{}$$
 
 By the right-hand rule, if the wire is vertical and the loop is to the right, the field from the wire
 at the loop center points out of the page.
 
 The field from the circular loop at its center:
 
-$$B_{\text{'\{'}loop{'\}'}} = \frac{\mu_0 I_2}{2R} = \frac{(4\pi \times 10^{-7})(5)}{2(0.05)} = \frac{2\pi \times 10^{-6}}{0.05} = 1.257 \times 10^{-4}\,\text{'\{'}T{'\}'}$$
+$$B_{\text{loop{}} = \frac{\mu_0 I_2}{2R} = \frac{(4\pi \times 10^{-7})(5)}{2(0.05)} = \frac{2\pi \times 10^{-6}}{0.05} = 1.257 \times 10^{-4}\,\text{T{}$$
 
 The direction depends on the current direction in the loop. If the loop current flows counterclockwise
 (viewed from above), the field at the center points out of the page (same direction as the wire's
@@ -564,11 +564,11 @@ field).
 
 If both fields are in the same direction:
 
-$$B_{\text{'\{'}net{'\}'}} = (2.0 + 1.257) \times 10^{-4} = 3.26 \times 10^{-4}\,\text{'\{'}T{'\}'}$$
+$$B_{\text{net{}} = (2.0 + 1.257) \times 10^{-4} = 3.26 \times 10^{-4}\,\text{T{}$$
 
 If opposite:
 
-$$B_{\text{'\{'}net{'\}'}} = (2.0 - 1.257) \times 10^{-4} = 0.74 \times 10^{-4}\,\text{'\{'}T{'\}'}$$
+$$B_{\text{net{}} = (2.0 - 1.257) \times 10^{-4} = 0.74 \times 10^{-4}\,\text{T{}$$
 
 </details>
 
@@ -602,7 +602,7 @@ At terminal velocity, this magnetic force balances gravity:
 $$mg = \frac{B^2 w^2 v_T}{R}
 $$
 
-$$v_T = \frac{mgR}{B^2 w^2} = \frac{(0.01)(9.8)(0.5)}{(0.5)^2(0.1)^2} = \frac{0.049}{0.0025} = 19.6\,\text{'\{'}m/s{'\}'}
+$$v_T = \frac{mgR}{B^2 w^2} = \frac{(0.01)(9.8)(0.5)}{(0.5)^2(0.1)^2} = \frac{0.049}{0.0025} = 19.6\,\text{m/s{}
 $$
 
 </details>
@@ -634,13 +634,13 @@ Half of this is $20$ A/s:
 
 $$\frac{dI}{dt} = \frac{\mathcal{'\{'}E{'\}'}}{L}e^{-t/\tau} = 40e^{-200t} = 20$$
 
-$$e^{-200t} = 0.5 \implies t = \frac{\ln 2}{200} = 3.47 \times 10^{-3}\,\text{'\{'}s{'\}'} = 3.47\,\text{'\{'}ms{'\}'}$$
+$$e^{-200t} = 0.5 \implies t = \frac{\ln 2}{200} = 3.47 \times 10^{-3}\,\text{s{} = 3.47\,\text{ms{}$$
 
 Note: this occurs at $t = \tau \ln 2$.
 
 (c) At $I = 0.8 I_{\max} = 0.16$ A:
 
-$$U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.5)(0.16)^2 = \frac{1}{2}(0.5)(0.0256) = 6.4 \times 10^{-3}\,\text{'\{'}J{'\}'} = 6.4\,\text{'\{'}mJ{'\}'}$$
+$$U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.5)(0.16)^2 = \frac{1}{2}(0.5)(0.0256) = 6.4 \times 10^{-3}\,\text{J{} = 6.4\,\text{mJ{}$$
 
 </details>
 
@@ -659,18 +659,18 @@ the electric field between the plates.
 
 (a) By conservation of charge and the continuity of the displacement current:
 
-$$I_d = I = 3\,\text{'\{'}A{'\}'}$$
+$$I_d = I = 3\,\text{A{}$$
 
 (b) Apply the Ampere-Maxwell law with a circular Amperian loop of radius $r = 0.03$ m (note $r < R$):
 
 $$B \cdot 2\pi r = \mu_0 I_d \frac{r^2}{R^2} = \mu_0(3)\frac{(0.03)^2}{(0.05)^2} = \mu_0(3)(0.36)$$
 
-$$B = \frac{(4\pi \times 10^{-7})(1.08)}{2\pi(0.03)} = \frac{4.32\pi \times 10^{-7}}{6\pi \times 10^{-2}} = \frac{4.32 \times 10^{-7}}{0.06} = 7.2 \times 10^{-6}\,\text{'\{'}T{'\}'} = 7.2\,\mu\text{'\{'}T{'\}'}$$
+$$B = \frac{(4\pi \times 10^{-7})(1.08)}{2\pi(0.03)} = \frac{4.32\pi \times 10^{-7}}{6\pi \times 10^{-2}} = \frac{4.32 \times 10^{-7}}{0.06} = 7.2 \times 10^{-6}\,\text{T{} = 7.2\,\mu\text{T{}$$
 
 (c) The displacement current is:
 
 $$I_d = \epsilon_0 \frac{d\Phi_E}{dt} = \epsilon_0 \frac{d}{dt}(E \cdot \pi R^2) = \epsilon_0 \pi R^2 \frac{dE}{dt}$$
 
-$$\frac{dE}{dt} = \frac{I_d}{\epsilon_0 \pi R^2} = \frac{3}{(8.854 \times 10^{-12})\pi(0.05)^2} = \frac{3}{6.95 \times 10^{-14}} = 4.32 \times 10^{13}\,\text{'\{'}V/m{'\}'}\cdot\text{'\{'}s{'\}'}$$
+$$\frac{dE}{dt} = \frac{I_d}{\epsilon_0 \pi R^2} = \frac{3}{(8.854 \times 10^{-12})\pi(0.05)^2} = \frac{3}{6.95 \times 10^{-14}} = 4.32 \times 10^{13}\,\text{V/m{}\cdot\text{s{}$$
 
 </details>

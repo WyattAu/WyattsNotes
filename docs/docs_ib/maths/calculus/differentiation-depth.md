@@ -121,13 +121,13 @@ function can be continuous but not differentiable (e.g., $f(x) = |x|$ at $x = 0$
 Differentiate $f(x) = x^2$ from first principles.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 f'(x) &= \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} \\[6pt]
 &= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\[6pt]
 &= \lim_{h \to 0} \frac{2xh + h^2}{h} \\[6pt]
 &= \lim_{h \to 0}(2x + h) \\[6pt]
 &= 2x
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::
@@ -150,19 +150,19 @@ Several notations are equivalent:
 For $n \in \mathbb{'\{'}R{'\}'}$:
 
 $$
-\frac{d}{dx}[x^n] = nx^{n-1}
+\frac{d}`\{dx}`[x^n] = nx^{n-1}
 $$
 
 ### Constant Multiple Rule
 
 $$
-\frac{d}{dx}[cf(x)] = c \cdot f'(x)
+\frac{d}`\{dx}`[cf(x)] = c \cdot f'(x)
 $$
 
 ### Sum and Difference Rule
 
 $$
-\frac{d}{dx}[f(x) \pm g(x)] = f'(x) \pm g'(x)
+\frac{d}`\{dx}`[f(x) \pm g(x)] = f'(x) \pm g'(x)
 $$
 
 ### The Product Rule
@@ -170,7 +170,7 @@ $$
 If $u = f(x)$ and $v = g(x)$, then:
 
 $$
-\frac{d}{dx}[uv] = u\frac{dv}{dx} + v\frac{du}{dx}
+\frac{d}`\{dx}`[uv] = u\frac`\{dv}``\{dx}` + v\frac`\{du}``\{dx}`
 $$
 
 :::info[Example]
@@ -186,7 +186,7 @@ $$
 ### The Quotient Rule
 
 $$
-\frac{d}{dx}\left[\frac{u}{v}\right] = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}
+\frac{d}`\{dx}`\left[\frac{u}{v}\right] = \frac{v\frac`\{du}``\{dx}` - u\frac`\{dv}``\{dx}`}{v^2}
 $$
 
 :::warning[Exam Tip]
@@ -203,11 +203,11 @@ Differentiate $\displaystyle f(x) = \frac{x^2 + 1}{x - 3}$.
 Let $u = x^2 + 1$ and $v = x - 3$. Then $u' = 2x$ and $v' = 1$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 f'(x) &= \frac{(x-3)(2x) - (x^2+1)(1)}{(x-3)^2} \\[6pt]
 &= \frac{2x^2 - 6x - x^2 - 1}{(x-3)^2} \\[6pt]
 &= \frac{x^2 - 6x - 1}{(x-3)^2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::
@@ -217,13 +217,13 @@ $$
 If $y = f(g(x))$, then:
 
 $$
-\frac{dy}{dx} = f'(g(x)) \cdot g'(x)
+\frac`\{dy}``\{dx}` = f'(g(x)) \cdot g'(x)
 $$
 
 Or in Leibniz notation, if $y = f(u)$ and $u = g(x)$:
 
 $$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+\frac`\{dy}``\{dx}` = \frac`\{dy}``\{du}` \cdot \frac`\{du}``\{dx}`
 $$
 
 :::info[Example]
@@ -233,7 +233,7 @@ Differentiate $f(x) = (3x^2 + 1)^5$.
 Let $u = 3x^2 + 1$, so $y = u^5$.
 
 $$
-\frac{dy}{dx} = 5u^4 \cdot 6x = 30x(3x^2+1)^4
+\frac`\{dy}``\{dx}` = 5u^4 \cdot 6x = 30x(3x^2+1)^4
 $$
 
 :::
@@ -245,7 +245,7 @@ Differentiate $\displaystyle f(x) = \sin(2x^2 + 1)$.
 Let $u = 2x^2 + 1$, so $y = \sin u$.
 
 $$
-\frac{dy}{dx} = \cos u \cdot 4x = 4x\cos(2x^2+1)
+\frac`\{dy}``\{dx}` = \cos u \cdot 4x = 4x\cos(2x^2+1)
 $$
 
 :::
@@ -291,7 +291,7 @@ differentiate both sides with respect to $x$ and solve for $\dfrac{dy}{dx}$.
 When differentiating a term involving $y$ with respect to $x$, use the chain rule:
 
 $$
-\frac{d}{dx}[y^n] = ny^{n-1}\frac{dy}{dx}
+\frac{d}`\{dx}`[y^n] = ny^{n-1}\frac`\{dy}``\{dx}`
 $$
 
 :::info[Example]
@@ -301,11 +301,11 @@ Find $\dfrac{dy}{dx}$ for $x^2 + y^2 = 25$.
 Differentiate both sides with respect to $x$:
 
 $$
-2x + 2y\frac{dy}{dx} = 0
+2x + 2y\frac`\{dy}``\{dx}` = 0
 $$
 
 $$
-\frac{dy}{dx} = -\frac{x}{y}
+\frac`\{dy}``\{dx}` = -\frac{x}{y}
 $$
 
 At the point $(3, 4)$: $\dfrac{dy}{dx} = -\dfrac{3}{4}$.
@@ -317,19 +317,19 @@ At the point $(3, 4)$: $\dfrac{dy}{dx} = -\dfrac{3}{4}$.
 Find $\dfrac{dy}{dx}$ for $x^3 + y^3 = 6xy$.
 
 $$
-3x^2 + 3y^2\frac{dy}{dx} = 6y + 6x\frac{dy}{dx}
+3x^2 + 3y^2\frac`\{dy}``\{dx}` = 6y + 6x\frac`\{dy}``\{dx}`
 $$
 
 $$
-3y^2\frac{dy}{dx} - 6x\frac{dy}{dx} = 6y - 3x^2
+3y^2\frac`\{dy}``\{dx}` - 6x\frac`\{dy}``\{dx}` = 6y - 3x^2
 $$
 
 $$
-\frac{dy}{dx}(3y^2 - 6x) = 6y - 3x^2
+\frac`\{dy}``\{dx}`(3y^2 - 6x) = 6y - 3x^2
 $$
 
 $$
-\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}
+\frac`\{dy}``\{dx}` = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}
 $$
 
 :::
@@ -348,7 +348,7 @@ We have $\dfrac{dy}{dx} = -\dfrac{x}{y}$.
 Differentiate with respect to $x$:
 
 $$
-\frac{d^2y}{dx^2} = -\frac{y \cdot 1 - x \cdot \frac{dy}{dx}}{y^2}
+\frac{d^2y}{dx^2} = -\frac{y \cdot 1 - x \cdot \frac`\{dy}``\{dx}`}{y^2}
 $$
 
 Substitute $\dfrac{dy}{dx} = -\dfrac{x}{y}$:
@@ -382,17 +382,17 @@ Volume of a sphere: $V = \dfrac{4}{3}\pi r^3$.
 Differentiate with respect to $t$:
 
 $$
-\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}
+\frac`\{dV}``\{dt}` = 4\pi r^2 \frac`\{dr}``\{dt}`
 $$
 
 Substitute $\dfrac{dV}{dt} = 10$ and $r = 5$:
 
 $$
-10 = 4\pi(25)\frac{dr}{dt}
+10 = 4\pi(25)\frac`\{dr}``\{dt}`
 $$
 
 $$
-\frac{dr}{dt} = \frac{10}{100\pi} = \frac{1}{10\pi} \approx 0.0318 \mathrm{ cm/s{}
+\frac`\{dr}``\{dt}` = \frac{10}{100\pi} = \frac{1}{10\pi} \approx 0.0318 \mathrm{ cm/s{}
 $$
 
 :::
@@ -409,11 +409,11 @@ Differentiate: $2x\dfrac{dx}{dt} + 2y\dfrac{dy}{dt} = 0$.
 When $x = 6$: $y = \sqrt{100-36} = 8$.
 
 $$
-2(6)(1) + 2(8)\frac{dy}{dt} = 0
+2(6)(1) + 2(8)\frac`\{dy}``\{dt}` = 0
 $$
 
 $$
-\frac{dy}{dt} = -\frac{12}{16} = -0.75 \mathrm{ m/s{}
+\frac`\{dy}``\{dt}` = -\frac{12}{16} = -0.75 \mathrm{ m/s{}
 $$
 
 The negative sign means the top is sliding down.
@@ -427,11 +427,11 @@ The negative sign means the top is sliding down.
 ### Notation
 
 $$
-f''(x) = \frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{dy}{dx}\right)
+f''(x) = \frac{d^2y}{dx^2} = \frac{d}`\{dx}`\left(\frac`\{dy}``\{dx}`\right)
 $$
 
 $$
-f'''(x) = \frac{d^3y}{dx^3} = \frac{d}{dx}\left(\frac{d^2y}{dx^2}\right)
+f'''(x) = \frac{d^3y}{dx^3} = \frac{d}`\{dx}`\left(\frac{d^2y}{dx^2}\right)
 $$
 
 :::info[Example]
@@ -529,7 +529,7 @@ At $x = 3$: $f''(3) = 6 \gt 0$, so local minimum. $f(3) = 27 - 54 + 27 + 1 = 1$.
 ### Concavity and Points of Inflection
 
 <DesmosGraph title="Stationary Points and Concavity" expressions={["f(x)=x^3-3x+1",
-"\frac{d}{dx}f(x)"]} width={800} height={500} />
+"\frac{d}`\{dx}`f(x)"]} width={800} height={500} />
 
 Use the sliders to adjust coefficients of a polynomial and observe how $f'(x)$ and $f''(x)$
 determine stationary points and concavity.
@@ -596,7 +596,7 @@ Let the dimensions be $x$ and $y$. Then $2x + 2y = 100$, so $y = 50 - x$.
 Area: $A = xy = x(50 - x) = 50x - x^2$.
 
 $$
-\frac{dA}{dx} = 50 - 2x = 0 \implies x = 25
+\frac`\{dA}``\{dx}` = 50 - 2x = 0 \implies x = 25
 $$
 
 $$
@@ -618,7 +618,7 @@ Volume: $V = \pi r^2 h = 500$, so $h = \dfrac{500}{\pi r^2}$.
 Surface area (no top): $A = \pi r^2 + 2\pi r h = \pi r^2 + \dfrac{1000}{r}$.
 
 $$
-\frac{dA}{dr} = 2\pi r - \frac{1000}{r^2} = 0
+\frac`\{dA}``\{dr}` = 2\pi r - \frac{1000}{r^2} = 0
 $$
 
 $$
@@ -730,7 +730,7 @@ $$
 **(b)** Find the value of $x$ that maximises the area.
 
 $$
-\frac{dA}{dx} = 30 - x = 0 \implies x = 30
+\frac`\{dA}``\{dx}` = 30 - x = 0 \implies x = 30
 $$
 
 $$
@@ -746,15 +746,15 @@ Given $x^2 + xy + y^2 = 7$:
 **(a)** Find $\dfrac{dy}{dx}$ in terms of $x$ and $y$.
 
 $$
-2x + y + x\frac{dy}{dx} + 2y\frac{dy}{dx} = 0
+2x + y + x\frac`\{dy}``\{dx}` + 2y\frac`\{dy}``\{dx}` = 0
 $$
 
 $$
-(x + 2y)\frac{dy}{dx} = -(2x + y)
+(x + 2y)\frac`\{dy}``\{dx}` = -(2x + y)
 $$
 
 $$
-\frac{dy}{dx} = -\frac{2x+y}{x+2y}
+\frac`\{dy}``\{dx}` = -\frac{2x+y}{x+2y}
 $$
 
 **(b)** Verify that the point $(1, 2)$ lies on the curve and find the gradient at that point.
@@ -762,7 +762,7 @@ $$
 $1 + 2 + 4 = 7$. Yes.
 
 $$
-\frac{dy}{dx}\bigg|_{(1,2)} = -\frac{2+2}{1+4} = -\frac{4}{5}
+\frac`\{dy}``\{dx}`\bigg|_{(1,2)} = -\frac{2+2}{1+4} = -\frac{4}{5}
 $$
 
 ### Question 4 (Paper 2 style)
@@ -774,7 +774,7 @@ The curve $C$ has equation $y = x e^{-x}$.
 Using the product rule with $u = x$ and $v = e^{-x}$:
 
 $$
-\frac{dy}{dx} = 1 \cdot e^{-x} + x \cdot (-e^{-x}) = e^{-x}(1 - x)
+\frac`\{dy}``\{dx}` = 1 \cdot e^{-x} + x \cdot (-e^{-x}) = e^{-x}(1 - x)
 $$
 
 **(b)** Find the coordinates of the stationary point and determine its nature.
@@ -815,7 +815,7 @@ A = \pi r^2
 $$
 
 $$
-\frac{dA}{dt} = 2\pi r \frac{dr}{dt} = 2\pi(4)(0.5) = 4\pi \mathrm{ cm{}^2\mathrm{/s{}
+\frac`\{dA}``\{dt}` = 2\pi r \frac`\{dr}``\{dt}` = 2\pi(4)(0.5) = 4\pi \mathrm{ cm{}^2\mathrm{/s{}
 $$
 
 ### Question 6 (Paper 2 style)

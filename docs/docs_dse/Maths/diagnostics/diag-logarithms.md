@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 Which of the following statements are true? Justify your answer.
 
-$$\text{'\{'}(i){'\}'}\; \log(ab) = \log a + \log b \qquad \text{'\{'}(ii){'\}'}\; \log(a + b) = \log a + \log b$$
+$$\text{(i){}\; \log(ab) = \log a + \log b \qquad \text{(ii){}\; \log(a + b) = \log a + \log b$$
 
 **Solution:**
 
@@ -93,7 +93,7 @@ $$u^2 - 3u - 4 = 0$$
 
 $$(u - 4)(u + 1) = 0$$
 
-$$u = 4 \quad \text{'\{'}or{'\}'} \quad u = -1$$
+$$u = 4 \quad \text{or{} \quad u = -1$$
 
 $\log_2 x = 4 \implies x = 16$.
 

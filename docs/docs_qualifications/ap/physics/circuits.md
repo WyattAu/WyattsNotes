@@ -20,7 +20,7 @@ I = \frac{dq}{dt}
 $$
 
 Current is a scalar (conventional current flows in the direction of positive charge flow). The SI unit
-is the ampere (A), where $1\,\text{'\{'}A{'\}'} = 1\,\text{'\{'}C/s{'\}'}$.
+is the ampere (A), where $1\,\text{A{} = 1\,\text{C/s{}$.
 
 ### Current Density
 
@@ -82,7 +82,7 @@ An ideal EMF source maintains a constant potential difference $V = \mathcal{'\{'
 real battery has internal resistance $r$:
 
 $$
-V_{\text{'\{'}terminal{'\}'}} = \mathcal{'\{'}E{'\}'} - Ir
+V_{\text{terminal{}} = \mathcal{'\{'}E{'\}'} - Ir
 $$
 
 When the battery delivers current, the terminal voltage is less than the EMF.
@@ -91,11 +91,11 @@ When the battery delivers current, the terminal voltage is less than the EMF.
 
 ### Resistors in Series and Parallel
 
-**Series:** $R_{\text{'\{'}eq{'\}'}} = R_1 + R_2 + \cdots + R_n$
+**Series:** $R_{\text{eq{}} = R_1 + R_2 + \cdots + R_n$
 
 The current is the same through all resistors. The voltage divides proportionally to resistance.
 
-**Parallel:** $\dfrac{1}{R_{\text{'\{'}eq{'\}'}}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots + \dfrac{1}{R_n}$
+**Parallel:** $\dfrac{1}{R_{\text{eq{}}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots + \dfrac{1}{R_n}$
 
 The voltage is the same across all resistors. The current divides inversely proportionally to
 resistance.
@@ -105,7 +105,7 @@ resistance.
 **Junction Rule (KCL):** The sum of currents entering a junction equals the sum of currents leaving it.
 
 $$
-\sum I_{\text{'\{'}in{'\}'}} = \sum I_{\text{'\{'}out{'\}'}}
+\sum I_{\text{in{}} = \sum I_{\text{out{}}
 $$
 
 This is conservation of charge.
@@ -152,11 +152,11 @@ $$
 $$
 
 $$
-60 - 40I_1 + 18 + 9I_1 = 0 \implies 78 = 31I_1 \implies I_1 = 2.516\,\text{'\{'}A{'\}'}
+60 - 40I_1 + 18 + 9I_1 = 0 \implies 78 = 31I_1 \implies I_1 = 2.516\,\text{A{}
 $$
 
 $$
-I_2 = \frac{6 + 3(2.516)}{5} = \frac{13.548}{5} = 2.710\,\text{'\{'}A{'\}'}
+I_2 = \frac{6 + 3(2.516)}{5} = \frac{13.548}{5} = 2.710\,\text{A{}
 $$
 
 :::
@@ -243,13 +243,13 @@ $$
 The total energy supplied by the battery during charging:
 
 $$
-W_{\text{'\{'}battery{'\}'}} = \int_0^\infty \mathcal{'\{'}E{'\}'}\, I\, dt = \frac{\mathcal{'\{'}E{'\}'}^2}{R}\int_0^\infty e^{-t/\tau}\, dt = \frac{\mathcal{'\{'}E{'\}'}^2}{R} \cdot RC = C\mathcal{'\{'}E{'\}'}^2
+W_{\text{battery{}} = \int_0^\infty \mathcal{'\{'}E{'\}'}\, I\, dt = \frac{\mathcal{'\{'}E{'\}'}^2}{R}\int_0^\infty e^{-t/\tau}\, dt = \frac{\mathcal{'\{'}E{'\}'}^2}{R} \cdot RC = C\mathcal{'\{'}E{'\}'}^2
 $$
 
 The energy dissipated in the resistor:
 
 $$
-W_R = W_{\text{'\{'}battery{'\}'}} - U_{\text{'\{'}final{'\}'}} = C\mathcal{'\{'}E{'\}'}^2 - \frac{1}{2}C\mathcal{'\{'}E{'\}'}^2 = \frac{1}{2}C\mathcal{'\{'}E{'\}'}^2
+W_R = W_{\text{battery{}} - U_{\text{final{}} = C\mathcal{'\{'}E{'\}'}^2 - \frac{1}{2}C\mathcal{'\{'}E{'\}'}^2 = \frac{1}{2}C\mathcal{'\{'}E{'\}'}^2
 $$
 
 Exactly half the energy from the battery is stored in the capacitor and half is dissipated as heat in
@@ -265,39 +265,39 @@ During discharge, the capacitor retains $36.8\%$ of its charge after one time co
 
 :::info[Example: RC circuit with numerical values]
 
-A $5\,\mu\text{'\{'}F{'\}'}$ capacitor is connected in series with a $200\,\text{'\{'}k{'\}'}\Omega$ resistor and a $12$ V
+A $5\,\mu\text{F{}$ capacitor is connected in series with a $200\,\text{k{}\Omega$ resistor and a $12$ V
 battery. Find (a) the time constant, (b) the charge after 1 s, (c) the current after 1 s, and (d) the
 time to reach 95% of maximum charge.
 
-(a) $\tau = RC = (200 \times 10^3)(5 \times 10^{-6}) = 1.0\,\text{'\{'}s{'\}'}$
+(a) $\tau = RC = (200 \times 10^3)(5 \times 10^{-6}) = 1.0\,\text{s{}$
 
-(b) $Q(1) = C\mathcal{'\{'}E{'\}'}(1 - e^{-1}) = (5 \times 10^{-6})(12)(1 - 0.368) = 60 \times 10^{-6} \times 0.632 = 37.9\,\mu\text{'\{'}C{'\}'}$
+(b) $Q(1) = C\mathcal{'\{'}E{'\}'}(1 - e^{-1}) = (5 \times 10^{-6})(12)(1 - 0.368) = 60 \times 10^{-6} \times 0.632 = 37.9\,\mu\text{C{}$
 
-(c) $I(1) = \frac{\mathcal{'\{'}E{'\}'}}{R}e^{-1} = \frac{12}{200000} \times 0.368 = 22.1\,\mu\text{'\{'}A{'\}'}$
+(c) $I(1) = \frac{\mathcal{'\{'}E{'\}'}}{R}e^{-1} = \frac{12}{200000} \times 0.368 = 22.1\,\mu\text{A{}$
 
-(d) $0.95 = 1 - e^{-t}$, so $e^{-t} = 0.05$, $t = -\ln(0.05) = 3.0\,\text{'\{'}s{'\}'} = 3\tau$.
+(d) $0.95 = 1 - e^{-t}$, so $e^{-t} = 0.05$, $t = -\ln(0.05) = 3.0\,\text{s{} = 3\tau$.
 
 :::
 
 :::info[Example: Discharging through two parallel resistors]
 
-A $10\,\mu\text{'\{'}F{'\}'}$ capacitor charged to $50\,\mu\text{'\{'}C{'\}'}$ discharges through $R_1 = 100\,\text{'\{'}k{'\}'}\Omega$
-and $R_2 = 300\,\text{'\{'}k{'\}'}\Omega$ in parallel. Find the current through $R_1$ at $t = 0.5$ s.
+A $10\,\mu\text{F{}$ capacitor charged to $50\,\mu\text{C{}$ discharges through $R_1 = 100\,\text{k{}\Omega$
+and $R_2 = 300\,\text{k{}\Omega$ in parallel. Find the current through $R_1$ at $t = 0.5$ s.
 
-Equivalent resistance: $R_{\text{'\{'}eq{'\}'}} = \frac{R_1 R_2}{R_1 + R_2} = \frac{100 \times 300}{400} = 75\,\text{'\{'}k{'\}'}\Omega$.
+Equivalent resistance: $R_{\text{eq{}} = \frac{R_1 R_2}{R_1 + R_2} = \frac{100 \times 300}{400} = 75\,\text{k{}\Omega$.
 
-Time constant: $\tau = R_{\text{'\{'}eq{'\}'}}C = (75 \times 10^3)(10 \times 10^{-6}) = 0.75\,\text{'\{'}s{'\}'}$.
+Time constant: $\tau = R_{\text{eq{}}C = (75 \times 10^3)(10 \times 10^{-6}) = 0.75\,\text{s{}$.
 
 Total current at $t = 0.5$ s:
 
 $$
-I(0.5) = \frac{Q_0}{R_{\text{'\{'}eq{'\}'}}C}e^{-0.5/0.75} = \frac{50 \times 10^{-6}}{0.75}e^{-0.667} = 66.7 \times 10^{-6} \times 0.513 = 34.2\,\mu\text{'\{'}A{'\}'}
+I(0.5) = \frac{Q_0}{R_{\text{eq{}}C}e^{-0.5/0.75} = \frac{50 \times 10^{-6}}{0.75}e^{-0.667} = 66.7 \times 10^{-6} \times 0.513 = 34.2\,\mu\text{A{}
 $$
 
 Current through $R_1$ (current divides inversely with resistance):
 
 $$
-I_1 = I \cdot \frac{R_2}{R_1 + R_2} = 34.2 \times \frac{300}{400} = 25.7\,\mu\text{'\{'}A{'\}'}
+I_1 = I \cdot \frac{R_2}{R_1 + R_2} = 34.2 \times \frac{300}{400} = 25.7\,\mu\text{A{}
 $$
 
 :::
@@ -314,9 +314,9 @@ voltage across the measured component.
 
 ## Common Pitfalls
 
-1. **Confusing EMF with terminal voltage.** $\mathcal{'\{'}E{'\}'} = V_{\text{'\{'}terminal{'\}'}} + Ir$. When the battery is
-   delivering current, $V_{\text{'\{'}terminal{'\}'}} < \mathcal{'\{'}E{'\}'}$. When the battery is being charged,
-   $V_{\text{'\{'}terminal{'\}'}} > \mathcal{'\{'}E{'\}'}$.
+1. **Confusing EMF with terminal voltage.** $\mathcal{'\{'}E{'\}'} = V_{\text{terminal{}} + Ir$. When the battery is
+   delivering current, $V_{\text{terminal{}} < \mathcal{'\{'}E{'\}'}$. When the battery is being charged,
+   $V_{\text{terminal{}} > \mathcal{'\{'}E{'\}'}$.
 2. **Incorrect sign conventions in Kirchhoff's loop rule.** Be consistent: decide on a loop direction,
    then apply the sign rules rigorously. Crossing a resistor with the current gives $-IR$; against gives
    $+IR$.
@@ -351,21 +351,21 @@ voltage across the measured component.
    Battery 1 and $R_1$ are in the left branch; $R_3$ is the middle branch; Battery 2 and $R_2$ are in
    the right branch.
 
-4. A $2\,\mu\text{'\{'}F{'\}'}$ capacitor in series with a $500\,\text{'\{'}k{'\}'}\Omega$ resistor is connected to a
+4. A $2\,\mu\text{F{}$ capacitor in series with a $500\,\text{k{}\Omega$ resistor is connected to a
    $20$ V battery at $t = 0$. Find (a) the charge and current at $t = 0.5$ s, (b) the energy stored in
    the capacitor at $t = 2$ s, and (c) the total energy delivered by the battery.
 
-5. A $4\,\mu\text{'\{'}F{'\}'}$ capacitor is charged to $100\,\mu\text{'\{'}C{'\}'}$ and then disconnected. It is then
-   connected across a $1\,\text{'\{'}M{'\}'}\Omega$ resistor. Find (a) the initial current, (b) the charge after
-   3 s, and (c) the time for the charge to drop to $10\,\mu\text{'\{'}C{'\}'}$.
+5. A $4\,\mu\text{F{}$ capacitor is charged to $100\,\mu\text{C{}$ and then disconnected. It is then
+   connected across a $1\,\text{M{}\Omega$ resistor. Find (a) the initial current, (b) the charge after
+   3 s, and (c) the time for the charge to drop to $10\,\mu\text{C{}$.
 
 6. In an RC charging circuit, the capacitor reaches 90% of its maximum charge in 5 s. If the
-   capacitance is $20\,\mu\text{'\{'}F{'\}'}$, find the resistance.
+   capacitance is $20\,\mu\text{F{}$, find the resistance.
 
 <details>
 <summary>Question 7: AP Exam-Style -- RC circuit with a switch</summary>
 
-In the circuit shown, $R_1 = 10\,\text{'\{'}k{'\}'}\Omega$, $R_2 = 20\,\text{'\{'}k{'\}'}\Omega$, $C = 5\,\mu\text{'\{'}F{'\}'}$, and
+In the circuit shown, $R_1 = 10\,\text{k{}\Omega$, $R_2 = 20\,\text{k{}\Omega$, $C = 5\,\mu\text{F{}$, and
 $\mathcal{'\{'}E{'\}'} = 30$ V. Switch S is closed at $t = 0$ with the capacitor initially uncharged. Find (a) the
 initial current through the battery, (b) the current through the battery at steady state, (c) the charge
 on the capacitor at steady state, and (d) the time constant of the circuit.
@@ -379,32 +379,32 @@ The circuit has the battery and $R_1$ in series, with $R_2$ and $C$ in parallel 
 
 (a) At $t = 0$, the capacitor is uncharged ($V_C = 0$), so it acts as a short circuit. $R_2$ is in
 parallel with a short circuit, so all current flows through the capacitor branch. The equivalent
-resistance seen by the battery is just $R_1 = 10\,\text{'\{'}k{'\}'}\Omega$.
+resistance seen by the battery is just $R_1 = 10\,\text{k{}\Omega$.
 
-$$I_{\text{'\{'}initial{'\}'}} = \frac{\mathcal{'\{'}E{'\}'}}{R_1} = \frac{30}{10000} = 3.0\,\text{'\{'}mA{'\}'}$$
+$$I_{\text{initial{}} = \frac{\mathcal{'\{'}E{'\}'}}{R_1} = \frac{30}{10000} = 3.0\,\text{mA{}$$
 
 (b) At steady state, the capacitor is fully charged and acts as an open circuit. The current flows
 through $R_1$ and $R_2$ in series.
 
-$$I_{\text{'\{'}steady{'\}'}} = \frac{\mathcal{'\{'}E{'\}'}}{R_1 + R_2} = \frac{30}{10000 + 20000} = 1.0\,\text{'\{'}mA{'\}'}$$
+$$I_{\text{steady{}} = \frac{\mathcal{'\{'}E{'\}'}}{R_1 + R_2} = \frac{30}{10000 + 20000} = 1.0\,\text{mA{}$$
 
 (c) At steady state, the voltage across the capacitor equals the voltage across $R_2$:
 
-$$V_C = I_{\text{'\{'}steady{'\}'}} R_2 = (0.001)(20000) = 20\,\text{'\{'}V{'\}'}$$
+$$V_C = I_{\text{steady{}} R_2 = (0.001)(20000) = 20\,\text{V{}$$
 
-$$Q = CV_C = (5 \times 10^{-6})(20) = 100\,\mu\text{'\{'}C{'\}'}$$
+$$Q = CV_C = (5 \times 10^{-6})(20) = 100\,\mu\text{C{}$$
 
 (d) The time constant is found by Thevenin analysis. The Thevenin resistance seen by the capacitor is
-$R_{\text{'\{'}Th{'\}'}} = R_1 \| R_2 = \frac{R_1 R_2}{R_1 + R_2} = \frac{10 \times 20}{30} = 6.67\,\text{'\{'}k{'\}'}\Omega$.
+$R_{\text{Th{}} = R_1 \| R_2 = \frac{R_1 R_2}{R_1 + R_2} = \frac{10 \times 20}{30} = 6.67\,\text{k{}\Omega$.
 
-$$\tau = R_{\text{'\{'}Th{'\}'}} C = (6670)(5 \times 10^{-6}) = 0.0333\,\text{'\{'}s{'\}'} = 33.3\,\text{'\{'}ms{'\}'}$$
+$$\tau = R_{\text{Th{}} C = (6670)(5 \times 10^{-6}) = 0.0333\,\text{s{} = 33.3\,\text{ms{}$$
 
 </details>
 
 <details>
 <summary>Question 8: AP Exam-Style -- Energy analysis in an RC circuit</summary>
 
-A $50\,\mu\text{'\{'}F{'\}'}$ capacitor is charged through a $100\,\Omega$ resistor by a $10$ V battery. (a) Find
+A $50\,\mu\text{F{}$ capacitor is charged through a $100\,\Omega$ resistor by a $10$ V battery. (a) Find
 the total energy delivered by the battery. (b) Find the total energy dissipated in the resistor. (c) Find
 the energy stored in the capacitor at steady state. Verify that energy is conserved.
 
@@ -413,17 +413,17 @@ the energy stored in the capacitor at steady state. Verify that energy is conser
 <details>
 <summary>Answer</summary>
 
-(a) $W_{\text{'\{'}battery{'\}'}} = \int_0^\infty \mathcal{'\{'}E{'\}'}\, I\, dt = \frac{\mathcal{'\{'}E{'\}'}^2}{R}\int_0^\infty e^{-t/(RC)}\, dt = \frac{\mathcal{'\{'}E{'\}'}^2}{R} \cdot RC = C\mathcal{'\{'}E{'\}'}^2$
+(a) $W_{\text{battery{}} = \int_0^\infty \mathcal{'\{'}E{'\}'}\, I\, dt = \frac{\mathcal{'\{'}E{'\}'}^2}{R}\int_0^\infty e^{-t/(RC)}\, dt = \frac{\mathcal{'\{'}E{'\}'}^2}{R} \cdot RC = C\mathcal{'\{'}E{'\}'}^2$
 
-$$W_{\text{'\{'}battery{'\}'}} = (50 \times 10^{-6})(10)^2 = 5.0 \times 10^{-3}\,\text{'\{'}J{'\}'} = 5.0\,\text{'\{'}mJ{'\}'}$$
+$$W_{\text{battery{}} = (50 \times 10^{-6})(10)^2 = 5.0 \times 10^{-3}\,\text{J{} = 5.0\,\text{mJ{}$$
 
-(b) $W_R = W_{\text{'\{'}battery{'\}'}} - U_{\text{'\{'}cap{'\}'}} = C\mathcal{'\{'}E{'\}'}^2 - \frac{1}{2}C\mathcal{'\{'}E{'\}'}^2 = \frac{1}{2}C\mathcal{'\{'}E{'\}'}^2$
+(b) $W_R = W_{\text{battery{}} - U_{\text{cap{}} = C\mathcal{'\{'}E{'\}'}^2 - \frac{1}{2}C\mathcal{'\{'}E{'\}'}^2 = \frac{1}{2}C\mathcal{'\{'}E{'\}'}^2$
 
-$$W_R = \frac{1}{2}(50 \times 10^{-6})(100) = 2.5 \times 10^{-3}\,\text{'\{'}J{'\}'} = 2.5\,\text{'\{'}mJ{'\}'}$$
+$$W_R = \frac{1}{2}(50 \times 10^{-6})(100) = 2.5 \times 10^{-3}\,\text{J{} = 2.5\,\text{mJ{}$$
 
-(c) $U_{\text{'\{'}cap{'\}'}} = \frac{1}{2}CV^2 = \frac{1}{2}(50 \times 10^{-6})(10)^2 = 2.5\,\text{'\{'}mJ{'\}'}$
+(c) $U_{\text{cap{}} = \frac{1}{2}CV^2 = \frac{1}{2}(50 \times 10^{-6})(10)^2 = 2.5\,\text{mJ{}$
 
-Verification: $W_{\text{'\{'}battery{'\}'}} = W_R + U_{\text{'\{'}cap{'\}'}} = 2.5 + 2.5 = 5.0\,\text{'\{'}mJ{'\}'}$. Energy is
+Verification: $W_{\text{battery{}} = W_R + U_{\text{cap{}} = 2.5 + 2.5 = 5.0\,\text{mJ{}$. Energy is
 conserved.
 
 </details>

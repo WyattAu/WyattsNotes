@@ -1882,11 +1882,11 @@ where $\tilde{F}^{\mu\nu} = \frac{1}{2}\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}
 - The $\pi^0 \to \gamma\gamma$ decay rate is accurately predicted by the anomaly
 - The anomaly cancels between quark generations in the SM (gauge anomaly cancellation, a constraint on fermion representations)
 
-**Strong CP problem.** QCD allows a term $\mathcal{'\{'}L{'\}'}_\theta = \theta\frac{g_s^2}{32\pi^2}F_{\mu\nu}^a\tilde{F}^{a\mu\nu}$ in the Lagrangian. This gives the neutron an electric dipole moment $d_n \propto \theta$, but experiments find $d_n < 1.8 \times 10^{-26}\,e\cdot\text{'\{'}cm{'\}'}$, implying $|\theta| < 10^{-10}$. Why is $\theta$ so small?
+**Strong CP problem.** QCD allows a term $\mathcal{'\{'}L{'\}'}_\theta = \theta\frac{g_s^2}{32\pi^2}F_{\mu\nu}^a\tilde{F}^{a\mu\nu}$ in the Lagrangian. This gives the neutron an electric dipole moment $d_n \propto \theta$, but experiments find $d_n < 1.8 \times 10^{-26}\,e\cdot\text{cm{}$, implying $|\theta| < 10^{-10}$. Why is $\theta$ so small?
 
-**Axion solution.** The Peccei--Quinn mechanism (1977) promotes $\theta$ to a dynamical field --- the **axion** $a(x)$. The axion potential has a minimum at $\theta_{\text{'\{'}eff{'\}'}} = 0$, dynamically solving the strong CP problem. The axion acquires a small mass:
+**Axion solution.** The Peccei--Quinn mechanism (1977) promotes $\theta$ to a dynamical field --- the **axion** $a(x)$. The axion potential has a minimum at $\theta_{\text{eff{}} = 0$, dynamically solving the strong CP problem. The axion acquires a small mass:
 
-$$m_a \approx \frac{m_\pi f_\pi}{f_a} \approx 6\ \text{'\{'}meV{'\}'}\times\left(\frac{10^{12}\ \text{'\{'}GeV{'\}'}}{f_a}\right)$$
+$$m_a \approx \frac{m_\pi f_\pi}{f_a} \approx 6\ \text{meV{}\times\left(\frac{10^{12}\ \text{GeV{}}{f_a}\right)$$
 
 where $f_a$ is the axion decay constant. Axions in the "window" $10^9$--$10^{12}$ GeV are viable cold dark matter candidates and are searched for by ADMX, CASPEr, and other experiments.
 
@@ -1928,15 +1928,15 @@ For $B^0_s$ mesons ($b\bar{s}$), the oscillation is much faster: $\Delta m_s \ap
 
 The **Sachs--Wolfe effect** describes the temperature anisotropy of the CMB caused by gravitational potential fluctuations at the surface of last scattering:
 
-$$\frac{\Delta T}{T}\bigg|_{\text{'\{'}SW{'\}'}} = \frac{\delta\Phi}{3c^2}$$
+$$\frac{\Delta T}{T}\bigg|_{\text{SW{}} = \frac{\delta\Phi}{3c^2}$$
 
 where $\delta\Phi$ is the gravitational potential perturbation. Photons climbing out of potential wells lose energy (gravitational redshift), while those falling in gain energy.
 
 The **integrated Sachs--Wolfe (ISW) effect** is the cumulative redshift/blueshift from time-varying potentials along the line of sight:
 
-$$\frac{\Delta T}{T}\bigg|_{\text{'\{'}ISW{'\}'}} = 2\int_0^{r_{\text{'\{'}LS{'\}'}}} \frac{\partial \Phi}{\partial t}\, dt$$
+$$\frac{\Delta T}{T}\bigg|_{\text{ISW{}} = 2\int_0^{r_{\text{LS{}}} \frac{\partial \Phi}{\partial t}\, dt$$
 
-The ISW effect is significant only when the universe is not matter-dominated (since $\Phi = \text{'\{'}const{'\}'}$ during matter domination). In $\Lambda$CDM, the ISW effect operates at late times ($z \lesssim 1$) when dark energy starts to dominate.
+The ISW effect is significant only when the universe is not matter-dominated (since $\Phi = \text{const{}$ during matter domination). In $\Lambda$CDM, the ISW effect operates at late times ($z \lesssim 1$) when dark energy starts to dominate.
 
 ### 12.2 Dark Matter Halos and NFW Profile
 
@@ -1946,7 +1946,7 @@ $$\rho(r) = \frac{\rho_0}{(r/r_s)(1 + r/r_s)^2}$$
 
 where $r_s$ is the scale radius and $\rho_0$ is a characteristic density. The **virial radius** $r_{200}$ is defined as the radius within which the mean density is $200\rho_c$. The **concentration parameter** $c_{200} = r_{200}/r_s$ depends on the halo mass and redshift.
 
-**The cusp-core problem:** NFW halos have a cuspy central density $\rho \propto 1/r$, predicting high rotation velocities near galactic centres. Observations of dwarf galaxies often show flat cores ($\rho \approx \text{'\{'}const{'\}'}$). This discrepancy remains unresolved and may indicate deficiencies in CDM or the effects of baryonic feedback.
+**The cusp-core problem:** NFW halos have a cuspy central density $\rho \propto 1/r$, predicting high rotation velocities near galactic centres. Observations of dwarf galaxies often show flat cores ($\rho \approx \text{const{}$). This discrepancy remains unresolved and may indicate deficiencies in CDM or the effects of baryonic feedback.
 
 ### 12.3 Primordial Nucleosynthesis in Detail
 
@@ -1954,11 +1954,11 @@ The Saha equation governs the ionisation fraction during recombination:
 
 $$\frac{n_e n_p}{n_H} = \left(\frac{m_e k_B T}{2\pi\hbar^2}\right)^{3/2} e^{-E_I/(k_B T)}$$
 
-where $E_I = 13.6$ eV is the ionisation energy of hydrogen. Recombination occurs at $T_{\text{'\{'}rec{'\}'}} \approx 3000$ K (lower than $E_I/k_B \approx 158\,000$ K) because of the large photon-to-baryon ratio $\eta \sim 10^9$: even when $k_BT \ll E_I$, there are enough high-energy photons in the tail of the Planck distribution to keep hydrogen ionised until the number of ionising photons drops sufficiently.
+where $E_I = 13.6$ eV is the ionisation energy of hydrogen. Recombination occurs at $T_{\text{rec{}} \approx 3000$ K (lower than $E_I/k_B \approx 158\,000$ K) because of the large photon-to-baryon ratio $\eta \sim 10^9$: even when $k_BT \ll E_I$, there are enough high-energy photons in the tail of the Planck distribution to keep hydrogen ionised until the number of ionising photons drops sufficiently.
 
 **Neutrino decoupling and the effective number of relativistic species:**
 
-$$N_{\text{'\{'}eff{'\}'}} = 3.044 \pm 0.017$$
+$$N_{\text{eff{}} = 3.044 \pm 0.017$$
 
 This measures the radiation density in relativistic species (the standard value is 3 from the three neutrino species). Any deviation would indicate new light particles.
 
@@ -1993,7 +1993,7 @@ This is of the same order as the observed CMB anisotropy ($\Delta T/T \sim 10^{-
 
 (b) The Sunyaev--Zel'dovich (SZ) effect from hot electrons in the cluster:
 
-$$\frac{\Delta T}{T}\bigg|_{\text{'\{'}SZ{'\}'}} = -2\int \frac{k_B T_e}{m_e c^2}\, n_e \sigma_T\, dl$$
+$$\frac{\Delta T}{T}\bigg|_{\text{SZ{}} = -2\int \frac{k_B T_e}{m_e c^2}\, n_e \sigma_T\, dl$$
 
 For a typical cluster with $k_BT_e \sim 5$ keV, $n_e \sim 10^3$ m$^{-3}$, $l \sim 1$ Mpc:
 
@@ -2014,13 +2014,13 @@ $$m_\nu \approx -m_D M^{-1} m_D^T$$
 
 For a single generation with $m_D \sim 173$ GeV (top Yukawa-scale Dirac mass) and $M = 10^{15}$ GeV:
 
-$$m_\nu \sim \frac{(173\ \text{'\{'}GeV{'\}'})^2}{10^{15}\ \text{'\{'}GeV{'\}'}} = \frac{2.99 \times 10^4}{10^{15}}\ \text{'\{'}GeV{'\}'} = 3.0 \times 10^{-11}\ \text{'\{'}GeV{'\}'} = 0.030\ \text{'\{'}eV{'\}'}$$
+$$m_\nu \sim \frac{(173\ \text{GeV{})^2}{10^{15}\ \text{GeV{}} = \frac{2.99 \times 10^4}{10^{15}}\ \text{GeV{} = 3.0 \times 10^{-11}\ \text{GeV{} = 0.030\ \text{eV{}$$
 
 This is in the right ballpark for atmospheric neutrino oscillations ($\Delta m_{32}^2 \approx 2.5 \times 10^{-3}$ eV$^2$, giving $m_3 \sim 0.05$ eV).
 
 For three degenerate right-handed neutrinos with $M \sim 10^{14}$ GeV:
 
-$$m_\nu \sim 0.3\ \text{'\{'}eV{'\}'}$$
+$$m_\nu \sim 0.3\ \text{eV{}$$
 
 This is at the upper edge of the cosmological bound $\sum m_\nu < 0.12$ eV, showing that the seesaw with $M \sim 10^{14}$--$10^{15}$ GeV naturally explains the tiny neutrino masses.
 
@@ -2032,7 +2032,7 @@ This is at the upper edge of the cosmological bound $\sum m_\nu < 0.12$ eV, show
 
 2. **CKM phase vs. PMNS phase:** CP violation in the quark sector (CKM matrix) and the lepton sector (PMNS matrix) are independent. The CKM phase is known with good precision, but the PMNS phase is poorly constrained. Even if the CKM phase were zero, CP violation would still exist in the lepton sector --- and vice versa.
 
-3. **$\Lambda$CDM is a model, not a theory:** The $\Lambda$CDM concordance model (flat universe with cold dark matter and a cosmological constant) fits all current data remarkably well, but it has no theoretical explanation for the values of $\Omega_\Lambda$, $\Omega_{\text{'\{'}DM{'\}'}}$, or the initial conditions (inflation potential). These are inputs, not outputs.
+3. **$\Lambda$CDM is a model, not a theory:** The $\Lambda$CDM concordance model (flat universe with cold dark matter and a cosmological constant) fits all current data remarkably well, but it has no theoretical explanation for the values of $\Omega_\Lambda$, $\Omega_{\text{DM{}}$, or the initial conditions (inflation potential). These are inputs, not outputs.
 
 4. **GUT-scale proton decay is experimentally excluded:** Minimal SU(5) predicted $\tau_p \sim 10^{30\pm1}$ years, but Super-Kamiokande sets $\tau_p > 1.6 \times 10^{34}$ years. This rules out minimal SU(5) but not all GUTs --- supersymmetric GUTs or SO(10) can have longer proton lifetimes.
 
@@ -2082,17 +2082,17 @@ The quark momentum fraction decreases with $Q^2$ because quarks radiate gluons.
 <details>
 <summary>Problem 20: QGP Temperature and Debye Screening</summary>
 
-(a) Estimate the initial temperature of the QGP produced in Pb--Pb collisions at the LHC, given that $\sim 1600$ charged particles per unit rapidity are produced and the Bjorken energy density estimate gives $\epsilon = \frac{1}{\tau_0 A_T}\frac{dE_T}{dy}$ with $\tau_0 = 1$ fm/c and $A_T = \pi(7.1\ \text{'\{'}fm{'\}'})^2$.
+(a) Estimate the initial temperature of the QGP produced in Pb--Pb collisions at the LHC, given that $\sim 1600$ charged particles per unit rapidity are produced and the Bjorken energy density estimate gives $\epsilon = \frac{1}{\tau_0 A_T}\frac{dE_T}{dy}$ with $\tau_0 = 1$ fm/c and $A_T = \pi(7.1\ \text{fm{})^2$.
 
 (b) Calculate the Debye screening mass $m_D$ at this temperature and estimate the screening length.
 
 **Solution:**
 
-(a) The transverse energy per unit rapidity is roughly $dE_T/dy \sim 1600 \times 0.5\ \text{'\{'}GeV{'\}'} \sim 800$ GeV (each charged particle carries $\sim 0.5$ GeV of $E_T$ on average).
+(a) The transverse energy per unit rapidity is roughly $dE_T/dy \sim 1600 \times 0.5\ \text{GeV{} \sim 800$ GeV (each charged particle carries $\sim 0.5$ GeV of $E_T$ on average).
 
-$$\epsilon = \frac{800\ \text{'\{'}GeV{'\}'}}{(1\ \text{'\{'}fm{'\}'}/c) \times \pi \times (7.1\ \text{'\{'}fm{'\}'})^2} = \frac{800 \times 1.602 \times 10^{-10}\ \text{'\{'}J{'\}'}}{10^{-15}\,\text{'\{'}s{'\}'} \times \pi \times 5.04 \times 10^{-30}\,\text{'\{'}m{'\}'}^2}$$
+$$\epsilon = \frac{800\ \text{GeV{}}{(1\ \text{fm{}/c) \times \pi \times (7.1\ \text{fm{})^2} = \frac{800 \times 1.602 \times 10^{-10}\ \text{J{}}{10^{-15}\,\text{s{} \times \pi \times 5.04 \times 10^{-30}\,\text{m{}^2}$$
 
-$$= \frac{1.28 \times 10^{-7}}{1.58 \times 10^{-44}} = 8.1 \times 10^{36}\ \text{'\{'}J/m{'\}'}^3$$
+$$= \frac{1.28 \times 10^{-7}}{1.58 \times 10^{-44}} = 8.1 \times 10^{36}\ \text{J/m{}^3$$
 
 Using the Stefan--Boltzmann relation for an ideal QGP with $N_f = 2.5$ effective flavours (including gluons):
 
@@ -2102,13 +2102,13 @@ $$T = \left(\frac{30\epsilon}{51\pi^2 k_B^4}\right)^{1/4}$$
 
 In natural units ($\epsilon$ in GeV/fm$^3$):
 
-$$\epsilon \approx \frac{800}{\pi \times 50.4}\ \text{'\{'}GeV/fm{'\}'}^3 \approx 5.0\ \text{'\{'}GeV/fm{'\}'}^3$$
+$$\epsilon \approx \frac{800}{\pi \times 50.4}\ \text{GeV/fm{}^3 \approx 5.0\ \text{GeV/fm{}^3$$
 
-$$T = \left(\frac{5.0 \times 30}{51\pi^2}\right)^{1/4}\ \text{'\{'}GeV{'\}'} \approx (0.94)^{1/4}\ \text{'\{'}GeV{'\}'} \approx 0.985\ \text{'\{'}GeV{'\}'} \times 197\ \text{'\{'}MeV/fm{'\}'}^{1/4}$$
+$$T = \left(\frac{5.0 \times 30}{51\pi^2}\right)^{1/4}\ \text{GeV{} \approx (0.94)^{1/4}\ \text{GeV{} \approx 0.985\ \text{GeV{} \times 197\ \text{MeV/fm{}^{1/4}$$
 
-Actually, using $\epsilon = a_{\text{'\{'}QGP{'\}'}} T^4$ with $a_{\text{'\{'}QGP{'\}'}} \approx 47.5\pi^2/30$:
+Actually, using $\epsilon = a_{\text{QGP{}} T^4$ with $a_{\text{QGP{}} \approx 47.5\pi^2/30$:
 
-$$T \approx \left(\frac{5.0}{15.6}\right)^{1/4} \approx 0.79^{1/4} \approx 0.94\ \text{'\{'}GeV{'\}'}^{1/4}$$
+$$T \approx \left(\frac{5.0}{15.6}\right)^{1/4} \approx 0.79^{1/4} \approx 0.94\ \text{GeV{}^{1/4}$$
 
 This gives $T \approx 300$--$400$ MeV, consistent with LHC measurements.
 
@@ -2118,9 +2118,9 @@ $$m_D^2 = g_s^2 T^2\left(\frac{N_c}{3} + \frac{N_f}{6}\right) = g_s^2 T^2\left(1
 
 With $N_c = 3$, $N_f = 3$, $g_s^2/(4\pi) = \alpha_s \approx 0.3$ at $T \sim 300$ MeV:
 
-$$m_D^2 = 4\pi \times 0.3 \times (0.3\ \text{'\{'}GeV{'\}'})^2 \times (1 + 0.5) = 3.77 \times 0.09 \times 1.5 = 0.509\ \text{'\{'}GeV{'\}'}^2$$
+$$m_D^2 = 4\pi \times 0.3 \times (0.3\ \text{GeV{})^2 \times (1 + 0.5) = 3.77 \times 0.09 \times 1.5 = 0.509\ \text{GeV{}^2$$
 
-$$m_D \approx 0.71\ \text{'\{'}GeV{'\}'}, \quad \lambda_D = 1/m_D \approx 0.28\ \text{'\{'}fm{'\}'}$$
+$$m_D \approx 0.71\ \text{GeV{}, \quad \lambda_D = 1/m_D \approx 0.28\ \text{fm{}$$
 
 This screening length ($\sim 0.3$ fm) is much shorter than the typical hadron size ($\sim 1$ fm), confirming that colour forces are screened in the QGP and quarkonium states are dissociated.
 
@@ -2136,13 +2136,13 @@ $$a_e = \frac{g_e - 2}{2}, \quad a_\mu = \frac{g_\mu - 2}{2}$$
 
 The Dirac equation predicts $g = 2$ exactly, but QED radiative corrections give:
 
-$$a_e^{\text{'\{'}QED{'\}'}} = \frac{\alpha}{2\pi} - 0.328\,478\,966\left(\frac{\alpha}{\pi}\right)^2 + 1.181\,241\,456\left(\frac{\alpha}{\pi}\right)^3 - 1.9144(35)\left(\frac{\alpha}{\pi}\right)^4$$
+$$a_e^{\text{QED{}} = \frac{\alpha}{2\pi} - 0.328\,478\,966\left(\frac{\alpha}{\pi}\right)^2 + 1.181\,241\,456\left(\frac{\alpha}{\pi}\right)^3 - 1.9144(35)\left(\frac{\alpha}{\pi}\right)^4$$
 
 The experimental value agrees with theory to 12 significant figures, making $a_e$ the most precisely verified prediction in all of physics.
 
 **The muon $g$-2:** The muon is $\sim 207$ times heavier than the electron, so it is more sensitive to virtual particles beyond the Standard Model (supersymmetry, dark photons, etc.).
 
-$$a_\mu^{\text{'\{'}exp{'\}'}} - a_\mu^{\text{'\{'}SM{'\}'}} = (251 \pm 59) \times 10^{-11}$$
+$$a_\mu^{\text{exp{}} - a_\mu^{\text{SM{}} = (251 \pm 59) \times 10^{-11}$$
 
 This $\sim 4.2\sigma$ discrepancy (as of 2023) is one of the strongest hints of physics beyond the SM.
 
@@ -2152,13 +2152,13 @@ The **$Z$-pole observables** measured at LEP and SLC test the SM at the per-mil 
 
 - $m_Z = 91.1876 \pm 0.0021$ GeV
 - $\Gamma_Z = 2.4952 \pm 0.0023$ GeV (total $Z$ width)
-- $\sin^2\theta_{\text{'\{'}eff{'\}'}}^{\text{'\{'}lept{'\}'}} = 0.23155 \pm 0.00016$ (effective weak mixing angle)
-- $R_\ell = \Gamma_{\text{'\{'}had{'\}'}}/\Gamma_{\ell\ell} = 20.767 \pm 0.025$ (hadronic to leptonic width ratio)
+- $\sin^2\theta_{\text{eff{}}^{\text{lept{}} = 0.23155 \pm 0.00016$ (effective weak mixing angle)
+- $R_\ell = \Gamma_{\text{had{}}/\Gamma_{\ell\ell} = 20.767 \pm 0.025$ (hadronic to leptonic width ratio)
 - $A_{FB}^{0,\ell} = 0.0171 \pm 0.0010$ (forward-backward asymmetry)
 
 The $S$, $T$, $U$ parameterisation (Peskin, Takeuchi) provides a model-independent framework for comparing these measurements:
 
-$$\alpha_{\text{'\{'}em{'\}'}}(m_Z) = \frac{\sqrt{2}G_F m_W^2(1 - m_W^2/m_Z^2)}{\pi\alpha} \times \frac{1}{1 - \Delta r}$$
+$$\alpha_{\text{em{}}(m_Z) = \frac{\sqrt{2}G_F m_W^2(1 - m_W^2/m_Z^2)}{\pi\alpha} \times \frac{1}{1 - \Delta r}$$
 
 where $\Delta r$ is the radiative correction depending on $S$, $T$, $U$. Current data give $S = 0.05 \pm 0.11$ and $T = 0.09 \pm 0.13$, consistent with the SM ($S = T = 0$) but leaving room for new physics.
 
@@ -2166,7 +2166,7 @@ where $\Delta r$ is the radiative correction depending on $S$, $T$, $U$. Current
 
 **$B$-physics anomalies.** The LHCb experiment has observed several tensions in $B$-meson decays:
 
-- **$R_{K^{(*)}}$:** The ratio $R_K = \text{'\{'}BR{'\}'}(B^+ \to K^+\mu^+\mu^-)/\text{'\{'}BR{'\}'}(B^+ \to K^+e^+e^-)$ is predicted to be 1 in the SM (lepton universality). Measurements show $R_K = 0.846^{+0.044}_{-0.041}$ ($3.1\sigma$ deviation).
+- **$R_{K^{(*)}}$:** The ratio $R_K = \text{BR{}(B^+ \to K^+\mu^+\mu^-)/\text{BR{}(B^+ \to K^+e^+e^-)$ is predicted to be 1 in the SM (lepton universality). Measurements show $R_K = 0.846^{+0.044}_{-0.041}$ ($3.1\sigma$ deviation).
 
 - **$b \to s\ell^+\ell^-$ angular observables:** The observable $P_5'$ shows a persistent deviation from SM predictions.
 
@@ -2195,11 +2195,11 @@ $$a_e^{(1)} = \frac{\alpha}{2\pi} = \frac{1/137.036}{2\pi} = 0.001161 \times 10^
 
 The full QED + hadronic + weak correction:
 
-$$a_e^{\text{'\{'}total{'\}'}} = 1\,159\,652\,180.73(0.28) \times 10^{-12}$$
+$$a_e^{\text{total{}} = 1\,159\,652\,180.73(0.28) \times 10^{-12}$$
 
 Experimental (Gabrielse group, Harvard, 2023):
 
-$$a_e^{\text{'\{'}exp{'\}'}} = 1\,159\,652\,180.59(0.22) \times 10^{-12}$$
+$$a_e^{\text{exp{}} = 1\,159\,652\,180.59(0.22) \times 10^{-12}$$
 
 The agreement is at the level of $0.2 \times 10^{-12}$ out of $1160 \times 10^{-9}$, i.e., relative precision of $1.7 \times 10^{-13}$. This is the most precise test of any prediction in physics.
 

@@ -39,7 +39,7 @@ $$\left\lvert\frac{y - 1}{y + 1}\right\rvert = e^{2(x + C)} = Ae^{2x}$$
 
 where $A = e^{2C} \gt 0$. Including the equilibrium solutions, the general solution is:
 
-$$y = 1, \quad y = -1, \quad \text{'\{'}or{'\}'} \quad \frac{y - 1}{y + 1} = \pm Ae^{2x}$$
+$$y = 1, \quad y = -1, \quad \text{or{} \quad \frac{y - 1}{y + 1} = \pm Ae^{2x}$$
 
 **(b)** The student's solution is incomplete because they lost the equilibrium solutions $y = 1$ and $y = -1$. By dividing by $y^2 - 1$, the student implicitly assumed $y^2 - 1 \neq 0$. The equilibrium solutions must be stated separately and are not captured by the formula $\frac{1}{2}\ln\!\left\lvert\frac{y - 1}{y + 1}\right\rvert = x + C$.
 
@@ -250,4 +250,4 @@ $$y(2) = \sqrt{4 + 3} = \sqrt{7} \approx 2.646$$
 
 **(c)**
 
-$$\text{'\{'}Percentage error{'\}'} = \frac{\lvert 2.583 - \sqrt{7} \rvert}{\sqrt{7}} \times 100\% = \frac{2.646 - 2.583}{2.646} \times 100\% \approx 2.4\%$$
+$$\text{Percentage error{} = \frac{\lvert 2.583 - \sqrt{7} \rvert}{\sqrt{7}} \times 100\% = \frac{2.646 - 2.583}{2.646} \times 100\% \approx 2.4\%$$

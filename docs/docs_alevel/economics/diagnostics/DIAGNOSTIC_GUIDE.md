@@ -253,7 +253,7 @@ The following errors appear repeatedly in student work. Use this section to chec
 | Forgetting that $MR = MC$ gives quantity, not price | Always find $Q$ from $MR = MC$, then find $P$ from the demand curve. |
 | Using the nominal multiplier instead of the multiplier with leakages | With tax and imports: $k = \frac{1}{1 - MPC(1-t) + MPM}$. |
 | Adding tax revenue to calculate total surplus with externality | Tax revenue is a TRANSFER, not a net welfare gain. It offsets the loss to consumers and producers. |
-| Calculating deadweight loss as the full triangle without checking | DWL $= \frac{1}{2} \times \text{'\{'}tax{'\}'} \times \Delta Q$. The $\Delta Q$ is the change in quantity, not the quantity itself. |
+| Calculating deadweight loss as the full triangle without checking | DWL $= \frac{1}{2} \times \text{tax{} \times \Delta Q$. The $\Delta Q$ is the change in quantity, not the quantity itself. |
 
 ### Diagram Errors
 

@@ -403,7 +403,7 @@ Let $y' = \tan\theta$, so $\dfrac{dy'}{dx} = \sec^2\theta\,\dfrac{d\theta}{dx} =
 
 Integrating: $y' = \dfrac{w}{T_0}\,x + C_1$. Taking $C_1 = 0$ by symmetry:
 
-$$y' = \frac{x}{a} \quad \text{'\{'}where {'\}'} a = \frac{T_0}{w}$$
+$$y' = \frac{x}{a} \quad \text{where {} a = \frac{T_0}{w}$$
 
 Integrating again: $y = a\cosh\!\left(\dfrac{x}{a}\right) + C$. $\blacksquare$
 
@@ -530,7 +530,7 @@ This is a quadratic in $e^x$:
 
 $$e^x = \frac{10 \pm \sqrt{100 - 28}}{14} = \frac{10 \pm \sqrt{72}}{14} = \frac{10 \pm 6\sqrt{2}}{14} = \frac{5 \pm 3\sqrt{2}}{7}$$
 
-$$x = \ln\!\left(\frac{5 + 3\sqrt{2}}{7}\right) \quad \text{'\{'}or{'\}'} \quad x = \ln\!\left(\frac{5 - 3\sqrt{2}}{7}\right)$$
+$$x = \ln\!\left(\frac{5 + 3\sqrt{2}}{7}\right) \quad \text{or{} \quad x = \ln\!\left(\frac{5 - 3\sqrt{2}}{7}\right)$$
 
 Since $\dfrac{5 - 3\sqrt{2}}{7} \approx 0.109 > 0$, both solutions are valid.
 

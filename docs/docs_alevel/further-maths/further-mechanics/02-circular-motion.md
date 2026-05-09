@@ -876,9 +876,9 @@ $$mg = m\omega_{\min}^2 l \implies \boxed{\omega_{\min} = \sqrt{\frac{g}{l}}}$$
 
 **Problem.** A particle of mass $0.2\,\mathrm{kg{}$ on a light inextensible string of length $0.5\,\mathrm{m{}$ is projected horizontally from the lowest point. Find the minimum speed for complete circles.
 
-**Solution.** At the top: $v_{\text{'\{'}top{'\}'}}^2 \geq gr = 4.9$.
+**Solution.** At the top: $v_{\text{top{}}^2 \geq gr = 4.9$.
 
-Energy conservation: $\dfrac{1}{2}mu^2 = \dfrac{1}{2}mv_{\text{'\{'}top{'\}'}}^2 + mg(2r)$.
+Energy conservation: $\dfrac{1}{2}mu^2 = \dfrac{1}{2}mv_{\text{top{}}^2 + mg(2r)$.
 
 $$u^2 = gr + 4gr = 5gr = 5 \times 9.8 \times 0.5 = 24.5$$
 
@@ -1078,9 +1078,9 @@ $v^2 = u^2 - 2gr(1-\cos\theta)$.
 
 Substituting: $T = \dfrac{m[u^2 - 2gr(1-\cos\theta)]}{r} + mg\cos\theta = \dfrac{mu^2}{r} - 2mg + 3mg\cos\theta$.
 
-At the top: $T_{\text{'\{'}top{'\}'}} = \dfrac{mu^2}{r} - 2mg - 3mg = \dfrac{mu^2}{r} - 5mg$.
+At the top: $T_{\text{top{}} = \dfrac{mu^2}{r} - 2mg - 3mg = \dfrac{mu^2}{r} - 5mg$.
 
-For the string not to go slack: $T_{\text{'\{'}top{'\}'}} \geq 0 \implies u^2 \geq 5gr$, giving $u_{\min} = \sqrt{5gr}$.
+For the string not to go slack: $T_{\text{top{}} \geq 0 \implies u^2 \geq 5gr$, giving $u_{\min} = \sqrt{5gr}$.
 
 ---
 
@@ -1172,7 +1172,7 @@ Radial: $m(\ddot{r} - r\dot{\theta}^2) = F_r$
 
 Tangential: $m(r\ddot{\theta} + 2\dot{r}\dot{\theta}) = F_\theta$
 
-For circular motion ($r = \text{'\{'}const{'\}'}$): $\dot{r} = \ddot{r} = 0$, giving:
+For circular motion ($r = \text{const{}$): $\dot{r} = \ddot{r} = 0$, giving:
 
 $-mr\dot{\theta}^2 = F_r$ (centripetal) and $mr\ddot{\theta} = F_\theta$ (tangential).
 

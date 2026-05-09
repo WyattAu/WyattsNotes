@@ -545,7 +545,7 @@ $\mathrm{Var{}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4(a^2+ab
 ### CDF
 
 $$
-F(x) = \begin{cases} 0 & x \lt a \\ \dfrac{x - a}{b - a} & a \le x \le b \\ 1 & x \gt b \end{cases}
+F(x) = \begin`\{cases}` 0 & x \lt a \\ \dfrac{x - a}{b - a} & a \le x \le b \\ 1 & x \gt b \end`\{cases}`
 $$
 
 For any $[c, d] \subseteq [a, b]$: $P(c \le X \le d) = \dfrac{d - c}{b - a}$.

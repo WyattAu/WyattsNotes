@@ -857,7 +857,7 @@ $$\tan 32^\circ \approx 0.6249, \quad \tan 24^\circ \approx 0.4452$$
 
 $$h^2 = \frac{2500}{2.561 + 5.043 - 2(0.1736)(3.605)} = \frac{2500}{7.604 - 1.251} = \frac{2500}{6.353} \approx 393.5$$
 
-$$h \approx 19.8 \text{'\{'} m{'\}'}$$
+$$h \approx 19.8 \text{ m{}$$
 
 </details>
 
@@ -903,7 +903,7 @@ $$= 15000\cos 20^\circ \approx 15000(0.9397) \approx 14095.5$$
 
 Also $\mathrm{Area{} = \dfrac{1}{2}(AB)(h) = 100h$.
 
-$$h = \frac{14095.5}{100} \approx 141 \text{'\{'} m{'\}'}$$
+$$h = \frac{14095.5}{100} \approx 141 \text{ m{}$$
 
 </details>
 

@@ -78,11 +78,11 @@ Points: $(2\cos(\pi/3), 2\sin(\pi/3)) = (1, \sqrt{3})$ and $(1, -\sqrt{3})$.
 (a) $s = \int_0^{2\pi} \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2}\,d\theta = \int_0^{2\pi} \sqrt{a^2\theta^2 + a^2}\,d\theta = a\int_0^{2\pi} \sqrt{\theta^2 + 1}\,d\theta$.
 
 This requires the substitution $\theta = \sinh u$: $d\theta = \cosh u\,du$, $\sqrt{\theta^2+1} = \cosh u$.
-$s = a\int_0^{\text{'\{'}arcsinh{'\}'}(2\pi)} \cosh^2 u\,du = \frac{a}{2}\int_0^{\text{'\{'}arcsinh{'\}'}(2\pi)} (1 + \cosh 2u)\,du = \frac{a}{2}\left[u + \frac{\sinh 2u}{2}\right]$.
+$s = a\int_0^{\text{arcsinh{}(2\pi)} \cosh^2 u\,du = \frac{a}{2}\int_0^{\text{arcsinh{}(2\pi)} (1 + \cosh 2u)\,du = \frac{a}{2}\left[u + \frac{\sinh 2u}{2}\right]$.
 
-Since $\sinh(\text{'\{'}arcsinh{'\}'}(2\pi)) = 2\pi$ and $\cosh(\text{'\{'}arcsinh{'\}'}(2\pi)) = \sqrt{1 + 4\pi^2}$:
-$\sinh(2\text{'\{'}arcsinh{'\}'}(2\pi)) = 2 \times 2\pi \times \sqrt{1+4\pi^2} = 4\pi\sqrt{1+4\pi^2}$.
-$s = \frac{a}{2}\left(\text{'\{'}arcsinh{'\}'}(2\pi) + 2\pi\sqrt{1+4\pi^2}\right)$.
+Since $\sinh(\text{arcsinh{}(2\pi)) = 2\pi$ and $\cosh(\text{arcsinh{}(2\pi)) = \sqrt{1 + 4\pi^2}$:
+$\sinh(2\text{arcsinh{}(2\pi)) = 2 \times 2\pi \times \sqrt{1+4\pi^2} = 4\pi\sqrt{1+4\pi^2}$.
+$s = \frac{a}{2}\left(\text{arcsinh{}(2\pi) + 2\pi\sqrt{1+4\pi^2}\right)$.
 
 (b) $A = \frac{1}{2}\int_0^{2\pi} a^2\theta^2\,d\theta = \frac{a^2}{2}\left[\frac{\theta^3}{3}\right]_0^{2\pi} = \frac{a^2}{2} \cdot \frac{8\pi^3}{3} = \frac{4\pi^3 a^2}{3}$.
 

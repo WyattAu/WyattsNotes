@@ -974,7 +974,7 @@ Now the master's degree successfully separates the two types. The firm pays 80 t
 
 ### 18.3 Government Intervention: Cost-Benefit Analysis of a Green Tax
 
-**Example.** The government considers a carbon tax of $\pounds 50$ per tonne of $\text{'\{'}CO{'\}'}_2$ on electricity generation. Current emissions: 200 million tonnes/year.
+**Example.** The government considers a carbon tax of $\pounds 50$ per tonne of $\text{CO{}_2$ on electricity generation. Current emissions: 200 million tonnes/year.
 
 **Demand elasticity for electricity:** $PED = -0.3$. Supply elasticity: $PES = 0.4$. Current electricity price: $\pounds 100$/MWh.
 
@@ -982,22 +982,22 @@ Now the master's degree successfully separates the two types. The firm pays 80 t
 Consumer burden $= \frac{PES}{PED + PES} = \frac{0.4}{0.3 + 0.4} = 0.571$. Consumers bear 57.1%.
 Producer burden $= \frac{PED}{PED + PES} = \frac{0.3}{0.7} = 0.429$. Producers bear 42.9%.
 
-**Price change:** The tax increases the price by approximately $\frac{PES}{PED + PES} \times \text{'\{'}tax{'\}'}$ for consumers. If the tax adds $\pounds 25$/MWh to production costs: consumer price rises by $0.571 \times 25 = \pounds 14.28$/MWh.
+**Price change:** The tax increases the price by approximately $\frac{PES}{PED + PES} \times \text{tax{}$ for consumers. If the tax adds $\pounds 25$/MWh to production costs: consumer price rises by $0.571 \times 25 = \pounds 14.28$/MWh.
 
 **Emissions reduction:**
 $\% \Delta Q = PED \times \% \Delta P_c = -0.3 \times (14.28/100 \times 100) = -0.3 \times 14.28\% = -4.28\%$.
 
 Emissions fall by $4.28\% \times 200 = 8.57$ million tonnes/year.
 
-**Tax revenue:** $50 \times (200 - 8.57) \times 10^6 = \pounds 9.57\text{'\{'}bn{'\}'}/\text{'\{'}year{'\}'}$.
+**Tax revenue:** $50 \times (200 - 8.57) \times 10^6 = \pounds 9.57\text{bn{}/\text{year{}$.
 
 **Deadweight loss of the tax:**
-$DWL = \frac{1}{2} \times \text{'\{'}tax{'\}'} \times \Delta Q = \frac{1}{2} \times 50 \times 8.57 \times 10^6 = \pounds 214\text{'\{'}m{'\}'}/\text{'\{'}year{'\}'}$.
+$DWL = \frac{1}{2} \times \text{tax{} \times \Delta Q = \frac{1}{2} \times 50 \times 8.57 \times 10^6 = \pounds 214\text{m{}/\text{year{}$.
 
 **Benefit of emissions reduction:**
-Social cost of carbon (SCC) $= \pounds 50$ per tonne (UK government estimate). Benefit $= 50 \times 8.57 \times 10^6 = \pounds 428.5\text{'\{'}m{'\}'}/\text{'\{'}year{'\}'}$.
+Social cost of carbon (SCC) $= \pounds 50$ per tonne (UK government estimate). Benefit $= 50 \times 8.57 \times 10^6 = \pounds 428.5\text{m{}/\text{year{}$.
 
-**Net benefit:** $428.5 - 214 = \pounds 214.5\text{'\{'}m{'\}'}/\text{'\{'}year{'\}'}$ (positive, so the tax is welfare-improving).
+**Net benefit:** $428.5 - 214 = \pounds 214.5\text{m{}/\text{year{}$ (positive, so the tax is welfare-improving).
 
 This analysis shows that the carbon tax generates a net social benefit, even after accounting for the DWL. The revenue can be used to reduce other distortionary taxes (revenue recycling) or fund green investment, further increasing welfare.
 

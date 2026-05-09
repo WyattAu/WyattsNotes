@@ -203,7 +203,7 @@ $$2x\frac{dx}{dt} + 2y\frac{dy}{dt} = 0 \implies x\frac{dx}{dt} + y\frac{dy}{dt}
 
 Given $\frac{dx}{dt} = 0.5$. When $x = 3$: $y = \sqrt{25 - 9} = 4$.
 
-$$3(0.5) + 4\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{3}{8} \text{'\{'} m/s{'\}'}$$
+$$3(0.5) + 4\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{3}{8} \text{ m/s{}$$
 
 The negative sign confirms the top is sliding down.
 
@@ -229,7 +229,7 @@ Since $\sin\theta \gt 0$ for $0 \lt \theta \lt \pi$, we have $\frac{d\theta}{dt}
 
 When $\theta = \frac{\pi}{4}$: $\sin\frac{\pi}{4} = \frac{1}{\sqrt{2}}$.
 
-$$\frac{d\theta}{dt} = -\frac{1}{10 \cdot \frac{1}{\sqrt{2}}} = -\frac{\sqrt{2}}{10} \text{'\{'} rad/s{'\}'}$$
+$$\frac{d\theta}{dt} = -\frac{1}{10 \cdot \frac{1}{\sqrt{2}}} = -\frac{\sqrt{2}}{10} \text{ rad/s{}$$
 
 ---
 
@@ -367,7 +367,7 @@ Since $\arcsin(\sin\theta) = \theta$ only when $\theta \in \left[-\frac{\pi}{2},
 
 By periodicity (period $2\pi$):
 
-$$h(x) = \begin{cases} \frac{\pi}{2} - x + 2n\pi & \text{'\{'}if {'\}'} 2n\pi \leq x \leq (2n+1)\pi \\ x - \frac{3\pi}{2} + 2n\pi & \text{'\{'}if {'\}'} (2n+1)\pi \leq x \leq (2n+2)\pi \end{cases}$$
+$$h(x) = \begin{cases} \frac{\pi}{2} - x + 2n\pi & \text{if {} 2n\pi \leq x \leq (2n+1)\pi \\ x - \frac{3\pi}{2} + 2n\pi & \text{if {} (2n+1)\pi \leq x \leq (2n+2)\pi \end{cases}$$
 
 for $n \in \mathbb{'\{'}Z{'\}'}$.
 

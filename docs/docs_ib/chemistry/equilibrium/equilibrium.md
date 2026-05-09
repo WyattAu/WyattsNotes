@@ -429,7 +429,7 @@ $$
 $$
 
 $$
-K_{sp} = [\mathrm{M{}^{b+}]^a[\mathrm{X{}^{a-}]^b
+K_`\{sp}` = [\mathrm{M{}^{b+}]^a[\mathrm{X{}^{a-}]^b
 $$
 
 ### Common $K_{sp}$ Values
@@ -771,7 +771,7 @@ $$
 $$
 
 $$
-K_{sp} = [\mathrm{Pb{}^{2+}][\mathrm{I{}^-]^2 = (1.4 \times 10^{-3})(2.8 \times 10^{-3})^2 = (1.4 \times 10^{-3})(7.84 \times 10^{-6})
+K_`\{sp}` = [\mathrm{Pb{}^{2+}][\mathrm{I{}^-]^2 = (1.4 \times 10^{-3})(2.8 \times 10^{-3})^2 = (1.4 \times 10^{-3})(7.84 \times 10^{-6})
 $$
 
 $$

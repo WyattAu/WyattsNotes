@@ -698,7 +698,7 @@ Substituting into $x^2 + y^2 = 5$:
 
 $$x^2 + (3 - 2x)^2 = 5 \implies x^2 + 9 - 12x + 4x^2 = 5 \implies 5x^2 - 12x + 4 = 0$$
 
-$$(5x - 2)(x - 2) = 0 \implies x = \frac{2}{5} \;\text{'\{'}or{'\}'}\; x = 2$$
+$$(5x - 2)(x - 2) = 0 \implies x = \frac{2}{5} \;\text{or{}\; x = 2$$
 
 $x = \dfrac{2}{5} \implies y = 3 - \dfrac{4}{5} = \dfrac{11}{5}$. Point: $\left(\dfrac{2}{5}, \dfrac{11}{5}\right)$.
 
@@ -801,11 +801,11 @@ Equation: $(x - 2)^2 + (y - 3)^2 = 4$, or $x^2 + y^2 - 4x - 6y + 9 = 0$.
 
 General form: $x^2 + y^2 + Dx + Ey + F = 0$.
 
-$(1, 0)$: $1 + D + F = 0 \quad \text{'\{'}(i){'\}'}$.
+$(1, 0)$: $1 + D + F = 0 \quad \text{(i){}$.
 
-$(0, 1)$: $1 + E + F = 0 \quad \text{'\{'}(ii){'\}'}$.
+$(0, 1)$: $1 + E + F = 0 \quad \text{(ii){}$.
 
-$(-1, 0)$: $1 - D + F = 0 \quad \text{'\{'}(iii){'\}'}$.
+$(-1, 0)$: $1 - D + F = 0 \quad \text{(iii){}$.
 
 (i) - (iii): $2D = 0 \implies D = 0$.
 
@@ -864,7 +864,7 @@ $$100k^2 - 600k + 900 = 36k^2 - 72k + 612$$
 
 $$64k^2 - 528k + 288 = 0 \implies 8k^2 - 66k + 36 = 0 \implies 4k^2 - 33k + 18 = 0$$
 
-$$(4k - 3)(k - 6) = 0 \implies k = \frac{3}{4} \;\text{'\{'}or{'\}'}\; k = 6$$
+$$(4k - 3)(k - 6) = 0 \implies k = \frac{3}{4} \;\text{or{}\; k = 6$$
 
 </details>
 

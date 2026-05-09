@@ -10,11 +10,11 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Photosynthesis
-**Question:** (a) Write the balanced symbol equation for photosynthesis. (b) Explain how the structure of a leaf is adapted for photosynthesis. (c) A leaf with surface area $50 \text{'\{'} cm{'\}'}^2$ absorbs $2.5 \text{'\{'} mg{'\}'}$ of CO$_2$ per hour. Calculate the rate of photosynthesis in mg CO$_2$/cm$^2$/hour. (d) Explain why most plants appear green.
+**Question:** (a) Write the balanced symbol equation for photosynthesis. (b) Explain how the structure of a leaf is adapted for photosynthesis. (c) A leaf with surface area $50 \text{ cm{}^2$ absorbs $2.5 \text{ mg{}$ of CO$_2$ per hour. Calculate the rate of photosynthesis in mg CO$_2$/cm$^2$/hour. (d) Explain why most plants appear green.
 
 **Solution:**
 
-(a) $6\text{'\{'}CO{'\}'}_2 + 6\text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'} \xrightarrow{\text{'\{'}light{'\}'}} \text{'\{'}C{'\}'}_6\text{'\{'}H{'\}'}_{12}\text{'\{'}O{'\}'}_6 + 6\text{'\{'}O{'\}'}_2$
+(a) $6\text{CO{}_2 + 6\text{H{}_2\text{O{} \xrightarrow{\text{light{}} \text{C{}_6\text{H{}_{12}\text{O{}_6 + 6\text{O{}_2$
 
 (b) Leaf adaptations: (1) **Broad, flat shape** -- maximises surface area for light absorption. (2) **Thin** -- short diffusion distance for CO$_2$ and O$_2$. (3) **Waxy cuticle** -- reduces water loss by evaporation. (4) **Palisade mesophyll** -- cells at the top of the leaf, packed with chloroplasts, receive the most light. (5) **Spongy mesophyll** -- air spaces allow gas circulation (CO$_2$ and O$_2$ diffusion). (6) **Stomata** -- pores on the lower surface (usually) that allow CO$_2$ to enter and O$_2$ to exit; controlled by guard cells. (7) **Chlorophyll** -- green pigment in chloroplasts that absorbs red and blue light.
 

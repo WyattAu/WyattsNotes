@@ -508,7 +508,7 @@ An unknown alkene $\mathrm{C{}_7\mathrm{H{}_{12}$ is treated with hot, concentra
 
 Reconstructing: $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}=\mathrm{CHCH{}_3$
 
-**Identity:** Hept-2-ene ($\mathrm{C{}_7\mathrm{H{}_{14}$... wait, check). $\mathrm{C{}_7\mathrm{H{}_{12}$ has $\text{'\{'}DoU{'\}'} = \frac{2(7) + 2 - 12}{2} = 1$. Hept-2-ene is $\mathrm{C{}_7\mathrm{H{}_{14}$ with $\text{'\{'}DoU{'\}'} = 1$.
+**Identity:** Hept-2-ene ($\mathrm{C{}_7\mathrm{H{}_{14}$... wait, check). $\mathrm{C{}_7\mathrm{H{}_{12}$ has $\text{DoU{} = \frac{2(7) + 2 - 12}{2} = 1$. Hept-2-ene is $\mathrm{C{}_7\mathrm{H{}_{14}$ with $\text{DoU{} = 1$.
 
 The formula must be $\mathrm{C{}_7\mathrm{H{}_{14}$, not $\mathrm{C{}_7\mathrm{H{}_{12}$. If the problem states $\mathrm{C{}_7\mathrm{H{}_{12}$, the molecule has an additional degree of unsaturation (a ring or a second double bond). In this case, the product analysis is still valid, and the structure would be hept-2-ene (the given formula may contain a typo; in an exam, use the product information to deduce the structure).
 
@@ -669,7 +669,7 @@ Explain why the addition polymerisation of ethene requires an initiator, whereas
 
 4 marks:
 - Addition polymerisation involves free radical initiation (1 mark). The C=C bond in ethene has a high bond enthalpy and will not spontaneously open; an initiator (e.g. organic peroxide or oxygen under high pressure) generates free radicals that attack the C=C bond (1 mark).
-- Bromine addition is an electrophilic addition (1 mark). The $\mathrm{Br{}_2$ molecule is polarised by the $\pi$ electrons of ethene ($\mathrm{Br{}^{\delta+}\text{'\{'}-{'\}'}\mathrm{Br{}^{\delta-}$), and the electrophilic $\mathrm{Br{}^{\delta+}$ is attacked directly by the nucleophilic $\pi$ bond without any initiator (1 mark).
+- Bromine addition is an electrophilic addition (1 mark). The $\mathrm{Br{}_2$ molecule is polarised by the $\pi$ electrons of ethene ($\mathrm{Br{}^{\delta+}\text{-{}\mathrm{Br{}^{\delta-}$), and the electrophilic $\mathrm{Br{}^{\delta+}$ is attacked directly by the nucleophilic $\pi$ bond without any initiator (1 mark).
 
 </details>
 
@@ -683,7 +683,7 @@ Alkenes serve as key starting materials in multi-step synthesis because they can
 
 Step 1: Anti-Markovnikov addition of HBr (peroxide effect):
 
-$$\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{'\{'}peroxides{'\}'}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$$
+$$\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{peroxides{}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$$
 
 Step 2: Hydrolysis to propan-1-ol:
 
@@ -691,7 +691,7 @@ $$\mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 + \mathrm{NaOH{}(aq) \to \mathrm{
 
 Step 3: Oxidation to propanal (distillation conditions):
 
-$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{} \xrightarrow{[\mathrm{O{}],\,\text{'\{'}distillation{'\}'}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CHO{}$$
+$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{} \xrightarrow{[\mathrm{O{}],\,\text{distillation{}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CHO{}$$
 
 Step 4: Cyanohydrin formation:
 
@@ -703,7 +703,7 @@ $$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{CN{} + 2\mathrm{
 
 This gives 2-hydroxybutanoic acid. For lactic acid specifically, a different approach:
 
-$$\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 \xrightarrow{\mathrm{HBr{}/\text{'\{'}peroxides{'\}'}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$$
+$$\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 \xrightarrow{\mathrm{HBr{}/\text{peroxides{}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$$
 
 Actually, lactic acid is 2-hydroxypropanoic acid ($\mathrm{CH{}_3\mathrm{CH{}(\mathrm{OH{})\mathrm{COOH{}$). A more direct route from propene:
 

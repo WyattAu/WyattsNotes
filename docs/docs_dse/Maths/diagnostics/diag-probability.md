@@ -17,8 +17,8 @@ hide_table_of_contents: true
 
 In a school, $60\%$ of students play basketball and $30\%$ play football. $20\%$ play both sports. Find:
 
-(a) $P(\text{'\{'}Football{'\}'} \mid \text{'\{'}Basketball{'\}'})$
-(b) $P(\text{'\{'}Basketball{'\}'} \mid \text{'\{'}Football{'\}'})$
+(a) $P(\text{Football{} \mid \text{Basketball{})$
+(b) $P(\text{Basketball{} \mid \text{Football{})$
 
 Are they equal?
 
@@ -66,7 +66,7 @@ A fair die is rolled 5 times. Find the probability of getting at least one 6.
 
 **Solution:**
 
-$$P(\text{'\{'}at least one 6{'\}'}) = 1 - P(\text{'\{'}no 6s{'\}'}) = 1 - \left(\frac{5}{6}\right)^5 = 1 - \frac{3125}{7776} = \frac{4651}{7776}$$
+$$P(\text{at least one 6{}) = 1 - P(\text{no 6s{}) = 1 - \left(\frac{5}{6}\right)^5 = 1 - \frac{3125}{7776} = \frac{4651}{7776}$$
 
 A common mistake is trying to enumerate all cases with "at least one 6" directly (which has many terms), instead of using the complement.
 
@@ -85,9 +85,9 @@ A bag contains 3 red and 5 blue balls. Two balls are drawn **with replacement**.
 
 After replacement, the bag always has 3 red and 5 blue (8 total).
 
-(a) $P(\text{'\{'}RR{'\}'}) = \dfrac{3}{8} \times \dfrac{3}{8} = \dfrac{9}{64}$
+(a) $P(\text{RR{}) = \dfrac{3}{8} \times \dfrac{3}{8} = \dfrac{9}{64}$
 
-(b) $P(\text{'\{'}different{'\}'}) = P(\text{'\{'}RB{'\}'}) + P(\text{'\{'}BR{'\}'}) = \dfrac{3}{8} \times \dfrac{5}{8} + \dfrac{5}{8} \times \dfrac{3}{8} = \dfrac{15}{64} + \dfrac{15}{64} = \dfrac{30}{64} = \dfrac{15}{32}$
+(b) $P(\text{different{}) = P(\text{RB{}) + P(\text{BR{}) = \dfrac{3}{8} \times \dfrac{5}{8} + \dfrac{5}{8} \times \dfrac{3}{8} = \dfrac{15}{64} + \dfrac{15}{64} = \dfrac{30}{64} = \dfrac{15}{32}$
 
 ---
 
@@ -211,15 +211,15 @@ Total number of ways to draw 3 from 8: $\dbinom{8}{3} = 56$.
 
 (a) All three red: $\dbinom{5}{3} = 10$.
 
-$$P(\text{'\{'}all red{'\}'}) = \frac{10}{56} = \frac{5}{28}$$
+$$P(\text{all red{}) = \frac{10}{56} = \frac{5}{28}$$
 
 (b) Exactly two red (and one blue): $\dbinom{5}{2} \times \dbinom{3}{1} = 10 \times 3 = 30$.
 
-$$P(\text{'\{'}exactly 2 red{'\}'}) = \frac{30}{56} = \frac{15}{28}$$
+$$P(\text{exactly 2 red{}) = \frac{30}{56} = \frac{15}{28}$$
 
 (c) At least one blue = 1 - P(all red):
 
-$$P(\text{'\{'}at least 1 blue{'\}'}) = 1 - \frac{5}{28} = \frac{23}{28}$$
+$$P(\text{at least 1 blue{}) = 1 - \frac{5}{28} = \frac{23}{28}$$
 
 ---
 
@@ -273,7 +273,7 @@ In a class of 40 students, 25 study Mathematics, 20 study Physics, and 8 study n
 
 Let $M$ = studies Mathematics, $P$ = studies Physics.
 
-$P(M \cup P) = 1 - P(\text{'\{'}neither{'\}'}) = 1 - \dfrac{8}{40} = \dfrac{32}{40} = \dfrac{4}{5}$.
+$P(M \cup P) = 1 - P(\text{neither{}) = 1 - \dfrac{8}{40} = \dfrac{32}{40} = \dfrac{4}{5}$.
 
 Number studying at least one: 32.
 
@@ -335,7 +335,7 @@ A point is chosen at random inside a square of side 4 cm. Find the probability t
 
 The region more than 1 cm from all sides forms an inner square of side $4 - 1 - 1 = 2$ cm.
 
-$$P = \frac{\text{'\{'}area of inner square{'\}'}}{\text{'\{'}area of outer square{'\}'}} = \frac{2^2}{4^2} = \frac{4}{16} = \frac{1}{4}$$
+$$P = \frac{\text{area of inner square{}}{\text{area of outer square{}} = \frac{2^2}{4^2} = \frac{4}{16} = \frac{1}{4}$$
 
 ---
 
@@ -347,7 +347,7 @@ $$P = \frac{\text{'\{'}area of inner square{'\}'}}{\text{'\{'}area of outer squa
 
 3. **Forgetting to check if events are mutually exclusive when using addition rule.** The general formula is $P(A \cup B) = P(A) + P(B) - P(A \cap B)$. Only if $A$ and $B$ are mutually exclusive can you simplify to $P(A) + P(B)$.
 
-4. **Not using the complement for "at least" problems.** For questions asking "at least one" or "at least two," always consider using $P(\text{'\{'}at least {'\}'} k) = 1 - P(\text{'\{'}fewer than {'\}'} k)$. Direct enumeration often leads to errors and missed cases.
+4. **Not using the complement for "at least" problems.** For questions asking "at least one" or "at least two," always consider using $P(\text{at least {} k) = 1 - P(\text{fewer than {} k)$. Direct enumeration often leads to errors and missed cases.
 
 5. **Incorrect counting with identical objects.** When arranging letters or selecting items with identical elements, remember to divide by the factorial of the number of identical items. For example, the arrangements of "AABB" is $\dfrac{4!}{2! \times 2!} = 6$, not $4! = 24$.
 
@@ -387,7 +387,7 @@ $$P = \frac{75}{120} = \frac{5}{8}$$
 
 (c) Students playing basketball: 70. Students playing both basketball and volleyball: 15.
 
-$$P(\text{'\{'}volleyball{'\}'} \mid \text{'\{'}basketball{'\}'}) = \frac{15}{70} = \frac{3}{14}$$
+$$P(\text{volleyball{} \mid \text{basketball{}) = \frac{15}{70} = \frac{3}{14}$$
 
 ---
 
@@ -432,7 +432,7 @@ The probability that it rains on any given day in June is $0.3$. Assuming indepe
 
 **Solution:**
 
-(a) $P(\text{'\{'}no rain for 5 days{'\}'}) = (1 - 0.3)^5 = 0.7^5 = 0.16807$.
+(a) $P(\text{no rain for 5 days{}) = (1 - 0.3)^5 = 0.7^5 = 0.16807$.
 
 (b) $X \sim \mathrm{Bin{}(7,\; 0.3)$.
 
@@ -472,7 +472,7 @@ $$= \frac{2 \cdot \dfrac{n(n-1)(n-2)}{6}}{\dfrac{2n(2n-1)(2n-2)}{6}} = \frac{n(n
 
 (b) Complement:
 
-$$P(\text{'\{'}not all same{'\}'}) = 1 - \frac{n - 2}{4(2n - 1)} = \frac{4(2n-1) - (n-2)}{4(2n-1)} = \frac{8n - 4 - n + 2}{4(2n-1)} = \frac{7n - 2}{4(2n-1)}$$
+$$P(\text{not all same{}) = 1 - \frac{n - 2}{4(2n - 1)} = \frac{4(2n-1) - (n-2)}{4(2n-1)} = \frac{8n - 4 - n + 2}{4(2n-1)} = \frac{7n - 2}{4(2n-1)}$$
 
 (c) For $n = 5$:
 

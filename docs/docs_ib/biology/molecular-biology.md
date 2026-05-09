@@ -910,7 +910,7 @@ In addition to the double helix, DNA in cells is further twisted (**supercoiled*
 **Denaturation (melting):** heating DNA separates the two strands by breaking hydrogen bonds.
 The **melting temperature ($T_m$)** is the temperature at which $50\%$ of the DNA is denatured.
 
-$$T_m = 69.3 + 0.41(\%\mathrm{GC{}) - 0.72(\% \text{'\{'}formamide{'\}'})$$
+$$T_m = 69.3 + 0.41(\%\mathrm{GC{}) - 0.72(\% \text{formamide{})$$
 
 where $\%\mathrm{GC{}$ is the percentage of G+C base pairs. Higher GC content $\to$ higher $T_m$
 (because G-C pairs have 3 hydrogen bonds vs 2 for A-T pairs).

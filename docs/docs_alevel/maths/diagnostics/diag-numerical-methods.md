@@ -159,7 +159,7 @@ Since $f''(x) \lt 0$ on $(0, 2]$, the curve is concave down. The trapezium rule 
 
 **(c)** Exact value: $\frac{4\sqrt{2}}{3} \approx 1.8856$.
 
-$$\text{'\{'}Percentage error{'\}'} = \frac{\lvert 1.8194 - 1.8856 \rvert}{1.8856} \times 100\% \approx 3.51\%$$
+$$\text{Percentage error{} = \frac{\lvert 1.8194 - 1.8856 \rvert}{1.8856} \times 100\% \approx 3.51\%$$
 
 **(d)** The error bound: $\lvert E \rvert \leq \frac{(b-a)^3}{12n^2}\max_{[a,b]}\lvert f''(x) \rvert$.
 

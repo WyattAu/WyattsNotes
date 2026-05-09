@@ -567,7 +567,7 @@ From the molecular ion peak in mass spectrometry ($M^+$), determine the molecula
 ### Step 2: Calculate the Degree of Unsaturation (Index of Hydrogen Deficiency)
 
 $$
-\text{'\{'}DoU{'\}'} = \frac{2C + 2 + N - H - X}{2}
+\text{DoU{} = \frac{2C + 2 + N - H - X}{2}
 $$
 
 where $C$ = number of carbons, $H$ = hydrogens, $N$ = nitrogens, $X$ = halogens. Oxygen does not affect the DoU.
@@ -604,7 +604,7 @@ An unknown compound has:
 
 **Step 1:** $M = 120$. M+1 = $7.7\% \implies$ approximately 7 carbons ($1.1\%$ per carbon). $\mathrm{C{}_7\mathrm{H{}_8\mathrm{O{}$: $7(12) + 8(1) + 16 = 84 + 8 + 16 = 108 \neq 120$. $\mathrm{C{}_8\mathrm{H{}_8\mathrm{O{}$: $96 + 8 + 16 = 120$. Correct.
 
-**Step 2:** $\text{'\{'}DoU{'\}'} = \frac{2(8) + 2 - 8}{2} = \frac{10}{2} = 5$. Likely a benzene ring (DoU = 4) plus one more unsaturation (C=O from IR).
+**Step 2:** $\text{DoU{} = \frac{2(8) + 2 - 8}{2} = \frac{10}{2} = 5$. Likely a benzene ring (DoU = 4) plus one more unsaturation (C=O from IR).
 
 **Step 3:** IR: $1705\,\mathrm{cm{}^{-1}$ = C=O (ketone). No broad O--H, no strong C--O, so not a carboxylic acid or ester.
 
@@ -659,7 +659,7 @@ Classify each of the following reactions as substitution, addition, elimination,
 
 (a) $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{Br{} + \mathrm{OH{}^- \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{} + \mathrm{Br{}^-$
 (b) $\mathrm{CH{}_2=\mathrm{CH{}_2 + \mathrm{HBr{} \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{Br{}$
-(c) $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{Br{} + \mathrm{OH{}^- \xrightarrow{\text{'\{'}ethanol, {'\}'}\Delta} \mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{Br{}^- + \mathrm{H{}_2\mathrm{O{}$
+(c) $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{Br{} + \mathrm{OH{}^- \xrightarrow{\text{ethanol, {}\Delta} \mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{Br{}^- + \mathrm{H{}_2\mathrm{O{}$
 (d) $\mathrm{CH{}_3\mathrm{COOCH{}_3 + \mathrm{NaOH{} \to \mathrm{CH{}_3\mathrm{COO{}^-\mathrm{Na{}^+ + \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{}$
 
 **Solution:**

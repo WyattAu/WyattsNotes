@@ -484,11 +484,11 @@ $$
 Using mean bond enthalpies: $\mathrm{N{}\equiv\mathrm{N{} = 945\,\mathrm{kJ/mol{}$, $\mathrm{H{}-\mathrm{H{} = 436\,\mathrm{kJ/mol{}$, $\mathrm{N{}-\mathrm{H{} = 391\,\mathrm{kJ/mol{}$.
 
 $$
-\text{'\{'}Bonds broken{'\}'} = 1 \times \mathrm{N{}\equiv\mathrm{N{} + 3 \times \mathrm{H{}-\mathrm{H{} = 945 + 3(436) = 2253\,\mathrm{kJ/mol{}
+\text{Bonds broken{} = 1 \times \mathrm{N{}\equiv\mathrm{N{} + 3 \times \mathrm{H{}-\mathrm{H{} = 945 + 3(436) = 2253\,\mathrm{kJ/mol{}
 $$
 
 $$
-\text{'\{'}Bonds formed{'\}'} = 6 \times \mathrm{N{}-\mathrm{H{} = 6(391) = 2346\,\mathrm{kJ/mol{}
+\text{Bonds formed{} = 6 \times \mathrm{N{}-\mathrm{H{} = 6(391) = 2346\,\mathrm{kJ/mol{}
 $$
 
 $$
@@ -540,7 +540,7 @@ Steps (values are illustrative):
 Lattice enthalpy (formation):
 
 $$
-\Delta H_\mathrm{latt{} = \Delta H_f^\circ - (\text{'\{'}Steps 1--5{'\}'}) = -796 - (178 + 590 + 1145 + 244 - 728)
+\Delta H_\mathrm{latt{} = \Delta H_f^\circ - (\text{Steps 1--5{}) = -796 - (178 + 590 + 1145 + 244 - 728)
 $$
 
 $$
@@ -627,7 +627,7 @@ Bonds broken: $1 \times \mathrm{C{}\equiv\mathrm{C{} + 2 \times \mathrm{C{}-\mat
 Bonds formed: $1 \times \mathrm{C{}-\mathrm{C{} + 6 \times \mathrm{C{}-\mathrm{H{} = 347 + 6(413) = 347 + 2478 = 2825\,\mathrm{kJ/mol{}$
 
 $$
-\Delta H = \sum(\text{'\{'}bonds broken{'\}'}) - \sum(\text{'\{'}bonds formed{'\}'}) = 2537 - 2825 = -288\,\mathrm{kJ/mol{}
+\Delta H = \sum(\text{bonds broken{}) - \sum(\text{bonds formed{}) = 2537 - 2825 = -288\,\mathrm{kJ/mol{}
 $$
 
 The reaction is exothermic, as expected for hydrogenation. Note that mean bond enthalpies are used, so this is an estimate. The experimental value is approximately $-312\,\mathrm{kJ/mol{}$; the discrepancy arises because the $\mathrm{C{}-\mathrm{H{}$ bond enthalpy in $\mathrm{HC{}\equiv\mathrm{CH{}$ differs from the mean value used.
@@ -670,10 +670,10 @@ Above $618\,\mathrm{K{}$, $\Delta G^\circ \lt 0$ and the decomposition is sponta
 
 Use the following standard enthalpies of formation to calculate $\Delta H_f^\circ$ for ethanol:
 
-- $\Delta H_f^\circ(\mathrm{C{}(\text{'\{'}graphite{'\}'})) = 0\,\mathrm{kJ/mol{}$
+- $\Delta H_f^\circ(\mathrm{C{}(\text{graphite{})) = 0\,\mathrm{kJ/mol{}$
 - $\Delta H_f^\circ(\mathrm{H{}_2(g)) = 0\,\mathrm{kJ/mol{}$
 - $\Delta H_f^\circ(\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}(l)) = -277\,\mathrm{kJ/mol{}$
-- $\Delta H_c^\circ(\mathrm{C{}(\text{'\{'}graphite{'\}'})) = -394\,\mathrm{kJ/mol{}$
+- $\Delta H_c^\circ(\mathrm{C{}(\text{graphite{})) = -394\,\mathrm{kJ/mol{}$
 - $\Delta H_c^\circ(\mathrm{H{}_2(g)) = -286\,\mathrm{kJ/mol{}$
 - $\Delta H_c^\circ(\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}(l)) = -1367\,\mathrm{kJ/mol{}$
 
@@ -690,20 +690,20 @@ $$
 Route via elements:
 
 $$
-2\mathrm{C{}(\text{'\{'}graphite{'\}'}) + 3\mathrm{H{}_2(g) + \tfrac{1}{2}\mathrm{O{}_2(g) \to \mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}(l) \quad \Delta H_f^\circ
+2\mathrm{C{}(\text{graphite{}) + 3\mathrm{H{}_2(g) + \tfrac{1}{2}\mathrm{O{}_2(g) \to \mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{}(l) \quad \Delta H_f^\circ
 $$
 
 Combustion of elements:
 
 $$
-2\mathrm{C{}(\text{'\{'}graphite{'\}'}) + 2\mathrm{O{}_2(g) \to 2\mathrm{CO{}_2(g) \quad 2 \times (-394) = -788\,\mathrm{kJ/mol{}
+2\mathrm{C{}(\text{graphite{}) + 2\mathrm{O{}_2(g) \to 2\mathrm{CO{}_2(g) \quad 2 \times (-394) = -788\,\mathrm{kJ/mol{}
 $$
 
 $$
 3\mathrm{H{}_2(g) + \tfrac{3}{2}\mathrm{O{}_2(g) \to 3\mathrm{H{}_2\mathrm{O{}(l) \quad 3 \times (-286) = -858\,\mathrm{kJ/mol{}
 $$
 
-By Hess's Law: $\Delta H_f^\circ + \Delta H_c^\circ(\text{'\{'}ethanol{'\}'}) = 2\Delta H_c^\circ(\mathrm{C{}) + 3\Delta H_c^\circ(\mathrm{H{}_2)$
+By Hess's Law: $\Delta H_f^\circ + \Delta H_c^\circ(\text{ethanol{}) = 2\Delta H_c^\circ(\mathrm{C{}) + 3\Delta H_c^\circ(\mathrm{H{}_2)$
 
 $$
 \Delta H_f^\circ = (-788) + (-858) - (-1367) = -1646 + 1367 = -279\,\mathrm{kJ/mol{}
@@ -735,7 +735,7 @@ $$
 The overall enthalpy is the sum of the dissociation and neutralisation:
 
 $$
-\Delta H_\mathrm{neut{}(\text{'\{'}weak{'\}'}) = \Delta H_\mathrm{diss{} + \Delta H_\mathrm{neut{}(\text{'\{'}strong{'\}'}) \approx +0.4 + (-57.9) = -57.5\,\mathrm{kJ/mol{}
+\Delta H_\mathrm{neut{}(\text{weak{}) = \Delta H_\mathrm{diss{} + \Delta H_\mathrm{neut{}(\text{strong{}) \approx +0.4 + (-57.9) = -57.5\,\mathrm{kJ/mol{}
 $$
 
 The measured value is $-56.1\,\mathrm{kJ/mol{}$, suggesting additional endothermic contributions (the enthalpy of dissociation of ethanoic acid is endothermic, consuming some of the heat released by neutralisation). The reaction is less exothermic because the weak acid must first dissociate, which is an endothermic process.

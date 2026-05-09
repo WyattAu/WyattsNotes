@@ -793,7 +793,7 @@ absorptive surface area. The fungal hyphae extend into the soil beyond the root'
 
 **Gibberellin biosynthesis pathway** (in plants and fungi):
 
-GGDP (geranylgeranyl diphosphate) $\xrightarrow{\text{'\{'}ent-kaurene synthase{'\}'}}$ ent-kaurene $\xrightarrow{\text{'\{'}ent-kaurene oxidase{'\}'}}$
+GGDP (geranylgeranyl diphosphate) $\xrightarrow{\text{ent-kaurene synthase{}}$ ent-kaurene $\xrightarrow{\text{ent-kaurene oxidase{}}$
 $\to$ GA$_{12} \to \cdots \to$ GA$_1$ (the bioactive form).
 
 **Gibberellin in stem elongation:**

@@ -1395,7 +1395,7 @@ The cardiac cycle is the sequence of events in one complete heartbeat. It consis
 
 ### Cardiac Output
 
-$$\text{'\{'}Cardiac output{'\}'} = \text{'\{'}Heart rate{'\}'} \times \text{'\{'}Stroke volume{'\}'}$$
+$$\text{Cardiac output{} = \text{Heart rate{} \times \text{Stroke volume{}$$
 
 | Component            | Normal Value (at rest)     | During Exercise                                |
 | -------------------- | -------------------------- | ---------------------------------------------- |
@@ -1461,7 +1461,7 @@ $$\text{'\{'}Cardiac output{'\}'} = \text{'\{'}Heart rate{'\}'} \times \text{'\{
 
 Blood pressure is measured using a sphygmomanometer and is expressed as two values:
 
-$$\text{'\{'}Blood pressure{'\}'} = \frac{\text{'\{'}Systolic pressure{'\}'}}{\text{'\{'}Diastolic pressure{'\}'}} \text{'\{'} mmHg{'\}'}$$
+$$\text{Blood pressure{} = \frac{\text{Systolic pressure{}}{\text{Diastolic pressure{}} \text{ mmHg{}$$
 
 | Component            | Description                                                                                                               | Normal Value   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------- |

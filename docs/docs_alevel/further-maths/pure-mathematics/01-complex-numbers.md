@@ -1121,7 +1121,7 @@ This provides a geometric interpretation of all complex arithmetic.
 
 To solve $z^n = w = re^{i\phi}$:
 
-$$z_k = r^{1/n} \exp\!\left(\frac{i(\phi + 2k\pi)}{n}\right) \quad \text{'\{'}for {'\}'} k = 0, 1, \ldots, n-1$$
+$$z_k = r^{1/n} \exp\!\left(\frac{i(\phi + 2k\pi)}{n}\right) \quad \text{for {} k = 0, 1, \ldots, n-1$$
 
 The roots lie on a circle of radius $r^{1/n}$, equally spaced.
 
@@ -1207,7 +1207,7 @@ The extended complex plane $\hat{\mathbb{'\{'}C{'\}'}} = \mathbb{'\{'}C{'\}'} \c
 
 While complex analysis (Cauchy's theorem, residue calculus) is beyond A-Level, the fundamental concepts appear:
 - Cauchy's integral formula: $f(a) = \dfrac{1}{2\pi i}\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
-- Residue theorem: $\displaystyle\oint_C f(z)\,dz = 2\pi i \sum \text{'\{'}Res{'\}'}(f, a_k)$
+- Residue theorem: $\displaystyle\oint_C f(z)\,dz = 2\pi i \sum \text{Res{}(f, a_k)$
 
 These are mentioned for context and further study.
 

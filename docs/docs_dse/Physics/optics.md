@@ -835,7 +835,7 @@ From the object side: $\frac{h_o}{u} = \frac{h_i}{v}$ (magnification triangles)
 
 From the focal point triangles:
 
-$$\frac{h_o}{u - f} = \frac{h_i}{f} \quad \text{'\{'}and{'\}'} \quad \frac{h_o}{f} = \frac{h_i}{v - f}$$
+$$\frac{h_o}{u - f} = \frac{h_i}{f} \quad \text{and{} \quad \frac{h_o}{f} = \frac{h_i}{v - f}$$
 
 From the second pair: $\frac{h_o}{f} = \frac{h_i}{v - f}$
 

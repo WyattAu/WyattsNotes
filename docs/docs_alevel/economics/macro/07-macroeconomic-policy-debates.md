@@ -875,7 +875,7 @@ The economy self-corrects in approximately 5 years, during which cumulative lost
 - The policy works through the EXPECTATIONS CHANNEL rather than the conventional interest rate channel.
 
 **Quantitative impact.** Suppose the yield curve is:
-$$r_{10y} = E[r_{1y}] + \text{'\{'}term premium{'\}'}$$
+$$r_{10y} = E[r_{1y}] + \text{term premium{}$$
 
 Without forward guidance: $E[r_{1y}] = 2.5\%$ in 3 years. Term premium = 1%. $r_{10y} = 3.5\%$.
 

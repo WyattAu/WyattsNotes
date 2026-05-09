@@ -142,7 +142,7 @@ $g(h(x)) = (\sqrt{x})^2 - 1 = x - 1$ (domain: $x \geq 0$, since we need $h(x)$ d
 
 $f(g(h(x))) = f(x - 1) = \frac{2}{(x-1)+1} = \frac{2}{x}$ (domain: $x - 1 \neq -1 \implies x \neq 0$, combined with $x \geq 0$)
 
-$$(f \circ g \circ h)(x) = \frac{2}{x}, \quad \text{'\{'}domain: {'\}'} x > 0$$
+$$(f \circ g \circ h)(x) = \frac{2}{x}, \quad \text{domain: {} x > 0$$
 
 **(b)** $\frac{2}{x} = 1 \implies x = 2$.
 
@@ -282,15 +282,15 @@ So $\sin t = \frac{\sqrt{2} - \sqrt{10}}{4}$.
 
 $t = \theta + \frac{\pi}{4}$, so $\sin\left(\theta + \frac{\pi}{4}\right) = \frac{\sqrt{2} - \sqrt{10}}{4}$.
 
-$$\theta + \frac{\pi}{4} = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) \approx -0.452 \text{'\{'} or {'\}'} \pi + 0.452 \approx 3.594$$
+$$\theta + \frac{\pi}{4} = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) \approx -0.452 \text{ or {} \pi + 0.452 \approx 3.594$$
 
-$$\theta \approx -0.452 - 0.785 = -1.237 \quad \text{'\{'}or{'\}'} \quad \theta \approx 3.594 - 0.785 = 2.809$$
+$$\theta \approx -0.452 - 0.785 = -1.237 \quad \text{or{} \quad \theta \approx 3.594 - 0.785 = 2.809$$
 
 In $[0, 2\pi)$: $\theta \approx 2.809$ and $\theta \approx -1.237 + 2\pi \approx 5.046$.
 
 The exact solutions are:
 
-$$\theta = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4} + 2\pi \quad \text{'\{'}or{'\}'} \quad \theta = \pi - \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4}$$
+$$\theta = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4} + 2\pi \quad \text{or{} \quad \theta = \pi - \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4}$$
 
 **(c)** The area condition gives:
 

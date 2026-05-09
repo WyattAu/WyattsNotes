@@ -380,7 +380,7 @@ The units of $K_p$ and $K_c$ differ when $\Delta n \neq 0$. Always check units c
 A related concept to equilibrium constants is the partition coefficient, which describes the distribution of a solute between two immiscible solvents:
 
 $$
-K_\mathrm{partition{} = \frac{[\text{'\{'}solute{'\}'}]_\mathrm{organic{}}{[\text{'\{'}solute{'\}'}]_\mathrm{aqueous{}}
+K_\mathrm{partition{} = \frac{[\text{solute{}]_\mathrm{organic{}}{[\text{solute{}]_\mathrm{aqueous{}}
 $$
 
 This is constant at a given temperature and is used in solvent extraction. If a solute is more soluble in the organic phase, $K_\mathrm{partition{} \gt 1$, and extraction with an organic solvent is efficient.

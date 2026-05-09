@@ -55,7 +55,7 @@ Therefore $\mathrm{dom{}(f \circ g) = (-2,\; -1]$.
 
 Let $f(x) = \dfrac{2x + 3}{x - 1}$, $x \neq 1$. Which of the following equals $f^{-1}(5)$?
 
-$$\text{'\{'}(A){'\}'}\; \frac{1}{f(5)} \qquad \text{'\{'}(B){'\}'}\; f(5) \qquad \text{'\{'}(C){'\}'}\; \text{'\{'}Neither{'\}'}$$
+$$\text{(A){}\; \frac{1}{f(5)} \qquad \text{(B){}\; f(5) \qquad \text{(C){}\; \text{Neither{}$$
 
 Find the correct value.
 
@@ -85,7 +85,7 @@ The answer is **(C) Neither**. The inverse function evaluated at a point is NOT 
 
 The graph of $y = f(x)$ passes through the point $(2, 7)$. Which transformation maps this point to $(5, 7)$?
 
-$$\text{'\{'}(A){'\}'}\; y = f(x + 3) \qquad \text{'\{'}(B){'\}'}\; y = f(x - 3)$$
+$$\text{(A){}\; y = f(x + 3) \qquad \text{(B){}\; y = f(x - 3)$$
 
 **Solution:**
 
@@ -122,7 +122,7 @@ For $y = (x - 2)^2 - 1$:
 
 $$y + 1 = (x - 2)^2$$
 
-$$x - 2 = \sqrt{y + 1} \quad (\text{'\{'}since {'\}'} x \geq 2)$$
+$$x - 2 = \sqrt{y + 1} \quad (\text{since {} x \geq 2)$$
 
 $$x = 2 + \sqrt{y + 1}$$
 
@@ -346,7 +346,7 @@ $(2, 5) \to (3, 7)$ and $(3, 1) \to (4, 3)$.
 
 **Question:**
 
-Define $f(x) = \begin{cases} x^2 & \text{'\{'}if {'\}'} x < 0 \\ 2x + 1 & \text{'\{'}if {'\}'} 0 \leq x \leq 3 \\ 7 & \text{'\{'}if {'\}'} x > 3 \end{cases}$.
+Define $f(x) = \begin{cases} x^2 & \text{if {} x < 0 \\ 2x + 1 & \text{if {} 0 \leq x \leq 3 \\ 7 & \text{if {} x > 3 \end{cases}$.
 
 Find $f(-2)$, $f(0)$, $f(3)$, and $f(5)$.
 
@@ -509,7 +509,7 @@ The function $f$ is defined by $f(x) = \dfrac{1}{x^2 - 4}$.
 
 (a) $x^2 - 4 \neq 0 \implies x \neq \pm 2$.
 
-$$\mathrm{dom{}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -2 \text{'\{'} and {'\}'} x \neq 2\}$$
+$$\mathrm{dom{}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -2 \text{ and {} x \neq 2\}$$
 
 (b) Let $y = \dfrac{1}{x^2 - 4}$. Then $x^2 - 4 = \dfrac{1}{y}$, so $x^2 = 4 + \dfrac{1}{y} = \dfrac{4y + 1}{y}$.
 

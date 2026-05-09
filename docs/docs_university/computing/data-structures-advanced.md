@@ -739,19 +739,19 @@ Create two binomial heaps and merge them.
 
 Heap $H_1$: insert 3, 7, 1.
 - Insert 3: $H_1 = \{B_0: 3\}$
-- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text{'\{'}root {'\}'} 3, \text{'\{'}child {'\}'} 7\}$
+- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text{root {} 3, \text{child {} 7\}$
 - Insert 1: $H_1 = \{B_1: (3,7)\} \cup \{B_0: 1\}$. No linking (different degrees). $H_1 = \{B_0: 1, B_1: (3,7)\}$
 
 Heap $H_2$: insert 5, 2.
 - Insert 5: $H_2 = \{B_0: 5\}$
-- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text{'\{'}root {'\}'} 2, \text{'\{'}child {'\}'} 5\}$
+- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text{root {} 2, \text{child {} 5\}$
 
 Merge $H_1$ and $H_2$: $\{B_0: 1, B_1: (3,7)\} \cup \{B_1: (2,5)\}$.
 
 Both have $B_1$ trees. Link them (root 2 < root 3, so 3 becomes child of 2):
 $B_2$: root 2, children: 3 (with child 7), 5.
 
-Final merged heap: $\{B_0: 1, B_2: \text{'\{'}root {'\}'} 2, \text{'\{'}children {'\}'} [3, 5], \text{'\{'}3's child {'\}'} 7\}$
+Final merged heap: $\{B_0: 1, B_2: \text{root {} 2, \text{children {} [3, 5], \text{3's child {} 7\}$
 
 Minimum element: 1 (root of $B_0$).
 
@@ -781,7 +781,7 @@ A **Fibonacci heap** is a collection of min-heap-ordered trees supporting:
 
 **Theorem 2.3.** $D(n) = O(\log_\phi n)$ where $\phi = (1 + \sqrt{5})/2$ is the golden ratio.
 
-*Proof (outline).* Define the potential $\Phi = t(H) + 2m(H)$ where $t(H)$ is the number of trees and $m(H)$ is the number of marked nodes. Show that each operation's amortised cost is bounded. For decrease-key, the actual cost is $O(c)$ where $c$ is the number of cascading cuts. The change in potential is at most $c + 2 - 2m'(H) \cdot (\text{'\{'}terms cancel{'\}'})$, giving $O(1)$ amortised. $\blacksquare$
+*Proof (outline).* Define the potential $\Phi = t(H) + 2m(H)$ where $t(H)$ is the number of trees and $m(H)$ is the number of marked nodes. Show that each operation's amortised cost is bounded. For decrease-key, the actual cost is $O(c)$ where $c$ is the number of cascading cuts. The change in potential is at most $c + 2 - 2m'(H) \cdot (\text{terms cancel{})$, giving $O(1)$ amortised. $\blacksquare$
 
 :::caution Common Pitfall
 Fibonacci heaps have excellent amortised bounds but poor constant factors in practice due to the overhead of maintaining the root list, marking nodes, and consolidation. For this reason, binary heaps (or pairing heaps) are often preferred in practice despite worse theoretical amortised bounds for decrease-key.
@@ -811,7 +811,7 @@ A **pairing heap** is a simplified alternative to Fibonacci heaps. It is a singl
 
 The **incidence matrix** $M$ of an undirected graph $G = (V, E)$ with $n$ vertices and $m$ edges is an $n \times m$ matrix where:
 
-$$M_{v,e} = \begin{cases} 1 & \text{'\{'}if vertex {'\}'} v \text{'\{'} is incident to edge {'\}'} e \\ 0 & \text{'\{'}otherwise{'\}'} \end{cases}$$
+$$M_{v,e} = \begin{cases} 1 & \text{if vertex {} v \text{ is incident to edge {} e \\ 0 & \text{otherwise{} \end{cases}$$
 
 For directed graphs, $M_{v,e} = 1$ if $v$ is the tail of $e$, $M_{v,e} = -1$ if $v$ is the head of $e$, and $0$ otherwise.
 
@@ -863,7 +863,7 @@ Total space: $(|V|+1) + 2|E| = 5 + 12 = 17$ integers.
 
 The **inverse Ackermann function** $\alpha(n)$ is defined in terms of a rapidly growing function $A_k(j)$:
 
-$$A_k(j) = \begin{cases} 2j & \text{'\{'}if {'\}'} k = 0 \\ 0 & \text{'\{'}if {'\}'} j = 0 \text{'\{'} and {'\}'} k \geq 1 \\ A_{k-1}(A_k(j-1)) & \text{'\{'}if {'\}'} j \geq 1 \text{'\{'} and {'\}'} k \geq 1 \end{cases}$$
+$$A_k(j) = \begin{cases} 2j & \text{if {} k = 0 \\ 0 & \text{if {} j = 0 \text{ and {} k \geq 1 \\ A_{k-1}(A_k(j-1)) & \text{if {} j \geq 1 \text{ and {} k \geq 1 \end{cases}$$
 
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 
@@ -879,7 +879,7 @@ For all practical purposes, $\alpha(n) \leq 4$.
 
 Define the "level" of a node based on its rank. The key idea is to partition the nodes into groups and bound the total charges.
 
-Let $A_k(j)$ be as defined above. Node $x$ has **level** $\ell$ if $\text{'\{'}rank{'\}'}(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_{\ell+1}(\lfloor \log_2 n \rfloor))$.
+Let $A_k(j)$ be as defined above. Node $x$ has **level** $\ell$ if $\text{rank{}(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_{\ell+1}(\lfloor \log_2 n \rfloor))$.
 
 For a Find operation along a path $x_1, x_2, \ldots, x_k$, path compression makes all nodes point to the root. We charge the cost of the Find as follows:
 
@@ -1056,7 +1056,7 @@ The **LCP (Longest Common Prefix) array** stores $\mathrm{LCP{}[i] =$ the length
 <details>
 <summary>Worked Example: Suffix Array and LCP Array</summary>
 
-String $S = \text{'\{'}banana\${'\}'}$, $n = 7$.
+String $S = \text{banana\${}$, $n = 7$.
 
 All suffixes:
 0: banana$
@@ -1256,7 +1256,7 @@ A **scapegoat tree** is a BST where no rebalancing is done during insertion (onl
 
 **Property.** Every root-to-leaf path has at most $O(\log n)$ light edges.
 
-*Proof.* When traversing a light edge from $u$ to its parent $p$, the subtree size at least doubles: $|\text{'\{'}subtree{'\}'}(p)| \geq 2 \cdot |\text{'\{'}subtree{'\}'}(u)|$. Since the tree has $n$ nodes, there can be at most $\log_2 n$ light edges on any root-to-leaf path. $\blacksquare$
+*Proof.* When traversing a light edge from $u$ to its parent $p$, the subtree size at least doubles: $|\text{subtree{}(p)| \geq 2 \cdot |\text{subtree{}(u)|$. Since the tree has $n$ nodes, there can be at most $\log_2 n$ light edges on any root-to-leaf path. $\blacksquare$
 
 **Algorithm:**
 

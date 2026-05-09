@@ -73,6 +73,7 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  // @ts-expect-error -- MDX format option not in Docusaurus types but supported by @docusaurus/mdx-loader
   staticDirectories: ['static'],
 
   headTags: [
@@ -218,6 +219,9 @@ const config: Config = {
         routeBasePath: '/docs/ib',
         sidebarPath: require.resolve('./sidebars/sidebar_ib.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_ib/{dir}',
+        frontMatter: {
+          format: 'md',
+        },
         ...commonDocsPluginConfig,
       },
     ],

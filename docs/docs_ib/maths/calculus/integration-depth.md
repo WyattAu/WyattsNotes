@@ -99,18 +99,18 @@ $$
     **Find $\int (3x^4 - 5x^2 + 7)\,dx$**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int (3x^4 - 5x^2 + 7)\,dx &= 3 \cdot \frac{x^5}{5} - 5 \cdot \frac{x^3}{3} + 7x + C \\[6pt]
 &= \frac{3x^5}{5} - \frac{5x^3}{3} + 7x + C
-\end{aligned}
+\end`\{aligned}`
 $$
 
 **Find $\int \left(\frac{2}{x} + 3e^x - \frac{1}{\cos^2 x}\right)\,dx$**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int \left(\frac{2}{x} + 3e^x - \sec^2 x\right)\,dx &= 2\ln|x| + 3e^x - \tan x + C
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -184,11 +184,11 @@ the definite integral.
     **Evaluate $\int_1^3 (x^2 + 1)\,dx$**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int_1^3 (x^2 + 1)\,dx &= \left[\frac{x^3}{3} + x\right]_1^3 \\[6pt]
 &= \left(\frac{27}{3} + 3\right) - \left(\frac{1}{3} + 1\right) \\[6pt]
 &= 12 - \frac{4}{3} = \frac{32}{3}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 **Find the area enclosed by $y = x^2 - 4$ and the $x$-axis.**
@@ -196,11 +196,11 @@ $$
 The curve crosses the $x$-axis at $x = -2$ and $x = 2$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \mathrm{Area{} &= \int_{-2}^2 |x^2 - 4|\,dx = \int_{-2}^2 (4 - x^2)\,dx \\[6pt]
 &= \left[4x - \frac{x^3}{3}\right]_{-2}^2 \\[6pt]
 &= \left(8 - \frac{8}{3}\right) - \left(-8 + \frac{8}{3}\right) = \frac{32}{3}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -297,10 +297,10 @@ $$
 Second: $u = x$, $dv = \cos x\,dx$, so $du = dx$, $v = \sin x$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int x^2 \sin x\,dx &= -x^2 \cos x + 2\left(x\sin x - \int \sin x\,dx\right) \\[6pt]
 &= -x^2 \cos x + 2x\sin x + 2\cos x + C
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -389,11 +389,11 @@ $$
 **Find $\int \sin^3 x\,dx$**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int \sin^3 x\,dx &= \int \sin x (1 - \cos^2 x)\,dx \\[6pt]
 &= \int \sin x\,dx - \int \sin x \cos^2 x\,dx \\[6pt]
 &= -\cos x + \frac{\cos^3 x}{3} + C
-\end{aligned}
+\end`\{aligned}`
 $$
 
 (using $u = \cos x$, $du = -\sin x\,dx$ for the second integral)
@@ -479,10 +479,10 @@ where $f(x) \geq g(x) \geq 0$ on $[a, b]$.
 $x = 4$.**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 V &= \pi \int_0^4 (\sqrt{x})^2\,dx = \pi \int_0^4 x\,dx \\[6pt]
 &= \pi \left[\frac{x^2}{2}\right]_0^4 = 8\pi
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -527,12 +527,12 @@ $$
 Total distance: find when $v(t) = 0$: $6t^2 - 4t = 0 \implies t = 0$ or $t = \frac{2}{3}$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \mathrm{Distance{} &= \int_0^{2/3} |6t^2 - 4t|\,dt + \int_{2/3}^3 |6t^2 - 4t|\,dt \\[6pt]
 &= \int_0^{2/3} (4t - 6t^2)\,dt + \int_{2/3}^3 (6t^2 - 4t)\,dt \\[6pt]
 &= \left[2t^2 - 2t^3\right]_0^{2/3} + \left[2t^3 - 2t^2\right]_{2/3}^3 \\[6pt]
 &= \frac{8}{27} + \left(36 - \left(-\frac{8}{27}\right)\right) = \frac{8}{27} + 36 + \frac{8}{27} = \frac{988}{27} \approx 36.6 \mathrm{ m{}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -595,10 +595,10 @@ $$
     **Given $\int_1^3 f(x)\,dx = 5$ and $\int_1^3 g(x)\,dx = -2$, find $\int_3^1 [3f(x) - 2g(x)]\,dx$.**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int_3^1 [3f(x) - 2g(x)]\,dx &= -\int_1^3 [3f(x) - 2g(x)]\,dx \\[6pt]
 &= -\left(3 \cdot 5 - 2 \cdot (-2)\right) = -(15 + 4) = -19
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -673,10 +673,10 @@ diverges, then $\int_a^{\infty} g(x)\,dx$ also diverges.
     **Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^2}\,dx$ converges.**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int_1^{\infty} \frac{1}{x^2}\,dx &= \lim_{t \to \infty} \int_1^t x^{-2}\,dx = \lim_{t \to \infty} \left[-\frac{1}{x}\right]_1^t \\[6pt]
 &= \lim_{t \to \infty} \left(-\frac{1}{t} + 1\right) = 1
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The integral converges to $1$. (Consistent with the $p$-test: $p = 2 > 1$.)
@@ -684,10 +684,10 @@ The integral converges to $1$. (Consistent with the $p$-test: $p = 2 > 1$.)
 **Determine whether $\displaystyle\int_0^1 \frac{1}{\sqrt{x}}\,dx$ converges.**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int_0^1 \frac{1}{\sqrt{x}}\,dx &= \lim_{t \to 0^+} \int_t^1 x^{-1/2}\,dx = \lim_{t \to 0^+} \Big[2\sqrt{x}\Big]_t^1 \\[6pt]
 &= \lim_{t \to 0^+} (2 - 2\sqrt{t}) = 2
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The integral converges to $2$. (Consistent with the $p$-test: $p = \frac{1}{2} < 1$.)
@@ -710,10 +710,10 @@ Alternatively, split:
 $\dfrac{x^3 + 2x}{\sqrt{x^2 + 1}} = \dfrac{x(x^2 + 1)}{\sqrt{x^2 + 1}} + \dfrac{x}{\sqrt{x^2 + 1}} = x\sqrt{x^2 + 1} + \dfrac{x}{\sqrt{x^2 + 1}}$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int x\sqrt{x^2 + 1}\,dx &= \frac{1}{3}(x^2 + 1)^{3/2} + C_1 \\[6pt]
 \int \frac{x}{\sqrt{x^2 + 1}}\,dx &= \sqrt{x^2 + 1} + C_2
-\end{aligned}
+\end`\{aligned}`
 $$
 
 $$
@@ -730,10 +730,10 @@ $$
     Integration by parts: $u = x$, $dv = \sin x\,dx$, so $du = dx$, $v = -\cos x$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int_0^{\pi/2} x\sin x\,dx &= \Big[-x\cos x\Big]_0^{\pi/2} + \int_0^{\pi/2} \cos x\,dx \\[6pt]
 &= (0 - 0) + \Big[\sin x\Big]_0^{\pi/2} = 1
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -748,11 +748,11 @@ $$
 On $[-1, 0]$: $x^3 \geq x$. On $[0, 1]$: $x \geq x^3$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 A &= \int_{-1}^0 (x^3 - x)\,dx + \int_0^1 (x - x^3)\,dx \\[6pt]
 &= \left[\frac{x^4}{4} - \frac{x^2}{2}\right]_{-1}^0 + \left[\frac{x^2}{2} - \frac{x^4}{4}\right]_0^1 \\[6pt]
 &= \left(0 - \frac{1}{4} + \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{4}\right) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -765,34 +765,34 @@ $$
     The curve $y = \ln x$ meets the $x$-axis at $x = 1$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 V &= \pi \int_1^e (\ln x)^2\,dx
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Integration by parts with $u = (\ln x)^2$, $dv = dx$: $du = \dfrac{2\ln x}{x}\,dx$, $v = x$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int (\ln x)^2\,dx &= x(\ln x)^2 - 2\int \ln x\,dx
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Apply parts again for $\int \ln x\,dx$: $u = \ln x$, $dv = dx$, so $\int \ln x\,dx = x\ln x - x$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int (\ln x)^2\,dx &= x(\ln x)^2 - 2(x\ln x - x) + C \\[6pt]
 &= x(\ln x)^2 - 2x\ln x + 2x + C
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Evaluating from $1$ to $e$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \Big[x(\ln x)^2 - 2x\ln x + 2x\Big]_1^e &= (e - 2e + 2e) - (0 - 0 + 2) = e - 2
-\end{aligned}
+\end`\{aligned}`
 $$
 
 $$
@@ -854,10 +854,10 @@ $$
 $u \to \infty$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int_2^{\infty} \frac{1}{x(\ln x)^2}\,dx &= \int_{\ln 2}^{\infty} \frac{1}{u^2}\,du = \lim_{t \to \infty} \int_{\ln 2}^t u^{-2}\,du \\[6pt]
 &= \lim_{t \to \infty} \left[-\frac{1}{u}\right]_{\ln 2}^t = \lim_{t \to \infty} \left(-\frac{1}{t} + \frac{1}{\ln 2}\right) = \frac{1}{\ln 2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The integral converges to $\dfrac{1}{\ln 2}$.
@@ -882,10 +882,10 @@ $1 = A(x+1) + B(x-1)$
 $x = 1$: $A = \dfrac{1}{2}$, $x = -1$: $B = -\dfrac{1}{2}$
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \int \frac{x^2}{x^2 - 1}\,dx &= \int \left(1 + \frac{1}{2(x-1)} - \frac{1}{2(x+1)}\right)\,dx \\[6pt]
 &= x + \frac{1}{2}\ln|x-1| - \frac{1}{2}\ln|x+1| + C
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>

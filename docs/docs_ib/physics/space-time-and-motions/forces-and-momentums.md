@@ -20,9 +20,9 @@ The displacement ($s$ or $\Delta x$) is a vector quantity representing the chang
 [position](#position) as a translation:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     s = \Delta x = x_f - x_i
-\end{aligned}
+\end`\{aligned}`
 $$
 
 #### Velocity
@@ -31,9 +31,9 @@ The velocity ($v$) is a vector quantity representing the change in [displacement
 with time:
 
 $$
-\begin{aligned}
-    v = \frac{ds}{dt}
-\end{aligned}
+\begin`\{aligned}`
+    v = \frac`\{ds}``\{dt}`
+\end`\{aligned}`
 $$
 
 #### Acceleration
@@ -42,9 +42,9 @@ The acceleration ($a$) is a vector quantity representing the change in [velocity
 time:
 
 $$
-\begin{aligned}
-    a = \frac{dv}{dt}
-\end{aligned}
+\begin`\{aligned}`
+    a = \frac`\{dv}``\{dt}`
+\end`\{aligned}`
 $$
 
 ## Rigid Body
@@ -59,9 +59,9 @@ The radial unit vector ($\bm{\hat{r}}$) is the directional vector with magnitude
 radially outside.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{\hat{r}} = \frac{\bm{r}}{|\bm{r}|}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Centripetal acceleration
@@ -70,9 +70,9 @@ The centripetal acceleration ($a$) is the [acceleration](#acceleration) directed
 center ($-\bm{\hat{r}}$), keeping the body in circular motion:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     a = -\frac{v^2}{r}\bm{\hat{r}} = -\omega^2 r\bm{\hat{r}} = -\frac{4\pi^2r}{T^2}\bm{\hat{r}}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::warning
@@ -80,9 +80,9 @@ The IB only consider the magnitude of centripetal acceleration, therefore is sho
 equation booklet as:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     a = \frac{v^2}{r} = \omega^2 r = \frac{4\pi^2r}{T^2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::
@@ -93,18 +93,18 @@ The centripetal force is any force applied on a mass towards the center ($-\bm{\
 to a [centripetal acceleration](#centripetal-acceleration) $\bm{a}$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     F = m\bm{a} = -\frac{mv^2}{r}\bm{\hat{r}} = -m\omega^2 r\bm{\hat{r}} = -\frac{4\pi^2mr}{T^2}\bm{\hat{r}}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::warning
 As mentioned above, IB only consider the magnitude of centripetal force:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     F = ma = \frac{mv^2}{r} = m\omega^2 r = \frac{4\pi^2mr}{T^2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::
@@ -122,9 +122,9 @@ The angular displacement ($\Delta \theta$) of a [rigid body](#rigid-body) is the
 [angular position $\theta$](#angular-position) measured from the center:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \Delta \theta = \theta_f - \theta_i
-\end{aligned}
+\end`\{aligned}`
 $$
 
 #### Angular velocity
@@ -134,9 +134,9 @@ The angular velocity ($\omega$) is the change of
 time:
 
 $$
-\begin{aligned}
-   \omega = \frac{d\theta}{dt}
-\end{aligned}
+\begin`\{aligned}`
+   \omega = \frac{d\theta}`\{dt}`
+\end`\{aligned}`
 $$
 
 #### Angular acceleration
@@ -145,9 +145,9 @@ The angular acceleration ($\alpha$) is the change of [angular velocity](#angular
 [rigid body](#rigid-body) with time:
 
 $$
-\begin{aligned}
-    \alpha = \frac{d\omega}{dt}
-\end{aligned}
+\begin`\{aligned}`
+    \alpha = \frac{d\omega}`\{dt}`
+\end`\{aligned}`
 $$
 
 ### Moment of Inertia
@@ -166,9 +166,9 @@ The angular momentum ($L$) is the product of [moment of inertia $I$](#moment-of-
 [angular velocity $\omega$](#angular-velocity):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     L = I\omega
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Work
@@ -176,9 +176,9 @@ $$
 The work ($W$) done by a force $F$ on a point mass with a movement of displacement $s$ is:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     W = \bm{F} \cdot \bm{s} = |\bm{F}||\bm{s}|\cos\theta
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::info
@@ -186,9 +186,9 @@ For a force that varies at different position, the line integral of $F$ across a
 is:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     W = \int_C F \cdot ds
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::

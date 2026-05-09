@@ -45,7 +45,7 @@ So $Y \sim B(50, 0.02)$.
 
 **(c)** The binomial distribution is **NOT** appropriate. The condition violated is **fixed number of trials**: the number of tosses is not fixed in advance; it depends on when the third head occurs.
 
-The correct distribution is the **negative binomial distribution** (or Pascal distribution). If we define $Z$ as the number of trials until the $r$-th success, then $Z \sim \text{'\{'}NegBin{'\}'}(r = 3, p = 0.5)$.
+The correct distribution is the **negative binomial distribution** (or Pascal distribution). If we define $Z$ as the number of trials until the $r$-th success, then $Z \sim \text{NegBin{}(r = 3, p = 0.5)$.
 
 **(d)** The binomial distribution **IS** appropriate.
 - Fixed number of trials: $n = 50$ (the first 50 rolls).
@@ -57,7 +57,7 @@ So $W \sim B(50, 0.3)$.
 
 The fact that there are 100 total rolls is irrelevant --- we are only considering the first 50.
 
-**(e)** The binomial distribution is **NOT** appropriate. The condition violated is **constant probability of success**: for the first 5 questions, $\mathrm{P{}(\text{'\{'}correct{'\}'}) = 1$, but for the last 5 questions, $\mathrm{P{}(\text{'\{'}correct{'\}'}) = \frac{1}{4}$. The probability of success changes partway through.
+**(e)** The binomial distribution is **NOT** appropriate. The condition violated is **constant probability of success**: for the first 5 questions, $\mathrm{P{}(\text{correct{}) = 1$, but for the last 5 questions, $\mathrm{P{}(\text{correct{}) = \frac{1}{4}$. The probability of success changes partway through.
 
 The correct approach is to split $V = V_1 + V_2$ where $V_1 \sim B(5, 1)$ (deterministic: always 5) and $V_2 \sim B(5, 0.25)$. Then $V = 5 + V_2$ and $V_2 \sim B(5, 0.25)$.
 
@@ -103,7 +103,7 @@ $\sigma = \sqrt{19.2}$
 
 **Continuity correction:** Since $Y$ is discrete and we want $\mathrm{P{}(Y \leq 50)$, we use $Y \leq 50.5$ for the normal approximation.
 
-$$\mathrm{P{}(Y \leq 50) \approx \mathrm{P{}(X \leq 50.5) \quad \text{'\{'}where {'\}'} X \sim N(48, 19.2)$$
+$$\mathrm{P{}(Y \leq 50) \approx \mathrm{P{}(X \leq 50.5) \quad \text{where {} X \sim N(48, 19.2)$$
 
 $$Z = \frac{50.5 - 48}{\sqrt{19.2}} = \frac{2.5}{\sqrt{19.2}} = \frac{2.5}{4.3818} = 0.5704$$
 
@@ -173,11 +173,11 @@ $$\mathrm{Var{}(E) = 3^2\mathrm{Var{}(A) + (-2)^2\mathrm{Var{}(B) = 9(9) + 4(16)
 
 Note: the sign of the coefficient does not affect the variance because $(-2)^2 = 4$.
 
-$$\mathrm{SD{}(E) = \sqrt{145} \approx 12.04 \text{'\{'} minutes{'\}'}$$
+$$\mathrm{SD{}(E) = \sqrt{145} \approx 12.04 \text{ minutes{}$$
 
 **(d)** The student's error is adding standard deviations. The correct rule is:
 
-$$\mathrm{Var{}(A + B) = \mathrm{Var{}(A) + \mathrm{Var{}(B) \quad \text{'\{'}(for independent variables){'\}'}$$
+$$\mathrm{Var{}(A + B) = \mathrm{Var{}(A) + \mathrm{Var{}(B) \quad \text{(for independent variables){}$$
 
 $$\mathrm{SD{}(A + B) = \sqrt{\mathrm{Var{}(A) + \mathrm{Var{}(B)} = \sqrt{9 + 16} = \sqrt{25} = 5$$
 
@@ -225,7 +225,7 @@ $$\mathrm{P{}(X \geq 9) = 1 - \mathrm{P{}(X \leq 8)$$
 
 Using the binomial cumulative distribution with $n = 20$, $p = 0.3$:
 
-$$\mathrm{P{}(X \leq 8) = 0.8867 \quad \text{'\{'}(from tables or calculator){'\}'}$$
+$$\mathrm{P{}(X \leq 8) = 0.8867 \quad \text{(from tables or calculator){}$$
 
 $$\mathrm{P{}(X \geq 9) = 1 - 0.8867 = 0.1133$$
 
@@ -241,7 +241,7 @@ The observed value is $X = 9$, which does **not** fall in the critical region.
 
 **(b)** The actual significance level is the probability of rejecting $H_0$ when $H_0$ is true, which equals the probability of falling in the critical region under $H_0$:
 
-$$\alpha_{\text{'\{'}actual{'\}'}} = \mathrm{P{}(X \geq 10 \mid X \sim B(20, 0.3)) = 0.0480$$
+$$\alpha_{\text{actual{}} = \mathrm{P{}(X \geq 10 \mid X \sim B(20, 0.3)) = 0.0480$$
 
 This differs from the stated 5% because the binomial distribution is discrete. There is no critical value that gives exactly 5%. The closest we can get is 4.80% (with critical region $X \geq 10$) or 11.33% (with critical region $X \geq 9$). We choose the critical region that does not exceed the stated significance level.
 
@@ -259,11 +259,11 @@ Alternatively, using exact binomial probabilities: $\mathrm{P{}(X \geq 20 \mid B
 
 **Conclusion:** With the larger sample, there **is** sufficient evidence to reject $H_0$ at the 5% level. This demonstrates that a larger sample size provides more statistical power, even when the observed proportion ($\frac{21}{50} = 0.42$) is similar to the smaller sample ($\frac{9}{20} = 0.45$).
 
-**(d)** The **power** of a test is the probability of correctly rejecting $H_0$ when $H_1$ is true. It equals $1 - \mathrm{P{}(\text{'\{'}Type II error{'\}'})$.
+**(d)** The **power** of a test is the probability of correctly rejecting $H_0$ when $H_1$ is true. It equals $1 - \mathrm{P{}(\text{Type II error{})$.
 
 For this test, the power depends on the true value of $p$. If the true proportion were, say, $p = 0.5$, the power would be:
 
-$$\text{'\{'}Power{'\}'} = \mathrm{P{}(X \geq 10 \mid X \sim B(20, 0.5)) = 1 - \mathrm{P{}(X \leq 9 \mid B(20, 0.5))$$
+$$\text{Power{} = \mathrm{P{}(X \geq 10 \mid X \sim B(20, 0.5)) = 1 - \mathrm{P{}(X \leq 9 \mid B(20, 0.5))$$
 
 $$= 1 - 0.4119 = 0.5881$$
 
@@ -300,13 +300,13 @@ A call centre receives an average of 2.4 calls per minute.
 
 **Solution:**
 
-**(a)** Let $X$ = number of calls in one minute. Then $X \sim \text{'\{'}Po{'\}'}(2.4)$.
+**(a)** Let $X$ = number of calls in one minute. Then $X \sim \text{Po{}(2.4)$.
 
 $$\mathrm{P{}(X = 3) = \frac{e^{-2.4} \times 2.4^3}{3!} = \frac{e^{-2.4} \times 13.824}{6} = 2.304 \times e^{-2.4}$$
 
 $$= 2.304 \times 0.09072 = 0.2090 \approx 0.209$$
 
-**(b)** Let $Y$ = number of calls in 25 minutes. Then $Y \sim \text{'\{'}Po{'\}'}(25 \times 2.4) = \text{'\{'}Po{'\}'}(60)$.
+**(b)** Let $Y$ = number of calls in 25 minutes. Then $Y \sim \text{Po{}(25 \times 2.4) = \text{Po{}(60)$.
 
 Since $\lambda = 60$ is large, we can use the normal approximation $Y \approx N(60, 60)$.
 
@@ -324,7 +324,7 @@ The normal approximation is justified because $\lambda = 60 > 10$, which is the 
 
 The probability density function is:
 
-$$f(t) = \begin{cases} 2 & \quad 0 \leq t \leq 0.5 \\ 0 & \quad \text{'\{'}otherwise{'\}'} \end{cases}$$
+$$f(t) = \begin{cases} 2 & \quad 0 \leq t \leq 0.5 \\ 0 & \quad \text{otherwise{} \end{cases}$$
 
 **(i)** 10 seconds $= \frac{10}{60} = \frac{1}{6} \approx 0.1667$ minutes.
 
@@ -332,13 +332,13 @@ $$\mathrm{P{}\left(T \lt \frac{1}{6}\right) = \int_0^{1/6} 2\,dt = 2 \times \fra
 
 **(ii)** The median $m$ satisfies $\mathrm{P{}(T \leq m) = 0.5$:
 
-$$\int_0^m 2\,dt = 2m = 0.5 \implies m = 0.25 \text{'\{'} minutes{'\}'} = 15 \text{'\{'} seconds{'\}'}$$
+$$\int_0^m 2\,dt = 2m = 0.5 \implies m = 0.25 \text{ minutes{} = 15 \text{ seconds{}$$
 
 For a uniform distribution, the median always equals the midpoint of the interval.
 
 **(iii)** The 90th percentile $p_{90}$ satisfies $\mathrm{P{}(T \leq p_{90}) = 0.9$:
 
-$$2p_{90} = 0.9 \implies p_{90} = 0.45 \text{'\{'} minutes{'\}'} = 27 \text{'\{'} seconds{'\}'}$$
+$$2p_{90} = 0.9 \implies p_{90} = 0.45 \text{ minutes{} = 27 \text{ seconds{}$$
 
 **(d)** **Uniform model mean:** $\mathrm{E{}(T) = \frac{0 + 0.5}{2} = 0.25$ minutes.
 
@@ -377,11 +377,11 @@ In a game, a player rolls a fair six-sided die. The player wins if they roll a 6
 
 **Solution:**
 
-**(a)** Let $X$ = number of rolls until the first 6. Then $X \sim \text{'\{'}Geo{'\}'}(p)$ where $p = \frac{1}{6}$.
+**(a)** Let $X$ = number of rolls until the first 6. Then $X \sim \text{Geo{}(p)$ where $p = \frac{1}{6}$.
 
 $$\mathrm{P{}(X = 3) = (1-p)^2 \cdot p = \left(\frac{5}{6}\right)^2 \cdot \frac{1}{6} = \frac{25}{36} \cdot \frac{1}{6} = \frac{25}{216}$$
 
-**(b)** For $X \sim \text{'\{'}Geo{'\}'}(p)$: $\mathrm{E{}(X) = \frac{1}{p} = 6$.
+**(b)** For $X \sim \text{Geo{}(p)$: $\mathrm{E{}(X) = \frac{1}{p} = 6$.
 
 On average, the player needs 6 rolls to get the first 6. This is intuitive: with probability $\frac{1}{6}$ per roll, you expect to need $\frac{1}{1/6} = 6$ rolls.
 
@@ -397,7 +397,7 @@ This uses the memoryless property of the geometric distribution: $\mathrm{P{}(X 
 
 $$p = \frac{5}{36}$$
 
-**(ii)** $N \sim \text{'\{'}Geo{'\}'}\left(\frac{5}{36}\right)$.
+**(ii)** $N \sim \text{Geo{}\left(\frac{5}{36}\right)$.
 
 $$\mathrm{E{}(N) = \frac{1}{p} = \frac{36}{5} = 7.2$$
 

@@ -98,7 +98,7 @@ through three pathways:
 1. **Opsonisation** ($\mathrm{C3b{}$): coats pathogens, enhancing phagocytosis.
 2. **Inflammation** ($\mathrm{C3a{}$, $\mathrm{C5a{}$): act as chemoattractants for phagocytes; cause
    mast cell degranulation.
-3. **Membrane attack complex (MAC)** ($\mathrm{C5b\text{'\{'}-{'\}'}C9}$): forms transmembrane pores in the
+3. **Membrane attack complex (MAC)** ($\mathrm{C5b\text{-{}C9}$): forms transmembrane pores in the
    pathogen cell membrane, causing lysis by osmotic imbalance.
 
 #### Natural Killer (NK) Cells
@@ -1193,7 +1193,7 @@ $C = (0.550 - 0.050) / 0.020 = 0.500 / 0.020 = 25\;\mathrm{ng/mL{}$.
 (b) Patient absorbance $= 0.550 > 0.200$ (positive threshold). **The patient is positive** for the
 viral antigen.
 
-(c) Signal-to-noise ratio $= \text{'\{'}patient signal{'\}'} / \text{'\{'}negative control{'\}'} = 0.550 / 0.060 = 9.2$.
+(c) Signal-to-noise ratio $= \text{patient signal{} / \text{negative control{} = 0.550 / 0.060 = 9.2$.
 A ratio $> 3$ is generally considered significant; this result is well above that threshold.
 
 (d) **Sandwich ELISA principle**:

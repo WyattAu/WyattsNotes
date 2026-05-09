@@ -404,7 +404,7 @@ where $n$ is the number of carbon atoms and $r$ is the number of hydrogen atoms 
 The M+1 peak provides a way to estimate the number of carbon atoms:
 
 $$
-\text{'\{'}Number of carbons{'\}'} \approx \frac{\%\,\text{'\{'}intensity of M+1{'\}'}}{1.1}
+\text{Number of carbons{} \approx \frac{\%\,\text{intensity of M+1{}}{1.1}
 $$
 
 **Worked Example.** A compound has a molecular ion at $m/z = 150$ (100%) and M+1 at $m/z = 151$ (9.9%). Estimate the number of carbons.
@@ -577,7 +577,7 @@ A mass spectrum of an organic compound shows the following peaks:
 
 **Solution:**
 
-(a) M+1 = 7.7% suggests approximately $7.7/1.1 = 7$ carbon atoms. $7 \times 12 = 84$. Remaining mass = $92 - 84 = 8$, which corresponds to 8 hydrogen atoms. The molecular formula is $\mathrm{C{}_7\mathrm{H{}_8$. Verification: $\text{'\{'}DoU{'\}'} = \frac{2(7) + 2 - 8}{2} = 4$. This is consistent with a benzene ring (4 degrees of unsaturation: one ring + three double bonds in the aromatic system).
+(a) M+1 = 7.7% suggests approximately $7.7/1.1 = 7$ carbon atoms. $7 \times 12 = 84$. Remaining mass = $92 - 84 = 8$, which corresponds to 8 hydrogen atoms. The molecular formula is $\mathrm{C{}_7\mathrm{H{}_8$. Verification: $\text{DoU{} = \frac{2(7) + 2 - 8}{2} = 4$. This is consistent with a benzene ring (4 degrees of unsaturation: one ring + three double bonds in the aromatic system).
 
 M+2 = 0.3% is consistent with two $^{13}\mathrm{C{}$ atoms: $C(7,2) \times (0.011)^2 = 21 \times 0.000121 = 0.25\%$, close to the observed value.
 

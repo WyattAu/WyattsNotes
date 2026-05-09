@@ -541,7 +541,7 @@ $$1 = 2\cos\theta \implies \theta = \pm\frac{\pi}{3}$$
 
 Both curves are symmetric about the initial line, so we compute from $0$ to $\pi/3$ and double.
 
-For $0 \leq \theta \leq \pi/3$: $3\cos\theta \geq 1 + \cos\theta$ (since $2\cos\theta \geq 1$), so $r_{\text{'\{'}outer{'\}'}} = 3\cos\theta$ and $r_{\text{'\{'}inner{'\}'}} = 1 + \cos\theta$.
+For $0 \leq \theta \leq \pi/3$: $3\cos\theta \geq 1 + \cos\theta$ (since $2\cos\theta \geq 1$), so $r_{\text{outer{}} = 3\cos\theta$ and $r_{\text{inner{}} = 1 + \cos\theta$.
 
 $$A = 2\cdot\frac{1}{2}\int_0^{\pi/3}\bigl[9\cos^2\theta - (1+\cos\theta)^2\bigr]\,d\theta = \int_0^{\pi/3}\bigl[9\cos^2\theta - 1 - 2\cos\theta - \cos^2\theta\bigr]\,d\theta$$
 
@@ -846,7 +846,7 @@ Find the area of the region enclosed by one loop of the curve $r^2 = 4\cos 2\the
 
 This is a lemniscate. One loop is traced for $-\pi/4 \leq \theta \leq \pi/4$.
 
-$$A = \frac{1}{2}\int_{-\pi/4}^{\pi/4} 4\cos 2\theta\,d\theta = 2\!\left[\frac{\sin 2\theta}{2}\right]_{-\pi/4}^{\pi/4} = 2(1-(-1)) = 4 \text{'\{'}... wait{'\}'}$$
+$$A = \frac{1}{2}\int_{-\pi/4}^{\pi/4} 4\cos 2\theta\,d\theta = 2\!\left[\frac{\sin 2\theta}{2}\right]_{-\pi/4}^{\pi/4} = 2(1-(-1)) = 4 \text{... wait{}$$
 
 $A = \int_{-\pi/4}^{\pi/4} 2\cos 2\theta\,d\theta = [\sin 2\theta]_{-\pi/4}^{\pi/4} = 1 - (-1) = 2$. Wait, using the formula:
 

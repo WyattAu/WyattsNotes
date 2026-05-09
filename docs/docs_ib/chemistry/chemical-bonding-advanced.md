@@ -353,7 +353,7 @@ excite an electron from the valence band to the conduction band.
 **Solution:**
 
 $$
-E = \frac{hc}{\lambda} \implies \lambda = \frac{hc}{E}
+E = \frac`\{hc}`{\lambda} \implies \lambda = \frac`\{hc}`{E}
 $$
 
 $$
@@ -641,7 +641,7 @@ $$\mu_{\mathrm{ionic{}} = \frac{2.035 \times 10^{-29}}{3.336 \times 10^{-30}} = 
 
 The actual dipole moment is $1.08\;\mathrm{D{}$, so the percent ionic character is:
 
-$$\%\;\text{'\{'}ionic{'\}'} = \frac{1.08}{6.10} \times 100 = 17.7\%$$
+$$\%\;\text{ionic{} = \frac{1.08}{6.10} \times 100 = 17.7\%$$
 
 This result demonstrates that even highly polar bonds like $\mathrm{H\!-\!Cl{}$ have significant covalent character. Purely ionic bonding is an idealisation; real bonds exist on a continuum.
 
@@ -673,7 +673,7 @@ Net formal charge: $+3 + 3(-1) = 0$. This is valid but has high formal charges.
 
 Convert one lone pair on each oxygen into a bonding pair, forming three Xe=O double bonds:
 
-$$\mathrm{O{}=\mathrm{Xe{}(=\mathrm{O{})_2 \text{'\{'} with one lone pair on Xe{'\}'}$$
+$$\mathrm{O{}=\mathrm{Xe{}(=\mathrm{O{})_2 \text{ with one lone pair on Xe{}$$
 
 - Xe: $8 - 2 - 12/2 = 8 - 2 - 6 = 0$
 - Each O: $6 - 4 - 4/2 = 6 - 4 - 2 = 0$
@@ -701,7 +701,7 @@ Three equivalent resonance structures can be drawn, each with one N=O double bon
 
 The **resonance hybrid** has partial double-bond character between N and each O.
 
-$$\text{'\{'}Bond order{'\}'} = \frac{1\;\text{'\{'}(double bond){'\}'} + 2\;\text{'\{'}(single bonds){'\}'}}{3\;\text{'\{'}(N--O bonds){'\}'}} = \frac{1 + 2}{3} = \frac{3}{3} = 1.33$$
+$$\text{Bond order{} = \frac{1\;\text{(double bond){} + 2\;\text{(single bonds){}}{3\;\text{(N--O bonds){}} = \frac{1 + 2}{3} = \frac{3}{3} = 1.33$$
 
 The average bond order of $1.33$ means each N--O bond has approximately $1/3$ double-bond character and $2/3$ single-bond character. The observed bond length of $124\;\mathrm{pm{}$ is between the single-bond ($136\;\mathrm{pm{}$) and double-bond ($115\;\mathrm{pm{}$) values, consistent with a bond order of $1.33$.
 

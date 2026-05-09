@@ -107,7 +107,7 @@ This gives the same answer as part (a). Back-substitution always works because i
 
 Third student's answer: $\frac{\pi}{2} \approx 1.5708$.
 
-$$\text{'\{'}Percentage error{'\}'} = \frac{\lvert\frac{\pi}{2} - (\frac{\pi}{2} - 1)\rvert}{\lvert\frac{\pi}{2} - 1\rvert} \times 100\% = \frac{1}{\frac{\pi}{2} - 1} \times 100\% \approx 175.2\%$$
+$$\text{Percentage error{} = \frac{\lvert\frac{\pi}{2} - (\frac{\pi}{2} - 1)\rvert}{\lvert\frac{\pi}{2} - 1\rvert} \times 100\% = \frac{1}{\frac{\pi}{2} - 1} \times 100\% \approx 175.2\%$$
 
 The third student's answer is $175.2\%$ too large — a catastrophic error from omitting a single term.
 

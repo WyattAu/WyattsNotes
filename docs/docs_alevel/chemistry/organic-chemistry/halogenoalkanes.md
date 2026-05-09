@@ -423,7 +423,7 @@ $$
 Step 2: Nucleophilic substitution with cyanide ion:
 
 $$
-\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{Br{} \xrightarrow{\mathrm{KCN{},\,\text{'\{'}ethanol, reflux{'\}'}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CN{}
+\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{Br{} \xrightarrow{\mathrm{KCN{},\,\text{ethanol, reflux{}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CN{}
 $$
 
 The mechanism is SN2 (primary halogenoalkane). The cyanide ion attacks from the opposite side of the C--Br bond, giving the nitrile with an extended carbon chain (one extra carbon). $\mathrm{KCN{}$ is used instead of $\mathrm{NaCN{}$ because $\mathrm{KCN{}$ is more soluble in ethanol. The reaction is heated under reflux to increase the rate.
@@ -499,9 +499,9 @@ The excess ammonia ensures that the primary amine is the major product, minimisi
 5. Plot $[\mathrm{OH{}^-]$ against time for various initial concentrations.
 
 **Expected results:**
-- When $[\mathrm{1\text{'\{'}-{'\}'}bromobutane}]$ is doubled (keeping $[\mathrm{OH{}^-]$ constant), the initial rate doubles.
-- When $[\mathrm{OH{}^-]$ is doubled (keeping $[\mathrm{1\text{'\{'}-{'\}'}bromobutane}]$ constant), the initial rate doubles.
-- This confirms: Rate $= k[\mathrm{1\text{'\{'}-{'\}'}bromobutane}][\mathrm{OH{}^-]$ (second-order overall).
+- When $[\mathrm{1\text{-{}bromobutane}]$ is doubled (keeping $[\mathrm{OH{}^-]$ constant), the initial rate doubles.
+- When $[\mathrm{OH{}^-]$ is doubled (keeping $[\mathrm{1\text{-{}bromobutane}]$ constant), the initial rate doubles.
+- This confirms: Rate $= k[\mathrm{1\text{-{}bromobutane}][\mathrm{OH{}^-]$ (second-order overall).
 
 ### Example 4: Competition Between SN1 and E1
 
@@ -511,15 +511,15 @@ $$\mathrm{(CH{}_3)_3\mathrm{CBr{} \xrightarrow{\mathrm{EtOH{},\,50^\circ\mathrm{
 
 Both products form via the same carbocation intermediate:
 
-$$(\mathrm{CH{}_3)_3\mathrm{CBr{} \xrightarrow{\text{'\{'}slow{'\}'}} (\mathrm{CH{}_3)_3\mathrm{C{}^+ + \mathrm{Br{}^-$$
+$$(\mathrm{CH{}_3)_3\mathrm{CBr{} \xrightarrow{\text{slow{}} (\mathrm{CH{}_3)_3\mathrm{C{}^+ + \mathrm{Br{}^-$$
 
 **E1 pathway (major):** The carbocation loses a proton to the solvent:
 
-$$(\mathrm{CH{}_3)_3\mathrm{C{}^+ \xrightarrow{-\mathrm{H{}^+} (\mathrm{CH{}_3)_2\mathrm{C{}=\mathrm{CH{}_2 \text{'\{'} (2-methylpropene){'\}'}$$
+$$(\mathrm{CH{}_3)_3\mathrm{C{}^+ \xrightarrow{-\mathrm{H{}^+} (\mathrm{CH{}_3)_2\mathrm{C{}=\mathrm{CH{}_2 \text{ (2-methylpropene){}$$
 
 **SN1 pathway (minor):** The carbocation is attacked by ethanol:
 
-$$(\mathrm{CH{}_3)_3\mathrm{C{}^+ + \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{} \to (\mathrm{CH{}_3)_3\mathrm{COCH{}_2\mathrm{CH{}_3 \text{'\{'} (2-ethoxy-2-methylpropane){'\}'}$$
+$$(\mathrm{CH{}_3)_3\mathrm{C{}^+ + \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{} \to (\mathrm{CH{}_3)_3\mathrm{COCH{}_2\mathrm{CH{}_3 \text{ (2-ethoxy-2-methylpropane){}$$
 
 At elevated temperature, elimination predominates (higher activation energy pathway favoured by Arrhenius equation).
 
@@ -541,7 +541,7 @@ At elevated temperature, elimination predominates (higher activation energy path
 | 1-bromobutane | Moderate (seconds) | $\mathrm{AgBr{}$ (cream) |
 | 1-iodobutane | Fast (immediate) | $\mathrm{AgI{}$ (yellow) |
 
-**Conclusion:** The rate of hydrolysis increases in the order $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{Cl{} \lt \mathrm{C{}\text{'\{'}-{'\}'}\mathrm{Br{} \lt \mathrm{C{}\text{'\{'}-{'\}'}\mathrm{I{}$, consistent with the decreasing bond enthalpy: $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{Cl{} \,(339\,\mathrm{kJ/mol{}) \gt \mathrm{C{}\text{'\{'}-{'\}'}\mathrm{Br{} \,(276\,\mathrm{kJ/mol{}) \gt \mathrm{C{}\text{'\{'}-{'\}'}\mathrm{I{} \,(238\,\mathrm{kJ/mol{})$.
+**Conclusion:** The rate of hydrolysis increases in the order $\mathrm{C{}\text{-{}\mathrm{Cl{} \lt \mathrm{C{}\text{-{}\mathrm{Br{} \lt \mathrm{C{}\text{-{}\mathrm{I{}$, consistent with the decreasing bond enthalpy: $\mathrm{C{}\text{-{}\mathrm{Cl{} \,(339\,\mathrm{kJ/mol{}) \gt \mathrm{C{}\text{-{}\mathrm{Br{} \,(276\,\mathrm{kJ/mol{}) \gt \mathrm{C{}\text{-{}\mathrm{I{} \,(238\,\mathrm{kJ/mol{})$.
 
 ### Example 6: Using KCN for Chain Extension
 
@@ -553,7 +553,7 @@ $$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{Br{} + \mathrm{KCN{} \to \mathrm{CH{}_3\ma
 
 Step 2: Hydrolysis of the nitrile to carboxylic acid (reflux with dilute $\mathrm{HCl{}$):
 
-$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CN{} + 2\mathrm{H{}_2\mathrm{O{} + \mathrm{HCl{} \xrightarrow{\text{'\{'}reflux{'\}'}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{COOH{} + \mathrm{NH{}_4\mathrm{Cl{}$$
+$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CN{} + 2\mathrm{H{}_2\mathrm{O{} + \mathrm{HCl{} \xrightarrow{\text{reflux{}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{COOH{} + \mathrm{NH{}_4\mathrm{Cl{}$$
 
 **Mechanism of Step 1 (SN2):** The $\mathrm{CN{}^-$ ion attacks the electrophilic carbon of bromoethane from the opposite side of the C--Br bond. The C--Br bond breaks as the C--CN bond forms, giving propanenitrile. The chain has been extended by one carbon.
 
@@ -679,11 +679,11 @@ A student carried out an experiment to determine the order of reaction with resp
 
 (a) 2 marks: When $[\mathrm{OH{}^-]$ doubles, the rate doubles (e.g. $0.020 \to 0.040$: rate $4.0 \to 8.0$). This first-order relationship holds for all data pairs (1 mark). Therefore the reaction is first-order with respect to $\mathrm{OH{}^-$ (1 mark).
 
-(b) 3 marks: From rate $= k[\mathrm{1\text{'\{'}-{'\}'}bromobutane}]^1[\mathrm{OH{}^-]^1$:
+(b) 3 marks: From rate $= k[\mathrm{1\text{-{}bromobutane}]^1[\mathrm{OH{}^-]^1$:
 
-$k = \frac{\text{'\{'}rate{'\}'}}{[\mathrm{1\text{'\{'}-{'\}'}bromobutane}][\mathrm{OH{}^-]}$
+$k = \frac{\text{rate{}}{[\mathrm{1\text{-{}bromobutane}][\mathrm{OH{}^-]}$
 
-Using the first data point and assuming $[\mathrm{1\text{'\{'}-{'\}'}bromobutane}] = c$:
+Using the first data point and assuming $[\mathrm{1\text{-{}bromobutane}] = c$:
 
 $k = \frac{4.0 \times 10^{-5}}{c \times 0.020} = \frac{2.0 \times 10^{-3}}{c}$
 
@@ -739,10 +739,10 @@ Retrosynthetic analysis involves working backwards from the target molecule to i
 
 | Target | Disconnection | Equivalent synthons | Forward reagents |
 |---|---|---|---|
-| Alcohol $\mathrm{R-OH{}$ | $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{OH{} \to \mathrm{C{}\text{'\{'}-{'\}'}\mathrm{X{}$ | $\mathrm{R-X{}$ + $\mathrm{OH{}^-$ | $\mathrm{NaOH{}(aq)$, SN2 |
-| Nitrile $\mathrm{R-CN{}$ | $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{CN{} \to \mathrm{C{}\text{'\{'}-{'\}'}\mathrm{X{}$ | $\mathrm{R-X{}$ + $\mathrm{CN{}^-$ | $\mathrm{KCN{}$, ethanol |
-| Amine $\mathrm{R-NH_2{}$ | $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{NH_2{} \to \mathrm{C{}\text{'\{'}-{'\}'}\mathrm{X{}$ | $\mathrm{R-X{}$ + $\mathrm{NH_3{}$ | Excess $\mathrm{NH_3{}$ |
-| Ether $\mathrm{R-O-R'{}$ | $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{O{} \to \mathrm{C{}\text{'\{'}-{'\}'}\mathrm{X{}$ | $\mathrm{R-X{}$ + $\mathrm{R'O{}^-$ | Williamson synthesis |
+| Alcohol $\mathrm{R-OH{}$ | $\mathrm{C{}\text{-{}\mathrm{OH{} \to \mathrm{C{}\text{-{}\mathrm{X{}$ | $\mathrm{R-X{}$ + $\mathrm{OH{}^-$ | $\mathrm{NaOH{}(aq)$, SN2 |
+| Nitrile $\mathrm{R-CN{}$ | $\mathrm{C{}\text{-{}\mathrm{CN{} \to \mathrm{C{}\text{-{}\mathrm{X{}$ | $\mathrm{R-X{}$ + $\mathrm{CN{}^-$ | $\mathrm{KCN{}$, ethanol |
+| Amine $\mathrm{R-NH_2{}$ | $\mathrm{C{}\text{-{}\mathrm{NH_2{} \to \mathrm{C{}\text{-{}\mathrm{X{}$ | $\mathrm{R-X{}$ + $\mathrm{NH_3{}$ | Excess $\mathrm{NH_3{}$ |
+| Ether $\mathrm{R-O-R'{}$ | $\mathrm{C{}\text{-{}\mathrm{O{} \to \mathrm{C{}\text{-{}\mathrm{X{}$ | $\mathrm{R-X{}$ + $\mathrm{R'O{}^-$ | Williamson synthesis |
 | Alkene $\mathrm{C=C{}$ | $\mathrm{C=C{} \to \mathrm{C-C-X{}$ | Elimination of HX | $\mathrm{KOH{}$ in ethanol, $\Delta$ |
 
 ### Worked Retrosynthesis Example
@@ -751,11 +751,11 @@ Retrosynthetic analysis involves working backwards from the target molecule to i
 
 Retrosynthetic analysis:
 
-1. Disconnect the $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{NH{}_2$ bond: the amine comes from the nitrile $\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CN{}$ via reduction with $\mathrm{LiAlH{}_4$.
+1. Disconnect the $\mathrm{C{}\text{-{}\mathrm{NH{}_2$ bond: the amine comes from the nitrile $\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CN{}$ via reduction with $\mathrm{LiAlH{}_4$.
 
-2. Disconnect the $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{CN{}$ bond: the nitrile comes from 3-phenyl-1-bromopropane ($\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{Br{}$) via SN2 with $\mathrm{KCN{}$.
+2. Disconnect the $\mathrm{C{}\text{-{}\mathrm{CN{}$ bond: the nitrile comes from 3-phenyl-1-bromopropane ($\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{Br{}$) via SN2 with $\mathrm{KCN{}$.
 
-3. Disconnect the $\mathrm{C{}\text{'\{'}-{'\}'}\mathrm{Br{}$ bond: the bromoalkane comes from 3-phenylpropan-1-ol via $\mathrm{PBr{}_3$.
+3. Disconnect the $\mathrm{C{}\text{-{}\mathrm{Br{}$ bond: the bromoalkane comes from 3-phenylpropan-1-ol via $\mathrm{PBr{}_3$.
 
 4. The alcohol comes from the reduction of 3-phenylpropanal ($\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CHO{}$) with $\mathrm{NaBH{}_4$.
 

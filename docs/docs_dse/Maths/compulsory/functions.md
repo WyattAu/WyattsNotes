@@ -929,7 +929,7 @@ If the codomain is restricted to $[1, \infty)$, then $f$ is surjective.
 
 **Worked Example 11: Graph of a piecewise function**
 
-Sketch the graph of $f(x) = \begin{cases} |x| & \text{'\{'}if {'\}'} x \leq 2 \\ x^2 - 2x & \text{'\{'}if {'\}'} x > 2 \end{cases}$
+Sketch the graph of $f(x) = \begin{cases} |x| & \text{if {} x \leq 2 \\ x^2 - 2x & \text{if {} x > 2 \end{cases}$
 
 <details>
 <summary>Solution</summary>
@@ -1026,9 +1026,9 @@ Since $f(-x) = -f(x)$, $f$ is odd.
 
 $f(0) = c = 5$.
 
-$f(1) = a + b + 5 = 4 \implies a + b = -1 \quad \text{'\{'}(i){'\}'}$.
+$f(1) = a + b + 5 = 4 \implies a + b = -1 \quad \text{(i){}$.
 
-$f(-1) = a - b + 5 = 10 \implies a - b = 5 \quad \text{'\{'}(ii){'\}'}$.
+$f(-1) = a - b + 5 = 10 \implies a - b = 5 \quad \text{(ii){}$.
 
 (i) + (ii): $2a = 4 \implies a = 2$. From (i): $b = -3$.
 

@@ -12,9 +12,9 @@ description: Comprehensive guide to complex numbers for the International Baccal
 Cartesian form complex numbers ($z$) are separated to real ($a$) and imaginary parts ($bi$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z = a + bi, \quad a,b \in \mathbb{'\{'}R{'\}'}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## Polar Form
@@ -23,9 +23,9 @@ Complex numbers ($z$) in polar form are defined with argument ($\theta$) away fr
 circle, scaled by the magnitude ($r$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z = r(\cos \theta + i \sin \theta)
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## Euler's Form
@@ -33,9 +33,9 @@ $$
 Complex numbers ($z$) in Euler's form are defined by extending polar form, using Euler's number:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
    z = re^{i\theta}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## Conversions
@@ -46,32 +46,32 @@ As complex numbers is form by two coordinates (real and imaginary), the magnitud
 the Pythagorean identity:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     r = |z| = \sqrt{a^2+b^2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Similarly, the argument ($\theta$) can be determined by the two coordinates by the definition of
 $\tan(\theta) = \frac{b}{a}$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \theta = \arg(z) = \arctan \frac{b}{a}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Since $\tan \theta$ is undefined at $a = 0$, case piecewise definition can define $\theta$ at
 $a = 0$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \theta = \arg(z) =
-    \begin{cases}
+    \begin`\{cases}`
         \arctan \frac{b}{a} & a \neq 0\\
         \frac{\pi}{2} & a = 0, b \gt{} 0\\
         -\frac{\pi}{2} & a = 0, b \lt{} 0\\
-    \end{cases}
-\end{aligned}
+    \end`\{cases}`
+\end`\{aligned}`
 $$
 
 ### Polar to Cartesian
@@ -80,9 +80,9 @@ Since polar coordinates is already defined by the argument, conversion to cartes
 evaluating the definition of cartesian coordinate ($\mathrm{cis {}\theta$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z = r(\cos \theta + i \sin \theta)
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Euler to Polar
@@ -90,17 +90,17 @@ $$
 The equivalence of Euler and polar form can be shown by their Taylor series expansion:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     re^{i\theta} = r\left(1 + i\theta + \frac{(i\theta)^2}{2!} + \frac{(i\theta)^3}{3!} + \cdots \right)
 $$
 
 Separating real and imaginary parts:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     re^{i\theta} &= r\left(1 - \frac{\theta^2}{2!} + \frac{\theta^4}{4!} - \cdots \right) + ir\left(\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \cdots \right)\\
     &= r\cos\theta + ir\sin\theta
-\end{aligned}
+\end`\{aligned}`
 $$
 
 This gives **Euler's formula**:
@@ -124,10 +124,10 @@ This identity links five fundamental constants: $e$, $i$, $\pi$, $1$, and $0$.
 Add/subtract the real and imaginary parts separately:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     (a + bi) + (c + di) &= (a + c) + (b + d)i\\
     (a + bi) - (c + di) &= (a - c) + (b - d)i
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Multiplication
@@ -135,18 +135,18 @@ $$
 Use the distributive property and $i^2 = -1$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     (a + bi)(c + di) &= ac + adi + bci + bdi^2\\
     &= (ac - bd) + (ad + bc)i
-\end{aligned}
+\end`\{aligned}`
 $$
 
 In polar form, multiplication is simpler — multiply the magnitudes and add the arguments:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     r_1 e^{i\theta_1} \cdot r_2 e^{i\theta_2} &= r_1 r_2 \cdot e^{i(\theta_1 + \theta_2)}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Division
@@ -154,10 +154,10 @@ $$
 Multiply numerator and denominator by the conjugate of the denominator:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \frac{a + bi}{c + di} &= \frac{a + bi}{c + di} \cdot \frac{c - di}{c - di}\\
     &= \frac{(ac + bd) + (bc - ad)i}{c^2 + d^2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 In polar form, divide the magnitudes and subtract the arguments:
@@ -173,11 +173,11 @@ The complex conjugate of $z = a + bi$ is $\bar{z} = a - bi$.
 Key properties:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z \cdot \bar{z} &= a^2 + b^2 = |z|^2\\
     z + \bar{z} &= 2a \quad (\mathrm{real{})\\
     z - \bar{z} &= 2bi \quad (\mathrm{imaginary{})
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## The Argand Diagram
@@ -230,9 +230,9 @@ diagram.
 De Moivre's theorem states that for any integer $n$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \left(r(\cos\theta + i\sin\theta)\right)^n = r^n\left(\cos(n\theta) + i\sin(n\theta)\right)
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Or in Euler's form:
@@ -260,9 +260,9 @@ Every non-zero complex number has exactly $n$ distinct $n$th roots. To find the 
 $z = re^{i\theta}$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z^{1/n} &= r^{1/n} \cdot e^{i(\theta + 2k\pi)/n}, \quad k = 0, 1, 2, \ldots, n-1
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Roots of Unity
@@ -329,13 +329,13 @@ polynomial.
 **Solution:**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     P(z) &= (z - 2)(z - (1+i))(z - (1-i))\\
     &= (z - 2)\left((z - 1)^2 + 1\right)\\
     &= (z - 2)(z^2 - 2z + 2)\\
     &= z^3 - 2z^2 + 2z - 2z^2 + 4z - 4\\
     &= z^3 - 4z^2 + 6z - 4
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## Summary of Forms
@@ -367,11 +367,11 @@ $$
 **Proof:**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z_1 z_2 &= r_1 e^{i\theta_1} \cdot r_2 e^{i\theta_2}\\
     &= r_1 r_2 \cdot e^{i\theta_1 + i\theta_2}\\
     &= r_1 r_2 \cdot e^{i(\theta_1 + \theta_2)}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Therefore:
@@ -392,11 +392,11 @@ $$
 **Proof:**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \frac{z_1}{z_2} &= \frac{r_1 e^{i\theta_1}}{r_2 e^{i\theta_2}}\\
     &= \frac{r_1}{r_2} \cdot e^{i\theta_1} \cdot e^{-i\theta_2}\\
     &= \frac{r_1}{r_2} \cdot e^{i(\theta_1 - \theta_2)}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Therefore:
@@ -427,18 +427,18 @@ Cartesian form.
 **Solution:**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z_1 z_2 &= (2)(3) \cdot e^{i(\pi/3 - \pi/6)} = 6e^{i\pi/6}\\
     &= 6\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right)\\
     &= 6\left(\frac{\sqrt{3}}{2} + i \cdot \frac{1}{2}\right) = 3\sqrt{3} + 3i
-\end{aligned}
+\end`\{aligned}`
 $$
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \frac{z_1}{z_2} &= \frac{2}{3} \cdot e^{i(\pi/3 - (-\pi/6))} = \frac{2}{3} e^{i\pi/2}\\
     &= \frac{2}{3}\left(\cos\frac{\pi}{2} + i\sin\frac{\pi}{2}\right) = \frac{2}{3}i
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Worked Example: Argument of a Product
@@ -566,13 +566,13 @@ $$
 Let $z = x + iy$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     (x - 1)^2 + (y - 2)^2 &= (x - 5)^2 + (y + 2)^2\\
     x^2 - 2x + 1 + y^2 - 4y + 4 &= x^2 - 10x + 25 + y^2 + 4y + 4\\
     -2x - 4y + 5 &= -10x + 4y + 29\\
     8x - 8y &= 24\\
     x - y &= 3
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The perpendicular bisector is the line $x - y = 3$.
@@ -584,10 +584,10 @@ The perpendicular bisector is the line $x - y = 3$.
 **Solution:** Let $z = x + iy$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     x^2 + y^2 &= 25 \tag{1}\\
     (x - 3)^2 + y^2 &= 16 \tag{2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Subtracting $(2)$ from $(1)$:
@@ -622,12 +622,12 @@ $$
 **Inductive step ($n = k + 1$):**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \left(re^{i\theta}\right)^{k+1} &= \left(re^{i\theta}\right)^k \cdot re^{i\theta}\\
     &= r^k e^{ik\theta} \cdot r e^{i\theta} \quad \mathrm{(by hypothesis){}\\
     &= r^{k+1} \cdot e^{i(k\theta + \theta)}\\
     &= r^{k+1} e^{i(k+1)\theta}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 So the result holds for $n = k + 1$. By induction, the theorem is true for all $n \in \mathbb{'\{'}N{'\}'}$.
@@ -644,10 +644,10 @@ Expanding $(\cos\theta + i\sin\theta)^n$ using the binomial theorem and equating
 result gives trigonometric identities. For $n = 3$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \cos 3\theta + i\sin 3\theta &= (\cos\theta + i\sin\theta)^3\\
     &= \cos^3\theta + 3i\cos^2\theta\sin\theta - 3\cos\theta\sin^2\theta - i\sin^3\theta
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Equating real parts:
@@ -683,10 +683,10 @@ $$
 So $z^2 = e^{\pm 2\pi i/3}$. Taking square roots:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z^2 &= e^{2\pi i/3} \implies z = \pm\, e^{\pi i/3} = \pm\left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right)\\
     z^2 &= e^{-2\pi i/3} \implies z = \pm\, e^{-\pi i/3} = \pm\left(\frac{1}{2} - i\frac{\sqrt{3}}{2}\right)
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The five roots are $0,\; \pm\frac{1}{2} \pm i\frac{\sqrt{3}}{2}$.
@@ -699,11 +699,11 @@ and $z_C = 3 + 7i$. Show that triangle $ABC$ is isosceles and find its area.
 **Solution:**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     AB &= |z_B - z_A| = |4 + 2i| = \sqrt{16 + 4} = 2\sqrt{5}\\
     BC &= |z_C - z_B| = |-2 + 4i| = \sqrt{4 + 16} = 2\sqrt{5}\\
     CA &= |z_A - z_C| = |-2 - 6i| = \sqrt{4 + 36} = 2\sqrt{10}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Since $AB = BC = 2\sqrt{5}$, the triangle is isosceles with $AB = BC$.
@@ -711,13 +711,13 @@ Since $AB = BC = 2\sqrt{5}$, the triangle is isosceles with $AB = BC$.
 Using the formula for the area of a triangle with vertices at complex numbers:
 
 $$
-\begin{aligned}
-    \mathrm{Area{} &= \frac{1}{2}\left|\mathrm{Im{}\!\left(\bar{z}_{AB} \cdot z_{AC}\right)\right|\\
+\begin`\{aligned}`
+    \mathrm{Area{} &= \frac{1}{2}\left|\mathrm{Im{}\!\left(\bar{z}_`\{AB}` \cdot z_`\{AC}`\right)\right|\\
     &= \frac{1}{2}\left|\mathrm{Im{}\!\left((4 - 2i)(2 + 6i)\right)\right|\\
     &= \frac{1}{2}\left|\mathrm{Im{}(8 + 24i - 4i + 12)\right|\\
     &= \frac{1}{2}\left|\mathrm{Im{}(20 + 20i)\right|\\
     &= \frac{1}{2} \cdot 20 = 10
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Worked Example: Trigonometric Expansion via De Moivre
@@ -728,11 +728,11 @@ $$
 $\cos^5\theta = \left(\frac{e^{i\theta} + e^{-i\theta}}{2}\right)^5$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     2^5 \cos^5\theta &= (e^{i\theta} + e^{-i\theta})^5\\
     &= e^{5i\theta} + 5e^{3i\theta} + 10e^{i\theta} + 10e^{-i\theta} + 5e^{-3i\theta} + e^{-5i\theta}\\
     &= 2\cos 5\theta + 10\cos 3\theta + 20\cos\theta
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Therefore:
@@ -776,10 +776,10 @@ The function $\arctan(b/a)$ always returns a value in $(-\pi/2, \pi/2)$. If the 
 in the second or third quadrant, you must adjust:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \mathrm{Quadrant II:{}\quad &\theta = \pi - \arctan\!\left|\frac{b}{a}\right|\\
     \mathrm{Quadrant III:{}\quad &\theta = -\pi + \arctan\frac{b}{a}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Always sketch the Argand diagram before computing the argument.
@@ -845,12 +845,12 @@ $z_2 = -1 - i$.
 Let $z = x + iy$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     (x - 1)^2 + (y - 1)^2 &= (x + 1)^2 + (y + 1)^2\\
     x^2 - 2x + 1 + y^2 - 2y + 1 &= x^2 + 2x + 1 + y^2 + 2y + 1\\
     -4x - 4y &= 0\\
     y &= -x
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The locus is the line $y = -x$.
@@ -882,20 +882,20 @@ Use De Moivre's theorem to find $\cos 4\theta$ in terms of powers of $\cos\theta
 **Solution:**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \cos 4\theta + i\sin 4\theta &= (\cos\theta + i\sin\theta)^4\\
     &= \cos^4\theta + 4i\cos^3\theta\sin\theta - 6\cos^2\theta\sin^2\theta - 4i\cos\theta\sin^3\theta + \sin^4\theta
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Equating real parts and using $\sin^2\theta = 1 - \cos^2\theta$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \cos 4\theta &= \cos^4\theta - 6\cos^2\theta(1 - \cos^2\theta) + (1 - \cos^2\theta)^2\\
     &= \cos^4\theta - 6\cos^2\theta + 6\cos^4\theta + 1 - 2\cos^2\theta + \cos^4\theta\\
     &= 8\cos^4\theta - 8\cos^2\theta + 1
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>
@@ -911,14 +911,14 @@ $45^\circ$, so $z = t(1 + i)$ for $t \gt{} 0$.
 Substituting into $|z - 2| = 2$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     |t(1 + i) - 2| &= 2\\
     |(t - 2) + ti| &= 2\\
     (t - 2)^2 + t^2 &= 4\\
     t^2 - 4t + 4 + t^2 &= 4\\
     2t^2 - 4t &= 0\\
     2t(t - 2) &= 0
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Since $t \gt{} 0$, we get $t = 2$. Therefore $z = 2(1 + i) = 2 + 2i$.
@@ -960,10 +960,10 @@ Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2$ for all $z_1, z
 **Solution:** Let $z_1 = a + bi$ and $z_2 = c + di$.
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     |z_1 + z_2|^2 &= (a + c)^2 + (b + d)^2 = a^2 + 2ac + c^2 + b^2 + 2bd + d^2\\
     |z_1 - z_2|^2 &= (a - c)^2 + (b - d)^2 = a^2 - 2ac + c^2 + b^2 - 2bd + d^2
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Adding:
@@ -991,13 +991,13 @@ $$
 In Cartesian form:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     z_0 &= 1\\
     z_1 &= \cos\frac{2\pi}{5} + i\sin\frac{2\pi}{5}\\
     z_2 &= \cos\frac{4\pi}{5} + i\sin\frac{4\pi}{5}\\
     z_3 &= \cos\frac{6\pi}{5} + i\sin\frac{6\pi}{5}\\
     z_4 &= \cos\frac{8\pi}{5} + i\sin\frac{8\pi}{5}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 These are the roots of $z^5 - 1 = 0$. By Vieta's formulas, the sum of the roots equals the negative
@@ -1021,13 +1021,13 @@ Find the area of the triangle.
 numbers:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \mathrm{Area{} &= \frac{1}{2}\left|\mathrm{Im{}\!\left(\bar{z}_2 \cdot z_3\right)\right|\\
     &= \frac{1}{2}\left|\mathrm{Im{}\!\left((4 - 2i)(1 + 5i)\right)\right|\\
     &= \frac{1}{2}\left|\mathrm{Im{}(4 + 20i - 2i + 10)\right|\\
     &= \frac{1}{2}\left|\mathrm{Im{}(14 + 18i)\right|\\
     &= \frac{1}{2} \cdot 18 = 9
-\end{aligned}
+\end`\{aligned}`
 $$
 
 </details>

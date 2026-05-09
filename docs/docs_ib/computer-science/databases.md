@@ -186,11 +186,11 @@ attributes (borrowDate, returnDate) that belong to the relationship itself, not 
 | Key Type      | Definition                                                                   | Example                                       |
 | ------------- | ---------------------------------------------------------------------------- | --------------------------------------------- |
 | Superkey      | A set of attributes that uniquely identifies each tuple (may include extras) | `{studentID, name}`                           |
-| Candidate key | A minimal superkey (no proper subset is also a superkey)                     | `{studentID}`, `{email}`                      |
-| Primary key   | The candidate key chosen by the database designer to be the main identifier  | `{studentID}`                                 |
+| Candidate key | A minimal superkey (no proper subset is also a superkey)                     | ``\{studentID}``, ``\{email}``                      |
+| Primary key   | The candidate key chosen by the database designer to be the main identifier  | ``\{studentID}``                                 |
 | Foreign key   | An attribute that references the primary key of another table                | course.teacherID references Teacher.teacherID |
 | Composite key | A primary key consisting of two or more attributes                           | `{studentID, courseID}` in Enrollment         |
-| Alternate key | A candidate key not chosen as the primary key                                | `{email}` (if studentID is the primary key)   |
+| Alternate key | A candidate key not chosen as the primary key                                | ``\{email}`` (if studentID is the primary key)   |
 
 **Primary key requirements:** Uniqueness (no two rows have the same primary key value), non-null
 (every row must have a primary key), immutable (the value should not change over time).
@@ -215,8 +215,8 @@ Assume: bookID is unique, ISBN is unique, no two books share the same title and 
 <summary>Solution</summary>
 
 **Superkeys** (all attribute sets that uniquely identify each row):
-- `{bookID}`
-- `{ISBN}`
+- ``\{bookID}``
+- ``\{ISBN}``
 - `{bookID, ISBN}`
 - `{bookID, title}`
 - `{bookID, author}`
@@ -230,15 +230,15 @@ Assume: bookID is unique, ISBN is unique, no two books share the same title and 
 - ...and more (any set containing a candidate key is a superkey)
 
 **Candidate keys** (minimal superkeys -- no proper subset is also a superkey):
-- `{bookID}` -- minimal, uniquely identifies each row
-- `{ISBN}` -- minimal, uniquely identifies each row
+- ``\{bookID}`` -- minimal, uniquely identifies each row
+- ``\{ISBN}`` -- minimal, uniquely identifies each row
 - `{title, author}` -- minimal (title alone is not unique; author alone is not unique)
 
-**Primary key:** `{bookID}` -- chosen by the designer (surrogate key, simplest)
+**Primary key:** ``\{bookID}`` -- chosen by the designer (surrogate key, simplest)
 
-**Alternate keys:** `{ISBN}` and `{title, author}` -- candidate keys not chosen as primary key
+**Alternate keys:** ``\{ISBN}`` and `{title, author}` -- candidate keys not chosen as primary key
 
-Note: `{bookID, title}` is a superkey but NOT a candidate key because its proper subset `{bookID}`
+Note: `{bookID, title}` is a superkey but NOT a candidate key because its proper subset ``\{bookID}``
 is also a superkey.
 
 </details>

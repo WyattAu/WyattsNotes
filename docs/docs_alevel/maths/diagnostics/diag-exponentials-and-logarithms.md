@@ -75,7 +75,7 @@ To show there are no other solutions for $x \geq 0$: consider $g(x) = 2^x - x^2$
 
 **(a)** Let $u = e^x$. Since $e^x \gt 0$ for all $x \in \mathbb{'\{'}R{'\}'}$, we require $u \gt 0$.
 
-$$u^2 - 5u + 6 = 0 \implies (u-2)(u-3) = 0 \implies u = 2 \text{'\{'} or {'\}'} u = 3$$
+$$u^2 - 5u + 6 = 0 \implies (u-2)(u-3) = 0 \implies u = 2 \text{ or {} u = 3$$
 
 Both satisfy $u \gt 0$.
 
@@ -93,7 +93,7 @@ $$u^2 - 5u + 5 = 0 \implies u = \frac{5 \pm \sqrt{25 - 20}}{2} = \frac{5 \pm \sq
 
 Both roots are positive: $\frac{5 - \sqrt{5}}{2} \approx 1.382 \gt 0$ and $\frac{5 + \sqrt{5}}{2} \approx 3.618 \gt 0$.
 
-$$x = \ln\!\left(\frac{5 + \sqrt{5}}{2}\right) \quad \text{'\{'}or{'\}'} \quad x = \ln\!\left(\frac{5 - \sqrt{5}}{2}\right)$$
+$$x = \ln\!\left(\frac{5 + \sqrt{5}}{2}\right) \quad \text{or{} \quad x = \ln\!\left(\frac{5 - \sqrt{5}}{2}\right)$$
 
 **(c)** The student obtains $u = \frac{5 \pm \sqrt{5}}{2}$, both positive. The check is necessary because if a root were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$, then $u = -1$ or $u = 4$, and $u = -1$ would give $e^x = -1$, which has no real solution. This is a common trap: the substitution $u = e^x$ implicitly constrains $u \gt 0$, and students who forget this constraint accept spurious solutions.
 

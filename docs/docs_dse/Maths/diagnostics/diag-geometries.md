@@ -223,7 +223,7 @@ Since $OM$ bisects $\angle AOB$: $\angle AOM = 60°$.
 
 $$AM = OA \sin 60° = 10 \times \frac{\sqrt{3}}{2} = 5\sqrt{3}$$
 
-$$AB = 2 \times AM = 10\sqrt{3} \text{'\{'} cm{'\}'}$$
+$$AB = 2 \times AM = 10\sqrt{3} \text{ cm{}$$
 
 ---
 
@@ -275,7 +275,7 @@ By the intersecting chords theorem: $AP \times PB = CP \times PD$.
 
 $$4 \times 6 = 3 \times PD$$
 
-$$PD = \frac{24}{3} = 8 \text{'\{'} cm{'\}'}$$
+$$PD = \frac{24}{3} = 8 \text{ cm{}$$
 
 ---
 
@@ -294,9 +294,9 @@ A sector of a circle with radius $8$ cm and central angle $135°$ is drawn. Find
 
 (b) The triangle formed by the two radii and the chord:
 
-$$\text{'\{'}Area of triangle{'\}'} = \frac{1}{2} \times 8 \times 8 \times \sin 135° = 32 \times \frac{\sqrt{2}}{2} = 16\sqrt{2} \text{'\{'} cm{'\}'}^2$$
+$$\text{Area of triangle{} = \frac{1}{2} \times 8 \times 8 \times \sin 135° = 32 \times \frac{\sqrt{2}}{2} = 16\sqrt{2} \text{ cm{}^2$$
 
-$$\text{'\{'}Area of segment{'\}'} = 24\pi - 16\sqrt{2} \text{'\{'} cm{'\}'}^2$$
+$$\text{Area of segment{} = 24\pi - 16\sqrt{2} \text{ cm{}^2$$
 
 ---
 
@@ -457,7 +457,7 @@ In triangle $PQR$, $PQ = 7$ cm, $PR = 5$ cm, and $\angle QPR = 60°$.
 
 $$QR^2 = PQ^2 + PR^2 - 2 \cdot PQ \cdot PR \cdot \cos 60° = 49 + 25 - 2 \times 7 \times 5 \times \frac{1}{2} = 74 - 35 = 39$$
 
-$$QR = \sqrt{39} \text{'\{'} cm{'\}'}$$
+$$QR = \sqrt{39} \text{ cm{}$$
 
 (b) Area $= \dfrac{1}{2} \times PQ \times PR \times \sin 60° = \dfrac{1}{2} \times 7 \times 5 \times \dfrac{\sqrt{3}}{2} = \dfrac{35\sqrt{3}}{4}$ cm$^2$.
 
@@ -465,7 +465,7 @@ $$QR = \sqrt{39} \text{'\{'} cm{'\}'}$$
 
 $$\frac{35\sqrt{3}}{4} = \frac{1}{2} \times \sqrt{39} \times h$$
 
-$$h = \frac{35\sqrt{3}}{2\sqrt{39}} = \frac{35\sqrt{3}}{2\sqrt{39}} \cdot \frac{\sqrt{39}}{\sqrt{39}} = \frac{35\sqrt{117}}{78} = \frac{35 \times 3\sqrt{13}}{78} = \frac{35\sqrt{13}}{26} \text{'\{'} cm{'\}'}$$
+$$h = \frac{35\sqrt{3}}{2\sqrt{39}} = \frac{35\sqrt{3}}{2\sqrt{39}} \cdot \frac{\sqrt{39}}{\sqrt{39}} = \frac{35\sqrt{117}}{78} = \frac{35 \times 3\sqrt{13}}{78} = \frac{35\sqrt{13}}{26} \text{ cm{}$$
 
 ---
 

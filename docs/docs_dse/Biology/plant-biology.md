@@ -1033,9 +1033,9 @@ When a seed absorbs water (imbibition), the following metabolic changes occur:
 1. **Activation of enzymes:** Water activates enzymes (amylases, proteases, lipases) that were synthesised during seed maturation but were inactive in the dry seed
 2. **Resumption of respiration:** Aerobic respiration resumes, producing ATP for energy-requiring processes
 3. **Digestion of food reserves:** Enzymes break down stored food:
-   - Starch $\xrightarrow{\text{'\{'}amylase{'\}'}}$ maltose $\xrightarrow{\text{'\{'}maltase{'\}'}}$ glucose
-   - Proteins $\xrightarrow{\text{'\{'}proteases{'\}'}}$ amino acids
-   - Lipids $\xrightarrow{\text{'\{'}lipases{'\}'}}$ glycerol + fatty acids
+   - Starch $\xrightarrow{\text{amylase{}}$ maltose $\xrightarrow{\text{maltase{}}$ glucose
+   - Proteins $\xrightarrow{\text{proteases{}}$ amino acids
+   - Lipids $\xrightarrow{\text{lipases{}}$ glycerol + fatty acids
 4. **Transport to growing regions:** Soluble products are transported from the cotyledons (or endosperm) to the growing embryo (radicle and plumule)
 5. **Cell division and elongation:** The radicle emerges first, growing downwards into the soil; the plumule grows upwards towards light
 6. **Photosynthesis begins:** Once the plumule emerges above ground and develops leaves, the seedling transitions to autotrophic nutrition
@@ -1077,9 +1077,9 @@ Photoperiodism is controlled by a pigment called **phytochrome**, which exists i
 
 **Conversion:**
 
-$$\mathrm{Pr{} \xrightarrow{\text{'\{'}red light (660 nm){'\}'}} \mathrm{Pfr{}$$
+$$\mathrm{Pr{} \xrightarrow{\text{red light (660 nm){}} \mathrm{Pfr{}$$
 
-$$\mathrm{Pfr{} \xrightarrow{\text{'\{'}far-red light (730 nm) or darkness{'\}'}} \mathrm{Pr{}$$
+$$\mathrm{Pfr{} \xrightarrow{\text{far-red light (730 nm) or darkness{}} \mathrm{Pr{}$$
 
 During daylight, $\mathrm{Pr{}$ is converted to $\mathrm{Pfr{}$. In darkness, $\mathrm{Pfr{}$ slowly reverts to $\mathrm{Pr{}$.
 
@@ -1428,7 +1428,7 @@ The cohesion-tension theory explains how water is transported upwards through th
 4. **Chemiosmosis:** H$^+$ ions flow back down their concentration gradient through ATP synthase (a transmembrane protein channel). The flow of H$^+$ drives the rotation of ATP synthase, which catalyses the synthesis of ATP from ADP and P$_i$. This is **photophosphorylation**
 5. **Photosystem I (PSI):** Light energy excites another chlorophyll molecule (P700), which releases another electron. This electron replaces the electron that left PSI. The excited electron from PSI passes to ferredoxin, then to NADP$^+$ reductase
 6. **NADPH production:** NADP$^+$ reductase transfers two electrons and one H$^+$ to NADP$^+$, reducing it to NADPH:
-   $$\text{'\{'}NADP{'\}'}^+ + 2e^- + \mathrm{H^+{} \rightarrow \text{'\{'}NADPH{'\}'}$$
+   $$\text{NADP{}^+ + 2e^- + \mathrm{H^+{} \rightarrow \text{NADPH{}$$
 
 ### The Light-Independent Reactions (Calvin Cycle)
 
@@ -1448,7 +1448,7 @@ The cohesion-tension theory explains how water is transported upwards through th
 
 **Overall equation for the Calvin cycle:**
 
-$$3\text{'\{'}CO{'\}'}_2 + 6\text{'\{'}NADPH{'\}'} + 9\text{'\{'}ATP{'\}'} \rightarrow \text{'\{'}triose phosphate (GALP){'\}'} + 6\text{'\{'}NADP{'\}'}^+ + 9\text{'\{'}ADP{'\}'} + 8\text{'\{'}P{'\}'}_i$$
+$$3\text{CO{}_2 + 6\text{NADPH{} + 9\text{ATP{} \rightarrow \text{triose phosphate (GALP){} + 6\text{NADP{}^+ + 9\text{ADP{} + 8\text{P{}_i$$
 
 To produce one molecule of glucose (6 carbons), the Calvin cycle must turn 6 times (fixing 6 CO$_2$).
 
@@ -1484,7 +1484,7 @@ To produce one molecule of glucose (6 carbons), the Calvin cycle must turn 6 tim
 | Raw materials             | CO$_2$ and H$_2$O                                                                                                         | Glucose and O$_2$                                                                                                        |
 | Products                  | Glucose and O$_2$                                                                                                         | CO$_2$ and H$_2$O; ATP                                                                                                  |
 | Energy change             | Light energy $\rightarrow$ chemical energy (stored in glucose)                                                           | Chemical energy (in glucose) $\rightarrow$ ATP (usable energy)                                                          |
-| Equation                  | $6\text{'\{'}CO{'\}'}_2 + 6\text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'} \xrightarrow{\text{'\{'}light{'\}'}} \text{'\{'}C{'\}'}_6\text{'\{'}H{'\}'}_{12}\text{'\{'}O{'\}'}_6 + 6\text{'\{'}O{'\}'}_2$ | $\text{'\{'}C{'\}'}_6\text{'\{'}H{'\}'}_{12}\text{'\{'}O{'\}'}_6 + 6\text{'\{'}O{'\}'}_2 \rightarrow 6\text{'\{'}CO{'\}'}_2 + 6\text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'} + \text{'\{'}ATP{'\}'}$ |
+| Equation                  | $6\text{CO{}_2 + 6\text{H{}_2\text{O{} \xrightarrow{\text{light{}} \text{C{}_6\text{H{}_{12}\text{O{}_6 + 6\text{O{}_2$ | $\text{C{}_6\text{H{}_{12}\text{O{}_6 + 6\text{O{}_2 \rightarrow 6\text{CO{}_2 + 6\text{H{}_2\text{O{} + \text{ATP{}$ |
 | Gas exchange              | Takes in CO$_2$; releases O$_2$                                                                                           | Takes in O$_2$; releases CO$_2$                                                                                          |
 
 **Net gas exchange:**

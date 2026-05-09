@@ -659,7 +659,7 @@ A coin is tossed until the first head appears. The probability of heads is $p$.
 
 **(a)** $X \sim \mathrm{Geo{}(p)$: $E(X) = 1/p$, $\mathrm{Var{}(X) = (1-p)/p^2$.
 
-**(b)** $P(X \text{'\{'} is even{'\}'}) = P(X = 2) + P(X = 4) + P(X = 6) + \cdots$
+**(b)** $P(X \text{ is even{}) = P(X = 2) + P(X = 4) + P(X = 6) + \cdots$
 
 $$= qp + q^3p + q^5p + \cdots = qp(1 + q^2 + q^4 + \cdots) = qp \cdot \frac{1}{1 - q^2} = \frac{qp}{(1-q)(1+q)} = \frac{q}{1+q}$$
 
@@ -1015,7 +1015,7 @@ This is $\mathrm{Bin{}(n, \lambda_1/(\lambda_1+\lambda_2))$ — the conditional 
 
 The number of trials until the $r$-th success follows $\mathrm{NegBin{}(r, p)$:
 
-$$P(X = n) = \binom{n-1}{r-1}p^r(1-p)^{n-r} \quad \text{'\{'}for {'\}'} n = r, r+1, \ldots$$
+$$P(X = n) = \binom{n-1}{r-1}p^r(1-p)^{n-r} \quad \text{for {} n = r, r+1, \ldots$$
 
 $E(X) = \dfrac{r}{p}$, $\mathrm{Var{}(X) = \dfrac{r(1-p)}{p^2}$.
 
@@ -1041,7 +1041,7 @@ Calls arrive at rate 3 per hour. Find the probability that the third call arrive
 
 The time of the 3rd call is $\mathrm{Gamma{}(3, 3)$ (sum of 3 independent $\mathrm{Exp{}(3)$ variables).
 
-$P(T_3 < 1) = P(\text{'\{'}at least 3 calls in 1 hour{'\}'}) = \sum_{k=3}^{\infty}\dfrac{e^{-3}3^k}{k!}$
+$P(T_3 < 1) = P(\text{at least 3 calls in 1 hour{}) = \sum_{k=3}^{\infty}\dfrac{e^{-3}3^k}{k!}$
 
 $= 1 - P(X \leq 2) = 1 - e^{-3}\!\left(1 + 3 + \dfrac{9}{2}\right) = 1 - e^{-3}\cdot 8.5$
 

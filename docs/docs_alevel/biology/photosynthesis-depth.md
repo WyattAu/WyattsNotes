@@ -24,7 +24,7 @@ Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 4
 
 Photosynthesis is the process by which photoautotrophs convert light energy into chemical energy stored in organic molecules. The overall equation for photosynthesis:
 
-$$6\mathrm{CO_2{} + 6\mathrm{H_2O{} \xrightarrow{\text{'\{'}light{'\}'}} \mathrm{C_6H_{12}O_6} + 6\mathrm{O_2{}$$
+$$6\mathrm{CO_2{} + 6\mathrm{H_2O{} \xrightarrow{\text{light{}} \mathrm{C_6H_{12}O_6} + 6\mathrm{O_2{}$$
 
 $$\Delta G = +2870\ \mathrm{kJ\ mol^{-1}}$$
 
@@ -108,7 +108,7 @@ The resulting chromatogram shows separated bands: carotenoids (top, most soluble
 
 The **$R_f$ value** (retention factor) can be calculated:
 
-$$R_f = \frac{\text{'\{'}Distance travelled by pigment{'\}'}}{\text{'\{'}Distance travelled by solvent front{'\}'}}$$
+$$R_f = \frac{\text{Distance travelled by pigment{}}{\text{Distance travelled by solvent front{}}$$
 
 ## 4. Light-Dependent Reactions
 
@@ -187,9 +187,9 @@ Rubisco is the most abundant protein on Earth. It is also a relatively slow enzy
 
 **Step 2: Reduction of GP to triose phosphate (TP).** GP is phosphorylated by ATP (from the light-dependent reactions) and then reduced by $\mathrm{NADPH{}$:
 
-$$\mathrm{GP + ATP \to 1,3\text{'\{'}-{'\}'}bisphosphoglycerate + ADP}$$
+$$\mathrm{GP + ATP \to 1,3\text{-{}bisphosphoglycerate + ADP}$$
 
-$$\mathrm{1,3\text{'\{'}-{'\}'}BPG + NADPH + H^+ \to triose\ phosphate\ (TP,\ G3P) + NADP^+ + P_i}$$
+$$\mathrm{1,3\text{-{}BPG + NADPH + H^+ \to triose\ phosphate\ (TP,\ G3P) + NADP^+ + P_i}$$
 
 This step requires 1 ATP and 1 $\mathrm{NADPH{}$ per molecule of GP (2 ATP and 2 $\mathrm{NADPH{}$ per $\mathrm{CO_2{}$ fixed).
 
@@ -491,7 +491,7 @@ The rate of photosynthesis in a crop canopy depends on how much light the leaves
 
 **Net photosynthesis** is the rate of $\mathrm{CO_2{}$ uptake minus the rate of $\mathrm{CO_2{}$ release from respiration:
 
-$$\text{'\{'}Net photosynthesis{'\}'} = \text{'\{'}Gross photosynthesis{'\}'} - \text{'\{'}Respiration{'\}'}$$
+$$\text{Net photosynthesis{} = \text{Gross photosynthesis{} - \text{Respiration{}$$
 
 **Worked Example.** A plant's leaves fix $\mathrm{CO_2{}$ at a rate of $12.0\ \mu\mathrm{mol\ m^{-2}\ s^{-1}}$ (gross photosynthesis) and release $\mathrm{CO_2{}$ at a rate of $2.0\ \mu\mathrm{mol\ m^{-2}\ s^{-1}}$ (respiration).
 
@@ -571,7 +571,7 @@ A student measures the time for hydrogencarbonate indicator to change from red t
 | --- | --- | --- | --- | --- | --- | --- |
 | Time to colour change (minutes) | 25 | 14 | 8 | 5.5 | 3.2 | 3.0 |
 
-The rate of photosynthesis is proportional to $1/\text{'\{'}time{'\}'}$:
+The rate of photosynthesis is proportional to $1/\text{time{}$:
 
 | Light intensity | Rate (1/time, $\mathrm{min^{-1}}$) | Rate ($\mu\mathrm{mol\ m^{-2}\ s^{-1}}$) |
 | --- | --- | --- |
@@ -600,7 +600,7 @@ Human activities release approximately $9.5 \times 10^{15}\ \mathrm{g\ C\ yr^{-1
 
 For a stable atmospheric $\mathrm{CO_2{}$ concentration:
 
-$$\text{'\{'}Photosynthetic fixation{'\}'} = \text{'\{'}Respiration{'\}'} + \text{'\{'}Combustion{'\}'} + \text{'\{'}Decomposition{'\}'}$$
+$$\text{Photosynthetic fixation{} = \text{Respiration{} + \text{Combustion{} + \text{Decomposition{}$$
 
 Currently, anthropogenic $\mathrm{CO_2{}$ emissions exceed the capacity of natural sinks (photosynthesis and ocean absorption), leading to accumulation. Deforestation reduces photosynthetic capacity, further worsening the imbalance. Reforestation and increasing photosynthetic efficiency (e.g., through genetic engineering of $\mathrm{C_4{}$ pathways into $\mathrm{C_3{}$ crops) are potential mitigation strategies.
 
@@ -702,7 +702,7 @@ Chromatography separates mixtures based on differential partitioning between a *
    - **Affinity** for the stationary phase (greater affinity = travels less far).
 6. Calculate the **retention factor ($R_f$)** for each pigment:
 
-$$R_f = \frac{\text{'\{'}Distance travelled by pigment{'\}'}}{\text{'\{'}Distance travelled by solvent front{'\}'}}$$
+$$R_f = \frac{\text{Distance travelled by pigment{}}{\text{Distance travelled by solvent front{}}$$
 
 ### 16.2 Expected Results
 
@@ -847,7 +847,7 @@ This cost is offset by the increased crop yield (typically 20--40% increase in b
 
 Daily light integral (DLI) for a 16-hour photoperiod:
 
-$\text{'\{'}DLI{'\}'} = 200 \times 16 \times 3600 \times 10^{-6} = 200 \times 57600 \times 10^{-6} = 11.52\ \mathrm{mol\ photons\ m^{-2}\ day^{-1}}$.
+$\text{DLI{} = 200 \times 16 \times 3600 \times 10^{-6} = 200 \times 57600 \times 10^{-6} = 11.52\ \mathrm{mol\ photons\ m^{-2}\ day^{-1}}$.
 
 Total daily light $= 11.52 \times 200 = 2304\ \mathrm{mol\ photons\ day^{-1}}$.
 
@@ -987,7 +987,7 @@ Ingenhousz showed that plants produce oxygen only in the presence of light (not 
 
 Robert Hill demonstrated that isolated chloroplasts (in the absence of $\mathrm{CO_2{}$) can produce oxygen when illuminated in the presence of an artificial electron acceptor (e.g., ferricyanide). This proved that oxygen production (photolysis of water) is separate from carbon fixation (the Calvin cycle), which requires $\mathrm{CO_2{}$.
 
-$$2\mathrm{H_2O + 2\ \text{'\{'}ferricyanide (oxidised){'\}'} \xrightarrow{\text{'\{'}light, chloroplasts{'\}'}} O_2 + 2\ \text{'\{'}ferrocyanide (reduced){'\}'} + 4H^+}$$
+$$2\mathrm{H_2O + 2\ \text{ferricyanide (oxidised){} \xrightarrow{\text{light, chloroplasts{}} O_2 + 2\ \text{ferrocyanide (reduced){} + 4H^+}$$
 
 ### 21.5 Calvin, Benson, and Bassham (1950s)
 
@@ -1115,7 +1115,7 @@ Water deficit affects photosynthesis in several ways:
 2. Place the boiling tube in a water bath at constant temperature (e.g., 25 degrees C).
 3. Position a lamp at measured distances from the boiling tube (e.g., 5, 10, 15, 20, 25, 30 cm).
 4. Record the distance and measure the rate of $\mathrm{O_2{}$ production (bubble count or gas syringe) at each distance.
-5. Calculate light intensity using the inverse square law: $\text{'\{'}light intensity{'\}'} \propto \frac{1}{d^2}$ (where $d$ is the distance from the lamp).
+5. Calculate light intensity using the inverse square law: $\text{light intensity{} \propto \frac{1}{d^2}$ (where $d$ is the distance from the lamp).
 
 **Expected results:**
 - At low light intensity, the rate of photosynthesis increases linearly with light intensity (light is the limiting factor).
@@ -1312,7 +1312,7 @@ When the Calvin cycle requires more ATP than $\mathrm{NADPH{}$ (or when $\mathrm
 
 When $\mathrm{O_2{}$ concentration is high (or $\mathrm{CO_2{}$ is low), Rubisco catalyses the oxygenation of RuBP:
 
-$$\text{'\{'}RuBP{'\}'} + \mathrm{O_2{} \to \text{'\{'}1 GP (3C){'\}'} + \text{'\{'}glycolate (2C){'\}'}$$
+$$\text{RuBP{} + \mathrm{O_2{} \to \text{1 GP (3C){} + \text{glycolate (2C){}$$
 
 Glycolate is transported to peroxisomes, where it is converted to glycine (2C). Two glycines are converted to serine (3C) + $\mathrm{CO_2{}$ + $\mathrm{NH_3{}$ (in mitochondria). Serine is converted back to GP.
 

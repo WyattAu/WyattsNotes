@@ -129,7 +129,7 @@ The doctor diagnoses the condition if $B > 58$.
 
 For healthy individuals: $B \sim N(50, 8^2) = N(50, 64)$.
 
-$$\mathrm{P{}(\text{'\{'}Type I error{'\}'}) = \mathrm{P{}(B > 58 \mid \mu = 50) = \mathrm{P{}\left(Z > \frac{58 - 50}{8}\right) = \mathrm{P{}(Z > 1)$$
+$$\mathrm{P{}(\text{Type I error{}) = \mathrm{P{}(B > 58 \mid \mu = 50) = \mathrm{P{}\left(Z > \frac{58 - 50}{8}\right) = \mathrm{P{}(Z > 1)$$
 
 $$= 1 - \Phi(1) = 1 - 0.8413 = 0.1587$$
 
@@ -139,7 +139,7 @@ The probability of a Type I error is approximately 15.9%.
 
 For affected individuals: $B \sim N(62, 8^2) = N(62, 64)$.
 
-$$\mathrm{P{}(\text{'\{'}Type II error{'\}'}) = \mathrm{P{}(B \leq 58 \mid \mu = 62) = \mathrm{P{}\left(Z \leq \frac{58 - 62}{8}\right) = \mathrm{P{}(Z \leq -0.5)$$
+$$\mathrm{P{}(\text{Type II error{}) = \mathrm{P{}(B \leq 58 \mid \mu = 62) = \mathrm{P{}\left(Z \leq \frac{58 - 62}{8}\right) = \mathrm{P{}(Z \leq -0.5)$$
 
 $$= \Phi(-0.5) = 1 - \Phi(0.5) = 1 - 0.6915 = 0.3085$$
 
@@ -227,7 +227,7 @@ $$z = \frac{\bar{x} - 0}{3} = \frac{-5.2}{3} = -1.733$$
 
 This is a one-tailed test (left-tailed), so the p-value is:
 
-$$\text{'\{'}p-value{'\}'} = \mathrm{P{}(Z \leq -1.733) = \Phi(-1.733) = 1 - \Phi(1.733) = 1 - 0.9586 = 0.0414$$
+$$\text{p-value{} = \mathrm{P{}(Z \leq -1.733) = \Phi(-1.733) = 1 - \Phi(1.733) = 1 - 0.9586 = 0.0414$$
 
 The p-value is approximately 0.0414.
 
@@ -245,17 +245,17 @@ Since $0.0414 \lt 0.05$, the result is statistically significant at the 5% level
 
 > The probability of obtaining a test statistic at least as extreme as the one observed, **assuming $H_0$ is true**.
 
-The p-value is a conditional probability: $\mathrm{P{}(\text{'\{'}data{'\}'} \mid H_0)$, not $\mathrm{P{}(H_0 \mid \text{'\{'}data{'\}'})$.
+The p-value is a conditional probability: $\mathrm{P{}(\text{data{} \mid H_0)$, not $\mathrm{P{}(H_0 \mid \text{data{})$.
 
 A large p-value means the observed data is consistent with $H_0$, but it does not mean $H_0$ is probably true. The data could also be consistent with a small but non-zero effect. For example, if the true effect is a reduction of 2 mmHg (which is clinically meaningful), a small sample might still produce a large p-value.
 
-To determine $\mathrm{P{}(H_0 \mid \text{'\{'}data{'\}'})$ would require Bayesian methods (prior probabilities), which go beyond the scope of classical hypothesis testing.
+To determine $\mathrm{P{}(H_0 \mid \text{data{})$ would require Bayesian methods (prior probabilities), which go beyond the scope of classical hypothesis testing.
 
 **(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$, so $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
 
 $$z = \frac{-5.2}{\sqrt{4.5}} = \frac{-5.2}{2.121} = -2.451$$
 
-$$\text{'\{'}p-value{'\}'} = \mathrm{P{}(Z \leq -2.451) = 1 - \Phi(2.451) = 1 - 0.9929 = 0.0071$$
+$$\text{p-value{} = \mathrm{P{}(Z \leq -2.451) = 1 - \Phi(2.451) = 1 - 0.9929 = 0.0071$$
 
 The new p-value is approximately 0.0071, which is much smaller than the original 0.0414.
 
@@ -279,19 +279,19 @@ After a new traffic light system is installed, the engineer records the number o
 
 $$6, 7, 5, 8, 4, 9, 6, 7, 5, 8, 6, 7, 4, 9, 5, 8, 6, 7, 5, 8$$
 
-**(a)** The engineer proposes to use a Poisson distribution to model the data. Before the new system, the number of vehicles $X \sim \text{'\{'}Po{'\}'}(8)$. State the mean and variance of $X$, and explain why the Poisson distribution is a reasonable model for this scenario.
+**(a)** The engineer proposes to use a Poisson distribution to model the data. Before the new system, the number of vehicles $X \sim \text{Po{}(8)$. State the mean and variance of $X$, and explain why the Poisson distribution is a reasonable model for this scenario.
 
 **(b)** The engineer wants to test whether the new traffic light system has changed the mean number of vehicles per interval. She decides to use the sample mean. State why using the sample mean directly with a Poisson test is difficult, and explain why a normal approximation would be appropriate.
 
 **(c)** Using the sample data, calculate the sample mean $\bar{x}$ and carry out a hypothesis test at the 5% significance level to determine whether the mean number of vehicles has decreased. Use the normal approximation to the Poisson distribution.
 
-**(d)** An alternative approach is to use the total count $T = \sum x_i$ and model $T \sim \text{'\{'}Po{'\}'}(20\lambda)$ under the null hypothesis. Carry out this test and show that it gives the same conclusion as part (c).
+**(d)** An alternative approach is to use the total count $T = \sum x_i$ and model $T \sim \text{Po{}(20\lambda)$ under the null hypothesis. Carry out this test and show that it gives the same conclusion as part (c).
 
 [Difficulty: hard. Combines distribution selection with hypothesis testing using two equivalent approaches.]
 
 **Solution:**
 
-**(a)** For $X \sim \text{'\{'}Po{'\}'}(8)$:
+**(a)** For $X \sim \text{Po{}(8)$:
 
 $$\mathrm{E{}(X) = 8, \quad \mathrm{Var{}(X) = 8$$
 
@@ -306,7 +306,7 @@ These are the standard assumptions of the Poisson process.
 **(b)** Testing the sample mean directly with a Poisson distribution is difficult because the sum (or mean) of independent Poisson random variables is also Poisson-distributed, but the Poisson distribution is discrete and the critical values must be found from Poisson cumulative probability tables. With a mean of 8 per interval and 20 intervals, the total is Po(160), which is large and would require interpolation in tables.
 
 The normal approximation is appropriate because:
-- The sum of independent Poisson variables is Poisson: $T \sim \text{'\{'}Po{'\}'}(160)$.
+- The sum of independent Poisson variables is Poisson: $T \sim \text{Po{}(160)$.
 - Since $\lambda = 160$ is large ($\lambda > 10$), the normal approximation $T \approx N(160, 160)$ is very accurate.
 - The sample mean $\bar{X} = \frac{T}{n}$ is then approximately $N\left(\lambda, \frac{\lambda}{n}\right) = N\left(8, \frac{160}{400}\right) = N(8, 0.4)$.
 
@@ -330,7 +330,7 @@ Since $0.0199 \lt 0.05$, we reject $H_0$.
 
 **(d)** The total count is $T = 134$.
 
-Under $H_0$: $T \sim \text{'\{'}Po{'\}'}(160)$, approximated by $N(160, 160)$, $\sigma = \sqrt{160} \approx 12.649$.
+Under $H_0$: $T \sim \text{Po{}(160)$, approximated by $N(160, 160)$, $\sigma = \sqrt{160} \approx 12.649$.
 
 With continuity correction (since $T$ is discrete and we want $\mathrm{P{}(T \leq 134)$):
 
@@ -386,7 +386,7 @@ $$\bar{X} \sim N\left(480, \frac{1600}{36}\right) = N(480, 44.44)$$
 
 We fail to reject $H_0$ when $\bar{X} > 489.03$:
 
-$$\mathrm{P{}(\text{'\{'}Type II error{'\}'}) = \mathrm{P{}(\bar{X} > 489.03 \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{489.03 - 480}{20/3}\right)$$
+$$\mathrm{P{}(\text{Type II error{}) = \mathrm{P{}(\bar{X} > 489.03 \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{489.03 - 480}{20/3}\right)$$
 
 $$= \mathrm{P{}\left(Z > \frac{9.03 \times 3}{20}\right) = \mathrm{P{}(Z > 1.355)$$
 
@@ -396,11 +396,11 @@ The probability of a Type II error is approximately 8.8%.
 
 **(c)** The power of the test is the probability of correctly rejecting $H_0$ when $H_1$ is true:
 
-$$\text{'\{'}Power{'\}'} = 1 - \mathrm{P{}(\text{'\{'}Type II error{'\}'}) = 1 - 0.0877 = 0.9123$$
+$$\text{Power{} = 1 - \mathrm{P{}(\text{Type II error{}) = 1 - 0.0877 = 0.9123$$
 
 The power is approximately 91.2% when the true mean is 480 hours.
 
-**(d)** We need Power $\geq 0.90$ when $\mu = 480$, i.e., $\mathrm{P{}(\text{'\{'}Type II error{'\}'}) \leq 0.10$.
+**(d)** We need Power $\geq 0.90$ when $\mu = 480$, i.e., $\mathrm{P{}(\text{Type II error{}) \leq 0.10$.
 
 Let $n$ be the sample size. Under $H_0$: $\bar{X} \sim N(500, \frac{1600}{n})$.
 
@@ -410,7 +410,7 @@ $$c = 500 - 1.6449 \times \frac{40}{\sqrt{n}}$$
 
 Under $H_1$ ($\mu = 480$): $\bar{X} \sim N(480, \frac{1600}{n})$.
 
-$$\mathrm{P{}(\text{'\{'}Type II error{'\}'}) = \mathrm{P{}\left(\bar{X} > 500 - 1.6449 \times \frac{40}{\sqrt{n}} \;\middle|\; \mu = 480\right) \leq 0.10$$
+$$\mathrm{P{}(\text{Type II error{}) = \mathrm{P{}\left(\bar{X} > 500 - 1.6449 \times \frac{40}{\sqrt{n}} \;\middle|\; \mu = 480\right) \leq 0.10$$
 
 $$\mathrm{P{}\left(Z > \frac{500 - 1.6449 \times 40/\sqrt{n} - 480}{40/\sqrt{n}}\right) \leq 0.10$$
 
@@ -436,7 +436,7 @@ Since $n$ must be an integer, the minimum sample size is $n = 35$.
 
 Critical value $= 500 - 1.6449 \times 6.761 = 500 - 11.12 = 488.88$.
 
-$$\mathrm{P{}(\text{'\{'}Type II error{'\}'} \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{488.88 - 480}{6.761}\right) = \mathrm{P{}(Z > 1.314) = 0.0944$$
+$$\mathrm{P{}(\text{Type II error{} \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{488.88 - 480}{6.761}\right) = \mathrm{P{}(Z > 1.314) = 0.0944$$
 
 Power $= 1 - 0.0944 = 0.9056 = 90.6\% \geq 90\%$.
 
@@ -444,7 +444,7 @@ With $n = 34$: $\sigma_{\bar{X}} = \frac{40}{\sqrt{34}} = 6.860$.
 
 Critical value $= 500 - 1.6449 \times 6.860 = 488.71$.
 
-$$\mathrm{P{}(\text{'\{'}Type II error{'\}'} \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{488.71 - 480}{6.860}\right) = \mathrm{P{}(Z > 1.270) = 0.1020$$
+$$\mathrm{P{}(\text{Type II error{} \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{488.71 - 480}{6.860}\right) = \mathrm{P{}(Z > 1.270) = 0.1020$$
 
 Power $= 89.8\% \lt 90\%$.
 
@@ -496,7 +496,7 @@ Note: $r^2$ is always non-negative, regardless of the sign of $r$. The sign of $
 
 **(c)** For $S = 8$ hours:
 
-$$R = 580 - 28(8) = 580 - 224 = 356 \text{'\{'} ms{'\}'}$$
+$$R = 580 - 28(8) = 580 - 224 = 356 \text{ ms{}$$
 
 This prediction might not be reliable because:
 

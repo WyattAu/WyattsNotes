@@ -255,7 +255,7 @@ fired.
 | **Glycine**          | Amino acid       | Glycine receptor (ionotropic, $\mathrm{Cl{}^-$ channel) | Inhibitory; primarily in spinal cord and brainstem | Spinal cord, brainstem                                 |
 | **Dopamine**         | Amine (catecholamine) | $\mathrm{D_1{}$--$\mathrm{D_5{}$ receptors (metabotropic) | Motor control, reward, motivation; can be excitatory or inhibitory depending on receptor | Substantia nigra, ventral tegmental area, basal ganglia |
 | **Noradrenaline (norepinephrine)** | Amine (catecholamine) | $\alpha$ and $\beta$ adrenergic receptors | Arousal, attention, fight-or-flight; sympathetic NS | Locus coeruleus; sympathetic postganglionic neurons   |
-| **Serotonin (5-HT)**  | Amine (indolamine) | $5\text{'\{'}-HT{'\}'}_1$--$5\text{'\{'}-HT{'\}'}_7$ receptors | Mood, sleep, appetite, pain perception           | Raphe nuclei (brainstem); gastrointestinal tract      |
+| **Serotonin (5-HT)**  | Amine (indolamine) | $5\text{-HT{}_1$--$5\text{-HT{}_7$ receptors | Mood, sleep, appetite, pain perception           | Raphe nuclei (brainstem); gastrointestinal tract      |
 
 ### Acetylcholine in Detail
 
@@ -268,9 +268,9 @@ Acetylcholine (ACh) is the neurotransmitter at:
 - **Parasympathetic postganglionic synapses**: to target organs (muscarinic receptors).
 - **Synapses in the CNS**: involved in learning, memory, and arousal.
 
-**Synthesis**: choline + acetyl-CoA $\xrightarrow{\text{'\{'}choline acetyltransferase{'\}'}}$ ACh
+**Synthesis**: choline + acetyl-CoA $\xrightarrow{\text{choline acetyltransferase{}}$ ACh
 
-**Degradation**: ACh $\xrightarrow{\text{'\{'}acetylcholinesterase (AChE){'\}'}}$ choline + acetate
+**Degradation**: ACh $\xrightarrow{\text{acetylcholinesterase (AChE){}}$ choline + acetate
 
 ### Clinical Relevance of Neurotransmitters
 
@@ -956,7 +956,7 @@ of the same diameter. For a $10\;\mathrm{\mu m{}$ myelinated axon, conduction ve
 $50$--$70\;\mathrm{m/s{}$ (approximately $6\;\mathrm{m/s{}$ per $\mathrm{\mu m{}$ diameter for myelinated
 axons). Using the empirical relationship: $v \approx 6 \times d = 6 \times 10 = 60\;\mathrm{m/s{}$.
 
-(b) Time $= \text{'\{'}distance{'\}'} / \text{'\{'}velocity{'\}'}$.
+(b) Time $= \text{distance{} / \text{velocity{}$.
 - Unmyelinated: $1 / 5 = 0.20\;\mathrm{s{} = 200\;\mathrm{ms{}$.
 - Myelinated: $1 / 60 = 0.0167\;\mathrm{s{} = 16.7\;\mathrm{ms{}$.
 
@@ -990,7 +990,7 @@ A neuron has the following intracellular and extracellular ion concentrations:
 | $\mathrm{Ca{}^{2+}$ | 0.0001 | 2.0 |
 
 Temperature $= 37^\circ\mathrm{C{}$. (a) Calculate the equilibrium potential for each ion using the Nernst
-equation ($E = \frac{RT}{zF}\ln\frac{[\text{'\{'}ion{'\}'}]_{out}}{[\text{'\{'}ion{'\}'}]_{in}}$, where $R = 8.314\;\mathrm{J/(mol\cdot K){}$,
+equation ($E = \frac{RT}{zF}\ln\frac{[\text{ion{}]_{out}}{[\text{ion{}]_{in}}$, where $R = 8.314\;\mathrm{J/(mol\cdot K){}$,
 $F = 96485\;\mathrm{C/mol{}$). (b) The resting membrane potential is $-70\;\mathrm{mV{}$. For each ion,
 state whether the driving force favours influx or efflux. (c) If the membrane is $50\times$ more
 permeable to $\mathrm{K{}^+$ than to $\mathrm{Na{}^+$ and $10\times$ more permeable to $\mathrm{K{}^+$ than
@@ -1009,7 +1009,7 @@ $E_{\mathrm{Cl{}} = \frac{26.7}{-1} \ln\frac{110}{10} = -26.7 \times \ln(11) = -
 
 $E_{\mathrm{Ca{}} = \frac{26.7}{2} \ln\frac{2.0}{0.0001} = 13.35 \times \ln(20000) = 13.35 \times 9.903 = +132.2\;\mathrm{mV{}$
 
-(b) Driving force $= V_m - E_{\text{'\{'}ion{'\}'}}$ (where positive means outward, negative means inward):
+(b) Driving force $= V_m - E_{\text{ion{}}$ (where positive means outward, negative means inward):
 - $\mathrm{Na{}^+$: $-70 - 60.6 = -130.6\;\mathrm{mV{}$ (strong inward driving force)
 - $\mathrm{K{}^+$: $-70 - (-93.6) = +23.6\;\mathrm{mV{}$ (outward driving force)
 - $\mathrm{Cl{}^-$: $-70 - (-64.0) = -6.0\;\mathrm{mV{}$ (small inward driving force)
@@ -1294,9 +1294,9 @@ potential does fire when the current is sufficient to depolarise the membrane ab
 
 (a) $\tau = R_m \times C_m = 1000\;\Omega\cdot\mathrm{cm{}^2 \times 1 \times 10^{-6}\;\mathrm{F/cm{}^2 = 10^{-3}\;\mathrm{s{} = 1\;\mathrm{ms{}$.
 
-(b) For a cylindrical axon: surface area per unit length $= \pi \times d = \pi \times 500 \times 10^{-4}\;\mathrm{cm{} = 0.157\;\mathrm{cm{}^2/\text{'\{'}cm{'\}'}$.
+(b) For a cylindrical axon: surface area per unit length $= \pi \times d = \pi \times 500 \times 10^{-4}\;\mathrm{cm{} = 0.157\;\mathrm{cm{}^2/\text{cm{}$.
 
-Input resistance per unit length: $R_{in} = R_m / (\pi \times d) = 1000 / 0.157 = 6366\;\Omega/\text{'\{'}cm{'\}'}$.
+Input resistance per unit length: $R_{in} = R_m / (\pi \times d) = 1000 / 0.157 = 6366\;\Omega/\text{cm{}$.
 
 For a finite patch: $\Delta V = I \times R_{in}$.
 
@@ -1480,7 +1480,7 @@ $= 300\,000 \times 4 \times 10^{-12} = 1.2 \times 10^{-6}\;\mathrm{N{} = 1.2\;\m
 Note: this is the isometric force (no shortening). In practice, muscle fibres contain thousands of
 myofibrils in parallel, so the total force is multiplied by the number of myofibrils.
 
-(c) Work per cross-bridge per cycle $= \text{'\{'}force{'\}'} \times \text{'\{'}distance{'\}'} = 4 \times 10^{-12}\;\mathrm{N{}
+(c) Work per cross-bridge per cycle $= \text{force{} \times \text{distance{} = 4 \times 10^{-12}\;\mathrm{N{}
 \times 5 \times 10^{-9}\;\mathrm{m{} = 2 \times 10^{-20}\;\mathrm{J{}$.
 
 (d) If $50\%$ of heads are attached: $0.50 \times 300\,000 = 150\,000$ attached heads per

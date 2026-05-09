@@ -523,7 +523,7 @@ When $x = 3 - \sqrt{3}$: $y = 2(3 - \sqrt{3}) - 3 = 3 - 2\sqrt{3}$.
 ### Definition
 
 $$
-|x| = \begin{cases} x & x \ge 0 \\ -x & x \lt 0 \end{cases}
+|x| = \begin`\{cases}` x & x \ge 0 \\ -x & x \lt 0 \end`\{cases}`
 $$
 
 ### Graph
@@ -802,7 +802,7 @@ Check that the function value equals the left-hand and right-hand limits at the 
 Is the following function continuous at $x = 2$?
 
 $$
-f(x) = \begin{cases} x^2 & x \le 2 \\ 3x - 2 & x \gt 2 \end{cases}
+f(x) = \begin`\{cases}` x^2 & x \le 2 \\ 3x - 2 & x \gt 2 \end`\{cases}`
 $$
 
 $f(2) = 4$.

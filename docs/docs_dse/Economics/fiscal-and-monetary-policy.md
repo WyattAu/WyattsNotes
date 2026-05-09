@@ -1069,11 +1069,11 @@ The government increases both spending and taxes by HK$100 billion simultaneousl
 <details>
 <summary>Solution</summary>
 
-(a) Spending multiplier $= \frac{1}{1 - 0.75} = 4$. Change from spending $= 4 \times 100 = \text{'\{'}HK{'\}'}\$400$ billion.
+(a) Spending multiplier $= \frac{1}{1 - 0.75} = 4$. Change from spending $= 4 \times 100 = \text{HK{}\$400$ billion.
 
-(b) Tax multiplier $= \frac{-0.75}{1 - 0.75} = -3$. Change from tax $= -3 \times 100 = -\text{'\{'}HK{'\}'}\$300$ billion.
+(b) Tax multiplier $= \frac{-0.75}{1 - 0.75} = -3$. Change from tax $= -3 \times 100 = -\text{HK{}\$300$ billion.
 
-(c) Net change $= 400 - 300 = \text{'\{'}HK{'\}'}\$100$ billion.
+(c) Net change $= 400 - 300 = \text{HK{}\$100$ billion.
 
 The balanced budget multiplier $= 1$. Equal increases in government spending and taxation increase GDP by exactly the amount of the increase. This is because the spending injection is fully absorbed by the economy, while the tax increase only reduces consumption by the MPC fraction.
 
@@ -1099,7 +1099,7 @@ An economy has national saving $S = 200 + 5r$ (where $r$ is the real interest ra
 
 $S' = I$: $120 + 5r = 500 - 10r$. $15r = 380$. $r = 25.33\%$. $I' = 500 - 10(25.33) = 246.7$.
 
-(c) Crowding out $= I - I' = 300 - 246.7 = \text{'\{'}HK{'\}'}\$53.3$ billion.
+(c) Crowding out $= I - I' = 300 - 246.7 = \text{HK{}\$53.3$ billion.
 
 The HK$80 billion in government spending crowds out HK$53.3 billion in private investment. The net increase in aggregate demand $= 80 - 53.3 = 26.7$ billion.
 
@@ -1123,7 +1123,7 @@ Hong Kong's government increases infrastructure spending by HK$50 billion during
 
 (a) With imports (and no tax): multiplier $= \frac{1}{1 - MPC + MPM} = \frac{1}{1 - 0.70 + 0.35} = \frac{1}{0.65} = 1.538$.
 
-(b) $\Delta GDP = 1.538 \times 50 = \text{'\{'}HK{'\}'}\$76.9$ billion.
+(b) $\Delta GDP = 1.538 \times 50 = \text{HK{}\$76.9$ billion.
 
 (c) Hong Kong's multiplier (1.538) is much smaller than a closed economy's multiplier ($\frac{1}{1-0.7} = 3.33$). This is because Hong Kong is extremely open: the MPM of 0.35 means 35 cents of every additional dollar of income leaks out as imports. This "import leakage" significantly dampens the multiplier effect. Additionally, Hong Kong's small size means supply constraints may limit the output response (especially in the construction sector for infrastructure projects).
 
@@ -1154,13 +1154,13 @@ The HKMA conducts open market operations, purchasing HK$30 billion of Exchange F
 
 $$m = \frac{1 + cr}{rrr + er + cr} = \frac{1 + 0.10}{0.05 + 0.03 + 0.10} = \frac{1.10}{0.18} = 6.11$$
 
-(b) $\Delta M = m \times \Delta B = 6.11 \times 30 = \text{'\{'}HK{'\}'}\$183.3$ billion.
+(b) $\Delta M = m \times \Delta B = 6.11 \times 30 = \text{HK{}\$183.3$ billion.
 
 (c) With $er = 0.08$:
 
 $$m = \frac{1.10}{0.05 + 0.08 + 0.10} = \frac{1.10}{0.23} = 4.78$$
 
-$\Delta M = 4.78 \times 30 = \text{'\{'}HK{'\}'}\$143.5$ billion.
+$\Delta M = 4.78 \times 30 = \text{HK{}\$143.5$ billion.
 
 The increase in excess reserves from 3% to 8% reduces the money multiplier from 6.11 to 4.78 and the broad money expansion from HK$183.3B to HK$143.5B -- a reduction of HK$39.8 billion. This demonstrates how banks' risk appetite affects the transmission of monetary policy.
 
@@ -1271,23 +1271,23 @@ The government proposes: (i) reduce corporate tax from 20% to 15%, (ii) increase
 
 (iii) **Apprenticeship programmes:** Reduces structural unemployment by improving the match between workers' skills and employer needs. Shifts LRAS right by increasing the effective labour supply (more workers with relevant skills).
 
-(b) Current corporate tax revenue $= 0.04 \times 2000 = \text{'\{'}USD {'\}'} 80$ billion.
+(b) Current corporate tax revenue $= 0.04 \times 2000 = \text{USD {} 80$ billion.
 
 With a 5 percentage point cut (from 20% to 15%, a 25% reduction in the rate): the tax base expands due to the lower rate. Using a tax elasticity of 0.4 (the tax base expands by 0.4% for every 1% reduction in the rate):
 
 Base expansion $= 0.4 \times 25\% = 10\%$. New tax base $= 1.10 \times$ original base.
 
-New revenue $= 0.15 \times 1.10 \times \text{'\{'}original base{'\}'} = 0.165 \times \text{'\{'}original base{'\}'}$.
+New revenue $= 0.15 \times 1.10 \times \text{original base{} = 0.165 \times \text{original base{}$.
 
 Original base $= 80 / 0.20 = 400$ billion. New revenue $= 0.165 \times 400 = 66$ billion.
 
-Fiscal cost $= 80 - 66 = \text{'\{'}USD {'\}'} 14$ billion (0.7% of GDP). The Laffer curve effect recovers 30% of the static revenue loss.
+Fiscal cost $= 80 - 66 = \text{USD {} 14$ billion (0.7% of GDP). The Laffer curve effect recovers 30% of the static revenue loss.
 
-(c) **Short-run demand effect:** $\Delta Y = 1.5 \times 20 = \text{'\{'}USD {'\}'} 30$ billion (1.5% of GDP).
+(c) **Short-run demand effect:** $\Delta Y = 1.5 \times 20 = \text{USD {} 30$ billion (1.5% of GDP).
 
-**Long-run supply effect:** 0.3% higher potential GDP per year from infrastructure. After 10 years, cumulative supply boost $= (1.003^{10} - 1) \times 2000 = 0.034 \times 2000 = \text{'\{'}USD {'\}'} 61$ billion (3% above baseline).
+**Long-run supply effect:** 0.3% higher potential GDP per year from infrastructure. After 10 years, cumulative supply boost $= (1.003^{10} - 1) \times 2000 = 0.034 \times 2000 = \text{USD {} 61$ billion (3% above baseline).
 
-Total effect after 10 years: demand effect (one-time) + supply effect (cumulative) $= 30 + 61 = \text{'\{'}USD {'\}'} 91$ billion increase in GDP.
+Total effect after 10 years: demand effect (one-time) + supply effect (cumulative) $= 30 + 61 = \text{USD {} 91$ billion increase in GDP.
 
 (d) **Evaluation of supply-side policies for secular stagnation:**
 

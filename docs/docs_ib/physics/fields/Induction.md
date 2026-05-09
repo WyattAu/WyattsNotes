@@ -13,9 +13,9 @@ Magnetic flux ($\Phi_B$) is quantity of magnetic field ($\bm{B}$) passing throug
 perpendicular to the local area ($d\bm{A}$) of the surface:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{\Phi_B} = \int_S \bm{B} \cdot d\bm{A}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Magnetic Flux in Uniform Magnetic Field
@@ -25,10 +25,10 @@ field ($\bm{B}$) is a space invariant, where if the surface also have no curvatu
 plane), then the magnetic flux can be expressed with the area ($\bm{A}$) of the plane:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     {\Phi_B} &= \bm{B} \cdot \bm{A} = |\bm{B}||\bm{A}|\cos\theta\\
     \Phi_B &= BA \cos \theta
-\end{aligned}
+\end`\{aligned}`
 $$
 
 where $\theta$ is the angular displacement between the normal vector of the plane and the direction
@@ -50,10 +50,10 @@ Faraday's law of induction states that the electromotive force ($\epsilon$) is e
 (according to Lenz's Law) rate of change of magnetic flux with time:
 
 $$
-\begin{aligned}
-    \epsilon = -\frac{d\Phi_B}{dt}
+\begin`\{aligned}`
+    \epsilon = -\frac{d\Phi_B}`\{dt}`
     \epsilon = -\frac{\Delta \Phi_B}{\Delta t}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Electromotive force (EMF) had been given a misleading name, where EMF refers to the energy transfer
@@ -106,9 +106,9 @@ Consider a conducting rod of length $l$ moving at velocity $v$ perpendicular to 
 - By Faraday's law:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \epsilon = -\frac{\Delta \Phi_B}{\Delta t} = -\frac{Blv\Delta t}{\Delta t} = -Blv
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Taking the magnitude:
@@ -142,11 +142,11 @@ $50\mathrm{ Hz{}$ in a magnetic field of $0.5\mathrm{ T{}$. Calculate the peak E
 **Solution:**
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \epsilon_0 &= NAB\omega = NAB \cdot 2\pi f\\
     \epsilon_0 &= (200)(0.01)(0.5)(2\pi \times 50)\\
     \epsilon_0 &= 314\mathrm{ V{}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## AC Generation
@@ -165,10 +165,10 @@ where $\omega$ is the angular velocity of rotation.
 ### Induced EMF
 
 $$
-\begin{aligned}
-    \epsilon &= -N\frac{d\Phi_B}{dt} = -N\frac{d}{dt}\left[BA\cos(\omega t)\right]\\
+\begin`\{aligned}`
+    \epsilon &= -N\frac{d\Phi_B}`\{dt}` = -N\frac{d}`\{dt}`\left[BA\cos(\omega t)\right]\\
     \epsilon &= NBA\omega \sin(\omega t)
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The peak EMF is:
@@ -467,7 +467,7 @@ $d\epsilon = 2\pi B\omega r^2$, and its resistance is $dR = \rho \cdot 2\pi r / 
 in the ring is:
 
 $$
-dP = \frac{(d\epsilon)^2}{dR} = \frac{2\pi B^2\omega^2 r^3\,t\,dr}{\rho}
+dP = \frac{(d\epsilon)^2}`\{dR}` = \frac{2\pi B^2\omega^2 r^3\,t\,dr}{\rho}
 $$
 
 Integrating from $r = 0$ to $R$:
@@ -807,7 +807,7 @@ $$
 (b)
 
 $$
-\epsilon(t) = -\frac{d\Phi_B}{dt} = -(0.150)(120\pi)\cos(120\pi t) = -56.5\cos(120\pi t)\mathrm{ V{}
+\epsilon(t) = -\frac{d\Phi_B}`\{dt}` = -(0.150)(120\pi)\cos(120\pi t) = -56.5\cos(120\pi t)\mathrm{ V{}
 $$
 
 $$

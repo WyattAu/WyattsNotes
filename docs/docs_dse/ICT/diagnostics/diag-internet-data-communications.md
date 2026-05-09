@@ -67,7 +67,7 @@ Total time $=$ latency $+$ transmission time $= 50 + 0.082 = 50.082$ ms. Latency
 
 (c) **Bandwidth** is like the width of a highway (how many cars can travel simultaneously). **Latency** is like the speed limit and distance (how long it takes one car to travel from A to B). A wide highway with a low speed limit (high bandwidth, high latency) is good for bulk data transfers. A narrow highway with high speed (low bandwidth, low latency) is better for interactive applications like online gaming.
 
-(d) 256-QAM transmits 8 bits per symbol. Nyquist theorem: maximum data rate $= 2 \times \text{'\{'}bandwidth{'\}'} \times \log_2(\text{'\{'}levels{'\}'}) = 2 \times 20 \times 10^6 \times 8 = 320$ Mbps.
+(d) 256-QAM transmits 8 bits per symbol. Nyquist theorem: maximum data rate $= 2 \times \text{bandwidth{} \times \log_2(\text{levels{}) = 2 \times 20 \times 10^6 \times 8 = 320$ Mbps.
 
 ---
 

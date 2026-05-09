@@ -803,7 +803,7 @@ A cross involving three genes, each with two alleles, on different chromosomes.
 
 For a trihybrid cross $AaBbCc \times AaBbCc$:
 
-$$\text{'\{'}Expected phenotypic ratio{'\}'} = 27:9:9:9:3:3:3:1$$
+$$\text{Expected phenotypic ratio{} = 27:9:9:9:3:3:3:1$$
 
 This ratio arises from $2^3 = 8$ phenotype classes based on the presence or absence of the dominant
 allele at each of three loci.
@@ -1081,9 +1081,9 @@ of each phenotype are expected?
 - $3/16$ white, short ($bbS\_$)
 - $1/16$ white, long ($bbss$)
 
-(b) $P(\text{'\{'}black, short{'\}'}) = 9/16 = 0.5625$.
+(b) $P(\text{black, short{}) = 9/16 = 0.5625$.
 
-(c) $P(\text{'\{'}black, long{'\}'}) = 3/16 = 0.1875$.
+(c) $P(\text{black, long{}) = 3/16 = 0.1875$.
 
 (d) With $160$ offspring:
 - Black, short: $160 \times 9/16 = 90$
@@ -1226,20 +1226,20 @@ is unaffected, so his genotype is either $CC$ (probability $1/3$) or $Cc$ (proba
 Probability the husband is a carrier: $2/3$.
 
 Note: among the unaffected siblings of an affected child, the probability of being a carrier is
-$2/3$, not $1/2$. This is because the conditional probability $P(\text{'\{'}carrier{'\}'} | \text{'\{'}unaffected{'\}'}) =
-P(\text{'\{'}carrier and unaffected{'\}'}) / P(\text{'\{'}unaffected{'\}'}) = (1/2) / (3/4) = 2/3$.
+$2/3$, not $1/2$. This is because the conditional probability $P(\text{carrier{} | \text{unaffected{}) =
+P(\text{carrier and unaffected{}) / P(\text{unaffected{}) = (1/2) / (3/4) = 2/3$.
 
 (b) The wife has no family history of CF. The population carrier frequency is $1/25$.
 Probability the wife is a carrier: $1/25 = 0.04$.
 
 (c) Probability of an affected child:
-$P(\text{'\{'}child affected{'\}'}) = P(\text{'\{'}husband carrier{'\}'}) \times P(\text{'\{'}wife carrier{'\}'}) \times P(\text{'\{'}both pass {'\}'} c)$
+$P(\text{child affected{}) = P(\text{husband carrier{}) \times P(\text{wife carrier{}) \times P(\text{both pass {} c)$
 $= \frac{2}{3} \times \frac{1}{25} \times \frac{1}{4}$
 $= \frac{2}{300} = \frac{1}{150} \approx 0.67\%$
 
 (d) If the wife is confirmed NOT a carrier ($cc$ is ruled out), she cannot pass a $c$ allele to her
 child. Even if the husband is a carrier, the child can be at most $Cc$ (carrier), not $cc$ (affected).
-$P(\text{'\{'}child affected{'\}'}) = 0$.
+$P(\text{child affected{}) = 0$.
 
 (There is a small residual risk if the wife carries a rare CF mutation not detected by the genetic test,
 but for the purposes of this calculation, the risk is effectively zero.)
@@ -1480,7 +1480,7 @@ to non-disjunction.
 When two genes are on the same chromosome (linked), their recombination frequency reflects their
 physical distance apart. This is the basis for genetic mapping:
 
-$$\text{'\{'}Map distance (cM){'\}'} = \text{'\{'}Recombination frequency (\%){'\}'}$$
+$$\text{Map distance (cM){} = \text{Recombination frequency (\%){}$$
 
 For small distances ($< 10\;\mathrm{cM{}$), map distance and recombination frequency are approximately
 equal. For larger distances, recombination frequency plateaus at $50\%$ (due to multiple crossovers
@@ -1543,10 +1543,10 @@ arrangement for A--C but were counted as recombinants for A--B and B--C.
 
 (c) **Coefficient of coincidence (CoC)** = observed double crossovers / expected double crossovers.
 Observed DCO = $5 + 5 = 10$.
-Expected DCO $= \text{'\{'}RF(A--B){'\}'} \times \text{'\{'}RF(B--C){'\}'} \times \text{'\{'}total{'\}'} = 0.175 \times 0.085 \times 1000 = 14.875$.
+Expected DCO $= \text{RF(A--B){} \times \text{RF(B--C){} \times \text{total{} = 0.175 \times 0.085 \times 1000 = 14.875$.
 CoC $= 10 / 14.875 = 0.672$.
 
-**Interference** $= 1 - \text{'\{'}CoC{'\}'} = 1 - 0.672 = 0.328$.
+**Interference** $= 1 - \text{CoC{} = 1 - 0.672 = 0.328$.
 
 Interference of $0.328$ means that approximately $33\%$ of expected double crossovers did not occur
 (crossover interference: a crossover in one interval reduces the probability of a crossover in the

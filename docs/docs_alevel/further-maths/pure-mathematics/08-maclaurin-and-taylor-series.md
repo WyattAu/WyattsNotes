@@ -623,7 +623,7 @@ Using three terms: $\cos(0.2) \approx 1 - 0.02 + \dfrac{0.0016}{24} = 1 - 0.02 +
 
 Error bound: the next term is $\dfrac{(0.2)^6}{720} = \dfrac{6.4 \times 10^{-7}}{720} \approx 8.9 \times 10^{-10}$.
 
-So $|\text{'\{'}error{'\}'}| < 10^{-9}$.
+So $|\text{error{}| < 10^{-9}$.
 
 ### Example 7.3: Product of two Maclaurin series
 
@@ -686,7 +686,7 @@ $$f(x) = 1 + 4x + \frac{13x^2}{2} + \frac{17x^3}{3} + \cdots$$
 
 **Solution.** This is the alternating harmonic series, with $S = \ln 2$. The error after $N$ terms is bounded by the absolute value of the $(N+1)$-th term:
 
-$$|\text{'\{'}error{'\}'}| \leq \frac{1}{N+1} < 0.001 \implies N + 1 > 1000 \implies N \geq 1000$$
+$$|\text{error{}| \leq \frac{1}{N+1} < 0.001 \implies N + 1 > 1000 \implies N \geq 1000$$
 
 So at least 1000 terms are needed.
 

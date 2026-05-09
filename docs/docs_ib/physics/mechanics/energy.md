@@ -80,7 +80,7 @@ where $h$ is the height above a chosen reference level (datum).
 For any two masses separated by distance $r$:
 
 $$
-E_p = -\frac{GMm}{r}
+E_p = -\frac`\{GMm}`{r}
 $$
 
 where $G = 6.674 \times 10^{-11}\mathrm{ N{}\cdot\mathrm{m{}^2/\mathrm{kg{}^2$.
@@ -537,7 +537,7 @@ A pump lifts $500\mathrm{ kg{}$ of water per minute from a well $15\mathrm{ m{}$
 efficiency of 65%. Find the power input to the pump.
 
 $$
-P_{\mathrm{useful{}} = \frac{mgh}{t} = \frac{500 \times 9.81 \times 15}{60} = 1226\mathrm{ W{}
+P_{\mathrm{useful{}} = \frac`\{mgh}`{t} = \frac{500 \times 9.81 \times 15}{60} = 1226\mathrm{ W{}
 $$
 
 $$
@@ -556,7 +556,7 @@ r = 6.87 \times 10^6\mathrm{ m{}
 $$
 
 $$
-\frac{GMm}{r^2} = \frac{mv^2}{r} \implies v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.674 \times 10^{-11} \times 5.97 \times 10^{24}}{6.87 \times 10^6}}
+\frac`\{GMm}`{r^2} = \frac{mv^2}{r} \implies v = \sqrt{\frac`\{GM}`{r}} = \sqrt{\frac{6.674 \times 10^{-11} \times 5.97 \times 10^{24}}{6.87 \times 10^6}}
 $$
 
 $$
@@ -566,7 +566,7 @@ $$
 **(b)** Find the total mechanical energy.
 
 $$
-E_{\mathrm{total{}} = E_k + E_p = \frac{1}{2}mv^2 - \frac{GMm}{r} = \frac{1}{2}m\frac{GM}{r} - \frac{GMm}{r} = -\frac{GMm}{2r}
+E_{\mathrm{total{}} = E_k + E_p = \frac{1}{2}mv^2 - \frac`\{GMm}`{r} = \frac{1}{2}m\frac`\{GM}`{r} - \frac`\{GMm}`{r} = -\frac`\{GMm}`{2r}
 $$
 
 $$
@@ -636,7 +636,7 @@ For two masses $M$ and $m$ separated by distance $r$, the total energy determine
 For a circular orbit:
 
 $$
-E_{\mathrm{total{}} = E_k + E_p = \frac{1}{2}mv^2 - \frac{GMm}{r} = \frac{GMm}{2r} - \frac{GMm}{r} = -\frac{GMm}{2r}
+E_{\mathrm{total{}} = E_k + E_p = \frac{1}{2}mv^2 - \frac`\{GMm}`{r} = \frac`\{GMm}`{2r} - \frac`\{GMm}`{r} = -\frac`\{GMm}`{2r}
 $$
 
 ### Energy to Change Orbits
@@ -656,7 +656,7 @@ r_1 = 6.67 \times 10^6\mathrm{ m{}, \quad r_2 = 6.97 \times 10^6\mathrm{ m{}
 $$
 
 $$
-E_1 = -\frac{GMm}{2r_1} = -\frac{6.674 \times 10^{-11} \times 5.97 \times 10^{24} \times 1000}{2 \times 6.67 \times 10^6}
+E_1 = -\frac`\{GMm}`{2r_1} = -\frac{6.674 \times 10^{-11} \times 5.97 \times 10^{24} \times 1000}{2 \times 6.67 \times 10^6}
 $$
 
 $$
@@ -664,7 +664,7 @@ $$
 $$
 
 $$
-E_2 = -\frac{GMm}{2r_2} = -\frac{3.985 \times 10^{17}}{1.394 \times 10^7} = -2.858 \times 10^{10}\mathrm{ J{}
+E_2 = -\frac`\{GMm}`{2r_2} = -\frac{3.985 \times 10^{17}}{1.394 \times 10^7} = -2.858 \times 10^{10}\mathrm{ J{}
 $$
 
 $$

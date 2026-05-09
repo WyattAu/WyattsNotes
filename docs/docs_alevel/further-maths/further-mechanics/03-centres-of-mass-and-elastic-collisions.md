@@ -859,7 +859,7 @@ $v_{\perp} = u\cos\theta$ (reverses), $v_{\parallel} = u\sin\theta$ (unchanged).
 
 Since the collision is elastic, the speed is unchanged: the perpendicular component reverses.
 
-$$\text{'\{'}Impulse{'\}'} = m(u\cos\theta - (-u\cos\theta)) = \boxed{2mu\cos\theta}$$
+$$\text{Impulse{} = m(u\cos\theta - (-u\cos\theta)) = \boxed{2mu\cos\theta}$$
 
 directed along the normal away from the wall.
 
@@ -1026,7 +1026,7 @@ from the centre, along the axis of symmetry.
 
 For partially elastic collisions, the coefficient of restitution $e$ is defined as:
 
-$$e = \frac{\text{'\{'}relative speed of separation{'\}'}}{\text{'\{'}relative speed of approach{'\}'}}$$
+$$e = \frac{\text{relative speed of separation{}}{\text{relative speed of approach{}}$$
 
 $e = 1$: perfectly elastic. $e = 0$: perfectly inelastic.
 
@@ -1034,7 +1034,7 @@ $e = 1$: perfectly elastic. $e = 0$: perfectly inelastic.
 
 When a particle hits a smooth wall, only the component of velocity perpendicular to the wall reverses:
 
-$v_{\perp}^{\text{'\{'}after{'\}'}} = -e \cdot v_{\perp}^{\text{'\{'}before{'\}'}}$
+$v_{\perp}^{\text{after{}} = -e \cdot v_{\perp}^{\text{before{}}$
 
 The parallel component is unchanged.
 

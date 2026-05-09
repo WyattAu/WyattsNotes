@@ -23,27 +23,27 @@ magnetic force is also induced by moving charge. The combined force ($\bm{F}$) o
 ($q$) can be governed by Lorentz force law:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{F} = q(\bm{E}+\bm{v} \times \bm{B})
-\end{aligned}
+\end`\{aligned}`
 $$
 
 When only considering the magnitude of the force:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{F} = q(|\bm{E}| + |\bm{v} \times \bm{B}|) = q(|\bm{E}|+|\bm{v}||\bm{B}|sin\theta)
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The magnitude form is written in the IB formula booklet separately for magnetic and electric force:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     F &= qvB \sin \theta\\
     F &= qE\\
     E &= \frac{F}{q}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Motion of Current in Electromagnetic Field
@@ -56,37 +56,37 @@ since the electric field have a negligible effect, only the force applied by mag
 ($\bm{B}$ is accounted):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{F_m} &= nV(q(v\times \bm{B})) = V(\bm{J}\times\bm{B})\\
     \bm{F_m} &= \int_C \bm{J}\times\bm{B} dV
-\end{aligned}
+\end`\{aligned}`
 $$
 
 For current of a conductor with constant cross-sectional area ($A$) and length displacement of
 ($\bm{L}$), the volume can be evaluated as ($V = AL$), leading to a force of:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{F_m} = \int I(d\bm{L})\times B = I \int \bm{B}\times d\bm{L}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Since IB only considers interactions of current with uniform electric fields, magnetic field
 $\bm{B}$ is constant, evaluating the force to:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{F_m} = I(\bm{L}\times\bm{B})
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Since IB considers the direction separately by the use of right hand rule (Motor effect), the
 magnitude of the force is expressed as:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     |\bm{F_m}| = F = I|\bm{L}\times\bm{B}| = I|\bm{L}||\bm{B}|\sin\theta = BIL\sin\theta
-\end{aligned}
+\end`\{aligned}`
 $$
 
 This is expressed in the formula booklet $D.3$.
@@ -98,9 +98,9 @@ rotational symmetry around the direction of current, the magnetic field can be e
 cylindrical coordinates ($\hat{\phi}$) shows:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{B_1} = \frac{\mu_0 I_1}{2\pi r}\hat{\bm{\phi}}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 For a $\hat{\phi} = \hat{y}$ where $\hat{y}$ is a unit vector perpendicular to other current
@@ -108,20 +108,20 @@ For a $\hat{\phi} = \hat{y}$ where $\hat{y}$ is a unit vector perpendicular to o
 is:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{F_{12}} &= I_2(\bm{L}\times\bm{B_1})\\
     \bm{F_{12}} &= I_2L(\hat{z}\times{B_1}), \quad \hat{z} = \hat{\bm{L}}\\
     \bm{F_{12}} &= I_2L\left(\hat{z}\times\frac{\mu_0 I_1}{2\pi r}\hat{y}\right)\\
     \bm{F_{12}} &= -\frac{\mu_0 I_1 I_2 L}{2\pi r}\hat{x}, \quad \hat{y} \times \hat{z} = -\hat{x}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Similar to before the IB expresses the magnitude form of this equation in the formula booklet:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     |\bm{F_{12}}| = F = -\frac{\mu_0 I_1 I_2 L}{2\pi r}\hat{x} = \mu_0 \frac{I_1 I_2 L}{2\pi r}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Where the direction of motion on current can be determined by right hand rule (motor effect).
@@ -189,7 +189,7 @@ $$
 Solving for the radius $r$:
 
 $$
-r = \frac{mv}{qB}
+r = \frac`\{mv}``\{qB}`
 $$
 
 This is one of the most important results in this topic. Key observations:
@@ -203,13 +203,13 @@ This is one of the most important results in this topic. Key observations:
 The time for one complete revolution (the period $T$) is:
 
 $$
-T = \frac{2\pi r}{v} = \frac{2\pi m}{qB}
+T = \frac{2\pi r}{v} = \frac{2\pi m}`\{qB}`
 $$
 
 The cyclotron frequency $f$ is:
 
 $$
-f = \frac{1}{T} = \frac{qB}{2\pi m}
+f = \frac{1}{T} = \frac`\{qB}`{2\pi m}
 $$
 
 **Important:** The period and frequency are **independent of the speed** and radius. This means all
@@ -320,7 +320,7 @@ $$
    their velocity) and follow a semicircular path. The radius of the path depends on the mass:
 
 $$
-r = \frac{mv}{qB}
+r = \frac`\{mv}``\{qB}`
 $$
 
 5. **Detection:** Ions of different masses hit the detector at different positions. Since $v$ is the
@@ -337,7 +337,7 @@ From the acceleration stage: $v = \sqrt{\frac{2qV}{m}}$
 Substituting into the radius equation:
 
 $$
-r = \frac{m}{qB} \sqrt{\frac{2qV}{m}} = \frac{1}{B} \sqrt{\frac{2mV}{q}}
+r = \frac{m}`\{qB}` \sqrt{\frac{2qV}{m}} = \frac{1}{B} \sqrt{\frac{2mV}{q}}
 $$
 
 This gives the mass-to-charge ratio:
@@ -484,13 +484,13 @@ cyclotron frequency? c) What is the maximum kinetic energy of the protons in ele
 **a) Maximum radius:**
 
 $$
-r_{\max} = \frac{m_p v_{\max}}{qB} = \frac{(1.67 \times 10^{-27})(2.0 \times 10^7)}{(1.60 \times 10^{-19})(1.2)} = \frac{3.34 \times 10^{-20}}{1.92 \times 10^{-19}} = 0.174 \mathrm{ m{} = 17.4 \mathrm{ cm{}
+r_{\max} = \frac{m_p v_{\max}}`\{qB}` = \frac{(1.67 \times 10^{-27})(2.0 \times 10^7)}{(1.60 \times 10^{-19})(1.2)} = \frac{3.34 \times 10^{-20}}{1.92 \times 10^{-19}} = 0.174 \mathrm{ m{} = 17.4 \mathrm{ cm{}
 $$
 
 **b) Cyclotron frequency:**
 
 $$
-f = \frac{qB}{2\pi m_p} = \frac{(1.60 \times 10^{-19})(1.2)}{2\pi(1.67 \times 10^{-27})} = \frac{1.92 \times 10^{-19}}{1.05 \times 10^{-26}} = 1.83 \times 10^7 \mathrm{ Hz{} = 18.3 \mathrm{ MHz{}
+f = \frac`\{qB}`{2\pi m_p} = \frac{(1.60 \times 10^{-19})(1.2)}{2\pi(1.67 \times 10^{-27})} = \frac{1.92 \times 10^{-19}}{1.05 \times 10^{-26}} = 1.83 \times 10^7 \mathrm{ Hz{} = 18.3 \mathrm{ MHz{}
 $$
 
 **c) Maximum kinetic energy:**

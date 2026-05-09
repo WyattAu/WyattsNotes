@@ -557,7 +557,7 @@ Given data:
 
 For $\mathrm{Al{}_2\mathrm{O{}_3$: 2 Al atoms and 3 O atoms.
 
-$$\text{'\{'}Sum{'\}'} = 2(330) + 3(249) + 2(578 + 1817 + 2745) + 3(-141 + 798)$$
+$$\text{Sum{} = 2(330) + 3(249) + 2(578 + 1817 + 2745) + 3(-141 + 798)$$
 
 $$= 660 + 747 + 2(5140) + 3(657)$$
 
@@ -565,7 +565,7 @@ $$= 660 + 747 + 10280 + 1971 = 13658\,\mathrm{kJ/mol{}$$
 
 **Step 2: Apply Hess's Law.**
 
-$$\Delta H_\mathrm{lat{}^\circ = \Delta H_f^\circ - \text{'\{'}Sum{'\}'} = -1676 - 13658 = -15334\,\mathrm{kJ/mol{}$$
+$$\Delta H_\mathrm{lat{}^\circ = \Delta H_f^\circ - \text{Sum{} = -1676 - 13658 = -15334\,\mathrm{kJ/mol{}$$
 
 The extremely exothermic lattice enthalpy of $\mathrm{Al{}_2\mathrm{O{}_3$ reflects the high charges on the ions ($\mathrm{Al{}^{3+}$ and $\mathrm{O{}^{2-}$) and their relatively small ionic radii. This explains the very high melting point ($2072^\circ\mathrm{C{}$) and hardness of aluminium oxide.
 

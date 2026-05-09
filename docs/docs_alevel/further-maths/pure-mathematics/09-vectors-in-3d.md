@@ -740,11 +740,11 @@ Since the scalar triple product is zero, the four points are coplanar. $\blacksq
 
 The projection of $\mathbf{'\{'}a{'\}'}$ onto the normal direction:
 
-$$\text{'\{'}proj{'\}'}_{\mathbf{'\{'}n{'\}'}}\,\mathbf{'\{'}a{'\}'} = (\mathbf{'\{'}a{'\}'}\cdot\hat{\mathbf{'\{'}n{'\}'}})\hat{\mathbf{'\{'}n{'\}'}} = \frac{2+1-1}{3}(1,1,1) = \frac{2}{3}(1,1,1)$$
+$$\text{proj{}_{\mathbf{'\{'}n{'\}'}}\,\mathbf{'\{'}a{'\}'} = (\mathbf{'\{'}a{'\}'}\cdot\hat{\mathbf{'\{'}n{'\}'}})\hat{\mathbf{'\{'}n{'\}'}} = \frac{2+1-1}{3}(1,1,1) = \frac{2}{3}(1,1,1)$$
 
 The projection onto the plane (i.e., the component parallel to the plane):
 
-$$\mathbf{'\{'}a{'\}'}_{\parallel} = \mathbf{'\{'}a{'\}'} - \text{'\{'}proj{'\}'}_{\mathbf{'\{'}n{'\}'}}\,\mathbf{'\{'}a{'\}'} = (2, 1, -1) - \frac{2}{3}(1, 1, 1) = \left(\frac{4}{3}, \frac{1}{3}, -\frac{5}{3}\right)$$
+$$\mathbf{'\{'}a{'\}'}_{\parallel} = \mathbf{'\{'}a{'\}'} - \text{proj{}_{\mathbf{'\{'}n{'\}'}}\,\mathbf{'\{'}a{'\}'} = (2, 1, -1) - \frac{2}{3}(1, 1, 1) = \left(\frac{4}{3}, \frac{1}{3}, -\frac{5}{3}\right)$$
 
 ### Example 11.8: Vector product proof of the sine rule
 

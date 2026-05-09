@@ -30,23 +30,23 @@ hide_table_of_contents: true
 
 **Solution:**
 
-(a) **Series:** $R_{\text{'\{'}total{'\}'}} = 6 + 4 = 10$ $\Omega$. $I = 10/10 = 1$ A.
+(a) **Series:** $R_{\text{total{}} = 6 + 4 = 10$ $\Omega$. $I = 10/10 = 1$ A.
 $V_1 = IR_1 = 1 \times 6 = 6$ V. $V_2 = IR_2 = 1 \times 4 = 4$ V. ($V_1 + V_2 = 10$ V $\checkmark$)
 
-(b) **Parallel:** $\frac{1}{R_{\text{'\{'}total{'\}'}}} = \frac{1}{6} + \frac{1}{4} = \frac{5}{12}$. $R_{\text{'\{'}total{'\}'}} = 2.4$ $\Omega$.
-$I_1 = 10/6 = 1.67$ A. $I_2 = 10/4 = 2.5$ A. $I_{\text{'\{'}total{'\}'}} = 1.67 + 2.5 = 4.17$ A.
+(b) **Parallel:** $\frac{1}{R_{\text{total{}}} = \frac{1}{6} + \frac{1}{4} = \frac{5}{12}$. $R_{\text{total{}} = 2.4$ $\Omega$.
+$I_1 = 10/6 = 1.67$ A. $I_2 = 10/4 = 2.5$ A. $I_{\text{total{}} = 1.67 + 2.5 = 4.17$ A.
 
 (c) In parallel, each appliance receives the full supply voltage (e.g., 230 V) independently. If one appliance fails (e.g., a light bulb blows), the others continue to work. In series, the voltage is shared between appliances, so each receives less than the full supply. If one fails, the circuit is broken and all appliances stop working. Additionally, in parallel, each appliance can be switched on/off independently.
 
 (d) **Series:** $P = VI = 10 \times 1 = 10$ W.
-**Parallel:** $P = VI_{\text{'\{'}total{'\}'}} = 10 \times 4.17 = 41.7$ W. (Or: $P = V^2/R = 100/2.4 = 41.7$ W.)
+**Parallel:** $P = VI_{\text{total{}} = 10 \times 4.17 = 41.7$ W. (Or: $P = V^2/R = 100/2.4 = 41.7$ W.)
 
 ### UT-3: Electrical Power and Energy
 **Question:** (a) Derive the three formulas for electrical power: $P = VI$, $P = I^2R$, and $P = V^2/R$. (b) A heater rated at 2000 W is used for 3 hours per day for 30 days. Calculate the total energy in kWh and the cost at 28p per kWh. (c) A 12 V car battery has a capacity of 50 Ah. Calculate the total energy stored and how long it can power a 60 W light bulb.
 
 **Solution:**
 
-(a) $P = VI$ (from definition: power $=$ energy/time, voltage $=$ energy/charge, current $=$ charge/time, so $VI = \text{'\{'}energy/time{'\}'} = P$).
+(a) $P = VI$ (from definition: power $=$ energy/time, voltage $=$ energy/charge, current $=$ charge/time, so $VI = \text{energy/time{} = P$).
 $P = I^2R$: substitute $V = IR$ into $P = VI$: $P = I \times IR = I^2R$.
 $P = V^2/R$: substitute $I = V/R$ into $P = VI$: $P = V \times V/R = V^2/R$.
 
@@ -96,7 +96,7 @@ This exceeds the 30 A fuse rating, so **no** -- not all appliances can be on sim
 (d) Energy per day $= 2.2 \times 10/60 = 0.367$ kWh. Energy per year $= 0.367 \times 365 = 133.9$ kWh. Cost $= 133.9 \times 0.28 = \pounds 37.49$.
 
 ### IT-3: Resistance and Temperature (with Particles)
-**Question:** (a) Explain how the resistance of a metal wire changes with temperature, referring to the behaviour of electrons and ions. (b) Explain how the resistance of a thermistor (NTC type) changes with temperature. (c) A thermistor is used in a potential divider circuit with a 10 k$\Omega$ fixed resistor and a 9 V supply. At $25^\circ\text{'\{'}C{'\}'}$, the thermistor resistance is 10 k$\Omega$. Calculate the output voltage across the thermistor. (d) At $100^\circ\text{'\{'}C{'\}'}$, the thermistor resistance drops to 1 k$\Omega$. Calculate the new output voltage and explain how this enables temperature sensing.
+**Question:** (a) Explain how the resistance of a metal wire changes with temperature, referring to the behaviour of electrons and ions. (b) Explain how the resistance of a thermistor (NTC type) changes with temperature. (c) A thermistor is used in a potential divider circuit with a 10 k$\Omega$ fixed resistor and a 9 V supply. At $25^\circ\text{C{}$, the thermistor resistance is 10 k$\Omega$. Calculate the output voltage across the thermistor. (d) At $100^\circ\text{C{}$, the thermistor resistance drops to 1 k$\Omega$. Calculate the new output voltage and explain how this enables temperature sensing.
 
 **Solution:**
 
@@ -104,8 +104,8 @@ This exceeds the 30 A fuse rating, so **no** -- not all appliances can be on sim
 
 (b) An NTC (Negative Temperature Coefficient) thermistor is made from semiconductor material. As temperature increases, more electrons are released from their atoms into the conduction band, increasing the number of charge carriers. This outweighs the increased ion vibration, so resistance **decreases** with temperature.
 
-(c) At $25^\circ\text{'\{'}C{'\}'}$: $R_{\text{'\{'}thermistor{'\}'}} = R_{\text{'\{'}fixed{'\}'}} = 10$ k$\Omega$. The voltage divides equally. $V_{\text{'\{'}out{'\}'}} = 9 \times \frac{10}{10 + 10} = 4.5$ V.
+(c) At $25^\circ\text{C{}$: $R_{\text{thermistor{}} = R_{\text{fixed{}} = 10$ k$\Omega$. The voltage divides equally. $V_{\text{out{}} = 9 \times \frac{10}{10 + 10} = 4.5$ V.
 
-(d) At $100^\circ\text{'\{'}C{'\}'}$: $R_{\text{'\{'}thermistor{'\}'}} = 1$ k$\Omega$. $V_{\text{'\{'}out{'\}'}} = 9 \times \frac{1}{1 + 10} = 9 \times \frac{1}{11} = 0.818$ V.
+(d) At $100^\circ\text{C{}$: $R_{\text{thermistor{}} = 1$ k$\Omega$. $V_{\text{out{}} = 9 \times \frac{1}{1 + 10} = 9 \times \frac{1}{11} = 0.818$ V.
 
-The output voltage drops from 4.5 V to 0.82 V as temperature rises from $25^\circ\text{'\{'}C{'\}'}$ to $100^\circ\text{'\{'}C{'\}'}$. This changing voltage can be measured by a microcontroller or voltmeter, and a calibration curve can convert the voltage reading to a temperature. The larger the change in voltage, the more sensitive and accurate the temperature sensor.
+The output voltage drops from 4.5 V to 0.82 V as temperature rises from $25^\circ\text{C{}$ to $100^\circ\text{C{}$. This changing voltage can be measured by a microcontroller or voltmeter, and a calibration curve can convert the voltage reading to a temperature. The larger the change in voltage, the more sensitive and accurate the temperature sensor.

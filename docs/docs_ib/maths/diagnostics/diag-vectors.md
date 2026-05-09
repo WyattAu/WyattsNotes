@@ -37,11 +37,11 @@ These are not scalar multiples, so the lines are not parallel.
 
 To check for intersection, set the position vectors equal:
 
-$$1 + 2\lambda = 3 + \mu \implies 2\lambda - \mu = 2 \quad \text{'\{'}(i){'\}'}$$
+$$1 + 2\lambda = 3 + \mu \implies 2\lambda - \mu = 2 \quad \text{(i){}$$
 
-$$2 + \lambda = 1 - \mu \implies \lambda + \mu = -1 \quad \text{'\{'}(ii){'\}'}$$
+$$2 + \lambda = 1 - \mu \implies \lambda + \mu = -1 \quad \text{(ii){}$$
 
-$$0 - \lambda = 4 + 2\mu \implies -\lambda - 2\mu = 4 \quad \text{'\{'}(iii){'\}'}$$
+$$0 - \lambda = 4 + 2\mu \implies -\lambda - 2\mu = 4 \quad \text{(iii){}$$
 
 From (i) and (ii): adding gives $3\lambda = 1$, so $\lambda = \frac{1}{3}$, then $\mu = -\frac{4}{3}$.
 

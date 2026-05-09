@@ -123,7 +123,7 @@ perpendicular to its initial velocity $v$. This is the electric-field analogue o
 The particle experiences a constant force perpendicular to its motion:
 
 $$
-F = qE \implies a = \frac{qE}{m}
+F = qE \implies a = \frac`\{qE}`{m}
 $$
 
 Since the acceleration is perpendicular to the initial velocity, the motion decomposes into:
@@ -137,19 +137,19 @@ $$
 **Perpendicular to plates** (constant acceleration):
 
 $$
-y = \frac{1}{2}\left(\frac{qE}{m}\right)t^2
+y = \frac{1}{2}\left(\frac`\{qE}`{m}\right)t^2
 $$
 
 Eliminating $t$ yields the parabolic trajectory:
 
 $$
-y = \frac{qE}{2mv^2}\,x^2
+y = \frac`\{qE}`{2mv^2}\,x^2
 $$
 
 The deflection angle upon exiting the field region is:
 
 $$
-\tan\theta = \frac{v_y}{v_x} = \frac{qEL}{mv^2}
+\tan\theta = \frac{v_y}{v_x} = \frac`\{qEL}`{mv^2}
 $$
 
 where $L$ is the length of the plates.
@@ -184,7 +184,7 @@ Vertical acceleration (note: the electron has charge $q = -1.6 \times 10^{-19}\m
 deflected toward the positive plate):
 
 $$
-a = \frac{eE}{m_e} = \frac{(1.6 \times 10^{-19})(2.0 \times 10^4)}{9.11 \times 10^{-31}} = 3.51 \times 10^{15}\mathrm{ m/s{}^2
+a = \frac`\{eE}`{m_e} = \frac{(1.6 \times 10^{-19})(2.0 \times 10^4)}{9.11 \times 10^{-31}} = 3.51 \times 10^{15}\mathrm{ m/s{}^2
 $$
 
 Vertical deflection:
@@ -251,7 +251,7 @@ $$
 $1\mathrm{ mm{}^2$ copper wire carrying $1\mathrm{ A{}$, the drift velocity is:
 
 $$
-v_d = \frac{I}{nAe} = \frac{1.0}{(8.5 \times 10^{28})(10^{-6})(1.6 \times 10^{-19})} \approx 7.4 \times 10^{-5}\mathrm{ m/s{}
+v_d = \frac{I}`\{nAe}` = \frac{1.0}{(8.5 \times 10^{28})(10^{-6})(1.6 \times 10^{-19})} \approx 7.4 \times 10^{-5}\mathrm{ m/s{}
 $$
 
 This is extraordinarily slow. The signal (the electric field) propagates at a significant fraction
@@ -273,7 +273,7 @@ $$
 Drift velocity:
 
 $$
-v_d = \frac{I}{nAe} = \frac{2.0}{(6.0 \times 10^{28})(1.96 \times 10^{-7})(1.6 \times 10^{-19})} = 1.06 \times 10^{-3}\mathrm{ m/s{}
+v_d = \frac{I}`\{nAe}` = \frac{2.0}{(6.0 \times 10^{28})(1.96 \times 10^{-7})(1.6 \times 10^{-19})} = 1.06 \times 10^{-3}\mathrm{ m/s{}
 $$
 
 The drift velocity is approximately $1.1\mathrm{ mm/s{}$.
@@ -770,7 +770,7 @@ $$
 To find the maximum, differentiate with respect to $R_L$ and set to zero:
 
 $$
-\frac{dP}{dR_L} = \varepsilon^2 \frac{(R_L + r)^2 - 2R_L(R_L + r)}{(R_L + r)^4} = 0
+\frac`\{dP}`{dR_L} = \varepsilon^2 \frac{(R_L + r)^2 - 2R_L(R_L + r)}{(R_L + r)^4} = 0
 $$
 
 The numerator simplifies to $(R_L + r)(r - R_L)$, giving $R_L = r$.
@@ -810,7 +810,7 @@ cell.
 **Mixed (series-parallel) banks.** For $n$ rows of $m$ cells each (all identical):
 
 $$
-\varepsilon_{\mathrm{total{}} = m\varepsilon, \quad r_{\mathrm{total{}} = \frac{mr}{n}
+\varepsilon_{\mathrm{total{}} = m\varepsilon, \quad r_{\mathrm{total{}} = \frac`\{mr}`{n}
 $$
 
 The configuration is chosen based on whether the load requires higher voltage (more cells in series)

@@ -1147,7 +1147,7 @@ The government wants to maintain a minimum price for rice at HK$100 per kg. Mark
 
 (b) At $P = 100$: $Q_d = 500 - 300 = 200$. $Q_s = -100 + 400 = 300$. Surplus $= 300 - 200 = 100$ thousand kg.
 
-(c) Government cost $= 100 \times 100 = \text{'\{'}HK{'\}'}\$10\,000$ thousand $= \text{'\{'}HK{'\}'}\$10$ million.
+(c) Government cost $= 100 \times 100 = \text{HK{}\$10\,000$ thousand $= \text{HK{}\$10$ million.
 
 (d) To achieve $P_b = 80$ for consumers: subsidy $s$ such that $P_s = 80 + s$ and $Q_d(80) = Q_s(80 + s)$.
 
@@ -1155,7 +1155,7 @@ $Q_d(80) = 500 - 240 = 260$. $Q_s(80 + s) = -100 + 4(80 + s) = 220 + 4s$.
 
 $260 = 220 + 4s$. $4s = 40$. $s = 10$.
 
-Government cost $= 10 \times 260 = \text{'\{'}HK{'\}'}\$2\,600$ thousand $= \text{'\{'}HK{'\}'}\$2.6$ million.
+Government cost $= 10 \times 260 = \text{HK{}\$2\,600$ thousand $= \text{HK{}\$2.6$ million.
 
 Comparison: The subsidy approach (HK$2.6M) costs much less than the price support (HK$10M) and results in a higher quantity consumed (260 vs 200), generating more consumer surplus. However, the subsidy approach transfers money to consumers (lower prices) and producers (higher effective prices), while the price support transfers money to producers only (through government purchases of surplus).
 

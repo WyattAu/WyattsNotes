@@ -10,17 +10,17 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: DNA Replication — Leading and Lagging Strand
-**Question:** A bacterial chromosome is a circular DNA molecule of $4600000\ \text{'\{'}bp{'\}'}$ with a single origin of replication. DNA polymerase III synthesises DNA at $1000\ \text{'\{'}bp s{'\}'}^{-1}$. Calculate the minimum time required for replication. Explain why the lagging strand is synthesised as Okazaki fragments and why this does not slow down the overall replication rate.
+**Question:** A bacterial chromosome is a circular DNA molecule of $4600000\ \text{bp{}$ with a single origin of replication. DNA polymerase III synthesises DNA at $1000\ \text{bp s{}^{-1}$. Calculate the minimum time required for replication. Explain why the lagging strand is synthesised as Okazaki fragments and why this does not slow down the overall replication rate.
 
 **Solution:**
 
-With a single origin and bidirectional replication, two replication forks move in opposite directions. Each fork must travel half the chromosome: $4600000 / 2 = 2300000\ \text{'\{'}bp{'\}'}$.
+With a single origin and bidirectional replication, two replication forks move in opposite directions. Each fork must travel half the chromosome: $4600000 / 2 = 2300000\ \text{bp{}$.
 
-Time per fork: $2300000 / 1000 = 2300\ \text{'\{'}s{'\}'} \approx 38.3\ \text{'\{'}min{'\}'}$.
+Time per fork: $2300000 / 1000 = 2300\ \text{s{} \approx 38.3\ \text{min{}$.
 
-Since both forks operate simultaneously, minimum replication time $= 2300\ \text{'\{'}s{'\}'} \approx 38\ \text{'\{'}min{'\}'}$.
+Since both forks operate simultaneously, minimum replication time $= 2300\ \text{s{} \approx 38\ \text{min{}$.
 
-The lagging strand is synthesised in the opposite direction to fork movement because DNA polymerase can only add nucleotides in the 5' to 3' direction. As the replication fork opens, the template strand for the lagging strand is oriented 3' to 5' (reading 5' to 3'), meaning synthesis must occur away from the fork. Short Okazaki fragments ($1000$--$2000\ \text{'\{'}bp{'\}'}$ in bacteria, $100$--$200\ \text{'\{'}bp{'\}'}$ in eukaryotes) are initiated by RNA primers and extended by DNA pol III. Each fragment is later joined by DNA ligase.
+The lagging strand is synthesised in the opposite direction to fork movement because DNA polymerase can only add nucleotides in the 5' to 3' direction. As the replication fork opens, the template strand for the lagging strand is oriented 3' to 5' (reading 5' to 3'), meaning synthesis must occur away from the fork. Short Okazaki fragments ($1000$--$2000\ \text{bp{}$ in bacteria, $100$--$200\ \text{bp{}$ in eukaryotes) are initiated by RNA primers and extended by DNA pol III. Each fragment is later joined by DNA ligase.
 
 This does not slow the overall rate because the overall fork movement rate is determined by the leading strand synthesis speed. On the lagging strand, multiple Okazaki fragments are synthesised concurrently by different DNA pol III enzymes. While one fragment is being completed, the next RNA primer has already been laid down further back, so there is always a fragment being synthesised. The overall rate of nucleotide incorporation on the lagging strand matches the fork movement rate.
 
@@ -52,7 +52,7 @@ Note: If the question had asked about TGC changing to TGG in the template, the m
 
 ---
 ### UT-3: PCR and Gel Electrophoresis
-**Question:** A DNA fragment of $1200\ \text{'\{'}bp{'\}'}$ is amplified by PCR starting from a single copy. After 30 cycles, how many copies are produced? If each cycle takes 3 minutes, how long does the full PCR run take? Explain why primers are necessary and why the annealing temperature must be carefully chosen.
+**Question:** A DNA fragment of $1200\ \text{bp{}$ is amplified by PCR starting from a single copy. After 30 cycles, how many copies are produced? If each cycle takes 3 minutes, how long does the full PCR run take? Explain why primers are necessary and why the annealing temperature must be carefully chosen.
 
 **Solution:**
 
@@ -67,7 +67,7 @@ Primers are necessary because DNA polymerase cannot initiate synthesis de novo -
 The annealing temperature must be carefully chosen because:
 - If too low: primers may bind to non-target sequences (non-specific binding), producing unwanted amplification products. Primers may also bind to each other (primer-dimer formation).
 - If too high: primers may not bind at all to the target, resulting in no amplification.
-- The ideal annealing temperature is typically $3$--$5\ ^\circ\text{'\{'}C{'\}'}$ below the melting temperature ($T_m$) of the primers, where $T_m$ depends on primer length and GC content. For a 20-mer with 50% GC content, $T_m \approx 60\ ^\circ\text{'\{'}C{'\}'}$, so annealing at $55$--$57\ ^\circ\text{'\{'}C{'\}'}$ is appropriate.
+- The ideal annealing temperature is typically $3$--$5\ ^\circ\text{C{}$ below the melting temperature ($T_m$) of the primers, where $T_m$ depends on primer length and GC content. For a 20-mer with 50% GC content, $T_m \approx 60\ ^\circ\text{C{}$, so annealing at $55$--$57\ ^\circ\text{C{}$ is appropriate.
 
 ## Integration Tests
 
@@ -117,16 +117,16 @@ Once the correct target is found, Cas9 creates a double-strand break (DSB) 3 bp 
 
 ---
 ### IT-3: Protein Structure and Function (with Biochemistry)
-**Question:** Haemoglobin has a quaternary structure of four subunits (two alpha, two beta), each containing a haem group with an $\text{'\{'}Fe{'\}'}^{2+}$ ion that binds one $\text{'\{'}O{'\}'}_2$ molecule. Explain cooperative oxygen binding using the concepts of protein conformational change. How does the Bohr effect enhance oxygen delivery to active tissues?
+**Question:** Haemoglobin has a quaternary structure of four subunits (two alpha, two beta), each containing a haem group with an $\text{Fe{}^{2+}$ ion that binds one $\text{O{}_2$ molecule. Explain cooperative oxygen binding using the concepts of protein conformational change. How does the Bohr effect enhance oxygen delivery to active tissues?
 
 **Solution:**
 
-**Cooperative binding:** Haemoglobin exists in two main conformational states: the T-state (tense, deoxygenated) with low affinity for $\text{'\{'}O{'\}'}_2$, and the R-state (relaxed, oxygenated) with high affinity for $\text{'\{'}O{'\}'}_2$.
+**Cooperative binding:** Haemoglobin exists in two main conformational states: the T-state (tense, deoxygenated) with low affinity for $\text{O{}_2$, and the R-state (relaxed, oxygenated) with high affinity for $\text{O{}_2$.
 
-When the first $\text{'\{'}O{'\}'}_2$ molecule binds to a haem group in one subunit, it causes a conformational change in that subunit (the iron ion moves into the plane of the porphyrin ring, pulling the proximal histidine and shifting the position of the entire F helix). This conformational change is transmitted to the adjacent subunits through non-covalent interactions at the subunit interfaces (salt bridges between the C-termini of the subunits are broken in the T to R transition).
+When the first $\text{O{}_2$ molecule binds to a haem group in one subunit, it causes a conformational change in that subunit (the iron ion moves into the plane of the porphyrin ring, pulling the proximal histidine and shifting the position of the entire F helix). This conformational change is transmitted to the adjacent subunits through non-covalent interactions at the subunit interfaces (salt bridges between the C-termini of the subunits are broken in the T to R transition).
 
-The shift from T to R state increases the $\text{'\{'}O{'\}'}_2$ affinity of the remaining subunits, making it progressively easier for subsequent $\text{'\{'}O{'\}'}_2$ molecules to bind. This produces the characteristic sigmoidal oxygen dissociation curve, which is steeper in the middle range of partial pressures than the hyperbolic curve of myoglobin (which has only one subunit and no cooperativity).
+The shift from T to R state increases the $\text{O{}_2$ affinity of the remaining subunits, making it progressively easier for subsequent $\text{O{}_2$ molecules to bind. This produces the characteristic sigmoidal oxygen dissociation curve, which is steeper in the middle range of partial pressures than the hyperbolic curve of myoglobin (which has only one subunit and no cooperativity).
 
-**Bohr effect:** In active tissues, $\text{'\{'}CO{'\}'}_2$ is produced and converted to carbonic acid ($\text{'\{'}H{'\}'}_2\text{'\{'}CO{'\}'}_3$), which dissociates to $\text{'\{'}H{'\}'}^+$ and $\text{'\{'}HCO{'\}'}_3^-$. The increased $[\text{'\{'}H{'\}'}^+]$ (lower pH) stabilises the T-state of haemoglobin by promoting the formation of salt bridges that lock it in the low-affinity conformation. Additionally, $\text{'\{'}CO{'\}'}_2$ can directly bind to the N-terminal amino groups of the globin chains, forming carbaminohaemoglobin, which also stabilises the T-state.
+**Bohr effect:** In active tissues, $\text{CO{}_2$ is produced and converted to carbonic acid ($\text{H{}_2\text{CO{}_3$), which dissociates to $\text{H{}^+$ and $\text{HCO{}_3^-$. The increased $[\text{H{}^+]$ (lower pH) stabilises the T-state of haemoglobin by promoting the formation of salt bridges that lock it in the low-affinity conformation. Additionally, $\text{CO{}_2$ can directly bind to the N-terminal amino groups of the globin chains, forming carbaminohaemoglobin, which also stabilises the T-state.
 
-The combined effect: at lower pH and higher $\text{'\{'}CO{'\}'}_2$ (as found in actively respiring tissues), the oxygen dissociation curve shifts to the right. At any given partial pressure of $\text{'\{'}O{'\}'}_2$, haemoglobin releases more $\text{'\{'}O{'\}'}_2$. This ensures that oxygen delivery is matched to metabolic demand -- tissues that are respiring most actively receive the most oxygen.
+The combined effect: at lower pH and higher $\text{CO{}_2$ (as found in actively respiring tissues), the oxygen dissociation curve shifts to the right. At any given partial pressure of $\text{O{}_2$, haemoglobin releases more $\text{O{}_2$. This ensures that oxygen delivery is matched to metabolic demand -- tissues that are respiring most actively receive the most oxygen.

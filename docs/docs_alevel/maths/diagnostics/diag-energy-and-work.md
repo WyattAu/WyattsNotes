@@ -33,19 +33,19 @@ A block of mass $10$ kg is pulled along a rough horizontal surface by a force of
 
 **(b)** First find the normal reaction. Resolving vertically:
 
-$$R + 80\sin 20° = mg = 98 \implies R = 98 - 80\sin 20° = 98 - 27.36 = 70.64 \text{'\{'} N{'\}'}$$
+$$R + 80\sin 20° = mg = 98 \implies R = 98 - 80\sin 20° = 98 - 27.36 = 70.64 \text{ N{}$$
 
 Friction $= \mu R = 0.5 \times 70.64 = 35.32$ N.
 
-Work done against friction $= F_{\text{'\{'}friction{'\}'}} \times d = 35.32 \times 15 = 529.8$ J.
+Work done against friction $= F_{\text{friction{}} \times d = 35.32 \times 15 = 529.8$ J.
 
 **(c)** Net work done $= 1127.6 - 529.8 = 597.8$ J.
 
 By the work-energy principle:
 
-$$W_{\text{'\{'}net{'\}'}} = \Delta\mathrm{KE{} = \frac{1}{2}mv^2 - 0$$
+$$W_{\text{net{}} = \Delta\mathrm{KE{} = \frac{1}{2}mv^2 - 0$$
 
-$$597.8 = \frac{1}{2}(10)v^2 \implies v^2 = 119.56 \implies v \approx 10.93 \text{'\{'} m/s{'\}'}$$
+$$597.8 = \frac{1}{2}(10)v^2 \implies v^2 = 119.56 \implies v \approx 10.93 \text{ m/s{}$$
 
 **(d)** The student's formula $\mu mgd = 0.5 \times 98 \times 15 = 735$ J.
 
@@ -53,7 +53,7 @@ This is wrong because the student used $R = mg = 98$ N, ignoring the fact that t
 
 Correct work against friction $= 529.8$ J.
 
-$$\text{'\{'}Percentage error{'\}'} = \frac{735 - 529.8}{529.8} \times 100\% \approx 38.7\%$$
+$$\text{Percentage error{} = \frac{735 - 529.8}{529.8} \times 100\% \approx 38.7\%$$
 
 ---
 
@@ -87,15 +87,15 @@ $$a = \frac{P}{mv} - \frac{R}{m} \quad \blacksquare$$
 
 **(b)** At maximum speed, $a = 0$:
 
-$$\frac{P}{v_{\max}} = R \implies v_{\max} = \frac{P}{R} = \frac{40000}{200} = 200 \text{'\{'} m/s{'\}'}$$
+$$\frac{P}{v_{\max}} = R \implies v_{\max} = \frac{P}{R} = \frac{40000}{200} = 200 \text{ m/s{}$$
 
 **(c)** At $v = 10$ m/s:
 
-$$a = \frac{40000}{800 \times 10} - \frac{200}{800} = 5 - 0.25 = 4.75 \text{'\{'} m/s{'\}'}^2$$
+$$a = \frac{40000}{800 \times 10} - \frac{200}{800} = 5 - 0.25 = 4.75 \text{ m/s{}^2$$
 
 At $v = 100$ m/s:
 
-$$a = \frac{40000}{800 \times 100} - \frac{200}{800} = 0.5 - 0.25 = 0.25 \text{'\{'} m/s{'\}'}^2$$
+$$a = \frac{40000}{800 \times 100} - \frac{200}{800} = 0.5 - 0.25 = 0.25 \text{ m/s{}^2$$
 
 **(d)** The acceleration at $10$ m/s is $4.75$ m/s$^2$ and at $100$ m/s is $0.25$ m/s$^2$. The acceleration decreases by a factor of 19 as the speed increases by a factor of 10. Constant power does not imply constant acceleration; in fact, the acceleration decreases hyperbolically with speed.
 
@@ -117,7 +117,7 @@ $$t = -\frac{1}{50}\left[(40000\ln 37000 - 37000) - (40000\ln 39000 - 39000)\rig
 
 $$= \frac{1}{50}\left[40000\ln\!\left(\frac{39000}{37000}\right) + 2000\right]$$
 
-$$= 800\ln\!\left(\frac{39}{37}\right) + 40 \approx 800(0.05263) + 40 \approx 42.1 + 40 = 82.1 \text{'\{'} s{'\}'}$$
+$$= 800\ln\!\left(\frac{39}{37}\right) + 40 \approx 800(0.05263) + 40 \approx 42.1 + 40 = 82.1 \text{ s{}$$
 
 ---
 
@@ -147,13 +147,13 @@ $$29.4x_{\max} = 150x_{\max}^2$$
 
 $$x_{\max}(150x_{\max} - 29.4) = 0$$
 
-$$x_{\max} = \frac{29.4}{150} = 0.196 \text{'\{'} m{'\}'}$$
+$$x_{\max} = \frac{29.4}{150} = 0.196 \text{ m{}$$
 
 (Ignoring $x_{\max} = 0$, the trivial solution.)
 
 **(b)** The speed is maximum when the acceleration is zero, i.e., when the net force on the particle is zero. This occurs at the equilibrium extension $x_e$ where:
 
-$$mg = kx_e \implies x_e = \frac{mg}{k} = \frac{29.4}{300} = 0.098 \text{'\{'} m{'\}'}$$
+$$mg = kx_e \implies x_e = \frac{mg}{k} = \frac{29.4}{300} = 0.098 \text{ m{}$$
 
 At this point, using energy conservation from the natural length:
 
@@ -163,7 +163,7 @@ Gain in EPE $= \frac{1}{2}(300)(0.098)^2 = 150 \times 0.009604 = 1.4406$ J.
 
 Gain in KE $= 2.8812 - 1.4406 = 1.4406$ J.
 
-$$\frac{1}{2}(3)v_{\max}^2 = 1.4406 \implies v_{\max}^2 = 0.9604 \implies v_{\max} = 0.98 \text{'\{'} m/s{'\}'}$$
+$$\frac{1}{2}(3)v_{\max}^2 = 1.4406 \implies v_{\max}^2 = 0.9604 \implies v_{\max} = 0.98 \text{ m/s{}$$
 
 **(c)** At the natural length, the spring exerts no force, so the only force on the particle is gravity ($mg = 29.4$ N downward). The particle is still accelerating at $g = 9.8$ m/s$^2$ at this point. The particle continues to accelerate until the restoring force of the spring equals gravity (at $x_e = 0.098$ m). Beyond this point, the spring force exceeds gravity and the particle decelerates. The maximum speed occurs at $x_e$, not at the natural length.
 
@@ -193,11 +193,11 @@ A particle moves along the $x$-axis under the action of a variable force $F(x) =
 
 **(a)** $$W = \int_0^3 F(x)\,dx = \int_0^3 (3x^2 + 2x - 5)\,dx = \left[x^3 + x^2 - 5x\right]_0^3$$
 
-$$= (27 + 9 - 15) - 0 = 21 \text{'\{'} J{'\}'}$$
+$$= (27 + 9 - 15) - 0 = 21 \text{ J{}$$
 
 **(b)** By the work-energy theorem: $W = \Delta\mathrm{KE{} = \frac{1}{2}mv^2 - 0$.
 
-$$21 = \frac{1}{2}(2)v^2 \implies v^2 = 21 \implies v = \sqrt{21} \approx 4.58 \text{'\{'} m/s{'\}'}$$
+$$21 = \frac{1}{2}(2)v^2 \implies v^2 = 21 \implies v = \sqrt{21} \approx 4.58 \text{ m/s{}$$
 
 **(c)** $F(x) = 0 \implies 3x^2 + 2x - 5 = 0 \implies (3x + 5)(x - 1) = 0 \implies x = -\frac{5}{3}$ or $x = 1$.
 
@@ -211,9 +211,9 @@ The force does positive work in $(-\infty, -5/3)$ and $(1, \infty)$, and negativ
 
 **(d)** $$W = \int_{-2}^3 (3x^2 + 2x - 5)\,dx = \left[x^3 + x^2 - 5x\right]_{-2}^3$$
 
-$$= (27 + 9 - 15) - (-8 + 4 + 10) = 21 - 6 = 15 \text{'\{'} J{'\}'}$$
+$$= (27 + 9 - 15) - (-8 + 4 + 10) = 21 - 6 = 15 \text{ J{}$$
 
-$$v = \sqrt{\frac{2W}{m}} = \sqrt{\frac{30}{2}} = \sqrt{15} \approx 3.87 \text{'\{'} m/s{'\}'}$$
+$$v = \sqrt{\frac{2W}{m}} = \sqrt{\frac{30}{2}} = \sqrt{15} \approx 3.87 \text{ m/s{}$$
 
 Note that the work from $-2$ to $3$ ($15$ J) is less than from $0$ to $3$ ($21$ J) because the force does negative work in the region $[-5/3, 1]$ through which the particle passes.
 
@@ -233,7 +233,7 @@ Show every step and justify each substitution.
 
 $$W = \int \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}s{'\}'} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
-**(c)** Explain why the work-energy theorem holds for non-conservative forces (such as friction) but conservation of mechanical energy ($\mathrm{KE{} + \mathrm{PE{} = \text{'\{'}constant{'\}'}$) does not.
+**(c)** Explain why the work-energy theorem holds for non-conservative forces (such as friction) but conservation of mechanical energy ($\mathrm{KE{} + \mathrm{PE{} = \text{constant{}$) does not.
 
 [Difficulty: hard. Requires a rigorous derivation from first principles, extending to vector form, and a conceptual explanation of the distinction between the work-energy theorem and conservation of energy.]
 
@@ -275,9 +275,9 @@ Adding:
 
 $$W = \frac{1}{2}m(v_{x,2}^2 + v_{y,2}^2) - \frac{1}{2}m(v_{x,1}^2 + v_{y,1}^2) = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2 \quad \blacksquare$$
 
-**(c)** The work-energy theorem $W_{\text{'\{'}net{'\}'}} = \Delta\mathrm{KE{}$ is a direct consequence of $F = ma$ (as proven above). It accounts for **all** forces, whether conservative or non-conservative. When friction acts, the work done by friction (which is negative) is included in $W_{\text{'\{'}net{'\}'}}$, and the change in KE correctly reflects this energy loss.
+**(c)** The work-energy theorem $W_{\text{net{}} = \Delta\mathrm{KE{}$ is a direct consequence of $F = ma$ (as proven above). It accounts for **all** forces, whether conservative or non-conservative. When friction acts, the work done by friction (which is negative) is included in $W_{\text{net{}}$, and the change in KE correctly reflects this energy loss.
 
-Conservation of mechanical energy ($\mathrm{KE{} + \mathrm{PE{} = \text{'\{'}constant{'\}'}$) applies only when all forces are conservative. A conservative force is one whose work done is path-independent (depends only on initial and final positions). Gravity is conservative; friction is not (the work done by friction depends on the path length). When friction is present, mechanical energy is not conserved -- some is converted to thermal energy. The work-energy theorem still holds because it accounts for the friction work explicitly.
+Conservation of mechanical energy ($\mathrm{KE{} + \mathrm{PE{} = \text{constant{}$) applies only when all forces are conservative. A conservative force is one whose work done is path-independent (depends only on initial and final positions). Gravity is conservative; friction is not (the work done by friction depends on the path length). When friction is present, mechanical energy is not conserved -- some is converted to thermal energy. The work-energy theorem still holds because it accounts for the friction work explicitly.
 
 ---
 
@@ -309,11 +309,11 @@ Work done against friction (up the slope) $= \mu mg\cos 30° \times d = 0.25 \ti
 
 By conservation of energy:
 
-$$\text{'\{'}Initial KE{'\}'} = \text{'\{'}GPE gain{'\}'} + \text{'\{'}Work against friction{'\}'}$$
+$$\text{Initial KE{} = \text{GPE gain{} + \text{Work against friction{}$$
 
 $$360 = 24.5d + 10.61d = 35.11d$$
 
-$$d = \frac{360}{35.11} \approx 10.25 \text{'\{'} m{'\}'}$$
+$$d = \frac{360}{35.11} \approx 10.25 \text{ m{}$$
 
 **(b)** On the return journey, the particle loses height $d\sin 30°$ and friction again acts over distance $d$.
 
@@ -323,15 +323,15 @@ Work against friction (down the slope) $= 10.61d = 10.61 \times 10.25 = 108.8$ J
 
 Final KE $= 251.1 - 108.8 = 142.3$ J.
 
-$$\frac{1}{2}(5)v^2 = 142.3 \implies v^2 = 56.9 \implies v \approx 7.54 \text{'\{'} m/s{'\}'}$$
+$$\frac{1}{2}(5)v^2 = 142.3 \implies v^2 = 56.9 \implies v \approx 7.54 \text{ m/s{}$$
 
 **(c)** By Newton's Second Law (up the slope positive):
 
-$$a = -g\sin 30° - \mu g\cos 30° = -4.9 - 2.121 = -7.021 \text{'\{'} m/s{'\}'}^2$$
+$$a = -g\sin 30° - \mu g\cos 30° = -4.9 - 2.121 = -7.021 \text{ m/s{}^2$$
 
 Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 12$:
 
-$$0 = 144 + 2(-7.021)d \implies d = \frac{144}{14.042} \approx 10.25 \text{'\{'} m{'\}'}$$
+$$0 = 144 + 2(-7.021)d \implies d = \frac{144}{14.042} \approx 10.25 \text{ m{}$$
 
 Matches part (a).
 
@@ -339,6 +339,6 @@ Matches part (a).
 
 Initial KE $= 360$ J.
 
-$$\text{'\{'}Percentage dissipated{'\}'} = \frac{217.7}{360} \times 100\% \approx 60.5\%$$
+$$\text{Percentage dissipated{} = \frac{217.7}{360} \times 100\% \approx 60.5\%$$
 
 Over 60% of the initial kinetic energy is lost to friction during the complete journey.

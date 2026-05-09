@@ -61,7 +61,7 @@ since all residents consume the same quantity simultaneously.
 
 $MSB = \sum_{i=1}^{100} P_i = 100(10 - 0.1Q) = 1000 - 10Q$.
 
-(c) Social optimum: MSB $=$ MSC. $MSC = \frac{\text{'\{'}dTC{'\}'}}{	ext{dQ}} = 5$.
+(c) Social optimum: MSB $=$ MSC. $MSC = \frac{\text{dTC{}}{	ext{dQ}} = 5$.
 
 $1000 - 10Q = 5$, $10Q = 995$, $Q^* = 99.5$.
 
@@ -245,15 +245,15 @@ The DWL is $\$300$ thousand (or $\$300,000$ in absolute terms). This represents 
 
 $20 + 0.3Q = 80 - 0.2Q$, $0.5Q = 60$, $Q^* = 120$ thousand crossings per hour.
 
-Price at social optimum: $P^* = 80 - 0.2(120) = \text{'\{'}HK{'\}'}\$56$ per crossing.
+Price at social optimum: $P^* = 80 - 0.2(120) = \text{HK{}\$56$ per crossing.
 
-(c) Optimal congestion charge $= MEC$ at $Q^* = 120$: $t = 0.3 \times 120 = \text{'\{'}HK{'\}'}\$36$ per crossing.
+(c) Optimal congestion charge $= MEC$ at $Q^* = 120$: $t = 0.3 \times 120 = \text{HK{}\$36$ per crossing.
 
 Verification: With the charge, the effective private cost becomes $20 + 36 = 56$. At $P = 56$: $Q = (80 - 56)/0.2 = 120 = Q^*$.
 
 (d) DWL without the charge:
 
-$$DWL = \frac{1}{2} \times MEC_{at Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(300) \times (300 - 120) = \frac{1}{2} \times 90 \times 180 = \text{'\{'}HK{'\}'}\$8\,100$$
+$$DWL = \frac{1}{2} \times MEC_{at Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(300) \times (300 - 120) = \frac{1}{2} \times 90 \times 180 = \text{HK{}\$8\,100$$
 
 (thousands, i.e., HK$8.1 million per hour).
 
@@ -318,15 +318,15 @@ As healthy individuals drop out, the risk pool becomes sicker. The insurer must 
 
 **Solution:**
 
-(a) Annual benefits $= 8 + 3 + 2 = \text{'\{'}HK{'\}'}\$13$ billion.
+(a) Annual benefits $= 8 + 3 + 2 = \text{HK{}\$13$ billion.
 
 Present value of benefits (40-year annuity at 4%):
 
 $$PV = \frac{C}{r}\left(1 - \frac{1}{(1+r)^n}\right) = \frac{13}{0.04}\left(1 - \frac{1}{(1.04)^{40}}\right)$$
 
-$(1.04)^{40} = 4.8010$. $PV = 325 \times (1 - 0.2083) = 325 \times 0.7917 = \text{'\{'}HK{'\}'}\$257.3$ billion.
+$(1.04)^{40} = 4.8010$. $PV = 325 \times (1 - 0.2083) = 325 \times 0.7917 = \text{HK{}\$257.3$ billion.
 
-$NPV = PV_{benefits} - PV_{costs} = 257.3 - 150 = \text{'\{'}HK{'\}'}\$107.3$ billion.
+$NPV = PV_{benefits} - PV_{costs} = 257.3 - 150 = \text{HK{}\$107.3$ billion.
 
 (b) Benefit-cost ratio $= \frac{257.3}{150} = 1.72$.
 

@@ -329,7 +329,7 @@ Step 1: Convert the alcohol to a halogenoalkane (e.g. using $\mathrm{PBr{}_3$ or
 Step 2: React the halogenoalkane with excess ammonia.
 
 $$
-\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{} \xrightarrow{\mathrm{PBr{}_3} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{Br{} \xrightarrow{\text{'\{'}excess {'\}'} \mathrm{NH{}_3} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{NH{}_2
+\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{} \xrightarrow{\mathrm{PBr{}_3} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{Br{} \xrightarrow{\text{excess {} \mathrm{NH{}_3} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{NH{}_2
 $$
 
 ### Synthesis via Nitrile (Chain Extension)
@@ -351,7 +351,7 @@ The Gabriel synthesis uses phthalimide as the nitrogen source. Phthalimide is de
 In multi-step syntheses, the basicity of amines can interfere with other reactions. A common protecting group is the acyl group: converting the amine to an amide (e.g. with ethanoyl chloride) protects the nitrogen from unwanted reactions. The amide can be hydrolysed back to the amine at the end of the synthesis.
 
 $$
-\mathrm{RNH{}_2 + \mathrm{CH{}_3\mathrm{COCl{} \to \mathrm{RNHCOCH{}_3 \xrightarrow[\text{'\{'}hydrolysis{'\}'}]{\mathrm{H{}^+} \mathrm{RNH{}_2
+\mathrm{RNH{}_2 + \mathrm{CH{}_3\mathrm{COCl{} \to \mathrm{RNHCOCH{}_3 \xrightarrow[\text{hydrolysis{}]{\mathrm{H{}^+} \mathrm{RNH{}_2
 $$
 
 ## Practice Problems
@@ -436,7 +436,7 @@ $$
 Step 3: Diazotisation.
 
 $$
-\mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2 \xrightarrow{\mathrm{NaNO{}_2/\mathrm{HCl{},\,0\text{'\{'}--{'\}'}5^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+\mathrm{Cl{}^-
+\mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2 \xrightarrow{\mathrm{NaNO{}_2/\mathrm{HCl{},\,0\text{--{}5^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+\mathrm{Cl{}^-
 $$
 
 Step 4: Sandmeyer reaction with $\mathrm{KI{}$ to introduce iodine (iodine can be introduced directly via the diazonium salt; bromine would require $\mathrm{CuBr{}$):
@@ -448,7 +448,7 @@ $$
 Step 5: Bromination of iodobenzene (iodine is ortho/para directing but deactivating):
 
 $$
-\mathrm{C{}_6\mathrm{H{}_5\mathrm{I{} \xrightarrow{\mathrm{Br{}_2/\mathrm{FeBr{}_3}} 4\text{'\{'}-bromoiodobenzene (major){'\}'} + 2\text{'\{'}-bromoiodobenzene (minor){'\}'}
+\mathrm{C{}_6\mathrm{H{}_5\mathrm{I{} \xrightarrow{\mathrm{Br{}_2/\mathrm{FeBr{}_3}} 4\text{-bromoiodobenzene (major){} + 2\text{-bromoiodobenzene (minor){}
 $$
 
 Iodine is a halogen: it is deactivating (so conditions must be vigorous) but ortho/para directing. The para product predominates for steric reasons. Alternatively, bromination could be done first (giving bromobenzene), then iodination via the Sandmeyer reaction on 4-bromoaniline. Both routes are viable.
@@ -465,7 +465,7 @@ Explain the difference between the reactions of primary aliphatic amines and pri
 **Primary aliphatic amines** (e.g. $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{NH{}_2$) react with $\mathrm{HNO{}_2$ to form a mixture of products including alcohols, alkenes, and nitrogen gas. The reaction is complex and produces no useful product:
 
 $$
-\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{NH{}_2 + \mathrm{HNO{}_2 \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{} + \mathrm{N{}_2 + \text{'\{'}other products{'\}'}
+\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{NH{}_2 + \mathrm{HNO{}_2 \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{} + \mathrm{N{}_2 + \text{other products{}
 $$
 
 **Primary aromatic amines** (e.g. $\mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2$) react with $\mathrm{HNO{}_2$ at $0$--$5^\circ\mathrm{C{}$ to form stable diazonium salts:
@@ -502,11 +502,11 @@ $$\mathrm{pH{} = 14 - 2.18 = 11.82$$
 
 Step 1: Nitration of benzene:
 
-$$\mathrm{C{}_6\mathrm{H{}_6 \xrightarrow[\text{'\{'}conc. {'\}'}\mathrm{H{}_2\mathrm{SO{}_4]{\text{'\{'}conc. {'\}'}\mathrm{HNO{}_3,\,50\text{'\{'}--{'\}'}60^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2$$
+$$\mathrm{C{}_6\mathrm{H{}_6 \xrightarrow[\text{conc. {}\mathrm{H{}_2\mathrm{SO{}_4]{\text{conc. {}\mathrm{HNO{}_3,\,50\text{--{}60^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2$$
 
 Step 2: Reduction of nitrobenzene to aniline:
 
-$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2 \xrightarrow{\mathrm{Sn{}/\mathrm{HCl{},\,\text{'\{'}then {'\}'}\mathrm{NaOH{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2$$
+$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2 \xrightarrow{\mathrm{Sn{}/\mathrm{HCl{},\,\text{then {}\mathrm{NaOH{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2$$
 
 Step 3: Acetylation (protecting group) with ethanoyl chloride to give acetanilide:
 
@@ -516,11 +516,11 @@ The acetanilide amide group is a weaker activator than the free amine and direct
 
 Step 4: Nitration of acetanilide (para-directing, gives mainly p-nitroacetanilide):
 
-$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{NHCOCH{}_3 \xrightarrow[\text{'\{'}conc. {'\}'}\mathrm{H{}_2\mathrm{SO{}_4]{\text{'\{'}dilute {'\}'}\mathrm{HNO{}_3,\,\lt 5^\circ\mathrm{C{}} 4\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{NHCOCH{}_3$$
+$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{NHCOCH{}_3 \xrightarrow[\text{conc. {}\mathrm{H{}_2\mathrm{SO{}_4]{\text{dilute {}\mathrm{HNO{}_3,\,\lt 5^\circ\mathrm{C{}} 4\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{NHCOCH{}_3$$
 
 Step 5: Hydrolysis of the amide protecting group:
 
-$$4\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{NHCOCH{}_3 \xrightarrow{\mathrm{H{}^+,\,\text{'\{'}reflux{'\}'}} 4\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{NH{}_2 + \mathrm{CH{}_3\mathrm{COOH{}$$
+$$4\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{NHCOCH{}_3 \xrightarrow{\mathrm{H{}^+,\,\text{reflux{}} 4\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{NH{}_2 + \mathrm{CH{}_3\mathrm{COOH{}$$
 
 The product is 4-nitroaniline.
 
@@ -590,13 +590,13 @@ Step 1: Nitration: $\mathrm{C{}_6\mathrm{H{}_6 \xrightarrow{\mathrm{HNO{}_3/\mat
 
 Step 2: Reduction: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2 \xrightarrow{\mathrm{Sn{}/\mathrm{HCl{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2$
 
-Step 3: Diazotisation: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2 \xrightarrow{\mathrm{NaNO{}_2/\mathrm{HCl{},\,0\text{'\{'}--{'\}'}5^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+\mathrm{Cl{}^-$
+Step 3: Diazotisation: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2 \xrightarrow{\mathrm{NaNO{}_2/\mathrm{HCl{},\,0\text{--{}5^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+\mathrm{Cl{}^-$
 
 Step 4: Sandmeyer reaction with KI: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+ + \mathrm{KI{} \to \mathrm{C{}_6\mathrm{H{}_5\mathrm{I{} + \mathrm{N{}_2 + \mathrm{K{}^+$
 
 Step 5: Nitration of iodobenzene (iodine is ortho/para directing but deactivating; need vigorous conditions):
 
-$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{I{} \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4,\,\Delta} 4\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{I{} \text{'\{'} (major){'\}'}$$
+$$\mathrm{C{}_6\mathrm{H{}_5\mathrm{I{} \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4,\,\Delta} 4\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{I{} \text{ (major){}$$
 
 Step 6: Oxidation of the methyl group... wait, there is no methyl group. We need the carboxylic acid directly.
 
@@ -604,7 +604,7 @@ Alternative approach: Use the Sandmeyer reaction with $\mathrm{CuCN{}$ to introd
 
 Step 4 (revised): Sandmeyer with CuCN: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+ + \mathrm{CuCN{} \to \mathrm{C{}_6\mathrm{H{}_5\mathrm{CN{} + \mathrm{N{}_2$
 
-Step 5: Hydrolysis of benzonitrile: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{CN{} + 2\mathrm{H{}_2\mathrm{O{} + \mathrm{H{}^+ \xrightarrow{\text{'\{'}reflux{'\}'}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{COOH{} + \mathrm{NH{}_4^+$
+Step 5: Hydrolysis of benzonitrile: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{CN{} + 2\mathrm{H{}_2\mathrm{O{} + \mathrm{H{}^+ \xrightarrow{\text{reflux{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{COOH{} + \mathrm{NH{}_4^+$
 
 Step 6: Iodination of benzoic acid: The $-\mathrm{COOH{}$ group is meta-directing, so this gives 3-iodobenzoic acid, not the desired 4-isomer.
 
@@ -614,7 +614,7 @@ The key lesson: the order of steps in multi-step aromatic synthesis is critical.
 
 ### Example 7: Buffer Solution Containing an Amine
 
-**Calculate the pH of a buffer solution containing $0.100\,\mathrm{mol\,dm^{-3}}$ ethylamine and $0.150\,\mathrm{mol\,dm^{-3}}$ ethylammonium chloride. $\mathrm{p{}K_b(\text{'\{'}ethylamine{'\}'}) = 3.37$.**
+**Calculate the pH of a buffer solution containing $0.100\,\mathrm{mol\,dm^{-3}}$ ethylamine and $0.150\,\mathrm{mol\,dm^{-3}}$ ethylammonium chloride. $\mathrm{p{}K_b(\text{ethylamine{}) = 3.37$.**
 
 First, convert to $\mathrm{p{}K_a$:
 
@@ -670,7 +670,7 @@ Explain why phenylamine is a weaker base than ammonia. Refer to the structure of
 - This delocalisation reduces the electron density on the nitrogen lone pair, making it less available to accept a proton (1 mark).
 - In the protonated form (phenylammonium ion), the lone pair is no longer available for delocalisation, so the protonated form is less stabilised relative to the free base (1 mark).
 - Therefore, the equilibrium $\mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2 + \mathrm{H{}_2\mathrm{O{} \rightleftharpoons \mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_3^+ + \mathrm{OH{}^-$ lies further to the left than for ammonia (1 mark).
-- Quantitative evidence: $\mathrm{p{}K_b(\text{'\{'}phenylamine{'\}'}) = 9.38$ vs $\mathrm{p{}K_b(\mathrm{NH{}_3) = 4.75$ (1 mark).
+- Quantitative evidence: $\mathrm{p{}K_b(\text{phenylamine{}) = 9.38$ vs $\mathrm{p{}K_b(\mathrm{NH{}_3) = 4.75$ (1 mark).
 
 </details>
 
@@ -751,10 +751,10 @@ Explain the difference between the reactions of primary aliphatic amines and pri
 
 | Target | Disconnection | Forward reagents |
 |---|---|---|
-| Primary amine $\mathrm{R-NH_2{}$ | $\mathrm{C-N{}$ bond | $\mathrm{R-X{} + \text{'\{'}excess {'\}'}\mathrm{NH{}_3$ |
+| Primary amine $\mathrm{R-NH_2{}$ | $\mathrm{C-N{}$ bond | $\mathrm{R-X{} + \text{excess {}\mathrm{NH{}_3$ |
 | Aromatic amine | $\mathrm{NO{}_2 \to \mathrm{NH{}_2$ | $\mathrm{Sn{}/\mathrm{HCl{}$ then $\mathrm{NaOH{}$ |
 | Nitrile $\mathrm{R-CN{}$ | $\mathrm{C-CN{}$ bond | $\mathrm{R-X{} + \mathrm{KCN{}$ |
-| Amide $\mathrm{RCONH_2{}$ | $\mathrm{C-N{}$ bond | $\mathrm{RCOCl{} + \text{'\{'}excess {'\}'}\mathrm{NH{}_3$ |
+| Amide $\mathrm{RCONH_2{}$ | $\mathrm{C-N{}$ bond | $\mathrm{RCOCl{} + \text{excess {}\mathrm{NH{}_3$ |
 | Azo dye | $\mathrm{Ar-N=N-Ar'{}$ | Diazotisation + coupling |
 
 ### Worked Retrosynthesis
@@ -767,9 +767,9 @@ Better approach:
 
 1. Nitration of toluene: $-\mathrm{CH{}_3$ is ortho/para directing. Nitration gives a mixture of 2-nitrotoluene and 4-nitrotoluene. Separate by fractional distillation or recrystallisation to isolate 2-nitrotoluene (the ortho product).
 
-2. Oxidation of the methyl group: $2\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{CH{}_3 \xrightarrow{\mathrm{KMnO{}_4,\,\Delta} 2\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{COOH{}$ (2-nitrobenzoic acid).
+2. Oxidation of the methyl group: $2\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{CH{}_3 \xrightarrow{\mathrm{KMnO{}_4,\,\Delta} 2\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{COOH{}$ (2-nitrobenzoic acid).
 
-3. Reduction of the nitro group: $2\text{'\{'}-{'\}'}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{COOH{} \xrightarrow{\mathrm{Sn{}/\mathrm{HCl{},\,\mathrm{NaOH{}} 2\text{'\{'}-{'\}'}\mathrm{H{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{COOH{}$ (2-aminobenzoic acid).
+3. Reduction of the nitro group: $2\text{-{}\mathrm{O{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{COOH{} \xrightarrow{\mathrm{Sn{}/\mathrm{HCl{},\,\mathrm{NaOH{}} 2\text{-{}\mathrm{H{}_2\mathrm{NC{}_6\mathrm{H{}_4\mathrm{COOH{}$ (2-aminobenzoic acid).
 
 This is 2-amino (not 4-amino). The 4-isomer requires a different approach, demonstrating the importance of directing group strategy.
 

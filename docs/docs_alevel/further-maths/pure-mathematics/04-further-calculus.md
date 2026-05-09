@@ -942,7 +942,7 @@ $s = \displaystyle\int_0^{\pi/4} \sec x\,dx = [\ln|\sec x + \tan x|]_0^{\pi/4} =
 
 ### Question 15
 
-**Prove that** $\displaystyle\int_0^{\pi/2} \sin^n x\,dx = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \times \begin{cases} 1 & n \text{'\{'} odd{'\}'} \\ \dfrac{\pi}{2} & n \text{'\{'} even{'\}'}\end{cases}$ (Wallis' formula).
+**Prove that** $\displaystyle\int_0^{\pi/2} \sin^n x\,dx = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \times \begin{cases} 1 & n \text{ odd{} \\ \dfrac{\pi}{2} & n \text{ even{}\end{cases}$ (Wallis' formula).
 
 <details>
 <summary>Solution</summary>

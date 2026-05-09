@@ -88,16 +88,16 @@ $\varepsilon = N\frac{\Delta \Phi}{\Delta t} = 500 \times \frac{0.06}{0.1} = 500
 
 **Solution:**
 
-(a) As the coil leaves the field, the rate of change of area $= \text{'\{'}width{'\}'} \times \text{'\{'}speed{'\}'} = 0.1 \times 2 = 0.2 \text{'\{'} m{'\}'}^2/\text{'\{'}s{'\}'}$.
+(a) As the coil leaves the field, the rate of change of area $= \text{width{} \times \text{speed{} = 0.1 \times 2 = 0.2 \text{ m{}^2/\text{s{}$.
 Rate of change of flux $= B \times \frac{\Delta A}{\Delta t} = 0.5 \times 0.2 = 0.1$ Wb/s.
 EMF $= N \times \frac{\Delta \Phi}{\Delta t} = 50 \times 0.1 = 5$ V.
 
-(b) Current $= \text{'\{'}EMF{'\}'}/R = 5/5 = 1$ A.
+(b) Current $= \text{EMF{}/R = 5/5 = 1$ A.
 
 (c) By Lenz's law, the induced current opposes the change causing it. The coil is being pulled out of the field, reducing the flux through it. The induced current creates a magnetic field that tries to maintain the flux (i.e., in the same direction as the original field). By the right-hand grip rule, this means the induced current flows clockwise (as viewed from the north pole of the magnet). This current-carrying coil in the magnetic field experiences a force that **opposes** the pulling motion (Fleming's left-hand rule confirms the force is to the left, opposing the rightward pull).
 
 (d) The induced current (1 A) in the magnetic field (0.5 T) in a conductor of length 0.15 m experiences a force: $F = BIL = 0.5 \times 1 \times 0.15 = 0.075$ N per side. For 50 turns: $F = 50 \times 0.075 = 3.75$ N (per active side).
 
-Alternatively, from energy conservation: $P = \text{'\{'}EMF{'\}'} \times I = 5 \times 1 = 5$ W. Force $= P/v = 5/2 = 2.5$ N.
+Alternatively, from energy conservation: $P = \text{EMF{} \times I = 5 \times 1 = 5$ W. Force $= P/v = 5/2 = 2.5$ N.
 
 This force opposes the motion (by Lenz's law). An equal and opposite external force of 2.5 N must be applied to maintain the constant speed. The work done by this force is converted to electrical energy in the coil (which is then dissipated as heat in the resistance). This demonstrates the conservation of energy: mechanical work $\to$ electrical energy $\to$ thermal energy.

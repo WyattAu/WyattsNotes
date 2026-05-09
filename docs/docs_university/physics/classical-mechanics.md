@@ -1953,7 +1953,7 @@ $$L = \frac{1}{2}I_1(\dot{\theta}^2 + \dot{\phi}^2\sin^2\theta) + \frac{1}{2}I_3
 
 The effective potential for the $\theta$ motion:
 
-$$V_{\text{'\{'}eff{'\}'}}(\theta) = \frac{(p_\phi - p_\psi\cos\theta)^2}{2I_1\sin^2\theta} + \frac{p_\psi^2}{2I_3} + Mgd\cos\theta$$
+$$V_{\text{eff{}}(\theta) = \frac{(p_\phi - p_\psi\cos\theta)^2}{2I_1\sin^2\theta} + \frac{p_\psi^2}{2I_3} + Mgd\cos\theta$$
 
 **Nutation:** The top nutates (oscillates in $\theta$) while precessing in $\phi$ and spinning in $\psi$. The type of nutation (looping, cusped, or smooth) depends on the initial conditions.
 
@@ -1970,7 +1970,7 @@ A gyroscope has $I_3 = 5 \times 10^{-4}$ kg$\cdot$m$^2$, mass $M = 0.5$ kg, dist
 
 The precession rate:
 
-$$\dot{\phi} = \frac{Mgd}{I_3\omega_3} = \frac{0.5 \times 9.81 \times 0.05}{5 \times 10^{-4} \times 300} = \frac{0.245}{0.15} = 1.63\ \text{'\{'}rad/s{'\}'} \approx 15.6\ \text{'\{'}rpm{'\}'}$$
+$$\dot{\phi} = \frac{Mgd}{I_3\omega_3} = \frac{0.5 \times 9.81 \times 0.05}{5 \times 10^{-4} \times 300} = \frac{0.245}{0.15} = 1.63\ \text{rad/s{} \approx 15.6\ \text{rpm{}$$
 
 The precession period: $T = 2\pi/\dot{\phi} = 3.85$ s.
 
@@ -2010,7 +2010,7 @@ An **adiabatic invariant** is a quantity that remains constant when a parameter 
 
 For a harmonic oscillator with slowly varying $\omega(t)$:
 
-$$\frac{E}{\omega} = \text{'\{'}const{'\}'} \quad \text{'\{'}(adiabatic invariant){'\}'}$$
+$$\frac{E}{\omega} = \text{const{} \quad \text{(adiabatic invariant){}$$
 
 This has important applications:
 - **Fermi acceleration:** Cosmic rays gaining energy from moving magnetic fields
@@ -2051,7 +2051,7 @@ $$H(J) = J\omega$$
 
 The angle variable evolves as $\dot{\theta} = \partial H/\partial J = \omega$, giving $\theta(t) = \omega t + \theta_0$.
 
-The frequency is $\omega = \partial H/\partial J = \text{'\{'}const{'\}'}$, independent of $J$ (harmonic oscillator has no frequency shift with amplitude --- a special property).
+The frequency is $\omega = \partial H/\partial J = \text{const{}$, independent of $J$ (harmonic oscillator has no frequency shift with amplitude --- a special property).
 
 </details>
 
@@ -2191,7 +2191,7 @@ $$E = P^2/(2m), \quad S(x, P, t) = Px - \frac{P^2}{2m}t$$
 
 $$X = \frac{\partial S}{\partial P} = x - \frac{P}{m}t$$
 
-The new Hamiltonian $K = H + \partial S/\partial t = P^2/(2m) - P^2/(2m) = 0$. All momenta and energies are constant. The new coordinate evolves as $X = x_0 = \text{'\{'}const{'\}'}$ (the initial position).
+The new Hamiltonian $K = H + \partial S/\partial t = P^2/(2m) - P^2/(2m) = 0$. All momenta and energies are constant. The new coordinate evolves as $X = x_0 = \text{const{}$ (the initial position).
 
 The original coordinate: $x = X + Pt/m = x_0 + v_0 t$ (uniform motion). $\checkmark$
 
@@ -2221,7 +2221,7 @@ Plane wave solutions: $\phi \propto e^{i(\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r
 
 Every continuous symmetry of the action yields a conserved current:
 
-$$\partial_\mu j^\mu = 0 \implies Q = \int j^0\,d^3x = \text{'\{'}const{'\}'}$$
+$$\partial_\mu j^\mu = 0 \implies Q = \int j^0\,d^3x = \text{const{}$$
 
 | Symmetry | Conserved Quantity |
 |----------|-------------------|

@@ -540,7 +540,7 @@ $$
 **Propagation (pathway to 1-chloropropane):**
 
 $$
-\mathrm{Cl{}\cdot + \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_3 \to \mathrm{HCl{} + \mathrm{CH{}_2\cdot\mathrm{CH{}_2\mathrm{CH{}_3 \quad (\text{'\{'}abstracts a primary H{'\}'})
+\mathrm{Cl{}\cdot + \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_3 \to \mathrm{HCl{} + \mathrm{CH{}_2\cdot\mathrm{CH{}_2\mathrm{CH{}_3 \quad (\text{abstracts a primary H{})
 $$
 
 $$
@@ -550,7 +550,7 @@ $$
 **Propagation (pathway to 2-chloropropane):**
 
 $$
-\mathrm{Cl{}\cdot + \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_3 \to \mathrm{HCl{} + \mathrm{CH{}_3\mathrm{CH{}\cdot\mathrm{CH{}_3 \quad (\text{'\{'}abstracts a secondary H{'\}'})
+\mathrm{Cl{}\cdot + \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_3 \to \mathrm{HCl{} + \mathrm{CH{}_3\mathrm{CH{}\cdot\mathrm{CH{}_3 \quad (\text{abstracts a secondary H{})
 $$
 
 $$
@@ -601,17 +601,17 @@ $$
 n = 0.700
 $$
 
-Molar mass of alkane $= 10.0/0.700 \times (1/n)$... Wait: $n(\text{'\{'}alkane{'\}'}) = n(\mathrm{CO{}_2)/n_\mathrm{C{}$.
+Molar mass of alkane $= 10.0/0.700 \times (1/n)$... Wait: $n(\text{alkane{}) = n(\mathrm{CO{}_2)/n_\mathrm{C{}$.
 
-If 1 mol alkane produces $n$ mol $\mathrm{CO{}_2$: $n(\text{'\{'}alkane{'\}'}) = 0.700/n$.
+If 1 mol alkane produces $n$ mol $\mathrm{CO{}_2$: $n(\text{alkane{}) = 0.700/n$.
 
-$M = 10.0/n(\text{'\{'}alkane{'\}'}) = 10.0n/0.700 = 14.3n$.
+$M = 10.0/n(\text{alkane{}) = 10.0n/0.700 = 14.3n$.
 
 For $\mathrm{C{}_5\mathrm{H{}_{12}$: $M = 60 + 12 = 72$. $14.3n = 72 \implies n = 5.03 \approx 5$.
 
 The alkane is **pentane** ($\mathrm{C{}_5\mathrm{H{}_{12}$, $M = 72.0\,\mathrm{g/mol{}$).
 
-Check: $n(\text{'\{'}pentane{'\}'}) = 10.0/72.0 = 0.139\,\mathrm{mol{}$. $n(\mathrm{CO{}_2) = 5 \times 0.139 = 0.694\,\mathrm{mol{}$. $m(\mathrm{CO{}_2) = 0.694 \times 44.0 = 30.5\,\mathrm{g{}$ (close to $30.8\,\mathrm{g{}$; the small discrepancy is due to rounding).
+Check: $n(\text{pentane{}) = 10.0/72.0 = 0.139\,\mathrm{mol{}$. $n(\mathrm{CO{}_2) = 5 \times 0.139 = 0.694\,\mathrm{mol{}$. $m(\mathrm{CO{}_2) = 0.694 \times 44.0 = 30.5\,\mathrm{g{}$ (close to $30.8\,\mathrm{g{}$; the small discrepancy is due to rounding).
 
 </details>
 
@@ -621,9 +621,9 @@ Check: $n(\text{'\{'}pentane{'\}'}) = 10.0/72.0 = 0.139\,\mathrm{mol{}$. $n(\mat
 
 Incomplete combustion occurs when oxygen supply is limited, producing carbon monoxide and/or carbon (soot) in addition to (or instead of) carbon dioxide.
 
-$$\mathrm{C{}_n\mathrm{H{}_{2n+2} + \frac{3n+1}{2}\mathrm{O{}_2 \to n\mathrm{CO{} + (n+1)\mathrm{H{}_2\mathrm{O{} \quad \text{'\{'}(partial){'\}'}$$
+$$\mathrm{C{}_n\mathrm{H{}_{2n+2} + \frac{3n+1}{2}\mathrm{O{}_2 \to n\mathrm{CO{} + (n+1)\mathrm{H{}_2\mathrm{O{} \quad \text{(partial){}$$
 
-$$\mathrm{C{}_n\mathrm{H{}_{2n+2} + \frac{n+1}{2}\mathrm{O{}_2 \to n\mathrm{C{} + (n+1)\mathrm{H{}_2\mathrm{O{} \quad \text{'\{'}(very limited){'\}'}$$
+$$\mathrm{C{}_n\mathrm{H{}_{2n+2} + \frac{n+1}{2}\mathrm{O{}_2 \to n\mathrm{C{} + (n+1)\mathrm{H{}_2\mathrm{O{} \quad \text{(very limited){}$$
 
 **Environmental impact of combustion products:**
 
@@ -652,7 +652,7 @@ The chain carrier ($\mathrm{Cl{}^\bullet$) is regenerated, allowing the chain to
 
 **Stage 3 -- Termination:**
 $$2\mathrm{Cl{}^\bullet \to \mathrm{Cl{}_2$$
-$$2\mathrm{CH{}_3\mathrm{CH{}_2^\bullet \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 \quad \text{'\{'}(butane){'\}'}$$
+$$2\mathrm{CH{}_3\mathrm{CH{}_2^\bullet \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 \quad \text{(butane){}$$
 $$\mathrm{CH{}_3\mathrm{CH{}_2^\bullet + \mathrm{Cl{}^\bullet \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{Cl{}$$
 
 Termination produces a mixture of products, which is why free radical substitution is not a useful synthetic method for preparing pure haloalkanes.

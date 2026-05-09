@@ -174,11 +174,11 @@ graph.
 ### Pythagorean Identities
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \sin^2\theta + \cos^2\theta &= 1\\
 1 + \tan^2\theta &= \sec^2\theta\\
 1 + \cot^2\theta &= \csc^2\theta
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Proof of $\sin^2\theta + \cos^2\theta = 1$
@@ -220,11 +220,11 @@ $$
 ### Compound Angle Identities
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \sin(A \pm B) &= \sin A \cos B \pm \cos A \sin B\\
 \cos(A \pm B) &= \cos A \cos B \mp \sin A \sin B\\
 \tan(A \pm B) &= \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Proof of Compound Angle Formulas (Rotation Matrix)
@@ -235,21 +235,21 @@ $(\cos(A + B), \sin(A + B))$.
 Equivalently, we can first rotate by $B$, then by $A$. The rotation matrix for angle $\alpha$ is:
 
 $$
-R(\alpha) = \begin{pmatrix} \cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha \end{pmatrix}
+R(\alpha) = \begin`\{pmatrix}` \cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha \end`\{pmatrix}`
 $$
 
 The composite rotation $R(A)R(B)$ applied to $(1, 0)$:
 
 $$
-\begin{pmatrix} \cos A & -\sin A \\ \sin A & \cos A \end{pmatrix}
-\begin{pmatrix} \cos B & -\sin B \\ \sin B & \cos B \end{pmatrix}
-\begin{pmatrix} 1 \\ 0 \end{pmatrix}
+\begin`\{pmatrix}` \cos A & -\sin A \\ \sin A & \cos A \end`\{pmatrix}`
+\begin`\{pmatrix}` \cos B & -\sin B \\ \sin B & \cos B \end`\{pmatrix}`
+\begin`\{pmatrix}` 1 \\ 0 \end`\{pmatrix}`
 $$
 
 First multiply the matrices:
 
 $$
-R(A)R(B) = \begin{pmatrix} \cos A \cos B - \sin A \sin B & -\cos A \sin B - \sin A \cos B \\ \sin A \cos B + \cos A \sin B & -\sin A \sin B + \cos A \cos B \end{pmatrix}
+R(A)R(B) = \begin`\{pmatrix}` \cos A \cos B - \sin A \sin B & -\cos A \sin B - \sin A \cos B \\ \sin A \cos B + \cos A \sin B & -\sin A \sin B + \cos A \cos B \end`\{pmatrix}`
 $$
 
 Applying to $(1, 0)$ gives the top-left and bottom-left entries:
@@ -266,11 +266,11 @@ $\cos(-B) = \cos B$.
 Setting $A = B = \theta$ in the compound angle formulas:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \sin 2\theta &= 2\sin\theta \cos\theta\\[4pt]
 \cos 2\theta &= \cos^2\theta - \sin^2\theta\\
 \tan 2\theta &= \frac{2\tan\theta}{1 - \tan^2\theta}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Three Forms of $\cos 2\theta$
@@ -312,21 +312,21 @@ $$
 For $x$ in the appropriate domain:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \sin(\arcsin x) &= x, \quad \mathrm{for {} -1 \le x \le 1\\
 \cos(\arccos x) &= x, \quad \mathrm{for {} -1 \le x \le 1\\
 \tan(\arctan x) &= x, \quad \mathrm{for all real {} x
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The reverse compositions are only true on restricted domains:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \arcsin(\sin x) &= x, \quad \mathrm{for {} -\frac{\pi}{2} \le x \le \frac{\pi}{2}\\
 \arccos(\cos x) &= x, \quad \mathrm{for {} 0 \le x \le \pi\\
 \arctan(\tan x) &= x, \quad \mathrm{for {} -\frac{\pi}{2} \lt x \lt \frac{\pi}{2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Worked Example: Inverse Trig Evaluation
@@ -517,11 +517,11 @@ The bearing from $C$ to $A$ is $360^{\circ} - 110^{\circ} - 25.3^{\circ} \approx
 ### General Solutions
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
 \sin\theta &= k \implies \theta = \arcsin(k) + 2n\pi \mathrm{ or {} \theta = \pi - \arcsin(k) + 2n\pi\\
 \cos\theta &= k \implies \theta = \arccos(k) + 2n\pi \mathrm{ or {} \theta = -\arccos(k) + 2n\pi\\
 \tan\theta &= k \implies \theta = \arctan(k) + n\pi
-\end{aligned}
+\end`\{aligned}`
 $$
 
 where $n \in \mathbb{'\{'}Z{'\}'}$.

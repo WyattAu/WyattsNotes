@@ -775,13 +775,13 @@ Revenue at current production: $2(200) + 4.4(150) = 400 + 660 = 1060$.
 Revenue after switching to 3 million tonnes of wheat:
 $3(200) + 3.6(150) = 600 + 540 = 1140$.
 
-Revenue gain: $1140 - 1060 = \text{'\{'}GBP {'\}'} 80\text{'\{'}m{'\}'}$. The farmer should produce more wheat.
+Revenue gain: $1140 - 1060 = \text{GBP {} 80\text{m{}$. The farmer should produce more wheat.
 
 **What if barley price rises to GBP 200/tonne?**
 Revenue at current production: $2(200) + 4.4(200) = 400 + 880 = 1280$.
 Revenue at 3 million tonnes of wheat: $3(200) + 3.6(200) = 600 + 720 = 1320$.
 
-Revenue gain: $1320 - 1280 = \text{'\{'}GBP {'\}'} 40\text{'\{'}m{'\}'}$. Still worth producing more wheat.
+Revenue gain: $1320 - 1280 = \text{GBP {} 40\text{m{}$. Still worth producing more wheat.
 
 **What if barley price rises to GBP 250/tonne?**
 Revenue at current production: $2(200) + 4.4(250) = 400 + 1100 = 1500$.
@@ -793,7 +793,7 @@ Revenue gain: 0. The farmer is indifferent between producing 2 and 3 million ton
 Revenue at current production: $2(200) + 4.4(300) = 400 + 1320 = 1720$.
 Revenue at 3 million tonnes of wheat: $3(200) + 3.6(300) = 600 + 1080 = 1680$.
 
-Revenue change: $-40\text{'\{'}m{'\}'}$. The farmer should produce LESS wheat (more barley). The opportunity cost of wheat production has increased relative to its value.
+Revenue change: $-40\text{m{}$. The farmer should produce LESS wheat (more barley). The opportunity cost of wheat production has increased relative to its value.
 
 **Key insight:** The optimal production point depends on the relative prices of the two goods. The farmer should produce where the marginal rate of transformation (MRT = opportunity cost) equals the price ratio ($P_w/P_b$).
 

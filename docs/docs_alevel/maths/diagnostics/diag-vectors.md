@@ -65,7 +65,7 @@ Actual shortest distance: $\sqrt{5/7} = \sqrt{35}/7 \approx 0.845$.
 
 Student's answer: $\sqrt{11} \approx 3.317$.
 
-$$\text{'\{'}Percentage overestimate{'\}'} = \frac{\sqrt{11} - \sqrt{5/7}}{\sqrt{5/7}} \times 100\% = \left(\frac{\sqrt{77}}{\sqrt{5}} - 1\right) \times 100\% \approx 293\%$$
+$$\text{Percentage overestimate{} = \frac{\sqrt{11} - \sqrt{5/7}}{\sqrt{5/7}} \times 100\% = \left(\frac{\sqrt{77}}{\sqrt{5}} - 1\right) \times 100\% \approx 293\%$$
 
 ---
 

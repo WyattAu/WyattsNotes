@@ -39,7 +39,7 @@ Prokaryotes reproduce faster because: (1) binary fission is simpler than mitosis
 
 ---
 ### UT-3: Fluid Mosaic Model and Membrane Transport
-**Question:** Describe the fluid mosaic model of membrane structure. Explain why small non-polar molecules (e.g., $\text{'\{'}O{'\}'}_2$, $\text{'\{'}CO{'\}'}_2$) can diffuse across the membrane easily, while ions (e.g., $\text{'\{'}Na{'\}'}^+$) require transport proteins. Include the roles of cholesterol and integral proteins.
+**Question:** Describe the fluid mosaic model of membrane structure. Explain why small non-polar molecules (e.g., $\text{O{}_2$, $\text{CO{}_2$) can diffuse across the membrane easily, while ions (e.g., $\text{Na{}^+$) require transport proteins. Include the roles of cholesterol and integral proteins.
 
 **Solution:**
 
@@ -87,26 +87,26 @@ Maternal inheritance explanation: During fertilisation, the sperm contributes pr
 
 ---
 ### IT-3: Membrane Transport and Neurone Function (with Human Physiology)
-**Question:** The sodium-potassium pump ($\text{'\{'}Na{'\}'}^+/\text{'\{'}K{'\}'}^+$-ATPase) moves $3\ \text{'\{'}Na{'\}'}^+$ out and $2\ \text{'\{'}K{'\}'}^+$ in per ATP hydrolysed. Calculate the percentage of a typical neuron's resting energy budget consumed by this pump, given that a neuron at rest has a membrane potential of $-70\ \text{'\{'}mV{'\}'}$ and the pump maintains concentration gradients of $[\text{'\{'}Na{'\}'}^+]_{\text{'\{'}out{'\}'}}/[\text{'\{'}Na{'\}'}^+]_{\text{'\{'}in{'\}'}} = 10$ and $[\text{'\{'}K{'\}'}^+]_{\text{'\{'}in{'\}'}}/[\text{'\{'}K{'\}'}^+]_{\text{'\{'}out{'\}'}} = 30$. One ATP hydrolysis releases approximately $50\ \text{'\{'}kJ mol{'\}'}^{-1}$.
+**Question:** The sodium-potassium pump ($\text{Na{}^+/\text{K{}^+$-ATPase) moves $3\ \text{Na{}^+$ out and $2\ \text{K{}^+$ in per ATP hydrolysed. Calculate the percentage of a typical neuron's resting energy budget consumed by this pump, given that a neuron at rest has a membrane potential of $-70\ \text{mV{}$ and the pump maintains concentration gradients of $[\text{Na{}^+]_{\text{out{}}/[\text{Na{}^+]_{\text{in{}} = 10$ and $[\text{K{}^+]_{\text{in{}}/[\text{K{}^+]_{\text{out{}} = 30$. One ATP hydrolysis releases approximately $50\ \text{kJ mol{}^{-1}$.
 
 **Solution:**
 
 The work done by the pump per cycle (moving 3 Na$^+$ out and 2 K$^+$ in) against both concentration and electrical gradients:
 
-For $\text{'\{'}Na{'\}'}^+$ (moving out against both gradient and electrical gradient, since inside is negative):
-$\Delta G_{\text{'\{'}Na{'\}'}} = 3RT\ln\frac{[\text{'\{'}Na{'\}'}^+]_{\text{'\{'}out{'\}'}}}{[\text{'\{'}Na{'\}'}^+]_{\text{'\{'}in{'\}'}}} + 3F \times V_m$
+For $\text{Na{}^+$ (moving out against both gradient and electrical gradient, since inside is negative):
+$\Delta G_{\text{Na{}} = 3RT\ln\frac{[\text{Na{}^+]_{\text{out{}}}{[\text{Na{}^+]_{\text{in{}}} + 3F \times V_m$
 
 $= 3(8.314)(310)\ln(10) + 3(96485)(0.070)$
 
-$= 3(2577)(2.303) + 3(6754) = 17800 + 20262 = 38062\ \text{'\{'}J mol{'\}'}^{-1}$
+$= 3(2577)(2.303) + 3(6754) = 17800 + 20262 = 38062\ \text{J mol{}^{-1}$
 
-For $\text{'\{'}K{'\}'}^+$ (moving in against the concentration gradient but with the electrical gradient):
-$\Delta G_{\text{'\{'}K{'\}'}} = 2RT\ln\frac{[\text{'\{'}K{'\}'}^+]_{\text{'\{'}in{'\}'}}}{[\text{'\{'}K{'\}'}^+]_{\text{'\{'}out{'\}'}}} - 2F \times V_m$
+For $\text{K{}^+$ (moving in against the concentration gradient but with the electrical gradient):
+$\Delta G_{\text{K{}} = 2RT\ln\frac{[\text{K{}^+]_{\text{in{}}}{[\text{K{}^+]_{\text{out{}}} - 2F \times V_m$
 
-$= 2(2577)\ln(30) - 2(6754) = 2(2577)(3.401) - 13508 = 17534 - 13508 = 4026\ \text{'\{'}J mol{'\}'}^{-1}$
+$= 2(2577)\ln(30) - 2(6754) = 2(2577)(3.401) - 13508 = 17534 - 13508 = 4026\ \text{J mol{}^{-1}$
 
-Total work per cycle: $38062 + 4026 = 42088\ \text{'\{'}J mol{'\}'}^{-1} \approx 42\ \text{'\{'}kJ mol{'\}'}^{-1}$
+Total work per cycle: $38062 + 4026 = 42088\ \text{J mol{}^{-1} \approx 42\ \text{kJ mol{}^{-1}$
 
 Efficiency: $\frac{42}{50} \times 100 = 84\%$
 
-The $\text{'\{'}Na{'\}'}^+/\text{'\{'}K{'\}'}^+$ pump is estimated to consume approximately 60--70% of a neuron's total ATP at rest. This is because the pump must continuously work against the leak channels that allow $\text{'\{'}Na{'\}'}^+$ to diffuse back in and $\text{'\{'}K{'\}'}^+$ to diffuse back out, maintaining the resting potential that is essential for action potential generation.
+The $\text{Na{}^+/\text{K{}^+$ pump is estimated to consume approximately 60--70% of a neuron's total ATP at rest. This is because the pump must continuously work against the leak channels that allow $\text{Na{}^+$ to diffuse back in and $\text{K{}^+$ to diffuse back out, maintaining the resting potential that is essential for action potential generation.

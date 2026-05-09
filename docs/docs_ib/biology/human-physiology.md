@@ -934,7 +934,7 @@ Jaundice (yellowing of the skin and sclera) results from elevated bilirubin in t
 
 **Fick's Law** applied to alveolar exchange:
 
-$$\text{'\{'}Rate of diffusion{'\}'} \propto \frac{A \times \Delta P}{d}$$
+$$\text{Rate of diffusion{} \propto \frac{A \times \Delta P}{d}$$
 
 - $A$ (surface area) $\approx 70\;\mathrm{m{}^2$ in adult lungs.
 - $\Delta P$ (partial pressure gradient) maintained by ventilation.
@@ -1037,14 +1037,14 @@ volume increases to $120\;\mathrm{mL{}$. Calculate the new cardiac output and th
 <details>
 <summary>Solution</summary>
 
-(a) $\text{'\{'}CO{'\}'} = \text{'\{'}HR{'\}'} \times \text{'\{'}SV{'\}'} = 72 \times 70 = 5040\;\mathrm{mL/min{} = 5.04\;\mathrm{L/min{}$.
+(a) $\text{CO{} = \text{HR{} \times \text{SV{} = 72 \times 70 = 5040\;\mathrm{mL/min{} = 5.04\;\mathrm{L/min{}$.
 
-(b) $\text{'\{'}MAP{'\}'} = \text{'\{'}CO{'\}'} \times \text{'\{'}TPR{'\}'}$, so $\text{'\{'}TPR{'\}'} = \text{'\{'}MAP{'\}'} / \text{'\{'}CO{'\}'}$.
-Need consistent units. $\text{'\{'}CO{'\}'} = 5040\;\mathrm{mL/min{} = 0.084\;\mathrm{L/s{}$.
-$\text{'\{'}TPR{'\}'} = 93 / 0.084 = 1107\;\mathrm{mmHg \cdot s/L{}$ (or $\text{'\{'}PRU{'\}'}$, peripheral resistance units).
+(b) $\text{MAP{} = \text{CO{} \times \text{TPR{}$, so $\text{TPR{} = \text{MAP{} / \text{CO{}$.
+Need consistent units. $\text{CO{} = 5040\;\mathrm{mL/min{} = 0.084\;\mathrm{L/s{}$.
+$\text{TPR{} = 93 / 0.084 = 1107\;\mathrm{mmHg \cdot s/L{}$ (or $\text{PRU{}$, peripheral resistance units).
 Normal TPR $= 1000$--$1200\;\mathrm{PRU{}$.
 
-(c) $\text{'\{'}CO{'\}'}_{exercise} = 150 \times 120 = 18000\;\mathrm{mL/min{} = 18.0\;\mathrm{L/min{}$.
+(c) $\text{CO{}_{exercise} = 150 \times 120 = 18000\;\mathrm{mL/min{} = 18.0\;\mathrm{L/min{}$.
 Percentage increase $= \frac{18.0 - 5.04}{5.04} \times 100 = 257\%$.
 
 (d) Baroreceptor reflex (drop in blood pressure):
@@ -1111,7 +1111,7 @@ expected daily urine volume.
 (a) Creatinine clearance $= \frac{U \times V}{P}$ where $U = 1.5\;\mathrm{g/L{}$, $P = 0.010\;\mathrm{g/L{}$,
 $V = 1440\;\mathrm{mL/day{} = 1.0\;\mathrm{mL/min{}$.
 
-$\text{'\{'}Clearance{'\}'} = \frac{1.5 \times 1.0}{0.010} = 150\;\mathrm{mL/min{}$.
+$\text{Clearance{} = \frac{1.5 \times 1.0}{0.010} = 150\;\mathrm{mL/min{}$.
 
 Normal creatinine clearance (men): $105$--$125\;\mathrm{mL/min{}$. This patient has an elevated clearance,
 which may indicate high muscle mass (creatine is converted to creatinine, which is filtered by the

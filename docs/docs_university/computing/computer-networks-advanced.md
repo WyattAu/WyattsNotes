@@ -185,11 +185,11 @@ TCP uses an **additive-increase multiplicative-decrease (AIMD)** algorithm for c
 
 **Theorem 2.1 (TCP throughput).** The average throughput of TCP Reno is approximately:
 
-$$\text{'\{'}Throughput{'\}'} \approx \frac{1.22 \cdot \text{'\{'}MSS{'\}'}}{\text{'\{'}RTT{'\}'} \cdot \sqrt{p}}$$
+$$\text{Throughput{} \approx \frac{1.22 \cdot \text{MSS{}}{\text{RTT{} \cdot \sqrt{p}}$$
 
 where $p$ is the packet loss rate.
 
-*Proof (outline).* TCP oscillates between cwnd $= W/2$ and cwnd $= W$, where $W$ is the window size at which loss occurs. The area under the AIMD sawtooth is approximately $\frac{3}{8} W^2$ (the integral of the linear increase from $W/2$ to $W$). The number of packets sent per cycle is $\frac{3}{8} W^2$. The cycle length is $W/2$ RTTs. The loss rate is approximately $1/(\frac{3}{8} W^2)$ (one loss per cycle). So $W \approx \sqrt{8/(3p)}$. The throughput is $\frac{3}{8} W^2 / (\frac{W}{2} \cdot \text{'\{'}RTT{'\}'}) = \frac{3W}{4 \cdot \text{'\{'}RTT{'\}'}} \approx \frac{1.22 \cdot \text{'\{'}MSS{'\}'}}{\text{'\{'}RTT{'\}'} \cdot \sqrt{p}}$. $\blacksquare$
+*Proof (outline).* TCP oscillates between cwnd $= W/2$ and cwnd $= W$, where $W$ is the window size at which loss occurs. The area under the AIMD sawtooth is approximately $\frac{3}{8} W^2$ (the integral of the linear increase from $W/2$ to $W$). The number of packets sent per cycle is $\frac{3}{8} W^2$. The cycle length is $W/2$ RTTs. The loss rate is approximately $1/(\frac{3}{8} W^2)$ (one loss per cycle). So $W \approx \sqrt{8/(3p)}$. The throughput is $\frac{3}{8} W^2 / (\frac{W}{2} \cdot \text{RTT{}) = \frac{3W}{4 \cdot \text{RTT{}} \approx \frac{1.22 \cdot \text{MSS{}}{\text{RTT{} \cdot \sqrt{p}}$. $\blacksquare$
 
 ### 2.2 TCP Variants
 
@@ -203,7 +203,7 @@ where $p$ is the packet loss rate.
 
 **TCP Cubic.** Replaces the linear increase with a cubic function:
 
-$$\text{'\{'}cwnd{'\}'}(t) = W_{\max} + \beta \cdot \left(\frac{t}{K}\right)^3 - (W_{\max} - \text{'\{'}cwnd{'\}'}_{\text{'\{'}low{'\}'}})$$
+$$\text{cwnd{}(t) = W_{\max} + \beta \cdot \left(\frac{t}{K}\right)^3 - (W_{\max} - \text{cwnd{}_{\text{low{}})$$
 
 where $W_{\max}$ is the window size at the last loss event, $K = \sqrt[3]{W_{\max} \cdot \beta / C}$, $\beta = 0.4$, and $C = 0.4$.
 
@@ -289,13 +289,13 @@ This illustrates the dramatic effect of high utilisation on queueing delays.
 **Throughput:** Total data delivered per unit time (including retransmissions).
 **Goodput:** Useful application data delivered per unit time (excluding headers, retransmissions).
 
-$$\text{'\{'}Goodput{'\}'} = \text{'\{'}Throughput{'\}'} \times \frac{\text{'\{'}Application data{'\}'}}{\text{'\{'}Total bytes transferred{'\}'}} \times (1 - \text{'\{'}loss rate{'\}'})$$
+$$\text{Goodput{} = \text{Throughput{} \times \frac{\text{Application data{}}{\text{Total bytes transferred{}} \times (1 - \text{loss rate{})$$
 
 **Bandwidth-Delay Product (BDP):** The amount of data "in flight" (sent but not yet acknowledged):
 
-$$\text{'\{'}BDP{'\}'} = \text{'\{'}Bandwidth{'\}'} \times \text{'\{'}RTT{'\}'}$$
+$$\text{BDP{} = \text{Bandwidth{} \times \text{RTT{}$$
 
-For a 1 Gbps link with 50 ms RTT: $\text{'\{'}BDP{'\}'} = 10^9 \times 0.05 = 50 \times 10^6$ bits $= 6.25$ MB.
+For a 1 Gbps link with 50 ms RTT: $\text{BDP{} = 10^9 \times 0.05 = 50 \times 10^6$ bits $= 6.25$ MB.
 
 The TCP receive window must be at least the BDP for full utilisation.
 
@@ -984,11 +984,11 @@ An M/M/c queue has $c$ servers, Poisson arrivals ($\lambda$), and exponential se
 
 **Erlang C formula** (probability that an arriving customer must wait):
 
-$$P(\text{'\{'}wait{'\}'}) = \frac{(c\rho)^c}{c!(1 - \rho)} \cdot \frac{1}{\sum_{k=0}^{c-1} \frac{(c\rho)^k}{k!} + \frac{(c\rho)^c}{c!(1-\rho)}}$$
+$$P(\text{wait{}) = \frac{(c\rho)^c}{c!(1 - \rho)} \cdot \frac{1}{\sum_{k=0}^{c-1} \frac{(c\rho)^k}{k!} + \frac{(c\rho)^c}{c!(1-\rho)}}$$
 
 **Average number in queue:**
 
-$$L_q = \frac{P(\text{'\{'}wait{'\}'}) \cdot \rho}{1 - \rho}$$
+$$L_q = \frac{P(\text{wait{}) \cdot \rho}{1 - \rho}$$
 
 <details>
 <summary>Worked Example: M/M/c Queue for Server Farm</summary>
@@ -999,7 +999,7 @@ Utilisation: $\rho = 10 / (4 \times 3) = 10/12 = 0.833$.
 
 Using the Erlang C formula:
 
-Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{'\{'}sum factor{'\}'}$... this is complex to compute by hand. Let me use the simplified formula.
+Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{sum factor{}$... this is complex to compute by hand. Let me use the simplified formula.
 
 $a = \lambda / \mu = 10/3 = 3.333$.
 
@@ -1009,7 +1009,7 @@ $= [1 + 3.333 + 5.556 + 6.173 + \frac{123.46}{24 \times 0.167}]^{-1}$
 $= [1 + 3.333 + 5.556 + 6.173 + 30.77]^{-1}$
 $= [46.83]^{-1} = 0.0214$
 
-$P(\text{'\{'}wait{'\}'}) = \frac{a^4}{4!(1-\rho)} \cdot P_0 = 30.77 \times 0.0214 = 0.658$
+$P(\text{wait{}) = \frac{a^4}{4!(1-\rho)} \cdot P_0 = 30.77 \times 0.0214 = 0.658$
 
 $65.8\%$ of requests must wait. Average queue length: $L_q = \frac{0.658 \times 0.833}{1 - 0.833} = \frac{0.548}{0.167} = 3.28$ requests.
 
@@ -1065,15 +1065,15 @@ Route C: AS_PATH = [200, 300, 600], LOCAL_PREF = 150, MED = 100, IGP cost to NEX
 
 Using the TCP Reno throughput formula:
 
-$$\text{'\{'}Throughput{'\}'} \approx \frac{1.22 \times \text{'\{'}MSS{'\}'}}{\text{'\{'}RTT{'\}'} \times \sqrt{p}}$$
+$$\text{Throughput{} \approx \frac{1.22 \times \text{MSS{}}{\text{RTT{} \times \sqrt{p}}$$
 
-$\text{'\{'}MSS{'\}'} = 1460$ bytes $= 11680$ bits.
-$\text{'\{'}RTT{'\}'} = 80$ ms $= 0.08$ s.
+$\text{MSS{} = 1460$ bytes $= 11680$ bits.
+$\text{RTT{} = 80$ ms $= 0.08$ s.
 $p = 0.001$.
 
-$$\text{'\{'}Throughput{'\}'} \approx \frac{1.22 \times 11680}{0.08 \times \sqrt{0.001}} = \frac{14249.6}{0.08 \times 0.03162} = \frac{14249.6}{0.002530} \approx 5\,632\,727 \text{'\{'} bits/s{'\}'} \approx 5.63 \text{'\{'} Mbps{'\}'}$$
+$$\text{Throughput{} \approx \frac{1.22 \times 11680}{0.08 \times \sqrt{0.001}} = \frac{14249.6}{0.08 \times 0.03162} = \frac{14249.6}{0.002530} \approx 5\,632\,727 \text{ bits/s{} \approx 5.63 \text{ Mbps{}$$
 
-The BDP is $\text{'\{'}BW{'\}'} \times \text{'\{'}RTT{'\}'} = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits $\approx 54.9$ KB. The receive window must be at least this for full utilisation.
+The BDP is $\text{BW{} \times \text{RTT{} = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits $\approx 54.9$ KB. The receive window must be at least this for full utilisation.
 
 If you get this wrong, revise: Section 2.1.
 </details>

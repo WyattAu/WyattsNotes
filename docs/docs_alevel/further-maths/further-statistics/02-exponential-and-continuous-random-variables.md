@@ -821,7 +821,7 @@ $$P(\overline{X} > 12) = P\!\left(Z > \frac{12-10}{\sqrt{2}}\right) = P(Z > 1.41
 
 **Solution.** For $0 < y < 1$: $F_Y(y) = P(Y \leq y) = P(X^2 \leq y) = P(X \leq \sqrt{y}) = (\sqrt{y})^2 = y$.
 
-$$f_Y(y) = \frac{d}{dy}F_Y(y) = \boxed{1} \quad \text{'\{'}for {'\}'} 0 < y < 1$$
+$$f_Y(y) = \frac{d}{dy}F_Y(y) = \boxed{1} \quad \text{for {} 0 < y < 1$$
 
 So $Y \sim \mathrm{U{}(0,1)$.
 
@@ -968,7 +968,7 @@ $\lambda = \dfrac{1}{500} = 0.002$.
 
 **(b)** $P(400 < X < 600) = e^{-0.8} - e^{-1.2} \approx 0.449 - 0.301 = \boxed{0.148}$.
 
-**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = \dfrac{\ln 2}{0.002} = \boxed{346.6\,\text{'\{'}hours{'\}'}}$.
+**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = \dfrac{\ln 2}{0.002} = \boxed{346.6\,\text{hours{}}$.
 
 </details>
 

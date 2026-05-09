@@ -134,7 +134,7 @@ Starting from ethene ($CH_{2}=CH_{2}$), outline a reaction pathway to produce et
 
 **Step 1**: Ethene to ethanol
 
-$$CH_{2}=CH_{2} + H_{2}O \xrightarrow{H_{3}PO_{4}, 300\degree C, 60 \text{'\{'} atm{'\}'}} CH_{3}CH_{2}OH$$
+$$CH_{2}=CH_{2} + H_{2}O \xrightarrow{H_{3}PO_{4}, 300\degree C, 60 \text{ atm{}} CH_{3}CH_{2}OH$$
 
 Reagent: Steam ($H_{2}O$)
 Conditions: Phosphoric acid catalyst, 300$^{\circ}$C, 60 atm

@@ -104,7 +104,7 @@ So $\frac{1}{(1-x)^3} = \sum_{n=0}^{\infty}\frac{(n+1)(n+2)}{2}x^n = 1 + 3x + 6x
 $\frac{1}{(1-x)^3} = \sum_{n=0}^{\infty}\frac{(n+1)(n+2)}{2}x^n$. Verified.
 
 ### IT-3: Algebraic Manipulation (with Matrices)
-**Question:** (a) If $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $M^2 = \mathbf{'\{'}I{'\}'}$, show that $a^2 + bc = 1$. (b) Find all $2 \times 2$ matrices with integer entries satisfying $M^2 = \mathbf{'\{'}I{'\}'}$. (c) The trace of $M$ is $\text{'\{'}tr{'\}'}(M) = a + d$. What relationship must the trace satisfy for $M^2 = \mathbf{'\{'}I{'\}'}$? (d) How many such matrices exist with entries in $\{0, 1, -1\}$?
+**Question:** (a) If $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $M^2 = \mathbf{'\{'}I{'\}'}$, show that $a^2 + bc = 1$. (b) Find all $2 \times 2$ matrices with integer entries satisfying $M^2 = \mathbf{'\{'}I{'\}'}$. (c) The trace of $M$ is $\text{tr{}(M) = a + d$. What relationship must the trace satisfy for $M^2 = \mathbf{'\{'}I{'\}'}$? (d) How many such matrices exist with entries in $\{0, 1, -1\}$?
 
 **Solution:**
 
@@ -123,9 +123,9 @@ With integer entries and $|a|, |b|, |c| \le 1$: if $a = 0$: $bc = 1$, same as ab
   Matrices: $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$, $\begin{pmatrix}1&1\\0&-1\end{pmatrix}$, $\begin{pmatrix}1&-1\\0&-1\end{pmatrix}$, $\begin{pmatrix}1&0\\1&-1\end{pmatrix}$, $\begin{pmatrix}1&0\\-1&-1\end{pmatrix}$.
 - $a = -1, d = 1$: similarly, 5 matrices with $(-1, 1)$ diagonal.
 
-(c) From $M^2 = \mathbf{'\{'}I{'\}'}$: $\det(M)^2 = 1$, so $\det(M) = \pm 1$. Also $\text{'\{'}tr{'\}'}(M) = a + d$. From $d = \pm a$: $\text{'\{'}tr{'\}'} = 2a$ or $\text{'\{'}tr{'\}'} = 0$.
-If $d = a$: $\text{'\{'}tr{'\}'} = 2a \in \{-2, 0, 2\}$. If $d = -a$: $\text{'\{'}tr{'\}'} = 0$.
-So $\text{'\{'}tr{'\}'}(M) \in \{-2, 0, 2\}$.
+(c) From $M^2 = \mathbf{'\{'}I{'\}'}$: $\det(M)^2 = 1$, so $\det(M) = \pm 1$. Also $\text{tr{}(M) = a + d$. From $d = \pm a$: $\text{tr{} = 2a$ or $\text{tr{} = 0$.
+If $d = a$: $\text{tr{} = 2a \in \{-2, 0, 2\}$. If $d = -a$: $\text{tr{} = 0$.
+So $\text{tr{}(M) \in \{-2, 0, 2\}$.
 
 (d) From case 1 (d = a): $2\mathbf{'\{'}I{'\}'}$, $-2\mathbf{'\{'}I{'\}'}$, $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $\begin{pmatrix}0&-1\\-1&0\end{pmatrix}$. That is 4 matrices.
 From case 2 (d = -a): For $a = 1$: 5 matrices. For $a = -1$: 5 matrices. For $a = 0$: same 2 matrices (already counted).

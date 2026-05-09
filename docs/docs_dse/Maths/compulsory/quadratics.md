@@ -647,7 +647,7 @@ $$u + \frac{1}{u} = \frac{25}{6}$$
 
 $$6u^2 + 6 = 25u \implies 6u^2 - 25u + 6 = 0 \implies (2u - 1)(3u - 6) = 0$$
 
-$$u = \frac{1}{2} \;\text{'\{'}or{'\}'}\; u = 2$$
+$$u = \frac{1}{2} \;\text{or{}\; u = 2$$
 
 Case 1: $\dfrac{x + 1}{x} = \dfrac{1}{2} \implies 2x + 2 = x \implies x = -2$.
 
@@ -743,7 +743,7 @@ For two distinct real roots: $\Delta > 0$:
 
 $$\Delta = 4(k-1)^2 - 4(k+5) = 4(k^2 - 2k + 1 - k - 5) = 4(k^2 - 3k - 4) > 0$$
 
-$$(k - 4)(k + 1) > 0 \implies k < -1 \;\text{'\{'}or{'\}'}\; k > 4$$
+$$(k - 4)(k + 1) > 0 \implies k < -1 \;\text{or{}\; k > 4$$
 
 For both roots positive: by Vieta, $\alpha + \beta = -2(k - 1) > 0 \implies k < 1$, and $\alpha\beta = k + 5 > 0 \implies k > -5$.
 
@@ -769,9 +769,9 @@ Therefore $x^2 - 2x + 3 > 0$ for all real $x$. $\qed$
 <details>
 <summary>Solution</summary>
 
-$f(1) = 1 + p + q = 3 \implies p + q = 2 \quad \text{'\{'}(i){'\}'}$
+$f(1) = 1 + p + q = 3 \implies p + q = 2 \quad \text{(i){}$
 
-$f(2) = 4 + 2p + q = 5 \implies 2p + q = 1 \quad \text{'\{'}(ii){'\}'}$
+$f(2) = 4 + 2p + q = 5 \implies 2p + q = 1 \quad \text{(ii){}$
 
 (ii) - (i): $p = -1$. From (i): $q = 3$.
 

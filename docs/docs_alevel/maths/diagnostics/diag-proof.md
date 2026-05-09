@@ -166,7 +166,7 @@ So "prime" does not imply "odd" (counterexample: 2). Also, "odd" does not imply 
 
 Answer: **neither necessary nor sufficient**.
 
-**(c)** "$a^2 + b^2 = 0$": since $a^2 \geq 0$ and $b^2 \geq 0$, the sum is zero only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{'\{'} and {'\}'} b = 0$.
+**(c)** "$a^2 + b^2 = 0$": since $a^2 \geq 0$ and $b^2 \geq 0$, the sum is zero only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and {} b = 0$.
 
 Answer: **both necessary and sufficient** (the condition is equivalent).
 

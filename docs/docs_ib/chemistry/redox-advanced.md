@@ -105,7 +105,7 @@ value, the stronger the reducing agent.
 For non-standard conditions, the cell potential is given by the Nernst equation:
 
 $$
-E_{\mathrm{cell{}} = E_{\mathrm{cell{}}^\circ - \frac{RT}{nF}\ln Q
+E_{\mathrm{cell{}} = E_{\mathrm{cell{}}^\circ - \frac`\{RT}``\{nF}`\ln Q
 $$
 
 At $298\mathrm{ K{}$, this simplifies to:
@@ -133,7 +133,7 @@ $$
 At equilibrium, $E_{\mathrm{cell{}} = 0$ and $\Delta G = 0$, so:
 
 $$
-E_{\mathrm{cell{}}^\circ = \frac{RT}{nF}\ln K = \frac{0.0592}{n}\log K
+E_{\mathrm{cell{}}^\circ = \frac`\{RT}``\{nF}`\ln K = \frac{0.0592}{n}\log K
 $$
 
 :::info[Example]

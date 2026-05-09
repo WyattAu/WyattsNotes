@@ -657,7 +657,7 @@ The rate of the reaction $\mathrm{A{} + 2\mathrm{B{} \to \mathrm{C{}$ was studie
 
 Comparing experiments 1 and 3 (A constant, B doubled): rate quadruples. Order with respect to $\mathrm{B{}$ = 2.
 
-(b) Rate equation: $\text{'\{'}rate{'\}'} = k[\mathrm{A{}][\mathrm{B{}]^2$.
+(b) Rate equation: $\text{rate{} = k[\mathrm{A{}][\mathrm{B{}]^2$.
 
 Using experiment 1: $1.2 \times 10^{-3} = k(0.10)(0.10)^2 = k(0.001)$
 
@@ -665,7 +665,7 @@ $$
 k = \frac{1.2 \times 10^{-3}}{0.001} = 1.2\,\mathrm{dm{}^6\,\mathrm{mol{}^{-2}\,\mathrm{s{}^{-1}
 $$
 
-(c) $\text{'\{'}rate{'\}'} = 1.2 \times 0.15 \times (0.25)^2 = 1.2 \times 0.15 \times 0.0625 = 0.01125\,\mathrm{mol\,dm^{-3}\,s^{-1}} = 1.1 \times 10^{-2}\,\mathrm{mol\,dm^{-3}\,s^{-1}}$
+(c) $\text{rate{} = 1.2 \times 0.15 \times (0.25)^2 = 1.2 \times 0.15 \times 0.0625 = 0.01125\,\mathrm{mol\,dm^{-3}\,s^{-1}} = 1.1 \times 10^{-2}\,\mathrm{mol\,dm^{-3}\,s^{-1}}$
 
 </details>
 
@@ -752,7 +752,7 @@ Step 3: $\mathrm{NO{} + \mathrm{NO{}_3 \to 2\mathrm{NO{}_2$ (fast)
 
 Applying the steady-state approximation to the intermediates $\mathrm{NO{}_2$ and $\mathrm{NO{}_3$ gives the rate equation:
 
-$$\text{'\{'}Rate{'\}'} = k[\mathrm{N{}_2\mathrm{O{}_5]$$
+$$\text{Rate{} = k[\mathrm{N{}_2\mathrm{O{}_5]$$
 
 This is first-order with respect to $\mathrm{N{}_2\mathrm{O{}_5$, consistent with experimental observation.
 
@@ -798,7 +798,7 @@ $$t_{1/2} = \frac{\ln 2}{k} = \frac{0.693}{k}$$
 
 **Worked Example:** A reaction has $E_a = 75\,\mathrm{kJ/mol{}$ without a catalyst and $E_a = 50\,\mathrm{kJ/mol{}$ with a catalyst. Calculate the ratio of rate constants at $298\,\mathrm{K{}$, assuming the pre-exponential factor $A$ is unchanged.
 
-$$\frac{k_\text{'\{'}cat{'\}'}}{k_\text{'\{'}uncat{'\}'}} = \frac{Ae^{-E_{a,\text{'\{'}cat{'\}'}}/RT}}{Ae^{-E_{a,\text{'\{'}uncat{'\}'}}/RT}} = e^{(E_{a,\text{'\{'}uncat{'\}'}} - E_{a,\text{'\{'}cat{'\}'}})/RT}$$
+$$\frac{k_\text{cat{}}{k_\text{uncat{}} = \frac{Ae^{-E_{a,\text{cat{}}/RT}}{Ae^{-E_{a,\text{uncat{}}/RT}} = e^{(E_{a,\text{uncat{}} - E_{a,\text{cat{}})/RT}$$
 
 $$= e^{(75000 - 50000)/(8.314 \times 298)} = e^{25000/2478} = e^{10.09} = 2.4 \times 10^4$$
 

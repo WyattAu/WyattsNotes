@@ -23,15 +23,15 @@ hide_table_of_contents: true
 (d) $\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}} = \frac{e^{2x} - 1}{e^{2x} + 1}$.
 
 ### UT-2: Inverse Hyperbolic Functions
-**Question:** (a) Find $\text{'\{'}arcsinh{'\}'}(1)$ in exact form. (b) Find $\text{'\{'}arccosh{'\}'}(3)$ in exact form. (c) Express $\text{'\{'}arcsinh{'\}'}\,x$ in terms of $\ln$. (d) Solve $\sinh x = 2$.
+**Question:** (a) Find $\text{arcsinh{}(1)$ in exact form. (b) Find $\text{arccosh{}(3)$ in exact form. (c) Express $\text{arcsinh{}\,x$ in terms of $\ln$. (d) Solve $\sinh x = 2$.
 
 **Solution:**
 
-(a) $\text{'\{'}arcsinh{'\}'}(1) = \ln(1 + \sqrt{1 + 1}) = \ln(1 + \sqrt{2})$.
+(a) $\text{arcsinh{}(1) = \ln(1 + \sqrt{1 + 1}) = \ln(1 + \sqrt{2})$.
 
-(b) $\text{'\{'}arccosh{'\}'}(3) = \ln(3 + \sqrt{9 - 1}) = \ln(3 + 2\sqrt{2})$.
+(b) $\text{arccosh{}(3) = \ln(3 + \sqrt{9 - 1}) = \ln(3 + 2\sqrt{2})$.
 
-(c) $\text{'\{'}arcsinh{'\}'}\,x = \ln(x + \sqrt{x^2 + 1})$.
+(c) $\text{arcsinh{}\,x = \ln(x + \sqrt{x^2 + 1})$.
 
 (d) $\frac{e^x - e^{-x}}{2} = 2$. Let $u = e^x$: $u - 1/u = 4$. $u^2 - 4u - 1 = 0$. $u = \frac{4 \pm \sqrt{20}}{2} = 2 \pm \sqrt{5}$.
 $e^x = 2 + \sqrt{5}$ (taking positive). $x = \ln(2 + \sqrt{5})$.
@@ -44,33 +44,33 @@ $e^x = 2 + \sqrt{5}$ (taking positive). $x = \ln(2 + \sqrt{5})$.
 (a) $\frac{d}{dx}\sinh x = \frac{d}{dx}\frac{e^x - e^{-x}}{2} = \frac{e^x + e^{-x}}{2} = \cosh x$.
 $\frac{d}{dx}\cosh x = \frac{d}{dx}\frac{e^x + e^{-x}}{2} = \frac{e^x - e^{-x}}{2} = \sinh x$.
 
-(b) $\frac{d}{dx}\tanh x = \frac{d}{dx}\frac{\sinh x}{\cosh x} = \frac{\cosh^2 x - \sinh^2 x}{\cosh^2 x} = \frac{1}{\cosh^2 x} = \text{'\{'}sech{'\}'}^2\,x$.
+(b) $\frac{d}{dx}\tanh x = \frac{d}{dx}\frac{\sinh x}{\cosh x} = \frac{\cosh^2 x - \sinh^2 x}{\cosh^2 x} = \frac{1}{\cosh^2 x} = \text{sech{}^2\,x$.
 
 (c) $\int \cosh x\,dx = \sinh x + C$. $\int \sinh x\,dx = \cosh x + C$.
 
-(d) $\tanh^2 x = 1 - \text{'\{'}sech{'\}'}^2\,x$. $\int \tanh^2 x\,dx = \int(1 - \text{'\{'}sech{'\}'}^2\,x)\,dx = x - \tanh x + C$.
+(d) $\tanh^2 x = 1 - \text{sech{}^2\,x$. $\int \tanh^2 x\,dx = \int(1 - \text{sech{}^2\,x)\,dx = x - \tanh x + C$.
 
 ---
 
 ## Integration Tests
 
 ### IT-1: Hyperbolic Functions in Integration (with Calculus)
-**Question:** (a) Evaluate $\int_0^1 \cosh^2 x\,dx$. (b) Evaluate $\int \text{'\{'}sech{'\}'}^2 x\,dx$. (c) Use the substitution $x = 2\sinh u$ to evaluate $\int \frac{1}{\sqrt{x^2 + 4}}\,dx$. (d) Find the Maclaurin series of $\cosh x$ up to $x^6$.
+**Question:** (a) Evaluate $\int_0^1 \cosh^2 x\,dx$. (b) Evaluate $\int \text{sech{}^2 x\,dx$. (c) Use the substitution $x = 2\sinh u$ to evaluate $\int \frac{1}{\sqrt{x^2 + 4}}\,dx$. (d) Find the Maclaurin series of $\cosh x$ up to $x^6$.
 
 **Solution:**
 
 (a) $\cosh^2 x = \frac{1 + \cosh 2x}{2}$. $\int_0^1 \frac{1 + \cosh 2x}{2}\,dx = \frac{1}{2}\left[x + \frac{\sinh 2x}{2}\right]_0^1 = \frac{1}{2}\left(1 + \frac{\sinh 2}{2}\right) = \frac{1}{2} + \frac{\sinh 2}{4}$.
 
-(b) $\int \text{'\{'}sech{'\}'}^2 x\,dx = \tanh x + C$.
+(b) $\int \text{sech{}^2 x\,dx = \tanh x + C$.
 
 (c) $x = 2\sinh u$, $dx = 2\cosh u\,du$. $\sqrt{x^2+4} = 2\cosh u$.
-$\int \frac{2\cosh u}{2\cosh u}\,du = \int 1\,du = u + C = \text{'\{'}arcsinh{'\}'}\frac{x}{2} + C = \ln\left(\frac{x}{2} + \sqrt{\frac{x^2}{4}+1}\right) + C$.
+$\int \frac{2\cosh u}{2\cosh u}\,du = \int 1\,du = u + C = \text{arcsinh{}\frac{x}{2} + C = \ln\left(\frac{x}{2} + \sqrt{\frac{x^2}{4}+1}\right) + C$.
 
 (d) $\cosh x = \frac{e^x + e^{-x}}{2} = \frac{1}{2}\left(1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + \frac{x^6}{6!} + 1 - x + \frac{x^2}{2!} - \frac{x^3}{3!} + \frac{x^4}{4!} - \frac{x^5}{5!} + \frac{x^6}{6!}\right)$
 $= \frac{1}{2}\left(2 + \frac{2x^4}{4!} + \frac{2x^6}{6!}\right) = 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} = 1 + \frac{x^2}{2} + \frac{x^4}{24} + \frac{x^6}{720}$.
 
 ### IT-2: Osborn's Rule and Trigonometry (with Complex Numbers)
-**Question:** (a) State Osborn's rule. (b) Use it to derive the identity for $\cosh 3x$. (c) Find $\frac{d}{dx}\text{'\{'}cosech{'\}'}\,x$. (d) Evaluate $\int_0^{\ln 2} \text{'\{'}sech{'\}'}\,x\,dx$.
+**Question:** (a) State Osborn's rule. (b) Use it to derive the identity for $\cosh 3x$. (c) Find $\frac{d}{dx}\text{cosech{}\,x$. (d) Evaluate $\int_0^{\ln 2} \text{sech{}\,x\,dx$.
 
 **Solution:**
 
@@ -79,10 +79,10 @@ $= \frac{1}{2}\left(2 + \frac{2x^4}{4!} + \frac{2x^6}{6!}\right) = 1 + \frac{x^2
 (b) From $\cos 3x = 4\cos^3 x - 3\cos x$: replace $\cos \to \cosh$ (no $\sin$ terms):
 $\cosh 3x = 4\cosh^3 x - 3\cosh x$.
 
-(c) $\text{'\{'}cosech{'\}'}\,x = \frac{1}{\sinh x} = \frac{2}{e^x - e^{-x}}$.
-$\frac{d}{dx}\text{'\{'}cosech{'\}'}\,x = \frac{-2(e^x + e^{-x})}{(e^x - e^{-x})^2} = \frac{-2\cosh x}{\sinh^2 x} = -\text{'\{'}cosech{'\}'}\,x\cosh x$.
+(c) $\text{cosech{}\,x = \frac{1}{\sinh x} = \frac{2}{e^x - e^{-x}}$.
+$\frac{d}{dx}\text{cosech{}\,x = \frac{-2(e^x + e^{-x})}{(e^x - e^{-x})^2} = \frac{-2\cosh x}{\sinh^2 x} = -\text{cosech{}\,x\cosh x$.
 
-(d) $\int_0^{\ln 2} \text{'\{'}sech{'\}'}\,x\,dx = \int_0^{\ln 2} \frac{2}{e^x + e^{-x}}\,dx = \int_0^{\ln 2} \frac{2e^x}{e^{2x} + 1}\,dx$.
+(d) $\int_0^{\ln 2} \text{sech{}\,x\,dx = \int_0^{\ln 2} \frac{2}{e^x + e^{-x}}\,dx = \int_0^{\ln 2} \frac{2e^x}{e^{2x} + 1}\,dx$.
 
 Let $u = e^x$: $du = e^x\,dx$, $dx = du/u$. $= \int_1^2 \frac{2}{u^2+1}\,du = 2[\arctan u]_1^2 = 2(\arctan 2 - \pi/4)$.
 

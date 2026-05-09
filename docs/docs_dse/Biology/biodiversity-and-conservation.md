@@ -1224,7 +1224,7 @@ Based on molecular evidence (rRNA sequencing), Woese proposed three domains abov
 
 ### Classification Hierarchy
 
-$$\text{'\{'}Domain{'\}'} \rightarrow \text{'\{'}Kingdom{'\}'} \rightarrow \text{'\{'}Phylum{'\}'} \rightarrow \text{'\{'}Class{'\}'} \rightarrow \text{'\{'}Order{'\}'} \rightarrow \text{'\{'}Family{'\}'} \rightarrow \text{'\{'}Genus{'\}'} \rightarrow \text{'\{'}Species{'\}'}$$
+$$\text{Domain{} \rightarrow \text{Kingdom{} \rightarrow \text{Phylum{} \rightarrow \text{Class{} \rightarrow \text{Order{} \rightarrow \text{Family{} \rightarrow \text{Genus{} \rightarrow \text{Species{}$$
 
 **Mnemonic:** "Dear King Philip Came Over For Good Soup"
 

@@ -529,7 +529,7 @@ $\mathrm{g\ C\ m^{-2}\ yr^{-1}}$ to the atmosphere as $\mathrm{CO_2{}$.
 
 Total NPP $= 1200 \times 10^7 = 1.2 \times 10^{10}\ \mathrm{g\ C\ yr^{-1}} = 12000\ \mathrm{tonnes\ C\ yr^{-1}}$.
 
-Net carbon sequestration $= \mathrm{NPP{} - \text{'\{'}decomposition{'\}'} = (1200 - 900) \times 10^7 = 3000\ \mathrm{tonnes\ C\ yr^{-1}}$.
+Net carbon sequestration $= \mathrm{NPP{} - \text{decomposition{} = (1200 - 900) \times 10^7 = 3000\ \mathrm{tonnes\ C\ yr^{-1}}$.
 
 If the forest is cleared, this sequestration is lost. Additionally, burning releases the stored carbon
 in biomass back to the atmosphere. If the forest biomass contains $5000\ \mathrm{tonnes\ C\ km^{-2}}$,
@@ -965,9 +965,9 @@ Assuming the lake is well-mixed and outflow has the same concentration as the la
 
 At steady state: input rate $=$ output rate.
 
-$50\ \mathrm{kg\ day^{-1}} = C_{\text{'\{'}lake{'\}'}} \times 10^4\ \mathrm{m^3\ day^{-1}} \times 10^3\ \mathrm{L\ m^{-1}}$.
+$50\ \mathrm{kg\ day^{-1}} = C_{\text{lake{}} \times 10^4\ \mathrm{m^3\ day^{-1}} \times 10^3\ \mathrm{L\ m^{-1}}$.
 
-$C_{\text{'\{'}lake{'\}'}} = \frac{50\ \mathrm{kg{}}{10^7\ \mathrm{L{}} = \frac{50000\ \mathrm{mg{}}{10^7\ \mathrm{L{}} = 5\ \mathrm{mg\ L^{-1}}$.
+$C_{\text{lake{}} = \frac{50\ \mathrm{kg{}}{10^7\ \mathrm{L{}} = \frac{50000\ \mathrm{mg{}}{10^7\ \mathrm{L{}} = 5\ \mathrm{mg\ L^{-1}}$.
 
 If the safe level for nitrate in drinking water is $11.3\ \mathrm{mg\ L^{-1}}$ (EU standard), this lake is currently within the safe limit but close. An increase in agricultural intensity could push it above the safe level.
 
@@ -1050,27 +1050,27 @@ Energy enters ecosystems as sunlight (in most ecosystems) and is transferred thr
 
 **Net Primary Production (NPP)**: GPP minus the energy lost through plant respiration ($R$).
 
-$$\text{'\{'}NPP{'\}'} = \text{'\{'}GPP{'\}'} - R$$
+$$\text{NPP{} = \text{GPP{} - R$$
 
 NPP is the energy available to herbivores (primary consumers).
 
 **Net Secondary Production (NSP)**: the energy incorporated into herbivore biomass.
 
-$$\text{'\{'}NSP{'\}'} = \text{'\{'}energy consumed{'\}'} - \text{'\{'}energy lost in faeces{'\}'} - \text{'\{'}energy lost in respiration{'\}'}$$
+$$\text{NSP{} = \text{energy consumed{} - \text{energy lost in faeces{} - \text{energy lost in respiration{}$$
 
 ### 17.2 Ecological Efficiency Calculations
 
 **Worked Example.** A field receives $2.0 \times 10^6\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$ of sunlight. The plants (producers) have a GPP of $1.2 \times 10^4\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$ and a respiration rate of $4.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
-$\text{'\{'}NPP{'\}'} = 1.2 \times 10^4 - 4.0 \times 10^3 = 8.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+$\text{NPP{} = 1.2 \times 10^4 - 4.0 \times 10^3 = 8.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
-Photosynthetic efficiency $= \frac{\text{'\{'}GPP{'\}'}}{\text{'\{'}light received{'\}'}} = \frac{1.2 \times 10^4}{2.0 \times 10^6} = 0.006 = 0.6\%$.
+Photosynthetic efficiency $= \frac{\text{GPP{}}{\text{light received{}} = \frac{1.2 \times 10^4}{2.0 \times 10^6} = 0.006 = 0.6\%$.
 
 This very low efficiency is typical -- most sunlight is reflected, transmitted, or absorbed by non-photosynthetic structures, and much of the absorbed light is at wavelengths that chlorophyll cannot use.
 
 If the primary consumers eat the entire NPP ($8.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$) but assimilate only 20% (the rest is lost as faeces), and they respire 60% of the assimilated energy:
 
-$\text{'\{'}NSP{'\}'} = 8000 \times 0.20 \times (1 - 0.60) = 8000 \times 0.20 \times 0.40 = 640\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+$\text{NSP{} = 8000 \times 0.20 \times (1 - 0.60) = 8000 \times 0.20 \times 0.40 = 640\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
 Trophic efficiency from producer to primary consumer $= \frac{640}{8000} = 8\%$.
 
@@ -1194,9 +1194,9 @@ The estimated population size is 200.
 
 **Confidence interval:** if a different second sample might have produced different results, the estimate has uncertainty. For a rough estimate, the standard error can be approximated by:
 
-$$\text{'\{'}SE{'\}'} \approx \sqrt{\frac{n_1 \times n_2 \times (n_1 - m_2) \times (n_2 - m_2)}{m_2^3}}$$
+$$\text{SE{} \approx \sqrt{\frac{n_1 \times n_2 \times (n_1 - m_2) \times (n_2 - m_2)}{m_2^3}}$$
 
-$\text{'\{'}SE{'\}'} = \sqrt{\frac{50 \times 40 \times 40 \times 30}{1000}} = \sqrt{\frac{2400000}{1000}} = \sqrt{2400} = 49$.
+$\text{SE{} = \sqrt{\frac{50 \times 40 \times 40 \times 30}{1000}} = \sqrt{\frac{2400000}{1000}} = \sqrt{2400} = 49$.
 
 Approximate 95% confidence interval: $200 \pm 98$, or 102 to 298.
 
@@ -1208,15 +1208,15 @@ This wide range reflects the uncertainty inherent in CMRR estimates with relativ
 
 **Worked Example.** A forest has a biomass of $20,000\ \mathrm{kg\ ha^{-1}}$. Over one year, the biomass increased by $2,500\ \mathrm{kg\ ha^{-1}}$, and the plants respired $8,000\ \mathrm{kg\ ha^{-1}}$ of carbon (measured as $\mathrm{CO_2{}$ equivalent).
 
-$\text{'\{'}NPP{'\}'} = \text{'\{'}biomass increase{'\}'} = 2,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
+$\text{NPP{} = \text{biomass increase{} = 2,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
 
-$\text{'\{'}GPP{'\}'} = \text{'\{'}NPP{'\}'} + R = 2,500 + 8,000 = 10,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
+$\text{GPP{} = \text{NPP{} + R = 2,500 + 8,000 = 10,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
 
-Photosynthetic efficiency $= \frac{\text{'\{'}GPP{'\}'}}{\text{'\{'}light energy received{'\}'}}$.
+Photosynthetic efficiency $= \frac{\text{GPP{}}{\text{light energy received{}}$.
 
 If the forest receives $1.0 \times 10^{10}\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$ of light energy, and the energy content of plant biomass is approximately $18\ \mathrm{kJ\ g^{-1}}$:
 
-$\text{'\{'}GPP (energy){'\}'} = 10,500 \times 18 = 189,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$.
+$\text{GPP (energy){} = 10,500 \times 18 = 189,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$.
 
 Photosynthetic efficiency $= \frac{189\,000}{1.0 \times 10^{10}} = 0.0019 = 0.19\%$.
 
@@ -1447,7 +1447,7 @@ Ecological efficiency (efficiency of energy transfer from producers to primary c
 
 If primary consumers consume $5,000\ \mathrm{kg\ ha^{-1}\ yr^{-1}$ of plant biomass:
 
-$$\text{'\{'}Efficiency{'\}'} = \frac{5,000 \times 18}{63,000} \times 100 = 14.3\%$$
+$$\text{Efficiency{} = \frac{5,000 \times 18}{63,000} \times 100 = 14.3\%$$
 
 ## 26. Succession in Detail
 

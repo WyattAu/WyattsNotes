@@ -1876,9 +1876,9 @@ The dominant (lowest frequency) mode is TE$_{10}$ with $f_{c,10} = c/(2a)$ (for 
 
 **Dispersion relation:**
 
-$$k = \sqrt{\frac{\omega^2}{c^2} - k_c^2}, \quad v_{\text{'\{'}phase{'\}'}} = \frac{\omega}{k} = \frac{c}{\sqrt{1 - (\omega_c/\omega)^2}} > c$$
+$$k = \sqrt{\frac{\omega^2}{c^2} - k_c^2}, \quad v_{\text{phase{}} = \frac{\omega}{k} = \frac{c}{\sqrt{1 - (\omega_c/\omega)^2}} > c$$
 
-$$v_{\text{'\{'}group{'\}'}} = \frac{d\omega}{dk} = c\sqrt{1 - \left(\frac{\omega_c}{\omega}\right)^2} < c$$
+$$v_{\text{group{}} = \frac{d\omega}{dk} = c\sqrt{1 - \left(\frac{\omega_c}{\omega}\right)^2} < c$$
 
 The product $v_p \cdot v_g = c^2$.
 
@@ -1886,13 +1886,13 @@ The product $v_p \cdot v_g = c^2$.
 
 The wave impedance for TE modes:
 
-$$Z_{\text{'\{'}TE{'\}'}} = \frac{E_x}{H_y} = \frac{\omega\mu_0}{k} = \frac{Z_0}{\sqrt{1 - (f_c/f)^2}}$$
+$$Z_{\text{TE{}} = \frac{E_x}{H_y} = \frac{\omega\mu_0}{k} = \frac{Z_0}{\sqrt{1 - (f_c/f)^2}}$$
 
 where $Z_0 = \sqrt{\mu_0/\varepsilon_0} \approx 377\,\Omega$ is the impedance of free space.
 
 The time-averaged power carried by TE$_{10}$ mode:
 
-$$\langle P \rangle = \frac{ab}{4}E_0^2\frac{\beta}{\omega\mu_0} = \frac{ab}{4Z_{\text{'\{'}TE{'\}'}}}E_0^2$$
+$$\langle P \rangle = \frac{ab}{4}E_0^2\frac{\beta}{\omega\mu_0} = \frac{ab}{4Z_{\text{TE{}}}E_0^2$$
 
 where $\beta = k$ is the propagation constant and $E_0$ is the peak electric field.
 
@@ -1906,7 +1906,7 @@ where $m, n, p$ are non-negative integers (not all zero). For TM modes, $p \geq 
 
 **Quality factor:**
 
-$$Q = \frac{\omega \times \text{'\{'}energy stored{'\}'}}{\text{'\{'}power dissipated{'\}'}} = \frac{2\pi \times \text{'\{'}energy stored{'\}'}}{\text{'\{'}energy lost per cycle{'\}'}}$$
+$$Q = \frac{\omega \times \text{energy stored{}}{\text{power dissipated{}} = \frac{2\pi \times \text{energy stored{}}{\text{energy lost per cycle{}}$$
 
 For a cavity with conducting walls of conductivity $\sigma$:
 
@@ -1921,7 +1921,7 @@ Standard X-band waveguide (WR-90) has $a = 22.86$ mm, $b = 10.16$ mm.
 
 (a) Cutoff frequency of TE$_{10}$ mode:
 
-$$f_{c,10} = \frac{c}{2a} = \frac{3 \times 10^8}{2 \times 22.86 \times 10^{-3}} = \frac{3 \times 10^8}{4.572 \times 10^{-2}} = 6.56\ \text{'\{'}GHz{'\}'}$$
+$$f_{c,10} = \frac{c}{2a} = \frac{3 \times 10^8}{2 \times 22.86 \times 10^{-3}} = \frac{3 \times 10^8}{4.572 \times 10^{-2}} = 6.56\ \text{GHz{}$$
 
 (b) At $f = 10$ GHz (within X-band), is TE$_{10}$ the only propagating mode?
 
@@ -1933,13 +1933,13 @@ Since $6.56 < 10 < 13.12$ GHz, only TE$_{10}$ propagates. This single-mode opera
 
 (c) Guide wavelength at 10 GHz:
 
-$$\lambda_g = \frac{\lambda}{\sqrt{1 - (f_c/f)^2}} = \frac{30\ \text{'\{'}mm{'\}'}}{\sqrt{1 - (6.56/10)^2}} = \frac{30}{\sqrt{1 - 0.430}} = \frac{30}{0.755} = 39.7\ \text{'\{'}mm{'\}'}$$
+$$\lambda_g = \frac{\lambda}{\sqrt{1 - (f_c/f)^2}} = \frac{30\ \text{mm{}}{\sqrt{1 - (6.56/10)^2}} = \frac{30}{\sqrt{1 - 0.430}} = \frac{30}{0.755} = 39.7\ \text{mm{}$$
 
 (d) Phase and group velocities:
 
-$$v_p = \frac{c}{\sqrt{1 - (f_c/f)^2}} = \frac{3 \times 10^8}{0.755} = 3.97 \times 10^8\ \text{'\{'}m/s{'\}'} = 1.32\,c$$
+$$v_p = \frac{c}{\sqrt{1 - (f_c/f)^2}} = \frac{3 \times 10^8}{0.755} = 3.97 \times 10^8\ \text{m/s{} = 1.32\,c$$
 
-$$v_g = c\sqrt{1 - (f_c/f)^2} = 3 \times 10^8 \times 0.755 = 2.27 \times 10^8\ \text{'\{'}m/s{'\}'} = 0.756\,c$$
+$$v_g = c\sqrt{1 - (f_c/f)^2} = 3 \times 10^8 \times 0.755 = 2.27 \times 10^8\ \text{m/s{} = 0.756\,c$$
 
 Check: $v_p \times v_g = 1.32c \times 0.756c = c^2$. $\checkmark$
 
@@ -1959,9 +1959,9 @@ $$P = \frac{q^2 \omega^4 d^2}{12\pi\varepsilon_0 c^3} = \frac{\omega^4 p_0^2}{12
 
 where $p_0 = qd$ is the dipole moment amplitude.
 
-**Radiation resistance:** Equating $P = \frac{1}{2}I_0^2 R_{\text{'\{'}rad{'\}'}}$ for an antenna of length $\ell$ carrying current $I_0$ at frequency $\omega$:
+**Radiation resistance:** Equating $P = \frac{1}{2}I_0^2 R_{\text{rad{}}$ for an antenna of length $\ell$ carrying current $I_0$ at frequency $\omega$:
 
-$$R_{\text{'\{'}rad{'\}'}} = \frac{\mu_0 c}{6\pi}\left(\frac{\omega \ell}{c}\right)^2 = \frac{\pi}{6}Z_0\left(\frac{\ell}{\lambda}\right)^2 \approx 197\left(\frac{\ell}{\lambda}\right)^2\ \Omega$$
+$$R_{\text{rad{}} = \frac{\mu_0 c}{6\pi}\left(\frac{\omega \ell}{c}\right)^2 = \frac{\pi}{6}Z_0\left(\frac{\ell}{\lambda}\right)^2 \approx 197\left(\frac{\ell}{\lambda}\right)^2\ \Omega$$
 
 ### 10.2 Electric Dipole Radiation
 
@@ -2012,7 +2012,7 @@ $$P = \frac{e^2 c}{6\pi\varepsilon_0}\frac{\gamma^4}{R^2} = \frac{(1.6 \times 10
 
 $$= \frac{2.56 \times 10^{-38} \times 3 \times 10^8}{1.669 \times 10^{-10}}\frac{1.187 \times 10^{15}}{50.4}$$
 
-$$= 4.60 \times 10^{-20} \times 2.355 \times 10^{13} = 1.08 \times 10^{-6}\ \text{'\{'}W per electron{'\}'}$$
+$$= 4.60 \times 10^{-20} \times 2.355 \times 10^{13} = 1.08 \times 10^{-6}\ \text{W per electron{}$$
 
 With a beam current of 300 mA ($I = 0.3$ A, $N = I/e = 1.875 \times 10^{18}$ electrons/s):
 
@@ -2020,17 +2020,17 @@ Total power $= 1.08 \times 10^{-6} \times 1.875 \times 10^{18} \times \frac{561.
 
 Wait: the power per electron is already the total radiated power. The total synchrotron radiation power from the ring is:
 
-$$P_{\text{'\{'}total{'\}'}} = N_{\text{'\{'}stored{'\}'}} \times P_{\text{'\{'}per electron{'\}'}} \times \frac{\text{'\{'}bending length{'\}'}}{\text{'\{'}circumference{'\}'}}$$
+$$P_{\text{total{}} = N_{\text{stored{}} \times P_{\text{per electron{}} \times \frac{\text{bending length{}}{\text{circumference{}}$$
 
-For a rough estimate: $P_{\text{'\{'}total{'\}'}} \approx 0.3 \times 3 \times 10^9 \times \frac{1.08 \times 10^{-6}}{1.6 \times 10^{-19}} \times \frac{2\pi \times 7.1}{561.6} \approx 500$ kW.
+For a rough estimate: $P_{\text{total{}} \approx 0.3 \times 3 \times 10^9 \times \frac{1.08 \times 10^{-6}}{1.6 \times 10^{-19}} \times \frac{2\pi \times 7.1}{561.6} \approx 500$ kW.
 
 The actual Diamond power is about 400 kW, consistent with this estimate.
 
 (c) Critical frequency:
 
-$$\omega_c = \frac{3}{2}\gamma^3\frac{c}{R} = \frac{3}{2}(5871)^3\frac{3 \times 10^8}{7.1} = 1.5 \times 2.02 \times 10^{11} \times 4.23 \times 10^7 = 1.28 \times 10^{19}\ \text{'\{'}rad/s{'\}'}$$
+$$\omega_c = \frac{3}{2}\gamma^3\frac{c}{R} = \frac{3}{2}(5871)^3\frac{3 \times 10^8}{7.1} = 1.5 \times 2.02 \times 10^{11} \times 4.23 \times 10^7 = 1.28 \times 10^{19}\ \text{rad/s{}$$
 
-$$\hbar\omega_c = 1.055 \times 10^{-34} \times 1.28 \times 10^{19} = 1.35 \times 10^{-15}\ \text{'\{'}J{'\}'} = 8.4\ \text{'\{'}keV{'\}'}$$
+$$\hbar\omega_c = 1.055 \times 10^{-34} \times 1.28 \times 10^{19} = 1.35 \times 10^{-15}\ \text{J{} = 8.4\ \text{keV{}$$
 
 This is in the hard X-ray range, suitable for protein crystallography and materials science.
 
@@ -2078,17 +2078,17 @@ where $\Box^2 = \nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$ is the 
 
 The electromagnetic stress-energy tensor $T^{\mu\nu}$ encodes the energy density, momentum density, and stress:
 
-$$T^{00} = \frac{1}{2}\left(\varepsilon_0 E^2 + \frac{B^2}{\mu_0}\right) \quad \text{'\{'}(energy density){'\}'}$$
+$$T^{00} = \frac{1}{2}\left(\varepsilon_0 E^2 + \frac{B^2}{\mu_0}\right) \quad \text{(energy density){}$$
 
-$$T^{0i} = \frac{1}{c}(\mathbf{'\{'}E{'\}'} \times \mathbf{'\{'}B{'\}'})_i = \frac{S_i}{c} \quad \text{'\{'}(momentum density){'\}'}$$
+$$T^{0i} = \frac{1}{c}(\mathbf{'\{'}E{'\}'} \times \mathbf{'\{'}B{'\}'})_i = \frac{S_i}{c} \quad \text{(momentum density){}$$
 
-$$T^{ij} = -\varepsilon_0 E_i E_j - \frac{1}{\mu_0}B_i B_j + \frac{1}{2}\delta_{ij}\left(\varepsilon_0 E^2 + \frac{B^2}{\mu_0}\right) \quad \text{'\{'}(Maxwell stress tensor){'\}'}$$
+$$T^{ij} = -\varepsilon_0 E_i E_j - \frac{1}{\mu_0}B_i B_j + \frac{1}{2}\delta_{ij}\left(\varepsilon_0 E^2 + \frac{B^2}{\mu_0}\right) \quad \text{(Maxwell stress tensor){}$$
 
 **Conservation law:** $\partial_\mu T^{\mu\nu} = -f^\nu$ where $f^\nu$ is the Lorentz force density on charges.
 
 **Radiation pressure:** For a normally incident plane wave with intensity $I$:
 
-$$P_{\text{'\{'}rad{'\}'}} = \frac{I}{c} = \frac{1}{2}\varepsilon_0 E_0^2$$
+$$P_{\text{rad{}} = \frac{I}{c} = \frac{1}{2}\varepsilon_0 E_0^2$$
 
 For a perfect reflector, the radiation pressure is $2I/c$ (momentum transfer is doubled).
 
@@ -2099,9 +2099,9 @@ Solar constant at Earth: $I = 1361$ W/m$^2$.
 
 Radiation pressure on a perfectly absorbing surface:
 
-$$P = \frac{I}{c} = \frac{1361}{3 \times 10^8} = 4.54 \times 10^{-6}\ \text{'\{'}N/m{'\}'}^2 = 4.54\ \mu\text{'\{'}Pa{'\}'}$$
+$$P = \frac{I}{c} = \frac{1361}{3 \times 10^8} = 4.54 \times 10^{-6}\ \text{N/m{}^2 = 4.54\ \mu\text{Pa{}$$
 
-For a perfect reflector: $P = 9.07\,\mu\text{'\{'}Pa{'\}'}$.
+For a perfect reflector: $P = 9.07\,\mu\text{Pa{}$.
 
 This is tiny compared to atmospheric pressure ($10^5$ Pa), but is significant for:
 - Solar sails: A 100 m $\times$ 100 m sail with 90% reflectivity experiences $F \approx 0.12$ N, producing acceleration $a \approx 0.6$ mm/s$^2$ for a 100 kg sail.
@@ -2151,7 +2151,7 @@ $$B_z = B_0\cos\!\left(\frac{\pi x}{a}\right)e^{i(\beta z - \omega t)}$$
 
 (c) Surface current $\mathbf{'\{'}K{'\}'} = \hat{\mathbf{'\{'}n{'\}'}} \times \mathbf{'\{'}H{'\}'}$. On the broad walls ($y = 0, b$): $\mathbf{'\{'}K{'\}'}$ has components from $B_x$ and $B_z$, with maximum at $x = a/2$ (where $\sin(\pi x/a) = 1$). The power loss per unit length is:
 
-$$P_{\text{'\{'}loss{'\}'}} = \frac{R_s}{2}\oint |\mathbf{'\{'}K{'\}'}|^2\, dl$$
+$$P_{\text{loss{}} = \frac{R_s}{2}\oint |\mathbf{'\{'}K{'\}'}|^2\, dl$$
 
 where $R_s = \sqrt{\omega\mu_0/(2\sigma)}$ is the surface resistance. For fixed $f$, increasing $a$ reduces the current density on the broad walls and increases the power-handling capacity.
 
@@ -2168,7 +2168,7 @@ $$I(z) = I_0\cos(kz), \quad -\lambda/4 \leq z \leq \lambda/4$$
 
 (b) Find the angular distribution of radiated power $dP/d\Omega$.
 
-(c) Calculate the total radiated power and the radiation resistance. Compare with the short-dipole result $R_{\text{'\{'}rad{'\}'}} = 197(\ell/\lambda)^2\,\Omega$.
+(c) Calculate the total radiated power and the radiation resistance. Compare with the short-dipole result $R_{\text{rad{}} = 197(\ell/\lambda)^2\,\Omega$.
 
 **Solution:**
 
@@ -2200,9 +2200,9 @@ With the substitution $u = \cos\theta$: $\int_{-1}^{1}\frac{\cos^2(\pi u/2)}{1-u
 
 $$P = \frac{377 \times 1.2188}{16\pi}I_0^2 = 9.16\,I_0^2$$
 
-Radiation resistance: $R_{\text{'\{'}rad{'\}'}} = 2P/I_0^2 = 18.3\,\Omega$.
+Radiation resistance: $R_{\text{rad{}} = 2P/I_0^2 = 18.3\,\Omega$.
 
-For comparison, a short dipole ($\ell \ll \lambda$) of length $\lambda/2$ would give $R_{\text{'\{'}rad{'\}'}} = 197 \times 0.25 = 49.3\,\Omega$. The half-wave dipole has lower radiation resistance because the current distribution (cosine) has less total effective acceleration than a uniform current.
+For comparison, a short dipole ($\ell \ll \lambda$) of length $\lambda/2$ would give $R_{\text{rad{}} = 197 \times 0.25 = 49.3\,\Omega$. The half-wave dipole has lower radiation resistance because the current distribution (cosine) has less total effective acceleration than a uniform current.
 
 The directivity of the half-wave dipole is $D = 1.64$ (2.15 dBi), slightly higher than the short dipole ($D = 1.5$).
 
@@ -2214,9 +2214,9 @@ The directivity of the half-wave dipole is $D = 1.64$ (2.15 dBi), slightly highe
 
 Maxwell's equations in covariant form using the field tensor $F^{\mu\nu}$:
 
-$$\partial_\mu F^{\mu\nu} = \mu_0 J^\nu \quad \text{'\{'}(inhomogeneous){'\}'}$$
+$$\partial_\mu F^{\mu\nu} = \mu_0 J^\nu \quad \text{(inhomogeneous){}$$
 
-$$\partial_\lambda F_{\mu\nu} + \partial_\mu F_{\nu\lambda} + \partial_\nu F_{\lambda\mu} = 0 \quad \text{'\{'}(homogeneous / Bianchi identity){'\}'}$$
+$$\partial_\lambda F_{\mu\nu} + \partial_\mu F_{\nu\lambda} + \partial_\nu F_{\lambda\mu} = 0 \quad \text{(homogeneous / Bianchi identity){}$$
 
 The electromagnetic field tensor:
 
@@ -2248,7 +2248,7 @@ $$\mathbf{'\{'}g{'\}'} = \frac{\mathbf{'\{'}S{'\}'}}{c^2} = \varepsilon_0\mathbf
 
 **Field angular momentum:** $\mathbf{'\{'}L{'\}'} = \int \mathbf{'\{'}r{'\}'} \times \mathbf{'\{'}g{'\}'}\, d^3r$.
 
-**Conservation:** $\frac{d}{dt}\left(\mathbf{'\{'}p{'\}'}_{\text{'\{'}mech{'\}'}} + \mathbf{'\{'}p{'\}'}_{\text{'\{'}field{'\}'}}\right) = 0$.
+**Conservation:** $\frac{d}{dt}\left(\mathbf{'\{'}p{'\}'}_{\text{mech{}} + \mathbf{'\{'}p{'\}'}_{\text{field{}}\right) = 0$.
 
 For a charge and a magnetic monopole (if they exist), the field angular momentum $\mathbf{'\{'}L{'\}'} = -qg\hat{\mathbf{'\{'}r{'\}'}}/(4\pi)$ is quantised in units of $\hbar/2$, leading to the Dirac charge quantisation condition $eg = n\hbar/2$.
 
@@ -2289,6 +2289,6 @@ For $n_e = 10^{18}$ m$^{-3}$: $\omega_p = 5.64 \times 10^{10}$ rad/s, $f_p = 8.9
 
 Small displacements of the electron cloud create restoring forces, leading to **Langmuir waves**:
 
-$$\omega_{\text{'\{'}Langmuir{'\}'}} = \omega_p\left(1 + \frac{3k_BT}{2m_e}\frac{k^2}{\omega_p^2}\right)^{-1/2}$$
+$$\omega_{\text{Langmuir{}} = \omega_p\left(1 + \frac{3k_BT}{2m_e}\frac{k^2}{\omega_p^2}\right)^{-1/2}$$
 
 At long wavelengths ($k \to 0$): $\omega \to \omega_p$ (undamped). With ion motion: the ion-acoustic wave has $\omega^2 = k^2 c_s^2/(1 + k^2\lambda_D^2)$ where $c_s = \sqrt{k_BT/m_i}$.

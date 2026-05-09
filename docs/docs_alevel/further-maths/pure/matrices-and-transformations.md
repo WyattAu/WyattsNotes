@@ -419,7 +419,7 @@ is mapped to a parallelogram with vertices $\mathbf{'\{'}0{'\}'}, A\mathbf{'\{'}
 
 The area of this parallelogram is the magnitude of the cross product (in 2D, the determinant):
 
-$$\text{'\{'}Area{'\}'} = \left|\det\begin{pmatrix} a & b \\ c & d \end{pmatrix}\right| = |\det A|$$
+$$\text{Area{} = \left|\det\begin{pmatrix} a & b \\ c & d \end{pmatrix}\right| = |\det A|$$
 
 Any region can be tiled by infinitesimal parallelograms, so the general scale factor is $|\det A|$. $\blacksquare$
 
@@ -697,7 +697,7 @@ $$= \begin{pmatrix} \cos\theta & -\sin\theta & a(1-\cos\theta)+b\sin\theta \\ \s
 
 **Solution.**
 
-$$\text{'\{'}Area{'\}'} = \frac{1}{2}\left|\det\begin{pmatrix} 1 & 2 & 1 \\ 4 & 6 & 1 \\ 3 & -1 & 1 \end{pmatrix}\right|$$
+$$\text{Area{} = \frac{1}{2}\left|\det\begin{pmatrix} 1 & 2 & 1 \\ 4 & 6 & 1 \\ 3 & -1 & 1 \end{pmatrix}\right|$$
 
 Expanding along the third column:
 
@@ -907,9 +907,9 @@ $M^4+3M = -5M+6I+3M = -2M+6I = -2\begin{pmatrix}2&-1\\4&-3\end{pmatrix}+6\begin{
 
 If $B = P^{-1}AP$, then $\det(B) = \det(P^{-1}AP) = \det(P^{-1})\det(A)\det(P) = \det(A)$.
 
-$\text{'\{'}tr{'\}'}(B) = \text{'\{'}tr{'\}'}(P^{-1}AP)$. Using the cyclic property of trace: $\text{'\{'}tr{'\}'}(ABC) = \text{'\{'}tr{'\}'}(CAB)$.
+$\text{tr{}(B) = \text{tr{}(P^{-1}AP)$. Using the cyclic property of trace: $\text{tr{}(ABC) = \text{tr{}(CAB)$.
 
-$\text{'\{'}tr{'\}'}(P^{-1}AP) = \text{'\{'}tr{'\}'}(APP^{-1}) = \text{'\{'}tr{'\}'}(A)$. $\blacksquare$
+$\text{tr{}(P^{-1}AP) = \text{tr{}(APP^{-1}) = \text{tr{}(A)$. $\blacksquare$
 
 </details>
 

@@ -397,7 +397,7 @@ where:
 
 The total rate of diffusion across a surface of area $A$ is:
 
-$$\text{'\{'}Rate{'\}'} = J \times A = D \cdot A \cdot \frac{\Delta C}{\Delta x}$$
+$$\text{Rate{} = J \times A = D \cdot A \cdot \frac{\Delta C}{\Delta x}$$
 
 This equation directly explains the adaptations of gas exchange surfaces: maximising $A$ (large surface
 area), minimising $\Delta x$ (thin barrier), and maximising $\Delta C$ (maintaining a steep concentration
@@ -418,7 +418,7 @@ $\alpha = 1.3 \times 10^{-3}\ \mathrm{mol\ m^{-3}\ kPa^{-1}}$.
 
 $$\Delta C = \alpha \times \Delta p\mathrm{O_2{} = 1.3 \times 10^{-3} \times (13.3 - 5.3) = 0.0104\ \mathrm{mol\ m^{-3}}$$
 
-$$\text{'\{'}Rate{'\}'} = D \cdot A \cdot \frac{\Delta C}{\Delta x} = 1.8 \times 10^{-9} \times 200 \times 10^{-12} \times \frac{0.0104}{0.5 \times 10^{-6}}$$
+$$\text{Rate{} = D \cdot A \cdot \frac{\Delta C}{\Delta x} = 1.8 \times 10^{-9} \times 200 \times 10^{-12} \times \frac{0.0104}{0.5 \times 10^{-6}}$$
 
 $$= 1.8 \times 10^{-9} \times 2 \times 10^{-10} \times 20800 = 7.5 \times 10^{-15}\ \mathrm{mol\ s^{-1}}$$
 
@@ -819,11 +819,11 @@ breathing rate increases to $28\ \mathrm{breaths\ min^{-1}}$ and tidal volume to
 during exercise. (c) Calculate the volume of air that ventilates the anatomical dead space per minute
 at rest and during exercise, given a dead space volume of $150\ \mathrm{cm^3{}$.
 
-**Answer.** (a) Respiratory minute ventilation $= \text{'\{'}tidal volume{'\}'} \times \text{'\{'}breathing rate{'\}'} = 450 \times 16 = 7200\ \mathrm{cm^3\ min^{-1}} = 7.2\ \mathrm{dm^3\ min^{-1}}$. This matches the stated value.
+**Answer.** (a) Respiratory minute ventilation $= \text{tidal volume{} \times \text{breathing rate{} = 450 \times 16 = 7200\ \mathrm{cm^3\ min^{-1}} = 7.2\ \mathrm{dm^3\ min^{-1}}$. This matches the stated value.
 
 (b) During exercise: $750 \times 28 = 21000\ \mathrm{cm^3\ min^{-1}} = 21.0\ \mathrm{dm^3\ min^{-1}}$.
 
-(c) Dead space ventilation (volume of air that does not reach the alveoli) $= \text{'\{'}dead space volume{'\}'} \times \text{'\{'}breathing rate{'\}'}$.
+(c) Dead space ventilation (volume of air that does not reach the alveoli) $= \text{dead space volume{} \times \text{breathing rate{}$.
 
 At rest: $150 \times 16 = 2400\ \mathrm{cm^3\ min^{-1}} = 2.4\ \mathrm{dm^3\ min^{-1}}$.
 
@@ -879,9 +879,9 @@ The ECG records the electrical activity of the heart from the body surface:
 
 - **Heart rate** (from ECG): count the number of QRS complexes in a known time period. If the ECG speed is $25\ \mathrm{mm\ s^{-1}}$ and the distance between two QRS complexes is $20\ \mathrm{mm{}$:
 
-$$\text{'\{'}Time per beat{'\}'} = \frac{20}{25} = 0.8\ \mathrm{s{}$$
+$$\text{Time per beat{} = \frac{20}{25} = 0.8\ \mathrm{s{}$$
 
-$$\text{'\{'}Heart rate{'\}'} = \frac{60}{0.8} = 75\ \mathrm{bpm{}$$
+$$\text{Heart rate{} = \frac{60}{0.8} = 75\ \mathrm{bpm{}$$
 
 ### 11.4 Pressure and Volume Changes in the Cardiac Cycle
 
@@ -990,7 +990,7 @@ The rate of transpiration is affected by:
 
 **Using a potometer:** a potometer measures water uptake by a plant shoot (which approximates transpiration rate). The distance moved by an air bubble in the capillary tube is recorded over time:
 
-$$\text{'\{'}Transpiration rate{'\}'} = \frac{\text{'\{'}Volume of water taken up{'\}'}}{\text{'\{'}Time{'\}'}} = \frac{\pi r^2 d}{t}$$
+$$\text{Transpiration rate{} = \frac{\text{Volume of water taken up{}}{\text{Time{}} = \frac{\pi r^2 d}{t}$$
 
 Where $r$ = radius of capillary tube, $d$ = distance bubble moved, $t$ = time.
 
@@ -1275,7 +1275,7 @@ The insect tracheal system is an efficient gas exchange system that delivers air
 
 Adaptations for efficient gas exchange (features related to Fick's Law):
 
-$$\text{'\{'}Rate of diffusion{'\}'} \propto \frac{\text{'\{'}surface area{'\}'} \times \text{'\{'}concentration difference{'\}'}}{\text{'\{'}diffusion distance{'\}'}}$$
+$$\text{Rate of diffusion{} \propto \frac{\text{surface area{} \times \text{concentration difference{}}{\text{diffusion distance{}}$$
 
 | Feature | How It Maximises Diffusion Rate |
 | ------- | ------------------------------- |
@@ -1750,7 +1750,7 @@ The cohesion-tension theory explains how water moves up the xylem against gravit
 
 ### 37.1 The Equation
 
-$$\text{'\{'}Rate of diffusion{'\}'} = \frac{D \times A \times \Delta C}{\Delta x}$$
+$$\text{Rate of diffusion{} = \frac{D \times A \times \Delta C}{\Delta x}$$
 
 | Symbol | Meaning | Unit |
 | ------ | ------- | ---- |

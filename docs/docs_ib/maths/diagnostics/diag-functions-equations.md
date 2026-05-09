@@ -139,7 +139,7 @@ The function $f$ is defined by $f(x) = \dfrac{2x + 3}{x + 2}$.
 
 **(a)** Solve $f(x) = x$:
 
-$$\frac{2x + 3}{x + 2} = x \implies 2x + 3 = x^2 + 2x \implies x^2 = 3 \implies x = \sqrt{3} \text{'\{'} or {'\}'} x = -\sqrt{3}$$
+$$\frac{2x + 3}{x + 2} = x \implies 2x + 3 = x^2 + 2x \implies x^2 = 3 \implies x = \sqrt{3} \text{ or {} x = -\sqrt{3}$$
 
 The fixed points are $x = \sqrt{3}$ and $x = -\sqrt{3}$.
 

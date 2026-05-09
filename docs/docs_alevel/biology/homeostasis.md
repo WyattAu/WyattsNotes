@@ -1007,7 +1007,7 @@ If the patient has blood glucose of $15\ \mathrm{mmol\ L^{-1}}$ (above the renal
 
 ### 18.3 Filtration Fraction
 
-$$\text{'\{'}Filtration fraction{'\}'} = \frac{\text{'\{'}GFR{'\}'}}{\text{'\{'}Renal plasma flow (RPF){'\}'}} = \frac{125}{650} \approx 0.19 = 19\%$$
+$$\text{Filtration fraction{} = \frac{\text{GFR{}}{\text{Renal plasma flow (RPF){}} = \frac{125}{650} \approx 0.19 = 19\%$$
 
 This means approximately 19% of the plasma passing through the glomerulus is filtered into the Bowman's capsule.
 

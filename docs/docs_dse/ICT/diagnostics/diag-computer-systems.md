@@ -41,9 +41,9 @@ Time for one instruction $= 4 \times 0.3125 = 1.25$ ns.
 
 Registers (fastest, smallest, most expensive) $\to$ L1/L2/L3 cache $\to$ RAM $\to$ SSD/HDD (slowest, largest, cheapest). The hierarchy works by keeping frequently accessed data in faster, smaller storage closer to the CPU.
 
-(b) $\text{'\{'}AMAT{'\}'} = \text{'\{'}L1 time{'\}'} + \text{'\{'}L1 miss rate{'\}'} \times (\text{'\{'}L2 time{'\}'} + \text{'\{'}L2 miss rate{'\}'} \times \text{'\{'}RAM time{'\}'})$.
+(b) $\text{AMAT{} = \text{L1 time{} + \text{L1 miss rate{} \times (\text{L2 time{} + \text{L2 miss rate{} \times \text{RAM time{})$.
 
-$\text{'\{'}AMAT{'\}'} = 1 + 0.05 \times (5 + 0.20 \times 100) = 1 + 0.05 \times (5 + 20) = 1 + 0.05 \times 25 = 1 + 1.25 = 2.25$ ns.
+$\text{AMAT{} = 1 + 0.05 \times (5 + 0.20 \times 100) = 1 + 0.05 \times (5 + 20) = 1 + 0.05 \times 25 = 1 + 1.25 = 2.25$ ns.
 
 (c) **SRAM (Static RAM):** Uses flip-flop circuits (6 transistors per cell). Does not require refreshing -- data is retained as long as power is supplied. Faster access time but much more expensive and lower density. Used for CPU cache.
 
@@ -61,9 +61,9 @@ $\text{'\{'}AMAT{'\}'} = 1 + 0.05 \times (5 + 0.20 \times 100) = 1 + 0.05 \times
 | Durability | Vulnerable to physical shock (head crash) | Highly durable (no moving parts) |
 | Cost per GB | Low (around \$0.02--0.03/GB) | Higher (around \$0.05--0.10/GB) |
 
-(b) Total sectors $= 4 \text{'\{'} platters{'\}'} \times 2 \text{'\{'} surfaces/platter{'\}'} \times 1024 \text{'\{'} tracks/surface{'\}'} \times 256 \text{'\{'} sectors/track{'\}'} = 4 \times 2 \times 1024 \times 256 = 2,097,152$ sectors.
+(b) Total sectors $= 4 \text{ platters{} \times 2 \text{ surfaces/platter{} \times 1024 \text{ tracks/surface{} \times 256 \text{ sectors/track{} = 4 \times 2 \times 1024 \times 256 = 2,097,152$ sectors.
 
-Total capacity $= 2,097,152 \times 512 \text{'\{'} bytes{'\}'} = 1,073,741,824 \text{'\{'} bytes{'\}'} = 1 \text{'\{'} GB{'\}'}$.
+Total capacity $= 2,097,152 \times 512 \text{ bytes{} = 1,073,741,824 \text{ bytes{} = 1 \text{ GB{}$.
 
 (c) A touchscreen displays visual output (images, text, UI elements) like any monitor, making it an output device. Simultaneously, it detects touch input (position, pressure, gestures), making it an input device. The combination in a single hardware component is what makes it both. This dual functionality enables intuitive user interfaces on smartphones and tablets.
 

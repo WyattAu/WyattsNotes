@@ -53,7 +53,7 @@ $$S_{xy} = 7324 - \frac{267 \times 146}{7} = 7324 - \frac{38982}{7} = 7324 - 556
 
 $$r = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}} = \frac{1755.143}{\sqrt{2062.857 \times 1508.857}}$$
 
-$$= \frac{1755.143}{\sqrt{3111755.1}} = \frac{1755.143}{1764.02} = 0.9950 \text{'\{'} (4 d.p.){'\}'}$$
+$$= \frac{1755.143}{\sqrt{3111755.1}} = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.){}$$
 
 **(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and $v = \frac{1}{100}y$, which are linear transformations.
 
@@ -141,7 +141,7 @@ where $b_{xy}$ is the gradient of the regression line of $x$ on $y$. From the co
 
 $$r^2 = 4.2 \times 0.21 = 0.882$$
 
-$$r = \sqrt{0.882} = 0.939 \text{'\{'} (3 d.p.){'\}'}$$
+$$r = \sqrt{0.882} = 0.939 \text{ (3 d.p.){}$$
 
 We take the positive root because both regression coefficients are positive, indicating a positive association.
 
@@ -419,7 +419,7 @@ The residual for $T = 30$ is $-217.3$, which is enormously negative. The predict
 
 $$r = \frac{S_{TS}}{\sqrt{S_{TT} \cdot S_{SS}}} = \frac{3292}{\sqrt{238 \times 46247}}$$
 
-$$= \frac{3292}{\sqrt{11006786}} = \frac{3292}{3317.65} = 0.9923 \text{'\{'} (4 d.p.){'\}'}$$
+$$= \frac{3292}{\sqrt{11006786}} = \frac{3292}{3317.65} = 0.9923 \text{ (4 d.p.){}$$
 
 Regression coefficient:
 
@@ -433,7 +433,7 @@ New regression line: $S = 13.83T - 116$ (to 3 s.f.)
 
 **(c)** Original PMCC: $r = 0.893$. New PMCC: $r = 0.992$.
 
-$$\text{'\{'}Percentage change{'\}'} = \frac{0.992 - 0.893}{0.893} \times 100 = \frac{0.099}{0.893} \times 100 = 11.1\%$$
+$$\text{Percentage change{} = \frac{0.992 - 0.893}{0.893} \times 100 = \frac{0.099}{0.893} \times 100 = 11.1\%$$
 
 The PMCC increased by approximately 11.1%. This demonstrates that the PMCC is **sensitive to outliers** because it uses the actual data values (and their deviations from the mean). A single extreme value can substantially reduce the PMCC.
 

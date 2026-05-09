@@ -534,7 +534,7 @@ Retrosynthetic analysis works backwards from the target molecule. For each step,
 
 **Route 1 (via halogenoalkane):**
 
-Step 1: $\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{'\{'}peroxides{'\}'}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$ (anti-Markovnikov addition)
+Step 1: $\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{peroxides{}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$ (anti-Markovnikov addition)
 
 Step 2: $\mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 + \mathrm{NaOH{}(aq) \to \mathrm{HOCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$ (nucleophilic substitution)
 
@@ -542,7 +542,7 @@ Step 3: $\mathrm{HOCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 \xrightarrow{[\mathrm{O{}]
 
 **Route 2 (via nitrile, chain extension):**
 
-Step 1: $\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{'\{'}peroxides{'\}'}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$
+Step 1: $\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{peroxides{}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$
 
 Step 2: $\mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 + \mathrm{KCN{} \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CN{}$ (nucleophilic substitution, adds one C)
 
@@ -564,7 +564,7 @@ Better route: Start with phenol.
 
 Step 1: $\mathrm{C{}_6\mathrm{H{}_6 + \mathrm{Cl{}_2 \xrightarrow{\mathrm{AlCl{}_3} \mathrm{C{}_6\mathrm{H{}_5\mathrm{Cl{}$ (chlorination)
 
-Step 2: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{Cl{} + \mathrm{NaOH{} \xrightarrow{\text{'\{'}high {'\}'} P,\,T} \mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{} + \mathrm{NaCl{}$ (industrial phenol synthesis)
+Step 2: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{Cl{} + \mathrm{NaOH{} \xrightarrow{\text{high {} P,\,T} \mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{} + \mathrm{NaCl{}$ (industrial phenol synthesis)
 
 Step 3: Kolbe-Schmitt reaction: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{} + \mathrm{CO{}_2 \xrightarrow{\mathrm{NaOH{},\,125^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_4(\mathrm{OH{})\mathrm{COONa{} \xrightarrow{\mathrm{H{}^+} \mathrm{C{}_6\mathrm{H{}_4(\mathrm{OH{})\mathrm{COOH{}$ (2-hydroxybenzoic acid, salicylic acid)
 
@@ -714,13 +714,13 @@ $$
 **Step 2:** Nitration (methyl is ortho/para directing, so a mixture of ortho and para is produced; para is the major product for steric reasons):
 
 $$
-\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_3 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4} 4\text{'\{'}-nitrotoluene (major){'\}'} + 2\text{'\{'}-nitrotoluene (minor){'\}'}
+\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_3 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4} 4\text{-nitrotoluene (major){} + 2\text{-nitrotoluene (minor){}
 $$
 
 **Step 3:** Oxidation of the methyl group to carboxylic acid:
 
 $$
-4\text{'\{'}-{'\}'}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CH{}_3)(\mathrm{NO{}_2) \xrightarrow{\mathrm{KMnO{}_4,\,\Delta} 4\text{'\{'}-{'\}'}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{COOH{})(\mathrm{NO{}_2)
+4\text{-{}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{CH{}_3)(\mathrm{NO{}_2) \xrightarrow{\mathrm{KMnO{}_4,\,\Delta} 4\text{-{}\mathrm{C{}_6\mathrm{H{}_4(\mathrm{COOH{})(\mathrm{NO{}_2)
 $$
 
 The nitro group must be installed **before** oxidation because the carboxylic acid group is meta-directing and deactivating. If the carboxylic acid were installed first, nitration would give 3-nitrobenzoic acid, not the desired 4-nitro isomer. The methyl group is the correct directing group to achieve para substitution.

@@ -506,7 +506,7 @@ The molecular formula $\mathrm{C{}_5\mathrm{H{}_{10}\mathrm{O{}$ has one degree 
 
 The compound is a methyl ketone: **pentan-2-one** ($\mathrm{CH{}_3\mathrm{COCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$).
 
-Verify: $\mathrm{C{}_5\mathrm{H{}_{10}\mathrm{O{}$, $\text{'\{'}DoU{'\}'} = 1$ (one C=O). Contains $\mathrm{CH{}_3\mathrm{CO{}-$ group. Not an aldehyde. Correct.
+Verify: $\mathrm{C{}_5\mathrm{H{}_{10}\mathrm{O{}$, $\text{DoU{} = 1$ (one C=O). Contains $\mathrm{CH{}_3\mathrm{CO{}-$ group. Not an aldehyde. Correct.
 
 Iodoform test: $\mathrm{CH{}_3\mathrm{COCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 + 3\mathrm{I{}_2 + 4\mathrm{NaOH{} \to \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{COONa{} + \mathrm{CHI{}_3(s) + 3\mathrm{NaI{} + 3\mathrm{H{}_2\mathrm{O{}$
 
@@ -562,7 +562,7 @@ Tollens' test identifies ethanal. The remaining three are: propanone, ethanol, e
 
 **Reduction of butanal to butan-1-ol:**
 
-$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CHO{} \xrightarrow{\mathrm{NaBH{}_4,\,\text{'\{'}then {'\}'}\mathrm{H{}^+} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{}$$
+$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CHO{} \xrightarrow{\mathrm{NaBH{}_4,\,\text{then {}\mathrm{H{}^+} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{}$$
 
 **Mechanism:**
 
@@ -602,7 +602,7 @@ $$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CHO{} + \mathrm{HCN{} \to \mathrm{CH{}_3\m
 
 Step 2: Acid hydrolysis of the nitrile:
 
-$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{CN{} + 2\mathrm{H{}_2\mathrm{O{} + \mathrm{H{}^+ \xrightarrow{\text{'\{'}reflux{'\}'}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{COOH{} + \mathrm{NH{}_4^+$$
+$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{CN{} + 2\mathrm{H{}_2\mathrm{O{} + \mathrm{H{}^+ \xrightarrow{\text{reflux{}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{COOH{} + \mathrm{NH{}_4^+$$
 
 The product is 2-hydroxybutanoic acid. The cyanohydrin reaction extends the carbon chain by one carbon and introduces both $-\mathrm{OH{}$ and $-\mathrm{COOH{}$ groups in a single sequence.
 
@@ -686,9 +686,9 @@ The iodoform reaction cleaves a methyl ketone to a carboxylic acid with one fewe
 
 **Yield calculation:**
 
-$$\text{'\{'}Theoretical moles of aspirin{'\}'} = \frac{5.00}{138.12} = 0.0362\,\mathrm{mol{}$$
-$$\text{'\{'}Theoretical mass{'\}'} = 0.0362 \times 180.16 = 6.52\,\mathrm{g{}$$
-$$\text{'\{'}Percentage yield{'\}'} = \frac{\text{'\{'}actual mass{'\}'}}{6.52} \times 100$$
+$$\text{Theoretical moles of aspirin{} = \frac{5.00}{138.12} = 0.0362\,\mathrm{mol{}$$
+$$\text{Theoretical mass{} = 0.0362 \times 180.16 = 6.52\,\mathrm{g{}$$
+$$\text{Percentage yield{} = \frac{\text{actual mass{}}{6.52} \times 100$$
 
 ## Exam-Style Questions with Full Mark Schemes
 
@@ -804,7 +804,7 @@ Retrosynthetic analysis:
 
 **Forward synthesis:**
 
-$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{} \xrightarrow{[\mathrm{O{}],\,\text{'\{'}distillation{'\}'}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CHO{} \xrightarrow{\mathrm{HCN{}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{CN{} \xrightarrow{\mathrm{H{}_3\mathrm{O{}^+,\,\text{'\{'}reflux{'\}'}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{COOH{}$$
+$$\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{} \xrightarrow{[\mathrm{O{}],\,\text{distillation{}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CHO{} \xrightarrow{\mathrm{HCN{}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{CN{} \xrightarrow{\mathrm{H{}_3\mathrm{O{}^+,\,\text{reflux{}} \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{COOH{}$$
 
 ---
 

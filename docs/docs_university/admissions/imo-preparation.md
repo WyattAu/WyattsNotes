@@ -68,11 +68,11 @@ $$\phi(n) = n \prod_{p \mid n}\left(1 - \frac{1}{p}\right)$$
 **Euler's Theorem.** If $\gcd(a, n) = 1$, then $a^{\phi(n)} \equiv 1 \pmod{n}$.
 
 **Corollary: the order of $a$ modulo $n$.** The smallest positive integer $d$ such that $a^d \equiv 1 \pmod{n}$
-is called the order of $a$ modulo $n$, denoted $\text{'\{'}ord{'\}'}_n(a)$. The order divides $\phi(n)$, and more
+is called the order of $a$ modulo $n$, denoted $\text{ord{}_n(a)$. The order divides $\phi(n)$, and more
 generally divides any exponent $k$ for which $a^k \equiv 1 \pmod{n}$.
 
 **Technique: orders in Diophantine equations.** If $a^m \equiv a^n \pmod{p}$ with $\gcd(a, p) = 1$,
-then $m \equiv n \pmod{\text{'\{'}ord{'\}'}_p(a)}$. This is often more precise than working modulo $p - 1$.
+then $m \equiv n \pmod{\text{ord{}_p(a)}$. This is often more precise than working modulo $p - 1$.
 
 ### 2.2 Chinese Remainder Theorem
 
@@ -212,7 +212,7 @@ $1/p_1 + \cdots + 1/p_k = 1$:
 
 $$\sum_{i=1}^{n}\prod_{j=1}^{k} a_{ij} \leq \prod_{j=1}^{k}\left(\sum_{i=1}^{n} a_{ij}^{p_j}\right)^{1/p_j}$$
 
-**Muirhead's Inequality.** A symmetric sum $\sum_{\text{'\{'}sym{'\}'}} x_1^{a_1} x_2^{a_2} \cdots x_n^{a_n}$
+**Muirhead's Inequality.** A symmetric sum $\sum_{\text{sym{}} x_1^{a_1} x_2^{a_2} \cdots x_n^{a_n}$
 is denoted $[a_1, a_2, \ldots, a_n]$. We say $(a_1, \ldots, a_n)$ majorises $(b_1, \ldots, b_n)$
 if the sum of the $k$ largest $a_i$ is at least the sum of the $k$ largest $b_i$ for all $k$, with
 equality when $k = n$. Muirhead's inequality states that if $(a)$ majorises $(b)$ and
@@ -229,7 +229,7 @@ For $r = 1$: $x^3 + y^3 + z^3 + 3xyz \geq x^2y + x^2z + y^2x + y^2z + z^2x + z^2
 **Resultant.** The resultant of polynomials $P$ and $Q$ is zero if and only if $P$ and $Q$ share a
 common root. For $P(x) = a\prod(x - \alpha_i)$ and $Q(x) = b\prod(x - \beta_j)$:
 
-$$\text{'\{'}Res{'\}'}(P, Q) = a^m b^n \prod_{i,j}(\alpha_i - \beta_j) = a^m \prod_i Q(\alpha_i) = b^n \prod_j P(\beta_j)$$
+$$\text{Res{}(P, Q) = a^m b^n \prod_{i,j}(\alpha_i - \beta_j) = a^m \prod_i Q(\alpha_i) = b^n \prod_j P(\beta_j)$$
 
 where $m = \deg P$ and $n = \deg Q$.
 
@@ -436,17 +436,17 @@ $$\sum \frac{a^3}{b^2 - bc + c^2} = \sum \frac{a^4}{a(b^2 - bc + c^2)} \geq \fra
 
 The denominator expands as:
 
-$$\sum a(b^2 - bc + c^2) = \sum_{\text{'\{'}sym{'\}'}} a^2 b - 3abc$$
+$$\sum a(b^2 - bc + c^2) = \sum_{\text{sym{}} a^2 b - 3abc$$
 
-where $\sum_{\text{'\{'}sym{'\}'}} a^2 b = a^2b + a^2c + ab^2 + ac^2 + b^2c + bc^2$.
+where $\sum_{\text{sym{}} a^2 b = a^2b + a^2c + ab^2 + ac^2 + b^2c + bc^2$.
 
 We need to show:
 
-$$\frac{(a^2 + b^2 + c^2)^2}{\sum_{\text{'\{'}sym{'\}'}} a^2 b - 3abc} \geq a + b + c$$
+$$\frac{(a^2 + b^2 + c^2)^2}{\sum_{\text{sym{}} a^2 b - 3abc} \geq a + b + c$$
 
-i.e., $(a^2 + b^2 + c^2)^2 \geq (a + b + c)\left(\sum_{\text{'\{'}sym{'\}'}} a^2 b - 3abc\right)$.
+i.e., $(a^2 + b^2 + c^2)^2 \geq (a + b + c)\left(\sum_{\text{sym{}} a^2 b - 3abc\right)$.
 
-Let $S = a + b + c$, $Q = ab + bc + ca$, $P = abc$. Then $\sum_{\text{'\{'}sym{'\}'}} a^2 b = SQ - 3P$.
+Let $S = a + b + c$, $Q = ab + bc + ca$, $P = abc$. Then $\sum_{\text{sym{}} a^2 b = SQ - 3P$.
 
 The right side becomes $(a+b+c)(SQ - 6P) = S^2 Q - 6SP$.
 
@@ -456,17 +456,17 @@ We need $S^4 - 4S^2 Q + 4Q^2 \geq S^2 Q - 6SP$, i.e., $S^4 - 5S^2 Q + 4Q^2 + 6SP
 
 Rather than expanding in symmetric polynomials, we proceed directly. The inequality is equivalent to:
 
-$$\sum a^4 + 2\sum a^2 b^2 \geq \sum_{\text{'\{'}sym{'\}'}} a^3 b - \sum a^2 bc$$
+$$\sum a^4 + 2\sum a^2 b^2 \geq \sum_{\text{sym{}} a^3 b - \sum a^2 bc$$
 
 which simplifies to:
 
-$$\sum a^4 + \sum a^2 bc \geq \sum_{\text{'\{'}sym{'\}'}} a^3 b$$
+$$\sum a^4 + \sum a^2 bc \geq \sum_{\text{sym{}} a^3 b$$
 
 But this is precisely Schur's inequality with $r = 1$:
 
-$$\sum a(a-b)(a-c) = \sum a^4 + abc(a+b+c) - \sum_{\text{'\{'}sym{'\}'}} a^3 b \geq 0$$
+$$\sum a(a-b)(a-c) = \sum a^4 + abc(a+b+c) - \sum_{\text{sym{}} a^3 b \geq 0$$
 
-i.e., $\sum a^4 + \sum a^2 bc \geq \sum_{\text{'\{'}sym{'\}'}} a^3 b$.
+i.e., $\sum a^4 + \sum a^2 bc \geq \sum_{\text{sym{}} a^3 b$.
 
 Equality holds when $a = b = c$.
 

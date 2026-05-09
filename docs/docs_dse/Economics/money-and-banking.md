@@ -1254,7 +1254,7 @@ NIM $= (30 - 19.75) / 650 = 10.25 / 650 = 1.58\%$.
 
 NIM falls from 1.73% to 1.58% because the bank's floating-rate liabilities reprice faster than its floating-rate assets, and the fixed-rate assets do not reprice at all. The bank is **asset-sensitive** with a negative duration gap.
 
-(c) The bank has more rate-sensitive liabilities (HK$250B floating + HK$300B fixed maturing in 1 year $=$ HK$550B within 1 year) than rate-sensitive assets (HK$200B floating + HK$0B fixed maturing within 1 year $=$ HK$200B within 1 year). The repricing gap is $200 - 550 = -\text{'\{'}HK{'\}'}\$350$ billion. This means when rates rise, the bank's interest expense rises faster than its interest income, compressing the NIM.
+(c) The bank has more rate-sensitive liabilities (HK$250B floating + HK$300B fixed maturing in 1 year $=$ HK$550B within 1 year) than rate-sensitive assets (HK$200B floating + HK$0B fixed maturing within 1 year $=$ HK$200B within 1 year). The repricing gap is $200 - 550 = -\text{HK{}\$350$ billion. This means when rates rise, the bank's interest expense rises faster than its interest income, compressing the NIM.
 
 (d) **Strategy 1 -- Interest rate swaps:** The bank can enter a receive-fixed, pay-floating interest rate swap on a notional amount of HK$350 billion. This converts some of its floating-rate liabilities to fixed-rate, reducing its negative repricing gap.
 
@@ -1357,7 +1357,7 @@ The central bank wants to reduce the money supply by HK$400 billion. The require
 <details>
 <summary>Solution</summary>
 
-(a) Money multiplier $= 1/0.10 = 10$. Required bond sale $= 400/10 = \text{'\{'}HK{'\}'}\$40$ billion.
+(a) Money multiplier $= 1/0.10 = 10$. Required bond sale $= 400/10 = \text{HK{}\$40$ billion.
 
 (b) | Round | Deposits | Reserves | Loans |
 |---|---|---|---|

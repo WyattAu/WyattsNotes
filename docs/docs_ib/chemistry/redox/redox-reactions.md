@@ -839,7 +839,7 @@ $$
 Using ideal gas law at $T = 298\mathrm{ K{}$ and $P = 100\mathrm{ kPa{}$:
 
 $$
-V = \frac{nRT}{P} = \frac{0.04197 \times 8.314 \times 298}{100} = \frac{103.9}{100} = 1.04\mathrm{ L{}
+V = \frac`\{nRT}`{P} = \frac{0.04197 \times 8.314 \times 298}{100} = \frac{103.9}{100} = 1.04\mathrm{ L{}
 $$
 
 </details>

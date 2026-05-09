@@ -17,9 +17,9 @@ Pump in particles and observe how they behave under different conditions.
 The ideal gas law states the relationship of ideal gas qualities:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     PV = nRT = n N_A k_B T = N k_B T
-\end{aligned}
+\end`\{aligned}`
 $$
 
 where: $P$: Pressure $V$: Volume $T$: Temperature $n$: Number of moles $N$: Number of particles $R$:
@@ -30,12 +30,12 @@ Gas constant, where $R = N_A \cdot k_B$ $N_A$: Avogadro constant $k_B$: Boltzman
 Kinetic theory states the average pressure ($P$) of an ideal gas is:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     P = \frac{N}{3V} m\bar{v}^2\\
     P\frac{3V}{2N} = \frac{1}{2}m\bar{v}^2\\
     \left(\frac{N k_B T}{V}\right)\frac{3V}{2N} = \frac{1}{2}m\bar{v}^2\\
     \bar{E_k} = \frac{3}{2}k_B T
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## First Law of Thermodynamics
@@ -45,9 +45,9 @@ internal energy ($\Delta U$) is the heat transfer ($Q$) to the system subtract t
 from the process:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \Delta U = Q - W
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## Second Law of Thermodynamics
@@ -62,9 +62,9 @@ change of internal energy is directly effected by the change of average translat
 ($\bar{E_k}$) by the change of temperature ($\Delta T$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \Delta U = N \Delta \bar{E_k} = \frac{3}{2}Nk_B\Delta T = \frac{3}{2} nR\Delta T
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ## Thermodynamic Processes
@@ -75,17 +75,17 @@ Adiabatic process is a thermodynamic process where there is no heat transfer ($Q
 system and surroundings:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \Delta U = -W
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Where for monatomic ideal gas, adiabatic process satisfy the condition:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     PV^{\frac{5}{3}} = \mathrm{constant{}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Isothermal Process
@@ -95,9 +95,9 @@ normally occurs when heat transfer cause a change in volume that the average kin
 particles does not increase:
 
 $$
-\begin{aligned}
-    \Delta \left(\frac{PV}{nR}\right) = 0
-\end{aligned}
+\begin`\{aligned}`
+    \Delta \left(\frac`\{PV}``\{nR}`\right) = 0
+\end`\{aligned}`
 $$
 
 ### Isovolumetric Process
@@ -107,10 +107,10 @@ since work done rely on the change of volume ($ W = P \Delta V$ = 0), heat trans
 result in the change of internal energy:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \Delta U = Q - W = Q \\
-    \Delta \left(\frac{P}{nRT}\right) = 0
-\end{aligned}
+    \Delta \left(\frac{P}`\{nRT}`\right) = 0
+\end`\{aligned}`
 $$
 
 ### Isobaric Process
@@ -118,9 +118,9 @@ $$
 Isobaric Process is a thermodynamic process that occurs at constant pressure ($\Delta P = 0$):
 
 $$
-\begin{aligned}
-    \Delta \left(\frac{V}{nRT}\right) = 0
-\end{aligned}
+\begin`\{aligned}`
+    \Delta \left(\frac{V}`\{nRT}`\right) = 0
+\end`\{aligned}`
 $$
 
 ---
@@ -493,7 +493,7 @@ isovolumetrically to 400 K. What is the new pressure?
 **a) Volume:**
 
 $$
-V = \frac{nRT}{P} = \frac{(0.200)(8.31)(300)}{1.50 \times 10^5} = \frac{498.6}{1.50 \times 10^5} = 3.32 \times 10^{-3} \mathrm{ m{}^3 = 3.32 \mathrm{ L{}
+V = \frac`\{nRT}`{P} = \frac{(0.200)(8.31)(300)}{1.50 \times 10^5} = \frac{498.6}{1.50 \times 10^5} = 3.32 \times 10^{-3} \mathrm{ m{}^3 = 3.32 \mathrm{ L{}
 $$
 
 **b) Isothermal compression to half volume:**
@@ -555,7 +555,7 @@ $$
 Using the ideal gas law to find $T_2$:
 
 $$
-T_2 = \frac{P_2 V_2}{nR} = \frac{(9.44 \times 10^4)(8.0 \times 10^{-3})}{(2.0)(8.31)} = \frac{755}{16.62} = 45.4 \mathrm{ K{}
+T_2 = \frac{P_2 V_2}`\{nR}` = \frac{(9.44 \times 10^4)(8.0 \times 10^{-3})}{(2.0)(8.31)} = \frac{755}{16.62} = 45.4 \mathrm{ K{}
 $$
 
 For an adiabatic process, $Q = 0$, so $W = -\Delta U$:
@@ -634,7 +634,7 @@ gases (like hydrogen) escape from planetary atmospheres more easily than heavier
 **Heating at constant volume:**
 
 $$
-\Delta S = \int \frac{dQ}{T} = \int_{T_1}^{T_2} \frac{mc \, dT}{T} = mc\ln\left(\frac{T_2}{T_1}\right)
+\Delta S = \int \frac`\{dQ}`{T} = \int_{T_1}^{T_2} \frac{mc \, dT}{T} = mc\ln\left(\frac{T_2}{T_1}\right)
 $$
 
 **Phase change at constant temperature:**

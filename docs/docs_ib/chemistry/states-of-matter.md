@@ -149,7 +149,7 @@ molecules) deviate more from ideal behaviour.
 ### Compressibility Factor
 
 $$
-Z = \frac{PV}{nRT}
+Z = \frac`\{PV}``\{nRT}`
 $$
 
 - $Z = 1$: ideal gas
@@ -356,7 +356,7 @@ $b = 0.043\mathrm{ L/mol{}$.
 Ideal gas law:
 
 $$
-P_{\mathrm{ideal{}} = \frac{nRT}{V} = \frac{1.00 \times 0.0821 \times 300}{5.00} = \frac{24.63}{5.00} = 4.93\mathrm{ atm{}
+P_{\mathrm{ideal{}} = \frac`\{nRT}`{V} = \frac{1.00 \times 0.0821 \times 300}{5.00} = \frac{24.63}{5.00} = 4.93\mathrm{ atm{}
 $$
 
 Van der Waals:
@@ -406,7 +406,7 @@ Convert all quantities to SI units:
 Using $R = 8.314\mathrm{ J/(mol \cdot K){}$ (SI units):
 
 $$
-n = \frac{PV}{RT} = \frac{98\,500 \times 2.500 \times 10^{-4}}{8.314 \times 298} = \frac{24.63}{2477.6} = 0.00994\mathrm{ mol{}
+n = \frac`\{PV}``\{RT}` = \frac{98\,500 \times 2.500 \times 10^{-4}}{8.314 \times 298} = \frac{24.63}{2477.6} = 0.00994\mathrm{ mol{}
 $$
 
 Alternatively, using $R = 8.314 \times 10^{-2}\mathrm{ L \cdot kPa/(mol \cdot K){}$ and keeping $V$ in litres and $P$ in kPa:

@@ -1120,7 +1120,7 @@ copies of $B$ are sampled is $(1 - 0.3)^{100} = 0.7^{100} \approx 3.2 \times 10^
 However, this calculation assumes the bottleneck survivors are a perfectly random sample, which is
 unlikely. In practice, the founder effect during bottlenecks can dramatically change allele frequencies
 or eliminate alleles. The key point is that rare alleles (low frequency) are much more likely to be lost
-than common alleles. If $B$ had frequency $0.01$, $P(\text{'\{'}loss{'\}'}) = 0.99^{100} \approx 0.366$ ($37\%$).
+than common alleles. If $B$ had frequency $0.01$, $P(\text{loss{}) = 0.99^{100} \approx 0.366$ ($37\%$).
 
 (b) The bottleneck reduces the number of alleles in the population because many alleles present in the
 original $10\,000$ individuals are not represented among the $50$ survivors. When the population recovers,

@@ -1182,7 +1182,7 @@ Glycolysis occurs in the **cytoplasm** and does not require oxygen. It is the fi
 | ATP production     | Each triose phosphate is converted to pyruvate (3C), producing 2 ATP per triose phosphate (substrate-level phosphorylation)                   | Produces 4 ATP (2 per triose phosphate)                |
 | **Net yield**      |                                                                                                                                           | **2 ATP + 2 NADH per glucose**                         |
 
-$$\text{'\{'}Glucose (6C){'\}'} + 2\mathrm{NAD{}^+ + 2\mathrm{ADP{} + 2\mathrm{P{}_i \to 2\text{'\{'} Pyruvate (3C){'\}'} + 2\mathrm{NADH{} + 2\mathrm{H{}^+ + 2\mathrm{ATP{} + 2\mathrm{H{}_2\mathrm{O{}$$
+$$\text{Glucose (6C){} + 2\mathrm{NAD{}^+ + 2\mathrm{ADP{} + 2\mathrm{P{}_i \to 2\text{ Pyruvate (3C){} + 2\mathrm{NADH{} + 2\mathrm{H{}^+ + 2\mathrm{ATP{} + 2\mathrm{H{}_2\mathrm{O{}$$
 
 ### The Link Reaction and Krebs Cycle
 
@@ -1232,7 +1232,7 @@ When oxygen is unavailable, pyruvate cannot enter the mitochondria for oxidative
 
 **In animal cells (lactic acid fermentation):**
 
-$$\text{'\{'}Pyruvate{'\}'} + \mathrm{NADH{} \xrightarrow{\text{'\{'}LDH{'\}'}} \text{'\{'}Lactate{'\}'} + \mathrm{NAD{}^+$$
+$$\text{Pyruvate{} + \mathrm{NADH{} \xrightarrow{\text{LDH{}} \text{Lactate{} + \mathrm{NAD{}^+$$
 
 - Net yield: 2 ATP per glucose (only from glycolysis)
 - Lactate accumulates in muscles, causing fatigue and cramping
@@ -1240,9 +1240,9 @@ $$\text{'\{'}Pyruvate{'\}'} + \mathrm{NADH{} \xrightarrow{\text{'\{'}LDH{'\}'}} 
 
 **In yeast and plant cells (alcoholic fermentation):**
 
-$$\text{'\{'}Pyruvate{'\}'} \xrightarrow{\text{'\{'}decarboxylase{'\}'}} \text{'\{'}Ethanal{'\}'} + \mathrm{CO{}_2$$
+$$\text{Pyruvate{} \xrightarrow{\text{decarboxylase{}} \text{Ethanal{} + \mathrm{CO{}_2$$
 
-$$\text{'\{'}Ethanal{'\}'} + \mathrm{NADH{} \xrightarrow{\text{'\{'}alcohol dehydrogenase{'\}'}} \text{'\{'}Ethanol{'\}'} + \mathrm{NAD{}^+$$
+$$\text{Ethanal{} + \mathrm{NADH{} \xrightarrow{\text{alcohol dehydrogenase{}} \text{Ethanol{} + \mathrm{NAD{}^+$$
 
 - Net yield: 2 ATP per glucose
 - $\mathrm{CO{}_2$ and ethanol are produced as waste products

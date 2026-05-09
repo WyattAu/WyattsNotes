@@ -341,13 +341,13 @@ $$(1 + x)^n = \sum_{k=0}^{n} \binom{n}{k} x^k = 1 + nx + \frac{n(n-1)}{2!}x^2 + 
 Each entry is the sum of the two entries above it:
 
 $$
-\begin{array}{cccccccc}
+\begin`\{array}``\{cccccccc}`
 & & & 1 & & & \\
 & & 1 & & 1 & & \\
 & 1 & & 2 & & 1 & \\
 1 & & 3 & & 3 & & 1 \\
 & 1 & & 4 & & 6 & & 4 & & 1
-\end{array}
+\end`\{array}`
 $$
 
 Row $n$ (starting from row 0) gives the coefficients of $(a + b)^n$.
@@ -764,7 +764,7 @@ $$
 For positive real numbers $a$ and $b$:
 
 $$
-\frac{a + b}{2} \ge \sqrt{ab}
+\frac{a + b}{2} \ge \sqrt`\{ab}`
 $$
 
 Equality holds if and only if $a = b$.

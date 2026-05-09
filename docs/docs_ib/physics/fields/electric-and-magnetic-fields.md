@@ -18,10 +18,10 @@ charges ($q$) and inversely proportional to the square of the magnitude of the s
 displacement ($\bm{r}$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     |\bm{F}| \propto |q_1||q_2|, \quad |\bm{F}| \propto |\bm{r}|^2\\
     |\bm{F}| = k \frac{|q_1||q_2|}{|\bm{r}|^2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::info
@@ -29,9 +29,9 @@ Coulomb's Law can also be expressed in vector form, where the force exerted by $
 $q_2$ is:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{F_{12}} = k \frac{q_1 q_2}{|r|^2} \hat{r_{12}} = -\bm{F_{21}}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 <img src="/img/physics/CoulombsLaw.png" alt="Coulombs_law" width="416" height="101" />
@@ -40,9 +40,9 @@ $$
 Where the constant $k$ is named Coulomb's constant and is equal to:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     k = \frac{1}{4\pi \epsilon_0}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::info
@@ -51,28 +51,28 @@ states that the electric flux ($\Phi$) through any closed surface is equal to ne
 enclosed within the surface multiply by the inverse of permittivity of free space ($\epsilon_0$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \Phi = \oiint\limits_{S} E \cdot dA = \frac{Q}{\epsilon_0}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 For a point charge, symmetry implies a radial electric field, and hence a sphere enclosed surface
 ($4\pi r^2$), therefore, simplifying $\phi$ to:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \Phi = 4\pi r^2 = \frac{Q}{\epsilon_0}\\
     E = \left(\frac{1}{4\pi\epsilon_0}\right)\left(\frac{Q}{r^2}\right)\\
     F = q_2 E = \frac{1}{4\pi \epsilon_0} \frac{|q_1||q_2|}{r^2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Coulomb's constant can now be identify as:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     k = \frac{1}{4\pi \epsilon_0}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 :::
@@ -88,9 +88,9 @@ The electric field $\bm{E}$ with vector quantity of electrostatic force $\bm{F}$
 magnitude of charge, evaluated as:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{E} = \lim_{q \rightarrow 0} \frac{F}{q}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Electric Potential Energy
@@ -102,30 +102,30 @@ $\bm{F_{ext}} = \bm{F_e}$ from infinity $(\infty)$ to the potion $\bm{r}$ gives 
 translate the charges:
 
 $$
-\begin{aligned}
-    U &= E_p = W = \int_\infty^{\bm{r}} F_{ext} \cdot d\bm{r} = -\int_\infty^{\bm{r}} F_e \cdot \bm{dr}\\
-    U &= -\int_\infty^{\bm{r}} \left(k\frac{q_1 q_2}{|\bm{r}|^2}\bm{\hat{r}}\right) \cdot \bm{dr}
-\end{aligned}
+\begin`\{aligned}`
+    U &= E_p = W = \int_\infty^{\bm{r}} F_`\{ext}` \cdot d\bm{r} = -\int_\infty^{\bm{r}} F_e \cdot \bm`\{dr}`\\
+    U &= -\int_\infty^{\bm{r}} \left(k\frac{q_1 q_2}{|\bm{r}|^2}\bm{\hat{r}}\right) \cdot \bm`\{dr}`
+\end`\{aligned}`
 $$
 
 Separating the magnitude and direction of $\bm{dr}$ gives $d|\bm{r}|\bm{\hat{r}}$, and hence
 changing the bounds ($\bm{r} \rightarrow |\bm{r}|$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     U &= -\int_\infty^{|\bm{r}|} \left(k\frac{q_1 q_2}{|\bm{r}|^2}\bm{\hat{r}}\right) \cdot d|\bm{r}|\bm{\hat{r}}\\
     U &= -\frac{q_1 q_2}{4\pi\epsilon_0} \int_\infty^{|\bm{r}|} \frac{1}{|\bm{r}|^2} d|\bm{r}|\\
     U &= -\frac{q_1 q_2}{4\pi\epsilon_0} \left[-\frac{1}{|\bm{r}|}\right]_\infty^{|\bm{r}|}\\
     U &= \frac{1}{4\pi \epsilon_0}\frac{q_1 q_2}{|\bm{r}|}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 This is written in the formula booklet with $r = |\bm{r}|$ and Coulomb's constant $k$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     U = k\frac{q_1 q_2}{r}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 This implies the electric potential energy is a scalar quantity approaching $0$ at infinite
@@ -137,10 +137,10 @@ The electric potential ($V_e$) is the electric potential energy of a point charg
 displacement $\bm{r}$ per unit charge:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     V_e &= \frac{U}{q_2} = \frac{1}{4\pi \epsilon_0}\frac{q_1 q_2}{|\bm{r}|q_2} = \frac{1}{4\pi \epsilon_0}\frac{Q}{|\bm{r}|}\\
-    V_e &= \frac{kQ}{r}, \quad r = |\bm{r}|
-\end{aligned}
+    V_e &= \frac`\{kQ}`{r}, \quad r = |\bm{r}|
+\end`\{aligned}`
 $$
 
 ### Electric Field Strength
@@ -149,25 +149,25 @@ The electric field strength ($\bm{E}$) is the force ($\bm{F_{12}}$) per unit cha
 point charge ($q_2$) at a displacement ($\bm{r_{12}}$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
   \bm{E} = \frac{\bm{F_{12}}}{q_2} = \frac{1}{4\pi \epsilon_0} \frac{q_1 q_2}{|\bm{r}|^2}\bm{\hat{r_{12}}}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 This is written in the formula booklet with $d = |\bm{r}|$:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     E = \frac{F}{q} = k\frac{Q}{d^2}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 The electric field strength is also the negative gradient of the electric potential ($V_e$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     E = -\nabla V_e
-\end{aligned}
+\end`\{aligned}`
 $$
 
 Since spherical symmetry implies the gradient of electric potential are equal for equal magnitude of
@@ -175,7 +175,7 @@ displacement $\bm{r}$:
 
 $$
     \nabla V_e = \frac{dV_e}{d|\bm{r}|}\bm{\hat{r}}\\
-    \frac{dV_e}{d|\bm{r}|} = \frac{d}{d|\bm{r}|}\left(\frac{kQ}{|\bm{r}|}\right) = -k\frac{Q}{|\bm{r}|^2}\\
+    \frac{dV_e}{d|\bm{r}|} = \frac{d}{d|\bm{r}|}\left(\frac`\{kQ}`{|\bm{r}|}\right) = -k\frac{Q}{|\bm{r}|^2}\\
     E = k \frac{Q}{|\bm{r}|^2}\bm{\hat{r}}
 $$
 
@@ -183,9 +183,9 @@ When expressing the electric field strength with the average electric potential 
 expressing $r = |\bm{r}|$, the magnitude of $E$ is:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     E = -\frac{\Delta V_e}{\Delta r}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ### Graphical Presentation of Electric Field
@@ -207,13 +207,13 @@ calculation for elementary charge by ignoring buoyance force, where the electros
 ($\bm{F_e}$) equal to the opposite of gravitational force ($\bm{F_g}$):
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
     \bm{F_g} &= -\bm{F_e}\\
     \bm{F_g} &= m\bm{g}\\
     -\bm{F_e} &= -qE = -q\left(-\frac{V_e}{\bm{d}}\right)\\
     m\bm{g} &= q\frac{V_e}{\bm{d}}\\
     q &= \frac{m\bm{g}\bm{d}}{V_e}
-\end{aligned}
+\end`\{aligned}`
 $$
 
 ---
@@ -264,7 +264,7 @@ positive plate (opposite to the field direction, since the electron has negative
 The electric field strength at a distance $r$ from a point charge $Q$ is:
 
 $$
-E = \frac{kQ}{r^2} = \frac{Q}{4\pi\epsilon_0 r^2}
+E = \frac`\{kQ}`{r^2} = \frac{Q}{4\pi\epsilon_0 r^2}
 $$
 
 Direction: Radially outward from a positive charge, radially inward toward a negative charge.
@@ -311,7 +311,7 @@ point. It is a **scalar** quantity.
 For a point charge $Q$:
 
 $$
-V_e = \frac{kQ}{r}
+V_e = \frac`\{kQ}`{r}
 $$
 
 Key properties:
@@ -529,7 +529,7 @@ the electric potential energy of the system?
 **a) Electric field strength:**
 
 $$
-E = \frac{kQ}{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{(0.10)^2} = \frac{44.95}{0.01} = 4.50 \times 10^3 \mathrm{ V/m{}
+E = \frac`\{kQ}`{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{(0.10)^2} = \frac{44.95}{0.01} = 4.50 \times 10^3 \mathrm{ V/m{}
 $$
 
 Direction: radially outward from $Q$ (away from the positive charge).
@@ -537,7 +537,7 @@ Direction: radially outward from $Q$ (away from the positive charge).
 **b) Electric potential:**
 
 $$
-V_e = \frac{kQ}{r} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{0.10} = \frac{44.95}{0.10} = 450 \mathrm{ V{}
+V_e = \frac`\{kQ}`{r} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{0.10} = \frac{44.95}{0.10} = 450 \mathrm{ V{}
 $$
 
 **c) Electric potential energy:**

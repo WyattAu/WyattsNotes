@@ -659,7 +659,7 @@ $$\hat{k}^* = \left(\frac{s}{n + g + \delta}\right)^{\frac{1}{1-\alpha}}$$
 
 **Key result: in the steady state with technological progress, output per EFFECTIVE worker is constant, but output per ACTUAL worker grows at rate $g$.**
 
-$$g_y = g \quad \text{'\{'}(long-run growth rate of output per capita){'\}'}$$
+$$g_y = g \quad \text{(long-run growth rate of output per capita){}$$
 
 This is the most important prediction of the Solow model: long-run per capita growth is determined solely by the rate of technological progress, not by the savings rate or population growth. Policy can affect the LEVEL of income but not its long-run GROWTH RATE.
 
@@ -943,7 +943,7 @@ The trade-led strategy generates 5.2% higher GDP after 10 years than the aid-led
 
 **Example.** An economy has a production function $Y = K^{0.3}L^{0.7}$ and a savings rate $s = f(Y)$ that depends on income:
 
-$$s(Y) = \begin{cases} 0.05 & \text{'\{'}if {'\}'} Y < Y^* \\ 0.20 & \text{'\{'}if {'\}'} Y \geq Y^* \end{cases}$$
+$$s(Y) = \begin{cases} 0.05 & \text{if {} Y < Y^* \\ 0.20 & \text{if {} Y \geq Y^* \end{cases}$$
 
 where $Y^* = 100$ is a "threshold" income above which households can afford to save more (they are above subsistence).
 

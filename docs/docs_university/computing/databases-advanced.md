@@ -19,11 +19,11 @@ Beyond the basic operations (selection, projection, join, etc.), extended relati
 
 **Grouping and aggregation:** $\gamma_{F}(R)$ where $F$ is a list of aggregate functions and grouping attributes.
 
-$$\gamma_{\text{'\{'}dept{'\}'}, \text{'\{'}AVG(salary){'\}'} \to \text{'\{'}avg\_sal{'\}'}}(\text{'\{'}Employee{'\}'})$$
+$$\gamma_{\text{dept{}, \text{AVG(salary){} \to \text{avg\_sal{}}(\text{Employee{})$$
 
 **Generalised projection:** Allows arithmetic expressions in the projection list.
 
-$$\pi_{\text{'\{'}name{'\}'}, \text{'\{'}salary{'\}'} \times 12 \to \text{'\{'}annual{'\}'}}(\text{'\{'}Employee{'\}'})$$
+$$\pi_{\text{name{}, \text{salary{} \times 12 \to \text{annual{}}(\text{Employee{})$$
 
 **Outer join:** Preserves unmatched tuples from one or both relations.
 
@@ -53,24 +53,24 @@ where $A$ is the set of attributes of $R$ not in $S$.
 Find students who have taken **all** courses offered by the CS department.
 
 $R$ = (student, course) pairs from Enrolment.
-$S$ = courses offered by CS department: $\pi_{\text{'\{'}course{'\}'}}(\sigma_{\text{'\{'}dept{'\}'}=\text{'\{'}'CS'{'\}'}}(\text{'\{'}Course{'\}'}))$.
+$S$ = courses offered by CS department: $\pi_{\text{course{}}(\sigma_{\text{dept{}=\text{'CS'{}}(\text{Course{}))$.
 
 $R \div S$ gives the students enrolled in every CS course.
 
 Example:
-$R = \{(\text{'\{'}Alice{'\}'}, \text{'\{'}CS101{'\}'}), (\text{'\{'}Alice{'\}'}, \text{'\{'}CS201{'\}'}), (\text{'\{'}Bob{'\}'}, \text{'\{'}CS101{'\}'}), (\text{'\{'}Carol{'\}'}, \text{'\{'}CS101{'\}'}), (\text{'\{'}Carol{'\}'}, \text{'\{'}CS201{'\}'})\}$
+$R = \{(\text{Alice{}, \text{CS101{}), (\text{Alice{}, \text{CS201{}), (\text{Bob{}, \text{CS101{}), (\text{Carol{}, \text{CS101{}), (\text{Carol{}, \text{CS201{})\}$
 
-$S = \{\text{'\{'}CS101{'\}'}, \text{'\{'}CS201{'\}'}\}$
+$S = \{\text{CS101{}, \text{CS201{}\}$
 
-$\pi_A(R) = \{\text{'\{'}Alice{'\}'}, \text{'\{'}Bob{'\}'}, \text{'\{'}Carol{'\}'}\}$
+$\pi_A(R) = \{\text{Alice{}, \text{Bob{}, \text{Carol{}\}$
 
-$\pi_A(R) \times S = \{(\text{'\{'}Alice{'\}'}, \text{'\{'}CS101{'\}'}), (\text{'\{'}Alice{'\}'}, \text{'\{'}CS201{'\}'}), (\text{'\{'}Bob{'\}'}, \text{'\{'}CS101{'\}'}), (\text{'\{'}Bob{'\}'}, \text{'\{'}CS201{'\}'}), (\text{'\{'}Carol{'\}'}, \text{'\{'}CS101{'\}'}), (\text{'\{'}Carol{'\}'}, \text{'\{'}CS201{'\}'})\}$
+$\pi_A(R) \times S = \{(\text{Alice{}, \text{CS101{}), (\text{Alice{}, \text{CS201{}), (\text{Bob{}, \text{CS101{}), (\text{Bob{}, \text{CS201{}), (\text{Carol{}, \text{CS101{}), (\text{Carol{}, \text{CS201{})\}$
 
-$\pi_A(R) \times S - R = \{(\text{'\{'}Bob{'\}'}, \text{'\{'}CS201{'\}'})\}$
+$\pi_A(R) \times S - R = \{(\text{Bob{}, \text{CS201{})\}$
 
-$\pi_A(\pi_A(R) \times S - R) = \{\text{'\{'}Bob{'\}'}\}$
+$\pi_A(\pi_A(R) \times S - R) = \{\text{Bob{}\}$
 
-$R \div S = \{\text{'\{'}Alice{'\}'}, \text{'\{'}Carol{'\}'}\} - \{\text{'\{'}Bob{'\}'}\} = \{\text{'\{'}Alice{'\}'}, \text{'\{'}Carol{'\}'}\}$
+$R \div S = \{\text{Alice{}, \text{Carol{}\} - \{\text{Bob{}\} = \{\text{Alice{}, \text{Carol{}\}$
 
 Alice and Carol have taken all CS courses. Bob has not taken CS201.
 </details>
@@ -115,7 +115,7 @@ FUNCTION(args) OVER (
 
 **Frame specification:**
 
-$$\text{'\{'}ROWS | RANGE BETWEEN frame_start AND frame_end{'\}'}$$
+$$\text{ROWS | RANGE BETWEEN frame_start AND frame_end{}$$
 
 | Frame unit | Meaning |
 |-----------|---------|
@@ -263,8 +263,8 @@ But the JD $\bowtie\{(course, teacher), (course, textbook)\}$ holds: the relatio
 Neither (course, teacher) nor (course, textbook) is a superkey. Therefore, the relation violates 5NF.
 
 **Decomposition:**
-- $R_1$(course, teacher): $\{(\text{'\{'}CS101{'\}'}, \text{'\{'}Smith{'\}'}), (\text{'\{'}CS101{'\}'}, \text{'\{'}Jones{'\}'})\}$
-- $R_2$(course, textbook): $\{(\text{'\{'}CS101{'\}'}, \text{'\{'}Knuth{'\}'}), (\text{'\{'}CS101{'\}'}, \text{'\{'}Cormen{'\}'})\}$
+- $R_1$(course, teacher): $\{(\text{CS101{}, \text{Smith{}), (\text{CS101{}, \text{Jones{})\}$
+- $R_2$(course, textbook): $\{(\text{CS101{}, \text{Knuth{}), (\text{CS101{}, \text{Cormen{})\}$
 
 This avoids the redundancy: adding a new teacher only requires adding one row to $R_1$, not $n$ rows (one per textbook).
 </details>
@@ -322,8 +322,8 @@ The optimiser estimates the cost of each query plan and chooses the cheapest one
 |-----------|------|-----------|
 | Nested-loop | $B_r + B_r \cdot B_s$ | Small relations, no index |
 | Block nested-loop | $B_r + \lceil B_r / M - 1 \rceil \cdot B_s$ | $M$ blocks of memory |
-| Index nested-loop | $B_r + R_r \cdot (\text{'\{'}cost of index lookup on {'\}'} S)$ | Index on join attribute of $S$ |
-| Sort-merge | $B_r + B_s + \text{'\{'}sort cost{'\}'}$ | Both relations large |
+| Index nested-loop | $B_r + R_r \cdot (\text{cost of index lookup on {} S)$ | Index on join attribute of $S$ |
+| Sort-merge | $B_r + B_s + \text{sort cost{}$ | Both relations large |
 | Hash join | $3(B_r + B_s)$ | Equi-join, no order required |
 
 Where $M$ is the number of available memory blocks.
@@ -347,7 +347,7 @@ $R$: 2000 blocks, 100,000 records. $S$: 500 blocks, 25,000 records. Memory: 52 b
 
 Sort-merge (7000) is slightly better than hash join (7500) here, but both are far superior to block nested-loop (22,000).
 
-If $R$ had an index on $A$: **Index nested-loop:** $B_s + R_s \times \text{'\{'}cost per lookup{'\}'}$. If the index gives $O(1)$ lookup: $500 + 25000 \times 1 = 25500$ (worse, due to random I/O). If clustered index: $500 + 25000/100 = 750$ (much better, since each lookup reads a page with 100 matching records on average).
+If $R$ had an index on $A$: **Index nested-loop:** $B_s + R_s \times \text{cost per lookup{}$. If the index gives $O(1)$ lookup: $500 + 25000 \times 1 = 25500$ (worse, due to random I/O). If clustered index: $500 + 25000/100 = 750$ (much better, since each lookup reads a page with 100 matching records on average).
 </details>
 
 ### 4.3 The System R Optimiser
@@ -733,8 +733,8 @@ A comprehensive summary of anomalies by isolation level:
 
 | Type | Check | Cost |
 |------|-------|------|
-| Backward validation | Check against committed transactions that finished after our read phase started | $O(\text{'\{'}committed since start{'\}'})$ |
-| Forward validation | Check against active transactions that started before our validation phase | $O(\text{'\{'}currently active{'\}'})$ |
+| Backward validation | Check against committed transactions that finished after our read phase started | $O(\text{committed since start{})$ |
+| Forward validation | Check against active transactions that started before our validation phase | $O(\text{currently active{})$ |
 
 **Theorem 12.1.** OCC is serialisable if the validation phase ensures that for every pair of overlapping transactions (reading/writing the same data), at most one commits.
 
@@ -748,7 +748,7 @@ A comprehensive summary of anomalies by isolation level:
 
 | Strategy | Description | Hotspot risk |
 |----------|-------------|-------------|
-| Hash partitioning | $f(\text{'\{'}key{'\}'}) \mod n$ | Low |
+| Hash partitioning | $f(\text{key{}) \mod n$ | Low |
 | Range partitioning | Key ranges assigned to nodes | High (skewed ranges) |
 | Directory-based | Lookup service maps keys to nodes | Low (directory is a bottleneck) |
 
@@ -780,7 +780,7 @@ A comprehensive summary of anomalies by isolation level:
 
 **Consistency model hierarchy:**
 
-$$\text{'\{'}Linearisable{'\}'} \subset \text{'\{'}Sequential{'\}'} \subset \text{'\{'}Causal{'\}'} \subset \text{'\{'}Eventual{'\}'}$$
+$$\text{Linearisable{} \subset \text{Sequential{} \subset \text{Causal{} \subset \text{Eventual{}$$
 
 <details>
 <summary>Worked Example: Consistency Anomalies</summary>
@@ -811,13 +811,13 @@ If not: use external merge sort.
 
 **External merge sort cost for relation $R$ with $B$ blocks and $M$ memory blocks:**
 
-$$\text{'\{'}Sort{'\}'}(R) = 2B \left(1 + \lceil \log_{M-1} \lceil B / M \rceil \rceil \right)$$
+$$\text{Sort{}(R) = 2B \left(1 + \lceil \log_{M-1} \lceil B / M \rceil \rceil \right)$$
 
 **Phase 2: Merge.** Both sorted relations are scanned simultaneously, outputting matching pairs.
 
 **Merge cost:** $B_r + B_s$ (one pass over each sorted relation).
 
-**Total sort-merge join cost:** $\text{'\{'}Sort{'\}'}(R) + \text{'\{'}Sort{'\}'}(S) + B_r + B_s$.
+**Total sort-merge join cost:** $\text{Sort{}(R) + \text{Sort{}(S) + B_r + B_s$.
 
 ### 15.2 Hash Join Details
 
@@ -838,14 +838,14 @@ $$\text{'\{'}Sort{'\}'}(R) = 2B \left(1 + \lceil \log_{M-1} \lceil B / M \rceil 
 
 For each tuple in $R$, look up matching tuples in $S$ using an index on the join attribute.
 
-$$\text{'\{'}Cost{'\}'} = B_r + R_r \cdot (\text{'\{'}cost per probe{'\}'})$$
+$$\text{Cost{} = B_r + R_r \cdot (\text{cost per probe{})$$
 
 Where $R_r$ is the number of records in $R$ and the cost per probe depends on the index:
 
 | Index type | Cost per probe |
 |-----------|---------------|
-| B+ tree (clustered) | $\lceil h + \text{'\{'}matching records{'\}'} / \text{'\{'}fan-out{'\}'} \rceil$ |
-| B+ tree (unclustered) | $\lceil h + \text{'\{'}matching records{'\}'} \rceil$ |
+| B+ tree (clustered) | $\lceil h + \text{matching records{} / \text{fan-out{} \rceil$ |
+| B+ tree (unclustered) | $\lceil h + \text{matching records{} \rceil$ |
 | Hash index | $\approx 1.2$ (average) |
 
 <details>
@@ -859,7 +859,7 @@ $R$: 10,000 blocks, 500,000 records. $S$: 5,000 blocks, 250,000 records. Memory:
 
 **Hash join:** $3(10000 + 5000) = 45,000$ blocks. Check: need $M \geq \sqrt{15000} \approx 122$. We have 101 < 122. Need graceful hash join. Cost: $3 \times 15000 = 45,000$ plus partition overhead. Still best.
 
-**Index nested-loop:** $B_r + R_r \times \text{'\{'}probe cost{'\}'} = 10000 + 500000 \times (3 + \text{'\{'}matching records per probe{'\}'} / 100)$. If the average matching records per probe is 2 (500000/250000 = 2): cost = $10000 + 500000 \times 3.02 = 1,520,000$ blocks. Much worse due to random I/O.
+**Index nested-loop:** $B_r + R_r \times \text{probe cost{} = 10000 + 500000 \times (3 + \text{matching records per probe{} / 100)$. If the average matching records per probe is 2 (500000/250000 = 2): cost = $10000 + 500000 \times 3.02 = 1,520,000$ blocks. Much worse due to random I/O.
 
 Ranking: Hash join (45K) < Sort-merge (75K) < Block nested-loop (510K) < Index nested-loop (1.5M).
 </details>

@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-A battery has EMF $\varepsilon = 12.0\,\text{'\{'}V{'\}'}$ and internal resistance $r = 2.0\,\Omega$. It is connected to a variable external resistance $R$.
+A battery has EMF $\varepsilon = 12.0\,\text{V{}$ and internal resistance $r = 2.0\,\Omega$. It is connected to a variable external resistance $R$.
 
 (a) Derive an expression for the power delivered to $R$ and find the value of $R$ that maximises this power.
 
@@ -36,17 +36,17 @@ Maximum power transfer occurs when the load resistance equals the internal resis
 
 (b) At $R = r = 2.0\,\Omega$:
 
-$$I = 12.0/4.0 = 3.0\,\text{'\{'}A{'\}'}$$
-$$P_{\max} = I^2R = 9.0 \times 2.0 = 18.0\,\text{'\{'}W{'\}'}$$
+$$I = 12.0/4.0 = 3.0\,\text{A{}$$
+$$P_{\max} = I^2R = 9.0 \times 2.0 = 18.0\,\text{W{}$$
 
-Efficiency $= P_R/P_{\text{'\{'}total{'\}'}} = I^2R/(I^2(R + r)) = R/(R + r) = 2.0/4.0 = 50\%$
+Efficiency $= P_R/P_{\text{total{}} = I^2R/(I^2(R + r)) = R/(R + r) = 2.0/4.0 = 50\%$
 
 Half the power is dissipated in the internal resistance.
 
 (c) At $R = 10\,\Omega$:
 
-$$I = 12.0/12.0 = 1.0\,\text{'\{'}A{'\}'}$$
-$$P = 1.0 \times 10 = 10.0\,\text{'\{'}W{'\}'}$$
+$$I = 12.0/12.0 = 1.0\,\text{A{}$$
+$$P = 1.0 \times 10 = 10.0\,\text{W{}$$
 
 Efficiency $= 10.0/12.0 = 83.3\%$
 
@@ -57,27 +57,27 @@ Higher efficiency but lower power than the matched condition. This is the fundam
 
 **Question:**
 
-A potential divider consists of two resistors $R_1 = 10\,\text{'\{'}k{'\}'}\Omega$ and $R_2 = 20\,\text{'\{'}k{'\}'}\Omega$ in series across a $15.0\,\text{'\{'}V{'\}'}$ supply with negligible internal resistance. The output is taken across $R_2$.
+A potential divider consists of two resistors $R_1 = 10\,\text{k{}\Omega$ and $R_2 = 20\,\text{k{}\Omega$ in series across a $15.0\,\text{V{}$ supply with negligible internal resistance. The output is taken across $R_2$.
 
 (a) Calculate the output voltage with no load connected.
 
-(b) A load resistor $R_L = 10\,\text{'\{'}k{'\}'}\Omega$ is connected across $R_2$. Calculate the new output voltage.
+(b) A load resistor $R_L = 10\,\text{k{}\Omega$ is connected across $R_2$. Calculate the new output voltage.
 
 (c) What value of $R_L$ would reduce the output voltage to $50\%$ of the unloaded value? Comment on your answer.
 
 **Solution:**
 
-(a) Unloaded: $V_{\text{'\{'}out{'\}'}} = V_{\text{'\{'}in{'\}'}} \times \frac{R_2}{R_1 + R_2} = 15.0 \times \frac{20}{30} = 10.0\,\text{'\{'}V{'\}'}$
+(a) Unloaded: $V_{\text{out{}} = V_{\text{in{}} \times \frac{R_2}{R_1 + R_2} = 15.0 \times \frac{20}{30} = 10.0\,\text{V{}$
 
 (b) With load, $R_2$ and $R_L$ are in parallel:
 
-$$R_{\text{'\{'}parallel{'\}'}} = \frac{R_2 R_L}{R_2 + R_L} = \frac{20 \times 10}{30} = 6.667\,\text{'\{'}k{'\}'}\Omega$$
+$$R_{\text{parallel{}} = \frac{R_2 R_L}{R_2 + R_L} = \frac{20 \times 10}{30} = 6.667\,\text{k{}\Omega$$
 
-$$V_{\text{'\{'}out{'\}'}} = 15.0 \times \frac{6.667}{10 + 6.667} = 15.0 \times \frac{6.667}{16.667} = 6.00\,\text{'\{'}V{'\}'}$$
+$$V_{\text{out{}} = 15.0 \times \frac{6.667}{10 + 6.667} = 15.0 \times \frac{6.667}{16.667} = 6.00\,\text{V{}$$
 
-The output voltage drops from $10.0\,\text{'\{'}V{'\}'}$ to $6.0\,\text{'\{'}V{'\}'}$ -- a $40\%$ reduction. This "loading effect" occurs because the load draws current, changing the effective resistance of the divider.
+The output voltage drops from $10.0\,\text{V{}$ to $6.0\,\text{V{}$ -- a $40\%$ reduction. This "loading effect" occurs because the load draws current, changing the effective resistance of the divider.
 
-(c) We need $V_{\text{'\{'}out{'\}'}} = 5.0\,\text{'\{'}V{'\}'}$ (50% of $10.0\,\text{'\{'}V{'\}'}$):
+(c) We need $V_{\text{out{}} = 5.0\,\text{V{}$ (50% of $10.0\,\text{V{}$):
 
 $$5.0 = 15.0 \times \frac{R_2 R_L/(R_2 + R_L)}{R_1 + R_2 R_L/(R_2 + R_L)}$$
 $$5.0 = 15.0 \times \frac{20 R_L/(20 + R_L)}{10 + 20 R_L/(20 + R_L)}$$
@@ -86,7 +86,7 @@ $$\frac{1}{3} = \frac{20 R_L}{10(20 + R_L) + 20 R_L} = \frac{20 R_L}{200 + 10 R_
 
 $$200 + 30 R_L = 60 R_L$$
 $$200 = 30 R_L$$
-$$R_L = 6.67\,\text{'\{'}k{'\}'}\Omega$$
+$$R_L = 6.67\,\text{k{}\Omega$$
 
 When the load resistance equals the parallel combination resistance, the output drops to half. This demonstrates why potential dividers should have $R_L \gg R_2$ to avoid loading effects.
 
@@ -95,7 +95,7 @@ When the load resistance equals the parallel combination resistance, the output 
 
 **Question:**
 
-Two cells with EMFs $\varepsilon_1 = 10.0\,\text{'\{'}V{'\}'}$ (internal resistance $r_1 = 1.0\,\Omega$) and $\varepsilon_2 = 6.0\,\text{'\{'}V{'\}'}$ (internal resistance $r_2 = 2.0\,\Omega$) are connected in parallel across a resistor $R = 5.0\,\Omega$. The positive terminals are connected together.
+Two cells with EMFs $\varepsilon_1 = 10.0\,\text{V{}$ (internal resistance $r_1 = 1.0\,\Omega$) and $\varepsilon_2 = 6.0\,\text{V{}$ (internal resistance $r_2 = 2.0\,\Omega$) are connected in parallel across a resistor $R = 5.0\,\Omega$. The positive terminals are connected together.
 
 (a) Calculate the current through each cell and through $R$.
 
@@ -125,28 +125,28 @@ Substituting into KCL: $(10.0 - 5I_R) + (3.0 - 2.5I_R) = I_R$
 
 $$13.0 - 7.5I_R = I_R$$
 $$13.0 = 8.5I_R$$
-$$I_R = 1.529\,\text{'\{'}A{'\}'}$$
+$$I_R = 1.529\,\text{A{}$$
 
-$$I_1 = 10.0 - 5(1.529) = 10.0 - 7.647 = 2.353\,\text{'\{'}A{'\}'}$$
-$$I_2 = 3.0 - 2.5(1.529) = 3.0 - 3.824 = -0.824\,\text{'\{'}A{'\}'}$$
+$$I_1 = 10.0 - 5(1.529) = 10.0 - 7.647 = 2.353\,\text{A{}$$
+$$I_2 = 3.0 - 2.5(1.529) = 3.0 - 3.824 = -0.824\,\text{A{}$$
 
 The negative sign for $I_2$ means $\varepsilon_2$ is being **charged** by $\varepsilon_1$. Current flows into the positive terminal of $\varepsilon_2$.
 
-(b) Terminal p.d. across $\varepsilon_1$: $V_1 = \varepsilon_1 - I_1 r_1 = 10.0 - 2.353 = 7.647\,\text{'\{'}V{'\}'}$
+(b) Terminal p.d. across $\varepsilon_1$: $V_1 = \varepsilon_1 - I_1 r_1 = 10.0 - 2.353 = 7.647\,\text{V{}$
 
-Terminal p.d. across $\varepsilon_2$: $V_2 = \varepsilon_2 - I_2 r_2 = 6.0 - (-0.824)(2.0) = 6.0 + 1.647 = 7.647\,\text{'\{'}V{'\}'}$
+Terminal p.d. across $\varepsilon_2$: $V_2 = \varepsilon_2 - I_2 r_2 = 6.0 - (-0.824)(2.0) = 6.0 + 1.647 = 7.647\,\text{V{}$
 
 Both terminal p.d.s are equal, as expected since they are connected in parallel.
 
-(c) Power from $\varepsilon_1$: $P_1 = \varepsilon_1 I_1 = 10.0 \times 2.353 = 23.53\,\text{'\{'}W{'\}'}$
+(c) Power from $\varepsilon_1$: $P_1 = \varepsilon_1 I_1 = 10.0 \times 2.353 = 23.53\,\text{W{}$
 
-Power absorbed by $\varepsilon_2$: $P_2 = \varepsilon_2 I_2 = 6.0 \times 0.824 = 4.94\,\text{'\{'}W{'\}'}$ (charging)
+Power absorbed by $\varepsilon_2$: $P_2 = \varepsilon_2 I_2 = 6.0 \times 0.824 = 4.94\,\text{W{}$ (charging)
 
-Power dissipated in $R$: $P_R = I_R^2 R = (1.529)^2 \times 5.0 = 11.69\,\text{'\{'}W{'\}'}$
+Power dissipated in $R$: $P_R = I_R^2 R = (1.529)^2 \times 5.0 = 11.69\,\text{W{}$
 
-Power dissipated in $r_1$: $I_1^2 r_1 = (2.353)^2 \times 1.0 = 5.54\,\text{'\{'}W{'\}'}$
+Power dissipated in $r_1$: $I_1^2 r_1 = (2.353)^2 \times 1.0 = 5.54\,\text{W{}$
 
-Power dissipated in $r_2$: $I_2^2 r_2 = (0.824)^2 \times 2.0 = 1.36\,\text{'\{'}W{'\}'}$
+Power dissipated in $r_2$: $I_2^2 r_2 = (0.824)^2 \times 2.0 = 1.36\,\text{W{}$
 
 Conservation check: $P_1 = P_R + P_{r1} + P_{r2} + P_2$ (absorbed by $\varepsilon_2$)
 
@@ -158,7 +158,7 @@ $23.53 = 11.69 + 5.54 + 1.36 + 4.94 = 23.53$. Conserved.
 
 **Question:**
 
-A solar panel produces an EMF of $18.0\,\text{'\{'}V{'\}'}$ and has internal resistance $2.0\,\Omega$. It is used to charge a rechargeable battery of EMF $12.0\,\text{'\{'}V{'\}'}$ and internal resistance $1.0\,\Omega$. A capacitor of capacitance $1000\,\mu\text{'\{'}F{'\}'}$ is connected in parallel with the battery to smooth the charging current.
+A solar panel produces an EMF of $18.0\,\text{V{}$ and has internal resistance $2.0\,\Omega$. It is used to charge a rechargeable battery of EMF $12.0\,\text{V{}$ and internal resistance $1.0\,\Omega$. A capacitor of capacitance $1000\,\mu\text{F{}$ is connected in parallel with the battery to smooth the charging current.
 
 (a) Calculate the initial charging current.
 
@@ -170,44 +170,44 @@ A solar panel produces an EMF of $18.0\,\text{'\{'}V{'\}'}$ and has internal res
 
 (a) The capacitor is in parallel with the battery, so the capacitor charges to the battery terminal voltage. The steady-state charging current is determined by the series circuit of solar panel, internal resistances, and battery:
 
-$$I = \frac{\varepsilon_{\text{'\{'}panel{'\}'}} - V_{\text{'\{'}battery terminal{'\}'}}}{r_{\text{'\{'}panel{'\}'}}}$$
+$$I = \frac{\varepsilon_{\text{panel{}} - V_{\text{battery terminal{}}}{r_{\text{panel{}}}$$
 
 In steady state (capacitor fully charged):
 
-$$V_{\text{'\{'}terminal{'\}'}} = \varepsilon_{\text{'\{'}battery{'\}'}} + I \times r_{\text{'\{'}battery{'\}'}}$$
+$$V_{\text{terminal{}} = \varepsilon_{\text{battery{}} + I \times r_{\text{battery{}}$$
 
 $$I = \frac{18.0 - (12.0 + I)}{2.0}$$
 $$2I = 6.0 - I$$
-$$3I = 6.0 \Rightarrow I = 2.0\,\text{'\{'}A{'\}'}$$
+$$3I = 6.0 \Rightarrow I = 2.0\,\text{A{}$$
 
-The steady-state charging current is $2.0\,\text{'\{'}A{'\}'}$. Initially, the uncharged capacitor draws additional transient current, but this decays exponentially.
+The steady-state charging current is $2.0\,\text{A{}$. Initially, the uncharged capacitor draws additional transient current, but this decays exponentially.
 
-(b) Power from panel: $P_{\text{'\{'}panel{'\}'}} = \varepsilon_{\text{'\{'}panel{'\}'}} \times I = 18.0 \times 2.0 = 36.0\,\text{'\{'}W{'\}'}$
+(b) Power from panel: $P_{\text{panel{}} = \varepsilon_{\text{panel{}} \times I = 18.0 \times 2.0 = 36.0\,\text{W{}$
 
-Power to battery: $P_{\text{'\{'}battery{'\}'}} = \varepsilon_{\text{'\{'}battery{'\}'}} \times I = 12.0 \times 2.0 = 24.0\,\text{'\{'}W{'\}'}$
+Power to battery: $P_{\text{battery{}} = \varepsilon_{\text{battery{}} \times I = 12.0 \times 2.0 = 24.0\,\text{W{}$
 
-Power dissipated in internal resistances: $P_{\text{'\{'}loss{'\}'}} = I^2(r_1 + r_2) = 4.0 \times 3.0 = 12.0\,\text{'\{'}W{'\}'}$
+Power dissipated in internal resistances: $P_{\text{loss{}} = I^2(r_1 + r_2) = 4.0 \times 3.0 = 12.0\,\text{W{}$
 
 Check: $36.0 = 24.0 + 12.0$. Consistent.
 
-(c) The capacitor charges through the internal resistance of the battery: $\tau = R_{\text{'\{'}battery{'\}'}} \times C = 1.0 \times 1000 \times 10^{-6} = 1.0 \times 10^{-3}\,\text{'\{'}s{'\}'} = 1.0\,\text{'\{'}ms{'\}'}$
+(c) The capacitor charges through the internal resistance of the battery: $\tau = R_{\text{battery{}} \times C = 1.0 \times 1000 \times 10^{-6} = 1.0 \times 10^{-3}\,\text{s{} = 1.0\,\text{ms{}$
 
-The capacitor charges to the battery terminal voltage: $V_C = 12.0 + 2.0 \times 1.0 = 14.0\,\text{'\{'}V{'\}'}$
+The capacitor charges to the battery terminal voltage: $V_C = 12.0 + 2.0 \times 1.0 = 14.0\,\text{V{}$
 
-Energy stored: $E = \frac{1}{2}CV^2 = 0.5 \times 10^{-3} \times 196 = 0.098\,\text{'\{'}J{'\}'}$
+Energy stored: $E = \frac{1}{2}CV^2 = 0.5 \times 10^{-3} \times 196 = 0.098\,\text{J{}$
 
 ---
 ### IT-2: Thevenin Equivalent Circuit Analysis (with Current and Resistance)
 
 **Question:**
 
-A circuit consists of a $24\,\text{'\{'}V{'\}'}$ supply (internal resistance $1\,\Omega$) in series with $R_1 = 5\,\Omega$, which is then connected to a parallel combination of $R_2 = 10\,\Omega$ and $R_3 = 15\,\Omega$.
+A circuit consists of a $24\,\text{V{}$ supply (internal resistance $1\,\Omega$) in series with $R_1 = 5\,\Omega$, which is then connected to a parallel combination of $R_2 = 10\,\Omega$ and $R_3 = 15\,\Omega$.
 
 (a) Find the Thevenin equivalent circuit across $R_3$.
 
 (b) Using the Thevenin equivalent, calculate the current through $R_3$.
 
-(c) $R_3$ is replaced by a variable resistor. Calculate the range of values of $R_3$ for which the current through it exceeds $0.8\,\text{'\{'}A{'\}'}$.
+(c) $R_3$ is replaced by a variable resistor. Calculate the range of values of $R_3$ for which the current through it exceeds $0.8\,\text{A{}$.
 
 **Solution:**
 
@@ -215,25 +215,25 @@ A circuit consists of a $24\,\text{'\{'}V{'\}'}$ supply (internal resistance $1\
 
 The current through $R_1$ and $R_2$ in series (with $R_3$ removed):
 
-$$I = \frac{24}{1 + 5 + 10} = \frac{24}{16} = 1.5\,\text{'\{'}A{'\}'}$$
+$$I = \frac{24}{1 + 5 + 10} = \frac{24}{16} = 1.5\,\text{A{}$$
 
-Open-circuit voltage: $V_{\text{'\{'}OC{'\}'}} = 24 - 1.5(1 + 5) = 24 - 9 = 15\,\text{'\{'}V{'\}'}$
+Open-circuit voltage: $V_{\text{OC{}} = 24 - 1.5(1 + 5) = 24 - 9 = 15\,\text{V{}$
 
-Or: $V_{\text{'\{'}OC{'\}'}} = I \times R_2 = 1.5 \times 10 = 15\,\text{'\{'}V{'\}'}$. Consistent.
+Or: $V_{\text{OC{}} = I \times R_2 = 1.5 \times 10 = 15\,\text{V{}$. Consistent.
 
-Internal resistance (replace the $24\,\text{'\{'}V{'\}'}$ source with a short circuit, and remove $R_3$):
+Internal resistance (replace the $24\,\text{V{}$ source with a short circuit, and remove $R_3$):
 
 $r = 1\,\Omega$ and $R_1 = 5\,\Omega$ are in series $= 6\,\Omega$. This combination is in parallel with $R_2 = 10\,\Omega$.
 
-$$R_{\text{'\{'}Th{'\}'}} = \frac{6 \times 10}{6 + 10} = \frac{60}{16} = 3.75\,\Omega$$
+$$R_{\text{Th{}} = \frac{6 \times 10}{6 + 10} = \frac{60}{16} = 3.75\,\Omega$$
 
-Thevenin equivalent: $V_{\text{'\{'}Th{'\}'}} = 15\,\text{'\{'}V{'\}'}$, $R_{\text{'\{'}Th{'\}'}} = 3.75\,\Omega$.
+Thevenin equivalent: $V_{\text{Th{}} = 15\,\text{V{}$, $R_{\text{Th{}} = 3.75\,\Omega$.
 
 (b) Current through $R_3$:
 
-$$I_3 = \frac{V_{\text{'\{'}Th{'\}'}}}{R_{\text{'\{'}Th{'\}'}} + R_3} = \frac{15}{3.75 + 15} = \frac{15}{18.75} = 0.800\,\text{'\{'}A{'\}'}$$
+$$I_3 = \frac{V_{\text{Th{}}}{R_{\text{Th{}} + R_3} = \frac{15}{3.75 + 15} = \frac{15}{18.75} = 0.800\,\text{A{}$$
 
-(c) We need $I_3 \gt 0.8\,\text{'\{'}A{'\}'}$:
+(c) We need $I_3 \gt 0.8\,\text{A{}$:
 
 $$\frac{15}{3.75 + R_3} \gt 0.8$$
 $$15 \gt 0.8(3.75 + R_3)$$
@@ -241,14 +241,14 @@ $$18.75 \gt 3.0 + 0.8 R_3$$
 $$0.8 R_3 \lt 15.75$$
 $$R_3 \lt 19.7\,\Omega$$
 
-For any $R_3 \lt 19.7\,\Omega$, the current exceeds $0.8\,\text{'\{'}A{'\}'}$. Since the original $R_3 = 15\,\Omega$ gives exactly $0.8\,\text{'\{'}A{'\}'}$, this is the boundary.
+For any $R_3 \lt 19.7\,\Omega$, the current exceeds $0.8\,\text{A{}$. Since the original $R_3 = 15\,\Omega$ gives exactly $0.8\,\text{A{}$, this is the boundary.
 
 ---
 ### IT-3: Non-Ideal Ammeter and Voltmeter Effects (with Quantities and Units)
 
 **Question:**
 
-A circuit contains a resistor $R = 47\,\Omega$ connected to a $9.0\,\text{'\{'}V{'\}'}$ supply. A student uses a non-ideal ammeter (resistance $R_A = 0.50\,\Omega$) and a non-ideal voltmeter (resistance $R_V = 5000\,\Omega$) to measure the current through and voltage across $R$.
+A circuit contains a resistor $R = 47\,\Omega$ connected to a $9.0\,\text{V{}$ supply. A student uses a non-ideal ammeter (resistance $R_A = 0.50\,\Omega$) and a non-ideal voltmeter (resistance $R_V = 5000\,\Omega$) to measure the current through and voltage across $R$.
 
 (a) Calculate the current and voltage across $R$ if both meters are ideal.
 
@@ -258,11 +258,11 @@ A circuit contains a resistor $R = 47\,\Omega$ connected to a $9.0\,\text{'\{'}V
 
 **Solution:**
 
-(a) Ideal: $I = V/R = 9.0/47 = 0.1915\,\text{'\{'}A{'\}'}$; $V_R = 9.0\,\text{'\{'}V{'\}'}$ (across $R$ alone).
+(a) Ideal: $I = V/R = 9.0/47 = 0.1915\,\text{A{}$; $V_R = 9.0\,\text{V{}$ (across $R$ alone).
 
 (b) With ammeter in series: total resistance $= R + R_A = 47.5\,\Omega$
 
-$$I_{\text{'\{'}measured{'\}'}} = 9.0/47.5 = 0.1895\,\text{'\{'}A{'\}'}$$
+$$I_{\text{measured{}} = 9.0/47.5 = 0.1895\,\text{A{}$$
 
 Percentage error: $\frac{0.1915 - 0.1895}{0.1915} \times 100 = 1.04\%$
 
@@ -272,19 +272,19 @@ The ammeter under-reads by about $1\%$ because it adds its own resistance to the
 
 The voltmeter draws current, reducing the voltage across $R$. With an ideal supply (negligible internal resistance) and only the parallel combination as the load:
 
-$$V_{\text{'\{'}across {'\}'} R \parallel R_V} = 9.0\,\text{'\{'}V{'\}'}$$
+$$V_{\text{across {} R \parallel R_V} = 9.0\,\text{V{}$$
 
-$$I_{\text{'\{'}total{'\}'}} = 9.0/46.56 = 0.1933\,\text{'\{'}A{'\}'}$$
+$$I_{\text{total{}} = 9.0/46.56 = 0.1933\,\text{A{}$$
 
-The voltmeter reads $9.0\,\text{'\{'}V{'\}'}$, which equals the ideal value. This is because with no other resistance in the circuit, the full supply voltage appears across the parallel combination regardless of the voltmeter's loading effect.
+The voltmeter reads $9.0\,\text{V{}$, which equals the ideal value. This is because with no other resistance in the circuit, the full supply voltage appears across the parallel combination regardless of the voltmeter's loading effect.
 
 However, if the supply has internal resistance $r = 5\,\Omega$:
 
-Without voltmeter: $V_R = 9.0 \times 47/(5 + 47) = 9.0 \times 47/52 = 8.134\,\text{'\{'}V{'\}'}$
+Without voltmeter: $V_R = 9.0 \times 47/(5 + 47) = 9.0 \times 47/52 = 8.134\,\text{V{}$
 
 With voltmeter: total load $= 46.56\,\Omega$
 
-$$V_{\text{'\{'}measured{'\}'}} = 9.0 \times 46.56/(5 + 46.56) = 9.0 \times 46.56/51.56 = 8.127\,\text{'\{'}V{'\}'}$$
+$$V_{\text{measured{}} = 9.0 \times 46.56/(5 + 46.56) = 9.0 \times 46.56/51.56 = 8.127\,\text{V{}$$
 
 Percentage error: $(8.134 - 8.127)/8.134 \times 100 = 0.086\%$
 

@@ -83,11 +83,11 @@ Pairwise independence does not imply mutual independence.
 
 $P(A) = P(B) = P(C) = 1/2$.
 
-$P(A \cap B) = 1/4 = P(A)P(B)$. $P(A \cap C) = P(\text{'\{'}first even, sum even{'\}'}) = P(\text{'\{'}second even{'\}'}) = 1/4 = P(A)P(C)$.
+$P(A \cap B) = 1/4 = P(A)P(B)$. $P(A \cap C) = P(\text{first even, sum even{}) = P(\text{second even{}) = 1/4 = P(A)P(C)$.
 
 $P(B \cap C) = 1/4 = P(B)P(C)$. So $A$, $B$, $C$ are pairwise independent.
 
-But $P(A \cap B \cap C) = P(\text{'\{'}both even, sum even{'\}'}) = P(\text{'\{'}both even{'\}'}) = 1/4 \neq 1/8 = P(A)P(B)P(C)$.
+But $P(A \cap B \cap C) = P(\text{both even, sum even{}) = P(\text{both even{}) = 1/4 \neq 1/8 = P(A)P(B)P(C)$.
 
 So $A$, $B$, $C$ are pairwise independent but not mutually independent. $\blacksquare$
 
@@ -348,7 +348,7 @@ $\blacksquare$
 
 **Theorem 5.1 (CDF Method).** If $Y = g(X)$ and $g$ is monotone, then
 
-$$F_Y(y) = P(g(X) \leq y) = \begin{cases} F_X(g^{-1}(y)) & \text{'\{'}if {'\}'} g \text{'\{'} is increasing{'\}'} \\ 1 - F_X(g^{-1}(y)) & \text{'\{'}if {'\}'} g \text{'\{'} is decreasing{'\}'} \end{cases}$$
+$$F_Y(y) = P(g(X) \leq y) = \begin{cases} F_X(g^{-1}(y)) & \text{if {} g \text{ is increasing{} \\ 1 - F_X(g^{-1}(y)) & \text{if {} g \text{ is decreasing{} \end{cases}$$
 
 **Theorem 5.2 (Change of Variables).** If $Y = g(X)$ where $g$ is differentiable and strictly monotone, then
 

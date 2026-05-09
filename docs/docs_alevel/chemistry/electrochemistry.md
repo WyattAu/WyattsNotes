@@ -256,7 +256,7 @@ Overall: $2\mathrm{H{}_2 + \mathrm{O{}_2 \to 2\mathrm{H{}_2\mathrm{O{}$
 **Efficiency calculation:** The maximum theoretical efficiency of a fuel cell is:
 
 $$
-\text{'\{'}Efficiency{'\}'} = \frac{\Delta G^\circ}{\Delta H^\circ} \times 100
+\text{Efficiency{} = \frac{\Delta G^\circ}{\Delta H^\circ} \times 100
 $$
 
 For the $\mathrm{H{}_2/\mathrm{O{}_2$ fuel cell at $298\,\mathrm{K{}$:
@@ -266,7 +266,7 @@ $$
 $$
 
 $$
-\text{'\{'}Efficiency{'\}'} = \frac{474}{572} \times 100 = 83\%
+\text{Efficiency{} = \frac{474}{572} \times 100 = 83\%
 $$
 
 In practice, efficiencies of 40--60% are achieved due to overpotentials (additional voltage required beyond the theoretical value), internal resistance, and fuel crossover.
@@ -644,7 +644,7 @@ $$
 (b) The overall reaction is:
 
 $$
-\mathrm{Cu{}^{2+}(\text{'\{'}concentrated{'\}'}) + \mathrm{Cu{}(s) \rightleftharpoons \mathrm{Cu{}(s) + \mathrm{Cu{}^{2+}(\text{'\{'}dilute{'\}'})
+\mathrm{Cu{}^{2+}(\text{concentrated{}) + \mathrm{Cu{}(s) \rightleftharpoons \mathrm{Cu{}(s) + \mathrm{Cu{}^{2+}(\text{dilute{})
 $$
 
 Using the Nernst equation:

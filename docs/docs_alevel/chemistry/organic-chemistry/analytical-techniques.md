@@ -269,7 +269,7 @@ GC can be used quantitatively to determine the composition of mixtures. The area
 **Worked Example.** A mixture of ethanol and propan-1-ol is analysed by GC. The peak areas are 45,000 (ethanol) and 30,000 (propan-1-ol). If the response factors are equal, calculate the mole ratio.
 
 $$
-\frac{n_\mathrm{ethanol{}}{n_\mathrm{propanol{}} = \frac{\text{'\{'}Area{'\}'}_\mathrm{ethanol{}}{\text{'\{'}Area{'\}'}_\mathrm{propanol{}} = \frac{45000}{30000} = 1.5
+\frac{n_\mathrm{ethanol{}}{n_\mathrm{propanol{}} = \frac{\text{Area{}_\mathrm{ethanol{}}{\text{Area{}_\mathrm{propanol{}} = \frac{45000}{30000} = 1.5
 $$
 
 The mixture is 60% ethanol and 40% propan-1-ol by mole.
@@ -437,7 +437,7 @@ An unknown compound has the following data:
 
 **Analysis:**
 
-1. Degree of unsaturation from $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}_2$: $\text{'\{'}DoU{'\}'} = \frac{2(4) + 2 - 8}{2} = 1$. One double bond or ring.
+1. Degree of unsaturation from $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}_2$: $\text{DoU{} = \frac{2(4) + 2 - 8}{2} = 1$. One double bond or ring.
 2. IR: $1740\,\mathrm{cm{}^{-1}$ = C=O (ester), no broad O--H (not a carboxylic acid).
 3. ${}^{13}\mathrm{C{}$ NMR: peak at 171 = carbonyl carbon (ester). Peak at 60 = $\mathrm{C{}-\mathrm{O{}$ (ester $\mathrm{CH{}_2$). Peaks at 14 and 21 = two types of methyl.
 4. ${}^1\mathrm{H{}$ NMR: quartet at 4.1 (2H) = $\mathrm{CH{}_2$ adjacent to O. Triplet at 1.3 (3H) = $\mathrm{CH{}_3$ adjacent to $\mathrm{CH{}_2$. Singlet at 2.0 (3H) = $\mathrm{CH{}_3$ adjacent to carbonyl.
@@ -549,7 +549,7 @@ Identify the compound and explain each piece of evidence.
 
 **IR:** Strong absorption at $1715\,\mathrm{cm{}^{-1}$ confirms a C=O group. No absorption above $3000\,\mathrm{cm{}^{-1}$ rules out O--H and N--H, eliminating alcohols, carboxylic acids, and amines. The compound is either an aldehyde or a ketone.
 
-**${}^1\mathrm{H{}$ NMR:** Only two signals, both singlets, integrating to 3H each. No aldehyde proton ($\delta\, 9\text{'\{'}--{'\}'}10$), so the compound is a ketone. Two methyl groups in different environments, each adjacent to the carbonyl (hence the low chemical shift of $\delta\, 2.1$ and $\delta\, 2.5$).
+**${}^1\mathrm{H{}$ NMR:** Only two signals, both singlets, integrating to 3H each. No aldehyde proton ($\delta\, 9\text{--{}10$), so the compound is a ketone. Two methyl groups in different environments, each adjacent to the carbonyl (hence the low chemical shift of $\delta\, 2.1$ and $\delta\, 2.5$).
 
 **Mass spectrum:** $M_r = 58$, consistent with $\mathrm{C{}_3\mathrm{H{}_6\mathrm{O{}$. Base peak at $m/z = 43$ corresponds to $\mathrm{CH{}_3\mathrm{CO{}^+$ (acetyl cation), formed by alpha-cleavage adjacent to the carbonyl.
 
@@ -722,7 +722,7 @@ ${}^{13}\mathrm{C{}$ NMR shows one signal for each chemically distinct carbon en
 
 **Rf values in TLC:**
 
-$$R_f = \frac{\text{'\{'}distance travelled by compound{'\}'}}{\text{'\{'}distance travelled by solvent front{'\}'}}$$
+$$R_f = \frac{\text{distance travelled by compound{}}{\text{distance travelled by solvent front{}}$$
 
 $R_f$ values are always between 0 and 1. A compound with a higher $R_f$ is less polar (interacts less with the polar stationary phase and travels further with the non-polar mobile phase).
 

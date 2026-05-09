@@ -71,7 +71,7 @@ $z_0 = 1$, $z_1 = \cos(2\pi/5) + i\sin(2\pi/5)$, $z_2 = \cos(4\pi/5) + i\sin(4\p
 ## Integration Tests
 
 ### IT-1: Complex Numbers and Loci (with Matrices)
-**Question:** (a) Find the locus of points $z$ such that $|z - 3 - i| = 2|z + 1 + 2i|$. Describe the locus geometrically. (b) The transformation $w = \frac{z - i}{z + i}$ maps the upper half of the Argand diagram ($\text{'\{'}Im{'\}'}(z) \gt 0$) to a circle in the $w$-plane. Find the centre and radius of this circle. (c) If $z = x + iy$, express $w = \frac{z - i}{z + i}$ in terms of $x$ and $y$.
+**Question:** (a) Find the locus of points $z$ such that $|z - 3 - i| = 2|z + 1 + 2i|$. Describe the locus geometrically. (b) The transformation $w = \frac{z - i}{z + i}$ maps the upper half of the Argand diagram ($\text{Im{}(z) \gt 0$) to a circle in the $w$-plane. Find the centre and radius of this circle. (c) If $z = x + iy$, express $w = \frac{z - i}{z + i}$ in terms of $x$ and $y$.
 
 **Solution:**
 
@@ -114,7 +114,7 @@ $\cos 3\theta = \cos^3\theta - 3\cos\theta\sin^2\theta$. $\sin 3\theta = 3\cos^2
 $\cos 3\theta = \cos^3\theta - 3\cos\theta(1 - \cos^2\theta) = \cos^3\theta - 3\cos\theta + 3\cos^3\theta = 4\cos^3\theta - 3\cos\theta$.
 
 ### IT-3: Complex Transformations (with Polar Coordinates)
-**Question:** (a) The transformation $w = z^2$ maps the line $\text{'\{'}Re{'\}'}(z) = 1$ in the $z$-plane. Find the image in the $w$-plane. (b) If $z = 2e^{i\pi/6}$, find $w = z^4$ in modulus-argument form. (c) Find the image of the region $|z| \le 2$, $0 \le \arg(z) \le \pi/4$ under the transformation $w = z^3$. (d) A complex number $z$ satisfies $|z - 1 - 2i| = |z - 3 - 4i|$. Show that this represents a straight line and find its equation.
+**Question:** (a) The transformation $w = z^2$ maps the line $\text{Re{}(z) = 1$ in the $z$-plane. Find the image in the $w$-plane. (b) If $z = 2e^{i\pi/6}$, find $w = z^4$ in modulus-argument form. (c) Find the image of the region $|z| \le 2$, $0 \le \arg(z) \le \pi/4$ under the transformation $w = z^3$. (d) A complex number $z$ satisfies $|z - 1 - 2i| = |z - 3 - 4i|$. Show that this represents a straight line and find its equation.
 
 **Solution:**
 

@@ -44,10 +44,10 @@ characterized by a restoring force $F$ directly proportional to the displacement
 equilibrium and directed oppositely to the displacement. This yields Newton's second law:
 
 $$
-\begin{aligned}
+\begin`\{aligned}`
   F \propto -x \\
   F_{\mathrm{net{}} = -kx = m \frac{d^2x}{dt^2},
-\end{aligned}
+\end`\{aligned}`
 $$
 
 where $k > 0$ is the stiffness constant (e.g., spring constant). Rearranged as the equation of
@@ -83,7 +83,7 @@ where $\phi_0$ is the initial phase angle. Velocity $v$ and acceleration $a$ fol
 differentiation:
 
 $$
-v(t) = \frac{dx}{dt} = -\omega A \sin(\omega t + \phi_0), \tag{3}
+v(t) = \frac`\{dx}``\{dt}` = -\omega A \sin(\omega t + \phi_0), \tag{3}
 $$
 
 $$
@@ -223,7 +223,7 @@ constants $A$, $\omega$, and $\phi_0$.
 **Proof.** First derivative:
 
 $$
-\frac{dx}{dt} = -\omega A \sin(\omega t + \phi_0)
+\frac`\{dx}``\{dt}` = -\omega A \sin(\omega t + \phi_0)
 $$
 
 Second derivative:
@@ -399,7 +399,7 @@ x(0) = A\cos\phi_0 = x_0 \tag{i}
 $$
 
 $$
-v(0) = -\omega A\sin\phi_0 = v_0 \tag{ii}
+v(0) = -\omega A\sin\phi_0 = v_0 \tag`\{ii}`
 $$
 
 Squaring and adding (i) and (ii):

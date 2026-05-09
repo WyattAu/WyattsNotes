@@ -726,7 +726,7 @@ Explain, in terms of electronegativity, why the bond in $\mathrm{HCl{}$ is polar
 
 Chlorine ($\chi = 3.16$) is significantly more electronegative than hydrogen ($\chi = 2.20$) (1 mark). The electronegativity difference ($\Delta\chi = 0.96$) is between 0.4 and 1.7, indicating a polar covalent bond (1 mark).
 
-The chlorine atom attracts the shared electron pair more strongly than hydrogen, creating a dipole: $\mathrm{H{}^{\delta+}\text{'\{'}-{'\}'}\mathrm{Cl{}^{\delta-}$ (2 marks). The bond is covalent (electrons are shared, not transferred) but polar (unequal sharing) (1 mark).
+The chlorine atom attracts the shared electron pair more strongly than hydrogen, creating a dipole: $\mathrm{H{}^{\delta+}\text{-{}\mathrm{Cl{}^{\delta-}$ (2 marks). The bond is covalent (electrons are shared, not transferred) but polar (unequal sharing) (1 mark).
 
 </details>
 

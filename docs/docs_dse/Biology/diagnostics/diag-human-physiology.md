@@ -182,7 +182,7 @@ This allows blood to be delivered to body tissues at **high pressure**, ensuring
 
 At rest: Cardiac output $= 75 \times 70 = 5250$ cm$^{3}$/min $= 5.25$ dm$^{3}$/min
 
-During exercise: Heart rate $= \frac{\text{'\{'}cardiac output{'\}'}}{\text{'\{'}stroke volume{'\}'}} = \frac{15000}{120} = 125$ beats per minute
+During exercise: Heart rate $= \frac{\text{cardiac output{}}{\text{stroke volume{}} = \frac{15000}{120} = 125$ beats per minute
 
 ---
 

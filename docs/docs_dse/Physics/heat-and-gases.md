@@ -1579,13 +1579,13 @@ See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instr
 
 ### Derivation: Ideal Gas Law from Empirical Gas Laws
 
-**Boyle's law** (constant temperature): $PV = \text{'\{'}constant{'\}'}$, or $P \propto 1/V$
+**Boyle's law** (constant temperature): $PV = \text{constant{}$, or $P \propto 1/V$
 
-**Charles's law** (constant pressure): $V/T = \text{'\{'}constant{'\}'}$, or $V \propto T$
+**Charles's law** (constant pressure): $V/T = \text{constant{}$, or $V \propto T$
 
-**Pressure law** (constant volume): $P/T = \text{'\{'}constant{'\}'}$, or $P \propto T$
+**Pressure law** (constant volume): $P/T = \text{constant{}$, or $P \propto T$
 
-Combining all three: $PV/T = \text{'\{'}constant{'\}'}$ for a fixed mass of gas.
+Combining all three: $PV/T = \text{constant{}$ for a fixed mass of gas.
 
 For $n$ moles of ideal gas:
 
@@ -1664,7 +1664,7 @@ connected to a pressure gauge or manometer.
 3. Record pairs of $P$ and $L$.
 4. Plot $P$ (y-axis) versus $1/L$ (x-axis). A straight line through the origin confirms
    Boyle's law ($P \propto 1/V$).
-5. Alternatively, plot $PV$ (y-axis) versus $P$ (x-axis). A horizontal line confirms $PV = \text{'\{'}const{'\}'}$.
+5. Alternatively, plot $PV$ (y-axis) versus $P$ (x-axis). A horizontal line confirms $PV = \text{const{}$.
 
 **Precautions:**
 - Allow time for the gas to reach thermal equilibrium after each pressure change.

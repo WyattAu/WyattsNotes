@@ -2027,11 +2027,11 @@ $$J_i = \sum_j L_{ij}F_j$$
 
 The Boltzmann equation describes the evolution of the distribution function $f(\mathbf{'\{'}r{'\}'}, \mathbf{'\{'}v{'\}'}, t)$:
 
-$$\frac{\partial f}{\partial t} + \mathbf{'\{'}v{'\}'}\cdot\nabla_{\mathbf{'\{'}r{'\}'}}f + \frac{\mathbf{'\{'}F{'\}'}}{m}\cdot\nabla_{\mathbf{'\{'}v{'\}'}}f = \left(\frac{\partial f}{\partial t}\right)_{\text{'\{'}coll{'\}'}}$$
+$$\frac{\partial f}{\partial t} + \mathbf{'\{'}v{'\}'}\cdot\nabla_{\mathbf{'\{'}r{'\}'}}f + \frac{\mathbf{'\{'}F{'\}'}}{m}\cdot\nabla_{\mathbf{'\{'}v{'\}'}}f = \left(\frac{\partial f}{\partial t}\right)_{\text{coll{}}$$
 
 The collision integral is often approximated by the **relaxation time approximation**:
 
-$$\left(\frac{\partial f}{\partial t}\right)_{\text{'\{'}coll{'\}'}} \approx -\frac{f - f_0}{\tau(\mathbf{'\{'}v{'\}'})}$$
+$$\left(\frac{\partial f}{\partial t}\right)_{\text{coll{}} \approx -\frac{f - f_0}{\tau(\mathbf{'\{'}v{'\}'})}$$
 
 where $f_0$ is the equilibrium (Maxwell--Boltzmann) distribution and $\tau$ is the relaxation time.
 
@@ -2088,7 +2088,7 @@ $$f(v)\,dv = 4\pi n\left(\frac{m}{2\pi k_B T}\right)^{3/2}v^2\exp\!\left(-\frac{
 
 - Most probable: $v_p = \sqrt{2k_BT/m}$
 - Mean: $\langle v \rangle = \sqrt{8k_BT/(\pi m)} = \frac{2}{\sqrt{\pi}}v_p$
-- RMS: $v_{\text{'\{'}rms{'\}'}} = \sqrt{3k_BT/m} = \sqrt{3/2}\,v_p$
+- RMS: $v_{\text{rms{}} = \sqrt{3k_BT/m} = \sqrt{3/2}\,v_p$
 
 ### 14.2 Mean Free Path and Collisions
 
@@ -2102,9 +2102,9 @@ The **collision frequency:** $\nu = \langle v \rangle/\ell = \sqrt{2}\,n\pi d^2\
 
 For air at STP ($n \approx 2.5 \times 10^{25}$ m$^{-3}$, $d \approx 3.7 \times 10^{-10}$ m):
 
-$$\ell = \frac{1}{\sqrt{2} \times 2.5 \times 10^{25} \times \pi \times (3.7 \times 10^{-10})^2} = \frac{1}{1.52 \times 10^7} = 66\ \text{'\{'}nm{'\}'}$$
+$$\ell = \frac{1}{\sqrt{2} \times 2.5 \times 10^{25} \times \pi \times (3.7 \times 10^{-10})^2} = \frac{1}{1.52 \times 10^7} = 66\ \text{nm{}$$
 
-$$\nu = \frac{445\ \text{'\{'}m/s{'\}'}}{66 \times 10^{-9}\,\text{'\{'}m{'\}'}} = 6.7 \times 10^9\ \text{'\{'}s{'\}'}^{-1}$$
+$$\nu = \frac{445\ \text{m/s{}}{66 \times 10^{-9}\,\text{m{}} = 6.7 \times 10^9\ \text{s{}^{-1}$$
 
 ### 14.3 Transport Coefficients
 
@@ -2127,11 +2127,11 @@ $$\Phi = \frac{1}{4}n\langle v\rangle A = \frac{1}{4}n\sqrt{\frac{8k_BT}{\pi m}}
 
 At $P = 100$ Pa, $T = 300$ K: $n = P/(k_BT) = 100/(1.38 \times 10^{-23} \times 300) = 2.42 \times 10^{22}$ m$^{-3}$.
 
-$$\langle v \rangle = \sqrt{\frac{8 \times 1.38 \times 10^{-23} \times 300}{\pi \times 28 \times 1.66 \times 10^{-27}}} = \sqrt{\frac{3.31 \times 10^{-20}}{1.46 \times 10^{-25}}} = \sqrt{2.27 \times 10^5} = 476\ \text{'\{'}m/s{'\}'}$$
+$$\langle v \rangle = \sqrt{\frac{8 \times 1.38 \times 10^{-23} \times 300}{\pi \times 28 \times 1.66 \times 10^{-27}}} = \sqrt{\frac{3.31 \times 10^{-20}}{1.46 \times 10^{-25}}} = \sqrt{2.27 \times 10^5} = 476\ \text{m/s{}$$
 
-$$\Phi = \frac{1}{4} \times 2.42 \times 10^{22} \times 476 \times A = 2.88 \times 10^{24}\,A\ \text{'\{'}s{'\}'}^{-1}$$
+$$\Phi = \frac{1}{4} \times 2.42 \times 10^{22} \times 476 \times A = 2.88 \times 10^{24}\,A\ \text{s{}^{-1}$$
 
-For $A = 1\,\text{'\{'}mm{'\}'}^2 = 10^{-6}\,\text{'\{'}m{'\}'}^2$: $\Phi = 2.88 \times 10^{18}$ molecules/s.
+For $A = 1\,\text{mm{}^2 = 10^{-6}\,\text{m{}^2$: $\Phi = 2.88 \times 10^{18}$ molecules/s.
 
 **Knudsen effusion:** The ratio of effusion rates for two gases with masses $m_1$ and $m_2$:
 
@@ -2147,7 +2147,7 @@ This is the basis for isotope separation by gaseous diffusion.
 
 The **Shannon entropy** of a probability distribution $\{p_i\}$:
 
-$$S_{\text{'\{'}Shannon{'\}'}} = -\sum_i p_i\ln p_i$$
+$$S_{\text{Shannon{}} = -\sum_i p_i\ln p_i$$
 
 This is mathematically identical to the Boltzmann entropy (up to the constant $k_B$), providing a deep connection between information theory and thermodynamics.
 
@@ -2167,7 +2167,7 @@ of energy as heat. This establishes a fundamental lower bound on the energy cost
 
 Maxwell's demon appears to violate the second law by sorting fast and slow molecules, creating a temperature difference from an initially uniform gas without doing work.
 
-**Resolution (Bennett, 1982):** The demon must acquire information about molecular speeds (measurement) and then erase this information to reset its memory. By Landauer's principle, erasing the information costs at least $k_B T \ln 2$ per bit, exactly compensating the entropy decrease of the gas. The second law is upheld: $dS_{\text{'\{'}gas{'\}'}} + dS_{\text{'\{'}demon{'\}'}} \geq 0$.
+**Resolution (Bennett, 1982):** The demon must acquire information about molecular speeds (measurement) and then erase this information to reset its memory. By Landauer's principle, erasing the information costs at least $k_B T \ln 2$ per bit, exactly compensating the entropy decrease of the gas. The second law is upheld: $dS_{\text{gas{}} + dS_{\text{demon{}} \geq 0$.
 
 <details>
 <summary>Worked Example 15.1: Maximum Entropy Distribution</summary>
@@ -2194,7 +2194,7 @@ This shows that the exponential (geometric) distribution arises naturally from m
 
 1. **Onsager relations require careful force-flux pairing:** The reciprocal relations $L_{ij} = L_{ji}$ hold only when the forces $F_i$ and fluxes $J_i$ are properly chosen as conjugate pairs (both contributing positively to $dS_i/dt$). An incorrect pairing can lead to wrong cross-coefficients.
 
-2. **The relaxation time approximation is not exact:** Setting $(\partial f/\partial t)_{\text{'\{'}coll{'\}'}} = -(f - f_0)/\tau$ assumes a single relaxation time for all processes. In reality, $\tau$ depends on velocity (energy), and different scattering processes have different time scales. The approximation works well for order-of-magnitude estimates but fails for quantitatively accurate transport predictions.
+2. **The relaxation time approximation is not exact:** Setting $(\partial f/\partial t)_{\text{coll{}} = -(f - f_0)/\tau$ assumes a single relaxation time for all processes. In reality, $\tau$ depends on velocity (energy), and different scattering processes have different time scales. The approximation works well for order-of-magnitude estimates but fails for quantitatively accurate transport predictions.
 
 3. **Effusion vs. hydrodynamic flow:** Effusion (molecular flow through a small hole) occurs when the hole diameter is much smaller than the mean free path ($d \ll \ell$, Knudsen number $\gg 1$). For larger holes ($d \gg \ell$), hydrodynamic flow (described by the Navier--Stokes equations) dominates. The transition between regimes is important in vacuum systems.
 
@@ -2227,11 +2227,11 @@ $$= \frac{1}{2} \times 2.69 \times 10^{25} \times 399 \times 10^{-9} \times 72.5
 
 $$= 0.5 \times 2.69 \times 10^{25} \times 3.995 \times 10^2 \times 10^{-9} \times 10^{-23}$$
 
-$$= 0.5 \times 2.69 \times 3.995 \times 72.5 \times 10^{-5} = 0.5 \times 7789 \times 10^{-5} = 0.0390\ \text{'\{'}W/(m{'\}'}\cdot\text{'\{'}K){'\}'}$$
+$$= 0.5 \times 2.69 \times 3.995 \times 72.5 \times 10^{-5} = 0.5 \times 7789 \times 10^{-5} = 0.0390\ \text{W/(m{}\cdot\text{K){}$$
 
 The kinetic theory prediction (0.039) overestimates the experimental value (0.0177) by about a factor of 2.2. This discrepancy is systematic and is resolved by the Chapman--Enskog theory, which gives:
 
-$$\kappa_{\text{'\{'}CE{'\}'}} = \frac{25}{32}\kappa_{\text{'\{'}simple{'\}'}} \approx 0.78 \times 0.039 = 0.030\ \text{'\{'}W/(m{'\}'}\cdot\text{'\{'}K){'\}'}$$
+$$\kappa_{\text{CE{}} = \frac{25}{32}\kappa_{\text{simple{}} \approx 0.78 \times 0.039 = 0.030\ \text{W/(m{}\cdot\text{K){}$$
 
 Still an overestimate; the remaining discrepancy is due to the hard-sphere model not accurately representing the real intermolecular potential of argon (which has an attractive well that reduces the effective collision cross-section at lower temperatures).
 

@@ -565,7 +565,7 @@ and moving up the value chain.
 The GDI adjusts the HDI for gender disparities. It is calculated as the ratio of female HDI to
 male HDI, adjusted by the overall HDI level:
 
-$$\text{'\{'}GDI{'\}'} = \frac{\text{'\{'}HDI{'\}'}_{\text{'\{'}female{'\}'}} + \text{'\{'}HDI{'\}'}_{\text{'\{'}male{'\}'}}}{2} - \frac{|\text{'\{'}HDI{'\}'}_{\text{'\{'}female{'\}'}} - \text{'\{'}HDI{'\}'}_{\text{'\{'}male{'\}'}}|}{2}$$
+$$\text{GDI{} = \frac{\text{HDI{}_{\text{female{}} + \text{HDI{}_{\text{male{}}}{2} - \frac{|\text{HDI{}_{\text{female{}} - \text{HDI{}_{\text{male{}}|}{2}$$
 
 A GDI close to 1.0 indicates near gender parity. A GDI significantly below 1.0 indicates that
 one gender (typically female) has substantially lower human development.
@@ -598,7 +598,7 @@ The MPI uses ten indicators across three dimensions:
 2. A household is "multidimensionally poor" if the deprivation score $\geq 1/3$
 3. Headcount ratio ($H$): proportion of population living in multidimensionally poor households
 4. Average deprivation intensity ($A$): average deprivation score among the poor
-5. $\text{'\{'}MPI{'\}'} = H \times A$
+5. $\text{MPI{} = H \times A$
 
 **Advantages over income poverty measures:**
 
@@ -745,7 +745,7 @@ Growth rate of industrial capital $= 96 / (20\,000 \times k)$, where $k$ is capi
 Without knowing $k$ directly, we can express the growth rate in terms of the capital-output ratio.
 If the ICOR in industry is $v = 3$:
 
-Capital stock $= v \times \text{'\{'}Industrial output{'\}'} = 3 \times (15\,000 \times 20\,000\,000) = \$900$ billion
+Capital stock $= v \times \text{Industrial output{} = 3 \times (15\,000 \times 20\,000\,000) = \$900$ billion
 
 Growth rate of capital $= 96 / 900 = 10.7\%$
 
@@ -799,7 +799,7 @@ drinking water and reducing sanitation deprivation to 20%. Estimate the impact o
 (c) Evaluate the effectiveness of this investment compared to a cash transfer programme that
 reduces the poverty headcount to 18%.
 
-(a) $\text{'\{'}MPI{'\}'} = H \times A = 0.22 \times 0.48 = 0.106$
+(a) $\text{MPI{} = H \times A = 0.22 \times 0.48 = 0.106$
 
 (b) The infrastructure investment directly addresses two living standards indicators. If we
 assume that households previously deprived only in drinking water are no longer poor (some move
@@ -1065,7 +1065,7 @@ other financial services to low-income individuals who lack access to traditiona
 The group lending model (pioneered by Grameen Bank, Muhammad Yunus) uses social collateral instead
 of physical collateral:
 
-$$\text{'\{'}Default by one member{'\}'} \implies \text{'\{'}Group liability{'\}'} \implies \text{'\{'}Social sanctions{'\}'}$$
+$$\text{Default by one member{} \implies \text{Group liability{} \implies \text{Social sanctions{}$$
 
 This creates peer monitoring and mutual accountability, overcoming the asymmetric information problem
 that prevents traditional banks from lending to the poor.
@@ -1230,7 +1230,7 @@ The UN Conference on Trade and Development (UNCTAD) estimated that achieving the
 developing countries requires additional annual investment of approximately USD 2.5 trillion per year.
 Current investment falls short by approximately USD 1.4 trillion per year.
 
-Financing gap $= \text{'\{'}Required investment{'\}'} - \text{'\{'}Current investment{'\}'} = 2500 - 1100 = \text{'\{'}USD {'\}'}1400\text{'\{'} billion{'\}'}$
+Financing gap $= \text{Required investment{} - \text{Current investment{} = 2500 - 1100 = \text{USD {}1400\text{ billion{}$
 
 Potential financing sources:
 
@@ -1259,7 +1259,7 @@ Country R has the following sectoral employment data:
 (b) Calculate the rate of structural change between 1980 and 2020 using the structure of
 production indicator:
 
-$$\text{'\{'}Structural change index{'\}'} = \frac{1}{2} \sum_{i=1}^{n} |s_{i,t} - s_{i,0}|$$
+$$\text{Structural change index{} = \frac{1}{2} \sum_{i=1}^{n} |s_{i,t} - s_{i,0}|$$
 
 (c) Explain why the share of industry employment peaked and then declined.
 
@@ -1277,7 +1277,7 @@ and GDP per capita increases substantially.
 
 (b) Structural change index between 1980 and 2020:
 
-$$\text{'\{'}Index{'\}'} = \frac{1}{2}(|22 - 70| + |20 - 10| + |58 - 20|) = \frac{1}{2}(48 + 10 + 38) = \frac{96}{2} = 48$$
+$$\text{Index{} = \frac{1}{2}(|22 - 70| + |20 - 10| + |58 - 20|) = \frac{1}{2}(48 + 10 + 38) = \frac{96}{2} = 48$$
 
 The structural change index is 48 percentage points, indicating substantial transformation over
 40 years.
@@ -1457,7 +1457,7 @@ traditional agricultural sector to a modern industrial sector.
 **Assumptions:**
 
 1. The economy has two sectors: traditional (agriculture) and modern (industry)
-2. The traditional sector has surplus labour: the marginal product of labour ($\text{'\{'}MPL{'\}'}$) is
+2. The traditional sector has surplus labour: the marginal product of labour ($\text{MPL{}$) is
    zero or near-zero, so labour can be withdrawn without reducing output
 3. The modern sector pays a wage $w_m > w_a$ (the agricultural wage), determined by the
    institutional wage (not marginal product)
@@ -1802,8 +1802,8 @@ between development and political freedom is a real concern.
 Thomas Malthus (1798) argued that population growth tends to outstrip food production, leading
 to periodic famines and population collapses:
 
-$$\text{'\{'}Population grows geometrically: {'\}'} P_t = P_0 (1 + g)^t$$
-$$\text{'\{'}Food production grows arithmetically: {'\}'} F_t = F_0 + at$$
+$$\text{Population grows geometrically: {} P_t = P_0 (1 + g)^t$$
+$$\text{Food production grows arithmetically: {} F_t = F_0 + at$$
 
 Malthus predicted that per capita income would remain at subsistence level in the long run
 because any increase in income would lead to higher population growth, which would depress
@@ -2142,7 +2142,7 @@ economies of scale and learning curve effects.
 
 **Formal model:**
 
-The learning curve: $\text{'\{'}AC{'\}'}(t) = \text{'\{'}AC{'\}'}_0 \times Q(t)^{-\alpha}$
+The learning curve: $\text{AC{}(t) = \text{AC{}_0 \times Q(t)^{-\alpha}$
 
 Where $\alpha$ is the learning rate parameter. If $\alpha = 0.15$, a doubling of cumulative
 output reduces unit costs by approximately $1 - 2^{-0.15} = 10\%$.
@@ -2155,9 +2155,9 @@ Without protection, the firm cannot compete.
 With a 67% tariff (raising the domestic price of imports to USD 0.50/W), the firm can sell and
 accumulate production. The learning rate is $\alpha = 0.20$.
 
-After producing 1 GW of panels: $\text{'\{'}AC{'\}'} = 0.50 \times (1)^{-0.20} = 0.50$
-After producing 10 GW: $\text{'\{'}AC{'\}'} = 0.50 \times (10)^{-0.20} = 0.50 \times 0.631 = 0.316$
-After producing 100 GW: $\text{'\{'}AC{'\}'} = 0.50 \times (100)^{-0.20} = 0.50 \times 0.398 = 0.199$
+After producing 1 GW of panels: $\text{AC{} = 0.50 \times (1)^{-0.20} = 0.50$
+After producing 10 GW: $\text{AC{} = 0.50 \times (10)^{-0.20} = 0.50 \times 0.631 = 0.316$
+After producing 100 GW: $\text{AC{} = 0.50 \times (100)^{-0.20} = 0.50 \times 0.398 = 0.199$
 
 At 100 GW of cumulative production, the firm's cost (USD 0.199/W) is below the world price.
 Protection can be removed.
@@ -2223,7 +2223,7 @@ note that:
 The **Environmental Kuznets Curve (EKC)** hypothesises an inverted-U relationship between
 environmental degradation and income per capita:
 
-$$\text{'\{'}Pollution{'\}'} = \alpha + \beta_1 Y + \beta_2 Y^2 + \epsilon$$
+$$\text{Pollution{} = \alpha + \beta_1 Y + \beta_2 Y^2 + \epsilon$$
 
 Where $Y$ is GDP per capita. The turning point is at $Y^* = -\beta_1/(2\beta_2)$.
 
@@ -2260,7 +2260,7 @@ N-shaped pattern: pollution falls with income, then rises again at very high inc
 
 ### Numerical Example
 
-Estimated EKC for SO2 emissions: $\text{'\{'}SO2{'\}'} = 20 + 0.05Y - 0.000005Y^2$
+Estimated EKC for SO2 emissions: $\text{SO2{} = 20 + 0.05Y - 0.000005Y^2$
 
 Where SO2 is measured in micrograms per cubic metre and Y is GDP per capita in USD.
 
@@ -2284,7 +2284,7 @@ approaches a positive lower bound, not zero or negative.
 A developing country wants to establish a pharmaceutical industry. The world price of generic
 drugs is USD 10 per unit. Domestic production costs follow a learning curve:
 
-$\text{'\{'}AC{'\}'}(Q) = 20 \times Q^{-0.15}$
+$\text{AC{}(Q) = 20 \times Q^{-0.15}$
 
 where $Q$ is cumulative production in millions of units.
 
@@ -2296,7 +2296,7 @@ where $Q$ is cumulative production in millions of units.
 
 (c) Evaluate the infant industry argument for pharmaceuticals in a developing country. [3 marks]
 
-(a) The industry is competitive when $\text{'\{'}AC{'\}'} \leq 10$:
+(a) The industry is competitive when $\text{AC{} \leq 10$:
 
 $20 \times Q^{-0.15} \leq 10 \implies Q^{-0.15} \leq 0.5 \implies Q^{0.15} \geq 2$
 
@@ -2305,11 +2305,11 @@ $Q \geq 2^{1/0.15} = 2^{6.67} = 101.6$ million units.
 The industry needs cumulative production of approximately 102 million units to become
 competitive. At 5 million units per year, this takes approximately 20 years.
 
-(b) Year 1 ($Q = 1$): $\text{'\{'}AC{'\}'} = 20 \times 1^{-0.15} = 20$.
+(b) Year 1 ($Q = 1$): $\text{AC{} = 20 \times 1^{-0.15} = 20$.
 
 Tariff needed: $(20 - 10)/10 = 100\%$.
 
-Year 5 ($Q = 5$): $\text{'\{'}AC{'\}'} = 20 \times 5^{-0.15} = 20 \times 0.740 = 14.8$.
+Year 5 ($Q = 5$): $\text{AC{} = 20 \times 5^{-0.15} = 20 \times 0.740 = 14.8$.
 
 Tariff needed: $(14.8 - 10)/10 = 48\%$.
 
@@ -2477,7 +2477,7 @@ problem (richer countries can afford better institutions).
 
 ### Numerical Example: Institutional Quality and Growth
 
-Regression: growth $= 1.0 + 1.5 \times \text{'\{'}institution\_quality{'\}'} + 0.3 \times \text{'\{'}investment{'\}'}$
+Regression: growth $= 1.0 + 1.5 \times \text{institution\_quality{} + 0.3 \times \text{investment{}$
 
 Where institution_quality is the WGI score (range -2.5 to +2.5) and investment is the
 investment/GDP ratio.
@@ -2532,7 +2532,7 @@ threshold, financial development may lead to crises (as in the 2008 financial cr
 
 A cross-country regression estimates:
 
-$\text{'\{'}Growth{'\}'} = 2.0 + 0.02 \times \text{'\{'}Private\_credit/GDP{'\}'} + 0.01 \times (\text{'\{'}Private\_credit/GDP{'\}'} \times \text{'\{'}Institution\_quality{'\}'})$
+$\text{Growth{} = 2.0 + 0.02 \times \text{Private\_credit/GDP{} + 0.01 \times (\text{Private\_credit/GDP{} \times \text{Institution\_quality{})$
 
 Country C: Private credit/GDP $= 40\%$, Institution quality $= 1.0$.
 

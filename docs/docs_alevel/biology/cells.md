@@ -894,7 +894,7 @@ Both have the same **9+2 arrangement** of microtubules: 9 pairs of fused microtu
 
 The endomembrane system is a network of organelles that work together to synthesise, modify, package, and transport proteins and lipids:
 
-$$\text{'\{'}Rough ER{'\}'} \to \text{'\{'}Vesicles{'\}'} \to \text{'\{'}Golgi apparatus{'\}'} \to \text{'\{'}Secretory vesicles{'\}'} \to \text{'\{'}Cell membrane{'\}'}$$
+$$\text{Rough ER{} \to \text{Vesicles{} \to \text{Golgi apparatus{} \to \text{Secretory vesicles{} \to \text{Cell membrane{}$$
 
 ### 14.2 The Golgi Apparatus in Detail
 
@@ -1078,7 +1078,7 @@ Diagnostic Test
 
 The $\mathrm{Na^+/K^+{}$ ATPase maintains the resting membrane potential and the concentration gradients of $\mathrm{Na^+{}$ and $\mathrm{K^+{}$:
 
-$$\text{'\{'}ATP{'\}'} + 3\mathrm{Na^+{}_{\text{'\{'}in{'\}'}} + 2\mathrm{K^+{}_{\text{'\{'}out{'\}'}} \to \text{'\{'}ADP{'\}'} + \mathrm{P_i{} + 3\mathrm{Na^+{}_{\text{'\{'}out{'\}'}} + 2\mathrm{K^+{}_{\text{'\{'}in{'\}'}}$$
+$$\text{ATP{} + 3\mathrm{Na^+{}_{\text{in{}} + 2\mathrm{K^+{}_{\text{out{}} \to \text{ADP{} + \mathrm{P_i{} + 3\mathrm{Na^+{}_{\text{out{}} + 2\mathrm{K^+{}_{\text{in{}}$$
 
 - Pumps 3 $\mathrm{Na^+{}$ out and 2 $\mathrm{K^+{}$ in per ATP hydrolysed.
 - **Electrogenic**: the unequal exchange (3:2) creates a net outward current, contributing to the negative resting membrane potential (approximately $-70\ \mathrm{mV{}$).
@@ -1200,7 +1200,7 @@ Mean division time $= \frac{6.6 \times 60}{13.3} \approx 30$ minutes.
 
 ### 20.1 Resolution and Magnification
 
-$$\text{'\{'}Resolution{'\}'} = \frac{0.61\lambda}{n\sin\theta}$$
+$$\text{Resolution{} = \frac{0.61\lambda}{n\sin\theta}$$
 
 Where $\lambda$ = wavelength of light/electrons; $n$ = refractive index of the medium; $\theta$ = half-angle of the cone of light entering the objective.
 
@@ -1409,11 +1409,11 @@ Bacteriophages (phages) are viruses that infect bacteria:
 
 ### 26.1 Calculating Magnification
 
-$$\text{'\{'}Magnification{'\}'} = \frac{\text{'\{'}size of image{'\}'}}{\text{'\{'}size of object{'\}'}}$$
+$$\text{Magnification{} = \frac{\text{size of image{}}{\text{size of object{}}$$
 
 **Example:** a cell is observed through a microscope at 400x magnification. The cell measures $4\ \mathrm{mm{}$ on the micrograph. What is the actual size?
 
-$$\text{'\{'}Actual size{'\}'} = \frac{\text{'\{'}image size{'\}'}}{\text{'\{'}magnification{'\}'}} = \frac{4\ \mathrm{mm{}}{400} = 0.01\ \mathrm{mm{} = 10\ \mu\mathrm{m{}$$
+$$\text{Actual size{} = \frac{\text{image size{}}{\text{magnification{}} = \frac{4\ \mathrm{mm{}}{400} = 0.01\ \mathrm{mm{} = 10\ \mu\mathrm{m{}$$
 
 ### 26.2 Preparing a Temporary Mount
 
@@ -1426,7 +1426,7 @@ $$\text{'\{'}Actual size{'\}'} = \frac{\text{'\{'}image size{'\}'}}{\text{'\{'}m
 
 The mitotic index is the percentage of cells in a population that are undergoing mitosis at a given time:
 
-$$\text{'\{'}Mitotic index{'\}'} = \frac{\text{'\{'}number of cells in mitosis{'\}'}}{\text{'\{'}total number of cells observed{'\}'}} \times 100$$
+$$\text{Mitotic index{} = \frac{\text{number of cells in mitosis{}}{\text{total number of cells observed{}} \times 100$$
 
 **Example:** In a sample of 200 cells, 12 are in prophase, 8 in metaphase, 4 in anaphase, and 6 in telophase.
 
@@ -1678,9 +1678,9 @@ Apoptosis is an orderly, genetically programmed process of cell death that occur
 
 ### 35.2 Magnification and Scale
 
-$$\text{'\{'}Magnification{'\}'} = \frac{\text{'\{'}Image size{'\}'}}{\text{'\{'}Actual size{'\}'}}$$
+$$\text{Magnification{} = \frac{\text{Image size{}}{\text{Actual size{}}$$
 
-$$\text{'\{'}Actual size{'\}'} = \frac{\text{'\{'}Image size{'\}'}}{\text{'\{'}Magnification{'\}'}}$$
+$$\text{Actual size{} = \frac{\text{Image size{}}{\text{Magnification{}}$$
 
 | Unit | Symbol | Conversion |
 | ---- | ------ | ---------- |

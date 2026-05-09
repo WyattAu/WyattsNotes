@@ -687,7 +687,7 @@ The pH is close to 7 despite the solution being acidic, because the acid is so d
 Sulphuric acid is a diprotic acid:
 
 $$
-\mathrm{H{}_2\mathrm{SO{}_4 \rightleftharpoons \mathrm{H{}^+ + \mathrm{HSO{}_4^-} \quad K_{a1} \approx \text{'\{'}very large (strong){'\}'}
+\mathrm{H{}_2\mathrm{SO{}_4 \rightleftharpoons \mathrm{H{}^+ + \mathrm{HSO{}_4^-} \quad K_{a1} \approx \text{very large (strong){}
 $$
 
 $$
@@ -812,7 +812,7 @@ $$
 $$
 
 $$
-K_w = [\mathrm{H{}^+][\mathrm{OH{}^-] = 1.0 \times 10^{-14}\,\mathrm{mol{}^2\,\mathrm{dm{}^{-6} \quad \text{'\{'}at {'\}'} 298\,\mathrm{K{}
+K_w = [\mathrm{H{}^+][\mathrm{OH{}^-] = 1.0 \times 10^{-14}\,\mathrm{mol{}^2\,\mathrm{dm{}^{-6} \quad \text{at {} 298\,\mathrm{K{}
 $$
 
 $K_w$ is temperature-dependent. At higher temperatures, the endothermic autodissociation of water is favoured, and $K_w$ increases:
@@ -1010,7 +1010,7 @@ $$x = 1.02 \times 10^{-2} = 0.0102\,\mathrm{mol\,dm^{-3}}$$
 
 Check: $\frac{0.0102}{0.050} \times 100 = 20.4\%$ -- the approximation is marginal. For greater accuracy, use the quadratic formula. However, for A-Level purposes:
 
-$$[\mathrm{H{}^+]_\text{'\{'}total{'\}'} \approx 0.050 + 0.010 = 0.060\,\mathrm{mol\,dm^{-3}}$$
+$$[\mathrm{H{}^+]_\text{total{} \approx 0.050 + 0.010 = 0.060\,\mathrm{mol\,dm^{-3}}$$
 
 $$\mathrm{pH{} = -\log(0.060) = 1.22$$
 
@@ -1033,7 +1033,7 @@ Part 2: $n(\mathrm{HCl{}) = 0.100 \times 0.0250 = 2.50 \times 10^{-3}\,\mathrm{m
 
 $n(\mathrm{NaOH{}) = 0.050 \times 0.0100 = 5.00 \times 10^{-4}\,\mathrm{mol{}$
 
-$\mathrm{NaOH{}$ is the limiting reagent. After reaction: $n(\mathrm{HCl{})_\text{'\{'}excess{'\}'} = 2.50 \times 10^{-3} - 5.00 \times 10^{-4} = 2.00 \times 10^{-3}\,\mathrm{mol{}$
+$\mathrm{NaOH{}$ is the limiting reagent. After reaction: $n(\mathrm{HCl{})_\text{excess{} = 2.50 \times 10^{-3} - 5.00 \times 10^{-4} = 2.00 \times 10^{-3}\,\mathrm{mol{}$
 
 Total volume $= 35.0\,\mathrm{cm{}^3 = 0.0350\,\mathrm{dm{}^3$
 
