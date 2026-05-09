@@ -1398,7 +1398,7 @@ The central bank must engineer unemployment of 13% (8 percentage points above th
 
 (b) Sacrifice ratio: reducing inflation from 5% to 2% requires a 3 percentage point reduction. If each 1pp reduction costs 2 percentage-point-years of excess unemployment: sacrifice ratio $= 2 \times 3 = 6$ percentage-point-years.
 
-Total cost $= 6$ percentage-point-years. If the labour force is 4 million, this represents $0.06 \times 4{,}000{,}000 \times 1 = 240{,}000$ person-years of unemployment.
+Total cost $= 6$ percentage-point-years. If the labour force is 4 million, this represents $0.06 \times 4\,000\,000 \times 1 = 240\,000$ person-years of unemployment.
 
 (c) If the central bank is credible (the public believes it will achieve its target), $\pi^e$ falls. If $\pi^e = 2\%$ (instead of 6%): $2 = 2 - 0.5(u - 5)$. $u = 5\%$. No excess unemployment is needed! Credibility eliminates the sacrifice ratio entirely.
 

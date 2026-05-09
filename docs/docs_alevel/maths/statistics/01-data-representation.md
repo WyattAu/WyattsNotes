@@ -605,7 +605,7 @@ Explain why the median is preferred to the mean for measuring average income in 
 
 <details>
 <summary>Solution 10</summary>
-Income distributions are typically right-skewed — a small number of very high earners pull the mean upward. The median, being the middle value, is unaffected by extreme values and gives a more representative "typical" income. For example, if one billionaire lives in a village of 1000 people earning $30{,}000$, the mean would be vastly inflated while the median would remain close to $30{,}000$.
+Income distributions are typically right-skewed — a small number of very high earners pull the mean upward. The median, being the middle value, is unaffected by extreme values and gives a more representative "typical" income. For example, if one billionaire lives in a village of 1000 people earning $30\,000$, the mean would be vastly inflated while the median would remain close to $30\,000$.
 
 **If you get this wrong, revise:** [Comparing Measures](#15-comparing-measures) — Section 1.5.
 

@@ -666,7 +666,7 @@ years. If the discount rate is 5%, calculate the NPV of the degree. Is it worth 
 
 <details>
 <summary>Hint</summary>
-$NPV = \sum_{t=4}^{43} \frac{10{,}000}{(1.05)^t} - 40{,}000$. The PV of an annuity of £10,000 for 40 years at 5%, deferred 3 years: $PV = \frac{10{,}000}{0.05}\left(1 - \frac{1}{1.05^{40}}\right) \times \frac{1}{1.05^3} = 200{,}000 \times (1 - 0.1420) \times 0.8638 = 200{,}000 \times 0.8580 \times 0.8638 = £148{,}192$. $NPV = 148{,}192 - 40{,}000 = £108{,}192 > 0$. The degree is worth it.
+$NPV = \sum_{t=4}^{43} \frac{10\,000}{(1.05)^t} - 40\,000$. The PV of an annuity of £10,000 for 40 years at 5%, deferred 3 years: $PV = \frac{10\,000}{0.05}\left(1 - \frac{1}{1.05^{40}}\right) \times \frac{1}{1.05^3} = 200\,000 \times (1 - 0.1420) \times 0.8638 = 200\,000 \times 0.8580 \times 0.8638 = £148\,192$. $NPV = 148\,192 - 40\,000 = £108\,192 > 0$. The degree is worth it.
 </details>
 
 **Problem 6.** "Trade unions always reduce employment." Evaluate this statement with reference to
@@ -718,7 +718,7 @@ the deadweight loss?
 
 <details>
 <summary>Hint</summary>
-Expected productivity $= 0.5 \times 50{,}000 + 0.5 \times 30{,}000 = £40{,}000$. If the employer offers £40,000, both types accept. But if the employer could distinguish, high-ability workers would be paid £50,000 and low-ability £30,000. High-ability workers lose £10,000 each (transfer, not DWL). DWL arises if high-ability workers are discouraged from applying (if the offered wage is below their reservation wage, or if they seek firms that can identify ability). This is analogous to Akerlof's lemons problem in reverse.
+Expected productivity $= 0.5 \times 50\,000 + 0.5 \times 30\,000 = £40\,000$. If the employer offers £40,000, both types accept. But if the employer could distinguish, high-ability workers would be paid £50,000 and low-ability £30,000. High-ability workers lose £10,000 each (transfer, not DWL). DWL arises if high-ability workers are discouraged from applying (if the offered wage is below their reservation wage, or if they seek firms that can identify ability). This is analogous to Akerlof's lemons problem in reverse.
 </details>
 
 **Problem 12.** Evaluate the impact of immigration on the domestic labour market. In your answer,
@@ -1039,24 +1039,24 @@ New vacancy filling rate: $q = 0.612/1 = 61.2\%$. Average vacancy duration $= 1.
 | Cost of master's | 0 | GBP 15,000/year for 2 years |
 
 **Earnings without master's (age 21 to 65):**
-Year 1 (age 21): 28,000. Year 10 (age 30): $28{,}000 \times 1.03^9 = 36{,}598$.
-Year 22 (age 42): $28{,}000 \times 1.03^{21} = 50{,}776$.
-Year 44 (age 64): $28{,}000 \times 1.03^{43} = 102{,}844$.
+Year 1 (age 21): 28,000. Year 10 (age 30): $28\,000 \times 1.03^9 = 36\,598$.
+Year 22 (age 42): $28\,000 \times 1.03^{21} = 50\,776$.
+Year 44 (age 64): $28\,000 \times 1.03^{43} = 102\,844$.
 
-Total earnings (approximate, using average): average salary over 44 years $\approx 28{,}000 \times \frac{1.03^{44} - 1}{44 \times \ln(1.03)}$.
+Total earnings (approximate, using average): average salary over 44 years $\approx 28\,000 \times \frac{1.03^{44} - 1}{44 \times \ln(1.03)}$.
 
-Using the sum of a geometric series: $\sum_{t=0}^{43} 28{,}000 \times 1.03^t = 28{,}000 \times \frac{1.03^{44} - 1}{0.03} = 28{,}000 \times \frac{3.607 - 1}{0.03} = 28{,}000 \times 86.9 = 2{,}433{,}200$.
+Using the sum of a geometric series: $\sum_{t=0}^{43} 28\,000 \times 1.03^t = 28\,000 \times \frac{1.03^{44} - 1}{0.03} = 28\,000 \times \frac{3.607 - 1}{0.03} = 28\,000 \times 86.9 = 2\,433\,200$.
 
 **Earnings with master's (age 23 to 65):**
-$\sum_{t=0}^{41} 35{,}000 \times 1.035^t = 35{,}000 \times \frac{1.035^{42} - 1}{0.035} = 35{,}000 \times \frac{4.314 - 1}{0.035} = 35{,}000 \times 94.7 = 3{,}314{,}500$.
+$\sum_{t=0}^{41} 35\,000 \times 1.035^t = 35\,000 \times \frac{1.035^{42} - 1}{0.035} = 35\,000 \times \frac{4.314 - 1}{0.035} = 35\,000 \times 94.7 = 3\,314\,500$.
 
-**Cost of master's:** $15{,}000 \times 2 = 30{,}000$ (direct) + opportunity cost $= 28{,}000 \times 2 + 28{,}000 \times 0.03 = 57{,}680$ (forgone earnings for 2 years, including growth).
-Total cost $= 30{,}000 + 57{,}680 = 87{,}680$.
+**Cost of master's:** $15\,000 \times 2 = 30\,000$ (direct) + opportunity cost $= 28\,000 \times 2 + 28\,000 \times 0.03 = 57\,680$ (forgone earnings for 2 years, including growth).
+Total cost $= 30\,000 + 57\,680 = 87\,680$.
 
-**Net benefit:** $3{,}314{,}500 - 2{,}433{,}200 - 87{,}680 = 793{,}620$.
+**Net benefit:** $3\,314\,500 - 2\,433\,200 - 87\,680 = 793\,620$.
 
 **Internal rate of return:** The IRR is the discount rate $r$ that makes NPV = 0:
-$$NPV = -30{,}000 - \frac{28{,}000}{1+r} - \frac{28{,}840}{(1+r)^2} + \sum_{t=3}^{44} \frac{35{,}000 \times 1.035^{t-3}}{(1+r)^t} = 0$$
+$$NPV = -30\,000 - \frac{28\,000}{1+r} - \frac{28\,840}{(1+r)^2} + \sum_{t=3}^{44} \frac{35\,000 \times 1.035^{t-3}}{(1+r)^t} = 0$$
 
 At $r = 10\%$: the NPV is approximately positive. At $r = 15\%$: the NPV is approximately negative. The IRR is approximately 12-13%, which is well above the typical student loan interest rate (3-7%), suggesting the master's degree is a sound investment.
 

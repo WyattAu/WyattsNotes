@@ -1036,7 +1036,7 @@ for every $2\;\mathrm{K}^+$ imported, adding a small negative contribution).
 
 A neuromuscular junction releases $300$ synaptic vesicles per action potential. Each vesicle contains
 $5000$ acetylcholine (ACh) molecules. The postsynaptic membrane has $10^8$ nicotinic ACh receptors, each
-requiring binding of $2$ ACh molecules to open. Each open channel allows $20{,}000\;\mathrm{Na}^+$ ions
+requiring binding of $2$ ACh molecules to open. Each open channel allows $20\,000\;\mathrm{Na}^+$ ions
 to pass before ACh is hydrolysed. (a) Calculate the total number of ACh molecules released. (b) Calculate
 the maximum number of receptors that can be activated. (c) Calculate the total $\mathrm{Na}^+$ influx
 if all released ACh activates receptors. (d) Explain why only a fraction of released ACh molecules
@@ -1045,12 +1045,12 @@ reach receptors.
 <details>
 <summary>Solution</summary>
 
-(a) Total ACh released: $300 \times 5000 = 1{,}500{,}000$ molecules.
+(a) Total ACh released: $300 \times 5000 = 1\,500\,000$ molecules.
 
-(b) Each receptor needs 2 ACh molecules. Maximum activated receptors: $1{,}500{,}000 / 2 = 750{,}000$ receptors.
+(b) Each receptor needs 2 ACh molecules. Maximum activated receptors: $1\,500\,000 / 2 = 750\,000$ receptors.
 Since there are $10^8$ total receptors, only $0.75\%$ of receptors are activated.
 
-(c) Total $\mathrm{Na}^+$ influx: $750{,}000 \times 20{,}000 = 1.5 \times 10^{10}$ ions.
+(c) Total $\mathrm{Na}^+$ influx: $750\,000 \times 20\,000 = 1.5 \times 10^{10}$ ions.
 Charge: $1.5 \times 10^{10} \times 1.6 \times 10^{-19}\;\mathrm{C} = 2.4 \times 10^{-9}\;\mathrm{C}$.
 
 To convert to current: if this charge enters in $1\;\mathrm{ms}$:
@@ -1471,7 +1471,7 @@ myosin heads are attached simultaneously.
 <summary>Solution</summary>
 
 (a) Force per sarcomere cross-section $= 10^3$ thick filaments $\times 300$ heads $\times 4\;\mathrm{pN}$
-$= 300{,}000 \times 4 \times 10^{-12} = 1.2 \times 10^{-6}\;\mathrm{N} = 1.2\;\mathrm{\mu N}$.
+$= 300\,000 \times 4 \times 10^{-12} = 1.2 \times 10^{-6}\;\mathrm{N} = 1.2\;\mathrm{\mu N}$.
 
 (b) In a series arrangement, the force is the same along the entire length (force is transmitted,
   not summed). So the maximum force of the fibre is the same as the force per cross-section:
@@ -1483,9 +1483,9 @@ myofibrils in parallel, so the total force is multiplied by the number of myofib
 (c) Work per cross-bridge per cycle $= \text{force} \times \text{distance} = 4 \times 10^{-12}\;\mathrm{N}
 \times 5 \times 10^{-9}\;\mathrm{m} = 2 \times 10^{-20}\;\mathrm{J}$.
 
-(d) If $50\%$ of heads are attached: $0.50 \times 300{,}000 = 150{,}000$ attached heads per
+(d) If $50\%$ of heads are attached: $0.50 \times 300\,000 = 150\,000$ attached heads per
 cross-section.
-Total work per cross-section per cycle $= 150{,}000 \times 2 \times 10^{-20} = 3 \times 10^{-15}\;\mathrm{J}$.
+Total work per cross-section per cycle $= 150\,000 \times 2 \times 10^{-20} = 3 \times 10^{-15}\;\mathrm{J}$.
 
 </details>
 

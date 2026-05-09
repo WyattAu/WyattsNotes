@@ -1127,7 +1127,7 @@ at low concentrations.
 In a primary immune response, a single B cell with the appropriate receptor is activated and expands
 into a clone of $5000$ plasma cells and $200$ memory B cells. Each plasma cell secretes $1000$ antibody
 molecules per second. (a) Calculate the total antibody production rate of the clone. (b) Upon secondary
-exposure, memory B cells rapidly expand. If each memory B cell gives rise to a clone of $10{,}000$
+exposure, memory B cells rapidly expand. If each memory B cell gives rise to a clone of $10\,000$
 plasma cells, calculate the secondary response antibody production rate. (c) Calculate the fold increase
 in antibody production rate between primary and secondary responses. (d) Explain why the secondary
 response is faster and produces more antibody.
@@ -1139,7 +1139,7 @@ response is faster and produces more antibody.
 from this clone. In practice, multiple B cell clones are activated (polyclonal response), but this
 illustrates the principle for a single clone.
 
-(b) Secondary response: $200$ memory B cells $\times 10{,}000$ plasma cells each $= 2 \times 10^6$
+(b) Secondary response: $200$ memory B cells $\times 10\,000$ plasma cells each $= 2 \times 10^6$
 plasma cells.
 Antibody production rate: $2 \times 10^6 \times 1000 = 2 \times 10^9$ antibodies/s.
 
@@ -1214,7 +1214,7 @@ increases assay specificity (reducing false positives from cross-reactive substa
 
 HIV targets $\mathrm{CD4}^+$ T helper cells. A patient's blood test shows:
 $\mathrm{CD4}^+$ T cell count $= 350\;\mathrm{cells/\mu L}$ (normal: $500$--$1600$),
-viral load $= 50{,}000\;\mathrm{copies/mL}$.
+viral load $= 50\,000\;\mathrm{copies/mL}$.
 (a) What stage of HIV infection does this represent? (b) Explain how HIV depletes $\mathrm{CD4}^+$
 cells. (c) Explain why opportunistic infections occur at this stage. (d) Explain how antiretroviral
 therapy (ART) works.
@@ -1492,7 +1492,7 @@ antibodies; it is mediated by sensitised T cells.
 
 The adaptive immune system must be able to recognise an essentially unlimited number of different
 antigens (estimated $> 10^{11}$ different specificities). However, the human genome contains only
-approximately $20{,}000$ protein-coding genes. The solution is the generation of antibody diversity
+approximately $20\,000$ protein-coding genes. The solution is the generation of antibody diversity
 through combinatorial and somatic mechanisms during B cell development in the bone marrow.
 
 ### Antibody Structure Recap
@@ -1578,7 +1578,7 @@ single B cell clone.
 $\kappa$ light chain: $38 \times 5 = 190$.
 $\lambda$ light chain: $29 \times 4 = 116$.
 Total light chain: $190 + 116 = 306$.
-Combinatorial diversity: $7128 \times 306 = 2{,}181{,}168 \approx 2.2 \times 10^6$.
+Combinatorial diversity: $7128 \times 306 = 2\,181\,168 \approx 2.2 \times 10^6$.
 
 (b) With junctional diversity ($\times 10^7$ for heavy chain):
 $7128 \times 10^7 \times 306 = 2.2 \times 10^{13}$.

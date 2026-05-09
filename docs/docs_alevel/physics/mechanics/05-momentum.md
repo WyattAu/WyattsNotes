@@ -218,7 +218,7 @@ $p_i = 1500(20) + 1000(-15) = 30000 - 15000 = 15000$ kg m s$^{-1}$.
 $v = \frac{15000}{2500} = 6.0$ m s$^{-1}$ (in the original direction of the first car).
 
 KE lost:
-$\Delta E_k = \frac{m_1 m_2}{2(m_1+m_2)}(u_1 - u_2)^2 = \frac{1500 \times 1000}{2 \times 2500}(20-(-35))^2 = 300 \times 1225 = 367{,}500$
+$\Delta E_k = \frac{m_1 m_2}{2(m_1+m_2)}(u_1 - u_2)^2 = \frac{1500 \times 1000}{2 \times 2500}(20-(-35))^2 = 300 \times 1225 = 367\,500$
 J.
 
 <b>If you get this wrong, revise:</b> [Inelastic Collision](#inelastic-collision)
@@ -260,7 +260,7 @@ $\frac{48/338}{1/2} = \frac{48}{169} = \frac{48}{169} = 0.284 = 28.4\%$.
 A cricket ball of mass $0.16$ kg is bowled at $35$ m s$^{-1}$ and hit straight back at $40$ m s$^{-1}$. Contact time is $0.001$ s. Find the average force exerted by the bat.
 
 **Answer.** Taking the direction of the hit as positive:
-$J = 0.16(40 - (-35)) = 0.16 \times 75 = 12$ N s. $F = 12/0.001 = 12{,}000$ N $= 12$ kN.
+$J = 0.16(40 - (-35)) = 0.16 \times 75 = 12$ N s. $F = 12/0.001 = 12\,000$ N $= 12$ kN.
 
 <b>If you get this wrong, revise:</b> [Impulse](#3-impulse)
 

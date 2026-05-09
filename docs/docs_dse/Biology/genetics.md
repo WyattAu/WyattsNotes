@@ -1009,7 +1009,7 @@ If you get this wrong, revise: Genetic Engineering Techniques -- Polymerase Chai
 <details>
 <summary>Solution</summary>
 
-After 30 cycles: $N = 5 \times 2^{30} = 5 \times 1{,}073{,}741{,}824 = 5{,}368{,}709{,}120$ DNA molecules.
+After 30 cycles: $N = 5 \times 2^{30} = 5 \times 1\,073\,741\,824 = 5\,368\,709\,120$ DNA molecules.
 
 PCR is necessary because the amount of DNA in a tiny blood stain is far too small for direct analysis. PCR amplifies specific STR loci to produce millions of copies, providing sufficient DNA for gel electrophoresis and comparison. Without PCR, the DNA profile could not be obtained from trace evidence.
 

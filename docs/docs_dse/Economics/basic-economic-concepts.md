@@ -1278,7 +1278,7 @@ Hong Kong's housing market has the following characteristics: average flat price
 <details>
 <summary>Solution</summary>
 
-(a) Months of income $= 6{,}000{,}000 / 27{,}500 = 218$ months $= 18.2$ years. This assumes the household saves 100% of income, which is impossible. With a 50% savings rate, it would take 36.4 years.
+(a) Months of income $= 6\,000\,000 / 27\,500 = 218$ months $= 18.2$ years. This assumes the household saves 100% of income, which is impossible. With a 50% savings rate, it would take 36.4 years.
 
 (b) The market failures justifying government intervention in housing:
 
@@ -1290,11 +1290,11 @@ Hong Kong's housing market has the following characteristics: average flat price
 
 4. **Information asymmetry:** Quality and safety standards in housing are difficult for individual buyers/renters to assess, creating a role for government regulation (building codes, safety inspections).
 
-(c) Implicit monthly subsidy $= 15{,}000 - 2{,}000 = \text{HK}\$13{,}000$.
+(c) Implicit monthly subsidy $= 15\,000 - 2\,000 = \text{HK}\$13\,000$.
 
-Annual subsidy $= 13{,}000 \times 12 = \text{HK}\$156{,}000$.
+Annual subsidy $= 13\,000 \times 12 = \text{HK}\$156\,000$.
 
-With approximately 2 million PRH residents (30% of 7.5 million population, ~700,000 households): total annual subsidy $= 700{,}000 \times 156{,}000 = \text{HK}\$109.2$ billion. This is a substantial fiscal commitment.
+With approximately 2 million PRH residents (30% of 7.5 million population, ~700,000 households): total annual subsidy $= 700\,000 \times 156\,000 = \text{HK}\$109.2$ billion. This is a substantial fiscal commitment.
 
 (d) **Evaluation:**
 
@@ -1373,23 +1373,23 @@ The student's discount rate is 6% per annum. The student graduates in one year a
 <details>
 <summary>Solution</summary>
 
-(a) **Option A (Internship):** NPV $= 15{,}000 \times 2 = \text{HK}\$30{,}000$.
+(a) **Option A (Internship):** NPV $= 15\,000 \times 2 = \text{HK}\$30\,000$.
 
-**Option B (Summer school):** Cost $= 30{,}000$. Benefit $= 5{,}000/month \times 36$ months $= 180{,}000$ (nominal), but this starts one year from now.
+**Option B (Summer school):** Cost $= 30\,000$. Benefit $= 5\,000/month \times 36$ months $= 180\,000$ (nominal), but this starts one year from now.
 
 NPV of benefits $= \sum_{t=13}^{48} \frac{5000}{(1.005)^t}$ where the monthly discount rate $= 0.5\%$.
 
-Approximation: annual discount rate $= 6\%$. PV of annuity of 3 years starting in 1 year $= \frac{5000 \times 12}{0.06} \times \frac{1 - 1.06^{-3}}{1.06} = \frac{60{,}000}{0.06} \times \frac{1 - 0.8396}{1.06} = 1{,}000{,}000 \times 0.1515 = 151{,}500$.
+Approximation: annual discount rate $= 6\%$. PV of annuity of 3 years starting in 1 year $= \frac{5000 \times 12}{0.06} \times \frac{1 - 1.06^{-3}}{1.06} = \frac{60\,000}{0.06} \times \frac{1 - 0.8396}{1.06} = 1\,000\,000 \times 0.1515 = 151\,500$.
 
-NPV of Option B $= 151{,}500 - 30{,}000 = \text{HK}\$121{,}500$.
+NPV of Option B $= 151\,500 - 30\,000 = \text{HK}\$121\,500$.
 
-**Option C (Travel):** NPV $= \text{HK}\$20{,}000$.
+**Option C (Travel):** NPV $= \text{HK}\$20\,000$.
 
 (b) Option B has the highest NPV (HK$121,500). The opportunity cost of choosing Option B is the next best alternative: Option A with NPV of HK$30,000. (The opportunity cost is the foregone value, not the cost of the chosen option.)
 
-(c) With 10 years of work: PV of benefits $= \frac{60{,}000}{0.06} \times \frac{1 - 1.06^{-10}}{1.06} = 1{,}000{,}000 \times \frac{1 - 0.5584}{1.06} = 1{,}000{,}000 \times 0.4183 = 418{,}300$.
+(c) With 10 years of work: PV of benefits $= \frac{60\,000}{0.06} \times \frac{1 - 1.06^{-10}}{1.06} = 1\,000\,000 \times \frac{1 - 0.5584}{1.06} = 1\,000\,000 \times 0.4183 = 418\,300$.
 
-NPV of Option B $= 418{,}300 - 30{,}000 = \text{HK}\$388{,}300$.
+NPV of Option B $= 418\,300 - 30\,000 = \text{HK}\$388\,300$.
 
 Option B becomes even more attractive with a longer working horizon because the salary increase compounds over more years.
 

@@ -363,7 +363,7 @@ At STP, an air molecule undergoes roughly $7 \times 10^9$ collisions per second.
 <summary>Problem 1</summary>
 Calculate the energy required to heat 2.0 kg of water from 20°C to 80°C. The specific heat capacity of water is 4200 J kg$^{-1}$ K$^{-1}$.
 
-**Answer.** $Q = mc\Delta T = 2.0 \times 4200 \times 60 = 504{,}000$ J $= 504$ kJ.
+**Answer.** $Q = mc\Delta T = 2.0 \times 4200 \times 60 = 504\,000$ J $= 504$ kJ.
 
 <b>If you get this wrong, revise:</b> [Specific Heat Capacity](#2-specific-heat-capacity)
 
@@ -396,7 +396,7 @@ mol.
 Calculate the rms speed of nitrogen molecules ($M_r = 0.028$ kg mol$^{-1}$) at 250 K.
 
 **Answer.**
-$v_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.31 \times 250}{0.028}} = \sqrt{\frac{6232.5}{0.028}} = \sqrt{222{,}589} = 472$
+$v_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.31 \times 250}{0.028}} = \sqrt{\frac{6232.5}{0.028}} = \sqrt{222\,589} = 472$
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
@@ -408,7 +408,7 @@ m s$^{-1}$.
 A gas cylinder of volume 0.050 m$^3$ contains oxygen at 200 kPa and 280 K. If the temperature rises to 350 K and the volume increases to 0.060 m$^3$, what is the new pressure?
 
 **Answer.** Using $p_1V_1/T_1 = p_2V_2/T_2$:
-$p_2 = \frac{p_1V_1T_2}{V_2T_1} = \frac{200{,}000 \times 0.050 \times 350}{0.060 \times 280} = \frac{3{,}500{,}000}{16.8} = 208{,}333$
+$p_2 = \frac{p_1V_1T_2}{V_2T_1} = \frac{200\,000 \times 0.050 \times 350}{0.060 \times 280} = \frac{3\,500\,000}{16.8} = 208\,333$
 Pa $\approx 208$ kPa.
 
 <b>If you get this wrong, revise:</b> [Ideal Gas Laws](#3-ideal-gas-laws)
@@ -437,8 +437,8 @@ Since $\langle E_k\rangle = \frac{1}{2}m\langle v^2\rangle$: $\langle E_k\rangle
 <summary>Problem 7</summary>
 A 200 W heater is used to heat 0.80 kg of oil. The oil temperature rises from 20°C to 80°C in 8.0 minutes. Calculate the specific heat capacity of the oil.
 
-**Answer.** $Q = Pt = 200 \times 480 = 96{,}000$ J.
-$c = Q/(m\Delta T) = 96{,}000/(0.80 \times 60) = 2000$ J kg$^{-1}$ K$^{-1}$.
+**Answer.** $Q = Pt = 200 \times 480 = 96\,000$ J.
+$c = Q/(m\Delta T) = 96\,000/(0.80 \times 60) = 2000$ J kg$^{-1}$ K$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Specific Heat Capacity](#2-specific-heat-capacity)
 
@@ -466,7 +466,7 @@ $m_w c_w (T_w - T_f) = m_c c_c (T_f - T_c)$
 
 $0.250 \times 4200 \times 15 = 0.150 \times c_c \times 55$
 
-$15{,}750 = 8.25\,c_c$. $c_c = 1909$ J kg$^{-1}$ K$^{-1}$.
+$15\,750 = 8.25\,c_c$. $c_c = 1909$ J kg$^{-1}$ K$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Specific Heat Capacity](#2-specific-heat-capacity)
 
@@ -568,7 +568,7 @@ $U_{\mathrm{per molecule}} = \frac{5}{2}k_BT = \frac{5}{2} \times 1.381 \times 1
 J.
 
 (c) Total for 2.0 mol:
-$U = n \times \frac{5}{2}RT = 2.0 \times \frac{5}{2} \times 8.31 \times 350 = 14{,}543$ J
+$U = n \times \frac{5}{2}RT = 2.0 \times \frac{5}{2} \times 8.31 \times 350 = 14\,543$ J
 $\approx 14.5$ kJ.
 
 <b>If you get this wrong, revise:</b> [Equipartition Theorem](#6-equipartition-theorem)
@@ -608,10 +608,10 @@ $L_f = 3.34 \times 10^5$ J kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$.
 1. Ice $-10$°C to 0°C: $Q_1 = 0.010 \times 2100 \times 10 = 210$ J
 2. Melting at 0°C: $Q_2 = 0.010 \times 3.34 \times 10^5 = 3340$ J
 3. Water 0°C to 100°C: $Q_3 = 0.010 \times 4200 \times 100 = 4200$ J
-4. Boiling at 100°C: $Q_4 = 0.010 \times 2.26 \times 10^6 = 22{,}600$ J
+4. Boiling at 100°C: $Q_4 = 0.010 \times 2.26 \times 10^6 = 22\,600$ J
 5. Steam 100°C to 110°C: $Q_5 = 0.010 \times 2010 \times 10 = 201$ J
 
-$Q_{\mathrm{total}} = 210 + 3340 + 4200 + 22{,}600 + 201 = 30{,}551$ J $\approx 30.6$ kJ.
+$Q_{\mathrm{total}} = 210 + 3340 + 4200 + 22\,600 + 201 = 30\,551$ J $\approx 30.6$ kJ.
 
 Note that vaporisation ($Q_4$) dominates -- it requires about 7 times more energy than heating water
 through the same temperature range ($Q_3$).

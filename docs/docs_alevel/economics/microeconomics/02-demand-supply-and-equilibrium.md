@@ -541,7 +541,7 @@ $\mathrm{DWL} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times 10 \ti
 
 ### 12.1 Using YED to Classify Goods
 
-**Example.** When average income rises from $£30{,}000$ to $£33{,}000$, demand for bus travel falls
+**Example.** When average income rises from $£30\,000$ to $£33\,000$, demand for bus travel falls
 from 500 to 475 journeys per week, while demand for foreign holidays rises from 200 to 230 per week.
 Calculate YED for each and classify the goods.
 
@@ -814,17 +814,17 @@ Actually, the guaranteed price is typically ABOVE the market equilibrium. Let me
 $Q_D = 500 - 280 = 220$. $Q_S = 420 - 100 = 320$.
 Excess supply: $320 - 220 = 100$ tonnes. The government must buy 100 tonnes.
 
-**Cost to the government:** $140 \times 100 = \pounds 14{,}000$.
+**Cost to the government:** $140 \times 100 = \pounds 14\,000$.
 
 **Welfare analysis:**
-CS before: $\frac{1}{2}(250 - 120)(260) = 16{,}900$. (Demand choke price: $Q = 0 \Rightarrow P = 250$.)
-CS after: $\frac{1}{2}(250 - 140)(220) = 12{,}100$. Change: $-4{,}800$.
+CS before: $\frac{1}{2}(250 - 120)(260) = 16\,900$. (Demand choke price: $Q = 0 \Rightarrow P = 250$.)
+CS after: $\frac{1}{2}(250 - 140)(220) = 12\,100$. Change: $-4\,800$.
 
-PS before: $\frac{1}{2}(120 - 33.33)(260) = 11{,}267$. (Supply choke: $Q = 0 \Rightarrow P = 100/3 = 33.33$.)
-PS after: $\frac{1}{2}(140 - 33.33)(320) = 17{,}067$. Change: $+5{,}800$.
+PS before: $\frac{1}{2}(120 - 33.33)(260) = 11\,267$. (Supply choke: $Q = 0 \Rightarrow P = 100/3 = 33.33$.)
+PS after: $\frac{1}{2}(140 - 33.33)(320) = 17\,067$. Change: $+5\,800$.
 
 Government cost: 14,000.
-Net welfare change: $-4{,}800 + 5{,}800 - 14{,}000 = -13{,}000$.
+Net welfare change: $-4\,800 + 5\,800 - 14\,000 = -13\,000$.
 
 **Deadweight loss:** The price support creates DWL through two channels:
 1. Overproduction: $320 - 260 = 60$ tonnes produced at a cost exceeding the value to consumers. DWL $= \frac{1}{2}(140 - 120)(60) = 600$.
@@ -850,15 +850,15 @@ EV demand increases by 2.0%.
 **Environmental benefit:** If the average petrol car emits 120g/km of $\text{CO}_2$ and the average EV emits 0g/km (indirectly), and each car drives 12,000 km/year:
 $\text{CO}_2$ saved per switched car $= 120 \times 12000 / 10^6 = 1.44$ tonnes/year.
 
-If 2% of the 333,333 car owners switch: $0.02 \times 333{,}333 = 6{,}667$ cars switch.
-Total $\text{CO}_2$ saved $= 6{,}667 \times 1.44 = 9{,}600$ tonnes/year.
+If 2% of the 333,333 car owners switch: $0.02 \times 333\,333 = 6\,667$ cars switch.
+Total $\text{CO}_2$ saved $= 6\,667 \times 1.44 = 9\,600$ tonnes/year.
 
 **Revenue and DWL:**
-Tax revenue $= 20 \times 288.89 = 5{,}778$.
+Tax revenue $= 20 \times 288.89 = 5\,778$.
 DWL $= \frac{1}{2} \times 20 \times (333.33 - 288.89) = \frac{1}{2} \times 20 \times 44.44 = 444.4$.
 
-**Net environmental benefit:** If the social cost of carbon is GBP 50/tonne: $9{,}600 \times 50 = 480{,}000$.
-Net benefit $= 480{,}000 - 444.4 = 479{,}556$. The tax generates a large net social benefit through the EV switching channel, far exceeding the DWL.
+**Net environmental benefit:** If the social cost of carbon is GBP 50/tonne: $9\,600 \times 50 = 480\,000$.
+Net benefit $= 480\,000 - 444.4 = 479\,556$. The tax generates a large net social benefit through the EV switching channel, far exceeding the DWL.
 
 ### 10.4 Subsidy Analysis with Elasticity
 
@@ -876,7 +876,7 @@ Producer receives: $P_p = 2812.5 + 500 = 3312.5$. Producers gain $3312.5 - 3125 
 Consumers bear a larger share because demand is less elastic than supply:
 $PED = -0.5 \times 3125/3750 = -0.417$ (inelastic). $PES = (1/0.3) \times 3125/3750 = 2.78$ (elastic).
 
-**Government cost:** $500 \times 4375 = 2{,}187{,}500$.
+**Government cost:** $500 \times 4375 = 2\,187\,500$.
 
 **Positive externality correction:** If the marginal external benefit per solar panel is GBP 600 (reduced pollution, energy security):
 Social optimum: $MSB = MPB + 500$. $5000 + 500 - 0.5Q = 2000 + 0.3Q \Rightarrow 3500 = 0.8Q \Rightarrow Q = 4375$.
@@ -950,7 +950,7 @@ Since the target price (200) is BELOW the market price (240), the buffer stock i
 At $P = 280$: $Q_D = 1000 - 560 = 440$. $Q_S = 840 - 200 = 640$.
 Excess supply $= 640 - 440 = 200$ tonnes. The government buys 200 tonnes and stores them.
 
-**Cost to government:** $280 \times 200 = 56{,}000$.
+**Cost to government:** $280 \times 200 = 56\,000$.
 Storage cost: GBP 10/tonne/year. Annual storage cost $= 2000$.
 
 **If a bad harvest reduces supply:** New supply $Q_S = 2P - 100$.
@@ -962,15 +962,15 @@ Government releases: enough to push price to 280. At $P = 280$: $Q_D = 440$, $Q_
 $1000 - 2P = P \Rightarrow P = 333.33$, $Q = 333.33$.
 Market price (333.33) is above target (280). The government sells stocks: $Q_D(280) = 440$, $Q_S(280) = 80$. Shortage $= 360$. The government sells 360 tonnes from its buffer stock.
 
-Revenue from sales: $280 \times 360 = 100{,}800$.
+Revenue from sales: $280 \times 360 = 100\,800$.
 
 **Buffer stock balance sheet:**
 - Bought: 200 tonnes at 280 = 56,000.
 - Sold: 360 tonnes at 280 = 100,800.
 - Storage costs: 200 tonnes x 10/tonne x N years.
-- Net profit: $100{,}800 - 56{,}000 - 2000N = 44{,}800 - 2000N$.
+- Net profit: $100\,800 - 56\,000 - 2000N = 44\,800 - 2000N$.
 
-If stored for 5 years: net profit $= 44{,}800 - 10{,}000 = 34{,}800$.
+If stored for 5 years: net profit $= 44\,800 - 10\,000 = 34\,800$.
 If stored for 22.4 years: net profit $= 0$.
 
 **Problems with buffer stock schemes:**

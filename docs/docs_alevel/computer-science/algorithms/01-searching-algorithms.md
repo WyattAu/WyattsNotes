@@ -547,7 +547,7 @@ the binary search worst case.
 **Linear search:** Worst case = 500,000 comparisons. Time complexity: $O(n)$.
 
 **Binary search:** Worst case =
-$\lfloor \log_2(500{,}000) \rfloor + 1 = \lfloor 18.93 \rfloor + 1 = 19$ comparisons. Time
+$\lfloor \log_2(500\,000) \rfloor + 1 = \lfloor 18.93 \rfloor + 1 = 19$ comparisons. Time
 complexity: $O(\log n)$.
 
 Binary search is dramatically more efficient — at most 19 comparisons versus 500,000 for linear
@@ -682,7 +682,7 @@ binary search.
 <summary>Answer</summary>
 
 **(a) Binary search.** The ISBN catalogue is sorted and stored in an array with random access.
-Binary search requires at most $\lfloor \log_2(20{,}000) \rfloor + 1 = 15$ comparisons, compared to
+Binary search requires at most $\lfloor \log_2(20\,000) \rfloor + 1 = 15$ comparisons, compared to
 20,000 for linear search. This is efficient and appropriate since no preprocessing is needed.
 
 **(b) Linear search.** The list of 50 recently returned books is unsorted and small. Linear search
@@ -692,8 +692,8 @@ search is optimal. If many repeated searches were needed, sorting first and usin
 comparisons max) would become worthwhile after approximately 6 searches ($282 / 50 \approx 5.6$).
 
 **(c) Binary search.** The price catalogue is sorted by ISBN with random access. Binary search finds
-the ISBN in $O(\log 20{,}000) \approx 15$ comparisons, then retrieves the price at that index in
-$O(1)$. Linear search would require $O(20{,}000)$ comparisons — unnecessary when the data is already
+the ISBN in $O(\log 20\,000) \approx 15$ comparisons, then retrieves the price at that index in
+$O(1)$. Linear search would require $O(20\,000)$ comparisons — unnecessary when the data is already
 sorted.
 
 **Summary:**

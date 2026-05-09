@@ -909,8 +909,8 @@ The fixed exchange rate results in a deeper recession (-140 vs -50). However, th
 Export revenue (index): $P_X \times X$. Import expenditure (index): $P_M \times M$.
 
 If export volumes are 100 and import volumes are 80:
-2020: Export revenue $= 100 \times 100 = 10{,}000$. Import cost $= 100 \times 80 = 8{,}000$. Trade surplus $= 2{,}000$.
-2022: Export revenue $= 150 \times 100 = 15{,}000$ (assuming volumes unchanged). Import cost $= 115 \times 80 = 9{,}200$. Trade surplus $= 5{,}800$.
+2020: Export revenue $= 100 \times 100 = 10\,000$. Import cost $= 100 \times 80 = 8\,000$. Trade surplus $= 2\,000$.
+2022: Export revenue $= 150 \times 100 = 15\,000$ (assuming volumes unchanged). Import cost $= 115 \times 80 = 9\,200$. Trade surplus $= 5\,800$.
 
 The terms of trade improvement increased the trade surplus by 3,800 (from 2,000 to 5,800), even though volumes did not change.
 
@@ -920,7 +920,7 @@ If $PED_X = -0.3$ and $PED_M = -0.5$:
 2021: Export prices up 20%. Export volumes fall by $0.3 \times 20 = 6\%$ to 94.
 Import prices up 5%. Import volumes fall by $0.5 \times 5 = 2.5\%$ to 78.
 
-Export revenue $= 120 \times 94 = 11{,}280$. Import cost $= 105 \times 78 = 8{,}190$. Trade surplus $= 3{,}090$.
+Export revenue $= 120 \times 94 = 11\,280$. Import cost $= 105 \times 78 = 8\,190$. Trade surplus $= 3\,090$.
 
 The volume effects reduce the gain from the ToT improvement (3,090 vs 3,920 without volume effects), but the ToT improvement still increases the trade surplus because the demand for both exports and imports is inelastic.
 

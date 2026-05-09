@@ -623,7 +623,7 @@ At equilibrium: $n(\mathrm{N}_2\mathrm{O}_4) = 1.00 - x$, $n(\mathrm{NO}_2) = 2x
 Total pressure: use $pV = nRT$:
 
 $$
-p_\mathrm{total} = \frac{(1.00 + x)RT}{V} = \frac{(1.00 + x) \times 8.314 \times 298}{10.0 \times 10^{-3}} = (1.00 + x) \times 247{,}700\,\mathrm{Pa}
+p_\mathrm{total} = \frac{(1.00 + x)RT}{V} = \frac{(1.00 + x) \times 8.314 \times 298}{10.0 \times 10^{-3}} = (1.00 + x) \times 247\,700\,\mathrm{Pa}
 $$
 
 Partial pressures: $p(\mathrm{N}_2\mathrm{O}_4) = \frac{1.00 - x}{1.00 + x} \times p_\mathrm{total}$, $p(\mathrm{NO}_2) = \frac{2x}{1.00 + x} \times p_\mathrm{total}$.

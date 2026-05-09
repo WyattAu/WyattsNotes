@@ -53,9 +53,9 @@ A 65 kg male office worker has a BMR of approximately 7000 kJ/day. His physical 
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{Total Energy} = \mathrm{BMR} + \mathrm{Physical Activity} + \mathrm{SDA} = 7000 + 3000 + 1000 = 11{,}000 \mathrm{ kJ/day}$
+(a) $\mathrm{Total Energy} = \mathrm{BMR} + \mathrm{Physical Activity} + \mathrm{SDA} = 7000 + 3000 + 1000 = 11\,000 \mathrm{ kJ/day}$
 
-(b) If physical activity doubles to 6000 kJ/day: $\mathrm{Total Energy} = 7000 + 6000 + 1000 = 14{,}000 \mathrm{ kJ/day}$. This is a 27% increase, demonstrating that physical activity is a major component for active individuals.
+(b) If physical activity doubles to 6000 kJ/day: $\mathrm{Total Energy} = 7000 + 6000 + 1000 = 14\,000 \mathrm{ kJ/day}$. This is a 27% increase, demonstrating that physical activity is a major component for active individuals.
 
 (c) Carbohydrates are the primary energy source for exercise. A high-carbohydrate diet maximises glycogen stores in muscles and the liver, providing readily available energy during prolonged exercise. This spares protein from being broken down for energy, preserving muscle mass. Carbohydrates also yield more energy per unit of oxygen consumed than fats, making them more efficient during intense exercise.
 

@@ -717,15 +717,15 @@ If you get this wrong, revise: Classification of Microorganisms -- Bacteria (Rep
 
 (a) Number of divisions in 2 hours (120 minutes): $n = 120 / 20 = 6$
 
-Population = $500 \times 2^6 = 500 \times 64 = 32{,}000$
+Population = $500 \times 2^6 = 500 \times 64 = 32\,000$
 
 (b) Number of divisions in 3 hours (180 minutes): $n = 180 / 20 = 9$
 
-Population = $500 \times 2^9 = 500 \times 512 = 256{,}000$
+Population = $500 \times 2^9 = 500 \times 512 = 256\,000$
 
-(c) We need $500 \times 2^n = 32{,}000$
+(c) We need $500 \times 2^n = 32\,000$
 
-$2^n = 32{,}000 / 500 = 64 = 2^6$
+$2^n = 32\,000 / 500 = 64 = 2^6$
 
 $n = 6$
 
@@ -761,9 +761,9 @@ If you get this wrong, revise: Biotechnology -- Polymerase Chain Reaction (PCR)
 <details>
 <summary>Solution</summary>
 
-(a) After 30 cycles: $N = 10 \times 2^{30} = 10 \times 1{,}073{,}741{,}824 = 10{,}737{,}418{,}240$ DNA molecules
+(a) After 30 cycles: $N = 10 \times 2^{30} = 10 \times 1\,073\,741\,824 = 10\,737\,418\,240$ DNA molecules
 
-(b) Total base pairs = $10{,}737{,}418{,}240 \times 300 = 3.221 \times 10^{12}$ base pairs
+(b) Total base pairs = $10\,737\,418\,240 \times 300 = 3.221 \times 10^{12}$ base pairs
 
 </details>
 

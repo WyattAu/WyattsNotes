@@ -782,7 +782,7 @@ Average tax rate at different income levels:
 **Numerical example:** GDP = GBP 2,200bn, tax revenue = GBP 500bn. GDP falls 5% to 2,090bn.
 Tax revenue falls by $500 \times 0.05 \times 1.2 = 30$. New tax revenue = 470bn.
 
-Simultaneously, unemployment benefit spending rises. Unemployment goes from 4% to 7% (1.02 million additional unemployed). Additional UB cost $= 1.02 \times 15{,}000 = 15.3$bn.
+Simultaneously, unemployment benefit spending rises. Unemployment goes from 4% to 7% (1.02 million additional unemployed). Additional UB cost $= 1.02 \times 15\,000 = 15.3$bn.
 
 **Automatic stabiliser magnitude:** The budget deficit automatically widens by $30 + 15.3 = 45.3$bn. This is equivalent to a fiscal stimulus of $45.3 / 2090 = 2.2\%$ of GDP, implemented with zero legislative delay.
 

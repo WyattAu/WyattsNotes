@@ -2674,17 +2674,17 @@ $\text{MR} = \text{MC}: 160 - Q = 20 \implies Q = 140$
 
 $P = 160 - 70 = 90$
 
-$\pi = 90 \times 140 - 20 \times 140 - 500 = 12{,}600 - 2{,}800 - 500 = 9{,}300$
+$\pi = 90 \times 140 - 20 \times 140 - 500 = 12\,600 - 2\,800 - 500 = 9\,300$
 
 **With price discrimination:**
 
-Market 1: $Q_1 = (200 - 20)/2 = 90$, $P_1 = 110$. $\pi_1 = 110 \times 90 - 20 \times 90 = 8{,}100$
+Market 1: $Q_1 = (200 - 20)/2 = 90$, $P_1 = 110$. $\pi_1 = 110 \times 90 - 20 \times 90 = 8\,100$
 
-Market 2: $Q_2 = (120 - 20)/2 = 50$, $P_2 = 70$. $\pi_2 = 70 \times 50 - 20 \times 50 = 2{,}500$
+Market 2: $Q_2 = (120 - 20)/2 = 50$, $P_2 = 70$. $\pi_2 = 70 \times 50 - 20 \times 50 = 2\,500$
 
-$\pi = 8{,}100 + 2{,}500 - 500 = 10{,}100$
+$\pi = 8\,100 + 2\,500 - 500 = 10\,100$
 
-Price discrimination increases profit by $10{,}100 - 9{,}300 = 800$.
+Price discrimination increases profit by $10\,100 - 9\,300 = 800$.
 
 Total output: $90 + 50 = 140$ (same as without discrimination, because MC is constant).
 
@@ -2945,9 +2945,9 @@ $= 150(30-p)^2 + (p-5)(10000 - 300p)$
 
 $= 150(900 - 60p + p^2) + 10000p - 50000 - 300p^2 + 1500p$
 
-$= 135{,}000 - 9000p + 150p^2 - 50000 + 11500p - 300p^2$
+$= 135\,000 - 9000p + 150p^2 - 50000 + 11500p - 300p^2$
 
-$= 85{,}000 + 2500p - 150p^2$
+$= 85\,000 + 2500p - 150p^2$
 
 $\frac{d\pi}{dp} = 2500 - 300p = 0 \implies p = 2500/300 = 8.33$
 
@@ -2955,15 +2955,15 @@ $F = (30 - 8.33)^2 / 2 = 21.67^2 / 2 = 469.4/2 = 234.7$
 
 $\pi = 300(234.7) + 3.33[100(41.67) + 200(21.67)]$
 
-$= 70{,}410 + 3.33[4{,}167 + 4{,}334] = 70{,}410 + 3.33(8{,}501) = 70{,}410 + 28{,}308 = 98{,}718$
+$= 70\,410 + 3.33[4\,167 + 4\,334] = 70\,410 + 3.33(8\,501) = 70\,410 + 28\,308 = 98\,718$
 
 (b) Serve only type A: $F = \text{CS}_A$ at $p = 5$:
 
 $\text{CS}_A = \frac{1}{2}(50-5)(45) = 1012.5$
 
-$\pi = 100 \times 1012.5 + 0 = 101{,}250$
+$\pi = 100 \times 1012.5 + 0 = 101\,250$
 
-(c) Strategy 2 (serve only type A) yields higher profit: $101{,}250 > 98{,}718$.
+(c) Strategy 2 (serve only type A) yields higher profit: $101\,250 > 98\,718$.
 
 The club should set a high membership fee ($F = 1012.5$) and a low per-round fee ($p = 5$),
 serving only avid golfers. This is the classic exclusion result: the firm excludes

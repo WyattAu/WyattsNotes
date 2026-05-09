@@ -205,7 +205,7 @@ deduction and standard library internals:
 For a project with $N = 500$ translation units, the total wall-clock time for this template alone
 is:
 
-- **Without `extern template`:** $500 \times 28\mathrm{ms} = 14{,}000\mathrm{ms} = 14\mathrm{s}$
+- **Without `extern template`:** $500 \times 28\mathrm{ms} = 14\,000\mathrm{ms} = 14\mathrm{s}$
 - **With `extern template`:**
   $499 \times 3\mathrm{ms} + 1 \times 28\mathrm{ms} = 1525\mathrm{ms} \approx 1.5\mathrm{s}$
 

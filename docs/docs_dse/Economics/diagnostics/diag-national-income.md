@@ -142,9 +142,9 @@ Country B: GDP per capita $= \frac{500}{10} = \$50,000$.
 
 $$GDP = \text{Compensation of employees} + \text{Gross operating surplus} + \text{Gross mixed income} + \text{Taxes on production} - \text{Subsidies}$$
 
-$$GDP = 600 + 350 + 100 + 80 - 30 = \text{HK}\$1{,}100 \text{ billion}$$
+$$GDP = 600 + 350 + 100 + 80 - 30 = \text{HK}\$1\,100 \text{ billion}$$
 
-(b) GNP $= GDP + \text{Net factor income from abroad} = 1100 + (-15) = \text{HK}\$1{,}085$ billion.
+(b) GNP $= GDP + \text{Net factor income from abroad} = 1100 + (-15) = \text{HK}\$1\,085$ billion.
 
 NNP $= GNP - \text{Depreciation} = 1085 - 120 = \text{HK}\$965$ billion.
 
@@ -152,7 +152,7 @@ National Income $= NNP - \text{Indirect taxes} + \text{Subsidies} = 965 - 80 + 3
 
 (c) The three approaches yield the same result because every transaction in the economy has two sides. When a consumer buys a good for $\$100$ (expenditure approach), the $\$100$ becomes income for the producer (income approach), who uses it to pay wages, rent, and profit. The good was produced using resources valued at $\$100$ (output approach). This is the circular flow of income: expenditure $\rightarrow$ income $\rightarrow$ production $\rightarrow$ expenditure.
 
-(d) The HK$50 billion earned from a subsidiary in Vietnam is **factor income from abroad**. It is included in GNP (which counts income earned by residents regardless of location) but not in GDP (which counts production within geographical borders). This means GNP $>$ GDP in this case, if this income exceeds the income earned by foreign-owned factors in Hong Kong. If net factor income from abroad becomes $+35$ billion (50 earned abroad minus 15 paid to foreigners), then GNP $= 1100 + 35 = \text{HK}\$1{,}135$ billion.
+(d) The HK$50 billion earned from a subsidiary in Vietnam is **factor income from abroad**. It is included in GNP (which counts income earned by residents regardless of location) but not in GDP (which counts production within geographical borders). This means GNP $>$ GDP in this case, if this income exceeds the income earned by foreign-owned factors in Hong Kong. If net factor income from abroad becomes $+35$ billion (50 earned abroad minus 15 paid to foreigners), then GNP $= 1100 + 35 = \text{HK}\$1\,135$ billion.
 
 ### EQ-2: Inflation Measurement and Real Values
 
@@ -164,14 +164,14 @@ National Income $= NNP - \text{Indirect taxes} + \text{Subsidies} = 965 - 80 + 3
 
 (b) Real salary $= \frac{\text{Nominal salary}}{CPI} \times 100$.
 
-- 2018: Real salary $= \frac{20{,}000}{110} \times 100 = \text{HK}\$18{,}182$.
-- 2023: Real salary $= \frac{24{,}000}{132} \times 100 = \text{HK}\$18{,}182$.
+- 2018: Real salary $= \frac{20\,000}{110} \times 100 = \text{HK}\$18\,182$.
+- 2023: Real salary $= \frac{24\,000}{132} \times 100 = \text{HK}\$18\,182$.
 
 (c) The worker's real salary is exactly the same in both years (HK$18,182). Although the nominal salary rose by 20% (from 20,000 to 24,000), prices also rose by 20%, leaving purchasing power unchanged. The 20% nominal increase exactly matched inflation.
 
-(d) With HK$25,000 in 2023: Real salary $= \frac{25{,}000}{132} \times 100 = \text{HK}\$18{,}939$.
+(d) With HK$25,000 in 2023: Real salary $= \frac{25\,000}{132} \times 100 = \text{HK}\$18\,939$.
 
-This is an increase of $\frac{18{,}939 - 18{,}182}{18{,}182} \times 100\% = 4.2\%$ in real terms. The worker's purchasing power has genuinely improved because the nominal salary increase (25%) exceeded inflation (20%).
+This is an increase of $\frac{18\,939 - 18\,182}{18\,182} \times 100\% = 4.2\%$ in real terms. The worker's purchasing power has genuinely improved because the nominal salary increase (25%) exceeded inflation (20%).
 
 ### EQ-3: Unemployment Rate and Hidden Unemployment
 
@@ -263,17 +263,17 @@ However, the Solow model predicts that this growth model has limits. As China ap
 
 ### EQ-5: Hong Kong's Economic Indicators and Living Standards
 
-**Question:** Hong Kong has the following data (2023 estimates): GDP $= \text{HK}\$2.9$ trillion, Population $= 7.5$ million, Gini coefficient $= 0.54$, Life expectancy $= 85.5$ years, Median monthly household income $= \text{HK}\$27{,}500$. (a) Calculate GDP per capita. (b) The Gini coefficient of 0.54 is one of the highest among developed economies. Explain what this means and why it is a limitation of using GDP per capita as a welfare indicator. (c) Calculate the GDP per capita in USD (assuming 1 USD $= 7.8$ HKD) and compare it with the median household income approach to measuring living standards. (d) Suggest three policies Hong Kong could implement to reduce income inequality while maintaining economic efficiency.
+**Question:** Hong Kong has the following data (2023 estimates): GDP $= \text{HK}\$2.9$ trillion, Population $= 7.5$ million, Gini coefficient $= 0.54$, Life expectancy $= 85.5$ years, Median monthly household income $= \text{HK}\$27\,500$. (a) Calculate GDP per capita. (b) The Gini coefficient of 0.54 is one of the highest among developed economies. Explain what this means and why it is a limitation of using GDP per capita as a welfare indicator. (c) Calculate the GDP per capita in USD (assuming 1 USD $= 7.8$ HKD) and compare it with the median household income approach to measuring living standards. (d) Suggest three policies Hong Kong could implement to reduce income inequality while maintaining economic efficiency.
 
 **Solution:**
 
-(a) GDP per capita $= \frac{2{,}900{,}000}{7.5} = \text{HK}\$386{,}667 \approx \text{HK}\$387{,}000$.
+(a) GDP per capita $= \frac{2\,900\,000}{7.5} = \text{HK}\$386\,667 \approx \text{HK}\$387\,000$.
 
 (b) A Gini coefficient of 0.54 means significant income inequality. The Gini ranges from 0 (perfect equality) to 1 (perfect inequality). Hong Kong's 0.54 is higher than most OECD countries (typically 0.25--0.40) and higher than China (0.47) and the US (0.49). GDP per capita of HK$387,000 is an **average** that is heavily skewed by high-income earners. The median household income of HK$27,500 per month (HK$330,000 per year) is considerably lower than the GDP per capita suggests. This means a typical Hong Kong resident's income is well below the average, reflecting the extreme concentration of income at the top.
 
-(c) GDP per capita in USD $= \frac{387{,}000}{7.8} \approx \$49{,}615$.
+(c) GDP per capita in USD $= \frac{387\,000}{7.8} \approx \$49\,615$.
 
-Median household income per capita (assuming average household size of 2.9): $\frac{330{,}000}{2.9} \approx \text{HK}\$113{,}793$ per year $= \$14{,}589$ USD.
+Median household income per capita (assuming average household size of 2.9): $\frac{330\,000}{2.9} \approx \text{HK}\$113\,793$ per year $= \$14\,589$ USD.
 
 The median income per capita is only about 29% of GDP per capita. This massive gap reflects both: (i) income inequality (the Gini coefficient), and (ii) the fact that GDP includes corporate profits, government revenue, and depreciation that do not flow directly to households as personal income.
 

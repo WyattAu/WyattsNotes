@@ -1103,10 +1103,10 @@ their evolutionary history.
 
 **Worked Example: Bottleneck Effect and Genetic Diversity**
 
-A population of $10{,}000$ individuals is reduced to $50$ individuals by a natural disaster (population
+A population of $10\,000$ individuals is reduced to $50$ individuals by a natural disaster (population
 bottleneck). Before the bottleneck, the frequency of a neutral allele $B$ is $0.3$. (a) What is the
 probability that allele $B$ is lost from the population during the bottleneck? (b) After the bottleneck,
-the population recovers to $10{,}000$ individuals. Explain why the genetic diversity of the recovered
+the population recovers to $10\,000$ individuals. Explain why the genetic diversity of the recovered
 population is lower than the original. (c) The bottleneck population has a higher frequency of a rare
 genetic disease (autosomal recessive, allele $d$). Explain this observation.
 
@@ -1123,14 +1123,14 @@ or eliminate alleles. The key point is that rare alleles (low frequency) are muc
 than common alleles. If $B$ had frequency $0.01$, $P(\text{loss}) = 0.99^{100} \approx 0.366$ ($37\%$).
 
 (b) The bottleneck reduces the number of alleles in the population because many alleles present in the
-original $10{,}000$ individuals are not represented among the $50$ survivors. When the population recovers,
+original $10\,000$ individuals are not represented among the $50$ survivors. When the population recovers,
 it can only regenerate the alleles carried by the $50$ founders. The effective population size during
 the bottleneck was very small ($N_e \approx 50$), causing rapid genetic drift that fixed some alleles
 and eliminated others. The recovered population has reduced heterozygosity and fewer alleles (allelic
 richness) compared to the pre-bottleneck population.
 
 This is observed in cheetahs (_Acinonyx jubatus_), which experienced a severe bottleneck approximately
-$10{,}000$ years ago. Modern cheetahs have extremely low genetic diversity and are susceptible to
+$10\,000$ years ago. Modern cheetahs have extremely low genetic diversity and are susceptible to
 disease and reproductive abnormalities.
 
 (c) A rare disease allele ($d$) that was at very low frequency in the original population may, by chance,

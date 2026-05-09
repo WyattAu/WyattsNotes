@@ -920,8 +920,8 @@ strategies for reducing phosphate pollution from agricultural runoff.
 
 **Worked Example: Calculating Net Primary Productivity**
 
-A forest has a gross primary productivity (GPP) of $18{,}000\;\mathrm{kJ/m^2/year}$. The plants in the
-forest respire at a rate of $12{,}000\;\mathrm{kJ/m^2/year}$. (a) Calculate the net primary productivity
+A forest has a gross primary productivity (GPP) of $18\,000\;\mathrm{kJ/m^2/year}$. The plants in the
+forest respire at a rate of $12\,000\;\mathrm{kJ/m^2/year}$. (a) Calculate the net primary productivity
 (NPP). (b) If the ecological efficiency (transfer efficiency between trophic levels) is $10\%$, calculate
 the net secondary productivity of herbivores. (c) If $60\%$ of NPP is used by decomposers, calculate the
 energy available to herbivores. (d) Explain why ecological efficiency is typically low.

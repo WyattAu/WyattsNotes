@@ -764,7 +764,7 @@ def algorithm_p(arr):
 
 **Algorithm Q** uses a modified merge sort that counts inversions during the merge step.
 
-(a) Determine the time complexity of each algorithm. (b) For $n = 10{,}000$, estimate the number of
+(a) Determine the time complexity of each algorithm. (b) For $n = 10\,000$, estimate the number of
 operations for each algorithm. (c) Which algorithm is more efficient and by what factor? Explain
 your reasoning.
 
@@ -795,23 +795,23 @@ inversion count is accumulated during the merge step without changing the merge 
 
 **Time complexity of Q: $O(n \log n)$.**
 
-**(b) Estimated operations for $n = 10{,}000$:**
+**(b) Estimated operations for $n = 10\,000$:**
 
 | Algorithm | Formula      | Operations                                           |
 | --------- | ------------ | ---------------------------------------------------- |
-| P         | $n(n-1)/2$   | $10{,}000 \times 9{,}999 / 2 \approx 49{,}995{,}000$ |
-| Q         | $n \log_2 n$ | $10{,}000 \times 13.3 \approx 133{,}000$             |
+| P         | $n(n-1)/2$   | $10\,000 \times 9\,999 / 2 \approx 49\,995\,000$ |
+| Q         | $n \log_2 n$ | $10\,000 \times 13.3 \approx 133\,000$             |
 
 **(c) Comparison:**
 
 Algorithm Q is significantly more efficient. The ratio is:
 
-$$\frac{n^2/2}{n \log n} = \frac{n}{2 \log_2 n} = \frac{10{,}000}{2 \times 13.3} \approx 376$$
+$$\frac{n^2/2}{n \log n} = \frac{n}{2 \log_2 n} = \frac{10\,000}{2 \times 13.3} \approx 376$$
 
-Algorithm Q is approximately **376 times faster** than Algorithm P for $n = 10{,}000$.
+Algorithm Q is approximately **376 times faster** than Algorithm P for $n = 10\,000$.
 
-**Reasoning:** The difference grows with $n$. For $n = 1{,}000{,}000$, Algorithm P would perform
-$\approx 5 \times 10^{11}$ operations while Algorithm Q performs $\approx 20{,}000{,}000$ — a factor
+**Reasoning:** The difference grows with $n$. For $n = 1\,000\,000$, Algorithm P would perform
+$\approx 5 \times 10^{11}$ operations while Algorithm Q performs $\approx 20\,000\,000$ — a factor
 of 25,000×. This demonstrates the critical importance of choosing algorithms with better asymptotic
 complexity for large inputs.
 

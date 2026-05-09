@@ -1100,13 +1100,13 @@ $$A = PV \times \frac{r(1 + r)^n}{(1 + r)^n - 1}$$
 **Worked example:** A mortgage of `USD 300,000` at 4% annual interest over 25 years (300 monthly
 payments at monthly rate $r = 0.04/12 = 0.00333$):
 
-$$A = 300{,}000 \times \frac{0.00333(1.00333)^{300}}{(1.00333)^{300} - 1}$$
+$$A = 300\,000 \times \frac{0.00333(1.00333)^{300}}{(1.00333)^{300} - 1}$$
 
 $(1.00333)^{300} = e^{300 \times 0.00333} = e^{0.999} \approx 2.715$
 
-$$A = 300{,}000 \times \frac{0.00333 \times 2.715}{2.715 - 1} = 300{,}000 \times \frac{0.00904}{1.715} = 300{,}000 \times 0.00527 = 1581$$
+$$A = 300\,000 \times \frac{0.00333 \times 2.715}{2.715 - 1} = 300\,000 \times \frac{0.00904}{1.715} = 300\,000 \times 0.00527 = 1581$$
 
-Monthly payment $= \$1{,}581$. Total repayment $= 1581 \times 300 = \$474{,}300$. Total interest $= \$174{,}300$.
+Monthly payment $= \$1\,581$. Total repayment $= 1581 \times 300 = \$474\,300$. Total interest $= \$174\,300$.
 
 ### Present Value with Uneven Cash Flows
 
@@ -1116,9 +1116,9 @@ $$PV = \sum_{t=0}^{T} \frac{CF_t}{(1 + r)^t}$$
 cash flows: Year 1: `USD 2,000`, Year 2: `USD 4,000`, Year 3: `USD 5,000`, Year 4: `USD 3,000`.
 Discount rate $= 8\%$.
 
-$$PV = -10{,}000 + \frac{2{,}000}{1.08} + \frac{4{,}000}{1.08^2} + \frac{5{,}000}{1.08^3} + \frac{3{,}000}{1.08^4}$$
+$$PV = -10\,000 + \frac{2\,000}{1.08} + \frac{4\,000}{1.08^2} + \frac{5\,000}{1.08^3} + \frac{3\,000}{1.08^4}$$
 
-$$PV = -10{,}000 + 1851.9 + 3429.4 + 3969.2 + 2205.1 = -10{,}000 + 11{,}455.6 = \$1455.6$$
+$$PV = -10\,000 + 1851.9 + 3429.4 + 3969.2 + 2205.1 = -10\,000 + 11\,455.6 = \$1455.6$$
 
 NPV $> 0$, so the project is viable.
 
@@ -1538,9 +1538,9 @@ A firm produces gadgets with the following cost structure:
 - Variable cost per unit: `USD 30`
 - Selling price per unit: `USD 50`
 
-$$Q_{\text{BE}} = \frac{50{,}000}{50 - 30} = \frac{50{,}000}{20} = 2500 \text{ units}$$
+$$Q_{\text{BE}} = \frac{50\,000}{50 - 30} = \frac{50\,000}{20} = 2500 \text{ units}$$
 
-Break-even revenue $= 50 \times 2500 = \$125{,}000$
+Break-even revenue $= 50 \times 2500 = \$125\,000$
 
 **Contribution margin ratio:** $\frac{P - \text{AVC}}{P} = \frac{20}{50} = 0.4$ (40% of each dollar of
 revenue contributes to covering fixed costs).
@@ -1549,7 +1549,7 @@ revenue contributes to covering fixed costs).
 
 $$Q_{\text{target}} = \frac{\text{TFC} + \pi}{P - \text{AVC}}$$
 
-To earn `USD 20,000` profit: $Q = (50{,}000 + 20{,}000)/20 = 3500$ units.
+To earn `USD 20,000` profit: $Q = (50\,000 + 20\,000)/20 = 3500$ units.
 
 **Margin of safety:** the percentage by which actual output exceeds the break-even output:
 
@@ -1813,26 +1813,26 @@ demand by 30%. Should the firm proceed?
 
 (d) Calculate the margin of safety at the current price and output of 10,000 units.
 
-(a) $Q_{\text{BE}} = \frac{120{,}000}{35 - 15} = \frac{120{,}000}{20} = 6000$ units
+(a) $Q_{\text{BE}} = \frac{120\,000}{35 - 15} = \frac{120\,000}{20} = 6000$ units
 
-Break-even revenue $= 35 \times 6000 = \$210{,}000$
+Break-even revenue $= 35 \times 6000 = \$210\,000$
 
-(b) At 80% capacity: $Q = 0.8 \times 15{,}000 = 12{,}000$ units
+(b) At 80% capacity: $Q = 0.8 \times 15\,000 = 12\,000$ units
 
-$\pi = (35 - 15) \times 12{,}000 - 120{,}000 = 20 \times 12{,}000 - 120{,}000 = 240{,}000 - 120{,}000 = \$120{,}000$
+$\pi = (35 - 15) \times 12\,000 - 120\,000 = 20 \times 12\,000 - 120\,000 = 240\,000 - 120\,000 = \$120\,000$
 
-(c) At `USD 30` price, expected demand $= 10{,}000 \times 1.3 = 13{,}000$ units.
+(c) At `USD 30` price, expected demand $= 10\,000 \times 1.3 = 13\,000$ units.
 
-$\pi_{\text{new}} = (30 - 15) \times 13{,}000 - 120{,}000 = 15 \times 13{,}000 - 120{,}000 = 195{,}000 - 120{,}000 = \$75{,}000$
+$\pi_{\text{new}} = (30 - 15) \times 13\,000 - 120\,000 = 15 \times 13\,000 - 120\,000 = 195\,000 - 120\,000 = \$75\,000$
 
-New break-even: $Q_{\text{BE}} = 120{,}000/(30 - 15) = 8000$ units
+New break-even: $Q_{\text{BE}} = 120\,000/(30 - 15) = 8000$ units
 
 Profit falls from `USD 120,000` to `USD 75,000`. The firm should NOT proceed with the price cut.
-Although revenue increases ($30 \times 13{,}000 = \$390{,}000$ vs. $35 \times 10{,}000 = \$350{,}000$),
+Although revenue increases ($30 \times 13\,000 = \$390\,000$ vs. $35 \times 10\,000 = \$350\,000$),
 the contribution margin per unit falls from $20$ to $15$, and the profit decline outweighs the
 volume gain.
 
-(d) Margin of safety $= (10{,}000 - 6000)/10{,}000 \times 100 = 40\%$
+(d) Margin of safety $= (10\,000 - 6000)/10\,000 \times 100 = 40\%$
 
 The firm can absorb a 40% decline in output before reaching the break-even point.
 
@@ -1988,7 +1988,7 @@ $= \frac{240 + 180 + 210}{160 + 135 + 175} \times 100 = \frac{630}{470} \times 1
 
 (b) **Fisher:**
 
-$P_F = \sqrt{136.0 \times 134.0} = \sqrt{18{,}224} = 135.0$
+$P_F = \sqrt{136.0 \times 134.0} = \sqrt{18\,224} = 135.0$
 
 (c) The Laspeyres index (136.0) overstates inflation because it uses base-period quantities,
   which do not account for consumer substitution away from goods whose relative prices rose most
@@ -2060,10 +2060,10 @@ $\text{NPV}_{\text{high}} = -200 + 60 \times 6.710 = 202.6$
 
 $E[\text{NPV}] = 0.4 \times 1.3 + 0.6 \times 202.6 = 0.52 + 121.56 = 122.08$
 
-$\text{Var}(\text{NPV}) = 0.4(1.3 - 122.08)^2 + 0.6(202.6 - 122.08)^2 = 0.4(14{,}524) + 0.6(6{,}481)$
-$= 5{,}810 + 3{,}889 = 9{,}699$
+$\text{Var}(\text{NPV}) = 0.4(1.3 - 122.08)^2 + 0.6(202.6 - 122.08)^2 = 0.4(14\,524) + 0.6(6\,481)$
+$= 5\,810 + 3\,889 = 9\,699$
 
-$\text{SD}(\text{NPV}) = \sqrt{9{,}699} = \$98.5$ million
+$\text{SD}(\text{NPV}) = \sqrt{9\,699} = \$98.5$ million
 
 The coefficient of variation $= 98.5/122.1 = 0.81$, indicating substantial risk relative to
 expected return.
@@ -2674,23 +2674,23 @@ avoided climate damages of USD 100 billion per year, starting in 20 years and co
 
 $\text{PV of benefits} = \frac{B}{r} \times \frac{1}{(1+r)^{20}}$
 
-At 1.4%: $\text{PV} = \frac{100}{0.014} \times \frac{1}{1.014^{20}} = 7{,}143 \times \frac{1}{1.320} = 5{,}411$ billion
+At 1.4%: $\text{PV} = \frac{100}{0.014} \times \frac{1}{1.014^{20}} = 7\,143 \times \frac{1}{1.320} = 5\,411$ billion
 
-$\text{NPV} = -2{,}000 + 5{,}411 = +3{,}411$ billion
+$\text{NPV} = -2\,000 + 5\,411 = +3\,411$ billion
 
-At 3.5%: $\text{PV} = \frac{100}{0.035} \times \frac{1}{1.035^{20}} = 2{,}857 \times \frac{1}{1.990} = 1{,}436$ billion
+At 3.5%: $\text{PV} = \frac{100}{0.035} \times \frac{1}{1.035^{20}} = 2\,857 \times \frac{1}{1.990} = 1\,436$ billion
 
-$\text{NPV} = -2{,}000 + 1{,}436 = -564$ billion
+$\text{NPV} = -2\,000 + 1\,436 = -564$ billion
 
-At 5%: $\text{PV} = \frac{100}{0.05} \times \frac{1}{1.05^{20}} = 2{,}000 \times \frac{1}{2.653} = 754$ billion
+At 5%: $\text{PV} = \frac{100}{0.05} \times \frac{1}{1.05^{20}} = 2\,000 \times \frac{1}{2.653} = 754$ billion
 
-$\text{NPV} = -2{,}000 + 754 = -1{,}246$ billion
+$\text{NPV} = -2\,000 + 754 = -1\,246$ billion
 
 The project is justified at the Stern rate but not at higher rates.
 
-(b) Break-even: $0 = -2{,}000 + \frac{100}{r(1+r)^{20}}$
+(b) Break-even: $0 = -2\,000 + \frac{100}{r(1+r)^{20}}$
 
-$\frac{100}{r(1+r)^{20}} = 2{,}000$
+$\frac{100}{r(1+r)^{20}} = 2\,000$
 
 $r(1+r)^{20} = 0.05$
 

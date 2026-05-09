@@ -1152,7 +1152,7 @@ A factory produces noise that disturbs 100 nearby residents. The factory's profi
 <details>
 <summary>Solution</summary>
 
-(a) Total external cost $= 100 \times 80{,}000 = \text{HK}\$8$ million per year.
+(a) Total external cost $= 100 \times 80\,000 = \text{HK}\$8$ million per year.
 
 (b) The factory earns HK$5M from operating but creates HK$8M in external costs. Net social benefit of operating without soundproofing $= 5 - 8 = -\text{HK}\$3$ million (negative, so it is inefficient).
 
@@ -1225,17 +1225,17 @@ Hong Kong's fishing grounds are open access. The relationship between the number
 
 (a) Under open access, boats enter until profit per boat $= 0$: Average Revenue per boat $=$ Average Cost.
 
-Total revenue $= 10{,}000 \times C = 10{,}000(100B - 0.5B^2) = 1{,}000{,}000B - 5000B^2$.
+Total revenue $= 10\,000 \times C = 10\,000(100B - 0.5B^2) = 1\,000\,000B - 5000B^2$.
 
-AR per boat $= \frac{TR}{B} = 1{,}000{,}000 - 5000B$.
+AR per boat $= \frac{TR}{B} = 1\,000\,000 - 5000B$.
 
-Set AR $=$ AC: $1{,}000{,}000 - 5000B = 200{,}000$. $5000B = 800{,}000$. $B_{OA} = 160$ boats.
+Set AR $=$ AC: $1\,000\,000 - 5000B = 200\,000$. $5000B = 800\,000$. $B_{OA} = 160$ boats.
 
 (b) Social optimum: Marginal Revenue $=$ Marginal Cost.
 
-$MR = \frac{dTR}{dB} = 1{,}000{,}000 - 10{,}000B$. $MC = 200{,}000$ (cost per boat).
+$MR = \frac{dTR}{dB} = 1\,000\,000 - 10\,000B$. $MC = 200\,000$ (cost per boat).
 
-$1{,}000{,}000 - 10{,}000B = 200{,}000$. $10{,}000B = 800{,}000$. $B^* = 80$ boats.
+$1\,000\,000 - 10\,000B = 200\,000$. $10\,000B = 800\,000$. $B^* = 80$ boats.
 
 (c) Maximum sustainable yield: maximise $C = 100B - 0.5B^2$.
 
@@ -1263,14 +1263,14 @@ A new electronics store sells laptops. High-quality laptops cost the store HK$6,
 <details>
 <summary>Solution</summary>
 
-(a) Expected value $= 0.6 \times 10{,}000 + 0.4 \times 4{,}000 = 6000 + 1600 = \text{HK}\$7{,}600$.
+(a) Expected value $= 0.6 \times 10\,000 + 0.4 \times 4\,000 = 6000 + 1600 = \text{HK}\$7\,600$.
 
 (b) The highest single price the store can charge is HK$7,600 (the expected value to consumers). At this price: high-quality laptops cost HK$6,000 (profit = 1,600 each). Low-quality laptops cost HK$3,000 (profit = 4,600 each).
 
 Both types are profitable, so the store sells both. However, this assumes the store is willing to sell at a price below the high-quality valuation (10,000). If the store tried to charge HK$10,000, consumers would only buy if they knew the laptop was high-quality, which they do not.
 
-(c) Expected warranty cost for high-quality laptop $= 0.10 \times 6{,}000 = \text{HK}\$600$.
-Expected warranty cost for low-quality laptop $= 0.50 \times 3{,}000 = \text{HK}\$1{,}500$.
+(c) Expected warranty cost for high-quality laptop $= 0.10 \times 6\,000 = \text{HK}\$600$.
+Expected warranty cost for low-quality laptop $= 0.50 \times 3\,000 = \text{HK}\$1\,500$.
 
 (d) The warranty can serve as a signalling device if the cost of offering it differs between types. The key condition for a separating equilibrium is that the warranty cost for low-quality producers must be high enough that they prefer not to offer it.
 

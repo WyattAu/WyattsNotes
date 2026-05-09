@@ -869,8 +869,8 @@ $$g = \frac{1727.27 - 1650}{1650} \times 100 = 4.68\%$$
 
 **Per capita adjustment:**
 If population = 68 million:
-$$\text{GDP per capita} = \frac{1900}{68} = \pounds 27{,}941$$
-$$\text{Real GDP per capita} = \frac{1727.27}{68} = \pounds 25{,}395$$
+$$\text{GDP per capita} = \frac{1900}{68} = \pounds 27\,941$$
+$$\text{Real GDP per capita} = \frac{1727.27}{68} = \pounds 25\,395$$
 
 ### 8.2 Inflation Calculations with Weighted Index
 
@@ -1190,14 +1190,14 @@ Country B has a higher HDI despite lower GDP per capita, because it scores highe
 
 **GDP per capita adjusted for inequality (index):**
 Using the Atkinson adjustment with $\epsilon = 1$:
-$y^* = y(1 - G)$. A: $50{,}000 \times (1 - 0.41) = 29{,}500$. B: $30{,}000 \times (1 - 0.28) = 21{,}600$.
+$y^* = y(1 - G)$. A: $50\,000 \times (1 - 0.41) = 29\,500$. B: $30\,000 \times (1 - 0.28) = 21\,600$.
 The inequality gap between A and B is much smaller when adjusted: 29,500 vs 21,600 (ratio 1.37) instead of 50,000 vs 30,000 (ratio 1.67).
 
 **Genuine Progress Indicator (GPI):**
 $\text{GPI} = \text{Personal consumption} + \text{Public goods} - \text{Social costs} - \text{Environmental costs}$.
 
-Country A: GPI $= 30{,}000 + 10{,}000 - 5{,}000 - 8{,}000 = 27{,}000$.
-Country B: GPI $= 18{,}000 + 12{,}000 - 2{,}000 - 3{,}000 = 25{,}000$.
+Country A: GPI $= 30\,000 + 10\,000 - 5\,000 - 8\,000 = 27\,000$.
+Country B: GPI $= 18\,000 + 12\,000 - 2\,000 - 3\,000 = 25\,000$.
 
 The GPI gap is even smaller (27,000 vs 25,000, ratio 1.08). Country A's higher GDP is partly offset by higher social costs (crime, inequality) and environmental costs (pollution, CO2).
 

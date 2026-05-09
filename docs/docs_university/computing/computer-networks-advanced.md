@@ -1071,9 +1071,9 @@ $\text{MSS} = 1460$ bytes $= 11680$ bits.
 $\text{RTT} = 80$ ms $= 0.08$ s.
 $p = 0.001$.
 
-$$\text{Throughput} \approx \frac{1.22 \times 11680}{0.08 \times \sqrt{0.001}} = \frac{14249.6}{0.08 \times 0.03162} = \frac{14249.6}{0.002530} \approx 5{,}632{,}727 \text{ bits/s} \approx 5.63 \text{ Mbps}$$
+$$\text{Throughput} \approx \frac{1.22 \times 11680}{0.08 \times \sqrt{0.001}} = \frac{14249.6}{0.08 \times 0.03162} = \frac{14249.6}{0.002530} \approx 5\,632\,727 \text{ bits/s} \approx 5.63 \text{ Mbps}$$
 
-The BDP is $\text{BW} \times \text{RTT} = 5.63 \times 10^6 \times 0.08 = 450{,}640$ bits $\approx 54.9$ KB. The receive window must be at least this for full utilisation.
+The BDP is $\text{BW} \times \text{RTT} = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits $\approx 54.9$ KB. The receive window must be at least this for full utilisation.
 
 If you get this wrong, revise: Section 2.1.
 </details>

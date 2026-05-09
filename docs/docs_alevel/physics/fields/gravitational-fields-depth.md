@@ -319,9 +319,9 @@ one sidereal day ($T = 86164$ s), causing the satellite to remain fixed above a 
 
 $$r^3 = \frac{GMT^2}{4\pi^2} = \frac{3.98 \times 10^{14} \times (86164)^2}{4\pi^2} = 7.54 \times 10^{22}$$
 
-$$\boxed{r = 4.22 \times 10^7\ \mathrm{m} = 42{,}200\ \mathrm{km}}$$
+$$\boxed{r = 4.22 \times 10^7\ \mathrm{m} = 42\,200\ \mathrm{km}}$$
 
-Altitude above Earth's surface: $h = 42200 - 6370 = 35{,}830$ km.
+Altitude above Earth's surface: $h = 42200 - 6370 = 35\,830$ km.
 
 ### Orbital Speed
 
@@ -329,7 +329,7 @@ $$v = \sqrt{\frac{GM}{r}} = \frac{2\pi r}{T} = 3070\ \mathrm{m\,s}^{-1}$$
 
 ### Three Necessary and Sufficient Conditions
 
-1. **Correct radius:** $r \approx 42{,}200$ km (from Kepler's third law with $T = 86164$ s).
+1. **Correct radius:** $r \approx 42\,200$ km (from Kepler's third law with $T = 86164$ s).
 2. **Equatorial plane:** Any inclination causes the satellite to trace a figure-eight (anisotropic
    pattern) as seen from the ground.
 3. **Prograde rotation:** The satellite must orbit west to east, matching Earth's rotation.

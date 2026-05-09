@@ -229,7 +229,7 @@ export capacity), but unsustainable if used for consumption.
 
 (b) The terms of trade have **deteriorated** from 120 to 110.77. The country now needs to export more to buy the same amount of imports. Export prices rose by 20% ($144/120$) while import prices rose by 30% ($130/100$). Since import prices rose faster, the terms of trade worsened.
 
-(c) Income terms of trade $= ToT \times \text{Export quantity index} = 110.77 \times 110 = 12{,}185$ (index).
+(c) Income terms of trade $= ToT \times \text{Export quantity index} = 110.77 \times 110 = 12\,185$ (index).
 
 Alternatively, export revenue in base-year prices $= \frac{500}{144} \times 100 \times \frac{110}{100} = 3.472 \times 110 \times 100 = \text{approximately } \$381.9$ billion (in base-year prices).
 

@@ -129,19 +129,19 @@ the banking system:
 
 | Round    | Deposits                      | Reserves ($rr \times D$)    | Loans                     |
 | -------- | ----------------------------- | --------------------------- | ------------------------- |
-| 1        | £1,000                        | $rr \times 1{,}000$         | $(1-rr) \times 1{,}000$   |
-| 2        | $(1-rr) \times 1{,}000$       | $rr(1-rr) \times 1{,}000$   | $(1-rr)^2 \times 1{,}000$ |
-| 3        | $(1-rr)^2 \times 1{,}000$     | $rr(1-rr)^2 \times 1{,}000$ | $(1-rr)^3 \times 1{,}000$ |
+| 1        | £1,000                        | $rr \times 1\,000$         | $(1-rr) \times 1\,000$   |
+| 2        | $(1-rr) \times 1\,000$       | $rr(1-rr) \times 1\,000$   | $(1-rr)^2 \times 1\,000$ |
+| 3        | $(1-rr)^2 \times 1\,000$     | $rr(1-rr)^2 \times 1\,000$ | $(1-rr)^3 \times 1\,000$ |
 | $\vdots$ | $\vdots$                      | $\vdots$                    | $\vdots$                  |
-| $n$      | $(1-rr)^{n-1} \times 1{,}000$ |                             |                           |
+| $n$      | $(1-rr)^{n-1} \times 1\,000$ |                             |                           |
 
 Total deposits created:
 
 $$
 \begin{aligned}
-\Delta D &= 1{,}000\left[1 + (1-rr) + (1-rr)^2 + \cdots\right] \\
-&= 1{,}000 \times \frac{1}{1 - (1-rr)} \\
-&= \frac{1{,}000}{rr} = 1{,}000 \times m
+\Delta D &= 1\,000\left[1 + (1-rr) + (1-rr)^2 + \cdots\right] \\
+&= 1\,000 \times \frac{1}{1 - (1-rr)} \\
+&= \frac{1\,000}{rr} = 1\,000 \times m
 \end{aligned}
 $$
 
@@ -528,7 +528,7 @@ this calculation rely on?
 
 <details>
 <summary>Hint</summary>
-$m = 1/0.08 = 12.5$. Maximum increase $= 12.5 \times 500 = £6{,}250$m. Assumptions: no cash leakages, no excess reserves held, all loans are redeposited in the banking system, demand for loans is infinite at the prevailing interest rate.
+$m = 1/0.08 = 12.5$. Maximum increase $= 12.5 \times 500 = £6\,250$m. Assumptions: no cash leakages, no excess reserves held, all loans are redeposited in the banking system, demand for loans is infinite at the prevailing interest rate.
 </details>
 
 **Problem 2.** The nominal interest rate on a savings account is 3% and inflation is 5%. Calculate
@@ -715,7 +715,7 @@ Central bank injects GBP 1,000 of new reserves. Reserve ratio $rr = 0.1$. Cash l
 
 **Total deposits created:**
 $$D = 1000 + 765 + 585.23 + \cdots$$
-$$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac{1000}{1 - 0.85 \times 0.9} = \frac{1000}{1 - 0.765} = \frac{1000}{0.235} = \text{GBP } 4{,}255$$
+$$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac{1000}{1 - 0.85 \times 0.9} = \frac{1000}{1 - 0.765} = \frac{1000}{0.235} = \text{GBP } 4\,255$$
 
 **Effective money multiplier:**
 $$m = \frac{D}{R} = \frac{4255}{1000} = 4.26$$
@@ -756,7 +756,7 @@ $$D = \frac{1}{100}[5.66 + 10.68 + 15.08 + 18.88 + 79.34] = \frac{129.64}{100} =
 **Example.** The Bank of England raises the Bank Rate from 4% to 5%.
 
 **Interest rate channel:**
-- Variable-rate mortgage holders with GBP 200,000 mortgages see monthly payments increase by approximately GBP 167 per month ($200{,}000 \times 0.01/12$).
+- Variable-rate mortgage holders with GBP 200,000 mortgages see monthly payments increase by approximately GBP 167 per month ($200\,000 \times 0.01/12$).
 - Approximately 35% of UK mortgages are variable-rate, so approximately 2.8 million households are directly affected.
 - Aggregate annual reduction in disposable income: $2.8\text{m} \times 12 \times 167 = \text{GBP } 5.6\text{bn}$.
 
@@ -855,12 +855,12 @@ Bank B lends 810m to Firm Y. Firm Y deposits in Bank C.
 | ... | ... | ... | ... |
 | $\infty$ | 10,000 | 9,000 | 1,000 |
 
-**Total deposits created:** $1000 \times \frac{1}{0.1} = 10{,}000$.
+**Total deposits created:** $1000 \times \frac{1}{0.1} = 10\,000$.
 **Total loans created:** $9000$.
 **Money multiplier:** $10$.
 
 **With a 20% reserve ratio:**
-Total deposits: $1000 / 0.2 = 5{,}000$. Money multiplier: 5.
+Total deposits: $1000 / 0.2 = 5\,000$. Money multiplier: 5.
 
 **With excess reserves (banks hold 5% excess):**
 Effective reserve ratio = 15%. Money multiplier $= 1/0.15 = 6.67$.
@@ -986,16 +986,16 @@ The reduction in reserves removes liquidity from the banking system.
 **Example.** A household takes out a GBP 300,000 repayment mortgage over 25 years.
 
 **At 2% interest rate:**
-Monthly payment $= 300{,}000 \times \frac{0.02/12 \times (1 + 0.02/12)^{300}}{(1 + 0.02/12)^{300} - 1} = 300{,}000 \times \frac{0.001667 \times 1.646}{0.646} = 300{,}000 \times 0.004249 = \pounds 1{,}275$.
-Total payments over 25 years: $1275 \times 300 = 382{,}500$. Total interest: 82,500.
+Monthly payment $= 300\,000 \times \frac{0.02/12 \times (1 + 0.02/12)^{300}}{(1 + 0.02/12)^{300} - 1} = 300\,000 \times \frac{0.001667 \times 1.646}{0.646} = 300\,000 \times 0.004249 = \pounds 1\,275$.
+Total payments over 25 years: $1275 \times 300 = 382\,500$. Total interest: 82,500.
 
 **At 5% interest rate:**
-Monthly payment $= 300{,}000 \times \frac{0.05/12 \times (1 + 0.05/12)^{300}}{(1 + 0.05/12)^{300} - 1} = 300{,}000 \times 0.005846 = \pounds 1{,}754$.
-Total payments: $1754 \times 300 = 526{,}200$. Total interest: 226,200.
+Monthly payment $= 300\,000 \times \frac{0.05/12 \times (1 + 0.05/12)^{300}}{(1 + 0.05/12)^{300} - 1} = 300\,000 \times 0.005846 = \pounds 1\,754$.
+Total payments: $1754 \times 300 = 526\,200$. Total interest: 226,200.
 
 **At 7% interest rate:**
-Monthly payment $= 300{,}000 \times 0.007068 = \pounds 2{,}120$.
-Total payments: $2120 \times 300 = 636{,}000$. Total interest: 336,000.
+Monthly payment $= 300\,000 \times 0.007068 = \pounds 2\,120$.
+Total payments: $2120 \times 300 = 636\,000$. Total interest: 336,000.
 
 **Comparison:**
 
@@ -1060,15 +1060,15 @@ Approximately 35% of UK mortgages are variable-rate or tracker mortgages. These 
 
 Bank Rate rises from 0.25% to 5.25% (a 5 percentage point increase):
 Average variable-rate mortgage balance: GBP 150,000.
-Monthly payment increase: $150{,}000 \times 0.05/12 = \pounds 625$.
+Monthly payment increase: $150\,000 \times 0.05/12 = \pounds 625$.
 Annual cost increase: GBP 7,500 per household.
-Total for 3.15 million variable-rate households: $7{,}500 \times 3.15\text{m} = \pounds 23.6\text{bn}$.
+Total for 3.15 million variable-rate households: $7\,500 \times 3.15\text{m} = \pounds 23.6\text{bn}$.
 
 **Indirect channel (fixed-rate mortgages):**
 Approximately 65% of UK mortgages are fixed-rate (typically 2 or 5 years). These do not reprice immediately but reprice when the fixed term ends.
 
 If 1 million fixed-rate mortgages reprice each year, and the average increase is 3 percentage points (because some were taken out at higher rates):
-Annual cost increase per household: $150{,}000 \times 0.03/12 = \pounds 375$.
+Annual cost increase per household: $150\,000 \times 0.03/12 = \pounds 375$.
 Total: $375 \times 1\text{m} = \pounds 375\text{m}$ initially, rising as more fixed-rate terms expire.
 
 **Housing market activity channel:**

@@ -1039,8 +1039,8 @@ contributes `USD 100`, with the government covering the remaining `USD 0` (since
 
 (c) How might the village leader use behavioural insights to ensure the project is funded?
 
-(a) Total value to the village $= 100 \times 200 = \$20{,}000$. Total cost $= \$10{,}000$.
-Net benefit $= \$10{,}000 > 0$. The project is socially efficient.
+(a) Total value to the village $= 100 \times 200 = \$20\,000$. Total cost $= \$10\,000$.
+Net benefit $= \$10\,000 > 0$. The project is socially efficient.
 
 Each household's individual benefit ($200) exceeds the cost per household ($100), so contributing
 is individually rational as well. However, the well is a public good (non-excludable, non-rival),
@@ -1699,7 +1699,7 @@ weighted more heavily than gains (future pension benefits).
 
 (b) Additional contributors $= (92\% - 40\%) \times 10 = 5.2$ million.
 
-Additional annual contributions $= 5.2 \times 2{,}000 = 10.4$ billion.
+Additional annual contributions $= 5.2 \times 2\,000 = 10.4$ billion.
 
 (c) **Evaluation of defaults as a policy tool:**
 
@@ -2083,19 +2083,19 @@ USD 2,000 per year.
 
 (a) Plan A (USD 5,000/year for 40 years at 5%):
 
-$\text{FV} = 5000 \times \frac{1.05^{40} - 1}{0.05} = 5000 \times 120.80 = 604{,}000$
+$\text{FV} = 5000 \times \frac{1.05^{40} - 1}{0.05} = 5000 \times 120.80 = 604\,000$
 
 Plan B (USD 2,000/year for 40 years at 5%):
 
-$\text{FV} = 2000 \times 120.80 = 241{,}600$
+$\text{FV} = 2000 \times 120.80 = 241\,600$
 
-Present bias costs the worker $604{,}000 - 241{,}600 = 362{,}400$ in retirement savings.
+Present bias costs the worker $604\,000 - 241\,600 = 362\,400$ in retirement savings.
 
 (b) Plan A: annuity factor (20 years, 4%) $= \frac{1 - 1.04^{-20}}{0.04} = 13.59$.
 
-Annual income $= 604{,}000 / 13.59 = 44{,}445$
+Annual income $= 604\,000 / 13.59 = 44\,445$
 
-Plan B: annual income $= 241{,}600 / 13.59 = 17{,}778$
+Plan B: annual income $= 241\,600 / 13.59 = 17\,778$
 
 Present bias reduces annual retirement income by USD 26,667.
 

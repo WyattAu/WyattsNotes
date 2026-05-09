@@ -105,7 +105,7 @@ int main() {
 }
 ```
 
-The expected result is $10 \times 100{,}000 = 1{,}000{,}000$, but the actual result will typically
+The expected result is $10 \times 100\,000 = 1\,000\,000$, but the actual result will typically
 be less because `++counter` is not atomic. The increment operation consists of three machine
 instructions:
 

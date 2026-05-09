@@ -128,21 +128,21 @@ National Income and Macroeconomic Indicators
 
 (b) At $P = 1500$: $Q_d = 500 - 150 = 350$. $Q_s = -200 + 300 = 100$. Shortage $= 350 - 100 = 250$ thousand units.
 
-CS before $= \frac{1}{2}(5000 - 2333.3)(266.7) = \frac{1}{2}(2666.7)(266.7) = 355{,}556$ (in HK$10,000 units).
+CS before $= \frac{1}{2}(5000 - 2333.3)(266.7) = \frac{1}{2}(2666.7)(266.7) = 355\,556$ (in HK$10,000 units).
 
-CS after $= \frac{1}{2}(5000 - 1500 + 3500 - 1500)(100) = \frac{1}{2}(3500 + 2000)(100) = 275{,}000$.
+CS after $= \frac{1}{2}(5000 - 1500 + 3500 - 1500)(100) = \frac{1}{2}(3500 + 2000)(100) = 275\,000$.
 
 Note: The demand price at $Q = 100$ is $P = 500 - 1000/0.1 = 500 - 1000 = $ wait, recalculate: $Q_d = 500 - 0.1P$, so $P = (500 - Q)/0.1 = 5000 - 10Q$. At $Q = 100$: $P = 5000 - 1000 = 4000$.
 
 CS after $= \frac{1}{2}(4000 - 1500)(100) + (4000 - 1500)(0) = $ Actually, CS with price ceiling: $CS = \frac{1}{2}(P_{max} - P_{ceiling} + P_{demand\_at\_Q_s} - P_{ceiling}) \times Q_s$. No -- the correct formula for CS under a binding ceiling is the area below the demand curve and above the ceiling price, up to the quantity traded ($Q_s$):
 
-$CS = \int_0^{100} (5000 - 10Q) \, dQ - 1500 \times 100 = [5000Q - 5Q^2]_0^{100} - 150{,}000 = (500{,}000 - 50{,}000) - 150{,}000 = 300{,}000$.
+$CS = \int_0^{100} (5000 - 10Q) \, dQ - 1500 \times 100 = [5000Q - 5Q^2]_0^{100} - 150\,000 = (500\,000 - 50\,000) - 150\,000 = 300\,000$.
 
-PS before $= \frac{1}{2}(2333.3 - 1000)(266.7) = \frac{1}{2}(1333.3)(266.7) = 177{,}778$.
+PS before $= \frac{1}{2}(2333.3 - 1000)(266.7) = \frac{1}{2}(1333.3)(266.7) = 177\,778$.
 
-PS after $= \frac{1}{2}(1500 - 1000)(100) = 25{,}000$.
+PS after $= \frac{1}{2}(1500 - 1000)(100) = 25\,000$.
 
-DWL $= (355{,}556 + 177{,}778) - (300{,}000 + 25{,}000) = 533{,}334 - 325{,}000 = 208{,}334$.
+DWL $= (355\,556 + 177\,778) - (300\,000 + 25\,000) = 533\,334 - 325\,000 = 208\,334$.
 
 (c) High housing costs in Hong Kong:
 - **Inflation:** Rent is a major component of the CPI (approximately 30% weight in Hong Kong's CPI). Rising rents push up measured inflation, potentially triggering tighter monetary conditions (though under the Currency Board, this is largely determined by the Fed).
@@ -162,7 +162,7 @@ DWL $= (355{,}556 + 177{,}778) - (300{,}000 + 25{,}000) = 533{,}334 - 325{,}000 
 
 **Solution:**
 
-(a) Using the rule of 70 or the compound growth formula: $50{,}000 = 5{,}000 \times (1.07)^n$.
+(a) Using the rule of 70 or the compound growth formula: $50\,000 = 5\,000 \times (1.07)^n$.
 
 $(1.07)^n = 10$, $n = \frac{\ln 10}{\ln 1.07} = \frac{2.3026}{0.0677} = 34.0$ years.
 

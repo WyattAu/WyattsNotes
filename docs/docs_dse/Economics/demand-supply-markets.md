@@ -230,7 +230,7 @@ $$\%\ \mathrm{change in } P = \frac{60 - 50}{50} \times 100\% = 20\%$$
 $$\mathrm{PED} = \frac{-20\%}{20\%} = -1$$
 
 PED = 1 (unit elastic by initial-value method). Note: total revenue changes from
-$50 \times 200 = 10{,}000$ to $60 \times 160 = 9{,}600$ (a decrease of 400). The rule "PED = 1
+$50 \times 200 = 10\,000$ to $60 \times 160 = 9\,600$ (a decrease of 400). The rule "PED = 1
 implies TR unchanged" is exact only for point elasticity on a demand curve of the form $P = k/Q$;
 for a linear demand curve with finite changes, the initial-value PED of $-1$ does not guarantee
 constant TR.
@@ -1147,7 +1147,7 @@ The government wants to maintain a minimum price for rice at HK$100 per kg. Mark
 
 (b) At $P = 100$: $Q_d = 500 - 300 = 200$. $Q_s = -100 + 400 = 300$. Surplus $= 300 - 200 = 100$ thousand kg.
 
-(c) Government cost $= 100 \times 100 = \text{HK}\$10{,}000$ thousand $= \text{HK}\$10$ million.
+(c) Government cost $= 100 \times 100 = \text{HK}\$10\,000$ thousand $= \text{HK}\$10$ million.
 
 (d) To achieve $P_b = 80$ for consumers: subsidy $s$ such that $P_s = 80 + s$ and $Q_d(80) = Q_s(80 + s)$.
 
@@ -1155,7 +1155,7 @@ $Q_d(80) = 500 - 240 = 260$. $Q_s(80 + s) = -100 + 4(80 + s) = 220 + 4s$.
 
 $260 = 220 + 4s$. $4s = 40$. $s = 10$.
 
-Government cost $= 10 \times 260 = \text{HK}\$2{,}600$ thousand $= \text{HK}\$2.6$ million.
+Government cost $= 10 \times 260 = \text{HK}\$2\,600$ thousand $= \text{HK}\$2.6$ million.
 
 Comparison: The subsidy approach (HK$2.6M) costs much less than the price support (HK$10M) and results in a higher quantity consumed (260 vs 200), generating more consumer surplus. However, the subsidy approach transfers money to consumers (lower prices) and producers (higher effective prices), while the price support transfers money to producers only (through government purchases of surplus).
 
@@ -1221,19 +1221,19 @@ A rent control law sets maximum rent at HK$15,000 per month for apartments. The 
 <details>
 <summary>Solution</summary>
 
-(a) At $P = 15{,}000$: $Q_d = 18000 - 6000 = 12{,}000$. $Q_s = 30000 - 30000 = 0$.
+(a) At $P = 15\,000$: $Q_d = 18000 - 6000 = 12\,000$. $Q_s = 30000 - 30000 = 0$.
 
 This gives $Q_s = 0$, which means the supply curve must be recalibrated. Let me use: $Q_s = -6000 + 0.8P$.
 
-At $P = 20{,}000$: $Q_s = -6000 + 16000 = 10{,}000 = Q^*$. $Q_d = 18000 - 8000 = 10{,}000 = Q^*$. Good.
+At $P = 20\,000$: $Q_s = -6000 + 16000 = 10\,000 = Q^*$. $Q_d = 18000 - 8000 = 10\,000 = Q^*$. Good.
 
-At $P = 15{,}000$: $Q_d = 18000 - 6000 = 12{,}000$. $Q_s = -6000 + 12000 = 6{,}000$. Shortage $= 12{,}000 - 6{,}000 = 6{,}000$ units.
+At $P = 15\,000$: $Q_d = 18000 - 6000 = 12\,000$. $Q_s = -6000 + 12000 = 6\,000$. Shortage $= 12\,000 - 6\,000 = 6\,000$ units.
 
-Quantity traded $= 6{,}000$ (the short side of the market).
+Quantity traded $= 6\,000$ (the short side of the market).
 
-(b) CS before $= 0.5 \times (45000 - 20000) \times 10000 = 0.5 \times 25000 \times 10000 = 125{,}000{,}000$.
+(b) CS before $= 0.5 \times (45000 - 20000) \times 10000 = 0.5 \times 25000 \times 10000 = 125\,000\,000$.
 
-CS after $= 0.5 \times (45000 - 15000) \times 6000 = 0.5 \times 30000 \times 6000 = 90{,}000{,}000$.
+CS after $= 0.5 \times (45000 - 15000) \times 6000 = 0.5 \times 30000 \times 6000 = 90\,000\,000$.
 
 Wait -- the demand price at $Q = 6000$ is $P = (18000 - 6000)/0.4 = 30000$. So CS should include the area between the demand curve and the ceiling price up to $Q = 6000$:
 
@@ -1243,29 +1243,29 @@ CS after $= \int_0^{6000} (45000 - 0.4^{-1}(Q)) dQ - 15000 \times 6000$.
 
 Demand inverse: $P = (18000 - Q)/0.4 = 45000 - 2.5Q$. At $Q = 6000$: $P = 45000 - 15000 = 30000$.
 
-CS after $= 0.5 \times (45000 - 30000) \times 6000 + (30000 - 15000) \times 6000 = 0.5 \times 15000 \times 6000 + 15000 \times 6000 = 45{,}000{,}000 + 90{,}000{,}000 = 135{,}000{,}000$.
+CS after $= 0.5 \times (45000 - 30000) \times 6000 + (30000 - 15000) \times 6000 = 0.5 \times 15000 \times 6000 + 15000 \times 6000 = 45\,000\,000 + 90\,000\,000 = 135\,000\,000$.
 
 Hmm, this is larger than before, which is suspicious. Let me recalculate CS before.
 
-CS before $= 0.5 \times (45000 - 20000) \times 10000 = 0.5 \times 25000 \times 10000 = 125{,}000{,}000$.
+CS before $= 0.5 \times (45000 - 20000) \times 10000 = 0.5 \times 25000 \times 10000 = 125\,000\,000$.
 
 CS after $= 0.5 \times (45000 - 20000 + 30000 - 15000) \times 6000 = $ No, the correct CS is the area under the demand curve above the price, for the quantity actually consumed:
 
-CS after $= 0.5 \times (30000 - 15000) \times 6000 + (45000 - 30000) \times 6000 = 45{,}000{,}000 + 90{,}000{,}000 = 135{,}000{,}000$.
+CS after $= 0.5 \times (30000 - 15000) \times 6000 + (45000 - 30000) \times 6000 = 45\,000\,000 + 90\,000\,000 = 135\,000\,000$.
 
 Wait, that can't be right. The CS should be calculated as:
 
-$CS = \int_0^{6000} (45000 - 2.5Q) dQ - 15000 \times 6000 = [45000Q - 1.25Q^2]_0^{6000} - 90{,}000{,}000 = (270{,}000{,}000 - 45{,}000{,}000) - 90{,}000{,}000 = 225{,}000{,}000 - 90{,}000{,}000 = 135{,}000{,}000$.
+$CS = \int_0^{6000} (45000 - 2.5Q) dQ - 15000 \times 6000 = [45000Q - 1.25Q^2]_0^{6000} - 90\,000\,000 = (270\,000\,000 - 45\,000\,000) - 90\,000\,000 = 225\,000\,000 - 90\,000\,000 = 135\,000\,000$.
 
 So CS *increases* from 125M to 135M? This is because the effective price for those who get apartments is lower (15,000 vs 20,000), and the demand price at Q=6000 (30,000) is very high. But this ignores the non-price rationing (queuing, bribery, discrimination) that determines which consumers actually get apartments. The measured CS assumes the consumers with the highest willingness to pay get the apartments, which may not be the case with non-price rationing.
 
-PS before $= 0.5 \times (20000 - 7500) \times 10000 = 0.5 \times 12500 \times 10000 = 62{,}500{,}000$.
+PS before $= 0.5 \times (20000 - 7500) \times 10000 = 0.5 \times 12500 \times 10000 = 62\,500\,000$.
 
 (Supply intercept: $0 = -6000 + 0.8P$, $P = 7500$.)
 
-PS after $= 0.5 \times (15000 - 7500) \times 6000 = 0.5 \times 7500 \times 6000 = 22{,}500{,}000$.
+PS after $= 0.5 \times (15000 - 7500) \times 6000 = 0.5 \times 7500 \times 6000 = 22\,500\,000$.
 
-DWL $= (125M + 62.5M) - (135M + 22.5M) = 187.5M - 157.5M = 30{,}000{,}000$.
+DWL $= (125M + 62.5M) - (135M + 22.5M) = 187.5M - 157.5M = 30\,000\,000$.
 
 (c) If landlords reduce maintenance by HK$3,000 per unit, the effective quality-adjusted rent for tenants is $15000 + 3000 = 18000$ (the tenant pays 15,000 in cash but receives a lower-quality apartment worth 3,000 less). The true cost to tenants is HK$18,000, which is only HK$2,000 less than the free market rent of HK$20,000. The CS calculation overstates the benefit of the ceiling because it does not account for quality deterioration.
 

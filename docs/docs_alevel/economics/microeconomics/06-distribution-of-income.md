@@ -357,7 +357,7 @@ median income rises to £35,000 but the household's income stays at £16,000, wh
 
 <details>
 <summary>Hint</summary>
-Poverty line = $0.6 \times 30{,}000 = £18{,}000$. The household at £16,000 is in relative poverty. If median rises to £35,000: new poverty line = £21,000. The household is still in relative poverty and has fallen *further* below the line (from £2,000 below to £5,000 below). This illustrates a limitation of relative poverty: people can become "poorer" in relative terms even if their absolute income hasn't changed.
+Poverty line = $0.6 \times 30\,000 = £18\,000$. The household at £16,000 is in relative poverty. If median rises to £35,000: new poverty line = £21,000. The household is still in relative poverty and has fallen *further* below the line (from £2,000 below to £5,000 below). This illustrates a limitation of relative poverty: people can become "poorer" in relative terms even if their absolute income hasn't changed.
 </details>
 
 **Problem 4.** A worker earns £40,000 and faces income tax at 20% and National Insurance at 12%. She
@@ -475,7 +475,7 @@ A Gini of $0.352$ indicates moderate inequality, comparable to the UK.
 
 ### 10.2 Effect of a Transfer on the Gini Coefficient
 
-**Example.** Suppose the government transfers $£5{,}000$ from a person in the top quintile to a
+**Example.** Suppose the government transfers $£5\,000$ from a person in the top quintile to a
 person in the bottom quintile. The bottom quintile share rises from 6% to 7%, and the top quintile
 share falls from 44% to 43%. Recalculate $G$.
 
@@ -537,7 +537,7 @@ high that work does not significantly increase net income. When means-tested ben
 as earnings rise, the combined effect of income tax, National Insurance, and benefit withdrawal can
 create EMTRs exceeding 80%.
 
-**Example.** A single parent earning $£15{,}000$ receives $£8{,}000$ in means-tested benefits. For
+**Example.** A single parent earning $£15\,000$ receives $£8\,000$ in means-tested benefits. For
 every extra $£1$ earned:
 
 - Income tax: 20% ($£0.20$)
@@ -626,7 +626,7 @@ shares.
 The Palma ratio (top 10% / bottom 40%) focuses on the tails of the distribution where inequality is most politically and economically salient. The Gini is equally sensitive to transfers at all points on the Lorenz curve. If two countries have the same middle 50% share but different tails, the Gini may be similar while the Palma ratio differs significantly, better capturing the difference in inequality that matters most for social cohesion.
 </details>
 
-**Problem 3.** A worker earns $£25{,}000$ and faces income tax at 20%, National Insurance at 12%,
+**Problem 3.** A worker earns $£25\,000$ and faces income tax at 20%, National Insurance at 12%,
 and has Universal Credit withdrawn at 55%. Calculate the EMTR. How much does she keep from an extra
 $£200$ per month?
 
@@ -852,24 +852,24 @@ $$G = 1 - 2A = 1 - 0.620 = 0.380$$
 
 **Take-home pay calculation:**
 
-Taxable income: $30{,}000 - 12{,}570 = 17{,}430$.
-Income tax: $0.20 \times 17{,}430 = 3{,}486$.
-National Insurance: $0.12 \times 17{,}430 = 2{,}092$.
+Taxable income: $30\,000 - 12\,570 = 17\,430$.
+Income tax: $0.20 \times 17\,430 = 3\,486$.
+National Insurance: $0.12 \times 17\,430 = 2\,092$.
 
 Universal Credit: The work allowance for a single parent is GBP 837/month. After the allowance, UC is withdrawn at 55%.
-Annual work allowance: $837 \times 12 = 10{,}044$.
-UC assessment: $30{,}000 - 10{,}044 = 19{,}956$. UC withdrawal: $0.55 \times 19{,}956 = 10{,}976$.
-Maximum UC entitlement (approximate): GBP 13,000/year. Actual UC received: $13{,}000 - 10{,}976 = 2{,}024$.
+Annual work allowance: $837 \times 12 = 10\,044$.
+UC assessment: $30\,000 - 10\,044 = 19\,956$. UC withdrawal: $0.55 \times 19\,956 = 10\,976$.
+Maximum UC entitlement (approximate): GBP 13,000/year. Actual UC received: $13\,000 - 10\,976 = 2\,024$.
 
-Child benefit: $24 \times 52 = 1{,}248$. Not withdrawn (income below 50,000).
+Child benefit: $24 \times 52 = 1\,248$. Not withdrawn (income below 50,000).
 
-**Net income:** $30{,}000 - 3{,}486 - 2{,}092 + 2{,}024 + 1{,}248 = 27{,}694$.
+**Net income:** $30\,000 - 3\,486 - 2\,092 + 2\,024 + 1\,248 = 27\,694$.
 
 **Effective marginal tax rate on an additional GBP 1,000 of earnings:**
 
-Additional income tax: $0.20 \times 1{,}000 = 200$.
-Additional NI: $0.12 \times 1{,}000 = 120$.
-UC withdrawal: $0.55 \times 1{,}000 = 550$.
+Additional income tax: $0.20 \times 1\,000 = 200$.
+Additional NI: $0.12 \times 1\,000 = 120$.
+UC withdrawal: $0.55 \times 1\,000 = 550$.
 Total deduction: 870.
 
 **EMTR = 87%.** For every additional pound earned, the parent keeps only 13 pence.
@@ -965,11 +965,11 @@ Income share of the bottom 40% = 14%.
 | Above GBP 50,000 | 9 million | GBP 70,000 |
 
 Median income: the 30th-31st millionth person falls in the GBP 20,000-30,000 bracket.
-Assuming uniform distribution within brackets: median $\approx 25{,}000 + \frac{6}{15} \times 10{,}000 = 29{,}000$.
+Assuming uniform distribution within brackets: median $\approx 25\,000 + \frac{6}{15} \times 10\,000 = 29\,000$.
 
-**Relative poverty (60% of median):** $0.60 \times 29{,}000 = 17{,}400$.
+**Relative poverty (60% of median):** $0.60 \times 29\,000 = 17\,400$.
 Below GBP 17,400: 3 + 6 + fraction of the 12 million in GBP 10,000-20,000.
-$12 \times (17{,}400 - 10{,}000) / 10{,}000 = 8.88$ million.
+$12 \times (17\,400 - 10\,000) / 10\,000 = 8.88$ million.
 Total below relative poverty line: $3 + 6 + 8.88 = 17.88$ million.
 Relative poverty rate: $17.88 / 60 = 29.8\%$.
 
@@ -977,14 +977,14 @@ Relative poverty rate: $17.88 / 60 = 29.8\%$.
 Below GBP 10,000: $3 + 6 = 9$ million.
 Absolute poverty rate: $9 / 60 = 15\%$.
 
-**Severe poverty (50% of median):** $0.50 \times 29{,}000 = 14{,}500$.
-$3 + 6 + 12 \times (14{,}500 - 10{,}000)/10{,}000 = 3 + 6 + 5.4 = 14.4$ million.
+**Severe poverty (50% of median):** $0.50 \times 29\,000 = 14\,500$.
+$3 + 6 + 12 \times (14\,500 - 10\,000)/10\,000 = 3 + 6 + 5.4 = 14.4$ million.
 Severe poverty rate: $14.4 / 60 = 24\%$.
 
 **The AHC (after housing costs) adjustment:**
 If housing costs average GBP 8,000 per household:
-AHC income = income - 8,000. New median AHC income $\approx 21{,}000$.
-New relative poverty line: $0.60 \times 21{,}000 = 12{,}600$.
+AHC income = income - 8,000. New median AHC income $\approx 21\,000$.
+New relative poverty line: $0.60 \times 21\,000 = 12\,600$.
 AHC poverty rate is higher than BHC because housing costs reduce disposable income, pushing more people below the poverty threshold. The AHC poverty rate is the more commonly cited measure in UK poverty statistics.
 
 ## 10. Extended Worked Examples
@@ -1068,7 +1068,7 @@ AHC poverty rate is higher than BHC because housing costs reduce disposable inco
 **Example.** The UK government considers a UBI of GBP 400/month for all adults (18+). Population: 53 million adults.
 
 **Cost calculation:**
-- Gross cost: $400 \times 12 \times 53{,}000{,}000 = \text{GBP } 254.4\text{bn}$ (approximately 10.4% of GDP).
+- Gross cost: $400 \times 12 \times 53\,000\,000 = \text{GBP } 254.4\text{bn}$ (approximately 10.4% of GDP).
 
 **Offset by abolishing existing benefits:**
 - Universal Credit: GBP 50bn (but UC is means-tested; abolishing it means some households lose more than they gain from UBI).

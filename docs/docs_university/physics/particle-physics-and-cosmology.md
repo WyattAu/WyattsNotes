@@ -887,11 +887,11 @@ Using experimental masses:
 - $m_K \approx 496$ MeV (average of $K^\pm$ and $K^0$)
 - $m_\eta \approx 548$ MeV
 
-**Left-hand side:** $4 \times (496)^2 = 4 \times 246{,}016 = 984{,}064$ MeV$^2$.
+**Left-hand side:** $4 \times (496)^2 = 4 \times 246\,016 = 984\,064$ MeV$^2$.
 
-**Right-hand side:** $(140)^2 + 3 \times (548)^2 = 19{,}600 + 3 \times 300{,}304 = 19{,}600 + 900{,}912 = 920{,}512$ MeV$^2$.
+**Right-hand side:** $(140)^2 + 3 \times (548)^2 = 19\,600 + 3 \times 300\,304 = 19\,600 + 900\,912 = 920\,512$ MeV$^2$.
 
-The discrepancy is $(984{,}064 - 920{,}512)/920{,}512 \approx 6.9\%$. This is larger than
+The discrepancy is $(984\,064 - 920\,512)/920\,512 \approx 6.9\%$. This is larger than
 for the baryon octet, reflecting the fact that the pseudoscalar mesons are (approximately)
 Goldstone bosons of the spontaneously broken chiral symmetry, and their masses receive
 additional contributions from the chiral anomaly ($\eta'$ is not a pure octet state but mixes
@@ -1106,7 +1106,7 @@ inconsistency was one of the motivations for introducing dark energy.
 
 ### 7.4 The Cosmic Microwave Background
 
-At $T \sim 3000$ K ($z \sim 1100$, $t \sim 380{,}000$ years), the universe cooled enough for electrons
+At $T \sim 3000$ K ($z \sim 1100$, $t \sim 380\,000$ years), the universe cooled enough for electrons
 and protons to combine into neutral hydrogen (**recombination**). Before this, photons were
 continuously scattered by free electrons (the universe was opaque). After recombination, photons
 decoupled and travelled freely.
@@ -1257,7 +1257,7 @@ $$\mathrm{D/H} = (2.527 \pm 0.030) \times 10^{-5}$$
 This constrains $\eta = (6.10 \pm 0.04) \times 10^{-10}$, in excellent agreement with
 the CMB value of $\eta = (6.13 \pm 0.04) \times 10^{-10}$. The concordance between two
 completely independent measurements (one from nuclear physics at $t \sim 3$ min, the other
-from CMB physics at $t \sim 380{,}000$ yr) is one of the strongest tests of the Big Bang
+from CMB physics at $t \sim 380\,000$ yr) is one of the strongest tests of the Big Bang
 model.
 
 </details>
@@ -1491,7 +1491,7 @@ which measurement you are referencing and the systematic uncertainties involved.
 | $10^{-6}$ s | $\sim 200$ MeV | QCD phase transition |
 | 1 s | $\sim 1$ MeV | Neutrino decoupling, $n/p$ freeze-out |
 | 3 min | $\sim 0.1$ MeV | Big Bang nucleosynthesis |
-| $380{,}000$ yr | 3000 K | Recombination, CMB released |
+| $380\,000$ yr | 3000 K | Recombination, CMB released |
 | $\sim 200$ Myr | $\sim 30$ K | First stars (reionisation) |
 | $\sim 1$ Gyr | $\sim 10$ K | Galaxy formation |
 | 9.2 Gyr | $\sim 5$ K | Solar system forms |
@@ -1544,7 +1544,7 @@ Earth, $L \sim 10^4$ km) were significantly depleted relative to downward-going 
 
 Using the two-flavour formula with the atmospheric parameters $\Delta m^2_{32} \approx 2.5 \times 10^{-3}$ eV$^2$ and $\sin^2(2\theta_{23}) \approx 1$ (maximal mixing):
 
-For upward-going $\nu_\mu$ with $E = 1$ GeV and $L = 10{,}000$ km:
+For upward-going $\nu_\mu$ with $E = 1$ GeV and $L = 10\,000$ km:
 
 $$\frac{\Delta m^2 L}{4E} = \frac{2.5 \times 10^{-3}\;\mathrm{eV}^2 \times 10^4\;\mathrm{km}}{4 \times 1\;\mathrm{GeV}}$$
 
@@ -1571,7 +1571,7 @@ $$\sin^2(12.5) \approx \sin^2(0.35) \approx 0.12$$
 
 And at the first oscillation maximum, $L/E = 2\pi/(\Delta m^2) = 2\pi/(2.5 \times 10^{-3}) \approx 2513$ km/GeV.
 For $E = 1$ GeV, $L_{\mathrm{osc}} \approx 2513$ km, which is comparable to the Earth's diameter
-($\sim 12{,}700$ km). The observed deficit is an average over many oscillations and energies,
+($\sim 12\,700$ km). The observed deficit is an average over many oscillations and energies,
 giving roughly $\langle P\rangle \approx 1/2$ for maximal mixing, consistent with the
 Super-Kamiokande observation of approximately half the expected upward-going $\nu_\mu$ flux.
 
@@ -1954,7 +1954,7 @@ The Saha equation governs the ionisation fraction during recombination:
 
 $$\frac{n_e n_p}{n_H} = \left(\frac{m_e k_B T}{2\pi\hbar^2}\right)^{3/2} e^{-E_I/(k_B T)}$$
 
-where $E_I = 13.6$ eV is the ionisation energy of hydrogen. Recombination occurs at $T_{\text{rec}} \approx 3000$ K (lower than $E_I/k_B \approx 158{,}000$ K) because of the large photon-to-baryon ratio $\eta \sim 10^9$: even when $k_BT \ll E_I$, there are enough high-energy photons in the tail of the Planck distribution to keep hydrogen ionised until the number of ionising photons drops sufficiently.
+where $E_I = 13.6$ eV is the ionisation energy of hydrogen. Recombination occurs at $T_{\text{rec}} \approx 3000$ K (lower than $E_I/k_B \approx 158\,000$ K) because of the large photon-to-baryon ratio $\eta \sim 10^9$: even when $k_BT \ll E_I$, there are enough high-energy photons in the tail of the Planck distribution to keep hydrogen ionised until the number of ionising photons drops sufficiently.
 
 **Neutrino decoupling and the effective number of relativistic species:**
 

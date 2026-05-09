@@ -985,7 +985,7 @@ Coordinator          Participant 1        Participant 2
 
 **Problem 2.** Prove the equivalence: $\sigma_{\theta_1 \wedge \theta_2}(R \bowtie S) = \sigma_{\theta_1}(R) \bowtie \sigma_{\theta_2}(S)$ when $\theta_1$ involves only attributes of $R$ and $\theta_2$ involves only attributes of $S$.
 
-**Problem 3.** Given relations $R(A, B)$ and $S(B, C)$ with $|R| = 10{,}000$ records (100 blocks), $|S| = 5{,}000$ records (50 blocks), and 101 blocks of memory, compare the cost of hash join, sort-merge join, and block nested-loop join.
+**Problem 3.** Given relations $R(A, B)$ and $S(B, C)$ with $|R| = 10\,000$ records (100 blocks), $|S| = 5\,000$ records (50 blocks), and 101 blocks of memory, compare the cost of hash join, sort-merge join, and block nested-loop join.
 
 ### 7.2 SQL and Normalisation (Problems 4--7)
 

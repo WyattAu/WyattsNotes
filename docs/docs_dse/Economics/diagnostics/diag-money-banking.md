@@ -197,13 +197,13 @@ $$M = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$$
 
 where $P = 2,000,000$, $r = 0.035/12 = 0.002917$, $n = 300$.
 
-$M = 2{,}000{,}000 \times \frac{0.002917(1.002917)^{300}}{(1.002917)^{300} - 1} = 2{,}000{,}000 \times \frac{0.002917 \times 2.4066}{2.4066 - 1} = 2{,}000{,}000 \times \frac{0.00702}{1.4066} = \text{HK}\$9{,}983$
+$M = 2\,000\,000 \times \frac{0.002917(1.002917)^{300}}{(1.002917)^{300} - 1} = 2\,000\,000 \times \frac{0.002917 \times 2.4066}{2.4066 - 1} = 2\,000\,000 \times \frac{0.00702}{1.4066} = \text{HK}\$9\,983$
 
 After rate rise: new rate $= 2.5\% + 1.5\% = 4.0\%$, $r = 0.04/12 = 0.003333$.
 
-$M' = 2{,}000{,}000 \times \frac{0.003333(1.003333)^{300}}{(1.003333)^{300} - 1} = 2{,}000{,}000 \times \frac{0.003333 \times 2.7137}{2.7137 - 1} = 2{,}000{,}000 \times \frac{0.009046}{1.7137} = \text{HK}\$10{,}558$
+$M' = 2\,000\,000 \times \frac{0.003333(1.003333)^{300}}{(1.003333)^{300} - 1} = 2\,000\,000 \times \frac{0.003333 \times 2.7137}{2.7137 - 1} = 2\,000\,000 \times \frac{0.009046}{1.7137} = \text{HK}\$10\,558$
 
-Increase in monthly payment $= 10{,}558 - 9{,}983 = \text{HK}\$575$ per month ($+5.8\%$).
+Increase in monthly payment $= 10\,558 - 9\,983 = \text{HK}\$575$ per month ($+5.8\%$).
 
 (d) Non-monetary fiscal and supply-side measures:
 1. **Consumption vouchers:** Direct cash transfers to residents (as used during COVID-19) to boost aggregate demand.

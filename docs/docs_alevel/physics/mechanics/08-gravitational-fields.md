@@ -300,7 +300,7 @@ A geostationary satellite orbits above the equator with a period of 24 hours. Ca
 
 **Answer.** $T = 86400$ s. $T^2 = \frac{4\pi^2}{GM}r^3$.
 $r^3 = \frac{GMT^2}{4\pi^2} = \frac{3.976 \times 10^{14} \times 7.46 \times 10^9}{39.48} = 7.52 \times 10^{22}$.
-$r = 4.22 \times 10^7$ m $= 42{,}200$ km.
+$r = 4.22 \times 10^7$ m $= 42\,200$ km.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of Kepler's Third Law](#derivation-of-keplers-third-law-for-circular-orbits)
@@ -411,9 +411,9 @@ $\omega = 2\pi/86400 = 7.272 \times 10^{-5}$ rad s$^{-1}$:
 
 $$r^3 = \frac{3.976 \times 10^{14}}{(7.272 \times 10^{-5})^2} = \frac{3.976 \times 10^{14}}{5.288 \times 10^{-9}} = 7.52 \times 10^{22}$$
 
-$$r = \sqrt[3]{7.52 \times 10^{22}} = 4.22 \times 10^7 \mathrm{ m} = 42{,}200 \mathrm{ km}$$
+$$r = \sqrt[3]{7.52 \times 10^{22}} = 4.22 \times 10^7 \mathrm{ m} = 42\,200 \mathrm{ km}$$
 
-The altitude above Earth's surface is $h = r - R_E = 42200 - 6370 = 35{,}830$ km.
+The altitude above Earth's surface is $h = r - R_E = 42200 - 6370 = 35\,830$ km.
 
 ### Orbital Speed
 
@@ -426,7 +426,7 @@ $\checkmark$
 
 Three conditions must all be satisfied:
 
-1. **Correct radius:** $r \approx 42{,}200$ km (derived above).
+1. **Correct radius:** $r \approx 42\,200$ km (derived above).
 2. **Equatorial plane:** The orbit must lie in Earth's equatorial plane; otherwise, the satellite
    would appear to drift north and south.
 3. **Same direction as Earth's rotation:** The satellite must orbit from west to east.
@@ -559,7 +559,7 @@ Show that the orbital radius of a geostationary satellite is approximately 42,00
 
 **Answer.** $\omega = 2\pi/(24 \times 3600) = 7.272 \times 10^{-5}$ rad s$^{-1}$.
 $r^3 = GM/\omega^2 = 3.976 \times 10^{14}/(7.272 \times 10^{-5})^2 = 7.52 \times 10^{22}$.
-$r = 4.22 \times 10^7$ m $= 42{,}200$ km.
+$r = 4.22 \times 10^7$ m $= 42\,200$ km.
 
 $v = \sqrt{GM/r} = \sqrt{3.976 \times 10^{14}/4.22 \times 10^7} = 3070$ m s$^{-1}$.
 

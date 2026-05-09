@@ -110,7 +110,7 @@ The debt ratio is **rising** by approximately 2.2 percentage points per year. Th
 
 ### EQ-1: Budget Deficit and National Debt Dynamics
 
-**Question:** An economy has GDP $= \text{HK\$}3{,}000$ billion, government revenue $= \text{HK\$}600$ billion, government expenditure $= \text{HK\$}750$ billion, and outstanding national debt $= \text{HK\$}1{,}800$ billion. The average interest rate on government debt is $3\%$ and the GDP growth rate is $4\%$. (a) Calculate the budget deficit as a percentage of GDP. (b) Calculate the debt-to-GDP ratio. (c) Using the debt dynamics equation $\Delta d = (r - g) \cdot d_0 + p$, where $p$ is the primary deficit-to-GDP ratio, determine whether the debt ratio is rising or falling. (d) If the government wants to stabilise the debt ratio at its current level, what primary balance (as a percentage of GDP) must it achieve?
+**Question:** An economy has GDP $= \text{HK\$}3\,000$ billion, government revenue $= \text{HK\$}600$ billion, government expenditure $= \text{HK\$}750$ billion, and outstanding national debt $= \text{HK\$}1\,800$ billion. The average interest rate on government debt is $3\%$ and the GDP growth rate is $4\%$. (a) Calculate the budget deficit as a percentage of GDP. (b) Calculate the debt-to-GDP ratio. (c) Using the debt dynamics equation $\Delta d = (r - g) \cdot d_0 + p$, where $p$ is the primary deficit-to-GDP ratio, determine whether the debt ratio is rising or falling. (d) If the government wants to stabilise the debt ratio at its current level, what primary balance (as a percentage of GDP) must it achieve?
 
 **Solution:**
 
@@ -130,7 +130,7 @@ The government needs a **primary deficit** of at most $0.6\%$ of GDP, or equival
 
 ### EQ-2: Discretionary Fiscal Policy with the AD-AS Model
 
-**Question:** An economy is in long-run equilibrium at price level $P = 100$ and real output $Y = \text{HK\$}2{,}000$ billion. Potential output is $Y^* = \text{HK\$}2{,}000$ billion. The government increases spending by $\text{HK\$}80$ billion. The MPC $= 0.75$, the tax rate $t = 0.2$, and the MPM $= 0.15$. (a) Calculate the full fiscal multiplier. (b) Calculate the change in equilibrium output. (c) If the SRAS is upward-sloping with a price sensitivity such that the price level rises by 5% when output rises by 10%, estimate the new equilibrium price level and output, accounting for the crowding out effect through rising prices. (d) Evaluate the effectiveness of this fiscal expansion.
+**Question:** An economy is in long-run equilibrium at price level $P = 100$ and real output $Y = \text{HK\$}2\,000$ billion. Potential output is $Y^* = \text{HK\$}2\,000$ billion. The government increases spending by $\text{HK\$}80$ billion. The MPC $= 0.75$, the tax rate $t = 0.2$, and the MPM $= 0.15$. (a) Calculate the full fiscal multiplier. (b) Calculate the change in equilibrium output. (c) If the SRAS is upward-sloping with a price sensitivity such that the price level rises by 5% when output rises by 10%, estimate the new equilibrium price level and output, accounting for the crowding out effect through rising prices. (d) Evaluate the effectiveness of this fiscal expansion.
 
 **Solution:**
 
@@ -140,7 +140,7 @@ The government needs a **primary deficit** of at most $0.6\%$ of GDP, or equival
 
 (c) Output increase $= \frac{145.5}{2000} = 7.27\%$. Given the SRAS relationship (5% price rise for 10% output rise), the price rise $= 5\% \times \frac{7.27}{10} = 3.64\%$. New price level $= 100 \times 1.0364 = 103.64$.
 
-The rising price level reduces the real value of the money supply and raises interest rates, crowding out some investment. If the crowding out effect reduces the multiplier by 20%, the effective multiplier $= 1.818 \times 0.80 = 1.455$. Effective $\Delta Y = 1.455 \times 80 = \text{HK\$}116.4$ billion. New output $= 2000 + 116.4 = \text{HK\$}2{,}116.4$ billion.
+The rising price level reduces the real value of the money supply and raises interest rates, crowding out some investment. If the crowding out effect reduces the multiplier by 20%, the effective multiplier $= 1.818 \times 0.80 = 1.455$. Effective $\Delta Y = 1.455 \times 80 = \text{HK\$}116.4$ billion. New output $= 2000 + 116.4 = \text{HK\$}2\,116.4$ billion.
 
 (d) The fiscal expansion is moderately effective. It closes part of any output gap (if one existed), but the crowding out effect and inflationary pressure reduce its impact. The multiplier of 1.455 (after crowding out) means the $\text{HK\$}80$B spending generates only $\text{HK\$}116.4$B of additional output. The policy is most effective when: (1) the economy has significant spare capacity (flat SRAS), (2) interest rates are not already near zero, and (3) the spending is on productive infrastructure rather than recurrent expenditure.
 
@@ -154,11 +154,11 @@ The rising price level reduces the real value of the money supply and raises int
 
 (b) New reserves $= \text{HK\$}200$B. Excess reserves held $= 0.05 \times 200 = \text{HK\$}10$B. Reserves available for lending $= 200 - 10 = \text{HK\$}190$B.
 
-Maximum expansion $= \frac{190}{0.08} = \text{HK\$}2{,}375$ billion of broad money.
+Maximum expansion $= \frac{190}{0.08} = \text{HK\$}2\,375$ billion of broad money.
 
 (c) After QE:
-- **Assets:** Government bonds $= 800 + 200 = \text{HK\$}1{,}000$B.
-- **Liabilities:** Currency $= \text{HK\$}300$B, Bank reserves $= 500 + 200 = \text{HK\$}700$B. Total liabilities $= \text{HK\$}1{,}000$B.
+- **Assets:** Government bonds $= 800 + 200 = \text{HK\$}1\,000$B.
+- **Liabilities:** Currency $= \text{HK\$}300$B, Bank reserves $= 500 + 200 = \text{HK\$}700$B. Total liabilities $= \text{HK\$}1\,000$B.
 
 (d) Two risks:
 1. **Asset price inflation and financial instability:** QE pushes investors into riskier assets (search for yield), inflating stock, bond, and property prices beyond fundamentals. When QE unwinds, these asset bubbles may burst.
@@ -190,7 +190,7 @@ After 3 years, fiscal reserves $= \text{HK\$}500$ billion (a 37.5% decline).
 
 **Solution:**
 
-(a) Taxable income $= 30{,}000 - 15{,}000 = \text{HK\$}15{,}000$. Tax $= 0.10 \times 15{,}000 = \text{HK\$}1{,}500$. After-tax income $= 30{,}000 - 1{,}500 = \text{HK\$}28{,}500$.
+(a) Taxable income $= 30\,000 - 15\,000 = \text{HK\$}15\,000$. Tax $= 0.10 \times 15\,000 = \text{HK\$}1\,500$. After-tax income $= 30\,000 - 1\,500 = \text{HK\$}28\,500$.
 
 (b) The tax creates two opposing effects on labour supply:
 1. **Substitution effect:** The after-tax wage falls (from HK\$187.5 to HK\$175), making leisure cheaper relative to work. The worker substitutes towards leisure and **reduces** labour supply.
@@ -296,17 +296,17 @@ The long-run inflation rate depends on the monetary policy stance (money supply 
 
 ### EQ-9: Fiscal Policy and Automatic Stabilisers
 
-**Question:** An economy's tax system has a marginal tax rate of 25% and unemployment benefits that replace 40% of previous wages. The economy enters a recession: GDP falls from $\$1000$ billion to $\$900$ billion, and unemployment rises from 5% to 8%. There are 50 million workers, and the average wage is $\$50{,}000$. (a) Calculate the automatic change in tax revenue. (b) Calculate the automatic increase in unemployment benefit spending. (c) Calculate the automatic change in the budget balance. (d) Explain how automatic stabilisers work and why they are superior to discretionary fiscal policy.
+**Question:** An economy's tax system has a marginal tax rate of 25% and unemployment benefits that replace 40% of previous wages. The economy enters a recession: GDP falls from $\$1000$ billion to $\$900$ billion, and unemployment rises from 5% to 8%. There are 50 million workers, and the average wage is $\$50\,000$. (a) Calculate the automatic change in tax revenue. (b) Calculate the automatic increase in unemployment benefit spending. (c) Calculate the automatic change in the budget balance. (d) Explain how automatic stabilisers work and why they are superior to discretionary fiscal policy.
 
 **Solution:**
 
 (a) GDP falls by $\$100$ billion. With a marginal tax rate of 25%, tax revenue falls by approximately $0.25 \times 100 = \$25$ billion. (This is approximate because it assumes the entire GDP decline is taxable income; in practice, some of the GDP decline is corporate profit and some is labour income with different tax treatments.)
 
-(b) Unemployment rises from 5% to 8%, an increase of 3 percentage points. New unemployed workers $= 0.03 \times 50{,}000{,}000 = 1{,}500{,}000$.
+(b) Unemployment rises from 5% to 8%, an increase of 3 percentage points. New unemployed workers $= 0.03 \times 50\,000\,000 = 1\,500\,000$.
 
-Annual unemployment benefit per worker $= 0.40 \times 50{,}000 = \$20{,}000$.
+Annual unemployment benefit per worker $= 0.40 \times 50\,000 = \$20\,000$.
 
-Increase in unemployment benefit spending $= 1{,}500{,}000 \times 20{,}000 = \$30$ billion.
+Increase in unemployment benefit spending $= 1\,500\,000 \times 20\,000 = \$30$ billion.
 
 (c) Automatic change in budget balance $= -25 \text{ (revenue loss)} - 30 \text{ (spending increase)} = -\$55$ billion.
 

@@ -1226,19 +1226,19 @@ The typical consumer basket is: 200 tonnes of rice, 100 units of clothing, 50 un
 <details>
 <summary>Solution</summary>
 
-(a) Nominal GDP 2020 $= 1000(200) + 500(100) + 200(500) = 200{,}000 + 50{,}000 + 100{,}000 = 350{,}000$.
+(a) Nominal GDP 2020 $= 1000(200) + 500(100) + 200(500) = 200\,000 + 50\,000 + 100\,000 = 350\,000$.
 
-Nominal GDP 2023 $= 1200(250) + 600(120) + 300(450) = 300{,}000 + 72{,}000 + 135{,}000 = 507{,}000$.
+Nominal GDP 2023 $= 1200(250) + 600(120) + 300(450) = 300\,000 + 72\,000 + 135\,000 = 507\,000$.
 
-(b) Real GDP 2023 (2020 prices) $= 1200(200) + 600(100) + 300(500) = 240{,}000 + 60{,}000 + 150{,}000 = 450{,}000$.
+(b) Real GDP 2023 (2020 prices) $= 1200(200) + 600(100) + 300(500) = 240\,000 + 60\,000 + 150\,000 = 450\,000$.
 
-(c) GDP deflator $= \frac{507{,}000}{450{,}000} \times 100 = 112.67$. GDP deflator inflation $= 12.67\%$.
+(c) GDP deflator $= \frac{507\,000}{450\,000} \times 100 = 112.67$. GDP deflator inflation $= 12.67\%$.
 
-(d) Cost of basket 2020 $= 200(200) + 100(100) + 50(500) = 40{,}000 + 10{,}000 + 25{,}000 = 75{,}000$.
+(d) Cost of basket 2020 $= 200(200) + 100(100) + 50(500) = 40\,000 + 10\,000 + 25\,000 = 75\,000$.
 
-Cost of basket 2023 $= 200(250) + 100(120) + 50(450) = 50{,}000 + 12{,}000 + 22{,}500 = 84{,}500$.
+Cost of basket 2023 $= 200(250) + 100(120) + 50(450) = 50\,000 + 12\,000 + 22\,500 = 84\,500$.
 
-CPI $= \frac{84{,}500}{75{,}000} \times 100 = 112.67$. CPI inflation $= 12.67\%$.
+CPI $= \frac{84\,500}{75\,000} \times 100 = 112.67$. CPI inflation $= 12.67\%$.
 
 (e) In this example, both give the same rate by coincidence. In general they differ because:
 1. The **GDP deflator** uses current production quantities (Paasche-type), while the **CPI** uses a fixed consumption basket (Laspeyres-type).
@@ -1266,7 +1266,7 @@ An economy has potential GDP of HK$3,000 billion. The natural rate of unemployme
 
 Output gap $= -2.5 \times 3\% = -7.5\%$. The economy is producing 7.5% below potential.
 
-(b) Actual GDP $= 3000 \times (1 - 0.075) = 3000 \times 0.925 = \text{HK}\$2{,}775$ billion.
+(b) Actual GDP $= 3000 \times (1 - 0.075) = 3000 \times 0.925 = \text{HK}\$2\,775$ billion.
 
 (c) Required GDP increase $= 3000 - 2775 = \text{HK}\$225$ billion.
 

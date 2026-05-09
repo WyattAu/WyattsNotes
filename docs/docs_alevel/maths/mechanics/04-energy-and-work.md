@@ -454,7 +454,7 @@ $200 + 294 = \tfrac{1}{2}v^2 \implies v^2 = 988 \implies v \approx 31.4\,\mathrm
 
 <details>
 <summary>Problem 10</summary>
-A train of mass $200{,}000\,\mathrm{kg}$ has a maximum power output of $2\,\mathrm{MW}$. The resistance to motion is $R = 5000 + 20v$ newtons. Find the maximum speed on level ground.
+A train of mass $200\,000\,\mathrm{kg}$ has a maximum power output of $2\,\mathrm{MW}$. The resistance to motion is $R = 5000 + 20v$ newtons. Find the maximum speed on level ground.
 </details>
 
 <details>

@@ -253,7 +253,7 @@ Verification: With the charge, the effective private cost becomes $20 + 36 = 56$
 
 (d) DWL without the charge:
 
-$$DWL = \frac{1}{2} \times MEC_{at Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(300) \times (300 - 120) = \frac{1}{2} \times 90 \times 180 = \text{HK}\$8{,}100$$
+$$DWL = \frac{1}{2} \times MEC_{at Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(300) \times (300 - 120) = \frac{1}{2} \times 90 \times 180 = \text{HK}\$8\,100$$
 
 (thousands, i.e., HK$8.1 million per hour).
 
@@ -292,21 +292,21 @@ $50 - 0.4B = 10 + B$, $1.4B = 40$, $B^* = 28.57$ boats.
 
 ### EQ-4: Information Asymmetry in Healthcare
 
-**Question:** In the market for health insurance, individuals know their own health status but insurance companies do not. There are two types of individuals: healthy (probability of illness $= 0.1$, medical cost if ill $= \$100{,}000$) and unhealthy (probability of illness $= 0.5$, medical cost if ill $= \$100{,}000$). The population is 60% healthy and 40% unhealthy. Each individual has income of $\$200{,}000$ and utility $U = \sqrt{W}$ where $W$ is wealth. (a) Calculate the actuarially fair premium for each type. (b) If the insurer cannot distinguish between types and must offer a single premium, what premium would it charge? (c) Explain the adverse selection problem that arises. (d) How does mandatory health insurance (as in Hong Kong's Voluntary Health Insurance Scheme) address this problem?
+**Question:** In the market for health insurance, individuals know their own health status but insurance companies do not. There are two types of individuals: healthy (probability of illness $= 0.1$, medical cost if ill $= \$100\,000$) and unhealthy (probability of illness $= 0.5$, medical cost if ill $= \$100\,000$). The population is 60% healthy and 40% unhealthy. Each individual has income of $\$200\,000$ and utility $U = \sqrt{W}$ where $W$ is wealth. (a) Calculate the actuarially fair premium for each type. (b) If the insurer cannot distinguish between types and must offer a single premium, what premium would it charge? (c) Explain the adverse selection problem that arises. (d) How does mandatory health insurance (as in Hong Kong's Voluntary Health Insurance Scheme) address this problem?
 
 **Solution:**
 
-(a) Expected cost for healthy: $0.1 \times 100{,}000 = \$10{,}000$. Fair premium $= \$10{,}000$.
+(a) Expected cost for healthy: $0.1 \times 100\,000 = \$10\,000$. Fair premium $= \$10\,000$.
 
-Expected cost for unhealthy: $0.5 \times 100{,}000 = \$50{,}000$. Fair premium $= \$50{,}000$.
+Expected cost for unhealthy: $0.5 \times 100\,000 = \$50\,000$. Fair premium $= \$50\,000$.
 
-(b) Pooled expected cost $= 0.6 \times 10{,}000 + 0.4 \times 50{,}000 = 6{,}000 + 20{,}000 = \$26{,}000$.
+(b) Pooled expected cost $= 0.6 \times 10\,000 + 0.4 \times 50\,000 = 6\,000 + 20\,000 = \$26\,000$.
 
 The insurer would charge a pooled premium of $\$26,000$ (plus a loading for admin costs and profit).
 
-(c) At a pooled premium of $\$26{,}000$:
-- Healthy individuals: Expected benefit $= \$10{,}000$, but premium $= \$26{,}000$. They are paying more than their expected cost. Many healthy individuals would choose not to buy insurance (they are better off self-insuring).
-- Unhealthy individuals: Expected benefit $= \$50{,}000$, premium $= \$26{,}000$. They get a good deal and will definitely buy.
+(c) At a pooled premium of $\$26\,000$:
+- Healthy individuals: Expected benefit $= \$10\,000$, but premium $= \$26\,000$. They are paying more than their expected cost. Many healthy individuals would choose not to buy insurance (they are better off self-insuring).
+- Unhealthy individuals: Expected benefit $= \$50\,000$, premium $= \$26\,000$. They get a good deal and will definitely buy.
 
 As healthy individuals drop out, the risk pool becomes sicker. The insurer must raise the premium, causing more healthy people to leave. This spiral continues until only the unhealthy remain in the pool -- the "adverse selection death spiral." The market may collapse entirely, leaving unhealthy individuals without coverage.
 

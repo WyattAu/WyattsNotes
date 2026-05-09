@@ -506,7 +506,7 @@ country. (b) Can you conclude that Country B is more developed? Explain.
 
 <details>
 <summary>Hint</summary>
-(a) Country A: $500 \times 10^9 / 50 \times 10^6 = 10{,}000$ USD. Country B: $200 \times 10^9 / 10 \times 10^6 = 20{,}000$ USD. (b) No — GDP per capita is only one indicator. It does not account for income distribution (Gini coefficient), health, education (HDI), or environmental quality. Country B may have extreme inequality. Always use multiple indicators to assess development.
+(a) Country A: $500 \times 10^9 / 50 \times 10^6 = 10\,000$ USD. Country B: $200 \times 10^9 / 10 \times 10^6 = 20\,000$ USD. (b) No — GDP per capita is only one indicator. It does not account for income distribution (Gini coefficient), health, education (HDI), or environmental quality. Country B may have extreme inequality. Always use multiple indicators to assess development.
 </details>
 
 **Problem 2.** A country's GNI per capita is $3,200$. (a) Using the World Bank classification, what
@@ -867,7 +867,7 @@ If required investment $= 24.5\%$ of GDP, domestic savings $= 15\%$, and require
 
 **Lewis turning point:** Surplus labour is exhausted when 30 million workers have been transferred.
 
-**Year 1:** Industrial MPL at $L = 10$: $MPL = 5000 - 1000 = 4000$. Profit per worker $= 4000 - 300 = 3700$. Total profit $= 3700 \times 10 = 37{,}000$. Capital accumulation $= 0.05 \times 37{,}000 = 1850$.
+**Year 1:** Industrial MPL at $L = 10$: $MPL = 5000 - 1000 = 4000$. Profit per worker $= 4000 - 300 = 3700$. Total profit $= 3700 \times 10 = 37\,000$. Capital accumulation $= 0.05 \times 37\,000 = 1850$.
 
 The industrial sector absorbs workers until $MPL = 300$: $5000 - 100L = 300 \Rightarrow L = 47$.
 37 workers are transferred (from 10 to 47). But only 30 surplus workers are available, so the turning point is reached.

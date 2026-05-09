@@ -1255,14 +1255,14 @@ at this locus.
 (b) Combined probability (product rule, assuming loci are independent):
 $P_{combined} = \frac{1}{41.7} \times \frac{1}{120} \times \frac{1}{85} = \frac{1}{425340}$
 
-Approximately $1$ in $425{,}000$.
+Approximately $1$ in $425\,000$.
 
 (c) The match probability is NOT the probability of guilt because:
 - It gives the probability that a randomly selected person would match the DNA profile, not the
   probability that the suspect is the source of the DNA.
 - The correct interpretation requires Bayesian reasoning: $P(\text{guilt} | \text{match})$ depends on
   the prior probability of guilt (based on other evidence).
-- In a city of $10$ million people, $10{,}000{,}000 / 425{,}340 \approx 23.5$ people would be expected
+- In a city of $10$ million people, $10\,000\,000 / 425\,340 \approx 23.5$ people would be expected
   to match this profile by chance alone.
 - Other evidence (alibi, eyewitness testimony, motive) must be considered alongside the DNA evidence.
 
@@ -1271,8 +1271,8 @@ Approximately $1$ in $425{,}000$.
 <details>
 <summary>Problem 12: Extended Response -- Comparative Genomics</summary>
 
-The human genome contains approximately $20{,}000$ protein-coding genes, while _E. coli_ has approximately
-$4{,}300$. However, humans have only about $1.5$ times as many protein domains (functional units) as
+The human genome contains approximately $20\,000$ protein-coding genes, while _E. coli_ has approximately
+$4\,300$. However, humans have only about $1.5$ times as many protein domains (functional units) as
 _E. coli_. (a) Explain how humans generate proteomic complexity far greater than the number of genes
 would suggest. (b) Describe the role of alternative splicing, with a specific example. (c) Explain how
 post-translational modifications expand proteome diversity. (d) The pufferfish (_Fugu rubripes_) genome
@@ -1344,7 +1344,7 @@ isoforms with different adhesive properties.
 
 **Golden Rice**:
 - Developed by Potrykus and Beyer (2000) to address vitamin A deficiency (VAD), which causes
-  approximately $500{,}000$ cases of childhood blindness annually.
+  approximately $500\,000$ cases of childhood blindness annually.
 - Two genes from daffodil (_psy_, phytoene synthase) and one from bacterium (_crtI_, phytoene desaturase)
   were introduced into rice, enabling the endosperm to produce beta-carotene (provitamin A).
 - Golden Rice 2 (2005) used a maize _psy_ gene, achieving much higher beta-carotene levels ($37\;\mathrm{\mu g/g}$).

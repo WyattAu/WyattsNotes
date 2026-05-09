@@ -219,7 +219,7 @@ possibilities that were previously unattainable.
 
 ### EQ-1: PPC Shifts and Economic Growth
 
-**Question:** An economy's PPC for capital goods ($K$) and consumer goods ($C$) is given by $K = 200 - 2\sqrt{C}$ for $0 \le C \le 10{,}000$. Currently, the economy produces at $C = 2500$, $K = 100$. (a) Verify that this point is on the PPC. (b) Calculate the opportunity cost of increasing consumer goods from 2500 to 3600. (c) If the economy invests in new technology, shifting the PPC to $K = 240 - 2\sqrt{C}$, can the economy now produce $C = 3600$ and $K = 120$ simultaneously? Show your working. (d) Explain the difference between a movement along the PPC and a shift of the PPC.
+**Question:** An economy's PPC for capital goods ($K$) and consumer goods ($C$) is given by $K = 200 - 2\sqrt{C}$ for $0 \le C \le 10\,000$. Currently, the economy produces at $C = 2500$, $K = 100$. (a) Verify that this point is on the PPC. (b) Calculate the opportunity cost of increasing consumer goods from 2500 to 3600. (c) If the economy invests in new technology, shifting the PPC to $K = 240 - 2\sqrt{C}$, can the economy now produce $C = 3600$ and $K = 120$ simultaneously? Show your working. (d) Explain the difference between a movement along the PPC and a shift of the PPC.
 
 **Solution:**
 

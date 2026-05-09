@@ -475,12 +475,12 @@ interpreting measurements correctly.
 
 | Base Quantity       | SI Unit       | Current Definition (SI 2019)                                                               |
 | ------------------- | ------------- | ------------------------------------------------------------------------------------------ |
-| Length              | metre (m)     | Defined by fixing the speed of light $c = 299{,}792{,}458$ m s$^{-1}$                      |
-| Mass                | kilogram (kg) | Defined by fixing the Planck constant $h = 6.626{,}070{,}15 \times 10^{-34}$ J s           |
-| Time                | second (s)    | Defined by fixing the caesium frequency $\Delta\nu_{Cs} = 9{,}192{,}631{,}770$ Hz          |
-| Electric current    | ampere (A)    | Defined by fixing the elementary charge $e = 1.602{,}176{,}634 \times 10^{-19}$ C          |
-| Temperature         | kelvin (K)    | Defined by fixing the Boltzmann constant $k_B = 1.380{,}649 \times 10^{-23}$ J K$^{-1}$    |
-| Amount of substance | mole (mol)    | Defined by fixing the Avogadro constant $N_A = 6.022{,}140{,}76 \times 10^{23}$ mol$^{-1}$ |
+| Length              | metre (m)     | Defined by fixing the speed of light $c = 299\,792\,458$ m s$^{-1}$                      |
+| Mass                | kilogram (kg) | Defined by fixing the Planck constant $h = 6.626\,070\,15 \times 10^{-34}$ J s           |
+| Time                | second (s)    | Defined by fixing the caesium frequency $\Delta\nu_{Cs} = 9\,192\,631\,770$ Hz          |
+| Electric current    | ampere (A)    | Defined by fixing the elementary charge $e = 1.602\,176\,634 \times 10^{-19}$ C          |
+| Temperature         | kelvin (K)    | Defined by fixing the Boltzmann constant $k_B = 1.380\,649 \times 10^{-23}$ J K$^{-1}$    |
+| Amount of substance | mole (mol)    | Defined by fixing the Avogadro constant $N_A = 6.022\,140\,76 \times 10^{23}$ mol$^{-1}$ |
 | Luminous intensity  | candela (cd)  | Defined by fixing the luminous efficacy $K_{cd} = 683$ lm W$^{-1}$                         |
 
 :::info

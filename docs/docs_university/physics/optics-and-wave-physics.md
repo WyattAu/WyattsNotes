@@ -2235,7 +2235,7 @@ The Hubble Space Telescope has a primary mirror diameter of 2.4 m and operates a
 
 (a) Calculate the angular resolution (Rayleigh criterion).
 
-(b) What is the minimum distance on the Moon's surface ($d = 384{,}400$ km) that can be resolved?
+(b) What is the minimum distance on the Moon's surface ($d = 384\,400$ km) that can be resolved?
 
 (c) How does atmospheric seeing ($\sim 0.5$ arcsec) compare with the diffraction limit?
 
@@ -2272,7 +2272,7 @@ FSR in wavelength: $\Delta\lambda_{\text{FSR}} = \lambda^2/(2d) = (500 \times 10
 
 $$\delta\lambda = \frac{\Delta\lambda_{\text{FSR}}}{\mathcal{F}} = \frac{0.125}{14.1}\ \text{nm} = 0.0089\ \text{nm} = 8.9\ \text{pm}$$
 
-This corresponds to a resolving power $\mathcal{R} = \lambda/\delta\lambda = 500/0.0089 \approx 56{,}000$.
+This corresponds to a resolving power $\mathcal{R} = \lambda/\delta\lambda = 500/0.0089 \approx 56\,000$.
 
 </details>
 

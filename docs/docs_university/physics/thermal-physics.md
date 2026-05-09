@@ -1340,7 +1340,7 @@ $$= \frac{1.113 \times 10^{-68}}{1.822 \times 10^{-30}} \times 1.846 \times 10^{
 
 $$= 6.11 \times 10^{-39} \times 1.846 \times 10^{20} = 1.13 \times 10^{-18} \text{ J}$$
 
-$$T_F = \frac{1.13 \times 10^{-18}}{1.38 \times 10^{-23}} \approx 81{,}900 \text{ K}$$
+$$T_F = \frac{1.13 \times 10^{-18}}{1.38 \times 10^{-23}} \approx 81\,900 \text{ K}$$
 
 This is enormously higher than room temperature, confirming that conduction electrons in metals form a highly degenerate Fermi gas.
 

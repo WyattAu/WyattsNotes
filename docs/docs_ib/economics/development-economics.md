@@ -732,20 +732,20 @@ the Lewis turning point is reached?
 
 (c) What happens to wages after the Lewis turning point?
 
-(a) Industrial wage $= 1.5 \times 2{,}000 = \$3{,}000$ per worker
+(a) Industrial wage $= 1.5 \times 2\,000 = \$3\,000$ per worker
 
-Industrial profit per worker $= 15{,}000 - 3{,}000 = \$12{,}000$
+Industrial profit per worker $= 15\,000 - 3\,000 = \$12\,000$
 
-Total industrial profits $= 12{,}000 \times 20{,}000{,}000 = \$240$ billion
+Total industrial profits $= 12\,000 \times 20\,000\,000 = \$240$ billion
 
 Reinvestment $= 0.40 \times 240 = \$96$ billion
 
-Growth rate of industrial capital $= 96 / (20{,}000 \times k)$, where $k$ is capital per worker.
+Growth rate of industrial capital $= 96 / (20\,000 \times k)$, where $k$ is capital per worker.
 
 Without knowing $k$ directly, we can express the growth rate in terms of the capital-output ratio.
 If the ICOR in industry is $v = 3$:
 
-Capital stock $= v \times \text{Industrial output} = 3 \times (15{,}000 \times 20{,}000{,}000) = \$900$ billion
+Capital stock $= v \times \text{Industrial output} = 3 \times (15\,000 \times 20\,000\,000) = \$900$ billion
 
 Growth rate of capital $= 96 / 900 = 10.7\%$
 
@@ -1948,12 +1948,12 @@ After: dependency ratio $= (12 + 8)/35 = 20/35 = 0.571$ (57 dependents per 100 w
 
 The dependency ratio falls from 1.0 to 0.571, a 43% reduction.
 
-(b) Before: total GDP $= 25 \times 10{,}000 = 250{,}000$ million. GDP per capita $= 250{,}000/50 = 5{,}000$.
+(b) Before: total GDP $= 25 \times 10\,000 = 250\,000$ million. GDP per capita $= 250\,000/50 = 5\,000$.
 
 After: if GDP per worker rises to USD 12,000 (due to productivity growth enabled by the
-dividend), total GDP $= 35 \times 12{,}000 = 420{,}000$ million. Total population $= 35 + 12 + 8 = 55$ million.
+dividend), total GDP $= 35 \times 12\,000 = 420\,000$ million. Total population $= 35 + 12 + 8 = 55$ million.
 
-GDP per capita $= 420{,}000/55 = 7{,}636$.
+GDP per capita $= 420\,000/55 = 7\,636$.
 
 GDP per capita rises from USD 5,000 to USD 7,636, a 53% increase.
 
@@ -2018,7 +2018,7 @@ Quantification (approximate):
 If the subsidy enables 500,000 new users (USD 20 per user in infrastructure cost):
 
 - Annual benefit per user: USD 50 (reduced transaction costs + increased savings returns)
-- Total annual benefit: $500{,}000 \times 50 = 25$ million
+- Total annual benefit: $500\,000 \times 50 = 25$ million
 - NPV (10 years, 8% discount rate): $-10 + 25 \times 6.71 = -10 + 167.8 = 157.8$ million
 
 The NPV is strongly positive, suggesting the subsidy is justified.
@@ -2163,7 +2163,7 @@ At 100 GW of cumulative production, the firm's cost (USD 0.199/W) is below the w
 Protection can be removed.
 
 **Cost to consumers during protection:** the tariff raises prices by USD 0.20/W on all imports.
-If domestic demand is 5 GW/year, the annual consumer cost $= 0.20 \times 5{,}000{,}000 = 1$ billion.
+If domestic demand is 5 GW/year, the annual consumer cost $= 0.20 \times 5\,000\,000 = 1$ billion.
 
 **Net benefit after protection:** the firm produces at USD 0.199/W vs. importing at USD 0.30/W,
 a saving of USD 0.101/W. If annual production is 5 GW: annual saving $= 505$ million.

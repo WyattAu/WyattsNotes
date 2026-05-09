@@ -273,11 +273,11 @@ principle that holds across all domains:
 <summary>Problem 1</summary>
 A car of mass $1200$ kg accelerates from rest to $25$ m s$^{-1}$ in $8.0$ s. Calculate: (a) the kinetic energy gained, (b) the average power output, (c) the average force.
 
-**Answer.** (a) $E_k = \frac{1}{2}(1200)(25)^2 = 375{,}000$ J $= 375$ kJ.
+**Answer.** (a) $E_k = \frac{1}{2}(1200)(25)^2 = 375\,000$ J $= 375$ kJ.
 
-(b) $P = \frac{\Delta E_k}{\Delta t} = \frac{375{,}000}{8.0} = 46{,}900$ W $= 46.9$ kW.
+(b) $P = \frac{\Delta E_k}{\Delta t} = \frac{375\,000}{8.0} = 46\,900$ W $= 46.9$ kW.
 
-(c) $P = Fv_{\mathrm{avg}}$, $v_{\mathrm{avg}} = 12.5$ m s$^{-1}$. $F = 46{,}900/12.5 = 3750$ N.
+(c) $P = Fv_{\mathrm{avg}}$, $v_{\mathrm{avg}} = 12.5$ m s$^{-1}$. $F = 46\,900/12.5 = 3750$ N.
 Alternatively, $F = ma = 1200 \times 25/8 = 3750$ N.
 
 <b>If you get this wrong, revise:</b> [Kinetic Energy](#2-kinetic-energy) and
@@ -304,8 +304,8 @@ A roller coaster car of mass $500$ kg starts from rest at point A, 20 m above th
 **Answer.** At B: $\frac{1}{2}(500)v_B^2 = 500 \times 9.81 \times 20$.
 $v_B = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} = 19.8$ m s$^{-1}$.
 
-At C: $E_k(C) = mg(h_A - h_C) = 500 \times 9.81 \times 8 = 39{,}240$ J.
-$v_C = \sqrt{2 \times 39{,}240/500} = \sqrt{156.96} = 12.5$ m s$^{-1}$.
+At C: $E_k(C) = mg(h_A - h_C) = 500 \times 9.81 \times 8 = 39\,240$ J.
+$v_C = \sqrt{2 \times 39\,240/500} = \sqrt{156.96} = 12.5$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
 
@@ -364,9 +364,9 @@ A car of mass $800$ kg travels at constant speed $20$ m s$^{-1}$ up a hill incli
 
 At constant speed, engine force = resistance = $684$ N (ignoring other losses).
 
-Power output: $P = Fv = 684 \times 20 = 13{,}680$ W.
+Power output: $P = Fv = 684 \times 20 = 13\,680$ W.
 
-Fuel power: $P_{\mathrm{fuel}} = P/\eta = 13{,}680/0.25 = 54{,}700$ W $= 54.7$ kW.
+Fuel power: $P_{\mathrm{fuel}} = P/\eta = 13\,680/0.25 = 54\,700$ W $= 54.7$ kW.
 
 <b>If you get this wrong, revise:</b> [Power and Velocity](#power-and-velocity) and
 [Efficiency](#6-power)
@@ -402,7 +402,7 @@ At max height: $E = mgh_{\max}$. So $h_{\max} = 132.1/9.81 = 13.5$ m.
 <summary>Problem 10</summary>
 A satellite of mass $500$ kg is in a circular orbit at altitude $300$ km above Earth's surface. Given $g = 9.81$ m s$^{-2}$ at the surface and $R_E = 6370$ km, calculate the total energy of the satellite. (The total energy of a circular orbit is $E = -\frac{GMm}{2r} = -\frac{1}{2}mgh$ is not valid here — use $E = -GMm/(2r)$ with $GM = gR_E^2$.)
 
-**Answer.** $r = R_E + h = 6{,}670{,}000$ m.
+**Answer.** $r = R_E + h = 6\,670\,000$ m.
 $GM = gR_E^2 = 9.81 \times (6.37 \times 10^6)^2 = 3.976 \times 10^{14}$.
 
 $E = -\frac{GMm}{2r} = -\frac{3.976 \times 10^{14} \times 500}{2 \times 6.67 \times 10^6} = -\frac{1.988 \times 10^{17}}{1.334 \times 10^7} = -1.49 \times 10^{10}$
@@ -521,7 +521,7 @@ maximum speed of the car (terminal velocity), (b) the power at this speed.
 
 $2v^2 = 2700$, $v^2 = 1350$, $v = 36.7$ m s$^{-1} \approx 132$ km h$^{-1}$.
 
-(b) $P = Fv = 3000 \times 36.7 = 110{,}100$ W $= 110$ kW.
+(b) $P = Fv = 3000 \times 36.7 = 110\,100$ W $= 110$ kW.
 
 Note: at maximum speed, all the engine's power goes into overcoming resistance. If the car tried to
 go faster, resistance would exceed the driving force and it would decelerate.
@@ -538,13 +538,13 @@ $25$ m and spring constant $50$ N m$^{-1}$. Taking the reference level as the ju
 the speed of the jumper when the cord is stretched $15$ m beyond its natural length.
 
 **Answer.** Height below platform: $h = 25 + 15 = 40$ m. Loss of PE:
-$mgh = 75 \times 9.81 \times 40 = 29{,}430$ J.
+$mgh = 75 \times 9.81 \times 40 = 29\,430$ J.
 
 Elastic PE in cord: $E_e = \frac{1}{2}(50)(15)^2 = 5625$ J.
 
-By conservation: $mgh = E_k + E_e$. $29{,}430 = \frac{1}{2}(75)v^2 + 5625$.
+By conservation: $mgh = E_k + E_e$. $29\,430 = \frac{1}{2}(75)v^2 + 5625$.
 
-$\frac{1}{2}(75)v^2 = 23{,}805$. $v^2 = 634.8$. $v = 25.2$ m s$^{-1}$.
+$\frac{1}{2}(75)v^2 = 23\,805$. $v^2 = 634.8$. $v = 25.2$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
 
@@ -564,7 +564,7 @@ energy wasted per second, (d) the total electrical energy consumed to lift the c
 (c) Energy wasted per second = $P_{\mathrm{in}} - P_{\mathrm{out}} = 1847 - 1570 = 277$ J s$^{-1}$.
 
 (d) Time to lift 12 m: $t = 12/0.80 = 15$ s. Total electrical energy =
-$P_{\mathrm{in}} \times t = 1847 \times 15 = 27{,}705$ J $= 27.7$ kJ.
+$P_{\mathrm{in}} \times t = 1847 \times 15 = 27\,705$ J $= 27.7$ kJ.
 
 <b>If you get this wrong, revise:</b> [Efficiency](#6-power)
 

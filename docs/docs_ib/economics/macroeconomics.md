@@ -775,7 +775,7 @@ Net exports $= X - M = 800 - 950 = -\$150$ billion (a trade deficit).
 
 (b) $\mathrm{Real\ GDP} = \frac{\mathrm{Nominal\ GDP}}{\mathrm{GDP\ Deflator}} \times 100 = \frac{6650}{115} \times 100 = \$5782.6 \text{ billion}$
 
-(c) GDP per capita $= \frac{6650 \times 10^9}{50 \times 10^6} = \$133{,}000$
+(c) GDP per capita $= \frac{6650 \times 10^9}{50 \times 10^6} = \$133\,000$
 
 </details>
 
@@ -793,7 +793,7 @@ year 1 and `USD 52,000` in year 2.
 
 (a) $\mathrm{Inflation\ rate} = \frac{252 - 240}{240} \times 100 = \frac{12}{240} \times 100 = 5\%$
 
-(b) Real income in year 2 $= \frac{52{,}000}{252/240} = \frac{52{,}000}{1.05} = \$49{,}523.81$
+(b) Real income in year 2 $= \frac{52\,000}{252/240} = \frac{52\,000}{1.05} = \$49\,523.81$
 
 (c) The worker's real income fell from `USD 50,000` to approximately `USD 49,524`. Despite a nominal
 raise of `USD 2,000`, purchasing power decreased because the raise ($4\%$) was less than inflation
@@ -908,7 +908,7 @@ The reserve ratio is $0.1$ (10%), and the public holds no cash outside the banki
 
 (a) Money multiplier $= \frac{1}{r} = \frac{1}{0.1} = 10$
 
-Maximum increase in money supply $= \$200 \text{ million} \times 10 = \$2{,}000 \text{ million}$
+Maximum increase in money supply $= \$200 \text{ million} \times 10 = \$2\,000 \text{ million}$
 
 (b) The actual increase may be less because:
 
@@ -2351,10 +2351,10 @@ The banking system has USD 2 trillion in deposits and USD 1.5 trillion in loans.
 (a) The central bank creates USD 500 billion in bank reserves to purchase bonds. The monetary base
 (high-powered money $=$ currency + bank reserves) increases by USD 500 billion.
 
-(b) Assuming initial reserves of USD 200 billion ($10\% \times 2{,}000$), new reserves $= 700$ billion.
+(b) Assuming initial reserves of USD 200 billion ($10\% \times 2\,000$), new reserves $= 700$ billion.
 
 The simple deposit multiplier $= 1/0.10 = 10$. Maximum expansion from additional reserves
-$= 500 / 0.10 = 5{,}000$ billion.
+$= 500 / 0.10 = 5\,000$ billion.
 
 Note: this is a theoretical maximum. In practice, banks may not lend out all excess reserves
 because of weak demand for loans, risk aversion, or regulatory constraints.

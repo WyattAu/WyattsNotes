@@ -1133,7 +1133,7 @@ $180\;\mathrm{mg/dL} = 1.8\;\mathrm{g/L}$). This patient's plasma glucose ($1.0\
 the threshold, so the small clearance may reflect tubular dysfunction or incomplete reabsorption.
 
 (d) Expected daily urine volume:
-Filtration rate $= 125\;\mathrm{mL/min} \times 60 \times 24 = 180{,}000\;\mathrm{mL/day} = 180\;\mathrm{L/day}$.
+Filtration rate $= 125\;\mathrm{mL/min} \times 60 \times 24 = 180\,000\;\mathrm{mL/day} = 180\;\mathrm{L/day}$.
 If $99\%$ is reabsorbed: urine volume $= 180 \times 0.01 = 1.8\;\mathrm{L/day}$.
 
 This matches normal urine output ($1$--$2\;\mathrm{L/day}$).

@@ -577,12 +577,12 @@ cross-sectional area $5.0 \times 10^{-4}$ m$^2$). Compare losses at 10 kV and 40
 
 Resistance of the cable (there and back):
 
-$R = \frac{\rho \times 2L}{A} = \frac{2.7 \times 10^{-8} \times 2 \times 50{,}000}{5.0 \times 10^{-4}} = \frac{2.7 \times 10^{-3}}{5.0 \times 10^{-4}} = 5.4$
+$R = \frac{\rho \times 2L}{A} = \frac{2.7 \times 10^{-8} \times 2 \times 50\,000}{5.0 \times 10^{-4}} = \frac{2.7 \times 10^{-3}}{5.0 \times 10^{-4}} = 5.4$
 $\Omega$.
 
-At 10 kV: $I = P/V = 100 \times 10^6 / (10 \times 10^3) = 10{,}000$ A.
+At 10 kV: $I = P/V = 100 \times 10^6 / (10 \times 10^3) = 10\,000$ A.
 
-$P_{\mathrm{loss}} = I^2R = (10{,}000)^2 \times 5.4 = 5.4 \times 10^8$ W $= 540$ MW.
+$P_{\mathrm{loss}} = I^2R = (10\,000)^2 \times 5.4 = 5.4 \times 10^8$ W $= 540$ MW.
 
 This exceeds the total power being transmitted! Clearly 10 kV is impractical.
 
@@ -590,7 +590,7 @@ At 400 kV: $I = 100 \times 10^6 / (400 \times 10^3) = 250$ A.
 
 $P_{\mathrm{loss}} = (250)^2 \times 5.4 = 3.375 \times 10^5$ W $= 338$ kW.
 
-Percentage loss $= 338{,}000 / 100{,}000{,}000 = 0.34\%$.
+Percentage loss $= 338\,000 / 100\,000\,000 = 0.34\%$.
 
 Stepping up from 10 kV to 400 kV reduced losses from 540% (impossible!) to 0.34%. This demonstrates
 why high-voltage transmission is essential.
@@ -653,7 +653,7 @@ power dissipated, (c) the energy transferred in 10 minutes.
 
 (b) $P = IV = 2.5 \times 12 = 30$ W.
 
-(c) $E = Pt = 30 \times 600 = 18{,}000$ J = 18 kJ.
+(c) $E = Pt = 30 \times 600 = 18\,000$ J = 18 kJ.
 
 <b>If you get this wrong, revise:</b> [Electrical Energy and Power](#6-electrical-energy-and-power)
 
@@ -800,8 +800,8 @@ A power station generates 500 MW and transmits it over 80 km of cable with total
 $\Omega$. Calculate the power loss and efficiency when transmitting at: (a) 25 kV, (b) 132 kV, (c)
 400 kV.
 
-**Answer.** (a) $I = 500 \times 10^6 / (25 \times 10^3) = 20{,}000$ A.
-$P_{\mathrm{loss}} = (20{,}000)^2 \times 4.0 = 1.6 \times 10^9$ W $= 1600$ MW. Efficiency
+**Answer.** (a) $I = 500 \times 10^6 / (25 \times 10^3) = 20\,000$ A.
+$P_{\mathrm{loss}} = (20\,000)^2 \times 4.0 = 1.6 \times 10^9$ W $= 1600$ MW. Efficiency
 $= 500/(500 + 1600) = 23.8\%$.
 
 (b) $I = 500 \times 10^6 / (132 \times 10^3) = 3788$ A.
@@ -899,7 +899,7 @@ $\Omega$.
 <summary>Problem 17</summary>
 
 An NTC thermistor with $B = 3900$ K has resistance $R_0 = 5000$ $\Omega$ at $T_0 = 298$ K
-(25$^\circ\mathrm{C}$). It is connected in a potential divider circuit with a $10{,}000$ $\Omega$
+(25$^\circ\mathrm{C}$). It is connected in a potential divider circuit with a $10\,000$ $\Omega$
 fixed resistor and a 9.0 V supply. (a) Calculate the thermistor resistance at $50^\circ\mathrm{C}$
 (323 K). (b) Calculate the output voltage across the thermistor at $25^\circ\mathrm{C}$ and at
 $50^\circ\mathrm{C}$. (c) Calculate the output voltage across the fixed resistor at each
@@ -913,17 +913,17 @@ $= 5000 \times \exp[3900 \times (-2.60 \times 10^{-4})]$
 
 $= 5000 \times \exp(-1.014) = 5000 \times 0.363 = 1813$ $\Omega$.
 
-(b) At $25^\circ\mathrm{C}$: $R_{\mathrm{total}} = 5000 + 10{,}000 = 15{,}000$ $\Omega$.
-$V_T = \frac{5000}{15{,}000} \times 9.0 = 3.00$ V.
+(b) At $25^\circ\mathrm{C}$: $R_{\mathrm{total}} = 5000 + 10\,000 = 15\,000$ $\Omega$.
+$V_T = \frac{5000}{15\,000} \times 9.0 = 3.00$ V.
 
-At $50^\circ\mathrm{C}$: $R_{\mathrm{total}} = 1813 + 10{,}000 = 11{,}813$ $\Omega$.
-$V_T = \frac{1813}{11{,}813} \times 9.0 = 1.38$ V.
+At $50^\circ\mathrm{C}$: $R_{\mathrm{total}} = 1813 + 10\,000 = 11\,813$ $\Omega$.
+$V_T = \frac{1813}{11\,813} \times 9.0 = 1.38$ V.
 
 (c) At $25^\circ\mathrm{C}$: $V_R = 9.0 - 3.00 = 6.00$ V. (Or
-$V_R = \frac{10{,}000}{15{,}000} \times 9.0 = 6.00$ V.)
+$V_R = \frac{10\,000}{15\,000} \times 9.0 = 6.00$ V.)
 
 At $50^\circ\mathrm{C}$: $V_R = 9.0 - 1.38 = 7.62$ V. (Or
-$V_R = \frac{10{,}000}{11{,}813} \times 9.0 = 7.62$ V.)
+$V_R = \frac{10\,000}{11\,813} \times 9.0 = 7.62$ V.)
 
 <b>If you get this wrong, revise:</b>
 [Temperature Dependence of Resistance](#7-temperature-dependence-of-resistance)

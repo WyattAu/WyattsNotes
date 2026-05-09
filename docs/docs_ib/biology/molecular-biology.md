@@ -1200,7 +1200,7 @@ molecules can increase. This means water absorbs a large amount of heat energy w
 temperature change. Biological significance: water buffers temperature changes in organisms and
 environments (oceans, large lakes), providing thermal stability for biochemical reactions.
 
-(b) $Q = mc\Delta T = 70000\;\mathrm{g} \times 4.18\;\mathrm{J/(g \cdot ^\circ C)} \times 1^\circ\mathrm{C} = 292{,}600\;\mathrm{J} = 292.6\;\mathrm{kJ}$.
+(b) $Q = mc\Delta T = 70000\;\mathrm{g} \times 4.18\;\mathrm{J/(g \cdot ^\circ C)} \times 1^\circ\mathrm{C} = 292\,600\;\mathrm{J} = 292.6\;\mathrm{kJ}$.
 
 (c) Ice floats because it is less dense than liquid water. In ice, each water molecule forms 4 hydrogen
 bonds in a rigid, open hexagonal lattice that is less densely packed than the disordered arrangement in
@@ -1397,7 +1397,7 @@ by applying an electric field across a gel matrix.
 **DNA electrophoresis**:
 - DNA is negatively charged (phosphate backbone) and migrates toward the positive electrode (anode).
 - Agarose gel: concentration $0.5$--$2.0\%$ (higher concentration = smaller pores = better separation
-  of small fragments). Suitable for fragments $100$--$25{,}000\;\mathrm{bp}$.
+  of small fragments). Suitable for fragments $100$--$25\,000\;\mathrm{bp}$.
 - Polyacrylamide gel (PAGE): higher resolution, suitable for fragments $1$--$1000\;\mathrm{bp}$.
 - Migration distance is inversely proportional to the log of fragment size (larger fragments move
   more slowly through the gel matrix).

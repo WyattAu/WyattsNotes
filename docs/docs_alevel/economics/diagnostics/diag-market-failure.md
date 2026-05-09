@@ -225,7 +225,7 @@ At $Q = 257.14$: $MSB = MSC = 168.57$.
 DWL $= \frac{1}{2}(MSB_{228.57} - MSC_{228.57})(257.14 - 228.57) = \frac{1}{2}(174.29 - 154.29)(28.57) = \frac{1}{2}(20)(28.57) = 285.7$.
 
 (c) Free vaccination: $P_c = 0$. $Q_D = 1000 - 5(0) = 1000$. $Q_S$ at $P = 0$: $0 = 40 + 0.5Q \Rightarrow Q = -80$. This is negative, meaning supply is zero at $P = 0$. The government would need to purchase at the supply price.
-At $Q = 1000$: $P = 40 + 0.5(1000) = 540$. Government cost per vaccination = 540. Total cost $= 540 \times 1000 = 540{,}000$.
+At $Q = 1000$: $P = 40 + 0.5(1000) = 540$. Government cost per vaccination = 540. Total cost $= 540 \times 1000 = 540\,000$.
 
 (d) No, free vaccination is NOT economically efficient. The socially optimal quantity is 257.14, not 1000. Providing 1000 vaccinations means vaccinating people whose private marginal benefit ($P_{MSB}$ at $Q = 1000$ is $220 - 200 = 20$) is far below the marginal cost ($P = 540$). The government overspends by providing vaccinations beyond the social optimum.
 

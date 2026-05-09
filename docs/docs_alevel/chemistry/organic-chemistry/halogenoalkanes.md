@@ -290,7 +290,7 @@ $$
 
 Net reaction: $2\mathrm{O}_3 \to 3\mathrm{O}_2$
 
-One chlorine radical can destroy approximately $100{,}000$ ozone molecules before being removed from the cycle (by forming $\mathrm{HCl}$, which diffuses back to the troposphere).
+One chlorine radical can destroy approximately $100\,000$ ozone molecules before being removed from the cycle (by forming $\mathrm{HCl}$, which diffuses back to the troposphere).
 
 ### Why CFCs Are Particularly Damaging
 

@@ -549,7 +549,7 @@ $$
 **(a)** At $298\,\mathrm{K}$:
 
 $$
-\Delta G^\circ = 173 \times 10^3 - 298 \times 176 = 173000 - 52448 = +120{,}552\,\mathrm{J/mol} = +120.6\,\mathrm{kJ/mol}
+\Delta G^\circ = 173 \times 10^3 - 298 \times 176 = 173000 - 52448 = +120\,552\,\mathrm{J/mol} = +120.6\,\mathrm{kJ/mol}
 $$
 
 Not spontaneous at room temperature.

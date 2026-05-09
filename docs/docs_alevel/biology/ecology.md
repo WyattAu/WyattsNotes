@@ -1218,7 +1218,7 @@ If the forest receives $1.0 \times 10^{10}\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$ of li
 
 $\text{GPP (energy)} = 10,500 \times 18 = 189,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$.
 
-Photosynthetic efficiency $= \frac{189{,}000}{1.0 \times 10^{10}} = 0.0019 = 0.19\%$.
+Photosynthetic efficiency $= \frac{189\,000}{1.0 \times 10^{10}} = 0.0019 = 0.19\%$.
 
 ### 21.2 Comparing Ecosystems
 

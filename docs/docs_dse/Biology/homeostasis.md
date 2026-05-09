@@ -349,9 +349,9 @@ A patient with uncontrolled Type 1 diabetes has a fasting blood glucose concentr
 
 (a) Glucose filtered per day = concentration $\times$ volume = $320 \mathrm{ mg/100 cm}^3 \times 180 \times 10 \mathrm{ dm}^3$
 
-$= 320 \times 10 \mathrm{ mg/dm}^3 \times 180 \mathrm{ dm}^3 = 576{,}000 \mathrm{ mg/day} = 576 \mathrm{ g/day}$
+$= 320 \times 10 \mathrm{ mg/dm}^3 \times 180 \mathrm{ dm}^3 = 576\,000 \mathrm{ mg/day} = 576 \mathrm{ g/day}$
 
-(b) Maximum glucose reabsorption = $375 \mathrm{ mg/min} \times 60 \times 24 = 540{,}000 \mathrm{ mg/day} = 540 \mathrm{ g/day}$
+(b) Maximum glucose reabsorption = $375 \mathrm{ mg/min} \times 60 \times 24 = 540\,000 \mathrm{ mg/day} = 540 \mathrm{ g/day}$
 
 (c) Glucose excreted = glucose filtered - glucose reabsorbed = $576 - 540 = 36 \mathrm{ g/day}$
 

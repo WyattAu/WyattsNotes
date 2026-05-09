@@ -567,8 +567,8 @@ using the concepts of comparative advantage, trade creation/diversion, and suppl
 <summary>Answer</summary>
 (a) Nominal GDP $= C + I + G + (X - M) = 900 + 200 + 350 + (280 - 310) = 1420$.
 (b) Real GDP $= \frac{1420}{115} \times 100 = 1234.78$.
-(c) GDP per capita $= \frac{1420}{67} = \pounds 21{,}194$.
-(d) Real GDP per capita $= \frac{1234.78}{67} = \pounds 18{,}430$.
+(c) GDP per capita $= \frac{1420}{67} = \pounds 21\,194$.
+(d) Real GDP per capita $= \frac{1234.78}{67} = \pounds 18\,430$.
 (e) Current account balance $= X - M = 280 - 310 = -\pounds 30\text{bn}$ (deficit).
 </details>
 

@@ -908,7 +908,7 @@ time.
 
 For $p = 0.001$, $\mathrm{ma} = 100$ ns, $\mathrm{pf} = 8$ ms:
 
-$$\mathrm{EAT} = 0.999 \times 100 + 0.001 \times 8{,}000{,}000 = 8.1 \; \mu\mathrm{s}$$
+$$\mathrm{EAT} = 0.999 \times 100 + 0.001 \times 8\,000\,000 = 8.1 \; \mu\mathrm{s}$$
 
 This is roughly $80\times$ slower than pure memory access, illustrating why a low page fault rate
 is critical.
@@ -945,7 +945,7 @@ Time = $\mathrm{TLB} + 2 \times \mathrm{ma} = 2 + 200 = 202$ ns.
 *Case 3: Page fault* ($0.0005$):
 Time = $\mathrm{TLB} + \mathrm{ma} + \mathrm{pf} = 2 + 100 + 8 \times 10^6 = 8000002$ ns.
 
-$$\mathrm{EAT} = 0.7996 \times 102 + 0.1999 \times 202 + 0.0005 \times 8{,}000{,}102$$
+$$\mathrm{EAT} = 0.7996 \times 102 + 0.1999 \times 202 + 0.0005 \times 8\,000\,102$$
 $$\mathrm{EAT} = 81.56 + 40.38 + 4000.05 = 4121.99 \;\mathrm{ns} \approx 4.12 \;\mu\mathrm{s}$$
 
 This is roughly $41\times$ slower than pure memory access, driven almost entirely by the page fault

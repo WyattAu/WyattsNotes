@@ -1209,7 +1209,7 @@ to the host nucleus) and became integrated as organelles.
 - The sperm contributes very few (if any) mitochondria to the zygote. The mitochondria in the sperm's
   midpiece are destroyed after fertilisation (in many species, the sperm mitochondria are targeted for
   degradation by ubiquitin-proteasome pathways in the oocyte).
-- The egg (oocyte) contains a large number of mitochondria ($>100{,}000$), which vastly outnumber any
+- The egg (oocyte) contains a large number of mitochondria ($>100\,000$), which vastly outnumber any
   sperm-derived mitochondria.
 - This means all mitochondrial DNA in an individual is derived from the mother, which is the basis for
   mitochondrial DNA tracing in evolutionary and forensic studies (mitochondrial Eve).

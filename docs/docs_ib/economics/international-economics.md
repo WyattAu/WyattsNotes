@@ -1563,7 +1563,7 @@ $$I = \frac{\text{Actual} - \text{Minimum}}{\text{Maximum} - \text{Minimum}}$$
 
 The GNI index uses logarithms to reflect diminishing marginal utility of income:
 
-$$I_{\text{income}} = \frac{\ln(\text{GNI per capita}) - \ln(100)}{\ln(75{,}000) - \ln(100)}$$
+$$I_{\text{income}} = \frac{\ln(\text{GNI per capita}) - \ln(100)}{\ln(75\,000) - \ln(100)}$$
 
 **Why geometric mean?** Since 2010, the UNDP has used the geometric mean (instead of the
 arithmetic mean) to ensure that a very low score in one dimension cannot be fully compensated by
@@ -2120,7 +2120,7 @@ For India: if CPI $= 130$, PPP-implied INR/USD $= 130/120 = 1.083$
 
 (b) UK: actual $= 0.75$, PPP $= 0.90$. Overvalued by $(0.90 - 0.75)/0.90 \times 100 = 16.7\%$
 
-Japan: actual $= 110$, PPP $= 0.792$. Undervalued by $(0.792 - 110)/0.792 \times 100 = -13{,}888\%$
+Japan: actual $= 110$, PPP $= 0.792$. Undervalued by $(0.792 - 110)/0.792 \times 100 = -13\,888\%$
 
 More precisely, the actual rate is 110 JPY/USD while PPP implies 0.792 USD/JPY, or
 $1/0.792 = 126.3$ JPY/USD. The yen is overvalued (too few yen per dollar), not undervalued.
@@ -2414,13 +2414,13 @@ A now imports from B at USD 80 instead of from C at USD 90.
 
 If A imports 100 units, previously all from C at USD 60:
 
-New cost $= 100 \times 80 = 8{,}000$
-Old cost $= 100 \times 90 = 9{,}000$ (including tariff revenue)
+New cost $= 100 \times 80 = 8\,000$
+Old cost $= 100 \times 90 = 9\,000$ (including tariff revenue)
 
-Consumer cost falls by USD 1,000. Government loses tariff revenue of $100 \times 30 = 3{,}000$.
+Consumer cost falls by USD 1,000. Government loses tariff revenue of $100 \times 30 = 3\,000$.
 Producer surplus: domestic production was zero before and remains zero.
 
-Net welfare effect $= 1{,}000 - 3{,}000 = -2{,}000$.
+Net welfare effect $= 1\,000 - 3\,000 = -2\,000$.
 
 **Trade diversion dominates:** the customs union reduces welfare because the lower-cost producer
 (C at USD 60) is replaced by the higher-cost partner (B at USD 80), and the tariff revenue
@@ -2494,7 +2494,7 @@ respectively. Country A has a 40% tariff on imports. Country A imports 200 units
 
 (a) Landed cost from B: $40 \times 1.40 = 56$. Landed cost from C: $30 \times 1.40 = 42$.
 
-A imports from C (42 < 50 < 56). Total cost $= 200 \times 42 = 8{,}400$. Tariff revenue $= 200 \times 12 = 2{,}400$.
+A imports from C (42 < 50 < 56). Total cost $= 200 \times 42 = 8\,400$. Tariff revenue $= 200 \times 12 = 2\,400$.
 
 (b) A-B customs union: tariff-free with B, 40% tariff on C.
 
@@ -2502,11 +2502,11 @@ Landed cost from B: 40. Landed cost from C: $30 \times 1.40 = 42$.
 
 A switches to importing from B at USD 40.
 
-New cost $= 200 \times 40 = 8{,}000$. Tariff revenue $= 0$.
+New cost $= 200 \times 40 = 8\,000$. Tariff revenue $= 0$.
 
-Consumer saving $= 8{,}400 - 8{,}000 = 400$. Government loses tariff revenue of 2,400.
+Consumer saving $= 8\,400 - 8\,000 = 400$. Government loses tariff revenue of 2,400.
 
-Net welfare $= 400 - 2{,}400 = -2{,}000$. Trade diversion dominates.
+Net welfare $= 400 - 2\,400 = -2\,000$. Trade diversion dominates.
 
 A replaces imports from the efficient producer (C at 30) with imports from the less efficient
 partner (B at 40), and the tariff revenue loss exceeds the consumer gain.
@@ -2517,11 +2517,11 @@ Landed cost from C: 30. Landed cost from B: $40 \times 1.40 = 56$.
 
 A imports from C at USD 30.
 
-New cost $= 200 \times 30 = 6{,}000$. Tariff revenue $= 0$.
+New cost $= 200 \times 30 = 6\,000$. Tariff revenue $= 0$.
 
-Consumer saving $= 8{,}400 - 6{,}000 = 2{,}400$. Government loses tariff revenue of 2,400.
+Consumer saving $= 8\,400 - 6\,000 = 2\,400$. Government loses tariff revenue of 2,400.
 
-Net welfare $= 2{,}400 - 2{,}400 = 0$.
+Net welfare $= 2\,400 - 2\,400 = 0$.
 
 No trade diversion because C was already the lowest-cost producer. There is pure trade creation:
 A switches from domestic production to importing from the lowest-cost source.

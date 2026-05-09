@@ -602,7 +602,7 @@ where $N$ is the total number of illuminated slits.
 
 **Example.** A grating has $500$ lines/mm and is $20$ mm wide. In second order at $\lambda = 600$
 nm, the minimum resolvable wavelength difference is
-$\Delta\lambda = 600/(2 \times 10{,}000) = 0.030$ nm.
+$\Delta\lambda = 600/(2 \times 10\,000) = 0.030$ nm.
 
 ### 9.2 Missing Orders
 

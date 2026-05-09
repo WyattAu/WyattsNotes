@@ -149,14 +149,14 @@ better information than the other.
 Akerlof (1970) analysed the market for used cars. Sellers know the quality of their car; buyers do
 not. There are two types of cars:
 
-- **"Peaches"** (high quality): value to seller $= £8{,}000$, value to buyer $= £10{,}000$
-- **"Lemons"** (low quality): value to seller $= £4{,}000$, value to buyer $= £6{,}000$
+- **"Peaches"** (high quality): value to seller $= £8\,000$, value to buyer $= £10\,000$
+- **"Lemons"** (low quality): value to seller $= £4\,000$, value to buyer $= £6\,000$
 
 If buyers can distinguish quality, both types trade at mutually beneficial prices. But if buyers
 cannot distinguish, and 50% of cars are peaches and 50% are lemons, the **expected value** to a
 buyer of a random car is:
 
-$$E[V] = 0.5 \times 10{,}000 + 0.5 \times 6{,}000 = £8{,}000$$
+$$E[V] = 0.5 \times 10\,000 + 0.5 \times 6\,000 = £8\,000$$
 
 Buyers are willing to pay at most £8,000. But at this price, sellers of peaches (£8,000 value to
 seller) will not sell — only lemons are offered. Buyers, anticipating this, revise their offer
@@ -398,7 +398,7 @@ peaches survives.
 
 <details>
 <summary>Hint</summary>
-Expected value $= 0.8 \times 10{,}000 + 0.2 \times 6{,}000 = £9{,}200$. Sellers of peaches (value £8,000) will sell at £9,200. Sellers of lemons (value £4,000) will also sell. Both types trade — the market survives because the expected value exceeds the sellers' reservation price for peaches.
+Expected value $= 0.8 \times 10\,000 + 0.2 \times 6\,000 = £9\,200$. Sellers of peaches (value £8,000) will sell at £9,200. Sellers of lemons (value £4,000) will also sell. Both types trade — the market survives because the expected value exceeds the sellers' reservation price for peaches.
 </details>
 
 **Problem 4.** A country has five income groups with the following shares of total income: poorest
@@ -529,10 +529,10 @@ optimum.
 ### 9.2 Worked Example: Valuing a Public Good
 
 **Example.** A street lamp benefits 50 residents. Each resident values the lamp at $£30$. The lamp
-costs $£1{,}000$ to install. Should it be provided?
+costs $£1\,000$ to install. Should it be provided?
 
-**Answer.** Total social benefit $= 50 \times 30 = £1{,}500$. Cost $= £1{,}000$. Since
-$£1{,}500 > £1{,}000$, it is socially efficient to provide the lamp. However, if each resident
+**Answer.** Total social benefit $= 50 \times 30 = £1\,500$. Cost $= £1\,000$. Since
+$£1\,500 > £1\,000$, it is socially efficient to provide the lamp. However, if each resident
 reasons "I can benefit without paying," no one contributes and the lamp is not provided (free-rider
 problem). Government intervention (funding through taxation) is needed.
 
@@ -659,13 +659,13 @@ For: healthcare has severe information asymmetry (patients cannot assess quality
 </details>
 
 **Problem 5.** A lake is used by 10 fishermen. Each fisherman can catch $Q$ fish per day. The total
-sustainable catch is $1{,}000$ fish per day. If each fisherman maximises their own catch, they each
+sustainable catch is $1\,000$ fish per day. If each fisherman maximises their own catch, they each
 catch 150 fish, depleting the stock. Explain this as a tragedy of the commons and propose a
 solution.
 
 <details>
 <summary>Hint</summary>
-Each fisherman receives the full benefit of an additional fish caught (private benefit) but shares the cost of stock depletion with all 10 fishermen (1/10 of the social cost). This creates an incentive to overfish. Total catch $= 10 \times 150 = 1{,}500 \gt{} 1{,}000$ (unsustainable). Solutions: (1) privatisation (assign property rights to the lake), (2) regulation (catch quotas of 100 per fisherman), (3) tradable permits (each fisherman gets 100 permits, can trade), (4) Coase bargaining (fishermen agree to limit catches).
+Each fisherman receives the full benefit of an additional fish caught (private benefit) but shares the cost of stock depletion with all 10 fishermen (1/10 of the social cost). This creates an incentive to overfish. Total catch $= 10 \times 150 = 1\,500 \gt{} 1\,000$ (unsustainable). Solutions: (1) privatisation (assign property rights to the lake), (2) regulation (catch quotas of 100 per fisherman), (3) tradable permits (each fisherman gets 100 permits, can trade), (4) Coase bargaining (fishermen agree to limit catches).
 </details>
 
 **Problem 6.** Compare and contrast tradable pollution permits with a Pigouvian tax as methods of
@@ -705,7 +705,7 @@ The subsidy created a DWL triangle where $MSC > MSB$ at the subsidised output le
 - Long run: landlords reduce supply by converting rental properties to owner-occupied units, Airbnbs, or commercial use. New construction of rental housing declines. Housing quality deteriorates because landlords have less revenue to invest in maintenance.
 - Result: shortage of rental housing, reduced quality, and reduced total surplus.
 
-**Calculation.** Suppose demand is $Q_D = 1000 - 5P$ and supply is $Q_S = 200 + 5P$. Equilibrium: $1000 - 5P = 200 + 5P \Rightarrow P^* = 80$, $Q^* = 600$. If rent control sets $P_c = 50$: $Q_D = 750$, $Q_S = 450$. Shortage $= 300$ units. DWL $= \frac{1}{2}(80 - 50)(600 - 450) = \frac{1}{2}(30)(150) = 2{,}250$.
+**Calculation.** Suppose demand is $Q_D = 1000 - 5P$ and supply is $Q_S = 200 + 5P$. Equilibrium: $1000 - 5P = 200 + 5P \Rightarrow P^* = 80$, $Q^* = 600$. If rent control sets $P_c = 50$: $Q_D = 750$, $Q_S = 450$. Shortage $= 300$ units. DWL $= \frac{1}{2}(80 - 50)(600 - 450) = \frac{1}{2}(30)(150) = 2\,250$.
 
 ### 14.3 Worked Example: Cost-Benefit Analysis of a Road Project
 
@@ -794,10 +794,10 @@ Entry continues until $p(100 - L) = 200$, i.e., $50(100 - L) = 200 \Rightarrow 5
 
 At $L_{OA} = 96$: total catch $= 100(96) - 96^2 = 9600 - 9216 = 384$. Each boat catches $384/96 = 4$ units. Revenue per boat $= 200 = cost$. Profit $= 0$.
 
-At $L^* = 48$: total catch $= 100(48) - 48^2 = 4800 - 2304 = 2496$. Each boat catches $2496/48 = 52$ units. Revenue per boat $= 2600$. Profit per boat $= 2600 - 200 = 2400$. Total profit $= 48 \times 2400 = 115{,}200$.
+At $L^* = 48$: total catch $= 100(48) - 48^2 = 4800 - 2304 = 2496$. Each boat catches $2496/48 = 52$ units. Revenue per boat $= 2600$. Profit per boat $= 2600 - 200 = 2400$. Total profit $= 48 \times 2400 = 115\,200$.
 
 **DWL of open access:**
-$\mathrm{DWL} = \pi(48) - \pi(96) = 115{,}200 - 0 = £115{,}200$.
+$\mathrm{DWL} = \pi(48) - \pi(96) = 115\,200 - 0 = £115\,200$.
 
 This illustrates the enormous waste generated by the tragedy of the commons.
 
@@ -1007,7 +1007,7 @@ This analysis shows that the carbon tax generates a net social benefit, even aft
 
 **Example.** A factory pollutes a river, causing damage of GBP 200 per unit of output to a downstream fishery. The factory's production function gives $MB = 500 - Q$ (marginal benefit of production) and $MC = 100$ (constant marginal cost). Without regulation, the factory produces where $MB = MC$: $500 - Q = 100 \Rightarrow Q = 400$.
 
-**Total damage to the fishery:** If marginal damage is $MD = 200$ per unit: total damage $= 200 \times 400 = 80{,}000$.
+**Total damage to the fishery:** If marginal damage is $MD = 200$ per unit: total damage $= 200 \times 400 = 80\,000$.
 
 **Coase theorem (property rights assigned to the factory):**
 The fishery can offer to pay the factory to reduce output. The fishery's willingness to pay equals the damage avoided: up to GBP 200 per unit of reduction.
@@ -1030,8 +1030,8 @@ At $Q = 199$: profit per unit $= 201$. The fishery would pay 200. The factory re
 The factory must compensate the fishery for each unit of pollution damage (200 per unit). The factory's net marginal benefit is $MB - MC - MD = (500 - Q) - 100 - 200 = 200 - Q$. Setting this to zero: $Q = 200$. Same outcome.
 
 **The Coase theorem predicts the SAME efficient outcome regardless of who holds the property rights.** The only difference is the DISTRIBUTION of wealth:
-- Factory has rights: fishery pays the factory $200 \times 200 = 40{,}000$.
-- Fishery has rights: factory pays the fishery $200 \times 200 = 40{,}000$.
+- Factory has rights: fishery pays the factory $200 \times 200 = 40\,000$.
+- Fishery has rights: factory pays the fishery $200 \times 200 = 40\,000$.
 
 **Why the Coase theorem may fail in practice:**
 - Transaction costs: if there are many affected parties (thousands of fishermen, hundreds of factories), bargaining is prohibitively expensive.
