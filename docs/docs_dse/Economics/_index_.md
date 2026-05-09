@@ -67,3 +67,5 @@ Before starting revision, take the diagnostic tests to identify your strengths a
 4. **Hong Kong context:** The HKEAA often sets questions in the Hong Kong context. Be prepared to discuss: the Linked Exchange Rate, public housing, the MPC, land supply, fiscal reserves, CEPA, the Greater Bay Area, and Hong Kong's structural economic transformation.
 
 5. **Evaluation skills:** For 7--8 mark questions, always include both analysis and evaluation. Use phrases like "however," "on the other hand," "it depends on," "in the short run vs long run," and "this assumes." Acknowledging limitations and counterarguments earns evaluation marks.
+
+</details>

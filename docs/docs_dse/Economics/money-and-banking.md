@@ -1454,7 +1454,6 @@ Country Z's GDP per capita is approximately 2.7 times Country Y's, purely due to
 3. **Strengthen legal infrastructure:** Enforce property rights, contract law, and creditor rights. Weak legal enforcement discourages lending because lenders cannot recover loans from defaulting borrowers. Establish bankruptcy laws that balance debtor protection with creditor rights.
 4. **Promote competition:** Reduce barriers to entry for foreign banks (which bring expertise and technology). Encourage fintech innovation (digital payments, peer-to-peer lending, robo-advisors) to challenge incumbents.
 
-</details>
 
 If you get this wrong, revise: [Financial Development](#financial-development)
 

@@ -449,3 +449,5 @@ Do not use `` tags or other raw HTML block elements. MDX does not allow them. Us
 Docusaurus components instead. Self-closing elements like `<br />` and `<img />` are generally fine.
 
 :::
+
+</details>

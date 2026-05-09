@@ -1484,7 +1484,6 @@ A negative genuine savings rate means the country is running down its total capi
 
 **Balanced view:** GDP growth per se is not incompatible with environmental sustainability, but the *composition* of growth matters. Policymakers should use multiple indicators (GDP, Genuine Savings, environmental quality indices) and pursue growth strategies that decouple economic activity from environmental damage.
 
-</details>
 
 If you get this wrong, revise: [Green GDP and Sustainability](#green-gdp-and-sustainability)
 

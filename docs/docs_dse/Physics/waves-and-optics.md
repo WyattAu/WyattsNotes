@@ -1659,3 +1659,5 @@ $$60 + D_m = 99.0^\circ \implies D_m = 39.0^\circ$$
 
 
 :::
+
+</details>

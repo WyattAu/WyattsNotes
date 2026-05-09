@@ -1513,7 +1513,6 @@ Domestic demand: $Q_d = 1000 - 5P$. Supply: $Q_s = -200 + 10P$. World price $P_w
 
 EP outperforms ISI because: (1) international competition forces efficiency; (2) access to world markets enables scale economies; (3) export earnings provide foreign exchange; (4) EP is self-correcting (uncompetitive firms fail), while ISI rewards inefficiency.
 
-</details>
 
 If you get this wrong, revise: [Development Strategies](#development-strategies)
 

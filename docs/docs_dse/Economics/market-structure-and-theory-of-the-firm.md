@@ -1868,7 +1868,6 @@ This is different from third-degree price discrimination (where the utility woul
 
 *Overall:* For a regulated monopoly, second-degree price discrimination can improve welfare compared to single pricing because it increases total output and provides access to low-consumption households. However, the tariff structure must be designed to balance efficiency, equity, and environmental objectives. The HK Electric Scheme of Control includes provisions for tariff review to ensure fairness.
 
-</details>
 
 If you get this wrong, revise: [Price Discrimination and Regulation](#price-discrimination-and-regulation)
 

@@ -2731,3 +2731,5 @@ failure: the efficient equilibrium (no run) coexists with the inefficient equili
 **Policy solution:** deposit insurance (FDIC in the US) eliminates the incentive to run by
 guaranteeing deposits. This changes the payoff structure, eliminating the run equilibrium.
 
+</details>
+</details>

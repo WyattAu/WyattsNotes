@@ -1302,7 +1302,6 @@ Total effect after 10 years: demand effect (one-time) + supply effect (cumulativ
 - Supply-side policies cannot address demand shortfalls in the short run. A comprehensive approach combines supply-side reform with demand management.
 - "Secular stagnation" (a persistent shortfall of aggregate demand due to demographic headwinds, inequality, and low natural interest rates) may require structural demand-side policies (fiscal expansion, redistribution) in addition to supply-side reforms.
 
-</details>
 
 If you get this wrong, revise: [Supply-Side Policy](#supply-side-policy)
 

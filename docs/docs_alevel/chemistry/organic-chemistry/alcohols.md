@@ -782,3 +782,5 @@ Ready to test your understanding of **Alcohols**? The [diagnostic test](/docs/al
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+</details>
