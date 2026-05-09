@@ -28,7 +28,7 @@ memory. Each sensory modality has its own store:
 
 - **Iconic store** (visual): holds visual information for approximately $0.5$ seconds. Sperling
   (1960) demonstrated its capacity: participants could recall approximately $4$--$5$ items from a
-  $3 \times 4$ grid flashed for $50\;\mathrm{'\{'}ms{'\}'}$, but when cued to recall a specific row
+  $3 \times 4$ grid flashed for $50\;\mathrm{ms{}$, but when cued to recall a specific row
   immediately after the display, they could recall approximately $3$--$4$ items from that row,
   suggesting the full display was briefly stored.
 - **Echoic store** (auditory): holds auditory information for approximately $3$--$4$ seconds.
@@ -174,7 +174,7 @@ Tulving (1972, 1983) distinguished episodic memory from semantic memory.
 
 Semantic memory stores general knowledge, facts, concepts, and their meanings, independent of
 personal experience. Examples: knowing that Paris is the capital of France, understanding the
-meaning of "democracy," knowing that water freezes at $0^{\circ}\mathrm{'\{'}C{'\}'}$.
+meaning of "democracy," knowing that water freezes at $0^{\circ}\mathrm{C{}$.
 
 ### Procedural Memory
 
@@ -248,8 +248,8 @@ reduced accuracy compared to younger adults.
 
 **Leading questions**: Loftus and Palmer (1974) found that the wording of questions could alter
 memory. Participants who were asked "About how fast were the cars going when they **smashed** into
-each other?" gave higher speed estimates ($40.8\;\mathrm{'\{'}mph{'\}'}$) than those asked "when they **hit**
-each other" ($31.8\;\mathrm{'\{'}mph{'\}'}$). A week later, participants in the "smashed" condition were more
+each other?" gave higher speed estimates ($40.8\;\mathrm{mph{}$) than those asked "when they **hit**
+each other" ($31.8\;\mathrm{mph{}$). A week later, participants in the "smashed" condition were more
 likely to (falsely) report seeing broken glass ($32\%$ vs. $14\%$).
 
 This is explained by the **post-event misinformation effect**: information encountered after an

@@ -139,9 +139,9 @@ magnitude on both sides, and has no component parallel to the plane.
 Flux through both end caps: $\Phi_E = EA + EA = 2EA$. (No flux through the curved surface since
 $\mathbf{'\{'}E{'\}'}$ is parallel to it.)
 
-Enclosed charge: $Q_{\mathrm{'\{'}enc{'\}'}} = \sigma A$.
+Enclosed charge: $Q_{\mathrm{enc{}} = \sigma A$.
 
-By Gauss's law, $\Phi_E = Q_{\mathrm{'\{'}enc{'\}'}}/\varepsilon_0$:
+By Gauss's law, $\Phi_E = Q_{\mathrm{enc{}}/\varepsilon_0$:
 
 $$2EA = \frac{\sigma A}{\varepsilon_0}$$
 
@@ -152,8 +152,8 @@ $\square$
 **Connection to parallel plates.** This result explains why the field between two large parallel
 plates is approximately uniform. Near the centre of the plates, each plate's contribution resembles
 that of an infinite plane. Between the plates, the fields add:
-$E_{\mathrm{'\{'}total{'\}'}} = \sigma/\varepsilon_0$. Outside the plates, the fields cancel:
-$E_{\mathrm{'\{'}total{'\}'}} = 0$. This is the ideal parallel-plate capacitor field, and it justifies the
+$E_{\mathrm{total{}} = \sigma/\varepsilon_0$. Outside the plates, the fields cancel:
+$E_{\mathrm{total{}} = 0$. This is the ideal parallel-plate capacitor field, and it justifies the
 formula $E = V/d$ for the uniform field region.
 
 :::info
@@ -324,7 +324,7 @@ achieved in laboratory demonstrations.
   outward for a positively charged dome.
 - When the field at the surface exceeds the breakdown strength of air ($E \approx 3 \times 10^6$ V
   m$^{-1}$ at STP), spark discharge occurs to any nearby grounded object.
-- The potential at breakdown is $V_{\mathrm{'\{'}breakdown{'\}'}} = E_{\mathrm{'\{'}breakdown{'\}'}} \times r$. Larger
+- The potential at breakdown is $V_{\mathrm{breakdown{}} = E_{\mathrm{breakdown{}} \times r$. Larger
   domes reach higher breakdown potentials because the same surface charge density produces a weaker
   field on a larger sphere ($E = \sigma/\varepsilon_0$ for a sphere).
 
@@ -510,11 +510,11 @@ Three equal charges of $+2.0\,\mu$C are placed at the corners of an equilateral 
 
 **Answer.** The centre is at distance $r = \frac{0.10}{\sqrt{3}} = 0.0577$ m from each charge.
 
-$E_{\mathrm{'\{'}one{'\}'}} = \frac{kQ}{r^2} = \frac{8.99 \times 10^9 \times 2.0 \times 10^{-6}}{0.00333} = 5.40 \times 10^6$
+$E_{\mathrm{one{}} = \frac{kQ}{r^2} = \frac{8.99 \times 10^9 \times 2.0 \times 10^{-6}}{0.00333} = 5.40 \times 10^6$
 N C$^{-1}$.
 
 By symmetry, the fields from the three charges cancel out (they are 120° apart and equal in
-magnitude). $E_{\mathrm{'\{'}net{'\}'}} = 0$.
+magnitude). $E_{\mathrm{net{}} = 0$.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge)
 
@@ -551,7 +551,7 @@ $V = \frac{kQ}{r} = \frac{8.99 \times 10^9 \times 1.0 \times 10^{-6}}{0.30} = 3.
 $= 30.0$ kV.
 
 For breakdown:
-$V_{\mathrm{'\{'}breakdown{'\}'}} = E_{\mathrm{'\{'}breakdown{'\}'}} \times r = 3.0 \times 10^6 \times 0.30 = 9.0 \times 10^5$
+$V_{\mathrm{breakdown{}} = E_{\mathrm{breakdown{}} \times r = 3.0 \times 10^6 \times 0.30 = 9.0 \times 10^5$
 V $= 900$ kV.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge),

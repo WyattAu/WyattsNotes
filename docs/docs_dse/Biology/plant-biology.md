@@ -21,24 +21,24 @@ for nearly all life on Earth.
 
 **Overall equation:**
 
-$$6\mathrm{'\{'}CO{'\}'}_2 + 6\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \xrightarrow{\mathrm{'\{'}light, chlorophyll{'\}'}} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 6\mathrm{'\{'}O{'\}'}_2$$
+$$6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} \xrightarrow{\mathrm{light, chlorophyll{}} \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$$
 
-This is a redox process: $\mathrm{'\{'}CO{'\}'}_2$ is reduced to glucose (gain of electrons), and
-$\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ is oxidised to $\mathrm{'\{'}O{'\}'}_2$ (loss of electrons).
+This is a redox process: $\mathrm{CO{}_2$ is reduced to glucose (gain of electrons), and
+$\mathrm{H{}_2\mathrm{O{}$ is oxidised to $\mathrm{O{}_2$ (loss of electrons).
 
 ### Leaf Structure and Adaptations
 
 The leaf is the primary photosynthetic organ. Its structure is optimised for maximising light
-absorption, $\mathrm{'\{'}CO{'\}'}_2$ uptake, and water exchange.
+absorption, $\mathrm{CO{}_2$ uptake, and water exchange.
 
 | Structure          | Adaptation for Photosynthesis                                                                          |
 | ------------------ | ------------------------------------------------------------------------------------------------------ |
 | Large surface area | Maximises light absorption                                                                             |
-| Thin and flat      | Short diffusion distance for $\mathrm{'\{'}CO{'\}'}_2$ and light                                                 |
+| Thin and flat      | Short diffusion distance for $\mathrm{CO{}_2$ and light                                                 |
 | Waxy cuticle       | Reduces water loss by evaporation                                                                      |
 | Palisade mesophyll | Densely packed cells at the top of the leaf; rich in chloroplasts; main site of photosynthesis         |
-| Spongy mesophyll   | Loosely packed with air spaces; facilitates gas exchange ($\mathrm{'\{'}CO{'\}'}_2$ diffusion to palisade cells) |
-| Stomata            | Pores in the lower epidermis; allow $\mathrm{'\{'}CO{'\}'}_2$ to enter and $\mathrm{'\{'}O{'\}'}_2$ to exit                |
+| Spongy mesophyll   | Loosely packed with air spaces; facilitates gas exchange ($\mathrm{CO{}_2$ diffusion to palisade cells) |
+| Stomata            | Pores in the lower epidermis; allow $\mathrm{CO{}_2$ to enter and $\mathrm{O{}_2$ to exit                |
 | Veins (xylem)      | Supply water to mesophyll cells                                                                        |
 | Veins (phloem)     | Transport sugars (products of photosynthesis) away from the leaf                                       |
 | Chloroplasts       | Contain chlorophyll and other pigments; site of the light-dependent and light-independent reactions    |
@@ -55,10 +55,10 @@ absorption, $\mathrm{'\{'}CO{'\}'}_2$ uptake, and water exchange.
 
 **Location:** Thylakoid membranes of the chloroplast.
 
-**Requirements:** Light energy, water ($\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$), $\mathrm{'\{'}NADP{'\}'}^+$, ADP, inorganic
-phosphate ($\mathrm{'\{'}P{'\}'}_i$).
+**Requirements:** Light energy, water ($\mathrm{H{}_2\mathrm{O{}$), $\mathrm{NADP{}^+$, ADP, inorganic
+phosphate ($\mathrm{P{}_i$).
 
-**Products:** ATP, NADPH, $\mathrm{'\{'}O{'\}'}_2$ (waste product).
+**Products:** ATP, NADPH, $\mathrm{O{}_2$ (waste product).
 
 **Process:**
 
@@ -69,67 +69,67 @@ phosphate ($\mathrm{'\{'}P{'\}'}_i$).
 2. **Photolysis of water:** The excited electron leaves P680, creating a positive charge. Water
    molecules are split by the enzyme water-splitting complex to replace the electron:
 
-$$2\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \to 4\mathrm{'\{'}H{'\}'}^+ + 4e^- + \mathrm{'\{'}O{'\}'}_2$$
+$$2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$$
 
-The $\mathrm{'\{'}O{'\}'}_2$ is released as a by-product. This is the source of atmospheric oxygen.
+The $\mathrm{O{}_2$ is released as a by-product. This is the source of atmospheric oxygen.
 
 3. **Electron transport chain (ETC):** The high-energy electron passes through a series of electron
    carriers embedded in the thylakoid membrane (plastoquinone, cytochrome b6f complex,
    plastocyanin). As electrons move through the chain, energy is released and used to pump
-   $\mathrm{'\{'}H{'\}'}^+$ ions from the stroma into the thylakoid lumen, creating a proton gradient.
+   $\mathrm{H{}^+$ ions from the stroma into the thylakoid lumen, creating a proton gradient.
 
-4. **Chemiosmosis:** $\mathrm{'\{'}H{'\}'}^+$ ions accumulate in the thylakoid lumen, creating a proton
-   gradient (electrochemical gradient). $\mathrm{'\{'}H{'\}'}^+$ ions flow back into the stroma through ATP
-   synthase, driving the synthesis of ATP from ADP and $\mathrm{'\{'}P{'\}'}_i$. This is called
+4. **Chemiosmosis:** $\mathrm{H{}^+$ ions accumulate in the thylakoid lumen, creating a proton
+   gradient (electrochemical gradient). $\mathrm{H{}^+$ ions flow back into the stroma through ATP
+   synthase, driving the synthesis of ATP from ADP and $\mathrm{P{}_i$. This is called
    **photophosphorylation**.
 
 5. **Photoexcitation of Photosystem I (PSI):** Light energy excites another electron in PSI (P700).
    The electron from PSII replaces the electron lost by P700.
 
 6. **NADP$^+$ reduction:** The excited electron from PSI, along with a proton from the stroma,
-   reduces $\mathrm{'\{'}NADP{'\}'}^+$ to NADPH via the enzyme ferredoxin-NADP$^+$ reductase (FNR).
+   reduces $\mathrm{NADP{}^+$ to NADPH via the enzyme ferredoxin-NADP$^+$ reductase (FNR).
 
 **Summary equation for light-dependent reactions:**
 
-$$2\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} + 2\mathrm{'\{'}NADP{'\}'}^+ + 3\mathrm{'\{'}ADP{'\}'} + 3\mathrm{'\{'}P{'\}'}_i \xrightarrow{\mathrm{'\{'}light{'\}'}} 2\mathrm{'\{'}NADPH{'\}'} + 3\mathrm{'\{'}ATP{'\}'} + \mathrm{'\{'}O{'\}'}_2$$
+$$2\mathrm{H{}_2\mathrm{O{} + 2\mathrm{NADP{}^+ + 3\mathrm{ADP{} + 3\mathrm{P{}_i \xrightarrow{\mathrm{light{}} 2\mathrm{NADPH{} + 3\mathrm{ATP{} + \mathrm{O{}_2$$
 
 ### Light-Independent Reactions (Calvin Cycle)
 
 **Location:** Stroma of the chloroplast.
 
-**Requirements:** $\mathrm{'\{'}CO{'\}'}_2$, ATP, NADPH (produced by the light-dependent reactions).
+**Requirements:** $\mathrm{CO{}_2$, ATP, NADPH (produced by the light-dependent reactions).
 
 **Products:** Triose phosphate (G3P, a 3-carbon sugar), which is used to make glucose and other
 organic compounds.
 
 **Process:**
 
-1. **Carbon fixation:** $\mathrm{'\{'}CO{'\}'}_2$ diffuses into the leaf through stomata and enters the
+1. **Carbon fixation:** $\mathrm{CO{}_2$ diffuses into the leaf through stomata and enters the
    chloroplast stroma. The enzyme **RuBisCO** (ribulose-1,5-bisphosphate carboxylase/oxygenase)
-   catalyses the reaction between $\mathrm{'\{'}CO{'\}'}_2$ and ribulose-1,5-bisphosphate (RuBP, a 5-carbon
+   catalyses the reaction between $\mathrm{CO{}_2$ and ribulose-1,5-bisphosphate (RuBP, a 5-carbon
    compound):
 
-$$\mathrm{'\{'}CO{'\}'}_2 + \mathrm{'\{'}RuBP (5C){'\}'} \to \mathrm{'\{'}Unstable 6C intermediate{'\}'} \to 2 \times \mathrm{'\{'}GP (glycerate-3-phosphate, 3C){'\}'}$$
+$$\mathrm{CO{}_2 + \mathrm{RuBP (5C){} \to \mathrm{Unstable 6C intermediate{} \to 2 \times \mathrm{GP (glycerate-3-phosphate, 3C){}$$
 
 2. **Reduction:** GP is reduced to triose phosphate (TP, also called G3P) using ATP and NADPH from
    the light-dependent reactions:
 
-$$\mathrm{'\{'}GP{'\}'} + \mathrm{'\{'}ATP{'\}'} + \mathrm{'\{'}NADPH{'\}'} \to \mathrm{'\{'}TP{'\}'} + \mathrm{'\{'}NADP{'\}'}^+ + \mathrm{'\{'}ADP{'\}'} + \mathrm{'\{'}P{'\}'}_i$$
+$$\mathrm{GP{} + \mathrm{ATP{} + \mathrm{NADPH{} \to \mathrm{TP{} + \mathrm{NADP{}^+ + \mathrm{ADP{} + \mathrm{P{}_i$$
 
-3. **Regeneration of RuBP:** For every 6 $\mathrm{'\{'}CO{'\}'}_2$ molecules fixed, 12 molecules of TP are
+3. **Regeneration of RuBP:** For every 6 $\mathrm{CO{}_2$ molecules fixed, 12 molecules of TP are
    produced. Of these, 10 molecules of TP (total 30 carbons) are used to regenerate 6 molecules of
    RuBP (total 30 carbons), consuming 6 ATP. The remaining 2 molecules of TP (total 6 carbons) are
    the net product and can be used to make one molecule of glucose (6C):
 
-$$2 \times \mathrm{'\{'}TP (3C each){'\}'} \to \mathrm{'\{'}Glucose (6C){'\}'}$$
+$$2 \times \mathrm{TP (3C each){} \to \mathrm{Glucose (6C){}$$
 
 **Net equation for the Calvin cycle (per 3 turns):**
 
-$$3\mathrm{'\{'}CO{'\}'}_2 + 9\mathrm{'\{'}ATP{'\}'} + 6\mathrm{'\{'}NADPH{'\}'} \to \mathrm{'\{'}TP{'\}'} + 9\mathrm{'\{'}ADP{'\}'} + 8\mathrm{'\{'}P{'\}'}_i + 6\mathrm{'\{'}NADP{'\}'}^+$$
+$$3\mathrm{CO{}_2 + 9\mathrm{ATP{} + 6\mathrm{NADPH{} \to \mathrm{TP{} + 9\mathrm{ADP{} + 8\mathrm{P{}_i + 6\mathrm{NADP{}^+$$
 
 **Per glucose (6 turns):**
 
-$$6\mathrm{'\{'}CO{'\}'}_2 + 18\mathrm{'\{'}ATP{'\}'} + 12\mathrm{'\{'}NADPH{'\}'} \to \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 18\mathrm{'\{'}ADP{'\}'} + 18\mathrm{'\{'}P{'\}'}_i + 12\mathrm{'\{'}NADP{'\}'}^+$$
+$$6\mathrm{CO{}_2 + 18\mathrm{ATP{} + 12\mathrm{NADPH{} \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 18\mathrm{ADP{} + 18\mathrm{P{}_i + 12\mathrm{NADP{}^+$$
 
 ### Limiting Factors of Photosynthesis
 
@@ -139,23 +139,23 @@ process at any given time. The rate of photosynthesis is determined by the slowe
 | Factor                        | Effect on Rate                                                                                                  |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Light intensity               | Increases rate up to a plateau (light saturation point); beyond this, another factor is limiting                |
-| $\mathrm{'\{'}CO{'\}'}_2$ concentration | Increases rate up to a plateau; low $\mathrm{'\{'}CO{'\}'}_2$ limits carbon fixation by RuBisCO                           |
+| $\mathrm{CO{}_2$ concentration | Increases rate up to a plateau; low $\mathrm{CO{}_2$ limits carbon fixation by RuBisCO                           |
 | Temperature                   | Increases rate up to the optimum (approximately 25-30 degrees C for most plants); beyond this, enzymes denature |
-| Water availability            | Severe water shortage closes stomata, reducing $\mathrm{'\{'}CO{'\}'}_2$ uptake; usually not limiting except in drought   |
+| Water availability            | Severe water shortage closes stomata, reducing $\mathrm{CO{}_2$ uptake; usually not limiting except in drought   |
 
 **Interpreting limiting factor graphs:**
 
-- On a graph of photosynthetic rate vs light intensity at two different $\mathrm{'\{'}CO{'\}'}_2$
-  concentrations, the curve with higher $\mathrm{'\{'}CO{'\}'}_2$ plateaus at a higher rate. At low light
+- On a graph of photosynthetic rate vs light intensity at two different $\mathrm{CO{}_2$
+  concentrations, the curve with higher $\mathrm{CO{}_2$ plateaus at a higher rate. At low light
   intensity, both curves rise at the same rate (light is the limiting factor). At higher light
-  intensity, the curves diverge ($\mathrm{'\{'}CO{'\}'}_2$ becomes limiting for the lower curve).
+  intensity, the curves diverge ($\mathrm{CO{}_2$ becomes limiting for the lower curve).
 - On a graph of rate vs temperature, the rate increases to an optimum then drops sharply. The drop
   is due to denaturation of RuBisCO and other Calvin cycle enzymes.
 
 :::info
 At very high light intensities, the rate may decrease due to **photorespiration**. RuBisCO
-can bind $\mathrm{'\{'}O{'\}'}_2$ instead of $\mathrm{'\{'}CO{'\}'}_2$ (oxygenase activity), which does not produce
-glucose and wastes energy. This is more significant at high temperatures and low $\mathrm{'\{'}CO{'\}'}_2$
+can bind $\mathrm{O{}_2$ instead of $\mathrm{CO{}_2$ (oxygenase activity), which does not produce
+glucose and wastes energy. This is more significant at high temperatures and low $\mathrm{CO{}_2$
 concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration.
 :::
 
@@ -181,7 +181,7 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 
 **Opening:**
 
-1. Light stimulates guard cells to actively transport $\mathrm{'\{'}K{'\}'}^+$ ions into the cell
+1. Light stimulates guard cells to actively transport $\mathrm{K{}^+$ ions into the cell
 2. This lowers the water potential inside the guard cell
 3. Water enters by osmosis from neighbouring epidermal cells
 4. The guard cell becomes turgid and swells
@@ -190,7 +190,7 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 **Closing:**
 
 1. Abscisic acid (ABA) is produced in response to water stress
-2. $\mathrm{'\{'}K{'\}'}^+$ ions leave the guard cell; water follows by osmosis
+2. $\mathrm{K{}^+$ ions leave the guard cell; water follows by osmosis
 3. The guard cell becomes flaccid
 4. The guard cells collapse together, closing the stoma
 
@@ -199,7 +199,7 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 | Factor          | Effect                                                                        |
 | --------------- | ----------------------------------------------------------------------------- |
 | Light           | Opens stomata (blue light is particularly effective via blue-light receptors) |
-| $\mathrm{'\{'}CO{'\}'}_2$ | High $\mathrm{'\{'}CO{'\}'}_2$ closes stomata; low $\mathrm{'\{'}CO{'\}'}_2$ opens them           |
+| $\mathrm{CO{}_2$ | High $\mathrm{CO{}_2$ closes stomata; low $\mathrm{CO{}_2$ opens them           |
 | Temperature     | Moderate warmth opens stomata; extreme heat may close them (water stress)     |
 | Water supply    | Abundant water keeps stomata open; drought causes closure via ABA             |
 | Time of day     | Most plants open stomata during the day and close at night (circadian rhythm) |
@@ -207,17 +207,17 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 
 ### Gas Exchange Through Stomata
 
-During the day, photosynthesis is occurring and $\mathrm{'\{'}CO{'\}'}_2$ is being consumed. The concentration
-of $\mathrm{'\{'}CO{'\}'}_2$ inside the leaf is lower than in the atmosphere, so $\mathrm{'\{'}CO{'\}'}_2$ diffuses in
-through the stomata. $\mathrm{'\{'}O{'\}'}_2$, produced as a by-product of photolysis, diffuses out through
+During the day, photosynthesis is occurring and $\mathrm{CO{}_2$ is being consumed. The concentration
+of $\mathrm{CO{}_2$ inside the leaf is lower than in the atmosphere, so $\mathrm{CO{}_2$ diffuses in
+through the stomata. $\mathrm{O{}_2$, produced as a by-product of photolysis, diffuses out through
 the stomata.
 
-$$\mathrm{'\{'}CO{'\}'}_2 \mathrm{'\{'} (atmosphere){'\}'} \to \mathrm{'\{'}stomata{'\}'} \to \mathrm{'\{'}air spaces{'\}'} \to \mathrm{'\{'}mesophyll cells{'\}'} \to \mathrm{'\{'}chloroplasts{'\}'}$$
+$$\mathrm{CO{}_2 \mathrm{ (atmosphere){} \to \mathrm{stomata{} \to \mathrm{air spaces{} \to \mathrm{mesophyll cells{} \to \mathrm{chloroplasts{}$$
 
-$$\mathrm{'\{'}O{'\}'}_2 \mathrm{'\{'} (chloroplasts){'\}'} \to \mathrm{'\{'}mesophyll cells{'\}'} \to \mathrm{'\{'}air spaces{'\}'} \to \mathrm{'\{'}stomata{'\}'} \to \mathrm{'\{'}atmosphere{'\}'}$$
+$$\mathrm{O{}_2 \mathrm{ (chloroplasts){} \to \mathrm{mesophyll cells{} \to \mathrm{air spaces{} \to \mathrm{stomata{} \to \mathrm{atmosphere{}$$
 
 At night, when photosynthesis stops but respiration continues, the direction of gas exchange
-reverses: the plant takes in $\mathrm{'\{'}O{'\}'}_2$ and releases $\mathrm{'\{'}CO{'\}'}_2$.
+reverses: the plant takes in $\mathrm{O{}_2$ and releases $\mathrm{CO{}_2$.
 
 ---
 
@@ -270,18 +270,18 @@ A potometer was used to measure water uptake by a leafy shoot. The bubble moved 
 
 (a) Radius of capillary tube = $0.8 / 2 = 0.4$ mm = $0.4 \times 10^{-3}$ m
 
-Cross-sectional area = $\pi r^2 = \pi \times (0.4)^2 = 0.503 \mathrm{'\{'} mm{'\}'}^2$
+Cross-sectional area = $\pi r^2 = \pi \times (0.4)^2 = 0.503 \mathrm{ mm{}^2$
 
-Volume = area $\times$ distance = $0.503 \times 12 = 6.03 \mathrm{'\{'} mm{'\}'}^3$
+Volume = area $\times$ distance = $0.503 \times 12 = 6.03 \mathrm{ mm{}^3$
 
-(b) Rate = $6.03 / 5 \times 60 = 72.4 \mathrm{'\{'} mm{'\}'}^3\mathrm{'\{'}/hour{'\}'}$
+(b) Rate = $6.03 / 5 \times 60 = 72.4 \mathrm{ mm{}^3\mathrm{/hour{}$
 
 (c) 1. All water taken up is lost through transpiration (some is used in photosynthesis and growth). 2. The cutting of the shoot has not damaged xylem vessels. 3. Environmental conditions in the lab are similar to natural conditions.
 
 </details>
 
 Transpiration is NOT simply "water loss." It is a consequence of gas exchange -- stomata must be
-open for $\mathrm{'\{'}CO{'\}'}_2$ uptake during photosynthesis, and water vapour inevitably diffuses out
+open for $\mathrm{CO{}_2$ uptake during photosynthesis, and water vapour inevitably diffuses out
 through the same open stomata.
 
 **Factors affecting the rate of transpiration:**
@@ -501,9 +501,9 @@ After a pollen grain lands on a compatible stigma, the following sequence occurs
    haploid) to form the triploid endosperm (3n). The endosperm is a nutritive tissue that provides
    food for the developing embryo.
 
-$$\mathrm{'\{'}Male gamete (n){'\}'} + \mathrm{'\{'}Egg cell (n){'\}'} \to \mathrm{'\{'}Zygote (2n){'\}'}$$
+$$\mathrm{Male gamete (n){} + \mathrm{Egg cell (n){} \to \mathrm{Zygote (2n){}$$
 
-$$\mathrm{'\{'}Male gamete (n){'\}'} + 2 \times \mathrm{'\{'}Polar nuclei (n + n){'\}'} \to \mathrm{'\{'}Endosperm (3n){'\}'}$$
+$$\mathrm{Male gamete (n){} + 2 \times \mathrm{Polar nuclei (n + n){} \to \mathrm{Endosperm (3n){}$$
 
 #### Seed and Fruit Formation
 
@@ -630,7 +630,7 @@ NAA (naphthaleneacetic acid).
 **Effects of auxins:**
 
 1. **Cell elongation:** Auxins stimulate cell elongation in shoots by:
-   - Activating proton pumps ($\mathrm{'\{'}H{'\}'}^+$-ATPases) in the cell membrane, pumping $\mathrm{'\{'}H{'\}'}^+$
+   - Activating proton pumps ($\mathrm{H{}^+$-ATPases) in the cell membrane, pumping $\mathrm{H{}^+$
      into the cell wall
    - Lowering pH in the cell wall activates enzymes (expansins) that break cross-links between
      cellulose microfibrils
@@ -733,7 +733,7 @@ towards light but roots bend away from it when auxin redistributes.
    directly expended on water movement through the xylem.
 
 3. **Writing that transpiration is "wasteful":** Transpiration is a necessary consequence of gas
-   exchange. Stomata must be open for $\mathrm{'\{'}CO{'\}'}_2$ uptake, and water vapour inevitably escapes.
+   exchange. Stomata must be open for $\mathrm{CO{}_2$ uptake, and water vapour inevitably escapes.
    Transpiration also has benefits: it provides evaporative cooling, drives the transpiration stream
    (and thus mineral transport), and maintains turgor.
 
@@ -977,20 +977,20 @@ Plants require a range of mineral ions for healthy growth. These are absorbed fr
 
 | Mineral Ion   | Symbol        | Function                                                                                              | Deficiency Symptom                       |
 | ------------- | ------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
-| Nitrogen      | $\mathrm{'\{'}NO{'\}'}_3^-$, $\mathrm{'\{'}NH{'\}'}_4^+$ | Component of amino acids, proteins, nucleic acids, chlorophyll                               | Chlorosis (yellowing of older leaves); stunted growth |
-| Phosphorus    | $\mathrm{'\{'}PO{'\}'}_4^{3-}$ | Component of ATP, nucleic acids (DNA, RNA), phospholipids                                           | Poor root growth; dark green or purplish leaves |
-| Potassium     | $\mathrm{'\{'}K{'\}'}^+$     | Osmoregulation; opening and closing of stomata; enzyme activation                                     | Yellow leaves with dead tips; weak stems   |
-| Magnesium     | $\mathrm{'\{'}Mg{'\}'}^{2+}$ | Central atom in the chlorophyll molecule; enzyme activator                                           | Chlorosis of older leaves (chlorophyll cannot be synthesised) |
-| Calcium       | $\mathrm{'\{'}Ca{'\}'}^{2+}$ | Component of the middle lamella (calcium pectate); involved in cell division                         | Stunted growth; meristems die             |
-| Iron          | $\mathrm{'\{'}Fe{'\}'}^{2+}$/Fe$^{3+}$ | Required for chlorophyll synthesis (as a cofactor, not a component)                               | Chlorosis of YOUNG leaves (iron is immobile in the plant) |
-| Sulphur       | $\mathrm{'\{'}SO{'\}'}_4^{2-}$ | Component of some amino acids (cysteine, methionine); component of some coenzymes                  | Chlorosis of young leaves                 |
+| Nitrogen      | $\mathrm{NO{}_3^-$, $\mathrm{NH{}_4^+$ | Component of amino acids, proteins, nucleic acids, chlorophyll                               | Chlorosis (yellowing of older leaves); stunted growth |
+| Phosphorus    | $\mathrm{PO{}_4^{3-}$ | Component of ATP, nucleic acids (DNA, RNA), phospholipids                                           | Poor root growth; dark green or purplish leaves |
+| Potassium     | $\mathrm{K{}^+$     | Osmoregulation; opening and closing of stomata; enzyme activation                                     | Yellow leaves with dead tips; weak stems   |
+| Magnesium     | $\mathrm{Mg{}^{2+}$ | Central atom in the chlorophyll molecule; enzyme activator                                           | Chlorosis of older leaves (chlorophyll cannot be synthesised) |
+| Calcium       | $\mathrm{Ca{}^{2+}$ | Component of the middle lamella (calcium pectate); involved in cell division                         | Stunted growth; meristems die             |
+| Iron          | $\mathrm{Fe{}^{2+}$/Fe$^{3+}$ | Required for chlorophyll synthesis (as a cofactor, not a component)                               | Chlorosis of YOUNG leaves (iron is immobile in the plant) |
+| Sulphur       | $\mathrm{SO{}_4^{2-}$ | Component of some amino acids (cysteine, methionine); component of some coenzymes                  | Chlorosis of young leaves                 |
 
 ### Nitrogen as a Limiting Nutrient
 
 Nitrogen is most often the limiting nutrient for plant growth because:
 
 - Plants require large amounts of nitrogen (for proteins, nucleic acids, chlorophyll)
-- Atmospheric $\mathrm{'\{'}N{'\}'}_2$ is unavailable to plants (triple bond too strong)
+- Atmospheric $\mathrm{N{}_2$ is unavailable to plants (triple bond too strong)
 - Nitrogen in the soil is easily leached by rain (nitrate is highly soluble and mobile)
 - Plant uptake removes nitrogen from the soil faster than natural processes replace it
 
@@ -1072,21 +1072,21 @@ A common pitfall is to describe long-day and short-day plants in terms of DAY le
 
 Photoperiodism is controlled by a pigment called **phytochrome**, which exists in two interconvertible forms:
 
-- **$\mathrm{'\{'}Pr{'\}'}$ (P660):** Absorbs red light (660 nm); inactive form
-- **$\mathrm{'\{'}Pfr{'\}'}$ (P730):** Absorbs far-red light (730 nm); biologically active form
+- **$\mathrm{Pr{}$ (P660):** Absorbs red light (660 nm); inactive form
+- **$\mathrm{Pfr{}$ (P730):** Absorbs far-red light (730 nm); biologically active form
 
 **Conversion:**
 
-$$\mathrm{'\{'}Pr{'\}'} \xrightarrow{\text{'\{'}red light (660 nm){'\}'}} \mathrm{'\{'}Pfr{'\}'}$$
+$$\mathrm{Pr{} \xrightarrow{\text{'\{'}red light (660 nm){'\}'}} \mathrm{Pfr{}$$
 
-$$\mathrm{'\{'}Pfr{'\}'} \xrightarrow{\text{'\{'}far-red light (730 nm) or darkness{'\}'}} \mathrm{'\{'}Pr{'\}'}$$
+$$\mathrm{Pfr{} \xrightarrow{\text{'\{'}far-red light (730 nm) or darkness{'\}'}} \mathrm{Pr{}$$
 
-During daylight, $\mathrm{'\{'}Pr{'\}'}$ is converted to $\mathrm{'\{'}Pfr{'\}'}$. In darkness, $\mathrm{'\{'}Pfr{'\}'}$ slowly reverts to $\mathrm{'\{'}Pr{'\}'}$.
+During daylight, $\mathrm{Pr{}$ is converted to $\mathrm{Pfr{}$. In darkness, $\mathrm{Pfr{}$ slowly reverts to $\mathrm{Pr{}$.
 
 **Role in flowering:**
 
-- In **long-day plants**, $\mathrm{'\{'}Pfr{'\}'}$ promotes flowering. Long days mean more $\mathrm{'\{'}Pfr{'\}'}$ accumulates, triggering flowering when the $\mathrm{'\{'}Pfr{'\}'}$ level exceeds a threshold.
-- In **short-day plants**, $\mathrm{'\{'}Pfr{'\}'}$ inhibits flowering. Long nights allow $\mathrm{'\{'}Pfr{'\}'}$ to revert to $\mathrm{'\{'}Pr{'\}'}$; flowering occurs only when the $\mathrm{'\{'}Pfr{'\}'}$ concentration drops below a threshold.
+- In **long-day plants**, $\mathrm{Pfr{}$ promotes flowering. Long days mean more $\mathrm{Pfr{}$ accumulates, triggering flowering when the $\mathrm{Pfr{}$ level exceeds a threshold.
+- In **short-day plants**, $\mathrm{Pfr{}$ inhibits flowering. Long nights allow $\mathrm{Pfr{}$ to revert to $\mathrm{Pr{}$; flowering occurs only when the $\mathrm{Pfr{}$ concentration drops below a threshold.
 
 ---
 
@@ -1096,7 +1096,7 @@ During daylight, $\mathrm{'\{'}Pr{'\}'}$ is converted to $\mathrm{'\{'}Pfr{'\}'}
 
 | Response                          | Mechanism                                                                                                        |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Stomatal closure                  | Abscisic acid (ABA) causes guard cells to lose $\mathrm{'\{'}K{'\}'}^+$; water follows by osmosis; guard cells become flaccid |
+| Stomatal closure                  | Abscisic acid (ABA) causes guard cells to lose $\mathrm{K{}^+$; water follows by osmosis; guard cells become flaccid |
 | Leaf rolling                      | Reduced surface area exposed to sunlight and wind, decreasing transpiration                                       |
 | Increased root:shoot ratio        | More resources allocated to root growth to access deeper water; less to shoot growth                              |
 | Leaf abscission (shedding)        | Reduces overall surface area for transpiration                                                                   |
@@ -1163,13 +1163,13 @@ If you get this wrong, revise: Photoperiodism -- Phytochrome
 
 In short-day plants, flowering is triggered when the NIGHT length exceeds a critical value. The control mechanism involves phytochrome:
 
-1. During daylight, red light converts inactive $\mathrm{'\{'}Pr{'\}'}$ to active $\mathrm{'\{'}Pfr{'\}'}$.
-2. In darkness, $\mathrm{'\{'}Pfr{'\}'}$ slowly reverts to $\mathrm{'\{'}Pr{'\}'}$ (this is a time-dependent process).
-3. In short-day plants, $\mathrm{'\{'}Pfr{'\}'}$ INHIBITS flowering. For flowering to occur, the $\mathrm{'\{'}Pfr{'\}'}$ concentration must drop below a threshold.
-4. Long nights allow sufficient time for $\mathrm{'\{'}Pfr{'\}'}$ to revert to $\mathrm{'\{'}Pr{'\}'}$, dropping below the threshold and triggering flowering.
-5. Short nights do not allow enough $\mathrm{'\{'}Pfr{'\}'}$ to revert; the $\mathrm{'\{'}Pfr{'\}'}$ level remains above the threshold, and flowering is inhibited.
+1. During daylight, red light converts inactive $\mathrm{Pr{}$ to active $\mathrm{Pfr{}$.
+2. In darkness, $\mathrm{Pfr{}$ slowly reverts to $\mathrm{Pr{}$ (this is a time-dependent process).
+3. In short-day plants, $\mathrm{Pfr{}$ INHIBITS flowering. For flowering to occur, the $\mathrm{Pfr{}$ concentration must drop below a threshold.
+4. Long nights allow sufficient time for $\mathrm{Pfr{}$ to revert to $\mathrm{Pr{}$, dropping below the threshold and triggering flowering.
+5. Short nights do not allow enough $\mathrm{Pfr{}$ to revert; the $\mathrm{Pfr{}$ level remains above the threshold, and flowering is inhibited.
 
-The dark period is more important because the conversion of $\mathrm{'\{'}Pfr{'\}'}$ to $\mathrm{'\{'}Pr{'\}'}$ is a time-dependent process that only occurs in darkness. A brief flash of red light during the dark period converts $\mathrm{'\{'}Pr{'\}'}$ back to $\mathrm{'\{'}Pfr{'\}'}$, resetting the "clock" and preventing flowering in short-day plants. This is why short-day plants are really "long-night plants" -- it is the uninterrupted DARK period that matters.
+The dark period is more important because the conversion of $\mathrm{Pfr{}$ to $\mathrm{Pr{}$ is a time-dependent process that only occurs in darkness. A brief flash of red light during the dark period converts $\mathrm{Pr{}$ back to $\mathrm{Pfr{}$, resetting the "clock" and preventing flowering in short-day plants. This is why short-day plants are really "long-night plants" -- it is the uninterrupted DARK period that matters.
 
 </details>
 
@@ -1185,7 +1185,7 @@ The dark period is more important because the conversion of $\mathrm{'\{'}Pfr{'\
 **Apoplastic loading (active loading):**
 
 1. Sucrose is actively transported from the apoplast (cell wall space) into the sieve tube element companion cell by a proton-sucrose co-transporter
-2. The co-transporter uses the $\mathrm{'\{'}H{'\}'}^+$ gradient established by an ATPase proton pump (primary active transport)
+2. The co-transporter uses the $\mathrm{H{}^+$ gradient established by an ATPase proton pump (primary active transport)
 3. Sucrose moves from the companion cell to the sieve tube element via plasmodesmata (symplastic pathway)
 4. This active loading concentrates sucrose in the phloem to approximately 10-30%, creating a high osmotic pressure
 
@@ -1201,7 +1201,7 @@ The dark period is more important because the conversion of $\mathrm{'\{'}Pfr{'\
 | -------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Temperature           | Increases up to an optimum, then decreases | Enzymes and metabolic processes have an optimum temperature; very high temperatures denature proteins                      |
 | Light intensity        | Increases rate                      | Light increases photosynthesis, producing more sucrose for translocation                                            |
-| $\mathrm{'\{'}CO{'\}'}_2$ concentration | Increases rate                  | More $\mathrm{'\{'}CO{'\}'}_2$ increases photosynthesis and sucrose production                                               |
+| $\mathrm{CO{}_2$ concentration | Increases rate                  | More $\mathrm{CO{}_2$ increases photosynthesis and sucrose production                                               |
 | Oxygen concentration  | Decreases rate                      | Oxygen is needed for aerobic respiration to produce ATP for active loading; low oxygen (e.g., flooding) reduces translocation |
 | Metabolic inhibitor    | Decreases rate                      | Compounds that inhibit respiration (e.g., cyanide, which blocks the electron transport chain) reduce ATP availability for active loading |
 | Sink strength         | Increases rate                      | A strong sink (e.g., developing fruit or growing root) lowers the phloem pressure at the sink, increasing the pressure gradient |
@@ -1249,7 +1249,7 @@ Synthetic plant hormones (PGRs -- plant growth regulators) are widely used in ag
 1. **Crop rotation:** Growing different crops in succession on the same land to prevent soil nutrient depletion, break pest and disease cycles, and reduce reliance on chemical inputs
 2. **Biological pest control:** Using natural predators (ladybirds for aphids), parasites, or pathogens (Bacillus thuringiensis) to control pest populations
 3. **Integrated pest management (IPM):** Combining biological, chemical, and cultural methods to control pests while minimising environmental damage and pesticide resistance
-4. **Greenhouse/glasshouse cultivation:** Controlling temperature, light, $\mathrm{'\{'}CO{'\}'}_2$, water, and nutrients to optimise growth; allows year-round production in any climate; reduces water use through drip irrigation
+4. **Greenhouse/glasshouse cultivation:** Controlling temperature, light, $\mathrm{CO{}_2$, water, and nutrients to optimise growth; allows year-round production in any climate; reduces water use through drip irrigation
 5. **Hydroponics:** Growing plants without soil in a nutrient solution; precise control over mineral nutrition; higher yields per unit area; reduced water usage
 
 ### Worked Example: Selective Breeding
@@ -1355,7 +1355,7 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 | Geotropism (negative) -- shoots | Gravity              | Auxin accumulates on the lower side of the shoot                                                     | Auxin promotes shoot cell elongation; cells on the lower side elongate more; shoot bends upwards (away from gravity) |
 
 **Mechanism of auxin-mediated cell elongation:**
-1. Auxin activates proton pumps ($\mathrm{'\{'}H{'\}'}^+$-ATPases) in the cell membrane
+1. Auxin activates proton pumps ($\mathrm{H{}^+$-ATPases) in the cell membrane
 2. Protons are pumped into the cell wall, lowering the pH
 3. The lower pH activates expansin enzymes that break cross-links between cellulose microfibrils in the cell wall
 4. The cell wall becomes more flexible (loosens)
@@ -1415,20 +1415,20 @@ The cohesion-tension theory explains how water is transported upwards through th
 | Feature                  | Description                                                                                                               |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Location                  | Thylakoid membranes of the chloroplast                                                                                   |
-| Inputs                    | Light energy; water ($\mathrm{'\{'}H_2O{'\}'}$); NADP$^+$; ADP + P$_i$ (inorganic phosphate)                                      |
-| Outputs                   | Oxygen ($\mathrm{'\{'}O_2{'\}'}$); NADPH; ATP                                                                                      |
+| Inputs                    | Light energy; water ($\mathrm{H_2O{}$); NADP$^+$; ADP + P$_i$ (inorganic phosphate)                                      |
+| Outputs                   | Oxygen ($\mathrm{O_2{}$); NADPH; ATP                                                                                      |
 
 **Process:**
 
 1. **Photoexcitation of chlorophyll:** Light energy is absorbed by chlorophyll and other photosynthetic pigments in Photosystem II (PSII). The energy is transferred to the reaction centre chlorophyll (P680), which becomes excited and releases a high-energy electron
 2. **Photolysis of water:** The electron lost by P680 is replaced by an electron from water. Water is split by an enzyme (water-splitting complex/oxygen-evolving complex):
-   $$2\mathrm{'\{'}H_2O{'\}'} \rightarrow 4\mathrm{'\{'}H^+{'\}'} + 4e^- + \mathrm{'\{'}O_2{'\}'}$$
+   $$2\mathrm{H_2O{} \rightarrow 4\mathrm{H^+{} + 4e^- + \mathrm{O_2{}$$
    This is the source of the oxygen released during photosynthesis
 3. **Electron transport chain (PSII $\rightarrow$ plastoquinone $\rightarrow$ cytochrome b6f complex $\rightarrow$ plastocyanin):** The excited electrons pass through a chain of electron carriers. As they pass, they release energy which is used to pump hydrogen ions (H$^+$) from the stroma into the thylakoid lumen. This creates a proton gradient across the thylakoid membrane
 4. **Chemiosmosis:** H$^+$ ions flow back down their concentration gradient through ATP synthase (a transmembrane protein channel). The flow of H$^+$ drives the rotation of ATP synthase, which catalyses the synthesis of ATP from ADP and P$_i$. This is **photophosphorylation**
 5. **Photosystem I (PSI):** Light energy excites another chlorophyll molecule (P700), which releases another electron. This electron replaces the electron that left PSI. The excited electron from PSI passes to ferredoxin, then to NADP$^+$ reductase
 6. **NADPH production:** NADP$^+$ reductase transfers two electrons and one H$^+$ to NADP$^+$, reducing it to NADPH:
-   $$\text{'\{'}NADP{'\}'}^+ + 2e^- + \mathrm{'\{'}H^+{'\}'} \rightarrow \text{'\{'}NADPH{'\}'}$$
+   $$\text{'\{'}NADP{'\}'}^+ + 2e^- + \mathrm{H^+{} \rightarrow \text{'\{'}NADPH{'\}'}$$
 
 ### The Light-Independent Reactions (Calvin Cycle)
 

@@ -349,8 +349,8 @@ Find the mixed strategy Nash equilibrium.
 Let Player 1 play Up with probability $p$ and Down with probability $1 - p$. For Player 2 to be
 indifferent between Left and Right:
 
-$$\mathrm{'\{'}Expected payoff (Left){'\}'} = p(-3) + (1-p)(2)$$
-$$\mathrm{'\{'}Expected payoff (Right){'\}'} = p(1) + (1-p)(-4)$$
+$$\mathrm{Expected payoff (Left){} = p(-3) + (1-p)(2)$$
+$$\mathrm{Expected payoff (Right){} = p(1) + (1-p)(-4)$$
 
 Setting them equal:
 

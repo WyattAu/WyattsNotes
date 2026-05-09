@@ -246,7 +246,7 @@ $$E = Pt = VIt = I^2Rt = \frac{V^2t}{R}$$
 
 The SI unit of energy is the joule (J). For domestic billing, the kilowatt-hour (kWh) is used:
 
-$$1 \mathrm{'\{'} kWh{'\}'} = 1000 \mathrm{'\{'} W{'\}'} \times 3600 \mathrm{'\{'} s{'\}'} = 3.6 \times 10^6 \mathrm{'\{'} J{'\}'}$$
+$$1 \mathrm{ kWh{} = 1000 \mathrm{ W{} \times 3600 \mathrm{ s{} = 3.6 \times 10^6 \mathrm{ J{}$$
 
 :::tip
 Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
@@ -283,7 +283,7 @@ $$\boxed{R(T) = R_0\left[1 + \alpha(T - T_0)\right]}$$
 
 where $R_0$ is the resistance at reference temperature $T_0$ and $\alpha$ is the **temperature
 coefficient of resistance**. For copper, $\alpha \approx 3.9 \times 10^{-3}$
-$^\circ\mathrm{'\{'}C{'\}'}^{-1}$; for tungsten, $\alpha \approx 4.5 \times 10^{-3}$ $^\circ\mathrm{'\{'}C{'\}'}^{-1}$.
+$^\circ\mathrm{C{}^{-1}$; for tungsten, $\alpha \approx 4.5 \times 10^{-3}$ $^\circ\mathrm{C{}^{-1}$.
 
 This is a linear approximation valid over moderate temperature ranges. The full relationship is not
 perfectly linear, but for A-level purposes the linear model suffices.
@@ -312,8 +312,8 @@ where $B$ is a material constant (typically 3000--5000 K).
 <details>
 <summary>Example: Resistance of Copper at Elevated Temperature</summary>
 
-A copper wire has resistance 10.0 $\Omega$ at 20$^\circ\mathrm{'\{'}C{'\}'}$. Calculate its resistance at
-80$^\circ\mathrm{'\{'}C{'\}'}$. ($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{'\{'}C{'\}'}^{-1}$.)
+A copper wire has resistance 10.0 $\Omega$ at 20$^\circ\mathrm{C{}$. Calculate its resistance at
+80$^\circ\mathrm{C{}$. ($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C{}^{-1}$.)
 
 **Answer.**
 
@@ -545,11 +545,11 @@ $$I = \frac{P}{V}$$
 
 The power dissipated as heat in the cables is:
 
-$$P_{\mathrm{'\{'}loss{'\}'}} = I^2R = \left(\frac{P}{V}\right)^2 R$$
+$$P_{\mathrm{loss{}} = I^2R = \left(\frac{P}{V}\right)^2 R$$
 
 **Proof that doubling the voltage quarters the loss.** If $V \to 2V$:
 
-$$P_{\mathrm{'\{'}loss{'\}'}}' = \left(\frac{P}{2V}\right)^2 R = \frac{1}{4} \cdot \frac{P^2}{V^2}R = \frac{P_{\mathrm{'\{'}loss{'\}'}}}{4}$$
+$$P_{\mathrm{loss{}}' = \left(\frac{P}{2V}\right)^2 R = \frac{1}{4} \cdot \frac{P^2}{V^2}R = \frac{P_{\mathrm{loss{}}}{4}$$
 
 $\square$
 
@@ -582,13 +582,13 @@ $\Omega$.
 
 At 10 kV: $I = P/V = 100 \times 10^6 / (10 \times 10^3) = 10\,000$ A.
 
-$P_{\mathrm{'\{'}loss{'\}'}} = I^2R = (10\,000)^2 \times 5.4 = 5.4 \times 10^8$ W $= 540$ MW.
+$P_{\mathrm{loss{}} = I^2R = (10\,000)^2 \times 5.4 = 5.4 \times 10^8$ W $= 540$ MW.
 
 This exceeds the total power being transmitted! Clearly 10 kV is impractical.
 
 At 400 kV: $I = 100 \times 10^6 / (400 \times 10^3) = 250$ A.
 
-$P_{\mathrm{'\{'}loss{'\}'}} = (250)^2 \times 5.4 = 3.375 \times 10^5$ W $= 338$ kW.
+$P_{\mathrm{loss{}} = (250)^2 \times 5.4 = 3.375 \times 10^5$ W $= 338$ kW.
 
 Percentage loss $= 338\,000 / 100\,000\,000 = 0.34\%$.
 
@@ -661,10 +661,10 @@ power dissipated, (c) the energy transferred in 10 minutes.
 
 <details>
 <summary>Problem 5</summary>
-A nichrome wire has resistance 8.0 $\Omega$ at $20^\circ\mathrm{'\{'}C{'\}'}$. The wire is stretched to twice its original
+A nichrome wire has resistance 8.0 $\Omega$ at $20^\circ\mathrm{C{}$. The wire is stretched to twice its original
 length. What is its new resistance? (Assume the volume remains constant.)
 
-**Answer.** If $L \to 2L$ and volume $AL = \mathrm{'\{'}const{'\}'}$, then $A \to A/2$.
+**Answer.** If $L \to 2L$ and volume $AL = \mathrm{const{}$, then $A \to A/2$.
 
 $R' = \frac{\rho(2L)}{A/2} = \frac{4\rho L}{A} = 4R = 32$ $\Omega$.
 
@@ -718,7 +718,7 @@ gradient $= \rho/A = 5.0$. $\rho = 5.0 \times 1.26 \times 10^{-7} = 6.3 \times 1
 Two resistors of 6 $\Omega$ and 3 $\Omega$ are connected in series across a 9 V battery. Calculate
 the current and the power dissipated in each resistor.
 
-**Answer.** Total resistance $R_{\mathrm{'\{'}total{'\}'}} = 6 + 3 = 9$ $\Omega$. Current
+**Answer.** Total resistance $R_{\mathrm{total{}} = 6 + 3 = 9$ $\Omega$. Current
 $I = V/R = 9/9 = 1.0$ A.
 
 Power in 6 $\Omega$: $P = I^2R = 1^2 \times 6 = 6$ W.
@@ -731,14 +731,14 @@ Power in 3 $\Omega$: $P = 1^2 \times 3 = 3$ W.
 
 <details>
 <summary>Problem 10</summary>
-A thermistor has resistance 2000 $\Omega$ at $20^\circ\mathrm{'\{'}C{'\}'}$ and 400 $\Omega$ at $80^\circ\mathrm{'\{'}C{'\}'}$. It is connected in
+A thermistor has resistance 2000 $\Omega$ at $20^\circ\mathrm{C{}$ and 400 $\Omega$ at $80^\circ\mathrm{C{}$. It is connected in
 series with a 500 $\Omega$ fixed resistor and a 6.0 V battery. Calculate the p.d. across the
 thermistor at each temperature.
 
-**Answer.** At $20^\circ\mathrm{'\{'}C{'\}'}$: $R_{\mathrm{'\{'}total{'\}'}} = 2000 + 500 = 2500$ $\Omega$.
+**Answer.** At $20^\circ\mathrm{C{}$: $R_{\mathrm{total{}} = 2000 + 500 = 2500$ $\Omega$.
 $V_T = \frac{2000}{2500} \times 6.0 = 4.80$ V.
 
-At $80^\circ\mathrm{'\{'}C{'\}'}$: $R_{\mathrm{'\{'}total{'\}'}} = 400 + 500 = 900$ $\Omega$.
+At $80^\circ\mathrm{C{}$: $R_{\mathrm{total{}} = 400 + 500 = 900$ $\Omega$.
 $V_T = \frac{400}{900} \times 6.0 = 2.67$ V.
 
 <b>If you get this wrong, revise:</b> [I-V Characteristics](#5-i-v-characteristics)
@@ -748,10 +748,10 @@ $V_T = \frac{400}{900} \times 6.0 = 2.67$ V.
 <details>
 <summary>Problem 11</summary>
 
-A copper wire has resistance 5.00 $\Omega$ at 20$^\circ\mathrm{'\{'}C{'\}'}$. The temperature coefficient of
-resistance for copper is $\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{'\{'}C{'\}'}^{-1}$. Calculate: (a) the
-resistance at 100$^\circ\mathrm{'\{'}C{'\}'}$, (b) the temperature at which the resistance doubles, (c) the
-resistance at $-40^\circ\mathrm{'\{'}C{'\}'}$.
+A copper wire has resistance 5.00 $\Omega$ at 20$^\circ\mathrm{C{}$. The temperature coefficient of
+resistance for copper is $\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C{}^{-1}$. Calculate: (a) the
+resistance at 100$^\circ\mathrm{C{}$, (b) the temperature at which the resistance doubles, (c) the
+resistance at $-40^\circ\mathrm{C{}$.
 
 **Answer.** (a)
 $R = 5.00 \times [1 + 3.9 \times 10^{-3} \times (100 - 20)] = 5.00 \times [1 + 0.312] = 5.00 \times 1.312 = 6.56$
@@ -801,15 +801,15 @@ $\Omega$. Calculate the power loss and efficiency when transmitting at: (a) 25 k
 400 kV.
 
 **Answer.** (a) $I = 500 \times 10^6 / (25 \times 10^3) = 20\,000$ A.
-$P_{\mathrm{'\{'}loss{'\}'}} = (20\,000)^2 \times 4.0 = 1.6 \times 10^9$ W $= 1600$ MW. Efficiency
+$P_{\mathrm{loss{}} = (20\,000)^2 \times 4.0 = 1.6 \times 10^9$ W $= 1600$ MW. Efficiency
 $= 500/(500 + 1600) = 23.8\%$.
 
 (b) $I = 500 \times 10^6 / (132 \times 10^3) = 3788$ A.
-$P_{\mathrm{'\{'}loss{'\}'}} = (3788)^2 \times 4.0 = 5.74 \times 10^7$ W $= 57.4$ MW. Efficiency
+$P_{\mathrm{loss{}} = (3788)^2 \times 4.0 = 5.74 \times 10^7$ W $= 57.4$ MW. Efficiency
 $= 500/557.4 = 89.7\%$.
 
 (c) $I = 500 \times 10^6 / (400 \times 10^3) = 1250$ A.
-$P_{\mathrm{'\{'}loss{'\}'}} = (1250)^2 \times 4.0 = 6.25 \times 10^6$ W $= 6.25$ MW. Efficiency
+$P_{\mathrm{loss{}} = (1250)^2 \times 4.0 = 6.25 \times 10^6$ W $= 6.25$ MW. Efficiency
 $= 500/506.25 = 98.8\%$.
 
 <b>If you get this wrong, revise:</b> [Power Transmission](#10-power-transmission)
@@ -846,7 +846,7 @@ $I_{\max} = \frac{2\pi \times 1.0 \times 10^{-3} \times 0.0553}{4\pi \times 10^{
 Silicon has a band gap of 1.1 eV and an intrinsic carrier concentration of
 $n_i = 1.5 \times 10^{16}$ m$^{-3}$ at 300 K. (a) Estimate $n_i$ at 350 K. (b) A sample of silicon
 is doped with phosphorus at a concentration of $N_D = 5.0 \times 10^{21}$ m$^{-3}$. Calculate the
-ratio of conductivities: $\sigma_{\mathrm{'\{'}doped{'\}'}} / \sigma_{\mathrm{'\{'}intrinsic{'\}'}}$ at 300 K. (Assume
+ratio of conductivities: $\sigma_{\mathrm{doped{}} / \sigma_{\mathrm{intrinsic{}}$ at 300 K. (Assume
 mobility is the same for both.)
 
 **Answer.** (a)
@@ -863,7 +863,7 @@ $= 1.5 \times 10^{16} \times 1.260 \times \exp(3.035) = 1.5 \times 10^{16} \time
 m$^{-3}$.
 
 (b) Since $\sigma = nq\mu$ and mobility $\mu$ is the same:
-$\sigma_{\mathrm{'\{'}doped{'\}'}}/\sigma_{\mathrm{'\{'}intrinsic{'\}'}} = N_D/n_i = 5.0 \times 10^{21} / 1.5 \times 10^{16} = 3.3 \times 10^{5}$.
+$\sigma_{\mathrm{doped{}}/\sigma_{\mathrm{intrinsic{}} = N_D/n_i = 5.0 \times 10^{21} / 1.5 \times 10^{16} = 3.3 \times 10^{5}$.
 
 Doping increased conductivity by over 5 orders of magnitude.
 
@@ -874,11 +874,11 @@ Doping increased conductivity by over 5 orders of magnitude.
 <details>
 <summary>Problem 16</summary>
 
-A copper wire of length 1.00 m and diameter 0.50 mm has resistance $R_0$ at $20^\circ\mathrm{'\{'}C{'\}'}$. It
+A copper wire of length 1.00 m and diameter 0.50 mm has resistance $R_0$ at $20^\circ\mathrm{C{}$. It
 is uniformly stretched to 1.50 times its original length. (a) Calculate the ratio $R'/R_0$ of the
 new resistance to the original resistance. (b) If the original resistance was 0.087 $\Omega$, what
-is the new resistance? (c) The wire is now at a temperature of $60^\circ\mathrm{'\{'}C{'\}'}$. What is its
-resistance? ($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{'\{'}C{'\}'}^{-1}$.)
+is the new resistance? (c) The wire is now at a temperature of $60^\circ\mathrm{C{}$. What is its
+resistance? ($\alpha = 3.9 \times 10^{-3}$ $^\circ\mathrm{C{}^{-1}$.)
 
 **Answer.** (a) Volume conservation: $A_0 L_0 = A' L'$, so $A' = A_0 L_0/L' = A_0/1.50$.
 
@@ -899,10 +899,10 @@ $\Omega$.
 <summary>Problem 17</summary>
 
 An NTC thermistor with $B = 3900$ K has resistance $R_0 = 5000$ $\Omega$ at $T_0 = 298$ K
-(25$^\circ\mathrm{'\{'}C{'\}'}$). It is connected in a potential divider circuit with a $10\,000$ $\Omega$
-fixed resistor and a 9.0 V supply. (a) Calculate the thermistor resistance at $50^\circ\mathrm{'\{'}C{'\}'}$
-(323 K). (b) Calculate the output voltage across the thermistor at $25^\circ\mathrm{'\{'}C{'\}'}$ and at
-$50^\circ\mathrm{'\{'}C{'\}'}$. (c) Calculate the output voltage across the fixed resistor at each
+(25$^\circ\mathrm{C{}$). It is connected in a potential divider circuit with a $10\,000$ $\Omega$
+fixed resistor and a 9.0 V supply. (a) Calculate the thermistor resistance at $50^\circ\mathrm{C{}$
+(323 K). (b) Calculate the output voltage across the thermistor at $25^\circ\mathrm{C{}$ and at
+$50^\circ\mathrm{C{}$. (c) Calculate the output voltage across the fixed resistor at each
 temperature.
 
 **Answer.** (a) $R = R_0 \exp[B(1/T - 1/T_0)] = 5000 \times \exp[3900 \times (1/323 - 1/298)]$
@@ -913,16 +913,16 @@ $= 5000 \times \exp[3900 \times (-2.60 \times 10^{-4})]$
 
 $= 5000 \times \exp(-1.014) = 5000 \times 0.363 = 1813$ $\Omega$.
 
-(b) At $25^\circ\mathrm{'\{'}C{'\}'}$: $R_{\mathrm{'\{'}total{'\}'}} = 5000 + 10\,000 = 15\,000$ $\Omega$.
+(b) At $25^\circ\mathrm{C{}$: $R_{\mathrm{total{}} = 5000 + 10\,000 = 15\,000$ $\Omega$.
 $V_T = \frac{5000}{15\,000} \times 9.0 = 3.00$ V.
 
-At $50^\circ\mathrm{'\{'}C{'\}'}$: $R_{\mathrm{'\{'}total{'\}'}} = 1813 + 10\,000 = 11\,813$ $\Omega$.
+At $50^\circ\mathrm{C{}$: $R_{\mathrm{total{}} = 1813 + 10\,000 = 11\,813$ $\Omega$.
 $V_T = \frac{1813}{11\,813} \times 9.0 = 1.38$ V.
 
-(c) At $25^\circ\mathrm{'\{'}C{'\}'}$: $V_R = 9.0 - 3.00 = 6.00$ V. (Or
+(c) At $25^\circ\mathrm{C{}$: $V_R = 9.0 - 3.00 = 6.00$ V. (Or
 $V_R = \frac{10\,000}{15\,000} \times 9.0 = 6.00$ V.)
 
-At $50^\circ\mathrm{'\{'}C{'\}'}$: $V_R = 9.0 - 1.38 = 7.62$ V. (Or
+At $50^\circ\mathrm{C{}$: $V_R = 9.0 - 1.38 = 7.62$ V. (Or
 $V_R = \frac{10\,000}{11\,813} \times 9.0 = 7.62$ V.)
 
 <b>If you get this wrong, revise:</b>
@@ -934,29 +934,29 @@ $V_R = \frac{10\,000}{11\,813} \times 9.0 = 7.62$ V.)
 <summary>Problem 18</summary>
 
 A battery with e.m.f. $\mathcal{'\{'}E{'\}'} = 12.0$ V and internal resistance $r_0 = 0.50$ $\Omega$ at
-$20^\circ\mathrm{'\{'}C{'\}'}$ is connected to an external load of $R_L = 5.0$ $\Omega$. The internal
+$20^\circ\mathrm{C{}$ is connected to an external load of $R_L = 5.0$ $\Omega$. The internal
 resistance has a positive temperature coefficient of $\alpha_r = 4.0 \times 10^{-3}$
-$^\circ\mathrm{'\{'}C{'\}'}^{-1}$. (a) Calculate the current and power delivered to the load at
-$20^\circ\mathrm{'\{'}C{'\}'}$. (b) If the battery warms up to $60^\circ\mathrm{'\{'}C{'\}'}$ during operation,
+$^\circ\mathrm{C{}^{-1}$. (a) Calculate the current and power delivered to the load at
+$20^\circ\mathrm{C{}$. (b) If the battery warms up to $60^\circ\mathrm{C{}$ during operation,
 calculate the new current and power delivered to the load. (c) Calculate the power dissipated within
 the battery at each temperature.
 
-**Answer.** (a) At $20^\circ\mathrm{'\{'}C{'\}'}$: $r = 0.50$ $\Omega$. Total resistance $= 0.50 + 5.0 = 5.50$
+**Answer.** (a) At $20^\circ\mathrm{C{}$: $r = 0.50$ $\Omega$. Total resistance $= 0.50 + 5.0 = 5.50$
 $\Omega$.
 
-$I = \mathcal{'\{'}E{'\}'}/R_{\mathrm{'\{'}total{'\}'}} = 12.0/5.50 = 2.18$ A.
+$I = \mathcal{'\{'}E{'\}'}/R_{\mathrm{total{}} = 12.0/5.50 = 2.18$ A.
 $P_L = I^2 R_L = (2.18)^2 \times 5.0 = 23.8$ W.
 
-(b) At $60^\circ\mathrm{'\{'}C{'\}'}$:
+(b) At $60^\circ\mathrm{C{}$:
 $r = 0.50 \times [1 + 4.0 \times 10^{-3} \times (60 - 20)] = 0.50 \times 1.16 = 0.580$ $\Omega$.
 
 Total resistance $= 0.580 + 5.0 = 5.580$ $\Omega$. $I = 12.0/5.580 = 2.151$ A.
 
 $P_L = (2.151)^2 \times 5.0 = 23.1$ W.
 
-(c) At $20^\circ\mathrm{'\{'}C{'\}'}$: $P_{\mathrm{'\{'}int{'\}'}} = I^2 r = (2.18)^2 \times 0.50 = 2.38$ W.
+(c) At $20^\circ\mathrm{C{}$: $P_{\mathrm{int{}} = I^2 r = (2.18)^2 \times 0.50 = 2.38$ W.
 
-At $60^\circ\mathrm{'\{'}C{'\}'}$: $P_{\mathrm{'\{'}int{'\}'}} = (2.151)^2 \times 0.580 = 2.68$ W.
+At $60^\circ\mathrm{C{}$: $P_{\mathrm{int{}} = (2.151)^2 \times 0.580 = 2.68$ W.
 
 Note: even though the internal resistance only increased by 16%, the internal power dissipation
 increased by 12.6%, while the useful power to the load decreased. This illustrates why battery

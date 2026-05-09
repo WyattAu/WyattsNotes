@@ -111,14 +111,14 @@ of 2 into both $p$ and $q$, making the fraction reducible.
 ## 2. Indices (Exponent Laws)
 
 **Definition.** For $a > 0$ and $n \in \mathbb{'\{'}Z{'\}'}^+$, we define
-$a^n = \underbrace{a \times a \times \cdots \times a}_{n \mathrm{'\{'} times{'\}'}}$. We extend this
+$a^n = \underbrace{a \times a \times \cdots \times a}_{n \mathrm{ times{}}$. We extend this
 definition as follows:
 
 $$
 \begin{aligned}
-a^0 &= 1 \quad \mathrm{'\{'}for {'\}'} a \neq 0 \\
-a^{-n} &= \frac{1}{a^n} \quad \mathrm{'\{'}for {'\}'} a \neq 0 \\
-a^{1/n} &= \sqrt[n]{a} \quad \mathrm{'\{'}(the positive root for {'\}'} a > 0)
+a^0 &= 1 \quad \mathrm{for {} a \neq 0 \\
+a^{-n} &= \frac{1}{a^n} \quad \mathrm{for {} a \neq 0 \\
+a^{1/n} &= \sqrt[n]{a} \quad \mathrm{(the positive root for {} a > 0)
 \end{aligned}
 $$
 
@@ -210,11 +210,11 @@ state the general theorem.
 
 $$
 \begin{aligned}
-x^3 + 2x^2 - 5x + 6 &= (x - 1)(x^2) + \mathrm{'\{'}remainder of {'\}'} x^3 - x^2 \\
+x^3 + 2x^2 - 5x + 6 &= (x - 1)(x^2) + \mathrm{remainder of {} x^3 - x^2 \\
 &= (x - 1)(x^2) + 3x^2 - 5x + 6 \\
-&= (x - 1)(x^2 + 3x) + \mathrm{'\{'}remainder of {'\}'} 3x^2 - 3x \\
+&= (x - 1)(x^2 + 3x) + \mathrm{remainder of {} 3x^2 - 3x \\
 &= (x - 1)(x^2 + 3x) - 2x + 6 \\
-&= (x - 1)(x^2 + 3x - 2) + \mathrm{'\{'}remainder of {'\}'} -2x + 2 \\
+&= (x - 1)(x^2 + 3x - 2) + \mathrm{remainder of {} -2x + 2 \\
 &= (x - 1)(x^2 + 3x - 2) - 2(x - 1) \\
 &= (x - 1)(x^2 + 3x - 2) + 4
 \end{aligned}
@@ -402,7 +402,7 @@ $$
 \begin{aligned}
 2(1)^3 + a(1)^2 + b(1) - 12 &= -6 \\
 2 + a + b - 12 &= -6 \\
-a + b &= 4 \quad \mathrm{'\{'}--- (1){'\}'}
+a + b &= 4 \quad \mathrm{--- (1){}
 \end{aligned}
 $$
 
@@ -413,7 +413,7 @@ $$
 2(-2)^3 + a(-2)^2 + b(-2) - 12 &= 0 \\
 -16 + 4a - 2b - 12 &= 0 \\
 4a - 2b &= 28 \\
-2a - b &= 14 \quad \mathrm{'\{'}--- (2){'\}'}
+2a - b &= 14 \quad \mathrm{--- (2){}
 \end{aligned}
 $$
 
@@ -581,9 +581,9 @@ Since $(x - 1)^2$ is a factor, both $f(1) = 0$ and $f'(1) = 0$.
 
 $$
 \begin{aligned}
-f(1) &= 1 + a + b + c = 0 \quad \mathrm{'\{'}--- (1){'\}'} \\
+f(1) &= 1 + a + b + c = 0 \quad \mathrm{--- (1){} \\
 f'(x) &= 3x^2 + 2ax + b \\
-f'(1) &= 3 + 2a + b = 0 \quad \mathrm{'\{'}--- (2){'\}'}
+f'(1) &= 3 + 2a + b = 0 \quad \mathrm{--- (2){}
 \end{aligned}
 $$
 
@@ -592,7 +592,7 @@ Also $f(-2) = 12$:
 $$
 \begin{aligned}
 -8 + 4a - 2b + c &= 12 \\
-4a - 2b + c &= 20 \quad \mathrm{'\{'}--- (3){'\}'}
+4a - 2b + c &= 20 \quad \mathrm{--- (3){}
 \end{aligned}
 $$
 

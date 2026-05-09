@@ -26,12 +26,12 @@ prove in real analysis become straightforward when extended to the complex plane
 
 Any non-zero complex number $z = x + iy$ can be written in **modulus-argument form** (polar form):
 
-$$z = r(\cos\theta + i\sin\theta) = r\,\mathrm{'\{'}cis{'\}'}\,\theta$$
+$$z = r(\cos\theta + i\sin\theta) = r\,\mathrm{cis{}\,\theta$$
 
 where $r = |z| = \sqrt{x^2 + y^2}$ and $\theta = \arg(z)$.
 
 The argument is multi-valued: $\arg(z) = \theta + 2k\pi$ for $k \in \mathbb{'\{'}Z{'\}'}$. The **principal
-argument** $\mathrm{'\{'}Arg{'\}'}(z)$ satisfies $-\pi \lt \mathrm{'\{'}Arg{'\}'}(z) \leq \pi$.
+argument** $\mathrm{Arg{}(z)$ satisfies $-\pi \lt \mathrm{Arg{}(z) \leq \pi$.
 
 ### 1.2 Multiplication and division in polar form
 
@@ -130,7 +130,7 @@ angles of $\dfrac{2\pi}{n}$ apart.
 
 The sum of all $n$ roots of $z^n = w$ is zero (they form a regular polygon centred at the origin).
 
-**Proof.** The roots are $R^{1/n}\,\omega^k$ where $\omega = \mathrm{'\{'}cis{'\}'}(2\pi/n)$ and $k = 0, 1, \ldots, n-1$.
+**Proof.** The roots are $R^{1/n}\,\omega^k$ where $\omega = \mathrm{cis{}(2\pi/n)$ and $k = 0, 1, \ldots, n-1$.
 
 $$\sum_{k=0}^{n-1}\omega^k = \frac{1 - \omega^n}{1 - \omega} = \frac{1 - 1}{1 - \omega} = 0 \quad \blacksquare$$
 
@@ -412,9 +412,9 @@ $$= \overline{a_n \alpha^n + \cdots + a_1 \alpha + a_0} = \overline{p(\alpha)} =
 
 $$|z_1 + z_2|^2 = (z_1 + z_2)\overline{(z_1 + z_2)} = |z_1|^2 + |z_2|^2 + z_1\overline{z_2} + \overline{z_1}z_2$$
 
-$$= |z_1|^2 + |z_2|^2 + 2\,\mathrm{'\{'}Re{'\}'}(z_1\overline{z_2}) \leq |z_1|^2 + |z_2|^2 + 2|z_1||z_2| = (|z_1| + |z_2|)^2$$
+$$= |z_1|^2 + |z_2|^2 + 2\,\mathrm{Re{}(z_1\overline{z_2}) \leq |z_1|^2 + |z_2|^2 + 2|z_1||z_2| = (|z_1| + |z_2|)^2$$
 
-since $\mathrm{'\{'}Re{'\}'}(w) \leq |w|$ for any complex $w$. Taking square roots gives the result. $\blacksquare$
+since $\mathrm{Re{}(w) \leq |w|$ for any complex $w$. Taking square roots gives the result. $\blacksquare$
 
 ---
 
@@ -579,7 +579,7 @@ So the intersection points are $(0, 1) = i$ and $(2, 3)$.
 
 ### Example 9.4: Transformation of the complex plane
 
-**Problem.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = \dfrac{z + 1}{z - 1}$. Find the image of the line $\mathrm{'\{'}Re{'\}'}(z) = 2$ under $T$.
+**Problem.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = \dfrac{z + 1}{z - 1}$. Find the image of the line $\mathrm{Re{}(z) = 2$ under $T$.
 
 **Solution.** Let $z = 2 + iy$. Then:
 
@@ -645,7 +645,7 @@ $\overrightarrow{AC} = z_C - z_A = 4 + i$, $|\overrightarrow{AC}| = \sqrt{16 + 1
 
 All three sides have different lengths, so the triangle is **scalene**, not isosceles. (If the question intended different points, the same method applies.)
 
-The area is $\dfrac{1}{2}|\mathrm{'\{'}Im{'\}'}(\overline{z_{AB}} \cdot z_{AC})|$:
+The area is $\dfrac{1}{2}|\mathrm{Im{}(\overline{z_{AB}} \cdot z_{AC})|$:
 
 $\overline{z_{AB}} \cdot z_{AC} = (2 - 4i)(4 + i) = 8 + 2i - 16i + 4 = 12 - 14i$.
 
@@ -975,7 +975,7 @@ $\boxed{\cos^4\theta = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\co
 
 ### Question 15
 
-Find the image of the line $\mathrm{'\{'}Re{'\}'}(z) = 2$ under the transformation $w = \dfrac{z-1}{z+1}$.
+Find the image of the line $\mathrm{Re{}(z) = 2$ under the transformation $w = \dfrac{z-1}{z+1}$.
 
 <details>
 <summary>Solution</summary>

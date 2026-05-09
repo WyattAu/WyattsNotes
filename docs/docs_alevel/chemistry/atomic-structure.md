@@ -30,7 +30,7 @@ Atoms consist of three principal subatomic particles. Their properties are summa
 The **atomic number** (proton number) $Z$ defines the element. The **mass number** $A = Z + N$, where $N$ is the neutron number. The notation is:
 
 $$
-{}^{A}_{Z}\mathrm{'\{'}X{'\}'}
+{}^{A}_{Z}\mathrm{X{}
 $$
 
 ## Isotopes
@@ -42,23 +42,23 @@ Isotopes are atoms of the same element (same $Z$) with different neutron numbers
 The relative atomic mass is the weighted mean of the isotopic masses, weighted by their natural abundances:
 
 $$
-A_r(\mathrm{'\{'}X{'\}'}) = \frac{\sum_i m_i \cdot a_i}{\sum_i a_i}
+A_r(\mathrm{X{}) = \frac{\sum_i m_i \cdot a_i}{\sum_i a_i}
 $$
 
 where $m_i$ is the isotopic mass and $a_i$ is the relative abundance of isotope $i$.
 
-**Worked Example.** Chlorine has two stable isotopes: ${}^{35}\mathrm{'\{'}Cl{'\}'}$ (75.77%, $m = 34.969\,\mathrm{'\{'}u{'\}'}$) and ${}^{37}\mathrm{'\{'}Cl{'\}'}$ (24.23%, $m = 36.966\,\mathrm{'\{'}u{'\}'}$).
+**Worked Example.** Chlorine has two stable isotopes: ${}^{35}\mathrm{Cl{}$ (75.77%, $m = 34.969\,\mathrm{u{}$) and ${}^{37}\mathrm{Cl{}$ (24.23%, $m = 36.966\,\mathrm{u{}$).
 
 $$
-A_r(\mathrm{'\{'}Cl{'\}'}) = \frac{(34.969)(75.77) + (36.966)(24.23)}{100} = \frac{2650.4 + 895.3}{100} = 35.45
+A_r(\mathrm{Cl{}) = \frac{(34.969)(75.77) + (36.966)(24.23)}{100} = \frac{2650.4 + 895.3}{100} = 35.45
 $$
 
 ### Relative Molecular Mass ($M_r$)
 
-For a compound with formula $\mathrm{'\{'}X{'\}'}_a\mathrm{'\{'}Y{'\}'}_b$:
+For a compound with formula $\mathrm{X{}_a\mathrm{Y{}_b$:
 
 $$
-M_r = a \cdot A_r(\mathrm{'\{'}X{'\}'}) + b \cdot A_r(\mathrm{'\{'}Y{'\}'})
+M_r = a \cdot A_r(\mathrm{X{}) + b \cdot A_r(\mathrm{Y{})
 $$
 
 ## Mass Spectrometry
@@ -66,7 +66,7 @@ $$
 Mass spectrometry separates ions by their mass-to-charge ratio ($m/z$). The stages are:
 
 1. **Vaporisation** -- sample converted to gaseous state.
-2. **Ionisation** -- typically by electron impact (EI): a high-energy electron beam ejects an electron from the sample molecule, producing a molecular ion $\mathrm{'\{'}M{'\}'}^{+\bullet}$.
+2. **Ionisation** -- typically by electron impact (EI): a high-energy electron beam ejects an electron from the sample molecule, producing a molecular ion $\mathrm{M{}^{+\bullet}$.
 3. **Acceleration** -- ions accelerated through a potential difference $V$, gaining kinetic energy $\tfrac{1}{2}mv^2 = zVe$.
 4. **Deflection** -- a magnetic field $B$ deflects ions into a curved path of radius $r$:
 
@@ -80,11 +80,11 @@ Lighter ions (lower $m/z$) are deflected more. The detector records the abundanc
 
 ### Interpreting Mass Spectra
 
-- The **molecular ion peak** ($\mathrm{'\{'}M{'\}'}^{+\bullet}$) gives the relative molecular mass.
-- Fragmentation produces characteristic peaks. For example, $\mathrm{'\{'}CH{'\}'}_4^{+\bullet}$ at $m/z = 16$; $\mathrm{'\{'}CH{'\}'}_3^+$ at $m/z = 15$.
+- The **molecular ion peak** ($\mathrm{M{}^{+\bullet}$) gives the relative molecular mass.
+- Fragmentation produces characteristic peaks. For example, $\mathrm{CH{}_4^{+\bullet}$ at $m/z = 16$; $\mathrm{CH{}_3^+$ at $m/z = 15$.
 - The **base peak** is the most intense signal (assigned 100% relative abundance).
 
-**Worked Example.** A compound shows a molecular ion peak at $m/z = 78$ and a base peak at $m/z = 77$. The M+1 peak at $m/z = 79$ has 6.4% of the molecular ion intensity. This is consistent with benzene ($\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$, $M_r = 78$). The M+1 peak intensity ($\approx 6 \times 1.1\% = 6.6\%$) confirms six carbon atoms.
+**Worked Example.** A compound shows a molecular ion peak at $m/z = 78$ and a base peak at $m/z = 77$. The M+1 peak at $m/z = 79$ has 6.4% of the molecular ion intensity. This is consistent with benzene ($\mathrm{C{}_6\mathrm{H{}_6$, $M_r = 78$). The M+1 peak intensity ($\approx 6 \times 1.1\% = 6.6\%$) confirms six carbon atoms.
 
 ## Electron Configuration
 
@@ -135,20 +135,20 @@ Use the notation $n\ell^x$ where $x$ is the number of electrons in that subshell
 | Element | $Z$ | Configuration | Shorthand |
 |---|---|---|---|
 | H | 1 | $1s^1$ | $1s^1$ |
-| C | 6 | $1s^2 2s^2 2p^2$ | $[\mathrm{'\{'}He{'\}'}]\,2s^2 2p^2$ |
-| Na | 11 | $1s^2 2s^2 2p^6 3s^1$ | $[\mathrm{'\{'}Ne{'\}'}]\,3s^1$ |
-| Fe | 26 | $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6$ | $[\mathrm{'\{'}Ar{'\}'}]\,4s^2 3d^6$ |
-| Cu | 29 | $1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^{10}$ | $[\mathrm{'\{'}Ar{'\}'}]\,4s^1 3d^{10}$ |
+| C | 6 | $1s^2 2s^2 2p^2$ | $[\mathrm{He{}]\,2s^2 2p^2$ |
+| Na | 11 | $1s^2 2s^2 2p^6 3s^1$ | $[\mathrm{Ne{}]\,3s^1$ |
+| Fe | 26 | $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6$ | $[\mathrm{Ar{}]\,4s^2 3d^6$ |
+| Cu | 29 | $1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^{10}$ | $[\mathrm{Ar{}]\,4s^1 3d^{10}$ |
 
-**Note on Cr and Cu.** Chromium ($Z = 24$) is $[\mathrm{'\{'}Ar{'\}'}]\,4s^1 3d^5$ and copper ($Z = 29$) is $[\mathrm{'\{'}Ar{'\}'}]\,4s^1 3d^{10}$. The half-filled $d^5$ and fully-filled $d^{10}$ configurations are stabilised by exchange energy -- the extra stability gained from maximising parallel spins outweighs the energy cost of promoting an electron from $4s$ to $3d$.
+**Note on Cr and Cu.** Chromium ($Z = 24$) is $[\mathrm{Ar{}]\,4s^1 3d^5$ and copper ($Z = 29$) is $[\mathrm{Ar{}]\,4s^1 3d^{10}$. The half-filled $d^5$ and fully-filled $d^{10}$ configurations are stabilised by exchange energy -- the extra stability gained from maximising parallel spins outweighs the energy cost of promoting an electron from $4s$ to $3d$.
 
 ### d-block Electron Configurations
 
 For transition metals, when forming cations, the $4s$ electrons are removed before the $3d$ electrons. For example:
 
-- $\mathrm{'\{'}Fe{'\}'}$: $[\mathrm{'\{'}Ar{'\}'}]\,4s^2 3d^6$
-- $\mathrm{'\{'}Fe{'\}'}^{2+}$: $[\mathrm{'\{'}Ar{'\}'}]\,3d^6$
-- $\mathrm{'\{'}Fe{'\}'}^{3+}$: $[\mathrm{'\{'}Ar{'\}'}]\,3d^5$
+- $\mathrm{Fe{}$: $[\mathrm{Ar{}]\,4s^2 3d^6$
+- $\mathrm{Fe{}^{2+}$: $[\mathrm{Ar{}]\,3d^6$
+- $\mathrm{Fe{}^{3+}$: $[\mathrm{Ar{}]\,3d^5$
 
 This is because once the $3d$ subshell begins to populate, it drops below $4s$ in energy.
 
@@ -159,13 +159,13 @@ This is because once the $3d$ subshell begins to populate, it drops below $4s$ i
 The **first ionisation energy** of an element is the enthalpy change when one mole of gaseous atoms each loses one electron to form one mole of gaseous $1+$ ions:
 
 $$
-\mathrm{'\{'}X{'\}'}(g) \to \mathrm{'\{'}X{'\}'}^+(g) + e^- \quad \Delta H = \mathrm{'\{'}IE{'\}'}_1
+\mathrm{X{}(g) \to \mathrm{X{}^+(g) + e^- \quad \Delta H = \mathrm{IE{}_1
 $$
 
 The **second ionisation energy** is:
 
 $$
-\mathrm{'\{'}X{'\}'}^+(g) \to \mathrm{'\{'}X{'\}'}^{2+}(g) + e^- \quad \Delta H = \mathrm{'\{'}IE{'\}'}_2
+\mathrm{X{}^+(g) \to \mathrm{X{}^{2+}(g) + e^- \quad \Delta H = \mathrm{IE{}_2
 $$
 
 Ionisation energies are always endothermic (positive $\Delta H$).
@@ -179,16 +179,16 @@ Ionisation energy generally increases across a period (left to right) because:
 3. **Atomic radius decreases** -- the increased effective nuclear charge pulls electron shells closer.
 4. **Net effect** -- the outer electron is held more tightly, requiring more energy to remove.
 
-| Element | $Z$ | Configuration | $\mathrm{'\{'}IE{'\}'}_1$ (kJ/mol) |
+| Element | $Z$ | Configuration | $\mathrm{IE{}_1$ (kJ/mol) |
 |---|---|---|---|
-| Na | 11 | $[\mathrm{'\{'}Ne{'\}'}]\,3s^1$ | 496 |
-| Mg | 12 | $[\mathrm{'\{'}Ne{'\}'}]\,3s^2$ | 738 |
-| Al | 13 | $[\mathrm{'\{'}Ne{'\}'}]\,3s^2 3p^1$ | 578 |
-| Si | 14 | $[\mathrm{'\{'}Ne{'\}'}]\,3s^2 3p^2$ | 786 |
-| P | 15 | $[\mathrm{'\{'}Ne{'\}'}]\,3s^2 3p^3$ | 1012 |
-| S | 16 | $[\mathrm{'\{'}Ne{'\}'}]\,3s^2 3p^4$ | 1000 |
-| Cl | 17 | $[\mathrm{'\{'}Ne{'\}'}]\,3s^2 3p^5$ | 1251 |
-| Ar | 18 | $[\mathrm{'\{'}Ne{'\}'}]\,3s^2 3p^6$ | 1521 |
+| Na | 11 | $[\mathrm{Ne{}]\,3s^1$ | 496 |
+| Mg | 12 | $[\mathrm{Ne{}]\,3s^2$ | 738 |
+| Al | 13 | $[\mathrm{Ne{}]\,3s^2 3p^1$ | 578 |
+| Si | 14 | $[\mathrm{Ne{}]\,3s^2 3p^2$ | 786 |
+| P | 15 | $[\mathrm{Ne{}]\,3s^2 3p^3$ | 1012 |
+| S | 16 | $[\mathrm{Ne{}]\,3s^2 3p^4$ | 1000 |
+| Cl | 17 | $[\mathrm{Ne{}]\,3s^2 3p^5$ | 1251 |
+| Ar | 18 | $[\mathrm{Ne{}]\,3s^2 3p^6$ | 1521 |
 
 ### Anomalies: Al vs Mg and S vs P
 
@@ -205,7 +205,7 @@ Ionisation energy decreases down a group because:
 3. **Atomic radius increases** -- the outer electron is further from the nucleus.
 4. **Net effect** -- despite increasing nuclear charge, the increased distance and shielding dominate, making electron removal easier.
 
-| Element | $\mathrm{'\{'}IE{'\}'}_1$ (kJ/mol) |
+| Element | $\mathrm{IE{}_1$ (kJ/mol) |
 |---|
 | Li | 520 |
 | Na | 496 |
@@ -214,18 +214,18 @@ Ionisation energy decreases down a group because:
 
 ### Successive Ionisation Energies
 
-Plotting successive ionisation energies ($\mathrm{'\{'}IE{'\}'}_1$, $\mathrm{'\{'}IE{'\}'}_2$, $\mathrm{'\{'}IE{'\}'}_3$, ...) against ionisation number reveals the electron configuration. Large jumps occur when electrons are removed from a new inner shell.
+Plotting successive ionisation energies ($\mathrm{IE{}_1$, $\mathrm{IE{}_2$, $\mathrm{IE{}_3$, ...) against ionisation number reveals the electron configuration. Large jumps occur when electrons are removed from a new inner shell.
 
 **Worked Example.** For aluminium ($Z = 13$), successive ionisation energies are:
 
-| $n$ | $\mathrm{'\{'}IE{'\}'}_n$ (kJ/mol) | Shell |
+| $n$ | $\mathrm{IE{}_n$ (kJ/mol) | Shell |
 |---|---|---|
 | 1 | 578 | $n = 3$ |
 | 2 | 1817 | $n = 3$ |
 | 3 | 2745 | $n = 3$ |
 | 4 | 11577 | $n = 2$ (jump) |
 
-The large jump between $\mathrm{'\{'}IE{'\}'}_3$ and $\mathrm{'\{'}IE{'\}'}_4$ indicates that the first three electrons were removed from the third shell (valence), and the fourth is removed from the second shell (core).
+The large jump between $\mathrm{IE{}_3$ and $\mathrm{IE{}_4$ indicates that the first three electrons were removed from the third shell (valence), and the fourth is removed from the second shell (core).
 
 ## Atomic and Ionic Radii
 
@@ -239,12 +239,12 @@ The atomic radius is the distance from the nucleus to the outermost electrons. I
 
 ### Ionic Radius
 
-**Cations** are smaller than their parent atoms because removing electrons reduces electron-electron repulsion and the remaining electrons are drawn closer by the unchanged nuclear charge. Higher charge cations are even smaller: $\mathrm{'\{'}Fe{'\}'}^{3+} \lt \mathrm{'\{'}Fe{'\}'}^{2+} \lt \mathrm{'\{'}Fe{'\}'}$.
+**Cations** are smaller than their parent atoms because removing electrons reduces electron-electron repulsion and the remaining electrons are drawn closer by the unchanged nuclear charge. Higher charge cations are even smaller: $\mathrm{Fe{}^{3+} \lt \mathrm{Fe{}^{2+} \lt \mathrm{Fe{}$.
 
 **Anions** are larger than their parent atoms because adding electrons increases electron-electron repulsion, causing the electron cloud to expand. For isoelectronic species (same number of electrons), the ionic radius decreases with increasing nuclear charge:
 
 $$
-\mathrm{'\{'}O{'\}'}^{2-} \gt \mathrm{'\{'}F{'\}'}^- \gt \mathrm{'\{'}Na{'\}'}^+ \gt \mathrm{'\{'}Mg{'\}'}^{2+} \gt \mathrm{'\{'}Al{'\}'}^{3+}
+\mathrm{O{}^{2-} \gt \mathrm{F{}^- \gt \mathrm{Na{}^+ \gt \mathrm{Mg{}^{2+} \gt \mathrm{Al{}^{3+}
 $$
 
 All have the neon electron configuration ($1s^2 2s^2 2p^6$), but nuclear charge increases from 8 to 13.
@@ -259,10 +259,10 @@ The **shielding constant** $\sigma$ quantifies the extent to which inner electro
 - Electrons in the $(n-1)$ shell: shield with efficiency $0.85$.
 - Electrons in shells $\le (n-2)$: shield with efficiency $1.00$.
 
-### Effective Nuclear Charge ($Z_\mathrm{'\{'}eff{'\}'}$)
+### Effective Nuclear Charge ($Z_\mathrm{eff{}$)
 
 $$
-Z_\mathrm{'\{'}eff{'\}'} = Z - \sigma
+Z_\mathrm{eff{} = Z - \sigma
 $$
 
 **Worked Example.** For potassium ($Z = 19$, configuration $1s^2 2s^2 2p^6 3s^2 3p^6 4s^1$), the shielding experienced by the $4s$ electron:
@@ -272,7 +272,7 @@ $$
 $$
 
 $$
-Z_\mathrm{'\{'}eff{'\}'} = 19 - 16.8 = 2.2
+Z_\mathrm{eff{} = 19 - 16.8 = 2.2
 $$
 
 This low effective nuclear charge explains why the $4s$ electron is so easily lost (low first ionisation energy of K).
@@ -284,10 +284,10 @@ $$
 $$
 
 $$
-Z_\mathrm{'\{'}eff{'\}'} = 20 - 17.15 = 2.85
+Z_\mathrm{eff{} = 20 - 17.15 = 2.85
 $$
 
-The higher $Z_\mathrm{'\{'}eff{'\}'}$ for Ca compared to K explains the higher first ionisation energy of Ca (590 vs 419 kJ/mol).
+The higher $Z_\mathrm{eff{}$ for Ca compared to K explains the higher first ionisation energy of Ca (590 vs 419 kJ/mol).
 
 ## Periodic Trends Summary
 
@@ -306,12 +306,12 @@ The higher $Z_\mathrm{'\{'}eff{'\}'}$ for Ca compared to K explains the higher f
 <details>
 <summary>Problem 1</summary>
 
-Bromine has two stable isotopes: ${}^{79}\mathrm{'\{'}Br{'\}'}$ (50.69%) and ${}^{81}\mathrm{'\{'}Br{'\}'}$ (49.31%). Calculate the relative atomic mass of bromine.
+Bromine has two stable isotopes: ${}^{79}\mathrm{Br{}$ (50.69%) and ${}^{81}\mathrm{Br{}$ (49.31%). Calculate the relative atomic mass of bromine.
 
 **Solution:**
 
 $$
-A_r(\mathrm{'\{'}Br{'\}'}) = \frac{(79 \times 50.69) + (81 \times 49.31)}{100} = \frac{4004.5 + 3994.1}{100} = 79.99 \approx 80.0
+A_r(\mathrm{Br{}) = \frac{(79 \times 50.69) + (81 \times 49.31)}{100} = \frac{4004.5 + 3994.1}{100} = 79.99 \approx 80.0
 $$
 
 </details>
@@ -323,21 +323,21 @@ The first five ionisation energies of an element $X$ are (in kJ/mol): 590, 1145,
 
 **Solution:**
 
-The large jump between $\mathrm{'\{'}IE{'\}'}_2$ (1145) and $\mathrm{'\{'}IE{'\}'}_3$ (4912) indicates that the third electron is being removed from a new, inner shell. This means $X$ has two valence electrons and belongs to Group 2. The first ionisation energy (590 kJ/mol) is consistent with calcium.
+The large jump between $\mathrm{IE{}_2$ (1145) and $\mathrm{IE{}_3$ (4912) indicates that the third electron is being removed from a new, inner shell. This means $X$ has two valence electrons and belongs to Group 2. The first ionisation energy (590 kJ/mol) is consistent with calcium.
 
 </details>
 
 <details>
 <summary>Problem 3</summary>
 
-Write the electron configuration of $\mathrm{'\{'}Cr{'\}'}^{3+}$ and explain why it has a $d^3$ configuration.
+Write the electron configuration of $\mathrm{Cr{}^{3+}$ and explain why it has a $d^3$ configuration.
 
 **Solution:**
 
-Chromium ($Z = 24$) has the ground-state configuration $[\mathrm{'\{'}Ar{'\}'}]\,4s^1 3d^5$. When forming $\mathrm{'\{'}Cr{'\}'}^{3+}$, the $4s$ electrons are removed first (as they are higher in energy once the $3d$ subshell is populated), followed by one $3d$ electron:
+Chromium ($Z = 24$) has the ground-state configuration $[\mathrm{Ar{}]\,4s^1 3d^5$. When forming $\mathrm{Cr{}^{3+}$, the $4s$ electrons are removed first (as they are higher in energy once the $3d$ subshell is populated), followed by one $3d$ electron:
 
 $$
-\mathrm{'\{'}Cr{'\}'}^{3+}: [\mathrm{'\{'}Ar{'\}'}]\,3d^3
+\mathrm{Cr{}^{3+}: [\mathrm{Ar{}]\,3d^3
 $$
 
 The $d^3$ configuration has one electron in each of three $d$ orbitals with parallel spins, which is stabilised by exchange energy (Hund's rule). This half-filled-like arrangement is relatively stable.
@@ -362,11 +362,11 @@ The mass spectrum of an element shows three peaks at $m/z = 52$, 54, and 56 with
 
 **Solution:**
 
-(a) The element is chromium ($\mathrm{'\{'}Cr{'\}'}$, $Z = 24$, $A_r \approx 52$). The peaks correspond to ${}^{52}\mathrm{'\{'}Cr{'\}'}$, ${}^{54}\mathrm{'\{'}Cr{'\}'}$, and ${}^{56}\mathrm{'\{'}Cr{'\}'}$.
+(a) The element is chromium ($\mathrm{Cr{}$, $Z = 24$, $A_r \approx 52$). The peaks correspond to ${}^{52}\mathrm{Cr{}$, ${}^{54}\mathrm{Cr{}$, and ${}^{56}\mathrm{Cr{}$.
 
-(b) Chromium has four stable isotopes: ${}^{50}\mathrm{'\{'}Cr{'\}'}$ (4.3%), ${}^{52}\mathrm{'\{'}Cr{'\}'}$ (83.8%), ${}^{53}\mathrm{'\{'}Cr{'\}'}$ (9.5%), and ${}^{54}\mathrm{'\{'}Cr{'\}'}$ (2.4%). However, the data shows three peaks at 52, 54, and 56, which is more consistent with iron ($\mathrm{'\{'}Fe{'\}'}$, $Z = 26$): ${}^{54}\mathrm{'\{'}Fe{'\}'}$ (5.8%), ${}^{56}\mathrm{'\{'}Fe{'\}'}$ (91.7%), ${}^{57}\mathrm{'\{'}Fe{'\}'}$ (2.1%), and ${}^{58}\mathrm{'\{'}Fe{'\}'}$ (0.3%).
+(b) Chromium has four stable isotopes: ${}^{50}\mathrm{Cr{}$ (4.3%), ${}^{52}\mathrm{Cr{}$ (83.8%), ${}^{53}\mathrm{Cr{}$ (9.5%), and ${}^{54}\mathrm{Cr{}$ (2.4%). However, the data shows three peaks at 52, 54, and 56, which is more consistent with iron ($\mathrm{Fe{}$, $Z = 26$): ${}^{54}\mathrm{Fe{}$ (5.8%), ${}^{56}\mathrm{Fe{}$ (91.7%), ${}^{57}\mathrm{Fe{}$ (2.1%), and ${}^{58}\mathrm{Fe{}$ (0.3%).
 
-Re-examining: the $m/z$ values of 52, 54, 56 with the given abundances most closely match chromium: ${}^{52}\mathrm{'\{'}Cr{'\}'}$ ($A_r = 51.94$, abundance $\approx 83.8\%$), ${}^{53}\mathrm{'\{'}Cr{'\}'}$ ($A_r = 52.94$, $\approx 9.5\%$), ${}^{54}\mathrm{'\{'}Cr{'\}'}$ ($A_r = 53.94$, $\approx 2.4\%$). However, the relative abundances in the problem (17.4%, 67.8%, 14.8%) do not match chromium's known isotope pattern.
+Re-examining: the $m/z$ values of 52, 54, 56 with the given abundances most closely match chromium: ${}^{52}\mathrm{Cr{}$ ($A_r = 51.94$, abundance $\approx 83.8\%$), ${}^{53}\mathrm{Cr{}$ ($A_r = 52.94$, $\approx 9.5\%$), ${}^{54}\mathrm{Cr{}$ ($A_r = 53.94$, $\approx 2.4\%$). However, the relative abundances in the problem (17.4%, 67.8%, 14.8%) do not match chromium's known isotope pattern.
 
 The correct identification requires the data to be internally consistent: $A_r = 52 \times 0.174 + 54 \times 0.678 + 56 \times 0.148 = 9.05 + 36.61 + 8.29 = 53.95$. This value ($\approx 54$) is closest to chromium, but the isotope pattern does not match natural abundance. The element is therefore most likely **chromium** with the mass spectrum showing a simplified or experimental dataset.
 
@@ -380,12 +380,12 @@ Low-resolution mass spectrometry gives $m/z$ to the nearest integer. High-resolu
 
 | Species | Exact mass ($m/z$) | Nominal mass |
 |---|---|---|
-| $\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_8$ | 44.063 | 44 |
-| $\mathrm{'\{'}CO{'\}'}_2$ | 43.990 | 44 |
-| $\mathrm{'\{'}N{'\}'}_2\mathrm{'\{'}O{'\}'}$ | 44.001 | 44 |
-| $\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_4\mathrm{'\{'}O{'\}'}$ | 44.026 | 44 |
+| $\mathrm{C{}_3\mathrm{H{}_8$ | 44.063 | 44 |
+| $\mathrm{CO{}_2$ | 43.990 | 44 |
+| $\mathrm{N{}_2\mathrm{O{}$ | 44.001 | 44 |
+| $\mathrm{C{}_2\mathrm{H{}_4\mathrm{O{}$ | 44.026 | 44 |
 
-High-resolution MS can distinguish $\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_8$ ($44.063$) from $\mathrm{'\{'}CO{'\}'}_2$ ($43.990$) -- a difference of $0.073\,\mathrm{'\{'}amu{'\}'}$, easily resolved by modern instruments.
+High-resolution MS can distinguish $\mathrm{C{}_3\mathrm{H{}_8$ ($44.063$) from $\mathrm{CO{}_2$ ($43.990$) -- a difference of $0.073\,\mathrm{amu{}$, easily resolved by modern instruments.
 
 ### The Rule of 13
 
@@ -397,7 +397,7 @@ $$
 
 where $n$ is the number of carbon atoms and $r$ is the number of hydrogen atoms (plus halogens counted as hydrogen equivalents: F = H, Cl = H + 35, Br = H + 79, I = H + 127).
 
-**Example.** For $M_r = 92$: $92 = 13 \times 7 + 1$. Base formula: $\mathrm{'\{'}C{'\}'}_7\mathrm{'\{'}H{'\}'}_1$. This is unrealistic (too few H for 7 C), so subtract 6 H and add one degree of unsaturation: $\mathrm{'\{'}C{'\}'}_7\mathrm{'\{'}H{'\}'}_8$. Possible structures: toluene ($\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}CH{'\}'}_3$) or methylcyclohexene.
+**Example.** For $M_r = 92$: $92 = 13 \times 7 + 1$. Base formula: $\mathrm{C{}_7\mathrm{H{}_1$. This is unrealistic (too few H for 7 C), so subtract 6 H and add one degree of unsaturation: $\mathrm{C{}_7\mathrm{H{}_8$. Possible structures: toluene ($\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_3$) or methylcyclohexene.
 
 ### Isotope Peaks in Mass Spectrometry
 
@@ -410,10 +410,10 @@ $$
 **Worked Example.** A compound has a molecular ion at $m/z = 150$ (100%) and M+1 at $m/z = 151$ (9.9%). Estimate the number of carbons.
 
 $$
-n(\mathrm{'\{'}C{'\}'}) \approx \frac{9.9}{1.1} = 9
+n(\mathrm{C{}) \approx \frac{9.9}{1.1} = 9
 $$
 
-The compound likely contains 9 carbon atoms. $12 \times 9 = 108$. Remaining mass = $150 - 108 = 42$. This could correspond to $\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ (or other combinations). The rule of 13 confirms: $150 = 13 \times 11 + 7$, so the base formula is $\mathrm{'\{'}C{'\}'}_{11}\mathrm{'\{'}H{'\}'}_7$. With 9 carbons, the formula becomes $\mathrm{'\{'}C{'\}'}_9\mathrm{'\{'}H{'\}'}_{10}\mathrm{'\{'}O{'\}'}$ ($M_r = 9 \times 12 + 10 + 16 = 138$, which does not match). The calculation illustrates the method but requires additional information (like the M+2 peak for halogens) for unambiguous determination.
+The compound likely contains 9 carbon atoms. $12 \times 9 = 108$. Remaining mass = $150 - 108 = 42$. This could correspond to $\mathrm{C{}_2\mathrm{H{}_2\mathrm{O{}$ (or other combinations). The rule of 13 confirms: $150 = 13 \times 11 + 7$, so the base formula is $\mathrm{C{}_{11}\mathrm{H{}_7$. With 9 carbons, the formula becomes $\mathrm{C{}_9\mathrm{H{}_{10}\mathrm{O{}$ ($M_r = 9 \times 12 + 10 + 16 = 138$, which does not match). The calculation illustrates the method but requires additional information (like the M+2 peak for halogens) for unambiguous determination.
 
 ## Electron Configuration and Periodic Trends
 
@@ -423,8 +423,8 @@ The following elements have ground-state configurations that deviate from the si
 
 | Element | Expected | Actual | Reason |
 |---|---|---|---|
-| Cr ($Z=24$) | $[\mathrm{'\{'}Ar{'\}'}]\,4s^2 3d^4$ | $[\mathrm{'\{'}Ar{'\}'}]\,4s^1 3d^5$ | Half-filled $d$ subshell is stabilised by exchange energy |
-| Cu ($Z=29$) | $[\mathrm{'\{'}Ar{'\}'}]\,4s^2 3d^9$ | $[\mathrm{'\{'}Ar{'\}'}]\,4s^1 3d^{10}$ | Fully-filled $d$ subshell is stabilised |
+| Cr ($Z=24$) | $[\mathrm{Ar{}]\,4s^2 3d^4$ | $[\mathrm{Ar{}]\,4s^1 3d^5$ | Half-filled $d$ subshell is stabilised by exchange energy |
+| Cu ($Z=29$) | $[\mathrm{Ar{}]\,4s^2 3d^9$ | $[\mathrm{Ar{}]\,4s^1 3d^{10}$ | Fully-filled $d$ subshell is stabilised |
 
 The exchange energy arises because electrons with parallel spins (Hund's rule) cannot occupy the same region of space (Pauli exclusion), which reduces electron-electron repulsion. The energy gained from exchange stabilisation can exceed the energy difference between $4s$ and $3d$ orbitals.
 
@@ -440,22 +440,22 @@ The exchange energy arises because electrons with parallel spins (Hund's rule) c
 2. Shielding increases (more inner electron shells).
 
 **Exceptions across Period 2:**
-- Be ($\mathrm{'\{'}IE{'\}'} \gt \mathrm{'\{'}B{'\}'}$): Be has a filled $2s$ subshell ($2s^2$), which is relatively stable. B has $2s^2 2p^1$, and the $2p$ electron is higher in energy and easier to remove.
-- N ($\mathrm{'\{'}IE{'\}'} \gt \mathrm{'\{'}O{'\}'}$): N has a half-filled $2p$ subshell ($2p^3$), which is stabilised by exchange energy. O has $2p^4$ with pairing repulsion in one orbital.
+- Be ($\mathrm{IE{} \gt \mathrm{B{}$): Be has a filled $2s$ subshell ($2s^2$), which is relatively stable. B has $2s^2 2p^1$, and the $2p$ electron is higher in energy and easier to remove.
+- N ($\mathrm{IE{} \gt \mathrm{O{}$): N has a half-filled $2p$ subshell ($2p^3$), which is stabilised by exchange energy. O has $2p^4$ with pairing repulsion in one orbital.
 
 ### Successive Ionisation Energies
 
-Successive ionisation energies ($\mathrm{'\{'}IE{'\}'}_1$, $\mathrm{'\{'}IE{'\}'}_2$, $\mathrm{'\{'}IE{'\}'}_3$, ...) always increase because each electron is removed from an increasingly positive ion. Large jumps indicate that the electron is being removed from a new, inner shell closer to the nucleus.
+Successive ionisation energies ($\mathrm{IE{}_1$, $\mathrm{IE{}_2$, $\mathrm{IE{}_3$, ...) always increase because each electron is removed from an increasingly positive ion. Large jumps indicate that the electron is being removed from a new, inner shell closer to the nucleus.
 
-**Worked Example.** The first five ionisation energies of an element are (in $\mathrm{'\{'}kJ/mol{'\}'}$): $578$, $1817$, $2745$, $11578$, $14842$.
+**Worked Example.** The first five ionisation energies of an element are (in $\mathrm{kJ/mol{}$): $578$, $1817$, $2745$, $11578$, $14842$.
 
-The large jump between $\mathrm{'\{'}IE{'\}'}_3$ and $\mathrm{'\{'}IE{'\}'}_4$ indicates that the first three electrons are removed from the outer shell, and the fourth is removed from an inner shell. The element is in Group 13 (three valence electrons). This is aluminium.
+The large jump between $\mathrm{IE{}_3$ and $\mathrm{IE{}_4$ indicates that the first three electrons are removed from the outer shell, and the fourth is removed from an inner shell. The element is in Group 13 (three valence electrons). This is aluminium.
 
 ### Using Ionisation Energy Data to Identify Elements
 
-A plot of $\log(\mathrm{'\{'}IE{'\}'})$ vs ionisation number shows clear steps corresponding to the removal of electrons from different shells. The number of electrons in each step gives the group number.
+A plot of $\log(\mathrm{IE{})$ vs ionisation number shows clear steps corresponding to the removal of electrons from different shells. The number of electrons in each step gives the group number.
 
-| Element | $\mathrm{'\{'}IE{'\}'}_1$ ($\mathrm{'\{'}kJ/mol{'\}'}$) | Group | Evidence |
+| Element | $\mathrm{IE{}_1$ ($\mathrm{kJ/mol{}$) | Group | Evidence |
 |---|---|---|---|
 | Na | $496$, $4562$, ... | 1 | Large jump after 1st |
 | Mg | $738$, $1451$, $7733$, ... | 2 | Large jump after 2nd |
@@ -466,9 +466,9 @@ A plot of $\log(\mathrm{'\{'}IE{'\}'})$ vs ionisation number shows clear steps c
 
 | Property | Na | Mg | Al | Si | P | S | Cl | Ar |
 |---|---|---|---|---|---|---|---|---|
-| $\mathrm{'\{'}IE{'\}'}_1$ ($\mathrm{'\{'}kJ/mol{'\}'}$) | 496 | 738 | 578 | 789 | 1012 | 1000 | 1251 | 1521 |
-| Atomic radius ($\mathrm{'\{'}pm{'\}'}$) | 186 | 160 | 143 | 118 | 110 | 104 | 99 | -- |
-| Melting point ($^\circ\mathrm{'\{'}C{'\}'}$) | 98 | 650 | 661 | 1414 | 44 | 115 | $-101$ | $-189$ |
+| $\mathrm{IE{}_1$ ($\mathrm{kJ/mol{}$) | 496 | 738 | 578 | 789 | 1012 | 1000 | 1251 | 1521 |
+| Atomic radius ($\mathrm{pm{}$) | 186 | 160 | 143 | 118 | 110 | 104 | 99 | -- |
+| Melting point ($^\circ\mathrm{C{}$) | 98 | 650 | 661 | 1414 | 44 | 115 | $-101$ | $-189$ |
 | Electrical conductivity | Good | Good | Good | Poor (semiconductor) | Poor | Poor | Poor | Poor |
 
 **Melting point anomaly:** Silicon has the highest melting point because it has a giant covalent (macromolecular) structure with strong covalent bonds throughout. Sulphur has a higher melting point than phosphorus because $S_8$ molecules are larger and have more London forces than $P_4$ molecules.
@@ -486,13 +486,13 @@ The diagonal relationship: Elements diagonally adjacent in the periodic table (e
 <details>
 <summary>Problem 4</summary>
 
-The first four ionisation energies of an element X are: $738$, $1451$, $7733$, and $10540\,\mathrm{'\{'}kJ/mol{'\}'}$. Identify the element and explain the pattern.
+The first four ionisation energies of an element X are: $738$, $1451$, $7733$, and $10540\,\mathrm{kJ/mol{}$. Identify the element and explain the pattern.
 
 **Solution:**
 
 The large jump between the second ($1451$) and third ($7733$) ionisation energies indicates that removing the third electron requires breaking into a new, inner electron shell. The element has two valence electrons and is in Group 2.
 
-The element is **magnesium** ($\mathrm{'\{'}Mg{'\}'}$, $Z = 12$, electron configuration $[\mathrm{'\{'}Ne{'\}'}]\,3s^2$). The first two electrons are removed from the $3s$ subshell (valence); the third must be removed from the $2p$ subshell (core), which is much closer to the nucleus and more tightly held.
+The element is **magnesium** ($\mathrm{Mg{}$, $Z = 12$, electron configuration $[\mathrm{Ne{}]\,3s^2$). The first two electrons are removed from the $3s$ subshell (valence); the third must be removed from the $2p$ subshell (core), which is much closer to the nucleus and more tightly held.
 
 </details>
 
@@ -506,9 +506,9 @@ A mass spectrum shows the following peaks for an organic compound: $m/z = 78$ (M
 
 **Solution:**
 
-(a) M+1 = 6.7% suggests approximately $6.7/1.1 = 6$ carbons. $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$: $M = 72$ (too low). $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$... $M = 6(12) + 6(1) = 78$. Check: M+2 = 0.5%, consistent with approximately 6 carbons (each $^{13}\mathrm{'\{'}C{'\}'}$ contributes 1.1%, and $6 \times 1.1 = 6.6\%$; M+2 from two $^{13}\mathrm{'\{'}C{'\}'}$ atoms: $C(6,2) \times (0.011)^2 \approx 15 \times 0.000121 = 0.18\%$, plus other contributions). The data are consistent with $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$.
+(a) M+1 = 6.7% suggests approximately $6.7/1.1 = 6$ carbons. $\mathrm{C{}_6\mathrm{H{}_6$: $M = 72$ (too low). $\mathrm{C{}_6\mathrm{H{}_6$... $M = 6(12) + 6(1) = 78$. Check: M+2 = 0.5%, consistent with approximately 6 carbons (each $^{13}\mathrm{C{}$ contributes 1.1%, and $6 \times 1.1 = 6.6\%$; M+2 from two $^{13}\mathrm{C{}$ atoms: $C(6,2) \times (0.011)^2 \approx 15 \times 0.000121 = 0.18\%$, plus other contributions). The data are consistent with $\mathrm{C{}_6\mathrm{H{}_6$.
 
-(b) $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$ is **benzene** ($M = 78$). The mass spectrum of benzene characteristically shows the molecular ion as the base peak (highly stable aromatic ring).
+(b) $\mathrm{C{}_6\mathrm{H{}_6$ is **benzene** ($M = 78$). The mass spectrum of benzene characteristically shows the molecular ion as the base peak (highly stable aromatic ring).
 
 </details>
 
@@ -523,7 +523,7 @@ Nitrogen has the electron configuration $1s^2 2s^2 2p^3$ with a half-filled $2p$
 
 Oxygen has $1s^2 2s^2 2p^4$. The fourth electron in the $2p$ subshell must pair with another electron in one of the $p$ orbitals. The pairing repulsion between the two electrons in the same orbital partially offsets the increased nuclear charge. This makes the electron easier to remove from oxygen than from nitrogen, despite the higher nuclear charge.
 
-Data: $\mathrm{'\{'}IE{'\}'}_1(\mathrm{'\{'}N{'\}'}) = 1402\,\mathrm{'\{'}kJ/mol{'\}'}$, $\mathrm{'\{'}IE{'\}'}_1(\mathrm{'\{'}O{'\}'}) = 1314\,\mathrm{'\{'}kJ/mol{'\}'}$.
+Data: $\mathrm{IE{}_1(\mathrm{N{}) = 1402\,\mathrm{kJ/mol{}$, $\mathrm{IE{}_1(\mathrm{O{}) = 1314\,\mathrm{kJ/mol{}$.
 
 </details>
 
@@ -536,7 +536,7 @@ The successive ionisation energies of element X are shown below:
 
 | $n$ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| IE ($\mathrm{'\{'}kJ/mol{'\}'}$) | 578 | 1817 | 2745 | 11578 | 14842 | 18377 | 23327 | 27466 | 31862 | 37216 | 42640 |
+| IE ($\mathrm{kJ/mol{}$) | 578 | 1817 | 2745 | 11578 | 14842 | 18377 | 23327 | 27466 | 31862 | 37216 | 42640 |
 
 (a) In which group of the periodic table is element X? (1 mark)
 
@@ -550,11 +550,11 @@ The successive ionisation energies of element X are shown below:
 
 (a) Group 13. The large jump between the 3rd and 4th ionisation energies indicates that the first three electrons are in the outer shell (valence electrons), and the 4th electron is removed from an inner shell.
 
-(b) Aluminium ($\mathrm{'\{'}Al{'\}'}$, $Z = 13$). The first ionisation energy (578 kJ/mol) matches the known value for aluminium.
+(b) Aluminium ($\mathrm{Al{}$, $Z = 13$). The first ionisation energy (578 kJ/mol) matches the known value for aluminium.
 
 (c) The first three electrons are removed from the $n = 3$ shell ($3s^2 3p^1$). The fourth electron must be removed from the $n = 2$ shell ($2p^6$), which is much closer to the nucleus and more strongly held. The large increase in ionisation energy reflects the transition from valence to core electrons (1 mark for identifying the shell transition, 1 mark for explaining that inner shell electrons experience less shielding and are closer to the nucleus).
 
-(d) $\mathrm{'\{'}Al{'\}'}_2\mathrm{'\{'}O{'\}'}_3$. Aluminium is in Group 13 and forms a $3+$ ion. Oxygen forms a $2-$ ion. The formula requires charge balance: $2 \times 3+ = 3 \times 2-$, giving $\mathrm{'\{'}Al{'\}'}_2\mathrm{'\{'}O{'\}'}_3$.
+(d) $\mathrm{Al{}_2\mathrm{O{}_3$. Aluminium is in Group 13 and forms a $3+$ ion. Oxygen forms a $2-$ ion. The formula requires charge balance: $2 \times 3+ = 3 \times 2-$, giving $\mathrm{Al{}_2\mathrm{O{}_3$.
 
 </details>
 
@@ -577,13 +577,13 @@ A mass spectrum of an organic compound shows the following peaks:
 
 **Solution:**
 
-(a) M+1 = 7.7% suggests approximately $7.7/1.1 = 7$ carbon atoms. $7 \times 12 = 84$. Remaining mass = $92 - 84 = 8$, which corresponds to 8 hydrogen atoms. The molecular formula is $\mathrm{'\{'}C{'\}'}_7\mathrm{'\{'}H{'\}'}_8$. Verification: $\text{'\{'}DoU{'\}'} = \frac{2(7) + 2 - 8}{2} = 4$. This is consistent with a benzene ring (4 degrees of unsaturation: one ring + three double bonds in the aromatic system).
+(a) M+1 = 7.7% suggests approximately $7.7/1.1 = 7$ carbon atoms. $7 \times 12 = 84$. Remaining mass = $92 - 84 = 8$, which corresponds to 8 hydrogen atoms. The molecular formula is $\mathrm{C{}_7\mathrm{H{}_8$. Verification: $\text{'\{'}DoU{'\}'} = \frac{2(7) + 2 - 8}{2} = 4$. This is consistent with a benzene ring (4 degrees of unsaturation: one ring + three double bonds in the aromatic system).
 
-M+2 = 0.3% is consistent with two $^{13}\mathrm{'\{'}C{'\}'}$ atoms: $C(7,2) \times (0.011)^2 = 21 \times 0.000121 = 0.25\%$, close to the observed value.
+M+2 = 0.3% is consistent with two $^{13}\mathrm{C{}$ atoms: $C(7,2) \times (0.011)^2 = 21 \times 0.000121 = 0.25\%$, close to the observed value.
 
-(b) $\mathrm{'\{'}C{'\}'}_7\mathrm{'\{'}H{'\}'}_8$ is consistent with **toluene** ($\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}CH{'\}'}_3$).
+(b) $\mathrm{C{}_7\mathrm{H{}_8$ is consistent with **toluene** ($\mathrm{C{}_6\mathrm{H{}_5\mathrm{CH{}_3$).
 
-(c) The peak at $m/z = 91$ corresponds to the tropylium ion ($\mathrm{'\{'}C{'\}'}_7\mathrm{'\{'}H{'\}'}_7^+$), formed by loss of one hydrogen atom from the methyl group followed by ring expansion of the resulting benzyl cation. The tropylium ion has a cyclic, aromatic structure ($\mathrm{'\{'}C{'\}'}_7\mathrm{'\{'}H{'\}'}_7^+$, $6\,\pi$ electrons satisfying Huckel's rule) that makes it exceptionally stable, explaining its high intensity in the mass spectrum.
+(c) The peak at $m/z = 91$ corresponds to the tropylium ion ($\mathrm{C{}_7\mathrm{H{}_7^+$), formed by loss of one hydrogen atom from the methyl group followed by ring expansion of the resulting benzyl cation. The tropylium ion has a cyclic, aromatic structure ($\mathrm{C{}_7\mathrm{H{}_7^+$, $6\,\pi$ electrons satisfying Huckel's rule) that makes it exceptionally stable, explaining its high intensity in the mass spectrum.
 
 </details>
 
@@ -593,38 +593,38 @@ M+2 = 0.3% is consistent with two $^{13}\mathrm{'\{'}C{'\}'}$ atoms: $C(7,2) \ti
 
 Not all electrons in the same principal shell shield equally. The $s$ orbital penetrates closer to the nucleus than the $p$ orbital, and $p$ penetrates closer than $d$. This means:
 
-- $s$ electrons experience less shielding (higher $Z_\mathrm{'\{'}eff{'\}'}$) than $p$ electrons in the same shell.
+- $s$ electrons experience less shielding (higher $Z_\mathrm{eff{}$) than $p$ electrons in the same shell.
 - The $4s$ orbital is lower in energy than $3d$ for $Z \le 20$ because the $4s$ electron penetrates through the inner shell electron cloud more effectively.
 - For $Z > 20$, the increasing nuclear charge pulls the $3d$ electrons closer, and $3d$ drops below $4s$ in energy.
 
 ### Effective Nuclear Charge Calculations for Period 3
 
-| Element | $Z$ | Configuration | $\sigma$ | $Z_\mathrm{'\{'}eff{'\}'}$ (valence) |
+| Element | $Z$ | Configuration | $\sigma$ | $Z_\mathrm{eff{}$ (valence) |
 |---|---|---|---|---|
-| Na | 11 | $[\mathrm{'\{'}Ne{'\}'}]3s^1$ | $10 \times 0.85 = 8.5$ | $11 - 8.5 = 2.5$ |
-| Mg | 12 | $[\mathrm{'\{'}Ne{'\}'}]3s^2$ | $1 \times 0.35 + 10 \times 0.85 = 8.85$ | $12 - 8.85 = 3.15$ |
-| Al | 13 | $[\mathrm{'\{'}Ne{'\}'}]3s^2 3p^1$ | $2 \times 0.35 + 10 \times 0.85 = 9.20$ | $13 - 9.20 = 3.80$ |
-| Si | 14 | $[\mathrm{'\{'}Ne{'\}'}]3s^2 3p^2$ | $3 \times 0.35 + 10 \times 0.85 = 9.55$ | $14 - 9.55 = 4.45$ |
-| P | 15 | $[\mathrm{'\{'}Ne{'\}'}]3s^2 3p^3$ | $4 \times 0.35 + 10 \times 0.85 = 9.90$ | $15 - 9.90 = 5.10$ |
-| S | 16 | $[\mathrm{'\{'}Ne{'\}'}]3s^2 3p^4$ | $5 \times 0.35 + 10 \times 0.85 = 10.25$ | $16 - 10.25 = 5.75$ |
-| Cl | 17 | $[\mathrm{'\{'}Ne{'\}'}]3s^2 3p^5$ | $6 \times 0.35 + 10 \times 0.85 = 10.60$ | $17 - 10.60 = 6.40$ |
-| Ar | 18 | $[\mathrm{'\{'}Ne{'\}'}]3s^2 3p^6$ | $7 \times 0.35 + 10 \times 0.85 = 10.95$ | $18 - 10.95 = 7.05$ |
+| Na | 11 | $[\mathrm{Ne{}]3s^1$ | $10 \times 0.85 = 8.5$ | $11 - 8.5 = 2.5$ |
+| Mg | 12 | $[\mathrm{Ne{}]3s^2$ | $1 \times 0.35 + 10 \times 0.85 = 8.85$ | $12 - 8.85 = 3.15$ |
+| Al | 13 | $[\mathrm{Ne{}]3s^2 3p^1$ | $2 \times 0.35 + 10 \times 0.85 = 9.20$ | $13 - 9.20 = 3.80$ |
+| Si | 14 | $[\mathrm{Ne{}]3s^2 3p^2$ | $3 \times 0.35 + 10 \times 0.85 = 9.55$ | $14 - 9.55 = 4.45$ |
+| P | 15 | $[\mathrm{Ne{}]3s^2 3p^3$ | $4 \times 0.35 + 10 \times 0.85 = 9.90$ | $15 - 9.90 = 5.10$ |
+| S | 16 | $[\mathrm{Ne{}]3s^2 3p^4$ | $5 \times 0.35 + 10 \times 0.85 = 10.25$ | $16 - 10.25 = 5.75$ |
+| Cl | 17 | $[\mathrm{Ne{}]3s^2 3p^5$ | $6 \times 0.35 + 10 \times 0.85 = 10.60$ | $17 - 10.60 = 6.40$ |
+| Ar | 18 | $[\mathrm{Ne{}]3s^2 3p^6$ | $7 \times 0.35 + 10 \times 0.85 = 10.95$ | $18 - 10.95 = 7.05$ |
 
-The steady increase in $Z_\mathrm{'\{'}eff{'\}'}$ across the period explains the general increase in first ionisation energy.
+The steady increase in $Z_\mathrm{eff{}$ across the period explains the general increase in first ionisation energy.
 
 ### Anomalous Trends: Quantitative Treatment
 
 The drop from Be to B:
 
-- $\mathrm{'\{'}IE{'\}'}_1(\mathrm{'\{'}Be{'\}'}) = 899\,\mathrm{'\{'}kJ/mol{'\}'}$ ($2s^2$, filled subshell)
-- $\mathrm{'\{'}IE{'\}'}_1(\mathrm{'\{'}B{'\}'}) = 801\,\mathrm{'\{'}kJ/mol{'\}'}$ ($2s^2 2p^1$)
+- $\mathrm{IE{}_1(\mathrm{Be{}) = 899\,\mathrm{kJ/mol{}$ ($2s^2$, filled subshell)
+- $\mathrm{IE{}_1(\mathrm{B{}) = 801\,\mathrm{kJ/mol{}$ ($2s^2 2p^1$)
 
-The $2p$ electron in boron is shielded by the two $2s$ electrons (which have the same $n$ value but different $\ell$). The $2s$ orbital penetrates more effectively than $2p$, so the $2s$ electrons are held more tightly and shield the $2p$ electron more effectively than $2p$ electrons shield each other. This reduces $Z_\mathrm{'\{'}eff{'\}'}$ for the $2p$ electron, making it easier to remove.
+The $2p$ electron in boron is shielded by the two $2s$ electrons (which have the same $n$ value but different $\ell$). The $2s$ orbital penetrates more effectively than $2p$, so the $2s$ electrons are held more tightly and shield the $2p$ electron more effectively than $2p$ electrons shield each other. This reduces $Z_\mathrm{eff{}$ for the $2p$ electron, making it easier to remove.
 
 The drop from N to P:
 
-- $\mathrm{'\{'}IE{'\}'}_1(\mathrm{'\{'}N{'\}'}) = 1402\,\mathrm{'\{'}kJ/mol{'\}'}$ ($2p^3$, half-filled)
-- $\mathrm{'\{'}IE{'\}'}_1(\mathrm{'\{'}O{'\}'}) = 1314\,\mathrm{'\{'}kJ/mol{'\}'}$ ($2p^4$)
+- $\mathrm{IE{}_1(\mathrm{N{}) = 1402\,\mathrm{kJ/mol{}$ ($2p^3$, half-filled)
+- $\mathrm{IE{}_1(\mathrm{O{}) = 1314\,\mathrm{kJ/mol{}$ ($2p^4$)
 
 In nitrogen ($2p^3$), each $p$ orbital has one electron (Hund's rule). In oxygen ($2p^4$), one orbital must contain two paired electrons. The pairing energy (exchange energy lost + Coulombic repulsion between paired electrons) makes the fourth electron less tightly held.
 
@@ -638,18 +638,18 @@ Understanding fragmentation patterns is essential for identifying organic compou
 
 | Fragment | $m/z$ | Origin |
 |---|---|---|
-| $\mathrm{'\{'}CH{'\}'}_3^+$ | 15 | Loss of alkyl group |
-| $\mathrm{'\{'}OH{'\}'}^+$ | 17 | Alcohols, carboxylic acids |
-| $\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_5^+$ | 29 | Ethyl group |
-| $\mathrm{'\{'}CHO{'\}'}^+$ | 29 | Aldehydes |
-| $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CO{'\}'}^+$ | 43 | Methyl ketones |
-| $\mathrm{'\{'}COOH{'\}'}^+$ | 45 | Carboxylic acids |
-| $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5^+$ | 77 | Aromatic compounds |
-| $\mathrm{'\{'}C{'\}'}_7\mathrm{'\{'}H{'\}'}_7^+$ | 91 | Benzyl/tropylium ion |
+| $\mathrm{CH{}_3^+$ | 15 | Loss of alkyl group |
+| $\mathrm{OH{}^+$ | 17 | Alcohols, carboxylic acids |
+| $\mathrm{C{}_2\mathrm{H{}_5^+$ | 29 | Ethyl group |
+| $\mathrm{CHO{}^+$ | 29 | Aldehydes |
+| $\mathrm{CH{}_3\mathrm{CO{}^+$ | 43 | Methyl ketones |
+| $\mathrm{COOH{}^+$ | 45 | Carboxylic acids |
+| $\mathrm{C{}_6\mathrm{H{}_5^+$ | 77 | Aromatic compounds |
+| $\mathrm{C{}_7\mathrm{H{}_7^+$ | 91 | Benzyl/tropylium ion |
 
-**Alpha cleavage:** The bond adjacent to the carbonyl group breaks, producing an acylium ion. For example, in propanone ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COCH{'\}'}_3$), alpha cleavage gives $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CO{'\}'}^+$ at $m/z = 43$ (base peak) and $\mathrm{'\{'}CH{'\}'}_3^+$ at $m/z = 15$.
+**Alpha cleavage:** The bond adjacent to the carbonyl group breaks, producing an acylium ion. For example, in propanone ($\mathrm{CH{}_3\mathrm{COCH{}_3$), alpha cleavage gives $\mathrm{CH{}_3\mathrm{CO{}^+$ at $m/z = 43$ (base peak) and $\mathrm{CH{}_3^+$ at $m/z = 15$.
 
-**McLafferty rearrangement:** A hydrogen atom six atoms away from a carbonyl group transfers to the carbonyl oxygen, with simultaneous cleavage of the bond between the $\alpha$- and $\beta$-carbons. This produces an enol radical cation and a neutral alkene. For butanal ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CHO{'\}'}$), McLafferty rearrangement gives $\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_4\mathrm{'\{'}O{'\}'}^{+\bullet}$ at $m/z = 44$.
+**McLafferty rearrangement:** A hydrogen atom six atoms away from a carbonyl group transfers to the carbonyl oxygen, with simultaneous cleavage of the bond between the $\alpha$- and $\beta$-carbons. This produces an enol radical cation and a neutral alkene. For butanal ($\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CHO{}$), McLafferty rearrangement gives $\mathrm{C{}_2\mathrm{H{}_4\mathrm{O{}^{+\bullet}$ at $m/z = 44$.
 
 ## Exam-Style Questions with Full Mark Schemes
 
@@ -681,13 +681,13 @@ The mass spectrum of a compound shows a molecular ion peak at $m/z = 78$ (100%) 
 
 **Mark Scheme:**
 
-(a) M+1 = 6.7% gives approximately $6.7/1.1 \approx 6$ carbon atoms (1 mark). $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$: $M = 72 + 6 = 78$. Molecular formula: $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$ (1 mark).
+(a) M+1 = 6.7% gives approximately $6.7/1.1 \approx 6$ carbon atoms (1 mark). $\mathrm{C{}_6\mathrm{H{}_6$: $M = 72 + 6 = 78$. Molecular formula: $\mathrm{C{}_6\mathrm{H{}_6$ (1 mark).
 
-(b) Benzene ($\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$) (1 mark).
+(b) Benzene ($\mathrm{C{}_6\mathrm{H{}_6$) (1 mark).
 
-(c) The peak at $m/z = 77$ is $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5^+$ (phenyl cation), formed by loss of one hydrogen atom from the molecular ion (1 mark).
+(c) The peak at $m/z = 77$ is $\mathrm{C{}_6\mathrm{H{}_5^+$ (phenyl cation), formed by loss of one hydrogen atom from the molecular ion (1 mark).
 
-(d) The peak at $m/z = 51$ is $\mathrm{'\{'}C{'\}'}_4\mathrm{'\{'}H{'\}'}_3^+$, formed by further fragmentation of the phenyl cation (loss of $\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_2$ from $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5^+$: $77 - 26 = 51$) (1 mark).
+(d) The peak at $m/z = 51$ is $\mathrm{C{}_4\mathrm{H{}_3^+$, formed by further fragmentation of the phenyl cation (loss of $\mathrm{C{}_2\mathrm{H{}_2$ from $\mathrm{C{}_6\mathrm{H{}_5^+$: $77 - 26 = 51$) (1 mark).
 
 </details>
 
@@ -698,7 +698,7 @@ Define the term first ionisation energy. The first five ionisation energies of a
 
 | $n$ | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|
-| IE ($\mathrm{'\{'}kJ/mol{'\}'}$) | 738 | 1451 | 7733 | 10540 | 13630 |
+| IE ($\mathrm{kJ/mol{}$) | 738 | 1451 | 7733 | 10540 | 13630 |
 
 (a) Identify the element. (1 mark)
 
@@ -710,11 +710,11 @@ Define the term first ionisation energy. The first five ionisation energies of a
 
 **Mark Scheme:**
 
-(a) Magnesium ($\mathrm{'\{'}Mg{'\}'}$, $Z = 12$) (1 mark).
+(a) Magnesium ($\mathrm{Mg{}$, $Z = 12$) (1 mark).
 
 (b) The first two electrons are removed from the $3s$ subshell (valence electrons) (1 mark). The third electron is removed from the $2p$ subshell (core electrons), which is closer to the nucleus and experiences less shielding, so much more energy is required (1 mark).
 
-(c) $\mathrm{'\{'}Mg{'\}'}^{2+}$: $1s^2 2s^2 2p^6$ or $[\mathrm{'\{'}Ne{'\}'}]$ (1 mark).
+(c) $\mathrm{Mg{}^{2+}$: $1s^2 2s^2 2p^6$ or $[\mathrm{Ne{}]$ (1 mark).
 
 (d) When electrons are removed, the remaining electrons experience less electron-electron repulsion and are pulled closer to the nucleus by the unchanged nuclear charge (1 mark). The increased effective nuclear charge per electron reduces the ionic radius (1 mark).
 
@@ -723,7 +723,7 @@ Define the term first ionisation energy. The first five ionisation energies of a
 <details>
 <summary>Q4 (5 marks)</summary>
 
-High-resolution mass spectrometry gives the molecular ion peak of a compound at $m/z = 60.0575$. Two possible molecular formulas are $\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}$ and $\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_4\mathrm{'\{'}O{'\}'}_2$.
+High-resolution mass spectrometry gives the molecular ion peak of a compound at $m/z = 60.0575$. Two possible molecular formulas are $\mathrm{C{}_3\mathrm{H{}_8\mathrm{O{}$ and $\mathrm{C{}_2\mathrm{H{}_4\mathrm{O{}_2$.
 
 (a) Calculate the exact mass of each formula. (2 marks)
 
@@ -733,13 +733,13 @@ High-resolution mass spectrometry gives the molecular ion peak of a compound at 
 
 **Mark Scheme:**
 
-(a) $\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}$: $3(12.0000) + 8(1.0078) + 15.9949 = 36.0000 + 8.0625 + 15.9949 = 60.0574$ (1 mark).
+(a) $\mathrm{C{}_3\mathrm{H{}_8\mathrm{O{}$: $3(12.0000) + 8(1.0078) + 15.9949 = 36.0000 + 8.0625 + 15.9949 = 60.0574$ (1 mark).
 
-$\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_4\mathrm{'\{'}O{'\}'}_2$: $2(12.0000) + 4(1.0078) + 2(15.9949) = 24.0000 + 4.0313 + 31.9898 = 60.0211$ (1 mark).
+$\mathrm{C{}_2\mathrm{H{}_4\mathrm{O{}_2$: $2(12.0000) + 4(1.0078) + 2(15.9949) = 24.0000 + 4.0313 + 31.9898 = 60.0211$ (1 mark).
 
-(b) The measured value ($60.0575$) matches $\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}$ (60.0574) much more closely than $\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_4\mathrm{'\{'}O{'\}'}_2$ (60.0211). The correct formula is $\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}$ (1 mark).
+(b) The measured value ($60.0575$) matches $\mathrm{C{}_3\mathrm{H{}_8\mathrm{O{}$ (60.0574) much more closely than $\mathrm{C{}_2\mathrm{H{}_4\mathrm{O{}_2$ (60.0211). The correct formula is $\mathrm{C{}_3\mathrm{H{}_8\mathrm{O{}$ (1 mark).
 
-(c) A positive iodoform test indicates a $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CO{'\}'}-$ group. With the formula $\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}$, the compound is **propan-2-ol** ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}CH{'\}'}_3$). Under the iodoform test conditions, propan-2-ol is oxidised to propanone, which contains the $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CO{'\}'}-$ group (1 mark for propan-2-ol, 1 mark for explanation).
+(c) A positive iodoform test indicates a $\mathrm{CH{}_3\mathrm{CO{}-$ group. With the formula $\mathrm{C{}_3\mathrm{H{}_8\mathrm{O{}$, the compound is **propan-2-ol** ($\mathrm{CH{}_3\mathrm{CH{}(\mathrm{OH{})\mathrm{CH{}_3$). Under the iodoform test conditions, propan-2-ol is oxidised to propanone, which contains the $\mathrm{CH{}_3\mathrm{CO{}-$ group (1 mark for propan-2-ol, 1 mark for explanation).
 
 </details>
 

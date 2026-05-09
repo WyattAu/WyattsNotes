@@ -24,7 +24,7 @@ giving the fundamental conversion:
 
 $$
 \begin{aligned}
-  180^\circ = \pi \mathrm{'\{'} rad{'\}'}
+  180^\circ = \pi \mathrm{ rad{}
 \end{aligned}
 $$
 
@@ -32,8 +32,8 @@ To convert between the two units:
 
 $$
 \begin{aligned}
-  \theta_{\mathrm{'\{'}rad{'\}'}} &= \theta_{\mathrm{'\{'}deg{'\}'}} \times \frac{\pi}{180} \\[4pt]
-  \theta_{\mathrm{'\{'}deg{'\}'}} &= \theta_{\mathrm{'\{'}rad{'\}'}} \times \frac{180}{\pi}
+  \theta_{\mathrm{rad{}} &= \theta_{\mathrm{deg{}} \times \frac{\pi}{180} \\[4pt]
+  \theta_{\mathrm{deg{}} &= \theta_{\mathrm{rad{}} \times \frac{180}{\pi}
 \end{aligned}
 $$
 
@@ -81,7 +81,7 @@ The area of a segment (the region between a chord and its arc) is:
 
 $$
 \begin{aligned}
-  \mathrm{'\{'}Area of segment{'\}'} = \frac{1}{2}r^2(\theta - \sin\theta)
+  \mathrm{Area of segment{} = \frac{1}{2}r^2(\theta - \sin\theta)
 \end{aligned}
 $$
 
@@ -106,9 +106,9 @@ The three primary trigonometric ratios are:
 
 $$
 \begin{aligned}
-  \sin\theta &= \frac{\mathrm{'\{'}Opposite{'\}'}}{\mathrm{'\{'}Hypotenuse{'\}'}} = \frac{O}{H} \\[4pt]
-  \cos\theta &= \frac{\mathrm{'\{'}Adjacent{'\}'}}{\mathrm{'\{'}Hypotenuse{'\}'}} = \frac{A}{H} \\[4pt]
-  \tan\theta &= \frac{\mathrm{'\{'}Opposite{'\}'}}{\mathrm{'\{'}Adjacent{'\}'}} = \frac{O}{A}
+  \sin\theta &= \frac{\mathrm{Opposite{}}{\mathrm{Hypotenuse{}} = \frac{O}{H} \\[4pt]
+  \cos\theta &= \frac{\mathrm{Adjacent{}}{\mathrm{Hypotenuse{}} = \frac{A}{H} \\[4pt]
+  \tan\theta &= \frac{\mathrm{Opposite{}}{\mathrm{Adjacent{}} = \frac{O}{A}
 \end{aligned}
 $$
 
@@ -303,7 +303,7 @@ in $[-90^\circ, 90^\circ]$:
 
 $$
 \begin{aligned}
-  \theta = 360^\circ n + \alpha \quad \mathrm{'\{'}or{'\}'} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{'\{'}Z{'\}'}
+  \theta = 360^\circ n + \alpha \quad \mathrm{or{} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{'\{'}Z{'\}'}
 \end{aligned}
 $$
 
@@ -389,12 +389,12 @@ side-angle-side (SAS) configurations.
 
 $$
 \begin{aligned}
-  \mathrm{'\{'}Area{'\}'} = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
+  \mathrm{Area{} = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
 \end{aligned}
 $$
 
 This is derived from the standard formula
-$\mathrm{'\{'}Area{'\}'} = \frac{1}{2} \times \mathrm{'\{'}base{'\}'} \times \mathrm{'\{'}height{'\}'}$, where the height is
+$\mathrm{Area{} = \frac{1}{2} \times \mathrm{base{} \times \mathrm{height{}$, where the height is
 expressed using a trigonometric ratio.
 
 ### Bearings
@@ -748,7 +748,7 @@ In $\triangle ABC$, $a = 7$, $b = 5$, $C = 60^\circ$. Find the area and the leng
 <details>
 <summary>Solution</summary>
 
-$$\mathrm{'\{'}Area{'\}'} = \frac{1}{2}ab\sin C = \frac{1}{2}(7)(5)\sin 60^\circ = \frac{35\sqrt{3}}{4} \approx 15.16$$
+$$\mathrm{Area{} = \frac{1}{2}ab\sin C = \frac{1}{2}(7)(5)\sin 60^\circ = \frac{35\sqrt{3}}{4} \approx 15.16$$
 
 By the cosine rule:
 
@@ -809,7 +809,7 @@ $$C = \arccos\!\left(\frac{1}{7}\right) \approx 81.8^\circ$$
 
 (b) Using the area formula with two sides and the included angle:
 
-$$\mathrm{'\{'}Area{'\}'} = \frac{1}{2}(5)(7)\sin C = \frac{35}{2}\sqrt{1 - \frac{1}{49}} = \frac{35}{2}\sqrt{\frac{48}{49}} = \frac{35}{2} \cdot \frac{4\sqrt{3}}{7} = 10\sqrt{3} \approx 17.3$$
+$$\mathrm{Area{} = \frac{1}{2}(5)(7)\sin C = \frac{35}{2}\sqrt{1 - \frac{1}{49}} = \frac{35}{2}\sqrt{\frac{48}{49}} = \frac{35}{2} \cdot \frac{4\sqrt{3}}{7} = 10\sqrt{3} \approx 17.3$$
 
 </details>
 
@@ -866,7 +866,7 @@ $$h \approx 19.8 \text{'\{'} m{'\}'}$$
 <details>
 <summary>Solution</summary>
 
-$$\mathrm{'\{'}Area{'\}'} = \frac{1}{2}ac\sin B = \frac{1}{2}(6)c\sin 45^\circ = 3c \cdot \frac{\sqrt{2}}{2} = \frac{3\sqrt{2}}{2}c$$
+$$\mathrm{Area{} = \frac{1}{2}ac\sin B = \frac{1}{2}(6)c\sin 45^\circ = 3c \cdot \frac{\sqrt{2}}{2} = \frac{3\sqrt{2}}{2}c$$
 
 $$\frac{3\sqrt{2}}{2}c = 9\sqrt{2} \implies c = 6$$
 
@@ -897,11 +897,11 @@ If $C = 180^\circ - A$: since $A + C = 180^\circ$, and $A + B + C = 180^\circ$, 
 
 The shortest distance from $C$ to the line $AB$ is the perpendicular distance $h$.
 
-$$\mathrm{'\{'}Area\ of\ {'\}'} \triangle ABC = \frac{1}{2}(AB)(BC)\sin\angle ABC = \frac{1}{2}(200)(150)\sin 110^\circ = 15000\sin 110^\circ$$
+$$\mathrm{Area\ of\ {} \triangle ABC = \frac{1}{2}(AB)(BC)\sin\angle ABC = \frac{1}{2}(200)(150)\sin 110^\circ = 15000\sin 110^\circ$$
 
 $$= 15000\cos 20^\circ \approx 15000(0.9397) \approx 14095.5$$
 
-Also $\mathrm{'\{'}Area{'\}'} = \dfrac{1}{2}(AB)(h) = 100h$.
+Also $\mathrm{Area{} = \dfrac{1}{2}(AB)(h) = 100h$.
 
 $$h = \frac{14095.5}{100} \approx 141 \text{'\{'} m{'\}'}$$
 

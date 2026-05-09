@@ -76,7 +76,7 @@ $n \equiv 17 \pmod{35}$. $\blacksquare$
 **Theorem 1.3.** Let $a, b \in \mathbb{'\{'}Z{'\}'}$, not both zero. The greatest common divisor of $a$ and $b$
 exists and is unique.
 
-_Proof._ The set $D = \\{d \in \mathbb{'\{'}N{'\}'} : d \mid a \mathrm{'\{'}\ and\ {'\}'} d \mid b\\}"$ is non-empty since
+_Proof._ The set $D = \\{d \in \mathbb{'\{'}N{'\}'} : d \mid a \mathrm{\ and\ {} d \mid b\\}"$ is non-empty since
 $|a| \in D$ (if $a \neq 0$) or $|b| \in D$ (if $b \neq 0$). By the well-ordering principle, $D$ has
 a least element $g$. We claim $g = \gcd(a, b)$. By definition $g \mid a$ and $g \mid b$. If $c \mid a$
 and $c \mid b$, then $c \leq |c| \leq g$ (since $g$ is the least positive common divisor). For
@@ -86,27 +86,27 @@ so $g_1 = g_2$ (since both are positive). $\blacksquare$
 ### 1.5 Least Common Multiple
 
 **Definition.** The **least common multiple** of positive integers $a$ and $b$, written
-$\mathrm{'\{'}lcm{'\}'}(a, b)$, is the smallest positive integer $m$ such that $a \mid m$ and $b \mid m$.
+$\mathrm{lcm{}(a, b)$, is the smallest positive integer $m$ such that $a \mid m$ and $b \mid m$.
 
 **Theorem 1.4 (GCD--LCM Identity).** For all positive integers $a$ and $b$,
 
-$$\gcd(a, b) \cdot \mathrm{'\{'}lcm{'\}'}(a, b) = ab$$
+$$\gcd(a, b) \cdot \mathrm{lcm{}(a, b) = ab$$
 
 _Proof._ Write $a = \prod_{i=1}^k p_i^{\alpha_i}$ and $b = \prod_{i=1}^k p_i^{\beta_i}$ where
 $\alpha_i, \beta_i \geq 0$. Then $\gcd(a, b) = \prod_{i=1}^k p_i^{\min(\alpha_i, \beta_i)}$ and
-$\mathrm{'\{'}lcm{'\}'}(a, b) = \prod_{i=1}^k p_i^{\max(\alpha_i, \beta_i)}$. Since
+$\mathrm{lcm{}(a, b) = \prod_{i=1}^k p_i^{\max(\alpha_i, \beta_i)}$. Since
 $\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i) = \alpha_i + \beta_i$ for each $i$, we have
 
-$$\gcd(a,b) \cdot \mathrm{'\{'}lcm{'\}'}(a,b) = \prod_{i=1}^k p_i^{\alpha_i + \beta_i} = ab \qquad \blacksquare$$
+$$\gcd(a,b) \cdot \mathrm{lcm{}(a,b) = \prod_{i=1}^k p_i^{\alpha_i + \beta_i} = ab \qquad \blacksquare$$
 
 **Proposition 1.5.** For all positive integers $a, b$:
 
-1. $\mathrm{'\{'}lcm{'\}'}(a, b) = ab / \gcd(a, b)$.
-2. $\gcd(a, \mathrm{'\{'}lcm{'\}'}(b, c)) = \mathrm{'\{'}lcm{'\}'}(\gcd(a, b), \gcd(a, c))$.
+1. $\mathrm{lcm{}(a, b) = ab / \gcd(a, b)$.
+2. $\gcd(a, \mathrm{lcm{}(b, c)) = \mathrm{lcm{}(\gcd(a, b), \gcd(a, c))$.
 
 ### 1.6 Worked Example: LCM Computation
 
-**Problem.** Compute $\mathrm{'\{'}lcm{'\}'}(252, 105)$ and verify the gcd--lcm identity.
+**Problem.** Compute $\mathrm{lcm{}(252, 105)$ and verify the gcd--lcm identity.
 
 <details>
 <summary>Solution</summary>
@@ -114,7 +114,7 @@ $$\gcd(a,b) \cdot \mathrm{'\{'}lcm{'\}'}(a,b) = \prod_{i=1}^k p_i^{\alpha_i + \b
 First, $\gcd(252, 105)$. Using the Euclidean algorithm:
 $252 = 2 \cdot 105 + 42$, $105 = 2 \cdot 42 + 21$, $42 = 2 \cdot 21 + 0$. So $\gcd(252, 105) = 21$.
 
-By the identity: $\mathrm{'\{'}lcm{'\}'}(252, 105) = 252 \cdot 105 / 21 = 252 \cdot 5 = 1260$.
+By the identity: $\mathrm{lcm{}(252, 105) = 252 \cdot 105 / 21 = 252 \cdot 5 = 1260$.
 
 Verification: $1260 / 252 = 5$ and $1260 / 105 = 12$, both integers. $\blacksquare$
 
@@ -428,7 +428,7 @@ So $14(-7) \equiv 1 \pmod{33}$, giving $x \equiv -42 \equiv 24 \pmod{33}$. $\bla
 
 1. $a \equiv b \pmod{m}$ if and only if $a$ and $b$ leave the same remainder when divided by $m$.
 2. If $a \equiv b \pmod{m}$ and $d \mid m$, then $a \equiv b \pmod{d}$.
-3. If $a \equiv b \pmod{m_i}$ for $i = 1, \ldots, k$, then $a \equiv b \pmod{\mathrm{'\{'}lcm{'\}'}(m_1, \ldots, m_k)}$.
+3. If $a \equiv b \pmod{m_i}$ for $i = 1, \ldots, k$, then $a \equiv b \pmod{\mathrm{lcm{}(m_1, \ldots, m_k)}$.
 
 _Proof of (1)._ Write $a = mq_1 + r_1$ and $b = mq_2 + r_2$ with $0 \leq r_1, r_2 \lt{} m$.
 Then $a - b = m(q_1 - q_2) + (r_1 - r_2)$. So $m \mid (a - b)$ iff $m \mid (r_1 - r_2)$, which
@@ -436,8 +436,8 @@ happens iff $r_1 = r_2$ (since $|r_1 - r_2| \lt{} m$). $\blacksquare$
 
 _Proof of (2)._ $m \mid (a - b)$ and $d \mid m$, so $d \mid (a - b)$. $\blacksquare$
 
-_Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$, so $\mathrm{'\{'}lcm{'\}'}(m_1, \ldots, m_k) \mid (a-b)$
-by definition of the lcm. Hence $a \equiv b \pmod{\mathrm{'\{'}lcm{'\}'}(m_1, \ldots, m_k)}$. $\blacksquare$
+_Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$, so $\mathrm{lcm{}(m_1, \ldots, m_k) \mid (a-b)$
+by definition of the lcm. Hence $a \equiv b \pmod{\mathrm{lcm{}(m_1, \ldots, m_k)}$. $\blacksquare$
 
 **Proposition 4.6.** If $a \equiv b \pmod{m}$ and $f(x) = c_k x^k + \cdots + c_1 x + c_0$ is a
 polynomial with integer coefficients, then $f(a) \equiv f(b) \pmod{m}$.
@@ -578,7 +578,7 @@ The CRT can be extended to systems where the moduli are not necessarily pairwise
 
 **Theorem 5.2 (General CRT).** The system $x \equiv a_i \pmod{m_i}$ for $i = 1, \ldots, k$ has a
 solution if and only if $a_i \equiv a_j \pmod{\gcd(m_i, m_j)}$ for all $i, j$. When a solution
-exists, it is unique modulo $\mathrm{'\{'}lcm{'\}'}(m_1, \ldots, m_k)$.
+exists, it is unique modulo $\mathrm{lcm{}(m_1, \ldots, m_k)$.
 
 _Proof._ ($\Rightarrow$) If $x \equiv a_i \pmod{m_i}$ and $x \equiv a_j \pmod{m_j}$, then
 $m_i \mid (x - a_i)$ and $m_j \mid (x - a_j)$. Any common divisor of $m_i$ and $m_j$ divides
@@ -603,7 +603,7 @@ $6k \equiv 2 \pmod{10}$. Dividing by $\gcd(6, 10) = 2$: $3k \equiv 1 \pmod{5}$, 
 $k \equiv 2 \pmod{5}$.
 
 So $k = 5m + 2$, and $x = 6(5m + 2) + 3 = 30m + 15$. The solution is $x \equiv 15 \pmod{30}$.
-Note $\mathrm{'\{'}lcm{'\}'}(6, 10) = 30$. $\blacksquare$
+Note $\mathrm{lcm{}(6, 10) = 30$. $\blacksquare$
 
 </details>
 
@@ -804,17 +804,17 @@ So $c = 2790$. Decrypt: $m = 2790^{2753} \bmod 3233$. (By the correctness proof,
 ### 7.1 The Multiplicative Order
 
 **Definition.** The **multiplicative order** of $a$ modulo $n$ (where $\gcd(a, n) = 1$) is the
-smallest positive integer $k$ such that $a^k \equiv 1 \pmod{n}$. We write $\mathrm{'\{'}ord{'\}'}_n(a) = k$.
+smallest positive integer $k$ such that $a^k \equiv 1 \pmod{n}$. We write $\mathrm{ord{}_n(a) = k$.
 
-**Proposition 7.1.** $\mathrm{'\{'}ord{'\}'}_n(a)$ divides $\phi(n)$.
+**Proposition 7.1.** $\mathrm{ord{}_n(a)$ divides $\phi(n)$.
 
-**Proposition 7.2.** $a^k \equiv 1 \pmod{n}$ if and only if $\mathrm{'\{'}ord{'\}'}_n(a) \mid k$.
+**Proposition 7.2.** $a^k \equiv 1 \pmod{n}$ if and only if $\mathrm{ord{}_n(a) \mid k$.
 
-**Proposition 7.3.** If $\mathrm{'\{'}ord{'\}'}_n(a) = k$, then $\mathrm{'\{'}ord{'\}'}_n(a^m) = k / \gcd(k, m)$.
+**Proposition 7.3.** If $\mathrm{ord{}_n(a) = k$, then $\mathrm{ord{}_n(a^m) = k / \gcd(k, m)$.
 
 ### 7.2 Primitive Roots
 
-**Definition.** $g$ is a **primitive root modulo $n$** if $\mathrm{'\{'}ord{'\}'}_n(g) = \phi(n)$, i.e., $g$
+**Definition.** $g$ is a **primitive root modulo $n$** if $\mathrm{ord{}_n(g) = \phi(n)$, i.e., $g$
 generates the multiplicative group $(\mathbb{'\{'}Z{'\}'}/n\mathbb{'\{'}Z{'\}'})^*$.
 
 **Theorem 7.4.** A primitive root modulo $n$ exists if and only if $n = 2$, $n = 4$, $n = p^k$, or
@@ -856,10 +856,10 @@ $g^{(p-1)/q} \not\equiv 1 \pmod{p}$ for every prime divisor $q$ of $p - 1$.
 **Proposition 7.7.** Let $p$ be prime and $g \in (\mathbb{'\{'}Z{'\}'}/p\mathbb{'\{'}Z{'\}'})^*$. Then $g$ is a primitive
 root modulo $p$ if and only if for every prime $q \mid (p - 1)$, $g^{(p-1)/q} \not\equiv 1 \pmod{p}$.
 
-_Proof._ If $g$ is a primitive root, $\mathrm{'\{'}ord{'\}'}_p(g) = p - 1$. If $g^{(p-1)/q} \equiv 1 \pmod{p}$
-for some prime $q \mid (p-1)$, then $\mathrm{'\{'}ord{'\}'}_p(g) \mid (p-1)/q \lt{} p-1$, contradiction.
+_Proof._ If $g$ is a primitive root, $\mathrm{ord{}_p(g) = p - 1$. If $g^{(p-1)/q} \equiv 1 \pmod{p}$
+for some prime $q \mid (p-1)$, then $\mathrm{ord{}_p(g) \mid (p-1)/q \lt{} p-1$, contradiction.
 
-Conversely, if $g$ is not a primitive root, let $d = \mathrm{'\{'}ord{'\}'}_p(g) \lt{} p - 1$. Then $d \mid (p-1)$,
+Conversely, if $g$ is not a primitive root, let $d = \mathrm{ord{}_p(g) \lt{} p - 1$. Then $d \mid (p-1)$,
 so $(p-1)/d > 1$ has some prime factor $q$, meaning $q \mid (p-1)$ and $d \mid (p-1)/q$. Then
 $g^{(p-1)/q} \equiv 1 \pmod{p}$, contradicting the hypothesis. $\blacksquare$
 
@@ -891,14 +891,14 @@ By Theorem 7.5, there are $\phi(12) = 4$ primitive roots modulo $13$: $2, 6, 7, 
 
 When a primitive root $g$ modulo $p$ is known, every element $a$ of $(\mathbb{'\{'}Z{'\}'}/p\mathbb{'\{'}Z{'\}'})^*$
 can be written uniquely as $a \equiv g^k \pmod{p}$ with $0 \leq k \lt{} p - 1$. The exponent $k$
-is called the **index** (or **discrete logarithm**) of $a$ to base $g$, written $\mathrm{'\{'}ind{'\}'}_g(a) = k$.
+is called the **index** (or **discrete logarithm**) of $a$ to base $g$, written $\mathrm{ind{}_g(a) = k$.
 
 **Proposition 7.8 (Properties of indices).** Let $g$ be a primitive root modulo $p$. For all
 $a, b \in (\mathbb{'\{'}Z{'\}'}/p\mathbb{'\{'}Z{'\}'})^*$:
 
-1. $\mathrm{'\{'}ind{'\}'}_g(ab) \equiv \mathrm{'\{'}ind{'\}'}_g(a) + \mathrm{'\{'}ind{'\}'}_g(b) \pmod{p-1}$.
-2. $\mathrm{'\{'}ind{'\}'}_g(a^k) \equiv k \cdot \mathrm{'\{'}ind{'\}'}_g(a) \pmod{p-1}$.
-3. $\mathrm{'\{'}ind{'\}'}_g(1) = 0$ and $\mathrm{'\{'}ind{'\}'}_g(g) = 1$.
+1. $\mathrm{ind{}_g(ab) \equiv \mathrm{ind{}_g(a) + \mathrm{ind{}_g(b) \pmod{p-1}$.
+2. $\mathrm{ind{}_g(a^k) \equiv k \cdot \mathrm{ind{}_g(a) \pmod{p-1}$.
+3. $\mathrm{ind{}_g(1) = 0$ and $\mathrm{ind{}_g(g) = 1$.
 
 ### 7.6 The Discrete Logarithm Problem
 
@@ -916,7 +916,7 @@ without solving the DLP.
 
 ### 7.7 Worked Example: Index Calculus
 
-**Problem.** Let $g = 2$ be a primitive root modulo $19$. Find $\mathrm{'\{'}ind{'\}'}_2(14) \pmod{19}$.
+**Problem.** Let $g = 2$ be a primitive root modulo $19$. Find $\mathrm{ind{}_2(14) \pmod{19}$.
 
 <details>
 <summary>Solution</summary>
@@ -932,7 +932,7 @@ $2^{10} \equiv -2 \equiv 17$, $2^{11} \equiv -4 \equiv 15$, $2^{12} \equiv -8 \e
 $2^{13} \equiv -16 \equiv 3$, $2^{14} = 6$, $2^{15} = 12$, $2^{16} = 24 \equiv 5$,
 $2^{17} = 10$, $2^{18} = 20 \equiv 1$.
 
-From $2^7 = 14 \pmod{19}$, we get $\mathrm{'\{'}ind{'\}'}_2(14) = 7$. $\blacksquare$
+From $2^7 = 14 \pmod{19}$, we get $\mathrm{ind{}_2(14) = 7$. $\blacksquare$
 
 </details>
 
@@ -941,10 +941,10 @@ From $2^7 = 14 \pmod{19}$, we get $\mathrm{'\{'}ind{'\}'}_2(14) = 7$. $\blacksqu
 <details>
 <summary>Solution</summary>
 
-Taking indices base $2$: $\mathrm{'\{'}ind{'\}'}_2(6^x) = \mathrm{'\{'}ind{'\}'}_2(11)$.
-$x \cdot \mathrm{'\{'}ind{'\}'}_2(6) \equiv \mathrm{'\{'}ind{'\}'}_2(11) \pmod{18}$.
+Taking indices base $2$: $\mathrm{ind{}_2(6^x) = \mathrm{ind{}_2(11)$.
+$x \cdot \mathrm{ind{}_2(6) \equiv \mathrm{ind{}_2(11) \pmod{18}$.
 
-From the table: $\mathrm{'\{'}ind{'\}'}_2(6) = 14$ and $\mathrm{'\{'}ind{'\}'}_2(11) = 12$.
+From the table: $\mathrm{ind{}_2(6) = 14$ and $\mathrm{ind{}_2(11) = 12$.
 So $14x \equiv 12 \pmod{18}$.
 
 $\gcd(14, 18) = 2$ and $2 \mid 12$, so solutions exist. Divide by $2$: $7x \equiv 6 \pmod{9}$.
@@ -975,7 +975,7 @@ $x \not\equiv 0 \pmod{p}$ (since $p$ is odd). $\blacksquare$
 
 **Theorem 8.2 (Euler's Criterion).** Let $p$ be an odd prime and $\gcd(a, p) = 1$. Then
 
-$$a^{(p-1)/2} \equiv \begin{cases} 1 \pmod{p} & \mathrm{'\{'}if\ {'\}'} a \mathrm{'\{'}\ is\ a\ QR\ mod\ {'\}'} p \\ -1 \pmod{p} & \mathrm{'\{'}if\ {'\}'} a \mathrm{'\{'}\ is\ a\ QNR\ mod\ {'\}'} p \end{cases}$$
+$$a^{(p-1)/2} \equiv \begin{cases} 1 \pmod{p} & \mathrm{if\ {} a \mathrm{\ is\ a\ QR\ mod\ {} p \\ -1 \pmod{p} & \mathrm{if\ {} a \mathrm{\ is\ a\ QNR\ mod\ {} p \end{cases}$$
 
 _Proof._ By Fermat's little theorem, $a^{p-1} \equiv 1 \pmod{p}$, so
 $(a^{(p-1)/2} - 1)(a^{(p-1)/2} + 1) \equiv 0 \pmod{p}$. Thus $a^{(p-1)/2} \equiv \pm 1 \pmod{p}$.
@@ -991,7 +991,7 @@ $a^{(p-1)/2} \equiv 1 \pmod{p}$, these sets coincide. $\blacksquare$
 
 **Definition.** The **Legendre symbol** is defined by
 
-$$\left(\frac{a}{p}\right) = \begin{cases} 0 & \mathrm{'\{'}if\ {'\}'} p \mid a \\ 1 & \mathrm{'\{'}if\ {'\}'} a \mathrm{'\{'}\ is\ a\ QR\ mod\ {'\}'} p \\ -1 & \mathrm{'\{'}if\ {'\}'} a \mathrm{'\{'}\ is\ a\ QNR\ mod\ {'\}'} p \end{cases}$$
+$$\left(\frac{a}{p}\right) = \begin{cases} 0 & \mathrm{if\ {} p \mid a \\ 1 & \mathrm{if\ {} a \mathrm{\ is\ a\ QR\ mod\ {} p \\ -1 & \mathrm{if\ {} a \mathrm{\ is\ a\ QNR\ mod\ {} p \end{cases}$$
 
 **Proposition 8.3.** The Legendre symbol is completely multiplicative:
 $\left(\frac{ab}{p}\right) = \left(\frac{a}{p}\right)\left(\frac{b}{p}\right)$.
@@ -1396,7 +1396,7 @@ Fermat's last theorem for $n = 4$).
 ### 10.5 The Generalized Riemann Hypothesis
 
 **Conjecture (Generalized Riemann Hypothesis).** All non-trivial zeros of the Dirichlet $L$-function
-$L(s, \chi)$ for any Dirichlet character $\chi$ lie on the line $\mathrm{'\{'}Re{'\}'}(s) = 1/2$.
+$L(s, \chi)$ for any Dirichlet character $\chi$ lie on the line $\mathrm{Re{}(s) = 1/2$.
 
 This is one of the most important open problems in mathematics. It has profound implications for the
 distribution of primes in arithmetic progressions and the error terms in various number-theoretic
@@ -1790,7 +1790,7 @@ $a^{\lambda(n)} \equiv 1 \pmod{n}$ for all $a$ with $\gcd(a, n) = 1$.
 
 For $n = p_1^{a_1} \cdots p_k^{a_k}$:
 
-$$\lambda(n) = \mathrm{'\{'}lcm{'\}'}\!\left(\lambda(p_1^{a_1}), \ldots, \lambda(p_k^{a_k})\right)$$
+$$\lambda(n) = \mathrm{lcm{}\!\left(\lambda(p_1^{a_1}), \ldots, \lambda(p_k^{a_k})\right)$$
 
 where $\lambda(2) = 1$, $\lambda(4) = 2$, $\lambda(2^k) = 2^{k-2}$ for $k \geq 3$, and
 $\lambda(p^k) = (p-1)p^{k-1}$ for odd primes $p$.
@@ -1809,7 +1809,7 @@ $a^{n-1} \equiv 1 \pmod{n}$ for all $\gcd(a, n) = 1$) if and only if:
 1. $n$ is squarefree, and
 2. for every prime $p \mid n$, $(p - 1) \mid (n - 1)$.
 
-_Proof._ If $n$ is squarefree with $n = p_1 \cdots p_k$, then $\lambda(n) = \mathrm{'\{'}lcm{'\}'}(p_1 - 1, \ldots, p_k - 1)$.
+_Proof._ If $n$ is squarefree with $n = p_1 \cdots p_k$, then $\lambda(n) = \mathrm{lcm{}(p_1 - 1, \ldots, p_k - 1)$.
 We need $\lambda(n) \mid (n - 1)$, which is equivalent to each $(p_i - 1) \mid (n - 1)$.
 $\blacksquare$
 
@@ -1873,7 +1873,7 @@ Polymath project.
 
 **Theorem 14.1a (Brun, 1919).** The sum of the reciprocals of the twin primes converges:
 
-$$\sum_{\substack{p \mathrm{'\{'}\ prime{'\}'} \\ p+2 \mathrm{'\{'}\ prime{'\}'}}} \left(\frac{1}{p} + \frac{1}{p+2}\right) \lt{} \infty$$
+$$\sum_{\substack{p \mathrm{\ prime{} \\ p+2 \mathrm{\ prime{}}} \left(\frac{1}{p} + \frac{1}{p+2}\right) \lt{} \infty$$
 
 This is known as **Brun's theorem**. It establishes that the twin primes form a "thin" set,
 in contrast to the full set of primes (whose reciprocal sum diverges by Euler).
@@ -1958,9 +1958,9 @@ Since $L_3 \equiv 0 \pmod{31}$, $M_5 = 31$ is prime. $\blacksquare$
 **Conjecture (Masser--Oesterlé, 1985).** For every $\varepsilon > 0$, there exists $K_\varepsilon > 0$
 such that for all coprime positive integers $a, b, c$ with $a + b = c$:
 
-$$c \lt{} K_\varepsilon \cdot \mathrm{'\{'}rad{'\}'}(abc)^{1 + \varepsilon}$$
+$$c \lt{} K_\varepsilon \cdot \mathrm{rad{}(abc)^{1 + \varepsilon}$$
 
-where $\mathrm{'\{'}rad{'\}'}(n) = \prod_{p \mid n} p$ is the **radical** of $n$ (the product of distinct prime
+where $\mathrm{rad{}(n) = \prod_{p \mid n} p$ is the **radical** of $n$ (the product of distinct prime
 factors).
 
 The abc conjecture is one of the most important open problems in number theory. It implies:
@@ -1974,7 +1974,7 @@ The abc conjecture is one of the most important open problems in number theory. 
 
 **Conjecture (Collatz, 1937).** Define $T \colon \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}N{'\}'}$ by
 
-$$T(n) = \begin{cases} n/2 & n \mathrm{'\{'}\ even{'\}'} \\ 3n + 1 & n \mathrm{'\{'}\ odd{'\}'} \end{cases}$$
+$$T(n) = \begin{cases} n/2 & n \mathrm{\ even{} \\ 3n + 1 & n \mathrm{\ odd{} \end{cases}$$
 
 For every positive integer $n$, the sequence $n, T(n), T(T(n)), \ldots$ eventually reaches $1$.
 
@@ -2095,8 +2095,8 @@ _If you get this wrong, revise:_ Section 1.1.
 
 ### Problem 2 (GCD and LCM)
 
-Compute $\gcd(1071, 462)$ and $\mathrm{'\{'}lcm{'\}'}(1071, 462)$. Verify the identity
-$\gcd(a, b) \cdot \mathrm{'\{'}lcm{'\}'}(a, b) = ab$.
+Compute $\gcd(1071, 462)$ and $\mathrm{lcm{}(1071, 462)$. Verify the identity
+$\gcd(a, b) \cdot \mathrm{lcm{}(a, b) = ab$.
 
 <details>
 <summary>Solution</summary>
@@ -2104,7 +2104,7 @@ $\gcd(a, b) \cdot \mathrm{'\{'}lcm{'\}'}(a, b) = ab$.
 $1071 = 2 \cdot 462 + 147$, $462 = 3 \cdot 147 + 21$, $147 = 7 \cdot 21 + 0$.
 So $\gcd(1071, 462) = 21$.
 
-$\mathrm{'\{'}lcm{'\}'}(1071, 462) = 1071 \cdot 462 / 21 = 1071 \cdot 22 = 23562$.
+$\mathrm{lcm{}(1071, 462) = 1071 \cdot 462 / 21 = 1071 \cdot 22 = 23562$.
 
 Check: $21 \cdot 23562 = 494802 = 1071 \cdot 462$. $\blacksquare$
 
@@ -2344,14 +2344,14 @@ Find the multiplicative order of $2$ modulo $11$.
 <details>
 <summary>Solution</summary>
 
-$\phi(11) = 10$, so $\mathrm{'\{'}ord{'\}'}_{11}(2) \mid 10$. The divisors of $10$ are $1, 2, 5, 10$.
+$\phi(11) = 10$, so $\mathrm{ord{}_{11}(2) \mid 10$. The divisors of $10$ are $1, 2, 5, 10$.
 
 $2^1 = 2 \not\equiv 1 \pmod{11}$.
 $2^2 = 4 \not\equiv 1 \pmod{11}$.
 $2^5 = 32 \equiv 10 \equiv -1 \not\equiv 1 \pmod{11}$.
 $2^{10} \equiv 1 \pmod{11}$ by Fermat.
 
-So $\mathrm{'\{'}ord{'\}'}_{11}(2) = 10$, meaning $2$ is a primitive root modulo $11$. $\blacksquare$
+So $\mathrm{ord{}_{11}(2) = 10$, meaning $2$ is a primitive root modulo $11$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 7.1.
 
@@ -2463,12 +2463,12 @@ Let $f(n) = \sum_{d \mid n} \sigma(d)$. Find a closed-form expression for $f(n)$
 <details>
 <summary>Solution</summary>
 
-We have $f = \sigma * \mathbf{'\{'}1{'\}'}$. We know $\sigma = \mathrm{'\{'}id{'\}'} * \mathbf{'\{'}1{'\}'}$ where $\mathrm{'\{'}id{'\}'}(n) = n$.
-So $f = (\mathrm{'\{'}id{'\}'} * \mathbf{'\{'}1{'\}'}) * \mathbf{'\{'}1{'\}'} = \mathrm{'\{'}id{'\}'} * (\mathbf{'\{'}1{'\}'} * \mathbf{'\{'}1{'\}'})$.
+We have $f = \sigma * \mathbf{'\{'}1{'\}'}$. We know $\sigma = \mathrm{id{} * \mathbf{'\{'}1{'\}'}$ where $\mathrm{id{}(n) = n$.
+So $f = (\mathrm{id{} * \mathbf{'\{'}1{'\}'}) * \mathbf{'\{'}1{'\}'} = \mathrm{id{} * (\mathbf{'\{'}1{'\}'} * \mathbf{'\{'}1{'\}'})$.
 
 Now $(\mathbf{'\{'}1{'\}'} * \mathbf{'\{'}1{'\}'})(n) = \sum_{d \mid n} 1 \cdot 1 = \tau(n)$.
 
-So $f(n) = \sum_{d \mid n} d \cdot \tau(n/d)$. This is the Dirichlet convolution $\mathrm{'\{'}id{'\}'} * \tau$.
+So $f(n) = \sum_{d \mid n} d \cdot \tau(n/d)$. This is the Dirichlet convolution $\mathrm{id{} * \tau$.
 
 For example, $f(6) = \sigma(1) + \sigma(2) + \sigma(3) + \sigma(6) = 1 + 3 + 4 + 12 = 20$.
 Check: $\sum_{d \mid 6} d \cdot \tau(6/d) = 1 \cdot \tau(6) + 2 \cdot \tau(3) + 3 \cdot \tau(2) + 6 \cdot \tau(1) = 1 \cdot 4 + 2 \cdot 2 + 3 \cdot 2 + 6 \cdot 1 = 4 + 4 + 6 + 6 = 20$. $\blacksquare$

@@ -76,7 +76,7 @@ When $f$ is differentiable at $\mathbf{'\{'}a{'\}'}$, the linear map $L$ is give
 _Remark._ Existence of all partial derivatives at a point does **not** imply differentiability at
 that point. The canonical counterexample is
 
-$$f(x,y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & \mathrm{'\{'}if{'\}'}\ (x,y) \neq (0,0), \\ 0 & \mathrm{'\{'}if{'\}'}\ (x,y) = (0,0). \end{cases}$$
+$$f(x,y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & \mathrm{if{}\ (x,y) \neq (0,0), \\ 0 & \mathrm{if{}\ (x,y) = (0,0). \end{cases}$$
 
 Both $f_x(0,0)$ and $f_y(0,0)$ exist (and equal $0$), yet $f$ is not even continuous at the origin,
 hence not differentiable.
@@ -752,9 +752,9 @@ $$\nabla \cdot \mathbf{'\{'}F{'\}'} = \frac{\partial P}{\partial x} + \frac{\par
 
 **Proposition 3.5.** For any $C^2$ vector field $\mathbf{'\{'}F{'\}'}$:
 
-$$\nabla \cdot (\nabla \times \mathbf{'\{'}F{'\}'}) = 0 \quad \mathrm{'\{'}(div\ of\ curl\ is\ zero){'\}'}$$
+$$\nabla \cdot (\nabla \times \mathbf{'\{'}F{'\}'}) = 0 \quad \mathrm{(div\ of\ curl\ is\ zero){}$$
 
-$$\nabla \times (\nabla \phi) = \mathbf{'\{'}0{'\}'} \quad \mathrm{'\{'}(curl\ of\ gradient\ is\ zero){'\}'}$$
+$$\nabla \times (\nabla \phi) = \mathbf{'\{'}0{'\}'} \quad \mathrm{(curl\ of\ gradient\ is\ zero){}$$
 
 *Proof.* Both follow from Clairaut's theorem on equality of mixed partials. For the first:
 
@@ -976,13 +976,13 @@ circulation around a curve to the curl through the surface it bounds. The diverg
 the flux through a closed surface to the divergence inside the volume it encloses. Together, these
 form the higher-dimensional analogues of the Fundamental Theorem of Calculus:
 
-$$\int_a^b f'(x)\, dx = f(b) - f(a) \quad \mathrm{'\{'}(FTC){'\}'}$$
+$$\int_a^b f'(x)\, dx = f(b) - f(a) \quad \mathrm{(FTC){}$$
 
-$$\int_C \nabla \phi \cdot d\mathbf{'\{'}r{'\}'} = \phi(B) - \phi(A) \quad \mathrm{'\{'}(FTLI){'\}'}$$
+$$\int_C \nabla \phi \cdot d\mathbf{'\{'}r{'\}'} = \phi(B) - \phi(A) \quad \mathrm{(FTLI){}$$
 
-$$\oint_C \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}r{'\}'} = \iint_S (\nabla \times \mathbf{'\{'}F{'\}'}) \cdot d\mathbf{'\{'}S{'\}'} \quad \mathrm{'\{'}(Stokes){'\}'}$$
+$$\oint_C \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}r{'\}'} = \iint_S (\nabla \times \mathbf{'\{'}F{'\}'}) \cdot d\mathbf{'\{'}S{'\}'} \quad \mathrm{(Stokes){}$$
 
-$$\iint_S \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}S{'\}'} = \iiint_E (\nabla \cdot \mathbf{'\{'}F{'\}'})\, dV \quad \mathrm{'\{'}(Divergence){'\}'}$$
+$$\iint_S \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}S{'\}'} = \iiint_E (\nabla \cdot \mathbf{'\{'}F{'\}'})\, dV \quad \mathrm{(Divergence){}$$
 
 In each case, the integral of a "derivative" over a region equals the integral of the original function
 over the boundary of that region. This is the **generalised Stokes' theorem**:
@@ -1431,7 +1431,7 @@ upward orientation.
 Use the divergence theorem on the closed hemisphere plus the disk at $z = 0$.
 Let $E$ be the solid hemisphere. Then:
 
-$$\iint_{\mathrm{'\{'}closed{'\}'}\ S} \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}S{'\}'} = \iiint_E \nabla \cdot \mathbf{'\{'}F{'\}'}\, dV = \iiint_E (1 + 1 + 2z)\, dV$$
+$$\iint_{\mathrm{closed{}\ S} \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}S{'\}'} = \iiint_E \nabla \cdot \mathbf{'\{'}F{'\}'}\, dV = \iiint_E (1 + 1 + 2z)\, dV$$
 
 $$= 2V + 2\iiint_E z\, dV$$
 
@@ -1444,7 +1444,7 @@ $$\iiint_E z\, dV = \bar{z} \cdot V = \frac{3}{4} \cdot \frac{16\pi}{3} = 4\pi$$
 $$= 2 \cdot \frac{16\pi}{3} + 2 \cdot 4\pi = \frac{32\pi}{3} + 8\pi = \frac{56\pi}{3}$$
 
 The flux through the disk $z = 0$, $x^2 + y^2 \leq 4$ (with downward normal $-\mathbf{'\{'}k{'\}'}$):
-$\iint_{\mathrm{'\{'}disk{'\}'}} \mathbf{'\{'}F{'\}'} \cdot (-\mathbf{'\{'}k{'\}'})\, dS = \iint_{\mathrm{'\{'}disk{'\}'}} 0\, dS = 0$.
+$\iint_{\mathrm{disk{}} \mathbf{'\{'}F{'\}'} \cdot (-\mathbf{'\{'}k{'\}'})\, dS = \iint_{\mathrm{disk{}} 0\, dS = 0$.
 
 So the flux through the hemisphere alone is $\frac{56\pi}{3}$. $\blacksquare$
 

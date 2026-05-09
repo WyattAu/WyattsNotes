@@ -169,21 +169,21 @@ potential expansion of the money supply from an initial deposit.
 
 **Formula:**
 
-$$\mathrm{'\{'}Money Multiplier{'\}'} = \frac{1}{\mathrm{'\{'}Required Reserve Ratio (rrr){'\}'}}$$
+$$\mathrm{Money Multiplier{} = \frac{1}{\mathrm{Required Reserve Ratio (rrr){}}$$
 
 Or equivalently:
 
-$$\mathrm{'\{'}Maximum increase in deposits{'\}'} = \frac{\mathrm{'\{'}Initial deposit{'\}'}}{\mathrm{'\{'}Required reserve ratio{'\}'}}$$
+$$\mathrm{Maximum increase in deposits{} = \frac{\mathrm{Initial deposit{}}{\mathrm{Required reserve ratio{}}$$
 
 **Example:**
 
 If the required reserve ratio is 10% (rrr = 0.1):
 
-$$\mathrm{'\{'}Money multiplier{'\}'} = \frac{1}{0.1} = 10$$
+$$\mathrm{Money multiplier{} = \frac{1}{0.1} = 10$$
 
 An initial deposit of HKD 1,000 can potentially create:
 
-$$\mathrm{'\{'}Maximum deposits{'\}'} = \frac{1,000}{0.1} = 10,000$$
+$$\mathrm{Maximum deposits{} = \frac{1,000}{0.1} = 10,000$$
 
 **Step-by-step process:**
 
@@ -253,7 +253,7 @@ Different measures of the money supply include different components:
 
 **M1 (Narrow Money):**
 
-$$M1 = \mathrm{'\{'}Currency in circulation{'\}'} + \mathrm{'\{'}Demand deposits{'\}'}$$
+$$M1 = \mathrm{Currency in circulation{} + \mathrm{Demand deposits{}$$
 
 - Currency in circulation: banknotes and coins held by the public
 - Demand deposits: current account balances that can be withdrawn on demand
@@ -261,7 +261,7 @@ $$M1 = \mathrm{'\{'}Currency in circulation{'\}'} + \mathrm{'\{'}Demand deposits
 
 **M2 (Broad Money):**
 
-$$M2 = M1 + \mathrm{'\{'}Savings deposits{'\}'} + \mathrm{'\{'}Time deposits{'\}'}$$
+$$M2 = M1 + \mathrm{Savings deposits{} + \mathrm{Time deposits{}$$
 
 - Includes M1 plus less liquid deposits (savings accounts, fixed deposits)
 - Savings and time deposits cannot be withdrawn on demand without penalty (less liquid)
@@ -342,9 +342,9 @@ reserves (not lend out).
 
 **Example:** If the reserve ratio is raised from 10% to 20%:
 
-$$m_{\mathrm{'\{'}old{'\}'}} = \frac{1}{0.1} = 10$$
+$$m_{\mathrm{old{}} = \frac{1}{0.1} = 10$$
 
-$$m_{\mathrm{'\{'}new{'\}'}} = \frac{1}{0.2} = 5$$
+$$m_{\mathrm{new{}} = \frac{1}{0.2} = 5$$
 
 The money multiplier falls from 10 to 5, significantly reducing the potential for credit creation.
 
@@ -460,7 +460,7 @@ borrowed amount) that must be paid as interest per period (usually per year).
 
 **Real interest rate:** The nominal interest rate adjusted for inflation.
 
-$$\mathrm{'\{'}Real interest rate{'\}'} \approx \mathrm{'\{'}Nominal interest rate{'\}'} - \mathrm{'\{'}Inflation rate{'\}'}$$
+$$\mathrm{Real interest rate{} \approx \mathrm{Nominal interest rate{} - \mathrm{Inflation rate{}$$
 
 More precisely (Fisher equation):
 
@@ -881,7 +881,7 @@ $$r = -0.01905 = -1.905\%$$
 (c) The saver has LOST purchasing power. Although the nominal amount increased by HKD 3,000, the
 purchasing power of HKD 103,000 after inflation is:
 
-$$\mathrm{'\{'}Real value{'\}'} = \frac{103,000}{1.05} = 98,095.24$$
+$$\mathrm{Real value{} = \frac{103,000}{1.05} = 98,095.24$$
 
 The saver's real purchasing power has fallen from HKD 100,000 to approximately HKD 98,095 -- a loss
 of about HKD 1,905. The negative real interest rate means inflation has eroded the value of the

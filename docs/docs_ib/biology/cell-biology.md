@@ -47,7 +47,7 @@ circular chromosome in the **nucleoid region**.
 | Cell wall             | Peptidoglycan (bacteria) or pseudopeptidoglycan (archaea)             |
 | Plasma membrane       | Phospholipid bilayer with embedded proteins                           |
 | Nucleoid              | Region containing the circular chromosome; not enclosed by a membrane |
-| Ribosomes             | $70\mathrm{'\{'}S{'\}'}$ ($50\mathrm{'\{'}S{'\}'}$ + $30\mathrm{'\{'}S{'\}'}$ subunits)             |
+| Ribosomes             | $70\mathrm{S{}$ ($50\mathrm{S{}$ + $30\mathrm{S{}$ subunits)             |
 | Plasmids              | Small circular extra-chromosomal DNA molecules                        |
 | Flagella              | Rotatory propulsion structures (not present in all species)           |
 | Pili                  | Hair-like appendages for adhesion and conjugation                     |
@@ -73,8 +73,8 @@ Eukaryotes (animals, plants, fungi, protists) possess a **membrane-bound nucleus
 | Nucleus                   | Absent                   | Present                                          |
 | DNA form                  | Circular                 | Linear chromosomes                               |
 | Membrane-bound organelles | None                     | Many (mitochondria, ER, Golgi, etc.)             |
-| Ribosome size             | $70\mathrm{'\{'}S{'\}'}$           | $80\mathrm{'\{'}S{'\}'}$ ($60\mathrm{'\{'}S{'\}'}$ + $40\mathrm{'\{'}S{'\}'}$) |
-| Cell diameter             | $1$--$5\;\mathrm{'\{'}\mu m{'\}'}$ | $10$--$100\;\mathrm{'\{'}\mu m{'\}'}$                      |
+| Ribosome size             | $70\mathrm{S{}$           | $80\mathrm{S{}$ ($60\mathrm{S{}$ + $40\mathrm{S{}$) |
+| Cell diameter             | $1$--$5\;\mathrm{\mu m{}$ | $10$--$100\;\mathrm{\mu m{}$                      |
 | Reproduction              | Binary fission           | Mitosis / meiosis                                |
 
 ---
@@ -105,13 +105,13 @@ membrane is a dynamic, two-dimensional fluid of phospholipids in which proteins 
 #### Simple Diffusion
 
 Passive movement of molecules from a region of higher concentration to lower concentration, down the
-concentration gradient. Only small, non-polar molecules ($\mathrm{'\{'}O{'\}'}_2$, $\mathrm{'\{'}CO{'\}'}_2$, steroid
+concentration gradient. Only small, non-polar molecules ($\mathrm{O{}_2$, $\mathrm{CO{}_2$, steroid
 hormones) diffuse directly through the bilayer.
 
 **Fick's Law:**
 
 $$
-\mathrm{'\{'}Rate of diffusion{'\}'} \propto \frac{(\mathrm{'\{'}surface area{'\}'}) \times (\mathrm{'\{'}concentration difference{'\}'})}{\mathrm{'\{'}thickness of membrane{'\}'}}
+\mathrm{Rate of diffusion{} \propto \frac{(\mathrm{surface area{}) \times (\mathrm{concentration difference{})}{\mathrm{thickness of membrane{}}
 $$
 
 #### Facilitated Diffusion
@@ -128,8 +128,8 @@ consumed; transport is passive and specific.
 membrane from a region of lower solute concentration (higher water potential) to a region of higher
 solute concentration (lower water potential).
 
-**Water potential** ($\psi$) is measured in pressure units ($\mathrm{'\{'}kPa{'\}'}$). Pure water at standard
-conditions has $\psi = 0\;\mathrm{'\{'}kPa{'\}'}$. Adding solutes decreases $\psi$ (makes it negative).
+**Water potential** ($\psi$) is measured in pressure units ($\mathrm{kPa{}$). Pure water at standard
+conditions has $\psi = 0\;\mathrm{kPa{}$. Adding solutes decreases $\psi$ (makes it negative).
 
 | Solution type | Effect on animal cell                 | Effect on plant cell     |
 | ------------- | ------------------------------------- | ------------------------ |
@@ -142,9 +142,9 @@ conditions has $\psi = 0\;\mathrm{'\{'}kPa{'\}'}$. Adding solutes decreases $\ps
 Movement against the concentration gradient, requiring ATP directly or indirectly.
 
 - **Primary active transport**: ATP hydrolysis drives the transport protein directly (e.g., the
-  $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump moves $3\;\mathrm{'\{'}Na{'\}'}^+$ out and $2\;\mathrm{'\{'}K{'\}'}^+$ in per ATP).
+  $\mathrm{Na{}^+/\mathrm{K{}^+$ pump moves $3\;\mathrm{Na{}^+$ out and $2\;\mathrm{K{}^+$ in per ATP).
 - **Secondary active transport (co-transport)**: uses the electrochemical gradient established by
-  primary active transport. E.g., $\mathrm{'\{'}Na{'\}'}^+$-glucose co-transport in intestinal epithelium.
+  primary active transport. E.g., $\mathrm{Na{}^+$-glucose co-transport in intestinal epithelium.
 
 #### Vesicular Transport
 
@@ -163,7 +163,7 @@ Movement against the concentration gradient, requiring ATP directly or indirectl
 The nucleus houses the genetic material (DNA) and controls cellular activities through gene
 expression.
 
-- **Nuclear envelope**: double membrane with **nuclear pores** (diameter $\approx 9\;\mathrm{'\{'}nm{'\}'}$)
+- **Nuclear envelope**: double membrane with **nuclear pores** (diameter $\approx 9\;\mathrm{nm{}$)
   allowing selective transport of mRNA, proteins, and ribosomal subunits.
 - **Nucleolus**: site of rRNA transcription and ribosome subunit assembly.
 - **Chromatin**: DNA wrapped around histone proteins; condenses into chromosomes during cell
@@ -175,7 +175,7 @@ Site of **aerobic respiration** (oxidative phosphorylation), producing ATP.
 
 - Double membrane: outer membrane is permeable; inner membrane is folded into **cristae** to
   increase surface area.
-- **Matrix**: contains its own circular DNA ($70\mathrm{'\{'}S{'\}'}$ ribosomes), enzymes for the Krebs cycle,
+- **Matrix**: contains its own circular DNA ($70\mathrm{S{}$ ribosomes), enzymes for the Krebs cycle,
   and the link reaction.
 - The endosymbiotic theory posits that mitochondria evolved from free-living aerobic prokaryotes
   engulfed by ancestral eukaryotes.
@@ -201,7 +201,7 @@ lipids received from the ER.
 ### Lysosomes
 
 Membrane-bound vesicles containing **hydrolytic enzymes** (proteases, lipases, nucleases) active at
-$\mathrm{'\{'}pH{'\}'}\approx 5$.
+$\mathrm{pH{}\approx 5$.
 
 - Digest worn-out organelles (autophagy).
 - Break down materials taken in by phagocytosis.
@@ -255,12 +255,12 @@ the same length, centromere position, and gene loci.
 
 The cell cycle has four phases:
 
-1. **$\mathrm{'\{'}G{'\}'}_1$ (Gap 1)**: cell growth, organelle duplication.
+1. **$\mathrm{G{}_1$ (Gap 1)**: cell growth, organelle duplication.
 2. **S (Synthesis)**: DNA replication; each chromosome becomes two sister chromatids.
-3. **$\mathrm{'\{'}G{'\}'}_2$ (Gap 2)**: preparation for mitosis; protein synthesis.
+3. **$\mathrm{G{}_2$ (Gap 2)**: preparation for mitosis; protein synthesis.
 4. **M (Mitotic)**: mitosis and cytokinesis.
 
-$\mathrm{'\{'}G{'\}'}_0$ is a resting phase outside the cycle; some cells (neurones) enter $\mathrm{'\{'}G{'\}'}_0$
+$\mathrm{G{}_0$ is a resting phase outside the cycle; some cells (neurones) enter $\mathrm{G{}_0$
 permanently.
 
 ### Meiosis
@@ -304,7 +304,7 @@ Multicellular organisms have differentiated (specialised) cell types:
 
 | Cell type          | Adaptation                                   | Function                 |
 | ------------------ | -------------------------------------------- | ------------------------ |
-| Red blood cell     | Biconcave disc, no nucleus, high haemoglobin | $\mathrm{'\{'}O{'\}'}_2$ transport |
+| Red blood cell     | Biconcave disc, no nucleus, high haemoglobin | $\mathrm{O{}_2$ transport |
 | Sperm cell         | Flagellum, many mitochondria, acrosome       | Fertilisation            |
 | Neuron             | Long axon, dendrites, myelin sheath          | Signal transmission      |
 | Muscle cell        | Many mitochondria, contractile filaments     | Contraction              |
@@ -341,9 +341,9 @@ human cells. Reference ribosome structure in your answer.
 <details>
 <summary>Answer</summary>
 
-Streptomycin binds specifically to the $30\mathrm{'\{'}S{'\}'}$ subunit of prokaryotic $70\mathrm{'\{'}S{'\}'}$
-ribosomes, disrupting translation. Eukaryotic ribosomes are $80\mathrm{'\{'}S{'\}'}$ ($60\mathrm{'\{'}S{'\}'}$ +
-$40\mathrm{'\{'}S{'\}'}$ subunits), which have a different structure and do not bind streptomycin. This
+Streptomycin binds specifically to the $30\mathrm{S{}$ subunit of prokaryotic $70\mathrm{S{}$
+ribosomes, disrupting translation. Eukaryotic ribosomes are $80\mathrm{S{}$ ($60\mathrm{S{}$ +
+$40\mathrm{S{}$ subunits), which have a different structure and do not bind streptomycin. This
 structural difference allows selective toxicity against bacterial cells.
 
 </details>
@@ -351,7 +351,7 @@ structural difference allows selective toxicity against bacterial cells.
 <details>
 <summary>Question 2: Surface Area to Volume Ratio</summary>
 
-A spherical cell has a radius of $5\;\mathrm{'\{'}\mu m{'\}'}$. Calculate its surface area, volume, and
+A spherical cell has a radius of $5\;\mathrm{\mu m{}$. Calculate its surface area, volume, and
 surface-area-to-volume ratio. Explain why cells are generally small.
 
 </details>
@@ -361,11 +361,11 @@ surface-area-to-volume ratio. Explain why cells are generally small.
 
 For a sphere: $A = 4\pi r^2$, $V = \frac{4}{3}\pi r^3$.
 
-$A = 4\pi(5)^2 = 100\pi \approx 314\;\mathrm{'\{'}\mu m{'\}'}^2$
+$A = 4\pi(5)^2 = 100\pi \approx 314\;\mathrm{\mu m{}^2$
 
-$V = \frac{4}{3}\pi(5)^3 = \frac{500\pi}{3} \approx 524\;\mathrm{'\{'}\mu m{'\}'}^3$
+$V = \frac{4}{3}\pi(5)^3 = \frac{500\pi}{3} \approx 524\;\mathrm{\mu m{}^3$
 
-$\frac{A}{V} = \frac{3}{r} = \frac{3}{5} = 0.6\;\mathrm{'\{'}\mu m{'\}'}^{-1}$
+$\frac{A}{V} = \frac{3}{r} = \frac{3}{5} = 0.6\;\mathrm{\mu m{}^{-1}$
 
 Cells are small because the surface-area-to-volume ratio decreases as cell size increases. A lower
 ratio means insufficient surface area for nutrient uptake and waste removal relative to the
@@ -376,8 +376,8 @@ metabolic demands of the cell volume.
 <details>
 <summary>Question 3: Osmosis Calculation</summary>
 
-An animal cell with a water potential of $-700\;\mathrm{'\{'}kPa{'\}'}$ is placed in a solution with a water
-potential of $-400\;\mathrm{'\{'}kPa{'\}'}$. Predict the net movement of water and describe the effect on the
+An animal cell with a water potential of $-700\;\mathrm{kPa{}$ is placed in a solution with a water
+potential of $-400\;\mathrm{kPa{}$. Predict the net movement of water and describe the effect on the
 cell.
 
 </details>
@@ -385,8 +385,8 @@ cell.
 <details>
 <summary>Answer</summary>
 
-Water moves from higher water potential ($-400\;\mathrm{'\{'}kPa{'\}'}$) to lower water potential
-($-700\;\mathrm{'\{'}kPa{'\}'}$). The net movement of water is into the cell by osmosis. The cell will swell
+Water moves from higher water potential ($-400\;\mathrm{kPa{}$) to lower water potential
+($-700\;\mathrm{kPa{}$). The net movement of water is into the cell by osmosis. The cell will swell
 as water enters, and if the volume increase is sufficient, the cell may undergo lysis (burst), since
 animal cells lack a rigid cell wall.
 
@@ -437,8 +437,8 @@ proteins independently of nuclear genes.
 
 **Worked Example: Surface Area-to-Volume Ratio and Cell Size Limit**
 
-A cuboidal epithelial cell has a side length of $10\;\mathrm{'\{'}\mu m{'\}'}$. It doubles in each linear
-dimension to become $20\;\mathrm{'\{'}\mu m{'\}'}$ per side. Calculate the surface-area-to-volume ratio before
+A cuboidal epithelial cell has a side length of $10\;\mathrm{\mu m{}$. It doubles in each linear
+dimension to become $20\;\mathrm{\mu m{}$ per side. Calculate the surface-area-to-volume ratio before
 and after the enlargement, and determine the factor by which the ratio decreases.
 
 <details>
@@ -446,15 +446,15 @@ and after the enlargement, and determine the factor by which the ratio decreases
 
 For a cube: $A = 6s^2$ and $V = s^3$.
 
-**Before enlargement** ($s = 10\;\mathrm{'\{'}\mu m{'\}'}$):
-$A = 6 \times 10^2 = 600\;\mathrm{'\{'}\mu m{'\}'}^2$
-$V = 10^3 = 1000\;\mathrm{'\{'}\mu m{'\}'}^3$
-$\frac{A}{V} = \frac{600}{1000} = 0.60\;\mathrm{'\{'}\mu m{'\}'}^{-1}$
+**Before enlargement** ($s = 10\;\mathrm{\mu m{}$):
+$A = 6 \times 10^2 = 600\;\mathrm{\mu m{}^2$
+$V = 10^3 = 1000\;\mathrm{\mu m{}^3$
+$\frac{A}{V} = \frac{600}{1000} = 0.60\;\mathrm{\mu m{}^{-1}$
 
-**After enlargement** ($s = 20\;\mathrm{'\{'}\mu m{'\}'}$):
-$A = 6 \times 20^2 = 2400\;\mathrm{'\{'}\mu m{'\}'}^2$
-$V = 20^3 = 8000\;\mathrm{'\{'}\mu m{'\}'}^3$
-$\frac{A}{V} = \frac{2400}{8000} = 0.30\;\mathrm{'\{'}\mu m{'\}'}^{-1}$
+**After enlargement** ($s = 20\;\mathrm{\mu m{}$):
+$A = 6 \times 20^2 = 2400\;\mathrm{\mu m{}^2$
+$V = 20^3 = 8000\;\mathrm{\mu m{}^3$
+$\frac{A}{V} = \frac{2400}{8000} = 0.30\;\mathrm{\mu m{}^{-1}$
 
 The surface-area-to-volume ratio is halved. This demonstrates why larger cells face a fundamental
 constraint: the metabolic demand (proportional to volume) grows faster than the capacity for nutrient
@@ -465,47 +465,47 @@ membranes (microvilli, cristae) to increase effective surface area without incre
 
 **Worked Example: Magnification Calculation from a Micrograph**
 
-An electron micrograph of a chloroplast shows a granum that measures $4.2\;\mathrm{'\{'}cm{'\}'}$ across the
-image. The scale bar indicates that $1\;\mathrm{'\{'}cm{'\}'}$ on the image represents $0.5\;\mathrm{'\{'}\mu m{'\}'}$ in
+An electron micrograph of a chloroplast shows a granum that measures $4.2\;\mathrm{cm{}$ across the
+image. The scale bar indicates that $1\;\mathrm{cm{}$ on the image represents $0.5\;\mathrm{\mu m{}$ in
 reality. Calculate the actual width of the granum and the magnification of the micrograph.
 
 <details>
 <summary>Solution</summary>
 
-**Actual width**: $4.2\;\mathrm{'\{'}cm{'\}'} \times 0.5\;\mathrm{'\{'}\mu m/cm{'\}'} = 2.1\;\mathrm{'\{'}\mu m{'\}'}$
+**Actual width**: $4.2\;\mathrm{cm{} \times 0.5\;\mathrm{\mu m/cm{} = 2.1\;\mathrm{\mu m{}$
 
 **Magnification**:
-$\mathrm{'\{'}Magnification{'\}'} = \frac{\mathrm{'\{'}image size{'\}'}}{\mathrm{'\{'}actual size{'\}'}} = \frac{4.2\;\mathrm{'\{'}cm{'\}'}}{2.1\;\mathrm{'\{'}\mu m{'\}'}}$
+$\mathrm{Magnification{} = \frac{\mathrm{image size{}}{\mathrm{actual size{}} = \frac{4.2\;\mathrm{cm{}}{2.1\;\mathrm{\mu m{}}$
 
-Convert to consistent units: $4.2\;\mathrm{'\{'}cm{'\}'} = 42000\;\mathrm{'\{'}\mu m{'\}'}$
+Convert to consistent units: $4.2\;\mathrm{cm{} = 42000\;\mathrm{\mu m{}$
 
-$\mathrm{'\{'}Magnification{'\}'} = \frac{42000}{2.1} = 20000\times$
+$\mathrm{Magnification{} = \frac{42000}{2.1} = 20000\times$
 
-The granum is $2.1\;\mathrm{'\{'}\mu m{'\}'}$ wide and the micrograph is magnified $20000$ times. A typical
-granum stack contains $5$--$30$ thylakoid discs, each approximately $0.3\;\mathrm{'\{'}\mu m{'\}'}$ in diameter,
+The granum is $2.1\;\mathrm{\mu m{}$ wide and the micrograph is magnified $20000$ times. A typical
+granum stack contains $5$--$30$ thylakoid discs, each approximately $0.3\;\mathrm{\mu m{}$ in diameter,
 consistent with this measurement.
 
 </details>
 
 **Worked Example: Interpreting the Na+/K+ Pump Stoichiometry**
 
-The $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ ATPase pumps $3\;\mathrm{'\{'}Na{'\}'}^+$ ions out and $2\;\mathrm{'\{'}K{'\}'}^+$ ions in
-per ATP hydrolysed. A neurone at rest has an intracellular $\mathrm{'\{'}Na{'\}'}^+$ concentration of
-$15\;\mathrm{'\{'}mmol/L{'\}'}$ and an extracellular concentration of $145\;\mathrm{'\{'}mmol/L{'\}'}$. Calculate the
+The $\mathrm{Na{}^+/\mathrm{K{}^+$ ATPase pumps $3\;\mathrm{Na{}^+$ ions out and $2\;\mathrm{K{}^+$ ions in
+per ATP hydrolysed. A neurone at rest has an intracellular $\mathrm{Na{}^+$ concentration of
+$15\;\mathrm{mmol/L{}$ and an extracellular concentration of $145\;\mathrm{mmol/L{}$. Calculate the
 ratio of the concentration gradients and explain why the pump is described as electrogenic.
 
 <details>
 <summary>Solution</summary>
 
-**$\mathrm{'\{'}Na{'\}'}^+$ concentration gradient**: $\frac{[\mathrm{'\{'}Na{'\}'}^+]_{\mathrm{'\{'}out{'\}'}}}{[\mathrm{'\{'}Na{'\}'}^+]_{\mathrm{'\{'}in{'\}'}}} = \frac{145}{15} \approx 9.7$
+**$\mathrm{Na{}^+$ concentration gradient**: $\frac{[\mathrm{Na{}^+]_{\mathrm{out{}}}{[\mathrm{Na{}^+]_{\mathrm{in{}}} = \frac{145}{15} \approx 9.7$
 
-**$\mathrm{'\{'}K{'\}'}^+$ concentration gradient** (typical values: $150\;\mathrm{'\{'}mmol/L{'\}'}$ in,
-$5\;\mathrm{'\{'}mmol/L{'\}'}$ out): $\frac{[\mathrm{'\{'}K{'\}'}^+]_{\mathrm{'\{'}in{'\}'}}}{[\mathrm{'\{'}K{'\}'}^+]_{\mathrm{'\{'}out{'\}'}}} = \frac{150}{5} = 30$
+**$\mathrm{K{}^+$ concentration gradient** (typical values: $150\;\mathrm{mmol/L{}$ in,
+$5\;\mathrm{mmol/L{}$ out): $\frac{[\mathrm{K{}^+]_{\mathrm{in{}}}{[\mathrm{K{}^+]_{\mathrm{out{}}} = \frac{150}{5} = 30$
 
 The pump is **electrogenic** because it moves $3$ positive charges out but only $2$ positive charges
 in per cycle, resulting in a net export of one positive charge per ATP hydrolysed. This net outward
 current contributes directly to the negative resting membrane potential (approximately
-$-70\;\mathrm{'\{'}mV{'\}'}$), alongside the $\mathrm{'\{'}K{'\}'}^+$ diffusion potential established by leak channels.
+$-70\;\mathrm{mV{}$), alongside the $\mathrm{K{}^+$ diffusion potential established by leak channels.
 If the pump moved equal numbers of cations in each direction, it would not directly contribute to
 the membrane potential.
 
@@ -513,20 +513,20 @@ the membrane potential.
 
 **Worked Example: Counting Cells from a Haemocytometer**
 
-A student loads a haemocytometer with a yeast cell suspension. The central large square ($1\;\mathrm{'\{'}mm{'\}'}
-\times 1\;\mathrm{'\{'}mm{'\}'}$, depth $0.1\;\mathrm{'\{'}mm{'\}'}$) is divided into $25$ smaller squares. The student
+A student loads a haemocytometer with a yeast cell suspension. The central large square ($1\;\mathrm{mm{}
+\times 1\;\mathrm{mm{}$, depth $0.1\;\mathrm{mm{}$) is divided into $25$ smaller squares. The student
 counts an average of $42$ yeast cells per small square across $5$ squares. Calculate the cell
-concentration in cells per $\mathrm{'\{'}mL{'\}'}$.
+concentration in cells per $\mathrm{mL{}$.
 
 <details>
 <summary>Solution</summary>
 
-Volume of the central large square: $1\;\mathrm{'\{'}mm{'\}'} \times 1\;\mathrm{'\{'}mm{'\}'} \times 0.1\;\mathrm{'\{'}mm{'\}'}
-= 0.1\;\mathrm{'\{'}mm{'\}'}^3 = 10^{-4}\;\mathrm{'\{'}mL{'\}'}$
+Volume of the central large square: $1\;\mathrm{mm{} \times 1\;\mathrm{mm{} \times 0.1\;\mathrm{mm{}
+= 0.1\;\mathrm{mm{}^3 = 10^{-4}\;\mathrm{mL{}$
 
 Total cells in the central square: $42 \times 25 = 1050$ cells
 
-Cell concentration: $\frac{1050\;\mathrm{'\{'}cells{'\}'}}{10^{-4}\;\mathrm{'\{'}mL{'\}'}} = 1.05 \times 10^7\;\mathrm{'\{'}cells/mL{'\}'}$
+Cell concentration: $\frac{1050\;\mathrm{cells{}}{10^{-4}\;\mathrm{mL{}} = 1.05 \times 10^7\;\mathrm{cells/mL{}$
 
 This technique is essential in microbiology for determining cell density in culture, monitoring
 growth curves, and standardising inocula for experiments. A dilution factor must be applied if the
@@ -549,8 +549,8 @@ suspension was diluted before loading.
 - **Describing the cell membrane as a "solid" structure**: it is fluid, with phospholipids and
   proteins able to move laterally (demonstrated by the Frye-Edidin fusion experiment, 1970).
 - **Confusing primary and secondary active transport**: primary active transport directly hydrolyses
-  ATP (e.g., the $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump). Secondary active transport uses the gradient
-  established by primary transport as an energy source (e.g., $\mathrm{'\{'}Na{'\}'}^+$-glucose co-transport).
+  ATP (e.g., the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump). Secondary active transport uses the gradient
+  established by primary transport as an energy source (e.g., $\mathrm{Na{}^+$-glucose co-transport).
 - **Writing that mitosis produces "identical" cells without qualification**: while genetically
   identical (barring mutation), the two daughter cells receive slightly different cytoplasmic
   contents, which can influence cell fate in early development.
@@ -565,9 +565,9 @@ suspension was diluted before loading.
 <details>
 <summary>Problem 1: Data Analysis -- Osmosis Experiment</summary>
 
-A student places potato cylinders of identical dimensions ($5\;\mathrm{'\{'}cm{'\}'} \times 0.5\;\mathrm{'\{'}cm{'\}'}$
-diameter) into a series of sucrose solutions ranging from $0.0$ to $0.6\;\mathrm{'\{'}mol/L{'\}'}$ at
-$0.1\;\mathrm{'\{'}mol/L{'\}'}$ intervals. After $24$ hours at $20^\circ\mathrm{'\{'}C{'\}'}$, the student measures the
+A student places potato cylinders of identical dimensions ($5\;\mathrm{cm{} \times 0.5\;\mathrm{cm{}$
+diameter) into a series of sucrose solutions ranging from $0.0$ to $0.6\;\mathrm{mol/L{}$ at
+$0.1\;\mathrm{mol/L{}$ intervals. After $24$ hours at $20^\circ\mathrm{C{}$, the student measures the
 mass change of each cylinder. The results are:
 
 | Sucrose concentration (mol/L) | Mass change (%) |
@@ -582,14 +582,14 @@ mass change of each cylinder. The results are:
 
 (a) Plot these data and estimate the water potential of the potato tissue.
 (b) Explain the biological basis for the trend observed.
-(c) Predict the result if the experiment were repeated at $35^\circ\mathrm{'\{'}C{'\}'}$.
+(c) Predict the result if the experiment were repeated at $35^\circ\mathrm{C{}$.
 
 </details>
 
 <details>
 <summary>Problem 2: Extended Response -- Endosymbiotic Theory</summary>
 
-Mitochondria possess their own circular DNA, $70\mathrm{'\{'}S{'\}'}$ ribosomes, a double membrane, and the
+Mitochondria possess their own circular DNA, $70\mathrm{S{}$ ribosomes, a double membrane, and the
 ability to replicate independently by binary fission. Evaluate the extent to which these features
 support the endosymbiotic theory. In your response, address at least two alternative explanations
 and discuss additional evidence (e.g., molecular phylogenetics) that strengthens the argument.
@@ -619,7 +619,7 @@ from the expected. State your null hypothesis.
 <details>
 <summary>Problem 4: Diagram Analysis -- Comparing Prokaryotic and Eukaryotic Cells</summary>
 
-An electron micrograph shows a cell approximately $2\;\mathrm{'\{'}\mu m{'\}'}$ in diameter with no internal
+An electron micrograph shows a cell approximately $2\;\mathrm{\mu m{}$ in diameter with no internal
 membrane-bound organelles. Visible structures include a dense nucleoid region, free ribosomes, a
 capsule, and several pili. (a) Identify this cell as prokaryotic or eukaryotic and justify with
 three structural observations. (b) The cell is found in an environment with high antibiotic
@@ -643,7 +643,7 @@ phospholipids compared with warm-water species.
 
 A tumour starts from a single cell and undergoes mitosis every $24$ hours. Assuming $100\%$ cell
 survival and no apoptosis, calculate the number of cells after $14$ days. If the average cell
-diameter is $10\;\mathrm{'\{'}\mu m{'\}'}$ and the tumour grows as a sphere, estimate the tumour diameter after
+diameter is $10\;\mathrm{\mu m{}$ and the tumour grows as a sphere, estimate the tumour diameter after
 $14$ days. Explain why actual tumour growth is slower than this theoretical maximum.
 
 </details>
@@ -652,11 +652,11 @@ $14$ days. Explain why actual tumour growth is slower than this theoretical maxi
 <summary>Problem 7: Data Analysis -- Fick's Law Application</summary>
 
 Gas exchange in the alveoli depends on the rate of diffusion described by Fick's Law. Alveolar
-surface area is approximately $70\;\mathrm{'\{'}m{'\}'}^2$ and the diffusion distance (alveolar wall +
-capillary wall) is approximately $1.5\;\mathrm{'\{'}\mu m{'\}'}$. The $\mathrm{'\{'}O{'\}'}_2$ partial pressure
-difference is approximately $8\;\mathrm{'\{'}kPa{'\}'}$. (a) Calculate the relative rate of $\mathrm{'\{'}O{'\}'}_2$
+surface area is approximately $70\;\mathrm{m{}^2$ and the diffusion distance (alveolar wall +
+capillary wall) is approximately $1.5\;\mathrm{\mu m{}$. The $\mathrm{O{}_2$ partial pressure
+difference is approximately $8\;\mathrm{kPa{}$. (a) Calculate the relative rate of $\mathrm{O{}_2$
 diffusion under these conditions. (b) Explain how emphysema, which destroys alveolar walls and
-reduces total surface area to $35\;\mathrm{'\{'}m{'\}'}^2$, would affect this rate.
+reduces total surface area to $35\;\mathrm{m{}^2$, would affect this rate.
 
 </details>
 
@@ -783,9 +783,9 @@ The **peptidoglycan** (murein) layer is a polymer of alternating $N$-acetylgluco
 $N$-acetylmuramic acid (NAM) sugars, cross-linked by short peptide bridges (containing
 D-alanine, D-glutamate, and a diaminopimelic acid-lysine cross-link).
 
-**Gram-positive bacteria**: thick peptidoglycan layer ($20$--$80\;\mathrm{'\{'}nm{'\}'}$) with teichoic acids
+**Gram-positive bacteria**: thick peptidoglycan layer ($20$--$80\;\mathrm{nm{}$) with teichoic acids
 embedded. Retain crystal violet stain in Gram staining.
-**Gram-negative bacteria**: thin peptidoglycan layer ($2$--$7\;\mathrm{'\{'}nm{'\}'}$) with an outer membrane
+**Gram-negative bacteria**: thin peptidoglycan layer ($2$--$7\;\mathrm{nm{}$) with an outer membrane
 containing **lipopolysaccharide (LPS)**. Do not retain crystal violet; appear pink with safranin
 counterstain.
 
@@ -807,7 +807,7 @@ When bacteria are inoculated into fresh medium:
 | **Stationary phase** | Growth rate = death rate; nutrients are depleted, waste products accumulate, and space is limited.              |
 | **Decline (death) phase** | Death rate exceeds growth rate; cells die from nutrient starvation and toxin accumulation.                 |
 
-**Growth rate**: $\mu = \frac{\ln(N_t / N_0)}{t}$ (specific growth rate, $\mathrm{'\{'}h{'\}'}^{-1}$).
+**Growth rate**: $\mu = \frac{\ln(N_t / N_0)}{t}$ (specific growth rate, $\mathrm{h{}^{-1}$).
 
 **Doubling time**: $t_d = \frac{\ln 2}{\mu} = \frac{0.693}{\mu}$
 
@@ -828,8 +828,8 @@ The fluidity of the cell membrane depends on:
 ### Membrane Proteins: Types and Functions
 
 **Integral (transmembrane) proteins:**
-- **Channel proteins**: form hydrophilic pores for specific ions ($\mathrm{'\{'}Na{'\}'}^+$, $\mathrm{'\{'}K{'\}'}^+$,
-  $\mathrm{'\{'}Ca{'\}'}^{2+}$, $\mathrm{'\{'}Cl{'\}'}^-$). Can be gated (voltage-gated, ligand-gated, mechanically-gated)
+- **Channel proteins**: form hydrophilic pores for specific ions ($\mathrm{Na{}^+$, $\mathrm{K{}^+$,
+  $\mathrm{Ca{}^{2+}$, $\mathrm{Cl{}^-$). Can be gated (voltage-gated, ligand-gated, mechanically-gated)
   or ungated (leak channels).
 - **Carrier proteins (transporters)**: undergo conformational change to shuttle substances across.
   Include uniporters, symporters (co-transport in same direction), and antiporters (co-transport in
@@ -867,25 +867,25 @@ The process of breaking open cells and separating organelles by differential cen
 1. **Homogenisation**: cells are broken open in an isotonic, buffered solution (to preserve organelle
    structure) using a homogeniser or sonication.
 2. **Differential centrifugation**:
-   - Low speed ($1000\;\mathrm{'\{'}g{'\}'}$, $10\;\mathrm{'\{'}min{'\}'}$): nuclei and unbroken cells pellet.
-   - Medium speed ($10000\;\mathrm{'\{'}g{'\}'}$, $20\;\mathrm{'\{'}min{'\}'}$): mitochondria, lysosomes, peroxisomes pellet.
-   - High speed ($100000\;\mathrm{'\{'}g{'\}'}$, $60\;\mathrm{'\{'}min{'\}'}$): ribosomes, microsomes (ER fragments) pellet.
+   - Low speed ($1000\;\mathrm{g{}$, $10\;\mathrm{min{}$): nuclei and unbroken cells pellet.
+   - Medium speed ($10000\;\mathrm{g{}$, $20\;\mathrm{min{}$): mitochondria, lysosomes, peroxisomes pellet.
+   - High speed ($100000\;\mathrm{g{}$, $60\;\mathrm{min{}$): ribosomes, microsomes (ER fragments) pellet.
    - Supernatant: cytosol (soluble proteins and enzymes).
 
 ### Microscopy Techniques
 
 | Technique               | Resolution  | Sample preparation              | Information obtained                             |
 | ----------------------- | ----------- | ------------------------------- | ------------------------------------------------ |
-| **Light microscopy**   | $\approx 200\;\mathrm{'\{'}nm{'\}'}$ | Staining; live specimens possible | Overall cell structure; limited detail of organelles. |
-| **Electron microscopy (TEM)** | $\approx 0.5\;\mathrm{'\{'}nm{'\}'}$ | Fixed, dehydrated, heavy metal staining; thin sections | Ultrastructure of organelles; internal detail. |
-| **Electron microscopy (SEM)** | $\approx 3$--$20\;\mathrm{'\{'}nm{'\}'}$ | Fixed, dehydrated, metal-coated; surface view | 3D surface topography of cells and organisms. |
-| **Fluorescence microscopy** | $\approx 200\;\mathrm{'\{'}nm{'\}'}$ | Fluorescent dyes or fluorescent proteins (GFP) | Location of specific molecules in living cells. |
-| **Confocal microscopy** | $\approx 200\;\mathrm{'\{'}nm{'\}'}$ | Same as fluorescence | Optical sections; 3D reconstruction; reduced blur. |
-| **Cryo-electron microscopy** | $\approx 3\;\mathrm{'\{'}nm{'\}'}$ | Flash-frozen, no staining | Near-native state structure of large complexes. |
+| **Light microscopy**   | $\approx 200\;\mathrm{nm{}$ | Staining; live specimens possible | Overall cell structure; limited detail of organelles. |
+| **Electron microscopy (TEM)** | $\approx 0.5\;\mathrm{nm{}$ | Fixed, dehydrated, heavy metal staining; thin sections | Ultrastructure of organelles; internal detail. |
+| **Electron microscopy (SEM)** | $\approx 3$--$20\;\mathrm{nm{}$ | Fixed, dehydrated, metal-coated; surface view | 3D surface topography of cells and organisms. |
+| **Fluorescence microscopy** | $\approx 200\;\mathrm{nm{}$ | Fluorescent dyes or fluorescent proteins (GFP) | Location of specific molecules in living cells. |
+| **Confocal microscopy** | $\approx 200\;\mathrm{nm{}$ | Same as fluorescence | Optical sections; 3D reconstruction; reduced blur. |
+| **Cryo-electron microscopy** | $\approx 3\;\mathrm{nm{}$ | Flash-frozen, no staining | Near-native state structure of large complexes. |
 
 **Magnification calculation:**
 
-$$\mathrm{'\{'}Magnification{'\}'} = \frac{\text{'\{'}image size{'\}'}}{\text{'\{'}actual size{'\}'}}$$
+$$\mathrm{Magnification{} = \frac{\text{'\{'}image size{'\}'}}{\text{'\{'}actual size{'\}'}}$$
 
 **Resolution**: the minimum distance between two points that can be distinguished as separate. The
 resolving power of a microscope is limited by the wavelength of the illuminating radiation:
@@ -935,7 +935,7 @@ risk in BRCA1 carriers. (d) Discuss the ethical considerations of genetic testin
 <details>
 <summary>Problem 12: Quantitative -- Surface Area and Diffusion</summary>
 
-A spherical human egg cell has a diameter of $120\;\mathrm{'\{'}\mu m{'\}'}$. (a) Calculate its surface area
+A spherical human egg cell has a diameter of $120\;\mathrm{\mu m{}$. (a) Calculate its surface area
 and volume. (b) After fertilisation, the zygote undergoes 6 rounds of cleavage (mitosis without
 growth) to form a morula of $64$ cells. Assuming the morula is roughly spherical with the same
 total volume as the original zygote, calculate the surface-area-to-volume ratio of each cell in
@@ -950,8 +950,8 @@ SA:V ratio during early embryonic development.
 
 **Worked Example: Prokaryotic vs Eukaryotic Cell Comparison**
 
-(a) Calculate the volume of a typical _E. coli_ cell (rod-shaped, $2\;\mathrm{'\{'}\mu m{'\}'}$ long, $0.5\;\mathrm{'\{'}\mu m{'\}'}$
-diameter) and a typical human liver cell (spherical, $20\;\mathrm{'\{'}\mu m{'\}'}$ diameter). (b) Calculate the
+(a) Calculate the volume of a typical _E. coli_ cell (rod-shaped, $2\;\mathrm{\mu m{}$ long, $0.5\;\mathrm{\mu m{}$
+diameter) and a typical human liver cell (spherical, $20\;\mathrm{\mu m{}$ diameter). (b) Calculate the
 surface-area-to-volume ratio for each. (c) Explain why prokaryotes can rely on simple diffusion for many
 processes while eukaryotes require specialised transport systems.
 
@@ -959,21 +959,21 @@ processes while eukaryotes require specialised transport systems.
 <summary>Solution</summary>
 
 (a) _E. coli_ (approximate as cylinder with hemispherical ends):
-Volume of cylindrical part: $\pi r^2 h = \pi \times (0.25)^2 \times 1.5 = 0.295\;\mathrm{'\{'}\mu m{'\}'}^3$
-Volume of hemispherical ends: $\frac{4}{3}\pi r^3 = \frac{4}{3}\pi(0.25)^3 = 0.065\;\mathrm{'\{'}\mu m{'\}'}^3$
-Total volume: $0.295 + 0.065 = 0.36\;\mathrm{'\{'}\mu m{'\}'}^3$
+Volume of cylindrical part: $\pi r^2 h = \pi \times (0.25)^2 \times 1.5 = 0.295\;\mathrm{\mu m{}^3$
+Volume of hemispherical ends: $\frac{4}{3}\pi r^3 = \frac{4}{3}\pi(0.25)^3 = 0.065\;\mathrm{\mu m{}^3$
+Total volume: $0.295 + 0.065 = 0.36\;\mathrm{\mu m{}^3$
 
 Human liver cell (sphere):
-Volume $= \frac{4}{3}\pi r^3 = \frac{4}{3}\pi(10)^3 = 4189\;\mathrm{'\{'}\mu m{'\}'}^3$
+Volume $= \frac{4}{3}\pi r^3 = \frac{4}{3}\pi(10)^3 = 4189\;\mathrm{\mu m{}^3$
 
 (b) _E. coli_ surface area:
-Cylindrical part: $2\pi rh = 2\pi \times 0.25 \times 1.5 = 2.36\;\mathrm{'\{'}\mu m{'\}'}^2$
-Hemispherical ends: $4\pi r^2 = 4\pi(0.25)^2 = 0.785\;\mathrm{'\{'}\mu m{'\}'}^2$
-Total SA: $2.36 + 0.785 = 3.14\;\mathrm{'\{'}\mu m{'\}'}^2$
-SA:V $= 3.14 / 0.36 = 8.7\;\mathrm{'\{'}\mu m{'\}'}^{-1}$
+Cylindrical part: $2\pi rh = 2\pi \times 0.25 \times 1.5 = 2.36\;\mathrm{\mu m{}^2$
+Hemispherical ends: $4\pi r^2 = 4\pi(0.25)^2 = 0.785\;\mathrm{\mu m{}^2$
+Total SA: $2.36 + 0.785 = 3.14\;\mathrm{\mu m{}^2$
+SA:V $= 3.14 / 0.36 = 8.7\;\mathrm{\mu m{}^{-1}$
 
-Human liver cell SA $= 4\pi r^2 = 4\pi(10)^2 = 1257\;\mathrm{'\{'}\mu m{'\}'}^2$
-SA:V $= 1257 / 4189 = 0.30\;\mathrm{'\{'}\mu m{'\}'}^{-1}$
+Human liver cell SA $= 4\pi r^2 = 4\pi(10)^2 = 1257\;\mathrm{\mu m{}^2$
+SA:V $= 1257 / 4189 = 0.30\;\mathrm{\mu m{}^{-1}$
 
 (c) _E. coli_ has a SA:V ratio approximately $29\times$ higher than the liver cell. This high ratio means
 that the cell surface is large relative to its volume, allowing efficient diffusion of oxygen, nutrients,
@@ -987,67 +987,67 @@ transport proteins for selective uptake and export.
 
 **Worked Example: Osmosis and Water Potential**
 
-A plant cell with a water potential of $-400\;\mathrm{'\{'}kPa{'\}'}$ is placed in a solution with water potential
-of $-200\;\mathrm{'\{'}kPa{'\}'}$. The pressure potential of the cell is $+100\;\mathrm{'\{'}kPa{'\}'}$. (a) Calculate the
+A plant cell with a water potential of $-400\;\mathrm{kPa{}$ is placed in a solution with water potential
+of $-200\;\mathrm{kPa{}$. The pressure potential of the cell is $+100\;\mathrm{kPa{}$. (a) Calculate the
 solute potential of the cell. (b) Predict the direction of water movement. (c) Describe what happens to
 the cell over time (include changes in turgor pressure, volume, and water potential). (d) Repeat the
-analysis if the external solution has a water potential of $-800\;\mathrm{'\{'}kPa{'\}'}$.
+analysis if the external solution has a water potential of $-800\;\mathrm{kPa{}$.
 
 <details>
 <summary>Solution</summary>
 
-(a) $\Psi = \Psi_s + \Psi_p$, so $\Psi_s = \Psi - \Psi_p = -400 - 100 = -500\;\mathrm{'\{'}kPa{'\}'}$.
+(a) $\Psi = \Psi_s + \Psi_p$, so $\Psi_s = \Psi - \Psi_p = -400 - 100 = -500\;\mathrm{kPa{}$.
 
-(b) Water moves from higher water potential to lower water potential. External $= -200\;\mathrm{'\{'}kPa{'\}'}$;
-cell $= -400\;\mathrm{'\{'}kPa{'\}'}$. Water moves **into** the cell (from $-200$ to $-400\;\mathrm{'\{'}kPa{'\}'}$).
+(b) Water moves from higher water potential to lower water potential. External $= -200\;\mathrm{kPa{}$;
+cell $= -400\;\mathrm{kPa{}$. Water moves **into** the cell (from $-200$ to $-400\;\mathrm{kPa{}$).
 
 (c) As water enters:
 - The cell volume increases (the cell wall restricts expansion, so the cell becomes turgid).
 - Turgor pressure ($\Psi_p$) increases.
 - As $\Psi_p$ increases, the cell's water potential ($\Psi = \Psi_s + \Psi_p$) becomes less negative.
-- Equilibrium is reached when $\Psi_{cell} = \Psi_{external} = -200\;\mathrm{'\{'}kPa{'\}'}$:
-  $-500 + \Psi_p = -200$, so $\Psi_p = +300\;\mathrm{'\{'}kPa{'\}'}$.
+- Equilibrium is reached when $\Psi_{cell} = \Psi_{external} = -200\;\mathrm{kPa{}$:
+  $-500 + \Psi_p = -200$, so $\Psi_p = +300\;\mathrm{kPa{}$.
 - The cell is fully turgid.
 
-(d) External $= -800\;\mathrm{'\{'}kPa{'\}'}$; cell $= -400\;\mathrm{'\{'}kPa{'\}'}$. Water moves **out of** the cell.
+(d) External $= -800\;\mathrm{kPa{}$; cell $= -400\;\mathrm{kPa{}$. Water moves **out of** the cell.
 - The cell volume decreases.
 - Turgor pressure decreases (from $+100$ toward $0$).
 - Eventually, the cell membrane pulls away from the cell wall (**plasmolysis**).
-- $\Psi_p$ reaches $0$ (no pressure against the wall). The cell's water potential $= \Psi_s = -500\;\mathrm{'\{'}kPa{'\}'}$.
+- $\Psi_p$ reaches $0$ (no pressure against the wall). The cell's water potential $= \Psi_s = -500\;\mathrm{kPa{}$.
 - Since $-500 > -800$, water continues to leave until the solute potential becomes more negative
-  (concentration increases). Equilibrium when $\Psi_{cell} = -800\;\mathrm{'\{'}kPa{'\}'}$:
-  $\Psi_s + 0 = -800\;\mathrm{'\{'}kPa{'\}'}$, so $\Psi_s = -800\;\mathrm{'\{'}kPa{'\}'}$. The cell has lost significant
+  (concentration increases). Equilibrium when $\Psi_{cell} = -800\;\mathrm{kPa{}$:
+  $\Psi_s + 0 = -800\;\mathrm{kPa{}$, so $\Psi_s = -800\;\mathrm{kPa{}$. The cell has lost significant
   water and is plasmolysed.
 
 </details>
 
 **Worked Example: Membrane Transport Quantification**
 
-A red blood cell has an internal $\mathrm{'\{'}K{'\}'}^+$ concentration of $140\;\mathrm{'\{'}mmol/L{'\}'}$ and an external
-$\mathrm{'\{'}K{'\}'}^+$ concentration of $5\;\mathrm{'\{'}mmol/L{'\}'}$ at $37^\circ\mathrm{'\{'}C{'\}'}$. The membrane potential is
-$-12\;\mathrm{'\{'}mV{'\}'}$ (inside negative). (a) Calculate the $\mathrm{'\{'}K{'\}'}^+$ equilibrium potential. (b) Calculate
-the net electrochemical driving force on $\mathrm{'\{'}K{'\}'}^+$. (c) In which direction does the $\mathrm{'\{'}Na{'\}'}^+/K^+$
-pump move $\mathrm{'\{'}K{'\}'}^+$? (d) How many ATP molecules are needed to pump $1000\;\mathrm{'\{'}K{'\}'}^+$ ions into
+A red blood cell has an internal $\mathrm{K{}^+$ concentration of $140\;\mathrm{mmol/L{}$ and an external
+$\mathrm{K{}^+$ concentration of $5\;\mathrm{mmol/L{}$ at $37^\circ\mathrm{C{}$. The membrane potential is
+$-12\;\mathrm{mV{}$ (inside negative). (a) Calculate the $\mathrm{K{}^+$ equilibrium potential. (b) Calculate
+the net electrochemical driving force on $\mathrm{K{}^+$. (c) In which direction does the $\mathrm{Na{}^+/K^+$
+pump move $\mathrm{K{}^+$? (d) How many ATP molecules are needed to pump $1000\;\mathrm{K{}^+$ ions into
 the cell?
 
 <details>
 <summary>Solution</summary>
 
-(a) $E_{\mathrm{'\{'}K{'\}'}} = \frac{RT}{zF}\ln\frac{[\mathrm{'\{'}K{'\}'}^+]_{out}}{[\mathrm{'\{'}K{'\}'}^+]_{in}} = \frac{8.314 \times 310}{1 \times 96485}\ln\frac{5}{140}$
-$= 0.0267 \times \ln(0.0357) = 0.0267 \times (-3.332) = -88.9\;\mathrm{'\{'}mV{'\}'}$
+(a) $E_{\mathrm{K{}} = \frac{RT}{zF}\ln\frac{[\mathrm{K{}^+]_{out}}{[\mathrm{K{}^+]_{in}} = \frac{8.314 \times 310}{1 \times 96485}\ln\frac{5}{140}$
+$= 0.0267 \times \ln(0.0357) = 0.0267 \times (-3.332) = -88.9\;\mathrm{mV{}$
 
-(b) Net driving force $= V_m - E_{\mathrm{'\{'}K{'\}'}} = -12 - (-88.9) = +76.9\;\mathrm{'\{'}mV{'\}'}$.
-The positive value means the driving force is outward (favouring $\mathrm{'\{'}K{'\}'}^+$ efflux).
+(b) Net driving force $= V_m - E_{\mathrm{K{}} = -12 - (-88.9) = +76.9\;\mathrm{mV{}$.
+The positive value means the driving force is outward (favouring $\mathrm{K{}^+$ efflux).
 
-(c) The $\mathrm{'\{'}Na{'\}'}^+/K^+$ pump moves $\mathrm{'\{'}K{'\}'}^+$ **into** the cell (against its concentration gradient
-and electrochemical gradient), using ATP to actively transport $\mathrm{'\{'}K{'\}'}^+$ from the extracellular
-fluid ($5\;\mathrm{'\{'}mmol/L{'\}'}$) to the intracellular fluid ($140\;\mathrm{'\{'}mmol/L{'\}'}$).
+(c) The $\mathrm{Na{}^+/K^+$ pump moves $\mathrm{K{}^+$ **into** the cell (against its concentration gradient
+and electrochemical gradient), using ATP to actively transport $\mathrm{K{}^+$ from the extracellular
+fluid ($5\;\mathrm{mmol/L{}$) to the intracellular fluid ($140\;\mathrm{mmol/L{}$).
 
-(d) The $\mathrm{'\{'}Na{'\}'}^+/K^+$ pump moves $2\;\mathrm{'\{'}K{'\}'}^+$ in per ATP hydrolysed.
+(d) The $\mathrm{Na{}^+/K^+$ pump moves $2\;\mathrm{K{}^+$ in per ATP hydrolysed.
 ATP needed $= 1000 / 2 = 500$ ATP molecules.
 
-In molar terms: $1000\;\mathrm{'\{'}K{'\}'}^+$ ions $= 1000 / (6.022 \times 10^{23}) = 1.66 \times 10^{-21}\;\mathrm{'\{'}mol\;K{'\}'}^+$.
-ATP $= 500 / (6.022 \times 10^{23}) = 8.30 \times 10^{-22}\;\mathrm{'\{'}mol\;ATP{'\}'}$.
+In molar terms: $1000\;\mathrm{K{}^+$ ions $= 1000 / (6.022 \times 10^{23}) = 1.66 \times 10^{-21}\;\mathrm{mol\;K{}^+$.
+ATP $= 500 / (6.022 \times 10^{23}) = 8.30 \times 10^{-22}\;\mathrm{mol\;ATP{}$.
 
 </details>
 
@@ -1072,13 +1072,13 @@ to the root tip, and the mitotic index drops to $5\%$. Explain two possible mech
 $= \frac{30 + 15 + 10 + 5}{310} \times 100 = \frac{60}{310} \times 100 = 19.4\%$
 
 (b) Duration of each phase is proportional to the fraction of cells in that phase:
-Total time $= 20\;\mathrm{'\{'}h{'\}'} = 1200\;\mathrm{'\{'}min{'\}'}$.
+Total time $= 20\;\mathrm{h{} = 1200\;\mathrm{min{}$.
 
-- Interphase: $\frac{250}{310} \times 1200 = 968\;\mathrm{'\{'}min{'\}'} = 16.1\;\mathrm{'\{'}h{'\}'}$
-- Prophase: $\frac{30}{310} \times 1200 = 116\;\mathrm{'\{'}min{'\}'} = 1.9\;\mathrm{'\{'}h{'\}'}$
-- Metaphase: $\frac{15}{310} \times 1200 = 58\;\mathrm{'\{'}min{'\}'}$
-- Anaphase: $\frac{10}{310} \times 1200 = 39\;\mathrm{'\{'}min{'\}'}$
-- Telophase: $\frac{5}{310} \times 1200 = 19\;\mathrm{'\{'}min{'\}'}$
+- Interphase: $\frac{250}{310} \times 1200 = 968\;\mathrm{min{} = 16.1\;\mathrm{h{}$
+- Prophase: $\frac{30}{310} \times 1200 = 116\;\mathrm{min{} = 1.9\;\mathrm{h{}$
+- Metaphase: $\frac{15}{310} \times 1200 = 58\;\mathrm{min{}$
+- Anaphase: $\frac{10}{310} \times 1200 = 39\;\mathrm{min{}$
+- Telophase: $\frac{5}{310} \times 1200 = 19\;\mathrm{min{}$
 
 (c) The mitotic index varies between tissues because different tissues have different rates of cell division:
 - Rapidly dividing tissues (root tips, bone marrow, skin basal layer, intestinal crypts) have high
@@ -1102,29 +1102,29 @@ Total time $= 20\;\mathrm{'\{'}h{'\}'} = 1200\;\mathrm{'\{'}min{'\}'}$.
 **Worked Example: Electron Microscopy and Resolution**
 
 (a) Calculate the resolving power of a light microscope with a numerical aperture (NA) of $1.4$ using
-green light ($\lambda = 550\;\mathrm{'\{'}nm{'\}'}$). (b) Calculate the resolving power of a transmission electron
-microscope (TEM) with an accelerating voltage of $80\;\mathrm{'\{'}kV{'\}'}$ ($\lambda \approx 0.005\;\mathrm{'\{'}nm{'\}'}$)
-and NA $= 0.02$ (based on aperture angle). (c) A ribosome is approximately $25\;\mathrm{'\{'}nm{'\}'}$ in diameter.
+green light ($\lambda = 550\;\mathrm{nm{}$). (b) Calculate the resolving power of a transmission electron
+microscope (TEM) with an accelerating voltage of $80\;\mathrm{kV{}$ ($\lambda \approx 0.005\;\mathrm{nm{}$)
+and NA $= 0.02$ (based on aperture angle). (c) A ribosome is approximately $25\;\mathrm{nm{}$ in diameter.
 Can it be resolved with each microscope? (d) Explain the difference between TEM and SEM in terms of
 image formation and the type of specimens each is best suited for.
 
 <details>
 <summary>Solution</summary>
 
-(a) Resolution $d = \frac{0.61\lambda}{\mathrm{'\{'}NA{'\}'}} = \frac{0.61 \times 550}{1.4} = 240\;\mathrm{'\{'}nm{'\}'} = 0.24\;\mathrm{'\{'}\mu m{'\}'}$.
+(a) Resolution $d = \frac{0.61\lambda}{\mathrm{NA{}} = \frac{0.61 \times 550}{1.4} = 240\;\mathrm{nm{} = 0.24\;\mathrm{\mu m{}$.
 
-(b) TEM resolution $d = \frac{0.61 \times 0.005}{0.02} = 0.153\;\mathrm{'\{'}nm{'\}'}$.
+(b) TEM resolution $d = \frac{0.61 \times 0.005}{0.02} = 0.153\;\mathrm{nm{}$.
 
-(In practice, TEM resolution is limited by lens aberrations to approximately $0.1$--$0.2\;\mathrm{'\{'}nm{'\}'}$,
+(In practice, TEM resolution is limited by lens aberrations to approximately $0.1$--$0.2\;\mathrm{nm{}$,
 which is sufficient to resolve individual atoms in crystalline specimens.)
 
-(c) Ribosome diameter $= 25\;\mathrm{'\{'}nm{'\}'}$.
-- Light microscope: resolution $= 240\;\mathrm{'\{'}nm{'\}'}$. $25 < 240$, so the ribosome is **smaller than the
+(c) Ribosome diameter $= 25\;\mathrm{nm{}$.
+- Light microscope: resolution $= 240\;\mathrm{nm{}$. $25 < 240$, so the ribosome is **smaller than the
   resolution limit**. It cannot be resolved (individual ribosomes are invisible under light microscopy).
-- TEM: resolution $= 0.153\;\mathrm{'\{'}nm{'\}'}$. $25 > 0.153$, so the ribosome is **easily resolved**. TEM can
+- TEM: resolution $= 0.153\;\mathrm{nm{}$. $25 > 0.153$, so the ribosome is **easily resolved**. TEM can
   clearly visualise ribosomes and their subunits.
 
-(d) **TEM**: a beam of electrons passes through an ultra-thin specimen ($<100\;\mathrm{'\{'}nm{'\}'}$ thick).
+(d) **TEM**: a beam of electrons passes through an ultra-thin specimen ($<100\;\mathrm{nm{}$ thick).
 Denser regions scatter more electrons, appearing dark in the image (bright-field imaging). TEM produces
 2D images showing internal cellular ultrastructure (organelles, membranes, ribosomes, cytoskeleton).
 Specimens must be fixed, dehydrated, and embedded in resin; staining with heavy metals (uranyl acetate,
@@ -1150,8 +1150,8 @@ are coated with a thin layer of metal (gold or platinum) to enhance electron emi
   selectively permeable membrane; diffusion is the general movement of molecules from high to low
   concentration.
 - **Assuming all active transport uses ATP directly**: some secondary active transport uses the
-  electrochemical gradient established by a primary active transporter (e.g., $\mathrm{'\{'}Na{'\}'}^+$/glucose
-  co-transport uses the $\mathrm{'\{'}Na{'\}'}^+$ gradient created by the $\mathrm{'\{'}Na{'\}'}^+/K^+$ pump).
+  electrochemical gradient established by a primary active transporter (e.g., $\mathrm{Na{}^+$/glucose
+  co-transport uses the $\mathrm{Na{}^+$ gradient created by the $\mathrm{Na{}^+/K^+$ pump).
 - **Confusing chromosomes and chromatids**: a chromosome consists of one or two chromatids. Before
   replication: 1 chromosome = 1 chromatid. After replication: 1 chromosome = 2 sister chromatids.
   After anaphase: each chromatid is now an independent chromosome.
@@ -1220,9 +1220,9 @@ to the host nucleus) and became integrated as organelles.
 <summary>Problem 14: Quantitative -- Serial Dilution and Cell Counting</summary>
 
 A bacterial culture has an OD600 (optical density at 600 nm) of 1.2. A calibration curve shows that
-OD600 = 1.0 corresponds to $8 \times 10^8$ cells/mL. A serial dilution is performed: $100\;\mathrm{'\{'}\mu L{'\}'}$
-of culture is added to $900\;\mathrm{'\{'}\mu L{'\}'}$ of sterile broth (dilution factor $10^{-1}$), and this is
-repeated for 6 serial dilutions. $100\;\mathrm{'\{'}\mu L{'\}'}$ of the $10^{-6}$ dilution is spread on an agar
+OD600 = 1.0 corresponds to $8 \times 10^8$ cells/mL. A serial dilution is performed: $100\;\mathrm{\mu L{}$
+of culture is added to $900\;\mathrm{\mu L{}$ of sterile broth (dilution factor $10^{-1}$), and this is
+repeated for 6 serial dilutions. $100\;\mathrm{\mu L{}$ of the $10^{-6}$ dilution is spread on an agar
 plate, yielding $72$ colonies. (a) Calculate the cell concentration in the original culture from the OD600.
 (b) Calculate the viable cell concentration from the plate count. (c) Calculate the percentage of viable
 cells. (d) Explain why the OD600 count and the viable count differ.
@@ -1234,8 +1234,8 @@ cells. (d) Explain why the OD600 count and the viable count differ.
 
 (a) From OD600: concentration $= 1.2 \times 8 \times 10^8 = 9.6 \times 10^8$ cells/mL.
 
-(b) From plate count: $72$ colonies on the $10^{-6}$ dilution plate, with $100\;\mathrm{'\{'}\mu L{'\}'}$ plated.
-Concentration $= \frac{72}{0.1\;\mathrm{'\{'}mL{'\}'}} \times 10^6 = 7.2 \times 10^8$ cells/mL.
+(b) From plate count: $72$ colonies on the $10^{-6}$ dilution plate, with $100\;\mathrm{\mu L{}$ plated.
+Concentration $= \frac{72}{0.1\;\mathrm{mL{}} \times 10^6 = 7.2 \times 10^8$ cells/mL.
 
 (c) Percentage viable $= \frac{7.2 \times 10^8}{9.6 \times 10^8} \times 100 = 75\%$.
 
@@ -1359,10 +1359,10 @@ myristoylation). Examples: alkaline phosphatase (GPI-anchored), Ras (prenylated)
 
 | Type | Direction | Energy | Carrier | Example |
 |------|-----------|--------|---------|---------|
-| Simple diffusion | High to low conc. | None (passive) | None | $\mathrm{'\{'}O{'\}'}_2$, $\mathrm{'\{'}CO{'\}'}_2$, ethanol, steroid hormones |
-| Facilitated diffusion | High to low conc. | None (passive) | Channel or carrier protein | Glucose (via GLUT transporters), $\mathrm{'\{'}Na{'\}'}^+$ (via leak channels) |
-| Primary active transport | Low to high conc. | ATP | Pump protein | $\mathrm{'\{'}Na{'\}'}^+/K^+$ pump, $\mathrm{'\{'}Ca{'\}'}^{2+}$ pump, $\mathrm{'\{'}H{'\}'}^+/K^+$ pump |
-| Secondary active transport | Low to high conc. | Ion gradient | Symporter or antiporter | $\mathrm{'\{'}Na{'\}'}^+$/glucose symporter (SGLT1), $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}Ca{'\}'}^{2+}$ exchanger |
+| Simple diffusion | High to low conc. | None (passive) | None | $\mathrm{O{}_2$, $\mathrm{CO{}_2$, ethanol, steroid hormones |
+| Facilitated diffusion | High to low conc. | None (passive) | Channel or carrier protein | Glucose (via GLUT transporters), $\mathrm{Na{}^+$ (via leak channels) |
+| Primary active transport | Low to high conc. | ATP | Pump protein | $\mathrm{Na{}^+/K^+$ pump, $\mathrm{Ca{}^{2+}$ pump, $\mathrm{H{}^+/K^+$ pump |
+| Secondary active transport | Low to high conc. | Ion gradient | Symporter or antiporter | $\mathrm{Na{}^+$/glucose symporter (SGLT1), $\mathrm{Na{}^+/\mathrm{Ca{}^{2+}$ exchanger |
 | Bulk transport | Variable | ATP | Vesicles | Endocytosis, exocytosis, phagocytosis |
 
 ### Channel Proteins
@@ -1371,48 +1371,48 @@ Ion channels are transmembrane pores that allow specific ions to pass through. T
 (opened/closed) by specific stimuli:
 
 - **Voltage-gated channels**: open in response to changes in membrane potential. Examples: voltage-gated
-  $\mathrm{'\{'}Na{'\}'}^+$ channels (action potential initiation), voltage-gated $\mathrm{'\{'}K{'\}'}^+$ channels (action
-  potential repolarisation), voltage-gated $\mathrm{'\{'}Ca{'\}'}^{2+}$ channels (neurotransmitter release).
+  $\mathrm{Na{}^+$ channels (action potential initiation), voltage-gated $\mathrm{K{}^+$ channels (action
+  potential repolarisation), voltage-gated $\mathrm{Ca{}^{2+}$ channels (neurotransmitter release).
 - **Ligand-gated channels**: open when a specific ligand (neurotransmitter, hormone) binds. Examples:
   nicotinic ACh receptor (opens when ACh binds at NMJ), GABA_A receptor (opens when GABA binds,
-  allowing $\mathrm{'\{'}Cl{'\}'}^-$ influx, hyperpolarising the cell).
+  allowing $\mathrm{Cl{}^-$ influx, hyperpolarising the cell).
 - **Mechanically-gated channels**: open in response to physical deformation. Examples: stretch receptors
   in the skin, auditory hair cells in the cochlea.
 - **Aquaporins**: channels specifically for water (not ions). Essential for rapid water transport in
   kidney collecting ducts (regulated by ADH) and plant cells.
 
-### The Sodium-Potassium Pump ($\mathrm{'\{'}Na{'\}'}^+/K^+$-ATPase)
+### The Sodium-Potassium Pump ($\mathrm{Na{}^+/K^+$-ATPase)
 
-The $\mathrm{'\{'}Na{'\}'}^+/K^+$ pump maintains the resting membrane potential and electrochemical gradients
+The $\mathrm{Na{}^+/K^+$ pump maintains the resting membrane potential and electrochemical gradients
 essential for nerve impulse transmission, secondary active transport, and osmotic balance.
 
 **Mechanism**:
-1. Three $\mathrm{'\{'}Na{'\}'}^+$ ions bind from the cytoplasmic side.
+1. Three $\mathrm{Na{}^+$ ions bind from the cytoplasmic side.
 2. ATP is hydrolysed, transferring a phosphate group to the pump (phosphorylation).
-3. Phosphorylation causes a conformational change, exposing the $\mathrm{'\{'}Na{'\}'}^+$ binding sites to the
-   extracellular side. $\mathrm{'\{'}Na{'\}'}^+$ is released.
-4. Two $\mathrm{'\{'}K{'\}'}^+$ ions bind from the extracellular side.
-5. Dephosphorylation causes another conformational change, exposing $\mathrm{'\{'}K{'\}'}^+$ to the cytoplasmic
-   side. $\mathrm{'\{'}K{'\}'}^+$ is released.
+3. Phosphorylation causes a conformational change, exposing the $\mathrm{Na{}^+$ binding sites to the
+   extracellular side. $\mathrm{Na{}^+$ is released.
+4. Two $\mathrm{K{}^+$ ions bind from the extracellular side.
+5. Dephosphorylation causes another conformational change, exposing $\mathrm{K{}^+$ to the cytoplasmic
+   side. $\mathrm{K{}^+$ is released.
 
-**Net effect**: $3\;\mathrm{'\{'}Na{'\}'}^+$ out, $2\;\mathrm{'\{'}K{'\}'}^+$ in, per ATP hydrolysed.
+**Net effect**: $3\;\mathrm{Na{}^+$ out, $2\;\mathrm{K{}^+$ in, per ATP hydrolysed.
 **Electrogenic**: moves 1 net positive charge out per cycle (3 out, 2 in), contributing to the
-negative resting membrane potential (approximately $-3$ to $-5\;\mathrm{'\{'}mV{'\}'}$).
+negative resting membrane potential (approximately $-3$ to $-5\;\mathrm{mV{}$).
 
-**Energy cost**: the $\mathrm{'\{'}Na{'\}'}^+/K^+$ pump consumes approximately $30$--$40\%$ of the total ATP
+**Energy cost**: the $\mathrm{Na{}^+/K^+$ pump consumes approximately $30$--$40\%$ of the total ATP
 produced by a resting neuron and $10$--$20\%$ of total body ATP at rest.
 
 ### Worked Example: Resting Membrane Potential Calculation
 
 Using the Goldman equation (constant field approximation) for a neuron:
 
-$$V_m = \frac{RT}{F}\ln\frac{P_{\mathrm{'\{'}Na{'\}'}}[\mathrm{'\{'}Na{'\}'}^+]_{out} + P_{\mathrm{'\{'}K{'\}'}}[\mathrm{'\{'}K{'\}'}^+]_{out} + P_{\mathrm{'\{'}Cl{'\}'}}[\mathrm{'\{'}Cl{'\}'}^-]_{in}}{P_{\mathrm{'\{'}Na{'\}'}}[\mathrm{'\{'}Na{'\}'}^+]_{in} + P_{\mathrm{'\{'}K{'\}'}}[\mathrm{'\{'}K{'\}'}^+]_{in} + P_{\mathrm{'\{'}Cl{'\}'}}[\mathrm{'\{'}Cl{'\}'}^-]_{out}}$$
+$$V_m = \frac{RT}{F}\ln\frac{P_{\mathrm{Na{}}[\mathrm{Na{}^+]_{out} + P_{\mathrm{K{}}[\mathrm{K{}^+]_{out} + P_{\mathrm{Cl{}}[\mathrm{Cl{}^-]_{in}}{P_{\mathrm{Na{}}[\mathrm{Na{}^+]_{in} + P_{\mathrm{K{}}[\mathrm{K{}^+]_{in} + P_{\mathrm{Cl{}}[\mathrm{Cl{}^-]_{out}}$$
 
-At $37^\circ\mathrm{'\{'}C{'\}'}$ ($RT/F = 26.7\;\mathrm{'\{'}mV{'\}'}$), with:
-- $[\mathrm{'\{'}Na{'\}'}^+]_{out} = 145\;\mathrm{'\{'}mM{'\}'}$, $[\mathrm{'\{'}Na{'\}'}^+]_{in} = 12\;\mathrm{'\{'}mM{'\}'}$
-- $[\mathrm{'\{'}K{'\}'}^+]_{out} = 4\;\mathrm{'\{'}mM{'\}'}$, $[\mathrm{'\{'}K{'\}'}^+]_{in} = 155\;\mathrm{'\{'}mM{'\}'}$
-- $[\mathrm{'\{'}Cl{'\}'}^-]_{out} = 110\;\mathrm{'\{'}mM{'\}'}$, $[\mathrm{'\{'}Cl{'\}'}^-]_{in} = 4\;\mathrm{'\{'}mM{'\}'}$
-- $P_{\mathrm{'\{'}Na{'\}'}} = 0.04$, $P_{\mathrm{'\{'}K{'\}'}} = 1.0$, $P_{\mathrm{'\{'}Cl{'\}'}} = 0.45$
+At $37^\circ\mathrm{C{}$ ($RT/F = 26.7\;\mathrm{mV{}$), with:
+- $[\mathrm{Na{}^+]_{out} = 145\;\mathrm{mM{}$, $[\mathrm{Na{}^+]_{in} = 12\;\mathrm{mM{}$
+- $[\mathrm{K{}^+]_{out} = 4\;\mathrm{mM{}$, $[\mathrm{K{}^+]_{in} = 155\;\mathrm{mM{}$
+- $[\mathrm{Cl{}^-]_{out} = 110\;\mathrm{mM{}$, $[\mathrm{Cl{}^-]_{in} = 4\;\mathrm{mM{}$
+- $P_{\mathrm{Na{}} = 0.04$, $P_{\mathrm{K{}} = 1.0$, $P_{\mathrm{Cl{}} = 0.45$
 
 Calculate the resting membrane potential.
 
@@ -1423,10 +1423,10 @@ Numerator $= 0.04 \times 145 + 1.0 \times 4 + 0.45 \times 4 = 5.8 + 4.0 + 1.8 = 
 
 Denominator $= 0.04 \times 12 + 1.0 \times 155 + 0.45 \times 110 = 0.48 + 155 + 49.5 = 204.98$
 
-$V_m = 26.7 \times \ln(11.6 / 204.98) = 26.7 \times \ln(0.0566) = 26.7 \times (-2.871) = -76.6\;\mathrm{'\{'}mV{'\}'}$
+$V_m = 26.7 \times \ln(11.6 / 204.98) = 26.7 \times \ln(0.0566) = 26.7 \times (-2.871) = -76.6\;\mathrm{mV{}$
 
-This is close to the typical neuronal resting potential of $-70\;\mathrm{'\{'}mV{'\}'}$. The difference reflects
-the contribution of the electrogenic $\mathrm{'\{'}Na{'\}'}^+/K^+$ pump (approximately $-3$ to $-5\;\mathrm{'\{'}mV{'\}'}$),
+This is close to the typical neuronal resting potential of $-70\;\mathrm{mV{}$. The difference reflects
+the contribution of the electrogenic $\mathrm{Na{}^+/K^+$ pump (approximately $-3$ to $-5\;\mathrm{mV{}$),
 which is not included in the Goldman equation.
 
 </details>

@@ -73,7 +73,7 @@ Direction: the argument $5x - 50t$ indicates propagation in the $+x$ direction.
 
 It is convenient to write monochromatic waves as:
 
-$$\mathbf{'\{'}E{'\}'}(\mathbf{'\{'}r{'\}'}, t) = \mathrm{'\{'}Re{'\}'}\left[\tilde{\mathbf{'\{'}E{'\}'}}\, e^{i(\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'} - \omega t)}\right]$$
+$$\mathbf{'\{'}E{'\}'}(\mathbf{'\{'}r{'\}'}, t) = \mathrm{Re{}\left[\tilde{\mathbf{'\{'}E{'\}'}}\, e^{i(\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'} - \omega t)}\right]$$
 
 where $\tilde{\mathbf{'\{'}E{'\}'}}$ is the complex amplitude, $\mathbf{'\{'}k{'\}'}$ is the wave vector, and $\omega$ is
 the angular frequency. The dispersion relation is $\omega = ck = c|\mathbf{'\{'}k{'\}'}|$.
@@ -202,8 +202,8 @@ where $\rho$ is the mass density of the medium.
 A sinusoidal wave of amplitude 5.0 mm and frequency 200 Hz propagates along it. Find (a) the wave
 speed, (b) the average power, and (c) the intensity (power per unit cross-sectional area).
 
-**Solution.** Cross-sectional area: $A_{\mathrm{'\{'}wire{'\}'}} = \pi(0.5 \times 10^{-3})^2 = 7.85 \times 10^{-7}$ m$^2$.
-Linear density: $\mu = \rho A_{\mathrm{'\{'}wire{'\}'}} = 7800 \times 7.85 \times 10^{-7} = 6.12 \times 10^{-3}$ kg/m.
+**Solution.** Cross-sectional area: $A_{\mathrm{wire{}} = \pi(0.5 \times 10^{-3})^2 = 7.85 \times 10^{-7}$ m$^2$.
+Linear density: $\mu = \rho A_{\mathrm{wire{}} = 7800 \times 7.85 \times 10^{-7} = 6.12 \times 10^{-3}$ kg/m.
 
 (a) $v = \sqrt{T/\mu} = \sqrt{500/(6.12 \times 10^{-3})} = \sqrt{8.17 \times 10^4} = 286$ m/s.
 
@@ -211,7 +211,7 @@ Linear density: $\mu = \rho A_{\mathrm{'\{'}wire{'\}'}} = 7800 \times 7.85 \time
 $\langle P \rangle = \frac{1}{2}\mu v \omega^2 A^2 = \frac{1}{2}(6.12 \times 10^{-3})(286)(1257)^2(5.0 \times 10^{-3})^2$
 $= \frac{1}{2}(6.12 \times 10^{-3})(286)(1.58 \times 10^6)(2.5 \times 10^{-5}) = 34.7$ W.
 
-(c) Intensity: $I = \langle P \rangle/A_{\mathrm{'\{'}wire{'\}'}} = 34.7/(7.85 \times 10^{-7}) = 4.42 \times 10^7$ W/m$^2$.
+(c) Intensity: $I = \langle P \rangle/A_{\mathrm{wire{}} = 34.7/(7.85 \times 10^{-7}) = 4.42 \times 10^7$ W/m$^2$.
 
 </details>
 
@@ -262,10 +262,10 @@ double, given an initial width $\sigma_0 = 0.01$ m.
 
 (b) Group velocity: $v_g = d\omega/dk = 2\alpha k_0 = 2 \times 5.0 \times 10^3 \times 200 = 2.0 \times 10^6$ m/s.
 
-(c) GVD: $\alpha_{\mathrm{'\{'}GVD{'\}'}} = d^2\omega/dk^2 = 2\alpha = 1.0 \times 10^4$ m$^2$/s.
-The packet width doubles when $1 + (\alpha_{\mathrm{'\{'}GVD{'\}'}}\, t / 2\sigma_0^2)^2 = 4$:
-$\alpha_{\mathrm{'\{'}GVD{'\}'}}\, t / 2\sigma_0^2 = \sqrt{3}$
-$t = 2\sigma_0^2\sqrt{3}/\alpha_{\mathrm{'\{'}GVD{'\}'}} = 2(10^{-4})(1.732)/(10^4) = 3.46 \times 10^{-8}$ s $= 34.6$ ns.
+(c) GVD: $\alpha_{\mathrm{GVD{}} = d^2\omega/dk^2 = 2\alpha = 1.0 \times 10^4$ m$^2$/s.
+The packet width doubles when $1 + (\alpha_{\mathrm{GVD{}}\, t / 2\sigma_0^2)^2 = 4$:
+$\alpha_{\mathrm{GVD{}}\, t / 2\sigma_0^2 = \sqrt{3}$
+$t = 2\sigma_0^2\sqrt{3}/\alpha_{\mathrm{GVD{}} = 2(10^{-4})(1.732)/(10^4) = 3.46 \times 10^{-8}$ s $= 34.6$ ns.
 
 </details>
 
@@ -337,8 +337,8 @@ $$u = \frac{1}{2}\varepsilon_0 E^2 + \frac{1}{2\mu_0}B^2 = \varepsilon_0 E^2$$
 (the electric and magnetic contributions are equal for a plane wave). The intensity is related to
 the energy density by $I = uc$.
 
-**Radiation pressure.** For a perfectly absorbing surface: $P_{\mathrm{'\{'}rad{'\}'}} = I/c$. For a perfectly
-reflecting surface: $P_{\mathrm{'\{'}rad{'\}'}} = 2I/c$.
+**Radiation pressure.** For a perfectly absorbing surface: $P_{\mathrm{rad{}} = I/c$. For a perfectly
+reflecting surface: $P_{\mathrm{rad{}} = 2I/c$.
 
 <details>
 <summary>Worked Example: Radiation pressure from a laser</summary>
@@ -349,9 +349,9 @@ mirror. The beam has a diameter of 1 mm. Find the radiation pressure and the for
 **Solution.** Beam area: $A = \pi(0.5 \times 10^{-3})^2 = 7.85 \times 10^{-7}$ m$^2$.
 Intensity: $I = P/A = 5 \times 10^{-3}/(7.85 \times 10^{-7}) = 6.37 \times 10^3$ W/m$^2$.
 
-Radiation pressure (reflecting): $P_{\mathrm{'\{'}rad{'\}'}} = 2I/c = 2(6.37 \times 10^3)/(3 \times 10^8) = 4.25 \times 10^{-5}$ Pa.
+Radiation pressure (reflecting): $P_{\mathrm{rad{}} = 2I/c = 2(6.37 \times 10^3)/(3 \times 10^8) = 4.25 \times 10^{-5}$ Pa.
 
-Force: $F = P_{\mathrm{'\{'}rad{'\}'}} \cdot A = (4.25 \times 10^{-5})(7.85 \times 10^{-7}) = 3.34 \times 10^{-11}$ N.
+Force: $F = P_{\mathrm{rad{}} \cdot A = (4.25 \times 10^{-5})(7.85 \times 10^{-7}) = 3.34 \times 10^{-11}$ N.
 
 </details>
 
@@ -386,8 +386,8 @@ at the front surface.
 
 (c) At normal incidence: $R = [(n_1 - n_2)/(n_1 + n_2)]^2 = [(1 - 1.5)/(1 + 1.5)]^2 = (0.5/2.5)^2 = 0.04$.
 Transmittance: $T = 1 - R = 0.96$.
-The intensity inside the glass is $I_{\mathrm{'\{'}inside{'\}'}} = 0.96\,I_0$, but the power per unit area
-referenced to the vacuum intensity is $I_{\mathrm{'\{'}inside{'\}'}} = (n_2/n_1)\,T\,I_0 = 1.5 \times 0.96 \times I_0 = 1.44\,I_0$
+The intensity inside the glass is $I_{\mathrm{inside{}} = 0.96\,I_0$, but the power per unit area
+referenced to the vacuum intensity is $I_{\mathrm{inside{}} = (n_2/n_1)\,T\,I_0 = 1.5 \times 0.96 \times I_0 = 1.44\,I_0$
 if we compare the electric field amplitudes squared times the respective impedances.
 
 </details>
@@ -594,21 +594,21 @@ between the wave reflected from the top surface and the wave reflected from the 
 A phase shift of $\pi$ occurs upon reflection from a medium of higher refractive index. The condition
 for constructive interference (bright reflection) is:
 
-$$2nt\cos\theta_t = \left(m + \frac{1}{2}\right)\lambda \quad \mathrm{'\{'}(one\ phase\ shift){'\}'}$$
+$$2nt\cos\theta_t = \left(m + \frac{1}{2}\right)\lambda \quad \mathrm{(one\ phase\ shift){}$$
 
-$$2nt\cos\theta_t = m\lambda \quad \mathrm{'\{'}(zero\ or\ two\ phase\ shifts){'\}'}$$
+$$2nt\cos\theta_t = m\lambda \quad \mathrm{(zero\ or\ two\ phase\ shifts){}$$
 
 :::caution Common Pitfall
 Always count the number of $\pi$ phase shifts that occur upon reflection. A reflection from
 low-to-high refractive index introduces a $\pi$ shift; high-to-low does not. For a soap film in
-air, there is one $\pi$ shift (at the top surface). For a coating on glass ($n_{\mathrm{'\{'}coat{'\}'}} \lt n_{\mathrm{'\{'}glass{'\}'}}$), there is also one shift. The conditions for constructive and destructive interference swap depending on whether the total number of shifts is odd or even.
+air, there is one $\pi$ shift (at the top surface). For a coating on glass ($n_{\mathrm{coat{}} \lt n_{\mathrm{glass{}}$), there is also one shift. The conditions for constructive and destructive interference swap depending on whether the total number of shifts is odd or even.
 :::
 
 <details>
 <summary>Worked Example: Anti-reflection coating design</summary>
 
 **Problem.** Magnesium fluoride ($n = 1.38$) is used as an anti-reflection coating on a glass lens
-($n_{\mathrm{'\{'}glass{'\}'}} = 1.52$). Find the minimum coating thickness for destructive interference in
+($n_{\mathrm{glass{}} = 1.52$). Find the minimum coating thickness for destructive interference in
 reflected light at $\lambda = 550$ nm (normal incidence).
 
 **Solution.** At the air-coating interface (low to high $n$): $\pi$ phase shift.
@@ -717,7 +717,7 @@ The finesse determines the sharpness of the peaks: higher $R$ gives sharper peak
 
 **Free spectral range** (frequency spacing between adjacent peaks):
 
-$$\Delta\nu_{\mathrm{'\{'}FSR{'\}'}} = \frac{c}{2nd}$$
+$$\Delta\nu_{\mathrm{FSR{}} = \frac{c}{2nd}$$
 
 **Resolving power:**
 
@@ -732,7 +732,7 @@ difference at $\lambda = 500$ nm (normal incidence).
 
 **Solution.** Finesse: $\mathcal{'\{'}F{'\}'} = \pi\sqrt{0.90}/(1 - 0.90) = \pi(0.949)/0.10 = 29.8$.
 
-Free spectral range: $\Delta\nu_{\mathrm{'\{'}FSR{'\}'}} = c/(2nd) = (3 \times 10^8)/(2 \times 1.00 \times 10^{-3}) = 1.50 \times 10^{11}$ Hz.
+Free spectral range: $\Delta\nu_{\mathrm{FSR{}} = c/(2nd) = (3 \times 10^8)/(2 \times 1.00 \times 10^{-3}) = 1.50 \times 10^{11}$ Hz.
 
 Order number: $m = 2nd/\lambda = 2(1.00)(1.00 \times 10^{-3})/(500 \times 10^{-9}) = 4000$.
 
@@ -751,7 +751,7 @@ envelope of these wavelets, accounting for both amplitude and phase.
 
 **Kirchhoff diffraction integral.** The field at point $P$ due to an aperture in a screen is:
 
-$$E(P) = \frac{i}{\lambda}\iint_{\mathrm{'\{'}aperture{'\}'}} E(Q)\,\frac{e^{-ikr}}{r}\cos\theta\,dS$$
+$$E(P) = \frac{i}{\lambda}\iint_{\mathrm{aperture{}} E(Q)\,\frac{e^{-ikr}}{r}\cos\theta\,dS$$
 
 where $E(Q)$ is the field at the aperture point $Q$, $r$ is the distance from $Q$ to $P$, and $\theta$
 is the angle between the normal to the aperture and the direction to $P$. The obliquity factor
@@ -881,7 +881,7 @@ Minimum resolvable wavelength difference: $\delta\lambda = \lambda/R = 600/25000
 Two point sources are just resolvable when the central maximum of one coincides with the first minimum
 of the other:
 
-$$\theta_{\mathrm{'\{'}min{'\}'}} = 1.22\frac{\lambda}{D}$$
+$$\theta_{\mathrm{min{}} = 1.22\frac{\lambda}{D}$$
 
 where $D$ is the aperture diameter (for a circular aperture).
 
@@ -917,7 +917,7 @@ $$\sin\theta_1 = 1.22\frac{\lambda}{D}$$
 
 The bright central disk (the **Airy disk**) subtends an angle:
 
-$$\theta_{\mathrm{'\{'}Airy{'\}'}} = 1.22\frac{\lambda}{D}$$
+$$\theta_{\mathrm{Airy{}} = 1.22\frac{\lambda}{D}$$
 
 This is the basis of the **Rayleigh criterion** for resolving power of circular apertures (telescopes,
 microscopes, the eye). Approximately 84% of the total transmitted power falls within the Airy disk.
@@ -957,8 +957,8 @@ Fourier transform** of $t(x,y)$, evaluated at spatial frequencies $k_x/(2\pi)$ a
 3. Spatial filtering: by placing masks in the Fourier plane, one can selectively remove or enhance
    spatial frequency components, modifying the image (the basis of optical image processing).
 
-**Example.** A single slit of width $a$ has aperture function $t(x) = \mathrm{'\{'}rect{'\}'}(x/a)$. Its Fourier
-transform is $\mathrm{'\{'}sinc{'\}'}(\pi a \sin\theta/\lambda)$, directly giving the single-slit diffraction
+**Example.** A single slit of width $a$ has aperture function $t(x) = \mathrm{rect{}(x/a)$. Its Fourier
+transform is $\mathrm{sinc{}(\pi a \sin\theta/\lambda)$, directly giving the single-slit diffraction
 pattern. A periodic grating has sharp peaks in the Fourier transform (the diffraction orders), each
 corresponding to a spatial harmonic of the grating.
 
@@ -983,13 +983,13 @@ phase variations are converted to intensity variations, making transparent struc
 **Problem.** A double slit has width $a$ and centre-to-centre separation $d = 3a$. Use Fourier optics
 to predict the diffraction pattern and identify the missing orders.
 
-**Solution.** The aperture function is $t(x) = \mathrm{'\{'}rect{'\}'}(x/a) * [\delta(x - 3a/2) + \delta(x + 3a/2)]$,
+**Solution.** The aperture function is $t(x) = \mathrm{rect{}(x/a) * [\delta(x - 3a/2) + \delta(x + 3a/2)]$,
 i.e., the convolution of a single-slit function with two delta functions.
 
 By the convolution theorem, the Fourier transform is the product of a sinc function (single slit) and
 $\cos(\pi d \sin\theta/\lambda)$ (two-point interference):
 
-$E(\theta) \propto \mathrm{'\{'}sinc{'\}'}(\pi a\sin\theta/\lambda) \cdot \cos(\pi \cdot 3a \sin\theta/\lambda)$
+$E(\theta) \propto \mathrm{sinc{}(\pi a\sin\theta/\lambda) \cdot \cos(\pi \cdot 3a \sin\theta/\lambda)$
 
 The sinc envelope has zeros at $a\sin\theta = m\lambda$. The cosine fringes have maxima at
 $3a\sin\theta = m\lambda$. Missing orders when $3a\sin\theta = 3\lambda$ coincides with
@@ -1049,11 +1049,11 @@ components:
 
 $$\Delta\phi = \frac{2\pi}{\lambda}(n_o - n_e)\,t$$
 
-**Quarter-wave plate (QWP):** $\Delta\phi = \pi/2$, so $t_{\mathrm{'\{'}QWP{'\}'}} = \lambda/(4|n_o - n_e|)$.
+**Quarter-wave plate (QWP):** $\Delta\phi = \pi/2$, so $t_{\mathrm{QWP{}} = \lambda/(4|n_o - n_e|)$.
 Converts linear polarisation at $45°$ to the fast/slow axes into circular polarisation, and vice
 versa.
 
-**Half-wave plate (HWP):** $\Delta\phi = \pi$, so $t_{\mathrm{'\{'}HWP{'\}'}} = \lambda/(2|n_o - n_e|)$.
+**Half-wave plate (HWP):** $\Delta\phi = \pi$, so $t_{\mathrm{HWP{}} = \lambda/(2|n_o - n_e|)$.
 Rotates the plane of linear polarisation by $2\theta$, where $\theta$ is the angle between the
 input polarisation and the fast axis.
 
@@ -1137,7 +1137,7 @@ $r_s = \frac{n_1\cos\theta_B - n_2\cos\theta_t}{n_1\cos\theta_B + n_2\cos\theta_
 $R_s = (-0.384)^2 = 0.148$.
 
 The incident unpolarised light has equal s and p components ($I_s = I_p = I_0/2$). Only the s
-component is reflected: $I_{\mathrm{'\{'}reflected{'\}'}} = R_s \times I_0/2 = 0.148 \times I_0/2 = 0.074\,I_0$.
+component is reflected: $I_{\mathrm{reflected{}} = R_s \times I_0/2 = 0.148 \times I_0/2 = 0.074\,I_0$.
 
 The reflected light is 100% s-polarised with intensity $0.074\,I_0$ (about 7.4% of the incident).
 
@@ -1258,14 +1258,14 @@ height and $\theta$ is the angle with the optical axis.
 
 **Free space propagation** by distance $d$:
 
-$$M_{\mathrm{'\{'}prop{'\}'}} = \begin{pmatrix} 1 & d \\ 0 & 1 \end{pmatrix}$$
+$$M_{\mathrm{prop{}} = \begin{pmatrix} 1 & d \\ 0 & 1 \end{pmatrix}$$
 
 **Thin lens** of focal length $f$:
 
-$$M_{\mathrm{'\{'}lens{'\}'}} = \begin{pmatrix} 1 & 0 \\ -1/f & 1 \end{pmatrix}$$
+$$M_{\mathrm{lens{}} = \begin{pmatrix} 1 & 0 \\ -1/f & 1 \end{pmatrix}$$
 
 **System matrix:** The overall transformation is the product of individual matrices (applied in
-reverse order): $M_{\mathrm{'\{'}sys{'\}'}} = M_n \cdots M_2 M_1$.
+reverse order): $M_{\mathrm{sys{}} = M_n \cdots M_2 M_1$.
 
 ### 6.6 Mirror Equation
 
@@ -1309,7 +1309,7 @@ $$M = 1 + \frac{D}{f}$$
 
 **Compound microscope.** Total magnification:
 
-$$M_{\mathrm{'\{'}total{'\}'}} = -\frac{L}{f_o} \cdot \frac{D}{f_e}$$
+$$M_{\mathrm{total{}} = -\frac{L}{f_o} \cdot \frac{D}{f_e}$$
 
 where $L$ is the tube length, $f_o$ is the objective focal length, and $f_e$ is the eyepiece focal
 length.
@@ -1336,7 +1336,7 @@ is at the near point ($D = 250$ mm).
 
 Eyepiece magnification (image at near point): $M_e = 1 + D/f_e = 1 + 250/25 = 11$.
 
-Total magnification: $M_{\mathrm{'\{'}total{'\}'}} = M_o \times M_e = -40 \times 11 = -440$.
+Total magnification: $M_{\mathrm{total{}} = M_o \times M_e = -40 \times 11 = -440$.
 
 The negative sign indicates the image is inverted.
 
@@ -1374,9 +1374,9 @@ fall outside the lens aperture.
 
 The **minimum resolvable spatial frequency** is:
 
-$$f_{\mathrm{'\{'}max{'\}'}} = \frac{2\mathrm{'\{'}NA{'\}'}}{\lambda}$$
+$$f_{\mathrm{max{}} = \frac{2\mathrm{NA{}}{\lambda}$$
 
-where $\mathrm{'\{'}NA{'\}'} = n\sin\theta_{\mathrm{'\{'}max{'\}'}}$ is the numerical aperture.
+where $\mathrm{NA{} = n\sin\theta_{\mathrm{max{}}$ is the numerical aperture.
 
 ## 8. Coherence
 
@@ -1407,7 +1407,7 @@ wash out?
 
 (b) For a Gaussian spectrum, visibility drops to $1/e$ when $\Delta x = L_c = 11.9$ mm.
 
-(c) The number of fringes: $N_{\mathrm{'\{'}fringes{'\}'}} = L_c/\lambda = (11.9 \times 10^{-3})/(546.1 \times 10^{-9}) = 2.18 \times 10^4$.
+(c) The number of fringes: $N_{\mathrm{fringes{}} = L_c/\lambda = (11.9 \times 10^{-3})/(546.1 \times 10^{-9}) = 2.18 \times 10^4$.
 Over 20000 fringes are visible — a large number, but far fewer than for a laser.
 
 </details>
@@ -1571,10 +1571,10 @@ Starting from the Lorentz oscillator model for a single resonance:
 
 $$n^2(\omega) = 1 + \frac{Ne^2}{m_e\varepsilon_0}\frac{1}{\omega_0^2 - \omega^2 - i\gamma\omega}$$
 
-The real part $n(\omega) = \mathrm{'\{'}Re{'\}'}\sqrt{\epsilon(\omega)}$ gives the refractive index. The
+The real part $n(\omega) = \mathrm{Re{}\sqrt{\epsilon(\omega)}$ gives the refractive index. The
 imaginary part gives absorption:
 
-$$\alpha_{\mathrm{'\{'}abs{'\}'}} = \frac{2\omega}{c}\,\mathrm{'\{'}Im{'\}'}\, n(\omega)$$
+$$\alpha_{\mathrm{abs{}} = \frac{2\omega}{c}\,\mathrm{Im{}\, n(\omega)$$
 
 **Worked example.** For X-rays ($\omega \gg \omega_0$):
 
@@ -1607,15 +1607,15 @@ Light is guided by total internal reflection.
 
 The **numerical aperture:**
 
-$$\mathrm{'\{'}NA{'\}'} = \sin\theta_{\mathrm{'\{'}max{'\}'}} = \sqrt{n_1^2 - n_2^2}$$
+$$\mathrm{NA{} = \sin\theta_{\mathrm{max{}} = \sqrt{n_1^2 - n_2^2}$$
 
-where $\theta_{\mathrm{'\{'}max{'\}'}}$ is the maximum acceptance angle for light entering the fibre.
+where $\theta_{\mathrm{max{}}$ is the maximum acceptance angle for light entering the fibre.
 
 ### 12.2 Modes in Optical Fibres
 
 The number of modes supported depends on the **V-number:**
 
-$$V = \frac{2\pi a}{\lambda}\mathrm{'\{'}NA{'\}'}$$
+$$V = \frac{2\pi a}{\lambda}\mathrm{NA{}$$
 
 where $a$ is the core radius.
 
@@ -1736,7 +1736,7 @@ $R = [(1 - 1.52)/(1 + 1.52)]^2 = (0.52/2.52)^2 = 0.0426 = 4.26\%$.
 **Solution 10.** (a) $\Delta d = m\lambda/2 = 1000 \times 589 \times 10^{-9}/2 = 2.945 \times 10^{-4}$ m $= 0.295$ mm.
 (b) Fringes are visible for path difference $\Delta x \lt L_c = \lambda^2/\Delta\lambda = (589 \times 10^{-9})^2/(0.6 \times 10^{-9}) = 5.78 \times 10^{-4}$ m $= 0.578$ mm. Since the path difference is $2\Delta d$, the mirror can move up to $\Delta d = L_c/2 = 0.289$ mm before fringes wash out. Note that 1000 fringes correspond to $\Delta d = 0.295$ mm, which slightly exceeds $L_c/2$ — the outermost fringes would already be fading.
 
-**Solution 11.** $\mathcal{'\{'}F{'\}'} = \pi\sqrt{0.85}/(1 - 0.85) = 19.3$. $\Delta\nu_{\mathrm{'\{'}FSR{'\}'}} = c/(2nd) = 3 \times 10^8/(2 \times 0.5 \times 10^{-3}) = 3 \times 10^{11}$ Hz. $m = 2nd/\lambda = 2000$. $\mathcal{'\{'}R{'\}'} = m\mathcal{'\{'}F{'\}'} = 38600$. $\delta\lambda = \lambda/\mathcal{'\{'}R{'\}'} = 500/38600 = 0.0130$ nm.
+**Solution 11.** $\mathcal{'\{'}F{'\}'} = \pi\sqrt{0.85}/(1 - 0.85) = 19.3$. $\Delta\nu_{\mathrm{FSR{}} = c/(2nd) = 3 \times 10^8/(2 \times 0.5 \times 10^{-3}) = 3 \times 10^{11}$ Hz. $m = 2nd/\lambda = 2000$. $\mathcal{'\{'}R{'\}'} = m\mathcal{'\{'}F{'\}'} = 38600$. $\delta\lambda = \lambda/\mathcal{'\{'}R{'\}'} = 500/38600 = 0.0130$ nm.
 
 **Solution 14.** $\theta_{\min} = 1.22\lambda/D = 1.22(500 \times 10^{-9})/2.4 = 2.54 \times 10^{-7}$ rad $= 0.0527''$.
 The ground-based $D = 8$ m telescope has a diffraction limit of $1.22(500 \times 10^{-9})/8 = 7.63 \times 10^{-8}$ rad $= 0.0158''$, but atmospheric seeing of $1.0''$ degrades this by a factor of $\sim 63$. Hubble, being above the atmosphere, achieves its diffraction-limited $0.053''$ resolution, far surpassing the ground-based telescope's effective resolution.
@@ -1757,7 +1757,7 @@ $R_s = 0.0119$.
 $r_p = (1.50\cos 45° - 1.33\cos 38.8°)/(1.50\cos 45° + 1.33\cos 38.8°) = (1.061 - 1.038)/(1.061 + 1.038) = 0.011$.
 $R_p = 1.2 \times 10^{-4}$. (c) $\theta_B = \arctan(1.50/1.33) = 48.4°$. The reflected light is most strongly polarised at $\theta_B$.
 
-**Solution 7.** $\theta_c = \arcsin(1.46/1.48) = 80.6°$. $\mathrm{'\{'}NA{'\}'} = \sqrt{1.48^2 - 1.46^2} = \sqrt{2.190 - 2.132} = \sqrt{0.0588} = 0.242$. $\theta_{\max} = \arcsin(0.242) = 14.0°$.
+**Solution 7.** $\theta_c = \arcsin(1.46/1.48) = 80.6°$. $\mathrm{NA{} = \sqrt{1.48^2 - 1.46^2} = \sqrt{2.190 - 2.132} = \sqrt{0.0588} = 0.242$. $\theta_{\max} = \arcsin(0.242) = 14.0°$.
 
 **Solution 12.** (a) First minimum at $\sin\theta_1 = \lambda/a = 633 \times 10^{-9}/(5.0 \times 10^{-5}) = 1.266 \times 10^{-2}$, $\theta_1 = 0.726°$. Central maximum width on screen: $2y_1 \approx 2L\theta_1 = 2(3.0)(1.266 \times 10^{-2}) = 7.60$ cm.
 (b) Second secondary maximum near $\alpha \approx 5\pi/2 = 7.854$. $I/I_0 = (\sin 7.854/7.854)^2 = (1/7.854)^2 = 0.0162$, about 1.6% of $I_0$.
@@ -1770,7 +1770,7 @@ infinity for the second lens). $1/s_2' = 1/f_2 - 1/s_2$: since $s_2 = 0$ (parall
 second lens), $s_2' = f_2 = -15$ cm. The final image is virtual, 15 cm to the left of the diverging
 lens.
 
-Matrix method: $M_{\mathrm{'\{'}sys{'\}'}} = M_{\mathrm{'\{'}lens{'\}'}_2} \cdot M_{\mathrm{'\{'}prop{'\}'}} \cdot M_{\mathrm{'\{'}lens{'\}'}_1}$
+Matrix method: $M_{\mathrm{sys{}} = M_{\mathrm{lens{}_2} \cdot M_{\mathrm{prop{}} \cdot M_{\mathrm{lens{}_1}$
 $= \begin{pmatrix} 1 & 0 \\ 1/15 & 1 \end{pmatrix} \begin{pmatrix} 1 & 60 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 \\ -1/20 & 1 \end{pmatrix}$
 $= \begin{pmatrix} 1 & 0 \\ 1/15 & 1 \end{pmatrix} \begin{pmatrix} 1 & 60 \\ -1/20 & 1 \end{pmatrix}$
 $= \begin{pmatrix} 1 & 60 \\ 1/15 - 1/20 & 5 \end{pmatrix} = \begin{pmatrix} 1 & 60 \\ 1/60 & 5 \end{pmatrix}$.
@@ -1821,19 +1821,19 @@ $$\mathcal{'\{'}F{'\}'}\{t_1 \cdot t_2\} = \mathcal{'\{'}F{'\}'}\{t_1\} * \mathc
 <details>
 <summary>Solution</summary>
 
-The transmittance of a single slit centred at $x = 0$ is $t_{\mathrm{'\{'}slit{'\}'}}(x) = \mathrm{'\{'}rect{'\}'}(x/a)$. The full grating is $N$ slits:
+The transmittance of a single slit centred at $x = 0$ is $t_{\mathrm{slit{}}(x) = \mathrm{rect{}(x/a)$. The full grating is $N$ slits:
 
-$$t(x) = \sum_{n=0}^{N-1} t_{\mathrm{'\{'}slit{'\}'}}(x - nd) = t_{\mathrm{'\{'}slit{'\}'}}(x) * \sum_{n=0}^{N-1} \delta(x - nd)$$
+$$t(x) = \sum_{n=0}^{N-1} t_{\mathrm{slit{}}(x - nd) = t_{\mathrm{slit{}}(x) * \sum_{n=0}^{N-1} \delta(x - nd)$$
 
 The Fourier transform is:
 
-$$\tilde{t}(u) = \mathcal{'\{'}F{'\}'}\{t_{\mathrm{'\{'}slit{'\}'}}\} \cdot \mathcal{'\{'}F{'\}'}\left\{\sum_{n=0}^{N-1}\delta(x - nd)\right\}$$
+$$\tilde{t}(u) = \mathcal{'\{'}F{'\}'}\{t_{\mathrm{slit{}}\} \cdot \mathcal{'\{'}F{'\}'}\left\{\sum_{n=0}^{N-1}\delta(x - nd)\right\}$$
 
-$$= a\,\mathrm{'\{'}sinc{'\}'}(\pi a u) \cdot \sum_{n=0}^{N-1} e^{-2\pi i n d u} = a\,\mathrm{'\{'}sinc{'\}'}(\pi a u) \cdot \frac{\sin(N\pi d u)}{\sin(\pi d u)}$$
+$$= a\,\mathrm{sinc{}(\pi a u) \cdot \sum_{n=0}^{N-1} e^{-2\pi i n d u} = a\,\mathrm{sinc{}(\pi a u) \cdot \frac{\sin(N\pi d u)}{\sin(\pi d u)}$$
 
 The intensity is:
 
-$$I(u) = I_0\,a^2\,\mathrm{'\{'}sinc{'\}'}^2(\pi a u)\,\frac{\sin^2(N\pi d u)}{\sin^2(\pi d u)}$$
+$$I(u) = I_0\,a^2\,\mathrm{sinc{}^2(\pi a u)\,\frac{\sin^2(N\pi d u)}{\sin^2(\pi d u)}$$
 
 The first factor is the single-slit envelope; the second is the $N$-slit interference pattern. Principal maxima occur at $du = m$ (integer $m$), giving the grating equation $d\sin\theta = m\lambda$.
 
@@ -1909,11 +1909,11 @@ This is proportional to the Fourier transform of $I(\xi, \eta)$.
 <details>
 <summary>Solution</summary>
 
-$$L_c = \frac{\lambda^2}{\Delta\lambda} = \frac{(589 \times 10^{-9})^2}{0.6 \times 10^{-9}} = \frac{3.47 \times 10^{-13}}{6 \times 10^{-10}} \approx 5.78 \times 10^{-4}\,\mathrm{'\{'}m{'\}'} \approx 0.578\,\mathrm{'\{'}mm{'\}'}$$
+$$L_c = \frac{\lambda^2}{\Delta\lambda} = \frac{(589 \times 10^{-9})^2}{0.6 \times 10^{-9}} = \frac{3.47 \times 10^{-13}}{6 \times 10^{-10}} \approx 5.78 \times 10^{-4}\,\mathrm{m{} \approx 0.578\,\mathrm{mm{}$$
 
 For a He-Ne laser ($\lambda = 632.8$ nm, $\Delta\lambda \sim 10^{-6}$ nm):
 
-$$L_c = \frac{(632.8 \times 10^{-9})^2}{10^{-15}} \approx 400\,\mathrm{'\{'}m{'\}'}$$
+$$L_c = \frac{(632.8 \times 10^{-9})^2}{10^{-15}} \approx 400\,\mathrm{m{}$$
 
 The enormous coherence length of the laser is why it produces sharp fringes over very large path differences. $\blacksquare$
 
@@ -1971,13 +1971,13 @@ Optical elements are represented by $2 \times 2$ matrices:
 
 **Theorem 13.1.** The output of a sequence of optical elements is the product of their Jones matrices applied to the input Jones vector:
 
-$$\mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}out{'\}'}} = \mathbf{'\{'}M{'\}'}_n \cdots \mathbf{'\{'}M{'\}'}_2\,\mathbf{'\{'}M{'\}'}_1\,\mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}in{'\}'}}$$
+$$\mathbf{'\{'}E{'\}'}_{\mathrm{out{}} = \mathbf{'\{'}M{'\}'}_n \cdots \mathbf{'\{'}M{'\}'}_2\,\mathbf{'\{'}M{'\}'}_1\,\mathbf{'\{'}E{'\}'}_{\mathrm{in{}}$$
 
 ### 13.2 Stokes Parameters
 
 For partially polarised light, the **Stokes parameters** are:
 
-$$S_0 = |E_x|^2 + |E_y|^2, \quad S_1 = |E_x|^2 - |E_y|^2, \quad S_2 = 2\,\mathrm{'\{'}Re{'\}'}(E_x E_y^*), \quad S_3 = 2\,\mathrm{'\{'}Im{'\}'}(E_x E_y^*)$$
+$$S_0 = |E_x|^2 + |E_y|^2, \quad S_1 = |E_x|^2 - |E_y|^2, \quad S_2 = 2\,\mathrm{Re{}(E_x E_y^*), \quad S_3 = 2\,\mathrm{Im{}(E_x E_y^*)$$
 
 The **degree of polarisation** is
 

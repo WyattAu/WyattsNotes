@@ -23,11 +23,11 @@ Find the domain of $f \circ g$.
 
 We need the range of $g$ to fall within the domain of $f$.
 
-$\mathrm{'\{'}dom{'\}'}(g) = \\{x \in \mathbb{'\{'}R{'\}'} : x \neq -2\\}$.
+$\mathrm{dom{}(g) = \\{x \in \mathbb{'\{'}R{'\}'} : x \neq -2\\}$.
 
-$\mathrm{'\{'}ran{'\}'}(g) = \\{y \in \mathbb{'\{'}R{'\}'} : y \neq 0\\}$ since $g(x) = \dfrac{1}{x+2}$ can take any non-zero real value.
+$\mathrm{ran{}(g) = \\{y \in \mathbb{'\{'}R{'\}'} : y \neq 0\\}$ since $g(x) = \dfrac{1}{x+2}$ can take any non-zero real value.
 
-$\mathrm{'\{'}dom{'\}'}(f) = \\{x \in \mathbb{'\{'}R{'\}'} : x \geq 1\\}$.
+$\mathrm{dom{}(f) = \\{x \in \mathbb{'\{'}R{'\}'} : x \geq 1\\}$.
 
 For $f \circ g$ to be defined, we need $g(x) \geq 1$:
 
@@ -45,7 +45,7 @@ $$1 \leq x + 2 \implies x \geq -1$$
 
 This contradicts $x < -2$. No solutions in this case.
 
-Therefore $\mathrm{'\{'}dom{'\}'}(f \circ g) = (-2,\; -1]$.
+Therefore $\mathrm{dom{}(f \circ g) = (-2,\; -1]$.
 
 ---
 
@@ -116,7 +116,7 @@ Let $f(x) = x^2 - 4x + 3$, $x \in \mathbb{'\{'}R{'\}'}$.
 
 $f(x) = (x - 2)^2 - 1$ has vertex at $(2, -1)$, opening upward.
 
-Restricting to $\mathrm{'\{'}dom{'\}'}(f) = [2,\; \infty)$ makes $f$ strictly increasing.
+Restricting to $\mathrm{dom{}(f) = [2,\; \infty)$ makes $f$ strictly increasing.
 
 For $y = (x - 2)^2 - 1$:
 
@@ -126,7 +126,7 @@ $$x - 2 = \sqrt{y + 1} \quad (\text{'\{'}since {'\}'} x \geq 2)$$
 
 $$x = 2 + \sqrt{y + 1}$$
 
-Therefore $f^{-1}(x) = 2 + \sqrt{x + 1}$ with $\mathrm{'\{'}dom{'\}'}(f^{-1}) = [-1,\; \infty)$.
+Therefore $f^{-1}(x) = 2 + \sqrt{x + 1}$ with $\mathrm{dom{}(f^{-1}) = [-1,\; \infty)$.
 
 ---
 
@@ -150,7 +150,7 @@ $$= 4\left(x^2 + x\right) + 2 = 4\left(x + \tfrac{1}{2}\right)^2 - 1 + 2 = 4\lef
 
 Since $4\left(x + \tfrac{1}{2}\right)^2 \geq 0$ for all $x \in \mathbb{'\{'}R{'\}'}$:
 
-$$\mathrm{'\{'}ran{'\}'}(g \circ f) = [1,\; \infty)$$
+$$\mathrm{ran{}(g \circ f) = [1,\; \infty)$$
 
 ---
 
@@ -180,9 +180,9 @@ So $f(x) = 2(x - 3)^2 - 5 = 2x^2 - 12x + 13$.
 
 Therefore $a = 2$, $b = -12$, $c = 13$.
 
-Since $f$ has minimum value $-5$ and opens upward, $\mathrm{'\{'}ran{'\}'}(f) = [-5,\; \infty)$.
+Since $f$ has minimum value $-5$ and opens upward, $\mathrm{ran{}(f) = [-5,\; \infty)$.
 
-Therefore $\mathrm{'\{'}dom{'\}'}(f^{-1}) = [-5,\; \infty)$, and so $\mathrm{'\{'}ran{'\}'}(f^{-1}) = [3,\; \infty)$ (the restricted domain where $f$ is injective, to the right of the vertex).
+Therefore $\mathrm{dom{}(f^{-1}) = [-5,\; \infty)$, and so $\mathrm{ran{}(f^{-1}) = [3,\; \infty)$ (the restricted domain where $f$ is injective, to the right of the vertex).
 
 ---
 
@@ -196,7 +196,7 @@ Let $f(x) = \log_2(x + 1)$, $x > -1$. Find $f^{-1}(x)$ and solve $f(x) = f^{-1}(
 
 $y = \log_2(x + 1) \implies 2^y = x + 1 \implies x = 2^y - 1$.
 
-So $f^{-1}(x) = 2^x - 1$ with $\mathrm{'\{'}dom{'\}'}(f^{-1}) = \mathbb{'\{'}R{'\}'}$.
+So $f^{-1}(x) = 2^x - 1$ with $\mathrm{dom{}(f^{-1}) = \mathbb{'\{'}R{'\}'}$.
 
 Solving $f(x) = f^{-1}(x)$:
 
@@ -260,13 +260,13 @@ Find the domain and range of $f(x) = \dfrac{2}{x^2 + 1}$.
 
 Domain: $x^2 + 1 \neq 0$ for all real $x$ (since $x^2 \geq 0$).
 
-$$\mathrm{'\{'}dom{'\}'}(f) = \mathbb{'\{'}R{'\}'}$$
+$$\mathrm{dom{}(f) = \mathbb{'\{'}R{'\}'}$$
 
 Range: $x^2 + 1 \geq 1$ for all $x$, so $0 < \dfrac{2}{x^2 + 1} \leq 2$.
 
 Maximum value $2$ occurs at $x = 0$. The function approaches $0$ as $|x| \to \infty$.
 
-$$\mathrm{'\{'}ran{'\}'}(f) = (0,\; 2]$$
+$$\mathrm{ran{}(f) = (0,\; 2]$$
 
 ---
 
@@ -310,9 +310,9 @@ $$x = \sqrt{\frac{y + 3}{2}} - 1$$
 
 $$f^{-1}(x) = \sqrt{\frac{x + 3}{2}} - 1$$
 
-$\mathrm{'\{'}dom{'\}'}(f^{-1}) = \mathrm{'\{'}ran{'\}'}(f) = [-3,\; \infty)$.
+$\mathrm{dom{}(f^{-1}) = \mathrm{ran{}(f) = [-3,\; \infty)$.
 
-$\mathrm{'\{'}ran{'\}'}(f^{-1}) = \mathrm{'\{'}dom{'\}'}(f) = [-1,\; \infty)$.
+$\mathrm{ran{}(f^{-1}) = \mathrm{dom{}(f) = [-1,\; \infty)$.
 
 ---
 
@@ -394,7 +394,7 @@ $f \circ g(x) = f(g(x)) = f(x - 4) = \sqrt{x - 4}$.
 
 Domain of $f \circ g$: we need $x - 4 \geq 0$, i.e. $x \geq 4$.
 
-$$\mathrm{'\{'}dom{'\}'}(f \circ g) = [4,\; \infty)$$
+$$\mathrm{dom{}(f \circ g) = [4,\; \infty)$$
 
 Note: $g(x) = x - 4$ is defined for all $x \in \mathbb{'\{'}R{'\}'}$, but the range of $g$ must fall within the domain of $f$ (which is $[0, \infty)$), so $g(x) \geq 0 \implies x \geq 4$.
 
@@ -430,7 +430,7 @@ Since $f(a) = f(b) \implies a = b$, the function is **injective**.
 
 1. **Confusing $f^{-1}$ with the reciprocal $\dfrac{1}{f}$.** The notation $f^{-1}$ denotes the inverse function, NOT the reciprocal. $f^{-1}(x)$ is the value of $y$ such that $f(y) = x$, which is completely different from $\dfrac{1}{f(x)}$.
 
-2. **Incorrect domain of composite functions.** The domain of $f \circ g$ is NOT simply $\mathrm{'\{'}dom{'\}'}(g)$. It is the set of all $x$ in $\mathrm{'\{'}dom{'\}'}(g)$ such that $g(x) \in \mathrm{'\{'}dom{'\}'}(f)$. You must check both conditions.
+2. **Incorrect domain of composite functions.** The domain of $f \circ g$ is NOT simply $\mathrm{dom{}(g)$. It is the set of all $x$ in $\mathrm{dom{}(g)$ such that $g(x) \in \mathrm{dom{}(f)$. You must check both conditions.
 
 3. **Wrong direction for horizontal shifts.** $f(x - h)$ shifts the graph RIGHT by $h$ units, not left. The transformation is counterintuitive: replacing $x$ with $x - h$ moves the graph in the positive $x$-direction.
 
@@ -462,11 +462,11 @@ $x = \dfrac{-1 - 2y}{y - 3} = \dfrac{2y + 1}{3 - y}$.
 
 $$f^{-1}(x) = \frac{2x + 1}{3 - x}$$
 
-(b) $\mathrm{'\{'}dom{'\}'}(f^{-1}) = \mathrm{'\{'}ran{'\}'}(f)$. Since $f(x) = \dfrac{3x - 1}{x + 2} = 3 - \dfrac{7}{x + 2}$ and $\dfrac{7}{x+2}$ takes all non-zero real values, $\mathrm{'\{'}ran{'\}'}(f) = \mathbb{'\{'}R{'\}'} \setminus \{3\}$.
+(b) $\mathrm{dom{}(f^{-1}) = \mathrm{ran{}(f)$. Since $f(x) = \dfrac{3x - 1}{x + 2} = 3 - \dfrac{7}{x + 2}$ and $\dfrac{7}{x+2}$ takes all non-zero real values, $\mathrm{ran{}(f) = \mathbb{'\{'}R{'\}'} \setminus \{3\}$.
 
-$\mathrm{'\{'}dom{'\}'}(f^{-1}) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq 3\}$.
+$\mathrm{dom{}(f^{-1}) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq 3\}$.
 
-$\mathrm{'\{'}ran{'\}'}(f^{-1}) = \mathrm{'\{'}dom{'\}'}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -2\}$.
+$\mathrm{ran{}(f^{-1}) = \mathrm{dom{}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -2\}$.
 
 (c) $\dfrac{3x - 1}{x + 2} = x \implies 3x - 1 = x^2 + 2x \implies x^2 - x + 1 = 0$.
 
@@ -487,7 +487,7 @@ Let $f(x) = x^2 - 6x + 5$ and $g(x) = 2x - 3$.
 
 (a) $f(x) = (x - 3)^2 - 9 + 5 = (x - 3)^2 - 4$.
 
-(b) Since $(x - 3)^2 \geq 0$: $\mathrm{'\{'}ran{'\}'}(f) = [-4,\; \infty)$.
+(b) Since $(x - 3)^2 \geq 0$: $\mathrm{ran{}(f) = [-4,\; \infty)$.
 
 (c) $f \circ g(x) = f(2x - 3) = (2x - 3 - 3)^2 - 4 = (2x - 6)^2 - 4 = 4x^2 - 24x + 36 - 4 = 4x^2 - 24x + 32$.
 
@@ -509,7 +509,7 @@ The function $f$ is defined by $f(x) = \dfrac{1}{x^2 - 4}$.
 
 (a) $x^2 - 4 \neq 0 \implies x \neq \pm 2$.
 
-$$\mathrm{'\{'}dom{'\}'}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -2 \text{'\{'} and {'\}'} x \neq 2\}$$
+$$\mathrm{dom{}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -2 \text{'\{'} and {'\}'} x \neq 2\}$$
 
 (b) Let $y = \dfrac{1}{x^2 - 4}$. Then $x^2 - 4 = \dfrac{1}{y}$, so $x^2 = 4 + \dfrac{1}{y} = \dfrac{4y + 1}{y}$.
 
@@ -519,7 +519,7 @@ Critical values: $y = 0$ (asymptote) and $y = -\dfrac{1}{4}$.
 
 $\dfrac{4y + 1}{y} \geq 0 \implies y < -\dfrac{1}{4}$ or $y > 0$.
 
-$$\mathrm{'\{'}ran{'\}'}(f) = \left(-\infty,\; -\dfrac{1}{4}\right) \cup (0,\; \infty)$$
+$$\mathrm{ran{}(f) = \left(-\infty,\; -\dfrac{1}{4}\right) \cup (0,\; \infty)$$
 
 (c) $\dfrac{1}{x^2 - 4} = \dfrac{1}{5} \implies x^2 - 4 = 5 \implies x^2 = 9 \implies x = \pm 3$.
 
@@ -539,7 +539,7 @@ Let $f(x) = 2^x$ and $g(x) = \log_2 x$.
 
 (b) $g \circ f(x) = g(2^x) = \log_2(2^x) = x$, for all $x \in \mathbb{'\{'}R{'\}'}$.
 
-(c) $f$ and $g$ are inverse functions of each other. $f \circ g = \mathrm{'\{'}id{'\}'}$ on $(0, \infty)$ and $g \circ f = \mathrm{'\{'}id{'\}'}$ on $\mathbb{'\{'}R{'\}'}$.
+(c) $f$ and $g$ are inverse functions of each other. $f \circ g = \mathrm{id{}$ on $(0, \infty)$ and $g \circ f = \mathrm{id{}$ on $\mathbb{'\{'}R{'\}'}$.
 
 ---
 

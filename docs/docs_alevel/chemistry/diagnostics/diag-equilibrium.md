@@ -281,26 +281,26 @@ The pH change is from $2.88$ to $3.91$, a change of $1.03$ units (not 2 units). 
 
 #### UT-4: Heterogeneous Equilibrium
 
-**Question:** For the equilibrium $\mathrm{'\{'}NH{'\}'}_4\mathrm{'\{'}HS{'\}'}(s) \rightleftharpoons \mathrm{'\{'}NH{'\}'}_3(g) + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}S{'\}'}(g)$, the total pressure at equilibrium is $0.660\,\mathrm{'\{'}atm{'\}'}$ at $298\,\mathrm{'\{'}K{'\}'}$. Calculate $K_p$.
+**Question:** For the equilibrium $\mathrm{NH{}_4\mathrm{HS{}(s) \rightleftharpoons \mathrm{NH{}_3(g) + \mathrm{H{}_2\mathrm{S{}(g)$, the total pressure at equilibrium is $0.660\,\mathrm{atm{}$ at $298\,\mathrm{K{}$. Calculate $K_p$.
 
 **Solution:**
 
 Since the solid does not appear in the expression:
 
-$$K_p = p(\mathrm{'\{'}NH{'\}'}_3) \times p(\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}S{'\}'})$$
+$$K_p = p(\mathrm{NH{}_3) \times p(\mathrm{H{}_2\mathrm{S{})$$
 
-From stoichiometry, $p(\mathrm{'\{'}NH{'\}'}_3) = p(\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}S{'\}'}) = \frac{0.660}{2} = 0.330\,\mathrm{'\{'}atm{'\}'}$ (1 mark).
+From stoichiometry, $p(\mathrm{NH{}_3) = p(\mathrm{H{}_2\mathrm{S{}) = \frac{0.660}{2} = 0.330\,\mathrm{atm{}$ (1 mark).
 
-$$K_p = 0.330 \times 0.330 = 0.109\,\mathrm{'\{'}atm{'\}'}^2$$ (1 mark).
+$$K_p = 0.330 \times 0.330 = 0.109\,\mathrm{atm{}^2$$ (1 mark).
 
 #### UT-5: Le Chatelier Applied
 
-**Question:** For the equilibrium $\mathrm{'\{'}N{'\}'}_2(g) + 3\mathrm{'\{'}H{'\}'}_2(g) \rightleftharpoons 2\mathrm{'\{'}NH{'\}'}_3(g) \quad \Delta H = -92\,\mathrm{kJ\,mol^{-1}}$, predict and explain the effect of each change on the equilibrium yield of ammonia:
+**Question:** For the equilibrium $\mathrm{N{}_2(g) + 3\mathrm{H{}_2(g) \rightleftharpoons 2\mathrm{NH{}_3(g) \quad \Delta H = -92\,\mathrm{kJ\,mol^{-1}}$, predict and explain the effect of each change on the equilibrium yield of ammonia:
 
 (a) Increasing pressure
 (b) Increasing temperature
 (c) Adding a catalyst
-(d) Removing $\mathrm{'\{'}NH{'\}'}_3$ as it is formed
+(d) Removing $\mathrm{NH{}_3$ as it is formed
 
 **Solution:**
 
@@ -310,19 +310,19 @@ $$K_p = 0.330 \times 0.330 = 0.109\,\mathrm{'\{'}atm{'\}'}^2$$ (1 mark).
 
 (c) A catalyst increases the rate of both forward and reverse reactions equally. It has **no effect** on the equilibrium position or yield. The system reaches equilibrium faster but the yield is unchanged (1 mark).
 
-(d) Removing $\mathrm{'\{'}NH{'\}'}_3$ decreases its partial pressure (concentration). The equilibrium shifts to the right to replace the $\mathrm{'\{'}NH{'\}'}_3$, **increasing the yield** of $\mathrm{'\{'}NH{'\}'}_3$ per pass through the reactor (1 mark). This is the principle behind the industrial Haber process, where $\mathrm{'\{'}NH{'\}'}_3$ is continually condensed out.
+(d) Removing $\mathrm{NH{}_3$ decreases its partial pressure (concentration). The equilibrium shifts to the right to replace the $\mathrm{NH{}_3$, **increasing the yield** of $\mathrm{NH{}_3$ per pass through the reactor (1 mark). This is the principle behind the industrial Haber process, where $\mathrm{NH{}_3$ is continually condensed out.
 
 #### IT-4: Equilibrium and Thermodynamics Combined
 
-**Question:** For the reaction $\mathrm{'\{'}CO{'\}'}(g) + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}(g) \rightleftharpoons \mathrm{'\{'}CO{'\}'}_2(g) + \mathrm{'\{'}H{'\}'}_2(g)$:
+**Question:** For the reaction $\mathrm{CO{}(g) + \mathrm{H{}_2\mathrm{O{}(g) \rightleftharpoons \mathrm{CO{}_2(g) + \mathrm{H{}_2(g)$:
 
 $\Delta H^\circ = -41\,\mathrm{kJ\,mol^{-1}}$, $\Delta S^\circ = -42\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
-(a) Calculate $K_p$ at $298\,\mathrm{'\{'}K{'\}'}$.
+(a) Calculate $K_p$ at $298\,\mathrm{K{}$.
 
 (b) At what temperature does $K_p = 1$?
 
-(c) If the reaction starts with $1.00\,\mathrm{'\{'}atm{'\}'}$ of $\mathrm{'\{'}CO{'\}'}$ and $1.00\,\mathrm{'\{'}atm{'\}'}$ of $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ and no products, calculate the equilibrium partial pressures at $298\,\mathrm{'\{'}K{'\}'}$.
+(c) If the reaction starts with $1.00\,\mathrm{atm{}$ of $\mathrm{CO{}$ and $1.00\,\mathrm{atm{}$ of $\mathrm{H{}_2\mathrm{O{}$ and no products, calculate the equilibrium partial pressures at $298\,\mathrm{K{}$.
 
 **Solution:**
 
@@ -334,11 +334,11 @@ Since $\Delta n = 0$, $K_p$ is dimensionless (1 mark).
 
 (b) $K_p = 1$ when $\Delta G^\circ = 0$:
 
-$$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{-41000}{-0.042} = 976\,\mathrm{'\{'}K{'\}'}$$ (1 mark).
+$$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{-41000}{-0.042} = 976\,\mathrm{K{}$$ (1 mark).
 
 (c) ICE table (pressures in atm):
 
-| | $\mathrm{'\{'}CO{'\}'}$ | $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ | $\mathrm{'\{'}CO{'\}'}_2$ | $\mathrm{'\{'}H{'\}'}_2$ |
+| | $\mathrm{CO{}$ | $\mathrm{H{}_2\mathrm{O{}$ | $\mathrm{CO{}_2$ | $\mathrm{H{}_2$ |
 |---|---|---|---|---|
 | Initial | 1.00 | 1.00 | 0 | 0 |
 | Change | $-x$ | $-x$ | $+x$ | $+x$ |
@@ -352,6 +352,6 @@ $$x = 314.5(1-x) = 314.5 - 314.5x$$
 
 $$315.5x = 314.5$$
 
-$$x = 0.997\,\mathrm{'\{'}atm{'\}'}$$
+$$x = 0.997\,\mathrm{atm{}$$
 
-Equilibrium: $p(\mathrm{'\{'}CO{'\}'}) = p(\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}) = 0.003\,\mathrm{'\{'}atm{'\}'}$, $p(\mathrm{'\{'}CO{'\}'}_2) = p(\mathrm{'\{'}H{'\}'}_2) = 0.997\,\mathrm{'\{'}atm{'\}'}$ (1 mark).
+Equilibrium: $p(\mathrm{CO{}) = p(\mathrm{H{}_2\mathrm{O{}) = 0.003\,\mathrm{atm{}$, $p(\mathrm{CO{}_2) = p(\mathrm{H{}_2) = 0.997\,\mathrm{atm{}$ (1 mark).

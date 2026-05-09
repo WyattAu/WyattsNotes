@@ -157,7 +157,7 @@ Maximum flow = 18.
 
 In a **minimum cost maximum flow** problem, each edge $(u, v)$ has a cost $w(u, v)$ per unit of flow, in addition to its capacity. The goal is to find a maximum flow of minimum total cost.
 
-**Total cost:** $\mathrm{'\{'}cost{'\}'}(f) = \sum_{(u,v) \in E} f(u,v) \cdot w(u,v)$.
+**Total cost:** $\mathrm{cost{}(f) = \sum_{(u,v) \in E} f(u,v) \cdot w(u,v)$.
 
 **Algorithm (Successive Shortest Paths):**
 
@@ -274,7 +274,7 @@ where $w(i, j) = \sum_{l=i}^{j} p_l + \sum_{l=i-1}^{j} q_l$ is the total probabi
 
 **Running time:** $O(n^3)$ (Knuth's optimisation reduces this to $O(n^2)$ when the cost function satisfies the quadrangle inequality).
 
-**Theorem 2.2 (Knuth's Optimisation).** If the optimal root of $e[i, j]$ is monotone (i.e., $\mathrm{'\{'}root{'\}'}[i, j-1] \leq \mathrm{'\{'}root{'\}'}[i, j] \leq \mathrm{'\{'}root{'\}'}[i+1, j]$), then the DP can be computed in $O(n^2)$ time by restricting the search range for the root.
+**Theorem 2.2 (Knuth's Optimisation).** If the optimal root of $e[i, j]$ is monotone (i.e., $\mathrm{root{}[i, j-1] \leq \mathrm{root{}[i, j] \leq \mathrm{root{}[i+1, j]$), then the DP can be computed in $O(n^2)$ time by restricting the search range for the root.
 
 <details>
 <summary>Worked Example: Optimal BST</summary>
@@ -494,7 +494,7 @@ The **convex hull** of a set of points $S \subset \mathbb{'\{'}R{'\}'}^2$ is the
 
 ### 5.1 Introduction
 
-An $\alpha$-approximation algorithm for a minimisation problem returns a solution with cost at most $\alpha \cdot \mathrm{'\{'}OPT{'\}'}$. For a maximisation problem, the solution has value at least $\mathrm{'\{'}OPT{'\}'} / \alpha$.
+An $\alpha$-approximation algorithm for a minimisation problem returns a solution with cost at most $\alpha \cdot \mathrm{OPT{}$. For a maximisation problem, the solution has value at least $\mathrm{OPT{} / \alpha$.
 
 ### 5.2 Vertex Cover -- 2-Approximation
 
@@ -504,7 +504,7 @@ An $\alpha$-approximation algorithm for a minimisation problem returns a solutio
 
 **Theorem 5.1.** This algorithm gives a 2-approximation for minimum vertex cover.
 
-*Proof.* The algorithm picks a set $C$ of edges that form a matching (no two share a vertex). For each edge in $C$, both endpoints are added to the cover, so $|S| = 2|C|$. Any vertex cover must include at least one endpoint of each edge in $C$ (since $C$ is a matching), so $\mathrm{'\{'}OPT{'\}'} \geq |C|$. Therefore $|S| = 2|C| \leq 2 \cdot \mathrm{'\{'}OPT{'\}'}$. $\blacksquare$
+*Proof.* The algorithm picks a set $C$ of edges that form a matching (no two share a vertex). For each edge in $C$, both endpoints are added to the cover, so $|S| = 2|C|$. Any vertex cover must include at least one endpoint of each edge in $C$ (since $C$ is a matching), so $\mathrm{OPT{} \geq |C|$. Therefore $|S| = 2|C| \leq 2 \cdot \mathrm{OPT{}$. $\blacksquare$
 
 ### 5.3 Metric TSP -- 2-Approximation
 
@@ -518,7 +518,7 @@ An $\alpha$-approximation algorithm for a minimisation problem returns a solutio
 
 **Theorem 5.2.** This gives a 2-approximation for metric TSP.
 
-*Proof.* The cost of the MST is at most OPT (removing any edge from the optimal tour gives a spanning tree). The doubled MST costs $2 \cdot \mathrm{'\{'}MST{'\}'} \leq 2 \cdot \mathrm{'\{'}OPT{'\}'}$. By the triangle inequality, shortcutting does not increase the cost. Therefore the final tour costs at most $2 \cdot \mathrm{'\{'}OPT{'\}'}$. $\blacksquare$
+*Proof.* The cost of the MST is at most OPT (removing any edge from the optimal tour gives a spanning tree). The doubled MST costs $2 \cdot \mathrm{MST{} \leq 2 \cdot \mathrm{OPT{}$. By the triangle inequality, shortcutting does not increase the cost. Therefore the final tour costs at most $2 \cdot \mathrm{OPT{}$. $\blacksquare$
 
 **Christofides' algorithm** improves this to a $3/2$-approximation by finding a minimum-weight perfect matching on the odd-degree vertices of the MST and combining it with the MST to form an Eulerian graph. This was the best known approximation for 40 years until 2020, when a $(3/2 - \epsilon)$-approximation was discovered.
 
@@ -530,7 +530,7 @@ An $\alpha$-approximation algorithm for a minimisation problem returns a solutio
 
 **Theorem 5.3.** The greedy algorithm gives a $(\ln n + 1)$-approximation for set cover. Furthermore, unless $\text{'\{'}P{'\}'} = \text{'\{'}NP{'\}'}$, no polynomial-time algorithm can do better than $(1 - o(1)) \ln n$.
 
-*Proof (approximation ratio).* Let $n_t$ be the number of uncovered elements after $t$ iterations. In iteration $t+1$, the greedy algorithm picks a set covering at least $n_t / \mathrm{'\{'}OPT{'\}'}$ elements (since OPT sets cover all $n_t$ elements). So $n_{t+1} \leq n_t (1 - 1/\mathrm{'\{'}OPT{'\}'})$. After $k = \mathrm{'\{'}OPT{'\}'} \cdot \ln n$ iterations, $n_k \leq n(1 - 1/\mathrm{'\{'}OPT{'\}'})^{\mathrm{'\{'}OPT{'\}'} \cdot \ln n} \leq n \cdot e^{-\ln n} = 1$. $\blacksquare$
+*Proof (approximation ratio).* Let $n_t$ be the number of uncovered elements after $t$ iterations. In iteration $t+1$, the greedy algorithm picks a set covering at least $n_t / \mathrm{OPT{}$ elements (since OPT sets cover all $n_t$ elements). So $n_{t+1} \leq n_t (1 - 1/\mathrm{OPT{})$. After $k = \mathrm{OPT{} \cdot \ln n$ iterations, $n_k \leq n(1 - 1/\mathrm{OPT{})^{\mathrm{OPT{} \cdot \ln n} \leq n \cdot e^{-\ln n} = 1$. $\blacksquare$
 
 ### 5.5 Inapproximability
 

@@ -44,7 +44,7 @@ The Lorenz curve plots the cumulative share of income received by the cumulative
 population, ordered from poorest to richest. The further the Lorenz curve deviates from the
 45-degree line of perfect equality, the greater the inequality.
 
-$$\mathrm{'\{'}Gini coefficient{'\}'} = \frac{A}{A + B}$$
+$$\mathrm{Gini coefficient{} = \frac{A}{A + B}$$
 
 Where $A$ is the area between the line of equality and the Lorenz curve, and $B$ is the area under
 the Lorenz curve.

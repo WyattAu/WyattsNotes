@@ -58,33 +58,33 @@ When a neuron is not transmitting an impulse, it is said to be at its **resting 
 
 **The resting potential is established and maintained by three factors:**
 
-**1. The sodium-potassium pump ($\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$-ATPase):**
+**1. The sodium-potassium pump ($\mathrm{Na{}^+/\mathrm{K{}^+$-ATPase):**
 
-- This active transport pump moves 3 $\mathrm{'\{'}Na{'\}'}^+$ ions OUT of the cell and 2 $\mathrm{'\{'}K{'\}'}^+$ ions INTO the cell for each ATP hydrolysed
-- This creates a concentration gradient: high $\mathrm{'\{'}Na{'\}'}^+$ outside, high $\mathrm{'\{'}K{'\}'}^+$ inside
+- This active transport pump moves 3 $\mathrm{Na{}^+$ ions OUT of the cell and 2 $\mathrm{K{}^+$ ions INTO the cell for each ATP hydrolysed
+- This creates a concentration gradient: high $\mathrm{Na{}^+$ outside, high $\mathrm{K{}^+$ inside
 - The pump makes the inside more negative because more positive charge is pumped out than in (net loss of one positive charge per cycle)
 - The pump operates continuously and is responsible for the long-term maintenance of the resting potential
 
 **2. Potassium leak channels:**
 
-- The axon membrane is much more permeable to $\mathrm{'\{'}K{'\}'}^+$ than to $\mathrm{'\{'}Na{'\}'}^+$ at rest (approximately 50-100 times more permeable)
-- $\mathrm{'\{'}K{'\}'}^+$ ions diffuse out of the cell down their concentration gradient through these leak channels
-- As $\mathrm{'\{'}K{'\}'}^+$ leaves, it carries positive charge out of the cell, making the inside more negative
-- This outward diffusion of $\mathrm{'\{'}K{'\}'}^+$ is the primary cause of the negative resting potential
+- The axon membrane is much more permeable to $\mathrm{K{}^+$ than to $\mathrm{Na{}^+$ at rest (approximately 50-100 times more permeable)
+- $\mathrm{K{}^+$ ions diffuse out of the cell down their concentration gradient through these leak channels
+- As $\mathrm{K{}^+$ leaves, it carries positive charge out of the cell, making the inside more negative
+- This outward diffusion of $\mathrm{K{}^+$ is the primary cause of the negative resting potential
 
 **3. Impermeability to sodium:**
 
-- The membrane is very poorly permeable to $\mathrm{'\{'}Na{'\}'}^+$ at rest (few $\mathrm{'\{'}Na{'\}'}^+$ channels are open)
-- Although there is a strong concentration gradient driving $\mathrm{'\{'}Na{'\}'}^+$ inward, very little $\mathrm{'\{'}Na{'\}'}^+$ can cross the membrane at rest
-- This means the inward movement of $\mathrm{'\{'}Na{'\}'}^+$ does not counteract the outward movement of $\mathrm{'\{'}K{'\}'}^+$
+- The membrane is very poorly permeable to $\mathrm{Na{}^+$ at rest (few $\mathrm{Na{}^+$ channels are open)
+- Although there is a strong concentration gradient driving $\mathrm{Na{}^+$ inward, very little $\mathrm{Na{}^+$ can cross the membrane at rest
+- This means the inward movement of $\mathrm{Na{}^+$ does not counteract the outward movement of $\mathrm{K{}^+$
 
-The resting potential is therefore an **electrochemical gradient**: a combination of the concentration gradients of $\mathrm{'\{'}Na{'\}'}^+$ and $\mathrm{'\{'}K{'\}'}^+$ (chemical gradient) and the electrical potential difference (electrical gradient).
+The resting potential is therefore an **electrochemical gradient**: a combination of the concentration gradients of $\mathrm{Na{}^+$ and $\mathrm{K{}^+$ (chemical gradient) and the electrical potential difference (electrical gradient).
 
 | Ion  | Intracellular Concentration (mM) | Extracellular Concentration (mM) | Direction of Concentration Gradient |
 | ---- | ------------------------------- | -------------------------------- | ---------------------------------- |
-| $\mathrm{'\{'}Na{'\}'}^+$ | 15                              | 145                              | Inward                             |
-| $\mathrm{'\{'}K{'\}'}^+$  | 140                             | 5                                | Outward                            |
-| $\mathrm{'\{'}Cl{'\}'}^-$ | 10                              | 110                              | Inward                             |
+| $\mathrm{Na{}^+$ | 15                              | 145                              | Inward                             |
+| $\mathrm{K{}^+$  | 140                             | 5                                | Outward                            |
+| $\mathrm{Cl{}^-$ | 10                              | 110                              | Inward                             |
 
 ---
 
@@ -96,15 +96,15 @@ An action potential is a rapid, transient reversal of the membrane potential fro
 
 | Phase                        | Membrane Potential | Ion Movements                                                                                               | Channel Status                                    |
 | ---------------------------- | ------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| Resting                      | -70 mV             | $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump maintains gradients; $\mathrm{'\{'}K{'\}'}^+$ leaks out                           | Most voltage-gated channels closed               |
-| Depolarisation               | -70 mV to +40 mV   | $\mathrm{'\{'}Na{'\}'}^+$ rushes IN through voltage-gated $\mathrm{'\{'}Na{'\}'}^+$ channels (down electrochemical gradient)    | Voltage-gated $\mathrm{'\{'}Na{'\}'}^+$ channels open      |
-| Repolarisation               | +40 mV to -70 mV   | $\mathrm{'\{'}K{'\}'}^+$ rushes OUT through voltage-gated $\mathrm{'\{'}K{'\}'}^+$ channels (down concentration gradient)       | $\mathrm{'\{'}Na{'\}'}^+$ channels close; $\mathrm{'\{'}K{'\}'}^+$ channels open |
-| Hyperpolarisation (overshoot)| -70 mV to -80 mV   | $\mathrm{'\{'}K{'\}'}^+$ continues to diffuse out (voltage-gated $\mathrm{'\{'}K{'\}'}^+$ channels are slow to close)           | $\mathrm{'\{'}Na{'\}'}^+$ channels closed; $\mathrm{'\{'}K{'\}'}^+$ channels still open |
-| Return to resting            | -80 mV to -70 mV   | $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump restores ionic gradients; $\mathrm{'\{'}K{'\}'}^+$ channels close                   | All channels return to resting state              |
+| Resting                      | -70 mV             | $\mathrm{Na{}^+/\mathrm{K{}^+$ pump maintains gradients; $\mathrm{K{}^+$ leaks out                           | Most voltage-gated channels closed               |
+| Depolarisation               | -70 mV to +40 mV   | $\mathrm{Na{}^+$ rushes IN through voltage-gated $\mathrm{Na{}^+$ channels (down electrochemical gradient)    | Voltage-gated $\mathrm{Na{}^+$ channels open      |
+| Repolarisation               | +40 mV to -70 mV   | $\mathrm{K{}^+$ rushes OUT through voltage-gated $\mathrm{K{}^+$ channels (down concentration gradient)       | $\mathrm{Na{}^+$ channels close; $\mathrm{K{}^+$ channels open |
+| Hyperpolarisation (overshoot)| -70 mV to -80 mV   | $\mathrm{K{}^+$ continues to diffuse out (voltage-gated $\mathrm{K{}^+$ channels are slow to close)           | $\mathrm{Na{}^+$ channels closed; $\mathrm{K{}^+$ channels still open |
+| Return to resting            | -80 mV to -70 mV   | $\mathrm{Na{}^+/\mathrm{K{}^+$ pump restores ionic gradients; $\mathrm{K{}^+$ channels close                   | All channels return to resting state              |
 
 ### Threshold and the All-or-Nothing Principle
 
-- The **threshold potential** is approximately -55 mV. If the membrane depolarises to this level, voltage-gated $\mathrm{'\{'}Na{'\}'}^+$ channels open fully, triggering an action potential.
+- The **threshold potential** is approximately -55 mV. If the membrane depolarises to this level, voltage-gated $\mathrm{Na{}^+$ channels open fully, triggering an action potential.
 - If the stimulus does not depolarise the membrane to threshold, no action potential is generated.
 - Once threshold is reached, the action potential is always the same size and shape, regardless of stimulus strength. This is the **all-or-nothing principle**.
 - A stronger stimulus does not produce a larger action potential. Instead, it produces a higher **frequency** of action potentials.
@@ -116,14 +116,14 @@ After an action potential, there is a brief period during which the neuron canno
 **1. Absolute refractory period:**
 
 - Lasts approximately 1-2 ms
-- The $\mathrm{'\{'}Na{'\}'}^+$ channels are inactivated (closed and cannot be reopened regardless of stimulus strength)
+- The $\mathrm{Na{}^+$ channels are inactivated (closed and cannot be reopened regardless of stimulus strength)
 - A second action potential is impossible under any circumstances
 - This ensures that action potentials travel in one direction only (unidirectional propagation)
 
 **2. Relative refractory period:**
 
 - Lasts approximately 2-4 ms (overlaps with the end of the absolute refractory period)
-- The $\mathrm{'\{'}Na{'\}'}^+$ channels are recovering from inactivation, and the $\mathrm{'\{'}K{'\}'}^+$ channels are still open (membrane hyperpolarised)
+- The $\mathrm{Na{}^+$ channels are recovering from inactivation, and the $\mathrm{K{}^+$ channels are still open (membrane hyperpolarised)
 - A larger-than-normal stimulus CAN trigger another action potential
 - The neuron is less excitable than normal
 
@@ -140,17 +140,17 @@ In myelinated neurons, the action potential does not travel continuously along t
 **Advantages of saltatory conduction:**
 
 - Much faster: the action potential effectively skips the myelinated sections, travelling only between nodes
-- Energy efficient: fewer ions need to be actively pumped back across the membrane (only at the nodes), reducing the workload on the $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump
+- Energy efficient: fewer ions need to be actively pumped back across the membrane (only at the nodes), reducing the workload on the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump
 - The myelin sheath reduces membrane capacitance, allowing depolarisation to spread further
 
 ### Worked Example: Action Potential Speed
 
-A myelinated sensory neuron has nodes of Ranvier spaced 1.2 mm apart. The action potential takes $10 \mu\mathrm{'\{'}s{'\}'}$ to propagate between consecutive nodes. Calculate the conduction velocity.
+A myelinated sensory neuron has nodes of Ranvier spaced 1.2 mm apart. The action potential takes $10 \mu\mathrm{s{}$ to propagate between consecutive nodes. Calculate the conduction velocity.
 
 <details>
 <summary>Solution</summary>
 
-Conduction velocity = $\frac{\text{'\{'}distance{'\}'}}{\text{'\{'}time{'\}'}} = \frac{1.2 \times 10^{-3} \mathrm{'\{'} m{'\}'}}{10 \times 10^{-6} \mathrm{'\{'} s{'\}'}} = 120 \mathrm{'\{'} m/s{'\}'}$
+Conduction velocity = $\frac{\text{'\{'}distance{'\}'}}{\text{'\{'}time{'\}'}} = \frac{1.2 \times 10^{-3} \mathrm{ m{}}{10 \times 10^{-6} \mathrm{ s{}} = 120 \mathrm{ m/s{}$
 
 This is within the typical range for myelinated sensory neurons (approximately 100-120 m/s). An unmyelinated neuron of the same diameter would conduct at approximately 0.5-2 m/s, demonstrating the enormous speed advantage of myelination.
 
@@ -176,15 +176,15 @@ A synapse is the junction between two neurons (or between a neuron and an effect
 
 1. **Arrival of action potential:** An action potential arrives at the pre-synaptic terminal, depolarising the membrane.
 
-2. **Calcium influx:** Voltage-gated $\mathrm{'\{'}Ca{'\}'}^{2+}$ channels in the pre-synaptic membrane open in response to depolarisation. $\mathrm{'\{'}Ca{'\}'}^{2+}$ ions diffuse into the pre-synaptic terminal down their concentration gradient.
+2. **Calcium influx:** Voltage-gated $\mathrm{Ca{}^{2+}$ channels in the pre-synaptic membrane open in response to depolarisation. $\mathrm{Ca{}^{2+}$ ions diffuse into the pre-synaptic terminal down their concentration gradient.
 
-3. **Vesicle fusion:** The influx of $\mathrm{'\{'}Ca{'\}'}^{2+}$ causes synaptic vesicles to fuse with the pre-synaptic membrane (exocytosis), releasing neurotransmitter into the synaptic cleft.
+3. **Vesicle fusion:** The influx of $\mathrm{Ca{}^{2+}$ causes synaptic vesicles to fuse with the pre-synaptic membrane (exocytosis), releasing neurotransmitter into the synaptic cleft.
 
 4. **Diffusion:** Neurotransmitter molecules diffuse across the synaptic cleft (~20 nm, taking approximately 0.5 ms).
 
 5. **Receptor binding:** Neurotransmitter molecules bind to specific receptor proteins on the post-synaptic membrane. This binding causes ion channels to open.
 
-6. **Post-synaptic potential:** If acetylcholine (an excitatory neurotransmitter) binds to the receptors, $\mathrm{'\{'}Na{'\}'}^+$ channels open. $\mathrm{'\{'}Na{'\}'}^+$ diffuses into the post-synaptic neuron, causing a small depolarisation called an **excitatory post-synaptic potential (EPSP)**.
+6. **Post-synaptic potential:** If acetylcholine (an excitatory neurotransmitter) binds to the receptors, $\mathrm{Na{}^+$ channels open. $\mathrm{Na{}^+$ diffuses into the post-synaptic neuron, causing a small depolarisation called an **excitatory post-synaptic potential (EPSP)**.
 
 7. **Summation:** A single EPSP is usually insufficient to reach threshold. Multiple EPSPs from different synapses (**spatial summation**) or in rapid succession from the same synapse (**temporal summation**) can combine to depolarise the post-synaptic membrane to threshold, triggering a new action potential.
 
@@ -195,11 +195,11 @@ A synapse is the junction between two neurons (or between a neuron and an effect
 | Feature               | Excitatory Synapse                                     | Inhibitory Synapse                                                |
 | --------------------- | ------------------------------------------------------ | ----------------------------------------------------------------- |
 | Neurotransmitter      | Acetylcholine, noradrenaline, glutamate                | GABA, glycine                                                     |
-| Ion channels opened   | $\mathrm{'\{'}Na{'\}'}^+$ channels (also some $\mathrm{'\{'}Ca{'\}'}^{2+}$) | $\mathrm{'\{'}Cl{'\}'}^-$ channels (also some $\mathrm{'\{'}K{'\}'}^+$ channels) |
+| Ion channels opened   | $\mathrm{Na{}^+$ channels (also some $\mathrm{Ca{}^{2+}$) | $\mathrm{Cl{}^-$ channels (also some $\mathrm{K{}^+$ channels) |
 | Effect on membrane    | Depolarisation (EPSP -- towards threshold)             | Hyperpolarisation (IPSP -- further from threshold)                |
 | Probability of AP     | Increases                                              | Decreases                                                         |
 
-**Inhibitory post-synaptic potential (IPSP):** When an inhibitory neurotransmitter (e.g., GABA) binds to receptors on the post-synaptic membrane, $\mathrm{'\{'}Cl{'\}'}^-$ channels open. $\mathrm{'\{'}Cl{'\}'}^-$ diffuses into the neuron (or $\mathrm{'\{'}K{'\}'}^+$ diffuses out), making the inside even more negative (hyperpolarisation, to approximately -75 to -80 mV). This moves the membrane potential further from threshold, making it LESS likely that an action potential will be generated.
+**Inhibitory post-synaptic potential (IPSP):** When an inhibitory neurotransmitter (e.g., GABA) binds to receptors on the post-synaptic membrane, $\mathrm{Cl{}^-$ channels open. $\mathrm{Cl{}^-$ diffuses into the neuron (or $\mathrm{K{}^+$ diffuses out), making the inside even more negative (hyperpolarisation, to approximately -75 to -80 mV). This moves the membrane potential further from threshold, making it LESS likely that an action potential will be generated.
 
 ### Summation
 
@@ -215,7 +215,7 @@ Synaptic transmission occurs in one direction only (pre-synaptic to post-synapti
 
 - Only the pre-synaptic terminal contains synaptic vesicles and the machinery for neurotransmitter release
 - Only the post-synaptic membrane has the specific receptor proteins for the neurotransmitter
-- Voltage-gated $\mathrm{'\{'}Ca{'\}'}^{2+}$ channels are only present on the pre-synaptic side
+- Voltage-gated $\mathrm{Ca{}^{2+}$ channels are only present on the pre-synaptic side
 - Neurotransmitter is released only in response to depolarisation of the pre-synaptic terminal, not the post-synaptic membrane
 
 ### Synaptic Delay
@@ -450,12 +450,12 @@ Breathing rate is controlled by the **ventilation centre** (respiratory centre) 
 
 **Chemical control of breathing rate:**
 
-- **$\mathrm{'\{'}CO{'\}'}_2$ concentration** is the primary stimulus (not $\mathrm{'\{'}O{'\}'}_2$ concentration)
-- Increased $\mathrm{'\{'}CO{'\}'}_2$ in the blood lowers blood pH (carbonic acid: $\mathrm{'\{'}CO{'\}'}_2 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \rightleftharpoons \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}CO{'\}'}_3 \rightleftharpoons \mathrm{'\{'}H{'\}'}^+ + \mathrm{'\{'}HCO{'\}'}_3^-$)
-- Chemoreceptors in the aorta (aortic body) and carotid arteries (carotid body) detect increased $\mathrm{'\{'}CO{'\}'}_2$ / decreased pH
-- Additional chemoreceptors in the medulla itself (central chemoreceptors) respond to $\mathrm{'\{'}H{'\}'}^+$ in the CSF
+- **$\mathrm{CO{}_2$ concentration** is the primary stimulus (not $\mathrm{O{}_2$ concentration)
+- Increased $\mathrm{CO{}_2$ in the blood lowers blood pH (carbonic acid: $\mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{} \rightleftharpoons \mathrm{H{}_2\mathrm{CO{}_3 \rightleftharpoons \mathrm{H{}^+ + \mathrm{HCO{}_3^-$)
+- Chemoreceptors in the aorta (aortic body) and carotid arteries (carotid body) detect increased $\mathrm{CO{}_2$ / decreased pH
+- Additional chemoreceptors in the medulla itself (central chemoreceptors) respond to $\mathrm{H{}^+$ in the CSF
 - These receptors send impulses to the ventilation centre, which increases the rate and depth of breathing
-- $\mathrm{'\{'}O{'\}'}_2$ concentration is only monitored by chemoreceptors in the aortic and carotid bodies when it drops significantly (below approximately 60 mmHg)
+- $\mathrm{O{}_2$ concentration is only monitored by chemoreceptors in the aortic and carotid bodies when it drops significantly (below approximately 60 mmHg)
 
 ---
 
@@ -602,12 +602,12 @@ During intense exercise, a person's breathing rate increases from 15 breaths/min
 
 **Increased breathing rate:**
 
-- Increased muscle respiration produces more $\mathrm{'\{'}CO{'\}'}_2$ as a waste product
-- Blood $\mathrm{'\{'}CO{'\}'}_2$ concentration rises, lowering blood pH
-- Peripheral chemoreceptors (aortic body, carotid body) and central chemoreceptors (medulla) detect the increased $\mathrm{'\{'}CO{'\}'}_2$ / decreased pH
+- Increased muscle respiration produces more $\mathrm{CO{}_2$ as a waste product
+- Blood $\mathrm{CO{}_2$ concentration rises, lowering blood pH
+- Peripheral chemoreceptors (aortic body, carotid body) and central chemoreceptors (medulla) detect the increased $\mathrm{CO{}_2$ / decreased pH
 - These chemoreceptors send more impulses to the ventilation centre in the medulla
 - The ventilation centre sends more frequent impulses to the intercostal muscles and diaphragm
-- Breathing rate and depth increase, removing more $\mathrm{'\{'}CO{'\}'}_2$ from the blood
+- Breathing rate and depth increase, removing more $\mathrm{CO{}_2$ from the blood
 
 **Increased heart rate:**
 
@@ -616,7 +616,7 @@ During intense exercise, a person's breathing rate increases from 15 breaths/min
 - The adrenal medulla releases adrenaline into the blood, which binds to beta-1 receptors on the heart, further increasing heart rate and stroke volume
 - Proprioceptors in muscles and joints detect movement and send signals to the cardiovascular centre in the medulla, which relays impulses via the sympathetic nervous system to increase heart rate
 
-Both responses are examples of **negative feedback** -- when $\mathrm{'\{'}CO{'\}'}_2$ levels return to normal, the chemoreceptors reduce their firing, and the ventilation centre decreases breathing rate accordingly.
+Both responses are examples of **negative feedback** -- when $\mathrm{CO{}_2$ levels return to normal, the chemoreceptors reduce their firing, and the ventilation centre decreases breathing rate accordingly.
 
 </details>
 
@@ -626,9 +626,9 @@ Both responses are examples of **negative feedback** -- when $\mathrm{'\{'}CO{'\
 
 1. **Writing that the action potential "travels" along the neuron:** The action potential does not physically move. Rather, it is a local reversal of membrane potential that is regenerated at each point along the axon. Each section of the membrane undergoes depolarisation in sequence, passing the signal along like a wave.
 
-2. **Confusing the direction of ion movement during the action potential:** During depolarisation, $\mathrm{'\{'}Na{'\}'}^+$ moves INTO the cell (not out). During repolarisation, $\mathrm{'\{'}K{'\}'}^+$ moves OUT of the cell (not in). This is counterintuitive because the resting potential is negative, but remember: depolarisation makes the inside more positive (positive ions enter), and repolarisation restores the negative charge (positive ions leave).
+2. **Confusing the direction of ion movement during the action potential:** During depolarisation, $\mathrm{Na{}^+$ moves INTO the cell (not out). During repolarisation, $\mathrm{K{}^+$ moves OUT of the cell (not in). This is counterintuitive because the resting potential is negative, but remember: depolarisation makes the inside more positive (positive ions enter), and repolarisation restores the negative charge (positive ions leave).
 
-3. **Stating that the $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump is responsible for the action potential:** The pump maintains the gradients but is too slow to directly cause the action potential. The rapid changes during the action potential are caused by voltage-gated ion channels (diffusion, not active transport). The pump restores the gradients AFTER the action potential.
+3. **Stating that the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump is responsible for the action potential:** The pump maintains the gradients but is too slow to directly cause the action potential. The rapid changes during the action potential are caused by voltage-gated ion channels (diffusion, not active transport). The pump restores the gradients AFTER the action potential.
 
 4. **Writing that a stronger stimulus produces a larger action potential:** This violates the all-or-nothing principle. A stronger stimulus produces more action potentials per second (higher frequency), not larger ones. The amplitude of each action potential is constant.
 
@@ -642,7 +642,7 @@ Both responses are examples of **negative feedback** -- when $\mathrm{'\{'}CO{'\
 
 9. **Confusing the sympathetic and parasympathetic nervous systems:** Sympathetic = fight or flight (noradrenaline at most effectors; increases heart rate, dilates pupils, inhibits digestion). Parasympathetic = rest and digest (acetylcholine at all effectors; decreases heart rate, constricts pupils, stimulates digestion).
 
-10. **Writing that $\mathrm{'\{'}O{'\}'}_2$ concentration is the primary stimulus for breathing:** Under normal conditions, $\mathrm{'\{'}CO{'\}'}_2$ concentration (and the resulting change in blood pH) is the primary stimulus for breathing rate. $\mathrm{'\{'}O{'\}'}_2$ concentration only becomes a significant stimulus when it drops dangerously low.
+10. **Writing that $\mathrm{O{}_2$ concentration is the primary stimulus for breathing:** Under normal conditions, $\mathrm{CO{}_2$ concentration (and the resulting change in blood pH) is the primary stimulus for breathing rate. $\mathrm{O{}_2$ concentration only becomes a significant stimulus when it drops dangerously low.
 
 ---
 
@@ -657,13 +657,13 @@ If you get this wrong, revise: Resting Potential
 
 The resting potential of approximately -70 mV is established by three factors:
 
-1. **The sodium-potassium pump ($\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$-ATPase)** actively transports 3 $\mathrm{'\{'}Na{'\}'}^+$ ions out and 2 $\mathrm{'\{'}K{'\}'}^+$ ions in per ATP hydrolysed. This creates concentration gradients (high $\mathrm{'\{'}Na{'\}'}^+$ outside, high $\mathrm{'\{'}K{'\}'}^+$ inside) and a net outward movement of positive charge.
+1. **The sodium-potassium pump ($\mathrm{Na{}^+/\mathrm{K{}^+$-ATPase)** actively transports 3 $\mathrm{Na{}^+$ ions out and 2 $\mathrm{K{}^+$ ions in per ATP hydrolysed. This creates concentration gradients (high $\mathrm{Na{}^+$ outside, high $\mathrm{K{}^+$ inside) and a net outward movement of positive charge.
 
-2. **Potassium leak channels** make the membrane much more permeable to $\mathrm{'\{'}K{'\}'}^+$ than to $\mathrm{'\{'}Na{'\}'}^+$ at rest. $\mathrm{'\{'}K{'\}'}^+$ diffuses out of the cell down its concentration gradient, carrying positive charge out and making the inside more negative.
+2. **Potassium leak channels** make the membrane much more permeable to $\mathrm{K{}^+$ than to $\mathrm{Na{}^+$ at rest. $\mathrm{K{}^+$ diffuses out of the cell down its concentration gradient, carrying positive charge out and making the inside more negative.
 
-3. **Low $\mathrm{'\{'}Na{'\}'}^+$ permeability** means that despite the strong inward concentration gradient for $\mathrm{'\{'}Na{'\}'}^+$, very little $\mathrm{'\{'}Na{'\}'}^+$ enters the cell at rest, so the outward $\mathrm{'\{'}K{'\}'}^+$ diffusion is not counteracted.
+3. **Low $\mathrm{Na{}^+$ permeability** means that despite the strong inward concentration gradient for $\mathrm{Na{}^+$, very little $\mathrm{Na{}^+$ enters the cell at rest, so the outward $\mathrm{K{}^+$ diffusion is not counteracted.
 
-The resting potential is maintained because the $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump continuously compensates for the slow leakage of ions, restoring the concentration gradients over time.
+The resting potential is maintained because the $\mathrm{Na{}^+/\mathrm{K{}^+$ pump continuously compensates for the slow leakage of ions, restoring the concentration gradients over time.
 
 </details>
 
@@ -675,14 +675,14 @@ If you get this wrong, revise: Synaptic Transmission
 <summary>Solution</summary>
 
 1. An action potential arrives at the pre-synaptic terminal, depolarising the membrane.
-2. Voltage-gated $\mathrm{'\{'}Ca{'\}'}^{2+}$ channels open; $\mathrm{'\{'}Ca{'\}'}^{2+}$ ions diffuse into the terminal.
-3. $\mathrm{'\{'}Ca{'\}'}^{2+}$ causes synaptic vesicles to fuse with the pre-synaptic membrane, releasing acetylcholine into the synaptic cleft (exocytosis).
+2. Voltage-gated $\mathrm{Ca{}^{2+}$ channels open; $\mathrm{Ca{}^{2+}$ ions diffuse into the terminal.
+3. $\mathrm{Ca{}^{2+}$ causes synaptic vesicles to fuse with the pre-synaptic membrane, releasing acetylcholine into the synaptic cleft (exocytosis).
 4. Acetylcholine diffuses across the synaptic cleft and binds to receptor proteins on the post-synaptic membrane.
-5. The binding opens $\mathrm{'\{'}Na{'\}'}^+$ channels; $\mathrm{'\{'}Na{'\}'}^+$ diffuses into the post-synaptic neuron, causing depolarisation (EPSP).
+5. The binding opens $\mathrm{Na{}^+$ channels; $\mathrm{Na{}^+$ diffuses into the post-synaptic neuron, causing depolarisation (EPSP).
 6. If threshold is reached (by summation), a new action potential is generated in the post-synaptic neuron.
 7. Acetylcholinesterase on the post-synaptic membrane breaks down acetylcholine into choline and acetate, preventing continuous stimulation.
 
-**Unidirectional transmission:** Only the pre-synaptic terminal has synaptic vesicles (to release neurotransmitter), only the post-synaptic membrane has specific receptors (to detect it), and $\mathrm{'\{'}Ca{'\}'}^{2+}$ channels are only on the pre-synaptic side. Therefore, impulses can only travel from pre-synaptic to post-synaptic.
+**Unidirectional transmission:** Only the pre-synaptic terminal has synaptic vesicles (to release neurotransmitter), only the post-synaptic membrane has specific receptors (to detect it), and $\mathrm{Ca{}^{2+}$ channels are only on the pre-synaptic side. Therefore, impulses can only travel from pre-synaptic to post-synaptic.
 
 </details>
 

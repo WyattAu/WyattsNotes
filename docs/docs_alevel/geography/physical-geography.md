@@ -17,16 +17,16 @@ sidebar_position: 1
 ### The Structure of the Earth
 
 The Earth is composed of concentric layers. The **crust** and the uppermost part of the **mantle**
-form the **lithosphere**, a rigid outer shell approximately $100\;\mathrm{'\{'}km{'\}'}$ thick. Below the
+form the **lithosphere**, a rigid outer shell approximately $100\;\mathrm{km{}$ thick. Below the
 lithosphere lies the **asthenosphere**, a semi-fluid zone of the upper mantle. The lithosphere is
 divided into tectonic plates that float on and move over the asthenosphere.
 
 The crust exists in two types:
 
-- **Continental crust**: granitic composition, lower density ($\approx 2.7\;\mathrm{'\{'}g/cm^3{'\}'}$),
-  thickness $30$--$70\;\mathrm{'\{'}km{'\}'}$
-- **Oceanic crust**: basaltic composition, higher density ($\approx 3.0\;\mathrm{'\{'}g/cm^3{'\}'}$),
-  thickness $5$--$10\;\mathrm{'\{'}km{'\}'}$
+- **Continental crust**: granitic composition, lower density ($\approx 2.7\;\mathrm{g/cm^3{}$),
+  thickness $30$--$70\;\mathrm{km{}$
+- **Oceanic crust**: basaltic composition, higher density ($\approx 3.0\;\mathrm{g/cm^3{}$),
+  thickness $5$--$10\;\mathrm{km{}$
 
 ### Plate Boundaries
 
@@ -78,20 +78,20 @@ steep-sided mounds prone to violent explosive eruptions. Example: Mount Pelee (M
 
 - **Lava flows**: destroy infrastructure and habitats but typically move slowly enough to permit
   evacuation
-- **Pyroclastic flows**: fast-moving ($> 700\;\mathrm{'\{'}km/h{'\}'}$), high-temperature
-  ($> 700^{\circ}\mathrm{'\{'}C{'\}'}$) mixtures of gas, ash, and rock fragments; the most lethal volcanic
+- **Pyroclastic flows**: fast-moving ($> 700\;\mathrm{km/h{}$), high-temperature
+  ($> 700^{\circ}\mathrm{C{}$) mixtures of gas, ash, and rock fragments; the most lethal volcanic
   hazard
 - **Ash falls**: disrupt air travel, damage crops, contaminate water supplies, and cause respiratory
   problems
 - **Lahars**: volcanic mudflows formed when hot pyroclastic material melts glacial ice or mixes with
   water; highly destructive to settlements downstream
-- **Volcanic gases**: $\mathrm{'\{'}SO_2{'\}'}$, $\mathrm{'\{'}CO_2{'\}'}$, and $\mathrm{'\{'}H_2S{'\}'}$ can cause acid rain,
+- **Volcanic gases**: $\mathrm{SO_2{}$, $\mathrm{CO_2{}$, and $\mathrm{H_2S{}$ can cause acid rain,
   respiratory illness, and (in high concentrations) asphyxiation
 
 ### Supervolcanoes
 
-Supervolcanoes produce eruptions exceeding $1000\;\mathrm{'\{'}km^3{'\}'}$ of ejecta (compared to
-$< 1\;\mathrm{'\{'}km^3{'\}'}$ for typical eruptions). They are not mountainous but rather large calderas
+Supervolcanoes produce eruptions exceeding $1000\;\mathrm{km^3{}$ of ejecta (compared to
+$< 1\;\mathrm{km^3{}$ for typical eruptions). They are not mountainous but rather large calderas
 formed when the ground collapses after a massive eruption. Example: Yellowstone (USA), Toba
 (Indonesia). The Toba eruption ($\approx 74000$ years ago) may have caused a volcanic winter and a
 human population bottleneck.
@@ -106,9 +106,9 @@ on the surface directly above is the **epicentre**.
 
 **Seismic waves**:
 
-- **P-waves** (primary): compressional, fastest ($6$--$8\;\mathrm{'\{'}km/s{'\}'}$ in the crust), travel
+- **P-waves** (primary): compressional, fastest ($6$--$8\;\mathrm{km/s{}$ in the crust), travel
   through solids and liquids
-- **S-waves** (secondary): shear, slower ($3.5$--$4.5\;\mathrm{'\{'}km/s{'\}'}$), travel through solids only
+- **S-waves** (secondary): shear, slower ($3.5$--$4.5\;\mathrm{km/s{}$), travel through solids only
   (their absence beyond a certain distance indicates a liquid outer core)
 - **Surface waves** (Love and Rayleigh): slowest, travel along the surface, cause the most damage
   due to their amplitude and rolling motion
@@ -126,7 +126,7 @@ on the surface directly above is the **epicentre**.
 
 - **Magnitude**: higher magnitude generally causes greater damage, but the relationship is
   non-linear
-- **Depth**: shallow focus ($< 70\;\mathrm{'\{'}km{'\}'}$) earthquakes cause more surface damage than
+- **Depth**: shallow focus ($< 70\;\mathrm{km{}$) earthquakes cause more surface damage than
   deep-focus ones
 - **Distance from epicentre**: intensity decreases with distance due to energy dissipation
 - **Geology**: soft, unconsolidated sediments amplify seismic waves (liquefaction); bedrock
@@ -161,7 +161,7 @@ creating a crescent-shaped scarp at the top.
 flows** (mixture of soil, rock, and water), and **earthflows** (slow-moving saturated soil on
 moderate slopes).
 
-**Creep**: the very slow ($< 1\;\mathrm{'\{'}m/year{'\}'}$), continuous downslope movement of soil and
+**Creep**: the very slow ($< 1\;\mathrm{m/year{}$), continuous downslope movement of soil and
 regolith. Caused by repeated cycles of wetting and drying, freezing and thawing, or heating and
 cooling. Evidence includes tilted fences, bent tree trunks, and cracked walls.
 
@@ -237,8 +237,8 @@ along the coast in the direction of the prevailing wind.
 
 ### Chemical Weathering
 
-- **Carbonation**: $\mathrm{'\{'}CO_2{'\}'}$ dissolved in rainwater forms weak carbonic acid, which reacts
-  with calcium carbonate in limestone: $\mathrm{'\{'}CaCO_3 + H_2CO_3 \to Ca(HCO_3)_2{'\}'}$. Produces
+- **Carbonation**: $\mathrm{CO_2{}$ dissolved in rainwater forms weak carbonic acid, which reacts
+  with calcium carbonate in limestone: $\mathrm{CaCO_3 + H_2CO_3 \to Ca(HCO_3)_2{}$. Produces
   limestone pavements with clints (blocks) and grykes (gaps).
 - **Oxidation**: iron-bearing minerals react with oxygen and water, producing iron oxides (rust),
   weakening the rock.
@@ -274,7 +274,7 @@ along the coast in the direction of the prevailing wind.
 <summary>Problem 1: Plate Boundary Identification</summary>
 
 The Pacific Plate is moving north-west relative to the North American Plate at approximately
-$60\;\mathrm{'\{'}mm/year{'\}'}$. Describe the type of plate boundary, the geological processes occurring, and
+$60\;\mathrm{mm/year{}$. Describe the type of plate boundary, the geological processes occurring, and
 the associated hazards.
 
 This is a **transform (conservative) boundary** where the Pacific Plate slides horizontally past the
@@ -312,11 +312,11 @@ difference is far greater.
 <details>
 <summary>Problem 3: Coastal Erosion Calculation</summary>
 
-A cliff is retreating at an average rate of $1.5\;\mathrm{'\{'}m/year{'\}'}$. A farmhouse is currently
-$45\;\mathrm{'\{'}m{'\}'}$ from the cliff edge. Calculate how many years it will take before the cliff reaches
+A cliff is retreating at an average rate of $1.5\;\mathrm{m/year{}$. A farmhouse is currently
+$45\;\mathrm{m{}$ from the cliff edge. Calculate how many years it will take before the cliff reaches
 the farmhouse, and discuss the uncertainties in this estimate.
 
-$$\mathrm{'\{'}Years{'\}'} = \frac{45}{1.5} = 30 \mathrm{'\{'} years{'\}'}$$
+$$\mathrm{Years{} = \frac{45}{1.5} = 30 \mathrm{ years{}$$
 
 Uncertainties:
 
@@ -331,11 +331,11 @@ Uncertainties:
 <details>
 <summary>Problem 4: Volcanic Hazard Assessment</summary>
 
-Mount X is a composite volcano with a population of $500000$ living within $30\;\mathrm{'\{'}km{'\}'}$. The
-last eruption was $200$ years ago and produced pyroclastic flows travelling at $600\;\mathrm{'\{'}km/h{'\}'}$
-reaching $25\;\mathrm{'\{'}km{'\}'}$. Assess the risk and recommend monitoring strategies.
+Mount X is a composite volcano with a population of $500000$ living within $30\;\mathrm{km{}$. The
+last eruption was $200$ years ago and produced pyroclastic flows travelling at $600\;\mathrm{km/h{}$
+reaching $25\;\mathrm{km{}$. Assess the risk and recommend monitoring strategies.
 
-**Risk assessment:** High. The large population within the hazard zone ($30\;\mathrm{'\{'}km{'\}'}$), the
+**Risk assessment:** High. The large population within the hazard zone ($30\;\mathrm{km{}$), the
 volcano's history of violent pyroclastic flows, and the long repose interval (which may allow magma
 to accumulate and increase eruption explosivity) all indicate significant risk.
 
@@ -345,7 +345,7 @@ to accumulate and increase eruption explosivity) all indicate significant risk.
   small earthquakes indicating fracturing rock)
 - **Ground deformation**: GPS and tiltmeters to detect swelling as magma accumulates beneath the
   volcano
-- **Gas monitoring**: measure $\mathrm{'\{'}SO_2{'\}'}$ emissions (rising levels suggest magma is approaching
+- **Gas monitoring**: measure $\mathrm{SO_2{}$ emissions (rising levels suggest magma is approaching
   the surface)
 - **Thermal imaging**: satellite and ground-based sensors to detect temperature anomalies
 - **Groundwater monitoring**: changes in water temperature, pH, or chemistry can indicate magma
@@ -363,7 +363,7 @@ climate requirements, and resulting landforms.
 | --------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | Mechanism | Physical: water freezes and expands in cracks                           | Chemical: carbonic acid reacts with calcium carbonate                       |
 | Rock type | Any rock with cracks or joints; particularly effective on jointed rocks | Limestone and chalk                                                         |
-| Climate   | Cold environments with frequent freeze-thaw cycles                      | Warm, humid climates (higher $\mathrm{'\{'}CO_2{'\}'}$ solubility and reaction rates) |
+| Climate   | Cold environments with frequent freeze-thaw cycles                      | Warm, humid climates (higher $\mathrm{CO_2{}$ solubility and reaction rates) |
 | Rate      | Relatively fast per cycle but limited to freeze-thaw zones              | Slow and continuous; rate increases with temperature and moisture           |
 | Landforms | Scree slopes, talus fans, angular rock fragments                        | Limestone pavements (clints and grykes), caves, swallow holes, grikes       |
 

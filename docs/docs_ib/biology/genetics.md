@@ -127,9 +127,9 @@ Genes on the same chromosome tend to be inherited together (linked). The degree 
 on the distance between genes: genes farther apart are more likely to be separated by crossing over.
 
 **Recombination frequency** =
-$\dfrac{\mathrm{'\{'}number of recombinant offspring{'\}'}}{\mathrm{'\{'}total offspring{'\}'}} \times 100\%$
+$\dfrac{\mathrm{number of recombinant offspring{}}{\mathrm{total offspring{}} \times 100\%$
 
-A recombination frequency of $1\%$ corresponds to a map distance of $1$ centimorgan ($\mathrm{'\{'}cM{'\}'}$).
+A recombination frequency of $1\%$ corresponds to a map distance of $1$ centimorgan ($\mathrm{cM{}$).
 Genes with a recombination frequency of $50\%$ or greater assort independently (they are either on
 different chromosomes or very far apart on the same chromosome).
 
@@ -229,17 +229,17 @@ PCR amplifies a specific DNA sequence exponentially without the need for living 
 - **DNA polymerase**: a thermostable enzyme, typically **Taq polymerase** (from _Thermus
   aquaticus_), which withstands the high temperatures of PCR.
 - **Free nucleotides** (dNTPs): dATP, dCTP, dGTP, dTTP.
-- **Buffer** with $\mathrm{'\{'}Mg{'\}'}^{2+}$ ions (cofactor for polymerase).
+- **Buffer** with $\mathrm{Mg{}^{2+}$ ions (cofactor for polymerase).
 
 **Thermal Cycling**:
 
 | Step             | Temperature                | Purpose                                                          |
 | ---------------- | -------------------------- | ---------------------------------------------------------------- |
-| **Denaturation** | $94$--$96^\circ\mathrm{'\{'}C{'\}'}$ | DNA double helix separates into single strands.                  |
-| **Annealing**    | $50$--$65^\circ\mathrm{'\{'}C{'\}'}$ | Primers bind (anneal) to complementary sequences on each strand. |
-| **Extension**    | $72^\circ\mathrm{'\{'}C{'\}'}$       | Taq polymerase synthesises new DNA strands from the primers.     |
+| **Denaturation** | $94$--$96^\circ\mathrm{C{}$ | DNA double helix separates into single strands.                  |
+| **Annealing**    | $50$--$65^\circ\mathrm{C{}$ | Primers bind (anneal) to complementary sequences on each strand. |
+| **Extension**    | $72^\circ\mathrm{C{}$       | Taq polymerase synthesises new DNA strands from the primers.     |
 
-Each cycle doubles the number of DNA copies. After $n$ cycles: $\mathrm{'\{'}copies{'\}'} = 2^n$ (starting
+Each cycle doubles the number of DNA copies. After $n$ cycles: $\mathrm{copies{} = 2^n$ (starting
 from a double-stranded molecule). Typically $25$--$35$ cycles are run.
 
 ### Gel Electrophoresis
@@ -391,9 +391,9 @@ The probability that a son has haemophilia is $\dfrac{1}{2}$ (or $50\%$).
 <summary>Question 3: PCR Amplification</summary>
 
 A forensic scientist starts with $10$ copies of a DNA fragment. After $30$ cycles of PCR, how many
-copies will be present? If each double-stranded copy is $300\;\mathrm{'\{'}bp{'\}'}$ and the total amount of
-DNA produced is $54\;\mathrm{'\{'}ng{'\}'}$, calculate the approximate mass of one copy.
-($1\;\mathrm{'\{'}bp{'\}'} \approx 660\;\mathrm{'\{'}Da{'\}'}$; $1\;\mathrm{'\{'}Da{'\}'} = 1.66 \times 10^{-24}\;\mathrm{'\{'}g{'\}'}$.)
+copies will be present? If each double-stranded copy is $300\;\mathrm{bp{}$ and the total amount of
+DNA produced is $54\;\mathrm{ng{}$, calculate the approximate mass of one copy.
+($1\;\mathrm{bp{} \approx 660\;\mathrm{Da{}$; $1\;\mathrm{Da{} = 1.66 \times 10^{-24}\;\mathrm{g{}$.)
 
 </details>
 
@@ -401,16 +401,16 @@ DNA produced is $54\;\mathrm{'\{'}ng{'\}'}$, calculate the approximate mass of o
 <summary>Answer</summary>
 
 After $n$ cycles:
-$\mathrm{'\{'}copies{'\}'} = 10 \times 2^{30} \approx 10 \times 1.07 \times 10^9 = 1.07 \times 10^{10}$
+$\mathrm{copies{} = 10 \times 2^{30} \approx 10 \times 1.07 \times 10^9 = 1.07 \times 10^{10}$
 copies.
 
-Mass of one double-stranded copy: $300 \times 660 \times 2 = 396000\;\mathrm{'\{'}Da{'\}'}$ (both strands).
+Mass of one double-stranded copy: $300 \times 660 \times 2 = 396000\;\mathrm{Da{}$ (both strands).
 
-Mass in grams: $396000 \times 1.66 \times 10^{-24} = 6.57 \times 10^{-19}\;\mathrm{'\{'}g{'\}'}$ per copy.
+Mass in grams: $396000 \times 1.66 \times 10^{-24} = 6.57 \times 10^{-19}\;\mathrm{g{}$ per copy.
 
 Verification:
-$1.07 \times 10^{10} \times 6.57 \times 10^{-19}\;\mathrm{'\{'}g{'\}'} \approx 7.03 \times 10^{-9}\;\mathrm{'\{'}g{'\}'} = 7\;\mathrm{'\{'}ng{'\}'}$
-(order of magnitude consistent with $54\;\mathrm{'\{'}ng{'\}'}$ given possible variations in starting
+$1.07 \times 10^{10} \times 6.57 \times 10^{-19}\;\mathrm{g{} \approx 7.03 \times 10^{-9}\;\mathrm{g{} = 7\;\mathrm{ng{}$
+(order of magnitude consistent with $54\;\mathrm{ng{}$ given possible variations in starting
 template).
 
 </details>
@@ -493,7 +493,7 @@ The probability she is $Cc$ is $\frac{2}{3}$.
 the carrier frequency is approximately $1$ in $25$, the probability he is a carrier is $\frac{1}{25}$.
 
 **Step 4: Combined probability**.
-$P(\mathrm{'\{'}child\;affected{'\}'}) = P(\mathrm{'\{'}daughter\;is\;Cc{'\}'}) \times P(\mathrm{'\{'}husband\;is\;Cc{'\}'}) \times P(\mathrm{'\{'}child\;is\;cc{'\}'} \mid Cc \times Cc)$
+$P(\mathrm{child\;affected{}) = P(\mathrm{daughter\;is\;Cc{}) \times P(\mathrm{husband\;is\;Cc{}) \times P(\mathrm{child\;is\;cc{} \mid Cc \times Cc)$
 $= \frac{2}{3} \times \frac{1}{25} \times \frac{1}{4} = \frac{2}{300} = \frac{1}{150} \approx 0.67\%$
 
 The probability is approximately $1$ in $150$, which is higher than the general population risk
@@ -538,16 +538,16 @@ order is $b$ -- $a$ -- $c$.
 
 **Step 3: Calculate map distances**.
 Recombination frequency between $b$ and $a$: (single CO in $b$-$a$ region + double COs) / total
-$= (140 + 145 + 60 + 55) / 2000 = 400 / 2000 = 0.20 = 20\;\mathrm{'\{'}cM{'\}'}$
+$= (140 + 145 + 60 + 55) / 2000 = 400 / 2000 = 0.20 = 20\;\mathrm{cM{}$
 
 Recombination frequency between $a$ and $c$: (single CO in $a$-$c$ region + double COs) / total
-$= (70 + 80 + 60 + 55) / 2000 = 265 / 2000 = 0.1325 = 13.25\;\mathrm{'\{'}cM{'\}'}$
+$= (70 + 80 + 60 + 55) / 2000 = 265 / 2000 = 0.1325 = 13.25\;\mathrm{cM{}$
 
 Recombination frequency between $b$ and $c$: (all recombinants) / total
-$= (140 + 145 + 70 + 80 + 60 + 55) / 2000 = 550 / 2000 = 0.275 = 27.5\;\mathrm{'\{'}cM{'\}'}$
+$= (140 + 145 + 70 + 80 + 60 + 55) / 2000 = 550 / 2000 = 0.275 = 27.5\;\mathrm{cM{}$
 
-**Map**: $b$ --- $20\;\mathrm{'\{'}cM{'\}'}$ --- $a$ --- $13.25\;\mathrm{'\{'}cM{'\}'}$ --- $c$ (total $33.25\;\mathrm{'\{'}cM{'\}'}$,
-which is less than $27.5\;\mathrm{'\{'}cM{'\}'}$ because double crossovers were counted separately for each
+**Map**: $b$ --- $20\;\mathrm{cM{}$ --- $a$ --- $13.25\;\mathrm{cM{}$ --- $c$ (total $33.25\;\mathrm{cM{}$,
+which is less than $27.5\;\mathrm{cM{}$ because double crossovers were counted separately for each
 interval but only once in the $b$-$c$ total, illustrating why three-point crosses give more accurate
 maps than two-point crosses).
 
@@ -655,8 +655,8 @@ dihybrid cross with complete dominance.
 <details>
 <summary>Problem 2: Data Analysis -- Gel Electrophoresis and PCR</summary>
 
-A PCR reaction amplifies a $1500\;\mathrm{'\{'}bp{'\}'}$ region of the human amelogenin gene, which has
-different length alleles on the X and Y chromosomes ($1064\;\mathrm{'\{'}bp{'\}'}$ on X, $789\;\mathrm{'\{'}bp{'\}'}$
+A PCR reaction amplifies a $1500\;\mathrm{bp{}$ region of the human amelogenin gene, which has
+different length alleles on the X and Y chromosomes ($1064\;\mathrm{bp{}$ on X, $789\;\mathrm{bp{}$
 on Y). Three DNA samples are analysed by gel electrophoresis alongside a DNA ladder. (a) Describe
 the expected banding pattern for a male, a female, and a male with Klinefelter syndrome (XXY). (b)
 Explain how this test could be used in forensic sex determination. (c) Why would a DNA ladder with
@@ -1170,7 +1170,7 @@ regulation. Provide a specific example for each level.
 <summary>Answer 13</summary>
 
 (a) **Transcriptional regulation**:
-- **Enhancers**: distal regulatory sequences (up to $1\;\mathrm{'\{'}Mb{'\}'}$ from the gene) that bind
+- **Enhancers**: distal regulatory sequences (up to $1\;\mathrm{Mb{}$ from the gene) that bind
   transcription factors and increase transcription. Example: the beta-globin locus control region
   (LCR) contains multiple enhancers that regulate globin gene expression during development.
 - **Silencers**: regulatory sequences that bind repressor proteins and decrease transcription.
@@ -1183,7 +1183,7 @@ regulation. Provide a specific example for each level.
 - **Alternative splicing**: different combinations of exons are spliced together, producing multiple
   mRNA isoforms from a single gene. Example: the _Bcl-x_ gene produces two isoforms: Bcl-xL (anti-apoptotic,
   long) and Bcl-xS (pro-apoptotic, short) by alternative splicing of exon 2.
-- **miRNA**: small non-coding RNAs ($\approx 22\;\mathrm{'\{'}nt{'\}'}$) that bind to complementary sequences
+- **miRNA**: small non-coding RNAs ($\approx 22\;\mathrm{nt{}$) that bind to complementary sequences
   in the $3'$ UTR of target mRNAs, leading to mRNA degradation or translational repression. Example:
   miR-21 is overexpressed in many cancers and downregulates tumour suppressor genes (e.g., PTEN, PDCD4).
 
@@ -1482,7 +1482,7 @@ physical distance apart. This is the basis for genetic mapping:
 
 $$\text{'\{'}Map distance (cM){'\}'} = \text{'\{'}Recombination frequency (\%){'\}'}$$
 
-For small distances ($< 10\;\mathrm{'\{'}cM{'\}'}$), map distance and recombination frequency are approximately
+For small distances ($< 10\;\mathrm{cM{}$), map distance and recombination frequency are approximately
 equal. For larger distances, recombination frequency plateaus at $50\%$ (due to multiple crossovers
 between distant genes, which can restore the parental arrangement). Mapping functions (Haldane,
 Kosambi) correct for this:
@@ -1531,14 +1531,14 @@ Gene order: A -- B -- C.
 
 (b) Recombination frequencies:
 - A--B distance: single recombinants between A and B = Abc (85) + aBC (80) + AbC (5) + aBc (5) = 175.
-  RF(A--B) = $175/1000 = 17.5\;\mathrm{'\{'}cM{'\}'}$.
+  RF(A--B) = $175/1000 = 17.5\;\mathrm{cM{}$.
 - B--C distance: single recombinants between B and C = ABc (40) + abC (35) + AbC (5) + aBc (5) = 85.
-  RF(B--C) = $85/1000 = 8.5\;\mathrm{'\{'}cM{'\}'}$.
+  RF(B--C) = $85/1000 = 8.5\;\mathrm{cM{}$.
 - A--C distance: total recombinants between A and C = Abc (85) + aBC (80) + ABc (40) + abC (35) + AbC (5) + aBc (5) = 250.
-  RF(A--C) = $250/1000 = 25.0\;\mathrm{'\{'}cM{'\}'}$.
+  RF(A--C) = $250/1000 = 25.0\;\mathrm{cM{}$.
 
-Check: RF(A--C) should approximately equal RF(A--B) + RF(B--C) = $17.5 + 8.5 = 26.0\;\mathrm{'\{'}cM{'\}'}$.
-The difference ($26.0 - 25.0 = 1.0\;\mathrm{'\{'}cM{'\}'}$) is due to double crossovers that restored the parental
+Check: RF(A--C) should approximately equal RF(A--B) + RF(B--C) = $17.5 + 8.5 = 26.0\;\mathrm{cM{}$.
+The difference ($26.0 - 25.0 = 1.0\;\mathrm{cM{}$) is due to double crossovers that restored the parental
 arrangement for A--C but were counted as recombinants for A--B and B--C.
 
 (c) **Coefficient of coincidence (CoC)** = observed double crossovers / expected double crossovers.

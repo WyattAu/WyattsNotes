@@ -29,7 +29,7 @@ widely used indicators for comparing economic development across countries.
 | -------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **GDP per capita (current USD)** | GDP / population                                                        | Widely available; standardised; facilitates international comparison                                           | Does not account for income distribution; ignores non-market activities (subsistence farming, unpaid domestic labour); affected by exchange rate fluctuations |
 | **GNI per capita (PPP)**         | GNI / population, adjusted for purchasing power parity                  | Accounts for differences in price levels between countries; reflects income of residents including remittances | Still does not capture distribution; PPP adjustments are imprecise for rapidly changing economies                                                             |
-| **GDP growth rate**              | $(\mathrm{'\{'}GDP{'\}'}_t - \mathrm{'\{'}GDP{'\}'}_{t-1}) / \mathrm{'\{'}GDP{'\}'}_{t-1} \times 100$ | Measures economic dynamism                                                                                     | Growth may not be inclusive; environmental costs not deducted                                                                                                 |
+| **GDP growth rate**              | $(\mathrm{GDP{}_t - \mathrm{GDP{}_{t-1}) / \mathrm{GDP{}_{t-1} \times 100$ | Measures economic dynamism                                                                                     | Growth may not be inclusive; environmental costs not deducted                                                                                                 |
 
 ### The World Bank Income Classification
 
@@ -85,10 +85,10 @@ deprivations in health, education, and living standards."
 The HDI, created by the UN Development Programme (UNDP) in 1990, combines three dimensions into a
 single index ranging from 0 to 1:
 
-$$\mathrm{'\{'}HDI{'\}'} = \frac{I_{\mathrm{'\{'}health{'\}'}} + I_{\mathrm{'\{'}education{'\}'}} + I_{\mathrm{'\{'}income{'\}'}}}{3}$$
+$$\mathrm{HDI{} = \frac{I_{\mathrm{health{}} + I_{\mathrm{education{}} + I_{\mathrm{income{}}}{3}$$
 
-where $I_{\mathrm{'\{'}health{'\}'}}$ is measured by life expectancy at birth, $I_{\mathrm{'\{'}education{'\}'}}$ is the
-geometric mean of mean years of schooling and expected years of schooling, and $I_{\mathrm{'\{'}income{'\}'}}$
+where $I_{\mathrm{health{}}$ is measured by life expectancy at birth, $I_{\mathrm{education{}}$ is the
+geometric mean of mean years of schooling and expected years of schooling, and $I_{\mathrm{income{}}$
 is measured by GNI per capita (PPP).
 
 | HDI Category | Range         | Number of Countries (2023) | Examples                                               |
@@ -112,7 +112,7 @@ of development.
    dimension according to its level of inequality.
 2. **Ignores environmental sustainability.** A country can achieve a high HDI while degrading its
    environment and exceeding its ecological footprint. The Planetary pressures-adjusted HDI (PHDI)
-   adjusts the HDI for $\mathrm{'\{'}CO_2{'\}'}$ emissions and material footprint.
+   adjusts the HDI for $\mathrm{CO_2{}$ emissions and material footprint.
 3. **Averages can obscure deprivation.** A country with moderate average life expectancy but high
    infant mortality (and correspondingly low old-age mortality) can achieve the same health index as
    a country with low infant mortality and moderate old-age mortality, despite very different
@@ -176,7 +176,7 @@ values to other contexts is questionable.
 
 The Happy Planet Index, developed by the New Economics Foundation, combines three indicators:
 
-$$\mathrm{'\{'}HPI{'\}'} = \frac{\mathrm{'\{'}Experienced well-being{'\}'} \times \mathrm{'\{'}Life expectancy{'\}'}}{\mathrm{'\{'}Ecological footprint{'\}'}}$$
+$$\mathrm{HPI{} = \frac{\mathrm{Experienced well-being{} \times \mathrm{Life expectancy{}}{\mathrm{Ecological footprint{}}$$
 
 The HPI measures the ecological efficiency with which countries achieve well-being. Countries with
 high well-being and long life expectancy but low ecological footprints score highest.

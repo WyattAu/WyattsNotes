@@ -319,7 +319,7 @@ A more practical A-Level approach: start from butan-2-ol (dehydration with $\tex
 
 **Solution:**
 
-Use **acidified potassium dichromate(VI)** ($\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7/\mathrm{'\{'}H{'\}'}^+$) as the oxidising agent (1 mark):
+Use **acidified potassium dichromate(VI)** ($\mathrm{K{}_2\mathrm{Cr{}_2\mathrm{O{}_7/\mathrm{H{}^+$) as the oxidising agent (1 mark):
 
 - **Propan-1-ol** (primary alcohol): Oxidised to propanal (orange to green, can be distilled off before further oxidation). If heated under reflux, oxidised to propanoic acid (orange to green) (1 mark).
 
@@ -327,19 +327,19 @@ Use **acidified potassium dichromate(VI)** ($\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}
 
 - **2-Methylpropan-2-ol** (tertiary alcohol): **No reaction.** The solution remains orange. Tertiary alcohols are resistant to oxidation because there is no hydrogen atom on the carbon bearing the OH group (1 mark).
 
-Alternatively, the **Lucas test** (conc. $\mathrm{'\{'}HCl{'\}'}$ with $\mathrm{'\{'}ZnCl{'\}'}_2$) distinguishes by reaction rate:
+Alternatively, the **Lucas test** (conc. $\mathrm{HCl{}$ with $\mathrm{ZnCl{}_2$) distinguishes by reaction rate:
 - Tertiary: immediate cloudiness (forms tertiary chloride, insoluble)
 - Secondary: cloudiness within 5 minutes
 - Primary: no cloudiness at room temperature (1 mark).
 
 #### UT-5: Elimination Conditions
 
-**Question:** Explain why using a concentrated solution of $\mathrm{'\{'}NaOH{'\}'}$ in ethanol at high temperature favours elimination over substitution for 2-bromobutane.
+**Question:** Explain why using a concentrated solution of $\mathrm{NaOH{}$ in ethanol at high temperature favours elimination over substitution for 2-bromobutane.
 
 **Solution:**
 
-Elimination requires $\mathrm{'\{'}OH{'\}'}^-$ to act as a **base** (abstracting a $\beta$-hydrogen) rather than as a nucleophile (attacking the carbon) (1 mark).
+Elimination requires $\mathrm{OH{}^-$ to act as a **base** (abstracting a $\beta$-hydrogen) rather than as a nucleophile (attacking the carbon) (1 mark).
 
-A **concentrated** solution of $\mathrm{'\{'}NaOH{'\}'}$ provides a high concentration of $\mathrm{'\{'}OH{'\}'}^-$, increasing the rate of both substitution and elimination. However, the **ethanol solvent** is a polar protic solvent that stabilises the charged transition state of elimination and does not solvate the nucleophile as effectively as water would (1 mark).
+A **concentrated** solution of $\mathrm{NaOH{}$ provides a high concentration of $\mathrm{OH{}^-$, increasing the rate of both substitution and elimination. However, the **ethanol solvent** is a polar protic solvent that stabilises the charged transition state of elimination and does not solvate the nucleophile as effectively as water would (1 mark).
 
 **High temperature** favours elimination because elimination has a higher activation energy than substitution (it involves breaking a C--H bond in addition to the C--Br bond). According to the Arrhenius equation, reactions with higher $E_a$ are more sensitive to temperature increases, so the rate of elimination increases more than the rate of substitution as temperature rises (1 mark).

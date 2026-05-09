@@ -69,7 +69,7 @@ $$\text{'\{'}KE{'\}'}_{\text{'\{'}before{'\}'}} = \frac{1}{2}(4)(25) + \frac{1}{
 
 $$\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = \frac{1}{2}(4)(4) + \frac{1}{2}(6)\!\left(\frac{25}{9}\right) = 8 + \frac{75}{9} = 8 + \frac{25}{3} = \frac{49}{3} \approx 16.33 \text{'\{'} J{'\}'}$$
 
-$$\Delta\mathrm{'\{'}KE{'\}'} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \approx 60.67 \text{'\{'} J lost{'\}'}$$
+$$\Delta\mathrm{KE{} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \approx 60.67 \text{'\{'} J lost{'\}'}$$
 
 ---
 
@@ -153,7 +153,7 @@ $$2 \times 4 + 3 \times 0 = (2 + 3)v \implies 8 = 5v \implies v = 1.6 \text{'\{'
 
 $\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = \frac{1}{2}(5)(2.56) = 6.4$ J.
 
-$\Delta\mathrm{'\{'}KE{'\}'} = 16 - 6.4 = 9.6$ J lost.
+$\Delta\mathrm{KE{} = 16 - 6.4 = 9.6$ J lost.
 
 Momentum is conserved because the only forces during the collision are the internal contact forces between the two trolleys. By Newton's Third Law, these are equal and opposite, so their impulses cancel. No external horizontal force acts on the system.
 
@@ -225,9 +225,9 @@ $$W = \int_0^2 (12t^5 - 20t^4 + 16t^3 - 6t^2 + t)\,dt = \left[2t^6 - 4t^5 + 4t^4
 
 $$= (128 - 128 + 64 - 16 + 2) - 0 = 50 \text{'\{'} J{'\}'}$$
 
-**(d)** $\Delta\mathrm{'\{'}KE{'\}'} = \frac{1}{2}(4)(5^2) - 0 = 50$ J.
+**(d)** $\Delta\mathrm{KE{} = \frac{1}{2}(4)(5^2) - 0 = 50$ J.
 
-Since $W = 50$ J $= \Delta\mathrm{'\{'}KE{'\}'}$, the work-energy theorem is verified.
+Since $W = 50$ J $= \Delta\mathrm{KE{}$, the work-energy theorem is verified.
 
 ---
 
@@ -375,7 +375,7 @@ $\text{'\{'}KE{'\}'}_{\text{'\{'}before wall{'\}'}} = \frac{1}{2}(2)(64) = 64$ J
 
 $\text{'\{'}KE{'\}'}_{\text{'\{'}after wall{'\}'}} = \frac{1}{2}(2)(36) = 36$ J.
 
-$\Delta\mathrm{'\{'}KE{'\}'}_{\text{'\{'}wall{'\}'}} = 64 - 36 = 28$ J.
+$\Delta\mathrm{KE{}_{\text{'\{'}wall{'\}'}} = 64 - 36 = 28$ J.
 
 **Energy lost in $P$-$Q$ collision:**
 
@@ -383,7 +383,7 @@ $\text{'\{'}KE{'\}'}_{\text{'\{'}before{'\}'}} = \frac{1}{2}(2)(36) + 0 = 36$ J.
 
 $\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = \frac{1}{2}(2)(0.36) + \frac{1}{2}(3)(12.96) = 0.36 + 19.44 = 19.8$ J.
 
-$\Delta\mathrm{'\{'}KE{'\}'}_{PQ} = 36 - 19.8 = 16.2$ J.
+$\Delta\mathrm{KE{}_{PQ} = 36 - 19.8 = 16.2$ J.
 
 **Total KE lost** $= 28 + 16.2 = 44.2$ J.
 

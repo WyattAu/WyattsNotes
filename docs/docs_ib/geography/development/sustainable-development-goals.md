@@ -98,7 +98,7 @@ linked to SDG 7 (clean energy), SDG 12 (responsible consumption), SDG 14 (life b
 15 (life on land).
 
 **Progress and challenges.** Global greenhouse gas emissions continue to rise, reaching
-approximately 57 Gt $\mathrm{'\{'}CO_2{'\}'}$e in 2023. Current NDCs are insufficient to limit warming to
+approximately 57 Gt $\mathrm{CO_2{}$e in 2023. Current NDCs are insufficient to limit warming to
 2$^\circ$C, let alone 1.5$^\circ$C. Climate finance for developing countries remains inadequate
 (approximately USD 100 billion per year was committed but delivery was delayed, and the actual need
 is estimated at USD 1 trillion per year). Adaptation finance is particularly deficient, receiving
@@ -199,14 +199,14 @@ loss decline.
 **Evidence on decoupling:**
 
 - **Relative decoupling** (emissions per unit of GDP declining while absolute emissions continue to
-  rise) has been achieved in many countries and globally. Global $\mathrm{'\{'}CO_2{'\}'}$ emissions per unit
+  rise) has been achieved in many countries and globally. Global $\mathrm{CO_2{}$ emissions per unit
   of GDP have declined by approximately 35% since 1990.
 - **Absolute decoupling** (total emissions declining while GDP grows) has been achieved in some
-  developed countries (e.g., the UK reduced $\mathrm{'\{'}CO_2{'\}'}$ emissions by approximately 40% while
+  developed countries (e.g., the UK reduced $\mathrm{CO_2{}$ emissions by approximately 40% while
   growing GDP by approximately 75% between 1990 and 2022). However, this is partly attributable to
   the offshoring of carbon-intensive manufacturing to developing countries (carbon leakage).
-- At the global level, absolute decoupling of $\mathrm{'\{'}CO_2{'\}'}$ emissions from GDP has not been
-  achieved: both global GDP and global $\mathrm{'\{'}CO_2{'\}'}$ emissions have grown since 1990.
+- At the global level, absolute decoupling of $\mathrm{CO_2{}$ emissions from GDP has not been
+  achieved: both global GDP and global $\mathrm{CO_2{}$ emissions have grown since 1990.
 
 ### Energy Access vs Climate Action
 

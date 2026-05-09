@@ -146,9 +146,9 @@ $$\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}$$
 
 where $O_i$ is the observed frequency and $E_i$ is the expected frequency for each cell. The expected frequency for each cell is:
 
-$$E_i = \frac{(\mathrm{'\{'}row\ total{'\}'}) \times (\mathrm{'\{'}column\ total{'\}'})}{\mathrm{'\{'}grand\ total{'\}'}}$$
+$$E_i = \frac{(\mathrm{row\ total{}) \times (\mathrm{column\ total{})}{\mathrm{grand\ total{}}$$
 
-Compare the calculated $\chi^2$ value to the critical value from a chi-squared table at the appropriate degrees of freedom ($\mathrm{'\{'}df{'\}'} = (r - 1)(c - 1)$, where $r$ is the number of rows and $c$ is the number of columns) and significance level (typically $p = 0.05$). If the calculated value exceeds the critical value, the null hypothesis is rejected, indicating a statistically significant association between the variables.
+Compare the calculated $\chi^2$ value to the critical value from a chi-squared table at the appropriate degrees of freedom ($\mathrm{df{} = (r - 1)(c - 1)$, where $r$ is the number of rows and $c$ is the number of columns) and significance level (typically $p = 0.05$). If the calculated value exceeds the critical value, the null hypothesis is rejected, indicating a statistically significant association between the variables.
 
 **Conditions for validity:** the chi-squared test requires that (1) data are in the form of frequencies (not percentages or proportions); (2) expected frequencies in each cell are at least 5 (if any $E_i \lt 5$, combine categories or use Fisher's exact test); (3) observations are independent.
 
@@ -272,12 +272,12 @@ Remote sensing is the acquisition of information about Earth's surface without p
 | Flood monitoring | Sentinel-1 (SAR) | Mapping flood extent using synthetic aperture radar, which penetrates cloud cover |
 | Sea surface temperature | MODIS, NOAA AVHRR | Monitoring ocean currents, upwelling, coral bleaching |
 | Glacier monitoring | Landsat, ASTER | Tracking glacier extent, mass balance, and retreat rates |
-| Air quality | Sentinel-5P (TROPOMI) | Monitoring atmospheric concentrations of $\mathrm{'\{'}NO_2{'\}'}$, $\mathrm{'\{'}SO_2{'\}'}$, $\mathrm{'\{'}O_3{'\}'}$, and particulate matter |
+| Air quality | Sentinel-5P (TROPOMI) | Monitoring atmospheric concentrations of $\mathrm{NO_2{}$, $\mathrm{SO_2{}$, $\mathrm{O_3{}$, and particulate matter |
 
 ### Normalised Difference Vegetation Index (NDVI)
 
 NDVI is a widely used indicator of vegetation density and health, calculated from the near-infrared (NIR) and red (RED) bands of a multispectral satellite image:
 
-$$\mathrm{'\{'}NDVI{'\}'} = \frac{\mathrm{'\{'}NIR{'\}'} - \mathrm{'\{'}RED{'\}'}}{\mathrm{'\{'}NIR{'\}'} + \mathrm{'\{'}RED{'\}'}}$$
+$$\mathrm{NDVI{} = \frac{\mathrm{NIR{} - \mathrm{RED{}}{\mathrm{NIR{} + \mathrm{RED{}}$$
 
 Healthy vegetation strongly reflects near-infrared light and absorbs red light (for photosynthesis), yielding NDVI values close to $+1$. Bare soil, rock, and built-up surfaces yield NDVI values close to $0$. Water bodies yield negative NDVI values. NDVI is used extensively in monitoring agricultural productivity, drought conditions, and deforestation.

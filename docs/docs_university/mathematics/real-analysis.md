@@ -153,7 +153,7 @@ The completeness axiom can be formulated in several equivalent ways. Each implie
 1. **Least Upper Bound Property:** Every non-empty set bounded above has a supremum.
 2. **Monotone Convergence Theorem:** Every bounded monotone sequence converges.
 3. **Nested Interval Property:** Every nested sequence of closed intervals $I_1 \supseteq I_2 \supseteq \cdots$
-   with $\mathrm{'\{'}length{'\}'}(I_n) \to 0$ has exactly one point in $\bigcap I_n$.
+   with $\mathrm{length{}(I_n) \to 0$ has exactly one point in $\bigcap I_n$.
 4. **Bolzano-Weierstrass Property:** Every bounded sequence has a convergent subsequence.
 5. **Cauchy Completeness:** Every Cauchy sequence converges.
 
@@ -184,7 +184,7 @@ $\sup(0, 1) = 1$, which does not belong to $(0, 1)$.
 A sequence $(a_n)_{n=1}^{\infty}$ in $\mathbb{'\{'}R{'\}'}$ **converges** to a limit $L \in \mathbb{'\{'}R{'\}'}$ if for
 every $\varepsilon > 0$, there exists $N \in \mathbb{'\{'}N{'\}'}$ such that
 
-$$|a_n - L| \lt{} \varepsilon \quad \mathrm{'\{'}for\ all\ {'\}'} n \geq N$$
+$$|a_n - L| \lt{} \varepsilon \quad \mathrm{for\ all\ {} n \geq N$$
 
 We write $a_n \to L$ or $\lim_{n \to \infty} a_n = L$. A sequence that does not converge is said to
 **diverge**.
@@ -233,7 +233,7 @@ $|a_n - s| \lt{} \varepsilon$ for all $n \geq N$. $\blacksquare$
 A sequence $(a_n)$ is a **Cauchy sequence** if for every $\varepsilon > 0$, there exists $N \in
 \mathbb{'\{'}N{'\}'}$ such that
 
-$$|a_n - a_m| \lt{} \varepsilon \quad \mathrm{'\{'}for\ all\ {'\}'} m, n \geq N$$
+$$|a_n - a_m| \lt{} \varepsilon \quad \mathrm{for\ all\ {} m, n \geq N$$
 
 **Theorem 2.4.** Every convergent sequence is Cauchy.
 
@@ -273,13 +273,13 @@ $I_1$. Having constructed $I_k = [l_k, r_k]$, bisect it and select $I_{k+1}$ as 
 infinitely many terms of $(a_n)$.
 
 This produces a nested sequence of closed intervals $I_0 \supseteq I_1 \supseteq I_2 \supseteq \cdots$
-with $\mathrm{'\{'}length{'\}'}(I_k) = (B - A)/2^k \to 0$. By the **Nested Interval Property** (which follows
+with $\mathrm{length{}(I_k) = (B - A)/2^k \to 0$. By the **Nested Interval Property** (which follows
 from completeness), $\bigcap_{k=0}^{\infty} I_k = \{c\}$ for some $c \in [A, B]$.
 
 Construct the subsequence inductively: pick $n_1$ with $a_{n_1} \in I_1$. Having chosen
 $n_1 \lt{} n_2 \lt{} \cdots \lt{} n_{k-1}$, pick $n_k > n_{k-1}$ with $a_{n_k} \in I_k$ (possible since
 $I_k$ contains infinitely many terms). Then $a_{n_k} \in I_k$ for all $k$, so
-$|a_{n_k} - c| \leq \mathrm{'\{'}length{'\}'}(I_k) \to 0$. Hence $a_{n_k} \to c$. $\blacksquare$
+$|a_{n_k} - c| \leq \mathrm{length{}(I_k) \to 0$. Hence $a_{n_k} \to c$. $\blacksquare$
 
 ### 2.6 Limit Superior and Limit Inferior
 
@@ -994,7 +994,7 @@ but $f'$ is not continuous at $0$.
 *Proof.* Assume without loss of generality that $f'(a) \lt{} y \lt{} f'(b)$. Define
 $g(x) = f(x) - yx$. Then $g$ is differentiable on $[a, b]$ with
 
-$$g'(a) = f'(a) - y \lt{} 0 \quad \mathrm{'\{'}and{'\}'} \quad g'(b) = f'(b) - y > 0$$
+$$g'(a) = f'(a) - y \lt{} 0 \quad \mathrm{and{} \quad g'(b) = f'(b) - y > 0$$
 
 Since $g'(a) \lt{} 0$, there exists $x_1 > a$ with $g(x_1) \lt{} g(a)$ (otherwise $g(x) \geq g(a)$
 for $x$ near $a$, contradicting $g'(a) \lt{} 0$). Similarly, since $g'(b) > 0$, there exists
@@ -1110,8 +1110,8 @@ The **mesh** of $P$ is $\|P\| = \max_{1 \leq i \leq n} \Delta x_i$.
 
 $$\overline{\int_a^b} f(x)\, dx = \underline{\int_a^b} f(x)\, dx$$
 
-where $\overline{\int_a^b} f = \inf\{U(f,P) : P \mathrm{'\{'}\ is\ a\ partition{'\}'}\}$ and
-$\underline{\int_a^b} f = \sup\{L(f,P) : P \mathrm{'\{'}\ is\ a\ partition{'\}'}\}$.
+where $\overline{\int_a^b} f = \inf\{U(f,P) : P \mathrm{\ is\ a\ partition{}\}$ and
+$\underline{\int_a^b} f = \sup\{L(f,P) : P \mathrm{\ is\ a\ partition{}\}$.
 
 The common value is denoted $\int_a^b f(x)\, dx$.
 
@@ -1380,7 +1380,7 @@ $|f_n(x) - f(x)| \lt{} \varepsilon$ for all $n \geq N$.
 **Example.** Let $f_n(x) = x^n$ on $E = [0, 1]$. For each $x \in [0, 1)$, $f_n(x) = x^n \to 0$, and
 $f_n(1) = 1$ for all $n$. So $f_n$ converges pointwise to
 
-$$f(x) = \begin{cases} 0 & \mathrm{'\{'}if\ {'\}'} 0 \leq x \lt{} 1 \\ 1 & \mathrm{'\{'}if\ {'\}'} x = 1 \end{cases}$$
+$$f(x) = \begin{cases} 0 & \mathrm{if\ {} 0 \leq x \lt{} 1 \\ 1 & \mathrm{if\ {} x = 1 \end{cases}$$
 
 Note that each $f_n$ is continuous, but the pointwise limit $f$ is not continuous at $x = 1$.
 
@@ -1389,7 +1389,7 @@ Note that each $f_n$ is continuous, but the pointwise limit $f$ is not continuou
 **Definition.** $(f_n)$ **converges uniformly** to $f$ on $E$ if for every $\varepsilon > 0$, there
 exists $N \in \mathbb{'\{'}N{'\}'}$ (depending only on $\varepsilon$, not on $x$) such that for all $x \in E$:
 
-$$|f_n(x) - f(x)| \lt{} \varepsilon \quad \mathrm{'\{'}for\ all\ {'\}'} n \geq N$$
+$$|f_n(x) - f(x)| \lt{} \varepsilon \quad \mathrm{for\ all\ {} n \geq N$$
 
 Equivalently, $\sup_{x \in E} |f_n(x) - f(x)| \to 0$ as $n \to \infty$.
 
@@ -1930,7 +1930,7 @@ _If you get this wrong, revise:_ Section 7.2 (Uniform Convergence), Section 7.1 
 
 $$\left|\frac{a_{n+1}}{a_n}\right| = \frac{(2(n+1))!}{((n+1)!)^2} \cdot \frac{(n!)^2}{(2n)!} \cdot |x| = \frac{(2n+2)(2n+1)}{(n+1)^2} \cdot |x|$$
 
-$$= \frac{2(2n+1)}{n+1} \cdot |x| = \frac{4n + 2}{n + 1} \cdot |x| \to 4|x| \quad \mathrm{'\{'}as\ {'\}'} n \to \infty$$
+$$= \frac{2(2n+1)}{n+1} \cdot |x| = \frac{4n + 2}{n + 1} \cdot |x| \to 4|x| \quad \mathrm{as\ {} n \to \infty$$
 
 The series converges when $4|x| \lt{} 1$, i.e., $|x| \lt{} 1/4$, and diverges when $4|x| > 1$.
 The radius of convergence is $R = 1/4$. $\blacksquare$

@@ -73,14 +73,14 @@ $$(a_1\ a_2\ \ldots\ a_k) = (a_1\ a_k)(a_1\ a_{k-1})\cdots(a_1\ a_2)$$
 
 The number of transpositions in a factorization is not unique, but its **parity** is.
 
-**Proposition 1.6.** The **sign** of a permutation $\sigma$, defined by $\mathrm{'\{'}sgn{'\}'}(\sigma) = (-1)^{N(\sigma)}$
+**Proposition 1.6.** The **sign** of a permutation $\sigma$, defined by $\mathrm{sgn{}(\sigma) = (-1)^{N(\sigma)}$
 where $N(\sigma)$ is the number of inversions of $\sigma$, is a well-defined group homomorphism
-$\mathrm{'\{'}sgn{'\}'} : S_n \to \{1, -1\}$. Its kernel is the **alternating group** $A_n$ of even permutations.
+$\mathrm{sgn{} : S_n \to \{1, -1\}$. Its kernel is the **alternating group** $A_n$ of even permutations.
 
-*Proof.* We first show $\mathrm{'\{'}sgn{'\}'}$ is a homomorphism. For any transposition $\tau$ and any
+*Proof.* We first show $\mathrm{sgn{}$ is a homomorphism. For any transposition $\tau$ and any
 permutation $\sigma$, multiplying by $\tau$ changes the number of inversions by an odd number,
-so $\mathrm{'\{'}sgn{'\}'}(\tau\sigma) = -\mathrm{'\{'}sgn{'\}'}(\sigma)$. For any $\sigma, \rho \in S_n$, write $\rho$
-as a product of $k$ transpositions. Then $\mathrm{'\{'}sgn{'\}'}(\sigma\rho) = (-1)^k\mathrm{'\{'}sgn{'\}'}(\sigma) = \mathrm{'\{'}sgn{'\}'}(\sigma)\mathrm{'\{'}sgn{'\}'}(\rho)$.
+so $\mathrm{sgn{}(\tau\sigma) = -\mathrm{sgn{}(\sigma)$. For any $\sigma, \rho \in S_n$, write $\rho$
+as a product of $k$ transpositions. Then $\mathrm{sgn{}(\sigma\rho) = (-1)^k\mathrm{sgn{}(\sigma) = \mathrm{sgn{}(\sigma)\mathrm{sgn{}(\rho)$.
 The kernel is precisely the set of even permutations, and $|A_n| = n!/2$. $\blacksquare$
 
 **Proposition 1.7.** The number of $k$-cycles in $S_n$ is $\frac{n!}{k(n-k)!}$.
@@ -191,7 +191,7 @@ $|A_n| = n!/2$.
 
 ### 2.3 The Center of a Group
 
-The **center** of $G$ is $Z(G) = \{z \in G : zg = gz \mathrm{'\{'}\ for\ all\ {'\}'} g \in G\}$.
+The **center** of $G$ is $Z(G) = \{z \in G : zg = gz \mathrm{\ for\ all\ {} g \in G\}$.
 
 **Proposition 2.3.** $Z(G)$ is a subgroup of $G$.
 
@@ -511,9 +511,9 @@ $\phi(e_G) = e_H$. (2) $e_H = \phi(e_G) = \phi(aa^{-1}) = \phi(a)\phi(a^{-1})$, 
 
 The **kernel** of $\phi$ is $\ker(\phi) = \{g \in G : \phi(g) = e_H\}$.
 
-The **image** of $\phi$ is $\mathrm{'\{'}im{'\}'}(\phi) = \{\phi(g) : g \in G\}$.
+The **image** of $\phi$ is $\mathrm{im{}(\phi) = \{\phi(g) : g \in G\}$.
 
-**Theorem 5.2.** $\ker(\phi) \trianglelefteq G$ and $\mathrm{'\{'}im{'\}'}(\phi) \leq H$.
+**Theorem 5.2.** $\ker(\phi) \trianglelefteq G$ and $\mathrm{im{}(\phi) \leq H$.
 
 *Proof.* We show $\ker(\phi)$ is a normal subgroup.
 
@@ -522,7 +522,7 @@ The **image** of $\phi$ is $\mathrm{'\{'}im{'\}'}(\phi) = \{\phi(g) : g \in G\}$
 - If $a \in \ker(\phi)$ and $g \in G$, then $\phi(gag^{-1}) = \phi(g)\phi(a)\phi(g)^{-1} = \phi(g)e_H\phi(g)^{-1} = e_H$,
   so $gag^{-1} \in \ker(\phi)$.
 
-Thus $\ker(\phi) \trianglelefteq G$. The proof that $\mathrm{'\{'}im{'\}'}(\phi) \leq H$ is straightforward. $\blacksquare$
+Thus $\ker(\phi) \trianglelefteq G$. The proof that $\mathrm{im{}(\phi) \leq H$ is straightforward. $\blacksquare$
 
 ### 5.3 The First Isomorphism Theorem
 
@@ -530,14 +530,14 @@ Thus $\ker(\phi) \trianglelefteq G$. The proof that $\mathrm{'\{'}im{'\}'}(\phi)
 
 $$G / \ker(\phi) \cong H$$
 
-More generally (even if $\phi$ is not surjective), $G / \ker(\phi) \cong \mathrm{'\{'}im{'\}'}(\phi)$.
+More generally (even if $\phi$ is not surjective), $G / \ker(\phi) \cong \mathrm{im{}(\phi)$.
 
 *Proof.* Define $\overline{\phi} : G/\ker(\phi) \to H$ by $\overline{\phi}(g \ker(\phi)) = \phi(g)$.
 This is well-defined: if $g \ker(\phi) = g' \ker(\phi)$, then $g'^{-1}g \in \ker(\phi)$,
 so $\phi(g'^{-1}g) = e_H$, giving $\phi(g) = \phi(g')$.
 It is a homomorphism: $\overline{\phi}((a\ker(\phi))(b\ker(\phi))) = \overline{\phi}(ab\ker(\phi)) = \phi(ab) = \phi(a)\phi(b) = \overline{\phi}(a\ker(\phi))\overline{\phi}(b\ker(\phi))$.
 It is injective: $\overline{\phi}(g\ker(\phi)) = e_H \Rightarrow \phi(g) = e_H \Rightarrow g \in \ker(\phi) \Rightarrow g\ker(\phi) = \ker(\phi)$.
-By construction, $\mathrm{'\{'}im{'\}'}(\overline{\phi}) = \mathrm{'\{'}im{'\}'}(\phi)$. $\blacksquare$
+By construction, $\mathrm{im{}(\overline{\phi}) = \mathrm{im{}(\phi)$. $\blacksquare$
 
 ### 5.4 Second and Third Isomorphism Theorems
 
@@ -563,9 +563,9 @@ isomorphism theorem. $\blacksquare$
 
 **Problem.** Show that $\mathbb{'\{'}R{'\}'}^* / \mathbb{'\{'}R{'\}'}^+ \cong \mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'}$.
 
-*Solution.* Define $\phi : \mathbb{'\{'}R{'\}'}^* \to \{1, -1\} \cong \mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'}$ by $\phi(x) = \mathrm{'\{'}sgn{'\}'}(x)$.
-This is a homomorphism since $\mathrm{'\{'}sgn{'\}'}(xy) = \mathrm{'\{'}sgn{'\}'}(x)\mathrm{'\{'}sgn{'\}'}(y)$.
-It is surjective. Its kernel is $\{x \in \mathbb{'\{'}R{'\}'}^* : \mathrm{'\{'}sgn{'\}'}(x) = 1\} = \mathbb{'\{'}R{'\}'}^+$.
+*Solution.* Define $\phi : \mathbb{'\{'}R{'\}'}^* \to \{1, -1\} \cong \mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'}$ by $\phi(x) = \mathrm{sgn{}(x)$.
+This is a homomorphism since $\mathrm{sgn{}(xy) = \mathrm{sgn{}(x)\mathrm{sgn{}(y)$.
+It is surjective. Its kernel is $\{x \in \mathbb{'\{'}R{'\}'}^* : \mathrm{sgn{}(x) = 1\} = \mathbb{'\{'}R{'\}'}^+$.
 By the first isomorphism theorem, $\mathbb{'\{'}R{'\}'}^* / \mathbb{'\{'}R{'\}'}^+ \cong \mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'}$. $\blacksquare$
 
 ### 5.6 Further Worked Examples
@@ -574,7 +574,7 @@ By the first isomorphism theorem, $\mathbb{'\{'}R{'\}'}^* / \mathbb{'\{'}R{'\}'}
 $\phi(g) = e_H$ for all $g \in G$ is a homomorphism (the **trivial homomorphism**). Its kernel is $G$
 and its image is $\{e_H\}$.
 
-**Example 5.7 (Sign Homomorphism).** The sign map $\mathrm{'\{'}sgn{'\}'} : S_n \to \{1, -1\}$ is a surjective
+**Example 5.7 (Sign Homomorphism).** The sign map $\mathrm{sgn{} : S_n \to \{1, -1\}$ is a surjective
 homomorphism with kernel $A_n$. By the first isomorphism theorem, $S_n / A_n \cong \mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'}$.
 
 **Example 5.8 (Determinant Homomorphism).** The determinant $\det : GL_n(\mathbb{'\{'}R{'\}'}) \to \mathbb{'\{'}R{'\}'}^*$
@@ -603,7 +603,7 @@ By the first isomorphism theorem, $\mathbb{'\{'}Z{'\}'}/n\mathbb{'\{'}Z{'\}'} \c
 **Theorem 5.6 (Correspondence Theorem / Fourth Isomorphism Theorem).** Let $\phi : G \to H$ be a
 surjective homomorphism with $K = \ker(\phi)$. Then there is an inclusion-preserving bijection
 
-$$\{\mathrm{'\{'}subgroups\ of\ {'\}'} G \mathrm{'\{'}\ containing\ {'\}'} K\} \longleftrightarrow \{\mathrm{'\{'}subgroups\ of\ {'\}'} H\}$$
+$$\{\mathrm{subgroups\ of\ {} G \mathrm{\ containing\ {} K\} \longleftrightarrow \{\mathrm{subgroups\ of\ {} H\}$$
 
 given by $U \mapsto \phi(U)$ with inverse $V \mapsto \phi^{-1}(V)$. This bijection satisfies:
 
@@ -613,8 +613,8 @@ given by $U \mapsto \phi(U)$ with inverse $V \mapsto \phi^{-1}(V)$. This bijecti
 
 *Proof.* Define $\Phi(U) = \phi(U)$ and $\Psi(V) = \phi^{-1}(V) = \{g \in G : \phi(g) \in V\}$.
 
-- $\Phi \circ \Psi = \mathrm{'\{'}id{'\}'}$: $\Phi(\Psi(V)) = \phi(\phi^{-1}(V)) = V$ (since $\phi$ is surjective).
-- $\Psi \circ \Phi = \mathrm{'\{'}id{'\}'}$ on subgroups containing $K$: if $U \supseteq K$, then
+- $\Phi \circ \Psi = \mathrm{id{}$: $\Phi(\Psi(V)) = \phi(\phi^{-1}(V)) = V$ (since $\phi$ is surjective).
+- $\Psi \circ \Phi = \mathrm{id{}$ on subgroups containing $K$: if $U \supseteq K$, then
   $\Psi(\Phi(U)) = \phi^{-1}(\phi(U)) = U$ (since $\ker(\phi) = K \subseteq U$).
 
 For normality: if $U \trianglelefteq G$, then for any $h \in H$ and $u \in U$,
@@ -628,34 +628,34 @@ so $|U/K| = |\phi(U)|$, giving $|G|/|U| = |H|/|\phi(U)|$. $\blacksquare$
 ### 5.8 Automorphism Groups
 
 An **automorphism** of $G$ is an isomorphism $\phi : G \to G$. The set of all automorphisms of $G$
-forms a group under composition, denoted $\mathrm{'\{'}Aut{'\}'}(G)$.
+forms a group under composition, denoted $\mathrm{Aut{}(G)$.
 
 For each $g \in G$, the **inner automorphism** $c_g : G \to G$ is defined by $c_g(x) = gxg^{-1}$.
-The set of inner automorphisms $\mathrm{'\{'}Inn{'\}'}(G) = \{c_g : g \in G\}$ is a normal subgroup of $\mathrm{'\{'}Aut{'\}'}(G)$.
+The set of inner automorphisms $\mathrm{Inn{}(G) = \{c_g : g \in G\}$ is a normal subgroup of $\mathrm{Aut{}(G)$.
 
-**Proposition 5.7.** $\mathrm{'\{'}Inn{'\}'}(G) \cong G/Z(G)$.
+**Proposition 5.7.** $\mathrm{Inn{}(G) \cong G/Z(G)$.
 
-*Proof.* Define $\psi : G \to \mathrm{'\{'}Aut{'\}'}(G)$ by $\psi(g) = c_g$. This is a homomorphism:
+*Proof.* Define $\psi : G \to \mathrm{Aut{}(G)$ by $\psi(g) = c_g$. This is a homomorphism:
 $\psi(gh) = c_{gh}$, and $c_{gh}(x) = ghx(gh)^{-1} = g(hxh^{-1})g^{-1} = c_g(c_h(x)) = (c_g \circ c_h)(x)$.
-The image is $\mathrm{'\{'}Inn{'\}'}(G)$. The kernel is $\{g \in G : c_g = \mathrm{'\{'}id{'\}'}\} = \{g \in G : gxg^{-1} = x
-\ \mathrm{'\{'}for\ all{'\}'}\ x \in G\} = Z(G)$. By the first isomorphism theorem,
-$\mathrm{'\{'}Inn{'\}'}(G) \cong G/Z(G)$. $\blacksquare$
+The image is $\mathrm{Inn{}(G)$. The kernel is $\{g \in G : c_g = \mathrm{id{}\} = \{g \in G : gxg^{-1} = x
+\ \mathrm{for\ all{}\ x \in G\} = Z(G)$. By the first isomorphism theorem,
+$\mathrm{Inn{}(G) \cong G/Z(G)$. $\blacksquare$
 
-**Example.** $\mathrm{'\{'}Aut{'\}'}(S_3) \cong S_3$. Since $Z(S_3) = \{e\}$, we have $\mathrm{'\{'}Inn{'\}'}(S_3) \cong S_3$.
-Since $|\mathrm{'\{'}Aut{'\}'}(S_3)| \leq |S_3|! = 6$ (automorphisms permute the three elements of order $2$),
-and $\mathrm{'\{'}Inn{'\}'}(S_3)$ already has $6$ elements, we get $\mathrm{'\{'}Aut{'\}'}(S_3) = \mathrm{'\{'}Inn{'\}'}(S_3) \cong S_3$.
+**Example.** $\mathrm{Aut{}(S_3) \cong S_3$. Since $Z(S_3) = \{e\}$, we have $\mathrm{Inn{}(S_3) \cong S_3$.
+Since $|\mathrm{Aut{}(S_3)| \leq |S_3|! = 6$ (automorphisms permute the three elements of order $2$),
+and $\mathrm{Inn{}(S_3)$ already has $6$ elements, we get $\mathrm{Aut{}(S_3) = \mathrm{Inn{}(S_3) \cong S_3$.
 
-**Example.** $\mathrm{'\{'}Aut{'\}'}(\mathbb{'\{'}Z{'\}'}/n\mathbb{'\{'}Z{'\}'}) \cong (\mathbb{'\{'}Z{'\}'}/n\mathbb{'\{'}Z{'\}'})^*$, the group of units
+**Example.** $\mathrm{Aut{}(\mathbb{'\{'}Z{'\}'}/n\mathbb{'\{'}Z{'\}'}) \cong (\mathbb{'\{'}Z{'\}'}/n\mathbb{'\{'}Z{'\}'})^*$, the group of units
 modulo $n$. An automorphism of $\mathbb{'\{'}Z{'\}'}/n\mathbb{'\{'}Z{'\}'}$ is determined by where it sends $1$, and
 $1$ can map to any generator, i.e., any $[k]$ with $\gcd(k, n) = 1$.
 
-**Example.** $\mathrm{'\{'}Aut{'\}'}(\mathbb{'\{'}Z{'\}'}/8\mathbb{'\{'}Z{'\}'}) \cong (\mathbb{'\{'}Z{'\}'}/8\mathbb{'\{'}Z{'\}'})^* = \{1, 3, 5, 7\} \cong V_4$.
+**Example.** $\mathrm{Aut{}(\mathbb{'\{'}Z{'\}'}/8\mathbb{'\{'}Z{'\}'}) \cong (\mathbb{'\{'}Z{'\}'}/8\mathbb{'\{'}Z{'\}'})^* = \{1, 3, 5, 7\} \cong V_4$.
 The four automorphisms are $x \mapsto x$, $x \mapsto 3x$, $x \mapsto 5x$, $x \mapsto 7x$.
 Note that $3^2 = 9 \equiv 1 \pmod{8}$, so every non-identity automorphism has order $2$.
 
 ### 5.9 Semidirect Products
 
-**Definition.** Let $H$ and $K$ be groups and let $\phi : K \to \mathrm{'\{'}Aut{'\}'}(H)$ be a homomorphism.
+**Definition.** Let $H$ and $K$ be groups and let $\phi : K \to \mathrm{Aut{}(H)$ be a homomorphism.
 The **semidirect product** $H \rtimes_\phi K$ is the set $H \times K$ with the group operation
 
 $$(h_1, k_1)(h_2, k_2) = (h_1 \cdot \phi(k_1)(h_2), k_1 k_2)$$
@@ -683,7 +683,7 @@ divides $2$, so $n_3 = 1$. The Sylow $3$-subgroup $H = \langle a \rangle \cong \
 
 Let $b$ be an element of order $2$ (exists by Cauchy). Since $H \trianglelefteq G$,
 $bab^{-1} \in H$. The action of $\langle b \rangle$ on $H$ by conjugation is a homomorphism
-$\mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'} \to \mathrm{'\{'}Aut{'\}'}(\mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'}) \cong \mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'}$.
+$\mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'} \to \mathrm{Aut{}(\mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'}) \cong \mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'}$.
 
 There are two such homomorphisms:
 1. **Trivial:** $bab^{-1} = a$. Then $G \cong \mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'} \times \mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'} \cong \mathbb{'\{'}Z{'\}'}/6\mathbb{'\{'}Z{'\}'}$.
@@ -704,9 +704,9 @@ $H = \langle a \rangle \cong \mathbb{'\{'}Z{'\}'}/7\mathbb{'\{'}Z{'\}'}$ is norm
 $n_3 \equiv 1 \pmod{3}$ and $n_3$ divides $7$, so $n_3 = 1$ or $7$.
 
 The action of a Sylow $3$-subgroup $K = \langle b \rangle \cong \mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'}$ on $H$ by conjugation
-is a homomorphism $\mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'} \to \mathrm{'\{'}Aut{'\}'}(\mathbb{'\{'}Z{'\}'}/7\mathbb{'\{'}Z{'\}'}) \cong \mathbb{'\{'}Z{'\}'}/6\mathbb{'\{'}Z{'\}'}$.
+is a homomorphism $\mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'} \to \mathrm{Aut{}(\mathbb{'\{'}Z{'\}'}/7\mathbb{'\{'}Z{'\}'}) \cong \mathbb{'\{'}Z{'\}'}/6\mathbb{'\{'}Z{'\}'}$.
 
-$\mathrm{'\{'}Aut{'\}'}(\mathbb{'\{'}Z{'\}'}/7\mathbb{'\{'}Z{'\}'})$ has exactly one subgroup of order $3$ (generated by $x \mapsto 2x$
+$\mathrm{Aut{}(\mathbb{'\{'}Z{'\}'}/7\mathbb{'\{'}Z{'\}'})$ has exactly one subgroup of order $3$ (generated by $x \mapsto 2x$
 since $2^3 = 8 \equiv 1 \pmod{7}$).
 
 **Case 1:** Trivial action ($n_3 = 1$): $G \cong \mathbb{'\{'}Z{'\}'}/7\mathbb{'\{'}Z{'\}'} \times \mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'} \cong \mathbb{'\{'}Z{'\}'}/21\mathbb{'\{'}Z{'\}'}$.
@@ -730,34 +730,34 @@ satisfying:
 
 ### 6.2 Orbits and Stabilizers
 
-The **orbit** of $x \in X$ is $\mathrm{'\{'}Orb{'\}'}(x) = \{g \cdot x : g \in G\}$.
+The **orbit** of $x \in X$ is $\mathrm{Orb{}(x) = \{g \cdot x : g \in G\}$.
 
-The **stabilizer** of $x \in X$ is $\mathrm{'\{'}Stab{'\}'}(x) = \{g \in G : g \cdot x = x\}$.
+The **stabilizer** of $x \in X$ is $\mathrm{Stab{}(x) = \{g \in G : g \cdot x = x\}$.
 
-**Proposition 6.1.** $\mathrm{'\{'}Stab{'\}'}(x)$ is a subgroup of $G$.
+**Proposition 6.1.** $\mathrm{Stab{}(x)$ is a subgroup of $G$.
 
 **Theorem 6.2 (Orbit-Stabilizer Theorem).** For any $x \in X$,
 
-$$|\mathrm{'\{'}Orb{'\}'}(x)| = [G : \mathrm{'\{'}Stab{'\}'}(x)] = \frac{|G|}{|\mathrm{'\{'}Stab{'\}'}(x)|}$$
+$$|\mathrm{Orb{}(x)| = [G : \mathrm{Stab{}(x)] = \frac{|G|}{|\mathrm{Stab{}(x)|}$$
 
-*Proof.* Define $\phi : G \to \mathrm{'\{'}Orb{'\}'}(x)$ by $\phi(g) = g \cdot x$. Then $g$ and $h$ have the same
-image iff $g \cdot x = h \cdot x$ iff $h^{-1}g \cdot x = x$ iff $h^{-1}g \in \mathrm{'\{'}Stab{'\}'}(x)$
-iff $g \in h\,\mathrm{'\{'}Stab{'\}'}(x)$. So the fibers of $\phi$ are precisely the cosets of $\mathrm{'\{'}Stab{'\}'}(x)$,
-and there are $[G : \mathrm{'\{'}Stab{'\}'}(x)]$ of them, each mapping to a distinct element of $\mathrm{'\{'}Orb{'\}'}(x)$. $\blacksquare$
+*Proof.* Define $\phi : G \to \mathrm{Orb{}(x)$ by $\phi(g) = g \cdot x$. Then $g$ and $h$ have the same
+image iff $g \cdot x = h \cdot x$ iff $h^{-1}g \cdot x = x$ iff $h^{-1}g \in \mathrm{Stab{}(x)$
+iff $g \in h\,\mathrm{Stab{}(x)$. So the fibers of $\phi$ are precisely the cosets of $\mathrm{Stab{}(x)$,
+and there are $[G : \mathrm{Stab{}(x)]$ of them, each mapping to a distinct element of $\mathrm{Orb{}(x)$. $\blacksquare$
 
 ### 6.3 Burnside's Lemma
 
 **Theorem 6.3 (Burnside's Lemma).** If a finite group $G$ acts on a finite set $X$, then the number
 of orbits is
 
-$$\frac{1}{|G|} \sum_{g \in G} |\mathrm{'\{'}Fix{'\}'}(g)|$$
+$$\frac{1}{|G|} \sum_{g \in G} |\mathrm{Fix{}(g)|$$
 
-where $\mathrm{'\{'}Fix{'\}'}(g) = \{x \in X : g \cdot x = x\}$.
+where $\mathrm{Fix{}(g) = \{x \in X : g \cdot x = x\}$.
 
 *Proof.* Count the set $S = \{(g, x) \in G \times X : g \cdot x = x\}$ in two ways. Grouping by $g$:
-$|S| = \sum_{g \in G} |\mathrm{'\{'}Fix{'\}'}(g)|$. Grouping by $x$: $|S| = \sum_{x \in X} |\mathrm{'\{'}Stab{'\}'}(x)|$.
-For $x$ in orbit $O$, $|\mathrm{'\{'}Stab{'\}'}(x)| = |G|/|O|$. So $\sum_{x \in O} |\mathrm{'\{'}Stab{'\}'}(x)| = |O| \cdot |G|/|O| = |G|$.
-Summing over all orbits: $|S| = |G| \cdot (\mathrm{'\{'}number\ of\ orbits{'\}'})$. $\blacksquare$
+$|S| = \sum_{g \in G} |\mathrm{Fix{}(g)|$. Grouping by $x$: $|S| = \sum_{x \in X} |\mathrm{Stab{}(x)|$.
+For $x$ in orbit $O$, $|\mathrm{Stab{}(x)| = |G|/|O|$. So $\sum_{x \in O} |\mathrm{Stab{}(x)| = |O| \cdot |G|/|O| = |G|$.
+Summing over all orbits: $|S| = |G| \cdot (\mathrm{number\ of\ orbits{})$. $\blacksquare$
 
 ### 6.4 Conjugation Action and the Class Equation
 
@@ -773,7 +773,7 @@ $$|G| = |Z(G)| + \sum_{i} [G : C_G(x_i)]$$
 where the sum is over representatives $x_i$ of the non-central conjugacy classes.
 
 *Proof.* The conjugacy classes partition $G$. Central elements form singleton classes.
-For a non-central element $x$, $|\mathrm{'\{'}Orb{'\}'}(x)| = [G : C_G(x)]$ by the orbit-stabilizer theorem.
+For a non-central element $x$, $|\mathrm{Orb{}(x)| = [G : C_G(x)]$ by the orbit-stabilizer theorem.
 Summing gives the result. $\blacksquare$
 
 ### 6.5 Worked Example: Symmetries of a Cube
@@ -787,16 +787,16 @@ to verify the sizes of the orbits of vertices, edges, and faces under this actio
 *Solution.* Let $G$ be the rotation group of a cube, with $|G| = 24$.
 
 **Vertices.** The cube has $8$ vertices. The action on vertices is transitive (any vertex can be rotated
-to any other), so $|\mathrm{'\{'}Orb{'\}'}(v)| = 8$. By orbit-stabilizer, $|\mathrm{'\{'}Stab{'\}'}(v)| = 24/8 = 3$.
+to any other), so $|\mathrm{Orb{}(v)| = 8$. By orbit-stabilizer, $|\mathrm{Stab{}(v)| = 24/8 = 3$.
 Indeed, the stabilizer of a vertex consists of rotations about the space diagonal through that vertex
 and its opposite: the identity, $120°$ rotation, and $240°$ rotation.
 
-**Edges.** The cube has $12$ edges. The action is transitive, so $|\mathrm{'\{'}Orb{'\}'}(e)| = 12$ and
-$|\mathrm{'\{'}Stab{'\}'}(e)| = 24/12 = 2$. The stabilizer of an edge is $\{\mathrm{'\{'}id{'\}'}, r\}$ where $r$ is the
+**Edges.** The cube has $12$ edges. The action is transitive, so $|\mathrm{Orb{}(e)| = 12$ and
+$|\mathrm{Stab{}(e)| = 24/12 = 2$. The stabilizer of an edge is $\{\mathrm{id{}, r\}$ where $r$ is the
 $180°$ rotation about the axis through the midpoints of that edge and its opposite.
 
-**Faces.** The cube has $6$ faces. The action is transitive, so $|\mathrm{'\{'}Orb{'\}'}(f)| = 6$ and
-$|\mathrm{'\{'}Stab{'\}'}(f)| = 24/6 = 4$. The stabilizer of a face consists of rotations about the axis
+**Faces.** The cube has $6$ faces. The action is transitive, so $|\mathrm{Orb{}(f)| = 6$ and
+$|\mathrm{Stab{}(f)| = 24/6 = 4$. The stabilizer of a face consists of rotations about the axis
 through the center of that face and its opposite: $\{0°, 90°, 180°, 270°\} \cong \mathbb{'\{'}Z{'\}'}/4\mathbb{'\{'}Z{'\}'}$.
 
 This verifies: $24 = 8 \cdot 3 = 12 \cdot 2 = 6 \cdot 4$. $\blacksquare$
@@ -851,13 +851,13 @@ $p$-subgroup** of $G$ is a subgroup of order $p^n$.
 *Proof.* Let $|G| = p^n m$ with $\gcd(p, m) = 1$. Let $X$ be the set of all subsets of $G$ of size $p^n$.
 Then $|X| = \binom{p^n m}{p^n}$. Note that $p$ does not divide $\binom{p^n m}{p^n}$ (this follows from
 Lucas's theorem or examining the $p$-adic valuation). $G$ acts on $X$ by left multiplication.
-Since $|X|$ is not divisible by $p$, some orbit $\mathrm{'\{'}Orb{'\}'}(S)$ has size not divisible by $p$.
-By the orbit-stabilizer theorem, $|\mathrm{'\{'}Stab{'\}'}(S)| = |G|/|\mathrm{'\{'}Orb{'\}'}(S)|$ is divisible by $p^n$.
+Since $|X|$ is not divisible by $p$, some orbit $\mathrm{Orb{}(S)$ has size not divisible by $p$.
+By the orbit-stabilizer theorem, $|\mathrm{Stab{}(S)| = |G|/|\mathrm{Orb{}(S)|$ is divisible by $p^n$.
 For $s \in S$, left multiplication by $s$ is a bijection $S \to sS$, and $sS \subseteq S$ since
-$\mathrm{'\{'}Stab{'\}'}(S) \cdot S = S$. Since $|sS| = |S| = p^n$, we get $sS = S$, so $s \in \mathrm{'\{'}Stab{'\}'}(S)$.
-Thus $S \subseteq \mathrm{'\{'}Stab{'\}'}(S)$, giving $p^n \leq |\mathrm{'\{'}Stab{'\}'}(S)|$.
-Since $|\mathrm{'\{'}Stab{'\}'}(S)|$ divides $p^n m$ and is divisible by $p^n$, we have $|\mathrm{'\{'}Stab{'\}'}(S)| = p^n$,
-and $\mathrm{'\{'}Stab{'\}'}(S)$ is a Sylow $p$-subgroup. $\blacksquare$
+$\mathrm{Stab{}(S) \cdot S = S$. Since $|sS| = |S| = p^n$, we get $sS = S$, so $s \in \mathrm{Stab{}(S)$.
+Thus $S \subseteq \mathrm{Stab{}(S)$, giving $p^n \leq |\mathrm{Stab{}(S)|$.
+Since $|\mathrm{Stab{}(S)|$ divides $p^n m$ and is divisible by $p^n$, we have $|\mathrm{Stab{}(S)| = p^n$,
+and $\mathrm{Stab{}(S)$ is a Sylow $p$-subgroup. $\blacksquare$
 
 ### 7.3 Applications
 
@@ -886,7 +886,7 @@ $Q$ acts on the set of left cosets $G/P$ by left multiplication: $q \cdot (gP) =
 Since $|G/P| = |G|/|P| = m$ is not divisible by $p$, and orbits under the $Q$-action have sizes
 dividing $|Q|$ (hence powers of $p$), the number of fixed points satisfies:
 
-$$|\mathrm{'\{'}Fix{'\}'}(Q)| \equiv |G/P| \equiv m \not\equiv 0 \pmod{p}$$
+$$|\mathrm{Fix{}(Q)| \equiv |G/P| \equiv m \not\equiv 0 \pmod{p}$$
 
 So there exists $gP \in G/P$ fixed by $Q$, meaning $Q \cdot gP = gP$, i.e., $QgP = gP$, so
 $g^{-1}Qg \subseteq P$.
@@ -896,19 +896,19 @@ proving that $P$ and $Q$ are conjugate. $\blacksquare$
 
 ### 7.5 Proof of Sylow's Third Theorem
 
-*Proof.* Let $P$ be a Sylow $p$-subgroup. $P$ acts on the set $\mathrm{'\{'}Syl{'\}'}_p(G)$ of all Sylow
-$p$-subgroups by conjugation. Write $\mathrm{'\{'}Syl{'\}'}_p(G) = \{P = P_1, P_2, \ldots, P_{n_p}\}$.
+*Proof.* Let $P$ be a Sylow $p$-subgroup. $P$ acts on the set $\mathrm{Syl{}_p(G)$ of all Sylow
+$p$-subgroups by conjugation. Write $\mathrm{Syl{}_p(G) = \{P = P_1, P_2, \ldots, P_{n_p}\}$.
 
 **Step 1: $n_p \equiv 1 \pmod{p}$.** A Sylow $p$-subgroup $P_i$ is a fixed point of the $P$-action
 iff $P \subseteq N_G(P_i)$. But then $PP_i \leq N_G(P_i)$, and $|PP_i| = p^n \cdot p^n / |P \cap P_i|$,
 which is a power of $p$. Since $p^n$ is the maximal power of $p$ dividing $|G|$ and $PP_i \subseteq G$,
 we get $|PP_i| = p^n$, hence $P = PP_i = P_i$ (since $P \subseteq PP_i$).
 
-Thus $P$ is the **unique** fixed point. All other orbits have size $[P : \mathrm{'\{'}Stab{'\}'}_P(P_i)]$,
+Thus $P$ is the **unique** fixed point. All other orbits have size $[P : \mathrm{Stab{}_P(P_i)]$,
 a power of $p$ greater than $1$. By the fixed-point congruence for $p$-group actions:
-$n_p = 1 + \sum (\mathrm{'\{'}sizes\ of\ remaining\ orbits{'\}'}) \equiv 1 \pmod{p}$.
-**Step 2: $n_p$ divides $m$.** The group $G$ acts transitively on $\mathrm{'\{'}Syl{'\}'}_p(G)$ by conjugation
-(by Sylow's second theorem). Hence $n_p = |\mathrm{'\{'}Syl{'\}'}_p(G)| = [G : N_G(P)]$.
+$n_p = 1 + \sum (\mathrm{sizes\ of\ remaining\ orbits{}) \equiv 1 \pmod{p}$.
+**Step 2: $n_p$ divides $m$.** The group $G$ acts transitively on $\mathrm{Syl{}_p(G)$ by conjugation
+(by Sylow's second theorem). Hence $n_p = |\mathrm{Syl{}_p(G)| = [G : N_G(P)]$.
 Since $P \leq N_G(P)$, $|N_G(P)|$ is divisible by $p^n$. Therefore $n_p = |G|/|N_G(P)|$ divides
 $|G|/p^n = m$. $\blacksquare$
 
@@ -1179,13 +1179,13 @@ It is surjective: since $I + J = R$, there exist $a \in I$ and $b \in J$ with $a
 For any $(r_1 + I, r_2 + J)$, take $r = r_1b + r_2a$. Then $r \equiv r_1b \equiv r_1(1-a) \equiv r_1 \pmod{I}$
 and $r \equiv r_2a \equiv r_2(1-b) \equiv r_2 \pmod{J}$.
 
-The kernel is $\ker(\phi) = \{r : r \in I\ \mathrm{'\{'}and{'\}'}\ r \in J\} = I \cap J$.
+The kernel is $\ker(\phi) = \{r : r \in I\ \mathrm{and{}\ r \in J\} = I \cap J$.
 By the ring isomorphism theorem, $R/(I \cap J) \cong R/I \times R/J$. $\blacksquare$
 
 **Corollary 9.6.** If $m, n \in \mathbb{'\{'}Z{'\}'}$ are coprime, then $\mathbb{'\{'}Z{'\}'}/(mn) \cong \mathbb{'\{'}Z{'\}'}/(m) \times \mathbb{'\{'}Z{'\}'}/(n)$.
 
 *Proof.* Apply Theorem 9.5 with $I = (m)$, $J = (n)$. Since $\gcd(m, n) = 1$, we have $(m) + (n) = (1) = \mathbb{'\{'}Z{'\}'}$.
-Also $(m) \cap (n) = (\mathrm{'\{'}lcm{'\}'}(m, n)) = (mn)$. $\blacksquare$
+Also $(m) \cap (n) = (\mathrm{lcm{}(m, n)) = (mn)$. $\blacksquare$
 
 **Problem.** Find all solutions to $x \equiv 2 \pmod{3}$, $x \equiv 3 \pmod{5}$, $x \equiv 1 \pmod{7}$.
 
@@ -1334,7 +1334,7 @@ An integral domain $R$ is a **unique factorization domain (UFD)** if:
 
 The chain of implications is:
 
-$$\mathrm{'\{'}Euclidean\ domain{'\}'} \Rightarrow \mathrm{'\{'}PID{'\}'} \Rightarrow \mathrm{'\{'}UFD{'\}'}$$
+$$\mathrm{Euclidean\ domain{} \Rightarrow \mathrm{PID{} \Rightarrow \mathrm{UFD{}$$
 
 None of the reverse implications hold in general.
 
@@ -1473,7 +1473,7 @@ so $[\mathbb{'\{'}Q{'\}'}(\sqrt[4]{2}) : \mathbb{'\{'}Q{'\}'}] = 4$. The roots o
 $-\sqrt[4]{2}$, $-i\sqrt[4]{2}$. The root $i\sqrt[4]{2}$ is not in $\mathbb{'\{'}Q{'\}'}(\sqrt[4]{2}) \subset \mathbb{'\{'}R{'\}'}$.
 
 Therefore $\mathbb{'\{'}Q{'\}'}(\sqrt[4]{2})$ is not the splitting field of $x^4 - 2$, and
-$|\mathrm{'\{'}Aut{'\}'}(\mathbb{'\{'}Q{'\}'}(\sqrt[4]{2})/\mathbb{'\{'}Q{'\}'})| = 2 < 4$. The extension is not Galois. $\blacksquare$
+$|\mathrm{Aut{}(\mathbb{'\{'}Q{'\}'}(\sqrt[4]{2})/\mathbb{'\{'}Q{'\}'})| = 2 < 4$. The extension is not Galois. $\blacksquare$
 
 </details>
 
@@ -1516,27 +1516,27 @@ Let $E/F$ be a field extension. An $F$-**automorphism** of $E$ is an automorphis
 that fixes $F$ pointwise (i.e., $\sigma(c) = c$ for all $c \in F$).
 
 The set of all $F$-automorphisms of $E$ forms a group under composition, called the **Galois group**
-of $E/F$, denoted $\mathrm{'\{'}Gal{'\}'}(E/F)$.
+of $E/F$, denoted $\mathrm{Gal{}(E/F)$.
 
-**Example.** $\mathrm{'\{'}Gal{'\}'}(\mathbb{'\{'}C{'\}'}/\mathbb{'\{'}R{'\}'}) = \{id, \sigma\}$ where $\sigma(a + bi) = a - bi$.
+**Example.** $\mathrm{Gal{}(\mathbb{'\{'}C{'\}'}/\mathbb{'\{'}R{'\}'}) = \{id, \sigma\}$ where $\sigma(a + bi) = a - bi$.
 This is isomorphic to $\mathbb{'\{'}Z{'\}'}/2\mathbb{'\{'}Z{'\}'}$.
 
 ### 13.2 The Fundamental Theorem of Galois Theory
 
-A finite extension $E/F$ is **Galois** if $|\mathrm{'\{'}Gal{'\}'}(E/F)| = [E : F]$, or equivalently,
+A finite extension $E/F$ is **Galois** if $|\mathrm{Gal{}(E/F)| = [E : F]$, or equivalently,
 if $E$ is the splitting field of a separable polynomial over $F$.
 
 **Theorem 13.1 (Fundamental Theorem of Galois Theory).** Let $E/F$ be a Galois extension. Then:
 
 1. There is an inclusion-reversing bijection between intermediate fields $F \subseteq K \subseteq E$ and
-   subgroups $H \subseteq \mathrm{'\{'}Gal{'\}'}(E/F)$, given by:
-   - $K \mapsto \mathrm{'\{'}Gal{'\}'}(E/K)$.
-   - $H \mapsto E^H = \{x \in E : \sigma(x) = x\ \mathrm{'\{'}for\ all{'\}'}\ \sigma \in H\}$.
+   subgroups $H \subseteq \mathrm{Gal{}(E/F)$, given by:
+   - $K \mapsto \mathrm{Gal{}(E/K)$.
+   - $H \mapsto E^H = \{x \in E : \sigma(x) = x\ \mathrm{for\ all{}\ \sigma \in H\}$.
 
-2. $[E : K] = |\mathrm{'\{'}Gal{'\}'}(E/K)|$ and $[K : F] = [\mathrm{'\{'}Gal{'\}'}(E/F) : \mathrm{'\{'}Gal{'\}'}(E/K)]$.
+2. $[E : K] = |\mathrm{Gal{}(E/K)|$ and $[K : F] = [\mathrm{Gal{}(E/F) : \mathrm{Gal{}(E/K)]$.
 
-3. $K/F$ is Galois if and only if $\mathrm{'\{'}Gal{'\}'}(E/K) \trianglelefteq \mathrm{'\{'}Gal{'\}'}(E/F)$, in which case
-   $\mathrm{'\{'}Gal{'\}'}(K/F) \cong \mathrm{'\{'}Gal{'\}'}(E/F) / \mathrm{'\{'}Gal{'\}'}(E/K)$.
+3. $K/F$ is Galois if and only if $\mathrm{Gal{}(E/K) \trianglelefteq \mathrm{Gal{}(E/F)$, in which case
+   $\mathrm{Gal{}(K/F) \cong \mathrm{Gal{}(E/F) / \mathrm{Gal{}(E/K)$.
 
 ### 13.3 Worked Example
 
@@ -1547,8 +1547,8 @@ where $\omega = e^{2\pi i/3}$ is a primitive cube root of unity. The splitting f
 $E = \mathbb{'\{'}Q{'\}'}(\sqrt[3]{2}, \omega)$. We have $[E : \mathbb{'\{'}Q{'\}'}] = [E : \mathbb{'\{'}Q{'\}'}(\sqrt[3]{2})]
 \cdot [\mathbb{'\{'}Q{'\}'}(\sqrt[3]{2}) : \mathbb{'\{'}Q{'\}'}] = 2 \cdot 3 = 6$.
 
-The Galois group $\mathrm{'\{'}Gal{'\}'}(E/\mathbb{'\{'}Q{'\}'})$ acts as permutations of the three roots, so
-$\mathrm{'\{'}Gal{'\}'}(E/\mathbb{'\{'}Q{'\}'}) \cong S_3$.
+The Galois group $\mathrm{Gal{}(E/\mathbb{'\{'}Q{'\}'})$ acts as permutations of the three roots, so
+$\mathrm{Gal{}(E/\mathbb{'\{'}Q{'\}'}) \cong S_3$.
 
 The subgroup lattice of $S_3$ corresponds to the lattice of intermediate fields:
 
@@ -1582,11 +1582,11 @@ $$\Delta = \prod_{i \lt{} j} (\alpha_i - \alpha_j)^2$$
 
 The discriminant is a symmetric function of the roots, so $\Delta \in \mathbb{'\{'}Q{'\}'}$ when $f \in \mathbb{'\{'}Q{'\}'}[x]$.
 
-**Proposition 13.4.** Let $G = \mathrm{'\{'}Gal{'\}'}(f) \leq S_n$. Then $G \leq A_n$ (i.e., $G$ is contained in the
+**Proposition 13.4.** Let $G = \mathrm{Gal{}(f) \leq S_n$. Then $G \leq A_n$ (i.e., $G$ is contained in the
 alternating group) if and only if $\Delta$ is a perfect square in the base field.
 
 *Proof.* The Galois group acts on $\delta = \prod_{i \lt{} j}(\alpha_i - \alpha_j)$ by permutation.
-For any $\sigma \in G$, $\sigma(\delta) = \mathrm{'\{'}sgn{'\}'}(\sigma) \cdot \delta$. If $\sigma \in A_n$,
+For any $\sigma \in G$, $\sigma(\delta) = \mathrm{sgn{}(\sigma) \cdot \delta$. If $\sigma \in A_n$,
 $\sigma(\delta) = \delta$; if $\sigma \notin A_n$, $\sigma(\delta) = -\delta$.
 
 If $G \leq A_n$, then $\delta$ is fixed by all of $G$, so $\delta \in F$, hence $\Delta = \delta^2$ is a square.
@@ -1594,8 +1594,8 @@ Conversely, if $\Delta$ is a square in $F$, then $\delta \in F$ (or $-\delta \in
 by $G$, meaning every element of $G$ acts as an even permutation. $\blacksquare$
 
 **Example.** The discriminant of $x^3 - 3x + 1$ is $\Delta = 81 = 9^2$, a perfect square. Therefore
-$\mathrm{'\{'}Gal{'\}'}(x^3 - 3x + 1) \leq A_3 \cong \mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'}$. Since the polynomial is irreducible,
-the Galois group is transitive, so $\mathrm{'\{'}Gal{'\}'}(x^3 - 3x + 1) = A_3 \cong \mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'}$.
+$\mathrm{Gal{}(x^3 - 3x + 1) \leq A_3 \cong \mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'}$. Since the polynomial is irreducible,
+the Galois group is transitive, so $\mathrm{Gal{}(x^3 - 3x + 1) = A_3 \cong \mathbb{'\{'}Z{'\}'}/3\mathbb{'\{'}Z{'\}'}$.
 
 ### 13.6 Worked Example: Galois Group of a Quartic
 
@@ -1618,7 +1618,7 @@ $\tau: \sqrt[4]{2} \mapsto \sqrt[4]{2},\ i \mapsto -i$ (order $2$)
 We check: $\tau\sigma\tau^{-1}(\sqrt[4]{2}) = \tau(i\sqrt[4]{2}) = -i\sqrt[4]{2} = \sigma^{-1}(\sqrt[4]{2})$.
 So $\tau\sigma\tau^{-1} = \sigma^{-1}$, the defining relation of $D_4$.
 
-Therefore $\mathrm{'\{'}Gal{'\}'}(E/\mathbb{'\{'}Q{'\}'}) \cong D_4$ (dihedral group of order $8$). $\blacksquare$
+Therefore $\mathrm{Gal{}(E/\mathbb{'\{'}Q{'\}'}) \cong D_4$ (dihedral group of order $8$). $\blacksquare$
 
 </details>
 
@@ -1732,7 +1732,7 @@ Taking all products, the six abelian groups of order 72 are:
 *Solution.* Suppose $N \trianglelefteq S_4$ with $|N| = 8$. By Lagrange, $[S_4 : N] = 24/8 = 3$.
 The action of $S_4$ on the cosets of $N$ gives a homomorphism $\phi : S_4 \to S_3$.
 Since $N$ is normal, $\ker(\phi) \subseteq N$, so $|\ker(\phi)|$ divides $8$.
-Since $\mathrm{'\{'}im{'\}'}(\phi) \subseteq S_3$ has order dividing $6$, $|\ker(\phi)|$ divides $24/6 = 4$.
+Since $\mathrm{im{}(\phi) \subseteq S_3$ has order dividing $6$, $|\ker(\phi)|$ divides $24/6 = 4$.
 But $|\ker(\phi)|$ divides $8$, so $|\ker(\phi)|$ divides $\gcd(8, 4) = 4$.
 Since $\ker(\phi) \subseteq N$ and $|N| = 8$, and $|\ker(\phi)|$ divides $4$, this is possible.
 However, we need $\ker(\phi) = N$ (since $N$ is the kernel of the action on cosets).
@@ -1763,7 +1763,7 @@ The Galois group is generated by:
 - $\sigma : \sqrt[4]{5} \mapsto i\sqrt[4]{5},\ i \mapsto i$ (order 4)
 - $\tau : \sqrt[4]{5} \mapsto \sqrt[4]{5},\ i \mapsto -i$ (order 2)
 
-With $\tau\sigma\tau^{-1} = \sigma^{-1}$, we get $\mathrm{'\{'}Gal{'\}'}(E/\mathbb{'\{'}Q{'\}'}) \cong D_8$ (the dihedral
+With $\tau\sigma\tau^{-1} = \sigma^{-1}$, we get $\mathrm{Gal{}(E/\mathbb{'\{'}Q{'\}'}) \cong D_8$ (the dihedral
 group of order 8). $\blacksquare$
 
 ### 15.4 Additional Worked Examples
@@ -1777,7 +1777,7 @@ group of order 8). $\blacksquare$
 when $H$ is abelian. Let $|H| = m$ and $[G : H] = n$ with $\gcd(m, n) = 1$.
 
 Consider the action of $G$ on $H$ by conjugation. Since $H$ is abelian and normal, $G$ acts by
-automorphisms on $H$. The group of automorphisms of $H$, $\mathrm{'\{'}Aut{'\}'}(H)$, has order dividing
+automorphisms on $H$. The group of automorphisms of $H$, $\mathrm{Aut{}(H)$, has order dividing
 $|H|!$, but we need a more refined argument.
 
 Here is a cleaner approach for the case when one factor is cyclic. Let $G/H = \langle gH \rangle$ be cyclic
@@ -1953,7 +1953,7 @@ $\overline{\mathbb{'\{'}Q{'\}'}}/\mathbb{'\{'}Q{'\}'}$ (algebraic closure of $\m
 Common Pitfall
 When using the first isomorphism theorem, always verify that your map is actually a homomorphism
 and correctly identify the kernel. A common mistake is to forget that the kernel must be a normal
-subgroup (not just any subgroup). Also, the isomorphism is $G/\ker(\phi) \cong \mathrm{'\{'}im{'\}'}(\phi)$,
+subgroup (not just any subgroup). Also, the isomorphism is $G/\ker(\phi) \cong \mathrm{im{}(\phi)$,
 not $G/\ker(\phi) \cong H$ (unless $\phi$ is surjective).
 :::
 
@@ -1991,7 +1991,7 @@ domain but not a field. Every maximal ideal is prime, but not conversely.
 Common Pitfall
 The fundamental theorem of Galois theory requires the extension to be Galois. For a non-Galois
 extension $E/F$, the correspondence between intermediate fields and subgroups of
-$\mathrm{'\{'}Gal{'\}'}(E/F)$ is not a bijection, and indices may not match. Always verify the Galois
+$\mathrm{Gal{}(E/F)$ is not a bijection, and indices may not match. Always verify the Galois
 condition before applying the theorem.
 :::
 
@@ -2135,7 +2135,7 @@ _If you get this wrong, revise: Section 4.2, 4.3; Section 5.3, Theorem 5.3._
 
 *Solution.* As a group homomorphism $(\mathbb{'\{'}Z{'\}'}, +) \to (\mathbb{'\{'}Z{'\}'}, +)$: $\phi(m + n) = 3(m+n) = 3m + 3n = \phi(m) + \phi(n)$. ✓
 $\ker(\phi) = \{n \in \mathbb{'\{'}Z{'\}'} : 3n = 0\} = \{0\}$.
-$\mathrm{'\{'}im{'\}'}(\phi) = 3\mathbb{'\{'}Z{'\}'} = \{3k : k \in \mathbb{'\{'}Z{'\}'}\}$.
+$\mathrm{im{}(\phi) = 3\mathbb{'\{'}Z{'\}'} = \{3k : k \in \mathbb{'\{'}Z{'\}'}\}$.
 
 $\phi$ is NOT a ring homomorphism because $\phi(1) = 3 \neq 1$.
 Ring homomorphisms between rings with unity must send $1$ to $1$. $\blacksquare$
@@ -2193,9 +2193,9 @@ _If you get this wrong, revise: Section 6.4, Theorem 6.4; Section 1.4._
 <details>
 <summary>Solution</summary>
 
-*Solution.* Let $x \in X$. Since $G$ acts transitively, $|\mathrm{'\{'}Orb{'\}'}(x)| = |X| = p$.
-By the orbit-stabilizer theorem, $[G : \mathrm{'\{'}Stab{'\}'}(x)] = p$, so $\mathrm{'\{'}Stab{'\}'}(x)$ has index $p$ in $G$.
-Since $\mathrm{'\{'}Stab{'\}'}(x)$ is a subgroup (Proposition 6.1), we are done. $\blacksquare$
+*Solution.* Let $x \in X$. Since $G$ acts transitively, $|\mathrm{Orb{}(x)| = |X| = p$.
+By the orbit-stabilizer theorem, $[G : \mathrm{Stab{}(x)] = p$, so $\mathrm{Stab{}(x)$ has index $p$ in $G$.
+Since $\mathrm{Stab{}(x)$ is a subgroup (Proposition 6.1), we are done. $\blacksquare$
 
 </details>
 
@@ -2336,12 +2336,12 @@ So $[\mathbb{'\{'}Q{'\}'}(\sqrt{2}, \sqrt{3}) : \mathbb{'\{'}Q{'\}'}(\sqrt{2})] 
 By the tower law: $[\mathbb{'\{'}Q{'\}'}(\sqrt{2}, \sqrt{3}) : \mathbb{'\{'}Q{'\}'}] = 2 \cdot 2 = 4$.
 
 The Galois group consists of four automorphisms determined by their action on $\sqrt{2}$ and $\sqrt{3}$:
-$\mathrm{'\{'}id{'\}'}$: $\sqrt{2} \mapsto \sqrt{2}$, $\sqrt{3} \mapsto \sqrt{3}$
+$\mathrm{id{}$: $\sqrt{2} \mapsto \sqrt{2}$, $\sqrt{3} \mapsto \sqrt{3}$
 $\sigma$: $\sqrt{2} \mapsto -\sqrt{2}$, $\sqrt{3} \mapsto \sqrt{3}$
 $\tau$: $\sqrt{2} \mapsto \sqrt{2}$, $\sqrt{3} \mapsto -\sqrt{3}$
 $\sigma\tau$: $\sqrt{2} \mapsto -\sqrt{2}$, $\sqrt{3} \mapsto -\sqrt{3}$
 
-Since all non-identity elements have order $2$, $\mathrm{'\{'}Gal{'\}'}(\mathbb{'\{'}Q{'\}'}(\sqrt{2}, \sqrt{3})/\mathbb{'\{'}Q{'\}'}) \cong V_4$. $\blacksquare$
+Since all non-identity elements have order $2$, $\mathrm{Gal{}(\mathbb{'\{'}Q{'\}'}(\sqrt{2}, \sqrt{3})/\mathbb{'\{'}Q{'\}'}) \cong V_4$. $\blacksquare$
 
 </details>
 
@@ -2368,23 +2368,23 @@ _If you get this wrong, revise: Section 9.2, 9.3, Theorem 9.3; Section 8.4._
 ### Challenge Problems
 
 **Problem 21.** Let $G$ be a finite group acting on a finite set $X$. Prove Burnside's lemma:
-the number of orbits equals $\frac{1}{|G|} \sum_{g \in G} |\mathrm{'\{'}Fix{'\}'}(g)|$.
+the number of orbits equals $\frac{1}{|G|} \sum_{g \in G} |\mathrm{Fix{}(g)|$.
 
 <details>
 <summary>Solution</summary>
 
 *Solution.* Let $S = \{(g, x) \in G \times X : g \cdot x = x\}$. Count $|S|$ in two ways.
 
-**Grouping by $g$:** $|S| = \sum_{g \in G} |\{x \in X : g \cdot x = x\}| = \sum_{g \in G} |\mathrm{'\{'}Fix{'\}'}(g)|$.
+**Grouping by $g$:** $|S| = \sum_{g \in G} |\{x \in X : g \cdot x = x\}| = \sum_{g \in G} |\mathrm{Fix{}(g)|$.
 
-**Grouping by $x$:** $|S| = \sum_{x \in X} |\mathrm{'\{'}Stab{'\}'}(x)|$.
+**Grouping by $x$:** $|S| = \sum_{x \in X} |\mathrm{Stab{}(x)|$.
 
-For each orbit $\mathcal{'\{'}O{'\}'}$, every $x \in \mathcal{'\{'}O{'\}'}$ has $|\mathrm{'\{'}Stab{'\}'}(x)| = |G|/|\mathcal{'\{'}O{'\}'}|$ (by orbit-stabilizer).
-So $\sum_{x \in \mathcal{'\{'}O{'\}'}} |\mathrm{'\{'}Stab{'\}'}(x)| = |\mathcal{'\{'}O{'\}'}| \cdot |G|/|\mathcal{'\{'}O{'\}'}| = |G|$.
+For each orbit $\mathcal{'\{'}O{'\}'}$, every $x \in \mathcal{'\{'}O{'\}'}$ has $|\mathrm{Stab{}(x)| = |G|/|\mathcal{'\{'}O{'\}'}|$ (by orbit-stabilizer).
+So $\sum_{x \in \mathcal{'\{'}O{'\}'}} |\mathrm{Stab{}(x)| = |\mathcal{'\{'}O{'\}'}| \cdot |G|/|\mathcal{'\{'}O{'\}'}| = |G|$.
 
-Summing over all orbits: $|S| = |G| \cdot (\mathrm{'\{'}number\ of\ orbits{'\}'})$.
+Summing over all orbits: $|S| = |G| \cdot (\mathrm{number\ of\ orbits{})$.
 
-Combining: $\sum_{g \in G} |\mathrm{'\{'}Fix{'\}'}(g)| = |G| \cdot (\mathrm{'\{'}number\ of\ orbits{'\}'})$. $\blacksquare$
+Combining: $\sum_{g \in G} |\mathrm{Fix{}(g)| = |G| \cdot (\mathrm{number\ of\ orbits{})$. $\blacksquare$
 
 </details>
 
@@ -2504,7 +2504,7 @@ The following table provides a quick reference for the major theorems and their 
 | Index 2 subgroups are normal | Corollary 3.7 |
 | First Isomorphism Theorem | Theorem 5.3 |
 | Correspondence Theorem | Theorem 5.6 |
-| $\mathrm{'\{'}Inn{'\}'}(G) \cong G/Z(G)$ | Proposition 5.7 |
+| $\mathrm{Inn{}(G) \cong G/Z(G)$ | Proposition 5.7 |
 | Orbit-Stabilizer Theorem | Theorem 6.2 |
 | Class Equation | Theorem 6.4 |
 | Center of $p$-group is non-trivial | Theorem 6.5 |

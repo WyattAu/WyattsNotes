@@ -463,7 +463,7 @@ $j \ge 1$.
 
 $$\sum_{k=1}^{j+1} k \cdot 2^{k-1} = \sum_{k=1}^{j} k \cdot 2^{k-1} + (j+1) \cdot 2^j$$
 
-$$= (j - 1) \cdot 2^j + 1 + (j+1) \cdot 2^j \quad \mathrm{'\{'}(by\ hypothesis){'\}'}$$
+$$= (j - 1) \cdot 2^j + 1 + (j+1) \cdot 2^j \quad \mathrm{(by\ hypothesis){}$$
 
 $$= \bigl[(j-1) + (j+1)\bigr] 2^j + 1 = 2j \cdot 2^j + 1 = j \cdot 2^{j+1} + 1$$
 

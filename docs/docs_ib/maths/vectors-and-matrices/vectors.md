@@ -289,21 +289,21 @@ $$\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) 
 
 The **scalar projection** (component) of $\mathbf{'\{'}a{'\}'}$ along $\mathbf{'\{'}b{'\}'}$:
 
-$$\mathrm{'\{'}comp{'\}'}_{\mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}a{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}b{'\}'}|} = |\mathbf{'\{'}a{'\}'}|\cos\theta$$
+$$\mathrm{comp{}_{\mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}a{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}b{'\}'}|} = |\mathbf{'\{'}a{'\}'}|\cos\theta$$
 
 The **vector projection** of $\mathbf{'\{'}a{'\}'}$ onto $\mathbf{'\{'}b{'\}'}$:
 
-$$\mathrm{'\{'}proj{'\}'}_{\mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}a{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}b{'\}'}|^2}\,\mathbf{'\{'}b{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{\mathbf{'\{'}b{'\}'} \cdot \mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}b{'\}'}$$
+$$\mathrm{proj{}_{\mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}a{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}b{'\}'}|^2}\,\mathbf{'\{'}b{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{\mathbf{'\{'}b{'\}'} \cdot \mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}b{'\}'}$$
 
 The component of $\mathbf{'\{'}a{'\}'}$ perpendicular to $\mathbf{'\{'}b{'\}'}$ is:
 
-$$\mathbf{'\{'}a{'\}'}_{\perp} = \mathbf{'\{'}a{'\}'} - \mathrm{'\{'}proj{'\}'}_{\mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}a{'\}'}$$
+$$\mathbf{'\{'}a{'\}'}_{\perp} = \mathbf{'\{'}a{'\}'} - \mathrm{proj{}_{\mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}a{'\}'}$$
 
 **Example.** Find the projection of $\mathbf{'\{'}a{'\}'} = (3, 1, -2)$ onto $\mathbf{'\{'}b{'\}'} = (1, 0, 2)$.
 
 $$\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 3 + 0 - 4 = -1, \qquad |\mathbf{'\{'}b{'\}'}|^2 = 1 + 4 = 5$$
 
-$$\mathrm{'\{'}proj{'\}'}_{\mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}a{'\}'} = \frac{-1}{5}(1, 0, 2) = \left(-\frac{1}{5},\, 0,\, -\frac{2}{5}\right)$$
+$$\mathrm{proj{}_{\mathbf{'\{'}b{'\}'}}\,\mathbf{'\{'}a{'\}'} = \frac{-1}{5}(1, 0, 2) = \left(-\frac{1}{5},\, 0,\, -\frac{2}{5}\right)$$
 
 ---
 

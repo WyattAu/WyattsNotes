@@ -90,7 +90,7 @@ The mechanism works as follows:
    indirect function call.
 
 $$
-\mathrm{'\{'}dispatch cost{'\}'} = 1 \mathrm{'\{'} memory load (vptr){'\}'} + 1 \mathrm{'\{'} indexed load (function pointer){'\}'} + 1 \mathrm{'\{'} indirect call{'\}'}
+\mathrm{dispatch cost{} = 1 \mathrm{ memory load (vptr){} + 1 \mathrm{ indexed load (function pointer){} + 1 \mathrm{ indirect call{}
 $$
 
 | Component  | Description                                                 |

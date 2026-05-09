@@ -27,7 +27,7 @@ dividing all parts by their highest common factor.
 
 **Worked Example.** Simplify the ratio $24 : 36 : 48$.
 
-$$\mathrm{'\{'}HCF{'\}'}(24, 36, 48) = 12$$
+$$\mathrm{HCF{}(24, 36, 48) = 12$$
 
 $$24 : 36 : 48 = 2 : 3 : 4$$
 
@@ -46,14 +46,14 @@ Multiply both by 4: $10 : 15 = 2 : 3$.
 
 To share a quantity $Q$ in the ratio $a : b$:
 
-$$\mathrm{'\{'}Each share{'\}'} = \frac{Q}{a + b}$$
+$$\mathrm{Each share{} = \frac{Q}{a + b}$$
 
 First share $= \frac{aQ}{a + b}$, second share $= \frac{bQ}{a + b}$.
 
 **Worked Example.** Share 360 pounds in the ratio $2 : 3 : 4$.
 
-$$\mathrm{'\{'}Total parts{'\}'} = 2 + 3 + 4 = 9$$ $$\mathrm{'\{'}One part{'\}'} = \frac{360}{9} = 40$$
-$$\mathrm{'\{'}Shares{'\}'} = 80, 120, 160$$
+$$\mathrm{Total parts{} = 2 + 3 + 4 = 9$$ $$\mathrm{One part{} = \frac{360}{9} = 40$$
+$$\mathrm{Shares{} = 80, 120, 160$$
 
 **Worked Example (Higher Tier).** Share 560 pounds in the ratio
 $\frac{1}{2} : \frac{1}{3} : \frac{1}{4}$.
@@ -99,8 +99,8 @@ $A : B : C = 9 : 12 : 14$.
 
 **Worked Example.** 8 chocolate bars cost 3.60 pounds. Find the cost of 15 bars.
 
-$$\mathrm{'\{'}Cost per bar{'\}'} = \frac{3.60}{8} = 0.45 \mathrm{'\{'} pounds{'\}'}$$
-$$\mathrm{'\{'}Cost of 15 bars{'\}'} = 15 \times 0.45 = 6.75 \mathrm{'\{'} pounds{'\}'}$$
+$$\mathrm{Cost per bar{} = \frac{3.60}{8} = 0.45 \mathrm{ pounds{}$$
+$$\mathrm{Cost of 15 bars{} = 15 \times 0.45 = 6.75 \mathrm{ pounds{}$$
 
 **Worked Example (Higher Tier).** It takes 5 people 8 hours to paint a fence. How long would it take
 3 people?
@@ -124,7 +124,7 @@ $y$ is directly proportional to $x$ when $y = kx$ for a constant $k$.
 **Worked Example.** The cost $C$ of petrol is directly proportional to the number of litres $L$. 12
 litres costs 16.80 pounds. Find the cost of 20 litres.
 
-$$16.80 = 12k \implies k = 1.40$$ $$C = 1.40L$$ $$C = 1.40 \times 20 = 28.00 \mathrm{'\{'} pounds{'\}'}$$
+$$16.80 = 12k \implies k = 1.40$$ $$C = 1.40L$$ $$C = 1.40 \times 20 = 28.00 \mathrm{ pounds{}$$
 
 ### 2.2 Inverse Proportion
 
@@ -139,7 +139,7 @@ $y$ is inversely proportional to $x$ when $y = \frac{k}{x}$ for a constant $k$.
 **Worked Example.** The time $t$ to complete a job is inversely proportional to the number of
 workers $n$. 6 workers take 10 hours. How long do 15 workers take?
 
-$$10 = \frac{k}{6} \implies k = 60$$ $$t = \frac{60}{15} = 4 \mathrm{'\{'} hours{'\}'}$$
+$$10 = \frac{k}{6} \implies k = 60$$ $$t = \frac{60}{15} = 4 \mathrm{ hours{}$$
 
 ### 2.3 Proportionality with Powers
 
@@ -157,7 +157,7 @@ the square of its velocity $v$. When $v = 10$ m/s, $E = 500$ J. Find $E$ when $v
 
 $$E = kv^2 \implies 500 = 100k \implies k = 5$$
 
-$$E = 5 \times 225 = 1125 \mathrm{'\{'} J{'\}'}$$
+$$E = 5 \times 225 = 1125 \mathrm{ J{}$$
 
 ## 3. Real-Life Graphs
 
@@ -201,7 +201,7 @@ displacement.
 **Worked Example.** A car accelerates from rest at 3 m/s$^2$ for 8 seconds. Find the distance
 travelled.
 
-$$s = 0 \times 8 + \frac{1}{2} \times 3 \times 64 = 96 \mathrm{'\{'} m{'\}'}$$
+$$s = 0 \times 8 + \frac{1}{2} \times 3 \times 64 = 96 \mathrm{ m{}$$
 
 **Worked Example (Higher Tier).** A car travels at 20 m/s for 5 s, then decelerates uniformly to
 rest in 4 s. Find the total distance travelled.
@@ -218,14 +218,14 @@ Total: 140 m.
 The **rate of change** of a quantity is how fast it changes per unit of another quantity (usually
 time).
 
-$$\mathrm{'\{'}Rate of change{'\}'} = \frac{\mathrm{'\{'}change in quantity{'\}'}}{\mathrm{'\{'}change in time{'\}'}}$$
+$$\mathrm{Rate of change{} = \frac{\mathrm{change in quantity{}}{\mathrm{change in time{}}$$
 
 This is the gradient of the graph of that quantity against time.
 
 **Worked Example.** The population of a town was 45000 in 2020 and 54000 in 2025. Find the average
 rate of change.
 
-$$\mathrm{'\{'}Rate{'\}'} = \frac{54000 - 45000}{2025 - 2020} = \frac{9000}{5} = 1800 \mathrm{'\{'} people per year{'\}'}$$
+$$\mathrm{Rate{} = \frac{54000 - 45000}{2025 - 2020} = \frac{9000}{5} = 1800 \mathrm{ people per year{}$$
 
 ### 3.4 Instantaneous Rate of Change
 
@@ -237,7 +237,7 @@ in minutes. Find the rate at which the volume is increasing when $t = 4$.
 
 Draw the tangent at $t = 4$ (or differentiate):
 
-$$\frac{dV}{dt} = 4t + 3$$ $$\mathrm{'\{'}At {'\}'} t = 4: \frac{dV}{dt} = 16 + 3 = 19 \mathrm{'\{'} litres/minute{'\}'}$$
+$$\frac{dV}{dt} = 4t + 3$$ $$\mathrm{At {} t = 4: \frac{dV}{dt} = 16 + 3 = 19 \mathrm{ litres/minute{}$$
 
 ## 4. Growth and Decay
 
@@ -254,7 +254,7 @@ $$y = a(1 - r)^t$$
 **Worked Example.** A radioactive substance decays at a rate of 8% per hour. If there are initially
 500 g, how much remains after 12 hours?
 
-$$y = 500 \times 0.92^{12} = 500 \times 0.3677\ldots = 183.8 \mathrm{'\{'} g{'\}'}$$
+$$y = 500 \times 0.92^{12} = 500 \times 0.3677\ldots = 183.8 \mathrm{ g{}$$
 
 ### 4.3 Half-Life
 
@@ -267,14 +267,14 @@ $$t_{1/2} = \frac{\ln 2}{-\ln(1 - r)}$$
 **Worked Example.** A substance has a half-life of 6 hours. If the initial mass is 80 g, find the
 mass after 24 hours.
 
-$$\mathrm{'\{'}Number of half-lives{'\}'} = \frac{24}{6} = 4$$
-$$\mathrm{'\{'}Mass{'\}'} = 80 \times \left(\frac{1}{2}\right)^4 = 80 \times \frac{1}{16} = 5 \mathrm{'\{'} g{'\}'}$$
+$$\mathrm{Number of half-lives{} = \frac{24}{6} = 4$$
+$$\mathrm{Mass{} = 80 \times \left(\frac{1}{2}\right)^4 = 80 \times \frac{1}{16} = 5 \mathrm{ g{}$$
 
 **Worked Example (Higher Tier).** The mass of a radioactive substance after $t$ years is given by
 $m = 200 \times 0.95^t$ grams. Find the half-life.
 
 $$100 = 200 \times 0.95^t$$ $$0.5 = 0.95^t$$
-$$t = \frac{\ln 0.5}{\ln 0.95} = \frac{-0.693}{-0.0513} \approx 13.5 \mathrm{'\{'} years{'\}'}$$
+$$t = \frac{\ln 0.5}{\ln 0.95} = \frac{-0.693}{-0.0513} \approx 13.5 \mathrm{ years{}$$
 
 ## 5. Compound Measures
 
@@ -282,23 +282,23 @@ $$t = \frac{\ln 0.5}{\ln 0.95} = \frac{-0.693}{-0.0513} \approx 13.5 \mathrm{'\{
 
 | Measure  | Formula                                              | Units              |
 | -------- | ---------------------------------------------------- | ------------------ |
-| Speed    | $\mathrm{'\{'}speed{'\}'} = \frac{\mathrm{'\{'}distance{'\}'}}{\mathrm{'\{'}time{'\}'}}$ | m/s, km/h          |
-| Density  | $\rho = \frac{\mathrm{'\{'}mass{'\}'}}{\mathrm{'\{'}volume{'\}'}}$           | kg/m$^3$, g/cm$^3$ |
-| Pressure | $P = \frac{\mathrm{'\{'}force{'\}'}}{\mathrm{'\{'}area{'\}'}}$               | Pa (N/m$^2$)       |
+| Speed    | $\mathrm{speed{} = \frac{\mathrm{distance{}}{\mathrm{time{}}$ | m/s, km/h          |
+| Density  | $\rho = \frac{\mathrm{mass{}}{\mathrm{volume{}}$           | kg/m$^3$, g/cm$^3$ |
+| Pressure | $P = \frac{\mathrm{force{}}{\mathrm{area{}}$               | Pa (N/m$^2$)       |
 
 **Worked Example.** A block of metal has mass 1.8 kg and volume 200 cm$^3$. Find its density in
 g/cm$^3$.
 
-$$\rho = \frac{1800 \mathrm{'\{'} g{'\}'}}{200 \mathrm{'\{'} cm{'\}'}^3} = 9 \mathrm{'\{'} g/cm{'\}'}^3$$
+$$\rho = \frac{1800 \mathrm{ g{}}{200 \mathrm{ cm{}^3} = 9 \mathrm{ g/cm{}^3$$
 
 **Worked Example.** A force of 600 N acts on an area of 0.75 m$^2$. Find the pressure.
 
-$$P = \frac{600}{0.75} = 800 \mathrm{'\{'} Pa{'\}'}$$
+$$P = \frac{600}{0.75} = 800 \mathrm{ Pa{}$$
 
 **Worked Example (Higher Tier).** A pressure of 5000 Pa is exerted on an area of 0.04 m$^2$. Find
 the force.
 
-$$F = P \times A = 5000 \times 0.04 = 200 \mathrm{'\{'} N{'\}'}$$
+$$F = P \times A = 5000 \times 0.04 = 200 \mathrm{ N{}$$
 
 ### 5.2 Unit Conversions
 
@@ -312,7 +312,7 @@ $$F = P \times A = 5000 \times 0.04 = 200 \mathrm{'\{'} N{'\}'}$$
 
 **Worked Example.** Convert 72 km/h to m/s.
 
-$$72 \mathrm{'\{'} km/h{'\}'} = \frac{72000 \mathrm{'\{'} m{'\}'}}{3600 \mathrm{'\{'} s{'\}'}} = 20 \mathrm{'\{'} m/s{'\}'}$$
+$$72 \mathrm{ km/h{} = \frac{72000 \mathrm{ m{}}{3600 \mathrm{ s{}} = 20 \mathrm{ m/s{}$$
 
 **Shortcut:** To convert km/h to m/s, divide by 3.6. To convert m/s to km/h, multiply by 3.6.
 
@@ -320,12 +320,12 @@ $$72 \mathrm{'\{'} km/h{'\}'} = \frac{72000 \mathrm{'\{'} m{'\}'}}{3600 \mathrm{
 
 **Worked Example.** The exchange rate is 1 pound = 1.25 euros. Convert 240 pounds to euros.
 
-$$240 \times 1.25 = 300 \mathrm{'\{'} euros{'\}'}$$
+$$240 \times 1.25 = 300 \mathrm{ euros{}$$
 
 **Worked Example (Higher Tier).** The exchange rate is 1 dollar = 0.82 pounds. A laptop costs 899
 dollars. How much is this in pounds?
 
-$$899 \times 0.82 = 737.18 \mathrm{'\{'} pounds{'\}'}$$
+$$899 \times 0.82 = 737.18 \mathrm{ pounds{}$$
 
 ### 5.4 Best Buy Problems
 
@@ -334,8 +334,8 @@ Compare the **unit cost** (cost per gram, per litre, etc.) of different products
 **Worked Example.** Brand A: 400 g for 3.20 pounds. Brand B: 650 g for 4.55 pounds. Which is better
 value?
 
-$$\mathrm{'\{'}Brand A: {'\}'} \frac{320}{400} = 0.80 \mathrm{'\{'} p/g{'\}'}$$
-$$\mathrm{'\{'}Brand B: {'\}'} \frac{455}{650} = 0.70 \mathrm{'\{'} p/g{'\}'}$$
+$$\mathrm{Brand A: {} \frac{320}{400} = 0.80 \mathrm{ p/g{}$$
+$$\mathrm{Brand B: {} \frac{455}{650} = 0.70 \mathrm{ p/g{}$$
 
 Brand B is better value (lower cost per gram).
 
@@ -362,7 +362,7 @@ is proportional).
 **Worked Example.** A conversion graph between miles and kilometres passes through $(0, 0)$ and
 $(5, 8)$. Find the conversion factor.
 
-$$\mathrm{'\{'}Gradient{'\}'} = \frac{8 - 0}{5 - 0} = 1.6$$
+$$\mathrm{Gradient{} = \frac{8 - 0}{5 - 0} = 1.6$$
 
 So 1 mile = 1.6 km.
 
@@ -438,18 +438,18 @@ Verify: $22.5 : 15 = 3 : 2$. After adding 15: $37.5 : 30 = 5 : 4$. $\checkmark$
 **Worked Example.** A solid metal cone has base radius 4 cm and height 9 cm. Its density is 8.4
 g/cm$^3$. Find its mass.
 
-Volume $= \frac{1}{3}\pi \times 16 \times 9 = 48\pi \approx 150.80 \mathrm{'\{'} cm{'\}'}^3$.
+Volume $= \frac{1}{3}\pi \times 16 \times 9 = 48\pi \approx 150.80 \mathrm{ cm{}^3$.
 
-Mass $= 8.4 \times 150.80 \approx 1266.7 \mathrm{'\{'} g{'\}'}$.
+Mass $= 8.4 \times 150.80 \approx 1266.7 \mathrm{ g{}$.
 
-**Worked Example.** A cuboid measures $5 \mathrm{'\{'} cm{'\}'} \times 3 \mathrm{'\{'} cm{'\}'} \times 2 \mathrm{'\{'} cm{'\}'}$. It has
+**Worked Example.** A cuboid measures $5 \mathrm{ cm{} \times 3 \mathrm{ cm{} \times 2 \mathrm{ cm{}$. It has
 mass 180 g. Find its density in kg/m$^3$.
 
-Volume $= 30 \mathrm{'\{'} cm{'\}'}^3 = 30 \times 10^{-6} \mathrm{'\{'} m{'\}'}^3$.
+Volume $= 30 \mathrm{ cm{}^3 = 30 \times 10^{-6} \mathrm{ m{}^3$.
 
-Mass $= 0.180 \mathrm{'\{'} kg{'\}'}$.
+Mass $= 0.180 \mathrm{ kg{}$.
 
-Density $= \frac{0.180}{30 \times 10^{-6}} = \frac{0.180}{0.00003} = 6000 \mathrm{'\{'} kg/m{'\}'}^3$.
+Density $= \frac{0.180}{30 \times 10^{-6}} = \frac{0.180}{0.00003} = 6000 \mathrm{ kg/m{}^3$.
 
 ## Common Pitfalls
 
@@ -472,9 +472,9 @@ Density $= \frac{0.180}{30 \times 10^{-6}} = \frac{0.180}{0.00003} = 6000 \mathr
 
 | Measure  | Formula                         | Units              |
 | -------- | ------------------------------- | ------------------ |
-| Speed    | $\mathrm{'\{'}speed{'\}'} = \frac{d}{t}$    | m/s, km/h          |
-| Density  | $\mathrm{'\{'}density{'\}'} = \frac{m}{V}$  | kg/m$^3$, g/cm$^3$ |
-| Pressure | $\mathrm{'\{'}pressure{'\}'} = \frac{F}{A}$ | Pa (N/m$^2$)       |
+| Speed    | $\mathrm{speed{} = \frac{d}{t}$    | m/s, km/h          |
+| Density  | $\mathrm{density{} = \frac{m}{V}$  | kg/m$^3$, g/cm$^3$ |
+| Pressure | $\mathrm{pressure{} = \frac{F}{A}$ | Pa (N/m$^2$)       |
 
 ### 9.2 Proportionality: A Quick Reference
 
@@ -517,7 +517,7 @@ The equation is $y = 3x$.
 - A horizontal line means constant speed (zero acceleration).
 - Area below the time axis represents motion in the opposite direction.
 
-**Worked Example.** A car accelerates from rest at $2\mathrm{'\{'} m/s{'\}'}^2$ for 10 seconds, then travels at
+**Worked Example.** A car accelerates from rest at $2\mathrm{ m/s{}^2$ for 10 seconds, then travels at
 constant speed for 20 seconds, then decelerates uniformly to rest in 5 seconds.
 
 Acceleration phase: $v = 2 \times 10 = 20$ m/s. Distance = $\frac{1}{2} \times 20 \times 10 = 100$
@@ -525,7 +525,7 @@ m.
 
 Constant speed phase: Distance = $20 \times 20 = 400$ m.
 
-Deceleration phase: $a = -20/5 = -4\mathrm{'\{'} m/s{'\}'}^2$. Distance = $\frac{1}{2} \times 20 \times 5 = 50$
+Deceleration phase: $a = -20/5 = -4\mathrm{ m/s{}^2$. Distance = $\frac{1}{2} \times 20 \times 5 = 50$
 m.
 
 Total distance = $100 + 400 + 50 = 550$ m.
@@ -538,13 +538,13 @@ the original price?"
 The original price is NOT $120 - 24 = 96$ pounds. Instead:
 
 $$
-\mathrm{'\{'}Original{'\}'} \times 1.20 = 120 \implies \mathrm{'\{'}Original{'\}'} = \frac{120}{1.20} = 100 \mathrm{'\{'} pounds{'\}'}
+\mathrm{Original{} \times 1.20 = 120 \implies \mathrm{Original{} = \frac{120}{1.20} = 100 \mathrm{ pounds{}
 $$
 
 **Worked Example.** A population grows by 15% to reach 4600. What was the original population?
 
 $$
-\mathrm{'\{'}Original{'\}'} \times 1.15 = 4600 \implies \mathrm{'\{'}Original{'\}'} = \frac{4600}{1.15} = 4000
+\mathrm{Original{} \times 1.15 = 4600 \implies \mathrm{Original{} = \frac{4600}{1.15} = 4000
 $$
 
 ### 9.5 Best Buy Problems
@@ -568,7 +568,7 @@ pounds, divide by 1.18.
 **Worked Example.** A meal costs 45 euros. How much is this in pounds?
 
 $$
-45 \div 1.18 \approx 38.14 \mathrm{'\{'} pounds{'\}'}
+45 \div 1.18 \approx 38.14 \mathrm{ pounds{}
 $$
 
 **Worked Example.** A tourist exchanges 500 pounds for euros at a rate of 1 pound = 1.15 euros, with
@@ -589,7 +589,7 @@ $3 \times 1.15 = 3.45$ euros. Net: $575 - 3.45 = 571.55$ euros.
    whole journey.
 
 5. The density of a material is 7.8 g/cm$^3$. Find the mass of a block of dimensions
-   $5 \mathrm{'\{'} cm{'\}'} \times 3 \mathrm{'\{'} cm{'\}'} \times 2 \mathrm{'\{'} cm{'\}'}$.
+   $5 \mathrm{ cm{} \times 3 \mathrm{ cm{} \times 2 \mathrm{ cm{}$.
 
 6. A population grows by 4% each year. If the initial population is 50000, find the population after
    7 years.
@@ -681,9 +681,9 @@ The compound interest earns EUR 15.25 more than simple interest over 3 years.
 
 #### 10.2 Percentage Change Calculations
 
-**Percentage increase:** $\frac{\mathrm{'\{'}new{'\}'} - \mathrm{'\{'}original{'\}'}}{\mathrm{'\{'}original{'\}'}} \times 100\%$
+**Percentage increase:** $\frac{\mathrm{new{} - \mathrm{original{}}{\mathrm{original{}} \times 100\%$
 
-**Percentage decrease:** $\frac{\mathrm{'\{'}original{'\}'} - \mathrm{'\{'}new{'\}'}}{\mathrm{'\{'}original{'\}'}} \times 100\%$
+**Percentage decrease:** $\frac{\mathrm{original{} - \mathrm{new{}}{\mathrm{original{}} \times 100\%$
 
 **Worked Example.** A shirt originally costs 40 pounds. It is reduced to 32 pounds in a sale. What
 is the percentage decrease?
@@ -700,7 +700,7 @@ $110 \times 0.9 = 99$. The net effect is a 1% decrease.
 new salary?
 
 $$
-30000 \times 1.04 \times 1.03 = 30000 \times 1.0712 = 32136 \mathrm{'\{'} pounds{'\}'}
+30000 \times 1.04 \times 1.03 = 30000 \times 1.0712 = 32136 \mathrm{ pounds{}
 $$
 
 The overall percentage increase is $7.12\%$ (not $4\% + 3\% = 7\%$).
@@ -714,19 +714,19 @@ P = \frac{F}{A}
 $$
 
 **Worked Example.** A person weighing 600 N stands on the ground. If each foot has area
-$180\mathrm{'\{'} cm{'\}'}^2$, find the pressure.
+$180\mathrm{ cm{}^2$, find the pressure.
 
-Total area $= 360\mathrm{'\{'} cm{'\}'}^2 = 0.036\mathrm{'\{'} m{'\}'}^2$.
+Total area $= 360\mathrm{ cm{}^2 = 0.036\mathrm{ m{}^2$.
 
 $$
-P = \frac{600}{0.036} = 16667 \mathrm{'\{'} Pa{'\}'} \approx 16.7 \mathrm{'\{'} kPa{'\}'}
+P = \frac{600}{0.036} = 16667 \mathrm{ Pa{} \approx 16.7 \mathrm{ kPa{}
 $$
 
 **Worked Example.** The pressure at the bottom of a swimming pool is 30 kPa. The pool has a
-rectangular base of $10\mathrm{'\{'} m{'\}'} \times 5\mathrm{'\{'} m{'\}'}$. Find the total force on the base.
+rectangular base of $10\mathrm{ m{} \times 5\mathrm{ m{}$. Find the total force on the base.
 
 $$
-F = P \times A = 30000 \times 50 = 1500000 \mathrm{'\{'} N{'\}'} = 1500 \mathrm{'\{'} kN{'\}'}
+F = P \times A = 30000 \times 50 = 1500000 \mathrm{ N{} = 1500 \mathrm{ kN{}
 $$
 
 #### 10.4 Speed, Distance, Time Problems with Multiple Stages
@@ -749,13 +749,13 @@ d\left(\frac{3 + 5}{60}\right) = 4
 $$
 
 $$
-\frac{8d}{60} = 4 \implies d = 30 \mathrm{'\{'} km{'\}'}
+\frac{8d}{60} = 4 \implies d = 30 \mathrm{ km{}
 $$
 
 **Note:** The average speed is NOT $(20 + 12)/2 = 16$ km/h. The average speed is:
 
 $$
-\frac{\mathrm{'\{'}total distance{'\}'}}{\mathrm{'\{'}total time{'\}'}} = \frac{60}{4} = 15 \mathrm{'\{'} km/h{'\}'}
+\frac{\mathrm{total distance{}}{\mathrm{total time{}} = \frac{60}{4} = 15 \mathrm{ km/h{}
 $$
 
 The harmonic mean of 20 and 12 is $\frac{2}{1/20 + 1/12} = 15$, which equals the average speed for a

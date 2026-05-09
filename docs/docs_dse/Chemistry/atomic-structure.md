@@ -50,7 +50,7 @@ jump between levels by absorbing or emitting photons of energy:
 
 $$\Delta E = hf = \frac{hc}{\lambda}$$
 
-where $h = 6.63 \times 10^{-34} \mathrm{'\{'} J\, s{'\}'}$ is Planck's constant.
+where $h = 6.63 \times 10^{-34} \mathrm{ J\, s{}$ is Planck's constant.
 
 ### Quantum Mechanical Model
 
@@ -78,7 +78,7 @@ and hence different $A$). They have identical chemical properties but different 
 
 The relative atomic mass is the weighted average of the isotopic masses:
 
-$$A_r = \sum (\mathrm{'\{'}isotope mass{'\}'} \times \mathrm{'\{'}fractional abundance{'\}'})$$
+$$A_r = \sum (\mathrm{isotope mass{} \times \mathrm{fractional abundance{})$$
 
 ### Worked Example 1
 
@@ -129,15 +129,15 @@ Write the electron configurations of:
 <summary>Solution</summary>
 
 - Potassium ($Z = 19$): $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^1$
-- Iron ($Z = 26$): $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6$ or $[\mathrm{'\{'}Ar{'\}'}]\, 4s^2\, 3d^6$
-- Copper ($Z = 29$): $[\mathrm{'\{'}Ar{'\}'}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
+- Iron ($Z = 26$): $1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6$ or $[\mathrm{Ar{}]\, 4s^2\, 3d^6$
+- Copper ($Z = 29$): $[\mathrm{Ar{}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
 
 </details>
 
 ### Exceptions to Remember
 
-- Chromium ($Z = 24$): $[\mathrm{'\{'}Ar{'\}'}]\, 4s^1\, 3d^5$ (half-filled $d$ subshell)
-- Copper ($Z = 29$): $[\mathrm{'\{'}Ar{'\}'}]\, 4s^1\, 3d^{10}$ (fully-filled $d$ subshell)
+- Chromium ($Z = 24$): $[\mathrm{Ar{}]\, 4s^1\, 3d^5$ (half-filled $d$ subshell)
+- Copper ($Z = 29$): $[\mathrm{Ar{}]\, 4s^1\, 3d^{10}$ (fully-filled $d$ subshell)
 
 When forming cations, $4s$ electrons are lost before $3d$ electrons, because once the $3d$ subshell
 is occupied, it is at a lower energy than $4s$.
@@ -169,7 +169,7 @@ is occupied, it is at a lower energy than $4s$.
 **First ionisation energy** is the energy required to remove one mole of electrons from one mole of
 gaseous atoms:
 
-$$\mathrm{'\{'}X{'\}'}(g) \to \mathrm{'\{'}X{'\}'}^+(g) + e^-$$
+$$\mathrm{X{}(g) \to \mathrm{X{}^+(g) + e^-$$
 
 **Dips in ionisation energy** across a period:
 
@@ -185,9 +185,9 @@ Explain why the first ionisation energy of sulfur is lower than that of phosphor
 <details>
 <summary>Solution</summary>
 
-Phosphorus ($Z = 15$): $[\mathrm{'\{'}Ne{'\}'}]\, 3s^2\, 3p^3$. All three $3p$ electrons are unpaired.
+Phosphorus ($Z = 15$): $[\mathrm{Ne{}]\, 3s^2\, 3p^3$. All three $3p$ electrons are unpaired.
 
-Sulfur ($Z = 16$): $[\mathrm{'\{'}Ne{'\}'}]\, 3s^2\, 3p^4$. One of the $3p$ orbitals now contains a paired
+Sulfur ($Z = 16$): $[\mathrm{Ne{}]\, 3s^2\, 3p^4$. One of the $3p$ orbitals now contains a paired
 electron.
 
 The fourth $3p$ electron in sulfur experiences electron-electron repulsion from its paired partner,
@@ -227,9 +227,9 @@ bond.
 - Fluorine is the most electronegative element (Pauling scale: 4.0)
 - Electronegativity increases across a period and decreases down a group
 - The difference in electronegativity between bonded atoms determines bond character:
-  - $\Delta\mathrm{'\{'}EN{'\}'} \lt 0.5$: non-polar covalent
-  - $0.5 \leqslant \Delta\mathrm{'\{'}EN{'\}'} \lt 1.7$: polar covalent
-  - $\Delta\mathrm{'\{'}EN{'\}'} \geqslant 1.7$: ionic
+  - $\Delta\mathrm{EN{} \lt 0.5$: non-polar covalent
+  - $0.5 \leqslant \Delta\mathrm{EN{} \lt 1.7$: polar covalent
+  - $\Delta\mathrm{EN{} \geqslant 1.7$: ionic
 
 ---
 
@@ -243,7 +243,7 @@ bond.
 - Forgetting that the first ionisation energy of an element is the energy to remove the
   **outermost** electron, not any electron.
 - Assuming electronegativity differences cleanly divide bonds into ionic and covalent. The boundary
-  at $\Delta\mathrm{'\{'}EN{'\}'} = 1.7$ is approximate.
+  at $\Delta\mathrm{EN{} = 1.7$ is approximate.
 
 ---
 
@@ -277,7 +277,7 @@ are valence electrons. The element has two valence electrons, placing it in **Gr
 
 </details>
 
-**Problem 2:** Write the electron configuration of $\mathrm{'\{'}Fe{'\}'}^{2+}$ and $\mathrm{'\{'}Fe{'\}'}^{3+}$.
+**Problem 2:** Write the electron configuration of $\mathrm{Fe{}^{2+}$ and $\mathrm{Fe{}^{3+}$.
 Which ion is relatively more stable and why?
 
 *If you get this wrong, revise: Electron Configuration*
@@ -285,13 +285,13 @@ Which ion is relatively more stable and why?
 <details>
 <summary>Solution</summary>
 
-Fe ($Z = 26$): $[\mathrm{'\{'}Ar{'\}'}]\, 4s^2\, 3d^6$
+Fe ($Z = 26$): $[\mathrm{Ar{}]\, 4s^2\, 3d^6$
 
-$\mathrm{'\{'}Fe{'\}'}^{2+}$: remove two $4s$ electrons: $[\mathrm{'\{'}Ar{'\}'}]\, 3d^6$
+$\mathrm{Fe{}^{2+}$: remove two $4s$ electrons: $[\mathrm{Ar{}]\, 3d^6$
 
-$\mathrm{'\{'}Fe{'\}'}^{3+}$: remove two $4s$ and one $3d$: $[\mathrm{'\{'}Ar{'\}'}]\, 3d^5$
+$\mathrm{Fe{}^{3+}$: remove two $4s$ and one $3d$: $[\mathrm{Ar{}]\, 3d^5$
 
-$\mathrm{'\{'}Fe{'\}'}^{3+}$ is relatively stable due to its half-filled $3d^5$ configuration.
+$\mathrm{Fe{}^{3+}$ is relatively stable due to its half-filled $3d^5$ configuration.
 
 </details>
 
@@ -315,7 +315,7 @@ $$A_r = 20 \times 0.9048 + 21 \times 0.0027 + 22 \times 0.0925 = 18.096 + 0.0567
 <details>
 <summary>Solution</summary>
 
-Sodium ($Z = 11$) has electron configuration $[\mathrm{'\{'}Ne{'\}'}]\, 3s^1$. The single $3s$ electron is in
+Sodium ($Z = 11$) has electron configuration $[\mathrm{Ne{}]\, 3s^1$. The single $3s$ electron is in
 a new shell further from the nucleus and is well shielded by the inner 10 electrons. It is
 relatively easy to remove.
 
@@ -325,22 +325,22 @@ Removing an electron requires breaking this stable arrangement, which requires m
 </details>
 
 **Problem 5:** The electron transition from $n = 3$ to $n = 2$ in a hydrogen atom emits a photon.
-Calculate the wavelength of this photon. ($E_n = -2.18 \times 10^{-18}/n^2 \mathrm{'\{'} J{'\}'}$)
+Calculate the wavelength of this photon. ($E_n = -2.18 \times 10^{-18}/n^2 \mathrm{ J{}$)
 
 *If you get this wrong, revise: Bohr Model*
 
 <details>
 <summary>Solution</summary>
 
-$$\Delta E = E_3 - E_2 = \frac{-2.18 \times 10^{-18}}{9} - \frac{-2.18 \times 10^{-18}}{4} = -2.42 \times 10^{-19} + 5.45 \times 10^{-19} = 3.03 \times 10^{-19} \mathrm{'\{'} J{'\}'}$$
+$$\Delta E = E_3 - E_2 = \frac{-2.18 \times 10^{-18}}{9} - \frac{-2.18 \times 10^{-18}}{4} = -2.42 \times 10^{-19} + 5.45 \times 10^{-19} = 3.03 \times 10^{-19} \mathrm{ J{}$$
 
-$$\lambda = \frac{hc}{\Delta E} = \frac{(6.63 \times 10^{-34})(3.0 \times 10^8)}{3.03 \times 10^{-19}} = \frac{1.989 \times 10^{-25}}{3.03 \times 10^{-19}} = 6.56 \times 10^{-7} \mathrm{'\{'} m{'\}'} = 656 \mathrm{'\{'} nm{'\}'}$$
+$$\lambda = \frac{hc}{\Delta E} = \frac{(6.63 \times 10^{-34})(3.0 \times 10^8)}{3.03 \times 10^{-19}} = \frac{1.989 \times 10^{-25}}{3.03 \times 10^{-19}} = 6.56 \times 10^{-7} \mathrm{ m{} = 656 \mathrm{ nm{}$$
 
 This is in the red region of the visible spectrum (the H-alpha line).
 
 </details>
 
-**Problem 6:** Write the electron configuration of $\mathrm{'\{'}Cu{'\}'}^{2+}$ and explain why the $4s$
+**Problem 6:** Write the electron configuration of $\mathrm{Cu{}^{2+}$ and explain why the $4s$
 electrons are removed before the $3d$ electrons.
 
 *If you get this wrong, revise: Electron Configuration and Exceptions*
@@ -348,11 +348,11 @@ electrons are removed before the $3d$ electrons.
 <details>
 <summary>Solution</summary>
 
-$\mathrm{'\{'}Cu{'\}'}$ ($Z = 29$): $[\mathrm{'\{'}Ar{'\}'}]\, 4s^1\, 3d^{10}$
+$\mathrm{Cu{}$ ($Z = 29$): $[\mathrm{Ar{}]\, 4s^1\, 3d^{10}$
 
-When forming $\mathrm{'\{'}Cu{'\}'}^{2+}$, both the $4s$ electron and one $3d$ electron are removed:
+When forming $\mathrm{Cu{}^{2+}$, both the $4s$ electron and one $3d$ electron are removed:
 
-$\mathrm{'\{'}Cu{'\}'}^{2+}$: $[\mathrm{'\{'}Ar{'\}'}]\, 3d^9$
+$\mathrm{Cu{}^{2+}$: $[\mathrm{Ar{}]\, 3d^9$
 
 Once the $3d$ subshell is occupied, it is at a lower energy than the $4s$ subshell. Therefore,
 $4s$ electrons are removed first when forming cations, even though the $4s$ subshell fills before
@@ -384,11 +384,11 @@ chlorine has a greater nuclear charge.
 <details>
 <summary>Solution</summary>
 
-Chlorine ($Z = 17$): $[\mathrm{'\{'}Ne{'\}'}]\, 3s^2\, 3p^5$. The last electron enters a $3p$ orbital that
+Chlorine ($Z = 17$): $[\mathrm{Ne{}]\, 3s^2\, 3p^5$. The last electron enters a $3p$ orbital that
 already contains one electron, so it experiences electron-electron repulsion, making it relatively
 easy to remove.
 
-Argon ($Z = 18$): $[\mathrm{'\{'}Ne{'\}'}]\, 3s^2\, 3p^6$. All $3p$ orbitals are fully occupied. The
+Argon ($Z = 18$): $[\mathrm{Ne{}]\, 3s^2\, 3p^6$. All $3p$ orbitals are fully occupied. The
 additional proton in argon's nucleus (compared to chlorine) increases the effective nuclear charge
 significantly. Although there is some repulsion from paired electrons, the increased nuclear charge
 dominates, making argon's outer electrons harder to remove.

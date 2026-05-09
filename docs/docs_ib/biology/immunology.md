@@ -35,7 +35,7 @@ These are always present and prevent pathogen entry.
 | **Skin**           | Physical barrier; keratinised outer layer; sebum (antimicrobial lipids); low pH ($\approx 5.5$); normal flora compete with pathogens. |
 | **Mucous membranes** | Trap pathogens in sticky mucus; ciliated epithelium moves mucus upward (mucociliary escalator in trachea).    |
 | **Lysozyme**       | Enzyme in tears, saliva, and mucus that hydrolyses peptidoglycan in bacterial cell walls, causing lysis.      |
-| **Stomach acid**   | $\mathrm{'\{'}HCl{'\}'}$ (pH $\approx 1.5$--$2.0$) destroys most ingested pathogens.                                    |
+| **Stomach acid**   | $\mathrm{HCl{}$ (pH $\approx 1.5$--$2.0$) destroys most ingested pathogens.                                    |
 | **Normal flora**   | Commensal bacteria on skin and in the gut outcompete pathogens for nutrients and binding sites; produce antimicrobial substances. |
 
 ### Second-Line Defences (Internal Non-Specific Responses)
@@ -47,17 +47,17 @@ Phagocytes (neutrophils, macrophages, and dendritic cells) engulf and destroy pa
 **Steps of phagocytosis:**
 
 1. **Chemotaxis**: phagocytes migrate toward chemical attractants released at the infection site
-   (e.g., bacterial peptides, complement fragments $\mathrm{'\{'}C3a{'\}'}$, $\mathrm{'\{'}C5a{'\}'}$).
+   (e.g., bacterial peptides, complement fragments $\mathrm{C3a{}$, $\mathrm{C5a{}$).
 2. **Recognition**: phagocyte binds to pathogen via:
    - **Direct binding** to PAMPs (pathogen-associated molecular patterns) using pattern recognition
      receptors (PRRs) such as Toll-like receptors (TLRs).
-   - **Indirect binding** via opsonins (antibodies or complement $\mathrm{'\{'}C3b{'\}'}$) coating the
+   - **Indirect binding** via opsonins (antibodies or complement $\mathrm{C3b{}$) coating the
      pathogen surface.
 3. **Engulfment**: pseudopodia extend around the pathogen, enclosing it in a membrane-bound vesicle
    called a **phagosome**.
 4. **Digestion**: the phagosome fuses with a **lysosome**, forming a **phagolysosome**. Hydrolytic
    enzymes (proteases, lipases, nucleases, lysozyme) and reactive oxygen species
-   ($\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}_2$, superoxide radicals) degrade the pathogen.
+   ($\mathrm{H{}_2\mathrm{O{}_2$, superoxide radicals) degrade the pathogen.
 5. **Exocytosis**: indigestible material is expelled from the cell.
 6. **Antigen presentation**: peptide fragments of the digested pathogen are displayed on MHC molecules
    on the phagocyte surface, initiating the adaptive immune response (see Section 4).
@@ -84,19 +84,19 @@ signs: **rubor** (redness), **calor** (heat), **tumor** (swelling), and **dolor*
 
 #### The Complement System
 
-A cascade of plasma proteins ($\mathrm{'\{'}C1{'\}'}$ through $\mathrm{'\{'}C9{'\}'}$) that enhances immune defence
+A cascade of plasma proteins ($\mathrm{C1{}$ through $\mathrm{C9{}$) that enhances immune defence
 through three pathways:
 
 | Pathway              | Trigger                                     |
 | -------------------- | ------------------------------------------- |
 | **Classical pathway** | Antibody-antigen complexes (adaptive immunity) |
 | **Lectin pathway**    | Mannose-binding lectin binding to pathogen carbohydrates |
-| **Alternative pathway** | Spontaneous hydrolysis of $\mathrm{'\{'}C3{'\}'}$ on microbial surfaces |
+| **Alternative pathway** | Spontaneous hydrolysis of $\mathrm{C3{}$ on microbial surfaces |
 
-**All three pathways converge on $\mathrm{'\{'}C3{'\}'}$ and lead to:**
+**All three pathways converge on $\mathrm{C3{}$ and lead to:**
 
-1. **Opsonisation** ($\mathrm{'\{'}C3b{'\}'}$): coats pathogens, enhancing phagocytosis.
-2. **Inflammation** ($\mathrm{'\{'}C3a{'\}'}$, $\mathrm{'\{'}C5a{'\}'}$): act as chemoattractants for phagocytes; cause
+1. **Opsonisation** ($\mathrm{C3b{}$): coats pathogens, enhancing phagocytosis.
+2. **Inflammation** ($\mathrm{C3a{}$, $\mathrm{C5a{}$): act as chemoattractants for phagocytes; cause
    mast cell degranulation.
 3. **Membrane attack complex (MAC)** ($\mathrm{C5b\text{'\{'}-{'\}'}C9}$): forms transmembrane pores in the
    pathogen cell membrane, causing lysis by osmotic imbalance.
@@ -155,7 +155,7 @@ antigen fragments on MHC molecules for T cell recognition.
 - Found on **all nucleated cells**.
 - Presents **endogenous antigens**: peptide fragments from proteins synthesised within the cell
   (e.g., viral proteins in an infected cell, tumour antigens).
-- Recognised by **$\mathrm{'\{'}CD8{'\}'}^+$ cytotoxic T cells**.
+- Recognised by **$\mathrm{CD8{}^+$ cytotoxic T cells**.
 
 **Processing:**
 
@@ -169,7 +169,7 @@ antigen fragments on MHC molecules for T cell recognition.
 
 - Found only on **professional APCs** (dendritic cells, macrophages, B cells).
 - Presents **exogenous antigens**: peptide fragments from pathogens engulfed by phagocytosis.
-- Recognised by **$\mathrm{'\{'}CD4{'\}'}^+$ helper T cells**.
+- Recognised by **$\mathrm{CD4{}^+$ helper T cells**.
 
 **Processing:**
 
@@ -184,27 +184,27 @@ antigen fragments on MHC molecules for T cell recognition.
 
 ## 5. T-Cell Activation and Response
 
-### Helper T Cells ($\mathrm{'\{'}CD4{'\}'}^+$)
+### Helper T Cells ($\mathrm{CD4{}^+$)
 
 Helper T cells orchestrate the adaptive immune response through cytokine secretion.
 
 **Activation (two-signal model):**
 
 1. **Signal 1**: TCR binds to antigen-MHC class II complex on an APC.
-2. **Signal 2 (co-stimulation)**: $\mathrm{'\{'}CD28{'\}'}$ on the T cell binds to $\mathrm{'\{'}B7{'\}'}$
-   ($\mathrm{'\{'}CD80/CD86{'\}'}$) on the APC. Without co-stimulation, the T cell becomes **anergised**
+2. **Signal 2 (co-stimulation)**: $\mathrm{CD28{}$ on the T cell binds to $\mathrm{B7{}$
+   ($\mathrm{CD80/CD86{}$) on the APC. Without co-stimulation, the T cell becomes **anergised**
    (unresponsive) --- this prevents autoimmunity.
 3. The activated helper T cell undergoes clonal expansion and differentiates into subsets based on
    cytokine signals:
 
 | Subset          | Cytokines driving differentiation | Key cytokines produced        | Primary function                                                  |
 | --------------- | -------------------------------- | ----------------------------- | ----------------------------------------------------------------- |
-| **$\mathrm{'\{'}T_H{'\}'}1$** | IL-12                            | IFN-$\gamma$, IL-2           | Activates macrophages (cell-mediated immunity against intracellular pathogens). |
-| **$\mathrm{'\{'}T_H{'\}'}2$** | IL-4                             | IL-4, IL-5, IL-6, IL-10     | Stimulates B cell activation and antibody production (humoral immunity against extracellular pathogens). |
-| **$\mathrm{'\{'}T_H{'\}'}17$** | TGF-$\beta$ + IL-6              | IL-17, IL-22                 | Recruits neutrophils; defends against extracellular bacteria and fungi. |
+| **$\mathrm{T_H{}1$** | IL-12                            | IFN-$\gamma$, IL-2           | Activates macrophages (cell-mediated immunity against intracellular pathogens). |
+| **$\mathrm{T_H{}2$** | IL-4                             | IL-4, IL-5, IL-6, IL-10     | Stimulates B cell activation and antibody production (humoral immunity against extracellular pathogens). |
+| **$\mathrm{T_H{}17$** | TGF-$\beta$ + IL-6              | IL-17, IL-22                 | Recruits neutrophils; defends against extracellular bacteria and fungi. |
 | **$\mathrm{T_{reg}}$** | TGF-$\beta$ + IL-2            | TGF-$\beta$, IL-10          | Suppresses immune responses; maintains self-tolerance.            |
 
-### Cytotoxic T Cells ($\mathrm{'\{'}CD8{'\}'}^+$)
+### Cytotoxic T Cells ($\mathrm{CD8{}^+$)
 
 Cytotoxic T cells (CTLs) directly kill infected or cancerous cells.
 
@@ -287,8 +287,8 @@ preserving the antigen-specific variable region. The DNA encoding the constant r
 
 Antibodies are Y-shaped glycoproteins composed of:
 
-- **Two identical heavy chains** ($\approx 50\;\mathrm{'\{'}kDa{'\}'}$ each)
-- **Two identical light chains** ($\approx 25\;\mathrm{'\{'}kDa{'\}'}$ each)
+- **Two identical heavy chains** ($\approx 50\;\mathrm{kDa{}$ each)
+- **Two identical light chains** ($\approx 25\;\mathrm{kDa{}$ each)
 
 Connected by **disulfide bonds**. Each chain contains:
 
@@ -319,19 +319,19 @@ bind to antigens at varying distances. The hinge region varies between antibody 
    their ability to enter host cells or cause damage. Example: neutralising antibodies against the
    SARS-CoV-2 spike protein prevent viral entry.
 
-2. **Opsonisation**: the Fc region of IgG antibodies is recognised by $\mathrm{'\{'}Fc\gamma{'\}'}$ receptors
-   on phagocytes, enhancing phagocytosis. $\mathrm{'\{'}C3b{'\}'}$ complement fragments also serve as opsonins.
+2. **Opsonisation**: the Fc region of IgG antibodies is recognised by $\mathrm{Fc\gamma{}$ receptors
+   on phagocytes, enhancing phagocytosis. $\mathrm{C3b{}$ complement fragments also serve as opsonins.
 
 3. **Agglutination**: bivalent (or multivalent) antibodies cross-link pathogens into large clumps that
    are more easily phagocytosed and physically immobilised. IgM is particularly effective due to its 10
    binding sites.
 
 4. **Complement activation**: antigen-antibody complexes activate the classical complement pathway
-   ($\mathrm{'\{'}C1q{'\}'}$ binds to the Fc region), leading to opsonisation, inflammation, and MAC-mediated
+   ($\mathrm{C1q{}$ binds to the Fc region), leading to opsonisation, inflammation, and MAC-mediated
    lysis.
 
 5. **Antibody-dependent cell-mediated cytotoxicity (ADCC)**: NK cells recognise antibody-coated target
-   cells via $\mathrm{'\{'}Fc\gamma{'\}'}$ receptors and kill the target cell by releasing perforin and
+   cells via $\mathrm{Fc\gamma{}$ receptors and kill the target cell by releasing perforin and
    granzymes.
 
 6. **Mucosal immunity (IgA)**: secretory IgA in mucus traps pathogens and prevents their adhesion to
@@ -458,7 +458,7 @@ yellow colour).
 | Application            | Description                                                                                                                           |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | **Medical diagnosis**  | Pregnancy tests (detect hCG); detecting cancer antigens (e.g., PSA for prostate cancer); detecting pathogen antigens in ELISA.        |
-| **Cancer treatment**   | **Trastuzumab** (Herceptin) targets HER2 receptor on breast cancer cells; **rituximab** targets $\mathrm{'\{'}CD20{'\}'}$ on B-cell lymphomas.  |
+| **Cancer treatment**   | **Trastuzumab** (Herceptin) targets HER2 receptor on breast cancer cells; **rituximab** targets $\mathrm{CD20{}$ on B-cell lymphomas.  |
 | **Autoimmune diseases** | **Infliximab** targets TNF-$\alpha$ in rheumatoid arthritis and Crohn's disease.                                                     |
 | **Drug delivery**      | Monoclonal antibodies conjugated to drugs or radioactive isotopes deliver therapy specifically to cancer cells, minimising side effects. |
 | **COVID-19 treatment** | Monoclonal antibody cocktails (e.g., REGEN-COV) were used as passive immunotherapy for high-risk patients.                             |
@@ -484,7 +484,7 @@ antigen** in humans) on transplanted tissue as non-self, mounting an immune resp
 | Type of rejection    | Timing             | Mechanism                                                                                   |
 | -------------------- | ------------------ | ------------------------------------------------------------------------------------------- |
 | **Hyperacute**       | Minutes to hours   | Pre-existing anti-donor antibodies (from prior exposure, blood transfusion, pregnancy) bind to donor endothelium, activating complement and causing thrombosis. |
-| **Acute**            | Days to weeks      | T cell-mediated rejection: $\mathrm{'\{'}CD8{'\}'}^+$ cytotoxic T cells kill donor cells expressing foreign MHC I; $\mathrm{'\{'}CD4{'\}'}^+$ helper T cells activate macrophages and B cells. |
+| **Acute**            | Days to weeks      | T cell-mediated rejection: $\mathrm{CD8{}^+$ cytotoxic T cells kill donor cells expressing foreign MHC I; $\mathrm{CD4{}^+$ helper T cells activate macrophages and B cells. |
 | **Chronic**          | Months to years    | Chronic inflammation and fibrosis; both T-cell and antibody-mediated damage; leading cause of late graft failure. |
 
 ### Immunosuppression
@@ -520,15 +520,15 @@ Transplant recipients receive immunosuppressive drugs to prevent rejection:
 
 - **RNA genome** (two copies of positive-sense ssRNA).
 - **Envelope**: derived from the host cell membrane, studded with viral glycoproteins **gp120** (binds
-  $\mathrm{'\{'}CD4{'\}'}$) and **gp41** (mediates membrane fusion).
+  $\mathrm{CD4{}$) and **gp41** (mediates membrane fusion).
 - **Capsid**: protein shell enclosing the RNA genome and viral enzymes.
 - **Enzymes**: **reverse transcriptase** (RNA $\to$ DNA), **integrase** (inserts viral DNA into host
   genome), **protease** (cleaves viral polyproteins into functional proteins).
 
 **Life cycle:**
 
-1. **Attachment**: gp120 on HIV binds to $\mathrm{'\{'}CD4{'\}'}$ receptor and a co-receptor ($\mathrm{'\{'}CCR5{'\}'}$
-   or $\mathrm{'\{'}CXCR4{'\}'}$) on helper T cells, macrophages, and dendritic cells.
+1. **Attachment**: gp120 on HIV binds to $\mathrm{CD4{}$ receptor and a co-receptor ($\mathrm{CCR5{}$
+   or $\mathrm{CXCR4{}$) on helper T cells, macrophages, and dendritic cells.
 2. **Entry**: gp41 mediates fusion of the viral envelope with the host cell membrane; viral contents
    enter the cell.
 3. **Reverse transcription**: reverse transcriptase converts viral RNA into double-stranded DNA.
@@ -540,12 +540,12 @@ Transplant recipients receive immunosuppressive drugs to prevent rejection:
 
 ### Immunological Effects
 
-- HIV selectively infects and destroys **$\mathrm{'\{'}CD4{'\}'}^+$ helper T cells**, which are central to
+- HIV selectively infects and destroys **$\mathrm{CD4{}^+$ helper T cells**, which are central to
   coordinating both humoral and cell-mediated immunity.
 - Progressive depletion of helper T cells weakens the immune system, leading to **acquired
   immunodeficiency syndrome (AIDS)**.
-- AIDS is defined by $\mathrm{'\{'}CD4{'\}'}^+$ T cell count below $200\;\mathrm{'\{'}cells/\mu L{'\}'}$ (normal:
-   $500$--$1500\;\mathrm{'\{'}cells/\mu L{'\}'}$) and/or the presence of opportunistic infections (e.g.,
+- AIDS is defined by $\mathrm{CD4{}^+$ T cell count below $200\;\mathrm{cells/\mu L{}$ (normal:
+   $500$--$1500\;\mathrm{cells/\mu L{}$) and/or the presence of opportunistic infections (e.g.,
    _Pneumocystis jirovecii_ pneumonia, _Mycobacterium avium_ complex, Kaposi's sarcoma caused by HHV-8,
    candidiasis, tuberculosis).
 
@@ -596,7 +596,7 @@ the body's own tissues.
 
 | Disease                          | Target tissue               | Mechanism                                                         |
 | -------------------------------- | --------------------------- | ----------------------------------------------------------------- |
-| **Type 1 diabetes mellitus**     | Pancreatic beta cells       | $\mathrm{'\{'}CD8{'\}'}^+$ cytotoxic T cells destroy insulin-producing beta cells. |
+| **Type 1 diabetes mellitus**     | Pancreatic beta cells       | $\mathrm{CD8{}^+$ cytotoxic T cells destroy insulin-producing beta cells. |
 | **Multiple sclerosis (MS)**      | Myelin sheath of neurons    | T cells and antibodies attack myelin; demyelination disrupts nerve conduction. |
 | **Rheumatoid arthritis (RA)**    | Synovial joints             | Autoantibodies (rheumatoid factor, anti-CCP) form immune complexes in joints; T cell-mediated inflammation. |
 | **Systemic lupus erythematosus (SLE)** | Widespread (nuclei, blood cells, kidneys) | Antinuclear antibodies (ANA) form immune complexes deposited in multiple organs. |
@@ -614,9 +614,9 @@ Allergies are exaggerated IgE-mediated immune responses to harmless environmenta
 
 **Sensitisation (first exposure):**
 
-1. Allergen is processed by APCs and presented to $\mathrm{'\{'}T_H{'\}'}2$ cells.
-2. $\mathrm{'\{'}T_H{'\}'}2$ cells release IL-4 and IL-13, stimulating B cells to class-switch to IgE.
-3. IgE antibodies bind to $\mathrm{'\{'}Fc\varepsilon{'\}'}$ receptors on mast cells and basophils
+1. Allergen is processed by APCs and presented to $\mathrm{T_H{}2$ cells.
+2. $\mathrm{T_H{}2$ cells release IL-4 and IL-13, stimulating B cells to class-switch to IgE.
+3. IgE antibodies bind to $\mathrm{Fc\varepsilon{}$ receptors on mast cells and basophils
    (sensitisation).
 
 **Challenge (subsequent exposure):**
@@ -652,7 +652,7 @@ A severe, potentially fatal systemic allergic reaction:
 ### Desensitisation Therapy (Allergen Immunotherapy)
 
 Gradual, controlled exposure to increasing doses of allergen over months to years. This shifts the
-immune response from $\mathrm{'\{'}T_H{'\}'}2$ (IgE-mediated) to $\mathrm{'\{'}T_H{'\}'}1$ (IgG-mediated), inducing
+immune response from $\mathrm{T_H{}2$ (IgE-mediated) to $\mathrm{T_H{}1$ (IgG-mediated), inducing
 tolerance.
 
 ---
@@ -686,7 +686,7 @@ erythematosus (SLE).
 
 ### Type IV Hypersensitivity (Delayed-Type, T-Cell Mediated)
 
-Sensitised $\mathrm{'\{'}CD4{'\}'}^+$ helper T cells release cytokines (IFN-$\gamma$, TNF-$\alpha$) upon
+Sensitised $\mathrm{CD4{}^+$ helper T cells release cytokines (IFN-$\gamma$, TNF-$\alpha$) upon
 re-exposure to the antigen, activating macrophages and causing inflammation. Onset: $24$--$72$ hours.
 
 **Examples**:
@@ -707,7 +707,7 @@ re-exposure to the antigen, activating macrophages and causing inflammation. Ons
   and NK cells kill infected cells directly.
 - Confusing **IgG** and **IgM** in primary vs secondary responses: IgM is the first antibody
   produced in the primary response; IgG dominates the secondary response.
-- Describing HIV as "killing all white blood cells": HIV specifically targets $\mathrm{'\{'}CD4{'\}'}^+$
+- Describing HIV as "killing all white blood cells": HIV specifically targets $\mathrm{CD4{}^+$
   helper T cells, not all leucocytes. The immunodeficiency results from the loss of T cell help,
   which impairs the entire adaptive immune response.
 - Confusing **autoimmunity** and **immunodeficiency**: autoimmunity is an overactive immune response
@@ -726,7 +726,7 @@ re-exposure to the antigen, activating macrophages and causing inflammation. Ons
 <summary>Question 1: ELISA Data Interpretation</summary>
 
 An indirect ELISA is used to test four patient serum samples for antibodies against a specific virus.
-The absorbance readings at $450\;\mathrm{'\{'}nm{'\}'}$ are: Patient A = $0.05$, Patient B = $1.85$, Patient C
+The absorbance readings at $450\;\mathrm{nm{}$ are: Patient A = $0.05$, Patient B = $1.85$, Patient C
 = $0.92$, Patient D = $2.10$. The positive control gives $1.95$ and the negative control gives
 $0.08$. The diagnostic threshold is an absorbance value of $0.50$. (a) Which patients test positive?
 (b) Explain why a positive control and negative control are essential. (c) Why might Patient C's
@@ -755,11 +755,11 @@ phase of seroconversion or have a partially effective immune response.
 <details>
 <summary>Question 2: HIV and T-Cell Counts</summary>
 
-A patient is diagnosed with HIV. Their initial $\mathrm{'\{'}CD4{'\}'}^+$ T cell count is
-$550\;\mathrm{'\{'}cells/\mu L{'\}'}$ and their viral load is $50000\;\mathrm{'\{'}copies/mL{'\}'}$. After 6 months of
-antiretroviral therapy, the $\mathrm{'\{'}CD4{'\}'}^+$ count rises to $750\;\mathrm{'\{'}cells/\mu L{'\}'}$ and the
-viral load drops to $< 50\;\mathrm{'\{'}copies/mL{'\}'}$. (a) Explain the relationship between viral load
-and $\mathrm{'\{'}CD4{'\}'}^+$ T cell count. (b) Why can the virus not be completely eliminated by ART? (c)
+A patient is diagnosed with HIV. Their initial $\mathrm{CD4{}^+$ T cell count is
+$550\;\mathrm{cells/\mu L{}$ and their viral load is $50000\;\mathrm{copies/mL{}$. After 6 months of
+antiretroviral therapy, the $\mathrm{CD4{}^+$ count rises to $750\;\mathrm{cells/\mu L{}$ and the
+viral load drops to $< 50\;\mathrm{copies/mL{}$. (a) Explain the relationship between viral load
+and $\mathrm{CD4{}^+$ T cell count. (b) Why can the virus not be completely eliminated by ART? (c)
 Explain why the patient is still infectious despite having an undetectable viral load.
 
 </details>
@@ -767,10 +767,10 @@ Explain why the patient is still infectious despite having an undetectable viral
 <details>
 <summary>Answer</summary>
 
-(a) HIV infects and destroys $\mathrm{'\{'}CD4{'\}'}^+$ helper T cells during its replication cycle. A high
-viral load indicates active replication, which leads to rapid $\mathrm{'\{'}CD4{'\}'}^+$ depletion. ART
-suppresses viral replication, reducing the viral load and allowing $\mathrm{'\{'}CD4{'\}'}^+$ T cells to
-recover (the observed increase from $550$ to $750\;\mathrm{'\{'}cells/\mu L{'\}'}$).
+(a) HIV infects and destroys $\mathrm{CD4{}^+$ helper T cells during its replication cycle. A high
+viral load indicates active replication, which leads to rapid $\mathrm{CD4{}^+$ depletion. ART
+suppresses viral replication, reducing the viral load and allowing $\mathrm{CD4{}^+$ T cells to
+recover (the observed increase from $550$ to $750\;\mathrm{cells/\mu L{}$).
 
 (b) ART drugs inhibit active steps in the viral life cycle (reverse transcription, integration,
 protease processing), but they cannot eliminate cells containing **latent proviral DNA** integrated
@@ -778,7 +778,7 @@ into the host genome. These latently infected cells (in lymph nodes, the gut, an
 produce viral particles and are therefore not targeted by ART. If ART is stopped, the provirus can
 reactivate, leading to viral rebound.
 
-(c) "Undetectable" means the viral load is below the assay's detection limit ($< 50\;\mathrm{'\{'}copies/mL{'\}'}$),
+(c) "Undetectable" means the viral load is below the assay's detection limit ($< 50\;\mathrm{copies/mL{}$),
 not that the virus is absent. Low levels of virus may still be present and potentially transmissible,
 though the risk is greatly reduced. The "U = U" (undetectable = untransmittable) consensus holds that
 individuals with sustained undetectable viral load have effectively zero risk of sexual transmission,
@@ -875,14 +875,14 @@ symptom.
 <summary>Answer</summary>
 
 (a) This is a **Type I hypersensitivity** reaction:
-1. The student was previously sensitised: peanut allergens stimulated $\mathrm{'\{'}T_H{'\}'}2$ cells to
+1. The student was previously sensitised: peanut allergens stimulated $\mathrm{T_H{}2$ cells to
    release IL-4, causing B cells to produce **IgE** anti-peanut antibodies.
-2. IgE bound to $\mathrm{'\{'}Fc\varepsilon{'\}'}$ receptors on **mast cells** in connective tissue and
+2. IgE bound to $\mathrm{Fc\varepsilon{}$ receptors on **mast cells** in connective tissue and
    **basophils** in blood.
 3. Upon re-exposure, peanut allergens cross-linked IgE on sensitised mast cells.
 4. Mast cells **degranulated**, releasing **histamine** (vasodilation, increased permeability,
    bronchoconstriction), **leukotrienes** (bronchoconstriction, increased vascular permeability), and
-   **prostaglandin $\mathrm{'\{'}D{'\}'}_2$**.
+   **prostaglandin $\mathrm{D{}_2$**.
 
 (b) The rapid onset (minutes) occurs because the sensitised mast cells already have allergen-specific
 IgE bound to their surface. Cross-linking of IgE triggers immediate degranulation of pre-formed
@@ -907,8 +907,8 @@ production --- the effector response is pre-armed.
 **Worked Example: Primary vs Secondary Immune Response Kinetics**
 
 A patient receives a tetanus toxoid vaccine (primary immunisation) at Day 0 and a booster dose at Day
-$90$. The IgG antibody titres are measured weekly. At Day $14$, the IgG titre is $50\;\mathrm{'\{'}AU/mL{'\}'}$.
-At Day $21$ (after booster), the IgG titre is $2000\;\mathrm{'\{'}AU/mL{'\}'}$. Calculate the fold increase in
+$90$. The IgG antibody titres are measured weekly. At Day $14$, the IgG titre is $50\;\mathrm{AU/mL{}$.
+At Day $21$ (after booster), the IgG titre is $2000\;\mathrm{AU/mL{}$. Calculate the fold increase in
 peak titre and the time to peak after the booster. Explain the cellular basis for the accelerated
 secondary response.
 
@@ -937,10 +937,10 @@ time to peak decreased from $14$ days to approximately $7$ days.
 
 **Worked Example: Interpreting a Mantoux Test**
 
-A Mantoux test is performed by injecting $5$ tuberculin units ($0.1\;\mathrm{'\{'}mL{'\}'}$) of purified
+A Mantoux test is performed by injecting $5$ tuberculin units ($0.1\;\mathrm{mL{}$) of purified
 protein derivative (PPD) intradermally. The induration (raised, hardened area) is measured $48$--$72$
-hours later. Three patients show the following results: Patient X = $5\;\mathrm{'\{'}mm{'\}'}$, Patient Y =
-$12\;\mathrm{'\{'}mm{'\}'}$, Patient Z = $18\;\mathrm{'\{'}mm{'\}'}$. Patient Y is known to be immunocompromised.
+hours later. Three patients show the following results: Patient X = $5\;\mathrm{mm{}$, Patient Y =
+$12\;\mathrm{mm{}$, Patient Z = $18\;\mathrm{mm{}$. Patient Y is known to be immunocompromised.
 Interpret each result.
 
 <details>
@@ -948,17 +948,17 @@ Interpret each result.
 
 **Interpretation guidelines** (based on CDC criteria):
 
-- **Patient X ($5\;\mathrm{'\{'}mm{'\}'}$)**: Negative. An induration of $< 5\;\mathrm{'\{'}mm{'\}'}$ is considered
+- **Patient X ($5\;\mathrm{mm{}$)**: Negative. An induration of $< 5\;\mathrm{mm{}$ is considered
   negative regardless of risk factors. No evidence of _M. tuberculosis_ infection.
-- **Patient Y ($12\;\mathrm{'\{'}mm{'\}'}$)**: Positive. For immunocompromised individuals, an induration
-  $\geq 5\;\mathrm{'\{'}mm{'\}'}$ is considered positive. The patient has likely been infected with _M.
+- **Patient Y ($12\;\mathrm{mm{}$)**: Positive. For immunocompromised individuals, an induration
+  $\geq 5\;\mathrm{mm{}$ is considered positive. The patient has likely been infected with _M.
   tuberculosis_ (latent TB infection). Further investigation (chest X-ray, sputum culture) is needed.
-- **Patient Z ($18\;\mathrm{'\{'}mm{'\}'}$)**: Positive. An induration $\geq 10\;\mathrm{'\{'}mm{'\}'}$ is positive for
-  most individuals (healthcare workers, recent immigrants, IV drug users). An induration $\geq 15\;\mathrm{'\{'}mm{'\}'}$
+- **Patient Z ($18\;\mathrm{mm{}$)**: Positive. An induration $\geq 10\;\mathrm{mm{}$ is positive for
+  most individuals (healthcare workers, recent immigrants, IV drug users). An induration $\geq 15\;\mathrm{mm{}$
   is positive for all individuals regardless of risk factors.
 
 **Immunological basis**: the Mantoux test is a **Type IV (delayed-type) hypersensitivity** reaction.
-Memory $\mathrm{'\{'}T_H{'\}'}1$ cells recognise PPD antigens and release IFN-$\gamma$, activating macrophages.
+Memory $\mathrm{T_H{}1$ cells recognise PPD antigens and release IFN-$\gamma$, activating macrophages.
 Macrophages release inflammatory mediators, causing localised oedema and induration. The $48$--$72$
 hour delay reflects the time required for T cell activation, cytokine secretion, and macrophage
 recruitment.
@@ -976,7 +976,7 @@ recruitment.
   cytotoxic T cells and NK cells directly kill infected cells (cell-mediated immunity).
 - **Confusing IgG and IgM in primary vs secondary responses**: IgM is produced first in the primary
   response; IgG dominates the secondary response due to class switching and memory B cell activation.
-- **Describing HIV as killing all white blood cells**: HIV specifically targets $\mathrm{'\{'}CD4{'\}'}^+$
+- **Describing HIV as killing all white blood cells**: HIV specifically targets $\mathrm{CD4{}^+$
   helper T cells. The resulting immunodeficiency is indirect, caused by the loss of T cell help to
   B cells and cytotoxic T cells.
 - **Confusing autoimmunity and immunodeficiency**: autoimmunity is immune overactivity against self;
@@ -1052,7 +1052,7 @@ Describe each step of the chosen ELISA protocol, including the necessary control
 the sensitivity and specificity of the test could be affected by cross-reactive antibodies in the
 patient sample. (d) Calculate the minimum detectable concentration of antigen if the assay produces
 a detectable colour change at an absorbance of $0.100$ and the standard curve has a slope of
-$0.020\;\mathrm{'\{'}(AU/mL){'\}'}^{-1}$ with a y-intercept of $0.050$.
+$0.020\;\mathrm{(AU/mL){}^{-1}$ with a y-intercept of $0.050$.
 
 </details>
 
@@ -1183,12 +1183,12 @@ two antibodies are required.
 <details>
 <summary>Solution</summary>
 
-(a) Using the standard curve (approximately linear from $0$ to $40\;\mathrm{'\{'}ng/mL{'\}'}$):
-Slope $= (0.850 - 0.050) / (40 - 0) = 0.800 / 40 = 0.020\;\mathrm{'\{'}(AU \cdot mL)/ng{'\}'}$.
+(a) Using the standard curve (approximately linear from $0$ to $40\;\mathrm{ng/mL{}$):
+Slope $= (0.850 - 0.050) / (40 - 0) = 0.800 / 40 = 0.020\;\mathrm{(AU \cdot mL)/ng{}$.
 Y-intercept $= 0.050$.
 
 For the patient sample: $0.550 = 0.020 \times C + 0.050$.
-$C = (0.550 - 0.050) / 0.020 = 0.500 / 0.020 = 25\;\mathrm{'\{'}ng/mL{'\}'}$.
+$C = (0.550 - 0.050) / 0.020 = 0.500 / 0.020 = 25\;\mathrm{ng/mL{}$.
 
 (b) Patient absorbance $= 0.550 > 0.200$ (positive threshold). **The patient is positive** for the
 viral antigen.
@@ -1212,40 +1212,40 @@ increases assay specificity (reducing false positives from cross-reactive substa
 
 **Worked Example: HIV and the Immune System**
 
-HIV targets $\mathrm{'\{'}CD4{'\}'}^+$ T helper cells. A patient's blood test shows:
-$\mathrm{'\{'}CD4{'\}'}^+$ T cell count $= 350\;\mathrm{'\{'}cells/\mu L{'\}'}$ (normal: $500$--$1600$),
-viral load $= 50\,000\;\mathrm{'\{'}copies/mL{'\}'}$.
-(a) What stage of HIV infection does this represent? (b) Explain how HIV depletes $\mathrm{'\{'}CD4{'\}'}^+$
+HIV targets $\mathrm{CD4{}^+$ T helper cells. A patient's blood test shows:
+$\mathrm{CD4{}^+$ T cell count $= 350\;\mathrm{cells/\mu L{}$ (normal: $500$--$1600$),
+viral load $= 50\,000\;\mathrm{copies/mL{}$.
+(a) What stage of HIV infection does this represent? (b) Explain how HIV depletes $\mathrm{CD4{}^+$
 cells. (c) Explain why opportunistic infections occur at this stage. (d) Explain how antiretroviral
 therapy (ART) works.
 
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{'\{'}CD4{'\}'}^+$ count of $350\;\mathrm{'\{'}cells/\mu L{'\}'}$ falls in the range of $200$--$500$,
+(a) $\mathrm{CD4{}^+$ count of $350\;\mathrm{cells/\mu L{}$ falls in the range of $200$--$500$,
 which corresponds to **stage 2 (chronic HIV infection)** or early stage 3. AIDS is defined as
-$\mathrm{'\{'}CD4{'\}'}^+ < 200\;\mathrm{'\{'}cells/\mu L{'\}'}$ or the presence of an AIDS-defining illness. This
+$\mathrm{CD4{}^+ < 200\;\mathrm{cells/\mu L{}$ or the presence of an AIDS-defining illness. This
 patient has not yet progressed to AIDS but has significant immunosuppression.
 
-(b) HIV depletes $\mathrm{'\{'}CD4{'\}'}^+$ T cells through multiple mechanisms:
-1. **Direct viral killing**: HIV replicates inside $\mathrm{'\{'}CD4{'\}'}^+$ cells, producing new virions that
+(b) HIV depletes $\mathrm{CD4{}^+$ T cells through multiple mechanisms:
+1. **Direct viral killing**: HIV replicates inside $\mathrm{CD4{}^+$ cells, producing new virions that
    bud from the cell membrane, causing cell lysis.
-2. **Syncytium formation**: HIV envelope glycoproteins on infected cells bind to $\mathrm{'\{'}CD4{'\}'}$ on
+2. **Syncytium formation**: HIV envelope glycoproteins on infected cells bind to $\mathrm{CD4{}$ on
    uninfected cells, causing cell fusion and forming multinucleated syncytia that die.
 3. **Apoptosis**: HIV infection triggers programmed cell death through various pathways (Fas/FasL,
    caspase activation).
 4. **Immune-mediated killing**: cytotoxic T lymphocytes (CTLs) recognise and kill HIV-infected
-   $\mathrm{'\{'}CD4{'\}'}^+$ cells (this is beneficial for controlling the virus but also depletes $\mathrm{'\{'}CD4{'\}'}^+$
+   $\mathrm{CD4{}^+$ cells (this is beneficial for controlling the virus but also depletes $\mathrm{CD4{}^+$
    cells).
 5. **Chronic immune activation**: persistent viral replication keeps the immune system activated,
-   leading to exhaustion and apoptosis of uninfected bystander $\mathrm{'\{'}CD4{'\}'}^+$ cells.
+   leading to exhaustion and apoptosis of uninfected bystander $\mathrm{CD4{}^+$ cells.
 
-(c) Opportunistic infections occur because $\mathrm{'\{'}CD4{'\}'}^+$ T helper cells are essential for
+(c) Opportunistic infections occur because $\mathrm{CD4{}^+$ T helper cells are essential for
 coordinating both cell-mediated and humoral immune responses:
 - They activate macrophages (via IFN-$\gamma$) to kill intracellular pathogens.
 - They provide help to B cells for antibody production (CD40L-CD40 interaction, cytokine secretion).
 - They activate CTLs (via IL-2).
-- With reduced $\mathrm{'\{'}CD4{'\}'}^+$ cells, all these functions are impaired. Pathogens that are normally
+- With reduced $\mathrm{CD4{}^+$ cells, all these functions are impaired. Pathogens that are normally
   controlled (e.g., _Pneumocystis jirovecii_, _Mycobacterium avium_, _Candida_, cytomegalovirus)
   cause severe, life-threatening infections.
 
@@ -1324,7 +1324,7 @@ The C3 convertase cleaves C3 into C3a (anaphylatoxin) and C3b (opsonin). C3b bin
 and combines with the convertase to form C5 convertase. C5 convertase cleaves C5 into C5a (anaphylatoxin,
 chemotactic factor) and C5b. C5b initiates the assembly of the **membrane attack complex (MAC)**:
 C5b recruits C6, C7, C8, and multiple C9 molecules. C9 polymerises to form a transmembrane pore
-(approximately $10\;\mathrm{'\{'}nm{'\}'}$ diameter) that disrupts the target cell's membrane integrity, causing
+(approximately $10\;\mathrm{nm{}$ diameter) that disrupts the target cell's membrane integrity, causing
 osmotic lysis.
 
 (d) **Three biological consequences**:
@@ -1567,7 +1567,7 @@ Given the following numbers of functional gene segments:
 (a) Calculate the combinatorial diversity from V(D)J recombination alone. (b) If junctional diversity
 adds a factor of approximately $10^7$ for the heavy chain, calculate the total diversity including
 junctional and combinatorial mechanisms. (c) If somatic hypermutation introduces an average of $5$
-mutations per variable region (which has $300\;\mathrm{'\{'}bp{'\}'}$), and each mutation can be one of $3$
+mutations per variable region (which has $300\;\mathrm{bp{}$), and each mutation can be one of $3$
 possible nucleotide changes, calculate the additional diversity from somatic hypermutation for a
 single B cell clone.
 
@@ -1583,7 +1583,7 @@ Combinatorial diversity: $7128 \times 306 = 2\,181\,168 \approx 2.2 \times 10^6$
 (b) With junctional diversity ($\times 10^7$ for heavy chain):
 $7128 \times 10^7 \times 306 = 2.2 \times 10^{13}$.
 
-(c) Somatic hypermutation: for $5$ mutations in $300\;\mathrm{'\{'}bp{'\}'}$, each mutation has $3$ possible
+(c) Somatic hypermutation: for $5$ mutations in $300\;\mathrm{bp{}$, each mutation has $3$ possible
 nucleotide changes. The number of distinct sequences generated:
 $\binom{300}{5} \times 3^5 = \frac{300!}{5! \times 295!} \times 243$
 $\binom{300}{5} \approx 2.05 \times 10^{10}$
@@ -1603,7 +1603,7 @@ encode cell-surface proteins responsible for presenting antigens to T cells.
 **Class I MHC (HLA-A, -B, -C)**:
 - Expressed on **all nucleated cells**.
 - Present **endogenous antigens** (intracellular proteins, e.g., viral proteins, tumour antigens)
-  to $\mathrm{'\{'}CD8{'\}'}^+$ cytotoxic T cells (CTLs).
+  to $\mathrm{CD8{}^+$ cytotoxic T cells (CTLs).
 - Structure: heavy chain ($\alpha$ chain) + $\beta_2$-microglobulin. The antigen-binding groove is
   formed by the $\alpha_1$ and $\alpha_2$ domains.
 - Pathway: intracellular proteins are degraded by the proteasome, transported into the ER by TAP
@@ -1612,7 +1612,7 @@ encode cell-surface proteins responsible for presenting antigens to T cells.
 
 **Class II MHC (HLA-DR, -DP, -DQ)**:
 - Expressed on **antigen-presenting cells** (dendritic cells, macrophages, B cells).
-- Present **exogenous antigens** (extracellular proteins, e.g., bacteria, toxins) to $\mathrm{'\{'}CD4{'\}'}^+$
+- Present **exogenous antigens** (extracellular proteins, e.g., bacteria, toxins) to $\mathrm{CD4{}^+$
   helper T cells.
 - Structure: $\alpha$ chain + $\beta$ chain. The antigen-binding groove is formed by the $\alpha_1$
   and $\beta_1$ domains.
@@ -1628,11 +1628,11 @@ transplant rejection (the immune system recognises foreign MHC as non-self).
 
 T cells develop in the thymus from bone marrow-derived progenitors:
 
-1. **Double-negative stage** ($\mathrm{'\{'}CD4{'\}'}^-\mathrm{'\{'}CD8{'\}'}^-$): T cell receptor (TCR) beta chain
+1. **Double-negative stage** ($\mathrm{CD4{}^-\mathrm{CD8{}^-$): T cell receptor (TCR) beta chain
    rearrangement occurs. Successful rearrangement produces the pre-TCR, which signals for proliferation
    and alpha chain rearrangement.
 
-2. **Double-positive stage** ($\mathrm{'\{'}CD4{'\}'}^+\mathrm{'\{'}CD8{'\}'}^+$): TCR alpha chain rearrangement completes.
+2. **Double-positive stage** ($\mathrm{CD4{}^+\mathrm{CD8{}^+$): TCR alpha chain rearrangement completes.
    Cells that produce a functional TCR are selected for further development.
 
 3. **Positive selection** (in the thymic cortex): double-positive T cells interact with cortical
@@ -1647,8 +1647,8 @@ T cells develop in the thymus from bone marrow-derived progenitors:
    AIRE (autoimmune regulator), which promotes the expression of tissue-specific antigens in the
    thymus, allowing negative selection against these antigens.
 
-5. **Single-positive stage**: surviving T cells become either $\mathrm{'\{'}CD4{'\}'}^+$ (if selected on MHC class II)
-   or $\mathrm{'\{'}CD8{'\}'}^+$ (if selected on MHC class I) and exit the thymus as naive T cells.
+5. **Single-positive stage**: surviving T cells become either $\mathrm{CD4{}^+$ (if selected on MHC class II)
+   or $\mathrm{CD8{}^+$ (if selected on MHC class I) and exit the thymus as naive T cells.
 
 Approximately $98\%$ of developing T cells die in the thymus (negative selection and failed positive
 selection). Only about $2\%$ survive to enter the circulation as mature, self-tolerant T cells.

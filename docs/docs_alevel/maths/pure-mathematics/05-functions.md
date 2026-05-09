@@ -153,14 +153,14 @@ on $y = f^{-1}(x)$. Swapping coordinates is reflection in $y = x$. $\blacksquare
 
 **Definition.** The _modulus_ (absolute value) function is defined by:
 
-$$|x| = \begin{cases} x & \mathrm{'\{'}if {'\}'} x \geq 0 \\ -x & \mathrm{'\{'}if {'\}'} x < 0 \end{cases}$$
+$$|x| = \begin{cases} x & \mathrm{if {} x \geq 0 \\ -x & \mathrm{if {} x < 0 \end{cases}$$
 
 **Properties:**
 
 $$
 \begin{aligned}
 |ab| &= |a| \cdot |b| \\
-|a + b| &\leq |a| + |b| \quad \mathrm{'\{'}(Triangle inequality){'\}'} \\
+|a + b| &\leq |a| + |b| \quad \mathrm{(Triangle inequality){} \\
 |a|^2 &= a^2 \\
 |x| &= \sqrt{x^2}
 \end{aligned}
@@ -313,20 +313,20 @@ $g(-x) = \cos((-x)^2) = \cos(x^2) = g(x)$. So $g$ is even.
 
 ## 7. Composite Function Domain and Range
 
-**Theorem.** The domain of $g \circ f$ is $\{x \in \mathrm{'\{'}dom{'\}'}(f) : f(x) \in \mathrm{'\{'}dom{'\}'}(g)\}$.
+**Theorem.** The domain of $g \circ f$ is $\{x \in \mathrm{dom{}(f) : f(x) \in \mathrm{dom{}(g)\}$.
 
-_Proof._ For $(g \circ f)(x) = g(f(x))$ to be defined, we need $x \in \mathrm{'\{'}dom{'\}'}(f)$ (so $f(x)$
-exists) AND $f(x) \in \mathrm{'\{'}dom{'\}'}(g)$ (so $g$ can accept $f(x)$ as input). $\blacksquare$
+_Proof._ For $(g \circ f)(x) = g(f(x))$ to be defined, we need $x \in \mathrm{dom{}(f)$ (so $f(x)$
+exists) AND $f(x) \in \mathrm{dom{}(g)$ (so $g$ can accept $f(x)$ as input). $\blacksquare$
 
 The range of $g \circ f$ is the image under $g$ of the set
-$\{f(x) : x \in \mathrm{'\{'}dom{'\}'}(g \circ f)\}$, which is a subset of the range of $g$.
+$\{f(x) : x \in \mathrm{dom{}(g \circ f)\}$, which is a subset of the range of $g$.
 
 <details>
 <summary>Example</summary>
 Given $f(x) = x^2$ with domain $\mathbb{'\{'}R{'\}'}$ and $g(x) = \sqrt{x}$ with domain $[0, \infty)$, find the domain and range of $g \circ f$.
 
 **Domain:** We need $x \in \mathbb{'\{'}R{'\}'}$ (always true) and $f(x) = x^2 \in [0, \infty)$ (always true).
-So $\mathrm{'\{'}dom{'\}'}(g \circ f) = \mathbb{'\{'}R{'\}'}$.
+So $\mathrm{dom{}(g \circ f) = \mathbb{'\{'}R{'\}'}$.
 
 **Range:** $g(f(x)) = \sqrt{x^2} = |x|$. The range of $|x|$ over $\mathbb{'\{'}R{'\}'}$ is $[0, \infty)$.
 
@@ -338,7 +338,7 @@ Given $f(x) = \frac{1}{x - 1}$ with domain $\mathbb{'\{'}R{'\}'} \setminus \{1\}
 
 We need $\frac{1}{x-1} > 0$, so $x - 1 > 0$, giving $x > 1$.
 
-$\mathrm{'\{'}dom{'\}'}(g \circ f) = (1, \infty)$.
+$\mathrm{dom{}(g \circ f) = (1, \infty)$.
 
 </details>
 

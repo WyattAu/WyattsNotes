@@ -36,7 +36,7 @@ availability).
 A **food chain** represents the linear transfer of energy from producers through consumers.
 
 $$
-\mathrm{'\{'}Producer{'\}'} \to \mathrm{'\{'}Primary Consumer{'\}'} \to \mathrm{'\{'}Secondary Consumer{'\}'} \to \mathrm{'\{'}Tertiary Consumer{'\}'}
+\mathrm{Producer{} \to \mathrm{Primary Consumer{} \to \mathrm{Secondary Consumer{} \to \mathrm{Tertiary Consumer{}
 $$
 
 A **food web** is a network of interconnected food chains, representing the complex feeding
@@ -75,7 +75,7 @@ photosynthesis per unit area per unit time.
 energy used in plant respiration:
 
 $$
-\mathrm{'\{'}NPP{'\}'} = \mathrm{'\{'}GPP{'\}'} - R
+\mathrm{NPP{} = \mathrm{GPP{} - R
 $$
 
 where $R$ is the energy lost through respiration by the producers. NPP represents the energy
@@ -98,7 +98,7 @@ insects).
 ### Calculating Energy Transfer
 
 $$
-\mathrm{'\{'}Ecological efficiency{'\}'} = \frac{\mathrm{'\{'}energy at higher trophic level{'\}'}}{\mathrm{'\{'}energy at lower trophic level{'\}'}} \times 100\%
+\mathrm{Ecological efficiency{} = \frac{\mathrm{energy at higher trophic level{}}{\mathrm{energy at lower trophic level{}} \times 100\%
 $$
 
 ---
@@ -113,33 +113,33 @@ Carbon circulates between the atmosphere, biosphere, hydrosphere, and lithospher
 
 | Process                  | Description                                                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| **Photosynthesis**       | Plants, algae, and cyanobacteria convert $\mathrm{'\{'}CO{'\}'}_2$ into organic compounds (carbohydrates).                        |
-| **Cellular respiration** | Organisms release $\mathrm{'\{'}CO{'\}'}_2$ by oxidising organic molecules.                                                       |
-| **Combustion**           | Burning fossil fuels and biomass releases $\mathrm{'\{'}CO{'\}'}_2$.                                                              |
-| **Decomposition**        | Decomposers break down organic matter, releasing $\mathrm{'\{'}CO{'\}'}_2$.                                                       |
+| **Photosynthesis**       | Plants, algae, and cyanobacteria convert $\mathrm{CO{}_2$ into organic compounds (carbohydrates).                        |
+| **Cellular respiration** | Organisms release $\mathrm{CO{}_2$ by oxidising organic molecules.                                                       |
+| **Combustion**           | Burning fossil fuels and biomass releases $\mathrm{CO{}_2$.                                                              |
+| **Decomposition**        | Decomposers break down organic matter, releasing $\mathrm{CO{}_2$.                                                       |
 | **Fossilisation**        | Organic matter is buried and slowly converted to fossil fuels (coal, oil, natural gas) over millions of years.          |
-| **Ocean absorption**     | $\mathrm{'\{'}CO{'\}'}_2$ dissolves in seawater; marine organisms incorporate carbon into shells ($\mathrm{'\{'}CaCO{'\}'}_3$) and tissues. |
+| **Ocean absorption**     | $\mathrm{CO{}_2$ dissolves in seawater; marine organisms incorporate carbon into shells ($\mathrm{CaCO{}_3$) and tissues. |
 
 **Carbon reservoirs**:
 
-- Atmosphere: $\approx 800$ gigatonnes of carbon (Gt C), primarily as $\mathrm{'\{'}CO{'\}'}_2$.
-- Oceans: $\approx 38000$ Gt C (dissolved $\mathrm{'\{'}CO{'\}'}_2$, bicarbonate, carbonate, marine
+- Atmosphere: $\approx 800$ gigatonnes of carbon (Gt C), primarily as $\mathrm{CO{}_2$.
+- Oceans: $\approx 38000$ Gt C (dissolved $\mathrm{CO{}_2$, bicarbonate, carbonate, marine
   organisms).
 - Fossil fuels: $\approx 4000$--$10000$ Gt C.
 - Terrestrial biosphere: $\approx 2000$ Gt C (plant biomass, soil organic matter).
 
 ### The Nitrogen Cycle
 
-Nitrogen ($\mathrm{'\{'}N{'\}'}_2$) makes up $78\%$ of the atmosphere but is chemically inert and unavailable
-to most organisms. The nitrogen cycle converts $\mathrm{'\{'}N{'\}'}_2$ into biologically usable forms.
+Nitrogen ($\mathrm{N{}_2$) makes up $78\%$ of the atmosphere but is chemically inert and unavailable
+to most organisms. The nitrogen cycle converts $\mathrm{N{}_2$ into biologically usable forms.
 
 | Process               | Description                                                                                                                                                                                                    |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nitrogen fixation** | Conversion of $\mathrm{'\{'}N{'\}'}_2$ to $\mathrm{'\{'}NH{'\}'}_3$ (ammonia). Performed by nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_ free-living in soil) and lightning.              |
-| **Nitrification**     | Conversion of $\mathrm{'\{'}NH{'\}'}_3$ / $\mathrm{'\{'}NH{'\}'}_4^+$ to $\mathrm{'\{'}NO{'\}'}_2^-$ (nitrite) by _Nitrosomonas_, then to $\mathrm{'\{'}NO{'\}'}_3^-$ (nitrate) by _Nitrobacter_.                                                      |
-| **Assimilation**      | Plants absorb $\mathrm{'\{'}NO{'\}'}_3^-$ and $\mathrm{'\{'}NH{'\}'}_4^+$ through roots; animals obtain nitrogen by eating plants or other animals.                                                                                |
-| **Ammonification**    | Decomposers convert organic nitrogen (proteins, nucleic acids) in dead matter and waste into $\mathrm{'\{'}NH{'\}'}_3$.                                                                                                  |
-| **Denitrification**   | Conversion of $\mathrm{'\{'}NO{'\}'}_3^-$ back to $\mathrm{'\{'}N{'\}'}_2$ by denitrifying bacteria (e.g., _Pseudomonas denitrificans_), returning nitrogen to the atmosphere. Occurs in anaerobic conditions (waterlogged soils). |
+| **Nitrogen fixation** | Conversion of $\mathrm{N{}_2$ to $\mathrm{NH{}_3$ (ammonia). Performed by nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_ free-living in soil) and lightning.              |
+| **Nitrification**     | Conversion of $\mathrm{NH{}_3$ / $\mathrm{NH{}_4^+$ to $\mathrm{NO{}_2^-$ (nitrite) by _Nitrosomonas_, then to $\mathrm{NO{}_3^-$ (nitrate) by _Nitrobacter_.                                                      |
+| **Assimilation**      | Plants absorb $\mathrm{NO{}_3^-$ and $\mathrm{NH{}_4^+$ through roots; animals obtain nitrogen by eating plants or other animals.                                                                                |
+| **Ammonification**    | Decomposers convert organic nitrogen (proteins, nucleic acids) in dead matter and waste into $\mathrm{NH{}_3$.                                                                                                  |
+| **Denitrification**   | Conversion of $\mathrm{NO{}_3^-$ back to $\mathrm{N{}_2$ by denitrifying bacteria (e.g., _Pseudomonas denitrificans_), returning nitrogen to the atmosphere. Occurs in anaerobic conditions (waterlogged soils). |
 
 ---
 
@@ -155,22 +155,22 @@ radiation, warming the planet.
 
 | Gas                                      | Sources                                                             | Relative contribution |
 | ---------------------------------------- | ------------------------------------------------------------------- | --------------------- |
-| Carbon dioxide ($\mathrm{'\{'}CO{'\}'}_2$)         | Fossil fuel combustion, deforestation, cement production            | Largest               |
-| Methane ($\mathrm{'\{'}CH{'\}'}_4$)                | Agriculture (rice paddies, livestock), landfills, natural gas leaks | Second largest        |
-| Nitrous oxide ($\mathrm{'\{'}N{'\}'}_2\mathrm{'\{'}O{'\}'}$) | Agricultural fertilisers, industrial processes                      | Third                 |
+| Carbon dioxide ($\mathrm{CO{}_2$)         | Fossil fuel combustion, deforestation, cement production            | Largest               |
+| Methane ($\mathrm{CH{}_4$)                | Agriculture (rice paddies, livestock), landfills, natural gas leaks | Second largest        |
+| Nitrous oxide ($\mathrm{N{}_2\mathrm{O{}$) | Agricultural fertilisers, industrial processes                      | Third                 |
 | Chlorofluorocarbons (CFCs)               | Refrigerants, aerosols (now largely banned by Montreal Protocol)    | Potent but declining  |
 
 ### Evidence for Climate Change
 
-- **Direct atmospheric measurements**: $\mathrm{'\{'}CO{'\}'}_2$ concentration at Mauna Loa Observatory has
-  risen from $\approx 315\;\mathrm{'\{'}ppm{'\}'}$ (1958) to over $420\;\mathrm{'\{'}ppm{'\}'}$ (2024).
-- **Ice core data**: trapped air bubbles in Antarctic ice show $\mathrm{'\{'}CO{'\}'}_2$ and temperature over
+- **Direct atmospheric measurements**: $\mathrm{CO{}_2$ concentration at Mauna Loa Observatory has
+  risen from $\approx 315\;\mathrm{ppm{}$ (1958) to over $420\;\mathrm{ppm{}$ (2024).
+- **Ice core data**: trapped air bubbles in Antarctic ice show $\mathrm{CO{}_2$ and temperature over
   the past $800000$ years; current levels are unprecedented.
 - **Global temperature records**: average global temperature has risen by
-  $\approx 1.1^\circ\mathrm{'\{'}C{'\}'}$ since pre-industrial times.
+  $\approx 1.1^\circ\mathrm{C{}$ since pre-industrial times.
 - **Sea-level rise**: thermal expansion of seawater and melting of ice sheets contribute
-  approximately $3.6\;\mathrm{'\{'}mm/year{'\}'}$.
-- **Ocean acidification**: dissolved $\mathrm{'\{'}CO{'\}'}_2$ forms carbonic acid, decreasing ocean pH (from
+  approximately $3.6\;\mathrm{mm/year{}$.
+- **Ocean acidification**: dissolved $\mathrm{CO{}_2$ forms carbonic acid, decreasing ocean pH (from
   $\approx 8.2$ to $\approx 8.1$ since pre-industrial times), threatening calcifying organisms
   (corals, shellfish).
 
@@ -268,7 +268,7 @@ on the population.
 The hierarchical system of classification (Linnaean system):
 
 $$
-\mathrm{'\{'}Domain{'\}'} \to \mathrm{'\{'}Kingdom{'\}'} \to \mathrm{'\{'}Phylum{'\}'} \to \mathrm{'\{'}Class{'\}'} \to \mathrm{'\{'}Order{'\}'} \to \mathrm{'\{'}Family{'\}'} \to \mathrm{'\{'}Genus{'\}'} \to \mathrm{'\{'}Species{'\}'}
+\mathrm{Domain{} \to \mathrm{Kingdom{} \to \mathrm{Phylum{} \to \mathrm{Class{} \to \mathrm{Order{} \to \mathrm{Family{} \to \mathrm{Genus{} \to \mathrm{Species{}
 $$
 
 **Binomial nomenclature**: each species is given a two-part Latin name: _Genus species_ (e.g., _Homo
@@ -297,7 +297,7 @@ one of two alternatives based on observable characteristics.
 - Stating that energy is "recycled" in ecosystems: energy flows through and is ultimately lost as
   heat; only nutrients are recycled.
 - Assuming the greenhouse effect is entirely negative: the natural greenhouse effect keeps Earth
-  habitable ($\approx 33^\circ\mathrm{'\{'}C{'\}'}$ warmer than it would otherwise be); the concern is the
+  habitable ($\approx 33^\circ\mathrm{C{}$ warmer than it would otherwise be); the concern is the
   **enhanced** greenhouse effect due to anthropogenic emissions.
 - Equating **evolution** with "progress": evolution is a change in allele frequency; it has no
   direction or goal.
@@ -311,8 +311,8 @@ one of two alternatives based on observable characteristics.
 <details>
 <summary>Question 1: Energy Pyramid Calculation</summary>
 
-A grassland ecosystem receives $10000\;\mathrm{'\{'}kJ/m^2/year{'\}'}$ of solar energy. If GPP is
-$2000\;\mathrm{'\{'}kJ/m^2/year{'\}'}$ and plant respiration accounts for $1200\;\mathrm{'\{'}kJ/m^2/year{'\}'}$,
+A grassland ecosystem receives $10000\;\mathrm{kJ/m^2/year{}$ of solar energy. If GPP is
+$2000\;\mathrm{kJ/m^2/year{}$ and plant respiration accounts for $1200\;\mathrm{kJ/m^2/year{}$,
 calculate the NPP. If ecological efficiency is $10\%$, how much energy is available to secondary
 consumers?
 
@@ -321,12 +321,12 @@ consumers?
 <details>
 <summary>Answer</summary>
 
-$\mathrm{'\{'}NPP{'\}'} = \mathrm{'\{'}GPP{'\}'} - R = 2000 - 1200 = 800\;\mathrm{'\{'}kJ/m^2/year{'\}'}$.
+$\mathrm{NPP{} = \mathrm{GPP{} - R = 2000 - 1200 = 800\;\mathrm{kJ/m^2/year{}$.
 
-Energy available to primary consumers: $800\;\mathrm{'\{'}kJ/m^2/year{'\}'}$.
+Energy available to primary consumers: $800\;\mathrm{kJ/m^2/year{}$.
 
 Energy transferred to secondary consumers ($10\%$ efficiency):
-$800 \times 0.10 = 80\;\mathrm{'\{'}kJ/m^2/year{'\}'}$.
+$800 \times 0.10 = 80\;\mathrm{kJ/m^2/year{}$.
 
 </details>
 
@@ -379,29 +379,29 @@ $\approx 100\%$ in five generations.
 <details>
 <summary>Question 4: Carbon Cycle Calculation</summary>
 
-An area of tropical rainforest has an NPP of $2200\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$. If deforestation
+An area of tropical rainforest has an NPP of $2200\;\mathrm{g\;C/m^2/year{}$. If deforestation
 removes $50\%$ of the trees, and assuming NPP is proportional to biomass, estimate the reduction in
-annual carbon uptake. Express your answer in tonnes of $\mathrm{'\{'}CO{'\}'}_2$ per $\mathrm{'\{'}km{'\}'}^2$ per year.
+annual carbon uptake. Express your answer in tonnes of $\mathrm{CO{}_2$ per $\mathrm{km{}^2$ per year.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Original NPP: $2200\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$.
+Original NPP: $2200\;\mathrm{g\;C/m^2/year{}$.
 
-After $50\%$ deforestation: $2200 \times 0.50 = 1100\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$.
+After $50\%$ deforestation: $2200 \times 0.50 = 1100\;\mathrm{g\;C/m^2/year{}$.
 
-Reduction: $1100\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$.
+Reduction: $1100\;\mathrm{g\;C/m^2/year{}$.
 
-Convert to $\mathrm{'\{'}CO{'\}'}_2$: $\mathrm{'\{'}CO{'\}'}_2$ has molar mass $44\;\mathrm{'\{'}g/mol{'\}'}$, C has molar mass
-$12\;\mathrm{'\{'}g/mol{'\}'}$. Ratio: $44/12 = 3.67$.
+Convert to $\mathrm{CO{}_2$: $\mathrm{CO{}_2$ has molar mass $44\;\mathrm{g/mol{}$, C has molar mass
+$12\;\mathrm{g/mol{}$. Ratio: $44/12 = 3.67$.
 
-Reduction in $\mathrm{'\{'}CO{'\}'}_2$ uptake: $1100 \times 3.67 = 4037\;\mathrm{'\{'}g\;CO_2/m^2/year{'\}'}$.
+Reduction in $\mathrm{CO{}_2$ uptake: $1100 \times 3.67 = 4037\;\mathrm{g\;CO_2/m^2/year{}$.
 
-Convert to $\mathrm{'\{'}km{'\}'}^2$: $1\;\mathrm{'\{'}km{'\}'}^2 = 10^6\;\mathrm{'\{'}m{'\}'}^2$.
+Convert to $\mathrm{km{}^2$: $1\;\mathrm{km{}^2 = 10^6\;\mathrm{m{}^2$.
 
-Reduction: $4037 \times 10^6\;\mathrm{'\{'}g/km^2/year{'\}'} = 4037\;\mathrm{'\{'}t\;CO_2/km^2/year{'\}'}$.
+Reduction: $4037 \times 10^6\;\mathrm{g/km^2/year{} = 4037\;\mathrm{t\;CO_2/km^2/year{}$.
 
 </details>
 
@@ -501,18 +501,18 @@ herbivores preferentially consuming white flowers, or pollinator preference for 
 
 **Worked Example: Calculating Ecological Footprint from NPP Data**
 
-A $10\;\mathrm{'\{'}km{'\}'}^2$ nature reserve has an average NPP of $1500\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$. The
-reserve supports a population of $200$ deer, each consuming an average of $3.5\;\mathrm{'\{'}kg{'\}'}$ of plant
+A $10\;\mathrm{km{}^2$ nature reserve has an average NPP of $1500\;\mathrm{g\;C/m^2/year{}$. The
+reserve supports a population of $200$ deer, each consuming an average of $3.5\;\mathrm{kg{}$ of plant
 biomass per day (dry weight, assume $50\%$ carbon by mass). Calculate the fraction of annual NPP
 consumed by the deer population.
 
 <details>
 <summary>Solution</summary>
 
-**Total annual NPP**: $1500\;\mathrm{'\{'}g\;C/m^2/year{'\}'} \times 10^7\;\mathrm{'\{'}m^2{'\}'} = 1.5 \times 10^{10}\;\mathrm{'\{'}g\;C/year{'\}'} = 15000\;\mathrm{'\{'}t\;C/year{'\}'}$
+**Total annual NPP**: $1500\;\mathrm{g\;C/m^2/year{} \times 10^7\;\mathrm{m^2{} = 1.5 \times 10^{10}\;\mathrm{g\;C/year{} = 15000\;\mathrm{t\;C/year{}$
 
-**Total annual deer consumption** (in carbon): $200 \times 3.5\;\mathrm{'\{'}kg/day{'\}'} \times 365\;\mathrm{'\{'}days/year{'\}'} \times 0.50\;\mathrm{'\{'}(C fraction){'\}'}$
-$= 200 \times 3.5 \times 365 \times 0.5 = 127750\;\mathrm{'\{'}kg\;C/year{'\}'} = 127.75\;\mathrm{'\{'}t\;C/year{'\}'}$
+**Total annual deer consumption** (in carbon): $200 \times 3.5\;\mathrm{kg/day{} \times 365\;\mathrm{days/year{} \times 0.50\;\mathrm{(C fraction){}$
+$= 200 \times 3.5 \times 365 \times 0.5 = 127750\;\mathrm{kg\;C/year{} = 127.75\;\mathrm{t\;C/year{}$
 
 **Fraction of NPP consumed**: $\frac{127.75}{15000} \approx 0.0085$ or $0.85\%$
 
@@ -525,7 +525,7 @@ for other herbivores, decomposition losses, or the fact that only a portion of N
 **Worked Example: Interpreting a Predator-Prey Graph**
 
 The following data show the population sizes of a predator (lynx) and its prey (hare) over a $10$-year
-period in a $500\;\mathrm{'\{'}km{'\}'}^2$ boreal forest:
+period in a $500\;\mathrm{km{}^2$ boreal forest:
 
 | Year | Hare population (thousands) | Lynx population |
 | ---- | --------------------------- | --------------- |
@@ -576,7 +576,7 @@ the hare cycles independently of predation.
   heat at every trophic transfer; only nutrients (carbon, nitrogen, phosphorus) are recycled via
   biogeochemical cycles.
 - **Assuming the greenhouse effect is entirely negative**: the natural greenhouse effect keeps Earth
-  approximately $33^\circ\mathrm{'\{'}C{'\}'}$ warmer than it would otherwise be, making it habitable. The
+  approximately $33^\circ\mathrm{C{}$ warmer than it would otherwise be, making it habitable. The
   concern is the enhanced greenhouse effect from anthropogenic emissions.
 - **Equating evolution with "progress"**: evolution is a change in allele frequency with no
   direction or goal. A trait is "better" only in the context of the current environment.
@@ -585,9 +585,9 @@ the hare cycles independently of predation.
   evolutionary forces, not as a description of real populations.
 - **Confusing GPP and NPP**: GPP is total photosynthetic output; NPP is what remains after plant
   respiration. NPP is the energy available to consumers.
-- **Assuming all nitrogen is available to plants**: atmospheric $\mathrm{'\{'}N{'\}'}_2$ is inert and
-  unavailable. Plants can only use fixed forms: $\mathrm{'\{'}NH{'\}'}_4^+$, $\mathrm{'\{'}NO{'\}'}_2^-$, and
-  $\mathrm{'\{'}NO{'\}'}_3^-$.
+- **Assuming all nitrogen is available to plants**: atmospheric $\mathrm{N{}_2$ is inert and
+  unavailable. Plants can only use fixed forms: $\mathrm{NH{}_4^+$, $\mathrm{NO{}_2^-$, and
+  $\mathrm{NO{}_3^-$.
 
 ---
 
@@ -596,11 +596,11 @@ the hare cycles independently of predation.
 <details>
 <summary>Problem 1: Data Analysis -- Carbon Cycle and Deforestation</summary>
 
-A tropical rainforest has an average above-ground biomass of $200\;\mathrm{'\{'}t\;C/ha{'\}'}$ and an NPP of
-$1800\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$. A logging company clears $500\;\mathrm{'\{'}ha{'\}'}$ of forest. Assume
-$60\%$ of the above-ground carbon is released as $\mathrm{'\{'}CO{'\}'}_2$ immediately (through burning and
+A tropical rainforest has an average above-ground biomass of $200\;\mathrm{t\;C/ha{}$ and an NPP of
+$1800\;\mathrm{g\;C/m^2/year{}$. A logging company clears $500\;\mathrm{ha{}$ of forest. Assume
+$60\%$ of the above-ground carbon is released as $\mathrm{CO{}_2$ immediately (through burning and
 decomposition), and the remaining $40\%$ is stored in timber products. (a) Calculate the immediate
-$\mathrm{'\{'}CO{'\}'}_2$ release in tonnes. (b) Calculate the annual loss of $\mathrm{'\{'}CO{'\}'}_2$ uptake capacity.
+$\mathrm{CO{}_2$ release in tonnes. (b) Calculate the annual loss of $\mathrm{CO{}_2$ uptake capacity.
 (c) Discuss two long-term consequences for the local carbon cycle.
 
 </details>
@@ -630,9 +630,9 @@ indefinitely and describe the shape of the resulting logistic growth curve.
 <details>
 <summary>Problem 4: Data Analysis -- Nitrogen Cycle and Eutrophication</summary>
 
-A lake receives agricultural runoff containing $50\;\mathrm{'\{'}tonnes/year{'\}'}$ of nitrogen (as nitrate).
-The lake has a surface area of $10\;\mathrm{'\{'}km{'\}'}^2$ and an average depth of $5\;\mathrm{'\{'}m{'\}'}$. The
-natural nitrogen input from rainfall is $0.5\;\mathrm{'\{'}tonnes/year{'\}'}$. (a) Calculate the nitrogen
+A lake receives agricultural runoff containing $50\;\mathrm{tonnes/year{}$ of nitrogen (as nitrate).
+The lake has a surface area of $10\;\mathrm{km{}^2$ and an average depth of $5\;\mathrm{m{}$. The
+natural nitrogen input from rainfall is $0.5\;\mathrm{tonnes/year{}$. (a) Calculate the nitrogen
 loading per unit area with and without agricultural runoff. (b) Explain the sequence of ecological
 events (algal bloom, oxygen depletion, fish kill) that would likely follow. (c) Describe two
 management strategies to reduce nitrogen loading.
@@ -664,7 +664,7 @@ respect to genotype).
 <details>
 <summary>Problem 7: Extended Response -- Climate Change Impacts</summary>
 
-Describe the mechanism by which increasing atmospheric $\mathrm{'\{'}CO{'\}'}_2$ causes ocean acidification.
+Describe the mechanism by which increasing atmospheric $\mathrm{CO{}_2$ causes ocean acidification.
 Explain the impact of decreasing ocean pH on marine organisms that build calcium carbonate shells
 (e.g., corals, pteropods, bivalves), including the relevant chemical equilibrium. Discuss one
 cascading ecological consequence for the broader marine food web.
@@ -676,7 +676,7 @@ cascading ecological consequence for the broader marine food web.
 
 A grassland ecosystem has the following biomass data at each trophic level:
 
-| Trophic level            | Biomass ($\mathrm{'\{'}kJ/m^2{'\}'}$) |
+| Trophic level            | Biomass ($\mathrm{kJ/m^2{}$) |
 | ------------------------ | --------------------------- |
 | Producers (grass)        | 24000                      |
 | Primary consumers (insects) | 2400                    |
@@ -801,7 +801,7 @@ Unlike carbon and nitrogen, phosphorus has **no significant gaseous phase**. The
 sedimentary:
 
 1. **Weathering**: phosphate minerals in rocks are slowly released by weathering
-   ($\mathrm{'\{'}PO{'\}'}_4^{3-}$).
+   ($\mathrm{PO{}_4^{3-}$).
 2. **Uptake by plants**: plants absorb phosphate from soil through roots.
 3. **Transfer through food chains**: phosphorus passes from producers to consumers and
    decomposers.
@@ -822,8 +822,8 @@ ecosystems.
 2. **Algal bloom**: rapid growth of algae (cyanobacteria, green algae) at the water surface.
 3. **Light attenuation**: the dense algal layer blocks sunlight from reaching submerged plants.
 4. **Plant death**: submerged plants die due to insufficient light for photosynthesis.
-5. **Decomposition**: bacteria decompose dead algae and plants, consuming dissolved $\mathrm{'\{'}O{'\}'}_2$.
-6. **Hypoxia/anoxia**: dissolved $\mathrm{'\{'}O{'\}'}_2$ drops to levels that cannot support fish and
+5. **Decomposition**: bacteria decompose dead algae and plants, consuming dissolved $\mathrm{O{}_2$.
+6. **Hypoxia/anoxia**: dissolved $\mathrm{O{}_2$ drops to levels that cannot support fish and
    invertebrates, causing a "dead zone."
 7. **Biodiversity loss**: fish kills and loss of aquatic species diversity.
 
@@ -874,10 +874,10 @@ ecosystems.
 <details>
 <summary>Problem 9: Quantitative -- Population Growth Models</summary>
 
-A population of bacteria in a culture grows exponentially with $r = 0.6\;\mathrm{'\{'}h{'\}'}^{-1}$ and $N_0 = 200$
+A population of bacteria in a culture grows exponentially with $r = 0.6\;\mathrm{h{}^{-1}$ and $N_0 = 200$
 cells. (a) Calculate the population size after 10 hours. (b) Calculate the doubling time. (c) If the
 carrying capacity of the culture is $10^9$ cells, at what time will the population reach $90\%$ of $K$
-using the logistic equation? (d) Compare the logistic and exponential population sizes at $t = 20\;\mathrm{'\{'}h{'\}'}$.
+using the logistic equation? (d) Compare the logistic and exponential population sizes at $t = 20\;\mathrm{h{}$.
 
 </details>
 
@@ -920,8 +920,8 @@ strategies for reducing phosphate pollution from agricultural runoff.
 
 **Worked Example: Calculating Net Primary Productivity**
 
-A forest has a gross primary productivity (GPP) of $18\,000\;\mathrm{'\{'}kJ/m^2/year{'\}'}$. The plants in the
-forest respire at a rate of $12\,000\;\mathrm{'\{'}kJ/m^2/year{'\}'}$. (a) Calculate the net primary productivity
+A forest has a gross primary productivity (GPP) of $18\,000\;\mathrm{kJ/m^2/year{}$. The plants in the
+forest respire at a rate of $12\,000\;\mathrm{kJ/m^2/year{}$. (a) Calculate the net primary productivity
 (NPP). (b) If the ecological efficiency (transfer efficiency between trophic levels) is $10\%$, calculate
 the net secondary productivity of herbivores. (c) If $60\%$ of NPP is used by decomposers, calculate the
 energy available to herbivores. (d) Explain why ecological efficiency is typically low.
@@ -929,13 +929,13 @@ energy available to herbivores. (d) Explain why ecological efficiency is typical
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{'\{'}NPP{'\}'} = \mathrm{'\{'}GPP{'\}'} - R_p = 18000 - 12000 = 6000\;\mathrm{'\{'}kJ/m^2/year{'\}'}$
+(a) $\mathrm{NPP{} = \mathrm{GPP{} - R_p = 18000 - 12000 = 6000\;\mathrm{kJ/m^2/year{}$
 
 (b) Assuming herbivores consume $100\%$ of NPP (which is unrealistic; typically much less):
-$\mathrm{'\{'}NSP{'\}'} = \mathrm{'\{'}NPP{'\}'} \times \text{'\{'}ecological efficiency{'\}'} = 6000 \times 0.10 = 600\;\mathrm{'\{'}kJ/m^2/year{'\}'}$
+$\mathrm{NSP{} = \mathrm{NPP{} \times \text{'\{'}ecological efficiency{'\}'} = 6000 \times 0.10 = 600\;\mathrm{kJ/m^2/year{}$
 
-(c) If $60\%$ goes to decomposers: energy available to herbivores $= 6000 \times 0.40 = 2400\;\mathrm{'\{'}kJ/m^2/year{'\}'}$.
-Secondary productivity of herbivores $= 2400 \times 0.10 = 240\;\mathrm{'\{'}kJ/m^2/year{'\}'}$.
+(c) If $60\%$ goes to decomposers: energy available to herbivores $= 6000 \times 0.40 = 2400\;\mathrm{kJ/m^2/year{}$.
+Secondary productivity of herbivores $= 2400 \times 0.10 = 240\;\mathrm{kJ/m^2/year{}$.
 
 (d) Ecological efficiency is typically low ($5$--$20\%$) because:
 - Not all biomass at one trophic level is consumed (some dies and goes to decomposers).
@@ -990,30 +990,30 @@ grows more quickly than predicted by the logistic equation alone.
 
 **Worked Example: Carbon Cycle Calculations**
 
-A tropical rainforest covers $5 \times 10^6\;\mathrm{'\{'}ha{'\}'}$ and stores $200\;\mathrm{'\{'}t\;C/ha{'\}'}$ in biomass.
-It sequesters carbon at a rate of $6\;\mathrm{'\{'}t\;C/ha/year{'\}'}$. (a) Calculate the total carbon stored in
-the forest. (b) Calculate the total $\mathrm{'\{'}CO{'\}'}_2$ equivalent stored (molar mass: $\mathrm{'\{'}C{'\}'} = 12$,
-$\mathrm{'\{'}CO{'\}'}_2 = 44$). (c) If the forest is cleared for agriculture and $60\%$ of the biomass carbon
-is released as $\mathrm{'\{'}CO{'\}'}_2$ within 5 years, calculate the annual $\mathrm{'\{'}CO{'\}'}_2$ emission rate.
+A tropical rainforest covers $5 \times 10^6\;\mathrm{ha{}$ and stores $200\;\mathrm{t\;C/ha{}$ in biomass.
+It sequesters carbon at a rate of $6\;\mathrm{t\;C/ha/year{}$. (a) Calculate the total carbon stored in
+the forest. (b) Calculate the total $\mathrm{CO{}_2$ equivalent stored (molar mass: $\mathrm{C{} = 12$,
+$\mathrm{CO{}_2 = 44$). (c) If the forest is cleared for agriculture and $60\%$ of the biomass carbon
+is released as $\mathrm{CO{}_2$ within 5 years, calculate the annual $\mathrm{CO{}_2$ emission rate.
 (d) Explain how deforestation contributes to the enhanced greenhouse effect.
 
 <details>
 <summary>Solution</summary>
 
-(a) Total carbon: $5 \times 10^6 \times 200 = 10^9\;\mathrm{'\{'}t\;C{'\}'} = 1$ billion tonnes of carbon.
+(a) Total carbon: $5 \times 10^6 \times 200 = 10^9\;\mathrm{t\;C{} = 1$ billion tonnes of carbon.
 
-(b) $\mathrm{'\{'}CO{'\}'}_2$ equivalent: $\frac{44}{12} \times 10^9 = 3.67 \times 10^9\;\mathrm{'\{'}t\;CO{'\}'}_2$
-$= 3.67$ billion tonnes of $\mathrm{'\{'}CO{'\}'}_2$ equivalent.
+(b) $\mathrm{CO{}_2$ equivalent: $\frac{44}{12} \times 10^9 = 3.67 \times 10^9\;\mathrm{t\;CO{}_2$
+$= 3.67$ billion tonnes of $\mathrm{CO{}_2$ equivalent.
 
-(c) Carbon released: $0.60 \times 10^9 = 6 \times 10^8\;\mathrm{'\{'}t\;C{'\}'}$.
-$\mathrm{'\{'}CO{'\}'}_2$ released: $6 \times 10^8 \times \frac{44}{12} = 2.2 \times 10^9\;\mathrm{'\{'}t\;CO{'\}'}_2$.
-Annual rate: $2.2 \times 10^9 / 5 = 4.4 \times 10^8\;\mathrm{'\{'}t\;CO{'\}'}_2/year = 440$ million tonnes/year.
+(c) Carbon released: $0.60 \times 10^9 = 6 \times 10^8\;\mathrm{t\;C{}$.
+$\mathrm{CO{}_2$ released: $6 \times 10^8 \times \frac{44}{12} = 2.2 \times 10^9\;\mathrm{t\;CO{}_2$.
+Annual rate: $2.2 \times 10^9 / 5 = 4.4 \times 10^8\;\mathrm{t\;CO{}_2/year = 440$ million tonnes/year.
 
 (d) Deforestation contributes to the enhanced greenhouse effect by:
-- Releasing stored carbon as $\mathrm{'\{'}CO{'\}'}_2$ when biomass is burned or decomposed.
-- Reducing the forest's capacity to absorb $\mathrm{'\{'}CO{'\}'}_2$ through photosynthesis (loss of carbon sink).
-- $\mathrm{'\{'}CO{'\}'}_2$ is a greenhouse gas that absorbs and re-emits infrared radiation, trapping heat in the
-  atmosphere. Increased atmospheric $\mathrm{'\{'}CO{'\}'}_2$ from deforestation amplifies the natural greenhouse
+- Releasing stored carbon as $\mathrm{CO{}_2$ when biomass is burned or decomposed.
+- Reducing the forest's capacity to absorb $\mathrm{CO{}_2$ through photosynthesis (loss of carbon sink).
+- $\mathrm{CO{}_2$ is a greenhouse gas that absorbs and re-emits infrared radiation, trapping heat in the
+  atmosphere. Increased atmospheric $\mathrm{CO{}_2$ from deforestation amplifies the natural greenhouse
   effect, contributing to global warming and climate change.
 - Additionally, deforestation changes surface albedo (reflectivity), which can have regional climate effects.
 
@@ -1032,11 +1032,11 @@ index. (b) Calculate the $95\%$ confidence interval. (c) State three assumptions
 (a) Lincoln-Petersen index: $N = \frac{M \times C}{R} = \frac{80 \times 100}{16} = 500$ mice.
 
 (b) $95\%$ confidence interval (approximate):
-$\mathrm{'\{'}SE{'\}'} = \sqrt{\frac{MC(M-R)(C-R)}{R^3}} = \sqrt{\frac{80 \times 100 \times 64 \times 84}{16^3}}$
+$\mathrm{SE{} = \sqrt{\frac{MC(M-R)(C-R)}{R^3}} = \sqrt{\frac{80 \times 100 \times 64 \times 84}{16^3}}$
 $= \sqrt{\frac{43008000}{4096}} = \sqrt{10500} = 102.5$
 
-$95\%\;\mathrm{'\{'}CI{'\}'} = N \pm 1.96 \times \mathrm{'\{'}SE{'\}'} = 500 \pm 1.96 \times 102.5 = 500 \pm 201$
-$95\%\;\mathrm{'\{'}CI{'\}'} = (299, 701)$
+$95\%\;\mathrm{CI{} = N \pm 1.96 \times \mathrm{SE{} = 500 \pm 1.96 \times 102.5 = 500 \pm 201$
+$95\%\;\mathrm{CI{} = (299, 701)$
 
 (c) Assumptions:
 1. The marked individuals mix randomly with the unmarked population between sampling occasions.
@@ -1062,8 +1062,8 @@ $95\%\;\mathrm{'\{'}CI{'\}'} = (299, 701)$
 
 **Worked Example: Nitrogen Cycle and Fertiliser Application**
 
-A farmer applies $150\;\mathrm{'\{'}kg/ha{'\}'}$ of ammonium nitrate fertiliser ($\mathrm{'\{'}NH{'\}'}_4\mathrm{'\{'}NO{'\}'}_3$,
-molar mass $= 80\;\mathrm{'\{'}g/mol{'\}'}$) to a wheat field. (a) Calculate the mass of nitrogen applied per
+A farmer applies $150\;\mathrm{kg/ha{}$ of ammonium nitrate fertiliser ($\mathrm{NH{}_4\mathrm{NO{}_3$,
+molar mass $= 80\;\mathrm{g/mol{}$) to a wheat field. (a) Calculate the mass of nitrogen applied per
 hectare. (b) If only $50\%$ of the nitrogen is taken up by the wheat crop, calculate the mass of
 nitrogen lost to the environment. (c) Explain the environmental consequences of nitrogen runoff into
 aquatic ecosystems. (d) Describe the process of denitrification and explain its importance in the
@@ -1072,33 +1072,33 @@ nitrogen cycle.
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{'\{'}NH{'\}'}_4\mathrm{'\{'}NO{'\}'}_3$ contains 2 nitrogen atoms per molecule.
-Molar mass of N $= 14\;\mathrm{'\{'}g/mol{'\}'}$.
-Mass fraction of N in $\mathrm{'\{'}NH{'\}'}_4\mathrm{'\{'}NO{'\}'}_3$: $\frac{28}{80} = 0.35 = 35\%$.
-Nitrogen applied: $150 \times 0.35 = 52.5\;\mathrm{'\{'}kg\;N/ha{'\}'}$.
+(a) $\mathrm{NH{}_4\mathrm{NO{}_3$ contains 2 nitrogen atoms per molecule.
+Molar mass of N $= 14\;\mathrm{g/mol{}$.
+Mass fraction of N in $\mathrm{NH{}_4\mathrm{NO{}_3$: $\frac{28}{80} = 0.35 = 35\%$.
+Nitrogen applied: $150 \times 0.35 = 52.5\;\mathrm{kg\;N/ha{}$.
 
-(b) Nitrogen lost: $52.5 \times 0.50 = 26.25\;\mathrm{'\{'}kg\;N/ha{'\}'}$.
+(b) Nitrogen lost: $52.5 \times 0.50 = 26.25\;\mathrm{kg\;N/ha{}$.
 
 (c) Environmental consequences of nitrogen runoff:
 - **Eutrophication**: excess nitrogen stimulates rapid growth of algae (algal bloom), which blocks light
   and prevents photosynthesis by submerged plants. When algae die, decomposition by bacteria consumes
   dissolved oxygen, creating hypoxic or anoxic conditions that kill fish and other aquatic organisms.
-- **Nitrate pollution of groundwater**: nitrate ($\mathrm{'\{'}NO{'\}'}_3^-$) is highly soluble and can leach into
+- **Nitrate pollution of groundwater**: nitrate ($\mathrm{NO{}_3^-$) is highly soluble and can leach into
   groundwater. High nitrate levels in drinking water cause methemoglobinaemia ("blue baby syndrome") in
   infants, in which nitrate is reduced to nitrite in the gut, converting haemoglobin to methaemoglobin,
   which cannot carry oxygen.
-- **Nitrous oxide ($\mathrm{'\{'}N{'\}'}_2\mathrm{'\{'}O{'\}'}$) emissions**: a potent greenhouse gas ($298\times$ the global
-  warming potential of $\mathrm{'\{'}CO{'\}'}_2$ over 100 years) produced by denitrifying bacteria in waterlogged
+- **Nitrous oxide ($\mathrm{N{}_2\mathrm{O{}$) emissions**: a potent greenhouse gas ($298\times$ the global
+  warming potential of $\mathrm{CO{}_2$ over 100 years) produced by denitrifying bacteria in waterlogged
   soils.
 - **Acidification and biodiversity loss**: nitrogen deposition can acidify soils and freshwater,
   reducing plant and invertebrate diversity.
 
 (d) Denitrification is the process by which denitrifying bacteria (e.g., _Pseudomonas denitrificans_,
-_Paracoccus denitrificans_) convert nitrate ($\mathrm{'\{'}NO{'\}'}_3^-$) through nitrite ($\mathrm{'\{'}NO{'\}'}_2^-$),
-nitric oxide ($\mathrm{'\{'}NO{'\}'}$), and nitrous oxide ($\mathrm{'\{'}N{'\}'}_2\mathrm{'\{'}O{'\}'}$) to nitrogen gas
-($\mathrm{'\{'}N{'\}'}_2$). It occurs under anaerobic conditions (e.g., waterlogged soils, sediments). Denitrification
+_Paracoccus denitrificans_) convert nitrate ($\mathrm{NO{}_3^-$) through nitrite ($\mathrm{NO{}_2^-$),
+nitric oxide ($\mathrm{NO{}$), and nitrous oxide ($\mathrm{N{}_2\mathrm{O{}$) to nitrogen gas
+($\mathrm{N{}_2$). It occurs under anaerobic conditions (e.g., waterlogged soils, sediments). Denitrification
 is important because it returns nitrogen to the atmosphere, completing the nitrogen cycle and preventing
-excessive accumulation of nitrate in soils and water. However, the intermediate $\mathrm{'\{'}N{'\}'}_2\mathrm{'\{'}O{'\}'}$
+excessive accumulation of nitrate in soils and water. However, the intermediate $\mathrm{N{}_2\mathrm{O{}$
 is a greenhouse gas and ozone-depleting substance, making the balance of complete vs incomplete
 denitrification environmentally significant.
 
@@ -1140,10 +1140,10 @@ adaptations, (e) animal adaptations, and (f) vulnerability to climate change.
 
 | Feature | Tropical Rainforest | Tundra |
 |---------|-------------------|--------|
-| **Temperature** | $25$--$28^\circ\mathrm{'\{'}C{'\}'}$ year-round | $-30$ to $10^\circ\mathrm{'\{'}C{'\}'}$; mean $<10^\circ\mathrm{'\{'}C{'\}'}$ |
-| **Precipitation** | $2000$--$10000\;\mathrm{'\{'}mm/year{'\}'}$ | $150$--$250\;\mathrm{'\{'}mm/year{'\}'}$ |
+| **Temperature** | $25$--$28^\circ\mathrm{C{}$ year-round | $-30$ to $10^\circ\mathrm{C{}$; mean $<10^\circ\mathrm{C{}$ |
+| **Precipitation** | $2000$--$10000\;\mathrm{mm/year{}$ | $150$--$250\;\mathrm{mm/year{}$ |
 | **Growing season** | Year-round | $50$--$60$ days |
-| **NPP** | Very high ($\approx 2200\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$) | Very low ($\approx 140\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$) |
+| **NPP** | Very high ($\approx 2200\;\mathrm{g\;C/m^2/year{}$) | Very low ($\approx 140\;\mathrm{g\;C/m^2/year{}$) |
 | **Soil** | Nutrient-poor (rapid decomposition, leaching); laterite soils | Permafrost; thin active layer; waterlogged in summer; low nutrient availability |
 | **Plant adaptations** | Buttress roots, drip tips, thin leaves, epiphytes, climbing plants | Low-growing (cushion plants), hairy leaves, dark pigments, clonal reproduction, shallow roots |
 | **Animal adaptations** | Arboreal locomotion, camouflage, specialised diets (coevolution with specific plants) | Thick fur/feathers, fat deposits, migration, hibernation, seasonal colour change (e.g., arctic hare) |
@@ -1154,7 +1154,7 @@ adaptations, (e) animal adaptations, and (f) vulnerability to climate change.
   fire susceptibility; rising temperatures may exceed thermal tolerances of some species; shifts in
   rainfall patterns disrupt phenology (timing of flowering and fruiting).
 - **Tundra**: warming is occurring $2$--$3\times$ faster than the global average (Arctic amplification);
-  permafrost thaw releases $\mathrm{'\{'}CO{'\}'}_2$ and $\mathrm{'\{'}CH{'\}'}_4$ (positive feedback for warming); treeline
+  permafrost thaw releases $\mathrm{CO{}_2$ and $\mathrm{CH{}_4$ (positive feedback for warming); treeline
   advance (boreal forest encroaching on tundra) reduces habitat for tundra species; loss of sea ice
   affects ice-dependent species (polar bears, seals).
 
@@ -1189,7 +1189,7 @@ $\chi^2 = \frac{(85 - 80)^2}{80} + \frac{(55 - 70)^2}{70} + \frac{(40 - 30)^2}{3
 $= \frac{25}{80} + \frac{225}{70} + \frac{100}{30} + 0$
 $= 0.313 + 3.214 + 3.333 + 0 = 6.860$
 
-(b) $\mathrm{'\{'}df{'\}'} = 4 - 1 = 3$. Critical value at $p = 0.05$ for $3\;\mathrm{'\{'}df{'\}'} = 7.815$.
+(b) $\mathrm{df{} = 4 - 1 = 3$. Critical value at $p = 0.05$ for $3\;\mathrm{df{} = 7.815$.
 
 (c) $\chi^2 = 6.860 < 7.815$. We fail to reject $H_0$ at $p = 0.05$. The difference between observed
 and expected habitat use is not statistically significant at the $5\%$ level. However, the result is
@@ -1219,7 +1219,7 @@ one conservation strategy.
 <summary>Answer 15</summary>
 
 (a) **Coral reefs -- ocean acidification and warming**:
-- Impact: increased atmospheric $\mathrm{'\{'}CO{'\}'}_2$ dissolves in seawater, lowering pH (acidification).
+- Impact: increased atmospheric $\mathrm{CO{}_2$ dissolves in seawater, lowering pH (acidification).
   Rising ocean temperatures cause coral bleaching (loss of symbiotic zooxanthellae).
 - Ecological consequences: acidification reduces the availability of carbonate ions needed for coral
   skeleton formation (calcification), weakening reef structure. Bleaching reduces coral growth and
@@ -1274,14 +1274,14 @@ one conservation strategy.
 
 ### Tropical Rainforest
 
-**Climate**: consistently warm ($25$--$28^\circ\mathrm{'\{'}C{'\}'}$) and wet ($2000$--$10000\;\mathrm{'\{'}mm/year{'\}'}$),
+**Climate**: consistently warm ($25$--$28^\circ\mathrm{C{}$) and wet ($2000$--$10000\;\mathrm{mm/year{}$),
 no dry season.
 
 **Structure**: extremely high biodiversity ($>50\%$ of all terrestrial species). Distinct vertical
 stratification:
-- **Emergent layer** ($40$--$60\;\mathrm{'\{'}m{'\}'}$): tallest trees, exposed to high light and wind.
-- **Canopy** ($20$--$40\;\mathrm{'\{'}m{'\}'}$): continuous layer of foliage, intercepts most light ($>95\%$).
-- **Understorey** ($5$--$20\;\mathrm{'\{'}m{'\}'}$): shade-tolerant plants, limited light ($<2\%$).
+- **Emergent layer** ($40$--$60\;\mathrm{m{}$): tallest trees, exposed to high light and wind.
+- **Canopy** ($20$--$40\;\mathrm{m{}$): continuous layer of foliage, intercepts most light ($>95\%$).
+- **Understorey** ($5$--$20\;\mathrm{m{}$): shade-tolerant plants, limited light ($<2\%$).
 - **Forest floor**: very little light ($<1\%$), rapid decomposition, thin humus layer.
 
 **Nutrient cycling**: most nutrients are stored in the biomass, not the soil. Decomposition is rapid
@@ -1295,8 +1295,8 @@ for pollination by animals at lower levels).
 
 ### Temperate Deciduous Forest
 
-**Climate**: moderate temperatures ($-30$ to $30^\circ\mathrm{'\{'}C{'\}'}$), moderate precipitation
-($750$--$1500\;\mathrm{'\{'}mm/year{'\}'}$), distinct seasons with a growing season of $4$--$6$ months.
+**Climate**: moderate temperatures ($-30$ to $30^\circ\mathrm{C{}$), moderate precipitation
+($750$--$1500\;\mathrm{mm/year{}$), distinct seasons with a growing season of $4$--$6$ months.
 
 **Structure**: moderate biodiversity. Dominant trees: oak, maple, beech, birch. Clear vertical
 stratification (canopy, understorey, shrub layer, herb layer, forest floor).
@@ -1312,10 +1312,10 @@ canopy closes); dormancy and cold hardiness (antifreeze proteins, supercooling).
 
 ### Desert
 
-**Climate**: extreme temperatures ($>50^\circ\mathrm{'\{'}C{'\}'}$ day, $<0^\circ\mathrm{'\{'}C{'\}'}$ night), very low
-precipitation ($<250\;\mathrm{'\{'}mm/year{'\}'}$), high evapotranspiration.
+**Climate**: extreme temperatures ($>50^\circ\mathrm{C{}$ day, $<0^\circ\mathrm{C{}$ night), very low
+precipitation ($<250\;\mathrm{mm/year{}$), high evapotranspiration.
 
-**Productivity**: very low NPP ($<90\;\mathrm{'\{'}g\;C/m^2/year{'\}'}$). Sparse vegetation, large bare areas.
+**Productivity**: very low NPP ($<90\;\mathrm{g\;C/m^2/year{}$). Sparse vegetation, large bare areas.
 
 **Adaptations**: succulence (water storage in fleshy tissues -- cacti store water in parenchyma);
 reduced leaf surface area (spines instead of leaves in cacti; reduces transpiration); CAM photosynthesis
@@ -1325,7 +1325,7 @@ light-coloured surfaces (reflecting heat); nocturnal behaviour in animals (avoid
 
 ### Tundra
 
-**Climate**: very cold ($-30$ to $10^\circ\mathrm{'\{'}C{'\}'}$), low precipitation ($150$--$250\;\mathrm{'\{'}mm/year{'\}'}$),
+**Climate**: very cold ($-30$ to $10^\circ\mathrm{C{}$), low precipitation ($150$--$250\;\mathrm{mm/year{}$),
 permafrost (permanently frozen subsoil), short growing season ($50$--$60$ days), strong winds.
 
 **Structure**: no trees (permafrost prevents deep root growth). Dominated by mosses, lichens, sedges,
@@ -1343,8 +1343,8 @@ reproduction in harsh conditions); antifreeze compounds in cells.
 ### Grassland/Savanna
 
 **Climate**: tropical savanna: warm year-round, distinct wet and dry seasons
-($500$--$1500\;\mathrm{'\{'}mm/year{'\}'}$). Temperate grassland: cold winters, hot summers
-($250$--$750\;\mathrm{'\{'}mm/year{'\}'}$).
+($500$--$1500\;\mathrm{mm/year{}$). Temperate grassland: cold winters, hot summers
+($250$--$750\;\mathrm{mm/year{}$).
 
 **Structure**: dominated by grasses (C4 grasses in tropical savanna, C3 in temperate). Scattered trees
 in savanna (baobab, acacia). Deep, fertile soils (mollisol, chernozem) with high organic content from
@@ -1354,9 +1354,9 @@ grass root systems.
 level). Fire prevents tree establishment, maintaining grassland. Fire also recycles nutrients
 (ash returns minerals to the soil).
 
-**Adaptations**: deep root systems ($2$--$3\;\mathrm{'\{'}m{'\}'}$); growth from basal meristems (grazing-resistant);
+**Adaptations**: deep root systems ($2$--$3\;\mathrm{m{}$); growth from basal meristems (grazing-resistant);
 silica deposits in leaves (deter herbivory); C4 photosynthesis (tropical grasses: efficient at high
-temperatures and low $\mathrm{'\{'}CO{'\}'}_2$); tussock growth form (protects meristems from fire and grazing);
+temperatures and low $\mathrm{CO{}_2$); tussock growth form (protects meristems from fire and grazing);
 drought deciduousness (trees shed leaves during dry season).
 
 ### Aquatic Biomes (Brief)

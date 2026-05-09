@@ -123,7 +123,7 @@ $$E[X] = \sum_{x} x\, p_X(x)$$
 
 provided the sum converges absolutely.
 
-**Definition (Variance).** $\mathrm{'\{'}Var{'\}'}(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where $\mu = E[X]$.
+**Definition (Variance).** $\mathrm{Var{}(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where $\mu = E[X]$.
 
 **Proposition 2.2 (Linearity of Expectation).** $E[aX + bY] = aE[X] + bE[Y]$ for any random variables $X$, $Y$ and constants $a$, $b$.
 
@@ -150,7 +150,7 @@ $$F_X(x) = \int_{-\infty}^{x} f_X(t)\, dt$$
 
 **Discrete distributions:**
 
-| Distribution | PMF | $E[X]$ | $\mathrm{'\{'}Var{'\}'}(X)$ |
+| Distribution | PMF | $E[X]$ | $\mathrm{Var{}(X)$ |
 |---|---|---|---|
 | Bernoulli$(p)$ | $p^x(1-p)^{1-x}$, $x \in \{0,1\}$ | $p$ | $p(1-p)$ |
 | Binomial$(n,p)$ | $\binom{n}{x}p^x(1-p)^{n-x}$ | $np$ | $np(1-p)$ |
@@ -159,7 +159,7 @@ $$F_X(x) = \int_{-\infty}^{x} f_X(t)\, dt$$
 
 **Continuous distributions:**
 
-| Distribution | PDF | $E[X]$ | $\mathrm{'\{'}Var{'\}'}(X)$ |
+| Distribution | PDF | $E[X]$ | $\mathrm{Var{}(X)$ |
 |---|---|---|---|
 | Uniform$(a,b)$ | $1/(b-a)$ on $[a,b]$ | $(a+b)/2$ | $(b-a)^2/12$ |
 | Exponential$(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $1/\lambda$ | $1/\lambda^2$ |
@@ -187,16 +187,16 @@ $$M_X(t) = E[e^{tX}] = \exp\left(\mu t + \frac{\sigma^2 t^2}{2}\right)$$
 
 ### 2.7 Worked Examples
 
-**Problem.** Let $X \sim \mathrm{'\{'}Poisson{'\}'}(3)$ and $Y \sim \mathrm{'\{'}Poisson{'\}'}(5)$ be independent. Find the distribution of $X + Y$.
+**Problem.** Let $X \sim \mathrm{Poisson{}(3)$ and $Y \sim \mathrm{Poisson{}(5)$ be independent. Find the distribution of $X + Y$.
 
 <details>
 <summary>Solution</summary>
 
-The MGF of $X \sim \mathrm{'\{'}Poisson{'\}'}(\lambda)$ is $M_X(t) = e^{\lambda(e^t - 1)}$.
+The MGF of $X \sim \mathrm{Poisson{}(\lambda)$ is $M_X(t) = e^{\lambda(e^t - 1)}$.
 
 $M_{X+Y}(t) = M_X(t) \cdot M_Y(t) = e^{3(e^t - 1)} \cdot e^{5(e^t - 1)} = e^{8(e^t - 1)}$.
 
-This is the MGF of $\mathrm{'\{'}Poisson{'\}'}(8)$. Since the MGF uniquely determines the distribution, $X + Y \sim \mathrm{'\{'}Poisson{'\}'}(8)$.
+This is the MGF of $\mathrm{Poisson{}(8)$. Since the MGF uniquely determines the distribution, $X + Y \sim \mathrm{Poisson{}(8)$.
 
 $\blacksquare$
 
@@ -205,11 +205,11 @@ $\blacksquare$
 <details>
 <summary>Worked Example: Minimum of Exponential Random Variables</summary>
 
-*Solution.* Let $X_1, \ldots, X_n$ be independent with $X_i \sim \mathrm{'\{'}Exp{'\}'}(\lambda_i)$. Find the distribution of $M = \min(X_1, \ldots, X_n)$.
+*Solution.* Let $X_1, \ldots, X_n$ be independent with $X_i \sim \mathrm{Exp{}(\lambda_i)$. Find the distribution of $M = \min(X_1, \ldots, X_n)$.
 
 $P(M > t) = P(X_1 > t, \ldots, X_n > t) = \prod_{i=1}^{n} P(X_i > t) = \prod_{i=1}^{n} e^{-\lambda_i t} = e^{-(\lambda_1 + \cdots + \lambda_n)t}$
 
-So $P(M \leq t) = 1 - e^{-\lambda t}$ where $\lambda = \sum_{i=1}^{n} \lambda_i$. This means $M \sim \mathrm{'\{'}Exp{'\}'}(\lambda)$. $\blacksquare$
+So $P(M \leq t) = 1 - e^{-\lambda t}$ where $\lambda = \sum_{i=1}^{n} \lambda_i$. This means $M \sim \mathrm{Exp{}(\lambda)$. $\blacksquare$
 
 </details>
 
@@ -229,13 +229,13 @@ $$F_{X,Y}(x, y) = \int_{-\infty}^{x}\int_{-\infty}^{y} f_{X,Y}(u, v)\, du\, dv$$
 
 **Definition.** The **covariance** of $X$ and $Y$ is
 
-$$\mathrm{'\{'}Cov{'\}'}(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$$
+$$\mathrm{Cov{}(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$$
 
-**Proposition 2.6.** $\mathrm{'\{'}Cov{'\}'}(X, Y) = \mathrm{'\{'}Cov{'\}'}(Y, X)$ and $\mathrm{'\{'}Cov{'\}'}(aX + b, cY + d) = ac\,\mathrm{'\{'}Cov{'\}'}(X, Y)$.
+**Proposition 2.6.** $\mathrm{Cov{}(X, Y) = \mathrm{Cov{}(Y, X)$ and $\mathrm{Cov{}(aX + b, cY + d) = ac\,\mathrm{Cov{}(X, Y)$.
 
 **Definition.** The **correlation coefficient** is
 
-$$\rho(X, Y) = \frac{\mathrm{'\{'}Cov{'\}'}(X, Y)}{\sqrt{\mathrm{'\{'}Var{'\}'}(X)\,\mathrm{'\{'}Var{'\}'}(Y)}}$$
+$$\rho(X, Y) = \frac{\mathrm{Cov{}(X, Y)}{\sqrt{\mathrm{Var{}(X)\,\mathrm{Var{}(Y)}}$$
 
 **Theorem 2.7 (Cauchy--Schwarz for Random Variables).** $|\rho(X, Y)| \leq 1$, with equality if and only if $Y = aX + b$ almost surely for some $a, b$.
 
@@ -245,12 +245,12 @@ $$\rho(X, Y) = \frac{\mathrm{'\{'}Cov{'\}'}(X, Y)}{\sqrt{\mathrm{'\{'}Var{'\}'}(
 
 For continuous random variables, this is equivalent to $f_{X,Y}(x, y) = f_X(x)\, f_Y(y)$.
 
-**Proposition 2.8.** If $X$ and $Y$ are independent, then $\mathrm{'\{'}Cov{'\}'}(X, Y) = 0$. The converse is false.
+**Proposition 2.8.** If $X$ and $Y$ are independent, then $\mathrm{Cov{}(X, Y) = 0$. The converse is false.
 
 <details>
 <summary>Worked Example: Uncorrelated but Dependent</summary>
 
-*Solution.* Let $X \sim N(0, 1)$ and $Y = X^2$. Then $\mathrm{'\{'}Cov{'\}'}(X, Y) = E[X^3] - E[X]E[X^2] = 0 - 0 \cdot 1 = 0$ (since the third moment of a standard normal is 0).
+*Solution.* Let $X \sim N(0, 1)$ and $Y = X^2$. Then $\mathrm{Cov{}(X, Y) = E[X^3] - E[X]E[X^2] = 0 - 0 \cdot 1 = 0$ (since the third moment of a standard normal is 0).
 
 But $Y$ is completely determined by $X$, so they are not independent. $\blacksquare$
 
@@ -260,13 +260,13 @@ But $Y$ is completely determined by $X$, so they are not independent. $\blacksqu
 
 ### 4.1 The Law of Large Numbers
 
-**Theorem 4.1 (Weak Law of Large Numbers).** Let $X_1, X_2, \ldots$ be i.i.d. with $E[X_i] = \mu$ and $\mathrm{'\{'}Var{'\}'}(X_i) = \sigma^2 < \infty$. Then for every $\varepsilon > 0$:
+**Theorem 4.1 (Weak Law of Large Numbers).** Let $X_1, X_2, \ldots$ be i.i.d. with $E[X_i] = \mu$ and $\mathrm{Var{}(X_i) = \sigma^2 < \infty$. Then for every $\varepsilon > 0$:
 
 $$\lim_{n \to \infty} P\left(\left|\frac{1}{n}\sum_{i=1}^{n} X_i - \mu\right| \geq \varepsilon\right) = 0$$
 
-*Proof.* Let $S_n = \frac{1}{n}\sum_{i=1}^{n} X_i$. Then $E[S_n] = \mu$ and $\mathrm{'\{'}Var{'\}'}(S_n) = \sigma^2/n$. By Chebyshev's inequality:
+*Proof.* Let $S_n = \frac{1}{n}\sum_{i=1}^{n} X_i$. Then $E[S_n] = \mu$ and $\mathrm{Var{}(S_n) = \sigma^2/n$. By Chebyshev's inequality:
 
-$$P(|S_n - \mu| \geq \varepsilon) \leq \frac{\mathrm{'\{'}Var{'\}'}(S_n)}{\varepsilon^2} = \frac{\sigma^2}{n\varepsilon^2} \to 0 \quad \mathrm{'\{'}as\ {'\}'} n \to \infty$$
+$$P(|S_n - \mu| \geq \varepsilon) \leq \frac{\mathrm{Var{}(S_n)}{\varepsilon^2} = \frac{\sigma^2}{n\varepsilon^2} \to 0 \quad \mathrm{as\ {} n \to \infty$$
 
 $\blacksquare$
 
@@ -278,7 +278,7 @@ The sample mean converges to the population mean almost surely.
 
 ### 4.2 The Central Limit Theorem
 
-**Theorem 4.3 (Central Limit Theorem).** Let $X_1, X_2, \ldots$ be i.i.d. with $E[X_i] = \mu$ and $\mathrm{'\{'}Var{'\}'}(X_i) = \sigma^2 \in (0, \infty)$. Then
+**Theorem 4.3 (Central Limit Theorem).** Let $X_1, X_2, \ldots$ be i.i.d. with $E[X_i] = \mu$ and $\mathrm{Var{}(X_i) = \sigma^2 \in (0, \infty)$. Then
 
 $$\frac{S_n - n\mu}{\sigma\sqrt{n}} \xrightarrow{d} N(0, 1)$$
 
@@ -311,7 +311,7 @@ This is the characteristic function of $N(0, 1)$. By Levy's continuity theorem, 
 <details>
 <summary>Solution</summary>
 
-Let $X_i$ be the value of the $i$-th roll. Then $E[X_i] = 7/2 = 3.5$ and $\mathrm{'\{'}Var{'\}'}(X_i) = 35/12 \approx 2.917$.
+Let $X_i$ be the value of the $i$-th roll. Then $E[X_i] = 7/2 = 3.5$ and $\mathrm{Var{}(X_i) = 35/12 \approx 2.917$.
 
 $S_{100} = \sum_{i=1}^{100} X_i$. By the CLT:
 

@@ -39,7 +39,7 @@ are computed lazily on demand.
 The expression `co_yield expr` is defined by the standard as [N4950 §8.5.5]:
 
 $$
-\mathrm{'\{'}co\_yield{'\}'} \; \mathrm{'\{'}expr{'\}'} \;\equiv\; \mathrm{'\{'}co\_await{'\}'} \; \mathrm{'\{'}promise.yield\_value{'\}'}(\mathrm{'\{'}expr{'\}'})
+\mathrm{co\_yield{} \; \mathrm{expr{} \;\equiv\; \mathrm{co\_await{} \; \mathrm{promise.yield\_value{}(\mathrm{expr{})
 $$
 
 This means that `co_yield` requires the promise type to have a `yield_value` method that returns an

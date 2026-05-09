@@ -244,13 +244,13 @@ This produces a **racemic mixture** (50:50 $(R)$ and $(S)$), which is **opticall
 
 **Question:** Name the following compounds using IUPAC nomenclature:
 
-(a) $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}CH{'\}'}_3)\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}Cl{'\}'})\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3$
+(a) $\mathrm{CH{}_3\mathrm{CH{}(\mathrm{CH{}_3)\mathrm{CH{}_2\mathrm{CH{}(\mathrm{Cl{})\mathrm{CH{}_2\mathrm{CH{}_3$
 
-(b) $\mathrm{'\{'}BrCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3$
+(b) $\mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}(\mathrm{OH{})\mathrm{CH{}_2\mathrm{CH{}_3$
 
-(c) $\mathrm{'\{'}HOOC{'\}'}\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}NH{'\}'}_2)\mathrm{'\{'}COOH{'\}'}$
+(c) $\mathrm{HOOC{}\mathrm{CH{}_2\mathrm{CH{}(\mathrm{NH{}_2)\mathrm{COOH{}$
 
-(d) $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CHO{'\}'}$
+(d) $\mathrm{CH{}_3\mathrm{COCH{}_2\mathrm{CH{}_2\mathrm{CHO{}$
 
 **Solution:**
 
@@ -272,7 +272,7 @@ Name: **4-oxopentanal** (1 mark).
 
 #### UT-5: Functional Group Identification
 
-**Question:** A compound $\mathrm{'\{'}C{'\}'}_4\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}$ gives the following test results:
+**Question:** A compound $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}$ gives the following test results:
 
 - Reacts with 2,4-DNP to give an orange precipitate
 - Gives a silver mirror with Tollens' reagent
@@ -288,7 +288,7 @@ The positive Tollens' test (silver mirror) indicates an aldehyde (not a ketone) 
 
 The failure to decolourise bromine water confirms there is no C=C double bond (1 mark).
 
-The molecular formula $\mathrm{'\{'}C{'\}'}_4\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}$ with an aldehyde group: possible structures are butanal ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CHO{'\}'}$) and 2-methylpropanal ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}CH{'\}'}_3)\mathrm{'\{'}CHO{'\}'}$). Both are consistent with the test results.
+The molecular formula $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}$ with an aldehyde group: possible structures are butanal ($\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CHO{}$) and 2-methylpropanal ($\mathrm{CH{}_3\mathrm{CH{}(\mathrm{CH{}_3)\mathrm{CHO{}$). Both are consistent with the test results.
 
 #### IT-4: Multi-Step Synthesis with Stereochemistry
 
@@ -296,9 +296,9 @@ The molecular formula $\mathrm{'\{'}C{'\}'}_4\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}
 
 **Solution:**
 
-Step 1: Convert $(R)$-butan-2-ol to a leaving group. Use $\mathrm{'\{'}SOCl{'\}'}_2$ (thionyl chloride) with pyridine to give $(S)$-2-chlorobutane via SN2 with Walden inversion (1 mark).
+Step 1: Convert $(R)$-butan-2-ol to a leaving group. Use $\mathrm{SOCl{}_2$ (thionyl chloride) with pyridine to give $(S)$-2-chlorobutane via SN2 with Walden inversion (1 mark).
 
-Step 2: Nucleophilic substitution with ammonia. Excess $\mathrm{'\{'}NH{'\}'}_3$ in ethanol gives $(R)$-butan-2-amine via SN2 with a second Walden inversion (1 mark).
+Step 2: Nucleophilic substitution with ammonia. Excess $\mathrm{NH{}_3$ in ethanol gives $(R)$-butan-2-amine via SN2 with a second Walden inversion (1 mark).
 
 Overall: $(R) \xrightarrow{\text{'\{'}SN2{'\}'}} (S) \xrightarrow{\text{'\{'}SN2{'\}'}} (R)$
 
@@ -306,8 +306,8 @@ This gives the wrong enantiomer. To obtain $(S)$-butan-2-amine from $(R)$-butan-
 
 **Correct route:** Use an SN1 reaction for step 1 (to give a racemic mixture) or use a two-step sequence with one SN2 step:
 
-Step 1: Oxidise $(R)$-butan-2-ol to butan-2-one (using acidified $\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$). This destroys the chiral centre (1 mark).
+Step 1: Oxidise $(R)$-butan-2-ol to butan-2-one (using acidified $\mathrm{K{}_2\mathrm{Cr{}_2\mathrm{O{}_7$). This destroys the chiral centre (1 mark).
 
-Step 2: Reductive amination: butan-2-one + $\mathrm{'\{'}NH{'\}'}_3$ + $\mathrm{'\{'}NaBH{'\}'}_3\mathrm{'\{'}CN{'\}'}$ gives racemic butan-2-amine (1 mark).
+Step 2: Reductive amination: butan-2-one + $\mathrm{NH{}_3$ + $\mathrm{NaBH{}_3\mathrm{CN{}$ gives racemic butan-2-amine (1 mark).
 
 This produces a racemic mixture, not a single enantiomer. To obtain a single enantiomer, a chiral resolving agent or enzymatic resolution would be needed. This illustrates the challenge of stereospecific synthesis with amines.

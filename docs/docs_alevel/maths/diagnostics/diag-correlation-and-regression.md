@@ -318,11 +318,11 @@ The number of revision hours $H$ for a randomly selected student follows the dis
 
 $$P(H = h) = \begin{cases} 0.1 & h = 1 \\ 0.2 & h = 2 \\ 0.3 & h = 3 \\ 0.25 & h = 4 \\ 0.15 & h = 5 \end{cases}$$
 
-**(a)** Find $\mathrm{'\{'}E{'\}'}(H)$ and $\mathrm{'\{'}Var{'\}'}(H)$.
+**(a)** Find $\mathrm{E{}(H)$ and $\mathrm{Var{}(H)$.
 
-**(b)** Find $\mathrm{'\{'}E{'\}'}(M)$ using the regression line and the distribution of $H$.
+**(b)** Find $\mathrm{E{}(M)$ using the regression line and the distribution of $H$.
 
-**(c)** The variance of the actual exam marks around the regression line is $\sigma^2 = 25$. Find $\mathrm{'\{'}Var{'\}'}(M)$.
+**(c)** The variance of the actual exam marks around the regression line is $\sigma^2 = 25$. Find $\mathrm{Var{}(M)$.
 
 **(d)** A student studies for exactly 3 hours. The regression line predicts $M = 35$. Explain why the actual exam mark is unlikely to be exactly 35, and calculate the probability that a student who revises for 3 hours scores above 40, assuming the residuals are normally distributed.
 
@@ -332,19 +332,19 @@ $$P(H = h) = \begin{cases} 0.1 & h = 1 \\ 0.2 & h = 2 \\ 0.3 & h = 3 \\ 0.25 & h
 
 **(a)**
 
-$$\mathrm{'\{'}E{'\}'}(H) = \sum h \cdot P(H = h) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.25) + 5(0.15)$$
+$$\mathrm{E{}(H) = \sum h \cdot P(H = h) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.25) + 5(0.15)$$
 
 $$= 0.1 + 0.4 + 0.9 + 1.0 + 0.75 = 3.15$$
 
-$$\mathrm{'\{'}E{'\}'}(H^2) = 1(0.1) + 4(0.2) + 9(0.3) + 16(0.25) + 25(0.15)$$
+$$\mathrm{E{}(H^2) = 1(0.1) + 4(0.2) + 9(0.3) + 16(0.25) + 25(0.15)$$
 
 $$= 0.1 + 0.8 + 2.7 + 4.0 + 3.75 = 11.35$$
 
-$$\mathrm{'\{'}Var{'\}'}(H) = \mathrm{'\{'}E{'\}'}(H^2) - [\mathrm{'\{'}E{'\}'}(H)]^2 = 11.35 - 3.15^2 = 11.35 - 9.9225 = 1.4275$$
+$$\mathrm{Var{}(H) = \mathrm{E{}(H^2) - [\mathrm{E{}(H)]^2 = 11.35 - 3.15^2 = 11.35 - 9.9225 = 1.4275$$
 
 **(b)** Using the linearity of expectation:
 
-$$\mathrm{'\{'}E{'\}'}(M) = \mathrm{'\{'}E{'\}'}(5H + 20) = 5\mathrm{'\{'}E{'\}'}(H) + 20 = 5(3.15) + 20 = 15.75 + 20 = 35.75$$
+$$\mathrm{E{}(M) = \mathrm{E{}(5H + 20) = 5\mathrm{E{}(H) + 20 = 5(3.15) + 20 = 15.75 + 20 = 35.75$$
 
 Alternatively, using the law of total expectation: the predicted mark for each value of $H$ is $5h + 20$, and we average these predictions weighted by the probability of each $h$. This gives the same result.
 
@@ -352,17 +352,17 @@ Alternatively, using the law of total expectation: the predicted mark for each v
 1. Variance due to the variation in $H$ across students.
 2. Variance due to the scatter around the regression line.
 
-$$\mathrm{'\{'}Var{'\}'}(M) = \mathrm{'\{'}Var{'\}'}(5H + 20 + \varepsilon) = \mathrm{'\{'}Var{'\}'}(5H) + \mathrm{'\{'}Var{'\}'}(\varepsilon)$$
+$$\mathrm{Var{}(M) = \mathrm{Var{}(5H + 20 + \varepsilon) = \mathrm{Var{}(5H) + \mathrm{Var{}(\varepsilon)$$
 
 where $\varepsilon$ represents the random scatter (residuals), assumed independent of $H$.
 
-$$\mathrm{'\{'}Var{'\}'}(5H) = 5^2 \mathrm{'\{'}Var{'\}'}(H) = 25 \times 1.4275 = 35.6875$$
+$$\mathrm{Var{}(5H) = 5^2 \mathrm{Var{}(H) = 25 \times 1.4275 = 35.6875$$
 
-$$\mathrm{'\{'}Var{'\}'}(\varepsilon) = \sigma^2 = 25$$
+$$\mathrm{Var{}(\varepsilon) = \sigma^2 = 25$$
 
-$$\mathrm{'\{'}Var{'\}'}(M) = 35.6875 + 25 = 60.6875$$
+$$\mathrm{Var{}(M) = 35.6875 + 25 = 60.6875$$
 
-$$\mathrm{'\{'}SD{'\}'}(M) = \sqrt{60.6875} \approx 7.79$$
+$$\mathrm{SD{}(M) = \sqrt{60.6875} \approx 7.79$$
 
 **(d)** The regression line gives the **expected** (mean) exam mark for a given number of revision hours. Individual students will score above or below this prediction due to other factors not captured by the model (natural ability, exam difficulty, etc.). The residual for a student who revises 3 hours is the difference between their actual mark and the predicted mark of 35.
 

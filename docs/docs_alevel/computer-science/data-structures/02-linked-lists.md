@@ -720,7 +720,7 @@ is stored.
 <details>
 <summary>Answer</summary>
 
-Node size: $4 \mathrm{'\{'} (data){'\}'} + 8 \mathrm{'\{'} (pointer){'\}'} = 12$ bytes.
+Node size: $4 \mathrm{ (data){} + 8 \mathrm{ (pointer){} = 12$ bytes.
 
 Total memory for 50 nodes: $50 \times 12 = 600$ bytes.
 

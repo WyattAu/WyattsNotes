@@ -226,8 +226,8 @@ def a_star(graph, source, target, heuristic):
 ```
 
 **Admissibility:** The heuristic $h(v)$ must satisfy
-$h(v) \le \mathrm{'\{'}actual distance from {'\}'} v
-\mathrm{'\{'} to target{'\}'}$. Common heuristics:
+$h(v) \le \mathrm{actual distance from {} v
+\mathrm{ to target{}$. Common heuristics:
 
 | Problem              | Heuristic                            | Admissible?    |
 | -------------------- | ------------------------------------ | -------------- |

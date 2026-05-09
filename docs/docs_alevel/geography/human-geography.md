@@ -258,7 +258,7 @@ businesses.
 Country A has a crude birth rate of $22$ per $1000$, a crude death rate of $8$ per $1000$, and a
 population of $50$ million. Calculate the natural increase rate and the natural increase per year.
 
-Natural increase rate $= \mathrm{'\{'}CBR{'\}'} - \mathrm{'\{'}CDR{'\}'} = 22 - 8 = 14$ per $1000$, or $1.4\%$ per year.
+Natural increase rate $= \mathrm{CBR{} - \mathrm{CDR{} = 22 - 8 = 14$ per $1000$, or $1.4\%$ per year.
 
 Natural increase per year $= 50000000 \times \frac{14}{1000} = 700000$ people.
 

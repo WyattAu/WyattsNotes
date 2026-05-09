@@ -235,11 +235,11 @@ Note that $3t^2 - 12t + 9 = 3(t-1)(t-3)$ and $t^3 - 6t^2 + 9t = t(t-3)^2$.
 
 $$W = \frac{1}{2}\int_0^4 3(t-1)(t-3) \cdot t(t-3)^2\,dt = \frac{3}{2}\int_0^4 t(t-1)(t-3)^3\,dt$$
 
-Alternatively, use the work-energy theorem directly: $W = \Delta\mathrm{'\{'}KE{'\}'}$.
+Alternatively, use the work-energy theorem directly: $W = \Delta\mathrm{KE{}$.
 
 $v(0) = 0$ and $v(4) = \frac{4}{2}(1)^2 = 2$ m/s.
 
-$$\Delta\mathrm{'\{'}KE{'\}'} = \frac{1}{2}(2)(2^2) - 0 = 4 \text{'\{'} J{'\}'}$$
+$$\Delta\mathrm{KE{} = \frac{1}{2}(2)(2^2) - 0 = 4 \text{'\{'} J{'\}'}$$
 
 Therefore $W = 4$ J, consistent with the work-energy theorem.
 

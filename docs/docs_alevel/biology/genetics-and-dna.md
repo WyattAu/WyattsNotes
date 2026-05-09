@@ -42,7 +42,7 @@ per turn.
 
 DNA replication is **semi-conservative**: each new DNA molecule consists of one original (parent)
 strand and one newly synthesised strand. This was demonstrated by the Meselson-Stahl experiment
-(1958) using $^{15}\mathrm{'\{'}N{'\}'}$ and $^{14}\mathrm{'\{'}N{'\}'}$ isotopes.
+(1958) using $^{15}\mathrm{N{}$ and $^{14}\mathrm{N{}$ isotopes.
 
 **Stages:**
 
@@ -68,7 +68,7 @@ approximately $10^{-9}$ per base per replication.
 
 :::warning
 Common Pitfall DNA polymerase can only add nucleotides to the $3'$ end of a growing
-strand. It cannot initiate synthesis de novo -- it requires a pre-existing $3'-\mathrm{'\{'}OH{'\}'}$ group,
+strand. It cannot initiate synthesis de novo -- it requires a pre-existing $3'-\mathrm{OH{}$ group,
 which is provided by the RNA primer. Students often forget to mention primase and primers when
 describing replication.
 :::
@@ -238,7 +238,7 @@ for the dominant allele, lowercase for the recessive allele.
 | $T$ | $TT$ | $Tt$ |
 | $t$ | $Tt$ | $tt$ |
 
-Genotypic ratio: $1\ TT : 2\ Tt : 1\ tt$. Phenotypic ratio: $3\ \mathrm{'\{'}tall{'\}'} : 1\ \mathrm{'\{'}dwarf{'\}'}$.
+Genotypic ratio: $1\ TT : 2\ Tt : 1\ tt$. Phenotypic ratio: $3\ \mathrm{tall{} : 1\ \mathrm{dwarf{}$.
 
 **Test cross**: crossing an individual of unknown genotype (showing the dominant phenotype) with a
 homozygous recessive individual. If any offspring show the recessive phenotype, the unknown parent
@@ -330,7 +330,7 @@ involve changes to the DNA nucleotide sequence.
 
 Epigenetic modifications alter the accessibility of DNA to transcription machinery:
 
-- **DNA methylation**: methyl groups ($-\mathrm{'\{'}CH_3{'\}'}$) are added to cytosine bases (specifically at
+- **DNA methylation**: methyl groups ($-\mathrm{CH_3{}$) are added to cytosine bases (specifically at
   CpG islands near gene promoters) by DNA methyltransferases. Methylation typically **represses**
   transcription by preventing transcription factor binding or recruiting repressive proteins.
 - **Histone modification**: histone proteins around which DNA is wound can be modified by
@@ -365,18 +365,18 @@ PCR is a technique for amplifying a specific DNA sequence in vitro. It requires:
 2. **Primers**: short, single-stranded oligonucleotides (typically 18--25 bases) complementary to the
    sequences flanking the target region. One forward primer and one reverse primer.
 3. **Taq DNA polymerase**: a heat-stable DNA polymerase from the bacterium _Thermus aquaticus_ (optimum
-   temperature $\approx 72\ ^\circ\mathrm{'\{'}C{'\}'}$), which does not denature at the high temperatures used
+   temperature $\approx 72\ ^\circ\mathrm{C{}$), which does not denature at the high temperatures used
    in the cycle.
 4. **Free nucleotides** (dNTPs): dATP, dTTP, dCTP, dGTP.
 5. **Buffer** with $\mathrm{Mg^{2+}}$ ions (co-factor for Taq polymerase).
 
 **The PCR cycle** (repeated 25--35 times):
 
-1. **Denaturation** ($95\ ^\circ\mathrm{'\{'}C{'\}'}$, 30 s): the double-stranded DNA template is heated to
+1. **Denaturation** ($95\ ^\circ\mathrm{C{}$, 30 s): the double-stranded DNA template is heated to
    separate the strands.
-2. **Annealing** ($55$--$65\ ^\circ\mathrm{'\{'}C{'\}'}$, 30 s): the temperature is lowered to allow primers to
+2. **Annealing** ($55$--$65\ ^\circ\mathrm{C{}$, 30 s): the temperature is lowered to allow primers to
    bind (anneal) to their complementary sequences on the template strands by hydrogen bonding.
-3. **Extension** ($72\ ^\circ\mathrm{'\{'}C{'\}'}$, 30--60 s): Taq polymerase extends the primers by adding
+3. **Extension** ($72\ ^\circ\mathrm{C{}$, 30--60 s): Taq polymerase extends the primers by adding
    nucleotides to the $3'$ end, synthesising new DNA strands.
 
 **Exponential amplification**: after $n$ cycles, the number of copies of the target sequence is
@@ -407,7 +407,7 @@ molecular mass.
 ### 7.3 DNA Sequencing
 
 **Sanger sequencing** (chain-termination method): the DNA template is copied using modified nucleotides
-(dideoxynucleotides, ddNTPs) that lack the $3'-\mathrm{'\{'}OH{'\}'}$ group necessary for chain elongation. When a
+(dideoxynucleotides, ddNTPs) that lack the $3'-\mathrm{OH{}$ group necessary for chain elongation. When a
 ddNTP is incorporated, synthesis terminates. By running four separate reactions, each with a different
 ddNTP (A, T, C, G) labelled with a fluorescent dye, and separating the resulting fragments by length,
 the sequence can be read directly from the electropherogram.
@@ -561,7 +561,7 @@ point mutations.
 
 ### 9.3 Mutagenic Agents and Their Mechanisms
 
-**UV radiation** (wavelength $< 320\ \mathrm{'\{'}nm{'\}'}$): causes thymine dimers by forming covalent bonds
+**UV radiation** (wavelength $< 320\ \mathrm{nm{}$): causes thymine dimers by forming covalent bonds
 between adjacent thymine bases on the same DNA strand. This distorts the helix and blocks replication.
 Repair mechanism: nucleotide excision repair (NER) -- the damaged section is cut out by endonucleases,
 DNA polymerase fills the gap, and DNA ligase seals it.
@@ -647,8 +647,8 @@ DNA replication. Describe the expected results for conservative, semi-conservati
 dispersive models after one and two generations.
 
 **Answer.** Meselson and Stahl grew _E. coli_ in a medium containing heavy nitrogen
-($^{15}\mathrm{'\{'}N{'\}'}$), so all DNA was "heavy." They then transferred the bacteria to a medium with
-light nitrogen ($^{14}\mathrm{'\{'}N{'\}'}$) and allowed one round of replication. After extraction and
+($^{15}\mathrm{N{}$), so all DNA was "heavy." They then transferred the bacteria to a medium with
+light nitrogen ($^{14}\mathrm{N{}$) and allowed one round of replication. After extraction and
 density gradient centrifugation, all DNA formed a single band at intermediate density. After a
 second round of replication, two bands appeared: one at intermediate density and one at light
 density.
@@ -747,7 +747,7 @@ DNA polymerase unable to synthesise the lagging strand continuously?
 replication fork. DNA polymerase synthesises new DNA strands by adding complementary nucleotides to
 the $3'$ end of a growing strand, catalysing phosphodiester bond formation. It can only synthesise
 in the $5' \to 3'$ direction. Primase synthesises short RNA primers complementary to the DNA
-template, providing the $3'-\mathrm{'\{'}OH{'\}'}$ group that DNA polymerase requires to initiate synthesis.
+template, providing the $3'-\mathrm{OH{}$ group that DNA polymerase requires to initiate synthesis.
 DNA ligase joins Okazaki fragments on the lagging strand by forming phosphodiester bonds between
 adjacent fragments. DNA polymerase cannot synthesise the lagging strand continuously because it can
 only add nucleotides in the $5' \to 3'$ direction, but the lagging strand template is oriented
@@ -794,7 +794,7 @@ Recombinant phenotypes: Vestigial grey (20) + Normal ebony (22) $= 42$.
 
 Recombination frequency $= \frac{42}{1000} \times 100\% = 4.2\%$.
 
-Map distance $= 4.2\ \mathrm{'\{'}cM{'\}'}$.
+Map distance $= 4.2\ \mathrm{cM{}$.
 
 The genes are 4.2 centiMorgans apart on the same chromosome, which is very close -- they are tightly
 linked and crossing over between them is rare.
@@ -811,7 +811,7 @@ why the actual number of copies may be lower than the theoretical maximum.
 
 **Answer.** Theoretical copies after $n$ cycles $= N_0 \times 2^n = 10 \times 2^{30} = 10 \times 1073741824 = 1.07 \times 10^{10}$ copies.
 
-Total time $= 30 \times 90\ \mathrm{'\{'}s{'\}'} = 2700\ \mathrm{'\{'}s{'\}'} = 45\ \mathrm{'\{'}minutes{'\}'}$.
+Total time $= 30 \times 90\ \mathrm{s{} = 2700\ \mathrm{s{} = 45\ \mathrm{minutes{}$.
 
 In practice, the actual number may be lower because: (1) the reaction efficiency is rarely 100% --
 primers may not anneal perfectly, Taq polymerase may occasionally dissociate, or the template may
@@ -964,7 +964,7 @@ In eukaryotes, the primary transcript (pre-mRNA) undergoes three modifications:
 
 ### 13.1 DNA Methylation
 
-DNA methylation involves the addition of a methyl group ($\mathrm{'\{'}-CH_3{'\}'}$) to the 5-carbon of cytosine bases, forming **5-methylcytosine** ($5\mathrm{'\{'}mC{'\}'}$). This is catalysed by **DNA methyltransferases** and occurs primarily at **CpG dinucleotides** (cytosine followed by guanine).
+DNA methylation involves the addition of a methyl group ($\mathrm{-CH_3{}$) to the 5-carbon of cytosine bases, forming **5-methylcytosine** ($5\mathrm{mC{}$). This is catalysed by **DNA methyltransferases** and occurs primarily at **CpG dinucleotides** (cytosine followed by guanine).
 
 - **Hypermethylation** of gene promoter regions generally **silences** gene expression by preventing transcription factors from binding.
 - **Hypomethylation** generally **activates** gene expression.
@@ -982,7 +982,7 @@ Histones are proteins around which DNA is wrapped to form nucleosomes. Histone t
 | Methylation | Can activate or repress, depending on which residue | Histone methyltransferase |
 | Phosphorylation | Usually activates | Kinases |
 
-Acetylation adds an acetyl group ($\mathrm{'\{'}-COCH_3{'\}'}$) to lysine residues, neutralising the positive charge. This reduces the electrostatic attraction between the positively charged histone tails and the negatively charged DNA backbone, loosening the chromatin structure and allowing transcription factors and RNA polymerase to access the DNA.
+Acetylation adds an acetyl group ($\mathrm{-COCH_3{}$) to lysine residues, neutralising the positive charge. This reduces the electrostatic attraction between the positively charged histone tails and the negatively charged DNA backbone, loosening the chromatin structure and allowing transcription factors and RNA polymerase to access the DNA.
 
 ### 13.3 Epigenetics and Disease
 
@@ -1129,10 +1129,10 @@ CRISPR-Cas9 has revolutionised genetic research and holds great promise for trea
 
 | Feature | Sanger Sequencing | NGS (e.g., Illumina) |
 | ------- | ---------------- | -------------------- |
-| Throughput | One fragment at a time (up to $\approx 1000\ \mathrm{'\{'}bp{'\}'}$) | Millions of fragments simultaneously |
+| Throughput | One fragment at a time (up to $\approx 1000\ \mathrm{bp{}$) | Millions of fragments simultaneously |
 | Cost per genome | $\approx \$3000$ (human) | $\approx \$100$--$600$ (human) |
 | Speed | Days to weeks for a genome | Hours to days |
-| Read length | Up to $\approx 1000\ \mathrm{'\{'}bp{'\}'}$ | Short ($100$--$300\ \mathrm{'\{'}bp{'\}'}$ for Illumina) |
+| Read length | Up to $\approx 1000\ \mathrm{bp{}$ | Short ($100$--$300\ \mathrm{bp{}$ for Illumina) |
 | Accuracy | Very high ($99.99\%$) | High but with more errors per read (compensated by depth of coverage) |
 | Applications | Single genes, small regions | Whole genomes, transcriptomes, epigenomes |
 
@@ -1147,7 +1147,7 @@ CRISPR-Cas9 has revolutionised genetic research and holds great promise for trea
 
 ### 19.1 DNA Methylation
 
-DNA methylation involves the addition of a methyl group ($\mathrm{'\{'}-CH_3{'\}'}$) to cytosine bases, specifically at CpG sites (cytosine followed by guanine). Methylation is catalysed by DNA methyltransferases (DNMTs).
+DNA methylation involves the addition of a methyl group ($\mathrm{-CH_3{}$) to cytosine bases, specifically at CpG sites (cytosine followed by guanine). Methylation is catalysed by DNA methyltransferases (DNMTs).
 
 - **Hypermethylation** of promoter regions generally **silences** gene expression by preventing transcription factor binding or recruiting proteins that compact chromatin.
 - **Hypomethylation** of promoter regions generally **activates** gene expression.
@@ -1192,7 +1192,7 @@ Common Pitfall Students often confuse epigenetic changes with genetic mutations.
 - **Mutation:** most common is $\Delta$F508 (deletion of phenylalanine at position 508), a three-nucleotide deletion.
 - **Inheritance:** autosomal recessive. Carriers are heterozygous and unaffected (approximately 1 in 25 people of Northern European descent).
 - **Protein function:** CFTR is a chloride channel in epithelial cell membranes. The mutation causes misfolded CFTR protein, which is degraded before reaching the membrane.
-- **Symptoms:** thick, sticky mucus in the lungs (recurrent infections); pancreatic insufficiency (blocked ducts prevent enzyme delivery to the intestine); male infertility (absence of vas deferens); salty sweat (elevated $\mathrm{'\{'}Cl^-{'\}'}$ in sweat -- diagnostic test).
+- **Symptoms:** thick, sticky mucus in the lungs (recurrent infections); pancreatic insufficiency (blocked ducts prevent enzyme delivery to the intestine); male infertility (absence of vas deferens); salty sweat (elevated $\mathrm{Cl^-{}$ in sweat -- diagnostic test).
 - **Treatment:** physiotherapy (chest percussion to clear mucus); antibiotics for lung infections; pancreatic enzyme supplements; CFTR modulators (e.g., ivacaftor, lumacaftor) that improve CFTR protein function; gene therapy trials.
 
 ### 20.2 Huntington's Disease
@@ -1209,7 +1209,7 @@ Common Pitfall Students often confuse epigenetic changes with genetic mutations.
 - **Gene:** HBB ($\beta$-globin) on chromosome 11.
 - **Mutation:** point mutation (missense) -- codon GAG (glutamic acid) $\to$ GTG (valine) at position 6 of the $\beta$-globin chain.
 - **Inheritance:** autosomal recessive.
-- **Effect on protein:** valine is hydrophobic (glutamic acid is hydrophilic). The mutation causes haemoglobin S (HbS) to polymerise under low $\mathrm{'\{'}O_2{'\}'}$ conditions, deforming red blood cells into a sickle shape.
+- **Effect on protein:** valine is hydrophobic (glutamic acid is hydrophilic). The mutation causes haemoglobin S (HbS) to polymerise under low $\mathrm{O_2{}$ conditions, deforming red blood cells into a sickle shape.
 - **Symptoms:** chronic haemolytic anaemia; painful vaso-occlusive crises (sickled cells block small blood vessels); increased risk of infection (splenic damage); stroke; organ damage.
 - **Heterozygote advantage:** carriers ($Hb^A Hb^S$) have some resistance to malaria (Plasmodium falciparum has difficulty infecting sickled cells; infected sickled cells are removed more rapidly by the spleen).
 
@@ -1245,7 +1245,7 @@ Number of codons $= \frac{1500}{3} = 500$ codons.
 
 Number of amino acids in the protein $= 500 - 1 = 499$ (the stop codon does not code for an amino acid).
 
-Molecular weight of the protein $= 499 \times 110 \approx 54,890\ \mathrm{'\{'}Da{'\}'}$ (average amino acid molecular weight $\approx 110\ \mathrm{'\{'}Da{'\}'}$).
+Molecular weight of the protein $= 499 \times 110 \approx 54,890\ \mathrm{Da{}$ (average amino acid molecular weight $\approx 110\ \mathrm{Da{}$).
 
 **Example:** If the mutation rate is $10^{-9}$ mutations per base pair per cell division, and a gene has 1,500 base pairs:
 
@@ -1632,7 +1632,7 @@ Epigenetics is the study of heritable changes in gene expression that do NOT inv
 
 | Mechanism | Description | Effect on Gene Expression |
 | --------- | ----------- | ------------------------ |
-| DNA methylation | Methyl group ($-\mathrm{'\{'}CH_3{'\}'}$) added to cytosine bases at CpG sites (usually in promoter regions) | Methylated DNA = gene is silenced (switched off); unmethylated DNA = gene is active (switched on) |
+| DNA methylation | Methyl group ($-\mathrm{CH_3{}$) added to cytosine bases at CpG sites (usually in promoter regions) | Methylated DNA = gene is silenced (switched off); unmethylated DNA = gene is active (switched on) |
 | Histone modification | Acetyl groups, methyl groups, or phosphate groups added to histone tails | Acetylation of histones = chromatin is less condensed (euchromatin) = gene is active; deacetylation = chromatin is more condensed (heterochromatin) = gene is silenced |
 | Non-coding RNA | miRNA binds to mRNA and prevents translation or targets it for degradation | Decreases protein production from the target gene |
 
@@ -1744,8 +1744,8 @@ Codominance occurs when both alleles are expressed equally in the heterozygote (
 
 | Example | Genotypes and Phenotypes |
 | ------- | ---------------------- |
-| Blood groups (ABO system) | $\mathrm{'\{'}I^AI^A{'\}'}$ = blood group A; $\mathrm{'\{'}I^BI^B{'\}'}$ = blood group B; $\mathrm{'\{'}I^AI^B{'\}'}$ = blood group AB (both A and B antigens expressed); $\mathrm{'\{'}ii{'\}'}$ = blood group O |
-| Sickle cell trait | $\mathrm{'\{'}Hb^AHb^A{'\}'}$ = normal (HbA only); $\mathrm{'\{'}Hb^SHb^S{'\}'}$ = sickle cell disease (HbS only); $\mathrm{'\{'}Hb^AHb^S{'\}'}$ = sickle cell trait (both HbA and HbS produced; carrier) |
+| Blood groups (ABO system) | $\mathrm{I^AI^A{}$ = blood group A; $\mathrm{I^BI^B{}$ = blood group B; $\mathrm{I^AI^B{}$ = blood group AB (both A and B antigens expressed); $\mathrm{ii{}$ = blood group O |
+| Sickle cell trait | $\mathrm{Hb^AHb^A{}$ = normal (HbA only); $\mathrm{Hb^SHb^S{}$ = sickle cell disease (HbS only); $\mathrm{Hb^AHb^S{}$ = sickle cell trait (both HbA and HbS produced; carrier) |
 
 ### 36.2 Sex-Linked Inheritance: Worked Example
 

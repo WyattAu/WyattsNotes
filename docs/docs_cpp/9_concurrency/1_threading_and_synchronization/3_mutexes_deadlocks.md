@@ -68,7 +68,7 @@ the kernel context switch alone, plus scheduler latency.
 times. The thread must call `unlock()` the same number of times it called `lock()` for the mutex to
 be released. The implementation maintains an internal lock count:
 
-$$\mathrm{'\{'}recursion depth{'\}'} = n_{\mathrm{'\{'}lock{'\}'}} - n_{\mathrm{'\{'}unlock{'\}'}}$$
+$$\mathrm{recursion depth{} = n_{\mathrm{lock{}} - n_{\mathrm{unlock{}}$$
 
 When the recursion depth reaches zero, the mutex is released.
 
@@ -354,7 +354,7 @@ the other. The four necessary conditions (Coffman conditions) are:
 4. **Circular wait**: There exists a circular chain of threads, each waiting for a resource held by
    the next.
 
-$$\mathrm{'\{'}Deadlock{'\}'} \iff \mathrm{'\{'}Mutual Exclusion{'\}'} \wedge \mathrm{'\{'}Hold-and-Wait{'\}'} \wedge \mathrm{'\{'}No Preemption{'\}'} \wedge \mathrm{'\{'}Circular Wait{'\}'}$$
+$$\mathrm{Deadlock{} \iff \mathrm{Mutual Exclusion{} \wedge \mathrm{Hold-and-Wait{} \wedge \mathrm{No Preemption{} \wedge \mathrm{Circular Wait{}$$
 
 ### Deadlock in Practice: The Classic Dining Philosophers
 

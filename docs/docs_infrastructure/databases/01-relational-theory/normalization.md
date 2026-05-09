@@ -72,7 +72,7 @@ maintenance debt that compounds over time.
 
 Each normal form is a strict subset of the one below it:
 
-$$1NF \supset 2NF \supset 3NF \supset \mathrm{'\{'}BCNF{'\}'} \supset 4NF \supset 5NF$$
+$$1NF \supset 2NF \supset 3NF \supset \mathrm{BCNF{} \supset 4NF \supset 5NF$$
 
 A relation in BCNF is automatically in 3NF, 2NF, and 1NF. The higher the normal form, the less
 redundancy, but the more relations you need (and the more JOINs you must perform).
@@ -161,12 +161,12 @@ Proof of the Union rule:
 
 $$
 \begin{aligned}
-X \rightarrow Y \quad &\mathrm{'\{'}(given){'\}'} \\
-X \rightarrow X \quad &\mathrm{'\{'}(reflexivity, since {'\}'} X \subseteq X) \\
-XX \rightarrow YX \quad &\mathrm{'\{'}(augmentation, add {'\}'} X \mathrm{'\{'} to both sides){'\}'} \\
-X \rightarrow XY \quad &\mathrm{'\{'}(since {'\}'} XX = X) \\
-XY \rightarrow YZ \quad &\mathrm{'\{'}(augmentation of {'\}'} X \rightarrow Z \mathrm{'\{'} with {'\}'} Y) \\
-X \rightarrow YZ \quad &\mathrm{'\{'}(transitivity){'\}'}
+X \rightarrow Y \quad &\mathrm{(given){} \\
+X \rightarrow X \quad &\mathrm{(reflexivity, since {} X \subseteq X) \\
+XX \rightarrow YX \quad &\mathrm{(augmentation, add {} X \mathrm{ to both sides){} \\
+X \rightarrow XY \quad &\mathrm{(since {} XX = X) \\
+XY \rightarrow YZ \quad &\mathrm{(augmentation of {} X \rightarrow Z \mathrm{ with {} Y) \\
+X \rightarrow YZ \quad &\mathrm{(transitivity){}
 \end{aligned}
 $$
 

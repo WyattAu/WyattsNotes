@@ -33,9 +33,9 @@ $$\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}}$$
 
 ### 1.2 Reciprocal functions
 
-$$\mathrm{'\{'}cosech{'\}'}\,x = \frac{1}{\sinh x} = \frac{2}{e^x - e^{-x}}, \quad x \neq 0$$
+$$\mathrm{cosech{}\,x = \frac{1}{\sinh x} = \frac{2}{e^x - e^{-x}}, \quad x \neq 0$$
 
-$$\mathrm{'\{'}sech{'\}'}\,x = \frac{1}{\cosh x} = \frac{2}{e^x + e^{-x}}$$
+$$\mathrm{sech{}\,x = \frac{1}{\cosh x} = \frac{2}{e^x + e^{-x}}$$
 
 $$\coth x = \frac{1}{\tanh x} = \frac{e^x + e^{-x}}{e^x - e^{-x}}, \quad x \neq 0$$
 
@@ -81,11 +81,11 @@ $$= \frac{e^{2x} + 2 + e^{-2x} - (e^{2x} - 2 + e^{-2x})}{4} = \frac{4}{4} = 1 \q
 
 ### 2.2 Identity for $\tanh$
 
-$$\boxed{1 - \tanh^2 x = \mathrm{'\{'}sech{'\}'}^2\,x}$$
+$$\boxed{1 - \tanh^2 x = \mathrm{sech{}^2\,x}$$
 
 **Proof.** Divide the fundamental identity by $\cosh^2 x$:
 
-$$1 - \tanh^2 x = \frac{1}{\cosh^2 x} = \mathrm{'\{'}sech{'\}'}^2\,x \quad \blacksquare$$
+$$1 - \tanh^2 x = \frac{1}{\cosh^2 x} = \mathrm{sech{}^2\,x \quad \blacksquare$$
 
 ### 2.3 Osborne's rule
 
@@ -215,7 +215,7 @@ $$\frac{d}{dx}(\sinh x) = \cosh x$$
 
 $$\frac{d}{dx}(\cosh x) = \sinh x$$
 
-$$\frac{d}{dx}(\tanh x) = \mathrm{'\{'}sech{'\}'}^2\,x$$
+$$\frac{d}{dx}(\tanh x) = \mathrm{sech{}^2\,x$$
 
 **Proof of $\dfrac{d}{dx}\sinh x = \cosh x$:**
 
@@ -235,7 +235,7 @@ $$\frac{dy}{dx} = \frac{1}{\dfrac{dx}{dy}} = \frac{1}{\cosh y} = \frac{1}{\sqrt{
 
 **Proof for $\operatorname{artanh}\,x$.** Let $y = \operatorname{artanh}\,x$, so $x = \tanh y$.
 
-$$\frac{dy}{dx} = \frac{1}{\mathrm{'\{'}sech{'\}'}^2\,y} = \frac{1}{1 - \tanh^2 y} = \frac{1}{1 - x^2} \quad \blacksquare$$
+$$\frac{dy}{dx} = \frac{1}{\mathrm{sech{}^2\,y} = \frac{1}{1 - \tanh^2 y} = \frac{1}{1 - x^2} \quad \blacksquare$$
 
 ### 4.3 Integration
 
@@ -245,7 +245,7 @@ $$\int \cosh x\,dx = \sinh x + C$$
 
 $$\int \sinh x\,dx = \cosh x + C$$
 
-$$\int \mathrm{'\{'}sech{'\}'}^2\,x\,dx = \tanh x + C$$
+$$\int \mathrm{sech{}^2\,x\,dx = \tanh x + C$$
 
 ### 4.4 Integrals leading to inverse hyperbolic functions
 
@@ -580,7 +580,7 @@ $$\frac{dy}{dx} = \frac{\cosh x(1 + \cosh x) - \sinh x \cdot \sinh x}{(1 + \cosh
 
 Using $\cosh^2 x - \sinh^2 x = 1$:
 
-$$= \frac{\cosh x + 1}{(1 + \cosh x)^2} = \frac{1}{1 + \cosh x} = \mathrm{'\{'}sech{'\}'}^2\!\left(\frac{x}{2}\right)$$
+$$= \frac{\cosh x + 1}{(1 + \cosh x)^2} = \frac{1}{1 + \cosh x} = \mathrm{sech{}^2\!\left(\frac{x}{2}\right)$$
 
 The final simplification uses the identity $1 + \cosh x = 2\cosh^2(x/2)$.
 
@@ -608,17 +608,17 @@ $$\frac{dy}{dx}\bigg|_{t = \ln 2} = \frac{3 \cdot 5/4}{2 \cdot 3/4} = \frac{15/4
 
 ### Example 9.7: Verifying a reduction formula
 
-**Problem.** Let $I_n = \displaystyle\int_0^{\pi/2} \cosh^n(\sin x)\,dx$ is not well-formed. Instead, verify that $\displaystyle\int \tanh^3 x\,dx = \ln(\cosh x) - \dfrac{1}{2}\mathrm{'\{'}sech{'\}'}^2\,x\tanh x + C$ is incorrect, and find the correct integral.
+**Problem.** Let $I_n = \displaystyle\int_0^{\pi/2} \cosh^n(\sin x)\,dx$ is not well-formed. Instead, verify that $\displaystyle\int \tanh^3 x\,dx = \ln(\cosh x) - \dfrac{1}{2}\mathrm{sech{}^2\,x\tanh x + C$ is incorrect, and find the correct integral.
 
 **Solution.** Let us compute $\displaystyle\int \tanh^3 x\,dx$ correctly.
 
-Write $\tanh^3 x = \tanh x \cdot \tanh^2 x = \tanh x(1 - \mathrm{'\{'}sech{'\}'}^2\,x) = \tanh x - \tanh x\,\mathrm{'\{'}sech{'\}'}^2\,x$.
+Write $\tanh^3 x = \tanh x \cdot \tanh^2 x = \tanh x(1 - \mathrm{sech{}^2\,x) = \tanh x - \tanh x\,\mathrm{sech{}^2\,x$.
 
-$$\int \tanh^3 x\,dx = \int \tanh x\,dx - \int \tanh x\,\mathrm{'\{'}sech{'\}'}^2\,x\,dx$$
+$$\int \tanh^3 x\,dx = \int \tanh x\,dx - \int \tanh x\,\mathrm{sech{}^2\,x\,dx$$
 
 The first integral: $\displaystyle\int\tanh x\,dx = \ln(\cosh x) + C$.
 
-For the second integral, let $u = \tanh x$, $du = \mathrm{'\{'}sech{'\}'}^2\,x\,dx$:
+For the second integral, let $u = \tanh x$, $du = \mathrm{sech{}^2\,x\,dx$:
 
 $$\int u\,du = \frac{u^2}{2} + C = \frac{\tanh^2 x}{2} + C$$
 
@@ -728,14 +728,14 @@ $$= \frac{3}{2}\ln\!\left(\frac{4}{3} + \sqrt{\frac{16}{9} - 1}\right) = \frac{3
 
 ### Question 12
 
-Given that $y = \ln(\sinh x)$, show that $\dfrac{d^2y}{dx^2} = -\mathrm{'\{'}cosech{'\}'}^2\,x$.
+Given that $y = \ln(\sinh x)$, show that $\dfrac{d^2y}{dx^2} = -\mathrm{cosech{}^2\,x$.
 
 <details>
 <summary>Solution</summary>
 
 $$\frac{dy}{dx} = \frac{\cosh x}{\sinh x} = \coth x$$
 
-$$\frac{d^2y}{dx^2} = \frac{d}{dx}(\coth x) = -\mathrm{'\{'}cosech{'\}'}^2\,x = \frac{-1}{\sinh^2 x} \quad \blacksquare$$
+$$\frac{d^2y}{dx^2} = \frac{d}{dx}(\coth x) = -\mathrm{cosech{}^2\,x = \frac{-1}{\sinh^2 x} \quad \blacksquare$$
 
 </details>
 
@@ -902,11 +902,11 @@ $\boxed{\dfrac{d}{dx}[\operatorname{arcosh}\, x] = \dfrac{1}{\sqrt{x^2-1}}}$ for
 
 ### 16.1 The Gudermannian function
 
-The Gudermannian function $\mathrm{'\{'}gd{'\}'}(x)$ relates circular and hyperbolic functions without complex numbers:
+The Gudermannian function $\mathrm{gd{}(x)$ relates circular and hyperbolic functions without complex numbers:
 
-$\sin(\mathrm{'\{'}gd{'\}'}\,x) = \tanh x$, $\cos(\mathrm{'\{'}gd{'\}'}\,x) = \mathrm{'\{'}sech{'\}'}\,x$, $\tan(\mathrm{'\{'}gd{'\}'}\,x) = \sinh x$.
+$\sin(\mathrm{gd{}\,x) = \tanh x$, $\cos(\mathrm{gd{}\,x) = \mathrm{sech{}\,x$, $\tan(\mathrm{gd{}\,x) = \sinh x$.
 
-$\dfrac{d}{dx}\mathrm{'\{'}gd{'\}'}(x) = \mathrm{'\{'}sech{'\}'}\,x$.
+$\dfrac{d}{dx}\mathrm{gd{}(x) = \mathrm{sech{}\,x$.
 
 ### 16.2 Hyperbolic functions and the Lorentz transformation
 

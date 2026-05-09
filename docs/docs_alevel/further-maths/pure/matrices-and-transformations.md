@@ -130,7 +130,7 @@ $$\frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}\begin{pmatrix}
 
 ### 3.3 Inverse of a 3x3 matrix
 
-**Method 1: Adjugate matrix.** $A^{-1} = \dfrac{1}{\det A}\,\mathrm{'\{'}adj{'\}'}(A)$, where the adjugate is the
+**Method 1: Adjugate matrix.** $A^{-1} = \dfrac{1}{\det A}\,\mathrm{adj{}(A)$, where the adjugate is the
 transpose of the cofactor matrix.
 
 **Method 2: Row reduction.** Form the augmented matrix $[A \mid I]$ and apply row operations to
@@ -232,7 +232,7 @@ $$\det\begin{pmatrix} a - \lambda & b \\ c & d - \lambda \end{pmatrix} = (a - \l
 
 $$\lambda^2 - (a + d)\lambda + (ad - bc) = 0$$
 
-**Key result:** $\lambda_1 + \lambda_2 = \mathrm{'\{'}tr{'\}'}(A) = a + d$ (the trace) and
+**Key result:** $\lambda_1 + \lambda_2 = \mathrm{tr{}(A) = a + d$ (the trace) and
 $\lambda_1 \lambda_2 = \det A$.
 
 ### 5.3 Finding eigenvectors
@@ -392,7 +392,7 @@ $$= ad(eh - fg) - bc(eh - fg) = (ad - bc)(eh - fg) = \det(A)\det(B) \quad \black
 ### 7.2 Proof: $\det(A) \neq 0 \iff A$ is invertible
 
 **Proof.** ($\Rightarrow$) If $\det(A) \neq 0$, the adjugate formula gives
-$A^{-1} = \dfrac{1}{\det A}\mathrm{'\{'}adj{'\}'}(A)$, so $A$ is invertible.
+$A^{-1} = \dfrac{1}{\det A}\mathrm{adj{}(A)$, so $A$ is invertible.
 
 ($\Leftarrow$) If $A$ is invertible with $A^{-1}$, then
 $\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$.
@@ -400,14 +400,14 @@ Since $1 \neq 0$, we must have $\det(A) \neq 0$. $\blacksquare$
 
 ### 7.3 Proof: the trace equals the sum of eigenvalues
 
-**Theorem.** For any $2 \times 2$ matrix $A$, $\mathrm{'\{'}tr{'\}'}(A) = \lambda_1 + \lambda_2$.
+**Theorem.** For any $2 \times 2$ matrix $A$, $\mathrm{tr{}(A) = \lambda_1 + \lambda_2$.
 
 **Proof.** The characteristic equation is
 $\det(A - \lambda I) = \lambda^2 - (a + d)\lambda + (ad - bc) = 0$.
 
 By Vieta's formulas, the sum of the roots is the negative coefficient of $\lambda$:
 
-$$\lambda_1 + \lambda_2 = a + d = \mathrm{'\{'}tr{'\}'}(A) \quad \blacksquare$$
+$$\lambda_1 + \lambda_2 = a + d = \mathrm{tr{}(A) \quad \blacksquare$$
 
 ### 7.4 Proof: area scale factor via determinant
 

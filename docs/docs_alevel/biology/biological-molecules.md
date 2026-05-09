@@ -22,7 +22,7 @@ Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2
 
 ### 1.1 Structure and Properties
 
-Water ($\mathrm{'\{'}H_2O{'\}'}$) is a polar molecule. The oxygen atom is more electronegative than hydrogen,
+Water ($\mathrm{H_2O{}$) is a polar molecule. The oxygen atom is more electronegative than hydrogen,
 creating a dipole with $\delta^-$ on oxygen and $\delta^+$ on each hydrogen. This polarity underpins
 water's biological significance.
 
@@ -41,8 +41,8 @@ water's biological significance.
 
 Each water molecule can form up to four hydrogen bonds: two through its hydrogen atoms (donor) and
 two through lone pairs on oxygen (acceptor). This extensive network gives water its anomalously high
-boiling point ($100\ ^\circ\mathrm{'\{'}C{'\}'}$) compared to similarly sized molecules such as
-$\mathrm{'\{'}H_2S{'\}'}$ ($-60\ ^\circ\mathrm{'\{'}C{'\}'}$).
+boiling point ($100\ ^\circ\mathrm{C{}$) compared to similarly sized molecules such as
+$\mathrm{H_2S{}$ ($-60\ ^\circ\mathrm{C{}$).
 
 :::warning
 Common Pitfall Students often confuse hydrogen bonds with covalent bonds. Hydrogen bonds
@@ -56,13 +56,13 @@ electronegative atom.
 
 ### 2.1 Monosaccharides
 
-Monosaccharides are the monomers of carbohydrates with the general formula $(\mathrm{'\{'}CH_2O{'\}'})_n$. The
+Monosaccharides are the monomers of carbohydrates with the general formula $(\mathrm{CH_2O{})_n$. The
 most biologically important monosaccharide is **glucose**, $\mathrm{C_6H_{12}O_6}$.
 
 Glucose exists as two isomers that differ at carbon 1:
 
-- **$\alpha$-glucose**: the $-\mathrm{'\{'}OH{'\}'}$ group on $\mathrm{'\{'}C_1{'\}'}$ is below the plane of the ring.
-- **$\beta$-glucose**: the $-\mathrm{'\{'}OH{'\}'}$ group on $\mathrm{'\{'}C_1{'\}'}$ is above the plane of the ring.
+- **$\alpha$-glucose**: the $-\mathrm{OH{}$ group on $\mathrm{C_1{}$ is below the plane of the ring.
+- **$\beta$-glucose**: the $-\mathrm{OH{}$ group on $\mathrm{C_1{}$ is above the plane of the ring.
 
 This seemingly minor difference has profound structural consequences: $\alpha$-glucose forms starch
 and glycogen, while $\beta$-glucose forms cellulose -- two polymers with entirely different
@@ -73,7 +73,7 @@ properties.
 Disaccharides are formed by a **condensation reaction** (glycosidic bond formation) between two
 monosaccharides, releasing one molecule of water:
 
-$$\mathrm{C_6H_{12}O_6} + \mathrm{C_6H_{12}O_6} \longrightarrow \mathrm{C_{12}H_{22}O_{11}} + \mathrm{'\{'}H_2O{'\}'}$$
+$$\mathrm{C_6H_{12}O_6} + \mathrm{C_6H_{12}O_6} \longrightarrow \mathrm{C_{12}H_{22}O_{11}} + \mathrm{H_2O{}$$
 
 | Disaccharide | Component Monosaccharides           | Glycosidic Bond |
 | ------------ | ----------------------------------- | --------------- |
@@ -116,7 +116,7 @@ and enables the hydrogen bonding between chains that gives cellulose its strengt
 | Test            | Reducing sugars                                                     | Non-reducing sugars                                                                       | Starch                       |
 | --------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------- |
 | Reagent         | Benedict's reagent                                                  | Benedict's reagent (after acid hydrolysis)                                                | Iodine in potassium iodide   |
-| Method          | Add reagent, heat in water bath at $80\ ^\circ\mathrm{'\{'}C{'\}'}$ for 5 min | Hydrolyse with dilute $\mathrm{'\{'}HCl{'\}'}$, neutralise with $\mathrm{'\{'}NaHCO_3{'\}'}$, then Benedict's | Add iodine solution directly |
+| Method          | Add reagent, heat in water bath at $80\ ^\circ\mathrm{C{}$ for 5 min | Hydrolyse with dilute $\mathrm{HCl{}$, neutralise with $\mathrm{NaHCO_3{}$, then Benedict's | Add iodine solution directly |
 | Positive result | Brick-red precipitate                                               | Brick-red precipitate (after hydrolysis)                                                  | Blue-black colour            |
 
 The colour of the Benedict's test indicates sugar concentration: blue (trace) $\to$ green $\to$
@@ -127,16 +127,16 @@ yellow $\to$ orange $\to$ brick red (high concentration).
 ### 3.1 Triglycerides
 
 Triglycerides are formed by a condensation reaction between one molecule of **glycerol** (a 3-carbon
-alcohol with three $-\mathrm{'\{'}OH{'\}'}$ groups) and three molecules of **fatty acids** (long hydrocarbon
-chains with a terminal $-\mathrm{'\{'}COOH{'\}'}$ group). Each ester bond releases one molecule of water:
+alcohol with three $-\mathrm{OH{}$ groups) and three molecules of **fatty acids** (long hydrocarbon
+chains with a terminal $-\mathrm{COOH{}$ group). Each ester bond releases one molecule of water:
 
-$$\mathrm{'\{'}glycerol{'\}'} + 3\ \mathrm{'\{'}fatty\ acids{'\}'} \longrightarrow \mathrm{'\{'}triglyceride{'\}'} + 3\ \mathrm{'\{'}H_2O{'\}'}$$
+$$\mathrm{glycerol{} + 3\ \mathrm{fatty\ acids{} \longrightarrow \mathrm{triglyceride{} + 3\ \mathrm{H_2O{}$$
 
 Fatty acids are classified by the presence of double bonds in their hydrocarbon chain:
 
-- **Saturated fatty acids**: no $\mathrm{'\{'}C=C{'\}'}$ double bonds; straight chains pack tightly; solid at
+- **Saturated fatty acids**: no $\mathrm{C=C{}$ double bonds; straight chains pack tightly; solid at
   room temperature (e.g., in animal fats).
-- **Unsaturated fatty acids**: one or more $\mathrm{'\{'}C=C{'\}'}$ double bonds; kinked chains cannot pack
+- **Unsaturated fatty acids**: one or more $\mathrm{C=C{}$ double bonds; kinked chains cannot pack
   tightly; liquid at room temperature (e.g., in plant oils). Monounsaturated = one double bond;
   polyunsaturated = two or more.
 
@@ -177,8 +177,8 @@ $$\mathrm{H_2N{-}CHR{-}COOH}$$
 where $R$ is the variable side chain (r-group) that determines the amino acid's chemical properties.
 
 Amino acids are **amphoteric**: they can act as both acids and bases because they contain both
-$-\mathrm{'\{'}NH_2{'\}'}$ (basic) and $-\mathrm{'\{'}COOH{'\}'}$ (acidic) groups. At physiological pH ($\approx 7.4$),
-amino acids exist as **zwitterions** with $-\mathrm{'\{'}NH_3^+{'\}'}$ and $-\mathrm{'\{'}COO^-{'\}'}$.
+$-\mathrm{NH_2{}$ (basic) and $-\mathrm{COOH{}$ (acidic) groups. At physiological pH ($\approx 7.4$),
+amino acids exist as **zwitterions** with $-\mathrm{NH_3^+{}$ and $-\mathrm{COO^-{}$.
 
 ### 4.2 Peptide Bonds
 
@@ -186,7 +186,7 @@ Amino acids are joined by **condensation reactions** forming **peptide bonds**:
 
 $$
 \mathrm{H_2N{-}CHR_1{-}COOH} + \mathrm{H_2N{-}CHR_2{-}COOH} \longrightarrow
-\mathrm{H_2N{-}CHR_1{-}CO{-}NH{-}CHR_2{-}COOH} + \mathrm{'\{'}H_2O{'\}'}
+\mathrm{H_2N{-}CHR_1{-}CO{-}NH{-}CHR_2{-}COOH} + \mathrm{H_2O{}
 $$
 
 A **dipeptide** has two amino acids; a **polypeptide** has many. A **protein** is one or more
@@ -198,7 +198,7 @@ polypeptides folded into a specific 3D conformation.
 bonds. This is determined directly by the gene sequence.
 
 **Secondary structure**: local folding patterns stabilised by hydrogen bonds between backbone
-$-\mathrm{'\{'}C=O{'\}'}$ and $-\mathrm{'\{'}N-H{'\}'}$ groups (not side chains). Two main types:
+$-\mathrm{C=O{}$ and $-\mathrm{N-H{}$ groups (not side chains). Two main types:
 
 - **$\alpha$-helix**: a right-handed coil with hydrogen bonds parallel to the axis.
 - **$\beta$-pleated sheet**: hydrogen bonds between adjacent extended strands.
@@ -207,7 +207,7 @@ $-\mathrm{'\{'}C=O{'\}'}$ and $-\mathrm{'\{'}N-H{'\}'}$ groups (not side chains)
 
 - Hydrogen bonds
 - Ionic (electrostatic) bonds between charged $R$ groups
-- Disulfide bridges (covalent $-\mathrm{'\{'}S-S-{'\}'}$ bonds between cysteine residues)
+- Disulfide bridges (covalent $-\mathrm{S-S-{}$ bonds between cysteine residues)
 - Hydrophobic interactions (non-polar $R$ groups cluster in the interior)
 - Van der Waals forces
 
@@ -240,16 +240,16 @@ for dipeptides).
 Deoxyribonucleic acid (DNA) is a double-stranded polymer of **nucleotides**. Each nucleotide
 consists of:
 
-1. A **deoxyribose sugar** (a pentose with $-\mathrm{'\{'}H{'\}'}$ at the $2'$ position)
+1. A **deoxyribose sugar** (a pentose with $-\mathrm{H{}$ at the $2'$ position)
 2. A **phosphate group**
 3. A **nitrogenous base**: adenine (A), thymine (T), cytosine (C), or guanine (G)
 
 Nucleotides are linked by **phosphodiester bonds** between the $3'$ carbon of one sugar and the $5'$
 carbon of the next, forming a **sugar-phosphate backbone** with a directional $5' \to 3'$ polarity.
 
-**Chargaff's rules**: in double-stranded DNA, $[\mathrm{'\{'}A{'\}'}] = [\mathrm{'\{'}T{'\}'}]$ and
-$[\mathrm{'\{'}C{'\}'}] =
-[\mathrm{'\{'}G{'\}'}]$. This is a consequence of complementary base pairing: A pairs with T (2
+**Chargaff's rules**: in double-stranded DNA, $[\mathrm{A{}] = [\mathrm{T{}]$ and
+$[\mathrm{C{}] =
+[\mathrm{G{}]$. This is a consequence of complementary base pairing: A pairs with T (2
 hydrogen bonds), C pairs with G (3 hydrogen bonds).
 
 **Watson-Crick model**: the two strands run antiparallel ($5' \to 3'$ alongside $3' \to 5'$) and
@@ -259,7 +259,7 @@ twist into a right-handed double helix with approximately 10 base pairs per turn
 
 Ribonucleic acid (RNA) differs from DNA in three respects:
 
-1. The sugar is **ribose** (with $-\mathrm{'\{'}OH{'\}'}$ at the $2'$ position)
+1. The sugar is **ribose** (with $-\mathrm{OH{}$ at the $2'$ position)
 2. The base **thymine** is replaced by **uracil** (U)
 3. RNA is typically **single-stranded** (though it can fold back on itself to form secondary
    structures)
@@ -274,9 +274,9 @@ Three types of RNA:
 
 ### 5.3 ATP
 
-Adenosine triphosphate ($\mathrm{'\{'}ATP{'\}'}$) is the universal energy currency of the cell:
+Adenosine triphosphate ($\mathrm{ATP{}$) is the universal energy currency of the cell:
 
-$$\mathrm{'\{'}ATP{'\}'} + \mathrm{'\{'}H_2O{'\}'} \longrightarrow \mathrm{'\{'}ADP{'\}'} + P_i + \mathrm{'\{'}energy{'\}'}$$
+$$\mathrm{ATP{} + \mathrm{H_2O{} \longrightarrow \mathrm{ADP{} + P_i + \mathrm{energy{}$$
 
 $$\Delta G \approx -30.5\ \mathrm{kJ\ mol^{-1}}$$
 
@@ -327,7 +327,7 @@ $V_{\max}$ at low $[S]$). A **high $K_m$** indicates low affinity.
 
 **Temperature**: as temperature increases, kinetic energy increases, raising the rate of collisions
 between enzyme and substrate. Above the **optimum temperature** (approximately
-$37\ ^\circ\mathrm{'\{'}C{'\}'}$ for human enzymes), the protein denatures -- hydrogen bonds and other weak
+$37\ ^\circ\mathrm{C{}$ for human enzymes), the protein denatures -- hydrogen bonds and other weak
 interactions break, the active site changes shape, and the enzyme loses function. Denaturation is
 irreversible.
 
@@ -378,7 +378,7 @@ Disadvantages: reduced activity due to restricted substrate access; immobilisati
 
 The Benedict's test can be made semi-quantitative by comparing the colour of the precipitate against a
 standard colour chart, or by filtering the precipitate and weighing it. Alternatively, a colorimeter can
-be used to measure the absorbance of the solution at a specific wavelength (e.g., $630\ \mathrm{'\{'}nm{'\}'}$),
+be used to measure the absorbance of the solution at a specific wavelength (e.g., $630\ \mathrm{nm{}$),
 and a **standard curve** constructed.
 
 **Worked Example: Constructing a Standard Curve.** A series of glucose standards of known concentration
@@ -398,7 +398,7 @@ peptide bonds. This relationship can be used to determine the concentration of p
 solution using a standard curve prepared from protein solutions of known concentration (e.g., bovine
 serum albumin, BSA).
 
-**Worked Example.** A set of BSA standards gives the following absorbance readings at $540\ \mathrm{'\{'}nm{'\}'}$:
+**Worked Example.** A set of BSA standards gives the following absorbance readings at $540\ \mathrm{nm{}$:
 
 | Protein concentration ($\mathrm{mg\ cm^{-3}}$) | 0   | 1   | 2   | 3   | 4   | 5   |
 | ------------------------------------------------ | --- | --- | --- | --- | --- | --- |
@@ -423,13 +423,13 @@ absorbance on the y-axis and concentration on the x-axis.
 
 Haemoglobin (Hb) is a globular quaternary protein with four polypeptide chains: two $\alpha$-chains
 (141 amino acids each) and two $\beta$-chains (146 amino acids each). Each chain contains a haem group
-(protoporphyrin IX ring with a central $\mathrm{Fe^{2+}}$ ion) that binds one $\mathrm{'\{'}O_2{'\}'}$ molecule.
+(protoporphyrin IX ring with a central $\mathrm{Fe^{2+}}$ ion) that binds one $\mathrm{O_2{}$ molecule.
 
-The quaternary structure is essential for function: the cooperative binding of $\mathrm{'\{'}O_2{'\}'}$ arises
-from conformational changes transmitted between subunits. When one haem group binds $\mathrm{'\{'}O_2{'\}'}$, the
+The quaternary structure is essential for function: the cooperative binding of $\mathrm{O_2{}$ arises
+from conformational changes transmitted between subunits. When one haem group binds $\mathrm{O_2{}$, the
 iron ion moves into the plane of the porphyrin ring, pulling the attached histidine residue and shifting
 the position of the entire subunit. This conformational change increases the affinity of the remaining
-three haem groups for $\mathrm{'\{'}O_2{'\}'}$.
+three haem groups for $\mathrm{O_2{}$.
 
 For further detail on the oxygen dissociation curve and the Bohr effect, see
 [Exchange and Transport](/docs/alevel/biology/exchange-and-transport).
@@ -440,7 +440,7 @@ Collagen is the most abundant protein in the human body and exemplifies fibrous 
 properties derive directly from its structure at every level:
 
 1. **Primary structure**: a repeating sequence of Gly-Pro-X (where X is often hydroxyproline). Glycine
-   (the smallest amino acid, with $R = -\mathrm{'\{'}H{'\}'}$) is essential because the three polypeptide chains
+   (the smallest amino acid, with $R = -\mathrm{H{}$) is essential because the three polypeptide chains
    pack very tightly in the triple helix, and only glycine is small enough to fit at the centre.
 
 2. **Secondary structure**: each chain forms a left-handed helix (not an $\alpha$-helix), stabilised by
@@ -524,24 +524,24 @@ The $Q_{10}$ temperature coefficient quantifies the effect of temperature on rea
 
 $$Q_{10} = \left(\frac{v_2}{v_1}\right)^{\frac{10}{T_2 - T_1}}$$
 
-or more commonly, where $T_2 - T_1 = 10\ ^\circ\mathrm{'\{'}C{'\}'}$:
+or more commonly, where $T_2 - T_1 = 10\ ^\circ\mathrm{C{}$:
 
 $$Q_{10} = \frac{v_{(T+10)}}{v_T}$$
 
 Most biological reactions have $Q_{10} \approx 2$--$3$, meaning the rate doubles or triples for each
-$10\ ^\circ\mathrm{'\{'}C{'\}'}$ increase in temperature (within the range before denaturation).
+$10\ ^\circ\mathrm{C{}$ increase in temperature (within the range before denaturation).
 
 **Worked Example.** An enzyme-catalysed reaction proceeds at a rate of $12\ \mu\mathrm{mol\ min^{-1}}$
-at $20\ ^\circ\mathrm{'\{'}C{'\}'}$. If $Q_{10} = 2.5$, what is the expected rate at $30\ ^\circ\mathrm{'\{'}C{'\}'}$?
+at $20\ ^\circ\mathrm{C{}$. If $Q_{10} = 2.5$, what is the expected rate at $30\ ^\circ\mathrm{C{}$?
 
 $$v_{30} = Q_{10} \times v_{20} = 2.5 \times 12 = 30\ \mu\mathrm{mol\ min^{-1}}$$
 
-At $40\ ^\circ\mathrm{'\{'}C{'\}'}$:
+At $40\ ^\circ\mathrm{C{}$:
 
 $$v_{40} = Q_{10} \times v_{30} = 2.5 \times 30 = 75\ \mu\mathrm{mol\ min^{-1}}$$
 
 However, this calculation assumes the enzyme has not denatured. If the optimum temperature is
-$37\ ^\circ\mathrm{'\{'}C{'\}'}$, the actual rate at $40\ ^\circ\mathrm{'\{'}C{'\}'}$ may be lower than predicted due to
+$37\ ^\circ\mathrm{C{}$, the actual rate at $40\ ^\circ\mathrm{C{}$ may be lower than predicted due to
 partial denaturation. The $Q_{10}$ relationship is only valid within the range where the enzyme is
 fully functional.
 
@@ -573,28 +573,28 @@ experiment.
 
 | Ion                       | Role                                                                                              |
 | ------------------------- | ------------------------------------------------------------------------------------------------- |
-| $\mathrm{Fe^{2+}}$        | Component of haem group in haemoglobin; essential for $\mathrm{'\{'}O_2{'\}'}$ transport                    |
-| $\mathrm{'\{'}Na^+{'\}'}$           | Co-transport of glucose in ileum; nerve impulse transmission (action potential)                   |
-| $\mathrm{'\{'}K^+{'\}'}$            | Co-transport; maintaining resting membrane potential; stomatal opening                             |
+| $\mathrm{Fe^{2+}}$        | Component of haem group in haemoglobin; essential for $\mathrm{O_2{}$ transport                    |
+| $\mathrm{Na^+{}$           | Co-transport of glucose in ileum; nerve impulse transmission (action potential)                   |
+| $\mathrm{K^+{}$            | Co-transport; maintaining resting membrane potential; stomatal opening                             |
 | $\mathrm{Ca^{2+}}$        | Bone and teeth structure; blood clotting cascade; muscle contraction (binds troponin)              |
 | $\mathrm{Mg^{2+}}$        | Component of chlorophyll; co-factor for many enzymes (e.g., DNA polymerase, Rubisco)              |
 | $\mathrm{PO_4^{3-}}$      | Component of ATP, DNA, RNA, phospholipids                                                         |
-| $\mathrm{'\{'}NO_3^-{'\}'}$         | Nitrogen source for amino acid synthesis                                                           |
-| $\mathrm{'\{'}H^+{'\}'}$ and $\mathrm{'\{'}OH^-{'\}'}$ | Determine pH; affect enzyme activity; proton gradients in respiration and photosynthesis   |
+| $\mathrm{NO_3^-{}$         | Nitrogen source for amino acid synthesis                                                           |
+| $\mathrm{H^+{}$ and $\mathrm{OH^-{}$ | Determine pH; affect enzyme activity; proton gradients in respiration and photosynthesis   |
 
 ### 10.2 Hydrogen Ions and pH
 
 The pH scale is defined as:
 
-$$\mathrm{'\{'}pH{'\}'} = -\log_{10}[\mathrm{'\{'}H^+{'\}'}]$$
+$$\mathrm{pH{} = -\log_{10}[\mathrm{H^+{}]$$
 
-where $[\mathrm{'\{'}H^+{'\}'}]$ is the hydrogen ion concentration in $\mathrm{mol\ dm^{-3}}$.
+where $[\mathrm{H^+{}]$ is the hydrogen ion concentration in $\mathrm{mol\ dm^{-3}}$.
 
-- Pure water: $[\mathrm{'\{'}H^+{'\}'}] = 10^{-7}\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{'\{'}pH{'\}'} = 7$.
-- Stomach acid: $[\mathrm{'\{'}H^+{'\}'}] \approx 0.01\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{'\{'}pH{'\}'} \approx 2$.
-- Blood: $[\mathrm{'\{'}H^+{'\}'}] \approx 4 \times 10^{-8}\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{'\{'}pH{'\}'} \approx 7.4$.
+- Pure water: $[\mathrm{H^+{}] = 10^{-7}\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{pH{} = 7$.
+- Stomach acid: $[\mathrm{H^+{}] \approx 0.01\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{pH{} \approx 2$.
+- Blood: $[\mathrm{H^+{}] \approx 4 \times 10^{-8}\ \mathrm{mol\ dm^{-3}}$, so $\mathrm{pH{} \approx 7.4$.
 
-A change of one pH unit represents a tenfold change in $[\mathrm{'\{'}H^+{'\}'}]$. Blood pH is tightly regulated
+A change of one pH unit represents a tenfold change in $[\mathrm{H^+{}]$. Blood pH is tightly regulated
 between 7.35 and 7.45 by the carbonic acid-bicarbonate buffer system (see
 [Exchange and Transport](/docs/alevel/biology/exchange-and-transport) for the Bohr effect).
 
@@ -608,7 +608,7 @@ reference to the type of glycosidic bond, hydrogen bonding, and the arrangement 
 **Answer.** Cellulose is composed of $\beta$-glucose monomers joined by $\beta$-1,4 glycosidic
 bonds. This configuration causes each successive glucose molecule to be rotated $180^\circ$ relative
 to its neighbour, creating a linear, unbranched chain. Adjacent cellulose chains align parallel and
-form extensive hydrogen bonds between $-\mathrm{'\{'}OH{'\}'}$ groups on adjacent chains. These
+form extensive hydrogen bonds between $-\mathrm{OH{}$ groups on adjacent chains. These
 hydrogen-bonded chains bundle together into **microfibrils**, which are further bundled into
 macrofibrils. This creates a rigid, strong meshwork that resists tensile forces and prevents the
 cell from bursting under osmotic pressure. The $\beta$-1,4 bond also makes cellulose resistant to
@@ -720,11 +720,11 @@ entropy of the phospholipids themselves.
 
 <details>
 <summary>Problem 7</summary>
-The enzyme catalase breaks down hydrogen peroxide: $2\mathrm{'\{'}H_2O_2{'\}'} \to 2\mathrm{'\{'}H_2O{'\}'} + \mathrm{'\{'}O_2{'\}'}$.
+The enzyme catalase breaks down hydrogen peroxide: $2\mathrm{H_2O_2{} \to 2\mathrm{H_2O{} + \mathrm{O_2{}$.
 A student investigates the effect of catalase concentration on the rate of reaction by measuring the
-volume of $\mathrm{'\{'}O_2{'\}'}$ produced in 60 seconds. The results are:
+volume of $\mathrm{O_2{}$ produced in 60 seconds. The results are:
 
-| Catalase concentration (arbitrary units) | Volume of $\mathrm{'\{'}O_2{'\}'}$ ($\mathrm{'\{'}cm^3{'\}'}$) |
+| Catalase concentration (arbitrary units) | Volume of $\mathrm{O_2{}$ ($\mathrm{cm^3{}$) |
 | ---------------------------------------- | ------------------------------------------- |
 | 1                                        | 4.2                                         |
 | 2                                        | 8.3                                         |
@@ -738,7 +738,7 @@ concentration does the reaction become limited by substrate availability?
 **Answer.** (b) At low catalase concentrations (1--4 units), the rate is approximately proportional to
 enzyme concentration (first-order kinetics: doubling enzyme concentration approximately doubles the
 rate). At higher concentrations (8--16 units), the rate begins to plateau (approaches zero-order
-kinetics). This is because the substrate ($\mathrm{'\{'}H_2O_2{'\}'}$) is becoming the limiting factor: at high
+kinetics). This is because the substrate ($\mathrm{H_2O_2{}$) is becoming the limiting factor: at high
 enzyme concentration, substrate molecules are converted to product as fast as they encounter an enzyme,
 and additional enzyme molecules have nothing to process.
 
@@ -763,7 +763,7 @@ These properties are suited to its structural role (connective tissue, tendons, 
 a varied primary structure with both hydrophilic and hydrophobic amino acids. The hydrophobic residues
 cluster in the interior and hydrophilic residues on the surface, making it soluble in water (globular).
 Its quaternary structure (four subunits) allows conformational changes between subunits, enabling
-cooperative $\mathrm{'\{'}O_2{'\}'}$ binding -- suited to its transport role. The key distinction is that
+cooperative $\mathrm{O_2{}$ binding -- suited to its transport role. The key distinction is that
 structural proteins require insolubility and mechanical strength, whereas transport proteins require
 solubility and the ability to change conformation.
 
@@ -804,15 +804,15 @@ is not infinitely greater than $K_m$. As $[S] \to \infty$, both rates approach $
 
 ### 11.1 Alpha vs Beta Anomers
 
-In aqueous solution, glucose exists in equilibrium between the linear (open-chain) form and two cyclic forms (alpha and beta anomers). The cyclisation occurs when the $\mathrm{'\{'}C1{'\}'}$ aldehyde group reacts with the $\mathrm{'\{'}C5{'\}'}$ hydroxyl group to form a 6-membered pyranose ring.
+In aqueous solution, glucose exists in equilibrium between the linear (open-chain) form and two cyclic forms (alpha and beta anomers). The cyclisation occurs when the $\mathrm{C1{}$ aldehyde group reacts with the $\mathrm{C5{}$ hydroxyl group to form a 6-membered pyranose ring.
 
-- **Alpha-glucose**: the $-\mathrm{'\{'}OH{'\}'}$ on $\mathrm{'\{'}C1{'\}'}$ is below the plane of the ring (trans to the $\mathrm{'\{'}C6{'\}'}\ \mathrm{'\{'}-CH_2OH{'\}'}$ group).
-- **Beta-glucose**: the $-\mathrm{'\{'}OH{'\}'}$ on $\mathrm{'\{'}C1{'\}'}$ is above the plane of the ring (cis to the $\mathrm{'\{'}C6{'\}'}\ \mathrm{'\{'}-CH_2OH{'\}'}$ group).
+- **Alpha-glucose**: the $-\mathrm{OH{}$ on $\mathrm{C1{}$ is below the plane of the ring (trans to the $\mathrm{C6{}\ \mathrm{-CH_2OH{}$ group).
+- **Beta-glucose**: the $-\mathrm{OH{}$ on $\mathrm{C1{}$ is above the plane of the ring (cis to the $\mathrm{C6{}\ \mathrm{-CH_2OH{}$ group).
 
-This difference appears minor (one $-\mathrm{'\{'}OH{'\}'}$ group flipped) but has enormous structural consequences:
+This difference appears minor (one $-\mathrm{OH{}$ group flipped) but has enormous structural consequences:
 
 - **Amylose** (starch) is made of $\alpha$-glucose joined by $\alpha$-1,4-glycosidic bonds. The chain coils into a helix, making it compact and suitable for energy storage.
-- **Cellulose** is made of $\beta$-glucose joined by $\beta$-1,4-glycosidic bonds. Every alternate glucose molecule is rotated $180$ degrees, so the $-\mathrm{'\{'}OH{'\}'}$ groups project from opposite sides of the chain. This allows extensive hydrogen bonding between adjacent chains, forming rigid, insoluble fibres ideal for structural support.
+- **Cellulose** is made of $\beta$-glucose joined by $\beta$-1,4-glycosidic bonds. Every alternate glucose molecule is rotated $180$ degrees, so the $-\mathrm{OH{}$ groups project from opposite sides of the chain. This allows extensive hydrogen bonding between adjacent chains, forming rigid, insoluble fibres ideal for structural support.
 
 ### 11.2 Carbohydrate Digestion and Absorption
 
@@ -826,11 +826,11 @@ This difference appears minor (one $-\mathrm{'\{'}OH{'\}'}$ group flipped) but h
    - **Sucrase**: sucrose $\to$ glucose + fructose.
    - **Lactase**: lactose $\to$ glucose + galactose.
 
-**Absorption:** glucose and galactose are absorbed by **secondary active transport** via the SGLT1 co-transporter ($\mathrm{'\{'}Na^+{'\}'}$-glucose linked transporter), which uses the $\mathrm{'\{'}Na^+{'\}'}$ gradient maintained by the $\mathrm{'\{'}Na^+/K^+{'\}'}$ ATPase pump. Fructose is absorbed by **facilitated diffusion** via the GLUT5 transporter. All three monosaccharides exit the cell into the bloodstream via GLUT2.
+**Absorption:** glucose and galactose are absorbed by **secondary active transport** via the SGLT1 co-transporter ($\mathrm{Na^+{}$-glucose linked transporter), which uses the $\mathrm{Na^+{}$ gradient maintained by the $\mathrm{Na^+/K^+{}$ ATPase pump. Fructose is absorbed by **facilitated diffusion** via the GLUT5 transporter. All three monosaccharides exit the cell into the bloodstream via GLUT2.
 
 ### 11.3 Lactose Intolerance
 
-**Lactose intolerance** results from insufficient lactase production in adulthood (primary lactase deficiency). Undigested lactose passes to the large intestine, where it is fermented by gut bacteria, producing gas ($\mathrm{'\{'}CO_2{'\}'}$, $\mathrm{'\{'}H_2{'\}'}$, methane) and organic acids. This causes bloating, flatulence, abdominal cramps, and osmotic diarrhoea (the undigested lactose increases the osmolarity of the intestinal contents, drawing water into the lumen).
+**Lactose intolerance** results from insufficient lactase production in adulthood (primary lactase deficiency). Undigested lactose passes to the large intestine, where it is fermented by gut bacteria, producing gas ($\mathrm{CO_2{}$, $\mathrm{H_2{}$, methane) and organic acids. This causes bloating, flatulence, abdominal cramps, and osmotic diarrhoea (the undigested lactose increases the osmolarity of the intestinal contents, drawing water into the lumen).
 
 Lactase persistence in adults is caused by mutations upstream of the _LCT_ gene on chromosome 2, which allow continued lactase expression. This trait evolved independently in European, East African, and Middle Eastern populations -- a classic example of **convergent evolution** driven by the cultural practice of dairy farming (gene-culture coevolution).
 
@@ -897,7 +897,7 @@ Misfolded proteins are targeted for degradation by the **ubiquitin-proteasome sy
 
 **Prions** ($\mathrm{PrP^{Sc}}$) are infectious protein particles that cause neurodegenerative diseases (e.g., Creutzfeldt-Jakob disease in humans, BSE in cattle, scrapie in sheep).
 
-The normal cellular prion protein ($\mathrm{'\{'}PrP^C{'\}'}$) is a $\alpha$-helix-rich protein on the surface of neurons. The infectious form ($\mathrm{PrP^{Sc}}$) has a different conformation with more $\beta$-sheet content. When $\mathrm{PrP^{Sc}}$ contacts $\mathrm{'\{'}PrP^C{'\}'}$, it converts it to the abnormal conformation -- a chain reaction.
+The normal cellular prion protein ($\mathrm{PrP^C{}$) is a $\alpha$-helix-rich protein on the surface of neurons. The infectious form ($\mathrm{PrP^{Sc}}$) has a different conformation with more $\beta$-sheet content. When $\mathrm{PrP^{Sc}}$ contacts $\mathrm{PrP^C{}$, it converts it to the abnormal conformation -- a chain reaction.
 
 Key features of prions:
 - They contain no nucleic acid (no DNA or RNA) -- the information is carried purely in the protein's 3D structure.
@@ -908,7 +908,7 @@ Key features of prions:
 
 ### 14.1 DNA Supercoiling
 
-In vivo, DNA is **supercoiled**: the double helix itself is coiled around histone proteins to form nucleosomes. Supercoiling allows the long DNA molecule (approximately 2 m per human cell) to fit inside the nucleus (diameter $\approx 5\ \mu\mathrm{'\{'}m{'\}'}$).
+In vivo, DNA is **supercoiled**: the double helix itself is coiled around histone proteins to form nucleosomes. Supercoiling allows the long DNA molecule (approximately 2 m per human cell) to fit inside the nucleus (diameter $\approx 5\ \mu\mathrm{m{}$).
 
 - **Negative supercoiling** (underwinding) makes it easier to separate the strands for transcription and replication.
 - **Positive supercoiling** (overwinding) occurs ahead of the replication fork and is relieved by **topoisomerase** enzymes (e.g., DNA gyrase in bacteria), which cut one or both strands, allow rotation, and reseal them.
@@ -921,7 +921,7 @@ In vivo, DNA is **supercoiled**: the double helix itself is coiled around histon
 | tRNA | Transfer RNA | Cloverleaf secondary structure; L-shaped tertiary structure; 3' CCA end | Carries specific amino acids to the ribosome; anticodon pairs with mRNA codon |
 | rRNA | Ribosomal RNA | Large, complex secondary and tertiary structure | Catalytic and structural component of ribosomes (rRNA is the ribozyme, not protein) |
 | snRNA | Small nuclear RNA | Short, complexed with proteins to form snRNPs | Splicing of pre-mRNA (removal of introns) in the spliceosome |
-| miRNA | Micro RNA | Short ($\approx 22\ \mathrm{'\{'}nt{'\}'}$), single-stranded | Post-transcriptional gene regulation: binds to mRNA and inhibits translation or promotes degradation |
+| miRNA | Micro RNA | Short ($\approx 22\ \mathrm{nt{}$), single-stranded | Post-transcriptional gene regulation: binds to mRNA and inhibits translation or promotes degradation |
 | siRNA | Small interfering RNA | Short double-stranded RNA | RNA interference: triggers degradation of complementary mRNA |
 
 ### 14.3 Telomeres and the Hayflick Limit
@@ -938,7 +938,7 @@ After approximately 40--60 cell divisions (the **Hayflick limit**), the telomere
 
 ### 15.1 Calcium Ions ($\mathrm{Ca^{2+}}$)
 
-Calcium ions are essential second messengers in cell signalling. They are stored at high concentration in the sarcoplasmic reticulum (muscle cells) and endoplasmic reticulum (other cells), and at low concentration in the cytoplasm ($\approx 0.1\ \mu\mathrm{'\{'}M{'\}'}$).
+Calcium ions are essential second messengers in cell signalling. They are stored at high concentration in the sarcoplasmic reticulum (muscle cells) and endoplasmic reticulum (other cells), and at low concentration in the cytoplasm ($\approx 0.1\ \mu\mathrm{M{}$).
 
 **Role in muscle contraction:** when an action potential arrives at a neuromuscular junction, acetylcholine is released, triggering an action potential in the muscle fibre. This depolarisation causes $\mathrm{Ca^{2+}}$ release from the sarcoplasmic reticulum. $\mathrm{Ca^{2+}}$ binds to **troponin C**, causing a conformational change that moves tropomyosin away from the myosin-binding sites on actin filaments. Myosin heads can then bind to actin and undergo the power stroke, causing muscle contraction.
 
@@ -946,26 +946,26 @@ Calcium ions are essential second messengers in cell signalling. They are stored
 
 ### 15.2 Iron Ions ($\mathrm{Fe^{2+/3+}}$)
 
-Iron is a component of **haem**, the prosthetic group in haemoglobin, myoglobin, and cytochromes. In haemoglobin, each of the four polypeptide chains contains one haem group, each of which binds one $\mathrm{'\{'}O_2{'\}'}$ molecule.
+Iron is a component of **haem**, the prosthetic group in haemoglobin, myoglobin, and cytochromes. In haemoglobin, each of the four polypeptide chains contains one haem group, each of which binds one $\mathrm{O_2{}$ molecule.
 
 Iron exists in two oxidation states in biology:
-- $\mathrm{Fe^{2+}}$ (ferrous): binds $\mathrm{'\{'}O_2{'\}'}$ in haemoglobin and myoglobin.
-- $\mathrm{Fe^{3+}}$ (ferric): does not bind $\mathrm{'\{'}O_2{'\}'}$. Oxidation of $\mathrm{Fe^{2+}}$ to $\mathrm{Fe^{3+}}$ produces **methaemoglobin**, which cannot carry $\mathrm{'\{'}O_2{'\}'}$.
+- $\mathrm{Fe^{2+}}$ (ferrous): binds $\mathrm{O_2{}$ in haemoglobin and myoglobin.
+- $\mathrm{Fe^{3+}}$ (ferric): does not bind $\mathrm{O_2{}$. Oxidation of $\mathrm{Fe^{2+}}$ to $\mathrm{Fe^{3+}}$ produces **methaemoglobin**, which cannot carry $\mathrm{O_2{}$.
 
-Iron deficiency causes **anaemia** (reduced haemoglobin, reduced $\mathrm{'\{'}O_2{'\}'}$-carrying capacity, fatigue, pallor). Iron overload (haemochromatosis) causes liver damage, diabetes, and heart failure.
+Iron deficiency causes **anaemia** (reduced haemoglobin, reduced $\mathrm{O_2{}$-carrying capacity, fatigue, pallor). Iron overload (haemochromatosis) causes liver damage, diabetes, and heart failure.
 
-### 15.3 Hydrogen Ions ($\mathrm{'\{'}H^+{'\}'}$) and Buffers
+### 15.3 Hydrogen Ions ($\mathrm{H^+{}$) and Buffers
 
-$\mathrm{'\{'}H^+{'\}'}$ concentration determines pH ($\mathrm{'\{'}pH{'\}'} = -\log_{10}[\mathrm{'\{'}H^+{'\}'}]$). Biological systems require tight pH regulation because enzyme activity is pH-dependent.
+$\mathrm{H^+{}$ concentration determines pH ($\mathrm{pH{} = -\log_{10}[\mathrm{H^+{}]$). Biological systems require tight pH regulation because enzyme activity is pH-dependent.
 
 **Buffer systems** resist pH changes:
 
-1. **Bicarbonate buffer** (blood): $\mathrm{'\{'}H^+ + HCO_3^- \rightleftharpoons H_2CO_3 \rightleftharpoons CO_2 + H_2O{'\}'}$. This is the most important blood buffer because both components ($\mathrm{'\{'}HCO_3^-{'\}'}$ and $\mathrm{'\{'}CO_2{'\}'}$) can be regulated: $\mathrm{'\{'}CO_2{'\}'}$ by ventilation, $\mathrm{'\{'}HCO_3^-{'\}'}$ by the kidneys.
-2. **Phosphate buffer** (intracellular, urine): $\mathrm{H_2PO_4^- \rightleftharpoons H^+ + HPO_4^{2-}}$, $\mathrm{'\{'}p{'\}'}K_a \approx 7.2$ (close to physiological pH).
-3. **Protein buffer** (blood): haemoglobin binds $\mathrm{'\{'}H^+{'\}'}$ (forming haemoglobinic acid), buffering the $\mathrm{'\{'}H^+{'\}'}$ produced by $\mathrm{'\{'}CO_2{'\}'}$ transport (the Bohr effect).
+1. **Bicarbonate buffer** (blood): $\mathrm{H^+ + HCO_3^- \rightleftharpoons H_2CO_3 \rightleftharpoons CO_2 + H_2O{}$. This is the most important blood buffer because both components ($\mathrm{HCO_3^-{}$ and $\mathrm{CO_2{}$) can be regulated: $\mathrm{CO_2{}$ by ventilation, $\mathrm{HCO_3^-{}$ by the kidneys.
+2. **Phosphate buffer** (intracellular, urine): $\mathrm{H_2PO_4^- \rightleftharpoons H^+ + HPO_4^{2-}}$, $\mathrm{p{}K_a \approx 7.2$ (close to physiological pH).
+3. **Protein buffer** (blood): haemoglobin binds $\mathrm{H^+{}$ (forming haemoglobinic acid), buffering the $\mathrm{H^+{}$ produced by $\mathrm{CO_2{}$ transport (the Bohr effect).
 
 :::warning
-Common Pitfall Students often write that "buffers prevent pH change." This is incorrect. Buffers **minimise** pH change -- they do not prevent it entirely. A buffer resists pH change by providing a reservoir of both a weak acid and its conjugate base, which can react with added $\mathrm{'\{'}H^+{'\}'}$ or $\mathrm{'\{'}OH^-{'\}'}$.
+Common Pitfall Students often write that "buffers prevent pH change." This is incorrect. Buffers **minimise** pH change -- they do not prevent it entirely. A buffer resists pH change by providing a reservoir of both a weak acid and its conjugate base, which can react with added $\mathrm{H^+{}$ or $\mathrm{OH^-{}$.
 :::
 
 ## 19. Lipid Digestion and Transport in Detail
@@ -976,7 +976,7 @@ Bile salts (produced in the liver and stored in the gall bladder) emulsify fats 
 
 1. **Bile salts** are amphipathic molecules (have both hydrophilic and hydrophobic regions).
 2. The hydrophilic regions interact with water, while the hydrophobic regions interact with the fat droplet.
-3. This reduces the surface tension and breaks large fat globules into smaller droplets (1--2 $\mu\mathrm{'\{'}m{'\}'}$ diameter), increasing the surface area available for lipase action.
+3. This reduces the surface tension and breaks large fat globules into smaller droplets (1--2 $\mu\mathrm{m{}$ diameter), increasing the surface area available for lipase action.
 
 ### 19.2 Pancreatic Lipase
 
@@ -1078,7 +1078,7 @@ The y-intercept $= \frac{1}{V_{\max}}$; the x-intercept $= -\frac{1}{K_m}$; the 
 
 A student measures the rate of an enzyme-catalysed reaction at different substrate concentrations:
 
-| $[S]$ ($\mathrm{'\{'}mM{'\}'}$) | Rate $v$ ($\mu\mathrm{mol\ min^{-1}}$) | $\frac{1}{[S]}$ ($\mathrm{mM^{-1}}$) | $\frac{1}{v}$ ($\mathrm{min\ \mu mol^{-1}}$) |
+| $[S]$ ($\mathrm{mM{}$) | Rate $v$ ($\mu\mathrm{mol\ min^{-1}}$) | $\frac{1}{[S]}$ ($\mathrm{mM^{-1}}$) | $\frac{1}{v}$ ($\mathrm{min\ \mu mol^{-1}}$) |
 | --- | --- | --- | --- |
 | 2 | 6.7 | 0.500 | 0.149 |
 | 5 | 13.3 | 0.200 | 0.075 |
@@ -1095,9 +1095,9 @@ From the Michaelis-Menten equation: $v = \frac{V_{\max} [S]}{K_m + [S]}$.
 
 At $v = \frac{V_{\max}}{2}$: $[S] = K_m$.
 
-$\frac{V_{\max}}{2} = 20\ \mu\mathrm{mol\ min^{-1}}$. At $v = 20$, $[S] = 10\ \mathrm{'\{'}mM{'\}'}$.
+$\frac{V_{\max}}{2} = 20\ \mu\mathrm{mol\ min^{-1}}$. At $v = 20$, $[S] = 10\ \mathrm{mM{}$.
 
-Therefore: $K_m = 10\ \mathrm{'\{'}mM{'\}'}$ and $V_{\max} = 40\ \mu\mathrm{mol\ min^{-1}}$.
+Therefore: $K_m = 10\ \mathrm{mM{}$ and $V_{\max} = 40\ \mu\mathrm{mol\ min^{-1}}$.
 
 ## 20. Proteins: Advanced Structure and Function
 
@@ -1115,19 +1115,19 @@ Therefore: $K_m = 10\ \mathrm{'\{'}mM{'\}'}$ and $V_{\max} = 40\ \mu\mathrm{mol\
 **Haemoglobin structure:**
 - Quaternary protein with 4 subunits (2 $\alpha$ chains, 2 $\beta$ chains).
 - Each subunit contains a **haem group** (protoporphyrin ring with an $\mathrm{Fe^{2+}}$ ion at the centre).
-- Each haem group can bind one $\mathrm{'\{'}O_2{'\}'}$ molecule, so each haemoglobin molecule can carry up to 4 $\mathrm{'\{'}O_2{'\}'}$ molecules.
+- Each haem group can bind one $\mathrm{O_2{}$ molecule, so each haemoglobin molecule can carry up to 4 $\mathrm{O_2{}$ molecules.
 
 **Oxygen dissociation curves:**
 
-The oxyhaemoglobin dissociation curve is sigmoidal (S-shaped) because of **cooperative binding**: binding of the first $\mathrm{'\{'}O_2{'\}'}$ molecule induces a conformational change (T state $\to$ R state) that increases the affinity of the remaining haem groups for $\mathrm{'\{'}O_2{'\}'}$.
+The oxyhaemoglobin dissociation curve is sigmoidal (S-shaped) because of **cooperative binding**: binding of the first $\mathrm{O_2{}$ molecule induces a conformational change (T state $\to$ R state) that increases the affinity of the remaining haem groups for $\mathrm{O_2{}$.
 
 | Factor | Effect on Curve | Explanation |
 | ------ | --------------- | ----------- |
-| High $\mathrm{'\{'}pCO_2{'\}'}$ (Bohr effect) | Right shift | $\mathrm{'\{'}H^+{'\}'}$ ions bind to haemoglobin, reducing its affinity for $\mathrm{'\{'}O_2{'\}'}$ (promoting $\mathrm{'\{'}O_2{'\}'}$ release in metabolically active tissues) |
-| Low pH (high $[\mathrm{'\{'}H^+{'\}'}]$) | Right shift | Same mechanism as Bohr effect |
-| High temperature | Right shift | Reduces haemoglobin's affinity for $\mathrm{'\{'}O_2{'\}'}$ (more $\mathrm{'\{'}O_2{'\}'}$ released in active muscles, which generate heat) |
-| High 2,3-BPG concentration | Right shift | 2,3-BPG binds to deoxyhaemoglobin, stabilising the T state and promoting $\mathrm{'\{'}O_2{'\}'}$ unloading |
-| Foetal haemoglobin (HbF) | Left shift | Higher affinity for $\mathrm{'\{'}O_2{'\}'}$ than adult haemoglobin (HbA), allowing efficient $\mathrm{'\{'}O_2{'\}'}$ transfer from mother to foetus across the placenta |
+| High $\mathrm{pCO_2{}$ (Bohr effect) | Right shift | $\mathrm{H^+{}$ ions bind to haemoglobin, reducing its affinity for $\mathrm{O_2{}$ (promoting $\mathrm{O_2{}$ release in metabolically active tissues) |
+| Low pH (high $[\mathrm{H^+{}]$) | Right shift | Same mechanism as Bohr effect |
+| High temperature | Right shift | Reduces haemoglobin's affinity for $\mathrm{O_2{}$ (more $\mathrm{O_2{}$ released in active muscles, which generate heat) |
+| High 2,3-BPG concentration | Right shift | 2,3-BPG binds to deoxyhaemoglobin, stabilising the T state and promoting $\mathrm{O_2{}$ unloading |
+| Foetal haemoglobin (HbF) | Left shift | Higher affinity for $\mathrm{O_2{}$ than adult haemoglobin (HbA), allowing efficient $\mathrm{O_2{}$ transfer from mother to foetus across the placenta |
 
 ### 20.3 Enzyme Inhibition: Competitive vs Non-Competitive
 
@@ -1229,14 +1229,14 @@ Water always moves from a region of higher water potential to a region of lower 
 
 | Ion | Role | Deficiency Consequence |
 | --- | ---- | --------------------- |
-| $\mathrm{'\{'}Na^+{'\}'}$ | Nerve impulse transmission; $\mathrm{'\{'}Na^+/K^+{'\}'}$ pump; co-transport of glucose/amino acids | Hyponatraemia (confusion, seizures) |
-| $\mathrm{'\{'}K^+{'\}'}$ | Nerve impulse transmission; stomatal opening; enzyme cofactor | Hypokalaemia (muscle weakness, cardiac arrhythmias) |
+| $\mathrm{Na^+{}$ | Nerve impulse transmission; $\mathrm{Na^+/K^+{}$ pump; co-transport of glucose/amino acids | Hyponatraemia (confusion, seizures) |
+| $\mathrm{K^+{}$ | Nerve impulse transmission; stomatal opening; enzyme cofactor | Hypokalaemia (muscle weakness, cardiac arrhythmias) |
 | $\mathrm{Ca^{2+}}$ | Bone and teeth formation; blood clotting (factor IV); muscle contraction; second messenger | Osteoporosis; tetany |
 | $\mathrm{Mg^{2+}}$ | Chlorophyll component; enzyme cofactor (e.g., Rubisco, DNA polymerases) | Chlorosis (yellowing of leaves); muscle cramps |
 | $\mathrm{Fe^{2+/3+}}$ | Haemoglobin component (oxygen transport); cytochromes (ETC) | Anaemia (iron deficiency); chlorosis |
 | $\mathrm{PO_4^{3-}}$ | ATP, DNA, RNA, phospholipids; bone and teeth | Rickets (children); osteomalacia (adults); poor root development in plants |
-| $\mathrm{'\{'}NO_3^-{'\}'}$ | Amino acid and protein synthesis; nucleotide synthesis | Chlorosis (nitrogen deficiency); poor growth |
-| $\mathrm{'\{'}I^-{'\}'}$ | Thyroid hormone synthesis ($\mathrm{'\{'}T_3{'\}'}$, $\mathrm{'\{'}T_4{'\}'}$) | Goitre; cretinism (in infants); hypothyroidism |
+| $\mathrm{NO_3^-{}$ | Amino acid and protein synthesis; nucleotide synthesis | Chlorosis (nitrogen deficiency); poor growth |
+| $\mathrm{I^-{}$ | Thyroid hormone synthesis ($\mathrm{T_3{}$, $\mathrm{T_4{}$) | Goitre; cretinism (in infants); hypothyroidism |
 
 ## 23. Biochemical Tests
 
@@ -1355,7 +1355,7 @@ Monosaccharides are the simplest carbohydrates (single sugar units):
 | Sucrose | Glucose + fructose | $\alpha$-1,2 glycosidic | Cane sugar, beet sugar; transported in phloem |
 | Lactose | Glucose + galactose | $\beta$-1,4 glycosidic | Milk |
 
-**Lactose intolerance:** deficiency of lactase (the enzyme that hydrolyses lactose into glucose and galactose) causes undigested lactose to reach the large intestine, where bacteria ferment it, producing gas ($\mathrm{'\{'}CO_2{'\}'}$, $\mathrm{'\{'}CH_4{'\}'}$) and causing bloating, flatulence, and diarrhoea. Approximately 70% of the world's adult population has some degree of lactase deficiency.
+**Lactose intolerance:** deficiency of lactase (the enzyme that hydrolyses lactose into glucose and galactose) causes undigested lactose to reach the large intestine, where bacteria ferment it, producing gas ($\mathrm{CO_2{}$, $\mathrm{CH_4{}$) and causing bloating, flatulence, and diarrhoea. Approximately 70% of the world's adult population has some degree of lactase deficiency.
 
 ### 25.3 Polysaccharides
 
@@ -1371,9 +1371,9 @@ Monosaccharides are the simplest carbohydrates (single sugar units):
 
 ### 26.1 Non-Competitive Inhibition Worked Example
 
-An enzyme has $V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$ and $K_m = 5\ \mathrm{'\{'}mM{'\}'}$ without inhibitor. With a non-competitive inhibitor present, $V_{\max}$ is reduced to $25\ \mu\mathrm{mol\ min^{-1}}$ and $K_m$ remains $5\ \mathrm{'\{'}mM{'\}'}$.
+An enzyme has $V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$ and $K_m = 5\ \mathrm{mM{}$ without inhibitor. With a non-competitive inhibitor present, $V_{\max}$ is reduced to $25\ \mu\mathrm{mol\ min^{-1}}$ and $K_m$ remains $5\ \mathrm{mM{}$.
 
-At $[S] = 5\ \mathrm{'\{'}mM{'\}'}$:
+At $[S] = 5\ \mathrm{mM{}$:
 
 Without inhibitor: $v = \frac{50 \times 5}{5 + 5} = 25\ \mu\mathrm{mol\ min^{-1}}$ (50% of $V_{\max}$).
 
@@ -1383,15 +1383,15 @@ The rate is halved, and increasing $[S]$ cannot overcome the inhibition.
 
 ### 26.2 Competitive Inhibition Worked Example
 
-The same enzyme ($V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$, $K_m = 5\ \mathrm{'\{'}mM{'\}'}$) with a competitive inhibitor. $V_{\max}$ remains 50, but apparent $K_m$ increases to $15\ \mathrm{'\{'}mM{'\}'}$.
+The same enzyme ($V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$, $K_m = 5\ \mathrm{mM{}$) with a competitive inhibitor. $V_{\max}$ remains 50, but apparent $K_m$ increases to $15\ \mathrm{mM{}$.
 
-At $[S] = 5\ \mathrm{'\{'}mM{'\}'}$:
+At $[S] = 5\ \mathrm{mM{}$:
 
 Without inhibitor: $v = \frac{50 \times 5}{5 + 5} = 25\ \mu\mathrm{mol\ min^{-1}}$.
 
 With inhibitor: $v = \frac{50 \times 5}{15 + 5} = 12.5\ \mu\mathrm{mol\ min^{-1}}$.
 
-At $[S] = 50\ \mathrm{'\{'}mM{'\}'}$:
+At $[S] = 50\ \mathrm{mM{}$:
 
 Without inhibitor: $v = \frac{50 \times 50}{5 + 50} = 45.5\ \mu\mathrm{mol\ min^{-1}}$.
 
@@ -1440,11 +1440,11 @@ Globular proteins have a compact, roughly spherical 3D structure and are functio
 
 | Protein | Function | Structure |
 | ------- | -------- | --------- |
-| Haemoglobin | $\mathrm{'\{'}O_2{'\}'}$ transport in blood | Quaternary ($\alpha_2\beta_2$); globin fold in each subunit |
+| Haemoglobin | $\mathrm{O_2{}$ transport in blood | Quaternary ($\alpha_2\beta_2$); globin fold in each subunit |
 | Insulin | Hormone (regulates blood glucose) | Two polypeptide chains (A and B) joined by disulphide bonds |
 | Enzymes | Catalyse biochemical reactions | Active site with specific 3D conformation; induced fit model |
 | Antibodies | Immune defence ( recognise antigens) | Y-shaped; variable region (antigen binding) and constant region (effector function) |
-| Myoglobin | $\mathrm{'\{'}O_2{'\}'}$ storage in muscle | Single polypeptide with a haem group; higher $\mathrm{'\{'}O_2{'\}'}$ affinity than haemoglobin |
+| Myoglobin | $\mathrm{O_2{}$ storage in muscle | Single polypeptide with a haem group; higher $\mathrm{O_2{}$ affinity than haemoglobin |
 | Lysozyme | Enzyme that breaks down bacterial cell walls (peptidoglycan) | Compact globular protein with a cleft (active site) |
 
 ## 28. Enzyme Kinetics: Michaelis-Menten in Detail
@@ -1464,8 +1464,8 @@ $$v = \frac{V_{max} \times [S]}{K_m + [S]}$$
 
 | $K_m$ Value | Enzyme-Substrate Affinity | Example |
 | ----------- | ------------------------- | ------- |
-| Low $K_m$ | High affinity (enzyme reaches $\frac{V_{max}}{2}$ at low $[S]$) | Hexokinase (glucose phosphorylation; $K_m \approx 0.1\ \mathrm{'\{'}mM{'\}'}$) |
-| High $K_m$ | Low affinity (enzyme needs high $[S]$ to reach $\frac{V_{max}}{2}$) | Glucokinase (liver glucose phosphorylation; $K_m \approx 10\ \mathrm{'\{'}mM{'\}'}$; ensures liver only processes glucose when blood glucose is high) |
+| Low $K_m$ | High affinity (enzyme reaches $\frac{V_{max}}{2}$ at low $[S]$) | Hexokinase (glucose phosphorylation; $K_m \approx 0.1\ \mathrm{mM{}$) |
+| High $K_m$ | Low affinity (enzyme needs high $[S]$ to reach $\frac{V_{max}}{2}$) | Glucokinase (liver glucose phosphorylation; $K_m \approx 10\ \mathrm{mM{}$; ensures liver only processes glucose when blood glucose is high) |
 
 ### 28.3 Lineweaver-Burk Plot
 
@@ -1489,7 +1489,7 @@ This is a straight line: $y = mx + c$ where:
 
 A triglyceride consists of one glycerol molecule esterified to three fatty acid chains:
 
-$$\text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'} \to \text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{'\{'}H_2O{'\}'}$$
+$$\text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'} \to \text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{H_2O{}$$
 
 | Fatty Acid Type | Bond Type | State at Room Temperature | Examples |
 | --------------- | --------- | ------------------------ | -------- |
@@ -1513,9 +1513,9 @@ Phospholipids are similar to triglycerides but with one fatty acid replaced by a
 
 | Feature | Description |
 | ------- | ----------- |
-| Structure | Steroid ring system (4 fused carbon rings) with a hydroxyl group ($-\mathrm{'\{'}OH{'\}'}$) and a hydrocarbon tail |
-| Amphipathic | Small polar head ($-\mathrm{'\{'}OH{'\}'}$) and large non-polar body (steroid rings + tail) |
-| Location in membrane | Interspersed between phospholipids in the bilayer; the $-\mathrm{'\{'}OH{'\}'}$ interacts with phosphate heads, the steroid rings with fatty acid tails |
+| Structure | Steroid ring system (4 fused carbon rings) with a hydroxyl group ($-\mathrm{OH{}$) and a hydrocarbon tail |
+| Amphipathic | Small polar head ($-\mathrm{OH{}$) and large non-polar body (steroid rings + tail) |
+| Location in membrane | Interspersed between phospholipids in the bilayer; the $-\mathrm{OH{}$ interacts with phosphate heads, the steroid rings with fatty acid tails |
 
 ## 30. Water: Properties and Biological Significance
 
@@ -1529,7 +1529,7 @@ Phospholipids are similar to triglycerides but with one fatty acid replaced by a
 | Cohesion | Hydrogen bonds between water molecules | Water columns in xylem vessels resist breaking (transpiration pull); water flows as a continuous stream |
 | Adhesion | Hydrogen bonds between water and hydrophilic surfaces | Water adheres to cell walls (capillary action); helps water move through soil |
 | Solvent properties | Polar nature of water; hydrogen bonding with solutes | Dissolves ions, sugars, amino acids, gases; enables metabolic reactions in aqueous cytoplasm and body fluids |
-| High density (maximum at 4$\degree\mathrm{'\{'}C{'\}'}$) | Hydrogen bonding creates an open lattice when frozen | Ice floats on water (insulates water below; prevents lakes from freezing solid; aquatic organisms survive winter) |
+| High density (maximum at 4$\degree\mathrm{C{}$) | Hydrogen bonding creates an open lattice when frozen | Ice floats on water (insulates water below; prevents lakes from freezing solid; aquatic organisms survive winter) |
 | Transparency | Water absorbs little visible light | Light penetrates water; enables photosynthesis in aquatic ecosystems |
 
 ### 30.2 Water as a Reactant
@@ -1537,7 +1537,7 @@ Phospholipids are similar to triglycerides but with one fatty acid replaced by a
 | Process | Role of Water |
 | ------- | ------------- |
 | Hydrolysis | Water breaks bonds (e.g., digestion of proteins, carbohydrates, lipids; ATP hydrolysis) |
-| Photosynthesis (light-dependent) | Water is split by photolysis: $\mathrm{'\{'}2H_2O \to 4H^+ + 4e^- + O_2{'\}'}$ (provides electrons and protons for the ETC) |
+| Photosynthesis (light-dependent) | Water is split by photolysis: $\mathrm{2H_2O \to 4H^+ + 4e^- + O_2{}$ (provides electrons and protons for the ETC) |
 | Condensation reactions | Water is a product (e.g., formation of peptide bonds, glycosidic bonds, ester bonds) |
 
 ## 31. Biochemical Tests for Biological Molecules
@@ -1546,10 +1546,10 @@ Phospholipids are similar to triglycerides but with one fatty acid replaced by a
 
 | Molecule | Test | Reagent(s) | Positive Result | Procedure |
 | -------- | ---- | ---------- | --------------- | --------- |
-| Reducing sugars | Benedict's test | Benedict's reagent (blue, contains $\mathrm{'\{'}CuSO_4{'\}'}$) | Brick-red precipitate ($\mathrm{'\{'}Cu_2O{'\}'}$) | Add 2 cm3 of food sample + 2 cm3 of Benedict's reagent; heat in boiling water bath for 5 min |
-| Non-reducing sugars | Benedict's test (after hydrolysis) | Benedict's reagent + dilute HCl + $\mathrm{'\{'}NaHCO_3{'\}'}$ | Brick-red precipitate (after hydrolysis) | First test with Benedict's (negative); then hydrolyse with dilute HCl (heat); neutralise with $\mathrm{'\{'}NaHCO_3{'\}'}$; re-test with Benedict's |
-| Starch | Iodine test | Iodine solution (potassium iodide-iodine, $\mathrm{'\{'}I_2/KI{'\}'}$) | Blue-black colour | Add a few drops of iodine solution to the sample |
-| Protein (peptide bonds) | Biuret test | Biuret reagent (NaOH + $\mathrm{'\{'}CuSO_4{'\}'}$) | Violet/purple colour | Add equal volumes of Biuret reagent to sample; gentle mixing; colour change within 5 min |
+| Reducing sugars | Benedict's test | Benedict's reagent (blue, contains $\mathrm{CuSO_4{}$) | Brick-red precipitate ($\mathrm{Cu_2O{}$) | Add 2 cm3 of food sample + 2 cm3 of Benedict's reagent; heat in boiling water bath for 5 min |
+| Non-reducing sugars | Benedict's test (after hydrolysis) | Benedict's reagent + dilute HCl + $\mathrm{NaHCO_3{}$ | Brick-red precipitate (after hydrolysis) | First test with Benedict's (negative); then hydrolyse with dilute HCl (heat); neutralise with $\mathrm{NaHCO_3{}$; re-test with Benedict's |
+| Starch | Iodine test | Iodine solution (potassium iodide-iodine, $\mathrm{I_2/KI{}$) | Blue-black colour | Add a few drops of iodine solution to the sample |
+| Protein (peptide bonds) | Biuret test | Biuret reagent (NaOH + $\mathrm{CuSO_4{}$) | Violet/purple colour | Add equal volumes of Biuret reagent to sample; gentle mixing; colour change within 5 min |
 | Lipids | Emulsion test | Ethanol; water | Milky white emulsion layer | Dissolve sample in ethanol; pour into water; if lipid is present, a cloudy white emulsion forms |
 | Vitamin C | DCPIP test | DCPIP solution (blue) | DCPIP decolourises (turns colourless) | Add DCPIP dropwise to the sample; count drops until decolourised |
 
@@ -1674,14 +1674,14 @@ DNA with a higher GC content is more stable (more hydrogen bonds hold the strand
 
 ### 36.1 Calculating the Effect of a Competitive Inhibitor
 
-**Scenario:** An enzyme has $K_m = 5\ \mathrm{'\{'}mM{'\}'}$ and $V_{max} = 100\ \mu\mathrm{'\{'}mol/min{'\}'}$. A competitive inhibitor is added that doubles the apparent $K_m$.
+**Scenario:** An enzyme has $K_m = 5\ \mathrm{mM{}$ and $V_{max} = 100\ \mu\mathrm{mol/min{}$. A competitive inhibitor is added that doubles the apparent $K_m$.
 
 | Parameter | Without Inhibitor | With Inhibitor |
 | --------- | ---------------- | -------------- |
 | $K_m$ | 5 mM | 10 mM (doubled) |
 | $V_{max}$ | 100 $\mu$mol/min | 100 $\mu$mol/min (unchanged) |
-| $v$ at $[S] = 5\ \mathrm{'\{'}mM{'\}'}$ | $\frac{100 \times 5}{5 + 5} = 50\ \mu\mathrm{'\{'}mol/min{'\}'}$ | $\frac{100 \times 5}{10 + 5} = 33.3\ \mu\mathrm{'\{'}mol/min{'\}'}$ |
-| $v$ at $[S] = 50\ \mathrm{'\{'}mM{'\}'}$ | $\frac{100 \times 50}{5 + 50} = 90.9\ \mu\mathrm{'\{'}mol/min{'\}'}$ | $\frac{100 \times 50}{10 + 50} = 83.3\ \mu\mathrm{'\{'}mol/min{'\}'}$ |
+| $v$ at $[S] = 5\ \mathrm{mM{}$ | $\frac{100 \times 5}{5 + 5} = 50\ \mu\mathrm{mol/min{}$ | $\frac{100 \times 5}{10 + 5} = 33.3\ \mu\mathrm{mol/min{}$ |
+| $v$ at $[S] = 50\ \mathrm{mM{}$ | $\frac{100 \times 50}{5 + 50} = 90.9\ \mu\mathrm{mol/min{}$ | $\frac{100 \times 50}{10 + 50} = 83.3\ \mu\mathrm{mol/min{}$ |
 
 At very high $[S]$, both approach $V_{max}$.
 
@@ -1693,8 +1693,8 @@ At very high $[S]$, both approach $V_{max}$.
 | --------- | ---------------- | -------------- |
 | $K_m$ | 5 mM | 5 mM (unchanged) |
 | $V_{max}$ | 100 $\mu$mol/min | 60 $\mu$mol/min (reduced) |
-| $v$ at $[S] = 5\ \mathrm{'\{'}mM{'\}'}$ | 50 $\mu$mol/min | $\frac{60 \times 5}{5 + 5} = 30\ \mu\mathrm{'\{'}mol/min{'\}'}$ |
-| $v$ at $[S] = 50\ \mathrm{'\{'}mM{'\}'}$ | 90.9 $\mu$mol/min | $\frac{60 \times 50}{5 + 50} = 54.5\ \mu\mathrm{'\{'}mol/min{'\}'}$ |
+| $v$ at $[S] = 5\ \mathrm{mM{}$ | 50 $\mu$mol/min | $\frac{60 \times 5}{5 + 5} = 30\ \mu\mathrm{mol/min{}$ |
+| $v$ at $[S] = 50\ \mathrm{mM{}$ | 90.9 $\mu$mol/min | $\frac{60 \times 50}{5 + 50} = 54.5\ \mu\mathrm{mol/min{}$ |
 
 Even at very high $[S]$, the inhibited enzyme never reaches the original $V_{max}$.
 
@@ -1702,13 +1702,13 @@ Even at very high $[S]$, the inhibited enzyme never reaches the original $V_{max
 
 ### 37.1 Triglyceride Synthesis (Esterification)
 
-$$\text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'} \xrightarrow{\text{'\{'}esterase{'\}'}} \text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{'\{'}H_2O{'\}'}$$
+$$\text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'} \xrightarrow{\text{'\{'}esterase{'\}'}} \text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{H_2O{}$$
 
 This is a **condensation reaction** (water is released).
 
 ### 37.2 Triglyceride Breakdown (Hydrolysis)
 
-$$\text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{'\{'}H_2O{'\}'} \xrightarrow{\text{'\{'}lipase{'\}'}} \text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'}$$
+$$\text{'\{'}Triglyceride{'\}'} + 3\ \mathrm{H_2O{} \xrightarrow{\text{'\{'}lipase{'\}'}} \text{'\{'}Glycerol{'\}'} + 3\ \text{'\{'}Fatty acids{'\}'}$$
 
 This is a **hydrolysis reaction** (water is used to break bonds).
 
@@ -1728,9 +1728,9 @@ This is a **hydrolysis reaction** (water is used to break bonds).
 
 All amino acids share the same basic structure:
 
-- An amino group ($-\mathrm{'\{'}NH_2{'\}'}$)
-- A carboxyl group ($-\mathrm{'\{'}COOH{'\}'}$)
-- A hydrogen atom ($-\mathrm{'\{'}H{'\}'}$)
+- An amino group ($-\mathrm{NH_2{}$)
+- A carboxyl group ($-\mathrm{COOH{}$)
+- A hydrogen atom ($-\mathrm{H{}$)
 - An R group (side chain) -- this is different for each of the 20 amino acids
 
 ### 38.2 Properties of the R Group
@@ -1748,7 +1748,7 @@ All amino acids share the same basic structure:
 
 Amino acids join by condensation reactions (peptide bond formation):
 
-$$\text{'\{'}Amino acid 1{'\}'} + \text{'\{'}Amino acid 2{'\}'} \to \text{'\{'}Dipeptide{'\}'} + \mathrm{'\{'}H_2O{'\}'}$$
+$$\text{'\{'}Amino acid 1{'\}'} + \text{'\{'}Amino acid 2{'\}'} \to \text{'\{'}Dipeptide{'\}'} + \mathrm{H_2O{}$$
 
 The peptide bond forms between the carboxyl group of one amino acid and the amino group of the next. The bond is a C--N bond (specifically, a carbon-nitrogen single bond with partial double-bond character due to resonance).
 
@@ -1758,7 +1758,7 @@ The peptide bond forms between the carboxyl group of one amino acid and the amin
 
 | Process | Type of Reaction | Enzyme | Products |
 | ------- | --------------- | ------ | -------- |
-| Synthesis | Condensation | Lipase (in reverse direction) | Triglyceride + 3 $\mathrm{'\{'}H_2O{'\}'}$ |
+| Synthesis | Condensation | Lipase (in reverse direction) | Triglyceride + 3 $\mathrm{H_2O{}$ |
 | Hydrolysis | Hydrolysis | Lipase | Glycerol + 3 fatty acids |
 | Digestion | Hydrolysis (in small intestine) | Pancreatic lipase | Monoglycerides + fatty acids (which are then absorbed) |
 
@@ -1797,7 +1797,7 @@ The peptide bond forms between the carboxyl group of one amino acid and the amin
 | Feature | Description |
 | ------- | ----------- |
 | Cause | Deficiency of lactase enzyme in the small intestine brush border |
-| Effect | Lactose passes undigested to the large intestine; bacteria ferment lactose; produces gas ($\mathrm{'\{'}CO_2{'\}'}$, $\mathrm{'\{'}CH_4{'\}'}$, $\mathrm{'\{'}H_2{'\}'}$) and organic acids |
+| Effect | Lactose passes undigested to the large intestine; bacteria ferment lactose; produces gas ($\mathrm{CO_2{}$, $\mathrm{CH_4{}$, $\mathrm{H_2{}$) and organic acids |
 | Symptoms | Bloating, flatulence, abdominal pain, diarrhoea |
 | Prevalence | ~70% of the world's population lose lactase activity after weaning; highest prevalence in East Asian, West African, and Native American populations |
 | Genetics | Lactase persistence (ability to digest lactose as an adult) is caused by mutations in the regulatory region of the _LCT_ gene; evolved independently in European, African, and Middle Eastern populations (convergent evolution) |
@@ -1816,8 +1816,8 @@ The peptide bond forms between the carboxyl group of one amino acid and the amin
 
 | Type | Description |
 | ---- | ----------- |
-| Alpha helix | Polypeptide chain coils into a spiral; hydrogen bonds form between the $\mathrm{'\{'}C=O{'\}'}$ of one amino acid and the $\mathrm{'\{'}N-H{'\}'}$ of another amino acid four residues later; these H-bonds run parallel to the helix axis |
-| Beta pleated sheet | Polypeptide chains lie alongside each other; hydrogen bonds form between $\mathrm{'\{'}C=O{'\}'}$ and $\mathrm{'\{'}N-H{'\}'}$ groups of adjacent chains; the sheet can be parallel or antiparallel |
+| Alpha helix | Polypeptide chain coils into a spiral; hydrogen bonds form between the $\mathrm{C=O{}$ of one amino acid and the $\mathrm{N-H{}$ of another amino acid four residues later; these H-bonds run parallel to the helix axis |
+| Beta pleated sheet | Polypeptide chains lie alongside each other; hydrogen bonds form between $\mathrm{C=O{}$ and $\mathrm{N-H{}$ groups of adjacent chains; the sheet can be parallel or antiparallel |
 
 ### 41.3 Tertiary Structure
 

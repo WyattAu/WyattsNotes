@@ -34,7 +34,7 @@ The atom consists of a nucleus containing **protons** and **neutrons** (collecti
 | Mass (u) | $1.00728$ | $1.00867$ | $0.00055$       |
 | Location | Nucleus   | Nucleus   | Electron shells |
 
-**Notation.** A nuclide is written as $\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'}$ where $A$ is the mass number
+**Notation.** A nuclide is written as $\prescript{A}{}{Z}\mathrm{X{}$ where $A$ is the mass number
 (nucleon number) and $Z$ is the atomic number (proton number). The neutron number is $N = A - Z$.
 
 **Isotopes** are atoms of the same element (same $Z$) with different mass numbers (different $N$).
@@ -43,10 +43,10 @@ The atom consists of a nucleus containing **protons** and **neutrons** (collecti
 
 ### Alpha Decay ($\alpha$)
 
-**Definition.** An alpha particle ($\alpha$) is a helium nucleus ($\prescript{4}{}{2}\mathrm{'\{'}He{'\}'}$),
+**Definition.** An alpha particle ($\alpha$) is a helium nucleus ($\prescript{4}{}{2}\mathrm{He{}$),
 emitted during alpha decay.
 
-$$\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'} \to \prescript{A-4}{}{Z-2}\mathrm{'\{'}Y{'\}'} + \prescript{4}{}{2}\alpha$$
+$$\prescript{A}{}{Z}\mathrm{X{} \to \prescript{A-4}{}{Z-2}\mathrm{Y{} + \prescript{4}{}{2}\alpha$$
 
 **Conservation checks:**
 
@@ -62,7 +62,7 @@ proton in beta-minus decay.
 
 A neutron converts to a proton, emitting an electron and an antineutrino:
 
-$$\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'} \to \prescript{A}{}{Z+1}\mathrm{'\{'}Y{'\}'} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$$
+$$\prescript{A}{}{Z}\mathrm{X{} \to \prescript{A}{}{Z+1}\mathrm{Y{} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$$
 
 **Conservation checks:**
 
@@ -82,7 +82,7 @@ neutron in beta-plus decay.
 
 A proton converts to a neutron, emitting a positron and a neutrino:
 
-$$\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'} \to \prescript{A}{}{Z-1}\mathrm{'\{'}Y{'\}'} + \prescript{0}{}{+1}\beta^+ + \nu_e$$
+$$\prescript{A}{}{Z}\mathrm{X{} \to \prescript{A}{}{Z-1}\mathrm{Y{} + \prescript{0}{}{+1}\beta^+ + \nu_e$$
 
 This only occurs in proton-rich nuclei.
 
@@ -94,7 +94,7 @@ nuclear transitions.
 After alpha or beta decay, the daughter nucleus is often in an excited state. It de-excites by
 emitting a gamma ray (high-energy photon):
 
-$$\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'}^* \to \prescript{A}{}{Z}\mathrm{'\{'}X{'\}'} + \gamma$$
+$$\prescript{A}{}{Z}\mathrm{X{}^* \to \prescript{A}{}{Z}\mathrm{X{} + \gamma$$
 
 No change in $A$ or $Z$. Gamma rays are weakly ionising but highly penetrating (stopped by thick
 lead or concrete).
@@ -157,7 +157,7 @@ $$A = \lambda N_0 e^{-\lambda t} = A_0 e^{-\lambda t}$$
 
 **Definition.** The becquerel is the SI unit of activity; 1 Bq = 1 decay per second.
 
-$$\boxed{1\,\mathrm{'\{'}Bq{'\}'} = 1\,\mathrm{'\{'}decay s{'\}'}^{-1}}$$
+$$\boxed{1\,\mathrm{Bq{} = 1\,\mathrm{decay s{}^{-1}}$$
 
 ### Half-Life
 
@@ -201,7 +201,7 @@ When ionising radiation enters through the thin mica window, it ionises gas atom
 electrons are accelerated towards the anode, gaining enough energy to ionise further atoms in an
 **avalanche** process. Each avalanche produces a current pulse, which is counted electronically.
 
-- The GM tube has a **dead time** of approximately $100\,\mu\mathrm{'\{'}s{'\}'}$ after each count, during
+- The GM tube has a **dead time** of approximately $100\,\mu\mathrm{s{}$ after each count, during
   which it cannot detect further radiation. At very high activities this leads to count rates lower
   than the true activity.
 - **Background radiation** (typically 20-40 counts per minute in the UK) must be subtracted from all
@@ -217,8 +217,8 @@ Sources of background radiation include:
 - **Cosmic rays** — high-energy particles from space, increasing with altitude.
 - **Medical sources** — X-rays and nuclear medicine procedures.
 - **Ground and building materials** — naturally occurring radioactive isotopes such as
-  ${}^{40}\mathrm{'\{'}K{'\}'}$ and ${}^{238}\mathrm{'\{'}U{'\}'}$.
-- **Food and drink** — trace amounts of ${}^{40}\mathrm{'\{'}K{'\}'}$ and ${}^{14}\mathrm{'\{'}C{'\}'}$.
+  ${}^{40}\mathrm{K{}$ and ${}^{238}\mathrm{U{}$.
+- **Food and drink** — trace amounts of ${}^{40}\mathrm{K{}$ and ${}^{14}\mathrm{C{}$.
 
 :::warning
 warning
@@ -279,7 +279,7 @@ method.
 Radium-226 undergoes alpha decay. Write the nuclear equation and identify the daughter nucleus.
 
 **Answer.**
-$\prescript{226}{}{88}\mathrm{'\{'}Ra{'\}'} \to \prescript{222}{}{86}\mathrm{'\{'}Rn{'\}'} + \prescript{4}{}{2}\alpha$.
+$\prescript{226}{}{88}\mathrm{Ra{} \to \prescript{222}{}{86}\mathrm{Rn{} + \prescript{4}{}{2}\alpha$.
 
 Daughter nucleus: Radon-222.
 
@@ -292,7 +292,7 @@ Daughter nucleus: Radon-222.
 Carbon-14 undergoes beta-minus decay. Write the nuclear equation.
 
 **Answer.**
-$\prescript{14}{}{6}\mathrm{'\{'}C{'\}'} \to \prescript{14}{}{7}\mathrm{'\{'}N{'\}'} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
+$\prescript{14}{}{6}\mathrm{C{} \to \prescript{14}{}{7}\mathrm{N{} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
 
 <b>If you get this wrong, revise:</b> [Beta Decay ($\beta^-$)](#beta-decay-beta-)
 
@@ -423,10 +423,10 @@ The most important natural decay chain begins with uranium-238 and ends at stabl
 decays (8 alpha and 6 beta-minus):
 
 $$
-\prescript{238}{}{92}\mathrm{'\{'}U{'\}'} \xrightarrow{\alpha} \prescript{234}{}{90}\mathrm{'\{'}Th{'\}'}
-\xrightarrow{\beta^-} \prescript{234}{}{91}\mathrm{'\{'}Pa{'\}'}
-\xrightarrow{\beta^-} \prescript{234}{}{92}\mathrm{'\{'}U{'\}'}
-\xrightarrow{\alpha} \cdots \to \prescript{206}{}{82}\mathrm{'\{'}Pb{'\}'}
+\prescript{238}{}{92}\mathrm{U{} \xrightarrow{\alpha} \prescript{234}{}{90}\mathrm{Th{}
+\xrightarrow{\beta^-} \prescript{234}{}{91}\mathrm{Pa{}
+\xrightarrow{\beta^-} \prescript{234}{}{92}\mathrm{U{}
+\xrightarrow{\alpha} \cdots \to \prescript{206}{}{82}\mathrm{Pb{}
 $$
 
 **Verification of net change:** 8 alpha decays reduce $A$ by $8 \times 4 = 32$ and $Z$ by
@@ -436,8 +436,8 @@ $\checkmark$).
 
 Other natural decay chains include:
 
-- **Thorium-232 series** $\to$ ${}^{208}\mathrm{'\{'}Pb{'\}'}$ (6 alpha, 4 beta-minus)
-- **Uranium-235 series** $\to$ ${}^{207}\mathrm{'\{'}Pb{'\}'}$ (7 alpha, 4 beta-minus)
+- **Thorium-232 series** $\to$ ${}^{208}\mathrm{Pb{}$ (6 alpha, 4 beta-minus)
+- **Uranium-235 series** $\to$ ${}^{207}\mathrm{Pb{}$ (7 alpha, 4 beta-minus)
 
 ### Secular Equilibrium
 
@@ -448,7 +448,7 @@ equilibrium:
 $$\boxed{\lambda_1 N_1 = \lambda_2 N_2 = \lambda_3 N_3 = \cdots}$$
 
 Each daughter has the same activity as the parent. This has practical importance in radiological
-protection: the activity of radon-222 (a daughter of ${}^{238}\mathrm{'\{'}U{'\}'}$) in buildings is sustained
+protection: the activity of radon-222 (a daughter of ${}^{238}\mathrm{U{}$) in buildings is sustained
 by the essentially constant uranium in the ground beneath.
 
 :::warning
@@ -466,23 +466,23 @@ hazard.
 info
 
 Living organisms continuously exchange carbon with the atmosphere, maintaining a constant ratio of
-${}^{14}\mathrm{'\{'}C{'\}'}$ to ${}^{12}\mathrm{'\{'}C{'\}'}$. Cosmic rays produce neutrons in the upper atmosphere,
+${}^{14}\mathrm{C{}$ to ${}^{12}\mathrm{C{}$. Cosmic rays produce neutrons in the upper atmosphere,
 which react with nitrogen-14:
 
-$${}^{14}\mathrm{'\{'}N{'\}'} + {}^{1}\mathrm{'\{'}n{'\}'} \to {}^{14}\mathrm{'\{'}C{'\}'} + {}^{1}\mathrm{'\{'}H{'\}'}$$
+$${}^{14}\mathrm{N{} + {}^{1}\mathrm{n{} \to {}^{14}\mathrm{C{} + {}^{1}\mathrm{H{}$$
 
-When an organism dies, this exchange stops and the ${}^{14}\mathrm{'\{'}C{'\}'}$ decays with a half-life of
+When an organism dies, this exchange stops and the ${}^{14}\mathrm{C{}$ decays with a half-life of
 5730 years. The age of a sample is found from:
 
 $$t = \frac{1}{\lambda}\ln\left(\frac{A_0}{A}\right) = \frac{t_{1/2}}{\ln 2}\ln\left(\frac{N_0}{N}\right)$$
 
-where $N_0/N$ is the ratio of current ${}^{14}\mathrm{'\{'}C{'\}'}$ content to that of a living sample.
+where $N_0/N$ is the ratio of current ${}^{14}\mathrm{C{}$ content to that of a living sample.
 
 **Limitations:**
 
-- Effective range is approximately 50,000 years (beyond this, too few ${}^{14}\mathrm{'\{'}C{'\}'}$ atoms
+- Effective range is approximately 50,000 years (beyond this, too few ${}^{14}\mathrm{C{}$ atoms
   remain for accurate measurement).
-- Assumes the atmospheric ${}^{14}\mathrm{'\{'}C{'\}'}$/${}^{12}\mathrm{'\{'}C{'\}'}$ ratio has been constant.
+- Assumes the atmospheric ${}^{14}\mathrm{C{}$/${}^{12}\mathrm{C{}$ ratio has been constant.
   Variations are corrected using calibration curves from tree-ring dating (dendrochronology).
 - Contamination by modern carbon makes samples appear younger; contamination by old carbon makes
   them appear older.
@@ -493,15 +493,15 @@ Radioactive isotopes are used both diagnostically and therapeutically:
 
 | Isotope               | Half-life   | Use                               | Reason                                                                         |
 | --------------------- | ----------- | --------------------------------- | ------------------------------------------------------------------------------ |
-| ${}^{99m}\mathrm{'\{'}Tc{'\}'}$ | 6.0 hours   | Diagnostic imaging (gamma camera) | Emits gamma rays; short half-life limits patient dose                          |
-| ${}^{131}\mathrm{'\{'}I{'\}'}$  | 8.04 days   | Treatment of thyroid cancer       | Beta radiation destroys thyroid tissue; iodine selectively absorbed by thyroid |
-| ${}^{60}\mathrm{'\{'}Co{'\}'}$  | 5.27 years  | Radiotherapy (external beam)      | High-energy gamma rays for tumour destruction                                  |
-| ${}^{18}\mathrm{'\{'}F{'\}'}$   | 110 minutes | PET scans                         | Positron emission enables precise 3D imaging                                   |
+| ${}^{99m}\mathrm{Tc{}$ | 6.0 hours   | Diagnostic imaging (gamma camera) | Emits gamma rays; short half-life limits patient dose                          |
+| ${}^{131}\mathrm{I{}$  | 8.04 days   | Treatment of thyroid cancer       | Beta radiation destroys thyroid tissue; iodine selectively absorbed by thyroid |
+| ${}^{60}\mathrm{Co{}$  | 5.27 years  | Radiotherapy (external beam)      | High-energy gamma rays for tumour destruction                                  |
+| ${}^{18}\mathrm{F{}$   | 110 minutes | PET scans                         | Positron emission enables precise 3D imaging                                   |
 
 **Definition.** The effective half-life of a radioactive substance in the body is the time for its
 activity to fall to half its initial value, combining both physical decay and biological clearance:
 
-$$\frac{1}{t_{\mathrm{'\{'}eff{'\}'}}} = \frac{1}{t_{\mathrm{'\{'}physical{'\}'}}} + \frac{1}{t_{\mathrm{'\{'}biological{'\}'}}}$$
+$$\frac{1}{t_{\mathrm{eff{}}} = \frac{1}{t_{\mathrm{physical{}}} + \frac{1}{t_{\mathrm{biological{}}}$$
 
 :::info
 Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
@@ -520,7 +520,7 @@ the atmosphere. The most significant isotopes released were:
   passed within months.
 - **Caesium-137** ($t_{1/2} = 30.2$ years): More persistent contaminant. Caesium behaves chemically
   like potassium and was taken up by plants and animals, entering the food chain. The 30 km
-  exclusion zone around the reactor remains in place partly because of ${}^{137}\mathrm{'\{'}Cs{'\}'}$
+  exclusion zone around the reactor remains in place partly because of ${}^{137}\mathrm{Cs{}$
   contamination.
 
 The different half-lives illustrate a key principle: short-lived isotopes produce intense but brief
@@ -529,15 +529,15 @@ radiation hazards, while long-lived isotopes create lower but persistent contami
 ### Fukushima Daiichi (2011)
 
 The Fukushima disaster, triggered by a tsunami following the Tohoku earthquake, released significant
-quantities of radioactive isotopes including ${}^{131}\mathrm{'\{'}I{'\}'}$, ${}^{134}\mathrm{'\{'}Cs{'\}'}$
-($t_{1/2} = 2.06$ years), and ${}^{137}\mathrm{'\{'}Cs{'\}'}$.
+quantities of radioactive isotopes including ${}^{131}\mathrm{I{}$, ${}^{134}\mathrm{Cs{}$
+($t_{1/2} = 2.06$ years), and ${}^{137}\mathrm{Cs{}$.
 
 Key differences from Chernobyl:
 
 - Most radioactive material was released into the Pacific Ocean rather than the atmosphere, leading
   to rapid dilution of water-soluble isotopes.
-- ${}^{134}\mathrm{'\{'}Cs{'\}'}$ has a short half-life (2.06 years) and decayed rapidly;
-  ${}^{137}\mathrm{'\{'}Cs{'\}'}$ remains the primary long-term concern.
+- ${}^{134}\mathrm{Cs{}$ has a short half-life (2.06 years) and decayed rapidly;
+  ${}^{137}\mathrm{Cs{}$ remains the primary long-term concern.
 - The disaster highlighted the importance of cooling systems for spent fuel and the vulnerability of
   nuclear plants to extreme natural events.
 
@@ -555,9 +555,9 @@ internally, gamma externally).
 
 <details>
 <summary>Problem 11</summary>
-A sample of ancient wood has a ${}^{14}\mathrm{'\{'}C{'\}'}$ activity of 1.5 Bq per gram. A living sample of the
+A sample of ancient wood has a ${}^{14}\mathrm{C{}$ activity of 1.5 Bq per gram. A living sample of the
 same type of wood has an activity of 12.5 Bq per gram. Calculate the age of the ancient wood.
-($t_{1/2}$ of ${}^{14}\mathrm{'\{'}C{'\}'} = 5730$ years.)
+($t_{1/2}$ of ${}^{14}\mathrm{C{} = 5730$ years.)
 
 **Answer.** $A/A_0 = 1.5/12.5 = 0.12$. $\ln 0.12 = -\lambda t$.
 $\lambda = \ln 2/5730 = 1.209 \times 10^{-4}$ year$^{-1}$.
@@ -570,11 +570,11 @@ $t = -\ln 0.12/(1.209 \times 10^{-4}) = 2.12/(1.209 \times 10^{-4}) = 17,500$ ye
 <details>
 <summary>Problem 12</summary>
 In the uranium-238 decay series, verify that 8 alpha decays and 6 beta-minus decays are consistent
-with the transformation from ${}^{238}\mathrm{'\{'}U{'\}'}$ to ${}^{206}\mathrm{'\{'}Pb{'\}'}$.
+with the transformation from ${}^{238}\mathrm{U{}$ to ${}^{206}\mathrm{Pb{}$.
 
 **Answer.** After 8 alpha decays: $A = 238 - 8 \times 4 = 206$, $Z = 92 - 8 \times 2 = 76$. After 6
 beta-minus decays: $A$ unchanged, $Z = 76 + 6 = 82$. Final nuclide: $A = 206$, $Z = 82$, which is
-${}^{206}\mathrm{'\{'}Pb{'\}'}$ $\checkmark$.
+${}^{206}\mathrm{Pb{}$ $\checkmark$.
 
 <b>If you get this wrong, revise:</b> [The Uranium-238 Decay Series](#the-uranium-238-decay-series)
 
@@ -597,12 +597,12 @@ $-1.37 = -150\lambda$. $\lambda = 0.00913$ min$^{-1}$. $t_{1/2} = \ln 2/0.00913 
 
 <details>
 <summary>Problem 14</summary>
-A patient is administered ${}^{99m}\mathrm{'\{'}Tc{'\}'}$ with a physical half-life of 6.0 hours for a
-diagnostic scan. The biological half-life of ${}^{99m}\mathrm{'\{'}Tc{'\}'}$ in the body is 4.8 hours. Calculate
+A patient is administered ${}^{99m}\mathrm{Tc{}$ with a physical half-life of 6.0 hours for a
+diagnostic scan. The biological half-life of ${}^{99m}\mathrm{Tc{}$ in the body is 4.8 hours. Calculate
 the effective half-life and the fraction of the initial activity remaining after 12 hours.
 
-**Answer.** $1/t_{\mathrm{'\{'}eff{'\}'}} = 1/6.0 + 1/4.8 = 0.167 + 0.208 = 0.375$ hour$^{-1}$.
-$t_{\mathrm{'\{'}eff{'\}'}} = 1/0.375 = 2.67$ hours.
+**Answer.** $1/t_{\mathrm{eff{}} = 1/6.0 + 1/4.8 = 0.167 + 0.208 = 0.375$ hour$^{-1}$.
+$t_{\mathrm{eff{}} = 1/0.375 = 2.67$ hours.
 
 After 12 hours: $n = 12/2.67 = 4.49$ effective half-lives. Fraction remaining
 $= 1/2^{4.49} = 1/22.4 = 0.0446$, i.e. 4.5%.
@@ -617,7 +617,7 @@ Explain why a sample of radon-222 collected from the soil beneath a building con
 detectable activity even after the original radon-222 has been removed, referring to the concept of
 secular equilibrium.
 
-**Answer.** Radon-222 is part of the ${}^{238}\mathrm{'\{'}U{'\}'}$ decay chain. Its parent, radium-226, has a
+**Answer.** Radon-222 is part of the ${}^{238}\mathrm{U{}$ decay chain. Its parent, radium-226, has a
 half-life of 1600 years — much longer than radon-222's half-life of 3.82 days. In secular
 equilibrium, radon-222 is produced by radium-226 at the same rate it decays, so its activity remains
 constant. Removing the radon-222 temporarily reduces the activity, but new radon-222 atoms are

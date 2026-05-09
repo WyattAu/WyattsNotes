@@ -16,7 +16,7 @@ slug: complex-analysis
 ### 1.1 Definition and Arithmetic
 
 A **complex number** is $z = a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$ and $i^2 = -1$. We call
-$a = \mathrm{'\{'}Re{'\}'}(z)$ the real part and $b = \mathrm{'\{'}Im{'\}'}(z)$ the imaginary part.
+$a = \mathrm{Re{}(z)$ the real part and $b = \mathrm{Im{}(z)$ the imaginary part.
 
 **Arithmetic:** $(a + bi) + (c + di) = (a + c) + (b + d)i$ and
 $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$.
@@ -40,7 +40,7 @@ compatible with the field operations. In particular, $i^2 = -1$ precludes any su
 
 1. $\overline{z + w} = \bar{z} + \bar{w}$ and $\overline{zw} = \bar{z}\bar{w}$
 2. $z\bar{z} = |z|^2$
-3. $z + \bar{z} = 2\,\mathrm{'\{'}Re{'\}'}(z)$ and $z - \bar{z} = 2i\,\mathrm{'\{'}Im{'\}'}(z)$
+3. $z + \bar{z} = 2\,\mathrm{Re{}(z)$ and $z - \bar{z} = 2i\,\mathrm{Im{}(z)$
 4. $\bar{\bar{z}} = z$
 
 **Definition.** The **modulus** (or absolute value) of $z = a + bi$ is $|z| = \sqrt{a^2 + b^2}$.
@@ -53,8 +53,8 @@ compatible with the field operations. In particular, $i^2 = -1$ precludes any su
 4. $\bigl||z| - |w|\bigr| \leq |z - w|$ (reverse triangle inequality)
 
 _Proof of (3)._ $|z + w|^2 = (z + w)(\bar{z} + \bar{w}) = |z|^2 + z\bar{w} + \bar{z}w + |w|^2
-= |z|^2 + 2\,\mathrm{'\{'}Re{'\}'}(z\bar{w}) + |w|^2 \leq |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2$.
-The inequality follows from $\mathrm{'\{'}Re{'\}'}(z\bar{w}) \leq |z\bar{w}| = |z||w|$.
+= |z|^2 + 2\,\mathrm{Re{}(z\bar{w}) + |w|^2 \leq |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2$.
+The inequality follows from $\mathrm{Re{}(z\bar{w}) \leq |z\bar{w}| = |z||w|$.
 $\blacksquare$
 
 ### 1.3 Polar Form
@@ -65,9 +65,9 @@ $$z = r(\cos\theta + i\sin\theta) = re^{i\theta}$$
 
 where $r = |z| = \sqrt{a^2 + b^2}$ is the **modulus** and $\theta = \arg(z)$ is the **argument**.
 
-**Definition.** The **principal argument** $\mathrm{'\{'}Arg{'\}'}(z)$ is the unique $\theta \in (-\pi, \pi]$
+**Definition.** The **principal argument** $\mathrm{Arg{}(z)$ is the unique $\theta \in (-\pi, \pi]$
 such that $z = |z|e^{i\theta}$. The **argument** $\arg(z)$ is multi-valued:
-$\arg(z) = \mathrm{'\{'}Arg{'\}'}(z) + 2\pi k$ for $k \in \mathbb{'\{'}Z{'\}'}$.
+$\arg(z) = \mathrm{Arg{}(z) + 2\pi k$ for $k \in \mathbb{'\{'}Z{'\}'}$.
 
 **Proposition 1.4.** If $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$, then
 $z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$ and $z_1/z_2 = (r_1/r_2)\, e^{i(\theta_1 - \theta_2)}$.
@@ -81,7 +81,7 @@ $z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$ and $z_1/z_2 = (r_1/r_2)\, e^{i(\
 
 $|z| = \sqrt{(-1)^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = 2$.
 
-$\mathrm{'\{'}Re{'\}'}(z) = -1 \lt{} 0$ and $\mathrm{'\{'}Im{'\}'}(z) = \sqrt{3} \gt{} 0$, so $z$ is in the second quadrant.
+$\mathrm{Re{}(z) = -1 \lt{} 0$ and $\mathrm{Im{}(z) = \sqrt{3} \gt{} 0$, so $z$ is in the second quadrant.
 
 $\theta = \arctan\!\left(\frac{\sqrt{3}}{-1}\right) = \frac{2\pi}{3}$ (adjusting to second quadrant).
 
@@ -314,14 +314,14 @@ single-valued functions, we must restrict the domain.
 defined on a domain $D$ such that $g(z) \in f(z)$ for all $z \in D$.
 
 **The Complex Logarithm.** We define $\log z = \ln|z| + i\arg(z)$, which is multi-valued because
-$\arg(z) = \mathrm{'\{'}Arg{'\}'}(z) + 2\pi k$ for $k \in \mathbb{'\{'}Z{'\}'}$. The **principal branch** is
+$\arg(z) = \mathrm{Arg{}(z) + 2\pi k$ for $k \in \mathbb{'\{'}Z{'\}'}$. The **principal branch** is
 
-$$\mathrm{'\{'}Log{'\}'}\, z = \ln|z| + i\,\mathrm{'\{'}Arg{'\}'}(z)$$
+$$\mathrm{Log{}\, z = \ln|z| + i\,\mathrm{Arg{}(z)$$
 
 defined on $\mathbb{'\{'}C{'\}'} \setminus (-\infty, 0]$. The negative real axis is called the **branch cut**.
 
-**Proposition 2.2.** The principal branch $\mathrm{'\{'}Log{'\}'}\, z$ is analytic on
-$\mathbb{'\{'}C{'\}'} \setminus (-\infty, 0]$ and $\frac{d}{dz}\,\mathrm{'\{'}Log{'\}'}\, z = \frac{1}{z}$.
+**Proposition 2.2.** The principal branch $\mathrm{Log{}\, z$ is analytic on
+$\mathbb{'\{'}C{'\}'} \setminus (-\infty, 0]$ and $\frac{d}{dz}\,\mathrm{Log{}\, z = \frac{1}{z}$.
 
 **Complex Powers.** For $z, \alpha \in \mathbb{'\{'}C{'\}'}$ with $z \neq 0$:
 
@@ -348,9 +348,9 @@ For $k = 0$: $e^{i\pi/4} = \frac{\sqrt{2}}{2}(1 + i)$.
 For $k = 1$: $e^{i5\pi/4} = -\frac{\sqrt{2}}{2}(1 + i)$.
 These are the two square roots of $i$.
 
-**Problem.** Find the domain of analyticity of $f(z) = \mathrm{'\{'}Log{'\}'}(z^2 + 1)$.
+**Problem.** Find the domain of analyticity of $f(z) = \mathrm{Log{}(z^2 + 1)$.
 
-$\mathrm{'\{'}Log{'\}'}\, w$ is analytic on $\mathbb{'\{'}C{'\}'} \setminus (-\infty, 0]$, so we need
+$\mathrm{Log{}\, w$ is analytic on $\mathbb{'\{'}C{'\}'} \setminus (-\infty, 0]$, so we need
 $z^2 + 1 \notin (-\infty, 0]$.
 
 $z^2 + 1 \leq 0$ when $z^2 \leq -1$, i.e., $z \in [-i, 0] \cup [0, i]$ (the imaginary axis
@@ -591,7 +591,7 @@ Consistent. $\blacksquare$
 <summary>Solution</summary>
 
 **Problem.** Use the ML inequality to show that $\lim_{R \to \infty} \int_{C_R} \frac{e^{iz}}{z}\, dz = 0$
-where $C_R$ is the upper semicircle $|z| = R$, $\mathrm{'\{'}Im{'\}'}(z) \geq 0$.
+where $C_R$ is the upper semicircle $|z| = R$, $\mathrm{Im{}(z) \geq 0$.
 
 On $C_R$: $z = Re^{i\theta}$, $0 \leq \theta \leq \pi$.
 $|e^{iz}| = |e^{iR(\cos\theta + i\sin\theta)}| = e^{-R\sin\theta}$.
@@ -989,19 +989,19 @@ Residue at $z = 0$: $a_{-1} = -\frac{1}{9}$.
 
 **Definition.** The **residue at infinity** of $f$ is defined as
 
-$$\mathrm{'\{'}Res{'\}'}(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f(z)\, dz$$
+$$\mathrm{Res{}(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f(z)\, dz$$
 
 for sufficiently large $R$ (enclosing all finite singularities).
 
 **Proposition 7.4.** For a function $f$ with finitely many singularities in $\mathbb{'\{'}C{'\}'}$:
 
-$$\sum_{\mathrm{'\{'}all\ finite\ {'\}'} z_k} \mathrm{'\{'}Res{'\}'}(f, z_k) + \mathrm{'\{'}Res{'\}'}(f, \infty) = 0$$
+$$\sum_{\mathrm{all\ finite\ {} z_k} \mathrm{Res{}(f, z_k) + \mathrm{Res{}(f, \infty) = 0$$
 
 _Proof._ By the residue theorem applied to $|z| = R$ enclosing all finite singularities:
 
-$\int_{|z|=R} f\, dz = 2\pi i \sum_{\mathrm{'\{'}finite{'\}'}} \mathrm{'\{'}Res{'\}'}(f, z_k)$.
+$\int_{|z|=R} f\, dz = 2\pi i \sum_{\mathrm{finite{}} \mathrm{Res{}(f, z_k)$.
 
-But $\mathrm{'\{'}Res{'\}'}(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f\, dz$, so the sum is zero. $\blacksquare$
+But $\mathrm{Res{}(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f\, dz$, so the sum is zero. $\blacksquare$
 
 ## 8. Singularities and Residue Theory
 
@@ -1068,7 +1068,7 @@ No negative powers, so $z = 0$ is a removable singularity with $f(0) = 1$.
 **Definition.** The **residue** of $f$ at an isolated singularity $z_0$ is the coefficient $a_{-1}$
 in the Laurent expansion:
 
-$$\mathrm{'\{'}Res{'\}'}(f, z_0) = a_{-1} = \frac{1}{2\pi i}\int_\gamma f(z)\, dz$$
+$$\mathrm{Res{}(f, z_0) = a_{-1} = \frac{1}{2\pi i}\int_\gamma f(z)\, dz$$
 
 where $\gamma$ is a small positively oriented circle around $z_0$.
 
@@ -1076,15 +1076,15 @@ where $\gamma$ is a small positively oriented circle around $z_0$.
 
 **For a simple pole at $z_0$:**
 
-$$\mathrm{'\{'}Res{'\}'}(f, z_0) = \lim_{z \to z_0} (z - z_0)f(z)$$
+$$\mathrm{Res{}(f, z_0) = \lim_{z \to z_0} (z - z_0)f(z)$$
 
 If $f = g/h$ where $g(z_0) \neq 0$, $h(z_0) = 0$, $h'(z_0) \neq 0$:
 
-$$\mathrm{'\{'}Res{'\}'}(f, z_0) = \frac{g(z_0)}{h'(z_0)}$$
+$$\mathrm{Res{}(f, z_0) = \frac{g(z_0)}{h'(z_0)}$$
 
 **For a pole of order $m$ at $z_0$:**
 
-$$\mathrm{'\{'}Res{'\}'}(f, z_0) = \frac{1}{(m-1)!}\lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-1}}\left[(z - z_0)^m f(z)\right]$$
+$$\mathrm{Res{}(f, z_0) = \frac{1}{(m-1)!}\lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-1}}\left[(z - z_0)^m f(z)\right]$$
 
 <details>
 <summary>Solution</summary>
@@ -1093,17 +1093,17 @@ $$\mathrm{'\{'}Res{'\}'}(f, z_0) = \frac{1}{(m-1)!}\lim_{z \to z_0} \frac{d^{m-1
 
 $z^2 + 4z + 3 = (z + 1)(z + 3)$, so simple poles at $z = -1$ and $z = -3$.
 
-At $z = -1$: $\mathrm{'\{'}Res{'\}'} = \lim_{z \to -1} \frac{z}{z + 3} = \frac{-1}{2}$.
-At $z = -3$: $\mathrm{'\{'}Res{'\}'} = \lim_{z \to -3} \frac{z}{z + 1} = \frac{-3}{-2} = \frac{3}{2}$.
+At $z = -1$: $\mathrm{Res{} = \lim_{z \to -1} \frac{z}{z + 3} = \frac{-1}{2}$.
+At $z = -3$: $\mathrm{Res{} = \lim_{z \to -3} \frac{z}{z + 1} = \frac{-3}{-2} = \frac{3}{2}$.
 
 **Problem.** Find the residue of $f(z) = \frac{e^z}{(z - 1)^2(z - 2)}$ at each pole.
 
 At $z = 1$ (pole of order $2$):
-$\mathrm{'\{'}Res{'\}'} = \frac{d}{dz}\left[\frac{e^z}{z - 2}\right]_{z=1}
+$\mathrm{Res{} = \frac{d}{dz}\left[\frac{e^z}{z - 2}\right]_{z=1}
 = \frac{e^z(z - 2) - e^z}{(z-2)^2}\Big|_{z=1} = \frac{-e - e}{1} = -2e$.
 
 At $z = 2$ (simple pole):
-$\mathrm{'\{'}Res{'\}'} = \frac{e^2}{(2-1)^2} = e^2$.
+$\mathrm{Res{} = \frac{e^2}{(2-1)^2} = e^2$.
 
 </details>
 
@@ -1113,12 +1113,12 @@ $\mathrm{'\{'}Res{'\}'} = \frac{e^2}{(2-1)^2} = e^2$.
 oriented contour $\gamma$ except for isolated singularities $z_1, z_2, \ldots, z_n$ inside $\gamma$,
 then
 
-$$\int_\gamma f(z)\, dz = 2\pi i \sum_{k=1}^{n} \mathrm{'\{'}Res{'\}'}(f, z_k)$$
+$$\int_\gamma f(z)\, dz = 2\pi i \sum_{k=1}^{n} \mathrm{Res{}(f, z_k)$$
 
 _Proof._ For each singularity $z_k$, draw a small circle $\gamma_k$ around it. By Cauchy's theorem
 applied to the multiply connected region between $\gamma$ and the $\gamma_k$:
 
-$\int_\gamma f\, dz = \sum_{k=1}^n \int_{\gamma_k} f\, dz = \sum_{k=1}^n 2\pi i \cdot \mathrm{'\{'}Res{'\}'}(f, z_k)$.
+$\int_\gamma f\, dz = \sum_{k=1}^n \int_{\gamma_k} f\, dz = \sum_{k=1}^n 2\pi i \cdot \mathrm{Res{}(f, z_k)$.
 $\blacksquare$
 
 ### 8.6 Worked Examples: Residue Theorem
@@ -1130,10 +1130,10 @@ $\blacksquare$
 
 _Solution._ Singularities inside $\gamma$: $z = 0$ (simple pole) and $z = 1$ (pole of order $2$).
 
-At $z = 0$: $\mathrm{'\{'}Res{'\}'} = \lim_{z \to 0} \frac{e^z}{(z-1)^2} = \frac{1}{(-1)^2} = 1$.
+At $z = 0$: $\mathrm{Res{} = \lim_{z \to 0} \frac{e^z}{(z-1)^2} = \frac{1}{(-1)^2} = 1$.
 
 At $z = 1$:
-$\mathrm{'\{'}Res{'\}'}(f, 1) = \frac{d}{dz}\left[(z-1)^2 \cdot \frac{e^z}{z(z-1)^2}\right]_{z=1} = \frac{d}{dz}\left[\frac{e^z}{z}\right]_{z=1} = \frac{e^z \cdot z - e^z}{z^2}\Big|_{z=1} = \frac{e - e}{1} = 0$.
+$\mathrm{Res{}(f, 1) = \frac{d}{dz}\left[(z-1)^2 \cdot \frac{e^z}{z(z-1)^2}\right]_{z=1} = \frac{d}{dz}\left[\frac{e^z}{z}\right]_{z=1} = \frac{e^z \cdot z - e^z}{z^2}\Big|_{z=1} = \frac{e - e}{1} = 0$.
 
 $\int_\gamma f\, dz = 2\pi i(1 + 0) = 2\pi i$. $\blacksquare$
 
@@ -1142,7 +1142,7 @@ $\int_\gamma f\, dz = 2\pi i(1 + 0) = 2\pi i$. $\blacksquare$
 _Solution._ The poles are the fourth roots of $-1$:
 $z_k = e^{i\pi/4 + ik\pi/2}$ for $k = 0, 1, 2, 3$. All four lie inside $|z| = 2$.
 
-Each is a simple pole with $\mathrm{'\{'}Res{'\}'}(f, z_k) = \frac{1}{4z_k^3}$.
+Each is a simple pole with $\mathrm{Res{}(f, z_k) = \frac{1}{4z_k^3}$.
 Since $z_k^4 = -1$: $z_k^{-3} = -z_k$, so the sum equals $-\frac{1}{4}\sum z_k = 0$.
 
 $\int_\gamma \frac{dz}{z^4 + 1} = 2\pi i \cdot 0 = 0$. $\blacksquare$
@@ -1160,7 +1160,7 @@ Contour integration is a powerful tool for evaluating definite integrals.
 **Theorem 9.1.** If $f(x) = P(x)/Q(x)$ where $\deg(Q) \geq \deg(P) + 2$ and $Q$ has no real roots,
 then
 
-$$\int_{-\infty}^{\infty} f(x)\, dx = 2\pi i \sum_{\mathrm{'\{'}Im{'\}'}(z_k) > 0} \mathrm{'\{'}Res{'\}'}(f, z_k)$$
+$$\int_{-\infty}^{\infty} f(x)\, dx = 2\pi i \sum_{\mathrm{Im{}(z_k) > 0} \mathrm{Res{}(f, z_k)$$
 
 where the sum is over poles in the upper half-plane.
 
@@ -1176,7 +1176,7 @@ _Solution._ $f(z) = \frac{1}{z^2 + 1}$ has simple poles at $z = \pm i$.
 
 Only $z = i$ is in the upper half-plane.
 
-$\mathrm{'\{'}Res{'\}'}\left(\frac{1}{z^2 + 1}, i\right) = \frac{1}{2z}\Big|_{z = i} = \frac{1}{2i}$.
+$\mathrm{Res{}\left(\frac{1}{z^2 + 1}, i\right) = \frac{1}{2z}\Big|_{z = i} = \frac{1}{2i}$.
 
 $\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = 2\pi i \cdot \frac{1}{2i} = \pi$. $\blacksquare$
 
@@ -1202,7 +1202,7 @@ Poles: $z^2 + 4z + 1 = 0 \Rightarrow z = -2 \pm \sqrt{3}$.
 $|z_1| = |-2 + \sqrt{3}| = 2 - \sqrt{3} \lt{} 1$ (inside).
 $|z_2| = |-2 - \sqrt{3}| = 2 + \sqrt{3} \gt{} 1$ (outside).
 
-$\mathrm{'\{'}Res{'\}'}\left(\frac{1}{z^2 + 4z + 1}, z_1\right) = \frac{1}{2\sqrt{3}}$.
+$\mathrm{Res{}\left(\frac{1}{z^2 + 4z + 1}, z_1\right) = \frac{1}{2\sqrt{3}}$.
 
 $\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta} = \frac{2}{i} \cdot 2\pi i \cdot \frac{1}{2\sqrt{3}} = \frac{2\pi}{\sqrt{3}}$.
 $\blacksquare$
@@ -1214,7 +1214,7 @@ half-plane and $a \gt{} 0$, then
 
 $$\lim_{R \to \infty} \int_{C_R} e^{iaz}f(z)\, dz = 0$$
 
-where $C_R$ is the upper semicircle $|z| = R$, $\mathrm{'\{'}Im{'\}'}(z) \geq 0$.
+where $C_R$ is the upper semicircle $|z| = R$, $\mathrm{Im{}(z) \geq 0$.
 
 This allows evaluation of integrals of the form $\int_{-\infty}^{\infty} f(x)\cos(ax)\, dx$ and
 $\int_{-\infty}^{\infty} f(x)\sin(ax)\, dx$.
@@ -1226,9 +1226,9 @@ $\int_{-\infty}^{\infty} f(x)\sin(ax)\, dx$.
 
 **Problem.** Evaluate $\int_{-\infty}^{\infty} \frac{\cos x}{x^2 + 1}\, dx$.
 
-Consider $\int_{-\infty}^{\infty} \frac{e^{ix}}{x^2 + 1}\, dx = 2\pi i \cdot \mathrm{'\{'}Res{'\}'}\!\left(\frac{e^{iz}}{z^2+1}, i\right)$.
+Consider $\int_{-\infty}^{\infty} \frac{e^{ix}}{x^2 + 1}\, dx = 2\pi i \cdot \mathrm{Res{}\!\left(\frac{e^{iz}}{z^2+1}, i\right)$.
 
-$\mathrm{'\{'}Res{'\}'}\!\left(\frac{e^{iz}}{z^2+1}, i\right) = \frac{e^{i \cdot i}}{2i} = \frac{e^{-1}}{2i}$.
+$\mathrm{Res{}\!\left(\frac{e^{iz}}{z^2+1}, i\right) = \frac{e^{i \cdot i}}{2i} = \frac{e^{-1}}{2i}$.
 
 $\int_{-\infty}^{\infty} \frac{e^{ix}}{x^2 + 1}\, dx = 2\pi i \cdot \frac{e^{-1}}{2i} = \frac{\pi}{e}$.
 
@@ -1239,7 +1239,7 @@ Taking real parts: $\int_{-\infty}^{\infty} \frac{\cos x}{x^2 + 1}\, dx = \frac{
 Consider $\int_{-\infty}^{\infty} \frac{z\, e^{iz}}{z^2 + a^2}\, dz$.
 Only $z = ia$ is in the upper half-plane.
 
-$\mathrm{'\{'}Res{'\}'}\!\left(\frac{ze^{iz}}{z^2 + a^2}, ia\right) = \frac{ia \cdot e^{i \cdot ia}}{2ia} = \frac{e^{-a}}{2}$.
+$\mathrm{Res{}\!\left(\frac{ze^{iz}}{z^2 + a^2}, ia\right) = \frac{ia \cdot e^{i \cdot ia}}{2ia} = \frac{e^{-a}}{2}$.
 
 $\int_{-\infty}^{\infty} \frac{x\, e^{ix}}{x^2 + a^2}\, dx = 2\pi i \cdot \frac{e^{-a}}{2} = \pi i\, e^{-a}$.
 
@@ -1253,10 +1253,10 @@ $I = \frac{1}{2i}\int_{|z|=1} \frac{z^4 + 1}{z^2(2z + 1)(z + 2)}\, dz$.
 
 Poles inside $|z| = 1$: $z = 0$ (order $2$) and $z = -1/2$ (simple).
 
-At $z = 0$: $\mathrm{'\{'}Res{'\}'} = \frac{d}{dz}\left[\frac{z^4 + 1}{(2z+1)(z+2)}\right]_{z=0}
+At $z = 0$: $\mathrm{Res{} = \frac{d}{dz}\left[\frac{z^4 + 1}{(2z+1)(z+2)}\right]_{z=0}
 = -\frac{5}{4}$.
 
-At $z = -1/2$: $\mathrm{'\{'}Res{'\}'} = \frac{17/16}{3/4} = \frac{17}{12}$.
+At $z = -1/2$: $\mathrm{Res{} = \frac{17/16}{3/4} = \frac{17}{12}$.
 
 $I = \frac{1}{2i} \cdot 2\pi i \left(-\frac{5}{4} + \frac{17}{12}\right) = \frac{\pi}{6}$.
 
@@ -1266,12 +1266,12 @@ $I = \frac{1}{2i} \cdot 2\pi i \left(-\frac{5}{4} + \frac{17}{12}\right) = \frac
 
 For integrals where the integrand has poles on the real axis, we use the **Cauchy principal value**:
 
-$$\mathrm{'\{'}PV{'\}'}\!\int_{-\infty}^{\infty} f(x)\, dx = \lim_{\varepsilon \to 0^+} \left(\int_{-\infty}^{a-\varepsilon} f(x)\, dx + \int_{a+\varepsilon}^{\infty} f(x)\, dx\right)$$
+$$\mathrm{PV{}\!\int_{-\infty}^{\infty} f(x)\, dx = \lim_{\varepsilon \to 0^+} \left(\int_{-\infty}^{a-\varepsilon} f(x)\, dx + \int_{a+\varepsilon}^{\infty} f(x)\, dx\right)$$
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Evaluate $\mathrm{'\{'}PV{'\}'}\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx$.
+**Problem.** Evaluate $\mathrm{PV{}\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx$.
 
 Consider $\oint_\gamma \frac{e^{iz}}{z}\, dz$ where $\gamma$ consists of $[-R, -\varepsilon]$,
 $[\varepsilon, R]$ on the real axis, small upper semicircle $C_\varepsilon$ around $0$, and large
@@ -1283,11 +1283,11 @@ On $C_R$: vanishes as $R \to \infty$ by Jordan's lemma.
 On $C_\varepsilon$ (indenting above): $\int_{C_\varepsilon} \frac{e^{iz}}{z}\, dz \to -i\pi$ as
 $\varepsilon \to 0$ (half residue contribution).
 
-$0 = \mathrm{'\{'}PV{'\}'}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx + (-i\pi)$.
+$0 = \mathrm{PV{}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx + (-i\pi)$.
 
-$\mathrm{'\{'}PV{'\}'}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx = i\pi$.
+$\mathrm{PV{}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx = i\pi$.
 
-Taking imaginary parts: $\mathrm{'\{'}PV{'\}'}\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx = \pi$.
+Taking imaginary parts: $\mathrm{PV{}\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx = \pi$.
 
 </details>
 
@@ -1362,7 +1362,7 @@ $T(z) = \frac{-idz + id}{dz + d} = \frac{i(1 - z)}{z + 1}$.
 
 **Problem.** Show that $T(z) = \frac{z - 1}{z + 1}$ maps the right half-plane to the unit disk.
 
-If $\mathrm{'\{'}Re{'\}'}(z) \gt{} 0$, then $|z - 1| \lt{} |z + 1|$, so $|T(z)| \lt{} 1$.
+If $\mathrm{Re{}(z) \gt{} 0$, then $|z - 1| \lt{} |z + 1|$, so $|T(z)| \lt{} 1$.
 
 Check boundary: $T(i) = \frac{i - 1}{i + 1} = \frac{(i-1)(-i+1)}{(i+1)(-i+1)} = \frac{2}{2} = 1$. $|T(i)| = 1$. $\checkmark$
 
@@ -1428,7 +1428,7 @@ The minimum modulus principle requires the non-vanishing hypothesis.
 **Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb{'\{'}D{'\}'} \to \mathbb{'\{'}D{'\}'}$ is analytic with $f(0) = 0$,
 then
 
-$$|f(z)| \leq |z| \quad \mathrm{'\{'}for\ all\ {'\}'} z \in \mathbb{'\{'}D{'\}'}$$
+$$|f(z)| \leq |z| \quad \mathrm{for\ all\ {} z \in \mathbb{'\{'}D{'\}'}$$
 
 and $|f'(0)| \leq 1$. Equality in either case implies $f(z) = e^{i\theta} z$ for some real $\theta$.
 
@@ -1500,7 +1500,7 @@ continuation** of $f_1$.
 **Theorem 13.1 (Identity Theorem).** If $f$ and $g$ are analytic on a domain $D$ and agree on a set
 with a limit point in $D$, then $f = g$ on all of $D$.
 
-_Proof._ Let $E = \{z \in D : f^{(n)}(z) = g^{(n)}(z) \mathrm{'\{'}\ for\ all\ {'\}'} n \geq 0\}$. $E$ is
+_Proof._ Let $E = \{z \in D : f^{(n)}(z) = g^{(n)}(z) \mathrm{\ for\ all\ {} n \geq 0\}$. $E$ is
 non-empty (it contains the limit point by continuity of derivatives). $E$ is closed (by continuity).
 If $z_0 \in E$, the Taylor series of $f$ and $g$ at $z_0$ coincide, so $f = g$ in a neighbourhood of
 $z_0$, giving $E$ open. Since $D$ is connected, $E = D$. $\blacksquare$
@@ -1528,7 +1528,7 @@ $(z - z_0)^m f(z)$ the wrong number of times.
 
 :::caution
 Common Pitfall The residue at infinity is
-$\mathrm{'\{'}Res{'\}'}(f, \infty) = -\mathrm{'\{'}Res{'\}'}(1/z^2 \cdot f(1/z), 0)$. It is NOT simply $f(\infty)$. For
+$\mathrm{Res{}(f, \infty) = -\mathrm{Res{}(1/z^2 \cdot f(1/z), 0)$. It is NOT simply $f(\infty)$. For
 a function that is analytic everywhere in the finite plane except for finitely many singularities,
 the sum of all residues (including the residue at infinity) is zero.
 :::
@@ -1549,7 +1549,7 @@ no zeros in the domain.
 :::caution
 Common Pitfall The complex logarithm is multi-valued. When a problem asks for
 "logarithm" without specifying a branch, you must either compute all values or explicitly state which
-branch you are using. The principal branch $\mathrm{'\{'}Log{'\}'}\, z$ has a branch cut along $(-\infty, 0]$
+branch you are using. The principal branch $\mathrm{Log{}\, z$ has a branch cut along $(-\infty, 0]$
 and is undefined on this cut.
 :::
 
@@ -1568,7 +1568,7 @@ Express $z = -\sqrt{3} + i$ in polar form and find all values of $z^{1/3}$.
 <details>
 <summary>Solution</summary>
 
-$|z| = \sqrt{3 + 1} = 2$. Since $\mathrm{'\{'}Re{'\}'}(z) \lt{} 0$ and $\mathrm{'\{'}Im{'\}'}(z) \gt{} 0$:
+$|z| = \sqrt{3 + 1} = 2$. Since $\mathrm{Re{}(z) \lt{} 0$ and $\mathrm{Im{}(z) \gt{} 0$:
 $\arg(z) = \pi - \pi/6 = 5\pi/6$.
 
 $z = 2\,e^{5\pi i/6}$.
@@ -1690,8 +1690,8 @@ Evaluate $\oint_\gamma \frac{z + 1}{z^2 - z}\, dz$ where $\gamma$ is $|z| = 2$.
 
 $\frac{z + 1}{z^2 - z} = \frac{z + 1}{z(z - 1)}$. Simple poles at $z = 0$ and $z = 1$, both inside $|z| = 2$.
 
-At $z = 0$: $\mathrm{'\{'}Res{'\}'} = \lim_{z \to 0} \frac{z + 1}{z - 1} = -1$.
-At $z = 1$: $\mathrm{'\{'}Res{'\}'} = \lim_{z \to 1} \frac{z + 1}{z} = 2$.
+At $z = 0$: $\mathrm{Res{} = \lim_{z \to 0} \frac{z + 1}{z - 1} = -1$.
+At $z = 1$: $\mathrm{Res{} = \lim_{z \to 1} \frac{z + 1}{z} = 2$.
 
 $\oint_\gamma \frac{z + 1}{z^2 - z}\, dz = 2\pi i(-1 + 2) = 2\pi i$.
 
@@ -1710,8 +1710,8 @@ $z = 0$: $e^{1/z}$ has an essential singularity at $0$, so $z = 0$ is an essenti
 $z = i$: simple pole.
 $z = -i$: simple pole.
 
-At $z = i$: $\mathrm{'\{'}Res{'\}'} = \frac{e^{1/i}}{2i} = \frac{e^{-i}}{2i}$.
-At $z = -i$: $\mathrm{'\{'}Res{'\}'} = \frac{e^{1/(-i)}}{-2i} = \frac{e^{i}}{-2i}$.
+At $z = i$: $\mathrm{Res{} = \frac{e^{1/i}}{2i} = \frac{e^{-i}}{2i}$.
+At $z = -i$: $\mathrm{Res{} = \frac{e^{1/(-i)}}{-2i} = \frac{e^{i}}{-2i}$.
 
 At $z = 0$: find the coefficient of $1/z$ in $\frac{e^{1/z}}{z^2 + 1}$.
 $\frac{1}{z^2 + 1} = 1 - z^2 + z^4 - \cdots$ near $z = 0$.
@@ -1737,8 +1737,8 @@ $I = \int_{|z|=1} \frac{(z + z^{-1})/2}{5 + 4(z + z^{-1})/2} \cdot \frac{dz}{iz}
 
 Poles inside $|z| = 1$: $z = 0$ (simple) and $z = -1/2$ (simple).
 
-At $z = 0$: $\mathrm{'\{'}Res{'\}'} = \frac{1}{(2 \cdot 0 + 1)(0 + 2)} = \frac{1}{2}$.
-At $z = -1/2$: $\mathrm{'\{'}Res{'\}'} = \frac{1/4 + 1}{(-1/2)(-1 + 2)} = \frac{5/4}{-1/2} = -\frac{5}{2}$.
+At $z = 0$: $\mathrm{Res{} = \frac{1}{(2 \cdot 0 + 1)(0 + 2)} = \frac{1}{2}$.
+At $z = -1/2$: $\mathrm{Res{} = \frac{1/4 + 1}{(-1/2)(-1 + 2)} = \frac{5/4}{-1/2} = -\frac{5}{2}$.
 
 $I = \frac{1}{2i} \cdot 2\pi i\left(\frac{1}{2} - \frac{5}{2}\right) = \pi(-2) = -\frac{\pi}{3}$.
 
@@ -1756,8 +1756,8 @@ Evaluate $\int_{-\infty}^{\infty} \frac{dx}{(x^2 + 1)(x^2 + 4)}$.
 $f(z) = \frac{1}{(z^2 + 1)(z^2 + 4)}$. Poles in upper half-plane: $z = i$ (simple) and
 $z = 2i$ (simple).
 
-At $z = i$: $\mathrm{'\{'}Res{'\}'} = \frac{1}{(2i)(i^2 + 4)} = \frac{1}{2i \cdot 3} = \frac{1}{6i}$.
-At $z = 2i$: $\mathrm{'\{'}Res{'\}'} = \frac{1}{(4i - 1)(4i)} = \frac{1}{4i(-3)} = -\frac{1}{12i}$.
+At $z = i$: $\mathrm{Res{} = \frac{1}{(2i)(i^2 + 4)} = \frac{1}{2i \cdot 3} = \frac{1}{6i}$.
+At $z = 2i$: $\mathrm{Res{} = \frac{1}{(4i - 1)(4i)} = \frac{1}{4i(-3)} = -\frac{1}{12i}$.
 
 $\int_{-\infty}^{\infty} f(x)\, dx = 2\pi i\left(\frac{1}{6i} - \frac{1}{12i}\right) = 2\pi i \cdot \frac{1}{12i} = \frac{\pi}{6}$.
 
@@ -1859,8 +1859,8 @@ Evaluate $\int_\gamma \frac{z^3}{z^2 + 1}\, dz$ where $\gamma$ is $|z| = 2$.
 
 $\frac{z^3}{z^2 + 1}$ has simple poles at $z = \pm i$, both inside $|z| = 2$.
 
-At $z = i$: $\mathrm{'\{'}Res{'\}'} = \frac{i^3}{2i} = \frac{-i}{2i} = -\frac{1}{2}$.
-At $z = -i$: $\mathrm{'\{'}Res{'\}'} = \frac{(-i)^3}{-2i} = \frac{i}{-2i} = -\frac{1}{2}$.
+At $z = i$: $\mathrm{Res{} = \frac{i^3}{2i} = \frac{-i}{2i} = -\frac{1}{2}$.
+At $z = -i$: $\mathrm{Res{} = \frac{(-i)^3}{-2i} = \frac{i}{-2i} = -\frac{1}{2}$.
 
 $\int_\gamma \frac{z^3}{z^2 + 1}\, dz = 2\pi i\left(-\frac{1}{2} - \frac{1}{2}\right) = -2\pi i$.
 
@@ -1883,7 +1883,7 @@ Consider $\int_{-\infty}^{\infty} \frac{e^{2ix}}{x^2 + 1}\, dx$.
 
 $f(z) = \frac{e^{2iz}}{z^2 + 1}$ has a simple pole at $z = i$ in the upper half-plane.
 
-$\mathrm{'\{'}Res{'\}'}\!\left(\frac{e^{2iz}}{z^2 + 1}, i\right) = \frac{e^{2i \cdot i}}{2i} = \frac{e^{-2}}{2i}$.
+$\mathrm{Res{}\!\left(\frac{e^{2iz}}{z^2 + 1}, i\right) = \frac{e^{2i \cdot i}}{2i} = \frac{e^{-2}}{2i}$.
 
 $\int_{-\infty}^{\infty} \frac{e^{2ix}}{x^2 + 1}\, dx = 2\pi i \cdot \frac{e^{-2}}{2i} = \frac{\pi}{e^2}$.
 
@@ -1904,7 +1904,7 @@ $\sin z = z - z^3/6 + z^5/120 - \cdots$
 
 $f(z) = \frac{z - z^3/6 + z^5/120 - \cdots}{z^4} = \frac{1}{z^3} - \frac{1}{6z} + \frac{z}{120} - \cdots$
 
-The coefficient of $1/z$ is $-1/6$, so $\mathrm{'\{'}Res{'\}'}(f, 0) = -\frac{1}{6}$.
+The coefficient of $1/z$ is $-1/6$, so $\mathrm{Res{}(f, 0) = -\frac{1}{6}$.
 
 _If you get this wrong, revise:_ Section 8.4 (Computing Residues).
 
@@ -1919,7 +1919,7 @@ Evaluate $\int_\gamma \frac{dz}{(z - 1)^2(z - 2)}$ where $\gamma$ is $|z - 1| = 
 
 Only $z = 1$ is inside $\gamma$ (a pole of order $2$). $z = 2$ is outside.
 
-$\mathrm{'\{'}Res{'\}'}(f, 1) = \frac{d}{dz}\left[\frac{1}{z - 2}\right]_{z=1} = -\frac{1}{(z-2)^2}\Big|_{z=1} = -1$.
+$\mathrm{Res{}(f, 1) = \frac{d}{dz}\left[\frac{1}{z - 2}\right]_{z=1} = -\frac{1}{(z-2)^2}\Big|_{z=1} = -1$.
 
 $\int_\gamma f\, dz = 2\pi i \cdot (-1) = -2\pi i$.
 

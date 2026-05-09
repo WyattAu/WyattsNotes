@@ -122,7 +122,7 @@ length of conductor in the field (m).
 **Worked Example.** A wire of length 0.15 m carries a current of 3 A in a magnetic field of flux
 density 0.4 T. Calculate the force on the wire.
 
-$$F = BIl = 0.4 \times 3 \times 0.15 = 0.18 \mathrm{'\{'} N{'\}'}$$
+$$F = BIl = 0.4 \times 3 \times 0.15 = 0.18 \mathrm{ N{}$$
 
 ### 2.4 Why the Wire Must Not Be Parallel to the Field
 
@@ -256,7 +256,7 @@ An **AC generator** converts kinetic energy into electrical energy using electro
 
 **Peak EMF:**
 
-$$\mathrm{'\{'}EMF{'\}'}_{\mathrm{'\{'}peak{'\}'}} = NAB\omega$$
+$$\mathrm{EMF{}_{\mathrm{peak{}} = NAB\omega$$
 
 where $N$ is the number of turns, $A$ is the area of the coil, $B$ is the magnetic flux density, and
 $\omega$ is the angular velocity.
@@ -311,7 +311,7 @@ turns on the secondary and primary coils.
 **Worked Example.** A transformer has 200 turns on the primary coil and 50 turns on the secondary.
 The primary voltage is 240 V. Find the secondary voltage.
 
-$$\frac{V_s}{240} = \frac{50}{200} = \frac{1}{4}$$ $$V_s = 60 \mathrm{'\{'} V{'\}'}$$
+$$\frac{V_s}{240} = \frac{50}{200} = \frac{1}{4}$$ $$V_s = 60 \mathrm{ V{}$$
 
 This is a **step-down** transformer.
 
@@ -478,29 +478,29 @@ the magnetic field changes, not on the absolute magnitude of the field.
 
 ## 7. Worked Example: Transformer Power and Efficiency
 
-A step-down transformer converts $230 \mathrm{'\{'} V{'\}'}$ to $12 \mathrm{'\{'} V{'\}'}$. The primary coil has 920 turns.
-A device connected to the secondary draws $5 \mathrm{'\{'} A{'\}'}$ at $12 \mathrm{'\{'} V{'\}'}$. The transformer is 95%
+A step-down transformer converts $230 \mathrm{ V{}$ to $12 \mathrm{ V{}$. The primary coil has 920 turns.
+A device connected to the secondary draws $5 \mathrm{ A{}$ at $12 \mathrm{ V{}$. The transformer is 95%
 efficient.
 
 **Step 1:** Find the number of secondary turns.
 
-$$\frac{N_s}{N_p} = \frac{V_s}{V_p} \implies N_s = 920 \times \frac{12}{230} = 48 \mathrm{'\{'} turns{'\}'}$$
+$$\frac{N_s}{N_p} = \frac{V_s}{V_p} \implies N_s = 920 \times \frac{12}{230} = 48 \mathrm{ turns{}$$
 
 **Step 2:** Calculate the power delivered to the load.
 
-$$P_s = V_s I_s = 12 \times 5 = 60 \mathrm{'\{'} W{'\}'}$$
+$$P_s = V_s I_s = 12 \times 5 = 60 \mathrm{ W{}$$
 
 **Step 3:** Calculate the power drawn from the primary.
 
-$$P_p = \frac{P_s}{\eta} = \frac{60}{0.95} = 63.2 \mathrm{'\{'} W{'\}'}$$
+$$P_p = \frac{P_s}{\eta} = \frac{60}{0.95} = 63.2 \mathrm{ W{}$$
 
 **Step 4:** Calculate the primary current.
 
-$$I_p = \frac{P_p}{V_p} = \frac{63.2}{230} = 0.275 \mathrm{'\{'} A{'\}'}$$
+$$I_p = \frac{P_p}{V_p} = \frac{63.2}{230} = 0.275 \mathrm{ A{}$$
 
 **Step 5:** Power wasted.
 
-$$P_{\mathrm{'\{'}wasted{'\}'}} = P_p - P_s = 63.2 - 60 = 3.2 \mathrm{'\{'} W{'\}'}$$
+$$P_{\mathrm{wasted{}} = P_p - P_s = 63.2 - 60 = 3.2 \mathrm{ W{}$$
 
 ## 8. Derivation: Faraday's Law from the Definition of Magnetic Flux
 
@@ -514,12 +514,12 @@ changes by $\Delta\Phi$ in time $\Delta t$, the rate of change is $\Delta\Phi / 
 induced EMF is proportional to this rate. The negative sign (Lenz's law) indicates that the induced
 EMF opposes the change in flux.
 
-**Quantitative example:** A coil of 200 turns and area $0.02 \mathrm{'\{'} m{'\}'}^2$ is in a magnetic field of
-flux density $0.5 \mathrm{'\{'} T{'\}'}$. The field is reduced to zero in $0.05 \mathrm{'\{'} s{'\}'}$.
+**Quantitative example:** A coil of 200 turns and area $0.02 \mathrm{ m{}^2$ is in a magnetic field of
+flux density $0.5 \mathrm{ T{}$. The field is reduced to zero in $0.05 \mathrm{ s{}$.
 
-$$\Delta\Phi = BA = 0.5 \times 0.02 = 0.01 \mathrm{'\{'} Wb{'\}'}$$
+$$\Delta\Phi = BA = 0.5 \times 0.02 = 0.01 \mathrm{ Wb{}$$
 
-$$\varepsilon = N\frac{\Delta\Phi}{\Delta t} = 200 \times \frac{0.01}{0.05} = 200 \times 0.2 = 40 \mathrm{'\{'} V{'\}'}$$
+$$\varepsilon = N\frac{\Delta\Phi}{\Delta t} = 200 \times \frac{0.01}{0.05} = 200 \times 0.2 = 40 \mathrm{ V{}$$
 
 ## 9. Why Lenz's Law Is a Consequence of Conservation of Energy
 
@@ -532,15 +532,15 @@ energy.
 
 ## 10. Worked Example: Force on a Wire at an Angle
 
-A wire of length $0.25 \mathrm{'\{'} m{'\}'}$ carries a current of $4 \mathrm{'\{'} A{'\}'}$ at an angle of $30^{\circ}$ to
-a magnetic field of flux density $0.6 \mathrm{'\{'} T{'\}'}$. Calculate the force on the wire.
+A wire of length $0.25 \mathrm{ m{}$ carries a current of $4 \mathrm{ A{}$ at an angle of $30^{\circ}$ to
+a magnetic field of flux density $0.6 \mathrm{ T{}$. Calculate the force on the wire.
 
 $$F = BIl\sin\theta = 0.6 \times 4 \times 0.25 \times \sin 30^{\circ}$$
 
-$$= 0.6 \times 4 \times 0.25 \times 0.5 = 0.3 \mathrm{'\{'} N{'\}'}$$
+$$= 0.6 \times 4 \times 0.25 \times 0.5 = 0.3 \mathrm{ N{}$$
 
 If the wire were perpendicular to the field ($\theta = 90^{\circ}$), the force would be
-$0.6 \mathrm{'\{'} N{'\}'}$ -- twice as large. At $\theta = 0^{\circ}$ (parallel), the force would be zero.
+$0.6 \mathrm{ N{}$ -- twice as large. At $\theta = 0^{\circ}$ (parallel), the force would be zero.
 
 ## 11. The Right-Hand Rule vs Fleming's Left-Hand Rule
 
@@ -558,9 +558,9 @@ already know the field direction and the current direction.
 
 ## 12. Worked Example: Electromagnet Design
 
-Design an electromagnet that can lift a $2 \mathrm{'\{'} kg{'\}'}$ steel block. The electromagnet has a soft
+Design an electromagnet that can lift a $2 \mathrm{ kg{}$ steel block. The electromagnet has a soft
 iron core and 500 turns of wire. The minimum force required is
-$F = mg = 2 \times 9.8 = 19.6 \mathrm{'\{'} N{'\}'}$.
+$F = mg = 2 \times 9.8 = 19.6 \mathrm{ N{}$.
 
 The force on the steel block depends on the magnetic field produced by the electromagnet. For a
 simple solenoid, the magnetic flux density at the centre is approximately:
@@ -599,18 +599,18 @@ directly to the external circuit.
 
 ## 14. Worked Example: AC Generator Peak EMF
 
-A coil of 100 turns and area $0.03 \mathrm{'\{'} m{'\}'}^2$ rotates at 50 Hz in a magnetic field of flux density
-$0.4 \mathrm{'\{'} T{'\}'}$. Calculate the peak EMF.
+A coil of 100 turns and area $0.03 \mathrm{ m{}^2$ rotates at 50 Hz in a magnetic field of flux density
+$0.4 \mathrm{ T{}$. Calculate the peak EMF.
 
-$$\mathrm{'\{'}EMF{'\}'}_{\mathrm{'\{'}peak{'\}'}} = NAB\omega = NAB \times 2\pi f$$
+$$\mathrm{EMF{}_{\mathrm{peak{}} = NAB\omega = NAB \times 2\pi f$$
 
 $$= 100 \times 0.03 \times 0.4 \times 2\pi \times 50$$
 
 $$= 100 \times 0.03 \times 0.4 \times 314.16$$
 
-$$= 376.99 \mathrm{'\{'} V{'\}'} \approx 377 \mathrm{'\{'} V{'\}'}$$
+$$= 376.99 \mathrm{ V{} \approx 377 \mathrm{ V{}$$
 
-The RMS voltage would be $377 / \sqrt{2} \approx 267 \mathrm{'\{'} V{'\}'}$.
+The RMS voltage would be $377 / \sqrt{2} \approx 267 \mathrm{ V{}$.
 
 ## 15. Magnetic Materials: Hard vs Soft
 
@@ -629,29 +629,29 @@ magnetism despite the changing fields produced by the motor's coils.
 
 ## 16. Practice Questions (Additional)
 
-16. An electromagnet has 300 turns and carries a current of $3 \mathrm{'\{'} A{'\}'}$. The magnetic flux density
-    at its centre is $0.15 \mathrm{'\{'} T{'\}'}$. If the current is increased to $5 \mathrm{'\{'} A{'\}'}$ and the number
+16. An electromagnet has 300 turns and carries a current of $3 \mathrm{ A{}$. The magnetic flux density
+    at its centre is $0.15 \mathrm{ T{}$. If the current is increased to $5 \mathrm{ A{}$ and the number
     of turns is increased to 600, calculate the new flux density.
 
 17. Explain, with reference to Lenz's law, why a magnet dropped through a copper tube falls more
     slowly than through a plastic tube.
 
 18. A transformer has 1000 turns on its primary and 50 turns on its secondary. The primary is
-    connected to $230 \mathrm{'\{'} V{'\}'}$ mains. If the secondary current is $8 \mathrm{'\{'} A{'\}'}$ and the
+    connected to $230 \mathrm{ V{}$ mains. If the secondary current is $8 \mathrm{ A{}$ and the
     transformer is 92% efficient, calculate the primary current.
 
 19. Describe how you would demonstrate the motor effect in a school laboratory. Include a diagram
     description and explain how to reverse the direction of the force.
 
-20. A wire carrying a current of $6 \mathrm{'\{'} A{'\}'}$ is placed at right angles to a magnetic field. The
-    force on the wire is $0.72 \mathrm{'\{'} N{'\}'}$ when the wire is $0.3 \mathrm{'\{'} m{'\}'}$ long. Calculate the
+20. A wire carrying a current of $6 \mathrm{ A{}$ is placed at right angles to a magnetic field. The
+    force on the wire is $0.72 \mathrm{ N{}$ when the wire is $0.3 \mathrm{ m{}$ long. Calculate the
     magnetic flux density.
 
 21. Explain why transformers are essential for the efficient distribution of electrical energy from
     power stations to consumers. Include quantitative reasoning.
 
-22. A rectangular coil of 200 turns, dimensions $5 \mathrm{'\{'} cm{'\}'} \times 8 \mathrm{'\{'} cm{'\}'}$, rotates at
-    $40 \mathrm{'\{'} Hz{'\}'}$ in a magnetic field of flux density $0.5 \mathrm{'\{'} T{'\}'}$. Calculate (a) the peak EMF
+22. A rectangular coil of 200 turns, dimensions $5 \mathrm{ cm{} \times 8 \mathrm{ cm{}$, rotates at
+    $40 \mathrm{ Hz{}$ in a magnetic field of flux density $0.5 \mathrm{ T{}$. Calculate (a) the peak EMF
     and (b) the EMF when the coil makes an angle of $60^{\circ}$ with the field.
 
 23. Compare and contrast permanent magnets and electromagnets. Give two specific applications where
@@ -669,45 +669,45 @@ magnetism despite the changing fields produced by the motor's coils.
 ### Example 26: Electromagnetic Induction Quantitative
 
 A coil of 200 turns is placed in a magnetic field. The magnetic flux through the coil changes from
-$0.02 \mathrm{'\{'} Wb{'\}'}$ to $0.08 \mathrm{'\{'} Wb{'\}'}$ in $0.05 \mathrm{'\{'} s{'\}'}$. Calculate the average EMF induced.
+$0.02 \mathrm{ Wb{}$ to $0.08 \mathrm{ Wb{}$ in $0.05 \mathrm{ s{}$. Calculate the average EMF induced.
 
 **Step 1: Calculate the change in flux linkage**
 
-$$\Delta(N\Phi) = N\Delta\Phi = 200 \times (0.08 - 0.02) = 200 \times 0.06 = 12 \mathrm{'\{'} Wb turns{'\}'}$$
+$$\Delta(N\Phi) = N\Delta\Phi = 200 \times (0.08 - 0.02) = 200 \times 0.06 = 12 \mathrm{ Wb turns{}$$
 
 **Step 2: Apply Faraday's law**
 
-$$\varepsilon = -\frac{\Delta(N\Phi)}{\Delta t} = -\frac{12}{0.05} = -240 \mathrm{'\{'} V{'\}'}$$
+$$\varepsilon = -\frac{\Delta(N\Phi)}{\Delta t} = -\frac{12}{0.05} = -240 \mathrm{ V{}$$
 
-The magnitude is $240 \mathrm{'\{'} V{'\}'}$ (the minus sign indicates direction via Lenz's law).
+The magnitude is $240 \mathrm{ V{}$ (the minus sign indicates direction via Lenz's law).
 
 ### Example 27: National Grid Power Loss Comparison
 
-A power station generates $500 \mathrm{'\{'} MW{'\}'}$ of power. Compare the power loss in the transmission
-cables if the power is transmitted at (a) $25 \mathrm{'\{'} kV{'\}'}$ and (b) $400 \mathrm{'\{'} kV{'\}'}$, given a cable
+A power station generates $500 \mathrm{ MW{}$ of power. Compare the power loss in the transmission
+cables if the power is transmitted at (a) $25 \mathrm{ kV{}$ and (b) $400 \mathrm{ kV{}$, given a cable
 resistance of $2 \Omega$.
 
-**Step 1: At $25 \mathrm{'\{'} kV{'\}'}$**
+**Step 1: At $25 \mathrm{ kV{}$**
 
-$$I = \frac{P}{V} = \frac{500 \times 10^6}{25 \times 10^3} = 20000 \mathrm{'\{'} A{'\}'}$$
+$$I = \frac{P}{V} = \frac{500 \times 10^6}{25 \times 10^3} = 20000 \mathrm{ A{}$$
 
-$$P_{\mathrm{'\{'}loss{'\}'}} = I^2 R = (20000)^2 \times 2 = 8 \times 10^8 \mathrm{'\{'} W{'\}'} = 800 \mathrm{'\{'} MW{'\}'}$$
+$$P_{\mathrm{loss{}} = I^2 R = (20000)^2 \times 2 = 8 \times 10^8 \mathrm{ W{} = 800 \mathrm{ MW{}$$
 
 This is _more_ than the generated power! The system is completely impractical at this voltage.
 
-**Step 2: At $400 \mathrm{'\{'} kV{'\}'}$**
+**Step 2: At $400 \mathrm{ kV{}$**
 
-$$I = \frac{500 \times 10^6}{400 \times 10^3} = 1250 \mathrm{'\{'} A{'\}'}$$
+$$I = \frac{500 \times 10^6}{400 \times 10^3} = 1250 \mathrm{ A{}$$
 
-$$P_{\mathrm{'\{'}loss{'\}'}} = (1250)^2 \times 2 = 3.125 \times 10^6 \mathrm{'\{'} W{'\}'} = 3.125 \mathrm{'\{'} MW{'\}'}$$
+$$P_{\mathrm{loss{}} = (1250)^2 \times 2 = 3.125 \times 10^6 \mathrm{ W{} = 3.125 \mathrm{ MW{}$$
 
 This is only $0.625\%$ of the generated power.
 
 **Step 3: Efficiency comparison**
 
-At $25 \mathrm{'\{'} kV{'\}'}$: $\eta = \frac{500 - 800}{500} \times 100 = \mathrm{'\{'}negative (impossible){'\}'}$
+At $25 \mathrm{ kV{}$: $\eta = \frac{500 - 800}{500} \times 100 = \mathrm{negative (impossible){}$
 
-At $400 \mathrm{'\{'} kV{'\}'}$: $\eta = \frac{500 - 3.125}{500} \times 100 = 99.375\%$
+At $400 \mathrm{ kV{}$: $\eta = \frac{500 - 3.125}{500} \times 100 = 99.375\%$
 
 :::info
 Step-up transformers increase the voltage (and decrease the current) for transmission,
@@ -717,13 +717,13 @@ for domestic use. This is the fundamental reason the National Grid uses high-vol
 
 ### Example 28: Designing an Electromagnet
 
-Design an electromagnet that can lift a $5 \mathrm{'\{'} kg{'\}'}$ steel block. The electromagnet has a soft
-iron core, 500 turns of wire, and operates from a $12 \mathrm{'\{'} V{'\}'}$ DC supply. Determine the required
+Design an electromagnet that can lift a $5 \mathrm{ kg{}$ steel block. The electromagnet has a soft
+iron core, 500 turns of wire, and operates from a $12 \mathrm{ V{}$ DC supply. Determine the required
 current.
 
 **Step 1: Force needed**
 
-$$F = mg = 5 \times 9.8 = 49 \mathrm{'\{'} N{'\}'}$$
+$$F = mg = 5 \times 9.8 = 49 \mathrm{ N{}$$
 
 **Step 2: Magnetic field strength needed**
 
@@ -731,23 +731,23 @@ For a rough estimate, the force on a magnetic material near an electromagnet is 
 
 $$F \approx \frac{B^2 A}{2\mu_0}$$
 
-Assuming the pole face area is $A = 0.005 \mathrm{'\{'} m{'\}'}^2$ ($50 \mathrm{'\{'} cm{'\}'}^2$):
+Assuming the pole face area is $A = 0.005 \mathrm{ m{}^2$ ($50 \mathrm{ cm{}^2$):
 
 $$49 = \frac{B^2 \times 0.005}{2 \times 4\pi \times 10^{-7}}$$
 
 $$B^2 = \frac{49 \times 2.513 \times 10^{-6}}{0.005} = 0.02463$$
 
-$$B = 0.157 \mathrm{'\{'} T{'\}'}$$
+$$B = 0.157 \mathrm{ T{}$$
 
 **Step 3: Current required (solenoid approximation)**
 
 $$B = \mu_0 \frac{NI}{L}$$
 
-Assuming the solenoid length is $L = 0.2 \mathrm{'\{'} m{'\}'}$:
+Assuming the solenoid length is $L = 0.2 \mathrm{ m{}$:
 
 $$0.157 = 4\pi \times 10^{-7} \times \frac{500 \times I}{0.2}$$
 
-$$I = \frac{0.157 \times 0.2}{4\pi \times 10^{-7} \times 500} = \frac{0.0314}{6.283 \times 10^{-4}} = 50 \mathrm{'\{'} A{'\}'}$$
+$$I = \frac{0.157 \times 0.2}{4\pi \times 10^{-7} \times 500} = \frac{0.0314}{6.283 \times 10^{-4}} = 50 \mathrm{ A{}$$
 
 This is a very high current. In practice, we would increase the number of turns or reduce the air
 gap to achieve the required field with a more practical current.
@@ -775,11 +775,11 @@ change, it would create energy from nothing, violating the first law of thermody
 ## Additional Practice Problems
 
 26. A transformer has 1000 turns on the primary and 50 turns on the secondary. The primary is
-    connected to $230 \mathrm{'\{'} V{'\}'}$ AC. Calculate the secondary voltage and the primary current when
-    the secondary delivers $10 \mathrm{'\{'} A{'\}'}$ to a load.
+    connected to $230 \mathrm{ V{}$ AC. Calculate the secondary voltage and the primary current when
+    the secondary delivers $10 \mathrm{ A{}$ to a load.
 
-27. A wire carrying $5 \mathrm{'\{'} A{'\}'}$ is placed at right angles to a magnetic field of flux density
-    $0.3 \mathrm{'\{'} T{'\}'}$. The length of wire in the field is $0.15 \mathrm{'\{'} m{'\}'}$. Calculate the force on the
+27. A wire carrying $5 \mathrm{ A{}$ is placed at right angles to a magnetic field of flux density
+    $0.3 \mathrm{ T{}$. The length of wire in the field is $0.15 \mathrm{ m{}$. Calculate the force on the
     wire and state the direction using Fleming's left-hand rule.
 
 28. Explain how a loudspeaker works, including the role of the permanent magnet, the coil, and the
@@ -811,16 +811,16 @@ The galvanometer needle deflects. As the magnet moves into the coil, the magneti
 <details>
 <summary>Question 2: Transformer calculation</summary>
 
-A step-down transformer has 2000 turns on the primary coil and 100 turns on the secondary coil. The primary voltage is $240 \mathrm{'\{'} V{'\}'}$. Calculate the secondary voltage and explain why the transformer is described as step-down.
+A step-down transformer has 2000 turns on the primary coil and 100 turns on the secondary coil. The primary voltage is $240 \mathrm{ V{}$. Calculate the secondary voltage and explain why the transformer is described as step-down.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\frac{V_p}{V_s} = \frac{N_p}{N_s}$, so $V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{100}{2000} = 12 \mathrm{'\{'} V{'\}'}$.
+$\frac{V_p}{V_s} = \frac{N_p}{N_s}$, so $V_s = V_p \times \frac{N_s}{N_p} = 240 \times \frac{100}{2000} = 12 \mathrm{ V{}$.
 
-It is a step-down transformer because the secondary voltage ($12 \mathrm{'\{'} V{'\}'}$) is lower than the primary voltage ($240 \mathrm{'\{'} V{'\}'}$). There are fewer turns on the secondary coil than the primary.
+It is a step-down transformer because the secondary voltage ($12 \mathrm{ V{}$) is lower than the primary voltage ($240 \mathrm{ V{}$). There are fewer turns on the secondary coil than the primary.
 
 </details>
 

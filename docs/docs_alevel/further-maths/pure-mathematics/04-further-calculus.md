@@ -1006,7 +1006,7 @@ Integration by parts with $u = x$, $dv = e^{-x}\,dx$:
 
 $= [-xe^{-x}]_0^{\infty} + \displaystyle\int_0^{\infty} e^{-x}\,dx = 0 + 1 = \boxed{1}$.
 
-This equals $E(X)$ for $X \sim \mathrm{'\{'}Exp{'\}'}(1)$, confirming the result $E(X) = 1/\lambda$ with $\lambda = 1$.
+This equals $E(X)$ for $X \sim \mathrm{Exp{}(1)$, confirming the result $E(X) = 1/\lambda$ with $\lambda = 1$.
 
 </details>
 

@@ -25,7 +25,7 @@ Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2
 As an organism increases in size, its volume grows faster than its surface area. For a cube of side
 length $l$:
 
-$$\mathrm{'\{'}Surface\ area{'\}'} = 6l^2, \quad \mathrm{'\{'}Volume{'\}'} = l^3, \quad \frac{\mathrm{'\{'}SA{'\}'}}{\mathrm{'\{'}V{'\}'}} = \frac{6}{l}$$
+$$\mathrm{Surface\ area{} = 6l^2, \quad \mathrm{Volume{} = l^3, \quad \frac{\mathrm{SA{}}{\mathrm{V{}} = \frac{6}{l}$$
 
 The SA:V ratio therefore decreases as size increases. This has critical implications: the surface
 area available for exchange of gases, nutrients, and heat becomes proportionally smaller relative to
@@ -71,17 +71,17 @@ chemical signals.
 ### 2.2 Alveoli
 
 Alveoli are the sites of gas exchange. Each lung contains approximately $350$ million alveoli,
-giving a total surface area of approximately $70\ \mathrm{'\{'}m^2{'\}'}$.
+giving a total surface area of approximately $70\ \mathrm{m^2{}$.
 
 **Alveolar epithelium**: a single layer of thin, flattened squamous epithelial cells (thickness
-$\approx 1\ \mu\mathrm{'\{'}m{'\}'}$).
+$\approx 1\ \mu\mathrm{m{}$).
 
 **Capillary endothelium**: a single layer of endothelial cells, closely pressed against the alveolar
-epithelium (the combined barrier is $\approx 0.5$--$1.0\ \mu\mathrm{'\{'}m{'\}'}$).
+epithelium (the combined barrier is $\approx 0.5$--$1.0\ \mu\mathrm{m{}$).
 
-**Ventilation** maintains a steep concentration gradient: incoming air has a higher $p\mathrm{'\{'}O_2{'\}'}$
-($\approx 13.3\ \mathrm{'\{'}kPa{'\}'}$) than deoxygenated blood ($\approx 5.3\ \mathrm{'\{'}kPa{'\}'}$), and a lower
-$p\mathrm{'\{'}CO_2{'\}'}$ ($\approx 0.04\ \mathrm{'\{'}kPa{'\}'}$) than blood ($\approx 6.0\ \mathrm{'\{'}kPa{'\}'}$).
+**Ventilation** maintains a steep concentration gradient: incoming air has a higher $p\mathrm{O_2{}$
+($\approx 13.3\ \mathrm{kPa{}$) than deoxygenated blood ($\approx 5.3\ \mathrm{kPa{}$), and a lower
+$p\mathrm{CO_2{}$ ($\approx 0.04\ \mathrm{kPa{}$) than blood ($\approx 6.0\ \mathrm{kPa{}$).
 
 ### 2.3 Ventilation Mechanism
 
@@ -100,18 +100,18 @@ muscles contract (pushing the diaphragm up).
 
 ### 2.4 Pulmonary Ventilation Rate
 
-$$\mathrm{'\{'}Pulmonary\ ventilation\ rate{'\}'} = \mathrm{'\{'}Tidal\ volume{'\}'} \times \mathrm{'\{'}breathing\ rate{'\}'}$$
+$$\mathrm{Pulmonary\ ventilation\ rate{} = \mathrm{Tidal\ volume{} \times \mathrm{breathing\ rate{}$$
 
 Tidal volume is the volume of air inhaled or exhaled in one normal breath (approximately
-$500\ \mathrm{'\{'}cm^3{'\}'}$ at rest). Breathing rate is the number of breaths per minute (approximately 15
+$500\ \mathrm{cm^3{}$ at rest). Breathing rate is the number of breaths per minute (approximately 15
 at rest). Resting ventilation rate is therefore approximately
 $500 \times 15 = 7500\ \mathrm{cm^3\ min^{-1}}$.
 
 :::warning
 warning
 the maximum volume of air that can be exhaled after a maximum inhalation
-($\approx 4500\ \mathrm{'\{'}cm^3{'\}'}$). Residual volume is the air remaining in the lungs after maximum
-exhalation ($\approx 1500\ \mathrm{'\{'}cm^3{'\}'}$).
+($\approx 4500\ \mathrm{cm^3{}$). Residual volume is the air remaining in the lungs after maximum
+exhalation ($\approx 1500\ \mathrm{cm^3{}$).
 :::
 
 ## 3. Gas Exchange in Other Organisms
@@ -122,7 +122,7 @@ Insects do not use blood for gas transport. Instead, they have a system of branc
 that deliver air directly to tissues.
 
 Air enters through **spiracles** (valved openings on the thorax and abdomen) $\to$ tracheae $\to$
-tracheoles (finer branches, diameter $\approx 1\ \mu\mathrm{'\{'}m{'\}'}$) that penetrate individual cells.
+tracheoles (finer branches, diameter $\approx 1\ \mu\mathrm{m{}$) that penetrate individual cells.
 
 Gas exchange occurs at the tips of tracheoles, where they are filled with fluid. During activity,
 lactic acid builds up in tissues, lowering the water potential; water is drawn out of tracheoles by
@@ -147,7 +147,7 @@ dissolved oxygen is extracted from water (compared to approximately 25% in mamma
 | Feature                   | Countercurrent                | Concurrent (parallel)               |
 | ------------------------- | ----------------------------- | ----------------------------------- |
 | Gradient maintained?      | Yes, along entire length      | No; equilibrium reached quickly     |
-| $\mathrm{'\{'}O_2{'\}'}$ extraction | $\approx 80\%$                | $\approx 50\%$                      |
+| $\mathrm{O_2{}$ extraction | $\approx 80\%$                | $\approx 50\%$                      |
 | Mechanism                 | Blood flows opposite to water | Blood flows same direction as water |
 
 ### 3.3 Plants: Stomata and Leaf Structure
@@ -159,8 +159,8 @@ Guard cells control stomatal aperture: when guard cells take up water (by osmosi
 buckle, opening the stomata. When they lose water, they become flaccid and the stomata close. This
 is regulated by:
 
-- Light: stimulates $\mathrm{'\{'}K^+{'\}'}$ uptake by guard cells, lowering their water potential.
-- $\mathrm{'\{'}CO_2{'\}'}$ concentration: high internal $\mathrm{'\{'}CO_2{'\}'}$ causes closure.
+- Light: stimulates $\mathrm{K^+{}$ uptake by guard cells, lowering their water potential.
+- $\mathrm{CO_2{}$ concentration: high internal $\mathrm{CO_2{}$ causes closure.
 - Abscisic acid (ABA): produced during water stress, triggers closure.
 
 **Leaf adaptations for gas exchange**:
@@ -171,7 +171,7 @@ is regulated by:
 - Stomata density is higher on the lower surface (reduces water loss).
 
 The conflict between gas exchange and water loss is the central constraint on plant gas exchange.
-Plants must balance $\mathrm{'\{'}CO_2{'\}'}$ uptake for photosynthesis against transpirational water loss.
+Plants must balance $\mathrm{CO_2{}$ uptake for photosynthesis against transpirational water loss.
 
 ## 4. Transport in Plants
 
@@ -251,7 +251,7 @@ Mammals have a **closed, double circulatory system**:
 1. **Pulmonary circulation**: right ventricle $\to$ pulmonary artery $\to$ lungs $\to$ pulmonary
    vein $\to$ left atrium. Deoxygenated blood is oxygenated.
 2. **Systemic circulation**: left ventricle $\to$ aorta $\to$ body tissues $\to$ vena cava $\to$
-   right atrium. Oxygenated blood delivers $\mathrm{'\{'}O_2{'\}'}$ and nutrients to tissues.
+   right atrium. Oxygenated blood delivers $\mathrm{O_2{}$ and nutrients to tissues.
 
 The blood passes through the heart twice per complete circuit, which is efficient because the heart
 can maintain different pressures for the two circuits. The systemic circulation requires higher
@@ -263,15 +263,15 @@ pressure (left ventricle has thicker walls) than the pulmonary circulation.
 | -------------- | -------------------------------------------- | ------------------------------------- | ---------------------------------------- |
 | Function       | Carry blood away from heart at high pressure | Return blood to heart at low pressure | Exchange of materials with tissues       |
 | Wall thickness | Thick (muscle and elastic tissue)            | Thin                                  | One cell thick (endothelium only)        |
-| Lumen diameter | Narrow (relative to wall)                    | Wide (relative to wall)               | Very narrow ($\approx 8\ \mu\mathrm{'\{'}m{'\}'}$) |
+| Lumen diameter | Narrow (relative to wall)                    | Wide (relative to wall)               | Very narrow ($\approx 8\ \mu\mathrm{m{}$) |
 | Valves         | Absent (except semilunar in heart)           | Present (prevent backflow)            | Absent                                   |
 | Blood flow     | Pulsatile, high pressure                     | Steady, low pressure                  | Slow (facilitates exchange)              |
 | Blood type     | Oxygenated (except pulmonary)                | Deoxygenated (except pulmonary)       | Both                                     |
 
 **Arterioles** have smooth muscle in their walls that can constrict (vasoconstriction) or dilate
 (vasodilation) to redistribute blood flow to tissues with the greatest demand. This is controlled by
-the sympathetic nervous system and local chemical signals (e.g., $\mathrm{'\{'}CO_2{'\}'}$, low pH, low
-$\mathrm{'\{'}O_2{'\}'}$).
+the sympathetic nervous system and local chemical signals (e.g., $\mathrm{CO_2{}$, low pH, low
+$\mathrm{O_2{}$).
 
 ### 5.3 Cardiac Cycle
 
@@ -299,10 +299,10 @@ the top of the heart.
 
 ### 5.4 Cardiac Output
 
-$$\mathrm{'\{'}Cardiac\ output{'\}'} = \mathrm{'\{'}stroke\ volume{'\}'} \times \mathrm{'\{'}heart\ rate{'\}'}$$
+$$\mathrm{Cardiac\ output{} = \mathrm{stroke\ volume{} \times \mathrm{heart\ rate{}$$
 
 Stroke volume is the volume of blood ejected by one ventricle per beat (approximately
-$70\ \mathrm{'\{'}cm^3{'\}'}$ at rest). Heart rate is approximately $72\ \mathrm{beats\ min^{-1}}$ at rest.
+$70\ \mathrm{cm^3{}$ at rest). Heart rate is approximately $72\ \mathrm{beats\ min^{-1}}$ at rest.
 Resting cardiac output is therefore approximately $70 \times 72 = 5040\ \mathrm{cm^3\ min^{-1}}$.
 
 During exercise, cardiac output can increase to approximately $25\ \mathrm{dm^3\ min^{-1}}$ through
@@ -329,7 +329,7 @@ exchanges substances with cells by diffusion.
 
 | Component                      | Function                                     | Key Features                                                                   |
 | ------------------------------ | -------------------------------------------- | ------------------------------------------------------------------------------ |
-| Red blood cells (erythrocytes) | Transport $\mathrm{'\{'}O_2{'\}'}$ and $\mathrm{'\{'}CO_2{'\}'}$ | Biconcave disc (SA:V ratio); no nucleus; contain haemoglobin                   |
+| Red blood cells (erythrocytes) | Transport $\mathrm{O_2{}$ and $\mathrm{CO_2{}$ | Biconcave disc (SA:V ratio); no nucleus; contain haemoglobin                   |
 | White blood cells (leucocytes) | Defence against pathogens                    | Phagocytes (engulf pathogens); lymphocytes (produce antibodies)                |
 | Platelets (thrombocytes)       | Blood clotting                               | Cell fragments; no nucleus; release clotting factors                           |
 | Plasma                         | Transport medium                             | Water, dissolved substances (glucose, amino acids, urea, hormones, antibodies) |
@@ -338,46 +338,46 @@ exchanges substances with cells by diffusion.
 
 **Haemoglobin (Hb)** is a quaternary protein with four polypeptide chains (two $\alpha$, two
 $\beta$), each associated with a **haem group** containing an iron(II) ion ($\mathrm{Fe^{2+}}$) that
-binds one $\mathrm{'\{'}O_2{'\}'}$ molecule. Each Hb can carry up to four $\mathrm{'\{'}O_2{'\}'}$ molecules.
+binds one $\mathrm{O_2{}$ molecule. Each Hb can carry up to four $\mathrm{O_2{}$ molecules.
 
-$$\mathrm{'\{'}Hb{'\}'} + 4\mathrm{'\{'}O_2{'\}'} \rightleftharpoons \mathrm{'\{'}HbO_8{'\}'}$$
+$$\mathrm{Hb{} + 4\mathrm{O_2{} \rightleftharpoons \mathrm{HbO_8{}$$
 
 The **oxygen dissociation curve** is sigmoidal (S-shaped) because haemoglobin exhibits **cooperative
-binding**: the binding of the first $\mathrm{'\{'}O_2{'\}'}$ molecule changes the conformation of Hb,
-increasing the affinity of the remaining haem groups for $\mathrm{'\{'}O_2{'\}'}$.
+binding**: the binding of the first $\mathrm{O_2{}$ molecule changes the conformation of Hb,
+increasing the affinity of the remaining haem groups for $\mathrm{O_2{}$.
 
 **Factors shifting the curve right (decreasing affinity)**:
 
-- Higher $p\mathrm{'\{'}CO_2{'\}'}$ (Bohr effect)
-- Lower pH (higher $\mathrm{'\{'}H^+{'\}'}$ concentration)
+- Higher $p\mathrm{CO_2{}$ (Bohr effect)
+- Lower pH (higher $\mathrm{H^+{}$ concentration)
 - Higher temperature
 - Higher concentration of 2,3-BPG (2,3-bisphosphoglycerate)
 
-These conditions occur in actively respiring tissues, facilitating $\mathrm{'\{'}O_2{'\}'}$ unloading. In the
-lungs, the reverse conditions (high $p\mathrm{'\{'}O_2{'\}'}$, low $p\mathrm{'\{'}CO_2{'\}'}$, lower temperature) shift
-the curve left, facilitating $\mathrm{'\{'}O_2{'\}'}$ loading.
+These conditions occur in actively respiring tissues, facilitating $\mathrm{O_2{}$ unloading. In the
+lungs, the reverse conditions (high $p\mathrm{O_2{}$, low $p\mathrm{CO_2{}$, lower temperature) shift
+the curve left, facilitating $\mathrm{O_2{}$ loading.
 
-**Fetal haemoglobin (HbF)** has a higher affinity for $\mathrm{'\{'}O_2{'\}'}$ than adult haemoglobin (the
-curve is shifted left). This allows fetal blood to extract $\mathrm{'\{'}O_2{'\}'}$ from maternal blood across
-the placenta, where $p\mathrm{'\{'}O_2{'\}'}$ is lower than in the maternal lungs.
+**Fetal haemoglobin (HbF)** has a higher affinity for $\mathrm{O_2{}$ than adult haemoglobin (the
+curve is shifted left). This allows fetal blood to extract $\mathrm{O_2{}$ from maternal blood across
+the placenta, where $p\mathrm{O_2{}$ is lower than in the maternal lungs.
 
 ### 6.3 Carbon Dioxide Transport
 
-$\mathrm{'\{'}CO_2{'\}'}$ is transported in three ways:
+$\mathrm{CO_2{}$ is transported in three ways:
 
-1. **Dissolved in plasma** (approximately 5%): $\mathrm{'\{'}CO_2{'\}'}$ is slightly soluble.
-2. **Bound to haemoglobin** as carbaminohaemoglobin (approximately 10%): $\mathrm{'\{'}CO_2{'\}'}$ binds to
+1. **Dissolved in plasma** (approximately 5%): $\mathrm{CO_2{}$ is slightly soluble.
+2. **Bound to haemoglobin** as carbaminohaemoglobin (approximately 10%): $\mathrm{CO_2{}$ binds to
    amino groups on the globin chains (not the haem group).
-3. **As hydrogencarbonate ions** ($\mathrm{'\{'}HCO_3^-{'\}'}$) (approximately 85%): $\mathrm{'\{'}CO_2{'\}'}$ enters
+3. **As hydrogencarbonate ions** ($\mathrm{HCO_3^-{}$) (approximately 85%): $\mathrm{CO_2{}$ enters
    red blood cells and is catalysed by carbonic anhydrase:
 
 $$
-\mathrm{'\{'}CO_2{'\}'} + \mathrm{'\{'}H_2O{'\}'} \rightleftharpoons \mathrm{'\{'}H_2CO_3{'\}'} \rightleftharpoons
-\mathrm{'\{'}H^+{'\}'} + \mathrm{'\{'}HCO_3^-{'\}'}
+\mathrm{CO_2{} + \mathrm{H_2O{} \rightleftharpoons \mathrm{H_2CO_3{} \rightleftharpoons
+\mathrm{H^+{} + \mathrm{HCO_3^-{}
 $$
 
-The $\mathrm{'\{'}H^+{'\}'}$ ions are taken up by haemoglobin (acting as a buffer), causing $\mathrm{'\{'}O_2{'\}'}$ to
-be released (the Bohr effect). $\mathrm{HCO_3^-$ ions are exchanged for $\mathrm{'\{'}Cl^-{'\}'}$ ions
+The $\mathrm{H^+{}$ ions are taken up by haemoglobin (acting as a buffer), causing $\mathrm{O_2{}$ to
+be released (the Bohr effect). $\mathrm{HCO_3^-$ ions are exchanged for $\mathrm{Cl^-{}$ ions
 (chloride shift) to maintain electrochemical neutrality.
 
 ## 7. Quantitative Gas Exchange: Fick's Law Applications
@@ -393,7 +393,7 @@ where:
 - $D$ is the diffusion coefficient (in $\mathrm{m^2\ s^{-1}}$), which depends on the molecule and the
   medium
 - $\Delta C$ is the concentration difference across the barrier (in $\mathrm{mol\ m^{-3}}$)
-- $\Delta x$ is the diffusion distance (in $\mathrm{'\{'}m{'\}'}$)
+- $\Delta x$ is the diffusion distance (in $\mathrm{m{}$)
 
 The total rate of diffusion across a surface of area $A$ is:
 
@@ -405,42 +405,42 @@ gradient via ventilation and blood flow) all increase the rate of diffusion.
 
 ### 7.2 Worked Examples
 
-**Worked Example 1.** The diffusion coefficient of $\mathrm{'\{'}O_2{'\}'}$ in water is
+**Worked Example 1.** The diffusion coefficient of $\mathrm{O_2{}$ in water is
 $D = 1.8 \times 10^{-9}\ \mathrm{m^2\ s^{-1}}$. An alveolus has a surface area of
-$A = 200\ \mu\mathrm{'\{'}m^2{'\}'}$ and a barrier thickness of $\Delta x = 0.5\ \mu\mathrm{'\{'}m{'\}'}$. The
-concentration of $\mathrm{'\{'}O_2{'\}'}$ in alveolar air corresponds to $p\mathrm{'\{'}O_2{'\}'} = 13.3\ \mathrm{'\{'}kPa{'\}'}$,
-and in deoxygenated blood $p\mathrm{'\{'}O_2{'\}'} = 5.3\ \mathrm{'\{'}kPa{'\}'}$. Estimate the rate of $\mathrm{'\{'}O_2{'\}'}$
+$A = 200\ \mu\mathrm{m^2{}$ and a barrier thickness of $\Delta x = 0.5\ \mu\mathrm{m{}$. The
+concentration of $\mathrm{O_2{}$ in alveolar air corresponds to $p\mathrm{O_2{} = 13.3\ \mathrm{kPa{}$,
+and in deoxygenated blood $p\mathrm{O_2{} = 5.3\ \mathrm{kPa{}$. Estimate the rate of $\mathrm{O_2{}$
 diffusion across this alveolus.
 
-Using Henry's law, $\mathrm{'\{'}O_2{'\}'}$ concentration in water is proportional to partial pressure. The
-solubility of $\mathrm{'\{'}O_2{'\}'}$ in water at $37\ ^\circ\mathrm{'\{'}C{'\}'}$ is approximately
+Using Henry's law, $\mathrm{O_2{}$ concentration in water is proportional to partial pressure. The
+solubility of $\mathrm{O_2{}$ in water at $37\ ^\circ\mathrm{C{}$ is approximately
 $\alpha = 1.3 \times 10^{-3}\ \mathrm{mol\ m^{-3}\ kPa^{-1}}$.
 
-$$\Delta C = \alpha \times \Delta p\mathrm{'\{'}O_2{'\}'} = 1.3 \times 10^{-3} \times (13.3 - 5.3) = 0.0104\ \mathrm{mol\ m^{-3}}$$
+$$\Delta C = \alpha \times \Delta p\mathrm{O_2{} = 1.3 \times 10^{-3} \times (13.3 - 5.3) = 0.0104\ \mathrm{mol\ m^{-3}}$$
 
 $$\text{'\{'}Rate{'\}'} = D \cdot A \cdot \frac{\Delta C}{\Delta x} = 1.8 \times 10^{-9} \times 200 \times 10^{-12} \times \frac{0.0104}{0.5 \times 10^{-6}}$$
 
 $$= 1.8 \times 10^{-9} \times 2 \times 10^{-10} \times 20800 = 7.5 \times 10^{-15}\ \mathrm{mol\ s^{-1}}$$
 
 Per single alveolus. With $\approx 350$ million alveoli per lung, the total rate is enormous, which is
-why the human respiratory system can meet the body's $\mathrm{'\{'}O_2{'\}'}$ demand.
+why the human respiratory system can meet the body's $\mathrm{O_2{}$ demand.
 
-**Worked Example 2.** Compare the rate of $\mathrm{'\{'}O_2{'\}'}$ diffusion through the alveolar barrier
-($\Delta x = 0.5\ \mu\mathrm{'\{'}m{'\}'}$) with diffusion through a layer of connective tissue
-($\Delta x = 5.0\ \mu\mathrm{'\{'}m{'\}'}$), all else being equal.
+**Worked Example 2.** Compare the rate of $\mathrm{O_2{}$ diffusion through the alveolar barrier
+($\Delta x = 0.5\ \mu\mathrm{m{}$) with diffusion through a layer of connective tissue
+($\Delta x = 5.0\ \mu\mathrm{m{}$), all else being equal.
 
-$$\frac{J_{\mathrm{'\{'}alveolus{'\}'}}}{J_{\mathrm{'\{'}tissue{'\}'}}} = \frac{D \cdot \Delta C / 0.5}{D \cdot \Delta C / 5.0} = \frac{5.0}{0.5} = 10$$
+$$\frac{J_{\mathrm{alveolus{}}}{J_{\mathrm{tissue{}}} = \frac{D \cdot \Delta C / 0.5}{D \cdot \Delta C / 5.0} = \frac{5.0}{0.5} = 10$$
 
 The alveolar barrier is 10 times more efficient at gas exchange because it is 10 times thinner. This
 quantifies the critical importance of a thin diffusion barrier.
 
 ### 7.3 Diffusion Coefficients: A Note on Medium
 
-The diffusion coefficient of $\mathrm{'\{'}O_2{'\}'}$ is much larger in air ($D \approx 2.1 \times 10^{-5}\ \mathrm{m^2\ s^{-1}}$)
+The diffusion coefficient of $\mathrm{O_2{}$ is much larger in air ($D \approx 2.1 \times 10^{-5}\ \mathrm{m^2\ s^{-1}}$)
 than in water ($D \approx 1.8 \times 10^{-9}\ \mathrm{m^2\ s^{-1}}$). The ratio is approximately
 $12000:1$. This means that organisms living in water face a fundamentally more challenging gas exchange
 problem than air-breathing organisms, which is why fish gills must be extremely efficient (countercurrent
-flow, large surface area) to extract sufficient $\mathrm{'\{'}O_2{'\}'}$ from water.
+flow, large surface area) to extract sufficient $\mathrm{O_2{}$ from water.
 
 :::warning
 Common Pitfall Students often state that gas exchange is faster in air "because air is less dense."
@@ -458,46 +458,46 @@ higher (less negative) water potential to a region of lower (more negative) wate
 
 For plant cells:
 
-$$\Psi_{\mathrm{'\{'}cell{'\}'}} = \Psi_s + \Psi_p$$
+$$\Psi_{\mathrm{cell{}} = \Psi_s + \Psi_p$$
 
 ### 8.2 Worked Examples
 
-**Worked Example 1.** A plant cell with $\Psi_s = -1200\ \mathrm{'\{'}kPa{'\}'}$ and $\Psi_p = +400\ \mathrm{'\{'}kPa{'\}'}$
-is placed in a solution with $\Psi_{\mathrm{'\{'}solution{'\}'}} = -500\ \mathrm{'\{'}kPa{'\}'}$. Determine the direction of
+**Worked Example 1.** A plant cell with $\Psi_s = -1200\ \mathrm{kPa{}$ and $\Psi_p = +400\ \mathrm{kPa{}$
+is placed in a solution with $\Psi_{\mathrm{solution{}} = -500\ \mathrm{kPa{}$. Determine the direction of
 net water movement and the cell's equilibrium state.
 
-$$\Psi_{\mathrm{'\{'}cell{'\}'}} = -1200 + 400 = -800\ \mathrm{'\{'}kPa{'\}'}$$
+$$\Psi_{\mathrm{cell{}} = -1200 + 400 = -800\ \mathrm{kPa{}$$
 
-Since $\Psi_{\mathrm{'\{'}solution{'\}'}} = -500\ \mathrm{'\{'}kPa{'\}'} > \Psi_{\mathrm{'\{'}cell{'\}'}} = -800\ \mathrm{'\{'}kPa{'\}'}$,
+Since $\Psi_{\mathrm{solution{}} = -500\ \mathrm{kPa{} > \Psi_{\mathrm{cell{}} = -800\ \mathrm{kPa{}$,
 water moves from the solution into the cell. As water enters, $\Psi_p$ increases (the cell becomes more
-turgid). Equilibrium when $\Psi_{\mathrm{'\{'}cell{'\}'}} = -500\ \mathrm{'\{'}kPa{'\}'}$:
+turgid). Equilibrium when $\Psi_{\mathrm{cell{}} = -500\ \mathrm{kPa{}$:
 
 $$\Psi_s + \Psi_p = -500$$
 
 $$-1200 + \Psi_p = -500$$
 
-$$\Psi_p = +700\ \mathrm{'\{'}kPa{'\}'}$$
+$$\Psi_p = +700\ \mathrm{kPa{}$$
 
-The cell reaches equilibrium at a pressure potential of $+700\ \mathrm{'\{'}kPa{'\}'}$.
+The cell reaches equilibrium at a pressure potential of $+700\ \mathrm{kPa{}$.
 
 **Worked Example 2.** A plant cell is placed in a solution of sucrose with concentration
-$0.3\ \mathrm{mol\ dm^{-3}}$ at $20\ ^\circ\mathrm{'\{'}C{'\}'}$. The cell has $\Psi_s = -1000\ \mathrm{'\{'}kPa{'\}'}$
-and $\Psi_p = +200\ \mathrm{'\{'}kPa{'\}'}$. Describe what happens.
+$0.3\ \mathrm{mol\ dm^{-3}}$ at $20\ ^\circ\mathrm{C{}$. The cell has $\Psi_s = -1000\ \mathrm{kPa{}$
+and $\Psi_p = +200\ \mathrm{kPa{}$. Describe what happens.
 
 The solute potential of the external solution is approximately:
 
 $$\Psi_s = -iCRT$$
 
 where $i = 1$ (sucrose does not ionise), $C = 0.3\ \mathrm{mol\ dm^{-3}} = 300\ \mathrm{mol\ m^{-3}}$,
-$R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$, $T = 293\ \mathrm{'\{'}K{'\}'}$.
+$R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$, $T = 293\ \mathrm{K{}$.
 
-$$\Psi_{\mathrm{'\{'}solution{'\}'}} = -1 \times 300 \times 8.314 \times 293 = -730800\ \mathrm{'\{'}Pa{'\}'} = -731\ \mathrm{'\{'}kPa{'\}'}$$
+$$\Psi_{\mathrm{solution{}} = -1 \times 300 \times 8.314 \times 293 = -730800\ \mathrm{Pa{} = -731\ \mathrm{kPa{}$$
 
-$$\Psi_{\mathrm{'\{'}cell{'\}'}} = -1000 + 200 = -800\ \mathrm{'\{'}kPa{'\}'}$$
+$$\Psi_{\mathrm{cell{}} = -1000 + 200 = -800\ \mathrm{kPa{}$$
 
-Since $\Psi_{\mathrm{'\{'}solution{'\}'}} = -731\ \mathrm{'\{'}kPa{'\}'} > \Psi_{\mathrm{'\{'}cell{'\}'}} = -800\ \mathrm{'\{'}kPa{'\}'}$,
+Since $\Psi_{\mathrm{solution{}} = -731\ \mathrm{kPa{} > \Psi_{\mathrm{cell{}} = -800\ \mathrm{kPa{}$,
 water moves into the cell. The cell gains water, $\Psi_p$ increases until equilibrium is reached at
-$\Psi_p = +269\ \mathrm{'\{'}kPa{'\}'}$.
+$\Psi_p = +269\ \mathrm{kPa{}$.
 
 **Worked Example 3.** A student carries out an experiment to determine the solute potential of potato
 cells. Potato cylinders are placed in a range of sucrose solutions. The results are:
@@ -511,15 +511,15 @@ By interpolation: the equilibrium concentration is approximately $0.17\ \mathrm{
 
 The solute potential of the potato cells at this concentration:
 
-$$\Psi_s = -iCRT = -1 \times 170 \times 8.314 \times 293 = -414000\ \mathrm{'\{'}Pa{'\}'} \approx -414\ \mathrm{'\{'}kPa{'\}'}$$
+$$\Psi_s = -iCRT = -1 \times 170 \times 8.314 \times 293 = -414000\ \mathrm{Pa{} \approx -414\ \mathrm{kPa{}$$
 
-At equilibrium (no net water movement), $\Psi_{\mathrm{'\{'}cell{'\}'}} = \Psi_{\mathrm{'\{'}solution{'\}'}}$ and
-$\Psi_p = 0$ (the cell is at the point of incipient plasmolysis). Therefore, $\Psi_s \approx -414\ \mathrm{'\{'}kPa{'\}'}$.
+At equilibrium (no net water movement), $\Psi_{\mathrm{cell{}} = \Psi_{\mathrm{solution{}}$ and
+$\Psi_p = 0$ (the cell is at the point of incipient plasmolysis). Therefore, $\Psi_s \approx -414\ \mathrm{kPa{}$.
 
 :::warning
 Common Pitfall Students sometimes forget that the formula $\Psi_s = -iCRT$ gives the solute potential
 of the solution, not the cell. The cell's solute potential is only equal to this value at equilibrium
-when $\Psi_p = 0$. In a turgid cell, $\Psi_p > 0$ and $\Psi_{\mathrm{'\{'}cell{'\}'}}$ is less negative than
+when $\Psi_p = 0$. In a turgid cell, $\Psi_p > 0$ and $\Psi_{\mathrm{cell{}}$ is less negative than
 $\Psi_s$.
 :::
 
@@ -528,69 +528,69 @@ $\Psi_s$.
 ### 9.1 Pressure Relationships
 
 Understanding the pressure changes during the cardiac cycle requires tracking three pressures
-simultaneously: atrial pressure ($P_{\mathrm{'\{'}atrium{'\}'}}$), ventricular pressure ($P_{\mathrm{'\{'}ventricle{'\}'}}$),
-and aortic pressure ($P_{\mathrm{'\{'}aorta{'\}'}}$).
+simultaneously: atrial pressure ($P_{\mathrm{atrium{}}$), ventricular pressure ($P_{\mathrm{ventricle{}}$),
+and aortic pressure ($P_{\mathrm{aorta{}}$).
 
 The fundamental rule governing valve behaviour:
 
-- **AV valves** open when $P_{\mathrm{'\{'}atrium{'\}'}} > P_{\mathrm{'\{'}ventricle{'\}'}}$; close when
-  $P_{\mathrm{'\{'}ventricle{'\}'}} > P_{\mathrm{'\{'}atrium{'\}'}}$.
-- **Semilunar valves** open when $P_{\mathrm{'\{'}ventricle{'\}'}} > P_{\mathrm{'\{'}aorta{'\}'}}$; close when
-  $P_{\mathrm{'\{'}aorta{'\}'}} > P_{\mathrm{'\{'}ventricle{'\}'}}$.
+- **AV valves** open when $P_{\mathrm{atrium{}} > P_{\mathrm{ventricle{}}$; close when
+  $P_{\mathrm{ventricle{}} > P_{\mathrm{atrium{}}$.
+- **Semilunar valves** open when $P_{\mathrm{ventricle{}} > P_{\mathrm{aorta{}}$; close when
+  $P_{\mathrm{aorta{}} > P_{\mathrm{ventricle{}}$.
 
 ### 9.2 Pressure Curve Analysis
 
 The pressure curve is divided into phases:
 
-1. **Ventricular filling** (mid-to-late diastole): $P_{\mathrm{'\{'}ventricle{'\}'}}$ is low and slowly rising as
+1. **Ventricular filling** (mid-to-late diastole): $P_{\mathrm{ventricle{}}$ is low and slowly rising as
    blood flows passively from atria. AV valves open; SL valves closed.
 
-2. **Atrial systole**: $P_{\mathrm{'\{'}atrium{'\}'}}$ rises sharply (the "a wave"), pushing the last 20--30% of
+2. **Atrial systole**: $P_{\mathrm{atrium{}}$ rises sharply (the "a wave"), pushing the last 20--30% of
    blood into the ventricles ("atrial kick").
 
-3. **Isovolumetric contraction**: $P_{\mathrm{'\{'}ventricle{'\}'}}$ rises rapidly but both sets of valves are
-   closed (AV valves just closed due to $P_{\mathrm{'\{'}ventricle{'\}'}} > P_{\mathrm{'\{'}atrium{'\}'}}$; SL valves not
+3. **Isovolumetric contraction**: $P_{\mathrm{ventricle{}}$ rises rapidly but both sets of valves are
+   closed (AV valves just closed due to $P_{\mathrm{ventricle{}} > P_{\mathrm{atrium{}}$; SL valves not
    yet open). Ventricular volume is constant (iso-volumetric). This is the brief period where
-   $P_{\mathrm{'\{'}ventricle{'\}'}}$ is between $P_{\mathrm{'\{'}atrium{'\}'}}$ and $P_{\mathrm{'\{'}aorta{'\}'}}$.
+   $P_{\mathrm{ventricle{}}$ is between $P_{\mathrm{atrium{}}$ and $P_{\mathrm{aorta{}}$.
 
-4. **Ventricular ejection**: $P_{\mathrm{'\{'}ventricle{'\}'}}$ exceeds $P_{\mathrm{'\{'}aorta{'\}'}}$, SL valves open,
-   blood is ejected. $P_{\mathrm{'\{'}ventricle{'\}'}}$ peaks and then begins to fall as ejection proceeds.
+4. **Ventricular ejection**: $P_{\mathrm{ventricle{}}$ exceeds $P_{\mathrm{aorta{}}$, SL valves open,
+   blood is ejected. $P_{\mathrm{ventricle{}}$ peaks and then begins to fall as ejection proceeds.
    Aortic pressure rises to a peak (systolic pressure).
 
-5. **Isovolumetric relaxation**: $P_{\mathrm{'\{'}ventricle{'\}'}}$ falls below $P_{\mathrm{'\{'}aorta{'\}'}}$, SL valves
+5. **Isovolumetric relaxation**: $P_{\mathrm{ventricle{}}$ falls below $P_{\mathrm{aorta{}}$, SL valves
    close (the "dicrotic notch" on the aortic curve, caused by backflow against closed aortic valve).
-   $P_{\mathrm{'\{'}ventricle{'\}'}}$ continues to fall but is still above $P_{\mathrm{'\{'}atrium{'\}'}}$, so AV valves
+   $P_{\mathrm{ventricle{}}$ continues to fall but is still above $P_{\mathrm{atrium{}}$, so AV valves
    remain closed. Volume is again constant.
 
-6. **Return to filling**: $P_{\mathrm{'\{'}ventricle{'\}'}}$ falls below $P_{\mathrm{'\{'}atrium{'\}'}}$, AV valves open,
+6. **Return to filling**: $P_{\mathrm{ventricle{}}$ falls below $P_{\mathrm{atrium{}}$, AV valves open,
    and passive filling resumes.
 
 ### 9.3 Worked Example: Cardiac Output During Exercise
 
 A 20-year-old student has the following measurements at rest:
 - Heart rate $= 68\ \mathrm{beats\ min^{-1}}$
-- Stroke volume $= 72\ \mathrm{'\{'}cm^3{'\}'}$
-- End-diastolic volume $= 120\ \mathrm{'\{'}cm^3{'\}'}$
+- Stroke volume $= 72\ \mathrm{cm^3{}$
+- End-diastolic volume $= 120\ \mathrm{cm^3{}$
 
 During maximal exercise:
 - Heart rate $= 195\ \mathrm{beats\ min^{-1}}$
-- End-diastolic volume $= 140\ \mathrm{'\{'}cm^3{'\}'}$
-- End-systolic volume $= 40\ \mathrm{'\{'}cm^3{'\}'}$
+- End-diastolic volume $= 140\ \mathrm{cm^3{}$
+- End-systolic volume $= 40\ \mathrm{cm^3{}$
 
 (a) Calculate cardiac output at rest and during exercise.
 
-At rest: $\mathrm{'\{'}CO{'\}'} = 72 \times 68 = 4896\ \mathrm{cm^3\ min^{-1}} = 4.9\ \mathrm{dm^3\ min^{-1}}$.
+At rest: $\mathrm{CO{} = 72 \times 68 = 4896\ \mathrm{cm^3\ min^{-1}} = 4.9\ \mathrm{dm^3\ min^{-1}}$.
 
-During exercise: Stroke volume $= 140 - 40 = 100\ \mathrm{'\{'}cm^3{'\}'}$.
-$\mathrm{'\{'}CO{'\}'} = 100 \times 195 = 19500\ \mathrm{cm^3\ min^{-1}} = 19.5\ \mathrm{dm^3\ min^{-1}}$.
+During exercise: Stroke volume $= 140 - 40 = 100\ \mathrm{cm^3{}$.
+$\mathrm{CO{} = 100 \times 195 = 19500\ \mathrm{cm^3\ min^{-1}} = 19.5\ \mathrm{dm^3\ min^{-1}}$.
 
 (b) Calculate the ejection fraction at rest.
 
-Ejection fraction $= \frac{\mathrm{'\{'}Stroke\ volume{'\}'}}{\mathrm{'\{'}End-diastolic\ volume{'\}'}} \times 100\% = \frac{72}{120} \times 100\% = 60\%$.
+Ejection fraction $= \frac{\mathrm{Stroke\ volume{}}{\mathrm{End-diastolic\ volume{}} \times 100\% = \frac{72}{120} \times 100\% = 60\%$.
 
 (c) The cardiac output increased by a factor of $\frac{19.5}{4.9} \approx 4.0\times$. This is achieved
 primarily through increased heart rate (from 68 to $195\ \mathrm{beats\ min^{-1}}$, a factor of $2.9\times$)
-and increased stroke volume (from 72 to $100\ \mathrm{'\{'}cm^3{'\}'}$, a factor of $1.4\times$).
+and increased stroke volume (from 72 to $100\ \mathrm{cm^3{}$, a factor of $1.4\times$).
 
 :::warning
 Common Pitfall Students sometimes add the increases in heart rate and stroke volume multiplicatively
@@ -601,38 +601,38 @@ shown above. This avoids rounding errors and is methodologically correct.
 
 ## 10. The Chloride Shift and Bicarbonate Buffer System
 
-### 10.1 Mechanism of $\mathrm{'\{'}CO_2{'\}'}$ Transport in Detail
+### 10.1 Mechanism of $\mathrm{CO_2{}$ Transport in Detail
 
-When $\mathrm{'\{'}CO_2{'\}'}$ enters a red blood cell, carbonic anhydrase catalyses its hydration:
+When $\mathrm{CO_2{}$ enters a red blood cell, carbonic anhydrase catalyses its hydration:
 
-$$\mathrm{'\{'}CO_2{'\}'} + \mathrm{'\{'}H_2O{'\}'} \rightleftharpoons \mathrm{'\{'}H_2CO_3{'\}'} \rightleftharpoons \mathrm{'\{'}H^+{'\}'} + \mathrm{'\{'}HCO_3^-{'\}'}$$
+$$\mathrm{CO_2{} + \mathrm{H_2O{} \rightleftharpoons \mathrm{H_2CO_3{} \rightleftharpoons \mathrm{H^+{} + \mathrm{HCO_3^-{}$$
 
-The $\mathrm{'\{'}HCO_3^-{'\}'}$ ions are transported out of the red blood cell in exchange for $\mathrm{'\{'}Cl^-{'\}'}$ ions
+The $\mathrm{HCO_3^-{}$ ions are transported out of the red blood cell in exchange for $\mathrm{Cl^-{}$ ions
 entering from the plasma. This is the **chloride shift** (Hamburger shift), mediated by the anion
 exchanger protein (Band 3) in the red blood cell membrane.
 
-The exchange is 1:1: for every $\mathrm{'\{'}HCO_3^-{'\}'}$ that leaves, one $\mathrm{'\{'}Cl^-{'\}'}$ enters. This
+The exchange is 1:1: for every $\mathrm{HCO_3^-{}$ that leaves, one $\mathrm{Cl^-{}$ enters. This
 maintains electrochemical neutrality inside the cell.
 
-The $\mathrm{'\{'}H^+{'\}'}$ ions are buffered by haemoglobin:
+The $\mathrm{H^+{}$ ions are buffered by haemoglobin:
 
-$$\mathrm{'\{'}HbO_8{'\}'} + \mathrm{'\{'}H^+{'\}'} \rightleftharpoons \mathrm{'\{'}HHb{'\}'} + 4\mathrm{'\{'}O_2{'\}'}$$
+$$\mathrm{HbO_8{} + \mathrm{H^+{} \rightleftharpoons \mathrm{HHb{} + 4\mathrm{O_2{}$$
 
-This is the molecular basis of the Bohr effect: the binding of $\mathrm{'\{'}H^+{'\}'}$ to haemoglobin reduces
-its affinity for $\mathrm{'\{'}O_2{'\}'}$, promoting $\mathrm{'\{'}O_2{'\}'}$ unloading in respiring tissues.
+This is the molecular basis of the Bohr effect: the binding of $\mathrm{H^+{}$ to haemoglobin reduces
+its affinity for $\mathrm{O_2{}$, promoting $\mathrm{O_2{}$ unloading in respiring tissues.
 
 ### 10.2 Reversal in the Lungs
 
-In the pulmonary capillaries, the process reverses. The high $p\mathrm{'\{'}O_2{'\}'}$ promotes $\mathrm{'\{'}O_2{'\}'}$
-binding to haemoglobin, which releases $\mathrm{'\{'}H^+{'\}'}$. The $\mathrm{'\{'}H^+{'\}'}$ combines with
-$\mathrm{'\{'}HCO_3^-{'\}'}$ to form $\mathrm{'\{'}H_2CO_3{'\}'}$, which is broken down by carbonic anhydrase to
-$\mathrm{'\{'}CO_2{'\}'}$ and $\mathrm{'\{'}H_2O{'\}'}$. The $\mathrm{'\{'}CO_2{'\}'}$ diffuses out into the alveolar air.
-$\mathrm{'\{'}Cl^-{'\}'}$ exits the red blood cell (reverse chloride shift).
+In the pulmonary capillaries, the process reverses. The high $p\mathrm{O_2{}$ promotes $\mathrm{O_2{}$
+binding to haemoglobin, which releases $\mathrm{H^+{}$. The $\mathrm{H^+{}$ combines with
+$\mathrm{HCO_3^-{}$ to form $\mathrm{H_2CO_3{}$, which is broken down by carbonic anhydrase to
+$\mathrm{CO_2{}$ and $\mathrm{H_2O{}$. The $\mathrm{CO_2{}$ diffuses out into the alveolar air.
+$\mathrm{Cl^-{}$ exits the red blood cell (reverse chloride shift).
 
 :::warning
-Common Pitfall Students sometimes write that $\mathrm{'\{'}CO_2{'\}'}$ "binds to haemoglobin" in the same way
-that $\mathrm{'\{'}O_2{'\}'}$ does. $\mathrm{'\{'}CO_2{'\}'}$ binds to the amino groups of the globin chains (forming
-carbaminohaemoglobin), not to the haem groups. $\mathrm{'\{'}O_2{'\}'}$ binds to the iron in the haem groups.
+Common Pitfall Students sometimes write that $\mathrm{CO_2{}$ "binds to haemoglobin" in the same way
+that $\mathrm{O_2{}$ does. $\mathrm{CO_2{}$ binds to the amino groups of the globin chains (forming
+carbaminohaemoglobin), not to the haem groups. $\mathrm{O_2{}$ binds to the iron in the haem groups.
 These are distinct binding sites and mechanisms.
 :::
 
@@ -644,13 +644,13 @@ Explain how the countercurrent flow mechanism in fish gills is more efficient fo
 than parallel flow. Use a numerical example.
 
 **Answer.** In countercurrent flow, water and blood flow in opposite directions. At every point
-along the gill plate, the $p\mathrm{'\{'}O_2{'\}'}$ in water exceeds that in blood, so there is always a
-diffusion gradient driving $\mathrm{'\{'}O_2{'\}'}$ from water into blood. If water enters with
-$p\mathrm{'\{'}O_2{'\}'}
-= 15\ \mathrm{'\{'}kPa{'\}'}$ and blood enters with $p\mathrm{'\{'}O_2{'\}'} = 5\ \mathrm{'\{'}kPa{'\}'}$, by the
-time water exits its $p\mathrm{'\{'}O_2{'\}'}$ may be $7\ \mathrm{'\{'}kPa{'\}'}$, but blood at that point has risen to
-nearly $15\ \mathrm{'\{'}kPa{'\}'}$. In parallel flow, water and blood flow in the same direction; equilibrium
-is reached partway along the gill, and no further $\mathrm{'\{'}O_2{'\}'}$ transfer occurs. The countercurrent
+along the gill plate, the $p\mathrm{O_2{}$ in water exceeds that in blood, so there is always a
+diffusion gradient driving $\mathrm{O_2{}$ from water into blood. If water enters with
+$p\mathrm{O_2{}
+= 15\ \mathrm{kPa{}$ and blood enters with $p\mathrm{O_2{} = 5\ \mathrm{kPa{}$, by the
+time water exits its $p\mathrm{O_2{}$ may be $7\ \mathrm{kPa{}$, but blood at that point has risen to
+nearly $15\ \mathrm{kPa{}$. In parallel flow, water and blood flow in the same direction; equilibrium
+is reached partway along the gill, and no further $\mathrm{O_2{}$ transfer occurs. The countercurrent
 system achieves approximately 80% oxygen extraction versus approximately 50% for parallel flow.
 
 <b>If you get this wrong, revise:</b> [Fish: Gills](#32-fish-gills)
@@ -682,15 +682,15 @@ Explain the Bohr effect and its significance in ensuring efficient oxygen delive
 tissues.
 
 **Answer.** The Bohr effect describes the decrease in haemoglobin's affinity for oxygen in the
-presence of increased $p\mathrm{'\{'}CO_2{'\}'}$ and decreased pH. In actively respiring tissues, cells
-produce $\mathrm{'\{'}CO_2{'\}'}$, which is converted to $\mathrm{'\{'}H^+{'\}'}$ and $\mathrm{'\{'}HCO_3^-{'\}'}$ by carbonic
-anhydrase in red blood cells. The increased $\mathrm{'\{'}H^+{'\}'}$ concentration lowers pH, which causes a
-conformational change in haemoglobin that reduces its affinity for $\mathrm{'\{'}O_2{'\}'}$. This shifts the
-oxygen dissociation curve to the right, meaning that at any given $p\mathrm{'\{'}O_2{'\}'}$, more
-$\mathrm{'\{'}O_2{'\}'}$ is unloaded from haemoglobin. The significance is that tissues with the highest
-metabolic rate (and therefore highest $\mathrm{'\{'}CO_2{'\}'}$ production) receive the most $\mathrm{'\{'}O_2{'\}'}$
-delivery. In the lungs, the reverse conditions (low $p\mathrm{'\{'}CO_2{'\}'}$, higher pH) shift the curve
-left, increasing affinity and facilitating $\mathrm{'\{'}O_2{'\}'}$ loading.
+presence of increased $p\mathrm{CO_2{}$ and decreased pH. In actively respiring tissues, cells
+produce $\mathrm{CO_2{}$, which is converted to $\mathrm{H^+{}$ and $\mathrm{HCO_3^-{}$ by carbonic
+anhydrase in red blood cells. The increased $\mathrm{H^+{}$ concentration lowers pH, which causes a
+conformational change in haemoglobin that reduces its affinity for $\mathrm{O_2{}$. This shifts the
+oxygen dissociation curve to the right, meaning that at any given $p\mathrm{O_2{}$, more
+$\mathrm{O_2{}$ is unloaded from haemoglobin. The significance is that tissues with the highest
+metabolic rate (and therefore highest $\mathrm{CO_2{}$ production) receive the most $\mathrm{O_2{}$
+delivery. In the lungs, the reverse conditions (low $p\mathrm{CO_2{}$, higher pH) shift the curve
+left, increasing affinity and facilitating $\mathrm{O_2{}$ loading.
 
 <b>If you get this wrong, revise:</b>
 [Haemoglobin and Oxygen Transport](#62-haemoglobin-and-oxygen-transport)
@@ -725,14 +725,14 @@ Why does this system limit the maximum body size of insects?
 **Answer.** The insect tracheal system consists of air-filled tubes (tracheae) that branch into
 smaller tracheoles, delivering air directly to cells without requiring a circulatory transport
 system. Adaptations include: spiracles with valves to control air entry and reduce water loss;
-tracheoles with very small diameter ($\approx 1\ \mu\mathrm{'\{'}m{'\}'}$) that penetrate individual cells,
+tracheoles with very small diameter ($\approx 1\ \mu\mathrm{m{}$) that penetrate individual cells,
 providing a very short diffusion pathway; and in larger insects, rhythmic abdominal movements that
 ventilate the system (mass flow rather than relying on diffusion alone). The system limits body size
 because gas transport within tracheae relies on diffusion for the final stages, and diffusion is
 only effective over very short distances (a few hundred micrometres). As body size increases, the
 distance from spiracles to the deepest tissues increases, and diffusion becomes insufficient to meet
 metabolic demands. This is why giant insects existed in the Carboniferous period when atmospheric
-$\mathrm{'\{'}O_2{'\}'}$ was higher (approximately 35% vs. 21% today), increasing the diffusion gradient.
+$\mathrm{O_2{}$ was higher (approximately 35% vs. 21% today), increasing the diffusion gradient.
 
 <b>If you get this wrong, revise:</b>
 [Insects: The Tracheal System](#31-insects-the-tracheal-system)
@@ -741,8 +741,8 @@ $\mathrm{'\{'}O_2{'\}'}$ was higher (approximately 35% vs. 21% today), increasin
 
 <details>
 <summary>Problem 6</summary>
-A person has a resting stroke volume of $65\ \mathrm{'\{'}cm^3{'\}'}$ and a heart rate of $70\ \mathrm{beats\ min^{-1}}$.
-During exercise, their stroke volume increases to $110\ \mathrm{'\{'}cm^3{'\}'}$ and heart rate to $160\ \mathrm{beats\ min^{-1}}$.
+A person has a resting stroke volume of $65\ \mathrm{cm^3{}$ and a heart rate of $70\ \mathrm{beats\ min^{-1}}$.
+During exercise, their stroke volume increases to $110\ \mathrm{cm^3{}$ and heart rate to $160\ \mathrm{beats\ min^{-1}}$.
 Calculate the cardiac output at rest and during exercise. By what factor does cardiac output increase?
 
 **Answer.** At rest: cardiac output
@@ -757,24 +757,24 @@ Factor of increase $= 17.6 / 4.55 \approx 3.9\times$.
 <details>
 <summary>Problem 7</summary>
 A student investigates the effect of temperature on the rate of diffusion of a dye through agar gel.
-The dye diffuses $3.2\ \mathrm{'\{'}mm{'\}'}$ in 20 minutes at $20\ ^\circ\mathrm{'\{'}C{'\}'}$ and $5.1\ \mathrm{'\{'}mm{'\}'}$ in
-20 minutes at $40\ ^\circ\mathrm{'\{'}C{'\}'}$. (a) Calculate the rate of diffusion at each temperature.
+The dye diffuses $3.2\ \mathrm{mm{}$ in 20 minutes at $20\ ^\circ\mathrm{C{}$ and $5.1\ \mathrm{mm{}$ in
+20 minutes at $40\ ^\circ\mathrm{C{}$. (a) Calculate the rate of diffusion at each temperature.
 (b) The $Q_{10}$ coefficient is defined as the ratio of rates at temperatures differing by
-$10\ ^\circ\mathrm{'\{'}C{'\}'}$. Estimate $Q_{10}$ for this process. (c) Explain the effect of temperature on
+$10\ ^\circ\mathrm{C{}$. Estimate $Q_{10}$ for this process. (c) Explain the effect of temperature on
 the rate of diffusion.
 
-**Answer.** (a) Rate at $20\ ^\circ\mathrm{'\{'}C{'\}'}$: $\frac{3.2}{20} = 0.16\ \mathrm{mm\ min^{-1}}$.
+**Answer.** (a) Rate at $20\ ^\circ\mathrm{C{}$: $\frac{3.2}{20} = 0.16\ \mathrm{mm\ min^{-1}}$.
 
-Rate at $40\ ^\circ\mathrm{'\{'}C{'\}'}$: $\frac{5.1}{20} = 0.255\ \mathrm{mm\ min^{-1}}$.
+Rate at $40\ ^\circ\mathrm{C{}$: $\frac{5.1}{20} = 0.255\ \mathrm{mm\ min^{-1}}$.
 
 (b) $Q_{10} = \left(\frac{v_{40}}{v_{20}}\right)^{\frac{10}{40-20}} = \left(\frac{0.255}{0.16}\right)^{0.5} = (1.594)^{0.5} = 1.26$.
 
-The rate of diffusion increases by approximately 26% for each $10\ ^\circ\mathrm{'\{'}C{'\}'}$ increase in
+The rate of diffusion increases by approximately 26% for each $10\ ^\circ\mathrm{C{}$ increase in
 temperature.
 
 (c) Increasing temperature increases the kinetic energy of dye molecules, causing them to move faster.
 According to the kinetic theory, the average kinetic energy of molecules is proportional to absolute
-temperature ($\mathrm{'\{'}KE{'\}'} = \frac{3}{2}k_BT$). Higher kinetic energy means more frequent and more
+temperature ($\mathrm{KE{} = \frac{3}{2}k_BT$). Higher kinetic energy means more frequent and more
 energetic collisions, increasing the rate of diffusion. Note that this effect is relatively modest for
 simple diffusion ($Q_{10} \approx 1.2$--$1.4$) compared with enzyme-catalysed reactions
 ($Q_{10} \approx 2$--$3$), because diffusion does not involve the conformational changes that make
@@ -811,13 +811,13 @@ cytoplasmic streaming and active transport along sieve tubes.
 
 <details>
 <summary>Problem 9</summary>
-A spirometer trace from a student shows the following measurements: tidal volume $= 450\ \mathrm{'\{'}cm^3{'\}'}$,
-vital capacity $= 4200\ \mathrm{'\{'}cm^3{'\}'}$, breathing rate $= 16\ \mathrm{breaths\ min^{-1}}$, and
+A spirometer trace from a student shows the following measurements: tidal volume $= 450\ \mathrm{cm^3{}$,
+vital capacity $= 4200\ \mathrm{cm^3{}$, breathing rate $= 16\ \mathrm{breaths\ min^{-1}}$, and
 respiratory minute ventilation $= 7.2\ \mathrm{dm^3\ min^{-1}}$. After 5 minutes of exercise, the
-breathing rate increases to $28\ \mathrm{breaths\ min^{-1}}$ and tidal volume to $750\ \mathrm{'\{'}cm^3{'\}'}$.
+breathing rate increases to $28\ \mathrm{breaths\ min^{-1}}$ and tidal volume to $750\ \mathrm{cm^3{}$.
 (a) Verify the resting respiratory minute ventilation. (b) Calculate the respiratory minute ventilation
 during exercise. (c) Calculate the volume of air that ventilates the anatomical dead space per minute
-at rest and during exercise, given a dead space volume of $150\ \mathrm{'\{'}cm^3{'\}'}$.
+at rest and during exercise, given a dead space volume of $150\ \mathrm{cm^3{}$.
 
 **Answer.** (a) Respiratory minute ventilation $= \text{'\{'}tidal volume{'\}'} \times \text{'\{'}breathing rate{'\}'} = 450 \times 16 = 7200\ \mathrm{cm^3\ min^{-1}} = 7.2\ \mathrm{dm^3\ min^{-1}}$. This matches the stated value.
 
@@ -836,7 +836,7 @@ At rest: $7.2 - 2.4 = 4.8\ \mathrm{dm^3\ min^{-1}}$.
 During exercise: $21.0 - 4.2 = 16.8\ \mathrm{dm^3\ min^{-1}}$.
 
 The alveolar ventilation increased by a factor of $\frac{16.8}{4.8} = 3.5\times$, ensuring sufficient
-$\mathrm{'\{'}O_2{'\}'}$ uptake and $\mathrm{'\{'}CO_2{'\}'}$ removal during exercise.
+$\mathrm{O_2{}$ uptake and $\mathrm{CO_2{}$ removal during exercise.
 
 <b>If you get this wrong, revise:</b> [Pulmonary Ventilation Rate](#24-pulmonary-ventilation-rate)
 
@@ -877,11 +877,11 @@ The ECG records the electrical activity of the heart from the body surface:
 
 **Key calculations from ECG:**
 
-- **Heart rate** (from ECG): count the number of QRS complexes in a known time period. If the ECG speed is $25\ \mathrm{mm\ s^{-1}}$ and the distance between two QRS complexes is $20\ \mathrm{'\{'}mm{'\}'}$:
+- **Heart rate** (from ECG): count the number of QRS complexes in a known time period. If the ECG speed is $25\ \mathrm{mm\ s^{-1}}$ and the distance between two QRS complexes is $20\ \mathrm{mm{}$:
 
-$$\text{'\{'}Time per beat{'\}'} = \frac{20}{25} = 0.8\ \mathrm{'\{'}s{'\}'}$$
+$$\text{'\{'}Time per beat{'\}'} = \frac{20}{25} = 0.8\ \mathrm{s{}$$
 
-$$\text{'\{'}Heart rate{'\}'} = \frac{60}{0.8} = 75\ \mathrm{'\{'}bpm{'\}'}$$
+$$\text{'\{'}Heart rate{'\}'} = \frac{60}{0.8} = 75\ \mathrm{bpm{}$$
 
 ### 11.4 Pressure and Volume Changes in the Cardiac Cycle
 
@@ -935,34 +935,34 @@ The **mass flow (pressure flow) hypothesis** explains how organic solutes (mainl
 
 ### 13.1 The Bohr Effect in Detail
 
-The Bohr effect describes the rightward shift of the oxygen dissociation curve at lower pH (higher $\mathrm{'\{'}CO_2{'\}'}$ concentration):
+The Bohr effect describes the rightward shift of the oxygen dissociation curve at lower pH (higher $\mathrm{CO_2{}$ concentration):
 
-- In actively respiring tissues, $\mathrm{'\{'}CO_2{'\}'}$ is produced, which diffuses into red blood cells and is converted to $\mathrm{'\{'}H^+{'\}'}$ and $\mathrm{'\{'}HCO_3^-{'\}'}$ by carbonic anhydrase:
-  $$\mathrm{'\{'}CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{'\}'}$$
-- The increase in $\mathrm{'\{'}H^+{'\}'}$ (lower pH) reduces haemoglobin's affinity for $\mathrm{'\{'}O_2{'\}'}$, causing it to release $\mathrm{'\{'}O_2{'\}'}$ more readily.
-- $\mathrm{'\{'}H^+{'\}'}$ binds to amino acid residues on haemoglobin, stabilising the T-state (tense, deoxygenated) conformation.
-- In the lungs, $\mathrm{'\{'}CO_2{'\}'}$ diffuses out, the pH rises, and haemoglobin's affinity for $\mathrm{'\{'}O_2{'\}'}$ increases, facilitating $\mathrm{'\{'}O_2{'\}'}$ loading.
+- In actively respiring tissues, $\mathrm{CO_2{}$ is produced, which diffuses into red blood cells and is converted to $\mathrm{H^+{}$ and $\mathrm{HCO_3^-{}$ by carbonic anhydrase:
+  $$\mathrm{CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{}$$
+- The increase in $\mathrm{H^+{}$ (lower pH) reduces haemoglobin's affinity for $\mathrm{O_2{}$, causing it to release $\mathrm{O_2{}$ more readily.
+- $\mathrm{H^+{}$ binds to amino acid residues on haemoglobin, stabilising the T-state (tense, deoxygenated) conformation.
+- In the lungs, $\mathrm{CO_2{}$ diffuses out, the pH rises, and haemoglobin's affinity for $\mathrm{O_2{}$ increases, facilitating $\mathrm{O_2{}$ loading.
 
 ### 13.2 Foetal Haemoglobin
 
-**Foetal haemoglobin (HbF)** has a higher affinity for $\mathrm{'\{'}O_2{'\}'}$ than adult haemoglobin (HbA). This is because HbF has two $\gamma$ chains instead of two $\beta$ chains, and the $\gamma$ chain binds 2,3-BPG less effectively. Since 2,3-BPG stabilises the T-state (reducing $\mathrm{'\{'}O_2{'\}'}$ affinity), reduced binding of 2,3-BPG means HbF stays in the R-state (high-affinity state) more easily.
+**Foetal haemoglobin (HbF)** has a higher affinity for $\mathrm{O_2{}$ than adult haemoglobin (HbA). This is because HbF has two $\gamma$ chains instead of two $\beta$ chains, and the $\gamma$ chain binds 2,3-BPG less effectively. Since 2,3-BPG stabilises the T-state (reducing $\mathrm{O_2{}$ affinity), reduced binding of 2,3-BPG means HbF stays in the R-state (high-affinity state) more easily.
 
-This ensures that foetal haemoglobin can "steal" $\mathrm{'\{'}O_2{'\}'}$ from maternal haemoglobin in the placenta, where maternal and foetal blood run in close proximity (but do not mix) in the chorionic villi.
+This ensures that foetal haemoglobin can "steal" $\mathrm{O_2{}$ from maternal haemoglobin in the placenta, where maternal and foetal blood run in close proximity (but do not mix) in the chorionic villi.
 
 ### 13.3 Comparing Haemoglobin Types
 
-| Haemoglobin Type | $P_{50}$ ($\mathrm{'\{'}kPa{'\}'}$) | Relative Affinity | Adaptation |
+| Haemoglobin Type | $P_{50}$ ($\mathrm{kPa{}$) | Relative Affinity | Adaptation |
 | ---------------- | ----------------------- | ----------------- | ---------- |
 | Human HbA (adult) | $\approx 3.5$ | Medium | General purpose |
-| Human HbF (foetal) | $\approx 2.5$ | High | Extracts $\mathrm{'\{'}O_2{'\}'}$ from maternal blood |
-| Llama Hb | $\approx 2.0$ | Very high | High altitude (low $p\mathrm{'\{'}O_2{'\}'}$) |
+| Human HbF (foetal) | $\approx 2.5$ | High | Extracts $\mathrm{O_2{}$ from maternal blood |
+| Llama Hb | $\approx 2.0$ | Very high | High altitude (low $p\mathrm{O_2{}$) |
 | Bar-headed goose Hb | Very low | Very high | Migratory flight over Himalayas |
-| Antarctic fish Hb (icefish) | N/A | N/A | No haemoglobin; uses dissolved $\mathrm{'\{'}O_2{'\}'}$ directly |
+| Antarctic fish Hb (icefish) | N/A | N/A | No haemoglobin; uses dissolved $\mathrm{O_2{}$ directly |
 
-The $P_{50}$ value is the partial pressure of $\mathrm{'\{'}O_2{'\}'}$ at which haemoglobin is 50% saturated. A lower $P_{50}$ means higher affinity (the curve is shifted to the left).
+The $P_{50}$ value is the partial pressure of $\mathrm{O_2{}$ at which haemoglobin is 50% saturated. A lower $P_{50}$ means higher affinity (the curve is shifted to the left).
 
 :::warning
-Common Pitfall Students often confuse "left shift" and "right shift" of the oxygen dissociation curve. Remember: **L**eft = **L**oads $\mathrm{'\{'}O_2{'\}'}$ more readily (high affinity, e.g., foetal Hb, low temperature, low $\mathrm{'\{'}CO_2{'\}'}$). **R**ight = **R**eleases $\mathrm{'\{'}O_2{'\}'}$ more readily (low affinity, e.g., adult Hb in muscle, high temperature, high $\mathrm{'\{'}CO_2{'\}'}$, high 2,3-BPG).
+Common Pitfall Students often confuse "left shift" and "right shift" of the oxygen dissociation curve. Remember: **L**eft = **L**oads $\mathrm{O_2{}$ more readily (high affinity, e.g., foetal Hb, low temperature, low $\mathrm{CO_2{}$). **R**ight = **R**eleases $\mathrm{O_2{}$ more readily (low affinity, e.g., adult Hb in muscle, high temperature, high $\mathrm{CO_2{}$, high 2,3-BPG).
 :::
 
 ## 15. Plant Transport: Advanced Topics
@@ -994,9 +994,9 @@ $$\text{'\{'}Transpiration rate{'\}'} = \frac{\text{'\{'}Volume of water taken u
 
 Where $r$ = radius of capillary tube, $d$ = distance bubble moved, $t$ = time.
 
-**Worked Example.** The bubble in a potometer with capillary tube radius $0.5\ \mathrm{'\{'}mm{'\}'}$ moves $12\ \mathrm{'\{'}mm{'\}'}$ in 5 minutes.
+**Worked Example.** The bubble in a potometer with capillary tube radius $0.5\ \mathrm{mm{}$ moves $12\ \mathrm{mm{}$ in 5 minutes.
 
-Volume $= \pi \times (0.5)^2 \times 12 = \pi \times 0.25 \times 12 = 9.42\ \mathrm{'\{'}mm^3{'\}'}$.
+Volume $= \pi \times (0.5)^2 \times 12 = \pi \times 0.25 \times 12 = 9.42\ \mathrm{mm^3{}$.
 
 Rate $= \frac{9.42}{5} = 1.88\ \mathrm{mm^3\ min^{-1}}$.
 
@@ -1006,23 +1006,23 @@ Guard cells control the opening and closing of stomata:
 
 **Opening stomata (in the light):**
 1. Light drives photosynthesis in guard cell chloroplasts, producing ATP.
-2. ATP powers the active transport of $\mathrm{'\{'}K^+{'\}'}$ into guard cells (via $\mathrm{'\{'}K^+{'\}'}$ channels).
-3. $\mathrm{'\{'}Cl^-{'\}'}$ ions enter through channels, maintaining electrical neutrality.
+2. ATP powers the active transport of $\mathrm{K^+{}$ into guard cells (via $\mathrm{K^+{}$ channels).
+3. $\mathrm{Cl^-{}$ ions enter through channels, maintaining electrical neutrality.
 4. The accumulation of ions lowers the water potential inside guard cells.
 5. Water enters guard cells by osmosis from neighbouring epidermal cells.
 6. Guard cells swell and become turgid. Because the inner cell wall is thicker and less elastic than the outer wall, the guard cells curve apart, opening the stomatal pore.
 
 **Closing stomata (in the dark or during water stress):**
-1. $\mathrm{'\{'}K^+{'\}'}$ ions leave guard cells (passive efflux through channels).
+1. $\mathrm{K^+{}$ ions leave guard cells (passive efflux through channels).
 2. Water potential inside guard cells increases.
 3. Water leaves guard cells by osmosis.
 4. Guard cells become flaccid, and the stomatal pore closes.
 
 **Abscisic acid (ABA)** is produced by roots in response to water stress and transported to leaves. ABA triggers stomatal closure by:
 - Increasing $\mathrm{Ca^{2+}}$ concentration in guard cell cytoplasm.
-- $\mathrm{Ca^{2+}}$ activates anion channels, allowing $\mathrm{'\{'}Cl^-{'\}'}$ and malate to leave.
-- This depolarises the membrane, opening $\mathrm{'\{'}K^+{'\}'}$ efflux channels.
-- $\mathrm{'\{'}K^+{'\}'}$ leaves, water follows, guard cells become flaccid.
+- $\mathrm{Ca^{2+}}$ activates anion channels, allowing $\mathrm{Cl^-{}$ and malate to leave.
+- This depolarises the membrane, opening $\mathrm{K^+{}$ efflux channels.
+- $\mathrm{K^+{}$ leaves, water follows, guard cells become flaccid.
 
 ## 16. Human Circulatory System: Advanced Topics
 
@@ -1034,26 +1034,26 @@ Guard cells control the opening and closing of stomata:
 | --------- | ------------- | -------- |
 | Water | 90--92% | Solvent for transport |
 | Proteins (albumin, globulins, fibrinogen) | $60$--$80\ \mathrm{g\ L^{-1}}$ | Osmotic pressure (albumin), immunity (globulins), clotting (fibrinogen) |
-| Ions ($\mathrm{'\{'}Na^+{'\}'}$, $\mathrm{'\{'}K^+{'\}'}$, $\mathrm{Ca^{2+}}$, $\mathrm{'\{'}Cl^-{'\}'}$, $\mathrm{'\{'}HCO_3^-{'\}'}$) | Variable | Osmoregulation, pH buffering, nerve impulse transmission |
+| Ions ($\mathrm{Na^+{}$, $\mathrm{K^+{}$, $\mathrm{Ca^{2+}}$, $\mathrm{Cl^-{}$, $\mathrm{HCO_3^-{}$) | Variable | Osmoregulation, pH buffering, nerve impulse transmission |
 - Nutrients (glucose, amino acids, lipids) | Variable | Transport from digestive system to cells |
 - Urea, uric acid | Variable | Waste products transported to kidneys |
 - Hormones | Trace | Chemical signalling |
-- Dissolved gases ($\mathrm{'\{'}O_2{'\}'}$, $\mathrm{'\{'}CO_2{'\}'}$, $\mathrm{'\{'}N_2{'\}'}$) | Variable | Gas transport |
+- Dissolved gases ($\mathrm{O_2{}$, $\mathrm{CO_2{}$, $\mathrm{N_2{}$) | Variable | Gas transport |
 
 ### 16.2 Tissue Fluid and Lymph
 
 **Tissue fluid** is formed by filtration from blood capillaries:
 
 At the arterial end of a capillary:
-- Hydrostatic pressure (blood pressure) $\approx 4.3\ \mathrm{'\{'}kPa{'\}'}$ (pushes fluid out).
-- Oncotic pressure (due to plasma proteins, mainly albumin) $\approx 3.3\ \mathrm{'\{'}kPa{'\}'}$ (pulls fluid in).
-- Net outward pressure $= 4.3 - 3.3 = 1.0\ \mathrm{'\{'}kPa{'\}'}$.
+- Hydrostatic pressure (blood pressure) $\approx 4.3\ \mathrm{kPa{}$ (pushes fluid out).
+- Oncotic pressure (due to plasma proteins, mainly albumin) $\approx 3.3\ \mathrm{kPa{}$ (pulls fluid in).
+- Net outward pressure $= 4.3 - 3.3 = 1.0\ \mathrm{kPa{}$.
 - Fluid is forced out of the capillary into the tissue spaces, forming tissue fluid.
 
 At the venous end of a capillary:
-- Hydrostatic pressure has fallen to approximately $1.6\ \mathrm{'\{'}kPa{'\}'}$ (resistance of the capillary reduces pressure).
-- Oncotic pressure remains approximately $3.3\ \mathrm{'\{'}kPa{'\}'}$ (proteins cannot leave the capillary).
-- Net inward pressure $= 3.3 - 1.6 = 1.7\ \mathrm{'\{'}kPa{'\}'}$.
+- Hydrostatic pressure has fallen to approximately $1.6\ \mathrm{kPa{}$ (resistance of the capillary reduces pressure).
+- Oncotic pressure remains approximately $3.3\ \mathrm{kPa{}$ (proteins cannot leave the capillary).
+- Net inward pressure $= 3.3 - 1.6 = 1.7\ \mathrm{kPa{}$.
 - Approximately 90% of the tissue fluid is reabsorbed into the capillary.
 
 The remaining 10% of tissue fluid is returned to the circulation via the **lymphatic system**:
@@ -1104,21 +1104,21 @@ Insects do not use blood for gas transport. Instead, they have a **tracheal syst
 | --------- | ----------- | -------- |
 | Spiracles | Paired openings on the thorax and abdomen | Entry and exit points for air; can be opened and closed by valves to reduce water loss |
 | Tracheae | Main tubes branching from spiracles | Air conduits |
-| Tracheoles | Fine, terminal branches ($< 1\ \mu\mathrm{'\{'}m{'\}'}$ diameter) that penetrate tissues and cells | Deliver oxygen directly to cells; extend to within 1 cell diameter of every cell |
+| Tracheoles | Fine, terminal branches ($< 1\ \mu\mathrm{m{}$ diameter) that penetrate tissues and cells | Deliver oxygen directly to cells; extend to within 1 cell diameter of every cell |
 | Air sacs | Thin-walled, expandable chambers | Act as air reservoirs; improve ventilation (especially during flight) |
 
 **Ventilation in insects:** larger insects actively ventilate their tracheal system by rhythmic abdominal movements (alternating compression and expansion of the tracheae and air sacs, similar to a bellows).
 
-**Limitations:** the reliance on diffusion limits the maximum body size of insects. This is why insects are generally small (though some extinct insects were much larger, possibly because atmospheric $\mathrm{'\{'}O_2{'\}'}$ levels were higher in the Carboniferous).
+**Limitations:** the reliance on diffusion limits the maximum body size of insects. This is why insects are generally small (though some extinct insects were much larger, possibly because atmospheric $\mathrm{O_2{}$ levels were higher in the Carboniferous).
 
 ### 17.2 Fish vs Mammalian Gas Exchange
 
 | Feature | Fish Gills | Mammalian Lungs |
 | ------- | ---------- | ---------------- |
-| Medium | Water (3000 times more viscous; 30 times less $\mathrm{'\{'}O_2{'\}'}$ per litre) | Air |
-| Surface area | Large (many secondary lamellae) | Very large (alveoli; $\approx 70\ \mathrm{'\{'}m^2{'\}'}$) |
+| Medium | Water (3000 times more viscous; 30 times less $\mathrm{O_2{}$ per litre) | Air |
+| Surface area | Large (many secondary lamellae) | Very large (alveoli; $\approx 70\ \mathrm{m^2{}$) |
 | Flow mechanism | Countercurrent | Tidal |
-| $\mathrm{'\{'}O_2{'\}'}$ extraction | $\approx 80\%$ | $\approx 25\%$ |
+| $\mathrm{O_2{}$ extraction | $\approx 80\%$ | $\approx 25\%$ |
 | Circulation | Single circuit | Double circuit |
 
 ### 17.3 Single vs Double Circulation
@@ -1137,7 +1137,7 @@ Cardiac muscle (myocardium) has unique properties:
 - **Intercalated discs**: gap junctions allow electrical coupling between cardiac muscle cells, so action potentials spread rapidly through the myocardium.
 - **Long refractory period**: prevents tetanus (sustained contraction), which would stop blood flow.
 
-**The cardiac cycle** (for a heart rate of 75 bpm, one cycle $= 0.8\ \mathrm{'\{'}s{'\}'}$):
+**The cardiac cycle** (for a heart rate of 75 bpm, one cycle $= 0.8\ \mathrm{s{}$):
 
 | Phase | Duration | Atria | Ventricles | AV Valves | Semilunar Valves |
 | ----- | -------- | ----- | ---------- | --------- | ---------------- |
@@ -1170,7 +1170,7 @@ Cardiac muscle (myocardium) has unique properties:
 | Mid-diastole (filling) | Rising (venous return) | Rising slowly (passive filling) | Falling (run-off into arteries) | Open | Closed |
 | Atrial systole | Peak | Rising (last 25% of filling) | Falling | Open | Closed |
 | Isovolumetric contraction | Falling | Rising rapidly (above atrial, below aortic) | Minimal change | Closed (bulge into atria) | Closed |
-| Ventricular ejection | Low | Peak ($\approx 120\ \mathrm{'\{'}mmHg{'\}'}$) | Rising ($\approx 120\ \mathrm{'\{'}mmHg{'\}'}$) | Closed | Open |
+| Ventricular ejection | Low | Peak ($\approx 120\ \mathrm{mmHg{}$) | Rising ($\approx 120\ \mathrm{mmHg{}$) | Closed | Open |
 | Isovolumetric relaxation | Rising | Falling rapidly | Minimal change | Closed | Closed (brief backflow causes dicrotic notch) |
 
 ### 18.5 Coronary Heart Disease (CHD)
@@ -1209,11 +1209,11 @@ Water moves up the xylem from roots to leaves by the cohesion-tension mechanism:
 
 | Factor | Effect | Explanation |
 | ------ | ------ | ----------- |
-| Light intensity | Increases rate | Stomata open in light (for $\mathrm{'\{'}CO_2{'\}'}$ uptake for photosynthesis), increasing the diffusion pathway for water vapour |
+| Light intensity | Increases rate | Stomata open in light (for $\mathrm{CO_2{}$ uptake for photosynthesis), increasing the diffusion pathway for water vapour |
 | Temperature | Increases rate | Higher temperature increases kinetic energy of water molecules (faster evaporation); increases the water vapour potential gradient between leaf and air |
 | Humidity | Decreases rate | Higher humidity reduces the water vapour potential gradient between leaf (saturated) and air |
 | Wind speed | Increases rate | Wind removes the boundary layer of moist air around the leaf, maintaining a steep water vapour gradient |
-| $\mathrm{'\{'}CO_2{'\}'}$ concentration | Decreases rate | High $\mathrm{'\{'}CO_2{'\}'}$ causes stomata to close (a guard cell response to prevent excessive water loss) |
+| $\mathrm{CO_2{}$ concentration | Decreases rate | High $\mathrm{CO_2{}$ causes stomata to close (a guard cell response to prevent excessive water loss) |
 
 ### 19.3 Xerophyte Adaptations
 
@@ -1226,7 +1226,7 @@ Xerophytes are plants adapted to dry conditions:
 | Hairs on leaf surface | Trap moist air, reducing water vapour gradient | _Lavandula_ (lavender) |
 | Reduced leaf surface area | Fewer stomata; less surface for transpiration | Cactus spines (modified leaves) |
 | Rolling of leaves | Exposes waterproof lower epidermis; traps moist air | _Marram grass_ (Ammophila) |
-| Crassulacean acid metabolism (CAM) | Stomata open at night (when transpiration is low) to take in $\mathrm{'\{'}CO_2{'\}'}$, which is stored as malic acid and used in photosynthesis during the day | Cacti, succulents |
+| Crassulacean acid metabolism (CAM) | Stomata open at night (when transpiration is low) to take in $\mathrm{CO_2{}$, which is stored as malic acid and used in photosynthesis during the day | Cacti, succulents |
 | Succulence | Stores water in fleshy leaves or stems | Aloe vera |
 | Deep or extensive root system | Accesses water deep underground or over a wide area | Mesquite tree |
 
@@ -1242,7 +1242,7 @@ Sucrose is transported in the phloem from source (e.g., photosynthetic leaves) t
 **Evidence for mass flow:**
 - Aphid stylet experiments: aphids pierce sieve tubes and exude sap under pressure, confirming a pressure gradient.
 - Ringing experiments (Malpighi, 1670s): removing a ring of bark (phloem) causes swelling above the ring (sucrose accumulates) and the plant dies below the ring (sucrose cannot reach roots).
-- Radioactive tracer experiments: $^{14}$C-labelled $\mathrm{'\{'}CO_2{'\}'}$ fed to a source leaf appears in sink tissues.
+- Radioactive tracer experiments: $^{14}$C-labelled $\mathrm{CO_2{}$ fed to a source leaf appears in sink tissues.
 
 ## 20. Gas Exchange in Different Organisms
 
@@ -1253,9 +1253,9 @@ Sucrose is transported in the phloem from source (e.g., photosynthetic leaves) t
 | Single-celled organism (e.g., _Amoeba_) | Cell surface membrane (whole cell) | Large surface area:volume ratio; short diffusion distance; direct contact with environment |
 | Flatworm (e.g., _Planaria_) | Body surface (no specialised system) | Very flat body (short diffusion distance); large surface area:volume ratio |
 | Earthworm | Skin (moist, vascularised) | Thin, moist skin (gases dissolve in water before diffusing); subcutaneous blood capillaries; blood contains haemoglobin |
-| Insect | Tracheal system | Branched network of tracheae and tracheoles (air-filled tubes delivering $\mathrm{'\{'}O_2{'\}'}$ directly to cells); spiracles (openings) on body surface; can open/close spiracles to reduce water loss; thin walls of tracheoles (short diffusion distance); tracheal fluid at ends of tracheoles (recedes during exercise, exposing more cells to air) |
+| Insect | Tracheal system | Branched network of tracheae and tracheoles (air-filled tubes delivering $\mathrm{O_2{}$ directly to cells); spiracles (openings) on body surface; can open/close spiracles to reduce water loss; thin walls of tracheoles (short diffusion distance); tracheal fluid at ends of tracheoles (recedes during exercise, exposing more cells to air) |
 | Fish | Gills | Large surface area (many primary and secondary lamellae); short diffusion distance (lamellae are thin); countercurrent flow (maintains concentration gradient along entire length of gill); good blood supply; water flows over gills in one direction (ventilation by opercular pumping) |
-| Human | Alveoli in lungs | Large surface area (approximately $70\ \mathrm{'\{'}m^2{'\}'}$); very thin walls (one cell thick; alveolar epithelium and capillary endothelium); dense capillary network; ventilation (tidal breathing) maintains concentration gradient; surfactant (reduces surface tension, prevents alveolar collapse) |
+| Human | Alveoli in lungs | Large surface area (approximately $70\ \mathrm{m^2{}$); very thin walls (one cell thick; alveolar epithelium and capillary endothelium); dense capillary network; ventilation (tidal breathing) maintains concentration gradient; surfactant (reduces surface tension, prevents alveolar collapse) |
 
 ### 20.2 The Insect Tracheal System
 
@@ -1263,8 +1263,8 @@ The insect tracheal system is an efficient gas exchange system that delivers air
 
 1. **Spiracles**: paired openings on the thorax and abdomen. Each spiracle has a valve that can open and close (regulated by muscles) to control gas exchange and water loss.
 2. **Tracheae**: thick-walled tubes lined with chitin (provides structural support). Tracheae branch into smaller tubes.
-3. **Tracheoles**: thin-walled (no chitin), blind-ending tubes that penetrate tissues and deliver $\mathrm{'\{'}O_2{'\}'}$ directly to cells. Tracheoles are filled with tracheal fluid at their tips.
-4. **Gas exchange**: $\mathrm{'\{'}O_2{'\}'}$ diffuses along the tracheae and tracheoles to cells; $\mathrm{'\{'}CO_2{'\}'}$ diffuses in the opposite direction. During exercise, lactic acid produced by muscle cells lowers the water potential, causing water to be reabsorbed from the tracheoles by osmosis. This exposes more of the tracheole surface to air, increasing $\mathrm{'\{'}O_2{'\}'}$ delivery.
+3. **Tracheoles**: thin-walled (no chitin), blind-ending tubes that penetrate tissues and deliver $\mathrm{O_2{}$ directly to cells. Tracheoles are filled with tracheal fluid at their tips.
+4. **Gas exchange**: $\mathrm{O_2{}$ diffuses along the tracheae and tracheoles to cells; $\mathrm{CO_2{}$ diffuses in the opposite direction. During exercise, lactic acid produced by muscle cells lowers the water potential, causing water to be reabsorbed from the tracheoles by osmosis. This exposes more of the tracheole surface to air, increasing $\mathrm{O_2{}$ delivery.
 
 **Limitations of the tracheal system:**
 - Diffusion is only effective over short distances (limits insect body size).
@@ -1279,7 +1279,7 @@ $$\text{'\{'}Rate of diffusion{'\}'} \propto \frac{\text{'\{'}surface area{'\}'}
 
 | Feature | How It Maximises Diffusion Rate |
 | ------- | ------------------------------- |
-| Large number of alveoli (approximately 300 million) | Massive total surface area ($\approx 70\ \mathrm{'\{'}m^2{'\}'}$) |
+| Large number of alveoli (approximately 300 million) | Massive total surface area ($\approx 70\ \mathrm{m^2{}$) |
 | Alveolar epithelium is one cell thick (squamous epithelium) | Very short diffusion distance |
 | Capillary endothelium is one cell thick | Very short diffusion distance |
 | Dense capillary network around each alveolus | Maintains steep concentration gradient (blood is continuously flowing) |
@@ -1287,9 +1287,9 @@ $$\text{'\{'}Rate of diffusion{'\}'} \propto \frac{\text{'\{'}surface area{'\}'}
 | Pulmonary circulation is low-pressure | Slower blood flow allows more time for gas exchange |
 | Surfactant (secreted by type II pneumocytes) | Reduces surface tension; prevents alveolar collapse; reduces work of breathing |
 
-### 20.4 $\mathrm{'\{'}O_2{'\}'}$ Dissociation Curves
+### 20.4 $\mathrm{O_2{}$ Dissociation Curves
 
-The $\mathrm{'\{'}O_2{'\}'}$ dissociation curve shows the relationship between the partial pressure of $\mathrm{'\{'}O_2{'\}'}$ ($p\mathrm{'\{'}O_2{'\}'}$) and the percentage saturation of haemoglobin with $\mathrm{'\{'}O_2{'\}'}$.
+The $\mathrm{O_2{}$ dissociation curve shows the relationship between the partial pressure of $\mathrm{O_2{}$ ($p\mathrm{O_2{}$) and the percentage saturation of haemoglobin with $\mathrm{O_2{}$.
 
 The curve is sigmoidal (S-shaped) because of cooperative binding.
 
@@ -1297,9 +1297,9 @@ The curve is sigmoidal (S-shaped) because of cooperative binding.
 
 | Haemoglobin Type | Curve Position | Explanation |
 | ---------------- | -------------- | ----------- |
-| Adult (HbA) | Standard position | Normal $\mathrm{'\{'}O_2{'\}'}$ affinity |
-| Foetal (HbF) | Left-shifted | Higher affinity for $\mathrm{'\{'}O_2{'\}'}$ than HbA; allows efficient transfer of $\mathrm{'\{'}O_2{'\}'}$ from mother to foetus across the placenta |
-| Myoglobin | Further left | Much higher affinity for $\mathrm{'\{'}O_2{'\}'}$; acts as an $\mathrm{'\{'}O_2{'\}'}$ store in muscles; releases $\mathrm{'\{'}O_2{'\}'}$ only at very low $p\mathrm{'\{'}O_2{'\}'}$ (during intense exercise) |
+| Adult (HbA) | Standard position | Normal $\mathrm{O_2{}$ affinity |
+| Foetal (HbF) | Left-shifted | Higher affinity for $\mathrm{O_2{}$ than HbA; allows efficient transfer of $\mathrm{O_2{}$ from mother to foetus across the placenta |
+| Myoglobin | Further left | Much higher affinity for $\mathrm{O_2{}$; acts as an $\mathrm{O_2{}$ store in muscles; releases $\mathrm{O_2{}$ only at very low $p\mathrm{O_2{}$ (during intense exercise) |
 
 ## 21. Mass Transport in Animals
 
@@ -1307,15 +1307,15 @@ The curve is sigmoidal (S-shaped) because of cooperative binding.
 
 Large, multicellular animals require a mass transport (circulatory) system because:
 
-1. **Small surface area:volume ratio**: diffusion alone is too slow to supply all cells with $\mathrm{'\{'}O_2{'\}'}$ and nutrients and remove $\mathrm{'\{'}CO_2{'\}'}$ and waste.
-2. **Activity level**: active animals have high metabolic rates and $\mathrm{'\{'}O_2{'\}'}$ demand.
+1. **Small surface area:volume ratio**: diffusion alone is too slow to supply all cells with $\mathrm{O_2{}$ and nutrients and remove $\mathrm{CO_2{}$ and waste.
+2. **Activity level**: active animals have high metabolic rates and $\mathrm{O_2{}$ demand.
 3. **Specialised tissues**: some tissues (brain, heart, kidneys) have very high metabolic demands and require a dedicated blood supply.
 
 ### 21.2 Features of an Efficient Transport System
 
 | Feature | Why It Is Important |
 | ------- | ------------------ |
-| A suitable transport medium (blood) | Must carry $\mathrm{'\{'}O_2{'\}'}$, nutrients, $\mathrm{'\{'}CO_2{'\}'}$, waste, hormones |
+| A suitable transport medium (blood) | Must carry $\mathrm{O_2{}$, nutrients, $\mathrm{CO_2{}$, waste, hormones |
 | A pump (heart) | Creates pressure to drive flow |
 | Vessels (arteries, veins, capillaries) | Form a closed system to direct flow |
 | Valves | Prevent backflow (in veins and the heart) |
@@ -1326,7 +1326,7 @@ Large, multicellular animals require a mass transport (circulatory) system becau
 | Feature | Artery | Arteriole | Capillary | Venule | Vein |
 | ------- | ------ | --------- | --------- | ------ | ---- |
 | Wall thickness | Thick (muscle and elastic tissue) | Thin muscle layer | One cell thick (endothelium only) | Thin | Thin (some muscle) |
-| Lumen diameter | Relatively small | Smaller | Very small (8--10 $\mu\mathrm{'\{'}m{'\}'}$) | Small | Large |
+| Lumen diameter | Relatively small | Smaller | Very small (8--10 $\mu\mathrm{m{}$) | Small | Large |
 | Valves | None | None | None | Occasionally | Present (prevent backflow) |
 | Blood pressure | High (80--120 mmHg) | Lower | Low (15--35 mmHg at arterial end) | Low | Very low (5--15 mmHg) |
 | Blood flow | Pulsatile | Decreasing | Slow | Slow | Steady (smooth) |
@@ -1335,14 +1335,14 @@ Large, multicellular animals require a mass transport (circulatory) system becau
 ### 21.4 Tissue Fluid Formation: Quantitative Example
 
 At the arterial end of a capillary:
-- Blood hydrostatic pressure (BHP) $= 35\ \mathrm{'\{'}mmHg{'\}'}$
-- Blood oncotic pressure (BOP) $= -25\ \mathrm{'\{'}mmHg{'\}'}$ (pulls fluid in)
-- Net filtration pressure $= 35 - 25 = +10\ \mathrm{'\{'}mmHg{'\}'}$ (fluid leaves capillary)
+- Blood hydrostatic pressure (BHP) $= 35\ \mathrm{mmHg{}$
+- Blood oncotic pressure (BOP) $= -25\ \mathrm{mmHg{}$ (pulls fluid in)
+- Net filtration pressure $= 35 - 25 = +10\ \mathrm{mmHg{}$ (fluid leaves capillary)
 
 At the venous end:
-- BHP $= 15\ \mathrm{'\{'}mmHg{'\}'}$ (pressure has dropped due to resistance)
-- BOP $= -25\ \mathrm{'\{'}mmHg{'\}'}$ (unchanged; plasma proteins are too large to leave the capillary)
-- Net filtration pressure $= 15 - 25 = -10\ \mathrm{'\{'}mmHg{'\}'}$ (fluid returns to capillary)
+- BHP $= 15\ \mathrm{mmHg{}$ (pressure has dropped due to resistance)
+- BOP $= -25\ \mathrm{mmHg{}$ (unchanged; plasma proteins are too large to leave the capillary)
+- Net filtration pressure $= 15 - 25 = -10\ \mathrm{mmHg{}$ (fluid returns to capillary)
 
 ---
 
@@ -1359,22 +1359,22 @@ See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for in
 
 ### 22.1 High Altitude Adaptations
 
-At high altitude, atmospheric pressure is lower, so the partial pressure of $\mathrm{'\{'}O_2{'\}'}$ is lower, making gas exchange less efficient.
+At high altitude, atmospheric pressure is lower, so the partial pressure of $\mathrm{O_2{}$ is lower, making gas exchange less efficient.
 
 | Adaptation | Mechanism | Example |
 | ---------- | --------- | ------- |
-| Increased ventilation rate | Hyperventilation in response to low $p\mathrm{'\{'}O_2{'\}'}$ (detected by peripheral chemoreceptors) | Humans at high altitude breathe faster and deeper |
-| Increased red blood cell production | Kidney detects low $\mathrm{'\{'}O_2{'\}'}$; releases EPO; stimulates erythropoiesis in bone marrow | Tibetan highlanders have higher haemoglobin concentration than lowlanders |
-| Increased capillary density | More capillaries in tissues reduce diffusion distance for $\mathrm{'\{'}O_2{'\}'}$ | Llama has dense capillary network in muscle tissue |
+| Increased ventilation rate | Hyperventilation in response to low $p\mathrm{O_2{}$ (detected by peripheral chemoreceptors) | Humans at high altitude breathe faster and deeper |
+| Increased red blood cell production | Kidney detects low $\mathrm{O_2{}$; releases EPO; stimulates erythropoiesis in bone marrow | Tibetan highlanders have higher haemoglobin concentration than lowlanders |
+| Increased capillary density | More capillaries in tissues reduce diffusion distance for $\mathrm{O_2{}$ | Llama has dense capillary network in muscle tissue |
 | Larger lungs | Increased surface area for gas exchange | Bar-headed goose (migrates over the Himalayas at > 9,000 m) has 30% larger lungs than related species |
-| Higher haemoglobin oxygen affinity | Haemoglobin variant with lower P50 (binds $\mathrm{'\{'}O_2{'\}'}$ more tightly at low $p\mathrm{'\{'}O_2{'\}'}$) | Tibetan antelope has a haemoglobin variant with increased $\mathrm{'\{'}O_2{'\}'}$ affinity |
+| Higher haemoglobin oxygen affinity | Haemoglobin variant with lower P50 (binds $\mathrm{O_2{}$ more tightly at low $p\mathrm{O_2{}$) | Tibetan antelope has a haemoglobin variant with increased $\mathrm{O_2{}$ affinity |
 
 ### 22.2 Deep-Sea Adaptations
 
 | Adaptation | Mechanism | Example |
 | ---------- | --------- | ------- |
 | Pressure tolerance | Proteins and membranes adapted to high hydrostatic pressure (up to 1000 atm) | Barophilic bacteria have flexible membrane lipids |
-| Bioluminescence | Light produced by chemical reaction (luciferin + $\mathrm{'\{'}O_2{'\}'}$, catalysed by luciferase) | Anglerfish (lure prey); deep-sea squid (counter-illumination camouflage) |
+| Bioluminescence | Light produced by chemical reaction (luciferin + $\mathrm{O_2{}$, catalysed by luciferase) | Anglerfish (lure prey); deep-sea squid (counter-illumination camouflage) |
 | Reduced metabolic rate | Lower energy demands in food-scarce environment | Deep-sea fish have low metabolic rates and slow growth |
 | Specialised sensory systems | Enhanced lateral line (detect water movements); electroreception | Gulper eel; deep-sea sharks |
 
@@ -1394,7 +1394,7 @@ At high altitude, atmospheric pressure is lower, so the partial pressure of $\ma
 | Component | Percentage | Function |
 | --------- | ---------- | -------- |
 | Plasma | 55% | Transport medium; carries dissolved substances (glucose, amino acids, urea, hormones, antibodies, ions); distributes heat; contains fibrinogen and other clotting factors |
-| Red blood cells (erythrocytes) | 45% | Transport $\mathrm{'\{'}O_2{'\}'}$ (bound to haemoglobin) and $\mathrm{'\{'}CO_2{'\}'}$ (bound to haemoglobin as carbaminohaemoglobin, and converted to $\mathrm{'\{'}HCO_3^-{'\}'}$); no nucleus; biconcave disc shape maximises surface area |
+| Red blood cells (erythrocytes) | 45% | Transport $\mathrm{O_2{}$ (bound to haemoglobin) and $\mathrm{CO_2{}$ (bound to haemoglobin as carbaminohaemoglobin, and converted to $\mathrm{HCO_3^-{}$); no nucleus; biconcave disc shape maximises surface area |
 | White blood cells (leukocytes) | < 1% | Defence: phagocytosis (neutrophils, macrophages); antibody production (B lymphocytes); cell-mediated immunity (T lymphocytes) |
 | Platelets (thrombocytes) | < 1% | Blood clotting (release clotting factors that initiate the cascade leading to fibrin formation) |
 
@@ -1402,30 +1402,30 @@ At high altitude, atmospheric pressure is lower, so the partial pressure of $\ma
 
 1. **Biconcave disc shape**: maximises surface area:volume ratio for gas exchange.
 2. **No nucleus**: more room for haemoglobin (approximately 270 million molecules per cell).
-3. **No mitochondria**: no $\mathrm{'\{'}O_2{'\}'}$ consumed by the cell itself; all $\mathrm{'\{'}O_2{'\}'}$ carried is available for delivery to tissues.
-4. **Flexible membrane**: can squeeze through narrow capillaries (diameter 7--8 $\mu\mathrm{'\{'}m{'\}'}$; capillaries as narrow as 5 $\mu\mathrm{'\{'}m{'\}'}$).
+3. **No mitochondria**: no $\mathrm{O_2{}$ consumed by the cell itself; all $\mathrm{O_2{}$ carried is available for delivery to tissues.
+4. **Flexible membrane**: can squeeze through narrow capillaries (diameter 7--8 $\mu\mathrm{m{}$; capillaries as narrow as 5 $\mu\mathrm{m{}$).
 5. **Lifespan**: approximately 120 days; destroyed by macrophages in the spleen and liver.
 
 ### 23.3 Carbon Dioxide Transport
 
-$\mathrm{'\{'}CO_2{'\}'}$ is transported in the blood in three forms:
+$\mathrm{CO_2{}$ is transported in the blood in three forms:
 
-| Form | Percentage of $\mathrm{'\{'}CO_2{'\}'}$ Transport | Description |
+| Form | Percentage of $\mathrm{CO_2{}$ Transport | Description |
 | ---- | --------------------------------------- | ----------- |
-| Hydrogencarbonate ions ($\mathrm{'\{'}HCO_3^-{'\}'}$) | $\approx 70\%$ | $\mathrm{'\{'}CO_2{'\}'}$ diffuses into red blood cells; carbonic anhydrase catalyses: $\mathrm{'\{'}CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{'\}'}$. $\mathrm{HCO_3^-$ moves out into the plasma (chloride shift: $\mathrm{'\{'}Cl^-{'\}'}$ moves in to maintain electrical neutrality). |
-| Carbaminohaemoglobin | $\approx 23\%$ | $\mathrm{'\{'}CO_2{'\}'}$ binds reversibly to the amino groups of haemoglobin (not the same site as $\mathrm{'\{'}O_2{'\}'}$). |
-| Dissolved in plasma | $\approx 7\%$ | $\mathrm{'\{'}CO_2{'\}'}$ is directly dissolved in blood plasma. |
+| Hydrogencarbonate ions ($\mathrm{HCO_3^-{}$) | $\approx 70\%$ | $\mathrm{CO_2{}$ diffuses into red blood cells; carbonic anhydrase catalyses: $\mathrm{CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{}$. $\mathrm{HCO_3^-$ moves out into the plasma (chloride shift: $\mathrm{Cl^-{}$ moves in to maintain electrical neutrality). |
+| Carbaminohaemoglobin | $\approx 23\%$ | $\mathrm{CO_2{}$ binds reversibly to the amino groups of haemoglobin (not the same site as $\mathrm{O_2{}$). |
+| Dissolved in plasma | $\approx 7\%$ | $\mathrm{CO_2{}$ is directly dissolved in blood plasma. |
 
 ### 23.4 The Bohr Effect in Action
 
 In actively respiring tissues:
-- High $p\mathrm{'\{'}CO_2{'\}'}$ $\to$ lower pH $\to$ reduced haemoglobin affinity for $\mathrm{'\{'}O_2{'\}'}$ $\to$ $\mathrm{'\{'}O_2{'\}'}$ is unloaded where it is most needed.
+- High $p\mathrm{CO_2{}$ $\to$ lower pH $\to$ reduced haemoglobin affinity for $\mathrm{O_2{}$ $\to$ $\mathrm{O_2{}$ is unloaded where it is most needed.
 - High temperature (from metabolic activity) further reduces haemoglobin affinity.
 - High 2,3-BPG (produced by active muscles) also reduces affinity.
 
 In the lungs (reverse Bohr effect):
-- Low $p\mathrm{'\{'}CO_2{'\}'}$ (expired air) $\to$ higher pH $\to$ increased haemoglobin affinity for $\mathrm{'\{'}O_2{'\}'}$ $\to$ $\mathrm{'\{'}O_2{'\}'}$ is loaded.
-- $\mathrm{HCO_3^-$ diffuses back into red blood cells; carbonic anhydrase catalyses the reverse reaction; $\mathrm{'\{'}CO_2{'\}'}$ is exhaled.
+- Low $p\mathrm{CO_2{}$ (expired air) $\to$ higher pH $\to$ increased haemoglobin affinity for $\mathrm{O_2{}$ $\to$ $\mathrm{O_2{}$ is loaded.
+- $\mathrm{HCO_3^-$ diffuses back into red blood cells; carbonic anhydrase catalyses the reverse reaction; $\mathrm{CO_2{}$ is exhaled.
 
 ## 24. Plant Transport: Detailed Vascular System
 
@@ -1456,7 +1456,7 @@ In the lungs (reverse Bohr effect):
 | -------- | ------------- |
 | Aphid stylet exudation | Aphid pierces sieve tube; exudes sap under pressure, confirming a pressure gradient |
 | Ringing experiment | Removing phloem (bark) causes swelling above the ring (sucrose accumulates) and death below (no sucrose reaches roots) |
-| Radioactive tracer ($^{14}\mathrm{'\{'}C{'\}'}$) | $^{14}\mathrm{'\{'}CO_2{'\}'}$ fed to source leaf appears in sink tissues, confirming translocation direction |
+| Radioactive tracer ($^{14}\mathrm{C{}$) | $^{14}\mathrm{CO_2{}$ fed to source leaf appears in sink tissues, confirming translocation direction |
 | Microinjection | Fluorescent dye injected into phloem moves at rates consistent with mass flow |
 
 ## 25. The Heart: Electrical Activity and the ECG
@@ -1498,7 +1498,7 @@ In the lungs (reverse Bohr effect):
 | Component | Approximate Percentage | Function |
 | --------- | --------------------- | -------- |
 | Plasma | 55% | Transport medium; contains dissolved substances (glucose, amino acids, urea, hormones, antibodies, ions); fibrinogen and other clotting factors |
-| Red blood cells (erythrocytes) | 45% of blood volume | Transport $\mathrm{'\{'}O_2{'\}'}$ (bound to haemoglobin) and some $\mathrm{'\{'}CO_2{'\}'}$ (as carbaminohaemoglobin); biconcave disc shape maximises surface area:volume ratio; no nucleus, no mitochondria (more space for haemoglobin) |
+| Red blood cells (erythrocytes) | 45% of blood volume | Transport $\mathrm{O_2{}$ (bound to haemoglobin) and some $\mathrm{CO_2{}$ (as carbaminohaemoglobin); biconcave disc shape maximises surface area:volume ratio; no nucleus, no mitochondria (more space for haemoglobin) |
 | White blood cells (leukocytes) | <1% | Immune defence: phagocytosis (neutrophils, macrophages); antibody production (B lymphocytes/plasma cells); cell-mediated immunity (T lymphocytes) |
 | Platelets (thrombocytes) | <1% | Blood clotting (release thromboplastin; activate the clotting cascade) |
 
@@ -1508,9 +1508,9 @@ In the lungs (reverse Bohr effect):
 | ---------- | ------- |
 | Biconcave disc shape | Increases surface area:volume ratio for gas exchange; allows flexibility to pass through narrow capillaries |
 | No nucleus | More space for haemoglobin (approximately 270 million haemoglobin molecules per RBC) |
-| No mitochondria | No aerobic respiration; no $\mathrm{'\{'}O_2{'\}'}$ consumption; all ATP from anaerobic glycolysis (prevents RBCs from using the $\mathrm{'\{'}O_2{'\}'}$ they carry) |
-| Haemoglobin | Quaternary protein ($\alpha_2\beta_2$) with 4 haem groups; each haem binds one $\mathrm{'\{'}O_2{'\}'}$; cooperative binding (sigmoidal dissociation curve) |
-| Thin cell membrane | Short diffusion distance for $\mathrm{'\{'}O_2{'\}'}$ and $\mathrm{'\{'}CO_2{'\}'}$ |
+| No mitochondria | No aerobic respiration; no $\mathrm{O_2{}$ consumption; all ATP from anaerobic glycolysis (prevents RBCs from using the $\mathrm{O_2{}$ they carry) |
+| Haemoglobin | Quaternary protein ($\alpha_2\beta_2$) with 4 haem groups; each haem binds one $\mathrm{O_2{}$; cooperative binding (sigmoidal dissociation curve) |
+| Thin cell membrane | Short diffusion distance for $\mathrm{O_2{}$ and $\mathrm{CO_2{}$ |
 
 ## 27. Gas Exchange in Fish
 
@@ -1529,8 +1529,8 @@ In the lungs (reverse Bohr effect):
 | Feature | Description |
 | ------- | ----------- |
 | Countercurrent principle | Blood flows through the lamellae in the opposite direction to the flow of water |
-| Effect on $\mathrm{'\{'}O_2{'\}'}$ gradient | Maintains a diffusion gradient along the entire length of the lamella; blood always meets water with a higher $\mathrm{'\{'}O_2{'\}'}$ concentration |
-| $\mathrm{'\{'}O_2{'\}'}$ extraction efficiency | Approximately 80--90% of dissolved $\mathrm{'\{'}O_2{'\}'}$ is removed from water (compared to only ~50% in a concurrent system) |
+| Effect on $\mathrm{O_2{}$ gradient | Maintains a diffusion gradient along the entire length of the lamella; blood always meets water with a higher $\mathrm{O_2{}$ concentration |
+| $\mathrm{O_2{}$ extraction efficiency | Approximately 80--90% of dissolved $\mathrm{O_2{}$ is removed from water (compared to only ~50% in a concurrent system) |
 
 :::warning
 Common Pitfall
@@ -1559,7 +1559,7 @@ In concurrent (parallel) exchange, blood and water flow in the same direction. E
 
 | Adaptation | Benefit |
 | ---------- | ------- |
-| Direct delivery of $\mathrm{'\{'}O_2{'\}'}$ to cells | No circulatory system needed for gas transport; faster than in vertebrates |
+| Direct delivery of $\mathrm{O_2{}$ to cells | No circulatory system needed for gas transport; faster than in vertebrates |
 | Branched network of tracheae and tracheoles | Large surface area for gas exchange |
 | Tracheoles penetrate individual cells | Very short diffusion distance (air is delivered directly to the mitochondria) |
 | Spiracle valves | Can close to reduce water loss |
@@ -1572,17 +1572,17 @@ In concurrent (parallel) exchange, blood and water flow in the same direction. E
 | Component | Description |
 | --------- | ----------- |
 | Guard cells | Paired kidney-shaped cells surrounding each stoma; contain chloroplasts; have unevenly thickened cell walls (thicker on the inner side) |
-| Stoma (pore) | Gap between the two guard cells; allows gas exchange ($\mathrm{'\{'}CO_2{'\}'}$ in, $\mathrm{'\{'}O_2{'\}'}$ out) and water vapour loss (transpiration) |
+| Stoma (pore) | Gap between the two guard cells; allows gas exchange ($\mathrm{CO_2{}$ in, $\mathrm{O_2{}$ out) and water vapour loss (transpiration) |
 | Subsidiary cells | Surrounding cells that may assist in stomatal opening/closing |
 
 ### 29.2 Mechanism of Stomatal Opening
 
 | Step | What Happens |
 | ---- | ----------- |
-| 1 | Light activates a proton pump in the guard cell membrane (actively pumps $\mathrm{'\{'}H^+{'\}'}$ out) |
+| 1 | Light activates a proton pump in the guard cell membrane (actively pumps $\mathrm{H^+{}$ out) |
 | 2 | Inside the guard cell becomes more negative (membrane potential becomes more negative) |
-| 3 | $\mathrm{'\{'}K^+{'\}'}$ ions enter the guard cell through potassium channels (following the electrochemical gradient) |
-| 4 | Chloride ions ($\mathrm{'\{'}Cl^-{'\}'}$) also enter (to maintain electrical neutrality) |
+| 3 | $\mathrm{K^+{}$ ions enter the guard cell through potassium channels (following the electrochemical gradient) |
+| 4 | Chloride ions ($\mathrm{Cl^-{}$) also enter (to maintain electrical neutrality) |
 | 5 | The guard cell's solute concentration increases; water potential becomes more negative |
 | 6 | Water enters the guard cells by osmosis (from neighbouring epidermal cells) |
 | 7 | Guard cells swell; the thin outer walls stretch more than the thick inner walls; the stoma opens |
@@ -1591,7 +1591,7 @@ In concurrent (parallel) exchange, blood and water flow in the same direction. E
 | --------- | ------- | ----------- |
 | Light (day) | Open | Turgid (full of water) |
 | Dark (night) | Closed | Flaccid (water has left) |
-| High $\mathrm{'\{'}CO_2{'\}'}$ | Closed | Flaccid (conserves water when photosynthesis is slow) |
+| High $\mathrm{CO_2{}$ | Closed | Flaccid (conserves water when photosynthesis is slow) |
 | Low water availability | Closed | Flaccid (abscisic acid triggers closure) |
 
 ## 30. Transpiration
@@ -1625,7 +1625,7 @@ Transpiration is the loss of water vapour from the aerial parts of a plant (main
 | Large surface area | More surface for diffusion; higher rate of gas exchange |
 | Thin diffusion pathway | Shorter distance for gases to diffuse; faster exchange |
 | Steep concentration gradient | Maintained by ventilation (air flow) and blood flow (perfusion) |
-| Good blood supply | Transports $\mathrm{'\{'}O_2{'\}'}$ away from the exchange surface (maintains the gradient) and $\mathrm{'\{'}CO_2{'\}'}$ towards it |
+| Good blood supply | Transports $\mathrm{O_2{}$ away from the exchange surface (maintains the gradient) and $\mathrm{CO_2{}$ towards it |
 | Moist surface | Gases must dissolve in water before they can diffuse across the membrane |
 
 ### 31.2 Adaptations of the Human Lungs
@@ -1690,19 +1690,19 @@ Transpiration is the loss of water vapour from the aerial parts of a plant (main
 | Feature | Description |
 | ------- | ----------- |
 | Shape | Sigmoidal (S-shaped) curve |
-| Low $p\mathrm{'\{'}O_2{'\}'}$ (e.g., in tissues) | Haemoglobin has lower affinity for $\mathrm{'\{'}O_2{'\}'}$; $\mathrm{'\{'}O_2{'\}'}$ is unloaded (dissociates) |
-| High $p\mathrm{'\{'}O_2{'\}'}$ (e.g., in lungs) | Haemoglobin has higher affinity for $\mathrm{'\{'}O_2{'\}'}$; $\mathrm{'\{'}O_2{'\}'}$ is loaded (binds) |
-| Steep part of curve | Small changes in $p\mathrm{'\{'}O_2{'\}'}$ cause large changes in $\mathrm{'\{'}O_2{'\}'}$ saturation; this is where most $\mathrm{'\{'}O_2{'\}'}$ loading/unloading occurs |
-| Plateau (top) | Haemoglobin is nearly saturated; small changes in $p\mathrm{'\{'}O_2{'\}'}$ cause little change in saturation |
+| Low $p\mathrm{O_2{}$ (e.g., in tissues) | Haemoglobin has lower affinity for $\mathrm{O_2{}$; $\mathrm{O_2{}$ is unloaded (dissociates) |
+| High $p\mathrm{O_2{}$ (e.g., in lungs) | Haemoglobin has higher affinity for $\mathrm{O_2{}$; $\mathrm{O_2{}$ is loaded (binds) |
+| Steep part of curve | Small changes in $p\mathrm{O_2{}$ cause large changes in $\mathrm{O_2{}$ saturation; this is where most $\mathrm{O_2{}$ loading/unloading occurs |
+| Plateau (top) | Haemoglobin is nearly saturated; small changes in $p\mathrm{O_2{}$ cause little change in saturation |
 
 ### 34.2 Fetal vs Adult Haemoglobin
 
 | Feature | Adult Haemoglobin (HbA) | Fetal Haemoglobin (HbF) |
 | ------- | ---------------------- | ---------------------- |
 | Subunits | $\alpha_2\beta_2$ | $\alpha_2\gamma_2$ |
-| $\mathrm{'\{'}O_2{'\}'}$ affinity | Lower | Higher (left-shifted dissociation curve) |
-| Why | -- | Fetal Hb must extract $\mathrm{'\{'}O_2{'\}'}$ from maternal blood in the placenta; higher affinity ensures transfer of $\mathrm{'\{'}O_2{'\}'}$ from mother to fetus |
-| Effect of 2,3-BPG | Binds and reduces affinity | Reduced binding of 2,3-BPG; contributes to higher $\mathrm{'\{'}O_2{'\}'}$ affinity |
+| $\mathrm{O_2{}$ affinity | Lower | Higher (left-shifted dissociation curve) |
+| Why | -- | Fetal Hb must extract $\mathrm{O_2{}$ from maternal blood in the placenta; higher affinity ensures transfer of $\mathrm{O_2{}$ from mother to fetus |
+| Effect of 2,3-BPG | Binds and reduces affinity | Reduced binding of 2,3-BPG; contributes to higher $\mathrm{O_2{}$ affinity |
 
 ## 35. Plant Transport: Transpiration Stream
 
@@ -1732,7 +1732,7 @@ The cohesion-tension theory explains how water moves up the xylem against gravit
 
 | Feature | Arteries | Veins | Capillaries |
 | ------- | -------- | ----- | ---------- |
-| Function | Carry blood away from the heart (usually oxygenated) | Carry blood back to the heart (usually deoxygenated) | Exchange of materials between blood and tissues ($\mathrm{'\{'}O_2{'\}'}$, $\mathrm{'\{'}CO_2{'\}'}$, glucose, urea, etc.) |
+| Function | Carry blood away from the heart (usually oxygenated) | Carry blood back to the heart (usually deoxygenated) | Exchange of materials between blood and tissues ($\mathrm{O_2{}$, $\mathrm{CO_2{}$, glucose, urea, etc.) |
 | Wall structure | Thick, muscular wall (tunica media contains smooth muscle and elastic tissue) | Thinner wall; less muscle | Single layer of endothelial cells (squamous epithelium); very thin walls |
 | Lumen | Narrow (relative to wall thickness) | Wide (relative to wall thickness) | Very narrow (8--10 $\mu$m diameter; red blood cells squeeze through in single file) |
 | Valves | None (except semilunar valves at the base of the aorta and pulmonary artery) | Valves present (prevent backflow; ensure one-way flow) | None |
@@ -1756,9 +1756,9 @@ $$\text{'\{'}Rate of diffusion{'\}'} = \frac{D \times A \times \Delta C}{\Delta 
 | ------ | ------- | ---- |
 | Rate of diffusion | Volume per unit time | $\mathrm{mol\ s^{-1}$ or $\mathrm{cm^3\ s^{-1}$ |
 | $D$ | Diffusion coefficient (a constant for a given substance in a given medium at a given temperature) | $\mathrm{m^2\ s^{-1}$ |
-| $A$ | Surface area across which diffusion occurs | $\mathrm{'\{'}m^2{'\}'}$ |
+| $A$ | Surface area across which diffusion occurs | $\mathrm{m^2{}$ |
 | $\Delta C$ | Concentration gradient | $\mathrm{mol\ mm^{-1}$ or $\mathrm{mol\ cm^{-3}$ |
-| $\Delta x$ | Diffusion distance (thickness of membrane or tissue) | $\mathrm{'\{'}m{'\}'}$ or $\mu$m |
+| $\Delta x$ | Diffusion distance (thickness of membrane or tissue) | $\mathrm{m{}$ or $\mu$m |
 
 ### 37.2 Fick's Law Applied to Gas Exchange
 
@@ -1766,9 +1766,9 @@ For oxygen diffusing across the alveolar membrane:
 
 | Feature | Typical Value | Effect on Diffusion |
 | ------- | ------------- | ----------------- |
-| $D$ (diffusion coefficient for $\mathrm{'\{'}O_2{'\}'}$ in water) | ~1.7 $\times 10^{-9}\ \mathrm{m^2\ s^{-1}$ | Increases with temperature; larger for smaller molecules |
+| $D$ (diffusion coefficient for $\mathrm{O_2{}$ in water) | ~1.7 $\times 10^{-9}\ \mathrm{m^2\ s^{-1}$ | Increases with temperature; larger for smaller molecules |
 | $A$ (alveolar surface area) | ~70 m2 (combined total) | Larger area = faster diffusion |
-| $\Delta C$ ($\mathrm{'\{'}O_2{'\}'}$ gradient) | Alveolar $\mathrm{'\{'}pO_2{'\}'}$ (~13 kPa) vs venous blood $\mathrm{'\{'}pO_2{'\}'}$ (~5 kPa) | Larger gradient = faster diffusion |
+| $\Delta C$ ($\mathrm{O_2{}$ gradient) | Alveolar $\mathrm{pO_2{}$ (~13 kPa) vs venous blood $\mathrm{pO_2{}$ (~5 kPa) | Larger gradient = faster diffusion |
 | $\Delta x$ (alveolar membrane thickness) | ~1--2 $\mu$m | Shorter distance = faster diffusion |
 
 ## 38. The Lymphatic System
@@ -1798,11 +1798,11 @@ For oxygen diffusing across the alveolar membrane:
 
 | Adaptation | Effect on Function |
 | ---------- | ----------------- |
-| Biconcave disc shape | Increases surface area to volume ratio; maximises $\mathrm{'\{'}O_2{'\}'}$ and $\mathrm{'\{'}CO_2{'\}'}$ diffusion |
-| No nucleus | More space inside the cell for haemoglobin (more $\mathrm{'\{'}O_2{'\}'}$ can be carried) |
-| No mitochondria | Prevents RBCs from using the $\mathrm{'\{'}O_2{'\}'}$ they carry for their own respiration; all $\mathrm{'\{'}O_2{'\}'}$ is available for transport to tissues |
+| Biconcave disc shape | Increases surface area to volume ratio; maximises $\mathrm{O_2{}$ and $\mathrm{CO_2{}$ diffusion |
+| No nucleus | More space inside the cell for haemoglobin (more $\mathrm{O_2{}$ can be carried) |
+| No mitochondria | Prevents RBCs from using the $\mathrm{O_2{}$ they carry for their own respiration; all $\mathrm{O_2{}$ is available for transport to tissues |
 | Flexible membrane | Allows RBCs to squeeze through narrow capillaries (diameter ~7 $\mu$m; capillaries ~5 $\mu$m) |
-| Haemoglobin (inside) | Red pigment that binds $\mathrm{'\{'}O_2{'\}'}$; each RBC contains ~270 million haemoglobin molecules |
+| Haemoglobin (inside) | Red pigment that binds $\mathrm{O_2{}$; each RBC contains ~270 million haemoglobin molecules |
 
 ### 39.2 Red Blood Cell Production
 
@@ -1813,7 +1813,7 @@ For oxygen diffusing across the alveolar membrane:
 | Process | Erythropoiesis: stem cell $\to$ proerythroblast $\to$ erythroblast $\to$ reticulocyte (immature RBC, still contains some organelles) $\to$ mature RBC (enucleated) |
 | Lifespan | ~120 days |
 | Destruction | Old/damaged RBCs are destroyed by macrophages in the spleen and liver; haem is broken down to biliverdin (green) $\to$ bilirubin (yellow); iron is recycled |
-| Control | Erythropoietin (EPO) is secreted by the kidneys in response to low $\mathrm{'\{'}O_2{'\}'}$ levels; stimulates RBC production |
+| Control | Erythropoietin (EPO) is secreted by the kidneys in response to low $\mathrm{O_2{}$ levels; stimulates RBC production |
 
 ## 40. Haemoglobin and Oxygen Transport
 
@@ -1822,26 +1822,26 @@ For oxygen diffusing across the alveolar membrane:
 | Feature | Description |
 | ------- | ----------- |
 | Quaternary structure | Globular protein with four polypeptide chains (2 alpha, 2 beta in adult Hb) |
-| Haem groups | Each chain contains one haem group (iron-containing prosthetic group); each haem can bind one $\mathrm{'\{'}O_2{'\}'}$ molecule |
-| Total $\mathrm{'\{'}O_2{'\}'}$ capacity | One Hb molecule can carry 4 $\mathrm{'\{'}O_2{'\}'}$ molecules |
-| Reversible binding | $\mathrm{'\{'}Hb + 4O_2 \rightleftharpoons Hb(O_2)_4{'\}'}$; binding is cooperative: each $\mathrm{'\{'}O_2{'\}'}$ molecule that binds increases the affinity of the remaining haem groups for $\mathrm{'\{'}O_2{'\}'}$ |
+| Haem groups | Each chain contains one haem group (iron-containing prosthetic group); each haem can bind one $\mathrm{O_2{}$ molecule |
+| Total $\mathrm{O_2{}$ capacity | One Hb molecule can carry 4 $\mathrm{O_2{}$ molecules |
+| Reversible binding | $\mathrm{Hb + 4O_2 \rightleftharpoons Hb(O_2)_4{}$; binding is cooperative: each $\mathrm{O_2{}$ molecule that binds increases the affinity of the remaining haem groups for $\mathrm{O_2{}$ |
 
 ### 40.2 The Oxygen Dissociation Curve
 
 | Feature | Description |
 | ------- | ----------- |
 | Shape | Sigmoidal (S-shaped) due to cooperative binding |
-| Steep region (middle) | Small changes in $\mathrm{'\{'}pO_2{'\}'}$ cause large changes in Hb saturation; this is the region where tissues unload $\mathrm{'\{'}O_2{'\}'}$ most efficiently |
-| Flat region (top/left) | Hb is nearly saturated even when $\mathrm{'\{'}pO_2{'\}'}$ is moderately low; this provides a safety margin in the lungs |
-| Bohr effect | In respiring tissues: high $\mathrm{'\{'}CO_2{'\}'}$ $\to$ lower pH $\to$ curve shifts to the right $\to$ Hb has lower affinity for $\mathrm{'\{'}O_2{'\}'}$ $\to$ more $\mathrm{'\{'}O_2{'\}'}$ is unloaded |
+| Steep region (middle) | Small changes in $\mathrm{pO_2{}$ cause large changes in Hb saturation; this is the region where tissues unload $\mathrm{O_2{}$ most efficiently |
+| Flat region (top/left) | Hb is nearly saturated even when $\mathrm{pO_2{}$ is moderately low; this provides a safety margin in the lungs |
+| Bohr effect | In respiring tissues: high $\mathrm{CO_2{}$ $\to$ lower pH $\to$ curve shifts to the right $\to$ Hb has lower affinity for $\mathrm{O_2{}$ $\to$ more $\mathrm{O_2{}$ is unloaded |
 
 ### 40.3 Fetal vs Adult Haemoglobin
 
 | Feature | Adult Hb | Fetal Hb |
 | ------- | -------- | -------- |
-| Affinity for $\mathrm{'\{'}O_2{'\}'}$ | Lower | Higher |
+| Affinity for $\mathrm{O_2{}$ | Lower | Higher |
 | Oxygen dissociation curve | To the right of fetal Hb | To the left of adult Hb |
-| Why important | Unloads $\mathrm{'\{'}O_2{'\}'}$ to fetal Hb at the placenta | Takes up $\mathrm{'\{'}O_2{'\}'}$ from maternal blood at the placenta even though maternal $\mathrm{'\{'}pO_2{'\}'}$ is relatively low |
-| Structure | 2 alpha + 2 beta chains | 2 alpha + 2 gamma chains (the gamma chains alter the conformation of the haem group, increasing $\mathrm{'\{'}O_2{'\}'}$ affinity) |
+| Why important | Unloads $\mathrm{O_2{}$ to fetal Hb at the placenta | Takes up $\mathrm{O_2{}$ from maternal blood at the placenta even though maternal $\mathrm{pO_2{}$ is relatively low |
+| Structure | 2 alpha + 2 beta chains | 2 alpha + 2 gamma chains (the gamma chains alter the conformation of the haem group, increasing $\mathrm{O_2{}$ affinity) |
 
 ---

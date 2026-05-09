@@ -240,19 +240,19 @@ invariant:
 
 _At the start of each iteration with index `j`:_
 
-- $A[\mathrm{'\{'}low{'\}'}..i]$ contains only elements $\lt{} $ pivot
+- $A[\mathrm{low{}..i]$ contains only elements $\lt{} $ pivot
 - $A[i+1..j-1]$ contains only elements $\geq$ pivot
-- $A[\mathrm{'\{'}high{'\}'}] = \mathrm{'\{'}pivot{'\}'}$ (unchanged)
+- $A[\mathrm{high{}] = \mathrm{pivot{}$ (unchanged)
 
-_Maintenance._ If $A[j] \lt{} \mathrm{'\{'}pivot{'\}'}$, increment $i$ and swap $A[i]$ with $A[j]$, extending
-the "$\lt{} $ pivot" region. If $A[j] \geq \mathrm{'\{'}pivot{'\}'}$, increment $j$ only, extending the
+_Maintenance._ If $A[j] \lt{} \mathrm{pivot{}$, increment $i$ and swap $A[i]$ with $A[j]$, extending
+the "$\lt{} $ pivot" region. If $A[j] \geq \mathrm{pivot{}$, increment $j$ only, extending the
 "$\geq$ pivot" region.
 
-_Termination._ After the loop, swap $A[i+1]$ with $A[\mathrm{'\{'}high{'\}'}]$ (the pivot). Now:
+_Termination._ After the loop, swap $A[i+1]$ with $A[\mathrm{high{}]$ (the pivot). Now:
 
-- $A[\mathrm{'\{'}low{'\}'}..i]$ all $\lt{} $ pivot
-- $A[i+1] = \mathrm{'\{'}pivot{'\}'}$ (final position)
-- $A[i+2..\mathrm{'\{'}high{'\}'}]$ all $\geq$ pivot
+- $A[\mathrm{low{}..i]$ all $\lt{} $ pivot
+- $A[i+1] = \mathrm{pivot{}$ (final position)
+- $A[i+2..\mathrm{high{}]$ all $\geq$ pivot
 
 $\square$
 
@@ -400,7 +400,7 @@ Final: `[1, 1, 2, 3, 6, 8, 10]`
 
 Insertion sort inserts $A[i]$ into the sorted portion $A[0..i-1]$ by shifting elements $\gt{} A[i]$
 one position right. The condition for shifting is `A[j] > key` (strictly greater). If
-$A[j] = \mathrm{'\{'}key{'\}'}$, the element is **not** shifted, and `key` is placed **after** the equal
+$A[j] = \mathrm{key{}$, the element is **not** shifted, and `key` is placed **after** the equal
 element. Therefore, equal elements maintain their relative input order. $\square$
 
 </details>

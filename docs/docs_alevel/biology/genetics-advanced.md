@@ -109,7 +109,7 @@ When two genes are located on the **same chromosome**, they tend to be inherited
 
 The recombination frequency (RF) between two linked genes is calculated from a test cross:
 
-$$\mathrm{'\{'}RF{'\}'} = \frac{\text{'\{'}Number of recombinant offspring{'\}'}}{\text{'\{'}Total number of offspring{'\}'}} \times 100\%$$
+$$\mathrm{RF{} = \frac{\text{'\{'}Number of recombinant offspring{'\}'}}{\text{'\{'}Total number of offspring{'\}'}} \times 100\%$$
 
 The recombination frequency is approximately equal to the **map distance** between the genes in **centiMorgans (cM)**. One centiMorgan corresponds to a 1% probability of crossing over between the two loci per meiosis.
 
@@ -129,13 +129,13 @@ The recombination frequency is approximately equal to the **map distance** betwe
 Total = 1000. Parental phenotypes: $ABD$ (380) + $abd$ (370) = 750.
 Recombinant phenotypes: 250.
 
-**Distance A--B:** Recombinants between A and B = $Abd + aBD + ABd + abD = 25 + 20 + 80 + 85 = 210$. Distance = $210/1000 \times 100 = 21\ \mathrm{'\{'}cM{'\}'}$.
+**Distance A--B:** Recombinants between A and B = $Abd + aBD + ABd + abD = 25 + 20 + 80 + 85 = 210$. Distance = $210/1000 \times 100 = 21\ \mathrm{cM{}$.
 
-**Distance B--D:** Recombinants between B and D = $AbD + aBd + ABd + abD = 15 + 25 + 80 + 85 = 205$. Distance = $205/1000 \times 100 = 20.5\ \mathrm{'\{'}cM{'\}'}$.
+**Distance B--D:** Recombinants between B and D = $AbD + aBd + ABd + abD = 15 + 25 + 80 + 85 = 205$. Distance = $205/1000 \times 100 = 20.5\ \mathrm{cM{}$.
 
-**Distance A--D:** Recombinants between A and D = all non-parental = $25 + 20 + 80 + 85 + 15 + 25 = 250$. Distance = $250/1000 \times 100 = 25\ \mathrm{'\{'}cM{'\}'}$.
+**Distance A--D:** Recombinants between A and D = all non-parental = $25 + 20 + 80 + 85 + 15 + 25 = 250$. Distance = $250/1000 \times 100 = 25\ \mathrm{cM{}$.
 
-**Double cross-overs:** The rarest recombinant classes are the double cross-over products ($AbD$ and $aBd$, total 40). The map distance A--D calculated directly (25 cM) is less than A--B + B--D (41.5 cM) because double cross-overs between A and D are counted as non-recombinant for the A--D comparison but are recombinant for both A--B and B--D. The corrected A--D distance = A--B + B--D + 2 $\times$ (double cross-over frequency) = $21 + 20.5 + 2 \times 4 = 49.5\ \mathrm{'\{'}cM{'\}'}$, but this exceeds 50 cM, indicating multiple cross-overs.
+**Double cross-overs:** The rarest recombinant classes are the double cross-over products ($AbD$ and $aBd$, total 40). The map distance A--D calculated directly (25 cM) is less than A--B + B--D (41.5 cM) because double cross-overs between A and D are counted as non-recombinant for the A--D comparison but are recombinant for both A--B and B--D. The corrected A--D distance = A--B + B--D + 2 $\times$ (double cross-over frequency) = $21 + 20.5 + 2 \times 4 = 49.5\ \mathrm{cM{}$, but this exceeds 50 cM, indicating multiple cross-overs.
 
 ### 2.3 Sex Linkage with Linkage
 
@@ -156,9 +156,9 @@ Expected ratio: 1 normal female : 1 carrier female : 1 normal male : 1 affected 
 
 ### 3.1 Choosing Degrees of Freedom
 
-For a cross with $n$ phenotypic classes, the degrees of freedom are $\mathrm{'\{'}df{'\}'} = n - 1$. However, when expected ratios are calculated from the observed data (e.g., when estimating allele frequencies for Hardy-Weinberg), an additional degree of freedom is lost for each parameter estimated.
+For a cross with $n$ phenotypic classes, the degrees of freedom are $\mathrm{df{} = n - 1$. However, when expected ratios are calculated from the observed data (e.g., when estimating allele frequencies for Hardy-Weinberg), an additional degree of freedom is lost for each parameter estimated.
 
-For a two-allele H-W test where both allele frequencies are estimated from the data: $\mathrm{'\{'}df{'\}'} = 3 - 1 - 1 = 1$.
+For a two-allele H-W test where both allele frequencies are estimated from the data: $\mathrm{df{} = 3 - 1 - 1 = 1$.
 
 ### 3.2 Worked Example: Testing for Linkage
 
@@ -173,17 +173,17 @@ A dihybrid cross $AaBb \times AaBb$ (with genes $A$ and $B$ on the same chromoso
 
 $\chi^2 = 0.50 + 20.17 + 17.33 + 16.56 = 54.56$.
 
-$\mathrm{'\{'}df{'\}'} = 3$. Critical value at $p = 0.05$ for 3 df = 7.82.
+$\mathrm{df{} = 3$. Critical value at $p = 0.05$ for 3 df = 7.82.
 
 Since $\chi^2 = 54.56 \gg 7.82$, we reject the null hypothesis. The genes are **linked**. The excess of parental phenotypes ($A\_B\_$ = 120 and $aabb$ = 58) and deficit of recombinant phenotypes ($A\_bb$ = 10 and $aaB\_$ = 12) confirms linkage.
 
-Recombination frequency $= \frac{10 + 12}{200} \times 100\% = 11\%$. Map distance = $11\ \mathrm{'\{'}cM{'\}'}$.
+Recombination frequency $= \frac{10 + 12}{200} \times 100\% = 11\%$. Map distance = $11\ \mathrm{cM{}$.
 
 ### 3.3 Yates' Correction for Small Samples
 
 When the expected frequency in any category is less than 5, the standard chi-squared test is unreliable. Yates' correction for continuity is applied:
 
-$$\chi^2_{\mathrm{'\{'}Yates{'\}'}} = \sum \frac{(|O - E| - 0.5)^2}{E}$$
+$$\chi^2_{\mathrm{Yates{}} = \sum \frac{(|O - E| - 0.5)^2}{E}$$
 
 This correction reduces the chi-squared value, making the test more conservative (less likely to reject the null hypothesis).
 
@@ -371,7 +371,7 @@ Since $\chi^2 = 0.167 \ll 5.99$, we accept the null hypothesis. The observed res
 <summary>Problem 2</summary>
 Two genes, $G$ and $H$, are linked on the same chromosome. A test cross $GgHh \times gghh$ produces 1000 offspring: $GgHh$ = 410, $gghh$ = 390, $Gghh$ = 105, $ggHh$ = 95. (a) Calculate the recombination frequency and the map distance between $G$ and $H$. (b) Are the genes linked? Justify your answer with a chi-squared test against the 1:1:1:1 ratio expected for unlinked genes.
 
-**Answer.** (a) Parental phenotypes: $GgHh$ (410) + $gghh$ (390) = 800. Recombinant phenotypes: $Gghh$ (105) + $ggHh$ (95) = 200. Recombination frequency = $200/1000 \times 100\% = 20\%$. Map distance = $20\ \mathrm{'\{'}cM{'\}'}$.
+**Answer.** (a) Parental phenotypes: $GgHh$ (410) + $gghh$ (390) = 800. Recombinant phenotypes: $Gghh$ (105) + $ggHh$ (95) = 200. Recombination frequency = $200/1000 \times 100\% = 20\%$. Map distance = $20\ \mathrm{cM{}$.
 
 (b) Expected (1:1:1:1): 250 in each category.
 
@@ -1063,7 +1063,7 @@ Even after a protein is synthesised, its activity can be regulated:
 | Phosphorylation | Adds a phosphate group; activates or inhibits the protein | Glycogen synthase (inhibited by phosphorylation) |
 | Ubiquitination | Tags protein for degradation by the proteasome | Cyclins are degraded at specific points in the cell cycle |
 | Proteolytic cleavage | Activates a pro-protein by cutting it | Proinsulin $\to$ insulin; trypsinogen $\to$ trypsin |
-| Allosteric regulation | Effector molecule binds at a site other than the active site, changing conformation | Haemoglobin (2,3-BPG binding reduces $\mathrm{'\{'}O_2{'\}'}$ affinity) |
+| Allosteric regulation | Effector molecule binds at a site other than the active site, changing conformation | Haemoglobin (2,3-BPG binding reduces $\mathrm{O_2{}$ affinity) |
 
 :::warning
 Common Pitfall Students often use the term "junk DNA" to describe non-coding DNA. This term is outdated and misleading. While most non-coding DNA does not code for proteins, it includes regulatory elements (promoters, enhancers, silencers), non-coding RNAs (miRNA, lncRNA, snRNA), telomeres, centromeres, and origins of replication -- all of which have important functions. The correct term is "non-coding DNA."
@@ -1223,18 +1223,18 @@ Genes on the X chromosome are said to be **sex-linked**. Males (XY) have only on
 
 | Genotype | Sex | Phenotype |
 | -------- | --- | --------- |
-| $\mathrm{'\{'}X^H X^H{'\}'}$ | Female | Normal |
-| $\mathrm{'\{'}X^H X^h{'\}'}$ | Female | Carrier (normal, because the normal allele is dominant) |
-| $\mathrm{'\{'}X^h X^h{'\}'}$ | Female | Haemophilia (rare, requires father with haemophilia and carrier mother) |
-| $\mathrm{'\{'}X^H Y{'\}'}$ | Male | Normal |
-| $\mathrm{'\{'}X^h Y{'\}'}$ | Male | Haemophilia |
+| $\mathrm{X^H X^H{}$ | Female | Normal |
+| $\mathrm{X^H X^h{}$ | Female | Carrier (normal, because the normal allele is dominant) |
+| $\mathrm{X^h X^h{}$ | Female | Haemophilia (rare, requires father with haemophilia and carrier mother) |
+| $\mathrm{X^H Y{}$ | Male | Normal |
+| $\mathrm{X^h Y{}$ | Male | Haemophilia |
 
-**Cross:** carrier female ($\mathrm{'\{'}X^H X^h{'\}'}$) $\times$ normal male ($\mathrm{'\{'}X^H Y{'\}'}$):
+**Cross:** carrier female ($\mathrm{X^H X^h{}$) $\times$ normal male ($\mathrm{X^H Y{}$):
 
-| | $\mathrm{'\{'}X^H{'\}'}$ (father) | Y (father) |
+| | $\mathrm{X^H{}$ (father) | Y (father) |
 | --- | --- | --- |
-| $\mathrm{'\{'}X^H{'\}'}$ (mother) | $\mathrm{'\{'}X^H X^H{'\}'}$ (normal female) | $\mathrm{'\{'}X^H Y{'\}'}$ (normal male) |
-| $\mathrm{'\{'}X^h{'\}'}$ (mother) | $\mathrm{'\{'}X^H X^h{'\}'}$ (carrier female) | $\mathrm{'\{'}X^h Y{'\}'}$ (affected male) |
+| $\mathrm{X^H{}$ (mother) | $\mathrm{X^H X^H{}$ (normal female) | $\mathrm{X^H Y{}$ (normal male) |
+| $\mathrm{X^h{}$ (mother) | $\mathrm{X^H X^h{}$ (carrier female) | $\mathrm{X^h Y{}$ (affected male) |
 
 Offspring: 25% normal female, 25% carrier female, 25% normal male, 25% affected male.
 
@@ -1427,7 +1427,7 @@ Genetic bottlenecks reduce genetic diversity, making populations more vulnerable
 
 ### 26.3 Nitrogen-Fixing Crops
 
-Nitrogen is often the limiting nutrient for plant growth. Nitrogen-fixing bacteria (e.g., _Rhizobium_ in legume root nodules, _Azotobacter_ free-living) convert atmospheric $\mathrm{'\{'}N_2{'\}'}$ to $\mathrm{'\{'}NH_3{'\}'}$.
+Nitrogen is often the limiting nutrient for plant growth. Nitrogen-fixing bacteria (e.g., _Rhizobium_ in legume root nodules, _Azotobacter_ free-living) convert atmospheric $\mathrm{N_2{}$ to $\mathrm{NH_3{}$.
 
 Engineering nitrogen fixation into cereals (wheat, rice, maize) would:
 - Reduce dependence on synthetic nitrogen fertilisers (which are energy-intensive to produce and cause environmental damage when they run off into waterways).
@@ -1435,8 +1435,8 @@ Engineering nitrogen fixation into cereals (wheat, rice, maize) would:
 - Reduce greenhouse gas emissions from fertiliser production.
 
 **Challenges:**
-- Nitrogenase (the enzyme that fixes $\mathrm{'\{'}N_2{'\}'}$) is oxygen-sensitive. Cereals produce $\mathrm{'\{'}O_2{'\}'}$ during photosynthesis, which would inactivate nitrogenase.
-- Nitrogen fixation requires large amounts of ATP (16 ATP per $\mathrm{'\{'}N_2{'\}'}$ fixed).
+- Nitrogenase (the enzyme that fixes $\mathrm{N_2{}$) is oxygen-sensitive. Cereals produce $\mathrm{O_2{}$ during photosynthesis, which would inactivate nitrogenase.
+- Nitrogen fixation requires large amounts of ATP (16 ATP per $\mathrm{N_2{}$ fixed).
 - The pathway involves many genes (nif genes in _Klebsiella pneumoniae_), which would need to be transferred and correctly expressed.
 
 ### 26.4 Herbicide-Resistant Crops
@@ -1496,7 +1496,7 @@ Epistasis occurs when the allele of one gene masks or modifies the expression of
 
 ### 28.2 Worked Example: Recessive Epistasis in Mice
 
-**Cross:** Two double heterozygotes: $\mathrm{'\{'}BbCc{'\}'} \times \mathrm{'\{'}BbCc{'\}'}$
+**Cross:** Two double heterozygotes: $\mathrm{BbCc{} \times \mathrm{BbCc{}$
 
 | Genotype | Phenotype | Number |
 | -------- | --------- | ------ |

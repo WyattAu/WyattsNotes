@@ -69,7 +69,7 @@ Structure:
   chain
 - **Matrix:** Contains enzymes for the Krebs cycle, mitochondrial DNA, and ribosomes
 
-$$\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 6\mathrm{'\{'}O{'\}'}_2 \to 6\mathrm{'\{'}CO{'\}'}_2 + 6\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} + \mathrm{'\{'}ATP{'\}'}$$
+$$\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2 \to 6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \mathrm{ATP{}$$
 
 ### Endoplasmic Reticulum (ER)
 
@@ -122,7 +122,7 @@ Structure:
 - **Grana:** Stacks of thylakoids
 - **Stroma:** Fluid-filled space; site of the light-independent reactions (Calvin cycle)
 
-$$6\mathrm{'\{'}CO{'\}'}_2 + 6\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \xrightarrow{\mathrm{'\{'}light{'\}'}} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 6\mathrm{'\{'}O{'\}'}_2$$
+$$6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} \xrightarrow{\mathrm{light{}} \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$$
 
 ### Cell Membrane
 
@@ -144,7 +144,7 @@ The cell membrane (plasma membrane) is a phospholipid bilayer with embedded prot
 
 :::info
 The cell membrane is selectively permeable: it allows some substances to pass through freely
-but restricts others. Small, non-polar molecules (e.g., $\mathrm{'\{'}O{'\}'}_2$, $\mathrm{'\{'}CO{'\}'}_2$) diffuse
+but restricts others. Small, non-polar molecules (e.g., $\mathrm{O{}_2$, $\mathrm{CO{}_2$) diffuse
 through easily, while large or charged molecules require transport proteins.
 :::
 
@@ -159,7 +159,7 @@ through easily, while large or charged molecules require transport proteins.
 Movement of molecules from a region of higher concentration to a region of lower concentration,
 directly through the phospholipid bilayer.
 
-- Only for small, non-polar molecules (e.g., $\mathrm{'\{'}O{'\}'}_2$, $\mathrm{'\{'}CO{'\}'}_2$, lipid-soluble
+- Only for small, non-polar molecules (e.g., $\mathrm{O{}_2$, $\mathrm{CO{}_2$, lipid-soluble
   substances)
 - Net movement stops at equilibrium (dynamic equilibrium)
 - Rate depends on: concentration gradient, temperature, surface area, distance
@@ -168,8 +168,8 @@ directly through the phospholipid bilayer.
 
 Movement of molecules down their concentration gradient through transport proteins.
 
-- **Channel proteins:** Form hydrophilic pores for specific ions (e.g., $\mathrm{'\{'}Na{'\}'}^+$,
-  $\mathrm{'\{'}K{'\}'}^+$, $\mathrm{'\{'}Ca{'\}'}^{2+}$)
+- **Channel proteins:** Form hydrophilic pores for specific ions (e.g., $\mathrm{Na{}^+$,
+  $\mathrm{K{}^+$, $\mathrm{Ca{}^{2+}$)
 - **Carrier proteins:** Bind to specific molecules, undergo conformational change, and release on
   the other side
 - Used for larger or polar molecules (e.g., glucose, amino acids, ions)
@@ -180,7 +180,7 @@ The movement of water molecules from a region of higher water potential to a reg
 potential, through a selectively permeable membrane.
 
 **Water potential** ($\Psi$) is measured in kilopascals (kPa). Pure water has
-$\Psi = 0 \mathrm{'\{'} kPa{'\}'}$. Adding solutes decreases water potential (makes it more negative).
+$\Psi = 0 \mathrm{ kPa{}$. Adding solutes decreases water potential (makes it more negative).
 
 **Osmosis in animal cells:**
 
@@ -203,7 +203,7 @@ $\Psi = 0 \mathrm{'\{'} kPa{'\}'}$. Adding solutes decreases water potential (ma
 Movement of molecules against their concentration gradient (from low to high concentration),
 requiring ATP and carrier proteins.
 
-- Specific to certain molecules (e.g., $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump, absorption of minerals by
+- Specific to certain molecules (e.g., $\mathrm{Na{}^+/\mathrm{K{}^+$ pump, absorption of minerals by
   root hair cells)
 - Can become saturated at high concentrations (carrier proteins are limiting)
 - Inhibited by metabolic poisons (e.g., cyanide) that block ATP production
@@ -229,11 +229,11 @@ hormones, neurotransmitters).
 
 ### Carbohydrates
 
-General formula: $\mathrm{'\{'}C{'\}'}_x(\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'})_y$
+General formula: $\mathrm{C{}_x(\mathrm{H{}_2\mathrm{O{})_y$
 
 **Monosaccharides:**
 
-- Glucose ($\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6$): primary energy source
+- Glucose ($\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6$): primary energy source
 - Fructose: found in fruits
 - Galactose: component of milk sugar
 - Ribose and deoxyribose: in RNA and DNA respectively
@@ -265,12 +265,12 @@ Proteins are polymers of amino acids.
 
 **Amino acid structure:**
 
-Each amino acid has an amino group ($\mathrm{'\{'}NH{'\}'}_2$), a carboxyl group ($\mathrm{'\{'}COOH{'\}'}$), a hydrogen
+Each amino acid has an amino group ($\mathrm{NH{}_2$), a carboxyl group ($\mathrm{COOH{}$), a hydrogen
 atom, and an R group (side chain), all bonded to a central carbon atom.
 
 **Peptide bond formation:**
 
-Amino acids join by condensation reactions, forming peptide bonds ($\mathrm{'\{'}-CO-NH-{'\}'}$) and releasing
+Amino acids join by condensation reactions, forming peptide bonds ($\mathrm{-CO-NH-{}$) and releasing
 water.
 
 - Dipeptide: 2 amino acids
@@ -366,7 +366,7 @@ fit. This lowers the activation energy of the reaction.
 
 - Rate increases with temperature (up to the optimum)
 - Beyond the optimum, the enzyme denatures (active site changes shape irreversibly)
-- Human enzymes: optimum around $37^\circ\mathrm{'\{'}C{'\}'}$
+- Human enzymes: optimum around $37^\circ\mathrm{C{}$
 
 **pH:**
 
@@ -392,19 +392,19 @@ conditions.
 
 ### Worked Example 1
 
-An enzyme has an optimum temperature of $40^\circ\mathrm{'\{'}C{'\}'}$. At $20^\circ\mathrm{'\{'}C{'\}'}$, the reaction
-rate is $0.3$ units/s. At $40^\circ\mathrm{'\{'}C{'\}'}$, the rate is $1.2$ units/s. Calculate the Q10
+An enzyme has an optimum temperature of $40^\circ\mathrm{C{}$. At $20^\circ\mathrm{C{}$, the reaction
+rate is $0.3$ units/s. At $40^\circ\mathrm{C{}$, the rate is $1.2$ units/s. Calculate the Q10
 (temperature coefficient).
 
-$$Q_{10} = \frac{\mathrm{'\{'}Rate at {'\}'}(T + 10)}{\mathrm{'\{'}Rate at {'\}'} T}$$
+$$Q_{10} = \frac{\mathrm{Rate at {}(T + 10)}{\mathrm{Rate at {} T}$$
 
-Between $20^\circ\mathrm{'\{'}C{'\}'}$ and $30^\circ\mathrm{'\{'}C{'\}'}$: $Q_{10}$ might be approximately 2 (typical
-for biological reactions). Without the $30^\circ\mathrm{'\{'}C{'\}'}$ data, we can estimate the overall
+Between $20^\circ\mathrm{C{}$ and $30^\circ\mathrm{C{}$: $Q_{10}$ might be approximately 2 (typical
+for biological reactions). Without the $30^\circ\mathrm{C{}$ data, we can estimate the overall
 effect:
 
-From $20^\circ\mathrm{'\{'}C{'\}'}$ to $40^\circ\mathrm{'\{'}C{'\}'}$ (a $20^\circ\mathrm{'\{'}C{'\}'}$ increase):
+From $20^\circ\mathrm{C{}$ to $40^\circ\mathrm{C{}$ (a $20^\circ\mathrm{C{}$ increase):
 
-$$\mathrm{'\{'}Rate increase factor{'\}'} = \frac{1.2}{0.3} = 4$$
+$$\mathrm{Rate increase factor{} = \frac{1.2}{0.3} = 4$$
 
 This is consistent with $Q_{10} \approx 2$ (since $2^2 = 4$).
 
@@ -438,13 +438,13 @@ This is consistent with $Q_{10} \approx 2$ (since $2^2 = 4$).
 ### Link Reaction (Mitochondrial Matrix)
 
 - Pyruvate (3C) is decarboxylated and dehydrogenated
-- Forms acetyl CoA (2C) + $\mathrm{'\{'}CO{'\}'}_2$ + NADH
+- Forms acetyl CoA (2C) + $\mathrm{CO{}_2$ + NADH
 
 ### Krebs Cycle (Mitochondrial Matrix)
 
 For each glucose molecule (two turns of the cycle):
 
-- 2 $\mathrm{'\{'}CO{'\}'}_2$ released
+- 2 $\mathrm{CO{}_2$ released
 - 3 NADH produced per turn (6 total)
 - 1 FADH$_2$ produced per turn (2 total)
 - 1 ATP produced per turn (2 total)
@@ -480,30 +480,30 @@ glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 A
 
 1. Light energy is absorbed by chlorophyll in Photosystem II
 2. Water is split (photolysis):
-   $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \to 2\mathrm{'\{'}H{'\}'}^+ + 2e^- + \frac{1}{2}\mathrm{'\{'}O{'\}'}_2$
+   $\mathrm{H{}_2\mathrm{O{} \to 2\mathrm{H{}^+ + 2e^- + \frac{1}{2}\mathrm{O{}_2$
 3. Electrons pass through the electron transport chain, generating ATP
 4. Light is absorbed by Photosystem I; electrons are re-energised
 5. Electrons reduce NADP$^+$ to NADPH
 
-Products: ATP, NADPH, $\mathrm{'\{'}O{'\}'}_2$
+Products: ATP, NADPH, $\mathrm{O{}_2$
 
 ### Light-Independent Reactions / Calvin Cycle (Stroma)
 
-1. $\mathrm{'\{'}CO{'\}'}_2$ is fixed by ribulose bisphosphate (RuBP, 5C) using the enzyme RuBisCO
+1. $\mathrm{CO{}_2$ is fixed by ribulose bisphosphate (RuBP, 5C) using the enzyme RuBisCO
 2. Forms an unstable 6C compound that splits into two molecules of glycerate-3-phosphate (GP, 3C)
 3. GP is reduced to triose phosphate (TP, 3C) using ATP and NADPH
 4. Some TP is used to make glucose and other organic compounds
 5. Most TP is used to regenerate RuBP (uses ATP)
 
-For every 3 $\mathrm{'\{'}CO{'\}'}_2$ molecules fixed: 1 molecule of triose phosphate (3C) is produced. It
-takes 6 $\mathrm{'\{'}CO{'\}'}_2$ molecules to produce 1 molecule of glucose (6C).
+For every 3 $\mathrm{CO{}_2$ molecules fixed: 1 molecule of triose phosphate (3C) is produced. It
+takes 6 $\mathrm{CO{}_2$ molecules to produce 1 molecule of glucose (6C).
 
 ### Limiting Factors in Photosynthesis
 
 | Factor                        | Effect                                                             |
 | ----------------------------- | ------------------------------------------------------------------ |
 | Light intensity               | Increases rate up to a plateau (light saturation point)            |
-| $\mathrm{'\{'}CO{'\}'}_2$ concentration | Increases rate up to a plateau                                     |
+| $\mathrm{CO{}_2$ concentration | Increases rate up to a plateau                                     |
 | Temperature                   | Increases rate up to optimum, then decreases (enzyme denaturation) |
 
 ---
@@ -563,9 +563,9 @@ maintains fluidity. Glycoproteins on the surface enable cell recognition. The fl
 vesicle formation (endocytosis/exocytosis).
 
 **Question 2:** Explain the effect of increasing temperature on enzyme activity from
-$0^\circ\mathrm{'\{'}C{'\}'}$ to $60^\circ\mathrm{'\{'}C{'\}'}$.
+$0^\circ\mathrm{C{}$ to $60^\circ\mathrm{C{}$.
 
-From $0^\circ\mathrm{'\{'}C{'\}'}$ to the optimum (approximately $37-40^\circ\mathrm{'\{'}C{'\}'}$): increasing
+From $0^\circ\mathrm{C{}$ to the optimum (approximately $37-40^\circ\mathrm{C{}$): increasing
 temperature increases kinetic energy, leading to more frequent collisions between enzyme and
 substrate molecules, increasing the rate of reaction. Beyond the optimum temperature, the increased
 kinetic energy breaks the bonds maintaining the tertiary structure of the enzyme, causing the active
@@ -577,9 +577,9 @@ decreases sharply.
 Similarities: Both begin with glycolysis; both produce ATP.
 
 Differences: Aerobic respiration requires oxygen and occurs in the mitochondria, producing
-approximately 36-38 ATP per glucose with $\mathrm{'\{'}CO{'\}'}_2$ and $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ as
+approximately 36-38 ATP per glucose with $\mathrm{CO{}_2$ and $\mathrm{H{}_2\mathrm{O{}$ as
 by-products. Anaerobic respiration occurs without oxygen, only in the cytoplasm, producing 2 ATP per
-glucose. In animals, it produces lactate; in yeast, it produces ethanol and $\mathrm{'\{'}CO{'\}'}_2$.
+glucose. In animals, it produces lactate; in yeast, it produces ethanol and $\mathrm{CO{}_2$.
 
 </details>
 
@@ -859,7 +859,7 @@ When a ligand binds to a cell-surface receptor, it triggers a cascade of intrace
 1. **Signal reception:** The ligand binds to the receptor
 2. **Signal transduction:** The signal is relayed inside the cell, often involving:
    - **G-proteins:** Activate or inhibit enzymes
-   - **Second messengers:** Small molecules that amplify the signal (e.g., cAMP, $\mathrm{'\{'}Ca{'\}'}^{2+}$)
+   - **Second messengers:** Small molecules that amplify the signal (e.g., cAMP, $\mathrm{Ca{}^{2+}$)
    - **Enzyme cascades:** Kinase cascades that phosphorylate target proteins
 3. **Cellular response:** The cell changes its activity (e.g., gene expression, metabolism,
    secretion)
@@ -993,26 +993,26 @@ Where:
 
 - $i$ = ionisation constant (number of particles per molecule)
 - $C$ = molar concentration
-- $R$ = gas constant ($8.314 \mathrm{'\{'} J mol{'\}'}^{-1} \mathrm{'\{'} K{'\}'}^{-1}$)
+- $R$ = gas constant ($8.314 \mathrm{ J mol{}^{-1} \mathrm{ K{}^{-1}$)
 - $T$ = temperature in Kelvin
 
 ### Worked Example 4 (Water Potential)
 
-Calculate the water potential of a $0.3 \mathrm{'\{'} mol/dm{'\}'}^3$ sucrose solution at
-$25^\circ\mathrm{'\{'}C{'\}'}$. ($i = 1$ for sucrose)
+Calculate the water potential of a $0.3 \mathrm{ mol/dm{}^3$ sucrose solution at
+$25^\circ\mathrm{C{}$. ($i = 1$ for sucrose)
 
-$$\Psi_s = -iCRT = -(1)(0.3)(8.314)(298) = -743.3 \mathrm{'\{'} kPa{'\}'}$$
+$$\Psi_s = -iCRT = -(1)(0.3)(8.314)(298) = -743.3 \mathrm{ kPa{}$$
 
-Since there is no pressure: $\Psi = -743.3 \mathrm{'\{'} kPa{'\}'}$
+Since there is no pressure: $\Psi = -743.3 \mathrm{ kPa{}$
 
 ### Worked Example 5 (Water Potential)
 
-Calculate the water potential of a $0.2 \mathrm{'\{'} mol/dm{'\}'}^3$ $\mathrm{'\{'}NaCl{'\}'}$ solution at
-$20^\circ\mathrm{'\{'}C{'\}'}$. ($i = 2$ for $\mathrm{'\{'}NaCl{'\}'}$)
+Calculate the water potential of a $0.2 \mathrm{ mol/dm{}^3$ $\mathrm{NaCl{}$ solution at
+$20^\circ\mathrm{C{}$. ($i = 2$ for $\mathrm{NaCl{}$)
 
-$$\Psi_s = -(2)(0.2)(8.314)(293) = -974.4 \mathrm{'\{'} kPa{'\}'}$$
+$$\Psi_s = -(2)(0.2)(8.314)(293) = -974.4 \mathrm{ kPa{}$$
 
-$\Psi = -974.0 \mathrm{'\{'} kPa{'\}'}$
+$\Psi = -974.0 \mathrm{ kPa{}$
 
 ---
 
@@ -1042,7 +1042,7 @@ If you get this wrong, revise: Membrane Transport -- Osmosis; Water Potential an
 
 The water potential of the 0.5 mol/dm$^3$ sucrose solution is:
 
-$\Psi_s = -iCRT = -(1)(0.5)(8.314)(298) = -1238.8 \mathrm{'\{'} kPa{'\}'}$
+$\Psi_s = -iCRT = -(1)(0.5)(8.314)(298) = -1238.8 \mathrm{ kPa{}$
 
 Since the solution has a more negative water potential (-1238.8 kPa) than the cell cytoplasm (-700 kPa), water will move out of the cell by osmosis (from higher to lower water potential). The red blood cell will lose water, shrink, and become crenated (wrinkled appearance).
 
@@ -1134,22 +1134,22 @@ The Golgi apparatus receives proteins from the rough ER in transport vesicles. I
 
 </details>
 
-**Problem 9:** Calculate the water potential of a 0.15 mol/dm$^3$ NaCl solution at 25 degrees C. ($i = 2$ for NaCl.) Determine whether a plant cell with $\Psi = -800 \mathrm{'\{'} kPa{'\}'}$ and $\Psi_p = 200 \mathrm{'\{'} kPa{'\}'}$ would gain or lose water in this solution.
+**Problem 9:** Calculate the water potential of a 0.15 mol/dm$^3$ NaCl solution at 25 degrees C. ($i = 2$ for NaCl.) Determine whether a plant cell with $\Psi = -800 \mathrm{ kPa{}$ and $\Psi_p = 200 \mathrm{ kPa{}$ would gain or lose water in this solution.
 
 If you get this wrong, revise: Water Potential and Osmosis Calculations
 
 <details>
 <summary>Solution</summary>
 
-$\Psi_s = -iCRT = -(2)(0.15)(8.314)(298) = -742.5 \mathrm{'\{'} kPa{'\}'}$
+$\Psi_s = -iCRT = -(2)(0.15)(8.314)(298) = -742.5 \mathrm{ kPa{}$
 
-Since there is no pressure applied to the external solution: $\Psi_{\mathrm{'\{'}solution{'\}'}} = -742.5 \mathrm{'\{'} kPa{'\}'}$
+Since there is no pressure applied to the external solution: $\Psi_{\mathrm{solution{}} = -742.5 \mathrm{ kPa{}$
 
 For the plant cell:
 
-$\Psi_{\mathrm{'\{'}cell{'\}'}} = \Psi_s + \Psi_p = -800 + 200 = -600 \mathrm{'\{'} kPa{'\}'}$
+$\Psi_{\mathrm{cell{}} = \Psi_s + \Psi_p = -800 + 200 = -600 \mathrm{ kPa{}$
 
-Since $\Psi_{\mathrm{'\{'}solution{'\}'}}$ (-742.5 kPa) is more negative than $\Psi_{\mathrm{'\{'}cell{'\}'}}$ (-600 kPa), water moves from the cell (higher water potential) into the solution (lower water potential). The plant cell would lose water.
+Since $\Psi_{\mathrm{solution{}}$ (-742.5 kPa) is more negative than $\Psi_{\mathrm{cell{}}$ (-600 kPa), water moves from the cell (higher water potential) into the solution (lower water potential). The plant cell would lose water.
 
 </details>
 
@@ -1182,35 +1182,35 @@ Glycolysis occurs in the **cytoplasm** and does not require oxygen. It is the fi
 | ATP production     | Each triose phosphate is converted to pyruvate (3C), producing 2 ATP per triose phosphate (substrate-level phosphorylation)                   | Produces 4 ATP (2 per triose phosphate)                |
 | **Net yield**      |                                                                                                                                           | **2 ATP + 2 NADH per glucose**                         |
 
-$$\text{'\{'}Glucose (6C){'\}'} + 2\mathrm{'\{'}NAD{'\}'}^+ + 2\mathrm{'\{'}ADP{'\}'} + 2\mathrm{'\{'}P{'\}'}_i \to 2\text{'\{'} Pyruvate (3C){'\}'} + 2\mathrm{'\{'}NADH{'\}'} + 2\mathrm{'\{'}H{'\}'}^+ + 2\mathrm{'\{'}ATP{'\}'} + 2\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$$
+$$\text{'\{'}Glucose (6C){'\}'} + 2\mathrm{NAD{}^+ + 2\mathrm{ADP{} + 2\mathrm{P{}_i \to 2\text{'\{'} Pyruvate (3C){'\}'} + 2\mathrm{NADH{} + 2\mathrm{H{}^+ + 2\mathrm{ATP{} + 2\mathrm{H{}_2\mathrm{O{}$$
 
 ### The Link Reaction and Krebs Cycle
 
 **Link reaction (pyruvate oxidation):**
 
 - Occurs in the mitochondrial matrix
-- Each pyruvate (3C) is decarboxylated (loses $\mathrm{'\{'}CO{'\}'}_2$) and dehydrogenated (NAD$^+$ reduced to NADH)
+- Each pyruvate (3C) is decarboxylated (loses $\mathrm{CO{}_2$) and dehydrogenated (NAD$^+$ reduced to NADH)
 - The remaining 2-carbon acetyl group combines with coenzyme A to form **acetyl CoA**
-- Per glucose: 2 pyruvate $\to$ 2 acetyl CoA + 2 $\mathrm{'\{'}CO{'\}'}_2$ + 2 NADH
+- Per glucose: 2 pyruvate $\to$ 2 acetyl CoA + 2 $\mathrm{CO{}_2$ + 2 NADH
 
 **Krebs cycle (citric acid cycle):**
 
 - Occurs in the mitochondrial matrix
 - Each acetyl CoA (2C) combines with oxaloacetate (4C) to form citrate (6C)
 - Through a series of reactions, citrate is converted back to oxaloacetate, releasing:
-  - 2 $\mathrm{'\{'}CO{'\}'}_2$ (decarboxylation)
+  - 2 $\mathrm{CO{}_2$ (decarboxylation)
   - 3 NADH (dehydrogenation)
   - 1 FADH$_2$ (dehydrogenation)
   - 1 ATP (substrate-level phosphorylation via GTP)
-- Per glucose: 2 turns of the cycle produce 4 $\mathrm{'\{'}CO{'\}'}_2$, 6 NADH, 2 FADH$_2$, 2 ATP
+- Per glucose: 2 turns of the cycle produce 4 $\mathrm{CO{}_2$, 6 NADH, 2 FADH$_2$, 2 ATP
 
 ### Oxidative Phosphorylation
 
 - Occurs on the inner mitochondrial membrane (cristae)
 - NADH and FADH$_2$ donate electrons to the electron transport chain
-- Electrons pass through a series of carriers (complexes I-IV), releasing energy used to pump $\mathrm{'\{'}H{'\}'}^+$ into the intermembrane space
-- $\mathrm{'\{'}H{'\}'}^+$ flows back through ATP synthase (chemiosmosis), producing ATP
-- Oxygen is the final electron acceptor, combining with $\mathrm{'\{'}H{'\}'}^+$ and electrons to form water
+- Electrons pass through a series of carriers (complexes I-IV), releasing energy used to pump $\mathrm{H{}^+$ into the intermembrane space
+- $\mathrm{H{}^+$ flows back through ATP synthase (chemiosmosis), producing ATP
+- Oxygen is the final electron acceptor, combining with $\mathrm{H{}^+$ and electrons to form water
 
 ### Total ATP Yield (Per Glucose)
 
@@ -1232,7 +1232,7 @@ When oxygen is unavailable, pyruvate cannot enter the mitochondria for oxidative
 
 **In animal cells (lactic acid fermentation):**
 
-$$\text{'\{'}Pyruvate{'\}'} + \mathrm{'\{'}NADH{'\}'} \xrightarrow{\text{'\{'}LDH{'\}'}} \text{'\{'}Lactate{'\}'} + \mathrm{'\{'}NAD{'\}'}^+$$
+$$\text{'\{'}Pyruvate{'\}'} + \mathrm{NADH{} \xrightarrow{\text{'\{'}LDH{'\}'}} \text{'\{'}Lactate{'\}'} + \mathrm{NAD{}^+$$
 
 - Net yield: 2 ATP per glucose (only from glycolysis)
 - Lactate accumulates in muscles, causing fatigue and cramping
@@ -1240,13 +1240,13 @@ $$\text{'\{'}Pyruvate{'\}'} + \mathrm{'\{'}NADH{'\}'} \xrightarrow{\text{'\{'}LD
 
 **In yeast and plant cells (alcoholic fermentation):**
 
-$$\text{'\{'}Pyruvate{'\}'} \xrightarrow{\text{'\{'}decarboxylase{'\}'}} \text{'\{'}Ethanal{'\}'} + \mathrm{'\{'}CO{'\}'}_2$$
+$$\text{'\{'}Pyruvate{'\}'} \xrightarrow{\text{'\{'}decarboxylase{'\}'}} \text{'\{'}Ethanal{'\}'} + \mathrm{CO{}_2$$
 
-$$\text{'\{'}Ethanal{'\}'} + \mathrm{'\{'}NADH{'\}'} \xrightarrow{\text{'\{'}alcohol dehydrogenase{'\}'}} \text{'\{'}Ethanol{'\}'} + \mathrm{'\{'}NAD{'\}'}^+$$
+$$\text{'\{'}Ethanal{'\}'} + \mathrm{NADH{} \xrightarrow{\text{'\{'}alcohol dehydrogenase{'\}'}} \text{'\{'}Ethanol{'\}'} + \mathrm{NAD{}^+$$
 
 - Net yield: 2 ATP per glucose
-- $\mathrm{'\{'}CO{'\}'}_2$ and ethanol are produced as waste products
-- This process is used in brewing (beer) and baking (bread rises due to $\mathrm{'\{'}CO{'\}'}_2$ production)
+- $\mathrm{CO{}_2$ and ethanol are produced as waste products
+- This process is used in brewing (beer) and baking (bread rises due to $\mathrm{CO{}_2$ production)
 
 ---
 
@@ -1333,7 +1333,7 @@ If you get this wrong, revise: Cellular Respiration in Detail
 | Location      | Cytoplasm (glycolysis) + mitochondria (link reaction, Krebs cycle, oxidative phosphorylation) | Cytoplasm only (glycolysis only)                       |
 | Oxygen        | Required (final electron acceptor)                    | Not required                                            |
 | Substrates    | Glucose                                              | Glucose                                                 |
-| Products      | $\mathrm{'\{'}CO{'\}'}_2$, $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$, ATP (30-32) | Lactate, ATP (2)                                        |
+| Products      | $\mathrm{CO{}_2$, $\mathrm{H{}_2\mathrm{O{}$, ATP (30-32) | Lactate, ATP (2)                                        |
 | ATP yield     | Approximately 30-32 ATP per glucose                    | 2 ATP per glucose                                       |
 | NAD$^+$ regeneration | Via oxidative phosphorylation (electron transport chain) | Via conversion of pyruvate to lactate (NADH oxidised to NAD$^+$) |
 
@@ -1374,14 +1374,14 @@ Facilitated diffusion is the passive movement of molecules across a membrane via
 | Saturation             | No (rate increases with concentration indefinitely) | Yes (rate plateaus when all proteins are occupied) |
 | Energy required        | No                                   | No                                               |
 | Direction              | Down concentration gradient          | Down concentration gradient                        |
-| Molecules transported  | $\mathrm{'\{'}O{'\}'}_2$, $\mathrm{'\{'}CO{'\}'}_2$, small lipids, water | Glucose (via GLUT transporters), amino acids, ions ($\mathrm{'\{'}Na{'\}'}^+$, $\mathrm{'\{'}K{'\}'}^+$) |
+| Molecules transported  | $\mathrm{O{}_2$, $\mathrm{CO{}_2$, small lipids, water | Glucose (via GLUT transporters), amino acids, ions ($\mathrm{Na{}^+$, $\mathrm{K{}^+$) |
 
 **Channel proteins:**
 
 - Form water-filled pores through the membrane
 - Allow specific ions or molecules to pass through by diffusion
 - Types:
-  - **Ion channels:** Allow specific ions to pass (e.g., $\mathrm{'\{'}Na{'\}'}^+$ channels, $\mathrm{'\{'}K{'\}'}^+$ channels, $\mathrm{'\{'}Ca{'\}'}^{2+}$ channels)
+  - **Ion channels:** Allow specific ions to pass (e.g., $\mathrm{Na{}^+$ channels, $\mathrm{K{}^+$ channels, $\mathrm{Ca{}^{2+}$ channels)
   - **Aquaporins:** Channel proteins specific to water molecules; allow rapid osmosis (approximately 10 times faster than diffusion through the lipid bilayer)
 - **Gated channels:** Open or close in response to specific stimuli:
   - **Voltage-gated channels:** Open in response to changes in membrane potential (essential for nerve impulse transmission)
@@ -1403,24 +1403,24 @@ Active transport moves molecules against their concentration gradient (from low 
 | --------------------- | ------------------------------------------------ | ---------------------------------------------------------------- |
 | Energy source          | ATP hydrolysis directly                               | Uses an ion gradient established by primary active transport    |
 | Direct ATP use         | Yes                                                    | No (indirect)                                                      |
-| Example               | $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump; $\mathrm{'\{'}H{'\}'}^+$ ATPase in stomach | $\mathrm{'\{'}Na{'\}'}^+$-glucose co-transport in small intestine; $\mathrm{'\{'}Na{'\}'}^+$-amino acid co-transport |
+| Example               | $\mathrm{Na{}^+/\mathrm{K{}^+$ pump; $\mathrm{H{}^+$ ATPase in stomach | $\mathrm{Na{}^+$-glucose co-transport in small intestine; $\mathrm{Na{}^+$-amino acid co-transport |
 | Direction             | Can move substances in either direction              | Moves both the driving ion and the transported substance in the same (symport) or opposite (antiport) direction |
 
 **The sodium-potassium pump (detailed mechanism):**
 
-1. Three $\mathrm{'\{'}Na{'\}'}^+$ ions bind to the intracellular side of the pump protein
-2. ATP binds and is hydrolysed to ADP and $\mathrm{'\{'}P{'\}'}_i$
+1. Three $\mathrm{Na{}^+$ ions bind to the intracellular side of the pump protein
+2. ATP binds and is hydrolysed to ADP and $\mathrm{P{}_i$
 3. The phosphate group is transferred to the pump protein (phosphorylation), changing its conformation
-4. The conformational change exposes the $\mathrm{'\{'}Na{'\}'}^+$ binding sites to the extracellular side; $\mathrm{'\{'}Na{'\}'}^+$ is released
-5. Two $\mathrm{'\{'}K{'\}'}^+$ ions from the extracellular side bind to the pump
+4. The conformational change exposes the $\mathrm{Na{}^+$ binding sites to the extracellular side; $\mathrm{Na{}^+$ is released
+5. Two $\mathrm{K{}^+$ ions from the extracellular side bind to the pump
 6. The phosphate group is released (dephosphorylation), returning the pump to its original conformation
-7. The conformational change exposes the $\mathrm{'\{'}K{'\}'}^+$ binding sites to the intracellular side; $\mathrm{'\{'}K{'\}'}^+$ is released
+7. The conformational change exposes the $\mathrm{K{}^+$ binding sites to the intracellular side; $\mathrm{K{}^+$ is released
 
 **Significance of the sodium-potassium pump:**
 
-- Maintains the resting potential of neurons (by creating concentration gradients for $\mathrm{'\{'}Na{'\}'}^+$ and $\mathrm{'\{'}K{'\}'}^+$)
+- Maintains the resting potential of neurons (by creating concentration gradients for $\mathrm{Na{}^+$ and $\mathrm{K{}^+$)
 - Maintains cell volume (by controlling osmotic balance)
-- Provides the $\mathrm{'\{'}Na{'\}'}^+$ gradient that drives secondary active transport (e.g., $\mathrm{'\{'}Na{'\}'}^+$-glucose co-transport in the small intestine and kidney)
+- Provides the $\mathrm{Na{}^+$ gradient that drives secondary active transport (e.g., $\mathrm{Na{}^+$-glucose co-transport in the small intestine and kidney)
 - Essential for nerve impulse transmission and muscle contraction
 
 ### Bulk Transport: Endocytosis and Exocytosis

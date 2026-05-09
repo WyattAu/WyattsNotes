@@ -162,7 +162,7 @@ The **hypothalamus** is the body's thermostat. It contains a **thermoregulatory 
 - **Central thermoreceptors**: in the hypothalamus itself, monitoring the temperature of the blood.
 - **Peripheral thermoreceptors**: in the skin (dermis), monitoring the external temperature.
 
-The hypothalamus compares the information from both sets of receptors with the set point (approximately $37\ ^\circ\mathrm{'\{'}C{'\}'}$ in humans).
+The hypothalamus compares the information from both sets of receptors with the set point (approximately $37\ ^\circ\mathrm{C{}$ in humans).
 
 ### 3.2 Response to Cold (Below Set Point)
 
@@ -246,10 +246,10 @@ The **kidney** contains approximately one million **nephrons**, the functional u
 | Region                            | Function                                                         |
 | --------------------------------- | ---------------------------------------------------------------- |
 | Bowman's capsule + glomerulus     | Ultrafiltration: high-pressure filtration of blood plasma        |
-| Proximal convoluted tubule (PCT)  | Selective reabsorption: all glucose, all amino acids, most $\mathrm{'\{'}Na^+{'\}'}$ and water, by active transport and co-transport |
+| Proximal convoluted tubule (PCT)  | Selective reabsorption: all glucose, all amino acids, most $\mathrm{Na^+{}$ and water, by active transport and co-transport |
 | Loop of Henle (descending limb)   | Water permeable; water passes out by osmosis into the hypertonic medulla |
-| Loop of Henle (ascending limb)    | Impermeable to water; actively transports $\mathrm{'\{'}Na^+{'\}'}$ and $\mathrm{'\{'}Cl^-{'\}'}$ out, creating a salt gradient in the medulla |
-| Distal convoluted tubule (DCT)    | Fine-tuning of $\mathrm{'\{'}Na^+{'\}'}$ and water reabsorption; regulated by ADH and aldosterone |
+| Loop of Henle (ascending limb)    | Impermeable to water; actively transports $\mathrm{Na^+{}$ and $\mathrm{Cl^-{}$ out, creating a salt gradient in the medulla |
+| Distal convoluted tubule (DCT)    | Fine-tuning of $\mathrm{Na^+{}$ and water reabsorption; regulated by ADH and aldosterone |
 | Collecting duct                   | Final water reabsorption regulated by ADH                         |
 
 **Ultrafiltration** at the glomerulus is driven by **hydrostatic pressure** of the blood in the glomerular capillaries. The filtrate passes through the basement membrane and the pores in the podocytes (cells of the Bowman's capsule). Large molecules (proteins, blood cells) are too large to pass through and remain in the blood.
@@ -259,7 +259,7 @@ The **kidney** contains approximately one million **nephrons**, the functional u
 The **loop of Henle** acts as a countercurrent multiplier that creates and maintains a concentration gradient in the medulla of the kidney:
 
 1. The descending limb is permeable to water but not to solutes. Water passes out by osmosis into the increasingly concentrated medulla.
-2. The ascending limb actively transports $\mathrm{'\{'}Na^+{'\}'}$ and $\mathrm{'\{'}Cl^-{'\}'}$ out into the medulla, making the medulla progressively more concentrated towards the papilla (inner tip).
+2. The ascending limb actively transports $\mathrm{Na^+{}$ and $\mathrm{Cl^-{}$ out into the medulla, making the medulla progressively more concentrated towards the papilla (inner tip).
 3. The arrangement of the two limbs (fluid flowing in opposite directions) multiplies the concentration gradient.
 4. This hypertonic medulla (up to $1200\ \mathrm{mOsmol\ kg^{-1}}$ at the papilla) provides the osmotic gradient that drives water reabsorption from the collecting duct.
 
@@ -282,37 +282,37 @@ At rest, parasympathetic stimulation predominates, keeping the heart rate at app
 
 ### 5.3 Chemical and Pressure Control
 
-**Chemoreceptors** in the aortic and carotid bodies detect changes in blood $\mathrm{'\{'}CO_2{'\}'}$ concentration and pH:
+**Chemoreceptors** in the aortic and carotid bodies detect changes in blood $\mathrm{CO_2{}$ concentration and pH:
 
-- High $p\mathrm{'\{'}CO_2{'\}'}$ (hypercapnia) or low pH: detected by chemoreceptors, which send impulses to the medulla oblongata. The cardiovascular centre increases sympathetic stimulation and decreases parasympathetic stimulation, increasing heart rate and ventilation rate.
+- High $p\mathrm{CO_2{}$ (hypercapnia) or low pH: detected by chemoreceptors, which send impulses to the medulla oblongata. The cardiovascular centre increases sympathetic stimulation and decreases parasympathetic stimulation, increasing heart rate and ventilation rate.
 
 **Baroreceptors** in the aortic arch and carotid sinus detect changes in blood pressure:
 
 - High blood pressure: baroreceptors are stretched more, sending more impulses to the medulla. The medulla increases parasympathetic stimulation and decreases sympathetic stimulation, slowing the heart rate and causing vasodilation.
 
-## 6. Control of Blood $p\mathrm{'\{'}CO_2{'\}'}$ and pH
+## 6. Control of Blood $p\mathrm{CO_2{}$ and pH
 
 ### 6.1 The Carbonic Acid-Bicarbonate Buffer System
 
 Blood pH is maintained between 7.35 and 7.45 by the carbonic acid-bicarbonate buffer system:
 
-$$\mathrm{'\{'}CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{'\}'}$$
+$$\mathrm{CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{}$$
 
-This reaction is catalysed by **carbonic anhydrase** in red blood cells. When $p\mathrm{'\{'}CO_2{'\}'}$ rises, the equilibrium shifts to the right, producing more $\mathrm{'\{'}H^+{'\}'}$ and lowering pH. The $\mathrm{'\{'}H^+{'\}'}$ is buffered by haemoglobin (the Bohr effect).
+This reaction is catalysed by **carbonic anhydrase** in red blood cells. When $p\mathrm{CO_2{}$ rises, the equilibrium shifts to the right, producing more $\mathrm{H^+{}$ and lowering pH. The $\mathrm{H^+{}$ is buffered by haemoglobin (the Bohr effect).
 
 ### 6.2 Respiratory Compensation
 
 Changes in ventilation rate can compensate for pH disturbances:
 
-- **Respiratory acidosis** (high $p\mathrm{'\{'}CO_2{'\}'}$, low pH): increased ventilation rate removes $\mathrm{'\{'}CO_2{'\}'}$ from the blood, shifting the equilibrium to the left and raising pH.
-- **Respiratory alkalosis** (low $p\mathrm{'\{'}CO_2{'\}'}$, high pH, e.g., due to hyperventilation): decreased ventilation rate allows $\mathrm{'\{'}CO_2{'\}'}$ to accumulate, shifting the equilibrium to the right and lowering pH.
+- **Respiratory acidosis** (high $p\mathrm{CO_2{}$, low pH): increased ventilation rate removes $\mathrm{CO_2{}$ from the blood, shifting the equilibrium to the left and raising pH.
+- **Respiratory alkalosis** (low $p\mathrm{CO_2{}$, high pH, e.g., due to hyperventilation): decreased ventilation rate allows $\mathrm{CO_2{}$ to accumulate, shifting the equilibrium to the right and lowering pH.
 
 ### 6.3 Renal Compensation
 
 The kidneys provide long-term pH regulation by:
 
-- Excreting excess $\mathrm{'\{'}H^+{'\}'}$ in the urine.
-- Reabsorbing or secreting $\mathrm{'\{'}HCO_3^-{'\}'}$ to adjust the bicarbonate buffer capacity.
+- Excreting excess $\mathrm{H^+{}$ in the urine.
+- Reabsorbing or secreting $\mathrm{HCO_3^-{}$ to adjust the bicarbonate buffer capacity.
 
 ## Practice Problems
 
@@ -330,7 +330,7 @@ Describe how insulin and glucagon work together to regulate blood glucose concen
 <summary>Problem 2</summary>
 Explain how the body responds to a decrease in core body temperature. Describe the role of the hypothalamus, thermoreceptors, and effectors. (5 marks)
 
-**Answer.** A decrease in core body temperature is detected by central thermoreceptors (in the hypothalamus) and peripheral thermoreceptors (in the skin). Impulses are sent to the thermoregulatory centre in the hypothalamus, which coordinates the response. The hypothalamus sends impulses via the sympathetic nervous system to effectors: (1) **vasoconstriction** of arterioles supplying the skin surface, reducing blood flow near the skin and minimising heat loss by radiation; (2) **piloerection**, where hair erector muscles contract, raising body hairs and trapping an insulating layer of air; (3) **shivering**, where skeletal muscles contract and relax rapidly, generating heat from increased metabolic activity; (4) increased secretion of **thyroxine** from the thyroid gland, raising the basal metabolic rate and increasing heat production from cellular respiration. As body temperature returns towards $37\ ^\circ\mathrm{'\{'}C{'\}'}$, the thermoreceptors send fewer impulses, reducing the hypothalamic response (negative feedback).
+**Answer.** A decrease in core body temperature is detected by central thermoreceptors (in the hypothalamus) and peripheral thermoreceptors (in the skin). Impulses are sent to the thermoregulatory centre in the hypothalamus, which coordinates the response. The hypothalamus sends impulses via the sympathetic nervous system to effectors: (1) **vasoconstriction** of arterioles supplying the skin surface, reducing blood flow near the skin and minimising heat loss by radiation; (2) **piloerection**, where hair erector muscles contract, raising body hairs and trapping an insulating layer of air; (3) **shivering**, where skeletal muscles contract and relax rapidly, generating heat from increased metabolic activity; (4) increased secretion of **thyroxine** from the thyroid gland, raising the basal metabolic rate and increasing heat production from cellular respiration. As body temperature returns towards $37\ ^\circ\mathrm{C{}$, the thermoreceptors send fewer impulses, reducing the hypothalamic response (negative feedback).
 
 <b>If you get this wrong, revise:</b> [Response to Cold](#32-response-to-cold-below-set-point)
 
@@ -358,9 +358,9 @@ Compare the causes and treatments of Type 1 and Type 2 diabetes. Explain why a p
 
 <details>
 <summary>Problem 5</summary>
-A student exercises vigorously. Explain how the body detects and responds to the resulting changes in blood $\mathrm{'\{'}CO_2{'\}'}$ concentration and pH. (5 marks)
+A student exercises vigorously. Explain how the body detects and responds to the resulting changes in blood $\mathrm{CO_2{}$ concentration and pH. (5 marks)
 
-**Answer.** During vigorous exercise, muscle cells respire more rapidly (aerobic and anaerobic respiration), producing more $\mathrm{'\{'}CO_2{'\}'}$ and lactic acid. This increases $p\mathrm{'\{'}CO_2{'\}'}$ and decreases blood pH. The increase in $p\mathrm{'\{'}CO_2{'\}'}$ is detected by **chemoreceptors** in the aortic body and carotid body, which send impulses to the respiratory centre in the medulla oblongata. The respiratory centre increases the rate and depth of breathing (ventilation), which increases the rate of $\mathrm{'\{'}CO_2{'\}'}$ removal from the lungs, restoring normal $p\mathrm{'\{'}CO_2{'\}'}$ and pH. Simultaneously, the decrease in pH is detected by chemoreceptors and by the cardiovascular centre. The cardiovascular centre increases sympathetic stimulation to the SAN, increasing heart rate and cardiac output. This increases blood flow to the lungs for gas exchange and to the muscles for $\mathrm{'\{'}O_2{'\}'}$ delivery. Both responses are negative feedback mechanisms.
+**Answer.** During vigorous exercise, muscle cells respire more rapidly (aerobic and anaerobic respiration), producing more $\mathrm{CO_2{}$ and lactic acid. This increases $p\mathrm{CO_2{}$ and decreases blood pH. The increase in $p\mathrm{CO_2{}$ is detected by **chemoreceptors** in the aortic body and carotid body, which send impulses to the respiratory centre in the medulla oblongata. The respiratory centre increases the rate and depth of breathing (ventilation), which increases the rate of $\mathrm{CO_2{}$ removal from the lungs, restoring normal $p\mathrm{CO_2{}$ and pH. Simultaneously, the decrease in pH is detected by chemoreceptors and by the cardiovascular centre. The cardiovascular centre increases sympathetic stimulation to the SAN, increasing heart rate and cardiac output. This increases blood flow to the lungs for gas exchange and to the muscles for $\mathrm{O_2{}$ delivery. Both responses are negative feedback mechanisms.
 
 <b>If you get this wrong, revise:</b> [Control of Blood PCO2 and pH](#6-control-of-blood-pco2-and-ph)
 
@@ -370,13 +370,13 @@ A student exercises vigorously. Explain how the body detects and responds to the
 
 ### 7.1 Ultrafiltration
 
-Ultrafiltration occurs in the **Bowman's capsule**. Blood enters the glomerulus via the **afferent arteriole** (wider) and leaves via the **efferent arteriole** (narrower), creating high hydrostatic pressure ($\approx 7\ \mathrm{'\{'}kPa{'\}'}$). This pressure forces small molecules (water, glucose, amino acids, urea, ions) out of the blood through the endothelial pores of the glomerular capillaries, across the basement membrane, and through the filtration slits of the podocytes, into the capsular space.
+Ultrafiltration occurs in the **Bowman's capsule**. Blood enters the glomerulus via the **afferent arteriole** (wider) and leaves via the **efferent arteriole** (narrower), creating high hydrostatic pressure ($\approx 7\ \mathrm{kPa{}$). This pressure forces small molecules (water, glucose, amino acids, urea, ions) out of the blood through the endothelial pores of the glomerular capillaries, across the basement membrane, and through the filtration slits of the podocytes, into the capsular space.
 
 Three barriers to filtration:
 
-1. **Fenestrated endothelium**: pores ($\approx 100\ \mathrm{'\{'}nm{'\}'}$) in capillary walls allow passage of small molecules but not cells.
+1. **Fenestrated endothelium**: pores ($\approx 100\ \mathrm{nm{}$) in capillary walls allow passage of small molecules but not cells.
 2. **Basement membrane**: a negatively charged mesh of collagen and glycoproteins. It acts as a molecular sieve and repels negatively charged proteins (e.g., albumin).
-3. **Podocyte foot processes**: epithelial cells with filtration slits ($\approx 25\ \mathrm{'\{'}nm{'\}'}$) that prevent passage of medium-sized proteins.
+3. **Podocyte foot processes**: epithelial cells with filtration slits ($\approx 25\ \mathrm{nm{}$) that prevent passage of medium-sized proteins.
 
 The filtrate has the same composition as blood plasma minus proteins and blood cells.
 
@@ -387,11 +387,11 @@ Approximately 99% of the filtrate is reabsorbed as it passes through the nephron
 | Substance | % of filtrate reabsorbed | Location | Mechanism |
 | --------- | ----------------------- | -------- | --------- |
 | Water | 99% | Proximal convoluted tubule, loop of Henle, collecting duct | Osmosis |
-| $\mathrm{'\{'}Na^+{'\}'}$ | 99% | PCT (active transport), ascending limb (active), DCT (active) | $\mathrm{'\{'}Na^+/K^+{'\}'}$ ATPase |
-| Glucose | 100% | PCT | Co-transport with $\mathrm{'\{'}Na^+{'\}'}$ |
-| Amino acids | 100% | PCT | Co-transport with $\mathrm{'\{'}Na^+{'\}'}$ |
+| $\mathrm{Na^+{}$ | 99% | PCT (active transport), ascending limb (active), DCT (active) | $\mathrm{Na^+/K^+{}$ ATPase |
+| Glucose | 100% | PCT | Co-transport with $\mathrm{Na^+{}$ |
+| Amino acids | 100% | PCT | Co-transport with $\mathrm{Na^+{}$ |
 | Urea | 50% | PCT, collecting duct | Diffusion and water reabsorption concentrating it |
-| $\mathrm{'\{'}K^+{'\}'}$ | 90% | PCT, loop of Henle | Active transport |
+| $\mathrm{K^+{}$ | 90% | PCT, loop of Henle | Active transport |
 
 ### 7.3 The Loop of Henle and the Countercurrent Multiplier
 
@@ -399,7 +399,7 @@ The loop of Henle creates a **gradient of increasing osmolarity** in the medulla
 
 **Descending limb**: permeable to water (aquaporins), impermeable to ions. As the filtrate descends deeper into the medulla, the increasing osmolarity of the interstitial fluid draws water out by osmosis. The filtrate becomes progressively more concentrated.
 
-**Ascending limb**: impermeable to water, actively transports $\mathrm{'\{'}Na^+{'\}'}$, $\mathrm{'\{'}K^+{'\}'}$, and $\mathrm{'\{'}Cl^-{'\}'}$ out of the filtrate (via the $\mathrm{'\{'}Na^+/K^+/2Cl^-{'\}'}$ co-transporter in the thick segment). This dilutes the filtrate and adds ions to the medullary interstitial fluid, maintaining the osmotic gradient.
+**Ascending limb**: impermeable to water, actively transports $\mathrm{Na^+{}$, $\mathrm{K^+{}$, and $\mathrm{Cl^-{}$ out of the filtrate (via the $\mathrm{Na^+/K^+/2Cl^-{}$ co-transporter in the thick segment). This dilutes the filtrate and adds ions to the medullary interstitial fluid, maintaining the osmotic gradient.
 
 This arrangement is called a **countercurrent multiplier** because the two limbs run in opposite directions (countercurrent), and the active transport in the ascending limb multiplies (amplifies) the osmotic gradient established by the descending limb.
 
@@ -410,7 +410,7 @@ The **vasa recta** (hairpin-shaped blood capillaries surrounding the loop of Hen
 ADH (antidiuretic hormone, vasopressin) acts through a **second messenger system**:
 
 1. ADH binds to **V2 receptors** on the basolateral membrane of collecting duct cells (a G-protein-coupled receptor).
-2. The receptor activates a G-protein ($\mathrm{'\{'}G_s{'\}'}$), which activates **adenylate cyclase**.
+2. The receptor activates a G-protein ($\mathrm{G_s{}$), which activates **adenylate cyclase**.
 3. Adenylate cyclase converts ATP to **cyclic AMP (cAMP)**, the second messenger.
 4. cAMP activates **protein kinase A (PKA)**.
 5. PKA phosphorylates vesicles containing **aquaporin-2** water channel proteins, triggering their fusion with the apical (luminal) membrane.
@@ -421,7 +421,7 @@ When ADH levels decrease, aquaporin channels are removed from the membrane by en
 
 ### 7.5 Calculating Water Potential of Urine
 
-**Worked Example.** A person produces $1.5\ \mathrm{'\{'}dm^3{'\}'}$ of urine per day with an osmolarity of $600\ \mathrm{mOsmol\ kg^{-1}}$. A second person (dehydrated) produces $0.5\ \mathrm{'\{'}dm^3{'\}'}$ of urine with an osmolarity of $1200\ \mathrm{mOsmol\ kg^{-1}}$.
+**Worked Example.** A person produces $1.5\ \mathrm{dm^3{}$ of urine per day with an osmolarity of $600\ \mathrm{mOsmol\ kg^{-1}}$. A second person (dehydrated) produces $0.5\ \mathrm{dm^3{}$ of urine with an osmolarity of $1200\ \mathrm{mOsmol\ kg^{-1}}$.
 
 Person 1: total solute excreted $= 1.5 \times 600 = 900\ \mathrm{mOsmol\ day^{-1}}$.
 
@@ -460,7 +460,7 @@ Both people excrete approximately the same amount of solute (within normal varia
 | Vasoconstriction | Contraction of smooth muscle in skin arterioles | Less blood near surface, reducing heat loss |
 | Shivering | Rapid involuntary contraction and relaxation of skeletal muscles | Muscle contraction generates heat as a by-product of respiration |
 | Piloerection | Erector pili muscles contract, raising body hairs | Traps a layer of insulating air next to the skin |
-| Increased metabolic rate | Thyroid hormones ($\mathrm{'\{'}T_3{'\}'}$, $\mathrm{'\{'}T_4{'\}'}$) stimulate basal metabolic rate | More heat generated by cellular respiration |
+| Increased metabolic rate | Thyroid hormones ($\mathrm{T_3{}$, $\mathrm{T_4{}$) stimulate basal metabolic rate | More heat generated by cellular respiration |
 | Non-shivering thermogenesis | Brown adipose tissue (brown fat) is stimulated by noradrenaline to oxidise fatty acids | Uncoupling protein 1 (UCP1) in brown fat mitochondria uncouples electron transport from ATP synthesis, releasing energy as heat |
 | Behavioural responses | Curling up, huddling, seeking warmth, putting on clothes | Reduces surface area exposed, gains heat from environment |
 
@@ -521,7 +521,7 @@ The menstrual cycle involves both **negative feedback** and **positive feedback*
 
 Effects of auxin:
 
-- **Cell elongation**: auxin increases the plasticity (stretchability) of the cell wall by activating proton pumps ($\mathrm{'\{'}H^+{'\}'}$-ATPases) that pump $\mathrm{'\{'}H^+{'\}'}$ into the cell wall. The low pH activates enzymes (expansins) that break cross-links between cellulose microfibrils, allowing the wall to expand as the cell takes up water by osmosis.
+- **Cell elongation**: auxin increases the plasticity (stretchability) of the cell wall by activating proton pumps ($\mathrm{H^+{}$-ATPases) that pump $\mathrm{H^+{}$ into the cell wall. The low pH activates enzymes (expansins) that break cross-links between cellulose microfibrils, allowing the wall to expand as the cell takes up water by osmosis.
 - **Apical dominance**: auxin produced by the apical bud inhibits the growth of lateral buds. Removing the apical bud (decapitation) allows lateral buds to grow. This ensures the plant grows taller (competing for light) rather than bushier.
 - **Root initiation**: auxin stimulates the formation of lateral roots from pericycle cells.
 - **Fruit development**: auxin promotes fruit set and development after fertilisation. In parthenocarpic fruits, auxin is applied artificially to produce seedless fruit.
@@ -546,7 +546,7 @@ Effects of gibberellin:
 
 ### 10.4 Ethylene
 
-**Ethylene** ($\mathrm{'\{'}C_2H_4{'\}'}$) is a gaseous hormone produced by ripening fruits. It stimulates:
+**Ethylene** ($\mathrm{C_2H_4{}$) is a gaseous hormone produced by ripening fruits. It stimulates:
 
 - Fruit ripening (conversion of starch to sugars, breakdown of chlorophyll, softening of cell walls).
 - Leaf abscission (formation of the abscission zone at the base of the petiole).
@@ -591,7 +591,7 @@ Many physiological processes are controlled by both nervous and hormonal mechani
 
 - **Cause**: insulin resistance (target cells become less responsive to insulin) combined with progressive $\beta$ cell failure.
 - **Risk factors**: obesity (especially visceral fat), sedentary lifestyle, diet high in refined carbohydrates, age, family history, ethnicity (higher risk in South Asian, Afro-Caribbean populations).
-- **Mechanism**: excess adipose tissue releases pro-inflammatory cytokines (TNF-$\alpha$, IL-6) and free fatty acids, which interfere with insulin receptor signalling. The $\mathrm{'\{'}PI3K{'\}'}$ pathway is disrupted, reducing GLUT4 translocation to the cell membrane.
+- **Mechanism**: excess adipose tissue releases pro-inflammatory cytokines (TNF-$\alpha$, IL-6) and free fatty acids, which interfere with insulin receptor signalling. The $\mathrm{PI3K{}$ pathway is disrupted, reducing GLUT4 translocation to the cell membrane.
 - **Treatment**: lifestyle changes (diet, exercise), oral medication (metformin reduces hepatic glucose production and increases insulin sensitivity), GLP-1 receptor agonists, SGLT2 inhibitors (increase glucose excretion in urine), and eventually insulin if $\beta$ cell function deteriorates.
 
 ### 12.3 Complications of Diabetes
@@ -635,7 +635,7 @@ When insulin binds to its receptor (a receptor tyrosine kinase, RTK) on the targ
 
 Glucagon binds to a G-protein-coupled receptor on the target cell (primarily hepatocytes):
 
-1. Glucagon binding activates $\mathrm{'\{'}G_s{'\}'}$ protein, which activates **adenylate cyclase**.
+1. Glucagon binding activates $\mathrm{G_s{}$ protein, which activates **adenylate cyclase**.
 2. Adenylate cyclase converts ATP to **cAMP** (second messenger).
 3. cAMP activates **protein kinase A (PKA)**.
 4. PKA phosphorylates targets that promote:
@@ -649,8 +649,8 @@ Glucagon binds to a G-protein-coupled receptor on the target cell (primarily hep
 | ---------------- | ----------- | ------------ | -------------- |
 | cAMP | Adenylate cyclase | Glucagon, adrenaline ($\beta$-adrenergic) | Activates PKA |
 | cGMP | Guanylate cyclase | Nitric oxide (NO), atrial natriuretic peptide (ANP) | Activates PKG; causes vasodilation |
-| $\mathrm{'\{'}IP_3{'\}'}$ | Phospholipase C (PLC) | Adrenaline ($\alpha_1$-adrenergic), ADH ($\mathrm{'\{'}V_1{'\}'}$ receptors) | Releases $\mathrm{Ca^{2+}}$ from ER |
-| DAG | Phospholipase C (PLC) | Same as $\mathrm{'\{'}IP_3{'\}'}$ | Activates PKC |
+| $\mathrm{IP_3{}$ | Phospholipase C (PLC) | Adrenaline ($\alpha_1$-adrenergic), ADH ($\mathrm{V_1{}$ receptors) | Releases $\mathrm{Ca^{2+}}$ from ER |
+| DAG | Phospholipase C (PLC) | Same as $\mathrm{IP_3{}$ | Activates PKC |
 
 ## 14. The Endocrine System: Beyond the Pancreas
 
@@ -662,7 +662,7 @@ The adrenal glands sit on top of the kidneys and have two distinct regions:
 
 | Zone | Hormone | Function |
 | ---- | ------- | -------- |
-| Zona glomerulosa | **Aldosterone** (mineralocorticoid) | Increases $\mathrm{'\{'}Na^+{'\}'}$ reabsorption and $\mathrm{'\{'}K^+{'\}'}$ excretion in the kidneys; increases blood pressure |
+| Zona glomerulosa | **Aldosterone** (mineralocorticoid) | Increases $\mathrm{Na^+{}$ reabsorption and $\mathrm{K^+{}$ excretion in the kidneys; increases blood pressure |
 | Zona fasciculata | **Cortisol** (glucocorticoid) | Increases blood glucose (stimulates gluconeogenesis and glycogenolysis); suppresses the immune system; anti-inflammatory |
 | Zona reticularis | **Androgens** (e.g., DHEA) | Converted to testosterone and oestrogens in peripheral tissues |
 
@@ -680,10 +680,10 @@ The thyroid gland produces:
 
 | Hormone | Target | Function |
 | ------- | ------ | -------- |
-| $\mathrm{'\{'}T_3{'\}'}$ (triiodothyronine) and $\mathrm{'\{'}T_4{'\}'}$ (thyroxine) | Most body cells | Increases basal metabolic rate (BMR) by stimulating transcription of genes involved in metabolism; promotes protein synthesis; essential for growth and development (especially brain development in infants) |
+| $\mathrm{T_3{}$ (triiodothyronine) and $\mathrm{T_4{}$ (thyroxine) | Most body cells | Increases basal metabolic rate (BMR) by stimulating transcription of genes involved in metabolism; promotes protein synthesis; essential for growth and development (especially brain development in infants) |
 | Calcitonin | Bones, kidneys | Lowers blood $\mathrm{Ca^{2+}}$ by inhibiting osteoclast activity and stimulating $\mathrm{Ca^{2+}}$ excretion in urine |
 
-Thyroid hormones are produced by iodination of tyrosine residues in thyroglobulin (a protein stored in the thyroid follicle). **Iodine deficiency** causes the thyroid to enlarge (goitre) as it attempts to produce more $\mathrm{'\{'}T_3{'\}'}$/$\mathrm{'\{'}T_4{'\}'}$ with insufficient raw material.
+Thyroid hormones are produced by iodination of tyrosine residues in thyroglobulin (a protein stored in the thyroid follicle). **Iodine deficiency** causes the thyroid to enlarge (goitre) as it attempts to produce more $\mathrm{T_3{}$/$\mathrm{T_4{}$ with insufficient raw material.
 
 **Thyroid disorders:**
 
@@ -691,7 +691,7 @@ Thyroid hormones are produced by iodination of tyrosine residues in thyroglobuli
 | -------- | ----- | -------- |
 | Hyperthyroidism (Graves' disease) | Autoantibodies stimulate the TSH receptor | Weight loss, increased heart rate, anxiety, heat intolerance, exophthalmos (bulging eyes) |
 | Hypothyroidism (myxoedema) | Autoimmune destruction of thyroid (Hashimoto's) or iodine deficiency | Weight gain, fatigue, cold intolerance, slow heart rate, mental slowing |
-| Cretinism | Congenital hypothyroidism | Severe intellectual disability, stunted growth (preventable by newborn screening and early $\mathrm{'\{'}T_4{'\}'}$ treatment) |
+| Cretinism | Congenital hypothyroidism | Severe intellectual disability, stunted growth (preventable by newborn screening and early $\mathrm{T_4{}$ treatment) |
 
 ### 14.3 The Pituitary Gland
 
@@ -735,7 +735,7 @@ Positive feedback amplifies a change rather than opposing it. It is less common 
 | Ovulation | High oestrogen triggers LH surge, which triggers ovulation | Ensures ovulation occurs decisively once the follicle is mature |
 | Blood clotting | Thrombin activates more thrombin (amplification cascade) | Ensures rapid clot formation to prevent excessive blood loss |
 | Childbirth | Oxytocin stimulates uterine contractions, which stimulate more oxytocin release | Drives labour to completion |
-| Action potential | $\mathrm{'\{'}Na^+{'\}'}$ influx depolarises the membrane, opening more $\mathrm{'\{'}Na^+{'\}'}$ channels | Ensures the action potential is an all-or-nothing event |
+| Action potential | $\mathrm{Na^+{}$ influx depolarises the membrane, opening more $\mathrm{Na^+{}$ channels | Ensures the action potential is an all-or-nothing event |
 
 ## 16. Kidney Failure and Dialysis
 
@@ -747,9 +747,9 @@ Positive feedback amplifies a change rather than opposing it. It is less common 
 ### 16.2 Consequences of Kidney Failure
 
 - Accumulation of urea and other nitrogenous waste products (uraemia): causes nausea, vomiting, fatigue, confusion, seizures.
-- Accumulation of $\mathrm{'\{'}K^+{'\}'}$ (hyperkalaemia): can cause cardiac arrhythmias and cardiac arrest.
+- Accumulation of $\mathrm{K^+{}$ (hyperkalaemia): can cause cardiac arrhythmias and cardiac arrest.
 - Fluid retention (oedema): due to inability to excrete water.
-- Acidosis: inability to excrete $\mathrm{'\{'}H^+{'\}'}$.
+- Acidosis: inability to excrete $\mathrm{H^+{}$.
 - Anaemia: reduced erythropoietin production (kidneys produce EPO, which stimulates red blood cell production in bone marrow).
 - Bone disease: reduced activation of vitamin D (kidneys convert calcifediol to calcitriol, the active form), leading to reduced $\mathrm{Ca^{2+}}$ absorption from the gut.
 
@@ -763,9 +763,9 @@ The dialyser contains:
 - **Semi-permeable membrane** between the two compartments.
 
 Dialysis fluid composition:
-- Same concentration of glucose and salts ($\mathrm{'\{'}Na^+{'\}'}$, $\mathrm{'\{'}K^+{'\}'}$, $\mathrm{Ca^{2+}}$, $\mathrm{'\{'}HCO_3^-{'\}'}$) as normal blood plasma.
+- Same concentration of glucose and salts ($\mathrm{Na^+{}$, $\mathrm{K^+{}$, $\mathrm{Ca^{2+}}$, $\mathrm{HCO_3^-{}$) as normal blood plasma.
 - **No urea**: creates a concentration gradient so urea diffuses from blood to dialysis fluid.
-- **No excess $\mathrm{'\{'}K^+{'\}'}$**: allows excess $\mathrm{'\{'}K^+{'\}'}$ to diffuse from blood to dialysis fluid.
+- **No excess $\mathrm{K^+{}$**: allows excess $\mathrm{K^+{}$ to diffuse from blood to dialysis fluid.
 
 Dialysis is typically performed 3 times per week for 4--5 hours per session.
 
@@ -854,7 +854,7 @@ Nastic movements are responses to non-directional stimuli (the direction of the 
 
 | Movement | Stimulus | Mechanism | Example |
 | -------- | -------- | --------- | ------- |
-| Thigmonasty (seismonasty) | Touch/mechanical disturbance | Rapid change in turgor pressure in pulvini (swollen leaf bases). Touch triggers $\mathrm{'\{'}K^+{'\}'}$ and $\mathrm{'\{'}Cl^-{'\}'}$ efflux from cells on one side, causing water loss and cell collapse. This is reversible. | Mimosa pudica (sensitive plant) -- leaves fold when touched |
+| Thigmonasty (seismonasty) | Touch/mechanical disturbance | Rapid change in turgor pressure in pulvini (swollen leaf bases). Touch triggers $\mathrm{K^+{}$ and $\mathrm{Cl^-{}$ efflux from cells on one side, causing water loss and cell collapse. This is reversible. | Mimosa pudica (sensitive plant) -- leaves fold when touched |
 | Photonasty | Light/dark | Changes in turgor pressure driven by blue-light receptors. Flowers open during the day (turgid cells in upper petal surface) and close at night (cells become flaccid). | Dandelion flowers, morning glory |
 | Nyctinasty | Darkness | Same mechanism as photonasty but triggered by darkness. Leaves fold up at night, reducing water loss and exposure to herbivores. | Clover, beans |
 
@@ -901,7 +901,7 @@ Where $\bar{x}_1, \bar{x}_2$ = mean radicle lengths in the two groups, $s_1, s_2
 
 If the calculated $t$ value exceeds the critical value (at $p = 0.05$, with appropriate degrees of freedom), the difference is statistically significant.
 
-**Worked Example.** Control group ($n = 10$): mean radicle growth $= 12.0\ \mathrm{'\{'}mm{'\}'}$, SD $= 2.5\ \mathrm{'\{'}mm{'\}'}$. Treatment group ($10^{-4}\ \mathrm{mol\ dm^{-3}}$ IAA, $n = 10$): mean $= 5.0\ \mathrm{'\{'}mm{'\}'}$, SD $= 2.0\ \mathrm{'\{'}mm{'\}'}$.
+**Worked Example.** Control group ($n = 10$): mean radicle growth $= 12.0\ \mathrm{mm{}$, SD $= 2.5\ \mathrm{mm{}$. Treatment group ($10^{-4}\ \mathrm{mol\ dm^{-3}}$ IAA, $n = 10$): mean $= 5.0\ \mathrm{mm{}$, SD $= 2.0\ \mathrm{mm{}$.
 
 $t = \frac{12.0 - 5.0}{\sqrt{\frac{2.5^2}{10} + \frac{2.0^2}{10}}} = \frac{7.0}{\sqrt{\frac{6.25 + 4.00}{10}}} = \frac{7.0}{\sqrt{1.025}} = \frac{7.0}{1.012} = 6.92$.
 
@@ -1167,7 +1167,7 @@ The adrenal glands sit on top of the kidneys and have two distinct regions:
 | Region | Hormone(s) | Function |
 | ------ | ---------- | -------- |
 | Adrenal medulla (inner) | Adrenaline (epinephrine), noradrenaline | "Fight or flight" response: increases heart rate, stroke volume, blood pressure; dilates bronchioles; stimulates glycogenolysis in liver; dilates pupils; redirects blood to skeletal muscles |
-| Adrenal cortex (outer) | Mineralocorticoids (aldosterone) | Regulates blood pressure by promoting $\mathrm{'\{'}Na^+{'\}'}$ reabsorption and $\mathrm{'\{'}K^+{'\}'}$ excretion in the kidneys |
+| Adrenal cortex (outer) | Mineralocorticoids (aldosterone) | Regulates blood pressure by promoting $\mathrm{Na^+{}$ reabsorption and $\mathrm{K^+{}$ excretion in the kidneys |
 | | Glucocorticoids (cortisol) | Increases blood glucose (gluconeogenesis, anti-insulin effect); suppresses immune system; anti-inflammatory; peaks in the morning (circadian rhythm) |
 | | Androgens (DHEA) | Converted to testosterone and oestrogen in peripheral tissues |
 
@@ -1178,9 +1178,9 @@ The adrenal glands sit on top of the kidneys and have two distinct regions:
 | Region | Location | Function |
 | ------ | -------- | -------- |
 | Renal (Bowman's) capsule | Cortex | Ultrafiltration: filters blood to form filtrate |
-| Proximal convoluted tubule (PCT) | Cortex | Selective reabsorption: reabsorbs all glucose, all amino acids, approximately 85% of $\mathrm{'\{'}Na^+{'\}'}$ and water, approximately 50% of urea |
+| Proximal convoluted tubule (PCT) | Cortex | Selective reabsorption: reabsorbs all glucose, all amino acids, approximately 85% of $\mathrm{Na^+{}$ and water, approximately 50% of urea |
 | Loop of Henle | Medulla | Countercurrent multiplication: creates a salt gradient in the medulla for water reabsorption |
-| Distal convoluted tubule (DCT) | Cortex | Fine-tuning: reabsorption of $\mathrm{'\{'}Na^+{'\}'}$ and $\mathrm{Ca^{2+}}$ (under aldosterone control); water reabsorption (under ADH control) |
+| Distal convoluted tubule (DCT) | Cortex | Fine-tuning: reabsorption of $\mathrm{Na^+{}$ and $\mathrm{Ca^{2+}}$ (under aldosterone control); water reabsorption (under ADH control) |
 | Collecting duct | Medulla (passes through to papilla) | Water reabsorption (ADH-dependent): water moves out into the hypertonic medulla by osmosis |
 
 ### 24.2 Ultrafiltration
@@ -1188,26 +1188,26 @@ The adrenal glands sit on top of the kidneys and have two distinct regions:
 Ultrafiltration occurs at the renal corpuscle (glomerulus + Bowman's capsule):
 
 **Pressure forces:**
-- **Glomerular hydrostatic pressure** ($\approx 55\ \mathrm{'\{'}mmHg{'\}'}$): blood pressure in the glomerulus; pushes filtrate out of the blood.
-- **Capsular hydrostatic pressure** ($\approx 15\ \mathrm{'\{'}mmHg{'\}'}$): pressure of fluid already in the Bowman's capsule; opposes filtration.
-- **Blood oncotic pressure** ($\approx 30\ \mathrm{'\{'}mmHg{'\}'}$): osmotic pressure due to plasma proteins (which are too large to be filtered); opposes filtration.
+- **Glomerular hydrostatic pressure** ($\approx 55\ \mathrm{mmHg{}$): blood pressure in the glomerulus; pushes filtrate out of the blood.
+- **Capsular hydrostatic pressure** ($\approx 15\ \mathrm{mmHg{}$): pressure of fluid already in the Bowman's capsule; opposes filtration.
+- **Blood oncotic pressure** ($\approx 30\ \mathrm{mmHg{}$): osmotic pressure due to plasma proteins (which are too large to be filtered); opposes filtration.
 
-**Net filtration pressure $= 55 - 15 - 30 = 10\ \mathrm{'\{'}mmHg{'\}'}$**
+**Net filtration pressure $= 55 - 15 - 30 = 10\ \mathrm{mmHg{}$**
 
 ### 24.3 Selective Reabsorption in the PCT
 
 | Substance | Fate | Mechanism |
 | --------- | ---- | --------- |
-| Glucose | 100% reabsorbed | Secondary active transport ($\mathrm{'\{'}Na^+{'\}'}$/glucose co-transporter, SGLT2) on apical membrane; facilitated diffusion (GLUT2) on basolateral membrane |
+| Glucose | 100% reabsorbed | Secondary active transport ($\mathrm{Na^+{}$/glucose co-transporter, SGLT2) on apical membrane; facilitated diffusion (GLUT2) on basolateral membrane |
 | Amino acids | 100% reabsorbed | Secondary active transport (similar to glucose) |
-| $\mathrm{'\{'}Na^+{'\}'}$ | $\approx 85\%$ reabsorbed | $\mathrm{'\{'}Na^+/K^+{'\}'}$ ATPase on basolateral membrane creates $\mathrm{'\{'}Na^+{'\}'}$ gradient; $\mathrm{'\{'}Na^+{'\}'}$ enters via co-transporters |
-| Water | $\approx 85\%$ reabsorbed | Follows $\mathrm{'\{'}Na^+{'\}'}$ by osmosis (water permeability of PCT is always high) |
+| $\mathrm{Na^+{}$ | $\approx 85\%$ reabsorbed | $\mathrm{Na^+/K^+{}$ ATPase on basolateral membrane creates $\mathrm{Na^+{}$ gradient; $\mathrm{Na^+{}$ enters via co-transporters |
+| Water | $\approx 85\%$ reabsorbed | Follows $\mathrm{Na^+{}$ by osmosis (water permeability of PCT is always high) |
 | Urea | $\approx 50\%$ reabsorbed | Diffuses (passive) down its concentration gradient |
-| $\mathrm{'\{'}K^+{'\}'}$ | $\approx 85\%$ reabsorbed | Passive diffusion and active transport |
+| $\mathrm{K^+{}$ | $\approx 85\%$ reabsorbed | Passive diffusion and active transport |
 
 ### 24.4 ADH and Water Reabsorption
 
-1. Osmoreceptors in the hypothalamus detect increased blood $\mathrm{'\{'}Na^+{'\}'}$ concentration (increased osmolarity).
+1. Osmoreceptors in the hypothalamus detect increased blood $\mathrm{Na^+{}$ concentration (increased osmolarity).
 2. The hypothalamus stimulates the posterior pituitary to release ADH.
 3. ADH binds to receptors on the collecting duct cells.
 4. ADH activates a G-protein coupled receptor $\to$ adenylate cyclase $\to$ cAMP $\to$ protein kinase A.
@@ -1226,7 +1226,7 @@ Common Pitfall Students often think that ADH makes the kidneys produce "more uri
 **Synthesis:** in the shoot tip (apical meristem) and young leaves.
 
 **Effects:**
-- Stimulates cell elongation (in shoots) by activating proton pumps ($\mathrm{'\{'}H^+{'\}'}$-ATPase), acidifying the cell wall and activating expansin enzymes that loosen bonds between cellulose microfibrils.
+- Stimulates cell elongation (in shoots) by activating proton pumps ($\mathrm{H^+{}$-ATPase), acidifying the cell wall and activating expansin enzymes that loosen bonds between cellulose microfibrils.
 - Inhibits cell elongation (in roots) at high concentrations.
 - Inhibits lateral bud growth (apical dominance): the shoot tip produces auxin, which is transported down the stem and suppresses growth of lateral buds. Removing the shoot tip (decapitation) causes lateral buds to grow.
 - Promotes root initiation (used in rooting powders for cuttings).
@@ -1258,7 +1258,7 @@ Common Pitfall Students often think that ADH makes the kidneys produce "more uri
 
 **Effects:**
 - Antagonises gibberellin: inhibits seed germination and maintains dormancy.
-- Closes stomata: ABA binds to receptors on guard cells, causing $\mathrm{Ca^{2+}}$ channels to open; $\mathrm{Ca^{2+}}$ influx triggers $\mathrm{'\{'}K^+{'\}'}$ and $\mathrm{'\{'}Cl^-{'\}'}$ efflux; water follows by osmosis; guard cells become flaccid and the stomata close.
+- Closes stomata: ABA binds to receptors on guard cells, causing $\mathrm{Ca^{2+}}$ channels to open; $\mathrm{Ca^{2+}}$ influx triggers $\mathrm{K^+{}$ and $\mathrm{Cl^-{}$ efflux; water follows by osmosis; guard cells become flaccid and the stomata close.
 - Promotes bud dormancy in winter.
 
 ### 25.5 Cytokinin
@@ -1327,7 +1327,7 @@ Ectotherms (reptiles, amphibians, fish, invertebrates) cannot generate significa
 ### 27.2 Symptoms of Kidney Failure
 
 - Accumulation of urea and other nitrogenous wastes (uraemia): fatigue, nausea, vomiting, confusion.
-- Accumulation of $\mathrm{'\{'}K^+{'\}'}$ (hyperkalaemia): can cause cardiac arrhythmias and cardiac arrest.
+- Accumulation of $\mathrm{K^+{}$ (hyperkalaemia): can cause cardiac arrhythmias and cardiac arrest.
 - Fluid retention (oedema): swelling of ankles, face, lungs (pulmonary oedema).
 - Anaemia: kidneys produce erythropoietin (EPO), which stimulates red blood cell production. Kidney failure reduces EPO.
 - Bone disease: kidneys activate vitamin D (calcitriol); kidney failure leads to low $\mathrm{Ca^{2+}}$ absorption, secondary hyperparathyroidism, and bone demineralisation.
@@ -1338,8 +1338,8 @@ Blood is taken from an artery, passed through a dialysis machine (dialyser), and
 
 | Component | Function |
 | --------- | -------- |
-| Dialysis membrane | Partially permeable membrane; allows exchange of small molecules (urea, $\mathrm{'\{'}K^+{'\}'}$, $\mathrm{'\{'}Na^+{'\}'}$, $\mathrm{Ca^{2+}}$) between blood and dialysis fluid by diffusion |
-| Dialysis fluid | Contains the same concentration of useful substances ($\mathrm{'\{'}Na^+{'\}'}$, $\mathrm{'\{'}K^+{'\}'}$, $\mathrm{Ca^{2+}}$, glucose, bicarbonate) as healthy blood; contains no urea (creating a concentration gradient for urea to diffuse from blood to dialysis fluid) |
+| Dialysis membrane | Partially permeable membrane; allows exchange of small molecules (urea, $\mathrm{K^+{}$, $\mathrm{Na^+{}$, $\mathrm{Ca^{2+}}$) between blood and dialysis fluid by diffusion |
+| Dialysis fluid | Contains the same concentration of useful substances ($\mathrm{Na^+{}$, $\mathrm{K^+{}$, $\mathrm{Ca^{2+}}$, glucose, bicarbonate) as healthy blood; contains no urea (creating a concentration gradient for urea to diffuse from blood to dialysis fluid) |
 | Blood pump | Moves blood through the dialyser |
 | Anticoagulant | Heparin prevents blood clotting during dialysis |
 
@@ -1347,7 +1347,7 @@ Blood is taken from an artery, passed through a dialysis machine (dialyser), and
 - Requires 3 sessions per week, 4--6 hours per session.
 - Does not replace all kidney functions (e.g., erythropoietin production, vitamin D activation).
 - Increased risk of infection (via the vascular access site).
-- Dietary restrictions (limited $\mathrm{'\{'}K^+{'\}'}$, phosphate, fluid intake).
+- Dietary restrictions (limited $\mathrm{K^+{}$, phosphate, fluid intake).
 
 ### 27.4 Peritoneal Dialysis
 
@@ -1387,7 +1387,7 @@ Positive feedback amplifies a change, moving the variable further from the set p
 | Childbirth (parturition) | Pressure of baby's head on the cervix | Pressure stimulates oxytocin release $\to$ oxytocin causes stronger uterine contractions $\to$ increased pressure on cervix | Birth (the positive feedback loop is broken when the baby is delivered) |
 | Blood clotting | Damage to blood vessel wall | Platelets adhere to damaged site and release clotting factors $\to$ more platelets are attracted $\to$ clot grows | Clot formation (limits further blood loss) |
 | Ovulation | High oestrogen concentration | High oestrogen stimulates LH surge $\to$ LH triggers ovulation (egg release) | Egg released (oestrogen levels then fall, breaking the loop) |
-| Action potential | Depolarisation reaches threshold | Depolarisation opens voltage-gated $\mathrm{'\{'}Na^+{'\}'}$ channels $\to$ more $\mathrm{'\{'}Na^+{'\}'}$ enters $\to$ more depolarisation | Action potential generated ($\mathrm{'\{'}Na^+{'\}'}$ channels then inactivate, breaking the loop) |
+| Action potential | Depolarisation reaches threshold | Depolarisation opens voltage-gated $\mathrm{Na^+{}$ channels $\to$ more $\mathrm{Na^+{}$ enters $\to$ more depolarisation | Action potential generated ($\mathrm{Na^+{}$ channels then inactivate, breaking the loop) |
 
 ## 29. Osmoregulation in Other Organisms
 
@@ -1400,7 +1400,7 @@ Marine bony fish are **hypotonic** (their internal salt concentration is lower t
 
 **Adaptations:**
 - Drink large quantities of seawater (to replace lost water).
-- Active transport of $\mathrm{'\{'}Na^+{'\}'}$ and $\mathrm{'\{'}Cl^-{'\}'}$ out through the chloride cells in the gills.
+- Active transport of $\mathrm{Na^+{}$ and $\mathrm{Cl^-{}$ out through the chloride cells in the gills.
 - Excrete small volumes of concentrated urine (kidneys retain water).
 - Minimal glomerular filtration (reduces water loss in urine).
 
@@ -1413,7 +1413,7 @@ Freshwater bony fish are **hypertonic** (their internal salt concentration is hi
 
 **Adaptations:**
 - Do not drink (they are already gaining too much water).
-- Absorb salts through the gills (active transport of $\mathrm{'\{'}Na^+{'\}'}$ and $\mathrm{'\{'}Cl^-{'\}'}$).
+- Absorb salts through the gills (active transport of $\mathrm{Na^+{}$ and $\mathrm{Cl^-{}$).
 - Excrete large volumes of dilute urine (kidneys remove excess water).
 - Extensive glomerular filtration.
 
@@ -1474,7 +1474,7 @@ Every negative feedback system has the same components:
 | Receptor (sensor) | Detects deviations from the set point | Thermoreceptors in skin and hypothalamus detect temperature change |
 | Communication system | Transmits information from receptor to effector | Nervous system (sensory neurones $\to$ hypothalamus $\to$ motor neurones) and endocrine system (ADH, adrenaline) |
 | Effector | Carries out the corrective response to restore the set point | Sweat glands, arterioles, shivering muscles, brown fat |
-| Set point | The ideal value being maintained | Core body temperature: $37.0\degree\mathrm{'\{'}C{'\}'}$ |
+| Set point | The ideal value being maintained | Core body temperature: $37.0\degree\mathrm{C{}$ |
 
 ### 31.2 Why Negative Feedback Maintains Homeostasis
 
@@ -1640,7 +1640,7 @@ Adrenaline (from adrenal medulla, during fight or flight response):
 | Body temperature (37$\degree$C) | Enzymes have an optimum temperature; above 40$\degree$C, enzymes denature; below 35$\degree$C, enzyme activity slows dramatically | Hypothermia: enzyme activity too slow; cardiac arrhythmias; death. Hyperthermia: protein denaturation; seizures; organ failure; death |
 | Blood glucose (~5 mmol/L) | Glucose is the main respiratory substrate for the brain (which cannot use other fuels); very high or very low blood glucose is dangerous | Hypoglycaemia (<3 mmol/L): confusion, seizures, coma, death. Hyperglycaemia (>15 mmol/L): osmotic diuresis, dehydration, ketoacidosis |
 | Blood pH (7.35--7.45) | Enzymes are sensitive to pH; changes in pH alter the charge on amino acid residues, affecting enzyme tertiary structure and active site shape | Acidosis (pH < 7.35): enzymes denature; coma; death. Alkalosis (pH > 7.45): enzymes denature; muscle spasms; arrhythmias |
-| Blood $\mathrm{'\{'}CO_2{'\}'}$ | High $\mathrm{'\{'}CO_2{'\}'}$ lowers blood pH (forms carbonic acid) | Hypercapnia: respiratory acidosis; confusion; coma |
+| Blood $\mathrm{CO_2{}$ | High $\mathrm{CO_2{}$ lowers blood pH (forms carbonic acid) | Hypercapnia: respiratory acidosis; confusion; coma |
 | Blood pressure | Maintains adequate blood flow to organs (especially brain, kidneys, heart) | Hypotension: inadequate blood flow to brain $\to$ fainting; shock. Hypertension: damage to blood vessels; stroke; heart attack; kidney damage |
 | Water potential of blood | Maintains blood volume and pressure; ensures cells neither shrink nor swell excessively | Dehydration: low blood volume; low blood pressure; kidney damage. Water intoxication: cells swell (including brain cells); potentially fatal |
 
@@ -1730,7 +1730,7 @@ Without negative feedback:
 | Feature | Description |
 | ------- | ----------- |
 | Type | Eccrine (distributed across the body) and apocrine (armpits, groin) |
-| Mechanism | Sweat (water, $\mathrm{'\{'}Na^+{'\}'}$, $\mathrm{'\{'}Cl^-{'\}'}$, urea) is produced by coiled secretory portion; secreted onto the skin surface via a duct |
+| Mechanism | Sweat (water, $\mathrm{Na^+{}$, $\mathrm{Cl^-{}$, urea) is produced by coiled secretory portion; secreted onto the skin surface via a duct |
 | Evaporation | Water in sweat evaporates; heat is absorbed from the skin surface (high latent heat of vaporisation); this is the primary cooling mechanism in humans |
 | Control | Sympathetic nervous system stimulates sweat gland secretion |
 
@@ -1746,16 +1746,16 @@ Enzymes are sensitive to pH changes. A small change in pH can alter the charge o
 
 | Buffer System | Components | How It Works |
 | ------------- | ---------- | ----------- |
-| Carbonic acid-bicarbonate buffer | $\mathrm{'\{'}H_2CO_3{'\}'}$ (carbonic acid) and $\mathrm{'\{'}HCO_3^-{'\}'}$ (bicarbonate) | Excess $\mathrm{'\{'}H^+{'\}'}$ shifts equilibrium: $\mathrm{'\{'}H^+ + HCO_3^- \rightleftharpoons H_2CO_3 \rightleftharpoons CO_2 + H_2O{'\}'}$; $\mathrm{'\{'}CO_2{'\}'}$ is removed by the lungs (exhaled) |
-| Haemoglobin buffer | Haemoglobin can bind $\mathrm{'\{'}H^+{'\}'}$ (acting as a weak acid/base) | Haemoglobin binds $\mathrm{'\{'}H^+{'\}'}$ in the tissues (where $\mathrm{'\{'}H^+{'\}'}$ concentration is high) and releases them in the lungs (where $\mathrm{'\{'}H^+{'\}'}$ concentration is low) |
-| Plasma proteins | Albumin has many carboxyl groups that can accept or donate $\mathrm{'\{'}H^+{'\}'}$ | Contributes to the buffering capacity of blood |
+| Carbonic acid-bicarbonate buffer | $\mathrm{H_2CO_3{}$ (carbonic acid) and $\mathrm{HCO_3^-{}$ (bicarbonate) | Excess $\mathrm{H^+{}$ shifts equilibrium: $\mathrm{H^+ + HCO_3^- \rightleftharpoons H_2CO_3 \rightleftharpoons CO_2 + H_2O{}$; $\mathrm{CO_2{}$ is removed by the lungs (exhaled) |
+| Haemoglobin buffer | Haemoglobin can bind $\mathrm{H^+{}$ (acting as a weak acid/base) | Haemoglobin binds $\mathrm{H^+{}$ in the tissues (where $\mathrm{H^+{}$ concentration is high) and releases them in the lungs (where $\mathrm{H^+{}$ concentration is low) |
+| Plasma proteins | Albumin has many carboxyl groups that can accept or donate $\mathrm{H^+{}$ | Contributes to the buffering capacity of blood |
 
 ### 43.3 Respiratory Compensation
 
 | Condition | Respiratory Response |
 | --------- | ------------------- |
-| Metabolic acidosis (low blood pH; high $\mathrm{'\{'}H^+{'\}'}$) | Increased breathing rate (hyperventilation); $\mathrm{'\{'}CO_2{'\}'}$ is blown off; the equilibrium shifts to reduce $\mathrm{'\{'}H^+{'\}'}$ concentration; blood pH returns towards normal |
-| Metabolic alkalosis (high blood pH; low $\mathrm{'\{'}H^+{'\}'}$) | Decreased breathing rate (hypoventilation); $\mathrm{'\{'}CO_2{'\}'}$ is retained; the equilibrium shifts to increase $\mathrm{'\{'}H^+{'\}'}$ concentration; blood pH returns towards normal |
+| Metabolic acidosis (low blood pH; high $\mathrm{H^+{}$) | Increased breathing rate (hyperventilation); $\mathrm{CO_2{}$ is blown off; the equilibrium shifts to reduce $\mathrm{H^+{}$ concentration; blood pH returns towards normal |
+| Metabolic alkalosis (high blood pH; low $\mathrm{H^+{}$) | Decreased breathing rate (hypoventilation); $\mathrm{CO_2{}$ is retained; the equilibrium shifts to increase $\mathrm{H^+{}$ concentration; blood pH returns towards normal |
 
 ## 44. Plant Hormones (Auxins)
 
@@ -1766,7 +1766,7 @@ Enzymes are sensitive to pH changes. A small change in pH can alter the charge o
 | Full name | Indole-3-acetic acid (IAA) |
 | Site of synthesis | Shoot tip (apical meristem); young leaves |
 | Transport | Polar (unidirectional) -- moves from shoot tip downwards through parenchyma cells; transported via auxin efflux carriers (PIN proteins) |
-| Mechanism | Promotes $\mathrm{'\{'}H^+{'\}'}$ ion secretion into cell wall $\to$ lowers pH $\to$ activates expansin enzymes $\to$ loosens cell wall $\to$ cell takes up water by osmosis $\to$ cell elongates |
+| Mechanism | Promotes $\mathrm{H^+{}$ ion secretion into cell wall $\to$ lowers pH $\to$ activates expansin enzymes $\to$ loosens cell wall $\to$ cell takes up water by osmosis $\to$ cell elongates |
 
 ### 44.2 Effects of Auxin
 
@@ -1803,7 +1803,7 @@ Gibberellins are a group of plant hormones that stimulate growth, particularly s
 
 ### 46.1 What Is Ethylene?
 
-Ethylene (ethene, $\mathrm{'\{'}C_2H_4{'\}'}$) is a gaseous plant hormone that is involved in fruit ripening, leaf fall (abscission), and stress responses.
+Ethylene (ethene, $\mathrm{C_2H_4{}$) is a gaseous plant hormone that is involved in fruit ripening, leaf fall (abscission), and stress responses.
 
 | Feature | Description |
 | ------- | ----------- |
@@ -1837,7 +1837,7 @@ Abscisic acid (ABA) is a plant hormone that inhibits growth and is primarily inv
 
 | Effect | Mechanism |
 | ------ | --------- |
-| Stomatal closure (drought response) | ABA is produced in response to water stress; transported to guard cells; causes $\mathrm{'\{'}K^+{'\}'}$ ions to leave guard cells; water follows by osmosis; guard cells become flaccid; stomata close; reduces water loss by transpiration |
+| Stomatal closure (drought response) | ABA is produced in response to water stress; transported to guard cells; causes $\mathrm{K^+{}$ ions to leave guard cells; water follows by osmosis; guard cells become flaccid; stomata close; reduces water loss by transpiration |
 | Seed dormancy | High ABA levels in seeds maintain dormancy (prevent germination until conditions are favourable); ABA levels decrease and gibberellin levels increase when conditions for germination are right (water, warmth, oxygen) |
 | Bud dormancy | ABA accumulates in buds in autumn; prevents bud growth during winter; levels decrease in spring (allowing bud break) |
 | Wilting response | In rapidly wilting plants, ABA triggers stomatal closure within minutes; this is one of the fastest hormonal responses in plants |

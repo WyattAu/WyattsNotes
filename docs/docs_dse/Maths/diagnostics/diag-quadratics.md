@@ -87,7 +87,7 @@ $$f(x) = -3(x^2 - 4x) - 7 = -3(x - 2)^2 + 12 - 7 = -3(x - 2)^2 + 5$$
 
 Since $-3(x - 2)^2 \leq 0$ for all $x$, the maximum value is $5$ at $x = 2$.
 
-$$\mathrm{'\{'}ran{'\}'}(f) = (-\infty,\; 5]$$
+$$\mathrm{ran{}(f) = (-\infty,\; 5]$$
 
 ---
 

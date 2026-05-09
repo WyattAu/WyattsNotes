@@ -152,13 +152,13 @@ The student's answer $y = e^{-2x}$ does not satisfy $y'(0) = 0$ since $y' = -2e^
 
 **Question:**
 
-A body at temperature $95\degree\mathrm{'\{'}C{'\}'}$ is placed in a room at constant temperature $20\degree\mathrm{'\{'}C{'\}'}$. After $10$ minutes, the body's temperature is $60\degree\mathrm{'\{'}C{'\}'}$.
+A body at temperature $95\degree\mathrm{C{}$ is placed in a room at constant temperature $20\degree\mathrm{C{}$. After $10$ minutes, the body's temperature is $60\degree\mathrm{C{}$.
 
 **(a)** Find the temperature of the body as a function of time.
 
-**(b)** Determine how long it takes for the body to cool to $30\degree\mathrm{'\{'}C{'\}'}$. Give your answer in exact form.
+**(b)** Determine how long it takes for the body to cool to $30\degree\mathrm{C{}$. Give your answer in exact form.
 
-**(c)** Show that the body temperature approaches $20\degree\mathrm{'\{'}C{'\}'}$ as $t \to \infty$.
+**(c)** Show that the body temperature approaches $20\degree\mathrm{C{}$ as $t \to \infty$.
 
 [Difficulty: hard. Combines separable DEs, exponential modelling, and logarithm manipulation.]
 
@@ -198,7 +198,7 @@ Numerically: $t \approx \frac{10 \times (-2.015)}{0.628} \approx 32.1$ minutes.
 
 **(c)** As $t \to \infty$, since $\frac{8}{15} \lt 1$, we have $\left(\frac{8}{15}\right)^{t/10} \to 0$.
 
-Therefore $T(t) \to 20 + 75 \times 0 = 20\degree\mathrm{'\{'}C{'\}'}$.
+Therefore $T(t) \to 20 + 75 \times 0 = 20\degree\mathrm{C{}$.
 
 This confirms that the body temperature asymptotically approaches the ambient temperature, as expected from Newton's law of cooling.
 

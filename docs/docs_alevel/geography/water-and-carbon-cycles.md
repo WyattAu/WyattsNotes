@@ -150,55 +150,55 @@ regulating climate through the greenhouse effect.
 
 ### Carbon Stores
 
-- **Atmosphere**: approximately $870\;\mathrm{'\{'}GtC{'\}'}$ (gigatonnes of carbon), primarily as
-  $\mathrm{'\{'}CO_2{'\}'}$ ($415\;\mathrm{'\{'}ppm{'\}'}$ in 2024)
-- **Oceans**: approximately $38000\;\mathrm{'\{'}GtC{'\}'}$ as dissolved $\mathrm{'\{'}CO_2{'\}'}$, bicarbonate
-  ($\mathrm{'\{'}HCO_3^-{'\}'}$), carbonate ($\mathrm{CO_3^{2-}}$), and marine organisms
-- **Terrestrial biosphere**: approximately $2000\;\mathrm{'\{'}GtC{'\}'}$ in vegetation, soils, and litter
-- **Fossil fuels**: approximately $1000\;\mathrm{'\{'}GtC{'\}'}$ in coal, oil, and natural gas deposits
-- **Sedimentary rocks**: approximately $100000000\;\mathrm{'\{'}GtC{'\}'}$ in limestone, chalk, and other
+- **Atmosphere**: approximately $870\;\mathrm{GtC{}$ (gigatonnes of carbon), primarily as
+  $\mathrm{CO_2{}$ ($415\;\mathrm{ppm{}$ in 2024)
+- **Oceans**: approximately $38000\;\mathrm{GtC{}$ as dissolved $\mathrm{CO_2{}$, bicarbonate
+  ($\mathrm{HCO_3^-{}$), carbonate ($\mathrm{CO_3^{2-}}$), and marine organisms
+- **Terrestrial biosphere**: approximately $2000\;\mathrm{GtC{}$ in vegetation, soils, and litter
+- **Fossil fuels**: approximately $1000\;\mathrm{GtC{}$ in coal, oil, and natural gas deposits
+- **Sedimentary rocks**: approximately $100000000\;\mathrm{GtC{}$ in limestone, chalk, and other
   carbonate rocks (the largest store, but very slow cycling)
 
 ### Carbon Fluxes (Flows)
 
 **Natural fluxes:**
 
-- **Photosynthesis**: $\approx 120\;\mathrm{'\{'}GtC/year{'\}'}$ from atmosphere to biosphere
-- **Respiration**: $\approx 119\;\mathrm{'\{'}GtC/year{'\}'}$ from biosphere to atmosphere
-- **Ocean-atmosphere exchange**: $\approx 90\;\mathrm{'\{'}GtC/year{'\}'}$ in each direction (uptake and
+- **Photosynthesis**: $\approx 120\;\mathrm{GtC/year{}$ from atmosphere to biosphere
+- **Respiration**: $\approx 119\;\mathrm{GtC/year{}$ from biosphere to atmosphere
+- **Ocean-atmosphere exchange**: $\approx 90\;\mathrm{GtC/year{}$ in each direction (uptake and
   release)
-- **Volcanic outgassing**: $\approx 0.1\;\mathrm{'\{'}GtC/year{'\}'}$ from lithosphere to atmosphere
-- **Weathering**: $\approx 0.3\;\mathrm{'\{'}GtC/year{'\}'}$ from atmosphere to lithosphere (through formation
+- **Volcanic outgassing**: $\approx 0.1\;\mathrm{GtC/year{}$ from lithosphere to atmosphere
+- **Weathering**: $\approx 0.3\;\mathrm{GtC/year{}$ from atmosphere to lithosphere (through formation
   of bicarbonate in weathering reactions)
 
 **Anthropogenic fluxes:**
 
-- **Fossil fuel combustion**: $\approx 9.5\;\mathrm{'\{'}GtC/year{'\}'}$
-- **Land use change (deforestation)**: $\approx 1.1\;\mathrm{'\{'}GtC/year{'\}'}$
-- **Total anthropogenic emissions**: $\approx 10.6\;\mathrm{'\{'}GtC/year{'\}'}$
+- **Fossil fuel combustion**: $\approx 9.5\;\mathrm{GtC/year{}$
+- **Land use change (deforestation)**: $\approx 1.1\;\mathrm{GtC/year{}$
+- **Total anthropogenic emissions**: $\approx 10.6\;\mathrm{GtC/year{}$
 
 Approximately half of anthropogenic emissions are absorbed by natural sinks (oceans and the
-terrestrial biosphere); the remainder accumulates in the atmosphere, increasing $\mathrm{'\{'}CO_2{'\}'}$
+terrestrial biosphere); the remainder accumulates in the atmosphere, increasing $\mathrm{CO_2{}$
 concentration.
 
 ### The Carbon Cycle and Climate Regulation
 
 Carbon dioxide, methane, and nitrous oxide are **greenhouse gases** that absorb and re-emit infrared
 radiation, warming the Earth's surface. Without the natural greenhouse effect, the Earth's average
-surface temperature would be approximately $-18^{\circ}\mathrm{'\{'}C{'\}'}$ rather than the current
-$+15^{\circ}\mathrm{'\{'}C{'\}'}$.
+surface temperature would be approximately $-18^{\circ}\mathrm{C{}$ rather than the current
+$+15^{\circ}\mathrm{C{}$.
 
-Anthropogenic emissions have increased atmospheric $\mathrm{'\{'}CO_2{'\}'}$ from pre-industrial levels of
-approximately $280\;\mathrm{'\{'}ppm{'\}'}$ to over $415\;\mathrm{'\{'}ppm{'\}'}$, enhancing the greenhouse effect and
+Anthropogenic emissions have increased atmospheric $\mathrm{CO_2{}$ from pre-industrial levels of
+approximately $280\;\mathrm{ppm{}$ to over $415\;\mathrm{ppm{}$, enhancing the greenhouse effect and
 driving global warming.
 
 ### Carbon Feedbacks
 
 **Positive feedbacks** (amplifying warming):
 
-- **Permafrost thaw**: frozen soils contain approximately $1500\;\mathrm{'\{'}GtC{'\}'}$. Thawing releases
-  $\mathrm{'\{'}CO_2{'\}'}$ and methane, accelerating warming.
-- **Ocean warming**: warmer water holds less dissolved $\mathrm{'\{'}CO_2{'\}'}$, reducing oceanic carbon
+- **Permafrost thaw**: frozen soils contain approximately $1500\;\mathrm{GtC{}$. Thawing releases
+  $\mathrm{CO_2{}$ and methane, accelerating warming.
+- **Ocean warming**: warmer water holds less dissolved $\mathrm{CO_2{}$, reducing oceanic carbon
   uptake.
 - **Forest dieback**: warming and drought stress reduce photosynthesis and increase tree mortality,
   converting forests from carbon sinks to sources.
@@ -207,11 +207,11 @@ driving global warming.
 
 **Negative feedbacks** (dampening warming):
 
-- **$\mathrm{'\{'}CO_2{'\}'}$ fertilisation**: elevated $\mathrm{'\{'}CO_2{'\}'}$ concentrations can enhance plant
+- **$\mathrm{CO_2{}$ fertilisation**: elevated $\mathrm{CO_2{}$ concentrations can enhance plant
   growth and photosynthesis, increasing carbon uptake by the terrestrial biosphere (though this
   effect is limited by nutrient availability and may be offset by heat stress).
 - **Increased weathering**: warmer, wetter conditions accelerate the chemical weathering of silicate
-  rocks, which consumes atmospheric $\mathrm{'\{'}CO_2{'\}'}$ over geological timescales.
+  rocks, which consumes atmospheric $\mathrm{CO_2{}$ over geological timescales.
 
 ## Climate Change Impacts on Water and Carbon Cycles
 
@@ -229,16 +229,16 @@ driving global warming.
 - **Changes in soil moisture**: increased evapotranspiration can dry soils even where precipitation
   increases, as higher temperatures increase moisture loss faster than rainfall replenishes it
 - **More intense extreme events**: higher atmospheric water vapour content (Clausius-Clapeyron
-  relation: the atmosphere can hold approximately $7\%$ more water vapour per $1^{\circ}\mathrm{'\{'}C{'\}'}$
+  relation: the atmosphere can hold approximately $7\%$ more water vapour per $1^{\circ}\mathrm{C{}$
   of warming) intensifies storms and flooding
 
 ### Impacts on the Carbon Cycle
 
-- **Ocean acidification**: the oceans absorb approximately $25\%$ of anthropogenic $\mathrm{'\{'}CO_2{'\}'}$,
+- **Ocean acidification**: the oceans absorb approximately $25\%$ of anthropogenic $\mathrm{CO_2{}$,
   decreasing ocean pH (from approximately $8.2$ to $8.1$ since pre-industrial times). This impairs
   shell-forming organisms (corals, molluscs, plankton) and threatens marine food webs.
 - **Reduced carbon sink efficiency**: warming reduces the capacity of both the oceans and the
-  terrestrial biosphere to absorb $\mathrm{'\{'}CO_2{'\}'}$.
+  terrestrial biosphere to absorb $\mathrm{CO_2{}$.
 - **Permafrost carbon release**: thawing permafrost in the Arctic is a potentially massive source of
   carbon that could significantly accelerate warming.
 - **Wildfire increases**: more frequent and severe wildfires release stored carbon from forests and
@@ -251,7 +251,7 @@ driving global warming.
 - Confusing the water cycle (a closed system globally) with the carbon cycle. While the total water
   on Earth is essentially constant, carbon moves between stores with varying residence times, and
   anthropogenic emissions are adding to the atmospheric store.
-- Stating that the oceans "absorb all" anthropogenic $\mathrm{'\{'}CO_2{'\}'}$. The oceans absorb
+- Stating that the oceans "absorb all" anthropogenic $\mathrm{CO_2{}$. The oceans absorb
   approximately $25\%$, the terrestrial biosphere absorbs approximately $25\%$, and the remaining
   $50\%$ accumulates in the atmosphere.
 - Confusing infiltration with percolation. Infiltration is the entry of water into the soil surface;
@@ -267,16 +267,16 @@ driving global warming.
 <details>
 <summary>Problem 1: Water Balance Calculation</summary>
 
-A drainage basin receives $1200\;\mathrm{'\{'}mm{'\}'}$ of precipitation in a year. Evapotranspiration is
-$500\;\mathrm{'\{'}mm{'\}'}$ and river discharge is $600\;\mathrm{'\{'}mm{'\}'}$. Calculate the change in water storage.
+A drainage basin receives $1200\;\mathrm{mm{}$ of precipitation in a year. Evapotranspiration is
+$500\;\mathrm{mm{}$ and river discharge is $600\;\mathrm{mm{}$. Calculate the change in water storage.
 
 $$P = Q + E \pm \Delta S$$
 
 $$1200 = 600 + 500 + \Delta S$$
 
-$$\Delta S = 1200 - 600 - 500 = +100\;\mathrm{'\{'}mm{'\}'}$$
+$$\Delta S = 1200 - 600 - 500 = +100\;\mathrm{mm{}$$
 
-Storage increased by $100\;\mathrm{'\{'}mm{'\}'}$, indicating a wet year with surplus water accumulating in
+Storage increased by $100\;\mathrm{mm{}$, indicating a wet year with surplus water accumulating in
 soil moisture, groundwater, or surface water bodies.
 
 </details>
@@ -285,8 +285,8 @@ soil moisture, groundwater, or surface water bodies.
 <summary>Problem 2: Storm Hydrograph Analysis</summary>
 
 Two drainage basins of similar size experience identical rainfall events. Basin A has a lag time of
-$4$ hours and peak discharge of $150\;\mathrm{'\{'}m^3/s{'\}'}$. Basin B has a lag time of $8$ hours and peak
-discharge of $80\;\mathrm{'\{'}m^3/s{'\}'}$. Explain the likely differences in the physical characteristics of
+$4$ hours and peak discharge of $150\;\mathrm{m^3/s{}$. Basin B has a lag time of $8$ hours and peak
+discharge of $80\;\mathrm{m^3/s{}$. Explain the likely differences in the physical characteristics of
 the two basins.
 
 Basin A has a shorter lag time and higher peak discharge, indicating a **faster hydrological
@@ -315,13 +315,13 @@ peak discharge is lower.
 <details>
 <summary>Problem 3: Carbon Budget Calculation</summary>
 
-Global anthropogenic $\mathrm{'\{'}CO_2{'\}'}$ emissions are $10.6\;\mathrm{'\{'}GtC/year{'\}'}$. The oceans absorb
-$2.5\;\mathrm{'\{'}GtC/year{'\}'}$ and the terrestrial biosphere absorbs $3.0\;\mathrm{'\{'}GtC/year{'\}'}$. Calculate
+Global anthropogenic $\mathrm{CO_2{}$ emissions are $10.6\;\mathrm{GtC/year{}$. The oceans absorb
+$2.5\;\mathrm{GtC/year{}$ and the terrestrial biosphere absorbs $3.0\;\mathrm{GtC/year{}$. Calculate
 the atmospheric accumulation rate and the proportion of emissions remaining in the atmosphere.
 
-Total natural sinks $= 2.5 + 3.0 = 5.5\;\mathrm{'\{'}GtC/year{'\}'}$
+Total natural sinks $= 2.5 + 3.0 = 5.5\;\mathrm{GtC/year{}$
 
-Atmospheric accumulation $= 10.6 - 5.5 = 5.1\;\mathrm{'\{'}GtC/year{'\}'}$
+Atmospheric accumulation $= 10.6 - 5.5 = 5.1\;\mathrm{GtC/year{}$
 
 Proportion remaining in atmosphere $= \frac{5.1}{10.6} \times 100 \approx 48\%$
 
@@ -340,7 +340,7 @@ multiple pathways.
 Climate change increases flood risk through several interconnected pathways:
 
 1. **Increased rainfall intensity**: the Clausius-Clapeyron relation predicts approximately $7\%$
-   more atmospheric water vapour per $1^{\circ}\mathrm{'\{'}C{'\}'}$ of warming, leading to more intense
+   more atmospheric water vapour per $1^{\circ}\mathrm{C{}$ of warming, leading to more intense
    rainfall events that exceed infiltration capacity.
 
 2. **Changed seasonality**: earlier snowmelt and more winter rainfall (rather than snow) concentrate
@@ -362,18 +362,18 @@ channel capacity and increasing flood levels.
 <details>
 <summary>Problem 5: Ocean Acidification</summary>
 
-Atmospheric $\mathrm{'\{'}CO_2{'\}'}$ dissolves in seawater according to the reaction:
-$\mathrm{'\{'}CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{'\}'}$. Explain the
+Atmospheric $\mathrm{CO_2{}$ dissolves in seawater according to the reaction:
+$\mathrm{CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{}$. Explain the
 consequences for marine organisms and ecosystems.
 
-When $\mathrm{'\{'}CO_2{'\}'}$ dissolves in seawater, it forms carbonic acid ($\mathrm{'\{'}H_2CO_3{'\}'}$), which
-dissociates to release hydrogen ions ($\mathrm{'\{'}H^+{'\}'}$), decreasing pH (increasing acidity). The
-increased availability of $\mathrm{'\{'}H^+{'\}'}$ also shifts the carbonate equilibrium:
+When $\mathrm{CO_2{}$ dissolves in seawater, it forms carbonic acid ($\mathrm{H_2CO_3{}$), which
+dissociates to release hydrogen ions ($\mathrm{H^+{}$), decreasing pH (increasing acidity). The
+increased availability of $\mathrm{H^+{}$ also shifts the carbonate equilibrium:
 
 $$\mathrm{H^+ + CO_3^{2-} \rightleftharpoons HCO_3^-}$$
 
 This reduces the concentration of carbonate ions ($\mathrm{CO_3^{2-}}$), which are essential for
-calcifying organisms to build their shells and skeletons from calcium carbonate ($\mathrm{'\{'}CaCO_3{'\}'}$).
+calcifying organisms to build their shells and skeletons from calcium carbonate ($\mathrm{CaCO_3{}$).
 
 Consequences:
 
@@ -384,6 +384,6 @@ Consequences:
   maintain their shells in more acidic water, with impacts on survival and reproduction.
 - **Food web effects**: calcifying plankton form the base of many marine food webs; their decline
   would cascade through the ecosystem, affecting fish stocks and marine mammals.
-- **Behavioural effects**: experiments suggest that elevated $\mathrm{'\{'}CO_2{'\}'}$ can impair the
+- **Behavioural effects**: experiments suggest that elevated $\mathrm{CO_2{}$ can impair the
 behaviour of some fish species, reducing predator avoidance and navigation ability.
 </details>

@@ -182,9 +182,9 @@ False
 
 Given an exact value $x$ and an approximate value $\tilde{x}$:
 
-$$\mathrm{'\{'}Absolute Error{'\}'} = |x - \tilde{x}|$$
+$$\mathrm{Absolute Error{} = |x - \tilde{x}|$$
 
-$$\mathrm{'\{'}Relative Error{'\}'} = \frac{|x - \tilde{x}|}{|x|}$$
+$$\mathrm{Relative Error{} = \frac{|x - \tilde{x}|}{|x|}$$
 
 **Machine epsilon** ($\epsilon$) is the smallest number such that $1 + \epsilon \gt{} 1$ in
 floating-point arithmetic. For IEEE 754 single precision,

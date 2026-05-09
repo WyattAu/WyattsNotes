@@ -39,8 +39,8 @@ A **language** $L$ over $\Sigma$ is any subset of $\Sigma^*$. The empty language
 
 **Operations on languages:**
 
-- Union: $L_1 \cup L_2 = \{w : w \in L_1 \mathrm{'\{'} or {'\}'} w \in L_2\}$.
-- Intersection: $L_1 \cap L_2 = \{w : w \in L_1 \mathrm{'\{'} and {'\}'} w \in L_2\}$.
+- Union: $L_1 \cup L_2 = \{w : w \in L_1 \mathrm{ or {} w \in L_2\}$.
+- Intersection: $L_1 \cap L_2 = \{w : w \in L_1 \mathrm{ and {} w \in L_2\}$.
 - Concatenation: $L_1 \cdot L_2 = \{w_1 w_2 : w_1 \in L_1, w_2 \in L_2\}$.
 - Kleene star: $L^* = \{\varepsilon\} \cup L \cup L^2 \cup \cdots$.
 - Complement: $\overline{L} = \Sigma^* \setminus L$.
@@ -52,14 +52,14 @@ organised by complexity class.
 
 **Finite languages** (always regular):
 
-- $L_1 = \{\mathrm{'\{'}true{'\}'}, \mathrm{'\{'}false{'\}'}\}$ — the set of Boolean literals.
+- $L_1 = \{\mathrm{true{}, \mathrm{false{}\}$ — the set of Boolean literals.
 - $L_2 = \{w \in \{0,1\}^* : |w| \leq 3\}$ — all binary strings of length at most 3.
 
 **Regular languages** (decidable by finite automata):
 
-- $L_3 = \{w \in \{0,1\}^* : w \mathrm{'\{'} contains the substring {'\}'} 101\}$.
-- $L_4 = \{w \in \{0,1\}^* : w \mathrm{'\{'} has an even number of {'\}'} 1\mathrm{'\{'}s{'\}'}\}$.
-- $L_5 = \{w \in \{0,1\}^* : w \mathrm{'\{'} interpreted in binary is divisible by {'\}'} 3\}$.
+- $L_3 = \{w \in \{0,1\}^* : w \mathrm{ contains the substring {} 101\}$.
+- $L_4 = \{w \in \{0,1\}^* : w \mathrm{ has an even number of {} 1\mathrm{s{}\}$.
+- $L_5 = \{w \in \{0,1\}^* : w \mathrm{ interpreted in binary is divisible by {} 3\}$.
 
 **Context-free but not regular:**
 
@@ -70,16 +70,16 @@ organised by complexity class.
 **Decidable but not context-free:**
 
 - $L_9 = \{a^n b^n c^n : n \geq 0\}$.
-- $L_{10} = \{\langle G \rangle : G \mathrm{'\{'} is a connected undirected graph{'\}'}\}$.
+- $L_{10} = \{\langle G \rangle : G \mathrm{ is a connected undirected graph{}\}$.
 
 **Undecidable (Turing-recognisable):**
 
-- $A_{\mathrm{'\{'}TM{'\}'}} = \{\langle M, w \rangle : M \mathrm{'\{'} accepts {'\}'} w\}$ — the acceptance problem.
-- $\mathrm{'\{'}HALT{'\}'}_{\mathrm{'\{'}TM{'\}'}} = \{\langle M, w \rangle : M \mathrm{'\{'} halts on {'\}'} w\}$.
+- $A_{\mathrm{TM{}} = \{\langle M, w \rangle : M \mathrm{ accepts {} w\}$ — the acceptance problem.
+- $\mathrm{HALT{}_{\mathrm{TM{}} = \{\langle M, w \rangle : M \mathrm{ halts on {} w\}$.
 
 **Not even Turing-recognisable:**
 
-- $\overline{A_{\mathrm{'\{'}TM{'\}'}}}$ — the complement of the acceptance problem.
+- $\overline{A_{\mathrm{TM{}}}$ — the complement of the acceptance problem.
 
 This hierarchy illustrates the central theme of the course: as we move to more expressive language
 classes, the corresponding machines become more powerful, but certain properties (decidability,
@@ -111,7 +111,7 @@ of Turing-recognisable languages is a countable subset of the uncountable set of
 **Cantor's diagonalisation.** The classic proof of Theorem 1.1 uses diagonalisation: assume the
 set of all languages is countable, list them as $L_1, L_2, L_3, \ldots$, and construct a language
 $D$ that differs from each $L_i$ on the $i$-th string. Then $D$ is not in the list — contradiction.
-This technique reappears in the proof of undecidability of $A_{\mathrm{'\{'}TM{'\}'}}$ (Section 5.2).
+This technique reappears in the proof of undecidability of $A_{\mathrm{TM{}}$ (Section 5.2).
 
 ## 2. Regular Languages
 
@@ -164,9 +164,9 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_0\})$$
 | $q_1$ | $q_2$              | $q_0$              |
 | $q_2$ | $q_1$              | $q_2$              |
 
-*Correctness.* By induction on input length. Base: $x = \varepsilon$, $\mathrm{'\{'}val{'\}'}(\varepsilon) = 0$,
-DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm{'\{'}val{'\}'}(x) \bmod 3$),
-then reading $b$ moves to $q_{(2r+b) \bmod 3}$, which equals $q_{\mathrm{'\{'}val{'\}'}(xb) \bmod 3}$.
+*Correctness.* By induction on input length. Base: $x = \varepsilon$, $\mathrm{val{}(\varepsilon) = 0$,
+DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm{val{}(x) \bmod 3$),
+then reading $b$ moves to $q_{(2r+b) \bmod 3}$, which equals $q_{\mathrm{val{}(xb) \bmod 3}$.
 $\blacksquare$
 
 </details>
@@ -197,8 +197,8 @@ in $q_0$ or move to $q_1$.
 $D = (Q', \Sigma, \delta', q_0', F')$ where:
 
 - $Q' = \mathcal{'\{'}P{'\}'}(Q)$ (each state of $D$ is a subset of states of $N$).
-- $q_0' = \varepsilon\mathrm{'\{'}-closure{'\}'}(\{q_0\})$.
-- $\delta'(S, a) = \varepsilon\mathrm{'\{'}-closure{'\}'}(\bigcup_{q \in S} \delta(q, a))$ for $S \subseteq Q$,
+- $q_0' = \varepsilon\mathrm{-closure{}(\{q_0\})$.
+- $\delta'(S, a) = \varepsilon\mathrm{-closure{}(\bigcup_{q \in S} \delta(q, a))$ for $S \subseteq Q$,
   $a \in \Sigma$.
 - $F' = \{S \subseteq Q : S \cap F \neq \emptyset\}$.
 
@@ -520,7 +520,7 @@ $$S \to aAb \mid bAa \mid aSa \mid bSb \mid a \mid b, \quad A \to aAa \mid aAb \
 Here $S$ generates non-palindromes and $A$ generates arbitrary strings of length $\geq 1$.
 
 <details>
-<summary>Worked Example: CFG for $\{a^i b^j : 2i = j \mathrm{'\{'} or {'\}'} 2j = i\}$</summary>
+<summary>Worked Example: CFG for $\{a^i b^j : 2i = j \mathrm{ or {} 2j = i\}$</summary>
 
 $$S \to S_1 \mid S_2, \quad S_1 \to aS_1bb \mid \varepsilon, \quad S_2 \to aaS_2b \mid \varepsilon$$
 
@@ -546,14 +546,14 @@ A **parse tree** (derivation tree) for a string $w$ according to grammar $G$ is 
 A CFG is **ambiguous** if some string in its language has two or more distinct parse trees (equivalently,
 two or more leftmost derivations or two or more rightmost derivations).
 
-**Example (ambiguous).** $S \to S + S \mid S \times S \mid \mathrm{'\{'}id{'\}'}$. The string
-$\mathrm{'\{'}id{'\}'} + \mathrm{'\{'}id{'\}'} \times \mathrm{'\{'}id{'\}'}$ has two parse trees:
+**Example (ambiguous).** $S \to S + S \mid S \times S \mid \mathrm{id{}$. The string
+$\mathrm{id{} + \mathrm{id{} \times \mathrm{id{}$ has two parse trees:
 $S + (S \times S)$ and $(S + S) \times S$.
 
 **Removing ambiguity.** Some ambiguous grammars can be made unambiguous by rewriting the productions
 to enforce a particular evaluation order. For the arithmetic expression grammar:
 
-$$E \to E + T \mid T, \quad T \to T \times F \mid F, \quad F \to (E) \mid \mathrm{'\{'}id{'\}'}$$
+$$E \to E + T \mid T, \quad T \to T \times F \mid F, \quad F \to (E) \mid \mathrm{id{}$$
 
 This grammar is unambiguous and enforces the standard precedence ($\times$ before $+$) and left
 associativity.
@@ -574,7 +574,7 @@ Hence $a^{n+1} b^{n+1}$ has exactly one parse tree. $\blacksquare$
 
 </details>
 
-**Example.** $L = \{a^i b^j c^k : i = j \mathrm{'\{'} or {'\}'} j = k\}$ is inherently ambiguous. (Proof omitted;
+**Example.** $L = \{a^i b^j c^k : i = j \mathrm{ or {} j = k\}$ is inherently ambiguous. (Proof omitted;
 intuitively, any grammar must have two competing mechanisms for the two conditions, and these
 interfere.)
 
@@ -783,7 +783,7 @@ whether $w \in L(G)$ in $O(n^3 \cdot |G|)$ time.
 **Algorithm.** Construct a table $T[i, j]$ for $1 \leq i \leq j \leq n$, where $T[i, j]$ is the set
 of variables that can derive the substring $w_i w_{i+1} \cdots w_j$.
 
-1. **Base case** ($j = 1$): $T[i, i] = \{A : A \to w_i \mathrm{'\{'} is a rule in {'\}'} G\}$.
+1. **Base case** ($j = 1$): $T[i, i] = \{A : A \to w_i \mathrm{ is a rule in {} G\}$.
 2. **Recursive case** ($j \gt{} 1$): For each split $k$ with $i \leq k \lt{} j$:
    $$T[i, j] \mathrel{{:}{=}} T[i, j] \cup \{A : A \to BC \in R, B \in T[i, k], C \in T[k+1, j]\}$$
 3. **Answer:** $w \in L(G)$ iff $S \in T[1, n]$.
@@ -824,25 +824,25 @@ where $B \to b$ and $C \to a$.
 
 ### 4.1 Definition
 
-A **Turing machine (TM)** is a 7-tuple $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{\mathrm{'\{'}accept{'\}'}},
-q_{\mathrm{'\{'}reject{'\}'}})$ where:
+A **Turing machine (TM)** is a 7-tuple $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{\mathrm{accept{}},
+q_{\mathrm{reject{}})$ where:
 
 - $Q$ is a finite set of states.
 - $\Sigma$ is the input alphabet (does not contain the blank symbol $\sqcup$).
 - $\Gamma$ is the tape alphabet, $\sqcup \in \Gamma$, $\Sigma \subseteq \Gamma$.
 - $\delta : Q \times \Gamma \to Q \times \Gamma \times \{L, R\}$ is the transition function.
 - $q_0 \in Q$ is the start state.
-- $q_{\mathrm{'\{'}accept{'\}'}} \in Q$ is the accept state.
-- $q_{\mathrm{'\{'}reject{'\}'}} \in Q$ is the reject state ($q_{\mathrm{'\{'}accept{'\}'}} \neq q_{\mathrm{'\{'}reject{'\}'}}$).
+- $q_{\mathrm{accept{}} \in Q$ is the accept state.
+- $q_{\mathrm{reject{}} \in Q$ is the reject state ($q_{\mathrm{accept{}} \neq q_{\mathrm{reject{}}$).
 
 The TM has an infinite tape (initially containing the input followed by blanks), a read/write head
 that moves left or right, and a finite control. At each step, based on the current state and symbol
 under the head, it writes a symbol, moves the head, and changes state.
 
-$M$ **accepts** input $w$ if the computation halts in $q_{\mathrm{'\{'}accept{'\}'}}$. $M$ **rejects** $w$ if
-it halts in $q_{\mathrm{'\{'}reject{'\}'}}$. $M$ **loops** if it never halts.
+$M$ **accepts** input $w$ if the computation halts in $q_{\mathrm{accept{}}$. $M$ **rejects** $w$ if
+it halts in $q_{\mathrm{reject{}}$. $M$ **loops** if it never halts.
 
-The **language recognised** by $M$ is $L(M) = \{w : M \mathrm{'\{'} accepts {'\}'} w\}$.
+The **language recognised** by $M$ is $L(M) = \{w : M \mathrm{ accepts {} w\}$.
 
 A language is **Turing-recognisable** (recursively enumerable) if some TM recognises it. A language
 is **decidable** if some TM decides it (halts on all inputs, accepting or rejecting).
@@ -921,7 +921,7 @@ Design a single-tape TM that decides $L = \{0^n 1^n : n \geq 0\}$.
 
 **Idea:** Repeatedly cross off one `0` and one `1`. If all symbols are crossed off, accept.
 
-$M = (Q, \{0, 1\}, \{0, 1, \mathrm{'\{'}x{'\}'}, \sqcup\}, \delta, q_0, q_{\mathrm{'\{'}accept{'\}'}}, q_{\mathrm{'\{'}reject{'\}'}})$.
+$M = (Q, \{0, 1\}, \{0, 1, \mathrm{x{}, \sqcup\}, \delta, q_0, q_{\mathrm{accept{}}, q_{\mathrm{reject{}})$.
 
 **Key transitions:**
 
@@ -941,9 +941,9 @@ the machine rejects. $\blacksquare$
 </details>
 
 <details>
-<summary>Worked Example: TM that decides $A_{\mathrm{'\{'}DFA{'\}'}}$</summary>
+<summary>Worked Example: TM that decides $A_{\mathrm{DFA{}}$</summary>
 
-Design a TM that decides $A_{\mathrm{'\{'}DFA{'\}'}} = \{\langle B, w \rangle : B \mathrm{'\{'} accepts {'\}'} w\}$.
+Design a TM that decides $A_{\mathrm{DFA{}} = \{\langle B, w \rangle : B \mathrm{ accepts {} w\}$.
 
 **Construction.** On input $\langle B, w \rangle$ where $B = (Q, \Sigma, \delta, q_0, F)$:
 
@@ -991,12 +991,12 @@ $\#$ remains, accept.
 
 **Algorithm:**
 
-1. Scan right to find the rightmost non-$\sqcup$, non-$\mathrm{'\{'}x{'\}'}$ symbol (call it $a$). If we
+1. Scan right to find the rightmost non-$\sqcup$, non-$\mathrm{x{}$ symbol (call it $a$). If we
    cross $\#$ on the way, note its position.
-2. Return to the leftmost non-$\sqcup$, non-$\mathrm{'\{'}x{'\}'}$ symbol (call it $b$).
+2. Return to the leftmost non-$\sqcup$, non-$\mathrm{x{}$ symbol (call it $b$).
 3. If $a \neq b$, reject.
-4. Cross off both $a$ and $b$ (write $\mathrm{'\{'}x{'\}'}$).
-5. Repeat until only $\#$ (and $\mathrm{'\{'}x{'\}'}$s) remain, then accept.
+4. Cross off both $a$ and $b$ (write $\mathrm{x{}$).
+5. Repeat until only $\#$ (and $\mathrm{x{}$s) remain, then accept.
 
 *Correctness.* If the input is $w\#w^R$, the first symbol of $w$ equals the last symbol of
 $w^R$ (which is the first symbol of $w$), the second equals the second-to-last, etc. Each
@@ -1011,36 +1011,36 @@ $\blacksquare$
 
 **Theorem 5.1.** The following languages are decidable:
 
-- $A_{\mathrm{'\{'}DFA{'\}'}} = \{\langle B, w \rangle : B \mathrm{'\{'} is a DFA that accepts {'\}'} w\}$.
-- $E_{\mathrm{'\{'}DFA{'\}'}} = \{\langle B \rangle : B \mathrm{'\{'} is a DFA with {'\}'} L(B) = \emptyset\}$.
-- $\mathrm{'\{'}EQ{'\}'}_{\mathrm{'\{'}DFA{'\}'}} = \{\langle A, B \rangle : A, B \mathrm{'\{'} are DFAs with {'\}'} L(A) = L(B)\}$.
-- $A_{\mathrm{'\{'}CFG{'\}'}} = \{\langle G, w \rangle : G \mathrm{'\{'} is a CFG that generates {'\}'} w\}$.
+- $A_{\mathrm{DFA{}} = \{\langle B, w \rangle : B \mathrm{ is a DFA that accepts {} w\}$.
+- $E_{\mathrm{DFA{}} = \{\langle B \rangle : B \mathrm{ is a DFA with {} L(B) = \emptyset\}$.
+- $\mathrm{EQ{}_{\mathrm{DFA{}} = \{\langle A, B \rangle : A, B \mathrm{ are DFAs with {} L(A) = L(B)\}$.
+- $A_{\mathrm{CFG{}} = \{\langle G, w \rangle : G \mathrm{ is a CFG that generates {} w\}$.
 
-*Proof (for $A_{\mathrm{'\{'}DFA{'\}'}}$).* Simulate $B$ on input $w$. This takes $O(|w|)$ steps and always halts.
+*Proof (for $A_{\mathrm{DFA{}}$).* Simulate $B$ on input $w$. This takes $O(|w|)$ steps and always halts.
 
-*Proof (for $E_{\mathrm{'\{'}DFA{'\}'}}$).* Mark the start state. Repeatedly mark states reachable by
+*Proof (for $E_{\mathrm{DFA{}}$).* Mark the start state. Repeatedly mark states reachable by
 transitions from already-marked states. After no more states can be marked, check if any accept state
 is marked. If not, $L(B) = \emptyset$.
 
-*Proof (for $\mathrm{'\{'}EQ{'\}'}_{\mathrm{'\{'}DFA{'\}'}}$).* Use the product construction to build a DFA for
+*Proof (for $\mathrm{EQ{}_{\mathrm{DFA{}}$).* Use the product construction to build a DFA for
 $L(A) \triangle L(B) = (L(A) \cap \overline{L(B)}) \cup (\overline{L(A)} \cap L(B))$. Test if this
-DFA accepts any string (using the algorithm for $E_{\mathrm{'\{'}DFA{'\}'}}$). $\blacksquare$
+DFA accepts any string (using the algorithm for $E_{\mathrm{DFA{}}$). $\blacksquare$
 
 **Additional decidable problems:**
 
-- $A_{\mathrm{'\{'}REX{'\}'}} = \{\langle R, w \rangle : R \mathrm{'\{'} is a regex and {'\}'} w \in L(R)\}$ — convert $R$ to a DFA, then decide $A_{\mathrm{'\{'}DFA{'\}'}}$.
-- $E_{\mathrm{'\{'}CFG{'\}'}} = \{\langle G \rangle : L(G) = \emptyset\}$ — test all derivations up to length $2^{|V|}$.
-- $\mathrm{'\{'}INF{'\}'}_{\mathrm{'\{'}CFL{'\}'}} = \{\langle G \rangle : L(G) \mathrm{'\{'} is infinite{'\}'}\}$ — check if any variable has a self-embedding derivation.
+- $A_{\mathrm{REX{}} = \{\langle R, w \rangle : R \mathrm{ is a regex and {} w \in L(R)\}$ — convert $R$ to a DFA, then decide $A_{\mathrm{DFA{}}$.
+- $E_{\mathrm{CFG{}} = \{\langle G \rangle : L(G) = \emptyset\}$ — test all derivations up to length $2^{|V|}$.
+- $\mathrm{INF{}_{\mathrm{CFL{}} = \{\langle G \rangle : L(G) \mathrm{ is infinite{}\}$ — check if any variable has a self-embedding derivation.
 
 ### 5.2 The Halting Problem
 
-**Theorem 5.2.** $A_{\mathrm{'\{'}TM{'\}'}} = \{\langle M, w \rangle : M \mathrm{'\{'} is a TM and {'\}'} M \mathrm{'\{'} accepts {'\}'} w\}$
+**Theorem 5.2.** $A_{\mathrm{TM{}} = \{\langle M, w \rangle : M \mathrm{ is a TM and {} M \mathrm{ accepts {} w\}$
 is Turing-recognisable but undecidable.
 
 *Proof of recognisability.* Simulate $M$ on $w$. If $M$ accepts, accept. If $M$ rejects, reject.
-This recognises $A_{\mathrm{'\{'}TM{'\}'}}$. $\blacksquare$
+This recognises $A_{\mathrm{TM{}}$. $\blacksquare$
 
-*Proof of undecidability (by contradiction).* Assume a decider $H$ for $A_{\mathrm{'\{'}TM{'\}'}}$ exists.
+*Proof of undecidability (by contradiction).* Assume a decider $H$ for $A_{\mathrm{TM{}}$ exists.
 Construct a TM $D$ that on input $\langle M \rangle$:
 
 1. Run $H$ on $\langle M, \langle M \rangle \rangle$.
@@ -1054,11 +1054,11 @@ Consider $D$ on input $\langle D \rangle$:
 
 Therefore $H$ cannot exist. $\blacksquare$
 
-**Theorem 5.2a.** $\overline{A_{\mathrm{'\{'}TM{'\}'}}}$ is not Turing-recognisable.
+**Theorem 5.2a.** $\overline{A_{\mathrm{TM{}}}$ is not Turing-recognisable.
 
-*Proof.* If $\overline{A_{\mathrm{'\{'}TM{'\}'}}}$ were Turing-recognisable, then since $A_{\mathrm{'\{'}TM{'\}'}}$ is
-also Turing-recognisable, $A_{\mathrm{'\{'}TM{'\}'}}$ would be decidable (run both recognisers in parallel; one
-must accept). But $A_{\mathrm{'\{'}TM{'\}'}}$ is undecidable. Contradiction. $\blacksquare$
+*Proof.* If $\overline{A_{\mathrm{TM{}}}$ were Turing-recognisable, then since $A_{\mathrm{TM{}}$ is
+also Turing-recognisable, $A_{\mathrm{TM{}}$ would be decidable (run both recognisers in parallel; one
+must accept). But $A_{\mathrm{TM{}}$ is undecidable. Contradiction. $\blacksquare$
 
 ### 5.3 Reductions and Undecidability
 
@@ -1072,24 +1072,24 @@ computable, $A$ is decidable. $\blacksquare$
 
 **Corollary 5.4.** If $A \leq_m B$ and $A$ is undecidable, then $B$ is undecidable.
 
-**Applications.** Using reductions from $A_{\mathrm{'\{'}TM{'\}'}}$, we can prove many problems undecidable:
+**Applications.** Using reductions from $A_{\mathrm{TM{}}$, we can prove many problems undecidable:
 
 | Language | Description | Reduction from |
 | -------- | ----------- | -------------- |
-| $\mathrm{'\{'}HALT{'\}'}_{\mathrm{'\{'}TM{'\}'}}$ | $\{M, w : M \mathrm{'\{'} halts on {'\}'} w\}$ | $A_{\mathrm{'\{'}TM{'\}'}}$ |
-| $E_{\mathrm{'\{'}TM{'\}'}}$ | $\{M : L(M) = \emptyset\}$ | $A_{\mathrm{'\{'}TM{'\}'}}$ |
-| $\mathrm{'\{'}REGULAR{'\}'}_{\mathrm{'\{'}TM{'\}'}}$ | $\{M : L(M) \mathrm{'\{'} is regular{'\}'}\}$ | $A_{\mathrm{'\{'}TM{'\}'}}$ |
-| $\mathrm{'\{'}EQ{'\}'}_{\mathrm{'\{'}TM{'\}'}}$ | $\{M_1, M_2 : L(M_1) = L(M_2)\}$ | $E_{\mathrm{'\{'}TM{'\}'}}$ |
+| $\mathrm{HALT{}_{\mathrm{TM{}}$ | $\{M, w : M \mathrm{ halts on {} w\}$ | $A_{\mathrm{TM{}}$ |
+| $E_{\mathrm{TM{}}$ | $\{M : L(M) = \emptyset\}$ | $A_{\mathrm{TM{}}$ |
+| $\mathrm{REGULAR{}_{\mathrm{TM{}}$ | $\{M : L(M) \mathrm{ is regular{}\}$ | $A_{\mathrm{TM{}}$ |
+| $\mathrm{EQ{}_{\mathrm{TM{}}$ | $\{M_1, M_2 : L(M_1) = L(M_2)\}$ | $E_{\mathrm{TM{}}$ |
 
-**Example reduction.** $A_{\mathrm{'\{'}TM{'\}'}} \leq_m \mathrm{'\{'}HALT{'\}'}_{\mathrm{'\{'}TM{'\}'}}$.
+**Example reduction.** $A_{\mathrm{TM{}} \leq_m \mathrm{HALT{}_{\mathrm{TM{}}$.
 
 *Proof.* Given $\langle M, w \rangle$, construct a TM $M'$ that on input $x$: simulates $M$ on $w$.
-If $M$ accepts, accept. If $M$ rejects, loop. Then $\langle M, w \rangle \in A_{\mathrm{'\{'}TM{'\}'}}$ iff
-$M'$ halts on some input (any input), iff $\langle M' \rangle \in \mathrm{'\{'}HALT{'\}'}_{\mathrm{'\{'}TM{'\}'}}$.
+If $M$ accepts, accept. If $M$ rejects, loop. Then $\langle M, w \rangle \in A_{\mathrm{TM{}}$ iff
+$M'$ halts on some input (any input), iff $\langle M' \rangle \in \mathrm{HALT{}_{\mathrm{TM{}}$.
 $\blacksquare$
 
 <details>
-<summary>Worked Example: $A_{\mathrm{'\{'}TM{'\}'}} \leq_m E_{\mathrm{'\{'}TM{'\}'}}$</summary>
+<summary>Worked Example: $A_{\mathrm{TM{}} \leq_m E_{\mathrm{TM{}}$</summary>
 
 *Proof.* Given $\langle M, w \rangle$, construct a TM $M_w$ that on input $x$:
 1. Simulate $M$ on $w$.
@@ -1098,17 +1098,17 @@ $\blacksquare$
 
 Then $L(M_w) = \Sigma^*$ if $M$ accepts $w$, and $L(M_w) = \emptyset$ if $M$ does not accept $w$.
 
-Therefore: $\langle M, w \rangle \in A_{\mathrm{'\{'}TM{'\}'}}$ iff $L(M_w) \neq \emptyset$
-iff $\langle M_w \rangle \notin E_{\mathrm{'\{'}TM{'\}'}}$.
+Therefore: $\langle M, w \rangle \in A_{\mathrm{TM{}}$ iff $L(M_w) \neq \emptyset$
+iff $\langle M_w \rangle \notin E_{\mathrm{TM{}}$.
 
-The reduction $f(\langle M, w \rangle) = \langle M_w \rangle$ is computable. So if $E_{\mathrm{'\{'}TM{'\}'}}$
-were decidable, $\overline{E_{\mathrm{'\{'}TM{'\}'}}}$ would be decidable, and hence $A_{\mathrm{'\{'}TM{'\}'}}$
+The reduction $f(\langle M, w \rangle) = \langle M_w \rangle$ is computable. So if $E_{\mathrm{TM{}}$
+were decidable, $\overline{E_{\mathrm{TM{}}}$ would be decidable, and hence $A_{\mathrm{TM{}}$
 would be decidable — contradiction. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: $E_{\mathrm{'\{'}TM{'\}'}} \leq_m \mathrm{'\{'}EQ{'\}'}_{\mathrm{'\{'}TM{'\}'}}$</summary>
+<summary>Worked Example: $E_{\mathrm{TM{}} \leq_m \mathrm{EQ{}_{\mathrm{TM{}}$</summary>
 
 *Proof.* Given $\langle M \rangle$, construct two TMs:
 - $M_1$: on any input, immediately rejects. So $L(M_1) = \emptyset$.
@@ -1116,8 +1116,8 @@ would be decidable — contradiction. $\blacksquare$
 
 Then $L(M) = \emptyset$ iff $L(M_1) = L(M_2)$.
 
-Therefore $\langle M \rangle \in E_{\mathrm{'\{'}TM{'\}'}}$ iff $\langle M_1, M_2 \rangle \in \mathrm{'\{'}EQ{'\}'}_{\mathrm{'\{'}TM{'\}'}}$.
-If $\mathrm{'\{'}EQ{'\}'}_{\mathrm{'\{'}TM{'\}'}}$ were decidable, $E_{\mathrm{'\{'}TM{'\}'}}$ would be decidable — contradiction.
+Therefore $\langle M \rangle \in E_{\mathrm{TM{}}$ iff $\langle M_1, M_2 \rangle \in \mathrm{EQ{}_{\mathrm{TM{}}$.
+If $\mathrm{EQ{}_{\mathrm{TM{}}$ were decidable, $E_{\mathrm{TM{}}$ would be decidable — contradiction.
 $\blacksquare$
 
 </details>
@@ -1135,7 +1135,7 @@ $M_0$ with $L(M_0) \in P$ and a TM $M_1$ with $L(M_1) \notin P$. Given an arbitr
 $w$, construct $M_w$ that on input $x$: first simulates $M$ on $w$, then simulates $M_0$ on $x$. If
 $M$ accepts $w$, then $L(M_w) = L(M_0) \in P$; if $M$ does not accept $w$, $L(M_w) = \emptyset$.
 If $\emptyset \notin P$, then $M_w \in P$ iff $M$ accepts $w$, so deciding $P$ would decide
-$A_{\mathrm{'\{'}TM{'\}'}}$. The case $\emptyset \in P$ is similar. $\blacksquare$
+$A_{\mathrm{TM{}}$. The case $\emptyset \in P$ is similar. $\blacksquare$
 
 **Corollary.** The following are undecidable: "Does $M$ accept at least one string?", "Is $L(M)$
 finite?", "Is $L(M)$ regular?", "Is $L(M)$ context-free?"
@@ -1156,7 +1156,7 @@ that:
 
 $$\alpha_{i_1} \alpha_{i_2} \cdots \alpha_{i_m} = \beta_{i_1} \beta_{i_2} \cdots \beta_{i_m}$$
 
-The **PCP language** is $\mathrm{'\{'}PCP{'\}'} = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm{'\{'} have a solution{'\}'}\}$.
+The **PCP language** is $\mathrm{PCP{} = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm{ have a solution{}\}$.
 
 **Example.** $\alpha = (a, ab, bba)$, $\beta = (ba, aa, bb)$. The sequence $(2, 1, 1, 3)$ gives
 $ab \cdot a \cdot a \cdot bba = abaabba$ and $aa \cdot ba \cdot ba \cdot bb = aabababb$ — not equal.
@@ -1184,12 +1184,12 @@ Not equal. Finding solutions to PCP instances can be very difficult — there is
 
 **Theorem 5.6.** PCP is undecidable.
 
-*Proof (sketch).* Reduce from $A_{\mathrm{'\{'}TM{'\}'}}$. Given TM $M$ and input $w$, construct a PCP instance
+*Proof (sketch).* Reduce from $A_{\mathrm{TM{}}$. Given TM $M$ and input $w$, construct a PCP instance
 whose tiles encode the computation history of $M$ on $w$. The tiles are designed so that a matching
 sequence corresponds to a valid accepting computation: the first tile starts the computation, middle
 tiles enforce that each configuration follows from the previous by a valid transition, and the last
 tile allows termination only if an accept state is reached. Thus the PCP instance has a solution iff
-$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_{\mathrm{'\{'}TM{'\}'}}$ would
+$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_{\mathrm{TM{}}$ would
 be decidable — contradiction. $\blacksquare$
 
 **Modified PCP (MPCP).** In the modified version, the first tile used must be tile 1. MPCP is also
@@ -1203,7 +1203,7 @@ $O \subseteq \Sigma^*$. In addition to its ordinary transitions, $M^O$ may enter
 "query state," write a string $q$ on a query tape, and enter an "answer state" where the tape
 contains `1` if $q \in O$ and `0` if $q \notin O$. The oracle answers in one step.
 
-**Definition.** $A^O = \{w : M^O \mathrm{'\{'} accepts {'\}'} w\}$ for a fixed oracle TM $M$ and oracle $O$.
+**Definition.** $A^O = \{w : M^O \mathrm{ accepts {} w\}$ for a fixed oracle TM $M$ and oracle $O$.
 
 **Theorem 5.7.** There exists an oracle $A$ such that $P^A \neq NP^A$, and an oracle $B$ such
 that $P^B = NP^B$.
@@ -1213,7 +1213,7 @@ non-relativising techniques — proof methods that do not carry over in the pres
 
 **The Turing jump.** Given a language $A$, define the **halting problem relative to $A$**:
 
-$$A' = \{\langle M^A, w \rangle : M^A \mathrm{'\{'} accepts {'\}'} w\}$$
+$$A' = \{\langle M^A, w \rangle : M^A \mathrm{ accepts {} w\}$$
 
 **Theorem 5.8.** $A' \not\leq_T A$ (i.e., $A'$ is strictly more difficult than $A$ under Turing
 reductions).
@@ -1249,7 +1249,7 @@ to read all $k$ heads, then left to right again to update them. This costs $O(t(
 step. Over $t(n)$ steps, the total is $O(t(n)^2)$. $\blacksquare$
 
 **Theorem 6.1a (Time Hierarchy Theorem).** If $t_1, t_2$ are time-constructible functions with
-$t_1(n) \log t_1(n) = o(t_2(n))$, then $\mathrm{'\{'}TIME{'\}'}(t_1(n)) \subsetneq \mathrm{'\{'}TIME{'\}'}(t_2(n))$.
+$t_1(n) \log t_1(n) = o(t_2(n))$, then $\mathrm{TIME{}(t_1(n)) \subsetneq \mathrm{TIME{}(t_2(n))$.
 
 *Proof (idea).* Use diagonalisation. Construct a TM $D$ that on input $x$ of length $n$:
 1. Compute $t_2(n)$ (possible since $t_2$ is time-constructible).
@@ -1260,17 +1260,17 @@ $t_1(n) \log t_1(n) = o(t_2(n))$, then $\mathrm{'\{'}TIME{'\}'}(t_1(n)) \subsetn
 $D$ runs in time $O(t_2(n))$ and differs from every TM that runs in time $O(t_1(n))$ on at least
 one input. $\blacksquare$
 
-**Corollary.** $\mathrm{'\{'}P{'\}'} \subsetneq \mathrm{'\{'}EXPTIME{'\}'}$.
+**Corollary.** $\mathrm{P{} \subsetneq \mathrm{EXPTIME{}$.
 
-**Definition.** $\mathrm{'\{'}TIME{'\}'}(t(n)) = \{L : L \mathrm{'\{'} is decided by a deterministic TM in {'\}'} O(t(n))\}$.
+**Definition.** $\mathrm{TIME{}(t(n)) = \{L : L \mathrm{ is decided by a deterministic TM in {} O(t(n))\}$.
 
-**Definition.** $\mathrm{'\{'}NTIME{'\}'}(t(n)) = \{L : L \mathrm{'\{'} is decided by a nondeterministic TM in {'\}'} O(t(n))\}$.
+**Definition.** $\mathrm{NTIME{}(t(n)) = \{L : L \mathrm{ is decided by a nondeterministic TM in {} O(t(n))\}$.
 
 ### 6.2 The Class P
 
-$$\mathrm{'\{'}P{'\}'} = \bigcup_{k \geq 1} \mathrm{'\{'}TIME{'\}'}(n^k)$$
+$$\mathrm{P{} = \bigcup_{k \geq 1} \mathrm{TIME{}(n^k)$$
 
-$\mathrm{'\{'}P{'\}'}$ is the class of languages decidable in polynomial time by a deterministic TM. This
+$\mathrm{P{}$ is the class of languages decidable in polynomial time by a deterministic TM. This
 captures the notion of "efficiently solvable."
 
 **Examples of problems in P:**
@@ -1283,12 +1283,12 @@ captures the notion of "efficiently solvable."
 
 ### 6.3 The Class NP
 
-$$\mathrm{'\{'}NP{'\}'} = \bigcup_{k \geq 1} \mathrm{'\{'}NTIME{'\}'}(n^k)$$
+$$\mathrm{NP{} = \bigcup_{k \geq 1} \mathrm{NTIME{}(n^k)$$
 
 **Equivalent definition.** A language $L$ is in NP if there exists a polynomial-time verifier $V$
 and a polynomial $p$ such that:
 
-$$L = \{w : \exists c \mathrm{'\{'} with {'\}'} |c| \leq p(|w|) \mathrm{'\{'} and {'\}'} V(w, c) = \mathrm{'\{'}accept{'\}'}\}$$
+$$L = \{w : \exists c \mathrm{ with {} |c| \leq p(|w|) \mathrm{ and {} V(w, c) = \mathrm{accept{}\}$$
 
 The string $c$ is called a **certificate** (or witness).
 
@@ -1301,42 +1301,42 @@ The string $c$ is called a **certificate** (or witness).
 - Graph 3-Colouring: certificate is the colouring.
 - Integer factorisation (decision version): certificate is a factor.
 
-**Theorem 6.2.** $\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'}$.
+**Theorem 6.2.** $\mathrm{P{} \subseteq \mathrm{NP{}$.
 
 *Proof.* Every deterministic polynomial-time algorithm is a special case of a nondeterministic one
 (with exactly one choice at each step). Alternatively, the certificate can be empty. $\blacksquare$
 
-**Theorem 6.2a.** If $A \leq_p B$ and $B \in \mathrm{'\{'}NP{'\}'}$, then $A \in \mathrm{'\{'}NP{'\}'}$.
+**Theorem 6.2a.** If $A \leq_p B$ and $B \in \mathrm{NP{}$, then $A \in \mathrm{NP{}$.
 
 *Proof.* Let $V_B$ be the polynomial-time verifier for $B$ and $f$ be the polynomial-time reduction.
 Then $V_A(w, c) = V_B(f(w), c)$ is a polynomial-time verifier for $A$. $\blacksquare$
 
-**Open question:** $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}NP{'\}'}$? This is the most important open problem in computer
-science. Most researchers believe $\mathrm{'\{'}P{'\}'} \neq \mathrm{'\{'}NP{'\}'}$.
+**Open question:** $\mathrm{P{} = \mathrm{NP{}$? This is the most important open problem in computer
+science. Most researchers believe $\mathrm{P{} \neq \mathrm{NP{}$.
 
-**Consequences of P = NP.** If $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}NP{'\}'}$, then every problem in NP (including SAT,
+**Consequences of P = NP.** If $\mathrm{P{} = \mathrm{NP{}$, then every problem in NP (including SAT,
 Travelling Salesman, graph colouring, protein folding, etc.) would have polynomial-time algorithms.
 This would revolutionise optimisation, cryptography (RSA and most public-key systems would be broken),
 and artificial intelligence. However, after decades of research, no polynomial-time algorithm has
-been found for any NP-complete problem, providing strong empirical evidence for $\mathrm{'\{'}P{'\}'} \neq \mathrm{'\{'}NP{'\}'}$.
+been found for any NP-complete problem, providing strong empirical evidence for $\mathrm{P{} \neq \mathrm{NP{}$.
 
 ### 6.4 NP-Completeness
 
 A language $B$ is **NP-complete** if:
 
-1. $B \in \mathrm{'\{'}NP{'\}'}$, and
-2. $A \leq_p B$ for every $A \in \mathrm{'\{'}NP{'\}'}$ (polynomial-time mapping reduction).
+1. $B \in \mathrm{NP{}$, and
+2. $A \leq_p B$ for every $A \in \mathrm{NP{}$ (polynomial-time mapping reduction).
 
 A language is **NP-hard** if condition (2) holds (it need not be in NP).
 
-**Theorem 6.3 (Cook-Levin, 1971).** $\mathrm{'\{'}SAT{'\}'}$ is NP-complete.
+**Theorem 6.3 (Cook-Levin, 1971).** $\mathrm{SAT{}$ is NP-complete.
 
 *Proof (detailed sketch).*
 
-1. $\mathrm{'\{'}SAT{'\}'} \in \mathrm{'\{'}NP{'\}'}$: a satisfying assignment is a polynomial-size certificate that
+1. $\mathrm{SAT{} \in \mathrm{NP{}$: a satisfying assignment is a polynomial-size certificate that
    can be verified in polynomial time.
 
-2. For any $L \in \mathrm{'\{'}NP{'\}'}$, there is a polynomial-time NTM $N$ that decides $L$ in time
+2. For any $L \in \mathrm{NP{}$, there is a polynomial-time NTM $N$ that decides $L$ in time
    $n^k$ for some $k$. Given input $w$ of length $n$, construct a Boolean formula $\phi_{N,w}$
    that is satisfiable iff $N$ accepts $w$.
 
@@ -1353,7 +1353,7 @@ A language is **NP-hard** if condition (2) holds (it need not be in NP).
    - **Start configuration:** Row 0 encodes $q_0$ at position 0, $w_1$ at position 1, etc.
    - **Transition correctness:** For every $2 \times 3$ window of the tableau, the bottom row
      must be a valid successor of the top row according to $N$'s transition function.
-   - **Acceptance:** Some cell in the last row contains $q_{\mathrm{'\{'}accept{'\}'}}$.
+   - **Acceptance:** Some cell in the last row contains $q_{\mathrm{accept{}}$.
 
    Each constraint can be expressed as a polynomial-size CNF formula (using standard encodings
    of "exactly one" and "window" constraints). The total formula has size $O(n^{2k})$, which is
@@ -1370,7 +1370,7 @@ that position $(0,0)$ contains the start state. The constraints enforce:
 
 - Row 0: $q_0$ at position 0, `0` at position 1, `1` at position 2, $\sqcup$ at position 3.
 - Transition windows: each $2 \times 3$ block must be consistent with $\delta$.
-- Row 3: at least one cell contains $q_{\mathrm{'\{'}accept{'\}'}}$.
+- Row 3: at least one cell contains $q_{\mathrm{accept{}}$.
 
 If $N$ accepts $w$, then the accepting computation path provides a satisfying assignment
 (the tableau records that path). If $\phi_{N,w}$ is satisfiable, the satisfying assignment
@@ -1380,7 +1380,7 @@ encodes a valid accepting computation.
 
 **Corollary 6.4.** If any NP-complete problem is in P, then P = NP.
 
-**Theorem 6.5.** If $A \leq_p B$ and $B \in \mathrm{'\{'}P{'\}'}$, then $A \in \mathrm{'\{'}P{'\}'}$.
+**Theorem 6.5.** If $A \leq_p B$ and $B \in \mathrm{P{}$, then $A \in \mathrm{P{}$.
 
 *Proof.* To decide $A$ on input $w$: compute $f(w)$ in polynomial time (the reduction), then decide
 $B$ on $f(w)$ in polynomial time. Total: polynomial time. $\blacksquare$
@@ -1462,13 +1462,13 @@ equal sum?
 
 **Reduction chain:**
 
-$$\mathrm{'\{'}SAT{'\}'} \to \mathrm{3\mathrm{'\{'}-{'\}'}SAT} \to \mathrm{'\{'}VertexCover{'\}'} \to \mathrm{'\{'}Clique{'\}'}$$
+$$\mathrm{SAT{} \to \mathrm{3\mathrm{-{}SAT} \to \mathrm{VertexCover{} \to \mathrm{Clique{}$$
 
-$$\mathrm{'\{'}SAT{'\}'} \to \mathrm{3\mathrm{'\{'}-{'\}'}SAT} \to \mathrm{'\{'}HamiltonianPath{'\}'}$$
+$$\mathrm{SAT{} \to \mathrm{3\mathrm{-{}SAT} \to \mathrm{HamiltonianPath{}$$
 
-$$\mathrm{'\{'}SAT{'\}'} \to \mathrm{3\mathrm{'\{'}-{'\}'}SAT} \to \mathrm{'\{'}SubsetSum{'\}'} \to \mathrm{'\{'}Partition{'\}'}$$
+$$\mathrm{SAT{} \to \mathrm{3\mathrm{-{}SAT} \to \mathrm{SubsetSum{} \to \mathrm{Partition{}$$
 
-$$\mathrm{'\{'}SAT{'\}'} \to \mathrm{3\mathrm{'\{'}-{'\}'}SAT} \to \mathrm{'\{'}SubsetSum{'\}'} \to \mathrm{'\{'}Partition{'\}'}$$
+$$\mathrm{SAT{} \to \mathrm{3\mathrm{-{}SAT} \to \mathrm{SubsetSum{} \to \mathrm{Partition{}$$
 
 <details>
 <summary>Worked Example: Reducing 3-SAT to Independent Set</summary>
@@ -1489,35 +1489,35 @@ satisfying assignment. $\blacksquare$
 
 ### 6.6 Space Complexity
 
-**Definition.** $\mathrm{'\{'}SPACE{'\}'}(s(n))$ is the class of languages decidable by a deterministic TM
-using $O(s(n))$ tape cells. $\mathrm{'\{'}NSPACE{'\}'}(s(n))$ is the nondeterministic analogue.
+**Definition.** $\mathrm{SPACE{}(s(n))$ is the class of languages decidable by a deterministic TM
+using $O(s(n))$ tape cells. $\mathrm{NSPACE{}(s(n))$ is the nondeterministic analogue.
 
 **Key classes:**
 
-- $\mathrm{'\{'}L{'\}'} = \mathrm{'\{'}SPACE{'\}'}(\log n)$ — logarithmic space.
-- $\mathrm{'\{'}NL{'\}'} = \mathrm{'\{'}NSPACE{'\}'}(\log n)$ — nondeterministic logarithmic space.
-- $\mathrm{'\{'}PSPACE{'\}'} = \bigcup_{k \geq 1} \mathrm{'\{'}SPACE{'\}'}(n^k)$.
+- $\mathrm{L{} = \mathrm{SPACE{}(\log n)$ — logarithmic space.
+- $\mathrm{NL{} = \mathrm{NSPACE{}(\log n)$ — nondeterministic logarithmic space.
+- $\mathrm{PSPACE{} = \bigcup_{k \geq 1} \mathrm{SPACE{}(n^k)$.
 
-**Theorem 6.6 (Savitch, 1970).** $\mathrm{'\{'}NSPACE{'\}'}(s(n)) \subseteq \mathrm{'\{'}SPACE{'\}'}(s(n)^2)$
+**Theorem 6.6 (Savitch, 1970).** $\mathrm{NSPACE{}(s(n)) \subseteq \mathrm{SPACE{}(s(n)^2)$
 for $s(n) \geq \log n$.
 
 *Proof (sketch).* To decide whether an NTM using space $s(n)$ accepts, we check reachability in the
 configuration graph. The graph has at most $N = |\Gamma|^{s(n)} \cdot s(n) \cdot |Q|$ nodes, where
 $|\Gamma|$ is the tape alphabet size and $|Q|$ the number of states. A deterministic TM can decide
-reachability using the recursive algorithm $\mathrm{'\{'}REACH{'\}'}(u, v, d)$ (can $u$ reach $v$ in at most
+reachability using the recursive algorithm $\mathrm{REACH{}(u, v, d)$ (can $u$ reach $v$ in at most
 $d$ steps?), which uses $O(\log N) = O(s(n))$ space and recurses to depth $O(\log N)$. Total space:
 $O(s(n) \cdot \log N) = O(s(n)^2)$. $\blacksquare$
 
-**Corollary 6.7.** $\mathrm{'\{'}PSPACE{'\}'} = \mathrm{'\{'}NPSPACE{'\}'}$.
+**Corollary 6.7.** $\mathrm{PSPACE{} = \mathrm{NPSPACE{}$.
 
-*Proof.* $\mathrm{'\{'}NPSPACE{'\}'} \subseteq \bigcup_k \mathrm{'\{'}NSPACE{'\}'}(n^k) \subseteq \bigcup_k \mathrm{'\{'}SPACE{'\}'}(n^{2k}) = \mathrm{'\{'}PSPACE{'\}'}$ by Savitch's theorem. $\blacksquare$
+*Proof.* $\mathrm{NPSPACE{} \subseteq \bigcup_k \mathrm{NSPACE{}(n^k) \subseteq \bigcup_k \mathrm{SPACE{}(n^{2k}) = \mathrm{PSPACE{}$ by Savitch's theorem. $\blacksquare$
 
-**NL-completeness.** A language $B$ is **NL-complete** if $B \in \mathrm{'\{'}NL{'\}'}$ and every
-$A \in \mathrm{'\{'}NL{'\}'}$ is log-space reducible to $B$.
+**NL-completeness.** A language $B$ is **NL-complete** if $B \in \mathrm{NL{}$ and every
+$A \in \mathrm{NL{}$ is log-space reducible to $B$.
 
-**Theorem 6.8 (Immerman--Szelepcsényi, 1987).** $\mathrm{'\{'}NL{'\}'} = \mathrm{'\{'}coNL{'\}'}$.
+**Theorem 6.8 (Immerman--Szelepcsényi, 1987).** $\mathrm{NL{} = \mathrm{coNL{}$.
 
-This is surprising because it is not known whether $\mathrm{'\{'}NP{'\}'} = \mathrm{'\{'}coNP{'\}'}$. The proof uses
+This is surprising because it is not known whether $\mathrm{NP{} = \mathrm{coNP{}$. The proof uses
 an inductive counting argument: given an NTM for $L$, construct an NTM for $\overline{L}$ that
 counts the number of reachable configurations.
 
@@ -1534,7 +1534,7 @@ reduces to it. Key PSPACE-complete problems:
 of $x_i$ and recurse. For $\forall x_i \phi$, similarly. At depth $n$, evaluate $\psi$. Each level
 uses $O(n)$ space to store the current assignment, giving $O(n^2)$ total.
 
-*Proof (hardness).* Reduce from any $L \in \mathrm{'\{'}PSPACE{'\}'}$ using the configuration graph. A
+*Proof (hardness).* Reduce from any $L \in \mathrm{PSPACE{}$ using the configuration graph. A
 computation of a PSPACE TM on input $w$ of length $n$ uses at most $p(n)$ cells for some
 polynomial $p$. The number of distinct configurations is at most $N = |\Gamma|^{p(n)} \cdot p(n) \cdot |Q|$,
 which is exponential. The statement "$M$ accepts $w$" can be expressed as: "there exists a
@@ -1548,9 +1548,9 @@ polynomial size. $\blacksquare$
 
 Evaluate $\phi = \forall x \exists y \, [(x \lor y) \land (\bar{x} \lor y)]$.
 
-- For $x = 0$: need $\exists y$ such that $(0 \lor y) \land (1 \lor y) = y \land \mathrm{'\{'}true{'\}'} = y$.
+- For $x = 0$: need $\exists y$ such that $(0 \lor y) \land (1 \lor y) = y \land \mathrm{true{} = y$.
   So we need $y = 1$ (which exists).
-- For $x = 1$: need $\exists y$ such that $(1 \lor y) \land (0 \lor y) = \mathrm{'\{'}true{'\}'} \land y = y$.
+- For $x = 1$: need $\exists y$ such that $(1 \lor y) \land (0 \lor y) = \mathrm{true{} \land y = y$.
   So we need $y = 1$ (which exists).
 
 Since both values of $x$ lead to a satisfying assignment for $y$, $\phi$ is true.
@@ -1564,10 +1564,10 @@ quantifiers.
 
 **Definition.** Define the classes $\Sigma_k^P$ and $\Pi_k^P$ inductively:
 
-- $\Sigma_0^P = \Pi_0^P = \mathrm{'\{'}P{'\}'}$.
-- $\Sigma_{k+1}^P = \mathrm{'\{'}NP{'\}'}^{\Sigma_k^P}$ (NP with a $\Sigma_k^P$ oracle).
-- $\Pi_{k+1}^P} = \mathrm{'\{'}coNP{'\}'}^{\Sigma_k^P}$ (coNP with a $\Sigma_k^P$ oracle).
-- $\mathrm{'\{'}PH{'\}'} = \bigcup_{k \geq 0} \Sigma_k^P$.
+- $\Sigma_0^P = \Pi_0^P = \mathrm{P{}$.
+- $\Sigma_{k+1}^P = \mathrm{NP{}^{\Sigma_k^P}$ (NP with a $\Sigma_k^P$ oracle).
+- $\Pi_{k+1}^P} = \mathrm{coNP{}^{\Sigma_k^P}$ (coNP with a $\Sigma_k^P$ oracle).
+- $\mathrm{PH{} = \bigcup_{k \geq 0} \Sigma_k^P$.
 
 **Equivalent characterisation.** A language $L$ is in $\Sigma_k^P$ iff there exist polynomial-time
 computable relations $R$ and polynomials $p$ such that:
@@ -1578,24 +1578,24 @@ where each $|y_i| \leq p(|x|)$ and the quantifiers alternate, starting with $\ex
 
 **Examples:**
 
-- $\Sigma_1^P = \mathrm{'\{'}NP{'\}'}$: "there exists a certificate."
-- $\Pi_1^P = \mathrm{'\{'}coNP{'\}'}$: "for all certificates."
+- $\Sigma_1^P = \mathrm{NP{}$: "there exists a certificate."
+- $\Pi_1^P = \mathrm{coNP{}$: "for all certificates."
 - $\Sigma_2^P$ contains problems like "does there exist a strategy for player 1 such that for all
   strategies of player 2, player 1 wins?" (for polynomial-size games).
 - $\Pi_2^P$ contains the complement of such problems.
 
 **Relationships:**
 
-$$\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'} \subseteq \Sigma_2^P \subseteq \Sigma_3^P \subseteq \cdots \subseteq \mathrm{'\{'}PH{'\}'} \subseteq \mathrm{'\{'}PSPACE{'\}'}$$
+$$\mathrm{P{} \subseteq \mathrm{NP{} \subseteq \Sigma_2^P \subseteq \Sigma_3^P \subseteq \cdots \subseteq \mathrm{PH{} \subseteq \mathrm{PSPACE{}$$
 
-**Theorem 6.10.** If $\Sigma_k^P = \Sigma_{k+1}^P$ for some $k$, then $\mathrm{'\{'}PH{'\}'} = \Sigma_k^P$
+**Theorem 6.10.** If $\Sigma_k^P = \Sigma_{k+1}^P$ for some $k$, then $\mathrm{PH{} = \Sigma_k^P$
 (the polynomial hierarchy collapses to level $k$).
 
-*Proof.* If $\Sigma_k^P = \Sigma_{k+1}^P = \mathrm{'\{'}NP{'\}'}^{\Sigma_k^P}$, then the $\Sigma_k^P$ oracle
+*Proof.* If $\Sigma_k^P = \Sigma_{k+1}^P = \mathrm{NP{}^{\Sigma_k^P}$, then the $\Sigma_k^P$ oracle
 provides no additional power. By induction, $\Sigma_{k+i}^P = \Sigma_k^P$ for all $i \geq 0$,
-so $\mathrm{'\{'}PH{'\}'} = \Sigma_k^P$. $\blacksquare$
+so $\mathrm{PH{} = \Sigma_k^P$. $\blacksquare$
 
-It is widely believed that $\mathrm{'\{'}PH{'\}'}$ does not collapse.
+It is widely believed that $\mathrm{PH{}$ does not collapse.
 
 ### 6.8 Beyond NP
 
@@ -1603,57 +1603,57 @@ It is widely believed that $\mathrm{'\{'}PH{'\}'}$ does not collapse.
 instance has a polynomial-time verifiable certificate.
 
 - Example: "Is this formula a tautology?" (the certificate for "no" would be a failing assignment).
-- $\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'} \cap \mathrm{'\{'}coNP{'\}'}$.
-- It is unknown whether $\mathrm{'\{'}NP{'\}'} = \mathrm{'\{'}coNP{'\}'}$. If $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}NP{'\}'}$, then
-  $\mathrm{'\{'}NP{'\}'} = \mathrm{'\{'}coNP{'\}'}$.
+- $\mathrm{P{} \subseteq \mathrm{NP{} \cap \mathrm{coNP{}$.
+- It is unknown whether $\mathrm{NP{} = \mathrm{coNP{}$. If $\mathrm{P{} = \mathrm{NP{}$, then
+  $\mathrm{NP{} = \mathrm{coNP{}$.
 
-**Theorem 6.11.** If $\mathrm{'\{'}NP{'\}'} \neq \mathrm{'\{'}coNP{'\}'}$, then $\mathrm{'\{'}P{'\}'} \neq \mathrm{'\{'}NP{'\}'}$.
+**Theorem 6.11.** If $\mathrm{NP{} \neq \mathrm{coNP{}$, then $\mathrm{P{} \neq \mathrm{NP{}$.
 
-*Proof.* If $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}NP{'\}'}$, then $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}coNP{'\}'}$ (since $\mathrm{'\{'}P{'\}'}$
-is closed under complement), so $\mathrm{'\{'}NP{'\}'} = \mathrm{'\{'}coNP{'\}'}$. The contrapositive gives the
+*Proof.* If $\mathrm{P{} = \mathrm{NP{}$, then $\mathrm{P{} = \mathrm{coNP{}$ (since $\mathrm{P{}$
+is closed under complement), so $\mathrm{NP{} = \mathrm{coNP{}$. The contrapositive gives the
 result. $\blacksquare$
 
 **PSPACE.** The class of languages decidable in polynomial space:
 
-$$\mathrm{'\{'}PSPACE{'\}'} = \bigcup_{k \geq 1} \mathrm{'\{'}SPACE{'\}'}(n^k)$$
+$$\mathrm{PSPACE{} = \bigcup_{k \geq 1} \mathrm{SPACE{}(n^k)$$
 
-- $\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'} \subseteq \mathrm{'\{'}PSPACE{'\}'}$.
-- $\mathrm{'\{'}P{'\}'} \neq \mathrm{'\{'}PSPACE{'\}'}$ (space hierarchy theorem).
+- $\mathrm{P{} \subseteq \mathrm{NP{} \subseteq \mathrm{PSPACE{}$.
+- $\mathrm{P{} \neq \mathrm{PSPACE{}$ (space hierarchy theorem).
 - PSPACE-complete problems: TQBF, generalised geography, determining the winner of a position
   in certain games.
 
 **EXPTIME.** The class of languages decidable in exponential time:
 
-$$\mathrm{'\{'}EXPTIME{'\}'} = \bigcup_{k \geq 1} \mathrm{'\{'}TIME{'\}'}(2^{n^k})$$
+$$\mathrm{EXPTIME{} = \bigcup_{k \geq 1} \mathrm{TIME{}(2^{n^k})$$
 
-- $\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'} \subseteq \mathrm{'\{'}PSPACE{'\}'} \subseteq \mathrm{'\{'}EXPTIME{'\}'}$.
-- $\mathrm{'\{'}P{'\}'} \neq \mathrm{'\{'}EXPTIME{'\}'}$ (time hierarchy theorem).
+- $\mathrm{P{} \subseteq \mathrm{NP{} \subseteq \mathrm{PSPACE{} \subseteq \mathrm{EXPTIME{}$.
+- $\mathrm{P{} \neq \mathrm{EXPTIME{}$ (time hierarchy theorem).
 - EXPTIME-complete problems: Generalised chess, Go (on sufficiently large boards), determining the
   winner of a two-player game with exponential game tree.
 
 **Hierarchy summary:**
 
-$$\mathrm{'\{'}Regular{'\}'} \subsetneq \mathrm{'\{'}CFL{'\}'} \subsetneq \mathrm{'\{'}Decidable{'\}'} \subsetneq \mathrm{TM\mathrm{'\{'}-{'\}'}recognisable}$$
+$$\mathrm{Regular{} \subsetneq \mathrm{CFL{} \subsetneq \mathrm{Decidable{} \subsetneq \mathrm{TM\mathrm{-{}recognisable}$$
 
-$$\mathrm{'\{'}L{'\}'} \subseteq \mathrm{'\{'}NL{'\}'} \subseteq \mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'} \subseteq \mathrm{'\{'}PSPACE{'\}'} \subseteq \mathrm{'\{'}EXPTIME{'\}'}$$
+$$\mathrm{L{} \subseteq \mathrm{NL{} \subseteq \mathrm{P{} \subseteq \mathrm{NP{} \subseteq \mathrm{PSPACE{} \subseteq \mathrm{EXPTIME{}$$
 
-$$\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'} \subseteq \mathrm{'\{'}PH{'\}'} \subseteq \mathrm{'\{'}PSPACE{'\}'}$$
+$$\mathrm{P{} \subseteq \mathrm{NP{} \subseteq \mathrm{PH{} \subseteq \mathrm{PSPACE{}$$
 
 | Inclusion            | Known to be proper? | Theorem used        |
 | ------------------- | ------------------- | ------------------- |
-| $\mathrm{'\{'}Regular{'\}'} \subseteq \mathrm{'\{'}CFL{'\}'}$ | Yes | Pumping lemma |
-| $\mathrm{'\{'}CFL{'\}'} \subseteq \mathrm{'\{'}Decidable{'\}'}$ | Yes | CYK algorithm |
-| $\mathrm{'\{'}Decidable{'\}'} \subseteq \mathrm{'\{'}TM{'\}'}\mathrm{'\{'}-recognisable{'\}'}$ | Yes | Diagonalisation |
-| $\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}EXPTIME{'\}'}$ | Yes | Time hierarchy |
-| $\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}PSPACE{'\}'}$ | Yes | Space hierarchy |
-| $\mathrm{'\{'}NP{'\}'} \subseteq \mathrm{'\{'}PSPACE{'\}'}$ | Yes | Savitch's corollary |
-| $\mathrm{'\{'}L{'\}'} \subseteq \mathrm{'\{'}NL{'\}'}$ | Unknown | |
-| $\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'}$ | Unknown | Open problem |
-| $\mathrm{'\{'}NP{'\}'} \subseteq \mathrm{'\{'}coNP{'\}'}$ | Unknown | Open problem |
+| $\mathrm{Regular{} \subseteq \mathrm{CFL{}$ | Yes | Pumping lemma |
+| $\mathrm{CFL{} \subseteq \mathrm{Decidable{}$ | Yes | CYK algorithm |
+| $\mathrm{Decidable{} \subseteq \mathrm{TM{}\mathrm{-recognisable{}$ | Yes | Diagonalisation |
+| $\mathrm{P{} \subseteq \mathrm{EXPTIME{}$ | Yes | Time hierarchy |
+| $\mathrm{P{} \subseteq \mathrm{PSPACE{}$ | Yes | Space hierarchy |
+| $\mathrm{NP{} \subseteq \mathrm{PSPACE{}$ | Yes | Savitch's corollary |
+| $\mathrm{L{} \subseteq \mathrm{NL{}$ | Unknown | |
+| $\mathrm{P{} \subseteq \mathrm{NP{}$ | Unknown | Open problem |
+| $\mathrm{NP{} \subseteq \mathrm{coNP{}$ | Unknown | Open problem |
 
-Both inclusions $\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'}$ and $\mathrm{'\{'}NP{'\}'} \subseteq \mathrm{'\{'}PSPACE{'\}'}$ are
-known to be proper ($\mathrm{'\{'}P{'\}'} \neq \mathrm{'\{'}PSPACE{'\}'}$), but the status of $\mathrm{'\{'}P{'\}'}$ vs.
-$\mathrm{'\{'}NP{'\}'}$ remains open.
+Both inclusions $\mathrm{P{} \subseteq \mathrm{NP{}$ and $\mathrm{NP{} \subseteq \mathrm{PSPACE{}$ are
+known to be proper ($\mathrm{P{} \neq \mathrm{PSPACE{}$), but the status of $\mathrm{P{}$ vs.
+$\mathrm{NP{}$ remains open.
 
 :::caution
 Common Pitfall
@@ -1672,8 +1672,8 @@ itself might not be in NP (e.g., the halting problem is NP-hard but undecidable)
 **Problem 1.** Construct a DFA over $\Sigma = \{0, 1\}$ that accepts exactly those strings whose
 length is a multiple of 3. Prove your DFA is correct.
 
-**Problem 2.** Let $L = \{w \in \{0,1\}^* : w \mathrm{'\{'} contains an even number of {'\}'} 0\mathrm{s and
-\mathrm{'\{'} ends with {'\}'} 1\}$. Give a DFA with the minimum number of states for $L$.
+**Problem 2.** Let $L = \{w \in \{0,1\}^* : w \mathrm{ contains an even number of {} 0\mathrm{s and
+\mathrm{ ends with {} 1\}$. Give a DFA with the minimum number of states for $L$.
 
 **Problem 3.** Use the Myhill-Nerode theorem to prove that
 $L = \{0^n 1^{2n} : n \geq 0\}$ is not regular.
@@ -1703,7 +1703,7 @@ $L = \{0^{2^n} : n \geq 0\}$. Describe the algorithm and prove it always halts.
 $L = \{\langle M_1, M_2 \rangle : L(M_1) \cap L(M_2) \neq \emptyset\}$ is undecidable.
 
 **Problem 11.** Use Rice's theorem to prove that
-$L = \{\langle M \rangle : L(M) \mathrm{'\{'} contains at least two strings{'\}'}\}$ is undecidable.
+$L = \{\langle M \rangle : L(M) \mathrm{ contains at least two strings{}\}$ is undecidable.
 Explain why Rice's theorem applies.
 
 **Problem 12.** Show that the PCP instance with $\alpha = (01, 0, 1)$ and $\beta = (0, 10, 01)$
@@ -1711,27 +1711,27 @@ has a solution by finding one, or prove it has no solution.
 
 ### 7.4 Complexity Theory
 
-**Problem 13.** Show that if $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}NP{'\}'}$, then $\mathrm{'\{'}NP{'\}'} = \mathrm{'\{'}coNP{'\}'}$.
+**Problem 13.** Show that if $\mathrm{P{} = \mathrm{NP{}$, then $\mathrm{NP{} = \mathrm{coNP{}$.
 
 **Problem 14.** A **3-colouring** of a graph $G = (V, E)$ is a function $c : V \to \{1, 2, 3\}$
 such that $c(u) \neq c(v)$ for every edge $(u, v) \in E$. Show that 3-SAT $\leq_p$ 3-Colouring
 by describing the reduction construction.
 
-**Problem 15.** Prove that $\mathrm{'\{'}CLIQUE{'\}'}$ is self-reducible: given an oracle for
-$\mathrm{'\{'}CLIQUE{'\}'}$, describe a polynomial-time algorithm to find an actual clique of size $k$
+**Problem 15.** Prove that $\mathrm{CLIQUE{}$ is self-reducible: given an oracle for
+$\mathrm{CLIQUE{}$, describe a polynomial-time algorithm to find an actual clique of size $k$
 (if one exists).
 
-**Problem 16.** Using Savitch's theorem, prove that $\mathrm{'\{'}NL{'\}'} \subseteq \mathrm{'\{'}P{'\}'}$.
+**Problem 16.** Using Savitch's theorem, prove that $\mathrm{NL{} \subseteq \mathrm{P{}$.
 What is the time complexity of your algorithm?
 
-**Problem 17.** Define the language $\mathrm{'\{'}EXACT{'\}'}\mathrm{'\{'}-CLIQUE{'\}'} = \{\langle G, k \rangle : G$
-$\mathrm{'\{'} has a clique of exactly size {'\}'} k\}$. Show that $\mathrm{'\{'}EXACT{'\}'}\mathrm{'\{'}-CLIQUE{'\}'}$ is
+**Problem 17.** Define the language $\mathrm{EXACT{}\mathrm{-CLIQUE{} = \{\langle G, k \rangle : G$
+$\mathrm{ has a clique of exactly size {} k\}$. Show that $\mathrm{EXACT{}\mathrm{-CLIQUE{}$ is
 NP-complete.
 
 **Problem 18.** A language $L$ is in **DP** (difference of two NP sets) if there exist
-$L_1, L_2 \in \mathrm{'\{'}NP{'\}'}$ such that $L = L_1 \cap \overline{L_2}$. Show that
-$\mathrm{'\{'}SAT{'\}'}\mathrm{'\{'}-UNSAT{'\}'} = \{\langle \phi, \psi \rangle : \phi \in \mathrm{'\{'}SAT{'\}'} \mathrm{'\{'} and {'\}'}
-\psi \notin \mathrm{'\{'}SAT{'\}'}\}$ is in DP. Is DP contained in $\Sigma_2^P$? Justify.
+$L_1, L_2 \in \mathrm{NP{}$ such that $L = L_1 \cap \overline{L_2}$. Show that
+$\mathrm{SAT{}\mathrm{-UNSAT{} = \{\langle \phi, \psi \rangle : \phi \in \mathrm{SAT{} \mathrm{ and {}
+\psi \notin \mathrm{SAT{}\}$ is in DP. Is DP contained in $\Sigma_2^P$? Justify.
 
 ### 7.5 Comprehensive
 
@@ -1741,15 +1741,15 @@ $\mathrm{'\{'}SAT{'\}'}\mathrm{'\{'}-UNSAT{'\}'} = \{\langle \phi, \psi \rangle 
 (c) Is $L$ decidable? Justify.
 
 **Problem 20.** For each of the following languages, state the smallest complexity class
-(from $\mathrm{'\{'}Regular{'\}'}$, $\mathrm{'\{'}CFL{'\}'}$, $\mathrm{'\{'}Decidable{'\}'}$, $\mathrm{'\{'}NP{'\}'}$,
-$\mathrm{'\{'}PSPACE{'\}'}$, $\mathrm{'\{'}EXPTIME{'\}'}$, or "undecidable") that is known to contain it.
+(from $\mathrm{Regular{}$, $\mathrm{CFL{}$, $\mathrm{Decidable{}$, $\mathrm{NP{}$,
+$\mathrm{PSPACE{}$, $\mathrm{EXPTIME{}$, or "undecidable") that is known to contain it.
 Justify each answer briefly.
 
 (a) $\{0^n 1^n 0^n : n \geq 0\}$
-(b) $\{\langle G \rangle : G \mathrm{'\{'} has a Hamiltonian cycle{'\}'}\}$
-(c) $\{\langle G, k \rangle : G \mathrm{'\{'} has a vertex cover of size {'\}'} \leq k\}$
-(d) $\{\langle M \rangle : M \mathrm{'\{'} runs for at most {'\}'} 100 \mathrm{'\{'} steps on {'\}'} \varepsilon\}$
-(e) $\{\langle \phi \rangle : \phi \mathrm{'\{'} is a true quantified Boolean formula{'\}'}\}$
+(b) $\{\langle G \rangle : G \mathrm{ has a Hamiltonian cycle{}\}$
+(c) $\{\langle G, k \rangle : G \mathrm{ has a vertex cover of size {} \leq k\}$
+(d) $\{\langle M \rangle : M \mathrm{ runs for at most {} 100 \mathrm{ steps on {} \varepsilon\}$
+(e) $\{\langle \phi \rangle : \phi \mathrm{ is a true quantified Boolean formula{}\}$
 
 ### 7.6 Selected Solutions and Hints
 
@@ -1767,15 +1767,15 @@ $0^j 1^{2i} \notin L$ (because $2i \neq 2j$).
 substring $vxy$ cannot span all four blocks. Case analysis shows that pumping any valid
 decomposition produces a string not in $L$.
 
-**Problem 10.** Reduce from $E_{\mathrm{'\{'}TM{'\}'}}$. Given $\langle M \rangle$, construct two TMs
+**Problem 10.** Reduce from $E_{\mathrm{TM{}}$. Given $\langle M \rangle$, construct two TMs
 $M_1$ (accepts $\varepsilon$ only) and $M_2$ (accepts what $M$ accepts). Then
 $L(M_1) \cap L(M_2) \neq \emptyset$ iff $M$ accepts $\varepsilon$ iff
-$\langle M \rangle \notin E_{\mathrm{'\{'}TM{'\}'}}$ (after adjusting for the specific reduction).
+$\langle M \rangle \notin E_{\mathrm{TM{}}$ (after adjusting for the specific reduction).
 
-**Problem 13.** If $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}NP{'\}'}$, then for any $L \in \mathrm{'\{'}NP{'\}'}$, we have
-$L \in \mathrm{'\{'}P{'\}'}$. Since $\mathrm{'\{'}P{'\}'}$ is closed under complement, $\overline{L} \in \mathrm{'\{'}P{'\}'}
-\subseteq \mathrm{'\{'}NP{'\}'}$. So $\overline{L} \in \mathrm{'\{'}NP{'\}'}$ for every $L \in \mathrm{'\{'}NP{'\}'}$, meaning
-$\mathrm{'\{'}NP{'\}'} \subseteq \mathrm{'\{'}coNP{'\}'}$. By symmetry, $\mathrm{'\{'}coNP{'\}'} \subseteq \mathrm{'\{'}NP{'\}'}$.
+**Problem 13.** If $\mathrm{P{} = \mathrm{NP{}$, then for any $L \in \mathrm{NP{}$, we have
+$L \in \mathrm{P{}$. Since $\mathrm{P{}$ is closed under complement, $\overline{L} \in \mathrm{P{}
+\subseteq \mathrm{NP{}$. So $\overline{L} \in \mathrm{NP{}$ for every $L \in \mathrm{NP{}$, meaning
+$\mathrm{NP{} \subseteq \mathrm{coNP{}$. By symmetry, $\mathrm{coNP{} \subseteq \mathrm{NP{}$.
 
 **Problem 19.**
 (a) Let $w = 0^p 1^p \# 0^p 1^p \in L$. Since $|xy| \leq p$, $y$ is in the first $0^p$ block.

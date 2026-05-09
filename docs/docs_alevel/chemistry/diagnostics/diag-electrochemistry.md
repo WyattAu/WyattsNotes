@@ -295,45 +295,45 @@ $$m(\text{'\{'}H{'\}'}_2) = 0.1865 \times 2.02 = 0.377\,\text{'\{'}g{'\}'}$$
 
 (a) Write half-equations for the reactions at the anode and cathode.
 
-(b) If a current of $0.500\,\mathrm{'\{'}A{'\}'}$ is passed for $30.0$ minutes, calculate the mass of copper deposited at the cathode.
+(b) If a current of $0.500\,\mathrm{A{}$ is passed for $30.0$ minutes, calculate the mass of copper deposited at the cathode.
 
 (c) Explain why the blue colour of the solution fades during electrolysis.
 
 **Solution:**
 
-(a) Cathode (reduction): $\mathrm{'\{'}Cu{'\}'}^{2+}(aq) + 2e^- \to \mathrm{'\{'}Cu{'\}'}(s)$ (1 mark).
+(a) Cathode (reduction): $\mathrm{Cu{}^{2+}(aq) + 2e^- \to \mathrm{Cu{}(s)$ (1 mark).
 
-Anode (oxidation): $2\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}(l) \to \mathrm{'\{'}O{'\}'}_2(g) + 4\mathrm{'\{'}H{'\}'}^+(aq) + 4e^-$ (1 mark).
+Anode (oxidation): $2\mathrm{H{}_2\mathrm{O{}(l) \to \mathrm{O{}_2(g) + 4\mathrm{H{}^+(aq) + 4e^-$ (1 mark).
 
-Note: At the anode, water is oxidised in preference to sulphate ions because $\mathrm{'\{'}SO{'\}'}_4^{2-}$ is very difficult to oxidise (it would require breaking strong S--O bonds).
+Note: At the anode, water is oxidised in preference to sulphate ions because $\mathrm{SO{}_4^{2-}$ is very difficult to oxidise (it would require breaking strong S--O bonds).
 
-(b) $Q = It = 0.500 \times 30.0 \times 60 = 900\,\mathrm{'\{'}C{'\}'}$
+(b) $Q = It = 0.500 \times 30.0 \times 60 = 900\,\mathrm{C{}$
 
-$$n(\mathrm{'\{'}Cu{'\}'}) = \frac{Q}{nF} = \frac{900}{2 \times 96500} = 4.66 \times 10^{-3}\,\mathrm{'\{'}mol{'\}'}$$
+$$n(\mathrm{Cu{}) = \frac{Q}{nF} = \frac{900}{2 \times 96500} = 4.66 \times 10^{-3}\,\mathrm{mol{}$$
 
-$$m(\mathrm{'\{'}Cu{'\}'}) = 4.66 \times 10^{-3} \times 63.5 = 0.296\,\mathrm{'\{'}g{'\}'}$$ (1 mark).
+$$m(\mathrm{Cu{}) = 4.66 \times 10^{-3} \times 63.5 = 0.296\,\mathrm{g{}$$ (1 mark).
 
-(c) The blue colour is due to the hydrated $\mathrm{'\{'}Cu{'\}'}^{2+}$ ion, $[\mathrm{'\{'}Cu{'\}'}(\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'})_6]^{2+}$. As $\mathrm{'\{'}Cu{'\}'}^{2+}$ ions are reduced to copper metal at the cathode, the concentration of $\mathrm{'\{'}Cu{'\}'}^{2+}$ in solution decreases, causing the blue colour to fade. If electrolysis continues long enough, the solution becomes colourless (1 mark).
+(c) The blue colour is due to the hydrated $\mathrm{Cu{}^{2+}$ ion, $[\mathrm{Cu{}(\mathrm{H{}_2\mathrm{O{})_6]^{2+}$. As $\mathrm{Cu{}^{2+}$ ions are reduced to copper metal at the cathode, the concentration of $\mathrm{Cu{}^{2+}$ in solution decreases, causing the blue colour to fade. If electrolysis continues long enough, the solution becomes colourless (1 mark).
 
 #### UT-5: Predicting Feasibility
 
 **Question:** Use standard electrode potentials to predict whether each reaction is feasible under standard conditions:
 
-(a) $\mathrm{'\{'}Zn{'\}'}(s) + \mathrm{'\{'}Cu{'\}'}^{2+}(aq) \to \mathrm{'\{'}Zn{'\}'}^{2+}(aq) + \mathrm{'\{'}Cu{'\}'}(s)$
+(a) $\mathrm{Zn{}(s) + \mathrm{Cu{}^{2+}(aq) \to \mathrm{Zn{}^{2+}(aq) + \mathrm{Cu{}(s)$
 
-(b) $\mathrm{'\{'}Cu{'\}'}(s) + 2\mathrm{'\{'}Ag{'\}'}^+(aq) \to \mathrm{'\{'}Cu{'\}'}^{2+}(aq) + 2\mathrm{'\{'}Ag{'\}'}(s)$
+(b) $\mathrm{Cu{}(s) + 2\mathrm{Ag{}^+(aq) \to \mathrm{Cu{}^{2+}(aq) + 2\mathrm{Ag{}(s)$
 
-(c) $\mathrm{'\{'}Fe{'\}'}^{2+}(aq) + \mathrm{'\{'}Ag{'\}'}^+(aq) \to \mathrm{'\{'}Fe{'\}'}^{3+}(aq) + \mathrm{'\{'}Ag{'\}'}(s)$
+(c) $\mathrm{Fe{}^{2+}(aq) + \mathrm{Ag{}^+(aq) \to \mathrm{Fe{}^{3+}(aq) + \mathrm{Ag{}(s)$
 
-Standard electrode potentials: $E^\circ(\mathrm{'\{'}Zn{'\}'}^{2+}/\mathrm{'\{'}Zn{'\}'}) = -0.76\,\mathrm{'\{'}V{'\}'}$, $E^\circ(\mathrm{'\{'}Cu{'\}'}^{2+}/\mathrm{'\{'}Cu{'\}'}) = +0.34\,\mathrm{'\{'}V{'\}'}$, $E^\circ(\mathrm{'\{'}Ag{'\}'}^+/\mathrm{'\{'}Ag{'\}'}) = +0.80\,\mathrm{'\{'}V{'\}'}$, $E^\circ(\mathrm{'\{'}Fe{'\}'}^{3+}/\mathrm{'\{'}Fe{'\}'}^{2+}) = +0.77\,\mathrm{'\{'}V{'\}'}$.
+Standard electrode potentials: $E^\circ(\mathrm{Zn{}^{2+}/\mathrm{Zn{}) = -0.76\,\mathrm{V{}$, $E^\circ(\mathrm{Cu{}^{2+}/\mathrm{Cu{}) = +0.34\,\mathrm{V{}$, $E^\circ(\mathrm{Ag{}^+/\mathrm{Ag{}) = +0.80\,\mathrm{V{}$, $E^\circ(\mathrm{Fe{}^{3+}/\mathrm{Fe{}^{2+}) = +0.77\,\mathrm{V{}$.
 
 **Solution:**
 
-(a) $E^\circ_{\text{'\{'}cell{'\}'}} = 0.34 - (-0.76) = +1.10\,\mathrm{'\{'}V{'\}'}$. $E^\circ_{\text{'\{'}cell{'\}'}} > 0$, so the reaction is **feasible** (1 mark).
+(a) $E^\circ_{\text{'\{'}cell{'\}'}} = 0.34 - (-0.76) = +1.10\,\mathrm{V{}$. $E^\circ_{\text{'\{'}cell{'\}'}} > 0$, so the reaction is **feasible** (1 mark).
 
-(b) $E^\circ_{\text{'\{'}cell{'\}'}} = 0.80 - 0.34 = +0.46\,\mathrm{'\{'}V{'\}'}$. $E^\circ_{\text{'\{'}cell{'\}'}} > 0$, so the reaction is **feasible** (1 mark).
+(b) $E^\circ_{\text{'\{'}cell{'\}'}} = 0.80 - 0.34 = +0.46\,\mathrm{V{}$. $E^\circ_{\text{'\{'}cell{'\}'}} > 0$, so the reaction is **feasible** (1 mark).
 
-(c) $E^\circ_{\text{'\{'}cell{'\}'}} = 0.80 - 0.77 = +0.03\,\mathrm{'\{'}V{'\}'}$. $E^\circ_{\text{'\{'}cell{'\}'}} > 0$ but very small. The reaction is **marginally feasible** under standard conditions, but the equilibrium constant is small ($K = \exp(nFE^\circ/RT) = \exp(1 \times 96500 \times 0.03/(8.314 \times 298)) = \exp(1.17) = 3.2$). The reaction will proceed but not go to completion (1 mark).
+(c) $E^\circ_{\text{'\{'}cell{'\}'}} = 0.80 - 0.77 = +0.03\,\mathrm{V{}$. $E^\circ_{\text{'\{'}cell{'\}'}} > 0$ but very small. The reaction is **marginally feasible** under standard conditions, but the equilibrium constant is small ($K = \exp(nFE^\circ/RT) = \exp(1 \times 96500 \times 0.03/(8.314 \times 298)) = \exp(1.17) = 3.2$). The reaction will proceed but not go to completion (1 mark).
 
 #### IT-4: Electrochemistry and Quantitative Chemistry
 
@@ -341,24 +341,24 @@ Standard electrode potentials: $E^\circ(\mathrm{'\{'}Zn{'\}'}^{2+}/\mathrm{'\{'}
 
 (a) Write the half-equations and overall equation.
 
-(b) Calculate the volume of bromine gas produced at STP when a current of $2.00\,\mathrm{'\{'}A{'\}'}$ is passed for $15.0$ minutes.
+(b) Calculate the volume of bromine gas produced at STP when a current of $2.00\,\mathrm{A{}$ is passed for $15.0$ minutes.
 
-(c) If the actual volume of bromine collected is $0.85\,\mathrm{'\{'}dm{'\}'}^3$, calculate the current efficiency.
+(c) If the actual volume of bromine collected is $0.85\,\mathrm{dm{}^3$, calculate the current efficiency.
 
 **Solution:**
 
-(a) Cathode: $\mathrm{'\{'}Pb{'\}'}^{2+} + 2e^- \to \mathrm{'\{'}Pb{'\}'}$
+(a) Cathode: $\mathrm{Pb{}^{2+} + 2e^- \to \mathrm{Pb{}$
 
-Anode: $2\mathrm{'\{'}Br{'\}'}^- \to \mathrm{'\{'}Br{'\}'}_2 + 2e^-$
+Anode: $2\mathrm{Br{}^- \to \mathrm{Br{}_2 + 2e^-$
 
-Overall: $\mathrm{'\{'}PbBr{'\}'}_2 \to \mathrm{'\{'}Pb{'\}'} + \mathrm{'\{'}Br{'\}'}_2$ (1 mark).
+Overall: $\mathrm{PbBr{}_2 \to \mathrm{Pb{} + \mathrm{Br{}_2$ (1 mark).
 
-(b) $Q = 2.00 \times 15.0 \times 60 = 1800\,\mathrm{'\{'}C{'\}'}$
+(b) $Q = 2.00 \times 15.0 \times 60 = 1800\,\mathrm{C{}$
 
-$$n(\mathrm{'\{'}Br{'\}'}_2) = \frac{1800}{2 \times 96500} = 9.33 \times 10^{-3}\,\mathrm{'\{'}mol{'\}'}$$
+$$n(\mathrm{Br{}_2) = \frac{1800}{2 \times 96500} = 9.33 \times 10^{-3}\,\mathrm{mol{}$$
 
-$$V(\mathrm{'\{'}Br{'\}'}_2) = 9.33 \times 10^{-3} \times 22.4 = 0.209\,\mathrm{'\{'}dm{'\}'}^3$$ (1 mark).
+$$V(\mathrm{Br{}_2) = 9.33 \times 10^{-3} \times 22.4 = 0.209\,\mathrm{dm{}^3$$ (1 mark).
 
 (c) Current efficiency $= \frac{\text{'\{'}actual volume{'\}'}}{\text{'\{'}theoretical volume{'\}'}} \times 100 = \frac{0.85}{0.209} \times 100 = 407\%$
 
-This is impossible (>100%), suggesting an error in the question data or experimental conditions. A realistic current efficiency for bromine production is typically 85--95%. If the collected volume were $0.185\,\mathrm{'\{'}dm{'\}'}^3$, the efficiency would be $88.5\%$ (1 mark).
+This is impossible (>100%), suggesting an error in the question data or experimental conditions. A realistic current efficiency for bromine production is typically 85--95%. If the collected volume were $0.185\,\mathrm{dm{}^3$, the efficiency would be $88.5\%$ (1 mark).

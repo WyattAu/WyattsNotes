@@ -87,7 +87,7 @@ $$
 
 ### Derivation from Calculus
 
-Starting from $a = \frac{dv}{dt} = \mathrm{'\{'}const{'\}'}$:
+Starting from $a = \frac{dv}{dt} = \mathrm{const{}$:
 
 $$
 \int_{v_0}^{v} dv' = \int_0^t a\, dt' \implies v - v_0 = at \implies v = v_0 + at
@@ -124,10 +124,10 @@ This equation is useful because it relates velocity and displacement without req
 
 :::info[Example]
 
-A car accelerates uniformly from rest at $3.0 \mathrm{'\{'} m/s{'\}'}^2$ for 5.0 s. Find the distance traveled.
+A car accelerates uniformly from rest at $3.0 \mathrm{ m/s{}^2$ for 5.0 s. Find the distance traveled.
 
 $$
-x = 0 + 0 \cdot 5.0 + \frac{1}{2}(3.0)(5.0)^2 = \frac{1}{2}(3.0)(25) = 37.5 \mathrm{'\{'} m{'\}'}
+x = 0 + 0 \cdot 5.0 + \frac{1}{2}(3.0)(5.0)^2 = \frac{1}{2}(3.0)(25) = 37.5 \mathrm{ m{}
 $$
 
 :::
@@ -152,7 +152,7 @@ The variable that does _not_ appear in each equation tells you when to use it.
 Near Earth's surface, the acceleration due to gravity is approximately:
 
 $$
-g \approx 9.8 \mathrm{'\{'} m/s{'\}'}^2 \approx 32 \mathrm{'\{'} ft/s{'\}'}^2
+g \approx 9.8 \mathrm{ m/s{}^2 \approx 32 \mathrm{ ft/s{}^2
 $$
 
 directed downward. In the standard coordinate system (upward positive), $a = -g$.
@@ -181,19 +181,19 @@ quadratic in $t$.
 
 :::info[Example]
 
-A ball is thrown upward from ground level with initial velocity $20 \mathrm{'\{'} m/s{'\}'}$. Find the maximum
+A ball is thrown upward from ground level with initial velocity $20 \mathrm{ m/s{}$. Find the maximum
 height and the total time in the air.
 
 **Maximum height:** At the peak, $v = 0$.
 
 $$
-v^2 = v_0^2 - 2g(y - y_0) \implies 0 = (20)^2 - 2(9.8)y \implies y = \frac{400}{19.6} \approx 20.4 \mathrm{'\{'} m{'\}'}
+v^2 = v_0^2 - 2g(y - y_0) \implies 0 = (20)^2 - 2(9.8)y \implies y = \frac{400}{19.6} \approx 20.4 \mathrm{ m{}
 $$
 
 **Time in air:** The ball returns to $y = 0$:
 
 $$
-0 = 20t - \frac{1}{2}(9.8)t^2 \implies t(20 - 4.9t) = 0 \implies t = \frac{20}{4.9} \approx 4.08 \mathrm{'\{'} s{'\}'}
+0 = 20t - \frac{1}{2}(9.8)t^2 \implies t(20 - 4.9t) = 0 \implies t = \frac{20}{4.9} \approx 4.08 \mathrm{ s{}
 $$
 
 :::
@@ -217,7 +217,7 @@ x(t) = x_0 + v_{0x} t = x_0 + (v_0 \cos\theta) t
 $$
 
 $$
-v_x(t) = v_0 \cos\theta \quad \mathrm{'\{'}(constant){'\}'}
+v_x(t) = v_0 \cos\theta \quad \mathrm{(constant){}
 $$
 
 ### Vertical Motion (free fall)
@@ -232,7 +232,7 @@ $$
 
 ### Key Results
 
-- **Time to reach maximum height:** $\displaystyle t_{\mathrm{'\{'}up{'\}'}} = \frac{v_0 \sin\theta}{g}$
+- **Time to reach maximum height:** $\displaystyle t_{\mathrm{up{}} = \frac{v_0 \sin\theta}{g}$
 - **Maximum height:** $\displaystyle H = \frac{(v_0 \sin\theta)^2}{2g}$
 - **Total time of flight:** $\displaystyle T = \frac{2v_0 \sin\theta}{g}$
 - **Range:** $\displaystyle R = \frac{v_0^2 \sin 2\theta}{g}$
@@ -279,7 +279,7 @@ confirms that the parabola opens downward.
 
 :::info[Example]
 
-A projectile is launched at $50 \mathrm{'\{'} m/s{'\}'}$ at $37^\circ$ above horizontal from ground level. Find
+A projectile is launched at $50 \mathrm{ m/s{}$ at $37^\circ$ above horizontal from ground level. Find
 the range and maximum height.
 
 $\cos 37^\circ \approx 0.8$, $\sin 37^\circ \approx 0.6$.
@@ -287,13 +287,13 @@ $\cos 37^\circ \approx 0.8$, $\sin 37^\circ \approx 0.6$.
 **Range:**
 
 $$
-R = \frac{(50)^2 \sin 74^\circ}{9.8} = \frac{2500 \times 0.9613}{9.8} \approx 245.2 \mathrm{'\{'} m{'\}'}
+R = \frac{(50)^2 \sin 74^\circ}{9.8} = \frac{2500 \times 0.9613}{9.8} \approx 245.2 \mathrm{ m{}
 $$
 
 **Maximum height:**
 
 $$
-H = \frac{(50 \times 0.6)^2}{2 \times 9.8} = \frac{900}{19.6} \approx 45.9 \mathrm{'\{'} m{'\}'}
+H = \frac{(50 \times 0.6)^2}{2 \times 9.8} = \frac{900}{19.6} \approx 45.9 \mathrm{ m{}
 $$
 
 :::
@@ -381,10 +381,10 @@ points toward the center, never along the velocity.
 
 :::info[Example]
 
-A car rounds a curve of radius 50 m at $15 \mathrm{'\{'} m/s{'\}'}$. What is its centripetal acceleration?
+A car rounds a curve of radius 50 m at $15 \mathrm{ m/s{}$. What is its centripetal acceleration?
 
 $$
-a_c = \frac{v^2}{r} = \frac{(15)^2}{50} = \frac{225}{50} = 4.5 \mathrm{'\{'} m/s{'\}'}^2
+a_c = \frac{v^2}{r} = \frac{(15)^2}{50} = \frac{225}{50} = 4.5 \mathrm{ m/s{}^2
 $$
 
 :::
@@ -413,19 +413,19 @@ integration (counting squares, the trapezoidal rule, or Simpson's rule).
 
 :::info[Example]
 
-The velocity of a particle is $v(t) = 3t^2 - 6t + 2 \mathrm{'\{'} m/s{'\}'}$. Find the displacement from $t = 0$
+The velocity of a particle is $v(t) = 3t^2 - 6t + 2 \mathrm{ m/s{}$. Find the displacement from $t = 0$
 to $t = 3$ s and the acceleration at $t = 2$ s.
 
 **Displacement:**
 
 $$
-\Delta x = \int_0^3 v(t)\, dt = \int_0^3 (3t^2 - 6t + 2)\, dt = \left[t^3 - 3t^2 + 2t\right]_0^3 = 27 - 27 + 6 = 6 \mathrm{'\{'} m{'\}'}
+\Delta x = \int_0^3 v(t)\, dt = \int_0^3 (3t^2 - 6t + 2)\, dt = \left[t^3 - 3t^2 + 2t\right]_0^3 = 27 - 27 + 6 = 6 \mathrm{ m{}
 $$
 
 **Acceleration:**
 
 $$
-a(t) = \frac{dv}{dt} = 6t - 6 \implies a(2) = 6(2) - 6 = 6 \mathrm{'\{'} m/s{'\}'}^2
+a(t) = \frac{dv}{dt} = 6t - 6 \implies a(2) = 6(2) - 6 = 6 \mathrm{ m/s{}^2
 $$
 
 :::
@@ -471,18 +471,18 @@ frame $S'$ relative to frame $S$.
 
 :::info[Example]
 
-A boat heads directly across a river 100 m wide at $4 \mathrm{'\{'} m/s{'\}'}$ relative to the water. The river
-flows at $3 \mathrm{'\{'} m/s{'\}'}$. How far downstream does the boat land?
+A boat heads directly across a river 100 m wide at $4 \mathrm{ m/s{}$ relative to the water. The river
+flows at $3 \mathrm{ m/s{}$. How far downstream does the boat land?
 
 The boat's velocity relative to the shore has two components:
 
 $$
-v_x = 3 \mathrm{'\{'} m/s{'\}'} \quad \mathrm{'\{'}(downstream){'\}'}, \qquad v_y = 4 \mathrm{'\{'} m/s{'\}'} \quad \mathrm{'\{'}(across){'\}'}
+v_x = 3 \mathrm{ m/s{} \quad \mathrm{(downstream){}, \qquad v_y = 4 \mathrm{ m/s{} \quad \mathrm{(across){}
 $$
 
-Time to cross: $\displaystyle t = \frac{100}{4} = 25 \mathrm{'\{'} s{'\}'}$.
+Time to cross: $\displaystyle t = \frac{100}{4} = 25 \mathrm{ s{}$.
 
-Downstream distance: $d = 3 \times 25 = 75 \mathrm{'\{'} m{'\}'}$.
+Downstream distance: $d = 3 \times 25 = 75 \mathrm{ m{}$.
 
 :::
 
@@ -526,14 +526,14 @@ the boat cannot overcome the current.
 1. A ball is dropped from a height of 80 m. How long does it take to reach the ground, and what is
    its speed at impact?
 
-2. A projectile is launched from a cliff 60 m high at $30 \mathrm{'\{'} m/s{'\}'}$ at $40^\circ$ above
+2. A projectile is launched from a cliff 60 m high at $30 \mathrm{ m/s{}$ at $40^\circ$ above
    horizontal. Find the time of flight and the horizontal range.
 
-3. A particle has acceleration $a(t) = 6t \mathrm{'\{'} m/s{'\}'}^2$ with initial velocity
-   $v(0) = -4 \mathrm{'\{'} m/s{'\}'}$ and initial position $x(0) = 2 \mathrm{'\{'} m{'\}'}$. Find $v(t)$, $x(t)$, and the
+3. A particle has acceleration $a(t) = 6t \mathrm{ m/s{}^2$ with initial velocity
+   $v(0) = -4 \mathrm{ m/s{}$ and initial position $x(0) = 2 \mathrm{ m{}$. Find $v(t)$, $x(t)$, and the
    displacement from $t = 0$ to $t = 3$.
 
-4. A car accelerates from rest at $2.0 \mathrm{'\{'} m/s{'\}'}^2$ for 200 m. What is its final velocity?
+4. A car accelerates from rest at $2.0 \mathrm{ m/s{}^2$ for 200 m. What is its final velocity?
 
 5. An object moves along the $x$-axis with velocity $v(t) = t^3 - 6t^2 + 9t$. Find the total
    distance traveled from $t = 0$ to $t = 5$.
@@ -541,12 +541,12 @@ the boat cannot overcome the current.
 6. A satellite orbits Earth at an altitude of 300 km in a circular orbit. If the orbital period is
    90.5 minutes, find the orbital speed and centripetal acceleration. (Earth's radius = $6371$ km.)
 
-7. A swimmer can swim at $2.0 \mathrm{'\{'} m/s{'\}'}$ in still water. She needs to cross a river 50 m wide
-   flowing at $1.5 \mathrm{'\{'} m/s{'\}'}$. At what angle upstream should she head to land directly across?
+7. A swimmer can swim at $2.0 \mathrm{ m/s{}$ in still water. She needs to cross a river 50 m wide
+   flowing at $1.5 \mathrm{ m/s{}$. At what angle upstream should she head to land directly across?
 
 8. Derive the formula for the maximum height of a projectile using calculus.
 
-9. A ball is thrown from the top of a 50 m building at $20 \mathrm{'\{'} m/s{'\}'}$ at $30^\circ$ below the
+9. A ball is thrown from the top of a 50 m building at $20 \mathrm{ m/s{}$ at $30^\circ$ below the
    horizontal. Find the time to hit the ground and the horizontal distance from the building.
 
 10. The position of a particle is $x(t) = t^3 - 6t^2 + 9t + 1$ m. Find (a) the times when the
@@ -573,14 +573,14 @@ s.
 
 **Displacement from $t = 0$ to $t = 4$:**
 
-$$\Delta x = \int_0^4 (4t - t^2)\, dt = \left[2t^2 - \frac{t^3}{3}\right]_0^4 = 32 - \frac{64}{3} = 32 - 21.33 = 10.67 \mathrm{'\{'} m{'\}'}$$
+$$\Delta x = \int_0^4 (4t - t^2)\, dt = \left[2t^2 - \frac{t^3}{3}\right]_0^4 = 32 - \frac{64}{3} = 32 - 21.33 = 10.67 \mathrm{ m{}$$
 
 **Total distance from $t = 0$ to $t = 5$:** The velocity is zero at $t = 0$ and $t = 4$. For
 $0 \lt t \lt 4$, $v \gt 0$. For $4 \lt t \lt 5$, $v \lt 0$.
 
 $$d = \int_0^4 (4t - t^2)\, dt + \left|\int_4^5 (4t - t^2)\, dt\right| = 10.67 + \left|\left[2t^2 - \frac{t^3}{3}\right]_4^5\right|$$
 
-$$= 10.67 + \left|(50 - 41.67) - (32 - 21.33)\right| = 10.67 + |8.33 - 10.67| = 10.67 + 2.33 = 13.0 \mathrm{'\{'} m{'\}'}$$
+$$= 10.67 + \left|(50 - 41.67) - (32 - 21.33)\right| = 10.67 + |8.33 - 10.67| = 10.67 + 2.33 = 13.0 \mathrm{ m{}$$
 
 ## Uniform Circular Motion: Extended Analysis
 
@@ -595,7 +595,7 @@ $$\omega = 2\pi f = \frac{2\pi}{T}, \qquad v = \frac{2\pi r}{T} = 2\pi rf, \qqua
 A geostationary satellite orbits above the equator with a period of 24 hours. Given Earth's radius
 $R_E = 6.371 \times 10^6$ m and mass $M_E = 5.97 \times 10^{24}$ kg, find the altitude of the orbit.
 
-$$T = 86400 \mathrm{'\{'} s{'\}'}$$
+$$T = 86400 \mathrm{ s{}$$
 
 $$T^2 = \frac{4\pi^2 r^3}{GM}$$
 
@@ -603,9 +603,9 @@ $$r^3 = \frac{GMT^2}{4\pi^2} = \frac{6.674 \times 10^{-11} \times 5.97 \times 10
 
 $$r^3 = \frac{2.987 \times 10^{24}}{39.48} = 7.566 \times 10^{22}$$
 
-$$r = \sqrt[3]{7.566 \times 10^{22}} = 4.225 \times 10^7 \mathrm{'\{'} m{'\}'}$$
+$$r = \sqrt[3]{7.566 \times 10^{22}} = 4.225 \times 10^7 \mathrm{ m{}$$
 
-$$h = r - R_E = 4.225 \times 10^7 - 6.371 \times 10^6 = 3.588 \times 10^7 \mathrm{'\{'} m{'\}'} \approx 35880 \mathrm{'\{'} km{'\}'}$$
+$$h = r - R_E = 4.225 \times 10^7 - 6.371 \times 10^6 = 3.588 \times 10^7 \mathrm{ m{} \approx 35880 \mathrm{ km{}$$
 
 This is approximately 36000 km above Earth's surface, the standard geostationary orbit altitude.
 
@@ -680,48 +680,48 @@ $$x(t) = 27 + 27(t - 3)$$
     rest, (b) the position at that time, and (c) the total distance traveled between $t = 0$ and
     $t = 3$ s.
 
-12. A projectile is launched from ground level at $40 \mathrm{'\{'} m/s{'\}'}$. Find the two launch angles that
-    give a range of $120 \mathrm{'\{'} m{'\}'}$.
+12. A projectile is launched from ground level at $40 \mathrm{ m/s{}$. Find the two launch angles that
+    give a range of $120 \mathrm{ m{}$.
 
-13. A car accelerates from rest at $3 \mathrm{'\{'} m/s{'\}'}^2$ for $4 \mathrm{'\{'} s{'\}'}$, then travels at constant
-    speed for $6 \mathrm{'\{'} s{'\}'}$, then decelerates uniformly to rest in $3 \mathrm{'\{'} s{'\}'}$. Find the total
+13. A car accelerates from rest at $3 \mathrm{ m/s{}^2$ for $4 \mathrm{ s{}$, then travels at constant
+    speed for $6 \mathrm{ s{}$, then decelerates uniformly to rest in $3 \mathrm{ s{}$. Find the total
     distance and draw a velocity-time graph.
 
-14. Two boats leave the same point simultaneously. Boat A heads north at $6 \mathrm{'\{'} m/s{'\}'}$ and Boat B
-    heads northeast at $8 \mathrm{'\{'} m/s{'\}'}$. Find the velocity of Boat A relative to Boat B.
+14. Two boats leave the same point simultaneously. Boat A heads north at $6 \mathrm{ m/s{}$ and Boat B
+    heads northeast at $8 \mathrm{ m/s{}$. Find the velocity of Boat A relative to Boat B.
 
-15. An astronaut on the Moon throws a ball vertically upward at $15 \mathrm{'\{'} m/s{'\}'}$. Find the maximum
-    height and total time in the air. ($g_{\mathrm{'\{'}Moon{'\}'}} = 1.62 \mathrm{'\{'} m/s{'\}'}^2$.)
+15. An astronaut on the Moon throws a ball vertically upward at $15 \mathrm{ m/s{}$. Find the maximum
+    height and total time in the air. ($g_{\mathrm{Moon{}} = 1.62 \mathrm{ m/s{}^2$.)
 
 ## Extended Worked Examples
 
 ### Example 16: Relative Motion in Two Dimensions
 
-Airplane A flies north at $250 \mathrm{'\{'} m/s{'\}'}$. Airplane B flies at $200 \mathrm{'\{'} m/s{'\}'}$ on a heading of
+Airplane A flies north at $250 \mathrm{ m/s{}$. Airplane B flies at $200 \mathrm{ m/s{}$ on a heading of
 $60^\circ$ east of north. Find the velocity of A relative to B.
 
 **Step 1: Write velocity vectors**
 
-$$\vec{v}_A = 250\hat{j} \mathrm{'\{'} m/s{'\}'}$$
+$$\vec{v}_A = 250\hat{j} \mathrm{ m/s{}$$
 
-$$\vec{v}_B = 200\sin 60°\hat{i} + 200\cos 60°\hat{j} = 173.2\hat{i} + 100\hat{j} \mathrm{'\{'} m/s{'\}'}$$
+$$\vec{v}_B = 200\sin 60°\hat{i} + 200\cos 60°\hat{j} = 173.2\hat{i} + 100\hat{j} \mathrm{ m/s{}$$
 
 **Step 2: Relative velocity**
 
-$$\vec{v}_{AB} = \vec{v}_A - \vec{v}_B = -173.2\hat{i} + (250 - 100)\hat{j} = -173.2\hat{i} + 150\hat{j} \mathrm{'\{'} m/s{'\}'}$$
+$$\vec{v}_{AB} = \vec{v}_A - \vec{v}_B = -173.2\hat{i} + (250 - 100)\hat{j} = -173.2\hat{i} + 150\hat{j} \mathrm{ m/s{}$$
 
 **Step 3: Magnitude and direction**
 
-$$|\vec{v}_{AB}| = \sqrt{173.2^2 + 150^2} = \sqrt{29998 + 22500} = \sqrt{52498} = 229.1 \mathrm{'\{'} m/s{'\}'}$$
+$$|\vec{v}_{AB}| = \sqrt{173.2^2 + 150^2} = \sqrt{29998 + 22500} = \sqrt{52498} = 229.1 \mathrm{ m/s{}$$
 
-$$\theta = \arctan\left(\frac{150}{-173.2}\right) = 180° - 40.9° = 139.1° \mathrm{'\{'} from east{'\}'}$$
+$$\theta = \arctan\left(\frac{150}{-173.2}\right) = 180° - 40.9° = 139.1° \mathrm{ from east{}$$
 
-So the velocity of A relative to B is $229.1 \mathrm{'\{'} m/s{'\}'}$ at $139.1^\circ$ from east (or $50.9^\circ$ west of
+So the velocity of A relative to B is $229.1 \mathrm{ m/s{}$ at $139.1^\circ$ from east (or $50.9^\circ$ west of
 north).
 
 ### Example 17: Non-Uniform Acceleration from a Velocity Function
 
-The velocity of a particle is given by $v(t) = t^3 - 6t^2 + 9t$ (m/s) for $0 \le t \le 5 \mathrm{'\{'} s{'\}'}$.
+The velocity of a particle is given by $v(t) = t^3 - 6t^2 + 9t$ (m/s) for $0 \le t \le 5 \mathrm{ s{}$.
 
 Find (a) when the particle is at rest, (b) the total distance travelled, and (c) the displacement.
 
@@ -729,7 +729,7 @@ Find (a) when the particle is at rest, (b) the total distance travelled, and (c)
 
 $$v(t) = t^3 - 6t^2 + 9t = t(t^2 - 6t + 9) = t(t - 3)^2 = 0$$
 
-$t = 0$ or $t = 3 \mathrm{'\{'} s{'\}'}$.
+$t = 0$ or $t = 3 \mathrm{ s{}$.
 
 **Step 2: Determine the sign of $v$ between critical points**
 
@@ -743,17 +743,17 @@ $t = 3$).
 
 $$s(5) - s(0) = \int_0^5 (t^3 - 6t^2 + 9t) \, dt = \left[ \frac{t^4}{4} - 2t^3 + \frac{9t^2}{2} \right]_0^5$$
 
-$$= \frac{625}{4} - 250 + \frac{225}{2} = 156.25 - 250 + 112.5 = 18.75 \mathrm{'\{'} m{'\}'}$$
+$$= \frac{625}{4} - 250 + \frac{225}{2} = 156.25 - 250 + 112.5 = 18.75 \mathrm{ m{}$$
 
 **Step 4: Acceleration at key points**
 
 $$a(t) = 3t^2 - 12t + 9 = 3(t^2 - 4t + 3) = 3(t - 1)(t - 3)$$
 
-At $t = 0$: $a = 9 \mathrm{'\{'} m/s{'\}'}^2$ (speeding up) At $t = 3$: $a = 3(9 - 12 + 3) = 0 \mathrm{'\{'} m/s{'\}'}^2$
+At $t = 0$: $a = 9 \mathrm{ m/s{}^2$ (speeding up) At $t = 3$: $a = 3(9 - 12 + 3) = 0 \mathrm{ m/s{}^2$
 (momentarily stationary, inflection point)
 
 :::info
-Even though the particle is stationary at $t = 3 \mathrm{'\{'} s{'\}'}$, the acceleration is also zero
+Even though the particle is stationary at $t = 3 \mathrm{ s{}$, the acceleration is also zero
 there, so the particle does not reverse direction. Compare this to projectile motion at the top of
 the trajectory where $v = 0$ but $a = g \ne 0$, so the projectile immediately starts moving
 downward.
@@ -761,15 +761,15 @@ downward.
 
 ### Example 18: Kinematics with Air Resistance
 
-A $70 \mathrm{'\{'} kg{'\}'}$ skydiver falls from rest. The air resistance force is $F_D = kv^2$ where
-$k = 0.25 \mathrm{'\{'} kg/m{'\}'}$. Calculate (a) the terminal velocity, (b) the velocity after $10 \mathrm{'\{'} s{'\}'}$,
-and (c) the distance fallen after $10 \mathrm{'\{'} s{'\}'}$.
+A $70 \mathrm{ kg{}$ skydiver falls from rest. The air resistance force is $F_D = kv^2$ where
+$k = 0.25 \mathrm{ kg/m{}$. Calculate (a) the terminal velocity, (b) the velocity after $10 \mathrm{ s{}$,
+and (c) the distance fallen after $10 \mathrm{ s{}$.
 
 **Step 1: Terminal velocity**
 
 At terminal velocity: $mg = kv_T^2$
 
-$$v_T = \sqrt{\frac{mg}{k}} = \sqrt{\frac{70 \times 9.8}{0.25}} = \sqrt{2744} = 52.4 \mathrm{'\{'} m/s{'\}'}$$
+$$v_T = \sqrt{\frac{mg}{k}} = \sqrt{\frac{70 \times 9.8}{0.25}} = \sqrt{2744} = 52.4 \mathrm{ m/s{}$$
 
 **Step 2: Analytical solution**
 
@@ -783,15 +783,15 @@ $$v(10) = 52.4 \times \tanh\left(\frac{9.8 \times 10}{52.4}\right) = 52.4 \times
 
 $$\tanh(1.870) = \frac{e^{3.74} - e^{-3.74}}{e^{3.74} + e^{-3.74}} = \frac{42.10 - 0.0238}{42.10 + 0.0238} = 0.9989$$
 
-$$v(10) = 52.4 \times 0.9989 = 52.3 \mathrm{'\{'} m/s{'\}'}$$
+$$v(10) = 52.4 \times 0.9989 = 52.3 \mathrm{ m/s{}$$
 
-The skydiver has essentially reached terminal velocity after $10 \mathrm{'\{'} s{'\}'}$.
+The skydiver has essentially reached terminal velocity after $10 \mathrm{ s{}$.
 
 **Step 3: Distance fallen**
 
 $$y(t) = \frac{v_T^2}{g}\ln\left(\cosh\left(\frac{gt}{v_T}\right)\right)$$
 
-$$y(10) = \frac{2744}{9.8}\ln(\cosh(1.870)) = 280 \times \ln(3.263) = 280 \times 1.183 = 331.2 \mathrm{'\{'} m{'\}'}$$
+$$y(10) = \frac{2744}{9.8}\ln(\cosh(1.870)) = 280 \times \ln(3.263) = 280 \times 1.183 = 331.2 \mathrm{ m{}$$
 
 ## Common Pitfalls Extended
 
@@ -803,8 +803,8 @@ mid-problem, especially when combining horizontal and vertical components.
 
 ### Pitfall 7: Confusing Average Velocity with Average Speed
 
-Average velocity $= \frac{\mathrm{'\{'}displacement{'\}'}}{\mathrm{'\{'}time{'\}'}}$ (a vector, can be zero for round
-trips). Average speed $= \frac{\mathrm{'\{'}total distance{'\}'}}{\mathrm{'\{'}time{'\}'}}$ (a scalar, always positive).
+Average velocity $= \frac{\mathrm{displacement{}}{\mathrm{time{}}$ (a vector, can be zero for round
+trips). Average speed $= \frac{\mathrm{total distance{}}{\mathrm{time{}}$ (a scalar, always positive).
 They are equal only for motion in one direction without reversing.
 
 ### Pitfall 8: Assuming Graph Slopes Give Instantaneous Values Everywhere
@@ -816,33 +816,33 @@ between two points is not the same as the instantaneous slope.
 
 ## Additional Practice Problems
 
-16. A ball is thrown upward from the top of a $50 \mathrm{'\{'} m{'\}'}$ building at $20 \mathrm{'\{'} m/s{'\}'}$. Calculate
+16. A ball is thrown upward from the top of a $50 \mathrm{ m{}$ building at $20 \mathrm{ m/s{}$. Calculate
     (a) the maximum height above ground, (b) the time to reach maximum height, (c) the total time in
     the air, and (d) the velocity just before impact with the ground.
 
-17. A police car chasing a speeding motorist. The motorist passes at $30 \mathrm{'\{'} m/s{'\}'}$. The police
-    car starts $2 \mathrm{'\{'} s{'\}'}$ later with acceleration $3 \mathrm{'\{'} m/s{'\}'}^2$. Calculate (a) when and where
+17. A police car chasing a speeding motorist. The motorist passes at $30 \mathrm{ m/s{}$. The police
+    car starts $2 \mathrm{ s{}$ later with acceleration $3 \mathrm{ m/s{}^2$. Calculate (a) when and where
     the police car catches the motorist, and (b) the speeds of both vehicles at that moment.
 
-18. A projectile is launched from a cliff of height $80 \mathrm{'\{'} m{'\}'}$ at $50 \mathrm{'\{'} m/s{'\}'}$ at $40^\circ$
+18. A projectile is launched from a cliff of height $80 \mathrm{ m{}$ at $50 \mathrm{ m/s{}$ at $40^\circ$
     above the horizontal. Calculate (a) the time of flight, (b) the maximum height above the launch
     point, (c) the horizontal range, and (d) the velocity (magnitude and direction) at impact.
 
-19. Two trains approach each other on parallel tracks. Train A travels at $60 \mathrm{'\{'} m/s{'\}'}$ and Train
-    B at $40 \mathrm{'\{'} m/s{'\}'}$. A bird flies at $80 \mathrm{'\{'} m/s{'\}'}$ from Train A to Train B and back
-    repeatedly until the trains meet. If the trains are initially $2 \mathrm{'\{'} km{'\}'}$ apart, calculate
+19. Two trains approach each other on parallel tracks. Train A travels at $60 \mathrm{ m/s{}$ and Train
+    B at $40 \mathrm{ m/s{}$. A bird flies at $80 \mathrm{ m/s{}$ from Train A to Train B and back
+    repeatedly until the trains meet. If the trains are initially $2 \mathrm{ km{}$ apart, calculate
     the total distance the bird flies.
 
 20. The position of a particle is given by $x(t) = 2t^3 - 9t^2 + 12t + 1$ (m). Find (a) the times
     when the particle changes direction, (b) the total distance travelled between $t = 0$ and
-    $t = 4 \mathrm{'\{'} s{'\}'}$, and (c) the average velocity and average speed over this interval.
+    $t = 4 \mathrm{ s{}$, and (c) the average velocity and average speed over this interval.
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Two-object kinematics with relative motion</summary>
 
-A ball is thrown vertically upward from ground level with initial velocity $20 \mathrm{'\{'} m/s{'\}'}$. One second later, a second ball is dropped from a height of $50 \mathrm{'\{'} m{'\}'}$. At what height above the ground do the two balls meet? Take $g = 9.8 \mathrm{'\{'} m/s^2{'\}'}$.
+A ball is thrown vertically upward from ground level with initial velocity $20 \mathrm{ m/s{}$. One second later, a second ball is dropped from a height of $50 \mathrm{ m{}$. At what height above the ground do the two balls meet? Take $g = 9.8 \mathrm{ m/s^2{}$.
 
 </details>
 
@@ -855,11 +855,11 @@ Ball 2 (dropped at $t = 1$): $y_2 = 50 - 4.9(t - 1)^2$ for $t \ge 1$.
 
 Set $y_1 = y_2$: $20t - 4.9t^2 = 50 - 4.9(t^2 - 2t + 1) = 50 - 4.9t^2 + 9.8t - 4.9 = 45.1 - 4.9t^2 + 9.8t$.
 
-$20t = 45.1 + 9.8t$, so $10.2t = 45.1$, $t = 4.42 \mathrm{'\{'} s{'\}'}$.
+$20t = 45.1 + 9.8t$, so $10.2t = 45.1$, $t = 4.42 \mathrm{ s{}$.
 
-Height: $y_1 = 20(4.42) - 4.9(4.42)^2 = 88.4 - 95.7 = -7.3 \mathrm{'\{'} m{'\}'}$.
+Height: $y_1 = 20(4.42) - 4.9(4.42)^2 = 88.4 - 95.7 = -7.3 \mathrm{ m{}$.
 
-This is negative, meaning the balls don't meet before ball 1 hits the ground. Ball 1 lands when $y_1 = 0$: $20t - 4.9t^2 = 0$, $t = 20/4.9 = 4.08 \mathrm{'\{'} s{'\}'}$.
+This is negative, meaning the balls don't meet before ball 1 hits the ground. Ball 1 lands when $y_1 = 0$: $20t - 4.9t^2 = 0$, $t = 20/4.9 = 4.08 \mathrm{ s{}$.
 
 Since $4.42 > 4.08$, ball 1 has already landed. The balls do not meet in the air.
 
@@ -868,7 +868,7 @@ Since $4.42 > 4.08$, ball 1 has already landed. The balls do not meet in the air
 <details>
 <summary>Question 2: Projectile motion with angle optimization</summary>
 
-A football is kicked from ground level with speed $25 \mathrm{'\{'} m/s{'\}'}$. At what angle should it be kicked to maximise the range? Calculate the maximum range and the time of flight.
+A football is kicked from ground level with speed $25 \mathrm{ m/s{}$. At what angle should it be kicked to maximise the range? Calculate the maximum range and the time of flight.
 
 </details>
 
@@ -877,16 +877,16 @@ A football is kicked from ground level with speed $25 \mathrm{'\{'} m/s{'\}'}$. 
 
 For maximum range on level ground, the launch angle is $45^\circ$.
 
-Range: $R = \frac{v^2 \sin(2\theta)}{g} = \frac{25^2 \sin(90^\circ)}{9.8} = \frac{625}{9.8} = 63.8 \mathrm{'\{'} m{'\}'}$.
+Range: $R = \frac{v^2 \sin(2\theta)}{g} = \frac{25^2 \sin(90^\circ)}{9.8} = \frac{625}{9.8} = 63.8 \mathrm{ m{}$.
 
-Time of flight: $T = \frac{2v \sin\theta}{g} = \frac{2 \times 25 \times \sin(45^\circ)}{9.8} = \frac{35.36}{9.8} = 3.61 \mathrm{'\{'} s{'\}'}$.
+Time of flight: $T = \frac{2v \sin\theta}{g} = \frac{2 \times 25 \times \sin(45^\circ)}{9.8} = \frac{35.36}{9.8} = 3.61 \mathrm{ s{}$.
 
 </details>
 
 <details>
 <summary>Question 3: Kinematics with calculus</summary>
 
-The velocity of a particle is given by $v(t) = 6t^2 - 18t + 12 \mathrm{'\{'} m/s{'\}'}$ for $0 \le t \le 4 \mathrm{'\{'} s{'\}'}$. Find the total distance travelled and the displacement.
+The velocity of a particle is given by $v(t) = 6t^2 - 18t + 12 \mathrm{ m/s{}$ for $0 \le t \le 4 \mathrm{ s{}$. Find the total distance travelled and the displacement.
 
 </details>
 
@@ -897,7 +897,7 @@ Set $v = 0$: $6t^2 - 18t + 12 = 0$, $t^2 - 3t + 2 = 0$, $(t-1)(t-2) = 0$. Direct
 
 Acceleration: $a = dv/dt = 12t - 18$.
 
-Displacement = $\int_0^4 v \, dt = [2t^3 - 9t^2 + 12t]_0^4 = 128 - 144 + 48 = 32 \mathrm{'\{'} m{'\}'}$.
+Displacement = $\int_0^4 v \, dt = [2t^3 - 9t^2 + 12t]_0^4 = 128 - 144 + 48 = 32 \mathrm{ m{}$.
 
 Total distance = $\int_0^1 v \, dt + |\int_1^2 v \, dt| + \int_2^4 v \, dt$.
 
@@ -905,7 +905,7 @@ $\int_0^1 = [2 - 9 + 12] = 5$.
 $\int_1^2 = [16 - 36 + 24] - [2 - 9 + 12] = 4 - 5 = -1$, absolute value = 1.
 $\int_2^4 = [128 - 144 + 48] - [16 - 36 + 24] = 32 - 44 = -12$, absolute value = 12.
 
-Total distance = $5 + 1 + 12 = 18 \mathrm{'\{'} m{'\}'}$.
+Total distance = $5 + 1 + 12 = 18 \mathrm{ m{}$.
 
 Displacement = 32 m, total distance = 18 m.
 
@@ -932,21 +932,21 @@ Terminal velocity depends on mass, cross-sectional area, drag coefficient, and a
 <details>
 <summary>Question 5: Relative motion in two dimensions</summary>
 
-A boat can travel at $5 \mathrm{'\{'} m/s{'\}'}$ in still water. It needs to cross a river that is $100 \mathrm{'\{'} m{'\}'}$ wide, flowing at $3 \mathrm{'\{'} m/s{'\}'}$. If the boat heads directly across the river, how far downstream is it carried? What heading should the boat take to land directly across from the starting point?
+A boat can travel at $5 \mathrm{ m/s{}$ in still water. It needs to cross a river that is $100 \mathrm{ m{}$ wide, flowing at $3 \mathrm{ m/s{}$. If the boat heads directly across the river, how far downstream is it carried? What heading should the boat take to land directly across from the starting point?
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Heading directly across: Time to cross = $100 / 5 = 20 \mathrm{'\{'} s{'\}'}$.
-Downstream distance = $3 \times 20 = 60 \mathrm{'\{'} m{'\}'}$.
+Heading directly across: Time to cross = $100 / 5 = 20 \mathrm{ s{}$.
+Downstream distance = $3 \times 20 = 60 \mathrm{ m{}$.
 
 To land directly across: The boat must angle upstream so its upstream component cancels the current. Let $\theta$ be the angle upstream from the line perpendicular to the bank.
 
 $5\sin\theta = 3$, so $\sin\theta = 3/5 = 0.6$, $\theta = 36.9^\circ$.
 
-Velocity across river: $5\cos\theta = 5 \times 0.8 = 4 \mathrm{'\{'} m/s{'\}'}$.
-Time to cross: $100 / 4 = 25 \mathrm{'\{'} s{'\}'}$.
+Velocity across river: $5\cos\theta = 5 \times 0.8 = 4 \mathrm{ m/s{}$.
+Time to cross: $100 / 4 = 25 \mathrm{ s{}$.
 
 </details>

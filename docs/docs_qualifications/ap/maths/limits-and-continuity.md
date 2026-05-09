@@ -209,7 +209,7 @@ For rational functions $\displaystyle\frac{P(x)}{Q(x)}$ where $P$ and $Q$ are po
 
 - If $\deg P \lt \deg Q$: $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = 0$
 - If $\deg P = \deg Q$:
-  $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = \frac{\mathrm{'\{'}leading coeff of {'\}'} P}{\mathrm{'\{'}leading coeff of {'\}'} Q}$
+  $\displaystyle\lim_{x \to \pm\infty} \frac{P(x)}{Q(x)} = \frac{\mathrm{leading coeff of {} P}{\mathrm{leading coeff of {} Q}$
 - If $\deg P \gt \deg Q$: the limit is $\pm\infty$
 
 **Why this works.** For large $x$, the leading term dominates. Dividing numerator and denominator by
@@ -485,7 +485,7 @@ The general approach is:
 1. Start with $|f(x) - L|$ and try to bound it in terms of $|x - a|$.
 2. If $f$ involves products, use the "restrict delta" technique: bound each factor separately.
 3. If $f$ involves roots, rationalise and use the fact that $\sqrt{x} + \sqrt{a} \ge \sqrt{a}$.
-4. Choose $\delta = \min(\mathrm{'\{'}bound{'\}'}, \epsilon / \mathrm{'\{'}constant{'\}'})$ to handle both the
+4. Choose $\delta = \min(\mathrm{bound{}, \epsilon / \mathrm{constant{})$ to handle both the
    restriction and the $\epsilon$ requirement.
 
 ## Continuity (CED Unit 1)
@@ -877,7 +877,7 @@ $= \lim_{x \to 0} \frac{\sin x}{x(1 + \cos x)} = \lim_{x \to 0} \frac{\sin x}{x}
 
 Determine whether the following function is continuous at $x = 1$:
 
-$$f(x) = \begin{cases} \frac{x^2 - 1}{x - 1} & \mathrm{'\{'}if {'\}'} x \ne 1 \\ 4 & \mathrm{'\{'}if {'\}'} x = 1 \end{cases}$$
+$$f(x) = \begin{cases} \frac{x^2 - 1}{x - 1} & \mathrm{if {} x \ne 1 \\ 4 & \mathrm{if {} x = 1 \end{cases}$$
 
 </details>
 

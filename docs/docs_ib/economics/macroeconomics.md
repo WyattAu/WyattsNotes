@@ -36,19 +36,19 @@ changes in prices.
 
 **Real GDP** adjusts for price level changes and is a better measure of actual output growth:
 
-$$\mathrm{'\{'}Real\ GDP{'\}'} = \frac{\mathrm{'\{'}Nominal\ GDP{'\}'}}{\mathrm{'\{'}GDP\ Deflator{'\}'}} \times 100$$
+$$\mathrm{Real\ GDP{} = \frac{\mathrm{Nominal\ GDP{}}{\mathrm{GDP\ Deflator{}} \times 100$$
 
 The **GDP deflator** is a broad measure of the price level that includes all domestically produced
 goods and services:
 
-$$\mathrm{'\{'}GDP\ Deflator{'\}'} = \frac{\mathrm{'\{'}Nominal\ GDP{'\}'}}{\mathrm{'\{'}Real\ GDP{'\}'}} \times 100$$
+$$\mathrm{GDP\ Deflator{} = \frac{\mathrm{Nominal\ GDP{}}{\mathrm{Real\ GDP{}} \times 100$$
 
 ### GNP and GNI
 
 **Gross National Product (GNP)** measures the total output produced by a country's residents
 regardless of where it is produced:
 
-$$\mathrm{'\{'}GNP{'\}'} = \mathrm{'\{'}GDP{'\}'} + \text{'\{'}Net factor income from abroad{'\}'}$$
+$$\mathrm{GNP{} = \mathrm{GDP{} + \text{'\{'}Net factor income from abroad{'\}'}$$
 
 Net factor income from abroad includes wages, profits, and rent earned by domestic residents from
 their foreign investments, minus the corresponding income earned by foreign residents within the
@@ -57,11 +57,11 @@ domestic economy.
 **Gross National Income (GNI)** is the preferred modern measure and is conceptually equivalent to
 GNP. It includes net primary income from abroad (compensation of employees, investment income):
 
-$$\mathrm{'\{'}GNI{'\}'} = \mathrm{'\{'}GDP{'\}'} + \text{'\{'}Net primary income from abroad{'\}'}$$
+$$\mathrm{GNI{} = \mathrm{GDP{} + \text{'\{'}Net primary income from abroad{'\}'}$$
 
 ### GDP per Capita and Purchasing Power Parity
 
-**GDP per capita** ($\mathrm{'\{'}GDP{'\}'} / \mathrm{'\{'}Population{'\}'}$) is used as a rough proxy for living
+**GDP per capita** ($\mathrm{GDP{} / \mathrm{Population{}$) is used as a rough proxy for living
 standards but has significant limitations:
 
 - Does not account for income distribution
@@ -96,7 +96,7 @@ Inflation is the sustained increase in the general price level over time. The pr
 **Consumer Price Index (CPI)**, which tracks the price of a weighted basket of goods and services
 representative of household consumption.
 
-$$\mathrm{'\{'}Inflation\ rate{'\}'} = \frac{\mathrm{'\{'}CPI{'\}'}_t - \mathrm{'\{'}CPI{'\}'}_{t-1}}{\mathrm{'\{'}CPI{'\}'}_{t-1}} \times 100$$
+$$\mathrm{Inflation\ rate{} = \frac{\mathrm{CPI{}_t - \mathrm{CPI{}_{t-1}}{\mathrm{CPI{}_{t-1}} \times 100$$
 
 **Constructing the CPI:**
 
@@ -121,7 +121,7 @@ $$\mathrm{'\{'}Inflation\ rate{'\}'} = \frac{\mathrm{'\{'}CPI{'\}'}_t - \mathrm{
 **Demand-pull inflation** occurs when aggregate demand exceeds aggregate supply at full employment,
 creating an inflationary gap:
 
-$$\mathrm{'\{'}AD{'\}'} > \mathrm{'\{'}LRAS{'\}'} \implies \mathrm{'\{'}Price\ level\ rises{'\}'}$$
+$$\mathrm{AD{} > \mathrm{LRAS{} \implies \mathrm{Price\ level\ rises{}$$
 
 Causes include excessive growth in the money supply, large budget deficits, rising consumer
 confidence, or export booms.
@@ -215,7 +215,7 @@ higher inflation rate.
 The **unemployment rate** is the percentage of the labour force that is actively seeking work but
 unable to find it:
 
-$$\mathrm{'\{'}Unemployment\ rate{'\}'} = \frac{\mathrm{'\{'}Number\ unemployed{'\}'}}{\mathrm{'\{'}Labour\ force{'\}'}} \times 100$$
+$$\mathrm{Unemployment\ rate{} = \frac{\mathrm{Number\ unemployed{}}{\mathrm{Labour\ force{}} \times 100$$
 
 The labour force includes all employed persons plus those actively seeking work. It excludes
 discouraged workers (those who have given up looking for work) and those not seeking work (students,
@@ -291,7 +291,7 @@ output. The natural rate is not fixed; it can change due to:
 
 AD is the total planned expenditure on goods and services at each price level:
 
-$$\mathrm{'\{'}AD{'\}'} = C + I + G + (X - M)$$
+$$\mathrm{AD{} = C + I + G + (X - M)$$
 
 The AD curve slopes downward due to:
 
@@ -399,28 +399,28 @@ change in national income through successive rounds of spending and re-spending.
 
 **Simple multiplier (no taxes, no imports):**
 
-$$k = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}} = \frac{1}{\mathrm{'\{'}MPS{'\}'}}$$
+$$k = \frac{1}{1 - \mathrm{MPC{}} = \frac{1}{\mathrm{MPS{}}$$
 
-Where MPC is the marginal propensity to consume and MPS is the marginal propensity to save ($\mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPS{'\}'} = 1$).
+Where MPC is the marginal propensity to consume and MPS is the marginal propensity to save ($\mathrm{MPC{} + \mathrm{MPS{} = 1$).
 
 An initial government spending increase of $\Delta G$ leads to a total change in output of:
 
-$$\Delta Y = k \times \Delta G = \frac{\Delta G}{1 - \mathrm{'\{'}MPC{'\}'}}$$
+$$\Delta Y = k \times \Delta G = \frac{\Delta G}{1 - \mathrm{MPC{}}$$
 
 **The multiplier with proportional taxation:**
 
-$$k_T = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}(1 - t)}$$
+$$k_T = \frac{1}{1 - \mathrm{MPC{}(1 - t)}$$
 
 Where $t$ is the marginal tax rate. Higher taxes reduce the multiplier because they leak spending
 power out of the circular flow at each round.
 
 **The multiplier with imports:**
 
-$$k_{T,M} = \frac{1}{\mathrm{'\{'}MPS{'\}'} + t \times \mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPM{'\}'}}$$
+$$k_{T,M} = \frac{1}{\mathrm{MPS{} + t \times \mathrm{MPC{} + \mathrm{MPM{}}$$
 
 Where MPM is the marginal propensity to import. Imports are a leakage from the circular flow.
 
-**Worked example:** if $\mathrm{'\{'}MPC{'\}'} = 0.75$, $t = 0.2$, and $\mathrm{'\{'}MPM{'\}'} = 0.1$:
+**Worked example:** if $\mathrm{MPC{} = 0.75$, $t = 0.2$, and $\mathrm{MPM{} = 0.1$:
 
 $$k = \frac{1}{0.25 + 0.2 \times 0.75 + 0.1} = \frac{1}{0.25 + 0.15 + 0.1} = \frac{1}{0.50} = 2$$
 
@@ -773,7 +773,7 @@ $$GDP = 4200 + 1100 + 1500 + (-150) = \$6650 \text{'\{'} billion{'\}'}$$
 
 Net exports $= X - M = 800 - 950 = -\$150$ billion (a trade deficit).
 
-(b) $\mathrm{'\{'}Real\ GDP{'\}'} = \frac{\mathrm{'\{'}Nominal\ GDP{'\}'}}{\mathrm{'\{'}GDP\ Deflator{'\}'}} \times 100 = \frac{6650}{115} \times 100 = \$5782.6 \text{'\{'} billion{'\}'}$
+(b) $\mathrm{Real\ GDP{} = \frac{\mathrm{Nominal\ GDP{}}{\mathrm{GDP\ Deflator{}} \times 100 = \frac{6650}{115} \times 100 = \$5782.6 \text{'\{'} billion{'\}'}$
 
 (c) GDP per capita $= \frac{6650 \times 10^9}{50 \times 10^6} = \$133\,000$
 
@@ -791,7 +791,7 @@ year 1 and `USD 52,000` in year 2.
 
 (c) Has the worker's purchasing power increased or decreased?
 
-(a) $\mathrm{'\{'}Inflation\ rate{'\}'} = \frac{252 - 240}{240} \times 100 = \frac{12}{240} \times 100 = 5\%$
+(a) $\mathrm{Inflation\ rate{} = \frac{252 - 240}{240} \times 100 = \frac{12}{240} \times 100 = 5\%$
 
 (b) Real income in year 2 $= \frac{52\,000}{252/240} = \frac{52\,000}{1.05} = \$49\,523.81$
 
@@ -813,9 +813,9 @@ the marginal tax rate is $0.2$, and the marginal propensity to import is $0.15$.
 
 (c) Explain why this multiplier is smaller than the simple multiplier.
 
-(a) $\mathrm{'\{'}MPS{'\}'} = 1 - 0.75 = 0.25$
+(a) $\mathrm{MPS{} = 1 - 0.75 = 0.25$
 
-$$k = \frac{1}{\mathrm{'\{'}MPS{'\}'} + t \times \mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPM{'\}'}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15}$$
+$$k = \frac{1}{\mathrm{MPS{} + t \times \mathrm{MPC{} + \mathrm{MPM{}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15}$$
 $$k = \frac{1}{0.25 + 0.15 + 0.15} = \frac{1}{0.55} = 1.818$$
 
 (b) $\Delta Y = k \times \Delta G = 1.818 \times 50 = \$90.9 \text{'\{'} billion{'\}'}$
@@ -1551,7 +1551,7 @@ An economy has the following characteristics:
 (c) If the government wants to close a recessionary gap of `USD 80` billion, by how much should it
 increase government spending? By how much should it cut taxes to achieve the same result?
 
-(a) $k = \frac{1}{\mathrm{'\{'}MPS{'\}'} + t \cdot \mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPM{'\}'}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15} = \frac{1}{0.25 + 0.15 + 0.15} = \frac{1}{0.55} = 1.818$
+(a) $k = \frac{1}{\mathrm{MPS{} + t \cdot \mathrm{MPC{} + \mathrm{MPM{}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15} = \frac{1}{0.25 + 0.15 + 0.15} = \frac{1}{0.55} = 1.818$
 
 Autonomous expenditure $= C_{\text{'\{'}aut{'\}'}} + I + G + X - M_{\text{'\{'}aut{'\}'}} = 100 + 250 + 300 + 120 - 40 = 730$
 
@@ -1559,7 +1559,7 @@ $Y^* = k \times \text{'\{'}Autonomous expenditure{'\}'} = 1.818 \times 730 = 132
 
 (b) Spending multiplier: $k_G = 1.818$
 
-Tax multiplier: $k_T = \frac{-\mathrm{'\{'}MPC{'\}'}}{1 - \mathrm{'\{'}MPC{'\}'}(1-t) + \mathrm{'\{'}MPM{'\}'}} = \frac{-0.75}{0.55} = -1.364$
+Tax multiplier: $k_T = \frac{-\mathrm{MPC{}}{1 - \mathrm{MPC{}(1-t) + \mathrm{MPM{}} = \frac{-0.75}{0.55} = -1.364$
 
 Balanced budget multiplier: $k_B = k_G + k_T = 1.818 + (-1.364) = 0.454$
 

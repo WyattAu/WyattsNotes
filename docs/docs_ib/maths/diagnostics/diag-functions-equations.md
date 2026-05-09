@@ -21,7 +21,7 @@ Given $f(x) = \sqrt{x - 3}$ and $g(x) = \dfrac{1}{x - 1}$:
 
 **(b)** Find the domain of $g \circ f$.
 
-**(c)** A student claims that $\mathrm{'\{'}dom{'\}'}(f \circ g) = \mathrm{'\{'}dom{'\}'}(g)$. Explain why this is incorrect.
+**(c)** A student claims that $\mathrm{dom{}(f \circ g) = \mathrm{dom{}(g)$. Explain why this is incorrect.
 
 [Difficulty: hard. Tests the subtle but critical rule that the domain of $f \circ g$ excludes values where $g(x)$ falls outside the domain of $f$.]
 
@@ -52,7 +52,7 @@ Domain restrictions:
 
 Domain of $g \circ f$: $[3, 4) \cup (4, \infty)$.
 
-**(c)** The student is incorrect. $\mathrm{'\{'}dom{'\}'}(f \circ g)$ is not $\mathrm{'\{'}dom{'\}'}(g)$. It is the subset of $\mathrm{'\{'}dom{'\}'}(g)$ for which $g(x)$ falls within $\mathrm{'\{'}dom{'\}'}(f)$. Here $\mathrm{'\{'}dom{'\}'}(g) = \mathbb{'\{'}R{'\}'} \setminus \{1\}$, but $\mathrm{'\{'}dom{'\}'}(f \circ g) = \left(1, \frac{4}{3}\right]$, which is a proper subset.
+**(c)** The student is incorrect. $\mathrm{dom{}(f \circ g)$ is not $\mathrm{dom{}(g)$. It is the subset of $\mathrm{dom{}(g)$ for which $g(x)$ falls within $\mathrm{dom{}(f)$. Here $\mathrm{dom{}(g) = \mathbb{'\{'}R{'\}'} \setminus \{1\}$, but $\mathrm{dom{}(f \circ g) = \left(1, \frac{4}{3}\right]$, which is a proper subset.
 
 ---
 

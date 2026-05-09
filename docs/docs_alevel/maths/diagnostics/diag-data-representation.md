@@ -388,7 +388,7 @@ $$f(x) = \begin{cases} \frac{3}{64}x^2 & \quad 0 \leq x \leq 4 \\ 0 & \quad \tex
 
 **(c)** Find the interquartile range of $X$.
 
-**(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes $0 \leq x \lt 1$, $1 \leq x \lt 2$, $2 \leq x \lt 3$, $3 \leq x \lt 4$. Estimate the mean and standard deviation from this grouped data, and compare your answers with the true values $\mathrm{'\{'}E{'\}'}(X) = 3$ and $\mathrm{'\{'}SD{'\}'}(X) = \frac{3}{\sqrt{5}}$. Comment on the accuracy of the grouped estimates.
+**(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes $0 \leq x \lt 1$, $1 \leq x \lt 2$, $2 \leq x \lt 3$, $3 \leq x \lt 4$. Estimate the mean and standard deviation from this grouped data, and compare your answers with the true values $\mathrm{E{}(X) = 3$ and $\mathrm{SD{}(X) = \frac{3}{\sqrt{5}}$. Comment on the accuracy of the grouped estimates.
 
 [Difficulty: hard. Combines integration of a PDF, quartile calculation, and comparison of grouped vs exact statistics.]
 
@@ -420,11 +420,11 @@ $$\text{'\{'}IQR{'\}'} = Q_3 - Q_1 = 3.634 - 2.520 = 1.114 \approx 1.11 \text{'\
 
 **(d)** First, the true expected value:
 
-$$\mathrm{'\{'}E{'\}'}(X) = \int_{0}^{4} x \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^3\,dx = \frac{3}{64}\left[\frac{x^4}{4}\right]_0^4 = \frac{3}{64} \cdot 64 = 3$$
+$$\mathrm{E{}(X) = \int_{0}^{4} x \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^3\,dx = \frac{3}{64}\left[\frac{x^4}{4}\right]_0^4 = \frac{3}{64} \cdot 64 = 3$$
 
-$$\mathrm{'\{'}E{'\}'}(X^2) = \int_{0}^{4} x^2 \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^4\,dx = \frac{3}{64}\left[\frac{x^5}{5}\right]_0^4 = \frac{3}{64} \cdot \frac{1024}{5} = \frac{3072}{320} = \frac{48}{5} = 9.6$$
+$$\mathrm{E{}(X^2) = \int_{0}^{4} x^2 \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^4\,dx = \frac{3}{64}\left[\frac{x^5}{5}\right]_0^4 = \frac{3}{64} \cdot \frac{1024}{5} = \frac{3072}{320} = \frac{48}{5} = 9.6$$
 
-$$\mathrm{'\{'}Var{'\}'}(X) = 9.6 - 9 = 0.6, \quad \mathrm{'\{'}SD{'\}'}(X) = \sqrt{0.6} = \frac{3}{\sqrt{5}} \approx 0.7746$$
+$$\mathrm{Var{}(X) = 9.6 - 9 = 0.6, \quad \mathrm{SD{}(X) = \sqrt{0.6} = \frac{3}{\sqrt{5}} \approx 0.7746$$
 
 Now the grouped estimates. We need the class frequencies. Since we are modelling from the PDF, the expected frequency in each class (out of a large sample) is proportional to the class probability:
 
@@ -441,7 +441,7 @@ The true mean is 3. The grouped estimate underestimates by about 0.06, or roughl
 
 Estimated variance:
 
-$$\mathrm{'\{'}E{'\}'}(X^2) \approx 0.00391 + 0.24609 + 1.85547 + 7.08203 = 9.1875$$
+$$\mathrm{E{}(X^2) \approx 0.00391 + 0.24609 + 1.85547 + 7.08203 = 9.1875$$
 
 $$\text{'\{'}Estimated Var{'\}'} \approx 9.1875 - 2.9375^2 = 9.1875 - 8.6289 = 0.5586$$
 

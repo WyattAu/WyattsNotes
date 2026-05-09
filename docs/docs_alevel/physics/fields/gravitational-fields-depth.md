@@ -28,7 +28,7 @@ where $G = 6.67 \times 10^{-11}$ N m$^2$ kg$^{-2}$ is the gravitational constant
 Consider a point mass emitting gravitational flux uniformly in all directions. The flux through a
 sphere of radius $r$ is constant (by Gauss's law for gravity):
 
-$$\oint \mathbf{'\{'}g{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = -4\pi G M_{\mathrm{'\{'}enc{'\}'}}$$
+$$\oint \mathbf{'\{'}g{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = -4\pi G M_{\mathrm{enc{}}$$
 
 Since the surface area is $4\pi r^2$, the flux density (field strength) must be $g = GM/r^2$. The
 force on a test mass $m$ is then $F = mg = GMm/r^2$. This inverse square law is a direct geometric
@@ -181,12 +181,12 @@ $\square$
 
 ### Relationship to Orbital Speed
 
-The circular orbital speed at radius $r$ is $v_{\mathrm{'\{'}orb{'\}'}} = \sqrt{GM/r}$. Therefore:
+The circular orbital speed at radius $r$ is $v_{\mathrm{orb{}} = \sqrt{GM/r}$. Therefore:
 
-$$v_e = \sqrt{2}\,v_{\mathrm{'\{'}orb{'\}'}}$$
+$$v_e = \sqrt{2}\,v_{\mathrm{orb{}}$$
 
 Escape requires exactly twice the kinetic energy of a circular orbit: $\frac{1}{2}mv_e^2 = 2 \times
-\frac{1}{2}mv_{\mathrm{'\{'}orb{'\}'}}^2$. A spacecraft in circular orbit needs a speed increase of
+\frac{1}{2}mv_{\mathrm{orb{}}^2$. A spacecraft in circular orbit needs a speed increase of
 $(\sqrt{2} - 1) \times 100\% \approx 41.4\%$ to escape.
 
 <details>
@@ -216,13 +216,13 @@ For a satellite of mass $m$ in a circular orbit of radius $r$ around mass $M$:
 | Centripetal acceleration | $a = GM/r^2 = g$ |
 | Kinetic energy | $E_k = GMm/(2r)$ |
 | Potential energy | $E_p = -GMm/r$ |
-| Total energy | $E_{\mathrm{'\{'}total{'\}'}} = -GMm/(2r)$ |
+| Total energy | $E_{\mathrm{total{}} = -GMm/(2r)$ |
 
 **Proof of energy relations.** From $\frac{GMm}{r^2} = \frac{mv^2}{r}$: $v^2 = GM/r$.
 
 $E_k = \frac{1}{2}mv^2 = \frac{GMm}{2r}$. $E_p = -GMm/r$. Total: $E_k + E_p = -\frac{GMm}{2r}$.
 
-Note: $E_k = \frac{1}{2}|E_p|$ and $E_{\mathrm{'\{'}total{'\}'}} = E_k$. This is the virial theorem for bound
+Note: $E_k = \frac{1}{2}|E_p|$ and $E_{\mathrm{total{}} = E_k$. This is the virial theorem for bound
 gravitational systems: $2E_k + E_p = 0$. $\square$
 
 **Key insight.** The total energy is negative — the satellite is gravitationally bound. To move to a
@@ -283,7 +283,7 @@ $\boldsymbol{'\{'}\tau{'\}'} = \mathbf{'\{'}r{'\}'} \times \mathbf{'\{'}F{'\}'} 
 
 Area swept in time $dt$: $dA = \frac{1}{2}r \cdot v_\perp\,dt = \frac{L}{2m}\,dt$.
 
-$$\frac{dA}{dt} = \frac{L}{2m} = \mathrm{'\{'}const{'\}'}$$
+$$\frac{dA}{dt} = \frac{L}{2m} = \mathrm{const{}$$
 
 $\square$
 
@@ -319,13 +319,13 @@ one sidereal day ($T = 86164$ s), causing the satellite to remain fixed above a 
 
 $$r^3 = \frac{GMT^2}{4\pi^2} = \frac{3.98 \times 10^{14} \times (86164)^2}{4\pi^2} = 7.54 \times 10^{22}$$
 
-$$\boxed{r = 4.22 \times 10^7\ \mathrm{'\{'}m{'\}'} = 42\,200\ \mathrm{'\{'}km{'\}'}}$$
+$$\boxed{r = 4.22 \times 10^7\ \mathrm{m{} = 42\,200\ \mathrm{km{}}$$
 
 Altitude above Earth's surface: $h = 42200 - 6370 = 35\,830$ km.
 
 ### Orbital Speed
 
-$$v = \sqrt{\frac{GM}{r}} = \frac{2\pi r}{T} = 3070\ \mathrm{'\{'}m\,s{'\}'}^{-1}$$
+$$v = \sqrt{\frac{GM}{r}} = \frac{2\pi r}{T} = 3070\ \mathrm{m\,s{}^{-1}$$
 
 ### Three Necessary and Sufficient Conditions
 
@@ -402,9 +402,9 @@ Prove that the gravitational field inside a uniform solid sphere of radius $R$ a
 the centre is $g = GMr/R^3$.
 
 **Answer.** By the shell theorem, only the mass within radius $r$ contributes. For uniform density
-$\rho = 3M/(4\pi R^3)$, the enclosed mass is $M_{\mathrm{'\{'}enc{'\}'}} = \rho \cdot 4\pi r^3/3 = Mr^3/R^3$.
+$\rho = 3M/(4\pi R^3)$, the enclosed mass is $M_{\mathrm{enc{}} = \rho \cdot 4\pi r^3/3 = Mr^3/R^3$.
 
-$g = \frac{GM_{\mathrm{'\{'}enc{'\}'}}}{r^2} = \frac{GMr^3/R^3}{r^2} = \frac{GMr}{R^3}$.
+$g = \frac{GM_{\mathrm{enc{}}}{r^2} = \frac{GMr^3/R^3}{r^2} = \frac{GMr}{R^3}$.
 
 $\square$
 
@@ -458,7 +458,7 @@ needed to escape Earth's gravity from its orbit.
 
 (a) $E = -GMm/(2r) = -3.98 \times 10^{14} \times 1200 / (2 \times 4.22 \times 10^7) = -5.66 \times 10^9$ J.
 
-(b) To escape: $E_{\mathrm{'\{'}final{'\}'}} = 0$. Energy needed $= 0 - E = 5.66 \times 10^9$ J $= 5.66$ GJ.
+(b) To escape: $E_{\mathrm{final{}} = 0$. Energy needed $= 0 - E = 5.66 \times 10^9$ J $= 5.66$ GJ.
 
 </details>
 

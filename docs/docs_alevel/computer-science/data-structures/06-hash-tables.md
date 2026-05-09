@@ -21,7 +21,7 @@ delete, and search.
 
 ### The Core Idea
 
-Given a key $k$, compute $\mathrm{'\{'}index{'\}'} = h(k) \bmod m$, where $h$ is the hash function and $m$ is
+Given a key $k$, compute $\mathrm{index{} = h(k) \bmod m$, where $h$ is the hash function and $m$ is
 the table size. Store the key-value pair at this index.
 
 <hr />
@@ -376,7 +376,7 @@ Alternatively, computing iteratively:
 - $h = (75 \times 31 + 99) \bmod 101 = (2325 + 99) \bmod 101 = 2424 \bmod 101$
 - $2424 / 101 = 24$ remainder $2424 - 2424 = 0$
 
-$h(\mathrm{'\{'}"abc"{'\}'}) = 0$.
+$h(\mathrm{"abc"{}) = 0$.
 
 </details>
 
@@ -762,7 +762,7 @@ we can select specific digit groups to reduce the number while preserving distri
 **Hash function:** Extract the last 5 digits of the ISBN and use the division method with
 $m = 10007$ (a prime):
 
-$$h(\mathrm{'\{'}isbn{'\}'}) = (\mathrm{'\{'}isbn{'\}'} \bmod 100000) \bmod 10007$$
+$$h(\mathrm{isbn{}) = (\mathrm{isbn{} \bmod 100000) \bmod 10007$$
 
 **Rationale:**
 

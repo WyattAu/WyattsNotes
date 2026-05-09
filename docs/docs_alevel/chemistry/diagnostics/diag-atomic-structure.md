@@ -202,9 +202,9 @@ Consider the elements Na, Mg, Al, Si, P, S, Cl, and Ar.
 
 The first ionisation removes a $3p$ electron from Al ($[\text{'\{'}Ne{'\}'}]\,3s^2\,3p^1$). This is a relatively easy removal because the $3p$ electron is shielded by the $[\text{'\{'}Ne{'\}'}]\,3s^2$ core and is far from the nucleus (1 mark).
 
-The second ionisation removes a $3s$ electron from $\mathrm{'\{'}Al{'\}'}^+$ ($[\text{'\{'}Ne{'\}'}]\,3s^2$). The jump ($1817 - 578 = 1239\,\mathrm{'\{'}kJ/mol{'\}'}$) is large because: (a) the remaining $3s$ electrons are closer to the nucleus than the $3p$ electron (lower energy subshell), (b) there is less shielding after removing the $3p$ electron, and (c) the effective nuclear charge experienced by the $3s$ electrons is higher (1 mark).
+The second ionisation removes a $3s$ electron from $\mathrm{Al{}^+$ ($[\text{'\{'}Ne{'\}'}]\,3s^2$). The jump ($1817 - 578 = 1239\,\mathrm{kJ/mol{}$) is large because: (a) the remaining $3s$ electrons are closer to the nucleus than the $3p$ electron (lower energy subshell), (b) there is less shielding after removing the $3p$ electron, and (c) the effective nuclear charge experienced by the $3s$ electrons is higher (1 mark).
 
-The third ionisation removes the second $3s$ electron from $\mathrm{'\{'}Al{'\}'}^{2+}$ ($[\text{'\{'}Ne{'\}'}]\,3s^1$). The jump ($2745 - 1817 = 928\,\mathrm{'\{'}kJ/mol{'\}'}$) is smaller than the first jump because both electrons being removed are from the same subshell ($3s$), so the change in effective nuclear charge and shielding is less dramatic (1 mark).
+The third ionisation removes the second $3s$ electron from $\mathrm{Al{}^{2+}$ ($[\text{'\{'}Ne{'\}'}]\,3s^1$). The jump ($2745 - 1817 = 928\,\mathrm{kJ/mol{}$) is smaller than the first jump because both electrons being removed are from the same subshell ($3s$), so the change in effective nuclear charge and shielding is less dramatic (1 mark).
 
 #### UT-5: Mass Spectrometry and Isotopic Abundance
 
@@ -222,7 +222,7 @@ $\mathrm{^{10}B}$: $19.0\%$, $\mathrm{^{11}B}$: $81.0\%$
 
 #### IT-4: Periodic Trends and Thermodynamics
 
-**Question:** Explain why the first ionisation energy of oxygen ($1314\,\mathrm{'\{'}kJ/mol{'\}'}$) is lower than that of nitrogen ($1402\,\mathrm{'\{'}kJ/mol{'\}'}$), despite oxygen having a higher nuclear charge. Relate this to the electronic configurations.
+**Question:** Explain why the first ionisation energy of oxygen ($1314\,\mathrm{kJ/mol{}$) is lower than that of nitrogen ($1402\,\mathrm{kJ/mol{}$), despite oxygen having a higher nuclear charge. Relate this to the electronic configurations.
 
 **Solution:**
 

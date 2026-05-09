@@ -66,14 +66,14 @@ All 5 letters are distinct: $P_4^5 = \frac{5!}{1!} = 120$.
 
 When some objects are identical, divide by the factorial of the count of each repeated object:
 
-$$\mathrm{'\{'}Arrangements{'\}'} = \frac{n!}{n_1!\, n_2!\, \cdots\, n_k!}$$
+$$\mathrm{Arrangements{} = \frac{n!}{n_1!\, n_2!\, \cdots\, n_k!}$$
 
 ### Worked Example 4
 
 How many distinct arrangements of the letters in "BANANA"?
 
-Total letters: $n = 6$, with $\mathrm{'\{'}A{'\}'}$ appearing $3$ times, $\mathrm{'\{'}N{'\}'}$ appearing $2$ times, and
-$\mathrm{'\{'}B{'\}'}$ appearing $1$ time.
+Total letters: $n = 6$, with $\mathrm{A{}$ appearing $3$ times, $\mathrm{N{}$ appearing $2$ times, and
+$\mathrm{B{}$ appearing $1$ time.
 
 $$\frac{6!}{3!\, 2!\, 1!} = \frac{720}{6 \times 2} = 60$$
 
@@ -200,7 +200,7 @@ Total: $210 + 70 + 5 = 285$.
 
 When it is easier to count the complement and subtract:
 
-$$\mathrm{'\{'}Desired count{'\}'} = \mathrm{'\{'}Total{'\}'} - \mathrm{'\{'}Undesired{'\}'}$$
+$$\mathrm{Desired count{} = \mathrm{Total{} - \mathrm{Undesired{}$$
 
 ### Worked Example 9
 
@@ -322,9 +322,9 @@ $$\frac{(2n)!}{2^n \cdot n!} = \frac{8!}{2^4 \cdot 4!} = \frac{40320}{16 \times 
 
 Possible compositions: (4M, 2W), (3M, 3W).
 
-$(4\mathrm{'\{'}M{'\}'}, 2\mathrm{'\{'}W{'\}'})$: $\binom{7}{4}\binom{5}{2} = 35 \times 10 = 350$.
+$(4\mathrm{M{}, 2\mathrm{W{})$: $\binom{7}{4}\binom{5}{2} = 35 \times 10 = 350$.
 
-$(3\mathrm{'\{'}M{'\}'}, 3\mathrm{'\{'}W{'\}'})$: $\binom{7}{3}\binom{5}{3} = 35 \times 10 = 350$.
+$(3\mathrm{M{}, 3\mathrm{W{})$: $\binom{7}{3}\binom{5}{3} = 35 \times 10 = 350$.
 
 Total: $350 + 350 = 700$.
 

@@ -65,7 +65,7 @@ financing government expenditure and influencing economic behaviour.
 
 ### Budget Balance
 
-$$\mathrm{'\{'}Budget balance{'\}'} = T - G$$
+$$\mathrm{Budget balance{} = T - G$$
 
 Where `T` is total tax revenue and `G` is total government expenditure (excluding debt interest
 payments for simplicity).
@@ -107,15 +107,15 @@ each round.
 
 **Simple spending multiplier (no taxes, no imports):**
 
-$$k = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}} = \frac{1}{\mathrm{'\{'}MPS{'\}'}}$$
+$$k = \frac{1}{1 - \mathrm{MPC{}} = \frac{1}{\mathrm{MPS{}}$$
 
 Where MPC = marginal propensity to consume, MPS = marginal propensity to save.
 
-$$\mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPS{'\}'} = 1$$
+$$\mathrm{MPC{} + \mathrm{MPS{} = 1$$
 
 **Complex multiplier (with taxes and imports):**
 
-$$k = \frac{1}{\mathrm{'\{'}MPS{'\}'} + \mathrm{'\{'}MPT{'\}'} + \mathrm{'\{'}MPM{'\}'}}$$
+$$k = \frac{1}{\mathrm{MPS{} + \mathrm{MPT{} + \mathrm{MPM{}}$$
 
 Where MPT = marginal propensity to tax (proportion of additional income paid in tax) and MPM =
 marginal propensity to import (proportion of additional income spent on imports).
@@ -129,7 +129,7 @@ $$\Delta Y = k \times \Delta G$$
 
 **Tax multiplier (absolute value is smaller than the spending multiplier):**
 
-$$\Delta Y = -\mathrm{'\{'}MPC{'\}'} \times k \times \Delta T$$
+$$\Delta Y = -\mathrm{MPC{} \times k \times \Delta T$$
 
 A tax cut of `Delta T` increases disposable income by `Delta T`, but only `MPC x Delta T` is spent
 (the rest is saved). This initial spending is then multiplied. The tax multiplier is always smaller
@@ -238,7 +238,7 @@ They are the first line of defence against economic fluctuations.
 When the government runs a budget deficit, it must borrow by issuing government bonds. Accumulated
 deficits over time constitute the national debt.
 
-$$\mathrm{'\{'}Debt{'\}'}_{t} = \mathrm{'\{'}Debt{'\}'}_{t-1} + \mathrm{'\{'}Deficit{'\}'}_{t}$$
+$$\mathrm{Debt{}_{t} = \mathrm{Debt{}_{t-1} + \mathrm{Deficit{}_{t}$$
 
 ### Crowding-Out Effect
 
@@ -254,7 +254,7 @@ interest rates, which reduces private investment.
 5. The increase in government spending is partially or fully offset by a decrease in private
    investment.
 
-$$\mathrm{'\{'}Full crowding out: {'\}'} \Delta G = -\Delta I$$
+$$\mathrm{Full crowding out: {} \Delta G = -\Delta I$$
 
 In the extreme case (full crowding out), the increase in government spending is exactly offset by
 the decrease in private investment, and aggregate demand does not change at all. The composition of

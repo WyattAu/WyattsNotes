@@ -43,7 +43,7 @@ Work done against friction $= F_{\text{'\{'}friction{'\}'}} \times d = 35.32 \ti
 
 By the work-energy principle:
 
-$$W_{\text{'\{'}net{'\}'}} = \Delta\mathrm{'\{'}KE{'\}'} = \frac{1}{2}mv^2 - 0$$
+$$W_{\text{'\{'}net{'\}'}} = \Delta\mathrm{KE{} = \frac{1}{2}mv^2 - 0$$
 
 $$597.8 = \frac{1}{2}(10)v^2 \implies v^2 = 119.56 \implies v \approx 10.93 \text{'\{'} m/s{'\}'}$$
 
@@ -195,7 +195,7 @@ A particle moves along the $x$-axis under the action of a variable force $F(x) =
 
 $$= (27 + 9 - 15) - 0 = 21 \text{'\{'} J{'\}'}$$
 
-**(b)** By the work-energy theorem: $W = \Delta\mathrm{'\{'}KE{'\}'} = \frac{1}{2}mv^2 - 0$.
+**(b)** By the work-energy theorem: $W = \Delta\mathrm{KE{} = \frac{1}{2}mv^2 - 0$.
 
 $$21 = \frac{1}{2}(2)v^2 \implies v^2 = 21 \implies v = \sqrt{21} \approx 4.58 \text{'\{'} m/s{'\}'}$$
 
@@ -233,7 +233,7 @@ Show every step and justify each substitution.
 
 $$W = \int \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}s{'\}'} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
-**(c)** Explain why the work-energy theorem holds for non-conservative forces (such as friction) but conservation of mechanical energy ($\mathrm{'\{'}KE{'\}'} + \mathrm{'\{'}PE{'\}'} = \text{'\{'}constant{'\}'}$) does not.
+**(c)** Explain why the work-energy theorem holds for non-conservative forces (such as friction) but conservation of mechanical energy ($\mathrm{KE{} + \mathrm{PE{} = \text{'\{'}constant{'\}'}$) does not.
 
 [Difficulty: hard. Requires a rigorous derivation from first principles, extending to vector form, and a conceptual explanation of the distinction between the work-energy theorem and conservation of energy.]
 
@@ -275,9 +275,9 @@ Adding:
 
 $$W = \frac{1}{2}m(v_{x,2}^2 + v_{y,2}^2) - \frac{1}{2}m(v_{x,1}^2 + v_{y,1}^2) = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2 \quad \blacksquare$$
 
-**(c)** The work-energy theorem $W_{\text{'\{'}net{'\}'}} = \Delta\mathrm{'\{'}KE{'\}'}$ is a direct consequence of $F = ma$ (as proven above). It accounts for **all** forces, whether conservative or non-conservative. When friction acts, the work done by friction (which is negative) is included in $W_{\text{'\{'}net{'\}'}}$, and the change in KE correctly reflects this energy loss.
+**(c)** The work-energy theorem $W_{\text{'\{'}net{'\}'}} = \Delta\mathrm{KE{}$ is a direct consequence of $F = ma$ (as proven above). It accounts for **all** forces, whether conservative or non-conservative. When friction acts, the work done by friction (which is negative) is included in $W_{\text{'\{'}net{'\}'}}$, and the change in KE correctly reflects this energy loss.
 
-Conservation of mechanical energy ($\mathrm{'\{'}KE{'\}'} + \mathrm{'\{'}PE{'\}'} = \text{'\{'}constant{'\}'}$) applies only when all forces are conservative. A conservative force is one whose work done is path-independent (depends only on initial and final positions). Gravity is conservative; friction is not (the work done by friction depends on the path length). When friction is present, mechanical energy is not conserved -- some is converted to thermal energy. The work-energy theorem still holds because it accounts for the friction work explicitly.
+Conservation of mechanical energy ($\mathrm{KE{} + \mathrm{PE{} = \text{'\{'}constant{'\}'}$) applies only when all forces are conservative. A conservative force is one whose work done is path-independent (depends only on initial and final positions). Gravity is conservative; friction is not (the work done by friction depends on the path length). When friction is present, mechanical energy is not conserved -- some is converted to thermal energy. The work-energy theorem still holds because it accounts for the friction work explicitly.
 
 ---
 

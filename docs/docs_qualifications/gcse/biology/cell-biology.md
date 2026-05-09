@@ -41,7 +41,7 @@ and why plant cells have a fixed, rectangular shape while animal cells are flexi
 
 **The cell membrane as a gatekeeper.** The cell membrane is not a solid barrier; it is a dynamic
 structure composed of a phospholipid bilayer with embedded proteins. Small, non-polar molecules
-(such as $\mathrm{'\{'}O{'\}'}_2$ and $\mathrm{'\{'}CO{'\}'}_2$) can diffuse directly through the lipid bilayer. Larger
+(such as $\mathrm{O{}_2$ and $\mathrm{CO{}_2$) can diffuse directly through the lipid bilayer. Larger
 or polar molecules (such as glucose and ions) require transport proteins to cross. This selective
 permeability is essential for maintaining the internal conditions of the cell (homeostasis).
 
@@ -191,28 +191,28 @@ supply from the mother.
 
 **Magnification calculation:**
 
-$$\mathrm{'\{'}Magnification{'\}'} = \frac{\mathrm{'\{'}image size{'\}'}}{\mathrm{'\{'}actual size{'\}'}}$$
+$$\mathrm{Magnification{} = \frac{\mathrm{image size{}}{\mathrm{actual size{}}$$
 
 This equation can be rearranged to find any of the three variables:
 
-$$\mathrm{'\{'}Actual size{'\}'} = \frac{\mathrm{'\{'}image size{'\}'}}{\mathrm{'\{'}magnification{'\}'}}$$
+$$\mathrm{Actual size{} = \frac{\mathrm{image size{}}{\mathrm{magnification{}}$$
 
-$$\mathrm{'\{'}Image size{'\}'} = \mathrm{'\{'}actual size{'\}'} \times \mathrm{'\{'}magnification{'\}'}$$
+$$\mathrm{Image size{} = \mathrm{actual size{} \times \mathrm{magnification{}$$
 
 A useful mnemonic: the **MIA** triangle (Magnification = Image / Actual).
 
 **Worked Example.** A cell is observed to be 4.2 mm in a micrograph. The actual size is 0.07 mm.
 Calculate the magnification.
 
-$$\mathrm{'\{'}Magnification{'\}'} = \frac{4.2}{0.07} = 60$$
+$$\mathrm{Magnification{} = \frac{4.2}{0.07} = 60$$
 
 **Unit conversion tip.** You will frequently need to convert between millimetres (mm) and
-micrometres ($\mu$m). Remember: $1 \mathrm{'\{'} mm{'\}'} = 1000 \mathrm{'\{'} \mu m{'\}'}$.
+micrometres ($\mu$m). Remember: $1 \mathrm{ mm{} = 1000 \mathrm{ \mu m{}$.
 
 **Worked Example.** A cell measures 8.5 mm in a micrograph taken at magnification $\times 400$. Find
 the actual size in micrometres.
 
-$$\mathrm{'\{'}Actual size{'\}'} = \frac{8.5}{400} = 0.02125 \mathrm{'\{'} mm{'\}'} = 21.25 \mathrm{'\{'} \mu m{'\}'}$$
+$$\mathrm{Actual size{} = \frac{8.5}{400} = 0.02125 \mathrm{ mm{} = 21.25 \mathrm{ \mu m{}$$
 
 **Staining.** Most biological specimens are colourless and transparent, making them difficult to see
 under a microscope. Stains such as iodine (which stains starch and nuclei), methylene blue (which
@@ -398,7 +398,7 @@ movement in either direction.
 - Occurs in both liquids and gases
 - Rate increases with: larger concentration gradient, higher temperature, larger surface area,
   shorter diffusion distance
-- Only works for small, non-polar molecules (e.g., $\mathrm{'\{'}O{'\}'}_2$, $\mathrm{'\{'}CO{'\}'}_2$) and
+- Only works for small, non-polar molecules (e.g., $\mathrm{O{}_2$, $\mathrm{CO{}_2$) and
   lipid-soluble substances
 - Large or polar molecules (e.g., glucose, amino acids, ions) cannot diffuse through the lipid
   bilayer and require transport proteins (facilitated diffusion or active transport)
@@ -417,9 +417,9 @@ movement in either direction.
 **Worked Example.** Oxygen diffuses from the alveoli (high concentration) into the blood (low
 concentration). Carbon dioxide diffuses from the blood into the alveoli. This simultaneous exchange
 of gases is efficient because both processes use the same concentration gradient in opposite
-directions: the alveoli have high $\mathrm{'\{'}O{'\}'}_2$ and low $\mathrm{'\{'}CO{'\}'}_2$ (because fresh air is
-continually breathed in), while the blood arriving at the lungs has low $\mathrm{'\{'}O{'\}'}_2$ and high
-$\mathrm{'\{'}CO{'\}'}_2$ (because it has just returned from the body tissues where respiration occurred).
+directions: the alveoli have high $\mathrm{O{}_2$ and low $\mathrm{CO{}_2$ (because fresh air is
+continually breathed in), while the blood arriving at the lungs has low $\mathrm{O{}_2$ and high
+$\mathrm{CO{}_2$ (because it has just returned from the body tissues where respiration occurred).
 
 ### 3.2 Osmosis
 
@@ -475,7 +475,7 @@ concentrated sugar solution.
 6. Remove, gently dry with a paper towel, and measure the new mass.
 7. Calculate the percentage change in mass:
 
-$$\mathrm{'\{'}Percentage change{'\}'} = \frac{\mathrm{'\{'}final mass{'\}'} - \mathrm{'\{'}initial mass{'\}'}}{\mathrm{'\{'}initial mass{'\}'}} \times 100\%$$
+$$\mathrm{Percentage change{} = \frac{\mathrm{final mass{} - \mathrm{initial mass{}}{\mathrm{initial mass{}} \times 100\%$$
 
 8. Plot a graph of percentage change in mass against sugar concentration.
 
@@ -532,7 +532,7 @@ available glucose is absorbed.
 
 ### 4.1 Levels of Organisation
 
-$$\mathrm{'\{'}Cells{'\}'} \to \mathrm{'\{'}Tissues{'\}'} \to \mathrm{'\{'}Organs{'\}'} \to \mathrm{'\{'}Organ Systems{'\}'} \to \mathrm{'\{'}Organisms{'\}'}$$
+$$\mathrm{Cells{} \to \mathrm{Tissues{} \to \mathrm{Organs{} \to \mathrm{Organ Systems{} \to \mathrm{Organisms{}$$
 
 - **Cell:** The basic unit of life.
 - **Tissue:** A group of similar cells with the same function (e.g., muscle tissue is made of muscle
@@ -603,9 +603,9 @@ units.
 | Micrometre | $\mu$m | $\times 10^{-6}$ m   |
 | Nanometre  | nm     | $\times 10^{-9}$ m   |
 
-**Worked Example.** A mitochondrion is $5 \mu\mathrm{'\{'}m{'\}'}$ long. Express this in nanometres.
+**Worked Example.** A mitochondrion is $5 \mu\mathrm{m{}$ long. Express this in nanometres.
 
-$$5 \mathrm{'\{'} \mu m{'\}'} = 5 \times 1000 \mathrm{'\{'} nm{'\}'} = 5000 \mathrm{'\{'} nm{'\}'}$$
+$$5 \mathrm{ \mu m{} = 5 \times 1000 \mathrm{ nm{} = 5000 \mathrm{ nm{}$$
 
 ### 5.3 Estimating Cell Size
 
@@ -616,10 +616,10 @@ To estimate the size of a cell or organelle from a micrograph:
 3. Divide the field of view diameter by the number of cells.
 
 **Worked Example.** A student observes a cell under a microscope at $\times 400$ magnification. The
-diameter of the field of view at this magnification is $0.5 \mathrm{'\{'} mm{'\}'}$. The student estimates
+diameter of the field of view at this magnification is $0.5 \mathrm{ mm{}$. The student estimates
 that 10 cells fit across the diameter. Calculate the width of one cell in micrometres.
 
-$$\mathrm{'\{'}Width of one cell{'\}'} = \frac{0.5 \mathrm{'\{'} mm{'\}'}}{10} = 0.05 \mathrm{'\{'} mm{'\}'} = 50 \mathrm{'\{'} \mu m{'\}'}$$
+$$\mathrm{Width of one cell{} = \frac{0.5 \mathrm{ mm{}}{10} = 0.05 \mathrm{ mm{} = 50 \mathrm{ \mu m{}$$
 
 ## Common Pitfalls
 
@@ -730,7 +730,7 @@ $$\mathrm{'\{'}Width of one cell{'\}'} = \frac{0.5 \mathrm{'\{'} mm{'\}'}}{10} =
 <summary>Question 1: Microscopy magnification</summary>
 
 A cell is observed under a microscope with an eyepiece lens of magnification $\times 10$ and an
-objective lens of magnification $\times 40$. The cell appears to be $4.8 \mathrm{'\{'} mm{'\}'}$ wide in the
+objective lens of magnification $\times 40$. The cell appears to be $4.8 \mathrm{ mm{}$ wide in the
 image. Calculate the actual width of the cell in micrometres ($\mu$m).
 
 </details>
@@ -741,17 +741,17 @@ image. Calculate the actual width of the cell in micrometres ($\mu$m).
 Total magnification $= 10 \times 40 = \times 400$.
 
 Actual size
-$= \frac{\mathrm{'\{'}Image size{'\}'}}{\mathrm{'\{'}Magnification{'\}'}} = \frac{4.8 \mathrm{'\{'} mm{'\}'}}{400} = 0.012 \mathrm{'\{'} mm{'\}'}$.
+$= \frac{\mathrm{Image size{}}{\mathrm{Magnification{}} = \frac{4.8 \mathrm{ mm{}}{400} = 0.012 \mathrm{ mm{}$.
 
-Convert to micrometres: $0.012 \times 1000 = 12 \mathrm{'\{'} \mu m{'\}'}$.
+Convert to micrometres: $0.012 \times 1000 = 12 \mathrm{ \mu m{}$.
 
 </details>
 
 <details>
 <summary>Question 2: Osmosis in plant cells</summary>
 
-A plant cell with a solute potential of $-500 \mathrm{'\{'} kPa{'\}'}$ and a pressure potential of
-$200 \mathrm{'\{'} kPa{'\}'}$ is placed in a solution with a water potential of $-100 \mathrm{'\{'} kPa{'\}'}$. Predict
+A plant cell with a solute potential of $-500 \mathrm{ kPa{}$ and a pressure potential of
+$200 \mathrm{ kPa{}$ is placed in a solution with a water potential of $-100 \mathrm{ kPa{}$. Predict
 the direction of water movement and explain what will happen to the cell.
 
 </details>
@@ -759,12 +759,12 @@ the direction of water movement and explain what will happen to the cell.
 <details>
 <summary>Answer</summary>
 
-Cell water potential: $\psi = -500 + 200 = -300 \mathrm{'\{'} kPa{'\}'}$.
+Cell water potential: $\psi = -500 + 200 = -300 \mathrm{ kPa{}$.
 
-The solution has $\psi = -100 \mathrm{'\{'} kPa{'\}'}$.
+The solution has $\psi = -100 \mathrm{ kPa{}$.
 
-Water moves from higher to lower water potential: from the solution ($-100 \mathrm{'\{'} kPa{'\}'}$) into the
-cell ($-300 \mathrm{'\{'} kPa{'\}'}$).
+Water moves from higher to lower water potential: from the solution ($-100 \mathrm{ kPa{}$) into the
+cell ($-300 \mathrm{ kPa{}$).
 
 The cell will gain water, increasing its pressure potential. The cell will become turgid. The cell
 wall will prevent bursting.

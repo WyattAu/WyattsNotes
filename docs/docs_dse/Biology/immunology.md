@@ -164,8 +164,8 @@ T cells originate in the bone marrow but mature in the **thymus gland**.
 
 | T Cell Type       | Function                                                                                                                                            | Surface Marker   |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| T helper cells ($\mathrm{'\{'}CD4{'\}'}^+$) | Release cytokines that stimulate B cells to differentiate into plasma cells and memory cells; activate cytotoxic T cells and macrophages | CD4             |
-| Cytotoxic T cells ($\mathrm{'\{'}CD8{'\}'}^+$) | Directly destroy virus-infected cells and cancer cells by inducing apoptosis (programmed cell death); recognise antigens presented on MHC class I   | CD8             |
+| T helper cells ($\mathrm{CD4{}^+$) | Release cytokines that stimulate B cells to differentiate into plasma cells and memory cells; activate cytotoxic T cells and macrophages | CD4             |
+| Cytotoxic T cells ($\mathrm{CD8{}^+$) | Directly destroy virus-infected cells and cancer cells by inducing apoptosis (programmed cell death); recognise antigens presented on MHC class I   | CD8             |
 | Memory T cells    | Long-lived; provide rapid secondary response upon re-exposure to the same antigen                                                                    | --              |
 | Regulatory T cells (Tregs) | Suppress immune responses; prevent autoimmune reactions; maintain tolerance to self-antigens                                                         | CD4, CD25        |
 
@@ -335,7 +335,7 @@ An allergy is an exaggerated immune response to a harmless antigen (allergen). T
 | Feature            | Description                                                                                                           |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | Pathogen type      | Retrovirus (RNA virus) that carries reverse transcriptase                                                              |
-| Target cells       | T helper cells ($\mathrm{'\{'}CD4{'\}'}^+$ T cells) -- the cells that coordinate the immune response                            |
+| Target cells       | T helper cells ($\mathrm{CD4{}^+$ T cells) -- the cells that coordinate the immune response                            |
 | Transmission       | Unprotected sexual contact; contaminated blood products; sharing needles; mother-to-child (during birth or breastfeeding) |
 | Not transmitted by | Casual contact, hugging, sharing utensils, mosquito bites                                                              |
 
@@ -545,7 +545,7 @@ In contrast, a **tetanus vaccine** contains a toxoid (inactivated tetanus toxin)
 | Feature            | Description                                                                                                           |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
 | Pathogen type      | Retrovirus (RNA virus with reverse transcriptase)                                                              |
-| Target cells       | T helper cells ($\mathrm{'\{'}CD4{'\}'}^+$ T cells), macrophages, dendritic cells                                  |
+| Target cells       | T helper cells ($\mathrm{CD4{}^+$ T cells), macrophages, dendritic cells                                  |
 | Genetic material   | Two copies of single-stranded RNA; nine genes (gag, pol, env, tat, rev, nef, vif, vpr, vpu)                        |
 | Viral envelope     | Stolen from host cell membrane during budding; contains viral glycoproteins gp120 (binds CD4 receptor) and gp41 (mediates fusion) |
 | Transmission       | Unprotected sexual contact; contaminated blood products; sharing needles; mother-to-child (during birth or breastfeeding) |

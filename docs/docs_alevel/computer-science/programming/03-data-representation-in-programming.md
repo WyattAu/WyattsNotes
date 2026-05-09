@@ -421,7 +421,7 @@ s = "".join(str(i) for i in range(1000))
 </details>
 
 **Problem 7.** A bitmap image has a resolution of $1920 \times 1080$ pixels and uses 24-bit colour
-depth. Calculate the uncompressed file size in MB (using $1 \mathrm{'\{'} MB{'\}'} = 1024^2$ bytes). If
+depth. Calculate the uncompressed file size in MB (using $1 \mathrm{ MB{} = 1024^2$ bytes). If
 lossless compression achieves a 3:1 ratio, what is the compressed file size in MB?
 
 <details>
@@ -429,38 +429,38 @@ lossless compression achieves a 3:1 ratio, what is the compressed file size in M
 
 **Uncompressed:**
 
-$\mathrm{'\{'}File size{'\}'} = \mathrm{'\{'}width{'\}'} \times \mathrm{'\{'}height{'\}'} \times \mathrm{'\{'}colour depth{'\}'}$
+$\mathrm{File size{} = \mathrm{width{} \times \mathrm{height{} \times \mathrm{colour depth{}$
 
-$\mathrm{'\{'}File size{'\}'} = 1920 \times 1080 \times 24 \mathrm{'\{'} bits{'\}'} = 49,766,400 \mathrm{'\{'} bits{'\}'}$
+$\mathrm{File size{} = 1920 \times 1080 \times 24 \mathrm{ bits{} = 49,766,400 \mathrm{ bits{}$
 
-$\mathrm{'\{'}File size{'\}'} = 49,766,400 \div 8 = 6,220,800 \mathrm{'\{'} bytes{'\}'}$
+$\mathrm{File size{} = 49,766,400 \div 8 = 6,220,800 \mathrm{ bytes{}$
 
-$\mathrm{'\{'}File size{'\}'} = 6,220,800 \div 1024^2 \approx 5.93 \mathrm{'\{'} MB{'\}'}$
+$\mathrm{File size{} = 6,220,800 \div 1024^2 \approx 5.93 \mathrm{ MB{}$
 
 **With 3:1 compression:**
 
-$\mathrm{'\{'}Compressed size{'\}'} = 5.93 \div 3 \approx 1.98 \mathrm{'\{'} MB{'\}'}$
+$\mathrm{Compressed size{} = 5.93 \div 3 \approx 1.98 \mathrm{ MB{}$
 
 </details>
 
-**Problem 8.** An audio file is recorded at a sample rate of $44,100 \mathrm{'\{'} Hz{'\}'}$ with a bit depth
+**Problem 8.** An audio file is recorded at a sample rate of $44,100 \mathrm{ Hz{}$ with a bit depth
 of 16 bits, for a duration of 3 minutes in stereo (2 channels). Calculate the file size in MB (using
-$1 \mathrm{'\{'} MB{'\}'} = 1024^2$ bytes).
+$1 \mathrm{ MB{} = 1024^2$ bytes).
 
 <details>
 <summary>Answer</summary>
 
-$\mathrm{'\{'}File size{'\}'} = \mathrm{'\{'}sample rate{'\}'} \times \mathrm{'\{'}bit depth{'\}'} \times \mathrm{'\{'}channels{'\}'} \times \mathrm{'\{'}duration{'\}'}$
+$\mathrm{File size{} = \mathrm{sample rate{} \times \mathrm{bit depth{} \times \mathrm{channels{} \times \mathrm{duration{}$
 
-$\mathrm{'\{'}Duration{'\}'} = 3 \times 60 = 180 \mathrm{'\{'} seconds{'\}'}$
+$\mathrm{Duration{} = 3 \times 60 = 180 \mathrm{ seconds{}$
 
-$\mathrm{'\{'}File size{'\}'} = 44,100 \times 16 \times 2 \times 180 \mathrm{'\{'} bits{'\}'}$
+$\mathrm{File size{} = 44,100 \times 16 \times 2 \times 180 \mathrm{ bits{}$
 
-$\mathrm{'\{'}File size{'\}'} = 254,016,000 \mathrm{'\{'} bits{'\}'}$
+$\mathrm{File size{} = 254,016,000 \mathrm{ bits{}$
 
-$\mathrm{'\{'}File size{'\}'} = 254,016,000 \div 8 = 31,752,000 \mathrm{'\{'} bytes{'\}'}$
+$\mathrm{File size{} = 254,016,000 \div 8 = 31,752,000 \mathrm{ bytes{}$
 
-$\mathrm{'\{'}File size{'\}'} = 31,752,000 \div 1024^2 \approx 30.28 \mathrm{'\{'} MB{'\}'}$
+$\mathrm{File size{} = 31,752,000 \div 1024^2 \approx 30.28 \mathrm{ MB{}$
 
 </details>
 
@@ -484,7 +484,7 @@ bytes. The CJK characters cannot be stored.
 | 世                                         | 3 bytes               |
 | 界                                         | 3 bytes               |
 
-$\mathrm{'\{'}Total{'\}'} = 8 + 3 + 3 = 14 \mathrm{'\{'} bytes{'\}'}$
+$\mathrm{Total{} = 8 + 3 + 3 = 14 \mathrm{ bytes{}$
 
 **Why Unicode is needed:** ASCII only defines 128 characters, covering basic Latin letters, digits,
 and symbols. It cannot represent characters from other scripts (Chinese, Arabic, Cyrillic, etc.),
@@ -496,7 +496,7 @@ gaining support for all other scripts.
 </details>
 
 **Problem 10.** A system stores 1000 images at 4K resolution ($3840 \times 2160$) with 32-bit colour
-depth. Calculate the total storage required in GB (using $1 \mathrm{'\{'} GB{'\}'} = 1024^3$ bytes). If
+depth. Calculate the total storage required in GB (using $1 \mathrm{ GB{} = 1024^3$ bytes). If
 lossless compression achieves a 2:1 ratio, what is the compressed total size in GB?
 
 <details>
@@ -504,29 +504,29 @@ lossless compression achieves a 2:1 ratio, what is the compressed total size in 
 
 **Uncompressed size of one image:**
 
-$\mathrm{'\{'}File size{'\}'} = 3840 \times 2160 \times 32 \mathrm{'\{'} bits{'\}'} = 265,420,800 \mathrm{'\{'} bits{'\}'}$
+$\mathrm{File size{} = 3840 \times 2160 \times 32 \mathrm{ bits{} = 265,420,800 \mathrm{ bits{}$
 
-$\mathrm{'\{'}File size{'\}'} = 265,420,800 \div 8 = 33,177,600 \mathrm{'\{'} bytes{'\}'}$
+$\mathrm{File size{} = 265,420,800 \div 8 = 33,177,600 \mathrm{ bytes{}$
 
-$\mathrm{'\{'}File size in GB{'\}'} = 33,177,600 \div 1024^3 \approx 0.0309 \mathrm{'\{'} GB{'\}'}$
+$\mathrm{File size in GB{} = 33,177,600 \div 1024^3 \approx 0.0309 \mathrm{ GB{}$
 
 **Total for 1000 images:**
 
-$\mathrm{'\{'}Total{'\}'} = 0.0309 \times 1000 = 30.9 \mathrm{'\{'} GB{'\}'}$
+$\mathrm{Total{} = 0.0309 \times 1000 = 30.9 \mathrm{ GB{}$
 
 **With 2:1 lossless compression:**
 
-$\mathrm{'\{'}Compressed total{'\}'} = 30.9 \div 2 \approx 15.45 \mathrm{'\{'} GB{'\}'}$
+$\mathrm{Compressed total{} = 30.9 \div 2 \approx 15.45 \mathrm{ GB{}$
 
 **Working directly with bytes:**
 
-$\mathrm{'\{'}One image{'\}'} = 33,177,600 \mathrm{'\{'} bytes{'\}'}$
+$\mathrm{One image{} = 33,177,600 \mathrm{ bytes{}$
 
-$\mathrm{'\{'}1000 images{'\}'} = 33,177,600,000 \mathrm{'\{'} bytes{'\}'}$
+$\mathrm{1000 images{} = 33,177,600,000 \mathrm{ bytes{}$
 
-$\mathrm{'\{'}In GB{'\}'} = 33,177,600,000 \div 1024^3 \approx 30.9 \mathrm{'\{'} GB{'\}'}$
+$\mathrm{In GB{} = 33,177,600,000 \div 1024^3 \approx 30.9 \mathrm{ GB{}$
 
-$\mathrm{'\{'}Compressed{'\}'} = 30.9 \div 2 \approx 15.45 \mathrm{'\{'} GB{'\}'}$
+$\mathrm{Compressed{} = 30.9 \div 2 \approx 15.45 \mathrm{ GB{}$
 
 </details>
 

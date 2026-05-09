@@ -19,21 +19,21 @@ Maxwell's equations are the foundation of classical electromagnetism. In SI unit
 
 **Integral Form:**
 
-$$\oint_S \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = \frac{Q_{\mathrm{'\{'}enc{'\}'}}}{\varepsilon_0} \quad \mathrm{'\{'}(Gauss's\ Law){'\}'}$$
+$$\oint_S \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = \frac{Q_{\mathrm{enc{}}}{\varepsilon_0} \quad \mathrm{(Gauss's\ Law){}$$
 
-$$\oint_S \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = 0 \quad \mathrm{'\{'}(Gauss's\ Law\ for\ Magnetism){'\}'}$$
+$$\oint_S \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = 0 \quad \mathrm{(Gauss's\ Law\ for\ Magnetism){}$$
 
-$$\oint_C \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = -\frac{d\Phi_B}{dt} \quad \mathrm{'\{'}(Faraday's\ Law){'\}'}$$
+$$\oint_C \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = -\frac{d\Phi_B}{dt} \quad \mathrm{(Faraday's\ Law){}$$
 
-$$\oint_C \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = \mu_0 I_{\mathrm{'\{'}enc{'\}'}} + \mu_0 \varepsilon_0 \frac{d\Phi_E}{dt} \quad \mathrm{(Ampere{-}Maxwell\ Law)}$$
+$$\oint_C \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = \mu_0 I_{\mathrm{enc{}} + \mu_0 \varepsilon_0 \frac{d\Phi_E}{dt} \quad \mathrm{(Ampere{-}Maxwell\ Law)}$$
 
 **Differential Form:**
 
-$$\nabla \cdot \mathbf{'\{'}E{'\}'} = \frac{\rho}{\varepsilon_0} \quad \mathrm{'\{'}(Gauss's\ Law){'\}'}$$
+$$\nabla \cdot \mathbf{'\{'}E{'\}'} = \frac{\rho}{\varepsilon_0} \quad \mathrm{(Gauss's\ Law){}$$
 
-$$\nabla \cdot \mathbf{'\{'}B{'\}'} = 0 \quad \mathrm{'\{'}(Gauss's\ Law\ for\ Magnetism){'\}'}$$
+$$\nabla \cdot \mathbf{'\{'}B{'\}'} = 0 \quad \mathrm{(Gauss's\ Law\ for\ Magnetism){}$$
 
-$$\nabla \times \mathbf{'\{'}E{'\}'} = -\frac{\partial \mathbf{'\{'}B{'\}'}}{\partial t} \quad \mathrm{'\{'}(Faraday's\ Law){'\}'}$$
+$$\nabla \times \mathbf{'\{'}E{'\}'} = -\frac{\partial \mathbf{'\{'}B{'\}'}}{\partial t} \quad \mathrm{(Faraday's\ Law){}$$
 
 $$\nabla \times \mathbf{'\{'}B{'\}'} = \mu_0 \mathbf{'\{'}J{'\}'} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{'\{'}E{'\}'}}{\partial t} \quad \mathrm{(Ampere{-}Maxwell\ Law)}$$
 
@@ -147,7 +147,7 @@ $$\boxed{\nabla^2 \mathbf{'\{'}B{'\}'} = \mu_0 \varepsilon_0 \frac{\partial^2 \m
 Comparing with the standard wave equation $\nabla^2 \mathbf{'\{'}F{'\}'} = \frac{1}{v^2}\frac{\partial^2 \mathbf{'\{'}F{'\}'}}{\partial t^2}$,
 the wave speed is:
 
-$$c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} \approx 2.998 \times 10^8\ \mathrm{'\{'}m/s{'\}'}$$
+$$c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} \approx 2.998 \times 10^8\ \mathrm{m/s{}$$
 
 $\blacksquare$
 
@@ -425,11 +425,11 @@ Outside the slab: $\mathbf{'\{'}E{'\}'} = \mathbf{'\{'}E{'\}'}_0$.
 
 Inside the slab: by continuity of $D_n$:
 
-$$D_{\mathrm{'\{'}in{'\}'}} = D_{\mathrm{'\{'}out{'\}'}} = \varepsilon_0 E_0$$
+$$D_{\mathrm{in{}} = D_{\mathrm{out{}} = \varepsilon_0 E_0$$
 
-$$E_{\mathrm{'\{'}in{'\}'}} = \frac{D_{\mathrm{'\{'}in{'\}'}}}{\varepsilon} = \frac{\varepsilon_0}{\varepsilon} E_0 = \frac{E_0}{\varepsilon_r}$$
+$$E_{\mathrm{in{}} = \frac{D_{\mathrm{in{}}}{\varepsilon} = \frac{\varepsilon_0}{\varepsilon} E_0 = \frac{E_0}{\varepsilon_r}$$
 
-The polarization: $P = \varepsilon_0 \chi_e E_{\mathrm{'\{'}in{'\}'}} = \varepsilon_0 (\varepsilon_r - 1) \frac{E_0}{\varepsilon_r}$.
+The polarization: $P = \varepsilon_0 \chi_e E_{\mathrm{in{}} = \varepsilon_0 (\varepsilon_r - 1) \frac{E_0}{\varepsilon_r}$.
 
 The bound surface charge density on each face:
 
@@ -456,7 +456,7 @@ $$\mathbf{'\{'}B{'\}'}(\mathbf{'\{'}r{'\}'}) = \frac{\mu_0 I}{4\pi} \oint \frac{
 
 For steady currents ($\partial \mathbf{'\{'}E{'\}'} / \partial t = 0$):
 
-$$\oint_C \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = \mu_0 I_{\mathrm{'\{'}enc{'\}'}}$$
+$$\oint_C \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = \mu_0 I_{\mathrm{enc{}}$$
 
 **Example: Infinite straight wire** carrying current $I$.
 
@@ -467,7 +467,7 @@ $$\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = B \cdot 2\pi r = \mu_
 
 **Example: Solenoid.** For a long solenoid with $n$ turns per unit length carrying current $I$:
 
-$$B = \mu_0 n I \quad \mathrm{'\{'}(inside){'\}'}, \quad B = 0 \quad \mathrm{'\{'}(outside){'\}'}$$
+$$B = \mu_0 n I \quad \mathrm{(inside){}, \quad B = 0 \quad \mathrm{(outside){}$$
 
 ### 3.3 Magnetic Vector Potential
 
@@ -521,7 +521,7 @@ and $\hat{\mathbf{'\{'}n{'\}'}}$ is the unit normal given by the right-hand rule
 
 **Field of a magnetic dipole** (at position $\mathbf{'\{'}r{'\}'}$ from the dipole):
 
-$$\mathbf{'\{'}B{'\}'}_{\mathrm{'\{'}dip{'\}'}}(\mathbf{'\{'}r{'\}'}) = \frac{\mu_0}{4\pi}\left[\frac{3(\mathbf{'\{'}m{'\}'} \cdot \hat{\mathbf{'\{'}r{'\}'}})\hat{\mathbf{'\{'}r{'\}'}} - \mathbf{'\{'}m{'\}'}}{r^3}\right]$$
+$$\mathbf{'\{'}B{'\}'}_{\mathrm{dip{}}(\mathbf{'\{'}r{'\}'}) = \frac{\mu_0}{4\pi}\left[\frac{3(\mathbf{'\{'}m{'\}'} \cdot \hat{\mathbf{'\{'}r{'\}'}})\hat{\mathbf{'\{'}r{'\}'}} - \mathbf{'\{'}m{'\}'}}{r^3}\right]$$
 
 This has the same angular structure as the electric dipole field.
 
@@ -586,7 +586,7 @@ $\mathbf{'\{'}A{'\}'}(s) = \frac{\mu_0 I}{4\pi}\int_{-\infty}^{\infty}\frac{dz'}
 
 This integral diverges logarithmically. Introduce a cutoff at $z' = \pm L$:
 
-$\mathbf{'\{'}A{'\}'}(s) \approx \frac{\mu_0 I}{2\pi}\ln\!\left(\frac{2L}{s}\right)\hat{\mathbf{'\{'}z{'\}'}} + \mathrm{'\{'}const{'\}'}$
+$\mathbf{'\{'}A{'\}'}(s) \approx \frac{\mu_0 I}{2\pi}\ln\!\left(\frac{2L}{s}\right)\hat{\mathbf{'\{'}z{'\}'}} + \mathrm{const{}$
 
 Since $\mathbf{'\{'}A{'\}'}$ is defined only up to a gauge transformation, we write:
 
@@ -612,7 +612,7 @@ Ampere's law for $\mathbf{'\{'}H{'\}'}$:
 
 $$\nabla \times \mathbf{'\{'}H{'\}'} = \mathbf{'\{'}J{'\}'}_f$$
 
-$$\oint \mathbf{'\{'}H{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = I_{f,\mathrm{'\{'}enc{'\}'}}$$
+$$\oint \mathbf{'\{'}H{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = I_{f,\mathrm{enc{}}$$
 
 This is simpler than Ampere's law for $\mathbf{'\{'}B{'\}'}$ because only *free* currents appear.
 
@@ -774,7 +774,7 @@ The induced current: $I = Bwv/R$, flowing to oppose the change in flux (Lenz's l
 
 The braking force: $F = BwI = B^2w^2v/R$ (upward).
 
-Terminal velocity: $mg = B^2w^2v_{\mathrm{'\{'}term{'\}'}}/R \implies v_{\mathrm{'\{'}term{'\}'}} = mgR/(B^2w^2)$.
+Terminal velocity: $mg = B^2w^2v_{\mathrm{term{}}/R \implies v_{\mathrm{term{}} = mgR/(B^2w^2)$.
 
 While entirely inside the field, $\Phi_B$ is constant, so $\mathcal{'\{'}E{'\}'} = 0$ and the loop
 falls freely. As it exits, the braking force reappears. $\blacksquare$
@@ -897,11 +897,11 @@ $$\langle\mathbf{'\{'}S{'\}'}\rangle = \frac{E_0^2}{2\mu_0 c}\,\hat{\mathbf{'\{'
 A plane wave normally incident on a perfectly absorbing surface exerts a radiation pressure.
 The momentum flux of the wave is $\langle S \rangle/c$ per unit area, so:
 
-$$P_{\mathrm{'\{'}abs{'\}'}} = \frac{\langle S \rangle}{c} = \frac{\varepsilon_0 E_0^2}{2}$$
+$$P_{\mathrm{abs{}} = \frac{\langle S \rangle}{c} = \frac{\varepsilon_0 E_0^2}{2}$$
 
 For a perfectly reflecting surface, the momentum transfer is doubled:
 
-$$P_{\mathrm{'\{'}ref{'\}'}} = \frac{2\langle S \rangle}{c} = \varepsilon_0 E_0^2$$
+$$P_{\mathrm{ref{}} = \frac{2\langle S \rangle}{c} = \varepsilon_0 E_0^2$$
 
 A 1 kW/m$^2$ beam (like sunlight near Earth) exerts a pressure of about $3.3\ \mu$Pa on a
 perfect absorber. $\blacksquare$
@@ -963,11 +963,11 @@ Copper: $\sigma = 5.96 \times 10^7$ S/m, $\mu_r \approx 1$.
 
 At $f = 60$ Hz ($\omega = 2\pi \times 60$ rad/s):
 
-$$\delta = \sqrt{\frac{2}{4\pi \times 10^{-7} \times 5.96 \times 10^7 \times 2\pi \times 60}} \approx 8.5\ \mathrm{'\{'}mm{'\}'}$$
+$$\delta = \sqrt{\frac{2}{4\pi \times 10^{-7} \times 5.96 \times 10^7 \times 2\pi \times 60}} \approx 8.5\ \mathrm{mm{}$$
 
 At $f = 1$ MHz ($\omega = 2\pi \times 10^6$ rad/s):
 
-$$\delta = \sqrt{\frac{2}{4\pi \times 10^{-7} \times 5.96 \times 10^7 \times 2\pi \times 10^6}} \approx 65\ \mu\mathrm{'\{'}m{'\}'}$$
+$$\delta = \sqrt{\frac{2}{4\pi \times 10^{-7} \times 5.96 \times 10^7 \times 2\pi \times 10^6}} \approx 65\ \mu\mathrm{m{}$$
 
 The skin depth decreases as $1/\sqrt{f}$, so higher-frequency signals are confined to thinner
 surface layers. $\blacksquare$
@@ -980,7 +980,7 @@ Electromagnetic waves can be guided by hollow conducting pipes (waveguides). Con
 rectangular waveguide with dimensions $a$ (width) and $b$ (height).
 
 **TE modes** (transverse electric, $E_z = 0$, $B_z \neq 0$). The lowest-order mode is
-$\mathrm{'\{'}TE{'\}'}_{10}$, with fields:
+$\mathrm{TE{}_{10}$, with fields:
 
 $$E_y = E_0 \sin\!\left(\frac{\pi x}{a}\right)\cos(k_g z - \omega t)$$
 
@@ -994,7 +994,7 @@ where the **guide wave number** is $k_g = \sqrt{(\omega/c)^2 - (\pi/a)^2}$.
 
 $$\omega_{c,mn} = c\pi\sqrt{\left(\frac{m}{a}\right)^2 + \left(\frac{n}{b}\right)^2}$$
 
-For the $\mathrm{'\{'}TE{'\}'}_{10}$ mode: $f_c = \frac{c}{2a}$.
+For the $\mathrm{TE{}_{10}$ mode: $f_c = \frac{c}{2a}$.
 
 **Phase and group velocities.** In a waveguide, the phase velocity exceeds $c$:
 
@@ -1189,17 +1189,17 @@ observation point, the radiation is compressed (higher density of field lines).
 
 **Fields of a moving charge.** The electric field splits into two parts:
 
-$$\mathbf{'\{'}E{'\}'} = \mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}vel{'\}'}} + \mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}acc{'\}'}}$$
+$$\mathbf{'\{'}E{'\}'} = \mathbf{'\{'}E{'\}'}_{\mathrm{vel{}} + \mathbf{'\{'}E{'\}'}_{\mathrm{acc{}}$$
 
 The **velocity field** (Coulomb-like, falls off as $1/R^2$):
 
-$$\mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}vel{'\}'}} = \frac{q}{4\pi\varepsilon_0}\frac{(1-\beta^2)(\hat{\mathbf{'\{'}R{'\}'}} - \boldsymbol{'\{'}\beta{'\}'})}{\kappa^3 R^2}\bigg|_{t_r}$$
+$$\mathbf{'\{'}E{'\}'}_{\mathrm{vel{}} = \frac{q}{4\pi\varepsilon_0}\frac{(1-\beta^2)(\hat{\mathbf{'\{'}R{'\}'}} - \boldsymbol{'\{'}\beta{'\}'})}{\kappa^3 R^2}\bigg|_{t_r}$$
 
 where $\boldsymbol{'\{'}\beta{'\}'} = \mathbf{'\{'}v{'\}'}/c$.
 
 The **acceleration field** (radiation, falls off as $1/R$):
 
-$$\mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}acc{'\}'}} = \frac{q}{4\pi\varepsilon_0 c}\frac{\hat{\mathbf{'\{'}R{'\}'}} \times [(\hat{\mathbf{'\{'}R{'\}'}} - \boldsymbol{'\{'}\beta{'\}'}) \times \dot{\boldsymbol{'\{'}\beta{'\}'}}]}{\kappa^3 R}\bigg|_{t_r}$$
+$$\mathbf{'\{'}E{'\}'}_{\mathrm{acc{}} = \frac{q}{4\pi\varepsilon_0 c}\frac{\hat{\mathbf{'\{'}R{'\}'}} \times [(\hat{\mathbf{'\{'}R{'\}'}} - \boldsymbol{'\{'}\beta{'\}'}) \times \dot{\boldsymbol{'\{'}\beta{'\}'}}]}{\kappa^3 R}\bigg|_{t_r}$$
 
 Only the acceleration field contributes to radiation at large distances. The magnetic field
 is always:
@@ -1219,7 +1219,7 @@ spacetime. The **spacetime interval** between two events is:
 $$ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2$$
 
 This interval is invariant under Lorentz transformations --- all inertial observers agree on its
-value. We use the metric signature $\eta_{\mu\nu} = \mathrm{'\{'}diag{'\}'}(-1, +1, +1, +1)$.
+value. We use the metric signature $\eta_{\mu\nu} = \mathrm{diag{}(-1, +1, +1, +1)$.
 
 **Lorentz transformations.** For a boost with velocity $v$ along the $x$-axis, define
 $\beta = v/c$ and $\gamma = 1/\sqrt{1-\beta^2}$:
@@ -1381,15 +1381,15 @@ spherical Gaussian surface of radius $r$:
 
 For $r \lt{} R$: $D \cdot 4\pi r^2 = q \implies \mathbf{'\{'}D{'\}'} = \frac{q}{4\pi r^2}\,\hat{\mathbf{'\{'}r{'\}'}}$.
 
-$\mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}in{'\}'}} = \frac{\mathbf{'\{'}D{'\}'}}{\varepsilon} = \frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{'\{'}r{'\}'}}$.
+$\mathbf{'\{'}E{'\}'}_{\mathrm{in{}} = \frac{\mathbf{'\{'}D{'\}'}}{\varepsilon} = \frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{'\{'}r{'\}'}}$.
 
-$\mathbf{'\{'}P{'\}'} = \varepsilon_0\chi_e\mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}in{'\}'}} = \left(\varepsilon - \varepsilon_0\right)\frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{'\{'}r{'\}'}}$.
+$\mathbf{'\{'}P{'\}'} = \varepsilon_0\chi_e\mathbf{'\{'}E{'\}'}_{\mathrm{in{}} = \left(\varepsilon - \varepsilon_0\right)\frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{'\{'}r{'\}'}}$.
 
 For $r \gt{} R$: $D \cdot 4\pi r^2 = q \implies \mathbf{'\{'}D{'\}'} = \frac{q}{4\pi r^2}\,\hat{\mathbf{'\{'}r{'\}'}}$.
 
-$\mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}out{'\}'}} = \frac{\mathbf{'\{'}D{'\}'}}{\varepsilon_0} = \frac{q}{4\pi\varepsilon_0 r^2}\,\hat{\mathbf{'\{'}r{'\}'}}$.
+$\mathbf{'\{'}E{'\}'}_{\mathrm{out{}} = \frac{\mathbf{'\{'}D{'\}'}}{\varepsilon_0} = \frac{q}{4\pi\varepsilon_0 r^2}\,\hat{\mathbf{'\{'}r{'\}'}}$.
 
-$\mathbf{'\{'}P{'\}'}_{\mathrm{'\{'}out{'\}'}} = \mathbf{'\{'}0{'\}'}$ (vacuum).
+$\mathbf{'\{'}P{'\}'}_{\mathrm{out{}} = \mathbf{'\{'}0{'\}'}$ (vacuum).
 
 Bound surface charge: $\sigma_b = \mathbf{'\{'}P{'\}'}\cdot\hat{\mathbf{'\{'}r{'\}'}}\big|_{r=R} = \left(\varepsilon - \varepsilon_0\right)\frac{q}{4\pi\varepsilon R^2}$.
 
@@ -1410,7 +1410,7 @@ cylinder of radius $r$ and length $L$.
 
 For $r \lt{} R$: no charge enclosed, so $\mathbf{'\{'}E{'\}'} = \mathbf{'\{'}0{'\}'}$.
 
-For $r \gt{} R$: the enclosed charge is $Q_{\mathrm{'\{'}enc{'\}'}} = \sigma \cdot 2\pi R L$.
+For $r \gt{} R$: the enclosed charge is $Q_{\mathrm{enc{}} = \sigma \cdot 2\pi R L$.
 
 $$E \cdot 2\pi r L = \frac{\sigma \cdot 2\pi R L}{\varepsilon_0}$$
 
@@ -1469,23 +1469,23 @@ $$V(r,\theta) = \sum_{l=0}^{\infty}\left(A_l r^l + \frac{B_l}{r^{l+1}}\right)P_l
 
 For $r \lt{} R$: finiteness at $r = 0$ requires $B_l = 0$.
 
-$$V_{\mathrm{'\{'}in{'\}'}} = \sum_{l=0}^{\infty} A_l\,r^l\,P_l(\cos\theta)$$
+$$V_{\mathrm{in{}} = \sum_{l=0}^{\infty} A_l\,r^l\,P_l(\cos\theta)$$
 
-Boundary condition at $r = R$: $V_{\mathrm{'\{'}in{'\}'}}(R,\theta) = V_0\cos\theta = V_0 P_1(\cos\theta)$.
+Boundary condition at $r = R$: $V_{\mathrm{in{}}(R,\theta) = V_0\cos\theta = V_0 P_1(\cos\theta)$.
 
 By orthogonality of Legendre polynomials, only $l = 1$ contributes: $A_1 = V_0/R$.
 
-$$V_{\mathrm{'\{'}in{'\}'}} = \frac{V_0}{R}\,r\cos\theta = \frac{V_0}{R}\,z$$
+$$V_{\mathrm{in{}} = \frac{V_0}{R}\,r\cos\theta = \frac{V_0}{R}\,z$$
 
 For $r \gt{} R$: $V \to 0$ as $r \to \infty$ requires $A_l = 0$.
 
-$$V_{\mathrm{'\{'}out{'\}'}} = \sum_{l=0}^{\infty}\frac{B_l}{r^{l+1}}P_l(\cos\theta)$$
+$$V_{\mathrm{out{}} = \sum_{l=0}^{\infty}\frac{B_l}{r^{l+1}}P_l(\cos\theta)$$
 
 Matching at $r = R$: $B_1/R^2 = V_0 \implies B_1 = V_0 R^2$.
 
-$$V_{\mathrm{'\{'}out{'\}'}} = \frac{V_0 R^2}{r^2}\cos\theta$$
+$$V_{\mathrm{out{}} = \frac{V_0 R^2}{r^2}\cos\theta$$
 
-The interior field is uniform: $\mathbf{'\{'}E{'\}'}_{\mathrm{'\{'}in{'\}'}} = -\nabla V_{\mathrm{'\{'}in{'\}'}} = -(V_0/R)\,\hat{\mathbf{'\{'}z{'\}'}}$.
+The interior field is uniform: $\mathbf{'\{'}E{'\}'}_{\mathrm{in{}} = -\nabla V_{\mathrm{in{}} = -(V_0/R)\,\hat{\mathbf{'\{'}z{'\}'}}$.
 
 *Cross-reference:* Section 2.4, Section 2.7.
 
@@ -1530,7 +1530,7 @@ along the $z$-axis (inside the sphere).
 
 For $V = 0$ on the sphere ($r = R$), we need:
 
-$$\frac{q}{d_1} + \frac{q'}{d_2} = 0 \quad \mathrm{'\{'}for\ all\ {'\}'}\theta$$
+$$\frac{q}{d_1} + \frac{q'}{d_2} = 0 \quad \mathrm{for\ all\ {}\theta$$
 
 where $d_1^2 = R^2 + a^2 - 2Ra\cos\theta$ and $d_2^2 = R^2 + b^2 - 2Rb\cos\theta$.
 
@@ -1620,11 +1620,11 @@ $$d\mathbf{'\{'}B{'\}'} = \frac{\mu_0 I}{4\pi}\frac{d\mathbf{'\{'}l{'\}'} \times
 
 $$= \frac{\mu_0 I}{4\pi}\frac{(-a/2)\,dy}{[(a/2)^2+y^2]^{3/2}}\,\hat{\mathbf{'\{'}z{'\}'}}$$
 
-$$B_{\mathrm{'\{'}one\ side{'\}'}} = \frac{\mu_0 I}{4\pi}\!\left(-\frac{a}{2}\right)\!\int_{-a/2}^{a/2}\frac{dy}{[(a/2)^2+y^2]^{3/2}}$$
+$$B_{\mathrm{one\ side{}} = \frac{\mu_0 I}{4\pi}\!\left(-\frac{a}{2}\right)\!\int_{-a/2}^{a/2}\frac{dy}{[(a/2)^2+y^2]^{3/2}}$$
 
 Using $\int dy/(s^2+y^2)^{3/2} = y/[s^2\sqrt{s^2+y^2}]$ with $s = a/2$:
 
-$$B_{\mathrm{'\{'}one\ side{'\}'}} = \frac{\mu_0 I}{4\pi}\!\left(-\frac{a}{2}\right)\frac{2}{(a/2)\sqrt{(a/2)^2+(a/2)^2}} \cdot 2 = -\frac{\mu_0 I}{\pi a}\cdot\frac{1}{\sqrt{2}} \cdot 2 = -\frac{\mu_0 I}{\pi a}\sqrt{2}$$
+$$B_{\mathrm{one\ side{}} = \frac{\mu_0 I}{4\pi}\!\left(-\frac{a}{2}\right)\frac{2}{(a/2)\sqrt{(a/2)^2+(a/2)^2}} \cdot 2 = -\frac{\mu_0 I}{\pi a}\cdot\frac{1}{\sqrt{2}} \cdot 2 = -\frac{\mu_0 I}{\pi a}\sqrt{2}$$
 
 The magnitude from all four sides: $B = 4 \times \frac{\sqrt{2}\,\mu_0 I}{\pi a} = \frac{2\sqrt{2}\,\mu_0 I}{\pi a}$.
 
@@ -1681,7 +1681,7 @@ $$B_z \approx \frac{\mu_0 I R^2}{2z^3} = \frac{\mu_0}{4\pi}\frac{2m}{z^3}$$
 
 The dipole field formula gives, on the axis ($\theta = 0$):
 
-$$\mathbf{'\{'}B{'\}'}_{\mathrm{'\{'}dip{'\}'}} = \frac{\mu_0}{4\pi}\frac{2\mathbf{'\{'}m{'\}'}}{z^3}$$
+$$\mathbf{'\{'}B{'\}'}_{\mathrm{dip{}} = \frac{\mu_0}{4\pi}\frac{2\mathbf{'\{'}m{'\}'}}{z^3}$$
 
 This matches. $\blacksquare$
 
@@ -1716,7 +1716,7 @@ This matches the Ampere's law result. $\blacksquare$
 
 </details>
 
-**Problem 14.** An iron ring of mean radius $R = 10$ cm, cross-sectional area $A = 4\ \mathrm{'\{'}cm{'\}'}^2$,
+**Problem 14.** An iron ring of mean radius $R = 10$ cm, cross-sectional area $A = 4\ \mathrm{cm{}^2$,
 and relative permeability $\mu_r = 500$ has $N = 200$ turns carrying current $I = 2$ A.
 Find $B$, $H$, $M$, and the total flux through the ring.
 
@@ -1727,13 +1727,13 @@ Apply Ampere's law for $\mathbf{'\{'}H{'\}'}$ around the ring:
 
 $$\oint \mathbf{'\{'}H{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = NI \implies H \cdot 2\pi R = NI$$
 
-$$H = \frac{NI}{2\pi R} = \frac{200 \times 2}{2\pi \times 0.10} = \frac{400}{0.628} \approx 637\ \mathrm{'\{'}A/m{'\}'}$$
+$$H = \frac{NI}{2\pi R} = \frac{200 \times 2}{2\pi \times 0.10} = \frac{400}{0.628} \approx 637\ \mathrm{A/m{}$$
 
-$$B = \mu_0 \mu_r H = 4\pi \times 10^{-7} \times 500 \times 637 \approx 0.40\ \mathrm{'\{'}T{'\}'}$$
+$$B = \mu_0 \mu_r H = 4\pi \times 10^{-7} \times 500 \times 637 \approx 0.40\ \mathrm{T{}$$
 
-$$M = \chi_m H = (\mu_r - 1)H = 499 \times 637 \approx 3.18 \times 10^5\ \mathrm{'\{'}A/m{'\}'}$$
+$$M = \chi_m H = (\mu_r - 1)H = 499 \times 637 \approx 3.18 \times 10^5\ \mathrm{A/m{}$$
 
-Total flux: $\Phi = BA = 0.40 \times 4 \times 10^{-4} = 1.6 \times 10^{-4}\ \mathrm{'\{'}Wb{'\}'}$.
+Total flux: $\Phi = BA = 0.40 \times 4 \times 10^{-4} = 1.6 \times 10^{-4}\ \mathrm{Wb{}$.
 
 *Cross-reference:* Section 3.7, Section 3.8.
 
@@ -1751,11 +1751,11 @@ As the loop enters the field with its leading edge at position $x$ inside the fi
 
 $$\Phi_B = B \cdot w \cdot x$$
 
-$$\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = -Bw\frac{dx}{dt} = -Bwv = -0.5 \times 0.1 \times 2 = -0.1\ \mathrm{'\{'}V{'\}'}$$
+$$\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = -Bw\frac{dx}{dt} = -Bwv = -0.5 \times 0.1 \times 2 = -0.1\ \mathrm{V{}$$
 
 The magnitude is $0.1$ V. The current is:
 
-$$I = \frac{\lvert\mathcal{'\{'}E{'\}'}\rvert}{R} = \frac{0.1}{5} = 0.02\ \mathrm{'\{'}A{'\}'}$$
+$$I = \frac{\lvert\mathcal{'\{'}E{'\}'}\rvert}{R} = \frac{0.1}{5} = 0.02\ \mathrm{A{}$$
 
 By Lenz's law, the current flows to oppose the increasing flux (counterclockwise when viewed
 from the direction of $\mathbf{'\{'}B{'\}'}$).
@@ -1780,11 +1780,11 @@ $\mathbf{'\{'}B{'\}'} = 3.33 \times 10^{-7}\cos(kz - \omega t)\,\hat{\mathbf{'\{
 
 Time-averaged Poynting vector magnitude:
 
-$$\langle S \rangle = \frac{E_0^2}{2\mu_0 c} = \frac{100^2}{2 \times 4\pi \times 10^{-7} \times 3 \times 10^8} = \frac{10^4}{754} \approx 13.3\ \mathrm{'\{'}W/m{'\}'}^2$$
+$$\langle S \rangle = \frac{E_0^2}{2\mu_0 c} = \frac{100^2}{2 \times 4\pi \times 10^{-7} \times 3 \times 10^8} = \frac{10^4}{754} \approx 13.3\ \mathrm{W/m{}^2$$
 
 Radiation pressure on a perfect absorber:
 
-$$P_{\mathrm{'\{'}rad{'\}'}} = \frac{\langle S \rangle}{c} = \frac{13.3}{3 \times 10^8} \approx 4.4 \times 10^{-8}\ \mathrm{'\{'}Pa{'\}'}$$
+$$P_{\mathrm{rad{}} = \frac{\langle S \rangle}{c} = \frac{13.3}{3 \times 10^8} \approx 4.4 \times 10^{-8}\ \mathrm{Pa{}$$
 
 *Cross-reference:* Section 5.2, Section 5.4, Section 5.5.
 
@@ -1801,7 +1801,7 @@ At $f = 1$ MHz:
 
 $$\delta = \sqrt{\frac{2}{\mu_0\sigma\omega}} = \sqrt{\frac{2}{4\pi \times 10^{-7} \times 5.96 \times 10^7 \times 2\pi \times 10^6}}$$
 
-$$= \sqrt{\frac{2}{4\pi \times 5.96 \times 2\pi^2 \times 10^6}} = \sqrt{\frac{2}{4.70 \times 10^8}} \approx 65.2\ \mu\mathrm{'\{'}m{'\}'}$$
+$$= \sqrt{\frac{2}{4\pi \times 5.96 \times 2\pi^2 \times 10^6}} = \sqrt{\frac{2}{4.70 \times 10^8}} \approx 65.2\ \mu\mathrm{m{}$$
 
 For $\delta = 1\ \mu$m:
 
@@ -1809,7 +1809,7 @@ $$1 \times 10^{-6} = \sqrt{\frac{2}{4\pi \times 10^{-7} \times 5.96 \times 10^7 
 
 $$10^{-12} = \frac{2}{4\pi \times 5.96 \times 2\pi \times f} = \frac{2}{470.4\,f}$$
 
-$$f = \frac{2}{470.4 \times 10^{-12}} \approx 4.25 \times 10^9\ \mathrm{'\{'}Hz{'\}'} = 4.25\ \mathrm{'\{'}GHz{'\}'}$$
+$$f = \frac{2}{470.4 \times 10^{-12}} \approx 4.25 \times 10^9\ \mathrm{Hz{} = 4.25\ \mathrm{GHz{}$$
 
 *Cross-reference:* Section 5.6.
 
@@ -1827,7 +1827,7 @@ $$\partial_\mu F^{\mu 1} = \mu_0 J^1 = \mu_0 J_x$$
 
 From the field tensor:
 
-$$F^{\mu 1} = (E_x/c,\ 0,\ -B_z,\ B_y) \quad \mathrm{'\{'}for\ {'\}'}\mu = 0, 1, 2, 3$$
+$$F^{\mu 1} = (E_x/c,\ 0,\ -B_z,\ B_y) \quad \mathrm{for\ {}\mu = 0, 1, 2, 3$$
 
 So:
 

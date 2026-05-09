@@ -403,45 +403,45 @@ $$I + G + X = S + T + M$$
 
 - **Marginal propensity to consume (MPC)**: the fraction of additional income that is spent on
   consumption:
-  $$\mathrm{'\{'}MPC{'\}'} = \frac{\Delta C}{\Delta Y}$$
+  $$\mathrm{MPC{} = \frac{\Delta C}{\Delta Y}$$
 - **Marginal propensity to save (MPS)**: the fraction of additional income that is saved:
-  $$\mathrm{'\{'}MPS{'\}'} = \frac{\Delta S}{\Delta Y}$$
+  $$\mathrm{MPS{} = \frac{\Delta S}{\Delta Y}$$
 - **Marginal propensity to tax (MPT)**: the fraction of additional income paid in tax:
-  $$\mathrm{'\{'}MPT{'\}'} = \frac{\Delta T}{\Delta Y}$$
+  $$\mathrm{MPT{} = \frac{\Delta T}{\Delta Y}$$
 - **Marginal propensity to import (MPM)**: the fraction of additional income spent on imports:
-  $$\mathrm{'\{'}MPM{'\}'} = \frac{\Delta M}{\Delta Y}$$
+  $$\mathrm{MPM{} = \frac{\Delta M}{\Delta Y}$$
 
-By definition: $\mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPS{'\}'} = 1$ (in a closed economy with no government).
+By definition: $\mathrm{MPC{} + \mathrm{MPS{} = 1$ (in a closed economy with no government).
 
 ### The Simple Multiplier
 
 In a closed economy with no government, the multiplier is:
 
-$$k = \frac{1}{\mathrm{'\{'}MPS{'\}'}} = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}}$$
+$$k = \frac{1}{\mathrm{MPS{}} = \frac{1}{1 - \mathrm{MPC{}}$$
 
 **Derivation:** an initial injection $\Delta I$ generates income $\Delta Y_1 = \Delta I$. Recipients
-spend $\mathrm{'\{'}MPC{'\}'} \times \Delta Y_1$ of this, generating income $\Delta Y_2 = \mathrm`\{MPC}`^2 \times
+spend $\mathrm{MPC{} \times \Delta Y_1$ of this, generating income $\Delta Y_2 = \mathrm`\{MPC}`^2 \times
 \Delta I$, and so on:
 
-$$\Delta Y = \Delta I \times (1 + \mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPC{'\}'}^2 + \mathrm{'\{'}MPC{'\}'}^3 + \cdots)$$
+$$\Delta Y = \Delta I \times (1 + \mathrm{MPC{} + \mathrm{MPC{}^2 + \mathrm{MPC{}^3 + \cdots)$$
 
-This is a geometric series with first term $1$ and common ratio $\mathrm{'\{'}MPC{'\}'}$ ($< 1$):
+This is a geometric series with first term $1$ and common ratio $\mathrm{MPC{}$ ($< 1$):
 
-$$\Delta Y = \Delta I \times \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}} = \Delta I \times k$$
+$$\Delta Y = \Delta I \times \frac{1}{1 - \mathrm{MPC{}} = \Delta I \times k$$
 
 ### The Complex Multiplier
 
 In an open economy with government:
 
-$$k = \frac{1}{\mathrm{'\{'}MPS{'\}'} + \mathrm{'\{'}MPT{'\}'} + \mathrm{'\{'}MPM{'\}'}} = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}(1 - t) + \mathrm{'\{'}MPM{'\}'}}$$
+$$k = \frac{1}{\mathrm{MPS{} + \mathrm{MPT{} + \mathrm{MPM{}} = \frac{1}{1 - \mathrm{MPC{}(1 - t) + \mathrm{MPM{}}$$
 
-Where $t$ is the proportional tax rate (if taxes are proportional: $\mathrm{'\{'}MPT{'\}'} = t$).
+Where $t$ is the proportional tax rate (if taxes are proportional: $\mathrm{MPT{} = t$).
 
 The multiplier is smaller because:
 
-- Taxes withdraw income at each round of spending ($\mathrm{'\{'}MPT{'\}'}$)
-- Imports are spending that leaks abroad ($\mathrm{'\{'}MPM{'\}'}$)
-- Savings are a leakage ($\mathrm{'\{'}MPS{'\}'}$)
+- Taxes withdraw income at each round of spending ($\mathrm{MPT{}$)
+- Imports are spending that leaks abroad ($\mathrm{MPM{}$)
+- Savings are a leakage ($\mathrm{MPS{}$)
 
 ### The Balanced Budget Multiplier
 
@@ -449,15 +449,15 @@ If government spending and taxes increase by the same amount ($\Delta G = \Delta
 
 $$\Delta Y = \Delta G \times k_G + \Delta T \times k_T$$
 
-Where $k_G = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}}$ (government spending multiplier) and $k_T =
+Where $k_G = \frac{1}{1 - \mathrm{MPC{}}$ (government spending multiplier) and $k_T =
 \frac{-\mathrm`\{MPC}`}{1 - \mathrm`\{MPC}`}$ (tax multiplier, which is negative because higher taxes
 reduce disposable income and consumption).
 
-$$\Delta Y = \frac{\Delta G}{1 - \mathrm{'\{'}MPC{'\}'}} + \frac{-\mathrm{'\{'}MPC{'\}'} \times \Delta T}{1 - \mathrm{'\{'}MPC{'\}'}}$$
+$$\Delta Y = \frac{\Delta G}{1 - \mathrm{MPC{}} + \frac{-\mathrm{MPC{} \times \Delta T}{1 - \mathrm{MPC{}}$$
 
 Since $\Delta G = \Delta T$:
 
-$$\Delta Y = \frac{\Delta G - \mathrm{'\{'}MPC{'\}'} \times \Delta G}{1 - \mathrm{'\{'}MPC{'\}'}} = \frac{\Delta G(1 - \mathrm{'\{'}MPC{'\}'})}{1 - \mathrm{'\{'}MPC{'\}'}} = \Delta G$$
+$$\Delta Y = \frac{\Delta G - \mathrm{MPC{} \times \Delta G}{1 - \mathrm{MPC{}} = \frac{\Delta G(1 - \mathrm{MPC{})}{1 - \mathrm{MPC{}} = \Delta G$$
 
 The balanced budget multiplier equals 1: equal increases in $G$ and $T$ increase GDP by the amount
 of the increase.
@@ -478,13 +478,13 @@ Where:
 
 **Average propensity to consume (APC):**
 
-$$\mathrm{'\{'}APC{'\}'} = \frac{C}{Y_d} = \frac{a}{Y_d} + b$$
+$$\mathrm{APC{} = \frac{C}{Y_d} = \frac{a}{Y_d} + b$$
 
 APC falls as income rises (because the autonomous component $a/Y_d$ becomes smaller).
 
 **Average propensity to save (APS):**
 
-$$\mathrm{'\{'}APS{'\}'} = \frac{S}{Y_d} = 1 - \mathrm{'\{'}APC{'\}'}$$
+$$\mathrm{APS{} = \frac{S}{Y_d} = 1 - \mathrm{APC{}$$
 
 ### The Saving Function
 
@@ -493,7 +493,7 @@ Since $Y_d = C + S$:
 $$S = Y_d - C = Y_d - (a + bY_d) = -a + (1 - b)Y_d$$
 
 Where $-a$ is autonomous dissaving (when income is zero, households must consume $a$, so they
-dissave by $a$), and $(1 - b) = \mathrm{'\{'}MPS{'\}'}$.
+dissave by $a$), and $(1 - b) = \mathrm{MPS{}$.
 
 ### Factors Shifting the Consumption Function
 
@@ -542,7 +542,7 @@ Implications:
 
 The Keynesian cross model determines equilibrium output in the short run when prices are fixed. The
 45-degree line represents $Y = \text{'\{'}Aggregate Expenditure (AE){'\}'}$. The AE line has a slope of
-$\mathrm{'\{'}MPC{'\}'}$ (in the simplest case where $\text{'\{'}AE{'\}'} = C + I$).
+$\mathrm{MPC{}$ (in the simplest case where $\text{'\{'}AE{'\}'} = C + I$).
 
 Equilibrium occurs where $\text{'\{'}AE{'\}'} = Y$:
 
@@ -562,7 +562,7 @@ $$Y^* = \frac{a - bT + I + G + X - M}{1 - b}$$
 
 This is the equilibrium level of output, which can also be written as:
 
-$$Y^* = \frac{\text{'\{'}Autonomous expenditure{'\}'}}{1 - \mathrm{'\{'}MPC{'\}'}} = k \times \text{'\{'}Autonomous expenditure{'\}'}$$
+$$Y^* = \frac{\text{'\{'}Autonomous expenditure{'\}'}}{1 - \mathrm{MPC{}} = k \times \text{'\{'}Autonomous expenditure{'\}'}$$
 
 ### The Inflationary and Deflationary Gaps
 
@@ -872,7 +872,7 @@ $0.3Y = 690$
 
 $Y^* = 2300$ billion USD
 
-(b) Multiplier $= \frac{1}{1 - \mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPM{'\}'}} = \frac{1}{1 - 0.8 + 0.1} = \frac{1}{0.3} = 3.33$
+(b) Multiplier $= \frac{1}{1 - \mathrm{MPC{} + \mathrm{MPM{}} = \frac{1}{1 - 0.8 + 0.1} = \frac{1}{0.3} = 3.33$
 
 $\Delta Y = 3.33 \times 50 = \$166.7$ billion
 

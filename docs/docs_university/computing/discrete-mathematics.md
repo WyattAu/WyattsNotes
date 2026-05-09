@@ -340,9 +340,9 @@ co-NP-complete, not NP-complete.
 
 **Basic operations:**
 
-- Union: $A \cup B = \\{x : x \in A \mathrm{'\{'} or {'\}'} x \in B\\}$
-- Intersection: $A \cap B = \\{x : x \in A \mathrm{'\{'} and {'\}'} x \in B\\}$
-- Difference: $A \setminus B = \\{x : x \in A \mathrm{'\{'} and {'\}'} x \notin B\\}$
+- Union: $A \cup B = \\{x : x \in A \mathrm{ or {} x \in B\\}$
+- Intersection: $A \cap B = \\{x : x \in A \mathrm{ and {} x \in B\\}$
+- Difference: $A \setminus B = \\{x : x \in A \mathrm{ and {} x \notin B\\}$
 - Complement: $A^c = U \setminus A$ (where $U$ is the universal set)
 
 **De Morgan's Laws:**
@@ -455,7 +455,7 @@ $g \circ f$ is surjective. $\blacksquare$
 **Corollary 2.5.** The composition of two bijections is a bijection.
 
 A function $f : A \to B$ is **invertible** if there exists $f^{-1} : B \to A$ such that
-$f^{-1} \circ f = \mathrm{'\{'}id{'\}'}_A$ and $f \circ f^{-1} = \mathrm{'\{'}id{'\}'}_B$. A function is invertible
+$f^{-1} \circ f = \mathrm{id{}_A$ and $f \circ f^{-1} = \mathrm{id{}_B$. A function is invertible
 if and only if it is bijective.
 
 ### 2.4 Countability
@@ -468,7 +468,7 @@ is **uncountable**.
 
 *Proof.* The function $f : \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}Z{'\}'}$ defined by
 
-$$f(n) = \begin{cases} n/2 & \mathrm{'\{'}if{'\}'}\; n\; \mathrm{'\{'}is\; even{'\}'} \\ -(n+1)/2 & \mathrm{'\{'}if{'\}'}\; n\; \mathrm{'\{'}is\; odd{'\}'} \end{cases}$$
+$$f(n) = \begin{cases} n/2 & \mathrm{if{}\; n\; \mathrm{is\; even{} \\ -(n+1)/2 & \mathrm{if{}\; n\; \mathrm{is\; odd{} \end{cases}$$
 
 is a bijection, enumerating $0, -1, 1, -2, 2, -3, 3, \ldots$ $\blacksquare$
 
@@ -491,7 +491,7 @@ expansion $r_i = 0.d_{i1}d_{i2}d_{i3}\ldots$ with each $d_{ij} \in \\{0, 1, \ldo
 
 Define $s = 0.s_1 s_2 s_3 \ldots$ by
 
-$$s_i = \begin{cases} 5 & \mathrm{'\{'}if{'\}'}\; d_{ii} \neq 5 \\ 6 & \mathrm{'\{'}if{'\}'}\; d_{ii} = 5 \end{cases}$$
+$$s_i = \begin{cases} 5 & \mathrm{if{}\; d_{ii} \neq 5 \\ 6 & \mathrm{if{}\; d_{ii} = 5 \end{cases}$$
 
 Then $s \in [0, 1)$ and $s$ differs from $r_i$ in the $i$-th decimal place for every $i$,
 so $s \notin \\{r_1, r_2, \ldots\\}$, contradicting the assumption that the list was complete.
@@ -631,7 +631,7 @@ structure:
 
 *Proof (WOP implies induction).* Let $P(n)$ be a property with $P(0)$ true and $P(k) \implies P(k+1)$.
 Suppose for contradiction that $P(n)$ fails for some $n \geq 0$. Let
-$S = \\{n \geq 0 : P(n)\; \mathrm{'\{'}is\; false{'\}'}\\}$. By assumption $S \neq \emptyset$, so by WOP, $S$ has a least
+$S = \\{n \geq 0 : P(n)\; \mathrm{is\; false{}\\}$. By assumption $S \neq \emptyset$, so by WOP, $S$ has a least
 element $m$. Since $P(0)$ is true, $m \geq 1$. Then $P(m - 1)$ is true (by minimality of $m$),
 and $P(m - 1) \implies P(m)$ by the inductive hypothesis, so $P(m)$ is true, contradicting $m \in S$.
 Therefore $S = \emptyset$ and $P(n)$ holds for all $n \geq 0$.
@@ -913,7 +913,7 @@ and 5p coins.
 
 The generating function is
 
-$$G(x) = \underbrace{(1 + x + x^2 + \cdots)}_{\mathrm{'\{'}1p\; coins{'\}'}} \cdot \underbrace{(1 + x^2 + x^4 + \cdots)}_{\mathrm{'\{'}2p\; coins{'\}'}} \cdot \underbrace{(1 + x^5 + x^{10} + \cdots)}_{\mathrm{'\{'}5p\; coins{'\}'}}$$
+$$G(x) = \underbrace{(1 + x + x^2 + \cdots)}_{\mathrm{1p\; coins{}} \cdot \underbrace{(1 + x^2 + x^4 + \cdots)}_{\mathrm{2p\; coins{}} \cdot \underbrace{(1 + x^5 + x^{10} + \cdots)}_{\mathrm{5p\; coins{}}$$
 
 $$= \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}$$
 
@@ -1181,7 +1181,7 @@ every subset $S \subseteq X$,
 
 $$|N(S)| \geq |S|$$
 
-where $N(S) = \\{y \in Y : \exists\, x \in S\; \mathrm{'\{'}with{'\}'}\; xy \in E\\}$ is the neighbourhood of $S$.
+where $N(S) = \\{y \in Y : \exists\, x \in S\; \mathrm{with{}\; xy \in E\\}$ is the neighbourhood of $S$.
 
 *Proof (necessity).* If a matching covers $X$, each $x \in S$ is matched to a distinct $y \in N(S)$,
 so $|N(S)| \geq |S|$.
@@ -1234,9 +1234,9 @@ satisfies:
 
 1. **Capacity constraint:** $0 \leq f(e) \leq c(e)$ for all $e \in E$.
 2. **Flow conservation:** for all $v \in V \setminus \\{s, t\\}$,
-   $\sum_{e\; \mathrm{'\{'}into{'\}'}\; v} f(e) = \sum_{e\; \mathrm{'\{'}out\; of{'\}'}\; v} f(e)$.
+   $\sum_{e\; \mathrm{into{}\; v} f(e) = \sum_{e\; \mathrm{out\; of{}\; v} f(e)$.
 
-The **value** of a flow is $|f| = \sum_{e\; \mathrm{'\{'}out\; of{'\}'}\; s} f(e) - \sum_{e\; \mathrm{'\{'}into{'\}'}\; s} f(e)$.
+The **value** of a flow is $|f| = \sum_{e\; \mathrm{out\; of{}\; s} f(e) - \sum_{e\; \mathrm{into{}\; s} f(e)$.
 
 An **s-t cut** $(S, T)$ partitions $V$ into $S$ (containing $s$) and $T$ (containing $t$). The
 **capacity** of the cut is $c(S, T) = \sum_{u \in S, v \in T} c(uv)$.
@@ -1379,16 +1379,16 @@ The Master Theorem provides asymptotic solutions to recurrences of the form
 $$T(n) = a\,T(n/b) + f(n)$$
 
 where $a \geq 1$, $b \gt 1$ are constants and $f(n)$ is asymptotically positive. Define
-$c_{\mathrm{'\{'}crit{'\}'}} = \log_b a$ (the **critical exponent**).
+$c_{\mathrm{crit{}} = \log_b a$ (the **critical exponent**).
 
 **Theorem 6.1 (Master Theorem).** Let $T(n)$ be defined as above.
 
-**Case 1:** If $f(n) = O(n^c)$ for some $c \lt c_{\mathrm{'\{'}crit{'\}'}}$, then $T(n) = \Theta(n^{c_{\mathrm{'\{'}crit{'\}'}}})$.
+**Case 1:** If $f(n) = O(n^c)$ for some $c \lt c_{\mathrm{crit{}}$, then $T(n) = \Theta(n^{c_{\mathrm{crit{}}})$.
 
-**Case 2:** If $f(n) = \Theta(n^{c_{\mathrm{'\{'}crit{'\}'}}} \log^k n)$ for some $k \geq 0$, then
-$T(n) = \Theta(n^{c_{\mathrm{'\{'}crit{'\}'}}} \log^{k+1} n)$.
+**Case 2:** If $f(n) = \Theta(n^{c_{\mathrm{crit{}}} \log^k n)$ for some $k \geq 0$, then
+$T(n) = \Theta(n^{c_{\mathrm{crit{}}} \log^{k+1} n)$.
 
-**Case 3:** If $f(n) = \Omega(n^c)$ for some $c \gt c_{\mathrm{'\{'}crit{'\}'}}$, and $a\,f(n/b) \leq \delta\, f(n)$
+**Case 3:** If $f(n) = \Omega(n^c)$ for some $c \gt c_{\mathrm{crit{}}$, and $a\,f(n/b) \leq \delta\, f(n)$
 for some $\delta \lt 1$ and sufficiently large $n$ (the **regularity condition**), then
 $T(n) = \Theta(f(n))$.
 
@@ -1397,9 +1397,9 @@ $T(n) = \Theta(f(n))$.
 <details>
 <summary>Solution</summary>
 
-$a = 3$, $b = 2$, $f(n) = n^2$. Critical exponent: $c_{\mathrm{'\{'}crit{'\}'}} = \log_2 3 \approx 1.585$.
+$a = 3$, $b = 2$, $f(n) = n^2$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 3 \approx 1.585$.
 
-Since $f(n) = n^2 = \Omega(n^c)$ for any $c \lt 2$, and $2 \gt 1.585 = c_{\mathrm{'\{'}crit{'\}'}}$, we are in
+Since $f(n) = n^2 = \Omega(n^c)$ for any $c \lt 2$, and $2 \gt 1.585 = c_{\mathrm{crit{}}$, we are in
 Case 3 (provided the regularity condition holds). Check: $3 \cdot (n/2)^2 = 3n^2/4 = 0.75\, n^2 \leq \delta\, n^2$
 for $\delta = 0.75 \lt 1$. ✓
 
@@ -1412,7 +1412,7 @@ Therefore $T(n) = \Theta(n^2)$.
 <details>
 <summary>Solution</summary>
 
-$a = 2$, $b = 2$, $f(n) = n$. Critical exponent: $c_{\mathrm{'\{'}crit{'\}'}} = \log_2 2 = 1$.
+$a = 2$, $b = 2$, $f(n) = n$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 2 = 1$.
 
 $f(n) = n = \Theta(n^1 \log^0 n)$, so we are in Case 2 with $k = 0$.
 
@@ -1425,7 +1425,7 @@ Therefore $T(n) = \Theta(n \log n)$.
 <details>
 <summary>Solution</summary>
 
-$a = 4$, $b = 2$, $f(n) = n$. Critical exponent: $c_{\mathrm{'\{'}crit{'\}'}} = \log_2 4 = 2$.
+$a = 4$, $b = 2$, $f(n) = n$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 4 = 2$.
 
 $f(n) = n = O(n^c)$ for any $c \gt 0$ with $c \lt 2$, so we are in Case 1.
 
@@ -1435,20 +1435,20 @@ Therefore $T(n) = \Theta(n^2)$.
 
 **Proof sketch of the Master Theorem.** Expand the recurrence tree. At level $j$ (root is level 0),
 there are $a^j$ subproblems, each of size $n/b^j$, each contributing $f(n/b^j)$ work. The tree has
-$\log_b n$ levels, with $a^{\log_b n} = n^{c_{\mathrm{'\{'}crit{'\}'}}}$ leaves. The total work is
+$\log_b n$ levels, with $a^{\log_b n} = n^{c_{\mathrm{crit{}}}$ leaves. The total work is
 
-$$T(n) = \Theta\!\left(n^{c_{\mathrm{'\{'}crit{'\}'}}}\right) + \sum_{j=0}^{\log_b n - 1} a^j \, f(n/b^j)$$
+$$T(n) = \Theta\!\left(n^{c_{\mathrm{crit{}}}\right) + \sum_{j=0}^{\log_b n - 1} a^j \, f(n/b^j)$$
 
-- **Case 1:** $f(n) = O(n^c)$ with $c \lt c_{\mathrm{'\{'}crit{'\}'}}$. The sum is dominated by the leaves,
-  giving $T(n) = \Theta(n^{c_{\mathrm{'\{'}crit{'\}'}}})$.
-- **Case 2:** $f(n) = \Theta(n^{c_{\mathrm{'\{'}crit{'\}'}}} \log^k n)$. Each level contributes the same order,
-  with $\log_b n$ levels, giving $T(n) = \Theta(n^{c_{\mathrm{'\{'}crit{'\}'}}} \log^{k+1} n)$.
-- **Case 3:** $f(n) = \Omega(n^c)$ with $c \gt c_{\mathrm{'\{'}crit{'\}'}}$. The root level dominates, giving
+- **Case 1:** $f(n) = O(n^c)$ with $c \lt c_{\mathrm{crit{}}$. The sum is dominated by the leaves,
+  giving $T(n) = \Theta(n^{c_{\mathrm{crit{}}})$.
+- **Case 2:** $f(n) = \Theta(n^{c_{\mathrm{crit{}}} \log^k n)$. Each level contributes the same order,
+  with $\log_b n$ levels, giving $T(n) = \Theta(n^{c_{\mathrm{crit{}}} \log^{k+1} n)$.
+- **Case 3:** $f(n) = \Omega(n^c)$ with $c \gt c_{\mathrm{crit{}}$. The root level dominates, giving
   $T(n) = \Theta(f(n))$. The regularity condition $a\,f(n/b) \leq \delta\,f(n)$ ensures the root
   dominates all levels below.
 The Master Theorem does not apply to recurrences like $T(n) = T(n-1) + n$ (not of the form
 $a\,T(n/b) + f(n)$). Also, if $f(n)$ falls between cases (e.g., $f(n) = n \log n$ with
-$c_{\mathrm{'\{'}crit{'\}'}} = 1$), the Master Theorem does not apply and the Akra--Bazzi method should be used
+$c_{\mathrm{crit{}} = 1$), the Master Theorem does not apply and the Akra--Bazzi method should be used
 instead.
 :::
 
@@ -1522,7 +1522,7 @@ is an equivalence relation. How many equivalence classes are there?
 *Symmetric:* If $a - b$ is even, then $b - a = -(a - b)$ is even. ✓
 *Transitive:* If $a - b$ and $b - c$ are even, then $a - c = (a - b) + (b - c)$ is even. ✓
 
-The equivalence classes are $[0] = \\{\mathrm{'\{'}even\; integers{'\}'}\\}$ and $[1] = \\{\mathrm{'\{'}odd\; integers{'\}'}\\}$.
+The equivalence classes are $[0] = \\{\mathrm{even\; integers{}\\}$ and $[1] = \\{\mathrm{odd\; integers{}\\}$.
 There are exactly 2 equivalence classes.
 
 If you get this wrong, revise: Section 2.2.

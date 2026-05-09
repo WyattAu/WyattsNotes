@@ -75,19 +75,19 @@ The period is $T = 2\pi/\omega = 2\pi\sqrt{l\cos\theta/g}$. $\blacksquare$
 
 *Proof.* Newton's second law for the $i$-th particle:
 
-$$\mathbf{'\{'}F{'\}'}_i^{(\mathrm{'\{'}ext{'\}'})} + \sum_{j \neq i} \mathbf{'\{'}F{'\}'}_{ij} = m_i \dot{\mathbf{'\{'}v{'\}'}}_i$$
+$$\mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_{j \neq i} \mathbf{'\{'}F{'\}'}_{ij} = m_i \dot{\mathbf{'\{'}v{'\}'}}_i$$
 
 where $\mathbf{'\{'}F{'\}'}_{ij}$ is the force on particle $i$ due to particle $j$. By Newton's third law, $\mathbf{'\{'}F{'\}'}_{ij} = -\mathbf{'\{'}F{'\}'}_{ji}$. Summing over all particles:
 
-$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{'\{'}ext{'\}'})} + \sum_i \sum_{j \neq i} \mathbf{'\{'}F{'\}'}_{ij} = \frac{d}{dt}\sum_i m_i \mathbf{'\{'}v{'\}'}_i$$
+$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_i \sum_{j \neq i} \mathbf{'\{'}F{'\}'}_{ij} = \frac{d}{dt}\sum_i m_i \mathbf{'\{'}v{'\}'}_i$$
 
 The double sum vanishes by Newton's third law. Defining $\mathbf{'\{'}P{'\}'} = \sum_i m_i \mathbf{'\{'}v{'\}'}_i$:
 
-$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{'\{'}ext{'\}'})} = \dot{\mathbf{'\{'}P{'\}'}}$$
+$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} = \dot{\mathbf{'\{'}P{'\}'}}$$
 
 If there are no external forces, $\dot{\mathbf{'\{'}P{'\}'}} = 0$ and $\mathbf{'\{'}P{'\}'}$ is constant. $\blacksquare$
 
-**Corollary.** The centre of mass moves as if all external forces acted on a single particle of mass $M = \sum_i m_i$ located at the centre of mass: $M\ddot{\mathbf{'\{'}R{'\}'}} = \sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{'\{'}ext{'\}'})}$.
+**Corollary.** The centre of mass moves as if all external forces acted on a single particle of mass $M = \sum_i m_i$ located at the centre of mass: $M\ddot{\mathbf{'\{'}R{'\}'}} = \sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})}$.
 
 ### 1.6 Conservation of Energy
 
@@ -121,13 +121,13 @@ $$\dot{\mathbf{'\{'}L{'\}'}}_i = \dot{\mathbf{'\{'}r{'\}'}}_i \times m_i \mathbf
 
 since $\dot{\mathbf{'\{'}r{'\}'}}_i \times m_i \mathbf{'\{'}v{'\}'}_i = \mathbf{'\{'}v{'\}'}_i \times m_i \mathbf{'\{'}v{'\}'}_i = \mathbf{'\{'}0{'\}'}$. Summing over all particles:
 
-$$\dot{\mathbf{'\{'}L{'\}'}} = \sum_i \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_i^{(\mathrm{'\{'}ext{'\}'})} + \sum_i \sum_{j \neq i} \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_{ij}$$
+$$\dot{\mathbf{'\{'}L{'\}'}} = \sum_i \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_i \sum_{j \neq i} \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_{ij}$$
 
 The double sum represents internal torques. For central internal forces ($\mathbf{'\{'}F{'\}'}_{ij}$ parallel to $\mathbf{'\{'}r{'\}'}_i - \mathbf{'\{'}r{'\}'}_j$), the internal torques cancel in pairs. Hence:
 
-$$\dot{\mathbf{'\{'}L{'\}'}} = \boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{'\{'}ext{'\}'})}$$
+$$\dot{\mathbf{'\{'}L{'\}'}} = \boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{ext{})}$$
 
-If $\boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{'\{'}ext{'\}'})} = \mathbf{'\{'}0{'\}'}$, then $\mathbf{'\{'}L{'\}'} = \mathrm{'\{'}const{'\}'}$. $\blacksquare$
+If $\boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{ext{})} = \mathbf{'\{'}0{'\}'}$, then $\mathbf{'\{'}L{'\}'} = \mathrm{const{}$. $\blacksquare$
 
 ### 1.8 The Rocket Equation
 
@@ -159,14 +159,14 @@ where $\Delta t$ is the burn time.
 
 ### 1.9 Worked Example: Rocket in Free Space
 
-**Problem.** A rocket starts from rest with mass $m_0 = 1000\,\mathrm{'\{'}kg{'\}'}$ and exhaust velocity $u_e = 3000\,\mathrm{'\{'}m/s{'\}'}$. It burns fuel until its mass is $m_f = 400\,\mathrm{'\{'}kg{'\}'}$. Find the final velocity.
+**Problem.** A rocket starts from rest with mass $m_0 = 1000\,\mathrm{kg{}$ and exhaust velocity $u_e = 3000\,\mathrm{m/s{}$. It burns fuel until its mass is $m_f = 400\,\mathrm{kg{}$. Find the final velocity.
 
 <details>
 <summary>Solution</summary>
 
 Applying the Tsiolkovsky rocket equation:
 
-$$\Delta v = u_e \ln\frac{m_0}{m_f} = 3000 \ln\frac{1000}{400} = 3000 \ln(2.5) \approx 3000 \times 0.916 = 2749\,\mathrm{'\{'}m/s{'\}'}$$
+$$\Delta v = u_e \ln\frac{m_0}{m_f} = 3000 \ln\frac{1000}{400} = 3000 \ln(2.5) \approx 3000 \times 0.916 = 2749\,\mathrm{m/s{}$$
 
 $\blacksquare$
 
@@ -326,15 +326,15 @@ $$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j}\right) - \frac{\partia
 
 *Proof.* Start from D'Alembert's principle with only applied forces (ideal constraints):
 
-$$\sum_i (\mathbf{'\{'}F{'\}'}_i^{(\mathrm{'\{'}app{'\}'})} - m_i\ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
+$$\sum_i (\mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} - m_i\ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
 
 Express the virtual displacement in terms of generalised coordinates:
 
 $$\delta\mathbf{'\{'}r{'\}'}_i = \sum_j \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\delta q_j$$
 
-**First term (applied forces).** For a conservative system, $\mathbf{'\{'}F{'\}'}_i^{(\mathrm{'\{'}app{'\}'})} = -\nabla_i V$, so:
+**First term (applied forces).** For a conservative system, $\mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} = -\nabla_i V$, so:
 
-$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{'\{'}app{'\}'})} \cdot \delta\mathbf{'\{'}r{'\}'}_i = -\sum_i \nabla_i V \cdot \sum_j \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\delta q_j = -\sum_j \frac{\partial V}{\partial q_j}\delta q_j$$
+$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} \cdot \delta\mathbf{'\{'}r{'\}'}_i = -\sum_i \nabla_i V \cdot \sum_j \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\delta q_j = -\sum_j \frac{\partial V}{\partial q_j}\delta q_j$$
 
 Defining the **generalised force** $Q_j = \sum_i \mathbf{'\{'}F{'\}'}_i \cdot \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}$, for conservative forces $Q_j = -\partial V/\partial q_j$.
 
@@ -532,7 +532,7 @@ $\blacksquare$
 
 *Proof.* The Euler-Lagrange equation for a cyclic coordinate is:
 
-$$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j}\right) = 0 \implies p_j = \mathrm{'\{'}const{'\}'}$$
+$$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j}\right) = 0 \implies p_j = \mathrm{const{}$$
 
 $\blacksquare$
 
@@ -882,7 +882,7 @@ For a free particle, $L = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2)$, whic
 
 By Noether's theorem:
 
-$$Q = p_x \cdot 1 + p_y \cdot 0 + p_z \cdot 0 - 0 = p_x = \mathrm{'\{'}const{'\}'}$$
+$$Q = p_x \cdot 1 + p_y \cdot 0 + p_z \cdot 0 - 0 = p_x = \mathrm{const{}$$
 
 This is conservation of the $x$-component of linear momentum. Translation invariance in all three directions gives conservation of the full momentum vector $\mathbf{'\{'}p{'\}'}$. $\blacksquare$
 
@@ -951,7 +951,7 @@ $$L = \frac{1}{2}m(\dot{r}^2 + r^2\dot{\theta}^2 + r^2\sin^2\theta\,\dot{\phi}^2
 
 Since $L$ does not depend on $\phi$ (rotational symmetry about the $z$-axis):
 
-$$p_\phi = \frac{\partial L}{\partial \dot{\phi}} = mr^2\sin^2\theta\,\dot{\phi} = \mathrm{'\{'}const{'\}'}$$
+$$p_\phi = \frac{\partial L}{\partial \dot{\phi}} = mr^2\sin^2\theta\,\dot{\phi} = \mathrm{const{}$$
 
 This is the $z$-component of angular momentum. By Noether's theorem, the full angular momentum vector
 is conserved for any central potential. $\blacksquare$
@@ -969,30 +969,30 @@ The angular momentum $l = mr^2\dot{\phi}$ is conserved. Substituting $\dot{\phi}
 
 $$L = \frac{1}{2}m\dot{r}^2 + \frac{l^2}{2mr^2} - V(r)$$
 
-The effective potential is $V_{\mathrm{'\{'}eff{'\}'}}(r) = V(r) + \frac{l^2}{2mr^2}$, where the second term is
+The effective potential is $V_{\mathrm{eff{}}(r) = V(r) + \frac{l^2}{2mr^2}$, where the second term is
 the **centrifugal barrier**.
 
 ### 6.2 Effective Potential Analysis
 
 **Definition.** The **effective one-dimensional energy** is:
 
-$$E = \frac{1}{2}m\dot{r}^2 + V_{\mathrm{'\{'}eff{'\}'}}(r)$$
+$$E = \frac{1}{2}m\dot{r}^2 + V_{\mathrm{eff{}}(r)$$
 
-Since $E$ and $l$ are conserved, the radial motion is completely determined by $V_{\mathrm{'\{'}eff{'\}'}}(r)$.
+Since $E$ and $l$ are conserved, the radial motion is completely determined by $V_{\mathrm{eff{}}(r)$.
 
-**Circular orbits** occur at radii $r_0$ where $V_{\mathrm{'\{'}eff{'\}'}}'(r_0) = 0$:
+**Circular orbits** occur at radii $r_0$ where $V_{\mathrm{eff{}}'(r_0) = 0$:
 
 $$V'(r_0) - \frac{l^2}{mr_0^3} = 0$$
 
-The orbit is **stable** if $V_{\mathrm{'\{'}eff{'\}'}}''(r_0) \gt{} 0$ and **unstable** if $V_{\mathrm{'\{'}eff{'\}'}}''(r_0) \lt{} 0$.
+The orbit is **stable** if $V_{\mathrm{eff{}}''(r_0) \gt{} 0$ and **unstable** if $V_{\mathrm{eff{}}''(r_0) \lt{} 0$.
 
 For the Kepler problem $V(r) = -k/r$:
 
-$$V_{\mathrm{'\{'}eff{'\}'}}(r) = -\frac{k}{r} + \frac{l^2}{2mr^2}$$
+$$V_{\mathrm{eff{}}(r) = -\frac{k}{r} + \frac{l^2}{2mr^2}$$
 
-$$V_{\mathrm{'\{'}eff{'\}'}}'(r) = \frac{k}{r^2} - \frac{l^2}{mr^3} = 0 \implies r_0 = \frac{l^2}{mk}$$
+$$V_{\mathrm{eff{}}'(r) = \frac{k}{r^2} - \frac{l^2}{mr^3} = 0 \implies r_0 = \frac{l^2}{mk}$$
 
-$$V_{\mathrm{'\{'}eff{'\}'}}''(r_0) = -\frac{2k}{r_0^3} + \frac{3l^2}{mr_0^4} = \frac{m^3k^2}{l^4} \gt{} 0$$
+$$V_{\mathrm{eff{}}''(r_0) = -\frac{2k}{r_0^3} + \frac{3l^2}{mr_0^4} = \frac{m^3k^2}{l^4} \gt{} 0$$
 
 so the circular orbit is always stable for the Kepler problem.
 
@@ -1059,12 +1059,12 @@ $V(r) \propto 1/r$ (Kepler/Coulomb) and $V(r) \propto r^2$ (harmonic oscillator)
 
 ### 6.5 Worked Example: Satellite Orbit
 
-**Problem.** A satellite of mass $m$ orbits Earth ($M = 5.97 \times 10^{24}\,\mathrm{'\{'}kg{'\}'}$) in an elliptical orbit with perigee (closest approach) $r_p = 7000\,\mathrm{'\{'}km{'\}'}$ and apogee (farthest point) $r_a = 42000\,\mathrm{'\{'}km{'\}'}$. Find the eccentricity, semi-major axis, and orbital period.
+**Problem.** A satellite of mass $m$ orbits Earth ($M = 5.97 \times 10^{24}\,\mathrm{kg{}$) in an elliptical orbit with perigee (closest approach) $r_p = 7000\,\mathrm{km{}$ and apogee (farthest point) $r_a = 42000\,\mathrm{km{}$. Find the eccentricity, semi-major axis, and orbital period.
 
 <details>
 <summary>Solution</summary>
 
-The semi-major axis is $a = (r_p + r_a)/2 = (7000 + 42000)/2 = 24500\,\mathrm{'\{'}km{'\}'}$.
+The semi-major axis is $a = (r_p + r_a)/2 = (7000 + 42000)/2 = 24500\,\mathrm{km{}$.
 
 From the orbit equation, at perigee ($\phi = 0$): $r_p = p/(1 + e)$, and at apogee ($\phi = \pi$): $r_a = p/(1 - e)$.
 
@@ -1072,13 +1072,13 @@ Therefore:
 
 $$e = \frac{r_a - r_p}{r_a + r_p} = \frac{42000 - 7000}{42000 + 7000} = \frac{35000}{49000} \approx 0.714$$
 
-The energy is $E = -k/(2a)$ where $k = GMm = 6.674 \times 10^{-11} \times 5.97 \times 10^{24} \times m = 3.986 \times 10^{14} m\,\mathrm{'\{'}m{'\}'}^3/\mathrm{'\{'}s{'\}'}^2$.
+The energy is $E = -k/(2a)$ where $k = GMm = 6.674 \times 10^{-11} \times 5.97 \times 10^{24} \times m = 3.986 \times 10^{14} m\,\mathrm{m{}^3/\mathrm{s{}^2$.
 
 The period (independent of mass $m$):
 
 $$T = 2\pi\sqrt{\frac{ma^3}{k}} = 2\pi\sqrt{\frac{a^3}{GM}} = 2\pi\sqrt{\frac{(2.45 \times 10^7)^3}{3.986 \times 10^{14}}}$$
 
-$$= 2\pi\sqrt{\frac{1.471 \times 10^{22}}{3.986 \times 10^{14}}} = 2\pi\sqrt{3.691 \times 10^7} \approx 2\pi \times 6075 \approx 38170\,\mathrm{'\{'}s{'\}'} \approx 10.6\,\mathrm{'\{'}hours{'\}'}$$
+$$= 2\pi\sqrt{\frac{1.471 \times 10^{22}}{3.986 \times 10^{14}}} = 2\pi\sqrt{3.691 \times 10^7} \approx 2\pi \times 6075 \approx 38170\,\mathrm{s{} \approx 10.6\,\mathrm{hours{}$$
 
 $\blacksquare$
 
@@ -1244,11 +1244,11 @@ $$\mathbf{'\{'}I{'\}'} = \begin{pmatrix} I_{xx} & I_{xy} & I_{xz} \\ I_{xy} & I_
 
 where:
 
-$$I_{xx} = \sum_i m_i(y_i^2 + z_i^2), \quad I_{xy} = -\sum_i m_i x_i y_i, \quad \mathrm{'\{'}etc.{'\}'}$$
+$$I_{xx} = \sum_i m_i(y_i^2 + z_i^2), \quad I_{xy} = -\sum_i m_i x_i y_i, \quad \mathrm{etc.{}$$
 
 **Theorem 8.1 (Parallel Axis Theorem).** The inertia tensor about a point displaced by $\mathbf{'\{'}a{'\}'}$ from the centre of mass is:
 
-$$I_{jk}' = I_{jk}^{(\mathrm{'\{'}CM{'\}'})} + M(a^2\delta_{jk} - a_j a_k)$$
+$$I_{jk}' = I_{jk}^{(\mathrm{CM{})} + M(a^2\delta_{jk} - a_j a_k)$$
 
 where $M$ is the total mass.
 
@@ -1258,7 +1258,7 @@ $$I_{jk}' = \sum_i m_i\left(\lvert\mathbf{'\{'}r{'\}'}_i'\rvert^2\delta_{jk} - r
 
 Expanding and using $\sum_i m_i \mathbf{'\{'}r{'\}'}_i = \mathbf{'\{'}0{'\}'}$ (centre of mass condition):
 
-$$I_{jk}' = I_{jk}^{(\mathrm{'\{'}CM{'\}'})} + M(a^2\delta_{jk} - a_j a_k)$$
+$$I_{jk}' = I_{jk}^{(\mathrm{CM{})} + M(a^2\delta_{jk} - a_j a_k)$$
 
 $\blacksquare$
 
@@ -1284,9 +1284,9 @@ $$I_3\dot{\omega}_3 = (I_1 - I_2)\omega_1\omega_2$$
 
 *Proof.* In the body frame, the angular momentum is $\mathbf{'\{'}L{'\}'} = \mathbf{'\{'}I{'\}'}\,\boldsymbol{'\{'}\omega{'\}'}$. The equation of motion is:
 
-$$\left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{'\{'}space{'\}'}} = \boldsymbol{'\{'}\tau{'\}'}$$
+$$\left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{space{}} = \boldsymbol{'\{'}\tau{'\}'}$$
 
-Transforming to the body frame using $\left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{'\{'}space{'\}'}} = \left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{'\{'}body{'\}'}} + \boldsymbol{'\{'}\omega{'\}'} \times \mathbf{'\{'}L{'\}'}$:
+Transforming to the body frame using $\left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{space{}} = \left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{body{}} + \boldsymbol{'\{'}\omega{'\}'} \times \mathbf{'\{'}L{'\}'}$:
 
 $$\mathbf{'\{'}I{'\}'}\,\dot{\boldsymbol{'\{'}\omega{'\}'}} + \boldsymbol{'\{'}\omega{'\}'} \times (\mathbf{'\{'}I{'\}'}\,\boldsymbol{'\{'}\omega{'\}'}) = \boldsymbol{'\{'}\tau{'\}'}$$
 
@@ -1328,15 +1328,15 @@ The potential energy is $V = Mgl\cos\theta$.
 
 The Lagrangian is $L = T - V$. Since $\phi$ and $\psi$ are cyclic:
 
-$$p_\phi = I_1\dot{\phi}\sin^2\theta + I_3(\dot{\psi} + \dot{\phi}\cos\theta)\cos\theta = \mathrm{'\{'}const{'\}'}$$
+$$p_\phi = I_1\dot{\phi}\sin^2\theta + I_3(\dot{\psi} + \dot{\phi}\cos\theta)\cos\theta = \mathrm{const{}$$
 
-$$p_\psi = I_3(\dot{\psi} + \dot{\phi}\cos\theta) = \mathrm{'\{'}const{'\}'}$$
+$$p_\psi = I_3(\dot{\psi} + \dot{\phi}\cos\theta) = \mathrm{const{}$$
 
 The quantity $p_\psi = I_3\omega_3$ is the angular momentum component along the symmetry axis. The quantity $p_\phi$ is the angular momentum component along the vertical.
 
 For **steady precession** at constant $\theta$ and $\dot{\phi} = \Omega$:
 
-$$\dot{\theta} = 0, \quad \dot{\phi} = \Omega = \mathrm{'\{'}const{'\}'}, \quad \dot{\psi} = \dot{\psi}_0 = \mathrm{'\{'}const{'\}'}$$
+$$\dot{\theta} = 0, \quad \dot{\phi} = \Omega = \mathrm{const{}, \quad \dot{\psi} = \dot{\psi}_0 = \mathrm{const{}$$
 
 The equation of motion for $\theta$ gives:
 
@@ -1435,7 +1435,7 @@ $$\cos\theta = 2(1 - \cos\theta) \implies 3\cos\theta = 2 \implies \theta = \arc
 
 ### Problem 2
 
-A block of mass $m_1 = 2\,\mathrm{'\{'}kg{'\}'}$ on a frictionless horizontal table is connected by a string over a pulley to a mass $m_2 = 1\,\mathrm{'\{'}kg{'\}'}$ hanging vertically. Find the acceleration using the Lagrangian.
+A block of mass $m_1 = 2\,\mathrm{kg{}$ on a frictionless horizontal table is connected by a string over a pulley to a mass $m_2 = 1\,\mathrm{kg{}$ hanging vertically. Find the acceleration using the Lagrangian.
 
 <details>
 <summary>Solution</summary>
@@ -1446,7 +1446,7 @@ $$T = \frac{1}{2}(m_1 + m_2)\dot{x}^2, \quad V = -m_2 g x$$
 
 $$L = \frac{1}{2}(m_1 + m_2)\dot{x}^2 + m_2 g x$$
 
-Euler-Lagrange: $(m_1 + m_2)\ddot{x} = m_2 g$, so $a = m_2 g / (m_1 + m_2) = g/3 \approx 3.27\,\mathrm{'\{'}m/s{'\}'}^2$.
+Euler-Lagrange: $(m_1 + m_2)\ddot{x} = m_2 g$, so $a = m_2 g / (m_1 + m_2) = g/3 \approx 3.27\,\mathrm{m/s{}^2$.
 
 **If you get this wrong, revise:** Section 3.5 (Atwood machine example), Section 3.1 (Lagrangian construction).
 
@@ -1469,7 +1469,7 @@ $$V = mg\alpha r^2$$
 
 $$L = \frac{1}{2}m(1 + 4\alpha^2 r^2)\dot{r}^2 + \frac{1}{2}mr^2\dot{\phi}^2 - mg\alpha r^2$$
 
-Since $\phi$ is cyclic, $p_\phi = mr^2\dot{\phi} = l = \mathrm{'\{'}const{'\}'}$.
+Since $\phi$ is cyclic, $p_\phi = mr^2\dot{\phi} = l = \mathrm{const{}$.
 
 For the $r$ equation:
 
@@ -1569,7 +1569,7 @@ $$T = M^{-\alpha}L^{-2\beta-\gamma-\delta}T^{2\beta} \cdot M^\alpha(V_0)^\beta a
 
 Matching dimensions: $-\alpha + \beta = 0$, $-2\beta - \gamma - \delta = 0$, $2\beta = 1$. So $\beta = 1/2$, $\alpha = 1/2$.
 
-$$T \propto \sqrt{m/V_0}\, a^\gamma A^\delta \quad \mathrm{'\{'}with{'\}'} \quad -1 - \gamma - \delta = 0$$
+$$T \propto \sqrt{m/V_0}\, a^\gamma A^\delta \quad \mathrm{with{} \quad -1 - \gamma - \delta = 0$$
 
 Since $n$ is dimensionless, we need $\delta = n\gamma$ (to make $A/a$ appear with power $n$ in the energy). Then $-1 - \gamma(1 + n) = 0$, giving $\gamma = -1/(1+n)$, $\delta = -n/(1+n)$.
 
@@ -1579,7 +1579,7 @@ For $n = 2$ (harmonic oscillator): $T$ is independent of $A$ (isochronous). For 
 
 Alternatively, via the virial theorem for $V \propto x^n$: $\langle T \rangle = \frac{n}{2}\langle V \rangle$, and $E = \langle T \rangle + \langle V \rangle = \frac{n+2}{2}\langle V \rangle$, so the average kinetic energy scales as $\langle T \rangle \propto E \propto A^n$. The period scales as $T \propto \sqrt{\langle T \rangle} / A \propto A^{n/2 - 1} = A^{-(2-n)/2}$. Wait --- let me redo this more carefully.
 
-Using $E = V_0(A/a)^n$ and $\langle T \rangle = \frac{n}{n+2}E \propto A^n$. The RMS velocity scales as $v_{\mathrm{'\{'}rms{'\}'}} \propto A^{n/2}$. The period is $T \propto A/v_{\mathrm{'\{'}rms{'\}'}} \propto A^{1-n/2} = A^{-(n-2)/2} = A^{-n/(n+2)} \cdot A^{\cdot}$.
+Using $E = V_0(A/a)^n$ and $\langle T \rangle = \frac{n}{n+2}E \propto A^n$. The RMS velocity scales as $v_{\mathrm{rms{}} \propto A^{n/2}$. The period is $T \propto A/v_{\mathrm{rms{}} \propto A^{1-n/2} = A^{-(n-2)/2} = A^{-n/(n+2)} \cdot A^{\cdot}$.
 
 Actually, the cleanest result from dimensional analysis is $T \propto A^{1 - n/2}$, giving $T \propto A^{-1/2}$ for $n = 3$ (cubic potential).
 
@@ -1738,15 +1738,15 @@ $$V = mg\alpha r$$
 
 $$L = \frac{1}{2}m(1+\alpha^2)\dot{r}^2 + \frac{1}{2}mr^2\dot{\phi}^2 - mg\alpha r$$
 
-Since $\phi$ is cyclic, $p_\phi = mr^2\dot{\phi} = l = \mathrm{'\{'}const{'\}'}$.
+Since $\phi$ is cyclic, $p_\phi = mr^2\dot{\phi} = l = \mathrm{const{}$.
 
 The energy is:
 
-$$E = \frac{1}{2}m(1+\alpha^2)\dot{r}^2 + V_{\mathrm{'\{'}eff{'\}'}}(r)$$
+$$E = \frac{1}{2}m(1+\alpha^2)\dot{r}^2 + V_{\mathrm{eff{}}(r)$$
 
 where the effective potential is:
 
-$$V_{\mathrm{'\{'}eff{'\}'}}(r) = \frac{l^2}{2mr^2} + mg\alpha r$$
+$$V_{\mathrm{eff{}}(r) = \frac{l^2}{2mr^2} + mg\alpha r$$
 
 This is the sum of a centrifugal barrier ($\propto 1/r^2$) and a linear potential ($\propto r$), giving a single minimum that corresponds to a stable circular orbit.
 
@@ -1802,7 +1802,7 @@ $$I_1\dot{\omega}_2 = (I_3 - I_1)\omega_3\omega_1 = I_1\omega_3\omega_1$$
 
 $$I_3\dot{\omega}_3 = 0$$
 
-From the third equation, $\omega_3 = n = \mathrm{'\{'}const{'\}'}$. Define $\Omega = (I_3 - I_1)\omega_3/I_1 = n$. The first two equations become:
+From the third equation, $\omega_3 = n = \mathrm{const{}$. Define $\Omega = (I_3 - I_1)\omega_3/I_1 = n$. The first two equations become:
 
 $$\dot{\omega}_1 = -n\omega_2, \quad \dot{\omega}_2 = n\omega_1$$
 
@@ -1810,7 +1810,7 @@ These describe circular motion in the $(\omega_1, \omega_2)$ plane with frequenc
 
 In the space frame, $\mathbf{'\{'}L{'\}'}$ is fixed. The symmetry axis precesses around $\mathbf{'\{'}L{'\}'}$ with the **body cone** rolling on the **space cone**. The precession frequency in the space frame is:
 
-$$\Omega_{\mathrm{'\{'}space{'\}'}} = \frac{L}{I_1} = \frac{\sqrt{I_1^2(\omega_1^2 + \omega_2^2) + I_3^2\omega_3^2}}{I_1}$$
+$$\Omega_{\mathrm{space{}} = \frac{L}{I_1} = \frac{\sqrt{I_1^2(\omega_1^2 + \omega_2^2) + I_3^2\omega_3^2}}{I_1}$$
 
 **If you get this wrong, revise:** Section 8.5 (Euler's equations), Section 8.7 (spinning top).
 

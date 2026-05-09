@@ -49,15 +49,15 @@ $a \gt{} 0$, so the logarithm is only defined for positive arguments.
 Several special values follow immediately from the definition:
 
 $$
-\log_a 1 = 0 \quad \mathrm{'\{'}since {'\}'} a^0 = 1
+\log_a 1 = 0 \quad \mathrm{since {} a^0 = 1
 $$
 
 $$
-\log_a a = 1 \quad \mathrm{'\{'}since {'\}'} a^1 = a
+\log_a a = 1 \quad \mathrm{since {} a^1 = a
 $$
 
 $$
-\log_a a^k = k \quad \mathrm{'\{'}since {'\}'} a^k = a^k
+\log_a a^k = k \quad \mathrm{since {} a^k = a^k
 $$
 
 Additionally, for any base $a \gt{} 0$ with $a \neq 1$:
@@ -240,8 +240,8 @@ When $0 \lt{} a \lt{} 1$, both functions are strictly decreasing.
 To solve equations involving logarithms:
 
 1. Combine logarithmic terms using the laws of logarithms where possible.
-2. Rewrite the equation in the form $\log_a(\mathrm{'\{'}expression{'\}'}) = k$.
-3. Convert to exponential form: $\mathrm{'\{'}expression{'\}'} = a^k$.
+2. Rewrite the equation in the form $\log_a(\mathrm{expression{}) = k$.
+3. Convert to exponential form: $\mathrm{expression{} = a^k$.
 4. Solve the resulting algebraic equation.
 5. **Check all solutions against the domain restriction**: every argument of a logarithm must be
    positive.
@@ -338,24 +338,24 @@ change of base formula to bring all logarithms to a common base.
 The pH of a solution is defined as:
 
 $$
-\mathrm{'\{'}pH{'\}'} = -\log_{10}[\mathrm{'\{'}H{'\}'}^+]
+\mathrm{pH{} = -\log_{10}[\mathrm{H{}^+]
 $$
 
-where $[\mathrm{'\{'}H{'\}'}^+]$ is the concentration of hydrogen ions (in mol/L). A lower pH means a higher
+where $[\mathrm{H{}^+]$ is the concentration of hydrogen ions (in mol/L). A lower pH means a higher
 concentration of hydrogen ions and therefore a more acidic solution.
 
-- A neutral solution (pure water) has $[\mathrm{'\{'}H{'\}'}^+] = 10^{-7}$ mol/L, giving $\mathrm{'\{'}pH{'\}'} = 7$.
-- Acidic solutions have $\mathrm{'\{'}pH{'\}'} \lt{} 7$; alkaline solutions have $\mathrm{'\{'}pH{'\}'} \gt{} 7$.
+- A neutral solution (pure water) has $[\mathrm{H{}^+] = 10^{-7}$ mol/L, giving $\mathrm{pH{} = 7$.
+- Acidic solutions have $\mathrm{pH{} \lt{} 7$; alkaline solutions have $\mathrm{pH{} \gt{} 7$.
 - The scale is logarithmic: a decrease of 1 in pH corresponds to a tenfold increase in
-  $[\mathrm{'\{'}H{'\}'}^+]$.
+  $[\mathrm{H{}^+]$.
 
 <details>
 <summary>Example</summary>
 
-A solution has $[\mathrm{'\{'}H{'\}'}^+] = 2.5 \times 10^{-4}$ mol/L. Find its pH.
+A solution has $[\mathrm{H{}^+] = 2.5 \times 10^{-4}$ mol/L. Find its pH.
 
 $$
-\mathrm{'\{'}pH{'\}'} = -\log(2.5 \times 10^{-4}) = -\left(\log 2.5 + \log 10^{-4}\right) = -(\log 2.5 - 4) = 4 - \log 2.5 \approx 3.60
+\mathrm{pH{} = -\log(2.5 \times 10^{-4}) = -\left(\log 2.5 + \log 10^{-4}\right) = -(\log 2.5 - 4) = 4 - \log 2.5 \approx 3.60
 $$
 
 </details>

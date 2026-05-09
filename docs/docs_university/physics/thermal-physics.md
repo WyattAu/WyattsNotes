@@ -57,7 +57,7 @@ These are equivalent: each implies the other.
 
 **Definition.** The **entropy** change for a reversible process is
 
-$$dS = \frac{\delta Q_{\mathrm{'\{'}rev{'\}'}}}{T}$$
+$$dS = \frac{\delta Q_{\mathrm{rev{}}}{T}$$
 
 **Theorem 1.3 (Clausius Inequality).** For any cyclic process:
 
@@ -121,7 +121,7 @@ This confirms that the internal energy of an ideal gas depends only on temperatu
 
 ### 1.7 Common Pitfalls
 
-- **$\delta Q$ and $\delta W$ are not exact differentials.** Unlike $dU$, the heat and work are path-dependent. Only $\delta Q_{\mathrm{'\{'}rev{'\}'}}/T = dS$ is exact.
+- **$\delta Q$ and $\delta W$ are not exact differentials.** Unlike $dU$, the heat and work are path-dependent. Only $\delta Q_{\mathrm{rev{}}/T = dS$ is exact.
 - **The second law prohibits certain processes but does not explain *why* they occur.** Statistical mechanics provides the microscopic explanation: entropy measures the number of microstates, and the system evolves toward the macrostate with the most microstates.
 - **Free energy minima determine equilibrium, not energy minima.** At constant temperature, the system minimises $F$ (or $G$), not $U$.
 
@@ -151,11 +151,11 @@ where the **partition function** is
 
 $$Z = \sum_{i} e^{-E_i / (k_B T)}$$
 
-*Proof.* Consider the combined system (system + reservoir) with total energy $E_{\mathrm{'\{'}tot{'\}'}}$. The probability of the system being in state $i$ is proportional to the number of reservoir microstates compatible with it, which is $\Omega_R(E_{\mathrm{'\{'}tot{'\}'}} - E_i)$. Using $S_R = k_B \ln \Omega_R$:
+*Proof.* Consider the combined system (system + reservoir) with total energy $E_{\mathrm{tot{}}$. The probability of the system being in state $i$ is proportional to the number of reservoir microstates compatible with it, which is $\Omega_R(E_{\mathrm{tot{}} - E_i)$. Using $S_R = k_B \ln \Omega_R$:
 
-$$P_i \propto \Omega_R(E_{\mathrm{'\{'}tot{'\}'}} - E_i) = \exp\left(\frac{S_R(E_{\mathrm{'\{'}tot{'\}'}} - E_i)}{k_B}\right)$$
+$$P_i \propto \Omega_R(E_{\mathrm{tot{}} - E_i) = \exp\left(\frac{S_R(E_{\mathrm{tot{}} - E_i)}{k_B}\right)$$
 
-Expanding $S_R$ around $E_{\mathrm{'\{'}tot{'\}'}}$: $S_R(E_{\mathrm{'\{'}tot{'\}'}} - E_i) \approx S_R(E_{\mathrm{'\{'}tot{'\}'}}) - E_i \left(\frac{\partial S_R}{\partial E}\right) = S_R(E_{\mathrm{'\{'}tot{'\}'}}) - \frac{E_i}{T}$
+Expanding $S_R$ around $E_{\mathrm{tot{}}$: $S_R(E_{\mathrm{tot{}} - E_i) \approx S_R(E_{\mathrm{tot{}}) - E_i \left(\frac{\partial S_R}{\partial E}\right) = S_R(E_{\mathrm{tot{}}) - \frac{E_i}{T}$
 
 since $(\partial S_R / \partial E) = 1/T$. Therefore $P_i \propto e^{-E_i / (k_BT)}$, and normalising gives the result. $\blacksquare$
 
@@ -175,9 +175,9 @@ $F = -k_BT \ln Z$ follows from $F = U - TS = \langle E \rangle - TS$ and the ide
 
 **Theorem 2.3 (Partition Function of an Ideal Gas).** For $N$ indistinguishable particles in a 3D box of volume $V$:
 
-$$Z_N = \frac{1}{N!}\left(\frac{V}{\lambda_{\mathrm{'\{'}th{'\}'}}^3}\right)^N, \quad \lambda_{\mathrm{'\{'}th{'\}'}} = \frac{h}{\sqrt{2\pi m k_B T}}$$
+$$Z_N = \frac{1}{N!}\left(\frac{V}{\lambda_{\mathrm{th{}}^3}\right)^N, \quad \lambda_{\mathrm{th{}} = \frac{h}{\sqrt{2\pi m k_B T}}$$
 
-where $\lambda_{\mathrm{'\{'}th{'\}'}}$ is the **thermal de Broglie wavelength**.
+where $\lambda_{\mathrm{th{}}$ is the **thermal de Broglie wavelength**.
 
 *Proof.* The single-particle energy levels in a 3D box of side $L$ ($V = L^3$) are:
 
@@ -185,13 +185,13 @@ $$\varepsilon_{n_x, n_y, n_z} = \frac{h^2}{8mL^2}(n_x^2 + n_y^2 + n_z^2)$$
 
 The single-particle partition function is:
 
-$$z = \sum_{n_x, n_y, n_z = 0}^{\infty} e^{-\beta h^2(n_x^2 + n_y^2 + n_z^2)/(8mL^2)} \approx \left(\int_0^{\infty} e^{-\beta h^2 n^2/(8mL^2)} dn\right)^3 = \left(\frac{L}{h}\sqrt{\frac{2\pi m}{\beta}}\right)^3 = \frac{V}{\lambda_{\mathrm{'\{'}th{'\}'}}^3}$$
+$$z = \sum_{n_x, n_y, n_z = 0}^{\infty} e^{-\beta h^2(n_x^2 + n_y^2 + n_z^2)/(8mL^2)} \approx \left(\int_0^{\infty} e^{-\beta h^2 n^2/(8mL^2)} dn\right)^3 = \left(\frac{L}{h}\sqrt{\frac{2\pi m}{\beta}}\right)^3 = \frac{V}{\lambda_{\mathrm{th{}}^3}$$
 
 For $N$ indistinguishable particles (correct Boltzmann counting): $Z_N = z^N / N!$. $\blacksquare$
 
 **Corollary 2.4.** From $Z_N$, we recover the ideal gas law:
 
-$$F = -k_BT \ln Z_N = -k_BT\left[N\ln\left(\frac{V}{\lambda_{\mathrm{'\{'}th{'\}'}}^3}\right) - \ln N!\right]$$
+$$F = -k_BT \ln Z_N = -k_BT\left[N\ln\left(\frac{V}{\lambda_{\mathrm{th{}}^3}\right) - \ln N!\right]$$
 
 $$P = -\left(\frac{\partial F}{\partial V}\right)_T = \frac{Nk_BT}{V}$$
 
@@ -225,7 +225,7 @@ $$\langle n_i \rangle = \frac{1}{e^{(E_i - \mu)/(k_BT)} - 1}$$
 
 $$\langle n_i \rangle = e^{-(E_i - \mu)/(k_BT)}$$
 
-The classical limit applies when the thermal de Broglie wavelength is much smaller than the inter-particle spacing: $\lambda_{\mathrm{'\{'}th{'\}'}}^3 \ll V/N$.
+The classical limit applies when the thermal de Broglie wavelength is much smaller than the inter-particle spacing: $\lambda_{\mathrm{th{}}^3 \ll V/N$.
 
 ### 2.7 The Fermi Gas
 
@@ -251,11 +251,11 @@ $$u(\nu, T) = \frac{8\pi h \nu^3}{c^3} \cdot \frac{1}{e^{h\nu/(k_BT)} - 1}$$
 
 $$j = \sigma T^4, \quad \sigma = \frac{\pi^2 k_B^4}{60 \hbar^3 c^2}$$
 
-**Wien's Displacement Law:** The peak frequency satisfies $\nu_{\mathrm{'\{'}max{'\}'}} / T = \mathrm{'\{'}const{'\}'}$.
+**Wien's Displacement Law:** The peak frequency satisfies $\nu_{\mathrm{max{}} / T = \mathrm{const{}$.
 
 ### 2.9 Worked Examples
 
-**Problem.** Calculate the Fermi energy and Fermi temperature for copper. Given: electron density $n \approx 8.5 \times 10^{28}\,\mathrm{'\{'}m{'\}'}^{-3}$, $m_e = 9.109 \times 10^{-31}$ kg.
+**Problem.** Calculate the Fermi energy and Fermi temperature for copper. Given: electron density $n \approx 8.5 \times 10^{28}\,\mathrm{m{}^{-3}$, $m_e = 9.109 \times 10^{-31}$ kg.
 
 <details>
 <summary>Solution</summary>
@@ -268,9 +268,9 @@ $(3\pi^2 \times 8.5 \times 10^{28})^{1/3} = (2.52 \times 10^{30})^{1/3} \approx 
 
 $(3\pi^2 n)^{2/3} = (1.36 \times 10^{10})^2 = 1.85 \times 10^{20}$
 
-$\varepsilon_F = \frac{1.113 \times 10^{-68}}{1.822 \times 10^{-30}} \times 1.85 \times 10^{20} \approx 1.13 \times 10^{-18}\,\mathrm{'\{'}J{'\}'} \approx 7.0\,\mathrm{'\{'}eV{'\}'}$
+$\varepsilon_F = \frac{1.113 \times 10^{-68}}{1.822 \times 10^{-30}} \times 1.85 \times 10^{20} \approx 1.13 \times 10^{-18}\,\mathrm{J{} \approx 7.0\,\mathrm{eV{}$
 
-$T_F = \varepsilon_F / k_B = 1.13 \times 10^{-18} / 1.381 \times 10^{-23} \approx 81800\,\mathrm{'\{'}K{'\}'}$
+$T_F = \varepsilon_F / k_B = 1.13 \times 10^{-18} / 1.381 \times 10^{-23} \approx 81800\,\mathrm{K{}$
 
 The Fermi temperature is much larger than room temperature, confirming that copper electrons are in the degenerate regime. $\blacksquare$
 
@@ -287,9 +287,9 @@ After mixing: each gas occupies volume $2V$, so the total entropy is:
 
 $$S_f = 2 \times Nk_B\left[\ln\left(\frac{2V}{N\lambda^3}\right) + \frac{5}{2}\right]$$
 
-$$\Delta S_{\mathrm{'\{'}mix{'\}'}} = S_f - S_i = 2Nk_B\ln\left(\frac{2V}{N\lambda^3}\right) - 2Nk_B\ln\left(\frac{V}{N\lambda^3}\right) = 2Nk_B\ln 2$$
+$$\Delta S_{\mathrm{mix{}} = S_f - S_i = 2Nk_B\ln\left(\frac{2V}{N\lambda^3}\right) - 2Nk_B\ln\left(\frac{V}{N\lambda^3}\right) = 2Nk_B\ln 2$$
 
-For 1 mole of each gas: $\Delta S_{\mathrm{'\{'}mix{'\}'}} = 2R\ln 2 \approx 11.5\,\mathrm{'\{'}J/K{'\}'}$.
+For 1 mole of each gas: $\Delta S_{\mathrm{mix{}} = 2R\ln 2 \approx 11.5\,\mathrm{J/K{}$.
 
 **Gibbs paradox.** If the two gases are identical, the entropy of mixing is zero (no physical change). The resolution is that identical particles are indistinguishable, and the correct counting already accounts for this via the $1/N!$ factor in the partition function. $\blacksquare$
 
@@ -297,7 +297,7 @@ For 1 mole of each gas: $\Delta S_{\mathrm{'\{'}mix{'\}'}} = 2R\ln 2 \approx 11.
 
 ### 2.10 Common Pitfalls
 
-- **The classical limit does not always apply.** When $\lambda_{\mathrm{'\{'}th{'\}'}}^3 \gtrsim V/N$, quantum statistics (Fermi-Dirac or Bose-Einstein) must be used. This is critical for electrons in metals and for helium-4 at low temperatures.
+- **The classical limit does not always apply.** When $\lambda_{\mathrm{th{}}^3 \gtrsim V/N$, quantum statistics (Fermi-Dirac or Bose-Einstein) must be used. This is critical for electrons in metals and for helium-4 at low temperatures.
 - **The Boltzmann distribution applies to systems in contact with a heat bath, not isolated systems.** For isolated systems, use the microcanonical ensemble (all accessible microstates equally probable).
 - **The partition function must account for indistinguishability.** The $1/N!$ factor in $Z_N$ is essential for obtaining the correct entropy (otherwise the entropy is not extensive and the Gibbs paradox arises).
 
@@ -360,17 +360,17 @@ This is Poisson statistics: fluctuations scale as $1/\sqrt{N}$, negligible for m
 <details>
 <summary>Solution</summary>
 
-The single-particle partition function is $z = V/\lambda_{\mathrm{'\{'}th{'\}'}}^3$ where $\lambda_{\mathrm{'\{'}th{'\}'}} = h/\sqrt{2\pi m k_BT}$. The canonical partition function for $N$ indistinguishable particles is $Z_N = z^N/N!$. The grand partition function:
+The single-particle partition function is $z = V/\lambda_{\mathrm{th{}}^3$ where $\lambda_{\mathrm{th{}} = h/\sqrt{2\pi m k_BT}$. The canonical partition function for $N$ indistinguishable particles is $Z_N = z^N/N!$. The grand partition function:
 
 $$\Xi = \sum_{N=0}^{\infty} \frac{z^N}{N!} e^{\beta \mu N} = \sum_{N=0}^{\infty} \frac{(ze^{\beta \mu})^N}{N!} = e^{ze^{\beta \mu}}$$
 
-$$\ln \Xi = ze^{\beta \mu} = \frac{V}{\lambda_{\mathrm{'\{'}th{'\}'}}^3} e^{\beta \mu}$$
+$$\ln \Xi = ze^{\beta \mu} = \frac{V}{\lambda_{\mathrm{th{}}^3} e^{\beta \mu}$$
 
 Average particle number:
 
-$$\langle N \rangle = \frac{1}{\beta}\frac{\partial \ln \Xi}{\partial \mu} = \frac{V}{\lambda_{\mathrm{'\{'}th{'\}'}}^3} e^{\beta \mu}$$
+$$\langle N \rangle = \frac{1}{\beta}\frac{\partial \ln \Xi}{\partial \mu} = \frac{V}{\lambda_{\mathrm{th{}}^3} e^{\beta \mu}$$
 
-Solving for the chemical potential: $\mu = k_BT \ln(\langle N \rangle \lambda_{\mathrm{'\{'}th{'\}'}}^3 / V)$.
+Solving for the chemical potential: $\mu = k_BT \ln(\langle N \rangle \lambda_{\mathrm{th{}}^3 / V)$.
 
 Average energy (using $\langle E \rangle = -\partial \ln \Xi / \partial \beta + \mu \langle N \rangle / (k_BT)$):
 
@@ -408,7 +408,7 @@ Combining these with the Taylor expansion of $f(\varepsilon)$ gives the result. 
 
 ### 4.2 Chemical Potential at Finite Temperature
 
-Applying the Sommerfeld expansion to the number equation $N = \int_0^\infty g(\varepsilon) f_{\mathrm{'\{'}FD{'\}'}}(\varepsilon)\, d\varepsilon$ with $g(\varepsilon) = C\sqrt{\varepsilon}$:
+Applying the Sommerfeld expansion to the number equation $N = \int_0^\infty g(\varepsilon) f_{\mathrm{FD{}}(\varepsilon)\, d\varepsilon$ with $g(\varepsilon) = C\sqrt{\varepsilon}$:
 
 $$N = \frac{2}{3}C\mu^{3/2} + \frac{\pi^2}{6}(k_BT)^2 \cdot \frac{C}{2\sqrt{\mu}} + \mathcal{'\{'}O{'\}'}(T^4)$$
 
@@ -422,7 +422,7 @@ The chemical potential decreases slightly with temperature.
 
 Applying the Sommerfeld expansion to the energy:
 
-$$U = \int_0^\infty \varepsilon\, g(\varepsilon)\, f_{\mathrm{'\{'}FD{'\}'}}(\varepsilon)\, d\varepsilon = \frac{2}{5}C\mu^{5/2} + \frac{\pi^2}{6}(k_BT)^2 \cdot \frac{3}{2}C\mu^{1/2} + \cdots$$
+$$U = \int_0^\infty \varepsilon\, g(\varepsilon)\, f_{\mathrm{FD{}}(\varepsilon)\, d\varepsilon = \frac{2}{5}C\mu^{5/2} + \frac{\pi^2}{6}(k_BT)^2 \cdot \frac{3}{2}C\mu^{1/2} + \cdots$$
 
 Substituting $\mu \approx \varepsilon_F$:
 
@@ -441,15 +441,15 @@ $$C_V = \frac{\partial U}{\partial T} = Nk_B \cdot \frac{\pi^2}{2}\frac{k_BT}{\v
 
 Electronic contribution:
 
-$$C_V^{\mathrm{'\{'}el{'\}'}} = Nk_B \cdot \frac{\pi^2}{2}\frac{T}{T_F} = Nk_B \cdot \frac{\pi^2}{2}\frac{300}{81000} \approx 0.018\, Nk_B$$
+$$C_V^{\mathrm{el{}} = Nk_B \cdot \frac{\pi^2}{2}\frac{T}{T_F} = Nk_B \cdot \frac{\pi^2}{2}\frac{300}{81000} \approx 0.018\, Nk_B$$
 
 Lattice contribution (from the Debye model at $T \gg \Theta_D$):
 
-$$C_V^{\mathrm{'\{'}lat{'\}'}} \approx 3Nk_B$$
+$$C_V^{\mathrm{lat{}} \approx 3Nk_B$$
 
 The ratio is:
 
-$$\frac{C_V^{\mathrm{'\{'}el{'\}'}}}{C_V^{\mathrm{'\{'}lat{'\}'}}} \approx \frac{0.018}{3} \approx 0.006$$
+$$\frac{C_V^{\mathrm{el{}}}{C_V^{\mathrm{lat{}}} \approx \frac{0.018}{3} \approx 0.006$$
 
 The electronic heat capacity is only about $0.6\%$ of the lattice contribution at room temperature. At very low temperatures ($T \ll \Theta_D$), the lattice contribution falls as $T^3$ while the electronic contribution falls as $T$, so the electronic term eventually dominates below a few kelvin.
 
@@ -473,7 +473,7 @@ The chemical potential must satisfy $\mu \leq \varepsilon_0$ (the lowest single-
 
 For a 3D free Bose gas with $\varepsilon = \hbar^2 k^2 / (2m)$, the density of states is $g(\varepsilon) = (V/4\pi^2)(2m/\hbar^2)^{3/2}\sqrt{\varepsilon}$. The number of particles in excited states ($\varepsilon > 0$) is
 
-$$N_{\mathrm{'\{'}ex{'\}'}} = \int_0^\infty \frac{g(\varepsilon)\, d\varepsilon}{e^{\beta \varepsilon} - 1} = V\left(\frac{mk_BT}{2\pi\hbar^2}\right)^{3/2}\,\zeta\!\left(\frac{3}{2}\right)$$
+$$N_{\mathrm{ex{}} = \int_0^\infty \frac{g(\varepsilon)\, d\varepsilon}{e^{\beta \varepsilon} - 1} = V\left(\frac{mk_BT}{2\pi\hbar^2}\right)^{3/2}\,\zeta\!\left(\frac{3}{2}\right)$$
 
 where $\zeta(3/2) \approx 2.612$ is the Riemann zeta function.
 
@@ -483,7 +483,7 @@ $$T_c = \frac{2\pi\hbar^2}{mk_B}\left(\frac{n}{\zeta(3/2)}\right)^{2/3}$$
 
 where $n = N/V$.
 
-*Proof.* Setting $N = N_{\mathrm{'\{'}ex{'\}'}}^{\max}$ at $\mu = 0$ and solving for $T$:
+*Proof.* Setting $N = N_{\mathrm{ex{}}^{\max}$ at $\mu = 0$ and solving for $T$:
 
 $$n = \left(\frac{mk_B T_c}{2\pi\hbar^2}\right)^{3/2}\,\zeta\!\left(\frac{3}{2}\right)$$
 
@@ -495,9 +495,9 @@ Below $T_c$, $\mu \approx 0$ and the condensate fraction is
 
 $$\frac{N_0}{N} = 1 - \left(\frac{T}{T_c}\right)^{3/2}$$
 
-This follows from $N_0 = N - N_{\mathrm{'\{'}ex{'\}'}}$ with $\mu = 0$:
+This follows from $N_0 = N - N_{\mathrm{ex{}}$ with $\mu = 0$:
 
-$$N_{\mathrm{'\{'}ex{'\}'}} = N\left(\frac{T}{T_c}\right)^{3/2}$$
+$$N_{\mathrm{ex{}} = N\left(\frac{T}{T_c}\right)^{3/2}$$
 
 ### 5.4 Thermodynamic Properties below $T_c$
 
@@ -515,20 +515,20 @@ This contrasts with the constant $C_V = \frac{3}{2}Nk_B$ above $T_c$ (equipartit
 
 ### 5.5 Worked Example: BEC in Rubidium-87
 
-**Problem.** Estimate $T_c$ for a gas of $N = 10^4$ rubidium-87 atoms confined in a harmonic trap with frequency $\omega_{\mathrm{'\{'}ho{'\}'}} = 2\pi \times 100$ Hz.
+**Problem.** Estimate $T_c$ for a gas of $N = 10^4$ rubidium-87 atoms confined in a harmonic trap with frequency $\omega_{\mathrm{ho{}} = 2\pi \times 100$ Hz.
 
 <details>
 <summary>Solution</summary>
 
-For a harmonic trap, the effective density of states is $g(\varepsilon) = \varepsilon^2/(2\hbar^3\omega_{\mathrm{'\{'}ho{'\}'}}^3)$. The critical temperature in a harmonic trap is:
+For a harmonic trap, the effective density of states is $g(\varepsilon) = \varepsilon^2/(2\hbar^3\omega_{\mathrm{ho{}}^3)$. The critical temperature in a harmonic trap is:
 
-$$k_BT_c = \hbar\omega_{\mathrm{'\{'}ho{'\}'}}\left(\frac{N}{\zeta(3)}\right)^{1/3}$$
+$$k_BT_c = \hbar\omega_{\mathrm{ho{}}\left(\frac{N}{\zeta(3)}\right)^{1/3}$$
 
 $$k_BT_c = (1.055 \times 10^{-34})(2\pi \times 100)\left(\frac{10^4}{1.202}\right)^{1/3}$$
 
-$$= (6.63 \times 10^{-32})(20.1) = 1.33 \times 10^{-30}\,\mathrm{'\{'}J{'\}'}$$
+$$= (6.63 \times 10^{-32})(20.1) = 1.33 \times 10^{-30}\,\mathrm{J{}$$
 
-$$T_c = \frac{1.33 \times 10^{-30}}{1.381 \times 10^{-23}} \approx 9.6 \times 10^{-8}\,\mathrm{'\{'}K{'\}'} \approx 96\,\mathrm{'\{'}nK{'\}'}$$
+$$T_c = \frac{1.33 \times 10^{-30}}{1.381 \times 10^{-23}} \approx 9.6 \times 10^{-8}\,\mathrm{K{} \approx 96\,\mathrm{nK{}$$
 
 This is consistent with the 1995 BEC experiments by Cornell and Wieman (JILA) and Ketterle (MIT), who achieved BEC at temperatures of a few hundred nanokelvin. $\blacksquare$
 
@@ -561,7 +561,7 @@ Define the **transfer matrix** $\mathbf{'\{'}T{'\}'}$ with elements $T_{s_i, s_{
 
 $$\mathbf{'\{'}T{'\}'} = \begin{pmatrix} e^{\beta J} & e^{-\beta J} \\ e^{-\beta J} & e^{\beta J} \end{pmatrix}$$
 
-The partition function is $Z = \mathrm{'\{'}Tr{'\}'}(\mathbf{'\{'}T{'\}'}^N) = \lambda_+^N + \lambda_-^N$ where $\lambda_\pm$ are the eigenvalues of $\mathbf{'\{'}T{'\}'}$:
+The partition function is $Z = \mathrm{Tr{}(\mathbf{'\{'}T{'\}'}^N) = \lambda_+^N + \lambda_-^N$ where $\lambda_\pm$ are the eigenvalues of $\mathbf{'\{'}T{'\}'}$:
 
 $$\lambda_\pm = e^{\beta J} \pm e^{-\beta J}$$
 
@@ -575,9 +575,9 @@ The magnetisation $m = -\partial f/\partial h|_{h=0} = 0$ for all $T > 0$, confi
 
 **Theorem 6.2 (Mean field approximation).** In mean field theory, each spin feels an effective field due to its neighbours. Replacing $s_j$ by its average $\langle s_j \rangle = m$ in the Hamiltonian:
 
-$$H_{\mathrm{'\{'}MF{'\}'}} = -Jz\, m\sum_i s_i - h\sum_i s_i$$
+$$H_{\mathrm{MF{}} = -Jz\, m\sum_i s_i - h\sum_i s_i$$
 
-where $z$ is the coordination number (number of nearest neighbours). Each spin behaves as if in an effective field $h_{\mathrm{'\{'}eff{'\}'}} = h + Jz\,m$.
+where $z$ is the coordination number (number of nearest neighbours). Each spin behaves as if in an effective field $h_{\mathrm{eff{}} = h + Jz\,m$.
 
 The self-consistency equation (mean field equation) is:
 
@@ -620,9 +620,9 @@ These are the **classical** critical exponents. They are independent of the spat
 <details>
 <summary>Solution</summary>
 
-Mean field: $T_c^{\mathrm{'\{'}MF{'\}'}} = Jz/k_B = 4J/k_B$, so $k_BT_c^{\mathrm{'\{'}MF{'\}'}}/J = 4$.
+Mean field: $T_c^{\mathrm{MF{}} = Jz/k_B = 4J/k_B$, so $k_BT_c^{\mathrm{MF{}}/J = 4$.
 
-Exact (Onsager, 1944): $k_BT_c^{\mathrm{'\{'}exact{'\}'}}/J = 2/\ln(1 + \sqrt{2}) \approx 2.269$.
+Exact (Onsager, 1944): $k_BT_c^{\mathrm{exact{}}/J = 2/\ln(1 + \sqrt{2}) \approx 2.269$.
 
 The mean field result overestimates $T_c$ by a factor of $4/2.269 \approx 1.76$. This is because mean field theory overestimates the tendency toward ordering by neglecting thermal fluctuations. The error is larger in lower dimensions where fluctuations are more important.
 
@@ -661,11 +661,11 @@ In the classical (dilute) limit, both Fermi-Dirac and Bose-Einstein distribution
 
 $$e^{\beta(\varepsilon - \mu)} \gg 1$$
 
-for all relevant energies. This is equivalent to $n\lambda_{\mathrm{'\{'}th{'\}'}}^3 \ll 1$ (the thermal de Broglie wavelength is much smaller than the inter-particle spacing).
+for all relevant energies. This is equivalent to $n\lambda_{\mathrm{th{}}^3 \ll 1$ (the thermal de Broglie wavelength is much smaller than the inter-particle spacing).
 
 **Theorem 7.1.** In the classical limit:
 
-$$f_{\mathrm{'\{'}FD{'\}'}}(\varepsilon) \approx f_{\mathrm{'\{'}BE{'\}'}}(\varepsilon) \approx f_{\mathrm{'\{'}MB{'\}'}}(\varepsilon) = e^{-\beta(\varepsilon - \mu)}$$
+$$f_{\mathrm{FD{}}(\varepsilon) \approx f_{\mathrm{BE{}}(\varepsilon) \approx f_{\mathrm{MB{}}(\varepsilon) = e^{-\beta(\varepsilon - \mu)}$$
 
 *Proof.* When $e^{\beta(\varepsilon - \mu)} \gg 1$, the $+1$ or $-1$ in the denominator is negligible:
 
@@ -683,9 +683,9 @@ $$f(v)\,dv = 4\pi\left(\frac{m}{2\pi k_BT}\right)^{3/2} v^2 e^{-mv^2/(2k_BT)}\,d
 
 - Most probable: $v_p = \sqrt{2k_BT/m}$
 - Mean: $\langle v \rangle = \sqrt{8k_BT/(\pi m)}$
-- RMS: $v_{\mathrm{'\{'}rms{'\}'}} = \sqrt{3k_BT/m}$
+- RMS: $v_{\mathrm{rms{}} = \sqrt{3k_BT/m}$
 
-The ordering is $v_p < \langle v \rangle < v_{\mathrm{'\{'}rms{'\}'}}$.
+The ordering is $v_p < \langle v \rangle < v_{\mathrm{rms{}}$.
 
 ### 7.3 Worked Example: Effusion
 
@@ -696,21 +696,21 @@ The ordering is $v_p < \langle v \rangle < v_{\mathrm{'\{'}rms{'\}'}}$.
 
 The effusion rate for molecules with speed between $v$ and $v + dv$ is proportional to $v \cdot f(v)\,dv$ (faster molecules hit the hole more frequently). The effusion distribution is:
 
-$$f_{\mathrm{'\{'}eff{'\}'}}(v)\,dv \propto v \cdot v^2 e^{-mv^2/(2k_BT)}\,dv = v^3 e^{-mv^2/(2k_BT)}\,dv$$
+$$f_{\mathrm{eff{}}(v)\,dv \propto v \cdot v^2 e^{-mv^2/(2k_BT)}\,dv = v^3 e^{-mv^2/(2k_BT)}\,dv$$
 
 Normalising:
 
-$$f_{\mathrm{'\{'}eff{'\}'}}(v) = \frac{1}{2(k_BT/m)^2}\,v^3\,e^{-mv^2/(2k_BT)}$$
+$$f_{\mathrm{eff{}}(v) = \frac{1}{2(k_BT/m)^2}\,v^3\,e^{-mv^2/(2k_BT)}$$
 
 The mean kinetic energy:
 
-$$\langle \varepsilon \rangle_{\mathrm{'\{'}eff{'\}'}} = \frac{1}{2}m\langle v^2 \rangle_{\mathrm{'\{'}eff{'\}'}} = \frac{1}{2}m \cdot \frac{\int_0^\infty v^5 e^{-mv^2/(2k_BT)}\,dv}{\int_0^\infty v^3 e^{-mv^2/(2k_BT)}\,dv}$$
+$$\langle \varepsilon \rangle_{\mathrm{eff{}} = \frac{1}{2}m\langle v^2 \rangle_{\mathrm{eff{}} = \frac{1}{2}m \cdot \frac{\int_0^\infty v^5 e^{-mv^2/(2k_BT)}\,dv}{\int_0^\infty v^3 e^{-mv^2/(2k_BT)}\,dv}$$
 
 Using $\int_0^\infty v^n e^{-av^2}\,dv = \frac{1}{2a^{(n+1)/2}}\Gamma\!\left(\frac{n+1}{2}\right)$:
 
-$$\langle v^2 \rangle_{\mathrm{'\{'}eff{'\}'}} = \frac{\Gamma(3)/(2a^3)}{\Gamma(2)/(2a^2)} = \frac{2}{a} = \frac{4k_BT}{m}$$
+$$\langle v^2 \rangle_{\mathrm{eff{}} = \frac{\Gamma(3)/(2a^3)}{\Gamma(2)/(2a^2)} = \frac{2}{a} = \frac{4k_BT}{m}$$
 
-$$\langle \varepsilon \rangle_{\mathrm{'\{'}eff{'\}'}} = 2k_BT$$
+$$\langle \varepsilon \rangle_{\mathrm{eff{}} = 2k_BT$$
 
 This is $4/3$ times the bulk average $\frac{3}{2}k_BT$ --- effusing molecules are "hotter" because faster molecules escape preferentially. $\blacksquare$
 
@@ -726,7 +726,7 @@ This is $4/3$ times the bulk average $\frac{3}{2}k_BT$ --- effusing molecules ar
 
 - **Applying the equipartition theorem to quantum systems.** At temperatures below the characteristic energy spacing ($k_BT \ll \Delta E$), the relevant degrees of freedom are "frozen out" and do not contribute to $C_V$.
 
-- **Assuming the classical limit always applies.** Electrons in metals are degenerate ($T \ll T_F$) and must be treated with Fermi-Dirac statistics. Helium-4 at low temperatures exhibits Bose-Einstein condensation and superfluidity. The classical limit $n\lambda_{\mathrm{'\{'}th{'\}'}}^3 \ll 1$ is violated in these cases.
+- **Assuming the classical limit always applies.** Electrons in metals are degenerate ($T \ll T_F$) and must be treated with Fermi-Dirac statistics. Helium-4 at low temperatures exhibits Bose-Einstein condensation and superfluidity. The classical limit $n\lambda_{\mathrm{th{}}^3 \ll 1$ is violated in these cases.
 
 - **Confusing $\mu = 0$ for bosons with $\mu$ for fermions.** For bosons, $\mu \leq \varepsilon_0$ and $\mu \to 0$ at BEC. For fermions, $\mu \approx \varepsilon_F$ at low temperatures and can be much larger than $\varepsilon_0$.
 
@@ -738,7 +738,7 @@ This is $4/3$ times the bulk average $\frac{3}{2}k_BT$ --- effusing molecules ar
 
 ### Problem 1
 
-Calculate the Fermi energy and Fermi temperature for sodium. Given: electron density $n \approx 2.65 \times 10^{28}\,\mathrm{'\{'}m{'\}'}^{-3}$, $m_e = 9.109 \times 10^{-31}$ kg.
+Calculate the Fermi energy and Fermi temperature for sodium. Given: electron density $n \approx 2.65 \times 10^{28}\,\mathrm{m{}^{-3}$, $m_e = 9.109 \times 10^{-31}$ kg.
 
 <details>
 <summary>Solution</summary>
@@ -751,9 +751,9 @@ $(3\pi^2 \times 2.65 \times 10^{28})^{1/3} = (7.85 \times 10^{29})^{1/3} \approx
 
 $(3\pi^2 n)^{2/3} = (9.23 \times 10^9)^2 = 8.52 \times 10^{19}$
 
-$\varepsilon_F = \frac{1.113 \times 10^{-68}}{1.822 \times 10^{-30}} \times 8.52 \times 10^{19} \approx 5.20 \times 10^{-19}\,\mathrm{'\{'}J{'\}'} \approx 3.25\,\mathrm{'\{'}eV{'\}'}$
+$\varepsilon_F = \frac{1.113 \times 10^{-68}}{1.822 \times 10^{-30}} \times 8.52 \times 10^{19} \approx 5.20 \times 10^{-19}\,\mathrm{J{} \approx 3.25\,\mathrm{eV{}$
 
-$T_F = \varepsilon_F/k_B = 5.20 \times 10^{-19}/1.381 \times 10^{-23} \approx 37700\,\mathrm{'\{'}K{'\}'}$
+$T_F = \varepsilon_F/k_B = 5.20 \times 10^{-19}/1.381 \times 10^{-23} \approx 37700\,\mathrm{K{}$
 
 </details>
 
@@ -814,7 +814,7 @@ Show that the classical limit of the Fermi-Dirac distribution reproduces the Max
 
 The Fermi-Dirac distribution is:
 
-$$f_{\mathrm{'\{'}FD{'\}'}}(\varepsilon) = \frac{1}{e^{\beta(\varepsilon - \mu)} + 1}$$
+$$f_{\mathrm{FD{}}(\varepsilon) = \frac{1}{e^{\beta(\varepsilon - \mu)} + 1}$$
 
 The total number of particles is:
 
@@ -824,9 +824,9 @@ In the classical limit $e^{\beta(\varepsilon - \mu)} \gg 1$, the $+1$ is negligi
 
 $$N \approx \int_0^\infty g(\varepsilon)\, e^{-\beta(\varepsilon - \mu)}\, d\varepsilon = e^{\beta\mu} \int_0^\infty g(\varepsilon)\, e^{-\beta\varepsilon}\, d\varepsilon$$
 
-$$e^{\beta\mu} = \frac{N}{\int_0^\infty g(\varepsilon)\, e^{-\beta\varepsilon}\, d\varepsilon} = \frac{N\lambda_{\mathrm{'\{'}th{'\}'}}^3}{V}$$
+$$e^{\beta\mu} = \frac{N}{\int_0^\infty g(\varepsilon)\, e^{-\beta\varepsilon}\, d\varepsilon} = \frac{N\lambda_{\mathrm{th{}}^3}{V}$$
 
-The classical limit requires $e^{\beta\mu} \ll 1$, i.e., $N\lambda_{\mathrm{'\{'}th{'\}'}}^3/V \ll 1$, or equivalently, the average inter-particle spacing $(V/N)^{1/3}$ must be much larger than $\lambda_{\mathrm{'\{'}th{'\}'}}$.
+The classical limit requires $e^{\beta\mu} \ll 1$, i.e., $N\lambda_{\mathrm{th{}}^3/V \ll 1$, or equivalently, the average inter-particle spacing $(V/N)^{1/3}$ must be much larger than $\lambda_{\mathrm{th{}}$.
 
 </details>
 
@@ -837,7 +837,7 @@ Compute the partition function for a single quantum harmonic oscillator and veri
 <details>
 <summary>Solution</summary>
 
-$$Z_{\mathrm{'\{'}HO{'\}'}} = \sum_{n=0}^{\infty} e^{-\beta\hbar\omega(n+1/2)} = e^{-\beta\hbar\omega/2}\sum_{n=0}^{\infty}\left(e^{-\beta\hbar\omega}\right)^n = \frac{e^{-\beta\hbar\omega/2}}{1 - e^{-\beta\hbar\omega}}$$
+$$Z_{\mathrm{HO{}} = \sum_{n=0}^{\infty} e^{-\beta\hbar\omega(n+1/2)} = e^{-\beta\hbar\omega/2}\sum_{n=0}^{\infty}\left(e^{-\beta\hbar\omega}\right)^n = \frac{e^{-\beta\hbar\omega/2}}{1 - e^{-\beta\hbar\omega}}$$
 
 $$\langle E \rangle = -\frac{\partial \ln Z}{\partial \beta} = \frac{\hbar\omega}{2} + \frac{\hbar\omega\,e^{-\beta\hbar\omega}}{1 - e^{-\beta\hbar\omega}} = \frac{\hbar\omega}{2} + \frac{\hbar\omega}{e^{\beta\hbar\omega} - 1} = \hbar\omega\left(\frac{1}{2} + n_B\right)$$
 

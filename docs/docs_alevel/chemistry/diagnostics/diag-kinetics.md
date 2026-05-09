@@ -277,9 +277,9 @@ $$\text{'\{'}Percentage decomposed{'\}'} = \frac{0.02366}{0.0250} \times 100 = 9
 
 #### UT-3: Rate Equation from Experimental Data
 
-**Question:** The reaction $\mathrm{'\{'}A{'\}'} + 2\mathrm{'\{'}B{'\}'} \to \mathrm{'\{'}C{'\}'}$ was studied at constant temperature. The following initial rate data were obtained:
+**Question:** The reaction $\mathrm{A{} + 2\mathrm{B{} \to \mathrm{C{}$ was studied at constant temperature. The following initial rate data were obtained:
 
-| Experiment | $[\mathrm{'\{'}A{'\}'}]$ (mol dm$^{-3}$) | $[\mathrm{'\{'}B{'\}'}]$ (mol dm$^{-3}$) | Initial rate (mol dm$^{-3}$ s$^{-1}$) |
+| Experiment | $[\mathrm{A{}]$ (mol dm$^{-3}$) | $[\mathrm{B{}]$ (mol dm$^{-3}$) | Initial rate (mol dm$^{-3}$ s$^{-1}$) |
 |---|---|---|---|
 | 1 | 0.10 | 0.10 | $1.2 \times 10^{-3}$ |
 | 2 | 0.20 | 0.10 | $2.4 \times 10^{-3}$ |
@@ -290,11 +290,11 @@ Determine the rate equation, the overall order, and the value of the rate consta
 
 **Solution:**
 
-Comparing experiments 1 and 2 (doubling $[\mathrm{'\{'}A{'\}'}]$ with $[\mathrm{'\{'}B{'\}'}]$ constant): rate doubles. Order with respect to $\mathrm{'\{'}A{'\}'} = 1$ (1 mark).
+Comparing experiments 1 and 2 (doubling $[\mathrm{A{}]$ with $[\mathrm{B{}]$ constant): rate doubles. Order with respect to $\mathrm{A{} = 1$ (1 mark).
 
-Comparing experiments 1 and 3 (doubling $[\mathrm{'\{'}B{'\}'}]$ with $[\mathrm{'\{'}A{'\}'}]$ constant): rate quadruples. Order with respect to $\mathrm{'\{'}B{'\}'} = 2$ (1 mark).
+Comparing experiments 1 and 3 (doubling $[\mathrm{B{}]$ with $[\mathrm{A{}]$ constant): rate quadruples. Order with respect to $\mathrm{B{} = 2$ (1 mark).
 
-Rate equation: $\text{'\{'}rate{'\}'} = k[\mathrm{'\{'}A{'\}'}][\mathrm{'\{'}B{'\}'}]^2$
+Rate equation: $\text{'\{'}rate{'\}'} = k[\mathrm{A{}][\mathrm{B{}]^2$
 
 Overall order = $1 + 2 = 3$ (1 mark).
 
@@ -304,7 +304,7 @@ $$k = \frac{1.2 \times 10^{-3}}{0.001} = 1.2\,\mathrm{mol^{-2}\,dm^6\,s^{-1}}$$ 
 
 #### IT-4: Arrhenius Equation Applied
 
-**Question:** The rate constant for a first-order reaction is $3.40 \times 10^{-3}\,\mathrm{s^{-1}}$ at $300\,\mathrm{'\{'}K{'\}'}$ and $1.21 \times 10^{-2}\,\mathrm{s^{-1}}$ at $320\,\mathrm{'\{'}K{'\}'}$. Calculate the activation energy.
+**Question:** The rate constant for a first-order reaction is $3.40 \times 10^{-3}\,\mathrm{s^{-1}}$ at $300\,\mathrm{K{}$ and $1.21 \times 10^{-2}\,\mathrm{s^{-1}}$ at $320\,\mathrm{K{}$. Calculate the activation energy.
 
 **Solution:**
 
@@ -322,26 +322,26 @@ $$E_a = \frac{1.269}{2.083 \times 10^{-4}} \times 8.314 = 50600\,\mathrm{J\,mol^
 
 #### UT-4: Initial Rates and Mechanism
 
-**Question:** For the reaction $\mathrm{'\{'}X{'\}'}_2 + \mathrm{'\{'}Y{'\}'}_2 \to 2\mathrm{'\{'}XY{'\}'}$, the rate equation is found to be $\text{'\{'}rate{'\}'} = k[\mathrm{'\{'}X{'\}'}_2][\mathrm{'\{'}Y{'\}'}_2]$. Propose a two-step mechanism consistent with this rate equation and identify the rate-determining step.
+**Question:** For the reaction $\mathrm{X{}_2 + \mathrm{Y{}_2 \to 2\mathrm{XY{}$, the rate equation is found to be $\text{'\{'}rate{'\}'} = k[\mathrm{X{}_2][\mathrm{Y{}_2]$. Propose a two-step mechanism consistent with this rate equation and identify the rate-determining step.
 
 **Solution:**
 
-Since the rate equation shows first order with respect to both $\mathrm{'\{'}X{'\}'}_2$ and $\mathrm{'\{'}Y{'\}'}_2$, the rate-determining step must involve one molecule of each (1 mark).
+Since the rate equation shows first order with respect to both $\mathrm{X{}_2$ and $\mathrm{Y{}_2$, the rate-determining step must involve one molecule of each (1 mark).
 
 Proposed mechanism:
 
-Step 1 (slow, rate-determining): $\mathrm{'\{'}X{'\}'}_2 + \mathrm{'\{'}Y{'\}'}_2 \to \mathrm{'\{'}X{'\}'}_2\mathrm{'\{'}Y{'\}'}_2$ (or a complex)
+Step 1 (slow, rate-determining): $\mathrm{X{}_2 + \mathrm{Y{}_2 \to \mathrm{X{}_2\mathrm{Y{}_2$ (or a complex)
 
-Step 2 (fast): $\mathrm{'\{'}X{'\}'}_2\mathrm{'\{'}Y{'\}'}_2 \to 2\mathrm{'\{'}XY{'\}'}$
+Step 2 (fast): $\mathrm{X{}_2\mathrm{Y{}_2 \to 2\mathrm{XY{}$
 
-The rate equation for step 1 is $\text{'\{'}rate{'\}'} = k_1[\mathrm{'\{'}X{'\}'}_2][\mathrm{'\{'}Y{'\}'}_2]$, which matches the observed rate equation (1 mark).
+The rate equation for step 1 is $\text{'\{'}rate{'\}'} = k_1[\mathrm{X{}_2][\mathrm{Y{}_2]$, which matches the observed rate equation (1 mark).
 
 Alternative mechanism:
 
-Step 1 (slow): $\mathrm{'\{'}X{'\}'}_2 \to 2\mathrm{'\{'}X{'\}'}$ (homolytic fission)
+Step 1 (slow): $\mathrm{X{}_2 \to 2\mathrm{X{}$ (homolytic fission)
 
-Step 2 (fast): $\mathrm{'\{'}X{'\}'} + \mathrm{'\{'}Y{'\}'}_2 \to \mathrm{'\{'}XY{'\}'} + \mathrm{'\{'}Y{'\}'}$
+Step 2 (fast): $\mathrm{X{} + \mathrm{Y{}_2 \to \mathrm{XY{} + \mathrm{Y{}$
 
-Step 3 (fast): $\mathrm{'\{'}Y{'\}'} + \mathrm{'\{'}X{'\}'} \to \mathrm{'\{'}XY{'\}'}$
+Step 3 (fast): $\mathrm{Y{} + \mathrm{X{} \to \mathrm{XY{}$
 
-This would give rate $= k[\mathrm{'\{'}X{'\}'}_2]$, which does NOT match the observed rate equation (1 mark). The first mechanism is correct.
+This would give rate $= k[\mathrm{X{}_2]$, which does NOT match the observed rate equation (1 mark). The first mechanism is correct.

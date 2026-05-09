@@ -280,8 +280,8 @@ So $v = -x + C$, and $y = x + \frac{1}{C - x}$.
 
 ### 2.13 Worked Example: Newton's Law of Cooling
 
-**Problem.** A body at $90\degree\mathrm{'\{'}C{'\}'}$ is placed in a room at $20\degree\mathrm{'\{'}C{'\}'}$. After 10
-minutes, its temperature is $60\degree\mathrm{'\{'}C{'\}'}$. When will it reach $30\degree\mathrm{'\{'}C{'\}'}$?
+**Problem.** A body at $90\degree\mathrm{C{}$ is placed in a room at $20\degree\mathrm{C{}$. After 10
+minutes, its temperature is $60\degree\mathrm{C{}$. When will it reach $30\degree\mathrm{C{}$?
 
 <details>
 <summary>Solution</summary>
@@ -314,7 +314,7 @@ the mixture leaves at 3 L/min. Find the amount of salt after 30 minutes.
 
 *Solution.* Let $Q(t)$ be the amount of salt (kg) at time $t$ (min).
 
-Rate of change: $\frac{dQ}{dt} = \mathrm{'\{'}rate\; in{'\}'} - \mathrm{'\{'}rate\; out{'\}'} = 0 - 3 \cdot \frac{Q}{100}$.
+Rate of change: $\frac{dQ}{dt} = \mathrm{rate\; in{} - \mathrm{rate\; out{} = 0 - 3 \cdot \frac{Q}{100}$.
 
 $\frac{dQ}{dt} = -\frac{3Q}{100}$, $Q(0) = 20$.
 
@@ -858,7 +858,7 @@ $e^{\alpha t}(\mathbf{'\{'}a{'\}'}\sin(\beta t) + \mathbf{'\{'}b{'\}'}\cos(\beta
 $\mathbf{'\{'}x{'\}'}(t) = e^{At}\mathbf{'\{'}x{'\}'}_0$.
 
 **Proposition 4.2.** If $A$ is diagonalizable as $A = PDP^{-1}$, then $e^{At} = Pe^{Dt}P^{-1}$,
-where $e^{Dt} = \mathrm{'\{'}diag{'\}'}(e^{\lambda_1 t}, \ldots, e^{\lambda_n t})$.
+where $e^{Dt} = \mathrm{diag{}(e^{\lambda_1 t}, \ldots, e^{\lambda_n t})$.
 
 ### 4.4 Worked Example: Distinct Real Eigenvalues
 
@@ -973,7 +973,7 @@ behaviour near the origin is determined by the eigenvalues:
 | $\lambda = \pm i\beta$ | Center | (Marginally) stable |
 
 _Remark._ The **trace-determinant plane** provides a convenient classification. Let
-$\tau = \mathrm{'\{'}tr{'\}'}(A)$ and $\Delta = \det(A)$. The eigenvalues satisfy
+$\tau = \mathrm{tr{}(A)$ and $\Delta = \det(A)$. The eigenvalues satisfy
 $\lambda^2 - \tau\lambda + \Delta = 0$, so:
 
 $$\lambda = \frac{\tau \pm \sqrt{\tau^2 - 4\Delta}}{2}$$
@@ -1364,7 +1364,7 @@ Since $a_2 = 0$, all $a_{3k+2} = 0$.
 
 $y(x) = a_0\left(1 + \frac{x^3}{6} + \frac{x^6}{180} + \cdots\right) + a_1\left(x + \frac{x^4}{12} + \frac{x^7}{504} + \cdots\right)$.
 
-These are the **Airy functions** $\mathrm{'\{'}Ai{'\}'}(x)$ and $\mathrm{'\{'}Bi{'\}'}(x)$ (up to normalization). $\blacksquare$
+These are the **Airy functions** $\mathrm{Ai{}(x)$ and $\mathrm{Bi{}(x)$ (up to normalization). $\blacksquare$
 
 </details>
 
@@ -1455,7 +1455,7 @@ $$\int_{-\pi}^{\pi} \cos(mx)\cos(nx)\, dx = \begin{cases} \pi & m = n \neq 0 \\ 
 
 $$\int_{-\pi}^{\pi} \sin(mx)\sin(nx)\, dx = \begin{cases} \pi & m = n \neq 0 \\ 0 & m \neq n \end{cases}$$
 
-$$\int_{-\pi}^{\pi} \cos(mx)\sin(nx)\, dx = 0 \quad \mathrm{'\{'}for\; all{'\}'}\; m, n$$
+$$\int_{-\pi}^{\pi} \cos(mx)\sin(nx)\, dx = 0 \quad \mathrm{for\; all{}\; m, n$$
 
 To find $a_n$, multiply both sides of the Fourier expansion by $\cos(nx)$ and integrate over
 $[-\pi, \pi]$. By orthogonality, all terms vanish except the $\cos(nx)$ term, yielding
@@ -1828,8 +1828,8 @@ determine the local stability:
 | Both real, negative                     | Stable node     | Asymptotically stable |
 | Both real, positive                     | Unstable node   | Unstable              |
 | Real, opposite signs                    | Saddle point    | Unstable              |
-| Complex, $\mathrm{'\{'}Re{'\}'}(\lambda) \lt{} 0$ | Stable spiral   | Asymptotically stable |
-| Complex, $\mathrm{'\{'}Re{'\}'}(\lambda) > 0$     | Unstable spiral | Unstable              |
+| Complex, $\mathrm{Re{}(\lambda) \lt{} 0$ | Stable spiral   | Asymptotically stable |
+| Complex, $\mathrm{Re{}(\lambda) > 0$     | Unstable spiral | Unstable              |
 | Purely imaginary                        | Center          | (Marginally) stable   |
 
 ### 9.3 Lyapunov Stability
@@ -1865,7 +1865,7 @@ The Jacobian is $J = \begin{pmatrix} 1 & -1 \\ 2x & 2y \end{pmatrix}$.
 
 At $(1/\sqrt{2}, 1/\sqrt{2})$: $J = \begin{pmatrix} 1 & -1 \\ \sqrt{2} & \sqrt{2} \end{pmatrix}$.
 
-$\mathrm{'\{'}tr{'\}'}(J) = 1 + \sqrt{2} > 0$, $\det(J) = \sqrt{2} + \sqrt{2} = 2\sqrt{2} > 0$.
+$\mathrm{tr{}(J) = 1 + \sqrt{2} > 0$, $\det(J) = \sqrt{2} + \sqrt{2} = 2\sqrt{2} > 0$.
 
 $\tau^2 - 4\Delta = (1 + \sqrt{2})^2 - 8\sqrt{2} = 3 + 2\sqrt{2} - 8\sqrt{2} = 3 - 6\sqrt{2} \lt{} 0$.
 
@@ -1873,7 +1873,7 @@ Complex eigenvalues with positive real part: **unstable spiral**.
 
 At $(-1/\sqrt{2}, -1/\sqrt{2})$: $J = \begin{pmatrix} 1 & -1 \\ -\sqrt{2} & -\sqrt{2} \end{pmatrix}$.
 
-$\mathrm{'\{'}tr{'\}'}(J) = 1 - \sqrt{2} \lt{} 0$, $\det(J) = -\sqrt{2} + \sqrt{2} = 0$.
+$\mathrm{tr{}(J) = 1 - \sqrt{2} \lt{} 0$, $\det(J) = -\sqrt{2} + \sqrt{2} = 0$.
 
 Wait, $\det(J) = (1)(-\sqrt{2}) - (-1)(-\sqrt{2}) = -\sqrt{2} - \sqrt{2} = -2\sqrt{2} \lt{} 0$.
 
@@ -1930,7 +1930,7 @@ At $(0, 0)$: $J = \begin{pmatrix} 2 & 0 \\ 0 & -1 \end{pmatrix}$.
 Eigenvalues $2$ and $-1$: **saddle point** (unstable).
 
 At $(1, 2)$: $J = \begin{pmatrix} 0 & -1 \\ 2 & 0 \end{pmatrix}$.
-$\det(J) = 2 > 0$, $\mathrm{'\{'}tr{'\}'}(J) = 0$. Eigenvalues $\pm i\sqrt{2}$: **center**.
+$\det(J) = 2 > 0$, $\mathrm{tr{}(J) = 0$. Eigenvalues $\pm i\sqrt{2}$: **center**.
 
 _Remark._ For the linearized system, the center is (marginally) stable. However, for the
 nonlinear Lotka-Volterra system, the trajectories are actually closed orbits surrounding $(1, 2)$.
@@ -2054,7 +2054,7 @@ _Solution.* Write as a system: $x' = y$, $y' = -x - \mu(x^2 - 1)y$.
 The only critical point is $(0, 0)$. The Jacobian at the origin is
 $J = \begin{pmatrix} 0 & 1 \\ -1 & \mu \end{pmatrix}$.
 
-$\mathrm{'\{'}tr{'\}'}(J) = \mu > 0$, $\det(J) = 1 > 0$, $\tau^2 - 4\Delta = \mu^2 - 4$.
+$\mathrm{tr{}(J) = \mu > 0$, $\det(J) = 1 > 0$, $\tau^2 - 4\Delta = \mu^2 - 4$.
 
 For $0 \lt{} \mu \lt{} 2$: complex eigenvalues with positive real part (**unstable spiral**).
 For $\mu \geq 2$: two positive real eigenvalues (**unstable node**).
@@ -2500,10 +2500,10 @@ $x = 1 \implies y = 1$. Critical point: $(1, 1)$.
 Jacobian: $J = \begin{pmatrix} -2x & 1 \\ 1 & -2y \end{pmatrix}$.
 
 At $(0, 0)$: $J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
-$\mathrm{'\{'}tr{'\}'}(J) = 0$, $\det(J) = -1 \lt{} 0$. **Saddle point** (unstable).
+$\mathrm{tr{}(J) = 0$, $\det(J) = -1 \lt{} 0$. **Saddle point** (unstable).
 
 At $(1, 1)$: $J = \begin{pmatrix} -2 & 1 \\ 1 & -2 \end{pmatrix}$.
-$\mathrm{'\{'}tr{'\}'}(J) = -4 \lt{} 0$, $\det(J) = 3 > 0$.
+$\mathrm{tr{}(J) = -4 \lt{} 0$, $\det(J) = 3 > 0$.
 $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct negative real eigenvalues. **Stable node**
 (asymptotically stable). $\blacksquare$
 

@@ -95,7 +95,7 @@ agreed with Planck's value from blackbody radiation to within $0.5\%$.
 The cutoff frequency is $\nu_0 = \phi/h = 2.28 \times 1.602 \times 10^{-19} / 6.626 \times 10^{-34}$
 $= 5.51 \times 10^{14}$ Hz. The cutoff wavelength is:
 
-$$\lambda_0 = \frac{c}{\nu_0} = \frac{3.00 \times 10^8}{5.51 \times 10^{14}} = 544\;\mathrm{'\{'}nm{'\}'}$$
+$$\lambda_0 = \frac{c}{\nu_0} = \frac{3.00 \times 10^8}{5.51 \times 10^{14}} = 544\;\mathrm{nm{}$$
 
 This lies in the green region of the visible spectrum, explaining why sodium is sensitive to visible
 light.
@@ -162,15 +162,15 @@ wavelength of the scattered photon and the kinetic energy of the recoil electron
 <details>
 <summary>Solution</summary>
 
-$$\Delta\lambda = \lambda_C(1 - \cos 90°) = \lambda_C = 2.426 \times 10^{-12}\;\mathrm{'\{'}m{'\}'} = 0.00243\;\mathrm{'\{'}nm{'\}'}$$
+$$\Delta\lambda = \lambda_C(1 - \cos 90°) = \lambda_C = 2.426 \times 10^{-12}\;\mathrm{m{} = 0.00243\;\mathrm{nm{}$$
 
-$$\lambda' = \lambda + \Delta\lambda = 0.100 + 0.00243 = 0.10243\;\mathrm{'\{'}nm{'\}'}$$
+$$\lambda' = \lambda + \Delta\lambda = 0.100 + 0.00243 = 0.10243\;\mathrm{nm{}$$
 
 The kinetic energy of the recoil electron:
 
 $$T_e = hc\!\left(\frac{1}{\lambda} - \frac{1}{\lambda'}\right) = \frac{hc\,\Delta\lambda}{\lambda\lambda'}$$
 
-$$= \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)(2.43 \times 10^{-12})}{(1.00 \times 10^{-10})(1.0243 \times 10^{-10})} = 4.72 \times 10^{-17}\;\mathrm{'\{'}J{'\}'} = 295\;\mathrm{'\{'}eV{'\}'}$$
+$$= \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)(2.43 \times 10^{-12})}{(1.00 \times 10^{-10})(1.0243 \times 10^{-10})} = 4.72 \times 10^{-17}\;\mathrm{J{} = 295\;\mathrm{eV{}$$
 
 </details>
 
@@ -201,7 +201,7 @@ where $\phi$ is the angle measured from the crystal surface.
 **The key observation.** At $V = 54$ V, a pronounced peak was observed at $\phi = 50°$. The
 de Broglie wavelength at this voltage is:
 
-$$\lambda = \frac{6.626 \times 10^{-34}}{\sqrt{2(9.109 \times 10^{-31})(1.602 \times 10^{-19})(54)}} = 0.167\;\mathrm{'\{'}nm{'\}'}$$
+$$\lambda = \frac{6.626 \times 10^{-34}}{\sqrt{2(9.109 \times 10^{-31})(1.602 \times 10^{-19})(54)}} = 0.167\;\mathrm{nm{}$$
 
 The Bragg condition with the nickel lattice spacing gives excellent agreement with this
 prediction, confirming that electrons exhibit wave-like diffraction.
@@ -304,10 +304,10 @@ For a statistical mixture of states $|\psi_i\rangle$ with probabilities $p_i$:
 $$\hat{\rho} = \sum_i p_i\,|\psi_i\rangle\langle\psi_i|$$
 
 **Properties:**
-- $\mathrm{'\{'}Tr{'\}'}(\hat{\rho}) = 1$ (normalisation)
+- $\mathrm{Tr{}(\hat{\rho}) = 1$ (normalisation)
 - $\hat{\rho}^\dagger = \hat{\rho}$ (Hermitian)
 - $\hat{\rho}^2 = \hat{\rho}$ if and only if the state is pure; $\hat{\rho}^2 \lt \hat{\rho}$ for mixed states
-- Expectation values: $\langle A \rangle = \mathrm{'\{'}Tr{'\}'}(\hat{\rho}\hat{A})$
+- Expectation values: $\langle A \rangle = \mathrm{Tr{}(\hat{\rho}\hat{A})$
 
 **Time evolution:** $i\hbar\,d\hat{\rho}/dt = [\hat{H}, \hat{\rho}]$ (Liouville-von Neumann equation).
 
@@ -342,7 +342,7 @@ $$i\hbar \frac{\partial \psi}{\partial t} = \hat{H}\psi = \left(-\frac{\hbar^2}{
 
 For time-independent potentials $V(\mathbf{'\{'}r{'\}'})$, separate variables: $\psi(\mathbf{'\{'}r{'\}'}, t) = \phi(\mathbf{'\{'}r{'\}'}) e^{-iEt/\hbar}$:
 
-$$\hat{H}\phi = E\phi \quad \mathrm{'\{'}i.e.,{'\}'} \quad -\frac{\hbar^2}{2m}\nabla^2\phi + V\phi = E\phi$$
+$$\hat{H}\phi = E\phi \quad \mathrm{i.e.,{} \quad -\frac{\hbar^2}{2m}\nabla^2\phi + V\phi = E\phi$$
 
 This is an eigenvalue problem: $E$ is the energy eigenvalue, $\phi$ is the energy eigenstate.
 
@@ -522,8 +522,8 @@ emission, scattering theory, and condensed matter physics.
 **Sudden and adiabatic approximations.**
 
 - **Sudden approximation.** If the Hamiltonian changes rapidly compared to the system's natural
-  timescale $\sim \hbar/\Delta E$, the state does not have time to adjust: $|\psi_{\mathrm{'\{'}after{'\}'}}\rangle = |\psi_{\mathrm{'\{'}before{'\}'}}\rangle$.
-  The probability of finding the system in the new $n$-th eigenstate is $P_n = |\langle n_{\mathrm{'\{'}new{'\}'}}|\psi_{\mathrm{'\{'}before{'\}'}}\rangle|^2$.
+  timescale $\sim \hbar/\Delta E$, the state does not have time to adjust: $|\psi_{\mathrm{after{}}\rangle = |\psi_{\mathrm{before{}}\rangle$.
+  The probability of finding the system in the new $n$-th eigenstate is $P_n = |\langle n_{\mathrm{new{}}|\psi_{\mathrm{before{}}\rangle|^2$.
 
 - **Adiabatic theorem.** If the Hamiltonian changes slowly enough (specifically, if
   $|\langle m|\partial\hat{H}/\partial t|n\rangle|/(\hbar\omega_{mn}^2) \ll 1$ for all $m \neq n$),
@@ -920,7 +920,7 @@ $$T = \frac{1}{1 + \dfrac{V_0^2}{4E(E + V_0)}\sin^2(2k_2 a)}$$
 **Resonances** occur when $2k_2 a = n\pi$ (integer multiples of $\pi$), giving $T = 1$: the well
 becomes perfectly transparent.
 
-**Example 5.3.** A finite square well has $V_0 = 5\,\mathrm{'\{'}eV{'\}'}$ and $2a = 1\,\mathrm{'\{'}nm{'\}'}$. Estimate the
+**Example 5.3.** A finite square well has $V_0 = 5\,\mathrm{eV{}$ and $2a = 1\,\mathrm{nm{}$. Estimate the
 number of bound states for an electron.
 
 <details>
@@ -1053,7 +1053,7 @@ $$\hat{L}_x = -i\hbar\left(y\frac{\partial}{\partial z} - z\frac{\partial}{\part
 
 $$[\hat{L}_x, \hat{L}_y] = i\hbar\hat{L}_z, \quad [\hat{L}_y, \hat{L}_z] = i\hbar\hat{L}_x, \quad [\hat{L}_z, \hat{L}_x] = i\hbar\hat{L}_y$$
 
-$$[\hat{L}^2, \hat{L}_i] = 0 \quad \mathrm{'\{'}for\ all\ {'\}'} i$$
+$$[\hat{L}^2, \hat{L}_i] = 0 \quad \mathrm{for\ all\ {} i$$
 
 **Simultaneous eigenstates:** $|l, m\rangle$ with
 
@@ -1195,7 +1195,7 @@ where $L_q^p$ are the associated Laguerre polynomials.
 
 **Energy eigenvalues:**
 
-$$E_n = -\frac{m_e e^4}{2(4\pi\varepsilon_0)^2 \hbar^2} \cdot \frac{1}{n^2} = -\frac{13.6\,\mathrm{'\{'}eV{'\}'}}{n^2}, \quad n = 1, 2, 3, \ldots$$
+$$E_n = -\frac{m_e e^4}{2(4\pi\varepsilon_0)^2 \hbar^2} \cdot \frac{1}{n^2} = -\frac{13.6\,\mathrm{eV{}}{n^2}, \quad n = 1, 2, 3, \ldots$$
 
 **Degeneracy:** Each energy level $E_n$ has degeneracy $n^2$ (ignoring spin). The quantum numbers are:
 - Principal: $n = 1, 2, 3, \ldots$
@@ -1206,7 +1206,7 @@ The ground state wave function ($n = 1, l = 0, m_l = 0$):
 
 $$\psi_{100}(r, \theta, \phi) = \frac{1}{\sqrt{\pi a_0^3}} e^{-r/a_0}$$
 
-where $a_0 = \frac{4\pi\varepsilon_0 \hbar^2}{m_e e^2} \approx 0.529\,\mathrm{'\{'}\AA{'\}'}$ is the Bohr radius.
+where $a_0 = \frac{4\pi\varepsilon_0 \hbar^2}{m_e e^2} \approx 0.529\,\mathrm{\AA{}$ is the Bohr radius.
 
 #### 6.5.3 Expectation Values for the Ground State
 
@@ -1301,7 +1301,7 @@ for $j = 1/2$.
 **Requirements.** We seek $2 \times 2$ matrices $\sigma_x, \sigma_y, \sigma_z$ such that:
 1. $\sigma_i^2 = I$ (eigenvalues are $\pm 1$, corresponding to $S_z = \pm\hbar/2$)
 2. $\sigma_i^\dagger = \sigma_i$ (Hermitian)
-3. $\mathrm{'\{'}Tr{'\}'}(\sigma_i) = 0$ (traceless, since eigenvalues sum to zero)
+3. $\mathrm{Tr{}(\sigma_i) = 0$ (traceless, since eigenvalues sum to zero)
 4. $[\sigma_x, \sigma_y] = 2i\sigma_z$ (and cyclic permutations)
 
 **Step 1: Fix $\sigma_z$.** A traceless Hermitian matrix with eigenvalues $\pm 1$ is:
@@ -1356,7 +1356,7 @@ $$\langle S_x \rangle(t) = \frac{\hbar}{2}(\alpha^*\beta\,e^{-i\gamma B_0 t} + \
 
 $$\langle S_y \rangle(t) = \frac{\hbar}{2i}(\alpha^*\beta\,e^{-i\gamma B_0 t} - \alpha\beta^*\,e^{i\gamma B_0 t})$$
 
-$$\langle S_z \rangle(t) = \frac{\hbar}{2}(|\alpha|^2 - |\beta|^2) = \mathrm{'\{'}const.{'\}'}$$
+$$\langle S_z \rangle(t) = \frac{\hbar}{2}(|\alpha|^2 - |\beta|^2) = \mathrm{const.{}$$
 
 The spin precesses at the **Larmor frequency** $\omega_L = \gamma B_0$.
 
@@ -1364,7 +1364,7 @@ For an electron, $\gamma = -e/(m_e)$ (negative charge), giving $\omega_L = eB_0/
 
 **The Larmor frequency.** For a typical laboratory field $B_0 = 1$ T:
 
-$$\omega_L = \frac{(1.602 \times 10^{-19})(1)}{9.109 \times 10^{-31}} = 1.76 \times 10^{11}\;\mathrm{'\{'}rad/s{'\}'}$$
+$$\omega_L = \frac{(1.602 \times 10^{-19})(1)}{9.109 \times 10^{-31}} = 1.76 \times 10^{11}\;\mathrm{rad/s{}$$
 
 corresponding to a frequency $\nu_L = \omega_L/(2\pi) = 28$ GHz (microwave range). This is the basis
 of Electron Spin Resonance (ESR) and Nuclear Magnetic Resonance (NMR) spectroscopy, where transitions
@@ -1558,7 +1558,7 @@ $W_{ij} = \langle n_i^{(0)} | \hat{H}' | n_j^{(0)} \rangle$ within the degenerat
 the first-order correction to the states is undetermined by the non-degenerate formula (denominators
 vanish). The correct approach is to note that $\hat{H}$ restricted to this subspace is:
 
-$$\hat{H}_{\mathrm{'\{'}sub{'\}'}} = E_n^{(0)}\hat{I} + \lambda \hat{W}$$
+$$\hat{H}_{\mathrm{sub{}} = E_n^{(0)}\hat{I} + \lambda \hat{W}$$
 
 where $W_{ij} = \langle n_i^{(0)}|\hat{H}'|n_j^{(0)}\rangle$. Diagonalising $\hat{W}$ gives the correct
 zeroth-order states and first-order energy splittings. $\blacksquare$
@@ -1635,7 +1635,7 @@ $E = \hbar\omega/2$, which is exact. For small $\lambda$, expand $\alpha^2 = \hb
 
 $$\alpha^2 \approx \frac{\hbar}{m\omega}\!\left(1 - \frac{3\lambda\hbar}{2m^2\omega^3}\right)$$
 
-$$E_{\mathrm{'\{'}var{'\}'}} \approx \frac{\hbar\omega}{2}\!\left(1 + \frac{3\lambda\hbar}{4m^2\omega^3}\right)$$
+$$E_{\mathrm{var{}} \approx \frac{\hbar\omega}{2}\!\left(1 + \frac{3\lambda\hbar}{4m^2\omega^3}\right)$$
 
 This agrees with second-order perturbation theory to first order in $\lambda$.
 
@@ -1648,7 +1648,7 @@ Schrodinger equation when the potential varies slowly compared to the de Broglie
 
 **Ansatz.** Write $\psi(x) = A(x)\exp(iS(x)/\hbar)$ and substitute into the Schrodinger equation:
 
-$$-i\hbar A'S - \hbar^2 A S'' + \hbar^2 A S'^2 - A S' \cdot \hbar^2 = \mathrm{'\{'}(terms){'\}'}$$
+$$-i\hbar A'S - \hbar^2 A S'' + \hbar^2 A S'^2 - A S' \cdot \hbar^2 = \mathrm{(terms){}$$
 
 Actually, substituting directly into $-\hbar^2\psi''/(2m) + V\psi = E\psi$ and separating orders of $\hbar$:
 
@@ -1788,7 +1788,7 @@ the Coulomb potential.
 \sqrt{\frac{2}{3}}|\downarrow\rangle$. (a) If $S_z$ is measured, what are the possible outcomes and
 their probabilities? (b) If $S_x$ is measured, what are the possible outcomes and their
 probabilities? (c) What is $\langle S_x \rangle$? (d) Write the density matrix $\hat{\rho}$ for this state and verify
-$\mathrm{'\{'}Tr{'\}'}(\hat{\rho}) = 1$ and $\hat{\rho}^2 = \hat{\rho}$ (pure state).
+$\mathrm{Tr{}(\hat{\rho}) = 1$ and $\hat{\rho}^2 = \hat{\rho}$ (pure state).
 
 **17.** (Singlet state) Two spin-1/2 particles are prepared in the singlet state. If particle 1 is
 measured to have $S_z^{(1)} = +\hbar/2$, what is the state of particle 2 immediately after? If

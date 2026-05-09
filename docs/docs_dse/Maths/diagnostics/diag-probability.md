@@ -253,7 +253,7 @@ A fair coin is tossed 4 times. Find the probability of getting exactly 3 heads.
 
 **Solution:**
 
-This follows a binomial distribution: $X \sim \mathrm{'\{'}Bin{'\}'}(4,\; 0.5)$.
+This follows a binomial distribution: $X \sim \mathrm{Bin{}(4,\; 0.5)$.
 
 $$P(X = 3) = \dbinom{4}{3}\left(\frac{1}{2}\right)^3\left(\frac{1}{2}\right)^1 = 4 \times \frac{1}{16} = \frac{1}{4}$$
 
@@ -434,7 +434,7 @@ The probability that it rains on any given day in June is $0.3$. Assuming indepe
 
 (a) $P(\text{'\{'}no rain for 5 days{'\}'}) = (1 - 0.3)^5 = 0.7^5 = 0.16807$.
 
-(b) $X \sim \mathrm{'\{'}Bin{'\}'}(7,\; 0.3)$.
+(b) $X \sim \mathrm{Bin{}(7,\; 0.3)$.
 
 $$P(X = 2) = \dbinom{7}{2}(0.3)^2(0.7)^5 = 21 \times 0.09 \times 0.16807 = 0.3177$$
 

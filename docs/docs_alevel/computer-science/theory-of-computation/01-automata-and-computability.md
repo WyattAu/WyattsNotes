@@ -75,8 +75,8 @@ and NFAs accept exactly the same class of languages (the **regular languages**).
 $D = (Q_D, \Sigma, \delta_D, q_0', F_D)$:
 
 1. $Q_D = \mathcal{'\{'}P{'\}'}(Q_N)$ (states are subsets of $Q_N$)
-2. $q_0' = \varepsilon\mathrm{'\{'}-closure{'\}'}(\{q_0\})$
-3. $\delta_D(S, a) = \varepsilon\mathrm{'\{'}-closure{'\}'}\left(\bigcup_{q \in S} \delta_N(q, a)\right)$ for
+2. $q_0' = \varepsilon\mathrm{-closure{}(\{q_0\})$
+3. $\delta_D(S, a) = \varepsilon\mathrm{-closure{}\left(\bigcup_{q \in S} \delta_N(q, a)\right)$ for
    $S \subseteq Q_N$
 4. $F_D = \{S \subseteq Q_N \mid S \cap F_N \neq \emptyset\}$
 
@@ -222,11 +222,11 @@ for all possible inputs.
 
 Assume a Turing machine $H$ exists that decides the halting problem:
 
-$$H(M, w) = \begin{cases} \mathrm{'\{'}accept{'\}'} & \mathrm{'\{'}if {'\}'} M \mathrm{'\{'} halts on {'\}'} w \\ \mathrm{'\{'}reject{'\}'} & \mathrm{'\{'}if {'\}'} M \mathrm{'\{'} does not halt on {'\}'} w \end{cases}$$
+$$H(M, w) = \begin{cases} \mathrm{accept{} & \mathrm{if {} M \mathrm{ halts on {} w \\ \mathrm{reject{} & \mathrm{if {} M \mathrm{ does not halt on {} w \end{cases}$$
 
 Construct a new machine $D$ that uses $H$:
 
-$$D(M) = \begin{cases} \mathrm{'\{'}loop forever{'\}'} & \mathrm{'\{'}if {'\}'} H(M, M) = \mathrm{'\{'}accept{'\}'} \\ \mathrm{'\{'}halt (reject){'\}'} & \mathrm{'\{'}if {'\}'} H(M, M) = \mathrm{'\{'}reject{'\}'} \end{cases}$$
+$$D(M) = \begin{cases} \mathrm{loop forever{} & \mathrm{if {} H(M, M) = \mathrm{accept{} \\ \mathrm{halt (reject){} & \mathrm{if {} H(M, M) = \mathrm{reject{} \end{cases}$$
 
 **The contradiction:** What happens when $D$ is run on its own description, $D$?
 
@@ -263,13 +263,13 @@ would have to run forever).
 
 ### Relationship
 
-$$\mathrm{'\{'}P{'\}'} \subseteq \mathrm{'\{'}NP{'\}'}$$
+$$\mathrm{P{} \subseteq \mathrm{NP{}$$
 
 Every problem in P is also in NP (if you can solve it in polynomial time, you can certainly verify a
 solution in polynomial time).
 
-**The P vs NP question:** Is $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}NP{'\}'}$? This is one of the seven Millennium Prize
-Problems. Most computer scientists believe $\mathrm{'\{'}P{'\}'} \neq \mathrm{'\{'}NP{'\}'}$.
+**The P vs NP question:** Is $\mathrm{P{} = \mathrm{NP{}$? This is one of the seven Millennium Prize
+Problems. Most computer scientists believe $\mathrm{P{} \neq \mathrm{NP{}$.
 
 ### NP-Complete Problems
 
@@ -286,7 +286,7 @@ A problem is **NP-complete** if:
 - Knapsack problem
 - Subset sum
 
-**Implication:** If **any** NP-complete problem is in P, then $\mathrm{'\{'}P{'\}'} = \mathrm{'\{'}NP{'\}'}$.
+**Implication:** If **any** NP-complete problem is in P, then $\mathrm{P{} = \mathrm{NP{}$.
 
 ### Examples of Problems in P
 

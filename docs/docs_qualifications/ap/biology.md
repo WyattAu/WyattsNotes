@@ -21,8 +21,8 @@ Water's properties arise from hydrogen bonding between molecules:
 
 - **Cohesion and adhesion:** H-bonds between water molecules (cohesion) and between water and other
   surfaces (adhesion) enable capillary action and transpiration.
-- **High specific heat:** $4.18 \, \mathrm{'\{'}J/(g \cdot ^\circ C){'\}'}$; buffers temperature changes.
-- **High heat of vaporisation:** $2260 \, \mathrm{'\{'}J/g{'\}'}$; provides evaporative cooling.
+- **High specific heat:** $4.18 \, \mathrm{J/(g \cdot ^\circ C){}$; buffers temperature changes.
+- **High heat of vaporisation:** $2260 \, \mathrm{J/g{}$; provides evaporative cooling.
 - **Lower density of ice:** H-bonds in ice form an open lattice; ice floats, insulating aquatic
   ecosystems.
 - **High surface tension:** H-bonds at the surface resist external force.
@@ -143,29 +143,29 @@ pressure in plant cells). Isotonic solutions produce no net movement.
 
 ### Photosynthesis
 
-$$6\mathrm{'\{'}CO{'\}'}_2 + 6\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} + \text{'\{'}light energy{'\}'} \to \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 6\mathrm{'\{'}O{'\}'}_2$$
+$$6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \text{'\{'}light energy{'\}'} \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2$$
 
 **Light-dependent reactions (thylakoid membrane):**
 
 - Photosystems II and I absorb light at 680 nm and 700 nm respectively.
-- Water is split ($2\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \to 4\mathrm{'\{'}H{'\}'}^+ + 4e^- + \mathrm{'\{'}O{'\}'}_2$).
-- Electrons pass through an ETC, pumping $\mathrm{'\{'}H{'\}'}^+$ into the thylakoid lumen.
-- $\mathrm{'\{'}H{'\}'}^+$ diffuses through ATP synthase (chemiosmosis), producing ATP.
+- Water is split ($2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$).
+- Electrons pass through an ETC, pumping $\mathrm{H{}^+$ into the thylakoid lumen.
+- $\mathrm{H{}^+$ diffuses through ATP synthase (chemiosmosis), producing ATP.
 - NADP$^+$ is reduced to NADPH.
 
 **Calvin cycle (stroma):**
 
-1. **Carbon fixation:** RuBisCO catalyses $\mathrm{'\{'}CO{'\}'}_2 + \text{'\{'}RuBP (5C){'\}'} \to 2 \times \text{'\{'}3-PGA (3C){'\}'}$.
+1. **Carbon fixation:** RuBisCO catalyses $\mathrm{CO{}_2 + \text{'\{'}RuBP (5C){'\}'} \to 2 \times \text{'\{'}3-PGA (3C){'\}'}$.
 2. **Reduction:** 3-PGA is phosphorylated by ATP and reduced by NADPH to G3P.
 3. **Regeneration:** Most G3P is used to regenerate RuBP (uses 5 of every 6 G3P molecules; 1 G3P
-   is the net product per 3 $\mathrm{'\{'}CO{'\}'}_2$ fixed).
+   is the net product per 3 $\mathrm{CO{}_2$ fixed).
 
-**Net per 3 $\mathrm{'\{'}CO{'\}'}_2$ (one turn of the cycle):** 9 ATP consumed, 6 NADPH consumed, 1 G3P
+**Net per 3 $\mathrm{CO{}_2$ (one turn of the cycle):** 9 ATP consumed, 6 NADPH consumed, 1 G3P
 produced. To produce one glucose requires 6 turns: 18 ATP + 12 NADPH.
 
 ### Cellular Respiration
 
-$$\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 6\mathrm{'\{'}O{'\}'}_2 \to 6\mathrm{'\{'}CO{'\}'}_2 + 6\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} + \sim 30\text{'\{'}--{'\}'}32\,\mathrm{'\{'}ATP{'\}'}$$
+$$\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2 \to 6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \sim 30\text{'\{'}--{'\}'}32\,\mathrm{ATP{}$$
 
 | Stage                     | Location                     | O$_2$ Required? | Net ATP Yield          |
 | ------------------------- | ---------------------------- | --------------- | ---------------------- |
@@ -174,13 +174,13 @@ $$\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 6\math
 | Citric acid cycle         | Mitochondrial matrix         | No              | 2 ATP + 6 NADH + 2 FADH$_2$ |
 | Oxidative phosphorylation | Inner mitochondrial membrane | Yes             | ~26--28 ATP (chemiosmosis) |
 
-**Chemiosmosis:** The proton gradient ($\mathrm{'\{'}H{'\}'}^+$ concentration gradient) across the inner
+**Chemiosmosis:** The proton gradient ($\mathrm{H{}^+$ concentration gradient) across the inner
 mitochondrial membrane drives ATP synthase. Each NADH yields ~2.5 ATP; each FADH$_2$ yields ~1.5 ATP
 (FADH$_2$ drops electrons at complex II, bypassing the first proton pump).
 
 **Fermentation (anaerobic):** Regenerates NAD$^+$ from NADH so glycolysis can continue.
 - **Lactic acid fermentation:** Pyruvate $\to$ lactate (muscle cells, some bacteria).
-- **Alcoholic fermentation:** Pyruvate $\to$ acetaldehyde $\to$ ethanol + $\mathrm{'\{'}CO{'\}'}_2$ (yeast).
+- **Alcoholic fermentation:** Pyruvate $\to$ acetaldehyde $\to$ ethanol + $\mathrm{CO{}_2$ (yeast).
 
 ### Common Pitfalls
 
@@ -531,7 +531,7 @@ Denitrifying bacteria convert $\text{'\{'}NO{'\}'}_3^- \to \text{'\{'}N{'\}'}_2$
 
 1. **(C)** $p = 0.7$, $q = 0.3$. $2pq = 2(0.7)(0.3) = 0.42$.
 2. **(B)** Oxygen is the final electron acceptor at complex IV of the ETC, combining with electrons
-   and protons to form $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$.
+   and protons to form $\mathrm{H{}_2\mathrm{O{}$.
 3. **(A)** Meiosis halves the chromosome number: $20/2 = 10$.
 4. (a) Total alleles = $500 \times 2 = 1000$. $C^R$ count: $(200 \times 2) + 200 = 600$.
    $C^W$ count: $(100 \times 2) + 200 = 400$. $p(C^R) = 600/1000 = 0.6$.

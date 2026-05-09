@@ -23,7 +23,7 @@ The **probability mass function** of $X$ is $p(x) = P(X = x)$, assigning a proba
 possible value. It must satisfy:
 
 1. $p(x) \ge 0$ for all $x$
-2. $\displaystyle\sum_{\mathrm{'\{'}all {'\}'} x} p(x) = 1$
+2. $\displaystyle\sum_{\mathrm{all {} x} p(x) = 1$
 
 ### Cumulative Distribution Function (CDF)
 
@@ -40,14 +40,14 @@ each jump at $x = a$ equals $P(X = a)$.
 The **expected value** (mean) of $X$ is the probability-weighted average of all possible values:
 
 $$
-E(X) = \mu = \sum_{\mathrm{'\{'}all {'\}'} x} x \cdot p(x)
+E(X) = \mu = \sum_{\mathrm{all {} x} x \cdot p(x)
 $$
 
 This represents the long-run average if the experiment is repeated many times. For a function
 $g(X)$:
 
 $$
-E(g(X)) = \sum_{\mathrm{'\{'}all {'\}'} x} g(x) \cdot p(x)
+E(g(X)) = \sum_{\mathrm{all {} x} g(x) \cdot p(x)
 $$
 
 A critical special case is $E(X^2) = \sum x^2 p(x)$.
@@ -55,16 +55,16 @@ A critical special case is $E(X^2) = \sum x^2 p(x)$.
 ### Variance and Standard Deviation
 
 $$
-\mathrm{'\{'}Var{'\}'}(X) = \sigma^2 = E\!\left[(X - \mu)^2\right] = \sum_{\mathrm{'\{'}all {'\}'} x} (x - \mu)^2 \cdot p(x)
+\mathrm{Var{}(X) = \sigma^2 = E\!\left[(X - \mu)^2\right] = \sum_{\mathrm{all {} x} (x - \mu)^2 \cdot p(x)
 $$
 
 The **computational formula** is almost always more convenient:
 
 $$
-\mathrm{'\{'}Var{'\}'}(X) = E(X^2) - [E(X)]^2
+\mathrm{Var{}(X) = E(X^2) - [E(X)]^2
 $$
 
-The **standard deviation** is $\sigma = \sqrt{\mathrm{'\{'}Var{'\}'}(X)}$. It has the same units as $X$ and
+The **standard deviation** is $\sigma = \sqrt{\mathrm{Var{}(X)}$. It has the same units as $X$ and
 measures the typical distance of values from the mean.
 
 ### Properties of Expectation and Variance
@@ -76,7 +76,7 @@ E(a) = a, \quad E(aX) = aE(X), \quad E(X + a) = E(X) + a
 $$
 
 $$
-\mathrm{'\{'}Var{'\}'}(a) = 0, \quad \mathrm{'\{'}Var{'\}'}(aX) = a^2 \mathrm{'\{'}Var{'\}'}(X), \quad \mathrm{'\{'}Var{'\}'}(X + a) = \mathrm{'\{'}Var{'\}'}(X)
+\mathrm{Var{}(a) = 0, \quad \mathrm{Var{}(aX) = a^2 \mathrm{Var{}(X), \quad \mathrm{Var{}(X + a) = \mathrm{Var{}(X)
 $$
 
 Adding a constant shifts the distribution but does not change its spread. Multiplying by $a$ scales
@@ -99,7 +99,7 @@ E(X^2) = 0(0.1) + 1(0.4) + 4(0.3) + 9(0.2) = 3.4
 $$
 
 $$
-\mathrm{'\{'}Var{'\}'}(X) = 3.4 - 1.6^2 = 3.4 - 2.56 = 0.84, \quad \sigma = \sqrt{0.84} \approx 0.917
+\mathrm{Var{}(X) = 3.4 - 1.6^2 = 3.4 - 2.56 = 0.84, \quad \sigma = \sqrt{0.84} \approx 0.917
 $$
 
 :::
@@ -127,7 +127,7 @@ $$E(X) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.25) + 5(0.15) = 0.1 + 0.4 + 0.9 + 1.0 + 
 
 $$E(X^2) = 1(0.1) + 4(0.2) + 9(0.3) + 16(0.25) + 25(0.15) = 0.1 + 0.8 + 2.7 + 4.0 + 3.75 = 11.35$$
 
-$$\mathrm{'\{'}Var{'\}'}(X) = 11.35 - 3.15^2 = 11.35 - 9.9225 = 1.4275$$
+$$\mathrm{Var{}(X) = 11.35 - 3.15^2 = 11.35 - 9.9225 = 1.4275$$
 
 $$\sigma = \sqrt{1.4275} \approx 1.195$$
 
@@ -161,18 +161,18 @@ trials.
 ### Mean and Variance
 
 $$
-E(X) = np, \quad \mathrm{'\{'}Var{'\}'}(X) = np(1-p), \quad \sigma = \sqrt{np(1-p)}
+E(X) = np, \quad \mathrm{Var{}(X) = np(1-p), \quad \sigma = \sqrt{np(1-p)}
 $$
 
 <details>
-<summary>Derivation of $E(X) = np$ and $\mathrm{'\{'}Var{'\}'}(X) = np(1-p)$</summary>
+<summary>Derivation of $E(X) = np$ and $\mathrm{Var{}(X) = np(1-p)$</summary>
 
 Let $X_1, \ldots, X_n$ be indicator variables: $X_i = 1$ if trial $i$ succeeds, $X_i = 0$ otherwise.
 Then $X = X_1 + \cdots + X_n$.
 
 $E(X_i) = 1 \cdot p + 0 \cdot (1-p) = p$, so $E(X) = np$ by linearity of expectation.
 
-$\mathrm{'\{'}Var{'\}'}(X_i) = E(X_i^2) - [E(X_i)]^2 = p - p^2 = p(1-p)$, so $\mathrm{'\{'}Var{'\}'}(X) = np(1-p)$ by
+$\mathrm{Var{}(X_i) = E(X_i^2) - [E(X_i)]^2 = p - p^2 = p(1-p)$, so $\mathrm{Var{}(X) = np(1-p)$ by
 independence.
 
 </details>
@@ -272,7 +272,7 @@ There is approximately a 4.85% chance that more than 12 bulbs are defective.
 
 ### Conditions
 
-$X \sim \mathrm{'\{'}Po{'\}'}(\lambda)$ models the number of events in a fixed interval of time or space when:
+$X \sim \mathrm{Po{}(\lambda)$ models the number of events in a fixed interval of time or space when:
 
 1. **Events occur singly**: no simultaneous events.
 2. **Independence**: events in non-overlapping intervals are independent.
@@ -290,14 +290,14 @@ where $\lambda \gt 0$ is the mean number of events, and $e \approx 2.71828$.
 ### Mean and Variance
 
 $$
-E(X) = \lambda, \quad \mathrm{'\{'}Var{'\}'}(X) = \lambda
+E(X) = \lambda, \quad \mathrm{Var{}(X) = \lambda
 $$
 
-That $E(X) = \mathrm{'\{'}Var{'\}'}(X)$ is a distinguishing feature. If observed data has mean approximately
+That $E(X) = \mathrm{Var{}(X)$ is a distinguishing feature. If observed data has mean approximately
 equal to variance, a Poisson model may be appropriate.
 
 <details>
-<summary>Derivation of $E(X) = \lambda$ and $\mathrm{'\{'}Var{'\}'}(X) = \lambda$</summary>
+<summary>Derivation of $E(X) = \lambda$ and $\mathrm{Var{}(X) = \lambda$</summary>
 
 $E(X) = \displaystyle\sum_{x=0}^{\infty} x \cdot \frac{e^{-\lambda}\lambda^x}{x!} = e^{-\lambda} \sum_{x=1}^{\infty} \frac{\lambda^x}{(x-1)!}$
 
@@ -305,36 +305,36 @@ Substituting $k = x-1$:
 $= e^{-\lambda} \sum_{k=0}^{\infty} \frac{\lambda^{k+1}}{k!} = \lambda e^{-\lambda} \cdot e^{\lambda} = \lambda$.
 
 For variance, use $x^2 = x(x-1) + x$: $E(X^2) = E[X(X-1)] + E(X) = \lambda^2 + \lambda$, so
-$\mathrm{'\{'}Var{'\}'}(X) = \lambda^2 + \lambda - \lambda^2 = \lambda$.
+$\mathrm{Var{}(X) = \lambda^2 + \lambda - \lambda^2 = \lambda$.
 
 </details>
 
 ### Poisson as a Limit of the Binomial
 
 If $n \to \infty$, $p \to 0$, while $np = \lambda$ stays constant, then
-$B(n, p) \to \mathrm{'\{'}Po{'\}'}(\lambda)$. The Poisson approximates the binomial when $n$ is large, $p$ is
+$B(n, p) \to \mathrm{Po{}(\lambda)$. The Poisson approximates the binomial when $n$ is large, $p$ is
 small, and $np$ is moderate (typically $n \ge 50$, $p \le 0.1$).
 
 ### Additivity
 
-If $X \sim \mathrm{'\{'}Po{'\}'}(\lambda_1)$ and $Y \sim \mathrm{'\{'}Po{'\}'}(\lambda_2)$ are independent, then:
+If $X \sim \mathrm{Po{}(\lambda_1)$ and $Y \sim \mathrm{Po{}(\lambda_2)$ are independent, then:
 
 $$
-X + Y \sim \mathrm{'\{'}Po{'\}'}(\lambda_1 + \lambda_2)
+X + Y \sim \mathrm{Po{}(\lambda_1 + \lambda_2)
 $$
 
 If the rate is $\lambda$ per unit interval, then over $t$ intervals the count is
-$\mathrm{'\{'}Po{'\}'}(t\lambda)$.
+$\mathrm{Po{}(t\lambda)$.
 
 :::info[Example]
 
-A helpdesk receives $\lambda = 3.5$ calls per hour. $X \sim \mathrm{'\{'}Po{'\}'}(3.5)$.
+A helpdesk receives $\lambda = 3.5$ calls per hour. $X \sim \mathrm{Po{}(3.5)$.
 
 $P(X = 5) = \dfrac{e^{-3.5} \cdot 3.5^5}{5!} \approx 0.1318$
 
 $P(X \le 2) = e^{-3.5}\!\left(1 + 3.5 + \dfrac{12.25}{2}\right) = 10.625 \, e^{-3.5} \approx 0.3208$
 
-Over 2 hours: $Y \sim \mathrm{'\{'}Po{'\}'}(7)$, $P(Y \gt 7) = 1 - P(Y \le 7) \approx 0.4013$.
+Over 2 hours: $Y \sim \mathrm{Po{}(7)$, $P(Y \gt 7) = 1 - P(Y \le 7) \approx 0.4013$.
 
 :::
 
@@ -345,7 +345,7 @@ the probability of at most 2 errors.
 
 Exact: $X \sim B(2000, 1/500)$, with $\lambda = 2000/500 = 4$.
 
-Approximate: $X \approx \mathrm{'\{'}Po{'\}'}(4)$.
+Approximate: $X \approx \mathrm{Po{}(4)$.
 
 $P(X \le 2) = e^{-4}\!\left(1 + 4 + \dfrac{16}{2}\right) = 13e^{-4} \approx 0.2381$
 
@@ -375,7 +375,7 @@ $$= 26.368 \times e^{-4.2} \approx 0.3954$$
 
 **(c) Over a full hour (six intervals), find the probability of more than 30 calls.**
 
-Over one hour: $Y \sim \mathrm{'\{'}Po{'\}'}(6 \times 4.2) = \mathrm{'\{'}Po{'\}'}(25.2)$.
+Over one hour: $Y \sim \mathrm{Po{}(6 \times 4.2) = \mathrm{Po{}(25.2)$.
 
 Using the normal approximation (since $\lambda$ is large):
 
@@ -400,7 +400,7 @@ $$
 Key properties: bell-shaped, symmetric about $x = \mu$, asymptotic to the $x$-axis, total area = 1,
 inflection points at $x = \mu \pm \sigma$. The mean, median, and mode all equal $\mu$.
 
-$E(X) = \mu$ and $\mathrm{'\{'}Var{'\}'}(X) = \sigma^2$.
+$E(X) = \mu$ and $\mathrm{Var{}(X) = \sigma^2$.
 
 For any normal variable, $P(X = a) = 0$ for any specific value $a$ (continuous distribution).
 
@@ -493,8 +493,8 @@ Exact binomial: $P(X \le 30) \approx 0.3642$. The approximation is very close.
 <details>
 <summary>Worked Example: Normal Distribution with Unknown Parameters</summary>
 
-Heights of a population are normally distributed. The 90th percentile is $182\,\mathrm{'\{'}cm{'\}'}$ and the
-30th percentile is $164\,\mathrm{'\{'}cm{'\}'}$. Find the mean and standard deviation.
+Heights of a population are normally distributed. The 90th percentile is $182\,\mathrm{cm{}$ and the
+30th percentile is $164\,\mathrm{cm{}$. Find the mean and standard deviation.
 
 $$P(X \le 182) = 0.90 \implies \frac{182 - \mu}{\sigma} = 1.282$$
 
@@ -502,11 +502,11 @@ $$P(X \le 164) = 0.30 \implies \frac{164 - \mu}{\sigma} = -0.524$$
 
 Subtracting the second equation from the first:
 
-$$\frac{18}{\sigma} = 1.806 \implies \sigma = \frac{18}{1.806} = 9.97\,\mathrm{'\{'}cm{'\}'}$$
+$$\frac{18}{\sigma} = 1.806 \implies \sigma = \frac{18}{1.806} = 9.97\,\mathrm{cm{}$$
 
-From the first equation: $\mu = 182 - 1.282(9.97) = 182 - 12.78 = 169.2\,\mathrm{'\{'}cm{'\}'}$.
+From the first equation: $\mu = 182 - 1.282(9.97) = 182 - 12.78 = 169.2\,\mathrm{cm{}$.
 
-So $\mu \approx 169\,\mathrm{'\{'}cm{'\}'}$ and $\sigma \approx 10\,\mathrm{'\{'}cm{'\}'}$.
+So $\mu \approx 169\,\mathrm{cm{}$ and $\sigma \approx 10\,\mathrm{cm{}$.
 
 </details>
 
@@ -528,7 +528,7 @@ equally likely.
 ### Mean and Variance
 
 $$
-E(X) = \frac{a + b}{2}, \quad \mathrm{'\{'}Var{'\}'}(X) = \frac{(b - a)^2}{12}, \quad \sigma = \frac{b - a}{2\sqrt{3}}
+E(X) = \frac{a + b}{2}, \quad \mathrm{Var{}(X) = \frac{(b - a)^2}{12}, \quad \sigma = \frac{b - a}{2\sqrt{3}}
 $$
 
 <details>
@@ -538,7 +538,7 @@ $E(X) = \displaystyle\int_a^b \frac{x}{b-a}\,dx = \frac{b^2-a^2}{2(b-a)} = \frac
 
 $E(X^2) = \displaystyle\int_a^b \frac{x^2}{b-a}\,dx = \frac{b^3-a^3}{3(b-a)} = \frac{a^2+ab+b^2}{3}$
 
-$\mathrm{'\{'}Var{'\}'}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4(a^2+ab+b^2) - 3(a^2+2ab+b^2)}{12} = \dfrac{(b-a)^2}{12}$
+$\mathrm{Var{}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4(a^2+ab+b^2) - 3(a^2+2ab+b^2)}{12} = \dfrac{(b-a)^2}{12}$
 
 </details>
 
@@ -559,7 +559,7 @@ $P(X \gt 10) = 5/15 = 1/3$
 $E(X) = 7.5$ minutes, $\sigma = \dfrac{15}{2\sqrt{3}} = \dfrac{5\sqrt{3}}{2} \approx 4.33$ minutes.
 
 Given 5 minutes already waited, the remaining wait is $U(0, 10)$:
-$P(\mathrm{'\{'}wait{'\}'} \ge 8) = 2/10 = 1/5$.
+$P(\mathrm{wait{} \ge 8) = 2/10 = 1/5$.
 
 :::
 
@@ -569,7 +569,7 @@ $P(\mathrm{'\{'}wait{'\}'} \ge 8) = 2/10 = 1/5$.
 
 ### Definition
 
-$X \sim \mathrm{'\{'}Geo{'\}'}(p)$ models the number of trials needed for the first success in independent
+$X \sim \mathrm{Geo{}(p)$ models the number of trials needed for the first success in independent
 Bernoulli trials with success probability $p$.
 
 ### Probability Mass Function
@@ -584,11 +584,11 @@ exactly $x-1$ consecutive failures followed by one success.
 ### Mean and Variance
 
 $$
-E(X) = \frac{1}{p}, \quad \mathrm{'\{'}Var{'\}'}(X) = \frac{1-p}{p^2}
+E(X) = \frac{1}{p}, \quad \mathrm{Var{}(X) = \frac{1-p}{p^2}
 $$
 
 <details>
-<summary>Derivation of $E(X) = 1/p$ and $\mathrm{'\{'}Var{'\}'}(X) = (1-p)/p^2$</summary>
+<summary>Derivation of $E(X) = 1/p$ and $\mathrm{Var{}(X) = (1-p)/p^2$</summary>
 
 $E(X) = p\displaystyle\sum_{x=1}^{\infty} x(1-p)^{x-1}$
 
@@ -599,7 +599,7 @@ $E(X) = p \cdot \dfrac{1}{p^2} = \dfrac{1}{p}$
 
 For variance: $E(X^2) = E[X(X-1)] + E(X) = \dfrac{2(1-p)}{p^2} + \dfrac{1}{p} = \dfrac{2-p}{p^2}$,
 
-so $\mathrm{'\{'}Var{'\}'}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$.
+so $\mathrm{Var{}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$.
 
 </details>
 
@@ -613,7 +613,7 @@ The first $n$ trials must all be failures. Similarly $P(X \ge n) = (1-p)^{n-1}$.
 
 :::info[Example]
 
-A basketball player has free-throw success rate 72%. $X \sim \mathrm{'\{'}Geo{'\}'}(0.72)$.
+A basketball player has free-throw success rate 72%. $X \sim \mathrm{Geo{}(0.72)$.
 
 $P(X = 3) = (0.28)^2(0.72) = 0.0784 \times 0.72 \approx 0.05645$
 
@@ -628,7 +628,7 @@ $E(X) = 1/0.72 \approx 1.389$ attempts.
 
 A die is rolled repeatedly until a 6 appears.
 
-$X \sim \mathrm{'\{'}Geo{'\}'}(1/6)$.
+$X \sim \mathrm{Geo{}(1/6)$.
 
 **(a) Find the probability that the first 6 appears on the 4th roll.**
 
@@ -652,8 +652,8 @@ On average, 6 rolls are needed to get the first 6.
 
 ### Definition
 
-$X \sim \mathrm{'\{'}NB{'\}'}(r, p)$ models the number of trials needed to obtain exactly $r$ successes. The
-geometric distribution is the special case $\mathrm{'\{'}NB{'\}'}(1, p)$.
+$X \sim \mathrm{NB{}(r, p)$ models the number of trials needed to obtain exactly $r$ successes. The
+geometric distribution is the special case $\mathrm{NB{}(1, p)$.
 
 ### Probability Mass Function
 
@@ -667,19 +667,19 @@ the $r$-th success.
 ### Mean and Variance
 
 $$
-E(X) = \frac{r}{p}, \quad \mathrm{'\{'}Var{'\}'}(X) = \frac{r(1-p)}{p^2}
+E(X) = \frac{r}{p}, \quad \mathrm{Var{}(X) = \frac{r(1-p)}{p^2}
 $$
 
 Note the parallel with geometric: multiplying $r$ by a factor scales both $E(X)$ and
-$\mathrm{'\{'}Var{'\}'}(X)$ by the same factor.
+$\mathrm{Var{}(X)$ by the same factor.
 
 :::info[Example]
 
-A coin has $P(\mathrm{'\{'}heads{'\}'}) = 0.4$. $X \sim \mathrm{'\{'}NB{'\}'}(3, 0.4)$ counts flips for 3 heads.
+A coin has $P(\mathrm{heads{}) = 0.4$. $X \sim \mathrm{NB{}(3, 0.4)$ counts flips for 3 heads.
 
 $P(X = 7) = \dbinom{6}{2}(0.4)^3(0.6)^4 = 15 \times 0.064 \times 0.1296 \approx 0.1244$
 
-$E(X) = 3/0.4 = 7.5$, $\mathrm{'\{'}Var{'\}'}(X) = 3(0.6)/0.16 = 11.25$,
+$E(X) = 3/0.4 = 7.5$, $\mathrm{Var{}(X) = 3(0.6)/0.16 = 11.25$,
 $\sigma = \sqrt{11.25} \approx 3.354$.
 
 :::
@@ -706,7 +706,7 @@ The sum $S_n = X_1 + \cdots + X_n$ is approximately $S_n \sim N(n\mu, n\sigma^2)
 ### Standard Error
 
 $$
-\mathrm{'\{'}SE{'\}'}(\bar{X}) = \frac{\sigma}{\sqrt{n}}
+\mathrm{SE{}(\bar{X}) = \frac{\sigma}{\sqrt{n}}
 $$
 
 As $n$ increases, the standard error decreases: larger samples give more precise estimates of the
@@ -722,7 +722,7 @@ $\bar{X} \sim N(150, 400/36)$. $P\!\left(Z \gt \dfrac{5}{20/6}\right) = P(Z \gt 
 
 :::info[Example: Sum of uniform variables]
 
-$X \sim U(2, 10)$. Sample of 50 observations. Find $P(\mathrm{'\{'}sum{'\}'} \gt 310)$.
+$X \sim U(2, 10)$. Sample of 50 observations. Find $P(\mathrm{sum{} \gt 310)$.
 
 $\mu = 6$, $\sigma^2 = 64/12 = 16/3$. Sum has mean $300$ and variance $50(16/3) = 800/3$.
 
@@ -794,11 +794,11 @@ This is the **linearity of expectation** and holds always, even without independ
 For **independent** $X$ and $Y$:
 
 $$
-\mathrm{'\{'}Var{'\}'}(aX + bY) = a^2\mathrm{'\{'}Var{'\}'}(X) + b^2\mathrm{'\{'}Var{'\}'}(Y)
+\mathrm{Var{}(aX + bY) = a^2\mathrm{Var{}(X) + b^2\mathrm{Var{}(Y)
 $$
 
 $$
-\mathrm{'\{'}Var{'\}'}(X + Y) = \mathrm{'\{'}Var{'\}'}(X) + \mathrm{'\{'}Var{'\}'}(Y), \quad \mathrm{'\{'}Var{'\}'}(X - Y) = \mathrm{'\{'}Var{'\}'}(X) + \mathrm{'\{'}Var{'\}'}(Y)
+\mathrm{Var{}(X + Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y), \quad \mathrm{Var{}(X - Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y)
 $$
 
 Note the plus sign even for differences: subtracting a variable still adds variability.
@@ -806,15 +806,15 @@ Note the plus sign even for differences: subtracting a variable still adds varia
 The general formula (not necessarily independent):
 
 $$
-\mathrm{'\{'}Var{'\}'}(X + Y) = \mathrm{'\{'}Var{'\}'}(X) + \mathrm{'\{'}Var{'\}'}(Y) + 2\mathrm{'\{'}Cov{'\}'}(X, Y)
+\mathrm{Var{}(X + Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y) + 2\mathrm{Cov{}(X, Y)
 $$
 
-where $\mathrm{'\{'}Cov{'\}'}(X, Y) = E(XY) - E(X)E(Y) = 0$ when $X$ and $Y$ are independent.
+where $\mathrm{Cov{}(X, Y) = E(XY) - E(X)E(Y) = 0$ when $X$ and $Y$ are independent.
 
 :::warning[Important]
 
 Linearity of expectation always holds. The simple variance formula
-$\mathrm{'\{'}Var{'\}'}(X+Y) = \mathrm{'\{'}Var{'\}'}(X) + \mathrm{'\{'}Var{'\}'}(Y)$ requires independence.
+$\mathrm{Var{}(X+Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y)$ requires independence.
 
 :::
 
@@ -823,11 +823,11 @@ $\mathrm{'\{'}Var{'\}'}(X+Y) = \mathrm{'\{'}Var{'\}'}(X) + \mathrm{'\{'}Var{'\}'
 If $X_1, \ldots, X_n$ are iid with mean $\mu$ and variance $\sigma^2$:
 
 $$
-E(X_1 + \cdots + X_n) = n\mu, \quad \mathrm{'\{'}Var{'\}'}(X_1 + \cdots + X_n) = n\sigma^2
+E(X_1 + \cdots + X_n) = n\mu, \quad \mathrm{Var{}(X_1 + \cdots + X_n) = n\sigma^2
 $$
 
 $$
-E(\bar{X}) = \mu, \quad \mathrm{'\{'}Var{'\}'}(\bar{X}) = \frac{\sigma^2}{n}
+E(\bar{X}) = \mu, \quad \mathrm{Var{}(\bar{X}) = \frac{\sigma^2}{n}
 $$
 
 ### Combining Normal Variables
@@ -846,9 +846,9 @@ $X \sim B(10, 0.3)$, $Y \sim B(15, 0.4)$, independent.
 
 $E(X + Y) = 3 + 6 = 9$
 
-$\mathrm{'\{'}Var{'\}'}(X + Y) = 10(0.3)(0.7) + 15(0.4)(0.6) = 2.1 + 3.6 = 5.7$
+$\mathrm{Var{}(X + Y) = 10(0.3)(0.7) + 15(0.4)(0.6) = 2.1 + 3.6 = 5.7$
 
-$\mathrm{'\{'}Var{'\}'}(2X - 3Y) = 4(2.1) + 9(3.6) = 8.4 + 32.4 = 40.8$
+$\mathrm{Var{}(2X - 3Y) = 4(2.1) + 9(3.6) = 8.4 + 32.4 = 40.8$
 
 :::
 
@@ -868,15 +868,15 @@ $P(X - Y \gt 0) = P\!\left(Z \gt \dfrac{0.2}{\sqrt{0.13}}\right) = P(Z \gt 0.555
 <details>
 <summary>Worked Example: Combining Random Variables</summary>
 
-$X \sim B(12, 0.3)$ and $Y \sim \mathrm{'\{'}Po{'\}'}(5)$ are independent. Find:
+$X \sim B(12, 0.3)$ and $Y \sim \mathrm{Po{}(5)$ are independent. Find:
 
 **(a)** $E(3X - 2Y)$
 
 $$E(3X - 2Y) = 3E(X) - 2E(Y) = 3(12 \times 0.3) - 2(5) = 3(3.6) - 10 = 10.8 - 10 = 0.8$$
 
-**(b)** $\mathrm{'\{'}Var{'\}'}(3X - 2Y)$
+**(b)** $\mathrm{Var{}(3X - 2Y)$
 
-$$\mathrm{'\{'}Var{'\}'}(3X - 2Y) = 9\mathrm{'\{'}Var{'\}'}(X) + 4\mathrm{'\{'}Var{'\}'}(Y) = 9(12 \times 0.3 \times 0.7) + 4(5)$$
+$$\mathrm{Var{}(3X - 2Y) = 9\mathrm{Var{}(X) + 4\mathrm{Var{}(Y) = 9(12 \times 0.3 \times 0.7) + 4(5)$$
 
 $$= 9(2.52) + 20 = 22.68 + 20 = 42.68$$
 
@@ -897,7 +897,7 @@ $P(5 \le X \le 8) = P(X \le 8) - P(X \le 4) \approx 0.7625 - 0.1260 = 0.6365$
 
 ### Question 2 (Paper 1)
 
-$X \sim \mathrm{'\{'}Po{'\}'}(4.2)$. Find $P(X \ge 3)$.
+$X \sim \mathrm{Po{}(4.2)$. Find $P(X \ge 3)$.
 
 $P(X \ge 3) = 1 - P(X \le 2) = 1 - e^{-4.2}(1 + 4.2 + 8.82) \approx 1 - 0.2103 = 0.7897$
 
@@ -913,15 +913,15 @@ Rainfall exceeded on only 5% of days: $x = 2.8 + 1.645(1.2) = 4.774$ mm.
 
 ### Question 4 (Paper 2, AHL)
 
-$X \sim U(0, a)$ has $P(X \gt 3) = 0.4$. Find $a$ and $\mathrm{'\{'}Var{'\}'}(X)$.
+$X \sim U(0, a)$ has $P(X \gt 3) = 0.4$. Find $a$ and $\mathrm{Var{}(X)$.
 
 $\dfrac{a-3}{a} = 0.4 \implies 0.6a = 3 \implies a = 5$
 
-$\mathrm{'\{'}Var{'\}'}(X) = 25/12 \approx 2.083$
+$\mathrm{Var{}(X) = 25/12 \approx 2.083$
 
 ### Question 5 (Paper 2, AHL)
 
-$X \sim \mathrm{'\{'}Geo{'\}'}(0.15)$. Find the smallest $n$ with $P(X \le n) \ge 0.8$.
+$X \sim \mathrm{Geo{}(0.15)$. Find the smallest $n$ with $P(X \le n) \ge 0.8$.
 
 $P(X \le n) = 1 - 0.85^n \ge 0.8 \implies 0.85^n \le 0.2$
 
@@ -937,7 +937,7 @@ The claim $\mu = 100$ mm is not supported at 90% confidence, since 100 falls bel
 
 ### Question 7 (Paper 2, AHL)
 
-$X \sim \mathrm{'\{'}NB{'\}'}(4, 0.25)$. Find $P(X = 10)$ and $E(X)$.
+$X \sim \mathrm{NB{}(4, 0.25)$. Find $P(X = 10)$ and $E(X)$.
 
 $P(X = 10) = \dbinom{9}{3}(0.25)^4(0.75)^6 = 84 \times 0.003906 \times 0.1780 \approx 0.0584$
 
@@ -958,16 +958,16 @@ $P(D \gt 0) = P\!\left(Z \gt \dfrac{0 - 14}{\sqrt{61}}\right) = P(Z \gt -1.793) 
 
 ### Discrete Distributions
 
-| Distribution        | Notation               | PMF                                 | $E(X)$         | $\mathrm{'\{'}Var{'\}'}(X)$     | Support           |
+| Distribution        | Notation               | PMF                                 | $E(X)$         | $\mathrm{Var{}(X)$     | Support           |
 | ------------------- | ---------------------- | ----------------------------------- | -------------- | --------------------- | ----------------- |
 | Binomial            | $B(n, p)$              | $\dbinom{n}{x}p^x(1-p)^{n-x}$       | $np$           | $np(1-p)$             | $0, 1, \ldots, n$ |
-| Poisson             | $\mathrm{'\{'}Po{'\}'}(\lambda)$ | $\dfrac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$      | $\lambda$             | $0, 1, 2, \ldots$ |
-| Geometric (AHL)     | $\mathrm{'\{'}Geo{'\}'}(p)$      | $(1-p)^{x-1}p$                      | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$    | $1, 2, 3, \ldots$ |
-| Neg. Binomial (AHL) | $\mathrm{'\{'}NB{'\}'}(r, p)$    | $\dbinom{x-1}{r-1}p^r(1-p)^{x-r}$   | $\dfrac{r}{p}$ | $\dfrac{r(1-p)}{p^2}$ | $r, r+1, \ldots$  |
+| Poisson             | $\mathrm{Po{}(\lambda)$ | $\dfrac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$      | $\lambda$             | $0, 1, 2, \ldots$ |
+| Geometric (AHL)     | $\mathrm{Geo{}(p)$      | $(1-p)^{x-1}p$                      | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$    | $1, 2, 3, \ldots$ |
+| Neg. Binomial (AHL) | $\mathrm{NB{}(r, p)$    | $\dbinom{x-1}{r-1}p^r(1-p)^{x-r}$   | $\dfrac{r}{p}$ | $\dfrac{r(1-p)}{p^2}$ | $r, r+1, \ldots$  |
 
 ### Continuous Distributions
 
-| Distribution  | Notation           | PDF                                                            | $E(X)$           | $\mathrm{'\{'}Var{'\}'}(X)$     | Support             |
+| Distribution  | Notation           | PDF                                                            | $E(X)$           | $\mathrm{Var{}(X)$     | Support             |
 | ------------- | ------------------ | -------------------------------------------------------------- | ---------------- | --------------------- | ------------------- |
 | Normal        | $N(\mu, \sigma^2)$ | $\dfrac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | $\mu$            | $\sigma^2$            | $(-\infty, \infty)$ |
 | Uniform (AHL) | $U(a, b)$          | $\dfrac{1}{b-a}$                                               | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ | $[a, b]$            |
@@ -976,14 +976,14 @@ $P(D \gt 0) = P\!\left(Z \gt \dfrac{0 - 14}{\sqrt{61}}\right) = P(Z \gt -1.793) 
 
 | Relationship                                                      | Condition                                              |
 | ----------------------------------------------------------------- | ------------------------------------------------------ |
-| $B(n, p) \approx \mathrm{'\{'}Po{'\}'}(np)$                                 | $n$ large, $p$ small, $np$ moderate                    |
+| $B(n, p) \approx \mathrm{Po{}(np)$                                 | $n$ large, $p$ small, $np$ moderate                    |
 | $B(n, p) \approx N(np, np(1-p))$                                  | $np \ge 5$, $n(1-p) \ge 5$, with continuity correction |
-| $\mathrm{'\{'}Geo{'\}'}(p) = \mathrm{'\{'}NB{'\}'}(1, p)$                             | Special case                                           |
-| $X + Y \sim \mathrm{'\{'}Po{'\}'}(\lambda_1 + \lambda_2)$                   | Independent Poisson variables                          |
+| $\mathrm{Geo{}(p) = \mathrm{NB{}(1, p)$                             | Special case                                           |
+| $X + Y \sim \mathrm{Po{}(\lambda_1 + \lambda_2)$                   | Independent Poisson variables                          |
 | $aX + bY \sim N(a\mu_X + b\mu_Y, a^2\sigma_X^2 + b^2\sigma_Y^2)$  | Independent normal variables                           |
 | $\bar{X}_n \approx N(\mu, \sigma^2/n)$                            | CLT, large $n$                                         |
 | $E(aX + bY) = aE(X) + bE(Y)$                                      | Always                                                 |
-| $\mathrm{'\{'}Var{'\}'}(aX + bY) = a^2\mathrm{'\{'}Var{'\}'}(X) + b^2\mathrm{'\{'}Var{'\}'}(Y)$ | $X$, $Y$ independent                                   |
+| $\mathrm{Var{}(aX + bY) = a^2\mathrm{Var{}(X) + b^2\mathrm{Var{}(Y)$ | $X$, $Y$ independent                                   |
 
 ---
 
@@ -995,7 +995,7 @@ $P(D \gt 0) = P\!\left(Z \gt \dfrac{0 - 14}{\sqrt{61}}\right) = P(Z \gt -1.793) 
 2. **Forgetting conditions**: Before applying a distribution, verify all conditions. For binomial:
    fixed $n$, independence, two outcomes, constant $p$.
 
-3. **Variance of differences**: $\mathrm{'\{'}Var{'\}'}(X - Y) = \mathrm{'\{'}Var{'\}'}(X) + \mathrm{'\{'}Var{'\}'}(Y)$ (plus, not
+3. **Variance of differences**: $\mathrm{Var{}(X - Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y)$ (plus, not
    minus) for independent variables.
 
 4. **Continuity correction**: When approximating a discrete distribution with a continuous one,
@@ -1005,15 +1005,15 @@ $P(D \gt 0) = P\!\left(Z \gt \dfrac{0 - 14}{\sqrt{61}}\right) = P(Z \gt -1.793) 
 5. **Standardisation direction**: $\Phi(z)$ goes from $z$-score to probability; $\Phi^{-1}(p)$ goes
    from probability to $z$-score.
 
-6. **Geometric support**: $X \sim \mathrm{'\{'}Geo{'\}'}(p)$ counts trials starting from 1 (IB convention).
+6. **Geometric support**: $X \sim \mathrm{Geo{}(p)$ counts trials starting from 1 (IB convention).
 
 7. **Poisson additivity**: Requires independence. If events are correlated, the sum is not Poisson.
 
 8. **Confidence interval interpretation**: A 95% CI does not mean there is a 95% probability that
    $\mu$ lies in the interval. It means 95% of similarly constructed intervals contain $\mu$.
 
-9. **Squaring constants in variance**: $\mathrm{'\{'}Var{'\}'}(3X) = 9\mathrm{'\{'}Var{'\}'}(X)$, not
-   $3\mathrm{'\{'}Var{'\}'}(X)$.
+9. **Squaring constants in variance**: $\mathrm{Var{}(3X) = 9\mathrm{Var{}(X)$, not
+   $3\mathrm{Var{}(X)$.
 
 :::tip[Exam Strategy]
 
@@ -1031,7 +1031,7 @@ interpret in context.
 ### Problem 1
 
 A discrete random variable $X$ has PMF $P(X = x) = \frac{x + 1}{15}$ for $x = 0, 1, 2, 3, 4$. Find
-$E(X)$, $\mathrm{'\{'}Var{'\}'}(X)$, and $P(X \ge 2)$.
+$E(X)$, $\mathrm{Var{}(X)$, and $P(X \ge 2)$.
 
 <details>
 <summary>Solution</summary>
@@ -1044,7 +1044,7 @@ $$= \frac{0 + 2 + 6 + 12 + 20}{15} = \frac{40}{15} = \frac{8}{3} \approx 2.667$$
 
 $$E(X^2) = 0 + 1\!\left(\frac{2}{15}\right) + 4\!\left(\frac{3}{15}\right) + 9\!\left(\frac{4}{15}\right) + 16\!\left(\frac{5}{15}\right) = \frac{0 + 2 + 12 + 36 + 80}{15} = \frac{130}{15} = \frac{26}{3}$$
 
-$$\mathrm{'\{'}Var{'\}'}(X) = \frac{26}{3} - \left(\frac{8}{3}\right)^2 = \frac{26}{3} - \frac{64}{9} = \frac{78 - 64}{9} = \frac{14}{9} \approx 1.556$$
+$$\mathrm{Var{}(X) = \frac{26}{3} - \left(\frac{8}{3}\right)^2 = \frac{26}{3} - \frac{64}{9} = \frac{78 - 64}{9} = \frac{14}{9} \approx 1.556$$
 
 $$P(X \ge 2) = \frac{3}{15} + \frac{4}{15} + \frac{5}{15} = \frac{12}{15} = \frac{4}{5} = 0.8$$
 
@@ -1071,7 +1071,7 @@ $$P(X \ge 15) = 1 - P(X \le 14) \approx 1 - 0.9752 = 0.0248$$
 
 ### Problem 3
 
-A bookshop sells an average of 3.2 rare books per week. $X \sim \mathrm{'\{'}Po{'\}'}(3.2)$ is the number sold
+A bookshop sells an average of 3.2 rare books per week. $X \sim \mathrm{Po{}(3.2)$ is the number sold
 in a week. Find $P(X = 4)$, $P(X = 0)$, and $P(X \gt 5)$.
 
 <details>
@@ -1129,7 +1129,7 @@ $X \sim U(0, 12)$.
 **(c)** Given 3 minutes already waited, the remaining time is $U(0, 9)$ (memoryless property of the
 uniform distribution):
 
-$P(\mathrm{'\{'}remaining{'\}'} \gt 5) = 4/9 \approx 0.4444$
+$P(\mathrm{remaining{} \gt 5) = 4/9 \approx 0.4444$
 
 Alternatively: $P(X \gt 8 \mid X \gt 3) = P(X \gt 8)/P(X \gt 3) = (4/12)/(9/12) = 4/9$.
 
@@ -1139,7 +1139,7 @@ Alternatively: $P(X \gt 8 \mid X \gt 3) = P(X \gt 8)/P(X \gt 3) = (4/12)/(9/12) 
 
 ### Problem 6
 
-$X \sim \mathrm{'\{'}Geo{'\}'}(0.25)$. Find the smallest $n$ such that $P(X \le n) \ge 0.95$.
+$X \sim \mathrm{Geo{}(0.25)$. Find the smallest $n$ such that $P(X \le n) \ge 0.95$.
 
 <details>
 <summary>Solution</summary>
@@ -1160,7 +1160,7 @@ So $n = 11$ trials are needed.
 
 ### Problem 7
 
-$X \sim \mathrm{'\{'}NB{'\}'}(3, 0.2)$. Find $P(X = 8)$ and $\mathrm{'\{'}Var{'\}'}(X)$.
+$X \sim \mathrm{NB{}(3, 0.2)$. Find $P(X = 8)$ and $\mathrm{Var{}(X)$.
 
 <details>
 <summary>Solution</summary>
@@ -1169,7 +1169,7 @@ $$P(X = 8) = \binom{7}{2}(0.2)^3(0.8)^5 = 21 \times 0.008 \times 0.32768 = 0.055
 
 $$E(X) = \frac{3}{0.2} = 15$$
 
-$$\mathrm{'\{'}Var{'\}'}(X) = \frac{3(0.8)}{0.04} = \frac{2.4}{0.04} = 60$$
+$$\mathrm{Var{}(X) = \frac{3(0.8)}{0.04} = \frac{2.4}{0.04} = 60$$
 
 $$\sigma = \sqrt{60} \approx 7.75$$
 
@@ -1179,9 +1179,9 @@ $$\sigma = \sqrt{60} \approx 7.75$$
 
 ### Problem 8
 
-The masses of packets of sugar are normally distributed with mean $500\,\mathrm{'\{'}g{'\}'}$ and standard
-deviation $5\,\mathrm{'\{'}g{'\}'}$. A sample of 36 packets is selected. Find the probability that the sample
-mean is between $498\,\mathrm{'\{'}g{'\}'}$ and $503\,\mathrm{'\{'}g{'\}'}$.
+The masses of packets of sugar are normally distributed with mean $500\,\mathrm{g{}$ and standard
+deviation $5\,\mathrm{g{}$. A sample of 36 packets is selected. Find the probability that the sample
+mean is between $498\,\mathrm{g{}$ and $503\,\mathrm{g{}$.
 
 <details>
 <summary>Solution</summary>
@@ -1202,20 +1202,20 @@ $$= \Phi(3.6) - \Phi(-2.4) = 0.9998 - 0.0082 = 0.9916$$
 
 ### Problem 9
 
-A 95% confidence interval for the mean diameter of bolts is $(10.02\,\mathrm{'\{'}mm{'\}'}, 10.18\,\mathrm{'\{'}mm{'\}'})$
+A 95% confidence interval for the mean diameter of bolts is $(10.02\,\mathrm{mm{}, 10.18\,\mathrm{mm{})$
 based on a sample of size 50. The population standard deviation is known to be
-$\sigma = 0.4\,\mathrm{'\{'}mm{'\}'}$. Find the sample mean and verify the confidence interval.
+$\sigma = 0.4\,\mathrm{mm{}$. Find the sample mean and verify the confidence interval.
 
 <details>
 <summary>Solution</summary>
 
 The sample mean is the midpoint of the interval:
 
-$$\bar{x} = \frac{10.02 + 10.18}{2} = 10.10\,\mathrm{'\{'}mm{'\}'}$$
+$$\bar{x} = \frac{10.02 + 10.18}{2} = 10.10\,\mathrm{mm{}$$
 
 The margin of error is half the width:
 
-$$E = \frac{10.18 - 10.02}{2} = 0.08\,\mathrm{'\{'}mm{'\}'}$$
+$$E = \frac{10.18 - 10.02}{2} = 0.08\,\mathrm{mm{}$$
 
 Verify: $E = z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} = 1.960 \times \frac{0.4}{\sqrt{50}} = 1.960 \times 0.0566 = 0.1109$
 
@@ -1234,7 +1234,7 @@ This corresponds to approximately 84% confidence, not 95%.
 ### Problem 10
 
 $X \sim B(15, 0.4)$ and $Y \sim B(20, 0.3)$ are independent. Find $E(X + Y)$,
-$\mathrm{'\{'}Var{'\}'}(X - Y)$, and $P(X + Y = 10)$.
+$\mathrm{Var{}(X - Y)$, and $P(X + Y = 10)$.
 
 <details>
 <summary>Solution</summary>
@@ -1243,9 +1243,9 @@ $$E(X) = 15(0.4) = 6, \quad E(Y) = 20(0.3) = 6$$
 
 $$E(X + Y) = 6 + 6 = 12$$
 
-$$\mathrm{'\{'}Var{'\}'}(X) = 15(0.4)(0.6) = 3.6, \quad \mathrm{'\{'}Var{'\}'}(Y) = 20(0.3)(0.7) = 4.2$$
+$$\mathrm{Var{}(X) = 15(0.4)(0.6) = 3.6, \quad \mathrm{Var{}(Y) = 20(0.3)(0.7) = 4.2$$
 
-$$\mathrm{'\{'}Var{'\}'}(X - Y) = 3.6 + 4.2 = 7.8$$
+$$\mathrm{Var{}(X - Y) = 3.6 + 4.2 = 7.8$$
 
 For $P(X + Y = 10)$, enumerate pairs $(x, y)$ where $x + y = 10$, $0 \le x \le 15$, $0 \le y \le 20$:
 
@@ -1263,10 +1263,10 @@ so the sum is **not** binomial), the distribution of $X + Y$ must be found by co
 
 ### Problem 11
 
-The lifetimes of batteries are normally distributed with mean $500\,\mathrm{'\{'}hours{'\}'}$ and standard
-deviation $50\,\mathrm{'\{'}hours{'\}'}$. Find the probability that a randomly selected battery lasts more than
-$550\,\mathrm{'\{'}hours{'\}'}$. If four batteries are selected independently, find the probability that at
-least three last more than $550\,\mathrm{'\{'}hours{'\}'}$.
+The lifetimes of batteries are normally distributed with mean $500\,\mathrm{hours{}$ and standard
+deviation $50\,\mathrm{hours{}$. Find the probability that a randomly selected battery lasts more than
+$550\,\mathrm{hours{}$. If four batteries are selected independently, find the probability that at
+least three last more than $550\,\mathrm{hours{}$.
 
 <details>
 <summary>Solution</summary>
@@ -1297,7 +1297,7 @@ sixes when rolling a fair die 60 times.
 
 $X \sim B(60, 1/6)$. $\lambda = np = 60/6 = 10$.
 
-Approximate: $X \approx \mathrm{'\{'}Po{'\}'}(10)$.
+Approximate: $X \approx \mathrm{Po{}(10)$.
 
 Check conditions: $n = 60 \ge 50$, $p = 1/6 \le 0.1$? No, $p = 0.167 \gt 0.1$. The Poisson
 approximation is less accurate here but still usable as an estimate.

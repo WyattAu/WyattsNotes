@@ -78,17 +78,17 @@ point than to any other.
 The **packing fraction** (also called atomic packing factor) is the fraction of volume in a unit cell
 occupied by atoms:
 
-$$\mathrm{'\{'}APF{'\}'} = \frac{N \cdot V_{\mathrm{'\{'}atom{'\}'}}}{V_{\mathrm{'\{'}cell{'\}'}}} = \frac{N \cdot \frac{4}{3}\pi R^3}{V_{\mathrm{'\{'}cell{'\}'}}}$$
+$$\mathrm{APF{} = \frac{N \cdot V_{\mathrm{atom{}}}{V_{\mathrm{cell{}}} = \frac{N \cdot \frac{4}{3}\pi R^3}{V_{\mathrm{cell{}}}$$
 
-where $N$ is the number of atoms per cell, $R$ is the atomic radius, and $V_{\mathrm{'\{'}cell{'\}'}}$ is the
+where $N$ is the number of atoms per cell, $R$ is the atomic radius, and $V_{\mathrm{cell{}}$ is the
 cell volume.
 
 The **theoretical density** of a crystal:
 
-$$\rho = \frac{nM}{N_A V_{\mathrm{'\{'}cell{'\}'}}}$$
+$$\rho = \frac{nM}{N_A V_{\mathrm{cell{}}}$$
 
 where $n$ is the number of formula units per cell, $M$ is the molar mass, $N_A$ is Avogadro's
-number, and $V_{\mathrm{'\{'}cell{'\}'}}$ is the cell volume.
+number, and $V_{\mathrm{cell{}}$ is the cell volume.
 
 <details>
 <summary>Worked Example: FCC Packing Fraction</summary>
@@ -99,7 +99,7 @@ $$4R = \sqrt{2}\,a \implies R = \frac{a\sqrt{2}}{4}$$
 
 Four atoms per conventional cell:
 
-$$\mathrm{'\{'}APF{'\}'} = \frac{4 \times \frac{4}{3}\pi R^3}{a^3} = \frac{4 \times \frac{4}{3}\pi \left(\frac{a\sqrt{2}}{4}\right)^3}{a^3} = \frac{4 \times \frac{4}{3}\pi \cdot \frac{2\sqrt{2}\,a^3}{64}}{a^3} = \frac{\pi\sqrt{2}}{6} \approx 0.7405$$
+$$\mathrm{APF{} = \frac{4 \times \frac{4}{3}\pi R^3}{a^3} = \frac{4 \times \frac{4}{3}\pi \left(\frac{a\sqrt{2}}{4}\right)^3}{a^3} = \frac{4 \times \frac{4}{3}\pi \cdot \frac{2\sqrt{2}\,a^3}{64}}{a^3} = \frac{\pi\sqrt{2}}{6} \approx 0.7405$$
 
 </details>
 
@@ -111,11 +111,11 @@ per conventional cell.
 
 $$\rho = \frac{2 \times 55.845}{6.022 \times 10^{23} \times (2.866 \times 10^{-8})^3}$$
 
-$$(2.866 \times 10^{-8})^3 = 23.55 \times 10^{-24}\ \mathrm{'\{'}cm{'\}'}^3 = 2.355 \times 10^{-23}\ \mathrm{'\{'}cm{'\}'}^3$$
+$$(2.866 \times 10^{-8})^3 = 23.55 \times 10^{-24}\ \mathrm{cm{}^3 = 2.355 \times 10^{-23}\ \mathrm{cm{}^3$$
 
-$$\rho = \frac{111.69}{6.022 \times 10^{23} \times 2.355 \times 10^{-23}} = \frac{111.69}{14.18} = 7.88\ \mathrm{'\{'}g/cm{'\}'}^3$$
+$$\rho = \frac{111.69}{6.022 \times 10^{23} \times 2.355 \times 10^{-23}} = \frac{111.69}{14.18} = 7.88\ \mathrm{g/cm{}^3$$
 
-This matches the accepted experimental density of iron ($7.87\ \mathrm{'\{'}g/cm{'\}'}^3$).
+This matches the accepted experimental density of iron ($7.87\ \mathrm{g/cm{}^3$).
 
 </details>
 
@@ -124,9 +124,9 @@ This matches the accepted experimental density of iron ($7.87\ \mathrm{'\{'}g/cm
 
 For HCP with ideal $c/a = \sqrt{8/3}$, lattice constant $a$, and atomic radius $R = a/2$:
 
-Two atoms per primitive cell. The cell volume is $V_{\mathrm{'\{'}cell{'\}'}} = \frac{\sqrt{3}}{2}a^2 \cdot c = \frac{\sqrt{3}}{2}a^2 \cdot a\sqrt{8/3} = \sqrt{2}\,a^3$.
+Two atoms per primitive cell. The cell volume is $V_{\mathrm{cell{}} = \frac{\sqrt{3}}{2}a^2 \cdot c = \frac{\sqrt{3}}{2}a^2 \cdot a\sqrt{8/3} = \sqrt{2}\,a^3$.
 
-$$\mathrm{'\{'}APF{'\}'} = \frac{2 \times \frac{4}{3}\pi (a/2)^3}{\sqrt{2}\,a^3} = \frac{\frac{\pi a^3}{3}}{\sqrt{2}\,a^3} = \frac{\pi}{3\sqrt{2}} = \frac{\pi\sqrt{2}}{6} \approx 0.7405$$
+$$\mathrm{APF{} = \frac{2 \times \frac{4}{3}\pi (a/2)^3}{\sqrt{2}\,a^3} = \frac{\frac{\pi a^3}{3}}{\sqrt{2}\,a^3} = \frac{\pi}{3\sqrt{2}} = \frac{\pi\sqrt{2}}{6} \approx 0.7405$$
 
 This confirms that HCP and FCC have the same packing fraction, as both are close-packed structures.
 
@@ -236,7 +236,7 @@ Every reciprocal lattice point is at:
 
 $$\mathbf{'\{'}G{'\}'} = m_1\mathbf{'\{'}b{'\}'}_1 + m_2\mathbf{'\{'}b{'\}'}_2 + m_3\mathbf{'\{'}b{'\}'}_3, \quad m_i \in \mathbb{'\{'}Z{'\}'}$$
 
-**Key property:** $\mathbf{'\{'}G{'\}'} \cdot \mathbf{'\{'}R{'\}'} = 2\pi \times \mathrm{'\{'}integer{'\}'}$, so
+**Key property:** $\mathbf{'\{'}G{'\}'} \cdot \mathbf{'\{'}R{'\}'} = 2\pi \times \mathrm{integer{}$, so
 $e^{i\mathbf{'\{'}G{'\}'}\cdot\mathbf{'\{'}R{'\}'}} = 1$.
 
 **Proof of key property.**
@@ -245,7 +245,7 @@ $$\mathbf{'\{'}G{'\}'} \cdot \mathbf{'\{'}R{'\}'} = (m_1\mathbf{'\{'}b{'\}'}_1 +
 
 By the orthogonality relation $\mathbf{'\{'}b{'\}'}_i \cdot \mathbf{'\{'}a{'\}'}_j = 2\pi\delta_{ij}$:
 
-$$\mathbf{'\{'}G{'\}'} \cdot \mathbf{'\{'}R{'\}'} = 2\pi(m_1 n_1 + m_2 n_2 + m_3 n_3) = 2\pi \times \mathrm{'\{'}integer{'\}'}$$
+$$\mathbf{'\{'}G{'\}'} \cdot \mathbf{'\{'}R{'\}'} = 2\pi(m_1 n_1 + m_2 n_2 + m_3 n_3) = 2\pi \times \mathrm{integer{}$$
 
 $\blacksquare$
 
@@ -265,7 +265,7 @@ For BCC (real space), the reciprocal lattice is FCC.
 | BCC ($a$) | FCC ($4\pi/a$) | $2(2\pi/a)^3$ |
 | FCC ($a$) | BCC ($4\pi/a$) | $4(2\pi/a)^3$ |
 
-In general, $V_{\mathrm{'\{'}BZ{'\}'}} = (2\pi)^3 / V_{\mathrm{'\{'}cell{'\}'}}$.
+In general, $V_{\mathrm{BZ{}} = (2\pi)^3 / V_{\mathrm{cell{}}$.
 
 ### 2.3 Reciprocal Lattice and Planes
 
@@ -323,7 +323,7 @@ Brillouin zone.
 
 High-symmetry points: $\Gamma$ (centre), $M$ (midpoint of edge), $K$ (corner).
 
-The area of the BZ equals $(2\pi)^2/A_{\mathrm{'\{'}cell{'\}'}}$ where $A_{\mathrm{'\{'}cell{'\}'}} = a^2\sqrt{3}/2$.
+The area of the BZ equals $(2\pi)^2/A_{\mathrm{cell{}}$ where $A_{\mathrm{cell{}} = a^2\sqrt{3}/2$.
 
 </details>
 
@@ -377,19 +377,19 @@ satisfy the diffraction condition for the given wavelength.
 NaCl has an FCC lattice with a two-atom basis: Na$^+$ at $(0,0,0)$ and Cl$^-$ at $(a/2, 0, 0)$
 (or equivalently, Cl$^-$ at $(1/2, 0, 0)$ in fractional coordinates).
 
-The FCC sublattice contributes a factor $S_{\mathrm{'\{'}FCC{'\}'}} = f[1 + e^{-i\pi(h+k)} + e^{-i\pi(h+l)} + e^{-i\pi(k+l)}]$,
+The FCC sublattice contributes a factor $S_{\mathrm{FCC{}} = f[1 + e^{-i\pi(h+k)} + e^{-i\pi(h+l)} + e^{-i\pi(k+l)}]$,
 which is zero unless $h,k,l$ are all even or all odd.
 
 For allowed FCC reflections, the basis factor is:
 
-$$F_{\mathrm{'\{'}basis{'\}'}} = f_{\mathrm{'\{'}Na{'\}'}} + f_{\mathrm{'\{'}Cl{'\}'}}\, e^{-i\pi h}$$
+$$F_{\mathrm{basis{}} = f_{\mathrm{Na{}} + f_{\mathrm{Cl{}}\, e^{-i\pi h}$$
 
-When $h,k,l$ are all even: $F = f_{\mathrm{'\{'}Na{'\}'}} + f_{\mathrm{'\{'}Cl{'\}'}}$.
-When $h,k,l$ are all odd: $F = f_{\mathrm{'\{'}Na{'\}'}} - f_{\mathrm{'\{'}Cl{'\}'}}$.
+When $h,k,l$ are all even: $F = f_{\mathrm{Na{}} + f_{\mathrm{Cl{}}$.
+When $h,k,l$ are all odd: $F = f_{\mathrm{Na{}} - f_{\mathrm{Cl{}}$.
 
 The intensity $I \propto \lvert S\rvert^2$:
-- All even: $I \propto (f_{\mathrm{'\{'}Na{'\}'}} + f_{\mathrm{'\{'}Cl{'\}'}})^2$ (strong)
-- All odd: $I \propto (f_{\mathrm{'\{'}Na{'\}'}} - f_{\mathrm{'\{'}Cl{'\}'}})^2$ (weak, since $f_{\mathrm{'\{'}Na{'\}'}} \approx f_{\mathrm{'\{'}Cl{'\}'}}$
+- All even: $I \propto (f_{\mathrm{Na{}} + f_{\mathrm{Cl{}})^2$ (strong)
+- All odd: $I \propto (f_{\mathrm{Na{}} - f_{\mathrm{Cl{}})^2$ (weak, since $f_{\mathrm{Na{}} \approx f_{\mathrm{Cl{}}$
   at high scattering angles where form factors converge)
 
 </details>
@@ -460,11 +460,11 @@ Reflections present only when $h, k, l$ are all even or all odd.
 <summary>Worked Example: Diamond Cubic Structure Factor</summary>
 
 Diamond has an FCC lattice with a two-atom basis at $(0,0,0)$ and $(a/4, a/4, a/4)$. The FCC
-sublattice factor $S_{\mathrm{'\{'}FCC{'\}'}}$ is nonzero only when $h,k,l$ are all even or all odd.
+sublattice factor $S_{\mathrm{FCC{}}$ is nonzero only when $h,k,l$ are all even or all odd.
 
 The full structure factor is:
 
-$$S_{hkl} = S_{\mathrm{'\{'}FCC{'\}'}} \cdot \left[1 + e^{-i\frac{\pi}{2}(h+k+l)}\right]$$
+$$S_{hkl} = S_{\mathrm{FCC{}} \cdot \left[1 + e^{-i\frac{\pi}{2}(h+k+l)}\right]$$
 
 For allowed FCC reflections:
 
@@ -562,7 +562,7 @@ $\blacksquare$
 - The Brillouin zone is $-\pi/a \leq q \leq \pi/a$.
 - Linear for small $q$: $\omega \approx v_s \lvert q\rvert$ where $v_s = a\sqrt{K/m}$ is the speed of sound.
 - Group velocity: $v_g = d\omega/dq = a\sqrt{K/m}\cos(qa/2)$.
-- Maximum frequency: $\omega_{\mathrm{'\{'}max{'\}'}} = 2\sqrt{K/m}$.
+- Maximum frequency: $\omega_{\mathrm{max{}} = 2\sqrt{K/m}$.
 - Phase velocity: $v_p = \omega/q$, which exceeds $v_s$ and diverges as $q \to 0$.
 
 ### 4.2 The Diatomic Chain
@@ -643,26 +643,26 @@ which is exponentially suppressed. This disagrees with the Debye $T^3$ law (and 
 
 Phonons carry heat through the lattice. By the kinetic theory formula:
 
-$$\kappa_{\mathrm{'\{'}ph{'\}'}} = \frac{1}{3}C_V v_s \ell_{\mathrm{'\{'}ph{'\}'}}$$
+$$\kappa_{\mathrm{ph{}} = \frac{1}{3}C_V v_s \ell_{\mathrm{ph{}}$$
 
-where $\ell_{\mathrm{'\{'}ph{'\}'}}$ is the phonon mean free path.
+where $\ell_{\mathrm{ph{}}$ is the phonon mean free path.
 
-**Scattering mechanisms** that limit $\ell_{\mathrm{'\{'}ph{'\}'}}$:
+**Scattering mechanisms** that limit $\ell_{\mathrm{ph{}}$:
 
-1. **Phonon--phonon scattering:** At high $T$, $\ell_{\mathrm{'\{'}ph{'\}'}} \propto 1/T$ (Umklapp processes
+1. **Phonon--phonon scattering:** At high $T$, $\ell_{\mathrm{ph{}} \propto 1/T$ (Umklapp processes
    dominate, where the total phonon momentum is not conserved). At low $T$, only normal processes
-   ($N$-processes, conserving momentum) contribute, and $\ell_{\mathrm{'\{'}ph{'\}'}}$ grows exponentially.
-2. **Boundary scattering:** At very low $T$, $\ell_{\mathrm{'\{'}ph{'\}'}}$ is limited by the sample size $L$.
+   ($N$-processes, conserving momentum) contribute, and $\ell_{\mathrm{ph{}}$ grows exponentially.
+2. **Boundary scattering:** At very low $T$, $\ell_{\mathrm{ph{}}$ is limited by the sample size $L$.
 3. **Defect scattering:** Point defects, dislocations, and grain boundaries scatter phonons,
-   reducing $\kappa_{\mathrm{'\{'}ph{'\}'}}$.
+   reducing $\kappa_{\mathrm{ph{}}$.
 
 **Temperature dependence:**
 
-- Low $T$ ($T \ll \Theta_D$): $\kappa_{\mathrm{'\{'}ph{'\}'}} \propto T^3$ (from $C_V \propto T^3$, with
-  $\ell_{\mathrm{'\{'}ph{'\}'}}$ limited by boundaries).
-- Intermediate $T$: $\kappa_{\mathrm{'\{'}ph{'\}'}}$ peaks.
-- High $T$ ($T \gtrsim \Theta_D$): $\kappa_{\mathrm{'\{'}ph{'\}'}} \propto 1/T$ (from $\ell_{\mathrm{'\{'}ph{'\}'}} \propto 1/T$
-  and $C_V \approx \mathrm{'\{'}const{'\}'}$).
+- Low $T$ ($T \ll \Theta_D$): $\kappa_{\mathrm{ph{}} \propto T^3$ (from $C_V \propto T^3$, with
+  $\ell_{\mathrm{ph{}}$ limited by boundaries).
+- Intermediate $T$: $\kappa_{\mathrm{ph{}}$ peaks.
+- High $T$ ($T \gtrsim \Theta_D$): $\kappa_{\mathrm{ph{}} \propto 1/T$ (from $\ell_{\mathrm{ph{}} \propto 1/T$
+  and $C_V \approx \mathrm{const{}$).
 
 ### 4.7 Specific Heat: Debye vs Einstein vs Experiment
 
@@ -685,16 +685,16 @@ temperatures.
 <details>
 <summary>Worked Example: Debye Temperature of Copper</summary>
 
-Copper has molar mass $M = 63.55$ g/mol, density $\rho = 8.96\ \mathrm{'\{'}g/cm{'\}'}^3$, and measured
+Copper has molar mass $M = 63.55$ g/mol, density $\rho = 8.96\ \mathrm{g/cm{}^3$, and measured
 speed of sound $v_s = 3810$ m/s (average of longitudinal and transverse).
 
-Number density: $n = \frac{\rho N_A}{M} = \frac{8.96 \times 6.022 \times 10^{23}}{63.55} = 8.49 \times 10^{28}\ \mathrm{'\{'}m{'\}'}^{-3}$.
+Number density: $n = \frac{\rho N_A}{M} = \frac{8.96 \times 6.022 \times 10^{23}}{63.55} = 8.49 \times 10^{28}\ \mathrm{m{}^{-3}$.
 
 $$\Theta_D = \frac{\hbar v_s}{k_B}(6\pi^2 n)^{1/3}$$
 
-$$(6\pi^2 n)^{1/3} = (6\pi^2 \times 8.49 \times 10^{28})^{1/3} = (5.03 \times 10^{30})^{1/3} = 1.71 \times 10^{10}\ \mathrm{'\{'}m{'\}'}^{-1}$$
+$$(6\pi^2 n)^{1/3} = (6\pi^2 \times 8.49 \times 10^{28})^{1/3} = (5.03 \times 10^{30})^{1/3} = 1.71 \times 10^{10}\ \mathrm{m{}^{-1}$$
 
-$$\Theta_D = \frac{1.055 \times 10^{-34} \times 3810}{1.381 \times 10^{-23}} \times 1.71 \times 10^{10} = 2.91 \times 10^{-8} \times 1.71 \times 10^{10} = 498\ \mathrm{'\{'}K{'\}'}$$
+$$\Theta_D = \frac{1.055 \times 10^{-34} \times 3810}{1.381 \times 10^{-23}} \times 1.71 \times 10^{10} = 2.91 \times 10^{-8} \times 1.71 \times 10^{10} = 498\ \mathrm{K{}$$
 
 The accepted experimental value is $\Theta_D = 343$ K. The discrepancy arises because the Debye
 model uses a single average sound velocity, while the real phonon spectrum is anisotropic.
@@ -735,11 +735,11 @@ approaching the Dulong--Petit limit.
 <summary>Worked Example: Phonon Mean Free Path in Copper</summary>
 
 For copper at 300 K: $\Theta_D = 343$ K, $v_s = 3810$ m/s, thermal conductivity
-$\kappa_{\mathrm{'\{'}ph{'\}'}} = 401$ W/(m$\cdot$K), and $C_V \approx 3Nk_B = 3 \times 8.49 \times 10^{28} \times 1.381 \times 10^{-23} = 3.52 \times 10^6$ J/(m$^3\cdot$K).
+$\kappa_{\mathrm{ph{}} = 401$ W/(m$\cdot$K), and $C_V \approx 3Nk_B = 3 \times 8.49 \times 10^{28} \times 1.381 \times 10^{-23} = 3.52 \times 10^6$ J/(m$^3\cdot$K).
 
 From $\kappa = \frac{1}{3}C_V v_s \ell$:
 
-$$\ell = \frac{3\kappa}{C_V v_s} = \frac{3 \times 401}{3.52 \times 10^6 \times 3810} = 8.97 \times 10^{-8}\ \mathrm{'\{'}m{'\}'} \approx 90\ \mathrm{'\{'}nm{'\}'}$$
+$$\ell = \frac{3\kappa}{C_V v_s} = \frac{3 \times 401}{3.52 \times 10^6 \times 3810} = 8.97 \times 10^{-8}\ \mathrm{m{} \approx 90\ \mathrm{nm{}$$
 
 This is much shorter than the sample size, confirming that phonon--phonon (Umklapp) scattering
 dominates at room temperature. At 10 K, the mean free path would be limited by sample boundaries.
@@ -884,7 +884,7 @@ $$\sigma = \frac{ne^2\tau}{m_e}$$
 
 $$\sigma(\omega) = \frac{ne^2\tau/m_e}{1 - i\omega\tau} = \frac{\sigma_0}{1 - i\omega\tau}$$
 
-The real part $\mathrm{'\{'}Re{'\}'}[\sigma(\omega)] = \frac{\sigma_0}{1 + \omega^2\tau^2}$ describes absorption,
+The real part $\mathrm{Re{}[\sigma(\omega)] = \frac{\sigma_0}{1 + \omega^2\tau^2}$ describes absorption,
 peaking at $\omega = 0$ (the Drude peak). This explains the metallic reflectivity in the infrared.
 
 **Hall effect.** With $\mathbf{'\{'}B{'\}'} = B\hat{z}$ applied, the steady-state equation becomes:
@@ -961,18 +961,18 @@ $\blacksquare$
 <details>
 <summary>Worked Example: Fermi Energy of Sodium</summary>
 
-Sodium has $n = 2.65 \times 10^{28}\ \mathrm{'\{'}m{'\}'}^{-3}$ conduction electrons (one per atom, BCC structure).
+Sodium has $n = 2.65 \times 10^{28}\ \mathrm{m{}^{-3}$ conduction electrons (one per atom, BCC structure).
 
-$$k_F = (3\pi^2 n)^{1/3} = (3\pi^2 \times 2.65 \times 10^{28})^{1/3} = (7.85 \times 10^{29})^{1/3} = 9.23 \times 10^9\ \mathrm{'\{'}m{'\}'}^{-1}$$
+$$k_F = (3\pi^2 n)^{1/3} = (3\pi^2 \times 2.65 \times 10^{28})^{1/3} = (7.85 \times 10^{29})^{1/3} = 9.23 \times 10^9\ \mathrm{m{}^{-1}$$
 
-$$\varepsilon_F = \frac{\hbar^2 k_F^2}{2m_e} = \frac{(1.055 \times 10^{-34})^2 \times (9.23 \times 10^9)^2}{2 \times 9.11 \times 10^{-31}} = \frac{9.48 \times 10^{-58}}{1.82 \times 10^{-30}} = 5.21 \times 10^{-19}\ \mathrm{'\{'}J{'\}'} = 3.25\ \mathrm{'\{'}eV{'\}'}$$
+$$\varepsilon_F = \frac{\hbar^2 k_F^2}{2m_e} = \frac{(1.055 \times 10^{-34})^2 \times (9.23 \times 10^9)^2}{2 \times 9.11 \times 10^{-31}} = \frac{9.48 \times 10^{-58}}{1.82 \times 10^{-30}} = 5.21 \times 10^{-19}\ \mathrm{J{} = 3.25\ \mathrm{eV{}$$
 
-$$T_F = \frac{\varepsilon_F}{k_B} = \frac{5.21 \times 10^{-19}}{1.381 \times 10^{-23}} = 3.77 \times 10^4\ \mathrm{'\{'}K{'\}'}$$
+$$T_F = \frac{\varepsilon_F}{k_B} = \frac{5.21 \times 10^{-19}}{1.381 \times 10^{-23}} = 3.77 \times 10^4\ \mathrm{K{}$$
 
-$$v_F = \frac{\hbar k_F}{m_e} = \frac{1.055 \times 10^{-34} \times 9.23 \times 10^9}{9.11 \times 10^{-31}} = 1.07 \times 10^6\ \mathrm{'\{'}m/s{'\}'}$$
+$$v_F = \frac{\hbar k_F}{m_e} = \frac{1.055 \times 10^{-34} \times 9.23 \times 10^9}{9.11 \times 10^{-31}} = 1.07 \times 10^6\ \mathrm{m/s{}$$
 
 The electronic specific heat coefficient:
-$\gamma = \frac{\pi^2}{2}\frac{nk_B^2}{\varepsilon_F} = \frac{\pi^2 \times 2.65 \times 10^{28} \times (1.381 \times 10^{-23})^2}{2 \times 5.21 \times 10^{-19}} = 1.38 \times 10^3\ \mathrm{'\{'}J/(m^3\cdot K^2){'\}'}$
+$\gamma = \frac{\pi^2}{2}\frac{nk_B^2}{\varepsilon_F} = \frac{\pi^2 \times 2.65 \times 10^{28} \times (1.381 \times 10^{-23})^2}{2 \times 5.21 \times 10^{-19}} = 1.38 \times 10^3\ \mathrm{J/(m^3\cdot K^2){}$
 
 </details>
 
@@ -1065,18 +1065,18 @@ this functional.
 **Kohn--Sham equations.** The interacting system is mapped to a fictitious system of non-interacting
 electrons in an effective potential:
 
-$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\mathrm{'\{'}eff{'\}'}}(\mathbf{'\{'}r{'\}'})\right]\psi_i(\mathbf{'\{'}r{'\}'}) = \varepsilon_i\psi_i(\mathbf{'\{'}r{'\}'})$$
+$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\mathrm{eff{}}(\mathbf{'\{'}r{'\}'})\right]\psi_i(\mathbf{'\{'}r{'\}'}) = \varepsilon_i\psi_i(\mathbf{'\{'}r{'\}'})$$
 
-where $V_{\mathrm{'\{'}eff{'\}'}} = V_{\mathrm{'\{'}ext{'\}'}} + V_H[n] + V_{\mathrm{'\{'}xc{'\}'}}[n]$. Here $V_{\mathrm{'\{'}ext{'\}'}}$ is the
-external (ionic) potential, $V_H$ is the Hartree (classical Coulomb) potential, and $V_{\mathrm{'\{'}xc{'\}'}}$
+where $V_{\mathrm{eff{}} = V_{\mathrm{ext{}} + V_H[n] + V_{\mathrm{xc{}}[n]$. Here $V_{\mathrm{ext{}}$ is the
+external (ionic) potential, $V_H$ is the Hartree (classical Coulomb) potential, and $V_{\mathrm{xc{}}$
 is the exchange-correlation potential.
 
 The electron density is $n(\mathbf{'\{'}r{'\}'}) = \sum_i \lvert\psi_i(\mathbf{'\{'}r{'\}'})\rvert^2$ (summing over occupied
 states). The Kohn--Sham equations are solved self-consistently.
 
-**Common approximations for $V_{\mathrm{'\{'}xc{'\}'}}$:**
+**Common approximations for $V_{\mathrm{xc{}}$:**
 
-- **Local density approximation (LDA):** $V_{\mathrm{'\{'}xc{'\}'}}(\mathbf{'\{'}r{'\}'}) = V_{\mathrm{'\{'}xc{'\}'}}^{\mathrm{'\{'}hom{'\}'}}(n(\mathbf{'\{'}r{'\}'}))$,
+- **Local density approximation (LDA):** $V_{\mathrm{xc{}}(\mathbf{'\{'}r{'\}'}) = V_{\mathrm{xc{}}^{\mathrm{hom{}}(n(\mathbf{'\{'}r{'\}'}))$,
   using the exchange-correlation energy of a homogeneous electron gas. Good for simple metals but
   tends to underestimate band gaps.
 - **Generalised gradient approximation (GGA):** Includes the density gradient
@@ -1222,7 +1222,7 @@ an electron from the valence band to the conduction band.
 **Excitons.** The electron and hole created by photon absorption are attracted by the Coulomb
 interaction, forming a bound state called an **exciton** with binding energy:
 
-$$E_{\mathrm{'\{'}ex{'\}'}} = \frac{\mu e^4}{2(4\pi\varepsilon_s)^2\hbar^2} = \frac{\mu}{m_e\varepsilon_r^2} \times 13.6\ \mathrm{'\{'}eV{'\}'}$$
+$$E_{\mathrm{ex{}} = \frac{\mu e^4}{2(4\pi\varepsilon_s)^2\hbar^2} = \frac{\mu}{m_e\varepsilon_r^2} \times 13.6\ \mathrm{eV{}$$
 
 where $\mu = m_e^* m_h^*/(m_e^* + m_h^*)$ is the reduced mass and $\varepsilon_r$ is the relative
 permittivity. Excitons produce sharp absorption lines slightly below $E_g$.
@@ -1236,15 +1236,15 @@ diodes). Indirect-gap materials like Si have very low radiative efficiency.
 
 For Si at $T = 300$ K: $E_g = 1.12$ eV, $m_e^* = 1.08\,m_e$, $m_h^* = 0.56\,m_e$.
 
-$$N_c = 2\left(\frac{2\pi \times 1.08 \times 9.11 \times 10^{-31} \times 1.381 \times 10^{-23} \times 300}{(6.626 \times 10^{-34})^2}\right)^{3/2} = 2.81 \times 10^{25}\ \mathrm{'\{'}m{'\}'}^{-3}$$
+$$N_c = 2\left(\frac{2\pi \times 1.08 \times 9.11 \times 10^{-31} \times 1.381 \times 10^{-23} \times 300}{(6.626 \times 10^{-34})^2}\right)^{3/2} = 2.81 \times 10^{25}\ \mathrm{m{}^{-3}$$
 
-$$N_v = 2\left(\frac{2\pi \times 0.56 \times 9.11 \times 10^{-31} \times 1.381 \times 10^{-23} \times 300}{(6.626 \times 10^{-34})^2}\right)^{3/2} = 1.04 \times 10^{25}\ \mathrm{'\{'}m{'\}'}^{-3}$$
+$$N_v = 2\left(\frac{2\pi \times 0.56 \times 9.11 \times 10^{-31} \times 1.381 \times 10^{-23} \times 300}{(6.626 \times 10^{-34})^2}\right)^{3/2} = 1.04 \times 10^{25}\ \mathrm{m{}^{-3}$$
 
 $$n_i = \sqrt{N_c N_v}\,e^{-E_g/(2k_B T)} = \sqrt{2.81 \times 1.04} \times 10^{25} \times e^{-1.12/(2 \times 0.02585)}$$
 
-$$n_i = 1.71 \times 10^{25} \times e^{-21.66} = 1.71 \times 10^{25} \times 3.95 \times 10^{-10} = 6.75 \times 10^{15}\ \mathrm{'\{'}m{'\}'}^{-3}$$
+$$n_i = 1.71 \times 10^{25} \times e^{-21.66} = 1.71 \times 10^{25} \times 3.95 \times 10^{-10} = 6.75 \times 10^{15}\ \mathrm{m{}^{-3}$$
 
-The accepted value is $n_i \approx 1.5 \times 10^{16}\ \mathrm{'\{'}m{'\}'}^{-3}$ at 300 K.
+The accepted value is $n_i \approx 1.5 \times 10^{16}\ \mathrm{m{}^{-3}$ at 300 K.
 
 </details>
 
@@ -1257,7 +1257,7 @@ emits in the ultraviolet; InGaN alloys span the visible spectrum.
 
 **Solar cells.** A p-n junction under illumination generates electron--hole pairs. The built-in
 field separates them, producing a photocurrent. The open-circuit voltage satisfies
-$V_{\mathrm{'\{'}OC{'\}'}} \lt E_g/e$ (typically $V_{\mathrm{'\{'}OC{'\}'}} \approx 0.7\,E_g/e$). The power conversion
+$V_{\mathrm{OC{}} \lt E_g/e$ (typically $V_{\mathrm{OC{}} \approx 0.7\,E_g/e$). The power conversion
 efficiency is limited by the **Shockley--Queisser limit** ($\sim 33\%$ for a single junction)
 due to spectral mismatch, thermalisation, and radiative recombination losses.
 
@@ -1315,16 +1315,16 @@ has charge $2e$ and spin 0 (boson).
 
 **The BCS gap equation:**
 
-$$\Delta = V_{\mathrm{'\{'}pair{'\}'}} \sum_{\mathbf{'\{'}k{'\}'}} \frac{\Delta}{2E_{\mathbf{'\{'}k{'\}'}}} \tanh\left(\frac{E_{\mathbf{'\{'}k{'\}'}}}{2k_B T}\right)$$
+$$\Delta = V_{\mathrm{pair{}} \sum_{\mathbf{'\{'}k{'\}'}} \frac{\Delta}{2E_{\mathbf{'\{'}k{'\}'}}} \tanh\left(\frac{E_{\mathbf{'\{'}k{'\}'}}}{2k_B T}\right)$$
 
 where $E_{\mathbf{'\{'}k{'\}'}} = \sqrt{\xi_{\mathbf{'\{'}k{'\}'}}^2 + \Delta^2}$ is the quasiparticle energy, $\xi_{\mathbf{'\{'}k{'\}'}}$
 is the normal-state energy relative to $E_F$, and $\Delta$ is the superconducting energy gap.
 
-At $T = 0$: $\Delta(0) = 2\hbar\omega_D\, e^{-1/(N(E_F)V_{\mathrm{'\{'}pair{'\}'}})}$ (BCS formula).
+At $T = 0$: $\Delta(0) = 2\hbar\omega_D\, e^{-1/(N(E_F)V_{\mathrm{pair{}})}$ (BCS formula).
 
 The critical temperature:
 
-$$k_B T_c = 1.13\,\hbar\omega_D\, e^{-1/(N(E_F)V_{\mathrm{'\{'}pair{'\}'}})}$$
+$$k_B T_c = 1.13\,\hbar\omega_D\, e^{-1/(N(E_F)V_{\mathrm{pair{}})}$$
 
 The ratio $2\Delta(0)/(k_B T_c) \approx 3.53$ is a universal BCS prediction.
 
@@ -1386,18 +1386,18 @@ The **mean free path:** $\ell = v_F\tau$.
 ($\kappa/\sigma = LT$ with $L = \pi^2 k_B^2/(3e^2)$).
 
 **Failures:** Predicts the wrong temperature dependence ($\rho \propto T$, but experiments show
-$\rho \propto T^5$ at low $T$ for pure metals). Predicts $\gamma_{\mathrm{'\{'}electron{'\}'}} = \frac{3}{2}nk_B$
-but experiments give $\gamma_{\mathrm{'\{'}electron{'\}'}} = \frac{\pi^2}{2}nk_B(T/T_F)$ (much smaller).
+$\rho \propto T^5$ at low $T$ for pure metals). Predicts $\gamma_{\mathrm{electron{}} = \frac{3}{2}nk_B$
+but experiments give $\gamma_{\mathrm{electron{}} = \frac{\pi^2}{2}nk_B(T/T_F)$ (much smaller).
 
 ### 8.2 The Boltzmann Transport Equation
 
 The semiclassical distribution function $f(\mathbf{'\{'}r{'\}'}, \mathbf{'\{'}k{'\}'}, t)$ satisfies:
 
-$$\frac{\partial f}{\partial t} + \mathbf{'\{'}v{'\}'}_{\mathbf{'\{'}k{'\}'}} \cdot \nabla_{\mathbf{'\{'}r{'\}'}} f - \frac{e\mathbf{'\{'}E{'\}'}}{\hbar}\cdot\nabla_{\mathbf{'\{'}k{'\}'}} f = \left(\frac{\partial f}{\partial t}\right)_{\mathrm{'\{'}coll{'\}'}}$$
+$$\frac{\partial f}{\partial t} + \mathbf{'\{'}v{'\}'}_{\mathbf{'\{'}k{'\}'}} \cdot \nabla_{\mathbf{'\{'}r{'\}'}} f - \frac{e\mathbf{'\{'}E{'\}'}}{\hbar}\cdot\nabla_{\mathbf{'\{'}k{'\}'}} f = \left(\frac{\partial f}{\partial t}\right)_{\mathrm{coll{}}$$
 
 In the **relaxation time approximation:**
 
-$$\left(\frac{\partial f}{\partial t}\right)_{\mathrm{'\{'}coll{'\}'}} = -\frac{f - f_0}{\tau}$$
+$$\left(\frac{\partial f}{\partial t}\right)_{\mathrm{coll{}} = -\frac{f - f_0}{\tau}$$
 
 where $f_0$ is the equilibrium distribution.
 
@@ -1416,19 +1416,19 @@ near $E_F$ contribute to transport. This explains why impurity scattering domina
 **Matthiessen's rule.** When multiple scattering mechanisms act independently, the total resistivity
 is approximately additive:
 
-$$\rho(T) = \rho_0 + \rho_{\mathrm{'\{'}ph{'\}'}}(T)$$
+$$\rho(T) = \rho_0 + \rho_{\mathrm{ph{}}(T)$$
 
 where $\rho_0$ is the residual resistivity (temperature-independent, from impurities and defects)
-and $\rho_{\mathrm{'\{'}ph{'\}'}}(T)$ is the phonon contribution (proportional to $T$ at high $T$ and to $T^5$
-at low $T$ via the Bloch--Grüneisen formula). The **resistance ratio** $RRR = \rho(300\ \mathrm{'\{'}K{'\}'})/\rho_0$
+and $\rho_{\mathrm{ph{}}(T)$ is the phonon contribution (proportional to $T$ at high $T$ and to $T^5$
+at low $T$ via the Bloch--Grüneisen formula). The **resistance ratio** $RRR = \rho(300\ \mathrm{K{})/\rho_0$
 is a measure of sample purity.
 
 **Bloch--Grüneisen formula.** For electron--phonon scattering in a free electron metal:
 
-$$\rho_{\mathrm{'\{'}ph{'\}'}}(T) \propto \left(\frac{T}{\Theta_D}\right)^5 \int_0^{\Theta_D/T} \frac{x^5}{(e^x - 1)(1 - e^{-x})}\,dx$$
+$$\rho_{\mathrm{ph{}}(T) \propto \left(\frac{T}{\Theta_D}\right)^5 \int_0^{\Theta_D/T} \frac{x^5}{(e^x - 1)(1 - e^{-x})}\,dx$$
 
-At high $T$ ($T \gt \Theta_D$): $\rho_{\mathrm{'\{'}ph{'\}'}} \propto T$ (linear, agreeing with the Drude model).
-At low $T$ ($T \ll \Theta_D$): $\rho_{\mathrm{'\{'}ph{'\}'}} \propto T^5$, consistent with experiment.
+At high $T$ ($T \gt \Theta_D$): $\rho_{\mathrm{ph{}} \propto T$ (linear, agreeing with the Drude model).
+At low $T$ ($T \ll \Theta_D$): $\rho_{\mathrm{ph{}} \propto T^5$, consistent with experiment.
 
 ### 8.3 Thermal Conductivity
 
@@ -1438,9 +1438,9 @@ $$\kappa_e = \frac{1}{3}c_e v_F \ell_e$$
 
 where $c_e = \frac{\pi^2}{2}nk_B(T/T_F)$ is the electronic specific heat. The phonon contribution:
 
-$$\kappa_{\mathrm{'\{'}ph{'\}'}} = \frac{1}{3}C_V v_s \ell_{\mathrm{'\{'}ph{'\}'}}$$
+$$\kappa_{\mathrm{ph{}} = \frac{1}{3}C_V v_s \ell_{\mathrm{ph{}}$$
 
-The total thermal conductivity: $\kappa = \kappa_e + \kappa_{\mathrm{'\{'}ph{'\}'}}$.
+The total thermal conductivity: $\kappa = \kappa_e + \kappa_{\mathrm{ph{}}$.
 
 ### 8.4 The Hall Effect
 
@@ -1482,8 +1482,8 @@ $$n_v = N\,e^{-E_v/(k_B T)}$$
 
 where $N$ is the number of lattice sites and $E_v$ is the vacancy formation energy ($\sim 1$ eV).
 
-**Derivation.** Minimising the free energy $F = n_v E_v - T S_{\mathrm{'\{'}config{'\}'}}$ where
-$S_{\mathrm{'\{'}config{'\}'}} = k_B \ln\binom{N}{n_v}$:
+**Derivation.** Minimising the free energy $F = n_v E_v - T S_{\mathrm{config{}}$ where
+$S_{\mathrm{config{}} = k_B \ln\binom{N}{n_v}$:
 
 $$\frac{\partial F}{\partial n_v} = E_v + k_B T \ln\left(\frac{n_v}{N - n_v}\right) = 0$$
 
@@ -1519,7 +1519,7 @@ Defects strongly affect electrical, mechanical, and thermal properties:
 - **Diamagnetism:** Weak, negative susceptibility ($\chi \lt 0$). Present in all materials. Arises from
   the orbital response to an applied field (Lenz's law). $\chi_d \sim -10^{-5}$.
 - **Paramagnetism:** Positive susceptibility ($\chi \gt 0$). Unpaired spins align with the field.
-  Curie law: $\chi = C/T$ where $C = N\mu_0\mu_{\mathrm{'\{'}eff{'\}'}}^2/(3k_B)$.
+  Curie law: $\chi = C/T$ where $C = N\mu_0\mu_{\mathrm{eff{}}^2/(3k_B)$.
 - **Ferromagnetism:** Large positive susceptibility. Spontaneous magnetisation below the Curie
   temperature $T_C$.
 - **Antiferromagnetism:** Adjacent spins antiparallel. Susceptibility peaks at the Néel temperature $T_N$.
@@ -1533,7 +1533,7 @@ Diamagnetism is the universal tendency of matter to weakly oppose an applied mag
 $\langle r^2 \rangle$, a field $B$ along $z$ modifies the angular velocity by
 $\Delta\omega = eB/(2m_e)$. The induced magnetic moment per atom:
 
-$$\mu_{\mathrm{'\{'}dia{'\}'}} = -\frac{e^2 B}{6m_e}\sum_{i=1}^{Z}\langle r_i^2 \rangle = -\frac{e^2 Z B}{6m_e}\langle r^2 \rangle$$
+$$\mu_{\mathrm{dia{}} = -\frac{e^2 B}{6m_e}\sum_{i=1}^{Z}\langle r_i^2 \rangle = -\frac{e^2 Z B}{6m_e}\langle r^2 \rangle$$
 
 The susceptibility (per unit volume, with $n$ atoms per unit volume):
 
@@ -1544,10 +1544,10 @@ This is independent of temperature and very small: $\chi_L \sim -10^{-5}$.
 **Landau diamagnetism.** Free electrons also exhibit diamagnetism. The quantisation of electron
 orbits into Landau levels modifies the ground-state energy in an applied field:
 
-$$\chi_{\mathrm{'\{'}Landau{'\}'}} = -\frac{1}{3}\chi_P = -\frac{\mu_0 \mu_B^2 g(\varepsilon_F)}{3}$$
+$$\chi_{\mathrm{Landau{}} = -\frac{1}{3}\chi_P = -\frac{\mu_0 \mu_B^2 g(\varepsilon_F)}{3}$$
 
 where $\chi_P$ is the Pauli paramagnetic susceptibility. The total susceptibility of a free electron
-gas is $\chi = \chi_P + \chi_{\mathrm{'\{'}Landau{'\}'}} = \frac{2}{3}\chi_P$ (still paramagnetic, but
+gas is $\chi = \chi_P + \chi_{\mathrm{Landau{}} = \frac{2}{3}\chi_P$ (still paramagnetic, but
 reduced by one-third).
 
 ### 10.3 Paramagnetism
@@ -1577,14 +1577,14 @@ electrons near $\varepsilon_F$ can flip their spins in response to a field:
 $$\chi_P = \mu_0\mu_B^2\,g(\varepsilon_F) = \frac{3\mu_0\mu_B^2 N}{2\varepsilon_F}$$
 
 This is temperature-independent (up to corrections of order $(T/T_F)^2$), in contrast to the Curie
-law. The ratio $\chi_P/\chi_{\mathrm{'\{'}Curie{'\}'}} \sim T/T_F \sim 10^{-2}$ at room temperature,
+law. The ratio $\chi_P/\chi_{\mathrm{Curie{}} \sim T/T_F \sim 10^{-2}$ at room temperature,
 explaining why metals are only weakly paramagnetic.
 
 ### 10.4 Ferromagnetism and the Mean-Field Theory
 
 In the **mean-field (Weiss) model**, each spin experiences an effective field:
 
-$$B_{\mathrm{'\{'}eff{'\}'}} = B_0 + \lambda M$$
+$$B_{\mathrm{eff{}} = B_0 + \lambda M$$
 
 where $\lambda$ is the molecular field constant and $M$ is the magnetisation.
 
@@ -1613,11 +1613,11 @@ and $T_C = 1043$ K. From $T_C = N\mu^2\lambda/(3k_B)$:
 
 $$\lambda = \frac{3k_B T_C}{N\mu^2} = \frac{3 \times 1.381 \times 10^{-23} \times 1043}{8.49 \times 10^{28} \times (2.22 \times 9.274 \times 10^{-24})^2}$$
 
-$$\lambda = \frac{4.32 \times 10^{-20}}{8.49 \times 10^{28} \times 4.25 \times 10^{-46}} = \frac{4.32 \times 10^{-20}}{3.61 \times 10^{-17}} = 1.20 \times 10^{-3}\ \mathrm{'\{'}T\,m/A{'\}'}$$
+$$\lambda = \frac{4.32 \times 10^{-20}}{8.49 \times 10^{28} \times 4.25 \times 10^{-46}} = \frac{4.32 \times 10^{-20}}{3.61 \times 10^{-17}} = 1.20 \times 10^{-3}\ \mathrm{T\,m/A{}$$
 
 The corresponding exchange field at $T = 0$ ($M = N\mu$):
 
-$$B_{\mathrm{'\{'}ex{'\}'}} = \lambda M = 1.20 \times 10^{-3} \times 8.49 \times 10^{28} \times 2.22 \times 9.274 \times 10^{-24} = 2100\ \mathrm{'\{'}T{'\}'}$$
+$$B_{\mathrm{ex{}} = \lambda M = 1.20 \times 10^{-3} \times 8.49 \times 10^{28} \times 2.22 \times 9.274 \times 10^{-24} = 2100\ \mathrm{T{}$$
 
 This enormous effective field is purely quantum-mechanical in origin (exchange interaction).
 
@@ -1677,7 +1677,7 @@ in 3D, where $\zeta(3/2) \approx 2.612$ is the Riemann zeta function. The $T^{3/
 freeze-out of a classical paramagnet.
 
 Magnons are bosons and obey Bose--Einstein statistics. They contribute to the low-temperature
-specific heat of ferromagnets: $C_{\mathrm{'\{'}mag{'\}'}} \propto T^{3/2}$.
+specific heat of ferromagnets: $C_{\mathrm{mag{}} \propto T^{3/2}$.
 
 ### 10.8 The de Haas--van Alphen Effect
 
@@ -1688,7 +1688,7 @@ $$\varepsilon_n = \left(n + \frac{1}{2}\right)\hbar\omega_c, \quad \omega_c = \f
 The density of states oscillates with $1/B$ (de Haas--van Alphen oscillations). The oscillation period
 gives the extremal cross-sectional area of the Fermi surface:
 
-$$\Delta\left(\frac{1}{B}\right) = \frac{2\pi e}{\hbar A_{\mathrm{'\{'}ext{'\}'}}}$$
+$$\Delta\left(\frac{1}{B}\right) = \frac{2\pi e}{\hbar A_{\mathrm{ext{}}}$$
 
 This is the primary experimental technique for mapping Fermi surfaces.
 
@@ -1706,7 +1706,7 @@ consequence of the Coulomb repulsion combined with the antisymmetry of the elect
 and explain why SC is rarely observed in elemental metals.
 
 **Problem 2.** Aluminium is FCC with $a = 0.405$ nm and $M = 26.98$ g/mol. Calculate the theoretical
-density and compare with the experimental value ($2.70\ \mathrm{'\{'}g/cm{'\}'}^3$).
+density and compare with the experimental value ($2.70\ \mathrm{g/cm{}^3$).
 
 **Problem 3.** A plane intercepts the crystallographic axes at $2a$, $3b$, and $\infty c$. Determine the
 Miller indices. A direction passes through the origin and the point $(1, -1, 0)$ in units of lattice
@@ -1739,22 +1739,22 @@ frequency increases relative to the nearest-neighbour-only case.
 heat at $T = 100$ K and $T = 500$ K. At what temperature does the Debye $T^3$ law give a 1%
 accurate approximation?
 
-**Problem 12.** Compare the Einstein and Debye predictions for $C_V/C_{\mathrm{'\{'}Dulong--Petit{'\}'}}$ as a
+**Problem 12.** Compare the Einstein and Debye predictions for $C_V/C_{\mathrm{Dulong--Petit{}}$ as a
 function of $T/\Theta$ at $T/\Theta = 0.1$, $0.5$, and $1.0$.
 
-**Problem 13.** Sodium has $n = 2.65 \times 10^{28}\ \mathrm{'\{'}m{'\}'}^{-3}$ conduction electrons. Calculate
+**Problem 13.** Sodium has $n = 2.65 \times 10^{28}\ \mathrm{m{}^{-3}$ conduction electrons. Calculate
 the Fermi energy, Fermi wave vector, Fermi velocity, and Fermi temperature.
 
 **Problem 14.** Using the tight-binding model for a 1D chain with nearest-neighbour hopping $t$:
 (a) find the effective mass at the band bottom and band top, and (b) calculate the density of states
 $g(\varepsilon)$ and show it diverges at the band edges.
 
-**Problem 15.** A silicon sample is doped with $N_D = 10^{22}\ \mathrm{'\{'}m{'\}'}^{-3}$ phosphorus atoms.
-Calculate the electron and hole concentrations at 300 K ($n_i = 1.5 \times 10^{16}\ \mathrm{'\{'}m{'\}'}^{-3}$)
+**Problem 15.** A silicon sample is doped with $N_D = 10^{22}\ \mathrm{m{}^{-3}$ phosphorus atoms.
+Calculate the electron and hole concentrations at 300 K ($n_i = 1.5 \times 10^{16}\ \mathrm{m{}^{-3}$)
 and the position of the Fermi level relative to the conduction band edge.
 
-**Problem 16.** A p-n junction is made from Si with $N_A = 10^{23}\ \mathrm{'\{'}m{'\}'}^{-3}$ and
-$N_D = 10^{22}\ \mathrm{'\{'}m{'\}'}^{-3}$. Calculate the built-in potential and the depletion width at
+**Problem 16.** A p-n junction is made from Si with $N_A = 10^{23}\ \mathrm{m{}^{-3}$ and
+$N_D = 10^{22}\ \mathrm{m{}^{-3}$. Calculate the built-in potential and the depletion width at
 300 K. ($\varepsilon_s = 11.7\varepsilon_0$ for Si.)
 
 **Problem 17.** A classical paramagnetic salt contains $N = 2.69 \times 10^{27}$ spins/m$^3$ with
@@ -1766,7 +1766,7 @@ ferromagnet above $T_C$. Express $C$ in terms of $N$, $\mu$, and $k_B$.
 
 **Hints and Selected Results:**
 
-- *Problem 1:* $\mathrm{'\{'}APF{'\}'}_{\mathrm{'\{'}SC{'\}'}} = \pi/6 \approx 0.524$. SC has the lowest packing efficiency
+- *Problem 1:* $\mathrm{APF{}_{\mathrm{SC{}} = \pi/6 \approx 0.524$. SC has the lowest packing efficiency
   of the three cubic structures, which is why it is energetically unfavourable for most metals
   (polonium being the exception).
 - *Problem 3:* Reciprocals of $(2, 3, \infty)$ are $(1/2, 1/3, 0)$, giving $(3, 2, 0)$. Direction: $[1\bar{1}0]$.
@@ -1837,7 +1837,7 @@ $$\kappa = \frac{\lambda}{\xi}$$
 
 In the mixed state of a Type II superconductor ($B_{c1} < B < B_{c2}$), magnetic flux penetrates in quantised vortices, each carrying one flux quantum:
 
-$$\Phi_0 = \frac{h}{2e} = 2.07 \times 10^{-15}\ \mathrm{'\{'}Wb{'\}'}$$
+$$\Phi_0 = \frac{h}{2e} = 2.07 \times 10^{-15}\ \mathrm{Wb{}$$
 
 The vortex core (radius $\sim\xi$) is in the normal state, while supercurrents circulate around it (decaying over $\sim\lambda$).
 
@@ -1880,7 +1880,7 @@ The oscillation frequency $\nu = 2eV/h$ provides the basis for the Josephson vol
 
 Niobium has $\xi_0 = 39$ nm and $\lambda_0 = 39$ nm, giving $\kappa = \lambda/\xi = 1.0 > 1/\sqrt{2} \approx 0.71$. Therefore Nb is Type II.
 
-$$B_{c2} = \frac{\Phi_0}{2\pi\xi^2} = \frac{2.07 \times 10^{-15}}{2\pi \times (39 \times 10^{-9})^2} = \frac{2.07 \times 10^{-15}}{9.55 \times 10^{-15}} \approx 0.217\ \mathrm{'\{'}T{'\}'}$$
+$$B_{c2} = \frac{\Phi_0}{2\pi\xi^2} = \frac{2.07 \times 10^{-15}}{2\pi \times (39 \times 10^{-9})^2} = \frac{2.07 \times 10^{-15}}{9.55 \times 10^{-15}} \approx 0.217\ \mathrm{T{}$$
 
 The experimental $B_{c2}(0) \approx 0.4$ T. The discrepancy arises because the GL expressions use $\xi$ and $\lambda$ at $T_c$, while the actual values differ at $T = 0$.
 
@@ -1893,7 +1893,7 @@ For aluminium: $\xi_0 = 1600$ nm, $\lambda_0 = 16$ nm, $\kappa = 0.01 \ll 1/\sqr
 
 A voltage $V = 1\ \mu$V is applied across a Josephson junction:
 
-$$\nu = \frac{2eV}{h} = \frac{2 \times 1.602 \times 10^{-19} \times 10^{-6}}{6.626 \times 10^{-34}} = \frac{3.204 \times 10^{-25}}{6.626 \times 10^{-34}} = 4.836 \times 10^{8}\ \mathrm{'\{'}Hz{'\}'} \approx 483.6\ \mathrm{'\{'}MHz{'\}'}$$
+$$\nu = \frac{2eV}{h} = \frac{2 \times 1.602 \times 10^{-19} \times 10^{-6}}{6.626 \times 10^{-34}} = \frac{3.204 \times 10^{-25}}{6.626 \times 10^{-34}} = 4.836 \times 10^{8}\ \mathrm{Hz{} \approx 483.6\ \mathrm{MHz{}$$
 
 The convenient relation is $\nu/\text{'\{'}GHz{'\}'} = 483.6 \times V/\mu\text{'\{'}V{'\}'}$. This precise frequency-voltage relation is used to maintain the volt standard worldwide.
 

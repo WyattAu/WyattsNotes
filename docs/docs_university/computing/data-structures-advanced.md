@@ -29,7 +29,7 @@ A **red-black tree** is a self-balancing BST satisfying five invariants:
 
 Consider the subtree rooted at any node $x$. If this subtree has height $h_x$, then it contains at least $2^{bh(x)} - 1$ internal nodes (proof by induction on $h_x$: if $x$ is a leaf, it has $0 = 2^0 - 1$ internal nodes; otherwise, each child has black-height at least $bh(x) - 1$ if it is red, or $bh(x)$ if it is black, so each child has at least $2^{bh(x)-1} - 1$ internal nodes, giving at least $2(2^{bh(x)-1} - 1) + 1 = 2^{bh(x)} - 1$ for $x$).
 
-Therefore $n \geq 2^{bh(\mathrm{'\{'}root{'\}'})} - 1$, giving $bh(\mathrm{'\{'}root{'\}'}) \leq \log_2(n+1)$. Since $h \leq 2 \cdot bh(\mathrm{'\{'}root{'\}'})$, we have $h \leq 2\log_2(n+1)$. $\blacksquare$
+Therefore $n \geq 2^{bh(\mathrm{root{})} - 1$, giving $bh(\mathrm{root{}) \leq \log_2(n+1)$. Since $h \leq 2 \cdot bh(\mathrm{root{})$, we have $h \leq 2\log_2(n+1)$. $\blacksquare$
 
 **Corollary.** Search, insert, and delete in a red-black tree take $O(\log n)$ time.
 
@@ -459,7 +459,7 @@ A **splay tree** is a self-adjusting BST with no explicit balance information. A
 
 This means splay trees are asymptotically as fast as a static optimal binary search tree for any access sequence.
 
-**Theorem 1.9 (Static Finger).** The total access time is $O\left(n \log n + n \log \min_{j} |\mathrm{'\{'}key{'\}'}_i - \mathrm{'\{'}key{'\}'}_j|\right)$ where $j$ is a fixed "finger" position.
+**Theorem 1.9 (Static Finger).** The total access time is $O\left(n \log n + n \log \min_{j} |\mathrm{key{}_i - \mathrm{key{}_j|\right)$ where $j$ is a fixed "finger" position.
 
 **Theorem 1.10 (Working Set).** The access time for element $i$ is $O(\log(t_i))$ where $t_i$ is the number of distinct elements accessed since the last access to element $i$.
 
@@ -906,11 +906,11 @@ An **interval tree** stores a set of intervals $[l_i, r_i]$ and supports:
 
 **Structure.** An augmented BST where:
 - In-order traversal of keys gives the intervals sorted by their left endpoint (or by midpoint).
-- Each node stores a key $x_{\mathrm{'\{'}mid{'\}'}}$ (the median endpoint) and a max-endpoint for the subtree.
+- Each node stores a key $x_{\mathrm{mid{}}$ (the median endpoint) and a max-endpoint for the subtree.
 
-**Query algorithm:** Starting at the root, compare $q$ with $x_{\mathrm{'\{'}mid{'\}'}}$:
-1. If $q < x_{\mathrm{'\{'}mid{'\}'}}$: report all intervals in the left subtree that overlap $q$ (check max-endpoint), then recurse into the left subtree. Also check if any interval stored at the current node overlaps $q$.
-2. If $q \geq x_{\mathrm{'\{'}mid{'\}'}}$: similar for the right subtree.
+**Query algorithm:** Starting at the root, compare $q$ with $x_{\mathrm{mid{}}$:
+1. If $q < x_{\mathrm{mid{}}$: report all intervals in the left subtree that overlap $q$ (check max-endpoint), then recurse into the left subtree. Also check if any interval stored at the current node overlaps $q$.
+2. If $q \geq x_{\mathrm{mid{}}$: similar for the right subtree.
 
 **Theorem 5.1.** Query in an interval tree takes $O(\log n + k)$ time where $k$ is the number of reported intervals.
 
@@ -919,7 +919,7 @@ An **interval tree** stores a set of intervals $[l_i, r_i]$ and supports:
 A **segment tree** stores an array $A[1..n]$ and supports:
 
 - Point update: set $A[i] = v$. $O(\log n)$.
-- Range query: compute $\mathrm{'\{'}combine{'\}'}(A[l], A[l+1], \ldots, A[r])$ for any associative operation (sum, min, max, gcd). $O(\log n)$.
+- Range query: compute $\mathrm{combine{}(A[l], A[l+1], \ldots, A[r])$ for any associative operation (sum, min, max, gcd). $O(\log n)$.
 
 **Structure.** A binary tree where:
 - The root represents the range $[1, n]$.
@@ -974,13 +974,13 @@ All updates take $O(\log n) = O(3)$ steps.
 
 A **Fenwick tree** (BIT) is a space-efficient alternative to the segment tree for prefix sum queries and point updates.
 
-**Structure.** An array `BIT[1..n]` where `BIT[i]` stores the sum of a specific range ending at index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm{'\{'}lsb{'\}'}(i) = 2^k$, then `BIT[i]` stores the sum of $A[i - 2^k + 1..i]$.
+**Structure.** An array `BIT[1..n]` where `BIT[i]` stores the sum of a specific range ending at index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm{lsb{}(i) = 2^k$, then `BIT[i]` stores the sum of $A[i - 2^k + 1..i]$.
 
 **Operations:**
 
 - **Prefix sum** $\sum_{j=1}^{i} A[j]$: Traverse `BIT` by removing lowest set bits. $O(\log n)$.
 - **Point update** $A[i] += \delta$: Traverse `BIT` by adding lowest set bits. $O(\log n)$.
-- **Range sum** $A[l..r]$: $\mathrm{'\{'}prefix{'\}'}(r) - \mathrm{'\{'}prefix{'\}'}(l-1)$. $O(\log n)$.
+- **Range sum** $A[l..r]$: $\mathrm{prefix{}(r) - \mathrm{prefix{}(l-1)$. $O(\log n)$.
 
 **Advantages over segment trees:** Simpler to implement, lower constant factor, $O(n)$ space (exactly $n+1$).
 
@@ -995,7 +995,7 @@ Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$, $n = 8$.
 
 Binary representations: 1=001, 2=010, 3=011, 4=100, 5=101, 6=110, 7=111, 8=1000.
 
-`BIT[i]` stores sum of $A[i - 2^k + 1..i]$ where $k = \mathrm{'\{'}lsb{'\}'}(i)$.
+`BIT[i]` stores sum of $A[i - 2^k + 1..i]$ where $k = \mathrm{lsb{}(i)$.
 
 - BIT[1] = $A[1]$ = 3 (lsb=1, range [1,1])
 - BIT[2] = $A[1] + A[2]$ = 4 (lsb=2, range [1,2])
@@ -1022,7 +1022,7 @@ Update $A[3] += 5$: Update BIT[3] += 5 (BIT[3] = 9). Then BIT[4] += 5 (BIT[4] = 
 
 ### 6.1 Suffix Arrays
 
-A **suffix array** $\mathrm{'\{'}SA{'\}'}$ of a string $S$ of length $n$ is a permutation of $\{0, 1, \ldots, n-1\}$ such that $S[\mathrm{'\{'}SA{'\}'}[0]..] < S[\mathrm{'\{'}SA{'\}'}[1]..] < \cdots < S[\mathrm{'\{'}SA{'\}'}[n-1]..]$ (lexicographic order of suffixes).
+A **suffix array** $\mathrm{SA{}$ of a string $S$ of length $n$ is a permutation of $\{0, 1, \ldots, n-1\}$ such that $S[\mathrm{SA{}[0]..] < S[\mathrm{SA{}[1]..] < \cdots < S[\mathrm{SA{}[n-1]..]$ (lexicographic order of suffixes).
 
 **Construction:** The most efficient algorithm (SA-IS) constructs the suffix array in $O(n)$ time. A simpler approach uses radix sort on prefixes of length $1, 2, 4, 8, \ldots$ in $O(n \log^2 n)$ time.
 
@@ -1047,11 +1047,11 @@ A **suffix tree** for a string $S$ of length $n$ is a compressed trie of all $n$
 
 ### 6.3 LCP Arrays
 
-The **LCP (Longest Common Prefix) array** stores $\mathrm{'\{'}LCP{'\}'}[i] =$ the length of the longest common prefix of suffixes $\mathrm{'\{'}SA{'\}'}[i]$ and $\mathrm{'\{'}SA{'\}'}[i-1]$.
+The **LCP (Longest Common Prefix) array** stores $\mathrm{LCP{}[i] =$ the length of the longest common prefix of suffixes $\mathrm{SA{}[i]$ and $\mathrm{SA{}[i-1]$.
 
 **Theorem 6.4 (Kasai).** The LCP array can be computed from the suffix array in $O(n)$ time.
 
-**Kasai's algorithm.** Uses the inverse suffix array $\mathrm{'\{'}SA{'\}'}^{-1}[\mathrm{'\{'}SA{'\}'}[i]] = i$ and processes suffixes in text order. When computing $\mathrm{'\{'}LCP{'\}'}[\mathrm{'\{'}SA{'\}'}^{-1}[j]]$, the result is at least $\mathrm{'\{'}LCP{'\}'}[\mathrm{'\{'}SA{'\}'}^{-1}[j-1]] - 1$.
+**Kasai's algorithm.** Uses the inverse suffix array $\mathrm{SA{}^{-1}[\mathrm{SA{}[i]] = i$ and processes suffixes in text order. When computing $\mathrm{LCP{}[\mathrm{SA{}^{-1}[j]]$, the result is at least $\mathrm{LCP{}[\mathrm{SA{}^{-1}[j-1]] - 1$.
 
 <details>
 <summary>Worked Example: Suffix Array and LCP Array</summary>
@@ -1076,16 +1076,16 @@ Sorted suffixes:
 4: na$
 2: nana$
 
-Suffix array: $\mathrm{'\{'}SA{'\}'} = [6, 5, 3, 1, 0, 4, 2]$
+Suffix array: $\mathrm{SA{} = [6, 5, 3, 1, 0, 4, 2]$
 
 LCP array (LCP with previous suffix):
-$\mathrm{'\{'}LCP{'\}'}[0] = 0$ (undefined for first)
-$\mathrm{'\{'}LCP{'\}'}[1] = 0$ (LCP("$", "a$") = 0)
-$\mathrm{'\{'}LCP{'\}'}[2] = 1$ (LCP("a$", "ana$") = 1)
-$\mathrm{'\{'}LCP{'\}'}[3] = 3$ (LCP("ana$", "anana$") = 3)
-$\mathrm{'\{'}LCP{'\}'}[4] = 0$ (LCP("anana$", "banana$") = 0)
-$\mathrm{'\{'}LCP{'\}'}[5] = 0$ (LCP("banana$", "na$") = 0)
-$\mathrm{'\{'}LCP{'\}'}[6] = 2$ (LCP("na$", "nana$") = 2)
+$\mathrm{LCP{}[0] = 0$ (undefined for first)
+$\mathrm{LCP{}[1] = 0$ (LCP("$", "a$") = 0)
+$\mathrm{LCP{}[2] = 1$ (LCP("a$", "ana$") = 1)
+$\mathrm{LCP{}[3] = 3$ (LCP("ana$", "anana$") = 3)
+$\mathrm{LCP{}[4] = 0$ (LCP("anana$", "banana$") = 0)
+$\mathrm{LCP{}[5] = 0$ (LCP("banana$", "na$") = 0)
+$\mathrm{LCP{}[6] = 2$ (LCP("na$", "nana$") = 2)
 
 LCP array: $[0, 0, 1, 3, 0, 0, 2]$
 
@@ -1116,10 +1116,10 @@ A good potential function satisfies:
 
 | Data structure | Potential function $\Phi$ |
 |---------------|--------------------------|
-| Dynamic array | $\Phi = 2 \cdot \mathrm{'\{'}num{'\}'} - \mathrm{'\{'}size{'\}'}$ (credit per element) |
+| Dynamic array | $\Phi = 2 \cdot \mathrm{num{} - \mathrm{size{}$ (credit per element) |
 | Binary counter | $\Phi =$ number of 1-bits |
 | Stack | $\Phi =$ number of elements |
-| Splay tree | $\Phi = \sum_x \log(\mathrm{'\{'}size{'\}'}(x))$ |
+| Splay tree | $\Phi = \sum_x \log(\mathrm{size{}(x))$ |
 | Union-Find | $\Phi$ based on node levels |
 
 ### 7.3 Limitations of Amortised Analysis
@@ -1421,7 +1421,7 @@ A **functional queue** supports enqueue and dequeue in $O(1)$ amortised time usi
 
 **Problem 10.** Compute the suffix array and LCP array for the string "mississippi$". Use the result to find the longest repeated substring.
 
-**Problem 11.** Prove that the LCP array satisfies $\sum_{i=1}^{n} \mathrm{'\{'}LCP{'\}'}[i] = O(n^2)$ in the worst case, and construct a string that achieves this bound (up to constants).
+**Problem 11.** Prove that the LCP array satisfies $\sum_{i=1}^{n} \mathrm{LCP{}[i] = O(n^2)$ in the worst case, and construct a string that achieves this bound (up to constants).
 
 ### 8.4 Analysis (Problems 12--15)
 

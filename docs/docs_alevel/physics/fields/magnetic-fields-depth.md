@@ -23,7 +23,7 @@ $$\boxed{B = \frac{F}{IL\sin\theta}}$$
 
 where $F$ is the force on a wire of length $L$ carrying current $I$ at angle $\theta$ to the field.
 
-SI unit: tesla (T). $1\ \mathrm{'\{'}T{'\}'} = 1\ \mathrm{N\,A^{-1}\,m^{-1}}$.
+SI unit: tesla (T). $1\ \mathrm{T{} = 1\ \mathrm{N\,A^{-1}\,m^{-1}}$.
 
 **Direction of force:** Given by Fleming's Left-Hand Rule:
 
@@ -114,7 +114,7 @@ $\mathbf{'\{'}F{'\}'} \perp \mathbf{'\{'}B{'\}'}$, there is no force component a
 
 The particle traces a **helix** with pitch:
 
-$$\boxed{\mathrm{'\{'}pitch{'\}'} = v_\parallel\, T = \frac{2\pi m v\cos\theta}{Bq}}$$
+$$\boxed{\mathrm{pitch{} = v_\parallel\, T = \frac{2\pi m v\cos\theta}{Bq}}$$
 
 ## 5. Velocity Selector
 
@@ -139,7 +139,7 @@ $$\boxed{\Phi = BA\cos\theta}$$
 
 where $A$ is the area and $\theta$ is the angle between the field and the normal to the area.
 
-SI unit: weber (Wb). $1\ \mathrm{'\{'}Wb{'\}'} = 1\ \mathrm{'\{'}T\,m^2{'\}'}$.
+SI unit: weber (Wb). $1\ \mathrm{Wb{} = 1\ \mathrm{T\,m^2{}$.
 
 ### Faraday's Law
 
@@ -251,7 +251,7 @@ When the current in a coil changes, the changing flux through the coil itself in
 
 $$\boxed{\varepsilon = -L\frac{dI}{dt}}$$
 
-where $L$ is the self-inductance in henry (H). $1\ \mathrm{'\{'}H{'\}'} = 1\ \mathrm{Wb\,A^{-1}} = 1\ \mathrm{V\,s\,A^{-1}}$.
+where $L$ is the self-inductance in henry (H). $1\ \mathrm{H{} = 1\ \mathrm{Wb\,A^{-1}} = 1\ \mathrm{V\,s\,A^{-1}}$.
 
 ### Energy Stored in an Inductor
 
@@ -384,7 +384,7 @@ $r = \frac{m_p v_\perp}{Bq} = \frac{1.67 \times 10^{-27} \times 2.5 \times 10^6}
 
 $T = 2\pi m_p/(Bq) = 2\pi \times 1.67 \times 10^{-27}/(0.40 \times 1.60 \times 10^{-19}) = 1.64 \times 10^{-7}$ s.
 
-$\mathrm{'\{'}pitch{'\}'} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$ cm.
+$\mathrm{pitch{} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$ cm.
 
 </details>
 

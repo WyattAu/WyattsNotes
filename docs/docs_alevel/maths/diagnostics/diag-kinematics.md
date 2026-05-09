@@ -293,7 +293,7 @@ A particle of mass $0.5$ kg is projected vertically upwards from ground level wi
 
 **(a)** Work-energy principle: the work done by all forces equals the change in kinetic energy.
 
-At maximum height, $v = 0$, so $\Delta\mathrm{'\{'}KE{'\}'} = 0 - \frac{1}{2}(0.5)(20^2) = -100$ J.
+At maximum height, $v = 0$, so $\Delta\mathrm{KE{} = 0 - \frac{1}{2}(0.5)(20^2) = -100$ J.
 
 Forces acting on the particle during the ascent:
 - Weight $= mg = 0.5 \times 9.8 = 4.9$ N (downward).

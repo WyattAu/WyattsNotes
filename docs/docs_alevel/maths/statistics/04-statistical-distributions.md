@@ -41,7 +41,7 @@ probabilities $P(X = x_i) = p_i$ satisfying:
 ### 1.2 Expectation and variance
 
 $$E(X) = \mu = \sum x_i\,p_i$$
-$$\mathrm{'\{'}Var{'\}'}(X) = \sigma^2 = E(X^2) - [E(X)]^2 = \sum x_i^2\,p_i - \mu^2$$
+$$\mathrm{Var{}(X) = \sigma^2 = E(X^2) - [E(X)]^2 = \sum x_i^2\,p_i - \mu^2$$
 
 <hr />
 
@@ -72,13 +72,13 @@ $E(X_i) = 1 \cdot p + 0 \cdot (1-p) = p$.
 
 By linearity of expectation: $E(X) = \sum E(X_i) = np$. $\blacksquare$
 
-### 2.3 Proof that $\mathrm{'\{'}Var{'\}'}(X) = np(1-p)$
+### 2.3 Proof that $\mathrm{Var{}(X) = np(1-p)$
 
 **Proof.** $E(X_i^2) = 1^2 \cdot p + 0^2 \cdot (1-p) = p$.
 
-$\mathrm{'\{'}Var{'\}'}(X_i) = E(X_i^2) - [E(X_i)]^2 = p - p^2 = p(1-p)$.
+$\mathrm{Var{}(X_i) = E(X_i^2) - [E(X_i)]^2 = p - p^2 = p(1-p)$.
 
-Since the $X_i$ are independent: $\mathrm{'\{'}Var{'\}'}(X) = \sum \mathrm{'\{'}Var{'\}'}(X_i) = np(1-p)$.
+Since the $X_i$ are independent: $\mathrm{Var{}(X) = \sum \mathrm{Var{}(X_i) = np(1-p)$.
 $\blacksquare$
 
 ### 2.4 Properties
@@ -109,7 +109,7 @@ By the binomial theorem, $\sum_{j=0}^{n-1}\binom{n-1}{j}p^j(1-p)^{n-1-j} = [p + 
 
 Therefore $E(X) = np$. $\blacksquare$
 
-### 2.6 Direct derivation of $\mathrm{'\{'}Var{'\}'}(X) = np(1-p)$ from the PMF
+### 2.6 Direct derivation of $\mathrm{Var{}(X) = np(1-p)$ from the PMF
 
 **Proof.** First compute $E(X(X-1))$:
 
@@ -128,7 +128,7 @@ $\sum_{j=0}^{n-2}\binom{n-2}{j}p^j(1-p)^{n-2-j} = 1$.
 
 Now $E(X^2) = E(X(X-1)) + E(X) = n(n-1)p^2 + np$.
 
-$$\mathrm{'\{'}Var{'\}'}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np(1-p) \quad \blacksquare$$
+$$\mathrm{Var{}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np(1-p) \quad \blacksquare$$
 
 <hr />
 
@@ -152,7 +152,7 @@ $$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\,e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 ### 3.3 Properties
 
 - Bell-shaped, symmetric about $\mu$.
-- $E(X) = \mu$, $\mathrm{'\{'}Var{'\}'}(X) = \sigma^2$.
+- $E(X) = \mu$, $\mathrm{Var{}(X) = \sigma^2$.
 - Approximately 68% of data within $\mu \pm \sigma$, 95% within $\mu \pm 2\sigma$, 99.7% within
   $\mu \pm 3\sigma$.
 
@@ -187,7 +187,7 @@ direction.
 
 ### 4.1 Definition
 
-$X \sim \mathrm{'\{'}Po{'\}'}(\lambda)$ models the number of events in a fixed interval when events occur
+$X \sim \mathrm{Po{}(\lambda)$ models the number of events in a fixed interval when events occur
 independently at a constant average rate $\lambda$.
 
 $$P(X = k) = \frac{e^{-\lambda}\lambda^k}{k!}, \quad k = 0, 1, 2, \ldots$$
@@ -195,7 +195,7 @@ $$P(X = k) = \frac{e^{-\lambda}\lambda^k}{k!}, \quad k = 0, 1, 2, \ldots$$
 ### 4.2 Derivation as a limit of the Binomial
 
 **Theorem.** If $n \to \infty$ and $p \to 0$ such that $np = \lambda$ remains constant, then
-$B(n, p) \to \mathrm{'\{'}Po{'\}'}(\lambda)$.
+$B(n, p) \to \mathrm{Po{}(\lambda)$.
 
 **Proof.**
 
@@ -228,7 +228,7 @@ E(X) &= \sum_{k=0}^{\infty}k \cdot \frac{e^{-\lambda}\lambda^k}{k!} = \sum_{k=1}
 \end{aligned}
 $$
 
-### 4.4 Proof that $\mathrm{'\{'}Var{'\}'}(X) = \lambda$
+### 4.4 Proof that $\mathrm{Var{}(X) = \lambda$
 
 **Proof.** First compute $E(X(X-1))$:
 
@@ -241,12 +241,12 @@ $$
 
 $E(X^2) = E(X(X-1)) + E(X) = \lambda^2 + \lambda$.
 
-$\mathrm{'\{'}Var{'\}'}(X) = E(X^2) - [E(X)]^2 = \lambda^2 + \lambda - \lambda^2 = \lambda$. $\blacksquare$
+$\mathrm{Var{}(X) = E(X^2) - [E(X)]^2 = \lambda^2 + \lambda - \lambda^2 = \lambda$. $\blacksquare$
 
 ### 4.5 Additivity
 
-If $X \sim \mathrm{'\{'}Po{'\}'}(\lambda)$ and $Y \sim \mathrm{'\{'}Po{'\}'}(\mu)$ are independent, then
-$X + Y \sim \mathrm{'\{'}Po{'\}'}(\lambda + \mu)$.
+If $X \sim \mathrm{Po{}(\lambda)$ and $Y \sim \mathrm{Po{}(\mu)$ are independent, then
+$X + Y \sim \mathrm{Po{}(\lambda + \mu)$.
 
 ### 4.6 Conditions for the Poisson model
 
@@ -259,7 +259,7 @@ The Poisson distribution is appropriate when all of the following hold:
   **negligible**.
 
 These are sometimes called the **Poisson postulates**. When they are satisfied, the number of events
-in any interval of length $t$ follows $\mathrm{'\{'}Po{'\}'}(\lambda t)$.
+in any interval of length $t$ follows $\mathrm{Po{}(\lambda t)$.
 
 Typical applications include: calls arriving at a call centre per hour, typing errors per page,
 radioactive decays per second, and cars passing a checkpoint per minute.
@@ -273,7 +273,7 @@ Poisson model is not appropriate.
 ### 4.7 Poisson approximation to the Binomial
 
 **Practical rule.** When $n \gt{} 50$ and $p \lt{} 0.1$, we may approximate $B(n, p)$ by
-$\mathrm{'\{'}Po{'\}'}(\lambda)$ where $\lambda = np$.
+$\mathrm{Po{}(\lambda)$ where $\lambda = np$.
 
 **Justification.** The theoretical result in Section 4.2 shows that as $n \to \infty$ and $p \to 0$
 with $np = \lambda$ held constant, the binomial PMF converges pointwise to the Poisson PMF. The
@@ -300,7 +300,7 @@ case of many trials with moderate success probability.
 | Situation                                  | Distribution                   |
 | ------------------------------------------ | ------------------------------ |
 | Fixed $n$ trials, success/failure          | Binomial $B(n,p)$              |
-| Events in continuous interval, rare events | Poisson $\mathrm{'\{'}Po{'\}'}(\lambda)$ |
+| Events in continuous interval, rare events | Poisson $\mathrm{Po{}(\lambda)$ |
 | Continuous, bell-shaped                    | Normal $N(\mu,\sigma^2)$       |
 
 <hr />
@@ -327,18 +327,18 @@ The key step is $\sum p_i = 1$, since the probabilities sum to 1.
 
 ### 6.3 Effect on variance
 
-**Theorem.** If $Y = aX + b$, then $\mathrm{'\{'}Var{'\}'}(Y) = a^2\mathrm{'\{'}Var{'\}'}(X)$.
+**Theorem.** If $Y = aX + b$, then $\mathrm{Var{}(Y) = a^2\mathrm{Var{}(X)$.
 
 **Proof.**
 
 $$
 \begin{aligned}
-\mathrm{'\{'}Var{'\}'}(Y) &= E(Y^2) - [E(Y)]^2 \\
+\mathrm{Var{}(Y) &= E(Y^2) - [E(Y)]^2 \\
 &= E[(aX + b)^2] - [aE(X) + b]^2 \\
 &= E[a^2X^2 + 2abX + b^2] - \\{a^2[E(X)]^2 + 2abE(X) + b^2\\} \\
 &= a^2E(X^2) + 2abE(X) + b^2 - a^2[E(X)]^2 - 2abE(X) - b^2 \\
 &= a^2\\{E(X^2) - [E(X)]^2\\} \\
-&= a^2\mathrm{'\{'}Var{'\}'}(X) \quad \blacksquare
+&= a^2\mathrm{Var{}(X) \quad \blacksquare
 \end{aligned}
 $$
 
@@ -352,9 +352,9 @@ measured in **squared units** of the original variable.
 
 ### 6.4 Effect on standard deviation
 
-Since $\mathrm{'\{'}Var{'\}'}(Y) = a^2\mathrm{'\{'}Var{'\}'}(X)$, taking square roots gives:
+Since $\mathrm{Var{}(Y) = a^2\mathrm{Var{}(X)$, taking square roots gives:
 
-$$\mathrm{'\{'}SD{'\}'}(Y) = |a|\,\mathrm{'\{'}SD{'\}'}(X)$$
+$$\mathrm{SD{}(Y) = |a|\,\mathrm{SD{}(X)$$
 
 The absolute value ensures the standard deviation remains non-negative regardless of the sign of
 $a$.
@@ -402,7 +402,7 @@ A call centre receives an average of 4.5 calls per minute. Find the probability 
 
 <details>
 <summary>Solution 3</summary>
-$X \sim \mathrm{'\{'}Po{'\}'}(4.5)$.
+$X \sim \mathrm{Po{}(4.5)$.
 
 $P(X=6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac{0.01111 \times 8303.77}{720} \approx 0.1281$.
 
@@ -420,7 +420,7 @@ $X \sim B(100, 0.04)$. Use the Poisson approximation to find $P(X \leq 2)$.
 
 <details>
 <summary>Solution 4</summary>
-$\lambda = np = 4$. $X \approx \mathrm{'\{'}Po{'\}'}(4)$.
+$\lambda = np = 4$. $X \approx \mathrm{Po{}(4)$.
 
 $P(X \leq 2) = e^{-4}\left(1 + 4 + \dfrac{16}{2}\right) = e^{-4}(1 + 4 + 8) = 13e^{-4} \approx 0.2381$.
 
@@ -446,12 +446,12 @@ From tables: $c \approx 1.96$.
 
 <details>
 <summary>Problem 6</summary>
-The number of emails received per hour follows $\mathrm{'\{'}Po{'\}'}(12)$. Find the probability of receiving between 10 and 15 emails (inclusive) in a given hour.
+The number of emails received per hour follows $\mathrm{Po{}(12)$. Find the probability of receiving between 10 and 15 emails (inclusive) in a given hour.
 </details>
 
 <details>
 <summary>Solution 6</summary>
-$X \sim \mathrm{'\{'}Po{'\}'}(12)$.
+$X \sim \mathrm{Po{}(12)$.
 
 $P(10 \leq X \leq 15) = P(X \leq 15) - P(X \leq 9)$.
 
@@ -485,16 +485,16 @@ Proportion rejected $= 0.0668 + 0.0668 = 0.1336$ (13.36%).
 
 <details>
 <summary>Problem 8</summary>
-Prove that $E(aX + b) = aE(X) + b$ and $\mathrm{'\{'}Var{'\}'}(aX + b) = a^2\mathrm{'\{'}Var{'\}'}(X)$.
+Prove that $E(aX + b) = aE(X) + b$ and $\mathrm{Var{}(aX + b) = a^2\mathrm{Var{}(X)$.
 </details>
 
 <details>
 <summary>Solution 8</summary>
 $E(aX+b) = \sum(a x_i + b)p_i = a\sum x_i p_i + b\sum p_i = aE(X) + b$. ✓
 
-$\mathrm{'\{'}Var{'\}'}(aX+b) = E[(aX+b)^2] - [E(aX+b)]^2 = E[a^2X^2 + 2abX + b^2] - [aE(X)+b]^2$
+$\mathrm{Var{}(aX+b) = E[(aX+b)^2] - [E(aX+b)]^2 = E[a^2X^2 + 2abX + b^2] - [aE(X)+b]^2$
 $= a^2E(X^2) + 2abE(X) + b^2 - a^2[E(X)]^2 - 2abE(X) - b^2$
-$= a^2[E(X^2) - (E(X))^2] = a^2\mathrm{'\{'}Var{'\}'}(X)$. ✓
+$= a^2[E(X^2) - (E(X))^2] = a^2\mathrm{Var{}(X)$. ✓
 
 **If you get this wrong, revise:** [Expectation and Variance](#12-expectation-and-variance) —
 Section 1.2.
@@ -519,12 +519,12 @@ $P(X \gt{} 35) \approx P\!\left(Z \gt{} \dfrac{35.5 - 30}{5.05}\right) = P(Z \gt
 
 <details>
 <summary>Problem 10</summary>
-If $X \sim \mathrm{'\{'}Po{'\}'}(3)$ and $Y \sim \mathrm{'\{'}Po{'\}'}(5)$ are independent, find $P(X + Y = 6)$.
+If $X \sim \mathrm{Po{}(3)$ and $Y \sim \mathrm{Po{}(5)$ are independent, find $P(X + Y = 6)$.
 </details>
 
 <details>
 <summary>Solution 10</summary>
-By additivity: $X + Y \sim \mathrm{'\{'}Po{'\}'}(3+5) = \mathrm{'\{'}Po{'\}'}(8)$.
+By additivity: $X + Y \sim \mathrm{Po{}(3+5) = \mathrm{Po{}(8)$.
 
 $P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac{e^{-8} \times 262144}{720} \approx \dfrac{0.000335 \times 262144}{720} \approx 0.1221$.
 
@@ -556,18 +556,18 @@ Section 2.5.
 
 <details>
 <summary>Problem 12</summary>
-$X \sim \mathrm{'\{'}Po{'\}'}(7)$. Let $Y = 3X - 2$. Find $E(Y)$ and $\mathrm{'\{'}Var{'\}'}(Y)$.
+$X \sim \mathrm{Po{}(7)$. Let $Y = 3X - 2$. Find $E(Y)$ and $\mathrm{Var{}(Y)$.
 </details>
 
 <details>
 <summary>Solution 12</summary>
-For $X \sim \mathrm{'\{'}Po{'\}'}(7)$: $E(X) = 7$ and $\mathrm{'\{'}Var{'\}'}(X) = 7$.
+For $X \sim \mathrm{Po{}(7)$: $E(X) = 7$ and $\mathrm{Var{}(X) = 7$.
 
-Using the coding formulae $E(aX+b) = aE(X)+b$ and $\mathrm{'\{'}Var{'\}'}(aX+b) = a^2\mathrm{'\{'}Var{'\}'}(X)$:
+Using the coding formulae $E(aX+b) = aE(X)+b$ and $\mathrm{Var{}(aX+b) = a^2\mathrm{Var{}(X)$:
 
 $E(Y) = 3(7) - 2 = 19$.
 
-$\mathrm{'\{'}Var{'\}'}(Y) = 3^2 \times 7 = 63$.
+$\mathrm{Var{}(Y) = 3^2 \times 7 = 63$.
 
 Note that the additive constant $-2$ affects the mean but not the variance.
 
@@ -586,7 +586,7 @@ $X \sim B(80, 0.03)$. State whether the Poisson approximation is valid, giving r
 Check conditions: $n = 80 \gt{} 50$ and $p = 0.03 \lt{} 0.1$. Both conditions are satisfied, so the
 Poisson approximation is valid with $\lambda = np = 80 \times 0.03 = 2.4$.
 
-$X \approx \mathrm{'\{'}Po{'\}'}(2.4)$.
+$X \approx \mathrm{Po{}(2.4)$.
 
 $P(X \leq 1) = P(X=0) + P(X=1) = e^{-2.4}\left(1 + 2.4\right) = 3.4\,e^{-2.4} \approx 3.4 \times 0.0907 \approx 0.3085$.
 
@@ -597,16 +597,16 @@ $P(X \leq 1) = P(X=0) + P(X=1) = e^{-2.4}\left(1 + 2.4\right) = 3.4\,e^{-2.4} \a
 
 <details>
 <summary>Problem 14</summary>
-A discrete random variable $X$ has $E(X) = 5$ and $\mathrm{'\{'}Var{'\}'}(X) = 4$. Let $W = 2X + 3$. Find $E(W)$ and $\mathrm{'\{'}Var{'\}'}(W)$.
+A discrete random variable $X$ has $E(X) = 5$ and $\mathrm{Var{}(X) = 4$. Let $W = 2X + 3$. Find $E(W)$ and $\mathrm{Var{}(W)$.
 </details>
 
 <details>
 <summary>Solution 14</summary>
 $E(W) = 2E(X) + 3 = 2(5) + 3 = 13$.
 
-$\mathrm{'\{'}Var{'\}'}(W) = 2^2 \times \mathrm{'\{'}Var{'\}'}(X) = 4 \times 4 = 16$.
+$\mathrm{Var{}(W) = 2^2 \times \mathrm{Var{}(X) = 4 \times 4 = 16$.
 
-$\mathrm{'\{'}SD{'\}'}(W) = \sqrt{16} = 4$.
+$\mathrm{SD{}(W) = \sqrt{16} = 4$.
 
 **If you get this wrong, revise:** [Coding of Random Variables](#6-coding-of-random-variables) —
 Section 6.
@@ -615,7 +615,7 @@ Section 6.
 
 <details>
 <summary>Problem 15</summary>
-Starting from $E(X(X-1)) = \sum_{k=0}^{n} k(k-1)\binom{n}{k}p^k(1-p)^{n-k}$, derive $\mathrm{'\{'}Var{'\}'}(X) = np(1-p)$ for $X \sim B(n,p)$.
+Starting from $E(X(X-1)) = \sum_{k=0}^{n} k(k-1)\binom{n}{k}p^k(1-p)^{n-k}$, derive $\mathrm{Var{}(X) = np(1-p)$ for $X \sim B(n,p)$.
 </details>
 
 <details>
@@ -626,10 +626,10 @@ $$E(X(X-1)) = \sum_{k=2}^{n} n(n-1)\binom{n-2}{k-2}p^k(1-p)^{n-k} = n(n-1)p^2\su
 
 Then $E(X^2) = E(X(X-1)) + E(X) = n(n-1)p^2 + np$.
 
-$\mathrm{'\{'}Var{'\}'}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np(1-p)$.
+$\mathrm{Var{}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np(1-p)$.
 
 **If you get this wrong, revise:**
-[Direct derivation of $\mathrm{'\{'}Var{'\}'}(X) = np(1-p)$ from the PMF](#26-direct-derivation-of-mathrmvarx--np1-p-from-the-pmf)
+[Direct derivation of $\mathrm{Var{}(X) = np(1-p)$ from the PMF](#26-direct-derivation-of-mathrmvarx--np1-p-from-the-pmf)
 — Section 2.6.
 
 </details>
@@ -644,7 +644,7 @@ $X \sim B(120, 0.025)$. (a) Show that the Poisson approximation is appropriate. 
 (a) $n = 120 \gt{} 50$ and $p = 0.025 \lt{} 0.1$, so the Poisson approximation is appropriate.
 $\lambda = np = 120 \times 0.025 = 3$.
 
-(b) $X \approx \mathrm{'\{'}Po{'\}'}(3)$.
+(b) $X \approx \mathrm{Po{}(3)$.
 
 $$P(X = 5) = \frac{e^{-3} \times 3^5}{5!} = \frac{e^{-3} \times 243}{120} = 2.025\,e^{-3} \approx 2.025 \times 0.0498 \approx 0.1008$$
 
@@ -660,16 +660,16 @@ since $p$ is small.
 <details>
 <summary>Problem 17</summary>
 Temperatures in a city are modelled by $X \sim N(15, 9)$ in degrees Celsius. The temperature in
-Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$, $\mathrm{'\{'}Var{'\}'}(F)$, and $P(F \gt{} 68)$.
+Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$, $\mathrm{Var{}(F)$, and $P(F \gt{} 68)$.
 </details>
 
 <details>
 <summary>Solution 17</summary>
-$E(F) = \frac{9}{5}E(X) + 32 = \frac{9}{5}(15) + 32 = 27 + 32 = 59^\circ\mathrm{'\{'}F{'\}'}$.
+$E(F) = \frac{9}{5}E(X) + 32 = \frac{9}{5}(15) + 32 = 27 + 32 = 59^\circ\mathrm{F{}$.
 
-$\mathrm{'\{'}Var{'\}'}(F) = \left(\frac{9}{5}\right)^2 \times 9 = \frac{81}{25} \times 9 = \frac{729}{25} = 29.16$.
+$\mathrm{Var{}(F) = \left(\frac{9}{5}\right)^2 \times 9 = \frac{81}{25} \times 9 = \frac{729}{25} = 29.16$.
 
-$\mathrm{'\{'}SD{'\}'}(F) = \sqrt{29.16} = 5.4$.
+$\mathrm{SD{}(F) = \sqrt{29.16} = 5.4$.
 
 $P(F \gt{} 68) = P\!\left(Z \gt{} \dfrac{68 - 59}{5.4}\right) = P(Z \gt{} 1.667) \approx 1 - 0.9522 = 0.0478$.
 

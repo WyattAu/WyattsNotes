@@ -26,13 +26,13 @@ Consider two countries, A and B, producing two goods, wine and cloth. Output per
 
 Opportunity costs:
 
-- Country A: 1 bottle of wine costs $3/6 = 0.5\;\mathrm{'\{'}m{'\}'}$ of cloth; 1 metre of cloth costs
+- Country A: 1 bottle of wine costs $3/6 = 0.5\;\mathrm{m{}$ of cloth; 1 metre of cloth costs
   $6/3 = 2$ bottles of wine
-- Country B: 1 bottle of wine costs $4/2 = 2\;\mathrm{'\{'}m{'\}'}$ of cloth; 1 metre of cloth costs
+- Country B: 1 bottle of wine costs $4/2 = 2\;\mathrm{m{}$ of cloth; 1 metre of cloth costs
   $2/4 = 0.5$ bottles of wine
 
-Country A has a comparative advantage in wine (lower opportunity cost: $0.5\;\mathrm{'\{'}m{'\}'}$ vs.
-$2\;\mathrm{'\{'}m{'\}'}$). Country B has a comparative advantage in cloth (lower opportunity cost: $0.5$
+Country A has a comparative advantage in wine (lower opportunity cost: $0.5\;\mathrm{m{}$ vs.
+$2\;\mathrm{m{}$). Country B has a comparative advantage in cloth (lower opportunity cost: $0.5$
 bottles vs. $2$ bottles).
 
 Both countries gain from specialising in the good in which they have a comparative advantage and
@@ -104,7 +104,7 @@ endowments (e.g., Germany and France trade cars with each other).
 the UK exports Jaguar cars to Germany while importing BMW cars from Germany). The **Grubel-Lloyd
 index** measures the extent of intra-industry trade:
 
-$$\mathrm{'\{'}GL{'\}'}_i = 1 - \frac{|X_i - M_i|}{X_i + M_i}$$
+$$\mathrm{GL{}_i = 1 - \frac{|X_i - M_i|}{X_i + M_i}$$
 
 Where $X_i$ and $M_i$ are exports and imports of industry $i$. GL ranges from 0 (pure
 inter-industry trade) to 1 (pure intra-industry trade).
@@ -115,7 +115,7 @@ inter-industry trade) to 1 (pure intra-industry trade).
 
 The **terms of trade** (ToT) measure the ratio of a country's export prices to its import prices:
 
-$$\mathrm{'\{'}ToT{'\}'} = \frac{\mathrm{'\{'}Index\ of\ Export\ Prices{'\}'}}{\mathrm{'\{'}Index\ of\ Import\ Prices{'\}'}} \times 100$$
+$$\mathrm{ToT{} = \frac{\mathrm{Index\ of\ Export\ Prices{}}{\mathrm{Index\ of\ Import\ Prices{}} \times 100$$
 
 - An **improvement** in the terms of trade (ToT rises) means a country can buy more imports for a
   given volume of exports -- a favourable change
@@ -133,7 +133,7 @@ A ToT improvement is not always beneficial:
 
 The **income terms of trade** adjusts for export volume:
 
-$$\mathrm{'\{'}Income\ ToT{'\}'} = \mathrm{'\{'}ToT{'\}'} \times \text{'\{'}Volume of exports{'\}'}$$
+$$\mathrm{Income\ ToT{} = \mathrm{ToT{} \times \text{'\{'}Volume of exports{'\}'}$$
 
 This provides a better indicator of a country's capacity to import.
 
@@ -190,7 +190,7 @@ Records transactions in financial assets and liabilities:
 
 ### The Balance of Payments Identity
 
-$$\mathrm{'\{'}Current\ Account{'\}'} + \mathrm{'\{'}Capital\ Account{'\}'} + \mathrm{'\{'}Financial\ Account{'\}'} + \mathrm{'\{'}Statistical\ Discrepancy{'\}'} = 0$$
+$$\mathrm{Current\ Account{} + \mathrm{Capital\ Account{} + \mathrm{Financial\ Account{} + \mathrm{Statistical\ Discrepancy{} = 0$$
 
 A current account deficit must be financed by a surplus on the capital and financial accounts (net
 capital inflows). A current account surplus corresponds to net capital outflows.
@@ -288,7 +288,7 @@ determined by supply and demand in the foreign exchange market.
 A currency depreciation improves the current account balance only if the sum of the absolute values
 of PED for exports and PED for imports exceeds 1:
 
-$$|\mathrm{'\{'}PED{'\}'}_X| + |\mathrm{'\{'}PED{'\}'}_M| > 1$$
+$$|\mathrm{PED{}_X| + |\mathrm{PED{}_M| > 1$$
 
 **Intuition:** if demand for both exports and imports is elastic, the depreciation increases export
 revenue (more units sold at a lower price per unit) and reduces import expenditure (fewer units
@@ -364,7 +364,7 @@ the tariff, reducing import volumes and increasing domestic production.
   bought at the world price but not at the tariff-inclusive price) and one from inefficient
   domestic production (domestic firms producing at higher cost than the world price)
 
-$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times t \times (\text{'\{'}reduction in imports{'\}'}) + \frac{1}{2} \times t \times (\text{'\{'}additional domestic production at higher cost{'\}'})$$
+$$\mathrm{DWL{} = \frac{1}{2} \times t \times (\text{'\{'}reduction in imports{'\}'}) + \frac{1}{2} \times t \times (\text{'\{'}additional domestic production at higher cost{'\}'})$$
 
 ### Quotas
 
@@ -801,7 +801,7 @@ depreciates by $15\%$.
 
 (c) How might the result differ in the long run?
 
-(a) $|\mathrm{'\{'}PED{'\}'}_X| + |\mathrm{'\{'}PED{'\}'}_M| = 0.6 + 0.3 = 0.9 < 1$
+(a) $|\mathrm{PED{}_X| + |\mathrm{PED{}_M| = 0.6 + 0.3 = 0.9 < 1$
 
 The Marshall-Lerner condition is NOT satisfied. The depreciation will worsen the current account
 in the short run because demand for both exports and imports is inelastic. The increase in export
@@ -821,7 +821,7 @@ after depreciation:
 - Foreign buyers increase purchases of cheaper exports
 - New contracts are negotiated at the new exchange rate
 
-If long-run PEDs satisfy the condition (e.g., $|\mathrm{'\{'}PED{'\}'}_X| = 1.2$ and $|\mathrm{'\{'}PED{'\}'}_M| = 0.8$,
+If long-run PEDs satisfy the condition (e.g., $|\mathrm{PED{}_X| = 1.2$ and $|\mathrm{PED{}_M| = 0.8$,
 sum $= 2.0 > 1$), the current account will eventually improve. The J-curve describes the path
 from short-run deterioration to long-run improvement.
 
@@ -870,7 +870,7 @@ Government revenue $= 10 \times 0 = 0$ (no imports)
 
 Deadweight loss:
 
-$\mathrm{'\{'}DWL{'\}'} = |\Delta\text{'\{'}CS{'\}'}| - \Delta\text{'\{'}PS{'\}'} - \text{'\{'}Govt revenue{'\}'} = 900 - 700 - 0 = 200$
+$\mathrm{DWL{} = |\Delta\text{'\{'}CS{'\}'}| - \Delta\text{'\{'}PS{'\}'} - \text{'\{'}Govt revenue{'\}'} = 900 - 700 - 0 = 200$
 
 Alternatively, DWL $= \frac{1}{2} \times 10 \times (100 - 80) + \frac{1}{2} \times 10 \times (80 - 60) = 100 + 100 = 200$
 
@@ -899,11 +899,11 @@ the product in the US market is $-1.5$.
 
 (b) Before: $100 \times 1.10 = \$110$. After: $100 \times 1.25 = \$125$.
 
-(c) $\mathrm{'\{'}PED{'\}'} = \frac{\%\Delta Q_d}{\%\Delta P}$
+(c) $\mathrm{PED{} = \frac{\%\Delta Q_d}{\%\Delta P}$
 
 $\%\Delta P = \frac{125 - 110}{110} \times 100 = 13.64\%$
 
-$\%\Delta Q_d = \mathrm{'\{'}PED{'\}'} \times \%\Delta P = -1.5 \times 13.64\% = -20.45\%$
+$\%\Delta Q_d = \mathrm{PED{} \times \%\Delta P = -1.5 \times 13.64\% = -20.45\%$
 
 Quantity demanded falls by approximately $20.45\%$.
 
@@ -977,14 +977,14 @@ difference between the autarky (no-trade) opportunity cost ratios and the terms 
 Let $a_1$ and $a_2$ be the unit labour requirements for goods 1 and 2 in Country A, and $b_1$
 and $b_2$ in Country B. The opportunity cost of good 1 in terms of good 2 is:
 
-- Country A: $\mathrm{'\{'}OC{'\}'}_A = a_1 / a_2$
-- Country B: $\mathrm{'\{'}OC{'\}'}_B = b_1 / b_2$
+- Country A: $\mathrm{OC{}_A = a_1 / a_2$
+- Country B: $\mathrm{OC{}_B = b_1 / b_2$
 
-Country A has a comparative advantage in good 1 if $\mathrm{'\{'}OC{'\}'}_A < \mathrm{'\{'}OC{'\}'}_B$.
+Country A has a comparative advantage in good 1 if $\mathrm{OC{}_A < \mathrm{OC{}_B$.
 
 The terms of trade must lie between the two opportunity cost ratios:
 
-$$\mathrm{'\{'}OC{'\}'}_A < \text{'\{'}ToT{'\}'} < \mathrm{'\{'}OC{'\}'}_B$$
+$$\mathrm{OC{}_A < \text{'\{'}ToT{'\}'} < \mathrm{OC{}_B$$
 
 Any terms of trade within this range makes both countries better off than under autarky.
 
@@ -1048,7 +1048,7 @@ Both countries are strictly better off.
 
 The terms of trade index measures the ratio of export prices to import prices:
 
-$$\mathrm{'\{'}ToT{'\}'} = \frac{P_X}{P_M} \times 100$$
+$$\mathrm{ToT{} = \frac{P_X}{P_M} \times 100$$
 
 Where $P_X$ is the export price index and $P_M$ is the import price index, both with base year = 100.
 
@@ -1112,14 +1112,14 @@ economy.
 
 ### The Balance of Payments Identity
 
-$$\mathrm{'\{'}CA{'\}'} + \mathrm{'\{'}KA{'\}'} + \mathrm{'\{'}FA{'\}'} + \mathrm{'\{'}EO{'\}'} = 0$$
+$$\mathrm{CA{} + \mathrm{KA{} + \mathrm{FA{} + \mathrm{EO{} = 0$$
 
 Where CA = Current Account, KA = Capital Account, FA = Financial Account, EO = Errors and
 Omissions.
 
-A current account deficit ($\mathrm{'\{'}CA{'\}'} < 0$) must be financed by:
-- A capital account surplus ($\mathrm{'\{'}KA{'\}'} > 0$)
-- A financial account surplus ($\mathrm{'\{'}FA{'\}'} > 0$): net capital inflows
+A current account deficit ($\mathrm{CA{} < 0$) must be financed by:
+- A capital account surplus ($\mathrm{KA{} > 0$)
+- A financial account surplus ($\mathrm{FA{} > 0$): net capital inflows
 
 ### The Current Account and the Exchange Rate
 
@@ -1201,7 +1201,7 @@ in the short run (the "forward premium puzzle").
 The trade balance in domestic currency (assuming imports are denominated in foreign currency and
 then converted):
 
-$$\mathrm{'\{'}TB{'\}'} = P_X \cdot X(S) - S \cdot P_M^* \cdot M(S)$$
+$$\mathrm{TB{} = P_X \cdot X(S) - S \cdot P_M^* \cdot M(S)$$
 
 Where $S$ is the domestic currency price of foreign currency (an increase in $S$ represents
 depreciation).
@@ -1209,9 +1209,9 @@ depreciation).
 For a depreciation to improve the trade balance, the derivative of TB with respect to $S$ must be
 positive. This condition simplifies to:
 
-$$|\mathrm{'\{'}PED{'\}'}_X| + |\mathrm{'\{'}PED{'\}'}_M| > 1$$
+$$|\mathrm{PED{}_X| + |\mathrm{PED{}_M| > 1$$
 
-Where $\mathrm{'\{'}PED{'\}'}_X = \frac{\%\Delta X}{\%\Delta S}$ and $\mathrm{'\{'}PED{'\}'}_M = \frac{\%\Delta M}{\%\Delta S}$.
+Where $\mathrm{PED{}_X = \frac{\%\Delta X}{\%\Delta S}$ and $\mathrm{PED{}_M = \frac{\%\Delta M}{\%\Delta S}$.
 
 **Empirical estimates:** in the short run (within 1 year), PED values are typically low (sum < 1),
 so the Marshall-Lerner condition is not satisfied. In the medium to long run (2--5 years), PED
@@ -1286,7 +1286,7 @@ $$\text{'\{'}Welfare gain from ToT improvement{'\}'} - \text{'\{'}DWL from reduc
 
 The optimal tariff rate is approximately:
 
-$$t^* \approx \frac{1}{\mathrm{'\{'}PED{'\}'}_{\text{'\{'}foreign export supply{'\}'}} - 1}$$
+$$t^* \approx \frac{1}{\mathrm{PED{}_{\text{'\{'}foreign export supply{'\}'}} - 1}$$
 
 This argument does not apply to small countries (which are price takers) and ignores retaliation
 by trading partners.

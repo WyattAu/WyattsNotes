@@ -54,7 +54,7 @@ actually true. Common values are $\alpha = 0.05$ (5%), $\alpha = 0.01$ (1%), and
 
 ### 1.5 Critical value approach
 
-Alternatively, find the **critical value** $c$ such that $P(\mathrm{'\{'}test\ statistic{'\}'} \geq c \mid H_0) = \alpha$
+Alternatively, find the **critical value** $c$ such that $P(\mathrm{test\ statistic{} \geq c \mid H_0) = \alpha$
 (for an upper-tailed test). If the observed test statistic exceeds $c$, reject $H_0$.
 
 ### 1.6 Interpreting the conclusion
@@ -82,17 +82,17 @@ to find sufficient evidence against it. The conclusion should always be stated c
 
 **Type I error:** Rejecting $H_0$ when it is true (false positive).
 
-$$P(\mathrm{'\{'}Type\ I{'\}'}) = \alpha$$
+$$P(\mathrm{Type\ I{}) = \alpha$$
 
 **Type II error:** Failing to reject $H_0$ when it is false (false negative).
 
-$$P(\mathrm{'\{'}Type\ II{'\}'}) = \beta$$
+$$P(\mathrm{Type\ II{}) = \beta$$
 
 ### 2.2 The power of a test
 
 The **power** of a test is the probability of correctly rejecting $H_0$ when it is false:
 
-$$\mathrm{'\{'}Power{'\}'} = 1 - \beta$$
+$$\mathrm{Power{} = 1 - \beta$$
 
 The power depends on:
 - The significance level $\alpha$ (increasing $\alpha$ increases power).
@@ -101,8 +101,8 @@ The power depends on:
 
 ### 2.3 Worked example
 
-**Problem.** A machine produces bolts with mean length $50\;\mathrm{'\{'}mm{'\}'}$. The standard deviation is
-$0.5\;\mathrm{'\{'}mm{'\}'}$. A sample of 16 bolts has mean $50.18\;\mathrm{'\{'}mm{'\}'}$. Test at the 5% significance
+**Problem.** A machine produces bolts with mean length $50\;\mathrm{mm{}$. The standard deviation is
+$0.5\;\mathrm{mm{}$. A sample of 16 bolts has mean $50.18\;\mathrm{mm{}$. Test at the 5% significance
 level whether the mean length has changed.
 
 $H_0: \mu = 50$, $H_1: \mu \neq 50$ (two-tailed).
@@ -126,7 +126,7 @@ to conclude that the mean length has changed.
 
 Continuing the example above, suppose the true mean is $\mu = 50.2$.
 
-$\beta = P(\mathrm{'\{'}do\ not\ reject{'\}'}\ H_0 \mid \mu = 50.2)$
+$\beta = P(\mathrm{do\ not\ reject{}\ H_0 \mid \mu = 50.2)$
 
 $= P(49.755 \lt \bar{X} \lt 50.245 \mid \bar{X} \sim N(50.2, 0.015625))$
 
@@ -181,7 +181,7 @@ For a standard normal test at significance level $\alpha$:
 
 To test whether a population proportion $p$ equals a specified value $p_0$:
 
-$$H_0: p = p_0, \qquad H_1: p \neq p_0\ (\mathrm{'\{'}or{'\}'}\ p \gt p_0\ \mathrm{'\{'}or{'\}'}\ p \lt p_0)$$
+$$H_0: p = p_0, \qquad H_1: p \neq p_0\ (\mathrm{or{}\ p \gt p_0\ \mathrm{or{}\ p \lt p_0)$$
 
 Under $H_0$, if $X$ is the number of successes in $n$ trials, then $X \sim B(n, p_0)$.
 
@@ -212,14 +212,14 @@ the 5% level to conclude the coin is biased.
 
 The actual significance level is the probability of being in the critical region under $H_0$:
 
-$$\alpha_{\mathrm{'\{'}actual{'\}'}} = P(X \leq 5) + P(X \geq 15) = 2(0.0207) = 0.0414$$
+$$\alpha_{\mathrm{actual{}} = P(X \leq 5) + P(X \geq 15) = 2(0.0207) = 0.0414$$
 
 This is approximately 4.14%, which is the closest we can get to 5% with a discrete distribution.
 
 :::warning
 warning
 For discrete distributions, the actual significance level may differ from the nominal level. The
-critical region is chosen so that $P(\mathrm{'\{'}critical\ region{'\}'} \mid H_0)$ does not exceed $\alpha$,
+critical region is chosen so that $P(\mathrm{critical\ region{} \mid H_0)$ does not exceed $\alpha$,
 and is as close as possible to $\alpha$.
 :::
 
@@ -248,7 +248,7 @@ receives 7 calls. Test at the 5% level whether the rate has increased.
 
 $H_0: \lambda = 2$, $H_1: \lambda \gt 2$ (upper-tailed).
 
-Under $H_0$: $X \sim \mathrm{'\{'}Po{'\}'}(2)$.
+Under $H_0$: $X \sim \mathrm{Po{}(2)$.
 
 Critical region: smallest $k$ such that $P(X \geq k) \leq 0.05$.
 
@@ -264,8 +264,8 @@ increased.
 ### 5.4 Worked example: normal critical region
 
 **Problem.** The masses of packets of biscuits are normally distributed with standard deviation
-$3\;\mathrm{'\{'}g{'\}'}$. A sample of 10 packets has mean mass $248\;\mathrm{'\{'}g{'\}'}$. Find the critical region
-for testing whether the mean mass is less than $250\;\mathrm{'\{'}g{'\}'}$ at the 1% significance level.
+$3\;\mathrm{g{}$. A sample of 10 packets has mean mass $248\;\mathrm{g{}$. Find the critical region
+for testing whether the mean mass is less than $250\;\mathrm{g{}$ at the 1% significance level.
 
 $H_0: \mu = 250$, $H_1: \mu \lt 250$.
 
@@ -341,7 +341,7 @@ increased.
 
 $H_0: \lambda = 3$, $H_1: \lambda \gt 3$.
 
-$X \sim \mathrm{'\{'}Po{'\}'}(3)$.
+$X \sim \mathrm{Po{}(3)$.
 
 $P(X \geq 7) = 1 - P(X \leq 6) \approx 1 - 0.9665 = 0.0335 \leq 0.05$.
 
