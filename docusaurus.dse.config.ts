@@ -12,6 +12,9 @@ import rehypeKatex from 'rehype-katex';
 import remarkCodeSnippets from 'remark-code-snippets';
 import remarkMath from 'remark-math';
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
+
 const admonitionsConfig = {
   admonitions: {
     keywords: [
@@ -33,7 +36,7 @@ const admonitionsConfig = {
 };
 
 const   remarkPluginsConfig = {
-  beforeDefaultRemarkPlugins: [remarkGridTable, require.resolve('./src/plugins/escape-jsx-braces/index.js')],
+  beforeDefaultRemarkPlugins: [remarkGridTable, escapeJsxBraces],
   remarkPlugins: [remarkMath, remarkCodeSnippets],
 };
 
@@ -218,9 +221,6 @@ const config: Config = {
         routeBasePath: '/docs/dse',
         sidebarPath: require.resolve('./sidebars/sidebar_dse.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_dse/{dir}',
-        frontMatter: {
-          format: 'md',
-        },
         ...commonDocsPluginConfig,
       },
     ],

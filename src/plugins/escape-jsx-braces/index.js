@@ -10,7 +10,7 @@
  */
 const visit = require('unist-util-visit');
 const escapeOpeningBrace = (text) => text.replace(/\{/g, "{'\\{'}");
-const escapeClosingBrace = (text) => (text) => text.replace(/\}/g, "{'\\}'}");
+const escapeClosingBrace = (text) => text.replace(/\}/g, "{'\\}'}");
 
 module.exports = function escapeJsxBraces() {
   return (tree) => {

@@ -12,6 +12,9 @@ import rehypeKatex from 'rehype-katex';
 import remarkCodeSnippets from 'remark-code-snippets';
 import remarkMath from 'remark-math';
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
+
 const admonitionsConfig = {
   admonitions: {
     keywords: [
@@ -33,7 +36,7 @@ const admonitionsConfig = {
 };
 
 const   remarkPluginsConfig = {
-  beforeDefaultRemarkPlugins: [remarkGridTable, require.resolve('./src/plugins/escape-jsx-braces/index.js')],
+  beforeDefaultRemarkPlugins: [remarkGridTable, escapeJsxBraces],
   remarkPlugins: [remarkMath, remarkCodeSnippets],
 };
 
@@ -73,7 +76,6 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  // @ts-expect-error -- MDX format option not in Docusaurus types but supported by @docusaurus/mdx-loader
   staticDirectories: ['static'],
 
   headTags: [
@@ -220,6 +222,10 @@ const config: Config = {
         sidebarPath: require.resolve('./sidebars/sidebar_ib.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_ib/{dir}',
         ...commonDocsPluginConfig,
+      },
+    ],
+  ],
+
   markdown: {
     mermaid: true,
   },
