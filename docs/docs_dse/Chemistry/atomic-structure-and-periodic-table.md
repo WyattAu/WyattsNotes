@@ -46,7 +46,7 @@ Isotopes are atoms of the same element (same $Z$) with different numbers of neut
 The relative atomic mass $A_r$ is the weighted average of the isotopic masses, accounting for their
 natural abundances:
 
-$$A_r = \sum (\mathrm{isotope mass{} \times \mathrm{fractional abundance{})$$
+$$A_r = \sum (\mathrm{isotope mass} \times \mathrm{fractional abundance})$$
 
 ### Worked Example 1
 
@@ -97,11 +97,11 @@ Write the electron configurations for the following elements:
 <details>
 <summary>Solution</summary>
 
-- Sodium ($Z = 11$): $1s^2\, 2s^2\, 2p^6\, 3s^1$ or $[\mathrm{Ne{}]\, 3s^1$
-- Potassium ($Z = 19$): $[\mathrm{Ar{}]\, 4s^1$
-- Iron ($Z = 26$): $[\mathrm{Ar{}]\, 4s^2\, 3d^6$
-- Copper ($Z = 29$): $[\mathrm{Ar{}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
-- Chromium ($Z = 24$): $[\mathrm{Ar{}]\, 4s^1\, 3d^5$ (exception: half-filled $d$ subshell)
+- Sodium ($Z = 11$): $1s^2\, 2s^2\, 2p^6\, 3s^1$ or $[\mathrm{Ne}]\, 3s^1$
+- Potassium ($Z = 19$): $[\mathrm{Ar}]\, 4s^1$
+- Iron ($Z = 26$): $[\mathrm{Ar}]\, 4s^2\, 3d^6$
+- Copper ($Z = 29$): $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$ (exception: full $d$ subshell is more stable)
+- Chromium ($Z = 24$): $[\mathrm{Ar}]\, 4s^1\, 3d^5$ (exception: half-filled $d$ subshell)
 
 </details>
 
@@ -110,8 +110,8 @@ Write the electron configurations for the following elements:
 When forming cations, $4s$ electrons are removed before $3d$ electrons, because once the $3d$
 subshell is occupied, it sits at a lower energy than $4s$.
 
-- $\mathrm{Fe{}^{2+}$: $[\mathrm{Ar{}]\, 3d^6$ (remove two $4s$ electrons)
-- $\mathrm{Fe{}^{3+}$: $[\mathrm{Ar{}]\, 3d^5$ (remove two $4s$ and one $3d$)
+- $\mathrm{Fe}^{2+}$: $[\mathrm{Ar}]\, 3d^6$ (remove two $4s$ electrons)
+- $\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\, 3d^5$ (remove two $4s$ and one $3d$)
 
 ---
 
@@ -150,7 +150,7 @@ electrons. Elements in the same **period** (row) have the same number of electro
 **First ionisation energy** is the energy required to remove one mole of electrons from one mole of
 gaseous atoms:
 
-$$\mathrm{X{}(g) \to \mathrm{X{}^+(g) + e^-$$
+$$\mathrm{X}(g) \to \mathrm{X}^+(g) + e^-$$
 
 ### Successive Ionisation Energies
 
@@ -188,11 +188,11 @@ bond.
 
 - Fluorine is the most electronegative element (Pauling scale: 4.0)
 - Electronegativity increases across a period and decreases down a group
-- The difference in electronegativity ($\Delta\mathrm{EN{}$) between bonded atoms determines bond
+- The difference in electronegativity ($\Delta\mathrm{EN}$) between bonded atoms determines bond
   character:
-  - $\Delta\mathrm{EN{} \lt 0.5$: non-polar covalent
-  - $0.5 \leqslant \Delta\mathrm{EN{} \lt 1.7$: polar covalent
-  - $\Delta\mathrm{EN{} \geqslant 1.7$: ionic
+  - $\Delta\mathrm{EN} \lt 0.5$: non-polar covalent
+  - $0.5 \leqslant \Delta\mathrm{EN} \lt 1.7$: polar covalent
+  - $\Delta\mathrm{EN} \geqslant 1.7$: ionic
 
 ---
 
@@ -210,13 +210,13 @@ bond.
 
 Reaction with water (increasingly vigorous down the group):
 
-$$2\mathrm{Na{} + 2\mathrm{H_2O{} \to 2\mathrm{NaOH{} + \mathrm{H_2{}$$
+$$2\mathrm{Na} + 2\mathrm{H_2O} \to 2\mathrm{NaOH} + \mathrm{H_2}$$
 
 Reaction with oxygen:
 
-$$4\mathrm{Li{} + \mathrm{O_2{} \to 2\mathrm{Li_2O{}$$
+$$4\mathrm{Li} + \mathrm{O_2} \to 2\mathrm{Li_2O}$$
 
-$$2\mathrm{Na{} + \mathrm{O_2{} \to \mathrm{Na_2O_2{}$$ (sodium peroxide)
+$$2\mathrm{Na} + \mathrm{O_2} \to \mathrm{Na_2O_2}$$ (sodium peroxide)
 
 ---
 
@@ -233,21 +233,21 @@ $$2\mathrm{Na{} + \mathrm{O_2{} \to \mathrm{Na_2O_2{}$$ (sodium peroxide)
 
 Reaction with water:
 
-$$\mathrm{Ca{} + 2\mathrm{H_2O{} \to \mathrm{Ca(OH)_2{} + \mathrm{H_2{}$$
+$$\mathrm{Ca} + 2\mathrm{H_2O} \to \mathrm{Ca(OH)_2} + \mathrm{H_2}$$
 
 Reaction with dilute acid:
 
-$$\mathrm{Mg{} + 2\mathrm{HCl{} \to \mathrm{MgCl_2{} + \mathrm{H_2{}$$
+$$\mathrm{Mg} + 2\mathrm{HCl} \to \mathrm{MgCl_2} + \mathrm{H_2}$$
 
 ### Thermal Decomposition of Group 2 Compounds
 
 The thermal stability of Group 2 nitrates and carbonates increases down the group:
 
-$$\mathrm{MgCO_3{} \xrightarrow{\Delta} \mathrm{MgO{} + \mathrm{CO_2{}$$
+$$\mathrm{MgCO_3} \xrightarrow{\Delta} \mathrm{MgO} + \mathrm{CO_2}$$
 
-$$\mathrm{CaCO_3{} \xrightarrow{\Delta} \mathrm{CaO{} + \mathrm{CO_2{}$$
+$$\mathrm{CaCO_3} \xrightarrow{\Delta} \mathrm{CaO} + \mathrm{CO_2}$$
 
-$$\mathrm{Mg(NO_3)_2{} \xrightarrow{\Delta} \mathrm{MgO{} + 2\mathrm{NO_2{} + \tfrac{1}{2}\mathrm{O_2{}$$
+$$\mathrm{Mg(NO_3)_2} \xrightarrow{\Delta} \mathrm{MgO} + 2\mathrm{NO_2} + \tfrac{1}{2}\mathrm{O_2}$$
 
 ---
 
@@ -259,23 +259,23 @@ $$\mathrm{Mg(NO_3)_2{} \xrightarrow{\Delta} \mathrm{MgO{} + 2\mathrm{NO_2{} + \t
 | Melting/boiling point  | Increases           | Stronger van der Waals forces                    |
 | Reactivity             | Decreases           | Harder to gain an electron (decreased electronegativity) |
 | Electronegativity      | Decreases           | Larger atomic radius, more shielding             |
-| Displacement ability   | Decreases           | $\mathrm{Cl_2{}$ displaces $\mathrm{Br_2{}$, not vice versa |
+| Displacement ability   | Decreases           | $\mathrm{Cl_2}$ displaces $\mathrm{Br_2}$, not vice versa |
 
 ### Displacement Reactions
 
 A more reactive halogen displaces a less reactive halogen from its halide solution:
 
-$$\mathrm{Cl_2{} + 2\mathrm{KBr{} \to 2\mathrm{KCl{} + \mathrm{Br_2{}$$
+$$\mathrm{Cl_2} + 2\mathrm{KBr} \to 2\mathrm{KCl} + \mathrm{Br_2}$$
 
-$$\mathrm{Br_2{} + 2\mathrm{KI{} \to 2\mathrm{KBr{} + \mathrm{I_2{}$$
+$$\mathrm{Br_2} + 2\mathrm{KI} \to 2\mathrm{KBr} + \mathrm{I_2}$$
 
-$\mathrm{I_2{}$ cannot displace $\mathrm{Br_2{}$ or $\mathrm{Cl_2{}$.
+$\mathrm{I_2}$ cannot displace $\mathrm{Br_2}$ or $\mathrm{Cl_2}$.
 
 ### Halogen Reactions with Sodium Hydroxide
 
-Cold, dilute $\mathrm{NaOH{}$:
+Cold, dilute $\mathrm{NaOH}$:
 
-$$\mathrm{Cl_2{} + 2\mathrm{NaOH{} \to \mathrm{NaCl{} + \mathrm{NaClO{} + \mathrm{H_2O{}$$
+$$\mathrm{Cl_2} + 2\mathrm{NaOH} \to \mathrm{NaCl} + \mathrm{NaClO} + \mathrm{H_2O}$$
 
 This disproportionation reaction produces sodium chloride and sodium chlorate(I).
 
@@ -289,7 +289,7 @@ Explain why bromine is a liquid at room temperature while chlorine is a gas.
 Bromine atoms are larger than chlorine atoms and have more electrons. This results in stronger
 instantaneous dipole-induced dipole (London dispersion) forces between bromine molecules. These
 stronger intermolecular forces require more energy to overcome, giving bromine a higher boiling
-point ($59^\circ\mathrm{C{}$) compared to chlorine ($-34^\circ\mathrm{C{}$).
+point ($59^\circ\mathrm{C}$) compared to chlorine ($-34^\circ\mathrm{C}$).
 
 </details>
 
@@ -337,7 +337,7 @@ subshell. Key properties:
 - Confusing atomic number with mass number. Atomic number $Z$ counts protons; mass number $A$
   counts protons plus neutrons.
 - Assuming that electronegativity differences cleanly divide bonds into ionic and covalent. The
-  boundary at $\Delta\mathrm{EN{} = 1.7$ is approximate.
+  boundary at $\Delta\mathrm{EN} = 1.7$ is approximate.
 - Forgetting that the first ionisation energy of an element is the energy to remove the
   **outermost** electron, not any electron.
 - Confusing Group 2 hydroxide solubility trends (increases down group) with Group 2 sulphate
@@ -377,7 +377,7 @@ valence electrons. The element has two valence electrons, placing it in **Group 
 
 </details>
 
-**Problem 2:** Write the electron configuration of $\mathrm{Fe{}^{2+}$ and $\mathrm{Fe{}^{3+}$.
+**Problem 2:** Write the electron configuration of $\mathrm{Fe}^{2+}$ and $\mathrm{Fe}^{3+}$.
 Which ion is relatively more stable and why?
 
 *If you get this wrong, revise: Electron Configuration — Removing Electrons*
@@ -385,13 +385,13 @@ Which ion is relatively more stable and why?
 <details>
 <summary>Solution</summary>
 
-Fe ($Z = 26$): $[\mathrm{Ar{}]\, 4s^2\, 3d^6$
+Fe ($Z = 26$): $[\mathrm{Ar}]\, 4s^2\, 3d^6$
 
-$\mathrm{Fe{}^{2+}$: $[\mathrm{Ar{}]\, 3d^6$ (remove two $4s$ electrons)
+$\mathrm{Fe}^{2+}$: $[\mathrm{Ar}]\, 3d^6$ (remove two $4s$ electrons)
 
-$\mathrm{Fe{}^{3+}$: $[\mathrm{Ar{}]\, 3d^5$ (remove two $4s$ and one $3d$)
+$\mathrm{Fe}^{3+}$: $[\mathrm{Ar}]\, 3d^5$ (remove two $4s$ and one $3d$)
 
-$\mathrm{Fe{}^{3+}$ is relatively stable due to its half-filled $3d^5$ configuration.
+$\mathrm{Fe}^{3+}$ is relatively stable due to its half-filled $3d^5$ configuration.
 
 </details>
 
@@ -414,7 +414,7 @@ $$A_r = 20 \times 0.9048 + 21 \times 0.0027 + 22 \times 0.0925 = 18.096 + 0.0567
 <details>
 <summary>Solution</summary>
 
-Sodium ($Z = 11$) has the configuration $[\mathrm{Ne{}]\, 3s^1$. The single $3s$ electron is in a
+Sodium ($Z = 11$) has the configuration $[\mathrm{Ne}]\, 3s^1$. The single $3s$ electron is in a
 new shell, further from the nucleus and well shielded by the inner 10 electrons. It is relatively
 easy to remove.
 
@@ -433,7 +433,7 @@ iodide.
 
 Chlorine is more reactive than iodine, so it displaces iodine:
 
-$$\mathrm{Cl_2{} + 2\mathrm{KI{} \to 2\mathrm{KCl{} + \mathrm{I_2{}$$
+$$\mathrm{Cl_2} + 2\mathrm{KI} \to 2\mathrm{KCl} + \mathrm{I_2}$$
 
 The solution turns brown as iodine is liberated. Adding starch indicator produces a blue-black
 colour.
@@ -464,7 +464,7 @@ reactions with water.
 As you descend Group 2, the ionic radius of the metal cation increases. The larger cation has a
 lower charge density and polarises the carbonate anion less. The $\mathrm{CO_3^{2-}}$ ion is
 therefore less distorted and more thermally stable, requiring more energy to decompose. So
-$\mathrm{MgCO_3{}$ decomposes readily on heating while $\mathrm{BaCO_3{}$ is much more resistant
+$\mathrm{MgCO_3}$ decomposes readily on heating while $\mathrm{BaCO_3}$ is much more resistant
 to thermal decomposition.
 
 </details>
@@ -504,16 +504,16 @@ valence electrons. The element has four valence electrons, placing it in **Group
 </details>
 
 **Problem 10:** Use electronegativity values to classify the bond in hydrogen chloride
-($\mathrm{HCl{}$). (EN of H $= 2.1$, EN of Cl $= 3.0$)
+($\mathrm{HCl}$). (EN of H $= 2.1$, EN of Cl $= 3.0$)
 
 *If you get this wrong, revise: Electronegativity*
 
 <details>
 <summary>Solution</summary>
 
-$$\Delta\mathrm{EN{} = 3.0 - 2.1 = 0.9$$
+$$\Delta\mathrm{EN} = 3.0 - 2.1 = 0.9$$
 
-Since $0.5 \leqslant \Delta\mathrm{EN{} \lt 1.7$, the bond in $\mathrm{HCl{}$ is **polar covalent**.
+Since $0.5 \leqslant \Delta\mathrm{EN} \lt 1.7$, the bond in $\mathrm{HCl}$ is **polar covalent**.
 
 The shared electron pair is displaced towards the more electronegative chlorine atom, creating a
 dipole with a partial negative charge on Cl and a partial positive charge on H.

@@ -241,7 +241,7 @@ A common mistake is forgetting the domain restriction. If the base were between 
 
 Solve the simultaneous inequalities:
 
-$$2x + 3 > x + 7 \quad \text{and{} \quad 3x - 1 \leq 2x + 5$$
+$$2x + 3 > x + 7 \quad \text{and} \quad 3x - 1 \leq 2x + 5$$
 
 **Solution:**
 

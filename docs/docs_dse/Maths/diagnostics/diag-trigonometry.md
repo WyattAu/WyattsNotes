@@ -135,7 +135,7 @@ Three points $A(\cos\theta,\; \sin\theta)$, $B(\cos 3\theta,\; \sin 3\theta)$, $
 
 For collinearity, the area of triangle $ABC$ must be zero.
 
-$$\text{Area{} = \frac{1}{2}\left|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)\right|$$
+$$\text{Area} = \frac{1}{2}\left|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)\right|$$
 
 $$= \frac{1}{2}\left|\cos\theta(\sin 3\theta - \sin 5\theta) + \cos 3\theta(\sin 5\theta - \sin\theta) + \cos 5\theta(\sin\theta - \sin 3\theta)\right|$$
 
@@ -243,7 +243,7 @@ By the sine rule:
 
 $$\frac{c}{\sin C} = \frac{a}{\sin A}$$
 
-$$c = \frac{a \sin C}{\sin A} = \frac{8 \sin 75°}{\sin 45°} = \frac{8 \times 0.9659}{0.7071} \approx 10.93 \text{ cm{}$$
+$$c = \frac{a \sin C}{\sin A} = \frac{8 \sin 75°}{\sin 45°} = \frac{8 \times 0.9659}{0.7071} \approx 10.93 \text{ cm}$$
 
 ---
 
@@ -271,9 +271,9 @@ Prove that $\dfrac{\sin x}{1 + \cos x} + \dfrac{1 + \cos x}{\sin x} = 2\csc x$.
 
 **Solution:**
 
-$$\text{LHS{} = \frac{\sin^2 x + (1 + \cos x)^2}{\sin x(1 + \cos x)} = \frac{\sin^2 x + 1 + 2\cos x + \cos^2 x}{\sin x(1 + \cos x)}$$
+$$\text{LHS} = \frac{\sin^2 x + (1 + \cos x)^2}{\sin x(1 + \cos x)} = \frac{\sin^2 x + 1 + 2\cos x + \cos^2 x}{\sin x(1 + \cos x)}$$
 
-$$= \frac{(\sin^2 x + \cos^2 x) + 1 + 2\cos x}{\sin x(1 + \cos x)} = \frac{2 + 2\cos x}{\sin x(1 + \cos x)} = \frac{2(1 + \cos x)}{\sin x(1 + \cos x)} = \frac{2}{\sin x} = 2\csc x = \text{RHS{} \qed$$
+$$= \frac{(\sin^2 x + \cos^2 x) + 1 + 2\cos x}{\sin x(1 + \cos x)} = \frac{2 + 2\cos x}{\sin x(1 + \cos x)} = \frac{2(1 + \cos x)}{\sin x(1 + \cos x)} = \frac{2}{\sin x} = 2\csc x = \text{RHS} \qed$$
 
 ---
 
@@ -311,7 +311,7 @@ In triangle $ABC$, $AB = 12$ cm, $AC = 10$ cm, and $\angle BAC = 65°$. Find the
 
 **Solution:**
 
-$$\text{Area{} = \frac{1}{2} \times AB \times AC \times \sin \angle BAC = \frac{1}{2} \times 12 \times 10 \times \sin 65° = 60\sin 65° \approx 60 \times 0.9063 \approx 54.4 \text{ cm{}^2$$
+$$\text{Area} = \frac{1}{2} \times AB \times AC \times \sin \angle BAC = \frac{1}{2} \times 12 \times 10 \times \sin 65° = 60\sin 65° \approx 60 \times 0.9063 \approx 54.4 \text{ cm}^2$$
 
 ---
 
@@ -327,7 +327,7 @@ The ant needs to go from $(0, 0, 0)$ to $(6, 4, 3)$.
 
 The shortest path is the space diagonal:
 
-$$d = \sqrt{6^2 + 4^2 + 3^2} = \sqrt{36 + 16 + 9} = \sqrt{61} \approx 7.81 \text{ m{}$$
+$$d = \sqrt{6^2 + 4^2 + 3^2} = \sqrt{36 + 16 + 9} = \sqrt{61} \approx 7.81 \text{ m}$$
 
 If the ant must stay on surfaces, the shortest path "unfolds" two walls:
 
@@ -355,7 +355,7 @@ So triangle $ABC$ has a right angle at $B$.
 
 $AB = 15$ km, $BC = 20$ km.
 
-$$AC = \sqrt{15^2 + 20^2} = \sqrt{225 + 400} = \sqrt{625} = 25 \text{ km{}$$
+$$AC = \sqrt{15^2 + 20^2} = \sqrt{225 + 400} = \sqrt{625} = 25 \text{ km}$$
 
 Bearing of $C$ from $A$: $\angle NAC = 060° + \arctan\left(\dfrac{20}{15}\right) = 60° + 53.1° = 113.1°$.
 
@@ -375,7 +375,7 @@ The angle of elevation from the boat to the top of the cliff equals the angle of
 
 $$\tan 30° = \frac{80}{d}$$
 
-$$d = \frac{80}{\tan 30°} = \frac{80}{1/\sqrt{3}} = 80\sqrt{3} \approx 138.6 \text{ m{}$$
+$$d = \frac{80}{\tan 30°} = \frac{80}{1/\sqrt{3}} = 80\sqrt{3} \approx 138.6 \text{ m}$$
 
 ---
 
@@ -419,9 +419,9 @@ So $\angle B \approx 44.8°$.
 
 (b) $\angle C = 180° - 70° - 44.8° = 65.2°$.
 
-$\text{Area{} = \dfrac{1}{2} \times 8 \times 6 \times \sin 65.2° \approx 24 \times 0.9075 \approx 21.8$ cm$^2$.
+$\text{Area} = \dfrac{1}{2} \times 8 \times 6 \times \sin 65.2° \approx 24 \times 0.9075 \approx 21.8$ cm$^2$.
 
-(c) $\text{Area{} = \dfrac{1}{2} \times AB \times h$, where $AB = c$.
+(c) $\text{Area} = \dfrac{1}{2} \times AB \times h$, where $AB = c$.
 
 By the sine rule: $c = \dfrac{8\sin 65.2°}{\sin 44.8°} \approx \dfrac{8 \times 0.9075}{0.7048} \approx 10.3$ cm.
 

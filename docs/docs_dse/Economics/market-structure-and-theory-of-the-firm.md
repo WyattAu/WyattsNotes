@@ -69,7 +69,7 @@ marginal unit.
 Regardless of market structure, a profit-maximising firm produces where `MR = MC`, provided that
 price at that output covers average variable cost (the shutdown condition in the short run).
 
-$$\mathrm{Profit{} = \mathrm{TR{} - \mathrm{TC{} = Q(P - \mathrm{ATC{})$$
+$$\mathrm{Profit} = \mathrm{TR} - \mathrm{TC} = Q(P - \mathrm{ATC})$$
 
 ---
 
@@ -97,7 +97,7 @@ above the market price (consumers would buy from competitors instead). It has no
 below the market price (it can sell any quantity it wants at the market price). Therefore, the firm
 faces a perfectly elastic (horizontal) individual demand curve at the market price `P`.
 
-$$\mathrm{AR{} = \mathrm{MR{} = P$$
+$$\mathrm{AR} = \mathrm{MR} = P$$
 
 ### Short-Run Equilibrium
 
@@ -215,7 +215,7 @@ long-run equilibrium is driven by entry and exit:
 
 The long-run equilibrium conditions are:
 
-$$P = MR = MC = \mathrm{ATC{}_{\min}$$
+$$P = MR = MC = \mathrm{ATC}_{\min}$$
 
 At long-run equilibrium:
 
@@ -334,7 +334,7 @@ demand curve is downward-sloping, `AR` is also downward-sloping.
 units sold, not just the marginal unit. The relationship between `AR` and `MR` for a linear demand
 curve `P = a - bQ` is:
 
-$$\mathrm{MR{} = a - 2bQ$$
+$$\mathrm{MR} = a - 2bQ$$
 
 The `MR` curve has twice the slope of the `AR` curve and intersects the quantity axis at half the
 quantity where `AR` intersects it.
@@ -344,15 +344,15 @@ quantity where `AR` intersects it.
 The monopolist produces where `MR = MC`, then charges the price read off the `AR` (demand) curve at
 that quantity.
 
-$$Q_m : \mathrm{MR{} = \mathrm{MC{}$$
+$$Q_m : \mathrm{MR} = \mathrm{MC}$$
 
-$$P_m : P = \mathrm{AR{}(Q_m)$$
+$$P_m : P = \mathrm{AR}(Q_m)$$
 
 **Supernormal profit** in the long run: Because barriers to entry prevent new firms from entering,
 the monopolist can earn supernormal profit indefinitely. This is the key difference from perfect
 competition, where long-run equilibrium yields only normal profit.
 
-$$\mathrm{Supernormal profit{} = Q_m \times (P_m - \mathrm{ATC{}(Q_m))$$
+$$\mathrm{Supernormal profit} = Q_m \times (P_m - \mathrm{ATC}(Q_m))$$
 
 <details>
 <summary>Worked Example: Monopoly Profit Maximisation</summary>
@@ -384,7 +384,7 @@ minimum).
 **Deadweight loss (DWL):** The welfare loss from monopoly is the area between the demand curve and
 the `MC` curve, from `Q_m` to `Q_c` (the competitive output where `P = MC`).
 
-$$\mathrm{DWL{} = \frac{1}{2}(P_m - \mathrm{MC{}(Q_m))(Q_c - Q_m)$$
+$$\mathrm{DWL} = \frac{1}{2}(P_m - \mathrm{MC}(Q_m))(Q_c - Q_m)$$
 
 This DWL represents the total surplus that is neither captured by the monopolist nor by consumers.
 It is a pure loss to society.
@@ -469,7 +469,7 @@ price.
 The monopolist allocates output between segments such that `MR` is equal across all segments and
 equals `MC`:
 
-$$\mathrm{MR{}_1 = \mathrm{MR{}_2 = \ldots = \mathrm{MR{}_n = \mathrm{MC{}$$
+$$\mathrm{MR}_1 = \mathrm{MR}_2 = \ldots = \mathrm{MR}_n = \mathrm{MC}$$
 
 This implies that the segment with more elastic demand pays a lower price (because `MR` is a
 function of elasticity).
@@ -535,9 +535,9 @@ until remaining firms earn normal profit.
 
 Long-run equilibrium conditions:
 
-$$\mathrm{MR{} = \mathrm{MC{} \mathrm{ (profit maximisation){}$$
+$$\mathrm{MR} = \mathrm{MC} \mathrm{ (profit maximisation)}$$
 
-$$P = \mathrm{ATC{} \mathrm{ (zero economic profit due to free entry/exit){}$$
+$$P = \mathrm{ATC} \mathrm{ (zero economic profit due to free entry/exit)}$$
 
 Note: In monopolistic competition, `P \gt MC` at equilibrium (allocative inefficiency persists) and
 the firm does NOT produce at the minimum `ATC` (productive inefficiency). The demand curve is
@@ -550,7 +550,7 @@ The difference between the output where `ATC` is minimised and the actual output
 firm in long-run equilibrium is called **excess capacity**. This represents the cost of product
 variety: society pays higher average costs in exchange for having differentiated products.
 
-$$\mathrm{Excess capacity{} = Q_{\mathrm{ATC{}_{\min}} - Q^*$$
+$$\mathrm{Excess capacity} = Q_{\mathrm{ATC}_{\min}} - Q^*$$
 
 ### Diagram Description: Long-Run Monopolistic Competition
 
@@ -1838,17 +1838,17 @@ HK Electric's demand: $P = 200 - 0.001Q$ (in HKD/MWh, Q in MWh). MC = 40 HKD/MWh
 
 (a) $MR = 200 - 0.002Q = MC = 40$. $0.002Q = 160$. $Q = 80\,000$ MWh. $P = 200 - 80 = 120$ HKD/MWh.
 
-Profit $= (120 - 40) \times 80\,000 - 500\,000 = 6\,400\,000 - 500\,000 = \text{HK{}\$5.9$ million.
+Profit $= (120 - 40) \times 80\,000 - 500\,000 = 6\,400\,000 - 500\,000 = \text{HK}\$5.9$ million.
 
 Competitive output: $P = MC = 40$. $Q_c = 200\,000 - 40\,000 = 160\,000$ MWh.
 
-DWL $= 0.5 \times (120 - 40) \times (160\,000 - 80\,000) = 0.5 \times 80 \times 80\,000 = \text{HK{}\$3.2$ million.
+DWL $= 0.5 \times (120 - 40) \times (160\,000 - 80\,000) = 0.5 \times 80 \times 80\,000 = \text{HK}\$3.2$ million.
 
 (b) Perfect (first-degree) price discrimination: the monopolist charges each consumer their willingness to pay, producing where $P = MC = 40$. $Q = 160\,000$.
 
 Profit $= \int_0^{160000} (200 - 0.001Q - 40) dQ - 500\,000 = \int_0^{160000} (160 - 0.001Q) dQ - 500\,000$.
 
-$= [160Q - 0.0005Q^2]_0^{160000} - 500\,000 = 25\,600\,000 - 12\,800\,000 - 500\,000 = \text{HK{}\$12.3$ million.
+$= [160Q - 0.0005Q^2]_0^{160000} - 500\,000 = 25\,600\,000 - 12\,800\,000 - 500\,000 = \text{HK}\$12.3$ million.
 
 DWL = 0 (allocative efficiency is achieved -- the monopolist produces the competitive quantity).
 

@@ -39,17 +39,17 @@ Change in $NH_{3}$ = $+0.40$ mol, so change in $N_{2}$ = $-0.40/2 = -0.20$ mol, 
 
 Equilibrium concentrations (dividing by volume 2.0 dm$^{3}$):
 
-$$[N_{2}] = \frac{0.80}{2.0} = 0.40 \text{ mol/dm{}^{3}$$
+$$[N_{2}] = \frac{0.80}{2.0} = 0.40 \text{ mol/dm}^{3}$$
 
-$$[H_{2}] = \frac{2.40}{2.0} = 1.20 \text{ mol/dm{}^{3}$$
+$$[H_{2}] = \frac{2.40}{2.0} = 1.20 \text{ mol/dm}^{3}$$
 
-$$[NH_{3}] = \frac{0.40}{2.0} = 0.20 \text{ mol/dm{}^{3}$$
+$$[NH_{3}] = \frac{0.40}{2.0} = 0.20 \text{ mol/dm}^{3}$$
 
 (b) $$K_{c} = \frac{[NH_{3}]^{2}}{[N_{2}][H_{2}]^{3}} = \frac{(0.20)^{2}}{(0.40)(1.20)^{3}} = \frac{0.040}{0.40 \times 1.728} = \frac{0.040}{0.6912} = 0.0579$$
 
-$K_{c}$ has units: $\frac{(\text{mol dm{}^{-3})^{2}}{(\text{mol dm{}^{-3})(\text{mol dm{}^{-3})^{3}} = \text{mol{}^{-2} \text{dm{}^{6}$
+$K_{c}$ has units: $\frac{(\text{mol dm}^{-3})^{2}}{(\text{mol dm}^{-3})(\text{mol dm}^{-3})^{3}} = \text{mol}^{-2} \text{dm}^{6}$
 
-$$K_{c} = 0.0579 \text{ mol{}^{-2} \text{dm{}^{6}$$
+$$K_{c} = 0.0579 \text{ mol}^{-2} \text{dm}^{6}$$
 
 (c) The value of $K_{c}$ **remains unchanged**. $K_{c}$ is a constant at a given temperature and is not affected by changes in concentration or pressure. Changing the volume changes the equilibrium **position** (it shifts to the side with fewer gas moles, which is the product side), but the ratio $[NH_{3}]^{2}/([N_{2}][H_{2}]^{3})$ at the new equilibrium remains the same.
 
@@ -61,7 +61,7 @@ $$K_{c} = 0.0579 \text{ mol{}^{-2} \text{dm{}^{6}$$
 
 For the exothermic reaction:
 
-$$2SO_{2}(g) + O_{2}(g) \rightleftharpoons 2SO_{3}(g) \quad \Delta H = -197 \text{ kJ/mol{}$$
+$$2SO_{2}(g) + O_{2}(g) \rightleftharpoons 2SO_{3}(g) \quad \Delta H = -197 \text{ kJ/mol}$$
 
 (a) State the effect of increasing temperature on: (i) the equilibrium position, and (ii) the value of $K_{c}$. [3 marks]
 
@@ -105,7 +105,7 @@ $$PCl_{5}(g) \rightleftharpoons PCl_{3}(g) + Cl_{2}(g)$$
 
 (a) At **constant volume**, adding an inert gas increases the **total pressure** but does **not** change the partial pressures of $PCl_{5}$, $PCl_{3}$, or $Cl_{2}$. Since the equilibrium depends on partial pressures (or concentrations), the **equilibrium position does not shift**.
 
-Reason: $P_{\text{total{}}$ increases, but the mole fractions and hence partial pressures of the reacting gases remain unchanged.
+Reason: $P_{\text{total}}$ increases, but the mole fractions and hence partial pressures of the reacting gases remain unchanged.
 
 (b) At **constant pressure**, adding an inert gas increases the **total number of moles** in the container, which requires the **volume to increase** (to maintain constant total pressure). The increase in volume decreases the partial pressures of all reacting gases equally.
 
@@ -148,11 +148,11 @@ Mole fraction of $N_{2}O_{4}$: $x(N_{2}O_{4}) = \frac{0.50}{1.50} = \frac{1}{3}$
 
 Mole fraction of $NO_{2}$: $x(NO_{2}) = \frac{1.00}{1.50} = \frac{2}{3}$
 
-(b) $P(N_{2}O_{4}) = x(N_{2}O_{4}) \times P_{\text{total{}} = \frac{1}{3} \times 1.00 = 0.333$ atm
+(b) $P(N_{2}O_{4}) = x(N_{2}O_{4}) \times P_{\text{total}} = \frac{1}{3} \times 1.00 = 0.333$ atm
 
-$P(NO_{2}) = x(NO_{2}) \times P_{\text{total{}} = \frac{2}{3} \times 1.00 = 0.667$ atm
+$P(NO_{2}) = x(NO_{2}) \times P_{\text{total}} = \frac{2}{3} \times 1.00 = 0.667$ atm
 
-(c) $$K_{p} = \frac{(P_{NO_{2}})^{2}}{P_{N_{2}O_{4}}} = \frac{(0.667)^{2}}{0.333} = \frac{0.445}{0.333} = 1.335 \text{ atm{}$$
+(c) $$K_{p} = \frac{(P_{NO_{2}})^{2}}{P_{N_{2}O_{4}}} = \frac{(0.667)^{2}}{0.333} = \frac{0.445}{0.333} = 1.335 \text{ atm}$$
 
 (d) Let $\alpha$ be the new degree of dissociation at $P = 2.00$ atm.
 
@@ -188,7 +188,7 @@ The new degree of dissociation is **0.378** (37.8%), which is less than 0.50, co
 
 The Haber process for ammonia synthesis:
 
-$$N_{2}(g) + 3H_{2}(g) \rightleftharpoons 2NH_{3}(g) \quad \Delta H = -92 \text{ kJ/mol{}$$
+$$N_{2}(g) + 3H_{2}(g) \rightleftharpoons 2NH_{3}(g) \quad \Delta H = -92 \text{ kJ/mol}$$
 
 (a) Explain why industrial conditions use a temperature of approximately 450$^{\circ}$C rather than a lower temperature, even though a lower temperature would give a higher equilibrium yield. [3 marks]
 
@@ -248,13 +248,13 @@ $$2.00 - 2x = 7x$$
 
 $$2.00 = 9x$$
 
-$$x = 0.222 \text{ mol/dm{}^{3}$$
+$$x = 0.222 \text{ mol/dm}^{3}$$
 
 At equilibrium:
 - $[H_{2}] = [I_{2}] = 0.222$ mol/dm$^{3}$
 - $[HI] = 2.00 - 2(0.222) = 1.556$ mol/dm$^{3}$
 
-(b) After adding 1.00 mol $I_{2}$ to 1.0 dm$^{3}$: $[I_{2}]_{\text{new initial{}} = 0.222 + 1.00 = 1.222$ mol/dm$^{3}$.
+(b) After adding 1.00 mol $I_{2}$ to 1.0 dm$^{3}$: $[I_{2}]_{\text{new initial}} = 0.222 + 1.00 = 1.222$ mol/dm$^{3}$.
 
 The equilibrium shifts left to partially consume the added $I_{2}$. Let $y$ mol/dm$^{3}$ of $H_{2}$ react with $I_{2}$.
 

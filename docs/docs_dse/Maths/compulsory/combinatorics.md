@@ -280,7 +280,7 @@ arrangement (rotate by $0, 1, \ldots, n-1$ positions), so:
 
 $$
 \begin{aligned}
-  \mathrm{circular permutations{} = \frac{n!}{n} = (n-1)!
+  \mathrm{circular permutations} = \frac{n!}{n} = (n-1)!
 \end{aligned}
 $$
 
@@ -421,7 +421,7 @@ Total permutations: $5! = 120$. Derangements: $!5 = 44$.
 
 $$
 \begin{aligned}
-  P(\mathrm{no fixed point{}) = \frac{44}{120} = \frac{11}{30} \approx 0.367
+  P(\mathrm{no fixed point}) = \frac{44}{120} = \frac{11}{30} \approx 0.367
 \end{aligned}
 $$
 
@@ -433,7 +433,7 @@ in wrong envelopes: $!3 = 2$ ways. Total:
 
 $$
 \begin{aligned}
-  P(\mathrm{exactly 1 correct{}) = \frac{4 \times 2}{4!} = \frac{8}{24} = \frac{1}{3}
+  P(\mathrm{exactly 1 correct}) = \frac{4 \times 2}{4!} = \frac{8}{24} = \frac{1}{3}
 \end{aligned}
 $$
 
@@ -448,7 +448,7 @@ complement and subtract from the total.
 
 $$
 \begin{aligned}
-  \mathrm{Count{}(\mathrm{at least {} k) = \mathrm{Total{} - \mathrm{Count{}(\mathrm{at most {} k-1)
+  \mathrm{Count}(\mathrm{at least } k) = \mathrm{Total} - \mathrm{Count}(\mathrm{at most } k-1)
 \end{aligned}
 $$
 

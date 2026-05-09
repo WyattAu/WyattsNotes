@@ -94,7 +94,7 @@ p {
 
 MP3 at 128 kbps: $128,000 \times 10 / 8 = 160,000$ bytes $\approx 156$ KB.
 
-Compression ratio $\approx 1.68 \text{ MB{} / 0.156 \text{ MB{} \approx 10.8:1$.
+Compression ratio $\approx 1.68 \text{ MB} / 0.156 \text{ MB} \approx 10.8:1$.
 
 ### UT-3: Web Design Principles
 **Question:** (a) Describe four principles of good web design. (b) Explain the difference between responsive web design and adaptive web design. (c) Explain the purpose of wireframes and prototypes in the web development process. (d) Describe three ways to improve website accessibility.
@@ -137,7 +137,7 @@ Compression ratio $\approx 1.68 \text{ MB{} / 0.156 \text{ MB{} \approx 10.8:1$.
 
 **Server side:** The web server receives the file, the application validates it (file type, size, virus scan), generates a unique filename (to prevent overwrites), saves it to the file system, and records the metadata in the database.
 
-(c) Files per year: $1000 \times 5 = 5000$ files. Size per year: $5000 \times 2 \text{ MB{} = 10,000 \text{ MB{} \approx 10$ GB. For 3 years: $30$ GB. With overhead (metadata, file system overhead): approximately **35--40 GB** of storage needed.
+(c) Files per year: $1000 \times 5 = 5000$ files. Size per year: $5000 \times 2 \text{ MB} = 10,000 \text{ MB} \approx 10$ GB. For 3 years: $30$ GB. With overhead (metadata, file system overhead): approximately **35--40 GB** of storage needed.
 
 (d) **File integrity during upload:**
 1. **HTTPS/TLS:** Encrypts data in transit, preventing tampering.
@@ -160,7 +160,7 @@ Total uncompressed: $\approx 9.27 + 1.68 + 0.04 = 10.99$ GB.
 
 (b) **Video:** H.264 at 5 Mbps: $5 \times 10^6 \times 120 / 8 = 75$ MB. Or H.265 at lower bitrate: $\approx 40$ MB.
 
-**Photos:** JPEG at 10:1 compression: $1.68 \text{ GB{} / 10 \approx 168$ MB. Displayed at web resolution (800 $\times$ 600), each thumbnail $\approx 50$ KB, full view $\approx 200$ KB. Total web-optimised: $50 \times 200 \text{ KB{} = 10$ MB.
+**Photos:** JPEG at 10:1 compression: $1.68 \text{ GB} / 10 \approx 168$ MB. Displayed at web resolution (800 $\times$ 600), each thumbnail $\approx 50$ KB, full view $\approx 200$ KB. Total web-optimised: $50 \times 200 \text{ KB} = 10$ MB.
 
 **Audio:** MP3 at 128 kbps for 30 seconds: $128,000 \times 30 / 8 = 480$ KB. Or as a short background loop, even smaller.
 

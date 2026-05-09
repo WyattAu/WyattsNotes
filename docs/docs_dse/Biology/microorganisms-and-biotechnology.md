@@ -60,7 +60,7 @@ Where $n$ is the number of divisions.
 
 If a bacterium divides every 20 minutes, after $n$ divisions:
 
-$$\mathrm{Population{} = 2^n$$
+$$\mathrm{Population} = 2^n$$
 
 Number of divisions in time $t$ minutes:
 
@@ -155,7 +155,7 @@ micrometres). Electron microscopy is required to visualise viruses.
   2. Milk is cooled to ~40-45 degrees C (optimal for the bacteria)
   3. Starter culture (Lactobacillus) is added
   4. Bacteria ferment lactose (milk sugar) to lactic acid:
-     $$\mathrm{C{}_{12}\mathrm{H{}_{22}\mathrm{O{}_{11} \mathrm{ (lactose){} + \mathrm{H{}_2\mathrm{O{} \to 4\mathrm{C{}_3\mathrm{H{}_6\mathrm{O{}_3 \mathrm{ (lactic acid){}$$
+     $$\mathrm{C}_{12}\mathrm{H}_{22}\mathrm{O}_{11} \mathrm{ (lactose)} + \mathrm{H}_2\mathrm{O} \to 4\mathrm{C}_3\mathrm{H}_6\mathrm{O}_3 \mathrm{ (lactic acid)}$$
   5. Lactic acid lowers the pH, causing milk proteins (casein) to coagulate, giving yoghurt its
      thick texture
   6. Yoghurt is refrigerated to slow further fermentation
@@ -178,7 +178,7 @@ micrometres). Electron microscopy is required to visualise viruses.
 - **Process:**
   1. Yeast is mixed with flour, water, and sugar
   2. Yeast carries out **anaerobic respiration** (fermentation):
-     $$\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 \xrightarrow{\mathrm{yeast{}} 2\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{} + 2\mathrm{CO{}_2$$
+     $$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \xrightarrow{\mathrm{yeast}} 2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{CO}_2$$
   3. CO$_2$ gas produced causes the dough to rise
   4. The dough is baked -- alcohol evaporates, CO$_2$ expands further, setting the bread structure
 
@@ -188,7 +188,7 @@ micrometres). Electron microscopy is required to visualise viruses.
 - **Process:**
   1. Sugars (from malted barley for beer, or grape juice for wine) are fermented by yeast
   2. Yeast carries out anaerobic respiration:
-     $$\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 \xrightarrow{\mathrm{yeast{}} 2\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{} + 2\mathrm{CO{}_2$$
+     $$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \xrightarrow{\mathrm{yeast}} 2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{CO}_2$$
   3. The ethanol produced is the alcohol in the beverage
   4. Fermentation is carried out in anaerobic conditions (absence of oxygen)
 
@@ -574,7 +574,7 @@ PCR is a laboratory technique used to amplify (make many copies of) a specific s
 
 After each cycle, the amount of DNA doubles:
 
-$$\mathrm{After {} n \mathrm{ cycles: {} \mathrm{Number of DNA molecules{} = 2^n$$
+$$\mathrm{After } n \mathrm{ cycles: } \mathrm{Number of DNA molecules} = 2^n$$
 
 Starting from 1 DNA molecule:
 

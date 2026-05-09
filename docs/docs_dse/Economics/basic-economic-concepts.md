@@ -201,7 +201,7 @@ requires that all resources are fully employed and used in the most efficient wa
 In the context of a single firm, productive efficiency means producing at the lowest possible
 average cost (at the minimum point of the average cost curve).
 
-$$\mathrm{Productive efficiency: {} \mathrm{MC{} = \mathrm{AC{}_{\min}$$
+$$\mathrm{Productive efficiency: } \mathrm{MC} = \mathrm{AC}_{\min}$$
 
 ### Allocative Efficiency
 
@@ -209,7 +209,7 @@ An economy is allocatively efficient when it is producing the combination of goo
 best satisfies society's wants. This occurs where the marginal benefit (MB) of the last unit
 produced equals its marginal cost (MC).
 
-$$\mathrm{Allocative efficiency: {} P = \mathrm{MC{}$$
+$$\mathrm{Allocative efficiency: } P = \mathrm{MC}$$
 
 When $P \gt MC$, society values the good more than it costs to produce -- more should be produced.
 When $P \lt MC$, the good costs more to produce than society values it -- less should be produced.
@@ -439,11 +439,11 @@ decision.
 
 A rational decision-maker continues an activity as long as:
 
-$$\mathrm{MB{} \gt \mathrm{MC{}$$
+$$\mathrm{MB} \gt \mathrm{MC}$$
 
 The optimal level is where:
 
-$$\mathrm{MB{} = \mathrm{MC{}$$
+$$\mathrm{MB} = \mathrm{MC}$$
 
 ### Incentives
 
@@ -888,7 +888,7 @@ services. It is a theoretical measure used to model consumer behaviour.
 - **Total utility (TU):** The total satisfaction from consuming a given quantity of a good
 - **Marginal utility (MU):** The additional satisfaction from consuming one more unit of a good
 
-$$\mathrm{MU{} = \frac{\Delta \mathrm{TU{}}{\Delta Q}$$
+$$\mathrm{MU} = \frac{\Delta \mathrm{TU}}{\Delta Q}$$
 
 **Law of diminishing marginal utility:** As a consumer consumes more units of a good, the additional
 satisfaction (marginal utility) from each additional unit decreases.
@@ -906,7 +906,7 @@ satisfaction (marginal utility) from each additional unit decreases.
 The consumer maximises utility where the marginal utility per dollar spent is equal across all
 goods:
 
-$$\frac{\mathrm{MU{}_A}{P_A} = \frac{\mathrm{MU{}_B}{P_B}$$
+$$\frac{\mathrm{MU}_A}{P_A} = \frac{\mathrm{MU}_B}{P_B}$$
 
 ### Consumer and Producer Surplus
 
@@ -914,7 +914,7 @@ $$\frac{\mathrm{MU{}_A}{P_A} = \frac{\mathrm{MU{}_B}{P_B}$$
 the actual price they pay. It represents the benefit consumers receive from purchasing a good at a
 market price lower than their maximum willingness to pay.
 
-$$\mathrm{Consumer Surplus{} = \mathrm{Maximum willingness to pay{} - \mathrm{Actual price paid{}$$
+$$\mathrm{Consumer Surplus} = \mathrm{Maximum willingness to pay} - \mathrm{Actual price paid}$$
 
 On a demand and supply diagram, consumer surplus is the area below the demand curve and above the
 equilibrium price.
@@ -923,7 +923,7 @@ equilibrium price.
 price they are willing to accept. It represents the benefit producers receive from selling at a
 market price higher than their minimum acceptable price.
 
-$$\mathrm{Producer Surplus{} = \mathrm{Actual price received{} - \mathrm{Minimum acceptable price{}$$
+$$\mathrm{Producer Surplus} = \mathrm{Actual price received} - \mathrm{Minimum acceptable price}$$
 
 On a demand and supply diagram, producer surplus is the area above the supply curve and below the
 equilibrium price.
@@ -1290,11 +1290,11 @@ Hong Kong's housing market has the following characteristics: average flat price
 
 4. **Information asymmetry:** Quality and safety standards in housing are difficult for individual buyers/renters to assess, creating a role for government regulation (building codes, safety inspections).
 
-(c) Implicit monthly subsidy $= 15\,000 - 2\,000 = \text{HK{}\$13\,000$.
+(c) Implicit monthly subsidy $= 15\,000 - 2\,000 = \text{HK}\$13\,000$.
 
-Annual subsidy $= 13\,000 \times 12 = \text{HK{}\$156\,000$.
+Annual subsidy $= 13\,000 \times 12 = \text{HK}\$156\,000$.
 
-With approximately 2 million PRH residents (30% of 7.5 million population, ~700,000 households): total annual subsidy $= 700\,000 \times 156\,000 = \text{HK{}\$109.2$ billion. This is a substantial fiscal commitment.
+With approximately 2 million PRH residents (30% of 7.5 million population, ~700,000 households): total annual subsidy $= 700\,000 \times 156\,000 = \text{HK}\$109.2$ billion. This is a substantial fiscal commitment.
 
 (d) **Evaluation:**
 
@@ -1373,7 +1373,7 @@ The student's discount rate is 6% per annum. The student graduates in one year a
 <details>
 <summary>Solution</summary>
 
-(a) **Option A (Internship):** NPV $= 15\,000 \times 2 = \text{HK{}\$30\,000$.
+(a) **Option A (Internship):** NPV $= 15\,000 \times 2 = \text{HK}\$30\,000$.
 
 **Option B (Summer school):** Cost $= 30\,000$. Benefit $= 5\,000/month \times 36$ months $= 180\,000$ (nominal), but this starts one year from now.
 
@@ -1381,15 +1381,15 @@ NPV of benefits $= \sum_{t=13}^{48} \frac{5000}{(1.005)^t}$ where the monthly di
 
 Approximation: annual discount rate $= 6\%$. PV of annuity of 3 years starting in 1 year $= \frac{5000 \times 12}{0.06} \times \frac{1 - 1.06^{-3}}{1.06} = \frac{60\,000}{0.06} \times \frac{1 - 0.8396}{1.06} = 1\,000\,000 \times 0.1515 = 151\,500$.
 
-NPV of Option B $= 151\,500 - 30\,000 = \text{HK{}\$121\,500$.
+NPV of Option B $= 151\,500 - 30\,000 = \text{HK}\$121\,500$.
 
-**Option C (Travel):** NPV $= \text{HK{}\$20\,000$.
+**Option C (Travel):** NPV $= \text{HK}\$20\,000$.
 
 (b) Option B has the highest NPV (HK$121,500). The opportunity cost of choosing Option B is the next best alternative: Option A with NPV of HK$30,000. (The opportunity cost is the foregone value, not the cost of the chosen option.)
 
 (c) With 10 years of work: PV of benefits $= \frac{60\,000}{0.06} \times \frac{1 - 1.06^{-10}}{1.06} = 1\,000\,000 \times \frac{1 - 0.5584}{1.06} = 1\,000\,000 \times 0.4183 = 418\,300$.
 
-NPV of Option B $= 418\,300 - 30\,000 = \text{HK{}\$388\,300$.
+NPV of Option B $= 418\,300 - 30\,000 = \text{HK}\$388\,300$.
 
 Option B becomes even more attractive with a longer working horizon because the salary increase compounds over more years.
 

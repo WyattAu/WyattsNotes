@@ -164,8 +164,8 @@ T cells originate in the bone marrow but mature in the **thymus gland**.
 
 | T Cell Type       | Function                                                                                                                                            | Surface Marker   |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| T helper cells ($\mathrm{CD4{}^+$) | Release cytokines that stimulate B cells to differentiate into plasma cells and memory cells; activate cytotoxic T cells and macrophages | CD4             |
-| Cytotoxic T cells ($\mathrm{CD8{}^+$) | Directly destroy virus-infected cells and cancer cells by inducing apoptosis (programmed cell death); recognise antigens presented on MHC class I   | CD8             |
+| T helper cells ($\mathrm{CD4}^+$) | Release cytokines that stimulate B cells to differentiate into plasma cells and memory cells; activate cytotoxic T cells and macrophages | CD4             |
+| Cytotoxic T cells ($\mathrm{CD8}^+$) | Directly destroy virus-infected cells and cancer cells by inducing apoptosis (programmed cell death); recognise antigens presented on MHC class I   | CD8             |
 | Memory T cells    | Long-lived; provide rapid secondary response upon re-exposure to the same antigen                                                                    | --              |
 | Regulatory T cells (Tregs) | Suppress immune responses; prevent autoimmune reactions; maintain tolerance to self-antigens                                                         | CD4, CD25        |
 
@@ -258,7 +258,7 @@ If a large proportion of a population is immune to a disease (through vaccinatio
 
 **Herd immunity threshold:**
 
-$$\text{Threshold{} = \left(1 - \frac{1}{R_0}\right) \times 100\%$$
+$$\text{Threshold} = \left(1 - \frac{1}{R_0}\right) \times 100\%$$
 
 Where $R_0$ is the basic reproduction number (average number of secondary infections produced by one infected individual in a fully susceptible population).
 
@@ -335,7 +335,7 @@ An allergy is an exaggerated immune response to a harmless antigen (allergen). T
 | Feature            | Description                                                                                                           |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | Pathogen type      | Retrovirus (RNA virus) that carries reverse transcriptase                                                              |
-| Target cells       | T helper cells ($\mathrm{CD4{}^+$ T cells) -- the cells that coordinate the immune response                            |
+| Target cells       | T helper cells ($\mathrm{CD4}^+$ T cells) -- the cells that coordinate the immune response                            |
 | Transmission       | Unprotected sexual contact; contaminated blood products; sharing needles; mother-to-child (during birth or breastfeeding) |
 | Not transmitted by | Casual contact, hugging, sharing utensils, mosquito bites                                                              |
 
@@ -545,7 +545,7 @@ In contrast, a **tetanus vaccine** contains a toxoid (inactivated tetanus toxin)
 | Feature            | Description                                                                                                           |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
 | Pathogen type      | Retrovirus (RNA virus with reverse transcriptase)                                                              |
-| Target cells       | T helper cells ($\mathrm{CD4{}^+$ T cells), macrophages, dendritic cells                                  |
+| Target cells       | T helper cells ($\mathrm{CD4}^+$ T cells), macrophages, dendritic cells                                  |
 | Genetic material   | Two copies of single-stranded RNA; nine genes (gag, pol, env, tat, rev, nef, vif, vpr, vpu)                        |
 | Viral envelope     | Stolen from host cell membrane during budding; contains viral glycoproteins gp120 (binds CD4 receptor) and gp41 (mediates fusion) |
 | Transmission       | Unprotected sexual contact; contaminated blood products; sharing needles; mother-to-child (during birth or breastfeeding) |
@@ -787,7 +787,7 @@ The lymphatic system is a network of vessels, tissues, and organs that:
 - When a sufficiently high proportion of a population is immune to a disease (through vaccination or previous infection), the spread of the disease is significantly reduced, providing indirect protection to those who are not immune
 - The **herd immunity threshold** depends on the basic reproduction number ($R_0$) of the disease:
 
-$$\text{Herd immunity threshold{} = 1 - \frac{1}{R_0}$$
+$$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 
 | Disease       | $R_0$  | Herd Immunity Threshold |
 | ------------- | ------ | ----------------------- |

@@ -10,11 +10,11 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Number Systems Conversion
-**Question:** (a) Convert $(\text{FA3{})_{16}$ to binary and decimal. (b) Convert $(-42)_{10}$ to 8-bit two's complement binary. (c) Perform binary subtraction $11010110 - 01101011$ using two's complement. (d) Explain why two's complement is preferred over sign-and-magnitude for representing negative numbers.
+**Question:** (a) Convert $(\text{FA3})_{16}$ to binary and decimal. (b) Convert $(-42)_{10}$ to 8-bit two's complement binary. (c) Perform binary subtraction $11010110 - 01101011$ using two's complement. (d) Explain why two's complement is preferred over sign-and-magnitude for representing negative numbers.
 
 **Solution:**
 
-(a) $(\text{FA3{})_{16}$: F $= 15 = 1111_2$, A $= 10 = 1010_2$, 3 $= 0011_2$. Binary: $111110100011_2$.
+(a) $(\text{FA3})_{16}$: F $= 15 = 1111_2$, A $= 10 = 1010_2$, 3 $= 0011_2$. Binary: $111110100011_2$.
 
 Decimal: $15 \times 256 + 10 \times 16 + 3 = 3840 + 160 + 3 = 4003$.
 
@@ -57,7 +57,7 @@ Total: **3 bytes** (all characters are in the ASCII range, so UTF-8 uses 1 byte 
 
 **Solution:**
 
-(a) File size $= 1920 \times 1080 \times 24 \text{ bits{} = 1920 \times 1080 \times 3 \text{ bytes{} = 6,220,800 \text{ bytes{} \approx 5.93$ MB.
+(a) File size $= 1920 \times 1080 \times 24 \text{ bits} = 1920 \times 1080 \times 3 \text{ bytes} = 6,220,800 \text{ bytes} \approx 5.93$ MB.
 
 (b) Compressed size $= 5.93 / 10 \approx 0.593$ MB $\approx 593$ KB.
 
@@ -65,11 +65,11 @@ Total: **3 bytes** (all characters are in the ASCII range, so UTF-8 uses 1 byte 
 
 Lossy compression is acceptable for: photographs, web images, social media. It is NOT acceptable for: medical imaging, technical drawings, screenshots with text, or any situation where exact pixel reproduction is required.
 
-(d) File size $= \text{sample rate{} \times \text{bit depth{} \times \text{channels{} \times \text{duration{}$.
+(d) File size $= \text{sample rate} \times \text{bit depth} \times \text{channels} \times \text{duration}$.
 
-$= 44,100 \times 16 \times 2 \times (3 \times 60) = 44,100 \times 16 \times 2 \times 180 = 254,016,000 \text{ bits{}$.
+$= 44,100 \times 16 \times 2 \times (3 \times 60) = 44,100 \times 16 \times 2 \times 180 = 254,016,000 \text{ bits}$.
 
-$= 254,016,000 / 8 = 31,752,000 \text{ bytes{} \approx 30.27$ MB.
+$= 254,016,000 / 8 = 31,752,000 \text{ bytes} \approx 30.27$ MB.
 
 ---
 

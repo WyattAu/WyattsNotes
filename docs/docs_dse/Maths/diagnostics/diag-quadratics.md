@@ -49,7 +49,7 @@ $$4u^2 - 5u + 1 = 0$$
 
 $$(4u - 1)(u - 1) = 0$$
 
-$$u = \frac{1}{4} \quad \text{or{} \quad u = 1$$
+$$u = \frac{1}{4} \quad \text{or} \quad u = 1$$
 
 Since $u > 0$, both are valid.
 
@@ -87,7 +87,7 @@ $$f(x) = -3(x^2 - 4x) - 7 = -3(x - 2)^2 + 12 - 7 = -3(x - 2)^2 + 5$$
 
 Since $-3(x - 2)^2 \leq 0$ for all $x$, the maximum value is $5$ at $x = 2$.
 
-$$\mathrm{ran{}(f) = (-\infty,\; 5]$$
+$$\mathrm{ran}(f) = (-\infty,\; 5]$$
 
 ---
 
@@ -174,7 +174,7 @@ $$x^2 - 5x + 6 = 0$$
 
 $$(x - 2)(x - 3) = 0$$
 
-$$x = 2 \quad \text{or{} \quad x = 3$$
+$$x = 2 \quad \text{or} \quad x = 3$$
 
 When $x = 2$: $y = 2(2) + 1 = 5$. So $A = (2, 5)$.
 
@@ -240,7 +240,7 @@ $$u^2 - 5u + 4 = 0$$
 
 $$(u - 1)(u - 4) = 0$$
 
-$$u = 1 \quad \text{or{} \quad u = 4$$
+$$u = 1 \quad \text{or} \quad u = 4$$
 
 $x^2 = 1 \implies x = 1$ or $x = -1$.
 

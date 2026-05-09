@@ -31,11 +31,11 @@ New sum: $16500 + 181 = 16681$.
 
 New $n = 101$.
 
-New mean: $\bar{x}_{\text{new{}} = \dfrac{16681}{101} \approx 165.16$.
+New mean: $\bar{x}_{\text{new}} = \dfrac{16681}{101} \approx 165.16$.
 
 New sum of squares: $2727400 + 181^2 = 2727400 + 32761 = 2760161$.
 
-New variance: $\sigma^2_{\text{new{}} = \dfrac{2760161}{101} - (165.16)^2 \approx 27328.33 - 27277.83 \approx 50.50$ cm$^2$.
+New variance: $\sigma^2_{\text{new}} = \dfrac{2760161}{101} - (165.16)^2 \approx 27328.33 - 27277.83 \approx 50.50$ cm$^2$.
 
 Note: variance has units cm$^2$, while standard deviation has units cm.
 
@@ -51,9 +51,9 @@ A set of data has mean $m$ and standard deviation $s$. If each value is transfor
 
 For the transformation $y = ax + b$:
 
-- New mean $= a \times \text{old mean{} + b = 3m - 5$.
-- New standard deviation $= |a| \times \text{old standard deviation{} = 3s$.
-- New variance $= a^2 \times \text{old variance{} = 9s^2$.
+- New mean $= a \times \text{old mean} + b = 3m - 5$.
+- New standard deviation $= |a| \times \text{old standard deviation} = 3s$.
+- New variance $= a^2 \times \text{old variance} = 9s^2$.
 
 The additive constant $-5$ affects the mean but NOT the standard deviation.
 
@@ -102,11 +102,11 @@ A box plot has minimum $= 10$, $Q_1 = 25$, median $= 35$, $Q_3 = 50$, maximum $=
 
 **Solution:**
 
-$\text{IQR{} = Q_3 - Q_1 = 50 - 25 = 25$.
+$\text{IQR} = Q_3 - Q_1 = 50 - 25 = 25$.
 
-Lower fence: $Q_1 - 1.5 \times \text{IQR{} = 25 - 37.5 = -12.5$.
+Lower fence: $Q_1 - 1.5 \times \text{IQR} = 25 - 37.5 = -12.5$.
 
-Upper fence: $Q_3 + 1.5 \times \text{IQR{} = 50 + 37.5 = 87.5$.
+Upper fence: $Q_3 + 1.5 \times \text{IQR} = 50 + 37.5 = 87.5$.
 
 Since all values ($10$ to $80$) fall within $[-12.5,\; 87.5]$, there are no outliers.
 
@@ -142,7 +142,7 @@ $$s^2 = \frac{8(4 + 9) + 12(9 + 4)}{20} = \frac{8 \times 13 + 12 \times 13}{20} 
 
 **Question:**
 
-A random variable $X$ takes values $1, 2, 3, 4, 5$ with probabilities $\dfrac{1}{15}$, $\dfrac{2}{15}$, $\dfrac{3}{15}$, $\dfrac{4}{15}$, $\dfrac{5}{15}$ respectively. Find $E(X)$ and $\text{Var{}(X)$.
+A random variable $X$ takes values $1, 2, 3, 4, 5$ with probabilities $\dfrac{1}{15}$, $\dfrac{2}{15}$, $\dfrac{3}{15}$, $\dfrac{4}{15}$, $\dfrac{5}{15}$ respectively. Find $E(X)$ and $\text{Var}(X)$.
 
 **Solution:**
 
@@ -152,7 +152,7 @@ $$= \frac{1 + 4 + 9 + 16 + 25}{15} = \frac{55}{15} = \frac{11}{3}$$
 
 $$E(X^2) = \frac{1 + 8 + 27 + 64 + 125}{15} = \frac{225}{15} = 15$$
 
-$$\text{Var{}(X) = E(X^2) - [E(X)]^2 = 15 - \frac{121}{9} = \frac{135 - 121}{9} = \frac{14}{9}$$
+$$\text{Var}(X) = E(X^2) - [E(X)]^2 = 15 - \frac{121}{9} = \frac{135 - 121}{9} = \frac{14}{9}$$
 
 ---
 
@@ -194,7 +194,7 @@ Variance of sample means: $\dfrac{(2-4)^2 + 2(3-4)^2 + 3(4-4)^2 + 2(5-4)^2 + (6-
 
 $= \dfrac{4 + 2 + 0 + 2 + 4}{9} = \dfrac{12}{9} = \dfrac{4}{3} = \dfrac{\sigma^2}{n}$.
 
-This confirms: $E(\bar{X}) = \mu$ and $\text{Var{}(\bar{X}) = \dfrac{\sigma^2}{n}$.
+This confirms: $E(\bar{X}) = \mu$ and $\text{Var}(\bar{X}) = \dfrac{\sigma^2}{n}$.
 
 ---
 
@@ -289,7 +289,7 @@ Upper half: $28, 30, 35, 40, 45$ (5 values).
 
 $Q_3$ position: $\dfrac{5 + 1}{2} = 3$. $Q_3 = 35$.
 
-$$\text{IQR{} = Q_3 - Q_1 = 35 - 18 = 17$$
+$$\text{IQR} = Q_3 - Q_1 = 35 - 18 = 17$$
 
 ---
 
@@ -303,11 +303,11 @@ Class A has test scores with mean $65$ and standard deviation $8$. Class B has t
 
 The coefficient of variation (CV) measures relative dispersion:
 
-$$\text{CV{}_A = \frac{8}{65} \times 100\% \approx 12.3\%$$
+$$\text{CV}_A = \frac{8}{65} \times 100\% \approx 12.3\%$$
 
-$$\text{CV{}_B = \frac{15}{68} \times 100\% \approx 22.1\%$$
+$$\text{CV}_B = \frac{15}{68} \times 100\% \approx 22.1\%$$
 
-Since $\text{CV{}_A < \text{CV{}_B$, Class A has more consistent performance.
+Since $\text{CV}_A < \text{CV}_B$, Class A has more consistent performance.
 
 Alternatively, comparing standard deviations directly: Class A has $\sigma = 8$ and Class B has $\sigma = 15$. The smaller standard deviation of Class A indicates less variability, i.e. more consistency.
 
@@ -381,7 +381,7 @@ For grouped data with class width $h$, state Sheppard's correction for the varia
 
 Sheppard's correction adjusts the grouped data variance:
 
-$$\sigma_{\text{corrected{}}^2 = \sigma_{\text{grouped{}}^2 - \frac{h^2}{12}$$
+$$\sigma_{\text{corrected}}^2 = \sigma_{\text{grouped}}^2 - \frac{h^2}{12}$$
 
 This correction is appropriate when:
 
@@ -511,11 +511,11 @@ Minimum $= 12$, $Q_1 = 18$, Median $= 22$, $Q_3 = 28$, Maximum $= 35$.
 
 **Solution:**
 
-(a) $\text{IQR{} = Q_3 - Q_1 = 28 - 18 = 10$.
+(a) $\text{IQR} = Q_3 - Q_1 = 28 - 18 = 10$.
 
-(b) Lower fence $= Q_1 - 1.5 \times \text{IQR{} = 18 - 15 = 3$.
+(b) Lower fence $= Q_1 - 1.5 \times \text{IQR} = 18 - 15 = 3$.
 
-Upper fence $= Q_3 + 1.5 \times \text{IQR{} = 28 + 15 = 43$.
+Upper fence $= Q_3 + 1.5 \times \text{IQR} = 28 + 15 = 43$.
 
 Since all values ($12$ to $35$) lie within $[3, 43]$, there are no outliers.
 

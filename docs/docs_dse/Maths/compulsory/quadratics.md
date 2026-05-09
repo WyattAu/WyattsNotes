@@ -65,7 +65,7 @@ Find the value of $k$ for which $x^2 + 2kx + k + 6 = 0$ has equal roots.
 
 $$\Delta = (2k)^2 - 4(1)(k + 6) = 4k^2 - 4k - 24 = 0$$
 
-$$k^2 - k - 6 = 0 \implies (k - 3)(k + 2) = 0 \implies k = 3 \mathrm{ or {} k = -2$$
+$$k^2 - k - 6 = 0 \implies (k - 3)(k + 2) = 0 \implies k = 3 \mathrm{ or } k = -2$$
 
 ---
 
@@ -254,8 +254,8 @@ Equation: $x^2 - 7x + 15 = 0$.
 6. **Question:** A ball is thrown upward. Its height $h$ metres at time $t$ seconds is
    $h = -5t^2 + 20t + 1$. Find the maximum height and the time at which it occurs.
 
-$h = -5(t^2 - 4t) + 1 = -5[(t - 2)^2 - 4] + 1 = -5(t - 2)^2 + 21$. Maximum height: $21 \mathrm{ m{}$
-at $t = 2 \mathrm{ s{}$.
+$h = -5(t^2 - 4t) + 1 = -5[(t - 2)^2 - 4] + 1 = -5(t - 2)^2 + 21$. Maximum height: $21 \mathrm{ m}$
+at $t = 2 \mathrm{ s}$.
 
 7. **Question:** Find the range of the function $f(x) = 2x^2 - 8x + 11$.
 
@@ -347,7 +347,7 @@ $$(t + 4)(t - 2) = 0 \implies t = 2$$
 
 (Reject $t = -4$ since $t \geq 0$.)
 
-$$|x| = 2 \implies x = 2 \;\mathrm{or{}\; x = -2$$
+$$|x| = 2 \implies x = 2 \;\mathrm{or}\; x = -2$$
 
 </details>
 
@@ -467,7 +467,7 @@ Answer: $\left(p,\; q\right) = \left(-2 + 2\sqrt{10},\; 11 - 2\sqrt{10}\right)$ 
 
 </details>
 
-**Problem 5.** A rectangular field has perimeter $120\mathrm{ m{}$ and area $A\mathrm{ m{}^2$. Show that $A \leq 900$ and find the dimensions when $A = 900$.
+**Problem 5.** A rectangular field has perimeter $120\mathrm{ m}$ and area $A\mathrm{ m}^2$. Show that $A \leq 900$ and find the dimensions when $A = 900$.
 
 <details>
 <summary>Solution</summary>
@@ -478,9 +478,9 @@ $$A = xy = x(60 - x) = -x^2 + 60x = -(x - 30)^2 + 900$$
 
 Since $-(x-30)^2 \leq 0$ for all real $x$, we have $A \leq 900$.
 
-Maximum $A = 900\mathrm{ m{}^2$ when $x = 30$, giving $y = 30$.
+Maximum $A = 900\mathrm{ m}^2$ when $x = 30$, giving $y = 30$.
 
-The field is a $30\mathrm{ m{} \times 30\mathrm{ m{}$ square.
+The field is a $30\mathrm{ m} \times 30\mathrm{ m}$ square.
 
 </details>
 
@@ -537,7 +537,7 @@ Range: $\left[\dfrac{1}{3},\; 3\right]$.
 
 Note that $\alpha^4 + \beta^4 = (\alpha^2 + \beta^2)^2 - 2(\alpha\beta)^2 = 100 - 2(\alpha\beta)^2$.
 
-$$100 - 2(\alpha\beta)^2 = 82 \implies 2(\alpha\beta)^2 = 18 \implies (\alpha\beta)^2 = 9 \implies \alpha\beta = 3 \;\mathrm{or{}\; \alpha\beta = -3$$
+$$100 - 2(\alpha\beta)^2 = 82 \implies 2(\alpha\beta)^2 = 18 \implies (\alpha\beta)^2 = 9 \implies \alpha\beta = 3 \;\mathrm{or}\; \alpha\beta = -3$$
 
 **Case $\alpha\beta = 3$:** $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = 10 \implies (\alpha + \beta)^2 - 6 = 10 \implies (\alpha + \beta)^2 = 16 \implies \alpha + \beta = \pm 4$.
 
@@ -647,7 +647,7 @@ $$u + \frac{1}{u} = \frac{25}{6}$$
 
 $$6u^2 + 6 = 25u \implies 6u^2 - 25u + 6 = 0 \implies (2u - 1)(3u - 6) = 0$$
 
-$$u = \frac{1}{2} \;\text{or{}\; u = 2$$
+$$u = \frac{1}{2} \;\text{or}\; u = 2$$
 
 Case 1: $\dfrac{x + 1}{x} = \dfrac{1}{2} \implies 2x + 2 = x \implies x = -2$.
 
@@ -743,7 +743,7 @@ For two distinct real roots: $\Delta > 0$:
 
 $$\Delta = 4(k-1)^2 - 4(k+5) = 4(k^2 - 2k + 1 - k - 5) = 4(k^2 - 3k - 4) > 0$$
 
-$$(k - 4)(k + 1) > 0 \implies k < -1 \;\text{or{}\; k > 4$$
+$$(k - 4)(k + 1) > 0 \implies k < -1 \;\text{or}\; k > 4$$
 
 For both roots positive: by Vieta, $\alpha + \beta = -2(k - 1) > 0 \implies k < 1$, and $\alpha\beta = k + 5 > 0 \implies k > -5$.
 
@@ -769,9 +769,9 @@ Therefore $x^2 - 2x + 3 > 0$ for all real $x$. $\qed$
 <details>
 <summary>Solution</summary>
 
-$f(1) = 1 + p + q = 3 \implies p + q = 2 \quad \text{(i){}$
+$f(1) = 1 + p + q = 3 \implies p + q = 2 \quad \text{(i)}$
 
-$f(2) = 4 + 2p + q = 5 \implies 2p + q = 1 \quad \text{(ii){}$
+$f(2) = 4 + 2p + q = 5 \implies 2p + q = 1 \quad \text{(ii)}$
 
 (ii) - (i): $p = -1$. From (i): $q = 3$.
 
@@ -803,9 +803,9 @@ $x + 2y = 60 \implies x = 60 - 2y$.
 
 $$A = xy = (60 - 2y)y = -2y^2 + 60y = -2(y - 15)^2 + 450$$
 
-Maximum area is $450\mathrm{ m{}^2$ when $y = 15$, giving $x = 30$.
+Maximum area is $450\mathrm{ m}^2$ when $y = 15$, giving $x = 30$.
 
-Dimensions: $30\mathrm{ m{}$ parallel to wall, $15\mathrm{ m{}$ perpendicular.
+Dimensions: $30\mathrm{ m}$ parallel to wall, $15\mathrm{ m}$ perpendicular.
 
 </details>
 

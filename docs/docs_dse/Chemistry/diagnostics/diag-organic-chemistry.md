@@ -94,7 +94,7 @@ $$(CH_{3})_{3}C^{+} + OH^{-} \rightarrow (CH_{3})_{3}COH$$
 
 (c) The rate-determining step (step 1) involves **only the halogenoalkane** molecule. The $OH^{-}$ is not involved until the fast second step. Therefore:
 
-$$\text{Rate{} = k[(CH_{3})_{3}CBr]$$
+$$\text{Rate} = k[(CH_{3})_{3}CBr]$$
 
 The reaction is **first order** with respect to the halogenoalkane and **zero order** with respect to NaOH (or $OH^{-}$).
 
@@ -149,7 +149,7 @@ Reason: One carbon of the $C=C$ double bond (the $CH_{2}=$ end) is bonded to **t
 
 Complete the following reaction scheme by identifying compounds $A$ to $E$:
 
-$$CH_{3}CH_{2}OH \xrightarrow[\text{excess{}]{K_{2}Cr_{2}O_{7}/H^{+}} A \xrightarrow[\text{heat{}]{\text{alkaline {} I_{2}} B + CHI_{3} \downarrow$$
+$$CH_{3}CH_{2}OH \xrightarrow[\text{excess}]{K_{2}Cr_{2}O_{7}/H^{+}} A \xrightarrow[\text{heat}]{\text{alkaline } I_{2}} B + CHI_{3} \downarrow$$
 
 $$B \xrightarrow{LiAlH_{4}} C \xrightarrow{HBr} D \xrightarrow{NaOH(aq)} C$$
 

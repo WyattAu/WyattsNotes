@@ -179,14 +179,14 @@ $$y - 4 = -\frac{3}{4}(x - 3) \implies 4(y - 4) = -3(x - 3) \implies 4y - 16 = -
 
 Given vertices $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$:
 
-$$\mathrm{Area{} = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$
+$$\mathrm{Area} = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$
 
 ### Area of a Polygon
 
 For a polygon with vertices $(x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)$ listed in order (clockwise
 or counterclockwise):
 
-$$\mathrm{Area{} = \frac{1}{2}\left|\sum_{i=1}^{n} (x_i y_{i+1} - x_{i+1} y_i)\right|$$
+$$\mathrm{Area} = \frac{1}{2}\left|\sum_{i=1}^{n} (x_i y_{i+1} - x_{i+1} y_i)\right|$$
 
 where $(x_{n+1}, y_{n+1}) = (x_1, y_1)$.
 
@@ -194,7 +194,7 @@ where $(x_{n+1}, y_{n+1}) = (x_1, y_1)$.
 
 Find the area of the triangle with vertices $A(1, 2)$, $B(5, 6)$, $C(3, -1)$.
 
-$$\mathrm{Area{} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2}|7 + (-15) + (-12)| = \frac{1}{2}|-20| = 10$$
+$$\mathrm{Area} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2}|7 + (-15) + (-12)| = \frac{1}{2}|-20| = 10$$
 
 ---
 
@@ -293,7 +293,7 @@ $$k - 3 = -1 - k \implies 2k = 2 \implies k = 1$$
 
 Using the shoelace formula with vertices in order:
 
-$\mathrm{Area{} = \frac{1}{2}|(0 \cdot 0 - 4 \cdot 0) + (4 \cdot 3 - 5 \cdot 0) + (5 \cdot 4 - 1 \cdot 3) + (1 \cdot 0 - 0 \cdot 4)|$
+$\mathrm{Area} = \frac{1}{2}|(0 \cdot 0 - 4 \cdot 0) + (4 \cdot 3 - 5 \cdot 0) + (5 \cdot 4 - 1 \cdot 3) + (1 \cdot 0 - 0 \cdot 4)|$
 
 $= \frac{1}{2}|0 + 12 + 17 + 0| = \frac{1}{2}(29) = 14.5$
 
@@ -395,7 +395,7 @@ $\ell_2 \cap \ell_3$: Adding the equations gives $3x = 11 \implies x = \dfrac{11
 
 Using the area formula:
 
-$$\mathrm{Area{} = \frac{1}{2}\left|4\!\left(3 - \frac{5}{3}\right) + 3\!\left(\frac{5}{3} - 2\right) + \frac{11}{3}(2 - 3)\right|$$
+$$\mathrm{Area} = \frac{1}{2}\left|4\!\left(3 - \frac{5}{3}\right) + 3\!\left(\frac{5}{3} - 2\right) + \frac{11}{3}(2 - 3)\right|$$
 
 $$= \frac{1}{2}\left|4 \cdot \frac{4}{3} + 3 \cdot \left(-\frac{1}{3}\right) + \frac{11}{3} \cdot (-1)\right|$$
 
@@ -698,7 +698,7 @@ Substituting into $x^2 + y^2 = 5$:
 
 $$x^2 + (3 - 2x)^2 = 5 \implies x^2 + 9 - 12x + 4x^2 = 5 \implies 5x^2 - 12x + 4 = 0$$
 
-$$(5x - 2)(x - 2) = 0 \implies x = \frac{2}{5} \;\text{or{}\; x = 2$$
+$$(5x - 2)(x - 2) = 0 \implies x = \frac{2}{5} \;\text{or}\; x = 2$$
 
 $x = \dfrac{2}{5} \implies y = 3 - \dfrac{4}{5} = \dfrac{11}{5}$. Point: $\left(\dfrac{2}{5}, \dfrac{11}{5}\right)$.
 
@@ -801,11 +801,11 @@ Equation: $(x - 2)^2 + (y - 3)^2 = 4$, or $x^2 + y^2 - 4x - 6y + 9 = 0$.
 
 General form: $x^2 + y^2 + Dx + Ey + F = 0$.
 
-$(1, 0)$: $1 + D + F = 0 \quad \text{(i){}$.
+$(1, 0)$: $1 + D + F = 0 \quad \text{(i)}$.
 
-$(0, 1)$: $1 + E + F = 0 \quad \text{(ii){}$.
+$(0, 1)$: $1 + E + F = 0 \quad \text{(ii)}$.
 
-$(-1, 0)$: $1 - D + F = 0 \quad \text{(iii){}$.
+$(-1, 0)$: $1 - D + F = 0 \quad \text{(iii)}$.
 
 (i) - (iii): $2D = 0 \implies D = 0$.
 
@@ -864,7 +864,7 @@ $$100k^2 - 600k + 900 = 36k^2 - 72k + 612$$
 
 $$64k^2 - 528k + 288 = 0 \implies 8k^2 - 66k + 36 = 0 \implies 4k^2 - 33k + 18 = 0$$
 
-$$(4k - 3)(k - 6) = 0 \implies k = \frac{3}{4} \;\text{or{}\; k = 6$$
+$$(4k - 3)(k - 6) = 0 \implies k = \frac{3}{4} \;\text{or}\; k = 6$$
 
 </details>
 

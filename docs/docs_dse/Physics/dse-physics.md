@@ -163,21 +163,21 @@ Candidates are expected to demonstrate the ability to:
 
 ### Worked Example 1 -- Mechanics (SUVAT)
 
-A car accelerates uniformly from rest to $20 \mathrm{ m/s{}$ in $5 \mathrm{ s{}$. Find the
+A car accelerates uniformly from rest to $20 \mathrm{ m/s}$ in $5 \mathrm{ s}$. Find the
 acceleration and the distance travelled.
 
 <details>
 <summary>Solution</summary>
 
-Using $v = u + at$: $a = \frac{v - u}{t} = \frac{20 - 0}{5} = 4.0 \mathrm{ m/s{}^2$
+Using $v = u + at$: $a = \frac{v - u}{t} = \frac{20 - 0}{5} = 4.0 \mathrm{ m/s}^2$
 
-Using $s = ut + \frac{1}{2}at^2$: $s = 0 + \frac{1}{2}(4)(25) = 50 \mathrm{ m{}$
+Using $s = ut + \frac{1}{2}at^2$: $s = 0 + \frac{1}{2}(4)(25) = 50 \mathrm{ m}$
 
 </details>
 
 ### Worked Example 2 -- Electricity (Circuit)
 
-Two resistors of $6 \Omega$ and $12 \Omega$ are connected in series across a $9 \mathrm{ V{}$
+Two resistors of $6 \Omega$ and $12 \Omega$ are connected in series across a $9 \mathrm{ V}$
 battery with negligible internal resistance. Find the current and the power dissipated in each
 resistor.
 
@@ -186,49 +186,49 @@ resistor.
 
 Total resistance: $R = 6 + 12 = 18 \Omega$
 
-Current: $I = \frac{V}{R} = \frac{9}{18} = 0.5 \mathrm{ A{}$
+Current: $I = \frac{V}{R} = \frac{9}{18} = 0.5 \mathrm{ A}$
 
-$P_6 = I^2 R_6 = 0.25 \times 6 = 1.5 \mathrm{ W{}$
+$P_6 = I^2 R_6 = 0.25 \times 6 = 1.5 \mathrm{ W}$
 
-$P_{12} = I^2 R_{12} = 0.25 \times 12 = 3.0 \mathrm{ W{}$
+$P_{12} = I^2 R_{12} = 0.25 \times 12 = 3.0 \mathrm{ W}$
 
 </details>
 
 ### Worked Example 3 -- Waves (Wave Equation)
 
-A sound wave of wavelength $0.68 \mathrm{ m{}$ travels at $340 \mathrm{ m/s{}$. Find the
+A sound wave of wavelength $0.68 \mathrm{ m}$ travels at $340 \mathrm{ m/s}$. Find the
 frequency and period.
 
 <details>
 <summary>Solution</summary>
 
-$$f = \frac{v}{\lambda} = \frac{340}{0.68} = 500 \mathrm{ Hz{}$$
+$$f = \frac{v}{\lambda} = \frac{340}{0.68} = 500 \mathrm{ Hz}$$
 
-$$T = \frac{1}{f} = \frac{1}{500} = 0.002 \mathrm{ s{} = 2.0 \mathrm{ ms{}$$
+$$T = \frac{1}{f} = \frac{1}{500} = 0.002 \mathrm{ s} = 2.0 \mathrm{ ms}$$
 
 </details>
 
 ### Worked Example 4 -- Energy (Conservation)
 
-A $0.5 \mathrm{ kg{}$ ball is dropped from a height of $10 \mathrm{ m{}$. Find its speed just
+A $0.5 \mathrm{ kg}$ ball is dropped from a height of $10 \mathrm{ m}$. Find its speed just
 before it hits the ground, neglecting air resistance.
 
 <details>
 <summary>Solution</summary>
 
-$$mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 10} = \sqrt{196.2} = 14.0 \mathrm{ m/s{}$$
+$$mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 10} = \sqrt{196.2} = 14.0 \mathrm{ m/s}$$
 
 </details>
 
 ### Worked Example 5 -- Thermal Physics (Specific Heat)
 
-A $2 \mathrm{ kg{}$ block of aluminium (specific heat capacity $900 \mathrm{ J/(kg\cdot{}^\circ C)}$)
-is heated from $20^\circ\mathrm{C{}$ to $100^\circ\mathrm{C{}$. Find the energy required.
+A $2 \mathrm{ kg}$ block of aluminium (specific heat capacity $900 \mathrm{ J/(kg\cdot}^\circ C)}$)
+is heated from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Find the energy required.
 
 <details>
 <summary>Solution</summary>
 
-$$Q = mc\Delta T = 2 \times 900 \times (100 - 20) = 2 \times 900 \times 80 = 144000 \mathrm{ J{} = 144 \mathrm{ kJ{}$$
+$$Q = mc\Delta T = 2 \times 900 \times (100 - 20) = 2 \times 900 \times 80 = 144000 \mathrm{ J} = 144 \mathrm{ kJ}$$
 
 </details>
 
@@ -252,7 +252,7 @@ $$Q = mc\Delta T = 2 \times 900 \times (100 - 20) = 2 \times 900 \times 80 = 144
 
 ## Problem Set
 
-**Problem 1.** A stone is thrown vertically upward with initial speed $15 \mathrm{ m/s{}$.
+**Problem 1.** A stone is thrown vertically upward with initial speed $15 \mathrm{ m/s}$.
 Find the maximum height reached and the total time in the air.
 
 <details>
@@ -260,35 +260,35 @@ Find the maximum height reached and the total time in the air.
 
 Maximum height: using $v^2 = u^2 + 2as$ with $v = 0$:
 
-$$h = \frac{u^2}{2g} = \frac{225}{19.62} = 11.5 \mathrm{ m{}$$
+$$h = \frac{u^2}{2g} = \frac{225}{19.62} = 11.5 \mathrm{ m}$$
 
-Time to reach max height: $t = \frac{u}{g} = \frac{15}{9.81} = 1.53 \mathrm{ s{}$
+Time to reach max height: $t = \frac{u}{g} = \frac{15}{9.81} = 1.53 \mathrm{ s}$
 
-Total time in air: $2t = 3.06 \mathrm{ s{}$
+Total time in air: $2t = 3.06 \mathrm{ s}$
 
 </details>
 
 If you get this wrong, revise: Mechanics / SUVAT equations
 
-**Problem 2.** A $5 \mathrm{ kg{}$ object is pulled across a rough horizontal surface by a force
-of $40 \mathrm{ N{}$ at $30^\circ$ above the horizontal. If the coefficient of kinetic friction
+**Problem 2.** A $5 \mathrm{ kg}$ object is pulled across a rough horizontal surface by a force
+of $40 \mathrm{ N}$ at $30^\circ$ above the horizontal. If the coefficient of kinetic friction
 is $0.4$, find the acceleration.
 
 <details>
 <summary>Solution</summary>
 
-Normal force: $N = mg - F\sin 30^\circ = 49.05 - 20 = 29.05 \mathrm{ N{}$
+Normal force: $N = mg - F\sin 30^\circ = 49.05 - 20 = 29.05 \mathrm{ N}$
 
-Friction: $f_k = 0.4 \times 29.05 = 11.62 \mathrm{ N{}$
+Friction: $f_k = 0.4 \times 29.05 = 11.62 \mathrm{ N}$
 
-$$a = \frac{F\cos 30^\circ - f_k}{m} = \frac{34.64 - 11.62}{5} = \frac{23.02}{5} = 4.60 \mathrm{ m/s{}^2$$
+$$a = \frac{F\cos 30^\circ - f_k}{m} = \frac{34.64 - 11.62}{5} = \frac{23.02}{5} = 4.60 \mathrm{ m/s}^2$$
 
 </details>
 
 If you get this wrong, revise: Mechanics / Newton's Laws and Friction
 
 **Problem 3.** Three resistors of $2 \Omega$, $3 \Omega$, and $6 \Omega$ are connected in
-parallel. A $6 \mathrm{ V{}$ battery with internal resistance $0.5 \Omega$ is connected across
+parallel. A $6 \mathrm{ V}$ battery with internal resistance $0.5 \Omega$ is connected across
 the combination. Find the total current from the battery.
 
 <details>
@@ -296,49 +296,49 @@ the combination. Find the total current from the battery.
 
 Parallel resistance: $\frac{1}{R_p} = \frac{1}{2} + \frac{1}{3} + \frac{1}{6} = 1 \implies R_p = 1 \Omega$
 
-$$I = \frac{\varepsilon}{R_p + r} = \frac{6}{1 + 0.5} = \frac{6}{1.5} = 4.0 \mathrm{ A{}$$
+$$I = \frac{\varepsilon}{R_p + r} = \frac{6}{1 + 0.5} = \frac{6}{1.5} = 4.0 \mathrm{ A}$$
 
 </details>
 
 If you get this wrong, revise: Electricity and Magnetism / Series and Parallel Circuits
 
-**Problem 4.** A radio wave has a frequency of $3 \times 10^8 \mathrm{ Hz{}$. Find its wavelength.
+**Problem 4.** A radio wave has a frequency of $3 \times 10^8 \mathrm{ Hz}$. Find its wavelength.
 Which region of the EM spectrum does it belong to?
 
 <details>
 <summary>Solution</summary>
 
-$$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{3.0 \times 10^8} = 1.0 \mathrm{ m{}$$
+$$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{3.0 \times 10^8} = 1.0 \mathrm{ m}$$
 
-A wavelength of $1.0 \mathrm{ m{}$ places this in the **radio wave** region of the EM spectrum.
+A wavelength of $1.0 \mathrm{ m}$ places this in the **radio wave** region of the EM spectrum.
 
 </details>
 
 If you get this wrong, revise: Waves / Electromagnetic Spectrum
 
-**Problem 5.** A $3 \mathrm{ kg{}$ trolley moving at $4 \mathrm{ m/s{}$ collides with a $1 \mathrm{ kg{}$
+**Problem 5.** A $3 \mathrm{ kg}$ trolley moving at $4 \mathrm{ m/s}$ collides with a $1 \mathrm{ kg}$
 stationary trolley and they stick together. Find the velocity after collision and the kinetic
 energy lost.
 
 <details>
 <summary>Solution</summary>
 
-Conservation of momentum: $3 \times 4 + 1 \times 0 = (3 + 1)v \implies v = 3.0 \mathrm{ m/s{}$
+Conservation of momentum: $3 \times 4 + 1 \times 0 = (3 + 1)v \implies v = 3.0 \mathrm{ m/s}$
 
-Initial KE: $\frac{1}{2}(3)(16) = 24.0 \mathrm{ J{}$
+Initial KE: $\frac{1}{2}(3)(16) = 24.0 \mathrm{ J}$
 
-Final KE: $\frac{1}{2}(4)(9) = 18.0 \mathrm{ J{}$
+Final KE: $\frac{1}{2}(4)(9) = 18.0 \mathrm{ J}$
 
-Energy lost: $24.0 - 18.0 = 6.0 \mathrm{ J{}$
+Energy lost: $24.0 - 18.0 = 6.0 \mathrm{ J}$
 
 </details>
 
 If you get this wrong, revise: Mechanics / Momentum and Collisions
 
-**Problem 6.** A $200 \mathrm{ g{}$ block of copper at $100^\circ\mathrm{C{}$ is placed in
-$300 \mathrm{ g{}$ of water at $20^\circ\mathrm{C{}$. Find the final temperature, assuming no
-heat loss to the surroundings. (Specific heat capacity of copper $= 390 \mathrm{ J/(kg\cdot{}^\circ C)}$,
-water $= 4200 \mathrm{ J/(kg\cdot{}^\circ C)}$)
+**Problem 6.** A $200 \mathrm{ g}$ block of copper at $100^\circ\mathrm{C}$ is placed in
+$300 \mathrm{ g}$ of water at $20^\circ\mathrm{C}$. Find the final temperature, assuming no
+heat loss to the surroundings. (Specific heat capacity of copper $= 390 \mathrm{ J/(kg\cdot}^\circ C)}$,
+water $= 4200 \mathrm{ J/(kg\cdot}^\circ C)}$)
 
 <details>
 <summary>Solution</summary>
@@ -355,29 +355,29 @@ $$7800 - 78T_f = 1260T_f - 25200$$
 
 $$33000 = 1338T_f$$
 
-$$T_f = 24.7^\circ\mathrm{C{}$$
+$$T_f = 24.7^\circ\mathrm{C}$$
 
 </details>
 
 If you get this wrong, revise: Thermal Physics / Specific Heat Capacity
 
-**Problem 7.** A coil of 100 turns and area $0.005 \mathrm{ m{}^2$ is placed in a magnetic
-field of $0.4 \mathrm{ T{}$. The coil is removed from the field in $0.02 \mathrm{ s{}$. Find
+**Problem 7.** A coil of 100 turns and area $0.005 \mathrm{ m}^2$ is placed in a magnetic
+field of $0.4 \mathrm{ T}$. The coil is removed from the field in $0.02 \mathrm{ s}$. Find
 the average induced EMF.
 
 <details>
 <summary>Solution</summary>
 
-$$\Delta\Phi = BA = 0.4 \times 0.005 = 0.002 \mathrm{ Wb{}$$
+$$\Delta\Phi = BA = 0.4 \times 0.005 = 0.002 \mathrm{ Wb}$$
 
-$$\varepsilon = N\frac{\Delta\Phi}{\Delta t} = 100 \times \frac{0.002}{0.02} = 100 \times 0.1 = 10.0 \mathrm{ V{}$$
+$$\varepsilon = N\frac{\Delta\Phi}{\Delta t} = 100 \times \frac{0.002}{0.02} = 100 \times 0.1 = 10.0 \mathrm{ V}$$
 
 </details>
 
 If you get this wrong, revise: Electricity and Magnetism / Electromagnetic Induction
 
-**Problem 8.** A sound source produces an intensity level of $70 \mathrm{ dB{}$ at $3 \mathrm{ m{}$.
-What is the intensity level at $12 \mathrm{ m{}$ from the source?
+**Problem 8.** A sound source produces an intensity level of $70 \mathrm{ dB}$ at $3 \mathrm{ m}$.
+What is the intensity level at $12 \mathrm{ m}$ from the source?
 
 <details>
 <summary>Solution</summary>
@@ -386,7 +386,7 @@ Intensity follows inverse square law: $I_2 = I_1 \times (3/12)^2 = I_1/16$
 
 $$\beta_2 = 10\log_{10}(I_2/I_0) = 10\log_{10}(I_1/(16I_0)) = 10\log_{10}(I_1/I_0) - 10\log_{10}(16)$$
 
-$$\beta_2 = 70 - 10 \times 1.204 = 70 - 12.0 = 58.0 \mathrm{ dB{}$$
+$$\beta_2 = 70 - 10 \times 1.204 = 70 - 12.0 = 58.0 \mathrm{ dB}$$
 
 </details>
 
@@ -408,14 +408,14 @@ All final answers should be given to an appropriate number of significant figure
 
 | Measurement          | Significant Figures |
 | -------------------- | ------------------- |
-| $12.5 \mathrm{ cm{}$  | 3                   |
-| $0.0040 \mathrm{ kg{}$ | 2 (leading zeros are not significant) |
-| $1500 \mathrm{ m{}$   | Ambiguous (2, 3, or 4). Use scientific notation: $1.5 \times 10^3$ (2 s.f.) |
+| $12.5 \mathrm{ cm}$  | 3                   |
+| $0.0040 \mathrm{ kg}$ | 2 (leading zeros are not significant) |
+| $1500 \mathrm{ m}$   | Ambiguous (2, 3, or 4). Use scientific notation: $1.5 \times 10^3$ (2 s.f.) |
 
 ### Uncertainty and Error Analysis
 
 **Absolute uncertainty:** The range within which the true value is expected to lie.
-e.g., $L = (25.0 \pm 0.5) \mathrm{ cm{}$.
+e.g., $L = (25.0 \pm 0.5) \mathrm{ cm}$.
 
 **Percentage uncertainty:** $\frac{\Delta x}{x} \times 100\%$.
 
@@ -429,15 +429,15 @@ For multiplication/division and powers: add percentage uncertainties in quadratu
 
 $$z = x^a y^b \implies \frac{\Delta z}{z} = \sqrt{\left(a\frac{\Delta x}{x}\right)^2 + \left(b\frac{\Delta y}{y}\right)^2}$$
 
-**Example:** $A = \frac{1}{2}mv^2$ with $m = (0.200 \pm 0.002) \mathrm{ kg{}$, $v = (3.0 \pm 0.1) \mathrm{ m/s{}$:
+**Example:** $A = \frac{1}{2}mv^2$ with $m = (0.200 \pm 0.002) \mathrm{ kg}$, $v = (3.0 \pm 0.1) \mathrm{ m/s}$:
 
-$$A = \frac{1}{2}(0.200)(3.0)^2 = 0.90 \mathrm{ J{}$$
+$$A = \frac{1}{2}(0.200)(3.0)^2 = 0.90 \mathrm{ J}$$
 
 $$\frac{\Delta A}{A} = \sqrt{\left(\frac{0.002}{0.200}\right)^2 + \left(2 \times \frac{0.1}{3.0}\right)^2} = \sqrt{0.0001 + 0.0044} = \sqrt{0.0045} = 6.7\%$$
 
-$$\Delta A = 0.067 \times 0.90 = 0.06 \mathrm{ J{}$$
+$$\Delta A = 0.067 \times 0.90 = 0.06 \mathrm{ J}$$
 
-$$A = (0.90 \pm 0.06) \mathrm{ J{}$$
+$$A = (0.90 \pm 0.06) \mathrm{ J}$$
 
 ### Graphical Analysis
 
@@ -469,11 +469,11 @@ obtain a straight line:
 
 | Instrument              | Precision              | Notes                                     |
 | ----------------------- | ---------------------- | ----------------------------------------- |
-| Metre rule              | $\pm 1 \mathrm{ mm{}$   | Parallax error possible                   |
-| Vernier calipers        | $\pm 0.05 \mathrm{ mm{}$| For internal/external dimensions          |
-| Micrometer screw gauge  | $\pm 0.01 \mathrm{ mm{}$| Zero error must be checked                |
-| Stopwatch               | $\pm 0.01 \mathrm{ s{}$ | Reaction time dominates; use electronic   |
-| Thermometer             | $\pm 0.5^\circ\mathrm{C{}$ | Mercury or alcohol                     |
+| Metre rule              | $\pm 1 \mathrm{ mm}$   | Parallax error possible                   |
+| Vernier calipers        | $\pm 0.05 \mathrm{ mm}$| For internal/external dimensions          |
+| Micrometer screw gauge  | $\pm 0.01 \mathrm{ mm}$| Zero error must be checked                |
+| Stopwatch               | $\pm 0.01 \mathrm{ s}$ | Reaction time dominates; use electronic   |
+| Thermometer             | $\pm 0.5^\circ\mathrm{C}$ | Mercury or alcohol                     |
 | Ammeter                 | $\pm$ half smallest division | Connected in series                  |
 | Voltmeter               | $\pm$ half smallest division | Connected in parallel                 |
 | Protractor              | $\pm 0.5^\circ$        | Align carefully with normal               |
@@ -494,8 +494,8 @@ A zero error occurs when an instrument does not read zero when it should. Always
 **Negative zero error:** Instrument reads too low. Add the magnitude of the zero error to all
 readings.
 
-**Example:** A micrometer reads $0.03 \mathrm{ mm{}$ when fully closed (positive zero error).
-A measurement of $5.47 \mathrm{ mm{}$ gives a corrected value of $5.47 - 0.03 = 5.44 \mathrm{ mm{}$.
+**Example:** A micrometer reads $0.03 \mathrm{ mm}$ when fully closed (positive zero error).
+A measurement of $5.47 \mathrm{ mm}$ gives a corrected value of $5.47 - 0.03 = 5.44 \mathrm{ mm}$.
 
 ---
 
@@ -517,7 +517,7 @@ from basic recall to calculation and explanation.
 
 | Error Type                      | Example                                       | Correction                                    |
 | ------------------------------- | --------------------------------------------- | --------------------------------------------- |
-| Unit conversion                 | $1 \mathrm{ cm{} = 0.01 \mathrm{ m{}$           | Always convert to SI before calculating       |
+| Unit conversion                 | $1 \mathrm{ cm} = 0.01 \mathrm{ m}$           | Always convert to SI before calculating       |
 | Wrong formula                   | Using $v = f\lambda$ for standing waves       | Check which formula applies to the situation  |
 | Sign errors                     | Forgetting negative sign in $v = u + at$      | Define positive direction clearly             |
 | Confusing quantities           | Speed vs velocity, mass vs weight             | Check definitions before answering            |
@@ -538,40 +538,40 @@ DSE Physics Paper 2 consists of multiple choice questions. Key strategies:
 
 ## Problem Set (Mixed Topics)
 
-**Problem 9.** A steel wire of length $2.0 \mathrm{ m{}$ and cross-sectional area
-$2.0 \times 10^{-6} \mathrm{ m{}^2$ is stretched by $1.0 \mathrm{ mm{}$. The Young's modulus of
-steel is $2.0 \times 10^{11} \mathrm{ Pa{}$. Calculate the tension in the wire and the elastic
+**Problem 9.** A steel wire of length $2.0 \mathrm{ m}$ and cross-sectional area
+$2.0 \times 10^{-6} \mathrm{ m}^2$ is stretched by $1.0 \mathrm{ mm}$. The Young's modulus of
+steel is $2.0 \times 10^{11} \mathrm{ Pa}$. Calculate the tension in the wire and the elastic
 potential energy stored.
 
 <details>
 <summary>Solution</summary>
 
-$$\mathrm{Stress{} = E \times \mathrm{strain{} = 2.0 \times 10^{11} \times \frac{1.0 \times 10^{-3}}{2.0} = 1.0 \times 10^{8} \mathrm{ Pa{}$$
+$$\mathrm{Stress} = E \times \mathrm{strain} = 2.0 \times 10^{11} \times \frac{1.0 \times 10^{-3}}{2.0} = 1.0 \times 10^{8} \mathrm{ Pa}$$
 
-$$F = \mathrm{Stress{} \times A = 1.0 \times 10^{8} \times 2.0 \times 10^{-6} = 200 \mathrm{ N{}$$
+$$F = \mathrm{Stress} \times A = 1.0 \times 10^{8} \times 2.0 \times 10^{-6} = 200 \mathrm{ N}$$
 
-$$E_p = \frac{1}{2}Fx = \frac{1}{2} \times 200 \times 1.0 \times 10^{-3} = 0.10 \mathrm{ J{}$$
+$$E_p = \frac{1}{2}Fx = \frac{1}{2} \times 200 \times 1.0 \times 10^{-3} = 0.10 \mathrm{ J}$$
 
 </details>
 
 If you get this wrong, revise: Mechanics / Elasticity
 
-**Problem 10.** A radioactive source has a half-life of $5.0 \mathrm{ years{}$. The initial
-activity is $800 \mathrm{ Bq{}$. Calculate the activity after $20 \mathrm{ years{}$ and the time
-for the activity to fall to $50 \mathrm{ Bq{}$.
+**Problem 10.** A radioactive source has a half-life of $5.0 \mathrm{ years}$. The initial
+activity is $800 \mathrm{ Bq}$. Calculate the activity after $20 \mathrm{ years}$ and the time
+for the activity to fall to $50 \mathrm{ Bq}$.
 
 <details>
 <summary>Solution</summary>
 
-After $20 \mathrm{ years{}$: number of half-lives $= 20/5.0 = 4$
+After $20 \mathrm{ years}$: number of half-lives $= 20/5.0 = 4$
 
-$$A = A_0 \times \left(\frac{1}{2}\right)^4 = 800 \times \frac{1}{16} = 50 \mathrm{ Bq{}$$
+$$A = A_0 \times \left(\frac{1}{2}\right)^4 = 800 \times \frac{1}{16} = 50 \mathrm{ Bq}$$
 
-For $A = 50 \mathrm{ Bq{}$: $50 = 800 \times (1/2)^{t/5}$
+For $A = 50 \mathrm{ Bq}$: $50 = 800 \times (1/2)^{t/5}$
 
 $$(1/2)^{t/5} = 50/800 = 1/16 = (1/2)^4$$
 
-$$t/5 = 4 \implies t = 20 \mathrm{ years{}$$
+$$t/5 = 4 \implies t = 20 \mathrm{ years}$$
 
 (This is consistent: after 4 half-lives, the activity is $1/16$ of the original.)
 
@@ -579,37 +579,37 @@ $$t/5 = 4 \implies t = 20 \mathrm{ years{}$$
 
 If you get this wrong, revise: Nuclear Physics / Radioactive Decay
 
-**Problem 11.** In a Young's double-slit experiment, the fringe spacing is $0.80 \mathrm{ mm{}$
-when light of wavelength $600 \mathrm{ nm{}$ is used. The screen is $1.5 \mathrm{ m{}$ from the
+**Problem 11.** In a Young's double-slit experiment, the fringe spacing is $0.80 \mathrm{ mm}$
+when light of wavelength $600 \mathrm{ nm}$ is used. The screen is $1.5 \mathrm{ m}$ from the
 slits. Find the slit separation.
 
 <details>
 <summary>Solution</summary>
 
-$$\Delta y = \frac{\lambda D}{d} \implies d = \frac{\lambda D}{\Delta y} = \frac{600 \times 10^{-9} \times 1.5}{0.80 \times 10^{-3}} = \frac{9.0 \times 10^{-7}}{8.0 \times 10^{-4}} = 1.125 \times 10^{-3} \mathrm{ m{} = 1.13 \mathrm{ mm{}$$
+$$\Delta y = \frac{\lambda D}{d} \implies d = \frac{\lambda D}{\Delta y} = \frac{600 \times 10^{-9} \times 1.5}{0.80 \times 10^{-3}} = \frac{9.0 \times 10^{-7}}{8.0 \times 10^{-4}} = 1.125 \times 10^{-3} \mathrm{ m} = 1.13 \mathrm{ mm}$$
 
 </details>
 
 If you get this wrong, revise: Waves / Interference
 
-**Problem 12.** A convex mirror has a focal length of $15 \mathrm{ cm{}$. An object of height
-$4.0 \mathrm{ cm{}$ is placed $25 \mathrm{ cm{}$ from the mirror. Find the image position,
+**Problem 12.** A convex mirror has a focal length of $15 \mathrm{ cm}$. An object of height
+$4.0 \mathrm{ cm}$ is placed $25 \mathrm{ cm}$ from the mirror. Find the image position,
 magnification, and nature.
 
 <details>
 <summary>Solution</summary>
 
-For a convex mirror, $f = -15 \mathrm{ cm{}$ (real-is-positive convention).
+For a convex mirror, $f = -15 \mathrm{ cm}$ (real-is-positive convention).
 
 $$\frac{1}{v} + \frac{1}{u} = \frac{1}{f} \implies \frac{1}{v} = \frac{1}{-15} - \frac{1}{25} = -\frac{1}{15} - \frac{1}{25} = \frac{-5 - 3}{75} = -\frac{8}{75}$$
 
-$$v = -9.38 \mathrm{ cm{}$$
+$$v = -9.38 \mathrm{ cm}$$
 
-The image is virtual ($v < 0$), $9.38 \mathrm{ cm{}$ behind the mirror.
+The image is virtual ($v < 0$), $9.38 \mathrm{ cm}$ behind the mirror.
 
 $$m = -\frac{v}{u} = -\frac{-9.38}{25} = 0.375$$
 
-Image height: $h_i = 0.375 \times 4.0 = 1.50 \mathrm{ cm{}$
+Image height: $h_i = 0.375 \times 4.0 = 1.50 \mathrm{ cm}$
 
 The image is **virtual**, **upright**, and **diminished**.
 

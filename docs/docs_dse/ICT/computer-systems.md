@@ -452,13 +452,13 @@ A bitmap image is a grid of **pixels** (picture elements). Each pixel is assigne
 **Image file size (uncompressed):**
 
 $$
-\mathrm{File Size (bits){} = \mathrm{Width{} \times \mathrm{Height{} \times \mathrm{Colour Depth{}
+\mathrm{File Size (bits)} = \mathrm{Width} \times \mathrm{Height} \times \mathrm{Colour Depth}
 $$
 
 **In bytes:**
 
 $$
-\mathrm{File Size (bytes){} = \frac{\mathrm{Width{} \times \mathrm{Height{} \times \mathrm{Colour Depth{}}{8}
+\mathrm{File Size (bytes)} = \frac{\mathrm{Width} \times \mathrm{Height} \times \mathrm{Colour Depth}}{8}
 $$
 
 <details>
@@ -467,19 +467,19 @@ $$
 A $1024 \times 768$ image with 24-bit colour depth.
 
 $$
-\mathrm{Size (bits){} = 1024 \times 768 \times 24 = 18874368 \mathrm{ bits{}
+\mathrm{Size (bits)} = 1024 \times 768 \times 24 = 18874368 \mathrm{ bits}
 $$
 
 $$
-\mathrm{Size (bytes){} = \frac{18874368}{8} = 2359296 \mathrm{ bytes{}
+\mathrm{Size (bytes)} = \frac{18874368}{8} = 2359296 \mathrm{ bytes}
 $$
 
 $$
-\mathrm{Size (KB){} = \frac{2359296}{1024} = 2304 \mathrm{ KB{}
+\mathrm{Size (KB)} = \frac{2359296}{1024} = 2304 \mathrm{ KB}
 $$
 
 $$
-\mathrm{Size (MB){} = \frac{2304}{1024} = 2.25 \mathrm{ MB{}
+\mathrm{Size (MB)} = \frac{2304}{1024} = 2.25 \mathrm{ MB}
 $$
 
 </details>
@@ -525,14 +525,14 @@ accurate representation of the analogue signal. Common values: 8-bit (telephone 
 (CD), 24-bit (studio recording).
 
 **Nyquist theorem:** To accurately capture a sound with maximum frequency $f_{\max}$, the sampling
-rate must be at least $2f_{\max}$. Since human hearing ranges up to approximately $20\mathrm{ kHz{}$,
-the CD sampling rate of $44\,100\mathrm{ Hz{}$ is sufficient (Nyquist frequency =
-$22\,050\mathrm{ Hz{}$).
+rate must be at least $2f_{\max}$. Since human hearing ranges up to approximately $20\mathrm{ kHz}$,
+the CD sampling rate of $44\,100\mathrm{ Hz}$ is sufficient (Nyquist frequency =
+$22\,050\mathrm{ Hz}$).
 
 **File size calculation:**
 
 $$
-\mathrm{File Size (bits){} = \mathrm{Sampling Rate{} \times \mathrm{Bit Depth{} \times \mathrm{Duration (s){} \times \mathrm{Channels{}
+\mathrm{File Size (bits)} = \mathrm{Sampling Rate} \times \mathrm{Bit Depth} \times \mathrm{Duration (s)} \times \mathrm{Channels}
 $$
 
 - Mono: 1 channel. Stereo: 2 channels.
@@ -543,19 +543,19 @@ $$
 A 3-minute stereo recording at CD quality (44 100 Hz, 16-bit).
 
 $$
-\mathrm{Duration{} = 3 \times 60 = 180 \mathrm{ seconds{}
+\mathrm{Duration} = 3 \times 60 = 180 \mathrm{ seconds}
 $$
 
 $$
-\mathrm{Size (bits){} = 44100 \times 16 \times 180 \times 2 = 254016000 \mathrm{ bits{}
+\mathrm{Size (bits)} = 44100 \times 16 \times 180 \times 2 = 254016000 \mathrm{ bits}
 $$
 
 $$
-\mathrm{Size (bytes){} = \frac{254016000}{8} = 31752000 \mathrm{ bytes{}
+\mathrm{Size (bytes)} = \frac{254016000}{8} = 31752000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm{Size (MB){} = \frac{31752000}{1024 \times 1024} \approx 30.28 \mathrm{ MB{}
+\mathrm{Size (MB)} = \frac{31752000}{1024 \times 1024} \approx 30.28 \mathrm{ MB}
 $$
 
 </details>
@@ -609,7 +609,7 @@ A school needs to store 500 GB of student records. They are considering an HDD v
 
 Answer:
 
-(a) $500 \mathrm{ GB{} = 0.5 \mathrm{ TB{}$. One 1 TB HDD is sufficient.
+(a) $500 \mathrm{ GB} = 0.5 \mathrm{ TB}$. One 1 TB HDD is sufficient.
 
 (b) **Advantages of SSD:** Faster read/write speeds, no moving parts (more durable, less prone to
 mechanical failure), quieter operation, lower power consumption.
@@ -698,25 +698,25 @@ Answer:
 (a)
 
 $$
-\mathrm{Size (bits){} = 4000 \times 3000 \times 32 = 384000000 \mathrm{ bits{}
+\mathrm{Size (bits)} = 4000 \times 3000 \times 32 = 384000000 \mathrm{ bits}
 $$
 
 $$
-\mathrm{Size (bytes){} = \frac{384000000}{8} = 48000000 \mathrm{ bytes{}
+\mathrm{Size (bytes)} = \frac{384000000}{8} = 48000000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm{Size (MB){} = \frac{48000000}{1024 \times 1024} \approx 45.77 \mathrm{ MB{}
+\mathrm{Size (MB)} = \frac{48000000}{1024 \times 1024} \approx 45.77 \mathrm{ MB}
 $$
 
 (b)
 
 $$
-16 \mathrm{ GB{} = 16 \times 1024 \mathrm{ MB{} = 16384 \mathrm{ MB{}
+16 \mathrm{ GB} = 16 \times 1024 \mathrm{ MB} = 16384 \mathrm{ MB}
 $$
 
 $$
-\mathrm{Number of images{} = \left\lfloor \frac{16384}{45.77} \right\rfloor = 358 \mathrm{ images{}
+\mathrm{Number of images} = \left\lfloor \frac{16384}{45.77} \right\rfloor = 358 \mathrm{ images}
 $$
 
 </details>
@@ -735,19 +735,19 @@ Answer:
 (a)
 
 $$
-\mathrm{Duration{} = 2 \times 60 = 120 \mathrm{ seconds{}
+\mathrm{Duration} = 2 \times 60 = 120 \mathrm{ seconds}
 $$
 
 $$
-\mathrm{Size (bits){} = 22050 \times 8 \times 120 \times 1 = 21168000 \mathrm{ bits{}
+\mathrm{Size (bits)} = 22050 \times 8 \times 120 \times 1 = 21168000 \mathrm{ bits}
 $$
 
 $$
-\mathrm{Size (bytes){} = \frac{21168000}{8} = 2646000 \mathrm{ bytes{}
+\mathrm{Size (bytes)} = \frac{21168000}{8} = 2646000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm{Size (MB){} = \frac{2646000}{1024 \times 1024} \approx 2.52 \mathrm{ MB{}
+\mathrm{Size (MB)} = \frac{2646000}{1024 \times 1024} \approx 2.52 \mathrm{ MB}
 $$
 
 (b) Doubling the sampling rate doubles the file size to approximately 5.05 MB. Sound quality
@@ -770,7 +770,7 @@ Answer:
 
 (a) 'h' = 72 + 32 = 104. (Lowercase letters are 32 positions after their uppercase counterparts.)
 
-(b) Each ASCII character is 1 byte. $1000 \mathrm{ bytes{} / 1024 = 0.98 \mathrm{ KB{}$.
+(b) Each ASCII character is 1 byte. $1000 \mathrm{ bytes} / 1024 = 0.98 \mathrm{ KB}$.
 
 (c) ASCII only supports 128 characters (English alphabet, digits, basic symbols). Unicode supports
 over 149 000 characters covering all major writing systems, symbols, and emoji. This makes Unicode
@@ -847,19 +847,19 @@ Answer:
 (c)
 
 $$
-\mathrm{Uncompressed (bits){} = 800 \times 600 \times 16 = 7680000 \mathrm{ bits{}
+\mathrm{Uncompressed (bits)} = 800 \times 600 \times 16 = 7680000 \mathrm{ bits}
 $$
 
 $$
-\mathrm{Uncompressed (bytes){} = \frac{7680000}{8} = 960000 \mathrm{ bytes{}
+\mathrm{Uncompressed (bytes)} = \frac{7680000}{8} = 960000 \mathrm{ bytes}
 $$
 
 $$
-\mathrm{Uncompressed (KB){} = \frac{960000}{1024} = 937.5 \mathrm{ KB{}
+\mathrm{Uncompressed (KB)} = \frac{960000}{1024} = 937.5 \mathrm{ KB}
 $$
 
 $$
-\mathrm{Compressed (KB){} = \frac{937.5}{3} \times 2 = 625 \mathrm{ KB{}
+\mathrm{Compressed (KB)} = \frac{937.5}{3} \times 2 = 625 \mathrm{ KB}
 $$
 
 </details>

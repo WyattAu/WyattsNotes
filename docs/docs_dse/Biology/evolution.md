@@ -538,7 +538,7 @@ Species that have a mutually beneficial relationship evolve in tandem, each beco
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Flowers and pollinators          | Flower shape, colour, and scent evolve to attract specific pollinators; pollinator mouthparts evolve to access nectar efficiently. Orchids and their specific bee pollinators are a classic example. |
 | Acacia trees and acacia ants     | The tree provides food (Beltian bodies) and shelter (hollow thorns); the ants defend the tree against herbivores and competing plants. |
-| Coral and zooxanthellae          | Coral provides shelter and $\mathrm{CO{}_2$; zooxanthellae (algae) provide photosynthate (sugars) and oxygen. This mutualism is essential for coral reef formation. |
+| Coral and zooxanthellae          | Coral provides shelter and $\mathrm{CO}_2$; zooxanthellae (algae) provide photosynthate (sugars) and oxygen. This mutualism is essential for coral reef formation. |
 | Mycorrhizal fungi and plant roots | Fungi provide mineral nutrients (especially phosphorus) to the plant; the plant provides carbohydrates to the fungus. Both partners have evolved specialised structures for this exchange. |
 
 ---
@@ -758,7 +758,7 @@ Plants evolve defences against herbivores; herbivores evolve counter-adaptations
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Flowers and pollinators          | Flower shape, colour, and scent evolve to attract specific pollinators; pollinator mouthparts evolve to access nectar efficiently. Orchids and their specific bee pollinators are a classic example. |
 | Acacia trees and acacia ants     | The tree provides food (Beltian bodies) and shelter (hollow thorns); the ants defend the tree against herbivores. |
-| Coral and zooxanthellae          | Coral provides shelter and $\mathrm{CO{}_2$; zooxanthellae provide photosynthate and oxygen. Essential for coral reef formation. |
+| Coral and zooxanthellae          | Coral provides shelter and $\mathrm{CO}_2$; zooxanthellae provide photosynthate and oxygen. Essential for coral reef formation. |
 
 ---
 

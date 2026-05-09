@@ -301,7 +301,7 @@ perpendicular to the radius at $P$. The gradient of the radius $CP$ (where $C$ i
 
 $$
 \begin{aligned}
-  m_{\mathrm{radius{}} = \frac{y_1 - b}{x_1 - a}
+  m_{\mathrm{radius}} = \frac{y_1 - b}{x_1 - a}
 \end{aligned}
 $$
 
@@ -309,7 +309,7 @@ Therefore the gradient of the tangent is:
 
 $$
 \begin{aligned}
-  m_{\mathrm{tangent{}} = -\frac{x_1 - a}{y_1 - b} \quad (y_1 \neq b)
+  m_{\mathrm{tangent}} = -\frac{x_1 - a}{y_1 - b} \quad (y_1 \neq b)
 \end{aligned}
 $$
 
@@ -344,7 +344,7 @@ For a triangle with base $b$ and height $h$:
 
 $$
 \begin{aligned}
-  \mathrm{Area{} &= \frac{1}{2}bh
+  \mathrm{Area} &= \frac{1}{2}bh
 \end{aligned}
 $$
 
@@ -353,7 +353,7 @@ semi-perimeter $s = \frac{a+b+c}{2}$:
 
 $$
 \begin{aligned}
-  \mathrm{Area{} = \sqrt{s(s-a)(s-b)(s-c)}
+  \mathrm{Area} = \sqrt{s(s-a)(s-b)(s-c)}
 \end{aligned}
 $$
 
@@ -361,7 +361,7 @@ The area of a triangle with vertices $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$ is
 
 $$
 \begin{aligned}
-  \mathrm{Area{} = \frac{1}{2}\left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|
+  \mathrm{Area} = \frac{1}{2}\left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|
 \end{aligned}
 $$
 
@@ -379,8 +379,8 @@ $$
 
 $$
 \begin{aligned}
-  \mathrm{Circumference{} &= 2\pi r = \pi d \\
-  \mathrm{Area{} &= \pi r^2
+  \mathrm{Circumference} &= 2\pi r = \pi d \\
+  \mathrm{Area} &= \pi r^2
 \end{aligned}
 $$
 
@@ -392,8 +392,8 @@ For an arc subtending an angle $\theta$ (in radians) at the centre of a circle o
 
 $$
 \begin{aligned}
-  \mathrm{Arc length{} &= l = r\theta \\
-  \mathrm{Area of sector{} &= A = \frac{1}{2}r^2\theta
+  \mathrm{Arc length} &= l = r\theta \\
+  \mathrm{Area of sector} &= A = \frac{1}{2}r^2\theta
 \end{aligned}
 $$
 
@@ -404,14 +404,14 @@ The area of a segment (the region between a chord and the corresponding arc) is:
 
 $$
 \begin{aligned}
-  \mathrm{Area of segment{} = \frac{1}{2}r^2(\theta - \sin\theta)
+  \mathrm{Area of segment} = \frac{1}{2}r^2(\theta - \sin\theta)
 \end{aligned}
 $$
 
 <details>
 <summary>Examples</summary>
-- Find the area and perimeter of a sector of radius $7\mathrm{ cm{}$ with angle $120^\circ$: $\theta = \frac{2\pi}{3}$ rad. Area $= \frac{1}{2}(49)\left(\frac{2\pi}{3}\right) = \frac{49\pi}{3} \approx 51.3\mathrm{ cm{}^2$. Arc length $= 7 \times \frac{2\pi}{3} = \frac{14\pi}{3} \approx 14.7\mathrm{ cm{}$. Perimeter $= 14 + \frac{14\pi}{3} \approx 28.7\mathrm{ cm{}$.
-- A chord of length $8\mathrm{ cm{}$ subtends an angle of $90^\circ$ at the centre. Find the area of the minor segment: $r = \frac{8}{\sqrt{2}} = 4\sqrt{2}\mathrm{ cm{}$, $\theta = \frac{\pi}{2}$. Area $= \frac{1}{2}(32)\left(\frac{\pi}{2} - 1\right) = 16\left(\frac{\pi}{2} - 1\right) = 8\pi - 16 \approx 9.13\mathrm{ cm{}^2$.
+- Find the area and perimeter of a sector of radius $7\mathrm{ cm}$ with angle $120^\circ$: $\theta = \frac{2\pi}{3}$ rad. Area $= \frac{1}{2}(49)\left(\frac{2\pi}{3}\right) = \frac{49\pi}{3} \approx 51.3\mathrm{ cm}^2$. Arc length $= 7 \times \frac{2\pi}{3} = \frac{14\pi}{3} \approx 14.7\mathrm{ cm}$. Perimeter $= 14 + \frac{14\pi}{3} \approx 28.7\mathrm{ cm}$.
+- A chord of length $8\mathrm{ cm}$ subtends an angle of $90^\circ$ at the centre. Find the area of the minor segment: $r = \frac{8}{\sqrt{2}} = 4\sqrt{2}\mathrm{ cm}$, $\theta = \frac{\pi}{2}$. Area $= \frac{1}{2}(32)\left(\frac{\pi}{2} - 1\right) = 16\left(\frac{\pi}{2} - 1\right) = 8\pi - 16 \approx 9.13\mathrm{ cm}^2$.
 </details>
 
 ## 3D Geometry
@@ -574,21 +574,21 @@ the value(s) of $k$.
 - $k = \frac{-6 \pm \sqrt{36 + 44}}{2} = -3 \pm \sqrt{14}$.
 </details>
 
-4. **Question:** A sector of a circle of radius $12\mathrm{ cm{}$ has an arc length of
-$16\pi\mathrm{ cm{}$. Find the area of the sector and the area of the corresponding segment if the
-chord length is $20\mathrm{ cm{}$.
+4. **Question:** A sector of a circle of radius $12\mathrm{ cm}$ has an arc length of
+$16\pi\mathrm{ cm}$. Find the area of the sector and the area of the corresponding segment if the
+chord length is $20\mathrm{ cm}$.
 <details>
 <summary>Answer</summary>
 
 - Arc length $l = r\theta$: $16\pi = 12\theta \implies \theta = \frac{4\pi}{3}$ rad.
 - Area of sector:
-  $A = \frac{1}{2}r^2\theta = \frac{1}{2}(144)\left(\frac{4\pi}{3}\right) = 96\pi \mathrm{ cm{}^2$.
+  $A = \frac{1}{2}r^2\theta = \frac{1}{2}(144)\left(\frac{4\pi}{3}\right) = 96\pi \mathrm{ cm}^2$.
 - Area of triangle formed by the radii and chord: Using the chord length $c = 20$, the triangle has
   sides $12$, $12$, $20$. Semi-perimeter $s = 22$. By Heron's formula: Area
-  $= \sqrt{22 \times 10 \times 10 \times 2} = \sqrt{4400} = 20\sqrt{11} \mathrm{ cm{}^2$.
+  $= \sqrt{22 \times 10 \times 10 \times 2} = \sqrt{4400} = 20\sqrt{11} \mathrm{ cm}^2$.
 - Alternatively, the perpendicular from centre to chord: $h = \sqrt{12^2 - 10^2} = 2\sqrt{11}$.
   Triangle area $= \frac{1}{2} \times 20 \times 2\sqrt{11} = 20\sqrt{11}$.
-- Area of segment $= 96\pi - 20\sqrt{11} \approx 247.3 \mathrm{ cm{}^2$.
+- Area of segment $= 96\pi - 20\sqrt{11} \approx 247.3 \mathrm{ cm}^2$.
 </details>
 
 5. **Question:** Find the angle between the line joining $A(1, 2, 3)$ and $B(4, 5, 6)$ and the plane
@@ -620,7 +620,7 @@ altitude from $A$.
   units.
 - Length of $BC$: $\sqrt{(7-4)^2 + (4-6)^2} = \sqrt{9 + 4} = \sqrt{13}$.
 - Altitude from $A$:
-$\frac{2 \times \mathrm{Area{}}{BC} = \frac{18}{\sqrt{13}} = \frac{18\sqrt{13}}{13}$.
+$\frac{2 \times \mathrm{Area}}{BC} = \frac{18}{\sqrt{13}} = \frac{18\sqrt{13}}{13}$.
 </details>
 
 7. **Question:** Find the equation of the circle which touches the $x$-axis at $(3, 0)$ and passes
@@ -690,18 +690,18 @@ coordinates of $D$ and the area of the rectangle.
 - Area $= AB \times BC = 4 \times 3 = 12$ square units.
 </details>
 
-11. **Question:** A solid metal cone has base radius $6\mathrm{ cm{}$ and slant height
-$10\mathrm{ cm{}$. A sector is cut from a circular sheet of metal to form the curved surface. Find
+11. **Question:** A solid metal cone has base radius $6\mathrm{ cm}$ and slant height
+$10\mathrm{ cm}$. A sector is cut from a circular sheet of metal to form the curved surface. Find
 (a) the angle of the sector, (b) the radius of the circular sheet, and (c) the area of the sector.
 <details>
 <summary>Answer</summary>
 
 - (a) The arc length of the sector equals the circumference of the base: $l = 2\pi(6) = 12\pi$.
-- The sector radius equals the slant height: $r = 10\mathrm{ cm{}$.
+- The sector radius equals the slant height: $r = 10\mathrm{ cm}$.
 - $l = r\theta \implies 12\pi = 10\theta \implies \theta = \frac{6\pi}{5}$ rad $= 216^\circ$.
-- (b) The radius of the circular sheet is the slant height: $10\mathrm{ cm{}$.
+- (b) The radius of the circular sheet is the slant height: $10\mathrm{ cm}$.
 - (c) Area of sector:
-$A = \frac{1}{2}r^2\theta = \frac{1}{2}(100)\left(\frac{6\pi}{5}\right) = 60\pi \mathrm{ cm{}^2$.
+$A = \frac{1}{2}r^2\theta = \frac{1}{2}(100)\left(\frac{6\pi}{5}\right) = 60\pi \mathrm{ cm}^2$.
 </details>
 
 12. **Question:** Prove that the points $A(-2, 0)$, $B(0, 4)$, $C(6, 2)$, and $D(4, -2)$ are the
@@ -913,7 +913,7 @@ Equation through $B(5, 4)$: $y - 4 = -\dfrac{7}{3}(x - 5) \implies 3y - 12 = -7x
 
 </details>
 
-**DSE Practice 3.** A sector of a circle of radius $10\mathrm{ cm{}$ has perimeter $30\mathrm{ cm{}$. Find the area of the sector.
+**DSE Practice 3.** A sector of a circle of radius $10\mathrm{ cm}$ has perimeter $30\mathrm{ cm}$. Find the area of the sector.
 
 <details>
 <summary>Solution</summary>
@@ -922,7 +922,7 @@ Perimeter of sector $= 2r + r\theta = 20 + 10\theta = 30$.
 
 $10\theta = 10 \implies \theta = 1$ rad.
 
-$$\mathrm{Area{} = \frac{1}{2}r^2\theta = \frac{1}{2}(100)(1) = 50\mathrm{ cm{}^2$$
+$$\mathrm{Area} = \frac{1}{2}r^2\theta = \frac{1}{2}(100)(1) = 50\mathrm{ cm}^2$$
 
 </details>
 

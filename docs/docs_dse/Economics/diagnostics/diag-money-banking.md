@@ -73,7 +73,7 @@ Higher income increases the transactions demand for money (people need more cash
 
 **Solution:**
 
-(a) Money supply $= \frac{\text{Reserves{}}{	ext{rrr}} = \frac{200}{0.125} = \$1600$B.
+(a) Money supply $= \frac{\text{Reserves}}{	ext{rrr}} = \frac{200}{0.125} = \$1600$B.
 
 (b) $\$10$B open market purchase increases reserves by $\$10$B. Maximum change $= \frac{10}{0.125} = \$80$B. New money supply $= 1600 + 80 = \$1680$B.
 
@@ -86,7 +86,7 @@ Higher income increases the transactions demand for money (people need more cash
 
 **Solution:**
 
-(a) GDP deflator $= \frac{2000}{1600} \times 100 = 125$. Inflation $= \frac{125 - 100}{100} = 25\%$. Velocity $= \frac{\text{PY{}}{	ext{M}} = \frac{2000}{800} = 2.5$.
+(a) GDP deflator $= \frac{2000}{1600} \times 100 = 125$. Inflation $= \frac{125 - 100}{100} = 25\%$. Velocity $= \frac{\text{PY}}{	ext{M}} = \frac{2000}{800} = 2.5$.
 
 (b) $\hat{M} = \hat{P} + \hat{Y}$ (assuming constant velocity). $\hat{M} = 2\% + 4\% = 6\%$. The money supply should grow at 6%.
 
@@ -141,7 +141,7 @@ The multiplier falls from 4.6 to 4.0. The increase in the currency ratio means m
 
 **Solution:**
 
-(a) The monetary base of HK$1,500 billion requires backing of $1500 / 7.8 = \text{US{}\$192.3$ billion at the 7.8 peg. The actual reserves are US$180 billion.
+(a) The monetary base of HK$1,500 billion requires backing of $1500 / 7.8 = \text{US}\$192.3$ billion at the 7.8 peg. The actual reserves are US$180 billion.
 
 Backing ratio $= 180 / 192.3 = 93.6\%$.
 
@@ -149,15 +149,15 @@ The backing ratio is below 100%, which may appear concerning. However, Hong Kong
 
 (b) When US$5 billion flows out: investors sell HKD for USD. The HKMA buys HKD and sells USD from reserves to maintain the peg.
 
-Change in monetary base $= -5 \times 7.8 = -\text{HK{}\$39$ billion.
+Change in monetary base $= -5 \times 7.8 = -\text{HK}\$39$ billion.
 
-New monetary base $= 1500 - 39 = \text{HK{}\$1,461$ billion.
+New monetary base $= 1500 - 39 = \text{HK}\$1,461$ billion.
 
 The automatic contraction of the monetary base raises Hong Kong interest rates, which attracts capital back, stabilising the exchange rate. This is the self-correcting mechanism of the Currency Board.
 
 (c) Selling HK$20 billion of Exchange Fund Bills absorbs HK$20 billion of liquidity from the banking system. The monetary base falls by HK$20 billion.
 
-New monetary base $= 1500 - 20 = \text{HK{}\$1,480$ billion.
+New monetary base $= 1500 - 20 = \text{HK}\$1,480$ billion.
 
 This is contractionary because it reduces bank reserves, limiting banks' ability to lend and pushing up interbank interest rates (HIBOR).
 
@@ -191,19 +191,19 @@ This is contractionary because it reduces bank reserves, limiting banks' ability
 
 (b) This is the fundamental dilemma of the Currency Board: Hong Kong's interest rates must follow US rates regardless of domestic conditions. When the US raises rates to fight inflation, Hong Kong must raise rates even if its economy is in recession. This deepens the Hong Kong recession by increasing borrowing costs precisely when stimulus is needed. The government cannot use monetary policy to address the downturn.
 
-(c) Original mortgage rate $= \text{HIBOR{} + 1.5\% = 2\% + 1.5\% = 3.5\%$. Monthly payment (assuming 25-year mortgage):
+(c) Original mortgage rate $= \text{HIBOR} + 1.5\% = 2\% + 1.5\% = 3.5\%$. Monthly payment (assuming 25-year mortgage):
 
 $$M = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$$
 
 where $P = 2,000,000$, $r = 0.035/12 = 0.002917$, $n = 300$.
 
-$M = 2\,000\,000 \times \frac{0.002917(1.002917)^{300}}{(1.002917)^{300} - 1} = 2\,000\,000 \times \frac{0.002917 \times 2.4066}{2.4066 - 1} = 2\,000\,000 \times \frac{0.00702}{1.4066} = \text{HK{}\$9\,983$
+$M = 2\,000\,000 \times \frac{0.002917(1.002917)^{300}}{(1.002917)^{300} - 1} = 2\,000\,000 \times \frac{0.002917 \times 2.4066}{2.4066 - 1} = 2\,000\,000 \times \frac{0.00702}{1.4066} = \text{HK}\$9\,983$
 
 After rate rise: new rate $= 2.5\% + 1.5\% = 4.0\%$, $r = 0.04/12 = 0.003333$.
 
-$M' = 2\,000\,000 \times \frac{0.003333(1.003333)^{300}}{(1.003333)^{300} - 1} = 2\,000\,000 \times \frac{0.003333 \times 2.7137}{2.7137 - 1} = 2\,000\,000 \times \frac{0.009046}{1.7137} = \text{HK{}\$10\,558$
+$M' = 2\,000\,000 \times \frac{0.003333(1.003333)^{300}}{(1.003333)^{300} - 1} = 2\,000\,000 \times \frac{0.003333 \times 2.7137}{2.7137 - 1} = 2\,000\,000 \times \frac{0.009046}{1.7137} = \text{HK}\$10\,558$
 
-Increase in monthly payment $= 10\,558 - 9\,983 = \text{HK{}\$575$ per month ($+5.8\%$).
+Increase in monthly payment $= 10\,558 - 9\,983 = \text{HK}\$575$ per month ($+5.8\%$).
 
 (d) Non-monetary fiscal and supply-side measures:
 1. **Consumption vouchers:** Direct cash transfers to residents (as used during COVID-19) to boost aggregate demand.
@@ -263,21 +263,21 @@ Return from investing in B: borrow 1 unit of A, get 5 units of B, invest at 5% t
 
 **Solution:**
 
-(a) Reserve ratio $= \frac{\text{Reserves{}}{\text{Deposits{}} = \frac{50}{400} = 12.5\%$.
+(a) Reserve ratio $= \frac{\text{Reserves}}{\text{Deposits}} = \frac{50}{400} = 12.5\%$.
 
-Leverage ratio $= \frac{\text{Equity{}}{\text{Total Assets{}} = \frac{100}{550} = 18.2\%$. (Basel III minimum leverage ratio is 3%, so this bank is well above the minimum.)
+Leverage ratio $= \frac{\text{Equity}}{\text{Total Assets}} = \frac{100}{550} = 18.2\%$. (Basel III minimum leverage ratio is 3%, so this bank is well above the minimum.)
 
-(b) Required reserves $= 0.10 \times 400 = 40$. Excess reserves $= 50 - 40 = \text{HK{}\$10$ billion.
+(b) Required reserves $= 0.10 \times 400 = 40$. Excess reserves $= 50 - 40 = \text{HK}\$10$ billion.
 
 (c) Risk-weighted assets (RWA) $=$ HK$350$ billion.
 
-- CET1 minimum: $4.5\% \times 350 = \text{HK{}\$15.75$ billion.
-- Tier 1 minimum: $6\% \times 350 = \text{HK{}\$21$ billion.
-- Total capital minimum: $8\% \times 350 = \text{HK{}\$28$ billion.
+- CET1 minimum: $4.5\% \times 350 = \text{HK}\$15.75$ billion.
+- Tier 1 minimum: $6\% \times 350 = \text{HK}\$21$ billion.
+- Total capital minimum: $8\% \times 350 = \text{HK}\$28$ billion.
 
 Assuming all equity is CET1 capital (HK$100$ billion), the bank far exceeds all minimum ratios: CET1 ratio $= 100/350 = 28.6\%$, Tier 1 ratio $= 28.6\%$, Total capital ratio $= 28.6\%$. These all exceed the Basel III minima comfortably, plus the capital conservation buffer (2.5%) and countercyclical buffer (0--2.5%).
 
-(d) After HK$30$B losses: Equity falls to $100 - 30 = \text{HK{}\$70$ billion. Total assets fall to $550 - 30 = \text{HK{}\$520$ billion.
+(d) After HK$30$B losses: Equity falls to $100 - 30 = \text{HK}\$70$ billion. Total assets fall to $550 - 30 = \text{HK}\$520$ billion.
 
 New leverage ratio $= 70 / 520 = 13.5\%$ (still above 3%, so the bank remains solvent).
 
