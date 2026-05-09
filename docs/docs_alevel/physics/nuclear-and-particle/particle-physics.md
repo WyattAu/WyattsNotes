@@ -276,9 +276,9 @@ carries insufficient energy. Increasing intensity means more photons, not more e
 Light of wavelength 400 nm strikes a zinc plate ($\phi = 4.30$ eV). Calculate the maximum kinetic
 energy of the emitted photoelectrons and determine whether emission occurs.
 
-**Answer.** $E_{\mathrm{photon}} = hf = hc/\lambda = (6.63 \times 10^{-34} \times 3.00 \times 10^8)/(400 \times 10^{-9}) = 4.97 \times 10^{-19}$ J $= 3.11$ eV.
+**Answer.** $E_{\mathrm{'\{'}photon{'\}'}} = hf = hc/\lambda = (6.63 \times 10^{-34} \times 3.00 \times 10^8)/(400 \times 10^{-9}) = 4.97 \times 10^{-19}$ J $= 3.11$ eV.
 
-Since $3.11\ \mathrm{eV} \lt 4.30\ \mathrm{eV} = \phi$, no photoelectrons are emitted.
+Since $3.11\ \mathrm{'\{'}eV{'\}'} \lt 4.30\ \mathrm{'\{'}eV{'\}'} = \phi$, no photoelectrons are emitted.
 
 For emission, the minimum wavelength is: $\lambda_{\min} = hc/\phi = (6.63 \times 10^{-34} \times 3.00 \times 10^8)/(4.30 \times 1.60 \times 10^{-19}) = 2.89 \times 10^{-7}$ m $= 289$ nm (UV).
 
@@ -402,7 +402,7 @@ The reaction is allowed by all conservation laws (proceeds via the strong intera
 Light of wavelength 550 nm falls on a metal with work function 2.0 eV. Calculate the maximum kinetic
 energy of the photoelectrons and their maximum speed.
 
-**Answer.** $E_{\mathrm{photon}} = hc/\lambda = 2.26$ eV.
+**Answer.** $E_{\mathrm{'\{'}photon{'\}'}} = hc/\lambda = 2.26$ eV.
 $E_k = hf - \phi = 2.26 - 2.0 = 0.26$ eV $= 4.16 \times 10^{-20}$ J.
 $v = \sqrt{2E_k/m_e} = \sqrt{2 \times 4.16 \times 10^{-20}/9.11 \times 10^{-31}} = 3.02 \times 10^5$ m s$^{-1}$.
 

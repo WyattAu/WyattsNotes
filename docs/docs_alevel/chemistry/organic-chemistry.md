@@ -31,17 +31,17 @@ The IUPAC system provides an unambiguous naming convention for organic compounds
 
 | Series | General formula | Functional group | Suffix | Example |
 |---|---|---|---|---|
-| Alkane | $\mathrm{C}_n\mathrm{H}_{2n+2}$ | C--C single bonds | -ane | Ethane |
-| Alkene | $\mathrm{C}_n\mathrm{H}_{2n}$ | C=C double bond | -ene | Propene |
-| Alkyne | $\mathrm{C}_n\mathrm{H}_{2n-2}$ | C$\equiv$C triple bond | -yne | Ethyne |
+| Alkane | $\mathrm{'\{'}C{'\}'}_n\mathrm{'\{'}H{'\}'}_{2n+2}$ | C--C single bonds | -ane | Ethane |
+| Alkene | $\mathrm{'\{'}C{'\}'}_n\mathrm{'\{'}H{'\}'}_{2n}$ | C=C double bond | -ene | Propene |
+| Alkyne | $\mathrm{'\{'}C{'\}'}_n\mathrm{'\{'}H{'\}'}_{2n-2}$ | C$\equiv$C triple bond | -yne | Ethyne |
 | Haloalkane | -- | C--X (X = F, Cl, Br, I) | -halo | Chloroethane |
 | Alcohol | -- | --OH | -ol | Ethanol |
 | Aldehyde | -- | --CHO | -al | Ethanal |
 | Ketone | -- | C=O | -one | Propanone |
 | Carboxylic acid | -- | --COOH | -oic acid | Ethanoic acid |
 | Ester | -- | --COO-- | -oate | Methyl ethanoate |
-| Amine | -- | --$\mathrm{NH}_2$ | -amine | Ethanamine |
-| Amide | -- | --$\mathrm{CONH}_2$ | -amide | Ethanamide |
+| Amine | -- | --$\mathrm{'\{'}NH{'\}'}_2$ | -amine | Ethanamine |
+| Amide | -- | --$\mathrm{'\{'}CONH{'\}'}_2$ | -amide | Ethanamide |
 
 ### Structural Isomerism
 
@@ -49,7 +49,7 @@ The IUPAC system provides an unambiguous naming convention for organic compounds
 
 **Positional isomerism:** same functional group, different position on the chain (e.g. propan-1-ol vs propan-2-ol).
 
-**Functional group isomerism:** same molecular formula, different functional group (e.g. $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$: propanal vs propanone vs methyl ethanoate vs 1-methoxyethane).
+**Functional group isomerism:** same molecular formula, different functional group (e.g. $\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_6\mathrm{'\{'}O{'\}'}$: propanal vs propanone vs methyl ethanoate vs 1-methoxyethane).
 
 ### Stereoisomerism
 
@@ -70,7 +70,7 @@ Priority is assigned by the **Cahn-Ingold-Prelog (CIP) rules**: higher atomic nu
 
 ### Structure and Properties
 
-Alkanes are saturated hydrocarbons ($\mathrm{C}_n\mathrm{H}_{2n+2}$) with $\sigma$ bonds only. They are non-polar, insoluble in water, and have low boiling points that increase with chain length (increased London forces).
+Alkanes are saturated hydrocarbons ($\mathrm{'\{'}C{'\}'}_n\mathrm{'\{'}H{'\}'}_{2n+2}$) with $\sigma$ bonds only. They are non-polar, insoluble in water, and have low boiling points that increase with chain length (increased London forces).
 
 C--C bonds have free rotation, giving alkanes conformational flexibility.
 
@@ -81,25 +81,25 @@ Alkanes undergo substitution reactions via a free radical mechanism when exposed
 **Example:** Chlorination of methane.
 
 $$
-\mathrm{CH}_4 + \mathrm{Cl}_2 \xrightarrow{\mathrm{UV}} \mathrm{CH}_3\mathrm{Cl} + \mathrm{HCl}
+\mathrm{'\{'}CH{'\}'}_4 + \mathrm{'\{'}Cl{'\}'}_2 \xrightarrow{\mathrm{'\{'}UV{'\}'}} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}Cl{'\}'} + \mathrm{'\{'}HCl{'\}'}
 $$
 
 **Mechanism:**
 
-**Initiation:** Homolytic fission of the $\mathrm{Cl-Cl}$ bond:
+**Initiation:** Homolytic fission of the $\mathrm{'\{'}Cl-Cl{'\}'}$ bond:
 
 $$
-\mathrm{Cl}_2 \xrightarrow{\mathrm{UV}} 2\mathrm{Cl}^\bullet
+\mathrm{'\{'}Cl{'\}'}_2 \xrightarrow{\mathrm{'\{'}UV{'\}'}} 2\mathrm{'\{'}Cl{'\}'}^\bullet
 $$
 
 **Propagation (two steps):**
 
 $$
-\mathrm{CH}_4 + \mathrm{Cl}^\bullet \to \mathrm{CH}_3^\bullet + \mathrm{HCl}
+\mathrm{'\{'}CH{'\}'}_4 + \mathrm{'\{'}Cl{'\}'}^\bullet \to \mathrm{'\{'}CH{'\}'}_3^\bullet + \mathrm{'\{'}HCl{'\}'}
 $$
 
 $$
-\mathrm{CH}_3^\bullet + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{Cl} + \mathrm{Cl}^\bullet
+\mathrm{'\{'}CH{'\}'}_3^\bullet + \mathrm{'\{'}Cl{'\}'}_2 \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}Cl{'\}'} + \mathrm{'\{'}Cl{'\}'}^\bullet
 $$
 
 The chlorine radical is regenerated, creating a chain reaction.
@@ -107,15 +107,15 @@ The chlorine radical is regenerated, creating a chain reaction.
 **Termination:** Radical-radical combination:
 
 $$
-2\mathrm{Cl}^\bullet \to \mathrm{Cl}_2
+2\mathrm{'\{'}Cl{'\}'}^\bullet \to \mathrm{'\{'}Cl{'\}'}_2
 $$
 
 $$
-\mathrm{Cl}^\bullet + \mathrm{CH}_3^\bullet \to \mathrm{CH}_3\mathrm{Cl}
+\mathrm{'\{'}Cl{'\}'}^\bullet + \mathrm{'\{'}CH{'\}'}_3^\bullet \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}Cl{'\}'}
 $$
 
 $$
-2\mathrm{CH}_3^\bullet \to \mathrm{C}_2\mathrm{H}_6
+2\mathrm{'\{'}CH{'\}'}_3^\bullet \to \mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_6
 $$
 
 **Limitations:** Further substitution produces dichloro-, trichloro-, and tetrachloromethane. The product is a mixture, not a single compound.
@@ -140,23 +140,23 @@ The electron-rich $\pi$ bond attacks electrophiles (electron-deficient species).
 **Addition of HBr to propene:**
 
 $$
-\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CHBrCH}_3
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}HBr{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CHBrCH{'\}'}_3
 $$
 
 **Mechanism (curly arrows):**
 
-Step 1: $\mathrm{HBr}$ approaches the double bond. The $\pi$ electrons attack the $\delta^+$ hydrogen. The H-Br bond breaks heterolytically, forming a carbocation:
+Step 1: $\mathrm{'\{'}HBr{'\}'}$ approaches the double bond. The $\pi$ electrons attack the $\delta^+$ hydrogen. The H-Br bond breaks heterolytically, forming a carbocation:
 
 $$
-\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H-Br} \to \mathrm{CH}_3\overset{+}{\mathrm{C}}\mathrm{HCH}_3 + \mathrm{Br}^-
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}H-Br{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\overset{+}{\mathrm{'\{'}C{'\}'}}\mathrm{'\{'}HCH{'\}'}_3 + \mathrm{'\{'}Br{'\}'}^-
 $$
 
-The secondary carbocation ($\mathrm{CH}_3\overset{+}{\mathrm{C}}\mathrm{HCH}_3$) is formed preferentially over the primary ($\mathrm{CH}_3\mathrm{CH}_2\overset{+}{\mathrm{C}}\mathrm{H}_2$) because it is more stable (hyperconjugation and inductive effects from the methyl group).
+The secondary carbocation ($\mathrm{'\{'}CH{'\}'}_3\overset{+}{\mathrm{'\{'}C{'\}'}}\mathrm{'\{'}HCH{'\}'}_3$) is formed preferentially over the primary ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\overset{+}{\mathrm{'\{'}C{'\}'}}\mathrm{'\{'}H{'\}'}_2$) because it is more stable (hyperconjugation and inductive effects from the methyl group).
 
-Step 2: $\mathrm{Br}^-$ attacks the carbocation:
+Step 2: $\mathrm{'\{'}Br{'\}'}^-$ attacks the carbocation:
 
 $$
-\mathrm{CH}_3\overset{+}{\mathrm{C}}\mathrm{HCH}_3 + \mathrm{Br}^- \to \mathrm{CH}_3\mathrm{CHBrCH}_3
+\mathrm{'\{'}CH{'\}'}_3\overset{+}{\mathrm{'\{'}C{'\}'}}\mathrm{'\{'}HCH{'\}'}_3 + \mathrm{'\{'}Br{'\}'}^- \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CHBrCH{'\}'}_3
 $$
 
 ### Markovnikov's Rule
@@ -168,7 +168,7 @@ When HX adds to an unsymmetrical alkene, the hydrogen attaches to the carbon of 
 Alkenes undergo addition polymerisation:
 
 $$
-n\,\mathrm{CH}_2=\mathrm{CHCl} \to \mathrm{--}(\mathrm{CH}_2\mathrm{CHCl})_n\mathrm{--}
+n\,\mathrm{'\{'}CH{'\}'}_2=\mathrm{'\{'}CHCl{'\}'} \to \mathrm{'\{'}--{'\}'}(\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CHCl{'\}'})_n\mathrm{'\{'}--{'\}'}
 $$
 
 Polyvinyl chloride (PVC) is formed from vinyl chloride (chloroethene).
@@ -179,12 +179,12 @@ Polyvinyl chloride (PVC) is formed from vinyl chloride (chloroethene).
 
 ### Benzene Structure
 
-Benzene ($\mathrm{C}_6\mathrm{H}_6$) is a planar, regular hexagonal molecule with $120^\circ$ bond angles. Each carbon is $sp^2$ hybridised and forms three $\sigma$ bonds. The remaining $p_z$ electron on each carbon overlaps to form a delocalised $\pi$ system above and below the ring.
+Benzene ($\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$) is a planar, regular hexagonal molecule with $120^\circ$ bond angles. Each carbon is $sp^2$ hybridised and forms three $\sigma$ bonds. The remaining $p_z$ electron on each carbon overlaps to form a delocalised $\pi$ system above and below the ring.
 
 **Evidence for delocalisation:**
-- All C--C bonds in benzene have identical length ($139\,\mathrm{pm}$), intermediate between single ($154\,\mathrm{pm}$) and double ($134\,\mathrm{pm}$) bonds.
+- All C--C bonds in benzene have identical length ($139\,\mathrm{'\{'}pm{'\}'}$), intermediate between single ($154\,\mathrm{'\{'}pm{'\}'}$) and double ($134\,\mathrm{'\{'}pm{'\}'}$) bonds.
 - The Kekule structure (alternating single/double bonds) predicts two different bond lengths and two isomers of 1,2-disubstituted benzene, neither of which is observed.
-- Benzene is more stable than predicted by three isolated double bonds (by approximately $150\,\mathrm{kJ/mol}$ -- the **delocalisation energy** or **resonance energy**).
+- Benzene is more stable than predicted by three isolated double bonds (by approximately $150\,\mathrm{'\{'}kJ/mol{'\}'}$ -- the **delocalisation energy** or **resonance energy**).
 - Benzene resists addition reactions (which would destroy the aromatic system) and favours substitution (which preserves it).
 
 ### Electrophilic Substitution
@@ -196,26 +196,26 @@ The delocalised $\pi$ system is a region of high electron density that attracts 
 
 **Nitration:**
 
-Reagents: concentrated $\mathrm{HNO}_3$ / concentrated $\mathrm{H}_2\mathrm{SO}_4$ at $50\mathrm{--}60^\circ\mathrm{C}$.
+Reagents: concentrated $\mathrm{'\{'}HNO{'\}'}_3$ / concentrated $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4$ at $50\mathrm{'\{'}--{'\}'}60^\circ\mathrm{'\{'}C{'\}'}$.
 
-The electrophile is $\mathrm{NO}_2^+$ (nitronium ion), generated by:
-
-$$
-\mathrm{HNO}_3 + \mathrm{H}_2\mathrm{SO}_4 \to \mathrm{NO}_2^+ + \mathrm{HSO}_4^- + \mathrm{H}_2\mathrm{O}
-$$
+The electrophile is $\mathrm{'\{'}NO{'\}'}_2^+$ (nitronium ion), generated by:
 
 $$
-\mathrm{C}_6\mathrm{H}_6 + \mathrm{NO}_2^+ \to \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 + \mathrm{H}^+
+\mathrm{'\{'}HNO{'\}'}_3 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4 \to \mathrm{'\{'}NO{'\}'}_2^+ + \mathrm{'\{'}HSO{'\}'}_4^- + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
+$$
+
+$$
+\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6 + \mathrm{'\{'}NO{'\}'}_2^+ \to \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}NO{'\}'}_2 + \mathrm{'\{'}H{'\}'}^+
 $$
 
 **Friedel-Crafts Acylation:**
 
-Reagents: acyl chloride / $\mathrm{AlCl}_3$ catalyst.
+Reagents: acyl chloride / $\mathrm{'\{'}AlCl{'\}'}_3$ catalyst.
 
-The electrophile is an acylium ion: $\mathrm{RCO}^+$, generated by:
+The electrophile is an acylium ion: $\mathrm{'\{'}RCO{'\}'}^+$, generated by:
 
 $$
-\mathrm{RCOCl} + \mathrm{AlCl}_3 \to \mathrm{RCO}^+ + \mathrm{AlCl}_4^-
+\mathrm{'\{'}RCOCl{'\}'} + \mathrm{'\{'}AlCl{'\}'}_3 \to \mathrm{'\{'}RCO{'\}'}^+ + \mathrm{'\{'}AlCl{'\}'}_4^-
 $$
 
 This produces aryl ketones. It does not work on deactivated rings (e.g. nitrobenzene).
@@ -231,10 +231,10 @@ Halogenoalkanes undergo substitution by nucleophiles (species with a lone pair o
 **Bimolecular nucleophilic substitution** -- a one-step concerted mechanism.
 
 $$
-\mathrm{OH}^- + \mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{Br}^-
+\mathrm{'\{'}OH{'\}'}^- + \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}Br{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'} + \mathrm{'\{'}Br{'\}'}^-
 $$
 
-- Rate depends on both the halogenoalkane and nucleophile concentrations: Rate = $k[\mathrm{RX}][\mathrm{Nu}^-]$.
+- Rate depends on both the halogenoalkane and nucleophile concentrations: Rate = $k[\mathrm{'\{'}RX{'\}'}][\mathrm{'\{'}Nu{'\}'}^-]$.
 - Inversion of configuration at the carbon (Walden inversion).
 - Favoured by primary halogenoalkanes (less steric hindrance).
 - Favoured by polar aprotic solvents.
@@ -246,38 +246,38 @@ $$
 Step 1 (slow, rate-determining): Heterolytic fission of the C--X bond, forming a carbocation.
 
 $$
-(\mathrm{CH}_3)_3\mathrm{CBr} \to (\mathrm{CH}_3)_3\mathrm{C}^+ + \mathrm{Br}^-
+(\mathrm{'\{'}CH{'\}'}_3)_3\mathrm{'\{'}CBr{'\}'} \to (\mathrm{'\{'}CH{'\}'}_3)_3\mathrm{'\{'}C{'\}'}^+ + \mathrm{'\{'}Br{'\}'}^-
 $$
 
 Step 2 (fast): Nucleophilic attack on the carbocation.
 
 $$
-(\mathrm{CH}_3)_3\mathrm{C}^+ + \mathrm{OH}^- \to (\mathrm{CH}_3)_3\mathrm{COH}
+(\mathrm{'\{'}CH{'\}'}_3)_3\mathrm{'\{'}C{'\}'}^+ + \mathrm{'\{'}OH{'\}'}^- \to (\mathrm{'\{'}CH{'\}'}_3)_3\mathrm{'\{'}COH{'\}'}
 $$
 
-- Rate depends only on the halogenoalkane concentration: Rate = $k[\mathrm{RX}]$.
+- Rate depends only on the halogenoalkane concentration: Rate = $k[\mathrm{'\{'}RX{'\}'}]$.
 - Racemisation at the chiral centre (attack from both sides).
 - Favoured by tertiary halogenoalkanes (stable carbocation).
 - Favoured by polar protic solvents (stabilise the carbocation).
 
 ### Relative Reactivity
 
-The C--X bond strength decreases and the bond becomes more polar as the halogen increases in size: $\mathrm{C-I} \lt \mathrm{C-Br} \lt \mathrm{C-Cl} \lt \mathrm{C-F}$.
+The C--X bond strength decreases and the bond becomes more polar as the halogen increases in size: $\mathrm{'\{'}C-I{'\}'} \lt \mathrm{'\{'}C-Br{'\}'} \lt \mathrm{'\{'}C-Cl{'\}'} \lt \mathrm{'\{'}C-F{'\}'}$.
 
-Reactivity in substitution: $\mathrm{RI} \gt \mathrm{RBr} \gt \mathrm{RCl} \gg \mathrm{RF}$.
+Reactivity in substitution: $\mathrm{'\{'}RI{'\}'} \gt \mathrm{'\{'}RBr{'\}'} \gt \mathrm{'\{'}RCl{'\}'} \gg \mathrm{'\{'}RF{'\}'}$.
 
-$\mathrm{C-F}$ bonds are very strong and fluorine is a poor leaving group, so fluoroalkanes are essentially unreactive.
+$\mathrm{'\{'}C-F{'\}'}$ bonds are very strong and fluorine is a poor leaving group, so fluoroalkanes are essentially unreactive.
 
 ### Elimination
 
-When a strong base (e.g. $\mathrm{OH}^-$ in ethanol, heated) reacts with a halogenoalkane, elimination can compete with substitution, producing an alkene:
+When a strong base (e.g. $\mathrm{'\{'}OH{'\}'}^-$ in ethanol, heated) reacts with a halogenoalkane, elimination can compete with substitution, producing an alkene:
 
 $$
-\mathrm{CH}_3\mathrm{CHBrCH}_3 + \mathrm{OH}^- \to \mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H}_2\mathrm{O} + \mathrm{Br}^-
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CHBrCH{'\}'}_3 + \mathrm{'\{'}OH{'\}'}^- \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} + \mathrm{'\{'}Br{'\}'}^-
 $$
 
 Elimination is favoured by:
-- Strong, bulky bases (e.g. $\mathrm{KOH}$ in ethanol).
+- Strong, bulky bases (e.g. $\mathrm{'\{'}KOH{'\}'}$ in ethanol).
 - High temperature.
 - Tertiary halogenoalkanes (more hindered for SN2).
 
@@ -287,21 +287,21 @@ Elimination is favoured by:
 
 ### Classification
 
-- **Primary** ($1^\circ$): $-\mathrm{CH}_2\mathrm{OH}$ (one alkyl group on the carbon bearing the OH).
-- **Secondary** ($2^\circ$): $>\mathrm{CHOH}$ (two alkyl groups).
-- **Tertiary** ($3^\circ$): $>\mathrm{C}-\mathrm{OH}$ (three alkyl groups).
+- **Primary** ($1^\circ$): $-\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'}$ (one alkyl group on the carbon bearing the OH).
+- **Secondary** ($2^\circ$): $>\mathrm{'\{'}CHOH{'\}'}$ (two alkyl groups).
+- **Tertiary** ($3^\circ$): $>\mathrm{'\{'}C{'\}'}-\mathrm{'\{'}OH{'\}'}$ (three alkyl groups).
 
 ### Oxidation
 
 Primary alcohols are oxidised stepwise:
 
 $$
-\mathrm{Primary alcohol} \xrightarrow{[\mathrm{O}]} \mathrm{aldehyde} \xrightarrow{[\mathrm{O}]} \mathrm{carboxylic acid}
+\mathrm{'\{'}Primary alcohol{'\}'} \xrightarrow{[\mathrm{'\{'}O{'\}'}]} \mathrm{'\{'}aldehyde{'\}'} \xrightarrow{[\mathrm{'\{'}O{'\}'}]} \mathrm{'\{'}carboxylic acid{'\}'}
 $$
 
 **Distillation** (gentle heating) stops at the aldehyde. **Reflux** (heating under condenser) proceeds to the carboxylic acid.
 
-Reagents: acidified potassium dichromate(VI) ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7 / \mathrm{H}^+$), which changes colour from orange to green upon reduction to $\mathrm{Cr}^{3+}$.
+Reagents: acidified potassium dichromate(VI) ($\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7 / \mathrm{'\{'}H{'\}'}^+$), which changes colour from orange to green upon reduction to $\mathrm{'\{'}Cr{'\}'}^{3+}$.
 
 Secondary alcohols oxidise to ketones (no further oxidation under these conditions).
 
@@ -309,10 +309,10 @@ Tertiary alcohols are not oxidised by these reagents (no $\alpha$-hydrogen avail
 
 ### Esterification
 
-Alcohols react with carboxylic acids in the presence of a strong acid catalyst (typically concentrated $\mathrm{H}_2\mathrm{SO}_4$) to form esters:
+Alcohols react with carboxylic acids in the presence of a strong acid catalyst (typically concentrated $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4$) to form esters:
 
 $$
-\mathrm{CH}_3\mathrm{COOH} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \rightleftharpoons \mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O}
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COOH{'\}'} + \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'} \rightleftharpoons \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COOCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
 $$
 
 This is an equilibrium; excess alcohol or removal of water drives it to completion.
@@ -323,7 +323,7 @@ This is an equilibrium; excess alcohol or removal of water drives it to completi
 
 | Property | Aldehyde | Ketone |
 |---|---|---|
-| General formula | $\mathrm{RCHO}$ | $\mathrm{RCOR}'$ |
+| General formula | $\mathrm{'\{'}RCHO{'\}'}$ | $\mathrm{'\{'}RCOR{'\}'}'$ |
 | Terminal C=O | Yes (on end of chain) | No (within chain) |
 | Oxidation | Yes (to carboxylic acid) | No |
 | Tollens' test | Silver mirror (positive) | No reaction (negative) |
@@ -336,12 +336,12 @@ The carbonyl carbon is $\delta^+$ due to the electronegative oxygen, making it s
 **Reaction with HCN (cyanohydrin formation):**
 
 $$
-\mathrm{RCHO} + \mathrm{HCN} \to \mathrm{RCH(OH)CN}
+\mathrm{'\{'}RCHO{'\}'} + \mathrm{'\{'}HCN{'\}'} \to \mathrm{'\{'}RCH(OH)CN{'\}'}
 $$
 
-The mechanism: the nucleophile $\mathrm{CN}^-$ attacks the carbonyl carbon, forming a tetrahedral intermediate that is protonated by $\mathrm{HCN}$.
+The mechanism: the nucleophile $\mathrm{'\{'}CN{'\}'}^-$ attacks the carbonyl carbon, forming a tetrahedral intermediate that is protonated by $\mathrm{'\{'}HCN{'\}'}$.
 
-Cyanohydrins are useful because the $-\mathrm{CN}$ group can be hydrolysed to $-\mathrm{COOH}$ or reduced to $-\mathrm{CH}_2\mathrm{NH}_2$, extending the carbon chain.
+Cyanohydrins are useful because the $-\mathrm{'\{'}CN{'\}'}$ group can be hydrolysed to $-\mathrm{'\{'}COOH{'\}'}$ or reduced to $-\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}NH{'\}'}_2$, extending the carbon chain.
 
 **Reaction with NaBH$_4$:** reduces aldehydes to primary alcohols and ketones to secondary alcohols.
 
@@ -349,10 +349,10 @@ Cyanohydrins are useful because the $-\mathrm{CN}$ group can be hydrolysed to $-
 
 ### Acidity
 
-Carboxylic acids are weak acids ($\mathrm{p}K_a \approx 4\mathrm{--}5$):
+Carboxylic acids are weak acids ($\mathrm{'\{'}p{'\}'}K_a \approx 4\mathrm{'\{'}--{'\}'}5$):
 
 $$
-\mathrm{CH}_3\mathrm{COOH} \rightleftharpoons \mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}^+
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COOH{'\}'} \rightleftharpoons \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COO{'\}'}^- + \mathrm{'\{'}H{'\}'}^+
 $$
 
 The carboxylate anion is stabilised by **resonance delocalisation** of the negative charge over both oxygen atoms.
@@ -362,25 +362,25 @@ The carboxylate anion is stabilised by **resonance delocalisation** of the negat
 Acyl chlorides are highly reactive derivatives of carboxylic acids:
 
 $$
-\mathrm{CH}_3\mathrm{COCl} + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_3\mathrm{COOH} + \mathrm{HCl}
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COCl{'\}'} + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COOH{'\}'} + \mathrm{'\{'}HCl{'\}'}
 $$
 
 $$
-\mathrm{CH}_3\mathrm{COCl} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \to \mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{HCl}
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COCl{'\}'} + \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COOCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3 + \mathrm{'\{'}HCl{'\}'}
 $$
 
 $$
-\mathrm{CH}_3\mathrm{COCl} + \mathrm{NH}_3 \to \mathrm{CH}_3\mathrm{CONH}_2 + \mathrm{HCl}
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COCl{'\}'} + \mathrm{'\{'}NH{'\}'}_3 \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CONH{'\}'}_2 + \mathrm{'\{'}HCl{'\}'}
 $$
 
-All reactions are vigorous and exothermic, producing $\mathrm{HCl}$ fumes. No catalyst is needed because the chlorine is an excellent leaving group.
+All reactions are vigorous and exothermic, producing $\mathrm{'\{'}HCl{'\}'}$ fumes. No catalyst is needed because the chlorine is an excellent leaving group.
 
 ### Hydrolysis of Esters and Amides
 
 Esters hydrolyse under acidic or basic conditions:
 
 $$
-\mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{NaOH} \to \mathrm{CH}_3\mathrm{COONa} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COOCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3 + \mathrm{'\{'}NaOH{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COONa{'\}'} + \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'}
 $$
 
 Base hydrolysis (saponification) is irreversible. Acid hydrolysis is reversible.
@@ -391,7 +391,7 @@ Base hydrolysis (saponification) is irreversible. Acid hydrolysis is reversible.
 
 IR spectroscopy measures the absorption of infrared radiation by bonds, which vibrate at characteristic frequencies.
 
-| Bond | Wavenumber ($\mathrm{cm}^{-1}$) |
+| Bond | Wavenumber ($\mathrm{'\{'}cm{'\}'}^{-1}$) |
 |---|---|
 | O--H (alcohol, broad) | 3200--3600 |
 | O--H (carboxylic acid, very broad) | 2500--3300 |
@@ -401,7 +401,7 @@ IR spectroscopy measures the absorption of infrared radiation by bonds, which vi
 | C=C | 1620--1680 |
 | C--O | 1000--1300 |
 
-**Fingerprint region** ($1500\mathrm{--}400\,\mathrm{cm}^{-1}$): unique pattern for each compound; used for identification by comparison with reference spectra.
+**Fingerprint region** ($1500\mathrm{'\{'}--{'\}'}400\,\mathrm{'\{'}cm{'\}'}^{-1}$): unique pattern for each compound; used for identification by comparison with reference spectra.
 
 ### Mass Spectrometry
 
@@ -409,33 +409,33 @@ See [Atomic Structure](./atomic-structure) for the general principles. In organi
 
 | Fragment | $m/z$ | Origin |
 |---|---|---|
-| $\mathrm{M}^{+\bullet}$ | $M_r$ | Molecular ion |
-| $\mathrm{M} - 15$ | $M_r - 15$ | Loss of $-\mathrm{CH}_3$ |
-| $\mathrm{M} - 29$ | $M_r - 29$ | Loss of $-\mathrm{C}_2\mathrm{H}_5$ or $-\mathrm{CHO}$ |
-| $\mathrm{M} - 43$ | $M_r - 43$ | Loss of $-\mathrm{C}_3\mathrm{H}_7$ or $-\mathrm{COCH}_3$ |
-| 43 | 43 | $-\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ |
-| 77 | 77 | $\mathrm{C}_6\mathrm{H}_5^+$ (phenyl) |
-| 91 | 91 | $\mathrm{C}_7\mathrm{H}_7^+$ (benzyl/tropylium) |
+| $\mathrm{'\{'}M{'\}'}^{+\bullet}$ | $M_r$ | Molecular ion |
+| $\mathrm{'\{'}M{'\}'} - 15$ | $M_r - 15$ | Loss of $-\mathrm{'\{'}CH{'\}'}_3$ |
+| $\mathrm{'\{'}M{'\}'} - 29$ | $M_r - 29$ | Loss of $-\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_5$ or $-\mathrm{'\{'}CHO{'\}'}$ |
+| $\mathrm{'\{'}M{'\}'} - 43$ | $M_r - 43$ | Loss of $-\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_7$ or $-\mathrm{'\{'}COCH{'\}'}_3$ |
+| 43 | 43 | $-\mathrm{'\{'}C{'\}'}_3\mathrm{'\{'}H{'\}'}_7^+$ or $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CO{'\}'}^+$ |
+| 77 | 77 | $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5^+$ (phenyl) |
+| 91 | 91 | $\mathrm{'\{'}C{'\}'}_7\mathrm{'\{'}H{'\}'}_7^+$ (benzyl/tropylium) |
 
 The McLafferty rearrangement is a characteristic fragmentation of carbonyl compounds that transfers a $\gamma$-hydrogen to the carbonyl oxygen via a six-membered transition state, producing an enol radical cation and an alkene.
 
 ### NMR Spectroscopy
 
-#### Proton (${}^1\mathrm{H}$) NMR
+#### Proton (${}^1\mathrm{'\{'}H{'\}'}$) NMR
 
-${}^1\mathrm{H}$ NMR provides information about the hydrogen environments in a molecule.
+${}^1\mathrm{'\{'}H{'\}'}$ NMR provides information about the hydrogen environments in a molecule.
 
 **Chemical shift ($\delta$):** The position of a signal, measured in ppm relative to TMS (tetramethylsilane, $\delta = 0$). Higher $\delta$ means greater deshielding.
 
 | Proton type | $\delta$ range (ppm) |
 |---|---|
-| $\mathrm{R}-\mathrm{CH}_3$ | 0.7--1.3 |
-| $\mathrm{R}_2-\mathrm{CH}_2$ | 1.2--1.4 |
-| $\mathrm{R}_3-\mathrm{CH}$ | 1.4--1.7 |
-| $\mathrm{C}=\mathrm{C}-\mathrm{H}$ | 4.5--6.5 |
-| $\mathrm{Ar}-\mathrm{H}$ | 6.5--8.5 |
-| $\mathrm{R}-\mathrm{CHO}$ | 9.0--10.0 |
-| $\mathrm{R}-\mathrm{COOH}$ | 10.0--13.0 |
+| $\mathrm{'\{'}R{'\}'}-\mathrm{'\{'}CH{'\}'}_3$ | 0.7--1.3 |
+| $\mathrm{'\{'}R{'\}'}_2-\mathrm{'\{'}CH{'\}'}_2$ | 1.2--1.4 |
+| $\mathrm{'\{'}R{'\}'}_3-\mathrm{'\{'}CH{'\}'}$ | 1.4--1.7 |
+| $\mathrm{'\{'}C{'\}'}=\mathrm{'\{'}C{'\}'}-\mathrm{'\{'}H{'\}'}$ | 4.5--6.5 |
+| $\mathrm{'\{'}Ar{'\}'}-\mathrm{'\{'}H{'\}'}$ | 6.5--8.5 |
+| $\mathrm{'\{'}R{'\}'}-\mathrm{'\{'}CHO{'\}'}$ | 9.0--10.0 |
+| $\mathrm{'\{'}R{'\}'}-\mathrm{'\{'}COOH{'\}'}$ | 10.0--13.0 |
 
 **Integration:** The area under each peak is proportional to the number of equivalent protons.
 
@@ -451,25 +451,25 @@ ${}^1\mathrm{H}$ NMR provides information about the hydrogen environments in a m
 
 The coupling constant $J$ (in Hz) is the spacing between peaks in a multiplet. Equivalent protons do not couple to each other.
 
-#### Carbon-13 (${}^{13}\mathrm{C}$) NMR
+#### Carbon-13 (${}^{13}\mathrm{'\{'}C{'\}'}$) NMR
 
-${}^{13}\mathrm{C}$ NMR detects carbon environments. Key differences from ${}^1\mathrm{H}$ NMR:
+${}^{13}\mathrm{'\{'}C{'\}'}$ NMR detects carbon environments. Key differences from ${}^1\mathrm{'\{'}H{'\}'}$ NMR:
 
-- Natural abundance of ${}^{13}\mathrm{C}$ is only 1.1%, so signals are much weaker.
+- Natural abundance of ${}^{13}\mathrm{'\{'}C{'\}'}$ is only 1.1%, so signals are much weaker.
 - Proton decoupling is typically used, meaning each carbon environment gives a single peak (no splitting).
-- Chemical shift range is wider ($0\mathrm{--}220\,\mathrm{ppm}$).
-- $\mathrm{C}=0$ carbons appear at $160\mathrm{--}220\,\mathrm{ppm}$.
+- Chemical shift range is wider ($0\mathrm{'\{'}--{'\}'}220\,\mathrm{'\{'}ppm{'\}'}$).
+- $\mathrm{'\{'}C{'\}'}=0$ carbons appear at $160\mathrm{'\{'}--{'\}'}220\,\mathrm{'\{'}ppm{'\}'}$.
 
 ### Chromatography
 
 #### Thin-Layer Chromatography (TLC)
 
-A thin layer of stationary phase (silica gel, $\mathrm{SiO}_2$) on a glass or aluminium plate. The sample is spotted near the base, and the plate is placed in a solvent (mobile phase). Compounds separate based on their relative affinity for the stationary vs mobile phase.
+A thin layer of stationary phase (silica gel, $\mathrm{'\{'}SiO{'\}'}_2$) on a glass or aluminium plate. The sample is spotted near the base, and the plate is placed in a solvent (mobile phase). Compounds separate based on their relative affinity for the stationary vs mobile phase.
 
 **$R_f$ value:** The ratio of the distance travelled by the compound to the distance travelled by the solvent front.
 
 $$
-R_f = \frac{\mathrm{distance travelled by spot}}{\mathrm{distance travelled by solvent front}}
+R_f = \frac{\mathrm{'\{'}distance travelled by spot{'\}'}}{\mathrm{'\{'}distance travelled by solvent front{'\}'}}
 $$
 
 $R_f$ values range from 0 to 1. A compound with higher affinity for the mobile phase (more non-polar) travels further and has a higher $R_f$ value.
@@ -478,7 +478,7 @@ $R_f$ values range from 0 to 1. A compound with higher affinity for the mobile p
 
 #### Gas Chromatography (GC)
 
-The mobile phase is an inert carrier gas (e.g. $\mathrm{He}$, $\mathrm{N}_2$). The stationary phase is a high-boiling liquid coated on the inside of a capillary column. Separation depends on volatility and interaction with the stationary phase.
+The mobile phase is an inert carrier gas (e.g. $\mathrm{'\{'}He{'\}'}$, $\mathrm{'\{'}N{'\}'}_2$). The stationary phase is a high-boiling liquid coated on the inside of a capillary column. Separation depends on volatility and interaction with the stationary phase.
 
 The **retention time** is the time from injection to detection. It is characteristic of a compound under fixed conditions.
 
@@ -494,7 +494,7 @@ The mobile phase is a liquid under high pressure. Separation is based on polarit
 
 2. **Confusing SN1 and SN2 conditions.** Primary halogenoalkanes favour SN2; tertiary favour SN1. Strong, bulky bases and high temperature favour elimination over substitution.
 
-3. **Oxidation of tertiary alcohols.** Tertiary alcohols cannot be oxidised by $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ because there is no hydrogen on the carbon bearing the OH group.
+3. **Oxidation of tertiary alcohols.** Tertiary alcohols cannot be oxidised by $\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$ because there is no hydrogen on the carbon bearing the OH group.
 
 4. **Drawing the wrong benzene structure.** Do not draw alternating single and double bonds (Kekule structure). Draw a hexagon with a circle inside to represent the delocalised $\pi$ system.
 
@@ -512,63 +512,63 @@ Retrosynthetic analysis works backwards from the target molecule. For each step,
 
 | Target | From | Reagents/conditions |
 |---|---|---|
-| Alkene | Alcohol | Dehydration: conc. $\mathrm{H}_2\mathrm{SO}_4$, $170^\circ\mathrm{C}$ |
-| Alkene | Halogenoalkane | Elimination: $\mathrm{KOH}$ in ethanol, heat |
-| Alcohol | Alkene | Hydration: $\mathrm{H}_3\mathrm{PO}_4$, $300^\circ\mathrm{C}$ (indirect) |
-| Alcohol | Halogenoalkane | SN2: aqueous $\mathrm{NaOH}$ |
-| Halogenoalkane | Alcohol | $\mathrm{PBr}_3$ / $\mathrm{SOCl}_2$ / conc. $\mathrm{HBr}$ |
-| Aldehyde | Primary alcohol | Distillation with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ |
-| Carboxylic acid | Primary alcohol | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ |
-| Ketone | Secondary alcohol | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ |
-| Primary amine | Halogenoalkane | Excess $\mathrm{NH}_3$ |
-| Primary amine | Nitrile | $\mathrm{LiAlH}_4$ |
-| Nitrile | Halogenoalkane | $\mathrm{KCN}$ (adds one carbon) |
-| Ester | Carboxylic acid + alcohol | Conc. $\mathrm{H}_2\mathrm{SO}_4$, heat |
+| Alkene | Alcohol | Dehydration: conc. $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4$, $170^\circ\mathrm{'\{'}C{'\}'}$ |
+| Alkene | Halogenoalkane | Elimination: $\mathrm{'\{'}KOH{'\}'}$ in ethanol, heat |
+| Alcohol | Alkene | Hydration: $\mathrm{'\{'}H{'\}'}_3\mathrm{'\{'}PO{'\}'}_4$, $300^\circ\mathrm{'\{'}C{'\}'}$ (indirect) |
+| Alcohol | Halogenoalkane | SN2: aqueous $\mathrm{'\{'}NaOH{'\}'}$ |
+| Halogenoalkane | Alcohol | $\mathrm{'\{'}PBr{'\}'}_3$ / $\mathrm{'\{'}SOCl{'\}'}_2$ / conc. $\mathrm{'\{'}HBr{'\}'}$ |
+| Aldehyde | Primary alcohol | Distillation with acidified $\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$ |
+| Carboxylic acid | Primary alcohol | Reflux with acidified $\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$ |
+| Ketone | Secondary alcohol | Reflux with acidified $\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$ |
+| Primary amine | Halogenoalkane | Excess $\mathrm{'\{'}NH{'\}'}_3$ |
+| Primary amine | Nitrile | $\mathrm{'\{'}LiAlH{'\}'}_4$ |
+| Nitrile | Halogenoalkane | $\mathrm{'\{'}KCN{'\}'}$ (adds one carbon) |
+| Ester | Carboxylic acid + alcohol | Conc. $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4$, heat |
 | Amide | Acyl chloride + ammonia | Room temperature |
-| Phenylamine | Nitrobenzene | $\mathrm{Sn/HCl}$ then $\mathrm{NaOH}$ |
-| Nitrobenzene | Benzene | $\mathrm{HNO}_3 / \mathrm{H}_2\mathrm{SO}_4$, 50--60$^\circ\mathrm{C}$ |
+| Phenylamine | Nitrobenzene | $\mathrm{'\{'}Sn/HCl{'\}'}$ then $\mathrm{'\{'}NaOH{'\}'}$ |
+| Nitrobenzene | Benzene | $\mathrm{'\{'}HNO{'\}'}_3 / \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4$, 50--60$^\circ\mathrm{'\{'}C{'\}'}$ |
 
 ### Worked Example: Synthesis of Propanoic Acid from Propene
 
-**Target:** $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$ from $\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2$
+**Target:** $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}COOH{'\}'}$ from $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2$
 
 **Route 1 (via halogenoalkane):**
 
-Step 1: $\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \xrightarrow{\text{peroxides}} \mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3$ (anti-Markovnikov addition)
+Step 1: $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}HBr{'\}'} \xrightarrow{\text{'\{'}peroxides{'\}'}} \mathrm{'\{'}BrCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3$ (anti-Markovnikov addition)
 
-Step 2: $\mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{NaOH}(aq) \to \mathrm{HOCH}_2\mathrm{CH}_2\mathrm{CH}_3$ (nucleophilic substitution)
+Step 2: $\mathrm{'\{'}BrCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3 + \mathrm{'\{'}NaOH{'\}'}(aq) \to \mathrm{'\{'}HOCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3$ (nucleophilic substitution)
 
-Step 3: $\mathrm{HOCH}_2\mathrm{CH}_2\mathrm{CH}_3 \xrightarrow{[\mathrm{O}],\,\mathrm{reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$ (oxidation)
+Step 3: $\mathrm{'\{'}HOCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3 \xrightarrow{[\mathrm{'\{'}O{'\}'}],\,\mathrm{'\{'}reflux{'\}'}} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}COOH{'\}'}$ (oxidation)
 
 **Route 2 (via nitrile, chain extension):**
 
-Step 1: $\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \xrightarrow{\text{peroxides}} \mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3$
+Step 1: $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}HBr{'\}'} \xrightarrow{\text{'\{'}peroxides{'\}'}} \mathrm{'\{'}BrCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3$
 
-Step 2: $\mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{KCN} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CN}$ (nucleophilic substitution, adds one C)
+Step 2: $\mathrm{'\{'}BrCH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3 + \mathrm{'\{'}KCN{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CN{'\}'}$ (nucleophilic substitution, adds one C)
 
-Step 3: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CN} + 2\mathrm{H}_2\mathrm{O} \xrightarrow{\mathrm{H}^+,\,\mathrm{reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH} + \mathrm{NH}_4^+$ (acid hydrolysis of nitrile)
+Step 3: $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CN{'\}'} + 2\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \xrightarrow{\mathrm{'\{'}H{'\}'}^+,\,\mathrm{'\{'}reflux{'\}'}} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}COOH{'\}'} + \mathrm{'\{'}NH{'\}'}_4^+$ (acid hydrolysis of nitrile)
 
 Note: Route 2 produces butanoic acid (4 carbons), not propanoic acid. For propanoic acid, use:
 
-$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 \xrightarrow{\mathrm{HBr}} \mathrm{CH}_3\mathrm{CHBrCH}_3 \xrightarrow{\mathrm{KCN}} \mathrm{CH}_3\mathrm{CH}(\mathrm{CN})\mathrm{CH}_3 \xrightarrow{\mathrm{H}_3\mathrm{O}^+} \mathrm{CH}_3\mathrm{CH}(\mathrm{COOH})\mathrm{CH}_3$ (2-methylpropanoic acid)
+$\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 \xrightarrow{\mathrm{'\{'}HBr{'\}'}} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CHBrCH{'\}'}_3 \xrightarrow{\mathrm{'\{'}KCN{'\}'}} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}CN{'\}'})\mathrm{'\{'}CH{'\}'}_3 \xrightarrow{\mathrm{'\{'}H{'\}'}_3\mathrm{'\{'}O{'\}'}^+} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}COOH{'\}'})\mathrm{'\{'}CH{'\}'}_3$ (2-methylpropanoic acid)
 
 This illustrates the importance of planning the carbon skeleton before choosing the route.
 
 ### Worked Example: Synthesis of Methyl 2-hydroxybenzoate (Methyl Salicylate) from Benzene
 
-**Target:** $\mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOCH}_3$ from $\mathrm{C}_6\mathrm{H}_6$
+**Target:** $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_4(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}COOCH{'\}'}_3$ from $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6$
 
 Step 1: Friedel-Crafts alkylation or acylation to introduce a side chain. Since we need a carboxylic acid at the ortho position to an OH group, the order matters.
 
 Better route: Start with phenol.
 
-Step 1: $\mathrm{C}_6\mathrm{H}_6 + \mathrm{Cl}_2 \xrightarrow{\mathrm{AlCl}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{Cl}$ (chlorination)
+Step 1: $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6 + \mathrm{'\{'}Cl{'\}'}_2 \xrightarrow{\mathrm{'\{'}AlCl{'\}'}_3} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}Cl{'\}'}$ (chlorination)
 
-Step 2: $\mathrm{C}_6\mathrm{H}_5\mathrm{Cl} + \mathrm{NaOH} \xrightarrow{\text{high } P,\,T} \mathrm{C}_6\mathrm{H}_5\mathrm{OH} + \mathrm{NaCl}$ (industrial phenol synthesis)
+Step 2: $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}Cl{'\}'} + \mathrm{'\{'}NaOH{'\}'} \xrightarrow{\text{'\{'}high {'\}'} P,\,T} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}OH{'\}'} + \mathrm{'\{'}NaCl{'\}'}$ (industrial phenol synthesis)
 
-Step 3: Kolbe-Schmitt reaction: $\mathrm{C}_6\mathrm{H}_5\mathrm{OH} + \mathrm{CO}_2 \xrightarrow{\mathrm{NaOH},\,125^\circ\mathrm{C}} \mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COONa} \xrightarrow{\mathrm{H}^+} \mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOH}$ (2-hydroxybenzoic acid, salicylic acid)
+Step 3: Kolbe-Schmitt reaction: $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}OH{'\}'} + \mathrm{'\{'}CO{'\}'}_2 \xrightarrow{\mathrm{'\{'}NaOH{'\}'},\,125^\circ\mathrm{'\{'}C{'\}'}} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_4(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}COONa{'\}'} \xrightarrow{\mathrm{'\{'}H{'\}'}^+} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_4(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}COOH{'\}'}$ (2-hydroxybenzoic acid, salicylic acid)
 
-Step 4: $\mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOH} + \mathrm{CH}_3\mathrm{OH} \xrightarrow{\mathrm{H}_2\mathrm{SO}_4} \mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOCH}_3 + \mathrm{H}_2\mathrm{O}$ (esterification)
+Step 4: $\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_4(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}COOH{'\}'} + \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}OH{'\}'} \xrightarrow{\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_4(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}COOCH{'\}'}_3 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ (esterification)
 
 ### Principles of Route Selection
 
@@ -586,17 +586,17 @@ Step 4: $\mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOH} + \mathrm{CH}_3\math
 
 | Reagent | Primary function |
 |---|---|
-| $\mathrm{NaBH}_4$ | Reduces C=O (aldehydes, ketones) to alcohols |
-| $\mathrm{LiAlH}_4$ | Reduces C=O (including carboxylic acids, esters, amides) to alcohols/amines |
-| Acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ | Oxidises alcohols (primary to acid/aldehyde, secondary to ketone) |
-| $\mathrm{PBr}_3$ / $\mathrm{SOCl}_2$ | Converts alcohol to halogenoalkane |
-| Conc. $\mathrm{H}_2\mathrm{SO}_4$, $170^\circ\mathrm{C}$ | Dehydrates alcohol to alkene |
-| $\mathrm{NaOH}(aq)$ | SN2 substitution of halogenoalkane to alcohol |
-| $\mathrm{KCN}$ | SN2 substitution, adds CN (one extra carbon) |
-| $\mathrm{HNO}_3 / \mathrm{H}_2\mathrm{SO}_4$ | Nitration of arene |
-| $\mathrm{AlCl}_3$ + $\mathrm{RCOCl}$ | Friedel-Crafts acylation |
-| $\mathrm{NaNO}_2 / \mathrm{HCl}$, 0--5$^\circ\mathrm{C}$ | Diazotisation of primary aromatic amine |
-| $\mathrm{Sn} / \mathrm{HCl}$ | Reduces nitro group to amine |
+| $\mathrm{'\{'}NaBH{'\}'}_4$ | Reduces C=O (aldehydes, ketones) to alcohols |
+| $\mathrm{'\{'}LiAlH{'\}'}_4$ | Reduces C=O (including carboxylic acids, esters, amides) to alcohols/amines |
+| Acidified $\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$ | Oxidises alcohols (primary to acid/aldehyde, secondary to ketone) |
+| $\mathrm{'\{'}PBr{'\}'}_3$ / $\mathrm{'\{'}SOCl{'\}'}_2$ | Converts alcohol to halogenoalkane |
+| Conc. $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4$, $170^\circ\mathrm{'\{'}C{'\}'}$ | Dehydrates alcohol to alkene |
+| $\mathrm{'\{'}NaOH{'\}'}(aq)$ | SN2 substitution of halogenoalkane to alcohol |
+| $\mathrm{'\{'}KCN{'\}'}$ | SN2 substitution, adds CN (one extra carbon) |
+| $\mathrm{'\{'}HNO{'\}'}_3 / \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4$ | Nitration of arene |
+| $\mathrm{'\{'}AlCl{'\}'}_3$ + $\mathrm{'\{'}RCOCl{'\}'}$ | Friedel-Crafts acylation |
+| $\mathrm{'\{'}NaNO{'\}'}_2 / \mathrm{'\{'}HCl{'\}'}$, 0--5$^\circ\mathrm{'\{'}C{'\}'}$ | Diazotisation of primary aromatic amine |
+| $\mathrm{'\{'}Sn{'\}'} / \mathrm{'\{'}HCl{'\}'}$ | Reduces nitro group to amine |
 
 ## Required Practical Techniques in Organic Chemistry
 
@@ -609,11 +609,11 @@ Step 4: $\mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOH} + \mathrm{CH}_3\math
 - Impurities should either be very soluble (stay in solution) or insoluble (removed by hot filtration).
 - Water, ethanol, ethyl ethanoate, and hexane are common recrystallisation solvents. Mixed solvent systems (e.g. water-ethanol) are often used.
 
-**Simple distillation:** Separates a liquid from non-volatile impurities or two liquids with boiling points differing by $>25^\circ\mathrm{C}$. The liquid with the lower boiling point vaporises first, condenses, and is collected.
+**Simple distillation:** Separates a liquid from non-volatile impurities or two liquids with boiling points differing by $>25^\circ\mathrm{'\{'}C{'\}'}$. The liquid with the lower boiling point vaporises first, condenses, and is collected.
 
-**Fractional distillation:** Separates liquids with closer boiling points ($<25^\circ\mathrm{C}$ difference) using a fractionating column. The column provides multiple vapour-condensation cycles (theoretical plates), improving separation efficiency.
+**Fractional distillation:** Separates liquids with closer boiling points ($<25^\circ\mathrm{'\{'}C{'\}'}$ difference) using a fractionating column. The column provides multiple vapour-condensation cycles (theoretical plates), improving separation efficiency.
 
-**Steam distillation:** Used for compounds that are immiscible with water and decompose at their normal boiling point. The mixture is heated with steam; the organic compound co-distils at a temperature below $100^\circ\mathrm{C}$.
+**Steam distillation:** Used for compounds that are immiscible with water and decompose at their normal boiling point. The mixture is heated with steam; the organic compound co-distils at a temperature below $100^\circ\mathrm{'\{'}C{'\}'}$.
 
 **Melting point determination:** A pure compound has a sharp melting point. Impurities broaden the melting range and depress the melting point. Melting point is measured using a Thiele tube or an electric melting point apparatus.
 
@@ -621,15 +621,15 @@ Step 4: $\mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOH} + \mathrm{CH}_3\math
 
 | Test | Reagent | Observation | Functional group |
 |---|---|---|---|
-| Bromine water | $\mathrm{Br}_2(aq)$ | Decolourises | C=C |
-| Acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ | Orange to green | Aldehyde or primary/secondary alcohol |
-| Tollens' reagent | $[\mathrm{Ag}(\mathrm{NH}_3)_2]^+$ | Silver mirror | Aldehyde |
-| Fehling's solution | $\mathrm{Cu}^{2+}$ (alkaline) | Brick-red ppt | Aldehyde |
+| Bromine water | $\mathrm{'\{'}Br{'\}'}_2(aq)$ | Decolourises | C=C |
+| Acidified $\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$ | Orange to green | Aldehyde or primary/secondary alcohol |
+| Tollens' reagent | $[\mathrm{'\{'}Ag{'\}'}(\mathrm{'\{'}NH{'\}'}_3)_2]^+$ | Silver mirror | Aldehyde |
+| Fehling's solution | $\mathrm{'\{'}Cu{'\}'}^{2+}$ (alkaline) | Brick-red ppt | Aldehyde |
 | 2,4-DNPH | Brady's reagent | Orange-yellow ppt | Aldehyde or ketone |
-| $\mathrm{NaHCO}_3$ | Sodium hydrogencarbonate | Effervescence ($\mathrm{CO}_2$) | Carboxylic acid |
-| $\mathrm{PCL}_5$ | Phosphorus pentachloride | White fumes ($\mathrm{HCl}$) | Alcohol ($-\mathrm{OH}$) |
-| $\mathrm{Na}$ metal | Sodium | $\mathrm{H}_2$ bubbles | Alcohol, carboxylic acid |
-| $\mathrm{Br}_2$ in $\mathrm{CCl}_4$ | Bromine in organic solvent | Decolourises (under UV) | Alkane (radical sub.) |
+| $\mathrm{'\{'}NaHCO{'\}'}_3$ | Sodium hydrogencarbonate | Effervescence ($\mathrm{'\{'}CO{'\}'}_2$) | Carboxylic acid |
+| $\mathrm{'\{'}PCL{'\}'}_5$ | Phosphorus pentachloride | White fumes ($\mathrm{'\{'}HCl{'\}'}$) | Alcohol ($-\mathrm{'\{'}OH{'\}'}$) |
+| $\mathrm{'\{'}Na{'\}'}$ metal | Sodium | $\mathrm{'\{'}H{'\}'}_2$ bubbles | Alcohol, carboxylic acid |
+| $\mathrm{'\{'}Br{'\}'}_2$ in $\mathrm{'\{'}CCl{'\}'}_4$ | Bromine in organic solvent | Decolourises (under UV) | Alkane (radical sub.) |
 
 ### Systematic Identification of an Unknown Organic Compound
 
@@ -638,48 +638,48 @@ The recommended approach:
 1. **Physical state and appearance:** Record colour, odour, state (solid/liquid).
 2. **Elemental analysis:** Test for N (sodium fusion), halogens (AgNO$_3$ after fusion), S (lead acetate).
 3. **Melting/boiling point:** Compare with literature values.
-4. **Spectroscopy:** IR, MS, NMR (${}^1\mathrm{H}$ and ${}^{13}\mathrm{C}$).
+4. **Spectroscopy:** IR, MS, NMR (${}^1\mathrm{'\{'}H{'\}'}$ and ${}^{13}\mathrm{'\{'}C{'\}'}$).
 5. **Chemical tests:** Use the table above for confirmation.
 6. **Functional group tests:** Tollens', Fehling's, 2,4-DNPH to distinguish aldehydes from ketones.
 
 ### Worked Example: Identifying an Unknown Compound
 
 An unknown liquid A has the following properties:
-- Boiling point: $118^\circ\mathrm{C}$
-- IR: broad peak at $3200$--$3600\,\mathrm{cm}^{-1}$, strong peak at $1050\,\mathrm{cm}^{-1}$; no peak above $1700\,\mathrm{cm}^{-1}$
-- ${}^1\mathrm{H}$ NMR: $\delta$ 1.2 (t, 3H), $\delta$ 3.7 (q, 2H), $\delta$ 2.6 (s, 1H, exchangeable with $\mathrm{D}_2\mathrm{O}$)
+- Boiling point: $118^\circ\mathrm{'\{'}C{'\}'}$
+- IR: broad peak at $3200$--$3600\,\mathrm{'\{'}cm{'\}'}^{-1}$, strong peak at $1050\,\mathrm{'\{'}cm{'\}'}^{-1}$; no peak above $1700\,\mathrm{'\{'}cm{'\}'}^{-1}$
+- ${}^1\mathrm{'\{'}H{'\}'}$ NMR: $\delta$ 1.2 (t, 3H), $\delta$ 3.7 (q, 2H), $\delta$ 2.6 (s, 1H, exchangeable with $\mathrm{'\{'}D{'\}'}_2\mathrm{'\{'}O{'\}'}$)
 - Mass spectrum: molecular ion at $m/z = 46$
 
 **Analysis:**
 
-- $M_r = 46$: possible formulas include $\mathrm{C}_2\mathrm{H}_6\mathrm{O}$ (ethanol), $\mathrm{NO}_2$ (nitrogen dioxide), $\mathrm{CH}_2\mathrm{O}_2$ (formic acid).
+- $M_r = 46$: possible formulas include $\mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_6\mathrm{'\{'}O{'\}'}$ (ethanol), $\mathrm{'\{'}NO{'\}'}_2$ (nitrogen dioxide), $\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}O{'\}'}_2$ (formic acid).
 - IR: broad O--H peak (3200--3600) and C--O peak (1050) confirm an alcohol. No C=O peak rules out carboxylic acids and aldehydes/ketones.
-- NMR: triplet (3H) + quartet (2H) = ethyl group. Singlet (1H, exchangeable) = $-\mathrm{OH}$. The quartet at 3.7 ppm (deshielded by oxygen) confirms $-\mathrm{CH}_2\mathrm{OH}$.
-- The compound is **ethanol** ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$).
+- NMR: triplet (3H) + quartet (2H) = ethyl group. Singlet (1H, exchangeable) = $-\mathrm{'\{'}OH{'\}'}$. The quartet at 3.7 ppm (deshielded by oxygen) confirms $-\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'}$.
+- The compound is **ethanol** ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'}$).
 
-Confirmation: positive test with $\mathrm{PCL}_5$ (white $\mathrm{HCl}$ fumes), positive test with sodium metal ($\mathrm{H}_2$ gas evolved), negative Tollens' test (not an aldehyde).
+Confirmation: positive test with $\mathrm{'\{'}PCL{'\}'}_5$ (white $\mathrm{'\{'}HCl{'\}'}$ fumes), positive test with sodium metal ($\mathrm{'\{'}H{'\}'}_2$ gas evolved), negative Tollens' test (not an aldehyde).
 
 ## Practice Problems
 
 <details>
 <summary>Problem 1</summary>
 
-Identify the compound with molecular formula $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$ whose ${}^1\mathrm{H}$ NMR spectrum shows: $\delta$ 1.2 (triplet, 3H), $\delta$ 2.3 (quartet, 2H), $\delta$ 3.6 (singlet, 3H), $\delta$ 11.0 (singlet, 1H). Its IR spectrum shows a broad absorption at $2500\mathrm{--}3300\,\mathrm{cm}^{-1}$ and a sharp peak at $1710\,\mathrm{cm}^{-1}$.
+Identify the compound with molecular formula $\mathrm{'\{'}C{'\}'}_4\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}_2$ whose ${}^1\mathrm{'\{'}H{'\}'}$ NMR spectrum shows: $\delta$ 1.2 (triplet, 3H), $\delta$ 2.3 (quartet, 2H), $\delta$ 3.6 (singlet, 3H), $\delta$ 11.0 (singlet, 1H). Its IR spectrum shows a broad absorption at $2500\mathrm{'\{'}--{'\}'}3300\,\mathrm{'\{'}cm{'\}'}^{-1}$ and a sharp peak at $1710\,\mathrm{'\{'}cm{'\}'}^{-1}$.
 
 **Solution:**
 
-The IR absorptions confirm a carboxylic acid ($\mathrm{O-H}$ broad, $\mathrm{C}=0$ at 1710). The ${}^1\mathrm{H}$ NMR signals:
+The IR absorptions confirm a carboxylic acid ($\mathrm{'\{'}O-H{'\}'}$ broad, $\mathrm{'\{'}C{'\}'}=0$ at 1710). The ${}^1\mathrm{'\{'}H{'\}'}$ NMR signals:
 
-- $\delta$ 1.2 (t, 3H): $-\mathrm{CH}_3$ adjacent to $-\mathrm{CH}_2-$
-- $\delta$ 2.3 (q, 2H): $-\mathrm{CH}_2\mathrm{COOH}$ (quartet implies adjacent to $\mathrm{CH}_3$)
-- $\delta$ 3.6 (s, 3H): $-\mathrm{OCH}_3$ (singlet = no adjacent protons)
-- $\delta$ 11.0 (s, 1H): $-\mathrm{COOH}$ proton
+- $\delta$ 1.2 (t, 3H): $-\mathrm{'\{'}CH{'\}'}_3$ adjacent to $-\mathrm{'\{'}CH{'\}'}_2-$
+- $\delta$ 2.3 (q, 2H): $-\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}COOH{'\}'}$ (quartet implies adjacent to $\mathrm{'\{'}CH{'\}'}_3$)
+- $\delta$ 3.6 (s, 3H): $-\mathrm{'\{'}OCH{'\}'}_3$ (singlet = no adjacent protons)
+- $\delta$ 11.0 (s, 1H): $-\mathrm{'\{'}COOH{'\}'}$ proton
 
-The compound is **methyl propanoate**? No -- the $-\mathrm{COOH}$ proton confirms a carboxylic acid, not an ester. The compound is **methoxypropanoic acid**? Let us re-examine.
+The compound is **methyl propanoate**? No -- the $-\mathrm{'\{'}COOH{'\}'}$ proton confirms a carboxylic acid, not an ester. The compound is **methoxypropanoic acid**? Let us re-examine.
 
-The quartet-triplet pattern indicates an ethyl group ($\mathrm{CH}_3\mathrm{CH}_2-$). The singlet at 3.6 (3H) is a $-\mathrm{OCH}_3$. The carboxylic acid proton at 11.0 confirms $-\mathrm{COOH}$.
+The quartet-triplet pattern indicates an ethyl group ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2-$). The singlet at 3.6 (3H) is a $-\mathrm{'\{'}OCH{'\}'}_3$. The carboxylic acid proton at 11.0 confirms $-\mathrm{'\{'}COOH{'\}'}$.
 
-The compound is **2-methoxypropanoic acid**? Actually, with $-\mathrm{CH}_3$, $-\mathrm{CH}_2-$, $-\mathrm{OCH}_3$, and $-\mathrm{COOH}$: that is $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_3$... The molecular formula is $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$, so the compound is **propanoic acid** ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$) with the singlet at 3.6 being an impurity or misread. Re-examining: for propanoic acid, we expect a triplet ($\mathrm{CH}_3$, 3H), quartet ($\mathrm{CH}_2$, 2H), and a broad singlet ($\mathrm{COOH}$, 1H). The singlet at 3.6 (3H) is inconsistent with $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$ as propanoic acid has only 7 hydrogens. The compound is **methyl propanoate** ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_3$) -- but then there is no carboxylic acid proton. This problem requires the student to identify the ester but note the discrepancy.
+The compound is **2-methoxypropanoic acid**? Actually, with $-\mathrm{'\{'}CH{'\}'}_3$, $-\mathrm{'\{'}CH{'\}'}_2-$, $-\mathrm{'\{'}OCH{'\}'}_3$, and $-\mathrm{'\{'}COOH{'\}'}$: that is $\mathrm{'\{'}C{'\}'}_4\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}_3$... The molecular formula is $\mathrm{'\{'}C{'\}'}_4\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}_2$, so the compound is **propanoic acid** ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}COOH{'\}'}$) with the singlet at 3.6 being an impurity or misread. Re-examining: for propanoic acid, we expect a triplet ($\mathrm{'\{'}CH{'\}'}_3$, 3H), quartet ($\mathrm{'\{'}CH{'\}'}_2$, 2H), and a broad singlet ($\mathrm{'\{'}COOH{'\}'}$, 1H). The singlet at 3.6 (3H) is inconsistent with $\mathrm{'\{'}C{'\}'}_4\mathrm{'\{'}H{'\}'}_8\mathrm{'\{'}O{'\}'}_2$ as propanoic acid has only 7 hydrogens. The compound is **methyl propanoate** ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}COOCH{'\}'}_3$) -- but then there is no carboxylic acid proton. This problem requires the student to identify the ester but note the discrepancy.
 
 </details>
 
@@ -692,7 +692,7 @@ Write the mechanism for the nucleophilic substitution of 1-bromobutane with aque
 
 The mechanism is **SN2** (primary halogenoalkane, strong nucleophile).
 
-The $\mathrm{OH}^-$ nucleophile attacks the carbon bearing the bromine from the opposite side to the C--Br bond (backside attack). A pentacoordinate transition state forms simultaneously with the departure of $\mathrm{Br}^-$.
+The $\mathrm{'\{'}OH{'\}'}^-$ nucleophile attacks the carbon bearing the bromine from the opposite side to the C--Br bond (backside attack). A pentacoordinate transition state forms simultaneously with the departure of $\mathrm{'\{'}Br{'\}'}^-$.
 
 If the carbon is chiral, the product has **inverted configuration** (Walden inversion). The stereochemistry at the carbon centre is inverted relative to the starting material. An enantiomerically pure reactant yields a single enantiomer of product with opposite configuration.
 
@@ -708,19 +708,19 @@ Starting from benzene, propose a synthesis of 4-nitrobenzoic acid. Explain the o
 **Step 1:** Friedel-Crafts alkylation to install a methyl group:
 
 $$
-\mathrm{C}_6\mathrm{H}_6 \xrightarrow{\mathrm{CH}_3\mathrm{Cl},\,\mathrm{AlCl}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3
+\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6 \xrightarrow{\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}Cl{'\}'},\,\mathrm{'\{'}AlCl{'\}'}_3} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}CH{'\}'}_3
 $$
 
 **Step 2:** Nitration (methyl is ortho/para directing, so a mixture of ortho and para is produced; para is the major product for steric reasons):
 
 $$
-\mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3 \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4} 4\text{-nitrotoluene (major)} + 2\text{-nitrotoluene (minor)}
+\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}CH{'\}'}_3 \xrightarrow{\mathrm{'\{'}HNO{'\}'}_3/\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4} 4\text{'\{'}-nitrotoluene (major){'\}'} + 2\text{'\{'}-nitrotoluene (minor){'\}'}
 $$
 
 **Step 3:** Oxidation of the methyl group to carboxylic acid:
 
 $$
-4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{CH}_3)(\mathrm{NO}_2) \xrightarrow{\mathrm{KMnO}_4,\,\Delta} 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{COOH})(\mathrm{NO}_2)
+4\text{'\{'}-{'\}'}\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_4(\mathrm{'\{'}CH{'\}'}_3)(\mathrm{'\{'}NO{'\}'}_2) \xrightarrow{\mathrm{'\{'}KMnO{'\}'}_4,\,\Delta} 4\text{'\{'}-{'\}'}\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_4(\mathrm{'\{'}COOH{'\}'})(\mathrm{'\{'}NO{'\}'}_2)
 $$
 
 The nitro group must be installed **before** oxidation because the carboxylic acid group is meta-directing and deactivating. If the carboxylic acid were installed first, nitration would give 3-nitrobenzoic acid, not the desired 4-nitro isomer. The methyl group is the correct directing group to achieve para substitution.
@@ -739,9 +739,9 @@ Distinguish between the following pairs of compounds using chemical tests only (
 
 (a) **Tollens' reagent:** Propanal gives a silver mirror; propanone does not. Alternatively, Fehling's solution: propanal gives a brick-red precipitate; propanone does not.
 
-(b) **$\mathrm{NaHCO}_3$:** Neither reacts (both are alcohols/phenols). **$\mathrm{NaOH}$:** Both dissolve (both are acidic enough). **$\mathrm{FeCl}_3$:** Phenol gives a violet/purple colouration; cyclohexanol does not. This is the standard test for phenols.
+(b) **$\mathrm{'\{'}NaHCO{'\}'}_3$:** Neither reacts (both are alcohols/phenols). **$\mathrm{'\{'}NaOH{'\}'}$:** Both dissolve (both are acidic enough). **$\mathrm{'\{'}FeCl{'\}'}_3$:** Phenol gives a violet/purple colouration; cyclohexanol does not. This is the standard test for phenols.
 
-(c) **Reactivity with $\mathrm{NaOH}(aq)$:** 2-bromobutane (secondary) reacts faster than 1-bromobutane (primary) via SN1/SN2. However, the most reliable distinction is **reactivity with alcoholic $\mathrm{AgNO}_3$ in ethanol:** 2-bromobutane (more substituted, weaker C--Br bond) gives a precipitate faster. Alternatively, classify using the Lucas test after converting to the corresponding alcohol.
+(c) **Reactivity with $\mathrm{'\{'}NaOH{'\}'}(aq)$:** 2-bromobutane (secondary) reacts faster than 1-bromobutane (primary) via SN1/SN2. However, the most reliable distinction is **reactivity with alcoholic $\mathrm{'\{'}AgNO{'\}'}_3$ in ethanol:** 2-bromobutane (more substituted, weaker C--Br bond) gives a precipitate faster. Alternatively, classify using the Lucas test after converting to the corresponding alcohol.
 
 </details>
 

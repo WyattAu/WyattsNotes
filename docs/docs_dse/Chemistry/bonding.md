@@ -52,11 +52,11 @@ Write the formula of aluminium oxide.
 <details>
 <summary>Solution</summary>
 
-Aluminium (Group 13): $\mathrm{Al} \to \mathrm{Al}^{3+} + 3e^-$
+Aluminium (Group 13): $\mathrm{'\{'}Al{'\}'} \to \mathrm{'\{'}Al{'\}'}^{3+} + 3e^-$
 
-Oxygen (Group 16): $\mathrm{O} + 2e^- \to \mathrm{O}^{2-}$
+Oxygen (Group 16): $\mathrm{'\{'}O{'\}'} + 2e^- \to \mathrm{'\{'}O{'\}'}^{2-}$
 
-To balance charges: $2 \times (+3) = 3 \times (-2)$. Formula: $\mathrm{Al}_2\mathrm{O}_3$
+To balance charges: $2 \times (+3) = 3 \times (-2)$. Formula: $\mathrm{'\{'}Al{'\}'}_2\mathrm{'\{'}O{'\}'}_3$
 
 </details>
 
@@ -75,8 +75,8 @@ atoms.
 | ------------------- | ---------------------------- | ---------------------------- |
 | Single              | One shared pair              | H-H                          |
 | Double              | Two shared pairs             | O=O                          |
-| Triple              | Three shared pairs           | $\mathrm{N}\equiv\mathrm{N}$ |
-| Dative (coordinate) | Both electrons from one atom | $\mathrm{NH}_4^+$            |
+| Triple              | Three shared pairs           | $\mathrm{'\{'}N{'\}'}\equiv\mathrm{'\{'}N{'\}'}$ |
+| Dative (coordinate) | Both electrons from one atom | $\mathrm{'\{'}NH{'\}'}_4^+$            |
 
 ### Bond Polarity
 
@@ -89,18 +89,18 @@ The Valence Shell Electron Pair Repulsion theory predicts molecular shapes:
 
 | Electron Pairs    | Shape              | Bond Angle        | Example                            |
 | ----------------- | ------------------ | ----------------- | ---------------------------------- |
-| 2 bonding         | Linear             | $180^\circ$       | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$ |
-| 3 bonding         | Trigonal planar    | $120^\circ$       | $\mathrm{BF}_3$                    |
-| 2 bonding, 1 lone | Bent               | $\lt 120^\circ$   | $\mathrm{SO}_2$                    |
-| 4 bonding         | Tetrahedral        | $109.5^\circ$     | $\mathrm{CH}_4$                    |
-| 3 bonding, 1 lone | Trigonal pyramidal | $\lt 109.5^\circ$ | $\mathrm{NH}_3$                    |
-| 2 bonding, 2 lone | Bent               | $\lt 109.5^\circ$ | $\mathrm{H}_2\mathrm{O}$           |
+| 2 bonding         | Linear             | $180^\circ$       | $\mathrm{'\{'}BeCl{'\}'}_2$, $\mathrm{'\{'}CO{'\}'}_2$ |
+| 3 bonding         | Trigonal planar    | $120^\circ$       | $\mathrm{'\{'}BF{'\}'}_3$                    |
+| 2 bonding, 1 lone | Bent               | $\lt 120^\circ$   | $\mathrm{'\{'}SO{'\}'}_2$                    |
+| 4 bonding         | Tetrahedral        | $109.5^\circ$     | $\mathrm{'\{'}CH{'\}'}_4$                    |
+| 3 bonding, 1 lone | Trigonal pyramidal | $\lt 109.5^\circ$ | $\mathrm{'\{'}NH{'\}'}_3$                    |
+| 2 bonding, 2 lone | Bent               | $\lt 109.5^\circ$ | $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$           |
 
 Lone pairs exert greater repulsion than bonding pairs, reducing bond angles below the ideal values.
 
 ### Worked Example 2
 
-Predict the shape and bond angle of $\mathrm{H}_2\mathrm{O}$.
+Predict the shape and bond angle of $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$.
 
 <details>
 <summary>Solution</summary>
@@ -168,7 +168,7 @@ A special strong dipole-dipole interaction occurring when:
 1. Hydrogen is covalently bonded to N, O, or F
 2. The H atom interacts with a lone pair on another N, O, or F atom
 
-Examples: $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, HF, DNA base pairing.
+Examples: $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$, $\mathrm{'\{'}NH{'\}'}_3$, HF, DNA base pairing.
 
 ### Relative Strengths
 
@@ -176,14 +176,14 @@ Hydrogen bonding $\gt$ dipole-dipole $\gt$ van der Waals forces $\lt\lt$ covalen
 
 ### Worked Example 3
 
-Explain why $\mathrm{H}_2\mathrm{O}$ has a higher boiling point than $\mathrm{H}_2\mathrm{S}$.
+Explain why $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ has a higher boiling point than $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}S{'\}'}$.
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{H}_2\mathrm{O}$ can form hydrogen bonds (H bonded to O), while $\mathrm{H}_2\mathrm{S}$
-cannot (S is not electronegative enough). Although $\mathrm{H}_2\mathrm{S}$ has stronger van der
-Waals forces (larger molecule), hydrogen bonding in $\mathrm{H}_2\mathrm{O}$ is much stronger,
+$\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ can form hydrogen bonds (H bonded to O), while $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}S{'\}'}$
+cannot (S is not electronegative enough). Although $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}S{'\}'}$ has stronger van der
+Waals forces (larger molecule), hydrogen bonding in $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ is much stronger,
 resulting in a higher boiling point.
 
 </details>
@@ -194,7 +194,7 @@ resulting in a higher boiling point.
 
 ### Simple Molecular
 
-Examples: $\mathrm{H}_2\mathrm{O}$, $\mathrm{CO}_2$, $\mathrm{I}_2$, $\mathrm{CH}_4$
+Examples: $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$, $\mathrm{'\{'}CO{'\}'}_2$, $\mathrm{'\{'}I{'\}'}_2$, $\mathrm{'\{'}CH{'\}'}_4$
 
 - Weak intermolecular forces between molecules
 - Low melting and boiling points
@@ -207,11 +207,11 @@ Examples: $\mathrm{H}_2\mathrm{O}$, $\mathrm{CO}_2$, $\mathrm{I}_2$, $\mathrm{CH
 | ---------------- | -------------- | ------------------------------------- | -------------------------------------------------- |
 | Diamond          | Tetrahedral 3D | Each C bonded to 4 others ($sp^3$)    | Hardest natural substance, insulator, very high MP |
 | Graphite         | Layered sheets | Each C bonded to 3 others ($sp^2$)    | Soft, conductor (delocalised electrons), lubricant |
-| $\mathrm{SiO}_2$ | 3D network     | Each Si bonded to 4 O, each O to 2 Si | Very high MP, insulator                            |
+| $\mathrm{'\{'}SiO{'\}'}_2$ | 3D network     | Each Si bonded to 4 O, each O to 2 Si | Very high MP, insulator                            |
 
 ### Giant Ionic
 
-Examples: $\mathrm{NaCl}$, $\mathrm{MgO}$, $\mathrm{CaF}_2$
+Examples: $\mathrm{'\{'}NaCl{'\}'}$, $\mathrm{'\{'}MgO{'\}'}$, $\mathrm{'\{'}CaF{'\}'}_2$
 
 - Strong electrostatic forces throughout the lattice
 - High melting and boiling points
@@ -263,7 +263,7 @@ allowing them to slide over each other.
 
 ## Problem Set
 
-**Problem 1:** Predict the shape and bond angle of $\mathrm{SF}_4$.
+**Problem 1:** Predict the shape and bond angle of $\mathrm{'\{'}SF{'\}'}_4$.
 
 *If you get this wrong, revise: VSEPR Theory*
 
@@ -279,39 +279,39 @@ lone pair repulsion.
 
 </details>
 
-**Problem 2:** Explain why the boiling point of $\mathrm{HF}$ is higher than that of
-$\mathrm{HCl}$, even though $\mathrm{HCl}$ has a larger molecular mass.
+**Problem 2:** Explain why the boiling point of $\mathrm{'\{'}HF{'\}'}$ is higher than that of
+$\mathrm{'\{'}HCl{'\}'}$, even though $\mathrm{'\{'}HCl{'\}'}$ has a larger molecular mass.
 
 *If you get this wrong, revise: Hydrogen Bonding*
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{HF}$ forms hydrogen bonds between molecules (H bonded to F, which is highly
-electronegative). $\mathrm{HCl}$ has only dipole-dipole interactions and van der Waals forces.
+$\mathrm{'\{'}HF{'\}'}$ forms hydrogen bonds between molecules (H bonded to F, which is highly
+electronegative). $\mathrm{'\{'}HCl{'\}'}$ has only dipole-dipole interactions and van der Waals forces.
 Hydrogen bonding is much stronger than these, so more energy is needed to overcome the
-intermolecular forces in $\mathrm{HF}$.
+intermolecular forces in $\mathrm{'\{'}HF{'\}'}$.
 
 </details>
 
-**Problem 3:** Why is $\mathrm{SiO}_2$ a solid with a very high melting point, while
-$\mathrm{CO}_2$ is a gas at room temperature?
+**Problem 3:** Why is $\mathrm{'\{'}SiO{'\}'}_2$ a solid with a very high melting point, while
+$\mathrm{'\{'}CO{'\}'}_2$ is a gas at room temperature?
 
 *If you get this wrong, revise: Structures and Properties — Giant Covalent vs Simple Molecular*
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{SiO}_2$ has a giant covalent structure: each Si atom is covalently bonded to four O atoms
+$\mathrm{'\{'}SiO{'\}'}_2$ has a giant covalent structure: each Si atom is covalently bonded to four O atoms
 in a continuous 3D network. Breaking this requires breaking many strong covalent bonds.
 
-$\mathrm{CO}_2$ consists of simple discrete molecules with strong covalent bonds within each
+$\mathrm{'\{'}CO{'\}'}_2$ consists of simple discrete molecules with strong covalent bonds within each
 molecule but only weak van der Waals forces between molecules. These weak intermolecular forces are
-easily overcome, so $\mathrm{CO}_2$ is a gas at room temperature.
+easily overcome, so $\mathrm{'\{'}CO{'\}'}_2$ is a gas at room temperature.
 
 </details>
 
-**Problem 4:** Draw the dot-and-cross diagram for the ammonium ion $\mathrm{NH}_4^+$ and identify
+**Problem 4:** Draw the dot-and-cross diagram for the ammonium ion $\mathrm{'\{'}NH{'\}'}_4^+$ and identify
 the dative bond.
 
 *If you get this wrong, revise: Covalent Bonding — Dative Bonds*
@@ -320,9 +320,9 @@ the dative bond.
 <summary>Solution</summary>
 
 Nitrogen has 5 valence electrons and forms three normal covalent bonds with three hydrogen atoms (3
-shared pairs). The fourth hydrogen ion ($\mathrm{H}^+$, which has no electrons) forms a dative
+shared pairs). The fourth hydrogen ion ($\mathrm{'\{'}H{'\}'}^+$, which has no electrons) forms a dative
 (coordinate) bond with the lone pair on nitrogen. The nitrogen now has four bonds and a positive
-charge. The dative bond is the $\mathrm{N\to H}$ bond where both electrons come from nitrogen.
+charge. The dative bond is the $\mathrm{'\{'}N\to H{'\}'}$ bond where both electrons come from nitrogen.
 
 </details>
 
@@ -340,7 +340,7 @@ prevent the iron atom layers from sliding, making steel harder and stronger than
 
 </details>
 
-**Problem 6:** Predict the shape and bond angle of the $\mathrm{ClF}_3$ molecule.
+**Problem 6:** Predict the shape and bond angle of the $\mathrm{'\{'}ClF{'\}'}_3$ molecule.
 
 *If you get this wrong, revise: VSEPR Theory*
 
@@ -356,32 +356,32 @@ by lone pair repulsion.
 
 </details>
 
-**Problem 7:** Explain why the melting point of sodium chloride ($801^\circ\mathrm{C}$) is much
-higher than that of iodine ($114^\circ\mathrm{C}$).
+**Problem 7:** Explain why the melting point of sodium chloride ($801^\circ\mathrm{'\{'}C{'\}'}$) is much
+higher than that of iodine ($114^\circ\mathrm{'\{'}C{'\}'}$).
 
 *If you get this wrong, revise: Ionic Bonding vs Simple Molecular Structures*
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{NaCl}$ has a giant ionic lattice with strong electrostatic forces between $\mathrm{Na^+}$
-and $\mathrm{Cl^-}$ ions throughout the entire structure. A large amount of energy is needed to
+$\mathrm{'\{'}NaCl{'\}'}$ has a giant ionic lattice with strong electrostatic forces between $\mathrm{'\{'}Na^+{'\}'}$
+and $\mathrm{'\{'}Cl^-{'\}'}$ ions throughout the entire structure. A large amount of energy is needed to
 overcome these forces.
 
-Iodine ($\mathrm{I_2}$) has a simple molecular structure. Although the covalent bonds within each
-$\mathrm{I_2}$ molecule are strong, only weak van der Waals forces act between molecules. These
+Iodine ($\mathrm{'\{'}I_2{'\}'}$) has a simple molecular structure. Although the covalent bonds within each
+$\mathrm{'\{'}I_2{'\}'}$ molecule are strong, only weak van der Waals forces act between molecules. These
 are easily overcome, giving iodine a much lower melting point.
 
 </details>
 
-**Problem 8:** State and explain whether $\mathrm{BF}_3$ is a polar or non-polar molecule.
+**Problem 8:** State and explain whether $\mathrm{'\{'}BF{'\}'}_3$ is a polar or non-polar molecule.
 
 *If you get this wrong, revise: Bond Polarity and Molecular Polarity*
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{BF}_3$ is a **non-polar** molecule. Each $\mathrm{B - F}$ bond is polar (F is more
+$\mathrm{'\{'}BF{'\}'}_3$ is a **non-polar** molecule. Each $\mathrm{'\{'}B - F{'\}'}$ bond is polar (F is more
 electronegative than B). However, the molecule has a trigonal planar geometry with bond angles of
 $120^\circ$. The three bond dipoles are arranged symmetrically and cancel each other out
 completely, resulting in a net dipole moment of zero.
@@ -406,20 +406,20 @@ electricity and is an insulator.
 
 </details>
 
-**Problem 10:** Explain why ethanol ($\mathrm{C_2H_5OH}$, b.p. $78^\circ\mathrm{C}$) has a
-higher boiling point than dimethyl ether ($\mathrm{CH_3OCH_3}$, b.p. $-24^\circ\mathrm{C}$),
-even though both have the same molecular formula $\mathrm{C_2H_6O}$.
+**Problem 10:** Explain why ethanol ($\mathrm{'\{'}C_2H_5OH{'\}'}$, b.p. $78^\circ\mathrm{'\{'}C{'\}'}$) has a
+higher boiling point than dimethyl ether ($\mathrm{'\{'}CH_3OCH_3{'\}'}$, b.p. $-24^\circ\mathrm{'\{'}C{'\}'}$),
+even though both have the same molecular formula $\mathrm{'\{'}C_2H_6O{'\}'}$.
 
 *If you get this wrong, revise: Intermolecular Forces — Hydrogen Bonding*
 
 <details>
 <summary>Solution</summary>
 
-Both molecules have the same molar mass ($46 \mathrm{ g/mol}$) and similar van der Waals forces.
-However, ethanol can form hydrogen bonds because it has an $-\mathrm{OH}$ group: the hydrogen of
-the $-\mathrm{OH}$ interacts with lone pairs on the oxygen of neighbouring ethanol molecules.
+Both molecules have the same molar mass ($46 \mathrm{'\{'} g/mol{'\}'}$) and similar van der Waals forces.
+However, ethanol can form hydrogen bonds because it has an $-\mathrm{'\{'}OH{'\}'}$ group: the hydrogen of
+the $-\mathrm{'\{'}OH{'\}'}$ interacts with lone pairs on the oxygen of neighbouring ethanol molecules.
 
-Dimethyl ether has no $-\mathrm{OH}$ group (the oxygen is bonded to two carbons), so it cannot
+Dimethyl ether has no $-\mathrm{'\{'}OH{'\}'}$ group (the oxygen is bonded to two carbons), so it cannot
 form hydrogen bonds. It only has weaker dipole-dipole interactions and van der Waals forces. The
 hydrogen bonding in ethanol requires significantly more energy to overcome, resulting in a much
 higher boiling point.

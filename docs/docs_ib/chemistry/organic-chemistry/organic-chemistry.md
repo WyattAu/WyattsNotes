@@ -108,13 +108,13 @@ methyl propanoate, ethyl ethanoate, etc.
 **Complete combustion** (excess oxygen):
 
 $$
-\mathrm{C}_n\mathrm{H}_{2n+2} + \frac{3n+1}{2}\mathrm{O}_2 \to n\mathrm{CO}_2 + (n+1)\mathrm{H}_2\mathrm{O}
+\mathrm{'\{'}C{'\}'}_n\mathrm{'\{'}H{'\}'}_{2n+2} + \frac{3n+1}{2}\mathrm{'\{'}O{'\}'}_2 \to n\mathrm{'\{'}CO{'\}'}_2 + (n+1)\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
 $$
 
 **Incomplete combustion** (limited oxygen):
 
 $$
-\mathrm{C}_n\mathrm{H}_{2n+2} + \frac{2n+1}{2}\mathrm{O}_2 \to n\mathrm{CO} + (n+1)\mathrm{H}_2\mathrm{O}
+\mathrm{'\{'}C{'\}'}_n\mathrm{'\{'}H{'\}'}_{2n+2} + \frac{2n+1}{2}\mathrm{'\{'}O{'\}'}_2 \to n\mathrm{'\{'}CO{'\}'} + (n+1)\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
 $$
 
 Or: produces carbon (soot) and water.
@@ -122,21 +122,21 @@ Or: produces carbon (soot) and water.
 #### Halogenation (Free Radical Substitution)
 
 $$
-\mathrm{CH}_4 + \mathrm{Cl}_2 \xrightarrow{\mathrm{UV light}} \mathrm{CH}_3\mathrm{Cl} + \mathrm{HCl}
+\mathrm{'\{'}CH{'\}'}_4 + \mathrm{'\{'}Cl{'\}'}_2 \xrightarrow{\mathrm{'\{'}UV light{'\}'}} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}Cl{'\}'} + \mathrm{'\{'}HCl{'\}'}
 $$
 
 **Mechanism** (free radical substitution):
 
-1. **Initiation**: Cl$_2 \xrightarrow{\mathrm{UV}} 2\mathrm{Cl}^\bullet$ (homolytic fission)
+1. **Initiation**: Cl$_2 \xrightarrow{\mathrm{'\{'}UV{'\}'}} 2\mathrm{'\{'}Cl{'\}'}^\bullet$ (homolytic fission)
 
 2. **Propagation**:
-   - $\mathrm{Cl}^\bullet + \mathrm{CH}_4 \to \mathrm{HCl} + \mathrm{CH}_3^\bullet$
-   - $\mathrm{CH}_3^\bullet + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{Cl} + \mathrm{Cl}^\bullet$
+   - $\mathrm{'\{'}Cl{'\}'}^\bullet + \mathrm{'\{'}CH{'\}'}_4 \to \mathrm{'\{'}HCl{'\}'} + \mathrm{'\{'}CH{'\}'}_3^\bullet$
+   - $\mathrm{'\{'}CH{'\}'}_3^\bullet + \mathrm{'\{'}Cl{'\}'}_2 \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}Cl{'\}'} + \mathrm{'\{'}Cl{'\}'}^\bullet$
 
 3. **Termination**: radicals combine in various ways:
-   - $\mathrm{Cl}^\bullet + \mathrm{Cl}^\bullet \to \mathrm{Cl}_2$
-   - $\mathrm{CH}_3^\bullet + \mathrm{CH}_3^\bullet \to \mathrm{C}_2\mathrm{H}_6$
-   - $\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$
+   - $\mathrm{'\{'}Cl{'\}'}^\bullet + \mathrm{'\{'}Cl{'\}'}^\bullet \to \mathrm{'\{'}Cl{'\}'}_2$
+   - $\mathrm{'\{'}CH{'\}'}_3^\bullet + \mathrm{'\{'}CH{'\}'}_3^\bullet \to \mathrm{'\{'}C{'\}'}_2\mathrm{'\{'}H{'\}'}_6$
+   - $\mathrm{'\{'}CH{'\}'}_3^\bullet + \mathrm{'\{'}Cl{'\}'}^\bullet \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}Cl{'\}'}$
 
 ### Cracking
 
@@ -173,13 +173,13 @@ $\pi$ electron cloud.
 **Hydrogenation**:
 
 $$
-\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{H}_2 \xrightarrow{\mathrm{Ni catalyst}} \mathrm{CH}_3\mathrm{CH}_3
+\mathrm{'\{'}CH{'\}'}_2=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}H{'\}'}_2 \xrightarrow{\mathrm{'\{'}Ni catalyst{'\}'}} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_3
 $$
 
 **Halogenation**:
 
 $$
-\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{Br}_2 \to \mathrm{CH}_2\mathrm{BrCH}_2\mathrm{Br}
+\mathrm{'\{'}CH{'\}'}_2=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}Br{'\}'}_2 \to \mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}BrCH{'\}'}_2\mathrm{'\{'}Br{'\}'}
 $$
 
 The bromine water is decolourised — this is the test for unsaturation.
@@ -187,13 +187,13 @@ The bromine water is decolourised — this is the test for unsaturation.
 **Hydration** (with acid catalyst):
 
 $$
-\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{H}_2\mathrm{O} \xrightarrow{\mathrm{H}_3\mathrm{PO}_4} \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}
+\mathrm{'\{'}CH{'\}'}_2=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \xrightarrow{\mathrm{'\{'}H{'\}'}_3\mathrm{'\{'}PO{'\}'}_4} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'}
 $$
 
 **Hydrohalogenation**:
 
 $$
-\mathrm{CH}_2=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Br}
+\mathrm{'\{'}CH{'\}'}_2=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}HBr{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}Br{'\}'}
 $$
 
 ### Markovnikov's Rule
@@ -202,7 +202,7 @@ When HX adds to an unsymmetrical alkene, the hydrogen adds to the carbon with th
 hydrogen atoms (the more substituted carbon gets the halogen).
 
 $$
-\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CHBrCH}_3 \mathrm{ (major product)}
+\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}HBr{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CHBrCH{'\}'}_3 \mathrm{'\{'} (major product){'\}'}
 $$
 
 ### Polymerisation
@@ -210,7 +210,7 @@ $$
 Alkenes undergo addition polymerisation:
 
 $$
-n\mathrm{CH}_2=\mathrm{CHCl} \to -(\mathrm{CH}_2\mathrm{CHCl})_n-
+n\mathrm{'\{'}CH{'\}'}_2=\mathrm{'\{'}CHCl{'\}'} \to -(\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CHCl{'\}'})_n-
 $$
 
 Poly(chloroethene) — PVC.
@@ -254,26 +254,26 @@ Benzene undergoes electrophilic substitution (not addition) to preserve the arom
 #### Nitration
 
 $$
-\mathrm{C}_6\mathrm{H}_6 + \mathrm{HNO}_3 \xrightarrow{\mathrm{H}_2\mathrm{SO}_4, 50\degree\mathrm{C}} \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 + \mathrm{H}_2\mathrm{O}
+\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6 + \mathrm{'\{'}HNO{'\}'}_3 \xrightarrow{\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4, 50\degree\mathrm{'\{'}C{'\}'}} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}NO{'\}'}_2 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
 $$
 
-**Electrophile**: $\mathrm{NO}_2^+$ (nitronium ion).
+**Electrophile**: $\mathrm{'\{'}NO{'\}'}_2^+$ (nitronium ion).
 
 #### Halogenation
 
 $$
-\mathrm{C}_6\mathrm{H}_6 + \mathrm{Br}_2 \xrightarrow{\mathrm{FeBr}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{Br} + \mathrm{HBr}
+\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6 + \mathrm{'\{'}Br{'\}'}_2 \xrightarrow{\mathrm{'\{'}FeBr{'\}'}_3} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}Br{'\}'} + \mathrm{'\{'}HBr{'\}'}
 $$
 
-**Electrophile**: $\mathrm{Br}^+$ (generated by FeBr$_3$).
+**Electrophile**: $\mathrm{'\{'}Br{'\}'}^+$ (generated by FeBr$_3$).
 
 #### Friedel-Crafts Alkylation
 
 $$
-\mathrm{C}_6\mathrm{H}_6 + \mathrm{RCl} \xrightarrow{\mathrm{AlCl}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{R} + \mathrm{HCl}
+\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_6 + \mathrm{'\{'}RCl{'\}'} \xrightarrow{\mathrm{'\{'}AlCl{'\}'}_3} \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_5\mathrm{'\{'}R{'\}'} + \mathrm{'\{'}HCl{'\}'}
 $$
 
-**Electrophile**: $\mathrm{R}^+$ (carbocation).
+**Electrophile**: $\mathrm{'\{'}R{'\}'}^+$ (carbocation).
 
 ---
 
@@ -340,7 +340,7 @@ Tertiary alcohol $\to$ Not easily oxidised
 Formed by condensation (esterification) of a carboxylic acid and an alcohol:
 
 $$
-\mathrm{RCOOH} + \mathrm{R'OH} \rightleftharpoons \mathrm{RCOOR}' + \mathrm{H}_2\mathrm{O}
+\mathrm{'\{'}RCOOH{'\}'} + \mathrm{'\{'}R'OH{'\}'} \rightleftharpoons \mathrm{'\{'}RCOOR{'\}'}' + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
 $$
 
 Catalysed by concentrated H$_2$SO$_4$.
@@ -367,7 +367,7 @@ Catalysed by concentrated H$_2$SO$_4$.
 - Rate depends on both substrate and nucleophile concentration.
 
 $$
-\mathrm{Rate} = k[\mathrm{R--X}][\mathrm{Nu}^-]
+\mathrm{'\{'}Rate{'\}'} = k[\mathrm{'\{'}R--X{'\}'}][\mathrm{'\{'}Nu{'\}'}^-]
 $$
 
 - Favoured by: primary substrates, strong nucleophiles, polar aprotic solvents.
@@ -386,7 +386,7 @@ $$
 - Rate depends only on substrate concentration.
 
 $$
-\mathrm{Rate} = k[\mathrm{R--X}]
+\mathrm{'\{'}Rate{'\}'} = k[\mathrm{'\{'}R--X{'\}'}]
 $$
 
 - **Step 1** (slow, rate-determining): R--X $\to$ R$^+$ + X$^-$ (carbocation formation).
@@ -397,7 +397,7 @@ $$
 | Feature              | $S_N1$                         | $S_N2$                               |
 | -------------------- | ------------------------------ | ------------------------------------ |
 | Steps                | Two (carbocation intermediate) | One (concerted)                      |
-| Rate law             | Rate $= k[\mathrm{RX}]$        | Rate $= k[\mathrm{RX}][\mathrm{Nu}]$ |
+| Rate law             | Rate $= k[\mathrm{'\{'}RX{'\}'}]$        | Rate $= k[\mathrm{'\{'}RX{'\}'}][\mathrm{'\{'}Nu{'\}'}]$ |
 | Stereochemistry      | Racemisation                   | Inversion                            |
 | Substrate preference | Tertiary                       | Primary                              |
 | Carbocation          | Yes                            | No                                   |
@@ -413,7 +413,7 @@ Elimination reactions remove HX to form an alkene.
 - Follows Zaitsev's rule: the more substituted alkene is the major product.
 
 $$
-\mathrm{Rate} = k[\mathrm{R--X}][\mathrm{base}]
+\mathrm{'\{'}Rate{'\}'} = k[\mathrm{'\{'}R--X{'\}'}][\mathrm{'\{'}base{'\}'}]
 $$
 
 #### $E1$ (Unimolecular)
@@ -423,7 +423,7 @@ $$
 - Step 2: base removes a proton.
 
 $$
-\mathrm{Rate} = k[\mathrm{R--X}]
+\mathrm{'\{'}Rate{'\}'} = k[\mathrm{'\{'}R--X{'\}'}]
 $$
 
 ### Factors Affecting $S_N$ vs $E$
@@ -462,7 +462,7 @@ Formed when monomers join with the elimination of a small molecule (usually wate
 Monomer: dicarboxylic acid + diol.
 
 $$
-n\mathrm{HOOC--R--COOH} + n\mathrm{HO--R'--OH} \to -(\mathrm{OC--R--COO--R'O})_n- + 2n\mathrm{H}_2\mathrm{O}
+n\mathrm{'\{'}HOOC--R--COOH{'\}'} + n\mathrm{'\{'}HO--R'--OH{'\}'} \to -(\mathrm{'\{'}OC--R--COO--R'O{'\}'})_n- + 2n\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
 $$
 
 Example: PET (polyethylene terephthalate) — used in fibres and bottles.
@@ -472,7 +472,7 @@ Example: PET (polyethylene terephthalate) — used in fibres and bottles.
 Monomer: dicarboxylic acid + diamine.
 
 $$
-n\mathrm{HOOC--R--COOH} + n\mathrm{H}_2\mathrm{N--R'--NH}_2 \to -(\mathrm{OC--R--CONH--R'--NH})_n- + 2n\mathrm{H}_2\mathrm{O}
+n\mathrm{'\{'}HOOC--R--COOH{'\}'} + n\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}N--R'--NH{'\}'}_2 \to -(\mathrm{'\{'}OC--R--CONH--R'--NH{'\}'})_n- + 2n\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
 $$
 
 #### Proteins
@@ -548,7 +548,7 @@ By Markovnikov's rule, H adds to the less substituted carbon (C1) and Br adds to
 substituted carbon (C2):
 
 $$
-\mathrm{CH}_2=\mathrm{C}(\mathrm{CH}_3)_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CBr}(\mathrm{CH}_3)_2
+\mathrm{'\{'}CH{'\}'}_2=\mathrm{'\{'}C{'\}'}(\mathrm{'\{'}CH{'\}'}_3)_2 + \mathrm{'\{'}HBr{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CBr{'\}'}(\mathrm{'\{'}CH{'\}'}_3)_2
 $$
 
 Product: 2-bromo-2-methylpropane.
@@ -560,12 +560,12 @@ Product: 2-bromo-2-methylpropane.
 **Generation of electrophile**:
 
 $$
-\mathrm{HNO}_3 + \mathrm{H}_2\mathrm{SO}_4 \to \mathrm{NO}_2^+ + \mathrm{HSO}_4^- + \mathrm{H}_2\mathrm{O}
+\mathrm{'\{'}HNO{'\}'}_3 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4 \to \mathrm{'\{'}NO{'\}'}_2^+ + \mathrm{'\{'}HSO{'\}'}_4^- + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}
 $$
 
 **Mechanism**:
 
-1. The electron-rich benzene ring attacks the nitronium ion ($\mathrm{NO}_2^+$), forming a
+1. The electron-rich benzene ring attacks the nitronium ion ($\mathrm{'\{'}NO{'\}'}_2^+$), forming a
    delocalised carbocation intermediate.
 
 2. The intermediate loses a proton to HSO$_4^-$, regenerating the aromatic system and forming
@@ -678,7 +678,7 @@ Identifies functional groups by absorption of IR radiation.
 
 ### Oxidation of Primary Alcohols: Detailed
 
-Primary alcohol $\xrightarrow{\mathrm{[O]} }$ Aldehyde $\xrightarrow{\mathrm{[O]} }$ Carboxylic acid
+Primary alcohol $\xrightarrow{\mathrm{'\{'}[O]{'\}'} }$ Aldehyde $\xrightarrow{\mathrm{'\{'}[O]{'\}'} }$ Carboxylic acid
 
 The aldehyde can be protected from over-oxidation by:
 
@@ -688,7 +688,7 @@ The aldehyde can be protected from over-oxidation by:
 ### Reduction of Carboxylic Acids
 
 $$
-\mathrm{RCOOH} \xrightarrow{\mathrm{LiAlH}_4} \mathrm{RCH}_2\mathrm{OH}
+\mathrm{'\{'}RCOOH{'\}'} \xrightarrow{\mathrm{'\{'}LiAlH{'\}'}_4} \mathrm{'\{'}RCH{'\}'}_2\mathrm{'\{'}OH{'\}'}
 $$
 
 LiAlH$_4$ is more powerful than NaBH$_4$ (which does not reduce carboxylic acids).
@@ -698,7 +698,7 @@ LiAlH$_4$ is more powerful than NaBH$_4$ (which does not reduce carboxylic acids
 #### With HCN
 
 $$
-\mathrm{RCHO} + \mathrm{HCN} \to \mathrm{RCH(OH)CN}
+\mathrm{'\{'}RCHO{'\}'} + \mathrm{'\{'}HCN{'\}'} \to \mathrm{'\{'}RCH(OH)CN{'\}'}
 $$
 
 Forms a hydroxynitrile (cyanohydrin). Creates a new chiral centre.
@@ -706,7 +706,7 @@ Forms a hydroxynitrile (cyanohydrin). Creates a new chiral centre.
 #### With Grignard Reagents
 
 $$
-\mathrm{RCHO} + \mathrm{R'MgBr} \to \mathrm{RCH(OMgBr)R'} \xrightarrow{\mathrm{H}_3\mathrm{O}^+} \mathrm{RCH(OH)R'}
+\mathrm{'\{'}RCHO{'\}'} + \mathrm{'\{'}R'MgBr{'\}'} \to \mathrm{'\{'}RCH(OMgBr)R'{'\}'} \xrightarrow{\mathrm{'\{'}H{'\}'}_3\mathrm{'\{'}O{'\}'}^+} \mathrm{'\{'}RCH(OH)R'{'\}'}
 $$
 
 Forms secondary alcohols from aldehydes, tertiary alcohols from ketones.
@@ -714,7 +714,7 @@ Forms secondary alcohols from aldehydes, tertiary alcohols from ketones.
 ### Hydrolysis of Esters
 
 $$
-\mathrm{RCOOR}' + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{RCOOH} + \mathrm{R'OH}
+\mathrm{'\{'}RCOOR{'\}'}' + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \rightleftharpoons \mathrm{'\{'}RCOOH{'\}'} + \mathrm{'\{'}R'OH{'\}'}
 $$
 
 Acid-catalysed (reversible) or base-catalysed (irreversible, saponification).
@@ -724,7 +724,7 @@ Acid-catalysed (reversible) or base-catalysed (irreversible, saponification).
 Base-catalysed hydrolysis of fats produces soap (sodium salts of fatty acids):
 
 $$
-\mathrm{Fat} + \mathrm{NaOH} \to \mathrm{glycerol} + \mathrm{soap}
+\mathrm{'\{'}Fat{'\}'} + \mathrm{'\{'}NaOH{'\}'} \to \mathrm{'\{'}glycerol{'\}'} + \mathrm{'\{'}soap{'\}'}
 $$
 
 ---
@@ -813,7 +813,7 @@ pathway proceeds through the more stable carbocation intermediate.
 <summary>Question 1: IUPAC Nomenclature</summary>
 
 Name the following compound:
-$\mathrm{CH}_3\mathrm{CH}(\mathrm{CH}_3)\mathrm{CH}_2\mathrm{CH}(\mathrm{Cl})\mathrm{CH}_2\mathrm{CH}_3$.
+$\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}CH{'\}'}_3)\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}Cl{'\}'})\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_3$.
 
 </details>
 
@@ -831,14 +831,14 @@ Name: **4-chloro-2-methylhexane**.
 <details>
 <summary>Question 2: Alkene Addition Reactions</summary>
 
-Describe the products formed when propene ($\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2$) reacts with
+Describe the products formed when propene ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2$) reacts with
 each of the following:
 
-(a) $\mathrm{HBr}$
+(a) $\mathrm{'\{'}HBr{'\}'}$
 
-(b) $\mathrm{Br}_2$ in $\mathrm{CCl}_4$
+(b) $\mathrm{'\{'}Br{'\}'}_2$ in $\mathrm{'\{'}CCl{'\}'}_4$
 
-(c) $\mathrm{H}_2\mathrm{O}$ with $\mathrm{H}_2\mathrm{SO}_4$ catalyst
+(c) $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$ with $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}SO{'\}'}_4$ catalyst
 
 </details>
 
@@ -848,19 +848,19 @@ each of the following:
 (a) By Markovnikov's rule, H adds to the less substituted carbon and Br adds to the more substituted
 carbon:
 
-$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CHBrCH}_3$$
+$$\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}HBr{'\}'} \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CHBrCH{'\}'}_3$$
 
 Product: **2-bromopropane**.
 
 (b) Halogenation (anti addition):
 
-$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{Br}_2 \to \mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{Br}$$
+$$\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}Br{'\}'}_2 \to \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CHBrCH{'\}'}_2\mathrm{'\{'}Br{'\}'}$$
 
 Product: **1,2-dibromopropane**.
 
 (c) Acid-catalysed hydration (Markovnikov addition):
 
-$$\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H}_2\mathrm{O} \xrightarrow{\mathrm{H}^+} \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$$
+$$\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}=\mathrm{'\{'}CH{'\}'}_2 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \xrightarrow{\mathrm{'\{'}H{'\}'}^+} \mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}CH{'\}'}_3$$
 
 Product: **propan-2-ol**.
 
@@ -869,7 +869,7 @@ Product: **propan-2-ol**.
 <details>
 <summary>Question 3: Comparing $S_N1$ and $S_N2$ Mechanisms</summary>
 
-For the reaction between 1-bromobutane and aqueous $\mathrm{NaOH}$:
+For the reaction between 1-bromobutane and aqueous $\mathrm{'\{'}NaOH{'\}'}$:
 
 (a) Identify the mechanism and explain why.
 
@@ -883,11 +883,11 @@ For the reaction between 1-bromobutane and aqueous $\mathrm{NaOH}$:
 <summary>Answer</summary>
 
 (a) This is an $S_N2$ mechanism because 1-bromobutane is a primary halogenoalkane with minimal
-steric hindrance, and $\mathrm{OH}^-$ is a strong nucleophile. $S_N2$ is favoured for primary
+steric hindrance, and $\mathrm{'\{'}OH{'\}'}^-$ is a strong nucleophile. $S_N2$ is favoured for primary
 substrates with strong nucleophiles.
 
 (b)
-$$\mathrm{Rate} = k[\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}][\mathrm{OH}^-]$$
+$$\mathrm{'\{'}Rate{'\}'} = k[\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}Br{'\}'}][\mathrm{'\{'}OH{'\}'}^-]$$
 
 (c) Inversion of configuration (Walden inversion) occurs at the carbon bearing the leaving group.
 The nucleophile attacks from the back of the C--Br bond, resulting in the product having the
@@ -899,7 +899,7 @@ opposite configuration.
 <summary>Question 4: Polymer Identification</summary>
 
 A polymer has the repeating unit:
-$-[\mathrm{NH}(\mathrm{CH}_2)_6\mathrm{NHCO}(\mathrm{CH}_2)_4\mathrm{CO}]-$.
+$-[\mathrm{'\{'}NH{'\}'}(\mathrm{'\{'}CH{'\}'}_2)_6\mathrm{'\{'}NHCO{'\}'}(\mathrm{'\{'}CH{'\}'}_2)_4\mathrm{'\{'}CO{'\}'}]-$.
 
 (a) Identify the type of polymer.
 
@@ -913,12 +913,12 @@ $-[\mathrm{NH}(\mathrm{CH}_2)_6\mathrm{NHCO}(\mathrm{CH}_2)_4\mathrm{CO}]-$.
 <summary>Answer</summary>
 
 (a) This is a **condensation polymer** (specifically a polyamide), identifiable by the amide
-linkages ($-\mathrm{NHCO}-$) in the repeating unit.
+linkages ($-\mathrm{'\{'}NHCO{'\}'}-$) in the repeating unit.
 
 (b) The monomers are:
 
-- **1,6-diaminohexane** ($\mathrm{H}_2\mathrm{N}(\mathrm{CH}_2)_6\mathrm{NH}_2$)
-- **hexanedioic acid** (adipic acid, $\mathrm{HOOC}(\mathrm{CH}_2)_4\mathrm{COOH}$)
+- **1,6-diaminohexane** ($\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}N{'\}'}(\mathrm{'\{'}CH{'\}'}_2)_6\mathrm{'\{'}NH{'\}'}_2$)
+- **hexanedioic acid** (adipic acid, $\mathrm{'\{'}HOOC{'\}'}(\mathrm{'\{'}CH{'\}'}_2)_4\mathrm{'\{'}COOH{'\}'}$)
 
 This polymer is **nylon-6,6**.
 
@@ -930,29 +930,29 @@ This polymer is **nylon-6,6**.
 <summary>Question 5: Alcohol Oxidation Pathway</summary>
 
 Describe the products formed when each of the following alcohols is oxidised with acidified
-$\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$:
+$\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$:
 
-(a) Propan-1-ol ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH}$)
+(a) Propan-1-ol ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}OH{'\}'}$)
 
-(b) Propan-2-ol ($\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3$)
+(b) Propan-2-ol ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}(\mathrm{'\{'}OH{'\}'})\mathrm{'\{'}CH{'\}'}_3$)
 
-(c) 2-methylpropan-2-ol ($(\mathrm{CH}_3)_3\mathrm{COH}$)
+(c) 2-methylpropan-2-ol ($(\mathrm{'\{'}CH{'\}'}_3)_3\mathrm{'\{'}COH{'\}'}$)
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) Primary alcohol: oxidised first to propanal ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CHO}$), then
-further oxidised to propanoic acid ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$). With acidified
-$\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ under reflux, the final product is **propanoic acid**.
+(a) Primary alcohol: oxidised first to propanal ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}CHO{'\}'}$), then
+further oxidised to propanoic acid ($\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}CH{'\}'}_2\mathrm{'\{'}COOH{'\}'}$). With acidified
+$\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$ under reflux, the final product is **propanoic acid**.
 
-(b) Secondary alcohol: oxidised to propanone (acetone, $\mathrm{CH}_3\mathrm{COCH}_3$). The reaction
+(b) Secondary alcohol: oxidised to propanone (acetone, $\mathrm{'\{'}CH{'\}'}_3\mathrm{'\{'}COCH{'\}'}_3$). The reaction
 stops at the ketone because ketones cannot be further oxidised.
 
 (c) Tertiary alcohol: tertiary alcohols **cannot be oxidised** by
-$\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ because there is no hydrogen atom on the carbon bearing the
-$-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
+$\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7$ because there is no hydrogen atom on the carbon bearing the
+$-\mathrm{'\{'}OH{'\}'}$ group. No reaction occurs (the orange solution remains orange).
 
 </details>
 

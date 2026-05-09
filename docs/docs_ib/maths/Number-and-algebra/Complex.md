@@ -13,7 +13,7 @@ Cartesian form complex numbers ($z$) are separated to real ($a$) and imaginary p
 
 $$
 \begin{aligned}
-    z = a + bi, \quad a,b \in \mathbb{R}
+    z = a + bi, \quad a,b \in \mathbb{'\{'}R{'\}'}
 \end{aligned}
 $$
 
@@ -77,7 +77,7 @@ $$
 ### Polar to Cartesian
 
 Since polar coordinates is already defined by the argument, conversion to cartesian is simply
-evaluating the definition of cartesian coordinate ($\mathrm{cis }\theta$):
+evaluating the definition of cartesian coordinate ($\mathrm{'\{'}cis {'\}'}\theta$):
 
 $$
 \begin{aligned}
@@ -175,8 +175,8 @@ Key properties:
 $$
 \begin{aligned}
     z \cdot \bar{z} &= a^2 + b^2 = |z|^2\\
-    z + \bar{z} &= 2a \quad (\mathrm{real})\\
-    z - \bar{z} &= 2bi \quad (\mathrm{imaginary})
+    z + \bar{z} &= 2a \quad (\mathrm{'\{'}real{'\}'})\\
+    z - \bar{z} &= 2bi \quad (\mathrm{'\{'}imaginary{'\}'})
 \end{aligned}
 $$
 
@@ -184,8 +184,8 @@ $$
 
 An Argand diagram represents complex numbers in a 2D plane:
 
-- The **horizontal axis** represents the real part ($\mathrm{Re}(z)$)
-- The **vertical axis** represents the imaginary part ($\mathrm{Im}(z)$)
+- The **horizontal axis** represents the real part ($\mathrm{'\{'}Re{'\}'}(z)$)
+- The **vertical axis** represents the imaginary part ($\mathrm{'\{'}Im{'\}'}(z)$)
 
 A complex number $z = a + bi$ is plotted at the point $(a, b)$.
 
@@ -410,7 +410,7 @@ $$
 Applying multiplication repeatedly:
 
 $$
-z^n = r^n e^{in\theta}, \qquad n \in \mathbb{Z}
+z^n = r^n e^{in\theta}, \qquad n \in \mathbb{'\{'}Z{'\}'}
 $$
 
 Therefore:
@@ -478,7 +478,7 @@ $$
 |z_1 - z_2| = \sqrt{(a-c)^2 + (b-d)^2}
 $$
 
-This is exactly the distance formula in $\mathbb{R}^2$.
+This is exactly the distance formula in $\mathbb{'\{'}R{'\}'}^2$.
 
 ### Midpoint of a Line Segment
 
@@ -530,15 +530,15 @@ $z_2$. The boundary $|z - z_1| = |z - z_2|$ is the perpendicular bisector.
 A line through $z_1$ and $z_2$ can be parameterised as:
 
 $$
-z = z_1 + t(z_2 - z_1), \quad t \in \mathbb{R}
+z = z_1 + t(z_2 - z_1), \quad t \in \mathbb{'\{'}R{'\}'}
 $$
 
-Equivalently, a line with equation $\mathrm{Re}(\bar{a}\, z) = c$ for some complex constant
+Equivalently, a line with equation $\mathrm{'\{'}Re{'\}'}(\bar{a}\, z) = c$ for some complex constant
 $a \neq 0$ and real constant $c$.
 
 ### Perpendicular from the Origin to a Line
 
-The shortest distance from the origin to the line $\mathrm{Re}(\bar{a}\, z) = c$ is:
+The shortest distance from the origin to the line $\mathrm{'\{'}Re{'\}'}(\bar{a}\, z) = c$ is:
 
 $$
 d = \frac{|c|}{|a|}
@@ -624,15 +624,15 @@ $$
 $$
 \begin{aligned}
     \left(re^{i\theta}\right)^{k+1} &= \left(re^{i\theta}\right)^k \cdot re^{i\theta}\\
-    &= r^k e^{ik\theta} \cdot r e^{i\theta} \quad \mathrm{(by hypothesis)}\\
+    &= r^k e^{ik\theta} \cdot r e^{i\theta} \quad \mathrm{'\{'}(by hypothesis){'\}'}\\
     &= r^{k+1} \cdot e^{i(k\theta + \theta)}\\
     &= r^{k+1} e^{i(k+1)\theta}
 \end{aligned}
 $$
 
-So the result holds for $n = k + 1$. By induction, the theorem is true for all $n \in \mathbb{N}$.
+So the result holds for $n = k + 1$. By induction, the theorem is true for all $n \in \mathbb{'\{'}N{'\}'}$.
 
-**Negative integers:** For $n = -m$ where $m \in \mathbb{N}$:
+**Negative integers:** For $n = -m$ where $m \in \mathbb{'\{'}N{'\}'}$:
 
 $$
 \left(re^{i\theta}\right)^{-m} = \frac{1}{\left(re^{i\theta}\right)^m} = \frac{1}{r^m e^{im\theta}} = r^{-m} e^{-im\theta} = r^n e^{in\theta}
@@ -712,10 +712,10 @@ Using the formula for the area of a triangle with vertices at complex numbers:
 
 $$
 \begin{aligned}
-    \mathrm{Area} &= \frac{1}{2}\left|\mathrm{Im}\!\left(\bar{z}_{AB} \cdot z_{AC}\right)\right|\\
-    &= \frac{1}{2}\left|\mathrm{Im}\!\left((4 - 2i)(2 + 6i)\right)\right|\\
-    &= \frac{1}{2}\left|\mathrm{Im}(8 + 24i - 4i + 12)\right|\\
-    &= \frac{1}{2}\left|\mathrm{Im}(20 + 20i)\right|\\
+    \mathrm{'\{'}Area{'\}'} &= \frac{1}{2}\left|\mathrm{'\{'}Im{'\}'}\!\left(\bar{z}_{AB} \cdot z_{AC}\right)\right|\\
+    &= \frac{1}{2}\left|\mathrm{'\{'}Im{'\}'}\!\left((4 - 2i)(2 + 6i)\right)\right|\\
+    &= \frac{1}{2}\left|\mathrm{'\{'}Im{'\}'}(8 + 24i - 4i + 12)\right|\\
+    &= \frac{1}{2}\left|\mathrm{'\{'}Im{'\}'}(20 + 20i)\right|\\
     &= \frac{1}{2} \cdot 20 = 10
 \end{aligned}
 $$
@@ -777,8 +777,8 @@ in the second or third quadrant, you must adjust:
 
 $$
 \begin{aligned}
-    \mathrm{Quadrant II:}\quad &\theta = \pi - \arctan\!\left|\frac{b}{a}\right|\\
-    \mathrm{Quadrant III:}\quad &\theta = -\pi + \arctan\frac{b}{a}
+    \mathrm{'\{'}Quadrant II:{'\}'}\quad &\theta = \pi - \arctan\!\left|\frac{b}{a}\right|\\
+    \mathrm{'\{'}Quadrant III:{'\}'}\quad &\theta = -\pi + \arctan\frac{b}{a}
 \end{aligned}
 $$
 
@@ -796,7 +796,7 @@ $|z|$ is a real, non-negative scalar (the modulus), whereas $z$ is a complex num
 differently under operations. For example:
 
 $$
-|z_1 + z_2| \neq |z_1| + |z_2| \quad \mathrm{in general}
+|z_1 + z_2| \neq |z_1| + |z_2| \quad \mathrm{'\{'}in general{'\}'}
 $$
 
 The triangle inequality gives $|z_1 + z_2| \leq |z_1| + |z_2|$, with equality only when $z_1$ and
@@ -955,7 +955,7 @@ The roots are $1 + 2i$ and $1 - 2i$, each with multiplicity 2.
 <details>
 <summary>Problem 7: Proof Using Modulus Properties</summary>
 
-Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2$ for all $z_1, z_2 \in \mathbb{C}$.
+Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2$ for all $z_1, z_2 \in \mathbb{'\{'}C{'\}'}$.
 
 **Solution:** Let $z_1 = a + bi$ and $z_2 = c + di$.
 
@@ -1022,10 +1022,10 @@ numbers:
 
 $$
 \begin{aligned}
-    \mathrm{Area} &= \frac{1}{2}\left|\mathrm{Im}\!\left(\bar{z}_2 \cdot z_3\right)\right|\\
-    &= \frac{1}{2}\left|\mathrm{Im}\!\left((4 - 2i)(1 + 5i)\right)\right|\\
-    &= \frac{1}{2}\left|\mathrm{Im}(4 + 20i - 2i + 10)\right|\\
-    &= \frac{1}{2}\left|\mathrm{Im}(14 + 18i)\right|\\
+    \mathrm{'\{'}Area{'\}'} &= \frac{1}{2}\left|\mathrm{'\{'}Im{'\}'}\!\left(\bar{z}_2 \cdot z_3\right)\right|\\
+    &= \frac{1}{2}\left|\mathrm{'\{'}Im{'\}'}\!\left((4 - 2i)(1 + 5i)\right)\right|\\
+    &= \frac{1}{2}\left|\mathrm{'\{'}Im{'\}'}(4 + 20i - 2i + 10)\right|\\
+    &= \frac{1}{2}\left|\mathrm{'\{'}Im{'\}'}(14 + 18i)\right|\\
     &= \frac{1}{2} \cdot 18 = 9
 \end{aligned}
 $$
@@ -1035,14 +1035,14 @@ $$
 <details>
 <summary>Problem 10: Argument Equations</summary>
 
-Solve the equation $\arg(z - 1) = \arg(z + i)$ for $z \in \mathbb{C}$, where $z \neq 1$ and
+Solve the equation $\arg(z - 1) = \arg(z + i)$ for $z \in \mathbb{'\{'}C{'\}'}$, where $z \neq 1$ and
 $z \neq -i$.
 
 **Solution:** The condition $\arg(z - 1) = \arg(z + i)$ means the vectors from $1$ and from $-i$ to
 $z$ have the same direction. This occurs when $z$ lies on the line through $1$ and $-i$, excluding
 those two points.
 
-Algebraically, set $\mathrm{Im}\!\left(\frac{z + i}{z - 1}\right) = 0$. Let $z = x + iy$:
+Algebraically, set $\mathrm{'\{'}Im{'\}'}\!\left(\frac{z + i}{z - 1}\right) = 0$. Let $z = x + iy$:
 
 $$
 \frac{z + i}{z - 1} = \frac{x + i(y + 1)}{(x - 1) + iy}
@@ -1062,7 +1062,7 @@ $$
 
 Setting this to zero: $x - y - 1 = 0$, i.e. $y = x - 1$.
 
-The solution set is $\{z = x + i(x - 1) : x \in \mathbb{R},\; z \neq 1,\; z \neq -i\}$.
+The solution set is $\{z = x + i(x - 1) : x \in \mathbb{'\{'}R{'\}'},\; z \neq 1,\; z \neq -i\}$.
 
 </details>
 

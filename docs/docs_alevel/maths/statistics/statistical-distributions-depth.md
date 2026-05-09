@@ -38,7 +38,7 @@ $$P(X = r) = \binom{n}{r}p^r(1-p)^{n-r}, \quad r = 0, 1, 2, \ldots, n$$
 
 ### 1.2 Mean and variance
 
-$$E(X) = np, \qquad \mathrm{Var}(X) = np(1-p)$$
+$$E(X) = np, \qquad \mathrm{'\{'}Var{'\}'}(X) = np(1-p)$$
 
 **Proof of $E(X) = np$.**
 
@@ -80,13 +80,13 @@ $P(5 \leq X \leq 9) = 1 - \dfrac{794}{4096} - \dfrac{79}{4096} = \dfrac{3223}{40
 A random variable $X$ has a **normal distribution** with parameters $\mu$ and $\sigma^2$ (written
 $X \sim N(\mu, \sigma^2)$) if its probability density function is:
 
-$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x - \mu)^2}{2\sigma^2}\right), \quad x \in \mathbb{R}$$
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x - \mu)^2}{2\sigma^2}\right), \quad x \in \mathbb{'\{'}R{'\}'}$$
 
 ### 2.2 Properties
 
 - The distribution is symmetric about $x = \mu$.
 - The mean, median, and mode are all equal to $\mu$.
-- $E(X) = \mu$, $\mathrm{Var}(X) = \sigma^2$.
+- $E(X) = \mu$, $\mathrm{'\{'}Var{'\}'}(X) = \sigma^2$.
 - Approximately 68% of data lies within $\mu \pm \sigma$.
 - Approximately 95% of data lies within $\mu \pm 2\sigma$.
 - Approximately 99.7% of data lies within $\mu \pm 3\sigma$.
@@ -103,9 +103,9 @@ where $\Phi(z)$ denotes the cumulative distribution function of the standard nor
 
 ### 2.4 Worked example
 
-**Problem.** The masses of bags of sugar are normally distributed with mean $1.02\;\mathrm{kg}$ and
-standard deviation $0.03\;\mathrm{kg}$. Find: (a) the probability a randomly selected bag has mass
-less than $1.00\;\mathrm{kg}$; (b) the probability the mass is between $0.98$ and $1.05\;\mathrm{kg}$;
+**Problem.** The masses of bags of sugar are normally distributed with mean $1.02\;\mathrm{'\{'}kg{'\}'}$ and
+standard deviation $0.03\;\mathrm{'\{'}kg{'\}'}$. Find: (a) the probability a randomly selected bag has mass
+less than $1.00\;\mathrm{'\{'}kg{'\}'}$; (b) the probability the mass is between $0.98$ and $1.05\;\mathrm{'\{'}kg{'\}'}$;
 (c) the value $m$ such that 90% of bags have mass less than $m$.
 
 $X \sim N(1.02, 0.03^2)$.
@@ -118,7 +118,7 @@ $= \Phi(1.000) - \Phi(-1.333) = 0.8413 - (1 - 0.9088) = 0.8413 - 0.0912 = 0.7501
 
 (c) We need $\Phi\!\left(\dfrac{m - 1.02}{0.03}\right) = 0.90$, so $\dfrac{m - 1.02}{0.03} = 1.282$.
 
-$m = 1.02 + 0.03 \times 1.282 = 1.058\;\mathrm{kg}$
+$m = 1.02 + 0.03 \times 1.282 = 1.058\;\mathrm{'\{'}kg{'\}'}$
 
 ### 2.5 The normal approximation to the binomial
 
@@ -154,7 +154,7 @@ $= 1 - \Phi(-0.337) = \Phi(0.337) \approx 0.632$
 ### 3.1 Definition
 
 A random variable $X$ has a **Poisson distribution** with parameter $\lambda$ (written
-$X \sim \mathrm{Po}(\lambda)$) if:
+$X \sim \mathrm{'\{'}Po{'\}'}(\lambda)$) if:
 
 $$P(X = r) = \frac{e^{-\lambda}\lambda^r}{r!}, \quad r = 0, 1, 2, \ldots$$
 
@@ -166,7 +166,7 @@ $$P(X = r) = \frac{e^{-\lambda}\lambda^r}{r!}, \quad r = 0, 1, 2, \ldots$$
 
 ### 3.2 Mean and variance
 
-$$E(X) = \lambda, \qquad \mathrm{Var}(X) = \lambda$$
+$$E(X) = \lambda, \qquad \mathrm{'\{'}Var{'\}'}(X) = \lambda$$
 
 The equality of mean and variance is a distinguishing feature of the Poisson distribution.
 
@@ -176,13 +176,13 @@ The equality of mean and variance is a distinguishing feature of the Poisson dis
 find: (a) the probability of exactly 6 calls in a minute; (b) the probability of at most 2 calls
 in a minute; (c) the probability of more than 8 calls in a two-minute period.
 
-$X \sim \mathrm{Po}(4.5)$.
+$X \sim \mathrm{'\{'}Po{'\}'}(4.5)$.
 
 (a) $P(X = 6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac{e^{-4.5} \times 8303.8}{720} \approx 0.1271$
 
 (b) $P(X \leq 2) = e^{-4.5}\!\left(1 + 4.5 + \dfrac{4.5^2}{2}\right) = e^{-4.5}(1 + 4.5 + 10.125) = 15.625\,e^{-4.5} \approx 0.1736$
 
-(c) For two minutes, $Y \sim \mathrm{Po}(9)$.
+(c) For two minutes, $Y \sim \mathrm{'\{'}Po{'\}'}(9)$.
 
 $P(Y \gt 8) = 1 - P(Y \leq 8) = 1 - e^{-9}\displaystyle\sum_{r=0}^{8}\dfrac{9^r}{r!} \approx 1 - 0.4557 = 0.5443$
 
@@ -190,7 +190,7 @@ $P(Y \gt 8) = 1 - P(Y \leq 8) = 1 - e^{-9}\displaystyle\sum_{r=0}^{8}\dfrac{9^r}
 
 If $X \sim B(n, p)$ where $n$ is large and $p$ is small (so that $np$ is moderate), then:
 
-$$X \approx \mathrm{Po}(np)$$
+$$X \approx \mathrm{'\{'}Po{'\}'}(np)$$
 
 This is valid when $n \geq 50$ and $p \leq 0.1$ (and $np \leq 10$ as a rough guideline).
 
@@ -199,7 +199,7 @@ This is valid when $n \geq 50$ and $p \leq 0.1$ (and $np \leq 10$ as a rough gui
 **Problem.** A machine produces items with a defect rate of 0.02. In a batch of 200 items, find the
 probability that exactly 3 are defective.
 
-$X \sim B(200, 0.02)$. Since $n = 200$ is large and $p = 0.02$ is small, $X \approx \mathrm{Po}(4)$.
+$X \sim B(200, 0.02)$. Since $n = 200$ is large and $p = 0.02$ is small, $X \approx \mathrm{'\{'}Po{'\}'}(4)$.
 
 $$P(X = 3) = \frac{e^{-4} \cdot 4^3}{3!} = \frac{64e^{-4}}{6} = \frac{32}{3}e^{-4} \approx 0.1954$$
 
@@ -212,13 +212,13 @@ $$P(X = 3) = \frac{e^{-4} \cdot 4^3}{3!} = \frac{64e^{-4}}{6} = \frac{32}{3}e^{-
 | Situation                          | Distribution         |
 | ---------------------------------- | -------------------- |
 | Fixed trials, two outcomes, const $p$ | Binomial $B(n, p)$  |
-| Rare events, constant rate         | Poisson $\mathrm{Po}(\lambda)$ |
+| Rare events, constant rate         | Poisson $\mathrm{'\{'}Po{'\}'}(\lambda)$ |
 | Continuous, symmetric, bell-shaped | Normal $N(\mu, \sigma^2)$ |
 
 ### 4.2 Sums of independent Poisson variables
 
-**Theorem.** If $X \sim \mathrm{Po}(\lambda_1)$ and $Y \sim \mathrm{Po}(\lambda_2)$ are independent,
-then $X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)$.
+**Theorem.** If $X \sim \mathrm{'\{'}Po{'\}'}(\lambda_1)$ and $Y \sim \mathrm{'\{'}Po{'\}'}(\lambda_2)$ are independent,
+then $X + Y \sim \mathrm{'\{'}Po{'\}'}(\lambda_1 + \lambda_2)$.
 
 **Proof sketch.** Using MGFs or direct convolution:
 
@@ -231,7 +231,7 @@ $$= \frac{e^{-(\lambda_1+\lambda_2)}}{r!}\sum_{k=0}^{r}\binom{r}{k}\lambda_1^k\l
 **Problem.** A shop receives orders at an average rate of 3 per hour from online and 2 per hour
 from walk-in customers. Find the probability of receiving more than 7 orders in a two-hour period.
 
-Total rate per hour $= 3 + 2 = 5$. For two hours, $X \sim \mathrm{Po}(10)$.
+Total rate per hour $= 3 + 2 = 5$. For two hours, $X \sim \mathrm{'\{'}Po{'\}'}(10)$.
 
 $P(X \gt 7) = 1 - P(X \leq 7) = 1 - e^{-10}\displaystyle\sum_{r=0}^{7}\dfrac{10^r}{r!} \approx 1 - 0.2202 = 0.7798$
 
@@ -265,9 +265,9 @@ $P(X = 5) \approx 0.2123$, $P(X = 6) \approx 0.2186$. The mode is $X = 6$.
 
 ### Problem 2
 
-The heights of men are normally distributed with mean $175\;\mathrm{cm}$ and standard deviation
-$8\;\mathrm{cm}$. Find the probability that a randomly selected man is: (a) taller than $190\;\mathrm{cm}$;
-(b) between $168\;\mathrm{cm}$ and $182\;\mathrm{cm}$; (c) what height is exceeded by only 5% of men?
+The heights of men are normally distributed with mean $175\;\mathrm{'\{'}cm{'\}'}$ and standard deviation
+$8\;\mathrm{'\{'}cm{'\}'}$. Find the probability that a randomly selected man is: (a) taller than $190\;\mathrm{'\{'}cm{'\}'}$;
+(b) between $168\;\mathrm{'\{'}cm{'\}'}$ and $182\;\mathrm{'\{'}cm{'\}'}$; (c) what height is exceeded by only 5% of men?
 
 <details>
 <summary>Solution</summary>
@@ -276,7 +276,7 @@ $8\;\mathrm{cm}$. Find the probability that a randomly selected man is: (a) tall
 
 (b) $P(168 \lt X \lt 182) = P(-0.875 \lt Z \lt 0.875) = 2\Phi(0.875) - 1 = 2(0.8092) - 1 = 0.6184$.
 
-(c) $P(Z \gt z) = 0.05 \implies z = 1.645$. Height $= 175 + 1.645 \times 8 = 188.2\;\mathrm{cm}$.
+(c) $P(Z \gt z) = 0.05 \implies z = 1.645$. Height $= 175 + 1.645 \times 8 = 188.2\;\mathrm{'\{'}cm{'\}'}$.
 
 </details>
 
@@ -291,7 +291,7 @@ hours.
 
 (a) $P(X = 4) = \dfrac{e^{-6} \cdot 6^4}{4!} = \dfrac{1296}{24}e^{-6} = 54e^{-6} \approx 0.1335$.
 
-(b) For two hours, $Y \sim \mathrm{Po}(12)$.
+(b) For two hours, $Y \sim \mathrm{'\{'}Po{'\}'}(12)$.
 
 $P(Y \gt 10) = 1 - P(Y \leq 10) \approx 1 - 0.6528 = 0.3472$.
 

@@ -121,14 +121,14 @@ calculate the maximum rice output at this point, (b) calculate the marginal rate
 and 10 units of textiles.
 
 (b) The MRT is the absolute value of the slope of the PPC:
-$MRT = \left|\frac{\text{dR}}{	ext{dT}}\right| = |-T| = T$. At $T = 10$: $MRT = 10$. This means 1
+$MRT = \left|\frac{\text{'\{'}dR{'\}'}}{	ext{dT}}\right| = |-T| = T$. At $T = 10$: $MRT = 10$. This means 1
 additional unit of textiles costs 10 units of rice in opportunity cost.
 
 (c) The MRT represents the opportunity cost of producing one more unit of textiles in terms of rice
-forgone. It is equal to the ratio of marginal costs: $MRT = \frac{\text{MC_T}}{	ext{MC_R}}$. As more
+forgone. It is equal to the ratio of marginal costs: $MRT = \frac{\text{'\{'}MC_T{'\}'}}{	ext{MC_R}}$. As more
 textiles are produced, the MRT increases (increasing opportunity cost), reflecting the concave shape
 of the PPC. For allocative efficiency, the MRT should equal the ratio of marginal benefits (prices):
-$MRT = \frac{\text{P_T}}{	ext{P_R}}$. If MRT $\gt$ price ratio, the economy should produce more rice;
+$MRT = \frac{\text{'\{'}P_T{'\}'}}{	ext{P_R}}$. If MRT $\gt$ price ratio, the economy should produce more rice;
 if MRT $\lt$ price ratio, it should produce more textiles.
 
 ### IT-2: Economic Systems and Market Failure (with Government Intervention)
@@ -319,10 +319,10 @@ This is approximately half the OECD average (40%). Hong Kong has one of the lowe
 
 In the 1970s, Hong Kong had abundant low-cost labour and limited capital. Its comparative advantage lay in labour-intensive manufacturing (textiles, garments, plastics, electronics assembly). As Hong Kong's economy grew, wages rose (reflecting increased human capital and productivity), making labour-intensive manufacturing less competitive. Simultaneously, the opening of mainland China under Deng Xiaoping's reforms (1978) provided an enormous pool of low-cost labour just across the border. Hong Kong firms relocated manufacturing to Guangdong province while retaining management, finance, logistics, and marketing functions in Hong Kong. This division of labour maximised efficiency: China specialised in production (abundant low-cost labour), while Hong Kong specialised in services (finance, trade, logistics, professional services) where it had a growing comparative advantage due to its human capital, legal system, infrastructure, and geographical location.
 
-(b) Unit labour cost (ULC) $= \frac{\text{Wage rate}}{\text{Labour productivity}}$.
+(b) Unit labour cost (ULC) $= \frac{\text{'\{'}Wage rate{'\}'}}{\text{'\{'}Labour productivity{'\}'}}$.
 
-- Hong Kong: $ULC = \frac{60}{10} = \text{HK}\$6$ per unit.
-- China: $ULC = \frac{20}{4} = \text{HK}\$5$ per unit.
+- Hong Kong: $ULC = \frac{60}{10} = \text{'\{'}HK{'\}'}\$6$ per unit.
+- China: $ULC = \frac{20}{4} = \text{'\{'}HK{'\}'}\$5$ per unit.
 
 (c) China's unit labour cost (HK$5) is lower than Hong Kong's (HK$6), giving China a cost advantage in manufacturing. Even though Hong Kong workers are more productive (10 units per hour vs 4), their higher wages more than offset this productivity advantage. For firms, the decision to relocate is based on cost minimisation. The lower unit labour cost in China means that producing the same good costs less there, even accounting for transport and coordination costs.
 

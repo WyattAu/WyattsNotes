@@ -355,7 +355,7 @@ a customer deposits £1,000, what is the maximum amount of new money that can be
 <summary>Answer</summary>
 When a bank receives a deposit, it keeps a fraction (reserve ratio $r$) as reserves and lends out the rest. The loan becomes a deposit in another bank, which in turn lends out $(1-r)$ of it, and so on.<br />
 Money multiplier: $m = \frac{1}{r} = \frac{1}{0.05} = 20$.<br />
-Maximum new money $= m \times \mathrm{initial deposit} = 20 \times 1,000 = £20,000$.<br />
+Maximum new money $= m \times \mathrm{'\{'}initial deposit{'\}'} = 20 \times 1,000 = £20,000$.<br />
 Alternatively: $\Delta M = \Delta D \times \frac{1}{r} = 1,000 \times 20 = £20,000$ (total deposits including the original). New lending = $20,000 - 1,000 = £19,000$.<br />
 This assumes: (1) no cash leakages (all money stays in the banking system), (2) banks lend out all excess reserves, (3) demand for loans exists. In practice, the actual multiplier is much smaller.
 <i>Revision: [The Financial Sector](/docs/alevel/economics/macro/the-financial-sector)</i>
@@ -569,7 +569,7 @@ using the concepts of comparative advantage, trade creation/diversion, and suppl
 (b) Real GDP $= \frac{1420}{115} \times 100 = 1234.78$.
 (c) GDP per capita $= \frac{1420}{67} = \pounds 21\,194$.
 (d) Real GDP per capita $= \frac{1234.78}{67} = \pounds 18\,430$.
-(e) Current account balance $= X - M = 280 - 310 = -\pounds 30\text{bn}$ (deficit).
+(e) Current account balance $= X - M = 280 - 310 = -\pounds 30\text{'\{'}bn{'\}'}$ (deficit).
 </details>
 
 **Q47.** The consumption function is $C = 150 + 0.75Y_d$, investment $I = 100$, government spending $G = 200$, taxes $T = 0.2Y$, and imports $M = 40 + 0.1Y$. Exports $X = 60$. Calculate: (a) the equilibrium level of income, (b) the government spending multiplier, (c) the tax multiplier, (d) whether the government budget is in surplus or deficit.
@@ -588,7 +588,7 @@ $k = \frac{1}{1 - MPC(1-t) + MPM} = \frac{1}{1 - 0.75(0.8) + 0.1} = \frac{1}{1 -
 (c) The tax multiplier with proportional tax: $\frac{dY}{dT} = \frac{-MPC}{1 - MPC(1-t) + MPM} = \frac{-0.75}{0.5} = -1.5$.
 Note: since the tax rate $t$ is proportional, a change in the tax rate changes the intercept of the tax function. A change in $t$ by $\Delta t$ gives $\Delta Y = \frac{-0.75Y}{0.5}\Delta t$. At $Y = 940$: a 1 percentage point increase in $t$ reduces $Y$ by $0.75 \times 940 / 0.5 = 1410$. This is the lump-sum equivalent.
 
-(d) Budget: $T = 0.2(940) = 188$. $G = 200$. Budget deficit $= 200 - 188 = \pounds 12\text{bn}$.
+(d) Budget: $T = 0.2(940) = 188$. $G = 200$. Budget deficit $= 200 - 188 = \pounds 12\text{'\{'}bn{'\}'}$.
 </details>
 
 **Q48.** A monopolist faces demand $P = 100 - 2Q$ and has total cost $TC = 200 + 10Q + Q^2$. Calculate: (a) the profit-maximising output and price, (b) the level of profit, (c) the allocatively efficient output, (d) the deadweight loss.
@@ -702,14 +702,14 @@ Alternatively: $g_{Y/L} = g_A + \alpha g_K - \alpha g_L = 1.5 + 0.3(3) - 0.3(1) 
 
 <details>
 <summary>Answer</summary>
-(a) Trade balance $= (X_{goods} - M_{goods}) + (X_{services} - M_{services}) = (300 - 450) + (200 - 120) = -150 + 80 = -\text{USD } 70\text{bn}$.
+(a) Trade balance $= (X_{goods} - M_{goods}) + (X_{services} - M_{services}) = (300 - 450) + (200 - 120) = -150 + 80 = -\text{'\{'}USD {'\}'} 70\text{'\{'}bn{'\}'}$.
 
-(b) Current account $= \text{trade balance} + \text{primary income} + \text{secondary income} = -70 + (80 - 150) + (20 - 50) = -70 - 70 - 30 = -\text{USD } 170\text{bn}$.
+(b) Current account $= \text{'\{'}trade balance{'\}'} + \text{'\{'}primary income{'\}'} + \text{'\{'}secondary income{'\}'} = -70 + (80 - 150) + (20 - 50) = -70 - 70 - 30 = -\text{'\{'}USD {'\}'} 170\text{'\{'}bn{'\}'}$.
 
 (c) CA as % of GDP $= \frac{-170}{2000} \times 100 = -8.5\%$. This is a very large current account deficit (the Maastricht criterion is 3%).
 
 (d) For the balance of payments to balance: Current account + Capital account + Financial account = 0.
-$-170 + \text{Capital account} + \text{Financial account} = 0$.
+$-170 + \text{'\{'}Capital account{'\}'} + \text{'\{'}Financial account{'\}'} = 0$.
 The capital and financial accounts together must show a surplus of USD 170bn. This means the country is a net borrower from the rest of the world (capital inflows of USD 170bn).
 </details>
 
@@ -741,7 +741,7 @@ The golden rule savings rate is 50%, which is much higher than the current 25%. 
 <summary>Answer</summary>
 (a) $P = \frac{4}{1.05} + \frac{4}{1.05^2} + \frac{104}{1.05^3} = 3.81 + 3.63 + 89.84 = \pounds 97.28$.
 
-(b) Current yield $= \frac{\text{coupon}}{\text{price}} = \frac{4}{97.28} = 4.11\%$.
+(b) Current yield $= \frac{\text{'\{'}coupon{'\}'}}{\text{'\{'}price{'\}'}} = \frac{4}{97.28} = 4.11\%$.
 
 (c) Yield to maturity: the YTM is the discount rate that equates the present value of cash flows to the price. Since we used 5% to price the bond and the price is below par, the YTM is above the coupon rate. Using trial and error:
 At 5%: $PV = 97.28$. Since the coupon rate (4%) is below the market rate (5%), the bond trades at a discount. The YTM equals the market rate (5%) because we priced it at 5%. YTM = 5%.

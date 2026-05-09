@@ -43,7 +43,7 @@ $B$ moves in the positive direction (the same direction as $A$'s initial motion)
 
 **(b)** Coefficient of restitution:
 
-$$e = \frac{\text{relative speed of separation}}{\text{relative speed of approach}}$$
+$$e = \frac{\text{'\{'}relative speed of separation{'\}'}}{\text{'\{'}relative speed of approach{'\}'}}$$
 
 Relative speed of approach $= 5 - (-3) = 8$ m/s.
 
@@ -65,11 +65,11 @@ The negative sign means $B$ moves in the opposite direction to the defined posit
 
 **(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt e \lt 1$, the collision is **inelastic**.
 
-$$\text{KE}_{\text{before}} = \frac{1}{2}(4)(25) + \frac{1}{2}(6)(9) = 50 + 27 = 77 \text{ J}$$
+$$\text{'\{'}KE{'\}'}_{\text{'\{'}before{'\}'}} = \frac{1}{2}(4)(25) + \frac{1}{2}(6)(9) = 50 + 27 = 77 \text{'\{'} J{'\}'}$$
 
-$$\text{KE}_{\text{after}} = \frac{1}{2}(4)(4) + \frac{1}{2}(6)\!\left(\frac{25}{9}\right) = 8 + \frac{75}{9} = 8 + \frac{25}{3} = \frac{49}{3} \approx 16.33 \text{ J}$$
+$$\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = \frac{1}{2}(4)(4) + \frac{1}{2}(6)\!\left(\frac{25}{9}\right) = 8 + \frac{75}{9} = 8 + \frac{25}{3} = \frac{49}{3} \approx 16.33 \text{'\{'} J{'\}'}$$
 
-$$\Delta\mathrm{KE} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \approx 60.67 \text{ J lost}$$
+$$\Delta\mathrm{'\{'}KE{'\}'} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \approx 60.67 \text{'\{'} J lost{'\}'}$$
 
 ---
 
@@ -111,17 +111,17 @@ The sum is a geometric series with first term $a = 0.36$ and ratio $r = 0.36$:
 
 $$\sum_{n=1}^{\infty}(0.36)^n = \frac{0.36}{1 - 0.36} = \frac{0.36}{0.64} = \frac{9}{16}$$
 
-$$\text{Total distance} = 10 + 20 \times \frac{9}{16} = 10 + \frac{180}{16} = 10 + 11.25 = 21.25 \text{ m}$$
+$$\text{'\{'}Total distance{'\}'} = 10 + 20 \times \frac{9}{16} = 10 + \frac{180}{16} = 10 + 11.25 = 21.25 \text{'\{'} m{'\}'}$$
 
 **(c)** Time for the initial fall: $t_0 = \sqrt{\frac{2h}{g}} = \sqrt{\frac{20}{9.8}} = \sqrt{\frac{100}{49}} = \frac{10}{7}$ s.
 
 After the $n$-th bounce, the time in the air (up and down) is:
 
-$$t_n = \frac{2u_n}{g} = \frac{2e^n \times 14}{9.8} = \frac{2e^n \times 14}{9.8} = \frac{28e^n}{9.8} = \frac{20e^n}{7} \text{ s}$$
+$$t_n = \frac{2u_n}{g} = \frac{2e^n \times 14}{9.8} = \frac{2e^n \times 14}{9.8} = \frac{28e^n}{9.8} = \frac{20e^n}{7} \text{'\{'} s{'\}'}$$
 
 Total time $= t_0 + \sum_{n=1}^{\infty}t_n = \frac{10}{7} + \frac{20}{7}\sum_{n=1}^{\infty}(0.6)^n$
 
-$$= \frac{10}{7} + \frac{20}{7} \times \frac{0.6}{1 - 0.6} = \frac{10}{7} + \frac{20}{7} \times \frac{3}{2} = \frac{10}{7} + \frac{30}{7} = \frac{40}{7} \approx 5.71 \text{ s}$$
+$$= \frac{10}{7} + \frac{20}{7} \times \frac{0.6}{1 - 0.6} = \frac{10}{7} + \frac{20}{7} \times \frac{3}{2} = \frac{10}{7} + \frac{30}{7} = \frac{40}{7} \approx 5.71 \text{'\{'} s{'\}'}$$
 
 **(d)** Mathematically, the geometric series converges to a finite sum, meaning the ball completes infinitely many bounces in finite time. In practice, once the bounce height falls below the scale of surface irregularities, atomic vibrations, and thermal effects, the coefficient of restitution model breaks down. The ball's energy is eventually fully dissipated as heat and sound, and it comes to rest. The model assumes $e$ is constant, which is only an approximation for macroscopic bounces.
 
@@ -147,13 +147,13 @@ A trolley of mass $2$ kg moves at $4$ m/s on a smooth horizontal table. It colli
 
 **(a)** Conservation of momentum (perfectly inelastic collision, $e = 0$):
 
-$$2 \times 4 + 3 \times 0 = (2 + 3)v \implies 8 = 5v \implies v = 1.6 \text{ m/s}$$
+$$2 \times 4 + 3 \times 0 = (2 + 3)v \implies 8 = 5v \implies v = 1.6 \text{'\{'} m/s{'\}'}$$
 
-**(b)** $\text{KE}_{\text{before}} = \frac{1}{2}(2)(16) = 16$ J.
+**(b)** $\text{'\{'}KE{'\}'}_{\text{'\{'}before{'\}'}} = \frac{1}{2}(2)(16) = 16$ J.
 
-$\text{KE}_{\text{after}} = \frac{1}{2}(5)(2.56) = 6.4$ J.
+$\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = \frac{1}{2}(5)(2.56) = 6.4$ J.
 
-$\Delta\mathrm{KE} = 16 - 6.4 = 9.6$ J lost.
+$\Delta\mathrm{'\{'}KE{'\}'} = 16 - 6.4 = 9.6$ J lost.
 
 Momentum is conserved because the only forces during the collision are the internal contact forces between the two trolleys. By Newton's Third Law, these are equal and opposite, so their impulses cancel. No external horizontal force acts on the system.
 
@@ -161,9 +161,9 @@ Kinetic energy is not conserved because the collision is perfectly inelastic ($e
 
 **(c)** The combined trolley decelerates from $1.6$ m/s to $0$ in $0.1$ s.
 
-$$F\Delta t = \Delta p = 5(0 - 1.6) = -8 \text{ Ns}$$
+$$F\Delta t = \Delta p = 5(0 - 1.6) = -8 \text{'\{'} Ns{'\}'}$$
 
-$$F = \frac{-8}{0.1} = -80 \text{ N}$$
+$$F = \frac{-8}{0.1} = -80 \text{'\{'} N{'\}'}$$
 
 The average force exerted by the buffer on the trolley is $80$ N (opposing the motion).
 
@@ -197,7 +197,7 @@ A force $F(t) = 12t^2 - 8t + 2$ N acts on a particle of mass $4$ kg for $0 \leq 
 
 **(a)** $$J = \int_0^2 F(t)\,dt = \int_0^2 (12t^2 - 8t + 2)\,dt = \left[4t^3 - 4t^2 + 2t\right]_0^2$$
 
-$$= (32 - 16 + 4) - 0 = 20 \text{ Ns}$$
+$$= (32 - 16 + 4) - 0 = 20 \text{'\{'} Ns{'\}'}$$
 
 **(b)** $J = m\Delta v \implies 20 = 4(v - 0) \implies v = 5$ m/s.
 
@@ -223,11 +223,11 @@ $$= 12t^5 - 20t^4 + 16t^3 - 6t^2 + t$$
 
 $$W = \int_0^2 (12t^5 - 20t^4 + 16t^3 - 6t^2 + t)\,dt = \left[2t^6 - 4t^5 + 4t^4 - 2t^3 + \frac{t^2}{2}\right]_0^2$$
 
-$$= (128 - 128 + 64 - 16 + 2) - 0 = 50 \text{ J}$$
+$$= (128 - 128 + 64 - 16 + 2) - 0 = 50 \text{'\{'} J{'\}'}$$
 
-**(d)** $\Delta\mathrm{KE} = \frac{1}{2}(4)(5^2) - 0 = 50$ J.
+**(d)** $\Delta\mathrm{'\{'}KE{'\}'} = \frac{1}{2}(4)(5^2) - 0 = 50$ J.
 
-Since $W = 50$ J $= \Delta\mathrm{KE}$, the work-energy theorem is verified.
+Since $W = 50$ J $= \Delta\mathrm{'\{'}KE{'\}'}$, the work-energy theorem is verified.
 
 ---
 
@@ -243,7 +243,7 @@ A smooth sphere $A$ of mass $4$ kg moving at $10$ m/s collides with a smooth sph
 
 **(c)** Find the kinetic energy lost in the collision and express it as a percentage of the initial kinetic energy.
 
-**(d)** Show that the angle $\theta$ that $B$'s velocity makes with the original direction satisfies $\tan\theta = \frac{2\sin 30°}{\text{(expression involving masses and velocities)}}$ and evaluate $\theta$.
+**(d)** Show that the angle $\theta$ that $B$'s velocity makes with the original direction satisfies $\tan\theta = \frac{2\sin 30°}{\text{'\{'}(expression involving masses and velocities){'\}'}}$ and evaluate $\theta$.
 
 [Difficulty: hard. Combines 2D momentum conservation with energy analysis, requiring resolution into components and reconstruction of the velocity vector.]
 
@@ -253,9 +253,9 @@ A smooth sphere $A$ of mass $4$ kg moving at $10$ m/s collides with a smooth sph
 
 **Initial momenta:**
 
-$p_{x,\text{initial}} = 4 \times 10 + 6 \times 5 = 40 + 30 = 70$ kg m/s.
+$p_{x,\text{'\{'}initial{'\}'}} = 4 \times 10 + 6 \times 5 = 40 + 30 = 70$ kg m/s.
 
-$p_{y,\text{initial}} = 0$.
+$p_{y,\text{'\{'}initial{'\}'}} = 0$.
 
 **After collision:**
 
@@ -267,13 +267,13 @@ $$4 \times 2\sqrt{3} + 6v_{Bx} = 70$$
 
 $$6v_{Bx} = 70 - 8\sqrt{3} \approx 70 - 13.86 = 56.14$$
 
-$$v_{Bx} = \frac{70 - 8\sqrt{3}}{6} = \frac{35 - 4\sqrt{3}}{3} \approx 9.36 \text{ m/s}$$
+$$v_{Bx} = \frac{70 - 8\sqrt{3}}{6} = \frac{35 - 4\sqrt{3}}{3} \approx 9.36 \text{'\{'} m/s{'\}'}$$
 
 **$y$-momentum conservation:**
 
 $$4 \times 2 + 6v_{By} = 0$$
 
-$$6v_{By} = -8 \implies v_{By} = -\frac{4}{3} \text{ m/s}$$
+$$6v_{By} = -8 \implies v_{By} = -\frac{4}{3} \text{'\{'} m/s{'\}'}$$
 
 Speed of $B$: $v_B = \sqrt{v_{Bx}^2 + v_{By}^2} = \sqrt{\left(\frac{35 - 4\sqrt{3}}{3}\right)^2 + \frac{16}{9}}$
 
@@ -281,7 +281,7 @@ $$= \sqrt{\frac{(35 - 4\sqrt{3})^2 + 16}{9}} = \sqrt{\frac{1225 - 280\sqrt{3} + 
 
 $\sqrt{3} \approx 1.732$, so $1289 - 484.96 = 804.04$.
 
-$$v_B = \sqrt{\frac{804.04}{9}} = \sqrt{89.34} \approx 9.45 \text{ m/s}$$
+$$v_B = \sqrt{\frac{804.04}{9}} = \sqrt{89.34} \approx 9.45 \text{'\{'} m/s{'\}'}$$
 
 **(b)** The coefficient of restitution applies along the line of centres. For a head-on collision becoming oblique, the line of centres is the original direction of motion (the $x$-axis).
 
@@ -291,11 +291,11 @@ $$= \frac{\frac{35 - 4\sqrt{3} - 6\sqrt{3}}{3}}{5} = \frac{35 - 10\sqrt{3}}{15} 
 
 $$= \frac{7 - 3.464}{3} = \frac{3.536}{3} \approx 0.179$$
 
-**(c)** $\text{KE}_{\text{before}} = \frac{1}{2}(4)(100) + \frac{1}{2}(6)(25) = 200 + 75 = 275$ J.
+**(c)** $\text{'\{'}KE{'\}'}_{\text{'\{'}before{'\}'}} = \frac{1}{2}(4)(100) + \frac{1}{2}(6)(25) = 200 + 75 = 275$ J.
 
-$\text{KE}_{\text{after}} = \frac{1}{2}(4)(16) + \frac{1}{2}(6)(89.34) = 32 + 268.0 = 300$ J.
+$\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = \frac{1}{2}(4)(16) + \frac{1}{2}(6)(89.34) = 32 + 268.0 = 300$ J.
 
-Wait -- $\text{KE}_{\text{after}} \gt \text{KE}_{\text{before}}$, which is impossible ($e \leq 1$ implies no energy creation). Let me recheck.
+Wait -- $\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} \gt \text{'\{'}KE{'\}'}_{\text{'\{'}before{'\}'}}$, which is impossible ($e \leq 1$ implies no energy creation). Let me recheck.
 
 $v_B^2 = \frac{1289 - 280\sqrt{3}}{9}$.
 
@@ -303,7 +303,7 @@ $280\sqrt{3} = 280 \times 1.7321 = 484.98$.
 
 $v_B^2 = \frac{1289 - 484.98}{9} = \frac{804.02}{9} = 89.34$.
 
-$\text{KE}_{\text{after}} = 32 + \frac{6}{2} \times 89.34 = 32 + 268.0 = 300$ J.
+$\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = 32 + \frac{6}{2} \times 89.34 = 32 + 268.0 = 300$ J.
 
 This exceeds the initial KE of $275$ J, which violates $e \leq 1$. This means the stated data ($A$ deflects at $30°$ with speed $4$ m/s) is inconsistent with momentum and energy conservation. The problem is over-specified with contradictory data.
 
@@ -367,23 +367,23 @@ Deceleration: $a = -\mu g = -0.4 \times 9.8 = -3.92$ m/s$^2$.
 
 Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 0.6$:
 
-$$0 = 0.36 + 2(-3.92)d \implies d = \frac{0.36}{7.84} \approx 0.0459 \text{ m} \approx 4.6 \text{ cm}$$
+$$0 = 0.36 + 2(-3.92)d \implies d = \frac{0.36}{7.84} \approx 0.0459 \text{'\{'} m{'\}'} \approx 4.6 \text{'\{'} cm{'\}'}$$
 
 **(d)** **Energy lost at the wall:**
 
-$\text{KE}_{\text{before wall}} = \frac{1}{2}(2)(64) = 64$ J.
+$\text{'\{'}KE{'\}'}_{\text{'\{'}before wall{'\}'}} = \frac{1}{2}(2)(64) = 64$ J.
 
-$\text{KE}_{\text{after wall}} = \frac{1}{2}(2)(36) = 36$ J.
+$\text{'\{'}KE{'\}'}_{\text{'\{'}after wall{'\}'}} = \frac{1}{2}(2)(36) = 36$ J.
 
-$\Delta\mathrm{KE}_{\text{wall}} = 64 - 36 = 28$ J.
+$\Delta\mathrm{'\{'}KE{'\}'}_{\text{'\{'}wall{'\}'}} = 64 - 36 = 28$ J.
 
 **Energy lost in $P$-$Q$ collision:**
 
-$\text{KE}_{\text{before}} = \frac{1}{2}(2)(36) + 0 = 36$ J.
+$\text{'\{'}KE{'\}'}_{\text{'\{'}before{'\}'}} = \frac{1}{2}(2)(36) + 0 = 36$ J.
 
-$\text{KE}_{\text{after}} = \frac{1}{2}(2)(0.36) + \frac{1}{2}(3)(12.96) = 0.36 + 19.44 = 19.8$ J.
+$\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = \frac{1}{2}(2)(0.36) + \frac{1}{2}(3)(12.96) = 0.36 + 19.44 = 19.8$ J.
 
-$\Delta\mathrm{KE}_{PQ} = 36 - 19.8 = 16.2$ J.
+$\Delta\mathrm{'\{'}KE{'\}'}_{PQ} = 36 - 19.8 = 16.2$ J.
 
 **Total KE lost** $= 28 + 16.2 = 44.2$ J.
 

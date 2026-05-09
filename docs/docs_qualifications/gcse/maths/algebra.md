@@ -164,7 +164,7 @@ A **quadratic equation** has the form $ax^2 + bx + c = 0$ with $a \neq 0$.
 
 **Worked Example.** Solve $x^2 - 5x + 6 = 0$.
 
-$$(x - 2)(x - 3) = 0$$ $$x = 2 \mathrm{ or } x = 3$$
+$$(x - 2)(x - 3) = 0$$ $$x = 2 \mathrm{'\{'} or {'\}'} x = 3$$
 
 **Method 2: The quadratic formula.** For $ax^2 + bx + c = 0$:
 
@@ -186,7 +186,7 @@ $\frac{-b}{2a}$. If $\Delta \lt 0$, the square root is not real, so no real root
 
 $$x = \frac{-3 \pm \sqrt{9 + 40}}{4} = \frac{-3 \pm \sqrt{49}}{4} = \frac{-3 \pm 7}{4}$$
 
-$$x = 1 \mathrm{ or } x = -\frac{5}{2}$$
+$$x = 1 \mathrm{'\{'} or {'\}'} x = -\frac{5}{2}$$
 
 **Worked Example (Higher Tier).** Find the values of $k$ for which $x^2 + 4x + k = 0$ has equal
 roots.
@@ -218,7 +218,7 @@ $\Delta = 25 + 24 = 49$.
 
 $$x = \frac{5 \pm 7}{6}$$
 
-$$x = 2 \mathrm{ or } x = -\frac{1}{3}$$
+$$x = 2 \mathrm{'\{'} or {'\}'} x = -\frac{1}{3}$$
 
 ### 2.3 Simultaneous Equations
 
@@ -242,7 +242,7 @@ $$\begin{cases} y = x^2 - 3x + 2 \\ y = 2x - 2 \end{cases}$$
 
 Substituting: $x^2 - 3x + 2 = 2x - 2$
 
-$$x^2 - 5x + 4 = 0$$ $$(x - 1)(x - 4) = 0$$ $$x = 1 \mathrm{ or } x = 4$$
+$$x^2 - 5x + 4 = 0$$ $$(x - 1)(x - 4) = 0$$ $$x = 1 \mathrm{'\{'} or {'\}'} x = 4$$
 
 When $x = 1$: $y = 0$. When $x = 4$: $y = 6$.
 
@@ -349,7 +349,7 @@ Divide by 2: $-2 \lt x \leq 3$.
 
 ### 3.5 Set Notation for Inequalities (Higher Tier)
 
-The solution $x \gt 3$ can be written as $\{x \in \mathbb{R} : x \gt 3\}$ or using interval notation
+The solution $x \gt 3$ can be written as $\{x \in \mathbb{'\{'}R{'\}'} : x \gt 3\}$ or using interval notation
 $(3, \infty)$.
 
 ## 4. Sequences
@@ -391,7 +391,7 @@ $$5 + (n - 1) \times 3 = 137$$ $$3(n - 1) = 132$$ $$n - 1 = 44$$ $$n = 45$$
 **Worked Example (Higher Tier).** An arithmetic sequence has $u_3 = 14$ and $u_7 = 26$. Find $a$ and
 $d$.
 
-$$a + 2d = 14 \quad \mathrm{and} \quad a + 6d = 26$$
+$$a + 2d = 14 \quad \mathrm{'\{'}and{'\}'} \quad a + 6d = 26$$
 
 Subtracting: $4d = 12$, so $d = 3$. Then $a = 14 - 6 = 8$.
 

@@ -59,7 +59,7 @@ The first line of defence prevents pathogen entry entirely:
 | ------------------------ | --------------------------------------------------------------------------------------------- |
 | Skin                     | Physical barrier; keratinised epidermis; sebum (antimicrobial lipids); low pH ($\approx 5.5$) |
 | Mucous membranes         | Trap pathogens; mucus contains lysozyme (breaks bacterial cell walls); cilia move mucus outwards |
-| Stomach acid              | $\mathrm{HCl}$ (pH $\approx 2$) denatures proteins and kills most ingested pathogens            |
+| Stomach acid              | $\mathrm{'\{'}HCl{'\}'}$ (pH $\approx 2$) denatures proteins and kills most ingested pathogens            |
 | Tears and saliva         | Contain lysozyme; flush pathogens from eyes and mouth                                          |
 | Commensal bacteria       | Compete with pathogens for nutrients and space; produce antimicrobial substances                |
 | Blood clotting           | Seals wounds, preventing pathogen entry into tissues                                            |
@@ -70,7 +70,7 @@ Phagocytosis is the engulfment and digestion of pathogens by specialised white b
 
 **Stages of phagocytosis:**
 
-1. **Chemotaxis**: phagocytes are attracted to the site of infection by chemical signals released by damaged cells and pathogens (e.g., bacterial products, complement fragments $\mathrm{C3a}$ and $\mathrm{C5a}$).
+1. **Chemotaxis**: phagocytes are attracted to the site of infection by chemical signals released by damaged cells and pathogens (e.g., bacterial products, complement fragments $\mathrm{'\{'}C3a{'\}'}$ and $\mathrm{'\{'}C5a{'\}'}$).
 
 2. **Recognition and attachment**: the phagocyte recognises non-self antigens on the pathogen surface. Phagocytes have pattern recognition receptors (PRRs) that bind to pathogen-associated molecular patterns (PAMPs) -- conserved molecular structures found on many pathogens (e.g., lipopolysaccharide on Gram-negative bacteria).
 
@@ -120,11 +120,11 @@ The complement system is a collection of approximately 20 plasma proteins that e
 
 When activated (by antigen-antibody complexes or by pathogen surfaces), complement proteins act in a cascade:
 
-1. **Opsonisation**: complement protein $\mathrm{C3b}$ binds to the pathogen surface, making it more easily recognised and engulfed by phagocytes (acts as an opsonin).
+1. **Opsonisation**: complement protein $\mathrm{'\{'}C3b{'\}'}$ binds to the pathogen surface, making it more easily recognised and engulfed by phagocytes (acts as an opsonin).
 
-2. **Chemotaxis**: $\mathrm{C3a}$ and $\mathrm{C5a}$ attract phagocytes to the site of infection.
+2. **Chemotaxis**: $\mathrm{'\{'}C3a{'\}'}$ and $\mathrm{'\{'}C5a{'\}'}$ attract phagocytes to the site of infection.
 
-3. **Membrane attack complex (MAC)**: complement proteins $\mathrm{C5}$ through $\mathrm{C9}$ assemble into a pore-forming complex that inserts into the pathogen's cell membrane, creating transmembrane channels. Ions and water flow freely through these channels, causing the pathogen to swell and burst (lysis). The MAC is effective against Gram-negative bacteria and enveloped viruses.
+3. **Membrane attack complex (MAC)**: complement proteins $\mathrm{'\{'}C5{'\}'}$ through $\mathrm{'\{'}C9{'\}'}$ assemble into a pore-forming complex that inserts into the pathogen's cell membrane, creating transmembrane channels. Ions and water flow freely through these channels, causing the pathogen to swell and burst (lysis). The MAC is effective against Gram-negative bacteria and enveloped viruses.
 
 ## 3. Adaptive Immunity: The Cell-Mediated Response
 
@@ -136,8 +136,8 @@ T cells have specific **T-cell receptors (TCRs)** on their surface, each binding
 
 There are two major classes of T cells:
 
-- **T helper cells ($\mathrm{CD4^+}$)**: coordinate the immune response by releasing chemical messengers (cytokines) that stimulate other immune cells. They recognise antigens presented by **MHC class II** molecules on antigen-presenting cells (macrophages, dendritic cells, B cells).
-- **T killer cells (cytotoxic T cells, $\mathrm{CD8^+}$)**: directly kill infected body cells and cancer cells by inducing apoptosis (programmed cell death). They recognise antigens presented by **MHC class I** molecules on the surface of any nucleated cell.
+- **T helper cells ($\mathrm{'\{'}CD4^+{'\}'}$)**: coordinate the immune response by releasing chemical messengers (cytokines) that stimulate other immune cells. They recognise antigens presented by **MHC class II** molecules on antigen-presenting cells (macrophages, dendritic cells, B cells).
+- **T killer cells (cytotoxic T cells, $\mathrm{'\{'}CD8^+{'\}'}$)**: directly kill infected body cells and cancer cells by inducing apoptosis (programmed cell death). They recognise antigens presented by **MHC class I** molecules on the surface of any nucleated cell.
 
 ### 3.2 Antigen Presentation
 
@@ -205,8 +205,8 @@ Antibodies (immunoglobulins, Ig) are **Y-shaped quaternary proteins** consisting
 
 Each antibody has:
 
-- **Two identical antigen-binding sites** (at the tips of the Y), formed by the **variable regions** ($\mathrm{V}$ regions) of the heavy and light chains. The amino acid sequence in the variable region differs between antibodies, determining antigen specificity.
-- A **constant region** ($\mathrm{C}$ region) that is the same within each antibody class (IgG, IgA, IgM, IgE, IgD). The constant region determines the antibody's effector functions (e.g., which cells and complement proteins it can bind).
+- **Two identical antigen-binding sites** (at the tips of the Y), formed by the **variable regions** ($\mathrm{'\{'}V{'\}'}$ regions) of the heavy and light chains. The amino acid sequence in the variable region differs between antibodies, determining antigen specificity.
+- A **constant region** ($\mathrm{'\{'}C{'\}'}$ region) that is the same within each antibody class (IgG, IgA, IgM, IgE, IgD). The constant region determines the antibody's effector functions (e.g., which cells and complement proteins it can bind).
 - A **hinge region** allowing flexibility, enabling the two antigen-binding sites to attach to antigens at varying distances.
 
 ### 4.5 Classes of Antibodies
@@ -317,11 +317,11 @@ Vaccination is the deliberate introduction of antigenic material into the body t
 
 The proportion of the population that must be immune to achieve herd immunity depends on the basic reproduction number ($R_0$):
 
-$$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
+$$\text{'\{'}Herd immunity threshold{'\}'} = 1 - \frac{1}{R_0}$$
 
 **Worked Example.** Measles has $R_0 \approx 15$ (highly contagious).
 
-$$\text{Threshold} = 1 - \frac{1}{15} = 1 - 0.067 = 0.933 = 93.3\%$$
+$$\text{'\{'}Threshold{'\}'} = 1 - \frac{1}{15} = 1 - 0.067 = 0.933 = 93.3\%$$
 
 Approximately 93% of the population must be immune to measles to prevent outbreaks. This is why measles vaccination coverage targets must be very high.
 
@@ -378,7 +378,7 @@ An unknown patient sample gives an absorbance of 0.55. Determine the antigen con
 
 From the standard curve, absorbance of 0.55 lies between the 20 ($0.42$) and 40 ($0.78$) data points. Using linear interpolation between these two points:
 
-$$\text{Concentration} = 20 + (40 - 20) \times \frac{0.55 - 0.42}{0.78 - 0.42} = 20 + 20 \times \frac{0.13}{0.36} = 20 + 7.2 = 27.2\ \mathrm{ng\ cm^{-3}}$$
+$$\text{'\{'}Concentration{'\}'} = 20 + (40 - 20) \times \frac{0.55 - 0.42}{0.78 - 0.42} = 20 + 20 \times \frac{0.13}{0.36} = 20 + 7.2 = 27.2\ \mathrm{ng\ cm^{-3}}$$
 
 The patient sample contains approximately $27.2\ \mathrm{ng\ cm^{-3}}$ of antigen.
 
@@ -423,9 +423,9 @@ Monoclonal antibodies are identical antibodies produced by a single clone of B c
 
 ### 10.1 How HIV Affects the Immune System
 
-Human immunodeficiency virus (HIV) specifically targets **T helper cells ($\mathrm{CD4^+}$)**:
+Human immunodeficiency virus (HIV) specifically targets **T helper cells ($\mathrm{'\{'}CD4^+{'\}'}$)**:
 
-1. The viral envelope glycoprotein (gp120) binds to the $\mathrm{CD4}$ receptor on T helper cells, along with a co-receptor (CCR5 or CXCR4).
+1. The viral envelope glycoprotein (gp120) binds to the $\mathrm{'\{'}CD4{'\}'}$ receptor on T helper cells, along with a co-receptor (CCR5 or CXCR4).
 2. The virus enters the T helper cell by fusion with the cell membrane.
 3. Viral RNA is reverse-transcribed into DNA by **reverse transcriptase**.
 4. Viral DNA is integrated into the host cell's genome by **integrase**.
@@ -589,7 +589,7 @@ mRNA vaccines contain messenger RNA encoding a pathogen antigen (e.g., the spike
 
 **Advantages:** rapid design and production (weeks rather than years); no live pathogen involved; mRNA does not enter the nucleus or interact with host DNA; strong immune response; no risk of infection.
 
-**Disadvantages:** requires ultra-cold storage (initially $-70\ ^\circ\mathrm{C}$ for Pfizer); mRNA is rapidly degraded; requires lipid nanoparticle delivery; long-term safety data still being collected.
+**Disadvantages:** requires ultra-cold storage (initially $-70\ ^\circ\mathrm{'\{'}C{'\}'}$ for Pfizer); mRNA is rapidly degraded; requires lipid nanoparticle delivery; long-term safety data still being collected.
 
 ### 13.6 Viral Vector Vaccines
 
@@ -1074,7 +1074,7 @@ Consequences:
 
 The herd immunity threshold depends on the basic reproduction number ($R_0$):
 
-$$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
+$$\text{'\{'}Herd immunity threshold{'\}'} = 1 - \frac{1}{R_0}$$
 
 | Disease | $R_0$ | Herd Immunity Threshold |
 | ------- | ----- | ----------------------- |
@@ -1234,8 +1234,8 @@ HIV (human immunodeficiency virus) is a retrovirus:
 | Stage | CD4 Count | Viral Load | Symptoms |
 | ----- | --------- | ---------- | -------- |
 | Acute infection (2--4 weeks) | Normal to decreased | Very high | Flu-like illness (fever, rash, sore throat, swollen lymph nodes) |
-| Clinical latency (2--10 years) | Gradually declining (350--500 cells/$\mathrm{mm^3}$) | Stable (set point) | Usually asymptomatic; gradual immune deterioration |
-| AIDS | < 200 cells/$\mathrm{mm^3}$ | High | Opportunistic infections (PCP pneumonia, TB, Kaposi's sarcoma, candidiasis); wasting; dementia |
+| Clinical latency (2--10 years) | Gradually declining (350--500 cells/$\mathrm{'\{'}mm^3{'\}'}$) | Stable (set point) | Usually asymptomatic; gradual immune deterioration |
+| AIDS | < 200 cells/$\mathrm{'\{'}mm^3{'\}'}$ | High | Opportunistic infections (PCP pneumonia, TB, Kaposi's sarcoma, candidiasis); wasting; dementia |
 
 ### 30.3 Antiretroviral Therapy (ART)
 
@@ -1309,14 +1309,14 @@ The lymphatic system is a network of vessels, nodes, and organs that returns exc
 ### 32.2 Formation of Tissue Fluid and Lymph
 
 At the arterial end of a capillary:
-- **Blood hydrostatic pressure** ($\approx 35\ \mathrm{mmHg}$) forces fluid out of the capillary.
-- **Blood oncotic pressure** ($\approx 25\ \mathrm{mmHg}$, due to plasma proteins) pulls fluid back in.
-- **Net outward pressure** $= 35 - 25 = 10\ \mathrm{mmHg}$ (fluid leaves capillary).
+- **Blood hydrostatic pressure** ($\approx 35\ \mathrm{'\{'}mmHg{'\}'}$) forces fluid out of the capillary.
+- **Blood oncotic pressure** ($\approx 25\ \mathrm{'\{'}mmHg{'\}'}$, due to plasma proteins) pulls fluid back in.
+- **Net outward pressure** $= 35 - 25 = 10\ \mathrm{'\{'}mmHg{'\}'}$ (fluid leaves capillary).
 
 At the venous end:
-- **Blood hydrostatic pressure** has dropped ($\approx 15\ \mathrm{mmHg}$).
-- **Blood oncotic pressure** remains ($\approx 25\ \mathrm{mmHg}$).
-- **Net inward pressure** $= 25 - 15 = 10\ \mathrm{mmHg}$ (fluid returns to capillary).
+- **Blood hydrostatic pressure** has dropped ($\approx 15\ \mathrm{'\{'}mmHg{'\}'}$).
+- **Blood oncotic pressure** remains ($\approx 25\ \mathrm{'\{'}mmHg{'\}'}$).
+- **Net inward pressure** $= 25 - 15 = 10\ \mathrm{'\{'}mmHg{'\}'}$ (fluid returns to capillary).
 
 Not all fluid that leaves the capillary is reabsorbed. The excess (approximately 3 litres per day) drains into the lymphatic capillaries and is returned to the blood via the thoracic duct.
 
@@ -1337,11 +1337,11 @@ Oedema (swelling) occurs when excess tissue fluid accumulates:
 
 The proportion of the population that must be immune to achieve herd immunity depends on $R_0$:
 
-$$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
+$$\text{'\{'}Herd immunity threshold{'\}'} = 1 - \frac{1}{R_0}$$
 
 **Worked example:** Measles has $R_0 \approx 15$.
 
-$$\text{Threshold} = 1 - \frac{1}{15} = 0.933 = 93.3\%$$
+$$\text{'\{'}Threshold{'\}'} = 1 - \frac{1}{15} = 0.933 = 93.3\%$$
 
 Approximately 93.3% of the population must be immune to prevent measles transmission. If vaccine coverage is below this threshold, outbreaks can still occur.
 
@@ -1483,7 +1483,7 @@ Herd immunity occurs when a sufficient proportion of the population is immune to
 | Seasonal influenza | 1.5--3 | 33--67% |
 | Smallpox | 5--7 | 80--86% |
 
-$$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
+$$\text{'\{'}Herd immunity threshold{'\}'} = 1 - \frac{1}{R_0}$$
 
 ## 38. HIV/AIDS and the Immune System
 
@@ -1578,10 +1578,10 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 
 | Blood Group | Antigen on RBC | Antibody in Plasma | Genotype |
 | ----------- | ------------- | ----------------- | -------- |
-| A | Antigen A | Anti-B | $\mathrm{I^AI^A}$ or $\mathrm{I^Ai}$ |
-| B | Antigen B | Anti-A | $\mathrm{I^BI^B}$ or $\mathrm{I^Bi}$ |
-| AB | Antigen A and Antigen B | Neither anti-A nor anti-B | $\mathrm{I^AI^B}$ |
-| O | Neither antigen A nor antigen B | Both anti-A and anti-B | $\mathrm{ii}$ |
+| A | Antigen A | Anti-B | $\mathrm{'\{'}I^AI^A{'\}'}$ or $\mathrm{'\{'}I^Ai{'\}'}$ |
+| B | Antigen B | Anti-A | $\mathrm{'\{'}I^BI^B{'\}'}$ or $\mathrm{'\{'}I^Bi{'\}'}$ |
+| AB | Antigen A and Antigen B | Neither anti-A nor anti-B | $\mathrm{'\{'}I^AI^B{'\}'}$ |
+| O | Neither antigen A nor antigen B | Both anti-A and anti-B | $\mathrm{'\{'}ii{'\}'}$ |
 
 ### 41.2 Blood Transfusion Compatibility
 
@@ -1708,8 +1708,8 @@ The complement system is a cascade of plasma proteins that enhances (complements
 
 | Region | Description |
 | ------ | ----------- |
-| Variable region ($\mathrm{V}_\mathrm{H}$ and $\mathrm{V}_\mathrm{L}$) | The antigen-binding site; unique to each B cell clone; determines which antigen the antibody recognises |
-| Constant region ($\mathrm{C}_\mathrm{H}$ and $\mathrm{C}_\mathrm{L}$) | Determines the antibody class (isotype) and effector function; the same across all antibodies of the same class |
+| Variable region ($\mathrm{'\{'}V{'\}'}_\mathrm{'\{'}H{'\}'}$ and $\mathrm{'\{'}V{'\}'}_\mathrm{'\{'}L{'\}'}$) | The antigen-binding site; unique to each B cell clone; determines which antigen the antibody recognises |
+| Constant region ($\mathrm{'\{'}C{'\}'}_\mathrm{'\{'}H{'\}'}$ and $\mathrm{'\{'}C{'\}'}_\mathrm{'\{'}L{'\}'}$) | Determines the antibody class (isotype) and effector function; the same across all antibodies of the same class |
 | Heavy chain | Two identical heavy chains per antibody; contains one variable and three constant domains |
 | Light chain | Two identical light chains per antibody; contains one variable and one constant domain |
 | Hinge region | Flexible region between Fab and Fc portions; allows the antibody to bind to antigens at different angles |

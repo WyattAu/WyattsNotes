@@ -107,7 +107,7 @@ This gives the same answer as part (a). Back-substitution always works because i
 
 Third student's answer: $\frac{\pi}{2} \approx 1.5708$.
 
-$$\text{Percentage error} = \frac{\lvert\frac{\pi}{2} - (\frac{\pi}{2} - 1)\rvert}{\lvert\frac{\pi}{2} - 1\rvert} \times 100\% = \frac{1}{\frac{\pi}{2} - 1} \times 100\% \approx 175.2\%$$
+$$\text{'\{'}Percentage error{'\}'} = \frac{\lvert\frac{\pi}{2} - (\frac{\pi}{2} - 1)\rvert}{\lvert\frac{\pi}{2} - 1\rvert} \times 100\% = \frac{1}{\frac{\pi}{2} - 1} \times 100\% \approx 175.2\%$$
 
 The third student's answer is $175.2\%$ too large — a catastrophic error from omitting a single term.
 
@@ -173,7 +173,7 @@ A student who writes $[\ln\lvert x \rvert]_{-1}^1 = 0 - 0 = 0$ is making a serio
 
 **Question:**
 
-A particle moves in a plane with velocity vector $\mathbf{v} = (t^2 - 2t)\mathbf{i} + 2t\,\mathbf{j}$ m/s, where $t \geq 0$.
+A particle moves in a plane with velocity vector $\mathbf{'\{'}v{'\}'} = (t^2 - 2t)\mathbf{'\{'}i{'\}'} + 2t\,\mathbf{'\{'}j{'\}'}$ m/s, where $t \geq 0$.
 
 **(a)** Find the displacement of the particle from $t = 0$ to $t = 3$.
 
@@ -183,15 +183,15 @@ A particle moves in a plane with velocity vector $\mathbf{v} = (t^2 - 2t)\mathbf
 
 **Solution:**
 
-**(a)** Displacement $= \int_0^3 \mathbf{v}\, dt$.
+**(a)** Displacement $= \int_0^3 \mathbf{'\{'}v{'\}'}\, dt$.
 
 $$\int_0^3 (t^2 - 2t)\, dt = \left[\frac{t^3}{3} - t^2\right]_0^3 = 9 - 9 - 0 = 0$$
 
 $$\int_0^3 2t\, dt = [t^2]_0^3 = 9$$
 
-Displacement $= 0\mathbf{i} + 9\mathbf{j} = 9\mathbf{j}$ metres.
+Displacement $= 0\mathbf{'\{'}i{'\}'} + 9\mathbf{'\{'}j{'\}'} = 9\mathbf{'\{'}j{'\}'}$ metres.
 
-**(b)** Distance travelled $= \int_0^3 \lvert\mathbf{v}\rvert\, dt = \int_0^3 \sqrt{(t^2-2t)^2 + (2t)^2}\, dt$
+**(b)** Distance travelled $= \int_0^3 \lvert\mathbf{'\{'}v{'\}'}\rvert\, dt = \int_0^3 \sqrt{(t^2-2t)^2 + (2t)^2}\, dt$
 
 $$= \int_0^3 \sqrt{t^4 - 4t^3 + 4t^2 + 4t^2}\, dt = \int_0^3 \sqrt{t^4 - 4t^3 + 8t^2}\, dt$$
 

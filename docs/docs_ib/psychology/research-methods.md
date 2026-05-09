@@ -298,10 +298,10 @@ statistically significant (i.e., unlikely to have occurred by chance alone).
 
 - The **significance level** (alpha) is the threshold below which a result is considered
   statistically significant. In psychology, the conventional significance level is
-  $\mathrm{p} \lt 0.05$, meaning there is less than a 5% probability that the observed result
+  $\mathrm{'\{'}p{'\}'} \lt 0.05$, meaning there is less than a 5% probability that the observed result
   occurred by chance alone.
 - The **p-value** is the probability of obtaining the observed result (or a more extreme result) if
-  the null hypothesis is true. If $\mathrm{p} \lt \alpha$, the null hypothesis is rejected and the
+  the null hypothesis is true. If $\mathrm{'\{'}p{'\}'} \lt \alpha$, the null hypothesis is rejected and the
   result is considered statistically significant.
 
 **Type I and Type II errors:**
@@ -343,9 +343,9 @@ The choice of statistical test depends on three factors:
 - $r = 1$: Perfect positive correlation
 - $r = -1$: Perfect negative correlation
 - $r = 0$: No correlation
-- $r \approx 0.1\mathrm{--}0.3$: Weak correlation
-- $r \approx 0.3\mathrm{--}0.7$: Moderate correlation
-- $r \approx 0.7\mathrm{--}1.0$: Strong correlation
+- $r \approx 0.1\mathrm{'\{'}--{'\}'}0.3$: Weak correlation
+- $r \approx 0.3\mathrm{'\{'}--{'\}'}0.7$: Moderate correlation
+- $r \approx 0.7\mathrm{'\{'}--{'\}'}1.0$: Strong correlation
 
 **Cohen's d (effect size):** Cohen's d measures the standardised difference between two means,
 providing an indication of the practical significance of the result (as opposed to statistical
@@ -368,7 +368,7 @@ Psychological research is reported according to the guidelines of the American P
 Association (APA). Key conventions include:
 
 - **Statistical notation:** Test statistic, degrees of freedom, p-value. For example:
-  $t(28) = 2.45$, $\mathrm{p} \lt 0.05$, $r = 0.62$.
+  $t(28) = 2.45$, $\mathrm{'\{'}p{'\}'} \lt 0.05$, $r = 0.62$.
 - **Mean and standard deviation:** Reported as $M = 23.4$, $SD = 4.2$.
 - **Confidence intervals:** Reported alongside point estimates, e.g., $95\%$ CI $[18.2, 28.6]$.
 - **Decimal places:** Means and standard deviations are reported to one decimal place for most

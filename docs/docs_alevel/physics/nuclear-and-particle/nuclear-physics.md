@@ -37,13 +37,13 @@ is repelled by the Coulomb force.
 For a head-on collision, the alpha particle momentarily stops (all kinetic energy converted to
 electric potential energy):
 
-$$\frac{1}{2}m_\alpha v^2 = \frac{Z_{\mathrm{Au}} \cdot 2e^2}{4\pi\varepsilon_0 d}$$
+$$\frac{1}{2}m_\alpha v^2 = \frac{Z_{\mathrm{'\{'}Au{'\}'}} \cdot 2e^2}{4\pi\varepsilon_0 d}$$
 
-$$\boxed{d = \frac{Z_{\mathrm{Au}} e^2}{2\pi\varepsilon_0 E_k}}$$
+$$\boxed{d = \frac{Z_{\mathrm{'\{'}Au{'\}'}} e^2}{2\pi\varepsilon_0 E_k}}$$
 
 where $d$ is the distance of closest approach. For 5.5 MeV alpha particles on gold ($Z = 79$):
 
-$$d = \frac{79 \times (1.60 \times 10^{-19})^2}{2\pi \times 8.85 \times 10^{-12} \times 5.5 \times 10^6 \times 1.60 \times 10^{-19}} \approx 4.1 \times 10^{-14}\ \mathrm{m}$$
+$$d = \frac{79 \times (1.60 \times 10^{-19})^2}{2\pi \times 8.85 \times 10^{-12} \times 5.5 \times 10^6 \times 1.60 \times 10^{-19}} \approx 4.1 \times 10^{-14}\ \mathrm{'\{'}m{'\}'}$$
 
 This gives an upper bound on the nuclear radius of gold ($\sim 10^{-14}$ m, compared to the atomic
 radius of $\sim 10^{-10}$ m).
@@ -64,7 +64,7 @@ The nucleus contains **protons** and **neutrons** (collectively, **nucleons**).
 | Mass (u) | 1.00728 | 1.00867 | 0.00055 |
 | Location | Nucleus | Nucleus | Electron shells |
 
-**Notation.** A nuclide $\prescript{A}{}{Z}\mathrm{X}$ has mass number $A$ (total nucleons) and
+**Notation.** A nuclide $\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'}$ has mass number $A$ (total nucleons) and
 atomic number $Z$ (protons). The neutron number is $N = A - Z$.
 
 **Isotopes** have the same $Z$ but different $N$ (hence different $A$). Isotopes have nearly
@@ -79,7 +79,7 @@ identical chemical properties but different nuclear properties (stability, half-
 The mass of a nucleus is **less** than the sum of the masses of its constituent nucleons. The
 difference is the **mass defect**:
 
-$$\boxed{\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}}$$
+$$\boxed{\Delta m = Zm_p + Nm_n - m_{\mathrm{'\{'}nucleus{'\}'}}}$$
 
 ### Einstein's Mass--Energy Equivalence
 
@@ -99,9 +99,9 @@ $$\boxed{\frac{E_b}{A} = \frac{\Delta m\,c^2}{A}}$$
 
 <details>
 <summary>Worked Example: Binding Energy of Helium-4</summary>
-Calculate the binding energy per nucleon of $\prescript{4}{}{2}\mathrm{He}$.
-Given: $m_p = 1.00728$ u, $m_n = 1.00867$ u, $m_{\mathrm{He}} = 4.00151$ u,
-$1\ \mathrm{u} = 931.5$ MeV/c$^2$.
+Calculate the binding energy per nucleon of $\prescript{4}{}{2}\mathrm{'\{'}He{'\}'}$.
+Given: $m_p = 1.00728$ u, $m_n = 1.00867$ u, $m_{\mathrm{'\{'}He{'\}'}} = 4.00151$ u,
+$1\ \mathrm{'\{'}u{'\}'} = 931.5$ MeV/c$^2$.
 
 **Answer.** $\Delta m = 2 \times 1.00728 + 2 \times 1.00867 - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039$ u.
 
@@ -115,8 +115,8 @@ $E_b/A = 28.3/4 = 7.08$ MeV per nucleon.
 
 The binding energy per nucleon plotted against mass number shows:
 
-- **Light nuclei** ($A \lt 20$): Low binding energy per nucleon, with peaks at $\prescript{4}{}{2}\mathrm{He}$, $\prescript{12}{}{6}\mathrm{C}$, and $\prescript{16}{}{8}\mathrm{O}$ (magic numbers).
-- **Iron-56** ($\prescript{56}{}{26}\mathrm{Fe}$): Maximum binding energy per nucleon ($\sim 8.8$ MeV) — the most stable nucleus.
+- **Light nuclei** ($A \lt 20$): Low binding energy per nucleon, with peaks at $\prescript{4}{}{2}\mathrm{'\{'}He{'\}'}$, $\prescript{12}{}{6}\mathrm{'\{'}C{'\}'}$, and $\prescript{16}{}{8}\mathrm{'\{'}O{'\}'}$ (magic numbers).
+- **Iron-56** ($\prescript{56}{}{26}\mathrm{'\{'}Fe{'\}'}$): Maximum binding energy per nucleon ($\sim 8.8$ MeV) — the most stable nucleus.
 - **Heavy nuclei** ($A \gt 60$): Gradually decreasing binding energy per nucleon.
 
 **Implications:**
@@ -159,9 +159,9 @@ nucleus, predicted by the nuclear shell model (Mayer and Jensen, 1949).
 
 ### Alpha Decay
 
-An alpha particle ($\prescript{4}{}{2}\alpha = \prescript{4}{}{2}\mathrm{He}$) is emitted:
+An alpha particle ($\prescript{4}{}{2}\alpha = \prescript{4}{}{2}\mathrm{'\{'}He{'\}'}$) is emitted:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A-4}{}{Z-2}\mathrm{Y} + \prescript{4}{}{2}\alpha$$
+$$\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'} \to \prescript{A-4}{}{Z-2}\mathrm{'\{'}Y{'\}'} + \prescript{4}{}{2}\alpha$$
 
 **Conservation:** $A$ decreases by 4, $Z$ decreases by 2. Highly ionising, stopped by paper.
 
@@ -169,7 +169,7 @@ $$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A-4}{}{Z-2}\mathrm{Y} + \prescript
 
 A neutron converts to a proton, emitting an electron and an antineutrino:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z+1}\mathrm{Y} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$$
+$$\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'} \to \prescript{A}{}{Z+1}\mathrm{'\{'}Y{'\}'} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$$
 
 **Conservation:** $A$ unchanged, $Z$ increases by 1. The antineutrino was postulated (Pauli, 1930;
 Fermi, 1934) to conserve energy and momentum — the continuous electron energy spectrum requires a
@@ -179,16 +179,16 @@ third particle to carry away the remaining energy.
 
 A proton converts to a neutron, emitting a positron and a neutrino:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z-1}\mathrm{Y} + \prescript{0}{}{+1}\beta^+ + \nu_e$$
+$$\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'} \to \prescript{A}{}{Z-1}\mathrm{'\{'}Y{'\}'} + \prescript{0}{}{+1}\beta^+ + \nu_e$$
 
-This requires $m_{\mathrm{parent}} \gt m_{\mathrm{daughter}} + 2m_e$ (the positron mass must be
+This requires $m_{\mathrm{'\{'}parent{'\}'}} \gt m_{\mathrm{'\{'}daughter{'\}'}} + 2m_e$ (the positron mass must be
 created).
 
 ### Gamma Decay
 
 Excited nucleus de-excites by emitting a high-energy photon:
 
-$$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
+$$\prescript{A}{}{Z}\mathrm{'\{'}X{'\}'}^* \to \prescript{A}{}{Z}\mathrm{'\{'}X{'\}'} + \gamma$$
 
 No change in $A$ or $Z$. Weakly ionising, highly penetrating (requires thick lead or concrete).
 
@@ -218,7 +218,7 @@ $$\boxed{N = N_0 e^{-\lambda t}}$$
 
 $$\boxed{A = \lambda N = -\frac{dN}{dt}}$$
 
-SI unit: becquerel (Bq). $1\ \mathrm{Bq} = 1\ \mathrm{decay\,s}^{-1}$.
+SI unit: becquerel (Bq). $1\ \mathrm{'\{'}Bq{'\}'} = 1\ \mathrm{'\{'}decay\,s{'\}'}^{-1}$.
 
 ### Half-Life
 
@@ -232,15 +232,15 @@ $$\boxed{t_{1/2} = \frac{\ln 2}{\lambda}}$$
 
 ### Mechanism
 
-A heavy nucleus (typically $\prescript{235}{}_{92}\mathrm{U}$ or $\prescript{239}{}_{94}\mathrm{Pu}$)
+A heavy nucleus (typically $\prescript{235}{}_{92}\mathrm{'\{'}U{'\}'}$ or $\prescript{239}{}_{94}\mathrm{'\{'}Pu{'\}'}$)
 absorbs a neutron, becoming unstable and splitting into two lighter nuclei (fission fragments) plus
 2--3 neutrons and energy:
 
-$$\prescript{235}{}_{92}\mathrm{U} + \prescript{1}{}_{0}\mathrm{n} \to \prescript{236}{}_{92}\mathrm{U}^* \to \prescript{141}{}_{56}\mathrm{Ba} + \prescript{92}{}_{36}\mathrm{Kr} + 3\prescript{1}{}_{0}\mathrm{n} + \mathrm{energy}$$
+$$\prescript{235}{}_{92}\mathrm{'\{'}U{'\}'} + \prescript{1}{}_{0}\mathrm{'\{'}n{'\}'} \to \prescript{236}{}_{92}\mathrm{'\{'}U{'\}'}^* \to \prescript{141}{}_{56}\mathrm{'\{'}Ba{'\}'} + \prescript{92}{}_{36}\mathrm{'\{'}Kr{'\}'} + 3\prescript{1}{}_{0}\mathrm{'\{'}n{'\}'} + \mathrm{'\{'}energy{'\}'}$$
 
 ### Energy Release
 
-The binding energy per nucleon of the products ($\sim 8.5$ MeV) exceeds that of $\prescript{235}{}_{92}\mathrm{U}$ ($\sim 7.6$ MeV). The energy released per fission event is approximately 200 MeV, primarily as kinetic energy of the fission fragments.
+The binding energy per nucleon of the products ($\sim 8.5$ MeV) exceeds that of $\prescript{235}{}_{92}\mathrm{'\{'}U{'\}'}$ ($\sim 7.6$ MeV). The energy released per fission event is approximately 200 MeV, primarily as kinetic energy of the fission fragments.
 
 ### Chain Reaction
 
@@ -253,16 +253,16 @@ cause another fission) must equal 1.
 - $k \gt 1$: supercritical (exponential growth — nuclear weapon).
 
 **Critical mass:** The minimum mass of fissile material required to sustain a chain reaction. For
-$\prescript{235}{}_{92}\mathrm{U}$, this is approximately 50 kg (sphere). The critical mass depends
+$\prescript{235}{}_{92}\mathrm{'\{'}U{'\}'}$, this is approximately 50 kg (sphere). The critical mass depends
 on geometry, density, and the presence of a neutron reflector.
 
 ### Nuclear Reactor
 
 Key components:
 
-- **Fuel rods:** Enriched uranium ($\sim 3$--$5\%$\ $\prescript{235}{}_{92}\mathrm{U}$).
+- **Fuel rods:** Enriched uranium ($\sim 3$--$5\%$\ $\prescript{235}{}_{92}\mathrm{'\{'}U{'\}'}$).
 - **Moderator:** Graphite or heavy water — slows neutrons to thermal energies where the fission
-  cross-section of $\prescript{235}{}_{92}\mathrm{U}$ is largest.
+  cross-section of $\prescript{235}{}_{92}\mathrm{'\{'}U{'\}'}$ is largest.
 - **Control rods:** Boron or cadmium — absorb neutrons to regulate $k$.
 - **Coolant:** Water, liquid sodium, or CO$_2$ — transfers heat from the reactor to the turbines.
 
@@ -293,7 +293,7 @@ for deuterium--tritium fusion.
 In the Sun's core ($T \approx 1.5 \times 10^7$ K), hydrogen fuses to helium via the proton--proton
 chain:
 
-$$4\prescript{1}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + 2\prescript{0}{}{+1}\beta^+ + 2\nu_e + 2\gamma$$
+$$4\prescript{1}{}{1}\mathrm{'\{'}H{'\}'} \to \prescript{4}{}{2}\mathrm{'\{'}He{'\}'} + 2\prescript{0}{}{+1}\beta^+ + 2\nu_e + 2\gamma$$
 
 Net energy release: $\sim 26.7$ MeV per helium-4 nucleus formed.
 
@@ -308,9 +308,9 @@ Achieving and confining a plasma at $10^8$ K is extraordinarily difficult. Two m
 
 <details>
 <summary>Worked Example: Energy from Fission</summary>
-Calculate the energy released when a $\prescript{235}{}_{92}\mathrm{U}$ nucleus undergoes fission.
-Given: $m(\prescript{235}{}_{92}\mathrm{U}) = 235.044$ u, $m(\prescript{141}{}_{56}\mathrm{Ba}) = 140.914$ u,
-$m(\prescript{92}{}_{36}\mathrm{Kr}) = 91.926$ u, $m(\prescript{1}{}_{0}\mathrm{n}) = 1.00867$ u.
+Calculate the energy released when a $\prescript{235}{}_{92}\mathrm{'\{'}U{'\}'}$ nucleus undergoes fission.
+Given: $m(\prescript{235}{}_{92}\mathrm{'\{'}U{'\}'}) = 235.044$ u, $m(\prescript{141}{}_{56}\mathrm{'\{'}Ba{'\}'}) = 140.914$ u,
+$m(\prescript{92}{}_{36}\mathrm{'\{'}Kr{'\}'}) = 91.926$ u, $m(\prescript{1}{}_{0}\mathrm{'\{'}n{'\}'}) = 1.00867$ u.
 
 **Answer.** Mass of products: $140.914 + 91.926 + 3 \times 1.00867 = 235.866$ u.
 
@@ -333,8 +333,8 @@ Calculate the distance of closest approach for a 7.7 MeV alpha particle scattere
 
 <details>
 <summary>Problem 2</summary>
-Calculate the binding energy per nucleon of $\prescript{56}{}_{26}\mathrm{Fe}$.
-Given: $m(\prescript{56}{}_{26}\mathrm{Fe}) = 55.9349$ u.
+Calculate the binding energy per nucleon of $\prescript{56}{}_{26}\mathrm{'\{'}Fe{'\}'}$.
+Given: $m(\prescript{56}{}_{26}\mathrm{'\{'}Fe{'\}'}) = 55.9349$ u.
 
 **Answer.** $\Delta m = 26 \times 1.00728 + 30 \times 1.00867 - 55.9349 = 26.1893 + 30.2601 - 55.9349 = 0.5145$ u.
 
@@ -344,9 +344,9 @@ $E_b = 0.5145 \times 931.5 = 479.3$ MeV. $E_b/A = 479.3/56 = 8.56$ MeV/nucleon.
 
 <details>
 <summary>Problem 3</summary>
-Write the balanced equation for the beta-minus decay of $\prescript{14}{}{6}\mathrm{C}$.
+Write the balanced equation for the beta-minus decay of $\prescript{14}{}{6}\mathrm{'\{'}C{'\}'}$.
 
-**Answer.** $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
+**Answer.** $\prescript{14}{}{6}\mathrm{'\{'}C{'\}'} \to \prescript{14}{}{7}\mathrm{'\{'}N{'\}'} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
 
 Check: $A$: $14 = 14 + 0 + 0$. $Z$: $6 = 7 + (-1) + 0$. Both conserved.
 
@@ -380,8 +380,8 @@ than the reactants, meaning mass is converted to energy via $E = \Delta m\,c^2$.
 <details>
 <summary>Problem 6</summary>
 Calculate the energy released when two deuterium nuclei fuse to form helium-3 and a neutron:
-$\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}_{1}\mathrm{H} \to \prescript{3}{}_{2}\mathrm{He} + \prescript{1}{}_{0}\mathrm{n}$.
-Given: $m(\prescript{2}{}_{1}\mathrm{H}) = 2.01410$ u, $m(\prescript{3}{}_{2}\mathrm{He}) = 3.01603$ u.
+$\prescript{2}{}{1}\mathrm{'\{'}H{'\}'} + \prescript{2}{}_{1}\mathrm{'\{'}H{'\}'} \to \prescript{3}{}_{2}\mathrm{'\{'}He{'\}'} + \prescript{1}{}_{0}\mathrm{'\{'}n{'\}'}$.
+Given: $m(\prescript{2}{}_{1}\mathrm{'\{'}H{'\}'}) = 2.01410$ u, $m(\prescript{3}{}_{2}\mathrm{'\{'}He{'\}'}) = 3.01603$ u.
 
 **Answer.** $\Delta m = 2 \times 2.01410 - 3.01603 - 1.00867 = 4.02820 - 4.02470 = 0.00350$ u.
 
@@ -405,7 +405,7 @@ reaction requires them to be fast (high energy), not slow. A moderator would be 
 
 <details>
 <summary>Problem 8</summary>
-A radioactive sample contains $\prescript{131}{}_{53}\mathrm{I}$ (half-life 8.04 days) with initial
+A radioactive sample contains $\prescript{131}{}_{53}\mathrm{'\{'}I{'\}'}$ (half-life 8.04 days) with initial
 activity 800 Bq. How long until the activity falls to 50 Bq?
 
 **Answer.** $A = A_0 e^{-\lambda t}$. $50 = 800 e^{-\lambda t}$. $e^{-\lambda t} = 1/16$.

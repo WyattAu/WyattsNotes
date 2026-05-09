@@ -362,7 +362,7 @@ The barrier can accept a **completion function** that is executed once when all 
 before any waiting thread is released:
 
 $$
-\mathrm{Phase } k \to \mathrm{completion function} \to \mathrm{Phase } k+1
+\mathrm{'\{'}Phase {'\}'} k \to \mathrm{'\{'}completion function{'\}'} \to \mathrm{'\{'}Phase {'\}'} k+1
 $$
 
 ## Barrier Synchronization for Parallel Computation

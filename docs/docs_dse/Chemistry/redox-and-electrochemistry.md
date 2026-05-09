@@ -33,10 +33,10 @@ A useful mnemonic for remembering the definitions:
 
 Identify the species oxidised, reduced, oxidising agent, and reducing agent in:
 
-$$\mathrm{Zn} + \mathrm{Cu^{2+}} \to \mathrm{Zn^{2+}} + \mathrm{Cu}$$
+$$\mathrm{'\{'}Zn{'\}'} + \mathrm{Cu^{2+}} \to \mathrm{Zn^{2+}} + \mathrm{'\{'}Cu{'\}'}$$
 
-- $\mathrm{Zn} \to \mathrm{Zn^{2+}} + 2e^-$ (oxidation; $\mathrm{Zn}$ is the reducing agent)
-- $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$ (reduction; $\mathrm{Cu^{2+}}$ is the oxidising agent)
+- $\mathrm{'\{'}Zn{'\}'} \to \mathrm{Zn^{2+}} + 2e^-$ (oxidation; $\mathrm{'\{'}Zn{'\}'}$ is the reducing agent)
+- $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{'\{'}Cu{'\}'}$ (reduction; $\mathrm{Cu^{2+}}$ is the oxidising agent)
 
 ---
 
@@ -48,14 +48,14 @@ Oxidation numbers are assigned to atoms using the following rules:
 2. The oxidation number of a simple ion equals its charge.
 3. In compounds, the sum of all oxidation numbers equals the overall charge.
 4. In most compounds, hydrogen is $+1$ (except in metal hydrides where it is $-1$).
-5. In most compounds, oxygen is $-2$ (except in peroxides where it is $-1$, and in $\mathrm{OF_2}$ where it is $+2$).
+5. In most compounds, oxygen is $-2$ (except in peroxides where it is $-1$, and in $\mathrm{'\{'}OF_2{'\}'}$ where it is $+2$).
 6. Fluorine is always $-1$ in its compounds.
 
 ### Worked Example 2
 
-Determine the oxidation numbers of all elements in $\mathrm{KMnO_4}$.
+Determine the oxidation numbers of all elements in $\mathrm{'\{'}KMnO_4{'\}'}$.
 
-$$\mathrm{K}: +1, \quad \mathrm{O}: -2, \quad \mathrm{Mn}: x$$
+$$\mathrm{'\{'}K{'\}'}: +1, \quad \mathrm{'\{'}O{'\}'}: -2, \quad \mathrm{'\{'}Mn{'\}'}: x$$
 
 $$+1 + x + 4(-2) = 0$$
 
@@ -63,7 +63,7 @@ $$x + 1 - 8 = 0$$
 
 $$x = +7$$
 
-The oxidation number of manganese in $\mathrm{KMnO_4}$ is $+7$.
+The oxidation number of manganese in $\mathrm{'\{'}KMnO_4{'\}'}$ is $+7$.
 
 ### Worked Example 3
 
@@ -86,20 +86,20 @@ The oxidation number of chromium in $\mathrm{Cr_2O_7^{2-}}$ is $+6$.
 ### Half-Equation Method
 
 1. Write the two half-equations (oxidation and reduction).
-2. Balance atoms other than $\mathrm{O}$ and $\mathrm{H}$.
-3. Balance oxygen by adding $\mathrm{H_2O}$.
-4. Balance hydrogen by adding $\mathrm{H^+}$.
+2. Balance atoms other than $\mathrm{'\{'}O{'\}'}$ and $\mathrm{'\{'}H{'\}'}$.
+3. Balance oxygen by adding $\mathrm{'\{'}H_2O{'\}'}$.
+4. Balance hydrogen by adding $\mathrm{'\{'}H^+{'\}'}$.
 5. Balance charge by adding electrons.
 6. Multiply the half-equations so that the electrons cancel.
 7. Add the half-equations and simplify.
 
 ### Worked Example 4
 
-Balance the reaction between $\mathrm{MnO_4^-}$ and $\mathrm{Fe^{2+}}$ in acidic solution.
+Balance the reaction between $\mathrm{'\{'}MnO_4^-{'\}'}$ and $\mathrm{Fe^{2+}}$ in acidic solution.
 
 Reduction half-equation:
 
-$$\mathrm{MnO_4^-} + 8\mathrm{H^+} + 5e^- \to \mathrm{Mn^{2+}} + 4\mathrm{H_2O}$$
+$$\mathrm{'\{'}MnO_4^-{'\}'} + 8\mathrm{'\{'}H^+{'\}'} + 5e^- \to \mathrm{Mn^{2+}} + 4\mathrm{'\{'}H_2O{'\}'}$$
 
 Oxidation half-equation:
 
@@ -111,7 +111,7 @@ $$5\mathrm{Fe^{2+}} \to 5\mathrm{Fe^{3+}} + 5e^-$$
 
 Add both half-equations:
 
-$$\mathrm{MnO_4^-} + 8\mathrm{H^+} + 5\mathrm{Fe^{2+}} \to \mathrm{Mn^{2+}} + 4\mathrm{H_2O} + 5\mathrm{Fe^{3+}}$$
+$$\mathrm{'\{'}MnO_4^-{'\}'} + 8\mathrm{'\{'}H^+{'\}'} + 5\mathrm{Fe^{2+}} \to \mathrm{Mn^{2+}} + 4\mathrm{'\{'}H_2O{'\}'} + 5\mathrm{Fe^{3+}}$$
 
 ---
 
@@ -124,13 +124,13 @@ compound.
 
 The reactivity series ranks metals in order of their tendency to lose electrons:
 
-$$\mathrm{K} \gt \mathrm{Na} \gt \mathrm{Ca} \gt \mathrm{Mg} \gt \mathrm{Al} \gt \mathrm{Zn} \gt \mathrm{Fe} \gt \mathrm{Sn} \gt \mathrm{Pb} \gt (\mathrm{H}) \gt \mathrm{Cu} \gt \mathrm{Ag} \gt \mathrm{Au}$$
+$$\mathrm{'\{'}K{'\}'} \gt \mathrm{'\{'}Na{'\}'} \gt \mathrm{'\{'}Ca{'\}'} \gt \mathrm{'\{'}Mg{'\}'} \gt \mathrm{'\{'}Al{'\}'} \gt \mathrm{'\{'}Zn{'\}'} \gt \mathrm{'\{'}Fe{'\}'} \gt \mathrm{'\{'}Sn{'\}'} \gt \mathrm{'\{'}Pb{'\}'} \gt (\mathrm{'\{'}H{'\}'}) \gt \mathrm{'\{'}Cu{'\}'} \gt \mathrm{'\{'}Ag{'\}'} \gt \mathrm{'\{'}Au{'\}'}$$
 
 ### Examples
 
-$$\mathrm{Zn} + \mathrm{CuSO_4} \to \mathrm{ZnSO_4} + \mathrm{Cu}$$
+$$\mathrm{'\{'}Zn{'\}'} + \mathrm{'\{'}CuSO_4{'\}'} \to \mathrm{'\{'}ZnSO_4{'\}'} + \mathrm{'\{'}Cu{'\}'}$$
 
-$$\mathrm{Fe} + \mathrm{CuSO_4} \to \mathrm{FeSO_4} + \mathrm{Cu}$$
+$$\mathrm{'\{'}Fe{'\}'} + \mathrm{'\{'}CuSO_4{'\}'} \to \mathrm{'\{'}FeSO_4{'\}'} + \mathrm{'\{'}Cu{'\}'}$$
 
 Copper cannot displace iron or zinc because copper is less reactive.
 
@@ -140,10 +140,10 @@ Will magnesium displace copper from copper(II) sulphate solution? Write the equa
 
 Yes, because magnesium is above copper in the reactivity series.
 
-$$\mathrm{Mg} + \mathrm{CuSO_4} \to \mathrm{MgSO_4} + \mathrm{Cu}$$
+$$\mathrm{'\{'}Mg{'\}'} + \mathrm{'\{'}CuSO_4{'\}'} \to \mathrm{'\{'}MgSO_4{'\}'} + \mathrm{'\{'}Cu{'\}'}$$
 
-Magnesium is oxidised ($\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$) and copper(II) ions are reduced
-($\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$).
+Magnesium is oxidised ($\mathrm{'\{'}Mg{'\}'} \to \mathrm{Mg^{2+}} + 2e^-$) and copper(II) ions are reduced
+($\mathrm{Cu^{2+}} + 2e^- \to \mathrm{'\{'}Cu{'\}'}$).
 
 ---
 
@@ -151,27 +151,27 @@ Magnesium is oxidised ($\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$) and copper(II)
 
 ### Metals Above Carbon in the Reactivity Series
 
-Metals more reactive than carbon ($\mathrm{K}$, $\mathrm{Na}$, $\mathrm{Ca}$, $\mathrm{Mg}$,
-$\mathrm{Al}$) are extracted by **electrolysis** of their molten compounds (usually chlorides or
+Metals more reactive than carbon ($\mathrm{'\{'}K{'\}'}$, $\mathrm{'\{'}Na{'\}'}$, $\mathrm{'\{'}Ca{'\}'}$, $\mathrm{'\{'}Mg{'\}'}$,
+$\mathrm{'\{'}Al{'\}'}$) are extracted by **electrolysis** of their molten compounds (usually chlorides or
 oxides).
 
-**Example: Extraction of aluminium from $\mathrm{Al_2O_3}$ (Hall-Heroult process)**
+**Example: Extraction of aluminium from $\mathrm{'\{'}Al_2O_3{'\}'}$ (Hall-Heroult process)**
 
-- $\mathrm{Al_2O_3}$ is dissolved in molten cryolite ($\mathrm{Na_3AlF_6}$) to lower its melting
+- $\mathrm{'\{'}Al_2O_3{'\}'}$ is dissolved in molten cryolite ($\mathrm{'\{'}Na_3AlF_6{'\}'}$) to lower its melting
   point.
-- At the cathode: $\mathrm{Al^{3+}} + 3e^- \to \mathrm{Al}$
-- At the anode: $2\mathrm{O^{2-}} \to \mathrm{O_2} + 4e^-$
-- The oxygen reacts with the carbon anodes to form $\mathrm{CO_2}$, so the anodes must be
+- At the cathode: $\mathrm{Al^{3+}} + 3e^- \to \mathrm{'\{'}Al{'\}'}$
+- At the anode: $2\mathrm{O^{2-}} \to \mathrm{'\{'}O_2{'\}'} + 4e^-$
+- The oxygen reacts with the carbon anodes to form $\mathrm{'\{'}CO_2{'\}'}$, so the anodes must be
   replaced periodically.
 
 ### Metals Below Carbon in the Reactivity Series
 
-Metals less reactive than carbon ($\mathrm{Zn}$, $\mathrm{Fe}$, $\mathrm{Sn}$, $\mathrm{Pb}$,
-$\mathrm{Cu}$) are extracted by **reduction with carbon** in a blast furnace.
+Metals less reactive than carbon ($\mathrm{'\{'}Zn{'\}'}$, $\mathrm{'\{'}Fe{'\}'}$, $\mathrm{'\{'}Sn{'\}'}$, $\mathrm{'\{'}Pb{'\}'}$,
+$\mathrm{'\{'}Cu{'\}'}$) are extracted by **reduction with carbon** in a blast furnace.
 
-**Example: Extraction of iron from $\mathrm{Fe_2O_3}$**
+**Example: Extraction of iron from $\mathrm{'\{'}Fe_2O_3{'\}'}$**
 
-$$\mathrm{Fe_2O_3} + 3\mathrm{CO} \to 2\mathrm{Fe} + 3\mathrm{CO_2}$$
+$$\mathrm{'\{'}Fe_2O_3{'\}'} + 3\mathrm{'\{'}CO{'\}'} \to 2\mathrm{'\{'}Fe{'\}'} + 3\mathrm{'\{'}CO_2{'\}'}$$
 
 Carbon monoxide (from the partial combustion of coke) is the reducing agent.
 
@@ -181,11 +181,11 @@ Carbon monoxide (from the partial combustion of coke) is the reducing agent.
 
 ### Rusting of Iron
 
-Rust is hydrated iron(III) oxide ($\mathrm{Fe_2O_3 \cdot xH_2O}$). Rusting requires both water and
+Rust is hydrated iron(III) oxide ($\mathrm{'\{'}Fe_2O_3 \cdot xH_2O{'\}'}$). Rusting requires both water and
 oxygen. It is an electrochemical process:
 
-- At the anode (iron surface): $\mathrm{Fe} \to \mathrm{Fe^{2+}} + 2e^-$
-- At the cathode: $\mathrm{O_2} + 2\mathrm{H_2O} + 4e^- \to 4\mathrm{OH^-}$
+- At the anode (iron surface): $\mathrm{'\{'}Fe{'\}'} \to \mathrm{Fe^{2+}} + 2e^-$
+- At the cathode: $\mathrm{'\{'}O_2{'\}'} + 2\mathrm{'\{'}H_2O{'\}'} + 4e^- \to 4\mathrm{'\{'}OH^-{'\}'}$
 - $\mathrm{Fe^{2+}}$ ions are further oxidised to $\mathrm{Fe^{3+}}$ and form rust.
 
 ### Methods of Prevention
@@ -216,14 +216,14 @@ half-cells connected by a wire (external circuit) and a salt bridge (internal ci
 
 ### Example: Daniell Cell
 
-- **Half-cell 1:** $\mathrm{Zn}(s) \mid \mathrm{Zn^{2+}}(aq)$ (anode, oxidation)
-- **Half-cell 2:** $\mathrm{Cu}(s) \mid \mathrm{Cu^{2+}}(aq)$ (cathode, reduction)
+- **Half-cell 1:** $\mathrm{'\{'}Zn{'\}'}(s) \mid \mathrm{Zn^{2+}}(aq)$ (anode, oxidation)
+- **Half-cell 2:** $\mathrm{'\{'}Cu{'\}'}(s) \mid \mathrm{Cu^{2+}}(aq)$ (cathode, reduction)
 - **Salt bridge:** Allows ions to flow, maintaining electrical neutrality
 
 **Reactions:**
-- Anode (oxidation): $\mathrm{Zn} \to \mathrm{Zn^{2+}} + 2e^-$
-- Cathode (reduction): $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$
-- Overall: $\mathrm{Zn} + \mathrm{Cu^{2+}} \to \mathrm{Zn^{2+}} + \mathrm{Cu}$
+- Anode (oxidation): $\mathrm{'\{'}Zn{'\}'} \to \mathrm{Zn^{2+}} + 2e^-$
+- Cathode (reduction): $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{'\{'}Cu{'\}'}$
+- Overall: $\mathrm{'\{'}Zn{'\}'} + \mathrm{Cu^{2+}} \to \mathrm{Zn^{2+}} + \mathrm{'\{'}Cu{'\}'}$
 
 Electrons flow from the zinc electrode (anode) to the copper electrode (cathode) through the
 external wire.
@@ -233,9 +233,9 @@ external wire.
 The cell potential (voltage) is determined by the difference between the standard electrode
 potentials of the two half-cells:
 
-$$E^\circ_{\mathrm{cell}} = E^\circ_{\mathrm{cathode}} - E^\circ_{\mathrm{anode}}$$
+$$E^\circ_{\mathrm{'\{'}cell{'\}'}} = E^\circ_{\mathrm{'\{'}cathode{'\}'}} - E^\circ_{\mathrm{'\{'}anode{'\}'}}$$
 
-A positive $E^\circ_{\mathrm{cell}}$ indicates that the reaction is spontaneous.
+A positive $E^\circ_{\mathrm{'\{'}cell{'\}'}}$ indicates that the reaction is spontaneous.
 
 ---
 
@@ -259,10 +259,10 @@ At the cathode: metal cations gain electrons (reduced to metal).
 
 At the anode: non-metal anions lose electrons (oxidised to non-metal).
 
-**Example: Electrolysis of molten $\mathrm{NaCl}$**
+**Example: Electrolysis of molten $\mathrm{'\{'}NaCl{'\}'}$**
 
-- Cathode: $\mathrm{Na^+} + e^- \to \mathrm{Na}$
-- Anode: $2\mathrm{Cl^-} \to \mathrm{Cl_2} + 2e^-$
+- Cathode: $\mathrm{'\{'}Na^+{'\}'} + e^- \to \mathrm{'\{'}Na{'\}'}$
+- Anode: $2\mathrm{'\{'}Cl^-{'\}'} \to \mathrm{'\{'}Cl_2{'\}'} + 2e^-$
 
 ### Electrolysis of Aqueous Solutions
 
@@ -271,30 +271,30 @@ discharged. The product at each electrode depends on the relative reactivity of 
 
 **At the cathode (reduction):**
 
-- If the metal is more reactive than hydrogen ($\mathrm{K}$, $\mathrm{Na}$, $\mathrm{Ca}$,
-  $\mathrm{Mg}$, $\mathrm{Al}$, $\mathrm{Zn}$): hydrogen gas is produced.
-  $$2\mathrm{H_2O} + 2e^- \to \mathrm{H_2} + 2\mathrm{OH^-}$$
-- If the metal is less reactive than hydrogen ($\mathrm{Cu}$, $\mathrm{Ag}$, $\mathrm{Au}$): the
+- If the metal is more reactive than hydrogen ($\mathrm{'\{'}K{'\}'}$, $\mathrm{'\{'}Na{'\}'}$, $\mathrm{'\{'}Ca{'\}'}$,
+  $\mathrm{'\{'}Mg{'\}'}$, $\mathrm{'\{'}Al{'\}'}$, $\mathrm{'\{'}Zn{'\}'}$): hydrogen gas is produced.
+  $$2\mathrm{'\{'}H_2O{'\}'} + 2e^- \to \mathrm{'\{'}H_2{'\}'} + 2\mathrm{'\{'}OH^-{'\}'}$$
+- If the metal is less reactive than hydrogen ($\mathrm{'\{'}Cu{'\}'}$, $\mathrm{'\{'}Ag{'\}'}$, $\mathrm{'\{'}Au{'\}'}$): the
   metal is produced.
-  $$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$$
+  $$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{'\{'}Cu{'\}'}$$
 
 **At the anode (oxidation):**
 
-- If the anion is a halide ($\mathrm{Cl^-}$, $\mathrm{Br^-}$, $\mathrm{I^-}$): the halogen is
+- If the anion is a halide ($\mathrm{'\{'}Cl^-{'\}'}$, $\mathrm{'\{'}Br^-{'\}'}$, $\mathrm{'\{'}I^-{'\}'}$): the halogen is
   produced.
-  $$2\mathrm{Cl^-} \to \mathrm{Cl_2} + 2e^-$$
-- If the anion is anything else ($\mathrm{SO_4^{2-}}$, $\mathrm{NO_3^-}$): oxygen gas is produced.
-  $$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$
-  (or equivalently: $2\mathrm{H_2O} \to \mathrm{O_2} + 4\mathrm{H^+} + 4e^-$)
+  $$2\mathrm{'\{'}Cl^-{'\}'} \to \mathrm{'\{'}Cl_2{'\}'} + 2e^-$$
+- If the anion is anything else ($\mathrm{SO_4^{2-}}$, $\mathrm{'\{'}NO_3^-{'\}'}$): oxygen gas is produced.
+  $$4\mathrm{'\{'}OH^-{'\}'} \to \mathrm{'\{'}O_2{'\}'} + 2\mathrm{'\{'}H_2O{'\}'} + 4e^-$$
+  (or equivalently: $2\mathrm{'\{'}H_2O{'\}'} \to \mathrm{'\{'}O_2{'\}'} + 4\mathrm{'\{'}H^+{'\}'} + 4e^-$)
 
 ### Worked Example 7
 
 Predict the products of the electrolysis of aqueous copper(II) sulphate with inert electrodes.
 
 - Cathode: Copper is less reactive than hydrogen, so copper is deposited.
-  $$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$$
+  $$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{'\{'}Cu{'\}'}$$
 - Anode: $\mathrm{SO_4^{2-}}$ is not a halide, so oxygen is produced.
-  $$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$
+  $$4\mathrm{'\{'}OH^-{'\}'} \to \mathrm{'\{'}O_2{'\}'} + 2\mathrm{'\{'}H_2O{'\}'} + 4e^-$$
 
 ### Quantitative Electrolysis
 
@@ -308,7 +308,7 @@ where:
 - $Q$ = charge in coulombs (C)
 - $I$ = current in amperes (A)
 - $t$ = time in seconds (s)
-- $F = 96500 \mathrm{ C/mol}$ (Faraday constant)
+- $F = 96500 \mathrm{'\{'} C/mol{'\}'}$ (Faraday constant)
 - $n$ = number of moles of electrons
 
 The mass of substance produced:
@@ -319,16 +319,16 @@ where $z$ is the number of electrons transferred per ion and $M$ is the molar ma
 
 ### Worked Example 8
 
-Calculate the mass of copper deposited when a current of $2.50 \mathrm{ A}$ is passed through
-copper(II) sulphate solution for $30.0 \mathrm{ minutes}$.
+Calculate the mass of copper deposited when a current of $2.50 \mathrm{'\{'} A{'\}'}$ is passed through
+copper(II) sulphate solution for $30.0 \mathrm{'\{'} minutes{'\}'}$.
 
-$$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu} \quad (z = 2)$$
+$$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{'\{'}Cu{'\}'} \quad (z = 2)$$
 
-$$Q = It = 2.50 \times 30.0 \times 60 = 4500 \mathrm{ C}$$
+$$Q = It = 2.50 \times 30.0 \times 60 = 4500 \mathrm{'\{'} C{'\}'}$$
 
-$$n(\mathrm{Cu}) = \frac{Q}{zF} = \frac{4500}{2 \times 96500} = 0.02332 \mathrm{ mol}$$
+$$n(\mathrm{'\{'}Cu{'\}'}) = \frac{Q}{zF} = \frac{4500}{2 \times 96500} = 0.02332 \mathrm{'\{'} mol{'\}'}$$
 
-$$m = n \times M = 0.02332 \times 63.5 = 1.48 \mathrm{ g}$$
+$$m = n \times M = 0.02332 \times 63.5 = 1.48 \mathrm{'\{'} g{'\}'}$$
 
 ---
 
@@ -345,13 +345,13 @@ electrolysis.
 
 ### Example: Silver Plating
 
-- Anode: $\mathrm{Ag}(s)$
+- Anode: $\mathrm{'\{'}Ag{'\}'}(s)$
 - Cathode: Object to be plated
-- Electrolyte: $\mathrm{AgNO_3}(aq)$
+- Electrolyte: $\mathrm{'\{'}AgNO_3{'\}'}(aq)$
 
-At the anode: $\mathrm{Ag} \to \mathrm{Ag^+} + e^-$ (silver dissolves)
+At the anode: $\mathrm{'\{'}Ag{'\}'} \to \mathrm{'\{'}Ag^+{'\}'} + e^-$ (silver dissolves)
 
-At the cathode: $\mathrm{Ag^+} + e^- \to \mathrm{Ag}$ (silver deposits on the object)
+At the cathode: $\mathrm{'\{'}Ag^+{'\}'} + e^- \to \mathrm{'\{'}Ag{'\}'}$ (silver deposits on the object)
 
 ---
 
@@ -384,8 +384,8 @@ At the cathode: $\mathrm{Ag^+} + e^- \to \mathrm{Ag}$ (silver deposits on the ob
 | Galvanic cell        | Converts chemical energy to electrical energy          |
 | Electrolysis         | Converts electrical energy to chemical energy          |
 | Faraday's law        | $m = ItM / (zF)$                                       |
-| Cathode product      | Metal (if less reactive than H) or $\mathrm{H_2}$     |
-| Anode product        | Halogen (if halide present) or $\mathrm{O_2}$         |
+| Cathode product      | Metal (if less reactive than H) or $\mathrm{'\{'}H_2{'\}'}$     |
+| Anode product        | Halogen (if halide present) or $\mathrm{'\{'}O_2{'\}'}$         |
 
 ---
 
@@ -393,7 +393,7 @@ At the cathode: $\mathrm{Ag^+} + e^- \to \mathrm{Ag}$ (silver deposits on the ob
 
 ### Worked Example: Oxidation Numbers in a Polyatomic Ion
 
-Determine the oxidation number of nitrogen in the ammonium ion, $\mathrm{NH_4^+}$.
+Determine the oxidation number of nitrogen in the ammonium ion, $\mathrm{'\{'}NH_4^+{'\}'}$.
 
 <details>
 <summary>Solution</summary>
@@ -404,47 +404,47 @@ $$x + 4 = +1$$
 
 $$x = -3$$
 
-The oxidation number of nitrogen in $\mathrm{NH_4^+}$ is $-3$.
+The oxidation number of nitrogen in $\mathrm{'\{'}NH_4^+{'\}'}$ is $-3$.
 
 </details>
 
 ### Worked Example: Cell Potential and Spontaneity
 
-A cell is constructed from a $\mathrm{Mg}^{2+}/\mathrm{Mg}$ half-cell ($E^\circ = -2.37 \mathrm{ V}$) and a $\mathrm{Fe}^{2+}/\mathrm{Fe}$ half-cell ($E^\circ = -0.44 \mathrm{ V}$). Calculate the cell potential, write the overall equation, and state whether the reaction is spontaneous.
+A cell is constructed from a $\mathrm{'\{'}Mg{'\}'}^{2+}/\mathrm{'\{'}Mg{'\}'}$ half-cell ($E^\circ = -2.37 \mathrm{'\{'} V{'\}'}$) and a $\mathrm{'\{'}Fe{'\}'}^{2+}/\mathrm{'\{'}Fe{'\}'}$ half-cell ($E^\circ = -0.44 \mathrm{'\{'} V{'\}'}$). Calculate the cell potential, write the overall equation, and state whether the reaction is spontaneous.
 
 <details>
 <summary>Solution</summary>
 
 Iron has the more positive $E^\circ$, so it undergoes reduction (cathode).
 
-$$E^\circ_{\mathrm{cell}} = -0.44 - (-2.37) = 1.93 \mathrm{ V}$$
+$$E^\circ_{\mathrm{'\{'}cell{'\}'}} = -0.44 - (-2.37) = 1.93 \mathrm{'\{'} V{'\}'}$$
 
-Cathode (reduction): $\mathrm{Fe}^{2+} + 2e^- \to \mathrm{Fe}$
+Cathode (reduction): $\mathrm{'\{'}Fe{'\}'}^{2+} + 2e^- \to \mathrm{'\{'}Fe{'\}'}$
 
-Anode (oxidation): $\mathrm{Mg} \to \mathrm{Mg}^{2+} + 2e^-$
+Anode (oxidation): $\mathrm{'\{'}Mg{'\}'} \to \mathrm{'\{'}Mg{'\}'}^{2+} + 2e^-$
 
-Overall: $\mathrm{Mg} + \mathrm{Fe}^{2+} \to \mathrm{Mg}^{2+} + \mathrm{Fe}$
+Overall: $\mathrm{'\{'}Mg{'\}'} + \mathrm{'\{'}Fe{'\}'}^{2+} \to \mathrm{'\{'}Mg{'\}'}^{2+} + \mathrm{'\{'}Fe{'\}'}$
 
-Since $E^\circ_{\mathrm{cell}} = +1.93 \mathrm{ V} \gt 0$, the reaction is spontaneous.
+Since $E^\circ_{\mathrm{'\{'}cell{'\}'}} = +1.93 \mathrm{'\{'} V{'\}'} \gt 0$, the reaction is spontaneous.
 
 </details>
 
-### Worked Example: Electrolysis of Aqueous $\mathrm{CuSO_4}$ with Active Electrodes
+### Worked Example: Electrolysis of Aqueous $\mathrm{'\{'}CuSO_4{'\}'}$ with Active Electrodes
 
-Predict the products when aqueous $\mathrm{CuSO_4}$ is electrolysed using **copper** electrodes (instead of inert electrodes).
+Predict the products when aqueous $\mathrm{'\{'}CuSO_4{'\}'}$ is electrolysed using **copper** electrodes (instead of inert electrodes).
 
 <details>
 <summary>Solution</summary>
 
 At the cathode: Copper is less reactive than hydrogen, so copper is deposited.
 
-$$\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$
+$$\mathrm{'\{'}Cu{'\}'}^{2+} + 2e^- \to \mathrm{'\{'}Cu{'\}'}$$
 
-At the anode: Since the anode is made of copper (not inert), the copper anode itself dissolves rather than $\mathrm{SO_4^{2-}}$ or $\mathrm{OH^-}$ being discharged.
+At the anode: Since the anode is made of copper (not inert), the copper anode itself dissolves rather than $\mathrm{SO_4^{2-}}$ or $\mathrm{'\{'}OH^-{'\}'}$ being discharged.
 
-$$\mathrm{Cu} \to \mathrm{Cu}^{2+} + 2e^-$$
+$$\mathrm{'\{'}Cu{'\}'} \to \mathrm{'\{'}Cu{'\}'}^{2+} + 2e^-$$
 
-The concentration of $\mathrm{CuSO_4}$ remains constant because copper dissolves from the anode at the same rate it deposits at the cathode. This is the principle of **electrolytic refining** of copper.
+The concentration of $\mathrm{'\{'}CuSO_4{'\}'}$ remains constant because copper dissolves from the anode at the same rate it deposits at the cathode. This is the principle of **electrolytic refining** of copper.
 
 </details>
 
@@ -453,7 +453,7 @@ The concentration of $\mathrm{CuSO_4}$ remains constant because copper dissolves
 <details>
 <summary>Exam-Style Practice Questions</summary>
 
-**Question 1:** Determine the oxidation number of sulfur in $\mathrm{H_2SO_4}$.
+**Question 1:** Determine the oxidation number of sulfur in $\mathrm{'\{'}H_2SO_4{'\}'}$.
 
 $$2(+1) + x + 4(-2) = 0$$
 
@@ -463,49 +463,49 @@ $$x = +6$$
 
 **Question 2:** Balance the following redox equation:
 
-$$\mathrm{MnO_4^-} + \mathrm{SO_3^{2-}} \to \mathrm{Mn^{2+}} + \mathrm{SO_4^{2-}}$$ (in acidic solution)
+$$\mathrm{'\{'}MnO_4^-{'\}'} + \mathrm{SO_3^{2-}} \to \mathrm{Mn^{2+}} + \mathrm{SO_4^{2-}}$$ (in acidic solution)
 
-Reduction: $\mathrm{MnO_4^-} + 8\mathrm{H^+} + 5e^- \to \mathrm{Mn^{2+}} + 4\mathrm{H_2O}$
+Reduction: $\mathrm{'\{'}MnO_4^-{'\}'} + 8\mathrm{'\{'}H^+{'\}'} + 5e^- \to \mathrm{Mn^{2+}} + 4\mathrm{'\{'}H_2O{'\}'}$
 
-Oxidation: $\mathrm{SO_3^{2-}} + \mathrm{H_2O} \to \mathrm{SO_4^{2-}} + 2\mathrm{H^+} + 2e^-$
+Oxidation: $\mathrm{SO_3^{2-}} + \mathrm{'\{'}H_2O{'\}'} \to \mathrm{SO_4^{2-}} + 2\mathrm{'\{'}H^+{'\}'} + 2e^-$
 
 Multiply reduction by 2 and oxidation by 5:
 
-$$2\mathrm{MnO_4^-} + 16\mathrm{H^+} + 5\mathrm{SO_3^{2-}} + 5\mathrm{H_2O} \to 2\mathrm{Mn^{2+}} + 8\mathrm{H_2O} + 5\mathrm{SO_4^{2-}} + 10\mathrm{H^+}$$
+$$2\mathrm{'\{'}MnO_4^-{'\}'} + 16\mathrm{'\{'}H^+{'\}'} + 5\mathrm{SO_3^{2-}} + 5\mathrm{'\{'}H_2O{'\}'} \to 2\mathrm{Mn^{2+}} + 8\mathrm{'\{'}H_2O{'\}'} + 5\mathrm{SO_4^{2-}} + 10\mathrm{'\{'}H^+{'\}'}$$
 
-Simplify: $2\mathrm{MnO_4^-} + 6\mathrm{H^+} + 5\mathrm{SO_3^{2-}} \to 2\mathrm{Mn^{2+}} + 3\mathrm{H_2O} + 5\mathrm{SO_4^{2-}}$
+Simplify: $2\mathrm{'\{'}MnO_4^-{'\}'} + 6\mathrm{'\{'}H^+{'\}'} + 5\mathrm{SO_3^{2-}} \to 2\mathrm{Mn^{2+}} + 3\mathrm{'\{'}H_2O{'\}'} + 5\mathrm{SO_4^{2-}}$
 
 **Question 3:** Explain why aluminium is extracted by electrolysis rather than by reduction with carbon.
 
 Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce aluminium oxide
 because aluminium has a greater affinity for oxygen than carbon does. Therefore, electrolysis of
-molten $\mathrm{Al_2O_3}$ is required.
+molten $\mathrm{'\{'}Al_2O_3{'\}'}$ is required.
 
-**Question 4:** Predict the products of electrolysis of concentrated aqueous $\mathrm{NaCl}$ with
+**Question 4:** Predict the products of electrolysis of concentrated aqueous $\mathrm{'\{'}NaCl{'\}'}$ with
 inert electrodes.
 
-Cathode: $\mathrm{Na}$ is more reactive than $\mathrm{H}$, so $\mathrm{H_2}$ is produced:
-$2\mathrm{H_2O} + 2e^- \to \mathrm{H_2} + 2\mathrm{OH^-}$
+Cathode: $\mathrm{'\{'}Na{'\}'}$ is more reactive than $\mathrm{'\{'}H{'\}'}$, so $\mathrm{'\{'}H_2{'\}'}$ is produced:
+$2\mathrm{'\{'}H_2O{'\}'} + 2e^- \to \mathrm{'\{'}H_2{'\}'} + 2\mathrm{'\{'}OH^-{'\}'}$
 
-Anode: $\mathrm{Cl^-}$ is a halide and is present in high concentration (concentrated), so
-$\mathrm{Cl_2}$ is produced: $2\mathrm{Cl^-} \to \mathrm{Cl_2} + 2e^-$
+Anode: $\mathrm{'\{'}Cl^-{'\}'}$ is a halide and is present in high concentration (concentrated), so
+$\mathrm{'\{'}Cl_2{'\}'}$ is produced: $2\mathrm{'\{'}Cl^-{'\}'} \to \mathrm{'\{'}Cl_2{'\}'} + 2e^-$
 
-**Question 5:** A current of $0.500 \mathrm{ A}$ is passed through molten lead(II) bromide for
-$965 \mathrm{ s}$. Calculate the mass of lead produced.
+**Question 5:** A current of $0.500 \mathrm{'\{'} A{'\}'}$ is passed through molten lead(II) bromide for
+$965 \mathrm{'\{'} s{'\}'}$. Calculate the mass of lead produced.
 
-$$\mathrm{Pb^{2+}} + 2e^- \to \mathrm{Pb} \quad (z = 2)$$
+$$\mathrm{Pb^{2+}} + 2e^- \to \mathrm{'\{'}Pb{'\}'} \quad (z = 2)$$
 
-$$Q = 0.500 \times 965 = 482.5 \mathrm{ C}$$
+$$Q = 0.500 \times 965 = 482.5 \mathrm{'\{'} C{'\}'}$$
 
-$$n(\mathrm{Pb}) = \frac{482.5}{2 \times 96500} = 2.50 \times 10^{-3} \mathrm{ mol}$$
+$$n(\mathrm{'\{'}Pb{'\}'}) = \frac{482.5}{2 \times 96500} = 2.50 \times 10^{-3} \mathrm{'\{'} mol{'\}'}$$
 
-$$m = 2.50 \times 10^{-3} \times 207 = 0.518 \mathrm{ g}$$
+$$m = 2.50 \times 10^{-3} \times 207 = 0.518 \mathrm{'\{'} g{'\}'}$$
 
 **Question 6:** Explain why a block of magnesium attached to an underground iron pipeline prevents
 the pipeline from rusting.
 
 Magnesium is more reactive than iron. When attached to the iron pipeline, magnesium acts as a
-sacrificial anode. It undergoes oxidation preferentially ($\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$),
+sacrificial anode. It undergoes oxidation preferentially ($\mathrm{'\{'}Mg{'\}'} \to \mathrm{Mg^{2+}} + 2e^-$),
 supplying electrons to the iron and preventing iron from losing electrons. As long as magnesium
 remains, the iron is protected from corrosion.
 
@@ -515,86 +515,86 @@ remains, the iron is protected from corrosion.
 
 ## Problem Set
 
-**Problem 1:** Determine the oxidation number of sulfur in $\mathrm{H_2SO_4}$ and in $\mathrm{SO_3^{2-}}$.
+**Problem 1:** Determine the oxidation number of sulfur in $\mathrm{'\{'}H_2SO_4{'\}'}$ and in $\mathrm{SO_3^{2-}}$.
 
 *If you get this wrong, revise: Oxidation Numbers*
 
 <details>
 <summary>Solution</summary>
 
-In $\mathrm{H_2SO_4}$: $2(+1) + x + 4(-2) = 0 \Rightarrow x = +6$
+In $\mathrm{'\{'}H_2SO_4{'\}'}$: $2(+1) + x + 4(-2) = 0 \Rightarrow x = +6$
 
 In $\mathrm{SO_3^{2-}}$: $x + 3(-2) = -2 \Rightarrow x - 6 = -2 \Rightarrow x = +4$
 
 </details>
 
-**Problem 2:** In the reaction $\mathrm{Fe_2O_3} + 3\mathrm{CO} \to 2\mathrm{Fe} + 3\mathrm{CO_2}$, identify the species oxidised, reduced, the oxidising agent, and the reducing agent.
+**Problem 2:** In the reaction $\mathrm{'\{'}Fe_2O_3{'\}'} + 3\mathrm{'\{'}CO{'\}'} \to 2\mathrm{'\{'}Fe{'\}'} + 3\mathrm{'\{'}CO_2{'\}'}$, identify the species oxidised, reduced, the oxidising agent, and the reducing agent.
 
 *If you get this wrong, revise: Oxidising and Reducing Agents*
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{C}$ in $\mathrm{CO}$: oxidation number $+2 \to +4$ in $\mathrm{CO_2}$ (oxidation). $\mathrm{CO}$ is the reducing agent.
+$\mathrm{'\{'}C{'\}'}$ in $\mathrm{'\{'}CO{'\}'}$: oxidation number $+2 \to +4$ in $\mathrm{'\{'}CO_2{'\}'}$ (oxidation). $\mathrm{'\{'}CO{'\}'}$ is the reducing agent.
 
-$\mathrm{Fe}$ in $\mathrm{Fe_2O_3}$: oxidation number $+3 \to 0$ in $\mathrm{Fe}$ (reduction). $\mathrm{Fe_2O_3}$ is the oxidising agent.
+$\mathrm{'\{'}Fe{'\}'}$ in $\mathrm{'\{'}Fe_2O_3{'\}'}$: oxidation number $+3 \to 0$ in $\mathrm{'\{'}Fe{'\}'}$ (reduction). $\mathrm{'\{'}Fe_2O_3{'\}'}$ is the oxidising agent.
 
 </details>
 
 **Problem 3:** Balance the following redox equation in acidic solution:
 
-$$\mathrm{Cr_2O_7^{2-}} + \mathrm{I^-} \to \mathrm{Cr^{3+}} + \mathrm{I_2}$$
+$$\mathrm{Cr_2O_7^{2-}} + \mathrm{'\{'}I^-{'\}'} \to \mathrm{Cr^{3+}} + \mathrm{'\{'}I_2{'\}'}$$
 
 *If you get this wrong, revise: Balancing Redox Equations*
 
 <details>
 <summary>Solution</summary>
 
-Reduction: $\mathrm{Cr_2O_7^{2-}} + 14\mathrm{H^+} + 6e^- \to 2\mathrm{Cr^{3+}} + 7\mathrm{H_2O}$
+Reduction: $\mathrm{Cr_2O_7^{2-}} + 14\mathrm{'\{'}H^+{'\}'} + 6e^- \to 2\mathrm{Cr^{3+}} + 7\mathrm{'\{'}H_2O{'\}'}$
 
-Oxidation: $2\mathrm{I^-} \to \mathrm{I_2} + 2e^-$
+Oxidation: $2\mathrm{'\{'}I^-{'\}'} \to \mathrm{'\{'}I_2{'\}'} + 2e^-$
 
-Multiply oxidation by 3: $6\mathrm{I^-} \to 3\mathrm{I_2} + 6e^-$
+Multiply oxidation by 3: $6\mathrm{'\{'}I^-{'\}'} \to 3\mathrm{'\{'}I_2{'\}'} + 6e^-$
 
-Combine: $\mathrm{Cr_2O_7^{2-}} + 14\mathrm{H^+} + 6\mathrm{I^-} \to 2\mathrm{Cr^{3+}} + 7\mathrm{H_2O} + 3\mathrm{I_2}$
+Combine: $\mathrm{Cr_2O_7^{2-}} + 14\mathrm{'\{'}H^+{'\}'} + 6\mathrm{'\{'}I^-{'\}'} \to 2\mathrm{Cr^{3+}} + 7\mathrm{'\{'}H_2O{'\}'} + 3\mathrm{'\{'}I_2{'\}'}$
 
 </details>
 
-**Problem 4:** Predict the products of electrolysis of aqueous $\mathrm{CuSO_4}$ using inert (carbon) electrodes. Write half-equations.
+**Problem 4:** Predict the products of electrolysis of aqueous $\mathrm{'\{'}CuSO_4{'\}'}$ using inert (carbon) electrodes. Write half-equations.
 
 *If you get this wrong, revise: Electrolysis of Aqueous Solutions*
 
 <details>
 <summary>Solution</summary>
 
-Cathode: $\mathrm{Cu}$ is below $\mathrm{H}$ in the reactivity series, so copper is deposited.
+Cathode: $\mathrm{'\{'}Cu{'\}'}$ is below $\mathrm{'\{'}H{'\}'}$ in the reactivity series, so copper is deposited.
 
-$$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$$
+$$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{'\{'}Cu{'\}'}$$
 
 Anode: $\mathrm{SO_4^{2-}}$ is not a halide, so oxygen is produced.
 
-$$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$
+$$4\mathrm{'\{'}OH^-{'\}'} \to \mathrm{'\{'}O_2{'\}'} + 2\mathrm{'\{'}H_2O{'\}'} + 4e^-$$
 
 </details>
 
-**Problem 5:** A current of $0.500 \mathrm{ A}$ is passed through molten $\mathrm{PbBr_2}$ for $965 \mathrm{ s}$. Calculate the mass of lead deposited.
+**Problem 5:** A current of $0.500 \mathrm{'\{'} A{'\}'}$ is passed through molten $\mathrm{'\{'}PbBr_2{'\}'}$ for $965 \mathrm{'\{'} s{'\}'}$. Calculate the mass of lead deposited.
 
 *If you get this wrong, revise: Quantitative Electrolysis*
 
 <details>
 <summary>Solution</summary>
 
-$$\mathrm{Pb^{2+}} + 2e^- \to \mathrm{Pb} \quad (z = 2)$$
+$$\mathrm{Pb^{2+}} + 2e^- \to \mathrm{'\{'}Pb{'\}'} \quad (z = 2)$$
 
-$$Q = 0.500 \times 965 = 482.5 \mathrm{ C}$$
+$$Q = 0.500 \times 965 = 482.5 \mathrm{'\{'} C{'\}'}$$
 
-$$n(\mathrm{Pb}) = \frac{Q}{zF} = \frac{482.5}{2 \times 96500} = 2.50 \times 10^{-3} \mathrm{ mol}$$
+$$n(\mathrm{'\{'}Pb{'\}'}) = \frac{Q}{zF} = \frac{482.5}{2 \times 96500} = 2.50 \times 10^{-3} \mathrm{'\{'} mol{'\}'}$$
 
-$$m = 2.50 \times 10^{-3} \times 207 = 0.518 \mathrm{ g}$$
+$$m = 2.50 \times 10^{-3} \times 207 = 0.518 \mathrm{'\{'} g{'\}'}$$
 
 </details>
 
-**Problem 6:** A cell is made from $\mathrm{Zn}^{2+}/\mathrm{Zn}$ ($E^\circ = -0.76 \mathrm{ V}$) and $\mathrm{Ag^+}/\mathrm{Ag}$ ($E^\circ = +0.80 \mathrm{ V}$). Calculate the cell potential and write the overall equation.
+**Problem 6:** A cell is made from $\mathrm{'\{'}Zn{'\}'}^{2+}/\mathrm{'\{'}Zn{'\}'}$ ($E^\circ = -0.76 \mathrm{'\{'} V{'\}'}$) and $\mathrm{'\{'}Ag^+{'\}'}/\mathrm{'\{'}Ag{'\}'}$ ($E^\circ = +0.80 \mathrm{'\{'} V{'\}'}$). Calculate the cell potential and write the overall equation.
 
 *If you get this wrong, revise: Cell Voltage*
 
@@ -603,13 +603,13 @@ $$m = 2.50 \times 10^{-3} \times 207 = 0.518 \mathrm{ g}$$
 
 Silver has the more positive $E^\circ$ (cathode, reduction):
 
-$$E^\circ_{\mathrm{cell}} = 0.80 - (-0.76) = 1.56 \mathrm{ V}$$
+$$E^\circ_{\mathrm{'\{'}cell{'\}'}} = 0.80 - (-0.76) = 1.56 \mathrm{'\{'} V{'\}'}$$
 
-Cathode: $2\mathrm{Ag^+} + 2e^- \to 2\mathrm{Ag}$
+Cathode: $2\mathrm{'\{'}Ag^+{'\}'} + 2e^- \to 2\mathrm{'\{'}Ag{'\}'}$
 
-Anode: $\mathrm{Zn} \to \mathrm{Zn^{2+}} + 2e^-$
+Anode: $\mathrm{'\{'}Zn{'\}'} \to \mathrm{Zn^{2+}} + 2e^-$
 
-Overall: $\mathrm{Zn} + 2\mathrm{Ag^+} \to \mathrm{Zn^{2+}} + 2\mathrm{Ag}$
+Overall: $\mathrm{'\{'}Zn{'\}'} + 2\mathrm{'\{'}Ag^+{'\}'} \to \mathrm{Zn^{2+}} + 2\mathrm{'\{'}Ag{'\}'}$
 
 </details>
 
@@ -620,35 +620,35 @@ Overall: $\mathrm{Zn} + 2\mathrm{Ag^+} \to \mathrm{Zn^{2+}} + 2\mathrm{Ag}$
 <details>
 <summary>Solution</summary>
 
-Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce $\mathrm{Al_2O_3}$ because aluminium has a stronger affinity for oxygen than carbon. Electrolysis of molten $\mathrm{Al_2O_3}$ (dissolved in cryolite) is required to force the reduction.
+Aluminium is more reactive than carbon in the reactivity series. Carbon cannot reduce $\mathrm{'\{'}Al_2O_3{'\}'}$ because aluminium has a stronger affinity for oxygen than carbon. Electrolysis of molten $\mathrm{'\{'}Al_2O_3{'\}'}$ (dissolved in cryolite) is required to force the reduction.
 
 </details>
 
-**Problem 8:** Why does the mass of the anode decrease when copper is purified by electrolysis using copper electrodes and $\mathrm{CuSO_4}$ solution?
+**Problem 8:** Why does the mass of the anode decrease when copper is purified by electrolysis using copper electrodes and $\mathrm{'\{'}CuSO_4{'\}'}$ solution?
 
 *If you get this wrong, revise: Electrolysis of Aqueous Solutions and Electroplating*
 
 <details>
 <summary>Solution</summary>
 
-The impure copper anode dissolves: $\mathrm{Cu} \to \mathrm{Cu^{2+}} + 2e^-$. Copper ions go into solution, so the anode loses mass. At the cathode, pure copper deposits: $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$. Impurities fall to the bottom as "anode sludge." This is the principle of electrolytic refining.
+The impure copper anode dissolves: $\mathrm{'\{'}Cu{'\}'} \to \mathrm{Cu^{2+}} + 2e^-$. Copper ions go into solution, so the anode loses mass. At the cathode, pure copper deposits: $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{'\{'}Cu{'\}'}$. Impurities fall to the bottom as "anode sludge." This is the principle of electrolytic refining.
 
 </details>
 
-**Problem 9:** Calculate the volume of hydrogen gas (at r.t.p.) produced when a current of $3.00 \mathrm{ A}$ is passed through dilute $\mathrm{H_2SO_4}$ for $10.0 \mathrm{ minutes}$.
+**Problem 9:** Calculate the volume of hydrogen gas (at r.t.p.) produced when a current of $3.00 \mathrm{'\{'} A{'\}'}$ is passed through dilute $\mathrm{'\{'}H_2SO_4{'\}'}$ for $10.0 \mathrm{'\{'} minutes{'\}'}$.
 
 *If you get this wrong, revise: Quantitative Electrolysis*
 
 <details>
 <summary>Solution</summary>
 
-$$Q = 3.00 \times 10.0 \times 60 = 1800 \mathrm{ C}$$
+$$Q = 3.00 \times 10.0 \times 60 = 1800 \mathrm{'\{'} C{'\}'}$$
 
-Cathode: $2\mathrm{H^+} + 2e^- \to \mathrm{H_2} \quad (z = 2)$
+Cathode: $2\mathrm{'\{'}H^+{'\}'} + 2e^- \to \mathrm{'\{'}H_2{'\}'} \quad (z = 2)$
 
-$$n(\mathrm{H_2}) = \frac{Q}{zF} = \frac{1800}{2 \times 96500} = 9.33 \times 10^{-3} \mathrm{ mol}$$
+$$n(\mathrm{'\{'}H_2{'\}'}) = \frac{Q}{zF} = \frac{1800}{2 \times 96500} = 9.33 \times 10^{-3} \mathrm{'\{'} mol{'\}'}$$
 
-$$V = 9.33 \times 10^{-3} \times 24.0 = 0.224 \mathrm{ dm^3} = 224 \mathrm{ cm^3}$$
+$$V = 9.33 \times 10^{-3} \times 24.0 = 0.224 \mathrm{'\{'} dm^3{'\}'} = 224 \mathrm{'\{'} cm^3{'\}'}$$
 
 </details>
 
@@ -659,7 +659,7 @@ $$V = 9.33 \times 10^{-3} \times 24.0 = 0.224 \mathrm{ dm^3} = 224 \mathrm{ cm^3
 <details>
 <summary>Solution</summary>
 
-Iron is more reactive than copper. When in electrical contact in the presence of water and oxygen, iron acts as the anode and copper as the cathode. Electrons flow from iron to copper. At the anode: $\mathrm{Fe} \to \mathrm{Fe^{2+}} + 2e^-$ (iron corrodes faster). At the cathode: $\mathrm{O_2} + 2\mathrm{H_2O} + 4e^- \to 4\mathrm{OH^-}$. This sets up an electrochemical cell that accelerates corrosion of the iron.
+Iron is more reactive than copper. When in electrical contact in the presence of water and oxygen, iron acts as the anode and copper as the cathode. Electrons flow from iron to copper. At the anode: $\mathrm{'\{'}Fe{'\}'} \to \mathrm{Fe^{2+}} + 2e^-$ (iron corrodes faster). At the cathode: $\mathrm{'\{'}O_2{'\}'} + 2\mathrm{'\{'}H_2O{'\}'} + 4e^- \to 4\mathrm{'\{'}OH^-{'\}'}$. This sets up an electrochemical cell that accelerates corrosion of the iron.
 
 </details>
 

@@ -34,11 +34,11 @@ $$42,\; 45,\; 47,\; 48,\; 49,\; 50,\; 51,\; 52,\; 53,\; 54,\; 55,\; 180$$
 **(a)** There are 12 data values, so $n = 12$.
 
 **Mean:**
-$$\bar{x} = \frac{42 + 45 + 47 + 48 + 49 + 50 + 51 + 52 + 53 + 54 + 55 + 180}{12} = \frac{826}{12} = 68.83 \text{ cm (2 d.p.)}$$
+$$\bar{x} = \frac{42 + 45 + 47 + 48 + 49 + 50 + 51 + 52 + 53 + 54 + 55 + 180}{12} = \frac{826}{12} = 68.83 \text{'\{'} cm (2 d.p.){'\}'}$$
 
 **Median:** Since $n = 12$ is even, the median is the average of the 6th and 7th values. The ordered data is already given in ascending order.
 
-$$\text{Median} = \frac{50 + 51}{2} = 50.5 \text{ cm}$$
+$$\text{'\{'}Median{'\}'} = \frac{50 + 51}{2} = 50.5 \text{'\{'} cm{'\}'}$$
 
 **Mode:** Every value appears exactly once, so there is no mode.
 
@@ -47,11 +47,11 @@ $$\text{Median} = \frac{50 + 51}{2} = 50.5 \text{ cm}$$
 $$42,\; 45,\; 47,\; 48,\; 49,\; 50,\; 51,\; 52,\; 53,\; 54,\; 55,\; 58$$
 
 **Mean:**
-$$\bar{x} = \frac{704}{12} = 58.67 \text{ cm (2 d.p.)}$$
+$$\bar{x} = \frac{704}{12} = 58.67 \text{'\{'} cm (2 d.p.){'\}'}$$
 
 **Median:** Average of 6th and 7th values:
 
-$$\text{Median} = \frac{50 + 51}{2} = 50.5 \text{ cm}$$
+$$\text{'\{'}Median{'\}'} = \frac{50 + 51}{2} = 50.5 \text{'\{'} cm{'\}'}$$
 
 **Mode:** Still no mode.
 
@@ -104,7 +104,7 @@ The frequency distribution below shows the daily commuting times (in minutes) fo
 
 The correct quantity for the vertical axis is the **frequency density**, defined as:
 
-$$\text{Frequency density} = \frac{\text{Frequency}}{\text{Class width}}$$
+$$\text{'\{'}Frequency density{'\}'} = \frac{\text{'\{'}Frequency{'\}'}}{\text{'\{'}Class width{'\}'}}$$
 
 **(b)** Frequency densities:
 
@@ -128,7 +128,7 @@ To estimate the mean, we use the midpoint of each class:
 
 $$\sum f = 200, \quad \sum fx = 7432.5$$
 
-$$\bar{x} = \frac{7432.5}{200} = 37.2 \text{ minutes}$$
+$$\bar{x} = \frac{7432.5}{200} = 37.2 \text{'\{'} minutes{'\}'}$$
 
 **(c)** The class $35 \lt t \leq 60$ has the highest **frequency** (65), so more employees fall in this class than any other. However, the class with the highest **frequency density** is $10 \lt t \leq 20$ (density 3.8), meaning the data is most concentrated (per unit time interval) in the 10--20 minute range.
 
@@ -144,7 +144,7 @@ The employee's claim is supported in the sense that the largest **number** of em
 
 Total estimated frequency with $t > 50$: $26 + 29 = 55$.
 
-$$\text{Proportion} = \frac{55}{200} = 0.275$$
+$$\text{'\{'}Proportion{'\}'} = \frac{55}{200} = 0.275$$
 
 So approximately 27.5% of employees commute for more than 50 minutes.
 
@@ -176,33 +176,33 @@ $$\bar{x} = \frac{\sum x}{n} = \frac{285}{15} = 19$$
 
 $$S_{xx} = \sum x^2 - \frac{(\sum x)^2}{n} = 5785 - \frac{285^2}{15} = 5785 - \frac{81225}{15} = 5785 - 5415 = 370$$
 
-$$\text{Variance of } x = \frac{S_{xx}}{n-1} = \frac{370}{14} = \frac{185}{7}$$
+$$\text{'\{'}Variance of {'\}'} x = \frac{S_{xx}}{n-1} = \frac{370}{14} = \frac{185}{7}$$
 
-$$\text{SD of } x = \sqrt{\frac{185}{7}}$$
+$$\text{'\{'}SD of {'\}'} x = \sqrt{\frac{185}{7}}$$
 
 For the coded data $y = \frac{x - 10}{5} = \frac{1}{5}x - 2$:
 
 $$\bar{y} = \frac{1}{5}\bar{x} - 2 = \frac{19}{5} - 2 = 3.8 - 2 = 1.8$$
 
-For the standard deviation: if $y = \frac{x - a}{b}$, then $\text{SD}(y) = \frac{\text{SD}(x)}{|b|}$.
+For the standard deviation: if $y = \frac{x - a}{b}$, then $\text{'\{'}SD{'\}'}(y) = \frac{\text{'\{'}SD{'\}'}(x)}{|b|}$.
 
-$$\text{SD}(y) = \frac{1}{|5|} \times \sqrt{\frac{185}{7}} = \frac{1}{5}\sqrt{\frac{185}{7}} = \sqrt{\frac{185}{175}} = \sqrt{\frac{37}{35}}$$
+$$\text{'\{'}SD{'\}'}(y) = \frac{1}{|5|} \times \sqrt{\frac{185}{7}} = \frac{1}{5}\sqrt{\frac{185}{7}} = \sqrt{\frac{185}{175}} = \sqrt{\frac{37}{35}}$$
 
 Alternatively:
 
-$$\text{Variance of } y = \frac{1}{5^2} \times \text{Variance of } x = \frac{1}{25} \times \frac{185}{7} = \frac{185}{175} = \frac{37}{35}$$
+$$\text{'\{'}Variance of {'\}'} y = \frac{1}{5^2} \times \text{'\{'}Variance of {'\}'} x = \frac{1}{25} \times \frac{185}{7} = \frac{185}{175} = \frac{37}{35}$$
 
 **(b)** The key fact is:
 
-$$\text{Var}(aX + b) = a^2 \text{Var}(X)$$
+$$\text{'\{'}Var{'\}'}(aX + b) = a^2 \text{'\{'}Var{'\}'}(X)$$
 
 The constant $b$ (the additive shift) has **no effect** on the variance. The multiplicative factor $a$ affects the variance by $a^2$.
 
 For $y = \frac{x - 10}{5} = \frac{1}{5}x + \left(\frac{-10}{5}\right) = \frac{1}{5}x - 2$:
 
-$$\text{Var}(y) = \left(\frac{1}{5}\right)^2 \text{Var}(x) = \frac{1}{25}\text{Var}(x)$$
+$$\text{'\{'}Var{'\}'}(y) = \left(\frac{1}{5}\right)^2 \text{'\{'}Var{'\}'}(x) = \frac{1}{25}\text{'\{'}Var{'\}'}(x)$$
 
-So $\text{SD}(y) = \frac{1}{5}\text{SD}(x)$.
+So $\text{'\{'}SD{'\}'}(y) = \frac{1}{5}\text{'\{'}SD{'\}'}(x)$.
 
 The question about whether $b$ being positive or negative matters: **it does not**. Since the variance scales by $a^2 = \left(\frac{1}{b}\right)^2 = \frac{1}{b^2}$, and $b^2 = (-b)^2$, the sign of $b$ is irrelevant. If we had coded as $y = \frac{x - 10}{-5}$, the variance would be the same. The mean would flip ($\bar{y}$ becomes $-1.8$ instead of $1.8$), but the spread is identical.
 
@@ -212,15 +212,15 @@ The first two students are correct that SD($y$) = SD($x$) / 5. The third student
 
 $$\bar{z} = -2\bar{x} + 3 = -2(19) + 3 = -38 + 3 = -35$$
 
-$$\text{Var}(z) = (-2)^2 \text{Var}(x) = 4 \times \frac{185}{7} = \frac{740}{7}$$
+$$\text{'\{'}Var{'\}'}(z) = (-2)^2 \text{'\{'}Var{'\}'}(x) = 4 \times \frac{185}{7} = \frac{740}{7}$$
 
 For $w = 2x - 3$:
 
 $$\bar{w} = 2(19) - 3 = 38 - 3 = 35$$
 
-$$\text{Var}(w) = 2^2 \text{Var}(x) = 4 \times \frac{185}{7} = \frac{740}{7}$$
+$$\text{'\{'}Var{'\}'}(w) = 2^2 \text{'\{'}Var{'\}'}(x) = 4 \times \frac{185}{7} = \frac{740}{7}$$
 
-The variances are equal: $\text{Var}(z) = \text{Var}(w)$.
+The variances are equal: $\text{'\{'}Var{'\}'}(z) = \text{'\{'}Var{'\}'}(w)$.
 
 This is because variance depends on the square of the scaling factor. Since both $z$ and $w$ use a scaling factor of magnitude 2, and $(-2)^2 = 2^2 = 4$, the variances are the same. The additive constant (3 or $-3$) and the sign of the multiplier only affect the mean, not the spread.
 
@@ -259,7 +259,7 @@ A bolt is classified as **defective** if its length is less than 24.5 mm or grea
 
 **(a)** Defective bolts are those in the classes $24.0 \leq x \lt 24.5$ and $26.5 \leq x \lt 27.0$.
 
-$$P(\text{defective}) = \frac{20 + 15}{500} = \frac{35}{500} = 0.07$$
+$$P(\text{'\{'}defective{'\}'}) = \frac{20 + 15}{500} = \frac{35}{500} = 0.07$$
 
 **(b)** Let $D$ be the number of defective bolts in a box of 10. Then $D \sim B(10, 0.07)$.
 
@@ -267,7 +267,7 @@ Using the complement:
 
 $$P(D \geq 1) = 1 - P(D = 0) = 1 - (0.93)^{10}$$
 
-$$1 - (0.93)^{10} = 1 - 0.4839... = 0.516 \text{ (3 s.f.)}$$
+$$1 - (0.93)^{10} = 1 - 0.4839... = 0.516 \text{'\{'} (3 s.f.){'\}'}$$
 
 There is approximately a 51.6% chance that a box contains at least one defective bolt.
 
@@ -284,7 +284,7 @@ Estimate the sample mean using class midpoints:
 | $26.0 \leq x \lt 26.5$ | 26.25 | 75 | 1968.75 |
 | $26.5 \leq x \lt 27.0$ | 26.75 | 15 | 401.25 |
 
-$$\bar{x} = \frac{12732.5}{500} = 25.465 \text{ mm}$$
+$$\bar{x} = \frac{12732.5}{500} = 25.465 \text{'\{'} mm{'\}'}$$
 
 The test statistic under $H_0$:
 
@@ -320,7 +320,7 @@ The regression line of $r$ on $d$ is $r = 12.08 - 0.953d$.
 
 **Solution:**
 
-**(a)** Residuals $= \text{observed} - \text{predicted}$:
+**(a)** Residuals $= \text{'\{'}observed{'\}'} - \text{'\{'}predicted{'\}'}$:
 
 | $d$ | Observed $r$ | Predicted $\hat{r} = 12.08 - 0.953d$ | Residual $r - \hat{r}$ |
 |---|---|---|---|
@@ -352,11 +352,11 @@ $Q_3$ = median of upper half $= \frac{-0.37 + 0.44}{2} = 0.035$
 
 Median $= \frac{-0.77 + (-0.41)}{2} = -0.59$
 
-$\text{IQR} = 0.035 - (-1.04) = 1.075$
+$\text{'\{'}IQR{'\}'} = 0.035 - (-1.04) = 1.075$
 
-Lower fence $= Q_1 - 1.5 \times \text{IQR} = -1.04 - 1.6125 = -2.6525$
+Lower fence $= Q_1 - 1.5 \times \text{'\{'}IQR{'\}'} = -1.04 - 1.6125 = -2.6525$
 
-Upper fence $= Q_3 + 1.5 \times \text{IQR} = 0.035 + 1.6125 = 1.6475$
+Upper fence $= Q_3 + 1.5 \times \text{'\{'}IQR{'\}'} = 0.035 + 1.6125 = 1.6475$
 
 No residuals fall outside the fences, so there are no outliers. The box plot would show:
 
@@ -380,7 +380,7 @@ More precisely: the point $(5, 6.1)$ is below the current regression line, so it
 
 A continuous random variable $X$ has probability density function:
 
-$$f(x) = \begin{cases} \frac{3}{64}x^2 & \quad 0 \leq x \leq 4 \\ 0 & \quad \text{otherwise} \end{cases}$$
+$$f(x) = \begin{cases} \frac{3}{64}x^2 & \quad 0 \leq x \leq 4 \\ 0 & \quad \text{'\{'}otherwise{'\}'} \end{cases}$$
 
 **(a)** Verify that $f(x)$ is a valid probability density function.
 
@@ -388,7 +388,7 @@ $$f(x) = \begin{cases} \frac{3}{64}x^2 & \quad 0 \leq x \leq 4 \\ 0 & \quad \tex
 
 **(c)** Find the interquartile range of $X$.
 
-**(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes $0 \leq x \lt 1$, $1 \leq x \lt 2$, $2 \leq x \lt 3$, $3 \leq x \lt 4$. Estimate the mean and standard deviation from this grouped data, and compare your answers with the true values $\mathrm{E}(X) = 3$ and $\mathrm{SD}(X) = \frac{3}{\sqrt{5}}$. Comment on the accuracy of the grouped estimates.
+**(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes $0 \leq x \lt 1$, $1 \leq x \lt 2$, $2 \leq x \lt 3$, $3 \leq x \lt 4$. Estimate the mean and standard deviation from this grouped data, and compare your answers with the true values $\mathrm{'\{'}E{'\}'}(X) = 3$ and $\mathrm{'\{'}SD{'\}'}(X) = \frac{3}{\sqrt{5}}$. Comment on the accuracy of the grouped estimates.
 
 [Difficulty: hard. Combines integration of a PDF, quartile calculation, and comparison of grouped vs exact statistics.]
 
@@ -406,29 +406,29 @@ $$\int_{0}^{m} \frac{3}{64}x^2\,dx = \frac{3}{64} \cdot \frac{m^3}{3} = \frac{m^
 
 $$m^3 = 32$$
 
-$$m = 32^{1/3} = 3.1748... \approx 3.17 \text{ (3 s.f.)}$$
+$$m = 32^{1/3} = 3.1748... \approx 3.17 \text{'\{'} (3 s.f.){'\}'}$$
 
 **(c)** $Q_1$ satisfies $\int_{0}^{Q_1} f(x)\,dx = 0.25$:
 
-$$\frac{Q_1^3}{64} = 0.25 \implies Q_1^3 = 16 \implies Q_1 = 16^{1/3} = 2.520 \text{ (3 s.f.)}$$
+$$\frac{Q_1^3}{64} = 0.25 \implies Q_1^3 = 16 \implies Q_1 = 16^{1/3} = 2.520 \text{'\{'} (3 s.f.){'\}'}$$
 
 $Q_3$ satisfies $\int_{0}^{Q_3} f(x)\,dx = 0.75$:
 
-$$\frac{Q_3^3}{64} = 0.75 \implies Q_3^3 = 48 \implies Q_3 = 48^{1/3} = 3.634 \text{ (3 s.f.)}$$
+$$\frac{Q_3^3}{64} = 0.75 \implies Q_3^3 = 48 \implies Q_3 = 48^{1/3} = 3.634 \text{'\{'} (3 s.f.){'\}'}$$
 
-$$\text{IQR} = Q_3 - Q_1 = 3.634 - 2.520 = 1.114 \approx 1.11 \text{ (3 s.f.)}$$
+$$\text{'\{'}IQR{'\}'} = Q_3 - Q_1 = 3.634 - 2.520 = 1.114 \approx 1.11 \text{'\{'} (3 s.f.){'\}'}$$
 
 **(d)** First, the true expected value:
 
-$$\mathrm{E}(X) = \int_{0}^{4} x \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^3\,dx = \frac{3}{64}\left[\frac{x^4}{4}\right]_0^4 = \frac{3}{64} \cdot 64 = 3$$
+$$\mathrm{'\{'}E{'\}'}(X) = \int_{0}^{4} x \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^3\,dx = \frac{3}{64}\left[\frac{x^4}{4}\right]_0^4 = \frac{3}{64} \cdot 64 = 3$$
 
-$$\mathrm{E}(X^2) = \int_{0}^{4} x^2 \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^4\,dx = \frac{3}{64}\left[\frac{x^5}{5}\right]_0^4 = \frac{3}{64} \cdot \frac{1024}{5} = \frac{3072}{320} = \frac{48}{5} = 9.6$$
+$$\mathrm{'\{'}E{'\}'}(X^2) = \int_{0}^{4} x^2 \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^4\,dx = \frac{3}{64}\left[\frac{x^5}{5}\right]_0^4 = \frac{3}{64} \cdot \frac{1024}{5} = \frac{3072}{320} = \frac{48}{5} = 9.6$$
 
-$$\mathrm{Var}(X) = 9.6 - 9 = 0.6, \quad \mathrm{SD}(X) = \sqrt{0.6} = \frac{3}{\sqrt{5}} \approx 0.7746$$
+$$\mathrm{'\{'}Var{'\}'}(X) = 9.6 - 9 = 0.6, \quad \mathrm{'\{'}SD{'\}'}(X) = \sqrt{0.6} = \frac{3}{\sqrt{5}} \approx 0.7746$$
 
 Now the grouped estimates. We need the class frequencies. Since we are modelling from the PDF, the expected frequency in each class (out of a large sample) is proportional to the class probability:
 
-| Class | Midpoint $x$ | $P(\text{class})$ | $x \cdot P$ | $x^2 \cdot P$ |
+| Class | Midpoint $x$ | $P(\text{'\{'}class{'\}'})$ | $x \cdot P$ | $x^2 \cdot P$ |
 |---|---|---|---|---|
 | $0 \leq x \lt 1$ | 0.5 | $\frac{1}{64} = 0.01563$ | 0.00781 | 0.00391 |
 | $1 \leq x \lt 2$ | 1.5 | $\frac{7}{64} = 0.10938$ | 0.16406 | 0.24609 |
@@ -441,10 +441,10 @@ The true mean is 3. The grouped estimate underestimates by about 0.06, or roughl
 
 Estimated variance:
 
-$$\mathrm{E}(X^2) \approx 0.00391 + 0.24609 + 1.85547 + 7.08203 = 9.1875$$
+$$\mathrm{'\{'}E{'\}'}(X^2) \approx 0.00391 + 0.24609 + 1.85547 + 7.08203 = 9.1875$$
 
-$$\text{Estimated Var} \approx 9.1875 - 2.9375^2 = 9.1875 - 8.6289 = 0.5586$$
+$$\text{'\{'}Estimated Var{'\}'} \approx 9.1875 - 2.9375^2 = 9.1875 - 8.6289 = 0.5586$$
 
-$$\text{Estimated SD} \approx \sqrt{0.5586} \approx 0.747$$
+$$\text{'\{'}Estimated SD{'\}'} \approx \sqrt{0.5586} \approx 0.747$$
 
 The true SD is 0.775, so the grouped estimate underestimates by about 3.6%. The grouped frequency approach loses precision because it replaces the continuous distribution with a discrete approximation within each class.

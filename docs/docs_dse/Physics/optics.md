@@ -53,17 +53,17 @@ $$m = \frac{v}{u} = \frac{h_i}{h_o}$$
 
 ### Worked Example 1
 
-An object is placed $15 \mathrm{ cm}$ in front of a concave mirror of focal length
-$10 \mathrm{ cm}$. Find the image position and magnification.
+An object is placed $15 \mathrm{'\{'} cm{'\}'}$ in front of a concave mirror of focal length
+$10 \mathrm{'\{'} cm{'\}'}$. Find the image position and magnification.
 
 <details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{10} - \frac{1}{15} = \frac{3 - 2}{30} = \frac{1}{30}$$
 
-$$v = 30 \mathrm{ cm}$$
+$$v = 30 \mathrm{'\{'} cm{'\}'}$$
 
-The image is real (positive $v$), at $30 \mathrm{ cm}$ in front of the mirror.
+The image is real (positive $v$), at $30 \mathrm{'\{'} cm{'\}'}$ in front of the mirror.
 
 $$m = \frac{v}{u} = \frac{30}{15} = 2$$
 
@@ -73,8 +73,8 @@ The image is inverted and magnified by a factor of 2.
 
 ### Worked Example 1b
 
-An object $4 \mathrm{ cm}$ tall is placed $8 \mathrm{ cm}$ from a concave mirror with focal length
-$12 \mathrm{ cm}$. Describe the image.
+An object $4 \mathrm{'\{'} cm{'\}'}$ tall is placed $8 \mathrm{'\{'} cm{'\}'}$ from a concave mirror with focal length
+$12 \mathrm{'\{'} cm{'\}'}$. Describe the image.
 
 <details>
 <summary>Solution</summary>
@@ -83,16 +83,16 @@ The object is inside the focal length ($u \lt f$), so expect a virtual, upright,
 
 $$\frac{1}{v} = \frac{1}{12} - \frac{1}{8} = \frac{2 - 3}{24} = -\frac{1}{24}$$
 
-$$v = -24 \mathrm{ cm}$$
+$$v = -24 \mathrm{'\{'} cm{'\}'}$$
 
-Negative $v$ confirms a virtual image, $24 \mathrm{ cm}$ behind the mirror.
+Negative $v$ confirms a virtual image, $24 \mathrm{'\{'} cm{'\}'}$ behind the mirror.
 
 $$m = \frac{v}{u} = \frac{-24}{8} = -3$$
 
 $\lvert m \rvert = 3$, so the image is magnified $3\times$. The negative sign (using this convention)
 means upright.
 
-Image height: $h_i = 3 \times 4 = 12 \mathrm{ cm}$, virtual and upright.
+Image height: $h_i = 3 \times 4 = 12 \mathrm{'\{'} cm{'\}'}$, virtual and upright.
 
 </details>
 
@@ -155,9 +155,9 @@ $$\sin\theta_2 = \frac{1.33 \times 0.5736}{1.52} = \frac{0.7629}{1.52} = 0.502$$
 
 $$\theta_2 = 30.1^\circ$$
 
-Speed in water: $v_w = \frac{c}{n_w} = \frac{3.0 \times 10^8}{1.33} = 2.26 \times 10^8 \mathrm{ m/s}$
+Speed in water: $v_w = \frac{c}{n_w} = \frac{3.0 \times 10^8}{1.33} = 2.26 \times 10^8 \mathrm{'\{'} m/s{'\}'}$
 
-Speed in glass: $v_g = \frac{c}{n_g} = \frac{3.0 \times 10^8}{1.52} = 1.97 \times 10^8 \mathrm{ m/s}$
+Speed in glass: $v_g = \frac{c}{n_g} = \frac{3.0 \times 10^8}{1.52} = 1.97 \times 10^8 \mathrm{'\{'} m/s{'\}'}$
 
 </details>
 
@@ -191,12 +191,12 @@ occurs: all light is reflected back into the denser medium.
 
 ### Worked Example 3
 
-Find the critical angle for a glass-air boundary where $n_{\mathrm{glass}} = 1.5$.
+Find the critical angle for a glass-air boundary where $n_{\mathrm{'\{'}glass{'\}'}} = 1.5$.
 
 <details>
 <summary>Solution</summary>
 
-$$\sin\theta_c = \frac{n_{\mathrm{air}}}{n_{\mathrm{glass}}} = \frac{1.0}{1.5} = 0.667$$
+$$\sin\theta_c = \frac{n_{\mathrm{'\{'}air{'\}'}}}{n_{\mathrm{'\{'}glass{'\}'}}} = \frac{1.0}{1.5} = 0.667$$
 
 $$\theta_c = 41.8^\circ$$
 
@@ -267,7 +267,7 @@ where $f$ is in metres and $P$ is in dioptres (D).
 
 ### Worked Example 4
 
-An object is placed $20 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find the
+An object is placed $20 \mathrm{'\{'} cm{'\}'}$ from a convex lens of focal length $15 \mathrm{'\{'} cm{'\}'}$. Find the
 image position, nature, and magnification.
 
 <details>
@@ -275,9 +275,9 @@ image position, nature, and magnification.
 
 $$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{15} - \frac{1}{20} = \frac{4 - 3}{60} = \frac{1}{60}$$
 
-$$v = 60 \mathrm{ cm}$$
+$$v = 60 \mathrm{'\{'} cm{'\}'}$$
 
-The image is real, at $60 \mathrm{ cm}$ on the opposite side of the lens.
+The image is real, at $60 \mathrm{'\{'} cm{'\}'}$ on the opposite side of the lens.
 
 $$m = \frac{60}{20} = 3$$
 
@@ -287,8 +287,8 @@ The image is inverted and magnified 3 times.
 
 ### Worked Example 4b
 
-Two thin lenses are placed in contact: a convex lens of focal length $10 \mathrm{ cm}$ and a
-concave lens of focal length $15 \mathrm{ cm}$. An object is placed $30 \mathrm{ cm}$ from the
+Two thin lenses are placed in contact: a convex lens of focal length $10 \mathrm{'\{'} cm{'\}'}$ and a
+concave lens of focal length $15 \mathrm{'\{'} cm{'\}'}$. An object is placed $30 \mathrm{'\{'} cm{'\}'}$ from the
 combination. Find the image position.
 
 <details>
@@ -296,11 +296,11 @@ combination. Find the image position.
 
 Combined power:
 
-$$P = P_1 + P_2 = \frac{1}{0.10} + \frac{1}{-0.15} = 10 - 6.67 = 3.33 \mathrm{ D}$$
+$$P = P_1 + P_2 = \frac{1}{0.10} + \frac{1}{-0.15} = 10 - 6.67 = 3.33 \mathrm{'\{'} D{'\}'}$$
 
 Combined focal length:
 
-$$f = \frac{1}{P} = \frac{1}{3.33} = 0.300 \mathrm{ m} = 30.0 \mathrm{ cm}$$
+$$f = \frac{1}{P} = \frac{1}{3.33} = 0.300 \mathrm{'\{'} m{'\}'} = 30.0 \mathrm{'\{'} cm{'\}'}$$
 
 Using the thin lens equation:
 
@@ -331,7 +331,7 @@ For a magnifying glass used with the image at infinity (relaxed eye):
 
 $$M = \frac{D}{f}$$
 
-where $D = 25 \mathrm{ cm}$ is the least distance of distinct vision.
+where $D = 25 \mathrm{'\{'} cm{'\}'}$ is the least distance of distinct vision.
 
 ### Compound Microscope
 
@@ -357,7 +357,7 @@ where $f_o$ is the focal length of the objective and $f_e$ is the focal length o
 Dispersion is the splitting of white light into its constituent colours (spectrum) because different
 wavelengths travel at different speeds in a medium, hence have different refractive indices.
 
-For glass: $n_{\mathrm{violet}} \gt n_{\mathrm{red}}$, so violet light is refracted more than red
+For glass: $n_{\mathrm{'\{'}violet{'\}'}} \gt n_{\mathrm{'\{'}red{'\}'}}$, so violet light is refracted more than red
 light.
 
 ---
@@ -397,21 +397,21 @@ light.
 <details>
 <summary>Problem 1: Concave Mirror — Object Beyond C</summary>
 
-An object is placed $25 \mathrm{ cm}$ in front of a concave mirror with radius of curvature
-$20 \mathrm{ cm}$. Find the image position and magnification.
+An object is placed $25 \mathrm{'\{'} cm{'\}'}$ in front of a concave mirror with radius of curvature
+$20 \mathrm{'\{'} cm{'\}'}$. Find the image position and magnification.
 
 <details>
 <summary>Solution</summary>
 
-$$f = \frac{R}{2} = \frac{20}{2} = 10 \mathrm{ cm}$$
+$$f = \frac{R}{2} = \frac{20}{2} = 10 \mathrm{'\{'} cm{'\}'}$$
 
 $$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{10} - \frac{1}{25} = \frac{5 - 2}{50} = \frac{3}{50}$$
 
-$$v = 16.7 \mathrm{ cm}$$
+$$v = 16.7 \mathrm{'\{'} cm{'\}'}$$
 
 $$m = \frac{v}{u} = \frac{16.7}{25} = 0.667$$
 
-Real, inverted, diminished image at $16.7 \mathrm{ cm}$ in front of the mirror.
+Real, inverted, diminished image at $16.7 \mathrm{'\{'} cm{'\}'}$ in front of the mirror.
 
 *If you get this wrong, revise: Concave mirror image formation table and the mirror equation sign
 convention.*
@@ -440,16 +440,16 @@ $$\theta_2 = 32.6^\circ$$
 <details>
 <summary>Problem 3: Critical Angle — Water-Diamond Interface</summary>
 
-Find the critical angle for a water-diamond interface. ($n_{\mathrm{water}} = 1.33$,
-$n_{\mathrm{diamond}} = 2.42$)
+Find the critical angle for a water-diamond interface. ($n_{\mathrm{'\{'}water{'\}'}} = 1.33$,
+$n_{\mathrm{'\{'}diamond{'\}'}} = 2.42$)
 
 <details>
 <summary>Solution</summary>
 
-Since $n_{\mathrm{diamond}} \gt n_{\mathrm{water}}$, TIR occurs when light travels from diamond to
+Since $n_{\mathrm{'\{'}diamond{'\}'}} \gt n_{\mathrm{'\{'}water{'\}'}}$, TIR occurs when light travels from diamond to
 water:
 
-$$\sin\theta_c = \frac{n_{\mathrm{water}}}{n_{\mathrm{diamond}}} = \frac{1.33}{2.42} = 0.5496$$
+$$\sin\theta_c = \frac{n_{\mathrm{'\{'}water{'\}'}}}{n_{\mathrm{'\{'}diamond{'\}'}}} = \frac{1.33}{2.42} = 0.5496$$
 
 $$\theta_c = 33.3^\circ$$
 
@@ -462,21 +462,21 @@ the denser to the less dense medium.*
 <details>
 <summary>Problem 4: Convex Lens — Real Image</summary>
 
-An object $3 \mathrm{ cm}$ tall is placed $12 \mathrm{ cm}$ from a convex lens of focal length
-$8 \mathrm{ cm}$. Find the image height and nature.
+An object $3 \mathrm{'\{'} cm{'\}'}$ tall is placed $12 \mathrm{'\{'} cm{'\}'}$ from a convex lens of focal length
+$8 \mathrm{'\{'} cm{'\}'}$. Find the image height and nature.
 
 <details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{8} - \frac{1}{12} = \frac{3 - 2}{24} = \frac{1}{24}$$
 
-$$v = 24 \mathrm{ cm}$$
+$$v = 24 \mathrm{'\{'} cm{'\}'}$$
 
 $$m = \frac{v}{u} = \frac{24}{12} = 2$$
 
-$$h_i = mh_o = 2 \times 3 = 6 \mathrm{ cm}$$
+$$h_i = mh_o = 2 \times 3 = 6 \mathrm{'\{'} cm{'\}'}$$
 
-Real, inverted, magnified image of height $6 \mathrm{ cm}$ at $24 \mathrm{ cm}$ on the opposite
+Real, inverted, magnified image of height $6 \mathrm{'\{'} cm{'\}'}$ at $24 \mathrm{'\{'} cm{'\}'}$ on the opposite
 side.
 
 *If you get this wrong, revise: Thin lens equation and the convex lens image formation table.*
@@ -487,7 +487,7 @@ side.
 <details>
 <summary>Problem 5: Diverging Lens — Virtual Image</summary>
 
-A diverging lens has a focal length of $15 \mathrm{ cm}$. An object is placed $20 \mathrm{ cm}$
+A diverging lens has a focal length of $15 \mathrm{'\{'} cm{'\}'}$. An object is placed $20 \mathrm{'\{'} cm{'\}'}$
 from the lens. Find the image position and magnification.
 
 <details>
@@ -495,9 +495,9 @@ from the lens. Find the image position and magnification.
 
 $$\frac{1}{v} = \frac{1}{-15} - \frac{1}{20} = \frac{-4 - 3}{60} = \frac{-7}{60}$$
 
-$$v = -8.57 \mathrm{ cm}$$
+$$v = -8.57 \mathrm{'\{'} cm{'\}'}$$
 
-The negative sign indicates a virtual image, $8.57 \mathrm{ cm}$ on the same side as the object.
+The negative sign indicates a virtual image, $8.57 \mathrm{'\{'} cm{'\}'}$ on the same side as the object.
 
 $$m = \frac{-8.57}{20} = -0.429$$
 
@@ -512,8 +512,8 @@ images have negative $v$.*
 <details>
 <summary>Problem 6: Concave Mirror — Virtual Image</summary>
 
-An object $2 \mathrm{ cm}$ tall is placed $6 \mathrm{ cm}$ from a concave mirror of focal length
-$10 \mathrm{ cm}$. Find the image position, height, and nature.
+An object $2 \mathrm{'\{'} cm{'\}'}$ tall is placed $6 \mathrm{'\{'} cm{'\}'}$ from a concave mirror of focal length
+$10 \mathrm{'\{'} cm{'\}'}$. Find the image position, height, and nature.
 
 <details>
 <summary>Solution</summary>
@@ -522,7 +522,7 @@ The object is inside $F$, so the image should be virtual, upright, and magnified
 
 $$\frac{1}{v} = \frac{1}{10} - \frac{1}{6} = \frac{3 - 5}{30} = \frac{-2}{30} = -\frac{1}{15}$$
 
-$$v = -15 \mathrm{ cm}$$
+$$v = -15 \mathrm{'\{'} cm{'\}'}$$
 
 Negative $v$ confirms a virtual image behind the mirror.
 
@@ -530,7 +530,7 @@ $$m = \frac{v}{u} = \frac{-15}{6} = -2.5$$
 
 $\lvert m \rvert = 2.5$, image is magnified and upright.
 
-$$h_i = 2.5 \times 2 = 5 \mathrm{ cm}$$
+$$h_i = 2.5 \times 2 = 5 \mathrm{'\{'} cm{'\}'}$$
 
 *If you get this wrong, revise: Concave mirror cases when the object is inside $F$ and the sign
 convention for virtual images.*
@@ -574,7 +574,7 @@ going from denser to less dense media.*
 <details>
 <summary>Problem 8: Convex Lens — Object at 2F</summary>
 
-An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find
+An object is placed $30 \mathrm{'\{'} cm{'\}'}$ from a convex lens of focal length $15 \mathrm{'\{'} cm{'\}'}$. Find
 the image position and magnification. What special case is this?
 
 <details>
@@ -582,7 +582,7 @@ the image position and magnification. What special case is this?
 
 $$\frac{1}{v} = \frac{1}{15} - \frac{1}{30} = \frac{2 - 1}{30} = \frac{1}{30}$$
 
-$$v = 30 \mathrm{ cm}$$
+$$v = 30 \mathrm{'\{'} cm{'\}'}$$
 
 $$m = \frac{30}{30} = 1$$
 
@@ -598,20 +598,20 @@ $2F$.*
 <details>
 <summary>Problem 9: Lens Power</summary>
 
-A person has myopia with a far point of $50 \mathrm{ cm}$. What power of diverging lens is needed
+A person has myopia with a far point of $50 \mathrm{'\{'} cm{'\}'}$. What power of diverging lens is needed
 to correct their vision?
 
 <details>
 <summary>Solution</summary>
 
 The lens must form a virtual image of a distant object (at infinity) at the person's far point
-($50 \mathrm{ cm}$):
+($50 \mathrm{'\{'} cm{'\}'}$):
 
-$$u = \infty, \quad v = -50 \mathrm{ cm} = -0.50 \mathrm{ m}$$
+$$u = \infty, \quad v = -50 \mathrm{'\{'} cm{'\}'} = -0.50 \mathrm{'\{'} m{'\}'}$$
 
-$$\frac{1}{f} = \frac{1}{v} - \frac{1}{u} = \frac{1}{-0.50} - 0 = -2.0 \mathrm{ D}$$
+$$\frac{1}{f} = \frac{1}{v} - \frac{1}{u} = \frac{1}{-0.50} - 0 = -2.0 \mathrm{'\{'} D{'\}'}$$
 
-A diverging lens of power $-2.0 \mathrm{ D}$ (focal length $-50 \mathrm{ cm}$) is needed.
+A diverging lens of power $-2.0 \mathrm{'\{'} D{'\}'}$ (focal length $-50 \mathrm{'\{'} cm{'\}'}$) is needed.
 
 *If you get this wrong, revise: Defects of vision and the sign convention for corrective lenses.*
 
@@ -621,9 +621,9 @@ A diverging lens of power $-2.0 \mathrm{ D}$ (focal length $-50 \mathrm{ cm}$) i
 <details>
 <summary>Problem 10: Compound Microscope</summary>
 
-A compound microscope has an objective lens of focal length $0.5 \mathrm{ cm}$ and an eyepiece of
-focal length $2.0 \mathrm{ cm}$. The object is placed $0.6 \mathrm{ cm}$ from the objective. The
-image formed by the objective is $15 \mathrm{ cm}$ from the eyepiece. Find the total magnification.
+A compound microscope has an objective lens of focal length $0.5 \mathrm{'\{'} cm{'\}'}$ and an eyepiece of
+focal length $2.0 \mathrm{'\{'} cm{'\}'}$. The object is placed $0.6 \mathrm{'\{'} cm{'\}'}$ from the objective. The
+image formed by the objective is $15 \mathrm{'\{'} cm{'\}'}$ from the eyepiece. Find the total magnification.
 
 <details>
 <summary>Solution</summary>
@@ -632,7 +632,7 @@ image formed by the objective is $15 \mathrm{ cm}$ from the eyepiece. Find the t
 
 $$\frac{1}{v_o} = \frac{1}{0.5} - \frac{1}{0.6} = \frac{6 - 5}{3} = \frac{1}{3}$$
 
-$$v_o = 3.0 \mathrm{ cm}$$
+$$v_o = 3.0 \mathrm{'\{'} cm{'\}'}$$
 
 $$M_o = \frac{v_o}{u_o} = \frac{3.0}{0.6} = 5$$
 
@@ -640,11 +640,11 @@ $$M_o = \frac{v_o}{u_o} = \frac{3.0}{0.6} = 5$$
 
 The intermediate image acts as the object for the eyepiece:
 
-$$u_e = 15 \mathrm{ cm}$$
+$$u_e = 15 \mathrm{'\{'} cm{'\}'}$$
 
 $$\frac{1}{v_e} = \frac{1}{2.0} - \frac{1}{15} = \frac{15 - 2}{30} = \frac{13}{30}$$
 
-$$v_e = 2.31 \mathrm{ cm}$$
+$$v_e = 2.31 \mathrm{'\{'} cm{'\}'}$$
 
 $$M_e = \frac{v_e}{u_e} = \frac{2.31}{15} = 0.154$$
 
@@ -660,8 +660,8 @@ $$M = M_o \times M_e = 5 \times 0.154 = 0.77$$
 <details>
 <summary>Problem 11: Astronomical Telescope</summary>
 
-An astronomical telescope has an objective lens of focal length $80 \mathrm{ cm}$ and an eyepiece of
-focal length $4 \mathrm{ cm}$. Find the magnification in normal adjustment and the length of the
+An astronomical telescope has an objective lens of focal length $80 \mathrm{'\{'} cm{'\}'}$ and an eyepiece of
+focal length $4 \mathrm{'\{'} cm{'\}'}$. Find the magnification in normal adjustment and the length of the
 telescope.
 
 <details>
@@ -673,7 +673,7 @@ $$M = \frac{f_o}{f_e} = \frac{80}{4} = 20$$
 
 The length of the telescope is the sum of the focal lengths:
 
-$$L = f_o + f_e = 80 + 4 = 84 \mathrm{ cm}$$
+$$L = f_o + f_e = 80 + 4 = 84 \mathrm{'\{'} cm{'\}'}$$
 
 *If you get this wrong, revise: Astronomical telescope in normal adjustment and the meaning of tube
 length.*
@@ -711,7 +711,7 @@ mirror surfaces.*
 <details>
 <summary>Problem 13: Apparent Depth</summary>
 
-A coin is at the bottom of a pool of water ($n = 1.33$) that is $2.0 \mathrm{ m}$ deep. How deep does
+A coin is at the bottom of a pool of water ($n = 1.33$) that is $2.0 \mathrm{'\{'} m{'\}'}$ deep. How deep does
 the coin appear to be when viewed from directly above?
 
 <details>
@@ -719,9 +719,9 @@ the coin appear to be when viewed from directly above?
 
 The apparent depth formula (for near-normal viewing):
 
-$$\mathrm{Apparent\ depth} = \frac{\mathrm{Real\ depth}}{n} = \frac{2.0}{1.33} = 1.50 \mathrm{ m}$$
+$$\mathrm{'\{'}Apparent\ depth{'\}'} = \frac{\mathrm{'\{'}Real\ depth{'\}'}}{n} = \frac{2.0}{1.33} = 1.50 \mathrm{'\{'} m{'\}'}$$
 
-The coin appears at $1.50 \mathrm{ m}$ below the surface, which is shallower than its actual
+The coin appears at $1.50 \mathrm{'\{'} m{'\}'}$ below the surface, which is shallower than its actual
 position.
 
 *If you get this wrong, revise: Refraction and the relationship between real depth and apparent
@@ -741,14 +741,14 @@ the maximum acceptance angle (from the fibre axis) for light to undergo total in
 
 Critical angle at the core-cladding boundary:
 
-$$\sin\theta_c = \frac{n_{\mathrm{cladding}}}{n_{\mathrm{core}}} = \frac{1.52}{1.62} = 0.9383$$
+$$\sin\theta_c = \frac{n_{\mathrm{'\{'}cladding{'\}'}}}{n_{\mathrm{'\{'}core{'\}'}}} = \frac{1.52}{1.62} = 0.9383$$
 
 $$\theta_c = 69.7^\circ$$
 
 The maximum angle with the normal at the boundary is $69.7^\circ$, which corresponds to a maximum
 angle with the fibre axis of:
 
-$$\theta_{\mathrm{max}} = 90^\circ - 69.7^\circ = 20.3^\circ$$
+$$\theta_{\mathrm{'\{'}max{'\}'}} = 90^\circ - 69.7^\circ = 20.3^\circ$$
 
 Light entering at angles less than $20.3^\circ$ to the axis will undergo total internal reflection.
 
@@ -761,7 +761,7 @@ angle to the axis and the angle to the normal.*
 <details>
 <summary>Problem 15: Dispersion — Prism</summary>
 
-White light enters a glass prism ($n_{\mathrm{red}} = 1.51$, $n_{\mathrm{violet}} = 1.53$) at an
+White light enters a glass prism ($n_{\mathrm{'\{'}red{'\}'}} = 1.51$, $n_{\mathrm{'\{'}violet{'\}'}} = 1.53$) at an
 angle of incidence of $45^\circ$. The prism has an apex angle of $60^\circ$. Explain why the violet
 light is deviated more than the red light and calculate the angle of refraction for each colour at
 the first surface.
@@ -769,20 +769,20 @@ the first surface.
 <details>
 <summary>Solution</summary>
 
-Since $n_{\mathrm{violet}} \gt n_{\mathrm{red}}$, violet light travels slower in the glass and is
+Since $n_{\mathrm{'\{'}violet{'\}'}} \gt n_{\mathrm{'\{'}red{'\}'}}$, violet light travels slower in the glass and is
 refracted more at each surface.
 
 **For red light:**
 
-$$\sin\theta_{r,\mathrm{red}} = \frac{\sin 45^\circ}{1.51} = \frac{0.7071}{1.51} = 0.4683$$
+$$\sin\theta_{r,\mathrm{'\{'}red{'\}'}} = \frac{\sin 45^\circ}{1.51} = \frac{0.7071}{1.51} = 0.4683$$
 
-$$\theta_{r,\mathrm{red}} = 27.9^\circ$$
+$$\theta_{r,\mathrm{'\{'}red{'\}'}} = 27.9^\circ$$
 
 **For violet light:**
 
-$$\sin\theta_{r,\mathrm{violet}} = \frac{\sin 45^\circ}{1.53} = \frac{0.7071}{1.53} = 0.4622$$
+$$\sin\theta_{r,\mathrm{'\{'}violet{'\}'}} = \frac{\sin 45^\circ}{1.53} = \frac{0.7071}{1.53} = 0.4622$$
 
-$$\theta_{r,\mathrm{violet}} = 27.5^\circ$$
+$$\theta_{r,\mathrm{'\{'}violet{'\}'}} = 27.5^\circ$$
 
 The violet ray is refracted through a smaller angle at the first surface ($27.5^\circ$ vs
 $27.9^\circ$), meaning it bends more towards the normal. At the second surface, violet light also
@@ -835,7 +835,7 @@ From the object side: $\frac{h_o}{u} = \frac{h_i}{v}$ (magnification triangles)
 
 From the focal point triangles:
 
-$$\frac{h_o}{u - f} = \frac{h_i}{f} \quad \text{and} \quad \frac{h_o}{f} = \frac{h_i}{v - f}$$
+$$\frac{h_o}{u - f} = \frac{h_i}{f} \quad \text{'\{'}and{'\}'} \quad \frac{h_o}{f} = \frac{h_i}{v - f}$$
 
 From the second pair: $\frac{h_o}{f} = \frac{h_i}{v - f}$
 
@@ -942,7 +942,7 @@ $$n = \frac{\sin 40^\circ}{\sin 25^\circ} = \frac{0.6428}{0.4226} = 1.521$$
 
 $$\frac{\Delta n}{n} = \sqrt{\left(\frac{\cos\theta_i \cdot \Delta\theta_i}{\sin\theta_i}\right)^2 + \left(\frac{\cos\theta_r \cdot \Delta\theta_r}{\sin\theta_r}\right)^2}$$
 
-Converting $\Delta\theta = 1^\circ = 0.0175 \mathrm{ rad}$:
+Converting $\Delta\theta = 1^\circ = 0.0175 \mathrm{'\{'} rad{'\}'}$:
 
 $$\frac{\Delta n}{n} = \sqrt{\left(\frac{0.766 \times 0.0175}{0.6428}\right)^2 + \left(\frac{0.906 \times 0.0175}{0.4226}\right)^2} = \sqrt{(0.0208)^2 + (0.0376)^2} = \sqrt{0.000433 + 0.001414} = \sqrt{0.001847} = 0.0430 = 4.3\%$$
 
@@ -967,7 +967,7 @@ undergoes total internal reflection inside the fibre.
 <details>
 <summary>Solution</summary>
 
-(a) $\sin\theta_c = \frac{n_{\mathrm{cladding}}}{n_{\mathrm{core}}} = \frac{1.45}{1.50} = 0.967$
+(a) $\sin\theta_c = \frac{n_{\mathrm{'\{'}cladding{'\}'}}}{n_{\mathrm{'\{'}core{'\}'}}} = \frac{1.45}{1.50} = 0.967$
 
 $$\theta_c = \sin^{-1}(0.967) = 75.2^\circ$$
 
@@ -977,12 +977,12 @@ incidence (measured from the normal to the boundary) is $90^\circ - 20^\circ = 7
 Since $70^\circ < \theta_c = 75.2^\circ$, the light does **not** undergo total internal
 reflection. The maximum entry angle for total internal reflection is found from:
 
-$$n_{\mathrm{air}}\sin\theta_{\max} = n_{\mathrm{core}}\sin(90^\circ - \theta_c) = 1.50 \times \sin 14.8^\circ = 1.50 \times 0.256 = 0.383$$
+$$n_{\mathrm{'\{'}air{'\}'}}\sin\theta_{\max} = n_{\mathrm{'\{'}core{'\}'}}\sin(90^\circ - \theta_c) = 1.50 \times \sin 14.8^\circ = 1.50 \times 0.256 = 0.383$$
 
 $$\theta_{\max} = \sin^{-1}(0.383) = 22.5^\circ$$
 
 An entry angle of $20^\circ$ is less than $22.5^\circ$, so the light does undergo TIR. (Note:
-the angle of incidence at the boundary is $90^\circ - \theta_{\mathrm{refracted}}$ inside the
+the angle of incidence at the boundary is $90^\circ - \theta_{\mathrm{'\{'}refracted{'\}'}}$ inside the
 fibre, not $90^\circ - 20^\circ$. A full calculation using Snell's law at the entry face is
 needed.)
 
@@ -990,8 +990,8 @@ needed.)
 
 ### Worked Example 12
 
-An object of height $3.0 \mathrm{ cm}$ is placed $20 \mathrm{ cm}$ from a converging lens of
-focal length $15 \mathrm{ cm}$. Find the image position, height, and nature (real/virtual,
+An object of height $3.0 \mathrm{'\{'} cm{'\}'}$ is placed $20 \mathrm{'\{'} cm{'\}'}$ from a converging lens of
+focal length $15 \mathrm{'\{'} cm{'\}'}$. Find the image position, height, and nature (real/virtual,
 upright/inverted, magnified/diminished).
 
 <details>
@@ -1003,27 +1003,27 @@ $$\frac{1}{15} = \frac{1}{v} + \frac{1}{20}$$
 
 $$\frac{1}{v} = \frac{1}{15} - \frac{1}{20} = \frac{4 - 3}{60} = \frac{1}{60}$$
 
-$$v = 60 \mathrm{ cm}$$
+$$v = 60 \mathrm{'\{'} cm{'\}'}$$
 
 Magnification: $m = \frac{v}{u} = \frac{60}{20} = 3.0$
 
-Image height: $h_i = m \times h_o = 3.0 \times 3.0 = 9.0 \mathrm{ cm}$
+Image height: $h_i = m \times h_o = 3.0 \times 3.0 = 9.0 \mathrm{'\{'} cm{'\}'}$
 
 The image is **real** ($v > 0$), **inverted** ($m > 0$ with real-is-positive convention), and
-**magnified** ($|m| > 1$). It forms $60 \mathrm{ cm}$ on the opposite side of the lens.
+**magnified** ($|m| > 1$). It forms $60 \mathrm{'\{'} cm{'\}'}$ on the opposite side of the lens.
 
 </details>
 
 ### Worked Example 13
 
-Light of wavelength $590 \mathrm{ nm}$ is incident normally on a diffraction grating with
-$400 \mathrm{ lines/mm}$. Calculate the angles of the first two orders and the maximum number
+Light of wavelength $590 \mathrm{'\{'} nm{'\}'}$ is incident normally on a diffraction grating with
+$400 \mathrm{'\{'} lines/mm{'\}'}$. Calculate the angles of the first two orders and the maximum number
 of orders visible.
 
 <details>
 <summary>Solution</summary>
 
-$$d = \frac{1}{400 \times 10^3} = 2.50 \times 10^{-6} \mathrm{ m}$$
+$$d = \frac{1}{400 \times 10^3} = 2.50 \times 10^{-6} \mathrm{'\{'} m{'\}'}$$
 
 First order ($n = 1$):
 
@@ -1094,7 +1094,7 @@ $$\theta_c = \sin^{-1}(0.662) = 41.5^\circ$$
 (c) The uncertainty in $n$ from the graph is estimated from the worst-fit lines. For a single
 data point at $\theta_i = 45^\circ$, $\theta_r = 28^\circ$:
 
-$\Delta\theta = 1^\circ = 0.0175 \mathrm{ rad}$
+$\Delta\theta = 1^\circ = 0.0175 \mathrm{'\{'} rad{'\}'}$
 
 $\sin(45 \pm 1) = 0.707 \pm 0.012$, $\sin(28 \pm 1) = 0.469 \pm 0.015$
 
@@ -1110,9 +1110,9 @@ $\sin\theta_c = 1.51/1.0 = 1.51 > 1$, which is impossible. Therefore TIR cannot 
 
 ### Question 2 (DSE Structured)
 
-A compound microscope consists of an objective lens of focal length $0.5 \mathrm{ cm}$ and an
-eyepiece lens of focal length $2.5 \mathrm{ cm}$. The two lenses are separated by $15 \mathrm{ cm}$.
-An object is placed $0.6 \mathrm{ cm}$ from the objective lens.
+A compound microscope consists of an objective lens of focal length $0.5 \mathrm{'\{'} cm{'\}'}$ and an
+eyepiece lens of focal length $2.5 \mathrm{'\{'} cm{'\}'}$. The two lenses are separated by $15 \mathrm{'\{'} cm{'\}'}$.
+An object is placed $0.6 \mathrm{'\{'} cm{'\}'}$ from the objective lens.
 
 (a) Calculate the position of the image formed by the objective lens.
 
@@ -1125,23 +1125,23 @@ An object is placed $0.6 \mathrm{ cm}$ from the objective lens.
 <details>
 <summary>Solution</summary>
 
-(a) Objective lens: $u_1 = 0.6 \mathrm{ cm}$, $f_1 = 0.5 \mathrm{ cm}$
+(a) Objective lens: $u_1 = 0.6 \mathrm{'\{'} cm{'\}'}$, $f_1 = 0.5 \mathrm{'\{'} cm{'\}'}$
 
 $$\frac{1}{v_1} = \frac{1}{f_1} - \frac{1}{u_1} = \frac{1}{0.5} - \frac{1}{0.6} = 2.0 - 1.667 = 0.333$$
 
-$$v_1 = 3.0 \mathrm{ cm}$$
+$$v_1 = 3.0 \mathrm{'\{'} cm{'\}'}$$
 
-The objective forms a real, inverted, magnified image $3.0 \mathrm{ cm}$ from the objective.
+The objective forms a real, inverted, magnified image $3.0 \mathrm{'\{'} cm{'\}'}$ from the objective.
 
 (b) This image acts as the object for the eyepiece. The distance from the eyepiece is:
 
-$$u_2 = 15 - 3.0 = 12.0 \mathrm{ cm}$$
+$$u_2 = 15 - 3.0 = 12.0 \mathrm{'\{'} cm{'\}'}$$
 
 $$\frac{1}{v_2} = \frac{1}{f_2} - \frac{1}{u_2} = \frac{1}{2.5} - \frac{1}{12.0} = 0.400 - 0.0833 = 0.317$$
 
-$$v_2 = 3.16 \mathrm{ cm}$$
+$$v_2 = 3.16 \mathrm{'\{'} cm{'\}'}$$
 
-The final image is real, formed $3.16 \mathrm{ cm}$ from the eyepiece on the opposite side.
+The final image is real, formed $3.16 \mathrm{'\{'} cm{'\}'}$ from the eyepiece on the opposite side.
 
 (c) Magnification of objective: $m_1 = \frac{v_1}{u_1} = \frac{3.0}{0.6} = 5.0$
 
@@ -1201,17 +1201,17 @@ $$\theta_e = 53.8^\circ$$
 
 (e) For violet light:
 
-$$\sin\theta_{r,\mathrm{violet}} = \frac{\sin 45^\circ}{1.532} = \frac{0.7071}{1.532} = 0.462$$
+$$\sin\theta_{r,\mathrm{'\{'}violet{'\}'}} = \frac{\sin 45^\circ}{1.532} = \frac{0.7071}{1.532} = 0.462$$
 
-$$\theta_{r,\mathrm{violet}} = 27.5^\circ$$
+$$\theta_{r,\mathrm{'\{'}violet{'\}'}} = 27.5^\circ$$
 
-$$\theta_{i2,\mathrm{violet}} = 60^\circ - 27.5^\circ = 32.5^\circ$$
+$$\theta_{i2,\mathrm{'\{'}violet{'\}'}} = 60^\circ - 27.5^\circ = 32.5^\circ$$
 
-$$\sin\theta_{e,\mathrm{violet}} = 1.532 \times \sin 32.5^\circ = 1.532 \times 0.537 = 0.823$$
+$$\sin\theta_{e,\mathrm{'\{'}violet{'\}'}} = 1.532 \times \sin 32.5^\circ = 1.532 \times 0.537 = 0.823$$
 
-$$\theta_{e,\mathrm{violet}} = 55.4^\circ$$
+$$\theta_{e,\mathrm{'\{'}violet{'\}'}} = 55.4^\circ$$
 
-$$D_{\mathrm{violet}} = 45^\circ + 55.4^\circ - 60^\circ = 40.4^\circ$$
+$$D_{\mathrm{'\{'}violet{'\}'}} = 45^\circ + 55.4^\circ - 60^\circ = 40.4^\circ$$
 
 Angular dispersion: $\Delta D = 40.4^\circ - 38.8^\circ = 1.6^\circ$
 
@@ -1225,9 +1225,9 @@ Angular dispersion: $\Delta D = 40.4^\circ - 38.8^\circ = 1.6^\circ$
 
 (c) Use Huygens' principle to explain why a wave spreads out when passing through a narrow gap.
 
-(d) A plane wave of wavelength $0.5 \mathrm{ m}$ passes through a gap of width $1.0 \mathrm{ m}$.
+(d) A plane wave of wavelength $0.5 \mathrm{'\{'} m{'\}'}$ passes through a gap of width $1.0 \mathrm{'\{'} m{'\}'}$.
 Describe the diffraction pattern observed and explain how it differs if the gap width is
-reduced to $0.3 \mathrm{ m}$.
+reduced to $0.3 \mathrm{'\{'} m{'\}'}$.
 
 <details>
 <summary>Solution</summary>
@@ -1245,11 +1245,11 @@ beyond the gap. The new wavefront is no longer plane but curved, causing the wav
 out (diffract). The narrower the gap relative to the wavelength, the more the wave spreads out,
 because fewer secondary sources contribute and their curved wavelets dominate.
 
-(d) With a gap of $1.0 \mathrm{ m}$ ($d/\lambda = 2$), moderate diffraction occurs. The wave
+(d) With a gap of $1.0 \mathrm{'\{'} m{'\}'}$ ($d/\lambda = 2$), moderate diffraction occurs. The wave
 spreads out somewhat beyond the gap, but there is still a relatively well-defined beam
 direction with some spreading at the edges.
 
-With a gap of $0.3 \mathrm{ m}$ ($d/\lambda = 0.6$, gap is smaller than the wavelength), very
+With a gap of $0.3 \mathrm{'\{'} m{'\}'}$ ($d/\lambda = 0.6$, gap is smaller than the wavelength), very
 significant diffraction occurs. The wave spreads out into a wide semicircular pattern beyond
 the gap, similar to a point source. The wavefront is almost completely circular.
 
@@ -1259,10 +1259,10 @@ the gap, similar to a point source. The wavefront is almost completely circular.
 
 (a) Explain the difference between a real image and a virtual image.
 
-(b) An object is placed $8.0 \mathrm{ cm}$ from a diverging lens of focal length $12 \mathrm{ cm}$.
+(b) An object is placed $8.0 \mathrm{'\{'} cm{'\}'}$ from a diverging lens of focal length $12 \mathrm{'\{'} cm{'\}'}$.
 Find the image position, magnification, and nature.
 
-(c) A converging lens forms an image of an object on a screen placed $50 \mathrm{ cm}$ from the
+(c) A converging lens forms an image of an object on a screen placed $50 \mathrm{'\{'} cm{'\}'}$ from the
 lens. The image is three times the size of the object. Find the focal length of the lens and
 the object distance.
 
@@ -1274,26 +1274,26 @@ screen and is always inverted. A **virtual image** is formed where light rays on
 diverge from; the rays do not actually pass through the image position. It cannot be projected
 onto a screen and is always upright.
 
-(b) For a diverging lens, $f = -12 \mathrm{ cm}$ (using real-is-positive convention).
+(b) For a diverging lens, $f = -12 \mathrm{'\{'} cm{'\}'}$ (using real-is-positive convention).
 
 $$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{-12} - \frac{1}{8} = -\frac{1}{12} - \frac{1}{8} = \frac{-2 - 3}{24} = -\frac{5}{24}$$
 
-$$v = -4.8 \mathrm{ cm}$$
+$$v = -4.8 \mathrm{'\{'} cm{'\}'}$$
 
-The negative sign indicates a virtual image, $4.8 \mathrm{ cm}$ from the lens on the same
+The negative sign indicates a virtual image, $4.8 \mathrm{'\{'} cm{'\}'}$ from the lens on the same
 side as the object.
 
 $$m = \frac{v}{u} = \frac{-4.8}{8} = -0.60$$
 
 The image is **virtual**, **upright**, and **diminished** (60% of the object height).
 
-(c) The image is real (on a screen), so $v = +50 \mathrm{ cm}$.
+(c) The image is real (on a screen), so $v = +50 \mathrm{'\{'} cm{'\}'}$.
 
-Since $m = 3$ and the image is real (inverted): $|m| = v/u = 3$, so $u = v/3 = 50/3 = 16.7 \mathrm{ cm}$.
+Since $m = 3$ and the image is real (inverted): $|m| = v/u = 3$, so $u = v/3 = 50/3 = 16.7 \mathrm{'\{'} cm{'\}'}$.
 
 $$\frac{1}{f} = \frac{1}{v} + \frac{1}{u} = \frac{1}{50} + \frac{1}{16.7} = 0.0200 + 0.0599 = 0.0799$$
 
-$$f = 12.5 \mathrm{ cm}$$
+$$f = 12.5 \mathrm{'\{'} cm{'\}'}$$
 
 </details>
 

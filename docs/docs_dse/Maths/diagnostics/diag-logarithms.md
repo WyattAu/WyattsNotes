@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 Which of the following statements are true? Justify your answer.
 
-$$\text{(i)}\; \log(ab) = \log a + \log b \qquad \text{(ii)}\; \log(a + b) = \log a + \log b$$
+$$\text{'\{'}(i){'\}'}\; \log(ab) = \log a + \log b \qquad \text{'\{'}(ii){'\}'}\; \log(a + b) = \log a + \log b$$
 
 **Solution:**
 
@@ -93,7 +93,7 @@ $$u^2 - 3u - 4 = 0$$
 
 $$(u - 4)(u + 1) = 0$$
 
-$$u = 4 \quad \text{or} \quad u = -1$$
+$$u = 4 \quad \text{'\{'}or{'\}'} \quad u = -1$$
 
 $\log_2 x = 4 \implies x = 16$.
 
@@ -199,9 +199,9 @@ $f^{-1}(x) = \dfrac{3^x + 1}{2}$.
 
 Domain of $f$: $2x - 1 > 0 \implies x > \dfrac{1}{2}$.
 
-Range of $f$: $\mathbb{R}$ (since $3^y > 0$).
+Range of $f$: $\mathbb{'\{'}R{'\}'}$ (since $3^y > 0$).
 
-Domain of $f^{-1}$ = Range of $f$ = $\mathbb{R}$.
+Domain of $f^{-1}$ = Range of $f$ = $\mathbb{'\{'}R{'\}'}$.
 
 Range of $f^{-1}$ = Domain of $f$ = $\left(\dfrac{1}{2},\; \infty\right)$.
 

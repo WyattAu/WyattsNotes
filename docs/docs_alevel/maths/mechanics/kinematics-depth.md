@@ -84,15 +84,15 @@ travelled.
 
 $$v = u + at = 0 + 2 \times 6 = 12\;\mathrm{m\,s^{-1}}$$
 
-$$s_1 = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(2)(36) = 36\;\mathrm{m}$$
+$$s_1 = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(2)(36) = 36\;\mathrm{'\{'}m{'\}'}$$
 
 **Stage 2: Deceleration.** Now $u = 12$, $v = 0$, $a = -3$.
 
-$$t_2 = \frac{v - u}{a} = \frac{0 - 12}{-3} = 4\;\mathrm{s}$$
+$$t_2 = \frac{v - u}{a} = \frac{0 - 12}{-3} = 4\;\mathrm{'\{'}s{'\}'}$$
 
-$$s_2 = \frac{1}{2}(u + v)t_2 = \frac{1}{2}(12 + 0)(4) = 24\;\mathrm{m}$$
+$$s_2 = \frac{1}{2}(u + v)t_2 = \frac{1}{2}(12 + 0)(4) = 24\;\mathrm{'\{'}m{'\}'}$$
 
-$$s_{\mathrm{total}} = 36 + 24 = 60\;\mathrm{m}$$
+$$s_{\mathrm{'\{'}total{'\}'}} = 36 + 24 = 60\;\mathrm{'\{'}m{'\}'}$$
 
 :::warning
 Common Pitfall
@@ -110,7 +110,7 @@ problems.
 Near the Earth's surface, all objects in free fall (neglecting air resistance) experience the same
 acceleration $g$. The standard value is:
 
-$$g \approx 9.8\;\mathrm{m\,s^{-2}} \quad (\mathrm{or}\ 9.81\;\mathrm{m\,s^{-2}}\ \mathrm{for\ greater\ precision})$$
+$$g \approx 9.8\;\mathrm{m\,s^{-2}} \quad (\mathrm{'\{'}or{'\}'}\ 9.81\;\mathrm{m\,s^{-2}}\ \mathrm{'\{'}for\ greater\ precision{'\}'})$$
 
 The direction of $g$ is always **downward**. The sign convention must be established at the start
 of every problem.
@@ -126,20 +126,20 @@ Both conventions are valid, but you must be consistent throughout a single probl
 ### 2.3 Worked example: object thrown upward
 
 **Problem.** A ball is thrown vertically upward at $15\;\mathrm{m\,s^{-1}}$ from a height of
-$2\;\mathrm{m}$ above the ground. Taking $g = 9.8\;\mathrm{m\,s^{-2}}$ and upward as positive, find
+$2\;\mathrm{'\{'}m{'\}'}$ above the ground. Taking $g = 9.8\;\mathrm{m\,s^{-2}}$ and upward as positive, find
 the speed with which it hits the ground.
 
 At the highest point, $v = 0$:
 
-$$t_{\mathrm{max}} = \frac{v - u}{a} = \frac{0 - 15}{-9.8} = \frac{15}{9.8} \approx 1.531\;\mathrm{s}$$
+$$t_{\mathrm{'\{'}max{'\}'}} = \frac{v - u}{a} = \frac{0 - 15}{-9.8} = \frac{15}{9.8} \approx 1.531\;\mathrm{'\{'}s{'\}'}$$
 
 Maximum height above the throw point:
 
-$$s_{\mathrm{up}} = \frac{v^2 - u^2}{2a} = \frac{0 - 225}{2(-9.8)} = \frac{225}{19.6} \approx 11.48\;\mathrm{m}$$
+$$s_{\mathrm{'\{'}up{'\}'}} = \frac{v^2 - u^2}{2a} = \frac{0 - 225}{2(-9.8)} = \frac{225}{19.6} \approx 11.48\;\mathrm{'\{'}m{'\}'}$$
 
-Total height above ground: $11.48 + 2 = 13.48\;\mathrm{m}$.
+Total height above ground: $11.48 + 2 = 13.48\;\mathrm{'\{'}m{'\}'}$.
 
-On the way down: $u = 0$, $a = -9.8$ (still upward positive), $s = -13.48\;\mathrm{m}$.
+On the way down: $u = 0$, $a = -9.8$ (still upward positive), $s = -13.48\;\mathrm{'\{'}m{'\}'}$.
 
 $$v^2 = 0 + 2(-9.8)(-13.48) = 264.21$$
 
@@ -149,7 +149,7 @@ The negative sign confirms downward motion. Speed $= 16.3\;\mathrm{m\,s^{-1}}$ (
 
 :::info
 Note that the total time of flight can also be found directly: $s = -2$, $u = 15$, $a = -9.8$:
-$-2 = 15t - 4.9t^2$, giving $t \approx 3.15\;\mathrm{s}$. This is **not** $2 \times t_{\mathrm{max}}$
+$-2 = 15t - 4.9t^2$, giving $t \approx 3.15\;\mathrm{'\{'}s{'\}'}$. This is **not** $2 \times t_{\mathrm{'\{'}max{'\}'}}$
 because the ball was thrown from a height, not from ground level.
 :::
 
@@ -214,14 +214,14 @@ Therefore $R(\theta_1) = R(\theta_2)$.
 ### 3.6 Worked example
 
 **Problem.** A cricketer hits a ball at $25\;\mathrm{m\,s^{-1}}$ at $35^\circ$ above the horizontal
-from a height of $1.5\;\mathrm{m}$. Taking $g = 9.8\;\mathrm{m\,s^{-2}}$, find the horizontal distance
+from a height of $1.5\;\mathrm{'\{'}m{'\}'}$. Taking $g = 9.8\;\mathrm{m\,s^{-2}}$, find the horizontal distance
 travelled before the ball hits the ground.
 
 $u_x = 25\cos 35^\circ \approx 20.48\;\mathrm{m\,s^{-1}}$
 
 $u_y = 25\sin 35^\circ \approx 14.34\;\mathrm{m\,s^{-1}}$
 
-When the ball hits the ground, $y = -1.5\;\mathrm{m}$:
+When the ball hits the ground, $y = -1.5\;\mathrm{'\{'}m{'\}'}$:
 
 $$-1.5 = 14.34t - 4.9t^2$$
 
@@ -229,11 +229,11 @@ $$4.9t^2 - 14.34t - 1.5 = 0$$
 
 $$t = \frac{14.34 \pm \sqrt{14.34^2 + 4(4.9)(1.5)}}{2(4.9)} = \frac{14.34 \pm \sqrt{205.64 + 29.4}}{9.8}$$
 
-$$t = \frac{14.34 + 15.38}{9.8} \approx 3.025\;\mathrm{s} \quad (\mathrm{taking\ the\ positive\ root})$$
+$$t = \frac{14.34 + 15.38}{9.8} \approx 3.025\;\mathrm{'\{'}s{'\}'} \quad (\mathrm{'\{'}taking\ the\ positive\ root{'\}'})$$
 
-$$x = 20.48 \times 3.025 \approx 61.95\;\mathrm{m}$$
+$$x = 20.48 \times 3.025 \approx 61.95\;\mathrm{'\{'}m{'\}'}$$
 
-The ball travels approximately $62.0\;\mathrm{m}$ horizontally.
+The ball travels approximately $62.0\;\mathrm{'\{'}m{'\}'}$ horizontally.
 
 :::warning
 warning
@@ -277,11 +277,11 @@ Time of flight: the particle lands when its perpendicular displacement returns t
 
 $$s_{\perp} = u_{\perp}t + \tfrac{1}{2}a_{\perp}t^2 = 0$$
 
-$$t\!\left(6.84 - 4.245t\right) = 0 \implies t = \frac{6.84}{4.245} \approx 1.611\;\mathrm{s}$$
+$$t\!\left(6.84 - 4.245t\right) = 0 \implies t = \frac{6.84}{4.245} \approx 1.611\;\mathrm{'\{'}s{'\}'}$$
 
 Distance up the plane:
 
-$$s_{\parallel} = 18.79(1.611) + \tfrac{1}{2}(-4.9)(1.611)^2 = 30.27 - 6.36 \approx 23.9\;\mathrm{m}$$
+$$s_{\parallel} = 18.79(1.611) + \tfrac{1}{2}(-4.9)(1.611)^2 = 30.27 - 6.36 \approx 23.9\;\mathrm{'\{'}m{'\}'}$$
 
 <hr />
 
@@ -330,7 +330,7 @@ $0 \leq t \leq 4$).
 
 $$s = \int_0^4 \!\left(3t^2 - \frac{2}{3}t^3 + 3\right)dt = \left[t^3 - \frac{1}{6}t^4 + 3t\right]_0^4$$
 
-$$s = 64 - \frac{256}{6} + 12 = 64 - 42.67 + 12 = 33.33\;\mathrm{m}$$
+$$s = 64 - \frac{256}{6} + 12 = 64 - 42.67 + 12 = 33.33\;\mathrm{'\{'}m{'\}'}$$
 
 ### 5.4 Worked example: $a = f(v)$
 
@@ -369,7 +369,7 @@ direction.
 
 ### Problem 1
 
-A train decelerates uniformly from $40\;\mathrm{m\,s^{-1}}$ to rest over a distance of $800\;\mathrm{m}$.
+A train decelerates uniformly from $40\;\mathrm{m\,s^{-1}}$ to rest over a distance of $800\;\mathrm{'\{'}m{'\}'}$.
 Find the deceleration and the time taken.
 
 <details>
@@ -379,7 +379,7 @@ Using $v^2 = u^2 + 2as$:
 
 $$0 = 1600 + 2a(800) \implies a = -1\;\mathrm{m\,s^{-2}}$$
 
-$$t = \frac{v - u}{a} = \frac{-40}{-1} = 40\;\mathrm{s}$$
+$$t = \frac{v - u}{a} = \frac{-40}{-1} = 40\;\mathrm{'\{'}s{'\}'}$$
 
 </details>
 
@@ -391,16 +391,16 @@ Taking $g = 9.8\;\mathrm{m\,s^{-2}}$, find the maximum height and the range.
 <details>
 <summary>Solution</summary>
 
-$$H = \frac{u^2\sin^2\theta}{2g} = \frac{900 \times 0.75}{19.6} = \frac{675}{19.6} \approx 34.4\;\mathrm{m}$$
+$$H = \frac{u^2\sin^2\theta}{2g} = \frac{900 \times 0.75}{19.6} = \frac{675}{19.6} \approx 34.4\;\mathrm{'\{'}m{'\}'}$$
 
-$$R = \frac{u^2\sin 2\theta}{g} = \frac{900 \times \sin 120^\circ}{9.8} = \frac{900 \times 0.866}{9.8} \approx 79.6\;\mathrm{m}$$
+$$R = \frac{u^2\sin 2\theta}{g} = \frac{900 \times \sin 120^\circ}{9.8} = \frac{900 \times 0.866}{9.8} \approx 79.6\;\mathrm{'\{'}m{'\}'}$$
 
 </details>
 
 ### Problem 3
 
 A particle moves with acceleration $a = 12t\;\mathrm{m\,s^{-2}}$. At $t = 0$, it is at rest at the
-origin. Find its displacement when $t = 3\;\mathrm{s}$.
+origin. Find its displacement when $t = 3\;\mathrm{'\{'}s{'\}'}$.
 
 <details>
 <summary>Solution</summary>
@@ -413,13 +413,13 @@ $$s = \int 6t^2\,dt = 2t^3 + C_2$$
 
 When $t = 0$, $s = 0$: $C_2 = 0$, so $s = 2t^3$.
 
-At $t = 3$: $s = 2(27) = 54\;\mathrm{m}$.
+At $t = 3$: $s = 2(27) = 54\;\mathrm{'\{'}m{'\}'}$.
 
 </details>
 
 ### Problem 4
 
-A stone is thrown horizontally at $8\;\mathrm{m\,s^{-1}}$ from the top of a cliff $60\;\mathrm{m}$ high.
+A stone is thrown horizontally at $8\;\mathrm{m\,s^{-1}}$ from the top of a cliff $60\;\mathrm{'\{'}m{'\}'}$ high.
 Taking $g = 9.8\;\mathrm{m\,s^{-2}}$, find the horizontal distance from the base of the cliff where the
 stone lands, and the velocity (magnitude and direction) at impact.
 
@@ -428,13 +428,13 @@ stone lands, and the velocity (magnitude and direction) at impact.
 
 Vertical: $s = -60$, $u_y = 0$, $a = -9.8$.
 
-$$-60 = 0 - \frac{1}{2}(9.8)t^2 \implies t = \sqrt{\frac{120}{9.8}} \approx 3.50\;\mathrm{s}$$
+$$-60 = 0 - \frac{1}{2}(9.8)t^2 \implies t = \sqrt{\frac{120}{9.8}} \approx 3.50\;\mathrm{'\{'}s{'\}'}$$
 
-Horizontal: $x = 8 \times 3.50 = 28.0\;\mathrm{m}$.
+Horizontal: $x = 8 \times 3.50 = 28.0\;\mathrm{'\{'}m{'\}'}$.
 
 At impact: $v_y = -9.8 \times 3.50 = -34.3\;\mathrm{m\,s^{-1}}$, $v_x = 8\;\mathrm{m\,s^{-1}}$.
 
-$$|\mathbf{v}| = \sqrt{8^2 + 34.3^2} = \sqrt{64 + 1176.5} \approx 35.2\;\mathrm{m\,s^{-1}}$$
+$$|\mathbf{'\{'}v{'\}'}| = \sqrt{8^2 + 34.3^2} = \sqrt{64 + 1176.5} \approx 35.2\;\mathrm{m\,s^{-1}}$$
 
 Angle below horizontal: $\theta = \arctan\!\left(\dfrac{34.3}{8}\right) \approx 76.9^\circ$.
 
@@ -469,6 +469,6 @@ $$0 = 4s - s^2 + 2 \implies s^2 - 4s - 2 = 0$$
 
 $$s = \frac{4 \pm \sqrt{16 + 8}}{2} = \frac{4 \pm \sqrt{24}}{2} = 2 \pm \sqrt{6}$$
 
-Taking the positive root: $s_{\max} = 2 + \sqrt{6} \approx 4.45\;\mathrm{m}$.
+Taking the positive root: $s_{\max} = 2 + \sqrt{6} \approx 4.45\;\mathrm{'\{'}m{'\}'}$.
 
 </details>

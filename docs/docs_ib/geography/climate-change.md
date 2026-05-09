@@ -22,9 +22,9 @@ All three datasets show consistent warming trends despite differences in methodo
 
 ### Ice Cores
 
-Ice cores drilled from ice sheets in Greenland and Antarctica provide a continuous record of atmospheric composition and temperature spanning the last 800 000 years (the EPICA Dome C core in Antarctica). By analysing the ratio of oxygen isotopes ($^{18}\mathrm{O}$ / $^{16}\mathrm{O}$) in the ice, scientists reconstruct past temperatures: during glacial periods, $^{18}\mathrm{O}$ is preferentially retained in the oceans, so ice deposited during glacial periods has a lower $^{18}\mathrm{O}/^{16}\mathrm{O}$ ratio than ice deposited during warm periods.
+Ice cores drilled from ice sheets in Greenland and Antarctica provide a continuous record of atmospheric composition and temperature spanning the last 800 000 years (the EPICA Dome C core in Antarctica). By analysing the ratio of oxygen isotopes ($^{18}\mathrm{'\{'}O{'\}'}$ / $^{16}\mathrm{'\{'}O{'\}'}$) in the ice, scientists reconstruct past temperatures: during glacial periods, $^{18}\mathrm{'\{'}O{'\}'}$ is preferentially retained in the oceans, so ice deposited during glacial periods has a lower $^{18}\mathrm{'\{'}O{'\}'}/^{16}\mathrm{'\{'}O{'\}'}$ ratio than ice deposited during warm periods.
 
-Ice cores also preserve air bubbles containing samples of past atmospheres, allowing direct measurement of greenhouse gas concentrations. The Vostok and EPICA ice cores show that atmospheric $\mathrm{CO_2}$ concentrations have fluctuated between approximately 180 ppm (during glacial periods) and 280 ppm (during interglacial periods) over the last 800 000 years. The current atmospheric $\mathrm{CO_2}$ concentration, approximately 420 ppm (2023), exceeds any level in this period and is rising at an unprecedented rate (approximately 2.5 ppm per year).
+Ice cores also preserve air bubbles containing samples of past atmospheres, allowing direct measurement of greenhouse gas concentrations. The Vostok and EPICA ice cores show that atmospheric $\mathrm{'\{'}CO_2{'\}'}$ concentrations have fluctuated between approximately 180 ppm (during glacial periods) and 280 ppm (during interglacial periods) over the last 800 000 years. The current atmospheric $\mathrm{'\{'}CO_2{'\}'}$ concentration, approximately 420 ppm (2023), exceeds any level in this period and is rising at an unprecedented rate (approximately 2.5 ppm per year).
 
 ### Sea Level Rise
 
@@ -37,7 +37,7 @@ Sea level rise is caused by two processes:
 
 ### Ocean Acidification
 
-The ocean absorbs approximately 30% of anthropogenic $\mathrm{CO_2}$ emissions. Dissolved $\mathrm{CO_2}$ reacts with seawater to form carbonic acid ($\mathrm{H_2CO_3}$), which dissociates to release hydrogen ions ($\mathrm{H^+}$), reducing ocean pH. Since the pre-industrial era, average ocean pH has decreased from approximately 8.2 to approximately 8.1, representing a 26% increase in acidity (because pH is logarithmic).
+The ocean absorbs approximately 30% of anthropogenic $\mathrm{'\{'}CO_2{'\}'}$ emissions. Dissolved $\mathrm{'\{'}CO_2{'\}'}$ reacts with seawater to form carbonic acid ($\mathrm{'\{'}H_2CO_3{'\}'}$), which dissociates to release hydrogen ions ($\mathrm{'\{'}H^+{'\}'}$), reducing ocean pH. Since the pre-industrial era, average ocean pH has decreased from approximately 8.2 to approximately 8.1, representing a 26% increase in acidity (because pH is logarithmic).
 
 Ocean acidification impairs the ability of calcifying organisms (corals, shellfish, pteropods) to build and maintain their calcium carbonate shells and skeletons. Coral bleaching, driven by both warming and acidification, threatens coral reef ecosystems that support approximately 25% of marine biodiversity and provide livelihoods for approximately 500 million people.
 
@@ -45,7 +45,7 @@ Ocean acidification impairs the ability of calcifying organisms (corals, shellfi
 
 ### Natural Greenhouse Effect
 
-The natural greenhouse effect is a physical process that warms Earth's surface. Solar radiation (shortwave radiation, predominantly in the visible spectrum) passes through the atmosphere and is absorbed by Earth's surface. The surface re-radiates this energy as longwave infrared radiation. Greenhouse gases in the atmosphere -- primarily water vapour ($\mathrm{H_2O}$), carbon dioxide ($\mathrm{CO_2}$), methane ($\mathrm{CH_4}$), nitrous oxide ($\mathrm{N_2O}$), and ozone ($\mathrm{O_3}$) -- absorb and re-emit this longwave radiation in all directions, including back toward the surface, thereby warming the lower atmosphere.
+The natural greenhouse effect is a physical process that warms Earth's surface. Solar radiation (shortwave radiation, predominantly in the visible spectrum) passes through the atmosphere and is absorbed by Earth's surface. The surface re-radiates this energy as longwave infrared radiation. Greenhouse gases in the atmosphere -- primarily water vapour ($\mathrm{'\{'}H_2O{'\}'}$), carbon dioxide ($\mathrm{'\{'}CO_2{'\}'}$), methane ($\mathrm{'\{'}CH_4{'\}'}$), nitrous oxide ($\mathrm{'\{'}N_2O{'\}'}$), and ozone ($\mathrm{'\{'}O_3{'\}'}$) -- absorb and re-emit this longwave radiation in all directions, including back toward the surface, thereby warming the lower atmosphere.
 
 Without the natural greenhouse effect, Earth's average surface temperature would be approximately $-18^\circ$C rather than the observed $+15^\circ$C. The natural greenhouse effect is therefore essential for maintaining habitable conditions on Earth.
 
@@ -55,18 +55,18 @@ The enhanced greenhouse effect refers to the additional warming caused by human 
 
 | Greenhouse Gas | Pre-industrial Concentration | 2023 Concentration | Main Sources | Global Warming Potential (100-year) |
 |---|---|---|---|---|
-| $\mathrm{CO_2}$ | 280 ppm | 420 ppm | Fossil fuel combustion, deforestation, cement production | 1 (reference) |
-| $\mathrm{CH_4}$ | 722 ppb | 1923 ppb | Agriculture (rice paddies, livestock), fossil fuel extraction, landfills | 28 |
-| $\mathrm{N_2O}$ | 270 ppb | 336 ppb | Agricultural fertilisers, industrial processes, fossil fuel combustion | 265 |
+| $\mathrm{'\{'}CO_2{'\}'}$ | 280 ppm | 420 ppm | Fossil fuel combustion, deforestation, cement production | 1 (reference) |
+| $\mathrm{'\{'}CH_4{'\}'}$ | 722 ppb | 1923 ppb | Agriculture (rice paddies, livestock), fossil fuel extraction, landfills | 28 |
+| $\mathrm{'\{'}N_2O{'\}'}$ | 270 ppb | 336 ppb | Agricultural fertilisers, industrial processes, fossil fuel combustion | 265 |
 | Fluorinated gases (CFCs, HFCs, SF$_6$) | Negligible | Variable | Industrial processes, refrigeration, air conditioning | Up to 23 000 (SF$_6$) |
 
-Global Warming Potential (GWP) is a measure of how much energy a greenhouse gas absorbs relative to $\mathrm{CO_2}$ over a specified time horizon (typically 100 years). Methane has a GWP of 28, meaning that 1 tonne of methane traps 28 times as much heat as 1 tonne of $\mathrm{CO_2}$ over a 100-year period, though methane has a much shorter atmospheric lifetime (approximately 12 years) than $\mathrm{CO_2}$ (approximately 100--1000 years).
+Global Warming Potential (GWP) is a measure of how much energy a greenhouse gas absorbs relative to $\mathrm{'\{'}CO_2{'\}'}$ over a specified time horizon (typically 100 years). Methane has a GWP of 28, meaning that 1 tonne of methane traps 28 times as much heat as 1 tonne of $\mathrm{'\{'}CO_2{'\}'}$ over a 100-year period, though methane has a much shorter atmospheric lifetime (approximately 12 years) than $\mathrm{'\{'}CO_2{'\}'}$ (approximately 100--1000 years).
 
 ## Causes of Climate Change
 
 ### Natural Causes
 
-**Volcanic activity.** Volcanic eruptions release aerosols (particularly sulphur dioxide, $\mathrm{SO_2}$) into the stratosphere, which reflect incoming solar radiation and produce a short-term cooling effect. The 1991 eruption of Mount Pinatubo in the Philippines reduced global average temperatures by approximately $0.5^\circ$C over the following two years. However, volcanic $\mathrm{CO_2}$ emissions are negligible compared to anthropogenic emissions (volcanic emissions are approximately 0.1% of annual anthropogenic $\mathrm{CO_2}$ emissions).
+**Volcanic activity.** Volcanic eruptions release aerosols (particularly sulphur dioxide, $\mathrm{'\{'}SO_2{'\}'}$) into the stratosphere, which reflect incoming solar radiation and produce a short-term cooling effect. The 1991 eruption of Mount Pinatubo in the Philippines reduced global average temperatures by approximately $0.5^\circ$C over the following two years. However, volcanic $\mathrm{'\{'}CO_2{'\}'}$ emissions are negligible compared to anthropogenic emissions (volcanic emissions are approximately 0.1% of annual anthropogenic $\mathrm{'\{'}CO_2{'\}'}$ emissions).
 
 **Solar variability.** The Sun's energy output varies over approximately 11-year cycles (sunspot cycles) and over longer timescales. Changes in solar irradiance can influence Earth's climate, but satellite observations since 1978 show that variations in solar output are too small to account for the observed warming trend.
 
@@ -76,19 +76,19 @@ Global Warming Potential (GWP) is a measure of how much energy a greenhouse gas 
 
 The Intergovernmental Panel on Climate Change (IPCC) Sixth Assessment Report (2021--2023) states with very high confidence that "human influence has warmed the atmosphere, ocean and land." The primary anthropogenic causes are:
 
-**Fossil fuel combustion.** Burning coal, oil, and natural gas for energy, transport, and industry is the single largest source of anthropogenic $\mathrm{CO_2}$, accounting for approximately 73% of total anthropogenic greenhouse gas emissions. Global $\mathrm{CO_2}$ emissions from fossil fuels reached approximately 36.8 billion tonnes in 2023.
+**Fossil fuel combustion.** Burning coal, oil, and natural gas for energy, transport, and industry is the single largest source of anthropogenic $\mathrm{'\{'}CO_2{'\}'}$, accounting for approximately 73% of total anthropogenic greenhouse gas emissions. Global $\mathrm{'\{'}CO_2{'\}'}$ emissions from fossil fuels reached approximately 36.8 billion tonnes in 2023.
 
-**Deforestation.** Forests store approximately 860 billion tonnes of carbon. Deforestation releases stored carbon as $\mathrm{CO_2}$ when trees are burned or left to decay, and reduces the capacity of the land surface to absorb $\mathrm{CO_2}$ through photosynthesis. Deforestation and land-use change account for approximately 11% of total anthropogenic greenhouse gas emissions.
+**Deforestation.** Forests store approximately 860 billion tonnes of carbon. Deforestation releases stored carbon as $\mathrm{'\{'}CO_2{'\}'}$ when trees are burned or left to decay, and reduces the capacity of the land surface to absorb $\mathrm{'\{'}CO_2{'\}'}$ through photosynthesis. Deforestation and land-use change account for approximately 11% of total anthropogenic greenhouse gas emissions.
 
-**Agriculture.** Agricultural practices produce $\mathrm{CH_4}$ (from rice paddies and enteric fermentation in livestock, particularly cattle) and $\mathrm{N_2O}$ (from synthetic fertilisers and manure). Agriculture accounts for approximately 12% of total anthropogenic emissions, and when land-use change (primarily deforestation for agriculture) is included, the food system accounts for approximately 26--34% of total emissions.
+**Agriculture.** Agricultural practices produce $\mathrm{'\{'}CH_4{'\}'}$ (from rice paddies and enteric fermentation in livestock, particularly cattle) and $\mathrm{'\{'}N_2O{'\}'}$ (from synthetic fertilisers and manure). Agriculture accounts for approximately 12% of total anthropogenic emissions, and when land-use change (primarily deforestation for agriculture) is included, the food system accounts for approximately 26--34% of total emissions.
 
-**Industrial processes.** Cement production (calcium carbonate is heated to produce calcium oxide, releasing $\mathrm{CO_2}$), chemical manufacturing, and fluorinated gas production contribute approximately 5% of total emissions.
+**Industrial processes.** Cement production (calcium carbonate is heated to produce calcium oxide, releasing $\mathrm{'\{'}CO_2{'\}'}$), chemical manufacturing, and fluorinated gas production contribute approximately 5% of total emissions.
 
 ## Impacts of Climate Change
 
 ### Global Impacts
 
-The IPCC projects that under current policies, global mean surface temperature is likely to reach $2.5$--$2.9^\circ$C above pre-industrial levels by 2100. Under the Paris Agreement pledges (Nationally Determined Contributions), warming of $2.0$--$2.8^\circ$C is projected. Limiting warming to $1.5^\circ$C (the aspirational target of the Paris Agreement) would require global $\mathrm{CO_2}$ emissions to reach net zero by approximately 2050.
+The IPCC projects that under current policies, global mean surface temperature is likely to reach $2.5$--$2.9^\circ$C above pre-industrial levels by 2100. Under the Paris Agreement pledges (Nationally Determined Contributions), warming of $2.0$--$2.8^\circ$C is projected. Limiting warming to $1.5^\circ$C (the aspirational target of the Paris Agreement) would require global $\mathrm{'\{'}CO_2{'\}'}$ emissions to reach net zero by approximately 2050.
 
 At $1.5^\circ$C of warming, projected impacts include:
 
@@ -108,11 +108,11 @@ At $2.0^\circ$C, impacts are significantly more severe:
 
 ### Regional Impacts
 
-**The Arctic.** The Arctic is warming at approximately 2--4 times the global average rate (Arctic amplification), driven by several feedback mechanisms: reduced ice and snow cover decreases surface albedo (reflectivity), exposing darker ocean water that absorbs more solar radiation; thawing permafrost releases $\mathrm{CH_4}$ and $\mathrm{CO_2}$, further amplifying warming. Arctic sea ice extent has declined by approximately 13% per decade since satellite observations began in 1979. Some models project ice-free Arctic summers (sea ice extent below 1 million km$^2$) as early as the 2030s.
+**The Arctic.** The Arctic is warming at approximately 2--4 times the global average rate (Arctic amplification), driven by several feedback mechanisms: reduced ice and snow cover decreases surface albedo (reflectivity), exposing darker ocean water that absorbs more solar radiation; thawing permafrost releases $\mathrm{'\{'}CH_4{'\}'}$ and $\mathrm{'\{'}CO_2{'\}'}$, further amplifying warming. Arctic sea ice extent has declined by approximately 13% per decade since satellite observations began in 1979. Some models project ice-free Arctic summers (sea ice extent below 1 million km$^2$) as early as the 2030s.
 
 **Small island developing states (SIDS).** Low-lying atoll nations (Maldives, Tuvalu, Kiribati, Marshall Islands) face existential threats from sea level rise, saltwater intrusion into freshwater aquifers, increased storm damage, and coral reef degradation. At current rates, some atoll islands could become uninhabitable by mid-century.
 
-**Africa.** Africa is the continent most vulnerable to climate change despite contributing the least to global emissions (approximately 3.8% of cumulative historical $\mathrm{CO_2}$ emissions). Projected impacts include: reduced agricultural yields (particularly for rain-fed agriculture in Sub-Saharan Africa), increased water stress (an additional 350--600 million people in Africa projected to face water scarcity by 2050), increased frequency and intensity of droughts and floods, and expanded geographic range of vector-borne diseases (malaria, dengue fever).
+**Africa.** Africa is the continent most vulnerable to climate change despite contributing the least to global emissions (approximately 3.8% of cumulative historical $\mathrm{'\{'}CO_2{'\}'}$ emissions). Projected impacts include: reduced agricultural yields (particularly for rain-fed agriculture in Sub-Saharan Africa), increased water stress (an additional 350--600 million people in Africa projected to face water scarcity by 2050), increased frequency and intensity of droughts and floods, and expanded geographic range of vector-borne diseases (malaria, dengue fever).
 
 **Economic impacts.** The Swiss Re Institute estimates that global GDP could decline by up to 18% by 2050 if global temperatures rise by $3.2^\circ$C, compared to a scenario with no climate change. The economic costs are unevenly distributed: low-income countries, which have contributed least to emissions, face the highest economic losses as a proportion of GDP.
 
@@ -127,10 +127,10 @@ At $2.0^\circ$C, impacts are significantly more severe:
 
 ### Carbon Capture and Storage (CCS)
 
-CCS involves capturing $\mathrm{CO_2}$ from point sources (power plants, industrial facilities) or directly from the atmosphere (direct air capture, DAC), compressing it, and transporting it to a storage site (typically deep saline aquifers or depleted oil and gas reservoirs), where it is injected and permanently sequestered underground.
+CCS involves capturing $\mathrm{'\{'}CO_2{'\}'}$ from point sources (power plants, industrial facilities) or directly from the atmosphere (direct air capture, DAC), compressing it, and transporting it to a storage site (typically deep saline aquifers or depleted oil and gas reservoirs), where it is injected and permanently sequestered underground.
 
-- **Current capacity:** approximately 40 million tonnes of $\mathrm{CO_2}$ captured per year globally (2023), representing a tiny fraction of annual emissions (approximately 0.1%)
-- **Limitations:** high cost (DAC is estimated to cost USD 250-600 per tonne of $\mathrm{CO_2}$, compared to approximately USD 50-150 for point-source CCS); energy-intensive; storage site availability and long-term liability for sequestered $\mathrm{CO_2}$; public acceptance concerns
+- **Current capacity:** approximately 40 million tonnes of $\mathrm{'\{'}CO_2{'\}'}$ captured per year globally (2023), representing a tiny fraction of annual emissions (approximately 0.1%)
+- **Limitations:** high cost (DAC is estimated to cost USD 250-600 per tonne of $\mathrm{'\{'}CO_2{'\}'}$, compared to approximately USD 50-150 for point-source CCS); energy-intensive; storage site availability and long-term liability for sequestered $\mathrm{'\{'}CO_2{'\}'}$; public acceptance concerns
 
 ### Renewable Energy
 
@@ -183,8 +183,8 @@ Adaptation involves adjusting to the actual or expected effects of climate chang
 
 Climate change raises profound questions of equity and justice because:
 
-1. **Historical responsibility.** Approximately 60% of cumulative anthropogenic $\mathrm{CO_2}$ emissions since 1850 have been produced by the USA (approximately 25%), the EU (approximately 17%), China (approximately 11%), and Russia (approximately 7%). Yet the countries most vulnerable to climate change (Small Island Developing States, Least Developed Countries) have contributed least to cumulative emissions.
-2. **Per capita emissions.** Per capita $\mathrm{CO_2}$ emissions vary enormously: the USA emits approximately 14 tonnes per person per year, China approximately 8 tonnes, India approximately 2 tonnes, and many Sub-Saharan African countries less than 0.5 tonnes.
+1. **Historical responsibility.** Approximately 60% of cumulative anthropogenic $\mathrm{'\{'}CO_2{'\}'}$ emissions since 1850 have been produced by the USA (approximately 25%), the EU (approximately 17%), China (approximately 11%), and Russia (approximately 7%). Yet the countries most vulnerable to climate change (Small Island Developing States, Least Developed Countries) have contributed least to cumulative emissions.
+2. **Per capita emissions.** Per capita $\mathrm{'\{'}CO_2{'\}'}$ emissions vary enormously: the USA emits approximately 14 tonnes per person per year, China approximately 8 tonnes, India approximately 2 tonnes, and many Sub-Saharan African countries less than 0.5 tonnes.
 3. **Vulnerability.** Developing countries face the greatest impacts (reduced agricultural yields, water stress, extreme weather, sea level rise) but have the least capacity to adapt, due to limited financial resources, institutional capacity, and technological infrastructure.
 
 ### The Principle of Common But Differentiated Responsibilities (CBDR)
@@ -232,6 +232,6 @@ The Netherlands, with approximately 26% of its land below sea level and 59% susc
 <details>
 <summary>Common Pitfalls: Confusing Mitigation and Adaptation</summary>
 
-Mitigation reduces the causes of climate change (greenhouse gas emissions); adaptation reduces the impacts. Both are necessary, but they are distinct. A solar panel is a mitigation measure (it reduces $\mathrm{CO_2}$ emissions). A sea wall is an adaptation measure (it protects against the consequences of sea level rise, which is driven by warming already locked into the system). Some strategies have both mitigation and adaptation co-benefits: mangrove restoration sequesters carbon (mitigation) and provides coastal protection (adaptation). Be precise in distinguishing the two categories in examination responses.
+Mitigation reduces the causes of climate change (greenhouse gas emissions); adaptation reduces the impacts. Both are necessary, but they are distinct. A solar panel is a mitigation measure (it reduces $\mathrm{'\{'}CO_2{'\}'}$ emissions). A sea wall is an adaptation measure (it protects against the consequences of sea level rise, which is driven by warming already locked into the system). Some strategies have both mitigation and adaptation co-benefits: mangrove restoration sequesters carbon (mitigation) and provides coastal protection (adaptation). Be precise in distinguishing the two categories in examination responses.
 
 </details>

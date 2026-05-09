@@ -160,8 +160,8 @@ Specialised agencies include the WHO (health), UNESCO (education, science, cultu
   international climate negotiations. Key agreements include the Kyoto Protocol (1997) and the Paris
   Agreement (2015).
 - **Paris Agreement (2015)**: commits signatories to limit global warming to "well below
-  $2^{\circ}\mathrm{C}$" above pre-industrial levels, with efforts to limit it to
-  $1.5^{\circ}\mathrm{C}$. Countries submit Nationally Determined Contributions (NDCs) outlining
+  $2^{\circ}\mathrm{'\{'}C{'\}'}$" above pre-industrial levels, with efforts to limit it to
+  $1.5^{\circ}\mathrm{'\{'}C{'\}'}$. Countries submit Nationally Determined Contributions (NDCs) outlining
   their emissions reduction targets.
 - **Convention on Biological Diversity (CBD)**: aims to conserve biodiversity, ensure sustainable
   use, and share the benefits of genetic resources equitably.
@@ -221,8 +221,8 @@ standards) and the conditionality of access to its market.
 The Paris Agreement represents a bottom-up approach: countries set their own NDCs, with a global
 stocktake every five years to assess collective progress. Key challenges include:
 
-- **Ambition gap**: current NDCs are insufficient to limit warming to $2^{\circ}\mathrm{C}$, let
-  alone $1.5^{\circ}\mathrm{C}$
+- **Ambition gap**: current NDCs are insufficient to limit warming to $2^{\circ}\mathrm{'\{'}C{'\}'}$, let
+  alone $1.5^{\circ}\mathrm{'\{'}C{'\}'}$
 - **Equity debate**: developing countries argue that historical emitters bear greater responsibility
   and should provide finance and technology transfer
 - **Climate finance**: developed countries pledged $\$100$ billion per year in climate finance for
@@ -267,7 +267,7 @@ Using a specific example, evaluate how globalisation has affected a developing c
 Positive impacts:
 
 - Garment exports account for over $80\%$ of Bangladesh's export earnings, driving economic growth
-  ($\mathrm{GDP growth} > 6\%$ for much of the last decade)
+  ($\mathrm{'\{'}GDP growth{'\}'} > 6\%$ for much of the last decade)
 - Created approximately $4$ million jobs, predominantly for women, increasing female labour force
   participation and household incomes
 - Stimulated the development of supporting industries (textiles, transport, banking)
@@ -318,7 +318,7 @@ Strengths:
 
 - Near-universal participation ($195$ signatories) gives it unprecedented legitimacy
 - The bottom-up NDC approach allows countries to set nationally appropriate targets
-- The $1.5^{\circ}\mathrm{C}$ aspiration provides a clear science-based goal
+- The $1.5^{\circ}\mathrm{'\{'}C{'\}'}$ aspiration provides a clear science-based goal
 - The global stocktake mechanism creates accountability through transparency
 - Mobilised significant climate finance and private sector engagement
 - Catalysed national climate legislation and corporate net-zero commitments
@@ -327,7 +327,7 @@ Weaknesses:
 
 - NDCs are voluntary and non-binding; there is no enforcement mechanism
 - The ambition gap: even if all current NDCs are fully implemented, warming is projected to reach
-  $2.5$--$2.9^{\circ}\mathrm{C}$
+  $2.5$--$2.9^{\circ}\mathrm{'\{'}C{'\}'}$
 - Climate finance pledges remain unmet; the $\$100$ billion/year target was not achieved by the
   original $2020$ deadline
 - Does not address historical responsibility or equitable burden-sharing adequately

@@ -21,8 +21,8 @@ Water's properties arise from hydrogen bonding between molecules:
 
 - **Cohesion and adhesion:** H-bonds between water molecules (cohesion) and between water and other
   surfaces (adhesion) enable capillary action and transpiration.
-- **High specific heat:** $4.18 \, \mathrm{J/(g \cdot ^\circ C)}$; buffers temperature changes.
-- **High heat of vaporisation:** $2260 \, \mathrm{J/g}$; provides evaporative cooling.
+- **High specific heat:** $4.18 \, \mathrm{'\{'}J/(g \cdot ^\circ C){'\}'}$; buffers temperature changes.
+- **High heat of vaporisation:** $2260 \, \mathrm{'\{'}J/g{'\}'}$; provides evaporative cooling.
 - **Lower density of ice:** H-bonds in ice form an open lattice; ice floats, insulating aquatic
   ecosystems.
 - **High surface tension:** H-bonds at the surface resist external force.
@@ -43,8 +43,8 @@ broken down by hydrolysis.
 Lipids are not true polymers but assemble through non-covalent interactions. Phospholipids have a
 hydrophilic phosphate head and hydrophobic fatty acid tails, forming the basis of cell membranes.
 
-**Amino acid structure:** Central carbon bonded to an amino group ($\text{NH}_2$), carboxyl group
-($\text{COOH}$), hydrogen, and a variable R group. There are 20 standard amino acids. Peptide bonds
+**Amino acid structure:** Central carbon bonded to an amino group ($\text{'\{'}NH{'\}'}_2$), carboxyl group
+($\text{'\{'}COOH{'\}'}$), hydrogen, and a variable R group. There are 20 standard amino acids. Peptide bonds
 form between the carboxyl group of one amino acid and the amino group of the next via condensation.
 
 **Protein structure levels:**
@@ -98,12 +98,12 @@ affinity between enzyme and substrate.
 | Nucleus                | DNA storage, transcription, mRNA processing                 |
 | Nucleolus              | rRNA synthesis, ribosome assembly                           |
 | Rough ER               | Protein synthesis (ribosome-studded), folding, modification |
-| Smooth ER              | Lipid synthesis, detoxification, $\text{Ca}^{2+}$ storage  |
+| Smooth ER              | Lipid synthesis, detoxification, $\text{'\{'}Ca{'\}'}^{2+}$ storage  |
 | Golgi apparatus        | Protein sorting, modification, packaging into vesicles      |
 | Mitochondria           | Aerobic respiration, ATP production (chemiosmosis)          |
 | Chloroplasts           | Photosynthesis (in plants and algae)                        |
 | Lysosomes              | Intracellular digestion (hydrolytic enzymes at pH ~5)       |
-| Peroxisomes            | Breakdown of fatty acids, detoxification of $\text{H}_2\text{O}_2$ via catalase |
+| Peroxisomes            | Breakdown of fatty acids, detoxification of $\text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'}_2$ via catalase |
 | Vacuoles               | Storage, turgor pressure (central vacuole in plants)        |
 | Cytoskeleton           | Structural support, intracellular transport, cell division  |
 
@@ -143,29 +143,29 @@ pressure in plant cells). Isotonic solutions produce no net movement.
 
 ### Photosynthesis
 
-$$6\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O} + \text{light energy} \to \mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 6\mathrm{O}_2$$
+$$6\mathrm{'\{'}CO{'\}'}_2 + 6\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} + \text{'\{'}light energy{'\}'} \to \mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 6\mathrm{'\{'}O{'\}'}_2$$
 
 **Light-dependent reactions (thylakoid membrane):**
 
 - Photosystems II and I absorb light at 680 nm and 700 nm respectively.
-- Water is split ($2\mathrm{H}_2\mathrm{O} \to 4\mathrm{H}^+ + 4e^- + \mathrm{O}_2$).
-- Electrons pass through an ETC, pumping $\mathrm{H}^+$ into the thylakoid lumen.
-- $\mathrm{H}^+$ diffuses through ATP synthase (chemiosmosis), producing ATP.
+- Water is split ($2\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} \to 4\mathrm{'\{'}H{'\}'}^+ + 4e^- + \mathrm{'\{'}O{'\}'}_2$).
+- Electrons pass through an ETC, pumping $\mathrm{'\{'}H{'\}'}^+$ into the thylakoid lumen.
+- $\mathrm{'\{'}H{'\}'}^+$ diffuses through ATP synthase (chemiosmosis), producing ATP.
 - NADP$^+$ is reduced to NADPH.
 
 **Calvin cycle (stroma):**
 
-1. **Carbon fixation:** RuBisCO catalyses $\mathrm{CO}_2 + \text{RuBP (5C)} \to 2 \times \text{3-PGA (3C)}$.
+1. **Carbon fixation:** RuBisCO catalyses $\mathrm{'\{'}CO{'\}'}_2 + \text{'\{'}RuBP (5C){'\}'} \to 2 \times \text{'\{'}3-PGA (3C){'\}'}$.
 2. **Reduction:** 3-PGA is phosphorylated by ATP and reduced by NADPH to G3P.
 3. **Regeneration:** Most G3P is used to regenerate RuBP (uses 5 of every 6 G3P molecules; 1 G3P
-   is the net product per 3 $\mathrm{CO}_2$ fixed).
+   is the net product per 3 $\mathrm{'\{'}CO{'\}'}_2$ fixed).
 
-**Net per 3 $\mathrm{CO}_2$ (one turn of the cycle):** 9 ATP consumed, 6 NADPH consumed, 1 G3P
+**Net per 3 $\mathrm{'\{'}CO{'\}'}_2$ (one turn of the cycle):** 9 ATP consumed, 6 NADPH consumed, 1 G3P
 produced. To produce one glucose requires 6 turns: 18 ATP + 12 NADPH.
 
 ### Cellular Respiration
 
-$$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 6\mathrm{O}_2 \to 6\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O} + \sim 30\text{--}32\,\mathrm{ATP}$$
+$$\mathrm{'\{'}C{'\}'}_6\mathrm{'\{'}H{'\}'}_{12}\mathrm{'\{'}O{'\}'}_6 + 6\mathrm{'\{'}O{'\}'}_2 \to 6\mathrm{'\{'}CO{'\}'}_2 + 6\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'} + \sim 30\text{'\{'}--{'\}'}32\,\mathrm{'\{'}ATP{'\}'}$$
 
 | Stage                     | Location                     | O$_2$ Required? | Net ATP Yield          |
 | ------------------------- | ---------------------------- | --------------- | ---------------------- |
@@ -174,13 +174,13 @@ $$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 6\mathrm{O}_2 \to 6\mathrm{CO}_2 + 6
 | Citric acid cycle         | Mitochondrial matrix         | No              | 2 ATP + 6 NADH + 2 FADH$_2$ |
 | Oxidative phosphorylation | Inner mitochondrial membrane | Yes             | ~26--28 ATP (chemiosmosis) |
 
-**Chemiosmosis:** The proton gradient ($\mathrm{H}^+$ concentration gradient) across the inner
+**Chemiosmosis:** The proton gradient ($\mathrm{'\{'}H{'\}'}^+$ concentration gradient) across the inner
 mitochondrial membrane drives ATP synthase. Each NADH yields ~2.5 ATP; each FADH$_2$ yields ~1.5 ATP
 (FADH$_2$ drops electrons at complex II, bypassing the first proton pump).
 
 **Fermentation (anaerobic):** Regenerates NAD$^+$ from NADH so glycolysis can continue.
 - **Lactic acid fermentation:** Pyruvate $\to$ lactate (muscle cells, some bacteria).
-- **Alcoholic fermentation:** Pyruvate $\to$ acetaldehyde $\to$ ethanol + $\mathrm{CO}_2$ (yeast).
+- **Alcoholic fermentation:** Pyruvate $\to$ acetaldehyde $\to$ ethanol + $\mathrm{'\{'}CO{'\}'}_2$ (yeast).
 
 ### Common Pitfalls
 
@@ -205,7 +205,7 @@ Three stages of cell signalling:
    - **Intracellular receptors:** Ligands (steroid hormones, thyroid hormones) diffuse through the
      membrane and bind receptors in the cytoplasm or nucleus.
 2. **Transduction:** Signal is relayed and amplified, often via phosphorylation cascades (kinases add
-   phosphate groups; phosphatases remove them). Secondary messengers (cAMP, $\text{Ca}^{2+}$) amplify
+   phosphate groups; phosphatases remove them). Secondary messengers (cAMP, $\text{'\{'}Ca{'\}'}^{2+}$) amplify
    the signal.
 3. **Response:** Cellular response such as gene expression, enzyme activation, or cytoskeletal
    rearrangement.
@@ -284,7 +284,7 @@ meiosis, producing gametes with abnormal chromosome numbers.
 
 ### Central Dogma
 
-$$\text{DNA} \xrightarrow{\text{transcription}} \text{RNA} \xrightarrow{\text{translation}} \text{Protein}$$
+$$\text{'\{'}DNA{'\}'} \xrightarrow{\text{'\{'}transcription{'\}'}} \text{'\{'}RNA{'\}'} \xrightarrow{\text{'\{'}translation{'\}'}} \text{'\{'}Protein{'\}'}$$
 
 ### Transcription (in prokaryotes)
 
@@ -479,14 +479,14 @@ rates determines species number.
 | Cycle            | Reservoir                  | Key Processes                                      |
 | ---------------- | -------------------------- | -------------------------------------------------- |
 | Carbon           | Atmosphere, ocean, fossil fuels | Photosynthesis, respiration, combustion, decomposition |
-| Nitrogen         | Atmosphere ($\text{N}_2$) | Nitrogen fixation, nitrification, denitrification  |
+| Nitrogen         | Atmosphere ($\text{'\{'}N{'\}'}_2$) | Nitrogen fixation, nitrification, denitrification  |
 | Phosphorus       | Rock, sediment             | Weathering, absorption by plants, decomposition    |
 | Water            | Oceans, atmosphere, glaciers | Evaporation, condensation, precipitation, transpiration |
 
-**Nitrogen cycle details:** Atmospheric $\text{N}_2$ is fixed by nitrogen-fixing bacteria
-(Rhizobium in legume root nodules, cyanobacteria) or lightning into $\text{NH}_3$ (ammonia).
-Nitrifying bacteria convert $\text{NH}_3 \to \text{NO}_2^- \to \text{NO}_3^-$ (usable by plants).
-Denitrifying bacteria convert $\text{NO}_3^- \to \text{N}_2$ back to the atmosphere.
+**Nitrogen cycle details:** Atmospheric $\text{'\{'}N{'\}'}_2$ is fixed by nitrogen-fixing bacteria
+(Rhizobium in legume root nodules, cyanobacteria) or lightning into $\text{'\{'}NH{'\}'}_3$ (ammonia).
+Nitrifying bacteria convert $\text{'\{'}NH{'\}'}_3 \to \text{'\{'}NO{'\}'}_2^- \to \text{'\{'}NO{'\}'}_3^-$ (usable by plants).
+Denitrifying bacteria convert $\text{'\{'}NO{'\}'}_3^- \to \text{'\{'}N{'\}'}_2$ back to the atmosphere.
 
 ### Common Pitfalls
 
@@ -531,7 +531,7 @@ Denitrifying bacteria convert $\text{NO}_3^- \to \text{N}_2$ back to the atmosph
 
 1. **(C)** $p = 0.7$, $q = 0.3$. $2pq = 2(0.7)(0.3) = 0.42$.
 2. **(B)** Oxygen is the final electron acceptor at complex IV of the ETC, combining with electrons
-   and protons to form $\mathrm{H}_2\mathrm{O}$.
+   and protons to form $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$.
 3. **(A)** Meiosis halves the chromosome number: $20/2 = 10$.
 4. (a) Total alleles = $500 \times 2 = 1000$. $C^R$ count: $(200 \times 2) + 200 = 600$.
    $C^W$ count: $(100 \times 2) + 200 = 400$. $p(C^R) = 600/1000 = 0.6$.

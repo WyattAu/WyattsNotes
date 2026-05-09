@@ -40,9 +40,9 @@ Key attributes:
 | GNP (Gross National Product) | GDP plus net income from abroad (income earned by residents from overseas minus income earned by non-residents domestically) | Nationality of producer |
 | GNI (Gross National Income)  | Same concept as GNP; the modern terminology used by international organisations (World Bank, IMF)                            | Nationality of producer |
 
-$$\mathrm{GNP} = \mathrm{GDP} + \mathrm{Net factor income from abroad}$$
+$$\mathrm{'\{'}GNP{'\}'} = \mathrm{'\{'}GDP{'\}'} + \mathrm{'\{'}Net factor income from abroad{'\}'}$$
 
-$$\mathrm{Net factor income from abroad} = \mathrm{Income earned by residents from abroad} - \mathrm{Income paid to non-residents}$$
+$$\mathrm{'\{'}Net factor income from abroad{'\}'} = \mathrm{'\{'}Income earned by residents from abroad{'\}'} - \mathrm{'\{'}Income paid to non-residents{'\}'}$$
 
 **Hong Kong example:** Many Hong Kong firms have operations and investments in mainland China and
 Southeast Asia. The income from these overseas operations is counted in Hong Kong's GNP but not in
@@ -52,9 +52,9 @@ because net factor income from abroad has been positive.
 
 ### Net Domestic Product (NDP) and Net National Product (NNP)
 
-$$\mathrm{NDP} = \mathrm{GDP} - \mathrm{Depreciation}$$
+$$\mathrm{'\{'}NDP{'\}'} = \mathrm{'\{'}GDP{'\}'} - \mathrm{'\{'}Depreciation{'\}'}$$
 
-$$\mathrm{NNP} = \mathrm{GNP} - \mathrm{Depreciation}$$
+$$\mathrm{'\{'}NNP{'\}'} = \mathrm{'\{'}GNP{'\}'} - \mathrm{'\{'}Depreciation{'\}'}$$
 
 Depreciation (capital consumption allowance) is the wear and tear on capital stock during the
 production process. NDP measures the net output available after maintaining the existing capital
@@ -63,9 +63,9 @@ capital consumed in the production process.
 
 ### Personal Income and Disposable Income
 
-$$\mathrm{Personal Income} = \mathrm{National Income} - \mathrm{Undistributed corporate profit} - \mathrm{Corporate tax} - \mathrm{Social security contributions} + \mathrm{Transfer payments}$$
+$$\mathrm{'\{'}Personal Income{'\}'} = \mathrm{'\{'}National Income{'\}'} - \mathrm{'\{'}Undistributed corporate profit{'\}'} - \mathrm{'\{'}Corporate tax{'\}'} - \mathrm{'\{'}Social security contributions{'\}'} + \mathrm{'\{'}Transfer payments{'\}'}$$
 
-$$\mathrm{Disposable Income} = \mathrm{Personal Income} - \mathrm{Personal income tax}$$
+$$\mathrm{'\{'}Disposable Income{'\}'} = \mathrm{'\{'}Personal Income{'\}'} - \mathrm{'\{'}Personal income tax{'\}'}$$
 
 Disposable income is the income households have available for spending (consumption) and saving
 after paying taxes. It is the most relevant measure for analysing household behaviour.
@@ -79,7 +79,7 @@ after paying taxes. It is the most relevant measure for analysing household beha
 Nominal GDP is GDP measured at current market prices. It changes when either output quantities or
 prices change (or both).
 
-$$\mathrm{Nominal GDP} = \sum_{i=1}^{n} P_{i,t} \times Q_{i,t}$$
+$$\mathrm{'\{'}Nominal GDP{'\}'} = \sum_{i=1}^{n} P_{i,t} \times Q_{i,t}$$
 
 ### Real GDP
 
@@ -87,14 +87,14 @@ Real GDP is GDP measured at constant (base-year) prices. It changes only when ou
 change, holding prices constant. Real GDP is the preferred measure for comparing output across time
 because it strips out the effect of price changes (inflation).
 
-$$\mathrm{Real GDP} = \sum_{i=1}^{n} P_{i,\mathrm{base}} \times Q_{i,t}$$
+$$\mathrm{'\{'}Real GDP{'\}'} = \sum_{i=1}^{n} P_{i,\mathrm{'\{'}base{'\}'}} \times Q_{i,t}$$
 
 ### GDP Deflator
 
 The GDP deflator is a broad measure of the price level that captures the prices of all goods and
 services included in GDP.
 
-$$\mathrm{GDP Deflator} = \frac{\mathrm{Nominal GDP}}{\mathrm{Real GDP}} \times 100$$
+$$\mathrm{'\{'}GDP Deflator{'\}'} = \frac{\mathrm{'\{'}Nominal GDP{'\}'}}{\mathrm{'\{'}Real GDP{'\}'}} \times 100$$
 
 The GDP deflator measures the change in prices of all domestically produced final goods and
 services. Unlike the Consumer Price Index (CPI), which covers a basket of consumer goods, the GDP
@@ -102,7 +102,7 @@ deflator covers investment goods, government services, and exports, but excludes
 
 **Inflation rate from the GDP deflator:**
 
-$$\mathrm{Inflation rate} = \frac{\mathrm{GDP Deflator}_t - \mathrm{GDP Deflator}_{t-1}}{\mathrm{GDP Deflator}_{t-1}} \times 100\%$$
+$$\mathrm{'\{'}Inflation rate{'\}'} = \frac{\mathrm{'\{'}GDP Deflator{'\}'}_t - \mathrm{'\{'}GDP Deflator{'\}'}_{t-1}}{\mathrm{'\{'}GDP Deflator{'\}'}_{t-1}} \times 100\%$$
 
 ### Worked Example: Nominal vs Real GDP
 
@@ -139,7 +139,7 @@ Output did not grow in real terms; the entire increase in nominal GDP was due to
 
 GDP is measured as the total spending on final goods and services produced within the country.
 
-$$\mathrm{GDP} = C + I + G + (X - M)$$
+$$\mathrm{'\{'}GDP{'\}'} = C + I + G + (X - M)$$
 
 | Component                 | Description                                                                                                                                                                                                       |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -149,7 +149,7 @@ $$\mathrm{GDP} = C + I + G + (X - M)$$
 | `X` (Exports)             | Spending by foreigners on domestically produced goods and services. Added because they are produced domestically.                                                                                                 |
 | `M` (Imports)             | Spending by domestic residents on foreign-produced goods and services. Subtracted because they are not produced domestically.                                                                                     |
 
-$$\mathrm{Net exports} = X - M$$
+$$\mathrm{'\{'}Net exports{'\}'} = X - M$$
 
 A trade surplus (`X \gt M`) adds to GDP. A trade deficit (`X \lt M`) subtracts from GDP.
 
@@ -157,7 +157,7 @@ A trade surplus (`X \gt M`) adds to GDP. A trade deficit (`X \lt M`) subtracts f
 
 GDP is measured as the sum of all incomes earned by factors of production in producing output.
 
-$$\mathrm{GDP} = W + R + I + P + \mathrm{Indirect taxes} - \mathrm{Subsidies} + \mathrm{Depreciation}$$
+$$\mathrm{'\{'}GDP{'\}'} = W + R + I + P + \mathrm{'\{'}Indirect taxes{'\}'} - \mathrm{'\{'}Subsidies{'\}'} + \mathrm{'\{'}Depreciation{'\}'}$$
 
 | Component      | Description                                                                          |
 | -------------- | ------------------------------------------------------------------------------------ |
@@ -178,7 +178,7 @@ add indirect taxes and subtract subsidies.
 
 GDP is measured as the sum of the value added by every firm in the economy.
 
-$$\mathrm{Value added} = \mathrm{Value of output} - \mathrm{Value of intermediate inputs}$$
+$$\mathrm{'\{'}Value added{'\}'} = \mathrm{'\{'}Value of output{'\}'} - \mathrm{'\{'}Value of intermediate inputs{'\}'}$$
 
 This method avoids double counting by only counting the additional value created at each stage of
 production.
@@ -224,7 +224,7 @@ Alternatively, value of final output (car) = USD 20,000. Same result.
 
 ## GDP Per Capita and Standard of Living
 
-$$\mathrm{GDP per capita} = \frac{\mathrm{GDP}}{\mathrm{Population}}$$
+$$\mathrm{'\{'}GDP per capita{'\}'} = \frac{\mathrm{'\{'}GDP{'\}'}}{\mathrm{'\{'}Population{'\}'}}$$
 
 GDP per capita is a rough indicator of the average economic well-being of a country's population.
 Higher GDP per capita generally correlates with higher standards of living: better healthcare,
@@ -300,11 +300,11 @@ though it represents a cost rather than a genuine improvement in welfare.
 The unemployment rate is the percentage of the labour force that is actively seeking work but unable
 to find it.
 
-$$\mathrm{Unemployment rate} = \frac{\mathrm{Number of unemployed}}{\mathrm{Labour force}} \times 100\%$$
+$$\mathrm{'\{'}Unemployment rate{'\}'} = \frac{\mathrm{'\{'}Number of unemployed{'\}'}}{\mathrm{'\{'}Labour force{'\}'}} \times 100\%$$
 
-$$\mathrm{Labour force} = \mathrm{Number of employed} + \mathrm{Number of unemployed}$$
+$$\mathrm{'\{'}Labour force{'\}'} = \mathrm{'\{'}Number of employed{'\}'} + \mathrm{'\{'}Number of unemployed{'\}'}$$
 
-$$\mathrm{Labour force participation rate} = \frac{\mathrm{Labour force}}{\mathrm{Working-age population}} \times 100\%$$
+$$\mathrm{'\{'}Labour force participation rate{'\}'} = \frac{\mathrm{'\{'}Labour force{'\}'}}{\mathrm{'\{'}Working-age population{'\}'}} \times 100\%$$
 
 **Key definitions:**
 
@@ -368,7 +368,7 @@ individuals now enter the labour force as unemployed.
 The natural rate of unemployment (also called the non-accelerating inflation rate of unemployment,
 NAIRU) is the unemployment rate that prevails when the economy is at full employment.
 
-$$\mathrm{NRU} = \mathrm{Frictional unemployment} + \mathrm{Structural unemployment}$$
+$$\mathrm{'\{'}NRU{'\}'} = \mathrm{'\{'}Frictional unemployment{'\}'} + \mathrm{'\{'}Structural unemployment{'\}'}$$
 
 At the NRU, cyclical unemployment is zero. The economy is producing at its potential output
 (full-employment output). The NRU is not zero because frictional and structural unemployment always
@@ -395,16 +395,16 @@ exist.
 Inflation is a sustained increase in the general price level over time. A single price increase is
 not inflation; inflation refers to a broad-based, persistent rise in prices.
 
-$$\mathrm{Inflation rate} = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%$$
+$$\mathrm{'\{'}Inflation rate{'\}'} = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%$$
 
 ### Measurement: Consumer Price Index (CPI)
 
 The CPI measures the change in the price of a fixed basket of goods and services typically purchased
 by a representative household.
 
-$$\mathrm{CPI}_t = \frac{\mathrm{Cost of basket in year } t}{\mathrm{Cost of basket in base year}} \times 100$$
+$$\mathrm{'\{'}CPI{'\}'}_t = \frac{\mathrm{'\{'}Cost of basket in year {'\}'} t}{\mathrm{'\{'}Cost of basket in base year{'\}'}} \times 100$$
 
-$$\mathrm{Inflation rate} = \frac{\mathrm{CPI}_t - \mathrm{CPI}_{t-1}}{\mathrm{CPI}_{t-1}} \times 100\%$$
+$$\mathrm{'\{'}Inflation rate{'\}'} = \frac{\mathrm{'\{'}CPI{'\}'}_t - \mathrm{'\{'}CPI{'\}'}_{t-1}}{\mathrm{'\{'}CPI{'\}'}_{t-1}} \times 100\%$$
 
 **Limitations of the CPI:**
 
@@ -423,7 +423,7 @@ $$\mathrm{Inflation rate} = \frac{\mathrm{CPI}_t - \mathrm{CPI}_{t-1}}{\mathrm{C
 **Demand-pull inflation:** Caused by excess aggregate demand relative to aggregate supply. When
 total spending in the economy exceeds the economy's productive capacity, prices are bid up.
 
-$$\mathrm{AD} \gt \mathrm{LRAS} \implies P \mathrm{ rises}$$
+$$\mathrm{'\{'}AD{'\}'} \gt \mathrm{'\{'}LRAS{'\}'} \implies P \mathrm{'\{'} rises{'\}'}$$
 
 Triggers include: expansionary fiscal policy, expansionary monetary policy, rising consumer
 confidence, export boom.
@@ -431,7 +431,7 @@ confidence, export boom.
 **Cost-push inflation:** Caused by increases in production costs that shift the short-run aggregate
 supply curve leftward.
 
-$$\mathrm{SRAS shifts left} \implies P \mathrm{ rises, } Q \mathrm{ falls}$$
+$$\mathrm{'\{'}SRAS shifts left{'\}'} \implies P \mathrm{'\{'} rises, {'\}'} Q \mathrm{'\{'} falls{'\}'}$$
 
 Triggers include: rising wages (wage-price spiral), rising oil/commodity prices, supply chain
 disruptions, currency depreciation (imported inflation).
@@ -523,7 +523,7 @@ the next. Measured by the real GDP growth rate.
 the economy can produce when all resources are fully and efficiently employed). Represented by an
 outward shift of the production possibility curve or a rightward shift of the LRAS curve.
 
-$$\mathrm{GDP gap} = \mathrm{Potential GDP} - \mathrm{Actual GDP}$$
+$$\mathrm{'\{'}GDP gap{'\}'} = \mathrm{'\{'}Potential GDP{'\}'} - \mathrm{'\{'}Actual GDP{'\}'}$$
 
 A positive GDP gap (actual output below potential) indicates a recessionary gap. A negative GDP gap
 (actual output above potential) indicates an inflationary gap.
@@ -544,9 +544,9 @@ A positive GDP gap (actual output below potential) indicates a recessionary gap.
 
 Productivity measures the efficiency with which inputs are converted into output.
 
-$$\mathrm{Labour productivity} = \frac{\mathrm{Real GDP}}{\mathrm{Total hours worked}}$$
+$$\mathrm{'\{'}Labour productivity{'\}'} = \frac{\mathrm{'\{'}Real GDP{'\}'}}{\mathrm{'\{'}Total hours worked{'\}'}}$$
 
-$$\mathrm{Total factor productivity (TFP)} = \frac{\mathrm{Total output}}{\mathrm{Weighted combination of all inputs}}$$
+$$\mathrm{'\{'}Total factor productivity (TFP){'\}'} = \frac{\mathrm{'\{'}Total output{'\}'}}{\mathrm{'\{'}Weighted combination of all inputs{'\}'}}$$
 
 TFP captures the portion of output growth not explained by increases in capital and labour. It
 reflects technological progress, organisational improvements, and better resource allocation.
@@ -615,7 +615,7 @@ it.
 
 ### Budget Balance
 
-$$\mathrm{Budget balance} = \mathrm{Government revenue} - \mathrm{Government expenditure}$$
+$$\mathrm{'\{'}Budget balance{'\}'} = \mathrm{'\{'}Government revenue{'\}'} - \mathrm{'\{'}Government expenditure{'\}'}$$
 
 | Outcome         | Condition               | Implication                                     |
 | --------------- | ----------------------- | ----------------------------------------------- |
@@ -645,13 +645,13 @@ a single rate.
 
 ### Public Debt
 
-$$\mathrm{Public debt} = \mathrm{Accumulated budget deficits} - \mathrm{Accumulated budget surpluses}$$
+$$\mathrm{'\{'}Public debt{'\}'} = \mathrm{'\{'}Accumulated budget deficits{'\}'} - \mathrm{'\{'}Accumulated budget surpluses{'\}'}$$
 
 Public debt is the total amount the government owes to its creditors (domestic and foreign).
 
 **Debt-to-GDP ratio:**
 
-$$\mathrm{Debt-to-GDP ratio} = \frac{\mathrm{Total public debt}}{\mathrm{GDP}} \times 100\%$$
+$$\mathrm{'\{'}Debt-to-GDP ratio{'\}'} = \frac{\mathrm{'\{'}Total public debt{'\}'}}{\mathrm{'\{'}GDP{'\}'}} \times 100\%$$
 
 This ratio indicates the government's ability to service its debt relative to the size of the
 economy. A higher ratio signals greater fiscal risk.
@@ -1266,11 +1266,11 @@ An economy has potential GDP of HK$3,000 billion. The natural rate of unemployme
 
 Output gap $= -2.5 \times 3\% = -7.5\%$. The economy is producing 7.5% below potential.
 
-(b) Actual GDP $= 3000 \times (1 - 0.075) = 3000 \times 0.925 = \text{HK}\$2\,775$ billion.
+(b) Actual GDP $= 3000 \times (1 - 0.075) = 3000 \times 0.925 = \text{'\{'}HK{'\}'}\$2\,775$ billion.
 
-(c) Required GDP increase $= 3000 - 2775 = \text{HK}\$225$ billion.
+(c) Required GDP increase $= 3000 - 2775 = \text{'\{'}HK{'\}'}\$225$ billion.
 
-Required spending increase $= 225 / 1.8 = \text{HK}\$125$ billion.
+Required spending increase $= 225 / 1.8 = \text{'\{'}HK{'\}'}\$125$ billion.
 
 (d) **Critique of Okun's law:**
 1. **The coefficient varies over time and across countries.** The assumption of 2.5 is an approximation. Empirical estimates for Hong Kong may differ significantly due to structural factors (high proportion of services, open economy).
@@ -1398,7 +1398,7 @@ Leakages (2050) do not equal injections (2200) -- there is a surplus of injectio
 
 (c) Multiplier with imports: $k = \frac{1}{1 - MPC + MPM} = \frac{1}{1 - 0.75 + 0.30} = \frac{1}{0.55} = 1.818$.
 
-$\Delta GDP = 1.818 \times 50 = \text{HK}\$90.9$ billion.
+$\Delta GDP = 1.818 \times 50 = \text{'\{'}HK{'\}'}\$90.9$ billion.
 
 (d) In an open economy, some of the additional income from government spending leaks abroad as imports (MPM = 0.3 means 30 cents of every additional dollar is spent on imports). These imports do not generate domestic income, so the circular flow is smaller. In a closed economy (MPM = 0), the multiplier would be $\frac{1}{1 - 0.75} = 4$, and the same HK$50 billion would generate HK$200 billion. The import leakage reduces the multiplier from 4 to 1.818.
 
@@ -1418,7 +1418,7 @@ Country M reports the following annual changes: GDP +8%, nominal wages +5%, CPI 
 <details>
 <summary>Solution</summary>
 
-(a) Real GDP growth $= \frac{1 + \text{nominal GDP growth}}{1 + \text{inflation}} - 1$.
+(a) Real GDP growth $= \frac{1 + \text{'\{'}nominal GDP growth{'\}'}}{1 + \text{'\{'}inflation{'\}'}} - 1$.
 
 If nominal GDP growth is 8% and inflation (GDP deflator) is approximately the CPI (10%): real growth $= \frac{1.08}{1.10} - 1 = -1.8\%$.
 
@@ -1451,7 +1451,7 @@ Country N has GDP of USD 500 billion. Environmental damage from pollution is est
 
 (a) **Green GDP** adjusts GDP for environmental costs:
 
-$Green GDP = GDP - Environmental damage - Resource depletion = 500 - 80 - 30 = \text{USD } 390$ billion.
+$Green GDP = GDP - Environmental damage - Resource depletion = 500 - 80 - 30 = \text{'\{'}USD {'\}'} 390$ billion.
 
 Note: There are different methods for calculating Green GDP. Some also subtract defensive expenditure: $500 - 80 - 30 - 20 = 370$ billion.
 

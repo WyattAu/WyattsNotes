@@ -26,12 +26,12 @@ prove in real analysis become straightforward when extended to the complex plane
 
 Any non-zero complex number $z = x + iy$ can be written in **modulus-argument form** (polar form):
 
-$$z = r(\cos\theta + i\sin\theta) = r\,\mathrm{cis}\,\theta$$
+$$z = r(\cos\theta + i\sin\theta) = r\,\mathrm{'\{'}cis{'\}'}\,\theta$$
 
 where $r = |z| = \sqrt{x^2 + y^2}$ and $\theta = \arg(z)$.
 
-The argument is multi-valued: $\arg(z) = \theta + 2k\pi$ for $k \in \mathbb{Z}$. The **principal
-argument** $\mathrm{Arg}(z)$ satisfies $-\pi \lt \mathrm{Arg}(z) \leq \pi$.
+The argument is multi-valued: $\arg(z) = \theta + 2k\pi$ for $k \in \mathbb{'\{'}Z{'\}'}$. The **principal
+argument** $\mathrm{'\{'}Arg{'\}'}(z)$ satisfies $-\pi \lt \mathrm{'\{'}Arg{'\}'}(z) \leq \pi$.
 
 ### 1.2 Multiplication and division in polar form
 
@@ -130,7 +130,7 @@ angles of $\dfrac{2\pi}{n}$ apart.
 
 The sum of all $n$ roots of $z^n = w$ is zero (they form a regular polygon centred at the origin).
 
-**Proof.** The roots are $R^{1/n}\,\omega^k$ where $\omega = \mathrm{cis}(2\pi/n)$ and $k = 0, 1, \ldots, n-1$.
+**Proof.** The roots are $R^{1/n}\,\omega^k$ where $\omega = \mathrm{'\{'}cis{'\}'}(2\pi/n)$ and $k = 0, 1, \ldots, n-1$.
 
 $$\sum_{k=0}^{n-1}\omega^k = \frac{1 - \omega^n}{1 - \omega} = \frac{1 - 1}{1 - \omega} = 0 \quad \blacksquare$$
 
@@ -294,9 +294,9 @@ So $e^{x + iy} = e^x\,e^{iy} = 2\,e^{i(\pi/3 + 2k\pi)}$.
 
 Equating moduli: $e^x = 2 \implies x = \ln 2$.
 
-Equating arguments: $y = \dfrac{\pi}{3} + 2k\pi$ for $k \in \mathbb{Z}$.
+Equating arguments: $y = \dfrac{\pi}{3} + 2k\pi$ for $k \in \mathbb{'\{'}Z{'\}'}$.
 
-$$z = \ln 2 + i\!\left(\frac{\pi}{3} + 2k\pi\right), \quad k \in \mathbb{Z}$$
+$$z = \ln 2 + i\!\left(\frac{\pi}{3} + 2k\pi\right), \quad k \in \mathbb{'\{'}Z{'\}'}$$
 
 :::warning
 Common Pitfall
@@ -400,7 +400,7 @@ $$\prod_{k=0}^{n-1} z_k = (-1)^n \cdot \frac{-1}{1} = (-1)^{n-1} \quad \blacksqu
 **Theorem.** If $p(z)$ is a polynomial with real coefficients and $p(\alpha) = 0$, then
 $p(\overline{\alpha}) = 0$.
 
-**Proof.** Let $p(z) = a_n z^n + \cdots + a_1 z + a_0$ with all $a_i \in \mathbb{R}$.
+**Proof.** Let $p(z) = a_n z^n + \cdots + a_1 z + a_0$ with all $a_i \in \mathbb{'\{'}R{'\}'}$.
 
 $$p(\overline{\alpha}) = a_n \overline{\alpha}^n + \cdots + a_1 \overline{\alpha} + a_0 = \overline{a_n}\,\overline{\alpha^n} + \cdots + \overline{a_1}\,\overline{\alpha} + \overline{a_0}$$
 
@@ -412,9 +412,9 @@ $$= \overline{a_n \alpha^n + \cdots + a_1 \alpha + a_0} = \overline{p(\alpha)} =
 
 $$|z_1 + z_2|^2 = (z_1 + z_2)\overline{(z_1 + z_2)} = |z_1|^2 + |z_2|^2 + z_1\overline{z_2} + \overline{z_1}z_2$$
 
-$$= |z_1|^2 + |z_2|^2 + 2\,\mathrm{Re}(z_1\overline{z_2}) \leq |z_1|^2 + |z_2|^2 + 2|z_1||z_2| = (|z_1| + |z_2|)^2$$
+$$= |z_1|^2 + |z_2|^2 + 2\,\mathrm{'\{'}Re{'\}'}(z_1\overline{z_2}) \leq |z_1|^2 + |z_2|^2 + 2|z_1||z_2| = (|z_1| + |z_2|)^2$$
 
-since $\mathrm{Re}(w) \leq |w|$ for any complex $w$. Taking square roots gives the result. $\blacksquare$
+since $\mathrm{'\{'}Re{'\}'}(w) \leq |w|$ for any complex $w$. Taking square roots gives the result. $\blacksquare$
 
 ---
 
@@ -518,7 +518,7 @@ Centre: $(0, -2)$, radius: $\sqrt{29/3}$.
 Distance from origin to centre: $\sqrt{0^2 + (-2)^2} = 2$.
 
 Minimum $|z| = 2 - \sqrt{29/3}$. Since $\sqrt{29/3} \approx 3.11 > 2$, this is negative, so
-the minimum is $|\text{radius} - d| = \sqrt{29/3} - 2$.
+the minimum is $|\text{'\{'}radius{'\}'} - d| = \sqrt{29/3} - 2$.
 
 Maximum $|z| = 2 + \sqrt{29/3}$.
 
@@ -573,13 +573,13 @@ The intersection of the disc with this sector gives $R$. The line $\arg(z - i) =
 
 The disc boundary $(x)^2 + (y - 3)^2 = 4$ intersects $y = x + 1$ at:
 
-$$x^2 + (x + 1 - 3)^2 = 4 \implies x^2 + (x-2)^2 = 4 \implies 2x^2 - 4x = 0 \implies x = 0 \text{ or } x = 2$$
+$$x^2 + (x + 1 - 3)^2 = 4 \implies x^2 + (x-2)^2 = 4 \implies 2x^2 - 4x = 0 \implies x = 0 \text{'\{'} or {'\}'} x = 2$$
 
 So the intersection points are $(0, 1) = i$ and $(2, 3)$.
 
 ### Example 9.4: Transformation of the complex plane
 
-**Problem.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = \dfrac{z + 1}{z - 1}$. Find the image of the line $\mathrm{Re}(z) = 2$ under $T$.
+**Problem.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = \dfrac{z + 1}{z - 1}$. Find the image of the line $\mathrm{'\{'}Re{'\}'}(z) = 2$ under $T$.
 
 **Solution.** Let $z = 2 + iy$. Then:
 
@@ -645,11 +645,11 @@ $\overrightarrow{AC} = z_C - z_A = 4 + i$, $|\overrightarrow{AC}| = \sqrt{16 + 1
 
 All three sides have different lengths, so the triangle is **scalene**, not isosceles. (If the question intended different points, the same method applies.)
 
-The area is $\dfrac{1}{2}|\mathrm{Im}(\overline{z_{AB}} \cdot z_{AC})|$:
+The area is $\dfrac{1}{2}|\mathrm{'\{'}Im{'\}'}(\overline{z_{AB}} \cdot z_{AC})|$:
 
 $\overline{z_{AB}} \cdot z_{AC} = (2 - 4i)(4 + i) = 8 + 2i - 16i + 4 = 12 - 14i$.
 
-$\text{Area} = \dfrac{1}{2}|-14| = 7$.
+$\text{'\{'}Area{'\}'} = \dfrac{1}{2}|-14| = 7$.
 
 ---
 
@@ -927,7 +927,7 @@ A circle with centre $\left(-\dfrac{5}{3}, 0\right)$ and radius $\dfrac{4}{3}$.
 
 ### 14.1 Complex logarithms
 
-The complex logarithm is multi-valued: $\ln z = \ln|z| + i(\arg z + 2k\pi)$ for $k \in \mathbb{Z}$.
+The complex logarithm is multi-valued: $\ln z = \ln|z| + i(\arg z + 2k\pi)$ for $k \in \mathbb{'\{'}Z{'\}'}$.
 
 The principal value uses $\arg z \in (-\pi, \pi]$.
 
@@ -975,7 +975,7 @@ $\boxed{\cos^4\theta = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\co
 
 ### Question 15
 
-Find the image of the line $\mathrm{Re}(z) = 2$ under the transformation $w = \dfrac{z-1}{z+1}$.
+Find the image of the line $\mathrm{'\{'}Re{'\}'}(z) = 2$ under the transformation $w = \dfrac{z-1}{z+1}$.
 
 <details>
 <summary>Solution</summary>
@@ -1009,7 +1009,7 @@ The $n$th roots of unity are equally spaced on the unit circle and have importan
 
 $\ln z = \ln|z| + i\arg z$, where $\arg z$ is multi-valued.
 
-$\ln z = \ln|z| + i(\theta + 2k\pi)$ for $k \in \mathbb{Z}$.
+$\ln z = \ln|z| + i(\theta + 2k\pi)$ for $k \in \mathbb{'\{'}Z{'\}'}$.
 
 The **principal value** uses $\theta \in (-\pi, \pi]$.
 

@@ -129,9 +129,9 @@ of 65%. Calculate the power input to the pump.
 <summary>Solution</summary>
 
 - **Useful power output** (work done per second against gravity):
-  - $P_{\mathrm{useful}} = \dfrac{mgh}{t} = \dfrac{(1200)(9.81)(15)}{60} = 2943$ W
+  - $P_{\mathrm{'\{'}useful{'\}'}} = \dfrac{mgh}{t} = \dfrac{(1200)(9.81)(15)}{60} = 2943$ W
 - **Power input:**
-  - $P_{\mathrm{input}} = \dfrac{P_{\mathrm{useful}}}{\eta} = \dfrac{2943}{0.65} = 4530$ W $\approx 4.5$ kW
+  - $P_{\mathrm{'\{'}input{'\}'}} = \dfrac{P_{\mathrm{'\{'}useful{'\}'}}}{\eta} = \dfrac{2943}{0.65} = 4530$ W $\approx 4.5$ kW
 
 The remaining 35% of the input power is wasted as heat and sound.
 
@@ -221,11 +221,11 @@ J/(kg K). Calculate the total energy required.
 The process has three stages:
 
 - **Stage 1: Heating ice from $-15.0$ degrees Celsius to $0$ degrees Celsius:**
-  - $Q_1 = m c_{\mathrm{ice}} \Delta T = (0.500)(2.09 \times 10^3)(15.0) = 15675$ J
+  - $Q_1 = m c_{\mathrm{'\{'}ice{'\}'}} \Delta T = (0.500)(2.09 \times 10^3)(15.0) = 15675$ J
 - **Stage 2: Melting ice at $0$ degrees Celsius:**
   - $Q_2 = m L_f = (0.500)(3.34 \times 10^5) = 167000$ J
 - **Stage 3: Heating water from $0$ degrees Celsius to $25.0$ degrees Celsius:**
-  - $Q_3 = m c_{\mathrm{water}} \Delta T = (0.500)(4.18 \times 10^3)(25.0) = 52250$ J
+  - $Q_3 = m c_{\mathrm{'\{'}water{'\}'}} \Delta T = (0.500)(4.18 \times 10^3)(25.0) = 52250$ J
 - **Total energy:** $Q = Q_1 + Q_2 + Q_3 = 15675 + 167000 + 52250 = 234925$ J $\approx 235$ kJ
 
 </details>
@@ -241,8 +241,8 @@ $R = 8.31$ J/(mol K) and the molar mass of the gas as $0.0290$ kg/mol.
 
 - **(a) Pressure from the ideal gas law $PV = nRT$:**
   - $P = \dfrac{nRT}{V} = \dfrac{(2.50)(8.31)(350)}{0.0200} = \dfrac{7271}{0.0200} = 363550$ Pa $\approx 364$ kPa
-- **(b) RMS speed from $v_{\mathrm{rms}} = \sqrt{\dfrac{3RT}{M}}$:**
-  - $v_{\mathrm{rms}} = \sqrt{\dfrac{3 \times 8.31 \times 350}{0.0290}} = \sqrt{\dfrac{8725.5}{0.0290}} = \sqrt{300879} = 548$ m/s
+- **(b) RMS speed from $v_{\mathrm{'\{'}rms{'\}'}} = \sqrt{\dfrac{3RT}{M}}$:**
+  - $v_{\mathrm{'\{'}rms{'\}'}} = \sqrt{\dfrac{3 \times 8.31 \times 350}{0.0290}} = \sqrt{\dfrac{8725.5}{0.0290}} = \sqrt{300879} = 548$ m/s
 
 </details>
 
@@ -258,7 +258,7 @@ done on the gas.
 - **Initial volume** from the ideal gas law:
   - $V_i = \dfrac{nRT}{P_i} = \dfrac{(0.20)(8.31)(300)}{1.5 \times 10^5} = 3.32 \times 10^{-3}$ m$^3$
 - **Final volume:** $V_f = V_i / 2 = 1.66 \times 10^{-3}$ m$^3$
-- **Final pressure** (isothermal: $PV = \mathrm{constant}$):
+- **Final pressure** (isothermal: $PV = \mathrm{'\{'}constant{'\}'}$):
   - $P_i V_i = P_f V_f \implies P_f = 1.5 \times 10^5 \times 2 = 3.0 \times 10^5$ Pa
 - **Work done on the gas** (isothermal compression):
   - $W = nRT \ln\!\left(\dfrac{V_i}{V_f}\right) = (0.20)(8.31)(300) \ln 2$
@@ -281,8 +281,8 @@ current through $R_2$.
 - **(a) Total resistance:** The parallel combination first:
   - $\dfrac{1}{R_{23}} = \dfrac{1}{6.0} + \dfrac{1}{3.0} = \dfrac{1}{6.0} + \dfrac{2}{6.0} = \dfrac{3}{6.0} = 0.50$ S
   - $R_{23} = 2.0$ ohms
-  - $R_{\mathrm{total}} = R_1 + R_{23} = 4.0 + 2.0 = 6.0$ ohms
-- **(b) Current from battery:** $I = \dfrac{\mathrm{emf}}{R_{\mathrm{total}}} = \dfrac{12.0}{6.0} = 2.0$ A
+  - $R_{\mathrm{'\{'}total{'\}'}} = R_1 + R_{23} = 4.0 + 2.0 = 6.0$ ohms
+- **(b) Current from battery:** $I = \dfrac{\mathrm{'\{'}emf{'\}'}}{R_{\mathrm{'\{'}total{'\}'}}} = \dfrac{12.0}{6.0} = 2.0$ A
 - **(c) PD across $R_1$:** $V_1 = IR_1 = (2.0)(4.0) = 8.0$ V
 - **(d) Current through $R_2$:** The PD across the parallel pair is $V_{23} = 12.0 - 8.0 = 4.0$ V:
   - $I_2 = \dfrac{V_{23}}{R_2} = \dfrac{4.0}{6.0} = 0.67$ A
@@ -488,13 +488,13 @@ between charged particles and masses.
 ### Worked Example: Gravitational Field Strength (D.1)
 
 Calculate the gravitational field strength at a point $300$ km above the Earth's surface. Given:
-$M_{\mathrm{Earth}} = 5.97 \times 10^{24}$ kg, $R_{\mathrm{Earth}} = 6.37 \times 10^6$ m,
+$M_{\mathrm{'\{'}Earth{'\}'}} = 5.97 \times 10^{24}$ kg, $R_{\mathrm{'\{'}Earth{'\}'}} = 6.37 \times 10^6$ m,
 $G = 6.67 \times 10^{-11}$ N m$^2$/kg$^2$.
 
 <details>
 <summary>Solution</summary>
 
-- **Distance from centre of Earth:** $r = R_{\mathrm{Earth}} + h = 6.37 \times 10^6 + 3.00 \times 10^5 = 6.67 \times 10^6$ m
+- **Distance from centre of Earth:** $r = R_{\mathrm{'\{'}Earth{'\}'}} + h = 6.37 \times 10^6 + 3.00 \times 10^5 = 6.67 \times 10^6$ m
 - **Gravitational field strength:** $g = \dfrac{GM}{r^2}$
   - $g = \dfrac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.67 \times 10^6)^2}$
   - $g = \dfrac{3.982 \times 10^{14}}{4.449 \times 10^{13}} = 8.95$ N/kg
@@ -532,7 +532,7 @@ electric field strength and the electric potential at the midpoint between the c
 - **Electric field due to $q_2$** (pointing toward the negative charge):
   - $E_2 = \dfrac{k \lvert q_2 \rvert}{r^2} = \dfrac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{(0.10)^2} = 4500$ N/C
 - Both fields point in the same direction (from $q_1$ toward $q_2$), so:
-  - $E_{\mathrm{total}} = E_1 + E_2 = 2700 + 4500 = 7200$ N/C
+  - $E_{\mathrm{'\{'}total{'\}'}} = E_1 + E_2 = 2700 + 4500 = 7200$ N/C
 - **Electric potential at the midpoint** (a scalar -- add algebraically):
   - $V = \dfrac{k q_1}{r} + \dfrac{k q_2}{r} = \dfrac{k}{r}(q_1 + q_2)$
   - $V = \dfrac{8.99 \times 10^9}{0.10}(3.0 \times 10^{-9} + (-5.0 \times 10^{-9}))$
@@ -589,8 +589,8 @@ and the escape speed from this altitude.
 - **Gravitational potential** (negative, zero at infinity):
   - $V_g = -\dfrac{GM}{r} = -\dfrac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{3.0 \times 10^7}$
   - $V_g = -\dfrac{3.98 \times 10^{14}}{3.0 \times 10^7} = -1.33 \times 10^7$ J/kg
-- **Escape speed** (set total energy to zero: $\tfrac{1}{2}mv_{\mathrm{esc}}^2 + m V_g = 0$):
-  - $v_{\mathrm{esc}} = \sqrt{-2V_g} = \sqrt{2(1.33 \times 10^7)} = \sqrt{2.66 \times 10^7} = 5160$ m/s
+- **Escape speed** (set total energy to zero: $\tfrac{1}{2}mv_{\mathrm{'\{'}esc{'\}'}}^2 + m V_g = 0$):
+  - $v_{\mathrm{'\{'}esc{'\}'}} = \sqrt{-2V_g} = \sqrt{2(1.33 \times 10^7)} = \sqrt{2.66 \times 10^7} = 5160$ m/s
 
 </details>
 
@@ -618,13 +618,13 @@ phenomena, and the wave-particle duality of light and matter.
 ### Worked Example: Binding Energy per Nucleon (E.1)
 
 Calculate the binding energy per nucleon of helium-4. Given: $m_p = 1.00728$ u, $m_n = 1.00867$ u,
-$m_{\mathrm{He-4}} = 4.00150$ u, and $1$ u $= 931.5$ MeV/$c^2$.
+$m_{\mathrm{'\{'}He-4{'\}'}} = 4.00150$ u, and $1$ u $= 931.5$ MeV/$c^2$.
 
 <details>
 <summary>Solution</summary>
 
 - **Helium-4 has 2 protons and 2 neutrons.**
-- **Mass defect:** $\Delta m = 2m_p + 2m_n - m_{\mathrm{He-4}}$
+- **Mass defect:** $\Delta m = 2m_p + 2m_n - m_{\mathrm{'\{'}He-4{'\}'}}$
   - $\Delta m = 2(1.00728) + 2(1.00867) - 4.00150 = 2.01456 + 2.01734 - 4.00150 = 0.03040$ u
 - **Binding energy:** $E_b = \Delta m \times 931.5 = 0.03040 \times 931.5 = 28.3$ MeV
 - **Binding energy per nucleon:** $\dfrac{E_b}{A} = \dfrac{28.3}{4} = 7.08$ MeV/nucleon
@@ -670,21 +670,21 @@ $200$ Bq.
 
 ### Worked Example: Nuclear Fission Energy (E.4, HL)
 
-The nuclear reaction $\;^{235}_{92}\mathrm{U} + {}^{1}_{0}\mathrm{n} \rightarrow {}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3\,{}^{1}_{0}\mathrm{n}$ is a fission
+The nuclear reaction $\;^{235}_{92}\mathrm{'\{'}U{'\}'} + {}^{1}_{0}\mathrm{'\{'}n{'\}'} \rightarrow {}^{141}_{56}\mathrm{'\{'}Ba{'\}'} + {}^{92}_{36}\mathrm{'\{'}Kr{'\}'} + 3\,{}^{1}_{0}\mathrm{'\{'}n{'\}'}$ is a fission
 event. Calculate the energy released.
-(Mass of $\;{}^{235}\mathrm{U} = 235.044$ u,
-mass of $\;{}^{141}\mathrm{Ba} = 140.914$ u,
-mass of $\;{}^{92}\mathrm{Kr} = 91.926$ u,
-mass of $\;{}^{1}\mathrm{n} = 1.00867$ u,
+(Mass of $\;{}^{235}\mathrm{'\{'}U{'\}'} = 235.044$ u,
+mass of $\;{}^{141}\mathrm{'\{'}Ba{'\}'} = 140.914$ u,
+mass of $\;{}^{92}\mathrm{'\{'}Kr{'\}'} = 91.926$ u,
+mass of $\;{}^{1}\mathrm{'\{'}n{'\}'} = 1.00867$ u,
 $1$ u $= 931.5$ MeV/$c^2$.)
 
 <details>
 <summary>Solution</summary>
 
 - **Mass of reactants:**
-  - $m_{\mathrm{reactants}} = 235.044 + 1.00867 = 236.053$ u
+  - $m_{\mathrm{'\{'}reactants{'\}'}} = 235.044 + 1.00867 = 236.053$ u
 - **Mass of products:**
-  - $m_{\mathrm{products}} = 140.914 + 91.926 + 3(1.00867) = 140.914 + 91.926 + 3.026 = 235.866$ u
+  - $m_{\mathrm{'\{'}products{'\}'}} = 140.914 + 91.926 + 3(1.00867) = 140.914 + 91.926 + 3.026 = 235.866$ u
 - **Mass defect:**
   - $\Delta m = 236.053 - 235.866 = 0.187$ u
 - **Energy released:**
@@ -858,9 +858,9 @@ $v = \sqrt{\frac{2(6.67 \times 10^{-11})(5.97 \times 10^{24})}{6.37 \times 10^6 
 
 **Efficient approach:** Store the numerator and denominator separately:
 
-- Numerator: $2 \times 6.67\mathrm{E}-11 \times 5.97\mathrm{E}24 \rightarrow$ STO A
-- Denominator: $6.37\mathrm{E}6 + 3.5\mathrm{E}5 \rightarrow$ STO B
-- Answer: $\sqrt{\mathrm{A}/\mathrm{B}}$
+- Numerator: $2 \times 6.67\mathrm{'\{'}E{'\}'}-11 \times 5.97\mathrm{'\{'}E{'\}'}24 \rightarrow$ STO A
+- Denominator: $6.37\mathrm{'\{'}E{'\}'}6 + 3.5\mathrm{'\{'}E{'\}'}5 \rightarrow$ STO B
+- Answer: $\sqrt{\mathrm{'\{'}A{'\}'}/\mathrm{'\{'}B{'\}'}}$
 
 This avoids transcription errors and preserves precision.
 
@@ -1051,7 +1051,7 @@ If you get this wrong, revise: Conservation of energy with non-conservative forc
 ### Thermal Physics and Gases
 
 4. An electric heater supplies $2.50$ kW of power to $0.800$ kg of water initially at $20.0$ degrees
-   Celsius. How long does it take to bring the water to boiling point? ($c_{\mathrm{water}} = 4180$
+   Celsius. How long does it take to bring the water to boiling point? ($c_{\mathrm{'\{'}water{'\}'}} = 4180$
    J/(kg K), ignore heat losses.)
 
 <details>
@@ -1116,8 +1116,8 @@ If you get this wrong, revise: Snell's law and refraction (Theme C.3).
 <details>
 <summary>Solution</summary>
 
-- **(a) Current:** $I = \dfrac{\mathrm{emf}}{R_{\mathrm{ext}} + r} = \dfrac{6.0}{11.5 + 0.50} = \dfrac{6.0}{12.0} = 0.50$ A
-- **(b) Terminal PD:** $V = \mathrm{emf} - Ir = 6.0 - (0.50)(0.50) = 5.75$ V
+- **(a) Current:** $I = \dfrac{\mathrm{'\{'}emf{'\}'}}{R_{\mathrm{'\{'}ext{'\}'}} + r} = \dfrac{6.0}{11.5 + 0.50} = \dfrac{6.0}{12.0} = 0.50$ A
+- **(b) Terminal PD:** $V = \mathrm{'\{'}emf{'\}'} - Ir = 6.0 - (0.50)(0.50) = 5.75$ V
 
 If you get this wrong, revise: Internal resistance and terminal PD (Theme B.4).
 
@@ -1141,7 +1141,7 @@ If you get this wrong, revise: Coulomb's law and electric forces (Theme D.2).
 </details>
 
 10. A satellite orbits Earth at a height of $500$ km above the surface. Calculate its orbital speed.
-    Given: $M_{\mathrm{Earth}} = 5.97 \times 10^{24}$ kg, $R_{\mathrm{Earth}} = 6.37 \times 10^6$ m.
+    Given: $M_{\mathrm{'\{'}Earth{'\}'}} = 5.97 \times 10^{24}$ kg, $R_{\mathrm{'\{'}Earth{'\}'}} = 6.37 \times 10^6$ m.
 
 <details>
 <summary>Solution</summary>
@@ -1256,9 +1256,9 @@ If you get this wrong, revise: First law of thermodynamics and thermodynamic pro
   towards the centre is the centripetal force -- it is not a separate force but the result of other
   forces (tension, gravity, friction, etc.).
 - **Energy conservation with friction:** When friction is present, mechanical energy is not
-  conserved. Always account for the work done by friction separately: $E_{k,i} + E_{p,i} = E_{k,f} + E_{p,f} + W_{\mathrm{friction}}$.
+  conserved. Always account for the work done by friction separately: $E_{k,i} + E_{p,i} = E_{k,f} + E_{p,f} + W_{\mathrm{'\{'}friction{'\}'}}$.
 - **Power and efficiency:** Power is the rate of energy transfer ($P = W/t = Fv$). Efficiency is
-  $\eta = \mathrm{useful\;output}/\mathrm{total\;input}$. Do not confuse power with energy or
+  $\eta = \mathrm{'\{'}useful\;output{'\}'}/\mathrm{'\{'}total\;input{'\}'}$. Do not confuse power with energy or
   forget that efficiency is always less than 1 (or 100%).
 
 ### Thermal Physics (Theme B)
@@ -1268,7 +1268,7 @@ If you get this wrong, revise: First law of thermodynamics and thermodynamic pro
   Multi-stage heating problems require both.
 - **First law sign convention:** $\Delta U = Q - W$. The IB convention defines $W$ as work done
   **by** the system. During compression, $W$ is negative and $\Delta U$ increases.
-- **Ideal gas law units:** Pressure must be in pascals, volume in $\mathrm{m^3}$, and temperature
+- **Ideal gas law units:** Pressure must be in pascals, volume in $\mathrm{'\{'}m^3{'\}'}$, and temperature
   in kelvin. Never use Celsius in the ideal gas equation.
 - **Internal resistance:** The terminal PD is always less than the emf when current flows:
   $V = \varepsilon - Ir$. Many students forget to subtract the internal potential drop.

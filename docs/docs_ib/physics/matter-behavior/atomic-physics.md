@@ -40,7 +40,7 @@ Bohr proposed a model for the hydrogen atom:
 The energy of an electron in the $n$-th orbit of hydrogen:
 
 $$
-E_n = -\frac{13.6\mathrm{ eV}}{n^2}
+E_n = -\frac{13.6\mathrm{'\{'} eV{'\}'}}{n^2}
 $$
 
 | Level          | $n$      | Energy (eV) |
@@ -67,13 +67,13 @@ $$
 Find the wavelength of light emitted when an electron in hydrogen drops from $n = 3$ to $n = 2$.
 
 $$
-\Delta E = E_2 - E_3 = -3.40 - (-1.51) = -1.89\mathrm{ eV}
+\Delta E = E_2 - E_3 = -3.40 - (-1.51) = -1.89\mathrm{'\{'} eV{'\}'}
 $$
 
-(The energy of the photon is $1.89\mathrm{ eV}$.)
+(The energy of the photon is $1.89\mathrm{'\{'} eV{'\}'}$.)
 
 $$
-\lambda = \frac{hc}{\Delta E} = \frac{1240\mathrm{ eV}\cdot\mathrm{nm}}{1.89\mathrm{ eV}} = 656\mathrm{ nm}
+\lambda = \frac{hc}{\Delta E} = \frac{1240\mathrm{'\{'} eV{'\}'}\cdot\mathrm{'\{'}nm{'\}'}}{1.89\mathrm{'\{'} eV{'\}'}} = 656\mathrm{'\{'} nm{'\}'}
 $$
 
 This is the red line in the Balmer series (visible spectrum of hydrogen).
@@ -104,8 +104,8 @@ This is the red line in the Balmer series (visible spectrum of hydrogen).
 
 The nucleus contains:
 
-- **Protons**: positive charge $+e$, mass $\approx 1.673 \times 10^{-27}\mathrm{ kg}$
-- **Neutrons**: no charge, mass $\approx 1.675 \times 10^{-27}\mathrm{ kg}$
+- **Protons**: positive charge $+e$, mass $\approx 1.673 \times 10^{-27}\mathrm{'\{'} kg{'\}'}$
+- **Neutrons**: no charge, mass $\approx 1.675 \times 10^{-27}\mathrm{'\{'} kg{'\}'}$
 
 The **atomic number** $Z$ = number of protons (determines the element).
 
@@ -119,7 +119,7 @@ $$
 {}^A_Z X
 $$
 
-For example: ${}^{235}_{92}\mathrm{U}$ has 92 protons and 143 neutrons.
+For example: ${}^{235}_{92}\mathrm{'\{'}U{'\}'}$ has 92 protons and 143 neutrons.
 
 ### Isotopes
 
@@ -127,15 +127,15 @@ Isotopes of an element have the same number of protons but different numbers of 
 
 | Isotope                          | Protons | Neutrons |
 | -------------------------------- | ------- | -------- |
-| ${}^{1}_1\mathrm{H}$ (protium)   | 1       | 0        |
-| ${}^{2}_1\mathrm{H}$ (deuterium) | 1       | 1        |
-| ${}^{3}_1\mathrm{H}$ (tritium)   | 1       | 2        |
+| ${}^{1}_1\mathrm{'\{'}H{'\}'}$ (protium)   | 1       | 0        |
+| ${}^{2}_1\mathrm{'\{'}H{'\}'}$ (deuterium) | 1       | 1        |
+| ${}^{3}_1\mathrm{'\{'}H{'\}'}$ (tritium)   | 1       | 2        |
 
 ### Nuclear Forces
 
 - **Strong nuclear force**: short-range attractive force between nucleons. Overcomes electrostatic
-  repulsion between protons. Range $\approx 1$--$3\mathrm{ fm}$
-  ($1\mathrm{ fm} = 10^{-15}\mathrm{ m}$).
+  repulsion between protons. Range $\approx 1$--$3\mathrm{'\{'} fm{'\}'}$
+  ($1\mathrm{'\{'} fm{'\}'} = 10^{-15}\mathrm{'\{'} m{'\}'}$).
 - **Electrostatic (Coulomb) force**: repulsive between protons, long range.
 
 ### Nuclear Radius
@@ -146,14 +146,14 @@ $$
 R = R_0 A^{1/3}
 $$
 
-where $R_0 \approx 1.2\mathrm{ fm}$.
+where $R_0 \approx 1.2\mathrm{'\{'} fm{'\}'}$.
 
 ### Nuclear Density
 
 Since $R \propto A^{1/3}$, the volume $V \propto A$. All nuclei have approximately the same density:
 
 $$
-\rho \approx 2.3 \times 10^{17}\mathrm{ kg/m}^3
+\rho \approx 2.3 \times 10^{17}\mathrm{'\{'} kg/m{'\}'}^3
 $$
 
 ---
@@ -164,9 +164,9 @@ $$
 
 | Property       | Alpha ($\alpha$)            | Beta ($\beta^-$)      | Gamma ($\gamma$) |
 | -------------- | --------------------------- | --------------------- | ---------------- |
-| Particle       | ${}^4_2\mathrm{He}$ nucleus | Electron ($e^-$)      | Photon           |
+| Particle       | ${}^4_2\mathrm{'\{'}He{'\}'}$ nucleus | Electron ($e^-$)      | Photon           |
 | Charge         | $+2e$                       | $-e$                  | $0$              |
-| Mass           | $4\mathrm{ u}$              | $\approx 0$           | $0$              |
+| Mass           | $4\mathrm{'\{'} u{'\}'}$              | $\approx 0$           | $0$              |
 | Speed          | $\approx 0.05c$             | Up to $\approx 0.99c$ | $c$              |
 | Penetration    | Paper                       | Aluminium (few mm)    | Lead (few cm)    |
 | Ionising power | High                        | Medium                | Low              |
@@ -182,7 +182,7 @@ The daughter nucleus has atomic number reduced by 2 and mass number reduced by 4
 :::info[Example]
 
 $$
-{}^{238}_{92}\mathrm{U} \to {}^{234}_{90}\mathrm{Th} + {}^4_2\alpha
+{}^{238}_{92}\mathrm{'\{'}U{'\}'} \to {}^{234}_{90}\mathrm{'\{'}Th{'\}'} + {}^4_2\alpha
 $$
 
 :::
@@ -202,7 +202,7 @@ $$
 :::info[Example]
 
 $$
-{}^{14}_6\mathrm{C} \to {}^{14}_7\mathrm{N} + {}^0_{-1}\beta + \bar{\nu}_e
+{}^{14}_6\mathrm{'\{'}C{'\}'} \to {}^{14}_7\mathrm{'\{'}N{'\}'} + {}^0_{-1}\beta + \bar{\nu}_e
 $$
 
 :::
@@ -259,11 +259,11 @@ $$
 A = \lambda N = \frac{dN}{dt}
 $$
 
-SI unit: becquerel ($\mathrm{Bq}$), where $1\mathrm{ Bq} = 1\mathrm{ decay/s}$.
+SI unit: becquerel ($\mathrm{'\{'}Bq{'\}'}$), where $1\mathrm{'\{'} Bq{'\}'} = 1\mathrm{'\{'} decay/s{'\}'}$.
 
 :::info[Example]
 
-A sample has a half-life of $5$ days and an initial activity of $800\mathrm{ Bq}$. Find the activity
+A sample has a half-life of $5$ days and an initial activity of $800\mathrm{'\{'} Bq{'\}'}$. Find the activity
 after $15$ days.
 
 $$
@@ -271,14 +271,14 @@ A = A_0 e^{-\lambda t}
 $$
 
 $$
-\lambda = \frac{\ln 2}{5} = 0.1386\mathrm{ day}^{-1}
+\lambda = \frac{\ln 2}{5} = 0.1386\mathrm{'\{'} day{'\}'}^{-1}
 $$
 
 $$
-A = 800 \times e^{-0.1386 \times 15} = 800 \times e^{-2.079} = 800 \times 0.125 = 100\mathrm{ Bq}
+A = 800 \times e^{-0.1386 \times 15} = 800 \times e^{-2.079} = 800 \times 0.125 = 100\mathrm{'\{'} Bq{'\}'}
 $$
 
-Alternatively: $15$ days $= 3$ half-lives, so $A = 800 \times (1/2)^3 = 100\mathrm{ Bq}$.
+Alternatively: $15$ days $= 3$ half-lives, so $A = 800 \times (1/2)^3 = 100\mathrm{'\{'} Bq{'\}'}$.
 
 :::
 
@@ -303,7 +303,7 @@ A heavy nucleus splits into two (or more) lighter nuclei, releasing energy and n
 **Example**:
 
 $$
-{}^{235}_{92}\mathrm{U} + {}^1_0 n \to {}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3{}^1_0 n + \mathrm{energy}
+{}^{235}_{92}\mathrm{'\{'}U{'\}'} + {}^1_0 n \to {}^{141}_{56}\mathrm{'\{'}Ba{'\}'} + {}^{92}_{36}\mathrm{'\{'}Kr{'\}'} + 3{}^1_0 n + \mathrm{'\{'}energy{'\}'}
 $$
 
 ### Chain Reaction
@@ -321,12 +321,12 @@ Light nuclei combine to form a heavier nucleus, releasing energy.
 **Example** (proton-proton chain in the Sun):
 
 $$
-4{}^1_1\mathrm{H} \to {}^4_2\mathrm{He} + 2{}^0_{+1}\beta^+ + 2\nu_e + \mathrm{energy}
+4{}^1_1\mathrm{'\{'}H{'\}'} \to {}^4_2\mathrm{'\{'}He{'\}'} + 2{}^0_{+1}\beta^+ + 2\nu_e + \mathrm{'\{'}energy{'\}'}
 $$
 
 ### Conditions for Fusion
 
-- Extremely high temperatures ($\gt 10^7\mathrm{ K}$) to overcome electrostatic repulsion.
+- Extremely high temperatures ($\gt 10^7\mathrm{'\{'} K{'\}'}$) to overcome electrostatic repulsion.
 - High density to increase collision rate.
 - Sufficient confinement time.
 
@@ -340,10 +340,10 @@ The binding energy per nucleon curve shows:
 
 | Nucleus                   | Binding Energy per Nucleon (MeV) |
 | ------------------------- | -------------------------------- |
-| ${}^2_1\mathrm{H}$        | 1.11                             |
-| ${}^4_2\mathrm{He}$       | 7.07                             |
-| ${}^{56}_{26}\mathrm{Fe}$ | 8.79                             |
-| ${}^{235}_{92}\mathrm{U}$ | 7.59                             |
+| ${}^2_1\mathrm{'\{'}H{'\}'}$        | 1.11                             |
+| ${}^4_2\mathrm{'\{'}He{'\}'}$       | 7.07                             |
+| ${}^{56}_{26}\mathrm{'\{'}Fe{'\}'}$ | 8.79                             |
+| ${}^{235}_{92}\mathrm{'\{'}U{'\}'}$ | 7.59                             |
 
 ### Mass Defect and Binding Energy
 
@@ -351,7 +351,7 @@ The mass defect $\Delta m$ is the difference between the mass of a nucleus and t
 of its individual nucleons:
 
 $$
-\Delta m = Zm_p + Nm_n - m_{\mathrm{nucleus}}
+\Delta m = Zm_p + Nm_n - m_{\mathrm{'\{'}nucleus{'\}'}}
 $$
 
 The binding energy is:
@@ -362,19 +362,19 @@ $$
 
 :::info[Example]
 
-Calculate the binding energy of the helium-4 nucleus. ($m_p = 1.00728\mathrm{ u}$,
-$m_n = 1.00867\mathrm{ u}$, $m_{\alpha} = 4.00151\mathrm{ u}$,
-$1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
+Calculate the binding energy of the helium-4 nucleus. ($m_p = 1.00728\mathrm{'\{'} u{'\}'}$,
+$m_n = 1.00867\mathrm{'\{'} u{'\}'}$, $m_{\alpha} = 4.00151\mathrm{'\{'} u{'\}'}$,
+$1\mathrm{'\{'} u{'\}'} = 931.5\mathrm{'\{'} MeV{'\}'}/c^2$)
 
 $$
-\Delta m = 2(1.00728) + 2(1.00867) - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039\mathrm{ u}
+\Delta m = 2(1.00728) + 2(1.00867) - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039\mathrm{'\{'} u{'\}'}
 $$
 
 $$
-E_b = 0.03039 \times 931.5 = 28.3\mathrm{ MeV}
+E_b = 0.03039 \times 931.5 = 28.3\mathrm{'\{'} MeV{'\}'}
 $$
 
-Binding energy per nucleon $= \dfrac{28.3}{4} = 7.08\mathrm{ MeV}$.
+Binding energy per nucleon $= \dfrac{28.3}{4} = 7.08\mathrm{'\{'} MeV{'\}'}$.
 
 :::
 
@@ -388,18 +388,18 @@ $$
 E = mc^2
 $$
 
-where $c = 3.0 \times 10^8\mathrm{ m/s}$.
+where $c = 3.0 \times 10^8\mathrm{'\{'} m/s{'\}'}$.
 
 This shows that mass and energy are equivalent and can be converted into each other.
 
 ### Energy-Mass Unit Conversion
 
 $$
-1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2
+1\mathrm{'\{'} u{'\}'} = 931.5\mathrm{'\{'} MeV{'\}'}/c^2
 $$
 
 $$
-1\mathrm{ eV} = 1.602 \times 10^{-19}\mathrm{ J}
+1\mathrm{'\{'} eV{'\}'} = 1.602 \times 10^{-19}\mathrm{'\{'} J{'\}'}
 $$
 
 ---
@@ -455,15 +455,15 @@ $$
 
 :::info[Example]
 
-The work function of sodium is $2.28\mathrm{ eV}$. Find the maximum kinetic energy of photoelectrons
-when light of wavelength $400\mathrm{ nm}$ is incident.
+The work function of sodium is $2.28\mathrm{'\{'} eV{'\}'}$. Find the maximum kinetic energy of photoelectrons
+when light of wavelength $400\mathrm{'\{'} nm{'\}'}$ is incident.
 
 $$
-E_{\mathrm{photon}} = \frac{hc}{\lambda} = \frac{1240\mathrm{ eV}\cdot\mathrm{nm}}{400\mathrm{ nm}} = 3.10\mathrm{ eV}
+E_{\mathrm{'\{'}photon{'\}'}} = \frac{hc}{\lambda} = \frac{1240\mathrm{'\{'} eV{'\}'}\cdot\mathrm{'\{'}nm{'\}'}}{400\mathrm{'\{'} nm{'\}'}} = 3.10\mathrm{'\{'} eV{'\}'}
 $$
 
 $$
-E_{k,\max} = 3.10 - 2.28 = 0.82\mathrm{ eV}
+E_{k,\max} = 3.10 - 2.28 = 0.82\mathrm{'\{'} eV{'\}'}
 $$
 
 :::
@@ -480,15 +480,15 @@ $$
 \lambda = \frac{h}{p} = \frac{h}{mv}
 $$
 
-where $h = 6.626 \times 10^{-34}\mathrm{ J}\cdot\mathrm{s}$ is Planck's constant.
+where $h = 6.626 \times 10^{-34}\mathrm{'\{'} J{'\}'}\cdot\mathrm{'\{'}s{'\}'}$ is Planck's constant.
 
 :::info[Example]
 
-Find the de Broglie wavelength of an electron moving at $2 \times 10^6\mathrm{ m/s}$.
-($m_e = 9.109 \times 10^{-31}\mathrm{ kg}$)
+Find the de Broglie wavelength of an electron moving at $2 \times 10^6\mathrm{'\{'} m/s{'\}'}$.
+($m_e = 9.109 \times 10^{-31}\mathrm{'\{'} kg{'\}'}$)
 
 $$
-\lambda = \frac{6.626 \times 10^{-34}}{9.109 \times 10^{-31} \times 2 \times 10^6} = \frac{6.626 \times 10^{-34}}{1.822 \times 10^{-24}} = 3.64 \times 10^{-10}\mathrm{ m} = 0.364\mathrm{ nm}
+\lambda = \frac{6.626 \times 10^{-34}}{9.109 \times 10^{-31} \times 2 \times 10^6} = \frac{6.626 \times 10^{-34}}{1.822 \times 10^{-24}} = 3.64 \times 10^{-10}\mathrm{'\{'} m{'\}'} = 0.364\mathrm{'\{'} nm{'\}'}
 $$
 
 This is comparable to X-ray wavelengths, explaining electron diffraction.
@@ -508,7 +508,7 @@ Confirmed de Broglie's hypothesis by observing the diffraction of electrons by a
 Uranium-238 undergoes alpha decay. What is the daughter nucleus?
 
 $$
-{}^{238}_{92}\mathrm{U} \to {}^{234}_{90}\mathrm{Th} + {}^4_2\alpha
+{}^{238}_{92}\mathrm{'\{'}U{'\}'} \to {}^{234}_{90}\mathrm{'\{'}Th{'\}'} + {}^4_2\alpha
 $$
 
 The daughter is thorium-234.
@@ -516,22 +516,22 @@ The daughter is thorium-234.
 ### Question 2 (Paper 2 style)
 
 A radioactive isotope has a half-life of 8 hours. A sample initially has an activity of
-$1200\mathrm{ Bq}$.
+$1200\mathrm{'\{'} Bq{'\}'}$.
 
 **(a)** Find the activity after 24 hours.
 
 $$
-n = \frac{24}{8} = 3 \mathrm{ half-lives}
+n = \frac{24}{8} = 3 \mathrm{'\{'} half-lives{'\}'}
 $$
 
 $$
-A = 1200 \times \left(\frac{1}{2}\right)^3 = 150\mathrm{ Bq}
+A = 1200 \times \left(\frac{1}{2}\right)^3 = 150\mathrm{'\{'} Bq{'\}'}
 $$
 
 **(b)** Find the decay constant.
 
 $$
-\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{8 \times 3600} = 2.41 \times 10^{-5}\mathrm{ s}^{-1}
+\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{8 \times 3600} = 2.41 \times 10^{-5}\mathrm{'\{'} s{'\}'}^{-1}
 $$
 
 **(c)** How many undecayed nuclei remain after 24 hours?
@@ -546,15 +546,15 @@ $$
 
 ### Question 3 (Paper 2 style)
 
-The work function of a metal surface is $4.5\mathrm{ eV}$.
+The work function of a metal surface is $4.5\mathrm{'\{'} eV{'\}'}$.
 
 **(a)** Find the threshold frequency.
 
 $$
-f_0 = \frac{\phi}{h} = \frac{4.5 \times 1.602 \times 10^{-19}}{6.626 \times 10^{-34}} = \frac{7.21 \times 10^{-19}}{6.626 \times 10^{-34}} = 1.09 \times 10^{15}\mathrm{ Hz}
+f_0 = \frac{\phi}{h} = \frac{4.5 \times 1.602 \times 10^{-19}}{6.626 \times 10^{-34}} = \frac{7.21 \times 10^{-19}}{6.626 \times 10^{-34}} = 1.09 \times 10^{15}\mathrm{'\{'} Hz{'\}'}
 $$
 
-**(b)** Find the stopping potential when UV light of frequency $2.0 \times 10^{15}\mathrm{ Hz}$ is
+**(b)** Find the stopping potential when UV light of frequency $2.0 \times 10^{15}\mathrm{'\{'} Hz{'\}'}$ is
 incident.
 
 $$
@@ -562,33 +562,33 @@ E_{k,\max} = hf - \phi = (6.626 \times 10^{-34})(2.0 \times 10^{15}) - 4.5(1.602
 $$
 
 $$
-= 1.325 \times 10^{-18} - 7.21 \times 10^{-19} = 6.04 \times 10^{-20}\mathrm{ J}
+= 1.325 \times 10^{-18} - 7.21 \times 10^{-19} = 6.04 \times 10^{-20}\mathrm{'\{'} J{'\}'}
 $$
 
 $$
-V_s = \frac{E_{k,\max}}{e} = \frac{6.04 \times 10^{-20}}{1.602 \times 10^{-19}} = 0.377\mathrm{ V}
+V_s = \frac{E_{k,\max}}{e} = \frac{6.04 \times 10^{-20}}{1.602 \times 10^{-19}} = 0.377\mathrm{'\{'} V{'\}'}
 $$
 
 ### Question 4 (Paper 2 style)
 
-Calculate the energy released when ${}^{235}\mathrm{U}$ undergoes fission to produce
-${}^{141}\mathrm{Ba}$, ${}^{92}\mathrm{Kr}$, and 3 neutrons.
+Calculate the energy released when ${}^{235}\mathrm{'\{'}U{'\}'}$ undergoes fission to produce
+${}^{141}\mathrm{'\{'}Ba{'\}'}$, ${}^{92}\mathrm{'\{'}Kr{'\}'}$, and 3 neutrons.
 
-Masses: ${}^{235}\mathrm{U} = 235.044\mathrm{ u}$, ${}^{141}\mathrm{Ba} = 140.914\mathrm{ u}$,
-${}^{92}\mathrm{Kr} = 91.926\mathrm{ u}$, $n = 1.00867\mathrm{ u}$.
+Masses: ${}^{235}\mathrm{'\{'}U{'\}'} = 235.044\mathrm{'\{'} u{'\}'}$, ${}^{141}\mathrm{'\{'}Ba{'\}'} = 140.914\mathrm{'\{'} u{'\}'}$,
+${}^{92}\mathrm{'\{'}Kr{'\}'} = 91.926\mathrm{'\{'} u{'\}'}$, $n = 1.00867\mathrm{'\{'} u{'\}'}$.
 
 $$
 \Delta m = 235.044 - (140.914 + 91.926 + 3 \times 1.00867)
 $$
 
 $$
-= 235.044 - (140.914 + 91.926 + 3.026) = 235.044 - 235.866 = -0.822\mathrm{ u}
+= 235.044 - (140.914 + 91.926 + 3.026) = 235.044 - 235.866 = -0.822\mathrm{'\{'} u{'\}'}
 $$
 
 Wait, that gives negative mass defect. Let me recalculate:
 
 $$
-\Delta m = 235.044 - 140.914 - 91.926 - 3(1.00867) = 235.044 - 140.914 - 91.926 - 3.026 = -0.822\mathrm{ u}
+\Delta m = 235.044 - 140.914 - 91.926 - 3(1.00867) = 235.044 - 140.914 - 91.926 - 3.026 = -0.822\mathrm{'\{'} u{'\}'}
 $$
 
 This indicates I should use the neutron as incoming:
@@ -598,11 +598,11 @@ $$
 $$
 
 $$
-= 236.053 - 235.866 = 0.187\mathrm{ u}
+= 236.053 - 235.866 = 0.187\mathrm{'\{'} u{'\}'}
 $$
 
 $$
-E = 0.187 \times 931.5 = 174\mathrm{ MeV}
+E = 0.187 \times 931.5 = 174\mathrm{'\{'} MeV{'\}'}
 $$
 
 ---
@@ -611,7 +611,7 @@ $$
 
 | Concept               | Formula                                |
 | --------------------- | -------------------------------------- |
-| Bohr energy levels    | $E_n = \dfrac{-13.6\mathrm{ eV}}{n^2}$ |
+| Bohr energy levels    | $E_n = \dfrac{-13.6\mathrm{'\{'} eV{'\}'}}{n^2}$ |
 | Photon energy         | $E = hf = \dfrac{hc}{\lambda}$         |
 | Half-life             | $t_{1/2} = \dfrac{\ln 2}{\lambda}$     |
 | Decay law             | $N = N_0 e^{-\lambda t}$               |
@@ -658,7 +658,7 @@ Energy level diagrams show the allowed energies of electrons in an atom:
 Each spectral series has a series limit (convergence limit) corresponding to transitions to/from the
 continuum (ionised state).
 
-For the Lyman series: $\lambda_{\mathrm{limit}} = \dfrac{hc}{13.6\mathrm{ eV}} = 91.2\mathrm{ nm}$.
+For the Lyman series: $\lambda_{\mathrm{'\{'}limit{'\}'}} = \dfrac{hc}{13.6\mathrm{'\{'} eV{'\}'}} = 91.2\mathrm{'\{'} nm{'\}'}$.
 
 ---
 
@@ -681,16 +681,16 @@ The binding energy per nucleon curve reveals:
 Calculate the energy released when one nucleus of U-235 fissions into Ba-141 and Kr-92 with 3
 neutrons.
 
-Masses: U-235 = $235.0439\mathrm{ u}$, Ba-141 = $140.9139\mathrm{ u}$, Kr-92 = $91.8970\mathrm{ u}$,
-n = $1.00867\mathrm{ u}$.
+Masses: U-235 = $235.0439\mathrm{'\{'} u{'\}'}$, Ba-141 = $140.9139\mathrm{'\{'} u{'\}'}$, Kr-92 = $91.8970\mathrm{'\{'} u{'\}'}$,
+n = $1.00867\mathrm{'\{'} u{'\}'}$.
 
-Reactants: $235.0439 + 1.00867 = 236.0526\mathrm{ u}$
+Reactants: $235.0439 + 1.00867 = 236.0526\mathrm{'\{'} u{'\}'}$
 
-Products: $140.9139 + 91.8970 + 3(1.00867) = 140.9139 + 91.8970 + 3.0260 = 235.8369\mathrm{ u}$
+Products: $140.9139 + 91.8970 + 3(1.00867) = 140.9139 + 91.8970 + 3.0260 = 235.8369\mathrm{'\{'} u{'\}'}$
 
-Mass defect: $236.0526 - 235.8369 = 0.2157\mathrm{ u}$
+Mass defect: $236.0526 - 235.8369 = 0.2157\mathrm{'\{'} u{'\}'}$
 
-Energy released: $0.2157 \times 931.5 = 200.9\mathrm{ MeV}$
+Energy released: $0.2157 \times 931.5 = 200.9\mathrm{'\{'} MeV{'\}'}$
 
 :::
 
@@ -754,22 +754,22 @@ The isotope Po-210 undergoes alpha decay with a half-life of 138 days.
 **(a)** Write the nuclear equation for the decay.
 
 $$
-{}^{210}_{84}\mathrm{Po} \to {}^{206}_{82}\mathrm{Pb} + {}^4_2\alpha
+{}^{210}_{84}\mathrm{'\{'}Po{'\}'} \to {}^{206}_{82}\mathrm{'\{'}Pb{'\}'} + {}^4_2\alpha
 $$
 
-**(b)** A sample of Po-210 has an initial activity of $800\mathrm{ Bq}$. Find the activity after 1
+**(b)** A sample of Po-210 has an initial activity of $800\mathrm{'\{'} Bq{'\}'}$. Find the activity after 1
 year (365 days).
 
 Number of half-lives: $n = \dfrac{365}{138} = 2.645$.
 
 $$
-A = 800 \times \left(\frac{1}{2}\right)^{2.645} = 800 \times 0.162 = 129.6\mathrm{ Bq}
+A = 800 \times \left(\frac{1}{2}\right)^{2.645} = 800 \times 0.162 = 129.6\mathrm{'\{'} Bq{'\}'}
 $$
 
 **(c)** Find the number of Po-210 nuclei in the initial sample.
 
 $$
-\lambda = \frac{\ln 2}{138 \times 86400} = 5.83 \times 10^{-8}\mathrm{ s}^{-1}
+\lambda = \frac{\ln 2}{138 \times 86400} = 5.83 \times 10^{-8}\mathrm{'\{'} s{'\}'}^{-1}
 $$
 
 $$
@@ -779,7 +779,7 @@ $$
 **(d)** Calculate the mass of the initial sample.
 
 $$
-m = \frac{N \times 210}{N_A} = \frac{1.37 \times 10^{10} \times 210}{6.022 \times 10^{23}} = 4.78 \times 10^{-12}\mathrm{ g}
+m = \frac{N \times 210}{N_A} = \frac{1.37 \times 10^{10} \times 210}{6.022 \times 10^{23}} = 4.78 \times 10^{-12}\mathrm{'\{'} g{'\}'}
 $$
 
 ### Question 6 (Paper 1 style)
@@ -792,22 +792,22 @@ A. Alpha particles B. Beta particles C. Gamma rays D. X-rays
 
 ### Question 7 (Paper 2 style)
 
-An electron is accelerated through a potential difference of $500\mathrm{ V}$.
+An electron is accelerated through a potential difference of $500\mathrm{'\{'} V{'\}'}$.
 
 **(a)** Calculate the kinetic energy of the electron in eV and J.
 
 $$
-E_k = 500\mathrm{ eV} = 500 \times 1.602 \times 10^{-19} = 8.01 \times 10^{-17}\mathrm{ J}
+E_k = 500\mathrm{'\{'} eV{'\}'} = 500 \times 1.602 \times 10^{-19} = 8.01 \times 10^{-17}\mathrm{'\{'} J{'\}'}
 $$
 
 **(b)** Calculate the de Broglie wavelength of the electron.
 
 $$
-v = \sqrt{\frac{2E_k}{m_e}} = \sqrt{\frac{2 \times 8.01 \times 10^{-17}}{9.109 \times 10^{-31}}} = \sqrt{1.759 \times 10^{14}} = 1.326 \times 10^7\mathrm{ m/s}
+v = \sqrt{\frac{2E_k}{m_e}} = \sqrt{\frac{2 \times 8.01 \times 10^{-17}}{9.109 \times 10^{-31}}} = \sqrt{1.759 \times 10^{14}} = 1.326 \times 10^7\mathrm{'\{'} m/s{'\}'}
 $$
 
 $$
-\lambda = \frac{h}{mv} = \frac{6.626 \times 10^{-34}}{9.109 \times 10^{-31} \times 1.326 \times 10^7} = \frac{6.626 \times 10^{-34}}{1.208 \times 10^{-23}} = 5.49 \times 10^{-11}\mathrm{ m}
+\lambda = \frac{h}{mv} = \frac{6.626 \times 10^{-34}}{9.109 \times 10^{-31} \times 1.326 \times 10^7} = \frac{6.626 \times 10^{-34}}{1.208 \times 10^{-23}} = 5.49 \times 10^{-11}\mathrm{'\{'} m{'\}'}
 $$
 
 This wavelength is comparable to atomic spacing, suitable for electron diffraction experiments.

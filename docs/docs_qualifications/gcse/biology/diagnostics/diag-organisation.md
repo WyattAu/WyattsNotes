@@ -41,7 +41,7 @@ hide_table_of_contents: true
 
 **Double circulatory system** (e.g., mammals): Blood passes through the heart twice per complete circuit. Pulmonary circulation (heart $\to$ lungs $\to$ heart) and systemic circulation (heart $\to$ body $\to$ heart). The heart re-pressurises the blood for each circuit, maintaining high pressure for efficient delivery to the body.
 
-(c) Cardiac output $= \text{heart rate} \times \text{stroke volume} = 72 \times 70 = 5040$ mL/min $= 5.04$ L/min.
+(c) Cardiac output $= \text{'\{'}heart rate{'\}'} \times \text{'\{'}stroke volume{'\}'} = 72 \times 70 = 5040$ mL/min $= 5.04$ L/min.
 
 (d) The left ventricle pumps blood to the entire body (systemic circulation) through the aorta, which requires high pressure to overcome the resistance of the long systemic circulation. The right ventricle pumps blood only to the lungs (pulmonary circulation), which is a much shorter circuit with less resistance. A thicker muscular wall in the left ventricle generates the higher pressure needed.
 

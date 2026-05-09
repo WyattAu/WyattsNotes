@@ -62,7 +62,7 @@ Angular dispersion $= e' - e = 64.2^\circ - 60.6^\circ = 3.6^\circ$
 
 **Question:**
 
-A step-index optical fibre has a core of refractive index $n_1 = 1.50$ and cladding of refractive index $n_2 = 1.46$. The core diameter is $50\,\mu\text{m}$.
+A step-index optical fibre has a core of refractive index $n_1 = 1.50$ and cladding of refractive index $n_2 = 1.46$. The core diameter is $50\,\mu\text{'\{'}m{'\}'}$.
 
 (a) Calculate the critical angle at the core-cladding boundary.
 
@@ -86,7 +86,7 @@ $$n_0 \sin\theta_a = \sqrt{n_1^2 - n_2^2} = \sqrt{2.25 - 2.1316} = \sqrt{0.1184}
 
 For air ($n_0 = 1$): $\theta_a = \sin^{-1}(0.3441) = 20.1^\circ$
 
-Numerical aperture: $\text{NA} = \sqrt{n_1^2 - n_2^2} = 0.344$
+Numerical aperture: $\text{'\{'}NA{'\}'} = \sqrt{n_1^2 - n_2^2} = 0.344$
 
 (c) A ray entering at the maximum acceptance angle travels at the steepest angle to the axis inside the fibre.
 
@@ -94,44 +94,44 @@ Angle with the axis inside the fibre: $\alpha = 90^\circ - \theta_c = 13.3^\circ
 
 The ray travels along the fibre axis with horizontal speed $v\cos\alpha$ and bounces between the walls. The horizontal distance between bounces:
 
-$$d_{\text{bounce}} = \frac{2r}{\tan\alpha} = \frac{50 \times 10^{-6}}{\tan 13.3^\circ} = \frac{50 \times 10^{-6}}{0.2363} = 2.12 \times 10^{-4}\,\text{m}$$
+$$d_{\text{'\{'}bounce{'\}'}} = \frac{2r}{\tan\alpha} = \frac{50 \times 10^{-6}}{\tan 13.3^\circ} = \frac{50 \times 10^{-6}}{0.2363} = 2.12 \times 10^{-4}\,\text{'\{'}m{'\}'}$$
 
-Number of reflections per metre: $N = 1/(2.12 \times 10^{-4}) = 4720\,\text{reflections}\,\text{m}^{-1}$
+Number of reflections per metre: $N = 1/(2.12 \times 10^{-4}) = 4720\,\text{'\{'}reflections{'\}'}\,\text{'\{'}m{'\}'}^{-1}$
 
 ---
 ### UT-3: Refractive Index from Real and Apparent Depth
 
 **Question:**
 
-A student measures the apparent depth of a coin at the bottom of a pool of liquid. The real depth is $(40.0 \pm 0.5)\,\text{cm}$ and the apparent depth is $(28.5 \pm 0.5)\,\text{cm}$.
+A student measures the apparent depth of a coin at the bottom of a pool of liquid. The real depth is $(40.0 \pm 0.5)\,\text{'\{'}cm{'\}'}$ and the apparent depth is $(28.5 \pm 0.5)\,\text{'\{'}cm{'\}'}$.
 
 (a) Calculate the refractive index of the liquid and its uncertainty.
 
-(b) The student then observes a mark on the bottom of a glass block of refractive index $1.52$ through the liquid. The glass block is $3.0\,\text{cm}$ thick. Calculate the apparent thickness of the glass block as viewed through the liquid.
+(b) The student then observes a mark on the bottom of a glass block of refractive index $1.52$ through the liquid. The glass block is $3.0\,\text{'\{'}cm{'\}'}$ thick. Calculate the apparent thickness of the glass block as viewed through the liquid.
 
 (c) Explain why the apparent depth formula only applies for near-normal viewing angles.
 
 **Solution:**
 
-(a) $n = \text{real depth}/\text{apparent depth} = 40.0/28.5 = 1.404$
+(a) $n = \text{'\{'}real depth{'\}'}/\text{'\{'}apparent depth{'\}'} = 40.0/28.5 = 1.404$
 
-Uncertainty: $\frac{\Delta n}{n} = \frac{\Delta d_{\text{real}}}{d_{\text{real}}} + \frac{\Delta d_{\text{app}}}{d_{\text{app}}} = \frac{0.5}{40.0} + \frac{0.5}{28.5} = 0.0125 + 0.01754 = 0.0300$
+Uncertainty: $\frac{\Delta n}{n} = \frac{\Delta d_{\text{'\{'}real{'\}'}}}{d_{\text{'\{'}real{'\}'}}} + \frac{\Delta d_{\text{'\{'}app{'\}'}}}{d_{\text{'\{'}app{'\}'}}} = \frac{0.5}{40.0} + \frac{0.5}{28.5} = 0.0125 + 0.01754 = 0.0300$
 
 $$\Delta n = 0.0300 \times 1.404 = 0.042$$
 
 $$n = 1.40 \pm 0.04$$
 
-(b) For near-normal incidence, the apparent depth of an object in a medium of refractive index $n_1$ viewed from a medium of refractive index $n_2$ is $d_{\text{apparent}} = d \times n_2/n_1$.
+(b) For near-normal incidence, the apparent depth of an object in a medium of refractive index $n_1$ viewed from a medium of refractive index $n_2$ is $d_{\text{'\{'}apparent{'\}'}} = d \times n_2/n_1$.
 
-The light path is: glass ($n_g = 1.52$, thickness $d_g = 3.0\,\text{cm}$) $\to$ liquid ($n_l = 1.40$) $\to$ air ($n_a = 1.00$).
+The light path is: glass ($n_g = 1.52$, thickness $d_g = 3.0\,\text{'\{'}cm{'\}'}$) $\to$ liquid ($n_l = 1.40$) $\to$ air ($n_a = 1.00$).
 
 For the glass block viewed from air through the intervening liquid, the apparent thickness is:
 
-$$d_{\text{app}} = \frac{d_g}{n_g} = \frac{3.0}{1.52} = 1.97\,\text{cm}$$
+$$d_{\text{'\{'}app{'\}'}} = \frac{d_g}{n_g} = \frac{3.0}{1.52} = 1.97\,\text{'\{'}cm{'\}'}$$
 
-The apparent depth formula uses the refractive index of the object's medium relative to the observer's medium. The liquid layer does not change the apparent thickness of the glass block itself; it only affects the apparent depth of objects within or below the liquid. The total apparent depth of the bottom of the glass from the liquid surface would be $d_l/n_l + d_g/n_g$, but the apparent thickness of the glass alone is $d_g/n_g = 1.97\,\text{cm}$.
+The apparent depth formula uses the refractive index of the object's medium relative to the observer's medium. The liquid layer does not change the apparent thickness of the glass block itself; it only affects the apparent depth of objects within or below the liquid. The total apparent depth of the bottom of the glass from the liquid surface would be $d_l/n_l + d_g/n_g$, but the apparent thickness of the glass alone is $d_g/n_g = 1.97\,\text{'\{'}cm{'\}'}$.
 
-(c) The apparent depth formula $d_{\text{app}} = d/n$ is derived using the small-angle (paraxial) approximation. At larger angles, Snell's law gives a curved relationship between real and apparent position, and the simple ratio no longer holds. The apparent depth depends on the viewing angle, and the image position varies with angle -- a phenomenon known as aberration. Additionally, at large angles, the formula breaks down because it assumes all rays from a point converge to a single image point, which is only true for paraxial rays.
+(c) The apparent depth formula $d_{\text{'\{'}app{'\}'}} = d/n$ is derived using the small-angle (paraxial) approximation. At larger angles, Snell's law gives a curved relationship between real and apparent position, and the simple ratio no longer holds. The apparent depth depends on the viewing angle, and the image position varies with angle -- a phenomenon known as aberration. Additionally, at large angles, the formula breaks down because it assumes all rays from a point converge to a single image point, which is only true for paraxial rays.
 
 ## Integration Tests
 
@@ -139,7 +139,7 @@ The apparent depth formula uses the refractive index of the object's medium rela
 
 **Question:**
 
-A glass sphere of radius $R = 10\,\text{cm}$ and refractive index $n = 1.50$ is in air. A narrow beam of light enters the sphere parallel to a diameter, at a distance $h = 6.0\,\text{cm}$ from the diameter.
+A glass sphere of radius $R = 10\,\text{'\{'}cm{'\}'}$ and refractive index $n = 1.50$ is in air. A narrow beam of light enters the sphere parallel to a diameter, at a distance $h = 6.0\,\text{'\{'}cm{'\}'}$ from the diameter.
 
 (a) Calculate the angle of refraction at the first surface.
 
@@ -174,42 +174,42 @@ The ray emerges parallel to the original direction (as expected for a sphere). T
 
 $$\delta = (i_1 - r_1) + (e_2 - i_2) = (36.9 - 23.6) + (36.9 - 23.6) = 26.6^\circ$$
 
-For TIR to occur: $r_1 \ge \theta_c = 41.1^\circ$, which requires $i_1$ such that $\sin i_1 \ge 1.50 \times \sin 41.1^\circ = 1.50 \times 0.657 = 0.986$, i.e. $i_1 \ge 80.4^\circ$ or $h \ge 9.86\,\text{cm}$. Only rays very close to the edge undergo TIR.
+For TIR to occur: $r_1 \ge \theta_c = 41.1^\circ$, which requires $i_1$ such that $\sin i_1 \ge 1.50 \times \sin 41.1^\circ = 1.50 \times 0.657 = 0.986$, i.e. $i_1 \ge 80.4^\circ$ or $h \ge 9.86\,\text{'\{'}cm{'\}'}$. Only rays very close to the edge undergo TIR.
 
 ---
 ### IT-2: Optical Fibre Signal Attenuation (with DC Circuits)
 
 **Question:**
 
-An optical fibre of length $5.0\,\text{km}$ has an attenuation of $0.30\,\text{dB}\,\text{km}^{-1}$. A laser source couples $5.0\,\text{mW}$ of optical power into the fibre.
+An optical fibre of length $5.0\,\text{'\{'}km{'\}'}$ has an attenuation of $0.30\,\text{'\{'}dB{'\}'}\,\text{'\{'}km{'\}'}^{-1}$. A laser source couples $5.0\,\text{'\{'}mW{'\}'}$ of optical power into the fibre.
 
 (a) Calculate the power at the output end of the fibre.
 
-(b) The fibre has a numerical aperture of 0.22 and core diameter $62.5\,\mu\text{m}$. Calculate the maximum acceptance angle and the solid angle of acceptance.
+(b) The fibre has a numerical aperture of 0.22 and core diameter $62.5\,\mu\text{'\{'}m{'\}'}$. Calculate the maximum acceptance angle and the solid angle of acceptance.
 
-(c) If the fibre is bent to a radius of curvature of $5.0\,\text{cm}$, estimate whether significant power loss occurs due to bending.
+(c) If the fibre is bent to a radius of curvature of $5.0\,\text{'\{'}cm{'\}'}$, estimate whether significant power loss occurs due to bending.
 
 **Solution:**
 
-(a) Total attenuation: $A = 0.30 \times 5.0 = 1.5\,\text{dB}$
+(a) Total attenuation: $A = 0.30 \times 5.0 = 1.5\,\text{'\{'}dB{'\}'}$
 
-$$A = 10\log_{10}(P_{\text{in}}/P_{\text{out}})$$
-$$1.5 = 10\log_{10}(5.0/P_{\text{out}})$$
-$$\log_{10}(5.0/P_{\text{out}}) = 0.15$$
-$$5.0/P_{\text{out}} = 10^{0.15} = 1.413$$
-$$P_{\text{out}} = 5.0/1.413 = 3.54\,\text{mW}$$
+$$A = 10\log_{10}(P_{\text{'\{'}in{'\}'}}/P_{\text{'\{'}out{'\}'}})$$
+$$1.5 = 10\log_{10}(5.0/P_{\text{'\{'}out{'\}'}})$$
+$$\log_{10}(5.0/P_{\text{'\{'}out{'\}'}}) = 0.15$$
+$$5.0/P_{\text{'\{'}out{'\}'}} = 10^{0.15} = 1.413$$
+$$P_{\text{'\{'}out{'\}'}} = 5.0/1.413 = 3.54\,\text{'\{'}mW{'\}'}$$
 
-(b) Maximum acceptance angle: $\theta_a = \sin^{-1}(\text{NA}) = \sin^{-1}(0.22) = 12.7^\circ$
+(b) Maximum acceptance angle: $\theta_a = \sin^{-1}(\text{'\{'}NA{'\}'}) = \sin^{-1}(0.22) = 12.7^\circ$
 
-Solid angle of acceptance (approximate): $\Omega \approx \pi\theta_a^2 = \pi(0.22)^2 = 0.152\,\text{sr}$ (for small angles, where $\theta$ is in radians: $\theta_a = 0.22\,\text{rad}$)
+Solid angle of acceptance (approximate): $\Omega \approx \pi\theta_a^2 = \pi(0.22)^2 = 0.152\,\text{'\{'}sr{'\}'}$ (for small angles, where $\theta$ is in radians: $\theta_a = 0.22\,\text{'\{'}rad{'\}'}$)
 
 (c) Bending loss becomes significant when the bend radius approaches a critical value. For a step-index fibre:
 
-$$R_{\text{critical}} \approx \frac{3n_1^2\lambda}{4\pi(n_1^2 - n_2^2)^{3/2}}$$
+$$R_{\text{'\{'}critical{'\}'}} \approx \frac{3n_1^2\lambda}{4\pi(n_1^2 - n_2^2)^{3/2}}$$
 
-Without the wavelength, we can estimate: for typical telecom fibres, bend losses become significant below $R \approx 10$--$30\,\text{mm}$ for single-mode fibres. For multimode fibres with larger cores, the critical radius is smaller.
+Without the wavelength, we can estimate: for typical telecom fibres, bend losses become significant below $R \approx 10$--$30\,\text{'\{'}mm{'\}'}$ for single-mode fibres. For multimode fibres with larger cores, the critical radius is smaller.
 
-At $R = 5.0\,\text{cm} = 50\,\text{mm}$, a multimode fibre of $62.5\,\mu\text{m}$ core diameter would experience minimal bending loss. However, tight bends at $5\,\text{mm}$ radius would cause significant loss.
+At $R = 5.0\,\text{'\{'}cm{'\}'} = 50\,\text{'\{'}mm{'\}'}$, a multimode fibre of $62.5\,\mu\text{'\{'}m{'\}'}$ core diameter would experience minimal bending loss. However, tight bends at $5\,\text{'\{'}mm{'\}'}$ radius would cause significant loss.
 
 The key point is that bending changes the angle of incidence at the core-cladding boundary. Some rays that previously satisfied the TIR condition no longer do, and they leak into the cladding. This is macrobending loss.
 

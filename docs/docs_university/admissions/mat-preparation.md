@@ -253,7 +253,7 @@ $$\sum_{k=1}^{n} \frac{1}{k(k+1)} = \sum_{k=1}^{n} \left(\frac{1}{k} - \frac{1}{
 **Method of differences.** If $a_k = f(k) - f(k-1)$, then $\sum_{k=1}^{n} a_k = f(n) - f(0)$.
 The key is finding $f$ given $a_k$, often by partial fraction decomposition.
 
-**Binomial expansion.** For $|x| < 1$ and $\alpha \in \mathbb{R}$:
+**Binomial expansion.** For $|x| < 1$ and $\alpha \in \mathbb{'\{'}R{'\}'}$:
 
 $$(1 + x)^\alpha = \sum_{k=0}^{\infty} \binom{\alpha}{k} x^k$$
 
@@ -458,12 +458,12 @@ $$S_n = 2 - \frac{n + 2}{2^n}$$
 
 ### Question 5 (Logic)
 
-> A function $f: \mathbb{R} \to \mathbb{R}$ satisfies $f(x+y) = f(x) + f(y)$ for all $x, y \in \mathbb{R}$,
-> and $f(xy) = f(x)f(y)$ for all $x, y \in \mathbb{R}$.
+> A function $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ satisfies $f(x+y) = f(x) + f(y)$ for all $x, y \in \mathbb{'\{'}R{'\}'}$,
+> and $f(xy) = f(x)f(y)$ for all $x, y \in \mathbb{'\{'}R{'\}'}$.
 >
 > (i) Find $f(0)$ and $f(1)$.
-> (ii) Show that $f(n) = n f(1)$ for all $n \in \mathbb{Z}$.
-> (iii) Show that either $f(x) = x$ for all $x \in \mathbb{R}$, or $f(x) = 0$ for all $x \in \mathbb{R}$.
+> (ii) Show that $f(n) = n f(1)$ for all $n \in \mathbb{'\{'}Z{'\}'}$.
+> (iii) Show that either $f(x) = x$ for all $x \in \mathbb{'\{'}R{'\}'}$, or $f(x) = 0$ for all $x \in \mathbb{'\{'}R{'\}'}$.
 
 **Solution.**
 
@@ -481,13 +481,13 @@ Case 2: $f(1) = 1$. Then from $f(1) = 1$, setting $x = y = 0$ in the additive pr
 **(ii)** In Case 2 ($f(1) = 1$):
 
 By induction on $n \geq 1$: $f(n) = f(n-1 + 1) = f(n-1) + f(1) = f(n-1) + 1$. Since $f(1) = 1$,
-$f(n) = n$ for all $n \in \mathbb{N}$.
+$f(n) = n$ for all $n \in \mathbb{'\{'}N{'\}'}$.
 
 For $n = 0$: $f(0) = 0 = 0 \cdot f(1)$.
 
 For negative integers: $0 = f(0) = f(n + (-n)) = f(n) + f(-n)$, so $f(-n) = -f(n) = -n$.
 
-Therefore $f(n) = n$ for all $n \in \mathbb{Z}$.
+Therefore $f(n) = n$ for all $n \in \mathbb{'\{'}Z{'\}'}$.
 
 **(iii)** We have established that either $f(x) = 0$ for all $x$ (Case 1) or $f(1) = 1$ (Case 2).
 
@@ -510,7 +510,7 @@ positive number is non-negative, $f(x) \geq r$ for all rationals $r < x$. Hence 
 Similarly, if $r > x$ then $f(r) - f(x) = f(r - x) \geq 0$ (since $r - x > 0$), so $f(x) \leq r$ for
 all rationals $r > x$. Hence $f(x) \leq x$.
 
-Combining: $f(x) = x$ for all $x \in \mathbb{R}$.
+Combining: $f(x) = x$ for all $x \in \mathbb{'\{'}R{'\}'}$.
 
 Therefore the only solutions are $f(x) = x$ and $f(x) = 0$.
 

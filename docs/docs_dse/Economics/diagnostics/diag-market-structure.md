@@ -20,7 +20,7 @@ the shutdown price.
 
 **Solution:**
 
-(a) Profit maximisation: $MC = MR = P$. $MC = \frac{\text{dTC}}{	ext{dQ}} = 10 + Q$. Set
+(a) Profit maximisation: $MC = MR = P$. $MC = \frac{\text{'\{'}dTC{'\}'}}{	ext{dQ}} = 10 + Q$. Set
 $10 + Q = 50$, so $Q^* = 40$.
 
 (b) Profit
@@ -30,7 +30,7 @@ $= TR - TC = 50(40) - [200 + 10(40) + 0.5(40)^2] = 2000 - [200 + 400 + 800] = 20
 perfect competition, economic profit $= 0$ (firms enter until price $=$ minimum ATC).
 
 (d) Shutdown price $= $ minimum AVC. $VC = 10Q + 0.5Q^2$, so $AVC = 10 + 0.5Q$. Minimum AVC occurs
-where $\frac{\text{dAVC}}{	ext{dQ}} = 0.5 = 0$, which is at $Q = 0$. At $Q = 0$: $AVC = 10$. So the
+where $\frac{\text{'\{'}dAVC{'\}'}}{	ext{dQ}} = 0.5 = 0$, which is at $Q = 0$. At $Q = 0$: $AVC = 10$. So the
 shutdown price is $\$10$. If price falls below $\$10$, the firm shuts down because it cannot even
 cover its variable costs.
 
@@ -149,7 +149,7 @@ $= \frac{1}{2}(22 - 4)(80 - 36) + \frac{1}{2}(12 - 4)(40 - 16) = \frac{1}{2}(18)
 groups. The DWL calculation requires the competitive benchmark per group. Competitive output ($P = 4$):
 $Q_A = 80 - 8 = 72$, $Q_S = 40 - 8 = 32$. Total competitive output $Q_c = 104$.
 
-$DWL_{\text{no disc}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
+$DWL_{\text{'\{'}no disc{'\}'}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
 $DWL_d = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
 
 (d) To maximise social welfare, the government could regulate the cinema to charge $P = MC = \$4$
@@ -260,7 +260,7 @@ total social surplus, leading to an underallocation of resources to this good.
 
 **Solution:**
 
-(a) Monopoly: $MR = 100 - Q$. $MC = 20$. Set $MR = MC$: $100 - Q = 20$, $Q_m = 80$ GWh. $P_m = 100 - 0.5(80) = \text{HK}\$60$/MWh$.
+(a) Monopoly: $MR = 100 - Q$. $MC = 20$. Set $MR = MC$: $100 - Q = 20$, $Q_m = 80$ GWh. $P_m = 100 - 0.5(80) = \text{'\{'}HK{'\}'}\$60$/MWh$.
 
 Profit $= TR - TC = 60(80) - [500 + 20(80)] = 4800 - [500 + 1600] = 4800 - 2100 = 2700$ (million HKD $=$ HK$2.7 billion).
 
@@ -276,7 +276,7 @@ $100 - 0.5Q = \frac{500}{Q} + 20$. Multiply by $Q$: $100Q - 0.5Q^2 = 500 + 20Q$.
 
 $Q = \frac{160 \pm \sqrt{25600 - 4000}}{2} = \frac{160 \pm \sqrt{21600}}{2} = \frac{160 \pm 147.0}{2}$.
 
-$Q = 153.5$ GWh (taking the larger root). $P = 100 - 0.5(153.5) = \text{HK}\$23.25$/MWh$.
+$Q = 153.5$ GWh (taking the larger root). $P = 100 - 0.5(153.5) = \text{'\{'}HK{'\}'}\$23.25$/MWh$.
 
 Profit $\approx 0$ (the firm breaks even by construction of average cost pricing).
 
@@ -417,11 +417,11 @@ Welfare loss per unit $= 52.65 - 48.28 = 4.37$. Total welfare loss $= 4.37 \time
 
 **Solution:**
 
-(a) Revenue per flight $= \text{HK}\$8$ million. Cost per flight $= 10 + 2 = \text{HK}\$12$ million. Profit per flight $= 8 - 12 = -\text{HK}\$4$ million.
+(a) Revenue per flight $= \text{'\{'}HK{'\}'}\$8$ million. Cost per flight $= 10 + 2 = \text{'\{'}HK{'\}'}\$12$ million. Profit per flight $= 8 - 12 = -\text{'\{'}HK{'\}'}\$4$ million.
 
 Wait, this gives a loss. Let me reinterpret: fixed costs of HK$10 million per *week* (not per flight) and variable costs of HK$2 million per flight.
 
-Profit per week $= 8 \times 10 - (10 + 2 \times 10) = 80 - 30 = \text{HK}\$50$ million.
+Profit per week $= 8 \times 10 - (10 + 2 \times 10) = 80 - 30 = \text{'\{'}HK{'\}'}\$50$ million.
 
 (b) Under contestable market theory, even a monopoly may behave like a competitive firm if there is a threat of "hit-and-run" entry. If the incumbent charges a monopoly price (above average cost), a potential entrant can enter, undercut the incumbent's price slightly, earn a profit, and exit before the incumbent can respond. Because entry and exit are costless (no sunk costs), this threat is credible.
 

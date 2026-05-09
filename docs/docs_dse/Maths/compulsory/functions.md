@@ -26,7 +26,7 @@ of $x$ under $f$, written $y = f(x)$.
 - The set $A$ is called the **domain** of $f$.
 - The set $B$ is called the **codomain** of $f$.
 - The set of all images $\{f(x) : x \in A\}$ is called the **range** of $f$. The range is always a
-  subset of the codomain: $\mathrm{range}(f) \subseteq B$.
+  subset of the codomain: $\mathrm{'\{'}range{'\}'}(f) \subseteq B$.
 
 A **relation** is any subset of $A \times B$. A function is a special type of relation where each
 element of $A$ appears as the first component of exactly one ordered pair.
@@ -55,10 +55,10 @@ A function $f \colon A \to B$ is:
 
 <details>
 <summary>Examples</summary>
-- $f(x) = 2x + 1$ with domain $\mathbb{R}$ is injective (linear, non-constant) and surjective onto $\mathbb{R}$, hence bijective.
-- $f(x) = x^2$ with domain $\mathbb{R}$ is neither injective ($f(2) = f(-2) = 4$) nor surjective onto $\mathbb{R}$ (range is $[0, \infty)$).
+- $f(x) = 2x + 1$ with domain $\mathbb{'\{'}R{'\}'}$ is injective (linear, non-constant) and surjective onto $\mathbb{'\{'}R{'\}'}$, hence bijective.
+- $f(x) = x^2$ with domain $\mathbb{'\{'}R{'\}'}$ is neither injective ($f(2) = f(-2) = 4$) nor surjective onto $\mathbb{'\{'}R{'\}'}$ (range is $[0, \infty)$).
 - $f(x) = x^2$ with domain $[0, \infty)$ and codomain $[0, \infty)$ is bijective.
-- $f(x) = \dfrac{1}{x}$ with domain $\mathbb{R} \setminus \{0\}$ is injective but not surjective onto $\mathbb{R}$ (range is $\mathbb{R} \setminus \{0\}$).
+- $f(x) = \dfrac{1}{x}$ with domain $\mathbb{'\{'}R{'\}'} \setminus \{0\}$ is injective but not surjective onto $\mathbb{'\{'}R{'\}'}$ (range is $\mathbb{'\{'}R{'\}'} \setminus \{0\}$).
 </details>
 
 ---
@@ -82,7 +82,7 @@ For $(f \circ g)(x)$ to be defined at a particular value of $x$, two conditions 
 The domain of $f \circ g$ is therefore:
 
 $$
-\mathrm{dom}(f \circ g) = \{x \in \mathrm{dom}(g) : g(x) \in \mathrm{dom}(f)\}
+\mathrm{'\{'}dom{'\}'}(f \circ g) = \{x \in \mathrm{'\{'}dom{'\}'}(g) : g(x) \in \mathrm{'\{'}dom{'\}'}(f)\}
 $$
 
 ### Order of Composition
@@ -95,11 +95,11 @@ is evaluated first.
 If $f$ is a bijection, then the **inverse function** $f^{-1}$ exists and satisfies:
 
 $$
-f^{-1}(f(x)) = x \quad \mathrm{for all } x \in \mathrm{dom}(f)
+f^{-1}(f(x)) = x \quad \mathrm{'\{'}for all {'\}'} x \in \mathrm{'\{'}dom{'\}'}(f)
 $$
 
 $$
-f(f^{-1}(y)) = y \quad \mathrm{for all } y \in \mathrm{dom}(f^{-1}) = \mathrm{range}(f)
+f(f^{-1}(y)) = y \quad \mathrm{'\{'}for all {'\}'} y \in \mathrm{'\{'}dom{'\}'}(f^{-1}) = \mathrm{'\{'}range{'\}'}(f)
 $$
 
 The graphs of $y = f(x)$ and $y = f^{-1}(x)$ are reflections of each other in the line $y = x$.
@@ -121,13 +121,13 @@ injective.
   - Set $y = \dfrac{2x + 1}{x - 3}$
   - $y(x - 3) = 2x + 1 \implies yx - 3y = 2x + 1$
   - $x(y - 2) = 3y + 1 \implies x = \dfrac{3y + 1}{y - 2}$
-  - Therefore $f^{-1}(x) = \dfrac{3x + 1}{x - 2}$, with domain $\mathbb{R} \setminus \{2\}$.
+  - Therefore $f^{-1}(x) = \dfrac{3x + 1}{x - 2}$, with domain $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
 
 - Let $f(x) = \sqrt{x - 1}$ and $g(x) = x^2 + 1$. Find the domain of $f \circ g$:
-  - $\mathrm{dom}(g) = \mathbb{R}$
-  - $\mathrm{dom}(f) = \{x : x \geq 1\}$, so we require $g(x) \geq 1$, i.e.
+  - $\mathrm{'\{'}dom{'\}'}(g) = \mathbb{'\{'}R{'\}'}$
+  - $\mathrm{'\{'}dom{'\}'}(f) = \{x : x \geq 1\}$, so we require $g(x) \geq 1$, i.e.
     $x^2 + 1 \geq 1 \implies x^2 \geq 0$, which holds for all real $x$.
-  - Therefore $\mathrm{dom}(f \circ g) = \mathbb{R}$.
+  - Therefore $\mathrm{'\{'}dom{'\}'}(f \circ g) = \mathbb{'\{'}R{'\}'}$.
 
 </details>
 
@@ -224,7 +224,7 @@ where $a$ is called the **base**.
 
 ### Properties
 
-For $a, b > 0$ and $m, n \in \mathbb{R}$:
+For $a, b > 0$ and $m, n \in \mathbb{'\{'}R{'\}'}$:
 
 $$
 \begin{aligned}
@@ -267,7 +267,7 @@ For equations of the form $a^{f(x)} = b$, take logarithms of both sides. See
 - The half-life of a substance is 8 hours. If the initial amount is 100 g, find the amount remaining
   after 24 hours:
   - $A(t) = 100 \times \left(\frac{1}{2}\right)^{t/8}$
-  - $A(24) = 100 \times \left(\frac{1}{2}\right)^3 = 12.5 \mathrm{ g}$
+  - $A(24) = 100 \times \left(\frac{1}{2}\right)^3 = 12.5 \mathrm{'\{'} g{'\}'}$
 
 </details>
 
@@ -284,18 +284,18 @@ $$
 
 This means $\log_a x$ is the exponent to which $a$ must be raised to obtain $x$.
 
-The function $f(x) = \log_a x$ has domain $(0, \infty)$ and range $\mathbb{R}$. See
+The function $f(x) = \log_a x$ has domain $(0, \infty)$ and range $\mathbb{'\{'}R{'\}'}$. See
 [logarithms](logarithms) for further details.
 
 ### Laws of Logarithms
 
-For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{R}$:
+For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{'\{'}R{'\}'}$:
 
 $$
 \begin{aligned}
-\log_a (MN) &= \log_a M + \log_a N &\mathrm{(Product Law)} \\
-\log_a \left(\frac{M}{N}\right) &= \log_a M - \log_a N &\mathrm{(Quotient Law)} \\
-\log_a M^p &= p \log_a M &\mathrm{(Power Law)} \\
+\log_a (MN) &= \log_a M + \log_a N &\mathrm{'\{'}(Product Law){'\}'} \\
+\log_a \left(\frac{M}{N}\right) &= \log_a M - \log_a N &\mathrm{'\{'}(Quotient Law){'\}'} \\
+\log_a M^p &= p \log_a M &\mathrm{'\{'}(Power Law){'\}'} \\
 \log_a 1 &= 0 \\
 \log_a a &= 1
 \end{aligned}
@@ -422,7 +422,7 @@ shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right).
 The **modulus** (or absolute value) function is defined piecewise:
 
 $$
-f(x) = |x| = \begin{cases} x & \mathrm{if } x \geq 0 \\ -x & \mathrm{if } x \lt 0 \end{cases}
+f(x) = |x| = \begin{cases} x & \mathrm{'\{'}if {'\}'} x \geq 0 \\ -x & \mathrm{'\{'}if {'\}'} x \lt 0 \end{cases}
 $$
 
 The graph of $y = |x|$ is V-shaped, with its vertex at the origin. It is symmetric about the
@@ -430,7 +430,7 @@ $y$-axis, making it an **even function**: $|{-x}| = |x|$ for all $x$.
 
 ### Properties
 
-For all $a, b \in \mathbb{R}$:
+For all $a, b \in \mathbb{'\{'}R{'\}'}$:
 
 **Proposition (Multiplicativity).** $|ab| = |a| \cdot |b|$.
 
@@ -520,7 +520,7 @@ parabola:
 | -------------- | ------------ | -------------------------- | ----------------------- |
 | $\Delta \gt 0$ | Two distinct | $x \lt x_1$ or $x \gt x_2$ | $x_1 \lt x \lt x_2$     |
 | $\Delta = 0$   | One repeated | All $x \neq x_1$           | No solution             |
-| $\Delta \lt 0$ | None         | All $x \in \mathbb{R}$     | No solution             |
+| $\Delta \lt 0$ | None         | All $x \in \mathbb{'\{'}R{'\}'}$     | No solution             |
 
 See [inequalities.md](inequalities)) for the general theory.
 
@@ -578,7 +578,7 @@ f(x) = \frac{P(x)}{Q(x)}
 $$
 
 where $P(x)$ and $Q(x)$ are polynomials and $Q(x) \neq 0$. The domain is
-$\mathbb{R} \setminus \{x : Q(x) = 0\}$.
+$\mathbb{'\{'}R{'\}'} \setminus \{x : Q(x) = 0\}$.
 
 ### Asymptotes
 
@@ -591,7 +591,7 @@ degrees of $P$ and $Q$:
 | Condition               | Horizontal Asymptote                                                                |
 | ----------------------- | ----------------------------------------------------------------------------------- |
 | $\deg P \lt \deg Q$     | $y = 0$ (the $x$-axis)                                                              |
-| $\deg P = \deg Q$       | $y = \frac{\mathrm{leading coefficient of } P}{\mathrm{leading coefficient of } Q}$ |
+| $\deg P = \deg Q$       | $y = \frac{\mathrm{'\{'}leading coefficient of {'\}'} P}{\mathrm{'\{'}leading coefficient of {'\}'} Q}$ |
 | $\deg P = \deg Q + 1$   | Oblique asymptote (polynomial long division)                                        |
 | $\deg P \gt \deg Q + 1$ | No horizontal or oblique asymptote                                                  |
 
@@ -736,9 +736,9 @@ always positive, not always negative.
 <details>
 <summary>Answer</summary>
 - $(f \circ g)(x) = f(g(x)) = f(x^2 - 4) = \dfrac{2(x^2 - 4) - 6}{(x^2 - 4) + 1} = \dfrac{2x^2 - 14}{x^2 - 3}$
-- $\mathrm{dom}(g) = \mathbb{R}$.
-- $\mathrm{dom}(f) = \{x \in \mathbb{R} : x \neq -1\}$, so we require $g(x) \neq -1$, i.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
-- $\mathrm{dom}(f \circ g) = \mathbb{R} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
+- $\mathrm{'\{'}dom{'\}'}(g) = \mathbb{'\{'}R{'\}'}$.
+- $\mathrm{'\{'}dom{'\}'}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -1\}$, so we require $g(x) \neq -1$, i.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
+- $\mathrm{'\{'}dom{'\}'}(f \circ g) = \mathbb{'\{'}R{'\}'} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
 </details>
 
 2. **Question:** Let $f(x) = 3x - 5$. Find $f^{-1}(x)$ and verify that $f^{-1}(f(x)) = x$.
@@ -822,19 +822,19 @@ inverse functions of each other, and state the domain and range of $f^{-1}$.
 - To find the true inverse of $f(x) = \log_2(x + 3)$:
   - Set $y = \log_2(x + 3) \implies 2^y = x + 3 \implies x = 2^y - 3$.
   - $f^{-1}(x) = 2^x - 3$.
-- $\mathrm{dom}(f^{-1}) = \mathrm{range}(f) = \mathbb{R}$ (since $\log_2(x + 3)$ takes all real
+- $\mathrm{'\{'}dom{'\}'}(f^{-1}) = \mathrm{'\{'}range{'\}'}(f) = \mathbb{'\{'}R{'\}'}$ (since $\log_2(x + 3)$ takes all real
   values for $x > -3$).
-- $\mathrm{range}(f^{-1}) = \mathrm{dom}(f) = (-3, \infty)$.
+- $\mathrm{'\{'}range{'\}'}(f^{-1}) = \mathrm{'\{'}dom{'\}'}(f) = (-3, \infty)$.
 </details>
 
 9. **Question:** Given $f(x) = x^2 + 2x - 3$, find the range of $f$ when (a) the domain is
-$\mathbb{R}$, and (b) the domain is $[0, 4]$.
+$\mathbb{'\{'}R{'\}'}$, and (b) the domain is $[0, 4]$.
 <details>
 <summary>Answer</summary>
 
 - Completing the square: $f(x) = (x^2 + 2x + 1) - 1 - 3 = (x + 1)^2 - 4$.
 - The vertex is at $(-1, -4)$.
-- (a) Domain $\mathbb{R}$: Since the parabola opens upward with minimum $-4$, range is
+- (a) Domain $\mathbb{'\{'}R{'\}'}$: Since the parabola opens upward with minimum $-4$, range is
   $[-4, \infty)$.
 - (b) Domain $[0, 4]$:
   - $f(0) = -3$, $f(4) = 16 + 8 - 3 = 21$.
@@ -850,7 +850,7 @@ $f^{-1}(3) + f(3)$.
 
 - Set $y = \dfrac{x}{x - 2}$.
 - $y(x - 2) = x \implies yx - 2y = x \implies yx - x = 2y \implies x(y - 1) = 2y \implies x = \dfrac{2y}{y - 1}$.
-- $f^{-1}(x) = \dfrac{2x}{x - 1}$, with domain $\mathbb{R} \setminus \{1\}$.
+- $f^{-1}(x) = \dfrac{2x}{x - 1}$, with domain $\mathbb{'\{'}R{'\}'} \setminus \{1\}$.
 - $f^{-1}(3) = \dfrac{2(3)}{3 - 1} = 3$.
 - $f(3) = \dfrac{3}{3 - 2} = 3$.
 - $f^{-1}(3) + f(3) = 3 + 3 = 6$.
@@ -901,14 +901,14 @@ Exact values are preferred. Decimal answers to 3 significant figures.
 
 **Worked Example 9: Determining injectivity**
 
-Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{R}$?
+Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{'\{'}R{'\}'}$?
 
 <details>
 <summary>Solution</summary>
 
 $f(0) = 0$, $f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$, $f(-\sqrt{3}) = 0$.
 
-Since $f(0) = f(\sqrt{3}) = f(-\sqrt{3})$ and the inputs are distinct, $f$ is not injective on $\mathbb{R}$.
+Since $f(0) = f(\sqrt{3}) = f(-\sqrt{3})$ and the inputs are distinct, $f$ is not injective on $\mathbb{'\{'}R{'\}'}$.
 
 Note: $f$ is injective on $[1, \infty)$ since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) > 0$ for $x > 1$.
 
@@ -916,12 +916,12 @@ Note: $f$ is injective on $[1, \infty)$ since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) > 
 
 **Worked Example 10: Surjectivity**
 
-Is $f(x) = x^2 + 1$ surjective if the codomain is $\mathbb{R}$?
+Is $f(x) = x^2 + 1$ surjective if the codomain is $\mathbb{'\{'}R{'\}'}$?
 
 <details>
 <summary>Solution</summary>
 
-No. Since $x^2 \geq 0$ for all real $x$, we have $f(x) = x^2 + 1 \geq 1$. The value $0 \in \mathbb{R}$ is not attained. Therefore $f$ is not surjective onto $\mathbb{R}$.
+No. Since $x^2 \geq 0$ for all real $x$, we have $f(x) = x^2 + 1 \geq 1$. The value $0 \in \mathbb{'\{'}R{'\}'}$ is not attained. Therefore $f$ is not surjective onto $\mathbb{'\{'}R{'\}'}$.
 
 If the codomain is restricted to $[1, \infty)$, then $f$ is surjective.
 
@@ -929,7 +929,7 @@ If the codomain is restricted to $[1, \infty)$, then $f$ is surjective.
 
 **Worked Example 11: Graph of a piecewise function**
 
-Sketch the graph of $f(x) = \begin{cases} |x| & \text{if } x \leq 2 \\ x^2 - 2x & \text{if } x > 2 \end{cases}$
+Sketch the graph of $f(x) = \begin{cases} |x| & \text{'\{'}if {'\}'} x \leq 2 \\ x^2 - 2x & \text{'\{'}if {'\}'} x > 2 \end{cases}$
 
 <details>
 <summary>Solution</summary>
@@ -972,7 +972,7 @@ So $(f \circ g)(-x) = (f \circ g)(x)$, which means $f \circ g$ is even.
 <details>
 <summary>Solution</summary>
 
-Domain: $x \neq 1$, so $\mathrm{dom}(f) = \mathbb{R} \setminus \{1\}$.
+Domain: $x \neq 1$, so $\mathrm{'\{'}dom{'\}'}(f) = \mathbb{'\{'}R{'\}'} \setminus \{1\}$.
 
 $f(x) = 2 + \dfrac{5}{x - 1}$.
 
@@ -980,7 +980,7 @@ For $x > 1$: as $x \to 1^+$, $f(x) \to +\infty$; as $x \to +\infty$, $f(x) \to 2
 
 For $x < 1$: as $x \to 1^-$, $f(x) \to -\infty$; as $x \to -\infty$, $f(x) \to 2^-$. Range: $(-\infty, 2)$.
 
-Combined range: $\mathbb{R} \setminus \{2\}$.
+Combined range: $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
 
 $f$ is injective: for $x > 1$, $f$ is strictly decreasing (derivative $-5/(x-1)^2 < 0$); for $x < 1$, $f$ is also strictly decreasing. And no value from $(2, +\infty)$ overlaps with $(-\infty, 2)$.
 
@@ -1019,16 +1019,16 @@ Since $f(-x) = -f(x)$, $f$ is odd.
 
 </details>
 
-**DSE Practice 5.** The function $f$ is defined on $\mathbb{R}$ by $f(x) = ax^2 + bx + c$. Given that $f(0) = 5$, $f(1) = 4$, and $f(-1) = 10$, find $a$, $b$, and $c$.
+**DSE Practice 5.** The function $f$ is defined on $\mathbb{'\{'}R{'\}'}$ by $f(x) = ax^2 + bx + c$. Given that $f(0) = 5$, $f(1) = 4$, and $f(-1) = 10$, find $a$, $b$, and $c$.
 
 <details>
 <summary>Solution</summary>
 
 $f(0) = c = 5$.
 
-$f(1) = a + b + 5 = 4 \implies a + b = -1 \quad \text{(i)}$.
+$f(1) = a + b + 5 = 4 \implies a + b = -1 \quad \text{'\{'}(i){'\}'}$.
 
-$f(-1) = a - b + 5 = 10 \implies a - b = 5 \quad \text{(ii)}$.
+$f(-1) = a - b + 5 = 10 \implies a - b = 5 \quad \text{'\{'}(ii){'\}'}$.
 
 (i) + (ii): $2a = 4 \implies a = 2$. From (i): $b = -3$.
 

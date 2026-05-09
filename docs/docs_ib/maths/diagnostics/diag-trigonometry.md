@@ -97,7 +97,7 @@ Since $\sin(x - \alpha) + 1 \in [0, 2]$, the denominator $\in [0, 10]$.
 
 The maximum value of the reciprocal occurs when the denominator is at its minimum:
 
-$$\text{Maximum} = \frac{1}{0}$$
+$$\text{'\{'}Maximum{'\}'} = \frac{1}{0}$$
 
 Wait — when $\sin(x - \alpha) = -1$, the denominator is $0$, which is undefined. The range of the denominator is $(0, 10]$, so:
 

@@ -165,11 +165,11 @@ numbers or percentages of the total population.
 
 **Dependency ratios.** The total dependency ratio is:
 
-$$\mathrm{TDR} = \frac{P_{0\mathrm{--}14} + P_{65+}}{P_{15\mathrm{--}64}} \times 100$$
+$$\mathrm{'\{'}TDR{'\}'} = \frac{P_{0\mathrm{'\{'}--{'\}'}14} + P_{65+}}{P_{15\mathrm{'\{'}--{'\}'}64}} \times 100$$
 
-where $P_{0\mathrm{--}14}$ is the population aged 0--14, $P_{65+}$ is the population aged 65 and over,
-and $P_{15\mathrm{--}64}$ is the working-age population. The youth dependency ratio uses only
-$P_{0\mathrm{--}14}$ in the numerator; the elderly dependency ratio uses only $P_{65+}$.
+where $P_{0\mathrm{'\{'}--{'\}'}14}$ is the population aged 0--14, $P_{65+}$ is the population aged 65 and over,
+and $P_{15\mathrm{'\{'}--{'\}'}64}$ is the working-age population. The youth dependency ratio uses only
+$P_{0\mathrm{'\{'}--{'\}'}14}$ in the numerator; the elderly dependency ratio uses only $P_{65+}$.
 
 - **High youth dependency** (common in Stage 2): the large child population strains education
   systems, healthcare, and household budgets. Niger's youth dependency ratio exceeds 90%.

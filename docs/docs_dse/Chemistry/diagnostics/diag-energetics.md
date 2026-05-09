@@ -41,7 +41,7 @@ $$\Delta H_{f}^{\circ}(CH_{4}) - 890.3 = -393.5 - 571.6$$
 
 $$\Delta H_{f}^{\circ}(CH_{4}) - 890.3 = -965.1$$
 
-$$\Delta H_{f}^{\circ}(CH_{4}) = -965.1 + 890.3 = -74.8 \text{ kJ/mol}$$
+$$\Delta H_{f}^{\circ}(CH_{4}) = -965.1 + 890.3 = -74.8 \text{'\{'} kJ/mol{'\}'}$$
 
 (b) Hess's cycle:
 
@@ -79,15 +79,15 @@ The standard enthalpy change for the reaction $H_{2}(g) + Cl_{2}(g) \rightarrow 
 
 (a) Bonds broken:
 
-$$H-H: 436 \text{ kJ/mol}$$
-$$Cl-Cl: 242 \text{ kJ/mol}$$
-$$\text{Total} = 436 + 242 = 678 \text{ kJ/mol}$$
+$$H-H: 436 \text{'\{'} kJ/mol{'\}'}$$
+$$Cl-Cl: 242 \text{'\{'} kJ/mol{'\}'}$$
+$$\text{'\{'}Total{'\}'} = 436 + 242 = 678 \text{'\{'} kJ/mol{'\}'}$$
 
 Bonds formed:
 
-$$2 \times H-Cl = 2 \times 431 = 862 \text{ kJ/mol}$$
+$$2 \times H-Cl = 2 \times 431 = 862 \text{'\{'} kJ/mol{'\}'}$$
 
-$$\Delta H = 678 - 862 = -184 \text{ kJ/mol}$$
+$$\Delta H = 678 - 862 = -184 \text{'\{'} kJ/mol{'\}'}$$
 
 (b) The calculated value ($-184$) is very close to the actual value ($-184.6$), but the small difference arises because:
 
@@ -123,17 +123,17 @@ Mass of solution = $100.0$ g
 
 Temperature change = $26.7 - 20.0 = 6.7$ K
 
-$$q = mc\Delta T = 100.0 \times 4.18 \times 6.7 = 2800.6 \text{ J} = 2.80 \text{ kJ}$$
+$$q = mc\Delta T = 100.0 \times 4.18 \times 6.7 = 2800.6 \text{'\{'} J{'\}'} = 2.80 \text{'\{'} kJ{'\}'}$$
 
 Moles of water formed:
 
-$$n(HCl) = 1.00 \times 0.0500 = 0.0500 \text{ mol}$$
-$$n(NaOH) = 1.00 \times 0.0500 = 0.0500 \text{ mol}$$
-$$n(H_{2}O) = 0.0500 \text{ mol} \text{ (limiting reagent = both, equimolar)}$$
+$$n(HCl) = 1.00 \times 0.0500 = 0.0500 \text{'\{'} mol{'\}'}$$
+$$n(NaOH) = 1.00 \times 0.0500 = 0.0500 \text{'\{'} mol{'\}'}$$
+$$n(H_{2}O) = 0.0500 \text{'\{'} mol{'\}'} \text{'\{'} (limiting reagent = both, equimolar){'\}'}$$
 
-$$\Delta H = \frac{-q}{n} = \frac{-2.80}{0.0500} = -56.0 \text{ kJ/mol}$$
+$$\Delta H = \frac{-q}{n} = \frac{-2.80}{0.0500} = -56.0 \text{'\{'} kJ/mol{'\}'}$$
 
-(b) $$\%\text{ error} = \frac{|-56.0 - (-57.1)|}{57.1} \times 100\% = \frac{1.1}{57.1} \times 100\% = 1.9\%$$
+(b) $$\%\text{'\{'} error{'\}'} = \frac{|-56.0 - (-57.1)|}{57.1} \times 100\% = \frac{1.1}{57.1} \times 100\% = 1.9\%$$
 
 The discrepancy is due to **heat loss to the surroundings** (the polystyrene cup is not a perfect insulator) and the heat absorbed by the cup itself (which was not accounted for in the calculation).
 
@@ -164,9 +164,9 @@ $$C_{2}H_{4}(g) + H_{2}(g) \rightarrow C_{2}H_{6}(g)$$
 
 **Worked Solution**
 
-(a) $$\Delta H_{\text{rxn}} = \Delta H_{f}^{\circ}(C_{2}H_{6}) - \Delta H_{f}^{\circ}(C_{2}H_{4}) - \Delta H_{f}^{\circ}(H_{2})$$
+(a) $$\Delta H_{\text{'\{'}rxn{'\}'}} = \Delta H_{f}^{\circ}(C_{2}H_{6}) - \Delta H_{f}^{\circ}(C_{2}H_{4}) - \Delta H_{f}^{\circ}(H_{2})$$
 
-$$= -84.7 - 52.2 - 0 = -136.9 \text{ kJ/mol}$$
+$$= -84.7 - 52.2 - 0 = -136.9 \text{'\{'} kJ/mol{'\}'}$$
 
 (b) Bonds broken:
 - $C=C$: 612 kJ/mol
@@ -178,7 +178,7 @@ Bonds broken: $C=C + H-H + 4 \times C-H = 612 + 436 + 1648 = 2696$ kJ/mol
 
 Bonds formed (in $C_{2}H_{6}$, $H_{3}C-CH_{3}$): $1 \times C-C + 6 \times C-H = 348 + 6 \times 412 = 348 + 2472 = 2820$ kJ/mol
 
-$$\Delta H = 2696 - 2820 = -124 \text{ kJ/mol}$$
+$$\Delta H = 2696 - 2820 = -124 \text{'\{'} kJ/mol{'\}'}$$
 
 (c) The value from formation data ($-136.9$ kJ/mol) differs from the bond enthalpy value ($-124$ kJ/mol) by 12.9 kJ/mol.
 
@@ -233,17 +233,17 @@ Mg2+(g) + O(g) ---------------------+
 
 (b) Hess's law:
 
-$$\Delta H_{f}^{\circ} = \Delta H_{\text{atom}}(Mg) + IE_{1} + IE_{2} + \frac{1}{2}\Delta H_{\text{diss}}(O_{2}) + EA_{1} + EA_{2} + \Delta H_{\text{lattice}}$$
+$$\Delta H_{f}^{\circ} = \Delta H_{\text{'\{'}atom{'\}'}}(Mg) + IE_{1} + IE_{2} + \frac{1}{2}\Delta H_{\text{'\{'}diss{'\}'}}(O_{2}) + EA_{1} + EA_{2} + \Delta H_{\text{'\{'}lattice{'\}'}}$$
 
-$$-601.6 = 147.1 + 738 + 1451 + 249 + (-141) + 798 + \Delta H_{\text{lattice}}$$
+$$-601.6 = 147.1 + 738 + 1451 + 249 + (-141) + 798 + \Delta H_{\text{'\{'}lattice{'\}'}}$$
 
-$$-601.6 = 147.1 + 738 + 1451 + 249 - 141 + 798 + \Delta H_{\text{lattice}}$$
+$$-601.6 = 147.1 + 738 + 1451 + 249 - 141 + 798 + \Delta H_{\text{'\{'}lattice{'\}'}}$$
 
 Sum of all terms except lattice: $147.1 + 738 + 1451 + 249 - 141 + 798 = 3242.1$
 
-$$-601.6 = 3242.1 + \Delta H_{\text{lattice}}$$
+$$-601.6 = 3242.1 + \Delta H_{\text{'\{'}lattice{'\}'}}$$
 
-$$\Delta H_{\text{lattice}} = -601.6 - 3242.1 = -3843.7 \text{ kJ/mol}$$
+$$\Delta H_{\text{'\{'}lattice{'\}'}} = -601.6 - 3242.1 = -3843.7 \text{'\{'} kJ/mol{'\}'}$$
 
 (c) The second electron affinity of oxygen is endothermic because the $O^{-}$ ion already carries a negative charge. Adding a second electron to $O^{-}$ requires overcoming **electrostatic repulsion** between the incoming electron and the existing negative charge. Energy must be supplied to force the second electron onto the negatively charged ion.
 
@@ -255,7 +255,7 @@ $$\Delta H_{\text{lattice}} = -601.6 - 3242.1 = -3843.7 \text{ kJ/mol}$$
 
 Methanol ($CH_{3}OH$) can be used as a fuel. The complete combustion of methanol is:
 
-$$2CH_{3}OH(l) + 3O_{2}(g) \rightarrow 2CO_{2}(g) + 4H_{2}O(l) \quad \Delta H = -1452 \text{ kJ/mol (for the equation as written)}$$
+$$2CH_{3}OH(l) + 3O_{2}(g) \rightarrow 2CO_{2}(g) + 4H_{2}O(l) \quad \Delta H = -1452 \text{'\{'} kJ/mol (for the equation as written){'\}'}$$
 
 The standard enthalpy of formation of $CO_{2}(g)$ is $-393.5$ kJ/mol and of $H_{2}O(l)$ is $-285.8$ kJ/mol.
 
@@ -271,7 +271,7 @@ The standard enthalpy of formation of $CO_{2}(g)$ is $-393.5$ kJ/mol and of $H_{
 
 (a) For 2 mol of methanol:
 
-$$\Delta H_{\text{rxn}} = 2\Delta H_{f}^{\circ}(CO_{2}) + 4\Delta H_{f}^{\circ}(H_{2}O) - 2\Delta H_{f}^{\circ}(CH_{3}OH) - 3\Delta H_{f}^{\circ}(O_{2})$$
+$$\Delta H_{\text{'\{'}rxn{'\}'}} = 2\Delta H_{f}^{\circ}(CO_{2}) + 4\Delta H_{f}^{\circ}(H_{2}O) - 2\Delta H_{f}^{\circ}(CH_{3}OH) - 3\Delta H_{f}^{\circ}(O_{2})$$
 
 $$-1452 = 2(-393.5) + 4(-285.8) - 2\Delta H_{f}^{\circ}(CH_{3}OH) - 0$$
 
@@ -281,26 +281,26 @@ $$-1452 = -1930.2 - 2\Delta H_{f}^{\circ}(CH_{3}OH)$$
 
 $$2\Delta H_{f}^{\circ}(CH_{3}OH) = -1930.2 + 1452 = -478.2$$
 
-$$\Delta H_{f}^{\circ}(CH_{3}OH) = -239.1 \text{ kJ/mol}$$
+$$\Delta H_{f}^{\circ}(CH_{3}OH) = -239.1 \text{'\{'} kJ/mol{'\}'}$$
 
-(b) $$M(CH_{3}OH) = 12.0 + 4 \times 1.0 + 16.0 + 1.0 = 32.0 \text{ g/mol}$$
+(b) $$M(CH_{3}OH) = 12.0 + 4 \times 1.0 + 16.0 + 1.0 = 32.0 \text{'\{'} g/mol{'\}'}$$
 
-$$n(CH_{3}OH) = \frac{10.0}{32.0} = 0.3125 \text{ mol}$$
+$$n(CH_{3}OH) = \frac{10.0}{32.0} = 0.3125 \text{'\{'} mol{'\}'}$$
 
 Enthalpy change per mole = $\frac{-1452}{2} = -726$ kJ/mol
 
-$$\Delta H = 0.3125 \times (-726) = -226.9 \text{ kJ}$$
+$$\Delta H = 0.3125 \times (-726) = -226.9 \text{'\{'} kJ{'\}'}$$
 
 (c) Heat absorbed by water:
 
-$$q = mc\Delta T = 500 \times 4.18 \times 31.2 = 65208 \text{ J} = 65.2 \text{ kJ}$$
+$$q = mc\Delta T = 500 \times 4.18 \times 31.2 = 65208 \text{'\{'} J{'\}'} = 65.2 \text{'\{'} kJ{'\}'}$$
 
 Experimental enthalpy of combustion per mole:
 
-$$\Delta H_{\text{exp}} = \frac{-65.2}{0.3125} = -208.6 \text{ kJ/mol}$$
+$$\Delta H_{\text{'\{'}exp{'\}'}} = \frac{-65.2}{0.3125} = -208.6 \text{'\{'} kJ/mol{'\}'}$$
 
 Percentage efficiency:
 
-$$\%\text{ efficiency} = \frac{208.6}{726} \times 100\% = 28.7\%$$
+$$\%\text{'\{'} efficiency{'\}'} = \frac{208.6}{726} \times 100\% = 28.7\%$$
 
 This low efficiency is due to significant heat loss to the surroundings, incomplete combustion, and heat absorbed by the container.

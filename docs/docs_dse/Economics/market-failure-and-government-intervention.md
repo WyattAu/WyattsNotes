@@ -47,7 +47,7 @@ to bear it.
 This occurs when the production of a good imposes costs on society that are not reflected in the
 producer's private costs.
 
-$$\mathrm{MSC} = \mathrm{MPC} + \mathrm{MEC}$$
+$$\mathrm{'\{'}MSC{'\}'} = \mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MEC{'\}'}$$
 
 Where:
 
@@ -93,7 +93,7 @@ socially optimal output. The market **over-produces** the good.
 
 This occurs when the consumption of a good imposes costs on third parties.
 
-$$\mathrm{MSC} = \mathrm{MPB} + \mathrm{MEC}$$
+$$\mathrm{'\{'}MSC{'\}'} = \mathrm{'\{'}MPB{'\}'} + \mathrm{'\{'}MEC{'\}'}$$
 
 Where MEC is the marginal external cost of consumption.
 
@@ -116,7 +116,7 @@ for it.
 
 ### Positive Externality of Production
 
-$$\mathrm{MSB} = \mathrm{MPB} + \mathrm{MEB}$$
+$$\mathrm{'\{'}MSB{'\}'} = \mathrm{'\{'}MPB{'\}'} + \mathrm{'\{'}MEB{'\}'}$$
 
 Where MEB = marginal external benefit of production.
 
@@ -131,7 +131,7 @@ social optimum.
 
 ### Positive Externality of Consumption
 
-$$\mathrm{MSB} = \mathrm{MPB} + \mathrm{MEB}$$
+$$\mathrm{'\{'}MSB{'\}'} = \mathrm{'\{'}MPB{'\}'} + \mathrm{'\{'}MEB{'\}'}$$
 
 **Example:** Education. The individual student benefits from higher future earnings (MPB), but
 society benefits from a more educated population (lower crime rates, better civic participation,
@@ -159,12 +159,12 @@ rationale for government provision or subsidisation of education.
 A Pigouvian tax is a tax levied on each unit of a good that generates a negative externality. The
 tax is set equal to the marginal external cost at the socially optimal output.
 
-$$\mathrm{Pigouvian tax per unit} = \mathrm{MEC} \mathrm{ at } Q_{\mathrm{opt}}$$
+$$\mathrm{'\{'}Pigouvian tax per unit{'\}'} = \mathrm{'\{'}MEC{'\}'} \mathrm{'\{'} at {'\}'} Q_{\mathrm{'\{'}opt{'\}'}}$$
 
 By internalising the externality, the tax shifts the private cost curve upward to coincide with the
 social cost curve:
 
-$$\mathrm{MPC} + \mathrm{Tax} = \mathrm{MSC}$$
+$$\mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}Tax{'\}'} = \mathrm{'\{'}MSC{'\}'}$$
 
 The firm now faces the full social cost of production and reduces output to the socially optimal
 level.
@@ -225,7 +225,7 @@ A subsidy is a payment per unit to producers (or consumers) of a good that gener
 externality. The subsidy shifts the private benefit curve upward to coincide with the social benefit
 curve:
 
-$$\mathrm{MPB} + \mathrm{Subsidy} = \mathrm{MSB}$$
+$$\mathrm{'\{'}MPB{'\}'} + \mathrm{'\{'}Subsidy{'\}'} = \mathrm{'\{'}MSB{'\}'}$$
 
 The firm (or consumer) now receives the full social benefit and increases consumption/production to
 the socially optimal level.
@@ -459,7 +459,7 @@ analysis (CBA) to determine whether the intervention will improve net welfare.
 3. **Discount future costs and benefits:** Future costs and benefits are worth less than present
    ones (time preference). Use a social discount rate to convert future flows to present value.
 
-$$\mathrm{NPV} = \sum_{t=0}^{T} \frac{B_t - C_t}{(1 + r)^t}$$
+$$\mathrm{'\{'}NPV{'\}'} = \sum_{t=0}^{T} \frac{B_t - C_t}{(1 + r)^t}$$
 
 4. **Compare:** If NPV \gt 0, the intervention improves net welfare and should be undertaken. If NPV
    \lt 0, the costs outweigh the benefits.
@@ -1152,11 +1152,11 @@ A factory produces noise that disturbs 100 nearby residents. The factory's profi
 <details>
 <summary>Solution</summary>
 
-(a) Total external cost $= 100 \times 80\,000 = \text{HK}\$8$ million per year.
+(a) Total external cost $= 100 \times 80\,000 = \text{'\{'}HK{'\}'}\$8$ million per year.
 
-(b) The factory earns HK$5M from operating but creates HK$8M in external costs. Net social benefit of operating without soundproofing $= 5 - 8 = -\text{HK}\$3$ million (negative, so it is inefficient).
+(b) The factory earns HK$5M from operating but creates HK$8M in external costs. Net social benefit of operating without soundproofing $= 5 - 8 = -\text{'\{'}HK{'\}'}\$3$ million (negative, so it is inefficient).
 
-With soundproofing: factory earns $5 - 3 = \text{HK}\$2$ million (profit after soundproofing cost). External cost $= 0$. Net social benefit $= \text{HK}\$2$ million (positive). So it is efficient for the factory to install soundproofing and continue operating.
+With soundproofing: factory earns $5 - 3 = \text{'\{'}HK{'\}'}\$2$ million (profit after soundproofing cost). External cost $= 0$. Net social benefit $= \text{'\{'}HK{'\}'}\$2$ million (positive). So it is efficient for the factory to install soundproofing and continue operating.
 
 (c) Under the Coase theorem, if residents have the right to silence:
 - The factory can offer to pay residents for the right to make noise. If the factory pays each resident at least HK$80,000, the total payment would be at least HK$8M, which exceeds the factory's profit (HK$5M). The factory would not do this.
@@ -1193,7 +1193,7 @@ Cigarettes are a demerit good. The market demand is $Q_d = 500 - 5P$ and supply 
 
 $500 - 5P = -180 + 10P$. $680 = 15P$. $P^*_{social} = 45.33$. $Q^*_{social} = 500 - 226.67 = 273.33$ thousand packs.
 
-(c) Optimal tax $= MEC = \text{HK}\$8$ per pack.
+(c) Optimal tax $= MEC = \text{'\{'}HK{'\}'}\$8$ per pack.
 
 New equilibrium with tax: $500 - 5P_b = -100 + 10(P_b - 8)$. $500 - 5P_b = -100 + 10P_b - 80$. $680 = 15P_b$. $P_b = 45.33$. $P_s = 37.33$. $Q = 273.33$.
 
@@ -1263,14 +1263,14 @@ A new electronics store sells laptops. High-quality laptops cost the store HK$6,
 <details>
 <summary>Solution</summary>
 
-(a) Expected value $= 0.6 \times 10\,000 + 0.4 \times 4\,000 = 6000 + 1600 = \text{HK}\$7\,600$.
+(a) Expected value $= 0.6 \times 10\,000 + 0.4 \times 4\,000 = 6000 + 1600 = \text{'\{'}HK{'\}'}\$7\,600$.
 
 (b) The highest single price the store can charge is HK$7,600 (the expected value to consumers). At this price: high-quality laptops cost HK$6,000 (profit = 1,600 each). Low-quality laptops cost HK$3,000 (profit = 4,600 each).
 
 Both types are profitable, so the store sells both. However, this assumes the store is willing to sell at a price below the high-quality valuation (10,000). If the store tried to charge HK$10,000, consumers would only buy if they knew the laptop was high-quality, which they do not.
 
-(c) Expected warranty cost for high-quality laptop $= 0.10 \times 6\,000 = \text{HK}\$600$.
-Expected warranty cost for low-quality laptop $= 0.50 \times 3\,000 = \text{HK}\$1\,500$.
+(c) Expected warranty cost for high-quality laptop $= 0.10 \times 6\,000 = \text{'\{'}HK{'\}'}\$600$.
+Expected warranty cost for low-quality laptop $= 0.50 \times 3\,000 = \text{'\{'}HK{'\}'}\$1\,500$.
 
 (d) The warranty can serve as a signalling device if the cost of offering it differs between types. The key condition for a separating equilibrium is that the warranty cost for low-quality producers must be high enough that they prefer not to offer it.
 

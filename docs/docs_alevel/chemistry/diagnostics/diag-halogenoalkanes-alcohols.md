@@ -29,18 +29,18 @@ Consider the reaction of 1-bromobutane and 2-bromo-2-methylpropane with sodium h
 
 (b)
 
-**1-bromobutane (SN2):** $\text{rate} = k[\text{CH}_3\text{CH}_2\text{CH}_2\text{CH}_2\text{Br}][\text{OH}^-]$
+**1-bromobutane (SN2):** $\text{'\{'}rate{'\}'} = k[\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}Br{'\}'}][\text{'\{'}OH{'\}'}^-]$
 
 Both the halogenoalkane and the nucleophile are involved in the rate-determining (and only) step. This is **second order** overall.
 
-**2-bromo-2-methylpropane (SN1):** $\text{rate} = k[(\text{CH}_3)_3\text{CBr}]$
+**2-bromo-2-methylpropane (SN1):** $\text{'\{'}rate{'\}'} = k[(\text{'\{'}CH{'\}'}_3)_3\text{'\{'}CBr{'\}'}]$
 
-Only the halogenoalkane is involved in the slow step (loss of Br$^-$ to form the carbocation). The nucleophile ($\text{OH}^-$) reacts in a fast subsequent step. This is **first order** overall.
+Only the halogenoalkane is involved in the slow step (loss of Br$^-$ to form the carbocation). The nucleophile ($\text{'\{'}OH{'\}'}^-$) reacts in a fast subsequent step. This is **first order** overall.
 
-(c) Aqueous ethanol is a **polar protic solvent**, which can dissolve both the ionic nucleophile (NaOH, $\text{OH}^-$) and the organic halogenoalkane. The polarity stabilises the transition state in both mechanisms:
+(c) Aqueous ethanol is a **polar protic solvent**, which can dissolve both the ionic nucleophile (NaOH, $\text{'\{'}OH{'\}'}^-$) and the organic halogenoalkane. The polarity stabilises the transition state in both mechanisms:
 
 - **SN2:** The polar solvent stabilises the negatively charged nucleophile and the partial charges in the transition state.
-- **SN1:** The polar solvent stabilises the charged carbocation intermediate and the leaving group ($\text{Br}^-$).
+- **SN1:** The polar solvent stabilises the charged carbocation intermediate and the leaving group ($\text{'\{'}Br{'\}'}^-$).
 
 The protic nature (ability to donate hydrogen bonds) is particularly important for SN1, where hydrogen bonding helps stabilise the developing ions.
 
@@ -61,18 +61,18 @@ The protic nature (ability to donate hydrogen bonds) is particularly important f
 
 (a) **Substitution (SN1 or SN2 depending on conditions):**
 
-$$\text{CH}_3\text{CHBrCH}_2\text{CH}_3 + \text{OH}^- \to \text{CH}_3\text{CH}(\text{OH})\text{CH}_2\text{CH}_3 + \text{Br}^-$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CHBrCH{'\}'}_2\text{'\{'}CH{'\}'}_3 + \text{'\{'}OH{'\}'}^- \to \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}(\text{'\{'}OH{'\}'})\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_3 + \text{'\{'}Br{'\}'}^-$$
 
 Product: **butan-2-ol**
 
 **Elimination (E1 or E2):**
 
-$$\text{CH}_3\text{CHBrCH}_2\text{CH}_3 + \text{OH}^- \to \text{CH}_3\text{CH}=\text{CHCH}_3 + \text{H}_2\text{O} + \text{Br}^-$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CHBrCH{'\}'}_2\text{'\{'}CH{'\}'}_3 + \text{'\{'}OH{'\}'}^- \to \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}=\text{'\{'}CHCH{'\}'}_3 + \text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'} + \text{'\{'}Br{'\}'}^-$$
 
 Product: **but-2-ene** (major) and possibly **but-1-ene** (minor, via removal of a proton from the terminal carbon)
 
 (b) Conditions favouring **elimination**:
-- **Concentrated NaOH** (or $\text{KOH}$ in ethanol): A high concentration of base favours elimination because the base abstracts a proton (a bimolecular process that benefits from high [base])
+- **Concentrated NaOH** (or $\text{'\{'}KOH{'\}'}$ in ethanol): A high concentration of base favours elimination because the base abstracts a proton (a bimolecular process that benefits from high [base])
 - **High temperature**: Elimination has a higher activation energy than substitution (the transition state for elimination is less stable), so higher temperatures favour elimination (the proportion of product from elimination increases)
 - **Use of ethanol as solvent** rather than water: Ethanol favours elimination because it is less polar than water and stabilises the ionic intermediates of substitution less effectively
 
@@ -96,7 +96,7 @@ Conditions favouring **substitution**:
 
 **Question:**
 
-Three alcohols with the molecular formula $\text{C}_4\text{H}_{10}\text{O}$ are: butan-1-ol (primary), butan-2-ol (secondary), and 2-methylpropan-2-ol (tertiary).
+Three alcohols with the molecular formula $\text{'\{'}C{'\}'}_4\text{'\{'}H{'\}'}_{10}\text{'\{'}O{'\}'}$ are: butan-1-ol (primary), butan-2-ol (secondary), and 2-methylpropan-2-ol (tertiary).
 
 (a) Describe the products formed when each alcohol is oxidised with acidified potassium dichromate(VI) under (i) gentle conditions (distillation) and (ii) vigorous conditions (reflux).
 
@@ -109,13 +109,13 @@ Three alcohols with the molecular formula $\text{C}_4\text{H}_{10}\text{O}$ are:
 (a)
 
 **Butan-1-ol (primary):**
-- (i) Gentle oxidation (distillation): **butanal** ($\text{CH}_3\text{CH}_2\text{CH}_2\text{CHO}$)
-- (ii) Vigorous oxidation (reflux): **butanoic acid** ($\text{CH}_3\text{CH}_2\text{CH}_2\text{COOH}$)
+- (i) Gentle oxidation (distillation): **butanal** ($\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}CHO{'\}'}$)
+- (ii) Vigorous oxidation (reflux): **butanoic acid** ($\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}COOH{'\}'}$)
 
 Primary alcohols can be oxidised to aldehydes (which can be further oxidised to carboxylic acids). Distillation removes the volatile aldehyde before further oxidation.
 
 **Butan-2-ol (secondary):**
-- (i) and (ii): **butanone** ($\text{CH}_3\text{COCH}_2\text{CH}_3$)
+- (i) and (ii): **butanone** ($\text{'\{'}CH{'\}'}_3\text{'\{'}COCH{'\}'}_2\text{'\{'}CH{'\}'}_3$)
 
 Secondary alcohols are oxidised to ketones only. Ketones are resistant to further oxidation because there is no C--H bond adjacent to the carbonyl for the oxidising agent to attack. Both gentle and vigorous conditions give the same product.
 
@@ -150,7 +150,7 @@ Alternatively, test with Fehling's solution: aldehyde gives a red precipitate; k
 
 (b) For the step involving the formation of the alcohol, explain whether the mechanism is SN1 or SN2 and describe the evidence that supports this.
 
-(c) The first step has a rate constant $k = 4.0 \times 10^{-5}\,\text{mol}^{-1}\text{ dm}^3\text{ s}^{-1}$ at $25\,^\circ\text{C}$ and $1.6 \times 10^{-4}\,\text{mol}^{-1}\text{ dm}^3\text{ s}^{-1}$ at $35\,^\circ\text{C}$. Calculate the activation energy for this step.
+(c) The first step has a rate constant $k = 4.0 \times 10^{-5}\,\text{'\{'}mol{'\}'}^{-1}\text{'\{'} dm{'\}'}^3\text{'\{'} s{'\}'}^{-1}$ at $25\,^\circ\text{'\{'}C{'\}'}$ and $1.6 \times 10^{-4}\,\text{'\{'}mol{'\}'}^{-1}\text{'\{'} dm{'\}'}^3\text{'\{'} s{'\}'}^{-1}$ at $35\,^\circ\text{'\{'}C{'\}'}$. Calculate the activation energy for this step.
 
 **Solution:**
 
@@ -158,28 +158,28 @@ Alternatively, test with Fehling's solution: aldehyde gives a red precipitate; k
 
 **Step 1:** 1-chlorobutane to butan-1-ol (nucleophilic substitution)
 
-$$\text{CH}_3\text{CH}_2\text{CH}_2\text{CH}_2\text{Cl} + \text{NaOH}(aq) \to \text{CH}_3\text{CH}_2\text{CH}_2\text{CH}_2\text{OH} + \text{NaCl}$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}Cl{'\}'} + \text{'\{'}NaOH{'\}'}(aq) \to \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}OH{'\}'} + \text{'\{'}NaCl{'\}'}$$
 
 Conditions: Reflux with dilute aqueous NaOH.
 
 **Step 2:** Butan-1-ol to butanal (oxidation)
 
-$$\text{CH}_3\text{CH}_2\text{CH}_2\text{CH}_2\text{OH} \xrightarrow{[\text{O}], \text{distillation}} \text{CH}_3\text{CH}_2\text{CH}_2\text{CHO} + \text{H}_2\text{O}$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}OH{'\}'} \xrightarrow{[\text{'\{'}O{'\}'}], \text{'\{'}distillation{'\}'}} \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}CHO{'\}'} + \text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'}$$
 
 Conditions: Acidified potassium dichromate(VI), distillation.
 
 **Step 3:** Butanal to butanoic acid (further oxidation)
 
-$$\text{CH}_3\text{CH}_2\text{CH}_2\text{CHO} \xrightarrow{[\text{O}], \text{reflux}} \text{CH}_3\text{CH}_2\text{CH}_2\text{COOH}$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}CHO{'\}'} \xrightarrow{[\text{'\{'}O{'\}'}], \text{'\{'}reflux{'\}'}} \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}CH{'\}'}_2\text{'\{'}COOH{'\}'}$$
 
 Conditions: Acidified potassium dichromate(VI), reflux.
 
 (b) The substitution of 1-chlorobutane with NaOH proceeds via **SN2**. Evidence:
 
-1. The rate equation would be second order: $\text{rate} = k[\text{1-chlorobutane}][\text{OH}^-]$ (both species involved in rate-determining step).
+1. The rate equation would be second order: $\text{'\{'}rate{'\}'} = k[\text{'\{'}1-chlorobutane{'\}'}][\text{'\{'}OH{'\}'}^-]$ (both species involved in rate-determining step).
 2. Primary halogenoalkanes cannot form stable carbocations, so SN1 is not feasible.
 3. The product has **inverted stereochemistry** at the chiral centre (if one were present) -- Walden inversion.
-4. The rate constant has units of $\text{mol}^{-1}\text{ dm}^3\text{ s}^{-1}$, confirming second-order kinetics.
+4. The rate constant has units of $\text{'\{'}mol{'\}'}^{-1}\text{'\{'} dm{'\}'}^3\text{'\{'} s{'\}'}^{-1}$, confirming second-order kinetics.
 
 (c) Using the Arrhenius equation:
 
@@ -191,18 +191,18 @@ $$\ln(4.0) = \frac{E_a}{8.31} \times 1.096 \times 10^{-4}$$
 
 $$1.386 = \frac{E_a \times 1.096 \times 10^{-4}}{8.31}$$
 
-$$E_a = \frac{1.386 \times 8.31}{1.096 \times 10^{-4}} = \frac{11.52}{1.096 \times 10^{-4}} = 105100\,\text{J mol}^{-1} = 105\,\text{kJ mol}^{-1}$$
+$$E_a = \frac{1.386 \times 8.31}{1.096 \times 10^{-4}} = \frac{11.52}{1.096 \times 10^{-4}} = 105100\,\text{'\{'}J mol{'\}'}^{-1} = 105\,\text{'\{'}kJ mol{'\}'}^{-1}$$
 
 ---
 ### IT-2: Halogenoalkane Reactivity and Leaving Group Ability (with Electrochemistry)
 
 **Question:**
 
-The reactivity of halogenoalkanes in nucleophilic substitution follows the order: $\text{RI} \gt \text{RBr} \gt \text{RCl} \gt \text{RF}$.
+The reactivity of halogenoalkanes in nucleophilic substitution follows the order: $\text{'\{'}RI{'\}'} \gt \text{'\{'}RBr{'\}'} \gt \text{'\{'}RCl{'\}'} \gt \text{'\{'}RF{'\}'}$.
 
 (a) Explain this trend in terms of bond enthalpy and polarisability.
 
-(b) The hydrolysis of 1-bromopropane with NaOH is a second-order reaction. An experiment shows that doubling the concentration of 1-bromopropane doubles the rate. Explain what would happen to the rate if the temperature is increased from $25\,^\circ\text{C}$ to $50\,^\circ\text{C}$, assuming the activation energy is $85\,\text{kJ mol}^{-1}$.
+(b) The hydrolysis of 1-bromopropane with NaOH is a second-order reaction. An experiment shows that doubling the concentration of 1-bromopropane doubles the rate. Explain what would happen to the rate if the temperature is increased from $25\,^\circ\text{'\{'}C{'\}'}$ to $50\,^\circ\text{'\{'}C{'\}'}$, assuming the activation energy is $85\,\text{'\{'}kJ mol{'\}'}^{-1}$.
 
 (c) Explain why fluoroalkanes are much less reactive than iodoalkanes, despite the C--F bond being the most polar.
 
@@ -210,7 +210,7 @@ The reactivity of halogenoalkanes in nucleophilic substitution follows the order
 
 (a) The trend in reactivity is explained by two factors:
 
-**Bond enthalpy:** C--I ($234\,\text{kJ mol}^{-1}$) $\lt$ C--Br ($285\,\text{kJ mol}^{-1}$) $\lt$ C--Cl ($339\,\text{kJ mol}^{-1}$) $\lt$ C--F ($485\,\text{kJ mol}^{-1}$). The weaker the bond, the easier it is to break in the rate-determining step. C--I bonds are weakest and break most readily.
+**Bond enthalpy:** C--I ($234\,\text{'\{'}kJ mol{'\}'}^{-1}$) $\lt$ C--Br ($285\,\text{'\{'}kJ mol{'\}'}^{-1}$) $\lt$ C--Cl ($339\,\text{'\{'}kJ mol{'\}'}^{-1}$) $\lt$ C--F ($485\,\text{'\{'}kJ mol{'\}'}^{-1}$). The weaker the bond, the easier it is to break in the rate-determining step. C--I bonds are weakest and break most readily.
 
 **Polarisability:** The iodide ion is large and has a diffuse electron cloud that is easily polarised. In the transition state, the C--I bond is stretched and the developing negative charge on iodine is better stabilised by its polarisability. Fluorine is small and has a concentrated charge that is not easily polarised.
 
@@ -224,7 +224,7 @@ The rate increases by a factor of approximately **14**. This dramatic increase s
 
 (c) Despite the C--F bond being the most polar (largest electronegativity difference), fluoroalkanes are the least reactive because:
 
-1. **Bond strength:** The C--F bond is very strong ($485\,\text{kJ mol}^{-1}$), making it very difficult to break. Bond enthalpy dominates over bond polarity in determining reactivity.
+1. **Bond strength:** The C--F bond is very strong ($485\,\text{'\{'}kJ mol{'\}'}^{-1}$), making it very difficult to break. Bond enthalpy dominates over bond polarity in determining reactivity.
 
 2. **Polarisability:** Fluoride is very small with a tightly held electron cloud. It is the **least polarisable** halide ion, meaning it cannot stabilise the partial negative charge that develops on the leaving group in the transition state.
 
@@ -251,23 +251,23 @@ Propose a synthesis of but-2-ene starting from ethanol. Your synthesis should in
 
 **Step 1:** Ethanol to bromoethane (substitution)
 
-$$\text{CH}_3\text{CH}_2\text{OH} \xrightarrow{\text{PBr}_3\text{ or conc. H}_2\text{SO}_4\text{/NaBr}} \text{CH}_3\text{CH}_2\text{Br}$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}OH{'\}'} \xrightarrow{\text{'\{'}PBr{'\}'}_3\text{'\{'} or conc. H{'\}'}_2\text{'\{'}SO{'\}'}_4\text{'\{'}/NaBr{'\}'}} \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}Br{'\}'}$$
 
-Conditions: $\text{PBr}_3$ or concentrated $\text{H}_2\text{SO}_4$ with NaBr.
+Conditions: $\text{'\{'}PBr{'\}'}_3$ or concentrated $\text{'\{'}H{'\}'}_2\text{'\{'}SO{'\}'}_4$ with NaBr.
 
 **Step 2:** Bromoethane to ethyne (double elimination -- not suitable for A-Level). Alternative route:
 
 **Step 1 (revised):** Ethanol to ethene (elimination)
 
-$$\text{CH}_3\text{CH}_2\text{OH} \xrightarrow{\text{conc. H}_2\text{SO}_4, 170\,^\circ\text{C}} \text{CH}_2=\text{CH}_2 + \text{H}_2\text{O}$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}OH{'\}'} \xrightarrow{\text{'\{'}conc. H{'\}'}_2\text{'\{'}SO{'\}'}_4, 170\,^\circ\text{'\{'}C{'\}'}} \text{'\{'}CH{'\}'}_2=\text{'\{'}CH{'\}'}_2 + \text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'}$$
 
 **Step 2:** Ethene to bromoethane (addition of HBr)
 
-$$\text{CH}_2=\text{CH}_2 + \text{HBr} \to \text{CH}_3\text{CH}_2\text{Br}$$
+$$\text{'\{'}CH{'\}'}_2=\text{'\{'}CH{'\}'}_2 + \text{'\{'}HBr{'\}'} \to \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}Br{'\}'}$$
 
 **Step 3:** Bromoethane to ethanol (substitution)
 
-$$\text{CH}_3\text{CH}_2\text{Br} + \text{NaOH}(aq) \xrightarrow{\text{reflux}} \text{CH}_3\text{CH}_2\text{OH} + \text{NaBr}$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}Br{'\}'} + \text{'\{'}NaOH{'\}'}(aq) \xrightarrow{\text{'\{'}reflux{'\}'}} \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}OH{'\}'} + \text{'\{'}NaBr{'\}'}$$
 
 This doesn't get us to but-2-ene. Let me revise:
 
@@ -277,21 +277,21 @@ This doesn't get us to but-2-ene. Let me revise:
 
 **Step 1:** Ethanol to ethene (elimination)
 
-$$\text{CH}_3\text{CH}_2\text{OH} \xrightarrow{\text{conc. H}_2\text{SO}_4, 170\,^\circ\text{C}} \text{CH}_2=\text{CH}_2 + \text{H}_2\text{O}$$
+$$\text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}_2\text{'\{'}OH{'\}'} \xrightarrow{\text{'\{'}conc. H{'\}'}_2\text{'\{'}SO{'\}'}_4, 170\,^\circ\text{'\{'}C{'\}'}} \text{'\{'}CH{'\}'}_2=\text{'\{'}CH{'\}'}_2 + \text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'}$$
 
 **Step 2:** Ethene to 1,2-dibromoethane (addition)
 
-$$\text{CH}_2=\text{CH}_2 + \text{Br}_2 \to \text{CH}_2\text{BrCH}_2\text{Br}$$
+$$\text{'\{'}CH{'\}'}_2=\text{'\{'}CH{'\}'}_2 + \text{'\{'}Br{'\}'}_2 \to \text{'\{'}CH{'\}'}_2\text{'\{'}BrCH{'\}'}_2\text{'\{'}Br{'\}'}$$
 
 **Step 3:** 1,2-dibromoethane to but-2-ene (double elimination)
 
-$$\text{CH}_2\text{BrCH}_2\text{Br} + 2\text{KOH}(\text{ethanolic}) \xrightarrow{\text{heat}} \text{CH}_3\text{CH}=\text{CHCH}_3 + 2\text{KBr} + 2\text{H}_2\text{O}$$
+$$\text{'\{'}CH{'\}'}_2\text{'\{'}BrCH{'\}'}_2\text{'\{'}Br{'\}'} + 2\text{'\{'}KOH{'\}'}(\text{'\{'}ethanolic{'\}'}) \xrightarrow{\text{'\{'}heat{'\}'}} \text{'\{'}CH{'\}'}_3\text{'\{'}CH{'\}'}=\text{'\{'}CHCH{'\}'}_3 + 2\text{'\{'}KBr{'\}'} + 2\text{'\{'}H{'\}'}_2\text{'\{'}O{'\}'}$$
 
 Conditions: Hot, concentrated, ethanolic KOH (elimination conditions). Two successive eliminations occur.
 
 (b) The key step is the **elimination** of 1,2-dibromoethane. With hot ethanolic KOH:
 
-**First elimination:** KOH abstracts a proton from one carbon while Br$^-$ leaves from the adjacent carbon (E2 mechanism), forming bromoethene ($\text{CH}_2=\text{CHBr}$).
+**First elimination:** KOH abstracts a proton from one carbon while Br$^-$ leaves from the adjacent carbon (E2 mechanism), forming bromoethene ($\text{'\{'}CH{'\}'}_2=\text{'\{'}CHBr{'\}'}$).
 
 **Second elimination:** A second equivalent of KOH abstracts the proton from the remaining $-$CHBr group while Br$^-$ leaves, forming buta-1,3-diene or rearranging.
 
@@ -303,11 +303,11 @@ The most straightforward A-Level route to but-2-ene from ethanol is not possible
 
 (c) The student's approach of converting ethanol to ethene then dimerising to but-2-ene is **not feasible** at A-Level:
 
-- Ethene can be produced from ethanol (dehydration with conc. $\text{H}_2\text{SO}_4$)
+- Ethene can be produced from ethanol (dehydration with conc. $\text{'\{'}H{'\}'}_2\text{'\{'}SO{'\}'}_4$)
 - However, **dimerisation of ethene to but-2-ene is not a standard A-Level reaction**. Industrial dimerisation requires specific catalysts (e.g., nickel complexes) and gives predominantly but-1-ene, not but-2-ene. The reaction conditions are beyond A-Level chemistry.
 - Additionally, ethene dimerisation produces but-1-ene, which would then need isomerisation to but-2-ene.
 
-A more practical A-Level approach: start from butan-2-ol (dehydration with $\text{H}_2\text{SO}_4$) to give but-2-ene directly. But if starting from ethanol, the synthesis requires building a 4-carbon chain, which at A-Level level is best done through a Grignard reaction (not on all syllabi) or by using ethanoic acid and reducing.
+A more practical A-Level approach: start from butan-2-ol (dehydration with $\text{'\{'}H{'\}'}_2\text{'\{'}SO{'\}'}_4$) to give but-2-ene directly. But if starting from ethanol, the synthesis requires building a 4-carbon chain, which at A-Level level is best done through a Grignard reaction (not on all syllabi) or by using ethanoic acid and reducing.
 
 ---
 
@@ -319,7 +319,7 @@ A more practical A-Level approach: start from butan-2-ol (dehydration with $\tex
 
 **Solution:**
 
-Use **acidified potassium dichromate(VI)** ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7/\mathrm{H}^+$) as the oxidising agent (1 mark):
+Use **acidified potassium dichromate(VI)** ($\mathrm{'\{'}K{'\}'}_2\mathrm{'\{'}Cr{'\}'}_2\mathrm{'\{'}O{'\}'}_7/\mathrm{'\{'}H{'\}'}^+$) as the oxidising agent (1 mark):
 
 - **Propan-1-ol** (primary alcohol): Oxidised to propanal (orange to green, can be distilled off before further oxidation). If heated under reflux, oxidised to propanoic acid (orange to green) (1 mark).
 
@@ -327,19 +327,19 @@ Use **acidified potassium dichromate(VI)** ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}
 
 - **2-Methylpropan-2-ol** (tertiary alcohol): **No reaction.** The solution remains orange. Tertiary alcohols are resistant to oxidation because there is no hydrogen atom on the carbon bearing the OH group (1 mark).
 
-Alternatively, the **Lucas test** (conc. $\mathrm{HCl}$ with $\mathrm{ZnCl}_2$) distinguishes by reaction rate:
+Alternatively, the **Lucas test** (conc. $\mathrm{'\{'}HCl{'\}'}$ with $\mathrm{'\{'}ZnCl{'\}'}_2$) distinguishes by reaction rate:
 - Tertiary: immediate cloudiness (forms tertiary chloride, insoluble)
 - Secondary: cloudiness within 5 minutes
 - Primary: no cloudiness at room temperature (1 mark).
 
 #### UT-5: Elimination Conditions
 
-**Question:** Explain why using a concentrated solution of $\mathrm{NaOH}$ in ethanol at high temperature favours elimination over substitution for 2-bromobutane.
+**Question:** Explain why using a concentrated solution of $\mathrm{'\{'}NaOH{'\}'}$ in ethanol at high temperature favours elimination over substitution for 2-bromobutane.
 
 **Solution:**
 
-Elimination requires $\mathrm{OH}^-$ to act as a **base** (abstracting a $\beta$-hydrogen) rather than as a nucleophile (attacking the carbon) (1 mark).
+Elimination requires $\mathrm{'\{'}OH{'\}'}^-$ to act as a **base** (abstracting a $\beta$-hydrogen) rather than as a nucleophile (attacking the carbon) (1 mark).
 
-A **concentrated** solution of $\mathrm{NaOH}$ provides a high concentration of $\mathrm{OH}^-$, increasing the rate of both substitution and elimination. However, the **ethanol solvent** is a polar protic solvent that stabilises the charged transition state of elimination and does not solvate the nucleophile as effectively as water would (1 mark).
+A **concentrated** solution of $\mathrm{'\{'}NaOH{'\}'}$ provides a high concentration of $\mathrm{'\{'}OH{'\}'}^-$, increasing the rate of both substitution and elimination. However, the **ethanol solvent** is a polar protic solvent that stabilises the charged transition state of elimination and does not solvate the nucleophile as effectively as water would (1 mark).
 
 **High temperature** favours elimination because elimination has a higher activation energy than substitution (it involves breaking a C--H bond in addition to the C--Br bond). According to the Arrhenius equation, reactions with higher $E_a$ are more sensitive to temperature increases, so the rate of elimination increases more than the rate of substitution as temperature rises (1 mark).

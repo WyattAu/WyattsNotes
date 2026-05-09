@@ -174,7 +174,7 @@ A person produces 150 g of sweat per hour during exercise in a hot environment. 
 <details>
 <summary>Solution</summary>
 
-Heat loss = mass of sweat $\times$ latent heat of vaporisation = $150 \mathrm{ g} \times 2.4 \mathrm{ kJ/g} = 360 \mathrm{ kJ/hour}$
+Heat loss = mass of sweat $\times$ latent heat of vaporisation = $150 \mathrm{'\{'} g{'\}'} \times 2.4 \mathrm{'\{'} kJ/g{'\}'} = 360 \mathrm{'\{'} kJ/hour{'\}'}$
 
 This is a significant contribution to heat loss. The basal metabolic rate produces approximately 300 kJ/hour, so sweating during exercise can remove more heat than the body produces at rest. This explains why adequate hydration is critical during exercise in hot environments -- sweat that is not replaced leads to dehydration and reduced blood volume, impairing thermoregulation.
 
@@ -229,9 +229,9 @@ The nephron is the functional unit of the kidney. Each kidney contains approxima
 | Region                         | Function                                                                                                                                      |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Renal (Bowman's) capsule       | Ultrafiltration: high blood pressure in the glomerulus forces small molecules (water, glucose, urea, ions) out of the blood into the capsule  |
-| Proximal convoluted tubule (PCT) | Selective reabsorption: reabsorbs ALL glucose, ALL amino acids, approximately 85% of water, and most $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ by active transport and co-transport |
-| Loop of Henle                  | Creates a concentration gradient in the medulla via the counter-current multiplier. Descending limb: permeable to water (water out). Ascending limb: actively transports $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ out (impermeable to water). |
-| Distal convoluted tubule (DCT) | Fine-tuning of water and ion balance; regulated by aldosterone ($\mathrm{Na}^+$ reabsorption)                                              |
+| Proximal convoluted tubule (PCT) | Selective reabsorption: reabsorbs ALL glucose, ALL amino acids, approximately 85% of water, and most $\mathrm{'\{'}Na{'\}'}^+$ and $\mathrm{'\{'}Cl{'\}'}^-$ by active transport and co-transport |
+| Loop of Henle                  | Creates a concentration gradient in the medulla via the counter-current multiplier. Descending limb: permeable to water (water out). Ascending limb: actively transports $\mathrm{'\{'}Na{'\}'}^+$ and $\mathrm{'\{'}Cl{'\}'}^-$ out (impermeable to water). |
+| Distal convoluted tubule (DCT) | Fine-tuning of water and ion balance; regulated by aldosterone ($\mathrm{'\{'}Na{'\}'}^+$ reabsorption)                                              |
 | Collecting duct                | Regulated by ADH: water reabsorption depends on ADH level; permeability controlled by aquaporin channels                                       |
 
 ### The Counter-Current Multiplier
@@ -242,8 +242,8 @@ The loop of Henle creates and maintains a concentration gradient in the medulla,
 
 1. **Descending limb:** Water passes out by osmosis into the increasingly concentrated medullary tissue fluid. The filtrate becomes more concentrated as it descends.
 2. **Hairpin turn:** At the bottom of the loop, the filtrate is at its most concentrated.
-3. **Ascending limb (thin segment):** $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ diffuse out passively into the medullary tissue fluid.
-4. **Ascending limb (thick segment):** $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ are actively transported OUT of the ascending limb into the medullary tissue fluid. The ascending limb is impermeable to water, so the filtrate becomes increasingly dilute as it ascends.
+3. **Ascending limb (thin segment):** $\mathrm{'\{'}Na{'\}'}^+$ and $\mathrm{'\{'}Cl{'\}'}^-$ diffuse out passively into the medullary tissue fluid.
+4. **Ascending limb (thick segment):** $\mathrm{'\{'}Na{'\}'}^+$ and $\mathrm{'\{'}Cl{'\}'}^-$ are actively transported OUT of the ascending limb into the medullary tissue fluid. The ascending limb is impermeable to water, so the filtrate becomes increasingly dilute as it ascends.
 5. **Counter-current flow:** Because the descending and ascending limbs flow in opposite directions (counter-current), the active transport of salt from the ascending limb continually adds to the concentration of the medullary tissue fluid adjacent to the descending limb. This amplifies the gradient (multiplier effect).
 
 **Purpose of the medullary concentration gradient:** The concentrated medullary tissue fluid provides the osmotic gradient that drives water reabsorption from the collecting duct when ADH is present. Without this gradient, the kidneys could not produce concentrated urine.
@@ -262,31 +262,31 @@ A buffer resists changes in pH by minimising the effect of adding acid or alkali
 
 **The bicarbonate buffer system:**
 
-$$\mathrm{H}^+ + \mathrm{HCO}_3^- \rightleftharpoons \mathrm{H}_2\mathrm{CO}_3 \rightleftharpoons \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$$
+$$\mathrm{'\{'}H{'\}'}^+ + \mathrm{'\{'}HCO{'\}'}_3^- \rightleftharpoons \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}CO{'\}'}_3 \rightleftharpoons \mathrm{'\{'}CO{'\}'}_2 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$$
 
-- When $\mathrm{H}^+$ ions are added (acid): they combine with $\mathrm{HCO}_3^-$ to form $\mathrm{H}_2\mathrm{CO}_3$, which dissociates into $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$. The $\mathrm{CO}_2$ is exhaled by the lungs.
-- When $\mathrm{H}^+$ ions are removed (alkali): $\mathrm{H}_2\mathrm{CO}_3$ dissociates to release more $\mathrm{H}^+$, restoring pH.
+- When $\mathrm{'\{'}H{'\}'}^+$ ions are added (acid): they combine with $\mathrm{'\{'}HCO{'\}'}_3^-$ to form $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}CO{'\}'}_3$, which dissociates into $\mathrm{'\{'}CO{'\}'}_2$ and $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$. The $\mathrm{'\{'}CO{'\}'}_2$ is exhaled by the lungs.
+- When $\mathrm{'\{'}H{'\}'}^+$ ions are removed (alkali): $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}CO{'\}'}_3$ dissociates to release more $\mathrm{'\{'}H{'\}'}^+$, restoring pH.
 
 **Haemoglobin as a buffer:**
 
-- Haemoglobin can bind $\mathrm{H}^+$ ions, acting as a buffer against acidification.
-- In the tissues: $\mathrm{CO}_2$ diffuses into red blood cells and is converted to $\mathrm{HCO}_3^-$ and $\mathrm{H}^+$ by carbonic anhydrase. Haemoglobin binds the $\mathrm{H}^+$, preventing a large pH drop.
-- In the lungs: the reaction reverses; $\mathrm{H}^+$ is released, combines with $\mathrm{HCO}_3^-$, and $\mathrm{CO}_2$ is exhaled.
+- Haemoglobin can bind $\mathrm{'\{'}H{'\}'}^+$ ions, acting as a buffer against acidification.
+- In the tissues: $\mathrm{'\{'}CO{'\}'}_2$ diffuses into red blood cells and is converted to $\mathrm{'\{'}HCO{'\}'}_3^-$ and $\mathrm{'\{'}H{'\}'}^+$ by carbonic anhydrase. Haemoglobin binds the $\mathrm{'\{'}H{'\}'}^+$, preventing a large pH drop.
+- In the lungs: the reaction reverses; $\mathrm{'\{'}H{'\}'}^+$ is released, combines with $\mathrm{'\{'}HCO{'\}'}_3^-$, and $\mathrm{'\{'}CO{'\}'}_2$ is exhaled.
 
 ### Respiratory Regulation of pH
 
-- Increased $\mathrm{CO}_2$ in the blood produces carbonic acid, lowering pH
+- Increased $\mathrm{'\{'}CO{'\}'}_2$ in the blood produces carbonic acid, lowering pH
 - Chemoreceptors detect the decrease in pH and stimulate the ventilation centre in the medulla
-- Breathing rate and depth increase, exhaling more $\mathrm{CO}_2$
+- Breathing rate and depth increase, exhaling more $\mathrm{'\{'}CO{'\}'}_2$
 - Blood pH rises back to normal
-- This is a rapid response (seconds to minutes) but can only compensate for changes related to $\mathrm{CO}_2$
+- This is a rapid response (seconds to minutes) but can only compensate for changes related to $\mathrm{'\{'}CO{'\}'}_2$
 
 ### Renal Regulation of pH
 
 The kidneys provide a slower but more powerful mechanism for pH regulation (takes hours to days):
 
-- In acidosis (low pH): the kidneys excrete more $\mathrm{H}^+$ ions in the urine and reabsorb more $\mathrm{HCO}_3^-$ into the blood. Ammonia ($\mathrm{NH}_3$) produced by the kidney tubule cells buffers $\mathrm{H}^+$ in the urine, forming ammonium ions ($\mathrm{NH}_4^+$) that are excreted.
-- In alkalosis (high pH): the kidneys excrete more $\mathrm{HCO}_3^-$ in the urine and reabsorb fewer $\mathrm{H}^+$ ions, allowing pH to decrease.
+- In acidosis (low pH): the kidneys excrete more $\mathrm{'\{'}H{'\}'}^+$ ions in the urine and reabsorb more $\mathrm{'\{'}HCO{'\}'}_3^-$ into the blood. Ammonia ($\mathrm{'\{'}NH{'\}'}_3$) produced by the kidney tubule cells buffers $\mathrm{'\{'}H{'\}'}^+$ in the urine, forming ammonium ions ($\mathrm{'\{'}NH{'\}'}_4^+$) that are excreted.
+- In alkalosis (high pH): the kidneys excrete more $\mathrm{'\{'}HCO{'\}'}_3^-$ in the urine and reabsorb fewer $\mathrm{'\{'}H{'\}'}^+$ ions, allowing pH to decrease.
 
 ---
 
@@ -347,13 +347,13 @@ A patient with uncontrolled Type 1 diabetes has a fasting blood glucose concentr
 <details>
 <summary>Solution</summary>
 
-(a) Glucose filtered per day = concentration $\times$ volume = $320 \mathrm{ mg/100 cm}^3 \times 180 \times 10 \mathrm{ dm}^3$
+(a) Glucose filtered per day = concentration $\times$ volume = $320 \mathrm{'\{'} mg/100 cm{'\}'}^3 \times 180 \times 10 \mathrm{'\{'} dm{'\}'}^3$
 
-$= 320 \times 10 \mathrm{ mg/dm}^3 \times 180 \mathrm{ dm}^3 = 576\,000 \mathrm{ mg/day} = 576 \mathrm{ g/day}$
+$= 320 \times 10 \mathrm{'\{'} mg/dm{'\}'}^3 \times 180 \mathrm{'\{'} dm{'\}'}^3 = 576\,000 \mathrm{'\{'} mg/day{'\}'} = 576 \mathrm{'\{'} g/day{'\}'}$
 
-(b) Maximum glucose reabsorption = $375 \mathrm{ mg/min} \times 60 \times 24 = 540\,000 \mathrm{ mg/day} = 540 \mathrm{ g/day}$
+(b) Maximum glucose reabsorption = $375 \mathrm{'\{'} mg/min{'\}'} \times 60 \times 24 = 540\,000 \mathrm{'\{'} mg/day{'\}'} = 540 \mathrm{'\{'} g/day{'\}'}$
 
-(c) Glucose excreted = glucose filtered - glucose reabsorbed = $576 - 540 = 36 \mathrm{ g/day}$
+(c) Glucose excreted = glucose filtered - glucose reabsorbed = $576 - 540 = 36 \mathrm{'\{'} g/day{'\}'}$
 
 (d) The excess glucose in the filtrate (36 g/day that is not reabsorbed) lowers the water potential of the tubule fluid. Less water is reabsorbed from the nephron by osmosis (because the water potential gradient between the tubule fluid and the blood is reduced). This produces a large volume of dilute urine (polyuria). The loss of excess water reduces blood volume and increases blood osmolarity, which stimulates osmoreceptors in the hypothalamus, triggering thirst (polydipsia).
 
@@ -371,7 +371,7 @@ $= 320 \times 10 \mathrm{ mg/dm}^3 \times 180 \mathrm{ dm}^3 = 576\,000 \mathrm{
 
 4. **Writing that muscle cells release glucose into the blood:** Muscle cells break down glycogen for their own use but CANNOT release free glucose because they lack glucose-6-phosphatase. Only the liver can release glucose into the blood.
 
-5. **Stating that both limbs of the loop of Henle are permeable to water:** Only the DESCENDING limb is permeable to water. The ASCENDING limb is impermeable to water but actively transports $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ out. This asymmetry is essential for creating the medullary concentration gradient.
+5. **Stating that both limbs of the loop of Henle are permeable to water:** Only the DESCENDING limb is permeable to water. The ASCENDING limb is impermeable to water but actively transports $\mathrm{'\{'}Na{'\}'}^+$ and $\mathrm{'\{'}Cl{'\}'}^-$ out. This asymmetry is essential for creating the medullary concentration gradient.
 
 6. **Writing that high ADH causes dilute urine:** The opposite is true. High ADH causes concentrated urine (more water is reabsorbed). Low ADH causes dilute urine (more water is excreted).
 
@@ -379,7 +379,7 @@ $= 320 \times 10 \mathrm{ mg/dm}^3 \times 180 \mathrm{ dm}^3 = 576\,000 \mathrm{
 
 8. **Writing that temperature regulation is controlled by hormones alone:** Temperature regulation is primarily controlled by the NERVOUS system (hypothalamus detects changes and sends nerve impulses to effectors). Thyroxine and adrenaline play supporting roles in the cold response but are not the primary mechanism.
 
-9. **Confusing acidosis and alkalosis:** Acidosis = low blood pH (below 7.35); alkalosis = high blood pH (above 7.45). High $\mathrm{CO}_2$ causes acidosis (respiratory acidosis). Excessive vomiting (loss of stomach acid) can cause alkalosis (metabolic alkalosis).
+9. **Confusing acidosis and alkalosis:** Acidosis = low blood pH (below 7.35); alkalosis = high blood pH (above 7.45). High $\mathrm{'\{'}CO{'\}'}_2$ causes acidosis (respiratory acidosis). Excessive vomiting (loss of stomach acid) can cause alkalosis (metabolic alkalosis).
 
 10. **Writing that Type 2 diabetes involves no insulin production:** Type 2 diabetes involves insulin RESISTANCE, not absence of insulin. In the early stages, insulin levels may be normal or even elevated. Type 1 diabetes involves NO insulin production.
 
@@ -454,7 +454,7 @@ Gestational diabetes mellitus (GDM) is a form of diabetes that develops during p
 | Feature | Detail |
 |---------|--------|
 | Cause   | Graves' disease (autoimmune); thyroid nodule; excessive TSH |
-| Hormone | Excess thyroxine ($\mathrm{T}_4$) and triiodothyronine ($\mathrm{T}_3$) |
+| Hormone | Excess thyroxine ($\mathrm{'\{'}T{'\}'}_4$) and triiodothyronine ($\mathrm{'\{'}T{'\}'}_3$) |
 | Symptoms | Increased BMR; weight loss despite increased appetite; rapid heart rate (tachycardia); anxiety; tremor; heat intolerance; sweating; exophthalmos (bulging eyes in Graves' disease) |
 | Treatment | Anti-thyroid drugs (e.g., carbimazole); radioactive iodine; surgical removal of part or all of the thyroid |
 
@@ -463,7 +463,7 @@ Gestational diabetes mellitus (GDM) is a form of diabetes that develops during p
 | Feature | Detail |
 |---------|--------|
 | Cause   | Hashimoto's thyroiditis (autoimmune); iodine deficiency; surgical removal; radioactive iodine treatment |
-| Hormone | Insufficient thyroxine ($\mathrm{T}_4$) and triiodothyronine ($\mathrm{T}_3$) |
+| Hormone | Insufficient thyroxine ($\mathrm{'\{'}T{'\}'}_4$) and triiodothyronine ($\mathrm{'\{'}T{'\}'}_3$) |
 | Symptoms | Decreased BMR; weight gain; fatigue; cold intolerance; dry skin; slow heart rate (bradycardia); depression; myxoedema (swelling of skin and tissues) |
 | Treatment | Thyroxine replacement therapy (daily levothyroxine tablets) |
 
@@ -483,7 +483,7 @@ Gestational diabetes mellitus (GDM) is a form of diabetes that develops during p
 
 ### Worked Example: Endocrine Feedback Disorder
 
-A patient presents with weight gain, fatigue, cold intolerance, and a slow heart rate. Blood tests show elevated TSH and low $\mathrm{T}_4$. Explain the normal negative feedback loop controlling thyroid hormone levels and how it has been disrupted in this patient.
+A patient presents with weight gain, fatigue, cold intolerance, and a slow heart rate. Blood tests show elevated TSH and low $\mathrm{'\{'}T{'\}'}_4$. Explain the normal negative feedback loop controlling thyroid hormone levels and how it has been disrupted in this patient.
 
 <details>
 <summary>Solution</summary>
@@ -492,13 +492,13 @@ A patient presents with weight gain, fatigue, cold intolerance, and a slow heart
 
 1. The hypothalamus releases TRH (thyrotropin-releasing hormone), which stimulates the anterior pituitary
 2. The anterior pituitary releases TSH (thyroid-stimulating hormone), which stimulates the thyroid gland
-3. The thyroid gland produces and releases $\mathrm{T}_4$ (thyroxine) and $\mathrm{T}_3$ (triiodothyronine)
-4. $\mathrm{T}_4$ and $\mathrm{T}_3$ exert negative feedback on both the hypothalamus (reducing TRH) and the anterior pituitary (reducing TSH)
-5. When $\mathrm{T}_4$/$\mathrm{T}_3$ levels are high, TRH and TSH decrease; when levels are low, TRH and TSH increase
+3. The thyroid gland produces and releases $\mathrm{'\{'}T{'\}'}_4$ (thyroxine) and $\mathrm{'\{'}T{'\}'}_3$ (triiodothyronine)
+4. $\mathrm{'\{'}T{'\}'}_4$ and $\mathrm{'\{'}T{'\}'}_3$ exert negative feedback on both the hypothalamus (reducing TRH) and the anterior pituitary (reducing TSH)
+5. When $\mathrm{'\{'}T{'\}'}_4$/$\mathrm{'\{'}T{'\}'}_3$ levels are high, TRH and TSH decrease; when levels are low, TRH and TSH increase
 
 **In this patient (hypothyroidism):**
 
-The thyroid gland is not producing enough $\mathrm{T}_4$ (low $\mathrm{T}_4$). The reduced negative feedback means the pituitary continues to produce high levels of TSH (elevated TSH) in an attempt to stimulate the thyroid. The thyroid is unable to respond adequately (due to autoimmune destruction in Hashimoto's thyroiditis or other damage). The symptoms are explained by the lack of thyroxine: low BMR causes fatigue and weight gain; low $\mathrm{T}_3$ reduces metabolic heat production, causing cold intolerance; low thyroxine reduces the heart's sensitivity to catecholamines, causing bradycardia.
+The thyroid gland is not producing enough $\mathrm{'\{'}T{'\}'}_4$ (low $\mathrm{'\{'}T{'\}'}_4$). The reduced negative feedback means the pituitary continues to produce high levels of TSH (elevated TSH) in an attempt to stimulate the thyroid. The thyroid is unable to respond adequately (due to autoimmune destruction in Hashimoto's thyroiditis or other damage). The symptoms are explained by the lack of thyroxine: low BMR causes fatigue and weight gain; low $\mathrm{'\{'}T{'\}'}_3$ reduces metabolic heat production, causing cold intolerance; low thyroxine reduces the heart's sensitivity to catecholamines, causing bradycardia.
 
 </details>
 

@@ -107,7 +107,7 @@ Differentiating the RHS term-by-term: $\dfrac{d}{dx}\!\left(\sum_{n=0}^{\infty} 
 
 Therefore:
 
-$$\sum_{n=1}^{\infty} nx^{n-1} = \frac{1}{(1-x)^2} \quad \text{for } |x| \lt 1$$
+$$\sum_{n=1}^{\infty} nx^{n-1} = \frac{1}{(1-x)^2} \quad \text{'\{'}for {'\}'} |x| \lt 1$$
 
 **(b)** We need $\displaystyle\sum_{n=1}^{\infty} \frac{n}{2^n} = \sum_{n=1}^{\infty} n\left(\frac{1}{2}\right)^n$.
 

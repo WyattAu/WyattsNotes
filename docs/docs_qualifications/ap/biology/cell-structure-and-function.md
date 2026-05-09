@@ -213,7 +213,7 @@ eukaryotic cells.
      tyrosine kinases, ligand-gated ion channels).
 
 2. **Transduction:** The signal is relayed and amplified through a signal transduction pathway.
-   - Often involves **second messengers** (cAMP, $\mathrm{Ca}^{2+}$, $\mathrm{IP}_3$, DAG).
+   - Often involves **second messengers** (cAMP, $\mathrm{'\{'}Ca{'\}'}^{2+}$, $\mathrm{'\{'}IP{'\}'}_3$, DAG).
    - **Protein kinases** phosphorylate target proteins, activating or deactivating them.
    - **Protein phosphatases** remove phosphate groups, reversing kinase action.
    - **Cascades** amplify the signal (one activated kinase activates many downstream targets).
@@ -302,7 +302,7 @@ receptors in the cytoplasm or nucleus.
     the outcome depends on the specific pathway and cell type.
 11. **Confusing GPCRs and RTKs.** GPCRs use G-proteins and second messengers; RTKs dimerize and
     autophosphorylate, often activating the MAP kinase cascade.
-12. **Thinking all second messengers are the same.** cAMP, $\mathrm{Ca}^{2+}$, $\mathrm{IP}_3$, and
+12. **Thinking all second messengers are the same.** cAMP, $\mathrm{'\{'}Ca{'\}'}^{2+}$, $\mathrm{'\{'}IP{'\}'}_3$, and
     DAG have different roles and activate different downstream pathways.
 13. **Confusing exocytosis and endocytosis direction.** Exocytosis releases materials out of the
     cell; endocytosis brings materials in.
@@ -388,13 +388,13 @@ receptors in the cytoplasm or nucleus.
 Understanding the nuances of membrane transport is critical. Here is a more detailed analysis of
 each mechanism:
 
-**Simple diffusion:** Small, nonpolar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$, steroid
+**Simple diffusion:** Small, nonpolar molecules (e.g., $\mathrm{'\{'}O{'\}'}_2$, $\mathrm{'\{'}CO{'\}'}_2$, steroid
 hormones) diffuse directly through the phospholipid bilayer. The rate depends on the concentration
 gradient, temperature, and the surface area of the membrane. No energy or transport protein is
 required.
 
-**Facilitated diffusion:** Polar molecules and ions (e.g., glucose, amino acids, $\mathrm{Na}^+$,
-$\mathrm{K}^+$) cannot cross the hydrophobic interior of the bilayer and require transport proteins.
+**Facilitated diffusion:** Polar molecules and ions (e.g., glucose, amino acids, $\mathrm{'\{'}Na{'\}'}^+$,
+$\mathrm{'\{'}K{'\}'}^+$) cannot cross the hydrophobic interior of the bilayer and require transport proteins.
 Channel proteins form hydrophilic pores; carrier proteins undergo conformational changes to shuttle
 molecules across. Like simple diffusion, facilitated diffusion is passive (no energy required) and
 moves substances down their concentration gradient.
@@ -405,15 +405,15 @@ region of higher water potential (lower solute concentration) to a region of low
 osmosis in cells that need to regulate water movement quickly (e.g., kidney cells).
 
 **Active transport:** Moves substances against their concentration gradient, requiring energy from
-ATP hydrolysis. The $\mathrm{Na}^+/\mathrm{K}^+$ pump is the classic example: it uses one ATP to
-pump 3 $\mathrm{Na}^+$ out and 2 $\mathrm{K}^+$ in against their gradients. This pump is essential
+ATP hydrolysis. The $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump is the classic example: it uses one ATP to
+pump 3 $\mathrm{'\{'}Na{'\}'}^+$ out and 2 $\mathrm{'\{'}K{'\}'}^+$ in against their gradients. This pump is essential
 for maintaining the resting membrane potential, which is critical for nerve impulse transmission and
 muscle contraction.
 
 **Cotransport (secondary active transport):** Uses the energy stored in an ion gradient (established
 by primary active transport) to transport another substance against its gradient. For example, the
-$\mathrm{Na}^+$-glucose cotransporter in the small intestine uses the $\mathrm{Na}^+$ gradient
-(maintained by the $\mathrm{Na}^+/\mathrm{K}^+$ pump) to transport glucose into the cell against its
+$\mathrm{'\{'}Na{'\}'}^+$-glucose cotransporter in the small intestine uses the $\mathrm{'\{'}Na{'\}'}^+$ gradient
+(maintained by the $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump) to transport glucose into the cell against its
 concentration gradient.
 
 **Bulk transport:** Large molecules or particles are transported via vesicles. Endocytosis brings
@@ -433,7 +433,7 @@ Amino acids exit the cell by facilitated diffusion (from 10 mM to 5 mM, down the
 gradient). No energy is required.
 
 If the cell needs to accumulate amino acids to a concentration higher than 5 mM (e.g., for protein
-synthesis), it must use active transport (or a cotransporter that uses the $\mathrm{Na}^+$ gradient)
+synthesis), it must use active transport (or a cotransporter that uses the $\mathrm{'\{'}Na{'\}'}^+$ gradient)
 to move amino acids against their concentration gradient. This requires ATP (directly or
 indirectly).
 
@@ -537,7 +537,7 @@ coordination (e.g., synchronous contraction of heart muscle cells).
 **Worked Example: Why gap junctions are essential in cardiac muscle.**
 
 Cardiac muscle cells (cardiomyocytes) are connected by gap junctions that form intercalated discs.
-These gap junctions allow ions (especially $\mathrm{Ca}^{2+}$) to flow freely between adjacent
+These gap junctions allow ions (especially $\mathrm{'\{'}Ca{'\}'}^{2+}$) to flow freely between adjacent
 cells, so an action potential generated in one cell can spread rapidly to all connected cells. This
 ensures that the entire heart muscle contracts as a coordinated unit (a functional syncytium).
 Without gap junctions, the heart would not beat in a synchronised manner, leading to ineffective
@@ -573,7 +573,7 @@ chloroplasts have their own circular DNA and ribosomes (70S), supporting the end
 
 **Peroxisomes:** Small organelles that contain oxidative enzymes (e.g., catalase). They break down
 fatty acids by beta-oxidation and detoxify harmful by-products of metabolism, such as hydrogen
-peroxide ($\mathrm{H}_2\mathrm{O}_2$), which catalase converts to water and oxygen.
+peroxide ($\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}_2$), which catalase converts to water and oxygen.
 
 ## Review: Microscopy Techniques
 
@@ -592,7 +592,7 @@ specimens.
 
 **Magnification calculation:**
 
-$$\mathrm{Magnification} = \frac{\mathrm{Image size}}{\mathrm{Actual size}}$$
+$$\mathrm{'\{'}Magnification{'\}'} = \frac{\mathrm{'\{'}Image size{'\}'}}{\mathrm{'\{'}Actual size{'\}'}}$$
 
 **Worked Example:** A mitochondrion measures 8 mm in an electron micrograph at
 $\times$10,000.
@@ -763,24 +763,24 @@ secretory pathway would be blocked at the ER-to-Golgi transport step.
 <details>
 <summary>Question 2: Comparing transport mechanisms in different conditions</summary>
 
-A cell has an internal $\mathrm{K}^+$ concentration of $140 \mathrm{ mM}$ and an external
-$\mathrm{K}^+$ concentration of $5 \mathrm{ mM}$. The membrane potential is $-70 \mathrm{ mV}$
-(inside negative). Predict the direction of $\mathrm{K}^+$ movement through (a) a $\mathrm{K}^+$
-leak channel and (b) the $\mathrm{Na}^+/\mathrm{K}^+$ pump, and explain your reasoning.
+A cell has an internal $\mathrm{'\{'}K{'\}'}^+$ concentration of $140 \mathrm{'\{'} mM{'\}'}$ and an external
+$\mathrm{'\{'}K{'\}'}^+$ concentration of $5 \mathrm{'\{'} mM{'\}'}$. The membrane potential is $-70 \mathrm{'\{'} mV{'\}'}$
+(inside negative). Predict the direction of $\mathrm{'\{'}K{'\}'}^+$ movement through (a) a $\mathrm{'\{'}K{'\}'}^+$
+leak channel and (b) the $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump, and explain your reasoning.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) Through a $\mathrm{K}^+$ leak channel (passive transport): $\mathrm{K}^+$ would move out of the
+(a) Through a $\mathrm{'\{'}K{'\}'}^+$ leak channel (passive transport): $\mathrm{'\{'}K{'\}'}^+$ would move out of the
 cell. The concentration gradient favours outward movement (140 mM inside vs 5 mM outside). The
 electrical gradient also favours outward movement because the inside of the cell is negative,
-repelling the positive $\mathrm{K}^+$ ions. Both gradients drive $\mathrm{K}^+$ out of the cell.
+repelling the positive $\mathrm{'\{'}K{'\}'}^+$ ions. Both gradients drive $\mathrm{'\{'}K{'\}'}^+$ out of the cell.
 
-(b) Through the $\mathrm{Na}^+/\mathrm{K}^+$ pump (active transport): The pump moves $\mathrm{K}^+$
+(b) Through the $\mathrm{'\{'}Na{'\}'}^+/\mathrm{'\{'}K{'\}'}^+$ pump (active transport): The pump moves $\mathrm{'\{'}K{'\}'}^+$
 into the cell against its concentration gradient. This requires ATP hydrolysis. The pump
-continuously transports $2 \mathrm{ K}^+$ in and $3 \mathrm{ Na}^+$ out per ATP consumed,
+continuously transports $2 \mathrm{'\{'} K{'\}'}^+$ in and $3 \mathrm{'\{'} Na{'\}'}^+$ out per ATP consumed,
 maintaining the resting membrane potential and the concentration gradients.
 
 </details>
@@ -822,7 +822,7 @@ Normally, a G-protein is activated when it binds GTP and is inactivated when it 
 GDP. Cholera toxin prevents GTP hydrolysis, locking the G-protein in its active state. The
 constitutively active G-protein continuously activates adenylyl cyclase, which produces excessive
 cAMP. Elevated cAMP activates protein kinase A (PKA), which phosphorylates and opens CFTR chloride
-channels. Massive amounts of $\mathrm{Cl}^-$ are secreted into the intestinal lumen. $\mathrm{Na}^+$
+channels. Massive amounts of $\mathrm{'\{'}Cl{'\}'}^-$ are secreted into the intestinal lumen. $\mathrm{'\{'}Na{'\}'}^+$
 and water follow by osmosis, producing large volumes of watery diarrhoea. This demonstrates how
 disrupting the normal "off" switch in a signaling pathway can have severe physiological
 consequences.
@@ -832,9 +832,9 @@ consequences.
 <details>
 <summary>Question 5: Water potential and plant cell behaviour</summary>
 
-A plant cell has a solute potential of $-800 \mathrm{ kPa}$ and a pressure potential of
-$400 \mathrm{ kPa}$. The cell is placed in a solution with a water potential of
-$-500 \mathrm{ kPa}$. Calculate the cell's water potential and predict the direction of water
+A plant cell has a solute potential of $-800 \mathrm{'\{'} kPa{'\}'}$ and a pressure potential of
+$400 \mathrm{'\{'} kPa{'\}'}$. The cell is placed in a solution with a water potential of
+$-500 \mathrm{'\{'} kPa{'\}'}$. Calculate the cell's water potential and predict the direction of water
 movement.
 
 </details>
@@ -842,10 +842,10 @@ movement.
 <details>
 <summary>Answer</summary>
 
-Cell water potential: $\psi = \psi_s + \psi_p = -800 + 400 = -400 \mathrm{ kPa}$.
+Cell water potential: $\psi = \psi_s + \psi_p = -800 + 400 = -400 \mathrm{'\{'} kPa{'\}'}$.
 
-The cell water potential ($-400 \mathrm{ kPa}$) is higher (less negative) than the solution water
-potential ($-500 \mathrm{ kPa}$). Water moves from higher water potential to lower water potential,
+The cell water potential ($-400 \mathrm{'\{'} kPa{'\}'}$) is higher (less negative) than the solution water
+potential ($-500 \mathrm{'\{'} kPa{'\}'}$). Water moves from higher water potential to lower water potential,
 so water will move from the cell into the surrounding solution. The cell will lose water, the
 pressure potential will decrease, and the cell may become plasmolysed if enough water is lost.
 

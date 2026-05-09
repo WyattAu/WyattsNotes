@@ -134,7 +134,7 @@ Quadratic equations take the form $ax^2 + bx + c = 0$. Methods of solution inclu
 #### Method 1: Factorisation
 
 $$
-x^2 - 5x + 6 = 0 \implies (x - 2)(x - 3) = 0 \implies x = 2 \mathrm{ or } x = 3
+x^2 - 5x + 6 = 0 \implies (x - 2)(x - 3) = 0 \implies x = 2 \mathrm{'\{'} or {'\}'} x = 3
 $$
 
 #### Method 2: Quadratic Formula (OL/HL)
@@ -164,7 +164,7 @@ x = \frac{-3 \pm \sqrt{9 + 40}}{4} = \frac{-3 \pm 7}{4}
 $$
 
 $$
-x = 1 \mathrm{ or } x = -\frac{5}{2}
+x = 1 \mathrm{'\{'} or {'\}'} x = -\frac{5}{2}
 $$
 
 #### Method 3: Completing the Square (HL)
@@ -242,7 +242,7 @@ $$
 $$
 
 $$
-(x - 2)(x - 3) = 0 \implies x = 2 \mathrm{ or } x = 3
+(x - 2)(x - 3) = 0 \implies x = 2 \mathrm{'\{'} or {'\}'} x = 3
 $$
 
 Solutions: $(2, 3)$ and $(3, 2)$.
@@ -309,7 +309,7 @@ $-1 \lt x \lt 4$
 
 ### Definition
 
-A complex number is of the form $z = a + bi$ where $a, b \in \mathbb{R}$ and $i^2 = -1$.
+A complex number is of the form $z = a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$ and $i^2 = -1$.
 
 - $a$ is the **real part** ($\operatorname{Re}(z)$)
 - $b$ is the **imaginary part** ($\operatorname{Im}(z)$)
@@ -377,7 +377,7 @@ $$
 
 ### De Moivre's Theorem (HL)
 
-For $z = r(\cos\theta + i\sin\theta)$ and $n \in \mathbb{Z}$:
+For $z = r(\cos\theta + i\sin\theta)$ and $n \in \mathbb{'\{'}Z{'\}'}$:
 
 $$
 z^n = r^n(\cos n\theta + i\sin n\theta)

@@ -78,7 +78,7 @@ Coroutines enable natural expression of data pipelines where each stage can susp
 independently:
 
 $$
-\mathrm{source} \xrightarrow{\mathrm{co\_await}} \mathrm{transform}_1 \xrightarrow{\mathrm{co\_await}} \mathrm{transform}_2 \xrightarrow{\mathrm{co\_await}} \mathrm{sink}
+\mathrm{'\{'}source{'\}'} \xrightarrow{\mathrm{'\{'}co\_await{'\}'}} \mathrm{'\{'}transform{'\}'}_1 \xrightarrow{\mathrm{'\{'}co\_await{'\}'}} \mathrm{'\{'}transform{'\}'}_2 \xrightarrow{\mathrm{'\{'}co\_await{'\}'}} \mathrm{'\{'}sink{'\}'}
 $$
 
 Each stage is a coroutine that reads from the previous stage and writes to the next, with suspension
@@ -246,7 +246,7 @@ library patterns.
 - **`when_any(tasks...)`**: returns when **any** task completes, cancelling the rest. The result
   identifies which task finished first.
 
-The complexity of `when_all` for $n$ tasks is $\mathcal{O}(n)$ in terms of coroutine handles that
+The complexity of `when_all` for $n$ tasks is $\mathcal{'\{'}O{'\}'}(n)$ in terms of coroutine handles that
 must be tracked and resumed.
 
 ### `when_all` Implementation
@@ -653,7 +653,7 @@ threads. It provides automatic load balancing without centralized coordination:
 
 The work-stealing algorithm has provably optimal time bounds: the expected execution time of a fully
 strict (fork-join) computation with $P$ processors and work $T_1$ is
-$\mathcal{O}(T_1 / P +
+$\mathcal{'\{'}O{'\}'}(T_1 / P +
 T_{\infty})$, where $T_{\infty}$ is the span (critical path length) [Blumofe
 and Leiserson, 1999].
 

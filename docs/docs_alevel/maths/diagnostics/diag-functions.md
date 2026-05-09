@@ -142,7 +142,7 @@ $g(h(x)) = (\sqrt{x})^2 - 1 = x - 1$ (domain: $x \geq 0$, since we need $h(x)$ d
 
 $f(g(h(x))) = f(x - 1) = \frac{2}{(x-1)+1} = \frac{2}{x}$ (domain: $x - 1 \neq -1 \implies x \neq 0$, combined with $x \geq 0$)
 
-$$(f \circ g \circ h)(x) = \frac{2}{x}, \quad \text{domain: } x > 0$$
+$$(f \circ g \circ h)(x) = \frac{2}{x}, \quad \text{'\{'}domain: {'\}'} x > 0$$
 
 **(b)** $\frac{2}{x} = 1 \implies x = 2$.
 
@@ -179,11 +179,11 @@ Let me re-examine: $(f \circ g \circ h)(x) = f(g(h(x)))$ versus $(g \circ f \cir
 
 **Question:**
 
-The function $f$ is defined by $f(x) = e^{2x} + e^{-2x}$ for $x \in \mathbb{R}$.
+The function $f$ is defined by $f(x) = e^{2x} + e^{-2x}$ for $x \in \mathbb{'\{'}R{'\}'}$.
 
-**(a)** Show that $f(x) \geq 2$ for all $x \in \mathbb{R}$, and find the value of $x$ for which equality holds.
+**(a)** Show that $f(x) \geq 2$ for all $x \in \mathbb{'\{'}R{'\}'}$, and find the value of $x$ for which equality holds.
 
-**(b)** The function $g$ is defined by $g(x) = \ln(x + \sqrt{x^2 + 1})$ for $x \in \mathbb{R}$. Find $f(g(x))$ in terms of $x$ and simplify your answer.
+**(b)** The function $g$ is defined by $g(x) = \ln(x + \sqrt{x^2 + 1})$ for $x \in \mathbb{'\{'}R{'\}'}$. Find $f(g(x))$ in terms of $x$ and simplify your answer.
 
 **(c)** Solve the inequality $f(g(x)) \leq 10$.
 
@@ -282,15 +282,15 @@ So $\sin t = \frac{\sqrt{2} - \sqrt{10}}{4}$.
 
 $t = \theta + \frac{\pi}{4}$, so $\sin\left(\theta + \frac{\pi}{4}\right) = \frac{\sqrt{2} - \sqrt{10}}{4}$.
 
-$$\theta + \frac{\pi}{4} = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) \approx -0.452 \text{ or } \pi + 0.452 \approx 3.594$$
+$$\theta + \frac{\pi}{4} = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) \approx -0.452 \text{'\{'} or {'\}'} \pi + 0.452 \approx 3.594$$
 
-$$\theta \approx -0.452 - 0.785 = -1.237 \quad \text{or} \quad \theta \approx 3.594 - 0.785 = 2.809$$
+$$\theta \approx -0.452 - 0.785 = -1.237 \quad \text{'\{'}or{'\}'} \quad \theta \approx 3.594 - 0.785 = 2.809$$
 
 In $[0, 2\pi)$: $\theta \approx 2.809$ and $\theta \approx -1.237 + 2\pi \approx 5.046$.
 
 The exact solutions are:
 
-$$\theta = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4} + 2\pi \quad \text{or} \quad \theta = \pi - \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4}$$
+$$\theta = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4} + 2\pi \quad \text{'\{'}or{'\}'} \quad \theta = \pi - \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4}$$
 
 **(c)** The area condition gives:
 

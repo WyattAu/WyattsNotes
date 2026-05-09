@@ -43,13 +43,13 @@ The block remains in equilibrium for $0 \leq P \leq 31.36$ N.
 
 **(b)** When $P = 20$ N (which is less than $31.36$ N), the block does not move. The frictional force adjusts to exactly balance the applied force:
 
-$$F = P = 20 \text{ N}$$
+$$F = P = 20 \text{'\{'} N{'\}'}$$
 
 The frictional force acts in the direction opposite to $P$ (i.e., opposing the tendency to move).
 
-**(c)** The student writes $F = 31.36$ N, but the actual friction is only $20$ N. The student has assumed the block is on the point of sliding, but $P = 20 \text{ N} \lt 31.36 \text{ N}$, so the block is not even close to sliding. The friction adjusts to match the applied force.
+**(c)** The student writes $F = 31.36$ N, but the actual friction is only $20$ N. The student has assumed the block is on the point of sliding, but $P = 20 \text{'\{'} N{'\}'} \lt 31.36 \text{'\{'} N{'\}'}$, so the block is not even close to sliding. The friction adjusts to match the applied force.
 
-$$\text{Percentage overestimate} = \frac{31.36 - 20}{20} \times 100\% = 56.8\%$$
+$$\text{'\{'}Percentage overestimate{'\}'} = \frac{31.36 - 20}{20} \times 100\% = 56.8\%$$
 
 **(d)** Resolving perpendicular to the surface:
 
@@ -61,7 +61,7 @@ $$P\cos 30° = \mu R = 0.4(78.4 - 0.5P)$$
 
 $$0.866P = 31.36 - 0.2P$$
 
-$$1.066P = 31.36 \implies P = \frac{31.36}{1.066} \approx 29.42 \text{ N}$$
+$$1.066P = 31.36 \implies P = \frac{31.36}{1.066} \approx 29.42 \text{'\{'} N{'\}'}$$
 
 This is **less** than $31.36$ N, not greater. Applying the force at an angle above the horizontal reduces the normal reaction ($R = 78.4 - 0.5P \lt 78.4$), which in turn reduces the maximum friction. Although the horizontal component of $P$ is only $P\cos 30° \approx 0.866P$, the reduction in $R$ means the maximum available horizontal force is reduced overall.
 
@@ -107,19 +107,19 @@ Since $11.77 \lt 29.4$, $A$ does not slide down either.
 
 **The system is in equilibrium.** The tension in the string equals the weight of $B$:
 
-$$T = 3g = 29.4 \text{ N}$$
+$$T = 3g = 29.4 \text{'\{'} N{'\}'}$$
 
 The friction on $A$ balances the remaining forces along the plane. With $B$ hanging and $A$ on the plane, resolving along the plane for $A$ (taking up the plane as positive):
 
-$$T - 5g\sin 30° - F = 0 \implies 29.4 - 24.5 = F \implies F = 4.9 \text{ N}$$
+$$T - 5g\sin 30° - F = 0 \implies 29.4 - 24.5 = F \implies F = 4.9 \text{'\{'} N{'\}'}$$
 
-Check: $F = 4.9 \text{ N} \lt \mu R = 12.73$ N. Confirmed: the block is not at limiting equilibrium.
+Check: $F = 4.9 \text{'\{'} N{'\}'} \lt \mu R = 12.73$ N. Confirmed: the block is not at limiting equilibrium.
 
 **(b)** The system does not move, so the speed of $B$ remains zero.
 
 **(c)** The student's equation assumes $A$ moves up the plane. With $T = 3g = 29.4$ (since the system is in equilibrium):
 
-$$29.4 - 24.5 - 12.73 = 5a \implies -7.83 = 5a \implies a = -1.566 \text{ m/s}^2$$
+$$29.4 - 24.5 - 12.73 = 5a \implies -7.83 = 5a \implies a = -1.566 \text{'\{'} m/s{'\}'}^2$$
 
 The negative acceleration means the assumed direction of motion is wrong. The particle $A$ does not move up the plane; in fact, the forces are insufficient to overcome friction plus the component of gravity. The negative result signals that the system is in equilibrium (or would move in the opposite direction), and the student must reconsider the friction direction or check for equilibrium.
 
@@ -145,13 +145,13 @@ A car of mass $1200$ kg tows a trailer of mass $400$ kg along a horizontal road 
 
 **(a)** Treating the system as a whole (car + trailer):
 
-$$F_{\text{net}} = 2400 - 200 - 100 = 2100 \text{ N}$$
+$$F_{\text{'\{'}net{'\}'}} = 2400 - 200 - 100 = 2100 \text{'\{'} N{'\}'}$$
 
-$$a = \frac{F_{\text{net}}}{m_{\text{total}}} = \frac{2100}{1600} = 1.3125 \text{ m/s}^2$$
+$$a = \frac{F_{\text{'\{'}net{'\}'}}}{m_{\text{'\{'}total{'\}'}}} = \frac{2100}{1600} = 1.3125 \text{'\{'} m/s{'\}'}^2$$
 
 For the trailer alone (tension $T$ pulls it forward, resistance opposes):
 
-$$T - 100 = 400 \times 1.3125 \implies T = 525 + 100 = 625 \text{ N}$$
+$$T - 100 = 400 \times 1.3125 \implies T = 525 + 100 = 625 \text{'\{'} N{'\}'}$$
 
 Verification using the car: $2400 - 200 - T = 1200 \times 1.3125 \implies 2200 - T = 1575 \implies T = 625$ N. Consistent.
 
@@ -171,13 +171,13 @@ More importantly, saying "the tension" refers to a single force, but the Third L
 
 **(d)** Now the braking force acts on the car (opposing motion):
 
-$$F_{\text{net}} = 2400 - 3000 - 200 - 100 = -900 \text{ N}$$
+$$F_{\text{'\{'}net{'\}'}} = 2400 - 3000 - 200 - 100 = -900 \text{'\{'} N{'\}'}$$
 
-$$a = \frac{-900}{1600} = -0.5625 \text{ m/s}^2$$
+$$a = \frac{-900}{1600} = -0.5625 \text{'\{'} m/s{'\}'}^2$$
 
 The system decelerates. For the trailer:
 
-$$T - 100 = 400(-0.5625) \implies T = -225 + 100 = -125 \text{ N}$$
+$$T - 100 = 400(-0.5625) \implies T = -225 + 100 = -125 \text{'\{'} N{'\}'}$$
 
 The negative tension means the tow bar is now in **compression** rather than tension. The car is decelerating more than the trailer would on its own, so the tow bar pushes the trailer backward (or equivalently, the trailer pushes forward on the car through the bar).
 
@@ -221,7 +221,7 @@ The particle is at rest at $t = 0$ and $t = 3$ s. For $0 \lt t \lt 3$: $v \gt 0$
 
 $$s = \int_0^4 v\,dt = \int_0^4 \left(\frac{t^3}{2} - 3t^2 + \frac{9t}{2}\right)dt = \left[\frac{t^4}{8} - t^3 + \frac{9t^2}{4}\right]_0^4$$
 
-$$= \frac{256}{8} - 64 + \frac{144}{4} = 32 - 64 + 36 = 4 \text{ m}$$
+$$= \frac{256}{8} - 64 + \frac{144}{4} = 32 - 64 + 36 = 4 \text{'\{'} m{'\}'}$$
 
 Total distance $= 4$ m.
 
@@ -235,11 +235,11 @@ Note that $3t^2 - 12t + 9 = 3(t-1)(t-3)$ and $t^3 - 6t^2 + 9t = t(t-3)^2$.
 
 $$W = \frac{1}{2}\int_0^4 3(t-1)(t-3) \cdot t(t-3)^2\,dt = \frac{3}{2}\int_0^4 t(t-1)(t-3)^3\,dt$$
 
-Alternatively, use the work-energy theorem directly: $W = \Delta\mathrm{KE}$.
+Alternatively, use the work-energy theorem directly: $W = \Delta\mathrm{'\{'}KE{'\}'}$.
 
 $v(0) = 0$ and $v(4) = \frac{4}{2}(1)^2 = 2$ m/s.
 
-$$\Delta\mathrm{KE} = \frac{1}{2}(2)(2^2) - 0 = 4 \text{ J}$$
+$$\Delta\mathrm{'\{'}KE{'\}'} = \frac{1}{2}(2)(2^2) - 0 = 4 \text{'\{'} J{'\}'}$$
 
 Therefore $W = 4$ J, consistent with the work-energy theorem.
 
@@ -281,15 +281,15 @@ $$\frac{3T}{5} \times 4 - 120 \times 2 - 80 \times 3 = 0$$
 
 $$\frac{12T}{5} = 240 + 240 = 480$$
 
-$$T = \frac{480 \times 5}{12} = 200 \text{ N}$$
+$$T = \frac{480 \times 5}{12} = 200 \text{'\{'} N{'\}'}$$
 
 Resolving horizontally at $A$ (the hinge reaction has components $H_A$ horizontal and $V_A$ vertical):
 
-$$H_A = T\cos\theta = 200 \times \frac{4}{5} = 160 \text{ N (to the right)}$$
+$$H_A = T\cos\theta = 200 \times \frac{4}{5} = 160 \text{'\{'} N (to the right){'\}'}$$
 
 Resolving vertically:
 
-$$V_A + T\sin\theta = 120 + 80 \implies V_A + 120 = 200 \implies V_A = 80 \text{ N (upward)}$$
+$$V_A + T\sin\theta = 120 + 80 \implies V_A + 120 = 200 \implies V_A = 80 \text{'\{'} N (upward){'\}'}$$
 
 Magnitude of hinge reaction: $\sqrt{160^2 + 80^2} = \sqrt{25600 + 6400} = \sqrt{32000} = 80\sqrt{5} \approx 178.9$ N.
 
@@ -313,11 +313,11 @@ Since all three conditions are satisfied, the system is in equilibrium.
 
 **Question:**
 
-Three forces act on a particle. Force $\mathbf{F}_1 = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ N, force $\mathbf{F}_2 = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$ N, and force $\mathbf{F}_3 = \begin{pmatrix} a \\ b \end{pmatrix}$ N.
+Three forces act on a particle. Force $\mathbf{'\{'}F{'\}'}_1 = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ N, force $\mathbf{'\{'}F{'\}'}_2 = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$ N, and force $\mathbf{'\{'}F{'\}'}_3 = \begin{pmatrix} a \\ b \end{pmatrix}$ N.
 
 **(a)** Find the values of $a$ and $b$ for which the particle is in equilibrium.
 
-**(b)** With the values of $a$ and $b$ from part (a), a fourth force $\mathbf{F}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix}$ N is added. Find the magnitude and direction of the resultant force.
+**(b)** With the values of $a$ and $b$ from part (a), a fourth force $\mathbf{'\{'}F{'\}'}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix}$ N is added. Find the magnitude and direction of the resultant force.
 
 **(c)** The particle has mass $3$ kg. Find the initial acceleration and the velocity after $4$ seconds, assuming the resultant force from part (b) acts constantly.
 
@@ -327,7 +327,7 @@ Three forces act on a particle. Force $\mathbf{F}_1 = \begin{pmatrix} 3 \\ -1 \e
 
 **(a)** For equilibrium, the resultant force must be zero:
 
-$$\mathbf{F}_1 + \mathbf{F}_2 + \mathbf{F}_3 = \mathbf{0}$$
+$$\mathbf{'\{'}F{'\}'}_1 + \mathbf{'\{'}F{'\}'}_2 + \mathbf{'\{'}F{'\}'}_3 = \mathbf{'\{'}0{'\}'}$$
 
 $$\begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -2 \\ 4 \end{pmatrix} + \begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$$
 
@@ -335,22 +335,22 @@ $$\begin{pmatrix} 1 + a \\ 3 + b \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pma
 
 $$a = -1, \quad b = -3$$
 
-So $\mathbf{F}_3 = \begin{pmatrix} -1 \\ -3 \end{pmatrix}$ N.
+So $\mathbf{'\{'}F{'\}'}_3 = \begin{pmatrix} -1 \\ -3 \end{pmatrix}$ N.
 
-**(b)** With $\mathbf{F}_4$ added:
+**(b)** With $\mathbf{'\{'}F{'\}'}_4$ added:
 
-$$\mathbf{F}_{\text{resultant}} = \mathbf{F}_1 + \mathbf{F}_2 + \mathbf{F}_3 + \mathbf{F}_4 = \mathbf{0} + \mathbf{F}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix} \text{ N}$$
+$$\mathbf{'\{'}F{'\}'}_{\text{'\{'}resultant{'\}'}} = \mathbf{'\{'}F{'\}'}_1 + \mathbf{'\{'}F{'\}'}_2 + \mathbf{'\{'}F{'\}'}_3 + \mathbf{'\{'}F{'\}'}_4 = \mathbf{'\{'}0{'\}'} + \mathbf{'\{'}F{'\}'}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix} \text{'\{'} N{'\}'}$$
 
-(Since $\mathbf{F}_1 + \mathbf{F}_2 + \mathbf{F}_3 = \mathbf{0}$ from part (a).)
+(Since $\mathbf{'\{'}F{'\}'}_1 + \mathbf{'\{'}F{'\}'}_2 + \mathbf{'\{'}F{'\}'}_3 = \mathbf{'\{'}0{'\}'}$ from part (a).)
 
-Magnitude: $\lvert\mathbf{F}_{\text{resultant}}\rvert = \sqrt{25 + 4} = \sqrt{29} \approx 5.39$ N.
+Magnitude: $\lvert\mathbf{'\{'}F{'\}'}_{\text{'\{'}resultant{'\}'}}\rvert = \sqrt{25 + 4} = \sqrt{29} \approx 5.39$ N.
 
 Direction: $\theta = \arctan\!\left(\frac{2}{5}\right) \approx 21.8°$ above the positive $x$-axis.
 
-**(c)** By Newton's Second Law: $\mathbf{a} = \frac{\mathbf{F}}{m} = \frac{1}{3}\begin{pmatrix} 5 \\ 2 \end{pmatrix} = \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix}$ m/s$^2$.
+**(c)** By Newton's Second Law: $\mathbf{'\{'}a{'\}'} = \frac{\mathbf{'\{'}F{'\}'}}{m} = \frac{1}{3}\begin{pmatrix} 5 \\ 2 \end{pmatrix} = \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix}$ m/s$^2$.
 
 The velocity after $4$ seconds (starting from rest):
 
-$$\mathbf{v} = \mathbf{u} + \mathbf{a}t = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix} \times 4 = \begin{pmatrix} 20/3 \\ 8/3 \end{pmatrix} \text{ m/s}$$
+$$\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}u{'\}'} + \mathbf{'\{'}a{'\}'}t = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix} \times 4 = \begin{pmatrix} 20/3 \\ 8/3 \end{pmatrix} \text{'\{'} m/s{'\}'}$$
 
 Speed $= \sqrt{(20/3)^2 + (8/3)^2} = \sqrt{\frac{400 + 64}{9}} = \sqrt{\frac{464}{9}} = \frac{2\sqrt{116}}{3} \approx 7.18$ m/s.

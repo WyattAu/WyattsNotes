@@ -84,7 +84,7 @@ $$\frac{(1 + 2x)^5}{(1 - x)^3}$$
 
 **(a)** Solve $e^{2x} - 5e^x + 6 = 0$, giving exact answers.
 
-**(b)** Solve $e^{2x} - 5e^x + 6 = 1$ for $x \in \mathbb{R}$, giving exact answers.
+**(b)** Solve $e^{2x} - 5e^x + 6 = 1$ for $x \in \mathbb{'\{'}R{'\}'}$, giving exact answers.
 
 **(c)** Explain why, when using the substitution $u = e^x$ to solve an equation of the form $e^{2x} + pe^x + q = 0$, you must check that $u \gt 0$ before taking natural logarithms.
 
@@ -110,9 +110,9 @@ A curve has equation $y = x^4 - 4x^3 + 6x^2 - 4x + 1$.
 
 ### Q12 [7 marks] — Vectors
 
-Line $l_1$ passes through $A(1, 2, 3)$ with direction vector $\mathbf{d}_1 = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$.
+Line $l_1$ passes through $A(1, 2, 3)$ with direction vector $\mathbf{'\{'}d{'\}'}_1 = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$.
 
-Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{d}_2 = \begin{pmatrix} 1 \\ a \\ 2 \end{pmatrix}$.
+Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{'\{'}d{'\}'}_2 = \begin{pmatrix} 1 \\ a \\ 2 \end{pmatrix}$.
 
 **(a)** Find the value of $a$ for which $l_1$ and $l_2$ intersect.
 
@@ -128,7 +128,7 @@ For each of the following, state whether the condition is necessary, sufficient,
 
 **(b)** "$n$ is prime" as a condition for "$n$ is odd".
 
-**(c)** "$a^2 + b^2 = 0$" (where $a, b \in \mathbb{R}$) as a condition for "$a = 0$ and $b = 0$".
+**(c)** "$a^2 + b^2 = 0$" (where $a, b \in \mathbb{'\{'}R{'\}'}$) as a condition for "$a = 0$ and $b = 0$".
 
 ### Q14 [5 marks] — Numerical Methods
 
@@ -391,7 +391,7 @@ Coefficient of $x^4$: $15 + 100 + 240 + 240 + 80 = 675$.
 
 Let $\theta = 3x$. Since $x \in [0, 2\pi)$, we have $\theta \in [0, 6\pi)$.
 
-$\cos\theta = \frac{1}{2}$ gives $\theta = \frac{\pi}{3} + 2n\pi$ or $\theta = \frac{5\pi}{3} + 2n\pi$ for $n \in \mathbb{Z}$.
+$\cos\theta = \frac{1}{2}$ gives $\theta = \frac{\pi}{3} + 2n\pi$ or $\theta = \frac{5\pi}{3} + 2n\pi$ for $n \in \mathbb{'\{'}Z{'\}'}$.
 
 Systematically listing all $\theta \in [0, 6\pi)$:
 
@@ -417,9 +417,9 @@ $$S = \frac{\pi}{9} + \frac{5\pi}{9} + \frac{7\pi}{9} + \frac{11\pi}{9} + \frac{
 
 ### Q9 — Solution
 
-**(a)** Let $u = e^x$. Since $e^x \gt 0$ for all $x \in \mathbb{R}$, we require $u \gt 0$.
+**(a)** Let $u = e^x$. Since $e^x \gt 0$ for all $x \in \mathbb{'\{'}R{'\}'}$, we require $u \gt 0$.
 
-$$u^2 - 5u + 6 = 0 \implies (u-2)(u-3) = 0 \implies u = 2 \text{ or } u = 3$$
+$$u^2 - 5u + 6 = 0 \implies (u-2)(u-3) = 0 \implies u = 2 \text{'\{'} or {'\}'} u = 3$$
 
 Both satisfy $u \gt 0$.
 
@@ -437,7 +437,7 @@ $$u^2 - 5u + 5 = 0 \implies u = \frac{5 \pm \sqrt{25 - 20}}{2} = \frac{5 \pm \sq
 
 Both roots are positive: $\frac{5 - \sqrt{5}}{2} \approx 1.382 \gt 0$ and $\frac{5 + \sqrt{5}}{2} \approx 3.618 \gt 0$.
 
-$$x = \ln\!\left(\frac{5 + \sqrt{5}}{2}\right) \quad \text{or} \quad x = \ln\!\left(\frac{5 - \sqrt{5}}{2}\right)$$
+$$x = \ln\!\left(\frac{5 + \sqrt{5}}{2}\right) \quad \text{'\{'}or{'\}'} \quad x = \ln\!\left(\frac{5 - \sqrt{5}}{2}\right)$$
 
 **(c)** The check is necessary because if a root of the quadratic in $u$ were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$, then $u = -1$ or $u = 4$, and $u = -1$ would give $e^x = -1$, which has no real solution. The substitution $u = e^x$ implicitly constrains $u \gt 0$, and students who forget this constraint accept spurious solutions.
 
@@ -513,7 +513,7 @@ $$= \frac{3e^4}{16} - \left(-\frac{1}{16}\right) = \frac{3e^4 + 1}{16}$$
 
 ### Q12 — Solution
 
-**(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$, so the lines are never parallel.
+**(a)** $\mathbf{'\{'}d{'\}'}_1$ and $\mathbf{'\{'}d{'\}'}_2$ are not proportional for any value of $a$, so the lines are never parallel.
 
 For intersection, there exist $s, t$ such that:
 
@@ -541,15 +541,15 @@ The system is inconsistent, so the lines are **skew**.
 
 The shortest distance between two skew lines is:
 
-$$d = \frac{\lvert(\mathbf{b} - \mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)\rvert}{\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert}$$
+$$d = \frac{\lvert(\mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'}) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2)\rvert}{\lvert\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2\rvert}$$
 
-$\mathbf{b} - \mathbf{a} = \begin{pmatrix} 3 \\ -1 \\ -3 \end{pmatrix}$.
+$\mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'} = \begin{pmatrix} 3 \\ -1 \\ -3 \end{pmatrix}$.
 
-$\mathbf{d}_1 \times \mathbf{d}_2 = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 1 \\ 1 & -1 & 2 \end{vmatrix} = \begin{pmatrix} -3 \\ -3 \\ -1 \end{pmatrix}$
+$\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2 = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 2 & -1 & 1 \\ 1 & -1 & 2 \end{vmatrix} = \begin{pmatrix} -3 \\ -3 \\ -1 \end{pmatrix}$
 
-$\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert = \sqrt{9+9+1} = \sqrt{19}$
+$\lvert\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2\rvert = \sqrt{9+9+1} = \sqrt{19}$
 
-$(\mathbf{b}-\mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2) = -9 + 3 + 3 = -3$
+$(\mathbf{'\{'}b{'\}'}-\mathbf{'\{'}a{'\}'}) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2) = -9 + 3 + 3 = -3$
 
 $$d = \frac{\lvert -3 \rvert}{\sqrt{19}} = \frac{3}{\sqrt{19}} = \frac{3\sqrt{19}}{19}$$
 
@@ -565,7 +565,7 @@ Answer: **sufficient but not necessary**.
 
 Answer: **neither necessary nor sufficient**.
 
-**(c)** Since $a^2 \geq 0$ and $b^2 \geq 0$, the sum $a^2 + b^2 = 0$ only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
+**(c)** Since $a^2 \geq 0$ and $b^2 \geq 0$, the sum $a^2 + b^2 = 0$ only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{'\{'} and {'\}'} b = 0$.
 
 Answer: **both necessary and sufficient**.
 

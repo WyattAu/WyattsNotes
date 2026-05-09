@@ -333,7 +333,7 @@ $\gt{}$ node value.
 
 **Theorem 2.3.** The expected height of a randomly built BST with $n$ distinct keys is $O(\log n)$.
 
-*Proof.* Let $X_n$ be the height of a BST built from $n$ random keys. Let $Y_n = 2^{X_n}$. Then $\mathrm{E}[Y_n] \leq \frac{1}{4} \sum_{i=0}^{n-1} \binom{n}{i} \mathrm{E}[Y_i] \mathrm{E}[Y_{n-1-i}] / n$. Using the indicator random variable technique, one can show $\mathrm{E}[Y_n] \leq \frac{c^{n+1}}{n^{3/2}} \sum_{i=0}^{n-1} \frac{i^{3/2}(n-1-i)^{3/2}}{c^i c^{n-1-i}} \leq c \cdot n^{3/2}$ for some constant $c$. Taking logs gives $\mathrm{E}[X_n] = \mathrm{E}[\log Y_n] \leq \log \mathrm{E}[Y_n] = O(\log n)$ by Jensen's inequality. $\blacksquare$
+*Proof.* Let $X_n$ be the height of a BST built from $n$ random keys. Let $Y_n = 2^{X_n}$. Then $\mathrm{'\{'}E{'\}'}[Y_n] \leq \frac{1}{4} \sum_{i=0}^{n-1} \binom{n}{i} \mathrm{'\{'}E{'\}'}[Y_i] \mathrm{'\{'}E{'\}'}[Y_{n-1-i}] / n$. Using the indicator random variable technique, one can show $\mathrm{'\{'}E{'\}'}[Y_n] \leq \frac{c^{n+1}}{n^{3/2}} \sum_{i=0}^{n-1} \frac{i^{3/2}(n-1-i)^{3/2}}{c^i c^{n-1-i}} \leq c \cdot n^{3/2}$ for some constant $c$. Taking logs gives $\mathrm{'\{'}E{'\}'}[X_n] = \mathrm{'\{'}E{'\}'}[\log Y_n] \leq \log \mathrm{'\{'}E{'\}'}[Y_n] = O(\log n)$ by Jensen's inequality. $\blacksquare$
 
 #### 2.4.1 AVL Trees
 
@@ -628,15 +628,15 @@ A graph $G = (V, E)$ can be represented by:
 
 - **Adjacency matrix:** $A_{ij} = 1$ if $(i,j) \in E$. Space: $O(V^2)$. Edge lookup: $O(1)$.
 - **Adjacency list:** For each vertex, store a list of neighbours. Space: $O(V + E)$. Iterating
-  over neighbours: $O(\mathrm{deg}(v))$.
+  over neighbours: $O(\mathrm{'\{'}deg{'\}'}(v))$.
 
 | Operation              | Adjacency Matrix | Adjacency List |
 | ---------------------- | ---------------- | -------------- |
 | Space                  | $O(V^2)$         | $O(V + E)$     |
-| Check edge $(u,v)$     | $O(1)$           | $O(\mathrm{deg}(u))$ |
-| Iterate neighbours     | $O(V)$           | $O(\mathrm{deg}(v))$ |
+| Check edge $(u,v)$     | $O(1)$           | $O(\mathrm{'\{'}deg{'\}'}(u))$ |
+| Iterate neighbours     | $O(V)$           | $O(\mathrm{'\{'}deg{'\}'}(v))$ |
 | Add edge               | $O(1)$           | $O(1)$         |
-| Remove edge            | $O(1)$           | $O(\mathrm{deg}(u))$ |
+| Remove edge            | $O(1)$           | $O(\mathrm{'\{'}deg{'\}'}(u))$ |
 
 :::caution Common Pitfall
 Choosing the wrong graph representation can make an algorithm asymptotically slower. Use adjacency matrices for dense graphs ($E \approx V^2$) and adjacency lists for sparse graphs ($E \ll V^2$). For example, BFS with an adjacency matrix takes $O(V^2)$ but with adjacency lists takes $O(V + E)$.
@@ -708,7 +708,7 @@ QuickSort(A, lo, hi):
         QuickSort(A, p + 1, hi)
 ```
 
-**Partition (Lomuto):** Select the last element as pivot. Iterate through the array, maintaining that elements $A[\mathrm{lo}..i]$ are $\leq$ pivot and $A[i+1..j-1]$ are $>$ pivot.
+**Partition (Lomuto):** Select the last element as pivot. Iterate through the array, maintaining that elements $A[\mathrm{'\{'}lo{'\}'}..i]$ are $\leq$ pivot and $A[i+1..j-1]$ are $>$ pivot.
 
 **Theorem 3.5.** Quicksort runs in $O(n \log n)$ expected time and $O(n^2)$ worst-case time.
 
@@ -717,11 +717,11 @@ comparisons is $O(n \log n)$ by an indicator random variable argument.
 
 Let $X_{ij}$ be the indicator random variable that $z_i$ and $z_j$ are compared, where $z_1, \ldots, z_n$ are the sorted elements. Since elements are compared only if one is an ancestor of the other in the recursion tree, and the pivot is chosen uniformly at random:
 
-$$\mathrm{E}[X_{ij}] = \Pr(z_i \mathrm{~and~} z_j \mathrm{~are~compared}) = \frac{2}{j - i + 1}$$
+$$\mathrm{'\{'}E{'\}'}[X_{ij}] = \Pr(z_i \mathrm{'\{'}~and~{'\}'} z_j \mathrm{'\{'}~are~compared{'\}'}) = \frac{2}{j - i + 1}$$
 
 The total number of comparisons is $X = \sum_{i < j} X_{ij}$, so:
 
-$$\mathrm{E}[X] = \sum_{i=1}^{n-1} \sum_{j=i+1}^{n} \frac{2}{j - i + 1} \leq \sum_{k=1}^{n} n \cdot \frac{2}{k+1} = O(n \log n)$$
+$$\mathrm{'\{'}E{'\}'}[X] = \sum_{i=1}^{n-1} \sum_{j=i+1}^{n} \frac{2}{j - i + 1} \leq \sum_{k=1}^{n} n \cdot \frac{2}{k+1} = O(n \log n)$$
 
 Worst case occurs when the pivot is always the smallest or largest element (e.g., already sorted
 array with first-element pivot): $T(n) = T(n-1) + O(n) = O(n^2)$. $\blacksquare$
@@ -1316,7 +1316,7 @@ optimal BST, matrix chain multiplication.
 
 **Recurrence:**
 
-$$dp[i][c] = \begin{cases} 0 & \mathrm{if } i = 0 \mathrm{ or } c = 0 \\ dp[i-1][c] & \mathrm{if } w_i > c \\ \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) & \mathrm{if } w_i \leq c \end{cases}$$
+$$dp[i][c] = \begin{cases} 0 & \mathrm{'\{'}if {'\}'} i = 0 \mathrm{'\{'} or {'\}'} c = 0 \\ dp[i-1][c] & \mathrm{'\{'}if {'\}'} w_i > c \\ \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) & \mathrm{'\{'}if {'\}'} w_i \leq c \end{cases}$$
 
 **Time:** $O(nW)$. **Space:** $O(nW)$ (can be reduced to $O(W)$ with 1D array).
 
@@ -1351,7 +1351,7 @@ Optimal: items 2 and 3 ($w=3+4=7$, $v=4+5=9$).
 
 **Recurrence:**
 
-$$dp[i][j] = \begin{cases} j & \mathrm{if } i = 0 \\ i & \mathrm{if } j = 0 \\ dp[i-1][j-1] & \mathrm{if } s[i] = t[j] \\ 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm{if } s[i] \neq t[j] \end{cases}$$
+$$dp[i][j] = \begin{cases} j & \mathrm{'\{'}if {'\}'} i = 0 \\ i & \mathrm{'\{'}if {'\}'} j = 0 \\ dp[i-1][j-1] & \mathrm{'\{'}if {'\}'} s[i] = t[j] \\ 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm{'\{'}if {'\}'} s[i] \neq t[j] \end{cases}$$
 
 where the three cases in the minimum are: delete from $s$, insert into $s$, substitute in $s$.
 
@@ -1386,7 +1386,7 @@ Transform: kitten → sitten (substitute k→s) → sittin (substitute e→i) �
 
 **Recurrence:**
 
-$$dp[i][j] = \begin{cases} 0 & \mathrm{if } i = j \\ \min_{i \leq k < j} (dp[i][k] + dp[k+1][j] + p_{i-1} p_k p_j) & \mathrm{if } i < j \end{cases}$$
+$$dp[i][j] = \begin{cases} 0 & \mathrm{'\{'}if {'\}'} i = j \\ \min_{i \leq k < j} (dp[i][k] + dp[k+1][j] + p_{i-1} p_k p_j) & \mathrm{'\{'}if {'\}'} i < j \end{cases}$$
 
 **Time:** $O(n^3)$. **Space:** $O(n^2)$.
 
@@ -1415,12 +1415,12 @@ Minimum: $dp[1][3] = 4500$, split at $k=2$: $(A_1(A_2 A_3))$.
 
 **Recurrence:**
 
-$$dp[i][j] = \begin{cases} 0 & \mathrm{if } i = 0 \mathrm{ or } j = 0 \\ dp[i-1][j-1] + 1 & \mathrm{if } x_i = y_j \\ \max(dp[i-1][j], dp[i][j-1]) & \mathrm{if } x_i \neq y_j \end{cases}$$
+$$dp[i][j] = \begin{cases} 0 & \mathrm{'\{'}if {'\}'} i = 0 \mathrm{'\{'} or {'\}'} j = 0 \\ dp[i-1][j-1] + 1 & \mathrm{'\{'}if {'\}'} x_i = y_j \\ \max(dp[i-1][j], dp[i][j-1]) & \mathrm{'\{'}if {'\}'} x_i \neq y_j \end{cases}$$
 
 **Time:** $O(mn)$. **Space:** $O(mn)$ (can be reduced to $O(\min(m,n))$ for the length only).
 
 *Proof of correctness.* If $x_i = y_j$, any LCS of $X[1..i]$ and $Y[1..j]$ must include $x_i$,
-so $\mathrm{LCS} = 1 + \mathrm{LCS}(X[1..i-1], Y[1..j-1])$. If $x_i \neq y_j$, the LCS either
+so $\mathrm{'\{'}LCS{'\}'} = 1 + \mathrm{'\{'}LCS{'\}'}(X[1..i-1], Y[1..j-1])$. If $x_i \neq y_j$, the LCS either
 excludes $x_i$ or excludes $y_j$, giving the max of the two subproblems. $\blacksquare$
 
 ### 5.9 Worked Example: Coin Change
@@ -1429,7 +1429,7 @@ excludes $x_i$ or excludes $y_j$, giving the max of the two subproblems. $\black
 
 **Recurrence:**
 
-$$dp[c] = \begin{cases} 0 & \mathrm{if } c = 0 \\ \min_{i: d_i \leq c}(dp[c - d_i] + 1) & \mathrm{if } c > 0 \end{cases}$$
+$$dp[c] = \begin{cases} 0 & \mathrm{'\{'}if {'\}'} c = 0 \\ \min_{i: d_i \leq c}(dp[c - d_i] + 1) & \mathrm{'\{'}if {'\}'} c > 0 \end{cases}$$
 
 **Time:** $O(nM)$. **Space:** $O(M)$.
 
@@ -1459,7 +1459,7 @@ Solution: 2 quarters + 1 dime + 3 pennies = $25 + 25 + 10 + 1 + 1 + 1 = 63$. 6 c
 
 **Problem.** Given a sequence $a_1, \ldots, a_n$, find the length of the longest strictly increasing subsequence (not necessarily contiguous).
 
-**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt{} i \mathrm{~and~} a_j \lt{} a_i\\}$, with $dp[i] = 1$ if no such $j$ exists.
+**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt{} i \mathrm{'\{'}~and~{'\}'} a_j \lt{} a_i\\}$, with $dp[i] = 1$ if no such $j$ exists.
 
 **Time:** $O(n^2)$. **Space:** $O(n)$.
 
@@ -1514,7 +1514,7 @@ transforms instances of $A$ into instances of $B$, preserving the answer.
 
 **Theorem 6.2 (Cook-Levin, 1971).** SAT is NP-complete.
 
-*Proof sketch.* We show that every problem in NP reduces to SAT. Let $L \in \mathrm{NP}$. There exists a polynomial-time non-deterministic Turing machine $M$ that decides $L$, running in time $p(n)$ on inputs of length $n$. For an input $x$, we construct a Boolean formula $\phi_x$ that is satisfiable if and only if $M$ accepts $x$.
+*Proof sketch.* We show that every problem in NP reduces to SAT. Let $L \in \mathrm{'\{'}NP{'\}'}$. There exists a polynomial-time non-deterministic Turing machine $M$ that decides $L$, running in time $p(n)$ on inputs of length $n$. For an input $x$, we construct a Boolean formula $\phi_x$ that is satisfiable if and only if $M$ accepts $x$.
 
 The formula encodes:
 1. **Tableau variables:** $T[i, j, \sigma] = 1$ iff cell $(i, j)$ of the computation tableau contains symbol $\sigma$. The tableau has $p(n) + 1$ rows and $p(n)$ columns.
@@ -1543,7 +1543,7 @@ tour of total weight $\leq B$?
 
 To prove a problem $B$ is NP-complete:
 
-1. Show $B \in \mathrm{NP}$ (polynomial-time verifiable certificate).
+1. Show $B \in \mathrm{'\{'}NP{'\}'}$ (polynomial-time verifiable certificate).
 2. Show a known NP-complete problem $A$ reduces to $B$: $A \leq_p B$.
 
 **Example.** 3-SAT $\leq_p$ Vertex Cover: construct a graph from the 3-SAT formula where each
@@ -1563,7 +1563,7 @@ For each clause vertex $c_{jk}$, connect it to the literal vertex corresponding 
 
 **Claim:** $\phi$ is satisfiable iff the graph has a vertex cover of size $k + 2m$ where $k$ is the number of variables and $m$ is the number of clauses.
 
-($\Rightarrow$) If $\phi$ is satisfiable, include in the cover: for each variable, the literal vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm{true}$, $\bar{x}_1$ if $x_1 = \mathrm{false}$). This covers all literal edges ($k$ vertices). For each clause triangle, at least one literal in the clause is true, so the corresponding literal vertex covers one of the three edges from the triangle. Include the other two vertices of the triangle ($2m$ vertices total).
+($\Rightarrow$) If $\phi$ is satisfiable, include in the cover: for each variable, the literal vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm{'\{'}true{'\}'}$, $\bar{x}_1$ if $x_1 = \mathrm{'\{'}false{'\}'}$). This covers all literal edges ($k$ vertices). For each clause triangle, at least one literal in the clause is true, so the corresponding literal vertex covers one of the three edges from the triangle. Include the other two vertices of the triangle ($2m$ vertices total).
 
 ($\Leftarrow$) A vertex cover of size $k + 2m$ must include exactly one endpoint of each literal edge (otherwise the triangle requires 3 vertices). Set each variable according to which literal vertex is in the cover. Each clause triangle has exactly one uncovered vertex, whose edge to a literal vertex is covered by that literal vertex, meaning the clause is satisfied.
 
@@ -1585,11 +1585,11 @@ When exact solutions are intractable, we seek approximation algorithms with prov
 
 **Theorem 6.3.** Greedy vertex cover (repeatedly pick an edge, add both endpoints) is a 2-approximation.
 
-*Proof.* The algorithm selects a set $C$ of vertices. Each edge in the matching used by the algorithm contributes 2 vertices to $C$. Let $M^*$ be a maximum matching. Then $|C| = 2|M^*| \leq 2 \cdot |\mathrm{OPT}|$, since OPT must contain at least one endpoint of every edge in $M^*$ (and $M^*$ is maximum, so $|M^*| \geq$ the size of any matching). Therefore the approximation ratio is at most 2. $\blacksquare$
+*Proof.* The algorithm selects a set $C$ of vertices. Each edge in the matching used by the algorithm contributes 2 vertices to $C$. Let $M^*$ be a maximum matching. Then $|C| = 2|M^*| \leq 2 \cdot |\mathrm{'\{'}OPT{'\}'}|$, since OPT must contain at least one endpoint of every edge in $M^*$ (and $M^*$ is maximum, so $|M^*| \geq$ the size of any matching). Therefore the approximation ratio is at most 2. $\blacksquare$
 
 **Theorem 6.4 (Metric TSP).** The Christofides algorithm is a $3/2$-approximation for TSP with the triangle inequality.
 
-*Proof.* The algorithm computes an MST ($\leq \mathrm{OPT}$), finds a minimum-weight perfect matching $M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm{OPT}/2$), and combines them into an Eulerian tour which is shortcut to a Hamiltonian cycle. The total weight is at most $\mathrm{MST} + \lvert M \rvert \leq \mathrm{OPT} + \mathrm{OPT}/2 = \frac{3}{2}\mathrm{OPT}$. $\blacksquare$
+*Proof.* The algorithm computes an MST ($\leq \mathrm{'\{'}OPT{'\}'}$), finds a minimum-weight perfect matching $M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm{'\{'}OPT{'\}'}/2$), and combines them into an Eulerian tour which is shortcut to a Hamiltonian cycle. The total weight is at most $\mathrm{'\{'}MST{'\}'} + \lvert M \rvert \leq \mathrm{'\{'}OPT{'\}'} + \mathrm{'\{'}OPT{'\}'}/2 = \frac{3}{2}\mathrm{'\{'}OPT{'\}'}$. $\blacksquare$
 
 **Theorem 6.5 (Inapproximability).** Unless P = NP, TSP (general, without triangle inequality) has no polynomial-time approximation algorithm with any constant ratio.
 
@@ -1597,7 +1597,7 @@ When exact solutions are intractable, we seek approximation algorithms with prov
 
 **Theorem 6.6 (SET COVER).** The greedy algorithm for SET COVER is a $(\ln n + O(1))$-approximation, where $n$ is the size of the universe.
 
-*Proof sketch.* At each step, the greedy algorithm picks the set covering the most uncovered elements. Let $c_i$ be the cost of the $i$-th set picked, and let $n_i$ be the number of newly covered elements. Then $c_i / n_i \leq \mathrm{OPT} / (n - \sum_{j \lt{} i} n_j)$ (otherwise OPT could not cover the remaining elements at lower cost). Summing gives the $\ln n + O(1)$ bound. $\blacksquare$
+*Proof sketch.* At each step, the greedy algorithm picks the set covering the most uncovered elements. Let $c_i$ be the cost of the $i$-th set picked, and let $n_i$ be the number of newly covered elements. Then $c_i / n_i \leq \mathrm{'\{'}OPT{'\}'} / (n - \sum_{j \lt{} i} n_j)$ (otherwise OPT could not cover the remaining elements at lower cost). Summing gives the $\ln n + O(1)$ bound. $\blacksquare$
 
 <details>
 <summary>Worked Example: Greedy Set Cover</summary>
@@ -1628,7 +1628,7 @@ Universe $U = \\{1, 2, 3, 4, 5, 6\\}$. Sets: $S_1 = \\{1, 2, 3\\}$, $S_2 = \\{2,
 
 **Theorem 6.6.** A Monte Carlo algorithm with error probability $\epsilon$ can be amplified to error probability $\epsilon^k$ by running it $k$ times and taking the majority vote (for decision problems with one-sided error) or the most frequent answer (for two-sided error).
 
-*Proof.* For one-sided error: $\Pr[\mathrm{all~} k \mathrm{~runs~fail}] = \epsilon^k$. For two-sided error with majority vote: by the Chernoff bound, the probability that the majority is wrong decreases exponentially in $k$. $\blacksquare$
+*Proof.* For one-sided error: $\Pr[\mathrm{'\{'}all~{'\}'} k \mathrm{'\{'}~runs~fail{'\}'}] = \epsilon^k$. For two-sided error with majority vote: by the Chernoff bound, the probability that the majority is wrong decreases exponentially in $k$. $\blacksquare$
 
 #### 6.3.2 Randomised Select (Quickselect)
 
@@ -1691,11 +1691,11 @@ The error probability of Miller-Rabin is at most $1/4$ per random base, so $k$ i
 
 #### 6.3.3 Hashing with Universal Hash Functions
 
-**Definition.** A family $\mathcal{H}$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$ is **universal** if for any distinct $x, y \in U$, $\Pr_{h \in \mathcal{H}}[h(x) = h(y)] \leq 1/m$.
+**Definition.** A family $\mathcal{'\{'}H{'\}'}$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$ is **universal** if for any distinct $x, y \in U$, $\Pr_{h \in \mathcal{'\{'}H{'\}'}}[h(x) = h(y)] \leq 1/m$.
 
 **Theorem 6.8.** With a universal hash family and chaining, the expected number of collisions for any element is at most $n/m$.
 
-*Proof.* For a fixed element $x$, let $X_{iy}$ be the indicator that $h(x) = h(y_i)$ where $y_1, \ldots, y_n$ are the other $n-1$ elements. Then $\mathrm{E}[X_{iy}] = \Pr[h(x) = h(y_i)] \leq 1/m$ by universality. By linearity of expectation, the expected number of collisions is $\sum_i \mathrm{E}[X_{iy}] \leq (n-1)/m$. $\blacksquare$
+*Proof.* For a fixed element $x$, let $X_{iy}$ be the indicator that $h(x) = h(y_i)$ where $y_1, \ldots, y_n$ are the other $n-1$ elements. Then $\mathrm{'\{'}E{'\}'}[X_{iy}] = \Pr[h(x) = h(y_i)] \leq 1/m$ by universality. By linearity of expectation, the expected number of collisions is $\sum_i \mathrm{'\{'}E{'\}'}[X_{iy}] \leq (n-1)/m$. $\blacksquare$
 
 ### 6.4 Amortised Analysis (Detailed)
 
@@ -1744,7 +1744,7 @@ A splay tree is a BST where every access is followed by a **splay** operation th
 
 **Access Lemma.** The amortised cost of splaying a node $x$ in a splay tree with $n$ nodes is $O(\log n)$.
 
-*Proof sketch.* Define the potential as $\Phi(T) = \sum_{x \in T} \log \mathrm{size}(x)$, where $\mathrm{size}(x)$ is the number of nodes in the subtree rooted at $x$ (including $x$). Define the **rank** $r(x) = \log \mathrm{size}(x)$.
+*Proof sketch.* Define the potential as $\Phi(T) = \sum_{x \in T} \log \mathrm{'\{'}size{'\}'}(x)$, where $\mathrm{'\{'}size{'\}'}(x)$ is the number of nodes in the subtree rooted at $x$ (including $x$). Define the **rank** $r(x) = \log \mathrm{'\{'}size{'\}'}(x)$.
 
 The amortised cost of a splay step at node $x$ with parent $p$ and grandparent $g$ is $\hat{c} = 1 + r'(x) - r(x)$, where primes denote ranks after the step.
 
@@ -1752,7 +1752,7 @@ The amortised cost of a splay step at node $x$ with parent $p$ and grandparent $
 - **Zig-zig:** $\hat{c} = 2 + r'(x) - r(x) \leq 3(r'(x) - r(x))$.
 - **Zig-zag:** $\hat{c} = 2 + r'(x) - r(x) \leq 3(r'(x) - r(x))$.
 
-Summing over all splay steps: $\hat{c}_{\mathrm{total}} \leq 1 + 3(r_{\mathrm{final}}(x) - r_{\mathrm{initial}}(x)) \leq 1 + 3 \log n = O(\log n)$. $\blacksquare$
+Summing over all splay steps: $\hat{c}_{\mathrm{'\{'}total{'\}'}} \leq 1 + 3(r_{\mathrm{'\{'}final{'\}'}}(x) - r_{\mathrm{'\{'}initial{'\}'}}(x)) \leq 1 + 3 \log n = O(\log n)$. $\blacksquare$
 
 **Corollary.** A sequence of $m$ splay tree operations takes $O(m \log n)$ amortised time.
 </details>

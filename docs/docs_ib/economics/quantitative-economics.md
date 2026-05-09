@@ -10,7 +10,7 @@ slug: quantitative-economics
 
 An index number measures the change in a variable (or group of variables) relative to a base period:
 
-$$\text{Index}_t = \frac{P_t}{P_0} \times 100$$
+$$\text{'\{'}Index{'\}'}_t = \frac{P_t}{P_0} \times 100$$
 
 Where $P_t$ is the value in period $t$ and $P_0$ is the value in the base period. The base period
 is assigned an index value of 100.
@@ -18,7 +18,7 @@ is assigned an index value of 100.
 **Weighted index numbers** are used when aggregating multiple items with different importance. For a
 price index with $n$ goods:
 
-$$\text{Price Index}_t = \frac{\sum_{i=1}^{n} P_{i,t} \times Q_{i,0}}{\sum_{i=1}^{n} P_{i,0} \times Q_{i,0}} \times 100$$
+$$\text{'\{'}Price Index{'\}'}_t = \frac{\sum_{i=1}^{n} P_{i,t} \times Q_{i,0}}{\sum_{i=1}^{n} P_{i,0} \times Q_{i,0}} \times 100$$
 
 This is a **Laspeyres index**, which uses base-period quantities as weights. It tends to overstate
 inflation because it does not account for consumer substitution away from goods that have become
@@ -26,22 +26,22 @@ relatively more expensive.
 
 A **Paasche index** uses current-period quantities as weights:
 
-$$\text{Paasche Index}_t = \frac{\sum_{i=1}^{n} P_{i,t} \times Q_{i,t}}{\sum_{i=1}^{n} P_{i,0} \times Q_{i,t}} \times 100$$
+$$\text{'\{'}Paasche Index{'\}'}_t = \frac{\sum_{i=1}^{n} P_{i,t} \times Q_{i,t}}{\sum_{i=1}^{n} P_{i,0} \times Q_{i,t}} \times 100$$
 
 ### Using Index Numbers
 
 To convert a nominal value to a real value using an index number:
 
-$$\text{Real value} = \frac{\text{Nominal value}}{\text{Price index}} \times 100$$
+$$\text{'\{'}Real value{'\}'} = \frac{\text{'\{'}Nominal value{'\}'}}{\text{'\{'}Price index{'\}'}} \times 100$$
 
 To calculate the percentage change between two index values:
 
-$$\%\Delta = \frac{\text{Index}_t - \text{Index}_{t-1}}{\text{Index}_{t-1}} \times 100$$
+$$\%\Delta = \frac{\text{'\{'}Index{'\}'}_t - \text{'\{'}Index{'\}'}_{t-1}}{\text{'\{'}Index{'\}'}_{t-1}} \times 100$$
 
 **Splicing index numbers** when the base year changes: if the old index (base $= 2000$) is 120 in
 2015, and the new index (base $= 2015$) is 105 in 2020, the 2020 value on the old base is:
 
-$$\text{Index}_{2020} = 120 \times \frac{105}{100} = 126$$
+$$\text{'\{'}Index{'\}'}_{2020} = 120 \times \frac{105}{100} = 126$$
 
 ## Real vs. Nominal Calculations
 
@@ -52,9 +52,9 @@ $$\text{Index}_{2020} = 120 \times \frac{105}{100} = 126$$
 
 ### GDP Deflator
 
-$$\text{GDP Deflator} = \frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100$$
+$$\text{'\{'}GDP Deflator{'\}'} = \frac{\text{'\{'}Nominal GDP{'\}'}}{\text{'\{'}Real GDP{'\}'}} \times 100$$
 
-$$\text{Real GDP} = \frac{\text{Nominal GDP}}{\text{GDP Deflator}} \times 100$$
+$$\text{'\{'}Real GDP{'\}'} = \frac{\text{'\{'}Nominal GDP{'\}'}}{\text{'\{'}GDP Deflator{'\}'}} \times 100$$
 
 ### Real Interest Rates
 
@@ -81,13 +81,13 @@ approximately $3\%$.
 
 ### Real Wage Calculations
 
-$$\text{Real wage}_t = \frac{\text{Nominal wage}_t}{\text{CPI}_t} \times 100$$
+$$\text{'\{'}Real wage{'\}'}_t = \frac{\text{'\{'}Nominal wage{'\}'}_t}{\text{'\{'}CPI{'\}'}_t} \times 100$$
 
 A worker whose nominal wage rises from `USD 40000` to `USD 42000` while the CPI rises from 200 to 220
 has experienced a decrease in real wages:
 
-$$\text{Real wage}_{\text{old}} = \frac{40000}{200} \times 100 = 200$$
-$$\text{Real wage}_{\text{new}} = \frac{42000}{220} \times 100 = 190.91$$
+$$\text{'\{'}Real wage{'\}'}_{\text{'\{'}old{'\}'}} = \frac{40000}{200} \times 100 = 200$$
+$$\text{'\{'}Real wage{'\}'}_{\text{'\{'}new{'\}'}} = \frac{42000}{220} \times 100 = 190.91$$
 
 The nominal increase of $5\%$ is more than offset by inflation of $10\%$, so purchasing power falls.
 
@@ -118,11 +118,11 @@ $$FV = PV \times e^{r \times n}$$
 The EAR converts a stated nominal rate with multiple compounding periods into the equivalent annual
 rate:
 
-$$\text{EAR} = \left(1 + \frac{r}{m}\right)^m - 1$$
+$$\text{'\{'}EAR{'\}'} = \left(1 + \frac{r}{m}\right)^m - 1$$
 
 A nominal rate of $12\%$ compounded monthly gives:
 
-$$\text{EAR} = \left(1 + \frac{0.12}{12}\right)^{12} - 1 = (1.01)^{12} - 1 = 0.1268 = 12.68\%$$
+$$\text{'\{'}EAR{'\}'} = \left(1 + \frac{0.12}{12}\right)^{12} - 1 = (1.01)^{12} - 1 = 0.1268 = 12.68\%$$
 
 ### Present Value and Discounting
 
@@ -148,7 +148,7 @@ $$PV = \frac{A}{r}$$
 NPV is the sum of the present values of all cash flows (positive and negative) associated with a
 project:
 
-$$\text{NPV} = \sum_{t=0}^{T} \frac{CF_t}{(1 + r)^t}$$
+$$\text{'\{'}NPV{'\}'} = \sum_{t=0}^{T} \frac{CF_t}{(1 + r)^t}$$
 
 Where $CF_t$ is the cash flow in period $t$ and $r$ is the discount rate.
 
@@ -193,7 +193,7 @@ consumption, and $g$ is the growth rate of per capita consumption.
 
 ### Benefit-Cost Ratio (BCR)
 
-$$\text{BCR} = \frac{\text{Present Value of Benefits}}{\text{Present Value of Costs}}$$
+$$\text{'\{'}BCR{'\}'} = \frac{\text{'\{'}Present Value of Benefits{'\}'}}{\text{'\{'}Present Value of Costs{'\}'}}$$
 
 - BCR $> 1$: benefits exceed costs (project is viable)
 - BCR $= 1$: benefits equal costs (indifferent)
@@ -273,7 +273,7 @@ $$G = 1 - [0.01 + 0.04 + 0.09 + 0.16 + 0.30] = 1 - 0.60 = 0.40$$
 
 The proportion of the population living below the poverty line:
 
-$$\text{Headcount ratio} = \frac{\text{Number of people below the poverty line}}{\text{Total population}} \times 100$$
+$$\text{'\{'}Headcount ratio{'\}'} = \frac{\text{'\{'}Number of people below the poverty line{'\}'}}{\text{'\{'}Total population{'\}'}} \times 100$$
 
 Limitation: it does not capture the depth or severity of poverty -- a small transfer that lifts one
 person above the line reduces the headcount ratio, even if millions remain in deep poverty.
@@ -283,14 +283,14 @@ person above the line reduces the headcount ratio, even if millions remain in de
 The poverty gap measures the average distance below the poverty line, expressed as a proportion of
 the poverty line:
 
-$$\text{Poverty gap} = \frac{1}{N} \sum_{i=1}^{q} \frac{z - y_i}{z}$$
+$$\text{'\{'}Poverty gap{'\}'} = \frac{1}{N} \sum_{i=1}^{q} \frac{z - y_i}{z}$$
 
 Where $N$ is the total population, $q$ is the number of poor people, $z$ is the poverty line, and
 $y_i$ is the income of person $i$ (for those below the poverty line).
 
 **Total poverty gap** (aggregate shortfall):
 
-$$\text{Total poverty gap} = \sum_{i=1}^{q} (z - y_i)$$
+$$\text{'\{'}Total poverty gap{'\}'} = \sum_{i=1}^{q} (z - y_i)$$
 
 The total poverty gap divided by the poverty line and the total population gives the income
 shortfall as a percentage of the poverty line, averaged over the entire population.
@@ -314,7 +314,7 @@ A household is multidimensionally poor if it is deprived in at least one-third o
 indicators. The MPI is the product of the headcount ratio (proportion of multidimensionally poor)
 and the average deprivation share among the poor:
 
-$$\text{MPI} = H \times A$$
+$$\text{'\{'}MPI{'\}'} = H \times A$$
 
 Where $H$ is the proportion of the population that is multidimensionally poor, and $A$ is the
 average proportion of weighted indicators in which poor households are deprived.
@@ -334,7 +334,7 @@ The HDI combines three dimensions:
 
 For each dimension, an index is calculated using minimum and maximum goalposts:
 
-$$\text{Dimension index} = \frac{\text{Actual value} - \text{Minimum value}}{\text{Maximum value} - \text{Minimum value}}$$
+$$\text{'\{'}Dimension index{'\}'} = \frac{\text{'\{'}Actual value{'\}'} - \text{'\{'}Minimum value{'\}'}}{\text{'\{'}Maximum value{'\}'} - \text{'\{'}Minimum value{'\}'}}$$
 
 **Goalposts:**
 
@@ -347,20 +347,20 @@ $$\text{Dimension index} = \frac{\text{Actual value} - \text{Minimum value}}{\te
 
 The education index is the arithmetic mean of the two education indicators:
 
-$$\text{Education index} = \frac{\text{Mean years index} + \text{Expected years index}}{2}$$
+$$\text{'\{'}Education index{'\}'} = \frac{\text{'\{'}Mean years index{'\}'} + \text{'\{'}Expected years index{'\}'}}{2}$$
 
 The GNI index uses the logarithm of GNI per capita to reflect diminishing returns to income:
 
-$$\text{GNI index} = \frac{\ln(\text{GNI per capita}) - \ln(100)}{\ln(75000) - \ln(100)}$$
+$$\text{'\{'}GNI index{'\}'} = \frac{\ln(\text{'\{'}GNI per capita{'\}'}) - \ln(100)}{\ln(75000) - \ln(100)}$$
 
 The HDI is the geometric mean of the three dimension indices:
 
-$$\text{HDI} = (\text{Health index} \times \text{Education index} \times \text{GNI index})^{1/3}$$
+$$\text{'\{'}HDI{'\}'} = (\text{'\{'}Health index{'\}'} \times \text{'\{'}Education index{'\}'} \times \text{'\{'}GNI index{'\}'})^{1/3}$$
 
 ### Worked Example
 
 A country has: life expectancy $= 75$ years, mean years of schooling $= 10$, expected years of
-schooling $= 14$, GNI per capita (PPP) $= \text{USD }15000$.
+schooling $= 14$, GNI per capita (PPP) $= \text{'\{'}USD {'\}'}15000$.
 
 Health index $= \frac{75 - 20}{85 - 20} = \frac{55}{65} = 0.846$
 
@@ -372,7 +372,7 @@ Education index $= \frac{0.667 + 0.778}{2} = 0.722$
 
 GNI index $= \frac{\ln(15000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{9.616 - 4.605}{11.225 - 4.605} = \frac{5.011}{6.620} = 0.757$
 
-$$\text{HDI} = (0.846 \times 0.722 \times 0.757)^{1/3} = (0.462)^{1/3} = 0.773$$
+$$\text{'\{'}HDI{'\}'} = (0.846 \times 0.722 \times 0.757)^{1/3} = (0.462)^{1/3} = 0.773$$
 
 This country falls in the "high human development" category ($0.700$--$0.799$).
 
@@ -403,45 +403,45 @@ $$I + G + X = S + T + M$$
 
 - **Marginal propensity to consume (MPC)**: the fraction of additional income that is spent on
   consumption:
-  $$\mathrm{MPC} = \frac{\Delta C}{\Delta Y}$$
+  $$\mathrm{'\{'}MPC{'\}'} = \frac{\Delta C}{\Delta Y}$$
 - **Marginal propensity to save (MPS)**: the fraction of additional income that is saved:
-  $$\mathrm{MPS} = \frac{\Delta S}{\Delta Y}$$
+  $$\mathrm{'\{'}MPS{'\}'} = \frac{\Delta S}{\Delta Y}$$
 - **Marginal propensity to tax (MPT)**: the fraction of additional income paid in tax:
-  $$\mathrm{MPT} = \frac{\Delta T}{\Delta Y}$$
+  $$\mathrm{'\{'}MPT{'\}'} = \frac{\Delta T}{\Delta Y}$$
 - **Marginal propensity to import (MPM)**: the fraction of additional income spent on imports:
-  $$\mathrm{MPM} = \frac{\Delta M}{\Delta Y}$$
+  $$\mathrm{'\{'}MPM{'\}'} = \frac{\Delta M}{\Delta Y}$$
 
-By definition: $\mathrm{MPC} + \mathrm{MPS} = 1$ (in a closed economy with no government).
+By definition: $\mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPS{'\}'} = 1$ (in a closed economy with no government).
 
 ### The Simple Multiplier
 
 In a closed economy with no government, the multiplier is:
 
-$$k = \frac{1}{\mathrm{MPS}} = \frac{1}{1 - \mathrm{MPC}}$$
+$$k = \frac{1}{\mathrm{'\{'}MPS{'\}'}} = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}}$$
 
 **Derivation:** an initial injection $\Delta I$ generates income $\Delta Y_1 = \Delta I$. Recipients
-spend $\mathrm{MPC} \times \Delta Y_1$ of this, generating income $\Delta Y_2 = \mathrm{MPC}^2 \times
+spend $\mathrm{'\{'}MPC{'\}'} \times \Delta Y_1$ of this, generating income $\Delta Y_2 = \mathrm`\{MPC}`^2 \times
 \Delta I$, and so on:
 
-$$\Delta Y = \Delta I \times (1 + \mathrm{MPC} + \mathrm{MPC}^2 + \mathrm{MPC}^3 + \cdots)$$
+$$\Delta Y = \Delta I \times (1 + \mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPC{'\}'}^2 + \mathrm{'\{'}MPC{'\}'}^3 + \cdots)$$
 
-This is a geometric series with first term $1$ and common ratio $\mathrm{MPC}$ ($< 1$):
+This is a geometric series with first term $1$ and common ratio $\mathrm{'\{'}MPC{'\}'}$ ($< 1$):
 
-$$\Delta Y = \Delta I \times \frac{1}{1 - \mathrm{MPC}} = \Delta I \times k$$
+$$\Delta Y = \Delta I \times \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}} = \Delta I \times k$$
 
 ### The Complex Multiplier
 
 In an open economy with government:
 
-$$k = \frac{1}{\mathrm{MPS} + \mathrm{MPT} + \mathrm{MPM}} = \frac{1}{1 - \mathrm{MPC}(1 - t) + \mathrm{MPM}}$$
+$$k = \frac{1}{\mathrm{'\{'}MPS{'\}'} + \mathrm{'\{'}MPT{'\}'} + \mathrm{'\{'}MPM{'\}'}} = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}(1 - t) + \mathrm{'\{'}MPM{'\}'}}$$
 
-Where $t$ is the proportional tax rate (if taxes are proportional: $\mathrm{MPT} = t$).
+Where $t$ is the proportional tax rate (if taxes are proportional: $\mathrm{'\{'}MPT{'\}'} = t$).
 
 The multiplier is smaller because:
 
-- Taxes withdraw income at each round of spending ($\mathrm{MPT}$)
-- Imports are spending that leaks abroad ($\mathrm{MPM}$)
-- Savings are a leakage ($\mathrm{MPS}$)
+- Taxes withdraw income at each round of spending ($\mathrm{'\{'}MPT{'\}'}$)
+- Imports are spending that leaks abroad ($\mathrm{'\{'}MPM{'\}'}$)
+- Savings are a leakage ($\mathrm{'\{'}MPS{'\}'}$)
 
 ### The Balanced Budget Multiplier
 
@@ -449,15 +449,15 @@ If government spending and taxes increase by the same amount ($\Delta G = \Delta
 
 $$\Delta Y = \Delta G \times k_G + \Delta T \times k_T$$
 
-Where $k_G = \frac{1}{1 - \mathrm{MPC}}$ (government spending multiplier) and $k_T =
-\frac{-\mathrm{MPC}}{1 - \mathrm{MPC}}$ (tax multiplier, which is negative because higher taxes
+Where $k_G = \frac{1}{1 - \mathrm{'\{'}MPC{'\}'}}$ (government spending multiplier) and $k_T =
+\frac{-\mathrm`\{MPC}`}{1 - \mathrm`\{MPC}`}$ (tax multiplier, which is negative because higher taxes
 reduce disposable income and consumption).
 
-$$\Delta Y = \frac{\Delta G}{1 - \mathrm{MPC}} + \frac{-\mathrm{MPC} \times \Delta T}{1 - \mathrm{MPC}}$$
+$$\Delta Y = \frac{\Delta G}{1 - \mathrm{'\{'}MPC{'\}'}} + \frac{-\mathrm{'\{'}MPC{'\}'} \times \Delta T}{1 - \mathrm{'\{'}MPC{'\}'}}$$
 
 Since $\Delta G = \Delta T$:
 
-$$\Delta Y = \frac{\Delta G - \mathrm{MPC} \times \Delta G}{1 - \mathrm{MPC}} = \frac{\Delta G(1 - \mathrm{MPC})}{1 - \mathrm{MPC}} = \Delta G$$
+$$\Delta Y = \frac{\Delta G - \mathrm{'\{'}MPC{'\}'} \times \Delta G}{1 - \mathrm{'\{'}MPC{'\}'}} = \frac{\Delta G(1 - \mathrm{'\{'}MPC{'\}'})}{1 - \mathrm{'\{'}MPC{'\}'}} = \Delta G$$
 
 The balanced budget multiplier equals 1: equal increases in $G$ and $T$ increase GDP by the amount
 of the increase.
@@ -478,13 +478,13 @@ Where:
 
 **Average propensity to consume (APC):**
 
-$$\mathrm{APC} = \frac{C}{Y_d} = \frac{a}{Y_d} + b$$
+$$\mathrm{'\{'}APC{'\}'} = \frac{C}{Y_d} = \frac{a}{Y_d} + b$$
 
 APC falls as income rises (because the autonomous component $a/Y_d$ becomes smaller).
 
 **Average propensity to save (APS):**
 
-$$\mathrm{APS} = \frac{S}{Y_d} = 1 - \mathrm{APC}$$
+$$\mathrm{'\{'}APS{'\}'} = \frac{S}{Y_d} = 1 - \mathrm{'\{'}APC{'\}'}$$
 
 ### The Saving Function
 
@@ -493,7 +493,7 @@ Since $Y_d = C + S$:
 $$S = Y_d - C = Y_d - (a + bY_d) = -a + (1 - b)Y_d$$
 
 Where $-a$ is autonomous dissaving (when income is zero, households must consume $a$, so they
-dissave by $a$), and $(1 - b) = \mathrm{MPS}$.
+dissave by $a$), and $(1 - b) = \mathrm{'\{'}MPS{'\}'}$.
 
 ### Factors Shifting the Consumption Function
 
@@ -528,7 +528,7 @@ income, which helps explain why temporary tax cuts tend to have limited stimulat
 Modigliani proposed that individuals smooth consumption over their lifetime, borrowing when young,
 saving during working years, and dissaving in retirement:
 
-$$C = \frac{\text{Lifetime resources}}{\text{Expected years of life}}$$
+$$C = \frac{\text{'\{'}Lifetime resources{'\}'}}{\text{'\{'}Expected years of life{'\}'}}$$
 
 Implications:
 
@@ -541,10 +541,10 @@ Implications:
 ### Equilibrium Output
 
 The Keynesian cross model determines equilibrium output in the short run when prices are fixed. The
-45-degree line represents $Y = \text{Aggregate Expenditure (AE)}$. The AE line has a slope of
-$\mathrm{MPC}$ (in the simplest case where $\text{AE} = C + I$).
+45-degree line represents $Y = \text{'\{'}Aggregate Expenditure (AE){'\}'}$. The AE line has a slope of
+$\mathrm{'\{'}MPC{'\}'}$ (in the simplest case where $\text{'\{'}AE{'\}'} = C + I$).
 
-Equilibrium occurs where $\text{AE} = Y$:
+Equilibrium occurs where $\text{'\{'}AE{'\}'} = Y$:
 
 $$Y = C + I + G + (X - M)$$
 
@@ -562,7 +562,7 @@ $$Y^* = \frac{a - bT + I + G + X - M}{1 - b}$$
 
 This is the equilibrium level of output, which can also be written as:
 
-$$Y^* = \frac{\text{Autonomous expenditure}}{1 - \mathrm{MPC}} = k \times \text{Autonomous expenditure}$$
+$$Y^* = \frac{\text{'\{'}Autonomous expenditure{'\}'}}{1 - \mathrm{'\{'}MPC{'\}'}} = k \times \text{'\{'}Autonomous expenditure{'\}'}$$
 
 ### The Inflationary and Deflationary Gaps
 
@@ -722,7 +722,7 @@ A country's nominal GDP and GDP deflator are as follows:
 
 (c) Calculate the inflation rate between 2018 and 2019.
 
-(a) Real GDP $= \frac{\text{Nominal GDP}}{\text{GDP Deflator}} \times 100$
+(a) Real GDP $= \frac{\text{'\{'}Nominal GDP{'\}'}}{\text{'\{'}GDP Deflator{'\}'}} \times 100$
 
 - 2018: $\frac{1200}{110} \times 100 = \$1090.9$ billion
 - 2019: $\frac{1350}{118} \times 100 = \$1144.1$ billion
@@ -763,21 +763,21 @@ rate?
 (a) Net benefits each year: Year 0: $-500$, Year 1: $+50$, Year 2: $+100$, Year 3: $+150$,
 Year 4: $+200$, Year 5: $+250$.
 
-$$\text{NPV} = -500 + \frac{50}{1.08} + \frac{100}{1.08^2} + \frac{150}{1.08^3} + \frac{200}{1.08^4} + \frac{250}{1.08^5}$$
+$$\text{'\{'}NPV{'\}'} = -500 + \frac{50}{1.08} + \frac{100}{1.08^2} + \frac{150}{1.08^3} + \frac{200}{1.08^4} + \frac{250}{1.08^5}$$
 
-$$\text{NPV} = -500 + 46.30 + 85.73 + 119.07 + 147.01 + 170.15$$
+$$\text{'\{'}NPV{'\}'} = -500 + 46.30 + 85.73 + 119.07 + 147.01 + 170.15$$
 
-$$\text{NPV} = -500 + 568.26 = \$68.26 \text{ million}$$
+$$\text{'\{'}NPV{'\}'} = -500 + 568.26 = \$68.26 \text{'\{'} million{'\}'}$$
 
 (b) Since NPV $> 0$ (`USD 68.26` million), the project should be undertaken.
 
 (c) At $r = 12\%$:
 
-$$\text{NPV} = -500 + \frac{50}{1.12} + \frac{100}{1.12^2} + \frac{150}{1.12^3} + \frac{200}{1.12^4} + \frac{250}{1.12^5}$$
+$$\text{'\{'}NPV{'\}'} = -500 + \frac{50}{1.12} + \frac{100}{1.12^2} + \frac{150}{1.12^3} + \frac{200}{1.12^4} + \frac{250}{1.12^5}$$
 
-$$\text{NPV} = -500 + 44.64 + 79.72 + 106.77 + 127.10 + 141.86$$
+$$\text{'\{'}NPV{'\}'} = -500 + 44.64 + 79.72 + 106.77 + 127.10 + 141.86$$
 
-$$\text{NPV} = -500 + 500.09 = \$0.09 \text{ million}$$
+$$\text{'\{'}NPV{'\}'} = -500 + 500.09 = \$0.09 \text{'\{'} million{'\}'}$$
 
 At $12\%$, the NPV is approximately zero (borderline). The decision is sensitive to the discount rate:
 at $8\%$ the project is clearly viable; at $12\%$ it barely breaks even. This highlights the
@@ -872,7 +872,7 @@ $0.3Y = 690$
 
 $Y^* = 2300$ billion USD
 
-(b) Multiplier $= \frac{1}{1 - \mathrm{MPC} + \mathrm{MPM}} = \frac{1}{1 - 0.8 + 0.1} = \frac{1}{0.3} = 3.33$
+(b) Multiplier $= \frac{1}{1 - \mathrm{'\{'}MPC{'\}'} + \mathrm{'\{'}MPM{'\}'}} = \frac{1}{1 - 0.8 + 0.1} = \frac{1}{0.3} = 3.33$
 
 $\Delta Y = 3.33 \times 50 = \$166.7$ billion
 
@@ -908,7 +908,7 @@ Education index $= \frac{0.567 + 0.722}{2} = 0.644$
 
 GNI index $= \frac{\ln(8000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{8.987 - 4.605}{11.225 - 4.605} = \frac{4.382}{6.620} = 0.662$
 
-$\text{HDI}_P = (0.738 \times 0.644 \times 0.662)^{1/3} = (0.315)^{1/3} = 0.681$
+$\text{'\{'}HDI{'\}'}_P = (0.738 \times 0.644 \times 0.662)^{1/3} = (0.315)^{1/3} = 0.681$
 
 Country Q:
 
@@ -922,7 +922,7 @@ Education index $= \frac{0.800 + 0.889}{2} = 0.844$
 
 GNI index $= \frac{\ln(40000) - \ln(100)}{\ln(75000) - \ln(100)} = \frac{10.596 - 4.605}{6.620} = \frac{5.991}{6.620} = 0.905$
 
-$\text{HDI}_Q = (0.923 \times 0.844 \times 0.905)^{1/3} = (0.705)^{1/3} = 0.889$
+$\text{'\{'}HDI{'\}'}_Q = (0.923 \times 0.844 \times 0.905)^{1/3} = (0.705)^{1/3} = 0.889$
 
 (b) The HDI uses the logarithm of GNI per capita, which compresses income differences. Going from
 `USD 8000` to `USD 40000` (a 5-fold increase) translates into a much smaller difference in the GNI
@@ -1126,7 +1126,7 @@ NPV $> 0$, so the project is viable.
 
 The IRR is the discount rate that makes NPV $= 0$:
 
-$$\sum_{t=0}^{T} \frac{CF_t}{(1 + \text{IRR})^t} = 0$$
+$$\sum_{t=0}^{T} \frac{CF_t}{(1 + \text{'\{'}IRR{'\}'})^t} = 0$$
 
 The IRR cannot be solved algebraically for $T > 2$; it requires numerical methods. The project is
 acceptable if IRR $>$ the required rate of return (cost of capital).
@@ -1212,7 +1212,7 @@ The project is viable for discount rates up to approximately 14%. The IRR is app
 Standard CBA weights all costs and benefits equally regardless of who receives them. **Distributional
 weighting** assigns higher weights to benefits accruing to disadvantaged groups:
 
-$$\text{Weighted NPV} = \sum_{t=0}^{T} \sum_{g=1}^{G} w_g \cdot \frac{B_{g,t} - C_{g,t}}{(1 + r)^t}$$
+$$\text{'\{'}Weighted NPV{'\}'} = \sum_{t=0}^{T} \sum_{g=1}^{G} w_g \cdot \frac{B_{g,t} - C_{g,t}}{(1 + r)^t}$$
 
 Where $w_g$ is the weight assigned to group $g$. A weight of 1.0 applies to the average citizen;
 weights above 1.0 are assigned to lower-income groups.
@@ -1321,7 +1321,7 @@ The Keynesian cross diagram plots:
 - **Vertical axis**: Aggregate Expenditure (AE) and output/income (Y)
 - **Horizontal axis**: Output/income (Y)
 - **45-degree line**: $AE = Y$ (equilibrium condition)
-- **AE line**: $\text{AE} = a + b(Y - T) + I + G + X - M$, with slope $= b(1 - t) - m$
+- **AE line**: $\text{'\{'}AE{'\}'} = a + b(Y - T) + I + G + X - M$, with slope $= b(1 - t) - m$
 
 Equilibrium occurs at the intersection of the AE line and the 45-degree line.
 
@@ -1466,11 +1466,11 @@ Phillips curve analysis.
 
 **Point elasticity** measures elasticity at a specific point on the curve:
 
-$$\text{PED}_{\text{point}} = \frac{dQ}{dP} \times \frac{P}{Q}$$
+$$\text{'\{'}PED{'\}'}_{\text{'\{'}point{'\}'}} = \frac{dQ}{dP} \times \frac{P}{Q}$$
 
 **Arc elasticity** (midpoint formula) measures the average elasticity over an interval:
 
-$$\text{PED}_{\text{arc}} = \frac{Q_2 - Q_1}{(Q_1 + Q_2)/2} \times \frac{(P_1 + P_2)/2}{P_2 - P_1} = \frac{\Delta Q}{\Delta P} \times \frac{P_1 + P_2}{Q_1 + Q_2}$$
+$$\text{'\{'}PED{'\}'}_{\text{'\{'}arc{'\}'}} = \frac{Q_2 - Q_1}{(Q_1 + Q_2)/2} \times \frac{(P_1 + P_2)/2}{P_2 - P_1} = \frac{\Delta Q}{\Delta P} \times \frac{P_1 + P_2}{Q_1 + Q_2}$$
 
 **When to use which:**
 
@@ -1485,17 +1485,17 @@ At $P = 30$: $Q = 40$. Point PED $= -2 \times \frac{30}{40} = -1.5$
 
 Arc elasticity between $P = 20$ and $P = 30$:
 
-$\text{PED}_{\text{arc}} = \frac{40 - 60}{(60 + 40)/2} \times \frac{(20 + 30)/2}{30 - 20} = \frac{-20}{50} \times \frac{25}{10} = -0.4 \times 2.5 = -1.0$
+$\text{'\{'}PED{'\}'}_{\text{'\{'}arc{'\}'}} = \frac{40 - 60}{(60 + 40)/2} \times \frac{(20 + 30)/2}{30 - 20} = \frac{-20}{50} \times \frac{25}{10} = -0.4 \times 2.5 = -1.0$
 
 ### Revenue Implications of Elasticity
 
 For a linear demand curve $P = a - bQ$:
 
-$$\text{TR} = P \times Q = aQ - bQ^2$$
+$$\text{'\{'}TR{'\}'} = P \times Q = aQ - bQ^2$$
 
-$$\text{MR} = a - 2bQ$$
+$$\text{'\{'}MR{'\}'} = a - 2bQ$$
 
-TR is maximised where $\text{MR} = 0$, i.e., at $Q = a/(2b)$ and $P = a/2$.
+TR is maximised where $\text{'\{'}MR{'\}'} = 0$, i.e., at $Q = a/(2b)$ and $P = a/2$.
 
 At this point, PED $= -1$ (unit elastic).
 
@@ -1508,11 +1508,11 @@ At this point, PED $= -1$ (unit elastic).
 
 Firms use YED to forecast demand as the economy grows:
 
-- **Luxury goods** ($\text{YED} > 1$): demand grows faster than income. Firms in luxury markets
+- **Luxury goods** ($\text{'\{'}YED{'\}'} > 1$): demand grows faster than income. Firms in luxury markets
   benefit disproportionately from economic growth
-- **Necessities** ($0 < \text{YED} < 1$): demand grows slower than income. Market growth is limited
+- **Necessities** ($0 < \text{'\{'}YED{'\}'} < 1$): demand grows slower than income. Market growth is limited
   but stable
-- **Inferior goods** ($\text{YED} < 0$): demand falls as income rises. Firms must reposition or
+- **Inferior goods** ($\text{'\{'}YED{'\}'} < 0$): demand falls as income rises. Firms must reposition or
   diversify as the economy develops
 
 ## Break-Even Analysis (HL Extension)
@@ -1521,13 +1521,13 @@ Firms use YED to forecast demand as the economy grows:
 
 The break-even point is the level of output where total revenue equals total cost:
 
-$$\text{TR} = \text{TC}$$
+$$\text{'\{'}TR{'\}'} = \text{'\{'}TC{'\}'}$$
 
-$$P \times Q = \text{TFC} + \text{AVC} \times Q$$
+$$P \times Q = \text{'\{'}TFC{'\}'} + \text{'\{'}AVC{'\}'} \times Q$$
 
-$$Q_{\text{BE}} = \frac{\text{TFC}}{P - \text{AVC}}$$
+$$Q_{\text{'\{'}BE{'\}'}} = \frac{\text{'\{'}TFC{'\}'}}{P - \text{'\{'}AVC{'\}'}}$$
 
-Where TFC is total fixed cost, AVC is average variable cost, and $P - \text{AVC}$ is the
+Where TFC is total fixed cost, AVC is average variable cost, and $P - \text{'\{'}AVC{'\}'}$ is the
 **contribution margin per unit** (the amount each unit sold contributes toward covering fixed
 costs).
 
@@ -1538,22 +1538,22 @@ A firm produces gadgets with the following cost structure:
 - Variable cost per unit: `USD 30`
 - Selling price per unit: `USD 50`
 
-$$Q_{\text{BE}} = \frac{50\,000}{50 - 30} = \frac{50\,000}{20} = 2500 \text{ units}$$
+$$Q_{\text{'\{'}BE{'\}'}} = \frac{50\,000}{50 - 30} = \frac{50\,000}{20} = 2500 \text{'\{'} units{'\}'}$$
 
 Break-even revenue $= 50 \times 2500 = \$125\,000$
 
-**Contribution margin ratio:** $\frac{P - \text{AVC}}{P} = \frac{20}{50} = 0.4$ (40% of each dollar of
+**Contribution margin ratio:** $\frac{P - \text{'\{'}AVC{'\}'}}{P} = \frac{20}{50} = 0.4$ (40% of each dollar of
 revenue contributes to covering fixed costs).
 
 **Target profit analysis:** to earn a profit of $\pi$:
 
-$$Q_{\text{target}} = \frac{\text{TFC} + \pi}{P - \text{AVC}}$$
+$$Q_{\text{'\{'}target{'\}'}} = \frac{\text{'\{'}TFC{'\}'} + \pi}{P - \text{'\{'}AVC{'\}'}}$$
 
 To earn `USD 20,000` profit: $Q = (50\,000 + 20\,000)/20 = 3500$ units.
 
 **Margin of safety:** the percentage by which actual output exceeds the break-even output:
 
-$$\text{Margin of safety} = \frac{Q_{\text{actual}} - Q_{\text{BE}}}{Q_{\text{actual}}} \times 100$$
+$$\text{'\{'}Margin of safety{'\}'} = \frac{Q_{\text{'\{'}actual{'\}'}} - Q_{\text{'\{'}BE{'\}'}}}{Q_{\text{'\{'}actual{'\}'}}} \times 100$$
 
 If actual output is 3000 units: margin of safety $= (3000 - 2500)/3000 \times 100 = 16.7\%$.
 
@@ -1658,12 +1658,12 @@ policy:
 
 (a) **Before policy:** Cumulative income: 0, 4, 13, 28, 50, 100
 
-$G_{\text{before}} = 1 - [0.2(4) + 0.2(17) + 0.2(41) + 0.2(78) + 0.2(150)]/100$
+$G_{\text{'\{'}before{'\}'}} = 1 - [0.2(4) + 0.2(17) + 0.2(41) + 0.2(78) + 0.2(150)]/100$
 $= 1 - [0.8 + 3.4 + 8.2 + 15.6 + 30.0]/100 = 1 - 58.0/100 = 0.420$
 
 **After policy:** Cumulative income: 0, 8, 20, 37, 61, 100
 
-$G_{\text{after}} = 1 - [0.2(8) + 0.2(28) + 0.2(57) + 0.2(98) + 0.2(161)]/100$
+$G_{\text{'\{'}after{'\}'}} = 1 - [0.2(8) + 0.2(28) + 0.2(57) + 0.2(98) + 0.2(161)]/100$
 $= 1 - [1.6 + 5.6 + 11.4 + 19.6 + 32.2]/100 = 1 - 70.4/100 = 0.296$
 
 (b) The Gini coefficient fell from 0.420 to 0.296, a reduction of 0.124 (a 29.5% decrease in
@@ -1704,22 +1704,22 @@ are:
 
 (a) Net annual benefit $= 120 - 30 = 90$.
 
-$\text{NPV} = -800 + 90 \times \frac{1 - (1.06)^{-20}}{0.06} = -800 + 90 \times \frac{1 - 0.3118}{0.06}$
+$\text{'\{'}NPV{'\}'} = -800 + 90 \times \frac{1 - (1.06)^{-20}}{0.06} = -800 + 90 \times \frac{1 - 0.3118}{0.06}$
 
-$\text{NPV} = -800 + 90 \times 11.470 = -800 + 1032.3 = \$232.3$ million
+$\text{'\{'}NPV{'\}'} = -800 + 90 \times 11.470 = -800 + 1032.3 = \$232.3$ million
 
-$\text{BCR} = \frac{120 \times 11.470}{800 + 30 \times 11.470} = \frac{1376.4}{800 + 344.1} = \frac{1376.4}{1144.1} = 1.203$
+$\text{'\{'}BCR{'\}'} = \frac{120 \times 11.470}{800 + 30 \times 11.470} = \frac{1376.4}{800 + 344.1} = \frac{1376.4}{1144.1} = 1.203$
 
 (b) Annual benefit $= 96$. Net annual benefit $= 66$.
 
-$\text{NPV} = -800 + 66 \times 11.470 = -800 + 757.0 = -\$43.0$ million
+$\text{'\{'}NPV{'\}'} = -800 + 66 \times 11.470 = -800 + 757.0 = -\$43.0$ million
 
 The project is no longer viable with a 20% reduction in benefits. This highlights the importance
 of accurate benefit estimation.
 
 (c) At $r = 8\%$: annuity factor $= \frac{1 - (1.08)^{-20}}{0.08} = \frac{1 - 0.2145}{0.08} = 9.818$
 
-$\text{NPV} = -800 + 90 \times 9.818 = -800 + 883.6 = \$83.6$ million
+$\text{'\{'}NPV{'\}'} = -800 + 90 \times 9.818 = -800 + 883.6 = \$83.6$ million
 
 The project remains viable but with a significantly reduced NPV.
 
@@ -1813,7 +1813,7 @@ demand by 30%. Should the firm proceed?
 
 (d) Calculate the margin of safety at the current price and output of 10,000 units.
 
-(a) $Q_{\text{BE}} = \frac{120\,000}{35 - 15} = \frac{120\,000}{20} = 6000$ units
+(a) $Q_{\text{'\{'}BE{'\}'}} = \frac{120\,000}{35 - 15} = \frac{120\,000}{20} = 6000$ units
 
 Break-even revenue $= 35 \times 6000 = \$210\,000$
 
@@ -1823,9 +1823,9 @@ $\pi = (35 - 15) \times 12\,000 - 120\,000 = 20 \times 12\,000 - 120\,000 = 240\
 
 (c) At `USD 30` price, expected demand $= 10\,000 \times 1.3 = 13\,000$ units.
 
-$\pi_{\text{new}} = (30 - 15) \times 13\,000 - 120\,000 = 15 \times 13\,000 - 120\,000 = 195\,000 - 120\,000 = \$75\,000$
+$\pi_{\text{'\{'}new{'\}'}} = (30 - 15) \times 13\,000 - 120\,000 = 15 \times 13\,000 - 120\,000 = 195\,000 - 120\,000 = \$75\,000$
 
-New break-even: $Q_{\text{BE}} = 120\,000/(30 - 15) = 8000$ units
+New break-even: $Q_{\text{'\{'}BE{'\}'}} = 120\,000/(30 - 15) = 8000$ units
 
 Profit falls from `USD 120,000` to `USD 75,000`. The firm should NOT proceed with the price cut.
 Although revenue increases ($30 \times 13\,000 = \$390\,000$ vs. $35 \times 10\,000 = \$350\,000$),
@@ -1845,21 +1845,21 @@ The firm can absorb a 40% decline in output before reaching the break-even point
 The GDI adjusts the HDI for gender disparities. The calculation involves computing separate HDI
 values for males and females:
 
-$$\text{GDI} = \left(\frac{\text{HDI}_f^{1-\epsilon} + \text{HDI}_m^{1-\epsilon}}{2}\right)^{\frac{1}{1-\epsilon}}$$
+$$\text{'\{'}GDI{'\}'} = \left(\frac{\text{'\{'}HDI{'\}'}_f^{1-\epsilon} + \text{'\{'}HDI{'\}'}_m^{1-\epsilon}}{2}\right)^{\frac{1}{1-\epsilon}}$$
 
 Where $\epsilon$ is an aversion-to-inequality parameter. The UNDP uses $\epsilon = 2$, which
 gives the GDI as the harmonic mean of the male and female HDI values:
 
-$$\text{GDI} = \left(\frac{1}{\text{HDI}_f^{-1} + \text{HDI}_m^{-1}} \times 2\right)^{-1} = \frac{2 \times \text{HDI}_f \times \text{HDI}_m}{\text{HDI}_f + \text{HDI}_m}$$
+$$\text{'\{'}GDI{'\}'} = \left(\frac{1}{\text{'\{'}HDI{'\}'}_f^{-1} + \text{'\{'}HDI{'\}'}_m^{-1}} \times 2\right)^{-1} = \frac{2 \times \text{'\{'}HDI{'\}'}_f \times \text{'\{'}HDI{'\}'}_m}{\text{'\{'}HDI{'\}'}_f + \text{'\{'}HDI{'\}'}_m}$$
 
 The GDI is bounded between 0 and the overall HDI. A GDI equal to the HDI indicates perfect
 gender parity.
 
 **Worked example:**
 
-Country X has $\text{HDI}_f = 0.700$ and $\text{HDI}_m = 0.850$, overall $\text{HDI} = 0.780$.
+Country X has $\text{'\{'}HDI{'\}'}_f = 0.700$ and $\text{'\{'}HDI{'\}'}_m = 0.850$, overall $\text{'\{'}HDI{'\}'} = 0.780$.
 
-$$\text{GDI} = \frac{2 \times 0.700 \times 0.850}{0.700 + 0.850} = \frac{1.190}{1.550} = 0.768$$
+$$\text{'\{'}GDI{'\}'} = \frac{2 \times 0.700 \times 0.850}{0.700 + 0.850} = \frac{1.190}{1.550} = 0.768$$
 
 The GDI (0.768) is below the HDI (0.780), indicating that gender inequality reduces overall
 human development. The gender development gap is $(0.780 - 0.768)/0.780 = 1.5\%$.
@@ -2033,11 +2033,11 @@ A government is evaluating two mutually exclusive projects:
 
 (a) Annuity factor for 10 years at 8%: $\frac{1 - (1.08)^{-10}}{0.08} = \frac{1 - 0.4632}{0.08} = 6.710$
 
-$\text{NPV}_A = -200 + 40 \times 6.710 = -200 + 268.4 = \$68.4$ million
+$\text{'\{'}NPV{'\}'}_A = -200 + 40 \times 6.710 = -200 + 268.4 = \$68.4$ million
 
 (b) Expected annual benefit $= 0.4 \times 30 + 0.6 \times 60 = 12 + 36 = \$48$ million
 
-$\text{NPV}_B = -200 + 48 \times 6.710 = -200 + 322.1 = \$122.1$ million
+$\text{'\{'}NPV{'\}'}_B = -200 + 48 \times 6.710 = -200 + 322.1 = \$122.1$ million
 
 (c) Project B has a higher expected NPV ($122.1$ million vs. $68.4$ million) and should be
   preferred on expected value grounds.
@@ -2046,7 +2046,7 @@ However, risk considerations matter:
 
 - Project A has no risk (certain benefits)
 - Project B has uncertainty: there is a 40% chance that annual benefits are only $30 million,
-  giving $\text{NPV} = -200 + 30 \times 6.710 = -200 + 201.3 = \$1.3$ million (barely positive)
+  giving $\text{'\{'}NPV{'\}'} = -200 + 30 \times 6.710 = -200 + 201.3 = \$1.3$ million (barely positive)
 
 The government's risk tolerance determines the choice:
 - **Risk-neutral:** choose Project B (higher expected NPV)
@@ -2055,15 +2055,15 @@ The government's risk tolerance determines the choice:
 
 The standard deviation of Project B's NPV:
 
-$\text{NPV}_{\text{low}} = -200 + 30 \times 6.710 = 1.3$
-$\text{NPV}_{\text{high}} = -200 + 60 \times 6.710 = 202.6$
+$\text{'\{'}NPV{'\}'}_{\text{'\{'}low{'\}'}} = -200 + 30 \times 6.710 = 1.3$
+$\text{'\{'}NPV{'\}'}_{\text{'\{'}high{'\}'}} = -200 + 60 \times 6.710 = 202.6$
 
-$E[\text{NPV}] = 0.4 \times 1.3 + 0.6 \times 202.6 = 0.52 + 121.56 = 122.08$
+$E[\text{'\{'}NPV{'\}'}] = 0.4 \times 1.3 + 0.6 \times 202.6 = 0.52 + 121.56 = 122.08$
 
-$\text{Var}(\text{NPV}) = 0.4(1.3 - 122.08)^2 + 0.6(202.6 - 122.08)^2 = 0.4(14\,524) + 0.6(6\,481)$
+$\text{'\{'}Var{'\}'}(\text{'\{'}NPV{'\}'}) = 0.4(1.3 - 122.08)^2 + 0.6(202.6 - 122.08)^2 = 0.4(14\,524) + 0.6(6\,481)$
 $= 5\,810 + 3\,889 = 9\,699$
 
-$\text{SD}(\text{NPV}) = \sqrt{9\,699} = \$98.5$ million
+$\text{'\{'}SD{'\}'}(\text{'\{'}NPV{'\}'}) = \sqrt{9\,699} = \$98.5$ million
 
 The coefficient of variation $= 98.5/122.1 = 0.81$, indicating substantial risk relative to
 expected return.
@@ -2143,9 +2143,9 @@ The annual benefit must exceed USD 29.8 million (60% of the base case) for the p
 
 **Break-even project life:**
 
-$0 = -200 + 50 \times \text{AF}(n, 8\%)$
+$0 = -200 + 50 \times \text{'\{'}AF{'\}'}(n, 8\%)$
 
-$\text{AF}(n, 8\%) = 4.0$
+$\text{'\{'}AF{'\}'}(n, 8\%) = 4.0$
 
 Solving: $\frac{1 - 1.08^{-n}}{0.08} = 4.0 \implies 1 - 1.08^{-n} = 0.32 \implies 1.08^{-n} = 0.68$
 
@@ -2197,11 +2197,11 @@ The Stern discount rate values benefits 100 years hence at 60 times the Nordhaus
 **Hyperbolic discounting** describes the empirical observation that individuals discount the
 near future at a much higher rate than the distant future:
 
-$$\text{Hyperbolic: } d(t) = \frac{1}{(1 + \alpha t)^{\beta/\alpha}}$$
+$$\text{'\{'}Hyperbolic: {'\}'} d(t) = \frac{1}{(1 + \alpha t)^{\beta/\alpha}}$$
 
 vs. exponential discounting:
 
-$$\text{Exponential: } d(t) = \frac{1}{(1 + r)^t}$$
+$$\text{'\{'}Exponential: {'\}'} d(t) = \frac{1}{(1 + r)^t}$$
 
 **Implications:**
 
@@ -2254,7 +2254,7 @@ $$\min_{\beta_0, \beta_1} \sum_{i=1}^{n} (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_
 
 The OLS estimators are:
 
-$$\hat{\beta}_1 = \frac{\sum(X_i - \bar{X})(Y_i - \bar{Y})}{\sum(X_i - \bar{X})^2} = \frac{\text{Cov}(X, Y)}{\text{Var}(X)}$$
+$$\hat{\beta}_1 = \frac{\sum(X_i - \bar{X})(Y_i - \bar{Y})}{\sum(X_i - \bar{X})^2} = \frac{\text{'\{'}Cov{'\}'}(X, Y)}{\text{'\{'}Var{'\}'}(X)}$$
 
 $$\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1 \bar{X}$$
 
@@ -2263,14 +2263,14 @@ $$\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1 \bar{X}$$
 The coefficient of determination ($R^2$) measures the proportion of the variation in $Y$
 explained by the variation in $X$:
 
-$$R^2 = 1 - \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\sum(Y_i - \hat{Y}_i)^2}{\sum(Y_i - \bar{Y})^2}$$
+$$R^2 = 1 - \frac{\text{'\{'}SSR{'\}'}}{\text{'\{'}SST{'\}'}} = 1 - \frac{\sum(Y_i - \hat{Y}_i)^2}{\sum(Y_i - \bar{Y})^2}$$
 
 $R^2 \in [0, 1]$: $R^2 = 0$ means $X$ explains none of the variation in $Y$; $R^2 = 1$ means
 $X$ explains all of the variation.
 
 **Adjusted $R^2$** accounts for the number of regressors:
 
-$$\bar{R}^2 = 1 - \frac{\text{SSR}/(n - k - 1)}{\text{SST}/(n - 1)}$$
+$$\bar{R}^2 = 1 - \frac{\text{'\{'}SSR{'\}'}/(n - k - 1)}{\text{'\{'}SST{'\}'}/(n - 1)}$$
 
 Where $k$ is the number of independent variables and $n$ is the sample size.
 
@@ -2316,7 +2316,7 @@ Predicted values: $\hat{Y} = 1.5 + 0.67X$
 | 40 | 28 | 28.3 | 0.09 | 40.96 |
 | 50 | 35 | 35.0 | 0.00 | 179.56 |
 
-$\text{SSR} = 0.30$, $\text{SST} = 449.20$
+$\text{'\{'}SSR{'\}'} = 0.30$, $\text{'\{'}SST{'\}'} = 449.20$
 
 $R^2 = 1 - 0.30/449.20 = 0.999$
 
@@ -2330,7 +2330,7 @@ clean example with constructed data.)
 **Correlation** measures the strength and direction of the linear relationship between two variables.
 **Causation** means that a change in one variable directly causes a change in another.
 
-$$r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}$$
+$$r_{XY} = \frac{\text{'\{'}Cov{'\}'}(X, Y)}{\sigma_X \sigma_Y}$$
 
 $r_{XY} \in [-1, 1]$: $r = 1$ (perfect positive correlation), $r = -1$ (perfect negative
 correlation), $r = 0$ (no linear correlation).
@@ -2370,21 +2370,21 @@ To establish causation, economists use:
 If the true model is $Y = \beta_0 + \beta_1 X + \beta_2 Z + \epsilon$ but we estimate
 $\tilde{Y} = \tilde{\beta}_0 + \tilde{\beta}_1 X + u$, then:
 
-$$\tilde{\beta}_1 = \beta_1 + \beta_2 \frac{\text{Cov}(X, Z)}{\text{Var}(X)}$$
+$$\tilde{\beta}_1 = \beta_1 + \beta_2 \frac{\text{'\{'}Cov{'\}'}(X, Z)}{\text{'\{'}Var{'\}'}(X)}$$
 
 The omitted variable bias depends on:
 - $\beta_2$: the effect of $Z$ on $Y$
-- $\text{Cov}(X, Z)/\text{Var}(X)$: the relationship between $X$ and $Z$
+- $\text{'\{'}Cov{'\}'}(X, Z)/\text{'\{'}Var{'\}'}(X)$: the relationship between $X$ and $Z$
 
-The bias is zero if either $\beta_2 = 0$ ($Z$ does not affect $Y$) or $\text{Cov}(X, Z) = 0$
+The bias is zero if either $\beta_2 = 0$ ($Z$ does not affect $Y$) or $\text{'\{'}Cov{'\}'}(X, Z) = 0$
 ($X$ and $Z$ are uncorrelated).
 
 **Numerical example:**
 
-True model: test score $= 5 + 0.5(\text{study hours}) + 0.3(\text{sleep hours}) + \epsilon$
+True model: test score $= 5 + 0.5(\text{'\{'}study hours{'\}'}) + 0.3(\text{'\{'}sleep hours{'\}'}) + \epsilon$
 
 If we omit sleep hours and study hours and sleep hours are positively correlated
-($\text{Cov} = 2$, $\text{Var}(\text{study hours}) = 10$):
+($\text{'\{'}Cov{'\}'} = 2$, $\text{'\{'}Var{'\}'}(\text{'\{'}study hours{'\}'}) = 10$):
 
 OVB on study hours coefficient $= 0.3 \times 2/10 = 0.06$
 
@@ -2498,32 +2498,32 @@ A government is evaluating a high-speed rail project:
 
 (a) Annuity factor (30 years, 5%):
 
-$\text{AF} = \frac{1 - 1.05^{-30}}{0.05} = \frac{1 - 0.2314}{0.05} = \frac{0.7686}{0.05} = 15.37$
+$\text{'\{'}AF{'\}'} = \frac{1 - 1.05^{-30}}{0.05} = \frac{1 - 0.2314}{0.05} = \frac{0.7686}{0.05} = 15.37$
 
-$\text{NPV} = -50 + 3 \times 15.37 = -50 + 46.1 = -3.9$ billion
+$\text{'\{'}NPV{'\}'} = -50 + 3 \times 15.37 = -50 + 46.1 = -3.9$ billion
 
 The project has a negative NPV at the base case.
 
-(b) At 3%: $\text{AF} = \frac{1 - 1.03^{-30}}{0.03} = \frac{1 - 0.4120}{0.03} = 19.60$
+(b) At 3%: $\text{'\{'}AF{'\}'} = \frac{1 - 1.03^{-30}}{0.03} = \frac{1 - 0.4120}{0.03} = 19.60$
 
-$\text{NPV} = -50 + 3 \times 19.60 = -50 + 58.8 = +8.8$ billion
+$\text{'\{'}NPV{'\}'} = -50 + 3 \times 19.60 = -50 + 58.8 = +8.8$ billion
 
-At 7%: $\text{AF} = \frac{1 - 1.07^{-30}}{0.07} = \frac{1 - 0.1314}{0.07} = 12.41$
+At 7%: $\text{'\{'}AF{'\}'} = \frac{1 - 1.07^{-30}}{0.07} = \frac{1 - 0.1314}{0.07} = 12.41$
 
-$\text{NPV} = -50 + 3 \times 12.41 = -50 + 37.2 = -12.8$ billion
+$\text{'\{'}NPV{'\}'} = -50 + 3 \times 12.41 = -50 + 37.2 = -12.8$ billion
 
 The NPV ranges from +8.8 billion (3%) to -12.8 billion (7%). The project is very sensitive to the
 discount rate.
 
-(c) At USD 2 billion: $\text{NPV} = -50 + 2 \times 15.37 = -50 + 30.7 = -19.3$ billion
+(c) At USD 2 billion: $\text{'\{'}NPV{'\}'} = -50 + 2 \times 15.37 = -50 + 30.7 = -19.3$ billion
 
-At USD 4 billion: $\text{NPV} = -50 + 4 \times 15.37 = -50 + 61.5 = +11.5$ billion
+At USD 4 billion: $\text{'\{'}NPV{'\}'} = -50 + 4 \times 15.37 = -50 + 61.5 = +11.5$ billion
 
 The NPV ranges from -19.3 to +11.5 billion. Also very sensitive to benefit estimates.
 
-(d) Break-even: $0 = -50 + 3 \times \text{AF}(n, 5\%)$
+(d) Break-even: $0 = -50 + 3 \times \text{'\{'}AF{'\}'}(n, 5\%)$
 
-$\text{AF}(n, 5\%) = 50/3 = 16.67$
+$\text{'\{'}AF{'\}'}(n, 5\%) = 50/3 = 16.67$
 
 $\frac{1 - 1.05^{-n}}{0.05} = 16.67 \implies 1 - 1.05^{-n} = 0.8333 \implies 1.05^{-n} = 0.1667$
 
@@ -2580,7 +2580,7 @@ Estimated Phillips curve: $\hat{\pi} = 7.86 - 0.706u$
 | 8 | 2 | 2.21 | 0.044 | 1.44 |
 | 10 | 1 | 0.80 | 0.040 | 4.84 |
 
-$\text{SSR} = 0.267$, $\text{SST} = 14.80$
+$\text{'\{'}SSR{'\}'} = 0.267$, $\text{'\{'}SST{'\}'} = 14.80$
 
 $R^2 = 1 - 0.267/14.80 = 0.982$
 
@@ -2636,17 +2636,17 @@ connecting the omitted variables to both chocolate consumption and Nobel prizes.
 
 (c) If the true model is:
 
-$$\text{Nobel}_i = \beta_0 + \beta_1 \text{Chocolate}_i + \beta_2 \text{GDP}_i + \epsilon_i$$
+$$\text{'\{'}Nobel{'\}'}_i = \beta_0 + \beta_1 \text{'\{'}Chocolate{'\}'}_i + \beta_2 \text{'\{'}GDP{'\}'}_i + \epsilon_i$$
 
 And we estimate the short regression (omitting GDP):
 
-$$\widetilde{\text{Nobel}}_i = \tilde{\beta}_0 + \tilde{\beta}_1 \text{Chocolate}_i + u_i$$
+$$\widetilde{\text{'\{'}Nobel{'\}'}}_i = \tilde{\beta}_0 + \tilde{\beta}_1 \text{'\{'}Chocolate{'\}'}_i + u_i$$
 
 Then:
 
-$$\tilde{\beta}_1 = \beta_1 + \beta_2 \frac{\text{Cov}(\text{Chocolate}, \text{GDP})}{\text{Var}(\text{Chocolate})}$$
+$$\tilde{\beta}_1 = \beta_1 + \beta_2 \frac{\text{'\{'}Cov{'\}'}(\text{'\{'}Chocolate{'\}'}, \text{'\{'}GDP{'\}'})}{\text{'\{'}Var{'\}'}(\text{'\{'}Chocolate{'\}'})}$$
 
-If $\beta_2 > 0$ (GDP increases Nobel prizes) and $\text{Cov}(\text{Chocolate}, \text{GDP}) > 0$
+If $\beta_2 > 0$ (GDP increases Nobel prizes) and $\text{'\{'}Cov{'\}'}(\text{'\{'}Chocolate{'\}'}, \text{'\{'}GDP{'\}'}) > 0$
 (richer countries consume more chocolate), then $\tilde{\beta}_1 > \beta_1$.
 
 The estimated effect of chocolate on Nobel prizes is biased upward. Some of the effect of GDP on
@@ -2672,19 +2672,19 @@ avoided climate damages of USD 100 billion per year, starting in 20 years and co
 
 (a) The benefits are a perpetuity starting in 20 years:
 
-$\text{PV of benefits} = \frac{B}{r} \times \frac{1}{(1+r)^{20}}$
+$\text{'\{'}PV of benefits{'\}'} = \frac{B}{r} \times \frac{1}{(1+r)^{20}}$
 
-At 1.4%: $\text{PV} = \frac{100}{0.014} \times \frac{1}{1.014^{20}} = 7\,143 \times \frac{1}{1.320} = 5\,411$ billion
+At 1.4%: $\text{'\{'}PV{'\}'} = \frac{100}{0.014} \times \frac{1}{1.014^{20}} = 7\,143 \times \frac{1}{1.320} = 5\,411$ billion
 
-$\text{NPV} = -2\,000 + 5\,411 = +3\,411$ billion
+$\text{'\{'}NPV{'\}'} = -2\,000 + 5\,411 = +3\,411$ billion
 
-At 3.5%: $\text{PV} = \frac{100}{0.035} \times \frac{1}{1.035^{20}} = 2\,857 \times \frac{1}{1.990} = 1\,436$ billion
+At 3.5%: $\text{'\{'}PV{'\}'} = \frac{100}{0.035} \times \frac{1}{1.035^{20}} = 2\,857 \times \frac{1}{1.990} = 1\,436$ billion
 
-$\text{NPV} = -2\,000 + 1\,436 = -564$ billion
+$\text{'\{'}NPV{'\}'} = -2\,000 + 1\,436 = -564$ billion
 
-At 5%: $\text{PV} = \frac{100}{0.05} \times \frac{1}{1.05^{20}} = 2\,000 \times \frac{1}{2.653} = 754$ billion
+At 5%: $\text{'\{'}PV{'\}'} = \frac{100}{0.05} \times \frac{1}{1.05^{20}} = 2\,000 \times \frac{1}{2.653} = 754$ billion
 
-$\text{NPV} = -2\,000 + 754 = -1\,246$ billion
+$\text{'\{'}NPV{'\}'} = -2\,000 + 754 = -1\,246$ billion
 
 The project is justified at the Stern rate but not at higher rates.
 
@@ -2721,7 +2721,7 @@ The break-even discount rate is approximately 2.1--2.2%.
 - Confusing the discount rate with the interest rate. The social discount rate reflects social
   time preference, not the market interest rate
 - Using the wrong formula for a perpetuity vs. a finite annuity. A perpetuity has an infinite
-  time horizon: $\text{PV} = C/r$. An annity is finite: $\text{PV} = C \times \text{AF}(n, r)$
+  time horizon: $\text{'\{'}PV{'\}'} = C/r$. An annity is finite: $\text{'\{'}PV{'\}'} = C \times \text{'\{'}AF{'\}'}(n, r)$
 - Ignoring sensitivity analysis. Presenting a single NPV without sensitivity analysis gives a
   false sense of precision
 - Assuming that $R^2$ measures causation. A high $R^2$ does not mean the independent variable
@@ -2746,15 +2746,15 @@ The OLS estimators minimise $\sum_{i=1}^{n} (Y_i - \hat{\beta}_0 - \hat{\beta}_1
 
 **t-test for individual coefficients:**
 
-$$t = \frac{\hat{\beta}_j - 0}{\text{SE}(\hat{\beta}_j)}$$
+$$t = \frac{\hat{\beta}_j - 0}{\text{'\{'}SE{'\}'}(\hat{\beta}_j)}$$
 
-If $|t| > t_{\text{critical}}$, reject $H_0: \beta_j = 0$ at the chosen significance level.
+If $|t| > t_{\text{'\{'}critical{'\}'}}$, reject $H_0: \beta_j = 0$ at the chosen significance level.
 
 **F-test for overall significance:**
 
-$$F = \frac{\text{MSR}}{\text{MSE}} = \frac{\text{SSR}/k}{\text{SSE}/(n-k-1)}$$
+$$F = \frac{\text{'\{'}MSR{'\}'}}{\text{'\{'}MSE{'\}'}} = \frac{\text{'\{'}SSR{'\}'}/k}{\text{'\{'}SSE{'\}'}/(n-k-1)}$$
 
-If $F > F_{\text{critical}}(k, n-k-1)$, reject $H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0$.
+If $F > F_{\text{'\{'}critical{'\}'}}(k, n-k-1)$, reject $H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0$.
 
 ### Multicollinearity
 
@@ -2768,10 +2768,10 @@ identify the individual effect of each variable.
    suggest multicollinearity
 2. **Variance Inflation Factor (VIF):**
 
-$$\text{VIF}_j = \frac{1}{1 - R_j^2}$$
+$$\text{'\{'}VIF{'\}'}_j = \frac{1}{1 - R_j^2}$$
 
 Where $R_j^2$ is the $R^2$ from regressing $X_j$ on all other independent variables.
-$\text{VIF} > 10$ indicates severe multicollinearity.
+$\text{'\{'}VIF{'\}'} > 10$ indicates severe multicollinearity.
 
 **Consequences:**
 
@@ -2851,7 +2851,7 @@ decisions as new information becomes available.
 The value of the option to delay is the difference between the NPV with flexibility and the
 NPV without flexibility:
 
-$$\text{Option value} = \text{NPV}_{\text{with flexibility}} - \text{NPV}_{\text{without flexibility}}$$
+$$\text{'\{'}Option value{'\}'} = \text{'\{'}NPV{'\}'}_{\text{'\{'}with flexibility{'\}'}} - \text{'\{'}NPV{'\}'}_{\text{'\{'}without flexibility{'\}'}}$$
 
 ### Numerical Example
 
@@ -2862,7 +2862,7 @@ annual revenue is USD 800 million. The discount rate is 8%.
 
 Annuity factor (perpetuity): $1/0.08 = 12.5$
 
-$\text{NPV} = -10 + 0.8 \times 12.5 = -10 + 10 = 0$
+$\text{'\{'}NPV{'\}'} = -10 + 0.8 \times 12.5 = -10 + 10 = 0$
 
 The NPV is exactly zero: the government is indifferent.
 
@@ -2898,7 +2898,7 @@ The option value of waiting is larger when:
 3. **The discount rate is low:** a low discount rate increases the present value of future
    information
 
-$$\text{Option value} \propto \frac{\text{Uncertainty} \times \text{Irreversibility}}{\text{Discount rate}}$$
+$$\text{'\{'}Option value{'\}'} \propto \frac{\text{'\{'}Uncertainty{'\}'} \times \text{'\{'}Irreversibility{'\}'}}{\text{'\{'}Discount rate{'\}'}}$$
 
 **Policy implication:** governments should not rush into large, irreversible investments
 (infrastructure, climate policy) when there is significant uncertainty. Waiting for better
@@ -2911,7 +2911,7 @@ information can be optimal even when the expected NPV is positive.
 
 An economist estimates the determinants of GDP growth:
 
-$\text{Growth} = \beta_0 + \beta_1 \text{Investment} + \beta_2 \text{Education} + \beta_3 \text{Trade} + \epsilon$
+$\text{'\{'}Growth{'\}'} = \beta_0 + \beta_1 \text{'\{'}Investment{'\}'} + \beta_2 \text{'\{'}Education{'\}'} + \beta_3 \text{'\{'}Trade{'\}'} + \epsilon$
 
 Data (10 observations, standardised variables):
 
@@ -3000,7 +3000,7 @@ A government is considering a carbon capture project:
 
 Annuity factor (perpetuity, 6%): $1/0.06 = 16.67$.
 
-$\text{NPV} = -5000 + 80 \times 16.67 = -5000 + 1333.6 = -3666.4$ million.
+$\text{'\{'}NPV{'\}'} = -5000 + 80 \times 16.67 = -5000 + 1333.6 = -3666.4$ million.
 
 The expected NPV is negative. Traditional analysis would reject the project.
 
@@ -3008,13 +3008,13 @@ The expected NPV is negative. Traditional analysis would reject the project.
 
 Scenario 1 (40%): carbon price = USD 50. Annual benefit = 50 million.
 
-$\text{NPV at year 2} = -5000 + 50/0.06 = -5000 + 833.3 = -4166.7$ million.
+$\text{'\{'}NPV at year 2{'\}'} = -5000 + 50/0.06 = -5000 + 833.3 = -4166.7$ million.
 
 Do not invest. NPV $= 0$.
 
 Scenario 2 (60%): carbon price = USD 100. Annual benefit = 100 million.
 
-$\text{NPV at year 2} = -5000 + 100/0.06 = -5000 + 1666.7 = -3333.3$ million.
+$\text{'\{'}NPV at year 2{'\}'} = -5000 + 100/0.06 = -5000 + 1666.7 = -3333.3$ million.
 
 Still negative. Do not invest.
 
@@ -3025,15 +3025,15 @@ Recalculating with a larger capture capacity: 5 million tonnes per year.
 
 (a) Annual benefit (expected) $= 0.4 \times 250 + 0.6 \times 500 = 100 + 300 = 400$ million.
 
-$\text{NPV} = -5000 + 400 \times 16.67 = -5000 + 6668 = +1668$ million.
+$\text{'\{'}NPV{'\}'} = -5000 + 400 \times 16.67 = -5000 + 6668 = +1668$ million.
 
 (b) Scenario 1 (40%): annual benefit = 250 million.
 
-$\text{NPV at year 2} = -5000 + 250/0.06 = -5000 + 4166.7 = -833.3$. Do not invest.
+$\text{'\{'}NPV at year 2{'\}'} = -5000 + 250/0.06 = -5000 + 4166.7 = -833.3$. Do not invest.
 
 Scenario 2 (60%): annual benefit = 500 million.
 
-$\text{NPV at year 2} = -5000 + 500/0.06 = -5000 + 8333.3 = +3333.3$. Invest.
+$\text{'\{'}NPV at year 2{'\}'} = -5000 + 500/0.06 = -5000 + 8333.3 = +3333.3$. Invest.
 
 Expected NPV of waiting (at year 0): $0.4 \times 0/(1.06)^2 + 0.6 \times 3333.3/(1.06)^2$
 

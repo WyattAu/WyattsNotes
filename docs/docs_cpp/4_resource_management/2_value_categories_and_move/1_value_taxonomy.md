@@ -50,7 +50,7 @@ graph TD
 In set notation:
 
 $$
-\mathrm{expression} = \underbrace{\mathrm{glvalue}}_{\mathrm{lvalue} \cup \mathrm{xvalue}} \;\cup\; \underbrace{\mathrm{rvalue}}_{\mathrm{prvalue} \cup \mathrm{xvalue}}
+\mathrm{'\{'}expression{'\}'} = \underbrace{\mathrm{'\{'}glvalue{'\}'}}_{\mathrm{'\{'}lvalue{'\}'} \cup \mathrm{'\{'}xvalue{'\}'}} \;\cup\; \underbrace{\mathrm{'\{'}rvalue{'\}'}}_{\mathrm{'\{'}prvalue{'\}'} \cup \mathrm{'\{'}xvalue{'\}'}}
 $$
 
 The xvalue category occupies the intersection — it is both a glvalue (it has identity) and an rvalue
@@ -207,15 +207,15 @@ simultaneously.
 The compound categories are unions:
 
 $$
-\mathrm{glvalue} = \mathrm{lvalue} \cup \mathrm{xvalue}
+\mathrm{'\{'}glvalue{'\}'} = \mathrm{'\{'}lvalue{'\}'} \cup \mathrm{'\{'}xvalue{'\}'}
 $$
 
 $$
-\mathrm{rvalue} = \mathrm{prvalue} \cup \mathrm{xvalue}
+\mathrm{'\{'}rvalue{'\}'} = \mathrm{'\{'}prvalue{'\}'} \cup \mathrm{'\{'}xvalue{'\}'}
 $$
 
 $$
-\mathrm{expression} = \mathrm{lvalue} \cup \mathrm{xvalue} \cup \mathrm{prvalue}
+\mathrm{'\{'}expression{'\}'} = \mathrm{'\{'}lvalue{'\}'} \cup \mathrm{'\{'}xvalue{'\}'} \cup \mathrm{'\{'}prvalue{'\}'}
 $$
 
 ### Formal Definitions [N4950 S7.2.1]
@@ -325,7 +325,7 @@ rules [N4950 S11.3.2]:
 The rules are:
 
 $$
-T\&\& \to T\&, \quad T\&\& \to T\&\&, \quad \mathrm{everything else} \to T\&
+T\&\& \to T\&, \quad T\&\& \to T\&\&, \quad \mathrm{'\{'}everything else{'\}'} \to T\&
 $$
 
 More concisely: **only `T&& &&` collapses to `T&&`; all other combinations collapse to `T&`.**

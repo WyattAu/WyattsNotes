@@ -25,7 +25,7 @@ hide_table_of_contents: true
 
 **Solution:**
 
-**(a)** Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{Z}$, $q \neq 0$, and $\gcd(p, q) = 1$ (i.e. the fraction is in its lowest terms).
+**(a)** Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$, $q \neq 0$, and $\gcd(p, q) = 1$ (i.e. the fraction is in its lowest terms).
 
 Squaring: $2 = \frac{p^2}{q^2}$, so $p^2 = 2q^2$.
 
@@ -144,7 +144,7 @@ For each of the following, state whether the condition is necessary, sufficient,
 
 **(b)** "$n$ is prime" as a condition for "$n$ is odd".
 
-**(c)** "$a^2 + b^2 = 0$" (where $a, b \in \mathbb{R}$) as a condition for "$a = 0$ and $b = 0$".
+**(c)** "$a^2 + b^2 = 0$" (where $a, b \in \mathbb{'\{'}R{'\}'}$) as a condition for "$a = 0$ and $b = 0$".
 
 **(d)** A student claims: "If a function is differentiable at a point, then it is continuous at that point." State whether this is a necessary condition, a sufficient condition, or both, for continuity.
 
@@ -166,7 +166,7 @@ So "prime" does not imply "odd" (counterexample: 2). Also, "odd" does not imply 
 
 Answer: **neither necessary nor sufficient**.
 
-**(c)** "$a^2 + b^2 = 0$": since $a^2 \geq 0$ and $b^2 \geq 0$, the sum is zero only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
+**(c)** "$a^2 + b^2 = 0$": since $a^2 \geq 0$ and $b^2 \geq 0$, the sum is zero only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{'\{'} and {'\}'} b = 0$.
 
 Answer: **both necessary and sufficient** (the condition is equivalent).
 
@@ -244,17 +244,17 @@ $$= 3n - \frac{1 - (1/2)^n}{1 - 1/2} = 3n - 2\left(1 - \frac{1}{2^n}\right) = 3n
 
 **Question:**
 
-**(a)** Prove that $f(x) = x^3$ is injective on $\mathbb{R}$ using two different methods: (i) by algebra, and (ii) by calculus.
+**(a)** Prove that $f(x) = x^3$ is injective on $\mathbb{'\{'}R{'\}'}$ using two different methods: (i) by algebra, and (ii) by calculus.
 
-**(b)** Prove that $g(x) = x^2$ is NOT injective on $\mathbb{R}$ by providing a specific counterexample.
+**(b)** Prove that $g(x) = x^2$ is NOT injective on $\mathbb{'\{'}R{'\}'}$ by providing a specific counterexample.
 
-**(c)** Find the largest subset of $\mathbb{R}$ on which $g(x) = x^2$ is injective, and prove your answer.
+**(c)** Find the largest subset of $\mathbb{'\{'}R{'\}'}$ on which $g(x) = x^2$ is injective, and prove your answer.
 
 [Difficulty: hard. Combines injectivity proofs with algebraic and calculus-based arguments, and domain restriction analysis.]
 
 **Solution:**
 
-**(a)** **(i) Algebraic proof:** Suppose $f(a) = f(b)$ for some $a, b \in \mathbb{R}$.
+**(a)** **(i) Algebraic proof:** Suppose $f(a) = f(b)$ for some $a, b \in \mathbb{'\{'}R{'\}'}$.
 
 $a^3 = b^3 \implies a^3 - b^3 = 0 \implies (a-b)(a^2 + ab + b^2) = 0$.
 
@@ -268,15 +268,15 @@ So $a^2 + ab + b^2 = 0$ only when $a = b = 0$. In all cases, $a = b$.
 
 Therefore $f$ is injective.
 
-**(ii) Calculus proof:** $f'(x) = 3x^2 \geq 0$ for all $x \in \mathbb{R}$, with equality only at $x = 0$.
+**(ii) Calculus proof:** $f'(x) = 3x^2 \geq 0$ for all $x \in \mathbb{'\{'}R{'\}'}$, with equality only at $x = 0$.
 
 $f'(x) \geq 0$ means $f$ is non-decreasing. To show strict monotonicity: for any $a \lt b$ with $a \neq 0$, $f'(x) = 3x^2 \gt 0$ on $(a, b)$ (since $x = 0$ is a single point), so by the Mean Value Theorem, $f(b) - f(a) = f'(c)(b-a) \gt 0$ for some $c \in (a, b)$.
 
 If $a \lt 0 \lt b$: $f(a) = a^3 \lt 0 \lt b^3 = f(b)$.
 
-Therefore $a \lt b \implies f(a) \lt f(b)$ for all $a, b \in \mathbb{R}$, so $f$ is strictly increasing and hence injective.
+Therefore $a \lt b \implies f(a) \lt f(b)$ for all $a, b \in \mathbb{'\{'}R{'\}'}$, so $f$ is strictly increasing and hence injective.
 
-**(b)** $g(1) = 1^2 = 1 = (-1)^2 = g(-1)$, but $1 \neq -1$. Therefore $g$ is not injective on $\mathbb{R}$.
+**(b)** $g(1) = 1^2 = 1 = (-1)^2 = g(-1)$, but $1 \neq -1$. Therefore $g$ is not injective on $\mathbb{'\{'}R{'\}'}$.
 
 **(c)** Claim: $g(x) = x^2$ is injective on $[0, \infty)$.
 

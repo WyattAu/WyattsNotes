@@ -137,7 +137,7 @@ $= 3.38$ mJ.
 
 <details>
 <summary>Q13. A cell of e.m.f. 9.0 V and internal resistance 1.5 $\Omega$ is connected to a 4.5 $\Omega$ load. What is the terminal p.d.?</summary>
-**Answer.** $I = 9.0/(4.5 + 1.5) = 1.5$ A. $V = \mathcal{E} - Ir = 9.0 - 1.5 \times 1.5 = 6.75$ V.
+**Answer.** $I = 9.0/(4.5 + 1.5) = 1.5$ A. $V = \mathcal{'\{'}E{'\}'} - Ir = 9.0 - 1.5 \times 1.5 = 6.75$ V.
 
 <b>If you get this wrong, revise:</b> [DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
 
@@ -212,7 +212,7 @@ m s$^{-1}$.
 
 <details>
 <summary>Q21. A coil of 150 turns experiences a flux change of 0.04 Wb in 0.02 s. What is the average induced e.m.f.?</summary>
-**Answer.** $\mathcal{E} = N\Delta\Phi/\Delta t = 150 \times 0.04/0.02 = 300$ V.
+**Answer.** $\mathcal{'\{'}E{'\}'} = N\Delta\Phi/\Delta t = 150 \times 0.04/0.02 = 300$ V.
 
 <b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
 
@@ -221,7 +221,7 @@ m s$^{-1}$.
 <details>
 <summary>Q22. State Faraday's law and Lenz's law.</summary>
 **Answer.** **Faraday's law:** the induced e.m.f. equals the negative rate of change of flux
-linkage: $\mathcal{E} = -d(N\Phi)/dt$. **Lenz's law:** the direction of the induced current opposes
+linkage: $\mathcal{'\{'}E{'\}'} = -d(N\Phi)/dt$. **Lenz's law:** the direction of the induced current opposes
 the change in flux that produced it.
 
 <b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
@@ -233,7 +233,7 @@ the change in flux that produced it.
 <details>
 <summary>Q23. Calculate the rms speed of helium atoms ($M_r = 0.004$ kg mol$^{-1}$) at 300 K.</summary>
 **Answer.**
-$v_{\mathrm{rms}} = \sqrt{3RT/M_r} = \sqrt{3 \times 8.31 \times 300/0.004} = \sqrt{1869750} = 1367$ m
+$v_{\mathrm{'\{'}rms{'\}'}} = \sqrt{3RT/M_r} = \sqrt{3 \times 8.31 \times 300/0.004} = \sqrt{1869750} = 1367$ m
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
@@ -263,7 +263,7 @@ J.
 
 <details>
 <summary>Q26. A heat engine operates between 600 K and 300 K. What is the maximum possible efficiency?</summary>
-**Answer.** $\eta_{\mathrm{Carnot}} = 1 - T_C/T_H = 1 - 300/600 = 50\%$.
+**Answer.** $\eta_{\mathrm{'\{'}Carnot{'\}'}} = 1 - T_C/T_H = 1 - 300/600 = 50\%$.
 
 <b>If you get this wrong, revise:</b>
 [Thermodynamics](/docs/alevel/physics/thermal-physics/thermodynamics)
@@ -284,7 +284,7 @@ J.
 <details>
 <summary>Q28. Write the nuclear equation for $\beta^-$ decay of carbon-14.</summary>
 **Answer.**
-$\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
+$\prescript{14}{}{6}\mathrm{'\{'}C{'\}'} \to \prescript{14}{}{7}\mathrm{'\{'}N{'\}'} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
 
 <b>If you get this wrong, revise:</b>
 [Radioactivity](/docs/alevel/physics/nuclear-physics/radioactivity)
@@ -302,7 +302,7 @@ $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}
 
 <details>
 <summary>Q30. The work function of caesium is 2.14 eV. What is the threshold wavelength?</summary>
-**Answer.** $\lambda_0 = hc/\phi = 1240\,\mathrm{eV nm}/2.14\,\mathrm{eV} = 579$ nm.
+**Answer.** $\lambda_0 = hc/\phi = 1240\,\mathrm{'\{'}eV nm{'\}'}/2.14\,\mathrm{'\{'}eV{'\}'} = 579$ nm.
 
 <b>If you get this wrong, revise:</b>
 [Quantum Physics](/docs/alevel/physics/nuclear-physics/quantum-physics)

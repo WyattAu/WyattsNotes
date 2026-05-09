@@ -191,7 +191,7 @@ def fib(n):
 
 (b) `fib(2)` is called 3 times: once from `fib(4)` and once from `fib(3)` on the left, and once from `fib(3)` on the right. More precisely: in the tree above, `fib(2)` appears at three distinct nodes.
 
-(c) At each level of recursion, the number of function calls approximately doubles (each call spawns two more, except the base cases). The depth is $n$, giving approximately $2^n$ nodes. More precisely, the number of calls follows the Fibonacci sequence itself: $T(n) = T(n-1) + T(n-2) + 1$, which gives $T(n) \approx 2 \times \text{fib}(n+1) - 1$, growing as $O(\phi^n)$ where $\phi = (1+\sqrt{5})/2 \approx 1.618$. This is commonly stated as $O(2^n)$ as an upper bound.
+(c) At each level of recursion, the number of function calls approximately doubles (each call spawns two more, except the base cases). The depth is $n$, giving approximately $2^n$ nodes. More precisely, the number of calls follows the Fibonacci sequence itself: $T(n) = T(n-1) + T(n-2) + 1$, which gives $T(n) \approx 2 \times \text{'\{'}fib{'\}'}(n+1) - 1$, growing as $O(\phi^n)$ where $\phi = (1+\sqrt{5})/2 \approx 1.618$. This is commonly stated as $O(2^n)$ as an upper bound.
 
 Memoisation stores the result of `fib(k)` the first time it is computed. Subsequent calls to `fib(k)` simply retrieve the stored value in $O(1)$ time. Since there are only $n$ distinct values of `fib(k)` to compute ($k = 0, 1, \ldots, n$), the total work is $O(n)$.
 

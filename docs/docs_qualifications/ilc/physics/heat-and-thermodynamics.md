@@ -28,20 +28,20 @@ are commonly used:
 
 | Scale             | Boiling point of water | Freezing point of water | Absolute zero |
 | ----------------- | ---------------------- | ----------------------- | ------------- |
-| Celsius ($^\circ\mathrm{C}$)    | $100$                  | $0$                     | $-273.15$     |
+| Celsius ($^\circ\mathrm{'\{'}C{'\}'}$)    | $100$                  | $0$                     | $-273.15$     |
 | Kelvin (K)        | $373.15$               | $273.15$                | $0$           |
-| Fahrenheit ($^\circ\mathrm{F}$) | $212$                  | $32$                    | $-459.67$     |
+| Fahrenheit ($^\circ\mathrm{'\{'}F{'\}'}$) | $212$                  | $32$                    | $-459.67$     |
 
 Conversion between Celsius and Kelvin:
 
 $$
-T_K = T_{°\mathrm{C}} + 273.15
+T_K = T_{°\mathrm{'\{'}C{'\}'}} + 273.15
 $$
 
 Conversion between Celsius and Fahrenheit:
 
 $$
-T_{°\mathrm{F}} = \frac{9}{5}T_{°\mathrm{C}} + 32
+T_{°\mathrm{'\{'}F{'\}'}} = \frac{9}{5}T_{°\mathrm{'\{'}C{'\}'}} + 32
 $$
 
 ### Why Kelvin Is the Natural Scale for Physics
@@ -62,7 +62,7 @@ fundamental.
 - **Heat** is the transfer of energy due to a temperature difference. It is an extensive property:
   it depends on the amount of material.
 
-A bath of water at $50^\circ\mathrm{C}$ and a cup of water at $50^\circ\mathrm{C}$ have the same temperature, but the bath
+A bath of water at $50^\circ\mathrm{'\{'}C{'\}'}$ and a cup of water at $50^\circ\mathrm{'\{'}C{'\}'}$ have the same temperature, but the bath
 contains far more thermal energy. Heat flows from the bath to a colder object faster than the cup
 would, not because the bath is at a higher temperature, but because it has more energy to give.
 
@@ -76,7 +76,7 @@ equilibrium with B, and B with C, then A is in thermal equilibrium with C.
 ## Specific Heat Capacity (OL/HL)
 
 The specific heat capacity $c$ is the energy required to raise the temperature of 1 kg of a
-substance by 1 K (or $1^\circ\mathrm{C}$ -- the size of the degree is the same on both scales):
+substance by 1 K (or $1^\circ\mathrm{'\{'}C{'\}'}$ -- the size of the degree is the same on both scales):
 
 $$
 Q = mc\Delta T
@@ -84,8 +84,8 @@ $$
 
 where $Q$ is the heat energy transferred, $m$ is the mass, and $\Delta T$ is the temperature change.
 
-The unit of $c$ is $\mathrm{J/(kg K)}$ or $\mathrm{J/(kg °C)}$ -- these are numerically identical
-because a change of 1 K equals a change of 1 $^\circ\mathrm{C}$.
+The unit of $c$ is $\mathrm{'\{'}J/(kg K){'\}'}$ or $\mathrm{'\{'}J/(kg °C){'\}'}$ -- these are numerically identical
+because a change of 1 K equals a change of 1 $^\circ\mathrm{'\{'}C{'\}'}$.
 
 | Substance | $c$ (J/kg K) |
 | --------- | ------------ |
@@ -108,21 +108,21 @@ In water, energy can be stored in translational, rotational, and vibrational mod
 hydrogen bonds between molecules. More modes mean more energy is needed to raise the temperature.
 
 For solids, the Dulong-Petit law gives a rough estimate: $c \approx \frac{3R}{M}$, where $M$ is the
-molar mass. This predicts about $25\mathrm{ J/(mol K)}$ for many solids at room temperature.
+molar mass. This predicts about $25\mathrm{'\{'} J/(mol K){'\}'}$ for many solids at room temperature.
 
 ### Water's High Specific Heat Capacity
 
-Water has $c = 4180\mathrm{ J/(kg K)}$, which is exceptionally high. This is because:
+Water has $c = 4180\mathrm{'\{'} J/(kg K){'\}'}$, which is exceptionally high. This is because:
 
 - Water molecules have three translational, three rotational, and vibrational degrees of freedom.
 - Hydrogen bonding between molecules absorbs additional energy as the bonds stretch and deform.
 - This high value has significant consequences for climate, biology, and engineering.
 
-**Example (OL):** How much energy is needed to raise the temperature of 2 kg of water from $20^\circ\mathrm{C}$ to
-$80^\circ\mathrm{C}$?
+**Example (OL):** How much energy is needed to raise the temperature of 2 kg of water from $20^\circ\mathrm{'\{'}C{'\}'}$ to
+$80^\circ\mathrm{'\{'}C{'\}'}$?
 
 $$
-Q = mc\Delta T = 2 \times 4180 \times 60 = 501600\mathrm{ J} \approx 502\mathrm{ kJ}
+Q = mc\Delta T = 2 \times 4180 \times 60 = 501600\mathrm{'\{'} J{'\}'} \approx 502\mathrm{'\{'} kJ{'\}'}
 $$
 
 ### Calorimetry (HL)
@@ -137,12 +137,12 @@ $$
 In practice, the calorimeter itself (the container) also absorbs heat, and this should be included:
 
 $$
-m_h c_h (T_h - T_f) = m_c c_c (T_f - T_c) + m_{\mathrm{cal}} c_{\mathrm{cal}} (T_f - T_c)
+m_h c_h (T_h - T_f) = m_c c_c (T_f - T_c) + m_{\mathrm{'\{'}cal{'\}'}} c_{\mathrm{'\{'}cal{'\}'}} (T_f - T_c)
 $$
 
 where $T_f$ is the final equilibrium temperature.
 
-**Example (HL):** A 0.5 kg piece of copper at $200^\circ\mathrm{C}$ is placed in 1 kg of water at $20^\circ\mathrm{C}$. Find the
+**Example (HL):** A 0.5 kg piece of copper at $200^\circ\mathrm{'\{'}C{'\}'}$ is placed in 1 kg of water at $20^\circ\mathrm{'\{'}C{'\}'}$. Find the
 final temperature. (Ignore the calorimeter's heat capacity.)
 
 $$
@@ -158,11 +158,11 @@ $$
 $$
 
 $$
-122600 = 4375T \implies T \approx 28.0°\mathrm{C}
+122600 = 4375T \implies T \approx 28.0°\mathrm{'\{'}C{'\}'}
 $$
 
-Note that the temperature change of the copper ($172^\circ\mathrm{C}$) is much larger than that of the water
-($8^\circ\mathrm{C}$), even though the energy transferred is the same. This reflects the much lower specific heat
+Note that the temperature change of the copper ($172^\circ\mathrm{'\{'}C{'\}'}$) is much larger than that of the water
+($8^\circ\mathrm{'\{'}C{'\}'}$), even though the energy transferred is the same. This reflects the much lower specific heat
 capacity of copper.
 
 ### Method of Mixtures
@@ -172,8 +172,8 @@ A known mass of a substance at a known temperature is mixed with a known mass of
 different temperature. By measuring the final equilibrium temperature, the unknown specific heat
 capacity can be calculated.
 
-**Example (HL):** A $0.2\mathrm{ kg}$ metal block is heated to $150^\circ\mathrm{C}$ and placed in $0.5\mathrm{ kg}$
-of water at $15^\circ\mathrm{C}$. The final temperature is $20^\circ\mathrm{C}$. Find the specific heat capacity of the metal.
+**Example (HL):** A $0.2\mathrm{'\{'} kg{'\}'}$ metal block is heated to $150^\circ\mathrm{'\{'}C{'\}'}$ and placed in $0.5\mathrm{'\{'} kg{'\}'}$
+of water at $15^\circ\mathrm{'\{'}C{'\}'}$. The final temperature is $20^\circ\mathrm{'\{'}C{'\}'}$. Find the specific heat capacity of the metal.
 (Ignore calorimeter heat capacity.)
 
 $$
@@ -185,7 +185,7 @@ $$
 $$
 
 $$
-26c = 10450 \implies c = 402\mathrm{ J/(kg K)}
+26c = 10450 \implies c = 402\mathrm{'\{'} J/(kg K){'\}'}
 $$
 
 This value is close to that of aluminium.
@@ -234,10 +234,10 @@ Note that $L_v$ is generally much larger than $L_f$ because completely separatin
 (boiling) requires overcoming all intermolecular forces, whereas melting only needs to disrupt the
 ordered lattice while keeping molecules close together.
 
-**Example (OL):** How much energy is needed to convert 0.2 kg of ice at $0^\circ\mathrm{C}$ to water at $0^\circ\mathrm{C}$?
+**Example (OL):** How much energy is needed to convert 0.2 kg of ice at $0^\circ\mathrm{'\{'}C{'\}'}$ to water at $0^\circ\mathrm{'\{'}C{'\}'}$?
 
 $$
-Q = mL_f = 0.2 \times 3.34 \times 10^5 = 66800\mathrm{ J} = 66.8\mathrm{ kJ}
+Q = mL_f = 0.2 \times 3.34 \times 10^5 = 66800\mathrm{'\{'} J{'\}'} = 66.8\mathrm{'\{'} kJ{'\}'}
 $$
 
 ### Multi-Stage Heating Problems (HL)
@@ -245,30 +245,30 @@ $$
 When heating a substance through multiple phases, the total energy is the sum of the energy for each
 stage:
 
-1. Heating the solid to its melting point: $Q_1 = mc_{\mathrm{solid}}\Delta T_1$
+1. Heating the solid to its melting point: $Q_1 = mc_{\mathrm{'\{'}solid{'\}'}}\Delta T_1$
 2. Melting at the melting point: $Q_2 = mL_f$
-3. Heating the liquid to its boiling point: $Q_3 = mc_{\mathrm{liquid}}\Delta T_2$
+3. Heating the liquid to its boiling point: $Q_3 = mc_{\mathrm{'\{'}liquid{'\}'}}\Delta T_2$
 4. Vaporising at the boiling point: $Q_4 = mL_v$
-5. Heating the gas (if applicable): $Q_5 = mc_{\mathrm{gas}}\Delta T_3$
+5. Heating the gas (if applicable): $Q_5 = mc_{\mathrm{'\{'}gas{'\}'}}\Delta T_3$
 
 $$
-Q_{\mathrm{total}} = Q_1 + Q_2 + Q_3 + Q_4 + Q_5
+Q_{\mathrm{'\{'}total{'\}'}} = Q_1 + Q_2 + Q_3 + Q_4 + Q_5
 $$
 
-**Example (HL):** How much energy is needed to convert 100 g of ice at $-10^\circ\mathrm{C}$ to steam at $100^\circ\mathrm{C}$?
+**Example (HL):** How much energy is needed to convert 100 g of ice at $-10^\circ\mathrm{'\{'}C{'\}'}$ to steam at $100^\circ\mathrm{'\{'}C{'\}'}$?
 
-1. Heat ice from $-10^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$: $Q_1 = 0.1 \times 2100 \times 10 = 2100\mathrm{ J}$.
-2. Melt ice at $0^\circ\mathrm{C}$: $Q_2 = 0.1 \times 3.34 \times 10^5 = 33400\mathrm{ J}$.
-3. Heat water from $0^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$: $Q_3 = 0.1 \times 4180 \times 100 = 41800\mathrm{ J}$.
-4. Vaporise water at $100^\circ\mathrm{C}$: $Q_4 = 0.1 \times 2.26 \times 10^6 = 226000\mathrm{ J}$.
+1. Heat ice from $-10^\circ\mathrm{'\{'}C{'\}'}$ to $0^\circ\mathrm{'\{'}C{'\}'}$: $Q_1 = 0.1 \times 2100 \times 10 = 2100\mathrm{'\{'} J{'\}'}$.
+2. Melt ice at $0^\circ\mathrm{'\{'}C{'\}'}$: $Q_2 = 0.1 \times 3.34 \times 10^5 = 33400\mathrm{'\{'} J{'\}'}$.
+3. Heat water from $0^\circ\mathrm{'\{'}C{'\}'}$ to $100^\circ\mathrm{'\{'}C{'\}'}$: $Q_3 = 0.1 \times 4180 \times 100 = 41800\mathrm{'\{'} J{'\}'}$.
+4. Vaporise water at $100^\circ\mathrm{'\{'}C{'\}'}$: $Q_4 = 0.1 \times 2.26 \times 10^6 = 226000\mathrm{'\{'} J{'\}'}$.
 
 $$
-Q_{\mathrm{total}} = 2100 + 33400 + 41800 + 226000 = 303300\mathrm{ J} \approx 303\mathrm{ kJ}
+Q_{\mathrm{'\{'}total{'\}'}} = 2100 + 33400 + 41800 + 226000 = 303300\mathrm{'\{'} J{'\}'} \approx 303\mathrm{'\{'} kJ{'\}'}
 $$
 
-Notice that the latent heat of vaporisation ($226\mathrm{ kJ}$) dominates the total energy. This is
+Notice that the latent heat of vaporisation ($226\mathrm{'\{'} kJ{'\}'}$) dominates the total energy. This is
 why steam burns are so much more dangerous than water burns at the same temperature: steam at
-$100^\circ\mathrm{C}$ contains an additional $2260\mathrm{ kJ/kg}$ of energy compared to water at $100^\circ\mathrm{C}$, and this
+$100^\circ\mathrm{'\{'}C{'\}'}$ contains an additional $2260\mathrm{'\{'} kJ/kg{'\}'}$ of energy compared to water at $100^\circ\mathrm{'\{'}C{'\}'}$, and this
 energy is released when the steam condenses on the skin.
 
 ## Gas Laws
@@ -282,7 +282,7 @@ At constant temperature, the pressure of a fixed mass of gas is inversely propor
 volume:
 
 $$
-pV = \mathrm{constant} \implies p_1 V_1 = p_2 V_2
+pV = \mathrm{'\{'}constant{'\}'} \implies p_1 V_1 = p_2 V_2
 $$
 
 **Microscopic explanation:** At constant temperature, the average speed of the molecules is
@@ -298,14 +298,14 @@ At constant pressure, the volume of a fixed mass of gas is directly proportional
 temperature:
 
 $$
-\frac{V}{T} = \mathrm{constant} \implies \frac{V_1}{T_1} = \frac{V_2}{T_2}
+\frac{V}{T} = \mathrm{'\{'}constant{'\}'} \implies \frac{V_1}{T_1} = \frac{V_2}{T_2}
 $$
 
 **Microscopic explanation:** At constant pressure, increasing the temperature increases the average
 speed of the molecules. To maintain the same pressure (same force per unit area on the walls), the
 gas must expand so that fewer molecules hit each unit area per unit time.
 
-Extrapolating Charles's law to $V = 0$ gives $T = 0\mathrm{ K}$ (absolute zero). This is how absolute
+Extrapolating Charles's law to $V = 0$ gives $T = 0\mathrm{'\{'} K{'\}'}$ (absolute zero). This is how absolute
 zero was first estimated experimentally.
 
 ### Gay-Lussac's Law (OL/HL)
@@ -314,7 +314,7 @@ At constant volume, the pressure of a fixed mass of gas is directly proportional
 temperature:
 
 $$
-\frac{p}{T} = \mathrm{constant} \implies \frac{p_1}{T_1} = \frac{p_2}{T_2}
+\frac{p}{T} = \mathrm{'\{'}constant{'\}'} \implies \frac{p_1}{T_1} = \frac{p_2}{T_2}
 $$
 
 **Microscopic explanation:** At constant volume, increasing the temperature increases the average
@@ -331,11 +331,11 @@ $$
 
 This reduces to each individual law when the appropriate variable is held constant.
 
-**Example (HL):** A gas occupies $3\mathrm{ m}^3$ at $2 \times 10^5\mathrm{ Pa}$ and $300\mathrm{ K}$.
-Find its volume at $10^5\mathrm{ Pa}$ and $400\mathrm{ K}$.
+**Example (HL):** A gas occupies $3\mathrm{'\{'} m{'\}'}^3$ at $2 \times 10^5\mathrm{'\{'} Pa{'\}'}$ and $300\mathrm{'\{'} K{'\}'}$.
+Find its volume at $10^5\mathrm{'\{'} Pa{'\}'}$ and $400\mathrm{'\{'} K{'\}'}$.
 
 $$
-V_2 = \frac{p_1 V_1 T_2}{p_2 T_1} = \frac{2 \times 10^5 \times 3 \times 400}{10^5 \times 300} = 8\mathrm{ m}^3
+V_2 = \frac{p_1 V_1 T_2}{p_2 T_1} = \frac{2 \times 10^5 \times 3 \times 400}{10^5 \times 300} = 8\mathrm{'\{'} m{'\}'}^3
 $$
 
 ## Ideal Gas Law (HL)
@@ -347,7 +347,7 @@ $$
 pV = nRT
 $$
 
-where $n$ is the number of moles and $R = 8.314\mathrm{ J/(mol K)}$ is the universal gas constant.
+where $n$ is the number of moles and $R = 8.314\mathrm{'\{'} J/(mol K){'\}'}$ is the universal gas constant.
 
 ### The Ideal Gas Approximation
 
@@ -364,13 +364,13 @@ intermolecular forces and the finite size of molecules.
 ### Alternative Forms
 
 Using $n = N/N_A$ where $N$ is the number of molecules and
-$N_A = 6.022 \times 10^{23}\mathrm{ mol}^{-1}$ is Avogadro's number:
+$N_A = 6.022 \times 10^{23}\mathrm{'\{'} mol{'\}'}^{-1}$ is Avogadro's number:
 
 $$
 pV = Nk_BT
 $$
 
-where $k_B = R/N_A = 1.38 \times 10^{-23}\mathrm{ J/K}$ is Boltzmann's constant.
+where $k_B = R/N_A = 1.38 \times 10^{-23}\mathrm{'\{'} J/K{'\}'}$ is Boltzmann's constant.
 
 The molar form using the molar volume $V_m = V/n$:
 
@@ -378,26 +378,26 @@ $$
 pV_m = RT
 $$
 
-At STP (standard temperature and pressure: $273.15\mathrm{ K}$, $1.013 \times 10^5\mathrm{ Pa}$), one
-mole of ideal gas occupies $22.4\mathrm{ L}$.
+At STP (standard temperature and pressure: $273.15\mathrm{'\{'} K{'\}'}$, $1.013 \times 10^5\mathrm{'\{'} Pa{'\}'}$), one
+mole of ideal gas occupies $22.4\mathrm{'\{'} L{'\}'}$.
 
-**Example (HL):** Find the volume occupied by 2 mol of gas at $300\mathrm{ K}$ and
-$1.01 \times 10^5\mathrm{ Pa}$.
-
-$$
-V = \frac{nRT}{p} = \frac{2 \times 8.314 \times 300}{1.01 \times 10^5} \approx 0.0494\mathrm{ m}^3 = 49.4\mathrm{ L}
-$$
-
-**Example (HL):** A gas cylinder of volume $0.05\mathrm{ m}^3$ contains oxygen at a pressure of
-$2 \times 10^6\mathrm{ Pa}$ and temperature $300\mathrm{ K}$. Find the mass of oxygen
-($M_{\mathrm{O}_2} = 0.032\mathrm{ kg/mol}$).
+**Example (HL):** Find the volume occupied by 2 mol of gas at $300\mathrm{'\{'} K{'\}'}$ and
+$1.01 \times 10^5\mathrm{'\{'} Pa{'\}'}$.
 
 $$
-n = \frac{pV}{RT} = \frac{2 \times 10^6 \times 0.05}{8.314 \times 300} = \frac{100000}{2494.2} = 40.1\mathrm{ mol}
+V = \frac{nRT}{p} = \frac{2 \times 8.314 \times 300}{1.01 \times 10^5} \approx 0.0494\mathrm{'\{'} m{'\}'}^3 = 49.4\mathrm{'\{'} L{'\}'}
+$$
+
+**Example (HL):** A gas cylinder of volume $0.05\mathrm{'\{'} m{'\}'}^3$ contains oxygen at a pressure of
+$2 \times 10^6\mathrm{'\{'} Pa{'\}'}$ and temperature $300\mathrm{'\{'} K{'\}'}$. Find the mass of oxygen
+($M_{\mathrm{'\{'}O{'\}'}_2} = 0.032\mathrm{'\{'} kg/mol{'\}'}$).
+
+$$
+n = \frac{pV}{RT} = \frac{2 \times 10^6 \times 0.05}{8.314 \times 300} = \frac{100000}{2494.2} = 40.1\mathrm{'\{'} mol{'\}'}
 $$
 
 $$
-m = nM = 40.1 \times 0.032 = 1.28\mathrm{ kg}
+m = nM = 40.1 \times 0.032 = 1.28\mathrm{'\{'} kg{'\}'}
 $$
 
 ## Kinetic Theory of Gases (HL)
@@ -417,7 +417,7 @@ $$
 ### Deriving Pressure from Kinetic Theory
 
 Consider a gas in a cubical container of side $L$. A molecule of mass $m$ moving with velocity
-$\mathbf{v} = (v_x, v_y, v_z)$ bounces elastically off a wall perpendicular to the x-axis.
+$\mathbf{'\{'}v{'\}'} = (v_x, v_y, v_z)$ bounces elastically off a wall perpendicular to the x-axis.
 
 The change in momentum per collision with this wall is:
 
@@ -481,32 +481,32 @@ of temperature.
 The root mean square (RMS) speed is defined as:
 
 $$
-c_{\mathrm{rms}} = \sqrt{\overline{v^2}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}
+c_{\mathrm{'\{'}rms{'\}'}} = \sqrt{\overline{v^2}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}
 $$
 
 where $M$ is the molar mass (kg/mol).
 
-Note: $c_{\mathrm{rms}}$ is not the same as the average speed or the most probable speed. The Maxwell
+Note: $c_{\mathrm{'\{'}rms{'\}'}}$ is not the same as the average speed or the most probable speed. The Maxwell
 distribution gives:
 
 - Most probable speed: $v_p = \sqrt{\frac{2k_BT}{m}}$
 - Average speed: $\bar{v} = \sqrt{\frac{8k_BT}{\pi m}}$
-- RMS speed: $c_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}}$
+- RMS speed: $c_{\mathrm{'\{'}rms{'\}'}} = \sqrt{\frac{3k_BT}{m}}$
 
-The relationship is $v_p \lt \bar{v} \lt c_{\mathrm{rms}}$.
+The relationship is $v_p \lt \bar{v} \lt c_{\mathrm{'\{'}rms{'\}'}}$.
 
-**Example (HL):** Find the RMS speed of nitrogen molecules ($M = 0.028\mathrm{ kg/mol}$) at
-$300\mathrm{ K}$.
-
-$$
-c_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.028}} = \sqrt{267000} \approx 517\mathrm{ m/s}
-$$
-
-**Example (HL):** Compare the RMS speeds of hydrogen ($M = 0.002\mathrm{ kg/mol}$) and oxygen
-($M = 0.032\mathrm{ kg/mol}$) at the same temperature.
+**Example (HL):** Find the RMS speed of nitrogen molecules ($M = 0.028\mathrm{'\{'} kg/mol{'\}'}$) at
+$300\mathrm{'\{'} K{'\}'}$.
 
 $$
-\frac{c_{\mathrm{rms}}(\mathrm{H}_2)}{c_{\mathrm{rms}}(\mathrm{O}_2)} = \sqrt{\frac{M_{\mathrm{O}_2}}{M_{\mathrm{H}_2}}} = \sqrt{\frac{0.032}{0.002}} = \sqrt{16} = 4
+c_{\mathrm{'\{'}rms{'\}'}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.028}} = \sqrt{267000} \approx 517\mathrm{'\{'} m/s{'\}'}
+$$
+
+**Example (HL):** Compare the RMS speeds of hydrogen ($M = 0.002\mathrm{'\{'} kg/mol{'\}'}$) and oxygen
+($M = 0.032\mathrm{'\{'} kg/mol{'\}'}$) at the same temperature.
+
+$$
+\frac{c_{\mathrm{'\{'}rms{'\}'}}(\mathrm{'\{'}H{'\}'}_2)}{c_{\mathrm{'\{'}rms{'\}'}}(\mathrm{'\{'}O{'\}'}_2)} = \sqrt{\frac{M_{\mathrm{'\{'}O{'\}'}_2}}{M_{\mathrm{'\{'}H{'\}'}_2}}} = \sqrt{\frac{0.032}{0.002}} = \sqrt{16} = 4
 $$
 
 Hydrogen molecules move four times faster than oxygen molecules at the same temperature. This is why
@@ -522,7 +522,7 @@ $$
 U = \frac{3}{2}Nk_BT = \frac{3}{2}nRT
 $$
 
-For a diatomic ideal gas (e.g., $\mathrm{N}_2$, $\mathrm{O}_2$), rotational kinetic energy adds two more
+For a diatomic ideal gas (e.g., $\mathrm{'\{'}N{'\}'}_2$, $\mathrm{'\{'}O{'\}'}_2$), rotational kinetic energy adds two more
 degrees of freedom:
 
 $$
@@ -559,7 +559,7 @@ $$
 $$
 
 All heat added to the system is converted to work, and vice versa. For an ideal gas,
-$pV = \mathrm{constant}$, and the work done is:
+$pV = \mathrm{'\{'}constant{'\}'}$, and the work done is:
 
 $$
 W = nRT\ln\left(\frac{V_2}{V_1}\right)
@@ -592,7 +592,7 @@ Work done by the system comes entirely from its internal energy, so the temperat
 expansion and increases during compression. For an ideal gas:
 
 $$
-pV^\gamma = \mathrm{constant}
+pV^\gamma = \mathrm{'\{'}constant{'\}'}
 $$
 
 where $\gamma = C_p/C_v$ is the ratio of specific heat capacities ($5/3$ for monatomic, $7/5$ for
@@ -614,7 +614,7 @@ ideal gas, $W = nRT\ln(V_2/V_1)$.
 In a cyclic process, the system returns to its initial state, so $\Delta U = 0$. Therefore:
 
 $$
-Q_{\mathrm{net}} = W_{\mathrm{net}}
+Q_{\mathrm{'\{'}net{'\}'}} = W_{\mathrm{'\{'}net{'\}'}}
 $$
 
 The net work done by the system equals the net heat absorbed. On a $pV$ diagram, the net work equals
@@ -655,19 +655,19 @@ Kelvin).
 No real engine can exceed this efficiency. The Carnot efficiency depends only on the temperatures of
 the two reservoirs, not on the working substance.
 
-**Example (HL):** A heat engine operates between $600\mathrm{ K}$ and $300\mathrm{ K}$. Find the maximum
+**Example (HL):** A heat engine operates between $600\mathrm{'\{'} K{'\}'}$ and $300\mathrm{'\{'} K{'\}'}$. Find the maximum
 possible efficiency.
 
 $$
 \eta = 1 - \frac{300}{600} = 0.50 = 50\%
 $$
 
-**Example (HL):** A steam turbine receives steam at $500^\circ\mathrm{C}$ and exhausts to a condenser at $30^\circ\mathrm{C}$.
+**Example (HL):** A steam turbine receives steam at $500^\circ\mathrm{'\{'}C{'\}'}$ and exhausts to a condenser at $30^\circ\mathrm{'\{'}C{'\}'}$.
 Find the maximum Carnot efficiency and the minimum heat rejected per cycle if the turbine absorbs
-$5000\mathrm{ kJ}$ per cycle.
+$5000\mathrm{'\{'} kJ{'\}'}$ per cycle.
 
 $$
-T_H = 773\mathrm{ K}, \quad T_C = 303\mathrm{ K}
+T_H = 773\mathrm{'\{'} K{'\}'}, \quad T_C = 303\mathrm{'\{'} K{'\}'}
 $$
 
 $$
@@ -675,11 +675,11 @@ $$
 $$
 
 $$
-W = \eta Q_H = 0.608 \times 5000 = 3040\mathrm{ kJ}
+W = \eta Q_H = 0.608 \times 5000 = 3040\mathrm{'\{'} kJ{'\}'}
 $$
 
 $$
-Q_C = Q_H - W = 5000 - 3040 = 1960\mathrm{ kJ}
+Q_C = Q_H - W = 5000 - 3040 = 1960\mathrm{'\{'} kJ{'\}'}
 $$
 
 ### Entropy (HL)
@@ -693,10 +693,10 @@ $$
 \Delta S = \frac{Q}{T}
 $$
 
-For a system undergoing a reversible process, $\Delta S_{\mathrm{system}} = Q/T$ and
-$\Delta S_{\mathrm{surroundings}} = -Q/T$, so $\Delta S_{\mathrm{total}} = 0$.
+For a system undergoing a reversible process, $\Delta S_{\mathrm{'\{'}system{'\}'}} = Q/T$ and
+$\Delta S_{\mathrm{'\{'}surroundings{'\}'}} = -Q/T$, so $\Delta S_{\mathrm{'\{'}total{'\}'}} = 0$.
 
-For an irreversible process (all real processes), $\Delta S_{\mathrm{total}} \gt 0$.
+For an irreversible process (all real processes), $\Delta S_{\mathrm{'\{'}total{'\}'}} \gt 0$.
 
 ### Why Heat Flows from Hot to Cold
 
@@ -758,11 +758,11 @@ $$
 | Air                   | 0.026         |
 | Fibreglass insulation | 0.04          |
 
-**Example (HL):** A copper wall of thickness $5\mathrm{ mm}$ and area $2\mathrm{ m}^2$ has one face at
-$100^\circ\mathrm{C}$ and the other at $20^\circ\mathrm{C}$. Find the rate of heat conduction.
+**Example (HL):** A copper wall of thickness $5\mathrm{'\{'} mm{'\}'}$ and area $2\mathrm{'\{'} m{'\}'}^2$ has one face at
+$100^\circ\mathrm{'\{'}C{'\}'}$ and the other at $20^\circ\mathrm{'\{'}C{'\}'}$. Find the rate of heat conduction.
 
 $$
-\frac{dQ}{dt} = \frac{401 \times 2 \times (100 - 20)}{0.005} = \frac{64160}{0.005} = 1.28 \times 10^7\mathrm{ W}
+\frac{dQ}{dt} = \frac{401 \times 2 \times (100 - 20)}{0.005} = \frac{64160}{0.005} = 1.28 \times 10^7\mathrm{'\{'} W{'\}'}
 $$
 
 ### Convection (OL/HL)
@@ -788,7 +788,7 @@ $$
 P = \sigma A T^4
 $$
 
-where $\sigma = 5.67 \times 10^{-8}\mathrm{ W m}^{-2}\mathrm{ K}^{-4}$ is the Stefan-Boltzmann constant,
+where $\sigma = 5.67 \times 10^{-8}\mathrm{'\{'} W m{'\}'}^{-2}\mathrm{'\{'} K{'\}'}^{-4}$ is the Stefan-Boltzmann constant,
 $A$ is the surface area, and $T$ is the absolute temperature in kelvin.
 
 The power radiated is proportional to $T^4$, which means small temperature increases at high
@@ -801,15 +801,15 @@ $$
 P = \varepsilon \sigma A T^4
 $$
 
-**Example (HL):** A spherical black body of radius $5\mathrm{ cm}$ is at $500\mathrm{ K}$. Find the
+**Example (HL):** A spherical black body of radius $5\mathrm{'\{'} cm{'\}'}$ is at $500\mathrm{'\{'} K{'\}'}$. Find the
 power radiated.
 
 $$
-A = 4\pi r^2 = 4\pi(0.05)^2 = 0.0314\mathrm{ m}^2
+A = 4\pi r^2 = 4\pi(0.05)^2 = 0.0314\mathrm{'\{'} m{'\}'}^2
 $$
 
 $$
-P = 5.67 \times 10^{-8} \times 0.0314 \times (500)^4 = 5.67 \times 10^{-8} \times 0.0314 \times 6.25 \times 10^{10} = 111\mathrm{ W}
+P = 5.67 \times 10^{-8} \times 0.0314 \times (500)^4 = 5.67 \times 10^{-8} \times 0.0314 \times 6.25 \times 10^{10} = 111\mathrm{'\{'} W{'\}'}
 $$
 
 ### Wien's Displacement Law (HL)
@@ -818,14 +818,14 @@ The wavelength at which a black body emits maximum radiation is inversely propor
 absolute temperature:
 
 $$
-\lambda_{\max} T = 2.898 \times 10^{-3}\mathrm{ m K}
+\lambda_{\max} T = 2.898 \times 10^{-3}\mathrm{'\{'} m K{'\}'}
 $$
 
 This explains why hotter objects glow bluer and cooler objects glow redder. The Sun (surface
-temperature $\approx 5800\mathrm{ K}$) has its peak emission at:
+temperature $\approx 5800\mathrm{'\{'} K{'\}'}$) has its peak emission at:
 
 $$
-\lambda_{\max} = \frac{2.898 \times 10^{-3}}{5800} = 5.0 \times 10^{-7}\mathrm{ m} = 500\mathrm{ nm}
+\lambda_{\max} = \frac{2.898 \times 10^{-3}}{5800} = 5.0 \times 10^{-7}\mathrm{'\{'} m{'\}'} = 500\mathrm{'\{'} nm{'\}'}
 $$
 
 This is in the visible (green-yellow) region, consistent with the Sun appearing white-yellow.
@@ -836,7 +836,7 @@ When a body at temperature $T$ is surrounded by an environment at temperature $T
 radiated is:
 
 $$
-P_{\mathrm{net}} = \varepsilon \sigma A (T^4 - T_0^4)
+P_{\mathrm{'\{'}net{'\}'}} = \varepsilon \sigma A (T^4 - T_0^4)
 $$
 
 This explains why bodies cool down (lose more radiation than they absorb) when hotter than their
@@ -854,7 +854,7 @@ surroundings, and heat up when colder.
 4. **First law of thermodynamics** -- $W$ is work done _by_ the system. Work done _on_ the system is
    negative $W$. Be consistent with sign conventions.
 5. **Ideal gas law** -- ensure the gas constant $R$ matches the units used.
-   $R = 8.314\mathrm{ J/(mol K)}$ when $p$ is in Pa, $V$ in $\mathrm{m}^3$, $T$ in K, and $n$ in mol.
+   $R = 8.314\mathrm{'\{'} J/(mol K){'\}'}$ when $p$ is in Pa, $V$ in $\mathrm{'\{'}m{'\}'}^3$, $T$ in K, and $n$ in mol.
 6. **Carnot efficiency** -- temperatures must be in Kelvin. The formula $\eta = 1 - T_C/T_H$ gives
    the maximum possible efficiency; real engines are less efficient.
 7. **pV diagrams** -- work done by the gas equals the area under the curve. For a cycle, net work
@@ -866,34 +866,34 @@ surroundings, and heat up when colder.
 
 ### Ordinary Level
 
-1. How much energy is needed to heat 5 kg of water from $15^\circ\mathrm{C}$ to $85^\circ\mathrm{C}$?
-2. How much energy is needed to melt 0.5 kg of ice at $0^\circ\mathrm{C}$?
-3. A gas at $1.5 \times 10^5\mathrm{ Pa}$ occupies $4\mathrm{ m}^3$. If the volume is compressed to
-   $2\mathrm{ m}^3$ at constant temperature, find the new pressure.
+1. How much energy is needed to heat 5 kg of water from $15^\circ\mathrm{'\{'}C{'\}'}$ to $85^\circ\mathrm{'\{'}C{'\}'}$?
+2. How much energy is needed to melt 0.5 kg of ice at $0^\circ\mathrm{'\{'}C{'\}'}$?
+3. A gas at $1.5 \times 10^5\mathrm{'\{'} Pa{'\}'}$ occupies $4\mathrm{'\{'} m{'\}'}^3$. If the volume is compressed to
+   $2\mathrm{'\{'} m{'\}'}^3$ at constant temperature, find the new pressure.
 4. Describe the three methods of heat transfer with an example of each.
 5. Explain the difference between heat and temperature.
-6. Convert $-40^\circ\mathrm{C}$ to Kelvin and Fahrenheit. (Note: $-40^\circ\mathrm{C}$ equals $-40^\circ\mathrm{F}$.)
+6. Convert $-40^\circ\mathrm{'\{'}C{'\}'}$ to Kelvin and Fahrenheit. (Note: $-40^\circ\mathrm{'\{'}C{'\}'}$ equals $-40^\circ\mathrm{'\{'}F{'\}'}$.)
 
 ### Higher Level
 
-1. Calculate the total energy to convert 200 g of ice at $-20^\circ\mathrm{C}$ to steam at $120^\circ\mathrm{C}$. Assume the
-   specific heat capacity of steam is $2010\mathrm{ J/(kg K)}$.
-2. Using the ideal gas law, find the pressure of 3 mol of gas in a 10 L container at $350\mathrm{ K}$.
-3. Find the RMS speed of oxygen molecules ($M = 0.032\mathrm{ kg/mol}$) at $27^\circ\mathrm{C}$.
-4. A heat engine operates between $500^\circ\mathrm{C}$ and $50^\circ\mathrm{C}$. Find the maximum Carnot efficiency. If the
-   engine absorbs $2000\mathrm{ J}$ from the hot reservoir per cycle, how much work is done per cycle
+1. Calculate the total energy to convert 200 g of ice at $-20^\circ\mathrm{'\{'}C{'\}'}$ to steam at $120^\circ\mathrm{'\{'}C{'\}'}$. Assume the
+   specific heat capacity of steam is $2010\mathrm{'\{'} J/(kg K){'\}'}$.
+2. Using the ideal gas law, find the pressure of 3 mol of gas in a 10 L container at $350\mathrm{'\{'} K{'\}'}$.
+3. Find the RMS speed of oxygen molecules ($M = 0.032\mathrm{'\{'} kg/mol{'\}'}$) at $27^\circ\mathrm{'\{'}C{'\}'}$.
+4. A heat engine operates between $500^\circ\mathrm{'\{'}C{'\}'}$ and $50^\circ\mathrm{'\{'}C{'\}'}$. Find the maximum Carnot efficiency. If the
+   engine absorbs $2000\mathrm{'\{'} J{'\}'}$ from the hot reservoir per cycle, how much work is done per cycle
    and how much heat is rejected?
-5. A $150\mathrm{ g}$ block of an unknown metal at $250^\circ\mathrm{C}$ is dropped into $300\mathrm{ g}$ of water at
-   $20^\circ\mathrm{C}$ in a calorimeter of heat capacity $50\mathrm{ J/K}$. The final temperature is $30^\circ\mathrm{C}$. Find
+5. A $150\mathrm{'\{'} g{'\}'}$ block of an unknown metal at $250^\circ\mathrm{'\{'}C{'\}'}$ is dropped into $300\mathrm{'\{'} g{'\}'}$ of water at
+   $20^\circ\mathrm{'\{'}C{'\}'}$ in a calorimeter of heat capacity $50\mathrm{'\{'} J/K{'\}'}$. The final temperature is $30^\circ\mathrm{'\{'}C{'\}'}$. Find
    the specific heat capacity of the metal.
-6. An ideal gas undergoes isothermal expansion from $2 \times 10^5\mathrm{ Pa}$, $0.01\mathrm{ m}^3$ to
-   $1 \times 10^5\mathrm{ Pa}$. Find the final volume and the work done by the gas.
-7. A black body of surface area $0.1\mathrm{ m}^2$ is at a temperature of $1500\mathrm{ K}$. Find the
+6. An ideal gas undergoes isothermal expansion from $2 \times 10^5\mathrm{'\{'} Pa{'\}'}$, $0.01\mathrm{'\{'} m{'\}'}^3$ to
+   $1 \times 10^5\mathrm{'\{'} Pa{'\}'}$. Find the final volume and the work done by the gas.
+7. A black body of surface area $0.1\mathrm{'\{'} m{'\}'}^2$ is at a temperature of $1500\mathrm{'\{'} K{'\}'}$. Find the
    power radiated and the wavelength of peak emission.
-8. Two moles of a monatomic ideal gas are heated at constant pressure from $300\mathrm{ K}$ to
-   $500\mathrm{ K}$. Calculate the change in internal energy, the heat added, and the work done.
-9. A heat pump operates between an outdoor temperature of $5^\circ\mathrm{C}$ and an indoor temperature of $22^\circ\mathrm{C}$.
-   Find the maximum coefficient of performance (COP). If the heat pump delivers $5\mathrm{ kW}$ of
+8. Two moles of a monatomic ideal gas are heated at constant pressure from $300\mathrm{'\{'} K{'\}'}$ to
+   $500\mathrm{'\{'} K{'\}'}$. Calculate the change in internal energy, the heat added, and the work done.
+9. A heat pump operates between an outdoor temperature of $5^\circ\mathrm{'\{'}C{'\}'}$ and an indoor temperature of $22^\circ\mathrm{'\{'}C{'\}'}$.
+   Find the maximum coefficient of performance (COP). If the heat pump delivers $5\mathrm{'\{'} kW{'\}'}$ of
    heat to the building, what is the minimum power input required?
 10. Derive the expression for the pressure of an ideal gas from kinetic theory, clearly stating your
     assumptions. Show how this leads to $pV = \frac{1}{3}Nm\overline{v^2}$.

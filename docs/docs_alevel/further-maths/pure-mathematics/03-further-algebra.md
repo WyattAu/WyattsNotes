@@ -363,7 +363,7 @@ covers summation in the context of mathematical induction.
 
 ## 7. Summary of Key Results
 
-$$\boxed{P(c) = R \quad \mathrm{(Remainder Theorem)}}$$
+$$\boxed{P(c) = R \quad \mathrm{'\{'}(Remainder Theorem){'\}'}}$$
 
 $$\boxed{\frac{px + q}{(ax + b)(x^2 + cx + d)} = \frac{A}{ax + b} + \frac{Bx + C}{x^2 + cx + d}}$$
 
@@ -584,7 +584,7 @@ $a = 2$ and $b$ depends on $\gamma\delta$ (which requires further information to
 <hr />
 
 **Problem 8.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r(r+1) = \frac{n(n+1)(n+2)}{3}$
-for all $n \in \mathbb{Z}^+$.
+for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 <details>
 <summary>Hint</summary>
@@ -752,11 +752,11 @@ The $n$-th harmonic number. No simpler closed form exists.
 
 **Problem.** Solve the system $x + 2y - z = 3$, $2x - y + z = 4$, $3x + y + 2z = 7$.
 
-**Solution.** In matrix form $\mathbf{M}\mathbf{x} = \mathbf{b}$:
+**Solution.** In matrix form $\mathbf{'\{'}M{'\}'}\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$:
 
-$$\mathbf{M} = \begin{pmatrix}1&2&-1\\2&-1&1\\3&1&2\end{pmatrix}$$
+$$\mathbf{'\{'}M{'\}'} = \begin{pmatrix}1&2&-1\\2&-1&1\\3&1&2\end{pmatrix}$$
 
-$\det(\mathbf{M}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$, so the system has a unique solution.
+$\det(\mathbf{'\{'}M{'\}'}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$, so the system has a unique solution.
 
 Using Cramer's rule: $x = \dfrac{\det\begin{pmatrix}3&2&-1\\4&-1&1\\7&1&2\end{pmatrix}}{-6} = \dfrac{-6+16-11}{-6} = \dfrac{-1}{-6} = \dfrac{1}{6}$.
 

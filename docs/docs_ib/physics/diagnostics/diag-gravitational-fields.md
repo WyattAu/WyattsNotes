@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-A planet of mass $M = 6.0 \times 10^{24}\,\text{kg}$ and radius $R = 6.4 \times 10^6\,\text{m}$ is modelled as a uniform sphere. Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$.
+A planet of mass $M = 6.0 \times 10^{24}\,\text{'\{'}kg{'\}'}$ and radius $R = 6.4 \times 10^6\,\text{'\{'}m{'\}'}$ is modelled as a uniform sphere. Take $G = 6.67 \times 10^{-11}\,\text{'\{'}N{'\}'}\,\text{'\{'}m{'\}'}^2\,\text{'\{'}kg{'\}'}^{-2}$.
 
 (a) Derive the expression for the gravitational field strength at a distance $r$ from the centre where $r \lt R$.
 
@@ -25,23 +25,23 @@ A planet of mass $M = 6.0 \times 10^{24}\,\text{kg}$ and radius $R = 6.4 \times 
 
 (a) For a uniform sphere of density $\rho$, the mass enclosed within radius $r$ is:
 
-$$M_{\text{enc}} = \frac{4}{3}\pi r^3 \rho = M\frac{r^3}{R^3}$$
+$$M_{\text{'\{'}enc{'\}'}} = \frac{4}{3}\pi r^3 \rho = M\frac{r^3}{R^3}$$
 
 By the shell theorem, only the enclosed mass contributes to the gravitational field at radius $r$:
 
-$$g(r) = \frac{GM_{\text{enc}}}{r^2} = \frac{GM}{R^3}r$$
+$$g(r) = \frac{GM_{\text{'\{'}enc{'\}'}}}{r^2} = \frac{GM}{R^3}r$$
 
 The field strength increases linearly with $r$ inside the sphere.
 
 (b) At $r = R/2$:
 
-$$g = \frac{GM}{R^3} \times \frac{R}{2} = \frac{GM}{2R^2} = \frac{g_{\text{surface}}}{2}$$
+$$g = \frac{GM}{R^3} \times \frac{R}{2} = \frac{GM}{2R^2} = \frac{g_{\text{'\{'}surface{'\}'}}}{2}$$
 
-Surface gravity: $g_s = \frac{GM}{R^2} = \frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24}}{(6.4 \times 10^6)^2} = \frac{4.002 \times 10^{14}}{4.096 \times 10^{13}} = 9.77\,\text{m}\,\text{s}^{-2}$
+Surface gravity: $g_s = \frac{GM}{R^2} = \frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24}}{(6.4 \times 10^6)^2} = \frac{4.002 \times 10^{14}}{4.096 \times 10^{13}} = 9.77\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-2}$
 
-At $r = R/2$: $g = 9.77/2 = 4.89\,\text{m}\,\text{s}^{-2}$
+At $r = R/2$: $g = 9.77/2 = 4.89\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-2}$
 
-At $r = R$: $g = 9.77\,\text{m}\,\text{s}^{-2}$
+At $r = R$: $g = 9.77\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-2}$
 
 (c) Inside the tunnel, the gravitational force on the object at distance $x$ from the centre (along the tunnel) is:
 
@@ -55,7 +55,7 @@ Period: $T = 2\pi\sqrt{\frac{R^3}{GM}}$
 
 $$T = 2\pi\sqrt{\frac{(6.4 \times 10^6)^3}{6.67 \times 10^{-11} \times 6.0 \times 10^{24}}} = 2\pi\sqrt{\frac{2.621 \times 10^{20}}{4.002 \times 10^{14}}} = 2\pi\sqrt{6.551 \times 10^5}$$
 
-$$= 2\pi \times 809.4 = 5087\,\text{s} \approx 84.8\,\text{minutes}$$
+$$= 2\pi \times 809.4 = 5087\,\text{'\{'}s{'\}'} \approx 84.8\,\text{'\{'}minutes{'\}'}$$
 
 Note: this period is independent of the tunnel direction (it only depends on $R^3/GM$, not on the chord chosen). It equals the period of a low-altitude circular orbit.
 
@@ -69,9 +69,9 @@ Note: this period is independent of the tunnel direction (it only depends on $R^
 
 (b) Calculate the gravitational potential at the surface of the Earth and at a height of $3R_E$ above the surface.
 
-(c) Calculate the minimum energy required to move a satellite of mass $500\,\text{kg}$ from a circular orbit of radius $r_1 = 2R_E$ to one of radius $r_2 = 5R_E$.
+(c) Calculate the minimum energy required to move a satellite of mass $500\,\text{'\{'}kg{'\}'}$ from a circular orbit of radius $r_1 = 2R_E$ to one of radius $r_2 = 5R_E$.
 
-Take $M_E = 6.0 \times 10^{24}\,\text{kg}$, $R_E = 6.4 \times 10^6\,\text{m}$, $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$.
+Take $M_E = 6.0 \times 10^{24}\,\text{'\{'}kg{'\}'}$, $R_E = 6.4 \times 10^6\,\text{'\{'}m{'\}'}$, $G = 6.67 \times 10^{-11}\,\text{'\{'}N{'\}'}\,\text{'\{'}m{'\}'}^2\,\text{'\{'}kg{'\}'}^{-2}$.
 
 **Solution:**
 
@@ -85,23 +85,23 @@ The potential is a scalar quantity (unlike field strength, which is a vector). I
 
 (b) At the surface ($r = R_E$):
 
-$$V_s = -\frac{GM_E}{R_E} = -\frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24}}{6.4 \times 10^6} = -\frac{4.002 \times 10^{14}}{6.4 \times 10^6} = -6.25 \times 10^7\,\text{J}\,\text{kg}^{-1}$$
+$$V_s = -\frac{GM_E}{R_E} = -\frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24}}{6.4 \times 10^6} = -\frac{4.002 \times 10^{14}}{6.4 \times 10^6} = -6.25 \times 10^7\,\text{'\{'}J{'\}'}\,\text{'\{'}kg{'\}'}^{-1}$$
 
 At height $3R_E$ ($r = 4R_E$):
 
-$$V = -\frac{GM_E}{4R_E} = -\frac{6.25 \times 10^7}{4} = -1.56 \times 10^7\,\text{J}\,\text{kg}^{-1}$$
+$$V = -\frac{GM_E}{4R_E} = -\frac{6.25 \times 10^7}{4} = -1.56 \times 10^7\,\text{'\{'}J{'\}'}\,\text{'\{'}kg{'\}'}^{-1}$$
 
 (c) Total energy in orbit of radius $r$: $E = -\frac{GMm}{2r}$
 
 At $r_1 = 2R_E$:
 
-$$E_1 = -\frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24} \times 500}{2 \times 2 \times 6.4 \times 10^6} = -\frac{2.001 \times 10^{17}}{2.56 \times 10^7} = -7.82 \times 10^9\,\text{J}$$
+$$E_1 = -\frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24} \times 500}{2 \times 2 \times 6.4 \times 10^6} = -\frac{2.001 \times 10^{17}}{2.56 \times 10^7} = -7.82 \times 10^9\,\text{'\{'}J{'\}'}$$
 
 At $r_2 = 5R_E$:
 
-$$E_2 = -\frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24} \times 500}{2 \times 5 \times 6.4 \times 10^6} = -\frac{2.001 \times 10^{17}}{6.4 \times 10^7} = -3.13 \times 10^9\,\text{J}$$
+$$E_2 = -\frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24} \times 500}{2 \times 5 \times 6.4 \times 10^6} = -\frac{2.001 \times 10^{17}}{6.4 \times 10^7} = -3.13 \times 10^9\,\text{'\{'}J{'\}'}$$
 
-Energy required: $\Delta E = E_2 - E_1 = -3.13 \times 10^9 - (-7.82 \times 10^9) = 4.69 \times 10^9\,\text{J}$
+Energy required: $\Delta E = E_2 - E_1 = -3.13 \times 10^9 - (-7.82 \times 10^9) = 4.69 \times 10^9\,\text{'\{'}J{'\}'}$
 
 ---
 
@@ -111,7 +111,7 @@ Energy required: $\Delta E = E_2 - E_1 = -3.13 \times 10^9 - (-7.82 \times 10^9)
 
 (a) Derive the expression for escape velocity from the surface of a planet of mass $M$ and radius $R$.
 
-(b) Calculate the escape velocity from the surface of the Moon ($M_M = 7.35 \times 10^{22}\,\text{kg}$, $R_M = 1.74 \times 10^6\,\text{m}$).
+(b) Calculate the escape velocity from the surface of the Moon ($M_M = 7.35 \times 10^{22}\,\text{'\{'}kg{'\}'}$, $R_M = 1.74 \times 10^6\,\text{'\{'}m{'\}'}$).
 
 (c) A student argues that "a projectile launched at escape velocity will escape to infinity and then stop." Explain why this is misleading.
 
@@ -129,9 +129,9 @@ This is independent of the mass of the projectile.
 
 (b) $v_e = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 7.35 \times 10^{22}}{1.74 \times 10^6}}$
 
-$$= \sqrt{\frac{9.805 \times 10^{12}}{1.74 \times 10^6}} = \sqrt{5.635 \times 10^6} = 2374\,\text{m}\,\text{s}^{-1}$$
+$$= \sqrt{\frac{9.805 \times 10^{12}}{1.74 \times 10^6}} = \sqrt{5.635 \times 10^6} = 2374\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-1}$$
 
-$$v_e \approx 2.37\,\text{km}\,\text{s}^{-1}$$
+$$v_e \approx 2.37\,\text{'\{'}km{'\}'}\,\text{'\{'}s{'\}'}^{-1}$$
 
 (c) The student's statement is misleading for two reasons:
 
@@ -166,7 +166,7 @@ $$\frac{GMm}{r^2} = m\omega^2 r$$
 
 $$r^3 = \frac{GM}{\omega^2}$$
 
-The orbital period is $T = 2\pi/\omega$, so $\omega = 2\pi/T$ where $T = 86164\,\text{s}$ (one sidereal day).
+The orbital period is $T = 2\pi/\omega$, so $\omega = 2\pi/T$ where $T = 86164\,\text{'\{'}s{'\}'}$ (one sidereal day).
 
 $$r^3 = \frac{GMT^2}{4\pi^2}$$
 
@@ -178,23 +178,23 @@ $$= \frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24} \times 7.424 \times 10^
 
 $$= \frac{2.972 \times 10^{24}}{39.48} = 7.528 \times 10^{22}$$
 
-$$r = (7.528 \times 10^{22})^{1/3} = 4.224 \times 10^7\,\text{m}$$
+$$r = (7.528 \times 10^{22})^{1/3} = 4.224 \times 10^7\,\text{'\{'}m{'\}'}$$
 
-Altitude: $h = r - R_E = 4.224 \times 10^7 - 6.4 \times 10^6 = 3.584 \times 10^7\,\text{m} = 35840\,\text{km}$
+Altitude: $h = r - R_E = 4.224 \times 10^7 - 6.4 \times 10^6 = 3.584 \times 10^7\,\text{'\{'}m{'\}'} = 35840\,\text{'\{'}km{'\}'}$
 
-Orbital speed: $v = \frac{2\pi r}{T} = \frac{2\pi \times 4.224 \times 10^7}{86164} = 3076\,\text{m}\,\text{s}^{-1}$
+Orbital speed: $v = \frac{2\pi r}{T} = \frac{2\pi \times 4.224 \times 10^7}{86164} = 3076\,\text{'\{'}m{'\}'}\,\text{'\{'}s{'\}'}^{-1}$
 
 (c) Total energy: $E = -\frac{GMm}{2r}$
 
-For $m = 1000\,\text{kg}$ (typical communications satellite):
+For $m = 1000\,\text{'\{'}kg{'\}'}$ (typical communications satellite):
 
-$$E = -\frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24} \times 1000}{2 \times 4.224 \times 10^7} = -\frac{4.002 \times 10^{17}}{8.448 \times 10^7} = -4.74 \times 10^9\,\text{J}$$
+$$E = -\frac{6.67 \times 10^{-11} \times 6.0 \times 10^{24} \times 1000}{2 \times 4.224 \times 10^7} = -\frac{4.002 \times 10^{17}}{8.448 \times 10^7} = -4.74 \times 10^9\,\text{'\{'}J{'\}'}$$
 
 Energy from the surface (at rest):
 
-On surface: $E_0 = -\frac{GMm}{R_E} = -\frac{4.002 \times 10^{17}}{6.4 \times 10^6} = -6.25 \times 10^{10}\,\text{J}$
+On surface: $E_0 = -\frac{GMm}{R_E} = -\frac{4.002 \times 10^{17}}{6.4 \times 10^6} = -6.25 \times 10^{10}\,\text{'\{'}J{'\}'}$
 
-Energy required: $\Delta E = E - E_0 = -4.74 \times 10^9 - (-6.25 \times 10^{10}) = 5.78 \times 10^{10}\,\text{J}$
+Energy required: $\Delta E = E - E_0 = -4.74 \times 10^9 - (-6.25 \times 10^{10}) = 5.78 \times 10^{10}\,\text{'\{'}J{'\}'}$
 
 Note: this is the theoretical minimum. In practice, much more energy is needed due to atmospheric drag, the need to change from the Earth's rotational velocity, and orbit-raising manoeuvres.
 
@@ -204,7 +204,7 @@ Note: this is the theoretical minimum. In practice, much more energy is needed d
 
 **Question:**
 
-Two stars of masses $m_1 = 3.0 \times 10^{30}\,\text{kg}$ and $m_2 = 1.0 \times 10^{30}\,\text{kg}$ orbit their common centre of mass in circular orbits. The separation between them is $d = 2.0 \times 10^{11}\,\text{m}$.
+Two stars of masses $m_1 = 3.0 \times 10^{30}\,\text{'\{'}kg{'\}'}$ and $m_2 = 1.0 \times 10^{30}\,\text{'\{'}kg{'\}'}$ orbit their common centre of mass in circular orbits. The separation between them is $d = 2.0 \times 10^{11}\,\text{'\{'}m{'\}'}$.
 
 (a) Calculate the orbital radii of each star about the centre of mass.
 
@@ -216,9 +216,9 @@ Two stars of masses $m_1 = 3.0 \times 10^{30}\,\text{kg}$ and $m_2 = 1.0 \times 
 
 (a) Centre of mass: $m_1 r_1 = m_2 r_2$ and $r_1 + r_2 = d$
 
-$$r_1 = \frac{m_2 d}{m_1 + m_2} = \frac{1.0 \times 10^{30} \times 2.0 \times 10^{11}}{4.0 \times 10^{30}} = 5.0 \times 10^{10}\,\text{m}$$
+$$r_1 = \frac{m_2 d}{m_1 + m_2} = \frac{1.0 \times 10^{30} \times 2.0 \times 10^{11}}{4.0 \times 10^{30}} = 5.0 \times 10^{10}\,\text{'\{'}m{'\}'}$$
 
-$$r_2 = d - r_1 = 1.5 \times 10^{11}\,\text{m}$$
+$$r_2 = d - r_1 = 1.5 \times 10^{11}\,\text{'\{'}m{'\}'}$$
 
 (b) The gravitational force provides the centripetal force for both stars. Equating for star 1:
 
@@ -228,9 +228,9 @@ $$\omega^2 = \frac{Gm_2}{d^2 r_1} = \frac{Gm_2(m_1 + m_2)}{d^2 \times m_2 d} = \
 
 $$\omega = \sqrt{\frac{G(m_1 + m_2)}{d^3}} = \sqrt{\frac{6.67 \times 10^{-11} \times 4.0 \times 10^{30}}{8.0 \times 10^{33}}}$$
 
-$$= \sqrt{\frac{2.668 \times 10^{20}}{8.0 \times 10^{33}}} = \sqrt{3.335 \times 10^{-14}} = 1.826 \times 10^{-7}\,\text{rad}\,\text{s}^{-1}$$
+$$= \sqrt{\frac{2.668 \times 10^{20}}{8.0 \times 10^{33}}} = \sqrt{3.335 \times 10^{-14}} = 1.826 \times 10^{-7}\,\text{'\{'}rad{'\}'}\,\text{'\{'}s{'\}'}^{-1}$$
 
-Period: $T = 2\pi/\omega = 2\pi/(1.826 \times 10^{-7}) = 3.441 \times 10^7\,\text{s} \approx 398\,\text{days}$
+Period: $T = 2\pi/\omega = 2\pi/(1.826 \times 10^{-7}) = 3.441 \times 10^7\,\text{'\{'}s{'\}'} \approx 398\,\text{'\{'}days{'\}'}$
 
 (c) Total KE:
 
@@ -244,7 +244,7 @@ $$E = KE + PE = -\frac{1}{2}PE + PE = \frac{1}{2}PE = -\frac{Gm_1 m_2}{2d}$$
 
 Substituting: $E = -\frac{6.67 \times 10^{-11} \times 3.0 \times 10^{30} \times 1.0 \times 10^{30}}{2 \times 2.0 \times 10^{11}}$
 
-$$= -\frac{2.001 \times 10^{50}}{4.0 \times 10^{11}} = -5.00 \times 10^{38}\,\text{J}$$
+$$= -\frac{2.001 \times 10^{50}}{4.0 \times 10^{11}} = -5.00 \times 10^{38}\,\text{'\{'}J{'\}'}$$
 
 ---
 
@@ -252,21 +252,21 @@ $$= -\frac{2.001 \times 10^{50}}{4.0 \times 10^{11}} = -5.00 \times 10^{38}\,\te
 
 **Question:**
 
-Two identical planets each of mass $M = 3.0 \times 10^{24}\,\text{kg}$ and radius $R = 4.0 \times 10^6\,\text{m}$ are separated by a distance $d = 5.0 \times 10^7\,\text{m}$ (centre to centre).
+Two identical planets each of mass $M = 3.0 \times 10^{24}\,\text{'\{'}kg{'\}'}$ and radius $R = 4.0 \times 10^6\,\text{'\{'}m{'\}'}$ are separated by a distance $d = 5.0 \times 10^7\,\text{'\{'}m{'\}'}$ (centre to centre).
 
 (a) Calculate the gravitational potential at the midpoint between the two planets.
 
 (b) Calculate the position (between the planets) where the gravitational field strength is zero.
 
-(c) A space probe of mass $100\,\text{kg}$ is at the point of zero field strength. Calculate the minimum speed it must have to reach the surface of either planet.
+(c) A space probe of mass $100\,\text{'\{'}kg{'\}'}$ is at the point of zero field strength. Calculate the minimum speed it must have to reach the surface of either planet.
 
 **Solution:**
 
-(a) At the midpoint ($r = d/2 = 2.5 \times 10^7\,\text{m}$ from each planet):
+(a) At the midpoint ($r = d/2 = 2.5 \times 10^7\,\text{'\{'}m{'\}'}$ from each planet):
 
 $$V = -\frac{GM}{d/2} - \frac{GM}{d/2} = -\frac{4GM}{d}$$
 
-$$V = -\frac{4 \times 6.67 \times 10^{-11} \times 3.0 \times 10^{24}}{5.0 \times 10^7} = -\frac{8.004 \times 10^{14}}{5.0 \times 10^7} = -1.60 \times 10^7\,\text{J}\,\text{kg}^{-1}$$
+$$V = -\frac{4 \times 6.67 \times 10^{-11} \times 3.0 \times 10^{24}}{5.0 \times 10^7} = -\frac{8.004 \times 10^{14}}{5.0 \times 10^7} = -1.60 \times 10^7\,\text{'\{'}J{'\}'}\,\text{'\{'}kg{'\}'}^{-1}$$
 
 (b) Let the zero-field point be at distance $x$ from planet 1 (so $d - x$ from planet 2):
 
@@ -274,24 +274,24 @@ $$\frac{GM}{x^2} = \frac{GM}{(d - x)^2}$$
 
 $$x^2 = (d - x)^2$$
 
-$$x = d - x \Rightarrow x = d/2 = 2.5 \times 10^7\,\text{m}$$
+$$x = d - x \Rightarrow x = d/2 = 2.5 \times 10^7\,\text{'\{'}m{'\}'}$$
 
 This is the midpoint (expected by symmetry since the planets are identical).
 
 (c) At the midpoint, the potential energy of the probe is:
 
-$$PE_{\text{mid}} = mV = 100 \times (-1.60 \times 10^7) = -1.60 \times 10^9\,\text{J}$$
+$$PE_{\text{'\{'}mid{'\}'}} = mV = 100 \times (-1.60 \times 10^7) = -1.60 \times 10^9\,\text{'\{'}J{'\}'}$$
 
-At the surface of planet 1 (distance $x = d/2 - R = 2.5 \times 10^7 - 4.0 \times 10^6 = 2.1 \times 10^7\,\text{m}$ from the midpoint):
+At the surface of planet 1 (distance $x = d/2 - R = 2.5 \times 10^7 - 4.0 \times 10^6 = 2.1 \times 10^7\,\text{'\{'}m{'\}'}$ from the midpoint):
 
-$$PE_{\text{surf}} = -\frac{GMm}{R} - \frac{GMm}{d - R}$$
+$$PE_{\text{'\{'}surf{'\}'}} = -\frac{GMm}{R} - \frac{GMm}{d - R}$$
 
 $$= -\frac{6.67 \times 10^{-11} \times 3.0 \times 10^{24} \times 100}{4.0 \times 10^6} - \frac{6.67 \times 10^{-11} \times 3.0 \times 10^{24} \times 100}{4.6 \times 10^7}$$
 
 $$= -\frac{2.001 \times 10^{16}}{4.0 \times 10^6} - \frac{2.001 \times 10^{16}}{4.6 \times 10^7}$$
 
-$$= -5.00 \times 10^9 - 4.35 \times 10^8 = -5.44 \times 10^9\,\text{J}$$
+$$= -5.00 \times 10^9 - 4.35 \times 10^8 = -5.44 \times 10^9\,\text{'\{'}J{'\}'}$$
 
-The probe needs to go from PE $= -1.60 \times 10^9\,\text{J}$ to PE $= -5.44 \times 10^9\,\text{J}$, a decrease of $3.84 \times 10^9\,\text{J}$.
+The probe needs to go from PE $= -1.60 \times 10^9\,\text{'\{'}J{'\}'}$ to PE $= -5.44 \times 10^9\,\text{'\{'}J{'\}'}$, a decrease of $3.84 \times 10^9\,\text{'\{'}J{'\}'}$.
 
 Since PE decreases (becomes more negative), the probe gains KE. It needs zero initial speed -- gravity will pull it to the surface. The probe at the zero-field point is at a gravitational potential "ridge" (unstable equilibrium). Any perturbation towards either planet will cause it to fall. The minimum speed is zero (it is at an unstable equilibrium point).

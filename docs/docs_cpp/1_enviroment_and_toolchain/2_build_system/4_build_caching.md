@@ -143,7 +143,7 @@ In preprocessor mode, ccache runs the full preprocessor and hashes the resulting
 compiler flags. The hash input is:
 
 $$
-\mathrm{hash} = H(\mathrm{preprocessed source}, \mathrm{compiler path}, \mathrm{flags}, \mathrm{include paths})
+\mathrm{'\{'}hash{'\}'} = H(\mathrm{'\{'}preprocessed source{'\}'}, \mathrm{'\{'}compiler path{'\}'}, \mathrm{'\{'}flags{'\}'}, \mathrm{'\{'}include paths{'\}'})
 $$
 
 This is robust but slow: preprocessing can take 30-50% of total compilation time for heavily
@@ -156,7 +156,7 @@ headers using their file content (not preprocessor output). It falls back to pre
 detects macros that might affect the output (e.g., `#define` in the including file).
 
 $$
-\mathrm{hash} = H(\mathrm{source}, \{H(\mathrm{header}_1), H(\mathrm{header}_2), \ldots\}, \mathrm{flags})
+\mathrm{'\{'}hash{'\}'} = H(\mathrm{'\{'}source{'\}'}, \{H(\mathrm{'\{'}header{'\}'}_1), H(\mathrm{'\{'}header{'\}'}_2), \ldots\}, \mathrm{'\{'}flags{'\}'})
 $$
 
 Direct mode is significantly faster but can produce false positives (cache hits when the output

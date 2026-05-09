@@ -243,25 +243,25 @@ cost to taxpayers and with a deadweight loss from overproduction.
 
 **Solution:**
 
-(a) New fare $= 25 \times 1.10 = \text{HK}\$27.50$.
+(a) New fare $= 25 \times 1.10 = \text{'\{'}HK{'\}'}\$27.50$.
 
 $\%\Delta Q = PED \times \%\Delta P = -0.3 \times 10\% = -3\%$.
 
 New journeys per day $= 5\,000\,000 \times 0.97 = 4\,850\,000$.
 
-Current daily revenue $= 25 \times 5\,000\,000 = \text{HK}\$125\,000\,000$.
+Current daily revenue $= 25 \times 5\,000\,000 = \text{'\{'}HK{'\}'}\$125\,000\,000$.
 
-New daily revenue $= 27.50 \times 4\,850\,000 = \text{HK}\$133\,375\,000$.
+New daily revenue $= 27.50 \times 4\,850\,000 = \text{'\{'}HK{'\}'}\$133\,375\,000$.
 
-Change in revenue $= 133\,375\,000 - 125\,000\,000 = +\text{HK}\$8\,375\,000$ ($+6.7\%$).
+Change in revenue $= 133\,375\,000 - 125\,000\,000 = +\text{'\{'}HK{'\}'}\$8\,375\,000$ ($+6.7\%$).
 
 (b) Consumer expenditure increases by HK$8,375,000 per day. Since demand is inelastic ($|PED| = 0.3 < 1$), the price increase raises total revenue. Consumers pay more per journey and the quantity reduction is proportionally smaller than the price increase.
 
-(c) Current daily profit $= (25 - 15) \times 5\,000\,000 = \text{HK}\$50\,000\,000$.
+(c) Current daily profit $= (25 - 15) \times 5\,000\,000 = \text{'\{'}HK{'\}'}\$50\,000\,000$.
 
-New daily profit $= (27.50 - 15) \times 4\,850\,000 = 12.50 \times 4\,850\,000 = \text{HK}\$60\,625\,000$.
+New daily profit $= (27.50 - 15) \times 4\,850\,000 = 12.50 \times 4\,850\,000 = \text{'\{'}HK{'\}'}\$60\,625\,000$.
 
-Change in daily profit $= +\text{HK}\$10\,625\,000$ ($+21.25\%$).
+Change in daily profit $= +\text{'\{'}HK{'\}'}\$10\,625\,000$ ($+21.25\%$).
 
 (d) **Evaluation of government subsidy vs fare increase:**
 
@@ -431,7 +431,7 @@ New equilibrium: $129.6 - 3.84P = 41.4 + 1.84P$. $88.2 = 5.68P$. $P' = 15.53$.
 
 $Q' = 41.4 + 1.84(15.53) = 41.4 + 28.58 = 69.97 \approx 70$ million square feet.
 
-New price $= \text{HK}\$15\,530$ per sq ft (up 3.5%). New quantity $= 70$ million sq ft (up 16.7%).
+New price $= \text{'\{'}HK{'\}'}\$15\,530$ per sq ft (up 3.5%). New quantity $= 70$ million sq ft (up 16.7%).
 
 (b) The price rises because the demand shift (20%) is larger than the supply shift (15%). If supply had increased by more than demand, the price would have fallen. The relative magnitudes and the elasticities together determine the price and quantity outcomes. With inelastic demand ($|PED| = 0.8$), the price is relatively insensitive to supply changes -- even a 15% supply increase is not enough to overcome a 20% demand increase.
 

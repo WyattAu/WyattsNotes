@@ -37,8 +37,8 @@ Opportunity cost applies at every level:
 
 ### Economic vs. Accounting Profit
 
-- **Accounting profit** $= \text{Total Revenue} - \text{Explicit Costs}$
-- **Economic profit** $= \text{Total Revenue} - \text{Explicit Costs} - \text{Implicit Costs}$
+- **Accounting profit** $= \text{'\{'}Total Revenue{'\}'} - \text{'\{'}Explicit Costs{'\}'}$
+- **Economic profit** $= \text{'\{'}Total Revenue{'\}'} - \text{'\{'}Explicit Costs{'\}'} - \text{'\{'}Implicit Costs{'\}'}$
 
 Implicit costs include the opportunity cost of the owner's time and capital. A firm may earn a
 positive accounting profit but a negative economic profit if it could earn more by deploying its
@@ -85,7 +85,7 @@ improvement or resource increase is specific to one industry.
 The slope of the PPF at any point represents the **marginal opportunity cost** of producing one more
 unit of the good on the x-axis, measured in terms of the good on the y-axis:
 
-$$\text{Slope of PPF} = -\frac{\Delta C}{\Delta K}$$
+$$\text{'\{'}Slope of PPF{'\}'} = -\frac{\Delta C}{\Delta K}$$
 
 A linear PPF implies **constant opportunity costs** (resources are equally suited to producing both
 goods). A concave PPF implies **increasing opportunity costs** (resources are not perfectly
@@ -146,27 +146,27 @@ producers.
 the actual market price. Graphically, it is the area below the demand curve and above the
 equilibrium price.
 
-$$\mathrm{CS} = \int_{0}^{Q^*} D(Q) \, dQ - P^* \cdot Q^*$$
+$$\mathrm{'\{'}CS{'\}'} = \int_{0}^{Q^*} D(Q) \, dQ - P^* \cdot Q^*$$
 
 For a linear demand curve $P = a - bQ$:
 
-$$\mathrm{CS} = \frac{1}{2}(a - P^*) \cdot Q^*$$
+$$\mathrm{'\{'}CS{'\}'} = \frac{1}{2}(a - P^*) \cdot Q^*$$
 
 **Producer surplus** is the difference between the actual market price and the minimum price a
 producer is willing to accept. Graphically, it is the area above the supply curve and below the
 equilibrium price.
 
-$$\mathrm{PS} = P^* \cdot Q^* - \int_{0}^{Q^*} S(Q) \, dQ$$
+$$\mathrm{'\{'}PS{'\}'} = P^* \cdot Q^* - \int_{0}^{Q^*} S(Q) \, dQ$$
 
 For a linear supply curve $P = c + dQ$:
 
-$$\mathrm{PS} = \frac{1}{2}(P^* - c) \cdot Q^*$$
+$$\mathrm{'\{'}PS{'\}'} = \frac{1}{2}(P^* - c) \cdot Q^*$$
 
 At equilibrium, total welfare (consumer surplus + producer surplus) is maximised. Any deviation from
 equilibrium creates a **deadweight loss** (DWL):
 
-$$\mathrm{DWL} = \frac{1}{2} \times (\text{change in quantity}) \times (\text{difference in marginal
-benefit and marginal cost at the new quantity})$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times (\text{'\{'}change in quantity{'\}'}) \times (\text{'\{'}difference in marginal
+benefit and marginal cost at the new quantity{'\}'})$$
 
 ### Functions of Price
 
@@ -185,7 +185,7 @@ Prices serve several critical functions in a market economy:
 
 PED measures the responsiveness of quantity demanded to a change in price:
 
-$$\mathrm{PED} = \frac{\% \Delta Q_d}{\% \Delta P}$$
+$$\mathrm{'\{'}PED{'\}'} = \frac{\% \Delta Q_d}{\% \Delta P}$$
 
 Since the demand curve slopes downward, PED is negative, but it is conventionally expressed as an
 absolute value.
@@ -193,15 +193,15 @@ absolute value.
 For precise calculations, the **midpoint (arc) formula** avoids the ambiguity of which price and
 quantity to use as the base:
 
-$$\mathrm{PED} = \frac{\frac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\frac{P_2 - P_1}{(P_1 + P_2)/2}}$$
+$$\mathrm{'\{'}PED{'\}'} = \frac{\frac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\frac{P_2 - P_1}{(P_1 + P_2)/2}}$$
 
 | PED Value                     | Classification      | Characteristics               |
 | ----------------------------- | ------------------- | ----------------------------- |
-| $\|\mathrm{PED}\| > 1$        | Elastic             | $\% \Delta Q_d > \% \Delta P$ |
-| $\|\mathrm{PED}\| = 1$        | Unit elastic        | $\% \Delta Q_d = \% \Delta P$ |
-| $\|\mathrm{PED}\| < 1$        | Inelastic           | $\% \Delta Q_d < \% \Delta P$ |
-| $\|\mathrm{PED}\| = 0$        | Perfectly inelastic | Vertical demand curve         |
-| $\|\mathrm{PED}\| \to \infty$ | Perfectly elastic   | Horizontal demand curve       |
+| $\|\mathrm{'\{'}PED{'\}'}\| > 1$        | Elastic             | $\% \Delta Q_d > \% \Delta P$ |
+| $\|\mathrm{'\{'}PED{'\}'}\| = 1$        | Unit elastic        | $\% \Delta Q_d = \% \Delta P$ |
+| $\|\mathrm{'\{'}PED{'\}'}\| < 1$        | Inelastic           | $\% \Delta Q_d < \% \Delta P$ |
+| $\|\mathrm{'\{'}PED{'\}'}\| = 0$        | Perfectly inelastic | Vertical demand curve         |
+| $\|\mathrm{'\{'}PED{'\}'}\| \to \infty$ | Perfectly elastic   | Horizontal demand curve       |
 
 **Determinants of PED:**
 
@@ -219,16 +219,16 @@ $$\mathrm{PED} = \frac{\frac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\frac{P_2 - P_1}{(P_1 + 
 
 **Relationship with total revenue:**
 
-$$\mathrm{TR} = P \times Q$$
+$$\mathrm{'\{'}TR{'\}'} = P \times Q$$
 
-- If demand is elastic ($\|\mathrm{PED}\| > 1$), a price decrease increases total revenue
-- If demand is inelastic ($\|\mathrm{PED}\| < 1$), a price decrease decreases total revenue
-- If demand is unit elastic ($\|\mathrm{PED}\| = 1$), total revenue is unchanged (TR is maximised
+- If demand is elastic ($\|\mathrm{'\{'}PED{'\}'}\| > 1$), a price decrease increases total revenue
+- If demand is inelastic ($\|\mathrm{'\{'}PED{'\}'}\| < 1$), a price decrease decreases total revenue
+- If demand is unit elastic ($\|\mathrm{'\{'}PED{'\}'}\| = 1$), total revenue is unchanged (TR is maximised
   where PED $= -1$)
 
 ### Income Elasticity of Demand (YED)
 
-$$\mathrm{YED} = \frac{\% \Delta Q_d}{\% \Delta Y}$$
+$$\mathrm{'\{'}YED{'\}'} = \frac{\% \Delta Q_d}{\% \Delta Y}$$
 
 | YED Value       | Classification               | Example                            |
 | --------------- | ---------------------------- | ---------------------------------- |
@@ -242,7 +242,7 @@ demand for luxuries rises disproportionately, while demand for inferior goods fa
 
 ### Price Elasticity of Supply (PES)
 
-$$\mathrm{PES} = \frac{\% \Delta Q_s}{\% \Delta P}$$
+$$\mathrm{'\{'}PES{'\}'} = \frac{\% \Delta Q_s}{\% \Delta P}$$
 
 **Determinants of PES:**
 
@@ -258,7 +258,7 @@ $$\mathrm{PES} = \frac{\% \Delta Q_s}{\% \Delta P}$$
 
 ### Cross-Price Elasticity of Demand (XED)
 
-$$\mathrm{XED} = \frac{\% \Delta Q_{d,A}}{\% \Delta P_B}$$
+$$\mathrm{'\{'}XED{'\}'} = \frac{\% \Delta Q_{d,A}}{\% \Delta P_B}$$
 
 - XED $> 0$: goods are substitutes (the higher the positive value, the closer the substitute)
 - XED $< 0$: goods are complements (the more negative, the stronger the complement relationship)
@@ -272,7 +272,7 @@ indicates they are close competitors.
 Market failure occurs when the free market fails to allocate resources efficiently, resulting in a
 loss of social welfare. The condition for allocative efficiency is:
 
-$$\mathrm{MSB} = \mathrm{MSC}$$
+$$\mathrm{'\{'}MSB{'\}'} = \mathrm{'\{'}MSC{'\}'}$$
 
 When MSB differs from MSC, the market produces either too much or too little of the good relative to
 the socially optimal quantity.
@@ -291,7 +291,7 @@ involved in the transaction.
 
 The welfare analysis:
 
-$$\text{DWL} = \frac{1}{2} \times \text{MEC} \times (Q_{\text{private}} - Q_{\text{social}})$$
+$$\text{'\{'}DWL{'\}'} = \frac{1}{2} \times \text{'\{'}MEC{'\}'} \times (Q_{\text{'\{'}private{'\}'}} - Q_{\text{'\{'}social{'\}'}})$$
 
 **Positive production externalities** (e.g., research and development):
 
@@ -420,7 +420,7 @@ an **ad valorem tax** is a percentage of the price.
 Taxes shift the supply curve upward (or leftward) by the amount of the tax. The **tax incidence**
 (burden distribution between consumers and producers) depends on PED and PES:
 
-$$\frac{\text{Consumer burden}}{\text{Producer burden}} = \frac{\text{PES}}{|\text{PED}|}$$
+$$\frac{\text{'\{'}Consumer burden{'\}'}}{\text{'\{'}Producer burden{'\}'}} = \frac{\text{'\{'}PES{'\}'}}{|\text{'\{'}PED{'\}'}|}$$
 
 - The more inelastic side of the market bears a larger share of the tax burden
 - If demand is perfectly inelastic, consumers bear the entire burden
@@ -428,13 +428,13 @@ $$\frac{\text{Consumer burden}}{\text{Producer burden}} = \frac{\text{PES}}{|\te
 
 A tax creates a deadweight loss because some mutually beneficial transactions no longer occur:
 
-$$\mathrm{DWL} = \frac{1}{2} \times t \times (Q_0 - Q_t)$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times t \times (Q_0 - Q_t)$$
 
 Where $t$ is the tax per unit, $Q_0$ is the pre-tax quantity, and $Q_t$ is the post-tax quantity.
 
 Tax revenue is:
 
-$$\mathrm{Tax revenue} = t \times Q_t$$
+$$\mathrm{'\{'}Tax revenue{'\}'} = t \times Q_t$$
 
 ### Subsidies
 
@@ -452,7 +452,7 @@ Effects of subsidies include:
 
 The total cost to the government is:
 
-$$\text{Subsidy cost} = \text{subsidy per unit} \times Q_{\text{new}}$$
+$$\text{'\{'}Subsidy cost{'\}'} = \text{'\{'}subsidy per unit{'\}'} \times Q_{\text{'\{'}new{'\}'}}$$
 
 ### Regulation
 
@@ -527,20 +527,20 @@ Market structures are classified along several dimensions:
 
 - The firm faces a perfectly elastic (horizontal) demand curve at the market price $P^*$
 - Average Revenue (AR) $=$ Marginal Revenue (MR) $= P^*$
-- The firm maximises profit where $\mathrm{MR} = \mathrm{MC}$
-- In the short run, the firm may earn supernormal profit (if $P > \text{ATC}$), normal profit (if
-  $P = \text{ATC}$), or make a loss (if $P < \text{ATC}$)
-- The firm continues to produce in the short run as long as $P \geq \text{AVC}$ (the shutdown point)
+- The firm maximises profit where $\mathrm{'\{'}MR{'\}'} = \mathrm{'\{'}MC{'\}'}$
+- In the short run, the firm may earn supernormal profit (if $P > \text{'\{'}ATC{'\}'}$), normal profit (if
+  $P = \text{'\{'}ATC{'\}'}$), or make a loss (if $P < \text{'\{'}ATC{'\}'}$)
+- The firm continues to produce in the short run as long as $P \geq \text{'\{'}AVC{'\}'}$ (the shutdown point)
 
 **Long-run equilibrium:**
 
-- Free entry and exit drive economic profit to zero ($P = \text{ATC} = \mathrm{MC}$)
+- Free entry and exit drive economic profit to zero ($P = \text{'\{'}ATC{'\}'} = \mathrm{'\{'}MC{'\}'}$)
 - The firm produces at the minimum point of the ATC curve (productive efficiency)
-- $P = \mathrm{MC}$ (allocative efficiency)
+- $P = \mathrm{'\{'}MC{'\}'}$ (allocative efficiency)
 - Zero economic profit, but normal profit is earned
 
-$$\text{Short-run: } P \geq \text{AVC}, \text{ produce where MR} = \text{MC}$$
-$$\text{Long-run: } P = \text{ATC}_{\min} = \text{MC}$$
+$$\text{'\{'}Short-run: {'\}'} P \geq \text{'\{'}AVC{'\}'}, \text{'\{'} produce where MR{'\}'} = \text{'\{'}MC{'\}'}$$
+$$\text{'\{'}Long-run: {'\}'} P = \text{'\{'}ATC{'\}'}_{\min} = \text{'\{'}MC{'\}'}$$
 
 ### Monopoly
 
@@ -555,24 +555,24 @@ $$\text{Long-run: } P = \text{ATC}_{\min} = \text{MC}$$
 **Revenue curves:**
 
 - The monopoly faces the market demand curve (downward-sloping)
-- $\mathrm{AR} = P$ (the demand curve)
+- $\mathrm{'\{'}AR{'\}'} = P$ (the demand curve)
 - MR lies below AR because to sell an additional unit, the monopolist must lower the price on all
   units sold
-- For a linear demand curve $P = a - bQ$: $\mathrm{MR} = a - 2bQ$
+- For a linear demand curve $P = a - bQ$: $\mathrm{'\{'}MR{'\}'} = a - 2bQ$
 
 **Profit maximisation:**
 
-The monopolist produces where $\mathrm{MR} = \mathrm{MC}$ and charges the price found on the demand
+The monopolist produces where $\mathrm{'\{'}MR{'\}'} = \mathrm{'\{'}MC{'\}'}$ and charges the price found on the demand
 curve at that quantity.
 
-$$\text{Profit} = (P - \text{ATC}) \times Q$$
+$$\text{'\{'}Profit{'\}'} = (P - \text{'\{'}ATC{'\}'}) \times Q$$
 
 In the long run, the monopolist can earn supernormal profit because barriers to entry prevent new
 firms from entering the market.
 
 **Inefficiencies of monopoly:**
 
-- **Allocative inefficiency**: $P > \mathrm{MC}$, meaning the value consumers place on the last unit
+- **Allocative inefficiency**: $P > \mathrm{'\{'}MC{'\}'}$, meaning the value consumers place on the last unit
   exceeds the cost of producing it. Too little is produced relative to the social optimum
 - **Productive inefficiency**: the monopolist does not produce at the minimum of ATC
 - **Deadweight loss**: the loss of consumer and producer surplus due to reduced output and higher
@@ -615,18 +615,18 @@ the same good or service, not justified by differences in cost. Conditions for p
 **Short-run equilibrium:**
 
 - Each firm faces a downward-sloping demand curve (due to product differentiation)
-- Profit maximisation at $\mathrm{MR} = \mathrm{MC}$
+- Profit maximisation at $\mathrm{'\{'}MR{'\}'} = \mathrm{'\{'}MC{'\}'}$
 - Firms can earn supernormal profit, normal profit, or losses in the short run
 
 **Long-run equilibrium:**
 
-- Free entry and exit drives economic profit to zero ($P = \text{ATC}$)
+- Free entry and exit drives economic profit to zero ($P = \text{'\{'}ATC{'\}'}$)
 - Unlike perfect competition, the demand curve is downward-sloping, so the tangency with ATC occurs
   to the left of the minimum ATC
 - **Excess capacity**: the firm produces at a lower output than the output that minimises ATC
-- **Allocative inefficiency**: $P > \mathrm{MC}$
+- **Allocative inefficiency**: $P > \mathrm{'\{'}MC{'\}'}$
 
-$$\text{Long-run: } P > \mathrm{MC} \text{ and } P = \text{ATC} > \text{ATC}_{\min}$$
+$$\text{'\{'}Long-run: {'\}'} P > \mathrm{'\{'}MC{'\}'} \text{'\{'} and {'\}'} P = \text{'\{'}ATC{'\}'} > \text{'\{'}ATC{'\}'}_{\min}$$
 
 **Non-price competition**: firms compete through advertising, branding, product differentiation, and
 customer service rather than solely through price.
@@ -669,7 +669,7 @@ anti-trust/competition law.
 
 **Total cost (TC)** is the sum of total fixed cost (TFC) and total variable cost (TVC):
 
-$$\mathrm{TC} = \mathrm{TFC} + \mathrm{TVC}$$
+$$\mathrm{'\{'}TC{'\}'} = \mathrm{'\{'}TFC{'\}'} + \mathrm{'\{'}TVC{'\}'}$$
 
 - **Fixed costs**: costs that do not vary with output in the short run (rent, salaries of permanent
   staff, insurance)
@@ -677,11 +677,11 @@ $$\mathrm{TC} = \mathrm{TFC} + \mathrm{TVC}$$
 
 **Average costs:**
 
-$$\mathrm{AFC} = \frac{\mathrm{TFC}}{Q} \qquad \mathrm{AVC} = \frac{\mathrm{TVC}}{Q} \qquad \mathrm{ATC} = \frac{\mathrm{TC}}{Q} = \mathrm{AFC} + \mathrm{AVC}$$
+$$\mathrm{'\{'}AFC{'\}'} = \frac{\mathrm{'\{'}TFC{'\}'}}{Q} \qquad \mathrm{'\{'}AVC{'\}'} = \frac{\mathrm{'\{'}TVC{'\}'}}{Q} \qquad \mathrm{'\{'}ATC{'\}'} = \frac{\mathrm{'\{'}TC{'\}'}}{Q} = \mathrm{'\{'}AFC{'\}'} + \mathrm{'\{'}AVC{'\}'}$$
 
 **Marginal cost (MC):** the additional cost of producing one more unit:
 
-$$\mathrm{MC} = \frac{\Delta \mathrm{TC}}{\Delta Q}$$
+$$\mathrm{'\{'}MC{'\}'} = \frac{\Delta \mathrm{'\{'}TC{'\}'}}{\Delta Q}$$
 
 ### Short-Run Cost Curves
 
@@ -699,11 +699,11 @@ In the short run, as more of a variable factor (e.g., labour) is added to a fixe
 capital), the marginal product of the variable factor eventually declines. This is not caused by
 reduced quality of the variable factor but by the increasing ratio of variable to fixed factors.
 
-$$\mathrm{MP}_L = \frac{\Delta Q}{\Delta L} \qquad \text{Initially rises, then falls}$$
+$$\mathrm{'\{'}MP{'\}'}_L = \frac{\Delta Q}{\Delta L} \qquad \text{'\{'}Initially rises, then falls{'\}'}$$
 
 The relationship between production and cost:
 
-$$\mathrm{MC} = \frac{w}{\mathrm{MP}_L}$$
+$$\mathrm{'\{'}MC{'\}'} = \frac{w}{\mathrm{'\{'}MP{'\}'}_L}$$
 
 Where $w$ is the wage rate. When MP is rising, MC is falling; when MP is falling, MC is rising.
 
@@ -732,8 +732,8 @@ not reach MES may be unable to compete with larger rivals.
 ### Revenue
 
 - **Total Revenue (TR)** $= P \times Q$
-- **Average Revenue (AR)** $= \frac{\mathrm{TR}}{Q} = P$ (the demand curve)
-- **Marginal Revenue (MR)** $= \frac{\Delta \mathrm{TR}}{\Delta Q}$
+- **Average Revenue (AR)** $= \frac{\mathrm{'\{'}TR{'\}'}}{Q} = P$ (the demand curve)
+- **Marginal Revenue (MR)** $= \frac{\Delta \mathrm{'\{'}TR{'\}'}}{\Delta Q}$
 
 Relationship between AR and MR:
 
@@ -745,19 +745,19 @@ Relationship between AR and MR:
 
 A firm maximises profit by producing the quantity where:
 
-$$\mathrm{MR} = \mathrm{MC}$$
+$$\mathrm{'\{'}MR{'\}'} = \mathrm{'\{'}MC{'\}'}$$
 
-**Derivation:** profit $\pi = \mathrm{TR} - \mathrm{TC}$. Profit is maximised where the first
+**Derivation:** profit $\pi = \mathrm{'\{'}TR{'\}'} - \mathrm{'\{'}TC{'\}'}$. Profit is maximised where the first
 derivative equals zero:
 
-$$\frac{d\pi}{dQ} = \frac{d\mathrm{TR}}{dQ} - \frac{d\mathrm{TC}}{dQ} = \mathrm{MR} - \mathrm{MC} = 0$$
+$$\frac{d\pi}{dQ} = \frac{d\mathrm{'\{'}TR{'\}'}}{dQ} - \frac{d\mathrm{'\{'}TC{'\}'}}{dQ} = \mathrm{'\{'}MR{'\}'} - \mathrm{'\{'}MC{'\}'} = 0$$
 
 **Second-order condition:** $\frac{d^2\pi}{dQ^2} < 0$, meaning MC must be rising at the point where
 MR $=$ MC (MC cuts MR from below).
 
-- If $\mathrm{MR} > \mathrm{MC}$: producing an additional unit adds more to revenue than to cost,
+- If $\mathrm{'\{'}MR{'\}'} > \mathrm{'\{'}MC{'\}'}$: producing an additional unit adds more to revenue than to cost,
   so the firm should expand output
-- If $\mathrm{MR} < \mathrm{MC}$: producing an additional unit adds more to cost than to revenue,
+- If $\mathrm{'\{'}MR{'\}'} < \mathrm{'\{'}MC{'\}'}$: producing an additional unit adds more to cost than to revenue,
   so the firm should reduce output
 
 **Shutdown condition:** in the short run, a firm should continue to produce as long as $P \geq$
@@ -823,7 +823,7 @@ $C$? Explain.
 
 (a) Moving from point C (20 $K$, 85 $C$) to point D (30 $K$, 70 $C$):
 
-$$\text{Opportunity cost} = \frac{\Delta C}{\Delta K} = \frac{85 - 70}{30 - 20} = \frac{15}{10} = 1.5 \; C \text{ per } K$$
+$$\text{'\{'}Opportunity cost{'\}'} = \frac{\Delta C}{\Delta K} = \frac{85 - 70}{30 - 20} = \frac{15}{10} = 1.5 \; C \text{'\{'} per {'\}'} K$$
 
 Producing 10 additional units of capital goods requires sacrificing 15 units of consumer goods.
 
@@ -860,15 +860,15 @@ $Y = 400$ (income), and $P_Y = 30$ (price of related good $Y$).
 
 (a) $Q_{d,X} = 200 - 2(20) + 0.5(400) + 0.8(30) = 200 - 40 + 200 + 24 = 384$
 
-(b) $\mathrm{PED} = \frac{\partial Q}{\partial P_X} \times \frac{P_X}{Q} = (-2) \times \frac{20}{384} = -0.104$
+(b) $\mathrm{'\{'}PED{'\}'} = \frac{\partial Q}{\partial P_X} \times \frac{P_X}{Q} = (-2) \times \frac{20}{384} = -0.104$
 
-$\|\mathrm{PED}\| = 0.104 < 1$: demand is inelastic at this point.
+$\|\mathrm{'\{'}PED{'\}'}\| = 0.104 < 1$: demand is inelastic at this point.
 
-(c) $\mathrm{YED} = \frac{\partial Q}{\partial Y} \times \frac{Y}{Q} = 0.5 \times \frac{400}{384} = 0.521$
+(c) $\mathrm{'\{'}YED{'\}'} = \frac{\partial Q}{\partial Y} \times \frac{Y}{Q} = 0.5 \times \frac{400}{384} = 0.521$
 
 YED $> 0$: $X$ is a normal good. Since $0 <$ YED $< 1$, it is a necessity (income inelastic).
 
-(d) $\mathrm{XED} = \frac{\partial Q}{\partial P_Y} \times \frac{P_Y}{Q} = 0.8 \times \frac{30}{384} = 0.0625$
+(d) $\mathrm{'\{'}XED{'\}'} = \frac{\partial Q}{\partial P_Y} \times \frac{P_Y}{Q} = 0.8 \times \frac{30}{384} = 0.0625$
 
 XED $> 0$: $X$ and $Y$ are substitutes. The positive but small value suggests they are weak
 substitutes.
@@ -894,17 +894,17 @@ The market for a chemical product has the following characteristics:
 
 (a) Market equilibrium: set demand $=$ supply:
 
-$$100 - Q = 20 + Q \implies 2Q = 80 \implies Q_{\text{private}} = 40$$
-$$P_{\text{private}} = 100 - 40 = 60$$
+$$100 - Q = 20 + Q \implies 2Q = 80 \implies Q_{\text{'\{'}private{'\}'}} = 40$$
+$$P_{\text{'\{'}private{'\}'}} = 100 - 40 = 60$$
 
 (b) Social optimum: MSC $=$ MPC $+$ MEC $= (20 + Q) + 10 = 30 + Q$. Set MSB $=$ MSC:
 
-$$100 - Q = 30 + Q \implies 2Q = 70 \implies Q_{\text{social}} = 35$$
-$$P_{\text{social}} = 100 - 35 = 65$$
+$$100 - Q = 30 + Q \implies 2Q = 70 \implies Q_{\text{'\{'}social{'\}'}} = 35$$
+$$P_{\text{'\{'}social{'\}'}} = 100 - 35 = 65$$
 
 (c) Deadweight loss:
 
-$$\mathrm{DWL} = \frac{1}{2} \times \mathrm{MEC} \times (Q_{\text{private}} - Q_{\text{social}}) = \frac{1}{2} \times 10 \times (40 - 35) = \frac{1}{2} \times 10 \times 5 = 25$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times \mathrm{'\{'}MEC{'\}'} \times (Q_{\text{'\{'}private{'\}'}} - Q_{\text{'\{'}social{'\}'}}) = \frac{1}{2} \times 10 \times (40 - 35) = \frac{1}{2} \times 10 \times 5 = 25$$
 
 (d) The specific tax should equal the marginal external cost: a tax of `USD 10` per unit. This shifts
 the supply curve from $P = 20 + Q$ to $P = 30 + Q$ (which is MSC), leading to the socially optimal
@@ -915,7 +915,7 @@ quantity of 35 units.
 <details>
 <summary>Problem 4: Monopoly Profit Maximisation and Welfare Analysis</summary>
 
-A monopoly faces the demand curve $P = 150 - 2Q$ and has a total cost function $\mathrm{TC} = 100 + 10Q + Q^2$.
+A monopoly faces the demand curve $P = 150 - 2Q$ and has a total cost function $\mathrm{'\{'}TC{'\}'} = 100 + 10Q + Q^2$.
 
 (a) Find the profit-maximising price and quantity.
 
@@ -925,28 +925,28 @@ A monopoly faces the demand curve $P = 150 - 2Q$ and has a total cost function $
 
 (d) Calculate the deadweight loss of monopoly.
 
-(a) $\mathrm{MR} = 150 - 4Q$ (twice the slope of demand). $\mathrm{MC} = \frac{d\mathrm{TC}}{dQ} = 10 + 2Q$.
+(a) $\mathrm{'\{'}MR{'\}'} = 150 - 4Q$ (twice the slope of demand). $\mathrm{'\{'}MC{'\}'} = \frac{d\mathrm{'\{'}TC{'\}'}}{dQ} = 10 + 2Q$.
 
 Set MR $=$ MC:
 
 $$150 - 4Q = 10 + 2Q \implies 6Q = 140 \implies Q_m = \frac{140}{6} = 23.33$$
 $$P_m = 150 - 2(23.33) = 150 - 46.67 = 103.33$$
 
-(b) $\mathrm{TR} = P_m \times Q_m = 103.33 \times 23.33 = 2411.1$
+(b) $\mathrm{'\{'}TR{'\}'} = P_m \times Q_m = 103.33 \times 23.33 = 2411.1$
 
-$\mathrm{TC} = 100 + 10(23.33) + (23.33)^2 = 100 + 233.3 + 544.3 = 877.6$
+$\mathrm{'\{'}TC{'\}'} = 100 + 10(23.33) + (23.33)^2 = 100 + 233.3 + 544.3 = 877.6$
 
 $\pi = 2411.1 - 877.6 = 1533.5$
 
-(c) Under perfect competition, $P = \mathrm{MC}$:
+(c) Under perfect competition, $P = \mathrm{'\{'}MC{'\}'}$:
 
 $$150 - 2Q = 10 + 2Q \implies 4Q = 140 \implies Q_c = 35$$
 $$P_c = 150 - 2(35) = 80$$
 
 (d) Deadweight loss:
 
-$$\mathrm{DWL} = \frac{1}{2} \times (P_m - P_c) \times (Q_c - Q_m) = \frac{1}{2} \times (103.33 - 80) \times (35 - 23.33)$$
-$$\mathrm{DWL} = \frac{1}{2} \times 23.33 \times 11.67 = 136.1$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times (P_m - P_c) \times (Q_c - Q_m) = \frac{1}{2} \times (103.33 - 80) \times (35 - 23.33)$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times 23.33 \times 11.67 = 136.1$$
 
 </details>
 
@@ -995,7 +995,7 @@ Consumers bear a larger share because demand is less elastic than supply at the 
 <summary>Problem 6: Monopolistic Competition Long-Run Equilibrium</summary>
 
 A firm in monopolistic competition has the demand curve $P = 200 - Q$ and total cost function
-$\mathrm{TC} = 500 + 40Q + Q^2$. In the long run, entry and exit ensure zero economic profit.
+$\mathrm{'\{'}TC{'\}'} = 500 + 40Q + Q^2$. In the long run, entry and exit ensure zero economic profit.
 
 (a) Find the long-run equilibrium quantity and price.
 
@@ -1003,11 +1003,11 @@ $\mathrm{TC} = 500 + 40Q + Q^2$. In the long run, entry and exit ensure zero eco
 
 (c) Is the outcome allocatively efficient? Explain.
 
-(a) Zero economic profit: $\mathrm{TR} = \mathrm{TC}$.
+(a) Zero economic profit: $\mathrm{'\{'}TR{'\}'} = \mathrm{'\{'}TC{'\}'}$.
 
-$\mathrm{TR} = P \times Q = (200 - Q)Q = 200Q - Q^2$
+$\mathrm{'\{'}TR{'\}'} = P \times Q = (200 - Q)Q = 200Q - Q^2$
 
-$\mathrm{TC} = 500 + 40Q + Q^2$
+$\mathrm{'\{'}TC{'\}'} = 500 + 40Q + Q^2$
 
 Set TR $=$ TC:
 
@@ -1023,18 +1023,18 @@ $Q = 76.74$ (the other root, $Q = 3.26$, gives a higher ATC).
 
 $P = 200 - 76.74 = 123.26$
 
-(b) ATC is minimised where MC $=$ ATC. $\mathrm{MC} = 40 + 2Q$. $\mathrm{ATC} = 500/Q + 40 + Q$.
+(b) ATC is minimised where MC $=$ ATC. $\mathrm{'\{'}MC{'\}'} = 40 + 2Q$. $\mathrm{'\{'}ATC{'\}'} = 500/Q + 40 + Q$.
 
 $40 + 2Q = 500/Q + 40 + Q \implies Q = 500/Q \implies Q^2 = 500 \implies Q_{\min} = 22.36$
 
 Excess capacity $= 76.74 - 22.36 = 54.38$ units. The firm operates well below its minimum efficient
 scale.
 
-(c) No. Allocative efficiency requires $P = \mathrm{MC}$. Here, $P = 123.26$ while $\mathrm{MC} = 40 + 2(76.74) = 193.48$.
-Since $P < \mathrm{MC}$, this suggests an issue. In practice, the firm should also satisfy the MR $=$ MC
-condition. $\mathrm{MR} = 200 - 2Q = 200 - 153.48 = 46.52$. Setting MR $=$ MC: $46.52 = 193.48$ is not
+(c) No. Allocative efficiency requires $P = \mathrm{'\{'}MC{'\}'}$. Here, $P = 123.26$ while $\mathrm{'\{'}MC{'\}'} = 40 + 2(76.74) = 193.48$.
+Since $P < \mathrm{'\{'}MC{'\}'}$, this suggests an issue. In practice, the firm should also satisfy the MR $=$ MC
+condition. $\mathrm{'\{'}MR{'\}'} = 200 - 2Q = 200 - 153.48 = 46.52$. Setting MR $=$ MC: $46.52 = 193.48$ is not
 satisfied. The correct approach recognises that in long-run equilibrium for monopolistic competition,
-the demand curve is tangent to ATC where MR $=$ MC, and $P > \mathrm{MC}$. The firm produces less than
+the demand curve is tangent to ATC where MR $=$ MC, and $P > \mathrm{'\{'}MC{'\}'}$. The firm produces less than
 the socially optimal quantity.
 
 </details>
@@ -1101,7 +1101,7 @@ utility (satisfaction). The consumer is indifferent between any two points on th
 The MRS measures the rate at which a consumer is willing to trade one good for another while
 maintaining the same utility level:
 
-$$\mathrm{MRS}_{XY} = -\frac{\Delta Y}{\Delta X}$$
+$$\mathrm{'\{'}MRS{'\}'}_{XY} = -\frac{\Delta Y}{\Delta X}$$
 
 At any point on the indifference curve, the MRS equals the absolute value of the slope of the
 indifference curve. As the consumer moves down along the curve, the MRS diminishes: the more of $X$
@@ -1110,14 +1110,14 @@ of $X$.
 
 The MRS also equals the ratio of marginal utilities:
 
-$$\mathrm{MRS}_{XY} = \frac{MU_X}{MU_Y}$$
+$$\mathrm{'\{'}MRS{'\}'}_{XY} = \frac{MU_X}{MU_Y}$$
 
 ### Consumer Equilibrium
 
 A rational consumer maximises utility subject to their budget constraint. The optimal consumption
 bundle occurs where the indifference curve is tangent to the budget line:
 
-$$\mathrm{MRS}_{XY} = \frac{P_X}{P_Y}$$
+$$\mathrm{'\{'}MRS{'\}'}_{XY} = \frac{P_X}{P_Y}$$
 
 Or equivalently:
 
@@ -1159,9 +1159,9 @@ $U = X^{0.5} \cdot Y^{0.5}$.
 
 Budget constraint: $5X + 2Y = 100$
 
-$\mathrm{MRS} = \frac{MU_X}{MU_Y} = \frac{0.5 X^{-0.5} Y^{0.5}}{0.5 X^{0.5} Y^{-0.5}} = \frac{Y}{X}$
+$\mathrm{'\{'}MRS{'\}'} = \frac{MU_X}{MU_Y} = \frac{0.5 X^{-0.5} Y^{0.5}}{0.5 X^{0.5} Y^{-0.5}} = \frac{Y}{X}$
 
-Setting $\mathrm{MRS} = P_X / P_Y$:
+Setting $\mathrm{'\{'}MRS{'\}'} = P_X / P_Y$:
 
 $$\frac{Y}{X} = \frac{5}{2} \implies Y = 2.5X$$
 
@@ -1195,7 +1195,7 @@ produce the same level of output. Isoquants are analogous to indifference curves
 The **marginal rate of technical substitution** (MRTS) measures the rate at which one input can be
 substituted for another while maintaining output:
 
-$$\mathrm{MRTS}_{LK} = -\frac{\Delta K}{\Delta L} = \frac{MP_L}{MP_K}$$
+$$\mathrm{'\{'}MRTS{'\}'}_{LK} = -\frac{\Delta K}{\Delta L} = \frac{MP_L}{MP_K}$$
 
 An **isocost line** shows all combinations of inputs that cost the same total amount. If the wage
 rate is $w$ and the rental rate of capital is $r$:
@@ -1209,7 +1209,7 @@ The slope of the isocost line is $-w/r$.
 A firm minimises the cost of producing a given level of output where the isoquant is tangent to the
 isocost line:
 
-$$\mathrm{MRTS}_{LK} = \frac{w}{r}$$
+$$\mathrm{'\{'}MRTS{'\}'}_{LK} = \frac{w}{r}$$
 
 Or equivalently:
 
@@ -1443,7 +1443,7 @@ the entire consumer surplus.
 - Total output equals the perfectly competitive output (where $P = MC$)
 - Allocative efficiency is achieved, but all surplus goes to the producer
 
-$$\text{Profit} = \text{Total consumer surplus (under single price)} + \text{Producer surplus (under single price)}$$
+$$\text{'\{'}Profit{'\}'} = \text{'\{'}Total consumer surplus (under single price){'\}'} + \text{'\{'}Producer surplus (under single price){'\}'}$$
 
 **Requirements for first-degree price discrimination:**
 
@@ -1462,7 +1462,7 @@ and consumers self-select into the option that maximises their utility.
 
 **Block pricing:** the price per unit varies with the quantity purchased:
 
-$$\text{Total revenue} = P_1 Q_1 + P_2 (Q_2 - Q_1) + P_3 (Q_3 - Q_2) + \cdots$$
+$$\text{'\{'}Total revenue{'\}'} = P_1 Q_1 + P_2 (Q_2 - Q_1) + P_3 (Q_3 - Q_2) + \cdots$$
 
 Where $P_1 > P_2 > P_3$ (declining block pricing). This captures some consumer surplus from
 consumers who buy in larger quantities.
@@ -1470,9 +1470,9 @@ consumers who buy in larger quantities.
 **Numerical example:** A cinema charges `USD 8` for the first ticket, `USD 6` for the second, and `USD 4` for
 each additional ticket (up to 5). A consumer who buys 4 tickets pays:
 
-$$\text{Total} = 8 + 6 + 4 + 4 = \text{USD 22}$$
+$$\text{'\{'}Total{'\}'} = 8 + 6 + 4 + 4 = \text{'\{'}USD 22{'\}'}$$
 
-Average price per ticket $= 22/4 = \text{USD 5.50$, which is less than the single-ticket price of USD 8.}$
+Average price per ticket $= 22/4 = \text{'\{'}USD 5.50$, which is less than the single-ticket price of USD 8.{'\}'}$
 
 ### Third-Degree Price Discrimination
 
@@ -1489,36 +1489,36 @@ $$\pi_i = P_i(Q_i) \cdot Q_i - C(Q_1 + Q_2 + \cdots + Q_n)$$
 
 The first-order condition is:
 
-$$\mathrm{MR}_i = MC \quad \forall \; i$$
+$$\mathrm{'\{'}MR{'\}'}_i = MC \quad \forall \; i$$
 
-Since $\mathrm{MR}_i = P_i(1 + 1/\mathrm{PED}_i)$, and $\mathrm{MR}_i = MC$ for all segments:
+Since $\mathrm{'\{'}MR{'\}'}_i = P_i(1 + 1/\mathrm{'\{'}PED{'\}'}_i)$, and $\mathrm{'\{'}MR{'\}'}_i = MC$ for all segments:
 
-$$P_i(1 + 1/\mathrm{PED}_i) = P_j(1 + 1/\mathrm{PED}_j) = MC$$
+$$P_i(1 + 1/\mathrm{'\{'}PED{'\}'}_i) = P_j(1 + 1/\mathrm{'\{'}PED{'\}'}_j) = MC$$
 
 Rearranging:
 
-$$\frac{P_i}{P_j} = \frac{1 + 1/\mathrm{PED}_j}{1 + 1/\mathrm{PED}_i}$$
+$$\frac{P_i}{P_j} = \frac{1 + 1/\mathrm{'\{'}PED{'\}'}_j}{1 + 1/\mathrm{'\{'}PED{'\}'}_i}$$
 
-If $|\mathrm{PED}_i| < |\mathrm{PED}_j|$ (market $i$ has less elastic demand), then $P_i > P_j$.
+If $|\mathrm{'\{'}PED{'\}'}_i| < |\mathrm{'\{'}PED{'\}'}_j|$ (market $i$ has less elastic demand), then $P_i > P_j$.
 
 **Worked example:** A monopolist serves two markets with demand curves:
 
-Market 1 (adults): $P_1 = 40 - Q_1$, $\mathrm{PED}_1 = -2$ at equilibrium
-Market 2 (students): $P_2 = 25 - Q_2$, $\mathrm{PED}_2 = -3$ at equilibrium
-Total cost: $\mathrm{TC} = 50 + 5(Q_1 + Q_2)$, so $MC = 5$.
+Market 1 (adults): $P_1 = 40 - Q_1$, $\mathrm{'\{'}PED{'\}'}_1 = -2$ at equilibrium
+Market 2 (students): $P_2 = 25 - Q_2$, $\mathrm{'\{'}PED{'\}'}_2 = -3$ at equilibrium
+Total cost: $\mathrm{'\{'}TC{'\}'} = 50 + 5(Q_1 + Q_2)$, so $MC = 5$.
 
 For each market: $MR = MC = 5$.
 
-Market 1: $\mathrm{MR}_1 = 40 - 2Q_1 = 5 \implies Q_1 = 17.5$, $P_1 = 40 - 17.5 = 22.5$
+Market 1: $\mathrm{'\{'}MR{'\}'}_1 = 40 - 2Q_1 = 5 \implies Q_1 = 17.5$, $P_1 = 40 - 17.5 = 22.5$
 
-Market 2: $\mathrm{MR}_2 = 25 - 2Q_2 = 5 \implies Q_2 = 10$, $P_2 = 25 - 10 = 15$
+Market 2: $\mathrm{'\{'}MR{'\}'}_2 = 25 - 2Q_2 = 5 \implies Q_2 = 10$, $P_2 = 25 - 10 = 15$
 
-Total profit $= P_1 Q_1 + P_2 Q_2 - \mathrm{TC} = 22.5(17.5) + 15(10) - 50 - 5(27.5)$
+Total profit $= P_1 Q_1 + P_2 Q_2 - \mathrm{'\{'}TC{'\}'} = 22.5(17.5) + 15(10) - 50 - 5(27.5)$
 $= 393.75 + 150 - 50 - 137.5 = 356.25$
 
 Verification: $\frac{P_1}{P_2} = \frac{22.5}{15} = 1.5$
 
-$$\frac{1 + 1/\mathrm{PED}_2}{1 + 1/\mathrm{PED}_1} = \frac{1 + 1/(-3)}{1 + 1/(-2)} = \frac{1 - 1/3}{1 - 1/2} = \frac{2/3}{1/2} = \frac{4}{3} \approx 1.33$$
+$$\frac{1 + 1/\mathrm{'\{'}PED{'\}'}_2}{1 + 1/\mathrm{'\{'}PED{'\}'}_1} = \frac{1 + 1/(-3)}{1 + 1/(-2)} = \frac{1 - 1/3}{1 - 1/2} = \frac{2/3}{1/2} = \frac{4}{3} \approx 1.33$$
 
 The slight discrepancy arises because PED values vary along the demand curve; the condition holds
 exactly only at the equilibrium quantities.
@@ -1561,33 +1561,33 @@ factor is a **derived demand** -- it depends on the demand for the product that 
 The marginal revenue product of labour is the additional revenue generated by employing one more
 unit of labour:
 
-$$\mathrm{MRP}_L = \mathrm{MR} \times \mathrm{MP}_L$$
+$$\mathrm{'\{'}MRP{'\}'}_L = \mathrm{'\{'}MR{'\}'} \times \mathrm{'\{'}MP{'\}'}_L$$
 
-Where $\mathrm{MP}_L$ is the marginal product of labour and $\mathrm{MR}$ is marginal revenue.
+Where $\mathrm{'\{'}MP{'\}'}_L$ is the marginal product of labour and $\mathrm{'\{'}MR{'\}'}$ is marginal revenue.
 
-Under perfect competition in the product market ($\mathrm{MR} = P$):
+Under perfect competition in the product market ($\mathrm{'\{'}MR{'\}'} = P$):
 
-$$\mathrm{MRP}_L = P \times \mathrm{MP}_L = \mathrm{VMP}_L$$
+$$\mathrm{'\{'}MRP{'\}'}_L = P \times \mathrm{'\{'}MP{'\}'}_L = \mathrm{'\{'}VMP{'\}'}_L$$
 
-Where $\mathrm{VMP}_L$ is the value of the marginal product.
+Where $\mathrm{'\{'}VMP{'\}'}_L$ is the value of the marginal product.
 
-Under monopoly ($\mathrm{MR} < P$):
+Under monopoly ($\mathrm{'\{'}MR{'\}'} < P$):
 
-$$\mathrm{MRP}_L < \mathrm{VMP}_L$$
+$$\mathrm{'\{'}MRP{'\}'}_L < \mathrm{'\{'}VMP{'\}'}_L$$
 
 A profit-maximising firm hires labour up to the point where:
 
-$$\mathrm{MRP}_L = \mathrm{MRC}_L$$
+$$\mathrm{'\{'}MRP{'\}'}_L = \mathrm{'\{'}MRC{'\}'}_L$$
 
-Where $\mathrm{MRC}_L$ (marginal resource cost) is the additional cost of hiring one more unit of
+Where $\mathrm{'\{'}MRC{'\}'}_L$ (marginal resource cost) is the additional cost of hiring one more unit of
 labour.
 
 ### Marginal Resource Cost (MRC)
 
-In a perfectly competitive labour market, the firm is a wage taker and $\mathrm{MRC}_L = w$ (the
+In a perfectly competitive labour market, the firm is a wage taker and $\mathrm{'\{'}MRC{'\}'}_L = w$ (the
 wage rate). The firm faces a horizontal supply curve for labour.
 
-$$\text{Labour demand rule (perfect competition): } \mathrm{MRP}_L = w$$
+$$\text{'\{'}Labour demand rule (perfect competition): {'\}'} \mathrm{'\{'}MRP{'\}'}_L = w$$
 
 ### Monopsony
 
@@ -1597,12 +1597,12 @@ additional workers.
 
 If the labour supply curve is $w = a + bL$, the total cost of labour is:
 
-$$\mathrm{TC}_L = w \cdot L = (a + bL) \cdot L = aL + bL^2$$
+$$\mathrm{'\{'}TC{'\}'}_L = w \cdot L = (a + bL) \cdot L = aL + bL^2$$
 
-$$\mathrm{MRC}_L = \frac{d\mathrm{TC}_L}{dL} = a + 2bL$$
+$$\mathrm{'\{'}MRC{'\}'}_L = \frac{d\mathrm{'\{'}TC{'\}'}_L}{dL} = a + 2bL$$
 
 The MRC curve lies above the supply (average cost of labour) curve. The monopsonist hires where
-$\mathrm{MRP}_L = \mathrm{MRC}_L$, but pays the wage indicated by the supply curve at that
+$\mathrm{'\{'}MRP{'\}'}_L = \mathrm{'\{'}MRC{'\}'}_L$, but pays the wage indicated by the supply curve at that
 quantity.
 
 **Comparison with competitive labour market:**
@@ -1611,17 +1611,17 @@ quantity.
 - A monopsony pays a **lower** wage than a competitive market
 - There is a deadweight loss from the underemployment of labour
 
-**Worked example:** A monopsonist faces labour supply $w = 20 + 2L$ and $\mathrm{MRP}_L = 100 - 2L$.
+**Worked example:** A monopsonist faces labour supply $w = 20 + 2L$ and $\mathrm{'\{'}MRP{'\}'}_L = 100 - 2L$.
 
-$\mathrm{MRC}_L = 20 + 4L$
+$\mathrm{'\{'}MRC{'\}'}_L = 20 + 4L$
 
-Setting $\mathrm{MRP}_L = \mathrm{MRC}_L$:
+Setting $\mathrm{'\{'}MRP{'\}'}_L = \mathrm{'\{'}MRC{'\}'}_L$:
 
 $$100 - 2L = 20 + 4L \implies 80 = 6L \implies L^* = 13.33$$
 
 Wage paid $= 20 + 2(13.33) = 46.67$
 
-Under competitive conditions: $\mathrm{MRP}_L = w$, so $100 - 2L = 20 + 2L \implies 80 = 4L \implies L_c = 20$,
+Under competitive conditions: $\mathrm{'\{'}MRP{'\}'}_L = w$, so $100 - 2L = 20 + 2L \implies 80 = 4L \implies L_c = 20$,
 $w_c = 20 + 2(20) = 60$.
 
 The monopsony hires 13.33 workers at a wage of 46.67, compared to 20 workers at a wage of 60 under
@@ -1635,7 +1635,7 @@ use. If a factor earns less than its transfer earnings, it will move to its next
 
 **Economic rent** is any payment above transfer earnings:
 
-$$\text{Economic rent} = \text{Total factor income} - \text{Transfer earnings}$$
+$$\text{'\{'}Economic rent{'\}'} = \text{'\{'}Total factor income{'\}'} - \text{'\{'}Transfer earnings{'\}'}$$
 
 The proportion of economic rent to total income depends on the elasticity of the factor supply:
 
@@ -1670,10 +1670,10 @@ The proportion of economic rent to total income depends on the elasticity of the
 The deadweight loss (DWL) from any government intervention that creates a wedge between the
 marginal benefit and marginal cost of a good can be calculated using the formula:
 
-$$\mathrm{DWL} = \frac{1}{2} \times (P_{\text{distortion}}) \times (Q_{\text{loss}})$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times (P_{\text{'\{'}distortion{'\}'}}) \times (Q_{\text{'\{'}loss{'\}'}})$$
 
-Where $P_{\text{distortion}}$ is the difference between the marginal benefit and marginal cost at the
-distorted quantity, and $Q_{\text{loss}}$ is the reduction in quantity from the efficient level.
+Where $P_{\text{'\{'}distortion{'\}'}}$ is the difference between the marginal benefit and marginal cost at the
+distorted quantity, and $Q_{\text{'\{'}loss{'\}'}}$ is the reduction in quantity from the efficient level.
 
 ### Comprehensive Welfare Analysis of a Tax
 
@@ -1693,13 +1693,13 @@ $$P_s = P_d - t = \frac{ad + bc - dt}{b + d}$$
 
 **Welfare changes:**
 
-$$\Delta\mathrm{CS} = -\frac{1}{2}(P_d - P_0)(Q_0 + Q_t)$$
+$$\Delta\mathrm{'\{'}CS{'\}'} = -\frac{1}{2}(P_d - P_0)(Q_0 + Q_t)$$
 
-$$\Delta\mathrm{PS} = -\frac{1}{2}(P_0 - P_s)(Q_0 + Q_t)$$
+$$\Delta\mathrm{'\{'}PS{'\}'} = -\frac{1}{2}(P_0 - P_s)(Q_0 + Q_t)$$
 
-$$\text{Tax revenue} = t \times Q_t$$
+$$\text{'\{'}Tax revenue{'\}'} = t \times Q_t$$
 
-$$\mathrm{DWL} = \frac{1}{2} \times t \times (Q_0 - Q_t) = \frac{t^2}{2(b + d)}$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times t \times (Q_0 - Q_t) = \frac{t^2}{2(b + d)}$$
 
 ### Welfare Analysis of a Subsidy
 
@@ -1713,38 +1713,38 @@ $$P_s = P_d + s = \frac{ad + bc + ds}{b + d}$$
 
 The subsidy cost is $s \times Q_s$. The DWL of the subsidy is:
 
-$$\mathrm{DWL} = \frac{1}{2} \times s \times (Q_s - Q_0) = \frac{s^2}{2(b + d)}$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times s \times (Q_s - Q_0) = \frac{s^2}{2(b + d)}$$
 
 ### Welfare Analysis of a Price Ceiling
 
-A binding price ceiling $P_{\text{ceil}} < P_0$ creates:
+A binding price ceiling $P_{\text{'\{'}ceil{'\}'}} < P_0$ creates:
 
-- Quantity demanded: $Q_d = (a - P_{\text{ceil}}) / b$
-- Quantity supplied: $Q_s = (P_{\text{ceil}} - c) / d$
+- Quantity demanded: $Q_d = (a - P_{\text{'\{'}ceil{'\}'}}) / b$
+- Quantity supplied: $Q_s = (P_{\text{'\{'}ceil{'\}'}} - c) / d$
 - Shortage: $Q_d - Q_s$
 
-$$\Delta\mathrm{CS} = (P_0 - P_{\text{ceil}})Q_s - \frac{1}{2}(P_0 - P_{\text{ceil}})(Q_0 - Q_s) - \frac{1}{2}(P_0 - P_{\text{ceil}})(Q_d - Q_0)$$
+$$\Delta\mathrm{'\{'}CS{'\}'} = (P_0 - P_{\text{'\{'}ceil{'\}'}})Q_s - \frac{1}{2}(P_0 - P_{\text{'\{'}ceil{'\}'}})(Q_0 - Q_s) - \frac{1}{2}(P_0 - P_{\text{'\{'}ceil{'\}'}})(Q_d - Q_0)$$
 
 The first term is the gain to consumers who still buy the good. The second and third terms are losses
 from reduced consumption. The net effect is ambiguous and depends on the parameters.
 
-$$\mathrm{DWL} = \frac{1}{2}(P_{\text{ceil}} - c)(Q_0 - Q_s) + \frac{1}{2}(a - P_{\text{ceil}})(Q_d - Q_0)$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2}(P_{\text{'\{'}ceil{'\}'}} - c)(Q_0 - Q_s) + \frac{1}{2}(a - P_{\text{'\{'}ceil{'\}'}})(Q_d - Q_0)$$
 
 The first triangle is the loss from inefficiently low production. The second is the loss from
 foregone mutually beneficial transactions.
 
 ### Welfare Analysis of a Price Floor
 
-A binding price floor $P_{\text{floor}} > P_0$ creates:
+A binding price floor $P_{\text{'\{'}floor{'\}'}} > P_0$ creates:
 
-- Quantity demanded: $Q_d = (a - P_{\text{floor}}) / b$
-- Quantity supplied: $Q_s = (P_{\text{floor}} - c) / d$
+- Quantity demanded: $Q_d = (a - P_{\text{'\{'}floor{'\}'}}) / b$
+- Quantity supplied: $Q_s = (P_{\text{'\{'}floor{'\}'}} - c) / d$
 - Surplus: $Q_s - Q_d$
 
-$$\mathrm{DWL} = \frac{1}{2}(P_{\text{floor}} - c)(Q_s - Q_0) + \frac{1}{2}(a - P_{\text{floor}})(Q_0 - Q_d)$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2}(P_{\text{'\{'}floor{'\}'}} - c)(Q_s - Q_0) + \frac{1}{2}(a - P_{\text{'\{'}floor{'\}'}})(Q_0 - Q_d)$$
 
 If the government purchases the surplus at the floor price, the total cost is
-$P_{\text{floor}} \times (Q_s - Q_d)$, adding to the welfare loss.
+$P_{\text{'\{'}floor{'\}'}} \times (Q_s - Q_d)$, adding to the welfare loss.
 
 ### Common Pitfalls in Welfare Analysis
 
@@ -1770,9 +1770,9 @@ and the price of $Y$ is $P_Y = 5$.
 
 (c) Decompose the change in $X$ consumption into substitution and income effects.
 
-(a) $\mathrm{MRS}_{XY} = \frac{MU_X}{MU_Y} = \frac{Y}{X}$
+(a) $\mathrm{'\{'}MRS{'\}'}_{XY} = \frac{MU_X}{MU_Y} = \frac{Y}{X}$
 
-Setting $\mathrm{MRS} = P_X / P_Y$:
+Setting $\mathrm{'\{'}MRS{'\}'} = P_X / P_Y$:
 
 $$\frac{Y}{X} = \frac{10}{5} = 2 \implies Y = 2X$$
 
@@ -1828,7 +1828,7 @@ $Q^* = 60$, $P^* = 100 - 60 = 40$
 
 $\pi_1 = \pi_2 = (40 - 10) \times 30 = 900$
 
-(b) Monopoly: $\mathrm{MR} = 100 - 2Q = MC = 10 \implies Q_m = 45$, $P_m = 55$
+(b) Monopoly: $\mathrm{'\{'}MR{'\}'} = 100 - 2Q = MC = 10 \implies Q_m = 45$, $P_m = 55$
 
 $\pi_m = (55 - 10) \times 45 = 2025$
 
@@ -1837,14 +1837,14 @@ is lower (1800 vs. 2025).
 
 (c) If firms collude (act as a monopoly), each produces $Q_m / 2 = 22.5$.
 
-$\pi_{\text{collusion}} = (55 - 10) \times 22.5 = 1012.5$ per firm.
+$\pi_{\text{'\{'}collusion{'\}'}} = (55 - 10) \times 22.5 = 1012.5$ per firm.
 
 Each firm earns more under collusion ($1012.5$) than under Cournot ($900$), but each has an
 incentive to cheat: if Firm 1 cheats and Firm 2 produces $22.5$:
 
 $q_1 = 45 - 0.5(22.5) = 33.75$, $Q = 56.25$, $P = 43.75$
 
-$\pi_1^{\text{cheat}} = (43.75 - 10) \times 33.75 = 1139.06 > 1012.5$
+$\pi_1^{\text{'\{'}cheat{'\}'}} = (43.75 - 10) \times 33.75 = 1139.06 > 1012.5$
 
 This confirms the prisoner's dilemma structure of collusion.
 
@@ -1866,9 +1866,9 @@ discrimination.
 (b) Calculate total profit with and without price discrimination (assuming a single price for all
 customers with combined demand).
 
-(a) Market A: $\mathrm{MR}_A = 30 - Q_A = 4 \implies Q_A = 26$, $P_A = 30 - 13 = 17$
+(a) Market A: $\mathrm{'\{'}MR{'\}'}_A = 30 - Q_A = 4 \implies Q_A = 26$, $P_A = 30 - 13 = 17$
 
-Market S: $\mathrm{MR}_S = 20 - Q_S = 4 \implies Q_S = 16$, $P_S = 20 - 8 = 12$
+Market S: $\mathrm{'\{'}MR{'\}'}_S = 20 - Q_S = 4 \implies Q_S = 16$, $P_S = 20 - 8 = 12$
 
 $\pi_A = (17 - 4) \times 26 = 338$
 
@@ -1882,13 +1882,13 @@ for $Q > 20$. Actually, we need to sum horizontally.
 For $P \geq 20$: only adults buy. $Q_A = 60 - 2P$, $Q_S = 0$.
 For $P < 20$: both buy. $Q_A = 60 - 2P$, $Q_S = 40 - 2P$. Total $Q = 100 - 4P$, so $P = 25 - 0.25Q$.
 
-$\mathrm{MR} = 25 - 0.5Q = 4 \implies Q = 42$
+$\mathrm{'\{'}MR{'\}'} = 25 - 0.5Q = 4 \implies Q = 42$
 
 $P = 25 - 0.25(42) = 14.5$
 
 $Q_A = 60 - 2(14.5) = 31$, $Q_S = 40 - 2(14.5) = 11$
 
-$\pi_{\text{single}} = (14.5 - 4) \times 42 = 441$
+$\pi_{\text{'\{'}single{'\}'}} = (14.5 - 4) \times 42 = 441$
 
 Price discrimination yields higher profit ($466 > 441$), confirming that the firm benefits from
 segmenting the market. Students pay less ($12$ vs. $14.5$), while adults pay more ($17$ vs. $14.5$).
@@ -1899,7 +1899,7 @@ segmenting the market. Students pay less ($12$ vs. $14.5$), while adults pay mor
 <summary>Problem 11: Monopsony and Minimum Wage</summary>
 
 A coal mine is the sole employer in a remote town. The labour supply is $w = 10 + L$ and the
-$\mathrm{MRP}_L = 50 - 2L$.
+$\mathrm{'\{'}MRP{'\}'}_L = 50 - 2L$.
 
 (a) Find the profit-maximising wage and employment level.
 
@@ -1908,54 +1908,54 @@ $\mathrm{MRP}_L = 50 - 2L$.
 (c) The government introduces a minimum wage of $w = 22$. Analyse the effect on employment and
 wages.
 
-(a) $\mathrm{MRC}_L = 10 + 2L$
+(a) $\mathrm{'\{'}MRC{'\}'}_L = 10 + 2L$
 
-Setting $\mathrm{MRP}_L = \mathrm{MRC}_L$:
+Setting $\mathrm{'\{'}MRP{'\}'}_L = \mathrm{'\{'}MRC{'\}'}_L$:
 
 $50 - 2L = 10 + 2L \implies 40 = 4L \implies L^* = 10$
 
 Wage $= 10 + 10 = 20$
 
-(b) Competitive equilibrium: $\mathrm{MRP}_L = w$, so $50 - 2L = 10 + L \implies 40 = 3L \implies L_c = 13.33$,
+(b) Competitive equilibrium: $\mathrm{'\{'}MRP{'\}'}_L = w$, so $50 - 2L = 10 + L \implies 40 = 3L \implies L_c = 13.33$,
 $w_c = 23.33$.
 
 The monopsony under-employs by $13.33 - 10 = 3.33$ workers. The DWL is:
 
-$$\mathrm{DWL} = \frac{1}{2} \times (\mathrm{MRP}_{L=10} - w_{L=10}) \times (L_c - L^*)$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times (\mathrm{'\{'}MRP{'\}'}_{L=10} - w_{L=10}) \times (L_c - L^*)$$
 
-At $L = 10$: $\mathrm{MRP}_L = 50 - 20 = 30$, $w = 20$.
+At $L = 10$: $\mathrm{'\{'}MRP{'\}'}_L = 50 - 20 = 30$, $w = 20$.
 
-$\mathrm{DWL} = \frac{1}{2} \times (30 - 20) \times (13.33 - 10) = \frac{1}{2} \times 10 \times 3.33 = 16.67$
+$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times (30 - 20) \times (13.33 - 10) = \frac{1}{2} \times 10 \times 3.33 = 16.67$
 
 (c) With minimum wage $w_{\min} = 22$:
 
-For $L \leq 12$ (where supply wage $= 22$), the $\mathrm{MRC}$ is constant at $22$.
+For $L \leq 12$ (where supply wage $= 22$), the $\mathrm{'\{'}MRC{'\}'}$ is constant at $22$.
 For $L > 12$, the firm must pay above $22$ to attract more workers.
 
-The firm now faces: $\mathrm{MRC} = 22$ for $L \leq 12$.
+The firm now faces: $\mathrm{'\{'}MRC{'\}'} = 22$ for $L \leq 12$.
 
-$\mathrm{MRP}_L = 22 \implies 50 - 2L = 22 \implies 2L = 28 \implies L = 14$.
+$\mathrm{'\{'}MRP{'\}'}_L = 22 \implies 50 - 2L = 22 \implies 2L = 28 \implies L = 14$.
 
 But at $L = 14$, the supply wage would be $10 + 14 = 24 > 22$, so the firm must pay $24$ for
-the 14th worker. The $\mathrm{MRC}$ jumps at $L = 12$.
+the 14th worker. The $\mathrm{'\{'}MRC{'\}'}$ jumps at $L = 12$.
 
-For $L > 12$: $\mathrm{MRC}_L = 10 + 2L$ (back to the original supply curve).
+For $L > 12$: $\mathrm{'\{'}MRC{'\}'}_L = 10 + 2L$ (back to the original supply curve).
 
-Setting $\mathrm{MRP}_L = \mathrm{MRC}_L$ at $22$: the firm hires $L = 14$ workers at a wage of
+Setting $\mathrm{'\{'}MRP{'\}'}_L = \mathrm{'\{'}MRC{'\}'}_L$ at $22$: the firm hires $L = 14$ workers at a wage of
 $w = \max(22, 10 + 14) = 24$ for the 14th worker. But the minimum wage is only binding up to
 $L = 12$.
 
-More precisely, the firm faces $\mathrm{MRC} = 22$ for the first 12 workers. The $\mathrm{MRP}$
+More precisely, the firm faces $\mathrm{'\{'}MRC{'\}'} = 22$ for the first 12 workers. The $\mathrm{'\{'}MRP{'\}'}$
 at $L = 12$ is $50 - 24 = 26 > 22$, so the firm wants to hire more. For $L > 12$, the
-$\mathrm{MRC}$ reverts to $10 + 2L$.
+$\mathrm{'\{'}MRC{'\}'}$ reverts to $10 + 2L$.
 
 Setting $50 - 2L = 10 + 2L \implies L = 10$, but this is at the original equilibrium. The firm
 hires where the horizontal portion of MRC (at 22) intersects MRP:
 
 $50 - 2L = 22 \implies L = 14$
 
-Since $14 > 12$, the firm must check whether the 13th and 14th workers have $\mathrm{MRC} > 22$.
-At $L = 13$: $\mathrm{MRC} = 10 + 2(13) = 36 > \mathrm{MRP}_{L=13} = 50 - 26 = 24$. So the
+Since $14 > 12$, the firm must check whether the 13th and 14th workers have $\mathrm{'\{'}MRC{'\}'} > 22$.
+At $L = 13$: $\mathrm{'\{'}MRC{'\}'} = 10 + 2(13) = 36 > \mathrm{'\{'}MRP{'\}'}_{L=13} = 50 - 26 = 24$. So the
 firm will not hire the 13th worker.
 
 The firm hires $L = 12$ workers at $w = 22$.
@@ -1981,9 +1981,9 @@ effects with the price floor.
 
 (a) Equilibrium: $100 - P = P - 20 \implies 2P = 120 \implies P_0 = 60$, $Q_0 = 40$.
 
-$\mathrm{CS} = \frac{1}{2}(100 - 60)(40) = 800$
+$\mathrm{'\{'}CS{'\}'} = \frac{1}{2}(100 - 60)(40) = 800$
 
-$\mathrm{PS} = \frac{1}{2}(60 - 20)(40) = 800$
+$\mathrm{'\{'}PS{'\}'} = \frac{1}{2}(60 - 20)(40) = 800$
 
 Total welfare $= 1600$.
 
@@ -1995,14 +1995,14 @@ Surplus $= 45 - 35 = 10$ units. Government purchases 10 units at `USD 65` each.
 
 Cost to government $= 65 \times 10 = 650$.
 
-New CS $= \frac{1}{2}(100 - 65)(35) = 612.5$. $\Delta\mathrm{CS} = 612.5 - 800 = -187.5$
+New CS $= \frac{1}{2}(100 - 65)(35) = 612.5$. $\Delta\mathrm{'\{'}CS{'\}'} = 612.5 - 800 = -187.5$
 
-New PS $= \frac{1}{2}(65 - 20)(45) = 1012.5$. $\Delta\mathrm{PS} = 1012.5 - 800 = +212.5$
+New PS $= \frac{1}{2}(65 - 20)(45) = 1012.5$. $\Delta\mathrm{'\{'}PS{'\}'} = 1012.5 - 800 = +212.5$
 
 Government cost $= 650$. However, the government acquires goods worth $(100 - 65)/2 \times 10 + 35 \times 10$
 ... more simply, the government's surplus from buying and destroying the goods is zero.
 
-$\mathrm{DWL} = \frac{1}{2}(65 - 60)(40 - 35) + \frac{1}{2}(65 - 60)(45 - 40) = \frac{1}{2}(5)(5) + \frac{1}{2}(5)(5) = 12.5 + 12.5 = 25$
+$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2}(65 - 60)(40 - 35) + \frac{1}{2}(65 - 60)(45 - 40) = \frac{1}{2}(5)(5) + \frac{1}{2}(5)(5) = 12.5 + 12.5 = 25$
 
 Total welfare change $= -187.5 + 212.5 - 650 = -625$. The net welfare loss including government
 spending is `USD 625`.
@@ -2016,11 +2016,11 @@ $100 - P = P - 10 \implies 2P = 110 \implies P_d = 55$, $P_s = 45$.
 
 $Q_s = 45$. Subsidy cost $= 10 \times 45 = 450$.
 
-New CS $= \frac{1}{2}(100 - 55)(45) = 1012.5$. $\Delta\mathrm{CS} = +212.5$
+New CS $= \frac{1}{2}(100 - 55)(45) = 1012.5$. $\Delta\mathrm{'\{'}CS{'\}'} = +212.5$
 
-New PS $= \frac{1}{2}(45 - 20)(45) = 562.5$. $\Delta\mathrm{PS} = 562.5 - 800 = -237.5$
+New PS $= \frac{1}{2}(45 - 20)(45) = 562.5$. $\Delta\mathrm{'\{'}PS{'\}'} = 562.5 - 800 = -237.5$
 
-$\mathrm{DWL} = \frac{1}{2} \times 10 \times (45 - 40) = 25$
+$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times 10 \times (45 - 40) = 25$
 
 Net welfare change (including government cost) $= 212.5 - 237.5 - 450 = -475$
 
@@ -2051,7 +2051,7 @@ are loss-averse.
 
 **The value function:**
 
-$$v(x) = \begin{cases} x^\alpha & \text{if } x \geq 0 \text{ (gains)} \\ -\lambda(-x)^\beta & \text{if } x < 0 \text{ (losses)} \end{cases}$$
+$$v(x) = \begin{cases} x^\alpha & \text{'\{'}if {'\}'} x \geq 0 \text{'\{'} (gains){'\}'} \\ -\lambda(-x)^\beta & \text{'\{'}if {'\}'} x < 0 \text{'\{'} (losses){'\}'} \end{cases}$$
 
 Where $\alpha, \beta < 1$ (diminishing sensitivity), $\lambda > 1$ (loss aversion; typically
 $\lambda \approx 2.25$).
@@ -2088,7 +2088,7 @@ Under expected utility theory, a risk-neutral individual would accept (positive 
 
 Under prospect theory (assuming linear value function for simplicity):
 
-$V(\text{gamble}) = 0.5 \times v(200) + 0.5 \times v(-100) = 0.5 \times 200 + 0.5 \times (-2 \times 100)$
+$V(\text{'\{'}gamble{'\}'}) = 0.5 \times v(200) + 0.5 \times v(-100) = 0.5 \times 200 + 0.5 \times (-2 \times 100)$
 $= 100 - 100 = 0$
 
 The individual is indifferent between the gamble and the status quo, despite the positive expected
@@ -2167,23 +2167,23 @@ firm (a natural monopoly). The threat of potential entry constrains the behaviou
 
 ### The Contestable Market Outcome
 
-Even a monopoly in a perfectly contestable market will set $P = \text{AC}$ (average cost pricing)
-and produce at the efficient scale. If $P > \text{AC}$, potential entrants can profitably enter,
+Even a monopoly in a perfectly contestable market will set $P = \text{'\{'}AC{'\}'}$ (average cost pricing)
+and produce at the efficient scale. If $P > \text{'\{'}AC{'\}'}$, potential entrants can profitably enter,
 drive the price down to AC, and earn zero economic profit.
 
-$$\text{Sustainable monopoly: } P = \text{AC}, \pi = 0$$
+$$\text{'\{'}Sustainable monopoly: {'\}'} P = \text{'\{'}AC{'\}'}, \pi = 0$$
 
-This is in contrast to an unregulated monopoly, which sets $P > \text{AC}$ and earns positive
+This is in contrast to an unregulated monopoly, which sets $P > \text{'\{'}AC{'\}'}$ and earns positive
 economic profit.
 
 ### Comparison: Contestable vs. Monopolistic Market
 
 | Feature | Unregulated monopoly | Contestable monopoly |
 |---|---|---|
-| Price | $P > \text{MC}$, $P > \text{AC}$ | $P = \text{AC} > \text{MC}$ |
-| Output | $Q < Q_{\text{efficient}}$ | Higher than unregulated monopoly |
+| Price | $P > \text{'\{'}MC{'\}'}$, $P > \text{'\{'}AC{'\}'}$ | $P = \text{'\{'}AC{'\}'} > \text{'\{'}MC{'\}'}$ |
+| Output | $Q < Q_{\text{'\{'}efficient{'\}'}}$ | Higher than unregulated monopoly |
 | Profit | $\pi > 0$ | $\pi = 0$ |
-| Efficiency | Allocatively and productively inefficient | Productively efficient ($P = \text{AC}$), allocatively inefficient ($P > \text{MC}$) |
+| Efficiency | Allocatively and productively inefficient | Productively efficient ($P = \text{'\{'}AC{'\}'}$), allocatively inefficient ($P > \text{'\{'}MC{'\}'}$) |
 | X-inefficiency | Likely (no competitive pressure) | Unlikely (threat of entry disciplines the firm) |
 
 ### Limitations of Contestable Market Theory
@@ -2209,7 +2209,7 @@ typically reduce efficiency (e.g., by creating deadweight loss from taxation).
 
 ### Types of Efficiency
 
-1. **Allocative efficiency:** $P = \text{MC}$ (the value consumers place on the last unit equals
+1. **Allocative efficiency:** $P = \text{'\{'}MC{'\}'}$ (the value consumers place on the last unit equals
    the cost of producing it)
 2. **Productive efficiency:** production at minimum average cost
 3. **Dynamic efficiency:** the rate of innovation and technological progress over time
@@ -2231,14 +2231,14 @@ typically reduce efficiency (e.g., by creating deadweight loss from taxation).
 A progressive income tax with a top marginal rate of 50% reduces inequality but creates a
 deadweight loss. The DWL depends on the elasticity of labour supply:
 
-$$\text{DWL} \approx \frac{1}{2} \times \epsilon_L \times t^2 \times w \times L$$
+$$\text{'\{'}DWL{'\}'} \approx \frac{1}{2} \times \epsilon_L \times t^2 \times w \times L$$
 
 Where $\epsilon_L$ is the labour supply elasticity, $t$ is the tax rate, $w$ is the wage rate,
 and $L$ is labour supply.
 
 If $\epsilon_L = 0.5$ and $t = 0.5$:
 
-$\text{DWL} \approx \frac{1}{2} \times 0.5 \times 0.25 \times w \times L = 0.0625 \times w \times L$
+$\text{'\{'}DWL{'\}'} \approx \frac{1}{2} \times 0.5 \times 0.25 \times w \times L = 0.0625 \times w \times L$
 
 The DWL is 6.25% of total labour income. Whether this trade-off is worthwhile depends on the
 social value placed on equality.
@@ -2288,7 +2288,7 @@ without creating any new wealth.
 consumers to producers. The DWL of the tariff is USD 20 million. Producers may spend up to
 USD 100 million on lobbying to secure the tariff. The total social cost is:
 
-$$\text{Total cost} = \text{DWL} + \text{Rent-seeking expenditure} = 20 + 100 = 120$$
+$$\text{'\{'}Total cost{'\}'} = \text{'\{'}DWL{'\}'} + \text{'\{'}Rent-seeking expenditure{'\}'} = 20 + 100 = 120$$
 
 The total social cost of the tariff exceeds the DWL by six times, because the rent-seeking
 expenditure is a pure waste of resources.
@@ -2324,7 +2324,7 @@ inequality.
 The Palma ratio is the ratio of the income share of the top 10% to the income share of the
 bottom 40%:
 
-$$\text{Palma} = \frac{S_{\text{top 10\%}}}{S_{\text{bottom 40\%}}}$$
+$$\text{'\{'}Palma{'\}'} = \frac{S_{\text{'\{'}top 10\%{'\}'}}}{S_{\text{'\{'}bottom 40\%{'\}'}}}$$
 
 The Palma ratio focuses on the "tails" of the distribution because the middle 50% of the
 population captures approximately 50% of income in most countries, so inequality is driven
@@ -2427,7 +2427,7 @@ losses. Expected utility theory predicts A in both frames (same expected value).
 <details>
 <summary>Problem 9: Contestable Market Analysis</summary>
 
-A natural monopoly has total cost function $\text{TC} = 200 + 10Q$. Market demand is
+A natural monopoly has total cost function $\text{'\{'}TC{'\}'} = 200 + 10Q$. Market demand is
 $P = 50 - 2Q$.
 
 (a) Calculate the profit-maximising price, quantity, and profit for an unregulated monopoly.
@@ -2436,9 +2436,9 @@ $P = 50 - 2Q$.
 
 (c) Calculate the deadweight loss in each case.
 
-(a) $\text{MR} = 50 - 4Q$. $\text{MC} = 10$.
+(a) $\text{'\{'}MR{'\}'} = 50 - 4Q$. $\text{'\{'}MC{'\}'} = 10$.
 
-$\text{MR} = \text{MC}: 50 - 4Q = 10 \implies 4Q = 40 \implies Q = 10$
+$\text{'\{'}MR{'\}'} = \text{'\{'}MC{'\}'}: 50 - 4Q = 10 \implies 4Q = 40 \implies Q = 10$
 
 $P = 50 - 2(10) = 30$
 
@@ -2449,20 +2449,20 @@ equals the monopoly profit). Let me verify:
 
 $TR = 30 \times 10 = 300$. $TC = 200 + 10(10) = 300$. $\pi = 0$. Yes.
 
-(b) In a contestable market, the firm sets $P = \text{AC}$ to deter entry:
+(b) In a contestable market, the firm sets $P = \text{'\{'}AC{'\}'}$ to deter entry:
 
-$\text{AC} = 200/Q + 10$
+$\text{'\{'}AC{'\}'} = 200/Q + 10$
 
-$P = \text{AC}: 50 - 2Q = 200/Q + 10 \implies 50Q - 2Q^2 = 200 + 10Q$
+$P = \text{'\{'}AC{'\}'}: 50 - 2Q = 200/Q + 10 \implies 50Q - 2Q^2 = 200 + 10Q$
 
 $-2Q^2 + 40Q - 200 = 0 \implies Q^2 - 20Q + 100 = 0 \implies (Q - 10)^2 = 0 \implies Q = 10$
 
 $P = 30$. The contestable market outcome coincides with the monopoly outcome in this specific
 case because the monopoly was already earning zero profit.
 
-(c) Efficient quantity: $P = \text{MC}: 50 - 2Q = 10 \implies Q = 20$, $P = 10$.
+(c) Efficient quantity: $P = \text{'\{'}MC{'\}'}: 50 - 2Q = 10 \implies Q = 20$, $P = 10$.
 
-$\text{DWL} = \frac{1}{2}(30 - 10)(20 - 10) = \frac{1}{2}(20)(10) = 100$
+$\text{'\{'}DWL{'\}'} = \frac{1}{2}(30 - 10)(20 - 10) = \frac{1}{2}(20)(10) = 100$
 
 The DWL is the same in both cases because the output is identical.
 
@@ -2475,28 +2475,28 @@ incumbent to set lower prices.
 <details>
 <summary>Problem 10: Government Failure --- Cost-Benefit Analysis of Regulation</summary>
 
-The government regulates a monopoly to set $P = \text{AC}$. The monopoly has $\text{TC} = 100 + 5Q$
+The government regulates a monopoly to set $P = \text{'\{'}AC{'\}'}$. The monopoly has $\text{'\{'}TC{'\}'} = 100 + 5Q$
 and faces demand $P = 25 - Q$.
 
-(a) Compare the outcomes under: (i) unregulated monopoly, (ii) $P = \text{AC}$ regulation,
-   (iii) $P = \text{MC}$ regulation.
+(a) Compare the outcomes under: (i) unregulated monopoly, (ii) $P = \text{'\{'}AC{'\}'}$ regulation,
+   (iii) $P = \text{'\{'}MC{'\}'}$ regulation.
 
 (b) The regulatory process costs USD 15 per period (administrative costs). Is regulation
    justified?
 
 (c) Identify potential sources of government failure in this regulation.
 
-(a) (i) Unregulated monopoly: $\text{MR} = 25 - 2Q$, $\text{MC} = 5$.
+(a) (i) Unregulated monopoly: $\text{'\{'}MR{'\}'} = 25 - 2Q$, $\text{'\{'}MC{'\}'} = 5$.
 
-$\text{MR} = \text{MC}: 25 - 2Q = 5 \implies Q = 10$, $P = 15$
+$\text{'\{'}MR{'\}'} = \text{'\{'}MC{'\}'}: 25 - 2Q = 5 \implies Q = 10$, $P = 15$
 
 $\pi = 150 - (100 + 50) = 0$. Again zero profit.
 
-(ii) $P = \text{AC}$: $25 - Q = 100/Q + 5 \implies 25Q - Q^2 = 100 + 5Q$
+(ii) $P = \text{'\{'}AC{'\}'}$: $25 - Q = 100/Q + 5 \implies 25Q - Q^2 = 100 + 5Q$
 
 $Q^2 - 20Q + 100 = 0 \implies Q = 10$, $P = 15$. Same as monopoly (zero profit already).
 
-(iii) $P = \text{MC}$: $25 - Q = 5 \implies Q = 20$, $P = 5$.
+(iii) $P = \text{'\{'}MC{'\}'}$: $25 - Q = 5 \implies Q = 20$, $P = 5$.
 
 $\pi = 100 - (100 + 100) = -100$. The firm makes a loss and would exit without a subsidy.
 
@@ -2568,7 +2568,7 @@ New cumulative shares:
 | 4 | 0.8 | 0.52 | 0.164 |
 | 5 | 1.0 | 1.00 | 0.304 |
 
-$G_{\text{new}} = 1 - (0.016 + 0.048 + 0.092 + 0.164 + 0.304) = 1 - 0.624 = 0.376$
+$G_{\text{'\{'}new{'\}'}} = 1 - (0.016 + 0.048 + 0.092 + 0.164 + 0.304) = 1 - 0.624 = 0.376$
 
 The Gini coefficient falls from 0.456 to 0.376, a reduction of 0.080. This is a significant
 improvement, but the country still has moderate-to-high inequality.
@@ -2582,7 +2582,7 @@ New Palma ratio $= 48\% / (8\% + 8\%) = 48/16 = 3.00$.
 - Confusing the Gini coefficient with the Palma ratio. The Gini captures overall inequality;
   the Palma focuses on the tails and may give a different picture
 - Assuming that contestable markets achieve allocative efficiency. Contestable markets achieve
-  $P = \text{AC}$ (productive efficiency) but not $P = \text{MC}$ (allocative efficiency)
+  $P = \text{'\{'}AC{'\}'}$ (productive efficiency) but not $P = \text{'\{'}MC{'\}'}$ (allocative efficiency)
   unless MC is constant
 - Assuming that loss aversion is the same as risk aversion. Loss aversion is a separate bias
   from diminishing marginal utility; it applies even for small stakes where risk aversion
@@ -2612,9 +2612,9 @@ New Palma ratio $= 48\% / (8\% + 8\%) = 48/16 = 3.00$.
 **First degree (perfect) price discrimination:** the firm charges each consumer their maximum
 willingness to pay. The firm captures the entire consumer surplus.
 
-$$\text{Profit} = \int_0^Q P(Q) dQ - \text{TC}(Q)$$
+$$\text{'\{'}Profit{'\}'} = \int_0^Q P(Q) dQ - \text{'\{'}TC{'\}'}(Q)$$
 
-Output is at the socially efficient level ($P = \text{MC}$) because the firm captures the
+Output is at the socially efficient level ($P = \text{'\{'}MC{'\}'}$) because the firm captures the
 marginal benefit of each unit. There is no deadweight loss, but all surplus goes to the producer.
 
 **Second degree (self-selection):** the firm offers different quantity or quality options, and
@@ -2631,15 +2631,15 @@ A monopolist serves two markets with demand functions:
 Market 1: $P_1 = a_1 - b_1 Q_1$
 Market 2: $P_2 = a_2 - b_2 Q_2$
 
-Total cost: $\text{TC} = c(Q_1 + Q_2) + F$
+Total cost: $\text{'\{'}TC{'\}'} = c(Q_1 + Q_2) + F$
 
 The firm maximises: $\pi = P_1 Q_1 + P_2 Q_2 - c(Q_1 + Q_2) - F$
 
 FOC for each market:
 
-$$\text{MR}_1 = \text{MC}: \quad a_1 - 2b_1 Q_1 = c \implies Q_1 = \frac{a_1 - c}{2b_1}$$
+$$\text{'\{'}MR{'\}'}_1 = \text{'\{'}MC{'\}'}: \quad a_1 - 2b_1 Q_1 = c \implies Q_1 = \frac{a_1 - c}{2b_1}$$
 
-$$\text{MR}_2 = \text{MC}: \quad a_2 - 2b_2 Q_2 = c \implies Q_2 = \frac{a_2 - c}{2b_2}$$
+$$\text{'\{'}MR{'\}'}_2 = \text{'\{'}MC{'\}'}: \quad a_2 - 2b_2 Q_2 = c \implies Q_2 = \frac{a_2 - c}{2b_2}$$
 
 The price in each market:
 
@@ -2649,7 +2649,7 @@ The higher-price market has the less elastic demand (more inelastic).
 
 **Inverse elasticity rule:**
 
-$$\frac{P_1 - \text{MC}}{P_1} = \frac{1}{|\epsilon_1|}, \quad \frac{P_2 - \text{MC}}{P_2} = \frac{1}{|\epsilon_2|}$$
+$$\frac{P_1 - \text{'\{'}MC{'\}'}}{P_1} = \frac{1}{|\epsilon_1|}, \quad \frac{P_2 - \text{'\{'}MC{'\}'}}{P_2} = \frac{1}{|\epsilon_2|}$$
 
 The Lerner index (mark-up over MC as a proportion of price) equals the inverse of the price
 elasticity of demand. The market with the less elastic demand has the higher mark-up.
@@ -2660,7 +2660,7 @@ A monopolist serves two markets:
 
 Market 1 (business travellers): $P_1 = 200 - Q_1$
 Market 2 (leisure travellers): $P_2 = 120 - Q_2$
-$\text{MC} = 20$, $F = 500$
+$\text{'\{'}MC{'\}'} = 20$, $F = 500$
 
 **Without price discrimination (uniform price):**
 
@@ -2668,9 +2668,9 @@ Total demand: $Q = Q_1 + Q_2 = (200 - P) + (120 - P) = 320 - 2P$
 
 Inverse demand: $P = 160 - Q/2$
 
-$\text{MR} = 160 - Q$
+$\text{'\{'}MR{'\}'} = 160 - Q$
 
-$\text{MR} = \text{MC}: 160 - Q = 20 \implies Q = 140$
+$\text{'\{'}MR{'\}'} = \text{'\{'}MC{'\}'}: 160 - Q = 20 \implies Q = 140$
 
 $P = 160 - 70 = 90$
 
@@ -2704,8 +2704,8 @@ Total charge for quantity $q$: $T(q) = F + pq$
 
 If all consumers have identical demand, the firm sets:
 
-- $p = \text{MC}$ (efficient per-unit price)
-- $F = \text{CS}$ at $p = \text{MC}$ (capture the entire consumer surplus)
+- $p = \text{'\{'}MC{'\}'}$ (efficient per-unit price)
+- $F = \text{'\{'}CS{'\}'}$ at $p = \text{'\{'}MC{'\}'}$ (capture the entire consumer surplus)
 
 This achieves the first-best outcome: efficient quantity, no deadweight loss, and all surplus
 goes to the producer.
@@ -2722,15 +2722,15 @@ With different consumer types, the firm faces a trade-off:
 Type H (high demand): $Q_H = 100 - P$, $n_H$ consumers
 Type L (low demand): $Q_L = 60 - P$, $n_L$ consumers
 
-$\text{MC} = 10$.
+$\text{'\{'}MC{'\}'} = 10$.
 
 **Strategy 1: serve both types.** Set $p$ and $F$ such that type L still buys.
 
-Type L's consumer surplus at price $p$: $\text{CS}_L = \frac{1}{2}(60 - p)(60 - p)/1 = \frac{(60-p)^2}{2}$.
+Type L's consumer surplus at price $p$: $\text{'\{'}CS{'\}'}_L = \frac{1}{2}(60 - p)(60 - p)/1 = \frac{(60-p)^2}{2}$.
 
-Wait, $\text{CS} = \frac{1}{2}(P_{\max} - p) \times Q(p) = \frac{1}{2}(60-p)(60-p) = \frac{(60-p)^2}{2}$.
+Wait, $\text{'\{'}CS{'\}'} = \frac{1}{2}(P_{\max} - p) \times Q(p) = \frac{1}{2}(60-p)(60-p) = \frac{(60-p)^2}{2}$.
 
-Set $F = \text{CS}_L$: $F = \frac{(60-p)^2}{2}$.
+Set $F = \text{'\{'}CS{'\}'}_L$: $F = \frac{(60-p)^2}{2}$.
 
 Total profit: $\pi = (n_H + n_L)F + (p - 10)(n_H Q_H + n_L Q_L)$
 
@@ -2750,7 +2750,7 @@ $Q_H = 70$, $Q_L = 30$.
 
 $\pi = 2(450) + (30-10)(70+30) = 900 + 2000 = 2900$.
 
-**Strategy 2: serve only type H.** Set $F = \text{CS}_H$ at $p = 10$.
+**Strategy 2: serve only type H.** Set $F = \text{'\{'}CS{'\}'}_H$ at $p = 10$.
 
 $F = \frac{1}{2}(100-10)(90) = 4050$.
 
@@ -2768,21 +2768,21 @@ firm may prefer to exclude low-demand consumers to extract more surplus from hig
 A natural monopoly arises when a single firm can supply the entire market at a lower cost than
 two or more firms. This occurs when there are large fixed costs and relatively low marginal costs:
 
-$$\text{AC}(Q) = \frac{F}{Q} + \text{MC} \text{ is decreasing for all } Q$$
+$$\text{'\{'}AC{'\}'}(Q) = \frac{F}{Q} + \text{'\{'}MC{'\}'} \text{'\{'} is decreasing for all {'\}'} Q$$
 
 Examples: electricity distribution, water supply, rail networks, telecommunications.
 
 ### Regulatory Options
 
-1. **Marginal cost pricing ($P = \text{MC}$):** allocatively efficient but the firm makes a
-   loss ($\text{AC} > \text{MC}$). Requires a subsidy, which creates deadweight loss from
+1. **Marginal cost pricing ($P = \text{'\{'}MC{'\}'}$):** allocatively efficient but the firm makes a
+   loss ($\text{'\{'}AC{'\}'} > \text{'\{'}MC{'\}'}$). Requires a subsidy, which creates deadweight loss from
    taxation and raises distributional questions
 
-2. **Average cost pricing ($P = \text{AC}$):** the firm breaks even. Productively efficient
-   but allocatively inefficient ($P > \text{MC}$). No subsidy required
+2. **Average cost pricing ($P = \text{'\{'}AC{'\}'}$):** the firm breaks even. Productively efficient
+   but allocatively inefficient ($P > \text{'\{'}MC{'\}'}$). No subsidy required
 
-3. **Price cap regulation ($P \leq P_{\text{cap}}$):** the regulator sets a maximum price,
-   often using the formula $P_{\text{cap}} = P_{\text{RPI}} - X$, where RPI is the retail
+3. **Price cap regulation ($P \leq P_{\text{'\{'}cap{'\}'}}$):** the regulator sets a maximum price,
+   often using the formula $P_{\text{'\{'}cap{'\}'}} = P_{\text{'\{'}RPI{'\}'}} - X$, where RPI is the retail
    price index (inflation) and $X$ is an efficiency factor. This incentivises cost reduction
    (the firm keeps the difference between actual costs and the cap)
 
@@ -2795,29 +2795,29 @@ Examples: electricity distribution, water supply, rail networks, telecommunicati
 
 ### Numerical Example: Regulatory Comparison
 
-A natural monopoly has $\text{TC} = 500 + 10Q$ and faces demand $P = 100 - Q$.
+A natural monopoly has $\text{'\{'}TC{'\}'} = 500 + 10Q$ and faces demand $P = 100 - Q$.
 
 (a) Unregulated monopoly.
 
-(b) $P = \text{MC}$ regulation.
+(b) $P = \text{'\{'}MC{'\}'}$ regulation.
 
-(c) $P = \text{AC}$ regulation.
+(c) $P = \text{'\{'}AC{'\}'}$ regulation.
 
 (d) Price cap at $P = 30$.
 
-(a) $\text{MR} = 100 - 2Q$, $\text{MC} = 10$. $\text{MR} = \text{MC}: Q = 45$, $P = 55$.
+(a) $\text{'\{'}MR{'\}'} = 100 - 2Q$, $\text{'\{'}MC{'\}'} = 10$. $\text{'\{'}MR{'\}'} = \text{'\{'}MC{'\}'}: Q = 45$, $P = 55$.
 
 $\pi = 55 \times 45 - (500 + 450) = 2475 - 950 = 1525$.
 
-$\text{DWL} = \frac{1}{2}(55 - 10)(90 - 45) = \frac{1}{2}(45)(45) = 1012.5$.
+$\text{'\{'}DWL{'\}'} = \frac{1}{2}(55 - 10)(90 - 45) = \frac{1}{2}(45)(45) = 1012.5$.
 
-(b) $P = \text{MC} = 10$. $Q = 90$. $P = 10$.
+(b) $P = \text{'\{'}MC{'\}'} = 10$. $Q = 90$. $P = 10$.
 
 $\pi = 900 - (500 + 900) = -500$. The firm loses USD 500 and requires a subsidy.
 
-$\text{DWL} = 0$ (allocatively efficient).
+$\text{'\{'}DWL{'\}'} = 0$ (allocatively efficient).
 
-(c) $P = \text{AC}$. $\text{AC} = 500/Q + 10$. $100 - Q = 500/Q + 10$.
+(c) $P = \text{'\{'}AC{'\}'}$. $\text{'\{'}AC{'\}'} = 500/Q + 10$. $100 - Q = 500/Q + 10$.
 
 $90Q - Q^2 = 500 \implies Q^2 - 90Q + 500 = 0 \implies Q = \frac{90 \pm \sqrt{8100-2000}}{2} = \frac{90 \pm 76.8}{2}$.
 
@@ -2825,25 +2825,25 @@ $Q = 83.4$ or $Q = 6.6$. Taking the larger root: $Q = 83.4$, $P = 16.6$.
 
 $\pi = 0$ (by construction).
 
-$\text{DWL} = \frac{1}{2}(16.6 - 10)(90 - 83.4) = \frac{1}{2}(6.6)(6.6) = 21.8$.
+$\text{'\{'}DWL{'\}'} = \frac{1}{2}(16.6 - 10)(90 - 83.4) = \frac{1}{2}(6.6)(6.6) = 21.8$.
 
 (d) Price cap at $P = 30$: $Q = 70$. $\pi = 30 \times 70 - (500 + 700) = 2100 - 1200 = 900$.
 
 The firm still earns positive profit but less than the unregulated case (900 vs. 1525).
 
-$\text{DWL} = \frac{1}{2}(30 - 10)(90 - 70) = \frac{1}{2}(20)(20) = 200$.
+$\text{'\{'}DWL{'\}'} = \frac{1}{2}(30 - 10)(90 - 70) = \frac{1}{2}(20)(20) = 200$.
 
 | Regulation | $P$ | $Q$ | $\pi$ | DWL |
 |---|---|---|---|---|
 | None | 55 | 45 | 1525 | 1012.5 |
-| $P = \text{MC}$ | 10 | 90 | -500 | 0 |
-| $P = \text{AC}$ | 16.6 | 83.4 | 0 | 21.8 |
+| $P = \text{'\{'}MC{'\}'}$ | 10 | 90 | -500 | 0 |
+| $P = \text{'\{'}AC{'\}'}$ | 16.6 | 83.4 | 0 | 21.8 |
 | Price cap (30) | 30 | 70 | 900 | 200 |
 
 **Evaluation:**
 
-- $P = \text{MC}$ maximises allocative efficiency but requires subsidy (distributional issue)
-- $P = \text{AC}$ balances efficiency and financial sustainability
+- $P = \text{'\{'}MC{'\}'}$ maximises allocative efficiency but requires subsidy (distributional issue)
+- $P = \text{'\{'}AC{'\}'}$ balances efficiency and financial sustainability
 - Price cap at 30 is less efficient but easier to implement and provides investment incentives
 
 ## Worked Examples: Microeconomics (Additional)
@@ -2856,7 +2856,7 @@ A cinema charges different prices for adults and students. Demand:
 Adults: $P_A = 20 - 0.05Q_A$
 Students: $P_S = 12 - 0.05Q_S$
 
-Total cost: $\text{TC} = 1000 + 2(Q_A + Q_S) + 0.01(Q_A + Q_S)^2$
+Total cost: $\text{'\{'}TC{'\}'} = 1000 + 2(Q_A + Q_S) + 0.01(Q_A + Q_S)^2$
 
 (a) Calculate the profit-maximising prices and quantities with price discrimination. [6 marks]
 
@@ -2864,12 +2864,12 @@ Total cost: $\text{TC} = 1000 + 2(Q_A + Q_S) + 0.01(Q_A + Q_S)^2$
 
 (c) Calculate the difference in profit. [2 marks]
 
-(a) $\text{MC} = 2 + 0.02(Q_A + Q_S)$. This depends on total output, making the two markets
+(a) $\text{'\{'}MC{'\}'} = 2 + 0.02(Q_A + Q_S)$. This depends on total output, making the two markets
 interdependent.
 
-$\text{MR}_A = 20 - 0.10Q_A$. $\text{MR}_S = 12 - 0.10Q_S$.
+$\text{'\{'}MR{'\}'}_A = 20 - 0.10Q_A$. $\text{'\{'}MR{'\}'}_S = 12 - 0.10Q_S$.
 
-FOC: $\text{MR}_A = \text{MC}$ and $\text{MR}_S = \text{MC}$:
+FOC: $\text{'\{'}MR{'\}'}_A = \text{'\{'}MC{'\}'}$ and $\text{'\{'}MR{'\}'}_S = \text{'\{'}MC{'\}'}$:
 
 $20 - 0.10Q_A = 2 + 0.02(Q_A + Q_S)$ ... (1)
 $12 - 0.10Q_S = 2 + 0.02(Q_A + Q_S)$ ... (2)
@@ -2899,11 +2899,11 @@ Since the uniform price is likely below 12 (both groups are served):
 
 $P = 16 - Q/40$ for $Q \geq 200$ (both markets).
 
-$\text{MR} = 16 - Q/20$.
+$\text{'\{'}MR{'\}'} = 16 - Q/20$.
 
-$\text{MC} = 2 + 0.02Q$.
+$\text{'\{'}MC{'\}'} = 2 + 0.02Q$.
 
-$\text{MR} = \text{MC}: 16 - Q/20 = 2 + 0.02Q \implies 14 = Q/20 + Q/50 = 5Q/100 + 2Q/100 = 7Q/100$
+$\text{'\{'}MR{'\}'} = \text{'\{'}MC{'\}'}: 16 - Q/20 = 2 + 0.02Q \implies 14 = Q/20 + Q/50 = 5Q/100 + 2Q/100 = 7Q/100$
 
 $Q = 1400/7 = 200$. $P = 16 - 200/40 = 11$.
 
@@ -2925,7 +2925,7 @@ A golf club serves two types of members:
 Type A (avid golfers, $n_A = 100$): demand for rounds $P = 50 - Q$
 Type B (occasional golfers, $n_B = 200$): demand for rounds $P = 30 - Q$
 
-$\text{MC} = 5$ per round. The club charges an annual membership fee $F$ and a per-round fee $p$.
+$\text{'\{'}MC{'\}'} = 5$ per round. The club charges an annual membership fee $F$ and a per-round fee $p$.
 
 (a) Calculate the optimal two-part tariff if the club serves both types. [4 marks]
 
@@ -2933,9 +2933,9 @@ $\text{MC} = 5$ per round. The club charges an annual membership fee $F$ and a p
 
 (c) Which strategy should the club choose? [3 marks]
 
-(a) To serve both types, set $F = \text{CS}_B$ (the lower-demand type's consumer surplus):
+(a) To serve both types, set $F = \text{'\{'}CS{'\}'}_B$ (the lower-demand type's consumer surplus):
 
-$\text{CS}_B = \frac{1}{2}(30 - p)(30 - p) = \frac{(30-p)^2}{2}$
+$\text{'\{'}CS{'\}'}_B = \frac{1}{2}(30 - p)(30 - p) = \frac{(30-p)^2}{2}$
 
 Total profit: $\pi = (n_A + n_B)F + (p - 5)[n_A Q_A + n_B Q_B]$
 
@@ -2957,9 +2957,9 @@ $\pi = 300(234.7) + 3.33[100(41.67) + 200(21.67)]$
 
 $= 70\,410 + 3.33[4\,167 + 4\,334] = 70\,410 + 3.33(8\,501) = 70\,410 + 28\,308 = 98\,718$
 
-(b) Serve only type A: $F = \text{CS}_A$ at $p = 5$:
+(b) Serve only type A: $F = \text{'\{'}CS{'\}'}_A$ at $p = 5$:
 
-$\text{CS}_A = \frac{1}{2}(50-5)(45) = 1012.5$
+$\text{'\{'}CS{'\}'}_A = \frac{1}{2}(50-5)(45) = 1012.5$
 
 $\pi = 100 \times 1012.5 + 0 = 101\,250$
 
@@ -2970,7 +2970,7 @@ serving only avid golfers. This is the classic exclusion result: the firm exclud
 low-demand consumers to extract more surplus from high-demand consumers.
 
 **Note:** this assumes type B golfers will not join at $F = 1012.5$. Since their maximum
-willingness to pay is $\text{CS}_B$ at $p = 5$: $\frac{1}{2}(25)(25) = 312.5$, which is less
+willingness to pay is $\text{'\{'}CS{'\}'}_B$ at $p = 5$: $\frac{1}{2}(25)(25) = 312.5$, which is less
 than 1012.5, they will not join. The exclusion is self-selecting.
 
 </details>
@@ -2981,7 +2981,7 @@ than 1012.5, they will not join. The exclusion is self-selecting.
 
 Firms simultaneously choose quantities. Each firm treats the other's output as given.
 
-**Duopoly with linear demand:** $P = a - Q = a - q_1 - q_2$, $\text{MC} = c$ for both firms.
+**Duopoly with linear demand:** $P = a - Q = a - q_1 - q_2$, $\text{'\{'}MC{'\}'} = c$ for both firms.
 
 Firm 1 maximises $\pi_1 = (a - q_1 - q_2)q_1 - cq_1$.
 
@@ -3020,7 +3020,7 @@ Each firm's profit: $\pi_i = 0$.
 
 ### Numerical Example
 
-Demand: $P = 100 - Q$. $\text{MC} = 10$ for both firms.
+Demand: $P = 100 - Q$. $\text{'\{'}MC{'\}'} = 10$ for both firms.
 
 **Cournot:**
 
@@ -3063,7 +3063,7 @@ At equilibrium: $P_1^* = P_2^* = \frac{a + bc}{2b - d}$.
 As $d \to b$ (products become perfect substitutes), $P^* \to c$ (Bertrand result).
 As $d \to 0$ (products become independent), $P^* \to (a + bc)/(2b)$ (monopoly pricing for each).
 
-**Numerical example:** $Q_1 = 100 - 2P_1 + P_2$, $\text{MC} = 10$.
+**Numerical example:** $Q_1 = 100 - 2P_1 + P_2$, $\text{'\{'}MC{'\}'} = 10$.
 
 $P_1 = (100 + 20 + P_2)/4 = 30 + P_2/4$. By symmetry: $P_1^* = P_2^* = 30 + P_1/4$.
 

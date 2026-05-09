@@ -32,28 +32,28 @@ This is the most straightforward proof technique and should be the first strateg
 **Theorem.** The sum of two even integers is even.
 
 _Proof._ Let $a$ and $b$ be even integers. By definition, $a = 2m$ and $b = 2n$ for some
-$m, n \in \mathbb{Z}$. Then:
+$m, n \in \mathbb{'\{'}Z{'\}'}$. Then:
 
 $$a + b = 2m + 2n = 2(m + n)$$
 
-Since $m + n \in \mathbb{Z}$, $a + b$ is even by definition.
+Since $m + n \in \mathbb{'\{'}Z{'\}'}$, $a + b$ is even by definition.
 
 **Theorem.** If $n$ is an odd integer, then $n^2$ is odd.
 
-_Proof._ Let $n = 2k + 1$ for some $k \in \mathbb{Z}$. Then:
+_Proof._ Let $n = 2k + 1$ for some $k \in \mathbb{'\{'}Z{'\}'}$. Then:
 
 $$n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
 
-Since $2k^2 + 2k \in \mathbb{Z}$, $n^2$ is odd.
+Since $2k^2 + 2k \in \mathbb{'\{'}Z{'\}'}$, $n^2$ is odd.
 
 **Theorem.** The product of two rational numbers is rational.
 
-_Proof._ Let $a = \dfrac{p}{q}$ and $b = \dfrac{r}{s}$ where $p, q, r, s \in \mathbb{Z}$ and
+_Proof._ Let $a = \dfrac{p}{q}$ and $b = \dfrac{r}{s}$ where $p, q, r, s \in \mathbb{'\{'}Z{'\}'}$ and
 $q, s \ne 0$. Then:
 
 $$ab = \frac{p}{q} \cdot \frac{r}{s} = \frac{pr}{qs}$$
 
-Since $pr, qs \in \mathbb{Z}$ and $qs \ne 0$, $ab$ is rational.
+Since $pr, qs \in \mathbb{'\{'}Z{'\}'}$ and $qs \ne 0$, $ab$ is rational.
 
 ---
 
@@ -75,7 +75,7 @@ is true.
 **Theorem.** $\sqrt{2}$ is irrational.
 
 _Proof._ Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \dfrac{a}{b}$
-where $a, b \in \mathbb{Z}^+$, $\gcd(a, b) = 1$ (the fraction is in lowest terms).
+where $a, b \in \mathbb{'\{'}Z{'\}'}^+$, $\gcd(a, b) = 1$ (the fraction is in lowest terms).
 
 Squaring: $2 = \dfrac{a^2}{b^2}$, so $a^2 = 2b^2$. This means $a^2$ is even, so $a$ is even (since
 the square of an odd number is odd). Write $a = 2k$.
@@ -98,7 +98,7 @@ $p_1, \ldots, p_n$ contains all primes.
 
 **Theorem.** $\log_2{3}$ is irrational.
 
-_Proof._ Suppose $\log_2{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{Z}^+$. Then $2^{a/b} = 3$, so
+_Proof._ Suppose $\log_2{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then $2^{a/b} = 3$, so
 $2^a = 3^b$. The left side is even; the right side is odd. Contradiction.
 
 ---
@@ -120,7 +120,7 @@ The statements $P \implies Q$ and $\neg Q \implies \neg P$ have identical truth 
 
 _Proof._ We prove the contrapositive: if $n$ is odd, then $n^2$ is odd.
 
-Let $n = 2k + 1$ for $k \in \mathbb{Z}$. Then $n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$, which is
+Let $n = 2k + 1$ for $k \in \mathbb{'\{'}Z{'\}'}$. Then $n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$, which is
 odd. Therefore, if $n^2$ is even, $n$ must be even.
 
 ---
@@ -138,7 +138,7 @@ To prove that a statement $P(n)$ holds for all integers $n \ge n_0$:
 
 ### Examples
 
-**Theorem.** For all $n \in \mathbb{Z}^+$, $\displaystyle\sum_{i=1}^{n} i = \dfrac{n(n+1)}{2}$.
+**Theorem.** For all $n \in \mathbb{'\{'}Z{'\}'}^+$, $\displaystyle\sum_{i=1}^{n} i = \dfrac{n(n+1)}{2}$.
 
 _Proof._ By induction on $n$.
 
@@ -153,15 +153,15 @@ $$\sum_{i=1}^{k+1} i = \sum_{i=1}^{k} i + (k+1) = \frac{k(k+1)}{2} + (k+1) = \fr
 
 This is precisely the formula with $n = k + 1$.
 
-**Conclusion:** By induction, the formula holds for all $n \in \mathbb{Z}^+$.
+**Conclusion:** By induction, the formula holds for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
-**Theorem.** For all $n \in \mathbb{Z}^+$, $n^3 - n$ is divisible by $6$.
+**Theorem.** For all $n \in \mathbb{'\{'}Z{'\}'}^+$, $n^3 - n$ is divisible by $6$.
 
 _Proof._ By induction on $n$.
 
 **Base case** ($n = 1$): $1 - 1 = 0$, divisible by $6$.
 
-**Inductive hypothesis:** $k^3 - k = 6m$ for some $m \in \mathbb{Z}$.
+**Inductive hypothesis:** $k^3 - k = 6m$ for some $m \in \mathbb{'\{'}Z{'\}'}$.
 
 **Inductive step:**
 
@@ -171,7 +171,7 @@ By the hypothesis, $k^3 - k = 6m$. Also, $k(k + 1)$ is always even (product of c
 integers), so $3k(k + 1) = 6 \cdot \dfrac{k(k+1)}{2}$ is divisible by $6$. Hence the sum is
 divisible by $6$.
 
-**Theorem.** $2^n \gt n$ for all $n \in \mathbb{Z}^+$.
+**Theorem.** $2^n \gt n$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 _Proof._ By induction.
 
@@ -200,7 +200,7 @@ _Counterexample._ $2$ is prime and even.
 
 **Claim.** "If $f$ is continuous, then $f$ is differentiable."
 
-_Counterexample._ $f(x) = |x|$ is continuous on $\mathbb{R}$ but not differentiable at $x = 0$.
+_Counterexample._ $f(x) = |x|$ is continuous on $\mathbb{'\{'}R{'\}'}$ but not differentiable at $x = 0$.
 
 **Claim.** "For all real numbers $x$, $x^2 \gt x$."
 
@@ -286,14 +286,14 @@ Prove by contrapositive: if $3n + 2$ is odd, then $n$ is odd.
 <summary>Problem 4</summary>
 
 Prove by induction that $\displaystyle\sum_{i=1}^{n} i^2 = \dfrac{n(n+1)(2n+1)}{6}$ for all
-$n \in \mathbb{Z}^+$.
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 </details>
 
 <details>
 <summary>Problem 5</summary>
 
-Prove by induction that $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{Z}^+$.
+Prove by induction that $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 </details>
 
@@ -336,9 +336,9 @@ Prove that if $a$ and $b$ are rational and $a + b\sqrt{2} = 0$, then $a = b = 0$
 <summary>Answers to Selected Problems</summary>
 
 **Problem 1:** Let the three consecutive integers be $n, n+1, n+2$. Their sum is
-$n + (n+1) + (n+2) = 3n + 3 = 3(n+1)$, which is divisible by $3$ since $n+1 \in \mathbb{Z}$.
+$n + (n+1) + (n+2) = 3n + 3 = 3(n+1)$, which is divisible by $3$ since $n+1 \in \mathbb{'\{'}Z{'\}'}$.
 
-**Problem 2:** Suppose $\sqrt{3} = a/b$ in lowest terms, $a, b \in \mathbb{Z}^+$. Then $a^2 = 3b^2$,
+**Problem 2:** Suppose $\sqrt{3} = a/b$ in lowest terms, $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then $a^2 = 3b^2$,
 so $a^2$ is divisible by $3$, hence $a$ is divisible by $3$. Write $a = 3k$:
 $9k^2 = 3b^2 \implies b^2 = 3k^2$, so $b$ is divisible by $3$. Both $a$ and $b$ divisible by $3$
 contradicts lowest terms.
@@ -383,12 +383,12 @@ Prove that the square of any odd integer leaves remainder $1$ when divided by $8
 <details>
 <summary>Solution</summary>
 
-Let $n$ be an odd integer. Then $n = 2k + 1$ for some $k \in \mathbb{Z}$.
+Let $n$ be an odd integer. Then $n = 2k + 1$ for some $k \in \mathbb{'\{'}Z{'\}'}$.
 
 $$n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 4k(k + 1) + 1$$
 
 Since $k$ and $k + 1$ are consecutive integers, one of them is even. Therefore $k(k + 1)$ is even,
-so $k(k + 1) = 2m$ for some $m \in \mathbb{Z}$.
+so $k(k + 1) = 2m$ for some $m \in \mathbb{'\{'}Z{'\}'}$.
 
 $$n^2 = 4(2m) + 1 = 8m + 1$$
 
@@ -403,7 +403,7 @@ Prove that $\sqrt{6}$ is irrational.
 <details>
 <summary>Solution</summary>
 
-Suppose, for contradiction, that $\sqrt{6} = \dfrac{a}{b}$ where $a, b \in \mathbb{Z}^+$ and
+Suppose, for contradiction, that $\sqrt{6} = \dfrac{a}{b}$ where $a, b \in \mathbb{'\{'}Z{'\}'}^+$ and
 $\gcd(a, b) = 1$.
 
 Squaring: $a^2 = 6b^2$, so $a^2$ is even (divisible by $2$), and hence $a$ is even. Write $a = 2m$.
@@ -451,11 +451,11 @@ Prove that if $n^2$ is not divisible by $4$, then $n$ is odd.
 
 We prove the contrapositive: if $n$ is even, then $n^2$ is divisible by $4$.
 
-If $n$ is even, then $n = 2k$ for some $k \in \mathbb{Z}$.
+If $n$ is even, then $n = 2k$ for some $k \in \mathbb{'\{'}Z{'\}'}$.
 
 $$n^2 = (2k)^2 = 4k^2$$
 
-Since $k^2 \in \mathbb{Z}$, $n^2 = 4k^2$ is divisible by $4$.
+Since $k^2 \in \mathbb{'\{'}Z{'\}'}$, $n^2 = 4k^2$ is divisible by $4$.
 
 Therefore, if $n^2$ is not divisible by $4$, then $n$ must be odd.
 
@@ -525,7 +525,7 @@ Prove by contradiction that $\sqrt{2} + \sqrt{3}$ is irrational.
 <summary>Problem 12</summary>
 
 Prove by induction that $\displaystyle\sum_{i=1}^{n} \frac{1}{i(i+1)} = \frac{n}{n+1}$ for all
-$n \in \mathbb{Z}^+$.
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 </details>
 
@@ -548,7 +548,7 @@ Prove that there are infinitely many positive integers $n$ such that $n^2 + n + 
 <details>
 <summary>Problem 15</summary>
 
-Prove by induction that $\displaystyle\sum_{i=1}^{n} 2^{i-1} = 2^n - 1$ for all $n \in \mathbb{Z}^+$.
+Prove by induction that $\displaystyle\sum_{i=1}^{n} 2^{i-1} = 2^n - 1$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 </details>
 
@@ -576,7 +576,7 @@ Prove that $\log_2{5}$ is irrational.
 <details>
 <summary>Answers to Additional Problems</summary>
 
-**Problem 11:** Suppose $\sqrt{2} + \sqrt{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{Z}^+$ in lowest
+**Problem 11:** Suppose $\sqrt{2} + \sqrt{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$ in lowest
 terms. Squaring: $5 + 2\sqrt{6} = a^2/b^2$, so $\sqrt{6} = (a^2 - 5b^2)/(2b^2)$, which is rational.
 But $\sqrt{6}$ is irrational (proved earlier). Contradiction.
 
@@ -584,7 +584,7 @@ But $\sqrt{6}$ is irrational (proved earlier). Contradiction.
 Inductive hypothesis: $\displaystyle\sum_{i=1}^{k} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1}$.
 Inductive step: $\displaystyle\sum_{i=1}^{k+1} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1} + \dfrac{1}{(k+1)(k+2)} = \dfrac{k(k+2) + 1}{(k+1)(k+2)} = \dfrac{k^2 + 2k + 1}{(k+1)(k+2)} = \dfrac{(k+1)^2}{(k+1)(k+2)} = \dfrac{k+1}{k+2}$. This is the formula with $n = k + 1$.
 
-**Problem 13:** $a \mid b \implies b = ma$ and $b \mid a \implies a = nb$ for some $m, n \in \mathbb{Z}$.
+**Problem 13:** $a \mid b \implies b = ma$ and $b \mid a \implies a = nb$ for some $m, n \in \mathbb{'\{'}Z{'\}'}$.
 Substituting: $a = n(ma) = (nm)a$, so $nm = 1$. Since $m, n$ are integers, either $m = n = 1$ (giving
 $a = b$) or $m = n = -1$ (giving $a = -b$).
 
@@ -597,11 +597,11 @@ Take $n = 41k - 1$ for any $k$: $(41k - 1)^2 + (41k - 1) + 41 = 1681k^2 - 82k + 
 Inductive hypothesis: $\displaystyle\sum_{i=1}^{k} 2^{i-1} = 2^k - 1$.
 Inductive step: $\displaystyle\sum_{i=1}^{k+1} 2^{i-1} = (2^k - 1) + 2^k = 2^{k+1} - 1$. This is the formula with $n = k + 1$.
 
-**Problem 16:** Contrapositive: if $a \mid b$, then $a \mid bc$. If $a \mid b$, then $b = ma$ for some $m \in \mathbb{Z}$, so $bc = mac$, hence $a \mid bc$. This proves the contrapositive, hence the original statement.
+**Problem 16:** Contrapositive: if $a \mid b$, then $a \mid bc$. If $a \mid b$, then $b = ma$ for some $m \in \mathbb{'\{'}Z{'\}'}$, so $bc = mac$, hence $a \mid bc$. This proves the contrapositive, hence the original statement.
 
 **Problem 17:** Take $x = 0.5$ and $y = 0.5$. $\lfloor 0.5 + 0.5 \rfloor = \lfloor 1 \rfloor = 1$, but $\lfloor 0.5 \rfloor + \lfloor 0.5 \rfloor = 0 + 0 = 0 \ne 1$.
 
-**Problem 18:** Suppose $\log_2{5} = a/b$ with $a, b \in \mathbb{Z}^+$. Then $2^{a/b} = 5$, so $2^a = 5^b$.
+**Problem 18:** Suppose $\log_2{5} = a/b$ with $a, b \in \mathbb{'\{'}Z{'\}'}^+$. Then $2^{a/b} = 5$, so $2^a = 5^b$.
 The left side is a power of $2$ (even for $a \ge 1$), the right side is a power of $5$ (odd). For
 $a = 0$: $1 = 5^b$ is impossible. For $a \ge 1$: even = odd. Contradiction.
 

@@ -29,7 +29,7 @@ A **red-black tree** is a self-balancing BST satisfying five invariants:
 
 Consider the subtree rooted at any node $x$. If this subtree has height $h_x$, then it contains at least $2^{bh(x)} - 1$ internal nodes (proof by induction on $h_x$: if $x$ is a leaf, it has $0 = 2^0 - 1$ internal nodes; otherwise, each child has black-height at least $bh(x) - 1$ if it is red, or $bh(x)$ if it is black, so each child has at least $2^{bh(x)-1} - 1$ internal nodes, giving at least $2(2^{bh(x)-1} - 1) + 1 = 2^{bh(x)} - 1$ for $x$).
 
-Therefore $n \geq 2^{bh(\mathrm{root})} - 1$, giving $bh(\mathrm{root}) \leq \log_2(n+1)$. Since $h \leq 2 \cdot bh(\mathrm{root})$, we have $h \leq 2\log_2(n+1)$. $\blacksquare$
+Therefore $n \geq 2^{bh(\mathrm{'\{'}root{'\}'})} - 1$, giving $bh(\mathrm{'\{'}root{'\}'}) \leq \log_2(n+1)$. Since $h \leq 2 \cdot bh(\mathrm{'\{'}root{'\}'})$, we have $h \leq 2\log_2(n+1)$. $\blacksquare$
 
 **Corollary.** Search, insert, and delete in a red-black tree take $O(\log n)$ time.
 
@@ -459,7 +459,7 @@ A **splay tree** is a self-adjusting BST with no explicit balance information. A
 
 This means splay trees are asymptotically as fast as a static optimal binary search tree for any access sequence.
 
-**Theorem 1.9 (Static Finger).** The total access time is $O\left(n \log n + n \log \min_{j} |\mathrm{key}_i - \mathrm{key}_j|\right)$ where $j$ is a fixed "finger" position.
+**Theorem 1.9 (Static Finger).** The total access time is $O\left(n \log n + n \log \min_{j} |\mathrm{'\{'}key{'\}'}_i - \mathrm{'\{'}key{'\}'}_j|\right)$ where $j$ is a fixed "finger" position.
 
 **Theorem 1.10 (Working Set).** The access time for element $i$ is $O(\log(t_i))$ where $t_i$ is the number of distinct elements accessed since the last access to element $i$.
 
@@ -739,19 +739,19 @@ Create two binomial heaps and merge them.
 
 Heap $H_1$: insert 3, 7, 1.
 - Insert 3: $H_1 = \{B_0: 3\}$
-- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text{root } 3, \text{child } 7\}$
+- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text{'\{'}root {'\}'} 3, \text{'\{'}child {'\}'} 7\}$
 - Insert 1: $H_1 = \{B_1: (3,7)\} \cup \{B_0: 1\}$. No linking (different degrees). $H_1 = \{B_0: 1, B_1: (3,7)\}$
 
 Heap $H_2$: insert 5, 2.
 - Insert 5: $H_2 = \{B_0: 5\}$
-- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text{root } 2, \text{child } 5\}$
+- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text{'\{'}root {'\}'} 2, \text{'\{'}child {'\}'} 5\}$
 
 Merge $H_1$ and $H_2$: $\{B_0: 1, B_1: (3,7)\} \cup \{B_1: (2,5)\}$.
 
 Both have $B_1$ trees. Link them (root 2 < root 3, so 3 becomes child of 2):
 $B_2$: root 2, children: 3 (with child 7), 5.
 
-Final merged heap: $\{B_0: 1, B_2: \text{root } 2, \text{children } [3, 5], \text{3's child } 7\}$
+Final merged heap: $\{B_0: 1, B_2: \text{'\{'}root {'\}'} 2, \text{'\{'}children {'\}'} [3, 5], \text{'\{'}3's child {'\}'} 7\}$
 
 Minimum element: 1 (root of $B_0$).
 
@@ -781,7 +781,7 @@ A **Fibonacci heap** is a collection of min-heap-ordered trees supporting:
 
 **Theorem 2.3.** $D(n) = O(\log_\phi n)$ where $\phi = (1 + \sqrt{5})/2$ is the golden ratio.
 
-*Proof (outline).* Define the potential $\Phi = t(H) + 2m(H)$ where $t(H)$ is the number of trees and $m(H)$ is the number of marked nodes. Show that each operation's amortised cost is bounded. For decrease-key, the actual cost is $O(c)$ where $c$ is the number of cascading cuts. The change in potential is at most $c + 2 - 2m'(H) \cdot (\text{terms cancel})$, giving $O(1)$ amortised. $\blacksquare$
+*Proof (outline).* Define the potential $\Phi = t(H) + 2m(H)$ where $t(H)$ is the number of trees and $m(H)$ is the number of marked nodes. Show that each operation's amortised cost is bounded. For decrease-key, the actual cost is $O(c)$ where $c$ is the number of cascading cuts. The change in potential is at most $c + 2 - 2m'(H) \cdot (\text{'\{'}terms cancel{'\}'})$, giving $O(1)$ amortised. $\blacksquare$
 
 :::caution Common Pitfall
 Fibonacci heaps have excellent amortised bounds but poor constant factors in practice due to the overhead of maintaining the root list, marking nodes, and consolidation. For this reason, binary heaps (or pairing heaps) are often preferred in practice despite worse theoretical amortised bounds for decrease-key.
@@ -811,14 +811,14 @@ A **pairing heap** is a simplified alternative to Fibonacci heaps. It is a singl
 
 The **incidence matrix** $M$ of an undirected graph $G = (V, E)$ with $n$ vertices and $m$ edges is an $n \times m$ matrix where:
 
-$$M_{v,e} = \begin{cases} 1 & \text{if vertex } v \text{ is incident to edge } e \\ 0 & \text{otherwise} \end{cases}$$
+$$M_{v,e} = \begin{cases} 1 & \text{'\{'}if vertex {'\}'} v \text{'\{'} is incident to edge {'\}'} e \\ 0 & \text{'\{'}otherwise{'\}'} \end{cases}$$
 
 For directed graphs, $M_{v,e} = 1$ if $v$ is the tail of $e$, $M_{v,e} = -1$ if $v$ is the head of $e$, and $0$ otherwise.
 
 **Properties:**
 
 - Space: $O(nm)$.
-- The rank of $M$ over $\mathbb{R}$ is $n - c$ where $c$ is the number of connected components.
+- The rank of $M$ over $\mathbb{'\{'}R{'\}'}$ is $n - c$ where $c$ is the number of connected components.
 - The number of spanning trees of $G$ equals any cofactor of $MM^T$ (Kirchhoff's matrix tree theorem).
 
 ### 3.2 Implicit Graphs
@@ -826,7 +826,7 @@ For directed graphs, $M_{v,e} = 1$ if $v$ is the tail of $e$, $M_{v,e} = -1$ if 
 Many graphs are not stored explicitly but defined by a rule or function. Examples:
 
 - **State space graphs:** Each vertex is a configuration; edges are valid transitions. Example: the 15-puzzle has $16!/2 \approx 10^{13}$ states.
-- **Geometric graphs:** Vertices are points in $\mathbb{R}^d$; edges connect nearby points. Example: Delaunay triangulation.
+- **Geometric graphs:** Vertices are points in $\mathbb{'\{'}R{'\}'}^d$; edges connect nearby points. Example: Delaunay triangulation.
 - **Social networks:** Vertices are users; edges are friendships.
 
 **Implicit graph traversal** requires a successor function that generates neighbours on-the-fly, rather than storing them.
@@ -863,7 +863,7 @@ Total space: $(|V|+1) + 2|E| = 5 + 12 = 17$ integers.
 
 The **inverse Ackermann function** $\alpha(n)$ is defined in terms of a rapidly growing function $A_k(j)$:
 
-$$A_k(j) = \begin{cases} 2j & \text{if } k = 0 \\ 0 & \text{if } j = 0 \text{ and } k \geq 1 \\ A_{k-1}(A_k(j-1)) & \text{if } j \geq 1 \text{ and } k \geq 1 \end{cases}$$
+$$A_k(j) = \begin{cases} 2j & \text{'\{'}if {'\}'} k = 0 \\ 0 & \text{'\{'}if {'\}'} j = 0 \text{'\{'} and {'\}'} k \geq 1 \\ A_{k-1}(A_k(j-1)) & \text{'\{'}if {'\}'} j \geq 1 \text{'\{'} and {'\}'} k \geq 1 \end{cases}$$
 
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 
@@ -879,7 +879,7 @@ For all practical purposes, $\alpha(n) \leq 4$.
 
 Define the "level" of a node based on its rank. The key idea is to partition the nodes into groups and bound the total charges.
 
-Let $A_k(j)$ be as defined above. Node $x$ has **level** $\ell$ if $\text{rank}(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_{\ell+1}(\lfloor \log_2 n \rfloor))$.
+Let $A_k(j)$ be as defined above. Node $x$ has **level** $\ell$ if $\text{'\{'}rank{'\}'}(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_{\ell+1}(\lfloor \log_2 n \rfloor))$.
 
 For a Find operation along a path $x_1, x_2, \ldots, x_k$, path compression makes all nodes point to the root. We charge the cost of the Find as follows:
 
@@ -906,11 +906,11 @@ An **interval tree** stores a set of intervals $[l_i, r_i]$ and supports:
 
 **Structure.** An augmented BST where:
 - In-order traversal of keys gives the intervals sorted by their left endpoint (or by midpoint).
-- Each node stores a key $x_{\mathrm{mid}}$ (the median endpoint) and a max-endpoint for the subtree.
+- Each node stores a key $x_{\mathrm{'\{'}mid{'\}'}}$ (the median endpoint) and a max-endpoint for the subtree.
 
-**Query algorithm:** Starting at the root, compare $q$ with $x_{\mathrm{mid}}$:
-1. If $q < x_{\mathrm{mid}}$: report all intervals in the left subtree that overlap $q$ (check max-endpoint), then recurse into the left subtree. Also check if any interval stored at the current node overlaps $q$.
-2. If $q \geq x_{\mathrm{mid}}$: similar for the right subtree.
+**Query algorithm:** Starting at the root, compare $q$ with $x_{\mathrm{'\{'}mid{'\}'}}$:
+1. If $q < x_{\mathrm{'\{'}mid{'\}'}}$: report all intervals in the left subtree that overlap $q$ (check max-endpoint), then recurse into the left subtree. Also check if any interval stored at the current node overlaps $q$.
+2. If $q \geq x_{\mathrm{'\{'}mid{'\}'}}$: similar for the right subtree.
 
 **Theorem 5.1.** Query in an interval tree takes $O(\log n + k)$ time where $k$ is the number of reported intervals.
 
@@ -919,7 +919,7 @@ An **interval tree** stores a set of intervals $[l_i, r_i]$ and supports:
 A **segment tree** stores an array $A[1..n]$ and supports:
 
 - Point update: set $A[i] = v$. $O(\log n)$.
-- Range query: compute $\mathrm{combine}(A[l], A[l+1], \ldots, A[r])$ for any associative operation (sum, min, max, gcd). $O(\log n)$.
+- Range query: compute $\mathrm{'\{'}combine{'\}'}(A[l], A[l+1], \ldots, A[r])$ for any associative operation (sum, min, max, gcd). $O(\log n)$.
 
 **Structure.** A binary tree where:
 - The root represents the range $[1, n]$.
@@ -974,13 +974,13 @@ All updates take $O(\log n) = O(3)$ steps.
 
 A **Fenwick tree** (BIT) is a space-efficient alternative to the segment tree for prefix sum queries and point updates.
 
-**Structure.** An array `BIT[1..n]` where `BIT[i]` stores the sum of a specific range ending at index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm{lsb}(i) = 2^k$, then `BIT[i]` stores the sum of $A[i - 2^k + 1..i]$.
+**Structure.** An array `BIT[1..n]` where `BIT[i]` stores the sum of a specific range ending at index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm{'\{'}lsb{'\}'}(i) = 2^k$, then `BIT[i]` stores the sum of $A[i - 2^k + 1..i]$.
 
 **Operations:**
 
 - **Prefix sum** $\sum_{j=1}^{i} A[j]$: Traverse `BIT` by removing lowest set bits. $O(\log n)$.
 - **Point update** $A[i] += \delta$: Traverse `BIT` by adding lowest set bits. $O(\log n)$.
-- **Range sum** $A[l..r]$: $\mathrm{prefix}(r) - \mathrm{prefix}(l-1)$. $O(\log n)$.
+- **Range sum** $A[l..r]$: $\mathrm{'\{'}prefix{'\}'}(r) - \mathrm{'\{'}prefix{'\}'}(l-1)$. $O(\log n)$.
 
 **Advantages over segment trees:** Simpler to implement, lower constant factor, $O(n)$ space (exactly $n+1$).
 
@@ -995,7 +995,7 @@ Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$, $n = 8$.
 
 Binary representations: 1=001, 2=010, 3=011, 4=100, 5=101, 6=110, 7=111, 8=1000.
 
-`BIT[i]` stores sum of $A[i - 2^k + 1..i]$ where $k = \mathrm{lsb}(i)$.
+`BIT[i]` stores sum of $A[i - 2^k + 1..i]$ where $k = \mathrm{'\{'}lsb{'\}'}(i)$.
 
 - BIT[1] = $A[1]$ = 3 (lsb=1, range [1,1])
 - BIT[2] = $A[1] + A[2]$ = 4 (lsb=2, range [1,2])
@@ -1022,7 +1022,7 @@ Update $A[3] += 5$: Update BIT[3] += 5 (BIT[3] = 9). Then BIT[4] += 5 (BIT[4] = 
 
 ### 6.1 Suffix Arrays
 
-A **suffix array** $\mathrm{SA}$ of a string $S$ of length $n$ is a permutation of $\{0, 1, \ldots, n-1\}$ such that $S[\mathrm{SA}[0]..] < S[\mathrm{SA}[1]..] < \cdots < S[\mathrm{SA}[n-1]..]$ (lexicographic order of suffixes).
+A **suffix array** $\mathrm{'\{'}SA{'\}'}$ of a string $S$ of length $n$ is a permutation of $\{0, 1, \ldots, n-1\}$ such that $S[\mathrm{'\{'}SA{'\}'}[0]..] < S[\mathrm{'\{'}SA{'\}'}[1]..] < \cdots < S[\mathrm{'\{'}SA{'\}'}[n-1]..]$ (lexicographic order of suffixes).
 
 **Construction:** The most efficient algorithm (SA-IS) constructs the suffix array in $O(n)$ time. A simpler approach uses radix sort on prefixes of length $1, 2, 4, 8, \ldots$ in $O(n \log^2 n)$ time.
 
@@ -1047,16 +1047,16 @@ A **suffix tree** for a string $S$ of length $n$ is a compressed trie of all $n$
 
 ### 6.3 LCP Arrays
 
-The **LCP (Longest Common Prefix) array** stores $\mathrm{LCP}[i] =$ the length of the longest common prefix of suffixes $\mathrm{SA}[i]$ and $\mathrm{SA}[i-1]$.
+The **LCP (Longest Common Prefix) array** stores $\mathrm{'\{'}LCP{'\}'}[i] =$ the length of the longest common prefix of suffixes $\mathrm{'\{'}SA{'\}'}[i]$ and $\mathrm{'\{'}SA{'\}'}[i-1]$.
 
 **Theorem 6.4 (Kasai).** The LCP array can be computed from the suffix array in $O(n)$ time.
 
-**Kasai's algorithm.** Uses the inverse suffix array $\mathrm{SA}^{-1}[\mathrm{SA}[i]] = i$ and processes suffixes in text order. When computing $\mathrm{LCP}[\mathrm{SA}^{-1}[j]]$, the result is at least $\mathrm{LCP}[\mathrm{SA}^{-1}[j-1]] - 1$.
+**Kasai's algorithm.** Uses the inverse suffix array $\mathrm{'\{'}SA{'\}'}^{-1}[\mathrm{'\{'}SA{'\}'}[i]] = i$ and processes suffixes in text order. When computing $\mathrm{'\{'}LCP{'\}'}[\mathrm{'\{'}SA{'\}'}^{-1}[j]]$, the result is at least $\mathrm{'\{'}LCP{'\}'}[\mathrm{'\{'}SA{'\}'}^{-1}[j-1]] - 1$.
 
 <details>
 <summary>Worked Example: Suffix Array and LCP Array</summary>
 
-String $S = \text{banana\$}$, $n = 7$.
+String $S = \text{'\{'}banana\${'\}'}$, $n = 7$.
 
 All suffixes:
 0: banana$
@@ -1076,16 +1076,16 @@ Sorted suffixes:
 4: na$
 2: nana$
 
-Suffix array: $\mathrm{SA} = [6, 5, 3, 1, 0, 4, 2]$
+Suffix array: $\mathrm{'\{'}SA{'\}'} = [6, 5, 3, 1, 0, 4, 2]$
 
 LCP array (LCP with previous suffix):
-$\mathrm{LCP}[0] = 0$ (undefined for first)
-$\mathrm{LCP}[1] = 0$ (LCP("$", "a$") = 0)
-$\mathrm{LCP}[2] = 1$ (LCP("a$", "ana$") = 1)
-$\mathrm{LCP}[3] = 3$ (LCP("ana$", "anana$") = 3)
-$\mathrm{LCP}[4] = 0$ (LCP("anana$", "banana$") = 0)
-$\mathrm{LCP}[5] = 0$ (LCP("banana$", "na$") = 0)
-$\mathrm{LCP}[6] = 2$ (LCP("na$", "nana$") = 2)
+$\mathrm{'\{'}LCP{'\}'}[0] = 0$ (undefined for first)
+$\mathrm{'\{'}LCP{'\}'}[1] = 0$ (LCP("$", "a$") = 0)
+$\mathrm{'\{'}LCP{'\}'}[2] = 1$ (LCP("a$", "ana$") = 1)
+$\mathrm{'\{'}LCP{'\}'}[3] = 3$ (LCP("ana$", "anana$") = 3)
+$\mathrm{'\{'}LCP{'\}'}[4] = 0$ (LCP("anana$", "banana$") = 0)
+$\mathrm{'\{'}LCP{'\}'}[5] = 0$ (LCP("banana$", "na$") = 0)
+$\mathrm{'\{'}LCP{'\}'}[6] = 2$ (LCP("na$", "nana$") = 2)
 
 LCP array: $[0, 0, 1, 3, 0, 0, 2]$
 
@@ -1116,10 +1116,10 @@ A good potential function satisfies:
 
 | Data structure | Potential function $\Phi$ |
 |---------------|--------------------------|
-| Dynamic array | $\Phi = 2 \cdot \mathrm{num} - \mathrm{size}$ (credit per element) |
+| Dynamic array | $\Phi = 2 \cdot \mathrm{'\{'}num{'\}'} - \mathrm{'\{'}size{'\}'}$ (credit per element) |
 | Binary counter | $\Phi =$ number of 1-bits |
 | Stack | $\Phi =$ number of elements |
-| Splay tree | $\Phi = \sum_x \log(\mathrm{size}(x))$ |
+| Splay tree | $\Phi = \sum_x \log(\mathrm{'\{'}size{'\}'}(x))$ |
 | Union-Find | $\Phi$ based on node levels |
 
 ### 7.3 Limitations of Amortised Analysis
@@ -1256,7 +1256,7 @@ A **scapegoat tree** is a BST where no rebalancing is done during insertion (onl
 
 **Property.** Every root-to-leaf path has at most $O(\log n)$ light edges.
 
-*Proof.* When traversing a light edge from $u$ to its parent $p$, the subtree size at least doubles: $|\text{subtree}(p)| \geq 2 \cdot |\text{subtree}(u)|$. Since the tree has $n$ nodes, there can be at most $\log_2 n$ light edges on any root-to-leaf path. $\blacksquare$
+*Proof.* When traversing a light edge from $u$ to its parent $p$, the subtree size at least doubles: $|\text{'\{'}subtree{'\}'}(p)| \geq 2 \cdot |\text{'\{'}subtree{'\}'}(u)|$. Since the tree has $n$ nodes, there can be at most $\log_2 n$ light edges on any root-to-leaf path. $\blacksquare$
 
 **Algorithm:**
 
@@ -1421,7 +1421,7 @@ A **functional queue** supports enqueue and dequeue in $O(1)$ amortised time usi
 
 **Problem 10.** Compute the suffix array and LCP array for the string "mississippi$". Use the result to find the longest repeated substring.
 
-**Problem 11.** Prove that the LCP array satisfies $\sum_{i=1}^{n} \mathrm{LCP}[i] = O(n^2)$ in the worst case, and construct a string that achieves this bound (up to constants).
+**Problem 11.** Prove that the LCP array satisfies $\sum_{i=1}^{n} \mathrm{'\{'}LCP{'\}'}[i] = O(n^2)$ in the worst case, and construct a string that achieves this bound (up to constants).
 
 ### 8.4 Analysis (Problems 12--15)
 

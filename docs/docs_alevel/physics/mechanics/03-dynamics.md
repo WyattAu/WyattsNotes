@@ -40,23 +40,23 @@ Aristotle believed that force was necessary to _maintain_ motion.
 > **The rate of change of momentum of a body is directly proportional to the net external force
 > acting on it, and takes place in the direction of that force.**
 
-$$\mathbf{F}_{\mathrm{net}} = \frac{d\mathbf{p}}{dt} = \frac{d(m\mathbf{v})}{dt}$$
+$$\mathbf{'\{'}F{'\}'}_{\mathrm{'\{'}net{'\}'}} = \frac{d\mathbf{'\{'}p{'\}'}}{dt} = \frac{d(m\mathbf{'\{'}v{'\}'})}{dt}$$
 
 For constant mass:
 
-$$\boxed{\mathbf{F}_{\mathrm{net}} = m\mathbf{a}}$$
+$$\boxed{\mathbf{'\{'}F{'\}'}_{\mathrm{'\{'}net{'\}'}} = m\mathbf{'\{'}a{'\}'}}$$
 
 This is the most important equation in mechanics. It states that force, mass, and acceleration are
 related by a simple proportionality.
 
 **Units.** The newton is defined as the force required to accelerate a mass of 1 kg at 1 m s$^{-2}$:
-$1 \mathrm{ N} = 1 \mathrm{ kg m s}^{-2}$.
+$1 \mathrm{'\{'} N{'\}'} = 1 \mathrm{'\{'} kg m s{'\}'}^{-2}$.
 
 ### Newton's Third Law
 
 > **If body A exerts a force on body B, then body B exerts an equal and opposite force on body A.**
 
-$$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
+$$\mathbf{'\{'}F{'\}'}_{AB} = -\mathbf{'\{'}F{'\}'}_{BA}$$
 
 :::warning
 warning
@@ -107,11 +107,11 @@ and vertical).
 
 **Condition for equilibrium** (Newton's first law):
 
-$$\sum F_x = 0 \quad \mathrm{and} \quad \sum F_y = 0$$
+$$\sum F_x = 0 \quad \mathrm{'\{'}and{'\}'} \quad \sum F_y = 0$$
 
 **Condition for acceleration** (Newton's second law):
 
-$$\sum F_x = ma_x \quad \mathrm{and} \quad \sum F_y = ma_y$$
+$$\sum F_x = ma_x \quad \mathrm{'\{'}and{'\}'} \quad \sum F_y = ma_y$$
 
 <details>
 <summary>Example: Inclined Plane</summary>
@@ -277,11 +277,11 @@ speed.
 
 For mass $m_1$ (descending, taking downward as positive):
 
-$$m_1 g - T = m_1 a \quad \mathrm{...(i)}$$
+$$m_1 g - T = m_1 a \quad \mathrm{'\{'}...(i){'\}'}$$
 
 For mass $m_2$ (ascending, taking upward as positive):
 
-$$T - m_2 g = m_2 a \quad \mathrm{...(ii)}$$
+$$T - m_2 g = m_2 a \quad \mathrm{'\{'}...(ii){'\}'}$$
 
 Adding (i) and (ii):
 
@@ -483,12 +483,12 @@ m$^{-2}$.
 
 <details>
 <summary>Problem 6</summary>
-Two forces, $\mathbf{F}_1 = (3\mathbf{i} + 4\mathbf{j})$ N and $\mathbf{F}_2 = (-\mathbf{i} + 2\mathbf{j})$ N, act on a body of mass $2.0$ kg. Find the magnitude and direction of the acceleration.
+Two forces, $\mathbf{'\{'}F{'\}'}_1 = (3\mathbf{'\{'}i{'\}'} + 4\mathbf{'\{'}j{'\}'})$ N and $\mathbf{'\{'}F{'\}'}_2 = (-\mathbf{'\{'}i{'\}'} + 2\mathbf{'\{'}j{'\}'})$ N, act on a body of mass $2.0$ kg. Find the magnitude and direction of the acceleration.
 
 **Answer.**
-$\mathbf{F}_{\mathrm{net}} = (3-1)\mathbf{i} + (4+2)\mathbf{j} = (2\mathbf{i} + 6\mathbf{j})$ N.
-$\mathbf{a} = \frac{1}{2}(2\mathbf{i} + 6\mathbf{j}) = (1\mathbf{i} + 3\mathbf{j})$ m s$^{-2}$.
-$|\mathbf{a}| = \sqrt{1 + 9} = \sqrt{10} = 3.16$ m s$^{-2}$. Direction:
+$\mathbf{'\{'}F{'\}'}_{\mathrm{'\{'}net{'\}'}} = (3-1)\mathbf{'\{'}i{'\}'} + (4+2)\mathbf{'\{'}j{'\}'} = (2\mathbf{'\{'}i{'\}'} + 6\mathbf{'\{'}j{'\}'})$ N.
+$\mathbf{'\{'}a{'\}'} = \frac{1}{2}(2\mathbf{'\{'}i{'\}'} + 6\mathbf{'\{'}j{'\}'}) = (1\mathbf{'\{'}i{'\}'} + 3\mathbf{'\{'}j{'\}'})$ m s$^{-2}$.
+$|\mathbf{'\{'}a{'\}'}| = \sqrt{1 + 9} = \sqrt{10} = 3.16$ m s$^{-2}$. Direction:
 $\theta = \arctan(3/1) = 71.6^\circ$ from the $x$-axis.
 
 <b>If you get this wrong, revise:</b>
@@ -660,21 +660,21 @@ A particle of mass $0.50$ kg moves on the inside of a vertical circular track of
 **Answer.** First find the speed at the top using conservation of energy. Taking the bottom as zero
 potential energy, the height difference is $2r = 1.60$ m:
 
-$\frac{1}{2}mv_{\mathrm{bot}}^2 = \frac{1}{2}mv_{\mathrm{top}}^2 + mg(2r)$
+$\frac{1}{2}mv_{\mathrm{'\{'}bot{'\}'}}^2 = \frac{1}{2}mv_{\mathrm{'\{'}top{'\}'}}^2 + mg(2r)$
 
-$v_{\mathrm{top}}^2 = v_{\mathrm{bot}}^2 - 4gr = 49 - 4 \times 9.81 \times 0.80 = 49 - 31.4 = 17.6$
+$v_{\mathrm{'\{'}top{'\}'}}^2 = v_{\mathrm{'\{'}bot{'\}'}}^2 - 4gr = 49 - 4 \times 9.81 \times 0.80 = 49 - 31.4 = 17.6$
 
-$v_{\mathrm{top}} = 4.20$ m s$^{-1}$
+$v_{\mathrm{'\{'}top{'\}'}} = 4.20$ m s$^{-1}$
 
 (a) At the bottom, the normal reaction $R$ and weight act along the same line, with $R$ pointing
 upward (towards the centre):
 
-$R - mg = \frac{mv_{\mathrm{bot}}^2}{r}$, so
+$R - mg = \frac{mv_{\mathrm{'\{'}bot{'\}'}}^2}{r}$, so
 $R = 0.50 \times 9.81 + \frac{0.50 \times 49}{0.80} = 4.91 + 30.6 = 35.5$ N.
 
 (b) At the top, both $R$ and weight point towards the centre (downward):
 
-$R + mg = \frac{mv_{\mathrm{top}}^2}{r}$, so
+$R + mg = \frac{mv_{\mathrm{'\{'}top{'\}'}}^2}{r}$, so
 $R = \frac{0.50 \times 17.6}{0.80} - 0.50 \times 9.81 = 11.0 - 4.91 = 6.09$ N.
 
 <b>If you get this wrong, revise:</b>

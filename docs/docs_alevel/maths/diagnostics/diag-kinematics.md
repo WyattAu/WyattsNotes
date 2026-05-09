@@ -51,19 +51,19 @@ $s(5) = 75 - \frac{125}{3} - 25 = 50 - \frac{125}{3} = \frac{150 - 125}{3} = \fr
 
 $s(7) = 147 - \frac{343}{3} - 35 = 112 - \frac{343}{3} = \frac{336 - 343}{3} = -\frac{7}{3}$ m.
 
-$$\text{Distance} = \lvert s(1) - s(0) \rvert + \lvert s(5) - s(1) \rvert + \lvert s(7) - s(5) \rvert$$
+$$\text{'\{'}Distance{'\}'} = \lvert s(1) - s(0) \rvert + \lvert s(5) - s(1) \rvert + \lvert s(7) - s(5) \rvert$$
 
 $$= \left\lvert -\frac{7}{3} \right\rvert + \left\lvert \frac{25}{3} - \left(-\frac{7}{3}\right) \right\rvert + \left\lvert -\frac{7}{3} - \frac{25}{3} \right\rvert$$
 
-$$= \frac{7}{3} + \frac{32}{3} + \frac{32}{3} = \frac{71}{3} \approx 23.67 \text{ m}$$
+$$= \frac{7}{3} + \frac{32}{3} + \frac{32}{3} = \frac{71}{3} \approx 23.67 \text{'\{'} m{'\}'}$$
 
 **(c)** The student's displacement answer:
 
-$$\text{Displacement} = s(7) - s(0) = -\frac{7}{3} \approx -2.33 \text{ m}$$
+$$\text{'\{'}Displacement{'\}'} = s(7) - s(0) = -\frac{7}{3} \approx -2.33 \text{'\{'} m{'\}'}$$
 
 The student claims the distance is $2.33$ m (taking the magnitude). Actual distance is $\frac{71}{3} \approx 23.67$ m.
 
-$$\text{Percentage error} = \frac{\lvert \frac{71}{3} - \frac{7}{3} \rvert}{\frac{71}{3}} \times 100\% = \frac{64}{71} \times 100\% \approx 90.1\%$$
+$$\text{'\{'}Percentage error{'\}'} = \frac{\lvert \frac{71}{3} - \frac{7}{3} \rvert}{\frac{71}{3}} \times 100\% = \frac{64}{71} \times 100\% \approx 90.1\%$$
 
 The student underestimates the distance by approximately 90% -- a catastrophic error caused by not accounting for the two direction reversals.
 
@@ -99,7 +99,7 @@ $$4.9t^2 - 12.68t - 80 = 0$$
 
 $$t = \frac{12.68 + \sqrt{12.68^2 + 4(4.9)(80)}}{2(4.9)} = \frac{12.68 + \sqrt{160.78 + 1568}}{9.8} = \frac{12.68 + \sqrt{1728.78}}{9.8}$$
 
-$$= \frac{12.68 + 41.58}{9.8} \approx 5.53 \text{ s}$$
+$$= \frac{12.68 + 41.58}{9.8} \approx 5.53 \text{'\{'} s{'\}'}$$
 
 (The negative root is rejected since $t \gt 0$.)
 
@@ -159,7 +159,7 @@ $$v^2 = 24s - 3s^2 + 4$$
 
 $$0 = 24s - 3s^2 + 4 \implies 3s^2 - 24s - 4 = 0$$
 
-$$s = \frac{24 + \sqrt{576 + 48}}{6} = \frac{24 + \sqrt{624}}{6} = \frac{24 + 4\sqrt{39}}{6} = \frac{12 + 2\sqrt{39}}{3} \approx 8.16 \text{ m}$$
+$$s = \frac{24 + \sqrt{576 + 48}}{6} = \frac{24 + \sqrt{624}}{6} = \frac{24 + 4\sqrt{39}}{6} = \frac{12 + 2\sqrt{39}}{3} \approx 8.16 \text{'\{'} m{'\}'}$$
 
 (The negative root gives $s \lt 0$, which corresponds to the particle having passed through $O$ in the opposite direction -- not relevant for the first turning point.)
 
@@ -209,7 +209,7 @@ A particle is projected from a point $A$ with position vector $\begin{pmatrix} 0
 
 Vertical: $v_y = 4 - 9.8t$, $y = 10 + 4t - 4.9t^2$.
 
-Position vector: $\mathbf{r}(t) = \begin{pmatrix} 8t \\ 10 + 4t - 4.9t^2 \end{pmatrix}$.
+Position vector: $\mathbf{'\{'}r{'\}'}(t) = \begin{pmatrix} 8t \\ 10 + 4t - 4.9t^2 \end{pmatrix}$.
 
 **(b)** Distance squared from origin:
 
@@ -233,9 +233,9 @@ $$48.02t^3 - 58.8t^2 + 46t + 40 = 0$$
 
 Testing $t = -0.5$: $48.02(-0.125) - 58.8(0.25) + 46(-0.5) + 40 = -6.003 - 14.7 - 23 + 40 = -3.703$. Not zero.
 
-This cubic is awkward. An alternative approach uses the fact that the closest point occurs when $\mathbf{r}$ is perpendicular to $\mathbf{v}$:
+This cubic is awkward. An alternative approach uses the fact that the closest point occurs when $\mathbf{'\{'}r{'\}'}$ is perpendicular to $\mathbf{'\{'}v{'\}'}$:
 
-$$\mathbf{r} \cdot \mathbf{v} = 0$$
+$$\mathbf{'\{'}r{'\}'} \cdot \mathbf{'\{'}v{'\}'} = 0$$
 
 $$\begin{pmatrix} 8t \\ 10 + 4t - 4.9t^2 \end{pmatrix} \cdot \begin{pmatrix} 8 \\ 4 - 9.8t \end{pmatrix} = 0$$
 
@@ -257,19 +257,19 @@ $x = 8(-0.462) = -3.696$ m.
 
 $y = 10 + 4(-0.462) - 4.9(0.2134) = 10 - 1.848 - 1.046 = 7.106$ m.
 
-$$D = \sqrt{(-3.696)^2 + 7.106^2} = \sqrt{13.66 + 50.50} = \sqrt{64.16} \approx 8.01 \text{ m}$$
+$$D = \sqrt{(-3.696)^2 + 7.106^2} = \sqrt{13.66 + 50.50} = \sqrt{64.16} \approx 8.01 \text{'\{'} m{'\}'}$$
 
 **(c)** At $t \approx -0.462$:
 
-$\mathbf{v} = \begin{pmatrix} 8 \\ 4 - 9.8(-0.462) \end{pmatrix} = \begin{pmatrix} 8 \\ 4 + 4.528 \end{pmatrix} = \begin{pmatrix} 8 \\ 8.528 \end{pmatrix}$.
+$\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 8 \\ 4 - 9.8(-0.462) \end{pmatrix} = \begin{pmatrix} 8 \\ 4 + 4.528 \end{pmatrix} = \begin{pmatrix} 8 \\ 8.528 \end{pmatrix}$.
 
-$\mathbf{r} \cdot \mathbf{v} = (-3.696)(8) + (7.106)(8.528) = -29.57 + 60.62 = 31.05$.
+$\mathbf{'\{'}r{'\}'} \cdot \mathbf{'\{'}v{'\}'} = (-3.696)(8) + (7.106)(8.528) = -29.57 + 60.62 = 31.05$.
 
 This should be zero at the exact root. The discrepancy is due to rounding $t$ to three decimal places. Using a more precise root $t \approx -0.4626$:
 
 $x = -3.701$, $y = 7.101$, $v_y = 8.533$.
 
-$\mathbf{r} \cdot \mathbf{v} = -3.701(8) + 7.101(8.533) = -29.61 + 60.60 = 30.99$.
+$\mathbf{'\{'}r{'\}'} \cdot \mathbf{'\{'}v{'\}'} = -3.701(8) + 7.101(8.533) = -29.61 + 60.60 = 30.99$.
 
 Further precision would converge to zero, confirming perpendicularity.
 
@@ -293,7 +293,7 @@ A particle of mass $0.5$ kg is projected vertically upwards from ground level wi
 
 **(a)** Work-energy principle: the work done by all forces equals the change in kinetic energy.
 
-At maximum height, $v = 0$, so $\Delta\mathrm{KE} = 0 - \frac{1}{2}(0.5)(20^2) = -100$ J.
+At maximum height, $v = 0$, so $\Delta\mathrm{'\{'}KE{'\}'} = 0 - \frac{1}{2}(0.5)(20^2) = -100$ J.
 
 Forces acting on the particle during the ascent:
 - Weight $= mg = 0.5 \times 9.8 = 4.9$ N (downward).
@@ -303,23 +303,23 @@ Total downward force $= 4.9 + 0.4 = 5.3$ N.
 
 Both forces act opposite to the displacement (which is upward), so both do negative work:
 
-$$W_{\text{net}} = -5.3h$$
+$$W_{\text{'\{'}net{'\}'}} = -5.3h$$
 
 where $h$ is the maximum height.
 
 By the work-energy principle:
 
-$$-5.3h = -100 \implies h = \frac{100}{5.3} \approx 18.87 \text{ m}$$
+$$-5.3h = -100 \implies h = \frac{100}{5.3} \approx 18.87 \text{'\{'} m{'\}'}$$
 
 **(b)** Newton's Second Law (upwards positive):
 
-$$F_{\text{net}} = -mg - F_{\text{air}} = -4.9 - 0.4 = -5.3 \text{ N}$$
+$$F_{\text{'\{'}net{'\}'}} = -mg - F_{\text{'\{'}air{'\}'}} = -4.9 - 0.4 = -5.3 \text{'\{'} N{'\}'}$$
 
-$$ma = -5.3 \implies a = \frac{-5.3}{0.5} = -10.6 \text{ m/s}^2$$
+$$ma = -5.3 \implies a = \frac{-5.3}{0.5} = -10.6 \text{'\{'} m/s{'\}'}^2$$
 
 Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 20$, $a = -10.6$:
 
-$$0 = 400 + 2(-10.6)h \implies 21.2h = 400 \implies h = \frac{400}{21.2} = \frac{100}{5.3} \approx 18.87 \text{ m}$$
+$$0 = 400 + 2(-10.6)h \implies 21.2h = 400 \implies h = \frac{400}{21.2} = \frac{100}{5.3} \approx 18.87 \text{'\{'} m{'\}'}$$
 
 Both methods give the same answer, confirming the result.
 
@@ -377,9 +377,9 @@ $s(3) = \frac{81}{4} - 54 + \frac{99}{2} - 18 = 20.25 - 54 + 49.5 - 18 = -2.25$ 
 
 $s(5) = \frac{625}{4} - 250 + \frac{275}{2} - 30 = 156.25 - 250 + 137.5 - 30 = 13.75$ m.
 
-$$\text{Distance} = \lvert s(1) - s(0) \rvert + \lvert s(2) - s(1) \rvert + \lvert s(3) - s(2) \rvert + \lvert s(5) - s(3) \rvert$$
+$$\text{'\{'}Distance{'\}'} = \lvert s(1) - s(0) \rvert + \lvert s(2) - s(1) \rvert + \lvert s(3) - s(2) \rvert + \lvert s(5) - s(3) \rvert$$
 
-$$= 2.25 + 0.25 + 0.25 + 16 = 18.75 \text{ m}$$
+$$= 2.25 + 0.25 + 0.25 + 16 = 18.75 \text{'\{'} m{'\}'}$$
 
 **(d)** Acceleration $a = \frac{dv}{dt} = 3t^2 - 12t + 11$.
 

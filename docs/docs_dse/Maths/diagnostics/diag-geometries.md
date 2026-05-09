@@ -73,21 +73,21 @@ $\angle B + \angle D = 180° \implies \angle D = 145°$.
 
 **Question:**
 
-Let $\vec{OA} = \mathbf{a}$, $\vec{OB} = \mathbf{b}$. Point $P$ divides $AB$ in the ratio $2:1$ and point $Q$ divides $AB$ in the ratio $3:2$. Express $\vec{PQ}$ in terms of $\mathbf{a}$ and $\mathbf{b}$.
+Let $\vec{OA} = \mathbf{'\{'}a{'\}'}$, $\vec{OB} = \mathbf{'\{'}b{'\}'}$. Point $P$ divides $AB$ in the ratio $2:1$ and point $Q$ divides $AB$ in the ratio $3:2$. Express $\vec{PQ}$ in terms of $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$.
 
 **Solution:**
 
-$\vec{AB} = \mathbf{b} - \mathbf{a}$.
+$\vec{AB} = \mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'}$.
 
 $P$ divides $AB$ in ratio $2:1$ (i.e. $AP:PB = 2:1$):
 
-$$\vec{OP} = \vec{OA} + \frac{2}{3}\vec{AB} = \mathbf{a} + \frac{2}{3}(\mathbf{b} - \mathbf{a}) = \frac{1}{3}\mathbf{a} + \frac{2}{3}\mathbf{b}$$
+$$\vec{OP} = \vec{OA} + \frac{2}{3}\vec{AB} = \mathbf{'\{'}a{'\}'} + \frac{2}{3}(\mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'}) = \frac{1}{3}\mathbf{'\{'}a{'\}'} + \frac{2}{3}\mathbf{'\{'}b{'\}'}$$
 
 $Q$ divides $AB$ in ratio $3:2$ (i.e. $AQ:QB = 3:2$):
 
-$$\vec{OQ} = \vec{OA} + \frac{3}{5}\vec{AB} = \mathbf{a} + \frac{3}{5}(\mathbf{b} - \mathbf{a}) = \frac{2}{5}\mathbf{a} + \frac{3}{5}\mathbf{b}$$
+$$\vec{OQ} = \vec{OA} + \frac{3}{5}\vec{AB} = \mathbf{'\{'}a{'\}'} + \frac{3}{5}(\mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'}) = \frac{2}{5}\mathbf{'\{'}a{'\}'} + \frac{3}{5}\mathbf{'\{'}b{'\}'}$$
 
-$$\vec{PQ} = \vec{OQ} - \vec{OP} = \left(\frac{2}{5} - \frac{1}{3}\right)\mathbf{a} + \left(\frac{3}{5} - \frac{2}{3}\right)\mathbf{b} = \frac{1}{15}\mathbf{a} - \frac{1}{15}\mathbf{b} = \frac{1}{15}(\mathbf{a} - \mathbf{b})$$
+$$\vec{PQ} = \vec{OQ} - \vec{OP} = \left(\frac{2}{5} - \frac{1}{3}\right)\mathbf{'\{'}a{'\}'} + \left(\frac{3}{5} - \frac{2}{3}\right)\mathbf{'\{'}b{'\}'} = \frac{1}{15}\mathbf{'\{'}a{'\}'} - \frac{1}{15}\mathbf{'\{'}b{'\}'} = \frac{1}{15}(\mathbf{'\{'}a{'\}'} - \mathbf{'\{'}b{'\}'})$$
 
 ---
 
@@ -141,19 +141,19 @@ Radius $= \dfrac{AB}{2} = \dfrac{10}{2} = 5$ cm.
 
 **Question:**
 
-The position vectors of $A$ and $B$ are $\mathbf{a} = 2\mathbf{i} + 3\mathbf{j}$ and $\mathbf{b} = 8\mathbf{i} - \mathbf{j}$. Point $C$ has position vector $\mathbf{c} = 4\mathbf{i} + 7\mathbf{j}$. Prove that $A$, $B$, $C$ form an isosceles triangle.
+The position vectors of $A$ and $B$ are $\mathbf{'\{'}a{'\}'} = 2\mathbf{'\{'}i{'\}'} + 3\mathbf{'\{'}j{'\}'}$ and $\mathbf{'\{'}b{'\}'} = 8\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'}$. Point $C$ has position vector $\mathbf{'\{'}c{'\}'} = 4\mathbf{'\{'}i{'\}'} + 7\mathbf{'\{'}j{'\}'}$. Prove that $A$, $B$, $C$ form an isosceles triangle.
 
 **Solution:**
 
-$$\vec{AB} = \mathbf{b} - \mathbf{a} = 6\mathbf{i} - 4\mathbf{j}$$
+$$\vec{AB} = \mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'} = 6\mathbf{'\{'}i{'\}'} - 4\mathbf{'\{'}j{'\}'}$$
 
 $$|\vec{AB}| = \sqrt{36 + 16} = \sqrt{52} = 2\sqrt{13}$$
 
-$$\vec{AC} = \mathbf{c} - \mathbf{a} = 2\mathbf{i} + 4\mathbf{j}$$
+$$\vec{AC} = \mathbf{'\{'}c{'\}'} - \mathbf{'\{'}a{'\}'} = 2\mathbf{'\{'}i{'\}'} + 4\mathbf{'\{'}j{'\}'}$$
 
 $$|\vec{AC}| = \sqrt{4 + 16} = \sqrt{20} = 2\sqrt{5}$$
 
-$$\vec{BC} = \mathbf{c} - \mathbf{b} = -4\mathbf{i} + 8\mathbf{j}$$
+$$\vec{BC} = \mathbf{'\{'}c{'\}'} - \mathbf{'\{'}b{'\}'} = -4\mathbf{'\{'}i{'\}'} + 8\mathbf{'\{'}j{'\}'}$$
 
 $$|\vec{BC}| = \sqrt{16 + 64} = \sqrt{80} = 4\sqrt{5}$$
 
@@ -223,7 +223,7 @@ Since $OM$ bisects $\angle AOB$: $\angle AOM = 60°$.
 
 $$AM = OA \sin 60° = 10 \times \frac{\sqrt{3}}{2} = 5\sqrt{3}$$
 
-$$AB = 2 \times AM = 10\sqrt{3} \text{ cm}$$
+$$AB = 2 \times AM = 10\sqrt{3} \text{'\{'} cm{'\}'}$$
 
 ---
 
@@ -275,7 +275,7 @@ By the intersecting chords theorem: $AP \times PB = CP \times PD$.
 
 $$4 \times 6 = 3 \times PD$$
 
-$$PD = \frac{24}{3} = 8 \text{ cm}$$
+$$PD = \frac{24}{3} = 8 \text{'\{'} cm{'\}'}$$
 
 ---
 
@@ -294,9 +294,9 @@ A sector of a circle with radius $8$ cm and central angle $135°$ is drawn. Find
 
 (b) The triangle formed by the two radii and the chord:
 
-$$\text{Area of triangle} = \frac{1}{2} \times 8 \times 8 \times \sin 135° = 32 \times \frac{\sqrt{2}}{2} = 16\sqrt{2} \text{ cm}^2$$
+$$\text{'\{'}Area of triangle{'\}'} = \frac{1}{2} \times 8 \times 8 \times \sin 135° = 32 \times \frac{\sqrt{2}}{2} = 16\sqrt{2} \text{'\{'} cm{'\}'}^2$$
 
-$$\text{Area of segment} = 24\pi - 16\sqrt{2} \text{ cm}^2$$
+$$\text{'\{'}Area of segment{'\}'} = 24\pi - 16\sqrt{2} \text{'\{'} cm{'\}'}^2$$
 
 ---
 
@@ -457,7 +457,7 @@ In triangle $PQR$, $PQ = 7$ cm, $PR = 5$ cm, and $\angle QPR = 60°$.
 
 $$QR^2 = PQ^2 + PR^2 - 2 \cdot PQ \cdot PR \cdot \cos 60° = 49 + 25 - 2 \times 7 \times 5 \times \frac{1}{2} = 74 - 35 = 39$$
 
-$$QR = \sqrt{39} \text{ cm}$$
+$$QR = \sqrt{39} \text{'\{'} cm{'\}'}$$
 
 (b) Area $= \dfrac{1}{2} \times PQ \times PR \times \sin 60° = \dfrac{1}{2} \times 7 \times 5 \times \dfrac{\sqrt{3}}{2} = \dfrac{35\sqrt{3}}{4}$ cm$^2$.
 
@@ -465,30 +465,30 @@ $$QR = \sqrt{39} \text{ cm}$$
 
 $$\frac{35\sqrt{3}}{4} = \frac{1}{2} \times \sqrt{39} \times h$$
 
-$$h = \frac{35\sqrt{3}}{2\sqrt{39}} = \frac{35\sqrt{3}}{2\sqrt{39}} \cdot \frac{\sqrt{39}}{\sqrt{39}} = \frac{35\sqrt{117}}{78} = \frac{35 \times 3\sqrt{13}}{78} = \frac{35\sqrt{13}}{26} \text{ cm}$$
+$$h = \frac{35\sqrt{3}}{2\sqrt{39}} = \frac{35\sqrt{3}}{2\sqrt{39}} \cdot \frac{\sqrt{39}}{\sqrt{39}} = \frac{35\sqrt{117}}{78} = \frac{35 \times 3\sqrt{13}}{78} = \frac{35\sqrt{13}}{26} \text{'\{'} cm{'\}'}$$
 
 ---
 
 ### DSE-4
 
-The position vectors of points $A$, $B$, $C$ are $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ respectively. Point $D$ is such that $\vec{AD} = \dfrac{1}{3}\vec{AC}$.
+The position vectors of points $A$, $B$, $C$ are $\mathbf{'\{'}a{'\}'}$, $\mathbf{'\{'}b{'\}'}$, $\mathbf{'\{'}c{'\}'}$ respectively. Point $D$ is such that $\vec{AD} = \dfrac{1}{3}\vec{AC}$.
 
-(a) Express $\vec{OD}$ in terms of $\mathbf{a}$ and $\mathbf{c}$. (1 mark)
+(a) Express $\vec{OD}$ in terms of $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}c{'\}'}$. (1 mark)
 (b) If $E$ is the midpoint of $BC$, prove that $A$, $D$, $E$ are collinear. (4 marks)
 
 **Solution:**
 
-(a) $\vec{AD} = \dfrac{1}{3}\vec{AC} = \dfrac{1}{3}(\mathbf{c} - \mathbf{a})$.
+(a) $\vec{AD} = \dfrac{1}{3}\vec{AC} = \dfrac{1}{3}(\mathbf{'\{'}c{'\}'} - \mathbf{'\{'}a{'\}'})$.
 
-$$\vec{OD} = \vec{OA} + \vec{AD} = \mathbf{a} + \frac{1}{3}(\mathbf{c} - \mathbf{a}) = \frac{2}{3}\mathbf{a} + \frac{1}{3}\mathbf{c}$$
+$$\vec{OD} = \vec{OA} + \vec{AD} = \mathbf{'\{'}a{'\}'} + \frac{1}{3}(\mathbf{'\{'}c{'\}'} - \mathbf{'\{'}a{'\}'}) = \frac{2}{3}\mathbf{'\{'}a{'\}'} + \frac{1}{3}\mathbf{'\{'}c{'\}'}$$
 
-(b) $\vec{OE} = \dfrac{1}{2}(\mathbf{b} + \mathbf{c})$.
+(b) $\vec{OE} = \dfrac{1}{2}(\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'})$.
 
-$$\vec{AE} = \vec{OE} - \vec{OA} = \frac{1}{2}(\mathbf{b} + \mathbf{c}) - \mathbf{a}$$
+$$\vec{AE} = \vec{OE} - \vec{OA} = \frac{1}{2}(\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'}) - \mathbf{'\{'}a{'\}'}$$
 
-$$\vec{AD} = \frac{1}{3}(\mathbf{c} - \mathbf{a})$$
+$$\vec{AD} = \frac{1}{3}(\mathbf{'\{'}c{'\}'} - \mathbf{'\{'}a{'\}'})$$
 
-For collinearity, $\vec{AE}$ must be a scalar multiple of $\vec{AD}$. This requires more information about the relationship between $\mathbf{a}$, $\mathbf{b}$, and $\mathbf{c}$. If $D$ divides $AE$ in some ratio, we can show:
+For collinearity, $\vec{AE}$ must be a scalar multiple of $\vec{AD}$. This requires more information about the relationship between $\mathbf{'\{'}a{'\}'}$, $\mathbf{'\{'}b{'\}'}$, and $\mathbf{'\{'}c{'\}'}$. If $D$ divides $AE$ in some ratio, we can show:
 
 $\vec{AD} = \dfrac{1}{3}\vec{AC}$ means $D$ divides $AC$ in ratio $1:2$.
 
@@ -496,7 +496,7 @@ $E$ is the midpoint of $BC$.
 
 By the converse of the midpoint theorem or using mass points: assign mass $2$ at $A$ and mass $1$ at $C$, giving the centre of mass at $D$ on $AC$. Similarly, mass $1$ at $B$ and $1$ at $C$ gives $E$ on $BC$.
 
-Consider $\vec{DE} = \vec{OE} - \vec{OD} = \dfrac{1}{2}(\mathbf{b} + \mathbf{c}) - \dfrac{2}{3}\mathbf{a} - \dfrac{1}{3}\mathbf{c} = \dfrac{1}{2}\mathbf{b} + \dfrac{1}{6}\mathbf{c} - \dfrac{2}{3}\mathbf{a}$.
+Consider $\vec{DE} = \vec{OE} - \vec{OD} = \dfrac{1}{2}(\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'}) - \dfrac{2}{3}\mathbf{'\{'}a{'\}'} - \dfrac{1}{3}\mathbf{'\{'}c{'\}'} = \dfrac{1}{2}\mathbf{'\{'}b{'\}'} + \dfrac{1}{6}\mathbf{'\{'}c{'\}'} - \dfrac{2}{3}\mathbf{'\{'}a{'\}'}$.
 
 This shows collinearity only if additional conditions are given. The question likely assumes $D$ lies on the median from $A$, which it does since $D$ is on $AC$ and $E$ is on $BC$.
 

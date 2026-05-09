@@ -54,7 +54,7 @@ current: thumb (force), index (field), middle (current).
 magnetic flux density that produces a force of 1 N on a wire of length 1 m carrying a current of 1 A
 perpendicular to the field.
 
-$$\boxed{1\,\mathrm{T} = 1\,\mathrm{N A}^{-1}\,\mathrm{m}^{-1}}$$
+$$\boxed{1\,\mathrm{'\{'}T{'\}'} = 1\,\mathrm{'\{'}N A{'\}'}^{-1}\,\mathrm{'\{'}m{'\}'}^{-1}}$$
 
 ### Magnetic Force on a Moving Charge
 
@@ -117,7 +117,7 @@ A velocity selector uses crossed electric and magnetic fields to select particle
 velocity.
 
 **Principle.** A particle with charge $q$ and velocity $v$ passes through a region where
-$\mathbf{E}$ and $\mathbf{B}$ are perpendicular to each other and to the particle's velocity.
+$\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}B{'\}'}$ are perpendicular to each other and to the particle's velocity.
 
 The electric force: $F_E = qE$ (one direction) The magnetic force: $F_B = Bqv$ (opposite direction)
 
@@ -148,7 +148,7 @@ the surface.
 
 **Definition.** The weber is the SI unit of magnetic flux; 1 Wb = 1 T m$^2$.
 
-$$\boxed{1\,\mathrm{Wb} = 1\,\mathrm{T}\,\mathrm{m}^2}$$
+$$\boxed{1\,\mathrm{'\{'}Wb{'\}'} = 1\,\mathrm{'\{'}T{'\}'}\,\mathrm{'\{'}m{'\}'}^2}$$
 
 ### Faraday's Law
 
@@ -178,10 +178,10 @@ magnet away, the current attracts it. The system always resists change.
 
 A conducting rod of length $l$ moving with velocity $v$ perpendicular to a uniform field $B$:
 
-$$\mathcal{E} = Blv$$
+$$\mathcal{'\{'}E{'\}'} = Blv$$
 
 **Derivation.** In time $dt$, the rod sweeps out area $l \cdot v\,dt$. The flux swept:
-$d\Phi = B \cdot lv\,dt$. By Faraday's law: $\mathcal{E} = d\Phi/dt = Blv$. $\square$
+$d\Phi = B \cdot lv\,dt$. By Faraday's law: $\mathcal{'\{'}E{'\}'} = d\Phi/dt = Blv$. $\square$
 
 ## 5. The Alternating Current Generator
 
@@ -189,11 +189,11 @@ A coil of $N$ turns, area $A$, rotating at angular frequency $\omega$ in a unifo
 
 $$\Phi = NBA\cos(\omega t)$$
 
-$$\mathcal{E} = -\frac{d\Phi}{dt} = NBA\omega\sin(\omega t)$$
+$$\mathcal{'\{'}E{'\}'} = -\frac{d\Phi}{dt} = NBA\omega\sin(\omega t)$$
 
-$$\boxed{\mathcal{E} = \mathcal{E}_0\sin(\omega t)}$$
+$$\boxed{\mathcal{'\{'}E{'\}'} = \mathcal{'\{'}E{'\}'}_0\sin(\omega t)}$$
 
-where the peak e.m.f. is $\mathcal{E}_0 = NBA\omega$.
+where the peak e.m.f. is $\mathcal{'\{'}E{'\}'}_0 = NBA\omega$.
 
 :::tip
 Exam Technique When asked about Lenz's law, always describe what the induced current does
@@ -206,29 +206,29 @@ right-hand grip rule.
 ### The Biot-Savart Law
 
 The Biot-Savart law is the magnetic analogue of Coulomb's law: it gives the magnetic field
-contribution $d\mathbf{B}$ at a point $\mathbf{P}$ due to an infinitesimal current element
-$I\,d\mathbf{l}$:
+contribution $d\mathbf{'\{'}B{'\}'}$ at a point $\mathbf{'\{'}P{'\}'}$ due to an infinitesimal current element
+$I\,d\mathbf{'\{'}l{'\}'}$:
 
-$$\boxed{d\mathbf{B} = \frac{\mu_0}{4\pi}\frac{I\,d\mathbf{l} \times \hat{\mathbf{r}}}{r^2}}$$
+$$\boxed{d\mathbf{'\{'}B{'\}'} = \frac{\mu_0}{4\pi}\frac{I\,d\mathbf{'\{'}l{'\}'} \times \hat{\mathbf{'\{'}r{'\}'}}}{r^2}}$$
 
-where $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ is the permeability of free space, $d\mathbf{l}$
-points along the current, $\hat{\mathbf{r}}$ is the unit vector from the element to $\mathbf{P}$,
+where $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ is the permeability of free space, $d\mathbf{'\{'}l{'\}'}$
+points along the current, $\hat{\mathbf{'\{'}r{'\}'}}$ is the unit vector from the element to $\mathbf{'\{'}P{'\}'}$,
 and $r$ is the distance. The total field is:
 
-$$\mathbf{B} = \frac{\mu_0 I}{4\pi}\int \frac{d\mathbf{l} \times \hat{\mathbf{r}}}{r^2}$$
+$$\mathbf{'\{'}B{'\}'} = \frac{\mu_0 I}{4\pi}\int \frac{d\mathbf{'\{'}l{'\}'} \times \hat{\mathbf{'\{'}r{'\}'}}}{r^2}$$
 
-The direction of $d\mathbf{B}$ follows from the right-hand rule on
-$d\mathbf{l} \times \hat{\mathbf{r}}$.
+The direction of $d\mathbf{'\{'}B{'\}'}$ follows from the right-hand rule on
+$d\mathbf{'\{'}l{'\}'} \times \hat{\mathbf{'\{'}r{'\}'}}$.
 
 :::warning
-Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$, not
-$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction.
+Common Pitfall: the cross-product order is $d\mathbf{'\{'}l{'\}'} \times \hat{\mathbf{'\{'}r{'\}'}}$, not
+$\hat{\mathbf{'\{'}r{'\}'}} \times d\mathbf{'\{'}l{'\}'}$. Reversing the order flips the field direction.
 :::
 
 ### Field at the Centre of a Circular Loop
 
-For a circular loop of radius $R$ carrying current $I$, every element $d\mathbf{l}$ satisfies
-$d\mathbf{l} \perp \hat{\mathbf{r}}$ and $r = R$, so $|d\mathbf{l} \times \hat{\mathbf{r}}| = dl$:
+For a circular loop of radius $R$ carrying current $I$, every element $d\mathbf{'\{'}l{'\}'}$ satisfies
+$d\mathbf{'\{'}l{'\}'} \perp \hat{\mathbf{'\{'}r{'\}'}}$ and $r = R$, so $|d\mathbf{'\{'}l{'\}'} \times \hat{\mathbf{'\{'}r{'\}'}}| = dl$:
 
 $$B = \frac{\mu_0 I}{4\pi R^2}\oint dl = \frac{\mu_0 I}{4\pi R^2}\cdot 2\pi R$$
 
@@ -238,13 +238,13 @@ For $N$ turns: $B = \mu_0 NI/(2R)$.
 
 ### Field on the Axis of a Circular Loop
 
-Consider a point $\mathbf{P}$ on the axis at distance $x$ from the centre of a loop of radius $R$.
-Each current element is at distance $r = \sqrt{R^2 + x^2}$ from $\mathbf{P}$. Since
-$d\mathbf{l} \perp \hat{\mathbf{r}}$, the contribution magnitude is
+Consider a point $\mathbf{'\{'}P{'\}'}$ on the axis at distance $x$ from the centre of a loop of radius $R$.
+Each current element is at distance $r = \sqrt{R^2 + x^2}$ from $\mathbf{'\{'}P{'\}'}$. Since
+$d\mathbf{'\{'}l{'\}'} \perp \hat{\mathbf{'\{'}r{'\}'}}$, the contribution magnitude is
 $dB = \frac{\mu_0 I}{4\pi}\frac{dl}{r^2}$.
 
-By rotational symmetry, components of $d\mathbf{B}$ perpendicular to the axis cancel. Only the axial
-component survives. Since $d\mathbf{B} \perp \hat{\mathbf{r}}$ and $\hat{\mathbf{r}}$ makes angle
+By rotational symmetry, components of $d\mathbf{'\{'}B{'\}'}$ perpendicular to the axis cancel. Only the axial
+component survives. Since $d\mathbf{'\{'}B{'\}'} \perp \hat{\mathbf{'\{'}r{'\}'}}$ and $\hat{\mathbf{'\{'}r{'\}'}}$ makes angle
 $\alpha$ with the axis where $\sin\alpha = R/r$, the axial component is:
 
 $$dB_{\parallel} = dB\sin\alpha = \frac{\mu_0 I}{4\pi}\frac{R\,dl}{r^3}$$
@@ -260,10 +260,10 @@ $B \to 0$, as expected.
 
 ### Ampere's Law
 
-**Statement.** Ampere's circuital law: the line integral of $\mathbf{B}$ around any closed Amperian
+**Statement.** Ampere's circuital law: the line integral of $\mathbf{'\{'}B{'\}'}$ around any closed Amperian
 loop equals $\mu_0$ times the net current threading that loop:
 
-$$\boxed{\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\mathrm{enc}}}$$
+$$\boxed{\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = \mu_0 I_{\mathrm{'\{'}enc{'\}'}}}$$
 
 This is one of Maxwell's equations. It is the magnetic analogue of Gauss's law for electric fields.
 Where Gauss's law exploits symmetry to find $E$ from enclosed charge, Ampere's law exploits symmetry
@@ -274,11 +274,11 @@ to find $B$ from enclosed current.
 Take a rectangular Amperian loop with one long side of length $L$ inside the solenoid (parallel to
 the axis) and the other outside.
 
-- **Inside:** $B$ is uniform and parallel to the axis, so $\mathbf{B} \cdot d\mathbf{l} = B\,dl$.
+- **Inside:** $B$ is uniform and parallel to the axis, so $\mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = B\,dl$.
 - **Outside:** $B \approx 0$ for an ideal long solenoid.
-- **Ends:** $\mathbf{B} \perp d\mathbf{l}$, contributing zero.
+- **Ends:** $\mathbf{'\{'}B{'\}'} \perp d\mathbf{'\{'}l{'\}'}$, contributing zero.
 
-$$\oint \mathbf{B} \cdot d\mathbf{l} = BL = \mu_0(nL)I$$
+$$\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = BL = \mu_0(nL)I$$
 
 $$\boxed{B = \mu_0 n I}$$
 
@@ -306,7 +306,7 @@ $$\boxed{\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d}}$$
 
 ### Direction: Attractive or Repulsive
 
-Apply the right-hand grip rule to wire 1 to find $\mathbf{B}_1$ at wire 2's position, then Fleming's
+Apply the right-hand grip rule to wire 1 to find $\mathbf{'\{'}B{'\}'}_1$ at wire 2's position, then Fleming's
 left-hand rule to wire 2 for the force direction:
 
 - **Same-direction currents** $\to$ attractive force
@@ -322,7 +322,7 @@ head-on (repel).
 
 Setting $I_1 = I_2 = 1$ A and $d = 1$ m:
 
-$$\frac{F}{L} = \frac{\mu_0}{2\pi} = \frac{4\pi \times 10^{-7}}{2\pi} = 2 \times 10^{-7}\ \mathrm{N m}^{-1}$$
+$$\frac{F}{L} = \frac{\mu_0}{2\pi} = \frac{4\pi \times 10^{-7}}{2\pi} = 2 \times 10^{-7}\ \mathrm{'\{'}N m{'\}'}^{-1}$$
 
 The ampere is defined such that this force is exactly $2 \times 10^{-7}$ N per metre of length.
 
@@ -341,14 +341,14 @@ Same-direction currents $\to$ attractive.
 
 ## 8. Charged Particles in Crossed Fields
 
-The velocity selector (Section 3) is the special case of crossed $\mathbf{E}$ and $\mathbf{B}$
+The velocity selector (Section 3) is the special case of crossed $\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}B{'\}'}$
 fields where the particle happens to have $v = E/B$. The general case is richer.
 
-### $\mathbf{E} \perp \mathbf{B}$: Cycloid Motion
+### $\mathbf{'\{'}E{'\}'} \perp \mathbf{'\{'}B{'\}'}$: Cycloid Motion
 
-Set up coordinates: $\mathbf{B} = B\hat{\mathbf{z}}$ (into the page),
-$\mathbf{E} = E\hat{\mathbf{y}}$ (upward). A positive charge $q$ enters with velocity
-$\mathbf{v} = v\hat{\mathbf{x}}$ (rightward).
+Set up coordinates: $\mathbf{'\{'}B{'\}'} = B\hat{\mathbf{'\{'}z{'\}'}}$ (into the page),
+$\mathbf{'\{'}E{'\}'} = E\hat{\mathbf{'\{'}y{'\}'}}$ (upward). A positive charge $q$ enters with velocity
+$\mathbf{'\{'}v{'\}'} = v\hat{\mathbf{'\{'}x{'\}'}}$ (rightward).
 
 The equations of motion are:
 
@@ -358,7 +358,7 @@ When $v = E/B$: $\ddot{y} = 0$ and $\ddot{x} = 0$ — straight-line motion (velo
 
 When $v \neq E/B$: the particle follows a **cycloid**. Decompose the velocity into the drift
 velocity $v_d = E/B$ and a residual circular component. The particle gyrates around a guiding centre
-that drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular to both fields.
+that drifts at $\mathbf{'\{'}v{'\}'}_d = \mathbf{'\{'}E{'\}'} \times \mathbf{'\{'}B{'\}'}/B^2$ perpendicular to both fields.
 
 - $v = 0$ initially: the particle traces a **cusped cycloid** (loops with sharp cusps).
 - $0 \lt v \lt E/B$: **curtate cycloid** (wavy path, no loops).
@@ -368,12 +368,12 @@ that drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular t
 :::warning
 warning
 velocity and charge. Even a stationary particle will drift at this speed. The drift direction is
-always $\mathbf{E} \times \mathbf{B}$, perpendicular to both fields.
+always $\mathbf{'\{'}E{'\}'} \times \mathbf{'\{'}B{'\}'}$, perpendicular to both fields.
 :::
 
-### $\mathbf{E} \parallel \mathbf{B}$: Accelerating Helix
+### $\mathbf{'\{'}E{'\}'} \parallel \mathbf{'\{'}B{'\}'}$: Accelerating Helix
 
-When $\mathbf{E}$ is parallel to $\mathbf{B}$, the perpendicular component of velocity still
+When $\mathbf{'\{'}E{'\}'}$ is parallel to $\mathbf{'\{'}B{'\}'}$, the perpendicular component of velocity still
 produces circular motion, but the parallel component is accelerated by $E$:
 
 $$v_{\parallel}(t) = v_{0\parallel} + \frac{qE}{m}t$$
@@ -383,14 +383,14 @@ unchanged.
 
 ### Helical Motion in General
 
-A particle entering a uniform $\mathbf{B}$ field at angle $\theta$ to the field lines has:
+A particle entering a uniform $\mathbf{'\{'}B{'\}'}$ field at angle $\theta$ to the field lines has:
 
 $$v_{\perp} = v\sin\theta, \qquad v_{\parallel} = v\cos\theta$$
 
 The perpendicular component produces circular motion (radius $r = mv_{\perp}/(Bq)$, period
 $T = 2\pi m/(Bq)$), while the parallel component is unaffected. The particle traces a helix with:
 
-$$\boxed{\mathrm{pitch} = v_{\parallel}\,T = \frac{2\pi m v_{\parallel}}{Bq}}$$
+$$\boxed{\mathrm{'\{'}pitch{'\}'} = v_{\parallel}\,T = \frac{2\pi m v_{\parallel}}{Bq}}$$
 
 The pitch is the axial distance travelled per revolution. A faster parallel component or larger mass
 gives a more stretched helix; a stronger field or larger charge gives a tighter helix.
@@ -425,7 +425,7 @@ material).
 When the current in a coil changes, the changing magnetic flux through the coil itself induces an
 e.m.f.:
 
-$$\boxed{\mathcal{E} = -L\frac{dI}{dt}}$$
+$$\boxed{\mathcal{'\{'}E{'\}'} = -L\frac{dI}{dt}}$$
 
 where $L$ is the **self-inductance** measured in henry (H). 1 H = 1 Wb A$^{-1}$ = 1 V s A$^{-1}$.
 
@@ -436,7 +436,7 @@ $\Phi = \mu_0 n I A$ per turn and $N\Phi = LI$.
 
 The power delivered to an inductor while current grows from 0 to $I$:
 
-$$P = -\mathcal{E}\,I = LI\frac{dI}{dt}$$
+$$P = -\mathcal{'\{'}E{'\}'}\,I = LI\frac{dI}{dt}$$
 
 $$E = \int_0^t P\,dt' = \int_0^I LI'\,dI' = \frac{1}{2}LI^2$$
 
@@ -511,9 +511,9 @@ A mass spectrometer separates ions by their mass-to-charge ratio. The essential 
    positive ions.
 2. **Acceleration** — ions are accelerated through a potential difference $V$, gaining kinetic
    energy $\frac{1}{2}mv^2 = qV$.
-3. **Velocity selection** — crossed $\mathbf{E}$ and $\mathbf{B}$ fields select ions with $v = E/B$
+3. **Velocity selection** — crossed $\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}B{'\}'}$ fields select ions with $v = E/B$
    (Section 3).
-4. **Deflection** — selected ions enter a region with a uniform $\mathbf{B}$ field only. They follow
+4. **Deflection** — selected ions enter a region with a uniform $\mathbf{'\{'}B{'\}'}$ field only. They follow
    semicircular paths of radius $r = mv/(Bq)$.
 5. **Detection** — ions strike a detector (photographic plate or electronic). The impact position
    depends on $r$, hence on $m$.
@@ -540,7 +540,7 @@ compounds by mass signature), carbon dating ($^{14}$C/$^{12}$C ratio), trace ele
 <summary>Worked Example: Separating Neon Isotopes</summary>
 Singly ionised neon atoms pass through a velocity selector with $E = 1.5 \times 10^5$ V m$^{-1}$ and
 $B_1 = 0.50$ T, then enter a deflection chamber with $B_2 = 0.50$ T. Find the detector separation
-between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$ kg.)
+between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{'\{'}u{'\}'} = 1.66 \times 10^{-27}$ kg.)
 
 **Answer.** $v = E/B_1 = 1.5 \times 10^5 / 0.50 = 3.0 \times 10^5$ m s$^{-1}$.
 
@@ -601,7 +601,7 @@ A coil of 200 turns, each of area $0.010$ m$^2$, is placed in a magnetic field t
 uniformly from 0.50 T to 0.10 T in 0.05 s. Calculate the average induced e.m.f.
 
 **Answer.** $d\Phi = A \cdot dB = 0.010 \times (0.50 - 0.10) = 0.004$ Wb.
-$d(N\Phi)/dt = 200 \times 0.004 / 0.05 = 16$ V. $\mathcal{E} = 16$ V.
+$d(N\Phi)/dt = 200 \times 0.004 / 0.05 = 16$ V. $\mathcal{'\{'}E{'\}'} = 16$ V.
 
 <b>If you get this wrong, revise:</b> [Faraday's Law](#4-faradays-law-of-electromagnetic-induction)
 
@@ -626,7 +626,7 @@ twice the radius.
 A straight rod of length 0.50 m moves at 8.0 m s$^{-1}$ perpendicular to a magnetic field of 0.60 T.
 Calculate the motional e.m.f. induced.
 
-**Answer.** $\mathcal{E} = Blv = 0.60 \times 0.50 \times 8.0 = 2.4$ V.
+**Answer.** $\mathcal{'\{'}E{'\}'} = Blv = 0.60 \times 0.50 \times 8.0 = 2.4$ V.
 
 <b>If you get this wrong, revise:</b> [Motional e.m.f.](#motional-emf)
 
@@ -639,7 +639,7 @@ magnetic field. Calculate the peak e.m.f.
 
 **Answer.** $\omega = 3000 \times 2\pi/60 = 314$ rad s$^{-1}$. $A = 0.10 \times 0.05 = 0.005$ m$^2$.
 
-$\mathcal{E}_0 = NBA\omega = 100 \times 0.20 \times 0.005 \times 314 = 31.4$ V.
+$\mathcal{'\{'}E{'\}'}_0 = NBA\omega = 100 \times 0.20 \times 0.005 \times 314 = 31.4$ V.
 
 <b>If you get this wrong, revise:</b>
 [The Alternating Current Generator](#5-the-alternating-current-generator)
@@ -683,7 +683,7 @@ A magnet is pushed into a coil of 50 turns, and the magnetic flux through each t
 $4.0 \times 10^{-3}$ Wb in 0.10 s. Calculate the average induced e.m.f. and explain which end of the
 coil acts as a north pole.
 
-**Answer.** $\mathcal{E} = N\frac{d\Phi}{dt} = 50 \times \frac{4.0 \times 10^{-3}}{0.10} = 2.0$ V.
+**Answer.** $\mathcal{'\{'}E{'\}'} = N\frac{d\Phi}{dt} = 50 \times \frac{4.0 \times 10^{-3}}{0.10} = 2.0$ V.
 
 By Lenz's law, the induced current opposes the increasing flux. If the magnet's north pole is being
 pushed in, the coil end facing the magnet becomes a north pole (to repel the magnet), so current
@@ -790,7 +790,7 @@ to a 240 V AC supply. The secondary delivers 5.0 A to a load. Calculate (a) the 
 <summary>Problem 17</summary>
 Singly ionised neon atoms pass through a velocity selector with $E = 1.5 \times 10^5$ V m$^{-1}$ and
 $B_1 = 0.50$ T, then enter a deflection chamber with $B_2 = 0.50$ T. Find the separation on the
-detector between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$ kg.)
+detector between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{'\{'}u{'\}'} = 1.66 \times 10^{-27}$ kg.)
 
 **Answer.** $v = E/B_1 = 1.5 \times 10^5 / 0.50 = 3.0 \times 10^5$ m s$^{-1}$.
 
@@ -822,7 +822,7 @@ m $= 6.53$ cm.
 $T = \frac{2\pi m}{Bq} = \frac{2\pi \times 1.67 \times 10^{-27}}{0.40 \times 1.60 \times 10^{-19}} = \frac{1.05 \times 10^{-26}}{6.4 \times 10^{-20}} = 1.64 \times 10^{-7}$
 s.
 
-$\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$
+$\mathrm{'\{'}pitch{'\}'} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$
 cm.
 
 <b>If you get this wrong, revise:</b>

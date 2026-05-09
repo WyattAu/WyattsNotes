@@ -672,7 +672,7 @@ is lost through:
 This rule explains why food chains are typically limited to 4-5 trophic levels -- there is
 insufficient energy to sustain higher levels.
 
-$$\mathrm{Energy available at level } n = 0.1^n \times \mathrm{Energy at producer level}$$
+$$\mathrm{'\{'}Energy available at level {'\}'} n = 0.1^n \times \mathrm{'\{'}Energy at producer level{'\}'}$$
 
 :::info
 info
@@ -690,34 +690,34 @@ recycled.
 
 Key processes:
 
-- Photosynthesis: $\mathrm{CO}_2$ converted to organic compounds by producers
-- Respiration: organic compounds broken down, releasing $\mathrm{CO}_2$
-- Combustion: burning fossil fuels releases stored carbon as $\mathrm{CO}_2$
-- Decomposition: decomposers break down dead organic matter, releasing $\mathrm{CO}_2$
-- Ocean absorption: oceans absorb $\mathrm{CO}_2$ from the atmosphere (dissolved $\mathrm{CO}_2$,
+- Photosynthesis: $\mathrm{'\{'}CO{'\}'}_2$ converted to organic compounds by producers
+- Respiration: organic compounds broken down, releasing $\mathrm{'\{'}CO{'\}'}_2$
+- Combustion: burning fossil fuels releases stored carbon as $\mathrm{'\{'}CO{'\}'}_2$
+- Decomposition: decomposers break down dead organic matter, releasing $\mathrm{'\{'}CO{'\}'}_2$
+- Ocean absorption: oceans absorb $\mathrm{'\{'}CO{'\}'}_2$ from the atmosphere (dissolved $\mathrm{'\{'}CO{'\}'}_2$,
   bicarbonate, carbonate)
 - Sedimentation: dead marine organisms form limestone and fossil fuels over geological time
-- Deforestation: reduces $\mathrm{CO}_2$ uptake by photosynthesis; burning releases stored carbon
+- Deforestation: reduces $\mathrm{'\{'}CO{'\}'}_2$ uptake by photosynthesis; burning releases stored carbon
 
 **Nitrogen cycle:**
 
 Key processes:
 
-- Nitrogen fixation: atmospheric $\mathrm{N}_2$ (unreactive) converted to ammonia ($\mathrm{NH}_3$)
+- Nitrogen fixation: atmospheric $\mathrm{'\{'}N{'\}'}_2$ (unreactive) converted to ammonia ($\mathrm{'\{'}NH{'\}'}_3$)
   by nitrogen-fixing bacteria (e.g., Rhizobium in root nodules of legumes) or lightning
-- Nitrification: ammonia converted to nitrite ($\mathrm{NO}_2^-$) by Nitrosomonas, then to nitrate
-  ($\mathrm{NO}_3^-$) by Nitrobacter
+- Nitrification: ammonia converted to nitrite ($\mathrm{'\{'}NO{'\}'}_2^-$) by Nitrosomonas, then to nitrate
+  ($\mathrm{'\{'}NO{'\}'}_3^-$) by Nitrobacter
 - Absorption: plants absorb nitrate through roots
 - Assimilation: plants incorporate nitrogen into amino acids and proteins
 - Feeding: animals obtain nitrogen by eating plants or other animals
 - Decomposition / ammonification: decomposers break down dead organisms and waste, releasing ammonia
-- Denitrification: denitrifying bacteria convert nitrate back to $\mathrm{N}_2$, returning it to the
+- Denitrification: denitrifying bacteria convert nitrate back to $\mathrm{'\{'}N{'\}'}_2$, returning it to the
   atmosphere (e.g., Pseudomonas)
 
 **Phosphorus cycle:**
 
 - Phosphorus has no significant gaseous phase (unlike carbon and nitrogen)
-- Weathering of rocks releases phosphate ions ($\mathrm{PO}_4^{3-}$) into soil and water
+- Weathering of rocks releases phosphate ions ($\mathrm{'\{'}PO{'\}'}_4^{3-}$) into soil and water
 - Plants absorb phosphate; animals obtain it through food chains
 - Decomposition returns phosphorus to soil
 - Sedimentation: phosphorus settles to the ocean floor and forms sedimentary rock over geological
@@ -741,12 +741,12 @@ Key processes:
   per unit area per unit time
 - **Net Primary Productivity (NPP):** GPP minus the energy used by producers for respiration (R):
 
-$$\mathrm{NPP} = \mathrm{GPP} - R$$
+$$\mathrm{'\{'}NPP{'\}'} = \mathrm{'\{'}GPP{'\}'} - R$$
 
 NPP represents the energy available to consumers (herbivores and decomposers). NPP is a measure of
 how much biomass is available for the rest of the food chain.
 
-$$\mathrm{NPP} = \mathrm{energy stored in plant biomass}$$
+$$\mathrm{'\{'}NPP{'\}'} = \mathrm{'\{'}energy stored in plant biomass{'\}'}$$
 
 ---
 
@@ -799,7 +799,7 @@ seasons, total precipitation. Match these to the biome descriptions above.
 
 - Clearing of forests for agriculture, logging, urbanisation, and infrastructure
 - Tropical rainforests are being cleared at approximately 10 million hectares per year
-- Consequences: habitat loss, biodiversity decline, soil erosion, increased $\mathrm{CO}_2$ in
+- Consequences: habitat loss, biodiversity decline, soil erosion, increased $\mathrm{'\{'}CO{'\}'}_2$ in
   atmosphere (reduced photosynthesis + burning), disruption of water cycle, loss of indigenous
   cultures
 
@@ -845,10 +845,10 @@ Substances that biomagnify are typically:
 
 ### Climate Change
 
-- Burning fossil fuels releases $\mathrm{CO}_2$, methane ($\mathrm{CH}_4$), and nitrous oxide
-  ($\mathrm{N}_2\mathrm{O}$) -- greenhouse gases
+- Burning fossil fuels releases $\mathrm{'\{'}CO{'\}'}_2$, methane ($\mathrm{'\{'}CH{'\}'}_4$), and nitrous oxide
+  ($\mathrm{'\{'}N{'\}'}_2\mathrm{'\{'}O{'\}'}$) -- greenhouse gases
 - Greenhouse gases trap infrared radiation (heat) in the atmosphere, increasing global temperatures
-- Pre-industrial $\mathrm{CO}_2$ concentration: ~280 ppm; current: &gt;420 ppm
+- Pre-industrial $\mathrm{'\{'}CO{'\}'}_2$ concentration: ~280 ppm; current: &gt;420 ppm
 - Global average temperature has risen approximately 1.1 degrees C above pre-industrial levels
 
 Consequences:
@@ -856,7 +856,7 @@ Consequences:
 - Rising sea levels (thermal expansion of water + melting ice caps)
 - More frequent and severe extreme weather events (hurricanes, droughts, floods)
 - Shifts in species distributions and ranges
-- Ocean acidification (dissolved $\mathrm{CO}_2$ forms carbonic acid, lowering pH)
+- Ocean acidification (dissolved $\mathrm{'\{'}CO{'\}'}_2$ forms carbonic acid, lowering pH)
 - Disruption of phenology (timing of biological events: flowering, migration, breeding)
 - Coral bleaching (warm water causes corals to expel symbiotic algae)
 
@@ -946,7 +946,7 @@ If producers have 10,000 kJ of energy:
 
 Doubling time can be estimated using the rule of 70:
 
-$$\mathrm{Doubling time} \approx \frac{70}{r \times 100}$$
+$$\mathrm{'\{'}Doubling time{'\}'} \approx \frac{70}{r \times 100}$$
 
 Where $r$ is the per capita growth rate expressed as a decimal.
 
@@ -983,7 +983,7 @@ frequencies differ significantly from Hardy-Weinberg expected frequencies:
 $$\chi^2 = \sum \frac{(O - E)^2}{E}$$
 
 Where $O$ = observed frequency and $E$ = expected frequency. Compare the calculated value to the
-critical value at the appropriate degrees of freedom ($df = \mathrm{number of categories} - 1$) and
+critical value at the appropriate degrees of freedom ($df = \mathrm{'\{'}number of categories{'\}'} - 1$) and
 significance level (typically $p = 0.05$).
 :::
 
@@ -1044,9 +1044,9 @@ If you get this wrong, revise: Ecosystem Ecology -- The 10% Rule; Ecological Pyr
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{Transfer efficiency} = \frac{5000}{50000} \times 100\% = 10\%$
+(a) $\mathrm{'\{'}Transfer efficiency{'\}'} = \frac{5000}{50000} \times 100\% = 10\%$
 
-(b) $\mathrm{Transfer efficiency} = \frac{400}{5000} \times 100\% = 8\%$
+(b) $\mathrm{'\{'}Transfer efficiency{'\}'} = \frac{400}{5000} \times 100\% = 8\%$
 
 (c) At the secondary consumer level, only 400 kJ/m$^2$/year is available. A tertiary consumer would receive approximately 10% of this: 40 kJ/m$^2$/year. A quaternary consumer (fifth trophic level) would receive only about 4 kJ/m$^2$/year, which is insufficient to sustain a viable population. This demonstrates the energy limitation on food chain length.
 
@@ -1071,7 +1071,7 @@ If you get this wrong, revise: Population Ecology -- Population Growth Models; C
 
 $$N = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) e^{-rt}} = \frac{5000}{1 + \left(\frac{5000 - 100}{100}\right) e^{-0.5 \times 6}}$$
 
-$$N = \frac{5000}{1 + 49 \times e^{-3}} = \frac{5000}{1 + 49 \times 0.0498} = \frac{5000}{1 + 2.44} = \frac{5000}{3.44} = 1453 \mathrm{ cells}$$
+$$N = \frac{5000}{1 + 49 \times e^{-3}} = \frac{5000}{1 + 49 \times 0.0498} = \frac{5000}{1 + 2.44} = \frac{5000}{3.44} = 1453 \mathrm{'\{'} cells{'\}'}$$
 
 The logistic model predicts fewer cells (1,453 vs 2,009) because it accounts for the limiting effect of carrying capacity -- as the population grows, resources become scarcer and the growth rate decreases.
 

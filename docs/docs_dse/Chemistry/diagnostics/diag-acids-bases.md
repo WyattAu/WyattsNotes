@@ -37,7 +37,7 @@ $$1.8 \times 10^{-5} \approx \frac{x^{2}}{0.10}$$
 
 $$x^{2} = 1.8 \times 10^{-6}$$
 
-$$x = 1.34 \times 10^{-3} \text{ mol/dm}^{3}$$
+$$x = 1.34 \times 10^{-3} \text{'\{'} mol/dm{'\}'}^{3}$$
 
 Check: $x/0.10 = 1.34\% \lt 5\%$ -- assumption valid.
 
@@ -47,7 +47,7 @@ $$pH = -\log(1.34 \times 10^{-3}) = 2.87$$
 
 $$x^{2} = 1.8 \times 10^{-7}$$
 
-$$x = 4.24 \times 10^{-4} \text{ mol/dm}^{3}$$
+$$x = 4.24 \times 10^{-4} \text{'\{'} mol/dm{'\}'}^{3}$$
 
 $$pH = -\log(4.24 \times 10^{-4}) = 3.37$$
 
@@ -77,9 +77,9 @@ A buffer solution is prepared by mixing 100 cm$^{3}$ of 0.20 mol/dm$^{3}$ ethano
 
 (a) After mixing, total volume = 200 cm$^{3}$.
 
-$$[CH_{3}COOH] = \frac{0.20 \times 100}{200} = 0.10 \text{ mol/dm}^{3}$$
+$$[CH_{3}COOH] = \frac{0.20 \times 100}{200} = 0.10 \text{'\{'} mol/dm{'\}'}^{3}$$
 
-$$[CH_{3}COO^{-}] = \frac{0.10 \times 100}{200} = 0.050 \text{ mol/dm}^{3}$$
+$$[CH_{3}COO^{-}] = \frac{0.10 \times 100}{200} = 0.050 \text{'\{'} mol/dm{'\}'}^{3}$$
 
 Using the Henderson-Hasselbalch equation:
 
@@ -91,9 +91,9 @@ $$pH = 4.74 + \log\frac{0.050}{0.10} = 4.74 + \log(0.5) = 4.74 - 0.30 = 4.44$$
 
 (b) In 50.0 cm$^{3}$ of buffer:
 
-$$n(CH_{3}COOH) = 0.10 \times 0.050 = 0.00500 \text{ mol}$$
+$$n(CH_{3}COOH) = 0.10 \times 0.050 = 0.00500 \text{'\{'} mol{'\}'}$$
 
-$$n(CH_{3}COO^{-}) = 0.050 \times 0.050 = 0.00250 \text{ mol}$$
+$$n(CH_{3}COO^{-}) = 0.050 \times 0.050 = 0.00250 \text{'\{'} mol{'\}'}$$
 
 Moles of $HCl$ added: $n(HCl) = 0.10 \times 0.0050 = 0.000500$ mol
 
@@ -103,15 +103,15 @@ $$CH_{3}COO^{-} + H^{+} \rightarrow CH_{3}COOH}$$
 
 New moles:
 
-$$n(CH_{3}COO^{-}) = 0.00250 - 0.000500 = 0.00200 \text{ mol}$$
+$$n(CH_{3}COO^{-}) = 0.00250 - 0.000500 = 0.00200 \text{'\{'} mol{'\}'}$$
 
-$$n(CH_{3}COOH) = 0.00500 + 0.000500 = 0.00550 \text{ mol}$$
+$$n(CH_{3}COOH) = 0.00500 + 0.000500 = 0.00550 \text{'\{'} mol{'\}'}$$
 
 New total volume = $50.0 + 5.0 = 55.0$ cm$^{3}$:
 
-$$[CH_{3}COOH] = \frac{0.00550}{0.0550} = 0.100 \text{ mol/dm}^{3}$$
+$$[CH_{3}COOH] = \frac{0.00550}{0.0550} = 0.100 \text{'\{'} mol/dm{'\}'}^{3}$$
 
-$$[CH_{3}COO^{-}] = \frac{0.00200}{0.0550} = 0.0364 \text{ mol/dm}^{3}$$
+$$[CH_{3}COO^{-}] = \frac{0.00200}{0.0550} = 0.0364 \text{'\{'} mol/dm{'\}'}^{3}$$
 
 $$pH = 4.74 + \log\frac{0.0364}{0.100} = 4.74 + \log(0.364) = 4.74 - 0.439 = 4.30$$
 
@@ -183,7 +183,7 @@ Let $[OH^{-}] = x$:
 
 $$1.8 \times 10^{-5} = \frac{x^{2}}{0.100}$$
 
-$$x = \sqrt{1.8 \times 10^{-6}} = 1.34 \times 10^{-3} \text{ mol/dm}^{3}$$
+$$x = \sqrt{1.8 \times 10^{-6}} = 1.34 \times 10^{-3} \text{'\{'} mol/dm{'\}'}^{3}$$
 
 $$pOH = -\log(1.34 \times 10^{-3}) = 2.87$$
 
@@ -195,7 +195,7 @@ Moles of $NH_{3}$ = $0.100 \times 0.0250 = 0.00250$ mol
 
 Volume of HCl needed = $25.0$ cm$^{3}$ (equimolar), total volume = $50.0$ cm$^{3}$.
 
-$$[NH_{4}^{+}] = \frac{0.00250}{0.0500} = 0.0500 \text{ mol/dm}^{3}$$
+$$[NH_{4}^{+}] = \frac{0.00250}{0.0500} = 0.0500 \text{'\{'} mol/dm{'\}'}^{3}$$
 
 $NH_{4}^{+}$ hydrolyses: $NH_{4}^{+} + H_{2}O \rightleftharpoons NH_{3} + H_{3}O^{+}$
 
@@ -233,7 +233,7 @@ $HCl$ is in excess by: $0.00400 - 0.00100 = 0.00300$ mol
 
 Total volume = $40.0 + 10.0 = 50.0$ cm$^{3}$
 
-$$[H^{+}] = \frac{0.00300}{0.0500} = 0.0600 \text{ mol/dm}^{3}$$
+$$[H^{+}] = \frac{0.00300}{0.0500} = 0.0600 \text{'\{'} mol/dm{'\}'}^{3}$$
 
 $$pH = -\log(0.0600) = 1.22$$
 
@@ -245,7 +245,7 @@ $HCl$ is in excess by: $0.00400 - 0.00300 = 0.00100$ mol
 
 Total volume = $40.0 + 30.0 = 70.0$ cm$^{3}$
 
-$$[H^{+}] = \frac{0.00100}{0.0700} = 0.01429 \text{ mol/dm}^{3}$$
+$$[H^{+}] = \frac{0.00100}{0.0700} = 0.01429 \text{'\{'} mol/dm{'\}'}^{3}$$
 
 $$pH = -\log(0.01429) = 1.85$$
 
@@ -289,7 +289,7 @@ $[CH_{3}COO^{-}] = 1.82 \times 0.20 = 0.364$ mol/dm$^{3}$
 
 $n(CH_{3}COO^{-}) = 0.364 \times 0.250 = 0.0910$ mol
 
-(b) $$m(CH_{3}COONa) = 0.0910 \times 82.0 = 7.46 \text{ g}$$
+(b) $$m(CH_{3}COONa) = 0.0910 \times 82.0 = 7.46 \text{'\{'} g{'\}'}$$
 
 Procedure: Dissolve 7.46 g of sodium ethanoate in approximately 150 cm$^{3}$ of distilled water. Add 100 cm$^{3}$ of 0.50 mol/dm$^{3}$ ethanoic acid. Transfer to a 250 cm$^{3}$ volumetric flask and make up to the mark with distilled water. Mix thoroughly.
 

@@ -24,9 +24,9 @@ mode.
 
 ### Measures of Spread
 
-**Range.** $\mathrm{Range} = x_{\max} - x_{\min}$
+**Range.** $\mathrm{'\{'}Range{'\}'} = x_{\max} - x_{\min}$
 
-**Interquartile range (IQR).** $\mathrm{IQR} = Q_3 - Q_1$
+**Interquartile range (IQR).** $\mathrm{'\{'}IQR{'\}'} = Q_3 - Q_1$
 
 where $Q_1$ is the 25th percentile and $Q_3$ is the 75th percentile.
 
@@ -47,7 +47,7 @@ $$s^2 = \frac{\sum x_i^2 - n\bar{x}^2}{n - 1} = \frac{n\sum x_i^2 - (\sum x_i)^2
 ### Box-and-Whisker Plots
 
 A box plot displays five key statistics: minimum, $Q_1$, median, $Q_3$, maximum. **Outliers** are
-points more than $1.5 \times \mathrm{IQR}$ below $Q_1$ or above $Q_3$.
+points more than $1.5 \times \mathrm{'\{'}IQR{'\}'}$ below $Q_1$ or above $Q_3$.
 
 ---
 
@@ -65,7 +65,7 @@ $$\bar{x} \approx \frac{\sum f_i x_i}{\sum f_i}$$
 1. Calculate cumulative frequencies to identify the median class.
 2. Use linear interpolation within the median class:
 
-$$\mathrm{Median} \approx L + \left(\frac{\frac{n}{2} - F}{f}\right) \cdot w$$
+$$\mathrm{'\{'}Median{'\}'} \approx L + \left(\frac{\frac{n}{2} - F}{f}\right) \cdot w$$
 
 where $L$ is the lower boundary of the median class, $F$ is the cumulative frequency before the
 median class, $f$ is the frequency of the median class, and $w$ is the class width.
@@ -75,7 +75,7 @@ median class, $f$ is the frequency of the median class, and $w$ is the class wid
 In a histogram, the area of each bar represents the frequency, not the height. The height (frequency
 density) is:
 
-$$\mathrm{Frequency density} = \frac{\mathrm{Frequency}}{\mathrm{Class width}}$$
+$$\mathrm{'\{'}Frequency density{'\}'} = \frac{\mathrm{'\{'}Frequency{'\}'}}{\mathrm{'\{'}Class width{'\}'}}$$
 
 ---
 
@@ -219,7 +219,7 @@ $$\frac{n!}{n_1!\, n_2!\, \cdots\, n_k!}$$
 
 When outcomes are equally likely:
 
-$$P(\mathrm{event}) = \frac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}$$
+$$P(\mathrm{'\{'}event{'\}'}) = \frac{\mathrm{'\{'}number of favourable outcomes{'\}'}}{\mathrm{'\{'}total number of outcomes{'\}'}}$$
 
 ---
 
@@ -329,8 +329,8 @@ $a = 5.667 - 0.914 \times 3.5 = 2.467$. Line: $y = 2.47 + 0.91x$.
 $r = 16/\sqrt{17.5 \times 23.33} = 16/\sqrt{408.3} = 16/20.21 = 0.792$.
 
 **Problem 3:**
-$P(\mathrm{both red}) = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
-$P(\mathrm{2nd red} \mid \mathrm{1st blue}) = \dfrac{5}{7}$ (after removing one blue, 5 red remain
+$P(\mathrm{'\{'}both red{'\}'}) = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
+$P(\mathrm{'\{'}2nd red{'\}'} \mid \mathrm{'\{'}1st blue{'\}'}) = \dfrac{5}{7}$ (after removing one blue, 5 red remain
 out of 7).
 
 **Problem 4:**

@@ -138,7 +138,7 @@ relationship between two variables:
 
 $$r_s = 1 - \frac{6\sum d_i^2}{n(n^2 - 1)}$$
 
-where $d_i = \mathrm{rank}(x_i) - \mathrm{rank}(y_i)$ is the difference in ranks for the $i$-th pair.
+where $d_i = \mathrm{'\{'}rank{'\}'}(x_i) - \mathrm{'\{'}rank{'\}'}(y_i)$ is the difference in ranks for the $i$-th pair.
 
 ### 3.2 When to use Spearman's rank
 

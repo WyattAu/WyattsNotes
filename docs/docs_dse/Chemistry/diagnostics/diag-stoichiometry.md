@@ -29,31 +29,31 @@ Reaction 2: $HCl(aq) + NaOH(aq) \rightarrow NaCl(aq) + H_{2}O(l)$
 
 (b) Step 1: Moles of NaOH used in back-titration.
 
-$$n(NaOH) = \frac{0.500 \times 25.0}{1000} = 0.01250 \text{ mol}$$
+$$n(NaOH) = \frac{0.500 \times 25.0}{1000} = 0.01250 \text{'\{'} mol{'\}'}$$
 
 Step 2: Moles of HCl remaining (unreacted with $CaCO_{3}$).
 
-From equation 2: $n(HCl)_{\text{remaining}} = n(NaOH) = 0.01250$ mol
+From equation 2: $n(HCl)_{\text{'\{'}remaining{'\}'}} = n(NaOH) = 0.01250$ mol
 
 Step 3: Moles of HCl that reacted with $CaCO_{3}$.
 
-$$n(HCl)_{\text{total}} = \frac{1.00 \times 50.0}{1000} = 0.0500 \text{ mol}$$
+$$n(HCl)_{\text{'\{'}total{'\}'}} = \frac{1.00 \times 50.0}{1000} = 0.0500 \text{'\{'} mol{'\}'}$$
 
-$$n(HCl)_{\text{reacted}} = 0.0500 - 0.01250 = 0.03750 \text{ mol}$$
+$$n(HCl)_{\text{'\{'}reacted{'\}'}} = 0.0500 - 0.01250 = 0.03750 \text{'\{'} mol{'\}'}$$
 
 Step 4: Moles of $CaCO_{3}$ in the sample.
 
-From equation 1: $n(CaCO_{3}) = \frac{n(HCl)_{\text{reacted}}}{2} = \frac{0.03750}{2} = 0.01875$ mol
+From equation 1: $n(CaCO_{3}) = \frac{n(HCl)_{\text{'\{'}reacted{'\}'}}}{2} = \frac{0.03750}{2} = 0.01875$ mol
 
 Step 5: Mass of pure $CaCO_{3}$.
 
-$$M(CaCO_{3}) = 40.1 + 12.0 + 3 \times 16.0 = 100.1 \text{ g/mol}$$
+$$M(CaCO_{3}) = 40.1 + 12.0 + 3 \times 16.0 = 100.1 \text{'\{'} g/mol{'\}'}$$
 
-$$m(CaCO_{3}) = 0.01875 \times 100.1 = 1.877 \text{ g}$$
+$$m(CaCO_{3}) = 0.01875 \times 100.1 = 1.877 \text{'\{'} g{'\}'}$$
 
 Step 6: Percentage purity.
 
-$$\text{Purity} = \frac{1.877}{2.00} \times 100\% = 93.8\%$$
+$$\text{'\{'}Purity{'\}'} = \frac{1.877}{2.00} \times 100\% = 93.8\%$$
 
 (c) The HCl must be in excess to ensure **all** the $CaCO_{3}$ reacts completely. The back-titration then determines the amount of HCl that was not consumed, allowing the amount reacted with $CaCO_{3}$ to be calculated by difference.
 
@@ -77,27 +77,27 @@ An organic compound $X$ contains only carbon, hydrogen, and oxygen. When 0.460 g
 
 (a) Step 1: Mass of carbon in $CO_{2}$.
 
-$$M(CO_{2}) = 12.0 + 2 \times 16.0 = 44.0 \text{ g/mol}$$
+$$M(CO_{2}) = 12.0 + 2 \times 16.0 = 44.0 \text{'\{'} g/mol{'\}'}$$
 
-$$m(C) = 0.880 \times \frac{12.0}{44.0} = 0.240 \text{ g}$$
+$$m(C) = 0.880 \times \frac{12.0}{44.0} = 0.240 \text{'\{'} g{'\}'}$$
 
 Step 2: Mass of hydrogen in $H_{2}O$.
 
-$$M(H_{2}O) = 2 \times 1.0 + 16.0 = 18.0 \text{ g/mol}$$
+$$M(H_{2}O) = 2 \times 1.0 + 16.0 = 18.0 \text{'\{'} g/mol{'\}'}$$
 
-$$m(H) = 0.540 \times \frac{2.0}{18.0} = 0.0600 \text{ g}$$
+$$m(H) = 0.540 \times \frac{2.0}{18.0} = 0.0600 \text{'\{'} g{'\}'}$$
 
 Step 3: Mass of oxygen by difference.
 
-$$m(O) = 0.460 - 0.240 - 0.0600 = 0.160 \text{ g}$$
+$$m(O) = 0.460 - 0.240 - 0.0600 = 0.160 \text{'\{'} g{'\}'}$$
 
 Step 4: Moles of each element.
 
-$$n(C) = \frac{0.240}{12.0} = 0.0200 \text{ mol}$$
+$$n(C) = \frac{0.240}{12.0} = 0.0200 \text{'\{'} mol{'\}'}$$
 
-$$n(H) = \frac{0.0600}{1.0} = 0.0600 \text{ mol}$$
+$$n(H) = \frac{0.0600}{1.0} = 0.0600 \text{'\{'} mol{'\}'}$$
 
-$$n(O) = \frac{0.160}{16.0} = 0.0100 \text{ mol}$$
+$$n(O) = \frac{0.160}{16.0} = 0.0100 \text{'\{'} mol{'\}'}$$
 
 Step 5: Mole ratio.
 
@@ -141,33 +141,33 @@ At room temperature and pressure (RTP), one mole of any gas occupies 24.0 dm$^{3
 
 (a) $CaCO_{3} + 2HCl \rightarrow CaCl_{2} + CO_{2} + H_{2}O$
 
-$$n(CaCO_{3}) = \frac{5.00}{100.1} = 0.04995 \text{ mol}$$
+$$n(CaCO_{3}) = \frac{5.00}{100.1} = 0.04995 \text{'\{'} mol{'\}'}$$
 
 From the equation, 1 mol $CaCO_{3}$ produces 1 mol $CO_{2}$:
 
-$$n(CO_{2}) = 0.04995 \text{ mol}$$
+$$n(CO_{2}) = 0.04995 \text{'\{'} mol{'\}'}$$
 
-$$V(CO_{2}) = 0.04995 \times 24.0 = 1.20 \text{ dm}^{3}$$
+$$V(CO_{2}) = 0.04995 \times 24.0 = 1.20 \text{'\{'} dm{'\}'}^{3}$$
 
 (b) $M(NaOH) = 23.0 + 16.0 + 1.0 = 40.0$ g/mol
 
-$$n(NaOH) = \frac{4.00}{40.0} = 0.100 \text{ mol}$$
+$$n(NaOH) = \frac{4.00}{40.0} = 0.100 \text{'\{'} mol{'\}'}$$
 
-$$\text{Concentration (mol/dm}^{3}) = \frac{0.100}{0.250} = 0.400 \text{ mol/dm}^{3}$$
+$$\text{'\{'}Concentration (mol/dm{'\}'}^{3}) = \frac{0.100}{0.250} = 0.400 \text{'\{'} mol/dm{'\}'}^{3}$$
 
-$$\text{Concentration (g/dm}^{3}) = 0.400 \times 40.0 = 16.0 \text{ g/dm}^{3}$$
+$$\text{'\{'}Concentration (g/dm{'\}'}^{3}) = 0.400 \times 40.0 = 16.0 \text{'\{'} g/dm{'\}'}^{3}$$
 
 (c) Moles of $H_{2}SO_{4}$ remain constant during dilution:
 
-$$n(H_{2}SO_{4}) = 0.100 \times \frac{50.0}{1000} = 0.00500 \text{ mol}$$
+$$n(H_{2}SO_{4}) = 0.100 \times \frac{50.0}{1000} = 0.00500 \text{'\{'} mol{'\}'}$$
 
-$$C_{\text{diluted}} = \frac{0.00500}{0.500} = 0.0100 \text{ mol/dm}^{3}$$
+$$C_{\text{'\{'}diluted{'\}'}} = \frac{0.00500}{0.500} = 0.0100 \text{'\{'} mol/dm{'\}'}^{3}$$
 
 Alternatively: $C_{1}V_{1} = C_{2}V_{2}$
 
 $$0.100 \times 50.0 = C_{2} \times 500$$
 
-$$C_{2} = 0.0100 \text{ mol/dm}^{3}$$
+$$C_{2} = 0.0100 \text{'\{'} mol/dm{'\}'}^{3}$$
 
 ---
 
@@ -191,7 +191,7 @@ A sample of impure iron(II) sulphate ($FeSO_{4}\cdot 7H_{2}O$) is to be analysed
 
 (b) Step 1: Moles of $MnO_{4}^{-}$ used.
 
-$$n(MnO_{4}^{-}) = 0.0200 \times \frac{22.5}{1000} = 4.50 \times 10^{-4} \text{ mol}$$
+$$n(MnO_{4}^{-}) = 0.0200 \times \frac{22.5}{1000} = 4.50 \times 10^{-4} \text{'\{'} mol{'\}'}$$
 
 Step 2: Moles of $Fe^{2+}$ in 25.0 cm$^{3}$.
 
@@ -199,41 +199,41 @@ From the equation: $n(Fe^{2+}) = 5 \times n(MnO_{4}^{-}) = 5 \times 4.50 \times 
 
 Step 3: Moles of $Fe^{2+}$ in 250 cm$^{3}$ (total solution).
 
-$$n(Fe^{2+})_{\text{total}} = 2.250 \times 10^{-3} \times \frac{250}{25.0} = 0.02250 \text{ mol}$$
+$$n(Fe^{2+})_{\text{'\{'}total{'\}'}} = 2.250 \times 10^{-3} \times \frac{250}{25.0} = 0.02250 \text{'\{'} mol{'\}'}$$
 
 Step 4: Mass of $FeSO_{4}\cdot 7H_{2}O$.
 
 $$M(FeSO_{4}\cdot 7H_{2}O) = 55.8 + 32.1 + 4 \times 16.0 + 7 \times (2 \times 1.0 + 16.0)$$
 
-$$= 55.8 + 32.1 + 64.0 + 7 \times 18.0 = 55.8 + 32.1 + 64.0 + 126.0 = 277.9 \text{ g/mol}$$
+$$= 55.8 + 32.1 + 64.0 + 7 \times 18.0 = 55.8 + 32.1 + 64.0 + 126.0 = 277.9 \text{'\{'} g/mol{'\}'}$$
 
-$$m(FeSO_{4}\cdot 7H_{2}O) = 0.02250 \times 277.9 = 6.253 \text{ g}$$
+$$m(FeSO_{4}\cdot 7H_{2}O) = 0.02250 \times 277.9 = 6.253 \text{'\{'} g{'\}'}$$
 
 Step 5: Percentage purity.
 
-$$\%\text{ purity} = \frac{6.253}{5.00} \times 100\% = 125\%$$
+$$\%\text{'\{'} purity{'\}'} = \frac{6.253}{5.00} \times 100\% = 125\%$$
 
 This is impossible, indicating an error. Let me recalculate:
 
-$$n(MnO_{4}^{-}) = 0.0200 \times 0.0225 = 4.50 \times 10^{-4} \text{ mol}$$
+$$n(MnO_{4}^{-}) = 0.0200 \times 0.0225 = 4.50 \times 10^{-4} \text{'\{'} mol{'\}'}$$
 
-$$n(Fe^{2+}) \text{ in } 25.0 \text{ cm}^{3} = 5 \times 4.50 \times 10^{-4} = 2.250 \times 10^{-3} \text{ mol}$$
+$$n(Fe^{2+}) \text{'\{'} in {'\}'} 25.0 \text{'\{'} cm{'\}'}^{3} = 5 \times 4.50 \times 10^{-4} = 2.250 \times 10^{-3} \text{'\{'} mol{'\}'}$$
 
-$$n(Fe^{2+}) \text{ total} = 2.250 \times 10^{-3} \times 10 = 0.02250 \text{ mol}$$
+$$n(Fe^{2+}) \text{'\{'} total{'\}'} = 2.250 \times 10^{-3} \times 10 = 0.02250 \text{'\{'} mol{'\}'}$$
 
-$$m = 0.02250 \times 277.9 = 6.253 \text{ g}$$
+$$m = 0.02250 \times 277.9 = 6.253 \text{'\{'} g{'\}'}$$
 
 Since this exceeds 5.00 g, the data is inconsistent. For a realistic problem, let me adjust: if the titre were **12.5 cm$^{3}$**:
 
 $$n(MnO_{4}^{-}) = 0.0200 \times 0.0125 = 2.50 \times 10^{-4}$$
 
-$$n(Fe^{2+}) \text{ in } 25.0 \text{ cm}^{3} = 1.250 \times 10^{-3}$$
+$$n(Fe^{2+}) \text{'\{'} in {'\}'} 25.0 \text{'\{'} cm{'\}'}^{3} = 1.250 \times 10^{-3}$$
 
-$$n(Fe^{2+}) \text{ total} = 0.01250$$
+$$n(Fe^{2+}) \text{'\{'} total{'\}'} = 0.01250$$
 
-$$m = 0.01250 \times 277.9 = 3.474 \text{ g}$$
+$$m = 0.01250 \times 277.9 = 3.474 \text{'\{'} g{'\}'}$$
 
-$$\%\text{ purity} = \frac{3.474}{5.00} \times 100\% = 69.5\%$$
+$$\%\text{'\{'} purity{'\}'} = \frac{3.474}{5.00} \times 100\% = 69.5\%$$
 
 (c) The reaction requires $H^{+}$ ions as a reactant (see the equation). Without an acidic medium, $MnO_{4}^{-}$ would be reduced to $MnO_{2}$ instead of $Mn^{2+}$, and the stoichiometry would change. The acid also prevents the formation of insoluble $MnO_{2}$.
 
@@ -263,35 +263,35 @@ Limestone (mainly $CaCO_{3}$) is analysed by reacting it with acid and collectin
 
 Pressure of dry $CO_{2}$ = Total pressure - Vapour pressure of water
 
-$$P(CO_{2}) = 101 - 2.3 = 98.7 \text{ kPa}$$
+$$P(CO_{2}) = 101 - 2.3 = 98.7 \text{'\{'} kPa{'\}'}$$
 
 Using Boyle's law (at constant temperature, $P_{1}V_{1} = P_{2}V_{2}$) to find volume at atmospheric pressure:
 
-$$V_{\text{dry}} = \frac{520 \times 98.7}{101} = 508 \text{ cm}^{3} = 0.508 \text{ dm}^{3}$$
+$$V_{\text{'\{'}dry{'\}'}} = \frac{520 \times 98.7}{101} = 508 \text{'\{'} cm{'\}'}^{3} = 0.508 \text{'\{'} dm{'\}'}^{3}$$
 
-(b) $$n(CO_{2}) = \frac{V}{24.0} = \frac{0.508}{24.0} = 0.0212 \text{ mol}$$
+(b) $$n(CO_{2}) = \frac{V}{24.0} = \frac{0.508}{24.0} = 0.0212 \text{'\{'} mol{'\}'}$$
 
 From $CaCO_{3} + 2HCl \rightarrow CaCl_{2} + CO_{2} + H_{2}O$:
 
-$$n(CaCO_{3}) = n(CO_{2}) = 0.0212 \text{ mol}$$
+$$n(CaCO_{3}) = n(CO_{2}) = 0.0212 \text{'\{'} mol{'\}'}$$
 
-$$m(CaCO_{3}) = 0.0212 \times 100.1 = 2.12 \text{ g}$$
+$$m(CaCO_{3}) = 0.0212 \times 100.1 = 2.12 \text{'\{'} g{'\}'}$$
 
-$$\%\text{ } CaCO_{3} = \frac{2.12}{2.50} \times 100\% = 84.8\%$$
+$$\%\text{'\{'} {'\}'} CaCO_{3} = \frac{2.12}{2.50} \times 100\% = 84.8\%$$
 
 (c) Moles of $HCl$ reacted:
 
-$$n(HCl)_{\text{reacted}} = 2 \times n(CaCO_{3}) = 2 \times 0.0212 = 0.0424 \text{ mol}$$
+$$n(HCl)_{\text{'\{'}reacted{'\}'}} = 2 \times n(CaCO_{3}) = 2 \times 0.0212 = 0.0424 \text{'\{'} mol{'\}'}$$
 
 Moles of $HCl$ initially:
 
-$$n(HCl)_{\text{initial}} = 2.00 \times 0.100 = 0.200 \text{ mol}$$
+$$n(HCl)_{\text{'\{'}initial{'\}'}} = 2.00 \times 0.100 = 0.200 \text{'\{'} mol{'\}'}$$
 
 Moles of $HCl$ remaining:
 
-$$n(HCl)_{\text{remaining}} = 0.200 - 0.0424 = 0.158 \text{ mol}$$
+$$n(HCl)_{\text{'\{'}remaining{'\}'}} = 0.200 - 0.0424 = 0.158 \text{'\{'} mol{'\}'}$$
 
-$$C(HCl)_{\text{remaining}} = \frac{0.158}{0.100} = 1.58 \text{ mol/dm}^{3}$$
+$$C(HCl)_{\text{'\{'}remaining{'\}'}} = \frac{0.158}{0.100} = 1.58 \text{'\{'} mol/dm{'\}'}^{3}$$
 
 ---
 
@@ -315,23 +315,23 @@ $$C(HCl)_{\text{remaining}} = \frac{0.158}{0.100} = 1.58 \text{ mol/dm}^{3}$$
 
 (a) $CH_{3}COOH + C_{2}H_{5}OH \rightleftharpoons CH_{3}COOC_{2}H_{5} + H_{2}O$
 
-(b) $$M(CH_{3}COOH) = 2 \times 12.0 + 4 \times 1.0 + 2 \times 16.0 = 60.0 \text{ g/mol}$$
+(b) $$M(CH_{3}COOH) = 2 \times 12.0 + 4 \times 1.0 + 2 \times 16.0 = 60.0 \text{'\{'} g/mol{'\}'}$$
 
-$$n(CH_{3}COOH) = \frac{15.0}{60.0} = 0.250 \text{ mol}$$
+$$n(CH_{3}COOH) = \frac{15.0}{60.0} = 0.250 \text{'\{'} mol{'\}'}$$
 
-$$M(C_{2}H_{5}OH) = 2 \times 12.0 + 6 \times 1.0 + 16.0 = 46.0 \text{ g/mol}$$
+$$M(C_{2}H_{5}OH) = 2 \times 12.0 + 6 \times 1.0 + 16.0 = 46.0 \text{'\{'} g/mol{'\}'}$$
 
-$$n(C_{2}H_{5}OH) = \frac{8.00}{46.0} = 0.174 \text{ mol}$$
+$$n(C_{2}H_{5}OH) = \frac{8.00}{46.0} = 0.174 \text{'\{'} mol{'\}'}$$
 
 From the equation, the mole ratio is 1:1. Since $0.174 \lt 0.250$, **ethanol** is the limiting reagent.
 
 (c) Theoretical moles of ester = moles of limiting reagent = 0.174 mol
 
-$$M(CH_{3}COOC_{2}H_{5}) = 4 \times 12.0 + 8 \times 1.0 + 2 \times 16.0 = 88.0 \text{ g/mol}$$
+$$M(CH_{3}COOC_{2}H_{5}) = 4 \times 12.0 + 8 \times 1.0 + 2 \times 16.0 = 88.0 \text{'\{'} g/mol{'\}'}$$
 
-$$m_{\text{theoretical}} = 0.174 \times 88.0 = 15.3 \text{ g}$$
+$$m_{\text{'\{'}theoretical{'\}'}} = 0.174 \times 88.0 = 15.3 \text{'\{'} g{'\}'}$$
 
-$$\%\text{ yield} = \frac{10.2}{15.3} \times 100\% = 66.7\%$$
+$$\%\text{'\{'} yield{'\}'} = \frac{10.2}{15.3} \times 100\% = 66.7\%$$
 
 (d) Esterification is a **reversible reaction** that reaches equilibrium. Not all reactants are converted to products. Additionally:
 - Some product may be lost during purification (e.g., during separation from the reaction mixture).

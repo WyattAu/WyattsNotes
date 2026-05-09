@@ -222,16 +222,16 @@ export capacity), but unsustainable if used for consumption.
 
 **Solution:**
 
-(a) Terms of trade $= \frac{\text{Export price index}}{\text{Import price index}} \times 100$.
+(a) Terms of trade $= \frac{\text{'\{'}Export price index{'\}'}}{\text{'\{'}Import price index{'\}'}} \times 100$.
 
 - 2020: $ToT = \frac{120}{100} \times 100 = 120$.
 - 2025: $ToT = \frac{144}{130} \times 100 = 110.77$.
 
 (b) The terms of trade have **deteriorated** from 120 to 110.77. The country now needs to export more to buy the same amount of imports. Export prices rose by 20% ($144/120$) while import prices rose by 30% ($130/100$). Since import prices rose faster, the terms of trade worsened.
 
-(c) Income terms of trade $= ToT \times \text{Export quantity index} = 110.77 \times 110 = 12\,185$ (index).
+(c) Income terms of trade $= ToT \times \text{'\{'}Export quantity index{'\}'} = 110.77 \times 110 = 12\,185$ (index).
 
-Alternatively, export revenue in base-year prices $= \frac{500}{144} \times 100 \times \frac{110}{100} = 3.472 \times 110 \times 100 = \text{approximately } \$381.9$ billion (in base-year prices).
+Alternatively, export revenue in base-year prices $= \frac{500}{144} \times 100 \times \frac{110}{100} = 3.472 \times 110 \times 100 = \text{'\{'}approximately {'\}'} \$381.9$ billion (in base-year prices).
 
 Income terms of trade $= 110.77 \times 110 / 100 = 121.85$.
 
@@ -295,9 +295,9 @@ Long run: $1.4 + 1.1 = 2.5 > 1$. The condition is **satisfied**.
 
 **Trade diversion:** When a free trade agreement causes a member country to switch imports from a lower-cost non-member country to a higher-cost member country (because the tariff on the member is removed). This reduces efficiency and welfare because resources are allocated to a higher-cost producer.
 
-(b) Before RCEP: Hong Kong imports from X at $\$100 + 10\% \text{ tariff} = \$110$ per unit.
+(b) Before RCEP: Hong Kong imports from X at $\$100 + 10\% \text{'\{'} tariff{'\}'} = \$110$ per unit.
 
-After RCEP: Hong Kong imports from Y at $\$105 + 0\% \text{ tariff} = \$105$ per unit.
+After RCEP: Hong Kong imports from Y at $\$105 + 0\% \text{'\{'} tariff{'\}'} = \$105$ per unit.
 
 **Trade diversion effect:** Hong Kong switches from the more efficient producer (X at \$100) to the less efficient producer (Y at \$105). The world loses $\$5$ per unit of efficiency. This is trade diversion because the trade flow is diverted from the most efficient source to a less efficient one due to the tariff preference.
 

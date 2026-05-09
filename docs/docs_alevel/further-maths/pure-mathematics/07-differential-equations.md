@@ -877,7 +877,7 @@ $\boxed{y = Ae^{3x} + Be^{-x} - 2e^{2x}}$
 
 ### Question 9
 
-A body cools according to $\dfrac{d\theta}{dt} = -k(\theta - 20)$, where $\theta$ is the temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and $\theta(10) = 50$, find $\theta(30)$.
+A body cools according to $\dfrac{d\theta}{dt} = -k(\theta - 20)$, where $\theta$ is the temperature in $°\mathrm{'\{'}C{'\}'}$ and $20°\mathrm{'\{'}C{'\}'}$ is the room temperature. If $\theta(0) = 90$ and $\theta(10) = 50$, find $\theta(30)$.
 
 <details>
 <summary>Solution</summary>
@@ -892,7 +892,7 @@ $\theta(0) = 90 \implies C = 70$. $\theta(10) = 50 \implies 50 = 20 + 70e^{-10k}
 
 $\theta(30) = 20 + 70e^{-30k} = 20 + 70\!\left(\dfrac{3}{7}\right)^{\!3} = 20 + 70 \times \dfrac{27}{343} = 20 + \dfrac{1890}{343}$.
 
-$\boxed{\theta(30) \approx 25.5°\mathrm{C}}$
+$\boxed{\theta(30) \approx 25.5°\mathrm{'\{'}C{'\}'}}$
 
 </details>
 
@@ -1016,13 +1016,13 @@ $$y = \frac{1}{\mu}\int \mu Q\,dx + \frac{C}{\mu}$$
 
 ### 14.2 Systems of linear ODEs
 
-For the system $\dot{\mathbf{x}} = \mathbf{A}\mathbf{x}$ where $\mathbf{x} = (x_1, \ldots, x_n)$:
+For the system $\dot{\mathbf{'\{'}x{'\}'}} = \mathbf{'\{'}A{'\}'}\mathbf{'\{'}x{'\}'}$ where $\mathbf{'\{'}x{'\}'} = (x_1, \ldots, x_n)$:
 
-If $\mathbf{A}$ is diagonalisable with $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$, let $\mathbf{z} = \mathbf{P}^{-1}\mathbf{x}$:
+If $\mathbf{'\{'}A{'\}'}$ is diagonalisable with $\mathbf{'\{'}A{'\}'} = \mathbf{'\{'}P{'\}'}\mathbf{'\{'}D{'\}'}\mathbf{'\{'}P{'\}'}^{-1}$, let $\mathbf{'\{'}z{'\}'} = \mathbf{'\{'}P{'\}'}^{-1}\mathbf{'\{'}x{'\}'}$:
 
-$\dot{\mathbf{z}} = \mathbf{D}\mathbf{z}$, giving $z_i = c_i e^{\lambda_i t}$.
+$\dot{\mathbf{'\{'}z{'\}'}} = \mathbf{'\{'}D{'\}'}\mathbf{'\{'}z{'\}'}$, giving $z_i = c_i e^{\lambda_i t}$.
 
-$\mathbf{x} = \mathbf{P}\mathbf{z} = \sum c_i e^{\lambda_i t}\mathbf{v}_i$.
+$\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}P{'\}'}\mathbf{'\{'}z{'\}'} = \sum c_i e^{\lambda_i t}\mathbf{'\{'}v{'\}'}_i$.
 
 ### 14.3 Boundary value problems vs initial value problems
 

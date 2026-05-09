@@ -26,13 +26,13 @@ Consider two countries, A and B, producing two goods, wine and cloth. Output per
 
 Opportunity costs:
 
-- Country A: 1 bottle of wine costs $3/6 = 0.5\;\mathrm{m}$ of cloth; 1 metre of cloth costs
+- Country A: 1 bottle of wine costs $3/6 = 0.5\;\mathrm{'\{'}m{'\}'}$ of cloth; 1 metre of cloth costs
   $6/3 = 2$ bottles of wine
-- Country B: 1 bottle of wine costs $4/2 = 2\;\mathrm{m}$ of cloth; 1 metre of cloth costs
+- Country B: 1 bottle of wine costs $4/2 = 2\;\mathrm{'\{'}m{'\}'}$ of cloth; 1 metre of cloth costs
   $2/4 = 0.5$ bottles of wine
 
-Country A has a comparative advantage in wine (lower opportunity cost: $0.5\;\mathrm{m}$ vs.
-$2\;\mathrm{m}$). Country B has a comparative advantage in cloth (lower opportunity cost: $0.5$
+Country A has a comparative advantage in wine (lower opportunity cost: $0.5\;\mathrm{'\{'}m{'\}'}$ vs.
+$2\;\mathrm{'\{'}m{'\}'}$). Country B has a comparative advantage in cloth (lower opportunity cost: $0.5$
 bottles vs. $2$ bottles).
 
 Both countries gain from specialising in the good in which they have a comparative advantage and
@@ -104,7 +104,7 @@ endowments (e.g., Germany and France trade cars with each other).
 the UK exports Jaguar cars to Germany while importing BMW cars from Germany). The **Grubel-Lloyd
 index** measures the extent of intra-industry trade:
 
-$$\mathrm{GL}_i = 1 - \frac{|X_i - M_i|}{X_i + M_i}$$
+$$\mathrm{'\{'}GL{'\}'}_i = 1 - \frac{|X_i - M_i|}{X_i + M_i}$$
 
 Where $X_i$ and $M_i$ are exports and imports of industry $i$. GL ranges from 0 (pure
 inter-industry trade) to 1 (pure intra-industry trade).
@@ -115,7 +115,7 @@ inter-industry trade) to 1 (pure intra-industry trade).
 
 The **terms of trade** (ToT) measure the ratio of a country's export prices to its import prices:
 
-$$\mathrm{ToT} = \frac{\mathrm{Index\ of\ Export\ Prices}}{\mathrm{Index\ of\ Import\ Prices}} \times 100$$
+$$\mathrm{'\{'}ToT{'\}'} = \frac{\mathrm{'\{'}Index\ of\ Export\ Prices{'\}'}}{\mathrm{'\{'}Index\ of\ Import\ Prices{'\}'}} \times 100$$
 
 - An **improvement** in the terms of trade (ToT rises) means a country can buy more imports for a
   given volume of exports -- a favourable change
@@ -133,7 +133,7 @@ A ToT improvement is not always beneficial:
 
 The **income terms of trade** adjusts for export volume:
 
-$$\mathrm{Income\ ToT} = \mathrm{ToT} \times \text{Volume of exports}$$
+$$\mathrm{'\{'}Income\ ToT{'\}'} = \mathrm{'\{'}ToT{'\}'} \times \text{'\{'}Volume of exports{'\}'}$$
 
 This provides a better indicator of a country's capacity to import.
 
@@ -190,7 +190,7 @@ Records transactions in financial assets and liabilities:
 
 ### The Balance of Payments Identity
 
-$$\mathrm{Current\ Account} + \mathrm{Capital\ Account} + \mathrm{Financial\ Account} + \mathrm{Statistical\ Discrepancy} = 0$$
+$$\mathrm{'\{'}Current\ Account{'\}'} + \mathrm{'\{'}Capital\ Account{'\}'} + \mathrm{'\{'}Financial\ Account{'\}'} + \mathrm{'\{'}Statistical\ Discrepancy{'\}'} = 0$$
 
 A current account deficit must be financed by a surplus on the capital and financial accounts (net
 capital inflows). A current account surplus corresponds to net capital outflows.
@@ -288,7 +288,7 @@ determined by supply and demand in the foreign exchange market.
 A currency depreciation improves the current account balance only if the sum of the absolute values
 of PED for exports and PED for imports exceeds 1:
 
-$$|\mathrm{PED}_X| + |\mathrm{PED}_M| > 1$$
+$$|\mathrm{'\{'}PED{'\}'}_X| + |\mathrm{'\{'}PED{'\}'}_M| > 1$$
 
 **Intuition:** if demand for both exports and imports is elastic, the depreciation increases export
 revenue (more units sold at a lower price per unit) and reduces import expenditure (fewer units
@@ -312,12 +312,12 @@ purchasing power of different currencies:
 
 **Absolute PPP**: the exchange rate should equal the ratio of price levels between two countries:
 
-$$S = \frac{P_{\text{domestic}}}{P_{\text{foreign}}}$$
+$$S = \frac{P_{\text{'\{'}domestic{'\}'}}}{P_{\text{'\{'}foreign{'\}'}}}$$
 
 **Relative PPP**: changes in the exchange rate should reflect the inflation differential between two
 countries:
 
-$$\%\Delta S \approx \pi_{\text{domestic}} - \pi_{\text{foreign}}$$
+$$\%\Delta S \approx \pi_{\text{'\{'}domestic{'\}'}} - \pi_{\text{'\{'}foreign{'\}'}}$$
 
 Where $S$ is the spot exchange rate (domestic currency per unit of foreign currency). If domestic
 inflation exceeds foreign inflation, the domestic currency should depreciate.
@@ -364,7 +364,7 @@ the tariff, reducing import volumes and increasing domestic production.
   bought at the world price but not at the tariff-inclusive price) and one from inefficient
   domestic production (domestic firms producing at higher cost than the world price)
 
-$$\mathrm{DWL} = \frac{1}{2} \times t \times (\text{reduction in imports}) + \frac{1}{2} \times t \times (\text{additional domestic production at higher cost})$$
+$$\mathrm{'\{'}DWL{'\}'} = \frac{1}{2} \times t \times (\text{'\{'}reduction in imports{'\}'}) + \frac{1}{2} \times t \times (\text{'\{'}additional domestic production at higher cost{'\}'})$$
 
 ### Quotas
 
@@ -459,7 +459,7 @@ resources are allocated to a less efficient producer.
 
 The net welfare effect depends on the relative sizes of trade creation and trade diversion:
 
-$$\text{Net welfare effect} = \text{Trade creation gain} - \text{Trade diversion loss}$$
+$$\text{'\{'}Net welfare effect{'\}'} = \text{'\{'}Trade creation gain{'\}'} - \text{'\{'}Trade diversion loss{'\}'}$$
 
 A trade bloc is more likely to generate net welfare gains when:
 
@@ -780,9 +780,9 @@ Current account $= -70 + 40 - 30 - 20 = -80$ billion USD (deficit).
 
 Financial account $= 80 - 30 + 15 - 10 = +55$ billion USD.
 
-(c) Balance of payments identity: $\text{Current Account} + \text{Capital Account} + \text{Financial Account} + \text{Errors} = 0$
+(c) Balance of payments identity: $\text{'\{'}Current Account{'\}'} + \text{'\{'}Capital Account{'\}'} + \text{'\{'}Financial Account{'\}'} + \text{'\{'}Errors{'\}'} = 0$
 
-$-80 + 0 + 55 + \text{Errors} = 0 \implies \text{Errors} = +25$ billion USD.
+$-80 + 0 + 55 + \text{'\{'}Errors{'\}'} = 0 \implies \text{'\{'}Errors{'\}'} = +25$ billion USD.
 
 The statistical discrepancy (errors and omissions) is `USD 25` billion, reflecting measurement
 imperfections in the balance of payments data.
@@ -801,7 +801,7 @@ depreciates by $15\%$.
 
 (c) How might the result differ in the long run?
 
-(a) $|\mathrm{PED}_X| + |\mathrm{PED}_M| = 0.6 + 0.3 = 0.9 < 1$
+(a) $|\mathrm{'\{'}PED{'\}'}_X| + |\mathrm{'\{'}PED{'\}'}_M| = 0.6 + 0.3 = 0.9 < 1$
 
 The Marshall-Lerner condition is NOT satisfied. The depreciation will worsen the current account
 in the short run because demand for both exports and imports is inelastic. The increase in export
@@ -821,7 +821,7 @@ after depreciation:
 - Foreign buyers increase purchases of cheaper exports
 - New contracts are negotiated at the new exchange rate
 
-If long-run PEDs satisfy the condition (e.g., $|\mathrm{PED}_X| = 1.2$ and $|\mathrm{PED}_M| = 0.8$,
+If long-run PEDs satisfy the condition (e.g., $|\mathrm{'\{'}PED{'\}'}_X| = 1.2$ and $|\mathrm{'\{'}PED{'\}'}_M| = 0.8$,
 sum $= 2.0 > 1$), the current account will eventually improve. The J-curve describes the path
 from short-run deterioration to long-run improvement.
 
@@ -858,19 +858,19 @@ The tariff is prohibitive -- it eliminates all imports.
 
 Pre-tariff CS $= \frac{1}{2}(100 - 50)(100) = 2500$
 Post-tariff CS $= \frac{1}{2}(100 - 60)(80) = 1600$
-$\Delta\text{CS} = 1600 - 2500 = -900$
+$\Delta\text{'\{'}CS{'\}'} = 1600 - 2500 = -900$
 
 Producer surplus change:
 
 Pre-tariff PS $= \frac{1}{2}(50 - 20)(60) = 900$
 Post-tariff PS $= \frac{1}{2}(60 - 20)(80) = 1600$
-$\Delta\text{PS} = 1600 - 900 = +700$
+$\Delta\text{'\{'}PS{'\}'} = 1600 - 900 = +700$
 
 Government revenue $= 10 \times 0 = 0$ (no imports)
 
 Deadweight loss:
 
-$\mathrm{DWL} = |\Delta\text{CS}| - \Delta\text{PS} - \text{Govt revenue} = 900 - 700 - 0 = 200$
+$\mathrm{'\{'}DWL{'\}'} = |\Delta\text{'\{'}CS{'\}'}| - \Delta\text{'\{'}PS{'\}'} - \text{'\{'}Govt revenue{'\}'} = 900 - 700 - 0 = 200$
 
 Alternatively, DWL $= \frac{1}{2} \times 10 \times (100 - 80) + \frac{1}{2} \times 10 \times (80 - 60) = 100 + 100 = 200$
 
@@ -899,11 +899,11 @@ the product in the US market is $-1.5$.
 
 (b) Before: $100 \times 1.10 = \$110$. After: $100 \times 1.25 = \$125$.
 
-(c) $\mathrm{PED} = \frac{\%\Delta Q_d}{\%\Delta P}$
+(c) $\mathrm{'\{'}PED{'\}'} = \frac{\%\Delta Q_d}{\%\Delta P}$
 
 $\%\Delta P = \frac{125 - 110}{110} \times 100 = 13.64\%$
 
-$\%\Delta Q_d = \mathrm{PED} \times \%\Delta P = -1.5 \times 13.64\% = -20.45\%$
+$\%\Delta Q_d = \mathrm{'\{'}PED{'\}'} \times \%\Delta P = -1.5 \times 13.64\% = -20.45\%$
 
 Quantity demanded falls by approximately $20.45\%$.
 
@@ -977,14 +977,14 @@ difference between the autarky (no-trade) opportunity cost ratios and the terms 
 Let $a_1$ and $a_2$ be the unit labour requirements for goods 1 and 2 in Country A, and $b_1$
 and $b_2$ in Country B. The opportunity cost of good 1 in terms of good 2 is:
 
-- Country A: $\mathrm{OC}_A = a_1 / a_2$
-- Country B: $\mathrm{OC}_B = b_1 / b_2$
+- Country A: $\mathrm{'\{'}OC{'\}'}_A = a_1 / a_2$
+- Country B: $\mathrm{'\{'}OC{'\}'}_B = b_1 / b_2$
 
-Country A has a comparative advantage in good 1 if $\mathrm{OC}_A < \mathrm{OC}_B$.
+Country A has a comparative advantage in good 1 if $\mathrm{'\{'}OC{'\}'}_A < \mathrm{'\{'}OC{'\}'}_B$.
 
 The terms of trade must lie between the two opportunity cost ratios:
 
-$$\mathrm{OC}_A < \text{ToT} < \mathrm{OC}_B$$
+$$\mathrm{'\{'}OC{'\}'}_A < \text{'\{'}ToT{'\}'} < \mathrm{'\{'}OC{'\}'}_B$$
 
 Any terms of trade within this range makes both countries better off than under autarky.
 
@@ -1048,7 +1048,7 @@ Both countries are strictly better off.
 
 The terms of trade index measures the ratio of export prices to import prices:
 
-$$\mathrm{ToT} = \frac{P_X}{P_M} \times 100$$
+$$\mathrm{'\{'}ToT{'\}'} = \frac{P_X}{P_M} \times 100$$
 
 Where $P_X$ is the export price index and $P_M$ is the import price index, both with base year = 100.
 
@@ -1070,7 +1070,7 @@ An improving ToT is not always good for the economy:
 1. **Volume effect**: if the ToT improves because export prices rise (due to supply constraints,
    not quality improvements), export volumes may fall. If the volume decline outweighs the price
    increase, export revenue falls
-2. **Income ToT**: $\text{Income ToT} = \text{ToT} \times \text{Volume of exports}$. A ToT
+2. **Income ToT**: $\text{'\{'}Income ToT{'\}'} = \text{'\{'}ToT{'\}'} \times \text{'\{'}Volume of exports{'\}'}$. A ToT
    improvement with a large volume decline may reduce the income ToT
 3. **Import cost effect**: if the ToT improves because import prices fall (e.g., lower oil prices),
    it may reflect weak global demand that also reduces demand for the country's exports
@@ -1112,14 +1112,14 @@ economy.
 
 ### The Balance of Payments Identity
 
-$$\mathrm{CA} + \mathrm{KA} + \mathrm{FA} + \mathrm{EO} = 0$$
+$$\mathrm{'\{'}CA{'\}'} + \mathrm{'\{'}KA{'\}'} + \mathrm{'\{'}FA{'\}'} + \mathrm{'\{'}EO{'\}'} = 0$$
 
 Where CA = Current Account, KA = Capital Account, FA = Financial Account, EO = Errors and
 Omissions.
 
-A current account deficit ($\mathrm{CA} < 0$) must be financed by:
-- A capital account surplus ($\mathrm{KA} > 0$)
-- A financial account surplus ($\mathrm{FA} > 0$): net capital inflows
+A current account deficit ($\mathrm{'\{'}CA{'\}'} < 0$) must be financed by:
+- A capital account surplus ($\mathrm{'\{'}KA{'\}'} > 0$)
+- A financial account surplus ($\mathrm{'\{'}FA{'\}'} > 0$): net capital inflows
 
 ### The Current Account and the Exchange Rate
 
@@ -1155,11 +1155,11 @@ A current account deficit is unsustainable if financed by:
 
 **Absolute PPP:** the exchange rate should equal the ratio of national price levels:
 
-$$S = \frac{P_{\text{domestic}}}{P_{\text{foreign}}}$$
+$$S = \frac{P_{\text{'\{'}domestic{'\}'}}}{P_{\text{'\{'}foreign{'\}'}}}$$
 
 **Relative PPP:** the rate of depreciation should equal the inflation differential:
 
-$$\%\Delta S \approx \pi_{\text{domestic}} - \pi_{\text{foreign}}$$
+$$\%\Delta S \approx \pi_{\text{'\{'}domestic{'\}'}} - \pi_{\text{'\{'}foreign{'\}'}}$$
 
 **Big Mac Index (The Economist):** a light-hearted but instructive application of PPP. If a Big
 Mac costs `USD 5.50` in the US and `EUR 4.50` in the Eurozone, the PPP-implied exchange rate is
@@ -1179,7 +1179,7 @@ undervalued by approximately 10% relative to PPP.
 
 **Covered Interest Rate Parity (CIRP):**
 
-$$F = S \times \frac{1 + i_{\text{domestic}}}{1 + i_{\text{foreign}}}$$
+$$F = S \times \frac{1 + i_{\text{'\{'}domestic{'\}'}}}{1 + i_{\text{'\{'}foreign{'\}'}}}$$
 
 Where $F$ is the forward exchange rate and $S$ is the spot rate. If CIRP does not hold, risk-free
 arbitrage is possible (borrow in the low-interest currency, convert at the spot rate, invest in
@@ -1187,7 +1187,7 @@ the high-interest currency, and lock in the forward rate).
 
 **Uncovered Interest Rate Parity (UIP):**
 
-$$E(S_{t+1}) = S_t \times \frac{1 + i_{\text{domestic}}}{1 + i_{\text{foreign}}}$$
+$$E(S_{t+1}) = S_t \times \frac{1 + i_{\text{'\{'}domestic{'\}'}}}{1 + i_{\text{'\{'}foreign{'\}'}}}$$
 
 Where $E(S_{t+1})$ is the expected future spot rate. UIP states that the expected return on
 domestic and foreign assets should be equal when adjusted for expected exchange rate changes.
@@ -1201,7 +1201,7 @@ in the short run (the "forward premium puzzle").
 The trade balance in domestic currency (assuming imports are denominated in foreign currency and
 then converted):
 
-$$\mathrm{TB} = P_X \cdot X(S) - S \cdot P_M^* \cdot M(S)$$
+$$\mathrm{'\{'}TB{'\}'} = P_X \cdot X(S) - S \cdot P_M^* \cdot M(S)$$
 
 Where $S$ is the domestic currency price of foreign currency (an increase in $S$ represents
 depreciation).
@@ -1209,9 +1209,9 @@ depreciation).
 For a depreciation to improve the trade balance, the derivative of TB with respect to $S$ must be
 positive. This condition simplifies to:
 
-$$|\mathrm{PED}_X| + |\mathrm{PED}_M| > 1$$
+$$|\mathrm{'\{'}PED{'\}'}_X| + |\mathrm{'\{'}PED{'\}'}_M| > 1$$
 
-Where $\mathrm{PED}_X = \frac{\%\Delta X}{\%\Delta S}$ and $\mathrm{PED}_M = \frac{\%\Delta M}{\%\Delta S}$.
+Where $\mathrm{'\{'}PED{'\}'}_X = \frac{\%\Delta X}{\%\Delta S}$ and $\mathrm{'\{'}PED{'\}'}_M = \frac{\%\Delta M}{\%\Delta S}$.
 
 **Empirical estimates:** in the short run (within 1 year), PED values are typically low (sum < 1),
 so the Marshall-Lerner condition is not satisfied. In the medium to long run (2--5 years), PED
@@ -1244,10 +1244,10 @@ values increase and the condition is usually satisfied. The J-curve describes th
 
 ### Tariff Revenue Calculation
 
-A tariff of $t$ per unit on a small country importing quantity $Q_{\text{imports}}$ generates
+A tariff of $t$ per unit on a small country importing quantity $Q_{\text{'\{'}imports{'\}'}}$ generates
 revenue:
 
-$$\text{Tariff revenue} = t \times Q_{\text{imports}}$$
+$$\text{'\{'}Tariff revenue{'\}'} = t \times Q_{\text{'\{'}imports{'\}'}}$$
 
 **Worked example:** A small country imports 50,000 units at a world price of `USD 100`. A specific
 tariff of `USD 20` per unit is imposed.
@@ -1257,14 +1257,14 @@ Post-tariff domestic price = `USD 120`.
 New import quantity: if domestic demand falls to 80,000 and domestic supply rises to 60,000,
 imports = $80,000 - 60,000 = 20,000$.
 
-Tariff revenue $= 20 \times 20,000 = \text{USD 400,000}$.
+Tariff revenue $= 20 \times 20,000 = \text{'\{'}USD 400,000{'\}'}$.
 
 ### Quota Analysis with Welfare
 
-A quota of $Q_{\text{quota}}$ units raises the domestic price to the level where total domestic
+A quota of $Q_{\text{'\{'}quota{'\}'}}$ units raises the domestic price to the level where total domestic
 demand minus domestic supply equals the quota:
 
-$$Q_d(P_{\text{quota}}) - Q_s(P_{\text{quota}}) = Q_{\text{quota}}$$
+$$Q_d(P_{\text{'\{'}quota{'\}'}}) - Q_s(P_{\text{'\{'}quota{'\}'}}) = Q_{\text{'\{'}quota{'\}'}}$$
 
 **Welfare effects compared to free trade:**
 
@@ -1282,11 +1282,11 @@ $$Q_d(P_{\text{quota}}) - Q_s(P_{\text{quota}}) = Q_{\text{quota}}$$
 For a **large country** (one that can influence world prices), a small tariff can improve national
 welfare by improving the terms of trade. The optimal tariff maximises:
 
-$$\text{Welfare gain from ToT improvement} - \text{DWL from reduced trade}$$
+$$\text{'\{'}Welfare gain from ToT improvement{'\}'} - \text{'\{'}DWL from reduced trade{'\}'}$$
 
 The optimal tariff rate is approximately:
 
-$$t^* \approx \frac{1}{\mathrm{PED}_{\text{foreign export supply}} - 1}$$
+$$t^* \approx \frac{1}{\mathrm{'\{'}PED{'\}'}_{\text{'\{'}foreign export supply{'\}'}} - 1}$$
 
 This argument does not apply to small countries (which are price takers) and ignores retaliation
 by trading partners.
@@ -1546,11 +1546,11 @@ goods, using incentives for export-oriented FDI and investment. Common in East A
 
 The HDI uses a geometric mean to combine three dimension indices:
 
-$$\text{HDI} = (I_{\text{health}} \times I_{\text{education}} \times I_{\text{income}})^{1/3}$$
+$$\text{'\{'}HDI{'\}'} = (I_{\text{'\{'}health{'\}'}} \times I_{\text{'\{'}education{'\}'}} \times I_{\text{'\{'}income{'\}'}})^{1/3}$$
 
 **Dimension indices:**
 
-$$I = \frac{\text{Actual} - \text{Minimum}}{\text{Maximum} - \text{Minimum}}$$
+$$I = \frac{\text{'\{'}Actual{'\}'} - \text{'\{'}Minimum{'\}'}}{\text{'\{'}Maximum{'\}'} - \text{'\{'}Minimum{'\}'}}$$
 
 **Goalposts:**
 
@@ -1563,7 +1563,7 @@ $$I = \frac{\text{Actual} - \text{Minimum}}{\text{Maximum} - \text{Minimum}}$$
 
 The GNI index uses logarithms to reflect diminishing marginal utility of income:
 
-$$I_{\text{income}} = \frac{\ln(\text{GNI per capita}) - \ln(100)}{\ln(75\,000) - \ln(100)}$$
+$$I_{\text{'\{'}income{'\}'}} = \frac{\ln(\text{'\{'}GNI per capita{'\}'}) - \ln(100)}{\ln(75\,000) - \ln(100)}$$
 
 **Why geometric mean?** Since 2010, the UNDP has used the geometric mean (instead of the
 arithmetic mean) to ensure that a very low score in one dimension cannot be fully compensated by
@@ -1574,7 +1574,7 @@ development.
 
 The GDI adjusts the HDI for gender inequality:
 
-$$\text{GDI} = \frac{\text{Female HDI}}{\text{Male HDI}}$$
+$$\text{'\{'}GDI{'\}'} = \frac{\text{'\{'}Female HDI{'\}'}}{\text{'\{'}Male HDI{'\}'}}$$
 
 It is calculated as the ratio of female HDI to male HDI, adjusted for the overall level of HDI.
 A GDI of 1 indicates perfect gender parity. A GDI below 1 indicates that female achievement is
@@ -1611,7 +1611,7 @@ The MPI, developed by UNDP and OPHI, measures poverty across three dimensions wi
 3. $H$ = headcount ratio (proportion of population that is multidimensionally poor)
 4. $A$ = average deprivation share among the poor (average proportion of indicators in which poor
    households are deprived)
-5. $\text{MPI} = H \times A$
+5. $\text{'\{'}MPI{'\}'} = H \times A$
 
 **Advantages over income-based measures:**
 
@@ -1639,13 +1639,13 @@ A country has the following data:
 
 (c) In which year was the country's purchasing power of exports highest?
 
-(a) $\text{ToT} = \frac{P_X}{P_M} \times 100$
+(a) $\text{'\{'}ToT{'\}'} = \frac{P_X}{P_M} \times 100$
 
-2020: $\text{ToT} = 100.0$
-2021: $\text{ToT} = 115/110 \times 100 = 104.5$
-2022: $\text{ToT} = 130/140 \times 100 = 92.9$
+2020: $\text{'\{'}ToT{'\}'} = 100.0$
+2021: $\text{'\{'}ToT{'\}'} = 115/110 \times 100 = 104.5$
+2022: $\text{'\{'}ToT{'\}'} = 130/140 \times 100 = 92.9$
 
-(b) Income ToT $= \text{ToT} \times \text{Export Volume Index} / 100$
+(b) Income ToT $= \text{'\{'}ToT{'\}'} \times \text{'\{'}Export Volume Index{'\}'} / 100$
 
 2020: $100.0 \times 100/100 = 100.0$
 2021: $104.5 \times 95/100 = 99.3$
@@ -1670,7 +1670,7 @@ and in the US is $3\%$.
 
 (c) If the actual forward rate is `USD 1.18` per euro, is there an arbitrage opportunity?
 
-(a) CIRP: $F = S \times \frac{1 + i_{\text{USD}}}{1 + i_{\text{EUR}}} = 1.20 \times \frac{1.03}{1.01} = 1.20 \times 1.0198 = 1.2238$
+(a) CIRP: $F = S \times \frac{1 + i_{\text{'\{'}USD{'\}'}}}{1 + i_{\text{'\{'}EUR{'\}'}}} = 1.20 \times \frac{1.03}{1.01} = 1.20 \times 1.0198 = 1.2238$
 
 The forward rate is `USD 1.2238` per euro.
 
@@ -1697,20 +1697,20 @@ the euro is the "foreign" currency and the US rate is the "domestic" rate. With 
 $F > S$, meaning the foreign currency (EUR) is expected to appreciate. This is incorrect
 according to UIP, which says the higher-interest currency should depreciate.
 
-The correct interpretation: since $i_{\text{USD}} = 3\% > i_{\text{EUR}} = 1\%$, UIP predicts the
+The correct interpretation: since $i_{\text{'\{'}USD{'\}'}} = 3\% > i_{\text{'\{'}EUR{'\}'}} = 1\%$, UIP predicts the
 USD should depreciate against the EUR. So the forward rate of 1.2238 USD/EUR means the EUR is
 stronger (USD depreciated), which is consistent with UIP.
 
-(c) Actual forward rate $F_{\text{actual}} = 1.18$ USD/EUR vs. CIRP-implied $F = 1.2238$ USD/EUR.
+(c) Actual forward rate $F_{\text{'\{'}actual{'\}'}} = 1.18$ USD/EUR vs. CIRP-implied $F = 1.2238$ USD/EUR.
 
 The euro is cheaper in the forward market than CIRP predicts. An arbitrageur can:
 1. Borrow euros at 1%
-2. Convert to USD at spot: $1 \text{ EUR} \to 1.20 \text{ USD}$
-3. Invest USD at 3%: $1.20 \times 1.03 = 1.236 \text{ USD after 1 year}$
-4. Sell USD forward at 1.18: $1.236 / 1.18 = 1.0475 \text{ EUR}$
-5. Repay euro loan: $1 \times 1.01 = 1.01 \text{ EUR}$
+2. Convert to USD at spot: $1 \text{'\{'} EUR{'\}'} \to 1.20 \text{'\{'} USD{'\}'}$
+3. Invest USD at 3%: $1.20 \times 1.03 = 1.236 \text{'\{'} USD after 1 year{'\}'}$
+4. Sell USD forward at 1.18: $1.236 / 1.18 = 1.0475 \text{'\{'} EUR{'\}'}$
+5. Repay euro loan: $1 \times 1.01 = 1.01 \text{'\{'} EUR{'\}'}$
 
-Risk-free profit: $1.0475 - 1.01 = 0.0375 \text{ EUR}$ per euro borrowed. This is an
+Risk-free profit: $1.0475 - 1.01 = 0.0375 \text{'\{'} EUR{'\}'}$ per euro borrowed. This is an
 arbitrage opportunity.
 
 </details>
@@ -1824,9 +1824,9 @@ secondary income (+20).
 
 Financial account: $40 - 15 + 15 - 12 = +28$ billion USD
 
-(c) $\text{CA} + \text{KA} + \text{FA} + \text{EO} = 0$
+(c) $\text{'\{'}CA{'\}'} + \text{'\{'}KA{'\}'} + \text{'\{'}FA{'\}'} + \text{'\{'}EO{'\}'} = 0$
 
-$-55 + 0 + 28 + \text{EO} = 0 \implies \text{EO} = +27$ billion USD
+$-55 + 0 + 28 + \text{'\{'}EO{'\}'} = 0 \implies \text{'\{'}EO{'\}'} = +27$ billion USD
 
 The statistical discrepancy is +27 billion, which is large (suggesting significant measurement
 issues, possibly unrecorded capital flows or trade misinvoicing).
@@ -1864,14 +1864,14 @@ The Big Mac Index (The Economist) provides an accessible application of absolute
 | China | 22 | 5.50 | 7.24 | 4.00 | Undervalued by 45% |
 | Switzerland | 7.02 | 5.50 | 0.89 | 1.28 | Overvalued by 44% |
 
-**PPP-implied exchange rate** $= P_{\text{domestic}} / P_{\text{USA}}$
+**PPP-implied exchange rate** $= P_{\text{'\{'}domestic{'\}'}} / P_{\text{'\{'}USA{'\}'}}$
 
 For Japan: PPP rate $= 450 / 5.50 = 81.8$ JPY/USD. Actual rate $= 149$. Japan is undervalued
 by $(149 - 81.8) / 81.8 \times 100 = 82\%$.
 
 Wait, let me recalculate more carefully:
 
-Over/undervaluation $= \frac{\text{PPP rate} - \text{Actual rate}}{\text{PPP rate}} \times 100$
+Over/undervaluation $= \frac{\text{'\{'}PPP rate{'\}'} - \text{'\{'}Actual rate{'\}'}}{\text{'\{'}PPP rate{'\}'}} \times 100$
 
 For Japan: $(81.8 - 149) / 81.8 \times 100 = -82\%$ (undervalued by 82%).
 
@@ -1893,14 +1893,14 @@ $3\%$ and US inflation is $2\%$.
 
 Predicted change in EUR/USD:
 
-$$\%\Delta S \approx \pi_{\text{EUR}} - \pi_{\text{US}} = 3\% - 2\% = 1\%$$
+$$\%\Delta S \approx \pi_{\text{'\{'}EUR{'\}'}} - \pi_{\text{'\{'}US{'\}'}} = 3\% - 2\% = 1\%$$
 
 The euro is expected to depreciate by approximately 1% against the dollar. New rate $= 1.20 \times 1.01
 = 1.212$ USD/EUR.
 
 **Verification with exact formula:**
 
-$$\frac{S_1}{S_0} = \frac{1 + \pi_{\text{EUR}}}{1 + \pi_{\text{US}}} = \frac{1.03}{1.02} = 1.0098$$
+$$\frac{S_1}{S_0} = \frac{1 + \pi_{\text{'\{'}EUR{'\}'}}}{1 + \pi_{\text{'\{'}US{'\}'}}} = \frac{1.03}{1.02} = 1.0098$$
 
 New rate $= 1.20 \times 1.0098 = 1.212$ USD/EUR.
 
@@ -1911,7 +1911,7 @@ relative to the dollar.
 
 The **real exchange rate** adjusts the nominal exchange rate for relative price levels:
 
-$$q = \frac{S \cdot P_{\text{domestic}}}{P_{\text{foreign}}}$$
+$$q = \frac{S \cdot P_{\text{'\{'}domestic{'\}'}}}{P_{\text{'\{'}foreign{'\}'}}}$$
 
 An increase in $q$ represents a **real depreciation** (the domestic currency loses purchasing
 power).
@@ -1919,8 +1919,8 @@ power).
 If PPP holds exactly, $q = 1$ at all times. Deviations from PPP indicate competitiveness
 changes:
 
-$$q > 1 \implies \text{domestic goods are more expensive relative to foreign (real appreciation)}$$
-$$q < 1 \implies \text{domestic goods are cheaper (real depreciation)}$$
+$$q > 1 \implies \text{'\{'}domestic goods are more expensive relative to foreign (real appreciation){'\}'}$$
+$$q < 1 \implies \text{'\{'}domestic goods are cheaper (real depreciation){'\}'}$$
 
 ## Transfer Pricing (HL Extension)
 
@@ -1931,8 +1931,8 @@ traded between related entities within a multinational corporation.
 
 MNCs can manipulate transfer prices to shift profits to low-tax jurisdictions:
 
-$$\text{Revenue in high-tax country} \downarrow \implies \text{Tax liability} \downarrow$$
-$$\text{Revenue in low-tax country} \uparrow \implies \text{After-tax profit} \uparrow$$
+$$\text{'\{'}Revenue in high-tax country{'\}'} \downarrow \implies \text{'\{'}Tax liability{'\}'} \downarrow$$
+$$\text{'\{'}Revenue in low-tax country{'\}'} \uparrow \implies \text{'\{'}After-tax profit{'\}'} \uparrow$$
 
 **Example:** A pharmaceutical company manufactures a drug at cost of USD 2 per unit in Ireland
 (corporate tax rate 12.5%) and sells it to its subsidiary in Germany (corporate tax rate 30%)
@@ -2068,13 +2068,13 @@ commodity prices, driven by structural shifts in global demand.
 
 During a super-cycle upswing:
 
-$$\text{ToT improve} \implies \text{Higher export revenue} \implies \text{Higher government
-savings} \implies \text{Higher investment}$$
+$$\text{'\{'}ToT improve{'\}'} \implies \text{'\{'}Higher export revenue{'\}'} \implies \text{'\{'}Higher government
+savings{'\}'} \implies \text{'\{'}Higher investment{'\}'}$$
 
 During a super-cycle downswing:
 
-$$\text{ToT deteriorate} \implies \text{Lower export revenue} \implies \text{Fiscal deficits} \implies
-\text{Debt accumulation}$$
+$$\text{'\{'}ToT deteriorate{'\}'} \implies \text{'\{'}Lower export revenue{'\}'} \implies \text{'\{'}Fiscal deficits{'\}'} \implies
+\text{'\{'}Debt accumulation{'\}'}$$
 
 The volatility of commodity prices makes fiscal planning extremely difficult for
 commodity-dependent developing countries.
@@ -2130,13 +2130,13 @@ overvalued (stronger than PPP predicts).
 India: actual $= 75$ INR/USD, PPP $= 1.083$ USD/INR, or $92.3$ INR/USD. Since $75 < 92.3$, the rupee
 is overvalued.
 
-(c) Relative PPP: $\%\Delta S \approx \pi_{\text{domestic}} - \pi_{\text{US}}$
+(c) Relative PPP: $\%\Delta S \approx \pi_{\text{'\{'}domestic{'\}'}} - \pi_{\text{'\{'}US{'\}'}}$
 
 GBP/USD: $\%\Delta = 4.0\% - 2.5\% = 1.5\%$. New rate $= 0.75 \times 1.015 = 0.761$
 
 JPY/USD: $\%\Delta = 1.0\% - 2.5\% = -1.5\%$. New rate $= 110 \times (1 - 0.015) = 108.35$
 
-INR/USD: $\%\Delta \approx \pi_{\text{India}} - \pi_{\text{US}}$. If India's inflation is 6%:
+INR/USD: $\%\Delta \approx \pi_{\text{'\{'}India{'\}'}} - \pi_{\text{'\{'}US{'\}'}}$. If India's inflation is 6%:
 New rate $= 75 \times (1 + 0.06 - 0.025) = 75 \times 1.035 = 77.63$
 
 </details>
@@ -2345,10 +2345,10 @@ It must choose two of the three:
 
 **Sequence of events:**
 
-$$\text{Capital inflows} \implies \text{Credit boom} \implies \text{Asset price bubble}$$
-$$\implies \text{Loss of confidence} \implies \text{Capital outflows}$$
-$$\implies \text{Reserve depletion} \implies \text{Forced devaluation}$$
-$$\implies \text{Currency crisis} \implies \text{Banking crisis} \implies \text{Recession}$$
+$$\text{'\{'}Capital inflows{'\}'} \implies \text{'\{'}Credit boom{'\}'} \implies \text{'\{'}Asset price bubble{'\}'}$$
+$$\implies \text{'\{'}Loss of confidence{'\}'} \implies \text{'\{'}Capital outflows{'\}'}$$
+$$\implies \text{'\{'}Reserve depletion{'\}'} \implies \text{'\{'}Forced devaluation{'\}'}$$
+$$\implies \text{'\{'}Currency crisis{'\}'} \implies \text{'\{'}Banking crisis{'\}'} \implies \text{'\{'}Recession{'\}'}$$
 
 **Impact:**
 
@@ -2689,11 +2689,11 @@ Brexit illustrates the economic costs of leaving a customs union:
 
 The spillover effect of FDI on domestic firms can be modelled as:
 
-$$\text{TFP}_{d,i} = \alpha + \beta \text{FDI}_{s,j} + \gamma X_i + \epsilon_i$$
+$$\text{'\{'}TFP{'\}'}_{d,i} = \alpha + \beta \text{'\{'}FDI{'\}'}_{s,j} + \gamma X_i + \epsilon_i$$
 
 Where:
-- $\text{TFP}_{d,i}$ = total factor productivity of domestic firm $i$
-- $\text{FDI}_{s,j}$ = FDI presence in sector $j$ (e.g., share of sector employment or output)
+- $\text{'\{'}TFP{'\}'}_{d,i}$ = total factor productivity of domestic firm $i$
+- $\text{'\{'}FDI{'\}'}_{s,j}$ = FDI presence in sector $j$ (e.g., share of sector employment or output)
 - $X_i$ = firm characteristics (size, age, export status)
 - $\beta$ = spillover coefficient
 
@@ -2729,7 +2729,7 @@ The average TFP of domestic manufacturing firms is 1.00 (base year).
 
 (c) Evaluate the policy of offering tax incentives to attract FDI. [3 marks]
 
-(a) Change in FDI share: $\Delta \text{FDI} = 10$ percentage points.
+(a) Change in FDI share: $\Delta \text{'\{'}FDI{'\}'} = 10$ percentage points.
 
 Horizontal effect: $-0.02 \times 10 = -0.20$ (TFP decrease from competition)
 Backward effect: $+0.05 \times 10 = +0.50$ (TFP increase from supply chain linkages)
@@ -2809,7 +2809,7 @@ This does not sum to zero, suggesting errors and omissions of USD 30 billion.
 
 (c) **Sustainability analysis using the savings-investment identity:**
 
-$\text{CA} = S - I = (S_{\text{private}} + S_{\text{government}}) - I$
+$\text{'\{'}CA{'\}'} = S - I = (S_{\text{'\{'}private{'\}'}} + S_{\text{'\{'}government{'\}'}}) - I$
 
 A current account deficit of USD 60 billion means $I - S = 60$ billion: the country invests
 60 billion more than it saves, financing the gap with foreign capital inflows.
@@ -2840,7 +2840,7 @@ The deficit is sustainable if:
 
 **Recommendation:** the deficit is likely unsustainable at current levels. Policy options include:
 
-1. Fiscal consolidation (increase $S_{\text{government}}$)
+1. Fiscal consolidation (increase $S_{\text{'\{'}government{'\}'}}$)
 2. Structural reforms to boost competitiveness and exports
 3. Allow exchange rate depreciation to improve the current account
 4. Macroprudential measures to reduce capital flow volatility

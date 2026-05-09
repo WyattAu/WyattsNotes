@@ -24,7 +24,7 @@ $$\lim_{x \to a}\bigl[f(x) \cdot g(x)\bigr] = L \cdot M$$
 
 $$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}, \quad M \ne 0$$
 
-$$\lim_{x \to a} \bigl[f(x)\bigr]^n = L^n, \quad n \in \mathbb{Z}^{+}$$
+$$\lim_{x \to a} \bigl[f(x)\bigr]^n = L^n, \quad n \in \mathbb{'\{'}Z{'\}'}^{+}$$
 
 ### One-Sided Limits
 
@@ -94,7 +94,7 @@ $f(x) = |x|$ is continuous everywhere but not differentiable at $x = 0$.
 
 ### Differentiation Rules
 
-**Power rule.** For $n \in \mathbb{R}$:
+**Power rule.** For $n \in \mathbb{'\{'}R{'\}'}$:
 
 $$\frac{d}{dx}\bigl[x^n\bigr] = nx^{n-1}$$
 
@@ -171,11 +171,11 @@ To solve optimisation problems:
 When two or more quantities vary with time and are related by an equation, their rates of change are
 related by implicit differentiation with respect to time $t$.
 
-**Example.** A spherical balloon is inflated at $\dfrac{dV}{dt} = 100\;\mathrm{cm^3/s}$. Find
-$\dfrac{dr}{dt}$ when $r = 5\;\mathrm{cm}$.
+**Example.** A spherical balloon is inflated at $\dfrac{dV}{dt} = 100\;\mathrm{'\{'}cm^3/s{'\}'}$. Find
+$\dfrac{dr}{dt}$ when $r = 5\;\mathrm{'\{'}cm{'\}'}$.
 
 Since $V = \dfrac{4}{3}\pi r^3$, differentiating: $\dfrac{dV}{dt} = 4\pi r^2 \dfrac{dr}{dt}$.
-Substituting: $100 = 4\pi(25)\dfrac{dr}{dt}$, so $\dfrac{dr}{dt} = \dfrac{1}{\pi}\;\mathrm{cm/s}$.
+Substituting: $100 = 4\pi(25)\dfrac{dr}{dt}$, so $\dfrac{dr}{dt} = \dfrac{1}{\pi}\;\mathrm{'\{'}cm/s{'\}'}$.
 
 ### Curve Sketching
 
@@ -368,7 +368,7 @@ Find $\dfrac{dy}{dx}$ when $x^3 + y^3 - 3xy = 0$.
 <details>
 <summary>Problem 3</summary>
 
-A rectangular box with a square base has a surface area of $150\;\mathrm{cm^2}$. Find the dimensions
+A rectangular box with a square base has a surface area of $150\;\mathrm{'\{'}cm^2{'\}'}$. Find the dimensions
 that maximise the volume.
 
 </details>
@@ -422,9 +422,9 @@ $\dfrac{dy}{dx} = \dfrac{y - x^2}{y^2 - x}$.
 
 **Problem 3:** Let base side $= x$ and height $= h$. Surface area: $2x^2 + 4xh = 150$, so
 $h = \dfrac{75 - x^2}{2x}$. Volume $V = x^2 h = \dfrac{75x - x^3}{2}$. Setting
-$\dfrac{dV}{dx} = \dfrac{75 - 3x^2}{2} = 0$ gives $x = 5\;\mathrm{cm}$, $h = 5\;\mathrm{cm}$. Second
+$\dfrac{dV}{dx} = \dfrac{75 - 3x^2}{2} = 0$ gives $x = 5\;\mathrm{'\{'}cm{'\}'}$, $h = 5\;\mathrm{'\{'}cm{'\}'}$. Second
 derivative $V'' = -3x$ is negative at $x = 5$, confirming a maximum. Maximum volume is
-$125\;\mathrm{cm^3}$.
+$125\;\mathrm{'\{'}cm^3{'\}'}$.
 
 **Problem 4:** Let $u = x^2 + 1$, $du = 2x\,dx$.
 $\displaystyle\int_0^1 \frac{x}{\sqrt{x^2 + 1}}\,dx = \frac{1}{2}\int_1^2 u^{-1/2}\,du = \left[\sqrt{u}\right]_1^2 = \sqrt{2} - 1$.
@@ -475,7 +475,7 @@ intervals of increase and decrease.
 <details>
 <summary>Solution</summary>
 
-**Domain.** All $x \in \mathbb{R}$ except $x = \pm 1$.
+**Domain.** All $x \in \mathbb{'\{'}R{'\}'}$ except $x = \pm 1$.
 
 **Intercepts.** $y$-intercept: $x = 0 \implies y = 4$. $x$-intercepts: $x^2 - 4 = 0 \implies x = \pm 2$.
 
@@ -613,7 +613,7 @@ Evaluate $\displaystyle\int_0^{\pi/4} \sec^2 x\,e^{\tan x}\,dx$.
 <details>
 <summary>Problem 12</summary>
 
-A cylindrical can with radius $r$ and height $h$ has volume $V = \pi r^2 h = 500\;\mathrm{cm^3}$. Find the
+A cylindrical can with radius $r$ and height $h$ has volume $V = \pi r^2 h = 500\;\mathrm{'\{'}cm^3{'\}'}$. Find the
 values of $r$ and $h$ that minimise the surface area $A = 2\pi r^2 + 2\pi r h$.
 
 </details>
@@ -662,8 +662,8 @@ $\displaystyle\int_0^1 e^u\,du = \bigl[e^u\bigr]_0^1 = e - 1$.
 
 **Problem 12:** From $V = 500$: $h = \dfrac{500}{\pi r^2}$. Then
 $A = 2\pi r^2 + \dfrac{1000}{r}$.
-$\dfrac{dA}{dr} = 4\pi r - \dfrac{1000}{r^2} = 0 \implies r^3 = \dfrac{250}{\pi} \implies r = \left(\dfrac{250}{\pi}\right)^{1/3} \approx 4.30\;\mathrm{cm}$.
-Then $h = \dfrac{500}{\pi r^2} = 2r \approx 8.60\;\mathrm{cm}$. Checking $A'' = 4\pi + \dfrac{2000}{r^3} \gt 0$,
+$\dfrac{dA}{dr} = 4\pi r - \dfrac{1000}{r^2} = 0 \implies r^3 = \dfrac{250}{\pi} \implies r = \left(\dfrac{250}{\pi}\right)^{1/3} \approx 4.30\;\mathrm{'\{'}cm{'\}'}$.
+Then $h = \dfrac{500}{\pi r^2} = 2r \approx 8.60\;\mathrm{'\{'}cm{'\}'}$. Checking $A'' = 4\pi + \dfrac{2000}{r^3} \gt 0$,
 confirming a minimum.
 
 **Problem 13:** Let $x = 3\sin\theta$, $dx = 3\cos\theta\,d\theta$. When $x = 0$, $\theta = 0$; when $x = 3$,

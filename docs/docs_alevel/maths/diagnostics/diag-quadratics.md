@@ -56,7 +56,7 @@ $$p = 1 \pm \frac{2\sqrt{3}}{3}$$
 
 **(c)** No real roots require $\Delta < 0$:
 
-$$p < 1 - \frac{2\sqrt{3}}{3} \quad \text{or} \quad p > 1 + \frac{2\sqrt{3}}{3}$$
+$$p < 1 - \frac{2\sqrt{3}}{3} \quad \text{'\{'}or{'\}'} \quad p > 1 + \frac{2\sqrt{3}}{3}$$
 
 **Positive roots condition:** By Vieta's formulas, for both roots to be positive we need:
 - Sum of roots $> 0$: $-\frac{p+1}{p} > 0$
@@ -90,7 +90,7 @@ So for positive roots, we need $1 - 2\sqrt{3}/3 \leq p < 0$ (approximately $-0.1
 
 $$u^2 - u - 6 = 0$$
 $$(u-3)(u+2) = 0$$
-$$u = 3 \quad \text{or} \quad u = -2$$
+$$u = 3 \quad \text{'\{'}or{'\}'} \quad u = -2$$
 
 Since $u = x^{1/3}$ and the cube root is defined for all real $x$:
 
@@ -326,7 +326,7 @@ Points of intersection: $(0, 1)$, $(1, -2)$, $(3, -2)$, $(4, 1)$.
 
 The area is given by:
 
-$$A = \int_0^4 \left[(y_{\text{circle, upper}}) - (y_{\text{parabola}})\right] \, dx + \int_1^3 \left[(y_{\text{parabola}}) - (y_{\text{circle, lower}})\right] \, dx$$
+$$A = \int_0^4 \left[(y_{\text{'\{'}circle, upper{'\}'}}) - (y_{\text{'\{'}parabola{'\}'}})\right] \, dx + \int_1^3 \left[(y_{\text{'\{'}parabola{'\}'}}) - (y_{\text{'\{'}circle, lower{'\}'}})\right] \, dx$$
 
 From the circle $(y+1)^2 = 8 - (x-2)^2$: $y = -1 \pm \sqrt{8 - (x-2)^2}$.
 
@@ -349,7 +349,7 @@ The integral $\int_0^4 \sqrt{8-(x-2)^2} \, dx$ is a semicircle of radius $2\sqrt
 
 $$\int_0^4 (-x^2 + 4x - 2) \, dx = \left[-\frac{x^3}{3} + 2x^2 - 2x\right]_0^4 = -\frac{64}{3} + 32 - 8 = -\frac{64}{3} + 24 = \frac{72 - 64}{3} = \frac{8}{3}$$
 
-$$A = 4\pi + \frac{8}{3} = \frac{12\pi + 8}{3} \approx 15.6 \text{ (3 s.f.)}$$
+$$A = 4\pi + \frac{8}{3} = \frac{12\pi + 8}{3} \approx 15.6 \text{'\{'} (3 s.f.){'\}'}$$
 
 ---
 

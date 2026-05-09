@@ -95,7 +95,7 @@ The student's error was multiplying three terms instead of two: $\binom{-1/2}{2}
 
 **Question:**
 
-Prove by mathematical induction that $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{Z}^+$.
+Prove by mathematical induction that $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 A student presents the following proof:
 
@@ -111,7 +111,7 @@ A student presents the following proof:
 
 **Solution:**
 
-**(a)** The statement claims "for all $n \in \mathbb{Z}^+$", meaning $n \geq 1$. The student verified the base case at $n = 0$, which is outside the domain of the claim. While $n = 0$ does happen to satisfy the property, the proof must start at $n = 1$ to be valid. The base case at $n = 0$ is unnecessary and, if it were the only base case, would not constitute a valid proof of the claim.
+**(a)** The statement claims "for all $n \in \mathbb{'\{'}Z{'\}'}^+$", meaning $n \geq 1$. The student verified the base case at $n = 0$, which is outside the domain of the claim. While $n = 0$ does happen to satisfy the property, the proof must start at $n = 1$ to be valid. The base case at $n = 0$ is unnecessary and, if it were the only base case, would not constitute a valid proof of the claim.
 
 **(b)**
 
@@ -125,7 +125,7 @@ $$7^{k+1} - 1 = 7 \cdot 7^k - 1 = 7(6m + 1) - 1 = 42m + 7 - 1 = 42m + 6 = 6(7m +
 
 Since $7m + 1$ is an integer, $7^{k+1} - 1$ is divisible by $6$.
 
-**Conclusion:** By the principle of mathematical induction, $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{Z}^+$.
+**Conclusion:** By the principle of mathematical induction, $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 ---
 
@@ -155,9 +155,9 @@ $$f(x) = \frac{1}{1 - x^2} = \frac{1}{(1-x)(1+x)} = \frac{1}{2}\left(\frac{1}{1-
 
 Each fraction is a geometric series:
 
-$$\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n \quad \text{for } |x| \lt 1$$
+$$\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n \quad \text{'\{'}for {'\}'} |x| \lt 1$$
 
-$$\frac{1}{1+x} = \sum_{n=0}^{\infty} (-x)^n = \sum_{n=0}^{\infty} (-1)^n x^n \quad \text{for } |x| \lt 1$$
+$$\frac{1}{1+x} = \sum_{n=0}^{\infty} (-x)^n = \sum_{n=0}^{\infty} (-1)^n x^n \quad \text{'\{'}for {'\}'} |x| \lt 1$$
 
 Therefore:
 
@@ -198,7 +198,7 @@ Given $f(x) = \log_3(x + 4)$ and $g(x) = x^2 - 5$:
 **(a)** $(f \circ g)(x) = f(g(x)) = \log_3(x^2 - 5 + 4) = \log_3(x^2 - 1)$.
 
 Domain restrictions:
-- From $g(x)$: $x \in \mathbb{R}$ (no restriction, polynomial).
+- From $g(x)$: $x \in \mathbb{'\{'}R{'\}'}$ (no restriction, polynomial).
 - From $f$: the argument must be positive, so $x^2 - 1 \gt 0$, giving $x \lt -1$ or $x \gt 1$.
 
 Domain of $f \circ g$: $(-\infty, -1) \cup (1, \infty)$.

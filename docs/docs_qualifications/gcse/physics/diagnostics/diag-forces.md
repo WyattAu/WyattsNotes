@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Newton's Laws and Resultant Forces
-**Question:** (a) State Newton's three laws of motion. (b) A 5 kg object is acted on by two forces: 30 N to the right and 20 N to the left. Calculate the acceleration. (c) A person of mass 70 kg stands in a lift. Calculate the normal force when: (i) the lift is stationary, (ii) accelerating upwards at $2 \text{ m/s}^2$, (iii) accelerating downwards at $3 \text{ m/s}^2$. (d) Explain why the person feels heavier when the lift accelerates upwards.
+**Question:** (a) State Newton's three laws of motion. (b) A 5 kg object is acted on by two forces: 30 N to the right and 20 N to the left. Calculate the acceleration. (c) A person of mass 70 kg stands in a lift. Calculate the normal force when: (i) the lift is stationary, (ii) accelerating upwards at $2 \text{'\{'} m/s{'\}'}^2$, (iii) accelerating downwards at $3 \text{'\{'} m/s{'\}'}^2$. (d) Explain why the person feels heavier when the lift accelerates upwards.
 
 **Solution:**
 
@@ -45,7 +45,7 @@ Limitation: Hooke's law only applies up to the limit of proportionality (elastic
 **Inelastic (plastic) deformation:** The object does not return to its original shape when the force is removed. It is permanently deformed, and some energy is used to change the object's shape (not recoverable). Example: a paperclip bent out of shape, modelling clay, a spring stretched beyond its elastic limit.
 
 ### UT-3: Momentum and Pressure
-**Question:** (a) Define momentum and state its unit. (b) A 1500 kg car travelling at 20 m/s collides with a stationary 1000 kg car and they stick together. Calculate the velocity of the combined wreck immediately after the collision. (c) Calculate the pressure exerted by a 60 kg person standing on both feet, each foot having an area of $0.02 \text{ m}^2$. (d) Explain why the pressure exerted by a person wearing stiletto heels is much greater than when wearing flat shoes.
+**Question:** (a) Define momentum and state its unit. (b) A 1500 kg car travelling at 20 m/s collides with a stationary 1000 kg car and they stick together. Calculate the velocity of the combined wreck immediately after the collision. (c) Calculate the pressure exerted by a 60 kg person standing on both feet, each foot having an area of $0.02 \text{'\{'} m{'\}'}^2$. (d) Explain why the pressure exerted by a person wearing stiletto heels is much greater than when wearing flat shoes.
 
 **Solution:**
 
@@ -58,7 +58,7 @@ Conservation of momentum: $2500v = 30,000$. $v = 12$ m/s.
 (c) Total area $= 2 \times 0.02 = 0.04$ m$^2$. Weight $= 60 \times 9.8 = 588$ N.
 Pressure $= F/A = 588/0.04 = 14,700$ Pa $= 14.7$ kPa.
 
-(d) Pressure $= F/A$. Stiletto heels have a very small contact area (perhaps $1 \text{ cm}^2 = 0.0001 \text{ m}^2$), so the same weight (force) is distributed over a much smaller area, producing a much higher pressure. $P = 588/0.0001 = 5,880,000$ Pa $\approx 5.9$ MPa, compared to 14.7 kPa with flat shoes. This is why stiletto heels can damage wooden floors.
+(d) Pressure $= F/A$. Stiletto heels have a very small contact area (perhaps $1 \text{'\{'} cm{'\}'}^2 = 0.0001 \text{'\{'} m{'\}'}^2$), so the same weight (force) is distributed over a much smaller area, producing a much higher pressure. $P = 588/0.0001 = 5,880,000$ Pa $\approx 5.9$ MPa, compared to 14.7 kPa with flat shoes. This is why stiletto heels can damage wooden floors.
 
 ---
 
@@ -74,7 +74,7 @@ Pressure $= F/A = 588/0.04 = 14,700$ Pa $= 14.7$ kPa.
 (b) $F = mv^2/r = 1200 \times 144/25 = 1200 \times 5.76 = 6912$ N.
 This force is provided by **friction** between the tyres and the road surface. Friction acts horizontally towards the centre of the roundabout, providing the centripetal force needed to keep the car moving in a circle.
 
-(c) $F_{\text{max}} = mv_{\text{max}}^2/r$. $8000 = 1200 \times v_{\text{max}}^2/25$. $v_{\text{max}}^2 = 8000 \times 25/1200 = 166.67$. $v_{\text{max}} = 12.91$ m/s.
+(c) $F_{\text{'\{'}max{'\}'}} = mv_{\text{'\{'}max{'\}'}}^2/r$. $8000 = 1200 \times v_{\text{'\{'}max{'\}'}}^2/25$. $v_{\text{'\{'}max{'\}'}}^2 = 8000 \times 25/1200 = 166.67$. $v_{\text{'\{'}max{'\}'}} = 12.91$ m/s.
 
 (d) If the car exceeds the maximum safe speed, the required centripetal force exceeds the maximum available friction. The car cannot maintain its circular path and will skid outwards (slide off the roundabout). This is because the friction is insufficient to provide the centripetal acceleration needed for the circular path at that speed.
 
@@ -83,7 +83,7 @@ This force is provided by **friction** between the tyres and the road surface. F
 
 **Solution:**
 
-(a) Thinking distance $= \text{speed} \times \text{reaction time} = 20 \times 0.7 = 14$ m.
+(a) Thinking distance $= \text{'\{'}speed{'\}'} \times \text{'\{'}reaction time{'\}'} = 20 \times 0.7 = 14$ m.
 
 (b) $a = F/m = 5000/1000 = 5$ m/s$^2$ (deceleration). Using $v^2 = u^2 + 2as$: $0 = 400 + 2(-5)s$. $10s = 400$. $s = 40$ m.
 
@@ -100,7 +100,7 @@ This force is provided by **friction** between the tyres and the road surface. F
 
 (a) Initial acceleration $= g = 9.8$ m/s$^2$ (only gravity acts; air resistance is zero at the instant of jumping).
 
-(b) As the skydiver accelerates, their speed increases. Air resistance (drag) increases with speed ($F_d \propto v^2$). As air resistance increases, the resultant downward force decreases ($F_{\text{net}} = W - F_d$), so acceleration decreases. The skydiver accelerates less and less until air resistance equals weight.
+(b) As the skydiver accelerates, their speed increases. Air resistance (drag) increases with speed ($F_d \propto v^2$). As air resistance increases, the resultant downward force decreases ($F_{\text{'\{'}net{'\}'}} = W - F_d$), so acceleration decreases. The skydiver accelerates less and less until air resistance equals weight.
 
 (c) At terminal velocity: air resistance $=$ weight $= 80 \times 9.8 = 784$ N. The resultant force is zero and acceleration is zero.
 

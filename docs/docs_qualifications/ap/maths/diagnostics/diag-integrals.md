@@ -111,7 +111,7 @@ Test point $x = 0$: $x^3 - 4x = 0$, $x^2 - 4 = -4$. So $x^3 - 4x \gt x^2 - 4$ on
 
 Test point $x = 1.5$: $x^3 - 4x = 3.375 - 6 = -2.625$, $x^2 - 4 = 2.25 - 4 = -1.75$. So $x^2 - 4 \gt x^3 - 4x$ on $[1, 2]$.
 
-$$\text{Total area} = \int_{-2}^{1}\left[(x^3 - 4x) - (x^2 - 4)\right]\,dx + \int_1^{2}\left[(x^2 - 4) - (x^3 - 4x)\right]\,dx$$
+$$\text{'\{'}Total area{'\}'} = \int_{-2}^{1}\left[(x^3 - 4x) - (x^2 - 4)\right]\,dx + \int_1^{2}\left[(x^2 - 4) - (x^3 - 4x)\right]\,dx$$
 
 $$= \int_{-2}^{1}(x^3 - x^2 - 4x + 4)\,dx + \int_1^{2}(-x^3 + x^2 + 4x - 4)\,dx$$
 
@@ -127,7 +127,7 @@ $$\left[-\frac{x^4}{4} + \frac{x^3}{3} + 2x^2 - 4x\right]_1^{2} = \left(-4 + \fr
 
 $$= -\frac{4}{3} - \left(-\frac{23}{12}\right) = -\frac{16}{12} + \frac{23}{12} = \frac{7}{12}$$
 
-$$\text{Total area} = \frac{35}{4} + \frac{7}{12} = \frac{105 + 7}{12} = \frac{112}{12} = \frac{28}{3}$$
+$$\text{'\{'}Total area{'\}'} = \frac{35}{4} + \frac{7}{12} = \frac{105 + 7}{12} = \frac{112}{12} = \frac{28}{3}$$
 
 The student's integral gives $\displaystyle\int_{-2}^{2}(x^3 - x^2 - 4x + 4)\,dx = \frac{28}{3}$ only because the areas happen to be positive in both subintervals when separated correctly. The student's single integral from $-2$ to $2$ actually evaluates to:
 
@@ -221,7 +221,7 @@ Note: this integral equals $B(p, 1-p) = \pi \csc(\pi p)$ (the beta function), wh
 
 **Question:**
 
-Let $f(x) = \begin{cases} 2x & \text{if } 0 \leq x \lt 2 \\ 8 - 2x & \text{if } 2 \leq x \leq 4 \end{cases}$
+Let $f(x) = \begin{cases} 2x & \text{'\{'}if {'\}'} 0 \leq x \lt 2 \\ 8 - 2x & \text{'\{'}if {'\}'} 2 \leq x \leq 4 \end{cases}$
 
 Let $\displaystyle F(x) = \int_0^x f(t)\,dt$.
 
@@ -239,7 +239,7 @@ For $2 \leq x \leq 4$:
 
 $$F(x) = \int_0^2 2t\,dt + \int_2^x (8 - 2t)\,dt = 4 + \left[8t - t^2\right]_2^x = 4 + (8x - x^2 - 12) = -x^2 + 8x - 8$$
 
-So $F(x) = \begin{cases} x^2 & \text{if } 0 \leq x \lt 2 \\ -x^2 + 8x - 8 & \text{if } 2 \leq x \leq 4 \end{cases}$
+So $F(x) = \begin{cases} x^2 & \text{'\{'}if {'\}'} 0 \leq x \lt 2 \\ -x^2 + 8x - 8 & \text{'\{'}if {'\}'} 2 \leq x \leq 4 \end{cases}$
 
 (Note: $4 + (8x - x^2 - 12) = -x^2 + 8x - 8$, not $(x-4)^2 = x^2 - 8x + 16$. The two expressions differ.)
 

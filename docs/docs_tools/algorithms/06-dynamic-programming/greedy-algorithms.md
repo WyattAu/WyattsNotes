@@ -157,7 +157,7 @@ def huffman(frequencies):
 
 ### Expected Code Length
 
-$$L = \sum_{i=1}^{n} f_i \cdot \mathrm{len}(c_i)$$
+$$L = \sum_{i=1}^{n} f_i \cdot \mathrm{'\{'}len{'\}'}(c_i)$$
 
 For a source with entropy $H = -\sum f_i \log_2 f_i$, Huffman coding satisfies $H \le L \lt H + 1$
 (one bit per symbol worse than the theoretical minimum).
@@ -392,12 +392,12 @@ are optimal on matroids.
 
 ### Definition
 
-A matroid $M = (S, \mathcal{I})$ consists of a finite set $S$ and a collection $\mathcal{I}$ of
+A matroid $M = (S, \mathcal{'\{'}I{'\}'})$ consists of a finite set $S$ and a collection $\mathcal{'\{'}I{'\}'}$ of
 independent subsets of $S$ satisfying:
 
-1. **Hereditary property**: if $A \in \mathcal{I}$ and $B \subseteq A$, then $B \in \mathcal{I}$
-2. **Exchange property**: if $A, B \in \mathcal{I}$ and $|A| \lt |B|$, then there exists
-   $x \in B \setminus A$ such that $A \cup \{x\} \in \mathcal{I}$
+1. **Hereditary property**: if $A \in \mathcal{'\{'}I{'\}'}$ and $B \subseteq A$, then $B \in \mathcal{'\{'}I{'\}'}$
+2. **Exchange property**: if $A, B \in \mathcal{'\{'}I{'\}'}$ and $|A| \lt |B|$, then there exists
+   $x \in B \setminus A$ such that $A \cup \{x\} \in \mathcal{'\{'}I{'\}'}$
 
 ### Matroid Greedy Theorem
 
@@ -406,7 +406,7 @@ independent) finds the maximum-weight independent set in any matroid.
 
 ### Examples of Matroids
 
-| Matroid             | Set $S$          | Independent Sets $\mathcal{I}$     | Greedy Problem     |
+| Matroid             | Set $S$          | Independent Sets $\mathcal{'\{'}I{'\}'}$     | Greedy Problem     |
 | ------------------- | ---------------- | ---------------------------------- | ------------------ |
 | Graphic matroid     | Edges of a graph | Acyclic subsets (forests)          | MST (Kruskal)      |
 | Partition matroid   | Elements         | At most one from each partition    | Assignment         |

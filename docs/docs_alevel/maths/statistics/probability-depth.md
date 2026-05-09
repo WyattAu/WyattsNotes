@@ -100,8 +100,8 @@ multiplication rule to the numerator. $\blacksquare$
 ### 2.3 Worked example
 
 **Problem.** A disease affects 1% of a population. A test for the disease has a 95% true positive
-rate ($P(\mathrm{positive} \mid \mathrm{disease}) = 0.95$) and a 10% false positive rate
-($P(\mathrm{positive} \mid \mathrm{no\ disease}) = 0.10$). If a person tests positive, what is the
+rate ($P(\mathrm{'\{'}positive{'\}'} \mid \mathrm{'\{'}disease{'\}'}) = 0.95$) and a 10% false positive rate
+($P(\mathrm{'\{'}positive{'\}'} \mid \mathrm{'\{'}no\ disease{'\}'}) = 0.10$). If a person tests positive, what is the
 probability they actually have the disease?
 
 Let $D$ = "has disease", $T^+$ = "tests positive".
@@ -172,7 +172,7 @@ What proportion likes none of these?
 
 $$P(T \cup C \cup H) = 0.6 + 0.5 + 0.4 - 0.3 - 0.25 - 0.2 + 0.1 = 0.85$$
 
-$$P(\mathrm{none}) = 1 - 0.85 = 0.15$$
+$$P(\mathrm{'\{'}none{'\}'}) = 1 - 0.85 = 0.15$$
 
 <hr />
 
@@ -196,13 +196,13 @@ that path.
 **Problem.** A box contains 7 red and 5 green counters. Two counters are drawn at random without
 replacement. Find the probability that: (a) both are the same colour; (b) exactly one is red.
 
-(a) $P(\mathrm{both\ red}) = \dfrac{7}{12} \times \dfrac{6}{11} = \dfrac{42}{132} = \dfrac{7}{22}$
+(a) $P(\mathrm{'\{'}both\ red{'\}'}) = \dfrac{7}{12} \times \dfrac{6}{11} = \dfrac{42}{132} = \dfrac{7}{22}$
 
-$P(\mathrm{both\ green}) = \dfrac{5}{12} \times \dfrac{4}{11} = \dfrac{20}{132} = \dfrac{5}{33}$
+$P(\mathrm{'\{'}both\ green{'\}'}) = \dfrac{5}{12} \times \dfrac{4}{11} = \dfrac{20}{132} = \dfrac{5}{33}$
 
-$P(\mathrm{same\ colour}) = \dfrac{7}{22} + \dfrac{5}{33} = \dfrac{21 + 10}{66} = \dfrac{31}{66}$
+$P(\mathrm{'\{'}same\ colour{'\}'}) = \dfrac{7}{22} + \dfrac{5}{33} = \dfrac{21 + 10}{66} = \dfrac{31}{66}$
 
-(b) $P(\mathrm{one\ red}) = \dfrac{7}{12} \times \dfrac{5}{11} + \dfrac{5}{12} \times \dfrac{7}{11} = \dfrac{35}{132} + \dfrac{35}{132} = \dfrac{70}{132} = \dfrac{35}{66}$
+(b) $P(\mathrm{'\{'}one\ red{'\}'}) = \dfrac{7}{12} \times \dfrac{5}{11} + \dfrac{5}{12} \times \dfrac{7}{11} = \dfrac{35}{132} + \dfrac{35}{132} = \dfrac{70}{132} = \dfrac{35}{66}$
 
 ### 4.4 Worked example: with replacement
 
@@ -213,11 +213,11 @@ Let $A$ = "sum $\geq 9$" and $B$ = "first die $\geq 4$".
 
 $$P(B) = \frac{3}{6} = \frac{1}{2}$$
 
-$$P(A \cap B): \mathrm{First\ die} = 4: \mathrm{need\ second} \geq 5 \implies 2\ \mathrm{outcomes}$$
+$$P(A \cap B): \mathrm{'\{'}First\ die{'\}'} = 4: \mathrm{'\{'}need\ second{'\}'} \geq 5 \implies 2\ \mathrm{'\{'}outcomes{'\}'}$$
 
-$$\mathrm{First\ die} = 5: \mathrm{need\ second} \geq 4 \implies 3\ \mathrm{outcomes}$$
+$$\mathrm{'\{'}First\ die{'\}'} = 5: \mathrm{'\{'}need\ second{'\}'} \geq 4 \implies 3\ \mathrm{'\{'}outcomes{'\}'}$$
 
-$$\mathrm{First\ die} = 6: \mathrm{need\ second} \geq 3 \implies 4\ \mathrm{outcomes}$$
+$$\mathrm{'\{'}First\ die{'\}'} = 6: \mathrm{'\{'}need\ second{'\}'} \geq 3 \implies 4\ \mathrm{'\{'}outcomes{'\}'}$$
 
 $$P(A \cap B) = \frac{2 + 3 + 4}{36} = \frac{9}{36} = \frac{1}{4}$$
 
@@ -303,8 +303,8 @@ $P(C \mid F) = 0.20 / 0.625 = 0.32$.
 ### Problem 2
 
 A test for a condition has sensitivity 92% (true positive rate) and specificity 96% (true negative
-rate). The condition prevalence is 3%. Find: (a) $P(\mathrm{condition} \mid \mathrm{positive})$;
-(b) $P(\mathrm{condition} \mid \mathrm{negative})$.
+rate). The condition prevalence is 3%. Find: (a) $P(\mathrm{'\{'}condition{'\}'} \mid \mathrm{'\{'}positive{'\}'})$;
+(b) $P(\mathrm{'\{'}condition{'\}'} \mid \mathrm{'\{'}negative{'\}'})$.
 
 <details>
 <summary>Solution</summary>

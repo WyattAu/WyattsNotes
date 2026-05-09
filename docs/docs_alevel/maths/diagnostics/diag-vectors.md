@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-The line $l$ has vector equation $\mathbf{r} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$, and the point $A$ has position vector $\begin{pmatrix} 4 \\ 0 \\ 5 \end{pmatrix}$.
+The line $l$ has vector equation $\mathbf{'\{'}r{'\}'} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$, and the point $A$ has position vector $\begin{pmatrix} 4 \\ 0 \\ 5 \end{pmatrix}$.
 
 **(a)** Find the shortest distance from $A$ to $l$.
 
@@ -27,35 +27,35 @@ The line $l$ has vector equation $\mathbf{r} = \begin{pmatrix} 1 \\ 2 \\ -1 \end
 
 **Solution:**
 
-**(a)** The line passes through $P$ with position vector $\mathbf{p} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}$ and has direction vector $\mathbf{d} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$.
+**(a)** The line passes through $P$ with position vector $\mathbf{'\{'}p{'\}'} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}$ and has direction vector $\mathbf{'\{'}d{'\}'} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$.
 
-$\overrightarrow{PA} = \mathbf{a} - \mathbf{p} = \begin{pmatrix} 3 \\ -2 \\ 6 \end{pmatrix}$.
+$\overrightarrow{PA} = \mathbf{'\{'}a{'\}'} - \mathbf{'\{'}p{'\}'} = \begin{pmatrix} 3 \\ -2 \\ 6 \end{pmatrix}$.
 
 The shortest distance is:
 
-$$d = \frac{\lvert\overrightarrow{PA} \times \mathbf{d}\rvert}{\lvert\mathbf{d}\rvert}$$
+$$d = \frac{\lvert\overrightarrow{PA} \times \mathbf{'\{'}d{'\}'}\rvert}{\lvert\mathbf{'\{'}d{'\}'}\rvert}$$
 
-$$\overrightarrow{PA} \times \mathbf{d} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 3 & -2 & 6 \\ 2 & -1 & 3 \end{vmatrix} = \mathbf{i}(-6-(-6)) - \mathbf{j}(9-12) + \mathbf{k}(-3-(-4))$$
+$$\overrightarrow{PA} \times \mathbf{'\{'}d{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 3 & -2 & 6 \\ 2 & -1 & 3 \end{vmatrix} = \mathbf{'\{'}i{'\}'}(-6-(-6)) - \mathbf{'\{'}j{'\}'}(9-12) + \mathbf{'\{'}k{'\}'}(-3-(-4))$$
 
-$$= 0\mathbf{i} + 3\mathbf{j} + 1\mathbf{k} = \begin{pmatrix} 0 \\ 3 \\ 1 \end{pmatrix}$$
+$$= 0\mathbf{'\{'}i{'\}'} + 3\mathbf{'\{'}j{'\}'} + 1\mathbf{'\{'}k{'\}'} = \begin{pmatrix} 0 \\ 3 \\ 1 \end{pmatrix}$$
 
-$$\lvert\overrightarrow{PA} \times \mathbf{d}\rvert = \sqrt{0 + 9 + 1} = \sqrt{10}$$
+$$\lvert\overrightarrow{PA} \times \mathbf{'\{'}d{'\}'}\rvert = \sqrt{0 + 9 + 1} = \sqrt{10}$$
 
-$$\lvert\mathbf{d}\rvert = \sqrt{4 + 1 + 9} = \sqrt{14}$$
+$$\lvert\mathbf{'\{'}d{'\}'}\rvert = \sqrt{4 + 1 + 9} = \sqrt{14}$$
 
 $$d = \frac{\sqrt{10}}{\sqrt{14}} = \sqrt{\frac{5}{7}}$$
 
-**(b)** The point $B$ on $l$ closest to $A$ satisfies $\overrightarrow{PB} = \frac{\overrightarrow{PA} \cdot \mathbf{d}}{\lvert\mathbf{d}\rvert^2}\mathbf{d}$.
+**(b)** The point $B$ on $l$ closest to $A$ satisfies $\overrightarrow{PB} = \frac{\overrightarrow{PA} \cdot \mathbf{'\{'}d{'\}'}}{\lvert\mathbf{'\{'}d{'\}'}\rvert^2}\mathbf{'\{'}d{'\}'}$.
 
-$$\overrightarrow{PA} \cdot \mathbf{d} = 6 + 2 + 18 = 26$$
+$$\overrightarrow{PA} \cdot \mathbf{'\{'}d{'\}'} = 6 + 2 + 18 = 26$$
 
 $$\overrightarrow{PB} = \frac{26}{14}\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \frac{13}{7}\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$$
 
-$$\mathbf{b} = \mathbf{p} + \overrightarrow{PB} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + \begin{pmatrix} 26/7 \\ -13/7 \\ 39/7 \end{pmatrix} = \begin{pmatrix} 33/7 \\ 1/7 \\ 32/7 \end{pmatrix}$$
+$$\mathbf{'\{'}b{'\}'} = \mathbf{'\{'}p{'\}'} + \overrightarrow{PB} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + \begin{pmatrix} 26/7 \\ -13/7 \\ 39/7 \end{pmatrix} = \begin{pmatrix} 33/7 \\ 1/7 \\ 32/7 \end{pmatrix}$$
 
 Verification: $\overrightarrow{BA} = \begin{pmatrix} 4-33/7 \\ 0-1/7 \\ 5-32/7 \end{pmatrix} = \begin{pmatrix} -5/7 \\ -1/7 \\ 3/7 \end{pmatrix}$.
 
-$\overrightarrow{BA} \cdot \mathbf{d} = \frac{-10}{7} + \frac{1}{7} + \frac{9}{7} = 0$. Confirmed perpendicular.
+$\overrightarrow{BA} \cdot \mathbf{'\{'}d{'\}'} = \frac{-10}{7} + \frac{1}{7} + \frac{9}{7} = 0$. Confirmed perpendicular.
 
 **(c)** At $t = 1$: $P_1 = \begin{pmatrix} 3 \\ 1 \\ 2 \end{pmatrix}$. $\overrightarrow{P_1A} = \begin{pmatrix} 1 \\ -1 \\ 3 \end{pmatrix}$.
 
@@ -65,7 +65,7 @@ Actual shortest distance: $\sqrt{5/7} = \sqrt{35}/7 \approx 0.845$.
 
 Student's answer: $\sqrt{11} \approx 3.317$.
 
-$$\text{Percentage overestimate} = \frac{\sqrt{11} - \sqrt{5/7}}{\sqrt{5/7}} \times 100\% = \left(\frac{\sqrt{77}}{\sqrt{5}} - 1\right) \times 100\% \approx 293\%$$
+$$\text{'\{'}Percentage overestimate{'\}'} = \frac{\sqrt{11} - \sqrt{5/7}}{\sqrt{5/7}} \times 100\% = \left(\frac{\sqrt{77}}{\sqrt{5}} - 1\right) \times 100\% \approx 293\%$$
 
 ---
 
@@ -73,9 +73,9 @@ $$\text{Percentage overestimate} = \frac{\sqrt{11} - \sqrt{5/7}}{\sqrt{5/7}} \ti
 
 **Question:**
 
-Line $l_1$ passes through $A(1, 2, 3)$ with direction vector $\mathbf{d}_1 = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$.
+Line $l_1$ passes through $A(1, 2, 3)$ with direction vector $\mathbf{'\{'}d{'\}'}_1 = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$.
 
-Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{d}_2 = \begin{pmatrix} 1 \\ a \\ 2 \end{pmatrix}$.
+Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{'\{'}d{'\}'}_2 = \begin{pmatrix} 1 \\ a \\ 2 \end{pmatrix}$.
 
 **(a)** Find the value of $a$ for which $l_1$ and $l_2$ intersect.
 
@@ -87,7 +87,7 @@ Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{d}_2 = \be
 
 **Solution:**
 
-**(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$ (since $\frac{2}{1} \neq \frac{-1}{a}$ for $a = -\frac{1}{2}$, and checking: at $a = -\frac{1}{2}$, $\frac{2}{1} = 2$ but $\frac{1}{2} = \frac{1}{2} \neq 2$). So the lines are never parallel.
+**(a)** $\mathbf{'\{'}d{'\}'}_1$ and $\mathbf{'\{'}d{'\}'}_2$ are not proportional for any value of $a$ (since $\frac{2}{1} \neq \frac{-1}{a}$ for $a = -\frac{1}{2}$, and checking: at $a = -\frac{1}{2}$, $\frac{2}{1} = 2$ but $\frac{1}{2} = \frac{1}{2} \neq 2$). So the lines are never parallel.
 
 For intersection, there exist $s, t$ such that:
 
@@ -103,7 +103,7 @@ Substituting into the second equation: $2 - 3 = 1 + 3a \implies -1 = 1 + 3a \imp
 
 The lines intersect when $a = -\frac{2}{3}$, at the point $\begin{pmatrix} 1+6 \\ 2-3 \\ 3+3 \end{pmatrix} = \begin{pmatrix} 7 \\ -1 \\ 6 \end{pmatrix}$.
 
-**(b)** For $a = 3$: the lines are not parallel ($\mathbf{d}_1$ and $\mathbf{d}_2$ not proportional). Check for intersection:
+**(b)** For $a = 3$: the lines are not parallel ($\mathbf{'\{'}d{'\}'}_1$ and $\mathbf{'\{'}d{'\}'}_2$ not proportional). Check for intersection:
 
 $t = 2s - 3$, $s = 3$, $t = 3$ (from first and third equations).
 
@@ -115,15 +115,15 @@ The system is inconsistent, so the lines are **skew**.
 
 The shortest distance between two skew lines is:
 
-$$d = \frac{\lvert(\mathbf{b} - \mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)\rvert}{\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert}$$
+$$d = \frac{\lvert(\mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'}) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2)\rvert}{\lvert\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2\rvert}$$
 
-$\mathbf{b} - \mathbf{a} = \begin{pmatrix} 3 \\ -1 \\ -3 \end{pmatrix}$.
+$\mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'} = \begin{pmatrix} 3 \\ -1 \\ -3 \end{pmatrix}$.
 
-$\mathbf{d}_1 \times \mathbf{d}_2 = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 1 \\ 1 & -1 & 2 \end{vmatrix} = \begin{pmatrix} -2-1 \\ -(4-1) \\ -2+1 \end{pmatrix} = \begin{pmatrix} -3 \\ -3 \\ -1 \end{pmatrix}$
+$\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2 = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 2 & -1 & 1 \\ 1 & -1 & 2 \end{vmatrix} = \begin{pmatrix} -2-1 \\ -(4-1) \\ -2+1 \end{pmatrix} = \begin{pmatrix} -3 \\ -3 \\ -1 \end{pmatrix}$
 
-$\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert = \sqrt{9+9+1} = \sqrt{19}$
+$\lvert\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2\rvert = \sqrt{9+9+1} = \sqrt{19}$
 
-$(\mathbf{b}-\mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2) = -9 + 3 + 3 = -3$
+$(\mathbf{'\{'}b{'\}'}-\mathbf{'\{'}a{'\}'}) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2) = -9 + 3 + 3 = -3$
 
 $$d = \frac{\lvert -3 \rvert}{\sqrt{19}} = \frac{3}{\sqrt{19}} = \frac{3\sqrt{19}}{19}$$
 
@@ -145,21 +145,21 @@ Plane $\Pi_1$ has equation $2x - y + 2z = 5$ and plane $\Pi_2$ has equation $x +
 
 **Solution:**
 
-**(a)** Normal to $\Pi_1$: $\mathbf{n}_1 = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$. Normal to $\Pi_2$: $\mathbf{n}_2 = \begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix}$.
+**(a)** Normal to $\Pi_1$: $\mathbf{'\{'}n{'\}'}_1 = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$. Normal to $\Pi_2$: $\mathbf{'\{'}n{'\}'}_2 = \begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix}$.
 
-$$\mathbf{n}_1 \cdot \mathbf{n}_2 = 2 - 2 - 4 = -4$$
+$$\mathbf{'\{'}n{'\}'}_1 \cdot \mathbf{'\{'}n{'\}'}_2 = 2 - 2 - 4 = -4$$
 
-$$\lvert\mathbf{n}_1\rvert = \sqrt{4+1+4} = 3, \quad \lvert\mathbf{n}_2\rvert = \sqrt{1+4+4} = 3$$
+$$\lvert\mathbf{'\{'}n{'\}'}_1\rvert = \sqrt{4+1+4} = 3, \quad \lvert\mathbf{'\{'}n{'\}'}_2\rvert = \sqrt{1+4+4} = 3$$
 
-$$\cos\theta = \frac{\lvert\mathbf{n}_1 \cdot \mathbf{n}_2\rvert}{\lvert\mathbf{n}_1\rvert\lvert\mathbf{n}_2\rvert} = \frac{4}{9}$$
+$$\cos\theta = \frac{\lvert\mathbf{'\{'}n{'\}'}_1 \cdot \mathbf{'\{'}n{'\}'}_2\rvert}{\lvert\mathbf{'\{'}n{'\}'}_1\rvert\lvert\mathbf{'\{'}n{'\}'}_2\rvert} = \frac{4}{9}$$
 
 $$\theta = \arccos\!\left(\frac{4}{9}\right)$$
 
 Note the absolute value in the numerator: the angle between planes is defined as the acute angle, so we take $\lvert -4 \rvert = 4$.
 
-**(b)** The line of intersection has direction vector $\mathbf{d} = \mathbf{n}_1 \times \mathbf{n}_2$:
+**(b)** The line of intersection has direction vector $\mathbf{'\{'}d{'\}'} = \mathbf{'\{'}n{'\}'}_1 \times \mathbf{'\{'}n{'\}'}_2$:
 
-$$\mathbf{d} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 2 \\ 1 & 2 & -2 \end{vmatrix} = \begin{pmatrix} 2-4 \\ -(−4−2) \\ 4+1 \end{pmatrix} = \begin{pmatrix} -2 \\ 6 \\ 5 \end{pmatrix}$$
+$$\mathbf{'\{'}d{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 2 & -1 & 2 \\ 1 & 2 & -2 \end{vmatrix} = \begin{pmatrix} 2-4 \\ -(−4−2) \\ 4+1 \end{pmatrix} = \begin{pmatrix} -2 \\ 6 \\ 5 \end{pmatrix}$$
 
 To find a point on both planes, set $z = 0$:
 
@@ -169,7 +169,7 @@ $x + 2(2x - 5) = 3 \implies 5x = 13 \implies x = \frac{13}{5}$, $y = \frac{1}{5}
 
 Point: $\left(\frac{13}{5}, \frac{1}{5}, 0\right)$.
 
-Line of intersection: $\mathbf{r} = \begin{pmatrix} 13/5 \\ 1/5 \\ 0 \end{pmatrix} + t\begin{pmatrix} -2 \\ 6 \\ 5 \end{pmatrix}$.
+Line of intersection: $\mathbf{'\{'}r{'\}'} = \begin{pmatrix} 13/5 \\ 1/5 \\ 0 \end{pmatrix} + t\begin{pmatrix} -2 \\ 6 \\ 5 \end{pmatrix}$.
 
 **(c)** The angle between two planes is always taken as the acute angle (between $0$ and $\frac{\pi}{2}$). The angle between the normal vectors can be obtuse (between $\frac{\pi}{2}$ and $\pi$). In this problem, the dot product is negative ($-4$), so the angle between the normals is obtuse: $\arccos(-4/9) \approx 116.4°$. The acute angle between the planes is $180° - 116.4° = 63.6° = \arccos(4/9)$.
 
@@ -189,7 +189,7 @@ Points $A$, $B$, $C$ lie on a circle. In a coordinate system, $A = (1, 2)$, $B =
 
 **(a)** Using vectors, find the centre and radius of the circle passing through $A$, $B$, and $C$.
 
-**(b)** A point $D$ has position vector $\mathbf{d} = \begin{pmatrix} 7 \\ 6 \end{pmatrix}$. Use the scalar product to determine whether $D$ lies inside, on, or outside the circle.
+**(b)** A point $D$ has position vector $\mathbf{'\{'}d{'\}'} = \begin{pmatrix} 7 \\ 6 \end{pmatrix}$. Use the scalar product to determine whether $D$ lies inside, on, or outside the circle.
 
 **(c)** Find the equation of the tangent to the circle at point $A$, giving your answer in the form $ax + by + c = 0$.
 
@@ -203,13 +203,13 @@ Midpoint of $AB$: $M_{AB} = \left(\frac{1+5}{2}, \frac{2+4}{2}\right) = (3, 3)$.
 
 Direction of $AB$: $\overrightarrow{AB} = \begin{pmatrix} 4 \\ 2 \end{pmatrix}$. A perpendicular direction is $\begin{pmatrix} -2 \\ 4 \end{pmatrix}$ (or $\begin{pmatrix} 1 \\ -2 \end{pmatrix}$).
 
-Perpendicular bisector of $AB$: $\mathbf{r} = \begin{pmatrix} 3 \\ 3 \end{pmatrix} + s\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
+Perpendicular bisector of $AB$: $\mathbf{'\{'}r{'\}'} = \begin{pmatrix} 3 \\ 3 \end{pmatrix} + s\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
 
 Midpoint of $AC$: $M_{AC} = \left(\frac{1+3}{2}, \frac{2+8}{2}\right) = (2, 5)$.
 
 Direction of $AC$: $\overrightarrow{AC} = \begin{pmatrix} 2 \\ 6 \end{pmatrix}$. A perpendicular direction is $\begin{pmatrix} -6 \\ 2 \end{pmatrix}$ (or $\begin{pmatrix} 3 \\ -1 \end{pmatrix}$).
 
-Perpendicular bisector of $AC$: $\mathbf{r} = \begin{pmatrix} 2 \\ 5 \end{pmatrix} + t\begin{pmatrix} 3 \\ -1 \end{pmatrix}$.
+Perpendicular bisector of $AC$: $\mathbf{'\{'}r{'\}'} = \begin{pmatrix} 2 \\ 5 \end{pmatrix} + t\begin{pmatrix} 3 \\ -1 \end{pmatrix}$.
 
 Setting equal: $3 + s = 2 + 3t$ and $3 - 2s = 5 - t$.
 
@@ -239,9 +239,9 @@ $$-1(x-1) - 3(y-2) = 0 \implies -x + 1 - 3y + 6 = 0 \implies x + 3y - 7 = 0$$
 
 **Question:**
 
-Ship $A$ is at position $(3, 0, 1)$ km and moves with constant velocity $\mathbf{v}_A = \begin{pmatrix} 4 \\ 3 \\ 0 \end{pmatrix}$ km/h.
+Ship $A$ is at position $(3, 0, 1)$ km and moves with constant velocity $\mathbf{'\{'}v{'\}'}_A = \begin{pmatrix} 4 \\ 3 \\ 0 \end{pmatrix}$ km/h.
 
-Ship $B$ is at position $(10, 7, 4)$ km and moves with constant velocity $\mathbf{v}_B = \begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix}$ km/h.
+Ship $B$ is at position $(10, 7, 4)$ km and moves with constant velocity $\mathbf{'\{'}v{'\}'}_B = \begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix}$ km/h.
 
 **(a)** Find the vector $\overrightarrow{AB}$ at time $t$ hours.
 
@@ -253,11 +253,11 @@ Ship $B$ is at position $(10, 7, 4)$ km and moves with constant velocity $\mathb
 
 **Solution:**
 
-**(a)** Position of $A$ at time $t$: $\mathbf{r}_A = \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} + t\begin{pmatrix} 4 \\ 3 \\ 0 \end{pmatrix} = \begin{pmatrix} 3+4t \\ 3t \\ 1 \end{pmatrix}$.
+**(a)** Position of $A$ at time $t$: $\mathbf{'\{'}r{'\}'}_A = \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} + t\begin{pmatrix} 4 \\ 3 \\ 0 \end{pmatrix} = \begin{pmatrix} 3+4t \\ 3t \\ 1 \end{pmatrix}$.
 
-Position of $B$ at time $t$: $\mathbf{r}_B = \begin{pmatrix} 10 \\ 7 \\ 4 \end{pmatrix} + t\begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 10+2t \\ 7+t \\ 4+2t \end{pmatrix}$.
+Position of $B$ at time $t$: $\mathbf{'\{'}r{'\}'}_B = \begin{pmatrix} 10 \\ 7 \\ 4 \end{pmatrix} + t\begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 10+2t \\ 7+t \\ 4+2t \end{pmatrix}$.
 
-$$\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A = \begin{pmatrix} 7 - 2t \\ 7 - 2t \\ 3 + 2t \end{pmatrix}$$
+$$\overrightarrow{AB} = \mathbf{'\{'}r{'\}'}_B - \mathbf{'\{'}r{'\}'}_A = \begin{pmatrix} 7 - 2t \\ 7 - 2t \\ 3 + 2t \end{pmatrix}$$
 
 **(b)** Distance squared: $D^2 = (7-2t)^2 + (7-2t)^2 + (3+2t)^2$
 
@@ -299,50 +299,50 @@ The ships are never exactly 5 km apart. The minimum distance is $\frac{10\sqrt{6
 
 **(b)** The medians of a triangle $ABC$ are the line segments from each vertex to the midpoint of the opposite side. Using position vectors with origin $O$, prove that the three medians of triangle $ABC$ are concurrent at a point $G$ (the centroid), and that $G$ divides each median in the ratio $2:1$.
 
-**(c)** Points $P$ and $Q$ have position vectors $\mathbf{p}$ and $\mathbf{q}$ respectively. Show that the midpoint of $PQ$ has position vector $\frac{\mathbf{p}+\mathbf{q}}{2}$, and use this result to prove that the line segment joining the midpoints of two sides of a triangle is parallel to the third side and half its length.
+**(c)** Points $P$ and $Q$ have position vectors $\mathbf{'\{'}p{'\}'}$ and $\mathbf{'\{'}q{'\}'}$ respectively. Show that the midpoint of $PQ$ has position vector $\frac{\mathbf{'\{'}p{'\}'}+\mathbf{'\{'}q{'\}'}}{2}$, and use this result to prove that the line segment joining the midpoints of two sides of a triangle is parallel to the third side and half its length.
 
 [Difficulty: hard. Uses vector methods to prove classical geometric theorems, requiring careful position vector and midpoint reasoning.]
 
 **Solution:**
 
-**(a)** Let the parallelogram have vertices $A$, $B$, $C$, $D$ with position vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$, $\mathbf{d}$.
+**(a)** Let the parallelogram have vertices $A$, $B$, $C$, $D$ with position vectors $\mathbf{'\{'}a{'\}'}$, $\mathbf{'\{'}b{'\}'}$, $\mathbf{'\{'}c{'\}'}$, $\mathbf{'\{'}d{'\}'}$.
 
 Since $ABCD$ is a parallelogram, $\overrightarrow{AB} = \overrightarrow{DC}$:
 
-$$\mathbf{b} - \mathbf{a} = \mathbf{c} - \mathbf{d} \implies \mathbf{a} + \mathbf{c} = \mathbf{b} + \mathbf{d}$$
+$$\mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'} = \mathbf{'\{'}c{'\}'} - \mathbf{'\{'}d{'\}'} \implies \mathbf{'\{'}a{'\}'} + \mathbf{'\{'}c{'\}'} = \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}d{'\}'}$$
 
-The midpoint of diagonal $AC$: $\frac{\mathbf{a} + \mathbf{c}}{2}$.
+The midpoint of diagonal $AC$: $\frac{\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}c{'\}'}}{2}$.
 
-The midpoint of diagonal $BD$: $\frac{\mathbf{b} + \mathbf{d}}{2}$.
+The midpoint of diagonal $BD$: $\frac{\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}d{'\}'}}{2}$.
 
-Since $\mathbf{a} + \mathbf{c} = \mathbf{b} + \mathbf{d}$, these midpoints coincide. Therefore the diagonals bisect each other.
+Since $\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}c{'\}'} = \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}d{'\}'}$, these midpoints coincide. Therefore the diagonals bisect each other.
 
-**(b)** Let the vertices of triangle $ABC$ have position vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$.
+**(b)** Let the vertices of triangle $ABC$ have position vectors $\mathbf{'\{'}a{'\}'}$, $\mathbf{'\{'}b{'\}'}$, $\mathbf{'\{'}c{'\}'}$.
 
-The midpoint of $BC$ has position vector $\frac{\mathbf{b}+\mathbf{c}}{2}$.
+The midpoint of $BC$ has position vector $\frac{\mathbf{'\{'}b{'\}'}+\mathbf{'\{'}c{'\}'}}{2}$.
 
 The median from $A$ to the midpoint of $BC$ has equation:
 
-$$\mathbf{r} = \mathbf{a} + t\left(\frac{\mathbf{b}+\mathbf{c}}{2} - \mathbf{a}\right) = \mathbf{a} + t\left(\frac{\mathbf{b}+\mathbf{c}-2\mathbf{a}}{2}\right)$$
+$$\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}a{'\}'} + t\left(\frac{\mathbf{'\{'}b{'\}'}+\mathbf{'\{'}c{'\}'}}{2} - \mathbf{'\{'}a{'\}'}\right) = \mathbf{'\{'}a{'\}'} + t\left(\frac{\mathbf{'\{'}b{'\}'}+\mathbf{'\{'}c{'\}'}-2\mathbf{'\{'}a{'\}'}}{2}\right)$$
 
 Similarly, the median from $B$ to the midpoint of $AC$ has equation:
 
-$$\mathbf{r} = \mathbf{b} + s\left(\frac{\mathbf{a}+\mathbf{c}-2\mathbf{b}}{2}\right)$$
+$$\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}b{'\}'} + s\left(\frac{\mathbf{'\{'}a{'\}'}+\mathbf{'\{'}c{'\}'}-2\mathbf{'\{'}b{'\}'}}{2}\right)$$
 
 For concurrency, set these equal and solve. By symmetry, the intersection occurs at $t = \frac{2}{3}$ (and $s = \frac{2}{3}$):
 
-$$G = \mathbf{a} + \frac{2}{3}\left(\frac{\mathbf{b}+\mathbf{c}-2\mathbf{a}}{2}\right) = \mathbf{a} + \frac{\mathbf{b}+\mathbf{c}-2\mathbf{a}}{3} = \frac{3\mathbf{a} + \mathbf{b} + \mathbf{c} - 2\mathbf{a}}{3} = \frac{\mathbf{a}+\mathbf{b}+\mathbf{c}}{3}$$
+$$G = \mathbf{'\{'}a{'\}'} + \frac{2}{3}\left(\frac{\mathbf{'\{'}b{'\}'}+\mathbf{'\{'}c{'\}'}-2\mathbf{'\{'}a{'\}'}}{2}\right) = \mathbf{'\{'}a{'\}'} + \frac{\mathbf{'\{'}b{'\}'}+\mathbf{'\{'}c{'\}'}-2\mathbf{'\{'}a{'\}'}}{3} = \frac{3\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'} - 2\mathbf{'\{'}a{'\}'}}{3} = \frac{\mathbf{'\{'}a{'\}'}+\mathbf{'\{'}b{'\}'}+\mathbf{'\{'}c{'\}'}}{3}$$
 
-By the cyclic symmetry of $\frac{\mathbf{a}+\mathbf{b}+\mathbf{c}}{3}$, the same point lies on all three medians.
+By the cyclic symmetry of $\frac{\mathbf{'\{'}a{'\}'}+\mathbf{'\{'}b{'\}'}+\mathbf{'\{'}c{'\}'}}{3}$, the same point lies on all three medians.
 
 The point $G$ is at parameter $t = \frac{2}{3}$ along the median from $A$, meaning $\overrightarrow{AG} = \frac{2}{3}\overrightarrow{AM_{BC}}$. Therefore $G$ divides each median in the ratio $AG:GM_{BC} = 2:1$.
 
-**(c)** The midpoint of $PQ$: position vector $\frac{\mathbf{p}+\mathbf{q}}{2}$.
+**(c)** The midpoint of $PQ$: position vector $\frac{\mathbf{'\{'}p{'\}'}+\mathbf{'\{'}q{'\}'}}{2}$.
 
-For triangle $ABC$ with vertices at position vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$:
+For triangle $ABC$ with vertices at position vectors $\mathbf{'\{'}a{'\}'}$, $\mathbf{'\{'}b{'\}'}$, $\mathbf{'\{'}c{'\}'}$:
 
-Midpoint of $AB$: $M = \frac{\mathbf{a}+\mathbf{b}}{2}$. Midpoint of $AC$: $N = \frac{\mathbf{a}+\mathbf{c}}{2}$.
+Midpoint of $AB$: $M = \frac{\mathbf{'\{'}a{'\}'}+\mathbf{'\{'}b{'\}'}}{2}$. Midpoint of $AC$: $N = \frac{\mathbf{'\{'}a{'\}'}+\mathbf{'\{'}c{'\}'}}{2}$.
 
-$$\overrightarrow{MN} = \frac{\mathbf{a}+\mathbf{c}}{2} - \frac{\mathbf{a}+\mathbf{b}}{2} = \frac{\mathbf{c}-\mathbf{b}}{2} = \frac{1}{2}\overrightarrow{BC}$$
+$$\overrightarrow{MN} = \frac{\mathbf{'\{'}a{'\}'}+\mathbf{'\{'}c{'\}'}}{2} - \frac{\mathbf{'\{'}a{'\}'}+\mathbf{'\{'}b{'\}'}}{2} = \frac{\mathbf{'\{'}c{'\}'}-\mathbf{'\{'}b{'\}'}}{2} = \frac{1}{2}\overrightarrow{BC}$$
 
 Since $\overrightarrow{MN} = \frac{1}{2}\overrightarrow{BC}$, the segment $MN$ is parallel to $BC$ and half its length. This is the midpoint theorem.

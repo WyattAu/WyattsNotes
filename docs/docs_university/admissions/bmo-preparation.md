@@ -167,7 +167,7 @@ occurs when all variables are equal.
 
 **Factor Theorem.** $x - a$ divides $P(x)$ iff $P(a) = 0$.
 
-**Rational Root Theorem.** If $P(x) = a_n x^n + \cdots + a_0 \in \mathbb{Z}[x]$ and $p/q$ is a
+**Rational Root Theorem.** If $P(x) = a_n x^n + \cdots + a_0 \in \mathbb{'\{'}Z{'\}'}[x]$ and $p/q$ is a
 rational root (in lowest terms), then $p \mid a_0$ and $q \mid a_n$.
 
 **Vieta's formulas.** If $P(x) = a_n(x - r_1)\cdots(x - r_n)$, then $\sum r_i = -a_{n-1}/a_n$
@@ -181,7 +181,7 @@ swapping $P(x,y)$ and $P(y,x)$, composing $P(x, P(y,z))$.
 **Technique: finding the form.** Often the solution is polynomial. If you suspect $f(x) = ax + b$,
 substitute and solve for $a, b$. Always verify and prove uniqueness.
 
-**Cauchy's equation.** $f(x + y) = f(x) + f(y)$. The general solution over $\mathbb{R}$ with
+**Cauchy's equation.** $f(x + y) = f(x) + f(y)$. The general solution over $\mathbb{'\{'}R{'\}'}$ with
 continuity is $f(x) = cx$. Without regularity conditions, pathological solutions exist.
 
 ---
@@ -207,17 +207,17 @@ The radical axes of three pairwise circles are concurrent (at the radical centre
 vertices are $a, b, c$ with $|a| = |b| = |c| = 1$, then the orthocentre is $a + b + c$ and the
 circumcentre is $0$.
 
-**Collinearity.** Points $p, q, r$ are collinear iff $\frac{p - q}{p - r} \in \mathbb{R}$.
+**Collinearity.** Points $p, q, r$ are collinear iff $\frac{p - q}{p - r} \in \mathbb{'\{'}R{'\}'}$.
 
-**Perpendicularity.** Lines $PQ$ and $RS$ are perpendicular iff $\frac{p - q}{r - s} \in i\mathbb{R}$.
+**Perpendicularity.** Lines $PQ$ and $RS$ are perpendicular iff $\frac{p - q}{r - s} \in i\mathbb{'\{'}R{'\}'}$.
 
 ### 5.3 Vectors
 
-**Dot product.** $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$. Converts
+**Dot product.** $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = |\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta$. Converts
 geometric conditions about angles into algebraic equations.
 
-**Technique: vector proofs.** Assign position vectors $\mathbf{a}, \mathbf{b}, \mathbf{c}$ to
-vertices and compute. For example, the centroid is $(\mathbf{a} + \mathbf{b} + \mathbf{c})/3$,
+**Technique: vector proofs.** Assign position vectors $\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}$ to
+vertices and compute. For example, the centroid is $(\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'})/3$,
 and one can verify it lies on all three medians by symmetry.
 
 ---
@@ -276,7 +276,7 @@ integers share the same residue. If these are $a$ and $b$, then $n \mid (a - b)$
 
 ### Question 4 (Algebra: Functional Equations)
 
-> Find all functions $f : \mathbb{R} \to \mathbb{R}$ such that $f(x^2 + y) = f(x)^2 + f(y)$ for
+> Find all functions $f : \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ such that $f(x^2 + y) = f(x)^2 + f(y)$ for
 > all real $x, y$.
 
 **Solution.** Setting $x = 0$: $f(y) = f(0)^2 + f(y)$, so $f(0) = 0$.

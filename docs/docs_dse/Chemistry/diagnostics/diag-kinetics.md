@@ -47,15 +47,15 @@ Rate $\propto [B]^{2}$, so **order with respect to $B$ = 2**.
 Experiment 4 may contain a typo, or is designed to test whether students verify all data points.
 Proceeding with orders $A = 1$, $B = 2$ as determined from experiments 1--3.
 
-(b) Rate equation: $\text{Rate} = k[A][B]^{2}$
+(b) Rate equation: $\text{'\{'}Rate{'\}'} = k[A][B]^{2}$
 
 From experiment 1:
 
-$$k = \frac{1.2 \times 10^{-4}}{0.10 \times (0.10)^{2}} = \frac{1.2 \times 10^{-4}}{0.001} = 0.12 \text{ dm}^{6} \text{ mol}^{-2} \text{ s}^{-1}$$
+$$k = \frac{1.2 \times 10^{-4}}{0.10 \times (0.10)^{2}} = \frac{1.2 \times 10^{-4}}{0.001} = 0.12 \text{'\{'} dm{'\}'}^{6} \text{'\{'} mol{'\}'}^{-2} \text{'\{'} s{'\}'}^{-1}$$
 
-Units: $\frac{\text{mol dm}^{-3} \text{ s}^{-1}}{(\text{mol dm}^{-3})^{3}} = \text{dm}^{6} \text{ mol}^{-2} \text{ s}^{-1}$
+Units: $\frac{\text{'\{'}mol dm{'\}'}^{-3} \text{'\{'} s{'\}'}^{-1}}{(\text{'\{'}mol dm{'\}'}^{-3})^{3}} = \text{'\{'}dm{'\}'}^{6} \text{'\{'} mol{'\}'}^{-2} \text{'\{'} s{'\}'}^{-1}$
 
-(c) Rate = $0.12 \times 0.15 \times (0.25)^{2} = 0.12 \times 0.15 \times 0.0625 = 1.125 \times 10^{-3} \text{ mol dm}^{-3} \text{ s}^{-1}$
+(c) Rate = $0.12 \times 0.15 \times (0.25)^{2} = 0.12 \times 0.15 \times 0.0625 = 1.125 \times 10^{-3} \text{'\{'} mol dm{'\}'}^{-3} \text{'\{'} s{'\}'}^{-1}$
 
 ---
 
@@ -128,7 +128,7 @@ This occurs because when $MnO_{2}$ is in large excess, the **surface of the cata
 
 The reaction $2NO_{2}(g) + F_{2}(g) \rightarrow 2NO_{2}F(g)$ has the experimentally determined rate equation:
 
-$$\text{Rate} = k[NO_{2}][F_{2}]$$
+$$\text{'\{'}Rate{'\}'} = k[NO_{2}][F_{2}]$$
 
 (a) What is the overall order of the reaction? [1 mark]
 
@@ -150,7 +150,7 @@ Explain why this proposed mechanism is **inconsistent** with the rate equation. 
 
 (b) If the reaction occurred in a single step involving the collision of $2NO_{2}$ and $F_{2}$ simultaneously (a termolecular collision), the rate equation would be:
 
-$$\text{Rate} = k[NO_{2}]^{2}[F_{2}]$$
+$$\text{'\{'}Rate{'\}'} = k[NO_{2}]^{2}[F_{2}]$$
 
 This predicts **second order** with respect to $NO_{2}$, which contradicts the experimentally determined rate equation (first order in $NO_{2}$). Therefore, the one-step mechanism is inconsistent.
 
@@ -164,7 +164,7 @@ This predicts **second order** with respect to $NO_{2}$, which contradicts the e
 
 The rate equation is determined by the rate-determining step:
 
-$$\text{Rate} = k[NO_{2}][F_{2}]$$
+$$\text{'\{'}Rate{'\}'} = k[NO_{2}][F_{2}]$$
 
 This matches the experimental rate equation.
 
@@ -223,9 +223,9 @@ For a first-order reaction: Rate $= k[A]$.
 
 From the gradient of $\ln[A]$ vs $t$:
 
-$$k = \frac{(-1.386) - (-0.223)}{400 - 0} = \frac{-1.163}{400} = 2.91 \times 10^{-3} \text{ s}^{-1}$$
+$$k = \frac{(-1.386) - (-0.223)}{400 - 0} = \frac{-1.163}{400} = 2.91 \times 10^{-3} \text{'\{'} s{'\}'}^{-1}$$
 
-Rate at $t = 200$ s: $k[A] = 2.91 \times 10^{-3} \times 0.45 = 1.31 \times 10^{-3} \text{ mol dm}^{-3} \text{ s}^{-1}$
+Rate at $t = 200$ s: $k[A] = 2.91 \times 10^{-3} \times 0.45 = 1.31 \times 10^{-3} \text{'\{'} mol dm{'\}'}^{-3} \text{'\{'} s{'\}'}^{-1}$
 
 By tangent method: The gradient of the $[A]$ vs $t$ curve at $t = 200$ s gives $-d[A]/dt \approx 1.3 \times 10^{-3}$ mol dm$^{-3}$ s$^{-1}$.
 
@@ -265,7 +265,7 @@ $$1.386 = \frac{E_{a}}{8.314} \times 2.083 \times 10^{-4}$$
 
 $$E_{a} = \frac{1.386 \times 8.314}{2.083 \times 10^{-4}}$$
 
-$$E_{a} = \frac{11.523}{2.083 \times 10^{-4}} = 55320 \text{ J/mol} = 55.3 \text{ kJ/mol}$$
+$$E_{a} = \frac{11.523}{2.083 \times 10^{-4}} = 55320 \text{'\{'} J/mol{'\}'} = 55.3 \text{'\{'} kJ/mol{'\}'}$$
 
 (b) Using the Arrhenius equation with $T_{1} = 300$ K, $k_{1} = 2.5 \times 10^{-3}$ s$^{-1}$, $T_{2} = 340$ K:
 
@@ -275,6 +275,6 @@ $$= 6654.7 \times \frac{40}{102000} = 6654.7 \times 3.922 \times 10^{-4} = 2.610
 
 $$\frac{k_{2}}{2.5 \times 10^{-3}} = e^{2.610} = 13.60$$
 
-$$k_{2} = 13.60 \times 2.5 \times 10^{-3} = 3.40 \times 10^{-2} \text{ s}^{-1}$$
+$$k_{2} = 13.60 \times 2.5 \times 10^{-3} = 3.40 \times 10^{-2} \text{'\{'} s{'\}'}^{-1}$$
 
 (c) The statement is an **overgeneralisation**. While it is true that at higher temperatures, a larger proportion of molecules have energy above $E_{a}$, the Maxwell-Boltzmann distribution always has a tail extending to very low energies. At any finite temperature, some molecules will always have energy below $E_{a}$. Furthermore, even if all molecules exceed $E_{a}$, the rate still depends on the **collision frequency** and the correct **orientation** of collisions (the steric/entropy factor). The rate would increase dramatically but would not be truly "instantaneous." In practice, at very high temperatures, other factors such as reactant decomposition or competing reactions may become significant.

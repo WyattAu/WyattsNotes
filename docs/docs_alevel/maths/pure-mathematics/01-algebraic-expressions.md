@@ -25,8 +25,8 @@ slug: algebraic-expressions
 ## 1. Surds
 
 **Definition.** A _surd_ is an irrational number expressible as the root of a rational number — that
-is, an expression of the form $\sqrt{n}$ where $n \in \mathbb{Q}^+$ and
-$\sqrt{n} \notin \mathbb{Q}$.
+is, an expression of the form $\sqrt{n}$ where $n \in \mathbb{'\{'}Q{'\}'}^+$ and
+$\sqrt{n} \notin \mathbb{'\{'}Q{'\}'}$.
 
 The most familiar surds are $\sqrt{2}$, $\sqrt{3}$, $\sqrt{5}$, and so on. The set of surds is a
 subset of the algebraic numbers, and they arise naturally whenever we solve equations of degree 2 or
@@ -77,7 +77,7 @@ denominator correctly.
 **Theorem.** $\sqrt{2}$ is irrational.
 
 _Proof._ We proceed by contradiction. Assume $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$
-where $p, q \in \mathbb{Z}^+$, $q \neq 0$, and $\gcd(p, q) = 1$ (i.e., the fraction is in lowest
+where $p, q \in \mathbb{'\{'}Z{'\}'}^+$, $q \neq 0$, and $\gcd(p, q) = 1$ (i.e., the fraction is in lowest
 terms).
 
 $$
@@ -110,21 +110,21 @@ of 2 into both $p$ and $q$, making the fraction reducible.
 
 ## 2. Indices (Exponent Laws)
 
-**Definition.** For $a > 0$ and $n \in \mathbb{Z}^+$, we define
-$a^n = \underbrace{a \times a \times \cdots \times a}_{n \mathrm{ times}}$. We extend this
+**Definition.** For $a > 0$ and $n \in \mathbb{'\{'}Z{'\}'}^+$, we define
+$a^n = \underbrace{a \times a \times \cdots \times a}_{n \mathrm{'\{'} times{'\}'}}$. We extend this
 definition as follows:
 
 $$
 \begin{aligned}
-a^0 &= 1 \quad \mathrm{for } a \neq 0 \\
-a^{-n} &= \frac{1}{a^n} \quad \mathrm{for } a \neq 0 \\
-a^{1/n} &= \sqrt[n]{a} \quad \mathrm{(the positive root for } a > 0)
+a^0 &= 1 \quad \mathrm{'\{'}for {'\}'} a \neq 0 \\
+a^{-n} &= \frac{1}{a^n} \quad \mathrm{'\{'}for {'\}'} a \neq 0 \\
+a^{1/n} &= \sqrt[n]{a} \quad \mathrm{'\{'}(the positive root for {'\}'} a > 0)
 \end{aligned}
 $$
 
 ### 2.1 Laws of Indices
 
-For $a, b > 0$ and $m, n \in \mathbb{R}$:
+For $a, b > 0$ and $m, n \in \mathbb{'\{'}R{'\}'}$:
 
 $$
 \begin{aligned}
@@ -210,11 +210,11 @@ state the general theorem.
 
 $$
 \begin{aligned}
-x^3 + 2x^2 - 5x + 6 &= (x - 1)(x^2) + \mathrm{remainder of } x^3 - x^2 \\
+x^3 + 2x^2 - 5x + 6 &= (x - 1)(x^2) + \mathrm{'\{'}remainder of {'\}'} x^3 - x^2 \\
 &= (x - 1)(x^2) + 3x^2 - 5x + 6 \\
-&= (x - 1)(x^2 + 3x) + \mathrm{remainder of } 3x^2 - 3x \\
+&= (x - 1)(x^2 + 3x) + \mathrm{'\{'}remainder of {'\}'} 3x^2 - 3x \\
 &= (x - 1)(x^2 + 3x) - 2x + 6 \\
-&= (x - 1)(x^2 + 3x - 2) + \mathrm{remainder of } -2x + 2 \\
+&= (x - 1)(x^2 + 3x - 2) + \mathrm{'\{'}remainder of {'\}'} -2x + 2 \\
 &= (x - 1)(x^2 + 3x - 2) - 2(x - 1) \\
 &= (x - 1)(x^2 + 3x - 2) + 4
 \end{aligned}
@@ -238,8 +238,8 @@ have smaller degree than the divisor.
 ### 4.2 Why Polynomial Division Mirrors Integer Long Division
 
 The structural analogy is deep. Both are instances of a _Euclidean domain_ — an algebraic structure
-where we can perform division with remainder. In $\mathbb{Z}$, the "degree" is the absolute value;
-in $\mathbb{R}[x]$, the degree is the polynomial degree. The algorithm is the same: at each step,
+where we can perform division with remainder. In $\mathbb{'\{'}Z{'\}'}$, the "degree" is the absolute value;
+in $\mathbb{'\{'}R{'\}'}[x]$, the degree is the polynomial degree. The algorithm is the same: at each step,
 eliminate the leading term.
 
 <hr />
@@ -402,7 +402,7 @@ $$
 \begin{aligned}
 2(1)^3 + a(1)^2 + b(1) - 12 &= -6 \\
 2 + a + b - 12 &= -6 \\
-a + b &= 4 \quad \mathrm{--- (1)}
+a + b &= 4 \quad \mathrm{'\{'}--- (1){'\}'}
 \end{aligned}
 $$
 
@@ -413,7 +413,7 @@ $$
 2(-2)^3 + a(-2)^2 + b(-2) - 12 &= 0 \\
 -16 + 4a - 2b - 12 &= 0 \\
 4a - 2b &= 28 \\
-2a - b &= 14 \quad \mathrm{--- (2)}
+2a - b &= 14 \quad \mathrm{'\{'}--- (2){'\}'}
 \end{aligned}
 $$
 
@@ -503,7 +503,7 @@ $$f(x) = (x - 1)(x + 1)(x - 3)(x + 2)$$
 
 <details>
 <summary>Solution</summary>
-Assume $\sqrt{3} = \frac{p}{q}$ in lowest terms, $p, q \in \mathbb{Z}^+$, $\gcd(p, q) = 1$.
+Assume $\sqrt{3} = \frac{p}{q}$ in lowest terms, $p, q \in \mathbb{'\{'}Z{'\}'}^+$, $\gcd(p, q) = 1$.
 
 $$
 \begin{aligned}
@@ -581,9 +581,9 @@ Since $(x - 1)^2$ is a factor, both $f(1) = 0$ and $f'(1) = 0$.
 
 $$
 \begin{aligned}
-f(1) &= 1 + a + b + c = 0 \quad \mathrm{--- (1)} \\
+f(1) &= 1 + a + b + c = 0 \quad \mathrm{'\{'}--- (1){'\}'} \\
 f'(x) &= 3x^2 + 2ax + b \\
-f'(1) &= 3 + 2a + b = 0 \quad \mathrm{--- (2)}
+f'(1) &= 3 + 2a + b = 0 \quad \mathrm{'\{'}--- (2){'\}'}
 \end{aligned}
 $$
 
@@ -592,7 +592,7 @@ Also $f(-2) = 12$:
 $$
 \begin{aligned}
 -8 + 4a - 2b + c &= 12 \\
-4a - 2b + c &= 20 \quad \mathrm{--- (3)}
+4a - 2b + c &= 20 \quad \mathrm{'\{'}--- (3){'\}'}
 \end{aligned}
 $$
 

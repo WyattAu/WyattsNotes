@@ -280,8 +280,8 @@ So $v = -x + C$, and $y = x + \frac{1}{C - x}$.
 
 ### 2.13 Worked Example: Newton's Law of Cooling
 
-**Problem.** A body at $90\degree\mathrm{C}$ is placed in a room at $20\degree\mathrm{C}$. After 10
-minutes, its temperature is $60\degree\mathrm{C}$. When will it reach $30\degree\mathrm{C}$?
+**Problem.** A body at $90\degree\mathrm{'\{'}C{'\}'}$ is placed in a room at $20\degree\mathrm{'\{'}C{'\}'}$. After 10
+minutes, its temperature is $60\degree\mathrm{'\{'}C{'\}'}$. When will it reach $30\degree\mathrm{'\{'}C{'\}'}$?
 
 <details>
 <summary>Solution</summary>
@@ -314,7 +314,7 @@ the mixture leaves at 3 L/min. Find the amount of salt after 30 minutes.
 
 *Solution.* Let $Q(t)$ be the amount of salt (kg) at time $t$ (min).
 
-Rate of change: $\frac{dQ}{dt} = \mathrm{rate\; in} - \mathrm{rate\; out} = 0 - 3 \cdot \frac{Q}{100}$.
+Rate of change: $\frac{dQ}{dt} = \mathrm{'\{'}rate\; in{'\}'} - \mathrm{'\{'}rate\; out{'\}'} = 0 - 3 \cdot \frac{Q}{100}$.
 
 $\frac{dQ}{dt} = -\frac{3Q}{100}$, $Q(0) = 20$.
 
@@ -825,63 +825,63 @@ $y = c_1 e^{2x} + c_2 e^{-2x} - \frac{(x+2)e^x}{9}$. $\blacksquare$
 
 A system of first-order linear ODEs can be written in matrix form:
 
-$$\mathbf{x}' = A\mathbf{x} + \mathbf{f}(t)$$
+$$\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'} + \mathbf{'\{'}f{'\}'}(t)$$
 
-where $A$ is an $n \times n$ matrix and $\mathbf{x}, \mathbf{f} \in \mathbb{R}^n$.
+where $A$ is an $n \times n$ matrix and $\mathbf{'\{'}x{'\}'}, \mathbf{'\{'}f{'\}'} \in \mathbb{'\{'}R{'\}'}^n$.
 
 ### 4.2 Homogeneous Systems with Constant Coefficients
 
-For $\mathbf{x}' = A\mathbf{x}$, try $\mathbf{x} = \mathbf{v}e^{\lambda t}$:
+For $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$, try $\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}v{'\}'}e^{\lambda t}$:
 
-$$\lambda \mathbf{v} = A\mathbf{v}$$
+$$\lambda \mathbf{'\{'}v{'\}'} = A\mathbf{'\{'}v{'\}'}$$
 
-So $\lambda$ is an eigenvalue of $A$ and $\mathbf{v}$ is the corresponding eigenvector.
+So $\lambda$ is an eigenvalue of $A$ and $\mathbf{'\{'}v{'\}'}$ is the corresponding eigenvector.
 
 **Case 1: $A$ has $n$ distinct real eigenvalues.** The general solution is
 
-$$\mathbf{x} = c_1 \mathbf{v}_1 e^{\lambda_1 t} + \cdots + c_n \mathbf{v}_n e^{\lambda_n t}$$
+$$\mathbf{'\{'}x{'\}'} = c_1 \mathbf{'\{'}v{'\}'}_1 e^{\lambda_1 t} + \cdots + c_n \mathbf{'\{'}v{'\}'}_n e^{\lambda_n t}$$
 
 **Case 2: $A$ has a repeated eigenvalue $\lambda$ with algebraic multiplicity $m$ and geometric
 multiplicity $k \lt{} m$.** Include terms involving $t^j e^{\lambda t}$ where generalized
 eigenvectors fill out the solution space.
 
 **Case 3: Complex eigenvalues $\lambda = \alpha \pm i\beta$ with eigenvector
-$\mathbf{v} = \mathbf{a} \pm i\mathbf{b}$.** The real solutions are
-$e^{\alpha t}(\mathbf{a}\cos(\beta t) - \mathbf{b}\sin(\beta t))$ and
-$e^{\alpha t}(\mathbf{a}\sin(\beta t) + \mathbf{b}\cos(\beta t))$.
+$\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}a{'\}'} \pm i\mathbf{'\{'}b{'\}'}$.** The real solutions are
+$e^{\alpha t}(\mathbf{'\{'}a{'\}'}\cos(\beta t) - \mathbf{'\{'}b{'\}'}\sin(\beta t))$ and
+$e^{\alpha t}(\mathbf{'\{'}a{'\}'}\sin(\beta t) + \mathbf{'\{'}b{'\}'}\cos(\beta t))$.
 
 ### 4.3 The Matrix Exponential
 
 **Definition.** $e^{At} = \sum_{k=0}^{\infty} \frac{A^k t^k}{k!}$.
 
-**Theorem 4.1.** The solution to $\mathbf{x}' = A\mathbf{x}$ with $\mathbf{x}(0) = \mathbf{x}_0$ is
-$\mathbf{x}(t) = e^{At}\mathbf{x}_0$.
+**Theorem 4.1.** The solution to $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ with $\mathbf{'\{'}x{'\}'}(0) = \mathbf{'\{'}x{'\}'}_0$ is
+$\mathbf{'\{'}x{'\}'}(t) = e^{At}\mathbf{'\{'}x{'\}'}_0$.
 
 **Proposition 4.2.** If $A$ is diagonalizable as $A = PDP^{-1}$, then $e^{At} = Pe^{Dt}P^{-1}$,
-where $e^{Dt} = \mathrm{diag}(e^{\lambda_1 t}, \ldots, e^{\lambda_n t})$.
+where $e^{Dt} = \mathrm{'\{'}diag{'\}'}(e^{\lambda_1 t}, \ldots, e^{\lambda_n t})$.
 
 ### 4.4 Worked Example: Distinct Real Eigenvalues
 
-**Problem.** Solve $\mathbf{x}' = \begin{pmatrix} 0 & 1 \\ -2 & -3 \end{pmatrix}\mathbf{x}$.
+**Problem.** Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 0 & 1 \\ -2 & -3 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
 
 *Solution.* Characteristic equation:
 $\det(A - \lambda I) = \lambda^2 + 3\lambda + 2 = (\lambda + 1)(\lambda + 2) = 0$. Eigenvalues:
 $\lambda_1 = -1$, $\lambda_2 = -2$.
 
 For $\lambda_1 = -1$:
-$(A + I)\mathbf{v} = \begin{pmatrix} 1 & 1 \\ -2 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0}$.
-$\mathbf{v}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+$(A + I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 1 & 1 \\ -2 & -2 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+$\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 For $\lambda_2 = -2$:
-$(A + 2I)\mathbf{v} = \begin{pmatrix} 2 & 1 \\ -2 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0}$.
-$\mathbf{v}_2 = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
+$(A + 2I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 2 & 1 \\ -2 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+$\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
 
-$\mathbf{x}(t) = c_1 \begin{pmatrix} 1 \\ -1 \end{pmatrix} e^{-t} + c_2 \begin{pmatrix} 1 \\ -2 \end{pmatrix} e^{-2t}$.
+$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} 1 \\ -1 \end{pmatrix} e^{-t} + c_2 \begin{pmatrix} 1 \\ -2 \end{pmatrix} e^{-2t}$.
 $\blacksquare$
 
 ### 4.5 Worked Example: Complex Eigenvalues
 
-**Problem.** Solve $\mathbf{x}' = \begin{pmatrix} 0 & -2 \\ 1 & 0 \end{pmatrix}\mathbf{x}$.
+**Problem.** Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 0 & -2 \\ 1 & 0 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
 
 <details>
 <summary>Solution</summary>
@@ -889,15 +889,15 @@ $\blacksquare$
 *Solution.* $\det(A - \lambda I) = \lambda^2 + 2 = 0$. Eigenvalues: $\lambda = \pm i\sqrt{2}$.
 
 For $\lambda = i\sqrt{2}$:
-$\begin{pmatrix} -i\sqrt{2} & -2 \\ 1 & -i\sqrt{2} \end{pmatrix}\mathbf{v} = \mathbf{0}$.
+$\begin{pmatrix} -i\sqrt{2} & -2 \\ 1 & -i\sqrt{2} \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
 
 From the first row: $-i\sqrt{2}\, v_1 - 2v_2 = 0$, so $v_2 = -\frac{i\sqrt{2}}{2}v_1$.
 
-With $v_1 = 2$: $\mathbf{v} = \begin{pmatrix} 2 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
+With $v_1 = 2$: $\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 2 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
 
-So $\mathbf{a} = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
+So $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$, $\mathbf{'\{'}b{'\}'} = \begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
 
-$\mathbf{x}(t) = c_1\left[\mathbf{a}\cos(\sqrt{2}\, t) - \mathbf{b}\sin(\sqrt{2}\, t)\right] + c_2\left[\mathbf{a}\sin(\sqrt{2}\, t) + \mathbf{b}\cos(\sqrt{2}\, t)\right]$
+$\mathbf{'\{'}x{'\}'}(t) = c_1\left[\mathbf{'\{'}a{'\}'}\cos(\sqrt{2}\, t) - \mathbf{'\{'}b{'\}'}\sin(\sqrt{2}\, t)\right] + c_2\left[\mathbf{'\{'}a{'\}'}\sin(\sqrt{2}\, t) + \mathbf{'\{'}b{'\}'}\cos(\sqrt{2}\, t)\right]$
 
 $= c_1 \begin{pmatrix} 2\cos(\sqrt{2}\, t) \\ \sqrt{2}\sin(\sqrt{2}\, t) \end{pmatrix} + c_2 \begin{pmatrix} 2\sin(\sqrt{2}\, t) \\ -\sqrt{2}\cos(\sqrt{2}\, t) \end{pmatrix}$. $\blacksquare$
 
@@ -905,7 +905,7 @@ $= c_1 \begin{pmatrix} 2\cos(\sqrt{2}\, t) \\ \sqrt{2}\sin(\sqrt{2}\, t) \end{pm
 
 ### 4.6 Worked Example: Repeated Eigenvalues
 
-**Problem.** Solve $\mathbf{x}' = \begin{pmatrix} 2 & 1 \\ -1 & 4 \end{pmatrix}\mathbf{x}$.
+**Problem.** Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 2 & 1 \\ -1 & 4 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
 
 <details>
 <summary>Solution</summary>
@@ -918,13 +918,13 @@ $(A - 3I) = \begin{pmatrix} -1 & 1 \\ -1 & 1 \end{pmatrix}$.
 
 Eigenvector: $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$. Only one eigenvector (geometric multiplicity 1), so we need a generalized eigenvector.
 
-Find $\mathbf{w}$ such that $(A - 3I)\mathbf{w} = \mathbf{v}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$:
+Find $\mathbf{'\{'}w{'\}'}$ such that $(A - 3I)\mathbf{'\{'}w{'\}'} = \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$:
 
 $\begin{pmatrix} -1 & 1 \\ -1 & 1 \end{pmatrix}\begin{pmatrix} w_1 \\ w_2 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$
 
-$-w_1 + w_2 = 1$. Choose $w_1 = 0$, then $w_2 = 1$. So $\mathbf{w} = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$.
+$-w_1 + w_2 = 1$. Choose $w_1 = 0$, then $w_2 = 1$. So $\mathbf{'\{'}w{'\}'} = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$.
 
-$\mathbf{x}(t) = c_1 \begin{pmatrix} 1 \\ 1 \end{pmatrix} e^{3t} + c_2 \left[\begin{pmatrix} 1 \\ 1 \end{pmatrix} t e^{3t} + \begin{pmatrix} 0 \\ 1 \end{pmatrix} e^{3t}\right]$
+$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} 1 \\ 1 \end{pmatrix} e^{3t} + c_2 \left[\begin{pmatrix} 1 \\ 1 \end{pmatrix} t e^{3t} + \begin{pmatrix} 0 \\ 1 \end{pmatrix} e^{3t}\right]$
 
 $= e^{3t}\left[c_1 \begin{pmatrix} 1 \\ 1 \end{pmatrix} + c_2 \begin{pmatrix} t \\ t + 1 \end{pmatrix}\right]$. $\blacksquare$
 
@@ -932,11 +932,11 @@ $= e^{3t}\left[c_1 \begin{pmatrix} 1 \\ 1 \end{pmatrix} + c_2 \begin{pmatrix} t 
 
 ### 4.7 Fundamental Matrix
 
-**Definition.** A **fundamental matrix** $\Phi(t)$ for the system $\mathbf{x}' = A\mathbf{x}$ is an
+**Definition.** A **fundamental matrix** $\Phi(t)$ for the system $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ is an
 $n \times n$ matrix whose columns form a fundamental set of solutions.
 
 **Proposition 4.3.** $\Phi(t)$ satisfies $\Phi' = A\Phi$, and the general solution is
-$\mathbf{x}(t) = \Phi(t)\mathbf{c}$ for $\mathbf{c} \in \mathbb{R}^n$.
+$\mathbf{'\{'}x{'\}'}(t) = \Phi(t)\mathbf{'\{'}c{'\}'}$ for $\mathbf{'\{'}c{'\}'} \in \mathbb{'\{'}R{'\}'}^n$.
 
 **Proposition 4.4.** The matrix exponential $e^{At}$ is a fundamental matrix with $e^{A \cdot 0} = I$.
 Any fundamental matrix can be written as $\Phi(t) = e^{At}\Phi(0)$.
@@ -960,7 +960,7 @@ Since $A$ commutes with itself, $Ae^{At} = e^{At}A$. $\blacksquare$
 
 ### 4.9 Phase Portrait Analysis for 2D Systems
 
-For the linear system $\mathbf{x}' = A\mathbf{x}$ with $A$ a $2 \times 2$ matrix, the qualitative
+For the linear system $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'}$ with $A$ a $2 \times 2$ matrix, the qualitative
 behaviour near the origin is determined by the eigenvalues:
 
 | Eigenvalues                  | Phase Portrait   | Stability             |
@@ -973,7 +973,7 @@ behaviour near the origin is determined by the eigenvalues:
 | $\lambda = \pm i\beta$ | Center | (Marginally) stable |
 
 _Remark._ The **trace-determinant plane** provides a convenient classification. Let
-$\tau = \mathrm{tr}(A)$ and $\Delta = \det(A)$. The eigenvalues satisfy
+$\tau = \mathrm{'\{'}tr{'\}'}(A)$ and $\Delta = \det(A)$. The eigenvalues satisfy
 $\lambda^2 - \tau\lambda + \Delta = 0$, so:
 
 $$\lambda = \frac{\tau \pm \sqrt{\tau^2 - 4\Delta}}{2}$$
@@ -987,12 +987,12 @@ Stability is determined by the sign of $\tau$: stable if $\tau \lt{} 0$, unstabl
 
 ### 4.10 Nonhomogeneous Systems
 
-For $\mathbf{x}' = A\mathbf{x} + \mathbf{f}(t)$, if $\Phi(t)$ is a fundamental matrix for the
+For $\mathbf{'\{'}x{'\}'}' = A\mathbf{'\{'}x{'\}'} + \mathbf{'\{'}f{'\}'}(t)$, if $\Phi(t)$ is a fundamental matrix for the
 homogeneous system, the general solution is
 
-$$\mathbf{x}(t) = \Phi(t)\mathbf{c} + \Phi(t)\int \Phi^{-1}(s)\mathbf{f}(s)\, ds$$
+$$\mathbf{'\{'}x{'\}'}(t) = \Phi(t)\mathbf{'\{'}c{'\}'} + \Phi(t)\int \Phi^{-1}(s)\mathbf{'\{'}f{'\}'}(s)\, ds$$
 
-**Worked Example.** Solve $\mathbf{x}' = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}\mathbf{x} + \begin{pmatrix} e^t \\ 0 \end{pmatrix}$.
+**Worked Example.** Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}\mathbf{'\{'}x{'\}'} + \begin{pmatrix} e^t \\ 0 \end{pmatrix}$.
 
 <details>
 <summary>Solution</summary>
@@ -1001,13 +1001,13 @@ _Solution._ Eigenvalues: $1$ and $2$. $\Phi(t) = \begin{pmatrix} e^t & 0 \\ 0 & 
 
 $\Phi^{-1}(s) = \begin{pmatrix} e^{-s} & 0 \\ 0 & e^{-2s} \end{pmatrix}$.
 
-$\Phi^{-1}(s)\mathbf{f}(s) = \begin{pmatrix} e^{-s} & 0 \\ 0 & e^{-2s} \end{pmatrix}\begin{pmatrix} e^s \\ 0 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+$\Phi^{-1}(s)\mathbf{'\{'}f{'\}'}(s) = \begin{pmatrix} e^{-s} & 0 \\ 0 & e^{-2s} \end{pmatrix}\begin{pmatrix} e^s \\ 0 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
 
-$\int \Phi^{-1}(s)\mathbf{f}(s)\, ds = \begin{pmatrix} t \\ 0 \end{pmatrix}$.
+$\int \Phi^{-1}(s)\mathbf{'\{'}f{'\}'}(s)\, ds = \begin{pmatrix} t \\ 0 \end{pmatrix}$.
 
-$\mathbf{x}_p = \Phi(t)\begin{pmatrix} t \\ 0 \end{pmatrix} = \begin{pmatrix} te^t \\ 0 \end{pmatrix}$.
+$\mathbf{'\{'}x{'\}'}_p = \Phi(t)\begin{pmatrix} t \\ 0 \end{pmatrix} = \begin{pmatrix} te^t \\ 0 \end{pmatrix}$.
 
-$\mathbf{x}(t) = c_1 \begin{pmatrix} e^t \\ 0 \end{pmatrix} + c_2 \begin{pmatrix} 0 \\ e^{2t} \end{pmatrix} + \begin{pmatrix} te^t \\ 0 \end{pmatrix}$. $\blacksquare$
+$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} e^t \\ 0 \end{pmatrix} + c_2 \begin{pmatrix} 0 \\ e^{2t} \end{pmatrix} + \begin{pmatrix} te^t \\ 0 \end{pmatrix}$. $\blacksquare$
 
 </details>
 ## 5. Laplace Transforms
@@ -1016,50 +1016,50 @@ $\mathbf{x}(t) = c_1 \begin{pmatrix} e^t \\ 0 \end{pmatrix} + c_2 \begin{pmatrix
 
 The **Laplace transform** of $f(t)$ (defined for $t \geq 0$) is
 
-$$\mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} e^{-st} f(t)\, dt$$
+$$\mathcal{'\{'}L{'\}'}\{f(t)\} = F(s) = \int_0^{\infty} e^{-st} f(t)\, dt$$
 
 The transform exists when $f$ is piecewise continuous on $[0, \infty)$ and of **exponential order**:
 $|f(t)| \leq Me^{at}$ for some $M, a > 0$.
 
 ### 5.2 Basic Properties
 
-**Theorem 5.1 (Linearity).** $\mathcal{L}\{af + bg\} = a\mathcal{L}\{f\} + b\mathcal{L}\{g\}$.
+**Theorem 5.1 (Linearity).** $\mathcal{'\{'}L{'\}'}\{af + bg\} = a\mathcal{'\{'}L{'\}'}\{f\} + b\mathcal{'\{'}L{'\}'}\{g\}$.
 
-**Theorem 5.2 (First Shifting).** $\mathcal{L}\{e^{at}f(t)\} = F(s - a)$.
+**Theorem 5.2 (First Shifting).** $\mathcal{'\{'}L{'\}'}\{e^{at}f(t)\} = F(s - a)$.
 
-**Theorem 5.3 (Second Shifting).** $\mathcal{L}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$, where $u_c(t)$ is
+**Theorem 5.3 (Second Shifting).** $\mathcal{'\{'}L{'\}'}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$, where $u_c(t)$ is
 the unit step function.
 
-**Theorem 5.4 (Derivative).** $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$.
+**Theorem 5.4 (Derivative).** $\mathcal{'\{'}L{'\}'}\{f'(t)\} = sF(s) - f(0)$.
 
 **Theorem 5.5 (n-th Derivative).**
-$\mathcal{L}\{f^{(n)}(t)\} = s^n F(s) - s^{n-1}f(0) - \cdots - f^{(n-1)}(0)$.
+$\mathcal{'\{'}L{'\}'}\{f^{(n)}(t)\} = s^n F(s) - s^{n-1}f(0) - \cdots - f^{(n-1)}(0)$.
 
 **Theorem 5.6 (Integration).**
-$\mathcal{L}\left\{\int_0^t f(\tau)\, d\tau\right\} = \frac{F(s)}{s}$.
+$\mathcal{'\{'}L{'\}'}\left\{\int_0^t f(\tau)\, d\tau\right\} = \frac{F(s)}{s}$.
 
-**Theorem 5.7 (Convolution).** $\mathcal{L}\{f * g\} = F(s)G(s)$, where
+**Theorem 5.7 (Convolution).** $\mathcal{'\{'}L{'\}'}\{f * g\} = F(s)G(s)$, where
 $(f * g)(t) = \int_0^t f(\tau)g(t - \tau)\, d\tau$.
 
 ### 5.3 Proofs of Key Properties
 
-*Proof of Linearity.* $\mathcal{L}\{af + bg\} = \int_0^{\infty} e^{-st}[af(t) + bg(t)]\, dt = a\int_0^{\infty} e^{-st}f(t)\, dt + b\int_0^{\infty} e^{-st}g(t)\, dt = aF(s) + bG(s)$. $\blacksquare$
+*Proof of Linearity.* $\mathcal{'\{'}L{'\}'}\{af + bg\} = \int_0^{\infty} e^{-st}[af(t) + bg(t)]\, dt = a\int_0^{\infty} e^{-st}f(t)\, dt + b\int_0^{\infty} e^{-st}g(t)\, dt = aF(s) + bG(s)$. $\blacksquare$
 
-*Proof of First Shifting Theorem.* $\mathcal{L}\{e^{at}f(t)\} = \int_0^{\infty} e^{-st} e^{at} f(t)\, dt = \int_0^{\infty} e^{-(s-a)t} f(t)\, dt = F(s - a)$. $\blacksquare$
+*Proof of First Shifting Theorem.* $\mathcal{'\{'}L{'\}'}\{e^{at}f(t)\} = \int_0^{\infty} e^{-st} e^{at} f(t)\, dt = \int_0^{\infty} e^{-(s-a)t} f(t)\, dt = F(s - a)$. $\blacksquare$
 
 *Proof of Derivative Property.* Integrating by parts with $u = e^{-st}$, $dv = f'(t)\, dt$:
 
-$\mathcal{L}\{f'(t)\} = \left[e^{-st}f(t)\right]_0^{\infty} + s\int_0^{\infty} e^{-st}f(t)\, dt = -f(0) + sF(s) = sF(s) - f(0)$.
+$\mathcal{'\{'}L{'\}'}\{f'(t)\} = \left[e^{-st}f(t)\right]_0^{\infty} + s\int_0^{\infty} e^{-st}f(t)\, dt = -f(0) + sF(s) = sF(s) - f(0)$.
 
 The boundary term vanishes at $\infty$ because $f$ is of exponential order. $\blacksquare$
 
 *Proof of Integration Property.* Let $g(t) = \int_0^t f(\tau)\, d\tau$. Then $g'(t) = f(t)$ and $g(0) = 0$.
-$\mathcal{L}\{f(t)\} = \mathcal{L}\{g'(t)\} = s\mathcal{L}\{g(t)\} - g(0) = s\mathcal{L}\{g(t)\}$.
-Therefore $\mathcal{L}\{g(t)\} = F(s)/s$. $\blacksquare$
+$\mathcal{'\{'}L{'\}'}\{f(t)\} = \mathcal{'\{'}L{'\}'}\{g'(t)\} = s\mathcal{'\{'}L{'\}'}\{g(t)\} - g(0) = s\mathcal{'\{'}L{'\}'}\{g(t)\}$.
+Therefore $\mathcal{'\{'}L{'\}'}\{g(t)\} = F(s)/s$. $\blacksquare$
 
 ### 5.4 Common Laplace Transforms
 
-| $f(t)$           | $F(s) = \mathcal{L}\{f(t)\}$ |
+| $f(t)$           | $F(s) = \mathcal{'\{'}L{'\}'}\{f(t)\}$ |
 | ---------------- | ---------------------------- |
 | $1$              | $1/s$                        |
 | $t^n$            | $n!/s^{n+1}$                 |
@@ -1077,7 +1077,7 @@ Therefore $\mathcal{L}\{g(t)\} = F(s)/s$. $\blacksquare$
 **Procedure:**
 
 1. Take the Laplace transform of both sides of the ODE.
-2. Solve the resulting algebraic equation for $Y(s) = \mathcal{L}\{y(t)\}$.
+2. Solve the resulting algebraic equation for $Y(s) = \mathcal{'\{'}L{'\}'}\{y(t)\}$.
 3. Find the inverse Laplace transform to obtain $y(t)$.
 
 ### 5.6 Worked Example: Solving an IVP
@@ -1093,7 +1093,7 @@ $(s^2 + 4)Y = \frac{2}{s^2 + 4}$
 $Y = \frac{2}{(s^2 + 4)^2}$
 
 To invert, use the convolution theorem:
-$\mathcal{L}^{-1}\left\{\frac{1}{s^2 + 4}\right\} = \frac{1}{2}\sin(2t)$.
+$\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{1}{s^2 + 4}\right\} = \frac{1}{2}\sin(2t)$.
 
 $y(t) = \frac{1}{2}\sin(2t) * \frac{1}{2}\sin(2t) = \frac{1}{4}\int_0^t \sin(2\tau)\sin(2(t - \tau))\, d\tau$
 
@@ -1108,7 +1108,7 @@ $y(t) = \frac{\sin(2t) - 2t\cos(2t)}{16}$. $\blacksquare$
 
 ### 5.6b Worked Example: Partial Fractions for Inverse Laplace
 
-**Problem.** Find $\mathcal{L}^{-1}\left\{\frac{1}{s(s^2 + 4)}
+**Problem.** Find $\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{1}{s(s^2 + 4)}
 ight\}$.
 
 <details>
@@ -1127,10 +1127,10 @@ $f(t) = \frac{1}{4} - \frac{1}{4}\cos 2t$. $\blacksquare$
 </details>
 ### 5.7 Convolution Theorem
 
-**Theorem 5.8 (Convolution).** If $F(s) = \mathcal{L}\{f(t)\}$ and $G(s) = \mathcal{L}\{g(t)\}$,
+**Theorem 5.8 (Convolution).** If $F(s) = \mathcal{'\{'}L{'\}'}\{f(t)\}$ and $G(s) = \mathcal{'\{'}L{'\}'}\{g(t)\}$,
 then
 
-$$\mathcal{L}\{f * g\} = F(s)G(s)$$
+$$\mathcal{'\{'}L{'\}'}\{f * g\} = F(s)G(s)$$
 
 where $(f * g)(t) = \int_0^t f(\tau)g(t - \tau)\, d\tau$.
 
@@ -1145,11 +1145,11 @@ $= \int_0^{\infty} f(\tau)\left[\int_{\tau}^{\infty} e^{-st} g(t - \tau)\, dt\ri
 
 Swap the order of integration (Fubini):
 
-$= \int_0^{\infty} e^{-st}\left[\int_0^t f(\tau) g(t - \tau)\, d\tau\right] dt = \mathcal{L}\{(f * g)(t)\}$. $\blacksquare$
+$= \int_0^{\infty} e^{-st}\left[\int_0^t f(\tau) g(t - \tau)\, d\tau\right] dt = \mathcal{'\{'}L{'\}'}\{(f * g)(t)\}$. $\blacksquare$
 
 ### 5.8 Worked Example: Inverse Laplace Transform
 
-**Problem.** Find $\mathcal{L}^{-1}\left\{\frac{3s + 1}{s^2 + 4s + 13}\right\}$.
+**Problem.** Find $\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{3s + 1}{s^2 + 4s + 13}\right\}$.
 
 <details>
 <summary>Solution</summary>
@@ -1160,9 +1160,9 @@ $\frac{3s + 1}{s^2 + 4s + 13} = \frac{3(s + 2) - 5}{(s + 2)^2 + 9} = 3 \cdot \fr
 
 Using the shifting theorem:
 
-$\mathcal{L}^{-1}\left\{\frac{s + 2}{(s + 2)^2 + 9}\right\} = e^{-2t}\cos(3t)$
+$\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{s + 2}{(s + 2)^2 + 9}\right\} = e^{-2t}\cos(3t)$
 
-$\mathcal{L}^{-1}\left\{\frac{3}{(s + 2)^2 + 9}\right\} = e^{-2t}\sin(3t)$
+$\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{3}{(s + 2)^2 + 9}\right\} = e^{-2t}\sin(3t)$
 
 $f(t) = 3e^{-2t}\cos(3t) - \frac{5}{3}e^{-2t}\sin(3t) = e^{-2t}\left(3\cos(3t) - \frac{5}{3}\sin(3t)\right)$. $\blacksquare$
 
@@ -1193,7 +1193,7 @@ $s = 0$: $1 = 2A \implies A = 1/2$
 $s = -1$: $1 = -B \implies B = -1$
 $s = -2$: $1 = 2C \implies C = 1/2$
 
-So $\mathcal{L}^{-1}\left\{\frac{1}{s(s+1)(s+2)}\right\} = \frac{1}{2} - e^{-t} + \frac{1}{2}e^{-2t}$.
+So $\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{1}{s(s+1)(s+2)}\right\} = \frac{1}{2} - e^{-t} + \frac{1}{2}e^{-2t}$.
 
 By the second shifting theorem:
 
@@ -1209,10 +1209,10 @@ $$u_c(t) = \begin{cases} 0 & t \lt{} c \\ 1 & t \geq c \end{cases}$$
 
 It models a sudden switch being turned on at time $t = c$. The second shifting theorem states:
 
-$$\mathcal{L}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$$
+$$\mathcal{'\{'}L{'\}'}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$$
 
 Conversely, if $Y(s) = e^{-cs}G(s)$, then
-$y(t) = u_c(t) \cdot g(t - c)$ where $g = \mathcal{L}^{-1}\{G\}$.
+$y(t) = u_c(t) \cdot g(t - c)$ where $g = \mathcal{'\{'}L{'\}'}^{-1}\{G\}$.
 
 ### 5.11 The Dirac Delta Function
 
@@ -1220,7 +1220,7 @@ The **Dirac delta function** $\delta(t - c)$ satisfies
 $\int_0^{\infty} \delta(t - c)f(t)\, dt = f(c)$ for continuous $f$. It models an instantaneous
 impulse.
 
-$\mathcal{L}\{\delta(t - c)\} = e^{-cs}$.
+$\mathcal{'\{'}L{'\}'}\{\delta(t - c)\} = e^{-cs}$.
 
 **Properties:**
 - $\delta(t - c) = 0$ for $t \neq c$
@@ -1262,7 +1262,7 @@ $(s - 3)^2 Y = \frac{6}{s - 3}$
 
 $Y = \frac{6}{(s - 3)^3}$
 
-Using the table: $\mathcal{L}\{t^n e^{at}\} = \frac{n!}{(s-a)^{n+1}}$.
+Using the table: $\mathcal{'\{'}L{'\}'}\{t^n e^{at}\} = \frac{n!}{(s-a)^{n+1}}$.
 
 $y(t) = 6 \cdot \frac{t^2 e^{3t}}{2!} = 3t^2 e^{3t}$. $\blacksquare$
 
@@ -1317,8 +1317,8 @@ Bessel's equation of order $\nu$:
 
 $$x^2 y'' + xy' + (x^2 - \nu^2)y = 0$$
 
-For $\nu \notin \mathbb{Z}$, the solutions are $J_\nu(x)$ and $J_{-\nu}(x)$ (Bessel functions of the
-first kind). For $\nu = n \in \mathbb{N}$, the second solution is the Weber function $Y_n(x)$.
+For $\nu \notin \mathbb{'\{'}Z{'\}'}$, the solutions are $J_\nu(x)$ and $J_{-\nu}(x)$ (Bessel functions of the
+first kind). For $\nu = n \in \mathbb{'\{'}N{'\}'}$, the second solution is the Weber function $Y_n(x)$.
 
 
 ### 6.4b Worked Example: Higher-Order ODE
@@ -1364,7 +1364,7 @@ Since $a_2 = 0$, all $a_{3k+2} = 0$.
 
 $y(x) = a_0\left(1 + \frac{x^3}{6} + \frac{x^6}{180} + \cdots\right) + a_1\left(x + \frac{x^4}{12} + \frac{x^7}{504} + \cdots\right)$.
 
-These are the **Airy functions** $\mathrm{Ai}(x)$ and $\mathrm{Bi}(x)$ (up to normalization). $\blacksquare$
+These are the **Airy functions** $\mathrm{'\{'}Ai{'\}'}(x)$ and $\mathrm{'\{'}Bi{'\}'}(x)$ (up to normalization). $\blacksquare$
 
 </details>
 
@@ -1455,7 +1455,7 @@ $$\int_{-\pi}^{\pi} \cos(mx)\cos(nx)\, dx = \begin{cases} \pi & m = n \neq 0 \\ 
 
 $$\int_{-\pi}^{\pi} \sin(mx)\sin(nx)\, dx = \begin{cases} \pi & m = n \neq 0 \\ 0 & m \neq n \end{cases}$$
 
-$$\int_{-\pi}^{\pi} \cos(mx)\sin(nx)\, dx = 0 \quad \mathrm{for\; all}\; m, n$$
+$$\int_{-\pi}^{\pi} \cos(mx)\sin(nx)\, dx = 0 \quad \mathrm{'\{'}for\; all{'\}'}\; m, n$$
 
 To find $a_n$, multiply both sides of the Fourier expansion by $\cos(nx)$ and integrate over
 $[-\pi, \pi]$. By orthogonality, all terms vanish except the $\cos(nx)$ term, yielding
@@ -1677,7 +1677,7 @@ This represents the solution as a superposition of right-moving and left-moving 
 
 $$u_{xx} + u_{yy} = 0$$
 
-on a domain $\Omega \subseteq \mathbb{R}^2$, with boundary conditions on $\partial\Omega$.
+on a domain $\Omega \subseteq \mathbb{'\{'}R{'\}'}^2$, with boundary conditions on $\partial\Omega$.
 
 **Theorem 8.1 (Maximum Principle).** A harmonic function $u$ (satisfying Laplace's equation) on a
 bounded domain attains its maximum and minimum on the boundary.
@@ -1815,12 +1815,12 @@ This represents two Gaussian pulses traveling in opposite directions at speed 2.
 
 ### 9.1 Autonomous Systems
 
-For $\mathbf{x}' = \mathbf{f}(\mathbf{x})$, a **critical point** $\mathbf{x}^*$ satisfies
-$\mathbf{f}(\mathbf{x}^*) = \mathbf{0}$.
+For $\mathbf{'\{'}x{'\}'}' = \mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'})$, a **critical point** $\mathbf{'\{'}x{'\}'}^*$ satisfies
+$\mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'}^*) = \mathbf{'\{'}0{'\}'}$.
 
 ### 9.2 Linearization and Stability
 
-Let $A = J\mathbf{f}(\mathbf{x}^*)$ be the Jacobian at the critical point. The eigenvalues of $A$
+Let $A = J\mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'}^*)$ be the Jacobian at the critical point. The eigenvalues of $A$
 determine the local stability:
 
 | Eigenvalues of $A$                      | Type            | Stability             |
@@ -1828,23 +1828,23 @@ determine the local stability:
 | Both real, negative                     | Stable node     | Asymptotically stable |
 | Both real, positive                     | Unstable node   | Unstable              |
 | Real, opposite signs                    | Saddle point    | Unstable              |
-| Complex, $\mathrm{Re}(\lambda) \lt{} 0$ | Stable spiral   | Asymptotically stable |
-| Complex, $\mathrm{Re}(\lambda) > 0$     | Unstable spiral | Unstable              |
+| Complex, $\mathrm{'\{'}Re{'\}'}(\lambda) \lt{} 0$ | Stable spiral   | Asymptotically stable |
+| Complex, $\mathrm{'\{'}Re{'\}'}(\lambda) > 0$     | Unstable spiral | Unstable              |
 | Purely imaginary                        | Center          | (Marginally) stable   |
 
 ### 9.3 Lyapunov Stability
 
-**Definition.** A critical point $\mathbf{x}^*$ is **stable** if for every $\varepsilon > 0$, there
-exists $\delta > 0$ such that $\|\mathbf{x}(0) - \mathbf{x}^*\| \lt{} \delta$ implies
-$\|\mathbf{x}(t) - \mathbf{x}^*\| \lt{} \varepsilon$ for all $t > 0$.
+**Definition.** A critical point $\mathbf{'\{'}x{'\}'}^*$ is **stable** if for every $\varepsilon > 0$, there
+exists $\delta > 0$ such that $\|\mathbf{'\{'}x{'\}'}(0) - \mathbf{'\{'}x{'\}'}^*\| \lt{} \delta$ implies
+$\|\mathbf{'\{'}x{'\}'}(t) - \mathbf{'\{'}x{'\}'}^*\| \lt{} \varepsilon$ for all $t > 0$.
 
-It is **asymptotically stable** if it is stable and $\mathbf{x}(t) \to \mathbf{x}^*$ as
+It is **asymptotically stable** if it is stable and $\mathbf{'\{'}x{'\}'}(t) \to \mathbf{'\{'}x{'\}'}^*$ as
 $t \to \infty$.
 
 **Theorem 9.1 (Lyapunov).** If there exists a continuously differentiable function $V$ (a **Lyapunov
-function**) such that $V(\mathbf{x}^*) = 0$, $V(\mathbf{x}) > 0$ for $\mathbf{x} \neq \mathbf{x}^*$,
-and $\dot{V} \leq 0$ in a neighbourhood of $\mathbf{x}^*$, then $\mathbf{x}^*$ is stable. If
-$\dot{V} \lt{} 0$ for $\mathbf{x} \neq \mathbf{x}^*$, then $\mathbf{x}^*$ is asymptotically stable.
+function**) such that $V(\mathbf{'\{'}x{'\}'}^*) = 0$, $V(\mathbf{'\{'}x{'\}'}) > 0$ for $\mathbf{'\{'}x{'\}'} \neq \mathbf{'\{'}x{'\}'}^*$,
+and $\dot{V} \leq 0$ in a neighbourhood of $\mathbf{'\{'}x{'\}'}^*$, then $\mathbf{'\{'}x{'\}'}^*$ is stable. If
+$\dot{V} \lt{} 0$ for $\mathbf{'\{'}x{'\}'} \neq \mathbf{'\{'}x{'\}'}^*$, then $\mathbf{'\{'}x{'\}'}^*$ is asymptotically stable.
 
 ### 9.4 Worked Example: Linearization
 
@@ -1865,7 +1865,7 @@ The Jacobian is $J = \begin{pmatrix} 1 & -1 \\ 2x & 2y \end{pmatrix}$.
 
 At $(1/\sqrt{2}, 1/\sqrt{2})$: $J = \begin{pmatrix} 1 & -1 \\ \sqrt{2} & \sqrt{2} \end{pmatrix}$.
 
-$\mathrm{tr}(J) = 1 + \sqrt{2} > 0$, $\det(J) = \sqrt{2} + \sqrt{2} = 2\sqrt{2} > 0$.
+$\mathrm{'\{'}tr{'\}'}(J) = 1 + \sqrt{2} > 0$, $\det(J) = \sqrt{2} + \sqrt{2} = 2\sqrt{2} > 0$.
 
 $\tau^2 - 4\Delta = (1 + \sqrt{2})^2 - 8\sqrt{2} = 3 + 2\sqrt{2} - 8\sqrt{2} = 3 - 6\sqrt{2} \lt{} 0$.
 
@@ -1873,7 +1873,7 @@ Complex eigenvalues with positive real part: **unstable spiral**.
 
 At $(-1/\sqrt{2}, -1/\sqrt{2})$: $J = \begin{pmatrix} 1 & -1 \\ -\sqrt{2} & -\sqrt{2} \end{pmatrix}$.
 
-$\mathrm{tr}(J) = 1 - \sqrt{2} \lt{} 0$, $\det(J) = -\sqrt{2} + \sqrt{2} = 0$.
+$\mathrm{'\{'}tr{'\}'}(J) = 1 - \sqrt{2} \lt{} 0$, $\det(J) = -\sqrt{2} + \sqrt{2} = 0$.
 
 Wait, $\det(J) = (1)(-\sqrt{2}) - (-1)(-\sqrt{2}) = -\sqrt{2} - \sqrt{2} = -2\sqrt{2} \lt{} 0$.
 
@@ -1883,13 +1883,13 @@ Negative determinant: **saddle point** (unstable). $\blacksquare$
 
 ### 9.5 Phase Portraits for 2D Nonlinear Systems
 
-For the nonlinear system $\mathbf{x}' = \mathbf{f}(\mathbf{x})$, the **Hartman-Grobman theorem**
+For the nonlinear system $\mathbf{'\{'}x{'\}'}' = \mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'})$, the **Hartman-Grobman theorem**
 states that near a hyperbolic critical point (one where the Jacobian has no eigenvalues on the
 imaginary axis), the nonlinear phase portrait is topologically equivalent to the linearized one.
 
 **Procedure for sketching phase portraits:**
 
-1. Find all critical points by solving $\mathbf{f}(\mathbf{x}) = \mathbf{0}$.
+1. Find all critical points by solving $\mathbf{'\{'}f{'\}'}(\mathbf{'\{'}x{'\}'}) = \mathbf{'\{'}0{'\}'}$.
 2. Compute the Jacobian $J$ at each critical point.
 3. Classify each critical point using the eigenvalue analysis from Section 4.9.
 4. Sketch the local behaviour near each critical point.
@@ -1930,7 +1930,7 @@ At $(0, 0)$: $J = \begin{pmatrix} 2 & 0 \\ 0 & -1 \end{pmatrix}$.
 Eigenvalues $2$ and $-1$: **saddle point** (unstable).
 
 At $(1, 2)$: $J = \begin{pmatrix} 0 & -1 \\ 2 & 0 \end{pmatrix}$.
-$\det(J) = 2 > 0$, $\mathrm{tr}(J) = 0$. Eigenvalues $\pm i\sqrt{2}$: **center**.
+$\det(J) = 2 > 0$, $\mathrm{'\{'}tr{'\}'}(J) = 0$. Eigenvalues $\pm i\sqrt{2}$: **center**.
 
 _Remark._ For the linearized system, the center is (marginally) stable. However, for the
 nonlinear Lotka-Volterra system, the trajectories are actually closed orbits surrounding $(1, 2)$.
@@ -2054,7 +2054,7 @@ _Solution.* Write as a system: $x' = y$, $y' = -x - \mu(x^2 - 1)y$.
 The only critical point is $(0, 0)$. The Jacobian at the origin is
 $J = \begin{pmatrix} 0 & 1 \\ -1 & \mu \end{pmatrix}$.
 
-$\mathrm{tr}(J) = \mu > 0$, $\det(J) = 1 > 0$, $\tau^2 - 4\Delta = \mu^2 - 4$.
+$\mathrm{'\{'}tr{'\}'}(J) = \mu > 0$, $\det(J) = 1 > 0$, $\tau^2 - 4\Delta = \mu^2 - 4$.
 
 For $0 \lt{} \mu \lt{} 2$: complex eigenvalues with positive real part (**unstable spiral**).
 For $\mu \geq 2$: two positive real eigenvalues (**unstable node**).
@@ -2336,18 +2336,18 @@ _If you get this wrong, revise:_ Section 3.13 (Euler-Cauchy Equations).
 
 ### Problem 13 (2x2 System)
 
-Solve $\mathbf{x}' = \begin{pmatrix} 1 & 4 \\ 1 & -2 \end{pmatrix}\mathbf{x}$.
+Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 1 & 4 \\ 1 & -2 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ $\det(A - \lambda I) = (1 - \lambda)(-2 - \lambda) - 4 = \lambda^2 + \lambda - 6 = (\lambda + 3)(\lambda - 2) = 0$.
 
-$\lambda_1 = 2$: $(A - 2I)\mathbf{v} = \begin{pmatrix} -1 & 4 \\ 1 & -4 \end{pmatrix}\mathbf{v} = \mathbf{0}$. $\mathbf{v}_1 = \begin{pmatrix} 4 \\ 1 \end{pmatrix}$.
+$\lambda_1 = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix} -1 & 4 \\ 1 & -4 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. $\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 4 \\ 1 \end{pmatrix}$.
 
-$\lambda_2 = -3$: $(A + 3I)\mathbf{v} = \begin{pmatrix} 4 & 4 \\ 1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0}$. $\mathbf{v}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+$\lambda_2 = -3$: $(A + 3I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 4 & 4 \\ 1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. $\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
-$\mathbf{x}(t) = c_1 \begin{pmatrix} 4 \\ 1 \end{pmatrix} e^{2t} + c_2 \begin{pmatrix} 1 \\ -1 \end{pmatrix} e^{-3t}$. $\blacksquare$
+$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} 4 \\ 1 \end{pmatrix} e^{2t} + c_2 \begin{pmatrix} 1 \\ -1 \end{pmatrix} e^{-3t}$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 4.2 (Homogeneous Systems with Constant Coefficients).
 
@@ -2355,19 +2355,19 @@ _If you get this wrong, revise:_ Section 4.2 (Homogeneous Systems with Constant 
 
 ### Problem 14 (System with Complex Eigenvalues)
 
-Solve $\mathbf{x}' = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\mathbf{x}$.
+Solve $\mathbf{'\{'}x{'\}'}' = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\mathbf{'\{'}x{'\}'}$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ $\det(A - \lambda I) = \lambda^2 + 1 = 0$. $\lambda = \pm i$.
 
-For $\lambda = i$: $\begin{pmatrix} -i & -1 \\ 1 & -i \end{pmatrix}\mathbf{v} = \mathbf{0}$.
-$-iv_1 - v_2 = 0 \implies v_2 = -iv_1$. With $v_1 = 1$: $\mathbf{v} = \begin{pmatrix} 1 \\ -i \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
+For $\lambda = i$: $\begin{pmatrix} -i & -1 \\ 1 & -i \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+$-iv_1 - v_2 = 0 \implies v_2 = -iv_1$. With $v_1 = 1$: $\mathbf{'\{'}v{'\}'} = \begin{pmatrix} 1 \\ -i \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
-$\mathbf{a} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
+$\mathbf{'\{'}a{'\}'} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$, $\mathbf{'\{'}b{'\}'} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
-$\mathbf{x}(t) = c_1 \begin{pmatrix} \cos t \\ -\sin t \end{pmatrix} + c_2 \begin{pmatrix} \sin t \\ \cos t \end{pmatrix}$.
+$\mathbf{'\{'}x{'\}'}(t) = c_1 \begin{pmatrix} \cos t \\ -\sin t \end{pmatrix} + c_2 \begin{pmatrix} \sin t \\ \cos t \end{pmatrix}$.
 
 Equivalently: $x_1(t) = c_1 \cos t + c_2 \sin t$, $x_2(t) = -c_1 \sin t + c_2 \cos t$. $\blacksquare$
 
@@ -2377,14 +2377,14 @@ _If you get this wrong, revise:_ Section 4.2, Case 3.
 
 ### Problem 15 (Laplace Transform)
 
-Compute $\mathcal{L}\{t^2 e^{-3t}\}$.
+Compute $\mathcal{'\{'}L{'\}'}\{t^2 e^{-3t}\}$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ Using $\mathcal{L}\{t^n e^{at}\} = \frac{n!}{(s-a)^{n+1}}$ with $n = 2$, $a = -3$:
+_Solution._ Using $\mathcal{'\{'}L{'\}'}\{t^n e^{at}\} = \frac{n!}{(s-a)^{n+1}}$ with $n = 2$, $a = -3$:
 
-$\mathcal{L}\{t^2 e^{-3t}\} = \frac{2!}{(s + 3)^3} = \frac{2}{(s+3)^3}$. $\blacksquare$
+$\mathcal{'\{'}L{'\}'}\{t^2 e^{-3t}\} = \frac{2!}{(s + 3)^3} = \frac{2}{(s+3)^3}$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 5.2 (Basic Properties) and Section 5.4 (Common Transforms).
 
@@ -2397,7 +2397,7 @@ Solve $y'' - y = e^t$, $y(0) = 0$, $y'(0) = 0$ using Laplace transforms.
 <details>
 <summary>Solution</summary>
 
-_Solution._ $\mathcal{L}\{y''\} - \mathcal{L}\{y\} = \mathcal{L}\{e^t\}$:
+_Solution._ $\mathcal{'\{'}L{'\}'}\{y''\} - \mathcal{'\{'}L{'\}'}\{y\} = \mathcal{'\{'}L{'\}'}\{e^t\}$:
 
 $s^2 Y - Y = \frac{1}{s - 1}$
 
@@ -2425,7 +2425,7 @@ _If you get this wrong, revise:_ Section 5.5 (Solving IVPs with Laplace Transfor
 
 ### Problem 17 (Inverse Laplace)
 
-Find $\mathcal{L}^{-1}\left\{\frac{2s + 3}{s^2 + 2s + 5}\right\}$.
+Find $\mathcal{'\{'}L{'\}'}^{-1}\left\{\frac{2s + 3}{s^2 + 2s + 5}\right\}$.
 
 <details>
 <summary>Solution</summary>
@@ -2500,10 +2500,10 @@ $x = 1 \implies y = 1$. Critical point: $(1, 1)$.
 Jacobian: $J = \begin{pmatrix} -2x & 1 \\ 1 & -2y \end{pmatrix}$.
 
 At $(0, 0)$: $J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
-$\mathrm{tr}(J) = 0$, $\det(J) = -1 \lt{} 0$. **Saddle point** (unstable).
+$\mathrm{'\{'}tr{'\}'}(J) = 0$, $\det(J) = -1 \lt{} 0$. **Saddle point** (unstable).
 
 At $(1, 1)$: $J = \begin{pmatrix} -2 & 1 \\ 1 & -2 \end{pmatrix}$.
-$\mathrm{tr}(J) = -4 \lt{} 0$, $\det(J) = 3 > 0$.
+$\mathrm{'\{'}tr{'\}'}(J) = -4 \lt{} 0$, $\det(J) = 3 > 0$.
 $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct negative real eigenvalues. **Stable node**
 (asymptotically stable). $\blacksquare$
 

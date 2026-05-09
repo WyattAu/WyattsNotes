@@ -323,7 +323,7 @@ tissues. It is the interface for exchange of substances between maternal and foe
 
 | Function           | Description                                                                                                                    |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Gas exchange       | $\mathrm{O}_2$ diffuses from maternal blood to foetal blood; $\mathrm{CO}_2$ diffuses from foetal blood to maternal blood      |
+| Gas exchange       | $\mathrm{'\{'}O{'\}'}_2$ diffuses from maternal blood to foetal blood; $\mathrm{'\{'}CO{'\}'}_2$ diffuses from foetal blood to maternal blood      |
 | Nutrient transfer  | Glucose, amino acids, fatty acids, vitamins, and minerals diffuse from maternal to foetal blood                                |
 | Waste removal      | Urea, uric acid, and creatinine diffuse from foetal blood to maternal blood for excretion                                      |
 | Hormone production | Produces progesterone (maintains endometrium), oestrogen, hCG (maintains corpus luteum), relaxin, and human placental lactogen |
@@ -381,7 +381,7 @@ cellular processes.
 - Blood glucose concentration (approximately 90 mg/100 cm cubed)
 - Blood water potential (osmotic balance)
 - Blood pH (approximately 7.35-7.45)
-- $\mathrm{CO}_2$ concentration in the blood
+- $\mathrm{'\{'}CO{'\}'}_2$ concentration in the blood
 - Ion concentrations (Na$^+$, K$^+$, Ca$^{2+}$)
 
 ### Negative Feedback
@@ -765,7 +765,7 @@ their removal is not excretion.
 
 | Substance                     | Source of Production                           | Organ of Excretion                   | Method of Excretion                             |
 | ----------------------------- | ---------------------------------------------- | ------------------------------------ | ----------------------------------------------- |
-| $\mathrm{CO}_2$               | Cellular respiration                           | Lungs                                | Exhaled during breathing                        |
+| $\mathrm{'\{'}CO{'\}'}_2$               | Cellular respiration                           | Lungs                                | Exhaled during breathing                        |
 | Urea                          | Deamination of excess amino acids in the liver | Kidneys                              | Filtered from blood, excreted in urine          |
 | Water                         | Various metabolic reactions                    | Kidneys, skin, lungs                 | Urine, sweat, exhaled breath                    |
 | Mineral salts (Na$^+$, K$^+$) | Various                                        | Kidneys, skin                        | Urine, sweat                                    |
@@ -777,12 +777,12 @@ their removal is not excretion.
 The liver plays a central role in processing and detoxifying substances:
 
 1. **Deamination:** Excess amino acids cannot be stored. The liver removes the amino group
-   ($\mathrm{NH}_2$) from amino acids, converting it to ammonia ($\mathrm{NH}_3$, highly toxic),
+   ($\mathrm{'\{'}NH{'\}'}_2$) from amino acids, converting it to ammonia ($\mathrm{'\{'}NH{'\}'}_3$, highly toxic),
    which is then converted to urea (less toxic) via the ornithine cycle in the liver:
 
-$$\mathrm{Amino acid} \to \mathrm{Keto acid} + \mathrm{NH}_3$$
+$$\mathrm{'\{'}Amino acid{'\}'} \to \mathrm{'\{'}Keto acid{'\}'} + \mathrm{'\{'}NH{'\}'}_3$$
 
-$$2\mathrm{NH}_3 + \mathrm{CO}_2 \to \mathrm{CO(NH}_2)_2 + \mathrm{H}_2\mathrm{O}$$
+$$2\mathrm{'\{'}NH{'\}'}_3 + \mathrm{'\{'}CO{'\}'}_2 \to \mathrm{'\{'}CO(NH{'\}'}_2)_2 + \mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}O{'\}'}$$
 
 2. **Detoxification:** The liver converts harmful substances into less harmful ones:
    - Alcohol (ethanol) is oxidised to ethanal (by alcohol dehydrogenase), then to ethanoic acid,
@@ -805,7 +805,7 @@ A person with liver failure has a reduced ability to carry out deamination and d
 
 **Consequences for blood composition:**
 
-1. **Elevated blood urea (uraemia):** Without adequate deamination, excess amino acids cannot be properly processed. The ornithine cycle is impaired, so ammonia ($\mathrm{NH}_3$) is not efficiently converted to urea. Toxic ammonia accumulates in the blood, and even the urea that is produced may not be adequately excreted. Both ammonia and urea levels rise in the blood.
+1. **Elevated blood urea (uraemia):** Without adequate deamination, excess amino acids cannot be properly processed. The ornithine cycle is impaired, so ammonia ($\mathrm{'\{'}NH{'\}'}_3$) is not efficiently converted to urea. Toxic ammonia accumulates in the blood, and even the urea that is produced may not be adequately excreted. Both ammonia and urea levels rise in the blood.
 
 2. **Accumulation of toxins:** Without proper detoxification, harmful substances that would normally be broken down by the liver accumulate. This includes alcohol, drugs, and other metabolic by-products that the liver would normally process.
 
@@ -831,7 +831,7 @@ A person with liver failure has a reduced ability to carry out deamination and d
 
 1. **Confusing excretion and egestion:** This is one of the most common DSE errors. Egestion
    (removal of faeces) is not excretion. Faeces have never been absorbed into the body's metabolic
-   processes. $\mathrm{CO}_2$ from respiration and urea from deamination are excretory products.
+   processes. $\mathrm{'\{'}CO{'\}'}_2$ from respiration and urea from deamination are excretory products.
 
 2. **Writing that the umbilical artery carries oxygenated blood:** The umbilical ARTERY carries
    deoxygenated blood from the foetus to the placenta. The umbilical VEIN carries oxygenated blood
@@ -957,7 +957,7 @@ Describe the sequence of events from the moment a sperm reaches the zona pelluci
 
 3. **Membrane fusion:** The sperm membrane fuses with the oocyte membrane. The sperm nucleus and centriole begin to enter the oocyte cytoplasm.
 
-4. **Cortical reaction (critical step):** Contact between the sperm and oocyte membranes triggers a wave of calcium release ($\mathrm{Ca}^{2+}$) across the ovum. This calcium wave causes cortical granules (vesicles just beneath the membrane) to fuse with the oocyte membrane and release their contents into the space between the vitelline membrane and the zona pellucida. The enzymes from the cortical granules:
+4. **Cortical reaction (critical step):** Contact between the sperm and oocyte membranes triggers a wave of calcium release ($\mathrm{'\{'}Ca{'\}'}^{2+}$) across the ovum. This calcium wave causes cortical granules (vesicles just beneath the membrane) to fuse with the oocyte membrane and release their contents into the space between the vitelline membrane and the zona pellucida. The enzymes from the cortical granules:
    - Cross-link glycoproteins in the zona pellucida, hardening it (the zona reaction).
    - Remove the ZP3 receptors, preventing any additional sperm from binding.
    - These changes make the zona pellucida impermeable to other sperm.
@@ -1068,7 +1068,7 @@ A person with Type 1 diabetes forgets to take their insulin injection before eat
 
 5. **Dehydration and polydipsia:** Excessive water loss through polyuria leads to dehydration, triggering excessive thirst (polydipsia).
 
-6. **Ketoacidosis (dangerous complication):** As cells cannot use glucose, the body breaks down fat for energy (lipolysis). Fat breakdown produces fatty acids, which are converted in the liver to ketones (e.g., acetoacetic acid, acetone). Ketones are acidic and accumulate in the blood, lowering blood pH below the normal range of 7.35--7.45. This condition is called diabetic ketoacidosis (DKA). Symptoms include deep, rapid breathing (Kussmaul breathing, as the body attempts to exhale $\mathrm{CO}_2$ to raise blood pH), sweet-smelling breath (acetone on the breath), nausea, vomiting, abdominal pain, and dehydration. Severe ketoacidosis can lead to coma and death if untreated.
+6. **Ketoacidosis (dangerous complication):** As cells cannot use glucose, the body breaks down fat for energy (lipolysis). Fat breakdown produces fatty acids, which are converted in the liver to ketones (e.g., acetoacetic acid, acetone). Ketones are acidic and accumulate in the blood, lowering blood pH below the normal range of 7.35--7.45. This condition is called diabetic ketoacidosis (DKA). Symptoms include deep, rapid breathing (Kussmaul breathing, as the body attempts to exhale $\mathrm{'\{'}CO{'\}'}_2$ to raise blood pH), sweet-smelling breath (acetone on the breath), nausea, vomiting, abdominal pain, and dehydration. Severe ketoacidosis can lead to coma and death if untreated.
 
 7. **Long-term complications of repeated hyperglycaemia:** Even if acute ketoacidosis does not occur, chronically elevated blood glucose damages blood vessels (causing atherosclerosis, increasing the risk of heart attack and stroke), damages small blood vessels in the retina (diabetic retinopathy, leading to blindness), damages the glomeruli in the kidneys (diabetic nephropathy, leading to kidney failure), and damages peripheral nerves (diabetic neuropathy, causing numbness, tingling, and poor wound healing, particularly in the feet). These long-term complications emphasise the importance of maintaining blood glucose within the normal range through proper insulin therapy.
 
@@ -1117,7 +1117,7 @@ A student claims: "Defaecation is a form of excretion because waste material is 
 The claim is **incorrect**. Excretion and egestion are fundamentally different processes:
 
 - **Excretion** is the removal of **metabolic waste products** -- substances that have been produced by metabolic reactions within the body cells. These substances have been part of the body's internal metabolism. Examples include:
-  - $\mathrm{CO}_2$ (produced by cellular respiration, excreted by lungs)
+  - $\mathrm{'\{'}CO{'\}'}_2$ (produced by cellular respiration, excreted by lungs)
   - Urea (produced by deamination of excess amino acids in the liver, excreted by kidneys)
   - Bile pigments/bilirubin (produced by breakdown of haemoglobin, excreted via the liver into the intestine)
   - Water and mineral salts (by-products of various metabolic reactions)
@@ -1128,7 +1128,7 @@ The claim is **incorrect**. Excretion and egestion are fundamentally different p
 
 - **Common exam traps:**
   - The anus is NOT an excretory organ -- it is involved in egestion.
-  - The lungs ARE excretory organs because they remove $\mathrm{CO}_2$ (a metabolic waste product of respiration).
+  - The lungs ARE excretory organs because they remove $\mathrm{'\{'}CO{'\}'}_2$ (a metabolic waste product of respiration).
 - The skin IS an excretory organ (minor) because it removes water, urea, salts, and lactic acid (metabolic waste products) in sweat. However, the skin's PRIMARY function is thermoregulation, not excretion.
 
 </details>
@@ -1157,8 +1157,8 @@ The placenta is a temporary organ that forms during pregnancy, facilitating exch
 
 | Substance               | Direction                  | Method of Exchange           |
 | ----------------------- | -------------------------- | ---------------------------- |
-| Oxygen ($\mathrm{O}_2$) | Maternal to foetal          | Simple diffusion              |
-| Carbon dioxide ($\mathrm{CO}_2$) | Foetal to maternal      | Simple diffusion              |
+| Oxygen ($\mathrm{'\{'}O{'\}'}_2$) | Maternal to foetal          | Simple diffusion              |
+| Carbon dioxide ($\mathrm{'\{'}CO{'\}'}_2$) | Foetal to maternal      | Simple diffusion              |
 | Glucose                 | Maternal to foetal          | Facilitated diffusion         |
 | Amino acids             | Maternal to foetal          | Active transport              |
 | Antibodies (IgG)        | Maternal to foetal          | Active transport (provides passive immunity) |
@@ -1170,7 +1170,7 @@ The placenta is a temporary organ that forms during pregnancy, facilitating exch
 **Functions of the placenta:**
 
 1. **Nutrient exchange:** Glucose, amino acids, fatty acids, vitamins, and minerals pass from mother to foetus
-2. **Gas exchange:** $\mathrm{O}_2$ passes from mother to foetus; $\mathrm{CO}_2$ passes from foetus to mother
+2. **Gas exchange:** $\mathrm{'\{'}O{'\}'}_2$ passes from mother to foetus; $\mathrm{'\{'}CO{'\}'}_2$ passes from foetus to mother
 3. **Waste removal:** Urea and other waste products pass from foetus to mother for excretion
 4. **Hormone production:** Produces progesterone (maintains pregnancy), oestrogen, and hCG (detected in pregnancy tests)
 5. **Immune protection:** Maternal IgG antibodies cross the placenta, providing passive immunity to the foetus
@@ -1185,7 +1185,7 @@ The foetal circulatory system has adaptations that differ from the adult system 
 | Ductus venosus            | Bypasses the liver; shunts blood from the umbilical vein directly to the inferior vena cava                          |
 | Foramen ovale            | Opening between the right and left atria; shunts blood from the right atrium to the left atrium, bypassing the lungs   |
 | Ductus arteriosus         | Connects the pulmonary artery to the aorta; shunts blood away from the lungs                                         |
-| High haemoglobin concentration | Foetal haemoglobin has a higher affinity for $\mathrm{O}_2$ than adult haemoglobin, facilitating oxygen transfer from the mother |
+| High haemoglobin concentration | Foetal haemoglobin has a higher affinity for $\mathrm{'\{'}O{'\}'}_2$ than adult haemoglobin, facilitating oxygen transfer from the mother |
 
 After birth, the ductus venosus, foramen ovale, and ductus arteriosus close as the baby begins to breathe and the placental circulation ceases.
 

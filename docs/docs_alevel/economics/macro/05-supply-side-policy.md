@@ -19,7 +19,7 @@ sidebar_position: 5
 We define **supply-side policies** as government policies designed to increase the productive
 capacity of the economy by shifting the long-run aggregate supply (LRAS) curve to the right.
 
-$$\mathrm{LRAS shifts right: } Y^* \uparrow \Rightarrow P \downarrow, Y \uparrow$$
+$$\mathrm{'\{'}LRAS shifts right: {'\}'} Y^* \uparrow \Rightarrow P \downarrow, Y \uparrow$$
 
 Unlike demand-side policies (fiscal and monetary policy), which aim to manage AD to smooth the
 business cycle, supply-side policies aim to raise the economy's **potential output** — improving the
@@ -35,7 +35,7 @@ raise output above potential in the long run (LRAS is vertical). Only by increas
 itself — through better technology, more capital, a more skilled workforce, or more efficient
 markets — can the economy produce more goods and services sustainably. $\blacksquare$
 
-$$\mathrm{Long-run growth} = f(\Delta K, \Delta L, \Delta A)$$
+$$\mathrm{'\{'}Long-run growth{'\}'} = f(\Delta K, \Delta L, \Delta A)$$
 
 where $K$ = capital, $L$ = labour, $A$ = total factor productivity (technology and efficiency).
 
@@ -72,7 +72,7 @@ all, not how many hours).
 
 **Reduction in corporation tax** to incentivise investment:
 
-$$I = I(r, \tau_c) \quad \mathrm{where } \frac{\partial I}{\partial \tau_c} < 0$$
+$$I = I(r, \tau_c) \quad \mathrm{'\{'}where {'\}'} \frac{\partial I}{\partial \tau_c} < 0$$
 
 A lower corporation tax rate $\tau_c$ increases the after-tax return on investment, encouraging
 firms to invest in capital. The UK reduced corporation tax from 28% (2010) to 19% (2017), partially
@@ -83,11 +83,11 @@ rate of 0%, revenue is zero. As the rate rises, revenue initially increases. Bey
 $t^*$, further increases reduce revenue because the tax base shrinks (people work less, evade more,
 or relocate).
 
-$$R = t \cdot B(t) \quad \mathrm{where } \frac{dB}{dt} \lt 0 \mathrm{ for } t \gt t^*$$
+$$R = t \cdot B(t) \quad \mathrm{'\{'}where {'\}'} \frac{dB}{dt} \lt 0 \mathrm{'\{'} for {'\}'} t \gt t^*$$
 
 where $R$ is tax revenue, $t$ is the tax rate, and $B(t)$ is the tax base.
 
-$$\frac{dR}{dt} = B(t) + t \cdot \frac{dB}{dt} = 0 \quad \mathrm{at the revenue-maximising rate } t^*$$
+$$\frac{dR}{dt} = B(t) + t \cdot \frac{dB}{dt} = 0 \quad \mathrm{'\{'}at the revenue-maximising rate {'\}'} t^*$$
 
 The key debate is where the UK sits relative to $t^*$. Most empirical estimates (including the IFS
 and OBR) suggest that for income tax, the UK is to the **left** of $t^*$ — meaning tax cuts would
@@ -117,7 +117,7 @@ demand and a stable regulatory environment before committing to investment, rega
 unemployment (real-wage unemployment). Reducing union power (e.g., secret ballots, restrictions on
 strikes) allows wages to adjust to market-clearing levels.
 
-$$w > w^* \Rightarrow \mathrm{labour demand } < \mathrm{labour supply} \Rightarrow \mathrm{unemployment}$$
+$$w > w^* \Rightarrow \mathrm{'\{'}labour demand {'\}'} < \mathrm{'\{'}labour supply{'\}'} \Rightarrow \mathrm{'\{'}unemployment{'\}'}$$
 
 **Reducing employment protection legislation**: Making it easier to hire and fire workers reduces
 firms' perceived risk of taking on new employees, potentially increasing employment. However, it may
@@ -150,7 +150,7 @@ Arguments against:
 
 **Deregulation**: removing barriers to entry, reducing red tape, and simplifying regulations.
 
-$$\mathrm{Fewer barriers} \Rightarrow \mathrm{more firms enter} \Rightarrow \mathrm{more competition} \Rightarrow \mathrm{lower prices, higher quality, more innovation}$$
+$$\mathrm{'\{'}Fewer barriers{'\}'} \Rightarrow \mathrm{'\{'}more firms enter{'\}'} \Rightarrow \mathrm{'\{'}more competition{'\}'} \Rightarrow \mathrm{'\{'}lower prices, higher quality, more innovation{'\}'}$$
 
 Example: The Big Bang (1986) deregulated London's financial markets, contributing to the growth of
 the City as a global financial centre.
@@ -201,7 +201,7 @@ Anti-competitive practices include:
 - **Predatory pricing**: setting prices below cost to drive out competitors
 - **Abuse of market power**: exclusionary practices by dominant firms
 
-$$\mathrm{More competition} \Rightarrow P \downarrow, Q \uparrow, \mathrm{consumer surplus } \uparrow, \mathrm{deadweight loss } \downarrow$$
+$$\mathrm{'\{'}More competition{'\}'} \Rightarrow P \downarrow, Q \uparrow, \mathrm{'\{'}consumer surplus {'\}'} \uparrow, \mathrm{'\{'}deadweight loss {'\}'} \downarrow$$
 
 ## 3. Interventionist Supply-Side Policies
 
@@ -264,7 +264,7 @@ real-world examples. OCR (H460) links education policy to labour market outcomes
 
 Public investment in transport, broadband, energy, and communications:
 
-$$\mathrm{Better infrastructure} \Rightarrow \mathrm{lower transport/communication costs} \Rightarrow \mathrm{higher productivity}$$
+$$\mathrm{'\{'}Better infrastructure{'\}'} \Rightarrow \mathrm{'\{'}lower transport/communication costs{'\}'} \Rightarrow \mathrm{'\{'}higher productivity{'\}'}$$
 
 The UK's Northern Powerhouse Rail, HS2 (now partially cancelled), and gigabit broadband rollout are
 examples.
@@ -278,7 +278,7 @@ while also improving long-run productivity.
 Government funding for basic research (which private firms underprovide due to positive
 externalities):
 
-$$\mathrm{Social return to R\&D} > \mathrm{private return to R\&D}$$
+$$\mathrm{'\{'}Social return to R\&D{'\}'} > \mathrm{'\{'}private return to R\&D{'\}'}$$
 
 Policies: R&D tax credits, direct funding for universities, patent protection, research councils.
 
@@ -329,7 +329,7 @@ market vs intervention dichotomy.
 innovation, and human development indices, while maintaining lower inequality than the UK and US.
 Unemployment rates are comparable to or lower than the UK average.
 
-$$\mathrm{Nordic model}: \mathrm{flexibility} + \mathrm{security} + \mathrm{investment} \Rightarrow \mathrm{high } h, \mathrm{ high } A, \mathrm{ low inequality}$$
+$$\mathrm{'\{'}Nordic model{'\}'}: \mathrm{'\{'}flexibility{'\}'} + \mathrm{'\{'}security{'\}'} + \mathrm{'\{'}investment{'\}'} \Rightarrow \mathrm{'\{'}high {'\}'} h, \mathrm{'\{'} high {'\}'} A, \mathrm{'\{'} low inequality{'\}'}$$
 
 **Evaluation.** The Nordic model suggests that market-oriented and interventionist policies are not
 mutually exclusive — they can be **complementary**. High taxes fund the education and infrastructure
@@ -366,7 +366,7 @@ Market-oriented policies tend to be most effective when:
 - Externalities are minimal (private and social costs/benefits are aligned)
 - Institutions are strong (property rights, rule of law, contract enforcement)
 
-$$\mathrm{Market efficiency} \propto \frac{\mathrm{Competition} \times \mathrm{Information} \times \mathrm{Institutions}}{\mathrm{Externalities} \times \mathrm{Market power}}$$
+$$\mathrm{'\{'}Market efficiency{'\}'} \propto \frac{\mathrm{'\{'}Competition{'\}'} \times \mathrm{'\{'}Information{'\}'} \times \mathrm{'\{'}Institutions{'\}'}}{\mathrm{'\{'}Externalities{'\}'} \times \mathrm{'\{'}Market power{'\}'}}$$
 
 Interventionist policies tend to be most effective when:
 
@@ -377,7 +377,7 @@ Interventionist policies tend to be most effective when:
 - Equity objectives require redistribution (regional policy, progressive education funding)
 - The government has a strong track record of effective implementation
 
-$$\mathrm{Intervention effectiveness} \propto \frac{\mathrm{Market failure severity} \times \mathrm{State capacity}}{\mathrm{Government failure risk} \times \mathrm{Implementation cost}}$$
+$$\mathrm{'\{'}Intervention effectiveness{'\}'} \propto \frac{\mathrm{'\{'}Market failure severity{'\}'} \times \mathrm{'\{'}State capacity{'\}'}}{\mathrm{'\{'}Government failure risk{'\}'} \times \mathrm{'\{'}Implementation cost{'\}'}}$$
 
 The crucial insight is that **the optimal policy mix varies by sector and context**. Financial
 services may benefit most from deregulation and competition, while education and infrastructure
@@ -426,9 +426,9 @@ is now lower.
 **Productivity growth** (a key supply-side objective) also shifts the Phillips curve left by
 reducing cost-push inflation:
 
-$$\mathrm{Productivity } \uparrow \Rightarrow \mathrm{unit labour costs } \downarrow \Rightarrow \mathrm{SRAS shifts right} \Rightarrow P \downarrow$$
+$$\mathrm{'\{'}Productivity {'\}'} \uparrow \Rightarrow \mathrm{'\{'}unit labour costs {'\}'} \downarrow \Rightarrow \mathrm{'\{'}SRAS shifts right{'\}'} \Rightarrow P \downarrow$$
 
-$$\pi_{\mathrm{new}} = \pi_{\mathrm{old}} - \Delta(\mathrm{productivity})$$
+$$\pi_{\mathrm{'\{'}new{'\}'}} = \pi_{\mathrm{'\{'}old{'\}'}} - \Delta(\mathrm{'\{'}productivity{'\}'})$$
 
 ### 4.4 General Evaluation of Supply-Side Policies
 
@@ -470,7 +470,7 @@ politically motivated "picking winners" (subsidising declining industries for el
 regulatory capture (industries influencing the regulators meant to control them), and implementation
 failure (ambitious infrastructure projects that go over budget and under-deliver, such as HS2).
 
-$$\mathrm{Net benefit of supply-side policy} = \mathrm{Efficiency gain} - \mathrm{Cost} - \mathrm{Distributional loss} - \mathrm{Government failure risk}$$
+$$\mathrm{'\{'}Net benefit of supply-side policy{'\}'} = \mathrm{'\{'}Efficiency gain{'\}'} - \mathrm{'\{'}Cost{'\}'} - \mathrm{'\{'}Distributional loss{'\}'} - \mathrm{'\{'}Government failure risk{'\}'}$$
 
 :::tip
 Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
@@ -485,9 +485,9 @@ therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE)
 
 The key metric for evaluating supply-side policies is **productivity growth**:
 
-$$\mathrm{Labour productivity} = \frac{Y}{L} = \frac{\mathrm{Output}}{\mathrm{Hours worked}}$$
+$$\mathrm{'\{'}Labour productivity{'\}'} = \frac{Y}{L} = \frac{\mathrm{'\{'}Output{'\}'}}{\mathrm{'\{'}Hours worked{'\}'}}$$
 
-$$\mathrm{Total factor productivity (TFP)} = \frac{Y}{K^\alpha L^{1-\alpha}}$$
+$$\mathrm{'\{'}Total factor productivity (TFP){'\}'} = \frac{Y}{K^\alpha L^{1-\alpha}}$$
 
 TFP captures the efficiency with which capital and labour are combined — it reflects technology,
 institutions, and know-how. Long-run growth in living standards depends primarily on TFP growth.
@@ -801,17 +801,17 @@ The degree holder earns approximately 23.5% more than the A-level holder.
 - Direct cost: tuition fees (GBP 9,250/year) + maintenance (GBP 6,000/year) = GBP 15,250/year for 3 years = GBP 45,750.
 - Opportunity cost: foregone earnings (GBP 22,000/year for 3 years) = GBP 66,000.
 - Total cost: GBP 111,750.
-- Annual earnings premium: if average non-graduate earns GBP 28,000, graduate earns $28\,000 \times 1.235 = \text{GBP } 34\,580$. Premium = GBP 6,580/year.
+- Annual earnings premium: if average non-graduate earns GBP 28,000, graduate earns $28\,000 \times 1.235 = \text{'\{'}GBP {'\}'} 34\,580$. Premium = GBP 6,580/year.
 - Payback period: $111\,750 / 6\,580 = 17$ years (ignoring discounting).
 
 **Present value calculation (discount rate 5%):**
-$$PV = \sum_{t=4}^{43} \frac{6580}{1.05^t} = 6580 \times \frac{1 - 1.05^{-40}}{0.05 \times 1.05^3} = 6580 \times 15.046 = \text{GBP } 99\,003$$
+$$PV = \sum_{t=4}^{43} \frac{6580}{1.05^t} = 6580 \times \frac{1 - 1.05^{-40}}{0.05 \times 1.05^3} = 6580 \times 15.046 = \text{'\{'}GBP {'\}'} 99\,003$$
 
-$$NPV = 99\,003 - 111\,750 = -\text{GBP } 12\,747$$
+$$NPV = 99\,003 - 111\,750 = -\text{'\{'}GBP {'\}'} 12\,747$$
 
 At a 5% discount rate, the NPV is negative. At 3%:
-$$PV = 6580 \times \frac{1 - 1.03^{-40}}{0.03 \times 1.03^3} = 6580 \times 21.35 = \text{GBP } 140\,483$$
-$$NPV = 140\,483 - 111\,750 = +\text{GBP } 28\,733$$
+$$PV = 6580 \times \frac{1 - 1.03^{-40}}{0.03 \times 1.03^3} = 6580 \times 21.35 = \text{'\{'}GBP {'\}'} 140\,483$$
+$$NPV = 140\,483 - 111\,750 = +\text{'\{'}GBP {'\}'} 28\,733$$
 
 The investment is sensitive to the discount rate. Lower discount rates (reflecting social rather than private returns, including positive externalities of education) make the investment more attractive.
 
@@ -865,19 +865,19 @@ Supply-side policy increased output by 80 AND reduced the price level by 40. Thi
 **Example.** A firm is deciding whether to invest in a machine costing GBP 100,000. The machine generates annual revenue of GBP 25,000 for 5 years, after which it has zero scrap value.
 
 **Without tax:**
-$$NPV = \sum_{t=1}^{5} \frac{25\,000}{1.10^t} - 100\,000 = 25\,000 \times 3.791 - 100\,000 = 94\,775 - 100\,000 = -\text{GBP } 5\,225$$
+$$NPV = \sum_{t=1}^{5} \frac{25\,000}{1.10^t} - 100\,000 = 25\,000 \times 3.791 - 100\,000 = 94\,775 - 100\,000 = -\text{'\{'}GBP {'\}'} 5\,225$$
 
 The project is NOT profitable without tax. The firm does not invest.
 
 **With a 40% investment tax credit:**
-The firm receives a tax credit of $0.40 \times 100\,000 = \text{GBP } 40\,000$.
-Net cost of machine: $100\,000 - 40\,000 = \text{GBP } 60\,000$.
-$$NPV = 94\,775 - 60\,000 = +\text{GBP } 34\,775$$
+The firm receives a tax credit of $0.40 \times 100\,000 = \text{'\{'}GBP {'\}'} 40\,000$.
+Net cost of machine: $100\,000 - 40\,000 = \text{'\{'}GBP {'\}'} 60\,000$.
+$$NPV = 94\,775 - 60\,000 = +\text{'\{'}GBP {'\}'} 34\,775$$
 
 The project is now profitable. The investment tax credit has incentivised investment.
 
 **With a 19% corporate tax rate (and no tax credit):**
-After-tax revenue: $25\,000 \times (1 - 0.19) = \text{GBP } 20\,250$ per year.
+After-tax revenue: $25\,000 \times (1 - 0.19) = \text{'\{'}GBP {'\}'} 20\,250$ per year.
 Capital allowances: 18% writing-down allowance (WDA) on a reducing balance.
 
 Year 1: Allowance = $100\,000 \times 0.18 = 18\,000$. Tax saved = $18\,000 \times 0.19 = 3\,420$.
@@ -886,11 +886,11 @@ Year 3: Allowance = $67\,240 \times 0.18 = 12\,103$. Tax saved = $12\,103 \times
 Year 4: Allowance = $55\,137 \times 0.18 = 9\,925$. Tax saved = $9\,925 \times 0.19 = 1\,886$.
 Year 5: Allowance = $45\,212 \times 0.18 = 8\,138$. Tax saved = $8\,138 \times 0.19 = 1\,546$.
 
-$$NPV = \sum_{t=1}^{5} \frac{20\,250}{1.10^t} + \sum_{t=1}^{5} \frac{\text{Tax saved}_t}{1.10^t} - 100\,000$$
+$$NPV = \sum_{t=1}^{5} \frac{20\,250}{1.10^t} + \sum_{t=1}^{5} \frac{\text{'\{'}Tax saved{'\}'}_t}{1.10^t} - 100\,000$$
 
 $$= 20\,250 \times 3.791 + \frac{3\,420}{1.10} + \frac{2\,804}{1.10^2} + \frac{2\,300}{1.10^3} + \frac{1\,886}{1.10^4} + \frac{1\,546}{1.10^5} - 100\,000$$
 
-$$= 76\,767 + 3\,109 + 2\,318 + 1\,728 + 1\,288 + 960 - 100\,000 = -\text{GBP } 13\,830$$
+$$= 76\,767 + 3\,109 + 2\,318 + 1\,728 + 1\,288 + 960 - 100\,000 = -\text{'\{'}GBP {'\}'} 13\,830$$
 
 Even with capital allowances, the project is not profitable under a 19% corporate tax. This illustrates that corporate tax creates a tax wedge on investment, reducing the capital stock below the socially optimal level. Supply-side policies (higher capital allowances, investment tax credits, lower corporate tax rates) can close this gap.
 
@@ -1110,7 +1110,7 @@ After: $PS = (2 - 1.5)(150) - \frac{1}{2}(0.5)(150) = 75 - 37.5 = 37.5$.
 
 Producer surplus falls from 75 to 37.5 (change: -37.5). Incumbent taxi drivers are worse off.
 
-**Licence holders:** 20,000 licence holders lose the value of their medallions: $20\,000 \times 50\,000 = \text{GBP } 1\,000\,000 = \text{GBP } 1\text{bn}$. This is a capital loss for incumbent taxi drivers.
+**Licence holders:** 20,000 licence holders lose the value of their medallions: $20\,000 \times 50\,000 = \text{'\{'}GBP {'\}'} 1\,000\,000 = \text{'\{'}GBP {'\}'} 1\text{'\{'}bn{'\}'}$. This is a capital loss for incumbent taxi drivers.
 
 **Net welfare change:** $+150 - 37.5 = +112.5$. The medallion loss of 1,000 is a TRANSFER (from medallion owners to consumers), not a net welfare loss. The net welfare gain is 112.5.
 
@@ -1134,7 +1134,7 @@ Producer surplus falls from 75 to 37.5 (change: -37.5). Incumbent taxi drivers a
 
 **Data:**
 - Number of apprentices: 750,000 per year.
-- Government cost: $750\,000 \times 5\,000 = \text{GBP } 3.75\text{bn}$.
+- Government cost: $750\,000 \times 5\,000 = \text{'\{'}GBP {'\}'} 3.75\text{'\{'}bn{'\}'}$.
 - Completion rate: 60% (450,000 complete).
 - Earnings premium for completers: GBP 7,000 per year (above the non-apprentice alternative).
 - Earnings premium for non-completers: GBP 2,000 per year.
@@ -1143,29 +1143,29 @@ Producer surplus falls from 75 to 37.5 (change: -37.5). Incumbent taxi drivers a
 **Cost-benefit calculation:**
 
 **Benefits:**
-Completers: $450\,000 \times 7\,000 \times 40 = \text{GBP } 126\text{bn}$ (undiscounted).
-Non-completers: $300\,000 \times 2\,000 \times 40 = \text{GBP } 24\text{bn}$ (undiscounted).
+Completers: $450\,000 \times 7\,000 \times 40 = \text{'\{'}GBP {'\}'} 126\text{'\{'}bn{'\}'}$ (undiscounted).
+Non-completers: $300\,000 \times 2\,000 \times 40 = \text{'\{'}GBP {'\}'} 24\text{'\{'}bn{'\}'}$ (undiscounted).
 Total benefits: GBP 150bn.
 
 **Present value (3.5% discount rate):**
-Completers: $450\,000 \times 7\,000 \times \frac{1 - 1.035^{-40}}{0.035} = 3.15 \times 10^9 \times 21.4 = \text{GBP } 67.4\text{bn}$.
-Non-completers: $300\,000 \times 2\,000 \times 21.4 = \text{GBP } 12.8\text{bn}$.
+Completers: $450\,000 \times 7\,000 \times \frac{1 - 1.035^{-40}}{0.035} = 3.15 \times 10^9 \times 21.4 = \text{'\{'}GBP {'\}'} 67.4\text{'\{'}bn{'\}'}$.
+Non-completers: $300\,000 \times 2\,000 \times 21.4 = \text{'\{'}GBP {'\}'} 12.8\text{'\{'}bn{'\}'}$.
 Total PV of benefits: GBP 80.2bn.
 
 **Costs (present value):**
-Government subsidy: $3.75 \times 40 = \text{GBP } 150\text{bn}$ (undiscounted over 40 years).
-Wait, the subsidy is annual. PV of costs: $3.75 \times \frac{1 - 1.035^{-40}}{0.035} = 3.75 \times 21.4 = \text{GBP } 80.3\text{bn}$.
+Government subsidy: $3.75 \times 40 = \text{'\{'}GBP {'\}'} 150\text{'\{'}bn{'\}'}$ (undiscounted over 40 years).
+Wait, the subsidy is annual. PV of costs: $3.75 \times \frac{1 - 1.035^{-40}}{0.035} = 3.75 \times 21.4 = \text{'\{'}GBP {'\}'} 80.3\text{'\{'}bn{'\}'}$.
 
 But the subsidy is only paid for the duration of the apprenticeship (typically 2-4 years), not for 40 years. Let me recalculate:
 
-PV of costs: $3.75\text{bn} \times \frac{1 - 1.035^{-2}}{0.035} = 3.75 \times 1.90 = \text{GBP } 7.13\text{bn}$ (assuming 2-year apprenticeships).
+PV of costs: $3.75\text{'\{'}bn{'\}'} \times \frac{1 - 1.035^{-2}}{0.035} = 3.75 \times 1.90 = \text{'\{'}GBP {'\}'} 7.13\text{'\{'}bn{'\}'}$ (assuming 2-year apprenticeships).
 
 **NPV = 80.2 - 7.13 = GBP 73.1bn.** The programme has a very large positive NPV.
 
 **Benefit-cost ratio:** $80.2 / 7.13 = 11.2$. Every GBP 1 of government spending generates GBP 11.2 in lifetime earnings gains.
 
 **Fiscal return:** Higher earnings generate additional tax revenue. If the average tax rate on the earnings premium is 30%:
-Additional tax revenue $= 0.3 \times 80.2 = \text{GBP } 24.1\text{bn}$.
+Additional tax revenue $= 0.3 \times 80.2 = \text{'\{'}GBP {'\}'} 24.1\text{'\{'}bn{'\}'}$.
 The government recovers 24.1bn in tax from an investment of 7.13bn -- a fiscal return of 338%.
 
 **Distributional effects:**

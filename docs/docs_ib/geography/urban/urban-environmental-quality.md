@@ -80,11 +80,11 @@ with city size, geographic location, and prevailing weather patterns.
 
 | Source                           | Key Pollutants                                                     | Characteristics                                                                     |
 | -------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| **Vehicle emissions**            | $\mathrm{NO_x}$, $\mathrm{PM}_{2.5}$, $\mathrm{PM}_{10}$, CO, VOCs | Dominant source in most cities; concentrated along major roads and at intersections |
-| **Industrial activity**          | $\mathrm{SO_2}$, $\mathrm{PM}_{10}$, VOCs, heavy metals            | Point sources; often located in industrial zones or port areas                      |
-| **Construction and demolition**  | $\mathrm{PM}_{10}$, $\mathrm{PM}_{2.5}$                            | Seasonal; concentrated at construction sites                                        |
-| **Domestic heating and cooking** | $\mathrm{PM}_{2.5}$, CO, $\mathrm{NO_x}$                           | Significant in cities where solid fuels (coal, biomass) are used; seasonal (winter) |
-| **Power generation**             | $\mathrm{SO_2}$, $\mathrm{NO_x}$, $\mathrm{PM}_{10}$               | Point sources; depends on fuel mix                                                  |
+| **Vehicle emissions**            | $\mathrm{'\{'}NO_x{'\}'}$, $\mathrm{'\{'}PM{'\}'}_{2.5}$, $\mathrm{'\{'}PM{'\}'}_{10}$, CO, VOCs | Dominant source in most cities; concentrated along major roads and at intersections |
+| **Industrial activity**          | $\mathrm{'\{'}SO_2{'\}'}$, $\mathrm{'\{'}PM{'\}'}_{10}$, VOCs, heavy metals            | Point sources; often located in industrial zones or port areas                      |
+| **Construction and demolition**  | $\mathrm{'\{'}PM{'\}'}_{10}$, $\mathrm{'\{'}PM{'\}'}_{2.5}$                            | Seasonal; concentrated at construction sites                                        |
+| **Domestic heating and cooking** | $\mathrm{'\{'}PM{'\}'}_{2.5}$, CO, $\mathrm{'\{'}NO_x{'\}'}$                           | Significant in cities where solid fuels (coal, biomass) are used; seasonal (winter) |
+| **Power generation**             | $\mathrm{'\{'}SO_2{'\}'}$, $\mathrm{'\{'}NO_x{'\}'}$, $\mathrm{'\{'}PM{'\}'}_{10}$               | Point sources; depends on fuel mix                                                  |
 
 ### Health Impacts
 
@@ -92,14 +92,14 @@ The WHO estimates that outdoor air pollution causes approximately 4.2 million pr
 annually. Key health effects include:
 
 - **Respiratory diseases:** asthma, chronic obstructive pulmonary disease (COPD), lung cancer.
-  Long-term exposure to $\mathrm{PM}_{2.5}$ (particulate matter with diameter less than 2.5
+  Long-term exposure to $\mathrm{'\{'}PM{'\}'}_{2.5}$ (particulate matter with diameter less than 2.5
   micrometres) is associated with increased lung cancer mortality.
-- **Cardiovascular disease:** $\mathrm{PM}_{2.5}$ and $\mathrm{NO_2}$ are associated with increased
+- **Cardiovascular disease:** $\mathrm{'\{'}PM{'\}'}_{2.5}$ and $\mathrm{'\{'}NO_2{'\}'}$ are associated with increased
   risk of heart attack, stroke, and arrhythmia.
 - **Neurological effects:** emerging evidence links air pollution to cognitive decline and
   neurodegenerative diseases.
 
-Cities with the highest $\mathrm{PM}_{2.5}$ concentrations include Delhi (approximately 100
+Cities with the highest $\mathrm{'\{'}PM{'\}'}_{2.5}$ concentrations include Delhi (approximately 100
 micrograms/m$^3$ annual mean, compared to the WHO guideline of 5 micrograms/m$^3$), Lahore, Dhaka,
 and Cairo.
 

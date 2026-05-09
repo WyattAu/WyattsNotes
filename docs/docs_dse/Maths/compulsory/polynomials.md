@@ -11,8 +11,8 @@ slug: polynomials
 ---
 
 A polynomial in one variable $x$ is an expression of the form
-$a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$, where $n \in \mathbb{N}_0$,
-$a_n, a_{n-1}, \ldots, a_0 \in \mathbb{R}$, and $a_n \neq 0$. Polynomials and their manipulation
+$a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$, where $n \in \mathbb{'\{'}N{'\}'}_0$,
+$a_n, a_{n-1}, \ldots, a_0 \in \mathbb{'\{'}R{'\}'}$, and $a_n \neq 0$. Polynomials and their manipulation
 form a core part of the DSE compulsory mathematics syllabus, with applications ranging from
 algebraic identities to combinatorial coefficient extraction.
 
@@ -151,7 +151,7 @@ $$
 To find the coefficient of $x^k$, set $r = k$ and evaluate:
 
 $$
-[\mathrm{coefficient of } x^k] = \binom{n}{k} a^{n-k} b^k
+[\mathrm{'\{'}coefficient of {'\}'} x^k] = \binom{n}{k} a^{n-k} b^k
 $$
 
 <details>
@@ -370,7 +370,7 @@ $$
 6x^2 - 7x + 2 = 6x^2 - 4x - 3x + 2 = 2x(3x - 2) - 1(3x - 2) = (2x - 1)(3x - 2)
 $$
 
-If the discriminant $\Delta = b^2 - 4ac < 0$, the quadratic cannot be factorized over $\mathbb{R}$.
+If the discriminant $\Delta = b^2 - 4ac < 0$, the quadratic cannot be factorized over $\mathbb{'\{'}R{'\}'}$.
 
 </details>
 
@@ -514,8 +514,8 @@ When divided by $(x+2)$, the remainder is $30$. Find $a$ and $b$.
 <summary>Answer</summary>
 By the Remainder Theorem:
 
-- $f(1) = 2 + a + b - 6 = -4 \implies a + b = 0 \quad \mathrm{(i)}$
-- $f(-2) = -16 + 4a - 2b - 6 = 30 \implies 4a - 2b = 52 \implies 2a - b = 26 \quad \mathrm{(ii)}$
+- $f(1) = 2 + a + b - 6 = -4 \implies a + b = 0 \quad \mathrm{'\{'}(i){'\}'}$
+- $f(-2) = -16 + 4a - 2b - 6 = 30 \implies 4a - 2b = 52 \implies 2a - b = 26 \quad \mathrm{'\{'}(ii){'\}'}$
 
 Adding (i) and (ii): $3a = 26 \implies a = \dfrac{26}{3}$.
 
@@ -529,8 +529,8 @@ find $a$, $b$, and $c$. Hence factorize $f(x)$ completely.
 <summary>Answer</summary>
 By the Factor Theorem:
 
-- $f(3) = 27 + 9a + 3b + c = 0 \quad \mathrm{(i)}$
-- $f(-1) = -1 + a - b + c = 0 \quad \mathrm{(ii)}$
+- $f(3) = 27 + 9a + 3b + c = 0 \quad \mathrm{'\{'}(i){'\}'}$
+- $f(-1) = -1 + a - b + c = 0 \quad \mathrm{'\{'}(ii){'\}'}$
 
 Since $(x-3)(x+1) = x^2 - 2x - 3$ is a factor, write $f(x) = (x^2 - 2x - 3)(x - d)$ for some
 constant $d$.
@@ -547,7 +547,7 @@ Also $f(3) = 0$ gives $27 + 9a + 3b + c = 0$.
 
 Using $f(-1) = 0$: $-1 + a - b + c = 0$.
 
-Subtracting (ii) from (i): $28 + 8a + 4b = 0 \implies 7 + 2a + b = 0 \quad \mathrm{(iii)}$.
+Subtracting (ii) from (i): $28 + 8a + 4b = 0 \implies 7 + 2a + b = 0 \quad \mathrm{'\{'}(iii){'\}'}$.
 
 From (ii): $a - b + c = 1$.
 
@@ -643,8 +643,8 @@ remainder when $f(x)$ is divided by $(x+1)$ is $18$. Find $p$ and $q$.
 <details>
 <summary>Answer</summary>
 
-- $f(1) = 1 + p + q + 6 = 12 \implies p + q = 5 \quad \mathrm{(i)}$
-- $f(-1) = -1 + p - q + 6 = 18 \implies p - q = 13 \quad \mathrm{(ii)}$
+- $f(1) = 1 + p + q + 6 = 12 \implies p + q = 5 \quad \mathrm{'\{'}(i){'\}'}$
+- $f(-1) = -1 + p - q + 6 = 18 \implies p - q = 13 \quad \mathrm{'\{'}(ii){'\}'}$
 
 Adding: $2p = 18 \implies p = 9$.
 
@@ -765,9 +765,9 @@ The polynomial $f(x) = x^3 + ax^2 + bx - 12$ is divisible by $(x - 3)$ and $f(1)
 <details>
 <summary>Solution</summary>
 
-$f(3) = 0$: $27 + 9a + 3b - 12 = 0 \implies 9a + 3b = -15 \implies 3a + b = -5 \quad \text{(i)}$.
+$f(3) = 0$: $27 + 9a + 3b - 12 = 0 \implies 9a + 3b = -15 \implies 3a + b = -5 \quad \text{'\{'}(i){'\}'}$.
 
-$f(1) = -18$: $1 + a + b - 12 = -18 \implies a + b = -7 \quad \text{(ii)}$.
+$f(1) = -18$: $1 + a + b - 12 = -18 \implies a + b = -7 \quad \text{'\{'}(ii){'\}'}$.
 
 (ii) from (i): $2a = 2 \implies a = 1$. From (ii): $b = -8$.
 
@@ -803,7 +803,7 @@ The roots of $x^2 - x + 1 = 0$ are $\omega$ and $\omega^2$ (complex cube roots o
 
 By the remainder theorem for quadratic divisors:
 
-$$f(\omega) = a\omega + b \quad \text{and} \quad f(\omega^2) = a\omega^2 + b$$
+$$f(\omega) = a\omega + b \quad \text{'\{'}and{'\}'} \quad f(\omega^2) = a\omega^2 + b$$
 
 Since $\omega^2 + \omega + 1 = 0$ (i.e., $\omega^2 = -\omega - 1$) and $\omega^3 = 1$:
 
@@ -856,11 +856,11 @@ $$\frac{n}{6} = \frac{3}{2} \implies n = 9$$
 <details>
 <summary>Solution</summary>
 
-$f(1) = 1 + a + b + c = 4 \implies a + b + c = 3 \quad \text{(i)}$
+$f(1) = 1 + a + b + c = 4 \implies a + b + c = 3 \quad \text{'\{'}(i){'\}'}$
 
-$f(-1) = -1 + a - b + c = -2 \implies a - b + c = -1 \quad \text{(ii)}$
+$f(-1) = -1 + a - b + c = -2 \implies a - b + c = -1 \quad \text{'\{'}(ii){'\}'}$
 
-$f(2) = 8 + 4a + 2b + c = 14 \implies 4a + 2b + c = 6 \quad \text{(iii)}$
+$f(2) = 8 + 4a + 2b + c = 14 \implies 4a + 2b + c = 6 \quad \text{'\{'}(iii){'\}'}$
 
 (i) - (ii): $2b = 4 \implies b = 2$.
 
@@ -896,9 +896,9 @@ Total coefficient of $x^3$: $80 + (-40) = 40$.
 <details>
 <summary>Solution</summary>
 
-$f(-1) = -2 + a - b - 6 = 0 \implies a - b = 8 \quad \text{(i)}$
+$f(-1) = -2 + a - b - 6 = 0 \implies a - b = 8 \quad \text{'\{'}(i){'\}'}$
 
-$f(2) = 16 + 4a + 2b - 6 = 0 \implies 4a + 2b = -10 \implies 2a + b = -5 \quad \text{(ii)}$
+$f(2) = 16 + 4a + 2b - 6 = 0 \implies 4a + 2b = -10 \implies 2a + b = -5 \quad \text{'\{'}(ii){'\}'}$
 
 (i) + (ii): $3a = 3 \implies a = 1$. From (i): $b = -7$.
 

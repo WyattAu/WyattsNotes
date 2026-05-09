@@ -193,15 +193,15 @@ Solve $\sin 2x = \cos x$ for $0 \le x \le 2\pi$.
 
 ### Worked Example: Vectors -- Scalar Product (SL)
 
-Find the angle between $\mathbf{a} = \begin{pmatrix} 2 \\ 3 \\ -1 \end{pmatrix}$ and
-$\mathbf{b} = \begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix}$.
+Find the angle between $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} 2 \\ 3 \\ -1 \end{pmatrix}$ and
+$\mathbf{'\{'}b{'\}'} = \begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix}$.
 
 <details>
 <summary>Solution</summary>
 
-- **Dot product:** $\mathbf{a} \cdot \mathbf{b} = (2)(4) + (3)(-1) + (-1)(2) = 8 - 3 - 2 = 3$
-- **Magnitudes:** $\lvert \mathbf{a} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$, $\lvert \mathbf{b} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
-- **Angle:** $\cos \theta = \dfrac{\mathbf{a} \cdot \mathbf{b}}{\lvert \mathbf{a} \rvert \lvert \mathbf{b} \rvert} = \dfrac{3}{\sqrt{14} \cdot \sqrt{21}} = \dfrac{3}{\sqrt{294}} = \dfrac{3}{17.15} = 0.1749$
+- **Dot product:** $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = (2)(4) + (3)(-1) + (-1)(2) = 8 - 3 - 2 = 3$
+- **Magnitudes:** $\lvert \mathbf{'\{'}a{'\}'} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$, $\lvert \mathbf{'\{'}b{'\}'} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
+- **Angle:** $\cos \theta = \dfrac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{\lvert \mathbf{'\{'}a{'\}'} \rvert \lvert \mathbf{'\{'}b{'\}'} \rvert} = \dfrac{3}{\sqrt{14} \cdot \sqrt{21}} = \dfrac{3}{\sqrt{294}} = \dfrac{3}{17.15} = 0.1749$
 - $\theta = \arccos(0.1749) = 79.9$ degrees
 
 </details>
@@ -574,8 +574,8 @@ This paper tests problem-solving and mathematical reasoning on HL extension mate
 
 | Mistake                                    | Correction                                                                      |
 | :----------------------------------------- | :------------------------------------------------------------------------------ |
-| $P(A \mathrm{ or } B) = P(A) + P(B)$       | Only if mutually exclusive; otherwise $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| $P(A \mathrm{ and } B) = P(A) \times P(B)$ | Only if independent; otherwise use conditional probability                      |
+| $P(A \mathrm{'\{'} or {'\}'} B) = P(A) + P(B)$       | Only if mutually exclusive; otherwise $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| $P(A \mathrm{'\{'} and {'\}'} B) = P(A) \times P(B)$ | Only if independent; otherwise use conditional probability                      |
 | Confusing $\mu$ and $\bar{x}$              | $\mu$ is the population mean; $\bar{x}$ is the sample mean                      |
 
 ---
@@ -652,7 +652,7 @@ If you get this wrong, revise: Arithmetic series formula $S_n = n(u_1 + u_n)/2$ 
 
 - Let $y = \dfrac{2x + 1}{x - 3}$. Rearranging: $y(x - 3) = 2x + 1 \implies yx - 3y = 2x + 1$
 - $x(y - 2) = 3y + 1 \implies x = \dfrac{3y + 1}{y - 2}$
-- For $x$ to be real, $y \neq 2$. Therefore $\mathrm{range} = \mathbb{R} \setminus \\{2\\}$.
+- For $x$ to be real, $y \neq 2$. Therefore $\mathrm{'\{'}range{'\}'} = \mathbb{'\{'}R{'\}'} \setminus \\{2\\}$.
 
 If you get this wrong, revise: Finding range of rational functions by rearranging (Topic 2).
 

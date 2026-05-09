@@ -209,7 +209,7 @@ Genes on the same chromosome tend to be inherited together (linked). The recombi
 measures the distance between linked genes:
 
 $$
-\mathrm{Recombination frequency} = \frac{\mathrm{Number of recombinant offspring}}{\mathrm{Total offspring}} \times 100
+\mathrm{'\{'}Recombination frequency{'\}'} = \frac{\mathrm{'\{'}Number of recombinant offspring{'\}'}}{\mathrm{'\{'}Total offspring{'\}'}} \times 100
 $$
 
 - $1\%$ recombination = 1 map unit (centimorgan, cM).
@@ -408,7 +408,7 @@ them: genes that are farther apart are more likely to be separated by crossing o
 **Recombination frequency:** The percentage of offspring that are recombinant (have a non-parental
 combination of alleles).
 
-$$\mathrm{Recombination frequency} = \frac{\mathrm{Number of recombinant offspring}}{\mathrm{Total offspring}} \times 100$$
+$$\mathrm{'\{'}Recombination frequency{'\}'} = \frac{\mathrm{'\{'}Number of recombinant offspring{'\}'}}{\mathrm{'\{'}Total offspring{'\}'}} \times 100$$
 
 - 1% recombination = 1 centimorgan (cM) or 1 map unit.
 - Maximum recombination frequency of 50% means the genes are effectively unlinked (on different
@@ -522,7 +522,7 @@ Epigenetics refers to heritable changes in gene expression that do not involve c
 sequence. Epigenetic modifications can be influenced by environmental factors and can sometimes be
 passed to offspring.
 
-**DNA methylation:** Methyl groups ($-\mathrm{CH}_3$) are added to cytosine bases, typically in CpG
+**DNA methylation:** Methyl groups ($-\mathrm{'\{'}CH{'\}'}_3$) are added to cytosine bases, typically in CpG
 islands near gene promoters. Methylation generally silences gene expression by preventing
 transcription factors from binding.
 
@@ -726,9 +726,9 @@ hours.
 <summary>Question 1: Three-point cross and gene mapping</summary>
 
 Genes D, E, and F are linked in the order D--E--F. A test cross of a trihybrid individual
-($\mathrm{DEF/def}$) produces the following offspring: $\mathrm{DEF} = 400$, $\mathrm{def} = 380$,
-$\mathrm{DEf} = 60$, $\mathrm{deF} = 70$, $\mathrm{Def} = 20$, $\mathrm{dEF} = 30$,
-$\mathrm{DeF} = 15$, $\mathrm{dEf} = 25$. Calculate the recombination frequencies between each pair
+($\mathrm{'\{'}DEF/def{'\}'}$) produces the following offspring: $\mathrm{'\{'}DEF{'\}'} = 400$, $\mathrm{'\{'}def{'\}'} = 380$,
+$\mathrm{'\{'}DEf{'\}'} = 60$, $\mathrm{'\{'}deF{'\}'} = 70$, $\mathrm{'\{'}Def{'\}'} = 20$, $\mathrm{'\{'}dEF{'\}'} = 30$,
+$\mathrm{'\{'}DeF{'\}'} = 15$, $\mathrm{'\{'}dEf{'\}'} = 25$. Calculate the recombination frequencies between each pair
 of genes and draw the genetic map.
 
 </details>
@@ -738,13 +738,13 @@ of genes and draw the genetic map.
 
 Total offspring: $400 + 380 + 60 + 70 + 20 + 30 + 15 + 25 = 1000$.
 
-Parental types (most frequent): $\mathrm{DEF}$ (400) and $\mathrm{def}$ (380).
+Parental types (most frequent): $\mathrm{'\{'}DEF{'\}'}$ (400) and $\mathrm{'\{'}def{'\}'}$ (380).
 
-Double crossovers (least frequent): $\mathrm{DeF}$ (15) and $\mathrm{dEf}$ (25).
+Double crossovers (least frequent): $\mathrm{'\{'}DeF{'\}'}$ (15) and $\mathrm{'\{'}dEf{'\}'}$ (25).
 
-Single crossover between D and E: $\mathrm{DEf}$ (60) and $\mathrm{deF}$ (70).
+Single crossover between D and E: $\mathrm{'\{'}DEf{'\}'}$ (60) and $\mathrm{'\{'}deF{'\}'}$ (70).
 
-Single crossover between E and F: $\mathrm{Def}$ (20) and $\mathrm{dEF}$ (30).
+Single crossover between E and F: $\mathrm{'\{'}Def{'\}'}$ (20) and $\mathrm{'\{'}dEF{'\}'}$ (30).
 
 Recombination frequency D-E:
 $$\frac{60 + 70 + 15 + 25}{1000} \times 100 = \frac{170}{1000} \times 100 = 17.0\%$$
@@ -811,16 +811,16 @@ expression of alleles at the other gene (D/d).
 The 12:3:1 ratio arises because:
 
 - Any genotype with at least one W allele is white (regardless of D/d):
-  $9 \mathrm{ W\_D\_} + 3 \mathrm{ W\_dd} = 12$ white.
-- Genotypes that are $\mathrm{wwD\_}$ are yellow disc: 3 yellow disc.
-- Genotype $\mathrm{wwdd}$ is yellow sphere: 1 yellow sphere.
+  $9 \mathrm{'\{'} W\_D\_{'\}'} + 3 \mathrm{'\{'} W\_dd{'\}'} = 12$ white.
+- Genotypes that are $\mathrm{'\{'}wwD\_{'\}'}$ are yellow disc: 3 yellow disc.
+- Genotype $\mathrm{'\{'}wwdd{'\}'}$ is yellow sphere: 1 yellow sphere.
 
 F2 genotypes:
 
-- White: $\mathrm{WWDD}$, $\mathrm{WWDd}$, $\mathrm{WWdd}$, $\mathrm{WwDD}$, $\mathrm{WwDd}$,
-  $\mathrm{Wwdd}$
-- Yellow disc: $\mathrm{wwDD}$, $\mathrm{wwDd}$
-- Yellow sphere: $\mathrm{wwdd}$
+- White: $\mathrm{'\{'}WWDD{'\}'}$, $\mathrm{'\{'}WWDd{'\}'}$, $\mathrm{'\{'}WWdd{'\}'}$, $\mathrm{'\{'}WwDD{'\}'}$, $\mathrm{'\{'}WwDd{'\}'}$,
+  $\mathrm{'\{'}Wwdd{'\}'}$
+- Yellow disc: $\mathrm{'\{'}wwDD{'\}'}$, $\mathrm{'\{'}wwDd{'\}'}$
+- Yellow sphere: $\mathrm{'\{'}wwdd{'\}'}$
 
 The W gene is epistatic to the D gene. When the dominant W allele is present, the D gene's
 expression is completely masked, and all fruits appear white regardless of whether they carry D or d

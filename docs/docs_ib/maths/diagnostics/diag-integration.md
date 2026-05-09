@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **(a)** Evaluate $\displaystyle\int e^{2x}\sin x\,dx$.
 
-**(b)** A student sets up $I = \int e^{2x}\sin x\,dx$, applies integration by parts twice, and gets $I = \text{(something)} - I$, then concludes $I = 0$. Explain the error.
+**(b)** A student sets up $I = \int e^{2x}\sin x\,dx$, applies integration by parts twice, and gets $I = \text{'\{'}(something){'\}'} - I$, then concludes $I = 0$. Explain the error.
 
 [Difficulty: hard. Tests cyclic integration by parts and the algebraic step of collecting the $I$ terms.]
 
@@ -41,7 +41,7 @@ $$3I = e^{2x}(2\sin x - \cos x)$$
 
 $$I = \frac{e^{2x}(2\sin x - \cos x)}{3} + C$$
 
-**(b)** The student's error is that when they got $I = \text{(something)} - I$, they incorrectly concluded $I = 0$. The correct step is to add $I$ to both sides to get $2I = \text{(something)}$, then divide by $2$ (or in this case $3$). The cyclic nature of the integral means $I$ appears on both sides, but this does not mean $I = 0$ — it means $I$ can be solved for algebraically.
+**(b)** The student's error is that when they got $I = \text{'\{'}(something){'\}'} - I$, they incorrectly concluded $I = 0$. The correct step is to add $I$ to both sides to get $2I = \text{'\{'}(something){'\}'}$, then divide by $2$ (or in this case $3$). The cyclic nature of the integral means $I$ appears on both sides, but this does not mean $I = 0$ — it means $I$ can be solved for algebraically.
 
 ---
 
@@ -125,7 +125,7 @@ $$= \lim_{b \to \infty}\left[\frac{x^{1-p}}{1-p}\right]_1^b = \lim_{b \to \infty
 
 Case $p = 1$:
 
-$$\int_1^{\infty} \frac{1}{x}\,dx = \lim_{b \to \infty}\ln b = \infty \quad \text{(diverges)}$$
+$$\int_1^{\infty} \frac{1}{x}\,dx = \lim_{b \to \infty}\ln b = \infty \quad \text{'\{'}(diverges){'\}'}$$
 
 The integral converges if and only if $p \gt 1$.
 
@@ -163,7 +163,7 @@ Check which curve is on top:
 - For $0 \lt x \lt \frac{\pi}{4}$: $\cos x \gt \sin x$ (e.g., at $x = 0$: $\cos 0 = 1 \gt 0 = \sin 0$).
 - For $\frac{\pi}{4} \lt x \lt \pi$: $\sin x \gt \cos x$ (e.g., at $x = \frac{\pi}{2}$: $\sin\frac{\pi}{2} = 1 \gt 0 = \cos\frac{\pi}{2}$).
 
-$$\text{Area} = \int_0^{\pi/4}(\cos x - \sin x)\,dx + \int_{\pi/4}^{\pi}(\sin x - \cos x)\,dx$$
+$$\text{'\{'}Area{'\}'} = \int_0^{\pi/4}(\cos x - \sin x)\,dx + \int_{\pi/4}^{\pi}(\sin x - \cos x)\,dx$$
 
 $$= \left[\sin x + \cos x\right]_0^{\pi/4} + \left[-\cos x - \sin x\right]_{\pi/4}^{\pi}$$
 
@@ -171,7 +171,7 @@ First integral: $\sin\frac{\pi}{4} + \cos\frac{\pi}{4} - (\sin 0 + \cos 0) = \fr
 
 Second integral: $(-\cos\pi - \sin\pi) - (-\cos\frac{\pi}{4} - \sin\frac{\pi}{4}) = (1 - 0) - \!\left(-\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}\right) = 1 + \sqrt{2}$.
 
-$$\text{Area} = (\sqrt{2} - 1) + (1 + \sqrt{2}) = 2\sqrt{2}$$
+$$\text{'\{'}Area{'\}'} = (\sqrt{2} - 1) + (1 + \sqrt{2}) = 2\sqrt{2}$$
 
 ---
 

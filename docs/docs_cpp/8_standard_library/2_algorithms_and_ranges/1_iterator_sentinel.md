@@ -35,7 +35,7 @@ The key distinction from the traditional iterator-pair model:
 The `std::sentinel_for` concept requires [N4950 §25.3.5.2]:
 
 $$
-\mathrm{sentinel\_for}(S, I) \iff \mathrm{input\_iterator}(I) \land \mathrm{semiregular}(S) \land \mathrm{weakly\_equality\_comparable\_with}(S, I)
+\mathrm{'\{'}sentinel\_for{'\}'}(S, I) \iff \mathrm{'\{'}input\_iterator{'\}'}(I) \land \mathrm{'\{'}semiregular{'\}'}(S) \land \mathrm{'\{'}weakly\_equality\_comparable\_with{'\}'}(S, I)
 $$
 
 ```cpp

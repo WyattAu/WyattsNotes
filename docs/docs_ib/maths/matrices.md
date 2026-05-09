@@ -24,7 +24,7 @@ elsewhere. For any compatible matrix $A$: $AI = IA = A$.
 
 ### Addition and Scalar Multiplication
 
-If $A, B \in \mathcal{M}_{m \times n}(\mathbb{R})$ and $\lambda \in \mathbb{R}$:
+If $A, B \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$ and $\lambda \in \mathbb{'\{'}R{'\}'}$:
 
 $$(A + B)_{ij} = a_{ij} + b_{ij}, \qquad (\lambda A)_{ij} = \lambda \cdot a_{ij}$$
 
@@ -101,7 +101,7 @@ $$A^{-1} = \frac{1}{\det(A)}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$$
 
 ### Adjugate Method ($3 \times 3$)
 
-$$A^{-1} = \frac{1}{\det(A)} \cdot \mathrm{adj}(A)$$
+$$A^{-1} = \frac{1}{\det(A)} \cdot \mathrm{'\{'}adj{'\}'}(A)$$
 
 where the **adjugate** (classical adjoint) is the transpose of the cofactor matrix. The
 $(i, j)$-cofactor is $C_{ij} = (-1)^{i+j} M_{ij}$, where $M_{ij}$ is the $(i, j)$-minor (determinant
@@ -122,22 +122,22 @@ of the submatrix obtained by deleting row $i$ and column $j$).
 
 A system of $n$ linear equations in $n$ unknowns:
 
-$$A\mathbf{x} = \mathbf{b}$$
+$$A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$$
 
-has the unique solution $\mathbf{x} = A^{-1}\mathbf{b}$ when $\det(A) \ne 0$.
+has the unique solution $\mathbf{'\{'}x{'\}'} = A^{-1}\mathbf{'\{'}b{'\}'}$ when $\det(A) \ne 0$.
 
 ### Cramer's Rule
 
-For the system $A\mathbf{x} = \mathbf{b}$ where $A$ is $n \times n$ and $\det(A) \ne 0$:
+For the system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ where $A$ is $n \times n$ and $\det(A) \ne 0$:
 
 $$x_i = \frac{\det(A_i)}{\det(A)}$$
 
-where $A_i$ is the matrix $A$ with column $i$ replaced by $\mathbf{b}$.
+where $A_i$ is the matrix $A$ with column $i$ replaced by $\mathbf{'\{'}b{'\}'}$.
 
 ### Gaussian Elimination
 
 For larger systems, use elementary row operations to reduce the augmented matrix
-$[A \mid \mathbf{b}]$ to row echelon form, then solve by back-substitution. The three elementary
+$[A \mid \mathbf{'\{'}b{'\}'}]$ to row echelon form, then solve by back-substitution. The three elementary
 operations are:
 
 1. Swap two rows ($R_i \leftrightarrow R_j$)
@@ -184,11 +184,11 @@ For a $2 \times 2$ transformation matrix $T$:
 Applying transformation $A$ followed by $B$ corresponds to the matrix product $BA$ (right to left
 order):
 
-$$\mathbf{v}' = B(A\mathbf{v}) = (BA)\mathbf{v}$$
+$$\mathbf{'\{'}v{'\}'}' = B(A\mathbf{'\{'}v{'\}'}) = (BA)\mathbf{'\{'}v{'\}'}$$
 
 ### Invariant Points and Lines
 
-An **invariant point** satisfies $T\mathbf{v} = \mathbf{v}$, i.e. $(T - I)\mathbf{v} = \mathbf{0}$.
+An **invariant point** satisfies $T\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}v{'\}'}$, i.e. $(T - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
 An **invariant line** is mapped to itself (points may move along the line).
 
 ---
@@ -198,17 +198,17 @@ An **invariant line** is mapped to itself (points may move along the line).
 ### Definition
 
 Let $A$ be an $n \times n$ matrix. A scalar $\lambda$ is an **eigenvalue** of $A$ if there exists a
-nonzero vector $\mathbf{v}$ (an **eigenvector**) such that:
+nonzero vector $\mathbf{'\{'}v{'\}'}$ (an **eigenvector**) such that:
 
-$$A\mathbf{v} = \lambda\mathbf{v}$$
+$$A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$$
 
-Geometrically, $A$ stretches or compresses the eigenvector $\mathbf{v}$ by factor $\lambda$ without
+Geometrically, $A$ stretches or compresses the eigenvector $\mathbf{'\{'}v{'\}'}$ by factor $\lambda$ without
 changing its direction.
 
 ### Characteristic Equation
 
-Rearranging $A\mathbf{v} = \lambda\mathbf{v}$ gives $(A - \lambda I)\mathbf{v} = \mathbf{0}$. For a
-nonzero solution $\mathbf{v}$, we require:
+Rearranging $A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$ gives $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. For a
+nonzero solution $\mathbf{'\{'}v{'\}'}$, we require:
 
 $$\det(A - \lambda I) = 0$$
 
@@ -220,18 +220,18 @@ $$\det\begin{pmatrix} a - \lambda & b \\ c & d - \lambda \end{pmatrix} = (a - \l
 
 $$\lambda^2 - (a + d)\lambda + (ad - bc) = 0$$
 
-Note: $a + d = \mathrm{tr}(A)$ (the trace) and $ad - bc = \det(A)$, so:
+Note: $a + d = \mathrm{'\{'}tr{'\}'}(A)$ (the trace) and $ad - bc = \det(A)$, so:
 
-$$\lambda^2 - \mathrm{tr}(A)\,\lambda + \det(A) = 0$$
+$$\lambda^2 - \mathrm{'\{'}tr{'\}'}(A)\,\lambda + \det(A) = 0$$
 
 ### Finding Eigenvectors
 
-For each eigenvalue $\lambda_i$, substitute into $(A - \lambda_i I)\mathbf{v} = \mathbf{0}$ and
-solve for $\mathbf{v}$. The solution space is the **eigenspace** corresponding to $\lambda_i$.
+For each eigenvalue $\lambda_i$, substitute into $(A - \lambda_i I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ and
+solve for $\mathbf{'\{'}v{'\}'}$. The solution space is the **eigenspace** corresponding to $\lambda_i$.
 
 ### Properties
 
-- The trace equals the sum of eigenvalues: $\mathrm{tr}(A) = \sum \lambda_i$
+- The trace equals the sum of eigenvalues: $\mathrm{'\{'}tr{'\}'}(A) = \sum \lambda_i$
 - The determinant equals the product of eigenvalues: $\det(A) = \prod \lambda_i$
 - If $A$ is symmetric ($A = A^T$), all eigenvalues are real and eigenvectors corresponding to
   distinct eigenvalues are orthogonal.
@@ -241,12 +241,12 @@ solve for $\mathbf{v}$. The solution space is the **eigenspace** corresponding t
 ### Diagonalisation (HL Extension)
 
 If $A$ has eigenvalues $\lambda_1, \ldots, \lambda_n$ and corresponding eigenvectors
-$\mathbf{v}_1, \ldots, \mathbf{v}_n$ forming a linearly independent set, then:
+$\mathbf{'\{'}v{'\}'}_1, \ldots, \mathbf{'\{'}v{'\}'}_n$ forming a linearly independent set, then:
 
 $$A = PDP^{-1}$$
 
-where $P = \begin{pmatrix} \mathbf{v}_1 & \cdots & \mathbf{v}_n \end{pmatrix}$ and
-$D = \mathrm{diag}(\lambda_1, \ldots, \lambda_n)$.
+where $P = \begin{pmatrix} \mathbf{'\{'}v{'\}'}_1 & \cdots & \mathbf{'\{'}v{'\}'}_n \end{pmatrix}$ and
+$D = \mathrm{'\{'}diag{'\}'}(\lambda_1, \ldots, \lambda_n)$.
 
 This is useful for computing large powers: $A^n = PD^nP^{-1}$.
 
@@ -361,9 +361,9 @@ which is a $180^\circ$ rotation.
 
 **Problem 5:** Characteristic equation: $\lambda^2 - 7\lambda + 10 = 0$, so $\lambda = 2$ or
 $\lambda = 5$. For $\lambda = 2$:
-$(A - 2I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v} = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$
+$(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'} = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$
 (up to scalar). For $\lambda = 5$:
-$(A - 5I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+$(A - 5I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 
 **Problem 6:** Area $= |\det(T)| = |6 - 0| = 6$.
 
@@ -396,7 +396,7 @@ Cofactor matrix: $\begin{pmatrix} 7 & -2 & 1 \\ -2 & 4 & -2 \\ -1 & 2 & 5 \end{p
 
 **Step 3: Transpose to get the adjugate.**
 
-$$\mathrm{adj}(A) = \begin{pmatrix} 7 & -2 & -1 \\ -2 & 4 & 2 \\ 1 & -2 & 5 \end{pmatrix}$$
+$$\mathrm{'\{'}adj{'\}'}(A) = \begin{pmatrix} 7 & -2 & -1 \\ -2 & 4 & 2 \\ 1 & -2 & 5 \end{pmatrix}$$
 
 **Step 4: Divide by the determinant.**
 
@@ -480,9 +480,9 @@ For $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$, find $A^5$ using diagona
 
 The matrix is already upper triangular, so eigenvalues are $\lambda_1 = 3$ and $\lambda_2 = 2$.
 
-For $\lambda_1 = 3$: $(A - 3I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 0 & 1 \\ 0 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+For $\lambda_1 = 3$: $(A - 3I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 0 & 1 \\ 0 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
 
-For $\lambda_2 = 2$: $(A - 2I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+For $\lambda_2 = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 $P = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$, $D = \begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}$.
 
@@ -505,7 +505,7 @@ $= \begin{pmatrix} 243 & 32 \\ 0 & -32 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 0 &
   through all subsequent steps. Always verify the solution by substituting back into the original
   equations.
 
-- **Misidentifying eigenvectors.** For each eigenvalue, solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$.
+- **Misidentifying eigenvectors.** For each eigenvalue, solve $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
   Substituting the eigenvalue into the original matrix $A$ instead of $A - \lambda I$ is a common error.
 
 - **Transformation composition order.** The matrix $BA$ represents "apply $A$ first, then $B$." Writing
@@ -588,7 +588,7 @@ $B^{-1} = \dfrac{1}{1}\begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix} = \begin{pma
 $B^{-1}A^{-1} = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix}\begin{pmatrix} -2 & 1 \\ 3/2 & -1/2 \end{pmatrix} = \begin{pmatrix} -5/2 & 3/2 \\ 2 & -1 \end{pmatrix}$.
 Verified: $(AB)^{-1} = B^{-1}A^{-1}$.
 
-**Problem 10:** Invariant points: $(T - I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies 2x + y = 0$ and $y = 0$, so $x = 0$, $y = 0$. Only the origin is invariant. For invariant lines $y = mx + c$: $T\begin{pmatrix} x \\ mx + c \end{pmatrix}$ must lie on $y = mx + c$. This gives conditions leading to the invariant line $y = 0$ (the $x$-axis is mapped to itself).
+**Problem 10:** Invariant points: $(T - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies 2x + y = 0$ and $y = 0$, so $x = 0$, $y = 0$. Only the origin is invariant. For invariant lines $y = mx + c$: $T\begin{pmatrix} x \\ mx + c \end{pmatrix}$ must lie on $y = mx + c$. This gives conditions leading to the invariant line $y = 0$ (the $x$-axis is mapped to itself).
 
 **Problem 11:** $A$ is an upper triangular matrix with $1$s on the diagonal. This represents a shear
 transformation. For any $n$, $A^n = \begin{pmatrix} 1 & 0 & 2n \\ 0 & 1 & -n \\ 0 & 0 & 1 \end{pmatrix}$, which
@@ -606,9 +606,9 @@ $T = R \cdot E = \dfrac{1}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix
 Area scale factor $= |\det(T)| = |2 - (-2)| = 4$.
 
 **Problem 14:** Characteristic equation: $\lambda^2 - 4\lambda + 3 = 0 \implies \lambda = 1$ or $\lambda = 3$.
-For $\lambda = 1$: $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
-For $\lambda = 3$: $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
-Orthogonality check: $\mathbf{v}_1 \cdot \mathbf{v}_2 = 1 - 1 = 0$. Confirmed.
+For $\lambda = 1$: $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+For $\lambda = 3$: $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+Orthogonality check: $\mathbf{'\{'}v{'\}'}_1 \cdot \mathbf{'\{'}v{'\}'}_2 = 1 - 1 = 0$. Confirmed.
 $A = PDP^{-1}$ where $P = \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}$, $D = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}$.
 
 **Problem 15:** $\det(A) = 1(k - 4) - 2(2 - 2k) + k(4 - k^2) = k - 4 - 4 + 4k + 4k - k^3 = -k^3 + 9k - 8$.

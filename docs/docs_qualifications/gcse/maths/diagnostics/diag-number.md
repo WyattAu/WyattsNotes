@@ -33,10 +33,10 @@ The final price is not $\pounds 45$ because the 20% increase is applied to a sma
 
 (a) $180 = 2^2 \times 3^2 \times 5$. $252 = 2^2 \times 3^2 \times 7$.
 
-(b) $\text{HCF} = 2^2 \times 3^2 = 4 \times 9 = 36$.
-$\text{LCM} = 2^2 \times 3^2 \times 5 \times 7 = 4 \times 9 \times 5 \times 7 = 1260$.
+(b) $\text{'\{'}HCF{'\}'} = 2^2 \times 3^2 = 4 \times 9 = 36$.
+$\text{'\{'}LCM{'\}'} = 2^2 \times 3^2 \times 5 \times 7 = 4 \times 9 \times 5 \times 7 = 1260$.
 
-(c) Time $= \text{LCM}(12, 18, 30)$. $12 = 2^2 \times 3$, $18 = 2 \times 3^2$, $30 = 2 \times 3 \times 5$. $\text{LCM} = 2^2 \times 3^2 \times 5 = 180$ minutes $= 3$ hours. They next all ring together at **3:00 pm**.
+(c) Time $= \text{'\{'}LCM{'\}'}(12, 18, 30)$. $12 = 2^2 \times 3$, $18 = 2 \times 3^2$, $30 = 2 \times 3 \times 5$. $\text{'\{'}LCM{'\}'} = 2^2 \times 3^2 \times 5 = 180$ minutes $= 3$ hours. They next all ring together at **3:00 pm**.
 
 (d) A prime number has exactly two factors: 1 and itself. The number 1 has only one factor (itself). The definition of prime requires exactly two distinct factors, which 1 does not satisfy. Additionally, the Fundamental Theorem of Arithmetic (every integer $\gt 1$ has a unique prime factorisation) would break down if 1 were prime, since $6 = 2 \times 3 = 1 \times 2 \times 3 = 1 \times 1 \times 2 \times 3$ would not have a unique factorisation.
 

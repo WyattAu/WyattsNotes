@@ -29,7 +29,7 @@ seven classes of food are:
 Basal Metabolic Rate (BMR) is the minimum energy required to maintain vital functions at rest. Total
 daily energy expenditure depends on:
 
-$$\mathrm{Total Energy} = \mathrm{BMR} + \mathrm{Physical Activity} + \mathrm{SDA (Specific Dynamic Action)}$$
+$$\mathrm{'\{'}Total Energy{'\}'} = \mathrm{'\{'}BMR{'\}'} + \mathrm{'\{'}Physical Activity{'\}'} + \mathrm{'\{'}SDA (Specific Dynamic Action){'\}'}$$
 
 Average daily energy requirements:
 
@@ -53,9 +53,9 @@ A 65 kg male office worker has a BMR of approximately 7000 kJ/day. His physical 
 <details>
 <summary>Solution</summary>
 
-(a) $\mathrm{Total Energy} = \mathrm{BMR} + \mathrm{Physical Activity} + \mathrm{SDA} = 7000 + 3000 + 1000 = 11\,000 \mathrm{ kJ/day}$
+(a) $\mathrm{'\{'}Total Energy{'\}'} = \mathrm{'\{'}BMR{'\}'} + \mathrm{'\{'}Physical Activity{'\}'} + \mathrm{'\{'}SDA{'\}'} = 7000 + 3000 + 1000 = 11\,000 \mathrm{'\{'} kJ/day{'\}'}$
 
-(b) If physical activity doubles to 6000 kJ/day: $\mathrm{Total Energy} = 7000 + 6000 + 1000 = 14\,000 \mathrm{ kJ/day}$. This is a 27% increase, demonstrating that physical activity is a major component for active individuals.
+(b) If physical activity doubles to 6000 kJ/day: $\mathrm{'\{'}Total Energy{'\}'} = 7000 + 6000 + 1000 = 14\,000 \mathrm{'\{'} kJ/day{'\}'}$. This is a 27% increase, demonstrating that physical activity is a major component for active individuals.
 
 (c) Carbohydrates are the primary energy source for exercise. A high-carbohydrate diet maximises glycogen stores in muscles and the liver, providing readily available energy during prolonged exercise. This spares protein from being broken down for energy, preserving muscle mass. Carbohydrates also yield more energy per unit of oxygen consumed than fats, making them more efficient during intense exercise.
 
@@ -112,7 +112,7 @@ glands, liver, pancreas) secreting enzymes into the tract.
   - **Mucus:** Lubricates food for swallowing
   - **Water:** Dissolves food molecules for taste
 
-$$\mathrm{Starch} \xrightarrow{\mathrm{salivary amylase}} \mathrm{Maltose}$$
+$$\mathrm{'\{'}Starch{'\}'} \xrightarrow{\mathrm{'\{'}salivary amylase{'\}'}} \mathrm{'\{'}Maltose{'\}'}$$
 
 ### The Stomach
 
@@ -123,7 +123,7 @@ $$\mathrm{Starch} \xrightarrow{\mathrm{salivary amylase}} \mathrm{Maltose}$$
     polypeptides
   - **Mucus:** Protects the stomach lining from acid and enzymes
 
-$$\mathrm{Proteins} \xrightarrow{\mathrm{pepsin (pH 2)}} \mathrm{Polypeptides}$$
+$$\mathrm{'\{'}Proteins{'\}'} \xrightarrow{\mathrm{'\{'}pepsin (pH 2){'\}'}} \mathrm{'\{'}Polypeptides{'\}'}$$
 
 The stomach churns food with gastric juice to form **chyme**, a semi-liquid acidic mixture. The
 pyloric sphincter controls the release of chyme into the duodenum.
@@ -271,7 +271,7 @@ water.
 5. Pressure in lungs decreases below atmospheric pressure
 6. Air rushes in
 
-$$P_{\mathrm{lung}} \lt P_{\mathrm{atm}} \implies \mathrm{air flows in}$$
+$$P_{\mathrm{'\{'}lung{'\}'}} \lt P_{\mathrm{'\{'}atm{'\}'}} \implies \mathrm{'\{'}air flows in{'\}'}$$
 
 **Exhalation (expiration) -- at rest (passive):**
 
@@ -282,7 +282,7 @@ $$P_{\mathrm{lung}} \lt P_{\mathrm{atm}} \implies \mathrm{air flows in}$$
 5. Pressure in lungs increases above atmospheric pressure
 6. Air is pushed out
 
-$$P_{\mathrm{lung}} \gt P_{\mathrm{atm}} \implies \mathrm{air flows out}$$
+$$P_{\mathrm{'\{'}lung{'\}'}} \gt P_{\mathrm{'\{'}atm{'\}'}} \implies \mathrm{'\{'}air flows out{'\}'}$$
 
 **Forced exhalation:** Internal intercostal muscles and abdominal muscles contract actively.
 
@@ -300,9 +300,9 @@ $$P_{\mathrm{lung}} \gt P_{\mathrm{atm}} \implies \mathrm{air flows out}$$
 
 **Diffusion of gases:**
 
-$$\mathrm{O}_2 \mathrm{ (alveolar air, } pO_2 \approx 13.3 \mathrm{ kPa)} \to \mathrm{O}_2 \mathrm{ (blood, } pO_2 \approx 5.3 \mathrm{ kPa)}$$
+$$\mathrm{'\{'}O{'\}'}_2 \mathrm{'\{'} (alveolar air, {'\}'} pO_2 \approx 13.3 \mathrm{'\{'} kPa){'\}'} \to \mathrm{'\{'}O{'\}'}_2 \mathrm{'\{'} (blood, {'\}'} pO_2 \approx 5.3 \mathrm{'\{'} kPa){'\}'}$$
 
-$$\mathrm{CO}_2 \mathrm{ (blood, } pCO_2 \approx 6.0 \mathrm{ kPa)} \to \mathrm{CO}_2 \mathrm{ (alveolar air, } pCO_2 \approx 5.3 \mathrm{ kPa)}$$
+$$\mathrm{'\{'}CO{'\}'}_2 \mathrm{'\{'} (blood, {'\}'} pCO_2 \approx 6.0 \mathrm{'\{'} kPa){'\}'} \to \mathrm{'\{'}CO{'\}'}_2 \mathrm{'\{'} (alveolar air, {'\}'} pCO_2 \approx 5.3 \mathrm{'\{'} kPa){'\}'}$$
 
 Oxygen diffuses from alveolar air into the blood; carbon dioxide diffuses from blood into alveolar
 air. Both movements are down their respective partial pressure gradients.
@@ -495,7 +495,7 @@ A hospital has the following blood supplies: 5 units of type A, 3 units of type 
 
 Each haemoglobin molecule can carry up to 4 oxygen molecules:
 
-$$\mathrm{Hb} + 4\mathrm{O}_2 \rightleftharpoons \mathrm{HbO}_8$$
+$$\mathrm{'\{'}Hb{'\}'} + 4\mathrm{'\{'}O{'\}'}_2 \rightleftharpoons \mathrm{'\{'}HbO{'\}'}_8$$
 
 In the lungs (high $pO_2$), oxygen binds to haemoglobin (loading). In the tissues (low $pO_2$),
 oxygen dissociates from haemoglobin (unloading).
@@ -505,7 +505,7 @@ oxygen dissociates from haemoglobin (unloading).
 The oxygen dissociation curve is an S-shaped (sigmoid) curve showing the relationship between the
 partial pressure of oxygen ($pO_2$) and the percentage saturation of haemoglobin.
 
-$$\mathrm{Percentage saturation of Hb vs } pO_2$$
+$$\mathrm{'\{'}Percentage saturation of Hb vs {'\}'} pO_2$$
 
 Key points:
 
@@ -1231,7 +1231,7 @@ If you get this wrong, revise: Transport in Humans -- The Oxygen Dissociation Cu
 <details>
 <summary>Solution</summary>
 
-During exercise, respiration rate increases, producing more CO$_2$ as a waste product. Increased CO$_2$ raises blood $pCO_2$, which lowers blood pH (more H$^+$ ions from carbonic acid: $\mathrm{CO}_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-$). Muscle temperature also rises due to increased metabolic activity.
+During exercise, respiration rate increases, producing more CO$_2$ as a waste product. Increased CO$_2$ raises blood $pCO_2$, which lowers blood pH (more H$^+$ ions from carbonic acid: $\mathrm{'\{'}CO{'\}'}_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-$). Muscle temperature also rises due to increased metabolic activity.
 
 These factors (high $pCO_2$, low pH, high temperature) cause the oxygen dissociation curve to shift to the right (the Bohr effect). A rightward shift means that at any given $pO_2$, haemoglobin has a lower affinity for oxygen and releases more oxygen to the tissues. This ensures that more oxygen is unloaded precisely where and when it is needed most -- the actively respiring muscles.
 
@@ -1312,7 +1312,7 @@ The large intestine is approximately 1.5 metres long. Its primary functions are 
 **Key processes:**
 
 1. **Water reabsorption:** Approximately 90% of remaining water is reabsorbed by osmosis
-2. **Mineral absorption:** $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ are actively absorbed
+2. **Mineral absorption:** $\mathrm{'\{'}Na{'\}'}^+$ and $\mathrm{'\{'}Cl{'\}'}^-$ are actively absorbed
 3. **Vitamin synthesis:** Commensal bacteria synthesise vitamins K and B, which are absorbed
 4. **Mucus secretion:** Goblet cells secrete mucus to lubricate faeces
 5. **Faeces composition:** Undigested fibre, bacteria, water, bile pigments (stercobilin)
@@ -1335,7 +1335,7 @@ The large intestine is approximately 1.5 metres long. Its primary functions are 
 
 ### Partial Pressures and Gas Exchange
 
-| Location                  | $p\mathrm{O}_2$ (kPa) | $p\mathrm{CO}_2$ (kPa) |
+| Location                  | $p\mathrm{'\{'}O{'\}'}_2$ (kPa) | $p\mathrm{'\{'}CO{'\}'}_2$ (kPa) |
 | ------------------------- | -------------------- | ----------------------- |
 | Inspired air              | 21.2                | 0.04                    |
 | Alveolar air              | 13.3                | 5.3                     |
@@ -1347,18 +1347,18 @@ The large intestine is approximately 1.5 metres long. Its primary functions are 
 
 | Factor                | Effect on Curve      | Explanation                                                                                                         |
 | --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Increased $p\mathrm{CO}_2$ | Shifts right (Bohr effect) | Carbonic acid lowers pH; H$^+$ reduces haemoglobin's affinity for $\mathrm{O}_2$                            |
-| Decreased pH          | Shifts right         | H$^+$ ions bind to haemoglobin, reducing its affinity for $\mathrm{O}_2$                                         |
-| Increased temperature | Shifts right         | Higher temperature reduces haemoglobin's affinity for $\mathrm{O}_2$                                              |
-| Fetal haemoglobin     | Shifts left          | Higher affinity for $\mathrm{O}_2$ than adult haemoglobin; allows efficient transfer across the placenta           |
+| Increased $p\mathrm{'\{'}CO{'\}'}_2$ | Shifts right (Bohr effect) | Carbonic acid lowers pH; H$^+$ reduces haemoglobin's affinity for $\mathrm{'\{'}O{'\}'}_2$                            |
+| Decreased pH          | Shifts right         | H$^+$ ions bind to haemoglobin, reducing its affinity for $\mathrm{'\{'}O{'\}'}_2$                                         |
+| Increased temperature | Shifts right         | Higher temperature reduces haemoglobin's affinity for $\mathrm{'\{'}O{'\}'}_2$                                              |
+| Fetal haemoglobin     | Shifts left          | Higher affinity for $\mathrm{'\{'}O{'\}'}_2$ than adult haemoglobin; allows efficient transfer across the placenta           |
 
 ### Carbon Dioxide Transport
 
 | Method                          | Percentage | Description                                                                                                       |
 | ------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------- |
 | Dissolved in plasma             | ~5%        | Small amount dissolves directly in blood plasma                                                                    |
-| Bound to haemoglobin           | ~10-15%    | $\mathrm{CO}_2$ binds to globin chains (NOT the haem group)                                                       |
-| Hydrogen carbonate ($\mathrm{HCO}_3^-$) | ~70-80% | Carbonic anhydrase converts $\mathrm{CO}_2$ to $\mathrm{H}_2\mathrm{CO}_3$, which dissociates to $\mathrm{H}^+$ and $\mathrm{HCO}_3^-$ |
+| Bound to haemoglobin           | ~10-15%    | $\mathrm{'\{'}CO{'\}'}_2$ binds to globin chains (NOT the haem group)                                                       |
+| Hydrogen carbonate ($\mathrm{'\{'}HCO{'\}'}_3^-$) | ~70-80% | Carbonic anhydrase converts $\mathrm{'\{'}CO{'\}'}_2$ to $\mathrm{'\{'}H{'\}'}_2\mathrm{'\{'}CO{'\}'}_3$, which dissociates to $\mathrm{'\{'}H{'\}'}^+$ and $\mathrm{'\{'}HCO{'\}'}_3^-$ |
 
 ---
 
@@ -1395,7 +1395,7 @@ The cardiac cycle is the sequence of events in one complete heartbeat. It consis
 
 ### Cardiac Output
 
-$$\text{Cardiac output} = \text{Heart rate} \times \text{Stroke volume}$$
+$$\text{'\{'}Cardiac output{'\}'} = \text{'\{'}Heart rate{'\}'} \times \text{'\{'}Stroke volume{'\}'}$$
 
 | Component            | Normal Value (at rest)     | During Exercise                                |
 | -------------------- | -------------------------- | ---------------------------------------------- |
@@ -1461,7 +1461,7 @@ $$\text{Cardiac output} = \text{Heart rate} \times \text{Stroke volume}$$
 
 Blood pressure is measured using a sphygmomanometer and is expressed as two values:
 
-$$\text{Blood pressure} = \frac{\text{Systolic pressure}}{\text{Diastolic pressure}} \text{ mmHg}$$
+$$\text{'\{'}Blood pressure{'\}'} = \frac{\text{'\{'}Systolic pressure{'\}'}}{\text{'\{'}Diastolic pressure{'\}'}} \text{'\{'} mmHg{'\}'}$$
 
 | Component            | Description                                                                                                               | Normal Value   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------- |
@@ -1580,11 +1580,11 @@ The mechanism by which glucose is absorbed from the small intestine (and reabsor
 
 The liver converts toxic ammonia (produced by deamination) into less toxic urea, which is transported to the kidneys for excretion:
 
-1. Ammonia ($\mathrm{NH_3}$) combines with CO$_2$ and the amino acid ornithine to form citrulline
+1. Ammonia ($\mathrm{'\{'}NH_3{'\}'}$) combines with CO$_2$ and the amino acid ornithine to form citrulline
 2. Citrulline combines with more ammonia to form arginine
 3. Arginine is broken down by arginase to produce urea and regenerate ornithine (the cycle continues)
 
-$$2\mathrm{NH_3} + \mathrm{CO_2} \rightarrow \mathrm{CO(NH_2)_2} + \mathrm{H_2O}$$
+$$2\mathrm{'\{'}NH_3{'\}'} + \mathrm{'\{'}CO_2{'\}'} \rightarrow \mathrm{'\{'}CO(NH_2)_2{'\}'} + \mathrm{'\{'}H_2O{'\}'}$$
 
 ---
 

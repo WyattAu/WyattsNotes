@@ -71,7 +71,7 @@ energy changes.
 The system is the box and the Earth. Energy is transferred from the chemical store of the person to
 the gravitational potential store of the box.
 
-$$\Delta E_p = mgh = 5 \times 9.8 \times 1.5 = 73.5 \mathrm{ J}$$
+$$\Delta E_p = mgh = 5 \times 9.8 \times 1.5 = 73.5 \mathrm{'\{'} J{'\}'}$$
 
 ### 1.4 Why "Stores and Transfers" Matters
 
@@ -138,7 +138,7 @@ $$mgh = \frac{1}{2}mv^2$$ $$v = \sqrt{2gh}$$
 **Worked Example.** A 0.5 kg ball is dropped from a height of 20 m. Find its speed just before it
 hits the ground (ignore air resistance).
 
-$$v = \sqrt{2 \times 9.8 \times 20} = \sqrt{392} = 19.8 \mathrm{ m/s}$$
+$$v = \sqrt{2 \times 9.8 \times 20} = \sqrt{392} = 19.8 \mathrm{'\{'} m/s{'\}'}$$
 
 ### 2.5 Proof That the Final Speed Is Independent of Mass
 
@@ -161,7 +161,7 @@ the force applied, up to the **limit of proportionality**.
 **Derivation.** The force needed to extend a spring by $e$ is $F = ke$. The average force during
 extension from 0 to $e$ is $\frac{0 + ke}{2} = \frac{1}{2}ke$. The work done (energy stored) is:
 
-$$E_e = \mathrm{average force} \times \mathrm{distance} = \frac{1}{2}ke \times e = \frac{1}{2}ke^2$$
+$$E_e = \mathrm{'\{'}average force{'\}'} \times \mathrm{'\{'}distance{'\}'} = \frac{1}{2}ke \times e = \frac{1}{2}ke^2$$
 
 Alternatively, using calculus (for Higher tier students): the work done is the integral of force
 with respect to displacement:
@@ -189,7 +189,7 @@ $$mgh = \frac{1}{2}ke^2$$
 where $h = e$ (the distance fallen beyond the natural length equals the extension):
 
 $$60 \times 9.8 \times e = \frac{1}{2} \times 50 \times e^2$$ $$588e = 25e^2$$
-$$e = \frac{588}{25} = 23.52 \mathrm{ m}$$
+$$e = \frac{588}{25} = 23.52 \mathrm{'\{'} m{'\}'}$$
 
 The total distance fallen is $15 + 23.52 = 38.52$ m.
 
@@ -198,7 +198,7 @@ The total distance fallen is $15 + 23.52 = 38.52$ m.
 ### 3.1 Definition
 
 The **specific heat capacity** $c$ of a substance is the energy required to change the temperature
-of 1 kg of the substance by $1^{\circ}\mathrm{C}$ (or 1 K).
+of 1 kg of the substance by $1^{\circ}\mathrm{'\{'}C{'\}'}$ (or 1 K).
 
 $$\Delta E = mc\Delta T$$
 
@@ -234,12 +234,12 @@ than inland areas at the same latitude. It is also why water is used as a coolan
 nuclear reactors: it can absorb a great deal of waste heat before its temperature rises to dangerous
 levels.
 
-**Worked Example.** A 2 kW kettle heats 1.5 kg of water from $15^{\circ}\mathrm{C}$ to
-$100^{\circ}\mathrm{C}$. How long does this take?
+**Worked Example.** A 2 kW kettle heats 1.5 kg of water from $15^{\circ}\mathrm{'\{'}C{'\}'}$ to
+$100^{\circ}\mathrm{'\{'}C{'\}'}$. How long does this take?
 
-$$\Delta E = mc\Delta T = 1.5 \times 4200 \times 85 = 535,500 \mathrm{ J}$$
+$$\Delta E = mc\Delta T = 1.5 \times 4200 \times 85 = 535,500 \mathrm{'\{'} J{'\}'}$$
 
-$$t = \frac{\Delta E}{P} = \frac{535500}{2000} = 267.75 \mathrm{ s} \approx 4.5 \mathrm{ minutes}$$
+$$t = \frac{\Delta E}{P} = \frac{535500}{2000} = 267.75 \mathrm{'\{'} s{'\}'} \approx 4.5 \mathrm{'\{'} minutes{'\}'}$$
 
 ### 3.5 Required Practical: Specific Heat Capacity
 
@@ -302,7 +302,7 @@ $$P = \frac{\Delta E}{t}$$
 
 where $P$ is power (watts, W), $\Delta E$ is energy transferred (J), and $t$ is time (s).
 
-One watt equals one joule per second: $1 \mathrm{ W} = 1 \mathrm{ J/s}$.
+One watt equals one joule per second: $1 \mathrm{'\{'} W{'\}'} = 1 \mathrm{'\{'} J/s{'\}'}$.
 
 ### 4.2 Power and Force
 
@@ -320,7 +320,7 @@ to the velocity, then $P = Fv\cos\theta$.
 When a vehicle travels at constant speed, the driving force equals the resistive force (friction
 plus air resistance). The engine's power output is:
 
-$$P = F_{\mathrm{drive}} \times v = F_{\mathrm{resistive}} \times v$$
+$$P = F_{\mathrm{'\{'}drive{'\}'}} \times v = F_{\mathrm{'\{'}resistive{'\}'}} \times v$$
 
 This means that for a given engine power, doubling the speed halves the available driving force
 (because $F = P/v$). This is why accelerating from 60 mph to 120 mph requires far more than double
@@ -329,7 +329,7 @@ the power -- the resistive force (especially air resistance) increases with spee
 **Worked Example.** A car engine provides a driving force of 3000 N at a speed of 25 m/s. Calculate
 the power output.
 
-$$P = Fv = 3000 \times 25 = 75000 \mathrm{ W} = 75 \mathrm{ kW}$$
+$$P = Fv = 3000 \times 25 = 75000 \mathrm{'\{'} W{'\}'} = 75 \mathrm{'\{'} kW{'\}'}$$
 
 ### 4.4 Human Power Output
 
@@ -376,7 +376,7 @@ transport is limited.
 
 In a fossil fuel power station:
 
-$$\mathrm{Chemical} \to \mathrm{Thermal} \to \mathrm{Kinetic} \to \mathrm{Electrical}$$
+$$\mathrm{'\{'}Chemical{'\}'} \to \mathrm{'\{'}Thermal{'\}'} \to \mathrm{'\{'}Kinetic{'\}'} \to \mathrm{'\{'}Electrical{'\}'}$$
 
 - Fuel is burned to heat water, producing steam (chemical to thermal)
 - Steam drives a turbine (thermal to kinetic)
@@ -412,16 +412,16 @@ millions of tonnes.
 
 **Efficiency** is the ratio of useful energy output to total energy input.
 
-$$\mathrm{Efficiency} = \frac{\mathrm{useful energy output}}{\mathrm{total energy input}} \times 100\%$$
+$$\mathrm{'\{'}Efficiency{'\}'} = \frac{\mathrm{'\{'}useful energy output{'\}'}}{\mathrm{'\{'}total energy input{'\}'}} \times 100\%$$
 
 Equivalently, since power is energy per unit time:
 
-$$\mathrm{Efficiency} = \frac{\mathrm{useful power output}}{\mathrm{total power input}} \times 100\%$$
+$$\mathrm{'\{'}Efficiency{'\}'} = \frac{\mathrm{'\{'}useful power output{'\}'}}{\mathrm{'\{'}total power input{'\}'}} \times 100\%$$
 
 **Worked Example.** A light bulb transfers 60 J of energy per second. 6 J per second is transferred
 as light. Calculate the efficiency.
 
-$$\mathrm{Efficiency} = \frac{6}{60} \times 100\% = 10\%$$
+$$\mathrm{'\{'}Efficiency{'\}'} = \frac{6}{60} \times 100\% = 10\%$$
 
 :::warning
 No machine can be 100% efficient. Some energy is always dissipated (transferred to
@@ -563,7 +563,7 @@ for:
 - Processing food (thermic effect of food): about 10%
 
 The body converts chemical energy in food (carbohydrates, fats, proteins) into other forms: kinetic
-energy (movement), thermal energy (maintaining body temperature at $37^{\circ}\mathrm{C}$), and
+energy (movement), thermal energy (maintaining body temperature at $37^{\circ}\mathrm{'\{'}C{'\}'}$), and
 potential energy (climbing stairs, lifting objects).
 
 ### 8.2 Energy Costs in the Home
@@ -627,7 +627,7 @@ the electrical energy arrow would be 40% as wide as the input arrow, and the was
 2. A 50 kg student climbs a flight of stairs 4 m high in 6 seconds. Calculate the gravitational
    potential energy gained and the power developed.
 
-3. A 500 g block of aluminium is heated from $20^{\circ}\mathrm{C}$ to $120^{\circ}\mathrm{C}$ by a 200
+3. A 500 g block of aluminium is heated from $20^{\circ}\mathrm{'\{'}C{'\}'}$ to $120^{\circ}\mathrm{'\{'}C{'\}'}$ by a 200
    W heater. How long does this take? (Specific heat capacity of aluminium = 900 J/(kg
    $^{\circ}$C).)
 
@@ -666,8 +666,8 @@ the electrical energy arrow would be 40% as wide as the input arrow, and the was
     kinetic energy is transferred to the brakes, and the brakes have a total mass of 15 kg and
     specific heat capacity 460 J/(kg $^{\circ}$C), calculate the temperature rise of the brakes.
 
-15. Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\mathrm{C}$ to water at
-    $50^{\circ}\mathrm{C}$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific latent
+15. Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\mathrm{'\{'}C{'\}'}$ to water at
+    $50^{\circ}\mathrm{'\{'}C{'\}'}$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific latent
     heat of fusion of ice = $3.34 \times 10^5$ J/kg, specific heat capacity of water = 4200 J/(kg
     $^{\circ}$C).)
 
@@ -676,23 +676,23 @@ the electrical energy arrow would be 40% as wide as the input arrow, and the was
 A common exam question involves calculating the energy needed to change both the temperature and the
 state of a substance. The key is to break the process into distinct stages and add the energies.
 
-**Question:** Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\mathrm{C}$ to
-water at $50^{\circ}\mathrm{C}$.
+**Question:** Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\mathrm{'\{'}C{'\}'}$ to
+water at $50^{\circ}\mathrm{'\{'}C{'\}'}$.
 
-**Stage 1:** Heat ice from $-10^{\circ}\mathrm{C}$ to $0^{\circ}\mathrm{C}$ (no change of state).
+**Stage 1:** Heat ice from $-10^{\circ}\mathrm{'\{'}C{'\}'}$ to $0^{\circ}\mathrm{'\{'}C{'\}'}$ (no change of state).
 
-$$E_1 = mc_{\mathrm{ice}}\Delta T = 0.5 \times 2100 \times 10 = 10500 \mathrm{ J}$$
+$$E_1 = mc_{\mathrm{'\{'}ice{'\}'}}\Delta T = 0.5 \times 2100 \times 10 = 10500 \mathrm{'\{'} J{'\}'}$$
 
-**Stage 2:** Melt ice at $0^{\circ}\mathrm{C}$ (change of state, temperature stays at
-$0^{\circ}\mathrm{C}$).
+**Stage 2:** Melt ice at $0^{\circ}\mathrm{'\{'}C{'\}'}$ (change of state, temperature stays at
+$0^{\circ}\mathrm{'\{'}C{'\}'}$).
 
-$$E_2 = mL_f = 0.5 \times 3.34 \times 10^5 = 167000 \mathrm{ J}$$
+$$E_2 = mL_f = 0.5 \times 3.34 \times 10^5 = 167000 \mathrm{'\{'} J{'\}'}$$
 
-**Stage 3:** Heat water from $0^{\circ}\mathrm{C}$ to $50^{\circ}\mathrm{C}$.
+**Stage 3:** Heat water from $0^{\circ}\mathrm{'\{'}C{'\}'}$ to $50^{\circ}\mathrm{'\{'}C{'\}'}$.
 
-$$E_3 = mc_{\mathrm{water}}\Delta T = 0.5 \times 4200 \times 50 = 105000 \mathrm{ J}$$
+$$E_3 = mc_{\mathrm{'\{'}water{'\}'}}\Delta T = 0.5 \times 4200 \times 50 = 105000 \mathrm{'\{'} J{'\}'}$$
 
-$$E_{\mathrm{total}} = 10500 + 167000 + 105000 = 282500 \mathrm{ J} \approx 283 \mathrm{ kJ}$$
+$$E_{\mathrm{'\{'}total{'\}'}} = 10500 + 167000 + 105000 = 282500 \mathrm{'\{'} J{'\}'} \approx 283 \mathrm{'\{'} kJ{'\}'}$$
 
 Notice that the melting stage (Stage 2) requires by far the most energy -- over half the total. This
 is a common pattern: changing state typically requires more energy than changing temperature by the
@@ -715,11 +715,11 @@ follows directly from the work-energy theorem when only conservative forces are 
 
 Starting from the work-energy theorem:
 
-$$W_{\mathrm{net}} = \Delta E_k$$
+$$W_{\mathrm{'\{'}net{'\}'}} = \Delta E_k$$
 
 If only gravity does work (no friction, no applied forces), then
-$W_{\mathrm{net}} = W_{\mathrm{gravity}}$. The work done by gravity is
-$W_{\mathrm{gravity}} = -\Delta E_p$ (negative because when the object moves down, $\Delta E_p$ is
+$W_{\mathrm{'\{'}net{'\}'}} = W_{\mathrm{'\{'}gravity{'\}'}}$. The work done by gravity is
+$W_{\mathrm{'\{'}gravity{'\}'}} = -\Delta E_p$ (negative because when the object moves down, $\Delta E_p$ is
 negative and gravity does positive work).
 
 $$-\Delta E_p = \Delta E_k$$
@@ -735,17 +735,17 @@ present, the total mechanical energy decreases by an amount equal to the work do
 ## 13. Worked Example: Power on an Incline
 
 A cyclist of mass 70 kg (including the bicycle) travels up a hill inclined at $5^{\circ}$ to the
-horizontal at a constant speed of $6 \mathrm{ m/s}$. The total resistive force (friction plus air
+horizontal at a constant speed of $6 \mathrm{'\{'} m/s{'\}'}$. The total resistive force (friction plus air
 resistance) is 25 N. Calculate the power the cyclist must develop.
 
 At constant speed, the driving force equals the component of weight down the slope plus the
 resistive force:
 
-$$F_{\mathrm{drive}} = mg\sin\theta + F_{\mathrm{resistive}} = 70 \times 9.8 \times \sin 5^{\circ} + 25$$
+$$F_{\mathrm{'\{'}drive{'\}'}} = mg\sin\theta + F_{\mathrm{'\{'}resistive{'\}'}} = 70 \times 9.8 \times \sin 5^{\circ} + 25$$
 
-$$= 70 \times 9.8 \times 0.0872 + 25 = 59.8 + 25 = 84.8 \mathrm{ N}$$
+$$= 70 \times 9.8 \times 0.0872 + 25 = 59.8 + 25 = 84.8 \mathrm{'\{'} N{'\}'}$$
 
-$$P = Fv = 84.8 \times 6 = 508.8 \mathrm{ W}$$
+$$P = Fv = 84.8 \times 6 = 508.8 \mathrm{'\{'} W{'\}'}$$
 
 This is roughly 500 W, which is elite cyclist-level output. It illustrates why cycling uphill is so
 much harder than cycling on the flat: the additional force needed to overcome gravity at even a
@@ -756,13 +756,13 @@ modest gradient significantly increases the required power.
 A natural gas power station burns fuel with energy density 55 MJ/kg at a rate of 8 kg/s. The overall
 efficiency is 42%. Calculate the useful power output and the rate of energy wasted per second.
 
-$$P_{\mathrm{input}} = 55 \times 10^6 \times 8 = 4.4 \times 10^8 \mathrm{ W} = 440 \mathrm{ MW}$$
+$$P_{\mathrm{'\{'}input{'\}'}} = 55 \times 10^6 \times 8 = 4.4 \times 10^8 \mathrm{'\{'} W{'\}'} = 440 \mathrm{'\{'} MW{'\}'}$$
 
-$$P_{\mathrm{useful}} = 0.42 \times 440 = 184.8 \mathrm{ MW}$$
+$$P_{\mathrm{'\{'}useful{'\}'}} = 0.42 \times 440 = 184.8 \mathrm{'\{'} MW{'\}'}$$
 
-$$P_{\mathrm{wasted}} = 440 - 184.8 = 255.2 \mathrm{ MW}$$
+$$P_{\mathrm{'\{'}wasted{'\}'}} = 440 - 184.8 = 255.2 \mathrm{'\{'} MW{'\}'}$$
 
-Over one hour, the wasted energy is $255.2 \times 3600 = 918720 \mathrm{ MJ}$, enough to heat over
+Over one hour, the wasted energy is $255.2 \times 3600 = 918720 \mathrm{'\{'} MJ{'\}'}$, enough to heat over
 20000 homes. This highlights the enormous scale of energy waste in fossil fuel power stations and
 the importance of improving efficiency.
 
@@ -785,8 +785,8 @@ input goes directly into kinetic energy, producing a rapid temperature rise.
 
 ## 16. Practice Questions (Additional)
 
-16. A 200 g copper block at $150^{\circ}\mathrm{C}$ is dropped into 300 g of water at
-    $20^{\circ}\mathrm{C}$. Assuming no heat loss to the surroundings, find the final temperature.
+16. A 200 g copper block at $150^{\circ}\mathrm{'\{'}C{'\}'}$ is dropped into 300 g of water at
+    $20^{\circ}\mathrm{'\{'}C{'\}'}$. Assuming no heat loss to the surroundings, find the final temperature.
     (Specific heat capacity of copper = 390 J/(kg $^{\circ}$C), specific heat capacity of water =
     4200 J/(kg $^{\circ}$C).)
 
@@ -797,8 +797,8 @@ input goes directly into kinetic energy, producing a rapid temperature rise.
     vertically upward and then falls back down. Account for why the ball does not return to its
     original height.
 
-19. A student designs a solar water heater. The panel has an area of $2.5 \mathrm{ m}^2$ and receives
-    solar radiation at $800 \mathrm{ W/m}^2$. The efficiency of the panel is 35%. The water flows
+19. A student designs a solar water heater. The panel has an area of $2.5 \mathrm{'\{'} m{'\}'}^2$ and receives
+    solar radiation at $800 \mathrm{'\{'} W/m{'\}'}^2$. The efficiency of the panel is 35%. The water flows
     through the panel at a rate of 0.02 kg/s. Calculate the temperature rise of the water as it
     passes through the panel.
 
@@ -811,73 +811,73 @@ input goes directly into kinetic energy, producing a rapid temperature rise.
 <details>
 <summary>Question 1: Gravitational potential energy</summary>
 
-A $60 \mathrm{ kg}$ climber ascends a $15 \mathrm{ m}$ cliff. Calculate the change in gravitational potential energy. Take $g = 9.8 \mathrm{ N/kg}$.
+A $60 \mathrm{'\{'} kg{'\}'}$ climber ascends a $15 \mathrm{'\{'} m{'\}'}$ cliff. Calculate the change in gravitational potential energy. Take $g = 9.8 \mathrm{'\{'} N/kg{'\}'}$.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\Delta E_p = mgh = 60 \times 9.8 \times 15 = 8820 \mathrm{ J}$.
+$\Delta E_p = mgh = 60 \times 9.8 \times 15 = 8820 \mathrm{'\{'} J{'\}'}$.
 
 </details>
 
 <details>
 <summary>Question 2: Kinetic energy and speed</summary>
 
-A car of mass $800 \mathrm{ kg}$ is travelling at $20 \mathrm{ m/s}$. Calculate its kinetic energy. If the brakes apply a force of $4000 \mathrm{ N}$, calculate the stopping distance.
+A car of mass $800 \mathrm{'\{'} kg{'\}'}$ is travelling at $20 \mathrm{'\{'} m/s{'\}'}$. Calculate its kinetic energy. If the brakes apply a force of $4000 \mathrm{'\{'} N{'\}'}$, calculate the stopping distance.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$E_k = \frac{1}{2}mv^2 = 0.5 \times 800 \times 400 = 160,000 \mathrm{ J}$.
+$E_k = \frac{1}{2}mv^2 = 0.5 \times 800 \times 400 = 160,000 \mathrm{'\{'} J{'\}'}$.
 
-Work done by brakes = $F \times d = E_k$: $4000 \times d = 160,000$, $d = 40 \mathrm{ m}$.
+Work done by brakes = $F \times d = E_k$: $4000 \times d = 160,000$, $d = 40 \mathrm{'\{'} m{'\}'}$.
 
 </details>
 
 <details>
 <summary>Question 3: Conservation of energy on a roller coaster</summary>
 
-A roller coaster car starts from rest at the top of a hill $30 \mathrm{ m}$ high. Calculate its speed at the bottom of the hill, assuming no energy is lost to friction.
+A roller coaster car starts from rest at the top of a hill $30 \mathrm{'\{'} m{'\}'}$ high. Calculate its speed at the bottom of the hill, assuming no energy is lost to friction.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$mgh = \frac{1}{2}mv^2$, so $v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 30} = \sqrt{588} = 24.2 \mathrm{ m/s}$.
+$mgh = \frac{1}{2}mv^2$, so $v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 30} = \sqrt{588} = 24.2 \mathrm{'\{'} m/s{'\}'}$.
 
 </details>
 
 <details>
 <summary>Question 4: Work done and power</summary>
 
-A motor lifts a $200 \mathrm{ kg}$ load through a height of $8 \mathrm{ m}$ in $10 \mathrm{ s}$. Calculate (a) the work done and (b) the power of the motor.
+A motor lifts a $200 \mathrm{'\{'} kg{'\}'}$ load through a height of $8 \mathrm{'\{'} m{'\}'}$ in $10 \mathrm{'\{'} s{'\}'}$. Calculate (a) the work done and (b) the power of the motor.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) Work $= F \times d = mg \times h = 200 \times 9.8 \times 8 = 15,680 \mathrm{ J}$.
+(a) Work $= F \times d = mg \times h = 200 \times 9.8 \times 8 = 15,680 \mathrm{'\{'} J{'\}'}$.
 
-(b) Power $= W/t = 15,680/10 = 1568 \mathrm{ W}$.
+(b) Power $= W/t = 15,680/10 = 1568 \mathrm{'\{'} W{'\}'}$.
 
 </details>
 
 <details>
 <summary>Question 5: Specific heat capacity</summary>
 
-$2.0 \mathrm{ kg}$ of water is heated from $20^\circ\mathrm{C}$ to $80^\circ\mathrm{C}$. The specific heat capacity of water is $4200 \mathrm{ J/(kg\cdot^\circ C)}$. Calculate the energy required.
+$2.0 \mathrm{'\{'} kg{'\}'}$ of water is heated from $20^\circ\mathrm{'\{'}C{'\}'}$ to $80^\circ\mathrm{'\{'}C{'\}'}$. The specific heat capacity of water is $4200 \mathrm{'\{'} J/(kg\cdot^\circ C){'\}'}$. Calculate the energy required.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\Delta E = mc\Delta T = 2.0 \times 4200 \times (80 - 20) = 2.0 \times 4200 \times 60 = 504,000 \mathrm{ J} = 504 \mathrm{ kJ}$.
+$\Delta E = mc\Delta T = 2.0 \times 4200 \times (80 - 20) = 2.0 \times 4200 \times 60 = 504,000 \mathrm{'\{'} J{'\}'} = 504 \mathrm{'\{'} kJ{'\}'}$.
 
 </details>

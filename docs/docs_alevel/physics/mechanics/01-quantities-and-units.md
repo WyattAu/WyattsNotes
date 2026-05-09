@@ -51,29 +51,29 @@ A derived unit is obtained by combining base units according to the physical rel
 the dimensions of a quantity using square brackets.
 
 **Definition.** The **dimension** of a physical quantity $Q$, written $[Q]$, is its expression in
-terms of the base dimensions $\mathsf{M}$ (mass), $\mathsf{L}$ (length), $\mathsf{T}$ (time),
-$\mathsf{I}$ (current), $\mathsf{\Theta}$ (temperature), $\mathsf{N}$ (amount of substance),
-$\mathsf{J}$ (luminous intensity).
+terms of the base dimensions $\mathsf{'\{'}M{'\}'}$ (mass), $\mathsf{'\{'}L{'\}'}$ (length), $\mathsf{'\{'}T{'\}'}$ (time),
+$\mathsf{'\{'}I{'\}'}$ (current), $\mathsf{'\{'}\Theta{'\}'}$ (temperature), $\mathsf{'\{'}N{'\}'}$ (amount of substance),
+$\mathsf{'\{'}J{'\}'}$ (luminous intensity).
 
 **Examples.**
 
-- Velocity: $[v] = \frac{[s]}{[t]} = \mathsf{L}\mathsf{T}^{-1}$
-- Acceleration: $[a] = \frac{[v]}{[t]} = \mathsf{L}\mathsf{T}^{-2}$
-- Force (from $F = ma$): $[F] = \mathsf{M}\mathsf{L}\mathsf{T}^{-2}$
-- Pressure (from $P = F/A$): $[P] = \mathsf{M}\mathsf{L}^{-1}\mathsf{T}^{-2}$
-- Energy (from $W = Fd$): $[E] = \mathsf{M}\mathsf{L}^{2}\mathsf{T}^{-2}$
+- Velocity: $[v] = \frac{[s]}{[t]} = \mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1}$
+- Acceleration: $[a] = \frac{[v]}{[t]} = \mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2}$
+- Force (from $F = ma$): $[F] = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2}$
+- Pressure (from $P = F/A$): $[P] = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{-1}\mathsf{'\{'}T{'\}'}^{-2}$
+- Energy (from $W = Fd$): $[E] = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{2}\mathsf{'\{'}T{'\}'}^{-2}$
 
 Some derived units have special names:
 
 | Derived Quantity | Name    | Symbol   | In Base Units                                   |
 | ---------------- | ------- | -------- | ----------------------------------------------- |
-| Force            | newton  | N        | $\mathrm{kg m s}^{-2}$                          |
-| Energy           | joule   | J        | $\mathrm{kg m}^2\mathrm{s}^{-2}$                |
-| Power            | watt    | W        | $\mathrm{kg m}^2\mathrm{s}^{-3}$                |
-| Pressure         | pascal  | Pa       | $\mathrm{kg m}^{-1}\mathrm{s}^{-2}$             |
-| Charge           | coulomb | C        | $\mathrm{A s}$                                  |
-| Voltage          | volt    | V        | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-1}$ |
-| Resistance       | ohm     | $\Omega$ | $\mathrm{kg m}^2\mathrm{s}^{-3}\mathrm{A}^{-2}$ |
+| Force            | newton  | N        | $\mathrm{'\{'}kg m s{'\}'}^{-2}$                          |
+| Energy           | joule   | J        | $\mathrm{'\{'}kg m{'\}'}^2\mathrm{'\{'}s{'\}'}^{-2}$                |
+| Power            | watt    | W        | $\mathrm{'\{'}kg m{'\}'}^2\mathrm{'\{'}s{'\}'}^{-3}$                |
+| Pressure         | pascal  | Pa       | $\mathrm{'\{'}kg m{'\}'}^{-1}\mathrm{'\{'}s{'\}'}^{-2}$             |
+| Charge           | coulomb | C        | $\mathrm{'\{'}A s{'\}'}$                                  |
+| Voltage          | volt    | V        | $\mathrm{'\{'}kg m{'\}'}^2\mathrm{'\{'}s{'\}'}^{-3}\mathrm{'\{'}A{'\}'}^{-1}$ |
+| Resistance       | ohm     | $\Omega$ | $\mathrm{'\{'}kg m{'\}'}^2\mathrm{'\{'}s{'\}'}^{-3}\mathrm{'\{'}A{'\}'}^{-2}$ |
 
 ## 2. Dimensional Analysis
 
@@ -88,11 +88,11 @@ balance, the equation is certainly wrong. If they do balance, the equation may s
 
 We prove that $v^2 = u^2 + 2as$ is dimensionally valid.
 
-- $[v^2] = (\mathsf{L}\mathsf{T}^{-1})^2 = \mathsf{L}^2\mathsf{T}^{-2}$
-- $[u^2] = (\mathsf{L}\mathsf{T}^{-1})^2 = \mathsf{L}^2\mathsf{T}^{-2}$
-- $[2as] = [\mathsf{L}\mathsf{T}^{-2}][\mathsf{L}] = \mathsf{L}^2\mathsf{T}^{-2}$
+- $[v^2] = (\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1})^2 = \mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$
+- $[u^2] = (\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1})^2 = \mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$
+- $[2as] = [\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2}][\mathsf{'\{'}L{'\}'}] = \mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$
 
-Since $[v^2] = [u^2] = [2as] = \mathsf{L}^2\mathsf{T}^{-2}$, the equation is dimensionally
+Since $[v^2] = [u^2] = [2as] = \mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$, the equation is dimensionally
 homogeneous. $\square$
 
 ### Determining the Form of an Equation
@@ -104,14 +104,14 @@ $$T = k \cdot l^a \cdot g^b$$
 
 where $k$ is a dimensionless constant. By dimensional homogeneity:
 
-$$\mathsf{T} = \mathsf{L}^a \cdot (\mathsf{L}\mathsf{T}^{-2})^b = \mathsf{L}^{a+b} \cdot \mathsf{T}^{-2b}$$
+$$\mathsf{'\{'}T{'\}'} = \mathsf{'\{'}L{'\}'}^a \cdot (\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2})^b = \mathsf{'\{'}L{'\}'}^{a+b} \cdot \mathsf{'\{'}T{'\}'}^{-2b}$$
 
 Equating powers:
 
 $$
 \begin{aligned}
-\mathsf{T}:&\quad 1 = -2b \implies b = -\frac{1}{2} \\[4pt]
-\mathsf{L}:&\quad 0 = a + b \implies a = \frac{1}{2}
+\mathsf{'\{'}T{'\}'}:&\quad 1 = -2b \implies b = -\frac{1}{2} \\[4pt]
+\mathsf{'\{'}L{'\}'}:&\quad 0 = a + b \implies a = \frac{1}{2}
 \end{aligned}
 $$
 
@@ -149,17 +149,17 @@ physical quantity that has both magnitude and direction.
 ### Vector Operations
 
 **Addition.** Vectors are added using the triangle rule or the parallelogram rule. Given vectors
-$\mathbf{a}$ and $\mathbf{b}$, the resultant $\mathbf{R} = \mathbf{a} + \mathbf{b}$ is found by
-placing the tail of $\mathbf{b}$ at the head of $\mathbf{a}$.
+$\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$, the resultant $\mathbf{'\{'}R{'\}'} = \mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'}$ is found by
+placing the tail of $\mathbf{'\{'}b{'\}'}$ at the head of $\mathbf{'\{'}a{'\}'}$.
 
-**Resolving.** Any vector $\mathbf{F}$ can be resolved into perpendicular components. If
-$\mathbf{F}$ makes an angle $\theta$ with the horizontal:
+**Resolving.** Any vector $\mathbf{'\{'}F{'\}'}$ can be resolved into perpendicular components. If
+$\mathbf{'\{'}F{'\}'}$ makes an angle $\theta$ with the horizontal:
 
 $$F_x = F\cos\theta, \qquad F_y = F\sin\theta$$
 
 **Magnitude.** Given components $F_x$ and $F_y$:
 
-$$|\mathbf{F}| = \sqrt{F_x^2 + F_y^2}$$
+$$|\mathbf{'\{'}F{'\}'}| = \sqrt{F_x^2 + F_y^2}$$
 
 **Direction.** The angle with the horizontal is $\theta = \arctan\left(\frac{F_y}{F_x}\right)$.
 
@@ -240,10 +240,10 @@ If $z = x^n$, then:
 
 $$\frac{\Delta z}{z} = |n| \cdot \frac{\Delta x}{x}$$
 
-**Derivation.** Write $z = \underbrace{x \cdot x \cdots x}_{n \mathrm{ times}}$. Applying the
+**Derivation.** Write $z = \underbrace{x \cdot x \cdots x}_{n \mathrm{'\{'} times{'\}'}}$. Applying the
 multiplication rule repeatedly:
 
-$$\frac{\Delta z}{z} = \underbrace{\frac{\Delta x}{x} + \frac{\Delta x}{x} + \cdots + \frac{\Delta x}{x}}_{n \mathrm{ terms}} = n \cdot \frac{\Delta x}{x}$$
+$$\frac{\Delta z}{z} = \underbrace{\frac{\Delta x}{x} + \frac{\Delta x}{x} + \cdots + \frac{\Delta x}{x}}_{n \mathrm{'\{'} terms{'\}'}} = n \cdot \frac{\Delta x}{x}$$
 
 For negative or fractional powers, the result generalises via logarithmic differentiation (see
 [01-wave-properties](../waves/01-wave-properties.md) for the general propagation of error formula).
@@ -271,7 +271,7 @@ and the uncertainty should be quoted to at most 2 significant figures.
 trailing zero implies precision we do not have.
 
 :::tip
-Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{ m s}^{-2}$, write $9.8 \pm 0.2$ m
+Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{'\{'} m s{'\}'}^{-2}$, write $9.8 \pm 0.2$ m
 s$^{-2}$ (round the uncertainty to 1 s.f. and match the result). This is what examiners expect.
 :::
 
@@ -297,7 +297,7 @@ the error bars).
 
 The uncertainty in the gradient is:
 
-$$\Delta m = \frac{|m_{\mathrm{best}} - m_{\mathrm{worst}}|}{2}$$
+$$\Delta m = \frac{|m_{\mathrm{'\{'}best{'\}'}} - m_{\mathrm{'\{'}worst{'\}'}}|}{2}$$
 
 A similar procedure applies to the $y$-intercept.
 
@@ -320,9 +320,9 @@ $2.07 - 2.03 = 0.04$ cm, so $\Delta d = 0.02$ cm. Result: $d = 2.05 \pm 0.02$ cm
 The kinetic energy of a particle is given by $E_k = \frac{1}{2}mv^2$. Show that this expression is dimensionally consistent with the definition of work $W = Fd$.
 
 **Answer.**
-$[E_k] = [\mathrm{mass}][\mathrm{velocity}]^2 = \mathsf{M}(\mathsf{L}\mathsf{T}^{-1})^2 = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
+$[E_k] = [\mathrm{'\{'}mass{'\}'}][\mathrm{'\{'}velocity{'\}'}]^2 = \mathsf{'\{'}M{'\}'}(\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1})^2 = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$.
 Meanwhile
-$[W] = [F][d] = (\mathsf{M}\mathsf{L}\mathsf{T}^{-2})(\mathsf{L}) = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
+$[W] = [F][d] = (\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2})(\mathsf{'\{'}L{'\}'}) = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$.
 The dimensions match. $\square$
 
 <b>If you get this wrong, revise:</b> [Derived Units](#1-physical-quantities-and-the-si-system)
@@ -347,9 +347,9 @@ Result: $W = 41.4 \pm 1.6$ J (3.9% uncertainty).
 <summary>Problem 4</summary>
 Use dimensional analysis to show that the expression $v = \sqrt{\frac{2\Delta E}{m}}$ is dimensionally valid, where $\Delta E$ is energy and $m$ is mass.
 
-**Answer.** $[v] = \mathsf{L}\mathsf{T}^{-1}$.
-$[\Delta E/m] = \frac{\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}}{\mathsf{M}} = \mathsf{L}^2\mathsf{T}^{-2}$.
-$[\sqrt{2\Delta E/m}] = (\mathsf{L}^2\mathsf{T}^{-2})^{1/2} = \mathsf{L}\mathsf{T}^{-1} = [v]$.
+**Answer.** $[v] = \mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1}$.
+$[\Delta E/m] = \frac{\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}}{\mathsf{'\{'}M{'\}'}} = \mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$.
+$[\sqrt{2\Delta E/m}] = (\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2})^{1/2} = \mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1} = [v]$.
 $\square$
 
 <b>If you get this wrong, revise:</b> [Dimensional Analysis](#2-dimensional-analysis)
@@ -374,11 +374,11 @@ $\Delta\rho = 6.63 \times 0.0907 = 0.60$ g cm$^{-3}$. Result: $\rho = 6.6 \pm 0.
 
 <details>
 <summary>Problem 6</summary>
-Two vectors are given: $\mathbf{A} = 3\mathbf{i} + 4\mathbf{j}$ N and $\mathbf{B} = -2\mathbf{i} + 5\mathbf{j}$ N. Find the magnitude and direction of $\mathbf{A} + \mathbf{B}$.
+Two vectors are given: $\mathbf{'\{'}A{'\}'} = 3\mathbf{'\{'}i{'\}'} + 4\mathbf{'\{'}j{'\}'}$ N and $\mathbf{'\{'}B{'\}'} = -2\mathbf{'\{'}i{'\}'} + 5\mathbf{'\{'}j{'\}'}$ N. Find the magnitude and direction of $\mathbf{'\{'}A{'\}'} + \mathbf{'\{'}B{'\}'}$.
 
 **Answer.**
-$\mathbf{A} + \mathbf{B} = (3-2)\mathbf{i} + (4+5)\mathbf{j} = \mathbf{i} + 9\mathbf{j}$. Magnitude:
-$|\mathbf{A}+\mathbf{B}| = \sqrt{1^2 + 9^2} = \sqrt{82} = 9.06$ N. Direction:
+$\mathbf{'\{'}A{'\}'} + \mathbf{'\{'}B{'\}'} = (3-2)\mathbf{'\{'}i{'\}'} + (4+5)\mathbf{'\{'}j{'\}'} = \mathbf{'\{'}i{'\}'} + 9\mathbf{'\{'}j{'\}'}$. Magnitude:
+$|\mathbf{'\{'}A{'\}'}+\mathbf{'\{'}B{'\}'}| = \sqrt{1^2 + 9^2} = \sqrt{82} = 9.06$ N. Direction:
 $\theta = \arctan(9/1) = 83.7^\circ$ above the positive $x$-axis.
 
 <b>If you get this wrong, revise:</b> [Vector Operations](#4-scalars-and-vectors)
@@ -389,11 +389,11 @@ $\theta = \arctan(9/1) = 83.7^\circ$ above the positive $x$-axis.
 <summary>Problem 7</summary>
 A student proposes the formula for the period of a mass on a spring: $T = 2\pi\sqrt{\frac{k}{m}}$, where $k$ is the spring constant and $m$ is the mass. Use dimensional analysis to show this formula is incorrect, and find the correct form.
 
-**Answer.** $[T] = \mathsf{T}$.
-$[k/m] = \frac{[\mathrm{force}]/[\mathrm{displacement}]}{[\mathrm{mass}]} = \frac{\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}}{\mathsf{M}} = \mathsf{T}^{-2}$.
-So $[\sqrt{k/m}] = \mathsf{T}^{-1} \neq \mathsf{T}$. The formula is dimensionally wrong. The correct
+**Answer.** $[T] = \mathsf{'\{'}T{'\}'}$.
+$[k/m] = \frac{[\mathrm{'\{'}force{'\}'}]/[\mathrm{'\{'}displacement{'\}'}]}{[\mathrm{'\{'}mass{'\}'}]} = \frac{\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2}/\mathsf{'\{'}L{'\}'}}{\mathsf{'\{'}M{'\}'}} = \mathsf{'\{'}T{'\}'}^{-2}$.
+So $[\sqrt{k/m}] = \mathsf{'\{'}T{'\}'}^{-1} \neq \mathsf{'\{'}T{'\}'}$. The formula is dimensionally wrong. The correct
 form is $T = 2\pi\sqrt{\frac{m}{k}}$, which gives
-$[\sqrt{m/k}] = \sqrt{\frac{\mathsf{M}}{\mathsf{T}^{-2}}} = \mathsf{T}$. $\square$
+$[\sqrt{m/k}] = \sqrt{\frac{\mathsf{'\{'}M{'\}'}}{\mathsf{'\{'}T{'\}'}^{-2}}} = \mathsf{'\{'}T{'\}'}$. $\square$
 
 <b>If you get this wrong, revise:</b>
 [Determining the Form of an Equation](#determining-the-form-of-an-equation)
@@ -441,10 +441,10 @@ varies unpredictably from trial to trial.
 <summary>Problem 11</summary>
 The gravitational potential energy is given by $E_p = -\frac{GMm}{r}$. Use dimensional analysis to determine the SI units of the gravitational constant $G$.
 
-**Answer.** $[E_p] = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
-$[Mm/r] = \frac{\mathsf{M} \cdot \mathsf{M}}{\mathsf{L}} = \mathsf{M}^2\mathsf{L}^{-1}$. Since
+**Answer.** $[E_p] = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$.
+$[Mm/r] = \frac{\mathsf{'\{'}M{'\}'} \cdot \mathsf{'\{'}M{'\}'}}{\mathsf{'\{'}L{'\}'}} = \mathsf{'\{'}M{'\}'}^2\mathsf{'\{'}L{'\}'}^{-1}$. Since
 $E_p = -\frac{GMm}{r}$:
-$[G] = \frac{[E_p][r]}{[Mm]} = \frac{\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2} \cdot \mathsf{L}}{\mathsf{M}^2} = \mathsf{M}^{-1}\mathsf{L}^3\mathsf{T}^{-2}$.
+$[G] = \frac{[E_p][r]}{[Mm]} = \frac{\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2} \cdot \mathsf{'\{'}L{'\}'}}{\mathsf{'\{'}M{'\}'}^2} = \mathsf{'\{'}M{'\}'}^{-1}\mathsf{'\{'}L{'\}'}^3\mathsf{'\{'}T{'\}'}^{-2}$.
 In SI units: m$^3$ kg$^{-1}$ s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Derived Units](#1-physical-quantities-and-the-si-system)
@@ -496,10 +496,10 @@ while the unit values are derived from them.
 **Example.** A student proposes that the pressure at depth $h$ in a fluid is $P = \rho g h^2$. Check
 whether this is dimensionally valid.
 
-**Answer.** $[P] = \mathsf{M}\mathsf{L}^{-1}\mathsf{T}^{-2}$.
-$[\rho g h^2] = (\mathsf{M}\mathsf{L}^{-3})(\mathsf{L}\mathsf{T}^{-2})(\mathsf{L}^2) = \mathsf{M}\mathsf{L}^0\mathsf{T}^{-2} = \mathsf{M}\mathsf{T}^{-2}$.
+**Answer.** $[P] = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{-1}\mathsf{'\{'}T{'\}'}^{-2}$.
+$[\rho g h^2] = (\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{-3})(\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2})(\mathsf{'\{'}L{'\}'}^2) = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^0\mathsf{'\{'}T{'\}'}^{-2} = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}T{'\}'}^{-2}$.
 This does not match $[P]$. The correct formula is $P = \rho g h$, which gives
-$[\rho g h] = \mathsf{M}\mathsf{L}^{-3} \cdot \mathsf{L}\mathsf{T}^{-2} \cdot \mathsf{L} = \mathsf{M}\mathsf{L}^{-1}\mathsf{T}^{-2} = [P]$.
+$[\rho g h] = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{-3} \cdot \mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2} \cdot \mathsf{'\{'}L{'\}'} = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{-1}\mathsf{'\{'}T{'\}'}^{-2} = [P]$.
 $\square$
 
 ### 9.2 Verifying the Ideal Gas Equation
@@ -508,11 +508,11 @@ $\square$
 the molar gas constant with units J mol$^{-1}$ K$^{-1}$.
 
 **Answer.**
-$[PV] = (\mathsf{M}\mathsf{L}^{-1}\mathsf{T}^{-2})(\mathsf{L}^3) = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
+$[PV] = (\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{-1}\mathsf{'\{'}T{'\}'}^{-2})(\mathsf{'\{'}L{'\}'}^3) = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$.
 
-$[nRT] = (\mathrm{mol})(\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}\mathrm{ mol}^{-1}\mathsf{\Theta}^{-1})(\mathsf{\Theta}) = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
+$[nRT] = (\mathrm{'\{'}mol{'\}'})(\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}\mathrm{'\{'} mol{'\}'}^{-1}\mathsf{'\{'}\Theta{'\}'}^{-1})(\mathsf{'\{'}\Theta{'\}'}) = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$.
 
-Both sides have dimensions $\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$, so the equation is dimensionally
+Both sides have dimensions $\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$, so the equation is dimensionally
 consistent. $\square$
 
 ### 9.3 Determining the Form of an Equation
@@ -522,12 +522,12 @@ assumed to depend on mass $m$, speed $v$, and radius $r$. Find the form of the e
 
 **Answer.** Assume $F = k \cdot m^a \cdot v^b \cdot r^c$.
 
-$[F] = \mathsf{M}\mathsf{L}\mathsf{T}^{-2}$.
-$[m^a v^b r^c] = \mathsf{M}^a (\mathsf{L}\mathsf{T}^{-1})^b \mathsf{L}^c = \mathsf{M}^a \mathsf{L}^{b+c} \mathsf{T}^{-b}$.
+$[F] = \mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2}$.
+$[m^a v^b r^c] = \mathsf{'\{'}M{'\}'}^a (\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1})^b \mathsf{'\{'}L{'\}'}^c = \mathsf{'\{'}M{'\}'}^a \mathsf{'\{'}L{'\}'}^{b+c} \mathsf{'\{'}T{'\}'}^{-b}$.
 
 Equating dimensions:
 
-$$\mathsf{M}: \quad a = 1, \qquad \mathsf{L}: \quad b + c = 1, \qquad \mathsf{T}: \quad -b = -2 \implies b = 2$$
+$$\mathsf{'\{'}M{'\}'}: \quad a = 1, \qquad \mathsf{'\{'}L{'\}'}: \quad b + c = 1, \qquad \mathsf{'\{'}T{'\}'}: \quad -b = -2 \implies b = 2$$
 
 Therefore $c = 1 - 2 = -1$, giving $F = k \cdot m v^2 / r$. Full analysis gives $k = 1$. $\square$
 
@@ -667,12 +667,12 @@ Result: $A = 1.00 \pm 0.04$ m$^2$.
 <summary>Problem 1</summary>
 The escape velocity from a planet of mass $M$ and radius $R$ is given by $v_e = \sqrt{2GM/R}$. Use dimensional analysis to determine the SI units of the gravitational constant $G$.
 
-**Answer.** $[v_e] = \mathsf{L}\mathsf{T}^{-1}$.
-$[2GM/R] = [G][M]/[R] = [G]\mathsf{M}\mathsf{L}^{-1}$.
+**Answer.** $[v_e] = \mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1}$.
+$[2GM/R] = [G][M]/[R] = [G]\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{-1}$.
 
-Setting $[v_e]^2 = [2GM/R]$: $\mathsf{L}^2\mathsf{T}^{-2} = [G]\mathsf{M}\mathsf{L}^{-1}$.
+Setting $[v_e]^2 = [2GM/R]$: $\mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2} = [G]\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}^{-1}$.
 
-$[G] = \mathsf{L}^3\mathsf{M}^{-1}\mathsf{T}^{-2}$. In SI units: m$^3$ kg$^{-1}$ s$^{-2}$.
+$[G] = \mathsf{'\{'}L{'\}'}^3\mathsf{'\{'}M{'\}'}^{-1}\mathsf{'\{'}T{'\}'}^{-2}$. In SI units: m$^3$ kg$^{-1}$ s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Derived Units](#1-physical-quantities-and-the-si-system)
 
@@ -682,11 +682,11 @@ $[G] = \mathsf{L}^3\mathsf{M}^{-1}\mathsf{T}^{-2}$. In SI units: m$^3$ kg$^{-1}$
 <summary>Problem 2</summary>
 A student proposes the formula for the frequency of a mass-spring system: $f = \frac{1}{2\pi}\sqrt{\frac{m}{k}}$, where $k$ is the spring constant. Use dimensional analysis to determine whether this formula is correct.
 
-**Answer.** $[f] = \mathsf{T}^{-1}$.
-$[m/k] = \frac{\mathsf{M}}{[\mathrm{force}]/[\mathrm{displacement}]} = \frac{\mathsf{M}}{\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}} = \frac{\mathsf{M}}{\mathsf{M}\mathsf{T}^{-2}} = \mathsf{T}^2$.
+**Answer.** $[f] = \mathsf{'\{'}T{'\}'}^{-1}$.
+$[m/k] = \frac{\mathsf{'\{'}M{'\}'}}{[\mathrm{'\{'}force{'\}'}]/[\mathrm{'\{'}displacement{'\}'}]} = \frac{\mathsf{'\{'}M{'\}'}}{\mathsf{'\{'}M{'\}'}\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2}/\mathsf{'\{'}L{'\}'}} = \frac{\mathsf{'\{'}M{'\}'}}{\mathsf{'\{'}M{'\}'}\mathsf{'\{'}T{'\}'}^{-2}} = \mathsf{'\{'}T{'\}'}^2$.
 
-$[\sqrt{m/k}] = \mathsf{T} \neq \mathsf{T}^{-1}$. The formula is incorrect. The correct form is
-$f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$, giving $[\sqrt{k/m}] = \mathsf{T}^{-1} = [f]$. $\square$
+$[\sqrt{m/k}] = \mathsf{'\{'}T{'\}'} \neq \mathsf{'\{'}T{'\}'}^{-1}$. The formula is incorrect. The correct form is
+$f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$, giving $[\sqrt{k/m}] = \mathsf{'\{'}T{'\}'}^{-1} = [f]$. $\square$
 
 <b>If you get this wrong, revise:</b>
 [Determining the Form of an Equation](#determining-the-form-of-an-equation)
@@ -714,18 +714,18 @@ Result: $a = 4.0 \pm 0.3$ m s$^{-2}$ (7.5%).
 
 <details>
 <summary>Problem 4</summary>
-Show that the equation $v^2 = u^2 + 2as$ is dimensionally valid, and determine the SI base units of a quantity with dimensions $\mathsf{M}^{1/2}\mathsf{L}^{3/2}\mathsf{T}^{-1}$.
+Show that the equation $v^2 = u^2 + 2as$ is dimensionally valid, and determine the SI base units of a quantity with dimensions $\mathsf{'\{'}M{'\}'}^{1/2}\mathsf{'\{'}L{'\}'}^{3/2}\mathsf{'\{'}T{'\}'}^{-1}$.
 
-**Answer.** $[v^2] = (\mathsf{L}\mathsf{T}^{-1})^2 = \mathsf{L}^2\mathsf{T}^{-2}$.
-$[u^2] = \mathsf{L}^2\mathsf{T}^{-2}$.
-$[2as] = (\mathsf{L}\mathsf{T}^{-2})(\mathsf{L}) = \mathsf{L}^2\mathsf{T}^{-2}$. All terms match.
+**Answer.** $[v^2] = (\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-1})^2 = \mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$.
+$[u^2] = \mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$.
+$[2as] = (\mathsf{'\{'}L{'\}'}\mathsf{'\{'}T{'\}'}^{-2})(\mathsf{'\{'}L{'\}'}) = \mathsf{'\{'}L{'\}'}^2\mathsf{'\{'}T{'\}'}^{-2}$. All terms match.
 $\square$
 
-For $\mathsf{M}^{1/2}\mathsf{L}^{3/2}\mathsf{T}^{-1}$:
-$\sqrt{\mathrm{kg}} \cdot \mathrm{m}^{3/2} \cdot \mathrm{s}^{-1}$. An example is
+For $\mathsf{'\{'}M{'\}'}^{1/2}\mathsf{'\{'}L{'\}'}^{3/2}\mathsf{'\{'}T{'\}'}^{-1}$:
+$\sqrt{\mathrm{'\{'}kg{'\}'}} \cdot \mathrm{'\{'}m{'\}'}^{3/2} \cdot \mathrm{'\{'}s{'\}'}^{-1}$. An example is
 $\sqrt{G} \cdot M / r$ where $G$ has units m$^3$ kg$^{-1}$ s$^{-2}$, giving
-$[\sqrt{G}] = \mathrm{m}^{3/2}\mathrm{ kg}^{-1/2}\mathrm{ s}^{-1}$ and
-$[\sqrt{G} \cdot M] = \mathrm{m}^{3/2}\mathrm{ kg}^{1/2}\mathrm{ s}^{-1}$.
+$[\sqrt{G}] = \mathrm{'\{'}m{'\}'}^{3/2}\mathrm{'\{'} kg{'\}'}^{-1/2}\mathrm{'\{'} s{'\}'}^{-1}$ and
+$[\sqrt{G} \cdot M] = \mathrm{'\{'}m{'\}'}^{3/2}\mathrm{'\{'} kg{'\}'}^{1/2}\mathrm{'\{'} s{'\}'}^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Derived Units](#1-physical-quantities-and-the-si-system)
 

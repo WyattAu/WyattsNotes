@@ -90,7 +90,7 @@ Total: $\binom{n-1}{r-1} + \binom{n-1}{r}$. $\blacksquare$
 
 ## 3. The Binomial Theorem
 
-**Theorem (Binomial Theorem for Positive Integer $n$).** For $n \in \mathbb{N}$:
+**Theorem (Binomial Theorem for Positive Integer $n$).** For $n \in \mathbb{'\{'}N{'\}'}$:
 
 $$(a + b)^n = \sum_{r=0}^{n} \binom{n}{r} a^{n-r} b^r$$
 
@@ -141,7 +141,7 @@ $$= 32x^5 - 240x^4 + 720x^3 - 1080x^2 + 810x - 243$$
 When $n$ is not a positive integer (e.g., $n$ is negative or fractional), the expansion becomes an
 _infinite series_.
 
-**Theorem (General Binomial Theorem).** For $|x| \lt 1$ and any $n \in \mathbb{R}$:
+**Theorem (General Binomial Theorem).** For $|x| \lt 1$ and any $n \in \mathbb{'\{'}R{'\}'}$:
 
 $$(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots$$
 
@@ -246,7 +246,7 @@ The general term is $T_{r+1} = \binom{12}{r}(2x)^r = \binom{12}{r} 2^r x^r$.
 
 Set $r = 5$:
 
-$$\mathrm{Coefficient} = \binom{12}{5} 2^5 = 792 \cdot 32 = 25344$$
+$$\mathrm{'\{'}Coefficient{'\}'} = \binom{12}{5} 2^5 = 792 \cdot 32 = 25344$$
 
 </details>
 
@@ -409,7 +409,7 @@ Summing over all valid $k$ gives the left-hand side. $\blacksquare$
 When expanding $(a + bx)^n$ with non-integer $n$, we write it as
 $a^n\left(1 + \frac{bx}{a}\right)^n$. The expansion is valid when:
 
-$$\left|\frac{bx}{a}\right| \lt 1 \quad \mathrm{i.e.,} \quad |x| \lt \left|\frac{a}{b}\right|$$
+$$\left|\frac{bx}{a}\right| \lt 1 \quad \mathrm{'\{'}i.e.,{'\}'} \quad |x| \lt \left|\frac{a}{b}\right|$$
 
 :::warning
 Always state the range of validity when working with non-integer powers. Marks are
@@ -421,7 +421,7 @@ routinely deducted for omitting this.
 When a question asks for the expansion of a product of two binomial expressions, such as
 $(1 + px)^a(1 + qx)^b$, each factor has its own validity range:
 
-$$|px| \lt 1 \quad \mathrm{and} \quad |qx| \lt 1$$
+$$|px| \lt 1 \quad \mathrm{'\{'}and{'\}'} \quad |qx| \lt 1$$
 
 The combined expansion is valid only where **both** individual expansions are valid. This means the
 overall validity is the **intersection** of the two ranges, which is always the **more restrictive**
@@ -592,9 +592,9 @@ Coefficient of $x^3$: $\frac{n(n-1)(n-2)}{6}a^3$
 
 Ratio $1 : 4 : 12$:
 
-$$\frac{n(n-1)}{2}a^2 = 4na \implies \frac{(n-1)a}{2} = 4 \implies (n-1)a = 8 \quad \mathrm{--- (1)}$$
+$$\frac{n(n-1)}{2}a^2 = 4na \implies \frac{(n-1)a}{2} = 4 \implies (n-1)a = 8 \quad \mathrm{'\{'}--- (1){'\}'}$$
 
-$$\frac{n(n-1)(n-2)}{6}a^3 = 12na \implies \frac{(n-1)(n-2)a^2}{6} = 12 \quad \mathrm{--- (2)}$$
+$$\frac{n(n-1)(n-2)}{6}a^3 = 12na \implies \frac{(n-1)(n-2)a^2}{6} = 12 \quad \mathrm{'\{'}--- (2){'\}'}$$
 
 From (1): $a = \frac{8}{n-1}$. Substitute into (2):
 

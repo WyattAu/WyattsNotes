@@ -111,19 +111,19 @@ $s(5) = 75 - \frac{125}{3} - 25 = 50 - \frac{125}{3} = \frac{150 - 125}{3} = \fr
 
 $s(7) = 147 - \frac{343}{3} - 35 = 112 - \frac{343}{3} = \frac{336 - 343}{3} = -\frac{7}{3}$ m.
 
-$$\text{Distance} = \lvert s(1) - s(0) \rvert + \lvert s(5) - s(1) \rvert + \lvert s(7) - s(5) \rvert$$
+$$\text{'\{'}Distance{'\}'} = \lvert s(1) - s(0) \rvert + \lvert s(5) - s(1) \rvert + \lvert s(7) - s(5) \rvert$$
 
 $$= \left\lvert -\frac{7}{3} \right\rvert + \left\lvert \frac{25}{3} - \left(-\frac{7}{3}\right) \right\rvert + \left\lvert -\frac{7}{3} - \frac{25}{3} \right\rvert$$
 
-$$= \frac{7}{3} + \frac{32}{3} + \frac{32}{3} = \frac{71}{3} \approx 23.67 \text{ m}$$
+$$= \frac{7}{3} + \frac{32}{3} + \frac{32}{3} = \frac{71}{3} \approx 23.67 \text{'\{'} m{'\}'}$$
 
 **(c)** The student's displacement answer:
 
-$$\text{Displacement} = s(7) - s(0) = -\frac{7}{3} \approx -2.33 \text{ m}$$
+$$\text{'\{'}Displacement{'\}'} = s(7) - s(0) = -\frac{7}{3} \approx -2.33 \text{'\{'} m{'\}'}$$
 
 The student claims the distance is $2.33$ m (taking the magnitude). Actual distance is $\frac{71}{3} \approx 23.67$ m.
 
-$$\text{Percentage error} = \frac{\lvert \frac{71}{3} - \frac{7}{3} \rvert}{\frac{71}{3}} \times 100\% = \frac{64}{71} \times 100\% \approx 90.1\%$$
+$$\text{'\{'}Percentage error{'\}'} = \frac{\lvert \frac{71}{3} - \frac{7}{3} \rvert}{\frac{71}{3}} \times 100\% = \frac{64}{71} \times 100\% \approx 90.1\%$$
 
 The student underestimates the distance by approximately 90% — a catastrophic error caused by not accounting for the two direction reversals.
 
@@ -143,13 +143,13 @@ The block remains in equilibrium for $0 \leq P \leq 31.36$ N.
 
 **(b)** When $P = 20$ N (which is less than $31.36$ N), the block does not move. The frictional force adjusts to exactly balance the applied force:
 
-$$F = P = 20 \text{ N}$$
+$$F = P = 20 \text{'\{'} N{'\}'}$$
 
 The frictional force acts in the direction opposite to $P$ (i.e., opposing the tendency to move).
 
 **(c)** The student writes $F = 31.36$ N, but the actual friction is only $20$ N. The student has assumed the block is on the point of sliding, but $20 \lt{} 31.36$ N, so the block is not even close to sliding. The friction adjusts to match the applied force.
 
-$$\text{Percentage overestimate} = \frac{31.36 - 20}{20} \times 100\% = 56.8\%$$
+$$\text{'\{'}Percentage overestimate{'\}'} = \frac{31.36 - 20}{20} \times 100\% = 56.8\%$$
 
 **(d)** Resolving perpendicular to the surface:
 
@@ -161,7 +161,7 @@ $$P\cos 30° = \mu R = 0.4(78.4 - 0.5P)$$
 
 $$0.866P = 31.36 - 0.2P$$
 
-$$1.066P = 31.36 \implies P = \frac{31.36}{1.066} \approx 29.42 \text{ N}$$
+$$1.066P = 31.36 \implies P = \frac{31.36}{1.066} \approx 29.42 \text{'\{'} N{'\}'}$$
 
 This is **less** than $31.36$ N, not greater. Applying the force at an angle above the horizontal reduces the normal reaction ($R = 78.4 - 0.5P \lt{} 78.4$), which in turn reduces the maximum friction. Although the horizontal component of $P$ is only $P\cos 30° \approx 0.866P$, the reduction in $R$ means the maximum available horizontal force is reduced overall.
 
@@ -171,21 +171,21 @@ This is **less** than $31.36$ N, not greater. Applying the force at an angle abo
 
 The force acts vertically downwards at $B$. The perpendicular distance from $A$ to the vertical line through $B$ is the horizontal distance from $A$ to $B$:
 
-$$d = AB \times \cos 40° = 3\cos 40° \approx 2.298 \text{ m}$$
+$$d = AB \times \cos 40° = 3\cos 40° \approx 2.298 \text{'\{'} m{'\}'}$$
 
-$$\text{Moment} = F \times d = 50 \times 3\cos 40° = 150\cos 40° \approx 114.9 \text{ Nm}$$
+$$\text{'\{'}Moment{'\}'} = F \times d = 50 \times 3\cos 40° = 150\cos 40° \approx 114.9 \text{'\{'} Nm{'\}'}$$
 
-**(b)** The student used the distance $AB = 3$ m instead of the perpendicular distance $3\cos 40° \approx 2.298$ m. The moment is $F \times d_{\perp}$, not $F \times d_{\text{along rod}}$.
+**(b)** The student used the distance $AB = 3$ m instead of the perpendicular distance $3\cos 40° \approx 2.298$ m. The moment is $F \times d_{\perp}$, not $F \times d_{\text{'\{'}along rod{'\}'}}$.
 
-$$\text{Student's answer} = 150 \text{ Nm}$$
+$$\text{'\{'}Student's answer{'\}'} = 150 \text{'\{'} Nm{'\}'}$$
 
-$$\text{Correct answer} = 150\cos 40° \approx 114.9 \text{ Nm}$$
+$$\text{'\{'}Correct answer{'\}'} = 150\cos 40° \approx 114.9 \text{'\{'} Nm{'\}'}$$
 
-$$\text{Percentage overestimate} = \frac{150 - 150\cos 40°}{150\cos 40°} \times 100\% = \frac{1 - \cos 40°}{\cos 40°} \times 100\% = \left(\frac{1}{\cos 40°} - 1\right) \times 100\% \approx 30.5\%$$
+$$\text{'\{'}Percentage overestimate{'\}'} = \frac{150 - 150\cos 40°}{150\cos 40°} \times 100\% = \frac{1 - \cos 40°}{\cos 40°} \times 100\% = \left(\frac{1}{\cos 40°} - 1\right) \times 100\% \approx 30.5\%$$
 
 **(c)** If the $50$ N force acts perpendicular to the rod at $B$, the perpendicular distance from $A$ to the line of action is simply the length of the rod:
 
-$$\text{Moment} = 50 \times 3 = 150 \text{ Nm}$$
+$$\text{'\{'}Moment{'\}'} = 50 \times 3 = 150 \text{'\{'} Nm{'\}'}$$
 
 This is larger because the perpendicular distance equals the full length of the rod ($3$ m), whereas in part (a) the perpendicular distance was only $3\cos 40° \approx 2.298$ m. A force applied perpendicular to a rod always produces the maximum possible moment for a given force magnitude and application point.
 
@@ -201,15 +201,15 @@ $$a = \frac{P}{mv} - \frac{R}{m} \quad \blacksquare$$
 
 **(b)** At maximum speed, $a = 0$:
 
-$$\frac{P}{v_{\max}} = R \implies v_{\max} = \frac{P}{R} = \frac{40000}{200} = 200 \text{ m/s}$$
+$$\frac{P}{v_{\max}} = R \implies v_{\max} = \frac{P}{R} = \frac{40000}{200} = 200 \text{'\{'} m/s{'\}'}$$
 
 **(c)** At $v = 10$ m/s:
 
-$$a = \frac{40000}{800 \times 10} - \frac{200}{800} = 5 - 0.25 = 4.75 \text{ m/s}^2$$
+$$a = \frac{40000}{800 \times 10} - \frac{200}{800} = 5 - 0.25 = 4.75 \text{'\{'} m/s{'\}'}^2$$
 
 At $v = 100$ m/s:
 
-$$a = \frac{40000}{800 \times 100} - \frac{200}{800} = 0.5 - 0.25 = 0.25 \text{ m/s}^2$$
+$$a = \frac{40000}{800 \times 100} - \frac{200}{800} = 0.5 - 0.25 = 0.25 \text{'\{'} m/s{'\}'}^2$$
 
 **(d)** The acceleration at $10$ m/s is $4.75$ m/s$^2$ and at $100$ m/s is $0.25$ m/s$^2$. The acceleration decreases by a factor of 19 as the speed increases by a factor of 10. Constant power does not imply constant acceleration; in fact, the acceleration decreases hyperbolically with speed.
 
@@ -231,7 +231,7 @@ $$t = -\frac{1}{50}\left[(40000\ln 37000 - 37000) - (40000\ln 39000 - 39000)\rig
 
 $$= \frac{1}{50}\left[40000\ln\!\left(\frac{39000}{37000}\right) + 2000\right]$$
 
-$$= 800\ln\!\left(\frac{39}{37}\right) + 40 \approx 800(0.05263) + 40 \approx 42.1 + 40 = 82.1 \text{ s}$$
+$$= 800\ln\!\left(\frac{39}{37}\right) + 40 \approx 800(0.05263) + 40 \approx 42.1 + 40 = 82.1 \text{'\{'} s{'\}'}$$
 
 ### Q5
 
@@ -249,7 +249,7 @@ $B$ moves in the positive direction (the same direction as $A$'s initial motion)
 
 **(b)** Coefficient of restitution:
 
-$$e = \frac{\text{relative speed of separation}}{\text{relative speed of approach}}$$
+$$e = \frac{\text{'\{'}relative speed of separation{'\}'}}{\text{'\{'}relative speed of approach{'\}'}}$$
 
 Relative speed of approach $= 5 - (-3) = 8$ m/s.
 
@@ -271,11 +271,11 @@ The negative sign means $B$ moves in the opposite direction to the defined posit
 
 **(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt{} e \lt{} 1$, the collision is **inelastic**.
 
-$$\text{KE}_{\text{before}} = \frac{1}{2}(4)(25) + \frac{1}{2}(6)(9) = 50 + 27 = 77 \text{ J}$$
+$$\text{'\{'}KE{'\}'}_{\text{'\{'}before{'\}'}} = \frac{1}{2}(4)(25) + \frac{1}{2}(6)(9) = 50 + 27 = 77 \text{'\{'} J{'\}'}$$
 
-$$\text{KE}_{\text{after}} = \frac{1}{2}(4)(4) + \frac{1}{2}(6)\!\left(\frac{25}{9}\right) = 8 + \frac{75}{9} = 8 + \frac{25}{3} = \frac{49}{3} \approx 16.33 \text{ J}$$
+$$\text{'\{'}KE{'\}'}_{\text{'\{'}after{'\}'}} = \frac{1}{2}(4)(4) + \frac{1}{2}(6)\!\left(\frac{25}{9}\right) = 8 + \frac{75}{9} = 8 + \frac{25}{3} = \frac{49}{3} \approx 16.33 \text{'\{'} J{'\}'}$$
 
-$$\Delta\text{KE} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \approx 60.67 \text{ J lost}$$
+$$\Delta\text{'\{'}KE{'\}'} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \approx 60.67 \text{'\{'} J lost{'\}'}$$
 
 ---
 

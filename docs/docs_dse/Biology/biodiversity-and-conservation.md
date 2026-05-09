@@ -446,8 +446,8 @@ Population growth drives:
 
 ### Climate Change
 
-Burning fossil fuels releases $\mathrm{CO}_2$, $\mathrm{CH}_4$ (methane), and
-$\mathrm{N}_2\mathrm{O}$ (nitrous oxide) -- greenhouse gases that trap infrared radiation,
+Burning fossil fuels releases $\mathrm{'\{'}CO{'\}'}_2$, $\mathrm{'\{'}CH{'\}'}_4$ (methane), and
+$\mathrm{'\{'}N{'\}'}_2\mathrm{'\{'}O{'\}'}$ (nitrous oxide) -- greenhouse gases that trap infrared radiation,
 increasing global temperatures.
 
 **Consequences for biodiversity:**
@@ -459,7 +459,7 @@ increasing global temperatures.
   at different rates for different species, disrupting food webs. For example, if insects emerge
   earlier due to warming but the birds that feed on them do not adjust their breeding time, the
   birds may miss the peak food supply for their chicks.
-- **Ocean acidification:** Dissolved $\mathrm{CO}_2$ forms carbonic acid, lowering ocean pH. This
+- **Ocean acidification:** Dissolved $\mathrm{'\{'}CO{'\}'}_2$ forms carbonic acid, lowering ocean pH. This
   impairs the ability of corals, molluscs, and other calcifying organisms to build their calcium
   carbonate shells and skeletons.
 - **Coral bleaching:** Increased water temperature causes corals to expel their symbiotic algae
@@ -618,14 +618,14 @@ of carbon between the atmosphere, biosphere, oceans, and geosphere.
 
 | Process          | Description                                                                                                              | Carbon Flux                                 |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------- |
-| Photosynthesis   | Plants, algae, and cyanobacteria convert atmospheric $\mathrm{CO}_2$ into organic compounds (glucose) using light energy | Removes $\mathrm{CO}_2$ from the atmosphere |
-| Respiration      | All living organisms break down organic molecules, releasing $\mathrm{CO}_2$ as a by-product                             | Returns $\mathrm{CO}_2$ to the atmosphere   |
-| Combustion       | Burning fossil fuels (coal, oil, natural gas) and biomass releases stored carbon as $\mathrm{CO}_2$                      | Returns $\mathrm{CO}_2$ to the atmosphere   |
-| Decomposition    | Decomposers break down dead organic matter, releasing $\mathrm{CO}_2$                                                    | Returns $\mathrm{CO}_2$ to the atmosphere   |
-| Ocean absorption | Oceans dissolve $\mathrm{CO}_2$ from the atmosphere (forming carbonic acid, bicarbonate, and carbonate ions)             | Removes $\mathrm{CO}_2$ from the atmosphere |
+| Photosynthesis   | Plants, algae, and cyanobacteria convert atmospheric $\mathrm{'\{'}CO{'\}'}_2$ into organic compounds (glucose) using light energy | Removes $\mathrm{'\{'}CO{'\}'}_2$ from the atmosphere |
+| Respiration      | All living organisms break down organic molecules, releasing $\mathrm{'\{'}CO{'\}'}_2$ as a by-product                             | Returns $\mathrm{'\{'}CO{'\}'}_2$ to the atmosphere   |
+| Combustion       | Burning fossil fuels (coal, oil, natural gas) and biomass releases stored carbon as $\mathrm{'\{'}CO{'\}'}_2$                      | Returns $\mathrm{'\{'}CO{'\}'}_2$ to the atmosphere   |
+| Decomposition    | Decomposers break down dead organic matter, releasing $\mathrm{'\{'}CO{'\}'}_2$                                                    | Returns $\mathrm{'\{'}CO{'\}'}_2$ to the atmosphere   |
+| Ocean absorption | Oceans dissolve $\mathrm{'\{'}CO{'\}'}_2$ from the atmosphere (forming carbonic acid, bicarbonate, and carbonate ions)             | Removes $\mathrm{'\{'}CO{'\}'}_2$ from the atmosphere |
 | Sedimentation    | Dead marine organisms (with calcium carbonate shells) settle to the ocean floor, forming limestone over geological time  | Removes carbon from the short-term cycle    |
 | Fossilisation    | Organic matter is buried and compressed over millions of years, forming fossil fuels (coal, oil, natural gas)            | Stores carbon long-term                     |
-| Deforestation    | Removal of trees reduces photosynthesis; burning releases stored carbon                                                  | Returns $\mathrm{CO}_2$ to the atmosphere   |
+| Deforestation    | Removal of trees reduces photosynthesis; burning releases stored carbon                                                  | Returns $\mathrm{'\{'}CO{'\}'}_2$ to the atmosphere   |
 
 **Carbon reservoirs:**
 
@@ -640,25 +640,25 @@ of carbon between the atmosphere, biosphere, oceans, and geosphere.
 ### The Nitrogen Cycle
 
 Nitrogen is essential for amino acids, proteins, nucleic acids, and ATP. The atmosphere is
-approximately 78% $\mathrm{N}_2$ gas, but this form is unavailable to most organisms because the
-triple bond in $\mathrm{N}_2$ is very strong and requires significant energy to break.
+approximately 78% $\mathrm{'\{'}N{'\}'}_2$ gas, but this form is unavailable to most organisms because the
+triple bond in $\mathrm{'\{'}N{'\}'}_2$ is very strong and requires significant energy to break.
 
 **Key processes:**
 
 | Process                        | Description                                                                                               | Organisms Involved                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Nitrogen fixation              | Atmospheric $\mathrm{N}_2$ is converted to ammonia ($\mathrm{NH}_3$)                                      | Nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_; cyanobacteria); lightning |
-| Nitrification                  | Ammonia ($\mathrm{NH}_3$) is converted to nitrite ($\mathrm{NO}_2^-$) then to nitrate ($\mathrm{NO}_3^-$) | _Nitrosomonas_ (ammonia to nitrite); _Nitrobacter_ (nitrite to nitrate)                                          |
-| Absorption                     | Plants absorb nitrate ($\mathrm{NO}_3^-$) (and some ammonium, $\mathrm{NH}_4^+$) through their roots      | Plant root cells                                                                                                 |
+| Nitrogen fixation              | Atmospheric $\mathrm{'\{'}N{'\}'}_2$ is converted to ammonia ($\mathrm{'\{'}NH{'\}'}_3$)                                      | Nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of legumes; _Azotobacter_; cyanobacteria); lightning |
+| Nitrification                  | Ammonia ($\mathrm{'\{'}NH{'\}'}_3$) is converted to nitrite ($\mathrm{'\{'}NO{'\}'}_2^-$) then to nitrate ($\mathrm{'\{'}NO{'\}'}_3^-$) | _Nitrosomonas_ (ammonia to nitrite); _Nitrobacter_ (nitrite to nitrate)                                          |
+| Absorption                     | Plants absorb nitrate ($\mathrm{'\{'}NO{'\}'}_3^-$) (and some ammonium, $\mathrm{'\{'}NH{'\}'}_4^+$) through their roots      | Plant root cells                                                                                                 |
 | Assimilation                   | Plants incorporate nitrogen into amino acids, proteins, nucleic acids, and other organic compounds        | Plants                                                                                                           |
 | Feeding                        | Animals obtain nitrogen by eating plants or other animals                                                 | Animals                                                                                                          |
-| Decomposition / ammonification | Decomposers break down dead organisms and urea/excreted waste, releasing ammonia ($\mathrm{NH}_3$)        | Decomposer bacteria and fungi                                                                                    |
-| Denitrification                | Nitrate ($\mathrm{NO}_3^-$) is converted back to $\mathrm{N}_2$ gas, returning it to the atmosphere       | Denitrifying bacteria (e.g., _Pseudomonas_, _Paracoccus_)                                                        |
+| Decomposition / ammonification | Decomposers break down dead organisms and urea/excreted waste, releasing ammonia ($\mathrm{'\{'}NH{'\}'}_3$)        | Decomposer bacteria and fungi                                                                                    |
+| Denitrification                | Nitrate ($\mathrm{'\{'}NO{'\}'}_3^-$) is converted back to $\mathrm{'\{'}N{'\}'}_2$ gas, returning it to the atmosphere       | Denitrifying bacteria (e.g., _Pseudomonas_, _Paracoccus_)                                                        |
 
 :::warning
 warning
 atmosphere. Plants cannot use atmospheric nitrogen directly. They can only absorb nitrogen in the
-form of nitrate ($\mathrm{NO}_3^-$) or ammonium ($\mathrm{NH}_4^+$) ions through their roots.
+form of nitrate ($\mathrm{'\{'}NO{'\}'}_3^-$) or ammonium ($\mathrm{'\{'}NH{'\}'}_4^+$) ions through their roots.
 Atmospheric nitrogen must first be fixed by bacteria or lightning.
 :::
 
@@ -743,8 +743,8 @@ For each description, identify the nitrogen cycle process and the organism(s) in
    appear in the same question.
 
 6. **Writing that nitrogen gas can be directly absorbed by plants:** Plants can only absorb nitrogen
-   in the form of nitrate ($\mathrm{NO}_3^-$) or ammonium ($\mathrm{NH}_4^+$). Atmospheric
-   $\mathrm{N}_2$ must first be fixed by nitrogen-fixing bacteria or lightning.
+   in the form of nitrate ($\mathrm{'\{'}NO{'\}'}_3^-$) or ammonium ($\mathrm{'\{'}NH{'\}'}_4^+$). Atmospheric
+   $\mathrm{'\{'}N{'\}'}_2$ must first be fixed by nitrogen-fixing bacteria or lightning.
 
 7. **Confusing primary and secondary succession:** Primary succession occurs on bare, lifeless
    substrate with no soil (e.g., volcanic rock). Secondary succession occurs where soil already
@@ -1010,7 +1010,7 @@ Genetic rescue involves introducing individuals from a different population to i
 | Effect                          | Mechanism                                                                                                           | Affected Species/Ecosystems        |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | Range shifts                     | Species move towards poles or to higher elevations to track suitable temperature conditions             | Arctic species; alpine plants; montane amphibians |
-| Ocean acidification              | Dissolved $\mathrm{CO}_2$ lowers ocean pH; impairs calcification in corals, molluscs, and planktonic organisms | Coral reefs; pteropods; shellfish |
+| Ocean acidification              | Dissolved $\mathrm{'\{'}CO{'\}'}_2$ lowers ocean pH; impairs calcification in corals, molluscs, and planktonic organisms | Coral reefs; pteropods; shellfish |
 | Altered phenology              | Seasonal events shift in timing; may create mismatches between species interactions                | Pollinators and flowering plants; migratory birds and food availability |
 | Increased extreme weather         | More frequent droughts, floods, storms damage habitats and kill organisms directly                             | Coral reefs; forests; coastal ecosystems |
 | Sea level rise                  | Coastal habitats are inundated; saltwater intrusion into freshwater ecosystems                                    | Mangroves; salt marshes; low-lying islands |
@@ -1224,7 +1224,7 @@ Based on molecular evidence (rRNA sequencing), Woese proposed three domains abov
 
 ### Classification Hierarchy
 
-$$\text{Domain} \rightarrow \text{Kingdom} \rightarrow \text{Phylum} \rightarrow \text{Class} \rightarrow \text{Order} \rightarrow \text{Family} \rightarrow \text{Genus} \rightarrow \text{Species}$$
+$$\text{'\{'}Domain{'\}'} \rightarrow \text{'\{'}Kingdom{'\}'} \rightarrow \text{'\{'}Phylum{'\}'} \rightarrow \text{'\{'}Class{'\}'} \rightarrow \text{'\{'}Order{'\}'} \rightarrow \text{'\{'}Family{'\}'} \rightarrow \text{'\{'}Genus{'\}'} \rightarrow \text{'\{'}Species{'\}'}$$
 
 **Mnemonic:** "Dear King Philip Came Over For Good Soup"
 

@@ -79,9 +79,9 @@ $ve^{\alpha t} = \frac{g}{\alpha}e^{\alpha t} + C$. $v = \frac{g}{\alpha} + Ce^{
 At $t = 0$: $0 = mg/k + C$, $C = -mg/k$.
 $v = \frac{mg}{k}(1 - e^{-kt/m})$.
 
-(b) Terminal velocity: as $t \to \infty$, $e^{-kt/m} \to 0$, so $v_{\text{term}} = \frac{mg}{k}$.
+(b) Terminal velocity: as $t \to \infty$, $e^{-kt/m} \to 0$, so $v_{\text{'\{'}term{'\}'}} = \frac{mg}{k}$.
 
-(c) At $t = m/k$: $v = \frac{mg}{k}(1 - e^{-1}) = \frac{mg}{k}(1 - 0.368) = 0.632 v_{\text{term}}$.
+(c) At $t = m/k$: $v = \frac{mg}{k}(1 - e^{-1}) = \frac{mg}{k}(1 - 0.368) = 0.632 v_{\text{'\{'}term{'\}'}}$.
 The particle reaches approximately 63.2% of terminal velocity.
 
 (d) The graph starts at $v = 0$ with steep gradient $g$, curves concavely, and asymptotically approaches $v = mg/k$. It is a typical exponential approach curve.

@@ -27,7 +27,7 @@ A synapse consists of three main components:
 ### Steps in Synaptic Transmission
 
 1. An action potential arrives at the presynaptic terminal.
-2. Voltage-gated calcium channels open, and calcium ions ($\mathrm{Ca}^{2+}$) flow into the
+2. Voltage-gated calcium channels open, and calcium ions ($\mathrm{'\{'}Ca{'\}'}^{2+}$) flow into the
    presynaptic terminal.
 3. The influx of calcium causes synaptic vesicles to fuse with the presynaptic membrane
    (exocytosis), releasing neurotransmitter molecules into the synaptic cleft.

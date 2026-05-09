@@ -21,7 +21,7 @@ sedimentary rock.
 | ------------------- | ---------------------------------------------------------------------------- |
 | **_Tiktaalik roseae_** (375 Mya) | Intermediate between lobe-finned fish and early tetrapods: fish-like scales and fins with limb-like bones and a functional neck. |
 | **_Archaeopteryx lithographica_** (150 Mya) | Dinosaur-like skeleton with teeth and long bony tail, but feathered wings and a furcula (wishbone). Links reptiles and birds. |
-| **_Australopithecus afarensis_** ("Lucy", 3.2 Mya) | Bipedal pelvis and femur with ape-like cranial capacity ($\approx 400\;\mathrm{cm}^3$). Ancestor of the genus _Homo_. |
+| **_Australopithecus afarensis_** ("Lucy", 3.2 Mya) | Bipedal pelvis and femur with ape-like cranial capacity ($\approx 400\;\mathrm{'\{'}cm{'\}'}^3$). Ancestor of the genus _Homo_. |
 | **_Ambulocetus natans_** (49 Mya) | "Walking whale": amphibious predator with functional limbs linking terrestrial artiodactyls and fully aquatic cetaceans. |
 | **_Tetrapod tracks_** (395 Mya, Poland) | Fossilised footprints pre-dating the earliest tetrapod body fossils, showing animals walked on land earlier than skeletal evidence suggested. |
 
@@ -158,7 +158,7 @@ fitness.
 **Examples:**
 
 - **Human birth weight**: babies with very low or very high birth weights have higher mortality;
-  intermediate weights ($\approx 3.0$--$4.0\;\mathrm{kg}$) have the highest survival rate.
+  intermediate weights ($\approx 3.0$--$4.0\;\mathrm{'\{'}kg{'\}'}$) have the highest survival rate.
 - **Sickle-cell allele in malaria-endemic regions**: homozygous normal ($HbA/HbA$) are susceptible to
   malaria; homozygous sickle-cell ($HbS/HbS$) have sickle-cell disease; heterozygous ($HbA/HbS$)
   have mild or asymptomatic malaria resistance (balancing selection --- a form of stabilising
@@ -325,7 +325,7 @@ environmental pressures.
 | **Streamlined body**     | Shark (fish), dolphin (mammal), ichthyosaur (reptile) | Drag reduction in aquatic locomotion |
 | **Camera eye**           | Cephalopod (octopus), vertebrate (human)     | Image formation; detection of light/predators |
 | **Wings**                | Bird, bat, pterosaur, insect                | Flight                                       |
-| **C4 photosynthesis**    | Maize (grass), sorghum (grass), amaranth (dicot) | High temperature, high light, low $\mathrm{CO}_2$ efficiency |
+| **C4 photosynthesis**    | Maize (grass), sorghum (grass), amaranth (dicot) | High temperature, high light, low $\mathrm{'\{'}CO{'\}'}_2$ efficiency |
 | **Echolocation**         | Bats (microchiroptera), toothed whales       | Navigation and prey detection in darkness     |
 | **Antifreeze proteins**  | Arctic cod, Antarctic notothenioid fish      | Subzero water temperatures                   |
 
@@ -793,7 +793,7 @@ At equilibrium, the frequency of the $c$ allele is maintained by the balance bet
 $\hat{q} = \frac{\mu}{s}$ (approximation for a rare recessive deleterious allele, where $s$ is
 the selection coefficient against homozygotes)
 
-With $s = 0.5$: if $\mu \approx 10^{-6}$ (typical mutation rate), $\hat{q} = 10^{-6} / 0.5
+With $s = 0.5$: if $\mu \approx 10^{-6}$ (typical mutation rate), $\hat`\{q}` = 10^{-6} / 0.5
 = 2 \times 10^{-6}$, which is negligible. However, if the selection pressure is relaxed
 completely ($s = 0$, no fitness disadvantage), the allele frequency will remain at its current
 value ($q = 0.02$) unless mutation rates are negligible.
@@ -867,7 +867,7 @@ are unaffected, calculate the new allele frequencies after one generation of sel
 <summary>Problem 3: Extended Response -- Speciation on Islands</summary>
 
 A volcanic island emerges from the ocean $500000$ years ago and is colonised by a single species
-of beetle from the nearest mainland ($200\;\mathrm{km}$ away). Today, the island has $12$ species
+of beetle from the nearest mainland ($200\;\mathrm{'\{'}km{'\}'}$ away). Today, the island has $12$ species
 of beetles, all descended from the original coloniser. (a) Explain the evolutionary processes that
 could have produced this diversity from a single ancestral species. (b) Discuss the role of
 adaptive radiation in this scenario. (c) Explain how reproductive isolating mechanisms could
@@ -891,7 +891,7 @@ spread of antibiotic resistance, discussing the evolutionary principles behind e
 <summary>Problem 5: Quantitative -- Molecular Clock and Divergence</summary>
 
 Two species of fruit fly (_Drosophila simulans_ and _D. melanogaster_) differ by $60$ nucleotide
-substitutions in a $1000\;\mathrm{bp}$ region of the Adh gene. The substitution rate for this gene
+substitutions in a $1000\;\mathrm{'\{'}bp{'\}'}$ region of the Adh gene. The substitution rate for this gene
 is estimated at $1.5 \times 10^{-8}$ substitutions per site per year. (a) Calculate the time
 since divergence. (b) Explain two assumptions of the molecular clock that may not hold for these
 species. (c) If a third species (_D. yakuba_) differs from _D. melanogaster_ by $90$ substitutions
@@ -1120,7 +1120,7 @@ copies of $B$ are sampled is $(1 - 0.3)^{100} = 0.7^{100} \approx 3.2 \times 10^
 However, this calculation assumes the bottleneck survivors are a perfectly random sample, which is
 unlikely. In practice, the founder effect during bottlenecks can dramatically change allele frequencies
 or eliminate alleles. The key point is that rare alleles (low frequency) are much more likely to be lost
-than common alleles. If $B$ had frequency $0.01$, $P(\text{loss}) = 0.99^{100} \approx 0.366$ ($37\%$).
+than common alleles. If $B$ had frequency $0.01$, $P(\text{'\{'}loss{'\}'}) = 0.99^{100} \approx 0.366$ ($37\%$).
 
 (b) The bottleneck reduces the number of alleles in the population because many alleles present in the
 original $10\,000$ individuals are not represented among the $50$ survivors. When the population recovers,
@@ -1180,7 +1180,7 @@ evidence, (b) anatomical evidence, (c) molecular evidence, (d) biogeographical e
 
 (a) **Palaeontological evidence (fossil record)**:
 Fossils show a sequence of progressively changing forms over geological time, documenting the evolution
-of major groups. Example: the evolution of the horse (_Equidae_) from _Hyracotherium_ (Eocene, $55\;\mathrm{Ma}$,
+of major groups. Example: the evolution of the horse (_Equidae_) from _Hyracotherium_ (Eocene, $55\;\mathrm{'\{'}Ma{'\}'}$,
 dog-sized, four-toed) through _Mesohippus_, _Merychippus_, to modern _Equus_ (toe reduction from 4 to 1,
 increase in body size, changes in tooth morphology for grass-eating). Transitional fossils (e.g.,
 _Tiktaalik_, showing features intermediate between fish and tetrapods) demonstrate that major evolutionary
@@ -1475,7 +1475,7 @@ and among lineages. If the rate is known, the amount of molecular divergence bet
 can be used to estimate the time since they shared a common ancestor.
 
 **Calibration**: the clock must be calibrated using known divergence times from the fossil record.
-For example, if two species diverged $10\;\mathrm{Ma}$ and differ by $5\%$ in a given gene, the
+For example, if two species diverged $10\;\mathrm{'\{'}Ma{'\}'}$ and differ by $5\%$ in a given gene, the
 substitution rate is $0.5\%$ per million years.
 
 ### Types of Molecular Markers
@@ -1485,10 +1485,10 @@ timescales of evolutionary analysis:
 
 | Marker | Substitution rate | Time depth | Application |
 |--------|-------------------|------------|-------------|
-| rRNA (18S, 28S) | Very slow | $>500\;\mathrm{Ma}$ | Deep phylogeny (kingdoms, phyla) |
-| Mitochondrial COI ("DNA barcode") | Moderate | $1$--$100\;\mathrm{Ma}$ | Species identification, recent divergences |
-| Mitochondrial control region | Fast | $0.01$--$1\;\mathrm{Ma}$ | Population genetics, intraspecific variation |
-| Microsatellites (STRs) | Very fast | $<0.01\;\mathrm{Ma}$ | Individual identification, parentage |
+| rRNA (18S, 28S) | Very slow | $>500\;\mathrm{'\{'}Ma{'\}'}$ | Deep phylogeny (kingdoms, phyla) |
+| Mitochondrial COI ("DNA barcode") | Moderate | $1$--$100\;\mathrm{'\{'}Ma{'\}'}$ | Species identification, recent divergences |
+| Mitochondrial control region | Fast | $0.01$--$1\;\mathrm{'\{'}Ma{'\}'}$ | Population genetics, intraspecific variation |
+| Microsatellites (STRs) | Very fast | $<0.01\;\mathrm{'\{'}Ma{'\}'}$ | Individual identification, parentage |
 | Pseudogenes | Fast (no functional constraint) | Variable | Gene family evolution |
 
 ### Assumptions and Limitations of the Molecular Clock
@@ -1542,14 +1542,14 @@ timescales of evolutionary analysis:
 Three species of finch from the Galapagos Islands are compared at two genes:
 
 Gene A (slow clock, rate $= 1 \times 10^{-9}$ substitutions/site/year):
-- Species 1 vs 2: $12$ substitutions per $1000\;\mathrm{bp}$
-- Species 1 vs 3: $18$ substitutions per $1000\;\mathrm{bp}$
-- Species 2 vs 3: $6$ substitutions per $1000\;\mathrm{bp}$
+- Species 1 vs 2: $12$ substitutions per $1000\;\mathrm{'\{'}bp{'\}'}$
+- Species 1 vs 3: $18$ substitutions per $1000\;\mathrm{'\{'}bp{'\}'}$
+- Species 2 vs 3: $6$ substitutions per $1000\;\mathrm{'\{'}bp{'\}'}$
 
 Gene B (fast clock, rate $= 5 \times 10^{-9}$ substitutions/site/year):
-- Species 1 vs 2: $50$ substitutions per $1000\;\mathrm{bp}$
-- Species 1 vs 3: $80$ substitutions per $1000\;\mathrm{bp}$
-- Species 2 vs 3: $30$ substitutions per $1000\;\mathrm{bp}$
+- Species 1 vs 2: $50$ substitutions per $1000\;\mathrm{'\{'}bp{'\}'}$
+- Species 1 vs 3: $80$ substitutions per $1000\;\mathrm{'\{'}bp{'\}'}$
+- Species 2 vs 3: $30$ substitutions per $1000\;\mathrm{'\{'}bp{'\}'}$
 
 (a) Construct the most parsimonious tree. (b) Estimate divergence times using each gene separately.
 (c) Explain why the two genes give different time estimates.
@@ -1572,18 +1572,18 @@ Species 2 and 3 are sister taxa; species 1 is the outgroup.
 Both genes support the same tree topology: (2,3) are sister taxa.
 
 (b) **Gene A**: rate $= 1 \times 10^{-9}$ subs/site/year.
-- Species 2--3 divergence: $6/1000 = 0.006$ subs/site. Time $= 0.006 / (2 \times 10^{-9}) = 3 \times 10^6$ years $= 3\;\mathrm{Ma}$.
+- Species 2--3 divergence: $6/1000 = 0.006$ subs/site. Time $= 0.006 / (2 \times 10^{-9}) = 3 \times 10^6$ years $= 3\;\mathrm{'\{'}Ma{'\}'}$.
   (Dividing by 2 because substitutions accumulate on both lineages.)
 - Species 1--(2,3) divergence: $(12 + 6)/2000 = 0.009$ subs/site from the root. Or: the distance from
   species 1 to the common ancestor of 1,2,3: $(12 - 3)/1000 = 0.009$ (correcting for the 2--3 split).
-  Time $= 0.009 / (2 \times 10^{-9}) = 4.5\;\mathrm{Ma}$.
+  Time $= 0.009 / (2 \times 10^{-9}) = 4.5\;\mathrm{'\{'}Ma{'\}'}$.
 
 **Gene B**: rate $= 5 \times 10^{-9}$ subs/site/year.
-- Species 2--3: $30/1000 = 0.030$. Time $= 0.030 / (2 \times 5 \times 10^{-9}) = 3.0 \times 10^6 = 3.0\;\mathrm{Ma}$.
-- Species 1--(2,3): $(50 - 15)/1000 = 0.035$. Time $= 0.035 / (2 \times 5 \times 10^{-9}) = 3.5\;\mathrm{Ma}$.
+- Species 2--3: $30/1000 = 0.030$. Time $= 0.030 / (2 \times 5 \times 10^{-9}) = 3.0 \times 10^6 = 3.0\;\mathrm{'\{'}Ma{'\}'}$.
+- Species 1--(2,3): $(50 - 15)/1000 = 0.035$. Time $= 0.035 / (2 \times 5 \times 10^{-9}) = 3.5\;\mathrm{'\{'}Ma{'\}'}$.
 
-(c) The two genes give slightly different divergence times for the deeper node (Gene A: $4.5\;\mathrm{Ma}$;
-Gene B: $3.5\;\mathrm{Ma}$). This discrepancy is due to:
+(c) The two genes give slightly different divergence times for the deeper node (Gene A: $4.5\;\mathrm{'\{'}Ma{'\}'}$;
+Gene B: $3.5\;\mathrm{'\{'}Ma{'\}'}$). This discrepancy is due to:
 - Rate variation between genes (the molecular clock is not perfectly constant).
 - Stochastic variation (random nature of mutation).
 - Different functional constraints on the two genes (Gene B may have slightly relaxed constraints,
@@ -1647,21 +1647,21 @@ regulatory DNA controlling these genes (not the genes themselves) are responsibl
 
 ### Worked Example: Calculating Morphological Change Rate
 
-A fossil sequence shows that the average body size of a mammal lineage increased from $5\;\mathrm{kg}$
-to $50\;\mathrm{kg}$ over $10$ million years. (a) Calculate the rate of body size increase in
-$\mathrm{mg/year}$. (b) Using the equation for exponential growth of body size ($M_t = M_0 e^{rt}$),
+A fossil sequence shows that the average body size of a mammal lineage increased from $5\;\mathrm{'\{'}kg{'\}'}$
+to $50\;\mathrm{'\{'}kg{'\}'}$ over $10$ million years. (a) Calculate the rate of body size increase in
+$\mathrm{'\{'}mg/year{'\}'}$. (b) Using the equation for exponential growth of body size ($M_t = M_0 e^{rt}$),
 calculate the rate constant $r$. (c) If Cope's rule (the tendency for lineages to increase in body
 size over time) applies, predict the body size after $20$ million years from the original ancestor.
 
 <details>
 <summary>Solution</summary>
 
-(a) Rate of change: $\frac{50\;\mathrm{kg} - 5\;\mathrm{kg}}{10 \times 10^6\;\mathrm{years}} = \frac{45}{10^7} = 4.5 \times 10^{-6}\;\mathrm{kg/year} = 4.5\;\mathrm{mg/year}$.
+(a) Rate of change: $\frac{50\;\mathrm{'\{'}kg{'\}'} - 5\;\mathrm{'\{'}kg{'\}'}}{10 \times 10^6\;\mathrm{'\{'}years{'\}'}} = \frac{45}{10^7} = 4.5 \times 10^{-6}\;\mathrm{'\{'}kg/year{'\}'} = 4.5\;\mathrm{'\{'}mg/year{'\}'}$.
 
 (b) $M_t = M_0 e^{rt}$: $50 = 5 e^{10r}$.
-$e^{10r} = 10$, so $10r = \ln(10) = 2.303$, $r = 0.230\;\mathrm{Ma}^{-1}$.
+$e^{10r} = 10$, so $10r = \ln(10) = 2.303$, $r = 0.230\;\mathrm{'\{'}Ma{'\}'}^{-1}$.
 
-(c) After $20\;\mathrm{Ma}$: $M = 5 e^{0.230 \times 20} = 5 e^{4.605} = 5 \times 100 = 500\;\mathrm{kg}$.
+(c) After $20\;\mathrm{'\{'}Ma{'\}'}$: $M = 5 e^{0.230 \times 20} = 5 e^{4.605} = 5 \times 100 = 500\;\mathrm{'\{'}kg{'\}'}$.
 
 Cope's rule predicts continued body size increase, but in reality, body size eventually plateaus due
 to physiological and ecological constraints (larger organisms require more food, have longer generation

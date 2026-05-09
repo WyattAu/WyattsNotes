@@ -81,8 +81,8 @@ cannot establish temporal sequences or causal relationships.
 
 **Ecosystem studies:**
 
-- **Quadrat sampling**: placing a quadrat ($0.5\;\mathrm{m} \times 0.5\;\mathrm{m}$ or
-  $1\;\mathrm{m} \times 1\;\mathrm{m}$) at systematic or random intervals within the study area to
+- **Quadrat sampling**: placing a quadrat ($0.5\;\mathrm{'\{'}m{'\}'} \times 0.5\;\mathrm{'\{'}m{'\}'}$ or
+  $1\;\mathrm{'\{'}m{'\}'} \times 1\;\mathrm{'\{'}m{'\}'}$) at systematic or random intervals within the study area to
   record species presence, abundance, or percentage cover.
 - **Transect sampling**: recording data along a line (belt transect or line transect) across an
   environmental gradient (e.g., from low water mark to cliff top). Useful for studying zonation.
@@ -197,9 +197,9 @@ Tests whether there is a significant association between two categorical variabl
 $$\chi^2 = \sum \frac{(O - E)^2}{E}$$
 
 Where $O$ is the observed frequency and $E$ is the expected frequency for each cell. Expected
-frequency $E = \frac{\mathrm{row total} \times \mathrm{column total}}{\mathrm{grand total}}$. The
+frequency $E = \frac{\mathrm{'\{'}row total{'\}'} \times \mathrm{'\{'}column total{'\}'}}{\mathrm{'\{'}grand total{'\}'}}$. The
 calculated $\chi^2$ value is compared to critical values with the appropriate degrees of freedom
-($\mathrm{df} = (r-1)(c-1)$).
+($\mathrm{'\{'}df{'\}'} = (r-1)(c-1)$).
 
 #### Student's t-Test
 
@@ -319,10 +319,10 @@ To improve validity:
 <details>
 <summary>Problem 1: Spearman's Rank Correlation</summary>
 
-A student investigates the relationship between distance from the city centre ($\mathrm{km}$) and
+A student investigates the relationship between distance from the city centre ($\mathrm{'\{'}km{'\}'}$) and
 house prices (index, $0$--$100$). The data are:
 
-| Location | Distance ($\mathrm{km}$) | House Price Index |
+| Location | Distance ($\mathrm{'\{'}km{'\}'}$) | House Price Index |
 | -------- | ------------------------ | ----------------- |
 | A        | 1                        | 95                |
 | B        | 3                        | 80                |
@@ -370,7 +370,7 @@ A geographer investigates whether land use varies between two areas. The observe
 Calculate expected frequencies and the chi-squared statistic.
 
 Expected frequency:
-$E = \frac{\mathrm{row total} \times \mathrm{column total}}{\mathrm{grand total}}$
+$E = \frac{\mathrm{'\{'}row total{'\}'} \times \mathrm{'\{'}column total{'\}'}}{\mathrm{'\{'}grand total{'\}'}}$
 
 | Land Use    | $E_A$                        | $E_B$                        |
 | ----------- | ---------------------------- | ---------------------------- |
@@ -385,7 +385,7 @@ $$= \frac{(45-37.5)^2}{37.5} + \frac{(30-37.5)^2}{37.5} + \frac{(20-27.5)^2}{27.
 
 $$= 1.5 + 1.5 + 2.045 + 2.045 + 1.25 + 1.25 + 1.667 + 1.667 = 12.924$$
 
-Degrees of freedom $= (4-1)(2-1) = 3$. Critical value at $p < 0.05$ for $\mathrm{df} = 3$ is
+Degrees of freedom $= (4-1)(2-1) = 3$. Critical value at $p < 0.05$ for $\mathrm{'\{'}df{'\}'} = 3$ is
 $7.815$. Since $12.924 > 7.815$, the result is statistically significant. There is a significant
 association between land use and area.
 
@@ -405,7 +405,7 @@ Disadvantages: may not capture the full gradient (some distances may be over- or
 by chance); practical difficulties in accessing randomly selected points.
 
 **Strategy 2: Systematic sampling (transect).** The student lays a transect perpendicular to the
-river and takes measurements at $2\;\mathrm{m}$ intervals from $2\;\mathrm{m}$ to $40\;\mathrm{m}$
+river and takes measurements at $2\;\mathrm{'\{'}m{'\}'}$ intervals from $2\;\mathrm{'\{'}m{'\}'}$ to $40\;\mathrm{'\{'}m{'\}'}$
 from the riverbank.
 
 Advantages: ensures even coverage of the distance gradient; efficient and practical; clearly shows
@@ -438,8 +438,8 @@ A GIS-based investigation could integrate multiple data layers:
    - Import data on existing retail centres (locations, sizes, types of shops)
 
 2. **Spatial analysis:**
-   - **Buffer analysis**: create buffer zones around the shopping centre (e.g., $1\;\mathrm{km}$,
-     $3\;\mathrm{km}$, $5\;\mathrm{km}$) to define zones of influence
+   - **Buffer analysis**: create buffer zones around the shopping centre (e.g., $1\;\mathrm{'\{'}km{'\}'}$,
+     $3\;\mathrm{'\{'}km{'\}'}$, $5\;\mathrm{'\{'}km{'\}'}$) to define zones of influence
    - **Overlay analysis**: overlay the buffer zones with Census data to analyse the demographic
      characteristics of the shopping centre's catchment area
    - **Network analysis**: use road network data to calculate drive-time isochrones (areas reachable

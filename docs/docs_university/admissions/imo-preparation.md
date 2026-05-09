@@ -68,11 +68,11 @@ $$\phi(n) = n \prod_{p \mid n}\left(1 - \frac{1}{p}\right)$$
 **Euler's Theorem.** If $\gcd(a, n) = 1$, then $a^{\phi(n)} \equiv 1 \pmod{n}$.
 
 **Corollary: the order of $a$ modulo $n$.** The smallest positive integer $d$ such that $a^d \equiv 1 \pmod{n}$
-is called the order of $a$ modulo $n$, denoted $\text{ord}_n(a)$. The order divides $\phi(n)$, and more
+is called the order of $a$ modulo $n$, denoted $\text{'\{'}ord{'\}'}_n(a)$. The order divides $\phi(n)$, and more
 generally divides any exponent $k$ for which $a^k \equiv 1 \pmod{n}$.
 
 **Technique: orders in Diophantine equations.** If $a^m \equiv a^n \pmod{p}$ with $\gcd(a, p) = 1$,
-then $m \equiv n \pmod{\text{ord}_p(a)}$. This is often more precise than working modulo $p - 1$.
+then $m \equiv n \pmod{\text{'\{'}ord{'\}'}_p(a)}$. This is often more precise than working modulo $p - 1$.
 
 ### 2.2 Chinese Remainder Theorem
 
@@ -212,7 +212,7 @@ $1/p_1 + \cdots + 1/p_k = 1$:
 
 $$\sum_{i=1}^{n}\prod_{j=1}^{k} a_{ij} \leq \prod_{j=1}^{k}\left(\sum_{i=1}^{n} a_{ij}^{p_j}\right)^{1/p_j}$$
 
-**Muirhead's Inequality.** A symmetric sum $\sum_{\text{sym}} x_1^{a_1} x_2^{a_2} \cdots x_n^{a_n}$
+**Muirhead's Inequality.** A symmetric sum $\sum_{\text{'\{'}sym{'\}'}} x_1^{a_1} x_2^{a_2} \cdots x_n^{a_n}$
 is denoted $[a_1, a_2, \ldots, a_n]$. We say $(a_1, \ldots, a_n)$ majorises $(b_1, \ldots, b_n)$
 if the sum of the $k$ largest $a_i$ is at least the sum of the $k$ largest $b_i$ for all $k$, with
 equality when $k = n$. Muirhead's inequality states that if $(a)$ majorises $(b)$ and
@@ -229,17 +229,17 @@ For $r = 1$: $x^3 + y^3 + z^3 + 3xyz \geq x^2y + x^2z + y^2x + y^2z + z^2x + z^2
 **Resultant.** The resultant of polynomials $P$ and $Q$ is zero if and only if $P$ and $Q$ share a
 common root. For $P(x) = a\prod(x - \alpha_i)$ and $Q(x) = b\prod(x - \beta_j)$:
 
-$$\text{Res}(P, Q) = a^m b^n \prod_{i,j}(\alpha_i - \beta_j) = a^m \prod_i Q(\alpha_i) = b^n \prod_j P(\beta_j)$$
+$$\text{'\{'}Res{'\}'}(P, Q) = a^m b^n \prod_{i,j}(\alpha_i - \beta_j) = a^m \prod_i Q(\alpha_i) = b^n \prod_j P(\beta_j)$$
 
 where $m = \deg P$ and $n = \deg Q$.
 
-**Technique: irreducibility.** Eisenstein's criterion: if $f(x) = a_n x^n + \cdots + a_0 \in \mathbb{Z}[x]$
+**Technique: irreducibility.** Eisenstein's criterion: if $f(x) = a_n x^n + \cdots + a_0 \in \mathbb{'\{'}Z{'\}'}[x]$
 and there exists a prime $p$ such that $p \nmid a_n$, $p \mid a_i$ for $i < n$, and $p^2 \nmid a_0$,
-then $f$ is irreducible over $\mathbb{Q}$.
+then $f$ is irreducible over $\mathbb{'\{'}Q{'\}'}$.
 
 **Technique: roots of unity.** The $n$-th roots of unity are $\zeta_n^k = e^{2\pi i k/n}$ for $k = 0, 1, \ldots, n-1$.
 The cyclotomic polynomial $\Phi_n(x) = \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n)=1}}(x - \zeta_n^k)$
-is irreducible over $\mathbb{Q}$ and has degree $\phi(n)$.
+is irreducible over $\mathbb{'\{'}Q{'\}'}$ and has degree $\phi(n)$.
 
 ### 4.3 Advanced Functional Equations
 
@@ -315,7 +315,7 @@ This occurs, for instance, when $C$ and $D$ are the intersections of a line with
 
 ### 5.3 Complex Numbers in Geometry
 
-**Setup.** Place the circumcircle of $\triangle ABC$ on the unit circle in $\mathbb{C}$. Then the
+**Setup.** Place the circumcircle of $\triangle ABC$ on the unit circle in $\mathbb{'\{'}C{'\}'}$. Then the
 vertices correspond to complex numbers $a, b, c$ with $|a| = |b| = |c| = 1$.
 
 **Key formulas.** With $a, b, c$ on the unit circle ($\bar{a} = 1/a$, etc.):
@@ -325,9 +325,9 @@ vertices correspond to complex numbers $a, b, c$ with $|a| = |b| = |c| = 1$.
 - **Circumcentre:** $o = 0$
 - **Nine-point centre:** $n = (a + b + c)/2$
 
-**Collinearity.** Points $p, q, r$ are collinear if and only if $\frac{p - q}{p - r} \in \mathbb{R}$.
+**Collinearity.** Points $p, q, r$ are collinear if and only if $\frac{p - q}{p - r} \in \mathbb{'\{'}R{'\}'}$.
 
-**Perpendicularity.** Lines $PQ$ and $RS$ are perpendicular if and only if $\frac{p - q}{r - s} \in i\mathbb{R}$.
+**Perpendicularity.** Lines $PQ$ and $RS$ are perpendicular if and only if $\frac{p - q}{r - s} \in i\mathbb{'\{'}R{'\}'}$.
 
 **Technique: the foot of the perpendicular.** The foot of the perpendicular from $P$ to line $AB$
 (where $a, b$ are on the unit circle) is:
@@ -436,17 +436,17 @@ $$\sum \frac{a^3}{b^2 - bc + c^2} = \sum \frac{a^4}{a(b^2 - bc + c^2)} \geq \fra
 
 The denominator expands as:
 
-$$\sum a(b^2 - bc + c^2) = \sum_{\text{sym}} a^2 b - 3abc$$
+$$\sum a(b^2 - bc + c^2) = \sum_{\text{'\{'}sym{'\}'}} a^2 b - 3abc$$
 
-where $\sum_{\text{sym}} a^2 b = a^2b + a^2c + ab^2 + ac^2 + b^2c + bc^2$.
+where $\sum_{\text{'\{'}sym{'\}'}} a^2 b = a^2b + a^2c + ab^2 + ac^2 + b^2c + bc^2$.
 
 We need to show:
 
-$$\frac{(a^2 + b^2 + c^2)^2}{\sum_{\text{sym}} a^2 b - 3abc} \geq a + b + c$$
+$$\frac{(a^2 + b^2 + c^2)^2}{\sum_{\text{'\{'}sym{'\}'}} a^2 b - 3abc} \geq a + b + c$$
 
-i.e., $(a^2 + b^2 + c^2)^2 \geq (a + b + c)\left(\sum_{\text{sym}} a^2 b - 3abc\right)$.
+i.e., $(a^2 + b^2 + c^2)^2 \geq (a + b + c)\left(\sum_{\text{'\{'}sym{'\}'}} a^2 b - 3abc\right)$.
 
-Let $S = a + b + c$, $Q = ab + bc + ca$, $P = abc$. Then $\sum_{\text{sym}} a^2 b = SQ - 3P$.
+Let $S = a + b + c$, $Q = ab + bc + ca$, $P = abc$. Then $\sum_{\text{'\{'}sym{'\}'}} a^2 b = SQ - 3P$.
 
 The right side becomes $(a+b+c)(SQ - 6P) = S^2 Q - 6SP$.
 
@@ -456,17 +456,17 @@ We need $S^4 - 4S^2 Q + 4Q^2 \geq S^2 Q - 6SP$, i.e., $S^4 - 5S^2 Q + 4Q^2 + 6SP
 
 Rather than expanding in symmetric polynomials, we proceed directly. The inequality is equivalent to:
 
-$$\sum a^4 + 2\sum a^2 b^2 \geq \sum_{\text{sym}} a^3 b - \sum a^2 bc$$
+$$\sum a^4 + 2\sum a^2 b^2 \geq \sum_{\text{'\{'}sym{'\}'}} a^3 b - \sum a^2 bc$$
 
 which simplifies to:
 
-$$\sum a^4 + \sum a^2 bc \geq \sum_{\text{sym}} a^3 b$$
+$$\sum a^4 + \sum a^2 bc \geq \sum_{\text{'\{'}sym{'\}'}} a^3 b$$
 
 But this is precisely Schur's inequality with $r = 1$:
 
-$$\sum a(a-b)(a-c) = \sum a^4 + abc(a+b+c) - \sum_{\text{sym}} a^3 b \geq 0$$
+$$\sum a(a-b)(a-c) = \sum a^4 + abc(a+b+c) - \sum_{\text{'\{'}sym{'\}'}} a^3 b \geq 0$$
 
-i.e., $\sum a^4 + \sum a^2 bc \geq \sum_{\text{sym}} a^3 b$.
+i.e., $\sum a^4 + \sum a^2 bc \geq \sum_{\text{'\{'}sym{'\}'}} a^3 b$.
 
 Equality holds when $a = b = c$.
 
@@ -529,35 +529,35 @@ through $P$) always passes through the Miquel point $R$, which is fixed.
 
 ---
 
-### Question 5 (Combinatorics: Graph Theory over $\mathbb{F}_2$)
+### Question 5 (Combinatorics: Graph Theory over $\mathbb{'\{'}F{'\}'}_2$)
 
 > A social network has $n$ users (where $n$ is odd). Some pairs of users are friends (symmetric).
 > Prove that there exists a non-empty set $S$ of users such that every user in the network has an
 > even number of friends in $S$.
 
-**Solution.** We work over the field $\mathbb{F}_2$. Label the users $1, 2, \ldots, n$. For each
-user $i$, let $\mathbf{v}_i \in \mathbb{F}_2^n$ be the vector whose $j$-th coordinate is $1$ if
+**Solution.** We work over the field $\mathbb{'\{'}F{'\}'}_2$. Label the users $1, 2, \ldots, n$. For each
+user $i$, let $\mathbf{'\{'}v{'\}'}_i \in \mathbb{'\{'}F{'\}'}_2^n$ be the vector whose $j$-th coordinate is $1$ if
 users $i$ and $j$ are friends, and $0$ otherwise (with $v_{ii} = 0$).
 
-A set $S$ corresponds to a vector $\mathbf{s} \in \mathbb{F}_2^n$ where $s_j = 1$ iff $j \in S$.
-The number of friends user $i$ has in $S$ (mod 2) is $\mathbf{v}_i \cdot \mathbf{s}$.
+A set $S$ corresponds to a vector $\mathbf{'\{'}s{'\}'} \in \mathbb{'\{'}F{'\}'}_2^n$ where $s_j = 1$ iff $j \in S$.
+The number of friends user $i$ has in $S$ (mod 2) is $\mathbf{'\{'}v{'\}'}_i \cdot \mathbf{'\{'}s{'\}'}$.
 
-We need $\mathbf{v}_i \cdot \mathbf{s} = 0$ for all $i$. Let $A$ be the $n \times n$ adjacency
-matrix (the $i$-th row is $\mathbf{v}_i$). The system is $A\mathbf{s} = \mathbf{0}$.
+We need $\mathbf{'\{'}v{'\}'}_i \cdot \mathbf{'\{'}s{'\}'} = 0$ for all $i$. Let $A$ be the $n \times n$ adjacency
+matrix (the $i$-th row is $\mathbf{'\{'}v{'\}'}_i$). The system is $A\mathbf{'\{'}s{'\}'} = \mathbf{'\{'}0{'\}'}$.
 
-$A$ is symmetric with zero diagonal. The quadratic form $q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$
+$A$ is symmetric with zero diagonal. The quadratic form $q(\mathbf{'\{'}x{'\}'}) = \mathbf{'\{'}x{'\}'}^T A \mathbf{'\{'}x{'\}'}$
 satisfies:
 
-$$q(\mathbf{x}) = \sum_{i,j} A_{ij} x_i x_j = 2\sum_{i < j} A_{ij} x_i x_j + \sum_i A_{ii} x_i^2 = 0$$
+$$q(\mathbf{'\{'}x{'\}'}) = \sum_{i,j} A_{ij} x_i x_j = 2\sum_{i < j} A_{ij} x_i x_j + \sum_i A_{ii} x_i^2 = 0$$
 
-since $2 = 0$ in $\mathbb{F}_2$ and $A_{ii} = 0$. So $q(\mathbf{x}) = 0$ for all $\mathbf{x}$.
+since $2 = 0$ in $\mathbb{'\{'}F{'\}'}_2$ and $A_{ii} = 0$. So $q(\mathbf{'\{'}x{'\}'}) = 0$ for all $\mathbf{'\{'}x{'\}'}$.
 
-For a non-singular symmetric matrix over $\mathbb{F}_2$ of odd dimension $n$, the associated
+For a non-singular symmetric matrix over $\mathbb{'\{'}F{'\}'}_2$ of odd dimension $n$, the associated
 quadratic form cannot be identically zero (a non-degenerate quadratic form in odd dimension over
-$\mathbb{F}_2$ must take non-zero values). Therefore $A$ is singular, meaning $\det(A) = 0$ in
-$\mathbb{F}_2$.
+$\mathbb{'\{'}F{'\}'}_2$ must take non-zero values). Therefore $A$ is singular, meaning $\det(A) = 0$ in
+$\mathbb{'\{'}F{'\}'}_2$.
 
-The system $A\mathbf{s} = \mathbf{0}$ therefore has a non-trivial solution, corresponding to a
+The system $A\mathbf{'\{'}s{'\}'} = \mathbf{'\{'}0{'\}'}$ therefore has a non-trivial solution, corresponding to a
 non-empty set $S$ with the desired property.
 
 ---

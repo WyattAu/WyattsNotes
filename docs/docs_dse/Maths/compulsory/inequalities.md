@@ -47,7 +47,7 @@ number **reverses** the inequality sign.
 ### Transitivity
 
 $$
-a > b \mathrm{ and } b > c \implies a > c
+a > b \mathrm{'\{'} and {'\}'} b > c \implies a > c
 $$
 
 ### Other Properties
@@ -244,7 +244,7 @@ $$
 Geometrically, $x$ is more than distance $a$ from zero.
 
 $$
-|x| > a \iff x < -a \;\mathrm{ or }\; x > a
+|x| > a \iff x < -a \;\mathrm{'\{'} or {'\}'}\; x > a
 $$
 
 ### General Forms
@@ -260,7 +260,7 @@ This is equivalent to a system of two linear inequalities, which can be solved s
 **$|ax + b| > c$** (where $c > 0$):
 
 $$
-|ax + b| > c \iff ax + b < -c \;\mathrm{ or }\; ax + b > c
+|ax + b| > c \iff ax + b < -c \;\mathrm{'\{'} or {'\}'}\; ax + b > c
 $$
 
 This gives two separate linear inequalities, each solved independently.
@@ -268,7 +268,7 @@ This gives two separate linear inequalities, each solved independently.
 ### Special Cases
 
 - If $c \leq 0$, then $|x| < c$ has no solution ($\varnothing$).
-- If $c < 0$, then $|x| > c$ is true for all real $x$ ($\mathbb{R}$).
+- If $c < 0$, then $|x| > c$ is true for all real $x$ ($\mathbb{'\{'}R{'\}'}$).
 - $|x| \geq a$ and $|x| \leq a$ follow the same patterns with non-strict inequality signs.
 
 <details>
@@ -284,15 +284,15 @@ Solution: $(-2, 8)$.
 - Solve $|2x + 1| \geq 7$:
 
 $$
-2x + 1 \leq -7 \;\mathrm{ or }\; 2x + 1 \geq 7
+2x + 1 \leq -7 \;\mathrm{'\{'} or {'\}'}\; 2x + 1 \geq 7
 $$
 
 $$
-2x \leq -8 \;\mathrm{ or }\; 2x \geq 6
+2x \leq -8 \;\mathrm{'\{'} or {'\}'}\; 2x \geq 6
 $$
 
 $$
-x \leq -4 \;\mathrm{ or }\; x \geq 3
+x \leq -4 \;\mathrm{'\{'} or {'\}'}\; x \geq 3
 $$
 
 Solution: $(-\infty, -4] \cup [3, \infty)$.
@@ -303,7 +303,7 @@ $$
 3x - 6 \neq 0 \implies x \neq 2
 $$
 
-Solution: $\mathbb{R} \setminus \{2\}$.
+Solution: $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
 
 - Solve $|x^2 - 4| < 5$:
 
@@ -414,7 +414,7 @@ Factorize: $(x - 3)^2 \geq 0$.
 Since $(x - 3)^2 \geq 0$ for all real $x$ (a square is always non-negative), the solution is all
 real numbers.
 
-Solution: $\mathbb{R}$.
+Solution: $\mathbb{'\{'}R{'\}'}$.
 
 </details>
 
@@ -738,7 +738,7 @@ Case 2: $m \neq 0$. For $mx^2 + (m-1)x + m > 0$ for all real $x$, we need $m > 0
 
 $$\Delta = (m - 1)^2 - 4m^2 = m^2 - 2m + 1 - 4m^2 = -3m^2 - 2m + 1 < 0$$
 
-$$3m^2 + 2m - 1 > 0 \implies (3m - 1)(m + 1) > 0 \implies m < -1 \;\text{or}\; m > \dfrac{1}{3}$$
+$$3m^2 + 2m - 1 > 0 \implies (3m - 1)(m + 1) > 0 \implies m < -1 \;\text{'\{'}or{'\}'}\; m > \dfrac{1}{3}$$
 
 Combined with $m > 0$: $m > \dfrac{1}{3}$.
 

@@ -19,14 +19,14 @@ specifying a property that its members satisfy.
 - $x \notin X$ — the element $x$ does not belong to $X$
 - $A \subseteq B$ — $A$ is a subset of $B$: every element of $A$ is also an element of $B$
 - $|A|$ — the cardinality (number of elements) of a finite set $A$
-- $\mathcal{P}(A)$ — the power set of $A$: the set of all subsets of $A$
+- $\mathcal{'\{'}P{'\}'}(A)$ — the power set of $A$: the set of all subsets of $A$
 
 ### Set-Builder Notation
 
 A set can be defined by a property:
 
 $$
-\{x \in \mathbb{R} \mid x^2 - 4 = 0\} = \{-2, 2\}
+\{x \in \mathbb{'\{'}R{'\}'} \mid x^2 - 4 = 0\} = \{-2, 2\}
 $$
 
 The vertical bar is read "such that."
@@ -35,8 +35,8 @@ The vertical bar is read "such that."
 
 Let $A$ and $B$ be subsets of a universal set $U$.
 
-- **Union:** $A \cup B = \{x \in U \mid x \in A \mathrm{ or } x \in B\}$
-- **Intersection:** $A \cap B = \{x \in U \mid x \in A \mathrm{ and } x \in B\}$
+- **Union:** $A \cup B = \{x \in U \mid x \in A \mathrm{'\{'} or {'\}'} x \in B\}$
+- **Intersection:** $A \cap B = \{x \in U \mid x \in A \mathrm{'\{'} and {'\}'} x \in B\}$
 - **Complement:** $A' = \{x \in U \mid x \notin A\}$
 - **Set difference:** $A \setminus B = \{x \in A \mid x \notin B\}$
 
@@ -65,16 +65,16 @@ The second law follows by symmetry or by applying the first law to $A'$ and $B'$
 
 ### Power Sets
 
-The **power set** $\mathcal{P}(A)$ of a set $A$ is the set of all subsets of $A$, including
+The **power set** $\mathcal{'\{'}P{'\}'}(A)$ of a set $A$ is the set of all subsets of $A$, including
 $\emptyset$ and $A$ itself.
 
-If $|A| = n$, then $|\mathcal{P}(A)| = 2^n$.
+If $|A| = n$, then $|\mathcal{'\{'}P{'\}'}(A)| = 2^n$.
 
 <details>
 <summary>Worked example: Power set</summary>
 
 Let $A = \{1, 2, 3\}$. Then
-$\mathcal{P}(A) = \big\{\emptyset,\, \{1\},\, \{2\},\, \{3\},\, \{1,2\},\, \{1,3\},\, \{2,3\},\, \{1,2,3\}\big\}$.
+$\mathcal{'\{'}P{'\}'}(A) = \big\{\emptyset,\, \{1\},\, \{2\},\, \{3\},\, \{1,2\},\, \{1,3\},\, \{2,3\},\, \{1,2,3\}\big\}$.
 
 There are $2^3 = 8$ subsets, as expected.
 
@@ -122,11 +122,11 @@ $$f: X \to Y$$
 <details>
 <summary>Non-examples of functions</summary>
 
-- $f_1: \mathbb{R}^+ \to \mathbb{R},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to two values, $f_1$ is
+- $f_1: \mathbb{'\{'}R{'\}'}^+ \to \mathbb{'\{'}R{'\}'},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to two values, $f_1$ is
   not a function.
-- $f_2: \mathbb{R} \to \mathbb{R},\; f_2(x) = \frac{1}{x}$ — At $x = 0$, $f_2(0)$ is undefined, so
+- $f_2: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f_2(x) = \frac{1}{x}$ — At $x = 0$, $f_2(0)$ is undefined, so
   not every element of the domain is mapped. Redefine as
-  $f_2: \mathbb{R} \setminus \{0\} \to \mathbb{R}$.
+  $f_2: \mathbb{'\{'}R{'\}'} \setminus \{0\} \to \mathbb{'\{'}R{'\}'}$.
 - $f_3: \emptyset \to Y$ — Since no elements are in the domain, uniqueness is vacuously satisfied.
   This is a valid (empty) function.
 
@@ -145,35 +145,35 @@ $$A = \{f(x) \mid x \in X\}, \quad A \subseteq Y$$
 - **Injective (one-to-one):** Distinct inputs give distinct outputs:
   $f(x_1) = f(x_2) \implies x_1 = x_2$
 - **Bijective:** Both surjective and injective
-- **Odd:** $f(-x) = -f(x)$ for all $x \in \mathbb{R}$
-- **Even:** $f(-x) = f(x)$ for all $x \in \mathbb{R}$
+- **Odd:** $f(-x) = -f(x)$ for all $x \in \mathbb{'\{'}R{'\}'}$
+- **Even:** $f(-x) = f(x)$ for all $x \in \mathbb{'\{'}R{'\}'}$
 
 ### Injectivity, Surjectivity, and Bijectivity — Worked Examples
 
 <details>
 <summary>Example: Determining injectivity and surjectivity</summary>
 
-Let $f: \mathbb{R} \to \mathbb{R},\; f(x) = x^2$.
+Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = x^2$.
 
 _Injective?_ No. $f(1) = f(-1) = 1$, so distinct inputs map to the same output. (This is also an
 even function.)
 
-_Surjective?_ No. There is no $x \in \mathbb{R}$ such that $f(x) = -1$, so
-$-1 \notin \mathrm{range}(f)$.
+_Surjective?_ No. There is no $x \in \mathbb{'\{'}R{'\}'}$ such that $f(x) = -1$, so
+$-1 \notin \mathrm{'\{'}range{'\}'}(f)$.
 
-The range is $[0, \infty)$, a proper subset of $\mathbb{R}$.
+The range is $[0, \infty)$, a proper subset of $\mathbb{'\{'}R{'\}'}$.
 
 </details>
 
 <details>
 <summary>Example: Proving a function is bijective</summary>
 
-Let $f: \mathbb{R} \to \mathbb{R},\; f(x) = 2x + 3$.
+Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = 2x + 3$.
 
 _Injective:_ Suppose $f(x_1) = f(x_2)$. Then $2x_1 + 3 = 2x_2 + 3$, so $x_1 = x_2$.
 
-_Surjective:_ Let $y \in \mathbb{R}$. We need $2x + 3 = y$, i.e. $x = \frac{y - 3}{2}$. Since
-$\frac{y-3}{2} \in \mathbb{R}$, every $y$ is in the range.
+_Surjective:_ Let $y \in \mathbb{'\{'}R{'\}'}$. We need $2x + 3 = y$, i.e. $x = \frac{y - 3}{2}$. Since
+$\frac{y-3}{2} \in \mathbb{'\{'}R{'\}'}$, every $y$ is in the range.
 
 Therefore $f$ is bijective.
 
@@ -183,7 +183,7 @@ Therefore $f$ is bijective.
 
 If $f: X \to Y$ is bijective, the **inverse function** $f^{-1}: Y \to X$ exists and satisfies:
 
-$$f^{-1}(f(x)) = x \quad \mathrm{for all } x \in X, \qquad f(f^{-1}(y)) = y \quad \mathrm{for all } y \in Y$$
+$$f^{-1}(f(x)) = x \quad \mathrm{'\{'}for all {'\}'} x \in X, \qquad f(f^{-1}(y)) = y \quad \mathrm{'\{'}for all {'\}'} y \in Y$$
 
 To find $f^{-1}$: write $y = f(x)$, solve for $x$ in terms of $y$, then interchange $x$ and $y$.
 
@@ -193,13 +193,13 @@ it is bijective.
 <details>
 <summary>Example: Finding an inverse function</summary>
 
-Let $f: \mathbb{R} \to \mathbb{R},\; f(x) = \frac{2x + 1}{x - 3}$, with domain
-$\mathbb{R} \setminus \{3\}$.
+Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = \frac{2x + 1}{x - 3}$, with domain
+$\mathbb{'\{'}R{'\}'} \setminus \{3\}$.
 
 Set $y = \frac{2x+1}{x-3}$. Then $y(x-3) = 2x+1$, so $yx - 3y = 2x + 1$, hence $x(y-2) = 3y+1$,
 giving $x = \frac{3y+1}{y-2}$.
 
-Therefore $f^{-1}(x) = \frac{3x+1}{x-2}$ with domain $\mathbb{R} \setminus \{2\}$.
+Therefore $f^{-1}(x) = \frac{3x+1}{x-2}$ with domain $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
 
 </details>
 
@@ -207,8 +207,8 @@ Therefore $f^{-1}(x) = \frac{3x+1}{x-2}$ with domain $\mathbb{R} \setminus \{2\}
 
 A function $f$ is **self-inverse** if $f(f(x)) = x$ for all $x$ in the domain, i.e. $f^{-1} = f$.
 
-Common examples: $f(x) = \frac{1}{x}$ on $\mathbb{R} \setminus \{0\}$; $f(x) = a - x$ on
-$\mathbb{R}$.
+Common examples: $f(x) = \frac{1}{x}$ on $\mathbb{'\{'}R{'\}'} \setminus \{0\}$; $f(x) = a - x$ on
+$\mathbb{'\{'}R{'\}'}$.
 
 ### Domain Restriction to Achieve Injectivity
 
@@ -217,7 +217,7 @@ A non-injective function can be made injective by restricting its domain.
 <details>
 <summary>Example: Restricting domain</summary>
 
-$f(x) = x^2$ is not injective on $\mathbb{R}$ since $f(1) = f(-1)$. But by restricting to
+$f(x) = x^2$ is not injective on $\mathbb{'\{'}R{'\}'}$ since $f(1) = f(-1)$. But by restricting to
 $[0, \infty)$, every non-negative real has exactly one non-negative square root, so
 $f: [0, \infty) \to [0, \infty)$ is bijective with inverse $f^{-1}(x) = \sqrt{x}$.
 
@@ -232,7 +232,7 @@ $f^{-1}(x) = -\sqrt{x}$.
 
 A number in scientific notation has the form:
 
-$$a = b \times 10^k, \quad b \in \mathbb{R},\; 1 \le |b| \lt 10,\; k \in \mathbb{Z}$$
+$$a = b \times 10^k, \quad b \in \mathbb{'\{'}R{'\}'},\; 1 \le |b| \lt 10,\; k \in \mathbb{'\{'}Z{'\}'}$$
 
 ### Multiplication of Numbers in Scientific Notation
 
@@ -275,25 +275,25 @@ $\frac{1}{2} \times 10^{-d}$ where $d$ is the number of decimal places.
 <details>
 <summary>Worked example: Bounds</summary>
 
-The sides of a rectangle are measured as $5.2\,\mathrm{cm}$ and $3.8\,\mathrm{cm}$ (each to 1 d.p.).
+The sides of a rectangle are measured as $5.2\,\mathrm{'\{'}cm{'\}'}$ and $3.8\,\mathrm{'\{'}cm{'\}'}$ (each to 1 d.p.).
 
 Upper bounds: $5.25$ and $3.85$. Lower bounds: $5.15$ and $3.75$.
 
-Maximum area: $5.25 \times 3.85 = 20.2125\,\mathrm{cm}^2$.
+Maximum area: $5.25 \times 3.85 = 20.2125\,\mathrm{'\{'}cm{'\}'}^2$.
 
-Minimum area: $5.15 \times 3.75 = 19.3125\,\mathrm{cm}^2$.
+Minimum area: $5.15 \times 3.75 = 19.3125\,\mathrm{'\{'}cm{'\}'}^2$.
 
-The area is $19.8\,\mathrm{cm}^2 \pm 0.45\,\mathrm{cm}^2$ (to 1 d.p.), but in bounds form we write
+The area is $19.8\,\mathrm{'\{'}cm{'\}'}^2 \pm 0.45\,\mathrm{'\{'}cm{'\}'}^2$ (to 1 d.p.), but in bounds form we write
 $19.3125 \le A \lt 20.2125$.
 
 </details>
 
 ## Sequences and Series
 
-A sequence is a function $f$ with domain $\mathbb{N}$ (or $\mathbb{N}_0$) and codomain $X$. Writing
+A sequence is a function $f$ with domain $\mathbb{'\{'}N{'\}'}$ (or $\mathbb{'\{'}N{'\}'}_0$) and codomain $X$. Writing
 $u_n = f(n)$, every sequence is ordered by its index.
 
-$$f: \mathbb{N} \to X, \quad u_n = f(n), \; n \in \mathbb{N}$$
+$$f: \mathbb{'\{'}N{'\}'} \to X, \quad u_n = f(n), \; n \in \mathbb{'\{'}N{'\}'}$$
 
 ### Series and Partial Sums
 
@@ -462,7 +462,7 @@ $3^n - 1 = 6560 \implies 3^n = 6561 = 3^8 \implies n = 8$
 
 A logarithm is the inverse function of the exponential $f(x) = b^x$:
 
-$$\log_b(b^x) = x, \quad b \in \{r \in \mathbb{R} \mid r \gt 0,\; r \ne 1\}$$
+$$\log_b(b^x) = x, \quad b \in \{r \in \mathbb{'\{'}R{'\}'} \mid r \gt 0,\; r \ne 1\}$$
 
 The logarithm $\log_b x$ answers the question: "to what power must $b$ be raised to obtain $x$?"
 
@@ -606,7 +606,7 @@ This equals $\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$, which is the formula for $n = 
 <details>
 <summary>Example: Prove a divisibility result</summary>
 
-Prove $3^{2n} - 1$ is divisible by 8 for all $n \in \mathbb{N}$.
+Prove $3^{2n} - 1$ is divisible by 8 for all $n \in \mathbb{'\{'}N{'\}'}$.
 
 **Base case ($n = 1$):** $3^2 - 1 = 9 - 1 = 8$, which is divisible by 8. True.
 
@@ -650,7 +650,7 @@ Since $k \ge 1$, we have $2k = k + k \ge k + 1$. Therefore $2^{k+1} \gt k + 1$. 
 
 ### Statement
 
-For any non-negative integer $n$ and any $a, b \in \mathbb{R}$:
+For any non-negative integer $n$ and any $a, b \in \mathbb{'\{'}R{'\}'}$:
 
 $$(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k$$
 
@@ -774,7 +774,7 @@ Find: (a) $A \cap B$, (b) $A \cup B$, (c) $A'$, (d) $(A \cap B)'$, (e) $|A \cup 
 <details>
 <summary>Problem 2: Functions — bijectivity</summary>
 
-Let $f: \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = x^3 - x$. Determine whether $f$ is
+Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ be defined by $f(x) = x^3 - x$. Determine whether $f$ is
 injective, surjective, or neither.
 
 **Solution.**
@@ -792,7 +792,7 @@ Therefore $f$ is surjective but not injective.
 <details>
 <summary>Problem 3: Scientific notation and error</summary>
 
-The speed of light is measured as $3.00 \times 10^8\,\mathrm{m/s}$ to 3 s.f. Find the absolute and
+The speed of light is measured as $3.00 \times 10^8\,\mathrm{'\{'}m/s{'\}'}$ to 3 s.f. Find the absolute and
 relative error.
 
 **Solution.**
@@ -800,7 +800,7 @@ relative error.
 Upper bound: $3.005 \times 10^8$. Lower bound: $2.995 \times 10^8$.
 
 Maximum absolute error:
-$\frac{1}{2} \times 10^{8-2} = 0.005 \times 10^8 = 5 \times 10^5\,\mathrm{m/s}$.
+$\frac{1}{2} \times 10^{8-2} = 0.005 \times 10^8 = 5 \times 10^5\,\mathrm{'\{'}m/s{'\}'}$.
 
 Relative error:
 $\frac{5 \times 10^5}{3.00 \times 10^8} = \frac{5}{300} = \frac{1}{60} \approx 0.0167$ (about
@@ -859,7 +859,7 @@ Solve for $x$: $\log_3(x - 1) + \log_3(x + 1) = \log_3 8$.
 
 By the product rule: $\log_3\!\big((x-1)(x+1)\big) = \log_3 8$
 
-$(x-1)(x+1) = 8 \implies x^2 - 1 = 8 \implies x^2 = 9 \implies x = 3 \mathrm{ or } x = -3$
+$(x-1)(x+1) = 8 \implies x^2 - 1 = 8 \implies x^2 = 9 \implies x = 3 \mathrm{'\{'} or {'\}'} x = -3$
 
 Domain check: $x - 1 \gt 0 \implies x \gt 1$. So $x = -3$ is rejected.
 
@@ -870,7 +870,7 @@ Solution: $x = 3$.
 <details>
 <summary>Problem 7: Mathematical induction</summary>
 
-Prove by induction that $n^3 + 2n$ is divisible by $3$ for all $n \in \mathbb{N}$.
+Prove by induction that $n^3 + 2n$ is divisible by $3$ for all $n \in \mathbb{'\{'}N{'\}'}$.
 
 **Solution.**
 

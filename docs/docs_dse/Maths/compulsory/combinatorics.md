@@ -66,17 +66,17 @@ $$
 
 When selecting $r$ number of objects from $n$ distinct objects, the number of choice for each
 selection therefore decreases by one similarly, but only down to the last position needed, therefore
-the permutation $n \mathbf{P} r$ is:
+the permutation $n \mathbf{'\{'}P{'\}'} r$ is:
 
 $$
 \begin{aligned}
-  n \mathbf{P} r = P(n, r) = n(n-1)(n-2) \ldots (n-r+2)(n-r+1) = \frac{n!}{(n-r)!}
+  n \mathbf{'\{'}P{'\}'} r = P(n, r) = n(n-1)(n-2) \ldots (n-r+2)(n-r+1) = \frac{n!}{(n-r)!}
 \end{aligned}
 $$
 
 <details>
 <summary>Examples</summary>
-- Number of ways you can put $5$ people in a queue from a class of $30$ people, $30 \mathbf{P} 5 = 17 100 720$
+- Number of ways you can put $5$ people in a queue from a class of $30$ people, $30 \mathbf{'\{'}P{'\}'} 5 = 17 100 720$
 - $15$ runners distributed across gold/silver/bronze positions: $P(15,3) = 15 \times 14 \times 13 = 2,730$ arrangements
 - 7 teams assigned to 7 distinct time slots: $P(7,7) = 5,040$ distinct schedules
 </details>
@@ -85,18 +85,18 @@ $$
 
 A combination is a selection of $r$ objects from $n$ distinct objects where order is irrelevant.
 Since the number of ways to permute the given selection is ($r!$), the combination
-($n \mathbf{C} r$) can multiply $r!$ to obtain the permutation ($n \mathbf{P} r$):
+($n \mathbf{'\{'}C{'\}'} r$) can multiply $r!$ to obtain the permutation ($n \mathbf{'\{'}P{'\}'} r$):
 
 $$
 \begin{aligned}
-  k!(n \mathbf{C} r) = n\mathbf{P}r = \frac{n!}{(n-r)!}\\
-  n \mathbf{C} r = \binom{n}{r} = \frac{n!}{(n-r)!r!}
+  k!(n \mathbf{'\{'}C{'\}'} r) = n\mathbf{'\{'}P{'\}'}r = \frac{n!}{(n-r)!}\\
+  n \mathbf{'\{'}C{'\}'} r = \binom{n}{r} = \frac{n!}{(n-r)!r!}
 \end{aligned}
 $$
 
 <details>
 <summary>Examples</summary>
-- Number of ways you can put $5$ people in a group from a class of $30$ people, $30 \mathbf{C} 5 = 142506$
+- Number of ways you can put $5$ people in a group from a class of $30$ people, $30 \mathbf{'\{'}C{'\}'} 5 = 142506$
 - 5 members chosen from 20 candidates: $\binom{20}{5} = 15,504$
 </details>
 
@@ -122,7 +122,7 @@ $$
 
 ### Non-negative Integer solutions
 
-In a case where $k = \sum_{i=0}^m n_i$, $k, n_i, m \in \mathbb{Z^+}$, the possible number of
+In a case where $k = \sum_{i=0}^m n_i$, $k, n_i, m \in \mathbb{'\{'}Z^+{'\}'}$, the possible number of
 solutions ($N$) can be thought of using the stars and bars method. This method imagine a $m-1$
 number of bars as separations between each share of $k$ distributed to each $n_i$, due to the
 discrete behavior of the separations, $k$ can be thought of as a number of stars. The total state
@@ -280,7 +280,7 @@ arrangement (rotate by $0, 1, \ldots, n-1$ positions), so:
 
 $$
 \begin{aligned}
-  \mathrm{circular permutations} = \frac{n!}{n} = (n-1)!
+  \mathrm{'\{'}circular permutations{'\}'} = \frac{n!}{n} = (n-1)!
 \end{aligned}
 $$
 
@@ -421,7 +421,7 @@ Total permutations: $5! = 120$. Derangements: $!5 = 44$.
 
 $$
 \begin{aligned}
-  P(\mathrm{no fixed point}) = \frac{44}{120} = \frac{11}{30} \approx 0.367
+  P(\mathrm{'\{'}no fixed point{'\}'}) = \frac{44}{120} = \frac{11}{30} \approx 0.367
 \end{aligned}
 $$
 
@@ -433,7 +433,7 @@ in wrong envelopes: $!3 = 2$ ways. Total:
 
 $$
 \begin{aligned}
-  P(\mathrm{exactly 1 correct}) = \frac{4 \times 2}{4!} = \frac{8}{24} = \frac{1}{3}
+  P(\mathrm{'\{'}exactly 1 correct{'\}'}) = \frac{4 \times 2}{4!} = \frac{8}{24} = \frac{1}{3}
 \end{aligned}
 $$
 
@@ -448,7 +448,7 @@ complement and subtract from the total.
 
 $$
 \begin{aligned}
-  \mathrm{Count}(\mathrm{at least } k) = \mathrm{Total} - \mathrm{Count}(\mathrm{at most } k-1)
+  \mathrm{'\{'}Count{'\}'}(\mathrm{'\{'}at least {'\}'} k) = \mathrm{'\{'}Total{'\}'} - \mathrm{'\{'}Count{'\}'}(\mathrm{'\{'}at most {'\}'} k-1)
 \end{aligned}
 $$
 
@@ -518,7 +518,7 @@ a different outcome?
 - Choosing a committee: combination (order does not matter).
 - Assigning gold/silver/bronze: permutation. Selecting 3 finalists: combination.
 
-The relationship $\binom{n}{r} = \frac{n \mathbf{P} r}{r!}$ is the definitive test -- if you can
+The relationship $\binom{n}{r} = \frac{n \mathbf{'\{'}P{'\}'} r}{r!}$ is the definitive test -- if you can
 justify dividing out the $r!$, you have a combination.
 
 </details>

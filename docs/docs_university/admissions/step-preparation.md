@@ -178,17 +178,17 @@ where $A_k = a_1 + \cdots + a_k$.
 
 ### 4.1 Vectors in Two and Three Dimensions
 
-**Scalar product.** $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta = a_1b_1 + a_2b_2 + a_3b_3$.
+**Scalar product.** $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = |\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta = a_1b_1 + a_2b_2 + a_3b_3$.
 
-**Vector product.** $\mathbf{a} \times \mathbf{b}$ is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$
-with magnitude $|\mathbf{a}||\mathbf{b}|\sin\theta$.
+**Vector product.** $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ is perpendicular to both $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$
+with magnitude $|\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\sin\theta$.
 
-**Triple scalar product.** $[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$
-equals the signed volume of the parallelepiped spanned by $\mathbf{a}, \mathbf{b}, \mathbf{c}$.
+**Triple scalar product.** $[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = \mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})$
+equals the signed volume of the parallelepiped spanned by $\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}$.
 
-**Vector equation of a line.** $\mathbf{r} = \mathbf{a} + t\mathbf{d}$.
+**Vector equation of a line.** $\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}a{'\}'} + t\mathbf{'\{'}d{'\}'}$.
 
-**Vector equation of a plane.** $\mathbf{r} \cdot \mathbf{n} = d$, or $\mathbf{r} = \mathbf{a} + s\mathbf{b} + t\mathbf{c}$.
+**Vector equation of a plane.** $\mathbf{'\{'}r{'\}'} \cdot \mathbf{'\{'}n{'\}'} = d$, or $\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}a{'\}'} + s\mathbf{'\{'}b{'\}'} + t\mathbf{'\{'}c{'\}'}$.
 
 ### 4.2 Matrices
 
@@ -199,10 +199,10 @@ not commutative.
 
 $$\det A = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - a_{12}(a_{21}a_{33} - a_{23}a_{31}) + a_{13}(a_{21}a_{32} - a_{22}a_{31})$$
 
-**Inverse.** $A^{-1} = \frac{1}{\det A}\text{adj}(A)$. A matrix is invertible if and only if $\det A \neq 0$.
+**Inverse.** $A^{-1} = \frac{1}{\det A}\text{'\{'}adj{'\}'}(A)$. A matrix is invertible if and only if $\det A \neq 0$.
 
 **Eigenvalues and eigenvectors.** Solve $\det(A - \lambda I) = 0$ for eigenvalues $\lambda$, then solve
-$(A - \lambda I)\mathbf{v} = \mathbf{0}$ for eigenvectors $\mathbf{v}$.
+$(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ for eigenvectors $\mathbf{'\{'}v{'\}'}$.
 
 **Transformation matrices.** Reflection in the line $y = x\tan\theta$, rotation by angle $\theta$,
 and other geometric transformations can be represented as $2 \times 2$ or $3 \times 3$ matrices.
@@ -236,9 +236,9 @@ $$P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}$$
 
 **Expected value and variance.** For a discrete random variable $X$:
 
-$$\mathbb{E}(X) = \sum_i x_i p_i, \quad \text{Var}(X) = \mathbb{E}(X^2) - [\mathbb{E}(X)]^2$$
+$$\mathbb{'\{'}E{'\}'}(X) = \sum_i x_i p_i, \quad \text{'\{'}Var{'\}'}(X) = \mathbb{'\{'}E{'\}'}(X^2) - [\mathbb{'\{'}E{'\}'}(X)]^2$$
 
-**Linearity of expectation.** $\mathbb{E}(X + Y) = \mathbb{E}(X) + \mathbb{E}(Y)$ always, regardless of
+**Linearity of expectation.** $\mathbb{'\{'}E{'\}'}(X + Y) = \mathbb{'\{'}E{'\}'}(X) + \mathbb{'\{'}E{'\}'}(Y)$ always, regardless of
 independence.
 
 ### 5.3 Common STEP Combinatorics Techniques
@@ -457,9 +457,9 @@ Since $L \geq \sqrt{2} > 0$, we have $L = \sqrt{2}$.
 > A bag contains $n$ balls, of which $r$ are red and $n - r$ are blue. Balls are drawn one at a time
 > without replacement until a red ball is drawn. Let $X$ be the number of draws required.
 >
-> (i) Find $\mathbb{E}(X)$.
-> (ii) Find $\text{Var}(X)$.
-> (iii) Show that $\mathbb{E}(X) = \frac{n+1}{r+1}$.
+> (i) Find $\mathbb{'\{'}E{'\}'}(X)$.
+> (ii) Find $\text{'\{'}Var{'\}'}(X)$.
+> (iii) Show that $\mathbb{'\{'}E{'\}'}(X) = \frac{n+1}{r+1}$.
 
 **Solution.** This is a negative hypergeometric distribution.
 
@@ -468,7 +468,7 @@ i.e., $I_j = 1$ if the first $j-1$ draws are all blue and the $j$-th is red.
 
 The probability that the first $j-1$ draws are all blue is:
 
-$$P(\text{first } j-1 \text{ are blue}) = \frac{\binom{n-r}{j-1}}{\binom{n}{j-1}}$$
+$$P(\text{'\{'}first {'\}'} j-1 \text{'\{'} are blue{'\}'}) = \frac{\binom{n-r}{j-1}}{\binom{n}{j-1}}$$
 
 provided $j - 1 \leq n - r$. Then:
 
@@ -481,28 +481,28 @@ red balls creating $r + 1$ "gaps" (before the first red, between consecutive red
 The blue balls are distributed uniformly at random among these $r + 1$ gaps.
 
 Let $B_i$ be the number of blue balls in gap $i$. Then $B_1 + B_2 + \cdots + B_{r+1} = n - r$, and by
-symmetry $\mathbb{E}(B_i) = \frac{n - r}{r + 1}$ for each $i$.
+symmetry $\mathbb{'\{'}E{'\}'}(B_i) = \frac{n - r}{r + 1}$ for each $i$.
 
 The number of draws $X$ equals $B_1 + 1$ (the blue balls before the first red, plus one for the first
 red ball itself). Therefore:
 
-$$\mathbb{E}(X) = \mathbb{E}(B_1) + 1 = \frac{n - r}{r + 1} + 1 = \frac{n - r + r + 1}{r + 1} = \frac{n + 1}{r + 1}$$
+$$\mathbb{'\{'}E{'\}'}(X) = \mathbb{'\{'}E{'\}'}(B_1) + 1 = \frac{n - r}{r + 1} + 1 = \frac{n - r + r + 1}{r + 1} = \frac{n + 1}{r + 1}$$
 
 **(ii)** For the variance, use a similar symmetry argument. We need
-$\mathbb{E}(B_1^2)$. The blue balls are distributed multinomially among $r + 1$ gaps with equal
+$\mathbb{'\{'}E{'\}'}(B_1^2)$. The blue balls are distributed multinomially among $r + 1$ gaps with equal
 probabilities $\frac{1}{r+1}$ each. For a multinomial distribution:
 
-$$\text{Var}(B_1) = (n-r)\cdot\frac{1}{r+1}\cdot\frac{r}{r+1} = \frac{r(n-r)}{(r+1)^2}$$
+$$\text{'\{'}Var{'\}'}(B_1) = (n-r)\cdot\frac{1}{r+1}\cdot\frac{r}{r+1} = \frac{r(n-r)}{(r+1)^2}$$
 
-Since $\text{Var}(B_1) = \mathbb{E}(B_1^2) - [\mathbb{E}(B_1)]^2$:
+Since $\text{'\{'}Var{'\}'}(B_1) = \mathbb{'\{'}E{'\}'}(B_1^2) - [\mathbb{'\{'}E{'\}'}(B_1)]^2$:
 
-$$\mathbb{E}(B_1^2) = \frac{r(n-r)}{(r+1)^2} + \frac{(n-r)^2}{(r+1)^2} = \frac{(n-r)(r + n - r)}{(r+1)^2} = \frac{(n-r)n}{(r+1)^2}$$
+$$\mathbb{'\{'}E{'\}'}(B_1^2) = \frac{r(n-r)}{(r+1)^2} + \frac{(n-r)^2}{(r+1)^2} = \frac{(n-r)(r + n - r)}{(r+1)^2} = \frac{(n-r)n}{(r+1)^2}$$
 
 Since $X = B_1 + 1$:
 
-$$\text{Var}(X) = \text{Var}(B_1) = \frac{r(n-r)}{(r+1)^2}$$
+$$\text{'\{'}Var{'\}'}(X) = \text{'\{'}Var{'\}'}(B_1) = \frac{r(n-r)}{(r+1)^2}$$
 
-**(iii)** This was established in part (i): $\mathbb{E}(X) = \frac{n+1}{r+1}$.
+**(iii)** This was established in part (i): $\mathbb{'\{'}E{'\}'}(X) = \frac{n+1}{r+1}$.
 
 ---
 

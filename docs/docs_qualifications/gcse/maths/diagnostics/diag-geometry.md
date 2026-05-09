@@ -20,7 +20,7 @@ hide_table_of_contents: true
 Angle with ground: $\tan \theta = \frac{9}{3} = 3$. $\theta = \arctan(3) \approx 71.6^\circ$.
 
 (c) The angle of depression from the cliff equals the angle of elevation from the boat: $35^\circ$.
-$\tan 35^\circ = \frac{\text{opposite}}{\text{adjacent}} = \frac{80}{d}$. $d = \frac{80}{\tan 35^\circ} = \frac{80}{0.7002} \approx 114.3$ m.
+$\tan 35^\circ = \frac{\text{'\{'}opposite{'\}'}}{\text{'\{'}adjacent{'\}'}} = \frac{80}{d}$. $d = \frac{80}{\tan 35^\circ} = \frac{80}{0.7002} \approx 114.3$ m.
 
 ### UT-2: Area and Volume
 **Question:** (a) Calculate the area of a triangle with base 12 cm and height 8 cm. (b) A cylinder has radius 5 cm and height 10 cm. Calculate its volume and total surface area. (c) A cone has slant height 13 cm and base radius 5 cm. Calculate its volume. (d) A sphere has surface area $144\pi$ cm$^2$. Calculate its volume.
@@ -66,7 +66,7 @@ Angle between tangent and diameter $= 90^\circ$ (tangent perpendicular to radius
 
 **Solution:**
 
-(a) Volume $= \frac{1}{3} \times \text{base area} \times \text{height} = \frac{1}{3} \times 100 \times 12 = 400$ cm$^3$.
+(a) Volume $= \frac{1}{3} \times \text{'\{'}base area{'\}'} \times \text{'\{'}height{'\}'} = \frac{1}{3} \times 100 \times 12 = 400$ cm$^3$.
 
 (b) Distance from centre of base to a corner $= \sqrt{5^2 + 5^2} = \sqrt{50} = 5\sqrt{2}$ cm.
 Slant edge $= \sqrt{12^2 + (5\sqrt{2})^2} = \sqrt{144 + 50} = \sqrt{194} \approx 13.93$ cm.
@@ -81,7 +81,7 @@ Area of one triangular face $= \frac{1}{2} \times 10 \times 13 = 65$ cm$^2$.
 Total surface area $= 100 + 4 \times 65 = 100 + 260 = 360$ cm$^2$.
 
 ### IT-2: Transformations and Vectors (with Algebra)
-**Question:** Triangle ABC has vertices A(1, 2), B(5, 2), C(3, 6). (a) Describe the transformation that maps ABC to A'B'C' where A'(-1, -2), B'(-5, -2), C'(-3, -6). (b) Describe the transformation that maps ABC to A''(3, 4), B''(11, 4), C''(7, 12). (c) Vector $\mathbf{a} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ and vector $\mathbf{b} = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$. Calculate $\mathbf{a} + 2\mathbf{b}$ and the magnitude of the result. (d) If $\mathbf{a}$ represents a translation, describe its effect on point $(4, 7)$.
+**Question:** Triangle ABC has vertices A(1, 2), B(5, 2), C(3, 6). (a) Describe the transformation that maps ABC to A'B'C' where A'(-1, -2), B'(-5, -2), C'(-3, -6). (b) Describe the transformation that maps ABC to A''(3, 4), B''(11, 4), C''(7, 12). (c) Vector $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ and vector $\mathbf{'\{'}b{'\}'} = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$. Calculate $\mathbf{'\{'}a{'\}'} + 2\mathbf{'\{'}b{'\}'}$ and the magnitude of the result. (d) If $\mathbf{'\{'}a{'\}'}$ represents a translation, describe its effect on point $(4, 7)$.
 
 **Solution:**
 
@@ -97,7 +97,7 @@ Verification: Centre $(-1, 0)$. A $(1, 2)$: distance from centre is $(2, 2)$. Sc
 
 This is an **enlargement with scale factor 2 about centre $(-1, 0)$**.
 
-(c) $\mathbf{a} + 2\mathbf{b} = \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -4 \\ 8 \end{pmatrix} = \begin{pmatrix} -1 \\ 7 \end{pmatrix}$.
+(c) $\mathbf{'\{'}a{'\}'} + 2\mathbf{'\{'}b{'\}'} = \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -4 \\ 8 \end{pmatrix} = \begin{pmatrix} -1 \\ 7 \end{pmatrix}$.
 
 Magnitude $= \sqrt{(-1)^2 + 7^2} = \sqrt{1 + 49} = \sqrt{50} = 5\sqrt{2} \approx 7.07$.
 

@@ -22,11 +22,11 @@ constitutes the ionic bond.
 
 Example: formation of sodium chloride
 
-$$\mathrm{Na} \to \mathrm{Na^+} + e^-$$
+$$\mathrm{'\{'}Na{'\}'} \to \mathrm{'\{'}Na^+{'\}'} + e^-$$
 
-$$\mathrm{Cl} + e^- \to \mathrm{Cl^-}$$
+$$\mathrm{'\{'}Cl{'\}'} + e^- \to \mathrm{'\{'}Cl^-{'\}'}$$
 
-$$\mathrm{Na^+} + \mathrm{Cl^-} \to \mathrm{NaCl}$$
+$$\mathrm{'\{'}Na^+{'\}'} + \mathrm{'\{'}Cl^-{'\}'} \to \mathrm{'\{'}NaCl{'\}'}$$
 
 ### Giant Ionic Lattice
 
@@ -54,7 +54,7 @@ Magnesium ($Z = 12$): loses 2 electrons to form $\mathrm{Mg^{2+}}$.
 
 Oxygen ($Z = 8$): gains 2 electrons to form $\mathrm{O^{2-}}$.
 
-$$\mathrm{Mg^{2+}} + \mathrm{O^{2-}} \to \mathrm{MgO}$$
+$$\mathrm{Mg^{2+}} + \mathrm{O^{2-}} \to \mathrm{'\{'}MgO{'\}'}$$
 
 The charges balance (one $\mathrm{Mg^{2+}}$ per $\mathrm{O^{2-}}$).
 
@@ -71,7 +71,7 @@ Aluminium loses 3 electrons: $\mathrm{Al^{3+}}$. Oxygen gains 2 electrons: $\mat
 
 To balance charges: LCM of 2 and 3 is 6. Need $2 \times \mathrm{Al^{3+}}$ and $3 \times \mathrm{O^{2-}}$.
 
-Formula: $\mathrm{Al_2O_3}$
+Formula: $\mathrm{'\{'}Al_2O_3{'\}'}$
 
 </details>
 
@@ -88,31 +88,31 @@ atom achieves a noble gas electron configuration.
 
 | Bond Type   | Shared Pairs | Example              |
 | ----------- | ------------ | -------------------- |
-| Single      | 1            | $\mathrm{H - H}$     |
-| Double      | 2            | $\mathrm{O = O}$     |
-| Triple      | 3            | $\mathrm{N \equiv N}$ |
+| Single      | 1            | $\mathrm{'\{'}H - H{'\}'}$     |
+| Double      | 2            | $\mathrm{'\{'}O = O{'\}'}$     |
+| Triple      | 3            | $\mathrm{'\{'}N \equiv N{'\}'}$ |
 
 ### Electron Dot Diagrams
 
 Electron dot diagrams (Lewis structures) show valence electrons as dots. Shared pairs represent
 covalent bonds.
 
-**Example: Water ($\mathrm{H_2O}$)**
+**Example: Water ($\mathrm{'\{'}H_2O{'\}'}$)**
 
 Oxygen has 6 valence electrons. Each hydrogen has 1 valence electron. Oxygen shares one electron
 pair with each hydrogen:
 
-$$\mathrm{H} \colon \ddot{\mathrm{O}} \colon \mathrm{H}$$
+$$\mathrm{'\{'}H{'\}'} \colon \ddot{\mathrm{'\{'}O{'\}'}} \colon \mathrm{'\{'}H{'\}'}$$
 
 (Each hydrogen shares one pair with oxygen; oxygen has two lone pairs.)
 
-**Example: Carbon dioxide ($\mathrm{CO_2}$)**
+**Example: Carbon dioxide ($\mathrm{'\{'}CO_2{'\}'}$)**
 
-$$\mathrm{O} \doubleequal \mathrm{C} \doubleequal \mathrm{O}$$
+$$\mathrm{'\{'}O{'\}'} \doubleequal \mathrm{'\{'}C{'\}'} \doubleequal \mathrm{'\{'}O{'\}'}$$
 
 Each oxygen shares two electron pairs with carbon (two double bonds).
 
-**Example: Ammonia ($\mathrm{NH_3}$)**
+**Example: Ammonia ($\mathrm{'\{'}NH_3{'\}'}$)**
 
 Nitrogen has 5 valence electrons and shares one pair with each of three hydrogens. Nitrogen has one
 lone pair.
@@ -128,14 +128,14 @@ lone pair.
 
 ### Worked Example 3
 
-Draw the electron dot diagram for hydrogen chloride ($\mathrm{HCl}$).
+Draw the electron dot diagram for hydrogen chloride ($\mathrm{'\{'}HCl{'\}'}$).
 
 <details>
 <summary>Solution</summary>
 
 Hydrogen contributes 1 electron, chlorine contributes 7. They share one pair:
 
-$$\mathrm{H}\colon\ddot{\mathrm{Cl}}$$
+$$\mathrm{'\{'}H{'\}'}\colon\ddot{\mathrm{'\{'}Cl{'\}'}}$$
 
 Chlorine has three lone pairs.
 
@@ -146,13 +146,13 @@ Chlorine has three lone pairs.
 A dative covalent bond is a covalent bond in which both electrons in the shared pair come from the
 same atom.
 
-**Example: Ammonium ion ($\mathrm{NH_4^+}$)**
+**Example: Ammonium ion ($\mathrm{'\{'}NH_4^+{'\}'}$)**
 
-The nitrogen in $\mathrm{NH_3}$ donates its lone pair to form a dative covalent bond with $\mathrm{H^+}$:
+The nitrogen in $\mathrm{'\{'}NH_3{'\}'}$ donates its lone pair to form a dative covalent bond with $\mathrm{'\{'}H^+{'\}'}$:
 
-$$\mathrm{NH_3} + \mathrm{H^+} \to \mathrm{NH_4^+}$$
+$$\mathrm{'\{'}NH_3{'\}'} + \mathrm{'\{'}H^+{'\}'} \to \mathrm{'\{'}NH_4^+{'\}'}$$
 
-All four N-H bonds in $\mathrm{NH_4^+}$ are equivalent once formed.
+All four N-H bonds in $\mathrm{'\{'}NH_4^+{'\}'}$ are equivalent once formed.
 
 ---
 
@@ -177,9 +177,9 @@ electrons.
 ### Strength of Metallic Bonding
 
 The strength of metallic bonding increases with:
-- More delocalised electrons (e.g., $\mathrm{Al}$ is harder than $\mathrm{Na}$)
-- Smaller ionic radius (e.g., $\mathrm{Mg}$ is harder than $\mathrm{Ba}$)
-- Higher charge on ions (e.g., $\mathrm{Mg^{2+}}$ vs. $\mathrm{Na^+}$)
+- More delocalised electrons (e.g., $\mathrm{'\{'}Al{'\}'}$ is harder than $\mathrm{'\{'}Na{'\}'}$)
+- Smaller ionic radius (e.g., $\mathrm{'\{'}Mg{'\}'}$ is harder than $\mathrm{'\{'}Ba{'\}'}$)
+- Higher charge on ions (e.g., $\mathrm{Mg^{2+}}$ vs. $\mathrm{'\{'}Na^+{'\}'}$)
 
 ---
 
@@ -212,22 +212,22 @@ Hydrogen bonding is a special, strong type of dipole-dipole interaction that occ
 2. The hydrogen atom interacts with a lone pair on another N, O, or F atom.
 
 **Examples:**
-- Water ($\mathrm{H_2O}$): extensive hydrogen bonding gives water its unusually high boiling point
-- Ammonia ($\mathrm{NH_3}$)
-- Hydrogen fluoride ($\mathrm{HF}$)
+- Water ($\mathrm{'\{'}H_2O{'\}'}$): extensive hydrogen bonding gives water its unusually high boiling point
+- Ammonia ($\mathrm{'\{'}NH_3{'\}'}$)
+- Hydrogen fluoride ($\mathrm{'\{'}HF{'\}'}$)
 - DNA base pairing (adenine-thymine, guanine-cytosine)
 
 ### Worked Example 4
 
-Explain why the boiling point of water ($100^\circ\mathrm{C}$) is much higher than that of hydrogen
-sulphide ($-60^\circ\mathrm{C}$), despite $\mathrm{H_2S}$ having a larger molar mass.
+Explain why the boiling point of water ($100^\circ\mathrm{'\{'}C{'\}'}$) is much higher than that of hydrogen
+sulphide ($-60^\circ\mathrm{'\{'}C{'\}'}$), despite $\mathrm{'\{'}H_2S{'\}'}$ having a larger molar mass.
 
 <details>
 <summary>Solution</summary>
 
 Water molecules form strong hydrogen bonds between the hydrogen of one molecule and the lone pairs
-on the oxygen of another. $\mathrm{H_2S}$ molecules cannot form hydrogen bonds because sulphur is
-not sufficiently electronegative. $\mathrm{H_2S}$ only has weaker van der Waals and dipole-dipole
+on the oxygen of another. $\mathrm{'\{'}H_2S{'\}'}$ molecules cannot form hydrogen bonds because sulphur is
+not sufficiently electronegative. $\mathrm{'\{'}H_2S{'\}'}$ only has weaker van der Waals and dipole-dipole
 forces. The strong hydrogen bonding in water requires much more energy to overcome, giving water
 its much higher boiling point.
 
@@ -254,16 +254,16 @@ compact (branched), giving a smaller surface area and weaker van der Waals force
 
 ### Giant Ionic Structure
 
-- Example: $\mathrm{NaCl}$, $\mathrm{MgO}$
+- Example: $\mathrm{'\{'}NaCl{'\}'}$, $\mathrm{'\{'}MgO{'\}'}$
 - Regular lattice of oppositely charged ions
 - High melting point, conducts when molten/dissolved
 
 ### Simple Molecular Structure
 
-- Example: $\mathrm{H_2O}$, $\mathrm{CO_2}$, $\mathrm{CH_4}$, $\mathrm{I_2}$
+- Example: $\mathrm{'\{'}H_2O{'\}'}$, $\mathrm{'\{'}CO_2{'\}'}$, $\mathrm{'\{'}CH_4{'\}'}$, $\mathrm{'\{'}I_2{'\}'}$
 - Weak intermolecular forces between molecules
 - Low melting/boiling point, does not conduct electricity
-- $\mathrm{CO_2}$ sublimes because the intermolecular forces are very weak
+- $\mathrm{'\{'}CO_2{'\}'}$ sublimes because the intermolecular forces are very weak
 
 ### Giant Covalent (Macromolecular) Structure
 
@@ -273,7 +273,7 @@ Atoms are covalently bonded in a continuous giant lattice.
 | ----------- | ------------- | ------------------------------------------------------- |
 | Diamond     | Each C bonded to 4 others (tetrahedral) | Hardest natural substance, very high melting point, insulator |
 | Graphite    | Layers of hexagonal C rings; weak van der Waals between layers | Soft and slippery, conducts electricity (delocalised electrons), high melting point |
-| Silicon(IV) oxide ($\mathrm{SiO_2}$) | Each Si bonded to 4 O; each O bonded to 2 Si | Hard, high melting point, insulator |
+| Silicon(IV) oxide ($\mathrm{'\{'}SiO_2{'\}'}$) | Each Si bonded to 4 O; each O bonded to 2 Si | Hard, high melting point, insulator |
 
 ### Metallic Structure
 
@@ -295,21 +295,21 @@ cancel out).
 
 | Molecule    | Polar Bonds? | Shape              | Polar Molecule? |
 | ----------- | ------------ | ------------------ | --------------- |
-| $\mathrm{HCl}$ | Yes       | Linear (asymmetric) | Yes             |
-| $\mathrm{CO_2}$ | Yes      | Linear (symmetric)  | No (dipoles cancel) |
-| $\mathrm{H_2O}$ | Yes      | Bent (asymmetric)    | Yes             |
-| $\mathrm{CH_4}$ | Yes      | Tetrahedral (symmetric) | No (dipoles cancel) |
-| $\mathrm{NH_3}$ | Yes      | Trigonal pyramidal (asymmetric) | Yes         |
+| $\mathrm{'\{'}HCl{'\}'}$ | Yes       | Linear (asymmetric) | Yes             |
+| $\mathrm{'\{'}CO_2{'\}'}$ | Yes      | Linear (symmetric)  | No (dipoles cancel) |
+| $\mathrm{'\{'}H_2O{'\}'}$ | Yes      | Bent (asymmetric)    | Yes             |
+| $\mathrm{'\{'}CH_4{'\}'}$ | Yes      | Tetrahedral (symmetric) | No (dipoles cancel) |
+| $\mathrm{'\{'}NH_3{'\}'}$ | Yes      | Trigonal pyramidal (asymmetric) | Yes         |
 
 ### Worked Example 6
 
-Explain why $\mathrm{CCl_4}$ is a non-polar molecule despite having polar bonds.
+Explain why $\mathrm{'\{'}CCl_4{'\}'}$ is a non-polar molecule despite having polar bonds.
 
 <details>
 <summary>Solution</summary>
 
-Each $\mathrm{C - Cl}$ bond is polar because chlorine is more electronegative than carbon. However,
-$\mathrm{CCl_4}$ has a tetrahedral molecular geometry. The four bond dipoles are arranged
+Each $\mathrm{'\{'}C - Cl{'\}'}$ bond is polar because chlorine is more electronegative than carbon. However,
+$\mathrm{'\{'}CCl_4{'\}'}$ has a tetrahedral molecular geometry. The four bond dipoles are arranged
 symmetrically and cancel each other out completely. The resultant dipole moment is zero, so the
 molecule is non-polar.
 
@@ -322,7 +322,7 @@ molecule is non-polar.
 - Confusing intramolecular forces (covalent bonds within a molecule) with intermolecular forces
   (forces between molecules). Covalent bonds are much stronger.
 - Assuming ionic compounds always have the formula $AB$. The formula depends on the charges of the
-  ions (e.g., $\mathrm{CaCl_2}$, $\mathrm{Al_2O_3}$).
+  ions (e.g., $\mathrm{'\{'}CaCl_2{'\}'}$, $\mathrm{'\{'}Al_2O_3{'\}'}$).
 - Thinking that covalent bonds are always weaker than ionic bonds. Giant covalent structures like
   diamond have extremely strong covalent bonds throughout.
 - Forgetting that graphite conducts electricity because of delocalised electrons between layers,
@@ -352,16 +352,16 @@ molecule is non-polar.
 ## Problem Set
 
 **Problem 1:** Draw the electron dot diagram for the formation of magnesium chloride
-($\mathrm{MgCl_2}$).
+($\mathrm{'\{'}MgCl_2{'\}'}$).
 
 *If you get this wrong, revise: Ionic Bonding — Electron Transfer*
 
 <details>
 <summary>Solution</summary>
 
-$$\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$$
+$$\mathrm{'\{'}Mg{'\}'} \to \mathrm{Mg^{2+}} + 2e^-$$
 
-$$2\mathrm{Cl} + 2e^- \to 2\mathrm{Cl^-}$$
+$$2\mathrm{'\{'}Cl{'\}'} + 2e^- \to 2\mathrm{'\{'}Cl^-{'\}'}$$
 
 Each chlorine atom gains one electron to achieve a full outer shell. The magnesium ion transfers
 two electrons, one to each chlorine atom.
@@ -377,7 +377,7 @@ two electrons, one to each chlorine atom.
 
 Diamond has a giant covalent structure with strong covalent bonds throughout the entire lattice.
 A large amount of energy is required to break all these bonds. Iodine has a simple molecular
-structure with weak van der Waals forces between $\mathrm{I_2}$ molecules, which require
+structure with weak van der Waals forces between $\mathrm{'\{'}I_2{'\}'}$ molecules, which require
 relatively little energy to overcome.
 
 </details>
@@ -389,34 +389,34 @@ relatively little energy to overcome.
 <details>
 <summary>Solution</summary>
 
-In solid $\mathrm{NaCl}$, the ions are fixed in the lattice and cannot move, so they cannot carry
+In solid $\mathrm{'\{'}NaCl{'\}'}$, the ions are fixed in the lattice and cannot move, so they cannot carry
 charge. When molten, the ions are free to move towards the electrodes, allowing conduction.
 
 </details>
 
-**Problem 4:** Explain the difference in boiling points between $\mathrm{HF}$ ($20^\circ\mathrm{C}$)
-and $\mathrm{HCl}$ ($-85^\circ\mathrm{C}$).
+**Problem 4:** Explain the difference in boiling points between $\mathrm{'\{'}HF{'\}'}$ ($20^\circ\mathrm{'\{'}C{'\}'}$)
+and $\mathrm{'\{'}HCl{'\}'}$ ($-85^\circ\mathrm{'\{'}C{'\}'}$).
 
 *If you get this wrong, revise: Hydrogen Bonding*
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{HF}$ can form strong hydrogen bonds between molecules (H bonded to highly electronegative F),
-requiring significant energy to overcome. $\mathrm{HCl}$ has polar bonds but chlorine is less
-electronegative than fluorine and cannot form hydrogen bonds; $\mathrm{HCl}$ only has weaker
+$\mathrm{'\{'}HF{'\}'}$ can form strong hydrogen bonds between molecules (H bonded to highly electronegative F),
+requiring significant energy to overcome. $\mathrm{'\{'}HCl{'\}'}$ has polar bonds but chlorine is less
+electronegative than fluorine and cannot form hydrogen bonds; $\mathrm{'\{'}HCl{'\}'}$ only has weaker
 dipole-dipole interactions and van der Waals forces.
 
 </details>
 
-**Problem 5:** Is $\mathrm{BF_3}$ a polar molecule? Explain your answer.
+**Problem 5:** Is $\mathrm{'\{'}BF_3{'\}'}$ a polar molecule? Explain your answer.
 
 *If you get this wrong, revise: Bond Polarity and Molecular Polarity*
 
 <details>
 <summary>Solution</summary>
 
-No, $\mathrm{BF_3}$ is non-polar. Although each $\mathrm{B - F}$ bond is polar (F is more
+No, $\mathrm{'\{'}BF_3{'\}'}$ is non-polar. Although each $\mathrm{'\{'}B - F{'\}'}$ bond is polar (F is more
 electronegative than B), the molecule has a trigonal planar geometry. The three bond dipoles are
 arranged symmetrically at $120^\circ$ and cancel each other out completely.
 
@@ -436,7 +436,7 @@ substance and an excellent abrasive.
 
 </details>
 
-**Problem 7:** Predict the shape and bond angle of the $\mathrm{NH_4^+}$ ion.
+**Problem 7:** Predict the shape and bond angle of the $\mathrm{'\{'}NH_4^+{'\}'}$ ion.
 
 *If you get this wrong, revise: Covalent Bonding — Dative Bonds and VSEPR*
 
@@ -444,7 +444,7 @@ substance and an excellent abrasive.
 <summary>Solution</summary>
 
 Nitrogen has 5 valence electrons. Three form bonds with hydrogen, and the lone pair forms a dative
-bond with $\mathrm{H^+}$, giving four bonding pairs and zero lone pairs around nitrogen.
+bond with $\mathrm{'\{'}H^+{'\}'}$, giving four bonding pairs and zero lone pairs around nitrogen.
 
 Total electron pairs = 4 (all bonding). Molecular shape: **tetrahedral**. Bond angle: $109.5^\circ$.
 
@@ -459,14 +459,14 @@ Total electron pairs = 4 (all bonding). Molecular shape: **tetrahedral**. Bond a
 
 Both compounds have giant ionic lattices. The strength of the ionic bond depends on the charge and
 size of the ions. $\mathrm{Mg^{2+}}$ and $\mathrm{O^{2-}}$ have higher charges ($+2$ and $-2$)
-than $\mathrm{Na^+}$ and $\mathrm{Cl^-}$ ($+1$ and $-1$). Higher ionic charges produce stronger
+than $\mathrm{'\{'}Na^+{'\}'}$ and $\mathrm{'\{'}Cl^-{'\}'}$ ($+1$ and $-1$). Higher ionic charges produce stronger
 electrostatic attraction according to Coulomb's law ($F \propto q_1 \times q_2$). Additionally,
 $\mathrm{Mg^{2+}}$ and $\mathrm{O^{2-}}$ are smaller ions, allowing them to get closer together,
 further increasing the electrostatic attraction.
 
 </details>
 
-**Problem 9:** Explain why $\mathrm{H_2O}$ is a liquid at room temperature while $\mathrm{H_2S}$ is
+**Problem 9:** Explain why $\mathrm{'\{'}H_2O{'\}'}$ is a liquid at room temperature while $\mathrm{'\{'}H_2S{'\}'}$ is
 a gas, even though both are in Group 16 hydrides.
 
 *If you get this wrong, revise: Hydrogen Bonding*
@@ -478,9 +478,9 @@ Water can form extensive hydrogen bonds between molecules because hydrogen is bo
 which is highly electronegative (EN $= 3.5$). Each water molecule can form up to four hydrogen
 bonds, creating a network that requires significant energy to break.
 
-$\mathrm{H_2S}$ cannot form hydrogen bonds because sulphur (EN $= 2.1$) is not electronegative
-enough. $\mathrm{H_2S}$ molecules only have weaker dipole-dipole interactions and van der Waals
-forces between them. These are easily overcome at room temperature, making $\mathrm{H_2S}$ a gas.
+$\mathrm{'\{'}H_2S{'\}'}$ cannot form hydrogen bonds because sulphur (EN $= 2.1$) is not electronegative
+enough. $\mathrm{'\{'}H_2S{'\}'}$ molecules only have weaker dipole-dipole interactions and van der Waals
+forces between them. These are easily overcome at room temperature, making $\mathrm{'\{'}H_2S{'\}'}$ a gas.
 
 </details>
 
@@ -492,9 +492,9 @@ ionic compounds are generally brittle.
 <details>
 <summary>Solution</summary>
 
-Calcium ($Z = 20$, Group 2): $\mathrm{Ca^{2+}}$. Fluorine ($Z = 9$, Group 17): $\mathrm{F^-}$.
+Calcium ($Z = 20$, Group 2): $\mathrm{Ca^{2+}}$. Fluorine ($Z = 9$, Group 17): $\mathrm{'\{'}F^-{'\}'}$.
 
-To balance charges: $1 \times (+2) = 2 \times (-1)$. Formula: $\mathrm{CaF_2}$.
+To balance charges: $1 \times (+2) = 2 \times (-1)$. Formula: $\mathrm{'\{'}CaF_2{'\}'}$.
 
 Ionic compounds are brittle because if a force is applied, layers of ions shift so that ions of
 the same charge come adjacent to each other. The resulting electrostatic repulsion between

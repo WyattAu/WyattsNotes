@@ -117,7 +117,7 @@ $$5x^2 - 26x + 32 = 0$$
 
 $$(5x - 16)(x - 2) = 0$$
 
-$$x = \frac{16}{5} \quad \text{or} \quad x = 2$$
+$$x = \frac{16}{5} \quad \text{'\{'}or{'\}'} \quad x = 2$$
 
 $x = \dfrac{16}{5}$: $y = \dfrac{32}{5} - 1 = \dfrac{27}{5}$. Point: $\left(\dfrac{16}{5},\; \dfrac{27}{5}\right)$.
 

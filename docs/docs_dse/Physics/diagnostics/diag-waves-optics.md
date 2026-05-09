@@ -25,13 +25,13 @@ $$y = \frac{D}{d} \times \Delta s$$
 
 where $\Delta s = 0.2$ mm is the source displacement:
 
-$$y = \frac{1500}{0.5} \times 0.2 = 3000 \times 0.2 = 600 \text{ mm} = 60 \text{ cm}$$
+$$y = \frac{1500}{0.5} \times 0.2 = 3000 \times 0.2 = 600 \text{'\{'} mm{'\}'} = 60 \text{'\{'} cm{'\}'}$$
 
-$$y = \frac{D}{d} \times \Delta s = \frac{1.5}{0.5 \times 10^{-3}} \times 2 \times 10^{-4} = \frac{1.5 \times 2 \times 10^{-4}}{5 \times 10^{-4}} = 0.6 \text{ m} = 60 \text{ cm}$$
+$$y = \frac{D}{d} \times \Delta s = \frac{1.5}{0.5 \times 10^{-3}} \times 2 \times 10^{-4} = \frac{1.5 \times 2 \times 10^{-4}}{5 \times 10^{-4}} = 0.6 \text{'\{'} m{'\}'} = 60 \text{'\{'} cm{'\}'}$$
 
 **Fringe spacing:**
 
-$$\Delta y = \frac{\lambda D}{d} = \frac{550 \times 10^{-9} \times 1.5}{0.5 \times 10^{-3}} = \frac{8.25 \times 10^{-7}}{5 \times 10^{-4}} = 1.65 \times 10^{-3} \text{ m} = 1.65 \text{ mm}$$
+$$\Delta y = \frac{\lambda D}{d} = \frac{550 \times 10^{-9} \times 1.5}{0.5 \times 10^{-3}} = \frac{8.25 \times 10^{-7}}{5 \times 10^{-4}} = 1.65 \times 10^{-3} \text{'\{'} m{'\}'} = 1.65 \text{'\{'} mm{'\}'}$$
 
 **Result:** The central maximum is displaced $60$ cm from the axis (toward the side opposite $S_1$), and the fringe spacing is $1.65$ mm. The entire interference pattern shifts by $60$ cm but the fringe spacing remains unchanged.
 
@@ -47,7 +47,7 @@ A diffraction grating has $500$ lines per mm. White light is incident normally o
 
 **Solution:**
 
-Grating spacing: $d = \frac{1}{500} \text{ mm} = 2 \times 10^{-6}$ m
+Grating spacing: $d = \frac{1}{500} \text{'\{'} mm{'\}'} = 2 \times 10^{-6}$ m
 
 **(a) Angles for first two orders:**
 
@@ -148,7 +148,7 @@ $$a \sin\theta = \lambda$$
 
 $$\sin\theta = \frac{\lambda}{a} = \frac{500 \times 10^{-9}}{0.04 \times 10^{-3}} = 0.0125$$
 
-$$\theta = 0.0125 \text{ rad}$$
+$$\theta = 0.0125 \text{'\{'} rad{'\}'}$$
 
 Angular width of central maximum $= 2\theta = 0.0250$ rad $= 1.43°$.
 
@@ -239,7 +239,7 @@ $$eV = \frac{hc}{\lambda_{\min}}$$
 
 $$\lambda_{\min} = \frac{hc}{eV} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{1.6 \times 10^{-19} \times 50000}$$
 
-$$\lambda_{\min} = \frac{1.989 \times 10^{-25}}{8 \times 10^{-15}} = 2.486 \times 10^{-11} \text{ m} = 0.0249 \text{ nm}$$
+$$\lambda_{\min} = \frac{1.989 \times 10^{-25}}{8 \times 10^{-15}} = 2.486 \times 10^{-11} \text{'\{'} m{'\}'} = 0.0249 \text{'\{'} nm{'\}'}$$
 
 **(b) First-order diffraction angle (Bragg's law):**
 

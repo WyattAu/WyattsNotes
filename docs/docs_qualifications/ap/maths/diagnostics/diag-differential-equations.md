@@ -31,11 +31,11 @@ A student separates variables and writes $\displaystyle\int y^{-2/3}\,dy = \int 
 
 (c) A third solution can be constructed by patching:
 
-$$y(x) = \begin{cases} 0 & \text{if } x \leq a \\ \left(\dfrac{x - a}{3}\right)^3 & \text{if } x > a \end{cases}$$
+$$y(x) = \begin{cases} 0 & \text{'\{'}if {'\}'} x \leq a \\ \left(\dfrac{x - a}{3}\right)^3 & \text{'\{'}if {'\}'} x > a \end{cases}$$
 
 for any $a \geq 0$. At $x = a$: $y(a) = 0$ from both sides, and $y'(a) = 0$ from both sides (since $\frac{d}{dx}\left[\left(\frac{x-a}{3}\right)^3\right] = \frac{(x-a)^2}{3} = 0$ at $x = a$). So this is a valid $C^1$ solution. For $a = 0$, this gives:
 
-$$y(x) = \begin{cases} 0 & \text{if } x \leq 0 \\ \dfrac{x^3}{27} & \text{if } x > 0 \end{cases}$$
+$$y(x) = \begin{cases} 0 & \text{'\{'}if {'\}'} x \leq 0 \\ \dfrac{x^3}{27} & \text{'\{'}if {'\}'} x > 0 \end{cases}$$
 
 This is a third distinct solution to the IVP.
 
@@ -57,7 +57,7 @@ Use Euler's method with step size $\Delta x = 0.5$ to approximate $y(2)$ for the
 
 (a) With $\Delta x = 0.5$, starting at $(0, 1)$:
 
-| Step | $x$ | $y$ | $y' = x + y$ | $y_{\text{new}} = y + 0.5 \cdot y'$ |
+| Step | $x$ | $y$ | $y' = x + y$ | $y_{\text{'\{'}new{'\}'}} = y + 0.5 \cdot y'$ |
 |------|-----|-----|---------------|--------------------------------------|
 | 0    | 0   | 1   | 1             | 1.5                                  |
 | 1    | 0.5 | 1.5 | 2.0           | 2.5                                  |
@@ -68,7 +68,7 @@ Approximation: $y(2) \approx 7.125$.
 
 With $\Delta x = 0.25$, starting at $(0, 1)$:
 
-| Step | $x$   | $y$    | $y' = x + y$ | $y_{\text{new}}$         |
+| Step | $x$   | $y$    | $y' = x + y$ | $y_{\text{'\{'}new{'\}'}}$         |
 |------|-------|--------|---------------|--------------------------|
 | 0    | 0     | 1      | 1             | 1.25                     |
 | 1    | 0.25  | 1.25   | 1.5           | 1.625                    |

@@ -45,9 +45,9 @@ For each of the following statements, state whether the condition $P$ is necessa
 
 **(a)** Negate the following statement:
 
-$$\forall \varepsilon \gt 0, \; \exists \delta \gt 0, \; \forall x \in \mathbb{R}, \; (0 \lt |x - a| \lt \delta) \implies (|f(x) - f(a)| \lt \varepsilon)$$
+$$\forall \varepsilon \gt 0, \; \exists \delta \gt 0, \; \forall x \in \mathbb{'\{'}R{'\}'}, \; (0 \lt |x - a| \lt \delta) \implies (|f(x) - f(a)| \lt \varepsilon)$$
 
-**(b)** A student writes the negation as "$\exists \varepsilon \gt 0, \; \exists \delta \gt 0, \; \forall x \in \mathbb{R}, \; (0 \lt |x - a| \lt \delta) \implies (|f(x) - f(a)| \geq \varepsilon)$". Identify the errors.
+**(b)** A student writes the negation as "$\exists \varepsilon \gt 0, \; \exists \delta \gt 0, \; \forall x \in \mathbb{'\{'}R{'\}'}, \; (0 \lt |x - a| \lt \delta) \implies (|f(x) - f(a)| \geq \varepsilon)$". Identify the errors.
 
 [Difficulty: hard. Tests correct negation of nested quantifiers and the implication.]
 
@@ -59,7 +59,7 @@ $$\neg(P \implies Q) = \neg(\neg P \vee Q) = P \wedge \neg Q$$
 
 So:
 
-$$\exists \varepsilon \gt 0, \; \forall \delta \gt 0, \; \exists x \in \mathbb{R}, \; (0 \lt |x - a| \lt \delta) \;\wedge\; (|f(x) - f(a)| \geq \varepsilon)$$
+$$\exists \varepsilon \gt 0, \; \forall \delta \gt 0, \; \exists x \in \mathbb{'\{'}R{'\}'}, \; (0 \lt |x - a| \lt \delta) \;\wedge\; (|f(x) - f(a)| \geq \varepsilon)$$
 
 **(b)** The student made two errors:
 1. The existential quantifier on $\delta$ should be universal ($\forall \delta \gt 0$), not existential.
@@ -90,7 +90,7 @@ A student writes:
 
 In fact, the original statement "if $n^3 + 5n$ is even, then $n$ is even" **is false**: when $n$ is odd, $n^3 + 5n = 2(4k^3 + 6k^2 + 9k + 3)$ is always even. So $n^3 + 5n$ is even for ALL integers $n$, not just even ones. The original statement is false, and the student's work inadvertently proves this.
 
-**(b)** The correct approach: since $n^3 + 5n$ is even for all $n \in \mathbb{Z}$ (as shown above), the statement "if $n^3 + 5n$ is even, then $n$ is even" is **false**. A counterexample is $n = 1$: $1 + 5 = 6$ is even, but $n = 1$ is odd.
+**(b)** The correct approach: since $n^3 + 5n$ is even for all $n \in \mathbb{'\{'}Z{'\}'}$ (as shown above), the statement "if $n^3 + 5n$ is even, then $n$ is even" is **false**. A counterexample is $n = 1$: $1 + 5 = 6$ is even, but $n = 1$ is odd.
 
 ---
 
@@ -102,7 +102,7 @@ In fact, the original statement "if $n^3 + 5n$ is even, then $n$ is even" **is f
 
 **Question:**
 
-Prove by mathematical induction that $3^{2n} + 2^{n+2}$ is divisible by $7$ for all $n \in \mathbb{N}$.
+Prove by mathematical induction that $3^{2n} + 2^{n+2}$ is divisible by $7$ for all $n \in \mathbb{'\{'}N{'\}'}$.
 
 [Difficulty: hard. Combines proof by induction with number-theoretic divisibility.]
 
@@ -112,7 +112,7 @@ Prove by mathematical induction that $3^{2n} + 2^{n+2}$ is divisible by $7$ for 
 
 The correct statement should be $3^{2n+1} + 2^{n+2}$. Verification: $3^{2(1)+1} + 2^{1+2} = 27 + 8 = 35 = 7 \times 5$.
 
-**Corrected problem:** Prove that $3^{2n+1} + 2^{n+2}$ is divisible by $7$ for all $n \in \mathbb{N}$.
+**Corrected problem:** Prove that $3^{2n+1} + 2^{n+2}$ is divisible by $7$ for all $n \in \mathbb{'\{'}N{'\}'}$.
 
 **Base case ($n = 0$):** $3^1 + 2^2 = 3 + 4 = 7$, divisible by $7$. True.
 

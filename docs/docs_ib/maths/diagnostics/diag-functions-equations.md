@@ -21,7 +21,7 @@ Given $f(x) = \sqrt{x - 3}$ and $g(x) = \dfrac{1}{x - 1}$:
 
 **(b)** Find the domain of $g \circ f$.
 
-**(c)** A student claims that $\mathrm{dom}(f \circ g) = \mathrm{dom}(g)$. Explain why this is incorrect.
+**(c)** A student claims that $\mathrm{'\{'}dom{'\}'}(f \circ g) = \mathrm{'\{'}dom{'\}'}(g)$. Explain why this is incorrect.
 
 [Difficulty: hard. Tests the subtle but critical rule that the domain of $f \circ g$ excludes values where $g(x)$ falls outside the domain of $f$.]
 
@@ -52,7 +52,7 @@ Domain restrictions:
 
 Domain of $g \circ f$: $[3, 4) \cup (4, \infty)$.
 
-**(c)** The student is incorrect. $\mathrm{dom}(f \circ g)$ is not $\mathrm{dom}(g)$. It is the subset of $\mathrm{dom}(g)$ for which $g(x)$ falls within $\mathrm{dom}(f)$. Here $\mathrm{dom}(g) = \mathbb{R} \setminus \{1\}$, but $\mathrm{dom}(f \circ g) = \left(1, \frac{4}{3}\right]$, which is a proper subset.
+**(c)** The student is incorrect. $\mathrm{'\{'}dom{'\}'}(f \circ g)$ is not $\mathrm{'\{'}dom{'\}'}(g)$. It is the subset of $\mathrm{'\{'}dom{'\}'}(g)$ for which $g(x)$ falls within $\mathrm{'\{'}dom{'\}'}(f)$. Here $\mathrm{'\{'}dom{'\}'}(g) = \mathbb{'\{'}R{'\}'} \setminus \{1\}$, but $\mathrm{'\{'}dom{'\}'}(f \circ g) = \left(1, \frac{4}{3}\right]$, which is a proper subset.
 
 ---
 
@@ -78,7 +78,7 @@ $$y(x - 1) = 2x + 3 \implies xy - y = 2x + 3 \implies xy - 2x = y + 3 \implies x
 
 $$f^{-1}(x) = \frac{x + 3}{x - 2}, \quad x \neq 2$$
 
-The domain of $f^{-1}$ equals the range of $f$. Since $f(x) = \dfrac{2x + 3}{x - 1} = 2 + \dfrac{5}{x - 1}$, as $x \to \pm\infty$, $f(x) \to 2$, but $f(x) \neq 2$. The horizontal asymptote at $y = 2$ is never reached. Domain: $\mathbb{R} \setminus \{2\}$.
+The domain of $f^{-1}$ equals the range of $f$. Since $f(x) = \dfrac{2x + 3}{x - 1} = 2 + \dfrac{5}{x - 1}$, as $x \to \pm\infty$, $f(x) \to 2$, but $f(x) \neq 2$. The horizontal asymptote at $y = 2$ is never reached. Domain: $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
 
 **(b)** The student computed $\dfrac{1}{f(x)} = \dfrac{x - 1}{2x + 3}$, confusing the inverse function $f^{-1}$ with the reciprocal $\dfrac{1}{f}$. The notation $f^{-1}$ means the function that "undoes" $f$, not $1/f$.
 
@@ -139,7 +139,7 @@ The function $f$ is defined by $f(x) = \dfrac{2x + 3}{x + 2}$.
 
 **(a)** Solve $f(x) = x$:
 
-$$\frac{2x + 3}{x + 2} = x \implies 2x + 3 = x^2 + 2x \implies x^2 = 3 \implies x = \sqrt{3} \text{ or } x = -\sqrt{3}$$
+$$\frac{2x + 3}{x + 2} = x \implies 2x + 3 = x^2 + 2x \implies x^2 = 3 \implies x = \sqrt{3} \text{'\{'} or {'\}'} x = -\sqrt{3}$$
 
 The fixed points are $x = \sqrt{3}$ and $x = -\sqrt{3}$.
 

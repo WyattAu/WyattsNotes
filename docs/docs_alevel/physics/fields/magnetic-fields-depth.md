@@ -23,7 +23,7 @@ $$\boxed{B = \frac{F}{IL\sin\theta}}$$
 
 where $F$ is the force on a wire of length $L$ carrying current $I$ at angle $\theta$ to the field.
 
-SI unit: tesla (T). $1\ \mathrm{T} = 1\ \mathrm{N\,A^{-1}\,m^{-1}}$.
+SI unit: tesla (T). $1\ \mathrm{'\{'}T{'\}'} = 1\ \mathrm{N\,A^{-1}\,m^{-1}}$.
 
 **Direction of force:** Given by Fleming's Left-Hand Rule:
 
@@ -53,8 +53,8 @@ For a charge moving perpendicular to the field ($\theta = 90^\circ$):
 $$\boxed{F = Bqv}$$
 
 :::warning
-Common Pitfall The magnetic force is always perpendicular to both $\mathbf{v}$ and
-$\mathbf{B}$. It does no work ($\mathbf{F} \cdot \mathbf{v} = 0$), so a magnetic field alone cannot
+Common Pitfall The magnetic force is always perpendicular to both $\mathbf{'\{'}v{'\}'}$ and
+$\mathbf{'\{'}B{'\}'}$. It does no work ($\mathbf{'\{'}F{'\}'} \cdot \mathbf{'\{'}v{'\}'} = 0$), so a magnetic field alone cannot
 change the speed of a charged particle — only its direction.
 :::
 
@@ -104,23 +104,23 @@ the ratio to 2:1.
 
 ## 4. Helical Motion
 
-When a particle enters a uniform $\mathbf{B}$ field at angle $\theta$ to the field lines:
+When a particle enters a uniform $\mathbf{'\{'}B{'\}'}$ field at angle $\theta$ to the field lines:
 
 $$v_\perp = v\sin\theta, \qquad v_\parallel = v\cos\theta$$
 
 The perpendicular component produces circular motion (radius $r = mv_\perp/(Bq)$, period
 $T = 2\pi m/(Bq)$), while the parallel component is unaffected by the magnetic force (since
-$\mathbf{F} \perp \mathbf{B}$, there is no force component along $\mathbf{B}$).
+$\mathbf{'\{'}F{'\}'} \perp \mathbf{'\{'}B{'\}'}$, there is no force component along $\mathbf{'\{'}B{'\}'}$).
 
 The particle traces a **helix** with pitch:
 
-$$\boxed{\mathrm{pitch} = v_\parallel\, T = \frac{2\pi m v\cos\theta}{Bq}}$$
+$$\boxed{\mathrm{'\{'}pitch{'\}'} = v_\parallel\, T = \frac{2\pi m v\cos\theta}{Bq}}$$
 
 ## 5. Velocity Selector
 
 Crossed electric and magnetic fields select particles of a specific velocity.
 
-A particle with charge $q$ and velocity $v$ passes through a region where $\mathbf{E}$ and $\mathbf{B}$
+A particle with charge $q$ and velocity $v$ passes through a region where $\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}B{'\}'}$
 are perpendicular. The electric force $F_E = qE$ acts in one direction; the magnetic force
 $F_B = Bqv$ acts in the opposite direction.
 
@@ -139,7 +139,7 @@ $$\boxed{\Phi = BA\cos\theta}$$
 
 where $A$ is the area and $\theta$ is the angle between the field and the normal to the area.
 
-SI unit: weber (Wb). $1\ \mathrm{Wb} = 1\ \mathrm{T\,m^2}$.
+SI unit: weber (Wb). $1\ \mathrm{'\{'}Wb{'\}'} = 1\ \mathrm{'\{'}T\,m^2{'\}'}$.
 
 ### Faraday's Law
 
@@ -251,7 +251,7 @@ When the current in a coil changes, the changing flux through the coil itself in
 
 $$\boxed{\varepsilon = -L\frac{dI}{dt}}$$
 
-where $L$ is the self-inductance in henry (H). $1\ \mathrm{H} = 1\ \mathrm{Wb\,A^{-1}} = 1\ \mathrm{V\,s\,A^{-1}}$.
+where $L$ is the self-inductance in henry (H). $1\ \mathrm{'\{'}H{'\}'} = 1\ \mathrm{Wb\,A^{-1}} = 1\ \mathrm{V\,s\,A^{-1}}$.
 
 ### Energy Stored in an Inductor
 
@@ -285,7 +285,7 @@ $$\boxed{\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d}}$$
 - Same-direction currents: attractive
 - Opposite-direction currents: repulsive
 
-This can be determined by applying the right-hand grip rule to wire 1 (to find $\mathbf{B}_1$ at wire
+This can be determined by applying the right-hand grip rule to wire 1 (to find $\mathbf{'\{'}B{'\}'}_1$ at wire
 2) and Fleming's left-hand rule to wire 2 (to find the force direction).
 
 ### Definition of the Ampere
@@ -384,7 +384,7 @@ $r = \frac{m_p v_\perp}{Bq} = \frac{1.67 \times 10^{-27} \times 2.5 \times 10^6}
 
 $T = 2\pi m_p/(Bq) = 2\pi \times 1.67 \times 10^{-27}/(0.40 \times 1.60 \times 10^{-19}) = 1.64 \times 10^{-7}$ s.
 
-$\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$ cm.
+$\mathrm{'\{'}pitch{'\}'} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$ cm.
 
 </details>
 

@@ -156,7 +156,7 @@ $$
 Ampere's law relates the line integral of $\vec{B}$ around a closed loop to the enclosed current:
 
 $$
-\oint_C \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc}}
+\oint_C \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{'\{'}enc{'\}'}}
 $$
 
 ### Field Inside a Long Solenoid
@@ -189,7 +189,7 @@ $J(r) = J_0 r/R$ for $0 \le r \le R$. Find $B$ inside and outside.
 **Inside ($r \le R$):** Use a circular Amperian loop of radius $r$.
 
 $$
-I_{\text{enc}} = \int_0^r J(r') \cdot 2\pi r'\, dr' = \frac{2\pi J_0}{R}\int_0^r r'^2\, dr' = \frac{2\pi J_0 r^3}{3R}
+I_{\text{'\{'}enc{'\}'}} = \int_0^r J(r') \cdot 2\pi r'\, dr' = \frac{2\pi J_0}{R}\int_0^r r'^2\, dr' = \frac{2\pi J_0 r^3}{3R}
 $$
 
 $$
@@ -206,7 +206,7 @@ $$
 B = \frac{\mu_0 I r^2}{2\pi R^3}
 $$
 
-**Outside ($r > R$):** $I_{\text{enc}} = I$.
+**Outside ($r > R$):** $I_{\text{'\{'}enc{'\}'}} = I$.
 
 $$
 B = \frac{\mu_0 I}{2\pi r}
@@ -219,7 +219,7 @@ $$
 Faraday's law states that a changing magnetic flux induces an EMF:
 
 $$
-\mathcal{E} = -\frac{d\Phi_B}{dt}
+\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt}
 $$
 
 where the magnetic flux through a surface is:
@@ -240,14 +240,14 @@ field opposes the change in flux that produced it. The induced current acts to m
 A conducting bar of length $L$ moving with velocity $v$ perpendicular to a uniform field $B$:
 
 $$
-\mathcal{E} = BLv
+\mathcal{'\{'}E{'\}'} = BLv
 $$
 
 **Derivation:** The free charges in the bar experience a magnetic force $F = qvB$. This is equivalent
 to an electric field $E = vB$ along the bar. The EMF is:
 
 $$
-\mathcal{E} = \int_0^L E\, dl = \int_0^L vB\, dl = BLv
+\mathcal{'\{'}E{'\}'} = \int_0^L E\, dl = \int_0^L vB\, dl = BLv
 $$
 
 :::info[Example: Rotating loop in a magnetic field]
@@ -262,10 +262,10 @@ $$
 The induced EMF is:
 
 $$
-\mathcal{E} = -\frac{d\Phi_B}{dt} = NBA\omega\sin(\omega t) = \mathcal{E}_0\sin(\omega t)
+\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = NBA\omega\sin(\omega t) = \mathcal{'\{'}E{'\}'}_0\sin(\omega t)
 $$
 
-where $\mathcal{E}_0 = NBA\omega$ is the peak EMF. This is the principle behind AC generators.
+where $\mathcal{'\{'}E{'\}'}_0 = NBA\omega$ is the peak EMF. This is the principle behind AC generators.
 
 :::
 
@@ -275,15 +275,15 @@ A circular loop of radius $r = 0.1$ m is in a region where the magnetic field in
 $B(t) = (0.5 + 0.2t)$ T. The loop has resistance $R = 2\,\Omega$. Find the induced current.
 
 $$
-\Phi_B = B \cdot \pi r^2 = (0.5 + 0.2t)\pi(0.1)^2 = (0.5 + 0.2t)(0.0314)\,\text{Wb}
+\Phi_B = B \cdot \pi r^2 = (0.5 + 0.2t)\pi(0.1)^2 = (0.5 + 0.2t)(0.0314)\,\text{'\{'}Wb{'\}'}
 $$
 
 $$
-\mathcal{E} = -\frac{d\Phi_B}{dt} = -0.2 \times 0.0314 = -0.00628\,\text{V}
+\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = -0.2 \times 0.0314 = -0.00628\,\text{'\{'}V{'\}'}
 $$
 
 $$
-I = \frac{|\mathcal{E}|}{R} = \frac{0.00628}{2} = 3.14\,\text{mA}
+I = \frac{|\mathcal{'\{'}E{'\}'}|}{R} = \frac{0.00628}{2} = 3.14\,\text{'\{'}mA{'\}'}
 $$
 
 By Lenz's law, the current flows counterclockwise (viewed along $\vec{B}$) to oppose the increasing flux.
@@ -297,7 +297,7 @@ By Lenz's law, the current flows counterclockwise (viewed along $\vec{B}$) to op
 The self-induced EMF in a coil is:
 
 $$
-\mathcal{E} = -L\frac{dI}{dt}
+\mathcal{'\{'}E{'\}'} = -L\frac{dI}{dt}
 $$
 
 where $L$ is the inductance, measured in henrys (H). For a long solenoid with $N$ turns, length $\ell$,
@@ -314,7 +314,7 @@ where $n = N/\ell$ is the turns per unit length.
 When the current in coil 1 changes, it induces an EMF in coil 2:
 
 $$
-\mathcal{E}_2 = -M\frac{dI_1}{dt}
+\mathcal{'\{'}E{'\}'}_2 = -M\frac{dI_1}{dt}
 $$
 
 where $M$ is the mutual inductance. For a solenoid with a secondary coil of $N_2$ turns:
@@ -329,7 +329,7 @@ $$
 U = \frac{1}{2}LI^2
 $$
 
-**Derivation:** The power delivered to the inductor is $P = \mathcal{E}I = LI(dI/dt)$. Integrating:
+**Derivation:** The power delivered to the inductor is $P = \mathcal{'\{'}E{'\}'}I = LI(dI/dt)$. Integrating:
 
 $$
 U = \int_0^t P\, dt' = L\int_0^I I'\, dI' = \frac{1}{2}LI^2
@@ -340,13 +340,13 @@ $$
 When a switch is closed in a circuit with resistance $R$ and inductance $L$:
 
 $$
-\mathcal{E} - IR - L\frac{dI}{dt} = 0
+\mathcal{'\{'}E{'\}'} - IR - L\frac{dI}{dt} = 0
 $$
 
 This is a first-order linear ODE with solution:
 
 $$
-I(t) = \frac{\mathcal{E}}{R}\left(1 - e^{-t/(L/R)}\right) = I_{\max}\left(1 - e^{-t/\tau_L}\right)
+I(t) = \frac{\mathcal{'\{'}E{'\}'}}{R}\left(1 - e^{-t/(L/R)}\right) = I_{\max}\left(1 - e^{-t/\tau_L}\right)
 $$
 
 where $\tau_L = L/R$ is the inductive time constant.
@@ -360,7 +360,7 @@ $$
 **Voltage across the inductor during charging:**
 
 $$
-V_L = L\frac{dI}{dt} = \mathcal{E} e^{-t/\tau_L}
+V_L = L\frac{dI}{dt} = \mathcal{'\{'}E{'\}'} e^{-t/\tau_L}
 $$
 
 At $t = 0$, all the voltage is across the inductor. At $t \to \infty$, all the voltage is across the
@@ -400,31 +400,31 @@ The charge and current oscillate $90°$ out of phase. Energy oscillates between 
 ($U_C = Q^2/(2C)$) and the inductor ($U_L = LI^2/2$), with total energy conserved:
 
 $$
-U_{\text{total}} = \frac{Q_0^2}{2C} = \frac{1}{2}LI_0^2
+U_{\text{'\{'}total{'\}'}} = \frac{Q_0^2}{2C} = \frac{1}{2}LI_0^2
 $$
 
 :::info[Example: LC circuit energy analysis]
 
-An LC circuit has $L = 10$ mH and $C = 100\,\mu\text{F}$. The capacitor is initially charged to
-$Q_0 = 50\,\mu\text{C}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the
+An LC circuit has $L = 10$ mH and $C = 100\,\mu\text{'\{'}F{'\}'}$. The capacitor is initially charged to
+$Q_0 = 50\,\mu\text{'\{'}C{'\}'}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the
 charge when the current is half its maximum value.
 
-(a) $f = \frac{1}{2\pi\sqrt{LC}} = \frac{1}{2\pi\sqrt{(0.01)(10^{-4})}} = \frac{1}{2\pi \times 10^{-3}} = 159\,\text{Hz}$
+(a) $f = \frac{1}{2\pi\sqrt{LC}} = \frac{1}{2\pi\sqrt{(0.01)(10^{-4})}} = \frac{1}{2\pi \times 10^{-3}} = 159\,\text{'\{'}Hz{'\}'}$
 
-(b) $I_0 = Q_0\omega = Q_0/\sqrt{LC} = (50 \times 10^{-6})/\sqrt{10^{-6}} = 50 \times 10^{-6}/10^{-3} = 0.05\,\text{A} = 50\,\text{mA}$
+(b) $I_0 = Q_0\omega = Q_0/\sqrt{LC} = (50 \times 10^{-6})/\sqrt{10^{-6}} = 50 \times 10^{-6}/10^{-3} = 0.05\,\text{'\{'}A{'\}'} = 50\,\text{'\{'}mA{'\}'}$
 
-(c) When $I = I_0/2 = 25\,\text{mA}$:
-
-$$
-U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.01)(0.025)^2 = 3.125 \times 10^{-6}\,\text{J}
-$$
+(c) When $I = I_0/2 = 25\,\text{'\{'}mA{'\}'}$:
 
 $$
-U_C = U_{\text{total}} - U_L = \frac{(50 \times 10^{-6})^2}{2(10^{-4})} - 3.125 \times 10^{-6} = 12.5 \times 10^{-6} - 3.125 \times 10^{-6} = 9.375 \times 10^{-6}\,\text{J}
+U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.01)(0.025)^2 = 3.125 \times 10^{-6}\,\text{'\{'}J{'\}'}
 $$
 
 $$
-Q = \sqrt{2CU_C} = \sqrt{2(10^{-4})(9.375 \times 10^{-6})} = \sqrt{1.875 \times 10^{-9}} = 43.3\,\mu\text{C}
+U_C = U_{\text{'\{'}total{'\}'}} - U_L = \frac{(50 \times 10^{-6})^2}{2(10^{-4})} - 3.125 \times 10^{-6} = 12.5 \times 10^{-6} - 3.125 \times 10^{-6} = 9.375 \times 10^{-6}\,\text{'\{'}J{'\}'}
+$$
+
+$$
+Q = \sqrt{2CU_C} = \sqrt{2(10^{-4})(9.375 \times 10^{-6})} = \sqrt{1.875 \times 10^{-9}} = 43.3\,\mu\text{'\{'}C{'\}'}
 $$
 
 :::
@@ -435,10 +435,10 @@ The four Maxwell's equations unify electricity and magnetism:
 
 | Equation | Law | Integral Form |
 |---|---|---|
-| Gauss's Law for Electricity | Electric charges produce electric fields | $\oint \vec{E} \cdot d\vec{A} = \dfrac{Q_{\text{enc}}}{\epsilon_0}$ |
+| Gauss's Law for Electricity | Electric charges produce electric fields | $\oint \vec{E} \cdot d\vec{A} = \dfrac{Q_{\text{'\{'}enc{'\}'}}}{\epsilon_0}$ |
 | Gauss's Law for Magnetism | No magnetic monopoles | $\oint \vec{B} \cdot d\vec{A} = 0$ |
 | Faraday's Law | Changing magnetic fields produce electric fields | $\oint \vec{E} \cdot d\vec{l} = -\dfrac{d\Phi_B}{dt}$ |
-| Ampere-Maxwell Law | Currents and changing electric fields produce magnetic fields | $\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc}} + \mu_0\epsilon_0\dfrac{d\Phi_E}{dt}$ |
+| Ampere-Maxwell Law | Currents and changing electric fields produce magnetic fields | $\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{'\{'}enc{'\}'}} + \mu_0\epsilon_0\dfrac{d\Phi_E}{dt}$ |
 
 ### The Displacement Current
 
@@ -453,7 +453,7 @@ $$
 :::info[Example: Displacement current in a charging capacitor]
 
 A parallel plate capacitor with plate area $A$ and separation $d$ is being charged by a current $I$.
-Find the magnetic field at distance $r$ from the axis between the plates ($r < R_{\text{plate}}$).
+Find the magnetic field at distance $r$ from the axis between the plates ($r < R_{\text{'\{'}plate{'\}'}}$).
 
 The displacement current equals the conduction current (by charge conservation):
 
@@ -531,8 +531,8 @@ This is the same as the field inside a wire of radius $R$ carrying current $I$.
    time constant, (b) the current at $t = 10$ ms, and (c) the voltage across the inductor at
    $t = 10$ ms.
 
-6. An LC circuit has $L = 25$ mH and $C = 40\,\mu\text{F}$. The maximum charge on the capacitor is
-   $80\,\mu\text{C}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the total
+6. An LC circuit has $L = 25$ mH and $C = 40\,\mu\text{'\{'}F{'\}'}$. The maximum charge on the capacitor is
+   $80\,\mu\text{'\{'}C{'\}'}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the total
    energy in the circuit.
 
 <details>
@@ -549,14 +549,14 @@ $I_2 = 5$ A. Find the net magnetic field at the center of the loop.
 
 The field from the straight wire at the center of the loop (distance $d = 0.1$ m):
 
-$$B_{\text{wire}} = \frac{\mu_0 I_1}{2\pi d} = \frac{(4\pi \times 10^{-7})(10)}{2\pi(0.1)} = \frac{2 \times 10^{-5}}{0.1} = 2.0 \times 10^{-4}\,\text{T}$$
+$$B_{\text{'\{'}wire{'\}'}} = \frac{\mu_0 I_1}{2\pi d} = \frac{(4\pi \times 10^{-7})(10)}{2\pi(0.1)} = \frac{2 \times 10^{-5}}{0.1} = 2.0 \times 10^{-4}\,\text{'\{'}T{'\}'}$$
 
 By the right-hand rule, if the wire is vertical and the loop is to the right, the field from the wire
 at the loop center points out of the page.
 
 The field from the circular loop at its center:
 
-$$B_{\text{loop}} = \frac{\mu_0 I_2}{2R} = \frac{(4\pi \times 10^{-7})(5)}{2(0.05)} = \frac{2\pi \times 10^{-6}}{0.05} = 1.257 \times 10^{-4}\,\text{T}$$
+$$B_{\text{'\{'}loop{'\}'}} = \frac{\mu_0 I_2}{2R} = \frac{(4\pi \times 10^{-7})(5)}{2(0.05)} = \frac{2\pi \times 10^{-6}}{0.05} = 1.257 \times 10^{-4}\,\text{'\{'}T{'\}'}$$
 
 The direction depends on the current direction in the loop. If the loop current flows counterclockwise
 (viewed from above), the field at the center points out of the page (same direction as the wire's
@@ -564,11 +564,11 @@ field).
 
 If both fields are in the same direction:
 
-$$B_{\text{net}} = (2.0 + 1.257) \times 10^{-4} = 3.26 \times 10^{-4}\,\text{T}$$
+$$B_{\text{'\{'}net{'\}'}} = (2.0 + 1.257) \times 10^{-4} = 3.26 \times 10^{-4}\,\text{'\{'}T{'\}'}$$
 
 If opposite:
 
-$$B_{\text{net}} = (2.0 - 1.257) \times 10^{-4} = 0.74 \times 10^{-4}\,\text{T}$$
+$$B_{\text{'\{'}net{'\}'}} = (2.0 - 1.257) \times 10^{-4} = 0.74 \times 10^{-4}\,\text{'\{'}T{'\}'}$$
 
 </details>
 
@@ -588,9 +588,9 @@ terminal velocity of the loop as it enters the field.
 As the loop enters the field, the flux through the loop changes. Only the bottom edge of width $w$ is
 inside the field during entry.
 
-The motional EMF: $\mathcal{E} = Bwv$.
+The motional EMF: $\mathcal{'\{'}E{'\}'} = Bwv$.
 
-The induced current: $I = \mathcal{E}/R = Bwv/R$.
+The induced current: $I = \mathcal{'\{'}E{'\}'}/R = Bwv/R$.
 
 By Lenz's law, the induced current creates a force opposing the motion (upward). The force on the
 bottom wire is:
@@ -602,7 +602,7 @@ At terminal velocity, this magnetic force balances gravity:
 $$mg = \frac{B^2 w^2 v_T}{R}
 $$
 
-$$v_T = \frac{mgR}{B^2 w^2} = \frac{(0.01)(9.8)(0.5)}{(0.5)^2(0.1)^2} = \frac{0.049}{0.0025} = 19.6\,\text{m/s}
+$$v_T = \frac{mgR}{B^2 w^2} = \frac{(0.01)(9.8)(0.5)}{(0.5)^2(0.1)^2} = \frac{0.049}{0.0025} = 19.6\,\text{'\{'}m/s{'\}'}
 $$
 
 </details>
@@ -610,7 +610,7 @@ $$
 <details>
 <summary>Question 9: AP Exam-Style -- RL circuit analysis</summary>
 
-An RL circuit with $R = 100\,\Omega$ and $L = 0.5$ H is connected to a DC source of $\mathcal{E} = 20$
+An RL circuit with $R = 100\,\Omega$ and $L = 0.5$ H is connected to a DC source of $\mathcal{'\{'}E{'\}'} = 20$
 V. At $t = 0$, the switch is closed. (a) Derive the current as a function of time. (b) At what time is
 the current increasing at half its initial rate? (c) How much energy has been stored in the inductor
 when the current reaches 80% of its maximum value?
@@ -620,27 +620,27 @@ when the current reaches 80% of its maximum value?
 <details>
 <summary>Answer</summary>
 
-(a) The ODE is $\mathcal{E} = L\frac{dI}{dt} + IR$.
+(a) The ODE is $\mathcal{'\{'}E{'\}'} = L\frac{dI}{dt} + IR$.
 
-Rearranging: $\frac{dI}{dt} = \frac{\mathcal{E}}{L} - \frac{R}{L}I$.
+Rearranging: $\frac{dI}{dt} = \frac{\mathcal{'\{'}E{'\}'}}{L} - \frac{R}{L}I$.
 
-Let $I_{\max} = \mathcal{E}/R = 20/100 = 0.2$ A and $\tau = L/R = 0.5/100 = 5 \times 10^{-3}$ s.
+Let $I_{\max} = \mathcal{'\{'}E{'\}'}/R = 20/100 = 0.2$ A and $\tau = L/R = 0.5/100 = 5 \times 10^{-3}$ s.
 
 Solution: $I(t) = I_{\max}(1 - e^{-t/\tau}) = 0.2(1 - e^{-200t})$.
 
-(b) The initial rate of current increase is $dI/dt|_{t=0} = \mathcal{E}/L = 20/0.5 = 40$ A/s.
+(b) The initial rate of current increase is $dI/dt|_{t=0} = \mathcal{'\{'}E{'\}'}/L = 20/0.5 = 40$ A/s.
 
 Half of this is $20$ A/s:
 
-$$\frac{dI}{dt} = \frac{\mathcal{E}}{L}e^{-t/\tau} = 40e^{-200t} = 20$$
+$$\frac{dI}{dt} = \frac{\mathcal{'\{'}E{'\}'}}{L}e^{-t/\tau} = 40e^{-200t} = 20$$
 
-$$e^{-200t} = 0.5 \implies t = \frac{\ln 2}{200} = 3.47 \times 10^{-3}\,\text{s} = 3.47\,\text{ms}$$
+$$e^{-200t} = 0.5 \implies t = \frac{\ln 2}{200} = 3.47 \times 10^{-3}\,\text{'\{'}s{'\}'} = 3.47\,\text{'\{'}ms{'\}'}$$
 
 Note: this occurs at $t = \tau \ln 2$.
 
 (c) At $I = 0.8 I_{\max} = 0.16$ A:
 
-$$U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.5)(0.16)^2 = \frac{1}{2}(0.5)(0.0256) = 6.4 \times 10^{-3}\,\text{J} = 6.4\,\text{mJ}$$
+$$U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.5)(0.16)^2 = \frac{1}{2}(0.5)(0.0256) = 6.4 \times 10^{-3}\,\text{'\{'}J{'\}'} = 6.4\,\text{'\{'}mJ{'\}'}$$
 
 </details>
 
@@ -659,18 +659,18 @@ the electric field between the plates.
 
 (a) By conservation of charge and the continuity of the displacement current:
 
-$$I_d = I = 3\,\text{A}$$
+$$I_d = I = 3\,\text{'\{'}A{'\}'}$$
 
 (b) Apply the Ampere-Maxwell law with a circular Amperian loop of radius $r = 0.03$ m (note $r < R$):
 
 $$B \cdot 2\pi r = \mu_0 I_d \frac{r^2}{R^2} = \mu_0(3)\frac{(0.03)^2}{(0.05)^2} = \mu_0(3)(0.36)$$
 
-$$B = \frac{(4\pi \times 10^{-7})(1.08)}{2\pi(0.03)} = \frac{4.32\pi \times 10^{-7}}{6\pi \times 10^{-2}} = \frac{4.32 \times 10^{-7}}{0.06} = 7.2 \times 10^{-6}\,\text{T} = 7.2\,\mu\text{T}$$
+$$B = \frac{(4\pi \times 10^{-7})(1.08)}{2\pi(0.03)} = \frac{4.32\pi \times 10^{-7}}{6\pi \times 10^{-2}} = \frac{4.32 \times 10^{-7}}{0.06} = 7.2 \times 10^{-6}\,\text{'\{'}T{'\}'} = 7.2\,\mu\text{'\{'}T{'\}'}$$
 
 (c) The displacement current is:
 
 $$I_d = \epsilon_0 \frac{d\Phi_E}{dt} = \epsilon_0 \frac{d}{dt}(E \cdot \pi R^2) = \epsilon_0 \pi R^2 \frac{dE}{dt}$$
 
-$$\frac{dE}{dt} = \frac{I_d}{\epsilon_0 \pi R^2} = \frac{3}{(8.854 \times 10^{-12})\pi(0.05)^2} = \frac{3}{6.95 \times 10^{-14}} = 4.32 \times 10^{13}\,\text{V/m}\cdot\text{s}$$
+$$\frac{dE}{dt} = \frac{I_d}{\epsilon_0 \pi R^2} = \frac{3}{(8.854 \times 10^{-12})\pi(0.05)^2} = \frac{3}{6.95 \times 10^{-14}} = 4.32 \times 10^{13}\,\text{'\{'}V/m{'\}'}\cdot\text{'\{'}s{'\}'}$$
 
 </details>

@@ -186,7 +186,7 @@ series) since $\dfrac{1}{n}$ decreases to $0$.
 
 ### Finite Binomial Expansion
 
-For $n \in \mathbb{Z}^+$:
+For $n \in \mathbb{'\{'}Z{'\}'}^+$:
 
 $$(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k$$
 
@@ -196,7 +196,7 @@ $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 ### General Binomial Expansion
 
-For any $n \in \mathbb{R}$ and $|x| \lt 1$:
+For any $n \in \mathbb{'\{'}R{'\}'}$ and $|x| \lt 1$:
 
 $$(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots$$
 
@@ -325,7 +325,7 @@ Actual error: $|1.64872 - 1.64583| \approx 0.0029$, which is within the bound.
 
 ### Summation Proofs
 
-**Example.** Prove that $\displaystyle\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$ for all $n \in \mathbb{Z}^+$.
+**Example.** Prove that $\displaystyle\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 **Base case** ($n = 1$): $\dfrac{1 \cdot 2 \cdot 3}{6} = 1$. True.
 
@@ -340,15 +340,15 @@ $$= \frac{(j+1)}{6}\bigl[j(2j+1) + 6(j+1)\bigr] = \frac{(j+1)}{6}\bigl[2j^2 + 7j
 $$= \frac{(j+1)(j+2)(2j+3)}{6}$$
 
 This is the formula with $n = j + 1$. Hence $P(j+1)$ is true. By induction, the result holds for
-all $n \in \mathbb{Z}^+$.
+all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 ### Divisibility Proofs
 
-**Example.** Prove that $3^n - 1$ is divisible by $2$ for all $n \in \mathbb{N}$.
+**Example.** Prove that $3^n - 1$ is divisible by $2$ for all $n \in \mathbb{'\{'}N{'\}'}$.
 
 **Base case** ($n = 0$): $3^0 - 1 = 0$, which is divisible by $2$. True.
 
-**Inductive hypothesis:** $3^k - 1 = 2m$ for some $m \in \mathbb{Z}$.
+**Inductive hypothesis:** $3^k - 1 = 2m$ for some $m \in \mathbb{'\{'}Z{'\}'}$.
 
 **Inductive step:**
 
@@ -358,7 +358,7 @@ This is divisible by $2$. By induction, the result holds.
 
 ### Inequality Proofs
 
-**Example.** Prove that $2^n \gt n$ for all $n \in \mathbb{Z}^+$.
+**Example.** Prove that $2^n \gt n$ for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 **Base case** ($n = 1$): $2^1 = 2 \gt 1$. True.
 
@@ -449,7 +449,7 @@ So the coefficient of $x^4$ is $240$.
 **Worked Example: Induction Proof Involving Summation**
 
 Prove by induction that $\displaystyle\sum_{k=1}^{n} k \cdot 2^{k-1} = (n - 1) \cdot 2^n + 1$ for all
-$n \in \mathbb{Z}^+$.
+$n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 <details>
 <summary>Solution</summary>
@@ -463,13 +463,13 @@ $j \ge 1$.
 
 $$\sum_{k=1}^{j+1} k \cdot 2^{k-1} = \sum_{k=1}^{j} k \cdot 2^{k-1} + (j+1) \cdot 2^j$$
 
-$$= (j - 1) \cdot 2^j + 1 + (j+1) \cdot 2^j \quad \mathrm{(by\ hypothesis)}$$
+$$= (j - 1) \cdot 2^j + 1 + (j+1) \cdot 2^j \quad \mathrm{'\{'}(by\ hypothesis){'\}'}$$
 
 $$= \bigl[(j-1) + (j+1)\bigr] 2^j + 1 = 2j \cdot 2^j + 1 = j \cdot 2^{j+1} + 1$$
 
 $$= (j + 1 - 1) \cdot 2^{j+1} + 1$$
 
-This is the formula with $n = j + 1$. By induction, the result holds for all $n \in \mathbb{Z}^+$.
+This is the formula with $n = j + 1$. By induction, the result holds for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 </details>
 
@@ -542,7 +542,7 @@ Actual error: $|0.1823 - 0.18| = 0.0023$, which is within the bound.
 3. Find the coefficient of $x^5$ in the expansion of $(1 + 3x)^{-2}$.
 
 4. Prove by induction that $\displaystyle\sum_{k=1}^{n} \frac{1}{k(k+1)} = \frac{n}{n+1}$ for all
-   $n \in \mathbb{Z}^+$.
+   $n \in \mathbb{'\{'}Z{'\}'}^+$.
 
 5. Find the Maclaurin series of $\dfrac{x}{1 + x^2}$ up to $x^7$ and state the radius of convergence.
 
