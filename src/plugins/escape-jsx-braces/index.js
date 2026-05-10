@@ -22,7 +22,7 @@ module.exports = function escapeJsxBraces() {
     // Collect mdxJsxTextExpression nodes to replace (can't modify during visit)
     const replacements = [];
 
-    visit(tree, 'mdxJsxTextExpression', (node, index, parent) => {
+    visit(tree, 'mdxTextExpression', (node, index, parent) => {
       if (parent && typeof index === 'number') {
         replacements.push({ parent, index, node });
       }
