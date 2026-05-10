@@ -931,7 +931,7 @@ password twice to confirm it was typed correctly).
 
 1. **Confusing SQL WHERE and HAVING clauses:** WHERE filters individual ROWS before grouping. HAVING filters GROUPS after a GROUP BY clause. Use WHERE for conditions on individual records (e.g., price > 100) and HAVING for conditions on aggregate values (e.g., COUNT(*) > 5). Applying aggregate functions in a WHERE clause will cause an error.
 
-2. **Off-by-one errors in loop conditions:** When using a loop to process n items, students frequently set the loop condition incorrectly (e.g., using <= n instead of < n, or starting the counter at 1 instead of 0). Always trace through the loop manually for a small example to verify the boundary conditions are correct.
+2. **Off-by-one errors in loop conditions:** When using a loop to process n items, students frequently set the loop condition incorrectly (e.g., using &lt;= n instead of &lt; n, or starting the counter at 1 instead of 0). Always trace through the loop manually for a small example to verify the boundary conditions are correct.
 
 3. **Not normalising databases sufficiently:** A database table should not contain redundant data. If a customer's address appears in multiple order records, the design is not normalised. Each piece of data should appear in only one place. Violating normalisation leads to update anomalies, insertion anomalies, and deletion anomalies.
 
@@ -1173,7 +1173,7 @@ GROUP BY Order.OrderID;
 
 (a) Write a function in pseudocode that takes an array of numbers and returns the average.
 
-(b) Write a procedure that takes a student's score and prints the corresponding grade (A: >= 80, B: >= 60, C: >= 40, F: < 40).
+(b) Write a procedure that takes a student's score and prints the corresponding grade (A: &gt;= 80, B: &gt;= 60, C: &gt;= 40, F: &lt; 40).
 
 (c) Explain the difference between a function and a procedure.
 

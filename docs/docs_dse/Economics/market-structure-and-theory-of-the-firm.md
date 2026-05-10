@@ -1276,8 +1276,8 @@ For `P \gt 0`: `Q = P/10`.
 
 ## Problem Set
 
-<details>
-<summary>Problem 1: Identifying Market Structures</summary>
+### Problem 1: Identifying Market Structures
+
 
 For each of the following markets, identify the most appropriate market structure and explain your
 reasoning with reference to the characteristics discussed in this file.
@@ -1307,10 +1307,9 @@ effects, app ecosystems, development costs), mutual interdependence.
 
 If you get this wrong, revise: [Overview of Market Structures](#overview-of-market-structures)
 
-</details>
 
-<details>
-<summary>Problem 2: Perfect Competition Long-Run Entry</summary>
+### Problem 2: Perfect Competition Long-Run Entry
+
 
 In a perfectly competitive industry, each firm has `TC = 100 + 5Q + Q^2`. The current market price is
 `P = 30`.
@@ -1342,10 +1341,9 @@ Long-run equilibrium price = 25. Each firm produces `Q = 10` and earns normal pr
 
 If you get this wrong, revise: [Long-Run Equilibrium](#long-run-equilibrium)
 
-</details>
 
-<details>
-<summary>Problem 3: Monopoly Deadweight Loss</summary>
+### Problem 3: Monopoly Deadweight Loss
+
 
 A monopolist faces demand `P = 80 - 0.5Q` and has `TC = 40 + 10Q`.
 
@@ -1369,10 +1367,9 @@ Set `MR = MC`: `80 - Q = 10`, `Q_m = 70`. `P_m = 80 - 35 = 45`.
 
 If you get this wrong, revise: [Inefficiency of Monopoly](#inefficiency-of-monopoly)
 
-</details>
 
-<details>
-<summary>Problem 4: Third-Degree Price Discrimination</summary>
+### Problem 4: Third-Degree Price Discrimination
+
 
 A museum charges different prices to adults and students. Demand: `P_A = 50 - Q_A`,
 `P_S = 30 - Q_S`. `MC = 5` (constant).
@@ -1407,10 +1404,9 @@ more price-sensitive, so the monopolist charges them less.
 
 If you get this wrong, revise: [Price Discrimination](#price-discrimination)
 
-</details>
 
-<details>
-<summary>Problem 5: Game Theory — Nash Equilibrium</summary>
+### Problem 5: Game Theory — Nash Equilibrium
+
 
 Two firms, Alpha and Beta, compete on advertising spend. Each can choose High or Low advertising. The
 payoff matrix (annual profit in USD million):
@@ -1439,10 +1435,9 @@ will choose Low because the incentive to deviate to High is too strong (prisoner
 
 If you get this wrong, revise: [Game Theory and Strategic Behaviour](#game-theory-and-strategic-behaviour)
 
-</details>
 
-<details>
-<summary>Problem 6: Kinked Demand Curve</summary>
+### Problem 6: Kinked Demand Curve
+
 
 An oligopolistic firm faces a kinked demand curve. Above the current price `P^* = 50`, demand is given
 by `P = 60 - 0.5Q`. Below `P^*`, demand is given by `P = 70 - Q`.
@@ -1472,10 +1467,9 @@ The `MR` gap is from 30 to 40 at `Q = 20`.
 
 If you get this wrong, revise: [The Kinked Demand Curve Model](#the-kinked-demand-curve-model)
 
-</details>
 
-<details>
-<summary>Problem 7: Natural Monopoly Regulation</summary>
+### Problem 7: Natural Monopoly Regulation
+
 
 A natural monopoly has `TC = 300 + 5Q` and faces demand `P = 45 - 0.5Q`.
 
@@ -1505,10 +1499,9 @@ Using the quadratic formula: `Q = (80 \pm \sqrt{6400 - 2400}) / 2 = (80 \pm 63.2
 
 If you get this wrong, revise: [Natural Monopoly: Detailed Analysis](#natural-monopoly-detailed-analysis)
 
-</details>
 
-<details>
-<summary>Problem 8: Contestable Markets</summary>
+### Problem 8: Contestable Markets
+
 
 A single firm operates as a monopoly on a small island, producing electricity with `TC = 200 + 2Q`.
 Demand is `P = 20 - Q`. There are no sunk costs -- any firm can enter and exit at zero cost.
@@ -1540,7 +1533,6 @@ halves the price, approaching the competitive outcome despite there being only o
 
 If you get this wrong, revise: [Contestable Markets Theory](#contestable-markets-theory)
 
-</details>
 
 ---
 
@@ -1735,7 +1727,6 @@ Perfectly competitive firms do not advertise because they sell homogeneous produ
 
 If you get this wrong, revise: [Monopolistic Competition](#monopolistic-competition)
 
-</details>
 
 ---
 
@@ -1871,3 +1862,4 @@ This is different from third-degree price discrimination (where the utility woul
 
 If you get this wrong, revise: [Price Discrimination and Regulation](#price-discrimination-and-regulation)
 
+</details>

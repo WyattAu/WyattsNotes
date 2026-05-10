@@ -36,7 +36,7 @@ $GDP = C + I + G + (X - M) = 800 + 300 + 250 + (400 - 350) = HK\$1400$ billion.
 
 **Solution:**
 
-(a) Real GDP $= \frac{\text{Nominal GDP}}{\text{GDP Deflator}} \times 100$.
+(a) Real GDP $= \frac{'{'}\text{Nominal GDP}{'}'}{'{'}\text{GDP Deflator}{'}'} \times 100$.
 
 - 2015: $Real GDP = \frac{500}{100} \times 100 = 500$ billion.
 - 2020: $Real GDP = \frac{700}{125} \times 100 = 560$ billion.
@@ -46,7 +46,7 @@ $GDP = C + I + G + (X - M) = 800 + 300 + 250 + (400 - 350) = HK\$1400$ billion.
 
 (c) The student confuses nominal and real GDP. Nominal GDP increased 80% ($\frac{900 - 500}{500} = 80\%$), but part of this increase is due to inflation (the GDP deflator rose from 100 to 150, meaning prices rose 50%). Real GDP only grew from 500 to 600 billion -- a 20% increase. The nominal increase overstates true economic growth because it includes the effect of rising prices, not just increased output.
 
-(d) Real GDP per capita $= \frac{\text{Real GDP}}{Population}$.
+(d) Real GDP per capita $= \frac{'{'}\text{Real GDP}{'}'}{Population}$.
 
 - 2015: $\frac{500}{10} = 50,000$ per person.
 - 2025: $\frac{600}{12} = 50,000$ per person.
@@ -142,17 +142,17 @@ Country B: GDP per capita $= \frac{500}{10} = \$50,000$.
 
 $$GDP = \text{Compensation of employees} + \text{Gross operating surplus} + \text{Gross mixed income} + \text{Taxes on production} - \text{Subsidies}$$
 
-$$GDP = 600 + 350 + 100 + 80 - 30 = \text{HK}\$1\,100 \text{ billion}$$
+$$GDP = 600 + 350 + 100 + 80 - 30 = HK\$1\,100 \text{ billion}$$
 
-(b) GNP $= GDP + \text{Net factor income from abroad} = 1100 + (-15) = \text{HK}\$1\,085$ billion.
+(b) GNP $= GDP + \text{Net factor income from abroad} = 1100 + (-15) = HK\$1\,085$ billion.
 
-NNP $= GNP - \text{Depreciation} = 1085 - 120 = \text{HK}\$965$ billion.
+NNP $= GNP - \text{Depreciation} = 1085 - 120 = HK\$965$ billion.
 
-National Income $= NNP - \text{Indirect taxes} + \text{Subsidies} = 965 - 80 + 30 = \text{HK}\$915$ billion.
+National Income $= NNP - \text{Indirect taxes} + \text{Subsidies} = 965 - 80 + 30 = HK\$915$ billion.
 
 (c) The three approaches yield the same result because every transaction in the economy has two sides. When a consumer buys a good for $\$100$ (expenditure approach), the $\$100$ becomes income for the producer (income approach), who uses it to pay wages, rent, and profit. The good was produced using resources valued at $\$100$ (output approach). This is the circular flow of income: expenditure $\rightarrow$ income $\rightarrow$ production $\rightarrow$ expenditure.
 
-(d) The HK$50 billion earned from a subsidiary in Vietnam is **factor income from abroad**. It is included in GNP (which counts income earned by residents regardless of location) but not in GDP (which counts production within geographical borders). This means GNP $>$ GDP in this case, if this income exceeds the income earned by foreign-owned factors in Hong Kong. If net factor income from abroad becomes $+35$ billion (50 earned abroad minus 15 paid to foreigners), then GNP $= 1100 + 35 = \text{HK}\$1\,135$ billion.
+(d) The HK$50 billion earned from a subsidiary in Vietnam is **factor income from abroad**. It is included in GNP (which counts income earned by residents regardless of location) but not in GDP (which counts production within geographical borders). This means GNP $>$ GDP in this case, if this income exceeds the income earned by foreign-owned factors in Hong Kong. If net factor income from abroad becomes $+35$ billion (50 earned abroad minus 15 paid to foreigners), then GNP $= 1100 + 35 = HK\$1\,135$ billion.
 
 ### EQ-2: Inflation Measurement and Real Values
 
@@ -162,16 +162,16 @@ National Income $= NNP - \text{Indirect taxes} + \text{Subsidies} = 965 - 80 + 3
 
 (a) Inflation rate $= \frac{CPI_{2023} - CPI_{2018}}{CPI_{2018}} \times 100\% = \frac{132 - 110}{110} \times 100\% = 20\%$.
 
-(b) Real salary $= \frac{\text{Nominal salary}}{CPI} \times 100$.
+(b) Real salary $= \frac{'{'}\text{Nominal salary}{'}'}{CPI} \times 100$.
 
-- 2018: Real salary $= \frac{20\,000}{110} \times 100 = \text{HK}\$18\,182$.
-- 2023: Real salary $= \frac{24\,000}{132} \times 100 = \text{HK}\$18\,182$.
+- 2018: Real salary $= \frac{20000}{110} \times 100 = HK\$18\,182$.
+- 2023: Real salary $= \frac{24000}{132} \times 100 = HK\$18\,182$.
 
 (c) The worker's real salary is exactly the same in both years (HK$18,182). Although the nominal salary rose by 20% (from 20,000 to 24,000), prices also rose by 20%, leaving purchasing power unchanged. The 20% nominal increase exactly matched inflation.
 
-(d) With HK$25,000 in 2023: Real salary $= \frac{25\,000}{132} \times 100 = \text{HK}\$18\,939$.
+(d) With HK$25,000 in 2023: Real salary $= \frac{25000}{132} \times 100 = HK\$18\,939$.
 
-This is an increase of $\frac{18\,939 - 18\,182}{18\,182} \times 100\% = 4.2\%$ in real terms. The worker's purchasing power has genuinely improved because the nominal salary increase (25%) exceeded inflation (20%).
+This is an increase of $\frac{'{'}18\,939 - 18182{'}'}{'{'}18\,182{'}'} \times 100\% = 4.2\%$ in real terms. The worker's purchasing power has genuinely improved because the nominal salary increase (25%) exceeded inflation (20%).
 
 ### EQ-3: Unemployment Rate and Hidden Unemployment
 
@@ -223,11 +223,11 @@ $$k^{-0.6} = 0.35$$
 
 $$k = 0.35^{-1/0.6} = 0.35^{-1.667} = \frac{1}{0.35^{1.667}}$$
 
-$0.35^{1.667} = e^{1.667 \times \ln(0.35)} = e^{1.667 \times (-1.0498)} = e^{-1.7497} = 0.1739$.
+$0.35^{1.667} = e^{'{'}1.667 \times \ln(0.35){'}'} = e^{'{'}1.667 \times (-1.0498){'}'} = e^{-1.7497} = 0.1739$.
 
 $k^* = 1 / 0.1739 = 5.751$.
 
-$y^* = k^{0.4} = 5.751^{0.4} = e^{0.4 \times \ln(5.751)} = e^{0.4 \times 1.7497} = e^{0.6999} = 2.014$.
+$y^* = k^{0.4} = 5.751^{0.4} = e^{'{'}0.4 \times \ln(5.751){'}'} = e^{'{'}0.4 \times 1.7497{'}'} = e^{0.6999} = 2.014$.
 
 Steady-state output per worker $= 2.014$ (in efficiency units).
 
@@ -239,11 +239,11 @@ $$k^{-0.6} = 0.07/0.30 = 0.2333$$
 
 $$k = 0.2333^{-1.667} = \frac{1}{0.2333^{1.667}}$$
 
-$0.2333^{1.667} = e^{1.667 \times \ln(0.2333)} = e^{1.667 \times (-1.4553)} = e^{-2.4255} = 0.0885$.
+$0.2333^{1.667} = e^{'{'}1.667 \times \ln(0.2333){'}'} = e^{'{'}1.667 \times (-1.4553){'}'} = e^{-2.4255} = 0.0885$.
 
 $k^* = 1 / 0.0885 = 11.30$.
 
-$y^* = 11.30^{0.4} = e^{0.4 \times 2.4243} = e^{0.9697} = 2.637$.
+$y^* = 11.30^{0.4} = e^{'{'}0.4 \times 2.4243{'}'} = e^{0.9697} = 2.637$.
 
 Output per worker rises from 2.014 to 2.637 -- a 31% increase. But this is a **one-time level effect**, not a permanent increase in the growth rate.
 
@@ -263,17 +263,17 @@ However, the Solow model predicts that this growth model has limits. As China ap
 
 ### EQ-5: Hong Kong's Economic Indicators and Living Standards
 
-**Question:** Hong Kong has the following data (2023 estimates): GDP $= \text{HK}\$2.9$ trillion, Population $= 7.5$ million, Gini coefficient $= 0.54$, Life expectancy $= 85.5$ years, Median monthly household income $= \text{HK}\$27\,500$. (a) Calculate GDP per capita. (b) The Gini coefficient of 0.54 is one of the highest among developed economies. Explain what this means and why it is a limitation of using GDP per capita as a welfare indicator. (c) Calculate the GDP per capita in USD (assuming 1 USD $= 7.8$ HKD) and compare it with the median household income approach to measuring living standards. (d) Suggest three policies Hong Kong could implement to reduce income inequality while maintaining economic efficiency.
+**Question:** Hong Kong has the following data (2023 estimates): GDP $= HK\$2.9$ trillion, Population $= 7.5$ million, Gini coefficient $= 0.54$, Life expectancy $= 85.5$ years, Median monthly household income $= HK\$27\,500$. (a) Calculate GDP per capita. (b) The Gini coefficient of 0.54 is one of the highest among developed economies. Explain what this means and why it is a limitation of using GDP per capita as a welfare indicator. (c) Calculate the GDP per capita in USD (assuming 1 USD $= 7.8$ HKD) and compare it with the median household income approach to measuring living standards. (d) Suggest three policies Hong Kong could implement to reduce income inequality while maintaining economic efficiency.
 
 **Solution:**
 
-(a) GDP per capita $= \frac{2\,900\,000}{7.5} = \text{HK}\$386\,667 \approx \text{HK}\$387\,000$.
+(a) GDP per capita $= \frac{'{'}2\,900000{'}'}{7.5} = HK\$386\,667 \approx HK\$387\,000$.
 
 (b) A Gini coefficient of 0.54 means significant income inequality. The Gini ranges from 0 (perfect equality) to 1 (perfect inequality). Hong Kong's 0.54 is higher than most OECD countries (typically 0.25--0.40) and higher than China (0.47) and the US (0.49). GDP per capita of HK$387,000 is an **average** that is heavily skewed by high-income earners. The median household income of HK$27,500 per month (HK$330,000 per year) is considerably lower than the GDP per capita suggests. This means a typical Hong Kong resident's income is well below the average, reflecting the extreme concentration of income at the top.
 
-(c) GDP per capita in USD $= \frac{387\,000}{7.8} \approx \$49\,615$.
+(c) GDP per capita in USD $= \frac{387000}{7.8} \approx \$49\,615$.
 
-Median household income per capita (assuming average household size of 2.9): $\frac{330\,000}{2.9} \approx \text{HK}\$113\,793$ per year $= \$14\,589$ USD.
+Median household income per capita (assuming average household size of 2.9): $\frac{330000}{2.9} \approx HK\$113\,793$ per year $= \$14\,589$ USD.
 
 The median income per capita is only about 29% of GDP per capita. This massive gap reflects both: (i) income inequality (the Gini coefficient), and (ii) the fact that GDP includes corporate profits, government revenue, and depreciation that do not flow directly to households as personal income.
 
@@ -295,6 +295,6 @@ The median income per capita is only about 29% of GDP per capita. This massive g
 
 3. **Assuming GDP per capita equals individual income:** GDP per capita is an average of total output divided by population, not a measure of individual income. It includes corporate profits, government revenue, and depreciation. Median household income per capita is typically a much better indicator of typical living standards. The difference between mean and median is particularly large in unequal societies like Hong Kong.
 
-4. **Ignoring the base year when using index numbers:** When calculating real GDP from nominal GDP and the GDP deflator, remember that the deflator is an index with a specific base year. Real GDP $= \frac{\text{Nominal GDP}}{\text{GDP Deflator}} \times 100$. The "100" comes from the base year deflator being normalised to 100. Students sometimes forget this factor of 100.
+4. **Ignoring the base year when using index numbers:** When calculating real GDP from nominal GDP and the GDP deflator, remember that the deflator is an index with a specific base year. Real GDP $= \frac{'{'}\text{Nominal GDP}{'}'}{'{'}\text{GDP Deflator}{'}'} \times 100$. The "100" comes from the base year deflator being normalised to 100. Students sometimes forget this factor of 100.
 
 5. **Misclassifying discouraged workers:** Discouraged workers are not unemployed -- they are out of the labour force. The unemployment rate only counts those actively seeking work. This means the unemployment rate can fall during a recession not because people find jobs, but because they give up looking (the "discouraged worker effect"). Always consider both the unemployment rate and the labour force participation rate together.

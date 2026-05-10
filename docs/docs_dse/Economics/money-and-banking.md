@@ -965,8 +965,8 @@ control.
 
 ## Problem Set
 
-<details>
-<summary>Problem 1: Money Multiplier with Cash Leakages</summary>
+### Problem 1: Money Multiplier with Cash Leakages
+
 
 The required reserve ratio is 8%. An initial deposit of HKD 20,000 is made. The public holds cash equal
 to 25% of deposits.
@@ -988,10 +988,9 @@ money from the banking system at each round, reducing the base for further lendi
 
 If you get this wrong, revise: [The Money Multiplier](#the-money-multiplier)
 
-</details>
 
-<details>
-<summary>Problem 2: Open Market Operations Calculation</summary>
+### Problem 2: Open Market Operations Calculation
+
 
 The central bank buys HKD 300 million worth of government bonds from commercial banks. The required
 reserve ratio is 5%.
@@ -1014,10 +1013,9 @@ rates.
 
 If you get this wrong, revise: [Open Market Operations (OMO)](#open-market-operations-omo)
 
-</details>
 
-<details>
-<summary>Problem 3: Real vs Nominal Interest Rates</summary>
+### Problem 3: Real vs Nominal Interest Rates
+
 
 A bank offers 4% nominal interest on 1-year deposits. Inflation turns out to be 6%.
 
@@ -1042,10 +1040,9 @@ they received. This is a transfer of purchasing power from savers to borrowers.
 
 If you get this wrong, revise: [Interest Rates](#interest-rates)
 
-</details>
 
-<details>
-<summary>Problem 4: Bank Balance Sheet and Lending</summary>
+### Problem 4: Bank Balance Sheet and Lending
+
 
 Bank X has the following (HKD millions): Reserves = 150, Loans = 600, Securities = 250. Deposits = 900.
 The required reserve ratio is 12%.
@@ -1071,10 +1068,9 @@ Maximum total increase = `42 \times 8.33 = 350` million.
 
 If you get this wrong, revise: [Money Creation by Commercial Banks](#money-creation-by-commercial-banks)
 
-</details>
 
-<details>
-<summary>Problem 5: HKMA and the Linked Exchange Rate</summary>
+### Problem 5: HKMA and the Linked Exchange Rate
+
 
 Explain what the HKMA would do if there is upward pressure on the HKD (the exchange rate moves towards
 7.75). Trace the mechanism step by step.
@@ -1096,10 +1092,9 @@ At the strong-side convertibility undertaking (7.75):
 
 If you get this wrong, revise: [The Hong Kong Monetary Authority (HKMA)](#the-hong-kong-monetary-authority-hkma)
 
-</details>
 
-<details>
-<summary>Problem 6: Functions of Money — Bitcoin Evaluation</summary>
+### Problem 6: Functions of Money — Bitcoin Evaluation
+
 
 Evaluate Bitcoin against each of the four functions of money. Is Bitcoin likely to replace
 conventional money in the foreseeable future?
@@ -1127,10 +1122,9 @@ volatility decreases dramatically and acceptance increases significantly.
 
 If you get this wrong, revise: [Functions of Money](#functions-of-money)
 
-</details>
 
-<details>
-<summary>Problem 7: M1 vs M2</summary>
+### Problem 7: M1 vs M2
+
 
 An economy has the following (HKD billions): Currency in circulation = 400, Demand deposits = 800,
 Savings deposits = 1200, Time deposits = 600.
@@ -1152,10 +1146,9 @@ deposits, what happens to M1 and M2?
 
 If you get this wrong, revise: [Measures of Money Supply](#measures-of-money-supply)
 
-</details>
 
-<details>
-<summary>Problem 8: Transmission Mechanism</summary>
+### Problem 8: Transmission Mechanism
+
 
 The central bank raises the base rate by 0.75 percentage points. The economy is experiencing rising
 inflation. Explain the expected effects on consumption, investment, net exports, and inflation.
@@ -1180,7 +1173,6 @@ less demand-pull pressure, inflation gradually falls toward the target.
 
 If you get this wrong, revise: [Transmission Mechanism of Monetary Policy](#transmission-mechanism-of-monetary-policy)
 
-</details>
 
 ---
 
@@ -1339,7 +1331,6 @@ The decision should weigh the costs of implementation against these incremental 
 
 If you get this wrong, revise: [Future of Money](#future-of-money)
 
-</details>
 
 ---
 
@@ -1457,3 +1448,4 @@ Country Z's GDP per capita is approximately 2.7 times Country Y's, purely due to
 
 If you get this wrong, revise: [Financial Development](#financial-development)
 
+</details>

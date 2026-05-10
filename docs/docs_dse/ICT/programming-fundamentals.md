@@ -727,7 +727,7 @@ Every flowchart symbol maps directly to pseudocode:
 <details>
 <summary>Worked Example: Testing a Grade Program</summary>
 
-Program: Assign grades based on score (A: >= 80, B: >= 60, C: >= 40, F: < 40).
+Program: Assign grades based on score (A: &gt;= 80, B: &gt;= 60, C: &gt;= 40, F: &lt; 40).
 
 | Test Case   | Input | Expected Output | Purpose          |
 | ----------- | ----- | --------------- | ---------------- |
@@ -998,10 +998,10 @@ END
 A shop sells items with prices stored in an array. A discount is applied based on the total purchase
 amount:
 
-- Total < 100: no discount
-- 100 <= Total < 500: 5% discount
-- 500 <= Total < 1000: 10% discount
-- Total >= 1000: 15% discount
+- Total &lt; 100: no discount
+- 100 &lt;= Total &lt; 500: 5% discount
+- 500 &lt;= Total &lt; 1000: 10% discount
+- Total &gt;= 1000: 15% discount
 
 Write a program that:
 

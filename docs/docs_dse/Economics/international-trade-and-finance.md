@@ -1027,8 +1027,7 @@ can create trade diversion that partially offsets the benefits of trade creation
 
 ## Problem Set
 
-<details>
-<summary>Problem 1: Comparative Advantage with Numbers</summary>
+### Problem 1: Comparative Advantage with Numbers
 
 Country M can produce either 200 tonnes of coffee or 100 tonnes of tea. Country N can produce either
 100 tonnes of coffee or 200 tonnes of tea.
@@ -1061,10 +1060,7 @@ Both gain.
 
 If you get this wrong, revise: [Comparative Advantage](#comparative-advantage)
 
-</details>
-
-<details>
-<summary>Problem 2: Balance of Payments Calculation</summary>
+### Problem 2: Balance of Payments Calculation
 
 Country P has the following transactions (USD billion):
 
@@ -1096,10 +1092,7 @@ current account deficit).
 
 If you get this wrong, revise: [Balance of Payments](#balance-of-payments)
 
-</details>
-
-<details>
-<summary>Problem 3: Exchange Rate Effects</summary>
+### Problem 3: Exchange Rate Effects
 
 The exchange rate changes from 1 GBP = 10 HKD to 1 GBP = 11 HKD.
 
@@ -1123,10 +1116,7 @@ cheaper imports (from HK perspective) increase import spending. Both effects red
 
 If you get this wrong, revise: [Depreciation and Appreciation](#depreciation-and-appreciation)
 
-</details>
-
-<details>
-<summary>Problem 4: Marshall-Lerner Condition</summary>
+### Problem 4: Marshall-Lerner Condition
 
 A country's price elasticity of demand for exports is 0.4 and for imports is 0.9.
 
@@ -1149,10 +1139,7 @@ adjust and the trade balance improves.
 
 If you get this wrong, revise: [Marshall-Lerner Condition](#marshall-lerner-condition)
 
-</details>
-
-<details>
-<summary>Problem 5: Trade Policy Evaluation</summary>
+### Problem 5: Trade Policy Evaluation
 
 Country Z is considering joining a free trade area with Country W and Country V. Currently, Country Z
 imports Good G from Country W (the world's most efficient producer) at USD 15 per unit, paying a tariff
@@ -1176,10 +1163,7 @@ used to produce it at USD 17 (in V). The world wastes USD 2 per unit of misalloc
 
 If you get this wrong, revise: [Trade Barriers](#trade-barriers)
 
-</details>
-
-<details>
-<summary>Problem 6: Hong Kong Exchange Rate</summary>
+### Problem 6: Hong Kong Exchange Rate
 
 The US Federal Reserve raises interest rates significantly. Explain the effects on Hong Kong's economy
 given the Linked Exchange Rate System.
@@ -1210,10 +1194,7 @@ Effects on Hong Kong:
 
 If you get this wrong, revise: [Effects of Exchange Rate Changes on the Hong Kong Economy](#effects-of-exchange-rate-changes-on-the-hong-kong-economy)
 
-</details>
-
-<details>
-<summary>Problem 7: Terms of Trade and Welfare</summary>
+### Problem 7: Terms of Trade and Welfare
 
 A country's export price index rises from 100 to 130, while its import price index rises from 100 to
 140 over the same period.
@@ -1244,10 +1225,7 @@ trade.
 
 If you get this wrong, revise: [Terms of Trade](#terms-of-trade)
 
-</details>
-
-<details>
-<summary>Problem 8: Tariff vs Quota</summary>
+### Problem 8: Tariff vs Quota
 
 A country imports 1000 units of Good K at a world price of USD 50. The government wants to reduce imports
 to 600 units.
@@ -1274,8 +1252,6 @@ rights to the most efficient importers.
 </details>
 
 If you get this wrong, revise: [Trade Barriers](#trade-barriers)
-
-</details>
 
 ---
 
@@ -1430,8 +1406,6 @@ NPV $= -500 + 80 \times 3.791 + 64 \times 7.606 \times 0.621 = -500 + 303.3 + 30
 
 If you get this wrong, revise: [Foreign Direct Investment](#foreign-direct-investment)
 
-</details>
-
 ---
 
 ## Additional Problems: DSE Exam-Style Integration
@@ -1516,3 +1490,4 @@ EP outperforms ISI because: (1) international competition forces efficiency; (2)
 
 If you get this wrong, revise: [Development Strategies](#development-strategies)
 
+</details>

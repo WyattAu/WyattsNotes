@@ -952,8 +952,8 @@ element.
 
 ## Problem Set
 
-<details>
-<summary>Problem 1: GDP Expenditure Approach</summary>
+### Problem 1: GDP Expenditure Approach
+
 
 An economy has the following data (USD billion):
 
@@ -978,10 +978,9 @@ income approach, not expenditure approach -- including them would double count).
 
 If you get this wrong, revise: [Methods of Measuring GDP](#methods-of-measuring-gdp)
 
-</details>
 
-<details>
-<summary>Problem 2: Nominal vs Real GDP</summary>
+### Problem 2: Nominal vs Real GDP
+
 
 An economy produces only two goods:
 
@@ -1015,10 +1014,9 @@ Real output did not grow; the entire increase in nominal GDP was due to inflatio
 
 If you get this wrong, revise: [Nominal GDP vs Real GDP](#nominal-gdp-vs-real-gdp)
 
-</details>
 
-<details>
-<summary>Problem 3: CPI Calculation</summary>
+### Problem 3: CPI Calculation
+
 
 A household's basket (base year quantities): 40 kg rice at USD 3/kg, 20 kg chicken at USD 10/kg, 1
 month rent at USD 2000.
@@ -1045,10 +1043,9 @@ overstates the true cost of living increase.
 
 If you get this wrong, revise: [Measurement: Consumer Price Index (CPI)](#measurement-consumer-price-index-cpi)
 
-</details>
 
-<details>
-<summary>Problem 4: GDP vs GNP</summary>
+### Problem 4: GDP vs GNP
+
 
 Country K has GDP of USD 500 billion. Its residents earn USD 80 billion from investments abroad. Foreign
 residents earn USD 30 billion from investments within Country K.
@@ -1073,10 +1070,9 @@ residents earn more from overseas investments than foreign residents earn in Hon
 
 If you get this wrong, revise: [GDP vs GNP vs GNI](#gdp-vs-gnp-vs-gni)
 
-</details>
 
-<details>
-<summary>Problem 5: Types of Unemployment</summary>
+### Problem 5: Types of Unemployment
+
 
 Classify each of the following as frictional, structural, cyclical, or seasonal unemployment, and explain:
 
@@ -1103,10 +1099,9 @@ may be rehired when the economy recovers.
 
 If you get this wrong, revise: [Types of Unemployment](#types-of-unemployment)
 
-</details>
 
-<details>
-<summary>Problem 6: Business Cycle Analysis</summary>
+### Problem 6: Business Cycle Analysis
+
 
 An economy's potential GDP is USD 800 billion. The following data shows actual GDP and unemployment:
 
@@ -1139,10 +1134,9 @@ law is an empirical approximation.
 
 If you get this wrong, revise: [Business Cycle](#business-cycle)
 
-</details>
 
-<details>
-<summary>Problem 7: Phillips Curve</summary>
+### Problem 7: Phillips Curve
+
 
 An economy is at the natural rate of unemployment (5%) with 2% inflation. The government uses
 expansionary policy to reduce unemployment to 3%.
@@ -1169,10 +1163,9 @@ demonstrates the accelerationist hypothesis.
 
 If you get this wrong, revise: [Phillips Curve](#phillips-curve)
 
-</details>
 
-<details>
-<summary>Problem 8: Automatic Stabilisers</summary>
+### Problem 8: Automatic Stabilisers
+
 
 Explain how progressive income tax and unemployment benefits act as automatic stabilisers during (a) a
 recession and (b) an economic boom. Why are automatic stabilisers considered superior to discretionary
@@ -1199,7 +1192,6 @@ overheating.
 
 If you get this wrong, revise: [Automatic Stabilisers](#automatic-stabilisers)
 
-</details>
 
 ---
 
@@ -1370,7 +1362,6 @@ If environmental sustainability is weighted heavily in "quality of life," the ra
 
 If you get this wrong, revise: [Development Indicators](#development-indicators)
 
-</details>
 
 ---
 
@@ -1487,3 +1478,4 @@ A negative genuine savings rate means the country is running down its total capi
 
 If you get this wrong, revise: [Green GDP and Sustainability](#green-gdp-and-sustainability)
 
+</details>
