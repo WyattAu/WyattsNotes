@@ -12,7 +12,7 @@ A complex number $z$ is written:
 
 $$z = a + bi, \quad a, b \in \mathbb{'\{'}R{'\}'}$$
 
-where $a = \mathrm{Re{}(z)$ is the real part and $b = \mathrm{Im{}(z)$ is the imaginary part. The set
+where $a = \mathrm{Re}(z)$ is the real part and $b = \mathrm{Im}(z)$ is the imaginary part. The set
 of all complex numbers is $\mathbb{'\{'}C{'\}'}$.
 
 ### Complex Arithmetic
@@ -34,7 +34,7 @@ The conjugate of $z = a + bi$ is $\bar{z} = a - bi$.
 - $z\bar{z} = a^2 + b^2 = |z|^2$
 - $\overline{z_1 + z_2} = \bar{z}_1 + \bar{z}_2$
 - $\overline{z_1 z_2} = \bar{z}_1 \bar{z}_2$
-- $z + \bar{z} = 2\mathrm{Re{}(z)$, $z - \bar{z} = 2i\,\mathrm{Im{}(z)$
+- $z + \bar{z} = 2\mathrm{Re}(z)$, $z - \bar{z} = 2i\,\mathrm{Im}(z)$
 
 ### Modulus and Argument
 
@@ -47,7 +47,7 @@ anticlockwise, where:
 
 $$\tan\theta = \frac{b}{a}$$
 
-The **principal argument** $\mathrm{Arg{}(z)$ satisfies $-\pi \lt \theta \le \pi$. Use the quadrant of
+The **principal argument** $\mathrm{Arg}(z)$ satisfies $-\pi \lt \theta \le \pi$. Use the quadrant of
 $(a, b)$ to determine the correct angle.
 
 ---
@@ -230,7 +230,7 @@ $$\sum_{k=1}^{n} \cos k\theta = \frac{\sin(n\theta/2)\cos\bigl((n+1)\theta/2\big
 
 $$\sum_{k=1}^{n} \sin k\theta = \frac{\sin(n\theta/2)\sin\bigl((n+1)\theta/2\bigr)}{\sin(\theta/2)}$$
 
-**Derivation.** Using $\cos k\theta = \mathrm{Re{}(e^{ik\theta})$ and summing the geometric series:
+**Derivation.** Using $\cos k\theta = \mathrm{Re}(e^{ik\theta})$ and summing the geometric series:
 
 $$\sum_{k=1}^{n} e^{ik\theta} = e^{i\theta}\cdot\frac{1 - e^{in\theta}}{1 - e^{i\theta}}$$
 
@@ -350,7 +350,7 @@ involves integrating $f(z)$ around a semicircular contour in the upper half-plan
 
 The integrand has a simple pole at $z = i$ in the upper half-plane with residue:
 
-$$\mathrm{Res{}\!\left(\frac{1}{z^2 + 1},\, i\right) = \lim_{z \to i} (z - i)\cdot\frac{1}{(z-i)(z+i)} = \frac{1}{2i}$$
+$$\mathrm{Res}\!\left(\frac{1}{z^2 + 1},\, i\right) = \lim_{z \to i} (z - i)\cdot\frac{1}{(z-i)(z+i)} = \frac{1}{2i}$$
 
 By the residue theorem, integrating over the semicircular contour and taking the radius to infinity:
 
@@ -450,7 +450,7 @@ $$\frac{(1 + i)^{10}}{(1 - i)^8} = \frac{32i}{16} = 2i$$
 Common Pitfall
 
 When computing arguments, always verify the quadrant. $\arctan(b/a)$ alone gives the correct angle
-only when $a \gt 0$. For other quadrants, add or subtract $\pi$ as needed. Using $\mathrm{atan2{}(b, a)$
+only when $a \gt 0$. For other quadrants, add or subtract $\pi$ as needed. Using $\mathrm{atan2}(b, a)$
 (if available) handles this automatically.
 
 :::
@@ -596,9 +596,9 @@ within the other. The region is a disk with a smaller circular cut-out near $(-1
 
 ## Common Pitfalls
 
-1. **Wrong quadrant for the argument.** When $\mathrm{Re{}(z) \lt 0$ and $\mathrm{Im{}(z) \gt 0$, the
-   point lies in the second quadrant and the argument is $\pi - \arctan\!\left(\dfrac{|\mathrm{Im{}(z)|}{|\mathrm{Re{}(z)|}\right)$,
-   not $\arctan\!\left(\dfrac{\mathrm{Im{}(z)}{\mathrm{Re{}(z)}\right)$.
+1. **Wrong quadrant for the argument.** When $\mathrm{Re}(z) \lt 0$ and $\mathrm{Im}(z) \gt 0$, the
+   point lies in the second quadrant and the argument is $\pi - \arctan\!\left(\dfrac{|\mathrm{Im}(z)|}{|\mathrm{Re}(z)|}\right)$,
+   not $\arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right)$.
 
 2. **Forgetting all $n$ roots.** An equation $z^n = w$ has exactly $n$ complex roots (counting
    multiplicity). Always list all $n$ roots by using $k = 0, 1, \ldots, n-1$.

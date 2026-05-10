@@ -60,7 +60,7 @@ Degrees of freedom: number of categories $- 1 = 2 - 1 = 1$.
 
 Critical value at $\alpha = 0.05$ with $df = 1$: $3.841$.
 
-Since $\chi^2_{\text{calc{}} = 1.728 \lt 3.841 = \chi^2_{\text{crit{}}$, we **fail to reject** the null hypothesis.
+Since $\chi^2_{\text{calc}} = 1.728 \lt 3.841 = \chi^2_{\text{crit}}$, we **fail to reject** the null hypothesis.
 
 Conclusion: The observed data fits the expected 3:1 ratio at the 0.05 significance level. There is no statistically significant evidence that the inheritance pattern deviates from Mendelian expectations.
 
@@ -118,7 +118,7 @@ After selection:
 - $q'$ (contribution from heterozygotes): $\frac{2pq \times 1}{2\bar{w}} = \frac{0.0392}{2 \times 0.99964} = 0.01961$
 - $q'$ (contribution from affected): $\frac{q^2 \times 0.1}{2\bar{w}} = \frac{0.00004}{2 \times 0.99964} = 0.00002$
 
-New allele frequency: $q_{\text{new{}} = \frac{2pq \times 1 + 2q^2 \times 0.1}{2\bar{w}} = \frac{0.0392 + 0.00008}{1.99928} = \frac{0.03928}{1.99928} = 0.01965$
+New allele frequency: $q_{\text{new}} = \frac{2pq \times 1 + 2q^2 \times 0.1}{2\bar{w}} = \frac{0.0392 + 0.00008}{1.99928} = \frac{0.03928}{1.99928} = 0.01965$
 
 $q$ decreased from $0.0200$ to $0.01965$ -- only a small decrease because the recessive allele is mostly "hidden" in heterozygotes, where selection cannot act against it. This explains why deleterious recessive alleles persist in populations at low frequencies.
 
@@ -138,7 +138,7 @@ $q = \frac{1.00 - 0.85}{2(1.00) - 0.85 - 0.15} = \frac{0.15}{2.00 - 1.00} = \fra
 
 $p = 1 - 0.15 = 0.85$.
 
-At equilibrium: $q(\text{HbS{}) = 0.15$ (15%).
+At equilibrium: $q(\text{HbS}) = 0.15$ (15%).
 
 Genotype frequencies at equilibrium:
 - HbA/HbA: $p^2 = (0.85)^2 = 0.7225$ (72.25%)
@@ -185,4 +185,4 @@ Observed: affected $= 1$, unaffected $= 2$.
 
 $\chi^2 = \frac{(1 - 1.2)^2}{1.2} + \frac{(2 - 1.8)^2}{1.8} = \frac{0.04}{1.2} + \frac{0.04}{1.8} = 0.0333 + 0.0222 = 0.0556$
 
-With $df = 1$, $\chi^2_{\text{crit{}} = 3.841$. Since $0.0556 \lt 3.841$, the data is consistent with 80% penetrance autosomal dominant inheritance. The probability of two unaffected parents having an affected child is 40% per child under this model.
+With $df = 1$, $\chi^2_{\text{crit}} = 3.841$. Since $0.0556 \lt 3.841$, the data is consistent with 80% penetrance autosomal dominant inheritance. The probability of two unaffected parents having an affected child is 40% per child under this model.

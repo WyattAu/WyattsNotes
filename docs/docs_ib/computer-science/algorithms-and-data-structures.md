@@ -997,7 +997,7 @@ amortized $O(1)$ insertion at the end.
 The $O(1)$ access time is the defining advantage of arrays. The memory address of element `arr[i]`
 is computed as:
 
-$\mathrm{address{}(\mathrm{arr{}[i]) = \mathrm{base address{} + i \times \mathrm{element size{}$
+$\mathrm{address}(\mathrm{arr}[i]) = \mathrm{base address} + i \times \mathrm{element size}$
 
 This calculation is constant-time, regardless of the array size or the index accessed.
 
@@ -1013,7 +1013,7 @@ A 1D array `scores` stores integers (4 bytes each). The base address of the arra
 
 Using the formula:
 
-$\mathrm{address{}(\mathrm{scores{}[i]) = \mathrm{base{} + i \times \mathrm{element size{}$
+$\mathrm{address}(\mathrm{scores}[i]) = \mathrm{base} + i \times \mathrm{element size}$
 
 - `scores[5]`: $1000 + 5 \times 4 = 1000 + 20 = 1020$
 - `scores[0]`: $1000 + 0 \times 4 = 1000$
@@ -1031,9 +1031,9 @@ A 2D array `matrix[0..2][0..3]` stores integers (4 bytes each). The base address
 
 In row-major order, elements of row 0 are stored first, followed by row 1, etc. Each row has 4 columns (indices 0 to 3).
 
-$\mathrm{address{}(\mathrm{matrix{}[r][c]) = \mathrm{base{} + (r \times \mathrm{numCols{} + c) \times \mathrm{element size{}$
+$\mathrm{address}(\mathrm{matrix}[r][c]) = \mathrm{base} + (r \times \mathrm{numCols} + c) \times \mathrm{element size}$
 
-$\mathrm{matrix{}[1][2] = 2000 + (1 \times 4 + 2) \times 4 = 2000 + 6 \times 4 = 2000 + 24 = 2024$
+$\mathrm{matrix}[1][2] = 2000 + (1 \times 4 + 2) \times 4 = 2000 + 6 \times 4 = 2000 + 24 = 2024$
 
 </details>
 
@@ -1723,7 +1723,7 @@ Big-O notation provides an upper bound on the growth rate of a function as its i
 arbitrarily large. Formally, a function $f(n)$ is said to be $O(g(n))$ if there exist positive
 constants $c$ and $n_0$ such that:
 
-$$f(n) \leq c \cdot g(n) \quad \mathrm{for all {} n \geq n_0$$
+$$f(n) \leq c \cdot g(n) \quad \mathrm{for all } n \geq n_0$$
 
 In other words, $g(n)$ is an asymptotic upper bound for $f(n)$. Big-O describes the worst-case
 growth rate; it says that $f(n)$ grows no faster than $g(n)$, up to a constant factor, for
@@ -2080,16 +2080,16 @@ linear array when elements are dequeued from the front.
 The List ADT defines an ordered collection that allows access by position:
 
 `get(index)` -- returns the element at position `index`. Precondition:
-$0 \leq \mathrm{index{} \lt \mathrm{size{}$.
+$0 \leq \mathrm{index} \lt \mathrm{size}$.
 
 `set(index, item)` -- replaces the element at position `index` with `item`. Precondition:
-$0 \leq \mathrm{index{} \lt \mathrm{size{}$.
+$0 \leq \mathrm{index} \lt \mathrm{size}$.
 
 `add(index, item)` -- inserts `item` at position `index`, shifting subsequent elements.
-Precondition: $0 \leq \mathrm{index{} \leq \mathrm{size{}$.
+Precondition: $0 \leq \mathrm{index} \leq \mathrm{size}$.
 
 `remove(index)` -- removes the element at position `index`, shifting subsequent elements.
-Precondition: $0 \leq \mathrm{index{} \lt \mathrm{size{}$.
+Precondition: $0 \leq \mathrm{index} \lt \mathrm{size}$.
 
 `size()` -- returns the number of elements.
 

@@ -102,7 +102,7 @@ For any $m \times n$ matrix $A$: $I_m A = A I_n = A$.
 compatible matrix $A$: $OA = AO = O$.
 
 **Diagonal matrix.** A square matrix $D$ is diagonal if $d_{ij} = 0$ for all $i \neq j$. We write
-$D = \mathrm{diag{}(d_1, d_2, \ldots, d_n)$.
+$D = \mathrm{diag}(d_1, d_2, \ldots, d_n)$.
 
 ### Transpose of a Matrix
 
@@ -280,22 +280,22 @@ by the determinant. The matrix of cofactors (with the sign change) is called the
 For a $3 \times 3$ matrix $A$, the inverse is given by:
 
 $$
-A^{-1} = \frac{1}{\det(A)} \mathrm{adj{}(A)
+A^{-1} = \frac{1}{\det(A)} \mathrm{adj}(A)
 $$
 
-where $\mathrm{adj{}(A)$ is the **adjugate** (transpose of the cofactor matrix).
+where $\mathrm{adj}(A)$ is the **adjugate** (transpose of the cofactor matrix).
 
-The **cofactor matrix** $\mathrm{Cof{}(A)$ has entries $C_{ij} = (-1)^{i+j} M_{ij}$. The adjugate is:
+The **cofactor matrix** $\mathrm{Cof}(A)$ has entries $C_{ij} = (-1)^{i+j} M_{ij}$. The adjugate is:
 
 $$
-\mathrm{adj{}(A) = (\mathrm{Cof{}(A))^T
+\mathrm{adj}(A) = (\mathrm{Cof}(A))^T
 $$
 
 **Procedure:**
 
 1. Compute each of the nine minors $M_{ij}$ (determinants of the nine $2 \times 2$ submatrices).
 2. Apply the sign pattern $(-1)^{i+j}$ to obtain the cofactors $C_{ij}$.
-3. Form the cofactor matrix and take its transpose to get $\mathrm{adj{}(A)$.
+3. Form the cofactor matrix and take its transpose to get $\mathrm{adj}(A)$.
 4. Divide every entry by $\det(A)$.
 
 <details>
@@ -317,7 +317,7 @@ $C_{31} = +\begin{vmatrix} 1 & 0 \\ 1 & 1 \end{vmatrix} = 1$, $C_{32} = -\begin{
 
 Cofactor matrix: $\begin{pmatrix} 1 & 1 & -1 \\ -1 & 2 & 1 \\ 1 & -2 & 2 \end{pmatrix}$
 
-**Step 3:** Transpose: $\mathrm{adj{}(A) = \begin{pmatrix} 1 & -1 & 1 \\ 1 & 2 & -2 \\ -1 & 1 & 2 \end{pmatrix}$
+**Step 3:** Transpose: $\mathrm{adj}(A) = \begin{pmatrix} 1 & -1 & 1 \\ 1 & 2 & -2 \\ -1 & 1 & 2 \end{pmatrix}$
 
 **Step 4:** Divide by $\det(A) = 3$:
 
@@ -618,16 +618,16 @@ $$
 \lambda^2 - (a + d)\lambda + (ad - bc) = 0
 $$
 
-Notice that $a + d = \mathrm{tr{}(A)$ (the trace of $A$) and $ad - bc = \det(A)$. Therefore:
+Notice that $a + d = \mathrm{tr}(A)$ (the trace of $A$) and $ad - bc = \det(A)$. Therefore:
 
 $$
-\lambda^2 - \mathrm{tr{}(A)\lambda + \det(A) = 0
+\lambda^2 - \mathrm{tr}(A)\lambda + \det(A) = 0
 $$
 
 For a $3 \times 3$ matrix, the characteristic equation is a cubic:
 
 $$
-\det(A - \lambda I) = -\lambda^3 + \mathrm{tr{}(A)\lambda^2 - S\lambda + \det(A) = 0
+\det(A - \lambda I) = -\lambda^3 + \mathrm{tr}(A)\lambda^2 - S\lambda + \det(A) = 0
 $$
 
 where $S$ is the sum of the principal $2 \times 2$ minors (the sum of the determinants of the
@@ -636,7 +636,7 @@ matrices obtained by deleting each row and the corresponding column).
 **Fundamental properties of eigenvalues:**
 
 - The sum of the eigenvalues equals the trace:
-  $\lambda_1 + \lambda_2 + \cdots + \lambda_n = \mathrm{tr{}(A)$.
+  $\lambda_1 + \lambda_2 + \cdots + \lambda_n = \mathrm{tr}(A)$.
 - The product of the eigenvalues equals the determinant:
   $\lambda_1 \lambda_2 \cdots \lambda_n = \det(A)$.
 - A matrix is invertible if and only if none of its eigenvalues is zero.
@@ -844,9 +844,9 @@ augmented matrix to row echelon form (REF) or reduced row echelon form (RREF).
 
 **Existence and uniqueness:**
 
-- If $\mathrm{rank{}(A) = \mathrm{rank{}([A \mid \mathbf{'\{'}b{'\}'}]) = n$: unique solution.
-- If $\mathrm{rank{}(A) = \mathrm{rank{}([A \mid \mathbf{'\{'}b{'\}'}]) \lt n$: infinitely many solutions.
-- If $\mathrm{rank{}(A) \lt \mathrm{rank{}([A \mid \mathbf{'\{'}b{'\}'}])$: no solution (inconsistent system).
+- If $\mathrm{rank}(A) = \mathrm{rank}([A \mid \mathbf{'\{'}b{'\}'}]) = n$: unique solution.
+- If $\mathrm{rank}(A) = \mathrm{rank}([A \mid \mathbf{'\{'}b{'\}'}]) \lt n$: infinitely many solutions.
+- If $\mathrm{rank}(A) \lt \mathrm{rank}([A \mid \mathbf{'\{'}b{'\}'}])$: no solution (inconsistent system).
 
 :::info[Examples]
 
@@ -1098,9 +1098,9 @@ that can be chosen orthonormal.
 | :------------------------------ | :------------------------------------------------------------------------------------------ | ------- | --- |
 | $2 \times 2$ determinant        | $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$                                | | |
 | $2 \times 2$ inverse            | $A^{-1} = \dfrac{1}{\det(A)}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$                 | | |
-| $3 \times 3$ inverse            | $A^{-1} = \dfrac{1}{\det(A)}\mathrm{adj{}(A)$                                                | | |
-| Characteristic equation (2x2)   | $\lambda^2 - \mathrm{tr{}(A)\lambda + \det(A) = 0$                                           | | |
-| Diagonalisation                 | $A = PDP^{-1}$, where $D = \mathrm{diag{}(\lambda_1, \ldots, \lambda_n)$                     | | |
+| $3 \times 3$ inverse            | $A^{-1} = \dfrac{1}{\det(A)}\mathrm{adj}(A)$                                                | | |
+| Characteristic equation (2x2)   | $\lambda^2 - \mathrm{tr}(A)\lambda + \det(A) = 0$                                           | | |
+| Diagonalisation                 | $A = PDP^{-1}$, where $D = \mathrm{diag}(\lambda_1, \ldots, \lambda_n)$                     | | |
 | Matrix powers                   | $A^k = PD^kP^{-1}$                                                                          | | |
 | Area scale factor               | $                                                                                           | \det(M) | $   |
 | Rotation by $\theta$            | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$         | | |

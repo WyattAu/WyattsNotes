@@ -126,7 +126,7 @@ A bag contains 5 red and 3 blue marbles. Two marbles are drawn without replaceme
 probability that both are red.
 
 $$
-P(\mathrm{both red{}) = P(\mathrm{first red{}) \cdot P(\mathrm{second red{} | \mathrm{first red{}) = \frac{5}{8} \cdot \frac{4}{7} = \frac{20}{56} = \frac{5}{14}
+P(\mathrm{both red}) = P(\mathrm{first red}) \cdot P(\mathrm{second red} | \mathrm{first red}) = \frac{5}{8} \cdot \frac{4}{7} = \frac{20}{56} = \frac{5}{14}
 $$
 
 :::
@@ -146,7 +146,7 @@ Paths giving exactly one defective:
 - First non-defective, second defective: $\dfrac{6}{10} \times \dfrac{4}{9} = \dfrac{24}{90}$
 
 $$
-P(\mathrm{exactly one defective{}) = \frac{24}{90} + \frac{24}{90} = \frac{48}{90} = \frac{8}{15}
+P(\mathrm{exactly one defective}) = \frac{24}{90} + \frac{24}{90} = \frac{48}{90} = \frac{8}{15}
 $$
 
 :::
@@ -181,11 +181,11 @@ Machine `B` produces 30% with 3% defect rate. Machine `C` produces 20% with 1% d
 is found to be defective. What is the probability it came from machine `B`?
 
 $$
-P(\mathrm{defective{}) = 0.5 \times 0.02 + 0.3 \times 0.03 + 0.2 \times 0.01 = 0.01 + 0.009 + 0.002 = 0.021
+P(\mathrm{defective}) = 0.5 \times 0.02 + 0.3 \times 0.03 + 0.2 \times 0.01 = 0.01 + 0.009 + 0.002 = 0.021
 $$
 
 $$
-P(B|\mathrm{defective{}) = \frac{0.3 \times 0.03}{0.021} = \frac{0.009}{0.021} = \frac{3}{7}
+P(B|\mathrm{defective}) = \frac{0.3 \times 0.03}{0.021} = \frac{0.009}{0.021} = \frac{3}{7}
 $$
 
 :::
@@ -193,16 +193,16 @@ $$
 ### Medical Testing Example
 
 A disease affects 1% of a population. A test has 99% sensitivity
-($P(\mathrm{positive{}|\mathrm{disease{}) = 0.99$) and 95% specificity
-($P(\mathrm{negative{}|\mathrm{no disease{}) = 0.95$). What is
-$P(\mathrm{disease{}|\mathrm{positive{})$?
+($P(\mathrm{positive}|\mathrm{disease}) = 0.99$) and 95% specificity
+($P(\mathrm{negative}|\mathrm{no disease}) = 0.95$). What is
+$P(\mathrm{disease}|\mathrm{positive})$?
 
 $$
-P(\mathrm{positive{}) = 0.01 \times 0.99 + 0.99 \times 0.05 = 0.0099 + 0.0495 = 0.0594
+P(\mathrm{positive}) = 0.01 \times 0.99 + 0.99 \times 0.05 = 0.0099 + 0.0495 = 0.0594
 $$
 
 $$
-P(\mathrm{disease{}|\mathrm{positive{}) = \frac{0.01 \times 0.99}{0.0594} = \frac{0.0099}{0.0594} \approx 0.167
+P(\mathrm{disease}|\mathrm{positive}) = \frac{0.01 \times 0.99}{0.0594} = \frac{0.0099}{0.0594} \approx 0.167
 $$
 
 :::warning[Exam Tip]
@@ -226,7 +226,7 @@ probabilities $P(X = x_i) = p_i$.
 A probability distribution satisfies:
 
 1. $p_i \ge 0$ for all $i$
-2. $\displaystyle\sum_{\mathrm{all {} i} p_i = 1$
+2. $\displaystyle\sum_{\mathrm{all } i} p_i = 1$
 
 ### Expectation (Mean)
 
@@ -237,13 +237,13 @@ $$
 ### Variance
 
 $$
-\mathrm{Var{}(X) = \sigma^2 = E(X^2) - [E(X)]^2 = \sum x_i^2 p_i - \mu^2
+\mathrm{Var}(X) = \sigma^2 = E(X^2) - [E(X)]^2 = \sum x_i^2 p_i - \mu^2
 $$
 
 ### Standard Deviation
 
 $$
-\sigma = \sqrt{\mathrm{Var{}(X)}
+\sigma = \sqrt{\mathrm{Var}(X)}
 $$
 
 ### Properties of Expectation and Variance
@@ -255,7 +255,7 @@ E(aX + b) = aE(X) + b
 $$
 
 $$
-\mathrm{Var{}(aX + b) = a^2 \mathrm{Var{}(X)
+\mathrm{Var}(aX + b) = a^2 \mathrm{Var}(X)
 $$
 
 For independent random variables $X$ and $Y$:
@@ -265,7 +265,7 @@ E(X + Y) = E(X) + E(Y)
 $$
 
 $$
-\mathrm{Var{}(X + Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y)
+\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)
 $$
 
 :::info[Example]
@@ -285,7 +285,7 @@ E(X^2) = 0(0.1) + 1(0.4) + 4(0.3) + 9(0.2) = 0 + 0.4 + 1.2 + 1.8 = 3.4
 $$
 
 $$
-\mathrm{Var{}(X) = 3.4 - 1.6^2 = 3.4 - 2.56 = 0.84
+\mathrm{Var}(X) = 3.4 - 1.6^2 = 3.4 - 2.56 = 0.84
 $$
 
 $$
@@ -322,7 +322,7 @@ E(X) = np
 $$
 
 $$
-\mathrm{Var{}(X) = np(1-p)
+\mathrm{Var}(X) = np(1-p)
 $$
 
 $$
@@ -434,7 +434,7 @@ P(X \lt x) = 0.90 \implies \frac{x - 170}{8} = z_{0.90} = 1.282
 $$
 
 $$
-x = 170 + 1.282 \times 8 = 170 + 10.26 = 180.26 \mathrm{ cm{}
+x = 170 + 1.282 \times 8 = 170 + 10.26 = 180.26 \mathrm{ cm}
 $$
 
 :::
@@ -499,7 +499,7 @@ E(X^2) = \int_{-\infty}^{\infty} x^2 f(x)\,dx
 $$
 
 $$
-\mathrm{Var{}(X) = E(X^2) - [E(X)]^2
+\mathrm{Var}(X) = E(X^2) - [E(X)]^2
 $$
 
 ### Median
@@ -614,7 +614,7 @@ P(X \lt x) = 0.10 \implies \frac{x - 45}{8} = -1.282
 $$
 
 $$
-x = 45 - 1.282 \times 8 = 45 - 10.26 = 34.74 \mathrm{ minutes{}
+x = 45 - 1.282 \times 8 = 45 - 10.26 = 34.74 \mathrm{ minutes}
 $$
 
 ### Question 4 (Paper 1 style)
@@ -651,7 +651,7 @@ Since $f(x) = \dfrac{3x^2}{8}$ is increasing on $[0, 2]$, the mode is $x = 2$.
 
 ## Summary
 
-| Distribution | Notation           | $E(X)$ | $\mathrm{Var{}(X)$ |
+| Distribution | Notation           | $E(X)$ | $\mathrm{Var}(X)$ |
 | ------------ | ------------------ | ------ | ----------------- |
 | Binomial     | $B(n, p)$          | $np$   | $np(1-p)$         |
 | Normal       | $N(\mu, \sigma^2)$ | $\mu$  | $\sigma^2$        |
@@ -679,14 +679,14 @@ problems, verify the four conditions before applying the formula.
 
 The Poisson distribution models the number of events occurring in a fixed interval of time or space.
 
-$X \sim \mathrm{Po{}(\lambda)$ where $\lambda$ is the mean number of events.
+$X \sim \mathrm{Po}(\lambda)$ where $\lambda$ is the mean number of events.
 
 $$
 P(X = x) = \frac{e^{-\lambda}\lambda^x}{x!}, \quad x = 0, 1, 2, \ldots
 $$
 
 $$
-E(X) = \lambda, \quad \mathrm{Var{}(X) = \lambda
+E(X) = \lambda, \quad \mathrm{Var}(X) = \lambda
 $$
 
 :::info[Example]
@@ -704,14 +704,14 @@ $$
 
 Models the number of trials until the first success.
 
-$X \sim \mathrm{Geo{}(p)$ where $p$ is the probability of success on each trial.
+$X \sim \mathrm{Geo}(p)$ where $p$ is the probability of success on each trial.
 
 $$
 P(X = x) = (1-p)^{x-1}p, \quad x = 1, 2, 3, \ldots
 $$
 
 $$
-E(X) = \frac{1}{p}, \quad \mathrm{Var{}(X) = \frac{1-p}{p^2}
+E(X) = \frac{1}{p}, \quad \mathrm{Var}(X) = \frac{1-p}{p^2}
 $$
 
 :::info[Example]
@@ -823,10 +823,10 @@ $$
 
 ### Question 8 (Paper 2 style)
 
-The heights of Year 12 students follow a normal distribution with mean $165\mathrm{ cm{}$ and
-standard deviation $8\mathrm{ cm{}$.
+The heights of Year 12 students follow a normal distribution with mean $165\mathrm{ cm}$ and
+standard deviation $8\mathrm{ cm}$.
 
-**(a)** What percentage of students are taller than $180\mathrm{ cm{}$?
+**(a)** What percentage of students are taller than $180\mathrm{ cm}$?
 
 $$
 P(X \gt 180) = P\!\left(Z \gt \frac{180-165}{8}\right) = P(Z \gt 1.875) = 1 - 0.9696 = 0.0304
@@ -839,11 +839,11 @@ desks accommodate?
 
 Middle 90% means 5th to 95th percentile.
 
-5th percentile: $\dfrac{h - 165}{8} = -1.645 \implies h = 165 - 13.16 = 151.8\mathrm{ cm{}$.
+5th percentile: $\dfrac{h - 165}{8} = -1.645 \implies h = 165 - 13.16 = 151.8\mathrm{ cm}$.
 
-95th percentile: $\dfrac{h - 165}{8} = 1.645 \implies h = 165 + 13.16 = 178.2\mathrm{ cm{}$.
+95th percentile: $\dfrac{h - 165}{8} = 1.645 \implies h = 165 + 13.16 = 178.2\mathrm{ cm}$.
 
-Desks should accommodate heights from about $152\mathrm{ cm{}$ to $178\mathrm{ cm{}$.
+Desks should accommodate heights from about $152\mathrm{ cm}$ to $178\mathrm{ cm}$.
 
 ---
 

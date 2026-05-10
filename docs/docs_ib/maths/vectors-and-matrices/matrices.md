@@ -86,7 +86,7 @@ $$A^{-1} = \begin{pmatrix} 2 & -1 \\ -5 & 3 \end{pmatrix}$$
 
 To find $A^{-1}$, augment $A$ with $I$ and apply row operations:
 
-$$\left[\,A \mid I\,\right] \xrightarrow{\mathrm{row\ ops{}} \left[\,I \mid A^{-1}\,\right]$$
+$$\left[\,A \mid I\,\right] \xrightarrow{\mathrm{row\ ops}} \left[\,I \mid A^{-1}\,\right]$$
 
 If the left half reduces to $I$, the right half is $A^{-1}$. If the left half has a zero row, $A$ is
 singular.
@@ -163,7 +163,7 @@ by the matrix product $BA$ (note the order: apply $A$ first, then $B$).
 **Example.** Find the matrix for a rotation of $90\,{}^{\circ}$ anticlockwise about the origin,
 followed by a reflection in the $x$-axis.
 
-$$A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \quad \mathrm{(rotation){}, \qquad B = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \quad \mathrm{(reflection){}$$
+$$A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \quad \mathrm{(rotation)}, \qquad B = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \quad \mathrm{(reflection)}$$
 
 $$BA = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}$$
 
@@ -237,7 +237,7 @@ where $D$ is the diagonal matrix of eigenvalues and $P$ has eigenvectors as colu
 
 For a $2 \times 2$ matrix with eigenvalues $\lambda_1, \lambda_2$:
 
-$$\mathrm{tr{}(A) = \lambda_1 + \lambda_2 = a_{11} + a_{22}$$
+$$\mathrm{tr}(A) = \lambda_1 + \lambda_2 = a_{11} + a_{22}$$
 
 $$\det(A) = \lambda_1 \lambda_2$$
 
@@ -328,7 +328,7 @@ Choosing a row or column with the most zeros minimises computation.
 
 ### Adjugate Method for $3 \times 3$ Inverse
 
-$$A^{-1} = \frac{1}{\det(A)}\,\mathrm{adj{}(A)$$
+$$A^{-1} = \frac{1}{\det(A)}\,\mathrm{adj}(A)$$
 
 where the **adjugate** (adjoint) matrix is the transpose of the cofactor matrix.
 
@@ -338,7 +338,7 @@ $\det(A) = 1(1 - 0) - 2(0 - 3) + 0 = 1 + 6 = 7$.
 
 Cofactor matrix: $C = \begin{pmatrix} 1 & 3 & -1 \\ -2 & 1 & 2 \\ 6 & -3 & 1 \end{pmatrix}$.
 
-$\mathrm{adj{}(A) = C^T = \begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$.
+$\mathrm{adj}(A) = C^T = \begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$.
 
 $$A^{-1} = \frac{1}{7}\begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \end{pmatrix}$$
 
@@ -488,7 +488,7 @@ $C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & 1 \end{vmatrix} = 1$, $C_{32} = -\begin{
 
 $$C = \begin{pmatrix} 5 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 5 \end{pmatrix}$$
 
-$$\mathrm{adj{}(A) = C^T = \begin{pmatrix} 5 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 5 \end{pmatrix}$$
+$$\mathrm{adj}(A) = C^T = \begin{pmatrix} 5 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 5 \end{pmatrix}$$
 
 (Since this matrix is symmetric, $C^T = C$.)
 

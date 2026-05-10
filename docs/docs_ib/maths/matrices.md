@@ -101,7 +101,7 @@ $$A^{-1} = \frac{1}{\det(A)}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$$
 
 ### Adjugate Method ($3 \times 3$)
 
-$$A^{-1} = \frac{1}{\det(A)} \cdot \mathrm{adj{}(A)$$
+$$A^{-1} = \frac{1}{\det(A)} \cdot \mathrm{adj}(A)$$
 
 where the **adjugate** (classical adjoint) is the transpose of the cofactor matrix. The
 $(i, j)$-cofactor is $C_{ij} = (-1)^{i+j} M_{ij}$, where $M_{ij}$ is the $(i, j)$-minor (determinant
@@ -220,9 +220,9 @@ $$\det\begin{pmatrix} a - \lambda & b \\ c & d - \lambda \end{pmatrix} = (a - \l
 
 $$\lambda^2 - (a + d)\lambda + (ad - bc) = 0$$
 
-Note: $a + d = \mathrm{tr{}(A)$ (the trace) and $ad - bc = \det(A)$, so:
+Note: $a + d = \mathrm{tr}(A)$ (the trace) and $ad - bc = \det(A)$, so:
 
-$$\lambda^2 - \mathrm{tr{}(A)\,\lambda + \det(A) = 0$$
+$$\lambda^2 - \mathrm{tr}(A)\,\lambda + \det(A) = 0$$
 
 ### Finding Eigenvectors
 
@@ -231,7 +231,7 @@ solve for $\mathbf{'\{'}v{'\}'}$. The solution space is the **eigenspace** corre
 
 ### Properties
 
-- The trace equals the sum of eigenvalues: $\mathrm{tr{}(A) = \sum \lambda_i$
+- The trace equals the sum of eigenvalues: $\mathrm{tr}(A) = \sum \lambda_i$
 - The determinant equals the product of eigenvalues: $\det(A) = \prod \lambda_i$
 - If $A$ is symmetric ($A = A^T$), all eigenvalues are real and eigenvectors corresponding to
   distinct eigenvalues are orthogonal.
@@ -246,7 +246,7 @@ $\mathbf{'\{'}v{'\}'}_1, \ldots, \mathbf{'\{'}v{'\}'}_n$ forming a linearly inde
 $$A = PDP^{-1}$$
 
 where $P = \begin{pmatrix} \mathbf{'\{'}v{'\}'}_1 & \cdots & \mathbf{'\{'}v{'\}'}_n \end{pmatrix}$ and
-$D = \mathrm{diag{}(\lambda_1, \ldots, \lambda_n)$.
+$D = \mathrm{diag}(\lambda_1, \ldots, \lambda_n)$.
 
 This is useful for computing large powers: $A^n = PD^nP^{-1}$.
 
@@ -396,7 +396,7 @@ Cofactor matrix: $\begin{pmatrix} 7 & -2 & 1 \\ -2 & 4 & -2 \\ -1 & 2 & 5 \end{p
 
 **Step 3: Transpose to get the adjugate.**
 
-$$\mathrm{adj{}(A) = \begin{pmatrix} 7 & -2 & -1 \\ -2 & 4 & 2 \\ 1 & -2 & 5 \end{pmatrix}$$
+$$\mathrm{adj}(A) = \begin{pmatrix} 7 & -2 & -1 \\ -2 & 4 & 2 \\ 1 & -2 & 5 \end{pmatrix}$$
 
 **Step 4: Divide by the determinant.**
 

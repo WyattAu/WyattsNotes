@@ -165,7 +165,7 @@ experiences can produce lasting changes in gene expression and behaviour.
 
 ### Mechanisms of Epigenetic Regulation
 
-1. **DNA methylation:** The addition of a methyl group ($\mathrm{CH{}_3$) to cytosine bases,
+1. **DNA methylation:** The addition of a methyl group ($\mathrm{CH}_3$) to cytosine bases,
    typically at CpG sites (where cytosine is followed by guanine). Methylation generally silences
    gene expression by preventing transcription factors from binding to the DNA or by recruiting
    proteins that compact the chromatin structure, making the DNA inaccessible.

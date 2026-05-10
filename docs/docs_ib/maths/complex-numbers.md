@@ -30,7 +30,7 @@ A **complex number** $z$ is an ordered pair of real numbers written in Cartesian
 
 $$z = a + bi, \quad a, b \in \mathbb{'\{'}R{'\}'}$$
 
-Here $a = \mathrm{Re{}(z)$ is the **real part** and $b = \mathrm{Im{}(z)$ is the **imaginary part**.
+Here $a = \mathrm{Re}(z)$ is the **real part** and $b = \mathrm{Im}(z)$ is the **imaginary part**.
 The set of all complex numbers is denoted $\mathbb{'\{'}C{'\}'}$.
 
 A complex number is **purely real** if $b = 0$ and **purely imaginary** if $a = 0$. Two complex
@@ -89,7 +89,7 @@ line segment joining the origin to $z$, measured anticlockwise:
 
 $$\theta = \arg(z) = \arctan\!\left(\frac{b}{a}\right)$$
 
-The **principal argument**, denoted $\mathrm{Arg{}(z)$, is restricted to $(-\pi, \pi]$.
+The **principal argument**, denoted $\mathrm{Arg}(z)$, is restricted to $(-\pi, \pi]$.
 
 **Quadrant-aware calculation:**
 
@@ -109,9 +109,9 @@ The **principal argument**, denoted $\mathrm{Arg{}(z)$, is restricted to $(-\pi,
 
 Every nonzero complex number can be written as:
 
-$$z = r(\cos\theta + i\sin\theta) = r\,\mathrm{cis{}\;\theta$$
+$$z = r(\cos\theta + i\sin\theta) = r\,\mathrm{cis}\;\theta$$
 
-where $r = |z|$ and $\theta = \arg(z)$. The notation $\mathrm{cis{}\;\theta$ abbreviates
+where $r = |z|$ and $\theta = \arg(z)$. The notation $\mathrm{cis}\;\theta$ abbreviates
 $\cos\theta + i\sin\theta$.
 
 ### Conversion
@@ -122,21 +122,21 @@ $$a = r\cos\theta, \quad b = r\sin\theta$$
 
 **Cartesian to Polar:**
 
-$$r = \sqrt{a^2 + b^2}, \quad \theta = \arg(z) \mathrm{ (using quadrant table){}$$
+$$r = \sqrt{a^2 + b^2}, \quad \theta = \arg(z) \mathrm{ (using quadrant table)}$$
 
 ### Multiplication and Division in Polar Form
 
 These operations are dramatically simpler in polar form:
 
-$$z_1 z_2 = r_1 r_2\,\mathrm{cis{}(\theta_1 + \theta_2)$$
+$$z_1 z_2 = r_1 r_2\,\mathrm{cis}(\theta_1 + \theta_2)$$
 
-$$\frac{z_1}{z_2} = \frac{r_1}{r_2}\,\mathrm{cis{}(\theta_1 - \theta_2), \quad z_2 \ne 0$$
+$$\frac{z_1}{z_2} = \frac{r_1}{r_2}\,\mathrm{cis}(\theta_1 - \theta_2), \quad z_2 \ne 0$$
 
 Multiplication: multiply moduli, add arguments. Division: divide moduli, subtract arguments.
 
 ### Powers in Polar Form
 
-$$z^n = r^n\,\mathrm{cis{}(n\theta)$$
+$$z^n = r^n\,\mathrm{cis}(n\theta)$$
 
 ---
 
@@ -144,7 +144,7 @@ $$z^n = r^n\,\mathrm{cis{}(n\theta)$$
 
 ### Statement
 
-For any integer $n$ and any complex number $z = r\,\mathrm{cis{}\;\theta$:
+For any integer $n$ and any complex number $z = r\,\mathrm{cis}\;\theta$:
 
 $$(\cos\theta + i\sin\theta)^n = \cos(n\theta) + i\sin(n\theta)$$
 
@@ -182,9 +182,9 @@ $$\cos 3\theta = 4\cos^3\theta - 3\cos\theta$$ $$\sin 3\theta = 3\sin\theta - 4\
 
 ### $n$-th Roots
 
-The $n$-th roots of a complex number $z = r\,\mathrm{cis{}\;\theta$ are:
+The $n$-th roots of a complex number $z = r\,\mathrm{cis}\;\theta$ are:
 
-$$w_k = r^{1/n}\,\mathrm{cis{}\!\left(\frac{\theta + 2k\pi}{n}\right), \quad k = 0, 1, 2, \ldots, n - 1$$
+$$w_k = r^{1/n}\,\mathrm{cis}\!\left(\frac{\theta + 2k\pi}{n}\right), \quad k = 0, 1, 2, \ldots, n - 1$$
 
 These $n$ roots are equally spaced on a circle of radius $r^{1/n}$, centred at the origin, with
 angular separation $\dfrac{2\pi}{n}$.
@@ -193,7 +193,7 @@ angular separation $\dfrac{2\pi}{n}$.
 
 The $n$-th **roots of unity** are the solutions to $z^n = 1$:
 
-$$\omega_k = \mathrm{cis{}\!\left(\frac{2k\pi}{n}\right), \quad k = 0, 1, \ldots, n - 1$$
+$$\omega_k = \mathrm{cis}\!\left(\frac{2k\pi}{n}\right), \quad k = 0, 1, \ldots, n - 1$$
 
 **Properties:**
 
@@ -204,7 +204,7 @@ $$\omega_k = \mathrm{cis{}\!\left(\frac{2k\pi}{n}\right), \quad k = 0, 1, \ldots
 
 **Example.** The cube roots of unity ($n = 3$):
 
-$$\omega_0 = 1, \quad \omega_1 = \mathrm{cis{}\!\left(\frac{2\pi}{3}\right) = -\frac{1}{2} + \frac{\sqrt{3}}{2}i, \quad \omega_2 = \mathrm{cis{}\!\left(\frac{4\pi}{3}\right) = -\frac{1}{2} - \frac{\sqrt{3}}{2}i$$
+$$\omega_0 = 1, \quad \omega_1 = \mathrm{cis}\!\left(\frac{2\pi}{3}\right) = -\frac{1}{2} + \frac{\sqrt{3}}{2}i, \quad \omega_2 = \mathrm{cis}\!\left(\frac{4\pi}{3}\right) = -\frac{1}{2} - \frac{\sqrt{3}}{2}i$$
 
 Note: $1 + \omega_1 + \omega_2 = 0$.
 
@@ -264,7 +264,7 @@ $$\cos\theta = \frac{e^{i\theta} + e^{-i\theta}}{2}, \qquad \sin\theta = \frac{e
    general (equality holds only when $z_1$ and $z_2$ have the same argument).
 
 5. **Polar form of zero.** $z = 0$ has no well-defined argument and cannot be expressed in polar
-   form $r\,\mathrm{cis{}\;\theta$ since $r = 0$.
+   form $r\,\mathrm{cis}\;\theta$ since $r = 0$.
 
 6. **De Moivre's theorem scope.** De Moivre's theorem as stated holds for integer exponents. For
    non-integer exponents, use $r^n e^{in\theta}$, but note that the result is multi-valued.
@@ -318,8 +318,8 @@ Solve $z^2 + (2 + 4i)z + (-1 + 6i) = 0$.
 <details>
 <summary>Problem 7</summary>
 
-Prove that for any complex number $z$, $z + \bar{z} = 2\mathrm{Re{}(z)$ and
-$z - \bar{z} = 2i\,\mathrm{Im{}(z)$.
+Prove that for any complex number $z$, $z + \bar{z} = 2\mathrm{Re}(z)$ and
+$z - \bar{z} = 2i\,\mathrm{Im}(z)$.
 
 </details>
 
@@ -335,13 +335,13 @@ $|z_1 + z_2|$.
 <summary>Answers to Selected Problems</summary>
 
 **Problem 1:** $|z| = \sqrt{1 + 3} = 2$. Since $a = 1 \gt 0$ and $b = -\sqrt{3} \lt 0$,
-$\arg(z) = -\pi/3$. So $z = 2\,\mathrm{cis{}(-\pi/3)$.
-$z^5 = 2^5\,\mathrm{cis{}(-5\pi/3) = 32\,\mathrm{cis{}(\pi/3) = 32\!\left(\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i\right) = 16 + 16\sqrt{3}\,i$.
+$\arg(z) = -\pi/3$. So $z = 2\,\mathrm{cis}(-\pi/3)$.
+$z^5 = 2^5\,\mathrm{cis}(-5\pi/3) = 32\,\mathrm{cis}(\pi/3) = 32\!\left(\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i\right) = 16 + 16\sqrt{3}\,i$.
 
-**Problem 2:** $-8i = 8\,\mathrm{cis{}(-\pi/2) = 8\,\mathrm{cis{}(3\pi/2)$.
-$z_k = 8^{1/3}\,\mathrm{cis{}\!\left(\dfrac{3\pi/2 + 2k\pi}{3}\right) = 2\,\mathrm{cis{}\!\left(\dfrac{\pi}{2} + \dfrac{2k\pi}{3}\right)$
-for $k = 0, 1, 2$. $z_0 = 2\,\mathrm{cis{}(\pi/2) = 2i$,
-$z_1 = 2\,\mathrm{cis{}(7\pi/6) = -\sqrt{3} - i$, $z_2 = 2\,\mathrm{cis{}(11\pi/6) = \sqrt{3} - i$.
+**Problem 2:** $-8i = 8\,\mathrm{cis}(-\pi/2) = 8\,\mathrm{cis}(3\pi/2)$.
+$z_k = 8^{1/3}\,\mathrm{cis}\!\left(\dfrac{3\pi/2 + 2k\pi}{3}\right) = 2\,\mathrm{cis}\!\left(\dfrac{\pi}{2} + \dfrac{2k\pi}{3}\right)$
+for $k = 0, 1, 2$. $z_0 = 2\,\mathrm{cis}(\pi/2) = 2i$,
+$z_1 = 2\,\mathrm{cis}(7\pi/6) = -\sqrt{3} - i$, $z_2 = 2\,\mathrm{cis}(11\pi/6) = \sqrt{3} - i$.
 
 **Problem 3:** By De Moivre: $\cos 4\theta + i\sin 4\theta = (\cos\theta + i\sin\theta)^4$.
 Expanding by binomial theorem:
@@ -353,7 +353,7 @@ $\cos 4\theta = \cos^4\theta - 6\cos^2\theta(1-\cos^2\theta) + (1-\cos^2\theta)^
 **Problem 4:**
 $\dfrac{1}{z} = \dfrac{\bar{z}}{z\bar{z}} = \dfrac{2 - 3i}{4 + 9} = \dfrac{2 - 3i}{13} = \dfrac{2}{13} - \dfrac{3}{13}i$.
 
-**Problem 5:** $16 = 16\,\mathrm{cis{}(0)$. Fourth roots: $w_k = 2\,\mathrm{cis{}(k\pi/2)$ for
+**Problem 5:** $16 = 16\,\mathrm{cis}(0)$. Fourth roots: $w_k = 2\,\mathrm{cis}(k\pi/2)$ for
 $k = 0, 1, 2, 3$. Roots: $2, \; 2i, \; -2, \; -2i$. Sum: $2 + 2i - 2 - 2i = 0$.
 
 **Problem 8:** $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)$ (parallelogram law).
@@ -367,15 +367,15 @@ $|z_1 + z_2|^2 = 2(9 + 25) - 49 = 68 - 49 = 19$. So $|z_1 + z_2| = \sqrt{19}$.
 
 **Worked Example: Division in Polar Form**
 
-Express $\dfrac{z_1}{z_2}$ in Cartesian form where $z_1 = 4\,\mathrm{cis{}\!\left(\dfrac{2\pi}{3}\right)$ and
-$z_2 = 2\,\mathrm{cis{}\!\left(\dfrac{\pi}{6}\right)$.
+Express $\dfrac{z_1}{z_2}$ in Cartesian form where $z_1 = 4\,\mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$ and
+$z_2 = 2\,\mathrm{cis}\!\left(\dfrac{\pi}{6}\right)$.
 
 <details>
 <summary>Solution</summary>
 
 In polar form:
 
-$$\frac{z_1}{z_2} = \frac{4}{2}\,\mathrm{cis{}\!\left(\frac{2\pi}{3} - \frac{\pi}{6}\right) = 2\,\mathrm{cis{}\!\left(\frac{\pi}{2}\right) = 2\left(\cos\frac{\pi}{2} + i\sin\frac{\pi}{2}\right) = 2(0 + i) = 2i$$
+$$\frac{z_1}{z_2} = \frac{4}{2}\,\mathrm{cis}\!\left(\frac{2\pi}{3} - \frac{\pi}{6}\right) = 2\,\mathrm{cis}\!\left(\frac{\pi}{2}\right) = 2\left(\cos\frac{\pi}{2} + i\sin\frac{\pi}{2}\right) = 2(0 + i) = 2i$$
 
 Converting to Cartesian form: $0 + 2i$.
 
@@ -447,17 +447,17 @@ Express in polar form: $z = -16 + 16\sqrt{3}\,i$. Modulus:
 $|z| = \sqrt{256 + 768} = \sqrt{1024} = 32$. Since $a = -16 \lt 0$ and $b = 16\sqrt{3} \gt 0$:
 $\arg(z) = \arctan\!\left(\dfrac{16\sqrt{3}}{-16}\right) + \pi = \arctan(-\sqrt{3}) + \pi = -\dfrac{\pi}{3} + \pi = \dfrac{2\pi}{3}$.
 
-So $z = 32\,\mathrm{cis{}\!\left(\dfrac{2\pi}{3}\right)$.
+So $z = 32\,\mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$.
 
 The fifth roots are:
 
-$$w_k = 32^{1/5}\,\mathrm{cis{}\!\left(\frac{2\pi/3 + 2k\pi}{5}\right) = 2\,\mathrm{cis{}\!\left(\frac{2\pi + 6k\pi}{15}\right), \quad k = 0, 1, 2, 3, 4$$
+$$w_k = 32^{1/5}\,\mathrm{cis}\!\left(\frac{2\pi/3 + 2k\pi}{5}\right) = 2\,\mathrm{cis}\!\left(\frac{2\pi + 6k\pi}{15}\right), \quad k = 0, 1, 2, 3, 4$$
 
-$w_0 = 2\,\mathrm{cis{}\!\left(\dfrac{2\pi}{15}\right)$,
-$w_1 = 2\,\mathrm{cis{}\!\left(\dfrac{8\pi}{15}\right)$,
-$w_2 = 2\,\mathrm{cis{}\!\left(\dfrac{14\pi}{15}\right)$,
-$w_3 = 2\,\mathrm{cis{}\!\left(\dfrac{20\pi}{15}\right) = 2\,\mathrm{cis{}\!\left(\dfrac{4\pi}{3}\right) = -1 - \sqrt{3}\,i$,
-$w_4 = 2\,\mathrm{cis{}\!\left(\dfrac{26\pi}{15}\right) = 2\,\mathrm{cis{}\!\left(-\dfrac{4\pi}{15}\right)$.
+$w_0 = 2\,\mathrm{cis}\!\left(\dfrac{2\pi}{15}\right)$,
+$w_1 = 2\,\mathrm{cis}\!\left(\dfrac{8\pi}{15}\right)$,
+$w_2 = 2\,\mathrm{cis}\!\left(\dfrac{14\pi}{15}\right)$,
+$w_3 = 2\,\mathrm{cis}\!\left(\dfrac{20\pi}{15}\right) = 2\,\mathrm{cis}\!\left(\dfrac{4\pi}{3}\right) = -1 - \sqrt{3}\,i$,
+$w_4 = 2\,\mathrm{cis}\!\left(\dfrac{26\pi}{15}\right) = 2\,\mathrm{cis}\!\left(-\dfrac{4\pi}{15}\right)$.
 
 These five roots lie on a circle of radius $2$, equally spaced by $\dfrac{2\pi}{5}$.
 
@@ -468,16 +468,16 @@ These five roots lie on a circle of radius $2$, equally spaced by $\dfrac{2\pi}{
 ## Additional Common Pitfalls
 
 - **Forgetting to convert to polar before using De Moivre.** De Moivre's theorem requires the form
-  $r\,\mathrm{cis{}\;\theta$. Attempting to raise $a + bi$ to a power directly without conversion leads to
+  $r\,\mathrm{cis}\;\theta$. Attempting to raise $a + bi$ to a power directly without conversion leads to
   algebraic errors.
 
 - **Square root of a complex number gives two values.** Every nonzero complex number has exactly two
   square roots. When solving $\sqrt{\Delta}$ in the quadratic formula with complex coefficients, both
   signs must be considered.
 
-- **Principal argument range.** $\mathrm{Arg{}(z) \in (-\pi, \pi]$. If De Moivre produces an argument
-  outside this range, add or subtract $2\pi$ to normalise. For example, $\mathrm{cis{}\!\left(\dfrac{7\pi}{4}\right)$
-  is preferred over $\mathrm{cis{}\!\left(-\dfrac{\pi}{4}\right)$ in some contexts, but both are valid.
+- **Principal argument range.** $\mathrm{Arg}(z) \in (-\pi, \pi]$. If De Moivre produces an argument
+  outside this range, add or subtract $2\pi$ to normalise. For example, $\mathrm{cis}\!\left(\dfrac{7\pi}{4}\right)$
+  is preferred over $\mathrm{cis}\!\left(-\dfrac{\pi}{4}\right)$ in some contexts, but both are valid.
 
 - **Conjugate pair errors in polynomials.** If $a + bi$ is a root of a polynomial with real coefficients,
   then $a - bi$ is also a root. Forgetting this symmetry loses information about the polynomial.
@@ -548,7 +548,7 @@ $z_1, z_2 \in \mathbb{'\{'}C{'\}'}$ (parallelogram law).
 $\arg(z) = \arctan(4/3)$, $\arg(w) = \arctan(-2)$. $\arg(z^2 w) = 2\arctan(4/3) + \arctan(-2)$.
 Since $z^2 = (3+4i)^2 = -7 + 24i$ and $z^2 w = (-7+24i)(1-2i) = -7 + 14i + 24i + 48 = 41 + 38i$.
 $|z^2 w| = \sqrt{41^2 + 38^2} = \sqrt{1681 + 1444} = \sqrt{3125} = 25\sqrt{5}$. Confirmed.
-$\arg(z^2 w) = \arctan(38/41) \approx 0.747\;\mathrm{rad{}$.
+$\arg(z^2 w) = \arctan(38/41) \approx 0.747\;\mathrm{rad}$.
 
 **Problem 10:** Let $z = x + yi$ with $x \gt 0$, $y \gt 0$ (since $\arg(z) = \pi/4$), and $y = x$.
 $|z - 2i|^2 = x^2 + (x-2)^2 = 2x^2 - 4x + 4$.
@@ -579,8 +579,8 @@ Completing squares: $\left(x + \dfrac{7}{3}\right)^2 + (y + 4)^2 = \dfrac{5}{3} 
 This is a circle with centre $\left(-\dfrac{7}{3}, -4\right)$ and radius $\dfrac{10\sqrt{2}}{3}$.
 
 **Problem 14:** $z^4 + z^2 + 1 = 0$. Let $u = z^2$: $u^2 + u + 1 = 0 \implies u = \dfrac{-1 \pm \sqrt{3}\,i}{2}$.
-So $z^2 = \mathrm{cis{}\!\left(\dfrac{2\pi}{3}\right)$ or $z^2 = \mathrm{cis{}\!\left(-\dfrac{2\pi}{3}\right)$.
-$z = \pm\,\mathrm{cis{}\!\left(\dfrac{\pi}{3}\right)$ or $z = \pm\,\mathrm{cis{}\!\left(-\dfrac{\pi}{3}\right)$.
+So $z^2 = \mathrm{cis}\!\left(\dfrac{2\pi}{3}\right)$ or $z^2 = \mathrm{cis}\!\left(-\dfrac{2\pi}{3}\right)$.
+$z = \pm\,\mathrm{cis}\!\left(\dfrac{\pi}{3}\right)$ or $z = \pm\,\mathrm{cis}\!\left(-\dfrac{\pi}{3}\right)$.
 The four roots are $\pm\dfrac{1}{2} \pm \dfrac{\sqrt{3}}{2}i$, which are the primitive 6th roots of unity.
 
 **Problem 15:** $|z_1 + z_2|^2 = (z_1 + z_2)\overline{(z_1 + z_2)} = (z_1 + z_2)(\bar{z}_1 + \bar{z}_2) = |z_1|^2 + z_1\bar{z}_2 + \bar{z}_1 z_2 + |z_2|^2$.

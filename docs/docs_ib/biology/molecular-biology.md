@@ -8,7 +8,7 @@ slug: molecular-biology
 
 ### Molecular Structure and Properties
 
-Water ($\mathrm{H{}_2\mathrm{O{}$) is a polar molecule: the oxygen atom carries a partial negative
+Water ($\mathrm{H}_2\mathrm{O}$) is a polar molecule: the oxygen atom carries a partial negative
 charge ($\delta-$) and each hydrogen carries a partial positive charge ($\delta+$). The bond angle
 is approximately $104.5^\circ$.
 
@@ -25,7 +25,7 @@ four hydrogen bonds.
 | **High specific heat capacity** ($4.18\;\mathrm{J\;g^{-1}\;^\circ C^{-1}}$) | Water resists temperature change; buffers organisms against thermal fluctuations.                             |
 | **High latent heat of vaporisation** ($2260\;\mathrm{J\;g^{-1}}$)           | Evaporation of sweat provides effective cooling.                                                              |
 | **High latent heat of fusion**                                              | Ice formation releases heat, moderating temperature in aquatic habitats.                                      |
-| **Maximum density at $4^\circ\mathrm{C{}$**                                  | Ice floats, insulating water below and allowing aquatic life to survive winter.                               |
+| **Maximum density at $4^\circ\mathrm{C}$**                                  | Ice floats, insulating water below and allowing aquatic life to survive winter.                               |
 | **Excellent solvent**                                                       | Polar and ionic substances dissolve; enables metabolic reactions in cytoplasm and transport in blood.         |
 | **Transparency**                                                            | Light penetrates water, allowing photosynthesis in aquatic ecosystems.                                        |
 
@@ -35,14 +35,14 @@ four hydrogen bonds.
 
 ### General Formula
 
-Carbohydrates have the general formula $\mathrm{C{}_x(\mathrm{H{}_2\mathrm{O{})_y$. They contain C, H,
+Carbohydrates have the general formula $\mathrm{C}_x(\mathrm{H}_2\mathrm{O})_y$. They contain C, H,
 and O in the ratio $1:2:1$.
 
 ### Monosaccharides
 
 The simplest carbohydrates; single sugar units. Examples: glucose
-($\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6$), fructose, galactose, ribose
-($\mathrm{C{}_5\mathrm{H{}_{10}\mathrm{O{}_5$).
+($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6$), fructose, galactose, ribose
+($\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}_5$).
 
 - **Glucose**: exists as **alpha ($\alpha$)-glucose** (OH on C1 below the plane) and **beta
   ($\beta$)-glucose** (OH on C1 above the plane). This structural difference leads to fundamentally
@@ -53,7 +53,7 @@ The simplest carbohydrates; single sugar units. Examples: glucose
 ### Disaccharides
 
 Formed by a **condensation reaction** (dehydration synthesis): two monosaccharides join with the
-release of $\mathrm{H{}_2\mathrm{O{}$. Broken by **hydrolysis**.
+release of $\mathrm{H}_2\mathrm{O}$. Broken by **hydrolysis**.
 
 | Disaccharide | Monosaccharide components           | Bond type               |
 | ------------ | ----------------------------------- | ----------------------- |
@@ -84,7 +84,7 @@ Formed from one **glycerol** molecule (3-carbon alcohol) and three **fatty acid*
 by ester bonds via condensation reactions.
 
 $$
-\mathrm{Glycerol{} + 3\;\mathrm{Fatty Acids{} \xrightarrow{\mathrm{condensation{}} \mathrm{Triglyceride{} + 3\;\mathrm{H{}_2\mathrm{O{}
+\mathrm{Glycerol} + 3\;\mathrm{Fatty Acids} \xrightarrow{\mathrm{condensation}} \mathrm{Triglyceride} + 3\;\mathrm{H}_2\mathrm{O}
 $$
 
 - **Saturated fatty acids**: no C=C double bonds; straight chains; solid at room temperature (e.g.,
@@ -118,8 +118,8 @@ salts.
 Proteins are polymers of **amino acids**. There are 20 standard amino acids, each with a central
 alpha-carbon bonded to:
 
-- An **amino group** ($\mathrm{NH{}_2$)
-- A **carboxyl group** ($\mathrm{COOH{}$)
+- An **amino group** ($\mathrm{NH}_2$)
+- A **carboxyl group** ($\mathrm{COOH}$)
 - A hydrogen atom
 - A variable **R group** (side chain) that determines the amino acid's properties
 
@@ -144,7 +144,7 @@ causing loss of function. The primary structure (amino acid sequence) is not alt
 
 - **Enzymes**: biological catalysts (e.g., amylase, DNA polymerase).
 - **Structural**: collagen (connective tissue), keratin (hair, nails).
-- **Transport**: haemoglobin ($\mathrm{O{}_2$ transport), channel proteins.
+- **Transport**: haemoglobin ($\mathrm{O}_2$ transport), channel proteins.
 - **Hormones**: insulin, growth hormone.
 - **Antibodies**: immunoglobulins for immune defence.
 - **Movement**: actin and myosin in muscle contraction.
@@ -175,7 +175,7 @@ complementary shape of its **active site** to its **substrate**.
 
 | Factor                      | Effect                                                                                                                                        |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Temperature**             | Rate increases with temperature up to an **optimum** (typically $35$--$40^\circ\mathrm{C{}$); above this, denaturation causes a sharp decline. |
+| **Temperature**             | Rate increases with temperature up to an **optimum** (typically $35$--$40^\circ\mathrm{C}$); above this, denaturation causes a sharp decline. |
 | **pH**                      | Each enzyme has an optimal pH; deviation alters ionisation of R groups, disrupting the active site.                                           |
 | **Substrate concentration** | Rate increases with [substrate] until all active sites are saturated ($V_{\max}$).                                                            |
 | **Enzyme concentration**    | Rate is proportional to [enzyme] when substrate is in excess.                                                                                 |
@@ -208,13 +208,13 @@ Watson and Crick (1953) proposed the double-helix model:
 
 - Two antiparallel polynucleotide strands coil around a common axis.
 - **Chargaff's rule**: A pairs with T (2 hydrogen bonds); C pairs with G (3 hydrogen bonds).
-  $[\mathrm{A{}] = [\mathrm{T{}]$ and $[\mathrm{C{}] = [\mathrm{G{}]$.
+  $[\mathrm{A}] = [\mathrm{T}]$ and $[\mathrm{C}] = [\mathrm{G}]$.
 - The sugar-phosphate backbone is on the outside; bases face inward.
 - The helix is stabilised by hydrogen bonds between complementary bases and hydrophobic interactions
   (base stacking).
 
 **Purines** (A, G) are double-ring structures; **pyrimidines** (T, C, U) are single-ring. A purine
-always pairs with a pyrimidine, maintaining a uniform helix width of $\approx 2\;\mathrm{nm{}$.
+always pairs with a pyrimidine, maintaining a uniform helix width of $\approx 2\;\mathrm{nm}$.
 
 ### DNA vs RNA
 
@@ -362,20 +362,20 @@ repeats the test. The solution turns brick-red. Explain these observations.
 <summary>Answer</summary>
 
 Sucrose is a non-reducing disaccharide: the glycosidic bond involves both anomeric carbons, so
-neither monosaccharide has a free aldehyde or ketone group available to reduce $\mathrm{Cu{}^{2+}$ to
-$\mathrm{Cu{}^+$ (Benedict's test).
+neither monosaccharide has a free aldehyde or ketone group available to reduce $\mathrm{Cu}^{2+}$ to
+$\mathrm{Cu}^+$ (Benedict's test).
 
 Acid hydrolysis breaks the glycosidic bond, releasing glucose and fructose. Both are reducing sugars
 (glucose has a free aldehyde group; fructose can isomerise in solution). The reducing sugars reduce
-Benedict's reagent, producing a brick-red precipitate of $\mathrm{Cu{}_2\mathrm{O{}$.
+Benedict's reagent, producing a brick-red precipitate of $\mathrm{Cu}_2\mathrm{O}$.
 
 </details>
 
 <details>
 <summary>Question 2: Enzyme Kinetics Graph</summary>
 
-An enzyme has $V_{\max} = 40\;\mathrm{\mu mol\;min^{-1}}$ and $K_m = 5\;\mathrm{mM{}$. Calculate the
-reaction rate when the substrate concentration is $15\;\mathrm{mM{}$.
+An enzyme has $V_{\max} = 40\;\mathrm{\mu mol\;min^{-1}}$ and $K_m = 5\;\mathrm{mM}$. Calculate the
+reaction rate when the substrate concentration is $15\;\mathrm{mM}$.
 
 </details>
 
@@ -401,7 +401,7 @@ guanine, and cytosine.
 <details>
 <summary>Answer</summary>
 
-By Chargaff's rule, $[\mathrm{A{}] = [\mathrm{T{}]$ and $[\mathrm{C{}] = [\mathrm{G{}]$.
+By Chargaff's rule, $[\mathrm{A}] = [\mathrm{T}]$ and $[\mathrm{C}] = [\mathrm{G}]$.
 
 - Thymine: $22\%$ (pairs with A)
 - Adenine + Thymine total: $44\%$
@@ -465,55 +465,55 @@ system (not directly into blood).
 
 **Worked Example: Calculating DNA Quantities from Absorbance**
 
-A student measures the absorbance of a DNA solution at $260\;\mathrm{nm{}$ using a spectrophotometer
+A student measures the absorbance of a DNA solution at $260\;\mathrm{nm}$ using a spectrophotometer
 and obtains a reading of $0.40$. Using the relationship that an absorbance of $1.0$ corresponds to
-$50\;\mathrm{\mu g/mL{}$ of double-stranded DNA, calculate the DNA concentration and the total mass
-of DNA in a $500\;\mathrm{\mu L{}$ sample. Also, the absorbance at $280\;\mathrm{nm{}$ is $0.22$.
+$50\;\mathrm{\mu g/mL}$ of double-stranded DNA, calculate the DNA concentration and the total mass
+of DNA in a $500\;\mathrm{\mu L}$ sample. Also, the absorbance at $280\;\mathrm{nm}$ is $0.22$.
 Calculate the $A_{260}/A_{280}$ ratio and assess the purity.
 
 <details>
 <summary>Solution</summary>
 
-**DNA concentration**: $[\mathrm{DNA{}] = 0.40 \times 50\;\mathrm{\mu g/mL{} = 20\;\mathrm{\mu g/mL{}$
+**DNA concentration**: $[\mathrm{DNA}] = 0.40 \times 50\;\mathrm{\mu g/mL} = 20\;\mathrm{\mu g/mL}$
 
-**Total DNA in $500\;\mathrm{\mu L{}$**:
-$\mathrm{mass{} = 20\;\mathrm{\mu g/mL{} \times 0.500\;\mathrm{mL{} = 10\;\mathrm{\mu g{}$
+**Total DNA in $500\;\mathrm{\mu L}$**:
+$\mathrm{mass} = 20\;\mathrm{\mu g/mL} \times 0.500\;\mathrm{mL} = 10\;\mathrm{\mu g}$
 
 **Purity ratio**: $\frac{A_{260}}{A_{280}} = \frac{0.40}{0.22} = 1.82$
 
 A ratio of $1.8$--$2.0$ indicates relatively pure DNA. A ratio below $1.8$ suggests protein
-contamination (proteins absorb strongly at $280\;\mathrm{nm{}$ due to aromatic amino acids, tryptophan
-and tyrosine). A ratio above $2.0$ suggests RNA contamination (RNA absorbs at $260\;\mathrm{nm{}$).
+contamination (proteins absorb strongly at $280\;\mathrm{nm}$ due to aromatic amino acids, tryptophan
+and tyrosine). A ratio above $2.0$ suggests RNA contamination (RNA absorbs at $260\;\mathrm{nm}$).
 This sample is within the acceptable range.
 
 </details>
 
 **Worked Example: Michaelis-Menten Kinetics and Competitive Inhibition**
 
-An enzyme has $V_{\max} = 50\;\mathrm{\mu mol/min{}$ and $K_m = 10\;\mathrm{mM{}$ in the absence of
+An enzyme has $V_{\max} = 50\;\mathrm{\mu mol/min}$ and $K_m = 10\;\mathrm{mM}$ in the absence of
 inhibitor. A competitive inhibitor is added at a concentration that doubles the apparent $K_m$.
-Calculate the reaction velocity at $[S] = 10\;\mathrm{mM{}$ with and without the inhibitor. At what
+Calculate the reaction velocity at $[S] = 10\;\mathrm{mM}$ with and without the inhibitor. At what
 substrate concentration does the inhibited reaction reach $90\%$ of $V_{\max}$?
 
 <details>
 <summary>Solution</summary>
 
-**Without inhibitor** at $[S] = 10\;\mathrm{mM{}$:
-$v = \frac{V_{\max} \cdot [S]}{K_m + [S]} = \frac{50 \times 10}{10 + 10} = \frac{500}{20} = 25\;\mathrm{\mu mol/min{}$
+**Without inhibitor** at $[S] = 10\;\mathrm{mM}$:
+$v = \frac{V_{\max} \cdot [S]}{K_m + [S]} = \frac{50 \times 10}{10 + 10} = \frac{500}{20} = 25\;\mathrm{\mu mol/min}$
 
-**With competitive inhibitor** ($K_m^{\mathrm{app{}} = 2 \times 10 = 20\;\mathrm{mM{}$; $V_{\max}$ unchanged):
-$v = \frac{50 \times 10}{20 + 10} = \frac{500}{30} = 16.7\;\mathrm{\mu mol/min{}$
+**With competitive inhibitor** ($K_m^{\mathrm{app}} = 2 \times 10 = 20\;\mathrm{mM}$; $V_{\max}$ unchanged):
+$v = \frac{50 \times 10}{20 + 10} = \frac{500}{30} = 16.7\;\mathrm{\mu mol/min}$
 
 The inhibitor reduces the rate by approximately $33\%$ at this substrate concentration.
 
 **Substrate concentration for $90\%$ of $V_{\max}$ with inhibitor**:
-$0.9 \times V_{\max} = \frac{V_{\max} \cdot [S]}{K_m^{\mathrm{app{}} + [S]}$
-$0.9(K_m^{\mathrm{app{}} + [S]) = [S]$
-$0.9 K_m^{\mathrm{app{}} + 0.9[S] = [S]$
-$0.1[S] = 0.9 K_m^{\mathrm{app{}}$
-$[S] = 9 K_m^{\mathrm{app{}} = 9 \times 20 = 180\;\mathrm{mM{}$
+$0.9 \times V_{\max} = \frac{V_{\max} \cdot [S]}{K_m^{\mathrm{app}} + [S]}$
+$0.9(K_m^{\mathrm{app}} + [S]) = [S]$
+$0.9 K_m^{\mathrm{app}} + 0.9[S] = [S]$
+$0.1[S] = 0.9 K_m^{\mathrm{app}}$
+$[S] = 9 K_m^{\mathrm{app}} = 9 \times 20 = 180\;\mathrm{mM}$
 
-At very high substrate concentrations ($[S] \gg K_m^{\mathrm{app{}}$), the competitive inhibitor is
+At very high substrate concentrations ($[S] \gg K_m^{\mathrm{app}}$), the competitive inhibitor is
 outcompeted and the enzyme reaches the same $V_{\max}$ as the uninhibited reaction. This is the
 defining characteristic of competitive inhibition.
 
@@ -539,11 +539,11 @@ could form: (a) a disulfide bridge, (b) an ionic bond, (c) a hydrogen bond with 
 | Phe        | Non-polar (aromatic)           |
 
 (a) **Disulfide bridge**: Cys (cysteine). Two cysteine residues can form a covalent disulfide bond
-($-\mathrm{S{}-\mathrm{S{}-$) through oxidation of their thiol groups, stabilising tertiary and
+($-\mathrm{S}-\mathrm{S}-$) through oxidation of their thiol groups, stabilising tertiary and
 quaternary structure.
 
-(b) **Ionic bond**: Glu and Lys. The carboxylate group of Glu ($-\mathrm{COO{}^-$) and the amino
-group of Lys ($-\mathrm{NH{}_3^+$) can form an electrostatic (ionic) interaction at physiological pH.
+(b) **Ionic bond**: Glu and Lys. The carboxylate group of Glu ($-\mathrm{COO}^-$) and the amino
+group of Lys ($-\mathrm{NH}_3^+$) can form an electrostatic (ionic) interaction at physiological pH.
 
 (c) **Hydrogen bonds with water**: Glu, Lys, and Cys. These amino acids have polar or charged side
 chains that can form hydrogen bonds with water, contributing to protein solubility. The non-polar
@@ -554,25 +554,25 @@ residues (Val, Ala, Pro, Phe) tend to be buried in the protein interior, away fr
 **Worked Example: Transcription and Translation -- Determining Gene Length**
 
 A protein consists of $400$ amino acids. The coding region of the gene includes $5$ exons and $4$
-introns. The average intron length is $800\;\mathrm{bp{}$ and the average exon length is
-$300\;\mathrm{bp{}$. Calculate the length of the mature mRNA (excluding $5'$ cap and $3'$ poly-A tail)
+introns. The average intron length is $800\;\mathrm{bp}$ and the average exon length is
+$300\;\mathrm{bp}$. Calculate the length of the mature mRNA (excluding $5'$ cap and $3'$ poly-A tail)
 and the total length of the pre-mRNA.
 
 <details>
 <summary>Solution</summary>
 
-**Mature mRNA length** (exons only): $5 \times 300 = 1500\;\mathrm{bp{}$
+**Mature mRNA length** (exons only): $5 \times 300 = 1500\;\mathrm{bp}$
 
-Verification: a protein of $400$ amino acids requires $400 \times 3 = 1200\;\mathrm{bp{}$ of coding
-sequence. The additional $300\;\mathrm{bp{}$ in the exons are the $5'$ and $3'$ untranslated regions
+Verification: a protein of $400$ amino acids requires $400 \times 3 = 1200\;\mathrm{bp}$ of coding
+sequence. The additional $300\;\mathrm{bp}$ in the exons are the $5'$ and $3'$ untranslated regions
 (UTRs) that are transcribed but not translated.
 
 **Pre-mRNA length** (exons + introns):
-$1500 + (4 \times 800) = 1500 + 3200 = 4700\;\mathrm{bp{}$
+$1500 + (4 \times 800) = 1500 + 3200 = 4700\;\mathrm{bp}$
 
 The introns constitute $\frac{3200}{4700} \approx 68\%$ of the pre-mRNA. This is typical of
 eukaryotic genes, which often have more intronic DNA than coding DNA. In humans, the average gene
-spans approximately $27000\;\mathrm{bp{}$ but the average coding sequence is only about $1400\;\mathrm{bp{}$.
+spans approximately $27000\;\mathrm{bp}$ but the average coding sequence is only about $1400\;\mathrm{bp}$.
 
 </details>
 
@@ -606,10 +606,10 @@ spans approximately $27000\;\mathrm{bp{}$ but the average coding sequence is onl
 <details>
 <summary>Problem 1: Data Analysis -- Enzyme Activity and Temperature</summary>
 
-The following data show the rate of catalase activity (measured as $\mathrm{O{}_2$ produced in
-$\mathrm{\mu mol/min{}$) at different temperatures:
+The following data show the rate of catalase activity (measured as $\mathrm{O}_2$ produced in
+$\mathrm{\mu mol/min}$) at different temperatures:
 
-| Temperature ($^\circ\mathrm{C{}$) | Rate ($\mathrm{\mu mol/min{}$) |
+| Temperature ($^\circ\mathrm{C}$) | Rate ($\mathrm{\mu mol/min}$) |
 | -------------------------------- | ----------------------------- |
 | 10                               | 8                             |
 | 20                               | 18                            |
@@ -620,7 +620,7 @@ $\mathrm{\mu mol/min{}$) at different temperatures:
 | 65                               | 0                             |
 
 (a) Plot the data and identify the optimum temperature. (b) Explain the molecular basis for the
-increase in rate from $10$ to $37^\circ\mathrm{C{}$ and the decrease from $37$ to $65^\circ\mathrm{C{}$.
+increase in rate from $10$ to $37^\circ\mathrm{C}$ and the decrease from $37$ to $65^\circ\mathrm{C}$.
 (c) A student claims that catalase from a thermophilic bacterium would show the same optimum
 temperature. Evaluate this claim.
 
@@ -632,7 +632,7 @@ temperature. Evaluate this claim.
 DNA polymerase has a proofreading ($3' \to 5'$ exonuclease) activity that reduces the error rate to
 approximately $10^{-9}$ per base pair per replication. (a) Explain how proofreading works at the
 molecular level. (b) Calculate the expected number of errors per replication of the human genome
-($3.2 \times 10^9\;\mathrm{bp{}$) with and without proofreading (error rate without proofreading
+($3.2 \times 10^9\;\mathrm{bp}$) with and without proofreading (error rate without proofreading
 $\approx 10^{-5}$). (c) Describe the role of mismatch repair enzymes in correcting errors that
 escape proofreading.
 
@@ -706,11 +706,11 @@ rhythm of cholesterol synthesis.
 <details>
 <summary>Problem 8: Quantitative -- Water Properties Calculation</summary>
 
-The specific heat capacity of water is $4.18\;\mathrm{J/(g \cdot ^\circ C){}$. A $75\;\mathrm{kg{}$
-runner produces heat at a rate of $1200\;\mathrm{W{}$ during exercise. Assuming $80\%$ of this heat
-is removed by sweating (latent heat of vaporisation of water $= 2260\;\mathrm{J/g{}$) and the
+The specific heat capacity of water is $4.18\;\mathrm{J/(g \cdot ^\circ C)}$. A $75\;\mathrm{kg}$
+runner produces heat at a rate of $1200\;\mathrm{W}$ during exercise. Assuming $80\%$ of this heat
+is removed by sweating (latent heat of vaporisation of water $= 2260\;\mathrm{J/g}$) and the
 remaining $20\%$ is absorbed by body tissues (specific heat capacity of body tissue $\approx$
-$3.5\;\mathrm{J/(g \cdot ^\circ C){}$), calculate: (a) the mass of water evaporated per minute, and
+$3.5\;\mathrm{J/(g \cdot ^\circ C)}$), calculate: (a) the mass of water evaporated per minute, and
 (b) the rate of body temperature increase if sweating were completely prevented.
 
 </details>
@@ -742,18 +742,18 @@ temperature) of water molecules can increase.
 - Organisms with high water content (most organisms) resist rapid temperature changes, buffering
   against thermal stress.
 - Evaporative cooling (sweating in mammals, panting in dogs, transpiration in plants) dissipates
-  large amounts of heat due to water's high latent heat of vaporisation ($2260\;\mathrm{J/g{}$).
+  large amounts of heat due to water's high latent heat of vaporisation ($2260\;\mathrm{J/g}$).
 
 ### Water as a Solvent
 
-Water's polarity makes it an excellent solvent for ionic compounds (e.g., $\mathrm{NaCl{}$,
-$\mathrm{KCl{}$) and polar molecules (sugars, amino acids, many proteins). This enables:
+Water's polarity makes it an excellent solvent for ionic compounds (e.g., $\mathrm{NaCl}$,
+$\mathrm{KCl}$) and polar molecules (sugars, amino acids, many proteins). This enables:
 
 - Metabolic reactions in the cytoplasm (reactants dissolved in aqueous solution).
 - Transport of dissolved substances in blood (glucose, amino acids, urea, hormones, ions).
 - Nutrient uptake from soil by root hairs (mineral ions dissolved in soil water).
 
-**Non-polar molecules** (lipids, steroid hormones, $\mathrm{O{}_2$, $\mathrm{CO{}_2$) are poorly
+**Non-polar molecules** (lipids, steroid hormones, $\mathrm{O}_2$, $\mathrm{CO}_2$) are poorly
 soluble in water and require transport proteins or carriers (e.g., lipoproteins for cholesterol).
 
 ### Water Density and Ice Formation
@@ -775,7 +775,7 @@ $$\Pi = iCRT$$
 where $i$ is the van't Hoff factor (number of particles per formula unit), $C$ is molar concentration,
 $R$ is the gas constant ($0.0831\;\mathrm{L\;bar\;K^{-1}\;mol^{-1}}$), and $T$ is temperature in Kelvin.
 
-For $\mathrm{NaCl{}$ ($i = 2$, dissociates into $\mathrm{Na{}^+$ and $\mathrm{Cl{}^-$):
+For $\mathrm{NaCl}$ ($i = 2$, dissociates into $\mathrm{Na}^+$ and $\mathrm{Cl}^-$):
 $\Pi = 2 \times C \times 0.0831 \times T$
 
 ---
@@ -812,7 +812,7 @@ Cholesterol is the precursor for all steroid hormones:
 | **Oestradiol**    | Ovaries (follicle) | Female secondary sex characteristics; menstrual cycle regulation; bone density. |
 | **Progesterone**  | Corpus luteum     | Maintains endometrium during pregnancy; suppresses uterine contractions. |
 | **Cortisol**      | Adrenal cortex    | Stress response; raises blood glucose; suppresses immune system. |
-| **Aldosterone**   | Adrenal cortex    | $\mathrm{Na{}^+$ reabsorption in kidneys; regulates blood pressure. |
+| **Aldosterone**   | Adrenal cortex    | $\mathrm{Na}^+$ reabsorption in kidneys; regulates blood pressure. |
 | **1,25-dihydroxyvitamin D** | Kidney (with PTH) | Calcium absorption in gut; bone mineralisation. |
 
 ### Eicosanoids
@@ -837,8 +837,8 @@ Amino acids are classified by the properties of their R groups:
 | ----------------- | -------------------------------------------------- | --------------------------------------------------- |
 | **Non-polar (hydrophobic)** | Gly, Ala, Val, Leu, Ile, Met, Phe, Trp, Pro | Tend to be buried in protein interior; drive protein folding via hydrophobic effect. |
 | **Polar, uncharged** | Ser, Thr, Cys, Tyr, Asn, Gln            | Form hydrogen bonds with water and other polar groups; often found on protein surface. |
-| **Acidic (negatively charged at pH 7)** | Asp, Glu                        | Carboxylate groups ($-\mathrm{COO{}^-$); often involved in salt bridges and catalytic sites. |
-| **Basic (positively charged at pH 7)** | Lys, Arg, His                     | Amino groups ($-\mathrm{NH{}_3^+$); bind to DNA/RNA; catalytic in enzyme active sites. |
+| **Acidic (negatively charged at pH 7)** | Asp, Glu                        | Carboxylate groups ($-\mathrm{COO}^-$); often involved in salt bridges and catalytic sites. |
+| **Basic (positively charged at pH 7)** | Lys, Arg, His                     | Amino groups ($-\mathrm{NH}_3^+$); bind to DNA/RNA; catalytic in enzyme active sites. |
 
 ### Protein Folding and the Hydrophobic Effect
 
@@ -853,26 +853,26 @@ ribonuclease A after denaturation with urea and $\beta$-mercaptoethanol.
 ### Haemoglobin (Extended)
 
 **Structure:** tetramer of $2\alpha$ and $2\beta$ globin chains, each with a haem group
-(protoporphyrin IX ring + $\mathrm{Fe{}^{2+}$ ion). Each haem binds one $\mathrm{O{}_2$ molecule,
-so each haemoglobin carries up to $4\;\mathrm{O{}_2$.
+(protoporphyrin IX ring + $\mathrm{Fe}^{2+}$ ion). Each haem binds one $\mathrm{O}_2$ molecule,
+so each haemoglobin carries up to $4\;\mathrm{O}_2$.
 
-**Cooperative binding (sigmoidal curve):** the binding of the first $\mathrm{O{}_2$ molecule
-increases the affinity of the remaining haem groups for subsequent $\mathrm{O{}_2$ molecules
+**Cooperative binding (sigmoidal curve):** the binding of the first $\mathrm{O}_2$ molecule
+increases the affinity of the remaining haem groups for subsequent $\mathrm{O}_2$ molecules
 (positive cooperativity). This is described by the **Monod-Wyman-Changeux (MWC) model** or the
 **sequential (KNF) model**.
 
-**Bohr effect:** increased $\mathrm{CO{}_2$, decreased pH (increased $\mathrm{H{}^+$), and increased
-temperature shift the oxygen dissociation curve to the **right**, reducing $\mathrm{Hb{}$ affinity and
-promoting $\mathrm{O{}_2$ unloading in metabolically active tissues.
+**Bohr effect:** increased $\mathrm{CO}_2$, decreased pH (increased $\mathrm{H}^+$), and increased
+temperature shift the oxygen dissociation curve to the **right**, reducing $\mathrm{Hb}$ affinity and
+promoting $\mathrm{O}_2$ unloading in metabolically active tissues.
 
-$$\mathrm{H{}^+ + \mathrm{HbO{}_2 \rightleftharpoons \mathrm{HHb{} + \mathrm{O{}_2$$
+$$\mathrm{H}^+ + \mathrm{HbO}_2 \rightleftharpoons \mathrm{HHb} + \mathrm{O}_2$$
 
 **2,3-BPG (bisphosphoglycerate):** binds to deoxyhaemoglobin (T state), stabilising it and
-reducing $\mathrm{O{}_2$ affinity. Concentrations increase at high altitude (adaptive response),
-enhancing $\mathrm{O{}_2$ delivery to tissues.
+reducing $\mathrm{O}_2$ affinity. Concentrations increase at high altitude (adaptive response),
+enhancing $\mathrm{O}_2$ delivery to tissues.
 
 **Fetal haemoglobin (HbF):** has two $\gamma$ chains instead of $\beta$ chains. Higher affinity for
-$\mathrm{O{}_2$ than adult HbA (curve shifted left), facilitating $\mathrm{O{}_2$ transfer from
+$\mathrm{O}_2$ than adult HbA (curve shifted left), facilitating $\mathrm{O}_2$ transfer from
 maternal to fetal blood across the placenta.
 
 ### Collagen
@@ -910,9 +910,9 @@ In addition to the double helix, DNA in cells is further twisted (**supercoiled*
 **Denaturation (melting):** heating DNA separates the two strands by breaking hydrogen bonds.
 The **melting temperature ($T_m$)** is the temperature at which $50\%$ of the DNA is denatured.
 
-$$T_m = 69.3 + 0.41(\%\mathrm{GC{}) - 0.72(\% \text{formamide{})$$
+$$T_m = 69.3 + 0.41(\%\mathrm{GC}) - 0.72(\% \text{formamide})$$
 
-where $\%\mathrm{GC{}$ is the percentage of G+C base pairs. Higher GC content $\to$ higher $T_m$
+where $\%\mathrm{GC}$ is the percentage of G+C base pairs. Higher GC content $\to$ higher $T_m$
 (because G-C pairs have 3 hydrogen bonds vs 2 for A-T pairs).
 
 **Renaturation (annealing):** when cooled slowly, complementary strands find each other and
@@ -923,12 +923,12 @@ highly repetitive sequences reanneal fastest; unique sequences slowest.
 
 | RNA type       | Length          | Function                                                              |
 | -------------- | --------------- | --------------------------------------------------------------------- |
-| **mRNA**       | $500$--$10000\;\mathrm{nt{}$ | Carries genetic information from DNA to ribosome for translation. |
-| **tRNA**       | $\approx 75\;\mathrm{nt{}$ | Transports amino acids to the ribosome; anticodon recognises codon. |
-| **rRNA**       | $120$--$4700\;\mathrm{nt{}$ | Structural and catalytic component of ribosomes. |
-| **snRNA**      | $\approx 150\;\mathrm{nt{}$ | Components of the spliceosome; involved in pre-mRNA splicing. |
-| **miRNA**      | $\approx 22\;\mathrm{nt{}$ | Post-transcriptional regulation; binds to complementary sequences in target mRNA, leading to degradation or translational repression. |
-| **siRNA**      | $\approx 21\;\mathrm{nt{}$ | RNA interference (RNAi); triggers degradation of complementary mRNA. |
+| **mRNA**       | $500$--$10000\;\mathrm{nt}$ | Carries genetic information from DNA to ribosome for translation. |
+| **tRNA**       | $\approx 75\;\mathrm{nt}$ | Transports amino acids to the ribosome; anticodon recognises codon. |
+| **rRNA**       | $120$--$4700\;\mathrm{nt}$ | Structural and catalytic component of ribosomes. |
+| **snRNA**      | $\approx 150\;\mathrm{nt}$ | Components of the spliceosome; involved in pre-mRNA splicing. |
+| **miRNA**      | $\approx 22\;\mathrm{nt}$ | Post-transcriptional regulation; binds to complementary sequences in target mRNA, leading to degradation or translational repression. |
+| **siRNA**      | $\approx 21\;\mathrm{nt}$ | RNA interference (RNAi); triggers degradation of complementary mRNA. |
 
 ---
 
@@ -951,24 +951,24 @@ predict the effect on enzyme activity and explain the molecular basis for this c
 
 Four potato cylinders of identical dimensions are placed in sucrose solutions of different
 concentrations. After 2 hours, the mass change of each cylinder is measured. The water potential
-of pure water is $0\;\mathrm{kPa{}$. The relationship between sucrose concentration and water potential
-is approximately $\psi_s = -iCRT$ where $i = 1$ for sucrose. (a) If a potato cylinder in $0.3\;\mathrm{mol/L{}$
+of pure water is $0\;\mathrm{kPa}$. The relationship between sucrose concentration and water potential
+is approximately $\psi_s = -iCRT$ where $i = 1$ for sucrose. (a) If a potato cylinder in $0.3\;\mathrm{mol/L}$
 sucrose shows no mass change, estimate the water potential of the potato tissue. (b) Predict the
-direction of water movement in $0.1\;\mathrm{mol/L{}$ and $0.5\;\mathrm{mol/L{}$ sucrose. (c) Calculate
-the pressure potential of the cells in $0.1\;\mathrm{mol/L{}$ sucrose at equilibrium, given that the
-solute potential is $-249\;\mathrm{kPa{}$.
+direction of water movement in $0.1\;\mathrm{mol/L}$ and $0.5\;\mathrm{mol/L}$ sucrose. (c) Calculate
+the pressure potential of the cells in $0.1\;\mathrm{mol/L}$ sucrose at equilibrium, given that the
+solute potential is $-249\;\mathrm{kPa}$.
 
 </details>
 
 <details>
 <summary>Problem 11: Quantitative -- Haemoglobin and Oxygen Transport</summary>
 
-At sea level, alveolar $\mathrm{pO{}_2 = 13.3\;\mathrm{kPa{}$ and venous $\mathrm{pO{}_2 = 5.3\;\mathrm{kPa{}$.
+At sea level, alveolar $\mathrm{pO}_2 = 13.3\;\mathrm{kPa}$ and venous $\mathrm{pO}_2 = 5.3\;\mathrm{kPa}$.
 Using a standard oxygen dissociation curve: (a) estimate the percentage saturation of haemoglobin
-in arterial blood and venous blood. (b) Calculate the amount of $\mathrm{O{}_2$ unloaded per
-$100\;\mathrm{mL{}$ of blood, assuming each gram of haemoglobin can carry $1.34\;\mathrm{mL{}$ of
-$\mathrm{O{}_2$ and blood contains $150\;\mathrm{g/L{}$ of haemoglobin. (c) At high altitude
-($5000\;\mathrm{m{}$), alveolar $\mathrm{pO{}_2$ drops to $8.0\;\mathrm{kPa{}$. Predict the effect on
+in arterial blood and venous blood. (b) Calculate the amount of $\mathrm{O}_2$ unloaded per
+$100\;\mathrm{mL}$ of blood, assuming each gram of haemoglobin can carry $1.34\;\mathrm{mL}$ of
+$\mathrm{O}_2$ and blood contains $150\;\mathrm{g/L}$ of haemoglobin. (c) At high altitude
+($5000\;\mathrm{m}$), alveolar $\mathrm{pO}_2$ drops to $8.0\;\mathrm{kPa}$. Predict the effect on
 oxygen loading and explain the compensatory mechanisms (polycythaemia, increased 2,3-BPG).
 
 </details>
@@ -976,8 +976,8 @@ oxygen loading and explain the compensatory mechanisms (polycythaemia, increased
 <details>
 <summary>Problem 12: Extended Response -- Lipids and Health</summary>
 
-A patient has a blood cholesterol level of $280\;\mathrm{mg/dL{}$ (desirable: $< 200\;\mathrm{mg/dL{}$).
-LDL cholesterol is $190\;\mathrm{mg/dL{}$ and HDL cholesterol is $35\;\mathrm{mg/dL{}$. (a) Explain
+A patient has a blood cholesterol level of $280\;\mathrm{mg/dL}$ (desirable: $< 200\;\mathrm{mg/dL}$).
+LDL cholesterol is $190\;\mathrm{mg/dL}$ and HDL cholesterol is $35\;\mathrm{mg/dL}$. (a) Explain
 the roles of LDL and HDL in cholesterol transport. (b) Calculate the total cholesterol:HDL ratio
 and assess the cardiovascular risk. (c) Explain the mechanism of action of statins in lowering blood
 cholesterol. (d) Discuss why saturated fat intake increases LDL cholesterol and why omega-3 fatty
@@ -1006,16 +1006,16 @@ ionic interactions.
 (a) Classification:
 - **Hydrophobic**: Ala, Leu, Val, Phe (non-polar R groups)
 - **Hydrophilic/polar**: Ser, Glu, Lys, Arg (polar or charged R groups)
-- **Acidic (negatively charged at neutral pH)**: Glu (glutamic acid, $\mathrm{p{}K_a \approx 4.3$)
-- **Basic (positively charged at neutral pH)**: Lys (lysine, $\mathrm{p{}K_a \approx 10.5$), Arg (arginine, $\mathrm{p{}K_a \approx 12.5$)
-- **Disulphide bond formation**: Cys (cysteine) -- two Cys residues can form a covalent disulphide bridge ($-\mathrm{S{}-\mathrm{S{}-$)
+- **Acidic (negatively charged at neutral pH)**: Glu (glutamic acid, $\mathrm{p}K_a \approx 4.3$)
+- **Basic (positively charged at neutral pH)**: Lys (lysine, $\mathrm{p}K_a \approx 10.5$), Arg (arginine, $\mathrm{p}K_a \approx 12.5$)
+- **Disulphide bond formation**: Cys (cysteine) -- two Cys residues can form a covalent disulphide bridge ($-\mathrm{S}-\mathrm{S}-$)
 - **Structural/disruptive**: Pro (proline) -- its cyclic R group creates a rigid kink in the polypeptide chain
 - **Special**: Met (methionine) -- moderately hydrophobic, can be the start amino acid
 
 (b) At pH 7.4:
-- **Positively charged**: Lys (side chain $\mathrm{NH{}_3^+$), Arg (side chain guanidinium $\mathrm{NH{}_2^+$),
-  and the N-terminal amino group ($\mathrm{NH{}_3^+$).
-- **Negatively charged**: Glu (side chain $\mathrm{COO{}^-$), and the C-terminal carboxyl group ($\mathrm{COO{}^-$).
+- **Positively charged**: Lys (side chain $\mathrm{NH}_3^+$), Arg (side chain guanidinium $\mathrm{NH}_2^+$),
+  and the N-terminal amino group ($\mathrm{NH}_3^+$).
+- **Negatively charged**: Glu (side chain $\mathrm{COO}^-$), and the C-terminal carboxyl group ($\mathrm{COO}^-$).
 - **Neutral**: Ala, Leu, Val, Pro, Phe, Ser, Cys, Met.
 
 (c) The sequence Ala-Leu-Val-Phe consists of small and hydrophobic amino acids (except for the Pro disruption).
@@ -1024,7 +1024,7 @@ regions in globular proteins, especially in the core). However, Pro is a known *
 its rigid cyclic structure cannot adopt the phi/psi angles required for alpha-helical conformation. The
 Ala-Leu-Val segment may form part of a helix, but Pro terminates it.
 
-(d) At pH 7.4, Glu is negatively charged ($\mathrm{COO{}^-$) and Lys is positively charged ($\mathrm{NH{}_3^+$).
+(d) At pH 7.4, Glu is negatively charged ($\mathrm{COO}^-$) and Lys is positively charged ($\mathrm{NH}_3^+$).
 These two residues, if close in the folded protein (even if distant in the primary sequence), can form
 an **ionic bond (salt bridge)**: the negatively charged carboxylate of Glu is attracted to the positively
 charged ammonium of Lys. Salt bridges stabilise the tertiary structure of proteins and are particularly
@@ -1034,11 +1034,11 @@ important in extremophilic proteins (e.g., thermophilic enzymes have more salt b
 
 **Worked Example: Enzyme Catalysis and Activation Energy**
 
-An enzyme-catalysed reaction has an activation energy ($E_a$) of $35\;\mathrm{kJ/mol{}$. The uncatalysed
-reaction has an activation energy of $85\;\mathrm{kJ/mol{}$. The reaction is carried out at $310\;\mathrm{K{}$
-($37^\circ\mathrm{C{}$). (a) Calculate the rate enhancement factor using the Arrhenius equation
-($k = Ae^{-E_a/RT}$, where $R = 8.314\;\mathrm{J/(mol \cdot K){}$). (b) If the temperature is
-increased by $10^\circ\mathrm{C{}$ ($320\;\mathrm{K{}$), calculate the new rate enhancement. (c) Explain
+An enzyme-catalysed reaction has an activation energy ($E_a$) of $35\;\mathrm{kJ/mol}$. The uncatalysed
+reaction has an activation energy of $85\;\mathrm{kJ/mol}$. The reaction is carried out at $310\;\mathrm{K}$
+($37^\circ\mathrm{C}$). (a) Calculate the rate enhancement factor using the Arrhenius equation
+($k = Ae^{-E_a/RT}$, where $R = 8.314\;\mathrm{J/(mol \cdot K)}$). (b) If the temperature is
+increased by $10^\circ\mathrm{C}$ ($320\;\mathrm{K}$), calculate the new rate enhancement. (c) Explain
 why the rate enhancement is a ratio, not an absolute value. (d) Explain how the enzyme lowers the
 activation energy.
 
@@ -1055,7 +1055,7 @@ $= 2.62 \times 10^8$
 
 The enzyme increases the reaction rate by approximately $262$ million times.
 
-(b) At $320\;\mathrm{K{}$:
+(b) At $320\;\mathrm{K}$:
 $= e^{50000/(8.314 \times 320)}$
 $= e^{50000/2660}$
 $= e^{18.80}$
@@ -1097,38 +1097,38 @@ function.
 <summary>Solution</summary>
 
 (a) Total base pairs $= 2400$. Total nucleotides $= 4800$.
-GC content $= 42\%$: $\mathrm{G{} + \mathrm{C{} = 0.42 \times 4800 = 2016$ nucleotides.
-$\mathrm{G{} = \mathrm{C{} = 1008$ nucleotides each.
-$\mathrm{A{} + \mathrm{T{} = 0.58 \times 4800 = 2784$ nucleotides.
-$\mathrm{A{} = \mathrm{T{} = 1392$ nucleotides each.
+GC content $= 42\%$: $\mathrm{G} + \mathrm{C} = 0.42 \times 4800 = 2016$ nucleotides.
+$\mathrm{G} = \mathrm{C} = 1008$ nucleotides each.
+$\mathrm{A} + \mathrm{T} = 0.58 \times 4800 = 2784$ nucleotides.
+$\mathrm{A} = \mathrm{T} = 1392$ nucleotides each.
 
-Hydrogen bonds: $\mathrm{G{} \equiv \mathrm{C{}$ (3 H-bonds) and $\mathrm{A{} = \mathrm{T{}$ (2 H-bonds).
+Hydrogen bonds: $\mathrm{G} \equiv \mathrm{C}$ (3 H-bonds) and $\mathrm{A} = \mathrm{T}$ (2 H-bonds).
 Total H-bonds $= 1008 \times 3 + 1392 \times 2 = 3024 + 2784 = 5808$ hydrogen bonds.
 
-Length: $0.34\;\mathrm{nm{}$ per base pair. Total length $= 2400 \times 0.34 = 816\;\mathrm{nm{} = 0.816\;\mathrm{\mu m{}$.
+Length: $0.34\;\mathrm{nm}$ per base pair. Total length $= 2400 \times 0.34 = 816\;\mathrm{nm} = 0.816\;\mathrm{\mu m}$.
 
 (b) Coding sequence: $2100$ nucleotides (mature mRNA).
 Pre-mRNA length: $2400 \times 2$ (both strands are transcribed? No -- only one strand is transcribed).
-Actually, the DNA coding region is $2400\;\mathrm{bp{}$ on one strand. But not all of the DNA may be
-transcribed. If the gene spans $2400\;\mathrm{bp{}$ of DNA (template strand), the primary transcript
-(pre-mRNA) would be approximately $2400\;\mathrm{nt{}$ long (ignoring the promoter and terminator
+Actually, the DNA coding region is $2400\;\mathrm{bp}$ on one strand. But not all of the DNA may be
+transcribed. If the gene spans $2400\;\mathrm{bp}$ of DNA (template strand), the primary transcript
+(pre-mRNA) would be approximately $2400\;\mathrm{nt}$ long (ignoring the promoter and terminator
 regions beyond the gene).
 
-Wait -- the pre-mRNA includes both exons and introns. If the gene is $2400\;\mathrm{bp{}$ of transcribed
+Wait -- the pre-mRNA includes both exons and introns. If the gene is $2400\;\mathrm{bp}$ of transcribed
 DNA:
-Pre-mRNA $= 2400\;\mathrm{nt{}$. Mature mRNA $= 2100\;\mathrm{nt{}$.
-Total intron length $= 2400 - 2100 = 300\;\mathrm{nt{}$.
+Pre-mRNA $= 2400\;\mathrm{nt}$. Mature mRNA $= 2100\;\mathrm{nt}$.
+Total intron length $= 2400 - 2100 = 300\;\mathrm{nt}$.
 
-But this assumes the gene is exactly $2400\;\mathrm{bp{}$. The question does not specify this directly.
-If the DNA is $2400\;\mathrm{bp{}$ total and the mRNA is $2100\;\mathrm{nt{}$, the introns account for
-$300\;\mathrm{nt{}$. The number of introns cannot be determined without additional information (e.g.,
+But this assumes the gene is exactly $2400\;\mathrm{bp}$. The question does not specify this directly.
+If the DNA is $2400\;\mathrm{bp}$ total and the mRNA is $2100\;\mathrm{nt}$, the introns account for
+$300\;\mathrm{nt}$. The number of introns cannot be determined without additional information (e.g.,
 knowing the exon sizes).
 
 (c) Amino acids: $2100 / 3 = 700$ codons. If the last codon is a stop codon, the protein has
 $699$ amino acids.
 
 (d) RNA is less stable than DNA because:
-- RNA contains ribose (with a $2'$-$\mathrm{OH{}$ group) instead of deoxyribose. The $2'$-$\mathrm{OH{}$
+- RNA contains ribose (with a $2'$-$\mathrm{OH}$ group) instead of deoxyribose. The $2'$-$\mathrm{OH}$
   makes RNA susceptible to alkaline hydrolysis (it can act as a nucleophile, attacking the phosphodiester
   bond).
 - RNA is typically single-stranded, so it has no complementary strand for repair.
@@ -1141,11 +1141,11 @@ $699$ amino acids.
 
 **Worked Example: Competitive and Non-Competitive Inhibition Graphically**
 
-An enzyme has $K_m = 5.0\;\mathrm{mM{}$ and $V_{max} = 100\;\mathrm{\mu mol/min{}$. A competitive
-inhibitor at $2.0\;\mathrm{mM{}$ gives $K_m^{app} = 15.0\;\mathrm{mM{}$, $V_{max}^{app} = 100$.
-A non-competitive inhibitor at $5.0\;\mathrm{mM{}$ gives $K_m^{app} = 5.0\;\mathrm{mM{}$,
+An enzyme has $K_m = 5.0\;\mathrm{mM}$ and $V_{max} = 100\;\mathrm{\mu mol/min}$. A competitive
+inhibitor at $2.0\;\mathrm{mM}$ gives $K_m^{app} = 15.0\;\mathrm{mM}$, $V_{max}^{app} = 100$.
+A non-competitive inhibitor at $5.0\;\mathrm{mM}$ gives $K_m^{app} = 5.0\;\mathrm{mM}$,
 $V_{max}^{app} = 50$. (a) Sketch the Michaelis-Menten curves for all three conditions. (b) Calculate
-the initial velocity ($v$) at $[S] = 5.0\;\mathrm{mM{}$ for each condition. (c) Calculate the
+the initial velocity ($v$) at $[S] = 5.0\;\mathrm{mM}$ for each condition. (c) Calculate the
 substrate concentration needed to reach $50\%$ of $V_{max}$ in each condition.
 
 <details>
@@ -1160,23 +1160,23 @@ substrate concentration needed to reach $50\%$ of $V_{max}$ in each condition.
 
 (b) $v = \frac{V_{max}[S]}{K_m + [S]}$:
 
-No inhibitor: $v = \frac{100 \times 5.0}{5.0 + 5.0} = 50\;\mathrm{\mu mol/min{}$
+No inhibitor: $v = \frac{100 \times 5.0}{5.0 + 5.0} = 50\;\mathrm{\mu mol/min}$
 
-Competitive: $v = \frac{100 \times 5.0}{15.0 + 5.0} = \frac{500}{20} = 25\;\mathrm{\mu mol/min{}$
+Competitive: $v = \frac{100 \times 5.0}{15.0 + 5.0} = \frac{500}{20} = 25\;\mathrm{\mu mol/min}$
 
-Non-competitive: $v = \frac{50 \times 5.0}{5.0 + 5.0} = \frac{250}{10} = 25\;\mathrm{\mu mol/min{}$
+Non-competitive: $v = \frac{50 \times 5.0}{5.0 + 5.0} = \frac{250}{10} = 25\;\mathrm{\mu mol/min}$
 
 At $[S] = K_m$, both inhibitors reduce the velocity by the same amount ($50\%$), but by different
 mechanisms.
 
 (c) $50\%$ of $V_{max}$ is achieved when $[S] = K_m$ (by definition).
 
-- No inhibitor: $[S] = 5.0\;\mathrm{mM{}$
-- Competitive: $[S] = K_m^{app} = 15.0\;\mathrm{mM{}$
-- Non-competitive: $[S] = K_m^{app} = 5.0\;\mathrm{mM{}$ (same $K_m$, but $50\%$ of the reduced
-  $V_{max}^{app} = 25$, achieved at $[S] = 5.0\;\mathrm{mM{}$).
+- No inhibitor: $[S] = 5.0\;\mathrm{mM}$
+- Competitive: $[S] = K_m^{app} = 15.0\;\mathrm{mM}$
+- Non-competitive: $[S] = K_m^{app} = 5.0\;\mathrm{mM}$ (same $K_m$, but $50\%$ of the reduced
+  $V_{max}^{app} = 25$, achieved at $[S] = 5.0\;\mathrm{mM}$).
 
-For the non-competitive inhibitor, to reach $50\%$ of the original $V_{max}$ ($= 50\;\mathrm{\mu mol/min{}$):
+For the non-competitive inhibitor, to reach $50\%$ of the original $V_{max}$ ($= 50\;\mathrm{\mu mol/min}$):
 $v = \frac{50[S]}{5 + [S]} = 50$, which requires $[S] \to \infty$ (the enzyme can never reach the
 original $V_{max}$). This illustrates a key difference: competitive inhibition can be overcome by
 increasing $[S]$, but non-competitive cannot.
@@ -1185,9 +1185,9 @@ increasing $[S]$, but non-competitive cannot.
 
 **Worked Example: Water Properties and Biological Significance**
 
-(a) Explain why water has a high specific heat capacity ($4.18\;\mathrm{J/(g \cdot ^\circ C){}$) and
+(a) Explain why water has a high specific heat capacity ($4.18\;\mathrm{J/(g \cdot ^\circ C)}$) and
 why this is important for organisms. (b) Calculate the energy required to raise the temperature of
-$70\;\mathrm{kg{}$ of water (human body) by $1^\circ\mathrm{C{}$. (c) Explain why ice floats on water
+$70\;\mathrm{kg}$ of water (human body) by $1^\circ\mathrm{C}$. (c) Explain why ice floats on water
 and why this is ecologically significant. (d) Explain the role of water as a solvent for biological
 molecules, distinguishing between hydrophilic and hydrophobic substances.
 
@@ -1200,7 +1200,7 @@ molecules can increase. This means water absorbs a large amount of heat energy w
 temperature change. Biological significance: water buffers temperature changes in organisms and
 environments (oceans, large lakes), providing thermal stability for biochemical reactions.
 
-(b) $Q = mc\Delta T = 70000\;\mathrm{g{} \times 4.18\;\mathrm{J/(g \cdot ^\circ C){} \times 1^\circ\mathrm{C{} = 292\,600\;\mathrm{J{} = 292.6\;\mathrm{kJ{}$.
+(b) $Q = mc\Delta T = 70000\;\mathrm{g} \times 4.18\;\mathrm{J/(g \cdot ^\circ C)} \times 1^\circ\mathrm{C} = 292\,600\;\mathrm{J} = 292.6\;\mathrm{kJ}$.
 
 (c) Ice floats because it is less dense than liquid water. In ice, each water molecule forms 4 hydrogen
 bonds in a rigid, open hexagonal lattice that is less densely packed than the disordered arrangement in
@@ -1209,8 +1209,8 @@ water below, preventing it from freezing solid and allowing aquatic organisms to
 sank, water bodies would freeze from the bottom up, killing most aquatic life.
 
 (d) Water is an excellent solvent for polar and ionic substances (**hydrophilic**) because its polar
-molecules can form hydrogen bonds and ion-dipole interactions with solutes. Examples: $\mathrm{Na{}^+$,
-$\mathrm{Cl{}^-$, glucose, amino acids, DNA, proteins dissolve in water.
+molecules can form hydrogen bonds and ion-dipole interactions with solutes. Examples: $\mathrm{Na}^+$,
+$\mathrm{Cl}^-$, glucose, amino acids, DNA, proteins dissolve in water.
 
 Non-polar substances (**hydrophobic**) cannot form hydrogen bonds with water and are insoluble. Examples:
 lipids, cholesterol, steroid hormones. In aqueous environments, hydrophobic molecules aggregate (hydrophobic
@@ -1279,8 +1279,8 @@ temperatures, peptide bonds may also break.
 (or basic groups deprotonated), disrupting ionic bonds and salt bridges. This changes the charge
 distribution, causing unfolding.
 
-**Heavy metals** (e.g., $\mathrm{Hg{}^{2+}$, $\mathrm{Pb{}^{2+}$, $\mathrm{Ag{}^+$): bind to sulfhydryl
-groups ($-\mathrm{SH{}$) of cysteine residues, forming strong covalent or coordination bonds that disrupt
+**Heavy metals** (e.g., $\mathrm{Hg}^{2+}$, $\mathrm{Pb}^{2+}$, $\mathrm{Ag}^+$): bind to sulfhydryl
+groups ($-\mathrm{SH}$) of cysteine residues, forming strong covalent or coordination bonds that disrupt
 disulphide bridges and the active site geometry of enzymes. Heavy metals can also bind to carboxyl and
 amino groups, disrupting ionic bonds.
 
@@ -1307,10 +1307,10 @@ the enzyme can regain its activity.
 <details>
 <summary>Problem 14: Quantitative -- Nucleic Acid Quantitation</summary>
 
-A DNA sample has an absorbance at $260\;\mathrm{nm{}$ ($A_{260}$) of $0.50$ in a $1\;\mathrm{cm{}$
-cuvette. The absorbance at $280\;\mathrm{nm{}$ ($A_{280}$) is $0.28$. (a) Calculate the DNA
-concentration in $\mathrm{\mu g/mL{}$ (using the conversion: $A_{260} = 1.0$ corresponds to
-$50\;\mathrm{\mu g/mL{}$ double-stranded DNA). (b) Calculate the $A_{260}/A_{280}$ ratio and assess
+A DNA sample has an absorbance at $260\;\mathrm{nm}$ ($A_{260}$) of $0.50$ in a $1\;\mathrm{cm}$
+cuvette. The absorbance at $280\;\mathrm{nm}$ ($A_{280}$) is $0.28$. (a) Calculate the DNA
+concentration in $\mathrm{\mu g/mL}$ (using the conversion: $A_{260} = 1.0$ corresponds to
+$50\;\mathrm{\mu g/mL}$ double-stranded DNA). (b) Calculate the $A_{260}/A_{280}$ ratio and assess
 the purity of the sample. (c) If the sample is diluted $1:10$ before measurement, what was the original
 concentration? (d) Explain why protein contamination increases $A_{280}$.
 
@@ -1319,19 +1319,19 @@ concentration? (d) Explain why protein contamination increases $A_{280}$.
 <details>
 <summary>Answer 14</summary>
 
-(a) DNA concentration $= A_{260} \times 50\;\mathrm{\mu g/mL{} = 0.50 \times 50 = 25\;\mathrm{\mu g/mL{}$.
+(a) DNA concentration $= A_{260} \times 50\;\mathrm{\mu g/mL} = 0.50 \times 50 = 25\;\mathrm{\mu g/mL}$.
 
 (b) $A_{260}/A_{280} = 0.50 / 0.28 = 1.79$.
 Pure DNA has a ratio of approximately $1.8$. A ratio of $1.79$ indicates good purity (minimal protein
 contamination). Ratios below $1.7$ suggest significant protein contamination; ratios above $2.0$ suggest
 RNA contamination or other contaminants.
 
-(c) Original concentration $= 25 \times 10 = 250\;\mathrm{\mu g/mL{}$.
+(c) Original concentration $= 25 \times 10 = 250\;\mathrm{\mu g/mL}$.
 
-(d) Proteins contain aromatic amino acids (tryptophan, tyrosine) that absorb UV light at $280\;\mathrm{nm{}$
-(with a weaker absorbance at $260\;\mathrm{nm{}$). When protein is present as a contaminant in the DNA
+(d) Proteins contain aromatic amino acids (tryptophan, tyrosine) that absorb UV light at $280\;\mathrm{nm}$
+(with a weaker absorbance at $260\;\mathrm{nm}$). When protein is present as a contaminant in the DNA
 sample, it increases $A_{280}$ more than $A_{260}$, lowering the $A_{260}/A_{280}$ ratio. Pure DNA
-has minimal absorbance at $280\;\mathrm{nm{}$ (DNA bases absorb maximally at $260\;\mathrm{nm{}$).
+has minimal absorbance at $280\;\mathrm{nm}$ (DNA bases absorb maximally at $260\;\mathrm{nm}$).
 
 </details>
 
@@ -1397,8 +1397,8 @@ by applying an electric field across a gel matrix.
 **DNA electrophoresis**:
 - DNA is negatively charged (phosphate backbone) and migrates toward the positive electrode (anode).
 - Agarose gel: concentration $0.5$--$2.0\%$ (higher concentration = smaller pores = better separation
-  of small fragments). Suitable for fragments $100$--$25\,000\;\mathrm{bp{}$.
-- Polyacrylamide gel (PAGE): higher resolution, suitable for fragments $1$--$1000\;\mathrm{bp{}$.
+  of small fragments). Suitable for fragments $100$--$25\,000\;\mathrm{bp}$.
+- Polyacrylamide gel (PAGE): higher resolution, suitable for fragments $1$--$1000\;\mathrm{bp}$.
 - Migration distance is inversely proportional to the log of fragment size (larger fragments move
   more slowly through the gel matrix).
 - A DNA ladder (fragments of known size) is run alongside samples for size estimation.
@@ -1411,23 +1411,23 @@ or sucrose to make the sample denser than the buffer, plus tracking dyes).
 
 PCR amplifies a specific DNA sequence exponentially. Components:
 - **Template DNA**: the DNA containing the target sequence.
-- **Two primers**: short, single-stranded DNA oligonucleotides (typically $18$--$25\;\mathrm{nt{}$)
+- **Two primers**: short, single-stranded DNA oligonucleotides (typically $18$--$25\;\mathrm{nt}$)
   complementary to the regions flanking the target. The $3'$ end of each primer faces the target sequence.
 - **Taq DNA polymerase**: a thermostable DNA polymerase from _Thermus aquaticus_ (optimum temperature
-  $72^\circ\mathrm{C{}$, withstands the $95^\circ\mathrm{C{}$ denaturation step).
+  $72^\circ\mathrm{C}$, withstands the $95^\circ\mathrm{C}$ denaturation step).
 - **dNTPs**: deoxynucleoside triphosphates (dATP, dCTP, dGTP, dTTP) -- building blocks for DNA synthesis.
-- **Buffer**: provides optimal pH and $\mathrm{Mg{}^{2+}$ concentration (cofactor for Taq polymerase).
+- **Buffer**: provides optimal pH and $\mathrm{Mg}^{2+}$ concentration (cofactor for Taq polymerase).
 
 **Three-step cycle** (repeated $25$--$35$ times):
 
-1. **Denaturation** ($94$--$98^\circ\mathrm{C{}$, $30\;\mathrm{s{}$): hydrogen bonds break, separating
+1. **Denaturation** ($94$--$98^\circ\mathrm{C}$, $30\;\mathrm{s}$): hydrogen bonds break, separating
    the double-stranded DNA into single strands.
 
-2. **Annealing** ($50$--$65^\circ\mathrm{C{}$, $30\;\mathrm{s{}$): primers hybridise (bind) to their
+2. **Annealing** ($50$--$65^\circ\mathrm{C}$, $30\;\mathrm{s}$): primers hybridise (bind) to their
    complementary sequences on the single-stranded template. The annealing temperature depends on the
-   primer sequences (typically $3$--$5^\circ\mathrm{C{}$ below the primer $T_m$).
+   primer sequences (typically $3$--$5^\circ\mathrm{C}$ below the primer $T_m$).
 
-3. **Extension** ($72^\circ\mathrm{C{}$, $1\;\mathrm{min/kb{}$): Taq polymerase extends the primers,
+3. **Extension** ($72^\circ\mathrm{C}$, $1\;\mathrm{min/kb}$): Taq polymerase extends the primers,
   synthesising new DNA strands complementary to the template.
 
 **Result**: after $n$ cycles, $2^n$ copies of the target are produced (plus the original template).
@@ -1449,7 +1449,7 @@ fragments of defined lengths. Applications:
 
 **Sanger sequencing** (chain termination method):
 1. Four separate reactions are set up, each containing the template, primer, DNA polymerase, dNTPs,
-   and a different ddNTP (dideoxynucleotide: lacks the $3'$-$\mathrm{OH{}$ group needed for chain
+   and a different ddNTP (dideoxynucleotide: lacks the $3'$-$\mathrm{OH}$ group needed for chain
    elongation).
 2. When a ddNTP is incorporated, chain termination occurs. Each reaction produces a mixture of
    fragments of different lengths, each ending with the specific ddNTP.
@@ -1466,7 +1466,7 @@ sequencing in hours at rapidly decreasing cost.
 
 A gene has a single EcoRI site (GAATTC) in its normal allele but the site is mutated (GAATTC $\to$
 GAA TTC, introducing a 1 bp insertion that destroys the site) in a disease allele. The gene is
-$3000\;\mathrm{bp{}$ long. (a) How many fragments are produced by EcoRI digestion of each allele?
+$3000\;\mathrm{bp}$ long. (a) How many fragments are produced by EcoRI digestion of each allele?
 (b) If the EcoRI site is at position $1500$, what are the fragment sizes for each allele? (c) How
 could this be used for genetic diagnosis?
 
@@ -1477,14 +1477,14 @@ could this be used for genetic diagnosis?
 Disease allele: no EcoRI site (the site is destroyed by the mutation), producing 1 fragment
 (the uncut gene).
 
-(b) Normal allele: fragments are $1500\;\mathrm{bp{}$ and $1500\;\mathrm{bp{}$ (EcoRI cuts at position
+(b) Normal allele: fragments are $1500\;\mathrm{bp}$ and $1500\;\mathrm{bp}$ (EcoRI cuts at position
 $1500$).
-Disease allele: single fragment of $3001\;\mathrm{bp{}$ (3000 bp gene + 1 bp insertion).
+Disease allele: single fragment of $3001\;\mathrm{bp}$ (3000 bp gene + 1 bp insertion).
 
 (c) Diagnostic use: extract genomic DNA from the patient, digest with EcoRI, run on agarose gel.
-- If the patient is homozygous normal: 2 bands at $1500\;\mathrm{bp{}$.
-- If the patient is homozygous disease: 1 band at $3001\;\mathrm{bp{}$.
-- If the patient is heterozygous: 3 bands at $3001$, $1500$, and $1500\;\mathrm{bp{}$.
+- If the patient is homozygous normal: 2 bands at $1500\;\mathrm{bp}$.
+- If the patient is homozygous disease: 1 band at $3001\;\mathrm{bp}$.
+- If the patient is heterozygous: 3 bands at $3001$, $1500$, and $1500\;\mathrm{bp}$.
 
 This is a simple form of RFLP analysis. In practice, PCR amplification of the region followed by
 restriction digestion (PCR-RFLP) is more commonly used for diagnostic testing, as it requires less

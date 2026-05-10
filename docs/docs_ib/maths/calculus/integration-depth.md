@@ -169,7 +169,7 @@ If $f(x)$ changes sign on $[a, b]$, the integral gives the **net** (signed) area
 computed by splitting at the zeros of $f$ and taking absolute values:
 
 $$
-\mathrm{Total area{} = \int_a^b |f(x)|\,dx
+\mathrm{Total area} = \int_a^b |f(x)|\,dx
 $$
 
 <DesmosGraph title="Integration as Area Under a Curve" expressions={["\int_{a}^{b} f(x) \, dx"]} width={800} height={500} />
@@ -197,7 +197,7 @@ The curve crosses the $x$-axis at $x = -2$ and $x = 2$.
 
 $$
 \begin`\{aligned}`
-\mathrm{Area{} &= \int_{-2}^2 |x^2 - 4|\,dx = \int_{-2}^2 (4 - x^2)\,dx \\[6pt]
+\mathrm{Area} &= \int_{-2}^2 |x^2 - 4|\,dx = \int_{-2}^2 (4 - x^2)\,dx \\[6pt]
 &= \left[4x - \frac{x^3}{3}\right]_{-2}^2 \\[6pt]
 &= \left(8 - \frac{8}{3}\right) - \left(-8 + \frac{8}{3}\right) = \frac{32}{3}
 \end`\{aligned}`
@@ -521,17 +521,17 @@ total distance in the first 3 seconds.**
 Displacement:
 
 $$
-\int_0^3 (6t^2 - 4t)\,dt = \left[2t^3 - 2t^2\right]_0^3 = 54 - 18 = 36 \mathrm{ m{}
+\int_0^3 (6t^2 - 4t)\,dt = \left[2t^3 - 2t^2\right]_0^3 = 54 - 18 = 36 \mathrm{ m}
 $$
 
 Total distance: find when $v(t) = 0$: $6t^2 - 4t = 0 \implies t = 0$ or $t = \frac{2}{3}$.
 
 $$
 \begin`\{aligned}`
-\mathrm{Distance{} &= \int_0^{2/3} |6t^2 - 4t|\,dt + \int_{2/3}^3 |6t^2 - 4t|\,dt \\[6pt]
+\mathrm{Distance} &= \int_0^{2/3} |6t^2 - 4t|\,dt + \int_{2/3}^3 |6t^2 - 4t|\,dt \\[6pt]
 &= \int_0^{2/3} (4t - 6t^2)\,dt + \int_{2/3}^3 (6t^2 - 4t)\,dt \\[6pt]
 &= \left[2t^2 - 2t^3\right]_0^{2/3} + \left[2t^3 - 2t^2\right]_{2/3}^3 \\[6pt]
-&= \frac{8}{27} + \left(36 - \left(-\frac{8}{27}\right)\right) = \frac{8}{27} + 36 + \frac{8}{27} = \frac{988}{27} \approx 36.6 \mathrm{ m{}
+&= \frac{8}{27} + \left(36 - \left(-\frac{8}{27}\right)\right) = \frac{8}{27} + 36 + \frac{8}{27} = \frac{988}{27} \approx 36.6 \mathrm{ m}
 \end`\{aligned}`
 $$
 
@@ -840,7 +840,7 @@ $$
 Displacement at $t = 3$:
 
 $$
-s(3) = 27 - 9 + 12 = 30 \mathrm{ m{}
+s(3) = 27 - 9 + 12 = 30 \mathrm{ m}
 $$
 
 </details>
@@ -869,7 +869,7 @@ The integral converges to $\dfrac{1}{\ln 2}$.
 
 <details>
     <summary>Evaluate $\int \frac{x^2}{x^2 - 1}\,dx$ using polynomial long division and partial fractions.</summary>
-    Since $\deg(\mathrm{numerator{}) = \deg(\mathrm{denominator{})$, perform long division first:
+    Since $\deg(\mathrm{numerator}) = \deg(\mathrm{denominator})$, perform long division first:
 
 $$
 \frac{x^2}{x^2 - 1} = 1 + \frac{1}{x^2 - 1} = 1 + \frac{1}{(x-1)(x+1)}

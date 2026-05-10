@@ -374,8 +374,8 @@ When two or more quantities are related by an equation, their rates of change ar
 
 :::info[Example]
 
-A spherical balloon is being inflated at a rate of $10\mathrm{ cm{}^3\mathrm{/s{}$. Find the rate at
-which the radius is increasing when the radius is $5\mathrm{ cm{}$.
+A spherical balloon is being inflated at a rate of $10\mathrm{ cm}^3\mathrm{/s}$. Find the rate at
+which the radius is increasing when the radius is $5\mathrm{ cm}$.
 
 Volume of a sphere: $V = \dfrac{4}{3}\pi r^3$.
 
@@ -392,15 +392,15 @@ $$
 $$
 
 $$
-\frac`\{dr}``\{dt}` = \frac{10}{100\pi} = \frac{1}{10\pi} \approx 0.0318 \mathrm{ cm/s{}
+\frac`\{dr}``\{dt}` = \frac{10}{100\pi} = \frac{1}{10\pi} \approx 0.0318 \mathrm{ cm/s}
 $$
 
 :::
 
 :::info[Example]
 
-A ladder $10\mathrm{ m{}$ long rests against a vertical wall. The bottom slides away from the wall at
-$1\mathrm{ m/s{}$. How fast is the top sliding down when the bottom is $6\mathrm{ m{}$ from the wall?
+A ladder $10\mathrm{ m}$ long rests against a vertical wall. The bottom slides away from the wall at
+$1\mathrm{ m/s}$. How fast is the top sliding down when the bottom is $6\mathrm{ m}$ from the wall?
 
 By Pythagoras: $x^2 + y^2 = 100$.
 
@@ -413,7 +413,7 @@ $$
 $$
 
 $$
-\frac`\{dy}``\{dt}` = -\frac{12}{16} = -0.75 \mathrm{ m/s{}
+\frac`\{dy}``\{dt}` = -\frac{12}{16} = -0.75 \mathrm{ m/s}
 $$
 
 The negative sign means the top is sliding down.
@@ -588,7 +588,7 @@ constraints.
 
 :::info[Example]
 
-A piece of wire $100\mathrm{ cm{}$ long is bent to form a rectangle. Find the dimensions that
+A piece of wire $100\mathrm{ cm}$ long is bent to form a rectangle. Find the dimensions that
 maximise the area.
 
 Let the dimensions be $x$ and $y$. Then $2x + 2y = 100$, so $y = 50 - x$.
@@ -600,17 +600,17 @@ $$
 $$
 
 $$
-\frac{d^2A}{dx^2} = -2 \lt 0 \implies \mathrm{maximum{}
+\frac{d^2A}{dx^2} = -2 \lt 0 \implies \mathrm{maximum}
 $$
 
-So $x = 25\mathrm{ cm{}$, $y = 25\mathrm{ cm{}$. The rectangle is a square with area
-$625\mathrm{ cm{}^2$.
+So $x = 25\mathrm{ cm}$, $y = 25\mathrm{ cm}$. The rectangle is a square with area
+$625\mathrm{ cm}^2$.
 
 :::
 
 :::info[Example]
 
-An open-top cylindrical can is to hold $500\mathrm{ cm{}^3$ of liquid. Find the dimensions that
+An open-top cylindrical can is to hold $500\mathrm{ cm}^3$ of liquid. Find the dimensions that
 minimise the surface area.
 
 Volume: $V = \pi r^2 h = 500$, so $h = \dfrac{500}{\pi r^2}$.
@@ -626,11 +626,11 @@ $$
 $$
 
 $$
-r = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm{}
+r = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
 $$
 
 $$
-h = \frac{500}{\pi \cdot \left(\frac{500}{\pi}\right)^{2/3}} = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm{}
+h = \frac{500}{\pi \cdot \left(\frac{500}{\pi}\right)^{2/3}} = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
 $$
 
 The optimal open-top can has $h = r$, i.e., height equals radius.
@@ -711,10 +711,10 @@ $$
 ### Question 2 (Paper 2 style)
 
 A rectangular garden is to be constructed adjacent to a house, with the house forming one side of
-the rectangle. Fencing is required for the other three sides. $60\mathrm{ m{}$ of fencing is
+the rectangle. Fencing is required for the other three sides. $60\mathrm{ m}$ of fencing is
 available.
 
-**(a)** If the side parallel to the house has length $x\mathrm{ m{}$, show that the area is:
+**(a)** If the side parallel to the house has length $x\mathrm{ m}$, show that the area is:
 
 $$
 A = x\left(30 - \frac{x}{2}\right) = 30x - \frac{x^2}{2}
@@ -734,10 +734,10 @@ $$
 $$
 
 $$
-\frac{d^2A}{dx^2} = -1 \lt 0 \implies \mathrm{maximum{}
+\frac{d^2A}{dx^2} = -1 \lt 0 \implies \mathrm{maximum}
 $$
 
-Maximum area $= 30 \times 15 = 450\mathrm{ m{}^2$.
+Maximum area $= 30 \times 15 = 450\mathrm{ m}^2$.
 
 ### Question 3 (Paper 1 style)
 
@@ -807,15 +807,15 @@ $$
 
 ### Question 5 (Paper 1 style)
 
-The radius of a circle is increasing at a rate of $0.5\mathrm{ cm/s{}$. Find the rate of change of
-the area when the radius is $4\mathrm{ cm{}$.
+The radius of a circle is increasing at a rate of $0.5\mathrm{ cm/s}$. Find the rate of change of
+the area when the radius is $4\mathrm{ cm}$.
 
 $$
 A = \pi r^2
 $$
 
 $$
-\frac`\{dA}``\{dt}` = 2\pi r \frac`\{dr}``\{dt}` = 2\pi(4)(0.5) = 4\pi \mathrm{ cm{}^2\mathrm{/s{}
+\frac`\{dA}``\{dt}` = 2\pi r \frac`\{dr}``\{dt}` = 2\pi(4)(0.5) = 4\pi \mathrm{ cm}^2\mathrm{/s}
 $$
 
 ### Question 6 (Paper 2 style)

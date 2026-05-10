@@ -349,8 +349,8 @@ Find the mixed strategy Nash equilibrium.
 Let Player 1 play Up with probability $p$ and Down with probability $1 - p$. For Player 2 to be
 indifferent between Left and Right:
 
-$$\mathrm{Expected payoff (Left){} = p(-3) + (1-p)(2)$$
-$$\mathrm{Expected payoff (Right){} = p(1) + (1-p)(-4)$$
+$$\mathrm{Expected payoff (Left)} = p(-3) + (1-p)(2)$$
+$$\mathrm{Expected payoff (Right)} = p(1) + (1-p)(-4)$$
 
 Setting them equal:
 
@@ -484,14 +484,14 @@ firm defects, switch to the Nash equilibrium (competitive) outcome forever.
 For collusion to be sustainable, the present value of cooperation must exceed the one-time gain
 from defection:
 
-$$\frac{\pi_{\text{collusion{}}}{1 - \delta} \geq \pi_{\text{defection{}} + \frac{\delta \cdot \pi_{\text{Nash{}}}{1 - \delta}$$
+$$\frac{\pi_{\text{collusion}}}{1 - \delta} \geq \pi_{\text{defection}} + \frac{\delta \cdot \pi_{\text{Nash}}}{1 - \delta}$$
 
 Where $\delta$ is the discount factor ($0 < \delta < 1$). Rearranging:
 
-$$\delta \geq \frac{\pi_{\text{defection{}} - \pi_{\text{collusion{}}}{\pi_{\text{defection{}} - \pi_{\text{Nash{}}}$$
+$$\delta \geq \frac{\pi_{\text{defection}} - \pi_{\text{collusion}}}{\pi_{\text{defection}} - \pi_{\text{Nash}}}$$
 
-**Numerical example:** In the pricing game from earlier, $\pi_{\text{collusion{}} = 8$ (High, High),
-$\pi_{\text{defection{}} = 12$ (Low while other plays High), $\pi_{\text{Nash{}} = 5$ (Low, Low).
+**Numerical example:** In the pricing game from earlier, $\pi_{\text{collusion}} = 8$ (High, High),
+$\pi_{\text{defection}} = 12$ (Low while other plays High), $\pi_{\text{Nash}} = 5$ (Low, Low).
 
 $$\delta \geq \frac{12 - 8}{12 - 5} = \frac{4}{7} = 0.571$$
 
@@ -572,7 +572,7 @@ People value goods more highly simply because they own them. In experiments, par
 a mug demanded a higher price to sell it than participants who did not own the mug were willing
 to pay to buy it.
 
-$$\text{WTA (willingness to accept){} > \text{WTP (willingness to pay){}$$
+$$\text{WTA (willingness to accept)} > \text{WTP (willingness to pay)}$$
 
 This violates the standard Coase theorem prediction that transaction costs aside, initial
 ownership should not affect the efficiency of outcomes.
@@ -875,7 +875,7 @@ estimates are imperfect. The bidder with the highest estimate (the winner) is li
 overestimated the value, because the highest of several noisy estimates tends to exceed the
 true value.
 
-$$E[\text{True value{} | \text{Winning{} ] < \text{Winning bid{}$$
+$$E[\text{True value} | \text{Winning} ] < \text{Winning bid}$$
 
 **Example:** bidding for an oil lease. Each firm commissions a geological survey estimating the
 amount of oil. The firm with the highest estimate wins the auction but discovers that the
@@ -1013,12 +1013,12 @@ and 900. You would pay more than your valuation (800), earning a negative surplu
 (b) You win if your bid (800) is the highest of the four bids. The other three bids are
 uniformly distributed on [0, 1000]. The probability that all three are below 800 is:
 
-$P(\text{win{}) = (800/1000)^3 = 0.8^3 = 0.512$ (51.2%)
+$P(\text{win}) = (800/1000)^3 = 0.8^3 = 0.512$ (51.2%)
 
 (c) Given that you win, the second-highest bid is the maximum of three uniform [0, 800]
 draws. The expected value of the maximum of $n$ uniform [0, b] draws is:
 
-$E[\text{second bid{} | \text{win{}] = \frac{3}{4} \times 800 = 600$
+$E[\text{second bid} | \text{win}] = \frac{3}{4} \times 800 = 600$
 
 Your expected surplus $= 800 - 600 = \$200$.
 
@@ -1146,7 +1146,7 @@ accommodates.
 
 The entrant's expected payoff from entering:
 
-$$E[\text{payoff{}] = 0.5 \times (-2) + 0.5 \times 3 = -1 + 1.5 = 0.5$$
+$$E[\text{payoff}] = 0.5 \times (-2) + 0.5 \times 3 = -1 + 1.5 = 0.5$$
 
 Since $0.5 > 0$ (the payoff from staying out), the entrant enters.
 
@@ -1170,7 +1170,7 @@ workers, it costs $c_L > c_H$.
 A **separating equilibrium** exists if the cost difference is large enough that high-productivity
 workers obtain education while low-productivity workers do not:
 
-$$w_H - w_L > c_H \cdot e \quad \text{but{} \quad w_H - w_L < c_L \cdot e$$
+$$w_H - w_L > c_H \cdot e \quad \text{but} \quad w_H - w_L < c_L \cdot e$$
 
 Where $e$ is the required education level, $w_H$ is the wage paid to educated workers, and $w_L$ is
 the wage paid to uneducated workers.
@@ -1197,11 +1197,11 @@ coverage despite the higher premium. The menu of contracts **screens** the two t
 
 The screening condition for the safe type to choose partial coverage:
 
-$$u_s(\text{partial{}) > u_s(\text{full{})$$
+$$u_s(\text{partial}) > u_s(\text{full})$$
 
 And for the reckless type to choose full coverage:
 
-$$u_r(\text{full{}) > u_r(\text{partial{})$$
+$$u_r(\text{full}) > u_r(\text{partial})$$
 
 Where $u$ denotes expected utility under each contract.
 
@@ -1254,7 +1254,7 @@ cost $c_i$ drawn from distribution $F$ on $[\underline{c}, \overline{c}]$ is:
 
 $$b_i(c_i) = \frac{1}{F(c_i)} \int_{\underline{c}}^{c_i} y \, f(y) \, dy$$
 
-For Firm 1 with cost $c \sim \text{Uniform{}[10, 20]$:
+For Firm 1 with cost $c \sim \text{Uniform}[10, 20]$:
 
 $$b_1(c) = \frac{1}{(c - 10)/10} \int_{10}^{c} y \cdot \frac{1}{10} \, dy = \frac{10}{c - 10} \cdot \frac{y^2}{20} \bigg|_{10}^{c} = \frac{10}{c - 10} \cdot \frac{c^2 - 100}{20}$$
 
@@ -1435,10 +1435,10 @@ Strategy A, as both strategies would involve only gains.
 When the prisoner's dilemma is repeated a known, finite number of times, backward induction
 predicts defection in every round:
 
-$$\text{Round {} T: \text{defect (no future punishment possible){}$$
-$$\text{Round {} T-1: \text{defect (round {} T \text{ will be defection regardless){}$$
+$$\text{Round } T: \text{defect (no future punishment possible)}$$
+$$\text{Round } T-1: \text{defect (round } T \text{ will be defection regardless)}$$
 $$\vdots$$
-$$\text{Round 1: defect{}$$
+$$\text{Round 1: defect}$$
 
 The unique subgame perfect equilibrium is (Defect, Defect) in every round.
 
@@ -1550,13 +1550,13 @@ where $\epsilon_i$ is noise.
 
 The expected value of $V$ given that you won the auction is:
 
-$$E[V | s_i \text{ is the highest signal{}] < s_i$$
+$$E[V | s_i \text{ is the highest signal}] < s_i$$
 
 Because winning the auction provides information that your signal was likely the most optimistic.
 
 **Mitigation:** rational bidders should shade their bids below their signal:
 
-$$\text{Optimal bid{} = s_i - \frac{\sigma^2}{s_i}$$
+$$\text{Optimal bid} = s_i - \frac{\sigma^2}{s_i}$$
 
 Where $\sigma^2$ is the variance of the signal noise. The more uncertain the value, the more
 bidders should shade their bids.
@@ -1570,12 +1570,12 @@ uncertainty:
 - Company B: $s_B = 80$ million
 - Company C: $s_C = 90$ million
 
-In a first-price auction, Company A wins with a bid of 100 million. But $E[V | A \text{ wins{}]$
+In a first-price auction, Company A wins with a bid of 100 million. But $E[V | A \text{ wins}]$
 is less than 100 million because A had the highest signal, suggesting A was the most optimistic.
 
 If the signals have standard deviation of 20 million:
 
-Approximate correction for A: $\text{bid{} = 100 - 20^2/100 = 100 - 4 = 96$ million.
+Approximate correction for A: $\text{bid} = 100 - 20^2/100 = 100 - 4 = 96$ million.
 
 Company A should bid approximately 96 million rather than 100 million to avoid the winner's curse.
 
@@ -1788,7 +1788,7 @@ Strategies with above-average fitness grow; those with below-average fitness shr
 A strategy $s^*$ is an **evolutionary stable strategy** if, when adopted by the entire population,
 no mutant strategy can invade:
 
-$$u(s^*, s^*) \geq u(s, s^*) \text{ for all {} s$$
+$$u(s^*, s^*) \geq u(s, s^*) \text{ for all } s$$
 
 And for any neutral mutant ($u(s, s^*) = u(s^*, s^*)$):
 
@@ -2083,11 +2083,11 @@ USD 2,000 per year.
 
 (a) Plan A (USD 5,000/year for 40 years at 5%):
 
-$\text{FV{} = 5000 \times \frac{1.05^{40} - 1}{0.05} = 5000 \times 120.80 = 604\,000$
+$\text{FV} = 5000 \times \frac{1.05^{40} - 1}{0.05} = 5000 \times 120.80 = 604\,000$
 
 Plan B (USD 2,000/year for 40 years at 5%):
 
-$\text{FV{} = 2000 \times 120.80 = 241\,600$
+$\text{FV} = 2000 \times 120.80 = 241\,600$
 
 Present bias costs the worker $604\,000 - 241\,600 = 362\,400$ in retirement savings.
 
@@ -2149,15 +2149,15 @@ cooperation is sustainable.
 
 (c) In an evolutionary framework with fraction $x$ of Abiders:
 
-$f_{\text{Abide{}} = 50x + 10(1-x) = 10 + 40x$
+$f_{\text{Abide}} = 50x + 10(1-x) = 10 + 40x$
 
-$f_{\text{Defect{}} = 70x + 20(1-x) = 20 + 50x$
+$f_{\text{Defect}} = 70x + 20(1-x) = 20 + 50x$
 
-$\Delta x = x(f_{\text{Abide{}} - \bar{f})$
+$\Delta x = x(f_{\text{Abide}} - \bar{f})$
 
 $\bar{f} = x(10 + 40x) + (1-x)(20 + 50x) = 10x + 40x^2 + 20 + 50x - 20x - 50x^2 = 20 + 40x - 10x^2$
 
-$f_{\text{Abide{}} - \bar{f} = 10 + 40x - 20 - 40x + 10x^2 = -10 + 10x^2 = 10(x^2 - 1) < 0$ for all $x \in (0,1)$.
+$f_{\text{Abide}} - \bar{f} = 10 + 40x - 20 - 40x + 10x^2 = -10 + 10x^2 = 10(x^2 - 1) < 0$ for all $x \in (0,1)$.
 
 The fraction of Abiders always declines: Defect is the unique ESS.
 
@@ -2554,7 +2554,7 @@ acceptability threshold (the "aspiration level"), rather than searching for the 
 
 - Optimisation: $\max_{x \in X} U(x)$. Requires knowledge of all $x \in X$ and their
   utilities
-- Satisficing: $\text{accept {} x \text{ if {} U(x) \geq A$. Requires only sequential
+- Satisficing: $\text{accept } x \text{ if } U(x) \geq A$. Requires only sequential
   evaluation until the threshold is met
 
 ### Implications for Economic Behaviour

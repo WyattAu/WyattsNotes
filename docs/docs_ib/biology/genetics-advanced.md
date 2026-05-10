@@ -22,8 +22,8 @@ region where the two parental strands are separated.
 | **Helicase**                 | Unwinds and separates the double helix at the origin of replication. Requires ATP hydrolysis.              |
 | **Single-strand binding proteins (SSBs)** | Bind to separated strands, preventing re-annealing and protecting from nuclease degradation. |
 | **Topoisomerase (DNA gyrase)** | Relieves torsional strain ahead of the fork by cutting one or both strands, allowing rotation, and resealing. |
-| **Primase**                  | Synthesises short RNA primers ($5$--$10$ nucleotides) complementary to the template strand. RNA primers provide a free $3'$-$\mathrm{OH{}$ for DNA polymerase. |
-| **DNA polymerase III**       | (Prokaryotes) The main replicative polymerase. Adds nucleotides to the $3'$ end, synthesising at $\approx 1000\;\mathrm{nt/s{}$. Has $3' \to 5'$ proofreading exonuclease activity. |
+| **Primase**                  | Synthesises short RNA primers ($5$--$10$ nucleotides) complementary to the template strand. RNA primers provide a free $3'$-$\mathrm{OH}$ for DNA polymerase. |
+| **DNA polymerase III**       | (Prokaryotes) The main replicative polymerase. Adds nucleotides to the $3'$ end, synthesising at $\approx 1000\;\mathrm{nt/s}$. Has $3' \to 5'$ proofreading exonuclease activity. |
 | **DNA polymerase I**         | (Prokaryotes) Removes RNA primers ($5' \to 3'$ exonuclease activity) and replaces them with DNA.             |
 | **DNA ligase**               | Forms phosphodiester bonds between Okazaki fragments on the lagging strand (and between primer replacements).   |
 | **Sliding clamp (PCNA in eukaryotes, $\beta$-clamp in prokaryotes)** | Ring-shaped protein that encircles DNA, tethering DNA polymerase to the template for processive synthesis. |
@@ -36,7 +36,7 @@ antiparallel, synthesis proceeds differently on each:
 - **Leading strand**: synthesised continuously in the $5' \to 3'$ direction, toward the replication
   fork. Only one RNA primer is needed.
 - **Lagging strand**: synthesised discontinuously, away from the replication fork, in short segments
-  called **Okazaki fragments** ($1000$--$2000\;\mathrm{nt{}$ in prokaryotes; $100$--$200\;\mathrm{nt{}$
+  called **Okazaki fragments** ($1000$--$2000\;\mathrm{nt}$ in prokaryotes; $100$--$200\;\mathrm{nt}$
   in eukaryotes). Each fragment requires its own RNA primer.
 
 ### Okazaki Fragment Processing
@@ -44,7 +44,7 @@ antiparallel, synthesis proceeds differently on each:
 1. DNA polymerase III synthesises an Okazaki fragment, stopping when it reaches the RNA primer of
    the previous fragment.
 2. DNA polymerase I removes the RNA primer ($5' \to 3'$ exonuclease) and replaces it with DNA.
-3. DNA ligase seals the remaining nick (the gap between the $3'$-$\mathrm{OH{}$ of the newly
+3. DNA ligase seals the remaining nick (the gap between the $3'$-$\mathrm{OH}$ of the newly
    synthesised DNA and the $5'$-phosphate of the previous fragment).
 
 ### Proofreading and Fidelity
@@ -64,8 +64,8 @@ excised and resynthesised. MMR further reduces the error rate to approximately $
 | -------------------------- | ------------------------------------------------ | --------------------------------------------------- |
 | **DNA polymerases**        | Pol I, Pol III (main replicative)                 | Pol $\alpha$ (primase + short extension), Pol $\delta$ (lagging), Pol $\varepsilon$ (leading) |
 | **Origins of replication** | One (oriC)                                       | Many (thousands); replicons                          |
-| **Okazaki fragment length** | $1000$--$2000\;\mathrm{nt{}$                     | $100$--$200\;\mathrm{nt{}$                          |
-| **Replication rate**       | $\approx 1000\;\mathrm{nt/s{}$                   | $\approx 50\;\mathrm{nt/s{}$ (but many forks simultaneously) |
+| **Okazaki fragment length** | $1000$--$2000\;\mathrm{nt}$                     | $100$--$200\;\mathrm{nt}$                          |
+| **Replication rate**       | $\approx 1000\;\mathrm{nt/s}$                   | $\approx 50\;\mathrm{nt/s}$ (but many forks simultaneously) |
 | **Telomeres**              | Circular chromosomes (no ends)                   | Linear chromosomes; telomeres protect ends           |
 | **Telomerase**             | Not needed                                       | Extends $3'$ ends of chromosomes; reverse transcriptase + RNA template |
 
@@ -73,7 +73,7 @@ excised and resynthesised. MMR further reduces the error rate to approximately $
 
 In eukaryotes, the leading strand can be synthesised to the very end of the chromosome, but the
 lagging strand cannot complete the terminal Okazaki fragment (there is no upstream primer to replace).
-This results in a progressive shortening of chromosomes with each round of replication ($\approx 50$--$200\;\mathrm{bp{}$
+This results in a progressive shortening of chromosomes with each round of replication ($\approx 50$--$200\;\mathrm{bp}$
 per division in somatic cells).
 
 **Telomerase** extends the $3'$ end by adding tandem repeats of a short sequence (TTAGGG in humans)
@@ -93,7 +93,7 @@ cells, stem cells, and most cancer cells but is inactive in most somatic cells.
    DNA unwinding (forming an open complex).
 4. RNA polymerase begins synthesising mRNA in the $5' \to 3'$ direction, using the **template
    (antisense) strand** as a template.
-5. After synthesising approximately $10\;\mathrm{nt{}$, the sigma factor dissociates.
+5. After synthesising approximately $10\;\mathrm{nt}$, the sigma factor dissociates.
 
 ### Initiation in Eukaryotes
 
@@ -111,7 +111,7 @@ factors:
 1. **General transcription factors** (TFIIA, TFIIB, TFIID, TFIIE, TFIIF, TFIIH) bind sequentially
    to the promoter.
 2. **TFIID** contains the **TATA-binding protein (TBP)**, which binds to the **TATA box** (consensus
-   TATAAA, approximately $25\;\mathrm{bp{}$ upstream of the transcription start site).
+   TATAAA, approximately $25\;\mathrm{bp}$ upstream of the transcription start site).
 3. Additional transcription factors and RNA polymerase II assemble, forming the **pre-initiation
    complex (PIC)**.
 4. TFIIH has helicase activity that unwinds DNA and kinase activity that phosphorylates the
@@ -119,7 +119,7 @@ factors:
 
 ### Elongation
 
-- RNA polymerase unwinds DNA ahead and rewinds it behind, transcribing approximately $40$--$60\;\mathrm{nt/s{}$.
+- RNA polymerase unwinds DNA ahead and rewinds it behind, transcribing approximately $40$--$60\;\mathrm{nt/s}$.
 - Nascent mRNA exits through a channel in RNA polymerase.
 
 ### Termination
@@ -135,7 +135,7 @@ signal (AAUAAA), and the polymerase dissociates.
 
 ### Post-Transcriptional Modification (Eukaryotes)
 
-1. **$5'$ capping**: addition of 7-methylguanosine cap ($\mathrm{m{}^7\mathrm{G{}$). Functions:
+1. **$5'$ capping**: addition of 7-methylguanosine cap ($\mathrm{m}^7\mathrm{G}$). Functions:
    protects mRNA from $5'$ exonuclease degradation; aids ribosome binding; facilitates nuclear export.
 2. **$3'$ polyadenylation**: cleavage after AAUAAA signal and addition of $200$--$250$ adenosine
    residues (poly-A tail). Functions: stabilises mRNA; aids nuclear export; enhances translation.
@@ -149,7 +149,7 @@ signal (AAUAAA), and the polymerase dissociates.
 
 ### tRNA Structure
 
-Transfer RNA (tRNA) is a small ($\approx 75\;\mathrm{nt{}$) RNA molecule that carries a specific
+Transfer RNA (tRNA) is a small ($\approx 75\;\mathrm{nt}$) RNA molecule that carries a specific
 amino acid and recognises the corresponding codon on mRNA.
 
 **Key features:**
@@ -181,10 +181,10 @@ approximately $45$ tRNA species).
 
 Ribosomes consist of a **large subunit** and a **small subunit**, composed of rRNA and proteins.
 
-| Component      | Prokaryotes ($70\mathrm{S{}$) | Eukaryotes ($80\mathrm{S{}$) |
+| Component      | Prokaryotes ($70\mathrm{S}$) | Eukaryotes ($80\mathrm{S}$) |
 | -------------- | --------------------------- | --------------------------- |
-| Small subunit  | $30\mathrm{S{}$ (16S rRNA + proteins) | $40\mathrm{S{}$ (18S rRNA + proteins) |
-| Large subunit  | $50\mathrm{S{}$ (23S + 5S rRNA + proteins) | $60\mathrm{S{}$ (28S + 5.8S + 5S rRNA + proteins) |
+| Small subunit  | $30\mathrm{S}$ (16S rRNA + proteins) | $40\mathrm{S}$ (18S rRNA + proteins) |
+| Large subunit  | $50\mathrm{S}$ (23S + 5S rRNA + proteins) | $60\mathrm{S}$ (28S + 5.8S + 5S rRNA + proteins) |
 
 **Three tRNA binding sites:**
 
@@ -286,7 +286,7 @@ sequence.
 
 **DNA methylation:**
 
-- Addition of a methyl group ($\mathrm{CH{}_3$) to cytosine bases at CpG dinucleotides by **DNA
+- Addition of a methyl group ($\mathrm{CH}_3$) to cytosine bases at CpG dinucleotides by **DNA
   methyltransferases**.
 - **Hypermethylation** of promoter regions generally **silences** gene expression by preventing
   transcription factor binding or recruiting proteins that condense chromatin.
@@ -318,7 +318,7 @@ sequence.
 
 ### Restriction Enzymes (Restriction Endonucleases)
 
-Bacterial enzymes that recognise specific **palindromic DNA sequences** (usually $4$--$8\;\mathrm{bp{}$)
+Bacterial enzymes that recognise specific **palindromic DNA sequences** (usually $4$--$8\;\mathrm{bp}$)
 and cut both strands at specific positions within or near the recognition site.
 
 | Enzyme | Recognition sequence | Cut type            |
@@ -348,11 +348,11 @@ recombinant DNA molecules.
 
 ### Gel Electrophoresis (Extended)
 
-- **Agarose gel electrophoresis**: separates DNA fragments ($100$--$25000\;\mathrm{bp{}$). Higher
+- **Agarose gel electrophoresis**: separates DNA fragments ($100$--$25000\;\mathrm{bp}$). Higher
   agarose concentration = smaller pore size = better resolution of small fragments.
-- **Polyacrylamide gel electrophoresis (PAGE)**: separates smaller fragments ($1$--$1000\;\mathrm{bp{}$)
+- **Polyacrylamide gel electrophoresis (PAGE)**: separates smaller fragments ($1$--$1000\;\mathrm{bp}$)
   with higher resolution. Used for DNA sequencing and protein separation.
-- **Pulsed-field gel electrophoresis (PFGE)**: separates very large DNA fragments ($10^4$--$10^7\;\mathrm{bp{}$)
+- **Pulsed-field gel electrophoresis (PFGE)**: separates very large DNA fragments ($10^4$--$10^7\;\mathrm{bp}$)
   by periodically changing the direction of the electric field.
 
 ### PCR (Extended)
@@ -374,10 +374,10 @@ When two genes are on the same chromosome, they do not assort independently. The
 deviates from $9:3:3:1$.
 
 **Recombination frequency (RF)**:
-$$\mathrm{RF{} = \frac{\text{number of recombinant offspring{}}{\text{total offspring{}} \times 100\%$$
+$$\mathrm{RF} = \frac{\text{number of recombinant offspring}}{\text{total offspring}} \times 100\%$$
 
-- $\mathrm{RF{} < 10\%$: genes are closely linked.
-- $\mathrm{RF{} \approx 50\%$: genes assort independently (on different chromosomes or very far
+- $\mathrm{RF} < 10\%$: genes are closely linked.
+- $\mathrm{RF} \approx 50\%$: genes assort independently (on different chromosomes or very far
   apart).
 
 ### Chi-Squared Test
@@ -390,7 +390,7 @@ $$\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}$$
 1. State the null hypothesis ($H_0$): the observed ratios match the expected ratios.
 2. Calculate expected values from the total and expected ratio.
 3. Calculate $\chi^2$.
-4. Determine degrees of freedom: $\mathrm{df{} = n - 1$ (where $n$ is the number of categories).
+4. Determine degrees of freedom: $\mathrm{df} = n - 1$ (where $n$ is the number of categories).
 5. Compare $\chi^2$ to the critical value at the chosen significance level ($p = 0.05$).
 6. If $\chi^2 >$ critical value, reject $H_0$; the deviation is statistically significant.
 
@@ -521,7 +521,7 @@ for $1$ df). (c) Calculate the map distance between the two genes.
 
 (a) Recombinant phenotypes: grey vestigial ($65$) and black normal ($60$).
 Total recombinants: $65 + 60 = 125$.
-$\mathrm{RF{} = \frac{125}{1000} \times 100\% = 12.5\%$
+$\mathrm{RF} = \frac{125}{1000} \times 100\% = 12.5\%$
 
 (b) Expected values (assuming linked genes with $12.5\%$ recombination):
 - Parental (grey normal + black vestigial): $87.5\%$ of $1000 = 875$ ($437.5$ each)
@@ -534,7 +534,7 @@ $= 0.129 + 0.129 + 0.100 + 0.100 = 0.458$
 $\chi^2 = 0.458 < 3.84$ (critical value). We fail to reject $H_0$. The data do not deviate
 significantly from the expected ratio for linked genes with $12.5\%$ recombination.
 
-(c) Map distance: $12.5\;\mathrm{cM{}$ (the recombination frequency approximates map distance in
+(c) Map distance: $12.5\;\mathrm{cM}$ (the recombination frequency approximates map distance in
 centiMorgans for small distances).
 
 </details>
@@ -553,7 +553,7 @@ disease susceptibilities.
 <details>
 <summary>Answer</summary>
 
-(a) DNA methyltransferases add methyl groups ($\mathrm{CH{}_3$) to cytosine residues at CpG dinucleotides
+(a) DNA methyltransferases add methyl groups ($\mathrm{CH}_3$) to cytosine residues at CpG dinucleotides
 in the promoter region of the gene. Methylated DNA recruits **methyl-CpG-binding domain proteins
 (MBDs)**, which in turn recruit **histone deacetylases (HDACs)**. HDACs remove acetyl groups from
 histones, increasing the positive charge on histones and strengthening histone-DNA interactions. The
@@ -601,7 +601,7 @@ BamHI. Mix the fragments with **DNA ligase**, which forms phosphodiester bonds b
 and the opened plasmid.
 
 (d) **Transformation**: introduce the ligation mixture into competent _E. coli_ cells by heat shock
-($42^\circ\mathrm{C{}$ for $90\;\mathrm{s{}$) or electroporation. Allow recovery in rich medium.
+($42^\circ\mathrm{C}$ for $90\;\mathrm{s}$) or electroporation. Allow recovery in rich medium.
 
 (e) **Selection**: plate cells on agar containing ampicillin. Only cells that have taken up the
 plasmid (with amp$^R$) will grow. To distinguish recombinant from non-recombinant colonies, use
@@ -622,21 +622,21 @@ chromatography or antibody-based methods.
 
 **Worked Example: Calculating DNA Replication Time**
 
-The human genome is $3.2 \times 10^9\;\mathrm{bp{}$. Eukaryotic DNA polymerase synthesises at
-$\approx 50\;\mathrm{nt/s{}$. The average distance between origins of replication is
-$\approx 150\;\mathrm{kb{}$. Calculate the minimum time required to replicate the entire genome.
+The human genome is $3.2 \times 10^9\;\mathrm{bp}$. Eukaryotic DNA polymerase synthesises at
+$\approx 50\;\mathrm{nt/s}$. The average distance between origins of replication is
+$\approx 150\;\mathrm{kb}$. Calculate the minimum time required to replicate the entire genome.
 
 <details>
 <summary>Solution</summary>
 
 Number of replication origins: $\frac{3.2 \times 10^9}{150 \times 10^3} \approx 21333$ origins.
 
-Each replication fork synthesises DNA at $50\;\mathrm{nt/s{}$. Each origin produces two replication
-forks (bidirectional replication), so the rate per origin is $2 \times 50 = 100\;\mathrm{nt/s{}$.
+Each replication fork synthesises DNA at $50\;\mathrm{nt/s}$. Each origin produces two replication
+forks (bidirectional replication), so the rate per origin is $2 \times 50 = 100\;\mathrm{nt/s}$.
 
-Length per replication unit: $150\;\mathrm{kb{} = 150000\;\mathrm{bp{}$.
+Length per replication unit: $150\;\mathrm{kb} = 150000\;\mathrm{bp}$.
 
-Time per replication unit: $\frac{150000}{100} = 1500\;\mathrm{s{} = 25\;\mathrm{minutes{}$.
+Time per replication unit: $\frac{150000}{100} = 1500\;\mathrm{s} = 25\;\mathrm{minutes}$.
 
 Since all origins fire approximately simultaneously (during S phase), the total replication time
 is approximately $25$ minutes (plus the time for origin firing, which is staggered over
@@ -647,10 +647,10 @@ reflecting the staggered activation of origins and other cellular processes.
 
 **Worked Example: Transcription and Translation -- Gene Length Calculation**
 
-A protein has a molecular weight of $55\;\mathrm{kDa{}$ and an average amino acid molecular weight of
-$110\;\mathrm{Da{}$. The gene has $4$ introns with an average length of $1200\;\mathrm{bp{}$ and $5$
+A protein has a molecular weight of $55\;\mathrm{kDa}$ and an average amino acid molecular weight of
+$110\;\mathrm{Da}$. The gene has $4$ introns with an average length of $1200\;\mathrm{bp}$ and $5$
 exons. (a) Calculate the number of amino acids and the minimum coding sequence length. (b) If the
-mature mRNA is $1800\;\mathrm{bp{}$ long, what proportion is coding sequence? (c) Calculate the
+mature mRNA is $1800\;\mathrm{bp}$ long, what proportion is coding sequence? (c) Calculate the
 pre-mRNA length.
 
 <details>
@@ -658,13 +658,13 @@ pre-mRNA length.
 
 (a) Number of amino acids: $\frac{55000}{110} = 500$ amino acids.
 
-Coding sequence: $500 \times 3 = 1500\;\mathrm{bp{}$.
+Coding sequence: $500 \times 3 = 1500\;\mathrm{bp}$.
 
 (b) Proportion of mature mRNA that is coding: $\frac{1500}{1800} = 83.3\%$.
 
-The remaining $300\;\mathrm{bp{}$ ($16.7\%$) are the $5'$ and $3'$ untranslated regions (UTRs).
+The remaining $300\;\mathrm{bp}$ ($16.7\%$) are the $5'$ and $3'$ untranslated regions (UTRs).
 
-(c) Pre-mRNA length = exons + introns = $1800 + (4 \times 1200) = 1800 + 4800 = 6600\;\mathrm{bp{}$.
+(c) Pre-mRNA length = exons + introns = $1800 + (4 \times 1200) = 1800 + 4800 = 6600\;\mathrm{bp}$.
 
 The introns constitute $\frac{4800}{6600} = 72.7\%$ of the pre-mRNA, consistent with the
 observation that most human genes consist predominantly of non-coding intronic sequence.
@@ -760,7 +760,7 @@ approximately $1$ in $25$. How does this affect the probability for a random mat
 
 **Worked Example: Nucleotide Counting and Chargaff's Rules**
 
-A double-stranded DNA molecule is $1200\;\mathrm{bp{}$ long and contains $300$ adenine bases on one strand.
+A double-stranded DNA molecule is $1200\;\mathrm{bp}$ long and contains $300$ adenine bases on one strand.
 (a) Determine the number of each nucleotide on both strands. (b) Calculate the total number of hydrogen
 bonds holding the two strands together. (c) If this DNA codes for a protein, what is the maximum number
 of amino acids in the protein?
@@ -800,12 +800,12 @@ If GC content is $40\%$: $480$ G--C pairs $\times 3 = 1440$ H-bonds; $240$ A--T 
 
 **Worked Example: Restriction Mapping**
 
-A circular plasmid of $5000\;\mathrm{bp{}$ is digested individually and in combination with two restriction
+A circular plasmid of $5000\;\mathrm{bp}$ is digested individually and in combination with two restriction
 enzymes, EcoRI and BamHI. The results are:
 
-- EcoRI alone: $2000\;\mathrm{bp{}$, $3000\;\mathrm{bp{}$
-- BamHI alone: $1500\;\mathrm{bp{}$, $3500\;\mathrm{bp{}$
-- EcoRI + BamHI: $500\;\mathrm{bp{}$, $1000\;\mathrm{bp{}$, $1500\;\mathrm{bp{}$, $2000\;\mathrm{bp{}$
+- EcoRI alone: $2000\;\mathrm{bp}$, $3000\;\mathrm{bp}$
+- BamHI alone: $1500\;\mathrm{bp}$, $3500\;\mathrm{bp}$
+- EcoRI + BamHI: $500\;\mathrm{bp}$, $1000\;\mathrm{bp}$, $1500\;\mathrm{bp}$, $2000\;\mathrm{bp}$
 
 Determine the restriction map showing the positions and order of the EcoRI and BamHI sites.
 
@@ -818,27 +818,27 @@ From single digests:
 
 Total fragments from double digest: 4, which equals $2 \times 2$ (the expected number for 2 enzymes with 2 sites each, if no sites overlap).
 
-The double digest fragments sum to: $500 + 1000 + 1500 + 2000 = 5000\;\mathrm{bp{}$ (correct).
+The double digest fragments sum to: $500 + 1000 + 1500 + 2000 = 5000\;\mathrm{bp}$ (correct).
 
 To construct the map, compare single and double digest fragments:
-- The $1500\;\mathrm{bp{}$ fragment appears in both BamHI alone and the double digest. This means one BamHI--BamHI fragment is not cut by EcoRI. So the $1500\;\mathrm{bp{}$ BamHI fragment remains intact in the double digest.
-- The $2000\;\mathrm{bp{}$ EcoRI fragment appears in both EcoRI alone and the double digest. So one EcoRI--EcoRI fragment is not cut by BamHI.
+- The $1500\;\mathrm{bp}$ fragment appears in both BamHI alone and the double digest. This means one BamHI--BamHI fragment is not cut by EcoRI. So the $1500\;\mathrm{bp}$ BamHI fragment remains intact in the double digest.
+- The $2000\;\mathrm{bp}$ EcoRI fragment appears in both EcoRI alone and the double digest. So one EcoRI--EcoRI fragment is not cut by BamHI.
 
 Working through the overlaps:
-- The $2000\;\mathrm{bp{}$ EcoRI fragment (from single digest) is cut into $500 + 1500$ in the double digest (since $500 + 1500 = 2000$). Wait -- $2000$ appears in the double digest, so this fragment is NOT cut by BamHI.
-- The $3000\;\mathrm{bp{}$ EcoRI fragment is cut by BamHI into $1000 + 2000$ in the double digest. ($1000 + 2000 = 3000$.)
+- The $2000\;\mathrm{bp}$ EcoRI fragment (from single digest) is cut into $500 + 1500$ in the double digest (since $500 + 1500 = 2000$). Wait -- $2000$ appears in the double digest, so this fragment is NOT cut by BamHI.
+- The $3000\;\mathrm{bp}$ EcoRI fragment is cut by BamHI into $1000 + 2000$ in the double digest. ($1000 + 2000 = 3000$.)
 
-So BamHI cuts within the $3000\;\mathrm{bp{}$ EcoRI fragment, splitting it into $1000$ and $2000$.
+So BamHI cuts within the $3000\;\mathrm{bp}$ EcoRI fragment, splitting it into $1000$ and $2000$.
 
-Now: the $1500\;\mathrm{bp{}$ BamHI fragment is not cut by EcoRI (it appears intact in the double digest). The $3500\;\mathrm{bp{}$ BamHI fragment is cut by EcoRI into $500 + 1000 + 2000 = 3500$. That gives 3 fragments from one region, but we only have $500$ and $1000$ and $1500$ and $2000$ in the double digest.
+Now: the $1500\;\mathrm{bp}$ BamHI fragment is not cut by EcoRI (it appears intact in the double digest). The $3500\;\mathrm{bp}$ BamHI fragment is cut by EcoRI into $500 + 1000 + 2000 = 3500$. That gives 3 fragments from one region, but we only have $500$ and $1000$ and $1500$ and $2000$ in the double digest.
 
-Let me reconsider: the $3500\;\mathrm{bp{}$ BamHI fragment is cut by EcoRI. Since the $2000\;\mathrm{bp{}$ EcoRI fragment is uncut, the EcoRI sites must lie within the $3500\;\mathrm{bp{}$ BamHI fragment. The $3500\;\mathrm{bp{}$ region is cut by 2 EcoRI sites into 3 pieces. But we need these pieces plus the intact $1500\;\mathrm{bp{}$ fragment to give the double digest fragments.
+Let me reconsider: the $3500\;\mathrm{bp}$ BamHI fragment is cut by EcoRI. Since the $2000\;\mathrm{bp}$ EcoRI fragment is uncut, the EcoRI sites must lie within the $3500\;\mathrm{bp}$ BamHI fragment. The $3500\;\mathrm{bp}$ region is cut by 2 EcoRI sites into 3 pieces. But we need these pieces plus the intact $1500\;\mathrm{bp}$ fragment to give the double digest fragments.
 
-The $3500\;\mathrm{bp{}$ BamHI fragment, when cut by 2 EcoRI sites, produces 3 fragments that sum to $3500$. From the double digest, the fragments within this region would be $500$, $1000$, and $2000$ ($500 + 1000 + 2000 = 3500$).
+The $3500\;\mathrm{bp}$ BamHI fragment, when cut by 2 EcoRI sites, produces 3 fragments that sum to $3500$. From the double digest, the fragments within this region would be $500$, $1000$, and $2000$ ($500 + 1000 + 2000 = 3500$).
 
 So the order around the circular plasmid is: BamHI -- $500$ -- EcoRI -- $1000$ -- EcoRI -- $2000$ -- BamHI -- $1500$ -- (back to start).
 
-Verification: EcoRI to EcoRI $= 1000\;\mathrm{bp{}$ (short fragment), and the other EcoRI to EcoRI (going the other way around) $= 500 + 1500 + 2000 = 4000$. But EcoRI alone gave $2000$ and $3000$. This does not match.
+Verification: EcoRI to EcoRI $= 1000\;\mathrm{bp}$ (short fragment), and the other EcoRI to EcoRI (going the other way around) $= 500 + 1500 + 2000 = 4000$. But EcoRI alone gave $2000$ and $3000$. This does not match.
 
 Let me redo this more carefully. Label the four sites in order around the circle: let us place them as positions on a linear map $0$ to $5000$.
 
@@ -930,7 +930,7 @@ the probability that their next child will be a carrier of both conditions but p
 for each gene. Both parents are phenotypically normal, so their genotypes are $AaCc$.
 
 (b) For each gene independently, $Aa \times Aa \to \frac{3}{4}$ normal phenotype.
-$P(\text{normal for both{}) = \frac{3}{4} \times \frac{3}{4} = \frac{9}{16}$
+$P(\text{normal for both}) = \frac{3}{4} \times \frac{3}{4} = \frac{9}{16}$
 
 (c) Carrier of both but normal: genotype must be $AaCc$.
 $P(AaCc) = P(Aa) \times P(Cc) = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$
@@ -980,7 +980,7 @@ Wait -- re-reading: the affected father has an affected son. Under X-linked domi
 - **Forgetting that qPCR measures DNA amount, not RNA**: to measure gene expression (RNA), you must first perform reverse transcription (RT-qPCR).
 - **Misidentifying the template strand in Sanger sequencing**: the gel bands represent the newly synthesised strand, not the template.
 - **Assuming autosomal dominant conditions cannot skip generations**: while rare, reduced penetrance can cause an individual to carry the allele without expressing the phenotype.
-- **Confusing recombination frequency with map distance for large distances**: recombination frequency plateaus at $50\%$ for genes far apart or on different chromosomes, so map distances $> 50\;\mathrm{cM{}$ require mapping functions (e.g., Kosambi or Haldane).
+- **Confusing recombination frequency with map distance for large distances**: recombination frequency plateaus at $50\%$ for genes far apart or on different chromosomes, so map distances $> 50\;\mathrm{cM}$ require mapping functions (e.g., Kosambi or Haldane).
 
 ---
 
@@ -1007,7 +1007,7 @@ incorrect nucleotides, producing mutated mRNA and potentially dysfunctional prot
 
 (b) Nucleotide excision repair in eukaryotes (global genome NER):
 1. **Damage recognition**: the XPC-RAD23B complex recognises the helix distortion caused by the thymine dimer.
-2. **Verification**: TFIIH (containing XPB and XPD helicases) verifies the damage and unwinds approximately $20$--$30\;\mathrm{bp{}$ of DNA around the lesion.
+2. **Verification**: TFIIH (containing XPB and XPD helicases) verifies the damage and unwinds approximately $20$--$30\;\mathrm{bp}$ of DNA around the lesion.
 3. **Incision**: endonucleases XPG (cuts $3'$ to the damage) and XPF-ERCC1 (cuts $5'$ to the damage) excise an oligonucleotide of approximately $24$--$32$ nucleotides.
 4. **Gap filling**: DNA polymerases $\delta$ or $\varepsilon$ (with PCNA) synthesise new DNA using the undamaged strand as a template.
 5. **Ligation**: DNA ligase I seals the nick.
@@ -1032,7 +1032,7 @@ A qPCR reaction starts with $10^4$ copies of a target DNA fragment. After 30 cyc
 signal reaches the threshold. (a) Assuming $100\%$ efficiency (doubling each cycle), calculate the
 theoretical number of copies after 30 cycles. (b) If the actual efficiency is $92\%$ (each cycle
 produces $1.92\times$ copies), calculate the actual number of copies. (c) The reaction contains
-$100\;\mathrm{\mu L{}$ total volume. Calculate the final concentration in copies/$\mathrm{\mu L{}$.
+$100\;\mathrm{\mu L}$ total volume. Calculate the final concentration in copies/$\mathrm{\mu L}$.
 (d) Explain why PCR efficiency is typically less than $100\%$.
 
 </details>
@@ -1051,7 +1051,7 @@ $N = 10000 \times 1073741824 = 1.074 \times 10^{13}$ copies.
 $(1.92)^{30}$: $\ln(1.92) = 0.6523$, so $30 \times 0.6523 = 19.569$, $e^{19.569} = 3.17 \times 10^8$.
 $N = 10^4 \times 3.17 \times 10^8 = 3.17 \times 10^{12}$ copies.
 
-(c) Concentration: $\frac{3.17 \times 10^{12}}{100} = 3.17 \times 10^{10}$ copies/$\mu\mathrm{L{}$.
+(c) Concentration: $\frac{3.17 \times 10^{12}}{100} = 3.17 \times 10^{10}$ copies/$\mu\mathrm{L}$.
 
 (d) PCR efficiency is less than $100\%$ because: primers may anneal imperfectly, DNA polymerase may
 dissociate from the template, secondary structures in the DNA may block polymerase progression,
@@ -1232,9 +1232,9 @@ the DNA, destroying the phage genome and protecting the bacterium.
 <summary>Problem 11: Quantitative -- Southern Blot and DNA Fingerprinting</summary>
 
 A forensic DNA sample is analysed using a VNTR (variable number tandem repeat) probe. The suspect's DNA
-produces two bands at $3200\;\mathrm{bp{}$ and $5600\;\mathrm{bp{}$. A crime scene sample produces two
-bands at $3200\;\mathrm{bp{}$ and $5600\;\mathrm{bp{}$. The VNTR allele frequencies in the population are:
-$3200\;\mathrm{bp{} = 0.15$, $5600\;\mathrm{bp{} = 0.08$, and the remaining alleles collectively have a
+produces two bands at $3200\;\mathrm{bp}$ and $5600\;\mathrm{bp}$. A crime scene sample produces two
+bands at $3200\;\mathrm{bp}$ and $5600\;\mathrm{bp}$. The VNTR allele frequencies in the population are:
+$3200\;\mathrm{bp} = 0.15$, $5600\;\mathrm{bp} = 0.08$, and the remaining alleles collectively have a
 combined frequency of $0.77$. (a) Assuming Hardy-Weinberg equilibrium, calculate the probability of this
 specific genotype in the population. (b) If three independent VNTR loci are tested and all match between
 the suspect and the crime scene sample, and the match probabilities for the other two loci are
@@ -1247,7 +1247,7 @@ probability does not equal the probability of the suspect's guilt.
 <summary>Answer 11</summary>
 
 (a) The suspect is heterozygous: genotype is $3200/5600$.
-$P(\text{genotype{}) = 2 \times p_{3200} \times p_{5600} = 2 \times 0.15 \times 0.08 = 0.024 = 1/41.7$.
+$P(\text{genotype}) = 2 \times p_{3200} \times p_{5600} = 2 \times 0.15 \times 0.08 = 0.024 = 1/41.7$.
 
 This is the probability that a randomly selected individual from the population has this specific genotype
 at this locus.
@@ -1260,7 +1260,7 @@ Approximately $1$ in $425\,000$.
 (c) The match probability is NOT the probability of guilt because:
 - It gives the probability that a randomly selected person would match the DNA profile, not the
   probability that the suspect is the source of the DNA.
-- The correct interpretation requires Bayesian reasoning: $P(\text{guilt{} | \text{match{})$ depends on
+- The correct interpretation requires Bayesian reasoning: $P(\text{guilt} | \text{match})$ depends on
   the prior probability of guilt (based on other evidence).
 - In a city of $10$ million people, $10\,000\,000 / 425\,340 \approx 23.5$ people would be expected
   to match this profile by chance alone.
@@ -1276,7 +1276,7 @@ $4\,300$. However, humans have only about $1.5$ times as many protein domains (f
 _E. coli_. (a) Explain how humans generate proteomic complexity far greater than the number of genes
 would suggest. (b) Describe the role of alternative splicing, with a specific example. (c) Explain how
 post-translational modifications expand proteome diversity. (d) The pufferfish (_Fugu rubripes_) genome
-is only $365\;\mathrm{Mb{}$ (human: $3200\;\mathrm{Mb{}$) but contains a similar number of genes. Explain
+is only $365\;\mathrm{Mb}$ (human: $3200\;\mathrm{Mb}$) but contains a similar number of genes. Explain
 this observation.
 
 </details>
@@ -1347,7 +1347,7 @@ isoforms with different adhesive properties.
   approximately $500\,000$ cases of childhood blindness annually.
 - Two genes from daffodil (_psy_, phytoene synthase) and one from bacterium (_crtI_, phytoene desaturase)
   were introduced into rice, enabling the endosperm to produce beta-carotene (provitamin A).
-- Golden Rice 2 (2005) used a maize _psy_ gene, achieving much higher beta-carotene levels ($37\;\mathrm{\mu g/g{}$).
+- Golden Rice 2 (2005) used a maize _psy_ gene, achieving much higher beta-carotene levels ($37\;\mathrm{\mu g/g}$).
 - Challenges: public opposition to GMOs, regulatory hurdles, acceptance by farmers and consumers,
   degradation of beta-carotene during storage and cooking.
 

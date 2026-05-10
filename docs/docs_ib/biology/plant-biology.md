@@ -34,7 +34,7 @@ new cells for plant growth.
 | **Cuticle**            | Waxy layer reducing water loss by transpiration.                                                               |
 | **Upper epidermis**    | Transparent, allows light through; protective layer.                                                           |
 | **Palisade mesophyll** | Closely packed, elongated cells with many chloroplasts; primary site of photosynthesis.                        |
-| **Spongy mesophyll**   | Loosely packed cells with air spaces; facilitates gas exchange ($\mathrm{CO{}_2$ and $\mathrm{O{}_2$ diffusion). |
+| **Spongy mesophyll**   | Loosely packed cells with air spaces; facilitates gas exchange ($\mathrm{CO}_2$ and $\mathrm{O}_2$ diffusion). |
 | **Lower epidermis**    | Contains **stomata** (pores) surrounded by **guard cells**; controls gas exchange and transpiration.           |
 | **Vascular bundles**   | Xylem (water transport) and phloem (sugar transport) running through the leaf.                                 |
 
@@ -45,10 +45,10 @@ stomata:
 
 - **Open**: when guard cells are turgid (water enters by osmosis), they bend outward due to unevenly
   thickened cell walls (thicker on the inner side), opening the stomatal pore. This occurs in light
-  (photosynthesis in guard cells produces ATP, driving $\mathrm{K{}^+$ uptake and subsequent water
+  (photosynthesis in guard cells produces ATP, driving $\mathrm{K}^+$ uptake and subsequent water
   entry).
 - **Closed**: when guard cells are flaccid (water leaves by osmosis), they become less turgid and
-  the pore closes. This occurs in darkness, under water stress, or at high $\mathrm{CO{}_2$
+  the pore closes. This occurs in darkness, under water stress, or at high $\mathrm{CO}_2$
   concentrations.
 
 ---
@@ -289,26 +289,26 @@ coleoptile tips.
 ### Phytochromes
 
 **Definition.** **Phytochromes** are photoreceptor pigments in plants that detect red
-($660\;\mathrm{nm{}$) and far-red ($730\;\mathrm{nm{}$) light.
+($660\;\mathrm{nm}$) and far-red ($730\;\mathrm{nm}$) light.
 
 Phytochromes exist in two interconvertible forms:
 
-- **$\mathrm{P{}_{\mathrm{r{}}$** ($660\;\mathrm{nm{}$ absorbing form): inactive; converts to
-  $\mathrm{P{}_{\mathrm{fr{}}$ when it absorbs red light.
-- **$\mathrm{P{}_{\mathrm{fr{}}$** ($730\;\mathrm{nm{}$ absorbing form): biologically active; converts
-  back to $\mathrm{P{}_{\mathrm{r{}}$ when it absorbs far-red light, or slowly reverts in darkness.
+- **$\mathrm{P}_{\mathrm{r}}$** ($660\;\mathrm{nm}$ absorbing form): inactive; converts to
+  $\mathrm{P}_{\mathrm{fr}}$ when it absorbs red light.
+- **$\mathrm{P}_{\mathrm{fr}}$** ($730\;\mathrm{nm}$ absorbing form): biologically active; converts
+  back to $\mathrm{P}_{\mathrm{r}}$ when it absorbs far-red light, or slowly reverts in darkness.
 
 **Functions of phytochromes**:
 
-- **Seed germination**: many seeds require red light ($\mathrm{P{}_{\mathrm{fr{}}$) to germinate;
-  exposure to far-red light ($\mathrm{P{}_{\mathrm{r{}}$) inhibits germination. This detects whether
+- **Seed germination**: many seeds require red light ($\mathrm{P}_{\mathrm{fr}}$) to germinate;
+  exposure to far-red light ($\mathrm{P}_{\mathrm{r}}$) inhibits germination. This detects whether
   seeds are buried under leaf canopy (far-red rich) or in open sunlight (red rich).
 - **Flowering**: phytochromes detect day length (photoperiodism), allowing plants to flower at the
   correct season.
   - **Long-day plants**: flower when the night length is shorter than a critical duration (i.e.,
-    days are long). $\mathrm{P{}_{\mathrm{fr{}}$ accumulates.
+    days are long). $\mathrm{P}_{\mathrm{fr}}$ accumulates.
   - **Short-day plants**: flower when the night length exceeds a critical duration (i.e., days are
-    short). $\mathrm{P{}_{\mathrm{fr{}}$ levels drop sufficiently during a long night.
+    short). $\mathrm{P}_{\mathrm{fr}}$ levels drop sufficiently during a long night.
 
 ---
 
@@ -316,8 +316,8 @@ Phytochromes exist in two interconvertible forms:
 
 - Confusing **xylem** and **phloem**: xylem transports water and minerals upward (dead cells,
   one-way); phloem transports sugars bidirectionally (living cells).
-- Stating that "plants breathe in $\mathrm{CO{}_2$ at night": plants respire $24$ hours a day; at
-  night (no photosynthesis), net $\mathrm{CO{}_2$ release occurs because photosynthesis has ceased
+- Stating that "plants breathe in $\mathrm{CO}_2$ at night": plants respire $24$ hours a day; at
+  night (no photosynthesis), net $\mathrm{CO}_2$ release occurs because photosynthesis has ceased
   but respiration continues.
 - Confusing **pollination** and **fertilisation**: pollination is the transfer of pollen to a
   stigma; fertilisation is the fusion of gametes inside the ovule.
@@ -426,8 +426,8 @@ bend more, as auxin is trapped on the shaded side).
 <details>
 <summary>Question 5: Phytochrome and Seed Germination</summary>
 
-A batch of lettuce seeds is exposed to a brief pulse of red light ($660\;\mathrm{nm{}$), followed
-immediately by a brief pulse of far-red light ($730\;\mathrm{nm{}$). The seeds are then placed in
+A batch of lettuce seeds is exposed to a brief pulse of red light ($660\;\mathrm{nm}$), followed
+immediately by a brief pulse of far-red light ($730\;\mathrm{nm}$). The seeds are then placed in
 darkness. Predict whether the seeds will germinate, and explain the role of phytochrome in this
 response.
 
@@ -440,16 +440,16 @@ The seeds will **not germinate** (or will have a very low germination rate).
 
 Phytochrome exists in two interconvertible forms:
 
-- Red light converts $\mathrm{P{}_{\mathrm{r{}}$ (inactive) to $\mathrm{P{}_{\mathrm{fr{}}$ (active,
+- Red light converts $\mathrm{P}_{\mathrm{r}}$ (inactive) to $\mathrm{P}_{\mathrm{fr}}$ (active,
   promotes germination).
-- Far-red light converts $\mathrm{P{}_{\mathrm{fr{}}$ back to $\mathrm{P{}_{\mathrm{r{}}$.
+- Far-red light converts $\mathrm{P}_{\mathrm{fr}}$ back to $\mathrm{P}_{\mathrm{r}}$.
 
-The red light pulse converts phytochrome to the active $\mathrm{P{}_{\mathrm{fr{}}$ form, which would
+The red light pulse converts phytochrome to the active $\mathrm{P}_{\mathrm{fr}}$ form, which would
 promote germination. However, the subsequent far-red pulse immediately reconverts
-$\mathrm{P{}_{\mathrm{fr{}}$ back to $\mathrm{P{}_{\mathrm{r{}}$. Since the final exposure is far-red
-light, the seeds are left predominantly in the $\mathrm{P{}_{\mathrm{r{}}$ (inactive) state. In
-darkness, $\mathrm{P{}_{\mathrm{fr{}}$ slowly reverts to $\mathrm{P{}_{\mathrm{r{}}$ anyway. With
-insufficient $\mathrm{P{}_{\mathrm{fr{}}$, the biochemical pathways triggering germination (e.g.,
+$\mathrm{P}_{\mathrm{fr}}$ back to $\mathrm{P}_{\mathrm{r}}$. Since the final exposure is far-red
+light, the seeds are left predominantly in the $\mathrm{P}_{\mathrm{r}}$ (inactive) state. In
+darkness, $\mathrm{P}_{\mathrm{fr}}$ slowly reverts to $\mathrm{P}_{\mathrm{r}}$ anyway. With
+insufficient $\mathrm{P}_{\mathrm{fr}}$, the biochemical pathways triggering germination (e.g.,
 amylase production) are not activated.
 
 This demonstrates that the **last light exposure** determines the phytochrome state and hence the
@@ -463,24 +463,24 @@ germination response --- a property known as phytochrome reversibility.
 
 **Worked Example: Transpiration Rate Calculation Using a Potometer**
 
-A potometer containing a leafy shoot records water uptake of $2.4\;\mathrm{mL{}$ over $30$ minutes.
-The total leaf area of the shoot is $80\;\mathrm{cm{}^2$. Calculate the transpiration rate in
-$\mathrm{mL/cm^2/hour{}$ and convert to $\mathrm{mmol\;H_2O/m^2/s{}$.
+A potometer containing a leafy shoot records water uptake of $2.4\;\mathrm{mL}$ over $30$ minutes.
+The total leaf area of the shoot is $80\;\mathrm{cm}^2$. Calculate the transpiration rate in
+$\mathrm{mL/cm^2/hour}$ and convert to $\mathrm{mmol\;H_2O/m^2/s}$.
 
 <details>
 <summary>Solution</summary>
 
-**Transpiration rate**: $\frac{2.4\;\mathrm{mL{}}{80\;\mathrm{cm{}^2 \times 0.5\;\mathrm{hours{}} = \frac{2.4}{40} = 0.060\;\mathrm{mL/(cm^2 \cdot h){}$
+**Transpiration rate**: $\frac{2.4\;\mathrm{mL}}{80\;\mathrm{cm}^2 \times 0.5\;\mathrm{hours}} = \frac{2.4}{40} = 0.060\;\mathrm{mL/(cm^2 \cdot h)}$
 
-**Convert to $\mathrm{mmol\;H_2O/m^2/s{}$**:
-$0.060\;\mathrm{mL/(cm^2 \cdot h){} = 0.060 \times 10^{-2}\;\mathrm{L/(cm^2 \cdot h){} = 0.060 \times 10^{-2} \times 10^4\;\mathrm{L/(m^2 \cdot h){} = 0.60\;\mathrm{L/(m^2 \cdot h){}$
+**Convert to $\mathrm{mmol\;H_2O/m^2/s}$**:
+$0.060\;\mathrm{mL/(cm^2 \cdot h)} = 0.060 \times 10^{-2}\;\mathrm{L/(cm^2 \cdot h)} = 0.060 \times 10^{-2} \times 10^4\;\mathrm{L/(m^2 \cdot h)} = 0.60\;\mathrm{L/(m^2 \cdot h)}$
 
-Molar mass of water $= 18\;\mathrm{g/mol{}$, density $= 1\;\mathrm{g/mL{}$.
-Moles per hour: $\frac{600\;\mathrm{mL/h{}}{18\;\mathrm{g/mol{}} = 33.3\;\mathrm{mol/h{}$
+Molar mass of water $= 18\;\mathrm{g/mol}$, density $= 1\;\mathrm{g/mL}$.
+Moles per hour: $\frac{600\;\mathrm{mL/h}}{18\;\mathrm{g/mol}} = 33.3\;\mathrm{mol/h}$
 
-Convert to $\mathrm{mmol/s{}$: $\frac{33.3 \times 10^3\;\mathrm{mmol{}}{3600\;\mathrm{s{}} = 9.3\;\mathrm{mmol/(m^2 \cdot s){}$
+Convert to $\mathrm{mmol/s}$: $\frac{33.3 \times 10^3\;\mathrm{mmol}}{3600\;\mathrm{s}} = 9.3\;\mathrm{mmol/(m^2 \cdot s)}$
 
-A typical transpiration rate for a mesophytic plant in daylight is $1$--$10\;\mathrm{mmol/(m^2 \cdot s){}$,
+A typical transpiration rate for a mesophytic plant in daylight is $1$--$10\;\mathrm{mmol/(m^2 \cdot s)}$,
 so this value is within the expected physiological range. The potometer measures water uptake as a
 proxy for transpiration, assuming that water uptake approximates water loss (valid under steady-state
 conditions when the plant is not accumulating or depleting internal water reserves).
@@ -489,8 +489,8 @@ conditions when the plant is not accumulating or depleting internal water reserv
 
 **Worked Example: Xylem Water Transport and Cohesion-Tension Theory**
 
-A $10\;\mathrm{m{}$ tall tree has a xylem vessel radius of $50\;\mathrm{\mu m{}$. The surface tension
-of water at $20^\circ\mathrm{C{}$ is $0.073\;\mathrm{N/m{}$ and the contact angle between water and
+A $10\;\mathrm{m}$ tall tree has a xylem vessel radius of $50\;\mathrm{\mu m}$. The surface tension
+of water at $20^\circ\mathrm{C}$ is $0.073\;\mathrm{N/m}$ and the contact angle between water and
 the xylem wall is approximately $0^\circ$. Using the capillary rise equation
 $h = \frac{2\gamma \cos\theta}{\rho g r}$, calculate whether capillary action alone can account
 for water reaching the top of the tree.
@@ -499,36 +499,36 @@ for water reaching the top of the tree.
 <summary>Solution</summary>
 
 $h = \frac{2 \times 0.073 \times \cos(0^\circ)}{1000 \times 9.81 \times 50 \times 10^{-6}}$
-$= \frac{0.146}{0.4905} = 0.298\;\mathrm{m{}$
+$= \frac{0.146}{0.4905} = 0.298\;\mathrm{m}$
 
-Capillary rise is approximately $0.30\;\mathrm{m{}$, which is far less than the $10\;\mathrm{m{}$
+Capillary rise is approximately $0.30\;\mathrm{m}$, which is far less than the $10\;\mathrm{m}$
 height of the tree. This demonstrates that **capillary action alone is insufficient** to explain
 water transport in tall plants. The primary mechanism is the **cohesion-tension theory**:
 transpiration at the leaves creates a negative pressure (tension) of approximately $-1$ to
-$-3\;\mathrm{MPa{}$ in the xylem, and the cohesive forces between water molecules (hydrogen bonds)
+$-3\;\mathrm{MPa}$ in the xylem, and the cohesive forces between water molecules (hydrogen bonds)
 allow this tension to pull a continuous water column upward from the roots to the crown. Root
-pressure (typically $0.1$--$0.5\;\mathrm{MPa{}$) provides a minor additional contribution.
+pressure (typically $0.1$--$0.5\;\mathrm{MPa}$) provides a minor additional contribution.
 
 </details>
 
 **Worked Example: Phloem Translocation Rate**
 
 Using an aphid stylet technique, researchers collect phloem sap from a sieve tube at a rate of
-$0.5\;\mathrm{\mu L/h{}$. The sucrose concentration in the sap is $250\;\mathrm{mmol/L{}$. Calculate
-the mass transfer rate of sucrose in $\mathrm{mg/h{}$.
+$0.5\;\mathrm{\mu L/h}$. The sucrose concentration in the sap is $250\;\mathrm{mmol/L}$. Calculate
+the mass transfer rate of sucrose in $\mathrm{mg/h}$.
 
 <details>
 <summary>Solution</summary>
 
-**Sucrose molar mass**: $\mathrm{C{}_{12}\mathrm{H{}_{22}\mathrm{O{}_{11} = 342\;\mathrm{g/mol{}$
+**Sucrose molar mass**: $\mathrm{C}_{12}\mathrm{H}_{22}\mathrm{O}_{11} = 342\;\mathrm{g/mol}$
 
-**Moles of sucrose per hour**: $250 \times 10^{-3}\;\mathrm{mol/L{} \times 0.5 \times 10^{-6}\;\mathrm{L/h{} = 1.25 \times 10^{-7}\;\mathrm{mol/h{}$
+**Moles of sucrose per hour**: $250 \times 10^{-3}\;\mathrm{mol/L} \times 0.5 \times 10^{-6}\;\mathrm{L/h} = 1.25 \times 10^{-7}\;\mathrm{mol/h}$
 
-**Mass transfer rate**: $1.25 \times 10^{-7}\;\mathrm{mol/h{} \times 342\;\mathrm{g/mol{} = 4.28 \times 10^{-5}\;\mathrm{g/h{} = 0.0428\;\mathrm{mg/h{}$
+**Mass transfer rate**: $1.25 \times 10^{-7}\;\mathrm{mol/h} \times 342\;\mathrm{g/mol} = 4.28 \times 10^{-5}\;\mathrm{g/h} = 0.0428\;\mathrm{mg/h}$
 
 Per single sieve tube, this is a modest amount, but a tree trunk may contain thousands of sieve
 tubes operating simultaneously. For a mature tree with $10000$ active sieve tubes, the total sucrose
-transport would be approximately $428\;\mathrm{mg/h{}$ or $10.3\;\mathrm{g/day{}$. This is consistent
+transport would be approximately $428\;\mathrm{mg/h}$ or $10.3\;\mathrm{g/day}$. This is consistent
 with the observation that photosynthesising leaves can export $50$--$80\%$ of their daily carbon
 gain as sucrose via phloem translocation.
 
@@ -552,8 +552,8 @@ Explain the difference between the two conditions and identify the biochemical p
 <details>
 <summary>Solution</summary>
 
-The seeds treated with gibberellin release significantly more maltose ($105\;\mathrm{mg{}$ vs
-$10\;\mathrm{mg{}$ at $24$ hours) -- approximately a $10$-fold increase. This demonstrates the
+The seeds treated with gibberellin release significantly more maltose ($105\;\mathrm{mg}$ vs
+$10\;\mathrm{mg}$ at $24$ hours) -- approximately a $10$-fold increase. This demonstrates the
 essential role of gibberellin in stimulating seed germination.
 
 **Biochemical pathway**:
@@ -566,7 +566,7 @@ essential role of gibberellin in stimulating seed germination.
 5. Alpha-amylase hydrolyses starch in the endosperm into **maltose**, which is then converted to
    glucose for the growing embryo.
 
-The control (no added gibberellin) shows a small amount of maltose release ($10\;\mathrm{mg{}$),
+The control (no added gibberellin) shows a small amount of maltose release ($10\;\mathrm{mg}$),
 likely from endogenous gibberellin produced by the embryo or from low basal amylase activity. The
 much larger response with added gibberellin confirms that the aleurone's amylase production is
 gibberellin-dependent.
@@ -580,7 +580,7 @@ gibberellin-dependent.
 - **Confusing xylem and phloem**: xylem transports water and minerals upward (dead cells,
   unidirectional); phloem transports organic compounds (mainly sucrose) bidirectionally (living cells).
 - **Stating that "plants breathe in CO2 at night"**: plants respire $24$ hours a day. At night, net
-  $\mathrm{CO{}_2$ release occurs because photosynthesis has ceased but respiration continues.
+  $\mathrm{CO}_2$ release occurs because photosynthesis has ceased but respiration continues.
 - **Confusing pollination and fertilisation**: pollination is the transfer of pollen to a stigma;
   fertilisation is the fusion of gametes inside the ovule. A significant time delay (hours to months)
   can separate these events.
@@ -591,7 +591,7 @@ gibberellin-dependent.
   **inhibits** cell elongation in roots. This is a common source of error in phototropism and
   gravitropism questions.
 - **Describing transpiration as "water loss" without context**: transpiration is an inevitable
-  consequence of gas exchange (stomata must be open for $\mathrm{CO{}_2$ uptake), not merely wasteful
+  consequence of gas exchange (stomata must be open for $\mathrm{CO}_2$ uptake), not merely wasteful
   water loss. The cooling effect of transpiration is also physiologically important.
 - **Confusing apical dominance with apical dominance removal**: removing the shoot tip (apical bud)
   removes the auxin source, relieving lateral bud inhibition. This is the principle behind pruning
@@ -605,7 +605,7 @@ gibberellin-dependent.
 <summary>Problem 1: Data Analysis -- Potometer Experiment</summary>
 
 A student uses a potometer to investigate the effect of wind speed on transpiration rate. The
-following data are collected at constant temperature ($25^\circ\mathrm{C{}$) and humidity ($50\%$):
+following data are collected at constant temperature ($25^\circ\mathrm{C}$) and humidity ($50\%$):
 
 | Wind speed (m/s) | Water uptake (mL/10 min) |
 | ----------------- | ----------------------- |
@@ -638,7 +638,7 @@ of water in the environment.
 
 A researcher tests the effect of different pre-treatments on seed germination. $100$ seeds are
 divided into four groups of $25$: Group A (control, water only), Group B (scarified), Group C
-(stratified at $4^\circ\mathrm{C{}$ for $2$ weeks), Group D (gibberellin solution). After $7$ days,
+(stratified at $4^\circ\mathrm{C}$ for $2$ weeks), Group D (gibberellin solution). After $7$ days,
 the number of germinated seeds in each group is: A = 8, B = 18, C = 20, D = 23. (a) Calculate the
 germination percentage for each group. (b) If the expected germination under the null hypothesis is
 $50\%$ for all groups, perform a chi-squared test to determine whether the treatments significantly
@@ -661,8 +661,8 @@ hypothesis and explain how amyloplasts function as gravity sensors.
 <details>
 <summary>Problem 5: Data Analysis -- Ringing Experiment</summary>
 
-A ringing experiment is performed on a tree by removing a $1\;\mathrm{cm{}$ wide ring of bark (including
-phloem) from the trunk at a height of $1\;\mathrm{m{}$. After $4$ weeks, the following observations
+A ringing experiment is performed on a tree by removing a $1\;\mathrm{cm}$ wide ring of bark (including
+phloem) from the trunk at a height of $1\;\mathrm{m}$. After $4$ weeks, the following observations
 are made: (i) a swelling appears immediately above the ring, (ii) the bark below the ring becomes
 dry and cracked, (iii) roots below the ring show reduced growth. (a) Explain each observation in
 terms of phloem translocation. (b) Why does removing xylem (a separate experiment) produce a
@@ -677,9 +677,9 @@ the bark removal.
 A long-day plant (e.g., spinach) and a short-day plant (e.g., chrysanthemum) are grown under
 identical conditions with a $16$-hour photoperiod. (a) Predict which plant will flower and explain
 why, referring to the role of phytochrome and critical night length. (b) If a flash of red light
-($660\;\mathrm{nm{}$) is given in the middle of the dark period, predict the effect on each species
+($660\;\mathrm{nm}$) is given in the middle of the dark period, predict the effect on each species
 and explain the mechanism. (c) If the red light flash is immediately followed by a far-red flash
-($730\;\mathrm{nm{}$), predict the outcome and explain.
+($730\;\mathrm{nm}$), predict the outcome and explain.
 
 </details>
 
@@ -689,7 +689,7 @@ and explain the mechanism. (c) If the red light flash is immediately followed by
 During a period of drought, a plant closes its stomata to reduce water loss. (a) Describe the
 biochemical pathway by which abscisic acid (ABA) causes stomatal closure, including the role of guard
 cell ion channels, water potential, and turgor pressure. (b) Explain the trade-off between reducing
-transpiration and maintaining $\mathrm{CO{}_2$ uptake for photosynthesis. (c) Discuss why this
+transpiration and maintaining $\mathrm{CO}_2$ uptake for photosynthesis. (c) Discuss why this
 trade-off may limit plant growth more in hot, arid environments than in cool, humid environments.
 
 </details>
@@ -727,7 +727,7 @@ stylet is severed, phloem sap continues to exude, demonstrating positive pressur
 tube. Analysis of the sap shows high sugar concentration ($10$--$30\%$ sucrose by mass), consistent with
 active loading at the source.
 
-**Radioactive tracer experiments**: $^{14}\mathrm{C{}$-labelled $\mathrm{CO{}_2$ is supplied to a source leaf.
+**Radioactive tracer experiments**: $^{14}\mathrm{C}$-labelled $\mathrm{CO}_2$ is supplied to a source leaf.
 The label appears in the phloem within minutes and is detected in sink tissues (roots, growing tips)
 within hours. This confirms bidirectional transport.
 
@@ -738,8 +738,8 @@ responsible for sugar transport.
 ### Loading Mechanism at the Source
 
 Sucrose is actively loaded into companion cells via **sucrose-proton symport**: the companion cell
-uses a $\mathrm{H{}^+$-ATPase to pump $\mathrm{H{}^+$ into the apoplast (cell wall space), creating a
-proton gradient. Sucrose enters the companion cell via a sucrose-$\mathrm{H{}^+$ co-transporter (SUT1 or
+uses a $\mathrm{H}^+$-ATPase to pump $\mathrm{H}^+$ into the apoplast (cell wall space), creating a
+proton gradient. Sucrose enters the companion cell via a sucrose-$\mathrm{H}^+$ co-transporter (SUT1 or
 SUT2), moving against its concentration gradient using the energy of the proton gradient.
 
 Sucrose then passes to the sieve tube element through **plasmodesmata**.
@@ -757,15 +757,15 @@ Sucrose is unloaded from the sieve tube by:
 
 ### Mechanisms of Ion Uptake
 
-Roots absorb mineral ions ($\mathrm{NO{}_3^-$, $\mathrm{NH{}_4^+$, $\mathrm{K{}^+$,
-$\mathrm{Ca{}^{2+}$, $\mathrm{Mg{}^{2+}$, $\mathrm{PO{}_4^{3-}$, $\mathrm{SO{}_4^{2-}$) from the
+Roots absorb mineral ions ($\mathrm{NO}_3^-$, $\mathrm{NH}_4^+$, $\mathrm{K}^+$,
+$\mathrm{Ca}^{2+}$, $\mathrm{Mg}^{2+}$, $\mathrm{PO}_4^{3-}$, $\mathrm{SO}_4^{2-}$) from the
 soil solution.
 
 **Active transport**: most mineral ions are absorbed against their concentration gradient by:
-- **Proton pumps** ($\mathrm{H{}^+$-ATPases) in the root cell membrane pump $\mathrm{H{}^+$ into the
+- **Proton pumps** ($\mathrm{H}^+$-ATPases) in the root cell membrane pump $\mathrm{H}^+$ into the
   soil, creating an electrochemical gradient (negative charge inside the cell; proton gradient).
 - **Ion channels and carriers** use this gradient for secondary active transport (e.g.,
-  $\mathrm{NO{}_3^-$-$\mathrm{H{}^+$ symport; $\mathrm{K{}^+$ channels).
+  $\mathrm{NO}_3^-$-$\mathrm{H}^+$ symport; $\mathrm{K}^+$ channels).
 
 **Mycorrhizae**: symbiotic associations between plant roots and fungi that greatly increase the
 absorptive surface area. The fungal hyphae extend into the soil beyond the root's depletion zone,
@@ -783,7 +783,7 @@ absorptive surface area. The fungal hyphae extend into the soil beyond the root'
 
 **Acid growth hypothesis:**
 
-1. Auxin activates proton pumps ($\mathrm{H{}^+$-ATPases) in the cell wall, pumping $\mathrm{H{}^+$ from
+1. Auxin activates proton pumps ($\mathrm{H}^+$-ATPases) in the cell wall, pumping $\mathrm{H}^+$ from
    the cytoplasm into the cell wall space.
 2. The lowered pH ($\approx 5.0$) activates **expansins** (wall-loosening proteins) that break
    cross-links between cellulose microfibrils.
@@ -793,7 +793,7 @@ absorptive surface area. The fungal hyphae extend into the soil beyond the root'
 
 **Gibberellin biosynthesis pathway** (in plants and fungi):
 
-GGDP (geranylgeranyl diphosphate) $\xrightarrow{\text{ent-kaurene synthase{}}$ ent-kaurene $\xrightarrow{\text{ent-kaurene oxidase{}}$
+GGDP (geranylgeranyl diphosphate) $\xrightarrow{\text{ent-kaurene synthase}}$ ent-kaurene $\xrightarrow{\text{ent-kaurene oxidase}}$
 $\to$ GA$_{12} \to \cdots \to$ GA$_1$ (the bioactive form).
 
 **Gibberellin in stem elongation:**
@@ -838,8 +838,8 @@ $\to$ GA$_{12} \to \cdots \to$ GA$_1$ (the bioactive form).
 1. Under water stress, roots synthesise ABA and transport it to leaves via the xylem.
 2. ABA binds to receptors on guard cell membranes.
 3. ABA activates **anion channels** (especially SLAC1, slow-type anion channel) and inhibits
-   **$\mathrm{K{}^+$ inward channels**.
-4. $\mathrm{Cl{}^-$ and malate$^{2-}$ exit the guard cell, followed by $\mathrm{K{}^+$.
+   **$\mathrm{K}^+$ inward channels**.
+4. $\mathrm{Cl}^-$ and malate$^{2-}$ exit the guard cell, followed by $\mathrm{K}^+$.
 5. The loss of solutes lowers the guard cell water potential; water exits by osmosis.
 6. Guard cells become flaccid, and the stomatal pore closes.
 
@@ -858,7 +858,7 @@ $\to$ GA$_{12} \to \cdots \to$ GA$_1$ (the bioactive form).
 | **Sunken stomata**                 | Stomata in pits, reducing transpiration by creating a humid microenvironment.                 |
 | **Rolled leaves**                   | Reduced surface area exposed to air; inner surface is protected.                            |
 | **Hairy/trichomes**               | Trap a layer of still humid air, reducing the transpiration gradient.                     |
-| **CAM photosynthesis**              | Stomata open at night (reducing transpiration); store $\mathrm{CO{}_2$ as malic acid.     |
+| **CAM photosynthesis**              | Stomata open at night (reducing transpiration); store $\mathrm{CO}_2$ as malic acid.     |
 | **Deep root systems**               | Access water deep underground.                                                          |
 | **Succulent water storage tissues**   | Store water in vacuoles; available during drought.                                       |
 | **Reduced leaf area**               | Fewer leaves = less surface area for transpiration.                                            |
@@ -885,11 +885,11 @@ Flower when the **night length is shorter than a critical duration** (i.e., days
 Examples: spinach, lettuce, radish, wheat, clover.
 
 **Mechanism:**
-- During the day, $\mathrm{P{}_{\mathrm{fr{}}$ accumulates (red light converts
-  $\mathrm{P{}_{\mathrm{r{}}$ to $\mathrm{P{}_{\mathrm{fr{}}$).
-- During a short night, not enough $\mathrm{P{}_{\mathrm{fr{}}$ reverts to
-  $\mathrm{P{}_{\mathrm{r{}}$ to drop below the critical level.
-- High $\mathrm{P{}_{\mathrm{fr{}}$ promotes the synthesis of a flowering hormone
+- During the day, $\mathrm{P}_{\mathrm{fr}}$ accumulates (red light converts
+  $\mathrm{P}_{\mathrm{r}}$ to $\mathrm{P}_{\mathrm{fr}}$).
+- During a short night, not enough $\mathrm{P}_{\mathrm{fr}}$ reverts to
+  $\mathrm{P}_{\mathrm{r}}$ to drop below the critical level.
+- High $\mathrm{P}_{\mathrm{fr}}$ promotes the synthesis of a flowering hormone
   (florigen).
 
 ### Short-Day Plants (SDP)
@@ -899,9 +899,9 @@ Flower when the **night length exceeds a critical duration** (i.e., days are sho
 Examples: chrysanthemum, poinsettia, soybean, strawberry.
 
 **Mechanism:**
-- During a long night, $\mathrm{P{}_{\mathrm{fr{}}$ reverts to $\mathrm{P{}_{\mathrm{r{}}$
+- During a long night, $\mathrm{P}_{\mathrm{fr}}$ reverts to $\mathrm{P}_{\mathrm{r}}$
   extensively.
-- Low $\mathrm{P{}_{\mathrm{fr{}}$ removes the inhibition of the flowering gene and
+- Low $\mathrm{P}_{\mathrm{fr}}$ removes the inhibition of the flowering gene and
   promotes florigen synthesis.
 
 ### Phytochrome Reversibility Experiments
@@ -909,10 +909,10 @@ Examples: chrysanthemum, poinsettia, soybean, strawberry.
 **Classic experiment (Borthwick and Hendricks, 1952):**
 
 - Short-day plants (chrysanthemums) exposed to a long night with a brief flash of **red light**
-  ($660\;\mathrm{nm{}$) at the midpoint: flowering is **inhibited** (red light creates
-  $\mathrm{P{}_{\mathrm{fr{}}$, shortening the perceived night length).
-- If the red flash is immediately followed by a **far-red flash** ($730\;\mathrm{nm{}$):
-  $\mathrm{P{}_{\mathrm{fr{}}$ is converted back to $\mathrm{P{}_{\mathrm{r{}}$, and flowering
+  ($660\;\mathrm{nm}$) at the midpoint: flowering is **inhibited** (red light creates
+  $\mathrm{P}_{\mathrm{fr}}$, shortening the perceived night length).
+- If the red flash is immediately followed by a **far-red flash** ($730\;\mathrm{nm}$):
+  $\mathrm{P}_{\mathrm{fr}}$ is converted back to $\mathrm{P}_{\mathrm{r}}$, and flowering
   **proceeds** (the far-red flash "cancels" the red flash).
 
 This demonstrated that the **last light exposure** determines the phytochrome state.
@@ -956,11 +956,11 @@ This demonstrated that the **last light exposure** determines the phytochrome st
 
 Describe the cohesion-tension theory of water transport in xylem, explaining how transpiration pull,
 cohesion, and adhesion contribute to the upward movement of water. Use Fick's law to explain why the
-rate of transpiration increases with wind speed. Explain why very tall trees (e.g., coast redwoods, $>100\;\mathrm{m{}$)
+rate of transpiration increases with wind speed. Explain why very tall trees (e.g., coast redwoods, $>100\;\mathrm{m}$)
 pose a challenge to the cohesion-tension theory and discuss how root pressure and capillary
 action contribute. Calculate whether capillary action alone can account for water transport in a
-$100\;\mathrm{m{}$ tall tree given a xylem vessel radius of $25\;\mathrm{\mu m{}$, surface tension
-$0.073\;\mathrm{N/m{}$, and contact angle $0^\circ$.
+$100\;\mathrm{m}$ tall tree given a xylem vessel radius of $25\;\mathrm{\mu m}$, surface tension
+$0.073\;\mathrm{N/m}$, and contact angle $0^\circ$.
 
 </details>
 
@@ -970,7 +970,7 @@ $0.073\;\mathrm{N/m{}$, and contact angle $0^\circ$.
 A researcher treats coleoptile sections with different concentrations of IAA and measures the
 increase in length after 24 hours in darkness:
 
-| IAA concentration ($\mathrm{mg/L{}$) | Length increase (mm) |
+| IAA concentration ($\mathrm{mg/L}$) | Length increase (mm) |
 | ----------------------------------- | ------------------- |
 | 0 (control)                           | 2                   |
 | 0.01                                | 5                   |
@@ -1000,7 +1000,7 @@ Discuss two pieces of experimental evidence that support this hypothesis.
 <summary>Problem 12: Quantitative -- Transpiration Rate Calculation</summary>
 
 A potometer experiment measures water uptake by a leafy shoot. The following data are collected
-at $25^\circ\mathrm{C{}$ and $50\%$ humidity:
+at $25^\circ\mathrm{C}$ and $50\%$ humidity:
 
 | Wind speed (m/s) | Water uptake (mL/h) |
 | ----------------- | ----------------- |
@@ -1012,11 +1012,11 @@ at $25^\circ\mathrm{C{}$ and $50\%$ humidity:
 | 5.0               | 22.0             |
 | 6.0               | 22.5             |
 
-The total leaf area is $120\;\mathrm{cm{}^2$. (a) Calculate the transpiration rate at each wind
-speed in $\mathrm{mmol\;H_2O/m^2/s{}$. (molar mass of water $= 18\;\mathrm{g/mol{}$; density
-$= 1\;\mathrm{g/mL{}$.) (b) Explain why the relationship between wind speed and transpiration rate
+The total leaf area is $120\;\mathrm{cm}^2$. (a) Calculate the transpiration rate at each wind
+speed in $\mathrm{mmol\;H_2O/m^2/s}$. (molar mass of water $= 18\;\mathrm{g/mol}$; density
+$= 1\;\mathrm{g/mL}$.) (b) Explain why the relationship between wind speed and transpiration rate
 is not linear at higher speeds (plateau). (c) Predict how the results would differ at
-$35^\circ\mathrm{C{}$ and $70\%$ humidity.
+$35^\circ\mathrm{C}$ and $70\%$ humidity.
 
 </details>
 
@@ -1026,11 +1026,11 @@ $35^\circ\mathrm{C{}$ and $70\%$ humidity.
 
 **Worked Example: Phloem Transport and Mass Flow Hypothesis**
 
-A source leaf produces sucrose at a rate of $5\;\mathrm{\mu mol/h{}$ and loads it into the phloem.
-The sieve tube has a radius of $15\;\mathrm{\mu m{}$ and the concentration difference between source
-and sink is $500\;\mathrm{mmol/L{}$ ($0.5\;\mathrm{mol/L{}$). (a) Explain the mass flow (pressure flow)
+A source leaf produces sucrose at a rate of $5\;\mathrm{\mu mol/h}$ and loads it into the phloem.
+The sieve tube has a radius of $15\;\mathrm{\mu m}$ and the concentration difference between source
+and sink is $500\;\mathrm{mmol/L}$ ($0.5\;\mathrm{mol/L}$). (a) Explain the mass flow (pressure flow)
 hypothesis of phloem transport. (b) Calculate the osmotic pressure difference using the van't Hoff
-equation ($\Pi = iCRT$) at $25^\circ\mathrm{C{}$. (c) Explain why phloem transport is bidirectional,
+equation ($\Pi = iCRT$) at $25^\circ\mathrm{C}$. (c) Explain why phloem transport is bidirectional,
 unlike xylem transport.
 
 <details>
@@ -1048,10 +1048,10 @@ unlike xylem transport.
    by osmosis and reducing the hydrostatic pressure at the sink.
 5. The pressure difference between source (high) and sink (low) maintains the flow.
 
-(b) $\Pi = iCRT$, where $i = 1$ (sucrose does not ionise), $C = 0.5\;\mathrm{mol/L{}$,
-$R = 8.314\;\mathrm{J/(mol \cdot K){}$, $T = 298\;\mathrm{K{}$.
+(b) $\Pi = iCRT$, where $i = 1$ (sucrose does not ionise), $C = 0.5\;\mathrm{mol/L}$,
+$R = 8.314\;\mathrm{J/(mol \cdot K)}$, $T = 298\;\mathrm{K}$.
 
-$\Pi = 1 \times 0.5 \times 8.314 \times 298 = 1238\;\mathrm{kPa{} = 12.4\;\mathrm{atm{}$.
+$\Pi = 1 \times 0.5 \times 8.314 \times 298 = 1238\;\mathrm{kPa} = 12.4\;\mathrm{atm}$.
 
 This osmotic pressure difference drives water uptake at the source and contributes to the pressure
 gradient for mass flow.
@@ -1067,39 +1067,39 @@ which only operate in one direction.
 
 **Worked Example: Mineral Ion Uptake and Active Transport**
 
-A plant root absorbs nitrate ($\mathrm{NO{}_3^-$) from a soil solution containing $2.0\;\mathrm{mmol/L{}$
-$\mathrm{NO{}_3^-$. The root cell cytoplasm has a $\mathrm{NO{}_3^-$ concentration of $50\;\mathrm{mmol/L{}$.
-The membrane potential is $-120\;\mathrm{mV{}$ (inside negative). (a) Calculate the equilibrium potential
-for $\mathrm{NO{}_3^-$ at $25^\circ\mathrm{C{}$. (b) Calculate the electrochemical driving force. (c) In
+A plant root absorbs nitrate ($\mathrm{NO}_3^-$) from a soil solution containing $2.0\;\mathrm{mmol/L}$
+$\mathrm{NO}_3^-$. The root cell cytoplasm has a $\mathrm{NO}_3^-$ concentration of $50\;\mathrm{mmol/L}$.
+The membrane potential is $-120\;\mathrm{mV}$ (inside negative). (a) Calculate the equilibrium potential
+for $\mathrm{NO}_3^-$ at $25^\circ\mathrm{C}$. (b) Calculate the electrochemical driving force. (c) In
 which direction does the driving force act? (d) What type of transport is required for nitrate uptake?
 
 <details>
 <summary>Solution</summary>
 
-(a) $E_{\mathrm{NO{}_3} = \frac{RT}{zF}\ln\frac{[\mathrm{NO{}_3^-]_{out}}{[\mathrm{NO{}_3^-]_{in}}$
+(a) $E_{\mathrm{NO}_3} = \frac{RT}{zF}\ln\frac{[\mathrm{NO}_3^-]_{out}}{[\mathrm{NO}_3^-]_{in}}$
 $= \frac{0.0267}{-1}\ln\frac{2.0}{50.0}$
 $= -0.0267 \times \ln(0.04)$
 $= -0.0267 \times (-3.219)$
-$= +85.9\;\mathrm{mV{}$
+$= +85.9\;\mathrm{mV}$
 
-(b) Driving force $= V_m - E_{\mathrm{ion{}} = -120 - 85.9 = -205.9\;\mathrm{mV{}$.
+(b) Driving force $= V_m - E_{\mathrm{ion}} = -120 - 85.9 = -205.9\;\mathrm{mV}$.
 
-(c) The negative driving force means the electrochemical gradient favours $\mathrm{NO{}_3^-$ uptake
+(c) The negative driving force means the electrochemical gradient favours $\mathrm{NO}_3^-$ uptake
 (into the cell, against the concentration gradient but aided by the membrane potential). Wait -- the
 concentration gradient favours efflux ($50$ inside vs $2$ outside), but the electrical gradient
-(attracting the negative $\mathrm{NO{}_3^-$ into the negatively charged cell) is very strong.
+(attracting the negative $\mathrm{NO}_3^-$ into the negatively charged cell) is very strong.
 
-Let me recalculate: the net electrochemical potential for $\mathrm{NO{}_3^-$ inside the cell is
-$\Delta\mu = zF(V_m - E_{\mathrm{ion{}}) = (-1) \times F \times (-205.9\;\mathrm{mV{}) = +205.9\;\mathrm{mV{}$.
+Let me recalculate: the net electrochemical potential for $\mathrm{NO}_3^-$ inside the cell is
+$\Delta\mu = zF(V_m - E_{\mathrm{ion}}) = (-1) \times F \times (-205.9\;\mathrm{mV}) = +205.9\;\mathrm{mV}$.
 This positive value means the ion is more stable inside; uptake is favoured by the electrical gradient
-but opposed by the concentration gradient. The net effect: the electrical gradient ($-120\;\mathrm{mV{}$
-attracting $\mathrm{NO{}_3^-$) outweighs the concentration gradient (favouring efflux).
+but opposed by the concentration gradient. The net effect: the electrical gradient ($-120\;\mathrm{mV}$
+attracting $\mathrm{NO}_3^-$) outweighs the concentration gradient (favouring efflux).
 
-(d) Since nitrate is being accumulated against its concentration gradient (from $2$ to $50\;\mathrm{mmol/L{}$),
+(d) Since nitrate is being accumulated against its concentration gradient (from $2$ to $50\;\mathrm{mmol/L}$),
 **active transport** is required. Specifically, nitrate is taken up by nitrate transporters (NRT1 and NRT2
-families) that use the proton gradient ($\mathrm{H{}^+$ co-transport): nitrate enters the cell together
+families) that use the proton gradient ($\mathrm{H}^+$ co-transport): nitrate enters the cell together
 with protons (symport), driven by the proton electrochemical gradient maintained by the plasma membrane
-$\mathrm{H{}^+$-ATPase (primary active transport).
+$\mathrm{H}^+$-ATPase (primary active transport).
 
 </details>
 
@@ -1109,27 +1109,27 @@ A short-day plant (SDP) flowers when the night length exceeds a critical dark pe
 A long-day plant (LDP) flowers when the night length is less than a critical dark period of $10$ hours.
 (a) On June 21 (summer solstice, day length $= 15$ hours at a temperate latitude), will each plant flower?
 (b) On December 21 (winter solstice, day length $= 9$ hours), will each plant flower? (c) A SDP is
-given a $15$-hour night with a 10-minute flash of red light ($660\;\mathrm{nm{}$) in the middle of the
+given a $15$-hour night with a 10-minute flash of red light ($660\;\mathrm{nm}$) in the middle of the
 dark period. Will it flower? (d) If the red flash is followed immediately by far-red light
-($730\;\mathrm{nm{}$), will it flower?
+($730\;\mathrm{nm}$), will it flower?
 
 <details>
 <summary>Solution</summary>
 
-(a) June 21: day $= 15\;\mathrm{h{}$, night $= 9\;\mathrm{h{}$.
-- SDP: critical dark period $= 12\;\mathrm{h{}$. Night $= 9\;\mathrm{h{} < 12\;\mathrm{h{}$. **No flowering.**
-- LDP: critical dark period $= 10\;\mathrm{h{}$. Night $= 9\;\mathrm{h{} < 10\;\mathrm{h{}$. **Flowering.**
+(a) June 21: day $= 15\;\mathrm{h}$, night $= 9\;\mathrm{h}$.
+- SDP: critical dark period $= 12\;\mathrm{h}$. Night $= 9\;\mathrm{h} < 12\;\mathrm{h}$. **No flowering.**
+- LDP: critical dark period $= 10\;\mathrm{h}$. Night $= 9\;\mathrm{h} < 10\;\mathrm{h}$. **Flowering.**
 
-(b) December 21: day $= 9\;\mathrm{h{}$, night $= 15\;\mathrm{h{}$.
-- SDP: night $= 15\;\mathrm{h{} > 12\;\mathrm{h{}$. **Flowering.**
-- LDP: night $= 15\;\mathrm{h{} > 10\;\mathrm{h{}$. **No flowering.**
+(b) December 21: day $= 9\;\mathrm{h}$, night $= 15\;\mathrm{h}$.
+- SDP: night $= 15\;\mathrm{h} > 12\;\mathrm{h}$. **Flowering.**
+- LDP: night $= 15\;\mathrm{h} > 10\;\mathrm{h}$. **No flowering.**
 
 (c) The red flash in the middle of the dark period converts $\mathrm{P_{fr}}$ (the active form of
-phytochrome) from $\mathrm{P_r{}$. This interrupts the dark period -- the plant perceives the $15$-hour
-night as two shorter nights ($7.5\;\mathrm{h{}$ each), both below the critical dark period.
+phytochrome) from $\mathrm{P_r}$. This interrupts the dark period -- the plant perceives the $15$-hour
+night as two shorter nights ($7.5\;\mathrm{h}$ each), both below the critical dark period.
 **No flowering** in the SDP.
 
-(d) Far-red light converts $\mathrm{P_{fr}}$ back to $\mathrm{P_r{}$. If the red flash is immediately
+(d) Far-red light converts $\mathrm{P_{fr}}$ back to $\mathrm{P_r}$. If the red flash is immediately
 followed by far-red, the net effect is as if no flash occurred (the phytochrome system is reversed).
 **The plant flowers** (the dark period is perceived as continuous).
 
@@ -1140,7 +1140,7 @@ This is the classic **red/far-red reversible** phytochrome response, discovered 
 
 **Worked Example: Translocation of Auxin and Apical Dominance**
 
-A researcher applies radioactive IAA ($^{14}\mathrm{C{}$-labelled auxin) to the tip of a shoot and
+A researcher applies radioactive IAA ($^{14}\mathrm{C}$-labelled auxin) to the tip of a shoot and
 measures its distribution after $24$ hours. The results show that most of the radioactivity is
 concentrated in the stem below the apex, with very little in the lateral buds. (a) Explain the
 polar (basipetal) transport of auxin. (b) Explain the mechanism of apical dominance. (c) If the
@@ -1182,27 +1182,27 @@ This experiment confirms that auxin is the signal responsible for apical dominan
 **Worked Example: Seed Germination and Gibberellins**
 
 A seed of barley (_Hordeum vulgare_) is germinating. The aleurone layer produces amylase in response
-to gibberellic acid ($\mathrm{GA{}_3$) from the embryo. (a) Describe the signal transduction pathway
-from $\mathrm{GA{}_3$ perception to amylase gene expression. (b) Calculate the rate of starch
-breakdown if the amylase produces $0.5\;\mathrm{mg{}$ of maltose per minute from a starch substrate.
-How long would it take to break down $500\;\mathrm{mg{}$ of starch? (c) Explain why this mechanism
+to gibberellic acid ($\mathrm{GA}_3$) from the embryo. (a) Describe the signal transduction pathway
+from $\mathrm{GA}_3$ perception to amylase gene expression. (b) Calculate the rate of starch
+breakdown if the amylase produces $0.5\;\mathrm{mg}$ of maltose per minute from a starch substrate.
+How long would it take to break down $500\;\mathrm{mg}$ of starch? (c) Explain why this mechanism
 is important in brewing.
 
 <details>
 <summary>Solution</summary>
 
 (a) GA signal transduction in barley aleurone cells:
-1. $\mathrm{GA{}_3$ diffuses from the embryo to the aleurone layer.
-2. $\mathrm{GA{}_3$ binds to its receptor (GID1) in the aleurone cell cytoplasm.
+1. $\mathrm{GA}_3$ diffuses from the embryo to the aleurone layer.
+2. $\mathrm{GA}_3$ binds to its receptor (GID1) in the aleurone cell cytoplasm.
 3. The GA-GID1 complex interacts with DELLA repressor proteins, promoting their ubiquitination by the
-   SCF ubiquitin ligase complex and subsequent degradation by the $26\mathrm{S{}$ proteasome.
+   SCF ubiquitin ligase complex and subsequent degradation by the $26\mathrm{S}$ proteasome.
 4. DELLA proteins normally repress the transcription factor GAMYB. Their degradation releases GAMYB.
 5. GAMYB binds to the promoter of amylase genes (e.g., high-pI and low-pI $\alpha$-amylase) and activates
    their transcription.
 6. Amylase mRNA is translated, and amylase is secreted into the endosperm, where it hydrolyses starch
    to maltose (a disaccharide).
 
-(b) Rate $= 0.5\;\mathrm{mg/min{}$. Time for $500\;\mathrm{mg{}$: $500 / 0.5 = 1000\;\mathrm{min{} = 16.7\;\mathrm{h{}$.
+(b) Rate $= 0.5\;\mathrm{mg/min}$. Time for $500\;\mathrm{mg}$: $500 / 0.5 = 1000\;\mathrm{min} = 16.7\;\mathrm{h}$.
 
 Note: in practice, amylase activity is not linear indefinitely. As the starch is depleted, the rate
 slows (substrate limitation), and product inhibition (maltose inhibits amylase) further reduces the rate.
@@ -1234,9 +1234,9 @@ slows (substrate limitation), and product inhibition (maltose inhibits amylase) 
 - **Assuming all plant hormones act independently**: plant hormones interact in complex ways. For example,
   auxin and cytokinin interact to control organogenesis (high auxin:cytokinin ratio promotes roots;
   low ratio promotes shoots).
-- **Confusing $\mathrm{P{}_r$ and $\mathrm{P{}_{fr}$**: $\mathrm{P{}_r$ (red-absorbing) is the inactive
-  form; $\mathrm{P{}_{fr}$ (far-red-absorbing) is the biologically active form. Red light converts
-  $\mathrm{P{}_r$ to $\mathrm{P{}_{fr}$; far-red light converts $\mathrm{P{}_{fr}$ back to $\mathrm{P{}_r$.
+- **Confusing $\mathrm{P}_r$ and $\mathrm{P}_{fr}$**: $\mathrm{P}_r$ (red-absorbing) is the inactive
+  form; $\mathrm{P}_{fr}$ (far-red-absorbing) is the biologically active form. Red light converts
+  $\mathrm{P}_r$ to $\mathrm{P}_{fr}$; far-red light converts $\mathrm{P}_{fr}$ back to $\mathrm{P}_r$.
 - **Forgetting that transpiration rate depends on the vapour pressure deficit**, not just temperature:
   humidity is equally important. High humidity (low vapour pressure deficit) reduces transpiration even
   at high temperatures.
@@ -1261,7 +1261,7 @@ is the accepted explanation for water movement in plants.
 (a) **Lignin**: xylem vessels are heavily lignified (impregnated with lignin, a complex polymer of
 phenolic compounds). Lignin provides:
 - Mechanical strength and rigidity, preventing collapse of the vessel under the large negative tension
-  (up to $-2\;\mathrm{MPa{}$) generated by transpiration pull.
+  (up to $-2\;\mathrm{MPa}$) generated by transpiration pull.
 - Waterproofing, making the vessel walls impermeable to water (so water moves through the lumen, not
   the walls).
 - Protection against pathogens and decay (lignin is resistant to enzymatic degradation).
@@ -1269,7 +1269,7 @@ phenolic compounds). Lignin provides:
 (b) **Vessel diameter**: wider vessels offer less resistance to flow (Poiseuille's law: flow rate is
 proportional to $r^4$). However, wider vessels are more vulnerable to cavitation (air bubble formation)
 and collapse. Plants balance efficiency (wide vessels) and safety (narrow vessels, tracheids). Vessels
-in tropical vines can be $>500\;\mathrm{\mu m{}$ wide; in cold climates, vessels are narrower to reduce
+in tropical vines can be $>500\;\mathrm{\mu m}$ wide; in cold climates, vessels are narrower to reduce
 freezing-induced cavitation.
 
 (c) **Bordered pits**: thin areas in the vessel wall where lignification is reduced. They allow lateral
@@ -1279,9 +1279,9 @@ to adjacent vessels, containing the damage. This is called **air-seeding** preve
 
 (d) **Capillary action**: the narrow diameter of xylem vessels and tracheids creates a meniscus at the
 air-water interface. Adhesion of water to the hydrophilic vessel walls and cohesion between water
-molecules generates a capillary force that can raise water by approximately $0.5$--$1\;\mathrm{m{}$
+molecules generates a capillary force that can raise water by approximately $0.5$--$1\;\mathrm{m}$
 (depending on vessel diameter). While capillary action contributes to water rise in small plants,
-it is insufficient to explain water transport in tall trees ($>10\;\mathrm{m{}$). The main driving force
+it is insufficient to explain water transport in tall trees ($>10\;\mathrm{m}$). The main driving force
 is transpiration pull.
 
 (e) **Cohesion-tension theory** (Dixon and Joly, 1894):
@@ -1296,7 +1296,7 @@ is transpiration pull.
 
 Evidence: xylem sap is under negative pressure (measured with pressure chambers); cutting a stem causes
 air to be drawn in (demonstrating tension); the system can transport water to the top of the tallest
-trees ($>100\;\mathrm{m{}$).
+trees ($>100\;\mathrm{m}$).
 
 </details>
 
@@ -1382,10 +1382,10 @@ including the role of specific hormones and osmoprotectants.
 (a) **Water stress (drought)**:
 - **Stomatal closure**: ABA (abscisic acid) is produced in roots (in response to low soil water potential)
   and leaves (in response to low turgor). ABA binds to receptors on guard cells, causing:
-  - Efflux of $\mathrm{K{}^+$ and $\mathrm{Cl{}^-$ from guard cells (through ion channels).
+  - Efflux of $\mathrm{K}^+$ and $\mathrm{Cl}^-$ from guard cells (through ion channels).
   - Loss of water by osmosis from guard cells.
   - Guard cells become flaccid, closing the stomatal pore.
-  This reduces transpiration and water loss but also reduces $\mathrm{CO{}_2$ uptake and photosynthesis.
+  This reduces transpiration and water loss but also reduces $\mathrm{CO}_2$ uptake and photosynthesis.
 - **Root-to-shoot ratio increase**: drought stimulates root growth over shoot growth, improving water
   uptake capacity.
 - **Osmotic adjustment**: accumulation of compatible solutes (proline, glycine betaine, trehalose,
@@ -1395,13 +1395,13 @@ including the role of specific hormones and osmoprotectants.
   exposed surface area), leaf abscission (in severe drought).
 
 (b) **Salinity**:
-- **Problem**: high $\mathrm{Na{}^+$ and $\mathrm{Cl{}^-$ concentrations in soil lower the water
-  potential, making water uptake difficult (physiological drought). $\mathrm{Na{}^+$ is also toxic to
+- **Problem**: high $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ concentrations in soil lower the water
+  potential, making water uptake difficult (physiological drought). $\mathrm{Na}^+$ is also toxic to
   enzymes at high concentrations.
-- **Ion exclusion**: roots actively exclude $\mathrm{Na{}^+$ by the SOS1 $\mathrm{Na{}^+/H^+$ antiporter
-  on the plasma membrane, pumping $\mathrm{Na{}^+$ out of root cells.
-- **Ion compartmentalisation**: $\mathrm{Na{}^+$ is sequestered in vacuoles by the tonoplast
-  $\mathrm{Na{}^+/H^+$ antiporter (NHX), keeping it away from cytoplasmic enzymes.
+- **Ion exclusion**: roots actively exclude $\mathrm{Na}^+$ by the SOS1 $\mathrm{Na}^+/H^+$ antiporter
+  on the plasma membrane, pumping $\mathrm{Na}^+$ out of root cells.
+- **Ion compartmentalisation**: $\mathrm{Na}^+$ is sequestered in vacuoles by the tonoplast
+  $\mathrm{Na}^+/H^+$ antiporter (NHX), keeping it away from cytoplasmic enzymes.
 - **Salt glands**: some halophytes (salt-tolerant plants) have specialised salt glands that excrete
   excess salt onto the leaf surface, where it crystallises.
 - **Compatible solutes**: accumulation of proline, glycine betaine, and polyols for osmotic adjustment.
@@ -1413,13 +1413,13 @@ including the role of specific hormones and osmoprotectants.
     molecular chaperones, preventing protein denaturation and assisting in refolding damaged proteins.
   - **Membrane fluidity**: membranes become too fluid at high temperatures. Plants adjust lipid
     composition (increase saturated fatty acids) to maintain optimal membrane fluidity.
-  - **Evaporative cooling**: transpiration cools the leaf (approximately $2^\circ\mathrm{C{}$ below
+  - **Evaporative cooling**: transpiration cools the leaf (approximately $2^\circ\mathrm{C}$ below
     air temperature).
 - **Cold stress**:
   - **Membrane fluidity**: membranes become too rigid at low temperatures. Plants increase the
     proportion of unsaturated fatty acids (more double bonds, creating kinks) to maintain fluidity.
   - **Antifreeze proteins**: some plants produce proteins that inhibit ice crystal growth.
-  - **Supercooling**: some cells can remain liquid below $0^\circ\mathrm{C{}$ by accumulating solutes
+  - **Supercooling**: some cells can remain liquid below $0^\circ\mathrm{C}$ by accumulating solutes
     that depress the freezing point.
   - **Cold acclimation (hardening)**: exposure to gradually decreasing temperatures triggers
     changes in gene expression (via CBF/DREB transcription factors), increasing tolerance to
@@ -1460,7 +1460,7 @@ toward the base. This directional transport is essential for its role in tropism
 
 **Functions**:
 - **Cell elongation**: auxin stimulates cell elongation in the shoot by activating proton pumps
-  ($\mathrm{H{}^+$-ATPases) on the plasma membrane. The resulting acidification of the cell wall
+  ($\mathrm{H}^+$-ATPases) on the plasma membrane. The resulting acidification of the cell wall
   activates expansins (proteins that loosen cross-links between cellulose microfibrils), allowing
   the wall to stretch under turgor pressure (the **acid growth hypothesis**).
 - **Apical dominance**: auxin produced by the apical bud suppresses lateral bud growth (see worked
@@ -1521,7 +1521,7 @@ than cells on the lit side, causing the shoot to bend toward light.
 
 **Functions**:
 - **Stomatal closure**: ABA is the primary hormone responsible for closing stomata during water
-  stress. It binds to receptors on guard cell membranes, triggering $\mathrm{K{}^+$ efflux,
+  stress. It binds to receptors on guard cell membranes, triggering $\mathrm{K}^+$ efflux,
   loss of turgor, and stomatal closure.
 - **Seed dormancy**: ABA maintains seed dormancy by inhibiting germination. High ABA levels
   during seed development prevent premature germination. Dormancy is broken when ABA levels
@@ -1529,7 +1529,7 @@ than cells on the lit side, causing the shoot to bend toward light.
 - **Stress responses**: ABA mediates responses to drought, salinity, and cold stress by
   activating stress-responsive genes (via AREB/ABF transcription factors).
 
-### Ethylene ($\mathrm{C{}_2\mathrm{H{}_4$)
+### Ethylene ($\mathrm{C}_2\mathrm{H}_4$)
 
 **Site of synthesis**: ripening fruits, senescing tissues, stressed tissues.
 

@@ -574,8 +574,8 @@ This paper tests problem-solving and mathematical reasoning on HL extension mate
 
 | Mistake                                    | Correction                                                                      |
 | :----------------------------------------- | :------------------------------------------------------------------------------ |
-| $P(A \mathrm{ or {} B) = P(A) + P(B)$       | Only if mutually exclusive; otherwise $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| $P(A \mathrm{ and {} B) = P(A) \times P(B)$ | Only if independent; otherwise use conditional probability                      |
+| $P(A \mathrm{ or } B) = P(A) + P(B)$       | Only if mutually exclusive; otherwise $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| $P(A \mathrm{ and } B) = P(A) \times P(B)$ | Only if independent; otherwise use conditional probability                      |
 | Confusing $\mu$ and $\bar{x}$              | $\mu$ is the population mean; $\bar{x}$ is the sample mean                      |
 
 ---
@@ -652,7 +652,7 @@ If you get this wrong, revise: Arithmetic series formula $S_n = n(u_1 + u_n)/2$ 
 
 - Let $y = \dfrac{2x + 1}{x - 3}$. Rearranging: $y(x - 3) = 2x + 1 \implies yx - 3y = 2x + 1$
 - $x(y - 2) = 3y + 1 \implies x = \dfrac{3y + 1}{y - 2}$
-- For $x$ to be real, $y \neq 2$. Therefore $\mathrm{range{} = \mathbb{'\{'}R{'\}'} \setminus \\{2\\}$.
+- For $x$ to be real, $y \neq 2$. Therefore $\mathrm{range} = \mathbb{'\{'}R{'\}'} \setminus \\{2\\}$.
 
 If you get this wrong, revise: Finding range of rational functions by rearranging (Topic 2).
 

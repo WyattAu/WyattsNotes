@@ -26,9 +26,9 @@ The World Bank classifies countries by GNI per capita (2023 thresholds): low inc
 
 **Human Development Index (HDI).** Created by the UN Development Programme (UNDP), the HDI combines three dimensions:
 
-$$\mathrm{HDI{} = \frac{I_{\mathrm{health{}} + I_{\mathrm{education{}} + I_{\mathrm{income{}}}{3}$$
+$$\mathrm{HDI} = \frac{I_{\mathrm{health}} + I_{\mathrm{education}} + I_{\mathrm{income}}}{3}$$
 
-where $I_{\mathrm{health{}}$ is measured by life expectancy at birth, $I_{\mathrm{education{}}$ is measured by mean years of schooling and expected years of schooling, and $I_{\mathrm{income{}}$ is measured by GNI per capita (PPP).
+where $I_{\mathrm{health}}$ is measured by life expectancy at birth, $I_{\mathrm{education}}$ is measured by mean years of schooling and expected years of schooling, and $I_{\mathrm{income}}$ is measured by GNI per capita (PPP).
 
 HDI scores range from 0 to 1. Countries are classified as: very high HDI ($\geq{0.800}$), high HDI ($0.700$--$0.799$), medium HDI ($0.550$--$0.699$), and low HDI ($\lt{0.550}$). Norway (HDI $0.966$) and Switzerland ($0.962$) consistently rank at the top; South Sudan (HDI $0.385$) and Chad ($0.394$) rank at the bottom.
 

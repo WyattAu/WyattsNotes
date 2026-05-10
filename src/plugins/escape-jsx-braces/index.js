@@ -2,20 +2,45 @@
  * Remark plugin to escape curly braces that MDX interprets as JSX expressions.
  *
  * MDX parses {Word} as JSX before remark-math can process LaTeX math.
- * This plugin replaces { and } with their escaped versions in non-code content,
- * then the MDX processor renders them as literal braces.
+ * This plugin handles TWO cases:
  *
- * The escape sequence is: \{ → {'\\{'} and \} → {'\\}'}
- * MDX processes {'{'} as the string "{" and {'}'} as "}".
+ * 1. Text nodes: { and } still present as literal characters (MDX didn't parse
+ *    them as JSX because they were in certain contexts). Replace with \{ \}
+ *    which KaTeX renders as literal braces.
+ *
+ * 2. mdxJsxTextExpression nodes: MDX already consumed {expr} as a JSX
+ *    expression node. Replace the node with a text node containing \{expr\}
+ *    so remark-math/KaTeX sees the braces as LaTeX group delimiters.
+ *
+ * Case 2 is critical: without it, {HK} becomes a React variable reference
+ * at build time, causing ReferenceError during static site generation.
  */
 const visit = require('unist-util-visit');
-const escapeOpeningBrace = (text) => text.replace(/\{/g, "{'\\{'}");
-const escapeClosingBrace = (text) => text.replace(/\}/g, "{'\\}'}");
 
 module.exports = function escapeJsxBraces() {
-  return (tree) => {
+  return (tree, vfile) => {
+    // Collect mdxJsxTextExpression nodes to replace (can't modify during visit)
+    const replacements = [];
+
+    visit(tree, 'mdxJsxTextExpression', (node, index, parent) => {
+      if (parent && typeof index === 'number') {
+        replacements.push({ parent, index, node });
+      }
+    });
+
+    // Replace mdxJsxTextExpression nodes with text nodes containing \{...\}
+    for (const { parent, index, node } of replacements) {
+      const expr = node.value || '';
+      // Replace with text node: \{expr\} renders as {expr} in KaTeX
+      parent.children.splice(index, 1, {
+        type: 'text',
+        value: '\\{' + expr + '\\}',
+      });
+    }
+
+    // Also escape remaining literal braces in text nodes
     visit(tree, 'text', (node) => {
-      node.value = escapeOpeningBrace(escapeClosingBrace(node.value));
+      node.value = node.value.replace(/\{/g, '\\{').replace(/\}/g, '\\}');
     });
   };
 };

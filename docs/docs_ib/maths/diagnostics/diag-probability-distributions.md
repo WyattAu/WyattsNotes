@@ -43,7 +43,7 @@ For the die rolls:
 
 The claim is correct.
 
-**(b)** For $X \sim \mathrm{Bin{}(20, 0.5)$:
+**(b)** For $X \sim \mathrm{Bin}(20, 0.5)$:
 
 $$P(X = 10) = \binom{20}{10}\left(\frac{1}{2}\right)^{20} = \frac{184756}{1048576} \approx 0.176$$
 
@@ -54,7 +54,7 @@ The mode of a binomial distribution is $\lfloor (n+1)p \rfloor$. Here $\lfloor 2
 2. Independent draws with replacement. (Yes)
 3. Two outcomes: heart or not-heart. (Yes)
 
-The claim is correct. $X \sim \mathrm{Bin{}(20, \frac{1}{4})$.
+The claim is correct. $X \sim \mathrm{Bin}(20, \frac{1}{4})$.
 
 ---
 
@@ -64,7 +64,7 @@ The claim is correct. $X \sim \mathrm{Bin{}(20, \frac{1}{4})$.
 
 The heights of men in a population follow $N(175, 8)$.
 
-**(a)** Find the probability that a randomly selected man is taller than $185\,\mathrm{cm{}$.
+**(a)** Find the probability that a randomly selected man is taller than $185\,\mathrm{cm}$.
 
 **(b)** A student computes $P(X \gt 185) = P\!\left(Z \gt \frac{185 - 175}{8}\right) = P(Z \gt 1.25)$ and looks up $P(Z \gt 1.25) = 0.8944$. A second student claims the answer should be $1 - 0.8944 = 0.1056$. Who is correct?
 
@@ -82,7 +82,7 @@ From standard normal tables: $\Phi(1.25) = 0.8944$.
 
 $$P(X \gt 185) = 1 - 0.8944 = 0.1056$$
 
-**(b)** The second student is correct. The student who got $0.8944$ looked up $P(Z \lt 1.25)$, which gives the probability of being **shorter** than $185\,\mathrm{cm{}$, not taller. The question asks for $P(X \gt 185)$, so the answer is $1 - 0.8944 = 0.1056$.
+**(b)** The second student is correct. The student who got $0.8944$ looked up $P(Z \lt 1.25)$, which gives the probability of being **shorter** than $185\,\mathrm{cm}$, not taller. The question asks for $P(X \gt 185)$, so the answer is $1 - 0.8944 = 0.1056$.
 
 ---
 
@@ -92,7 +92,7 @@ $$P(X \gt 185) = 1 - 0.8944 = 0.1056$$
 
 A call centre receives an average of 2 calls per minute. Find the probability of receiving exactly 5 calls in a one-minute period using the Poisson approximation to the binomial distribution.
 
-A student claims this follows $\mathrm{Poi{}(2)$ directly without justification.
+A student claims this follows $\mathrm{Poi}(2)$ directly without justification.
 
 **(a)** Explain what assumptions must be verified.
 
@@ -109,7 +109,7 @@ A student claims this follows $\mathrm{Poi{}(2)$ directly without justification.
 
 For the call centre, if we model each second as a Bernoulli trial with $p = \frac{2}{60} = \frac{1}{30}$ and $n = 60$, then $np = 2$. The conditions are satisfied since $n = 60 \geq 50$, $p = \frac{1}{30} \lt 0.1$, and $np = 2 \leq 15$.
 
-However, the student's claim that this is "directly $\mathrm{Poi{}(2)$" is incomplete — the Poisson is an approximation that must be justified.
+However, the student's claim that this is "directly $\mathrm{Poi}(2)$" is incomplete — the Poisson is an approximation that must be justified.
 
 **(b)** With $\lambda = np = 200 \times 0.01 = 2$:
 
@@ -133,9 +133,9 @@ The approximation is very close, with relative error less than $0.3\%$.
 
 The weights of apples from orchard $A$ follow $N(150, 12)$ and from orchard $B$ follow $N(140, 15)$. A bag contains 3 apples from orchard $A$ and 2 apples from orchard $B$.
 
-**(a)** Find the probability that the total weight of the bag exceeds $750\,\mathrm{g{}$.
+**(a)** Find the probability that the total weight of the bag exceeds $750\,\mathrm{g}$.
 
-**(b)** A student claims that since the apples are independent, the total weight is simply $3 \times 150 + 2 \times 140 = 730\,\mathrm{g{}$ and the probability of exceeding $750\,\mathrm{g{}$ is $50\%$ since $750$ is close to the mean. Explain why this reasoning is wrong.
+**(b)** A student claims that since the apples are independent, the total weight is simply $3 \times 150 + 2 \times 140 = 730\,\mathrm{g}$ and the probability of exceeding $750\,\mathrm{g}$ is $50\%$ since $750$ is close to the mean. Explain why this reasoning is wrong.
 
 [Difficulty: hard. Combines linear combinations of normal distributions with probability calculations.]
 
@@ -149,7 +149,7 @@ Since the apples are independent:
 
 $$E(T) = 3(150) + 2(140) = 450 + 280 = 730$$
 
-$$\mathrm{Var{}(T) = 3(12^2) + 2(15^2) = 3(144) + 2(225) = 432 + 450 = 882$$
+$$\mathrm{Var}(T) = 3(12^2) + 2(15^2) = 3(144) + 2(225) = 432 + 450 = 882$$
 
 $$T \sim N(730, \sqrt{882}) \approx N(730, 29.7)$$
 
@@ -157,4 +157,4 @@ $$P(T \gt 750) = P\!\left(Z \gt \frac{750 - 730}{\sqrt{882}}\right) = P\!\left(Z
 
 $$= 1 - \Phi(0.673) \approx 1 - 0.7495 = 0.2505$$
 
-**(b)** The student's error is confusing the mean with the distribution. While the mean total weight is indeed $730\,\mathrm{g{}$, the total weight is a random variable with spread (standard deviation $\approx 29.7\,\mathrm{g{}$). The probability of exceeding $750\,\mathrm{g{}$ is not $50\%$ — it is approximately $25\%$. The student failed to account for the variance of the sum. The probability is $50\%$ only at the mean ($730\,\mathrm{g{}$), not at $750\,\mathrm{g{}$.
+**(b)** The student's error is confusing the mean with the distribution. While the mean total weight is indeed $730\,\mathrm{g}$, the total weight is a random variable with spread (standard deviation $\approx 29.7\,\mathrm{g}$). The probability of exceeding $750\,\mathrm{g}$ is not $50\%$ — it is approximately $25\%$. The student failed to account for the variance of the sum. The probability is $50\%$ only at the mean ($730\,\mathrm{g}$), not at $750\,\mathrm{g}$.

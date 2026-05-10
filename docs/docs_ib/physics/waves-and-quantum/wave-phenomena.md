@@ -49,12 +49,12 @@ For a string of length $L$ fixed at both ends:
 where $v = \sqrt{\dfrac{T}{\mu}}$ is the wave speed on the string, $T$ is the tension, and $\mu$ is
 the mass per unit length.
 
-**Example.** A string of length $0.75\,\mathrm{m{}$ has a fundamental frequency of $220\,\mathrm{Hz{}$.
+**Example.** A string of length $0.75\,\mathrm{m}$ has a fundamental frequency of $220\,\mathrm{Hz}$.
 Find the frequency of the 3rd harmonic and the wave speed.
 
-$$f_3 = 3 \times 220 = 660\,\mathrm{Hz{}$$
+$$f_3 = 3 \times 220 = 660\,\mathrm{Hz}$$
 
-$$v = 2Lf_1 = 2(0.75)(220) = 330\,\mathrm{m/s{}$$
+$$v = 2Lf_1 = 2(0.75)(220) = 330\,\mathrm{m/s}$$
 
 ### Standing Waves in Pipes
 
@@ -66,7 +66,7 @@ All harmonics are present.
 
 **Closed pipe** (closed at one end): node at the closed end, antinode at the open end.
 
-$$f_n = \frac{nv}{4L}, \qquad n = 1, 3, 5, \ldots \mathrm{(odd\ harmonics\ only){}$$
+$$f_n = \frac{nv}{4L}, \qquad n = 1, 3, 5, \ldots \mathrm{(odd\ harmonics\ only)}$$
 
 Only odd harmonics are produced. The fundamental has wavelength $\lambda_1 = 4L$.
 
@@ -131,14 +131,14 @@ $$f' = f \cdot \frac{v \pm v_o}{v \mp v_s}$$
 
 Upper signs when moving towards each other, lower signs when moving apart.
 
-**Example.** An ambulance with siren at $800\,\mathrm{Hz{}$ travels at $30\,\mathrm{m/s{}$ towards a
-stationary observer. Speed of sound = $343\,\mathrm{m/s{}$.
+**Example.** An ambulance with siren at $800\,\mathrm{Hz}$ travels at $30\,\mathrm{m/s}$ towards a
+stationary observer. Speed of sound = $343\,\mathrm{m/s}$.
 
-$$f' = \frac{343}{343 - 30} \times 800 = \frac{343}{313} \times 800 \approx 877\,\mathrm{Hz{}$$
+$$f' = \frac{343}{343 - 30} \times 800 = \frac{343}{313} \times 800 \approx 877\,\mathrm{Hz}$$
 
 As the ambulance passes and moves away:
 
-$$f' = \frac{343}{343 + 30} \times 800 = \frac{343}{373} \times 800 \approx 736\,\mathrm{Hz{}$$
+$$f' = \frac{343}{343 + 30} \times 800 = \frac{343}{373} \times 800 \approx 736\,\mathrm{Hz}$$
 
 ### Electromagnetic Doppler Effect
 
@@ -224,10 +224,10 @@ For small angles ($\sin\theta \approx \tan\theta \approx \theta$), the fringe sp
 
 $$\Delta y = \frac{\lambda L}{d}$$
 
-**Example.** Light of wavelength $600\,\mathrm{nm{}$ passes through slits $0.5\,\mathrm{mm{}$ apart onto a
-screen $2.0\,\mathrm{m{}$ away. Find the fringe spacing.
+**Example.** Light of wavelength $600\,\mathrm{nm}$ passes through slits $0.5\,\mathrm{mm}$ apart onto a
+screen $2.0\,\mathrm{m}$ away. Find the fringe spacing.
 
-$$\Delta y = \frac{600 \times 10^{-9} \times 2.0}{0.5 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{5 \times 10^{-4}} = 2.4 \times 10^{-3}\,\mathrm{m{} = 2.4\,\mathrm{mm{}$$
+$$\Delta y = \frac{600 \times 10^{-9} \times 2.0}{0.5 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{5 \times 10^{-4}} = 2.4 \times 10^{-3}\,\mathrm{m} = 2.4\,\mathrm{mm}$$
 
 ### Intensity Distribution
 
@@ -256,10 +256,10 @@ where $d = \dfrac{1}{N_L}$ is the slit spacing and $N_L$ is the number of lines 
 **Maximum order.** The highest observable order is limited by $|\sin\theta| \le 1$, giving
 $n_{\max} \le \dfrac{d}{\lambda}$.
 
-**Example.** A grating with $500\,\mathrm{lines/mm{}$ is illuminated with light of wavelength
-$589\,\mathrm{nm{}$. Find the angles of the first two orders.
+**Example.** A grating with $500\,\mathrm{lines/mm}$ is illuminated with light of wavelength
+$589\,\mathrm{nm}$. Find the angles of the first two orders.
 
-$$d = \frac{1}{500 \times 10^3} = 2.0 \times 10^{-6}\,\mathrm{m{}$$
+$$d = \frac{1}{500 \times 10^3} = 2.0 \times 10^{-6}\,\mathrm{m}$$
 
 $$\sin\theta_1 = \frac{1 \times 589 \times 10^{-9}}{2.0 \times 10^{-6}} = 0.2945 \implies \theta_1 \approx 17.1\,{}^{\circ}$$
 
@@ -291,15 +291,15 @@ For a film of thickness $t$ and refractive index $n_f$:
 
 **Constructive interference** (bright reflection):
 
-$$2n_f t = \left(m + \frac{1}{2}\right)\lambda \qquad \mathrm{(one\ phase\ change){}$$
+$$2n_f t = \left(m + \frac{1}{2}\right)\lambda \qquad \mathrm{(one\ phase\ change)}$$
 
-$$2n_f t = m\lambda \qquad \mathrm{(zero\ or\ two\ phase\ changes){}$$
+$$2n_f t = m\lambda \qquad \mathrm{(zero\ or\ two\ phase\ changes)}$$
 
 **Destructive interference** (dark reflection):
 
-$$2n_f t = m\lambda \qquad \mathrm{(one\ phase\ change){}$$
+$$2n_f t = m\lambda \qquad \mathrm{(one\ phase\ change)}$$
 
-$$2n_f t = \left(m + \frac{1}{2}\right)\lambda \qquad \mathrm{(zero\ or\ two\ phase\ changes){}$$
+$$2n_f t = \left(m + \frac{1}{2}\right)\lambda \qquad \mathrm{(zero\ or\ two\ phase\ changes)}$$
 
 where $m = 0, 1, 2, \ldots$ and $\lambda$ is the wavelength in vacuum.
 
@@ -319,15 +319,15 @@ The fringe spacing is:
 
 $$\Delta x = \frac{\lambda}{2\theta}$$
 
-**Example.** A soap film ($n = 1.33$) of thickness $200\,\mathrm{nm{}$ is illuminated with white light.
+**Example.** A soap film ($n = 1.33$) of thickness $200\,\mathrm{nm}$ is illuminated with white light.
 Which colour is most strongly reflected?
 
 For constructive reflection (one phase change at air-to-film boundary):
 
-$$\lambda = \frac{2n_f t}{m + 1/2} = \frac{2(1.33)(200)}{m + 1/2} = \frac{532}{m + 1/2}\,\mathrm{nm{}$$
+$$\lambda = \frac{2n_f t}{m + 1/2} = \frac{2(1.33)(200)}{m + 1/2} = \frac{532}{m + 1/2}\,\mathrm{nm}$$
 
-For $m = 0$: $\lambda = 1064\,\mathrm{nm{}$ (infrared, not visible).
-For $m = 1$: $\lambda \approx 355\,\mathrm{nm{}$ (near UV).
+For $m = 0$: $\lambda = 1064\,\mathrm{nm}$ (infrared, not visible).
+For $m = 1$: $\lambda \approx 355\,\mathrm{nm}$ (near UV).
 
 The dominant visible reflection is at the violet end, giving the film a violet-blue appearance.
 
@@ -340,7 +340,7 @@ The dominant visible reflection is at the violet end, giving the film a violet-b
 When two or more waves overlap, the resultant displacement at any point is the algebraic sum of the
 individual displacements:
 
-$$y_{\mathrm{total{}} = y_1 + y_2 + \cdots$$
+$$y_{\mathrm{total}} = y_1 + y_2 + \cdots$$
 
 This principle is linear and holds when the medium responds linearly to the wave amplitude. At very
 large amplitudes (nonlinear regime), the principle breaks down.
@@ -383,12 +383,12 @@ Sound intensity level is measured in **decibels** (dB):
 
 $$\beta = 10\log_{10}\!\left(\frac{I}{I_0}\right)$$
 
-where $I_0 = 1.0 \times 10^{-12}\,\mathrm{W/m^2{}$ is the threshold of hearing.
+where $I_0 = 1.0 \times 10^{-12}\,\mathrm{W/m^2}$ is the threshold of hearing.
 
-**Example.** A sound has intensity $I = 1.0 \times 10^{-6}\,\mathrm{W/m^2{}$. Find the intensity
+**Example.** A sound has intensity $I = 1.0 \times 10^{-6}\,\mathrm{W/m^2}$. Find the intensity
 level.
 
-$$\beta = 10\log_{10}\!\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) = 60\,\mathrm{dB{}$$
+$$\beta = 10\log_{10}\!\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) = 60\,\mathrm{dB}$$
 
 ---
 

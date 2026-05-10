@@ -18,7 +18,7 @@ climate change.
 
 Both are necessary. Even under the most ambitious mitigation scenarios, some degree of additional
 warming and its associated impacts are already locked in due to the thermal inertia of the climate
-system and the long atmospheric lifetime of $\mathrm{CO_2{}$. Adaptation is therefore required
+system and the long atmospheric lifetime of $\mathrm{CO_2}$. Adaptation is therefore required
 regardless of mitigation efforts.
 
 ## Mitigation Strategies
@@ -58,7 +58,7 @@ This sector accounts for approximately 18--22% of global greenhouse gas emission
 deforestation and land-use change).
 
 **Reducing deforestation.** Halting tropical deforestation (which releases approximately 4.8 Gt
-$\mathrm{CO_2{}$ per year) is among the most cost-effective mitigation strategies. Approaches
+$\mathrm{CO_2}$ per year) is among the most cost-effective mitigation strategies. Approaches
 include: strengthening and enforcing forest protection laws; providing economic alternatives to
 deforestation (sustainable agriculture, ecotourism, payment for ecosystem services); addressing the
 demand-side drivers of deforestation (soy, palm oil, beef, timber); and REDD+ (see Carbon Cycle and
@@ -70,8 +70,8 @@ and livelihood co-benefits. The Bonn Challenge (2011) aims to restore 350 millio
 degraded and deforested land by 2030; approximately 200 million hectares have been pledged.
 
 **Sustainable agriculture.** Reducing agricultural emissions through improved nitrogen management
-(precision fertiliser application to reduce $\mathrm{N_2{}\mathrm{O{}$ emissions), improved livestock
-management (feed additives, manure management to reduce $\mathrm{CH_4{}$), reduced food waste
+(precision fertiliser application to reduce $\mathrm{N_2}\mathrm{O}$ emissions), improved livestock
+management (feed additives, manure management to reduce $\mathrm{CH_4}$), reduced food waste
 (approximately 30% of food produced globally is wasted, representing approximately 8% of global
 emissions), and dietary shifts (reducing meat consumption, particularly beef, which has a carbon
 footprint approximately 50 times greater than plant-based protein per gram of protein).
@@ -220,7 +220,7 @@ protection; and advocacy for international climate action (former President Nash
 underwater cabinet meeting in 2009).
 
 **Mitigation:** the Maldives contributes negligibly to global emissions (approximately 1.2 million
-tonnes $\mathrm{CO_2{}$ per year) but has set ambitious targets: achieving net-zero emissions
+tonnes $\mathrm{CO_2}$ per year) but has set ambitious targets: achieving net-zero emissions
 by 2030. Strategies include: transitioning to solar power (targeting 30% of electricity from solar
 by 2030); reducing diesel dependency in electricity generation; and promoting electric vehicle
 adoption.

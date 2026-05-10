@@ -22,11 +22,11 @@ goods are excluded because their value is already embedded in the final product.
    - $X - M$ = net exports (exports minus imports)
 
 2. **Income method**: sums all factor incomes earned by residents:
-   $$GDP = W + R + I + P + (\text{Mixed income{}) + (\text{Taxes on production{} - \text{Subsidies{})$$
+   $$GDP = W + R + I + P + (\text{Mixed income}) + (\text{Taxes on production} - \text{Subsidies})$$
    Where $W$ = wages, $R$ = rent, $I$ = interest, $P$ = profit.
 
 3. **Output (value-added) method**: sums the value added at each stage of production:
-   $$\text{Value added{} = \text{Value of output{} - \text{Value of intermediate inputs{}$$
+   $$\text{Value added} = \text{Value of output} - \text{Value of intermediate inputs}$$
    This avoids double counting. Summing value added across all firms yields GDP.
 
 ### Nominal vs. Real GDP
@@ -36,19 +36,19 @@ changes in prices.
 
 **Real GDP** adjusts for price level changes and is a better measure of actual output growth:
 
-$$\mathrm{Real\ GDP{} = \frac{\mathrm{Nominal\ GDP{}}{\mathrm{GDP\ Deflator{}} \times 100$$
+$$\mathrm{Real\ GDP} = \frac{\mathrm{Nominal\ GDP}}{\mathrm{GDP\ Deflator}} \times 100$$
 
 The **GDP deflator** is a broad measure of the price level that includes all domestically produced
 goods and services:
 
-$$\mathrm{GDP\ Deflator{} = \frac{\mathrm{Nominal\ GDP{}}{\mathrm{Real\ GDP{}} \times 100$$
+$$\mathrm{GDP\ Deflator} = \frac{\mathrm{Nominal\ GDP}}{\mathrm{Real\ GDP}} \times 100$$
 
 ### GNP and GNI
 
 **Gross National Product (GNP)** measures the total output produced by a country's residents
 regardless of where it is produced:
 
-$$\mathrm{GNP{} = \mathrm{GDP{} + \text{Net factor income from abroad{}$$
+$$\mathrm{GNP} = \mathrm{GDP} + \text{Net factor income from abroad}$$
 
 Net factor income from abroad includes wages, profits, and rent earned by domestic residents from
 their foreign investments, minus the corresponding income earned by foreign residents within the
@@ -57,11 +57,11 @@ domestic economy.
 **Gross National Income (GNI)** is the preferred modern measure and is conceptually equivalent to
 GNP. It includes net primary income from abroad (compensation of employees, investment income):
 
-$$\mathrm{GNI{} = \mathrm{GDP{} + \text{Net primary income from abroad{}$$
+$$\mathrm{GNI} = \mathrm{GDP} + \text{Net primary income from abroad}$$
 
 ### GDP per Capita and Purchasing Power Parity
 
-**GDP per capita** ($\mathrm{GDP{} / \mathrm{Population{}$) is used as a rough proxy for living
+**GDP per capita** ($\mathrm{GDP} / \mathrm{Population}$) is used as a rough proxy for living
 standards but has significant limitations:
 
 - Does not account for income distribution
@@ -96,7 +96,7 @@ Inflation is the sustained increase in the general price level over time. The pr
 **Consumer Price Index (CPI)**, which tracks the price of a weighted basket of goods and services
 representative of household consumption.
 
-$$\mathrm{Inflation\ rate{} = \frac{\mathrm{CPI{}_t - \mathrm{CPI{}_{t-1}}{\mathrm{CPI{}_{t-1}} \times 100$$
+$$\mathrm{Inflation\ rate} = \frac{\mathrm{CPI}_t - \mathrm{CPI}_{t-1}}{\mathrm{CPI}_{t-1}} \times 100$$
 
 **Constructing the CPI:**
 
@@ -121,7 +121,7 @@ $$\mathrm{Inflation\ rate{} = \frac{\mathrm{CPI{}_t - \mathrm{CPI{}_{t-1}}{\math
 **Demand-pull inflation** occurs when aggregate demand exceeds aggregate supply at full employment,
 creating an inflationary gap:
 
-$$\mathrm{AD{} > \mathrm{LRAS{} \implies \mathrm{Price\ level\ rises{}$$
+$$\mathrm{AD} > \mathrm{LRAS} \implies \mathrm{Price\ level\ rises}$$
 
 Causes include excessive growth in the money supply, large budget deficits, rising consumer
 confidence, or export booms.
@@ -201,7 +201,7 @@ Inflation Rate of Unemployment). In the long run, there is no trade-off between 
 unemployment. Any attempt to keep unemployment below the NAIRU through demand-side policies leads
 only to accelerating inflation, as workers adjust their expectations:
 
-$$\pi = \pi^e \quad \text{when {} u = u_n$$
+$$\pi = \pi^e \quad \text{when } u = u_n$$
 
 The **expectations-augmented Phillips curve** (Friedman, Phelps): if the government tries to reduce
 unemployment below $u_n$, initial gains in employment are offset as workers demand higher wages in
@@ -215,7 +215,7 @@ higher inflation rate.
 The **unemployment rate** is the percentage of the labour force that is actively seeking work but
 unable to find it:
 
-$$\mathrm{Unemployment\ rate{} = \frac{\mathrm{Number\ unemployed{}}{\mathrm{Labour\ force{}} \times 100$$
+$$\mathrm{Unemployment\ rate} = \frac{\mathrm{Number\ unemployed}}{\mathrm{Labour\ force}} \times 100$$
 
 The labour force includes all employed persons plus those actively seeking work. It excludes
 discouraged workers (those who have given up looking for work) and those not seeking work (students,
@@ -223,8 +223,8 @@ retirees, homemakers).
 
 **Related measures:**
 
-- **Participation rate** $= \frac{\text{Labour force{}}{\text{Working-age population{}} \times 100$
-- **Employment rate** $= \frac{\text{Number employed{}}{\text{Working-age population{}} \times 100$
+- **Participation rate** $= \frac{\text{Labour force}}{\text{Working-age population}} \times 100$
+- **Employment rate** $= \frac{\text{Number employed}}{\text{Working-age population}} \times 100$
 
 ### Types of Unemployment
 
@@ -261,7 +261,7 @@ labour supplied exceeds the quantity demanded at the artificially high wage.
 The natural rate of unemployment ($u_n$, or NAIRU) is the rate of unemployment that prevails when
 the economy is at full employment. It equals the sum of frictional and structural unemployment.
 
-$$u_n = u_{\text{frictional{}} + u_{\text{structural{}}$$
+$$u_n = u_{\text{frictional}} + u_{\text{structural}}$$
 
 At the natural rate, cyclical unemployment is zero and the economy is operating at its potential
 output. The natural rate is not fixed; it can change due to:
@@ -291,7 +291,7 @@ output. The natural rate is not fixed; it can change due to:
 
 AD is the total planned expenditure on goods and services at each price level:
 
-$$\mathrm{AD{} = C + I + G + (X - M)$$
+$$\mathrm{AD} = C + I + G + (X - M)$$
 
 The AD curve slopes downward due to:
 
@@ -399,28 +399,28 @@ change in national income through successive rounds of spending and re-spending.
 
 **Simple multiplier (no taxes, no imports):**
 
-$$k = \frac{1}{1 - \mathrm{MPC{}} = \frac{1}{\mathrm{MPS{}}$$
+$$k = \frac{1}{1 - \mathrm{MPC}} = \frac{1}{\mathrm{MPS}}$$
 
-Where MPC is the marginal propensity to consume and MPS is the marginal propensity to save ($\mathrm{MPC{} + \mathrm{MPS{} = 1$).
+Where MPC is the marginal propensity to consume and MPS is the marginal propensity to save ($\mathrm{MPC} + \mathrm{MPS} = 1$).
 
 An initial government spending increase of $\Delta G$ leads to a total change in output of:
 
-$$\Delta Y = k \times \Delta G = \frac{\Delta G}{1 - \mathrm{MPC{}}$$
+$$\Delta Y = k \times \Delta G = \frac{\Delta G}{1 - \mathrm{MPC}}$$
 
 **The multiplier with proportional taxation:**
 
-$$k_T = \frac{1}{1 - \mathrm{MPC{}(1 - t)}$$
+$$k_T = \frac{1}{1 - \mathrm{MPC}(1 - t)}$$
 
 Where $t$ is the marginal tax rate. Higher taxes reduce the multiplier because they leak spending
 power out of the circular flow at each round.
 
 **The multiplier with imports:**
 
-$$k_{T,M} = \frac{1}{\mathrm{MPS{} + t \times \mathrm{MPC{} + \mathrm{MPM{}}$$
+$$k_{T,M} = \frac{1}{\mathrm{MPS} + t \times \mathrm{MPC} + \mathrm{MPM}}$$
 
 Where MPM is the marginal propensity to import. Imports are a leakage from the circular flow.
 
-**Worked example:** if $\mathrm{MPC{} = 0.75$, $t = 0.2$, and $\mathrm{MPM{} = 0.1$:
+**Worked example:** if $\mathrm{MPC} = 0.75$, $t = 0.2$, and $\mathrm{MPM} = 0.1$:
 
 $$k = \frac{1}{0.25 + 0.2 \times 0.75 + 0.1} = \frac{1}{0.25 + 0.15 + 0.1} = \frac{1}{0.50} = 2$$
 
@@ -522,7 +522,7 @@ The process by which monetary policy affects the real economy:
 In a fractional reserve banking system, commercial banks lend out a fraction of their deposits,
 creating new money:
 
-$$\text{Money multiplier{} = \frac{1}{\text{Reserve ratio{}} = \frac{1}{r}$$
+$$\text{Money multiplier} = \frac{1}{\text{Reserve ratio}} = \frac{1}{r}$$
 
 If the reserve ratio is $r = 0.1$, a deposit of `USD 1000` can ultimately support `USD 10000` in
 deposits through successive rounds of lending and re-depositing.
@@ -769,11 +769,11 @@ Investment $= \$1100$, Government spending $= \$1500$, Exports $= \$800$, Import
 
 (a) $GDP = C + I + G + (X - M) = 4200 + 1100 + 1500 + (800 - 950)$
 
-$$GDP = 4200 + 1100 + 1500 + (-150) = \$6650 \text{ billion{}$$
+$$GDP = 4200 + 1100 + 1500 + (-150) = \$6650 \text{ billion}$$
 
 Net exports $= X - M = 800 - 950 = -\$150$ billion (a trade deficit).
 
-(b) $\mathrm{Real\ GDP{} = \frac{\mathrm{Nominal\ GDP{}}{\mathrm{GDP\ Deflator{}} \times 100 = \frac{6650}{115} \times 100 = \$5782.6 \text{ billion{}$
+(b) $\mathrm{Real\ GDP} = \frac{\mathrm{Nominal\ GDP}}{\mathrm{GDP\ Deflator}} \times 100 = \frac{6650}{115} \times 100 = \$5782.6 \text{ billion}$
 
 (c) GDP per capita $= \frac{6650 \times 10^9}{50 \times 10^6} = \$133\,000$
 
@@ -791,7 +791,7 @@ year 1 and `USD 52,000` in year 2.
 
 (c) Has the worker's purchasing power increased or decreased?
 
-(a) $\mathrm{Inflation\ rate{} = \frac{252 - 240}{240} \times 100 = \frac{12}{240} \times 100 = 5\%$
+(a) $\mathrm{Inflation\ rate} = \frac{252 - 240}{240} \times 100 = \frac{12}{240} \times 100 = 5\%$
 
 (b) Real income in year 2 $= \frac{52\,000}{252/240} = \frac{52\,000}{1.05} = \$49\,523.81$
 
@@ -813,12 +813,12 @@ the marginal tax rate is $0.2$, and the marginal propensity to import is $0.15$.
 
 (c) Explain why this multiplier is smaller than the simple multiplier.
 
-(a) $\mathrm{MPS{} = 1 - 0.75 = 0.25$
+(a) $\mathrm{MPS} = 1 - 0.75 = 0.25$
 
-$$k = \frac{1}{\mathrm{MPS{} + t \times \mathrm{MPC{} + \mathrm{MPM{}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15}$$
+$$k = \frac{1}{\mathrm{MPS} + t \times \mathrm{MPC} + \mathrm{MPM}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15}$$
 $$k = \frac{1}{0.25 + 0.15 + 0.15} = \frac{1}{0.55} = 1.818$$
 
-(b) $\Delta Y = k \times \Delta G = 1.818 \times 50 = \$90.9 \text{ billion{}$
+(b) $\Delta Y = k \times \Delta G = 1.818 \times 50 = \$90.9 \text{ billion}$
 
 (c) The multiplier is smaller than the simple multiplier ($\frac{1}{0.25} = 4$) because taxes and
 imports are leakages from the circular flow. At each round of the multiplier process, some income is
@@ -908,7 +908,7 @@ The reserve ratio is $0.1$ (10%), and the public holds no cash outside the banki
 
 (a) Money multiplier $= \frac{1}{r} = \frac{1}{0.1} = 10$
 
-Maximum increase in money supply $= \$200 \text{ million{} \times 10 = \$2\,000 \text{ million{}$
+Maximum increase in money supply $= \$200 \text{ million} \times 10 = \$2\,000 \text{ million}$
 
 (b) The actual increase may be less because:
 
@@ -968,7 +968,7 @@ in the quantities of goods and services produced and changes in their prices.
 **Real GDP** values output at constant (base year) prices, isolating the effect of quantity changes
 from price changes.
 
-$$\text{Real GDP{}_t = \sum_{i=1}^{n} P_{i,0} \cdot Q_{i,t}$$
+$$\text{Real GDP}_t = \sum_{i=1}^{n} P_{i,0} \cdot Q_{i,t}$$
 
 Where $P_{i,0}$ is the base-year price of good $i$ and $Q_{i,t}$ is the quantity produced in year $t$.
 
@@ -977,7 +977,7 @@ Where $P_{i,0}$ is the base-year price of good $i$ and $Q_{i,t}$ is the quantity
 The GDP deflator is the most comprehensive price index because it covers all domestically produced
 goods and services (consumption, investment, government spending, and net exports):
 
-$$\text{GDP Deflator{}_t = \frac{\text{Nominal GDP{}_t}{\text{Real GDP{}_t} \times 100$$
+$$\text{GDP Deflator}_t = \frac{\text{Nominal GDP}_t}{\text{Real GDP}_t} \times 100$$
 
 Unlike the CPI, the GDP deflator:
 - Includes capital goods and government services (not just consumer goods)
@@ -987,9 +987,9 @@ Unlike the CPI, the GDP deflator:
 
 ### GDP per Capita Calculations
 
-$$\text{GDP per capita{} = \frac{\text{GDP{}}{\text{Population{}}$$
+$$\text{GDP per capita} = \frac{\text{GDP}}{\text{Population}}$$
 
-$$\text{Real GDP per capita{} = \frac{\text{Real GDP{}}{\text{Population{}}$$
+$$\text{Real GDP per capita} = \frac{\text{Real GDP}}{\text{Population}}$$
 
 **Limitations as a welfare measure:**
 
@@ -1009,7 +1009,7 @@ $$\text{Real GDP per capita{} = \frac{\text{Real GDP{}}{\text{Population{}}$$
 Modern national accounts use **chain-weighting** to avoid the substitution bias of fixed-weight
 indices. Chain-weighted GDP uses a moving base year, averaging Laspeyres and Paasche measures:
 
-$$\text{Chain-weighted growth rate{} = \sqrt{\text{Laspeyres growth rate{} \times \text{Paasche growth rate{}}$$
+$$\text{Chain-weighted growth rate} = \sqrt{\text{Laspeyres growth rate} \times \text{Paasche growth rate}}$$
 
 This provides a more accurate measure of real growth, particularly when relative prices change
 significantly.
@@ -1094,7 +1094,7 @@ $$Y = \frac{a + I + G + X}{1 - b(1 - t) + m}$$
 
 The denominator is the sum of all leakages:
 
-$$k = \frac{1}{1 - b(1 - t) + m} = \frac{1}{\text{MPS{} + \text{MPT{} + \text{MPM{}}$$
+$$k = \frac{1}{1 - b(1 - t) + m} = \frac{1}{\text{MPS} + \text{MPT} + \text{MPM}}$$
 
 ### The Tax Multiplier
 
@@ -1198,7 +1198,7 @@ The LRPC is vertical at $u_n$.
 The sacrifice ratio measures the cumulative loss in output (as a percentage of one year's GDP)
 required to reduce inflation by one percentage point:
 
-$$\text{Sacrifice ratio{} = \frac{\text{Cumulative {}\%\Delta Y \text{ below trend{}}{\text{Reduction in inflation{}}$$
+$$\text{Sacrifice ratio} = \frac{\text{Cumulative }\%\Delta Y \text{ below trend}}{\text{Reduction in inflation}}$$
 
 Typical estimates for advanced economies range from 1.5 to 3. A sacrifice ratio of 2 means that
 reducing inflation by 1 percentage point requires a cumulative output loss equal to 2% of annual GDP.
@@ -1257,7 +1257,7 @@ The traditional channel through which monetary policy affects the real economy:
 4. Appreciation makes exports more expensive and imports cheaper
 5. Net exports ($X - M$) fall, reducing AD
 
-$$r \uparrow \implies \text{Capital inflows{} \uparrow \implies \text{Exchange rate{} \uparrow \implies (X - M) \downarrow \implies \text{AD{} \downarrow$$
+$$r \uparrow \implies \text{Capital inflows} \uparrow \implies \text{Exchange rate} \uparrow \implies (X - M) \downarrow \implies \text{AD} \downarrow$$
 
 ### Asset Price Channel
 
@@ -1268,7 +1268,7 @@ $$r \uparrow \implies \text{Capital inflows{} \uparrow \implies \text{Exchange r
 5. Higher share prices lower the cost of equity financing for firms, encouraging investment
 6. Higher property values increase collateral for borrowing, relaxing credit constraints
 
-$$r \downarrow \implies \text{Asset prices{} \uparrow \implies \text{Wealth{} \uparrow \implies C \uparrow \implies \text{AD{} \uparrow$$
+$$r \downarrow \implies \text{Asset prices} \uparrow \implies \text{Wealth} \uparrow \implies C \uparrow \implies \text{AD} \uparrow$$
 
 ### Expectations Channel (Forward Guidance)
 
@@ -1341,7 +1341,7 @@ during booms (restraining demand).
 raises demand for loanable funds, increasing the interest rate and reducing private investment by
 exactly the amount of the fiscal expansion. $\Delta G$ is fully offset by $\Delta I$.
 
-$$\Delta Y = 0 \text{ (in the classical case){}$$
+$$\Delta Y = 0 \text{ (in the classical case)}$$
 
 **Partial crowding out:** in a Keynesian framework with idle resources, the interest rate rise
 reduces some investment but not all. The net increase in output is positive but smaller than the
@@ -1370,11 +1370,11 @@ $$\Delta Y = k \cdot \Delta G$$
 Proposed by Robert Barro (1974), Ricardian equivalence states that households are forward-looking
 and understand that current deficit spending must be financed by future taxes. Therefore:
 
-$$\text{Tax cut today{} = \text{Tax increase tomorrow (with interest){}$$
+$$\text{Tax cut today} = \text{Tax increase tomorrow (with interest)}$$
 
 Households save the entire tax cut to pay future taxes, leaving consumption unchanged:
 
-$$\Delta C = 0, \quad \Delta S = \Delta T_{\text{cut{}}$$
+$$\Delta C = 0, \quad \Delta S = \Delta T_{\text{cut}}$$
 
 **Conditions for Ricardian equivalence to hold:**
 
@@ -1411,7 +1411,7 @@ simple Keynesian models.
 
 The Laffer curve illustrates the theoretical relationship between the tax rate and tax revenue:
 
-$$\text{Tax revenue{} = t \times Y(t)$$
+$$\text{Tax revenue} = t \times Y(t)$$
 
 Where $Y(t)$ is the tax base (income, output), which depends on the tax rate. At $t = 0$, revenue
 is zero. At $t = 100\%$, revenue is also zero (no one works or invests if all income is taxed).
@@ -1495,7 +1495,7 @@ Consumption is maximised where the slope of the production function equals $(n +
 
 $$f'(k^{**}) = n + \delta$$
 
-$$\text{MPK{} = n + \delta$$
+$$\text{MPK} = n + \delta$$
 
 If the actual savings rate is higher than the golden rule rate, the economy is dynamically
 inefficient: reducing saving would increase both current and future consumption.
@@ -1551,15 +1551,15 @@ An economy has the following characteristics:
 (c) If the government wants to close a recessionary gap of `USD 80` billion, by how much should it
 increase government spending? By how much should it cut taxes to achieve the same result?
 
-(a) $k = \frac{1}{\mathrm{MPS{} + t \cdot \mathrm{MPC{} + \mathrm{MPM{}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15} = \frac{1}{0.25 + 0.15 + 0.15} = \frac{1}{0.55} = 1.818$
+(a) $k = \frac{1}{\mathrm{MPS} + t \cdot \mathrm{MPC} + \mathrm{MPM}} = \frac{1}{0.25 + 0.2 \times 0.75 + 0.15} = \frac{1}{0.25 + 0.15 + 0.15} = \frac{1}{0.55} = 1.818$
 
-Autonomous expenditure $= C_{\text{aut{}} + I + G + X - M_{\text{aut{}} = 100 + 250 + 300 + 120 - 40 = 730$
+Autonomous expenditure $= C_{\text{aut}} + I + G + X - M_{\text{aut}} = 100 + 250 + 300 + 120 - 40 = 730$
 
-$Y^* = k \times \text{Autonomous expenditure{} = 1.818 \times 730 = 1327.3$ billion USD
+$Y^* = k \times \text{Autonomous expenditure} = 1.818 \times 730 = 1327.3$ billion USD
 
 (b) Spending multiplier: $k_G = 1.818$
 
-Tax multiplier: $k_T = \frac{-\mathrm{MPC{}}{1 - \mathrm{MPC{}(1-t) + \mathrm{MPM{}} = \frac{-0.75}{0.55} = -1.364$
+Tax multiplier: $k_T = \frac{-\mathrm{MPC}}{1 - \mathrm{MPC}(1-t) + \mathrm{MPM}} = \frac{-0.75}{0.55} = -1.364$
 
 Balanced budget multiplier: $k_B = k_G + k_T = 1.818 + (-1.364) = 0.454$
 
@@ -1842,8 +1842,8 @@ capital mobility.
   causing capital outflows that depreciate the exchange rate, increasing net exports. Output
   increases by the full multiplier
 
-$$\Delta G > 0 \implies \Delta Y = 0 \quad \text{(fiscal policy is fully crowded out){}$$
-$$\Delta M^s > 0 \implies \Delta Y > 0 \quad \text{(monetary policy is fully effective){}$$
+$$\Delta G > 0 \implies \Delta Y = 0 \quad \text{(fiscal policy is fully crowded out)}$$
+$$\Delta M^s > 0 \implies \Delta Y > 0 \quad \text{(monetary policy is fully effective)}$$
 
 **Key result with fixed exchange rates and perfect capital mobility:**
 
@@ -1856,8 +1856,8 @@ $$\Delta M^s > 0 \implies \Delta Y > 0 \quad \text{(monetary policy is fully eff
   outflows and downward pressure on the exchange rate. The central bank must sell reserves to
   defend the peg, reversing the money supply increase
 
-$$\Delta G > 0 \implies \Delta Y > 0 \quad \text{(fiscal policy is amplified){}$$
-$$\Delta M^s > 0 \implies \Delta Y = 0 \quad \text{(monetary policy is fully offset){}$$
+$$\Delta G > 0 \implies \Delta Y > 0 \quad \text{(fiscal policy is amplified)}$$
+$$\Delta M^s > 0 \implies \Delta Y = 0 \quad \text{(monetary policy is fully offset)}$$
 
 ### Currency Crises: First-Generation and Second-Generation Models
 
@@ -2005,10 +2005,10 @@ $\Delta Y = 600 - 533.3 = 66.7$: monetary policy is highly effective under float
 A **deflationary spiral** is a self-reinforcing cycle of falling prices, rising real debt burdens,
 reduced spending, falling output, and further price declines:
 
-$$\text{Prices fall{} \implies \text{Real interest rates rise{} \implies \text{Borrowing costs increase{}$$
-$$\implies \text{Investment falls{} \implies \text{Aggregate demand falls{}$$
-$$\implies \text{Output falls{} \implies \text{Unemployment rises{}$$
-$$\implies \text{Demand falls further{} \implies \text{Prices fall more{}$$
+$$\text{Prices fall} \implies \text{Real interest rates rise} \implies \text{Borrowing costs increase}$$
+$$\implies \text{Investment falls} \implies \text{Aggregate demand falls}$$
+$$\implies \text{Output falls} \implies \text{Unemployment rises}$$
+$$\implies \text{Demand falls further} \implies \text{Prices fall more}$$
 
 This vicious cycle is difficult to escape because:
 
@@ -2022,7 +2022,7 @@ This vicious cycle is difficult to escape because:
 
 Irving Fisher (1933) argued that deflation increases the real burden of debt:
 
-$$r_{\text{real{}} = i - \pi$$
+$$r_{\text{real}} = i - \pi$$
 
 When $\pi < 0$ (deflation), the real interest rate exceeds the nominal rate. If firms and households
 borrowed expecting inflation, deflation increases the real value of their debts, potentially triggering
@@ -2084,9 +2084,9 @@ from the private sector.
 
 **Balance sheet effects:**
 
-$$\text{CB purchases bonds{} \implies \text{Bank reserves increase{} \implies \text{Lending capacity rises{}$$
+$$\text{CB purchases bonds} \implies \text{Bank reserves increase} \implies \text{Lending capacity rises}$$
 
-$$\text{Bond prices rise{} \implies \text{Long-term yields fall{} \implies \text{Investment increases{}$$
+$$\text{Bond prices rise} \implies \text{Long-term yields fall} \implies \text{Investment increases}$$
 
 ### QE in Practice
 
@@ -2212,7 +2212,7 @@ Robert Solow (1987) observed that "you can see the computer age everywhere but i
 statistics." Despite massive investment in ICT, measured productivity growth in advanced
 economies slowed in the 1970s and 1980s.
 
-$$\text{Massive ICT investment{} + \text{Slow productivity growth{} = \text{The Solow Paradox{}$$
+$$\text{Massive ICT investment} + \text{Slow productivity growth} = \text{The Solow Paradox}$$
 
 ### Possible Explanations
 
@@ -2247,7 +2247,7 @@ economy.
 
 **In the loanable funds market:**
 
-$$S_{\text{private{}} + S_{\text{government{}} = I_{\text{private{}} + I_{\text{government{}}$$
+$$S_{\text{private}} + S_{\text{government}} = I_{\text{private}} + I_{\text{government}}$$
 
 When government saving falls (deficit increases), the supply of loanable funds shifts leftward,
 raising the real interest rate and reducing private investment.
@@ -2267,8 +2267,8 @@ raising the real interest rate and reducing private investment.
 In an open economy, higher interest rates attract foreign capital inflows, appreciating the
 exchange rate:
 
-$$G \uparrow \implies r \uparrow \implies \text{Capital inflows{} \uparrow \implies \text{Exchange rate{} \uparrow$$
-$$\implies (X - M) \downarrow \implies \text{Further reduction in AD{}$$
+$$G \uparrow \implies r \uparrow \implies \text{Capital inflows} \uparrow \implies \text{Exchange rate} \uparrow$$
+$$\implies (X - M) \downarrow \implies \text{Further reduction in AD}$$
 
 This creates **double crowding out:** higher interest rates reduce both domestic investment and net
 exports. Small open economies with mobile capital are particularly vulnerable.
@@ -2278,9 +2278,9 @@ exports. Small open economies with mobile capital are particularly vulnerable.
 An economy has MPC $= 0.75$, MPM $= 0.2$, and a 1 percentage point increase in $r$ reduces
 investment by USD 2 billion. The government increases spending by USD 10 billion.
 
-Closed-economy multiplier: $\frac{1}{1 - \text{MPC{}} = \frac{1}{0.25} = 4$.
+Closed-economy multiplier: $\frac{1}{1 - \text{MPC}} = \frac{1}{0.25} = 4$.
 
-Open-economy multiplier: $\frac{1}{\text{MPM{} + \text{MPS{}} = \frac{1}{0.2 + 0.25} = \frac{1}{0.45} = 2.22$.
+Open-economy multiplier: $\frac{1}{\text{MPM} + \text{MPS}} = \frac{1}{0.2 + 0.25} = \frac{1}{0.45} = 2.22$.
 
 Simple increase: $\Delta Y = 2.22 \times 10 = 22.2$ billion.
 
@@ -2487,7 +2487,7 @@ GDP was USD 1 trillion, the permanent loss is USD 38.6 billion per year.
   disproportionately
 - Applying fiscal rules mechanically without cyclical adjustment. Pro-cyclical austerity
   during recessions deepens downturns
-- Confusing real and nominal interest rates during deflation. When $\pi < 0$, $r_{\text{real{}} > i$,
+- Confusing real and nominal interest rates during deflation. When $\pi < 0$, $r_{\text{real}} > i$,
   making debt servicing more expensive in real terms
 
 ## The Phillips Curve: Advanced Analysis (HL Extension)
@@ -2519,7 +2519,7 @@ vertical at the natural rate.
 The **sacrifice ratio** measures the cumulative loss in output required to reduce inflation by
 1 percentage point:
 
-$$\text{Sacrifice ratio{} = \frac{\sum \Delta Y}{\Delta \pi}$$
+$$\text{Sacrifice ratio} = \frac{\sum \Delta Y}{\Delta \pi}$$
 
 **Historical estimates:**
 
@@ -2619,9 +2619,9 @@ bias is smaller. This is the rationale for central bank independence.
 The BP (balance of payments) curve shows combinations of $Y$ and $r$ that maintain balance of
 payments equilibrium:
 
-$$\text{Current account{} + \text{Capital account{} = 0$$
+$$\text{Current account} + \text{Capital account} = 0$$
 
-$$\text{NX{}(Y, e) + \text{CF{}(r) = 0$$
+$$\text{NX}(Y, e) + \text{CF}(r) = 0$$
 
 The slope of the BP curve depends on capital mobility:
 
@@ -3140,7 +3140,7 @@ Total spending needed $= 30 + 14.4 = 44.4$ billion to fully close the output gap
 
 New unemployment $= 7 - 2(44.4 \times 1.8)/(2 \times 2000) = 7 - 2(80/2000) = 7 - 0.08 = 7 - 1.6 = 5.4\%$.
 
-Wait, let me recalculate: $\Delta Y_{\text{total{}} = 1.8 \times 44.4 = 79.9 \approx 80$ billion.
+Wait, let me recalculate: $\Delta Y_{\text{total}} = 1.8 \times 44.4 = 79.9 \approx 80$ billion.
 
 $\Delta u = -0.5 \times (80/2000) = -2.0$ percentage points.
 

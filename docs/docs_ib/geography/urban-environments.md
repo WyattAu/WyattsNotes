@@ -253,7 +253,7 @@ Informal settlements are often associated with poverty, but the relationship is 
 
 ### Air Pollution
 
-Urban air pollution is caused by vehicle emissions, industrial activity, construction, power generation, and the burning of biomass. Key pollutants include particulate matter (PM2.5 and PM10), nitrogen oxides ($\mathrm{NO_x{}$), sulphur dioxide ($\mathrm{SO_2{}$), carbon monoxide (CO), and ground-level ozone ($\mathrm{O_3{}$).
+Urban air pollution is caused by vehicle emissions, industrial activity, construction, power generation, and the burning of biomass. Key pollutants include particulate matter (PM2.5 and PM10), nitrogen oxides ($\mathrm{NO_x}$), sulphur dioxide ($\mathrm{SO_2}$), carbon monoxide (CO), and ground-level ozone ($\mathrm{O_3}$).
 
 **Impacts:** respiratory diseases (asthma, chronic obstructive pulmonary disease, lung cancer), cardiovascular disease, reduced visibility, ecosystem damage (acid deposition, eutrophication), and climate change.
 

@@ -38,10 +38,10 @@ $$
 
 :::info[Example]
 
-A burette reading of $24.50\mathrm{ cm{}^3$ with smallest division $0.1\mathrm{ cm{}^3$:
+A burette reading of $24.50\mathrm{ cm}^3$ with smallest division $0.1\mathrm{ cm}^3$:
 
 $$
-\Delta V = 0.05\mathrm{ cm{}^3, \quad \%u = \frac{0.05}{24.50} \times 100\% = 0.20\%
+\Delta V = 0.05\mathrm{ cm}^3, \quad \%u = \frac{0.05}{24.50} \times 100\% = 0.20\%
 $$
 
 :::
@@ -59,7 +59,7 @@ $$
 For quantities multiplied or divided, add percentage uncertainties:
 
 $$
-\%\mathrm{u{}(a \times b) = \%\mathrm{u{}(a) + \%\mathrm{u{}(b)
+\%\mathrm{u}(a \times b) = \%\mathrm{u}(a) + \%\mathrm{u}(b)
 $$
 
 ### Uncertainty in Powers
@@ -67,25 +67,25 @@ $$
 For a quantity raised to a power, multiply the percentage uncertainty by the power:
 
 $$
-\%\mathrm{u{}(a^n) = n \times \%\mathrm{u{}(a)
+\%\mathrm{u}(a^n) = n \times \%\mathrm{u}(a)
 $$
 
 :::info[Example]
 
 The density of a sphere: $\rho = \dfrac{m}{\frac{4}{3}\pi r^3}$
 
-Given $m = 5.00 \pm 0.01\mathrm{ g{}$ and $r = 1.00 \pm 0.01\mathrm{ cm{}$:
+Given $m = 5.00 \pm 0.01\mathrm{ g}$ and $r = 1.00 \pm 0.01\mathrm{ cm}$:
 
 $$
-\%\mathrm{u{}(m) = \frac{0.01}{5.00} \times 100\% = 0.20\%
-$$
-
-$$
-\%\mathrm{u{}(r) = \frac{0.01}{1.00} \times 100\% = 1.00\%
+\%\mathrm{u}(m) = \frac{0.01}{5.00} \times 100\% = 0.20\%
 $$
 
 $$
-\%\mathrm{u{}(\rho) = \%\mathrm{u{}(m) + 3 \times \%\mathrm{u{}(r) = 0.20\% + 3.00\% = 3.20\%
+\%\mathrm{u}(r) = \frac{0.01}{1.00} \times 100\% = 1.00\%
+$$
+
+$$
+\%\mathrm{u}(\rho) = \%\mathrm{u}(m) + 3 \times \%\mathrm{u}(r) = 0.20\% + 3.00\% = 3.20\%
 $$
 
 :::
@@ -130,15 +130,15 @@ $$
 :::info[Example]
 
 $$
-12.11 + 0.3 = 12.4 \quad \mathrm{(one decimal place){}
+12.11 + 0.3 = 12.4 \quad \mathrm{(one decimal place)}
 $$
 
 $$
-3.24 \times 1.5 = 4.9 \quad \mathrm{(two sig figs){}
+3.24 \times 1.5 = 4.9 \quad \mathrm{(two sig figs)}
 $$
 
 $$
-\log(2.0 \times 10^3) = 3.30 \quad \mathrm{(two decimal places){}
+\log(2.0 \times 10^3) = 3.30 \quad \mathrm{(two decimal places)}
 $$
 
 :::
@@ -160,7 +160,7 @@ $$
 points. **Minimum gradient line** does the same for the opposite extremes.
 
 $$
-\Delta(\mathrm{gradient{}) = \frac{g_{\max} - g_{\min}}{2}
+\Delta(\mathrm{gradient}) = \frac{g_{\max} - g_{\min}}{2}
 $$
 
 The y-intercept uncertainty follows the same procedure using the maximum and minimum gradient lines
@@ -201,23 +201,23 @@ Only bonds with a change in dipole moment during vibration are IR-active.
 
 ### Wavenumber
 
-IR spectra are plotted as transmittance (%) versus wavenumber ($\bar{\nu}$) in $\mathrm{cm{}^{-1}$:
+IR spectra are plotted as transmittance (%) versus wavenumber ($\bar{\nu}$) in $\mathrm{cm}^{-1}$:
 
 $$
 \bar{\nu} = \frac{1}{\lambda}
 $$
 
-The useful range for organic analysis is approximately $400$--$4000\mathrm{ cm{}^{-1}$.
+The useful range for organic analysis is approximately $400$--$4000\mathrm{ cm}^{-1}$.
 
 ### Characteristic Absorptions
 
-| Bond                   | Wavenumber ($\mathrm{cm{}^{-1}$) | Notes                         |
+| Bond                   | Wavenumber ($\mathrm{cm}^{-1}$) | Notes                         |
 | ---------------------- | ------------------------------- | ----------------------------- |
 | O--H (alcohol, free)   | $3550$--$3200$                  | Broad, rounded                |
 | O--H (carboxylic acid) | $3000$--$2500$                  | Very broad                    |
 | N--H                   | $3500$--$3300$                  | Medium, often two peaks       |
 | C--H (alkane)          | $3000$--$2850$                  | Sharp                         |
-| C--H (alkene/arene)    | $3100$--$3000$                  | Above $3000\mathrm{ cm{}^{-1}$ |
+| C--H (alkene/arene)    | $3100$--$3000$                  | Above $3000\mathrm{ cm}^{-1}$ |
 | C$\equiv$C             | $2250$--$2100$                  | Weak or absent if symmetric   |
 | C$\equiv$N             | $2250$--$2200$                  | Sharp                         |
 | C=O                    | $1700$--$1750$                  | Strong, characteristic        |
@@ -228,20 +228,20 @@ The useful range for organic analysis is approximately $400$--$4000\mathrm{ cm{}
 
 ### Fingerprint Region
 
-The region below $1500\mathrm{ cm{}^{-1}$ contains complex absorptions unique to each molecule. It is
+The region below $1500\mathrm{ cm}^{-1}$ contains complex absorptions unique to each molecule. It is
 used to confirm identity by comparison with a reference spectrum.
 
 ### Identifying Functional Groups
 
-1. Check above $3000\mathrm{ cm{}^{-1}$ for O--H, N--H, and C--H stretches.
-2. Check $2200$--$2250\mathrm{ cm{}^{-1}$ for C$\equiv$C and C$\equiv$N.
-3. Check $1700$--$1750\mathrm{ cm{}^{-1}$ for C=O.
+1. Check above $3000\mathrm{ cm}^{-1}$ for O--H, N--H, and C--H stretches.
+2. Check $2200$--$2250\mathrm{ cm}^{-1}$ for C$\equiv$C and C$\equiv$N.
+3. Check $1700$--$1750\mathrm{ cm}^{-1}$ for C=O.
 4. Use the fingerprint region to confirm.
 
 :::info[Example]
 
-An unknown compound shows: broad absorption at $3300\mathrm{ cm{}^{-1}$, sharp absorption at
-$1700\mathrm{ cm{}^{-1}$, and a C--O stretch at $1200\mathrm{ cm{}^{-1}$. This is consistent with a
+An unknown compound shows: broad absorption at $3300\mathrm{ cm}^{-1}$, sharp absorption at
+$1700\mathrm{ cm}^{-1}$, and a C--O stretch at $1200\mathrm{ cm}^{-1}$. This is consistent with a
 carboxylic acid.
 
 :::
@@ -252,7 +252,7 @@ carboxylic acid.
 
 ### Principle (Organic Chemistry Context)
 
-Electron impact ionization produces a molecular ion $\mathrm{M{}^{+\bullet}$ that fragments. The mass
+Electron impact ionization produces a molecular ion $\mathrm{M}^{+\bullet}$ that fragments. The mass
 spectrum plots relative abundance against $m/z$.
 
 ### Key Information from MS
@@ -260,8 +260,8 @@ spectrum plots relative abundance against $m/z$.
 | Feature       | Information                                                |
 | ------------- | ---------------------------------------------------------- |
 | Molecular ion | Molar mass of the compound                                 |
-| M + 1 peak    | Presence of $\mathrm{C{}$-13 (about $1.1\%$ per C atom)     |
-| M + 2 peak    | Presence of $\mathrm{Cl{}$ ($3:1$) or $\mathrm{Br{}$ ($1:1$) |
+| M + 1 peak    | Presence of $\mathrm{C}$-13 (about $1.1\%$ per C atom)     |
+| M + 2 peak    | Presence of $\mathrm{Cl}$ ($3:1$) or $\mathrm{Br}$ ($1:1$) |
 | Fragmentation | Structural information about the molecule                  |
 
 ### Nitrogen Rule
@@ -274,14 +274,14 @@ atoms.
 
 | Fragment ($m/z$) | Likely species                                               |
 | ---------------- | ------------------------------------------------------------ |
-| $15$             | $\mathrm{CH{}_3^+$                                            |
-| $17$             | $\mathrm{OH{}^+$                                              |
-| $29$             | $\mathrm{C{}_2\mathrm{H{}_5^+$ or $\mathrm{CHO{}^+$             |
-| $31$             | $\mathrm{CH{}_2\mathrm{OH{}^+$ (primary alcohol)               |
-| $43$             | $\mathrm{C{}_3\mathrm{H{}_7^+$ or $\mathrm{CH{}_3\mathrm{CO{}^+$ |
-| $45$             | $\mathrm{COOH{}^+$ or $\mathrm{C{}_2\mathrm{H{}_5\mathrm{O{}^+$  |
-| $77$             | $\mathrm{C{}_6\mathrm{H{}_5^+$ (benzene ring)                  |
-| $91$             | $\mathrm{C{}_7\mathrm{H{}_7^+$ (tropylium ion, alkylbenzene)   |
+| $15$             | $\mathrm{CH}_3^+$                                            |
+| $17$             | $\mathrm{OH}^+$                                              |
+| $29$             | $\mathrm{C}_2\mathrm{H}_5^+$ or $\mathrm{CHO}^+$             |
+| $31$             | $\mathrm{CH}_2\mathrm{OH}^+$ (primary alcohol)               |
+| $43$             | $\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ |
+| $45$             | $\mathrm{COOH}^+$ or $\mathrm{C}_2\mathrm{H}_5\mathrm{O}^+$  |
+| $77$             | $\mathrm{C}_6\mathrm{H}_5^+$ (benzene ring)                  |
+| $91$             | $\mathrm{C}_7\mathrm{H}_7^+$ (tropylium ion, alkylbenzene)   |
 
 ### Common Pitfalls
 
@@ -294,7 +294,7 @@ atoms.
 
 ### Principle
 
-Nuclei with non-zero spin ($I = 1/2$ for $\mathrm{^1H{}$ and $\mathrm{^{13}C}$) align with or against
+Nuclei with non-zero spin ($I = 1/2$ for $\mathrm{^1H}$ and $\mathrm{^{13}C}$) align with or against
 an external magnetic field. Radiofrequency radiation causes transitions between spin states. The
 resonance frequency depends on the electronic environment.
 
@@ -303,12 +303,12 @@ resonance frequency depends on the electronic environment.
 The chemical shift $\delta$ is defined relative to a reference standard (tetramethylsilane, TMS):
 
 $$
-\delta = \frac{\nu_{\mathrm{sample{}} - \nu_{\mathrm{reference{}}}{\nu_{\mathrm{reference{}}} \times 10^6\mathrm{ ppm{}
+\delta = \frac{\nu_{\mathrm{sample}} - \nu_{\mathrm{reference}}}{\nu_{\mathrm{reference}}} \times 10^6\mathrm{ ppm}
 $$
 
-TMS is assigned $\delta = 0\mathrm{ ppm{}$.
+TMS is assigned $\delta = 0\mathrm{ ppm}$.
 
-### $\mathrm{^1H{}$ NMR Features
+### $\mathrm{^1H}$ NMR Features
 
 | Feature            | What it tells you                                  |
 | ------------------ | -------------------------------------------------- |
@@ -330,7 +330,7 @@ carbons.
 | $3$                  | Quartet   | $q$    |
 | $4$                  | Quintet   | $quin$ |
 
-### Characteristic $\mathrm{^1H{}$ NMR Chemical Shifts
+### Characteristic $\mathrm{^1H}$ NMR Chemical Shifts
 
 | Proton type           | $\delta$ (ppm)       |
 | --------------------- | -------------------- |
@@ -361,20 +361,20 @@ carbons.
 
 ### Solvent Peaks
 
-Deuterated solvents are used (e.g., $\mathrm{CDCl{}_3$, $\mathrm{D{}_2\mathrm{O{}$). Residual proton
+Deuterated solvents are used (e.g., $\mathrm{CDCl}_3$, $\mathrm{D}_2\mathrm{O}$). Residual proton
 peaks appear at known positions:
 
-| Solvent                      | Residual $\mathrm{^1H{}$ $\delta$ (ppm) |
+| Solvent                      | Residual $\mathrm{^1H}$ $\delta$ (ppm) |
 | ---------------------------- | -------------------------------------- |
-| $\mathrm{CDCl{}_3$            | $7.26$                                 |
-| $\mathrm{D{}_2\mathrm{O{}$     | $4.79$                                 |
-| $\mathrm{DMSO{}\mathrm{-{}d_6$ | $2.50$                                 |
+| $\mathrm{CDCl}_3$            | $7.26$                                 |
+| $\mathrm{D}_2\mathrm{O}$     | $4.79$                                 |
+| $\mathrm{DMSO}\mathrm{-}d_6$ | $2.50$                                 |
 
 ### Common Pitfalls
 
-- Counting equivalent protons incorrectly (e.g., the three methyl protons of a $\mathrm{CH{}_3$ group
+- Counting equivalent protons incorrectly (e.g., the three methyl protons of a $\mathrm{CH}_3$ group
   count as one environment).
-- Forgetting that protons on heteroatoms (OH, NH) may exchange with $\mathrm{D{}_2\mathrm{O{}$ and
+- Forgetting that protons on heteroatoms (OH, NH) may exchange with $\mathrm{D}_2\mathrm{O}$ and
   disappear from the spectrum.
 - Misassigning splitting patterns when non-equivalent neighbouring protons exist.
 
@@ -387,33 +387,33 @@ peaks appear at known positions:
 1. **MS**: Determine the molecular mass and molecular formula from the molecular ion peak and
    isotope pattern.
 2. **IR**: Identify functional groups from characteristic absorptions.
-3. **$\mathrm{^1H{}$ NMR**: Determine the number of proton environments, their relative numbers, and
+3. **$\mathrm{^1H}$ NMR**: Determine the number of proton environments, their relative numbers, and
    splitting patterns.
 4. **$\mathrm{^{13}C}$ NMR**: Determine the number of carbon environments.
 5. Assemble the structural fragments and propose a structure consistent with all data.
 
 :::info[Example]
 
-A compound has molecular ion $\mathrm{M{}^+ = 88$. IR shows a strong broad peak at
-$3000$--$2500\mathrm{ cm{}^{-1}$ and a strong peak at $1710\mathrm{ cm{}^{-1}$. $\mathrm{^1H{}$ NMR:
-$\delta\ 1.2\ (t,\ 3\mathrm{H{})$, $\delta\ 2.6\ (q,\ 2\mathrm{H{})$,
-$\delta\ 11.0\ (s,\ 1\mathrm{H{})$.
+A compound has molecular ion $\mathrm{M}^+ = 88$. IR shows a strong broad peak at
+$3000$--$2500\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. $\mathrm{^1H}$ NMR:
+$\delta\ 1.2\ (t,\ 3\mathrm{H})$, $\delta\ 2.6\ (q,\ 2\mathrm{H})$,
+$\delta\ 11.0\ (s,\ 1\mathrm{H})$.
 
 - M = 88; IR suggests carboxylic acid (broad O--H and C=O).
-- $\mathrm{^1H{}$ NMR: 3 environments. Quartet + triplet suggests an ethyl group
-  ($\mathrm{CH{}_3\mathrm{CH{}_2$--).
+- $\mathrm{^1H}$ NMR: 3 environments. Quartet + triplet suggests an ethyl group
+  ($\mathrm{CH}_3\mathrm{CH}_2$--).
 - Singlet at $\delta\ 11.0$ confirms COOH.
-- Structure: $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{COOH{}$ (propanoic acid, $M = 74$). Mismatch — need
+- Structure: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$ (propanoic acid, $M = 74$). Mismatch — need
   to re-evaluate.
-- With $\mathrm{M{} = 88$: try $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}_2$.
-  $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{COOH{}$ (butanoic acid) has M = 88. NMR:
-  $\delta\ 0.9\ (t,\ 3\mathrm{H{})$, $\delta\ 1.6\ (sextet,\ 2\mathrm{H{})$,
-  $\delta\ 2.3\ (t,\ 2\mathrm{H{})$, $\delta\ 11.0\ (s,\ 1\mathrm{H{})$.
+- With $\mathrm{M} = 88$: try $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$.
+  $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH}$ (butanoic acid) has M = 88. NMR:
+  $\delta\ 0.9\ (t,\ 3\mathrm{H})$, $\delta\ 1.6\ (sextet,\ 2\mathrm{H})$,
+  $\delta\ 2.3\ (t,\ 2\mathrm{H})$, $\delta\ 11.0\ (s,\ 1\mathrm{H})$.
 
 The original triplet/quartet pattern is consistent with an ethyl ester, not a carboxylic acid.
-Consider ethyl methanoate ($\mathrm{HCOOCH{}_2\mathrm{CH{}_3$, $M = 74$) — still a mismatch. The
-correct answer is $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{COOCH{}_3$ (methyl propanoate, $M = 74$) — but M
-= 88 is $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{COOCH{}_2\mathrm{CH{}_3$ (ethyl propanoate, $M = 102$).
+Consider ethyl methanoate ($\mathrm{HCOOCH}_2\mathrm{CH}_3$, $M = 74$) — still a mismatch. The
+correct answer is $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_3$ (methyl propanoate, $M = 74$) — but M
+= 88 is $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_2\mathrm{CH}_3$ (ethyl propanoate, $M = 102$).
 This illustrates the iterative nature of spectral analysis.
 
 :::
@@ -425,35 +425,35 @@ This illustrates the iterative nature of spectral analysis.
 <details>
 <summary>Problem 1</summary>
 
-A student measures the density of a liquid using a $10.00\mathrm{ cm{}^3$ measuring cylinder
-(absolute uncertainty $\pm 0.05\mathrm{ cm{}^3$) and a balance (absolute uncertainty
-$\pm 0.01\mathrm{ g{}$). The volume is $8.50\mathrm{ cm{}^3$ and the mass is $6.82\mathrm{ g{}$.
+A student measures the density of a liquid using a $10.00\mathrm{ cm}^3$ measuring cylinder
+(absolute uncertainty $\pm 0.05\mathrm{ cm}^3$) and a balance (absolute uncertainty
+$\pm 0.01\mathrm{ g}$). The volume is $8.50\mathrm{ cm}^3$ and the mass is $6.82\mathrm{ g}$.
 Calculate the density and its percentage uncertainty.
 
 **Solution:**
 
 $$
-\rho = \frac{m}{V} = \frac{6.82}{8.50} = 0.802\mathrm{ g/cm{}^3
+\rho = \frac{m}{V} = \frac{6.82}{8.50} = 0.802\mathrm{ g/cm}^3
 $$
 
 $$
-\%\mathrm{u{}(m) = \frac{0.01}{6.82} \times 100\% = 0.147\%
+\%\mathrm{u}(m) = \frac{0.01}{6.82} \times 100\% = 0.147\%
 $$
 
 $$
-\%\mathrm{u{}(V) = \frac{0.05}{8.50} \times 100\% = 0.588\%
+\%\mathrm{u}(V) = \frac{0.05}{8.50} \times 100\% = 0.588\%
 $$
 
 $$
-\%\mathrm{u{}(\rho) = 0.147\% + 0.588\% = 0.735\% \approx 0.7\%
+\%\mathrm{u}(\rho) = 0.147\% + 0.588\% = 0.735\% \approx 0.7\%
 $$
 
 $$
-\Delta\rho = 0.802 \times 0.007 = 0.006\mathrm{ g/cm{}^3
+\Delta\rho = 0.802 \times 0.007 = 0.006\mathrm{ g/cm}^3
 $$
 
 $$
-\rho = 0.802 \pm 0.006\mathrm{ g/cm{}^3
+\rho = 0.802 \pm 0.006\mathrm{ g/cm}^3
 $$
 
 </details>
@@ -461,20 +461,20 @@ $$
 <details>
 <summary>Problem 2</summary>
 
-An IR spectrum shows absorptions at $3300\mathrm{ cm{}^{-1}$ (broad), $2950\mathrm{ cm{}^{-1}$
-(sharp), $1705\mathrm{ cm{}^{-1}$ (strong), and $1050\mathrm{ cm{}^{-1}$ (strong). The mass spectrum
-shows $\mathrm{M{}^+ = 74$ as the base peak. Deduce the structure.
+An IR spectrum shows absorptions at $3300\mathrm{ cm}^{-1}$ (broad), $2950\mathrm{ cm}^{-1}$
+(sharp), $1705\mathrm{ cm}^{-1}$ (strong), and $1050\mathrm{ cm}^{-1}$ (strong). The mass spectrum
+shows $\mathrm{M}^+ = 74$ as the base peak. Deduce the structure.
 
 **Solution:**
 
-- $\mathrm{M{} = 74$: possible molecular formula $\mathrm{C{}_3\mathrm{H{}_6\mathrm{O{}_2$.
-- $3300\mathrm{ cm{}^{-1}$ broad: O--H (carboxylic acid or alcohol).
-- $1705\mathrm{ cm{}^{-1}$: C=O (carbonyl).
+- $\mathrm{M} = 74$: possible molecular formula $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$.
+- $3300\mathrm{ cm}^{-1}$ broad: O--H (carboxylic acid or alcohol).
+- $1705\mathrm{ cm}^{-1}$: C=O (carbonyl).
 - Combined O--H + C=O at these positions: carboxylic acid.
-- $\mathrm{C{}_3\mathrm{H{}_6\mathrm{O{}_2$ with a COOH group:
-  $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{COOH{}$ (propanoic acid).
-- $1050\mathrm{ cm{}^{-1}$: C--O stretch consistent with the acid.
-- $\mathrm{M{} = 74$: $12(3) + 1(6) + 16(2) = 74$. Confirmed.
+- $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$ with a COOH group:
+  $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$ (propanoic acid).
+- $1050\mathrm{ cm}^{-1}$: C--O stretch consistent with the acid.
+- $\mathrm{M} = 74$: $12(3) + 1(6) + 16(2) = 74$. Confirmed.
 
 The compound is propanoic acid.
 
@@ -483,30 +483,30 @@ The compound is propanoic acid.
 <details>
 <summary>Problem 3</summary>
 
-A compound $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}$ shows the following $\mathrm{^1H{}$ NMR spectrum:
-$\delta\ 1.2\ (d,\ 6\mathrm{H{})$, $\delta\ 2.1\ (s,\ 3\mathrm{H{})$,
-$\delta\ 3.6\ (septet,\ 1\mathrm{H{})$. Identify the compound.
+A compound $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ shows the following $\mathrm{^1H}$ NMR spectrum:
+$\delta\ 1.2\ (d,\ 6\mathrm{H})$, $\delta\ 2.1\ (s,\ 3\mathrm{H})$,
+$\delta\ 3.6\ (septet,\ 1\mathrm{H})$. Identify the compound.
 
 **Solution:**
 
-- $d, 6\mathrm{H{}$ at $\delta\ 1.2$: two equivalent $\mathrm{CH{}_3$ groups, each neighbouring one H.
-- $s, 3\mathrm{H{}$ at $\delta\ 2.1$: isolated $\mathrm{CH{}_3$ group — likely adjacent to C=O.
-- $septet, 1\mathrm{H{}$ at $\delta\ 3.6$: one proton neighbouring six equivalent protons.
-- The doublet + septet pattern indicates an isopropyl group: $\mathrm{(CH{}_3)_2\mathrm{CH{}$--.
-- The singlet at $\delta\ 2.1$ suggests $\mathrm{CH{}_3\mathrm{CO{}$--.
-- Structure: $\mathrm{CH{}_3\mathrm{COCH(CH{}_3)_2$ (3-methyl-2-butanone).
+- $d, 6\mathrm{H}$ at $\delta\ 1.2$: two equivalent $\mathrm{CH}_3$ groups, each neighbouring one H.
+- $s, 3\mathrm{H}$ at $\delta\ 2.1$: isolated $\mathrm{CH}_3$ group — likely adjacent to C=O.
+- $septet, 1\mathrm{H}$ at $\delta\ 3.6$: one proton neighbouring six equivalent protons.
+- The doublet + septet pattern indicates an isopropyl group: $\mathrm{(CH}_3)_2\mathrm{CH}$--.
+- The singlet at $\delta\ 2.1$ suggests $\mathrm{CH}_3\mathrm{CO}$--.
+- Structure: $\mathrm{CH}_3\mathrm{COCH(CH}_3)_2$ (3-methyl-2-butanone).
 
-Check: $\mathrm{C{}_5\mathrm{H{}_{10}\mathrm{O{}$ — this does not match
-$\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}$. Reconsider: $\mathrm{CH{}_3\mathrm{COCH{}_2\mathrm{CH{}_3$
-(butan-2-one) has $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}$. But its NMR would show
-$\delta\ 1.0\ (t,\ 3\mathrm{H{})$, $\delta\ 2.1\ (s,\ 3\mathrm{H{})$,
-$\delta\ 2.4\ (q,\ 2\mathrm{H{})$. The septet pattern does not match.
+Check: $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$ — this does not match
+$\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. Reconsider: $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3$
+(butan-2-one) has $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. But its NMR would show
+$\delta\ 1.0\ (t,\ 3\mathrm{H})$, $\delta\ 2.1\ (s,\ 3\mathrm{H})$,
+$\delta\ 2.4\ (q,\ 2\mathrm{H})$. The septet pattern does not match.
 
-The correct answer is: the formula must be $\mathrm{C{}_5\mathrm{H{}_{12}\mathrm{O{}$ for an isopropyl
-group with a $\mathrm{CH{}_3$. If restricted to $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}$, re-examine:
-2-methylpropanal, $\mathrm{(CH{}_3)_2\mathrm{CHCHO{}$, has the correct formula. Its NMR:
-$\delta\ 1.1\ (d,\ 6\mathrm{H{})$, $\delta\ 2.4\ (septet,\ 1\mathrm{H{})$,
-$\delta\ 9.7\ (s,\ 1\mathrm{H{})$. The singlet at $\delta\ 2.1$ does not match.
+The correct answer is: the formula must be $\mathrm{C}_5\mathrm{H}_{12}\mathrm{O}$ for an isopropyl
+group with a $\mathrm{CH}_3$. If restricted to $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$, re-examine:
+2-methylpropanal, $\mathrm{(CH}_3)_2\mathrm{CHCHO}$, has the correct formula. Its NMR:
+$\delta\ 1.1\ (d,\ 6\mathrm{H})$, $\delta\ 2.4\ (septet,\ 1\mathrm{H})$,
+$\delta\ 9.7\ (s,\ 1\mathrm{H})$. The singlet at $\delta\ 2.1$ does not match.
 
 This problem demonstrates the importance of checking the molecular formula against the proposed
 structure.
@@ -518,16 +518,16 @@ structure.
 
 The first ionization energy of sodium is determined by measuring the minimum frequency of light that
 ejects electrons from a sodium surface. The threshold frequency is
-$5.56 \times 10^{14}\mathrm{ Hz{}$. Calculate the first ionization energy in $\mathrm{kJ/mol{}$.
+$5.56 \times 10^{14}\mathrm{ Hz}$. Calculate the first ionization energy in $\mathrm{kJ/mol}$.
 
 **Solution:**
 
 $$
-E = h\nu = (6.626 \times 10^{-34})(5.56 \times 10^{14}) = 3.68 \times 10^{-19}\mathrm{ J/atom{}
+E = h\nu = (6.626 \times 10^{-34})(5.56 \times 10^{14}) = 3.68 \times 10^{-19}\mathrm{ J/atom}
 $$
 
 $$
-E_{\mathrm{mol{}} = 3.68 \times 10^{-19} \times 6.022 \times 10^{23} = 222000\mathrm{ J/mol{} = 222\mathrm{ kJ/mol{}
+E_{\mathrm{mol}} = 3.68 \times 10^{-19} \times 6.022 \times 10^{23} = 222000\mathrm{ J/mol} = 222\mathrm{ kJ/mol}
 $$
 
 </details>
@@ -538,43 +538,43 @@ $$
 
 **Worked Example: Error propagation in a titration**
 
-A student titrates $25.00 \pm 0.03\mathrm{ mL{}$ of $\mathrm{HCl{}$ with $0.1050 \pm 0.0005\mathrm{ M{}$
-$\mathrm{NaOH{}$. The average titre is $23.45 \pm 0.08\mathrm{ mL{}$. Calculate the concentration of
-$\mathrm{HCl{}$ and its absolute uncertainty.
+A student titrates $25.00 \pm 0.03\mathrm{ mL}$ of $\mathrm{HCl}$ with $0.1050 \pm 0.0005\mathrm{ M}$
+$\mathrm{NaOH}$. The average titre is $23.45 \pm 0.08\mathrm{ mL}$. Calculate the concentration of
+$\mathrm{HCl}$ and its absolute uncertainty.
 
 <details>
 <summary>Solution</summary>
 
 **Step 1: Calculate the concentration.**
 
-$$n(\mathrm{NaOH{}) = 0.1050 \times 0.02345 = 2.4623 \times 10^{-3}\mathrm{ mol{}$$
+$$n(\mathrm{NaOH}) = 0.1050 \times 0.02345 = 2.4623 \times 10^{-3}\mathrm{ mol}$$
 
-By stoichiometry (1:1 reaction): $n(\mathrm{HCl{}) = n(\mathrm{NaOH{}) = 2.4623 \times 10^{-3}\mathrm{ mol{}$
+By stoichiometry (1:1 reaction): $n(\mathrm{HCl}) = n(\mathrm{NaOH}) = 2.4623 \times 10^{-3}\mathrm{ mol}$
 
-$$[\mathrm{HCl{}] = \frac{n}{V} = \frac{2.4623 \times 10^{-3}}{0.02500} = 0.09849\mathrm{ M{}$$
+$$[\mathrm{HCl}] = \frac{n}{V} = \frac{2.4623 \times 10^{-3}}{0.02500} = 0.09849\mathrm{ M}$$
 
 **Step 2: Calculate percentage uncertainties.**
 
-$$\%\mathrm{u{}([\mathrm{NaOH{}]) = \frac{0.0005}{0.1050} \times 100\% = 0.476\%$$
+$$\%\mathrm{u}([\mathrm{NaOH}]) = \frac{0.0005}{0.1050} \times 100\% = 0.476\%$$
 
-$$\%\mathrm{u{}(V_{\mathrm{NaOH{}}) = \frac{0.08}{23.45} \times 100\% = 0.341\%$$
+$$\%\mathrm{u}(V_{\mathrm{NaOH}}) = \frac{0.08}{23.45} \times 100\% = 0.341\%$$
 
-$$\%\mathrm{u{}(V_{\mathrm{HCl{}}) = \frac{0.03}{25.00} \times 100\% = 0.120\%$$
+$$\%\mathrm{u}(V_{\mathrm{HCl}}) = \frac{0.03}{25.00} \times 100\% = 0.120\%$$
 
 **Step 3: Propagate uncertainties.**
 
-The calculation is $[\mathrm{HCl{}] = \dfrac{[\mathrm{NaOH{}] \times V_{\mathrm{NaOH{}}}{V_{\mathrm{HCl{}}}$,
+The calculation is $[\mathrm{HCl}] = \dfrac{[\mathrm{NaOH}] \times V_{\mathrm{NaOH}}}{V_{\mathrm{HCl}}}$,
 so we add percentage uncertainties (multiplication and division):
 
-$$\%\mathrm{u{}([\mathrm{HCl{}]) = 0.476\% + 0.341\% + 0.120\% = 0.937\% \approx 0.9\%$$
+$$\%\mathrm{u}([\mathrm{HCl}]) = 0.476\% + 0.341\% + 0.120\% = 0.937\% \approx 0.9\%$$
 
 **Step 4: Calculate absolute uncertainty.**
 
-$$\Delta[\mathrm{HCl{}] = 0.09849 \times 0.00937 = 0.00092\mathrm{ M{}$$
+$$\Delta[\mathrm{HCl}] = 0.09849 \times 0.00937 = 0.00092\mathrm{ M}$$
 
-$$[\mathrm{HCl{}] = 0.0985 \pm 0.0009\mathrm{ M{}$$
+$$[\mathrm{HCl}] = 0.0985 \pm 0.0009\mathrm{ M}$$
 
-The dominant source of uncertainty is the $\mathrm{NaOH{}$ concentration, contributing approximately
+The dominant source of uncertainty is the $\mathrm{NaOH}$ concentration, contributing approximately
 51% of the total uncertainty. Improving the accuracy of the standard solution preparation would most
 effectively reduce the overall uncertainty.
 
@@ -591,10 +591,10 @@ Determine the molecular formula.
 
 **Step 1: Estimate the number of carbon atoms.**
 
-The M+1 peak arises primarily from $^{13}\mathrm{C{}$, which has a natural abundance of 1.1% per
+The M+1 peak arises primarily from $^{13}\mathrm{C}$, which has a natural abundance of 1.1% per
 carbon atom.
 
-$$\mathrm{Number\ of\ C\ atoms{} \approx \frac{\%\mathrm{abundance\ of\ M+1{}}{1.1\%} = \frac{6.6\%}{1.1\%} = 6$$
+$$\mathrm{Number\ of\ C\ atoms} \approx \frac{\%\mathrm{abundance\ of\ M+1}}{1.1\%} = \frac{6.6\%}{1.1\%} = 6$$
 
 **Step 2: Calculate the remaining mass.**
 
@@ -604,100 +604,100 @@ Remaining mass: $78 - 72 = 6$, corresponding to 6 hydrogen atoms.
 
 **Step 3: Propose the molecular formula.**
 
-$$\mathrm{C{}_6\mathrm{H{}_6$$
+$$\mathrm{C}_6\mathrm{H}_6$$
 
 **Step 4: Verify with the degree of unsaturation.**
 
-$$\mathrm{DBE{} = C + 1 - \frac{H}{2} = 6 + 1 - \frac{6}{2} = 4$$
+$$\mathrm{DBE} = C + 1 - \frac{H}{2} = 6 + 1 - \frac{6}{2} = 4$$
 
 A DBE of 4 is characteristic of an aromatic ring (one ring + three double bonds), consistent with
 benzene.
 
 **Step 5: Confirm the M+2 peak.**
 
-With no chlorine or bromine present, the M+2 peak should be very small (from $^{18}\mathrm{O{}$,
-$^{2}\mathrm{H{}$, etc.). The absence of a significant M+2 peak is consistent with
-$\mathrm{C{}_6\mathrm{H{}_6$.
+With no chlorine or bromine present, the M+2 peak should be very small (from $^{18}\mathrm{O}$,
+$^{2}\mathrm{H}$, etc.). The absence of a significant M+2 peak is consistent with
+$\mathrm{C}_6\mathrm{H}_6$.
 
 </details>
 
 **Worked Example: Combined spectroscopic identification**
 
-An unknown compound has $\mathrm{M{}^+ = 88$. IR: strong broad peak at
-$2500$--$3300\mathrm{ cm{}^{-1}$, strong peak at $1715\mathrm{ cm{}^{-1}$, and a C--O stretch at
-$1050\mathrm{ cm{}^{-1}$. $^{1}\mathrm{H{}$ NMR: $\delta\ 0.9\ (t,\ 3\mathrm{H{})$,
-$\delta\ 1.6\ (sextet,\ 2\mathrm{H{})$, $\delta\ 2.3\ (t,\ 2\mathrm{H{})$,
-$\delta\ 11.0\ (s,\ 1\mathrm{H{})$. $^{13}\mathrm{C{}$ NMR: 4 signals. Identify the compound.
+An unknown compound has $\mathrm{M}^+ = 88$. IR: strong broad peak at
+$2500$--$3300\mathrm{ cm}^{-1}$, strong peak at $1715\mathrm{ cm}^{-1}$, and a C--O stretch at
+$1050\mathrm{ cm}^{-1}$. $^{1}\mathrm{H}$ NMR: $\delta\ 0.9\ (t,\ 3\mathrm{H})$,
+$\delta\ 1.6\ (sextet,\ 2\mathrm{H})$, $\delta\ 2.3\ (t,\ 2\mathrm{H})$,
+$\delta\ 11.0\ (s,\ 1\mathrm{H})$. $^{13}\mathrm{C}$ NMR: 4 signals. Identify the compound.
 
 <details>
 <summary>Solution</summary>
 
 **Step 1: Determine the molecular formula.**
 
-$\mathrm{M{} = 88$. Try $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}_2$: $4(12) + 8(1) + 2(16) = 88$.
+$\mathrm{M} = 88$. Try $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$: $4(12) + 8(1) + 2(16) = 88$.
 
-$$\mathrm{DBE{} = 4 + 1 - \frac{8}{2} = 1$$
+$$\mathrm{DBE} = 4 + 1 - \frac{8}{2} = 1$$
 
 **Step 2: Analyse IR data.**
 
-- Broad $2500$--$3300\mathrm{ cm{}^{-1}$: O--H stretch of a carboxylic acid.
-- $1715\mathrm{ cm{}^{-1}$: C=O stretch (carbonyl).
+- Broad $2500$--$3300\mathrm{ cm}^{-1}$: O--H stretch of a carboxylic acid.
+- $1715\mathrm{ cm}^{-1}$: C=O stretch (carbonyl).
 - Combined O--H + C=O: carboxylic acid functional group. DBE = 1 is consumed by the C=O.
 
-**Step 3: Analyse $^{1}\mathrm{H{}$ NMR data.**
+**Step 3: Analyse $^{1}\mathrm{H}$ NMR data.**
 
-- $\delta\ 0.9\ (t,\ 3\mathrm{H{})$: terminal $\mathrm{CH{}_3$ group neighbouring a $\mathrm{CH{}_2$.
-- $\delta\ 1.6\ (sextet,\ 2\mathrm{H{})$: $\mathrm{CH{}_2$ group between a $\mathrm{CH{}_3$ and a
-  $\mathrm{CH{}_2$.
-- $\delta\ 2.3\ (t,\ 2\mathrm{H{})$: $\mathrm{CH{}_2$ group adjacent to an electron-withdrawing
+- $\delta\ 0.9\ (t,\ 3\mathrm{H})$: terminal $\mathrm{CH}_3$ group neighbouring a $\mathrm{CH}_2$.
+- $\delta\ 1.6\ (sextet,\ 2\mathrm{H})$: $\mathrm{CH}_2$ group between a $\mathrm{CH}_3$ and a
+  $\mathrm{CH}_2$.
+- $\delta\ 2.3\ (t,\ 2\mathrm{H})$: $\mathrm{CH}_2$ group adjacent to an electron-withdrawing
   group (the carboxylic acid).
-- $\delta\ 11.0\ (s,\ 1\mathrm{H{})$: carboxylic acid proton (COOH).
+- $\delta\ 11.0\ (s,\ 1\mathrm{H})$: carboxylic acid proton (COOH).
 
 The triplet--sextet--triplet pattern indicates a propyl chain:
-$\mathrm{CH_3CH_2CH_2COOH{}$.
+$\mathrm{CH_3CH_2CH_2COOH}$.
 
 **Step 4: Verify.**
 
-- Proton count: $3 + 2 + 2 + 1 = 8 = \mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}_2$. Confirmed.
-- $^{13}\mathrm{C{}$ NMR: 4 signals (4 distinct carbon environments). Confirmed.
-- Molar mass: $88\mathrm{ g/mol{}$. Confirmed.
+- Proton count: $3 + 2 + 2 + 1 = 8 = \mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$. Confirmed.
+- $^{13}\mathrm{C}$ NMR: 4 signals (4 distinct carbon environments). Confirmed.
+- Molar mass: $88\mathrm{ g/mol}$. Confirmed.
 
-The compound is **butanoic acid** ($\mathrm{CH_3CH_2CH_2COOH{}$).
+The compound is **butanoic acid** ($\mathrm{CH_3CH_2CH_2COOH}$).
 
 </details>
 
 **Worked Example: Significant figures in logarithmic calculations**
 
-A student measures the $\mathrm{pH{}$ of a solution as $4.35$ at $25\degree\mathrm{C{}$. Calculate
-$[\mathrm{H{}^+]$ with the correct number of significant figures. Then calculate $K_a$ if the acid
-concentration is $0.10\mathrm{ M{}$ and the acid is monoprotic.
+A student measures the $\mathrm{pH}$ of a solution as $4.35$ at $25\degree\mathrm{C}$. Calculate
+$[\mathrm{H}^+]$ with the correct number of significant figures. Then calculate $K_a$ if the acid
+concentration is $0.10\mathrm{ M}$ and the acid is monoprotic.
 
 <details>
 <summary>Solution</summary>
 
-**Step 1: Convert pH to $[\mathrm{H{}^+]$.**
+**Step 1: Convert pH to $[\mathrm{H}^+]$.**
 
-$$[\mathrm{H{}^+] = 10^{-\mathrm{pH{}} = 10^{-4.35} = 4.5 \times 10^{-5}\mathrm{ M{}$$
+$$[\mathrm{H}^+] = 10^{-\mathrm{pH}} = 10^{-4.35} = 4.5 \times 10^{-5}\mathrm{ M}$$
 
-The mantissa of the $\mathrm{pH{}$ (4.35) has two decimal places, so $[\mathrm{H{}^+]$ has two
-significant figures: $4.5 \times 10^{-5}\mathrm{ M{}$.
+The mantissa of the $\mathrm{pH}$ (4.35) has two decimal places, so $[\mathrm{H}^+]$ has two
+significant figures: $4.5 \times 10^{-5}\mathrm{ M}$.
 
 **Step 2: Calculate $K_a$.**
 
-For a monoprotic weak acid $\mathrm{HA{}$ with $c_0 = 0.10\mathrm{ M{}$:
+For a monoprotic weak acid $\mathrm{HA}$ with $c_0 = 0.10\mathrm{ M}$:
 
-$$K_a = \frac{[\mathrm{H{}^+]^2}{c_0 - [\mathrm{H{}^+]} = \frac{(4.5 \times 10^{-5})^2}{0.10 - 4.5 \times 10^{-5}}$$
+$$K_a = \frac{[\mathrm{H}^+]^2}{c_0 - [\mathrm{H}^+]} = \frac{(4.5 \times 10^{-5})^2}{0.10 - 4.5 \times 10^{-5}}$$
 
-Since $[\mathrm{H{}^+] \ll c_0$: $K_a \approx \dfrac{(4.5 \times 10^{-5})^2}{0.10} = \dfrac{2.025 \times 10^{-9}}{0.10}$
+Since $[\mathrm{H}^+] \ll c_0$: $K_a \approx \dfrac{(4.5 \times 10^{-5})^2}{0.10} = \dfrac{2.025 \times 10^{-9}}{0.10}$
 
 $$K_a = 2.0 \times 10^{-8}$$
 
-Two significant figures, matching the two significant figures in $[\mathrm{H{}^+]$.
+Two significant figures, matching the two significant figures in $[\mathrm{H}^+]$.
 
 **Step 3: Common error to avoid.**
 
 Writing $K_a = 2.025 \times 10^{-8}$ would be incorrect --- the result cannot be more precise than
-the input data. The $\mathrm{pH{}$ was given to two decimal places, limiting all derived quantities to
+the input data. The $\mathrm{pH}$ was given to two decimal places, limiting all derived quantities to
 two significant figures.
 
 </details>
@@ -706,8 +706,8 @@ two significant figures.
 
 A student measures the rate constant $k$ of a reaction at different temperatures and plots
 $\ln(k)$ versus $1/T$ (Arrhenius plot). The gradient of the best-fit line is
-$-5400\mathrm{ K{}$. The maximum gradient line has gradient $-5800\mathrm{ K{}$ and the minimum
-gradient line has gradient $-5000\mathrm{ K{}$. Calculate $E_a$ and its absolute uncertainty.
+$-5400\mathrm{ K}$. The maximum gradient line has gradient $-5800\mathrm{ K}$ and the minimum
+gradient line has gradient $-5000\mathrm{ K}$. Calculate $E_a$ and its absolute uncertainty.
 
 <details>
 <summary>Solution</summary>
@@ -716,21 +716,21 @@ gradient line has gradient $-5000\mathrm{ K{}$. Calculate $E_a$ and its absolute
 
 From the Arrhenius equation: $\ln(k) = -\dfrac{E_a}{R} \cdot \dfrac{1}{T} + \ln(A)$
 
-$$\mathrm{gradient{} = -\frac{E_a}{R}$$
+$$\mathrm{gradient} = -\frac{E_a}{R}$$
 
-$$E_a = -\mathrm{gradient{} \times R = -(-5400) \times 8.314 = 44900\mathrm{ J/mol{} = 44.9\mathrm{ kJ/mol{}$$
+$$E_a = -\mathrm{gradient} \times R = -(-5400) \times 8.314 = 44900\mathrm{ J/mol} = 44.9\mathrm{ kJ/mol}$$
 
 **Step 2: Calculate $E_a$ from the maximum and minimum gradients.**
 
-$$E_{a,\max} = 5800 \times 8.314 = 48200\mathrm{ J/mol{} = 48.2\mathrm{ kJ/mol{}$$
+$$E_{a,\max} = 5800 \times 8.314 = 48200\mathrm{ J/mol} = 48.2\mathrm{ kJ/mol}$$
 
-$$E_{a,\min} = 5000 \times 8.314 = 41600\mathrm{ J/mol{} = 41.6\mathrm{ kJ/mol{}$$
+$$E_{a,\min} = 5000 \times 8.314 = 41600\mathrm{ J/mol} = 41.6\mathrm{ kJ/mol}$$
 
 **Step 3: Calculate the absolute uncertainty.**
 
-$$\Delta E_a = \frac{E_{a,\max} - E_{a,\min}}{2} = \frac{48.2 - 41.6}{2} = 3.3\mathrm{ kJ/mol{}$$
+$$\Delta E_a = \frac{E_{a,\max} - E_{a,\min}}{2} = \frac{48.2 - 41.6}{2} = 3.3\mathrm{ kJ/mol}$$
 
-$$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol{}$$
+$$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol}$$
 
 </details>
 
@@ -739,8 +739,8 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol{}$$
 ## Common Pitfalls
 
 - **Using the smallest division (not half) for analogue instrument uncertainty**: A ruler with 1 mm
-  divisions has an absolute uncertainty of $\pm 0.5\mathrm{ mm{}$, not $\pm 1\mathrm{ mm{}$. A
-  thermometer with $1\degree\mathrm{C{}$ divisions has $\pm 0.5\degree\mathrm{C{}$.
+  divisions has an absolute uncertainty of $\pm 0.5\mathrm{ mm}$, not $\pm 1\mathrm{ mm}$. A
+  thermometer with $1\degree\mathrm{C}$ divisions has $\pm 0.5\degree\mathrm{C}$.
 
 - **Confusing absolute and percentage uncertainty during propagation**: For addition/subtraction,
   add absolute uncertainties. For multiplication/division, add percentage uncertainties. Applying
@@ -758,9 +758,9 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol{}$$
   the tallest peak (base peak). The molecular ion is the peak at the highest $m/z$ corresponding
   to the intact molecule, before fragmentation.
 
-- **Overlooking the $\mathrm{D{}_2\mathrm{O{}$ exchange test in NMR**: Protons on OH and NH groups
-  exchange with deuterium when $\mathrm{D{}_2\mathrm{O{}$ is added, causing those signals to
-  disappear from the $^{1}\mathrm{H{}$ NMR spectrum. This is a definitive test for labile protons.
+- **Overlooking the $\mathrm{D}_2\mathrm{O}$ exchange test in NMR**: Protons on OH and NH groups
+  exchange with deuterium when $\mathrm{D}_2\mathrm{O}$ is added, causing those signals to
+  disappear from the $^{1}\mathrm{H}$ NMR spectrum. This is a definitive test for labile protons.
 
 - **Forcing a line of best fit through the origin**: Only force through $(0, 0)$ if the data
   physically require it (e.g., Charles's law at absolute zero). For most experimental data, the
@@ -775,29 +775,29 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol{}$$
   rules out halogens but does not rule out other elements.
 
 - **Counting proton environments incorrectly in NMR**: Symmetry-equivalent protons produce a single
-  signal. In $\mathrm{CH_3CH_2CH_3{}$ (propane), there are two proton environments (the two terminal
-  $\mathrm{CH{}_3$ groups are equivalent), not three.
+  signal. In $\mathrm{CH_3CH_2CH_3}$ (propane), there are two proton environments (the two terminal
+  $\mathrm{CH}_3$ groups are equivalent), not three.
 
 ---
 
 ## Exam-Style Problems
 
 1. A student measures the density of a metal cylinder using a vernier caliper (absolute uncertainty
-   $\pm 0.02\mathrm{ mm{}$) and a balance (absolute uncertainty $\pm 0.01\mathrm{ g{}$). The diameter
-   is $12.50\mathrm{ mm{}$, the height is $25.00\mathrm{ mm{}$, and the mass is $20.00\mathrm{ g{}$.
+   $\pm 0.02\mathrm{ mm}$) and a balance (absolute uncertainty $\pm 0.01\mathrm{ g}$). The diameter
+   is $12.50\mathrm{ mm}$, the height is $25.00\mathrm{ mm}$, and the mass is $20.00\mathrm{ g}$.
    Calculate the density and its percentage uncertainty. The density formula is
    $\rho = \dfrac{m}{\pi(d/2)^2 h}$. **[Medium]**
 
-2. An IR spectrum shows absorptions at $3350\mathrm{ cm{}^{-1}$ (broad, medium),
-   $2950\mathrm{ cm{}^{-1}$ (sharp), $1680\mathrm{ cm{}^{-1}$ (strong), $1600\mathrm{ cm{}^{-1}$
-   (medium), and $1500\mathrm{ cm{}^{-1}$ (medium). The mass spectrum shows $\mathrm{M{}^+ = 122$
+2. An IR spectrum shows absorptions at $3350\mathrm{ cm}^{-1}$ (broad, medium),
+   $2950\mathrm{ cm}^{-1}$ (sharp), $1680\mathrm{ cm}^{-1}$ (strong), $1600\mathrm{ cm}^{-1}$
+   (medium), and $1500\mathrm{ cm}^{-1}$ (medium). The mass spectrum shows $\mathrm{M}^+ = 122$
    with a small M+2 peak. Deduce the structure and explain each piece of spectral evidence.
    **[Hard]**
 
-3. A compound $\mathrm{C{}_5\mathrm{H{}_{10}\mathrm{O{}_2$ has the following $^{1}\mathrm{H{}$ NMR
-   spectrum: $\delta\ 1.2\ (d,\ 6\mathrm{H{})$, $\delta\ 2.0\ (s,\ 3\mathrm{H{})$,
-   $\delta\ 4.1\ (septet,\ 1\mathrm{H{})$, $\delta\ 11.5\ (s,\ 1\mathrm{H{})$. IR shows a broad
-   peak at $3000\mathrm{ cm{}^{-1}$ and a strong peak at $1710\mathrm{ cm{}^{-1}$. Identify the
+3. A compound $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}_2$ has the following $^{1}\mathrm{H}$ NMR
+   spectrum: $\delta\ 1.2\ (d,\ 6\mathrm{H})$, $\delta\ 2.0\ (s,\ 3\mathrm{H})$,
+   $\delta\ 4.1\ (septet,\ 1\mathrm{H})$, $\delta\ 11.5\ (s,\ 1\mathrm{H})$. IR shows a broad
+   peak at $3000\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. Identify the
    compound and explain the splitting pattern. **[Hard]**
 
 4. A student performs an experiment to determine $K_c$ for a reaction and obtains the following
@@ -806,13 +806,13 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol{}$$
    (c) Is the spread of results consistent with random error only? **[Medium]**
 
 5. The mass spectrum of a compound shows the molecular ion at $m/z\ 94$ (base peak) and a prominent
-   fragment at $m/z\ 77$. The IR spectrum shows absorptions at $3050\mathrm{ cm{}^{-1}$,
-   $1600\mathrm{ cm{}^{-1}$, $1500\mathrm{ cm{}^{-1}$, and $750\mathrm{ cm{}^{-1}$. Deduce the
+   fragment at $m/z\ 77$. The IR spectrum shows absorptions at $3050\mathrm{ cm}^{-1}$,
+   $1600\mathrm{ cm}^{-1}$, $1500\mathrm{ cm}^{-1}$, and $750\mathrm{ cm}^{-1}$. Deduce the
    structure of the compound and explain the fragmentation. **[Medium]**
 
 6. In a colorimetry experiment, a student measures the absorbance of five standard solutions and
    constructs a calibration curve of absorbance versus concentration. The gradient is
-   $245\mathrm{ L/mol{}$ with an uncertainty of $\pm 12\mathrm{ L/mol{}$. An unknown solution has
+   $245\mathrm{ L/mol}$ with an uncertainty of $\pm 12\mathrm{ L/mol}$. An unknown solution has
    absorbance $0.350 \pm 0.005$. Calculate the concentration of the unknown and its uncertainty.
    **[Hard]**
 
@@ -820,9 +820,9 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol{}$$
    significant figures. State the rule that governs significant figures in logarithmic and
    antilogarithmic operations. **[Easy]**
 
-8. A $^{13}\mathrm{C{}$ NMR spectrum of a compound $\mathrm{C{}_8\mathrm{H{}_{10}$ shows 5 signals.
-   The $^{1}\mathrm{H{}$ NMR shows: $\delta\ 2.3\ (s,\ 3\mathrm{H{})$, $\delta\ 7.1$--$7.4$
-   $(m,\ 7\mathrm{H{})$. Identify the compound. Explain why the aromatic region shows a multiplet
+8. A $^{13}\mathrm{C}$ NMR spectrum of a compound $\mathrm{C}_8\mathrm{H}_{10}$ shows 5 signals.
+   The $^{1}\mathrm{H}$ NMR shows: $\delta\ 2.3\ (s,\ 3\mathrm{H})$, $\delta\ 7.1$--$7.4$
+   $(m,\ 7\mathrm{H})$. Identify the compound. Explain why the aromatic region shows a multiplet
    rather than distinct signals. **[Hard]**
 
 ---

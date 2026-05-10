@@ -202,7 +202,7 @@ statement, you must show it fails for every case.
 
 **Nested quantifiers** require careful handling. The order matters:
 
-$$\forall x \, \exists y, \; P(x,y) \quad \mathrm{is NOT equivalent to{} \quad \exists y \, \forall x, \; P(x,y)$$
+$$\forall x \, \exists y, \; P(x,y) \quad \mathrm{is NOT equivalent to} \quad \exists y \, \forall x, \; P(x,y)$$
 
 **Worked Example — Negating a nested quantifier statement:**
 
@@ -221,14 +221,14 @@ with each quantifier flipped.
 :::
 
 <details>
-<summary>Worked Example: Negate $\forall n \in \mathbb{'\{'}Z{'\}'}^+, \; \exists p \mathrm{ prime{}, \; p \gt n$</summary>
+<summary>Worked Example: Negate $\forall n \in \mathbb{'\{'}Z{'\}'}^+, \; \exists p \mathrm{ prime}, \; p \gt n$</summary>
 
 Step 1: Identify the structure — it is $\forall n, \; \exists p, \; P(n,p)$ where $P(n,p)$ is "$p$
 is prime and $p \gt n$."
 
-Step 2: Negate — $\exists n \in \mathbb{'\{'}Z{'\}'}^+, \; \forall p \mathrm{ prime{}, \; \neg(p \gt n)$
+Step 2: Negate — $\exists n \in \mathbb{'\{'}Z{'\}'}^+, \; \forall p \mathrm{ prime}, \; \neg(p \gt n)$
 
-Step 3: Simplify — $\exists n \in \mathbb{'\{'}Z{'\}'}^+, \; \forall p \mathrm{ prime{}, \; p \le n$
+Step 3: Simplify — $\exists n \in \mathbb{'\{'}Z{'\}'}^+, \; \forall p \mathrm{ prime}, \; p \le n$
 
 Reading: "There exists a positive integer $n$ such that every prime $p$ satisfies $p \le n$." This
 is false (there are infinitely many primes), so the original statement is true.
@@ -966,12 +966,12 @@ factor and repeat. By induction, the factorizations are identical. $\blacksquare
 **Definition:** $\gcd(a, b)$ is the greatest common divisor of $a$ and $b$ — the largest positive
 integer dividing both.
 
-**Definition:** $\mathrm{lcm{}(a, b)$ is the least common multiple — the smallest positive integer
+**Definition:** $\mathrm{lcm}(a, b)$ is the least common multiple — the smallest positive integer
 that both $a$ and $b$ divide.
 
 **Key relationship:**
 
-$$\gcd(a, b) \cdot \mathrm{lcm{}(a, b) = |ab|$$
+$$\gcd(a, b) \cdot \mathrm{lcm}(a, b) = |ab|$$
 
 **Proof (using prime factorizations):**
 
@@ -980,9 +980,9 @@ padding with zeros where needed).
 
 $\gcd(a, b) = \prod p_i^{\min(\alpha_i, \beta_i)}$
 
-$\mathrm{lcm{}(a, b) = \prod p_i^{\max(\alpha_i, \beta_i)}$
+$\mathrm{lcm}(a, b) = \prod p_i^{\max(\alpha_i, \beta_i)}$
 
-$\gcd(a,b) \cdot \mathrm{lcm{}(a,b) = \prod p_i^{\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i)} = \prod p_i^{\alpha_i + \beta_i} = ab$.
+$\gcd(a,b) \cdot \mathrm{lcm}(a,b) = \prod p_i^{\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i)} = \prod p_i^{\alpha_i + \beta_i} = ab$.
 $\blacksquare$
 
 **Bezout's Identity:** For integers $a, b$ (not both zero), there exist integers $x, y$ such that:

@@ -36,7 +36,7 @@ dedicated urban SDG, but cities are central to achieving many other goals:
 - **SDG 3** (Health): urban air quality, access to healthcare, active transport (walking, cycling).
 - **SDG 7** (Clean Energy): renewable energy deployment, energy-efficient buildings.
 - **SDG 13** (Climate Action): urban greenhouse gas emissions reduction (cities account for
-  approximately 70% of global $\mathrm{CO_2{}$ emissions), climate adaptation.
+  approximately 70% of global $\mathrm{CO_2}$ emissions), climate adaptation.
 - **SDG 6** (Clean Water): urban water supply, wastewater treatment, stormwater management.
 
 ## Smart Cities
@@ -77,7 +77,7 @@ to optimise building design and placement.
 pedestrians and cyclists over motor vehicles. By restricting through-traffic in designated blocks of
 nine streets, Barcelona has reclaimed road space for public plazas, green areas, and community
 activities. The programme has reduced traffic by approximately 25% in affected areas, reduced
-$\mathrm{NO_2{}$ concentrations by approximately 25%, and increased pedestrian and cycling space.
+$\mathrm{NO_2}$ concentrations by approximately 25%, and increased pedestrian and cycling space.
 
 ### Criticisms of Smart Cities
 
@@ -154,9 +154,9 @@ trees, wetlands, urban agriculture, and ecological corridors.
 | Service                     | Mechanism                                                                                                                          | Quantified Benefit                                                                                                 |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **Stormwater management**   | Vegetation and soils intercept, infiltrate, and evapotranspire rainfall, reducing runoff volume and peak flow                      | Green roofs can reduce stormwater runoff by 50--60% compared to conventional roofs                                 |
-| **Air quality improvement** | Trees absorb gaseous pollutants ($\mathrm{NO_2{}$, $\mathrm{SO_2{}$, $\mathrm{O_3{}$) and capture particulate matter on leaf surfaces | A mature tree can absorb approximately 1--2 kg of $\mathrm{PM{}_{10}$ per year                                      |
+| **Air quality improvement** | Trees absorb gaseous pollutants ($\mathrm{NO_2}$, $\mathrm{SO_2}$, $\mathrm{O_3}$) and capture particulate matter on leaf surfaces | A mature tree can absorb approximately 1--2 kg of $\mathrm{PM}_{10}$ per year                                      |
 | **UHI mitigation**          | Evapotranspiration and shading reduce surface and air temperatures                                                                 | Urban parks can be 1$^\circ$C to 4$^\circ$C cooler than surrounding built-up areas                                 |
-| **Carbon sequestration**    | Trees absorb $\mathrm{CO_2{}$ through photosynthesis and store carbon in biomass and soils                                          | London's urban forest stores approximately 2.4 million tonnes of carbon                                            |
+| **Carbon sequestration**    | Trees absorb $\mathrm{CO_2}$ through photosynthesis and store carbon in biomass and soils                                          | London's urban forest stores approximately 2.4 million tonnes of carbon                                            |
 | **Biodiversity**            | Green spaces provide habitat for flora and fauna, supporting ecological connectivity                                               | Urban parks can support 50--80% of native bird species                                                             |
 | **Recreation and health**   | Access to green space is associated with improved mental health, reduced stress, and increased physical activity                   | Studies show a 20% reduction in all-cause mortality associated with access to green space within 1 km of residence |
 

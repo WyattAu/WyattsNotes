@@ -12,7 +12,7 @@ slug: carbon-cycle-and-sequestration
 
 The carbon cycle describes the continuous exchange of carbon between Earth's atmosphere, biosphere,
 hydrosphere, lithosphere, and anthroposphere. Carbon exists in several forms: carbon dioxide
-($\mathrm{CO_2{}$), methane ($\mathrm{CH_4{}$), organic carbon (in living and dead organisms),
+($\mathrm{CO_2}$), methane ($\mathrm{CH_4}$), organic carbon (in living and dead organisms),
 inorganic carbon (carbonate rocks, dissolved inorganic carbon in the ocean), and fossil carbon
 (coal, oil, natural gas).
 
@@ -20,11 +20,11 @@ inorganic carbon (carbonate rocks, dissolved inorganic carbon in the ocean), and
 
 | Flux                                            | Magnitude (GtC/year)             | Description                                                                                                                                                               |
 | ----------------------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Gross primary productivity (photosynthesis)** | Approximately 120                | Plants absorb $\mathrm{CO_2{}$ from the atmosphere and convert it to organic carbon                                                                                        |
-| **Respiration and decomposition**               | Approximately 120                | Plants, animals, and decomposers release $\mathrm{CO_2{}$ through cellular respiration and decomposition of organic matter                                                 |
+| **Gross primary productivity (photosynthesis)** | Approximately 120                | Plants absorb $\mathrm{CO_2}$ from the atmosphere and convert it to organic carbon                                                                                        |
+| **Respiration and decomposition**               | Approximately 120                | Plants, animals, and decomposers release $\mathrm{CO_2}$ through cellular respiration and decomposition of organic matter                                                 |
 | **Ocean-atmosphere exchange**                   | Net approximately 2 (absorption) | The ocean absorbs approximately 92 GtC/year and releases approximately 90 GtC/year; net absorption of approximately 2 GtC/year                                            |
-| **Volcanic outgassing**                         | Approximately 0.1                | Release of $\mathrm{CO_2{}$ from volcanic activity and mid-ocean ridges                                                                                                    |
-| **Weathering**                                  | Approximately 0.3                | Chemical weathering of silicate rocks absorbs $\mathrm{CO_2{}$, converting it to bicarbonate ions transported to the ocean and eventually deposited as carbonate sediments |
+| **Volcanic outgassing**                         | Approximately 0.1                | Release of $\mathrm{CO_2}$ from volcanic activity and mid-ocean ridges                                                                                                    |
+| **Weathering**                                  | Approximately 0.3                | Chemical weathering of silicate rocks absorbs $\mathrm{CO_2}$, converting it to bicarbonate ions transported to the ocean and eventually deposited as carbonate sediments |
 
 ### Anthropogenic Carbon Fluxes
 
@@ -39,35 +39,35 @@ inorganic carbon (carbonate rocks, dissolved inorganic carbon in the ocean), and
 Carbon sinks are reservoirs that absorb more carbon than they release. The three major natural
 carbon sinks are:
 
-1. **The ocean.** The ocean absorbs approximately 26% of anthropogenic $\mathrm{CO_2{}$ emissions,
+1. **The ocean.** The ocean absorbs approximately 26% of anthropogenic $\mathrm{CO_2}$ emissions,
    through dissolution at the surface and subsequent transport to deep water via the thermohaline
    circulation and the biological pump (phytoplankton fix carbon through photosynthesis; when they
    die, organic carbon sinks to the deep ocean). However, ocean absorption causes acidification,
    which impairs the ability of calcifying organisms to build shells and skeletons.
 
 2. **The terrestrial biosphere (land).** The terrestrial biosphere absorbs approximately 29% of
-   anthropogenic $\mathrm{CO_2{}$ emissions, through increased plant growth (the $\mathrm{CO_2{}$
+   anthropogenic $\mathrm{CO_2}$ emissions, through increased plant growth (the $\mathrm{CO_2}$
    fertilisation effect), forest regrowth on abandoned agricultural land, and afforestation.
    However, this sink is vulnerable to climate change: warming increases respiration (releasing
-   $\mathrm{CO_2{}$), drought reduces plant growth, and wildfires release stored carbon.
+   $\mathrm{CO_2}$), drought reduces plant growth, and wildfires release stored carbon.
 
 3. **Geological storage.** Over geological timescales (millions of years), carbon is removed from
    the active carbon cycle through the formation of carbonate sediments (limestone, chalk) and
    fossil fuels (coal, oil, natural gas). This sink operates too slowly to be relevant to human
    timescales.
 
-**The remaining approximately 45% of anthropogenic $\mathrm{CO_2{}$** accumulates in the atmosphere,
-increasing atmospheric $\mathrm{CO_2{}$ concentration by approximately 2.5 ppm per year.
+**The remaining approximately 45% of anthropogenic $\mathrm{CO_2}$** accumulates in the atmosphere,
+increasing atmospheric $\mathrm{CO_2}$ concentration by approximately 2.5 ppm per year.
 
 ## Carbon Sequestration
 
-Carbon sequestration is the process of removing $\mathrm{CO_2{}$ from the atmosphere and storing it
+Carbon sequestration is the process of removing $\mathrm{CO_2}$ from the atmosphere and storing it
 in a stable form. Sequestration methods are classified as natural or technological.
 
 ### Natural Sequestration
 
 **Afforestation and reforestation.** Planting trees on previously non-forested land (afforestation)
-or replanting trees on deforested land (reforestation) removes $\mathrm{CO_2{}$ from the atmosphere
+or replanting trees on deforested land (reforestation) removes $\mathrm{CO_2}$ from the atmosphere
 through photosynthesis and stores it as biomass and soil organic carbon.
 
 - **Capacity:** a hectare of tropical forest can sequester approximately 5--10 tonnes of carbon per
@@ -102,42 +102,42 @@ alone store approximately 600 GtC, approximately twice the carbon stored in the 
   on a per-area basis. Restoring degraded mangroves and peatlands could make a significant
   contribution to carbon sequestration.
 - **Limitations:** degraded peatlands can become net carbon sources (drained Indonesian peatlands
-  emit approximately 500 Mt $\mathrm{CO_2{}$ per year due to oxidation and fire); restoration
+  emit approximately 500 Mt $\mathrm{CO_2}$ per year due to oxidation and fire); restoration
   requires ongoing water management.
 
 ### Technological Sequestration
 
-**Carbon Capture and Storage (CCS).** CCS involves capturing $\mathrm{CO_2{}$ from point sources
+**Carbon Capture and Storage (CCS).** CCS involves capturing $\mathrm{CO_2}$ from point sources
 (power plants, cement factories, steel mills), compressing it, transporting it (by pipeline or
 ship), and injecting it into deep geological formations (saline aquifers, depleted oil and gas
 reservoirs) for permanent storage.
 
-- **Current capacity:** approximately 40 million tonnes of $\mathrm{CO_2{}$ captured per year
+- **Current capacity:** approximately 40 million tonnes of $\mathrm{CO_2}$ captured per year
   globally (2023), a tiny fraction of annual emissions.
-- **Cost:** approximately USD 50--150 per tonne of $\mathrm{CO_2{}$ for point-source capture;
+- **Cost:** approximately USD 50--150 per tonne of $\mathrm{CO_2}$ for point-source capture;
   approximately USD 250--600 per tonne for direct air capture (DAC).
-- **Limitations:** high energy penalty (capturing $\mathrm{CO_2{}$ from a power plant reduces its net
+- **Limitations:** high energy penalty (capturing $\mathrm{CO_2}$ from a power plant reduces its net
   efficiency by 15--25%); geological storage carries a risk of leakage over long timescales; limited
   infrastructure for transport and storage; high capital cost; public acceptance concerns.
 
 **Bioenergy with Carbon Capture and Storage (BECCS).** BECCS involves growing biomass (trees, energy
-crops), burning it for energy, capturing the $\mathrm{CO_2{}$ emitted during combustion, and storing
+crops), burning it for energy, capturing the $\mathrm{CO_2}$ emitted during combustion, and storing
 it geologically. In theory, BECCS can achieve "negative emissions" because the carbon captured
 during biomass growth exceeds the carbon emitted during combustion.
 
 - **Potential:** many integrated assessment models (IAMs) rely heavily on BECCS to achieve net-zero
-  emissions. The IPCC's 1.5$^\circ$C pathway assumes approximately 5--15 Gt $\mathrm{CO_2{}$ per year
+  emissions. The IPCC's 1.5$^\circ$C pathway assumes approximately 5--15 Gt $\mathrm{CO_2}$ per year
   of BECCS by 2100.
-- **Limitations:** massive land requirements (achieving 10 Gt $\mathrm{CO_2{}$/year via BECCS could
+- **Limitations:** massive land requirements (achieving 10 Gt $\mathrm{CO_2}$/year via BECCS could
   require 300--1000 million hectares, equivalent to 20--70% of current global cropland), creating
   competition with food production; water requirements for energy crops; uncertain permanence of
   geological storage; currently operates at only a small fraction of the assumed scale.
 
-**Direct Air Capture (DAC).** DAC extracts $\mathrm{CO_2{}$ directly from ambient air using chemical
-solvents or solid sorbents, followed by release of concentrated $\mathrm{CO_2{}$ for storage or use.
+**Direct Air Capture (DAC).** DAC extracts $\mathrm{CO_2}$ directly from ambient air using chemical
+solvents or solid sorbents, followed by release of concentrated $\mathrm{CO_2}$ for storage or use.
 
 - **Current facilities:** the largest DAC plant (Climeworks' Mammoth plant in Iceland,
-  operational 2024) captures approximately 36 000 tonnes of $\mathrm{CO_2{}$ per year.
+  operational 2024) captures approximately 36 000 tonnes of $\mathrm{CO_2}$ per year.
 - **Cost:** approximately USD 250--600 per tonne, projected to fall to USD 100--200 per tonne by
   2040 with scale and learning.
 - **Limitations:** extremely energy-intensive (requiring heat and electricity); current capacity is
@@ -181,7 +181,7 @@ drivers of deforestation.
 
 Cap-and-trade systems set a total cap on greenhouse gas emissions for participating sectors and
 allocate or auction emission allowances (each allowance permits the emission of one tonne of
-$\mathrm{CO_2{}$ equivalent). Allowances can be traded among participants: firms that can reduce
+$\mathrm{CO_2}$ equivalent). Allowances can be traded among participants: firms that can reduce
 emissions cheaply sell excess allowances; firms facing high reduction costs buy allowances. The cap
 is reduced over time, driving progressively deeper emission cuts.
 
@@ -189,9 +189,9 @@ is reduced over time, driving progressively deeper emission cuts.
 
 | System                                   | Region                                    | Coverage                                                                                    | Price (2023)                                        |
 | ---------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| **EU Emissions Trading System (EU ETS)** | European Union (plus EEA and Switzerland) | Power generation, heavy industry, aviation (approximately 40% of EU emissions)              | Approximately EUR 80--100 per tonne $\mathrm{CO_2{}$ |
-| **California Cap-and-Trade**             | California, USA                           | Power generation, industry, transportation fuel (approximately 80% of California emissions) | Approximately USD 30--35 per tonne $\mathrm{CO_2{}$  |
-| **China National ETS**                   | China                                     | Power sector (approximately 30% of China's emissions)                                       | Approximately CNY 60--80 per tonne $\mathrm{CO_2{}$  |
+| **EU Emissions Trading System (EU ETS)** | European Union (plus EEA and Switzerland) | Power generation, heavy industry, aviation (approximately 40% of EU emissions)              | Approximately EUR 80--100 per tonne $\mathrm{CO_2}$ |
+| **California Cap-and-Trade**             | California, USA                           | Power generation, industry, transportation fuel (approximately 80% of California emissions) | Approximately USD 30--35 per tonne $\mathrm{CO_2}$  |
+| **China National ETS**                   | China                                     | Power sector (approximately 30% of China's emissions)                                       | Approximately CNY 60--80 per tonne $\mathrm{CO_2}$  |
 
 ### Carbon Offset Markets
 
@@ -217,7 +217,7 @@ landfills, and cookstove distribution.
 <summary>Common Pitfalls: Equating Carbon Sequestration with Emission Reduction</summary>
 
 Carbon sequestration and emission reduction are complementary but distinct strategies. Sequestration
-removes $\mathrm{CO_2{}$ from the atmosphere; emission reduction prevents $\mathrm{CO_2{}$ from
+removes $\mathrm{CO_2}$ from the atmosphere; emission reduction prevents $\mathrm{CO_2}$ from
 entering the atmosphere. Both are needed to achieve net-zero emissions, but sequestration cannot
 substitute for emission reduction at the required scale. The IPCC makes clear that the primary
 pathway to limiting warming to 1.5$^\circ$C is rapid, deep emission reductions across all sectors,

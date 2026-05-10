@@ -243,15 +243,15 @@ acceleration?
 **Solution:**
 
 $$
-E = \frac{V}{d} = \frac{500}{0.020} = 2.5 \times 10^4 \mathrm{ V/m{}
+E = \frac{V}{d} = \frac{500}{0.020} = 2.5 \times 10^4 \mathrm{ V/m}
 $$
 
 $$
-F = eE = (1.60 \times 10^{-19})(2.5 \times 10^4) = 4.0 \times 10^{-15} \mathrm{ N{}
+F = eE = (1.60 \times 10^{-19})(2.5 \times 10^4) = 4.0 \times 10^{-15} \mathrm{ N}
 $$
 
 $$
-a = \frac{F}{m_e} = \frac{4.0 \times 10^{-15}}{9.11 \times 10^{-31}} = 4.39 \times 10^{15} \mathrm{ m/s{}^2
+a = \frac{F}{m_e} = \frac{4.0 \times 10^{-15}}{9.11 \times 10^{-31}} = 4.39 \times 10^{15} \mathrm{ m/s}^2
 $$
 
 **Exam tip:** Remember that the force on an electron is directed from the negative plate toward the
@@ -275,12 +275,12 @@ When multiple charges are present, the total electric field at any point is the 
 the individual fields:
 
 $$
-\bm{E}_{\mathrm{total{}} = \bm{E}_1 + \bm{E}_2 + \bm{E}_3 + \cdots
+\bm{E}_{\mathrm{total}} = \bm{E}_1 + \bm{E}_2 + \bm{E}_3 + \cdots
 $$
 
 ### Worked Example: Superposition
 
-**Question:** Two point charges, $q_1 = +3.0 \mathrm{ \mu C{}$ and $q_2 = -5.0 \mathrm{ \mu C{}$, are
+**Question:** Two point charges, $q_1 = +3.0 \mathrm{ \mu C}$ and $q_2 = -5.0 \mathrm{ \mu C}$, are
 placed 20 cm apart. Find the electric field strength at the midpoint between them.
 
 **Solution:**
@@ -288,17 +288,17 @@ placed 20 cm apart. Find the electric field strength at the midpoint between the
 Distance from each charge to midpoint: $r = 0.10$ m.
 
 $$
-E_1 = \frac{kq_1}{r^2} = \frac{(8.99 \times 10^9)(3.0 \times 10^{-6})}{(0.10)^2} = 2.70 \times 10^6 \mathrm{ V/m{} \quad \mathrm{(away from {} q_1)
+E_1 = \frac{kq_1}{r^2} = \frac{(8.99 \times 10^9)(3.0 \times 10^{-6})}{(0.10)^2} = 2.70 \times 10^6 \mathrm{ V/m} \quad \mathrm{(away from } q_1)
 $$
 
 $$
-E_2 = \frac{k|q_2|}{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-6})}{(0.10)^2} = 4.50 \times 10^6 \mathrm{ V/m{} \quad \mathrm{(toward {} q_2)
+E_2 = \frac{k|q_2|}{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-6})}{(0.10)^2} = 4.50 \times 10^6 \mathrm{ V/m} \quad \mathrm{(toward } q_2)
 $$
 
 Since both fields point in the **same direction** at the midpoint (from $q_1$ toward $q_2$):
 
 $$
-E_{\mathrm{total{}} = E_1 + E_2 = 2.70 \times 10^6 + 4.50 \times 10^6 = 7.20 \times 10^6 \mathrm{ V/m{}
+E_{\mathrm{total}} = E_1 + E_2 = 2.70 \times 10^6 + 4.50 \times 10^6 = 7.20 \times 10^6 \mathrm{ V/m}
 $$
 
 ---
@@ -377,7 +377,7 @@ does it store?
 **Solution:**
 
 $$
-W = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-6})(200)^2 = \frac{1}{2}(100 \times 10^{-6})(40000) = 2.0 \mathrm{ J{}
+W = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-6})(200)^2 = \frac{1}{2}(100 \times 10^{-6})(40000) = 2.0 \mathrm{ J}
 $$
 
 ---
@@ -481,7 +481,7 @@ magnitude of the force on the wire.
 **Solution:**
 
 $$
-F = BIL\sin\theta = (0.40)(3.0)(0.50)\sin 60^{\circ} = (0.60)(0.866) = 0.520 \mathrm{ N{}
+F = BIL\sin\theta = (0.40)(3.0)(0.50)\sin 60^{\circ} = (0.60)(0.866) = 0.520 \mathrm{ N}
 $$
 
 The direction is given by Fleming's Left-Hand Rule: first finger along $\bm{B}$, second finger along
@@ -500,19 +500,19 @@ to 200 V, how much charge is stored? c) What is the energy stored?
 **a) Plate separation:**
 
 $$
-C = \frac{\epsilon_0 A}{d} \implies d = \frac{\epsilon_0 A}{C} = \frac{(8.85 \times 10^{-12})(0.010)}{100 \times 10^{-12}} = \frac{8.85 \times 10^{-14}}{10^{-10}} = 8.85 \times 10^{-4} \mathrm{ m{} = 0.885 \mathrm{ mm{}
+C = \frac{\epsilon_0 A}{d} \implies d = \frac{\epsilon_0 A}{C} = \frac{(8.85 \times 10^{-12})(0.010)}{100 \times 10^{-12}} = \frac{8.85 \times 10^{-14}}{10^{-10}} = 8.85 \times 10^{-4} \mathrm{ m} = 0.885 \mathrm{ mm}
 $$
 
 **b) Charge stored:**
 
 $$
-Q = CV = (100 \times 10^{-12})(200) = 2.0 \times 10^{-8} \mathrm{ C{} = 20 \mathrm{ nC{}
+Q = CV = (100 \times 10^{-12})(200) = 2.0 \times 10^{-8} \mathrm{ C} = 20 \mathrm{ nC}
 $$
 
 **c) Energy stored:**
 
 $$
-W = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-12})(200)^2 = \frac{1}{2}(100 \times 10^{-12})(40000) = 2.0 \times 10^{-6} \mathrm{ J{} = 2.0 \mathrm{ \mu J{}
+W = \frac{1}{2}CV^2 = \frac{1}{2}(100 \times 10^{-12})(200)^2 = \frac{1}{2}(100 \times 10^{-12})(40000) = 2.0 \times 10^{-6} \mathrm{ J} = 2.0 \mathrm{ \mu J}
 $$
 
 ---
@@ -529,7 +529,7 @@ the electric potential energy of the system?
 **a) Electric field strength:**
 
 $$
-E = \frac`\{kQ}`{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{(0.10)^2} = \frac{44.95}{0.01} = 4.50 \times 10^3 \mathrm{ V/m{}
+E = \frac`\{kQ}`{r^2} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{(0.10)^2} = \frac{44.95}{0.01} = 4.50 \times 10^3 \mathrm{ V/m}
 $$
 
 Direction: radially outward from $Q$ (away from the positive charge).
@@ -537,13 +537,13 @@ Direction: radially outward from $Q$ (away from the positive charge).
 **b) Electric potential:**
 
 $$
-V_e = \frac`\{kQ}`{r} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{0.10} = \frac{44.95}{0.10} = 450 \mathrm{ V{}
+V_e = \frac`\{kQ}`{r} = \frac{(8.99 \times 10^9)(5.0 \times 10^{-9})}{0.10} = \frac{44.95}{0.10} = 450 \mathrm{ V}
 $$
 
 **c) Electric potential energy:**
 
 $$
-U = qV_e = (-2.0 \times 10^{-9})(450) = -9.0 \times 10^{-7} \mathrm{ J{} = -900 \mathrm{ nJ{}
+U = qV_e = (-2.0 \times 10^{-9})(450) = -9.0 \times 10^{-7} \mathrm{ J} = -900 \mathrm{ nJ}
 $$
 
 The negative sign indicates the system is bound (attractive), which is expected for opposite
@@ -557,10 +557,10 @@ Gauss's Law provides a powerful way to calculate electric fields for symmetric c
 It states:
 
 $$
-\Phi_E = \oiint_S \bm{E} \cdot d\bm{A} = \frac{Q_{\mathrm{enclosed{}}}{\epsilon_0}
+\Phi_E = \oiint_S \bm{E} \cdot d\bm{A} = \frac{Q_{\mathrm{enclosed}}}{\epsilon_0}
 $$
 
-where $\Phi_E$ is the electric flux through a closed surface $S$, and $Q_{\mathrm{enclosed{}}$ is the
+where $\Phi_E$ is the electric flux through a closed surface $S$, and $Q_{\mathrm{enclosed}}$ is the
 total charge inside that surface.
 
 **Key implications:**
@@ -715,7 +715,7 @@ $E_2 = \frac{kq}{r^2} = 1.80 \times 10^6$ V/m (directed toward the positive x-di
 the charge at $x = -0.10$).
 
 The total field is:
-$\bm{E}_{\mathrm{total{}} = \bm{E}_1 + \bm{E}_2 = -1.80 \times 10^6 + 1.80 \times 10^6 = 0$ V/m.
+$\bm{E}_{\mathrm{total}} = \bm{E}_1 + \bm{E}_2 = -1.80 \times 10^6 + 1.80 \times 10^6 = 0$ V/m.
 
 The field is zero because the charges are equidistant from the origin, have equal magnitude, and the
 fields they produce point in exactly opposite directions, cancelling completely. This point is
@@ -735,9 +735,9 @@ Explain why the electric field inside a charged conductor is zero, making refere
 
 Inside a conductor in electrostatic equilibrium, all excess charge resides on the surface. Consider
 a Gaussian surface placed entirely inside the conductor. Since there is no charge enclosed by this
-surface ($Q_{\mathrm{enclosed{}} = 0$), Gauss's Law gives:
+surface ($Q_{\mathrm{enclosed}} = 0$), Gauss's Law gives:
 
-$\Phi_E = \frac{Q_{\mathrm{enclosed{}}}{\epsilon_0} = 0$
+$\Phi_E = \frac{Q_{\mathrm{enclosed}}}{\epsilon_0} = 0$
 
 This means the net electric flux through the Gaussian surface is zero. The only way this can be true
 for an arbitrary Gaussian surface inside the conductor is if the electric field is zero everywhere

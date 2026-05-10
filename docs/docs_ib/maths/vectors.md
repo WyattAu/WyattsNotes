@@ -100,11 +100,11 @@ $$\cos\theta = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'
 
 **Projection.** The scalar projection of $\mathbf{'\{'}b{'\}'}$ onto $\mathbf{'\{'}a{'\}'}$ is:
 
-$$\mathrm{comp{}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}a{'\}'}|} = |\mathbf{'\{'}b{'\}'}|\cos\theta$$
+$$\mathrm{comp}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}a{'\}'}|} = |\mathbf{'\{'}b{'\}'}|\cos\theta$$
 
 The vector projection is:
 
-$$\mathrm{proj{}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \left(\frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}a{'\}'}|^2}\right)\mathbf{'\{'}a{'\}'}$$
+$$\mathrm{proj}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \left(\frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}a{'\}'}|^2}\right)\mathbf{'\{'}a{'\}'}$$
 
 ---
 
@@ -404,9 +404,9 @@ $\mathbf{'\{'}r{'\}'}_2 = (4, 0, 3) + t(1, 1, -2)$, or show that they are skew.
 
 Equating components:
 
-$$1 + 3s = 4 + t \quad \mathrm{(1){}$$
-$$2 - 2s = 0 + t \quad \mathrm{(2){}$$
-$$-1 + s = 3 - 2t \quad \mathrm{(3){}$$
+$$1 + 3s = 4 + t \quad \mathrm{(1)}$$
+$$2 - 2s = 0 + t \quad \mathrm{(2)}$$
+$$-1 + s = 3 - 2t \quad \mathrm{(3)}$$
 
 From (2): $t = 2 - 2s$.
 
@@ -590,9 +590,9 @@ $ABCD$.
 <summary>Answers to Additional Problems</summary>
 
 **Problem 9:** (a) $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 6 - 1 - 2 = 3$. $|\mathbf{'\{'}a{'\}'}|^2 = 9 + 1 + 4 = 14$.
-$\mathrm{proj{}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \dfrac{3}{14}(3, -1, 2) = \left(\dfrac{9}{14}, -\dfrac{3}{14}, \dfrac{3}{7}\right)$.
-(b) $\mathrm{comp{}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \dfrac{3}{\sqrt{14}}$.
-(c) Perpendicular component: $\mathbf{'\{'}b{'\}'} - \mathrm{proj{}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = (2, 1, -1) - \left(\dfrac{9}{14}, -\dfrac{3}{14}, \dfrac{3}{7}\right) = \left(\dfrac{19}{14}, \dfrac{17}{14}, -\dfrac{10}{7}\right)$.
+$\mathrm{proj}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \dfrac{3}{14}(3, -1, 2) = \left(\dfrac{9}{14}, -\dfrac{3}{14}, \dfrac{3}{7}\right)$.
+(b) $\mathrm{comp}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \dfrac{3}{\sqrt{14}}$.
+(c) Perpendicular component: $\mathbf{'\{'}b{'\}'} - \mathrm{proj}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = (2, 1, -1) - \left(\dfrac{9}{14}, -\dfrac{3}{14}, \dfrac{3}{7}\right) = \left(\dfrac{19}{14}, \dfrac{17}{14}, -\dfrac{10}{7}\right)$.
 
 **Problem 10:** $V = |\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})|$.
 $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 4 & -1 & 0 \\ 2 & 1 & -2 \end{vmatrix} = (2, 8, 6)$.
