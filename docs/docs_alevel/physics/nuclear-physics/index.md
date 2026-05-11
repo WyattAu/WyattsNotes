@@ -1,5 +1,4 @@
 ---
-slug: nuclear-physics
 sidebar_label: Nuclear & Quantum Physics
 sidebar_position: 6
 ---

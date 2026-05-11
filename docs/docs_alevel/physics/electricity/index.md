@@ -1,5 +1,4 @@
 ---
-slug: electricity
 sidebar_label: Electricity
 sidebar_position: 3
 ---
