@@ -209,6 +209,7 @@ const config: Config = {
   ],
 
   plugins: [
+    require.resolve('./src/plugins/fix-mermaid-elk'),
     [require.resolve('./src/plugins/service-worker'), { enable: true }],
     [
       '@docusaurus/plugin-content-docs',
