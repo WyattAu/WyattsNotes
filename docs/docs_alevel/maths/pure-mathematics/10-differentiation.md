@@ -255,8 +255,7 @@ point could still be a maximum, minimum, or inflection. Always use a nature tabl
 of $f'$ on either side) if the second derivative test is inconclusive.
 :::
 
-<DesmosGraph title="Function, Derivative, and Tangent Line"
-expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the
+<DesmosGraph title="Function, Derivative, and Tangent Line" expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the
 derivative relates to the gradient of the tangent line. Move the point along the curve to see how
 the tangent changes slope, and note where the derivative is zero at stationary points.
 

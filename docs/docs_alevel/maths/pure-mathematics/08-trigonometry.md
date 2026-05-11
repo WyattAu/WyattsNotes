@@ -544,8 +544,7 @@ For the general form $y = A\sin(Bx + C) + D$ (and similarly for $\cos$):
 
 For $\tan$, the period is $\dfrac◆LB◆\pi◆RB◆◆LB◆|B|◆RB◆$ and amplitude is not defined.
 
-<DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]}
-width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
+<DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]} width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
 vertical translation of the trigonometric functions. Observe how each parameter affects the graph of
 $y = A\sin(Bx + C) + D$.
 

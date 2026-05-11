@@ -51,8 +51,7 @@ infinitely thin), the approximation becomes exact.
 contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is the total change
 (displacement).
 
-<DesmosGraph title="Integration as Area Under a Curve" expressions={["int_{0}^{b} x^2 dx"]}
-width={800} height={500} /> Increase the number of rectangles to see how Riemann sums converge to
+<DesmosGraph title="Integration as Area Under a Curve" expressions={["int_{0}^{b} x^2 dx"]} width={800} height={500} /> Increase the number of rectangles to see how Riemann sums converge to
 the exact area under the curve. Compare the upper and lower sums as the partition gets finer.
 
 <hr />
