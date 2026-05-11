@@ -137,7 +137,8 @@ class MDXValidator:
             return
 
         # Whitelist: symbols commonly used in technical docs (NOT emojis)
-        whitelist = set("•·→←↑↓★☆○●■□▪▫▶►⚠✓✗✔✘─│┌┐└┘├┤┬┴┼═║╔╗╚╝╠╣╦╩╬")
+        # Includes ◆ (U+25C6) used as LaTeX brace placeholder in CI preprocessing
+        whitelist = set("•·→←↑↓★☆○●■□▪▫▶►⚠✓✗✔✘─│┌┐└┘├┤┬┴┼═║╔╗╚╝╠╣╦╩╬◆")
 
         # Actual emoji ranges (colored glyphs, not monochrome symbols)
         emoji_pattern = re.compile(
