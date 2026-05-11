@@ -17,6 +17,8 @@ const config: Config = {
 
   staticDirectories: ['static'],
 
+  plugins: [require.resolve('./src/plugins/fix-mermaid-elk')],
+
   headTags: [
     {
       tagName: 'meta',
@@ -39,16 +41,6 @@ const config: Config = {
       },
     ],
   ],
-
-  webpack: {
-    resolve: {
-      alias: {
-        '@mermaid-js/layout-elk': require.resolve(
-          '@mermaid-js/layout-elk/dist/mermaid-layout-elk.core.mjs',
-        ),
-      },
-    },
-  },
 };
 
 export default config;

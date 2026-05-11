@@ -214,6 +214,7 @@ const config: Config = {
   ],
   plugins: [
     [require.resolve('./src/plugins/service-worker'), { enable: true }],
+    require.resolve('./src/plugins/fix-mermaid-elk'),
     [
       '@docusaurus/plugin-content-blog',
       {
@@ -493,16 +494,6 @@ const config: Config = {
       },
     },
   } satisfies Preset.ThemeConfig,
-
-  webpack: {
-    resolve: {
-      alias: {
-        '@mermaid-js/layout-elk': require.resolve(
-          '@mermaid-js/layout-elk/dist/mermaid-layout-elk.core.mjs',
-        ),
-      },
-    },
-  },
 };
 
 export default config;
