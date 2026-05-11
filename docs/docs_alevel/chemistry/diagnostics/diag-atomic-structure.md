@@ -148,9 +148,9 @@ The negative sign indicates energy is released. The photon energy is $246.0\,\te
 
 (b) Converting to energy per photon:
 
-$$E_{\text{photon}} = \frac{246.0 \times 10^3}{6.02 \times 10^{23}} = 4.086 \times 10^{-19}\,\text{J}$$
+$$E_{\text{photon}} = \frac LB 246.0 \times 10^3 RB  LB 6.02 \times 10^{23} RB  = 4.086 \times 10^{-19}\,\text{J}$$
 
-$$\lambda = \frac{hc}{E} = \frac{6.63 \times 10^{-34} \times 3.00 \times 10^8}{4.086 \times 10^{-19}} = \frac{1.989 \times 10^{-25}}{4.086 \times 10^{-19}} = 4.868 \times 10^{-7}\,\text{m} = 486.8\,\text{nm}$$
+$$\lambda = \frac{hc}{E} = \frac LB 6.63 \times 10^{-34} \times 3.00 \times 10^8 RB  LB 4.086 \times 10^{-19} RB  = \frac LB 1.989 \times 10^{-25} RB  LB 4.086 \times 10^{-19} RB  = 4.868 \times 10^{-7}\,\text{m} = 486.8\,\text{nm}$$
 
 (c) $486.8\,\text{nm}$ lies in the **visible region** of the electromagnetic spectrum (specifically, blue-green light). This is part of the Balmer series.
 

@@ -362,7 +362,7 @@ bijective. And by definition of inverse, $f^{-1} = f$. $\blacksquare$
 
 _Proof for $f(x) = (ax+b)/(cx-a)$._ Let $f(x) = \frac{ax+b}{cx-a}$. Then:
 
-$$f(f(x)) = \frac{a \cdot \frac{ax+b}{cx-a} + b}{c \cdot \frac{ax+b}{cx-a} - a} = \frac{\frac{a(ax+b) + b(cx-a)}{cx-a}}{\frac{c(ax+b) - a(cx-a)}{cx-a}} = \frac{a^2 x + ab + bcx - ab}{acx + bc - acx + a^2} = \frac{(a^2 + bc)x}{a^2 + bc} = x$$
+$$f(f(x)) = \frac LB a \cdot \frac{ax+b}{cx-a} + b RB  LB c \cdot \frac{ax+b}{cx-a} - a RB  = \frac LB \frac{a(ax+b) + b(cx-a)}{cx-a} RB  LB \frac{c(ax+b) - a(cx-a)}{cx-a} RB  = \frac{a^2 x + ab + bcx - ab}{acx + bc - acx + a^2} = \frac{(a^2 + bc)x}{a^2 + bc} = x$$
 
 $\blacksquare$ (provided $a^2 + bc \neq 0$).
 
@@ -601,7 +601,7 @@ domain of $f \circ g$.
 
 <details>
 <summary>Solution</summary>
-$f^{-1}(x)$: $y = e^{2x} \implies \ln y = 2x \implies x = \frac{\ln y}{2}$.
+$f^{-1}(x)$: $y = e^{2x} \implies \ln y = 2x \implies x = \frac LB \ln y RB  LB 2 RB $.
 
 $f^{-1}(x) = \frac{1}{2}\ln x$, domain $x > 0$.
 
@@ -649,10 +649,10 @@ bijective, and find $f^{-1}$.
 **Injective:** $f(x) = x^2 + 4x = (x+2)^2 - 4$. For $x \geq 0$, $x + 2 > 0$, so $(x+2)^2$ is strictly increasing, hence $f$ is strictly increasing, hence injective.
 
 **Surjective:** For any $y \geq 0$: $x^2 + 4x - y = 0$. By the quadratic formula:
-$x = \frac{-4 + \sqrt{16 + 4y}}{2} = -2 + \sqrt{4 + y}$. Since $y \geq 0$: $\sqrt{4 + y} \geq 2$, so
+$x = \frac LB -4 + \sqrt{16 + 4y} RB  LB 2 RB  = -2 + \sqrt{4 + y}$. Since $y \geq 0$: $\sqrt{4 + y} \geq 2$, so
 $x \geq 0$. Thus every $y \geq 0$ has a preimage.
 
-**Inverse:** $y = x^2 + 4x \implies x^2 + 4x - y = 0 \implies x = \frac{-4 + \sqrt{16 + 4y}}{2}$
+**Inverse:** $y = x^2 + 4x \implies x^2 + 4x - y = 0 \implies x = \frac LB -4 + \sqrt{16 + 4y} RB  LB 2 RB $
 (taking the positive root since $x \geq 0$).
 
 $f^{-1}(x) = -2 + \sqrt{4 + x} = \sqrt{x + 4} - 2$, domain $x \geq 0$.
@@ -699,7 +699,7 @@ $\{x \in \mathbb{R} : f(x) \geq 1\} = \{x : 2x + 3 \geq 1\} = \{x : x \geq -1\} 
 
 <details>
 <summary>Solution</summary>
-$$f(f(x)) = \frac{3 \cdot \frac{3x+2}{x-3} + 2}{\frac{3x+2}{x-3} - 3} = \frac{\frac{3(3x+2) + 2(x-3)}{x-3}}{\frac{3x+2 - 3(x-3)}{x-3}} = \frac{9x + 6 + 2x - 6}{3x + 2 - 3x + 9} = \frac{11x}{11} = x$$
+$$f(f(x)) = \frac LB 3 \cdot \frac{3x+2}{x-3} + 2 RB  LB \frac{3x+2}{x-3} - 3 RB  = \frac LB \frac{3(3x+2) + 2(x-3)}{x-3} RB  LB \frac{3x+2 - 3(x-3)}{x-3} RB  = \frac{9x + 6 + 2x - 6}{3x + 2 - 3x + 9} = \frac{11x}{11} = x$$
 
 Since $f(f(x)) = x$, $f$ is self-inverse. ✓
 

@@ -291,7 +291,7 @@ $$\mathrm{Energy consumed by cattle} = 8000\;\mathrm{kJ/m^2/year}$$
 
 $$\mathrm{Energy stored in cattle biomass (NSP)} = 8000 - 6000 = 2000\;\mathrm{kJ/m^2/year}$$
 
-$$\mathrm{Ecological efficiency} = \frac{\mathrm{NSP}}{\mathrm{NPP of producer}} \times 100 = \frac{2000}{20000} \times 100 = 10\%$$
+$$\mathrm{Ecological efficiency} = \frac LB \mathrm{NSP} RB  LB \mathrm{NPP of producer} RB  \times 100 = \frac{2000}{20000} \times 100 = 10\%$$
 
 The ecological efficiency is $10\%$, consistent with the typical range of $10$--$20\%$.
 

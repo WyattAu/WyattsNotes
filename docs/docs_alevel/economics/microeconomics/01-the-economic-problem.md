@@ -567,7 +567,7 @@ Economics?
 
 <details>
 <summary>Hint</summary>
-Set up the Lagrangian: $\mathcal{L} = 20\sqrt{t_E} + 15\sqrt{t_M} + \lambda(6 - t_E - t_M)$. Take derivatives and set to zero: $\frac{10}{\sqrt{t_E}} = \lambda$ and $\frac{7.5}{\sqrt{t_M}} = \lambda$. So $\frac{10}{\sqrt{t_E}} = \frac{7.5}{\sqrt{t_M}}$, giving $\frac{t_E}{t_M} = \frac{16}{9}$, so $t_E = \frac{96}{25} = 3.84$ hours, $t_M = 2.16$ hours.
+Set up the Lagrangian: $\mathcal{L} = 20\sqrt{t_E} + 15\sqrt{t_M} + \lambda(6 - t_E - t_M)$. Take derivatives and set to zero: $\frac LB 10 RB  LB \sqrt{t_E} RB  = \lambda$ and $\frac LB 7.5 RB  LB \sqrt{t_M} RB  = \lambda$. So $\frac LB 10 RB  LB \sqrt{t_E} RB  = \frac LB 7.5 RB  LB \sqrt{t_M} RB $, giving $\frac{t_E}{t_M} = \frac{16}{9}$, so $t_E = \frac{96}{25} = 3.84$ hours, $t_M = 2.16$ hours.
 </details>
 
 **Problem 8.** Evaluate the argument that "scarcity can be eliminated through technological
@@ -887,8 +887,8 @@ Consumption: $F = 450 - 150 = 300$, $C = 100 + 150 = 250$.
 
 | | Food | Clothing | Utility (assume $U = F^{0.5}C^{0.5}$) |
 |---|:---:|:---:|:---:|
-| Autarky | 300 | 200 | $\sqrt{300 \times 200} = 244.9$ |
-| Trade | 300 | 250 | $\sqrt{300 \times 250} = 273.9$ |
+| Autarky | 300 | 200 | $\sqrt LB 300 \times 200 RB  = 244.9$ |
+| Trade | 300 | 250 | $\sqrt LB 300 \times 250 RB  = 273.9$ |
 
 Utility has increased by 11.8% due to trade. The economy can now consume a bundle that was previously unattainable (outside the PPF).
 

@@ -954,7 +954,7 @@ In eukaryotes, the primary transcript (pre-mRNA) undergoes three modifications:
 
 | Relationship | Calculation |
 | ------------ | ----------- |
-| Amino acids in protein = | $\frac{\text{mRNA nucleotides}}{3}$ (subtract 3 for stop codon) |
+| Amino acids in protein = | $\frac LB \text{mRNA nucleotides} RB  LB 3 RB $ (subtract 3 for stop codon) |
 | mRNA nucleotides = | Number of amino acids $\times 3$ (plus 3 for stop codon) |
 | DNA template strand nucleotides = | Same as mRNA nucleotides (plus introns in eukaryotes) |
 | tRNA molecules required = | Number of amino acids (one per amino acid) |
@@ -1544,7 +1544,7 @@ DNA ligase joins DNA fragments by forming phosphodiester bonds between the 3'-OH
 
 If a human cell has 6.4 Gbp (3.2 billion base pairs per haploid genome; 6.4 billion in diploid) and DNA polymerase adds ~50 nucleotides per second:
 
-$$\text{Time for leading strand} = \frac{3.2 \times 10^9}{50} = 64 \times 10^6\ \text{seconds} \approx 740\ \text{days}$$
+$$\text{Time for leading strand} = \frac LB 3.2 \times 10^9 RB  LB 50 RB  = 64 \times 10^6\ \text{seconds} \approx 740\ \text{days}$$
 
 In practice, replication takes hours because:
 - Multiple replication origins (eukaryotes have ~10,000 origins; bacteria have one).

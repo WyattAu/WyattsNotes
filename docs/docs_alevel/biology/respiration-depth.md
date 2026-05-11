@@ -340,7 +340,7 @@ Lipids contain approximately 2.5 times more energy per gram than carbohydrates b
 
 The respiratory quotient (RQ) is the ratio of $\mathrm{CO_2}$ produced to $\mathrm{O_2}$ consumed:
 
-$$RQ = \frac{\text{Volume of }\mathrm{CO_2}\text{ produced}}{\text{Volume of }\mathrm{O_2}\text{ consumed}}$$
+$$RQ = \frac LB \text{Volume of }\mathrm{CO_2}\text{ produced} RB  LB \text{Volume of }\mathrm{O_2}\text{ consumed} RB $$
 
 For different substrates:
 
@@ -447,7 +447,7 @@ A student investigates the effect of temperature on the rate of respiration in y
 
 **Answer.** (b) The rate of respiration increases with temperature from $10$ to $40\ ^\circ\mathrm{C}$ due to increased kinetic energy of molecules and more frequent enzyme-substrate collisions. The rate is highest at approximately $40\ ^\circ\mathrm{C}$ (the optimum temperature for the yeast's respiratory enzymes). Above $40\ ^\circ\mathrm{C}$, the rate decreases sharply as the enzymes denature -- hydrogen bonds and other weak interactions maintaining tertiary structure break, the active site changes shape, and the enzyme can no longer catalyse the reaction. By $60\ ^\circ\mathrm{C}$, most enzymes are denatured and the rate is very low.
 
-(c) $Q_{10} = \frac{\text{Rate at } 30\ ^\circ\mathrm{C}}{\text{Rate at } 20\ ^\circ\mathrm{C}} = \frac{3.6}{1.8} = 2.0$.
+(c) $Q_{10} = \frac LB \text{Rate at } 30\ ^\circ\mathrm{C} RB  LB \text{Rate at } 20\ ^\circ\mathrm{C} RB  = \frac{3.6}{1.8} = 2.0$.
 
 The rate doubles for a $10\ ^\circ\mathrm{C}$ increase, which is typical for enzyme-catalysed reactions within the range before denaturation.
 
@@ -469,9 +469,9 @@ Explain why anaerobic respiration is necessary in muscle cells during intense ex
 <summary>Problem 4</summary>
 A respirometer containing 5 g of germinating pea seeds and soda lime shows that $3.2\ \mathrm{cm^3}$ of $\mathrm{O_2}$ is consumed in 20 minutes at $20\ ^\circ\mathrm{C}$. (a) Calculate the respiration rate per gram of tissue. (b) Calculate the respiratory quotient if $2.5\ \mathrm{cm^3}$ of $\mathrm{CO_2}$ was produced (measured in a separate respirometer without soda lime). (c) What does the RQ value suggest about the respiratory substrate?
 
-**Answer.** (a) Rate per gram $= \frac{3.2}{5 \times 20} = 0.032\ \mathrm{cm^3\ O_2\ g^{-1}\ min^{-1}}$.
+**Answer.** (a) Rate per gram $= \frac LB 3.2 RB  LB 5 \times 20 RB  = 0.032\ \mathrm{cm^3\ O_2\ g^{-1}\ min^{-1}}$.
 
-(b) $RQ = \frac{\text{Volume of }\mathrm{CO_2}\text{ produced}}{\text{Volume of }\mathrm{O_2}\text{ consumed}} = \frac{2.5}{3.2} = 0.78$.
+(b) $RQ = \frac LB \text{Volume of }\mathrm{CO_2}\text{ produced} RB  LB \text{Volume of }\mathrm{O_2}\text{ consumed} RB  = \frac{2.5}{3.2} = 0.78$.
 
 (c) An RQ of 0.78 is between the values for pure carbohydrate (1.0) and pure lipid (0.7), suggesting the seeds are respiring a mixture of substrates -- primarily lipids (from energy stores in the seed) with some carbohydrate. This is expected during seed germination, where stored lipids and carbohydrates are both mobilised.
 
@@ -512,7 +512,7 @@ The energy released at each stage is not directly captured as ATP. The efficienc
 
 Overall efficiency of aerobic respiration:
 
-$$\text{Efficiency} = \frac{\text{Energy captured as ATP}}{\text{Total energy released}} = \frac{30 \times 30.5}{2870} = \frac{915}{2870} = 31.9\%$$
+$$\text{Efficiency} = \frac LB \text{Energy captured as ATP} RB  LB \text{Total energy released} RB  = \frac LB 30 \times 30.5 RB  LB 2870 RB  = \frac{915}{2870} = 31.9\%$$
 
 This means approximately 68% of the energy in glucose is lost as heat. While this seems inefficient, it is sufficient for the metabolic demands of most organisms because glucose is continuously available.
 
@@ -1074,7 +1074,7 @@ Urea is less toxic than ammonia, relatively soluble in water, and excreted by th
 
 The respiratory quotient (RQ) is the ratio of $\mathrm{CO_2}$ produced to $\mathrm{O_2}$ consumed during respiration:
 
-$$\mathrm{RQ} = \frac{\text{volume of } \mathrm{CO_2} \text{ produced}}{\text{volume of } \mathrm{O_2} \text{ consumed}}$$
+$$\mathrm{RQ} = \frac LB \text{volume of } \mathrm{CO_2} \text{ produced} RB  LB \text{volume of } \mathrm{O_2} \text{ consumed} RB $$
 
 | Substrate | RQ | Explanation |
 | --------- | -- | ----------- |
@@ -1478,7 +1478,7 @@ The Cori cycle is NOT energetically favourable. The liver spends more ATP making
 
 The respiratory quotient is the ratio of $\mathrm{CO_2}$ produced to $\mathrm{O_2}$ consumed:
 
-$$\mathrm{RQ} = \frac{\text{Volume of } \mathrm{CO_2} \text{ produced}}{\text{Volume of } \mathrm{O_2} \text{ consumed}}$$
+$$\mathrm{RQ} = \frac LB \text{Volume of } \mathrm{CO_2} \text{ produced} RB  LB \text{Volume of } \mathrm{O_2} \text{ consumed} RB $$
 
 ### 31.2 RQ Values for Different Substrates
 
@@ -1774,7 +1774,7 @@ $\mathrm{FADH_2}$ produces fewer ATP than NADH because it enters the ETC at Comp
 
 ### 43.2 Calculating RQ
 
-$$\mathrm{RQ} = \frac{\text{Volume of }\mathrm{CO_2}\text{ produced}}{\text{Volume of }\mathrm{O_2}\text{ consumed}}$$
+$$\mathrm{RQ} = \frac LB \text{Volume of }\mathrm{CO_2}\text{ produced} RB  LB \text{Volume of }\mathrm{O_2}\text{ consumed} RB $$
 
 | Substrate | Equation | RQ Calculation |
 | --------- | -------- | -------------- |
