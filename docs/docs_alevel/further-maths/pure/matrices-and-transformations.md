@@ -753,19 +753,19 @@ Solution: $x = 0$, $y = 1$, $z = 2$.
 
 Complex numbers $a + bi$ can be represented as $\begin{pmatrix}a & -b\\b & a\end{pmatrix}$.
 Multiplication of complex numbers corresponds to matrix multiplication, and $|z|^2 = \det$ of this
-matrix. See [Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
+matrix. See [Complex Numbers](/docs/alevel/further-maths/pure-mathematics/further-complex-numbers).
 
 ### 11.2 Matrices and vectors
 
 The cross product $\mathbf{a}\times\mathbf{b}$ can be computed as a symbolic determinant with basis
 vectors $\mathbf{i}, \mathbf{j}, \mathbf{k}$. See
-[Vectors in 3D](/docs/alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+[Vectors in 3D](/docs/alevel/further-maths/pure-mathematics/further-vectors).
 
 ### 11.3 Eigenvalues and differential equations
 
 Diagonalisation is used to solve systems of coupled linear differential equations. The eigenvalues
 determine the form of the solution. See
-[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/differential-equations).
 
 ---
 

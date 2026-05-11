@@ -712,18 +712,18 @@ So the integral $\approx 0.4613$ to 4 decimal places.
 
 The Maclaurin series provides a method for solving differential equations by substituting a power
 series ansatz. See
-[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/differential-equations).
 
 ### 8.2 Taylor series and complex numbers
 
 Euler's formula $e^{i\theta} = \cos\theta + i\sin\theta$ is the link between exponential series and
 trigonometric series. See
-[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/further-complex-numbers).
 
 ### 8.3 Binomial series and further algebra
 
 The binomial expansion is essential for partial fraction decomposition and generating functions. See
-[Further Algebra](/docs/alevel/further-maths/pure-mathematics/03-further-algebra).
+[Further Algebra](/docs/alevel/further-maths/pure-mathematics/further-algebra).
 
 ---
 

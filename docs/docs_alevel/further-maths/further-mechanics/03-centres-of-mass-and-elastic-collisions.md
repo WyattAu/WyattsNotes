@@ -713,18 +713,18 @@ $90^\circ - \arctan(3/4) = \arctan(4/3) \approx 53.1^\circ$.
 
 Finding centres of mass by integration requires the same techniques as volumes of revolution:
 substitution, integration by parts, and definite integrals. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 10.2 Collisions and energy
 
 The kinetic energy loss formula $\Delta KE = \frac{1}{2}\mu(u_1 - u_2)^2(1-e^2)$ connects to the
 work-energy principle and conservation of momentum. See
-[Projectile Motion](/docs/alevel/further-maths/further-mechanics/01-projectile-motion).
+[Projectile Motion](/docs/alevel/further-maths/further-mechanics/projectile-motion).
 
 ### 10.3 Oblique impacts and vectors
 
 Resolving velocities in oblique collisions requires vector decomposition and dot products. See
-[Vectors in 3D](/docs/alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+[Vectors in 3D](/docs/alevel/further-maths/pure-mathematics/further-vectors).
 
 ---
 
@@ -1003,18 +1003,18 @@ Excluding $u = v_1$ (no collision): $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$. $\black
 ### 11.1 Elastic collisions and energy conservation
 
 Elastic collisions conserve both momentum and kinetic energy, connecting to the work-energy theorem.
-See [Projectile Motion](/docs/alevel/further-maths/further-mechanics/01-projectile-motion).
+See [Projectile Motion](/docs/alevel/further-maths/further-mechanics/projectile-motion).
 
 ### 11.2 Centre of mass and integration
 
 Finding centres of mass of continuous bodies requires integration techniques. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 11.3 Moments and vectors
 
 The moment of a force about a point uses the cross product:
 $\mathbf{M} = \mathbf{r} \times \mathbf{F}$. See
-[Vectors in 3D](/docs/alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+[Vectors in 3D](/docs/alevel/further-maths/pure-mathematics/further-vectors).
 
 ---
 

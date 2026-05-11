@@ -654,23 +654,23 @@ $$s = \int_0^b \sqrt◆LB◆1 + \sinh^2(x/a)◆RB◆\,dx = \int_0^b \cosh(x/a)\,
 
 The differential equation $\dfrac{d^2y}{dx^2} - y = 0$ has general solution
 $y = A\cosh x + B\sinh x$, which can also be written $y = Ce^x + De^{-x}$. See
-[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/differential-equations).
 
 ### 10.2 Hyperbolic functions and complex numbers
 
 The identities $\cosh x = \cos(ix)$ and $\sinh x = -i\sin(ix)$ connect the two topics. See
-[Complex Numbers](/docs/alevel/further-maths/pure/complex-numbers).
+[Complex Numbers](/docs/alevel/further-maths/pure/further-complex-numbers-extended).
 
 ### 10.3 Hyperbolic functions and integration techniques
 
 Hyperbolic substitutions ($x = a\sinh u$, $x = a\cosh u$) are powerful alternatives to trigonometric
 substitutions. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 10.4 The catenary and mechanics
 
 The shape $y = a\cosh(x/a)$ describes a hanging chain. The arc length is $s = a\sinh(x/a)$. See
-[Further Mechanics](/docs/alevel/further-maths/further-mechanics/01-projectile-motion).
+[Further Mechanics](/docs/alevel/further-maths/further-mechanics/projectile-motion).
 
 ---
 

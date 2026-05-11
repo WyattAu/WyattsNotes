@@ -1103,12 +1103,12 @@ and column variables.
 
 Goodness-of-fit tests are commonly used to test whether data follows a Poisson or geometric
 distribution. See
-[Poisson and Geometric Distributions](/docs/alevel/further-maths/further-statistics/01-poisson-and-geometric-distributions).
+[Poisson and Geometric Distributions](/docs/alevel/further-maths/further-statistics/poisson-geometric).
 
 ### 11.2 Chi-squared and continuous distributions
 
 The chi-squared distribution itself is used in confidence intervals for variance. See
-[Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/02-exponential-and-continuous-random-variables).
+[Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/exponential-continuous-rv).
 
 ### 11.3 Chi-squared and probability
 

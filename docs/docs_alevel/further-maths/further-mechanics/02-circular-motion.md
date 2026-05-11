@@ -990,12 +990,12 @@ particle leaves the circular path. $\blacksquare$
 ### 11.1 Circular motion and projectiles
 
 Both involve resolving forces in 2D and applying Newton's second law. See
-[Projectile Motion](/docs/alevel/further-maths/further-mechanics/01-projectile-motion).
+[Projectile Motion](/docs/alevel/further-maths/further-mechanics/projectile-motion).
 
 ### 11.2 Circular motion and differential equations
 
 Angular motion with non-constant angular acceleration leads to ODEs. See
-[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/differential-equations).
 
 ### 11.3 Energy conservation in circular motion
 

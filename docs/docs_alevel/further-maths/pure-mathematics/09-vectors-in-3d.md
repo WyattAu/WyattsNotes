@@ -771,18 +771,18 @@ Taking square roots gives the result.
 ### 12.1 Vectors and matrices
 
 The cross product $\mathbf{a}\times\mathbf{b}$ can be computed as a $3 \times 3$ determinant. See
-[Matrices](/docs/alevel/further-maths/pure-mathematics/02-matrices).
+[Matrices](/docs/alevel/further-maths/pure-mathematics/further-matrices).
 
 ### 12.2 Vectors and mechanics
 
 Vector methods are essential in mechanics for resolving forces, moments, and angular momentum. The
 moment of a force $\mathbf{F}$ about point $O$ is $\mathbf{r}\times\mathbf{F}$. See
-[Projectile Motion](/docs/alevel/further-maths/further-mechanics/01-projectile-motion).
+[Projectile Motion](/docs/alevel/further-maths/further-mechanics/projectile-motion).
 
 ### 12.3 Planes and coordinate geometry
 
 The equation of a plane and the distance formula connect vectors to 3D coordinate geometry. See
-[Polar Coordinates](/docs/alevel/further-maths/pure-mathematics/05-polar-coordinates).
+[Polar Coordinates](/docs/alevel/further-maths/pure-mathematics/polar-coordinates).
 
 ---
 
@@ -906,18 +906,18 @@ two swaps return to the original sign. $\blacksquare$
 ### 14.1 Vectors and matrices
 
 The cross product and scalar triple product can be expressed as determinants. See
-[Matrices](/docs/alevel/further-maths/pure-mathematics/02-matrices).
+[Matrices](/docs/alevel/further-maths/pure-mathematics/further-matrices).
 
 ### 14.2 Vectors and mechanics
 
 Vector methods are essential for resolving forces, computing moments
 ($\mathbf{M} = \mathbf{r} \times \mathbf{F}$), and angular momentum. See
-[Projectile Motion](/docs/alevel/further-maths/further-mechanics/01-projectile-motion).
+[Projectile Motion](/docs/alevel/further-maths/further-mechanics/projectile-motion).
 
 ### 14.3 Planes and coordinate geometry
 
 The equation of a plane connects vectors to 3D geometry. See
-[Polar Coordinates](/docs/alevel/further-maths/pure-mathematics/05-polar-coordinates) for parametric
+[Polar Coordinates](/docs/alevel/further-maths/pure-mathematics/polar-coordinates) for parametric
 representations of curves.
 
 ---

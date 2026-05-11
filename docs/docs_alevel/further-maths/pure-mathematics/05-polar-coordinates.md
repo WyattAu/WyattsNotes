@@ -628,19 +628,19 @@ $$= 2\pi\left(\frac{64}{5} - \frac{64}{6}\right) = 2\pi\cdot\frac{64(6-5)}{30} =
 The polar form of a complex number $z = re^{i\theta}$ is the same as polar coordinates
 $(r, \theta)$. Multiplication of complex numbers corresponds to combining polar coordinates:
 $r_1 e^{i\theta_1} \cdot r_2 e^{i\theta_2} = r_1 r_2 e^{i(\theta_1+\theta_2)}$. See
-[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/further-complex-numbers).
 
 ### 8.2 Polar area and further calculus
 
 The polar area formula $\frac{1}{2}\int r^2\,d\theta$ is a direct application of integration
 techniques. Setting up these integrals requires care with limits. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 8.3 Polar curves and parametric differentiation
 
 The gradient formula for polar curves is derived from parametric differentiation. The expressions
 for $dx/d\theta$ and $dy/d\theta$ use the product rule. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ---
 
@@ -916,13 +916,13 @@ This is a circle with centre $(a, b)$ and radius $\sqrt{a^2+b^2}$.
 ### 11.1 Polar coordinates and complex numbers
 
 The polar form $z = r(\cos\theta+i\sin\theta)$ is identical to polar coordinates $(r,\theta)$. See
-[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/further-complex-numbers).
 
 ### 11.2 Polar curves and calculus
 
 Finding tangents, areas, and arc lengths in polar coordinates requires differentiation and
 integration. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 11.3 Polar coordinates and parametric equations
 

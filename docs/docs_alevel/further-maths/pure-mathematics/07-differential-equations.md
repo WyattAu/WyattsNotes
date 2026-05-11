@@ -948,18 +948,18 @@ $\boxed{y = x^2 + 2x}$
 ### 11.1 Differential equations and calculus
 
 Solving ODEs requires integration techniques (substitution, parts, partial fractions). See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 11.2 Second-order ODEs and complex numbers
 
 The auxiliary equation uses complex roots to give oscillatory solutions
 $e^{\alpha t}(A\cos\beta t + B\sin\beta t)$. See
-[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/further-complex-numbers).
 
 ### 11.3 Differential equations and mechanics
 
 Newton's second law $F = ma$ leads to second-order ODEs in mechanics. See
-[Circular Motion](/docs/alevel/further-maths/further-mechanics/02-circular-motion).
+[Circular Motion](/docs/alevel/further-maths/further-mechanics/further-circular-motion).
 
 ---
 

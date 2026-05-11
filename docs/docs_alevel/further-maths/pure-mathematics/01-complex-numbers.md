@@ -968,17 +968,17 @@ $y = 6$ or $y = 0$. So $z = 6i$ or $z = 0$.
 ### 11.1 Complex numbers and matrices
 
 Complex eigenvalues of 2×2 matrices correspond to rotation-scaling transformations. See
-[Matrices](/docs/alevel/further-maths/pure-mathematics/02-matrices).
+[Matrices](/docs/alevel/further-maths/pure-mathematics/further-matrices).
 
 ### 11.2 Complex numbers and hyperbolic functions
 
 $e^{ix} = \cos x + i\sin x$ connects exponential, trigonometric, and hyperbolic functions. See
-[Hyperbolic Functions](/docs/alevel/further-maths/pure-mathematics/06-hyperbolic-functions).
+[Hyperbolic Functions](/docs/alevel/further-maths/pure-mathematics/hyperbolic-functions).
 
 ### 11.3 Complex numbers and polar coordinates
 
 Argand diagrams and polar form $(r, \theta)$ connect to polar coordinates. See
-[Polar Coordinates](/docs/alevel/further-maths/pure-mathematics/05-polar-coordinates).
+[Polar Coordinates](/docs/alevel/further-maths/pure-mathematics/polar-coordinates).
 
 ---
 

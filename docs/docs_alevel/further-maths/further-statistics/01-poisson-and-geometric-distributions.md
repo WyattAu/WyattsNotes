@@ -623,19 +623,19 @@ Therefore $P(X = k) \to \dfrac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆
 
 If events occur according to a Poisson process with rate $\lambda$, the time between consecutive
 events follows the exponential distribution $\mathrm{Exp}(\lambda)$. See
-[Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/02-exponential-and-continuous-random-variables).
+[Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/exponential-continuous-rv).
 
 ### 8.2 Geometric distribution and series summation
 
 The probability generating function $G_X(t) = \dfrac{pt}{1-qt}$ of the geometric distribution
 connects to the summation of geometric series. See
-[Further Algebra](/docs/alevel/further-maths/pure-mathematics/03-further-algebra).
+[Further Algebra](/docs/alevel/further-maths/pure-mathematics/further-algebra).
 
 ### 8.3 Poisson and hypothesis testing
 
 Goodness-of-fit tests using the chi-squared statistic compare observed and expected (Poisson)
 frequencies. See
-[Chi-Squared Tests](/docs/alevel/further-maths/further-statistics/03-chi-squared-tests).
+[Chi-Squared Tests](/docs/alevel/further-maths/further-statistics/chi-squared-tests).
 
 ---
 
@@ -903,7 +903,7 @@ $P(X > 3) = 0.75^3 = \boxed{0.4219}$.
 
 The inter-arrival times of a Poisson process follow the exponential distribution. If events occur at
 rate $\lambda$ per unit time, the time between consecutive events is $\mathrm{Exp}(\lambda)$. See
-[Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/02-exponential-and-continuous-random-variables).
+[Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/exponential-continuous-rv).
 
 ### 11.2 Poisson and binomial
 
@@ -914,7 +914,7 @@ $\lambda = np$.
 
 The chi-squared goodness-of-fit test is used to test whether data follows a Poisson or geometric
 distribution. See
-[Chi-Squared Tests](/docs/alevel/further-maths/further-statistics/03-chi-squared-tests).
+[Chi-Squared Tests](/docs/alevel/further-maths/further-statistics/chi-squared-tests).
 
 ---
 

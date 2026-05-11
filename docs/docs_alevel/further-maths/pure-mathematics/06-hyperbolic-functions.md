@@ -692,18 +692,18 @@ $$\frac{dy}{dx} = \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆ \quad \blac
 
 The identities $\cosh x = \cos(ix)$ and $\sinh x = -i\sin(ix)$ connect the two topics. Osborne's
 rule is a consequence of these relationships. See
-[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/further-complex-numbers).
 
 ### 8.2 Hyperbolic functions and differential equations
 
 The equation $y'' - a^2 y = 0$ has general solution $y = A\cosh(ax) + B\sinh(ax)$. See
-[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/differential-equations).
 
 ### 8.3 Hyperbolic integration and further calculus
 
 Integrals leading to inverse hyperbolic functions complement those leading to inverse trigonometric
 functions. The substitution $x = a\sinh u$ is often simpler than $x = a\tan\theta$. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ---
 
@@ -960,17 +960,17 @@ $$\boxed{\sinh^{-1} x = \ln(x + \sqrt{x^2+1})}$$
 ### 11.1 Hyperbolic functions and calculus
 
 The inverse hyperbolic functions arise from integrals. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 11.2 Hyperbolic functions and differential equations
 
 $y'' - y = 0$ has solutions $y = A\cosh x + B\sinh x$. See
-[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/differential-equations).
 
 ### 11.3 Hyperbolic functions and complex numbers
 
 $\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$. See
-[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/further-complex-numbers).
 
 ---
 

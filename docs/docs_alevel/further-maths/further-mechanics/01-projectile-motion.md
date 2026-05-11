@@ -938,13 +938,13 @@ $\boxed{u \approx 25.9\,\mathrm{m\,s^{-1}}}$
 ### 11.1 Projectiles and circular motion
 
 Both topics involve resolving forces and using Newton's second law in 2D. See
-[Circular Motion](/docs/alevel/further-maths/further-mechanics/02-circular-motion).
+[Circular Motion](/docs/alevel/further-maths/further-mechanics/further-circular-motion).
 
 ### 11.2 Projectile equations and calculus
 
 The trajectory equation is derived by eliminating the parameter $t$ from the parametric equations, a
 standard calculus technique. See
-[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 11.3 Energy methods in projectiles
 

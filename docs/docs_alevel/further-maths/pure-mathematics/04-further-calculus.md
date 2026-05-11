@@ -841,24 +841,24 @@ This equals $-\dfrac◆LB◆\pi^2◆RB◆◆LB◆12◆RB◆$.
 
 Integration techniques (substitution, parts, partial fractions) are essential tools for solving
 differential equations. See
-[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/differential-equations).
 
 ### 11.2 Calculus and Maclaurin series
 
 Taylor and Maclaurin expansions provide powerful tools for evaluating integrals that cannot be found
 in closed form. See
-[Maclaurin and Taylor Series](/docs/alevel/further-maths/pure-mathematics/08-maclaurin-and-taylor-series).
+[Maclaurin and Taylor Series](/docs/alevel/further-maths/pure-mathematics/maclaurin-taylor-series).
 
 ### 11.3 Calculus and mechanics
 
 Arc length and area calculations are used extensively in mechanics for work-energy problems. See
-[Circular Motion](/docs/alevel/further-maths/further-mechanics/02-circular-motion).
+[Circular Motion](/docs/alevel/further-maths/further-mechanics/further-circular-motion).
 
 ### 11.4 Calculus and hyperbolic functions
 
 The inverse hyperbolic functions arise naturally from integration:
 $\displaystyle\int \frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆ = \operatorname{arsinh}(x/a) + C$. See
-[Hyperbolic Functions](/docs/alevel/further-maths/pure-mathematics/06-hyperbolic-functions).
+[Hyperbolic Functions](/docs/alevel/further-maths/pure-mathematics/hyperbolic-functions).
 
 ---
 
