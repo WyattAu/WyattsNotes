@@ -24,8 +24,10 @@ if (!WRITE_KEY) {
 
 const SITES = [
   { name: 'main', url: 'https://wyattsnotes.wyattau.com', indexName: 'wyattsnotes_main' },
-  { name: 'academics', url: 'https://academics.wyattau.com', indexName: 'wyattsnotes_academics' },
-  { name: 'alevel', url: 'https://alevel.wyattau.com', indexName: 'wyattsnotes_alevel' },
+  { name: 'ib', url: 'https://ib.wyattau.com', indexName: 'wyattsnotes_ib' },
+  { name: 'dse', url: 'https://dse.wyattau.com', indexName: 'wyattsnotes_dse' },
+  { name: 'alevel-maths-physics', url: 'https://alevel-maths-physics.wyattau.com', indexName: 'wyattsnotes_alevel_maths_physics' },
+  { name: 'alevel-sciences', url: 'https://alevel-sciences.wyattau.com', indexName: 'wyattsnotes_alevel_sciences' },
   { name: 'qualifications', url: 'https://qualifications.wyattau.com', indexName: 'wyattsnotes_qualifications' },
   { name: 'programming', url: 'https://programming.wyattau.com', indexName: 'wyattsnotes_programming' },
   { name: 'university', url: 'https://university.wyattau.com', indexName: 'wyattsnotes_university' },
