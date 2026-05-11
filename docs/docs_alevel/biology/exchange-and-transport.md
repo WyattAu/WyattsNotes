@@ -1499,8 +1499,8 @@ In the lungs (reverse Bohr effect):
 | --------- | --------------------- | -------- |
 | Plasma | 55% | Transport medium; contains dissolved substances (glucose, amino acids, urea, hormones, antibodies, ions); fibrinogen and other clotting factors |
 | Red blood cells (erythrocytes) | 45% of blood volume | Transport $\mathrm{O_2}$ (bound to haemoglobin) and some $\mathrm{CO_2}$ (as carbaminohaemoglobin); biconcave disc shape maximises surface area:volume ratio; no nucleus, no mitochondria (more space for haemoglobin) |
-| White blood cells (leukocytes) | <1% | Immune defence: phagocytosis (neutrophils, macrophages); antibody production (B lymphocytes/plasma cells); cell-mediated immunity (T lymphocytes) |
-| Platelets (thrombocytes) | <1% | Blood clotting (release thromboplastin; activate the clotting cascade) |
+| White blood cells (leukocytes) | &lt;1% | Immune defence: phagocytosis (neutrophils, macrophages); antibody production (B lymphocytes/plasma cells); cell-mediated immunity (T lymphocytes) |
+| Platelets (thrombocytes) | &lt;1% | Blood clotting (release thromboplastin; activate the clotting cascade) |
 
 ### 26.2 Red Blood Cell Adaptations
 
