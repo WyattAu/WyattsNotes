@@ -51,6 +51,6 @@ intuition that makes exam questions feel like applications of things you truly u
 - **[Mathematics](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/maths)** — Pure mathematics, statistics, and mechanics
 - **[Physics](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/physics)** — Mechanics, waves, electricity, fields, thermal,
   nuclear, and astrophysics
-- **[Computer Science](/docs/alevel/computer-science/computer-science)** — Fundamentals, data
+- **[Computer Science](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/computer-science)** — Fundamentals, data
   structures, algorithms, programming, and theory
-- **[Economics](/docs/alevel/economics/economics)** — Microeconomics and macroeconomics
+- **[Economics](https://alevel-sciences.wyattau.com/docs/alevel/economics/economics)** — Microeconomics and macroeconomics
