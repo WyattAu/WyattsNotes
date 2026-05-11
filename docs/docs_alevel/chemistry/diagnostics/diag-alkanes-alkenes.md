@@ -246,7 +246,7 @@ Partial pressures (at $1.00\,\text{atm}$):
 - $p(\text{C}_2\text{H}_4) = 0.2308\,\text{atm}$
 - $p(\text{H}_2) = 0.2308\,\text{atm}$
 
-$$K_p = \frac LB p(\text{C}_2\text{H}_4) \times p(\text{H}_2) RB  LB p(\text{C}_2\text{H}_6) RB  = \frac LB 0.2308 \times 0.2308 RB  LB 0.5385 RB  = \frac{0.05327}{0.5385} = 0.0989\,\text{atm}$$
+$$K_p = \frac⧃LB⧄p(\text{C}_2\text{H}_4) \times p(\text{H}_2)⧃RB⧄⧃LB⧄p(\text{C}_2\text{H}_6)⧃RB⧄ = \frac⧃LB⧄0.2308 \times 0.2308⧃RB⧄⧃LB⧄0.5385⧃RB⧄ = \frac{0.05327}{0.5385} = 0.0989\,\text{atm}$$
 
 (c) While Le Chatelier's principle predicts that low pressure favours the side with more moles of gas (2 mol products vs 1 mol reactant), cracking is carried out at relatively low pressure for a different reason: to **prevent unwanted side reactions** such as polymerisation of ethene, which occurs at high pressures. At very low pressures, the yield of ethene per pass is lower, but the product is cleaner and the conditions are safer and more controllable. In practice, steam is often added to dilute the ethane (reducing the effective partial pressure) while allowing operation at moderate total pressures for practical engineering reasons.
 

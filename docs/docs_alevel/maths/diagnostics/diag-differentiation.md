@@ -257,7 +257,7 @@ Tangent: $y - 2 = -2(x - 1) \implies y = -2x + 4$.
 
 $$x^2 + 2x + 1 = -2x + 4 \implies x^2 + 4x - 3 = 0$$
 
-$$x = \frac LB -4 \pm \sqrt{16 + 12} RB  LB 2 RB  = \frac LB -4 \pm \sqrt{28} RB  LB 2 RB  = -2 \pm \sqrt{7}$$
+$$x = \frac⧃LB⧄-4 \pm \sqrt{16 + 12}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄-4 \pm \sqrt{28}⧃RB⧄⧃LB⧄2⧃RB⧄ = -2 \pm \sqrt{7}$$
 
 This gives two distinct intersection points, so the line is a secant, not a tangent.
 

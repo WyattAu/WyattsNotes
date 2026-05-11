@@ -270,13 +270,13 @@ For uniqueness: $g'(x) = 1 + \sin x > 0$ for all $x \in [0, \pi/2]$ (since $\sin
 
 Combined: there is exactly one solution $L \in (0, \pi/2)$.
 
-**(d)** Newton-Raphson: $x_{n+1} = x_n - \frac{g(x_n)}{g'(x_n)} = x_n - \frac LB x_n - \cos x_n RB  LB 1 + \sin x_n RB $.
+**(d)** Newton-Raphson: $x_{n+1} = x_n - \frac{g(x_n)}{g'(x_n)} = x_n - \frac⧃LB⧄x_n - \cos x_n⧃RB⧄⧃LB⧄1 + \sin x_n⧃RB⧄$.
 
 Starting with $x_0 = 1$:
 
-$$x_1 = 1 - \frac LB 1 - \cos 1 RB  LB 1 + \sin 1 RB  = 1 - \frac{1 - 0.540302}{1 + 0.841471} = 1 - \frac{0.459698}{1.841471} = 1 - 0.249649 = 0.750351$$
+$$x_1 = 1 - \frac⧃LB⧄1 - \cos 1⧃RB⧄⧃LB⧄1 + \sin 1⧃RB⧄ = 1 - \frac{1 - 0.540302}{1 + 0.841471} = 1 - \frac{0.459698}{1.841471} = 1 - 0.249649 = 0.750351$$
 
-$$x_2 = 0.750351 - \frac LB 0.750351 - \cos(0.750351) RB  LB 1 + \sin(0.750351) RB  = 0.750351 - \frac{0.750351 - 0.731125}{1 + 0.681676} = 0.750351 - \frac{0.019226}{1.681676}$$
+$$x_2 = 0.750351 - \frac⧃LB⧄0.750351 - \cos(0.750351)⧃RB⧄⧃LB⧄1 + \sin(0.750351)⧃RB⧄ = 0.750351 - \frac{0.750351 - 0.731125}{1 + 0.681676} = 0.750351 - \frac{0.019226}{1.681676}$$
 
 $$= 0.750351 - 0.011434 = 0.738917$$
 

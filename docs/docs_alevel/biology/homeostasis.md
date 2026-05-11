@@ -895,7 +895,7 @@ Diagnostic Test
 
 To determine whether the effect of auxin on root growth is statistically significant, a t-test can be used:
 
-$$t = \frac LB \bar{x}_1 - \bar{x}_2 RB  LB \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} RB $$
+$$t = \frac⧃LB⧄\bar{x}_1 - \bar{x}_2⧃RB⧄⧃LB⧄\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}⧃RB⧄$$
 
 Where $\bar{x}_1, \bar{x}_2$ = mean radicle lengths in the two groups, $s_1, s_2$ = standard deviations, $n_1, n_2$ = sample sizes.
 
@@ -903,7 +903,7 @@ If the calculated $t$ value exceeds the critical value (at $p = 0.05$, with appr
 
 **Worked Example.** Control group ($n = 10$): mean radicle growth $= 12.0\ \mathrm{mm}$, SD $= 2.5\ \mathrm{mm}$. Treatment group ($10^{-4}\ \mathrm{mol\ dm^{-3}}$ IAA, $n = 10$): mean $= 5.0\ \mathrm{mm}$, SD $= 2.0\ \mathrm{mm}$.
 
-$t = \frac LB 12.0 - 5.0 RB  LB \sqrt{\frac{2.5^2}{10} + \frac{2.0^2}{10}} RB  = \frac LB 7.0 RB  LB \sqrt{\frac{6.25 + 4.00}{10}} RB  = \frac LB 7.0 RB  LB \sqrt{1.025} RB  = \frac{7.0}{1.012} = 6.92$.
+$t = \frac⧃LB⧄12.0 - 5.0⧃RB⧄⧃LB⧄\sqrt{\frac{2.5^2}{10} + \frac{2.0^2}{10}}⧃RB⧄ = \frac⧃LB⧄7.0⧃RB⧄⧃LB⧄\sqrt{\frac{6.25 + 4.00}{10}}⧃RB⧄ = \frac⧃LB⧄7.0⧃RB⧄⧃LB⧄\sqrt{1.025}⧃RB⧄ = \frac{7.0}{1.012} = 6.92$.
 
 Degrees of freedom $= n_1 + n_2 - 2 = 18$.
 
@@ -987,7 +987,7 @@ Ectotherms cannot generate significant metabolic heat, so they rely on behaviour
 
 **Renal clearance** measures the efficiency with which the kidneys remove a substance from the blood:
 
-$$C = \frac LB U \times V RB  LB P RB $$
+$$C = \frac⧃LB⧄U \times V⧃RB⧄⧃LB⧄P⧃RB⧄$$
 
 Where $C$ = clearance ($\mathrm{mL\ min^{-1}}$), $U$ = urine concentration of the substance, $V$ = urine flow rate ($\mathrm{mL\ min^{-1}}$), $P$ = plasma concentration of the substance.
 
@@ -999,7 +999,7 @@ Where $C$ = clearance ($\mathrm{mL\ min^{-1}}$), $U$ = urine concentration of th
 
 A patient has a blood glucose concentration of $8.0\ \mathrm{mmol\ L^{-1}}$ and a urine glucose concentration of $0\ \mathrm{mmol\ L^{-1}}$ (no glucose in urine).
 
-$C = \frac LB 0 \times V RB  LB 8.0 RB  = 0\ \mathrm{mL\ min^{-1}}$.
+$C = \frac⧃LB⧄0 \times V⧃RB⧄⧃LB⧄8.0⧃RB⧄ = 0\ \mathrm{mL\ min^{-1}}$.
 
 This means glucose is completely reabsorbed by the kidneys (no clearance). This is normal -- the kidneys normally reabsorb all glucose from the filtrate.
 
@@ -1007,7 +1007,7 @@ If the patient has blood glucose of $15\ \mathrm{mmol\ L^{-1}}$ (above the renal
 
 ### 18.3 Filtration Fraction
 
-$$\text{Filtration fraction} = \frac LB \text{GFR} RB  LB \text{Renal plasma flow (RPF)} RB  = \frac{125}{650} \approx 0.19 = 19\%$$
+$$\text{Filtration fraction} = \frac⧃LB⧄\text{GFR}⧃RB⧄⧃LB⧄\text{Renal plasma flow (RPF)}⧃RB⧄ = \frac{125}{650} \approx 0.19 = 19\%$$
 
 This means approximately 19% of the plasma passing through the glomerulus is filtered into the Bowman's capsule.
 

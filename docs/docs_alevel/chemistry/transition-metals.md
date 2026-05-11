@@ -287,7 +287,7 @@ The difference is dramatic and unambiguous. A $\mathrm{Fe}^{2+}$ complex with $\
 
 **Worked Example.** $[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ has $\mu = 5.1\,\mu_\mathrm{BM}$. $[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$ has $\mu = 0\,\mu_\mathrm{BM}$. Explain.
 
-$[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{2+}$: $\mathrm{Fe}^{2+}$ is $d^6$. $\mathrm{H}_2\mathrm{O}$ is a weak-field ligand, so $\Delta_o$ is small. The electrons occupy the $t_{2g}$ set singly first ($t_{2g}^4$), then the $e_g$ set ($e_g^2$), giving 4 unpaired electrons (high-spin). The spin-only value for $n = 4$ is $\sqrt LB 4 \times 6 RB  = 4.90\,\mu_\mathrm{BM}$, close to the experimental $5.1\,\mu_\mathrm{BM}$ (the slight excess is from orbital contribution).
+$[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{2+}$: $\mathrm{Fe}^{2+}$ is $d^6$. $\mathrm{H}_2\mathrm{O}$ is a weak-field ligand, so $\Delta_o$ is small. The electrons occupy the $t_{2g}$ set singly first ($t_{2g}^4$), then the $e_g$ set ($e_g^2$), giving 4 unpaired electrons (high-spin). The spin-only value for $n = 4$ is $\sqrt⧃LB⧄4 \times 6⧃RB⧄ = 4.90\,\mu_\mathrm{BM}$, close to the experimental $5.1\,\mu_\mathrm{BM}$ (the slight excess is from orbital contribution).
 
 $[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$: $\mathrm{CN}^-$ is a strong-field ligand, so $\Delta_o$ is large. All 6 electrons pair in the $t_{2g}$ set ($t_{2g}^6\,e_g^0$), giving 0 unpaired electrons (low-spin, diamagnetic).
 
@@ -304,7 +304,7 @@ Because $\Delta_t$ is much smaller than $\Delta_o$, tetrahedral complexes are al
 The energy of the photon absorbed in a $d$-$d$ transition can be calculated from the wavelength of absorption:
 
 $$
-\Delta E = \frac LB hc RB  LB \lambda RB 
+\Delta E = \frac⧃LB⧄hc⧃RB⧄⧃LB⧄\lambda⧃RB⧄
 $$
 
 where $h = 6.626 \times 10^{-34}\,\mathrm{J\,s}$, $c = 3.00 \times 10^8\,\mathrm{m/s}$, and $\lambda$ is the wavelength in metres.
@@ -312,7 +312,7 @@ where $h = 6.626 \times 10^{-34}\,\mathrm{J\,s}$, $c = 3.00 \times 10^8\,\mathrm
 **Worked Example.** $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ absorbs at $\lambda = 510\,\mathrm{nm}$ (green). Calculate $\Delta_o$ in $\mathrm{kJ/mol}$.
 
 $$
-\Delta E = \frac LB hc RB  LB \lambda RB  = \frac LB (6.626 \times 10^{-34})(3.00 \times 10^8) RB  LB 510 \times 10^{-9} RB  = 3.90 \times 10^{-19}\,\mathrm{J}
+\Delta E = \frac⧃LB⧄hc⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = \frac⧃LB⧄(6.626 \times 10^{-34})(3.00 \times 10^8)⧃RB⧄⧃LB⧄510 \times 10^{-9}⧃RB⧄ = 3.90 \times 10^{-19}\,\mathrm{J}
 $$
 
 Per mole:
@@ -703,9 +703,9 @@ The colour observed is the complementary colour of the light absorbed.
 
 **Worked Example:** $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ absorbs light at $\lambda = 510\,\mathrm{nm}$ (green). The transmitted/reflected light is purple/violet, which is the observed colour.
 
-$$\Delta_o = \frac LB hc RB  LB \lambda RB  = \frac LB 6.626 \times 10^{-34} \times 2.998 \times 10^8 RB  LB 510 \times 10^{-9} RB  = 3.89 \times 10^{-19}\,\mathrm{J}$$
+$$\Delta_o = \frac⧃LB⧄hc⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = \frac⧃LB⧄6.626 \times 10^{-34} \times 2.998 \times 10^8⧃RB⧄⧃LB⧄510 \times 10^{-9}⧃RB⧄ = 3.89 \times 10^{-19}\,\mathrm{J}$$
 
-Converting to $\mathrm{cm}^{-1}$: $\frac LB 1 RB  LB \lambda RB  = \frac LB 1 RB  LB 510 \times 10^{-7}\,\mathrm{cm} RB  = 19608\,\mathrm{cm}^{-1}$
+Converting to $\mathrm{cm}^{-1}$: $\frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄510 \times 10^{-7}\,\mathrm{cm}⧃RB⧄ = 19608\,\mathrm{cm}^{-1}$
 
 | Complex | $\Delta_o$ ($\mathrm{cm}^{-1}$) | $\lambda_{\max}$ (nm) | Colour observed |
 |---|---|---|---|

@@ -643,7 +643,7 @@ As GDP approaches potential output, the labour market tightens, wages rise, SRAS
 - Primary deficit: 2% of GDP
 
 **Step 1: Apply the debt dynamics equation.**
-$$\Delta\left(\frac{D}{Y}\right) \approx (r - g)\frac{D}{Y} + \frac LB \text{primary deficit} RB  LB Y RB $$
+$$\Delta\left(\frac{D}{Y}\right) \approx (r - g)\frac{D}{Y} + \frac⧃LB⧄\text{primary deficit}⧃RB⧄⧃LB⧄Y⧃RB⧄$$
 $$= (3.8\% - 4.5\%) \times 95\% + 2\%$$
 $$= (-0.7\%) \times 0.95 + 2\%$$
 $$= -0.665\% + 2\% = 1.335\%$$
@@ -655,7 +655,7 @@ Even though $g > r$ (GDP growth exceeds the interest rate), the debt ratio still
 
 **Step 3: Policy implications.**
 To stabilise the debt ratio ($\Delta(D/Y) = 0$), the primary deficit must be reduced to:
-$$\frac LB \text{required primary surplus} RB  LB Y RB  = -(r - g)\frac{D}{Y} = 0.7\% \times 95\% = 0.665\%$$
+$$\frac⧃LB⧄\text{required primary surplus}⧃RB⧄⧃LB⧄Y⧃RB⧄ = -(r - g)\frac{D}{Y} = 0.7\% \times 95\% = 0.665\%$$
 
 The government needs a primary SURPLUS of 0.665% of GDP (currently running a 2% primary deficit). This requires fiscal tightening of approximately 2.67% of GDP -- a very significant adjustment.
 
@@ -875,16 +875,16 @@ The Laffer curve analysis gives the revenue-maximising top rate at approximately
 
 **Mirrlees framework:**
 The optimal tax rate for income bracket $z$ is:
-$$\tau_z = \frac LB 1 - g(z) RB  LB 1 - g(z) + a \times e(z) RB $$
+$$\tau_z = \frac⧃LB⧄1 - g(z)⧃RB⧄⧃LB⧄1 - g(z) + a \times e(z)⧃RB⧄$$
 
 where $g(z)$ is the social marginal welfare weight (how much society values an extra pound for someone at income $z$), $a$ is the Pareto parameter (measuring inequality at the top), and $e(z)$ is the elasticity of taxable income.
 
 **Numerical application:**
 - For the top 1% (income > GBP 150,000): $g(z) = 0.2$ (society values their welfare less than average), $a = 1.5$, $e(z) = 0.5$.
-- $\tau = \frac LB 1 - 0.2 RB  LB 1 - 0.2 + 1.5 \times 0.5 RB  = \frac{0.8}{0.8 + 0.75} = \frac{0.8}{1.55} = 51.6\%$.
+- $\tau = \frac⧃LB⧄1 - 0.2⧃RB⧄⧃LB⧄1 - 0.2 + 1.5 \times 0.5⧃RB⧄ = \frac{0.8}{0.8 + 0.75} = \frac{0.8}{1.55} = 51.6\%$.
 
 - For median earners (income GBP 35,000): $g(z) = 1.0$, $a = 1.5$, $e(z) = 0.1$.
-- $\tau = \frac LB 1 - 1.0 RB  LB 1 - 1.0 + 1.5 \times 0.1 RB  = \frac{0}{0.15} = 0\%$.
+- $\tau = \frac⧃LB⧄1 - 1.0⧃RB⧄⧃LB⧄1 - 1.0 + 1.5 \times 0.1⧃RB⧄ = \frac{0}{0.15} = 0\%$.
 
 Wait, this gives zero tax at the median, which is because the social marginal welfare weight is 1.0 (equal value). The formula actually gives the MARGINAL tax rate that maximises a social welfare function that values income transfers from high-weight to low-weight individuals.
 

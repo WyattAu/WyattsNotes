@@ -155,7 +155,7 @@ sample within each cluster). Practical for large or dispersed populations.
 
 **Measures of central tendency:**
 
-- **Mean**: $\bar{x} = \frac LB \sum x_i RB  LB n RB $. Uses all data points but affected by outliers.
+- **Mean**: $\bar{x} = \frac⧃LB⧄\sum x_i⧃RB⧄⧃LB⧄n⧃RB⧄$. Uses all data points but affected by outliers.
 - **Median**: the middle value when data are sorted. Robust to outliers.
 - **Mode**: the most frequent value. Useful for categorical data.
 
@@ -164,7 +164,7 @@ sample within each cluster). Practical for large or dispersed populations.
 - **Range**: maximum value minus minimum value. Simple but affected by outliers.
 - **Interquartile range (IQR)**: $Q_3 - Q_1$. Robust to outliers; represents the middle $50\%$ of
   the data.
-- **Standard deviation**: $\sigma = \sqrt LB \frac{\sum (x_i - \bar{x})^2}{n} RB $. Measures average
+- **Standard deviation**: $\sigma = \sqrt⧃LB⧄\frac{\sum (x_i - \bar{x})^2}{n}⧃RB⧄$. Measures average
   deviation from the mean; uses all data points.
 
 ### Inferential Statistics
@@ -173,7 +173,7 @@ sample within each cluster). Practical for large or dispersed populations.
 
 Measures the strength and direction of the monotonic relationship between two ranked variables.
 
-$$r_s = 1 - \frac LB 6 \sum d^2 RB  LB n(n^2 - 1) RB $$
+$$r_s = 1 - \frac⧃LB⧄6 \sum d^2⧃RB⧄⧃LB⧄n(n^2 - 1)⧃RB⧄$$
 
 Where $d$ is the difference in ranks for each pair of observations, and $n$ is the sample size.
 $r_s$ ranges from $-1$ (perfect negative correlation) to $+1$ (perfect positive correlation). The
@@ -197,7 +197,7 @@ Tests whether there is a significant association between two categorical variabl
 $$\chi^2 = \sum \frac{(O - E)^2}{E}$$
 
 Where $O$ is the observed frequency and $E$ is the expected frequency for each cell. Expected
-frequency $E = \frac LB \mathrm{row total} \times \mathrm{column total} RB  LB \mathrm{grand total} RB $. The
+frequency $E = \frac⧃LB⧄\mathrm{row total} \times \mathrm{column total}⧃RB⧄⧃LB⧄\mathrm{grand total}⧃RB⧄$. The
 calculated $\chi^2$ value is compared to critical values with the appropriate degrees of freedom
 ($\mathrm{df} = (r-1)(c-1)$).
 
@@ -346,7 +346,7 @@ Ranking the data:
 
 $\sum d^2 = 0$, $n = 6$
 
-$$r_s = 1 - \frac LB 6 \times 0 RB  LB 6(36 - 1) RB  = 1.0$$
+$$r_s = 1 - \frac⧃LB⧄6 \times 0⧃RB⧄⧃LB⧄6(36 - 1)⧃RB⧄ = 1.0$$
 
 $r_s = 1.0$: a perfect negative correlation. As distance from the city centre increases, house
 prices decrease consistently. At $p < 0.05$, the critical value for $n = 6$ is $0.886$. Since
@@ -370,7 +370,7 @@ A geographer investigates whether land use varies between two areas. The observe
 Calculate expected frequencies and the chi-squared statistic.
 
 Expected frequency:
-$E = \frac LB \mathrm{row total} \times \mathrm{column total} RB  LB \mathrm{grand total} RB $
+$E = \frac⧃LB⧄\mathrm{row total} \times \mathrm{column total}⧃RB⧄⧃LB⧄\mathrm{grand total}⧃RB⧄$
 
 | Land Use    | $E_A$                        | $E_B$                        |
 | ----------- | ---------------------------- | ---------------------------- |

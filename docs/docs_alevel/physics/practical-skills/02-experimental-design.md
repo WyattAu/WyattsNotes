@@ -184,7 +184,7 @@ Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
 
 Accuracy depends on minimising both systematic and random errors:
 
-$$\mathrm{Accuracy} \propto \frac LB 1 RB  LB |\mathrm{systematic error}| + \mathrm{random error} RB $$
+$$\mathrm{Accuracy} \propto \frac⧃LB⧄1⧃RB⧄⧃LB⧄|\mathrm{systematic error}| + \mathrm{random error}⧃RB⧄$$
 
 **Systematic errors** shift all readings by a constant amount. They cannot be reduced by averaging.
 Examples include:

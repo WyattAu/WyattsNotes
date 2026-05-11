@@ -94,7 +94,7 @@ A biologist wants to observe the detailed internal structure of a mitochondrion 
 
 **Solution:**
 
-(a) **Magnification** is the number of times larger the image appears compared to the actual object: $\text{magnification} = \frac LB \text{image size} RB  LB \text{actual size} RB $. **Resolution** (or resolving power) is the minimum distance between two points that can be distinguished as separate objects. Resolution is more important than magnification because increasing magnification without improving resolution simply produces a larger, blurry image — you cannot see more detail. The resolution of a light microscope is limited to approximately 200 nm (due to the wavelength of visible light), whereas electron microscopes have a resolution of approximately 0.2 nm (due to the much shorter wavelength of electrons). This means electron microscopes can reveal sub-cellular structures (organelles, ribosomes, membranes) that are invisible under a light microscope.
+(a) **Magnification** is the number of times larger the image appears compared to the actual object: $\text{magnification} = \frac⧃LB⧄\text{image size}⧃RB⧄⧃LB⧄\text{actual size}⧃RB⧄$. **Resolution** (or resolving power) is the minimum distance between two points that can be distinguished as separate objects. Resolution is more important than magnification because increasing magnification without improving resolution simply produces a larger, blurry image — you cannot see more detail. The resolution of a light microscope is limited to approximately 200 nm (due to the wavelength of visible light), whereas electron microscopes have a resolution of approximately 0.2 nm (due to the much shorter wavelength of electrons). This means electron microscopes can reveal sub-cellular structures (organelles, ribosomes, membranes) that are invisible under a light microscope.
 
 (b) **Advantages of TEM over light microscopy**:
 - Much higher resolution (approximately 0.2 nm vs 200 nm), revealing fine ultrastructural detail such as mitochondrial cristae, ribosomes, and nuclear pores.
@@ -106,13 +106,13 @@ A biologist wants to observe the detailed internal structure of a mitochondrion 
 3. The image is 2D (a thin section), so 3D reconstruction requires multiple sections.
 4. The image appears in black and white (density-dependent contrast from heavy metal staining), not in natural colour.
 
-(c) Magnification $= \frac LB \text{image size} RB  LB \text{actual size} RB $.
+(c) Magnification $= \frac⧃LB⧄\text{image size}⧃RB⧄⧃LB⧄\text{actual size}⧃RB⧄$.
 
 First, convert units consistently:
 - Image size of scale bar $= 20\text{ mm} = 20 \times 10^6\text{ nm}$
 - Actual size of scale bar $= 50\text{ nm}$
 
-$\text{Magnification} = \frac LB 20 \times 10^6 RB  LB 50 RB  = \frac{20,000,000}{50} = 400,000$
+$\text{Magnification} = \frac⧃LB⧄20 \times 10^6⧃RB⧄⧃LB⧄50⧃RB⧄ = \frac{20,000,000}{50} = 400,000$
 
 The magnification is $\times 400,000$.
 

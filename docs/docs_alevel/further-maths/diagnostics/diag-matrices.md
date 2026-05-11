@@ -105,7 +105,7 @@ $x = 10$, $y = -1$, $z = -4$. Verification: $10 - 2 - 4 = 4 \checkmark$; $20 + 1
 (d) If $\det(\mathbf{A}) = 0$, the matrix is singular and $\mathbf{A}^{-1}$ does not exist. This means the three equations are linearly dependent. The system has either no unique solution: either no solution (inconsistent) or infinitely many solutions.
 
 ### IT-3: Matrix Applications (with Differential Equations)
-**Question:** The matrix $\mathbf{A} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ defines a system of coupled differential equations $\frac LB d\mathbf{x} RB  LB dt RB  = \mathbf{A}\mathbf{x}$ where $\mathbf{x} = \begin{pmatrix} x \\ y \end{pmatrix}$. (a) Find the eigenvalues and eigenvectors of $\mathbf{A}$. (b) Write the general solution for $\mathbf{x}(t)$ given that $\mathbf{x}(0) = \begin{pmatrix} 3 \\ 1 \end{pmatrix}$. (c) Calculate $\mathbf{x}(1)$. (d) Describe the long-term behaviour of the solution.
+**Question:** The matrix $\mathbf{A} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ defines a system of coupled differential equations $\frac⧃LB⧄d\mathbf{x}⧃RB⧄⧃LB⧄dt⧃RB⧄ = \mathbf{A}\mathbf{x}$ where $\mathbf{x} = \begin{pmatrix} x \\ y \end{pmatrix}$. (a) Find the eigenvalues and eigenvectors of $\mathbf{A}$. (b) Write the general solution for $\mathbf{x}(t)$ given that $\mathbf{x}(0) = \begin{pmatrix} 3 \\ 1 \end{pmatrix}$. (c) Calculate $\mathbf{x}(1)$. (d) Describe the long-term behaviour of the solution.
 
 **Solution:**
 

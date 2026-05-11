@@ -315,7 +315,7 @@ $\displaystyle\int \frac{1}{x^2-1}\,dx = \int \frac{1}{2}\left(\frac{1}{x-1} - \
 
 ### 8.3 $\int \tan x\,dx$ and related
 
-$$\int \tan x\,dx = \int \frac LB \sin x RB  LB \cos x RB \,dx = -\ln|\cos x| + C = \ln|\sec x| + C$$
+$$\int \tan x\,dx = \int \frac⧃LB⧄\sin x⧃RB⧄⧃LB⧄\cos x⧃RB⧄\,dx = -\ln|\cos x| + C = \ln|\sec x| + C$$
 
 <hr />
 
@@ -399,7 +399,7 @@ $h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$, $y_1 = 1/(1+0.25) = 0.8$, $y_2 = 
 $$\mathrm{Approx} = \frac{0.5}{2}\left[1 + 2(0.8) + 2(0.5) + 2(0.3077) + 0.2\right] = 0.25[1 + 1.6 + 1.0 + 0.6154 + 0.2] = 0.25 \times 4.4154 \approx 1.104$$
 
 Error bound:
-$|E| \leq \dfrac LB 2^3 RB  LB 12 \times 16 RB  \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
+$|E| \leq \dfrac⧃LB⧄2^3⧃RB⧄⧃LB⧄12 \times 16⧃RB⧄ \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
 
 **If you get this wrong, revise:** [The Trapezium Rule](#7-the-trapezium-rule) — Section 7.
 
@@ -407,14 +407,14 @@ $|E| \leq \dfrac LB 2^3 RB  LB 12 \times 16 RB  \times 2 = \dfrac{8}{192} \times
 
 <details>
 <summary>Problem 6</summary>
-Find $\displaystyle\int \frac LB x RB  LB \sqrt{x+1} RB \,dx$.
+Find $\displaystyle\int \frac⧃LB⧄x⧃RB⧄⧃LB⧄\sqrt{x+1}⧃RB⧄\,dx$.
 </details>
 
 <details>
 <summary>Solution 6</summary>
 Let $u = x+1$, so $x = u-1$ and $dx = du$.
 
-$$\int \frac LB u-1 RB  LB \sqrt{u} RB \,du = \int(u^{1/2} - u^{-1/2})\,du = \frac{2}{3}u^{3/2} - 2u^{1/2} + C = \frac{2}{3}(x+1)^{3/2} - 2(x+1)^{1/2} + C$$
+$$\int \frac⧃LB⧄u-1⧃RB⧄⧃LB⧄\sqrt{u}⧃RB⧄\,du = \int(u^{1/2} - u^{-1/2})\,du = \frac{2}{3}u^{3/2} - 2u^{1/2} + C = \frac{2}{3}(x+1)^{3/2} - 2(x+1)^{1/2} + C$$
 
 **If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) —
 Section 5.
@@ -486,7 +486,7 @@ $I = e^{2x}\sin x - 2(-e^{2x}\cos x + 2I) = e^{2x}\sin x + 2e^{2x}\cos x - 4I$.
 
 $5I = e^{2x}(\sin x + 2\cos x)$.
 
-$$I = \frac LB e^{2x}(\sin x + 2\cos x) RB  LB 5 RB  + C$$
+$$I = \frac⧃LB⧄e^{2x}(\sin x + 2\cos x)⧃RB⧄⧃LB⧄5⧃RB⧄ + C$$
 
 **If you get this wrong, revise:** [Integration by Parts](#6-integration-by-parts) — Section 6.
 
@@ -494,16 +494,16 @@ $$I = \frac LB e^{2x}(\sin x + 2\cos x) RB  LB 5 RB  + C$$
 
 <details>
 <summary>Problem 10</summary>
-Evaluate $\displaystyle\int_1^e \frac LB \ln x RB  LB x RB \,dx$.
+Evaluate $\displaystyle\int_1^e \frac⧃LB⧄\ln x⧃RB⧄⧃LB⧄x⧃RB⧄\,dx$.
 </details>
 
 <details>
 <summary>Solution 10</summary>
 Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$.
 
-$$\int \frac LB \ln x RB  LB x RB \,dx = \int u\,du = \frac{u^2}{2} + C = \frac LB (\ln x)^2 RB  LB 2 RB  + C$$
+$$\int \frac⧃LB⧄\ln x⧃RB⧄⧃LB⧄x⧃RB⧄\,dx = \int u\,du = \frac{u^2}{2} + C = \frac⧃LB⧄(\ln x)^2⧃RB⧄⧃LB⧄2⧃RB⧄ + C$$
 
-$$\left[\frac LB (\ln x)^2 RB  LB 2 RB \right]_1^e = \frac{1}{2} - 0 = \frac{1}{2}$$
+$$\left[\frac⧃LB⧄(\ln x)^2⧃RB⧄⧃LB⧄2⧃RB⧄\right]_1^e = \frac{1}{2} - 0 = \frac{1}{2}$$
 
 **If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) —
 Section 5.
@@ -517,7 +517,7 @@ The curve $C$ has parametric equations $x = t^2$, $y = 2t$ for $0 \leq t \leq 3$
 
 <details>
 <summary>Solution 11</summary>
-$$A = \int_{t=0}^{t=3} y\,\frac{dx}{dt}\,dt = \int_0^3 2t \cdot 2t\,dt = \int_0^3 4t^2\,dt = \left[\frac{4t^3}{3}\right]_0^3 = \frac LB 4 \times 27 RB  LB 3 RB  = 36$$
+$$A = \int_{t=0}^{t=3} y\,\frac{dx}{dt}\,dt = \int_0^3 2t \cdot 2t\,dt = \int_0^3 4t^2\,dt = \left[\frac{4t^3}{3}\right]_0^3 = \frac⧃LB⧄4 \times 27⧃RB⧄⧃LB⧄3⧃RB⧄ = 36$$
 
 **If you get this wrong, revise:**
 [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.4.

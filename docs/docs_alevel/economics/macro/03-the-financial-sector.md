@@ -230,7 +230,7 @@ $$M^d = L_T + L_P + L_S = (k + j)Y - hi$$
 
 The interest rate is determined by the intersection of money demand and money supply:
 
-$$M^s = M^d \implies \bar{M} = (k+j)Y - hi \implies i = \frac LB (k+j)Y - \bar{M} RB  LB h RB $$
+$$M^s = M^d \implies \bar{M} = (k+j)Y - hi \implies i = \frac⧃LB⧄(k+j)Y - \bar{M}⧃RB⧄⧃LB⧄h⧃RB⧄$$
 
 ### 3.3 Term Structure of Interest Rates
 
@@ -715,7 +715,7 @@ Central bank injects GBP 1,000 of new reserves. Reserve ratio $rr = 0.1$. Cash l
 
 **Total deposits created:**
 $$D = 1000 + 765 + 585.23 + \cdots$$
-$$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac LB 1000 RB  LB 1 - 0.85 \times 0.9 RB  = \frac{1000}{1 - 0.765} = \frac{1000}{0.235} = \text{GBP } 4\,255$$
+$$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac⧃LB⧄1000⧃RB⧄⧃LB⧄1 - 0.85 \times 0.9⧃RB⧄ = \frac{1000}{1 - 0.765} = \frac{1000}{0.235} = \text{GBP } 4\,255$$
 
 **Effective money multiplier:**
 $$m = \frac{D}{R} = \frac{4255}{1000} = 4.26$$
@@ -742,11 +742,11 @@ The YTM is approximately 8%. The bond trades at a discount because the coupon (6
 
 The **Macaulay duration** of a bond measures its sensitivity to interest rate changes:
 
-$$D = \frac{1}{P} \sum_{t=1}^{n} \frac LB t \times C_t RB  LB (1+r)^t RB $$
+$$D = \frac{1}{P} \sum_{t=1}^{n} \frac⧃LB⧄t \times C_t⧃RB⧄⧃LB⧄(1+r)^t⧃RB⧄$$
 
 For a 5-year bond with 6% coupon, face 100, priced at par ($r = 6\%$):
 
-$$D = \frac{1}{100}\left[\frac LB 1 \times 6 RB  LB 1.06 RB  + \frac LB 2 \times 6 RB  LB 1.06^2 RB  + \frac LB 3 \times 6 RB  LB 1.06^3 RB  + \frac LB 4 \times 6 RB  LB 1.06^4 RB  + \frac LB 5 \times 106 RB  LB 1.06^5 RB \right]$$
+$$D = \frac{1}{100}\left[\frac⧃LB⧄1 \times 6⧃RB⧄⧃LB⧄1.06⧃RB⧄ + \frac⧃LB⧄2 \times 6⧃RB⧄⧃LB⧄1.06^2⧃RB⧄ + \frac⧃LB⧄3 \times 6⧃RB⧄⧃LB⧄1.06^3⧃RB⧄ + \frac⧃LB⧄4 \times 6⧃RB⧄⧃LB⧄1.06^4⧃RB⧄ + \frac⧃LB⧄5 \times 106⧃RB⧄⧃LB⧄1.06^5⧃RB⧄\right]$$
 $$D = \frac{1}{100}[5.66 + 10.68 + 15.08 + 18.88 + 79.34] = \frac{129.64}{100} = 4.30 \text{ years}$$
 
 **Interpretation:** if interest rates rise by 1%, the bond price falls by approximately 4.30%. Duration captures the weighted-average time to receipt of the bond's cash flows.
@@ -891,7 +891,7 @@ Money multiplier $= \frac{1 + c}{rr + c} = \frac{1.05}{0.15} = 7$.
 **If the Bank Rate rises by 2 percentage points:**
 - Asset returns: fixed-rate mortgages and bonds are UNCHANGED (2% and 3% respectively). Variable-rate loans reprice to 7%.
 - New asset value: fixed-rate assets lose market value as yields rise.
-  Bond value: GBP 80bn of 10-year bonds at 2% yield. At 4% yield: $PV = \frac LB 80 \times 0.02 RB  LB 0.04 RB  \times (1 - 1.04^{-10}) + 80 / 1.04^{10}$. Approximately, bond prices fall by 15-20% for a 2% yield rise on 10-year bonds. New bond value: approximately 64bn. Loss: 16bn.
+  Bond value: GBP 80bn of 10-year bonds at 2% yield. At 4% yield: $PV = \frac⧃LB⧄80 \times 0.02⧃RB⧄⧃LB⧄0.04⧃RB⧄ \times (1 - 1.04^{-10}) + 80 / 1.04^{10}$. Approximately, bond prices fall by 15-20% for a 2% yield rise on 10-year bonds. New bond value: approximately 64bn. Loss: 16bn.
   Mortgage value: similarly, fixed-rate mortgages lose approximately 10% of value. Loss: 20bn.
 
 - Liability costs: instant-access deposits may not reprice immediately, but wholesale funding rolls over at higher rates. Additional interest cost: $80 \times 0.02 = 1.6$bn per year.
@@ -986,11 +986,11 @@ The reduction in reserves removes liquidity from the banking system.
 **Example.** A household takes out a GBP 300,000 repayment mortgage over 25 years.
 
 **At 2% interest rate:**
-Monthly payment $= 300\,000 \times \frac LB 0.02/12 \times (1 + 0.02/12)^{300} RB  LB (1 + 0.02/12)^{300} - 1 RB  = 300\,000 \times \frac LB 0.001667 \times 1.646 RB  LB 0.646 RB  = 300\,000 \times 0.004249 = \pounds 1\,275$.
+Monthly payment $= 300\,000 \times \frac⧃LB⧄0.02/12 \times (1 + 0.02/12)^{300}⧃RB⧄⧃LB⧄(1 + 0.02/12)^{300} - 1⧃RB⧄ = 300\,000 \times \frac⧃LB⧄0.001667 \times 1.646⧃RB⧄⧃LB⧄0.646⧃RB⧄ = 300\,000 \times 0.004249 = \pounds 1\,275$.
 Total payments over 25 years: $1275 \times 300 = 382\,500$. Total interest: 82,500.
 
 **At 5% interest rate:**
-Monthly payment $= 300\,000 \times \frac LB 0.05/12 \times (1 + 0.05/12)^{300} RB  LB (1 + 0.05/12)^{300} - 1 RB  = 300\,000 \times 0.005846 = \pounds 1\,754$.
+Monthly payment $= 300\,000 \times \frac⧃LB⧄0.05/12 \times (1 + 0.05/12)^{300}⧃RB⧄⧃LB⧄(1 + 0.05/12)^{300} - 1⧃RB⧄ = 300\,000 \times 0.005846 = \pounds 1\,754$.
 Total payments: $1754 \times 300 = 526\,200$. Total interest: 226,200.
 
 **At 7% interest rate:**

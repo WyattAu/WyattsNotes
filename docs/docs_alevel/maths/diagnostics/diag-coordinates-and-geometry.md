@@ -276,7 +276,7 @@ $$= 1 + \frac{60}{25} + \frac{196}{25}$$
 
 $$= 1 + \frac{256}{25} = \frac{281}{25}$$
 
-$$|\overrightarrow{AF}| = \frac LB \sqrt{281} RB  LB 5 RB $$
+$$|\overrightarrow{AF}| = \frac⧃LB⧄\sqrt{281}⧃RB⧄⧃LB⧄5⧃RB⧄$$
 
 ---
 

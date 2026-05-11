@@ -3,25 +3,21 @@
  * Preprocesses .md/.mdx files to replace LaTeX command brace arguments
  * with placeholders that MDX's micromark parser won't try to parse as JSX.
  *
- * Problem: \dfrac{|\mathbf{a}|}{|\mathbf{n}|} — micromark sees {content}
- * after \dfrac, tries to parse as JSX, acorn fails on LaTeX commands.
- *
- * Solution: Replace the { and } delimiters with placeholders that micromark
- * treats as regular text. The companion remark plugin (in index.js) restores
- * the placeholders to { and } during AST processing.
+ * Uses printable ASCII placeholders (no null bytes) to avoid issues with
+ * micromark splitting text nodes at null boundaries.
  *
  * Placeholders:
- *   LBRACE_PLACEHOLDER = '\x00LBRACE\x00'  (null bytes prevent collision)
- *   RBRACE_PLACEHOLDER = '\x00RBRACE\x00'
+ *   LBRACE_PLACEHOLDER = '⦃LB⦄'  (rare Unicode chars unlikely in LaTeX)
+ *   RBRACE_PLACEHOLDER = '⦃RB⦄'
  *
- * The remark plugin converts these back to { and } in text nodes.
+ * The companion remark plugin (in index.js) restores these to { and }.
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const LBRACE = '\x00LB\x00';
-const RBRACE = '\x00RB\x00';
+const LBRACE = '\u29C3LB\u29C4';  // ⦃LB⦄
+const RBRACE = '\u29C3RB\u29C4';  // ⦃RB⦄
 
 const TOP_LEVEL_CMDS = new Set([
   'dfrac', 'tfrac', 'cfrac', 'frac',
@@ -88,17 +84,14 @@ function processSource(source) {
           }
 
           if (allValid && anyProblematic) {
-            // Output command name
             parts.push(source.substring(cmdStart, cmdEnd));
             let endPos = cmdEnd;
 
             for (const group of braceGroups) {
-              // Whitespace before group
               const wsStart = endPos;
               while (endPos < source.length && ' \t\n'.includes(source[endPos])) endPos++;
               parts.push(source.substring(wsStart, endPos));
 
-              // Replace outer { } with placeholders
               parts.push(LBRACE + group.content + RBRACE);
               endPos = group.end;
             }

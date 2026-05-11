@@ -317,11 +317,11 @@ _Proof._
 (iii) Let $f(y)$ be the income density function and $F(y)$ the cumulative distribution function.
 Define $p = F(y)$ (the population proportion earning up to income $y$). Then:
 
-$$L(p) = \frac LB 1 RB  LB \mu RB \int_0^y t \cdot f(t)\,dt$$
+$$L(p) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\mu⧃RB⧄\int_0^y t \cdot f(t)\,dt$$
 
 where $\mu$ is mean income. Differentiating with respect to $p$ using $dp = f(y)\,dy$:
 
-$$L'(p) = \frac{dL}{dp} = \frac{dL/dy}{dp/dy} = \frac LB y \cdot f(y) RB  LB f(y) RB  = y \geq 0$$
+$$L'(p) = \frac{dL}{dp} = \frac{dL/dy}{dp/dy} = \frac⧃LB⧄y \cdot f(y)⧃RB⧄⧃LB⧄f(y)⧃RB⧄ = y \geq 0$$
 
 Since income $y \geq 0$, the Lorenz curve is monotonically non-decreasing. $\blacksquare$
 
@@ -690,7 +690,7 @@ The argument: early industrialisation draws labour from agriculture to industry,
 
 **Intergenerational income elasticity (IGE)** measures the correlation between parents' and children's incomes:
 
-$$\text{IGE} = \frac LB \partial \ln(Y_{child}) RB  LB \partial \ln(Y_{parent}) RB $$
+$$\text{IGE} = \frac⧃LB⧄\partial \ln(Y_{child})⧃RB⧄⧃LB⧄\partial \ln(Y_{parent})⧃RB⧄$$
 
 If IGE $= 0.5$, a 10% increase in parental income is associated with a 5% increase in the child's income. Higher IGE means less mobility.
 
