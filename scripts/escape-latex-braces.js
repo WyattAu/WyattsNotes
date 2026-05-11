@@ -20,10 +20,19 @@ const LBRACE = '◆LB◆';
 const RBRACE = '◆RB◆';
 
 const TOP_LEVEL_CMDS = new Set([
-  'dfrac', 'tfrac', 'cfrac', 'frac',
-  'binom', 'choose', 'brace', 'brack',
-  'sqrt', 'overbrace', 'underbrace',
-  'overset', 'underset',
+  'dfrac',
+  'tfrac',
+  'cfrac',
+  'frac',
+  'binom',
+  'choose',
+  'brace',
+  'brack',
+  'sqrt',
+  'overbrace',
+  'underbrace',
+  'overset',
+  'underset',
   'begin',
 ]);
 
@@ -75,7 +84,10 @@ function processSource(source) {
             if (scanPos >= source.length || source[scanPos] !== '{') break;
 
             const result = readBalancedBraces(source, scanPos);
-            if (!result) { allValid = false; break; }
+            if (!result) {
+              allValid = false;
+              break;
+            }
 
             braceGroups.push(result);
             scanPos = result.end;
@@ -131,7 +143,8 @@ function main() {
     process.exit(1);
   }
 
-  let totalFiles = 0, modifiedFiles = 0;
+  let totalFiles = 0,
+    modifiedFiles = 0;
 
   for (const arg of args) {
     const stat = fs.statSync(arg);

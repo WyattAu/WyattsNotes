@@ -19,11 +19,33 @@ module.exports = function (source) {
   // List of LaTeX commands whose arguments commonly contain other LaTeX commands
   // that would fail acorn parsing. Only escape braces for these commands.
   const PROBLEMATIC_CMDS = [
-    'dfrac', 'tfrac', 'cfrac', 'frac', 'binom', 'sqrt',
-    'mathbf', 'mathrm', 'mathcal', 'mathbb', 'mathsf', 'mathit',
-    'mathnormal', 'boldsymbol', 'text', 'textbf', 'textit', 'textrm',
-    'begin', 'underbrace', 'overbrace', 'overset', 'underset',
-    'sum', 'prod', 'int', 'lim',
+    'dfrac',
+    'tfrac',
+    'cfrac',
+    'frac',
+    'binom',
+    'sqrt',
+    'mathbf',
+    'mathrm',
+    'mathcal',
+    'mathbb',
+    'mathsf',
+    'mathit',
+    'mathnormal',
+    'boldsymbol',
+    'text',
+    'textbf',
+    'textit',
+    'textrm',
+    'begin',
+    'underbrace',
+    'overbrace',
+    'overset',
+    'underset',
+    'sum',
+    'prod',
+    'int',
+    'lim',
   ];
 
   let result = source;
@@ -45,7 +67,7 @@ module.exports = function (source) {
       if (PROBLEMATIC_CMDS.includes(cmdName)) {
         // Skip whitespace
         let pos = cmdEnd;
-        while (pos < source.length && source[pos] in {' ': 1, '\t': 1, '\n': 1}) {
+        while (pos < source.length && source[pos] in { ' ': 1, '\t': 1, '\n': 1 }) {
           pos++;
         }
 
@@ -60,7 +82,11 @@ module.exports = function (source) {
             else if (source[j] === '}') {
               depth--;
               if (depth === 0) break;
-            } else if (source[j] === '\\' && j + 1 < source.length && /[a-zA-Z]/.test(source[j + 1])) {
+            } else if (
+              source[j] === '\\' &&
+              j + 1 < source.length &&
+              /[a-zA-Z]/.test(source[j + 1])
+            ) {
               hasProblem = true;
             } else if (source[j] === '|') {
               hasProblem = true;
@@ -83,7 +109,7 @@ module.exports = function (source) {
             // Process each brace group, escaping { and } inside
             while (i < source.length) {
               // Skip whitespace
-              while (i < source.length && source[i] in {' ': 1, '\t': 1, '\n': 1}) {
+              while (i < source.length && source[i] in { ' ': 1, '\t': 1, '\n': 1 }) {
                 parts.push(source[i]);
                 i++;
               }
@@ -97,7 +123,10 @@ module.exports = function (source) {
                 if (source[i] === '{') d++;
                 else if (source[i] === '}') {
                   d--;
-                  if (d === 0) { i++; break; }
+                  if (d === 0) {
+                    i++;
+                    break;
+                  }
                 }
                 i++;
               }
