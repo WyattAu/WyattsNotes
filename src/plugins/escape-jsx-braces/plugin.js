@@ -11,20 +11,17 @@ module.exports = function (context, options) {
   return {
     name: 'docusaurus-plugin-escape-latex-braces',
 
-    configureWebpack() {
+    configureWebpack(config) {
       const loaderPath = path.resolve(__dirname, 'webpack-loader.js');
 
-      return {
-        module: {
-          rules: [
-            {
-              test: /\.mdx?$/,
-              enforce: 'pre',
-              use: [{ loader: loaderPath }],
-            },
-          ],
-        },
-      };
+      // Use unshift to prepend our rule safely
+      config.module.rules.unshift({
+        test: /\.mdx?$/,
+        enforce: 'pre',
+        use: [{ loader: loaderPath }],
+      });
+
+      return config;
     },
   };
 };
