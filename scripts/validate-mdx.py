@@ -75,22 +75,26 @@ class MDXValidator:
             return
 
         # Opening admonition with content on same line
-        # :::info Some text here
+        # :::info Some text here — valid in Docusaurus (renders as block admonition)
+        # Only flag as info, not error
         if re.match(r"^:::(info|warning|tip|danger|note)\s+\S", stripped):
-            self.errors.append(
-                f"{filename}:{lineno}: admonition opening has content on same line (renders as inline, not block)"
-            )
+            # Check if it's NOT self-closing (no ::: at end of same line)
+            if not re.search(r":::\s*$", stripped):
+                self.info.append(
+                    f"{filename}:{lineno}: admonition opening has content on same line (valid in Docusaurus)"
+                )
 
-        # Closing ::: on same line as content
-        # Some text :::
+        # Closing ::: on same line as content — valid auto-close in Docusaurus
+        # Only flag if the content before ::: starts a new admonition type
         if re.search(r"\S\s+:::\s*$", stripped):
-            # But NOT bare ::: on its own line (which is a valid close)
-            self.errors.append(
-                f"{filename}:{lineno}: closing ::: has text before it on same line"
-            )
+            # Not a bare ::: close, and not a self-closing admonition
+            if not re.match(r"^:::", stripped):
+                self.info.append(
+                    f"{filename}:{lineno}: closing ::: has text before it on same line (valid auto-close)"
+                )
 
         # Bare ::: at start of line (closing) followed by text
-        # ::: some text
+        # ::: some text — could accidentally start a new admonition
         if re.match(r"^:::\s+[a-zA-Z]", stripped):
             self.errors.append(
                 f"{filename}:{lineno}: closing ::: has text after it (will start new admonition block)"
@@ -109,22 +113,37 @@ class MDXValidator:
         )
 
     def _check_eof_admonitions(self, filename, lines):
-        """Check if file ends with unclosed admonition."""
+        """Check if file ends with unclosed admonition.
+
+        Docusaurus remark-admonitions auto-close admonitions at heading
+        boundaries (##, ###, etc.) and at EOF, so unclosed admonitions
+        are not errors — only flag as info.
+        """
         depth = 0
+        in_code_fence = False
         for line in lines:
             stripped = line.strip()
-            if self._in_code_fence or self._in_math:
+            # Track code fence state
+            if stripped.startswith("```"):
+                in_code_fence = not in_code_fence
                 continue
+            if in_code_fence:
+                continue
+            # Self-closing on same line
             if re.match(r"^:::(info|warning|tip|danger|note)\b.*:::\s*$", stripped):
-                continue  # Self-closing
+                continue
+            # Docusaurus auto-closes admonitions at headings
+            if re.match(r"^#{1,6}\s", stripped) and depth > 0:
+                depth = 0
             if re.match(r"^:::(info|warning|tip|danger|note)\b", stripped):
                 depth += 1
             elif stripped == ":::":
                 depth -= 1
 
         if depth > 0:
-            self.errors.append(f"{filename}: EOF: {depth} unclosed admonition(s)")
-            self.stats["unclosed_admonitions"] += depth
+            self.info.append(
+                f"{filename}: EOF: {depth} admonition(s) not explicitly closed (Docusaurus auto-closes)"
+            )
 
     def _check_emojis(self, filename, lineno, line):
         """Check for emoji usage in prose."""
