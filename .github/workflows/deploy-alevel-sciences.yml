@@ -1,12 +1,12 @@
-name: Deploy A-Levels to Cloudflare Pages
+name: Deploy A-Level Sciences to Cloudflare Pages
 
 on:
   push:
     branches: [main]
     paths:
       - 'docs/docs_alevel/**'
-      - 'sidebars/sidebar_alevel.ts'
-      - 'docusaurus.alevel.config.ts'
+      - 'sidebars/sidebar_alevel*.ts'
+      - 'docusaurus.alevel*.config.ts'
       - 'src/pages/**'
       - 'src/theme/**'
       - 'src/components/**'
@@ -18,7 +18,7 @@ on:
 
 jobs:
   deploy:
-    name: Build and Deploy A-Levels
+    name: Build and Deploy A-Level Sciences
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -28,7 +28,7 @@ jobs:
         run: |
           sudo swapoff -a 2>/dev/null || true
           sudo rm -f /swapfile
-          sudo dd if=/dev/zero of=/swapfile bs=1M count=32768
+          sudo dd if=/dev/zero of=/swapfile bs=1M count=16384
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
           sudo swapon /swapfile
@@ -46,7 +46,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: npx docusaurus build --config docusaurus.alevel.config.ts
+        run: npx docusaurus build --config docusaurus.alevel-sciences.config.ts
         env:
           NODE_OPTIONS: --max-old-space-size=11264
           DOCUSAURUS_NO_PERSISTENT_CACHE: '1'
@@ -57,8 +57,14 @@ jobs:
       - name: Install wrangler
         run: pnpm add -D wrangler
 
+      - name: Create Cloudflare Pages project if needed
+        run: npx wrangler pages project create wyattsnotes-alevel-sciences --production-branch main 2>/dev/null || true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy build --project-name wyattsnotes-alevel
+        run: npx wrangler pages deploy build --project-name wyattsnotes-alevel-sciences
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
