@@ -285,13 +285,13 @@ Use the substitution $x = 2\sinh u$, $dx = 2\cosh u\,du$:
 
 $$\int \sqrt{4\sinh^2 u + 4}\cdot 2\cosh u\,du = \int 2\cosh u \cdot 2\cosh u\,du = 4\int \cosh^2 u\,du$$
 
-Using $\cosh^2 u = {`\dfrac{1 + \cosh 2u}{2}`}$:
+Using $\cosh^2 u = \dfrac{1 + \cosh 2u}{2}$:
 
 $$= 4\int \frac{1 + \cosh 2u}{2}\,du = 2u + \sinh 2u + C$$
 
 $$= 2u + 2\sinh u\cosh u + C$$
 
-Since $x = 2\sinh u$: $\sinh u = \dfrac{x}{2}$, $\cosh u = \sqrt{1 + \dfrac{x^2}{4}} = {`\dfrac{\sqrt{x^2 + 4}}{2}`}$,
+Since $x = 2\sinh u$: $\sinh u = \dfrac{x}{2}$, $\cosh u = \sqrt{1 + \dfrac{x^2}{4}} = \dfrac{\sqrt{x^2 + 4}}{2}$,
 $u = \operatorname{arsinh}\!\left(\dfrac{x}{2}\right)$.
 
 $$= 2\operatorname{arsinh}\!\left(\frac{x}{2}\right) + \frac{x\sqrt{x^2 + 4}}{2} + C$$
@@ -345,7 +345,7 @@ Evaluate $\displaystyle\int_0^2 \frac{dx}{\sqrt{x^2 + 16}}$.
 <details>
 <summary>Solution</summary>
 
-$= \left[\operatorname{arsinh}\!\left(\dfrac{x}{4}\right)\right]_0^2 = \operatorname{arsinh}\!\left(\dfrac{1}{2}\right) = \ln\!\left(\dfrac{1}{2} + \sqrt{\dfrac{5}{4}}\right) = \ln\!\left({`\dfrac{1 + \sqrt{5}}{2}`}\right)$.
+$= \left[\operatorname{arsinh}\!\left(\dfrac{x}{4}\right)\right]_0^2 = \operatorname{arsinh}\!\left(\dfrac{1}{2}\right) = \ln\!\left(\dfrac{1}{2} + \sqrt{\dfrac{5}{4}}\right) = \ln\!\left(\dfrac{1 + \sqrt{5}}{2}\right)$.
 
 </details>
 
@@ -358,7 +358,7 @@ Differentiate $f(x) = x\,\operatorname{arcosh}\,x$ for $x \gt 1$.
 
 Using the product rule:
 
-$f'(x) = \operatorname{arcosh}\,x + x \cdot {`\dfrac{1}{\sqrt{x^2 - 1}}`} = \operatorname{arcosh}\,x + {`\dfrac{x}{\sqrt{x^2 - 1}}`}$.
+$f'(x) = \operatorname{arcosh}\,x + x \cdot \dfrac{1}{\sqrt{x^2 - 1}} = \operatorname{arcosh}\,x + \dfrac{x}{\sqrt{x^2 - 1}}$.
 
 </details>
 
@@ -399,7 +399,7 @@ Since $T = T_0\sec\theta$ and $T\sin\theta = T_0\tan\theta$:
 
 $$\frac{d}{dx}(T_0\tan\theta) = w \implies T_0\sec^2\theta\,\frac{d\theta}{dx} = w$$
 
-Let $y' = \tan\theta$, so $\dfrac{dy'}{dx} = \sec^2\theta\,{`\dfrac{d\theta}{dx}`} = \dfrac{w}{T_0}$.
+Let $y' = \tan\theta$, so $\dfrac{dy'}{dx} = \sec^2\theta\,\dfrac{d\theta}{dx} = \dfrac{w}{T_0}$.
 
 Integrating: $y' = \dfrac{w}{T_0}\,x + C_1$. Taking $C_1 = 0$ by symmetry:
 
@@ -441,15 +441,15 @@ Common Pitfall
 
 $e^x + e^{-x} = 5 \implies e^{2x} - 5e^x + 1 = 0$
 
-$e^x = {`\dfrac{5 \pm \sqrt{25 - 4}}{2}`} = {`\dfrac{5 \pm \sqrt{21}}{2}`}$
+$e^x = \dfrac{5 \pm \sqrt{25 - 4}}{2} = \dfrac{5 \pm \sqrt{21}}{2}$
 
-$x = \ln\!\left({`\dfrac{5 \pm \sqrt{21}}{2}`}\right)$
+$x = \ln\!\left(\dfrac{5 \pm \sqrt{21}}{2}\right)$
 
 Since $\cosh$ is even, both $\pm$ give valid solutions (one positive, one negative).
 
-**(b)** $\cosh 2x = 2.5 \implies 2x = \ln\!\left({`\dfrac{5 \pm \sqrt{21}}{2}`}\right)$
+**(b)** $\cosh 2x = 2.5 \implies 2x = \ln\!\left(\dfrac{5 \pm \sqrt{21}}{2}\right)$
 
-$x = \dfrac{1}{2}\ln\!\left({`\dfrac{5 \pm \sqrt{21}}{2}`}\right)$
+$x = \dfrac{1}{2}\ln\!\left(\dfrac{5 \pm \sqrt{21}}{2}\right)$
 
 Alternatively, using $\cosh 2x = 2\cosh^2 x - 1 = 2.5 \implies \cosh^2 x = 1.75$, which
 gives the same result.
@@ -458,7 +458,7 @@ gives the same result.
 
 ### Question 6
 
-**(a)** Prove that $\dfrac{d}{dx}(\operatorname{arcosh}\,x) = {`\dfrac{1}{\sqrt{x^2 - 1}}`}$ for $x > 1$.
+**(a)** Prove that $\dfrac{d}{dx}(\operatorname{arcosh}\,x) = \dfrac{1}{\sqrt{x^2 - 1}}$ for $x > 1$.
 
 **(b)** Evaluate $\displaystyle\int_2^3 \frac{dx}{\sqrt{x^2 - 1}}$ in exact form.
 
@@ -467,17 +467,17 @@ gives the same result.
 
 **(a)** Let $y = \operatorname{arcosh}\,x$, so $x = \cosh y$.
 
-$\dfrac{dx}{dy} = \sinh y$, so $\dfrac{dy}{dx} = {`\dfrac{1}{\sinh y}`}$.
+$\dfrac{dx}{dy} = \sinh y$, so $\dfrac{dy}{dx} = \dfrac{1}{\sinh y}$.
 
 Since $\cosh^2 y - \sinh^2 y = 1$: $\sinh y = \sqrt{\cosh^2 y - 1} = \sqrt{x^2 - 1}$.
 
-$\dfrac{dy}{dx} = {`\dfrac{1}{\sqrt{x^2 - 1}}`} \quad \blacksquare$
+$\dfrac{dy}{dx} = \dfrac{1}{\sqrt{x^2 - 1}} \quad \blacksquare$
 
 **(b)** $\displaystyle\int_2^3 \frac{dx}{\sqrt{x^2 - 1}} = \bigl[\operatorname{arcosh}\,x\bigr]_2^3$
 
 $= \ln(3 + \sqrt{8}) - \ln(2 + \sqrt{3}) = \ln(3 + 2\sqrt{2}) - \ln(2 + \sqrt{3})$
 
-$= \ln\!\left({`\dfrac{3 + 2\sqrt{2}}{2 + \sqrt{3}}`}\right)$.
+$= \ln\!\left(\dfrac{3 + 2\sqrt{2}}{2 + \sqrt{3}}\right)$.
 
 </details>
 
@@ -494,11 +494,11 @@ A curve $C$ has equation $y = \sinh^{-1}(2x - 1)$.
 
 **(a)** $y = \operatorname{arsinh}(2x - 1)$.
 
-$\dfrac{dy}{dx} = {`\dfrac{2}{\sqrt{(2x - 1)^2 + 1}}`} = {`\dfrac{2}{\sqrt{4x^2 - 4x + 2}}`}$.
+$\dfrac{dy}{dx} = \dfrac{2}{\sqrt{(2x - 1)^2 + 1}} = \dfrac{2}{\sqrt{4x^2 - 4x + 2}}$.
 
 **(b)** At $x = 1$: $y = \operatorname{arsinh}(1) = \ln(1 + \sqrt{2})$.
 
-$\dfrac{dy}{dx}\bigg|_{x=1} = {`\dfrac{2}{\sqrt{4 - 4 + 2}}`} = {`\dfrac{2}{\sqrt{2}}`} = \sqrt{2}$.
+$\dfrac{dy}{dx}\bigg|_{x=1} = \dfrac{2}{\sqrt{4 - 4 + 2}} = \dfrac{2}{\sqrt{2}} = \sqrt{2}$.
 
 Equation of tangent: $y - \ln(1 + \sqrt{2}) = \sqrt{2}(x - 1)$, i.e.
 
@@ -532,7 +532,7 @@ $$e^x = \frac{10 \pm \sqrt{100 - 28}}{14} = \frac{10 \pm \sqrt{72}}{14} = \frac{
 
 $$x = \ln\!\left(\frac{5 + 3\sqrt{2}}{7}\right) \quad \text{or} \quad x = \ln\!\left(\frac{5 - 3\sqrt{2}}{7}\right)$$
 
-Since ${`\dfrac{5 - 3\sqrt{2}}{7}`} \approx 0.109 > 0$, both solutions are valid.
+Since $\dfrac{5 - 3\sqrt{2}}{7} \approx 0.109 > 0$, both solutions are valid.
 
 ### Example 9.2: Integration using hyperbolic substitution
 
@@ -542,13 +542,13 @@ Since ${`\dfrac{5 - 3\sqrt{2}}{7}`} \approx 0.109 > 0$, both solutions are valid
 
 $$\int \sqrt{9\cosh^2 u - 9}\cdot 3\sinh u\,du = \int 3\sinh u \cdot 3\sinh u\,du = 9\int \sinh^2 u\,du$$
 
-Using $\sinh^2 u = {`\dfrac{\cosh 2u - 1}{2}`}$:
+Using $\sinh^2 u = \dfrac{\cosh 2u - 1}{2}$:
 
 $$= 9\int \frac{\cosh 2u - 1}{2}\,du = \frac{9}{2}\left(\frac{\sinh 2u}{2} - u\right) + C = \frac{9}{4}\sinh 2u - \frac{9}{2}u + C$$
 
-Since $x = 3\cosh u$: $\cosh u = \dfrac{x}{3}$, $\sinh u = \sqrt{\dfrac{x^2}{9} - 1} = {`\dfrac{\sqrt{x^2 - 9}}{3}`}$.
+Since $x = 3\cosh u$: $\cosh u = \dfrac{x}{3}$, $\sinh u = \sqrt{\dfrac{x^2}{9} - 1} = \dfrac{\sqrt{x^2 - 9}}{3}$.
 
-$\sinh 2u = 2\sinh u\cosh u = {`\dfrac{2x\sqrt{x^2 - 9}}{9}`}$.
+$\sinh 2u = 2\sinh u\cosh u = \dfrac{2x\sqrt{x^2 - 9}}{9}$.
 
 $u = \operatorname{arcosh}\!\left(\dfrac{x}{3}\right) = \ln\!\left(\dfrac{x}{3} + \sqrt{\dfrac{x^2}{9} - 1}\right)$.
 
@@ -572,7 +572,7 @@ $$= 4\cosh^3 x - 3\cosh x \quad \blacksquare$$
 
 ### Example 9.4: Differentiation involving multiple hyperbolic functions
 
-**Problem.** Find $\dfrac{dy}{dx}$ where $y = {`\dfrac{\sinh x}{1 + \cosh x}`}$ and simplify your answer.
+**Problem.** Find $\dfrac{dy}{dx}$ where $y = \dfrac{\sinh x}{1 + \cosh x}$ and simplify your answer.
 
 **Solution.** Using the quotient rule:
 
@@ -669,7 +669,7 @@ The shape $y = a\cosh(x/a)$ describes a hanging chain. The arc length is $s = a\
 
 **(a)** $\cosh^2 x = 1 + \sinh^2 x = 1 + \dfrac{144}{25} = \dfrac{169}{25}$, so $\cosh x = \dfrac{13}{5}$ (positive root).
 
-$\tanh x = {`\dfrac{\sinh x}{\cosh x}`} = \dfrac{12/5}{13/5} = \dfrac{12}{13}$.
+$\tanh x = \dfrac{\sinh x}{\cosh x} = \dfrac{12/5}{13/5} = \dfrac{12}{13}$.
 
 **(b)** Since $\cosh x = \dfrac{13}{5}$:
 
@@ -686,7 +686,7 @@ Find the exact value of $\displaystyle\int_0^{\ln 2} \cosh 2x\,dx$.
 
 $$\int_0^{\ln 2}\cosh 2x\,dx = \left[\frac{\sinh 2x}{2}\right]_0^{\ln 2} = \frac{\sinh(2\ln 2)}{2}$$
 
-$\sinh(2\ln 2) = {`\dfrac{e^{2\ln 2} - e^{-2\ln 2}}{2}`} = \dfrac{4 - 1/4}{2} = \dfrac{15}{8}$.
+$\sinh(2\ln 2) = \dfrac{e^{2\ln 2} - e^{-2\ln 2}}{2} = \dfrac{4 - 1/4}{2} = \dfrac{15}{8}$.
 
 $$\int_0^{\ln 2}\cosh 2x\,dx = \frac{15}{16}$$
 
@@ -772,11 +772,11 @@ So $\ln 3 - \ln 2 = \operatorname{artanh}(1/5)$.
 |---|---|
 | Triple angle | $\sinh 3x = 3\sinh x + 4\sinh^3 x$ |
 | Triple angle | $\cosh 3x = 4\cosh^3 x - 3\cosh x$ |
-| Half angle | $\cosh^2\!\left(\dfrac{x}{2}\right) = {`\dfrac{1 + \cosh x}{2}`}$ |
-| Half angle | $\sinh^2\!\left(\dfrac{x}{2}\right) = {`\dfrac{\cosh x - 1}{2}`}$ |
+| Half angle | $\cosh^2\!\left(\dfrac{x}{2}\right) = \dfrac{1 + \cosh x}{2}$ |
+| Half angle | $\sinh^2\!\left(\dfrac{x}{2}\right) = \dfrac{\cosh x - 1}{2}$ |
 | Integral of $\tanh$ | $\displaystyle\int\tanh x\,dx = \ln(\cosh x) + C$ |
 | Integral of $\coth$ | $\displaystyle\int\coth x\,dx = \ln(\sinh x) + C$ |
-| Integral of $\tanh^3$ | $\displaystyle\int\tanh^3 x\,dx = \ln(\cosh x) - {`\dfrac{\tanh^2 x}{2}`} + C$ |
+| Integral of $\tanh^3$ | $\displaystyle\int\tanh^3 x\,dx = \ln(\cosh x) - \dfrac{\tanh^2 x}{2} + C$ |
 | Arc length of catenary | $s = a\sinh(b/a)$ for $y = a\cosh(x/a)$ |
 
 ---
@@ -831,23 +831,23 @@ $$s = \int_0^1 \cosh x\,dx = [\sinh x]_0^1 = \sinh 1 = \frac{e - e^{-1}}{2} \app
 
 **Problem.** Using Osborn's rule, find $\tanh 2x$ in terms of $\tanh x$.
 
-**Solution.** $\tan 2x = {`\dfrac{2\tan x}{1-\tan^2 x}`}$. Apply Osborn's rule (change $\tan^2 x$ to $-\tanh^2 x$):
+**Solution.** $\tan 2x = \dfrac{2\tan x}{1-\tan^2 x}$. Apply Osborn's rule (change $\tan^2 x$ to $-\tanh^2 x$):
 
 $$\boxed{\tanh 2x = \frac{2\tanh x}{1+\tanh^2 x}}$$
 
 ### Example 14.5: Deriving the Gudermannian function relationship
 
-**Problem.** The Gudermannian function relates circular and hyperbolic functions: $\sec\theta = \cosh u$ where $u = \operatorname{gd}^{-1}(\theta)$. Show that ${`\dfrac{d\theta}{du}`} = \operatorname{sech}\, u$.
+**Problem.** The Gudermannian function relates circular and hyperbolic functions: $\sec\theta = \cosh u$ where $u = \operatorname{gd}^{-1}(\theta)$. Show that $\dfrac{d\theta}{du} = \operatorname{sech}\, u$.
 
 **Solution.** $\sec\theta = \cosh u \implies \cos\theta = \operatorname{sech}\, u$.
 
-Differentiating implicitly with respect to $u$: $-\sin\theta \cdot {`\dfrac{d\theta}{du}`} = -\operatorname{sech}\,u \tanh u$.
+Differentiating implicitly with respect to $u$: $-\sin\theta \cdot \dfrac{d\theta}{du} = -\operatorname{sech}\,u \tanh u$.
 
-${`\dfrac{d\theta}{du}`} = {`\dfrac{\operatorname{sech}\,u \tanh u}{\sin\theta}`}$.
+$\dfrac{d\theta}{du} = \dfrac{\operatorname{sech}\,u \tanh u}{\sin\theta}$.
 
-Since $\cos\theta = \operatorname{sech}\,u$: $\sin\theta = \sqrt{1-\operatorname{sech}^2 u} = \sqrt{1-{`\dfrac{1}{\cosh^2 u}`}} = {`\dfrac{\sqrt{\cosh^2 u - 1}}{\cosh u}`} = {`\dfrac{\sinh u}{\cosh u}`} = \tanh u$.
+Since $\cos\theta = \operatorname{sech}\,u$: $\sin\theta = \sqrt{1-\operatorname{sech}^2 u} = \sqrt{1-\dfrac{1}{\cosh^2 u}} = \dfrac{\sqrt{\cosh^2 u - 1}}{\cosh u} = \dfrac{\sinh u}{\cosh u} = \tanh u$.
 
-${`\dfrac{d\theta}{du}`} = {`\dfrac{\operatorname{sech}\,u \tanh u}{\tanh u}`} = \boxed{\operatorname{sech}\,u}$. $\blacksquare$
+$\dfrac{d\theta}{du} = \dfrac{\operatorname{sech}\,u \tanh u}{\tanh u} = \boxed{\operatorname{sech}\,u}$. $\blacksquare$
 
 ---
 
@@ -890,9 +890,9 @@ Let $y = \operatorname{arcosh}\, x$, so $x = \cosh y$ and $x \geq 1$.
 
 $1 = \sinh y \cdot \dfrac{dy}{dx}$.
 
-$\dfrac{dy}{dx} = {`\dfrac{1}{\sinh y}`} = {`\dfrac{1}{\sqrt{\cosh^2 y - 1}}`} = {`\dfrac{1}{\sqrt{x^2-1}}`}$.
+$\dfrac{dy}{dx} = \dfrac{1}{\sinh y} = \dfrac{1}{\sqrt{\cosh^2 y - 1}} = \dfrac{1}{\sqrt{x^2-1}}$.
 
-$\boxed{\dfrac{d}{dx}[\operatorname{arcosh}\, x] = {`\dfrac{1}{\sqrt{x^2-1}}`}}$ for $x > 1$.
+$\boxed{\dfrac{d}{dx}[\operatorname{arcosh}\, x] = \dfrac{1}{\sqrt{x^2-1}}}$ for $x > 1$.
 
 </details>
 
@@ -922,7 +922,7 @@ $t' = t\cosh\phi - x\sinh\phi/c$, $x' = x\cosh\phi - ct\sinh\phi$.
 | $\operatorname{arcosh}\,x$ | $\ln(x+\sqrt{x^2-1})$ | $x \geq 1$ |
 | $\operatorname{artanh}\,x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $|x| < 1$ |
 | $\operatorname{arcoth}\,x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{x+1}{x-1}\right)$ | $|x| > 1$ |
-| $\operatorname{arsech}\,x$ | $\ln\!\left({`\dfrac{1+\sqrt{1-x^2}}{x}`}\right)$ | $0 < x \leq 1$ |
+| $\operatorname{arsech}\,x$ | $\ln\!\left(\dfrac{1+\sqrt{1-x^2}}{x}\right)$ | $0 < x \leq 1$ |
 | $\operatorname{arcsch}\,x$ | $\ln\!\left(\dfrac{1}{x}+\sqrt{\dfrac{1}{x^2}+1}\right)$ | $x \neq 0$ |
 
 ### 16.4 Hyperbolic functions and catenary applications
@@ -951,7 +951,7 @@ $\dfrac{e^x}{2} + \dfrac{3e^{-x}}{2} = 3 \implies e^x + 3e^{-x} = 6$.
 
 $e^{2x} - 6e^x + 3 = 0$.
 
-$e^x = {`\dfrac{6 \pm \sqrt{36-12}}{2}`} = 3 \pm \sqrt{6}$.
+$e^x = \dfrac{6 \pm \sqrt{36-12}}{2} = 3 \pm \sqrt{6}$.
 
 $x = \ln(3+\sqrt{6})$ or $x = \ln(3-\sqrt{6})$.
 
@@ -970,7 +970,7 @@ Let $y = \operatorname{arcosh}\,x$, so $x = \cosh y = \dfrac{e^y+e^{-y}}{2}$.
 
 $2x = e^y + e^{-y} \implies e^{2y} - 2xe^y + 1 = 0$.
 
-$e^y = {`\dfrac{2x \pm \sqrt{4x^2-4}}{2}`} = x \pm \sqrt{x^2-1}$.
+$e^y = \dfrac{2x \pm \sqrt{4x^2-4}}{2} = x \pm \sqrt{x^2-1}$.
 
 Since $e^y \geq 1$ and $x \geq 1$: $e^y = x + \sqrt{x^2-1}$ (the positive root, since $x-\sqrt{x^2-1} \leq 1$).
 
@@ -1027,7 +1027,7 @@ Let $y = \operatorname{arsinh}\,x$, so $x = \sinh y = \dfrac{e^y-e^{-y}}{2}$.
 
 $2x = e^y - e^{-y} \implies e^{2y} - 2xe^y - 1 = 0$.
 
-$e^y = {`\dfrac{2x + \sqrt{4x^2+4}}{2}`} = x + \sqrt{x^2+1}$ (positive root since $e^y > 0$).
+$e^y = \dfrac{2x + \sqrt{4x^2+4}}{2} = x + \sqrt{x^2+1}$ (positive root since $e^y > 0$).
 
 $y = \ln(x+\sqrt{x^2+1})$. $\blacksquare$
 

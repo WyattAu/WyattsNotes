@@ -46,7 +46,7 @@ $$S(a) = \sum(x_i^2 - 2ax_i + a^2) = \sum x_i^2 - 2a\sum x_i + na^2$$
 
 $$\frac{dS}{da} = -2\sum x_i + 2na$$
 
-Setting $\dfrac{dS}{da} = 0$: $2na = 2\sum x_i \implies a = {`\dfrac{\sum x_i}{n}`} = \bar{x}$.
+Setting $\dfrac{dS}{da} = 0$: $2na = 2\sum x_i \implies a = \dfrac{\sum x_i}{n} = \bar{x}$.
 
 Check: $\dfrac{d^2S}{da^2} = 2n \gt{} 0$, so this is a minimum. $\blacksquare$
 
@@ -91,7 +91,7 @@ The **standard deviation** is $\sigma = \sqrt{\sigma^2}$.
 
 ### 2.2 Computational formula
 
-**Theorem.** $\sigma^2 = {`\dfrac{\sum x_i^2}{n}`} - \bar{x}^2$
+**Theorem.** $\sigma^2 = \dfrac{\sum x_i^2}{n} - \bar{x}^2$
 
 **Proof.**
 

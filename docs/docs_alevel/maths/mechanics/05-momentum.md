@@ -53,8 +53,8 @@ $$\sum \mathbf{p}_{\mathrm{before}} = \sum \mathbf{p}_{\mathrm{after}}$$
 
 $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
-By Newton's Second Law: $\mathbf{F}_{AB} = {`\dfrac{d\mathbf{p}_A}{dt}`}$ and
-$\mathbf{F}_{BA} = {`\dfrac{d\mathbf{p}_B}{dt}`}$.
+By Newton's Second Law: $\mathbf{F}_{AB} = \dfrac{d\mathbf{p}_A}{dt}$ and
+$\mathbf{F}_{BA} = \dfrac{d\mathbf{p}_B}{dt}$.
 
 $$\frac{d\mathbf{p}_A}{dt} + \frac{d\mathbf{p}_B}{dt} = 0 \implies \frac{d}{dt}(\mathbf{p}_A + \mathbf{p}_B) = 0$$
 
@@ -274,7 +274,7 @@ After collision:
 
 $x$-momentum: $3(1.5\sqrt{3}) + 2(3\cos\theta) = 12 \implies 4.5\sqrt{3} + 6\cos\theta = 12$
 
-$\cos\theta = {`\dfrac{12 - 4.5\sqrt{3}}{6}`} = \dfrac{12 - 7.794}{6} \approx 0.701$
+$\cos\theta = \dfrac{12 - 4.5\sqrt{3}}{6} = \dfrac{12 - 7.794}{6} \approx 0.701$
 
 $\theta \approx 45.5^\circ$.
 
@@ -702,7 +702,7 @@ A ball strikes a smooth horizontal floor at $10\,\mathrm{m/s}$ at an angle of $5
 Let the normal (vertical) be the reference direction. Angle to normal: $\alpha = 50^\circ$ before,
 $\beta = 65^\circ$ after.
 
-$\tan\beta = {`\dfrac{\tan\alpha}{e}`} \implies e = {`\dfrac{\tan\alpha}{\tan\beta}`} = {`\dfrac{\tan 50°}{\tan 65°}`}$.
+$\tan\beta = \dfrac{\tan\alpha}{e} \implies e = \dfrac{\tan\alpha}{\tan\beta} = \dfrac{\tan 50°}{\tan 65°}$.
 
 $\tan 50° \approx 1.192$, $\tan 65° \approx 2.145$.
 

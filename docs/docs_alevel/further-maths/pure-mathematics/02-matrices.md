@@ -534,7 +534,7 @@ twice is the identity.
 <details>
 <summary>Answer</summary>
 
-$\tan\theta = \sqrt{3} \implies \theta = {`\dfrac{\pi}{3}`}$.
+$\tan\theta = \sqrt{3} \implies \theta = \dfrac{\pi}{3}$.
 
 $$\mathbf{M} = \begin{pmatrix} \cos\frac{2\pi}{3} & \sin\frac{2\pi}{3} \\ \sin\frac{2\pi}{3} & -\cos\frac{2\pi}{3} \end{pmatrix} = \begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix}$$
 

@@ -211,6 +211,7 @@ const config: Config = {
   ],
 
   plugins: [
+    require.resolve('./src/plugins/escape-jsx-braces/plugin.js'),
     [require.resolve('./src/plugins/service-worker'), { enable: true }],
     [
       '@docusaurus/plugin-content-docs',

@@ -68,8 +68,8 @@ $$
 
 Consider each factor as $n \to \infty$:
 
-- ${`\dfrac{n(n-1)\cdots(n-r+1)}{n^r}`} \to 1$ since each of the $r$ factors tends to 1
-- $\left(1-{`\dfrac{\lambda}{n}`}\right)^{n-r} = \left(1-{`\dfrac{\lambda}{n}`}\right)^n \cdot \left(1-{`\dfrac{\lambda}{n}`}\right)^{-r} \to e^{-\lambda} \cdot 1 = e^{-\lambda}$
+- $\dfrac{n(n-1)\cdots(n-r+1)}{n^r} \to 1$ since each of the $r$ factors tends to 1
+- $\left(1-\dfrac{\lambda}{n}\right)^{n-r} = \left(1-\dfrac{\lambda}{n}\right)^n \cdot \left(1-\dfrac{\lambda}{n}\right)^{-r} \to e^{-\lambda} \cdot 1 = e^{-\lambda}$
 
 Therefore:
 
@@ -317,7 +317,7 @@ A factory produces items with defects occurring at an average rate of 2.5 per ho
 
 <details>
 <summary>Solution 1</summary>
-For one hour: $X \sim \mathrm{Po}(2.5)$. $P(X=4) = \dfrac{e^{-2.5}(2.5)^4}{4!} = {`\dfrac{0.08209 \times 39.0625}{24}`} \approx 0.1336$.
+For one hour: $X \sim \mathrm{Po}(2.5)$. $P(X=4) = \dfrac{e^{-2.5}(2.5)^4}{4!} = \dfrac{0.08209 \times 39.0625}{24} \approx 0.1336$.
 
 For two hours: $Y \sim \mathrm{Po}(5)$ (by additivity).
 $P(Y > 6) = 1 - P(Y \leq 6) = 1 - 0.7622 = 0.2378$.
@@ -352,10 +352,10 @@ Prove that $E(X) = \lambda$ for $X \sim \mathrm{Po}(\lambda)$, showing all steps
 
 <details>
 <summary>Solution 3</summary>
-$E(X) = \sum_{r=0}^{\infty}r\cdot{`\dfrac{e^{-\lambda}\lambda^r}{r!}`} = \sum_{r=1}^{\infty}{`\dfrac{e^{-\lambda}\lambda^r}{(r-1)!}`} = \lambda e^{-\lambda}\sum_{r=1}^{\infty}{`\dfrac{\lambda^{r-1}}{(r-1)!}`}$
+$E(X) = \sum_{r=0}^{\infty}r\cdot\dfrac{e^{-\lambda}\lambda^r}{r!} = \sum_{r=1}^{\infty}\dfrac{e^{-\lambda}\lambda^r}{(r-1)!} = \lambda e^{-\lambda}\sum_{r=1}^{\infty}\dfrac{\lambda^{r-1}}{(r-1)!}$
 
 Substituting $k = r-1$:
-$= \lambda e^{-\lambda}\sum_{k=0}^{\infty}{`\dfrac{\lambda^k}{k!}`} = \lambda e^{-\lambda}\cdot e^{\lambda} = \lambda$.
+$= \lambda e^{-\lambda}\sum_{k=0}^{\infty}\dfrac{\lambda^k}{k!} = \lambda e^{-\lambda}\cdot e^{\lambda} = \lambda$.
 $\blacksquare$
 
 **If you get this wrong, revise:** [Proof that $E(X) = \lambda$](#13-proof-that-ex--lambda) —
@@ -545,7 +545,7 @@ $$= 1 - e^{-7.5} \times 633.577 \approx 1 - 0.554 \times 0.634 = 1 - 0.351 = 0.6
 
 **Problem.** A traffic survey records the number of cars passing a point in 10-second intervals. The observed frequencies for $k$ cars are compared with the expected frequencies under $H_0$: $X \sim \mathrm{Po}(3)$. Calculate the expected frequency for each value of $k$ if 200 intervals were observed.
 
-**Solution.** Under $H_0$: $P(X = k) = {`\dfrac{e^{-3} \cdot 3^k}{k!}`}$.
+**Solution.** Under $H_0$: $P(X = k) = \dfrac{e^{-3} \cdot 3^k}{k!}$.
 
 | $k$ | $P(X = k)$ | Expected freq ($\times 200$) |
 |---|---|---|
@@ -595,7 +595,7 @@ $$P(X + Y = 6) = \frac{e^{-8} \cdot 8^6}{6!} = \frac{262144 \cdot e^{-8}}{720} =
 
 ### Example 7.8: Poisson as a limiting case
 
-**Problem.** Prove that if $X \sim \mathrm{Bin}(n, p)$ with $\lambda = np$ fixed as $n \to \infty$, then $P(X = k) \to {`\dfrac{e^{-\lambda}\lambda^k}{k!}`}$.
+**Problem.** Prove that if $X \sim \mathrm{Bin}(n, p)$ with $\lambda = np$ fixed as $n \to \infty$, then $P(X = k) \to \dfrac{e^{-\lambda}\lambda^k}{k!}$.
 
 **Solution.**
 
@@ -603,9 +603,9 @@ $$P(X = k) = \binom{n}{k}p^k(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\cdot\frac{\lambda^
 
 $$= \frac{\lambda^k}{k!}\cdot\frac{n(n-1)\cdots(n-k+1)}{n^k}\cdot\left(1-\frac{\lambda}{n}\right)^{n-k}$$
 
-As $n \to \infty$: ${`\dfrac{n(n-1)\cdots(n-k+1)}{n^k}`} \to 1$ and $\left(1-{`\dfrac{\lambda}{n}`}\right)^{n-k} \to e^{-\lambda}$.
+As $n \to \infty$: $\dfrac{n(n-1)\cdots(n-k+1)}{n^k} \to 1$ and $\left(1-\dfrac{\lambda}{n}\right)^{n-k} \to e^{-\lambda}$.
 
-Therefore $P(X = k) \to {`\dfrac{e^{-\lambda}\lambda^k}{k!}`}$. $\blacksquare$
+Therefore $P(X = k) \to \dfrac{e^{-\lambda}\lambda^k}{k!}$. $\blacksquare$
 
 ---
 
@@ -698,7 +698,7 @@ $X \sim \mathrm{Po}(2)$.
 
 **(b)** $P(X \leq 3) = e^{-2}(1 + 2 + 2 + 4/3) = e^{-2} \cdot 19/3 \approx 0.8571$.
 
-**(c)** $P(X = 2 \mid X \leq 3) = {`\dfrac{P(X = 2)}{P(X \leq 3)}`} = \dfrac{2e^{-2}}{19e^{-2}/3} = \dfrac{6}{19} \approx 0.3158$.
+**(c)** $P(X = 2 \mid X \leq 3) = \dfrac{P(X = 2)}{P(X \leq 3)} = \dfrac{2e^{-2}}{19e^{-2}/3} = \dfrac{6}{19} \approx 0.3158$.
 
 </details>
 
@@ -715,7 +715,7 @@ The number of radioactive decays per second from a sample is modelled by $X \sim
 
 **(a)** $\hat{\lambda} = 145/50 = 2.9$ per second.
 
-**(b)** $P(X = 3) = \dfrac{e^{-2.9}(2.9)^3}{6} = {`\dfrac{24.389 \cdot e^{-2.9}}{6}`} \approx 0.2227$.
+**(b)** $P(X = 3) = \dfrac{e^{-2.9}(2.9)^3}{6} = \dfrac{24.389 \cdot e^{-2.9}}{6} \approx 0.2227$.
 
 </details>
 
@@ -731,7 +731,7 @@ The number of radioactive decays per second from a sample is modelled by $X \sim
 
 **Solution.** (a) $X \sim B(1000, 0.002)$: $P(X=3) = \binom{1000}{3}(0.002)^3(0.998)^{997} \approx 0.1814$.
 
-(b) $\lambda = np = 2$. $X \approx \mathrm{Po}(2)$: $P(X=3) = {`\dfrac{e^{-2} \cdot 8}{6}`} \approx 0.1804$.
+(b) $\lambda = np = 2$. $X \approx \mathrm{Po}(2)$: $P(X=3) = \dfrac{e^{-2} \cdot 8}{6} \approx 0.1804$.
 
 The approximation is excellent (error $< 0.6\%$).
 
@@ -885,7 +885,7 @@ The chi-squared goodness-of-fit test is used to test whether data follows a Pois
 
 | Distribution | PMF | $E(X)$ | $\mathrm{Var}(X)$ |
 |---|---|---|---|
-| $\mathrm{Po}(\lambda)$ | $P(X=x) = {`\dfrac{e^{-\lambda}\lambda^x}{x!}`}$ | $\lambda$ | $\lambda$ |
+| $\mathrm{Po}(\lambda)$ | $P(X=x) = \dfrac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$ | $\lambda$ |
 | $\mathrm{Geo}(p)$ (trials) | $P(X=x) = p(1-p)^{x-1}$ | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$ |
 | $\mathrm{Geo}(p)$ (failures) | $P(X=x) = p(1-p)^x$ | $\dfrac{1-p}{p}$ | $\dfrac{1-p}{p^2}$ |
 
@@ -909,9 +909,9 @@ A shop receives customers at a rate of 8 per hour. Find the probability that:
 <details>
 <summary>Solution</summary>
 
-**(a)** $\lambda = 8 \times 0.5 = 4$. $P(X=5) = {`\dfrac{e^{-4} \cdot 1024}{120}`} \approx \boxed{0.1563}$.
+**(a)** $\lambda = 8 \times 0.5 = 4$. $P(X=5) = \dfrac{e^{-4} \cdot 1024}{120} \approx \boxed{0.1563}$.
 
-**(b)** $\lambda = 8$. $P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}{`\dfrac{e^{-8} \cdot 8^k}{k!}`} \approx 1 - 0.8159 = \boxed{0.184}$.
+**(b)** $\lambda = 8$. $P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}\dfrac{e^{-8} \cdot 8^k}{k!} \approx 1 - 0.8159 = \boxed{0.184}$.
 
 **(c)** Inter-arrival time $T \sim \mathrm{Exp}(8)$. $P(T > 1/3) = e^{-8/3} \approx \boxed{0.0695}$.
 
@@ -971,7 +971,7 @@ $P(20 \leq X \leq 30) = P(X \leq 30) - P(X \leq 19)$.
 
 Using the normal approximation: $X \approx N(24, 24)$.
 
-$P(19.5 < X < 30.5) \approx P\!\left({`\dfrac{19.5-24}{\sqrt{24}}`} < Z < {`\dfrac{30.5-24}{\sqrt{24}}`}\right)$
+$P(19.5 < X < 30.5) \approx P\!\left(\dfrac{19.5-24}{\sqrt{24}} < Z < \dfrac{30.5-24}{\sqrt{24}}\right)$
 
 $= P(-0.919 < Z < 1.327) = \Phi(1.327) - \Phi(-0.919) = 0.908 - 0.179 = \boxed{0.729}$
 

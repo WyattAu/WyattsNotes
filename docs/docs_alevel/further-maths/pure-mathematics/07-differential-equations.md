@@ -129,7 +129,7 @@ The left-hand side is the derivative of $\mu y$ because:
 
 $$\frac{d}{dx}(\mu y) = \mu\frac{dy}{dx} + y\frac{d\mu}{dx}$$
 
-Since ${`\dfrac{d\mu}{dx}`} = \mu \cdot P(x)$ (because $\mu = e^{\int P\,dx}$, so
+Since $\dfrac{d\mu}{dx} = \mu \cdot P(x)$ (because $\mu = e^{\int P\,dx}$, so
 $\mu' = P \cdot e^{\int P\,dx} = P\mu$):
 
 $$\frac{d}{dx}(\mu y) = \mu\frac{dy}{dx} + y \cdot P\mu = \mu\frac{dy}{dx} + \mu P\,y$$
@@ -266,7 +266,7 @@ $$y = (A + Bx)e^{2x}$$
 
 **Example (Case 3).** Solve $y'' + 2y' + 5y = 0$.
 
-Auxiliary: $m^2 + 2m + 5 = 0 \implies m = {`\dfrac{-2 \pm \sqrt{4-20}}{2}`} = -1 \pm 2i$.
+Auxiliary: $m^2 + 2m + 5 = 0 \implies m = \dfrac{-2 \pm \sqrt{4-20}}{2} = -1 \pm 2i$.
 
 $$y = e^{-x}(A\cos 2x + B\sin 2x)$$
 
@@ -384,7 +384,7 @@ $$\frac{dT}{dt} = -k(T - T_a)$$
 
 where $k > 0$ is the cooling constant.
 
-**Solution.** Let $\theta = T - T_a$. Then ${`\dfrac{d\theta}{dt}`} = -k\theta$, giving
+**Solution.** Let $\theta = T - T_a$. Then $\dfrac{d\theta}{dt} = -k\theta$, giving
 $\theta = \theta_0 e^{-kt}$.
 
 $$\boxed{T = T_a + (T_0 - T_a)e^{-kt}}$$
@@ -551,7 +551,7 @@ Solve $y'' + 4y' + 13y = 0$.
 <details>
 <summary>Solution 4</summary>
 
-Auxiliary: $m^2 + 4m + 13 = 0 \implies m = {`\dfrac{-4 \pm \sqrt{16-52}}{2}`} = -2 \pm 3i$.
+Auxiliary: $m^2 + 4m + 13 = 0 \implies m = \dfrac{-4 \pm \sqrt{16-52}}{2} = -2 \pm 3i$.
 
 $\alpha = -2$, $\beta = 3$.
 
@@ -632,7 +632,7 @@ $T(t) = 40$: $40 = 20 + 60e^{-kt} \implies e^{-kt} = \dfrac{1}{3}$.
 
 $\left(\dfrac{2}{3}\right)^{t/10} = \dfrac{1}{3} \implies \dfrac{t}{10}\ln\dfrac{2}{3} = \ln\dfrac{1}{3}$.
 
-$t = {`\dfrac{10\ln(1/3)}{\ln(2/3)}`} = {`\dfrac{10\ln 3}{\ln(3/2)}`} \approx {`\dfrac{10 \times 1.0986}{0.4055}`} \approx 27.1$
+$t = \dfrac{10\ln(1/3)}{\ln(2/3)} = \dfrac{10\ln 3}{\ln(3/2)} \approx \dfrac{10 \times 1.0986}{0.4055} \approx 27.1$
 minutes.
 
 **If you get this wrong, revise:** [Newton's Law of Cooling](#52-newtons-law-of-cooling) — Section
@@ -733,7 +733,7 @@ $\boxed{y = \dfrac{x^3}{2} + \dfrac{5x}{2} = \dfrac{x(x^2 + 5)}{2}}$.
 
 **Solution.** Auxiliary equation: $m^2 + 4m + 13 = 0$.
 
-$m = {`\dfrac{-4 \pm \sqrt{16-52}}{2}`} = -2 \pm 3i$.
+$m = \dfrac{-4 \pm \sqrt{16-52}}{2} = -2 \pm 3i$.
 
 General solution: $y = e^{-2x}(A\cos 3x + B\sin 3x)$.
 
@@ -877,12 +877,12 @@ $\boxed{y = Ae^{3x} + Be^{-x} - 2e^{2x}}$
 
 ### Question 9
 
-A body cools according to ${`\dfrac{d\theta}{dt}`} = -k(\theta - 20)$, where $\theta$ is the temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and $\theta(10) = 50$, find $\theta(30)$.
+A body cools according to $\dfrac{d\theta}{dt} = -k(\theta - 20)$, where $\theta$ is the temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and $\theta(10) = 50$, find $\theta(30)$.
 
 <details>
 <summary>Solution</summary>
 
-${`\dfrac{d\theta}{dt}`} + k\theta = 20k$. IF: $e^{kt}$.
+$\dfrac{d\theta}{dt} + k\theta = 20k$. IF: $e^{kt}$.
 
 $$\theta e^{kt} = 20e^{kt} + C$$
 
@@ -958,7 +958,7 @@ Newton's second law $F = ma$ leads to second-order ODEs in mechanics. See [Circu
 
 | ODE Type | Method | General Solution |
 |---|---|---|
-| $\dfrac{dy}{dx} + P(x)y = Q(x)$ | Integrating factor $\mu = e^{\int P\,dx}$ | $y = {`\dfrac{1}{\mu}`}\displaystyle\int \mu Q\,dx$ |
+| $\dfrac{dy}{dx} + P(x)y = Q(x)$ | Integrating factor $\mu = e^{\int P\,dx}$ | $y = \dfrac{1}{\mu}\displaystyle\int \mu Q\,dx$ |
 | $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ | Substitution $y = vx$ | Separate and integrate |
 | $a\dfrac{d^2y}{dx^2}+b\dfrac{dy}{dx}+cy=0$ | Auxiliary equation $am^2+bm+c=0$ | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
 

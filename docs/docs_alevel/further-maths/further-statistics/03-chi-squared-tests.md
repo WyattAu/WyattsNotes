@@ -203,14 +203,14 @@ Test at the 5% level whether age group and preferred news source are independent
 
 **Expected frequencies:**
 
-$E_{11} = {`\dfrac{90 \times 70}{200}`} = 31.5$, $E_{12} = {`\dfrac{90 \times 90}{200}`} = 40.5$,
-$E_{13} = {`\dfrac{90 \times 40}{200}`} = 18.0$
+$E_{11} = \dfrac{90 \times 70}{200} = 31.5$, $E_{12} = \dfrac{90 \times 90}{200} = 40.5$,
+$E_{13} = \dfrac{90 \times 40}{200} = 18.0$
 
-$E_{21} = {`\dfrac{70 \times 70}{200}`} = 24.5$, $E_{22} = {`\dfrac{70 \times 90}{200}`} = 31.5$,
-$E_{23} = {`\dfrac{70 \times 40}{200}`} = 14.0$
+$E_{21} = \dfrac{70 \times 70}{200} = 24.5$, $E_{22} = \dfrac{70 \times 90}{200} = 31.5$,
+$E_{23} = \dfrac{70 \times 40}{200} = 14.0$
 
-$E_{31} = {`\dfrac{40 \times 70}{200}`} = 14.0$, $E_{32} = {`\dfrac{40 \times 90}{200}`} = 18.0$,
-$E_{33} = {`\dfrac{40 \times 40}{200}`} = 8.0$
+$E_{31} = \dfrac{40 \times 70}{200} = 14.0$, $E_{32} = \dfrac{40 \times 90}{200} = 18.0$,
+$E_{33} = \dfrac{40 \times 40}{200} = 8.0$
 
 All expected frequencies $\geq 5$, so the test is valid.
 
@@ -911,9 +911,9 @@ Test at the 1% level whether hair colour and eye colour are independent.
 
 Row totals: Blonde 70, Brown 110, Black 120. Column totals: Blue 80, Brown 120, Green 100. Grand total: 300.
 
-Expected values: $E_{ij} = {`\dfrac{R_i \times C_j}{300}`}$.
+Expected values: $E_{ij} = \dfrac{R_i \times C_j}{300}$.
 
-$E_{11} = {`\dfrac{70 \times 80}{300}`} = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$, $E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
+$E_{11} = \dfrac{70 \times 80}{300} = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$, $E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
 
 $$\chi^2 = \frac{(40-18.67)^2}{18.67} + \frac{(20-28)^2}{28} + \frac{(10-23.33)^2}{23.33} + \frac{(30-29.33)^2}{29.33} + \frac{(60-44)^2}{44} + \frac{(20-36.67)^2}{36.67} + \frac{(10-32)^2}{32} + \frac{(40-48)^2}{48} + \frac{(70-40)^2}{40}$$
 
@@ -970,7 +970,7 @@ Test at 5% whether the data follows a geometric distribution.
 
 **Solution.** $H_0$: data follows $\mathrm{Geo}(p)$.
 
-$\bar{x} = {`\dfrac{0 \times 90 + 1 \times 60 + 2 \times 30 + 3 \times 12 + 4 \times 8}{200}`} = \dfrac{196}{200} = 0.98$.
+$\bar{x} = \dfrac{0 \times 90 + 1 \times 60 + 2 \times 30 + 3 \times 12 + 4 \times 8}{200} = \dfrac{196}{200} = 0.98$.
 
 For $\mathrm{Geo}(p)$: $E(X) = \dfrac{1-p}{p} = 0.98 \implies p = \dfrac{1}{1.98} \approx 0.505$.
 
@@ -1007,7 +1007,7 @@ Observed table:
 | North | 180 | 120 |
 | South | 90 | 110 |
 
-Expected: $E_{11} = {`\dfrac{270 \times 300}{500}`} = 162$, $E_{12} = 138$, $E_{21} = 108$, $E_{22} = 92$.
+Expected: $E_{11} = \dfrac{270 \times 300}{500} = 162$, $E_{12} = 138$, $E_{21} = 108$, $E_{22} = 92$.
 
 $$\chi^2 = \frac{324}{162} + \frac{324}{138} + \frac{324}{108} + \frac{324}{92} \approx 2.00 + 2.35 + 3.00 + 3.52 = 10.87$$
 
@@ -1164,7 +1164,7 @@ Key properties:
 
 ### 14.2 Chi-squared confidence intervals for variance
 
-For a sample of size $n$ from $N(\mu, \sigma^2)$, the quantity ${`\dfrac{(n-1)s^2}{\sigma^2}`} \sim \chi^2_{n-1}$.
+For a sample of size $n$ from $N(\mu, \sigma^2)$, the quantity $\dfrac{(n-1)s^2}{\sigma^2} \sim \chi^2_{n-1}$.
 
 A $95\%$ confidence interval for $\sigma^2$ is:
 

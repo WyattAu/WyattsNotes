@@ -130,7 +130,7 @@ $$\frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}\begin{pmatrix}
 
 ### 3.3 Inverse of a 3x3 matrix
 
-**Method 1: Adjugate matrix.** $A^{-1} = {`\dfrac{1}{\det A}`}\,\mathrm{adj}(A)$, where the adjugate is the
+**Method 1: Adjugate matrix.** $A^{-1} = \dfrac{1}{\det A}\,\mathrm{adj}(A)$, where the adjugate is the
 transpose of the cofactor matrix.
 
 **Method 2: Row reduction.** Form the augmented matrix $[A \mid I]$ and apply row operations to
@@ -392,7 +392,7 @@ $$= ad(eh - fg) - bc(eh - fg) = (ad - bc)(eh - fg) = \det(A)\det(B) \quad \black
 ### 7.2 Proof: $\det(A) \neq 0 \iff A$ is invertible
 
 **Proof.** ($\Rightarrow$) If $\det(A) \neq 0$, the adjugate formula gives
-$A^{-1} = {`\dfrac{1}{\det A}`}\mathrm{adj}(A)$, so $A$ is invertible.
+$A^{-1} = \dfrac{1}{\det A}\mathrm{adj}(A)$, so $A$ is invertible.
 
 ($\Leftarrow$) If $A$ is invertible with $A^{-1}$, then
 $\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$.
@@ -816,9 +816,9 @@ Therefore $\mathbf{v}_1$ and $\mathbf{v}_2$ are linearly independent, $P$ is inv
 
 **Solution.** $\det(A-\lambda I) = (4-\lambda)(1-\lambda)-4 = \lambda^2-5\lambda = 0$. $\lambda = 0, 5$.
 
-$\lambda = 0$: $\begin{pmatrix}4&2\\2&1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = -v_2/2$. Eigenvector: $(1,-2)$, normalised: ${`\dfrac{1}{\sqrt{5}}`}(1,-2)$.
+$\lambda = 0$: $\begin{pmatrix}4&2\\2&1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = -v_2/2$. Eigenvector: $(1,-2)$, normalised: $\dfrac{1}{\sqrt{5}}(1,-2)$.
 
-$\lambda = 5$: $\begin{pmatrix}-1&2\\2&-4\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = 2v_2$. Eigenvector: $(2,1)$, normalised: ${`\dfrac{1}{\sqrt{5}}`}(2,1)$.
+$\lambda = 5$: $\begin{pmatrix}-1&2\\2&-4\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = 2v_2$. Eigenvector: $(2,1)$, normalised: $\dfrac{1}{\sqrt{5}}(2,1)$.
 
 Orthogonality check: $(1)(2)+(-2)(1) = 0$. ✓ The eigenvectors are orthogonal (as expected for a symmetric matrix).
 
@@ -845,7 +845,7 @@ $= \begin{pmatrix}1&1\\0&-1\end{pmatrix}\begin{pmatrix}59049&59049\\0&-1024\end{
 
 $= \begin{pmatrix}\cos(\theta+\phi)&-\sin(\theta+\phi)\\\sin(\theta+\phi)&\cos(\theta+\phi)\end{pmatrix} = R_{\theta+\phi}$. ✓
 
-$R_\theta^{-1} = {`\dfrac{1}{\cos^2\theta+\sin^2\theta}`}\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$. ✓
+$R_\theta^{-1} = \dfrac{1}{\cos^2\theta+\sin^2\theta}\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$. ✓
 
 ### Example 13.4: Determinant and area scaling
 
@@ -924,7 +924,7 @@ The line $y = 2x$ makes angle $\theta = \arctan 2$ with the $x$-axis.
 
 $R = \begin{pmatrix}\cos 2\theta&\sin 2\theta\\\sin 2\theta&-\cos 2\theta\end{pmatrix}$.
 
-$\cos\theta = {`\dfrac{1}{\sqrt{5}}`}$, $\sin\theta = {`\dfrac{2}{\sqrt{5}}`}$.
+$\cos\theta = \dfrac{1}{\sqrt{5}}$, $\sin\theta = \dfrac{2}{\sqrt{5}}$.
 
 $\cos 2\theta = \cos^2\theta-\sin^2\theta = \dfrac{1-4}{5} = -\dfrac{3}{5}$.
 

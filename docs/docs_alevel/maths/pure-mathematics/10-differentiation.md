@@ -183,7 +183,7 @@ $$= \sin x \cdot 0 + \cos x \cdot 1 = \cos x \quad \blacksquare$$
 
 **Theorem.** $\dfrac{d}{dx}\cos x = -\sin x$.
 
-**Proof.** Write $\cos x = \sin\!\left({`\dfrac{\pi}{2}`} - x\right)$. By the chain rule:
+**Proof.** Write $\cos x = \sin\!\left(\dfrac{\pi}{2} - x\right)$. By the chain rule:
 
 $$\frac{d}{dx}\cos x = \cos\!\left(\frac{\pi}{2}-x\right) \cdot (-1) = -\sin x \quad \blacksquare$$
 
@@ -387,7 +387,7 @@ $f(3) = 27 - 54 + 27 + 1 = 1$.
 
 <details>
 <summary>Problem 3</summary>
-Differentiate $y = {`\dfrac{x^2 e^x}{\sin x}`}$.
+Differentiate $y = \dfrac{x^2 e^x}{\sin x}$.
 </details>
 
 <details>
@@ -508,7 +508,7 @@ Prove that $\dfrac{d}{dx}\sec x = \sec x \tan x$.
 
 <details>
 <summary>Solution 9</summary>
-$\sec x = {`\dfrac{1}{\cos x}`} = (\cos x)^{-1}$.
+$\sec x = \dfrac{1}{\cos x} = (\cos x)^{-1}$.
 
 $$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac{\sin x}{\cos^2 x} = \frac{1}{\cos x} \cdot \frac{\sin x}{\cos x} = \sec x \tan x \quad \blacksquare$$
 
@@ -600,7 +600,7 @@ Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\math
 <summary>Solution 14</summary>
 With semi-vertical angle $30^\circ$: $r = h\tan 30° = h/\sqrt{3}$.
 
-$V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi \dfrac{h^2}{3} h = {`\dfrac{\pi h^3}{9}`}$.
+$V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi \dfrac{h^2}{3} h = \dfrac{\pi h^3}{9}$.
 
 $$\frac{dV}{dt} = \frac{\pi h^2}{3} \cdot \frac{dh}{dt}$$
 

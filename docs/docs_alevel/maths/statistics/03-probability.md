@@ -172,9 +172,9 @@ $$P(A \cap B) = P(A) \cdot P(B)$$
 **Proof.**
 
 ($\Rightarrow$) If $P(A \cap B) = P(A)P(B)$, then
-$P(A|B) = {`\dfrac{P(A \cap B)}{P(B)}`} = \dfrac{P(A)P(B)}{P(B)} = P(A)$.
+$P(A|B) = \dfrac{P(A \cap B)}{P(B)} = \dfrac{P(A)P(B)}{P(B)} = P(A)$.
 
-($\Leftarrow$) If $P(A|B) = P(A)$, then ${`\dfrac{P(A \cap B)}{P(B)}`} = P(A)$, so
+($\Leftarrow$) If $P(A|B) = P(A)$, then $\dfrac{P(A \cap B)}{P(B)} = P(A)$, so
 $P(A \cap B) = P(A)P(B)$. $\blacksquare$
 
 **Intuition.** Independence means knowing $B$ occurred gives you **no information** about $A$. The
@@ -245,7 +245,7 @@ $n! = n(n-1)(n-2)\cdots 1$, with $0! = 1$.
 ### 7.3 Probability with equally likely outcomes
 
 When all outcomes are equally likely:
-$P(A) = {`\dfrac{|A|}{|\Omega|}`} = {`\dfrac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}`}$.
+$P(A) = \dfrac{|A|}{|\Omega|} = \dfrac{\mathrm{number of favourable outcomes}}{\mathrm{total number of outcomes}}$.
 
 <hr />
 
@@ -490,7 +490,7 @@ $P(D) = 0.01$, $P(T^+|D) = 0.99$, $P(T^+|D') = 0.01$.
 By the law of total probability:
 $P(T^+) = P(T^+|D)P(D) + P(T^+|D')P(D') = 0.99(0.01) + 0.01(0.99) = 0.0099 + 0.0099 = 0.0198$.
 
-By Bayes' theorem: $P(D|T^+) = {`\dfrac{P(T^+|D)P(D)}{P(T^+)}`} = \dfrac{0.0099}{0.0198} = 0.5$.
+By Bayes' theorem: $P(D|T^+) = \dfrac{P(T^+|D)P(D)}{P(T^+)} = \dfrac{0.0099}{0.0198} = 0.5$.
 
 Even with a 99% accurate test, a positive result means only a 50% chance of actually having the
 disease, because the disease is so rare.

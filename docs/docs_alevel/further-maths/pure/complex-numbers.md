@@ -51,11 +51,11 @@ This confirms: $|z_1 z_2| = |z_1||z_2|$ and $\arg(z_1 z_2) = \arg(z_1) + \arg(z_
 
 ### 1.3 Worked example
 
-**Problem.** Express ${`\dfrac{1 + i\sqrt{3}}{1 - i}`}$ in modulus-argument form.
+**Problem.** Express $\dfrac{1 + i\sqrt{3}}{1 - i}$ in modulus-argument form.
 
-Numerator: $1 + i\sqrt{3}$. $r_1 = \sqrt{1 + 3} = 2$, $\theta_1 = \arctan\!\left({`\dfrac{\sqrt{3}}{1}`}\right) = {`\dfrac{\pi}{3}`}$.
+Numerator: $1 + i\sqrt{3}$. $r_1 = \sqrt{1 + 3} = 2$, $\theta_1 = \arctan\!\left(\dfrac{\sqrt{3}}{1}\right) = \dfrac{\pi}{3}$.
 
-Denominator: $1 - i$. $r_2 = \sqrt{1 + 1} = \sqrt{2}$, $\theta_2 = \arctan\!\left(\dfrac{-1}{1}\right) = -{`\dfrac{\pi}{4}`}$.
+Denominator: $1 - i$. $r_2 = \sqrt{1 + 1} = \sqrt{2}$, $\theta_2 = \arctan\!\left(\dfrac{-1}{1}\right) = -\dfrac{\pi}{4}$.
 
 $$\frac{z_1}{z_2} = \frac{2}{\sqrt{2}}\left(\cos\!\left(\frac{\pi}{3} - \left(-\frac{\pi}{4}\right)\right) + i\sin\!\left(\frac{7\pi}{12}\right)\right)$$
 
@@ -91,7 +91,7 @@ and the result follows by applying the positive case to the reciprocal.
 
 **Problem.** Find $(1 + i)^{10}$.
 
-$1 + i = \sqrt{2}\!\left(\cos{`\dfrac{\pi}{4}`} + i\sin{`\dfrac{\pi}{4}`}\right)$.
+$1 + i = \sqrt{2}\!\left(\cos\dfrac{\pi}{4} + i\sin\dfrac{\pi}{4}\right)$.
 
 $$(1 + i)^{10} = (\sqrt{2})^{10}\!\left(\cos\frac{5\pi}{2} + i\sin\frac{5\pi}{2}\right) = 32(0 + i) = 32i$$
 
@@ -124,7 +124,7 @@ $$z = R^{1/n}\!\left(\cos\frac{\alpha + 2k\pi}{n} + i\sin\frac{\alpha + 2k\pi}{n
 ### 2.2 Geometric interpretation
 
 The $n$ roots of $w$ lie on a circle of radius $R^{1/n}$ centred at the origin, equally spaced at
-angles of ${`\dfrac{2\pi}{n}`}$ apart.
+angles of $\dfrac{2\pi}{n}$ apart.
 
 ### 2.3 Sum of roots
 
@@ -142,11 +142,11 @@ $-8 = 8(\cos\pi + i\sin\pi)$.
 
 $$z_k = 8^{1/3}\!\left(\cos\frac{\pi + 2k\pi}{3} + i\sin\frac{\pi + 2k\pi}{3}\right), \quad k = 0, 1, 2$$
 
-$k = 0$: $z_0 = 2\!\left(\cos{`\dfrac{\pi}{3}`} + i\sin{`\dfrac{\pi}{3}`}\right) = 1 + i\sqrt{3}$
+$k = 0$: $z_0 = 2\!\left(\cos\dfrac{\pi}{3} + i\sin\dfrac{\pi}{3}\right) = 1 + i\sqrt{3}$
 
 $k = 1$: $z_1 = 2\!\left(\cos\pi + i\sin\pi\right) = -2$
 
-$k = 2$: $z_2 = 2\!\left(\cos{`\dfrac{5\pi}{3}`} + i\sin{`\dfrac{5\pi}{3}`}\right) = 1 - i\sqrt{3}$
+$k = 2$: $z_2 = 2\!\left(\cos\dfrac{5\pi}{3} + i\sin\dfrac{5\pi}{3}\right) = 1 - i\sqrt{3}$
 
 Check: $(1 + i\sqrt{3}) + (-2) + (1 - i\sqrt{3}) = 0$.
 
@@ -189,7 +189,7 @@ $\alpha \lt \arg(z - z_0) \lt \beta$: the region between two half-lines (an angu
 
 ### 3.4 Worked example: combined locus
 
-**Problem.** Sketch the region defined by $|z - 2| \leq 3$ and $0 \leq \arg(z) \leq {`\dfrac{\pi}{4}`}$.
+**Problem.** Sketch the region defined by $|z - 2| \leq 3$ and $0 \leq \arg(z) \leq \dfrac{\pi}{4}$.
 
 $|z - 2| \leq 3$ is a closed disc centred at $2 + 0i$ with radius 3. Combined with the angular
 constraint, the region is the portion of this disc lying between the positive real axis and the
@@ -200,7 +200,7 @@ The intersection of $y = x$ with the circle $(x-2)^2 + y^2 = 9$ gives:
 
 $$(x - 2)^2 + x^2 = 9 \implies 2x^2 - 4x - 5 = 0 \implies x = \frac{4 \pm \sqrt{16 + 40}}{4} = \frac{4 \pm \sqrt{56}}{4}$$
 
-The relevant intersection is at $x = 1 + {`\dfrac{\sqrt{14}}{2}`} \approx 2.87$.
+The relevant intersection is at $x = 1 + \dfrac{\sqrt{14}}{2} \approx 2.87$.
 
 ### 3.5 Worked example: Cartesian equation from locus
 
@@ -294,7 +294,7 @@ So $e^{x + iy} = e^x\,e^{iy} = 2\,e^{i(\pi/3 + 2k\pi)}$.
 
 Equating moduli: $e^x = 2 \implies x = \ln 2$.
 
-Equating arguments: $y = {`\dfrac{\pi}{3}`} + 2k\pi$ for $k \in \mathbb{Z}$.
+Equating arguments: $y = \dfrac{\pi}{3} + 2k\pi$ for $k \in \mathbb{Z}$.
 
 $$z = \ln 2 + i\!\left(\frac{\pi}{3} + 2k\pi\right), \quad k \in \mathbb{Z}$$
 
@@ -315,7 +315,7 @@ Express $z = -\sqrt{3} + i$ in modulus-argument form and hence find $z^8$.
 <details>
 <summary>Solution</summary>
 
-$r = \sqrt{3 + 1} = 2$, $\theta = \pi - {`\dfrac{\pi}{6}`} = {`\dfrac{5\pi}{6}`}$.
+$r = \sqrt{3 + 1} = 2$, $\theta = \pi - \dfrac{\pi}{6} = \dfrac{5\pi}{6}$.
 
 $z = 2\,e^{i5\pi/6}$.
 
@@ -340,7 +340,7 @@ The sum is $2^{11/10}\displaystyle\sum_{k=0}^{4}e^{i(\pi + 8k\pi)/20} = 2^{11/10
 
 Since $\omega = e^{i2\pi/5}$ and $\omega^5 = 1$ with $\omega \neq 1$:
 
-$\sum_{k=0}^{4}\omega^k = {`\dfrac{1 - \omega^5}{1 - \omega}`} = 0$.
+$\sum_{k=0}^{4}\omega^k = \dfrac{1 - \omega^5}{1 - \omega} = 0$.
 
 </details>
 
@@ -367,18 +367,18 @@ This is a straight line (the perpendicular bisector of the segment joining $1 - 
 
 ### Problem 4
 
-Use Euler's formula to show that $\cos^4\theta = {`\dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}`}$.
+Use Euler's formula to show that $\cos^4\theta = \dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}$.
 
 <details>
 <summary>Solution</summary>
 
-$\cos\theta = {`\dfrac{e^{i\theta} + e^{-i\theta}}{2}`}$, so $\cos^4\theta = \dfrac{1}{16}(e^{i\theta} + e^{-i\theta})^4$.
+$\cos\theta = \dfrac{e^{i\theta} + e^{-i\theta}}{2}$, so $\cos^4\theta = \dfrac{1}{16}(e^{i\theta} + e^{-i\theta})^4$.
 
 $= \dfrac{1}{16}(e^{4i\theta} + 4e^{2i\theta} + 6 + 4e^{-2i\theta} + e^{-4i\theta})$
 
 $= \dfrac{1}{16}(2\cos 4\theta + 8\cos 2\theta + 6)$
 
-$= {`\dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}`}$.
+$= \dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}$.
 
 </details>
 
@@ -452,9 +452,9 @@ The complex numbers $z_1$ and $z_2$ satisfy $z_1 = 1 + i$ and $z_2 = 1 - \sqrt{3
 
 $z_1 z_2 = 2\sqrt{2}\,e^{i(\pi/4 - \pi/3)} = 2\sqrt{2}\,e^{-i\pi/12}$.
 
-**(b)** $\dfrac{z_1^4}{z_2^2} = {`\dfrac{(\sqrt{2})^4\,e^{i\pi}}{2^2\,e^{-i2\pi/3}}`} = {`\dfrac{4\,e^{i\pi}}{4\,e^{-i2\pi/3}}`} = e^{i5\pi/3}$.
+**(b)** $\dfrac{z_1^4}{z_2^2} = \dfrac{(\sqrt{2})^4\,e^{i\pi}}{2^2\,e^{-i2\pi/3}} = \dfrac{4\,e^{i\pi}}{4\,e^{-i2\pi/3}} = e^{i5\pi/3}$.
 
-In Cartesian form: $e^{i5\pi/3} = \cos{`\dfrac{5\pi}{3}`} + i\sin{`\dfrac{5\pi}{3}`} = \dfrac{1}{2} - i{`\dfrac{\sqrt{3}}{2}`}$.
+In Cartesian form: $e^{i5\pi/3} = \cos\dfrac{5\pi}{3} + i\sin\dfrac{5\pi}{3} = \dfrac{1}{2} - i\dfrac{\sqrt{3}}{2}$.
 
 </details>
 
@@ -689,10 +689,10 @@ The $n$-th roots of unity form a cyclic group under multiplication. The factoris
 $$z_k = 27^{1/3}\,e^{i(3\pi/2 + 2k\pi)/3} = 3\,e^{i(\pi/2 + 2k\pi/3)}, \quad k = 0, 1, 2$$
 
 $k = 0$: $3e^{i\pi/2} = 3i$.
-$k = 1$: $3e^{i7\pi/6} = 3\!\left(-{`\dfrac{\sqrt{3}}{2}`} - \dfrac{i}{2}\right)$.
-$k = 2$: $3e^{i11\pi/6} = 3\!\left({`\dfrac{\sqrt{3}}{2}`} - \dfrac{i}{2}\right)$.
+$k = 1$: $3e^{i7\pi/6} = 3\!\left(-\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right)$.
+$k = 2$: $3e^{i11\pi/6} = 3\!\left(\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right)$.
 
-**(b)** Sum $= 3i + 3\!\left(-{`\dfrac{\sqrt{3}}{2}`} - \dfrac{i}{2}\right) + 3\!\left({`\dfrac{\sqrt{3}}{2}`} - \dfrac{i}{2}\right) = 3i - 3i/2 - 3i/2 = 0$. $\blacksquare$
+**(b)** Sum $= 3i + 3\!\left(-\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) + 3\!\left(\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) = 3i - 3i/2 - 3i/2 = 0$. $\blacksquare$
 
 </details>
 
@@ -707,7 +707,7 @@ Let $w = re^{i\pi/6}$. From $|w + 2i| = 3$:
 
 $$|re^{i\pi/6} + 2i| = 3$$
 
-$r\cos(\pi/6) + i\!\left(r\sin(\pi/6) + 2\right) = r\!\left({`\dfrac{\sqrt{3}}{2}`}\right) + i\!\left(\dfrac{r}{2} + 2\right)$.
+$r\cos(\pi/6) + i\!\left(r\sin(\pi/6) + 2\right) = r\!\left(\dfrac{\sqrt{3}}{2}\right) + i\!\left(\dfrac{r}{2} + 2\right)$.
 
 $$\frac{3r^2}{4} + \left(\frac{r}{2} + 2\right)^2 = 9$$
 
@@ -717,7 +717,7 @@ $$r = \frac{-2 \pm \sqrt{4 + 20}}{2} = -1 \pm \sqrt{6}$$
 
 Since $r > 0$: $r = \sqrt{6} - 1$.
 
-$w = (\sqrt{6} - 1)\,e^{i\pi/6} = (\sqrt{6} - 1)\!\left({`\dfrac{\sqrt{3}}{2}`} + \dfrac{i}{2}\right) = {`\dfrac{(\sqrt{6}-1)\sqrt{3}}{2}`} + {`\dfrac{(\sqrt{6}-1)i}{2}`}$.
+$w = (\sqrt{6} - 1)\,e^{i\pi/6} = (\sqrt{6} - 1)\!\left(\dfrac{\sqrt{3}}{2} + \dfrac{i}{2}\right) = \dfrac{(\sqrt{6}-1)\sqrt{3}}{2} + \dfrac{(\sqrt{6}-1)i}{2}$.
 
 </details>
 
@@ -730,19 +730,19 @@ Use De Moivre's theorem to find $\cos(\pi/12)$ and $\sin(\pi/12)$ in surd form.
 
 $\cos(\pi/12) + i\sin(\pi/12) = \sqrt{\cos(\pi/6) + i\sin(\pi/6)}$.
 
-$\cos(\pi/6) = {`\dfrac{\sqrt{3}}{2}`}$ and $\sin(\pi/6) = \dfrac{1}{2}$.
+$\cos(\pi/6) = \dfrac{\sqrt{3}}{2}$ and $\sin(\pi/6) = \dfrac{1}{2}$.
 
-Let $\cos(\pi/12) + i\sin(\pi/12) = a + bi$ where $a > 0$. Then $(a + bi)^2 = {`\dfrac{\sqrt{3}}{2}`} + \dfrac{i}{2}$.
+Let $\cos(\pi/12) + i\sin(\pi/12) = a + bi$ where $a > 0$. Then $(a + bi)^2 = \dfrac{\sqrt{3}}{2} + \dfrac{i}{2}$.
 
-$a^2 - b^2 = {`\dfrac{\sqrt{3}}{2}`}$ and $2ab = \dfrac{1}{2}$, so $b = \dfrac{1}{4a}$.
+$a^2 - b^2 = \dfrac{\sqrt{3}}{2}$ and $2ab = \dfrac{1}{2}$, so $b = \dfrac{1}{4a}$.
 
-$a^2 - \dfrac{1}{16a^2} = {`\dfrac{\sqrt{3}}{2}`}$.
+$a^2 - \dfrac{1}{16a^2} = \dfrac{\sqrt{3}}{2}$.
 
 Multiplying by $16a^2$: $16a^4 - 8\sqrt{3}\,a^2 - 1 = 0$.
 
-$a^2 = {`\dfrac{8\sqrt{3} \pm \sqrt{192 + 64}}{32}`} = {`\dfrac{8\sqrt{3} \pm 4\sqrt{13}}{32}`} = {`\dfrac{2\sqrt{3} \pm \sqrt{13}}{8}`}$.
+$a^2 = \dfrac{8\sqrt{3} \pm \sqrt{192 + 64}}{32} = \dfrac{8\sqrt{3} \pm 4\sqrt{13}}{32} = \dfrac{2\sqrt{3} \pm \sqrt{13}}{8}$.
 
-Since $a^2 \leq 1$: $a^2 = {`\dfrac{2\sqrt{3} + \sqrt{13}}{8}`}$.
+Since $a^2 \leq 1$: $a^2 = \dfrac{2\sqrt{3} + \sqrt{13}}{8}$.
 
 $$\cos\frac{\pi}{12} = \sqrt{\frac{2\sqrt{3} + \sqrt{13}}{8}} = \frac{\sqrt{2\sqrt{3} + \sqrt{13}}}{2\sqrt{2}}$$
 
@@ -784,13 +784,13 @@ $$z = z_1 + (z_2 - z_1)\,e^{\pm i\pi/3}$$
 
 $z_2 - z_1 = (1 - 2) + (-1 - 3)i = -1 - 4i$.
 
-$e^{i\pi/3} = \dfrac{1}{2} + i{`\dfrac{\sqrt{3}}{2}`}$:
+$e^{i\pi/3} = \dfrac{1}{2} + i\dfrac{\sqrt{3}}{2}$:
 
 $$(-1 - 4i)\!\left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = \frac{-1 + 4\sqrt{3}}{2} + i\frac{-4 - \sqrt{3}}{2}$$
 
 $$z = (2 + 3i) + \frac{-1 + 4\sqrt{3}}{2} + i\frac{-4 - \sqrt{3}}{2} = \frac{3 + 4\sqrt{3}}{2} + i\frac{2 - \sqrt{3}}{2}$$
 
-For the other orientation, $e^{-i\pi/3} = \dfrac{1}{2} - i{`\dfrac{\sqrt{3}}{2}`}$:
+For the other orientation, $e^{-i\pi/3} = \dfrac{1}{2} - i\dfrac{\sqrt{3}}{2}$:
 
 $$z = (2 + 3i) + \frac{-1 - 4\sqrt{3}}{2} + i\frac{-4 + \sqrt{3}}{2} = \frac{3 - 4\sqrt{3}}{2} + i\frac{2 + \sqrt{3}}{2}$$
 
@@ -846,7 +846,7 @@ The point is $z = i$.
 
 $x^3+3x^2+7x+5 = (x+1)(x^2+2x+5)$.
 
-$x^2+2x+5 = 0$: $x = {`\dfrac{-2\pm\sqrt{4-20}}{2}`} = -1 \pm 2i$.
+$x^2+2x+5 = 0$: $x = \dfrac{-2\pm\sqrt{4-20}}{2} = -1 \pm 2i$.
 
 $\boxed{x = -1,\; x = -1+2i,\; x = -1-2i}$
 
@@ -892,7 +892,7 @@ $z_k = e^{2\pi ik/n}$ for $k = 0, 1, \ldots, n-1$.
 
 $|z_k| = 1$ for all $k$ (on the unit circle).
 
-The angular separation between consecutive roots is ${`\dfrac{2\pi}{n}`}$, which is constant.
+The angular separation between consecutive roots is $\dfrac{2\pi}{n}$, which is constant.
 
 Therefore the roots are the vertices of a regular $n$-gon inscribed in the unit circle. $\blacksquare$
 
@@ -950,7 +950,7 @@ Properties:
 
 Using $e^{i\theta} = \cos\theta + i\sin\theta$:
 
-$\cos^n\theta = \left({`\dfrac{e^{i\theta}+e^{-i\theta}}{2}`}\right)^n$ and $\sin^n\theta = \left({`\dfrac{e^{i\theta}-e^{-i\theta}}{2i}`}\right)^n$.
+$\cos^n\theta = \left(\dfrac{e^{i\theta}+e^{-i\theta}}{2}\right)^n$ and $\sin^n\theta = \left(\dfrac{e^{i\theta}-e^{-i\theta}}{2i}\right)^n$.
 
 These can be expanded to express $\cos^n\theta$ and $\sin^n\theta$ in terms of multiple angles.
 
@@ -965,9 +965,9 @@ Express $\cos^4\theta$ in terms of $\cos 2\theta$ and $\cos 4\theta$.
 <details>
 <summary>Solution</summary>
 
-$\cos^4\theta = \left({`\dfrac{e^{i\theta}+e^{-i\theta}}{2}`}\right)^4 = {`\dfrac{e^{4i\theta}+4e^{2i\theta}+6+4e^{-2i\theta}+e^{-4i\theta}}{16}`}$
+$\cos^4\theta = \left(\dfrac{e^{i\theta}+e^{-i\theta}}{2}\right)^4 = \dfrac{e^{4i\theta}+4e^{2i\theta}+6+4e^{-2i\theta}+e^{-4i\theta}}{16}$
 
-$= {`\dfrac{2\cos 4\theta + 8\cos 2\theta + 6}{16}`} = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta$.
+$= \dfrac{2\cos 4\theta + 8\cos 2\theta + 6}{16} = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta$.
 
 $\boxed{\cos^4\theta = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta}$
 
@@ -1019,7 +1019,7 @@ $e^{i\theta} + e^{-i\theta} = 2\cos\theta$
 
 $e^{i\theta} - e^{-i\theta} = 2i\sin\theta$
 
-$\cos\theta = {`\dfrac{e^{i\theta}+e^{-i\theta}}{2}`}$, $\sin\theta = {`\dfrac{e^{i\theta}-e^{-i\theta}}{2i}`}$
+$\cos\theta = \dfrac{e^{i\theta}+e^{-i\theta}}{2}$, $\sin\theta = \dfrac{e^{i\theta}-e^{-i\theta}}{2i}$
 
 ---
 

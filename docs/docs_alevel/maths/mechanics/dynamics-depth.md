@@ -279,7 +279,7 @@ system is conserved.
 
 $$m_1\mathbf{u}_1 + m_2\mathbf{u}_2 = m_1\mathbf{v}_1 + m_2\mathbf{v}_2$$
 
-**Proof.** Newton's second law for the system: $\mathbf{F}_{\mathrm{ext}} = {`\dfrac{d\mathbf{p}_{\mathrm{total}}}{dt}`}$.
+**Proof.** Newton's second law for the system: $\mathbf{F}_{\mathrm{ext}} = \dfrac{d\mathbf{p}_{\mathrm{total}}}{dt}$.
 
 If $\mathbf{F}_{\mathrm{ext}} = \mathbf{0}$, then $\mathbf{p}_{\mathrm{total}}$ is constant. $\blacksquare$
 

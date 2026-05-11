@@ -191,7 +191,7 @@ $$\log_a b = \frac{\ln b}{\ln a} = \frac{\log_{10} b}{\log_{10} a}$$
 
 $$\ln(a^y) = \ln b$$ $$y \ln a = \ln b$$ $$y = \frac{\ln b}{\ln a}$$
 
-Since $y = \log_a b$, we have $\log_a b = {`\dfrac{\ln b}{\ln a}`}$. $\blacksquare$
+Since $y = \log_a b$, we have $\log_a b = \dfrac{\ln b}{\ln a}$. $\blacksquare$
 
 :::tip
 Your calculator likely has $\log$ (base 10) and $\ln$ (base $e$) buttons, but not a general
@@ -323,7 +323,7 @@ k &= \frac{\ln 2}{3}
 \end{aligned}
 $$
 
-Doubling time: $T_d = {`\dfrac{\ln 2}{k}`} = {`\dfrac{\ln 2}{\ln 2 / 3}`} = 3$ hours.
+Doubling time: $T_d = \dfrac{\ln 2}{k} = \dfrac{\ln 2}{\ln 2 / 3} = 3$ hours.
 
 :::tip
 In modelling questions, always:
@@ -478,7 +478,7 @@ A radioactive substance decays with half-life 8 days. If initially there are 200
 <summary>Solution 6</summary>
 Model: $N = N_0 e^{-kt}$ where $N_0 = 200$.
 
-Half-life: $t_{1/2} = {`\dfrac{\ln 2}{k}`} = 8 \implies k = {`\dfrac{\ln 2}{8}`}$.
+Half-life: $t_{1/2} = \dfrac{\ln 2}{k} = 8 \implies k = \dfrac{\ln 2}{8}$.
 
 $$N = 200 \cdot e^{-25\ln 2/8} = 200 \cdot 2^{-25/8} \approx 200 \cdot 0.1146 \approx 22.9 \mathrm{ g}$$
 
@@ -564,9 +564,9 @@ Express $y = e^{2x} + 3e^{-2x}$ in the form $y = 2\cosh(2x) + \cosh(2x)$ is not 
 
 <details>
 <summary>Solution 11</summary>
-$\dfrac{dy}{dx} = 2e^{2x} - 6e^{-2x} = 0 \implies 2e^{2x} = 6e^{-2x} \implies e^{4x} = 3 \implies x = {`\dfrac{\ln 3}{4}`}$.
+$\dfrac{dy}{dx} = 2e^{2x} - 6e^{-2x} = 0 \implies 2e^{2x} = 6e^{-2x} \implies e^{4x} = 3 \implies x = \dfrac{\ln 3}{4}$.
 
-At $x = {`\dfrac{\ln 3}{4}`}$: $e^{2x} = e^{\ln 3 / 2} = \sqrt{3}$, $e^{-2x} = 1/\sqrt{3}$.
+At $x = \dfrac{\ln 3}{4}$: $e^{2x} = e^{\ln 3 / 2} = \sqrt{3}$, $e^{-2x} = 1/\sqrt{3}$.
 
 $$y_{\min} = \sqrt{3} + \frac{3}{\sqrt{3}} = \sqrt{3} + \sqrt{3} = 2\sqrt{3}$$
 

@@ -446,7 +446,7 @@ bottom by the conjugate $a \mp b$ to produce a difference of squares.
 
 <details>
 <summary>Example 1: Strategy 2 (express in sin and cos)</summary>
-Prove that $\cot A + \tan A = {`\dfrac{2}{\sin 2A}`}$.
+Prove that $\cot A + \tan A = \dfrac{2}{\sin 2A}$.
 
 $$
 \begin{aligned}
@@ -478,7 +478,7 @@ $$
 
 <details>
 <summary>Example 3: Strategy 4 (multiply by conjugate)</summary>
-Prove that ${`\dfrac{1}{\sec A + \tan A}`} = \sec A - \tan A$.
+Prove that $\dfrac{1}{\sec A + \tan A} = \sec A - \tan A$.
 
 Multiply numerator and denominator by $\sec A - \tan A$:
 
@@ -498,7 +498,7 @@ where we used $\sec^2 A = 1 + \tan^2 A$ so that $\sec^2 A - \tan^2 A = 1$.
 
 <details>
 <summary>Example 4: Strategy 1 (work with one side)</summary>
-Prove that ${`\dfrac{\cos 2A}{1 + \sin 2A}`} = {`\dfrac{\cos A - \sin A}{\cos A + \sin A}`}$.
+Prove that $\dfrac{\cos 2A}{1 + \sin 2A} = \dfrac{\cos A - \sin A}{\cos A + \sin A}$.
 
 Working from the LHS:
 
@@ -538,11 +538,11 @@ $$
 For the general form $y = A\sin(Bx + C) + D$ (and similarly for $\cos$):
 
 - $|A|$ is the **amplitude** (vertical stretch from the midline)
-- The **period** is ${`\dfrac{2\pi}{|B|}`}$
+- The **period** is $\dfrac{2\pi}{|B|}$
 - The **phase shift** is $-\dfrac{C}{B}$ (horizontal shift)
 - $D$ is the **vertical shift** (midline is $y = D$)
 
-For $\tan$, the period is ${`\dfrac{\pi}{|B|}`}$ and amplitude is not defined.
+For $\tan$, the period is $\dfrac{\pi}{|B|}$ and amplitude is not defined.
 
 <DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]}
 width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
@@ -555,9 +555,9 @@ Describe the key features of $y = 2\sin\!\left(2x - \frac{\pi}{3}\right)$ for $0
 
 **Amplitude:** $|A| = 2$, so the range is $[-2, 2]$.
 
-**Period:** ${`\dfrac{2\pi}{|B|}`} = {`\dfrac{2\pi}{2}`} = \pi$.
+**Period:** $\dfrac{2\pi}{|B|} = \dfrac{2\pi}{2} = \pi$.
 
-**Phase shift:** $-\dfrac{C}{B} = -{`\dfrac{-\pi/3}{2}`} = {`\dfrac{\pi}{6}`}$ (shift right by
+**Phase shift:** $-\dfrac{C}{B} = -\dfrac{-\pi/3}{2} = \dfrac{\pi}{6}$ (shift right by
 $\frac{\pi}{6}$).
 
 **Key points.** The first cycle begins at $x = \frac{\pi}{6}$ (where the curve crosses the midline
@@ -723,7 +723,7 @@ $$\frac{\sin 0.05}{\cos 0.05} \approx \frac{0.05}{0.99875} \approx 0.05006$$
 
 <hr />
 
-**Problem 9.** Prove that ${`\dfrac{1 + \sin 2A}{\cos 2A}`} = \tan\!\left(A + {`\dfrac{\pi}{4}`}\right)$.
+**Problem 9.** Prove that $\dfrac{1 + \sin 2A}{\cos 2A} = \tan\!\left(A + \dfrac{\pi}{4}\right)$.
 
 <details>
 <summary>Solution</summary>
@@ -768,7 +768,7 @@ $$\theta = \frac{10}{4} = 2.5 \mathrm{ radians}$$
 
 <hr />
 
-**Problem 11.** Find the exact value of $\cos{`\dfrac{\pi}{12}`}$ using a half-angle formula.
+**Problem 11.** Find the exact value of $\cos\dfrac{\pi}{12}$ using a half-angle formula.
 
 <details>
 <summary>Solution</summary>
@@ -787,7 +787,7 @@ $$
 
 This can also be verified using the compound angle formula:
 $\cos\frac{\pi}{12} = \cos\!\left(\frac{\pi}{3} - \frac{\pi}{4}\right) = \cos\frac{\pi}{3}\cos\frac{\pi}{4} + \sin\frac{\pi}{3}\sin\frac{\pi}{4} = \frac{\sqrt{6} + \sqrt{2}}{4}$,
-and one can check that ${`\dfrac{\sqrt{2+\sqrt{3}}}{2}`} = {`\dfrac{\sqrt{6}+\sqrt{2}}{4}`}$.
+and one can check that $\dfrac{\sqrt{2+\sqrt{3}}}{2} = \dfrac{\sqrt{6}+\sqrt{2}}{4}$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Half-angle formulas](#7-half-angle-formulas)
@@ -818,7 +818,7 @@ smallest positive value.
 
 <hr />
 
-**Problem 13.** Prove that ${`\dfrac{\sin 3A}{\sin A}`} - {`\dfrac{\cos 3A}{\cos A}`} = 2$.
+**Problem 13.** Prove that $\dfrac{\sin 3A}{\sin A} - \dfrac{\cos 3A}{\cos A} = 2$.
 
 <details>
 <summary>Solution</summary>
@@ -865,7 +865,7 @@ Solutions: $\theta = \frac{\pi}{2}$ or $\theta = \frac{11\pi}{6}$.
 
 <hr />
 
-**Problem 15.** Prove that ${`\dfrac{1 - \tan^2 A}{1 + \tan^2 A}`} = \cos 2A$.
+**Problem 15.** Prove that $\dfrac{1 - \tan^2 A}{1 + \tan^2 A} = \cos 2A$.
 
 <details>
 <summary>Solution</summary>

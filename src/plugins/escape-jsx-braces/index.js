@@ -39,8 +39,9 @@ module.exports = function escapeJsxBraces() {
     }
 
     // Also escape remaining literal braces in text nodes
+    // But don't double-escape braces already preceded by backslash
     visit(tree, 'text', (node) => {
-      node.value = node.value.replace(/\{/g, '\\{').replace(/\}/g, '\\}');
+      node.value = node.value.replace(/(?<!\\)\{/g, '\\{').replace(/(?<!\\)\}/g, '\\}');
     });
   };
 };

@@ -158,7 +158,7 @@ $$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\,e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 ### 3.4 Standard normal
 
-If $X \sim N(\mu, \sigma^2)$, then $Z = {`\dfrac{X - \mu}{\sigma}`} \sim N(0, 1)$.
+If $X \sim N(\mu, \sigma^2)$, then $Z = \dfrac{X - \mu}{\sigma} \sim N(0, 1)$.
 
 Probabilities are found using the standard normal table or a calculator's inverse normal function.
 
@@ -208,8 +208,8 @@ $$
 
 Consider each factor as $n \to \infty$:
 
-- ${`\dfrac{n(n-1)\cdots(n-k+1)}{n^k}`} \to 1$ (each term $n-i \approx n$)
-- $\left(1 - {`\dfrac{\lambda}{n}`}\right)^{n-k} \to e^{-\lambda}$ (using
+- $\dfrac{n(n-1)\cdots(n-k+1)}{n^k} \to 1$ (each term $n-i \approx n$)
+- $\left(1 - \dfrac{\lambda}{n}\right)^{n-k} \to e^{-\lambda}$ (using
   $\lim_{n\to\infty}(1+a/n)^n = e^a$)
 
 Therefore:
@@ -404,7 +404,7 @@ A call centre receives an average of 4.5 calls per minute. Find the probability 
 <summary>Solution 3</summary>
 $X \sim \mathrm{Po}(4.5)$.
 
-$P(X=6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = {`\dfrac{0.01111 \times 8303.77}{720}`} \approx 0.1281$.
+$P(X=6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac{0.01111 \times 8303.77}{720} \approx 0.1281$.
 
 $P(X \gt{} 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}\dfrac{e^{-4.5}(4.5)^k}{k!} \approx 1 - 0.9804 = 0.0196$.
 
@@ -526,7 +526,7 @@ If $X \sim \mathrm{Po}(3)$ and $Y \sim \mathrm{Po}(5)$ are independent, find $P(
 <summary>Solution 10</summary>
 By additivity: $X + Y \sim \mathrm{Po}(3+5) = \mathrm{Po}(8)$.
 
-$P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = {`\dfrac{e^{-8} \times 262144}{720}`} \approx {`\dfrac{0.000335 \times 262144}{720}`} \approx 0.1221$.
+$P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac{e^{-8} \times 262144}{720} \approx \dfrac{0.000335 \times 262144}{720} \approx 0.1221$.
 
 **If you get this wrong, revise:** [Additivity](#45-additivity) — Section 4.5.
 

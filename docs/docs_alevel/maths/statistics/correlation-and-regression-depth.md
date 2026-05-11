@@ -207,7 +207,7 @@ sum of squared residuals:
 
 $$S = \sum_{i=1}^{n}(y_i - a - bx_i)^2$$
 
-Setting ${`\dfrac{\partial S}{\partial a}`} = 0$ and ${`\dfrac{\partial S}{\partial b}`} = 0$:
+Setting $\dfrac{\partial S}{\partial a} = 0$ and $\dfrac{\partial S}{\partial b} = 0$:
 
 $$b = \frac{S_{xy}}{S_{xx}} = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}$$
 
@@ -324,7 +324,7 @@ $S_{xy} = (1 - 3.5)(2 - 4.833) + \ldots = (-2.5)(-2.833) + (-1.5)(-1.833) + (-0.
 
 $= 7.083 + 2.750 - 0.083 - 0.417 + 3.250 + 7.917 = 20.5$
 
-$r = {`\dfrac{20.5}{\sqrt{17.5 \times 26.17}}`} = {`\dfrac{20.5}{\sqrt{457.98}}`} = \dfrac{20.5}{21.40} \approx 0.958$
+$r = \dfrac{20.5}{\sqrt{17.5 \times 26.17}} = \dfrac{20.5}{\sqrt{457.98}} = \dfrac{20.5}{21.40} \approx 0.958$
 
 </details>
 
@@ -360,6 +360,6 @@ $d_i$: -2, 1, -1, 2, -1, 1, -1, 1.
 
 $\sum d_i^2 = 4 + 1 + 1 + 4 + 1 + 1 + 1 + 1 = 14$.
 
-$r_s = 1 - {`\dfrac{6 \times 14}{8 \times 63}`} = 1 - \dfrac{84}{504} = 1 - 0.1667 = 0.833$.
+$r_s = 1 - \dfrac{6 \times 14}{8 \times 63} = 1 - \dfrac{84}{504} = 1 - 0.1667 = 0.833$.
 
 </details>

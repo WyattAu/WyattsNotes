@@ -178,7 +178,7 @@ in a minute; (c) the probability of more than 8 calls in a two-minute period.
 
 $X \sim \mathrm{Po}(4.5)$.
 
-(a) $P(X = 6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = {`\dfrac{e^{-4.5} \times 8303.8}{720}`} \approx 0.1271$
+(a) $P(X = 6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac{e^{-4.5} \times 8303.8}{720} \approx 0.1271$
 
 (b) $P(X \leq 2) = e^{-4.5}\!\left(1 + 4.5 + \dfrac{4.5^2}{2}\right) = e^{-4.5}(1 + 4.5 + 10.125) = 15.625\,e^{-4.5} \approx 0.1736$
 
@@ -289,7 +289,7 @@ hours.
 <details>
 <summary>Solution</summary>
 
-(a) $P(X = 4) = {`\dfrac{e^{-6} \cdot 6^4}{4!}`} = \dfrac{1296}{24}e^{-6} = 54e^{-6} \approx 0.1335$.
+(a) $P(X = 4) = \dfrac{e^{-6} \cdot 6^4}{4!} = \dfrac{1296}{24}e^{-6} = 54e^{-6} \approx 0.1335$.
 
 (b) For two hours, $Y \sim \mathrm{Po}(12)$.
 

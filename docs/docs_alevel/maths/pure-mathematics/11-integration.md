@@ -399,7 +399,7 @@ $h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$, $y_1 = 1/(1+0.25) = 0.8$, $y_2 = 
 $$\mathrm{Approx} = \frac{0.5}{2}\left[1 + 2(0.8) + 2(0.5) + 2(0.3077) + 0.2\right] = 0.25[1 + 1.6 + 1.0 + 0.6154 + 0.2] = 0.25 \times 4.4154 \approx 1.104$$
 
 Error bound:
-$|E| \leq {`\dfrac{2^3}{12 \times 16}`} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
+$|E| \leq \dfrac{2^3}{12 \times 16} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
 
 **If you get this wrong, revise:** [The Trapezium Rule](#7-the-trapezium-rule) — Section 7.
 

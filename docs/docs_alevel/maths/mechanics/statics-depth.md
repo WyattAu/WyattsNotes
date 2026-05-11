@@ -186,8 +186,8 @@ $AD$. Find the centre of mass of the remaining lamina.
 Rectangle: area $= 48\;\mathrm{cm}^2$, centre at $(4, 3)$.
 
 Semicircle: radius $= 4\;\mathrm{cm}$, area $= \dfrac{1}{2}\pi(16) = 8\pi\;\mathrm{cm}^2$.
-Centre of mass of the semicircle is at distance ${`\dfrac{4r}{3\pi}`} = {`\dfrac{16}{3\pi}`}$ from the
-diameter, i.e. at $(4, 6 - {`\dfrac{16}{3\pi}`})$.
+Centre of mass of the semicircle is at distance $\dfrac{4r}{3\pi} = \dfrac{16}{3\pi}$ from the
+diameter, i.e. at $(4, 6 - \dfrac{16}{3\pi})$.
 
 Treating the removed semicircle as a negative mass:
 
@@ -415,11 +415,11 @@ the string.
 
 The string $BC$ has length $\sqrt{9 + 4} = \sqrt{13}\;\mathrm{m}$.
 
-$\sin\theta = {`\dfrac{2}{\sqrt{13}}`}$ where $\theta$ is the angle between the string and the rod.
+$\sin\theta = \dfrac{2}{\sqrt{13}}$ where $\theta$ is the angle between the string and the rod.
 
 Taking moments about $A$:
 
-$T \times 3 \times {`\dfrac{2}{\sqrt{13}}`} - 80 \times 1.5 - 120 \times 3 = 0$
+$T \times 3 \times \dfrac{2}{\sqrt{13}} - 80 \times 1.5 - 120 \times 3 = 0$
 
 $T = \frac{120 + 360}{6/\sqrt{13}} = \frac{480\sqrt{13}}{6} = 80\sqrt{13} \approx 288.4\;\mathrm{N}$
 

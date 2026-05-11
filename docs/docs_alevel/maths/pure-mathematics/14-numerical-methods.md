@@ -158,7 +158,7 @@ $$x_n - \frac{f(x_n)}{f'(x_n)} = \alpha - \frac{f''(\xi)}{2f'(x_n)}(\alpha - x_n
 $$x_{n+1} - \alpha = -\frac{f''(\xi)}{2f'(x_n)}(x_n - \alpha)^2$$
 
 Taking absolute values:
-$|x_{n+1} - \alpha| = {`\dfrac{|f''(\xi)|}{2|f'(x_n)|}`}|x_n - \alpha|^2 \leq C|x_n - \alpha|^2$.
+$|x_{n+1} - \alpha| = \dfrac{|f''(\xi)|}{2|f'(x_n)|}|x_n - \alpha|^2 \leq C|x_n - \alpha|^2$.
 $\blacksquare$
 
 **Intuition.** Quadratic convergence means the number of correct decimal places roughly **doubles**
@@ -468,7 +468,7 @@ Show that the iteration $x_{n+1} = \dfrac{x_n^3 + 5}{2}$ for solving $x^3 - 2x -
 $g(x) = \dfrac{x^3+5}{2}$, $g'(x) = \dfrac{3x^2}{2}$.
 
 Near the root $\alpha \approx 2.09$:
-$g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx {`\dfrac{3 \times 4.37}{2}`} \approx 6.55 \gt{} 1$.
+$g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac{3 \times 4.37}{2} \approx 6.55 \gt{} 1$.
 
 Since $|g'(\alpha)| \gt{} 1$, the iteration diverges near $\alpha$.
 
@@ -542,7 +542,7 @@ The Newton-Raphson formula fails when applied to $f(x) = x^{1/3}$ starting from 
 <summary>Solution 7</summary>
 $f(x) = x^{1/3}$, $f'(x) = \dfrac{1}{3}x^{-2/3}$.
 
-$x_{n+1} = x_n - {`\dfrac{x_n^{1/3}}{\frac{1}{3}x_n^{-2/3}}`} = x_n - 3x_n = -2x_n$.
+$x_{n+1} = x_n - \dfrac{x_n^{1/3}}{\frac{1}{3}x_n^{-2/3}} = x_n - 3x_n = -2x_n$.
 
 So $x_1 = -2$, $x_2 = 4$, $x_3 = -8$, ... The iterates oscillate and diverge.
 
@@ -584,7 +584,7 @@ Root near $\alpha \approx 1.21$.
 
 $g(x) = (3-x)^{1/3}$, $g'(x) = -\dfrac{1}{3}(3-x)^{-2/3}$.
 
-$|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx {`\dfrac{1}{3 \times 1.489}`} \approx 0.224 \lt{} 1$.
+$|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx \dfrac{1}{3 \times 1.489} \approx 0.224 \lt{} 1$.
 
 Converges since $|g'(\alpha)| \lt{} 1$.
 
@@ -668,7 +668,7 @@ endpoints and critical points. $f''(0) = -2$, $f''(1) = 4/8 = 0.5$, $f''(2) = 22
 So $M = 2$ (taking $|f''(x)| \leq 2$).
 
 Error bound:
-$|E_T| \leq {`\dfrac{(2-0)^3}{12 \times 4^2}`} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
+$|E_T| \leq \dfrac{(2-0)^3}{12 \times 4^2} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
 
 The actual error is $|1.1071 - 1.1039| = 0.0032$, well within the bound.
 

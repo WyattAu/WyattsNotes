@@ -197,7 +197,7 @@ A **Poisson process** with rate $\lambda$ satisfies:
 
 **Proof sketch that inter-arrival times are exponential.** Let $T$ be the time until the first
 event.
-$P(T > t) = P(\mathrm{no events in }[0,t]) = P(N(t) = 0) = {`\dfrac{e^{-\lambda t}(\lambda t)^0}{0!}`} = e^{-\lambda t}$.
+$P(T > t) = P(\mathrm{no events in }[0,t]) = P(N(t) = 0) = \dfrac{e^{-\lambda t}(\lambda t)^0}{0!} = e^{-\lambda t}$.
 
 So $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp}(\lambda)$. $\blacksquare$
 
@@ -207,7 +207,7 @@ For the exponential distribution:
 
 $$F(x) = 1 - e^{-\lambda x} = p \implies x = -\frac{1}{\lambda}\ln(1-p)$$
 
-The median is $x_{0.5} = -{`\dfrac{\ln(0.5)}{\lambda}`} = {`\dfrac{\ln 2}{\lambda}`}$.
+The median is $x_{0.5} = -\dfrac{\ln(0.5)}{\lambda} = \dfrac{\ln 2}{\lambda}$.
 
 <hr />
 
@@ -221,7 +221,7 @@ $P(X > 3) = e^{-0.5 \times 3} = e^{-1.5} \approx 0.2231$.
 
 $P(1 < X < 4) = F(4) - F(1) = (1-e^{-2}) - (1-e^{-0.5}) = e^{-0.5} - e^{-2} \approx 0.6065 - 0.1353 = 0.4712$.
 
-Median $= {`\dfrac{\ln 2}{0.5}`} = 2\ln 2 \approx 1.386$.
+Median $= \dfrac{\ln 2}{0.5} = 2\ln 2 \approx 1.386$.
 
 ### 3.2 Continuous random variable from a PDF
 
@@ -259,7 +259,7 @@ distribution of $\bar{X}$:
 
 $\bar{X} \sim N\!\left(\frac{1}{\lambda}, \frac{1}{n\lambda^2}\right) = N(200, 4000)$ approximately.
 
-$z = {`\dfrac{420 - 200}{\sqrt{4000}}`} = \dfrac{220}{63.25} = 3.48$.
+$z = \dfrac{420 - 200}{\sqrt{4000}} = \dfrac{220}{63.25} = 3.48$.
 
 $|z| = 3.48 > 1.96$, so reject $H_0$.
 
@@ -279,7 +279,7 @@ $P(X > 1) = e^{-2(1)} = e^{-2} \approx 0.1353$.
 $P(0.5 < X < 2) = (1-e^{-4}) - (1-e^{-1}) = e^{-1} - e^{-4} \approx 0.3679 - 0.0183 = 0.3496$.
 
 90th percentile:
-$F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -{`\dfrac{\ln(0.1)}{2}`} \approx 1.151$.
+$F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -\dfrac{\ln(0.1)}{2} \approx 1.151$.
 
 **If you get this wrong, revise:** [Percentiles](#27-percentiles) — Section 2.7.
 
@@ -313,7 +313,7 @@ Prove the memoryless property of the exponential distribution.
 
 <details>
 <summary>Solution 3</summary>
-$P(X > s+t \mid X > s) = \dfrac{P(X > s+t)}{P(X > s)} = {`\dfrac{e^{-\lambda(s+t)}}{e^{-\lambda s}}`} = e^{-\lambda t} = P(X > t)$. $\blacksquare$
+$P(X > s+t \mid X > s) = \dfrac{P(X > s+t)}{P(X > s)} = \dfrac{e^{-\lambda(s+t)}}{e^{-\lambda s}} = e^{-\lambda t} = P(X > t)$. $\blacksquare$
 
 This uses the survival function $P(X > x) = e^{-\lambda x}$.
 
@@ -401,7 +401,7 @@ $E(X) = \int_0^{\infty}x\lambda e^{-\lambda x}\,dx$.
 
 Let $u = x$, $dv = \lambda e^{-\lambda x}\,dx$, so $du = dx$, $v = -e^{-\lambda x}$.
 
-$E(X) = \left[-xe^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}e^{-\lambda x}\,dx = 0 + \left[-{`\dfrac{1}{\lambda}`}e^{-\lambda x}\right]_0^{\infty} = {`\dfrac{1}{\lambda}`}$.
+$E(X) = \left[-xe^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}e^{-\lambda x}\,dx = 0 + \left[-\dfrac{1}{\lambda}e^{-\lambda x}\right]_0^{\infty} = \dfrac{1}{\lambda}$.
 $\blacksquare$
 
 **If you get this wrong, revise:**
@@ -552,7 +552,7 @@ $P(N \geq 3) = 1 - P(N \leq 2) = 1 - e^{-2.5}(1 + 2.5 + 2.5^2/2) = 1 - 0.0821 \t
 (c) Find the median inter-arrival time.
 
 Median
-$= {`\dfrac{\ln 2}{\lambda}`} = {`\dfrac{\ln 2}{5}`} \approx 0.139\,\mathrm{hours} \approx 8.3\,\mathrm{minutes}$.
+$= \dfrac{\ln 2}{\lambda} = \dfrac{\ln 2}{5} \approx 0.139\,\mathrm{hours} \approx 8.3\,\mathrm{minutes}$.
 
 <hr />
 
@@ -662,12 +662,12 @@ essentially zero and clearly wrong.
 <details>
 <summary>Q1. $X \sim \mathrm{Exp}(\lambda)$. Find the value of $\lambda$ such that $P(X > 2) = 0.3$, and hence find $E(X)$ and the 80th percentile.</summary>
 
-$P(X > 2) = e^{-2\lambda} = 0.3 \implies -2\lambda = \ln(0.3) \implies \lambda = {`\dfrac{-\ln(0.3)}{2}`} = \dfrac{1.204}{2} = 0.602$.
+$P(X > 2) = e^{-2\lambda} = 0.3 \implies -2\lambda = \ln(0.3) \implies \lambda = \dfrac{-\ln(0.3)}{2} = \dfrac{1.204}{2} = 0.602$.
 
 $E(X) = 1/0.602 \approx 1.661$.
 
 80th percentile:
-$F(x) = 0.8 \implies 1 - e^{-0.602x} = 0.8 \implies e^{-0.602x} = 0.2 \implies x = {`\dfrac{-\ln(0.2)}{0.602}`} = \dfrac{1.609}{0.602} \approx 2.673$.
+$F(x) = 0.8 \implies 1 - e^{-0.602x} = 0.8 \implies e^{-0.602x} = 0.2 \implies x = \dfrac{-\ln(0.2)}{0.602} = \dfrac{1.609}{0.602} \approx 2.673$.
 
 </details>
 
@@ -678,7 +678,7 @@ $\int_0^4 kx(4-x)\,dx = k\int_0^4 (4x - x^2)\,dx = k\left[2x^2 - \dfrac{x^3}{3}\
 
 $E(X) = \dfrac{3}{32}\int_0^4 (4x^2 - x^3)\,dx = \dfrac{3}{32}\left[\dfrac{4x^3}{3} - \dfrac{x^4}{4}\right]_0^4 = \dfrac{3}{32}\left(\dfrac{256}{3} - 64\right) = \dfrac{3}{32}\left(\dfrac{256 - 192}{3}\right) = \dfrac{64}{32} = 2$.
 
-$E(X^2) = \dfrac{3}{32}\int_0^4 (4x^3 - x^4)\,dx = \dfrac{3}{32}\left[x^4 - \dfrac{x^5}{5}\right]_0^4 = \dfrac{3}{32}(256 - 204.8) = {`\dfrac{3 \times 51.2}{32}`} = 4.8$.
+$E(X^2) = \dfrac{3}{32}\int_0^4 (4x^3 - x^4)\,dx = \dfrac{3}{32}\left[x^4 - \dfrac{x^5}{5}\right]_0^4 = \dfrac{3}{32}(256 - 204.8) = \dfrac{3 \times 51.2}{32} = 4.8$.
 
 $\mathrm{Var}(X) = 4.8 - 4 = 0.8$.
 
@@ -831,7 +831,7 @@ So $Y \sim \mathrm{U}(0,1)$.
 
 **Solution.** **Mode:** The PDF peaks at $x = 1$, so mode $= \boxed{1}$.
 
-**Median:** For $m \leq 1$: $\displaystyle\int_0^m 2x\,dx = m^2$. Set $m^2 = 0.5 \implies m = {`\dfrac{1}{\sqrt{2}}`} \approx 0.707$.
+**Median:** For $m \leq 1$: $\displaystyle\int_0^m 2x\,dx = m^2$. Set $m^2 = 0.5 \implies m = \dfrac{1}{\sqrt{2}} \approx 0.707$.
 
 **Mean:** $E(X) = \displaystyle\int_0^1 2x^2\,dx + \int_1^2 2x(2-x)\,dx = \dfrac{2}{3} + \left[2x^2 - \dfrac{2x^3}{3}\right]_1^2 = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$.
 
@@ -865,7 +865,7 @@ The PDF should be $f(x) = x$ for $0 \leq x \leq 1$ and $f(x) = 2-x$ for $1 < x \
 
 | Pitfall | Correct Approach |
 |---|---|
-| Confusing the rate $\lambda$ with the mean ${`\dfrac{1}{\lambda}`}$ for exponential distributions | $E(X) = {`\dfrac{1}{\lambda}`}$; the rate parameter is $\lambda$ |
+| Confusing the rate $\lambda$ with the mean $\dfrac{1}{\lambda}$ for exponential distributions | $E(X) = \dfrac{1}{\lambda}$; the rate parameter is $\lambda$ |
 | Forgetting that the total area under a PDF must equal 1 | Always verify: $\displaystyle\int_{-\infty}^{\infty} f(x)\,dx = 1$ |
 | Applying the exponential memoryless property to other distributions | Only the exponential distribution has this property |
 | Using $P(a < X < b) = f(b) - f(a)$ | This is for CDFs, not PDFs. Use $\displaystyle\int_a^b f(x)\,dx$ |
@@ -939,14 +939,14 @@ The Central Limit Theorem connects the exponential and uniform distributions to 
 
 | Distribution | PDF | $E(X)$ | $\mathrm{Var}(X)$ |
 |---|---|---|---|
-| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | ${`\dfrac{1}{\lambda}`}$ | ${`\dfrac{1}{\lambda^2}`}$ |
+| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $\dfrac{1}{\lambda}$ | $\dfrac{1}{\lambda^2}$ |
 | $\mathrm{U}(a,b)$ | $\dfrac{1}{b-a}$, $a \leq x \leq b$ | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ |
 
 | Property | Exponential | Uniform |
 |---|---|---|
 | Memoryless | Yes | No |
 | CDF | $1 - e^{-\lambda x}$ | $\dfrac{x-a}{b-a}$ |
-| Median | ${`\dfrac{\ln 2}{\lambda}`}$ | $\dfrac{a+b}{2}$ |
+| Median | $\dfrac{\ln 2}{\lambda}$ | $\dfrac{a+b}{2}$ |
 
 ---
 
@@ -968,7 +968,7 @@ $\lambda = \dfrac{1}{500} = 0.002$.
 
 **(b)** $P(400 < X < 600) = e^{-0.8} - e^{-1.2} \approx 0.449 - 0.301 = \boxed{0.148}$.
 
-**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = {`\dfrac{\ln 2}{0.002}`} = \boxed{346.6\,\text{hours}}$.
+**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = \dfrac{\ln 2}{0.002} = \boxed{346.6\,\text{hours}}$.
 
 </details>
 
@@ -1002,7 +1002,7 @@ Properties:
 - If $X$ and $Y$ are independent, $M_{X+Y}(t) = M_X(t)M_Y(t)$
 
 MGFs:
-- $\mathrm{Exp}(\lambda)$: $M(t) = {`\dfrac{\lambda}{\lambda-t}`}$ for $t < \lambda$
+- $\mathrm{Exp}(\lambda)$: $M(t) = \dfrac{\lambda}{\lambda-t}$ for $t < \lambda$
 - $\mathrm{U}(a,b)$: $M(t) = \dfrac{e^{bt}-e^{at}}{(b-a)t}$
 
 ### 14.2 The cumulative distribution function approach
@@ -1030,22 +1030,22 @@ Find the MGF of $X \sim \mathrm{Exp}(\lambda)$ and use it to find $E(X)$ and $\m
 
 $M(t) = \displaystyle\int_0^{\infty} e^{tx}\lambda e^{-\lambda x}\,dx = \lambda\displaystyle\int_0^{\infty} e^{-(\lambda-t)x}\,dx = \frac{\lambda}{\lambda-t}$ for $t < \lambda$.
 
-$M'(t) = {`\dfrac{\lambda}{(\lambda-t)^2}`}$. $M'(0) = {`\dfrac{1}{\lambda}`} = E(X)$. ✓
+$M'(t) = \dfrac{\lambda}{(\lambda-t)^2}$. $M'(0) = \dfrac{1}{\lambda} = E(X)$. ✓
 
-$M''(t) = {`\dfrac{2\lambda}{(\lambda-t)^3}`}$. $M''(0) = {`\dfrac{2}{\lambda^2}`} = E(X^2)$.
+$M''(t) = \dfrac{2\lambda}{(\lambda-t)^3}$. $M''(0) = \dfrac{2}{\lambda^2} = E(X^2)$.
 
-$\mathrm{Var}(X) = {`\dfrac{2}{\lambda^2}`} - {`\dfrac{1}{\lambda^2}`} = \boxed{{`\dfrac{1}{\lambda^2}`}}$. ✓
+$\mathrm{Var}(X) = \dfrac{2}{\lambda^2} - \dfrac{1}{\lambda^2} = \boxed{\dfrac{1}{\lambda^2}}$. ✓
 
 </details>
 
 ### Question 14
 
-**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -{`\dfrac{1}{\lambda}`}\ln X$ follows $\mathrm{Exp}(\lambda)$.
+**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -\dfrac{1}{\lambda}\ln X$ follows $\mathrm{Exp}(\lambda)$.
 
 <details>
 <summary>Solution</summary>
 
-$F_Y(y) = P(Y \leq y) = P\!\left(-{`\dfrac{1}{\lambda}`}\ln X \leq y\right) = P(\ln X \geq -\lambda y) = P(X \geq e^{-\lambda y})$.
+$F_Y(y) = P(Y \leq y) = P\!\left(-\dfrac{1}{\lambda}\ln X \leq y\right) = P(\ln X \geq -\lambda y) = P(X \geq e^{-\lambda y})$.
 
 $= 1 - e^{-\lambda y}$ for $y \geq 0$.
 

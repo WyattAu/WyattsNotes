@@ -450,10 +450,10 @@ Many geometry problems can be solved elegantly using vectors. The general strate
 **Example.** In triangle $ABC$, let $M$ be the midpoint of $AB$. Prove that
 $\overrightarrow{CM} = \dfrac{1}{2}\overrightarrow{CA} + \dfrac{1}{2}\overrightarrow{CB}$.
 
-$\mathbf{m} = {`\dfrac{\mathbf{a} + \mathbf{b}}{2}`}$ (midpoint formula).
+$\mathbf{m} = \dfrac{\mathbf{a} + \mathbf{b}}{2}$ (midpoint formula).
 
-$\overrightarrow{CM} = \mathbf{m} - \mathbf{c} = {`\dfrac{\mathbf{a} + \mathbf{b}}{2}`} - \mathbf{c}
-= {`\dfrac{\mathbf{a} - \mathbf{c}}{2}`} + {`\dfrac{\mathbf{b} - \mathbf{c}}{2}`}
+$\overrightarrow{CM} = \mathbf{m} - \mathbf{c} = \dfrac{\mathbf{a} + \mathbf{b}}{2} - \mathbf{c}
+= \dfrac{\mathbf{a} - \mathbf{c}}{2} + \dfrac{\mathbf{b} - \mathbf{c}}{2}
 = \dfrac{1}{2}\overrightarrow{CA} + \dfrac{1}{2}\overrightarrow{CB}$.
 $\blacksquare$
 
@@ -474,7 +474,7 @@ $\mathbf{a} - \mathbf{b} = 2\mathbf{i} - 6\mathbf{j} + 4\mathbf{k} = \begin{pmat
 
 $|\mathbf{a}| = \sqrt{9+4+1} = \sqrt{14}$.
 
-$\hat{\mathbf{a}} = {`\dfrac{1}{\sqrt{14}}`}\begin{pmatrix}3\\-2\\1\end{pmatrix}$.
+$\hat{\mathbf{a}} = \dfrac{1}{\sqrt{14}}\begin{pmatrix}3\\-2\\1\end{pmatrix}$.
 
 **If you get this wrong, revise:**
 [Magnitude, Unit Vectors](#2-magnitude-unit-vectors-direction-cosines) — Section 2.
@@ -491,9 +491,9 @@ Find the angle between $\mathbf{a} = \begin{pmatrix}2\\1\\-1\end{pmatrix}$ and $
 $\mathbf{a}\cdot\mathbf{b} = 2-3-2 = -3$.
 $|\mathbf{a}| = \sqrt{4+1+1} = \sqrt{6}$, $|\mathbf{b}| = \sqrt{1+9+4} = \sqrt{14}$.
 
-$\cos\theta = {`\dfrac{-3}{\sqrt{6}\sqrt{14}}`} = {`\dfrac{-3}{\sqrt{84}}`} = {`\dfrac{-3}{2\sqrt{21}}`} = {`\dfrac{-\sqrt{21}}{14}`}$.
+$\cos\theta = \dfrac{-3}{\sqrt{6}\sqrt{14}} = \dfrac{-3}{\sqrt{84}} = \dfrac{-3}{2\sqrt{21}} = \dfrac{-\sqrt{21}}{14}$.
 
-$\theta = \arccos\!\left({`\dfrac{-\sqrt{21}}{14}`}\right) \approx 109.1^\circ$.
+$\theta = \arccos\!\left(\dfrac{-\sqrt{21}}{14}\right) \approx 109.1^\circ$.
 
 **If you get this wrong, revise:** [The Scalar (Dot) Product](#4-the-scalar-dot-product) —
 Section 4.
@@ -635,7 +635,7 @@ Given $\mathbf{a} = 2\mathbf{i} + \mathbf{j}$ and $\mathbf{b} = \mathbf{i} - 3\m
 
 <details>
 <summary>Solution 10</summary>
-The projection of $\mathbf{b}$ onto $\mathbf{a}$ is $\mathrm{proj}_{\mathbf{a}}\mathbf{b} = {`\dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|^2}`}\,\mathbf{a}$.
+The projection of $\mathbf{b}$ onto $\mathbf{a}$ is $\mathrm{proj}_{\mathbf{a}}\mathbf{b} = \dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|^2}\,\mathbf{a}$.
 
 $\mathbf{a}\cdot\mathbf{b} = 2-3 = -1$. $|\mathbf{a}|^2 = 4+1 = 5$.
 
@@ -658,9 +658,9 @@ The normal to the plane is $\mathbf{n} = \begin{pmatrix}2\\-1\\1\end{pmatrix}$, 
 The angle between the line and the plane equals $90^\circ$ minus the angle between $\mathbf{d}$ and
 $\mathbf{n}$.
 
-$\cos\phi = {`\dfrac{\mathbf{d}\cdot\mathbf{n}}{|\mathbf{d}||\mathbf{n}|}`} = {`\dfrac{6+1+2}{\sqrt{14}\sqrt{6}}`} = {`\dfrac{9}{2\sqrt{21}}`}$.
+$\cos\phi = \dfrac{\mathbf{d}\cdot\mathbf{n}}{|\mathbf{d}||\mathbf{n}|} = \dfrac{6+1+2}{\sqrt{14}\sqrt{6}} = \dfrac{9}{2\sqrt{21}}$.
 
-Angle between line and normal: $\phi = \arccos\!\left({`\dfrac{9}{2\sqrt{21}}`}\right)$.
+Angle between line and normal: $\phi = \arccos\!\left(\dfrac{9}{2\sqrt{21}}\right)$.
 
 Angle between line and plane: $90° - \phi$.
 
@@ -792,7 +792,7 @@ $Q = \begin{pmatrix}1+11/10\\2\\-1+33/10\end{pmatrix} = \begin{pmatrix}21/10\\2\
 
 $\overrightarrow{PQ} = \begin{pmatrix}21/10-3\\2-(-1)\\23/10-2\end{pmatrix} = \begin{pmatrix}-9/10\\3\\3/10\end{pmatrix}$.
 
-$d = \sqrt{81/100 + 9 + 9/100} = \sqrt{81/100 + 900/100 + 9/100} = \sqrt{990/100} = {`\dfrac{3\sqrt{110}}{10}`}$.
+$d = \sqrt{81/100 + 9 + 9/100} = \sqrt{81/100 + 900/100 + 9/100} = \sqrt{990/100} = \dfrac{3\sqrt{110}}{10}$.
 
 **If you get this wrong, revise:**
 [Distance from a Point to a Line](#8-distance-from-a-point-to-a-line) — Section 8.

@@ -113,8 +113,8 @@ $x = \pi/6, \pi/2, 5\pi/6, 3\pi/2$.
 </details>
 
 <details>
-<summary>Q9. Prove that ${`\dfrac{1-\cos 2x}{1+\cos 2x}`} = \tan^2 x$.</summary>
-${`\dfrac{1-\cos 2x}{1+\cos 2x}`} = {`\dfrac{2\sin^2 x}{2\cos^2 x}`} = \tan^2 x$. $\blacksquare$
+<summary>Q9. Prove that $\dfrac{1-\cos 2x}{1+\cos 2x} = \tan^2 x$.</summary>
+$\dfrac{1-\cos 2x}{1+\cos 2x} = \dfrac{2\sin^2 x}{2\cos^2 x} = \tan^2 x$. $\blacksquare$
 
 **If you get this wrong, revise:** [Trigonometry](/docs/alevel/maths/pure-mathematics/trigonometry)
 
@@ -124,7 +124,7 @@ ${`\dfrac{1-\cos 2x}{1+\cos 2x}`} = {`\dfrac{2\sin^2 x}{2\cos^2 x}`} = \tan^2 x$
 
 <details>
 <summary>Q10. Solve $3^{2x-1} = 7$.</summary>
-$(2x-1)\ln 3 = \ln 7 \implies x = {`\dfrac{\ln 7 + \ln 3}{2\ln 3}`} = {`\dfrac{\ln 21}{2\ln 3}`} \approx 1.771$.
+$(2x-1)\ln 3 = \ln 7 \implies x = \dfrac{\ln 7 + \ln 3}{2\ln 3} = \dfrac{\ln 21}{2\ln 3} \approx 1.771$.
 
 **If you get this wrong, revise:**
 [Exponentials and Logarithms](/docs/alevel/maths/pure-mathematics/exponentials-and-logarithms)
@@ -133,9 +133,9 @@ $(2x-1)\ln 3 = \ln 7 \implies x = {`\dfrac{\ln 7 + \ln 3}{2\ln 3}`} = {`\dfrac{\
 
 <details>
 <summary>Q11. A population grows from 500 to 2000 in 6 hours. Find the doubling time (assume exponential growth).</summary>
-$2000 = 500e^{6k} \implies e^{6k} = 4 \implies k = {`\dfrac{\ln 4}{6}`} = {`\dfrac{\ln 2}{3}`}$.
+$2000 = 500e^{6k} \implies e^{6k} = 4 \implies k = \dfrac{\ln 4}{6} = \dfrac{\ln 2}{3}$.
 
-$T_d = {`\dfrac{\ln 2}{k}`} = 3$ hours.
+$T_d = \dfrac{\ln 2}{k} = 3$ hours.
 
 **If you get this wrong, revise:**
 [Exponentials and Logarithms](/docs/alevel/maths/pure-mathematics/exponentials-and-logarithms)
@@ -145,10 +145,10 @@ $T_d = {`\dfrac{\ln 2}{k}`} = 3$ hours.
 ### Differentiation
 
 <details>
-<summary>Q12. Find $\dfrac{dy}{dx}$ where $y = {`\dfrac{x^2 e^x}{\sin x}`}$.</summary>
+<summary>Q12. Find $\dfrac{dy}{dx}$ where $y = \dfrac{x^2 e^x}{\sin x}$.</summary>
 $u = x^2e^x$, $v = \sin x$. $u' = e^x(x^2+2x)$, $v' = \cos x$.
 
-$\dfrac{dy}{dx} = {`\dfrac{e^x(x^2+2x)\sin x - x^2e^x\cos x}{\sin^2 x}`}$.
+$\dfrac{dy}{dx} = \dfrac{e^x(x^2+2x)\sin x - x^2e^x\cos x}{\sin^2 x}$.
 
 **If you get this wrong, revise:**
 [Differentiation](/docs/alevel/maths/pure-mathematics/differentiation)
@@ -201,7 +201,7 @@ $A = \int_0^1 (x - x^2)\,dx = \left[\dfrac{x^2}{2} - \dfrac{x^3}{3}\right]_0^1 =
 <summary>Q17. Find the angle between $\mathbf{a} = \begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix}3\\-1\\2\end{pmatrix}$.</summary>
 $\mathbf{a}\cdot\mathbf{b} = 3-2-2 = -1$. $|\mathbf{a}| = \sqrt{6}$, $|\mathbf{b}| = \sqrt{14}$.
 
-$\cos\theta = {`\dfrac{-1}{\sqrt{84}}`} \implies \theta \approx 96.3^\circ$.
+$\cos\theta = \dfrac{-1}{\sqrt{84}} \implies \theta \approx 96.3^\circ$.
 
 **If you get this wrong, revise:** [Vectors](/docs/alevel/maths/pure-mathematics/vectors)
 
@@ -284,7 +284,7 @@ $\bar{x} = 10(3)+50 = 80$. $\sigma_x = 10(2) = 20$.
 
 <details>
 <summary>Q25. Given $S_{xx}=40$, $S_{xy}=24$, $S_{yy}=25$, $\bar{x}=5$, $\bar{y}=7$, find $r$ and the regression line of $y$ on $x$.</summary>
-$r = {`\dfrac{24}{\sqrt{40 \times 25}}`} = {`\dfrac{24}{\sqrt{1000}}`} = \dfrac{24}{31.62} \approx 0.759$.
+$r = \dfrac{24}{\sqrt{40 \times 25}} = \dfrac{24}{\sqrt{1000}} = \dfrac{24}{31.62} \approx 0.759$.
 
 $b = 24/40 = 0.6$, $a = 7 - 0.6(5) = 4$. Line: $y = 4 + 0.6x$.
 
@@ -389,7 +389,7 @@ $v^2 = u^2 + 2as \implies 1225 = 225 + 400a \implies a = 1000/400 = 2.5\,\mathrm
 
 <details>
 <summary>Q35. A projectile is launched at $25\,\mathrm{m/s}$ at $50^\circ$ above horizontal. Find the maximum height.</summary>
-$H = {`\dfrac{(25\sin 50°)^2}{2(9.8)}`} = \dfrac{(19.15)^2}{19.6} = \dfrac{366.7}{19.6} \approx 18.71\,\mathrm{m}$.
+$H = \dfrac{(25\sin 50°)^2}{2(9.8)} = \dfrac{(19.15)^2}{19.6} = \dfrac{366.7}{19.6} \approx 18.71\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/alevel/maths/mechanics/kinematics)
 

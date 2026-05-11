@@ -1,0 +1,7 @@
+---
+slug: mechanics
+sidebar_position: 3
+---
+
+# Mechanics
+

@@ -126,7 +126,7 @@ For $|x| < 1$ and any real $n$:
 
 $$\boxed{(1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots = \sum_{k=0}^{\infty}\binom{n}{k}x^k}$$
 
-where $\dbinom{n}{k} = {`\dfrac{n(n-1)(n-2)\cdots(n-k+1)}{k!}`}$.
+where $\dbinom{n}{k} = \dfrac{n(n-1)(n-2)\cdots(n-k+1)}{k!}$.
 
 **Radius of convergence:** 1.
 
@@ -434,15 +434,15 @@ Setting $x = 2$: $e^2 = \displaystyle\sum_{n=0}^{\infty}\dfrac{2^n}{n!}$. $\blac
 <details>
 <summary>Problem 4</summary>
 
-Find the Taylor series of $\sin x$ about $x = {`\dfrac{\pi}{3}`}$ up to the $(x - \pi/3)^3$ term.
+Find the Taylor series of $\sin x$ about $x = \dfrac{\pi}{3}$ up to the $(x - \pi/3)^3$ term.
 
 </details>
 
 <details>
 <summary>Solution 4</summary>
 
-$f(x) = \sin x$. $f(\pi/3) = {`\dfrac{\sqrt{3}}{2}`}$. $f'(x) = \cos x$, $f'(\pi/3) = \dfrac{1}{2}$.
-$f''(x) = -\sin x$, $f''(\pi/3) = -{`\dfrac{\sqrt{3}}{2}`}$. $f'''(x) = -\cos x$,
+$f(x) = \sin x$. $f(\pi/3) = \dfrac{\sqrt{3}}{2}$. $f'(x) = \cos x$, $f'(\pi/3) = \dfrac{1}{2}$.
+$f''(x) = -\sin x$, $f''(\pi/3) = -\dfrac{\sqrt{3}}{2}$. $f'''(x) = -\cos x$,
 $f'''(\pi/3) = -\dfrac{1}{2}$.
 
 $$\sin x = \frac{\sqrt{3}}{2} + \frac{1}{2}\left(x-\frac{\pi}{3}\right) - \frac{\sqrt{3}}{4}\left(x-\frac{\pi}{3}\right)^2 - \frac{1}{12}\left(x-\frac{\pi}{3}\right)^3 + \cdots$$
@@ -466,7 +466,7 @@ $\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 
 $\sin x - x = -\dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 
-${`\dfrac{\sin x - x}{x^3}`} = -\dfrac{1}{6} + \dfrac{x^2}{120} - \cdots \to \boxed{-\dfrac{1}{6}}$ as
+$\dfrac{\sin x - x}{x^3} = -\dfrac{1}{6} + \dfrac{x^2}{120} - \cdots \to \boxed{-\dfrac{1}{6}}$ as
 $x \to 0$.
 
 **If you get this wrong, revise:** [Evaluating Limits](#52-evaluating-limits-using-series) — Section
@@ -601,7 +601,7 @@ $\dfrac{e^{-x^2} - 1}{x^2} = -1 + \dfrac{x^2}{2} - \cdots \to \boxed{-1}$ as $x 
 
 ### Example 7.1: Maclaurin series of a composite function
 
-**Problem.** Find the Maclaurin series of $f(x) = {`\dfrac{1}{\sqrt{1 + x^2}}`}$ up to the $x^6$ term.
+**Problem.** Find the Maclaurin series of $f(x) = \dfrac{1}{\sqrt{1 + x^2}}$ up to the $x^6$ term.
 
 **Solution.** Use the binomial series with $n = -1/2$:
 
@@ -621,7 +621,7 @@ Valid for $|x^2| < 1$, i.e., $|x| < 1$.
 
 Using three terms: $\cos(0.2) \approx 1 - 0.02 + \dfrac{0.0016}{24} = 1 - 0.02 + 0.0000667 = 0.980067$.
 
-Error bound: the next term is $\dfrac{(0.2)^6}{720} = {`\dfrac{6.4 \times 10^{-7}}{720}`} \approx 8.9 \times 10^{-10}$.
+Error bound: the next term is $\dfrac{(0.2)^6}{720} = \dfrac{6.4 \times 10^{-7}}{720} \approx 8.9 \times 10^{-10}$.
 
 So $|\text{error}| < 10^{-9}$.
 
@@ -647,7 +647,7 @@ $$e^x\cos x = 1 + x + \frac{x^2}{2} - \frac{x^4}{24} + \cdots$$
 
 **Problem.** Find the Maclaurin series of $\sec x$ up to the $x^4$ term.
 
-**Solution.** Write $\sec x = {`\dfrac{1}{\cos x}`} = (1 - x^2/2 + x^4/24 - \cdots)^{-1}$.
+**Solution.** Write $\sec x = \dfrac{1}{\cos x} = (1 - x^2/2 + x^4/24 - \cdots)^{-1}$.
 
 Using $(1 - u)^{-1} = 1 + u + u^2 + \cdots$ with $u = x^2/2 - x^4/24 + \cdots$:
 
@@ -702,7 +702,7 @@ $$= \frac{1}{2} - \frac{1}{24} + \frac{1}{320} - \frac{1}{5376} + \frac{1}{11059
 
 $$= 0.5 - 0.041667 + 0.003125 - 0.000186 + 0.000009 = 0.461281$$
 
-The error is bounded by the next term: ${`\dfrac{1}{11 \times 2^{11}}`} = \dfrac{1}{22528} \approx 0.000044$.
+The error is bounded by the next term: $\dfrac{1}{11 \times 2^{11}} = \dfrac{1}{22528} \approx 0.000044$.
 
 So the integral $\approx 0.4613$ to 4 decimal places.
 
@@ -971,7 +971,7 @@ Radius of convergence: $|x| < 1$ (from the binomial series convergence condition
 
 $\ln(1+x) = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$ for $|x| < 1$.
 
-${`\dfrac{\ln(1+x)}{x}`} = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^{n-1}}{n}$.
+$\dfrac{\ln(1+x)}{x} = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^{n-1}}{n}$.
 
 $\displaystyle\int_0^1 \frac{\ln(1+x)}{x}\,dx = \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2} = \eta(2) = \frac{\pi^2}{12}$.
 
@@ -1032,14 +1032,14 @@ Many trigonometric identities can be derived from series. For example, $e^{ix} =
 
 ### Question 11
 
-Find the Maclaurin series of ${`\dfrac{\sin x}{x}`}$ and determine $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$.
+Find the Maclaurin series of $\dfrac{\sin x}{x}$ and determine $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$.
 
 <details>
 <summary>Solution</summary>
 
 $\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 
-${`\dfrac{\sin x}{x}`} = 1 - \dfrac{x^2}{6} + \dfrac{x^4}{120} - \cdots$
+$\dfrac{\sin x}{x} = 1 - \dfrac{x^2}{6} + \dfrac{x^4}{120} - \cdots$
 
 $\displaystyle\lim_{x \to 0} \frac{\sin x}{x} = 1$ (the constant term).
 
@@ -1054,7 +1054,7 @@ $\displaystyle\lim_{x \to 0} \frac{\sin x}{x} = 1$ (the constant term).
 
 The $n$-th derivative of $\cos x$ is one of $\pm\cos x$ or $\pm\sin x$, so $|f^{(n)}(c)| \leq 1$ for all $c$ and $n$.
 
-By the Lagrange remainder: $|R_n(x)| \leq {`\dfrac{|x|^{n+1}}{(n+1)!}`}$.
+By the Lagrange remainder: $|R_n(x)| \leq \dfrac{|x|^{n+1}}{(n+1)!}$.
 
 For any fixed $x$: $\displaystyle\lim_{n \to \infty} \frac{|x|^{n+1}}{(n+1)!} = 0$ (factorial grows faster than exponential).
 
@@ -1071,7 +1071,7 @@ Use series to evaluate $\displaystyle\lim_{x \to 0} \frac{\tan x - x}{x^3}$.
 
 $\tan x = x + \dfrac{x^3}{3} + \dfrac{2x^5}{15} + \cdots$
 
-${`\dfrac{\tan x - x}{x^3}`} = {`\dfrac{x^3/3 + 2x^5/15 + \cdots}{x^3}`} = \dfrac{1}{3} + \dfrac{2x^2}{15} + \cdots$
+$\dfrac{\tan x - x}{x^3} = \dfrac{x^3/3 + 2x^5/15 + \cdots}{x^3} = \dfrac{1}{3} + \dfrac{2x^2}{15} + \cdots$
 
 $\boxed{\displaystyle\lim_{x \to 0} \frac{\tan x - x}{x^3} = \frac{1}{3}}$
 

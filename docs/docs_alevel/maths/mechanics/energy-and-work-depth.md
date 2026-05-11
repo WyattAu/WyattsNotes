@@ -297,7 +297,7 @@ $$T = kx$$
 where $k$ is the **stiffness** (or spring constant) in $\mathrm{N\,m^{-1}}$ and $x$ is the extension
 in metres.
 
-Alternatively, $T = {`\dfrac{\lambda x}{l}`}$ where $\lambda$ is the **modulus of elasticity** and $l$
+Alternatively, $T = \dfrac{\lambda x}{l}$ where $\lambda$ is the **modulus of elasticity** and $l$
 is the natural length.
 
 ### 7.2 Elastic potential energy

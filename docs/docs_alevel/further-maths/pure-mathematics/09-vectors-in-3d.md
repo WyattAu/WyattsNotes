@@ -312,7 +312,7 @@ $\square$
 
 **Example.** Find the distance from $P(1, 2, 3)$ to the plane $2x - y + 2z = 5$.
 
-$D = {`\dfrac{|2(1)-1(2)+2(3)-5|}{\sqrt{4+1+4}}`} = {`\dfrac{|2-2+6-5|}{3}`} = \dfrac{1}{3}$.
+$D = \dfrac{|2(1)-1(2)+2(3)-5|}{\sqrt{4+1+4}} = \dfrac{|2-2+6-5|}{3} = \dfrac{1}{3}$.
 
 <hr />
 
@@ -389,9 +389,9 @@ between any point on each line onto this perpendicular direction.
 | Line                  | $\mathbf{r} = \mathbf{a} + \lambda\mathbf{d}$                                                          |
 | Plane (vector)        | $\mathbf{r}\cdot\mathbf{n} = d$                                                                        |
 | Plane (Cartesian)     | $ax + by + cz = d$                                                                                     |
-| Point-plane distance  | $D = {`\dfrac{                                                                                           | \mathbf{p}\cdot\mathbf{n} - d                                        | }{  | \mathbf{n}                       | }`}$          |
+| Point-plane distance  | $D = \dfrac{                                                                                           | \mathbf{p}\cdot\mathbf{n} - d                                        | }{  | \mathbf{n}                       | }$          |
 | Parallelepiped volume | $V =                                                                                                   | \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})                          | $   |
-| Skew line distance    | $D = {`\dfrac{                                                                                           | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | }{  | \mathbf{d}\_1\times\mathbf{d}\_2 | }`}$          |
+| Skew line distance    | $D = \dfrac{                                                                                           | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | }{  | \mathbf{d}\_1\times\mathbf{d}\_2 | }$          |
 
 <hr />
 
@@ -454,7 +454,7 @@ Find the distance from the point $P(3, 1, -2)$ to the plane $x + 2y - 2z = 6$.
 <details>
 <summary>Solution 3</summary>
 
-$D = {`\dfrac{|3 + 2(1) - 2(-2) - 6|}{\sqrt{1+4+4}}`} = {`\dfrac{|3+2+4-6|}{3}`} = \dfrac{3}{3} = 1$.
+$D = \dfrac{|3 + 2(1) - 2(-2) - 6|}{\sqrt{1+4+4}} = \dfrac{|3+2+4-6|}{3} = \dfrac{3}{3} = 1$.
 
 $\boxed{D = 1}$.
 
@@ -485,7 +485,7 @@ $|\mathbf{d}_1\times\mathbf{d}_2| = \sqrt{4+1+1} = \sqrt{6}$.
 
 $(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2) = 1(-2)+(-1)(1)+3(1) = -2-1+3 = 0$.
 
-$D = {`\dfrac{0}{\sqrt{6}}`} = 0$. The lines actually **intersect** (not skew).
+$D = \dfrac{0}{\sqrt{6}} = 0$. The lines actually **intersect** (not skew).
 
 **If you get this wrong, revise:** [Distance Between Skew Lines](#9-distance-between-two-skew-lines)
 — Section 9.
@@ -527,7 +527,7 @@ Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
 $\mathbf{n}_1 = \begin{pmatrix}2\\-1\\1\end{pmatrix}$, $|\mathbf{n}_1| = \sqrt{6}$.
 $\mathbf{n}_2 = \begin{pmatrix}1\\1\\2\end{pmatrix}$, $|\mathbf{n}_2| = \sqrt{6}$.
 
-$\cos\theta = {`\dfrac{|2-1+2|}{\sqrt{6}\cdot\sqrt{6}}`} = \dfrac{3}{6} = \dfrac{1}{2}$.
+$\cos\theta = \dfrac{|2-1+2|}{\sqrt{6}\cdot\sqrt{6}} = \dfrac{3}{6} = \dfrac{1}{2}$.
 
 $\theta = \boxed{60°}$.
 
@@ -612,9 +612,9 @@ and the plane $2x - y + 2z = 5$.
 $\mathbf{d} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$,
 $\mathbf{n} = \begin{pmatrix}2\\-1\\2\end{pmatrix}$.
 
-$\sin\phi = {`\dfrac{|\mathbf{d}\cdot\mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}`} = {`\dfrac{|6-1-2|}{\sqrt{11}\sqrt{9}}`} = {`\dfrac{3}{3\sqrt{11}}`} = {`\dfrac{1}{\sqrt{11}}`}$.
+$\sin\phi = \dfrac{|\mathbf{d}\cdot\mathbf{n}|}{|\mathbf{d}||\mathbf{n}|} = \dfrac{|6-1-2|}{\sqrt{11}\sqrt{9}} = \dfrac{3}{3\sqrt{11}} = \dfrac{1}{\sqrt{11}}$.
 
-$\phi = \arcsin\!\left({`\dfrac{1}{\sqrt{11}}`}\right) \approx \boxed{17.6°}$.
+$\phi = \arcsin\!\left(\dfrac{1}{\sqrt{11}}\right) \approx \boxed{17.6°}$.
 
 **If you get this wrong, revise:**
 [Angle Between Line and Plane](#65-angle-between-a-line-and-a-plane) — Section 6.5.
@@ -643,7 +643,7 @@ $|\mathbf{d}_1\times\mathbf{d}_2| = \sqrt{1+4+1} = \sqrt{6}$.
 
 $(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2) = (-1)(-1)+1(2)+0(-1) = 1+2 = 3$.
 
-$D = {`\dfrac{3}{\sqrt{6}}`} = {`\dfrac{3\sqrt{6}}{6}`} = \boxed{{`\dfrac{\sqrt{6}}{2}`}}$.
+$D = \dfrac{3}{\sqrt{6}} = \dfrac{3\sqrt{6}}{6} = \boxed{\dfrac{\sqrt{6}}{2}}$.
 
 **If you get this wrong, revise:** [Distance Between Skew Lines](#9-distance-between-two-skew-lines)
 — Section 9.
@@ -662,7 +662,7 @@ $D = {`\dfrac{3}{\sqrt{6}}`} = {`\dfrac{3\sqrt{6}}{6}`} = \boxed{{`\dfrac{\sqrt{
 
 $$P' = P - 2D\hat{\mathbf{n}}$$
 
-where $D = {`\dfrac{1+2+3-6}{\sqrt{3}}`} = 0$ and $\hat{\mathbf{n}} = {`\dfrac{1}{\sqrt{3}}`}(1, 1, 1)$.
+where $D = \dfrac{1+2+3-6}{\sqrt{3}} = 0$ and $\hat{\mathbf{n}} = \dfrac{1}{\sqrt{3}}(1, 1, 1)$.
 
 Since $D = 0$, the point $P$ lies on the plane, so its reflection is itself: $P' = (1, 2, 3)$.
 
@@ -736,7 +736,7 @@ Since the scalar triple product is zero, the four points are coplanar. $\blacksq
 
 **Problem.** Find the projection of the vector $\mathbf{a} = (2, 1, -1)$ onto the plane $x + y + z = 1$.
 
-**Solution.** The unit normal is $\hat{\mathbf{n}} = {`\dfrac{1}{\sqrt{3}}`}(1, 1, 1)$.
+**Solution.** The unit normal is $\hat{\mathbf{n}} = \dfrac{1}{\sqrt{3}}(1, 1, 1)$.
 
 The projection of $\mathbf{a}$ onto the normal direction:
 
@@ -803,7 +803,7 @@ $\mathbf{a}_2 - \mathbf{a}_1 = (2, -1, 2)$.
 
 $(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2) = 4 - 3 - 6 = -5$.
 
-$D = {`\dfrac{|-5|}{\sqrt{22}}`} = {`\dfrac{5}{\sqrt{22}}`} = {`\dfrac{5\sqrt{22}}{22}`}$.
+$D = \dfrac{|-5|}{\sqrt{22}} = \dfrac{5}{\sqrt{22}} = \dfrac{5\sqrt{22}}{22}$.
 
 </details>
 
@@ -837,7 +837,7 @@ $$|\mathbf{p}|^2 - 2\mathbf{a}\cdot\mathbf{p} + |\mathbf{a}|^2 = |\mathbf{p}|^2 
 
 $$2(\mathbf{b} - \mathbf{a})\cdot\mathbf{p} = |\mathbf{b}|^2 - |\mathbf{a}|^2$$
 
-This is the equation of a plane with normal $\mathbf{b} - \mathbf{a}$ (perpendicular to $AB$), which passes through the midpoint ${`\dfrac{\mathbf{a}+\mathbf{b}}{2}`}$. This is the perpendicular bisector. $\blacksquare$
+This is the equation of a plane with normal $\mathbf{b} - \mathbf{a}$ (perpendicular to $AB$), which passes through the midpoint $\dfrac{\mathbf{a}+\mathbf{b}}{2}$. This is the perpendicular bisector. $\blacksquare$
 
 </details>
 
@@ -904,12 +904,12 @@ The equation of a plane connects vectors to 3D geometry. See [Polar Coordinates]
 | Scalar product | $\mathbf{a}\cdot\mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta = a_1b_1+a_2b_2+a_3b_3$ |
 | Vector product | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$ |
 | Scalar triple product | $[\mathbf{a},\mathbf{b},\mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \det(\mathbf{a}\;\mathbf{b}\;\mathbf{c})$ |
-| Distance: point to plane | $D = {`\dfrac{|\mathbf{a}\cdot\mathbf{n} - d|}{|\mathbf{n}|}`}$ |
-| Distance: skew lines | $D = {`\dfrac{|(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2)|}{|\mathbf{d}_1\times\mathbf{d}_2|}`}$ |
-| Angle: line to plane | $\sin\phi = {`\dfrac{|\mathbf{d}\cdot\mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}`}$ |
-| Angle: two planes | $\cos\theta = {`\dfrac{|\mathbf{n}_1\cdot\mathbf{n}_2|}{|\mathbf{n}_1||\mathbf{n}_2|}`}$ |
+| Distance: point to plane | $D = \dfrac{|\mathbf{a}\cdot\mathbf{n} - d|}{|\mathbf{n}|}$ |
+| Distance: skew lines | $D = \dfrac{|(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2)|}{|\mathbf{d}_1\times\mathbf{d}_2|}$ |
+| Angle: line to plane | $\sin\phi = \dfrac{|\mathbf{d}\cdot\mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}$ |
+| Angle: two planes | $\cos\theta = \dfrac{|\mathbf{n}_1\cdot\mathbf{n}_2|}{|\mathbf{n}_1||\mathbf{n}_2|}$ |
 | Volume of tetrahedron | $V = \dfrac{1}{6}|[\mathbf{a},\mathbf{b},\mathbf{c}]|$ |
-| Reflection in plane | $P' = P - 2D\hat{\mathbf{n}}$ where $D = {`\dfrac{P\cdot\mathbf{n}-d}{|\mathbf{n}|}`}$ |
+| Reflection in plane | $P' = P - 2D\hat{\mathbf{n}}$ where $D = \dfrac{P\cdot\mathbf{n}-d}{|\mathbf{n}|}$ |
 
 ---
 
@@ -980,7 +980,7 @@ $|\mathbf{d}_1\times\mathbf{d}_2| = \sqrt{3}$.
 
 $\mathbf{a}_2-\mathbf{a}_1 = (0,-1,1)$. $(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2) = 0+1+1 = 2$.
 
-$D = {`\dfrac{2}{\sqrt{3}}`} = \boxed{{`\dfrac{2\sqrt{3}}{3}`}}$.
+$D = \dfrac{2}{\sqrt{3}} = \boxed{\dfrac{2\sqrt{3}}{3}}$.
 
 </details>
 
@@ -1024,7 +1024,7 @@ Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
 
 $\mathbf{n}_1 = (2,-1,1)$, $\mathbf{n}_2 = (1,1,2)$.
 
-$\cos\theta = {`\dfrac{|2-1+2|}{\sqrt{6}\sqrt{6}}`} = \dfrac{3}{6} = \dfrac{1}{2}$.
+$\cos\theta = \dfrac{|2-1+2|}{\sqrt{6}\sqrt{6}} = \dfrac{3}{6} = \dfrac{1}{2}$.
 
 $\boxed{\theta = 60°}$
 
@@ -1053,7 +1053,7 @@ Since the cross product gives $(2,1,-3)$, the line is parallel to this vector. $
 
 If $\mathbf{a}$ makes angles $\alpha, \beta, \gamma$ with the coordinate axes, then:
 
-$\cos\alpha = {`\dfrac{a_1}{|\mathbf{a}|}`}$, $\cos\beta = {`\dfrac{a_2}{|\mathbf{a}|}`}$, $\cos\gamma = {`\dfrac{a_3}{|\mathbf{a}|}`}$
+$\cos\alpha = \dfrac{a_1}{|\mathbf{a}|}$, $\cos\beta = \dfrac{a_2}{|\mathbf{a}|}$, $\cos\gamma = \dfrac{a_3}{|\mathbf{a}|}$
 
 and $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
@@ -1092,7 +1092,7 @@ $\mathbf{p}-\mathbf{a} = (1,2,3)-(0,1,-1) = (1,1,4)$. $\mathbf{d} = (1,1,0)$.
 
 $(\mathbf{p}-\mathbf{a})\times\mathbf{d} = \begin{pmatrix}1\cdot0-4\cdot1\\4\cdot1-1\cdot0\\1\cdot1-1\cdot1\end{pmatrix} = (-4, 4, 0)$.
 
-$D = {`\dfrac{|(-4,4,0)|}{|(1,1,0)|}`} = {`\dfrac{\sqrt{32}}{\sqrt{2}}`} = {`\dfrac{4\sqrt{2}}{\sqrt{2}}`} = \boxed{4}$.
+$D = \dfrac{|(-4,4,0)|}{|(1,1,0)|} = \dfrac{\sqrt{32}}{\sqrt{2}} = \dfrac{4\sqrt{2}}{\sqrt{2}} = \boxed{4}$.
 
 </details>
 

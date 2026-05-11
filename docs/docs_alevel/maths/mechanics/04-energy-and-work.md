@@ -463,7 +463,7 @@ At maximum speed: $P = Rv \implies 2000000 = (5000+20v)v = 5000v + 20v^2$.
 
 $20v^2 + 5000v - 2000000 = 0 \implies v^2 + 250v - 100000 = 0$.
 
-$v = {`\dfrac{-250 + \sqrt{62500 + 400000}}{2}`} = {`\dfrac{-250 + \sqrt{462500}}{2}`} = \dfrac{-250 + 680.1}{2} = 215.1\,\mathrm{m/s}$.
+$v = \dfrac{-250 + \sqrt{62500 + 400000}}{2} = \dfrac{-250 + \sqrt{462500}}{2} = \dfrac{-250 + 680.1}{2} = 215.1\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
 

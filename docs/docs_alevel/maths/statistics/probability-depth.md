@@ -156,7 +156,7 @@ $$P(M) = 0.45, \quad P(P) = 0.30, \quad P(M \cap P) = 0.15$$
 
 (a) $P(M \cup P) = 0.45 + 0.30 - 0.15 = 0.60$
 
-(b) $P(M \mid P) = {`\dfrac{P(M \cap P)}{P(P)}`} = \dfrac{0.15}{0.30} = 0.50$
+(b) $P(M \mid P) = \dfrac{P(M \cap P)}{P(P)} = \dfrac{0.15}{0.30} = 0.50$
 
 ### 3.3 Three-event Venn diagrams
 
@@ -311,9 +311,9 @@ rate). The condition prevalence is 3%. Find: (a) $P(\mathrm{condition} \mid \mat
 
 $P(T^+ \mid C) = 0.92$, $P(T^- \mid C') = 0.96$, $P(C) = 0.03$.
 
-(a) $P(C \mid T^+) = {`\dfrac{0.92 \times 0.03}{0.92 \times 0.03 + 0.04 \times 0.97}`} = \dfrac{0.0276}{0.0276 + 0.0388} = \dfrac{0.0276}{0.0664} \approx 0.416$
+(a) $P(C \mid T^+) = \dfrac{0.92 \times 0.03}{0.92 \times 0.03 + 0.04 \times 0.97} = \dfrac{0.0276}{0.0276 + 0.0388} = \dfrac{0.0276}{0.0664} \approx 0.416$
 
-(b) $P(C \mid T^-) = {`\dfrac{0.08 \times 0.03}{0.08 \times 0.03 + 0.96 \times 0.97}`} = \dfrac{0.0024}{0.0024 + 0.9312} = \dfrac{0.0024}{0.9336} \approx 0.00257$
+(b) $P(C \mid T^-) = \dfrac{0.08 \times 0.03}{0.08 \times 0.03 + 0.96 \times 0.97} = \dfrac{0.0024}{0.0024 + 0.9312} = \dfrac{0.0024}{0.9336} \approx 0.00257$
 
 </details>
 
