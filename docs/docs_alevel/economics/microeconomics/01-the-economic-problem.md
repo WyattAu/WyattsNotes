@@ -17,9 +17,9 @@ sidebar_position: 1
 ### 1.1 Scarcity
 
 We define **scarcity** as the condition in which human wants exceed the resources available to
-satisfy them. Formally, if we denote the set of all desired goods and services by $\mathcal\{W{'\}'}$ and
-the set of all producible goods and services by $\mathcal\{P{'\}'}$, then scarcity is the statement that
-$\mathcal\{W{'\}'} \supsetneq \mathcal\{P{'\}'}$. This is not a temporary condition — it is a permanent feature
+satisfy them. Formally, if we denote the set of all desired goods and services by $\mathcal{W}$ and
+the set of all producible goods and services by $\mathcal{P}$, then scarcity is the statement that
+$\mathcal{W} \supsetneq \mathcal{P}$. This is not a temporary condition — it is a permanent feature
 of human existence, because wants are effectively unlimited while resources (land, labour, capital,
 entrepreneurship) are finite.
 
@@ -567,7 +567,7 @@ Economics?
 
 <details>
 <summary>Hint</summary>
-Set up the Lagrangian: $\mathcal\{L{'\}'} = 20\sqrt{t_E} + 15\sqrt{t_M} + \lambda(6 - t_E - t_M)$. Take derivatives and set to zero: $\frac{10}{\sqrt{t_E}} = \lambda$ and $\frac{7.5}{\sqrt{t_M}} = \lambda$. So $\frac{10}{\sqrt{t_E}} = \frac{7.5}{\sqrt{t_M}}$, giving $\frac{t_E}{t_M} = \frac{16}{9}$, so $t_E = \frac{96}{25} = 3.84$ hours, $t_M = 2.16$ hours.
+Set up the Lagrangian: $\mathcal{L} = 20\sqrt{t_E} + 15\sqrt{t_M} + \lambda(6 - t_E - t_M)$. Take derivatives and set to zero: $\frac{10}{\sqrt{t_E}} = \lambda$ and $\frac{7.5}{\sqrt{t_M}} = \lambda$. So $\frac{10}{\sqrt{t_E}} = \frac{7.5}{\sqrt{t_M}}$, giving $\frac{t_E}{t_M} = \frac{16}{9}$, so $t_E = \frac{96}{25} = 3.84$ hours, $t_M = 2.16$ hours.
 </details>
 
 **Problem 8.** Evaluate the argument that "scarcity can be eliminated through technological

@@ -129,11 +129,11 @@ $P(X=0) = e^{-1.09} \approx 0.3365 \implies E_0 = 33.65$
 
 $P(X=1) = 1.09\,e^{-1.09} \approx 0.3668 \implies E_1 = 36.68$
 
-$P(X=2) = {'\dfrac{1.09^2}{2}'}e^{-1.09} \approx 0.1999 \implies E_2 = 19.99$
+$P(X=2) = \dfrac{1.09^2}{2}e^{-1.09} \approx 0.1999 \implies E_2 = 19.99$
 
-$P(X=3) = {'\dfrac{1.09^3}{6}'}e^{-1.09} \approx 0.0726 \implies E_3 = 7.26$
+$P(X=3) = \dfrac{1.09^3}{6}e^{-1.09} \approx 0.0726 \implies E_3 = 7.26$
 
-$P(X=4) = {'\dfrac{1.09^4}{24}'}e^{-1.09} \approx 0.0198 \implies E_4 = 1.98$
+$P(X=4) = \dfrac{1.09^4}{24}e^{-1.09} \approx 0.0198 \implies E_4 = 1.98$
 
 $P(X \geq 5) = 1 - 0.9956 \approx 0.0044 \implies E_5 = 0.44$
 
@@ -203,14 +203,14 @@ Test at the 5% level whether age group and preferred news source are independent
 
 **Expected frequencies:**
 
-$E_{11} = {'{'\dfrac{90 \times 70}{200}'}'} = 31.5$, $E_{12} = {'{'\dfrac{90 \times 90}{200}'}'} = 40.5$,
-$E_{13} = {'{'\dfrac{90 \times 40}{200}'}'} = 18.0$
+$E_{11} = {`\dfrac{90 \times 70}{200}`} = 31.5$, $E_{12} = {`\dfrac{90 \times 90}{200}`} = 40.5$,
+$E_{13} = {`\dfrac{90 \times 40}{200}`} = 18.0$
 
-$E_{21} = {'{'\dfrac{70 \times 70}{200}'}'} = 24.5$, $E_{22} = {'{'\dfrac{70 \times 90}{200}'}'} = 31.5$,
-$E_{23} = {'{'\dfrac{70 \times 40}{200}'}'} = 14.0$
+$E_{21} = {`\dfrac{70 \times 70}{200}`} = 24.5$, $E_{22} = {`\dfrac{70 \times 90}{200}`} = 31.5$,
+$E_{23} = {`\dfrac{70 \times 40}{200}`} = 14.0$
 
-$E_{31} = {'{'\dfrac{40 \times 70}{200}'}'} = 14.0$, $E_{32} = {'{'\dfrac{40 \times 90}{200}'}'} = 18.0$,
-$E_{33} = {'{'\dfrac{40 \times 40}{200}'}'} = 8.0$
+$E_{31} = {`\dfrac{40 \times 70}{200}`} = 14.0$, $E_{32} = {`\dfrac{40 \times 90}{200}`} = 18.0$,
+$E_{33} = {`\dfrac{40 \times 40}{200}`} = 8.0$
 
 All expected frequencies $\geq 5$, so the test is valid.
 
@@ -260,9 +260,9 @@ $H_0$: The die is fair. $H_1$: The die is not fair.
 
 Expected frequency for each face: $E_i = 60/6 = 10$.
 
-$\chi^2 = {'\dfrac{(8-10)^2}{10}'} + {'\dfrac{(12-10)^2}{10}'} + {'\dfrac{(9-10)^2}{10}'} + {'\dfrac{(11-10)^2}{10}'} + {'\dfrac{(13-10)^2}{10}'} + {'\dfrac{(7-10)^2}{10}'}$
+$\chi^2 = \dfrac{(8-10)^2}{10} + \dfrac{(12-10)^2}{10} + \dfrac{(9-10)^2}{10} + \dfrac{(11-10)^2}{10} + \dfrac{(13-10)^2}{10} + \dfrac{(7-10)^2}{10}$
 
-$= {'\dfrac{4+4+1+1+9+9}{10}'} = {'\dfrac{28}{10}'} = 2.8$.
+$= \dfrac{4+4+1+1+9+9}{10} = \dfrac{28}{10} = 2.8$.
 
 $\nu = 6 - 1 = 5$. Critical value: $\chi^2_{0.05,\,5} = 11.07$.
 
@@ -284,9 +284,9 @@ Row totals: 50, 50. Column totals: 45, 55. Grand total: 100.
 Expected: $E_{11} = 50(45)/100 = 22.5$, $E_{12} = 50(55)/100 = 27.5$, $E_{21} = 22.5$,
 $E_{22} = 27.5$.
 
-$\chi^2 = {'\dfrac{(30-22.5)^2}{22.5}'} + {'\dfrac{(20-27.5)^2}{27.5}'} + {'\dfrac{(15-22.5)^2}{22.5}'} + {'\dfrac{(35-27.5)^2}{27.5}'}$
+$\chi^2 = \dfrac{(30-22.5)^2}{22.5} + \dfrac{(20-27.5)^2}{27.5} + \dfrac{(15-22.5)^2}{22.5} + \dfrac{(35-27.5)^2}{27.5}$
 
-$= {'\dfrac{56.25}{22.5}'} + {'\dfrac{56.25}{27.5}'} + {'\dfrac{56.25}{22.5}'} + {'\dfrac{56.25}{27.5}'} = 2.5 + 2.045 + 2.5 + 2.045 = 9.09$.
+$= \dfrac{56.25}{22.5} + \dfrac{56.25}{27.5} + \dfrac{56.25}{22.5} + \dfrac{56.25}{27.5} = 2.5 + 2.045 + 2.5 + 2.045 = 9.09$.
 
 $\nu = (2-1)(2-1) = 1$. Critical value: $\chi^2_{0.05,\,1} = 3.841$.
 
@@ -323,13 +323,13 @@ The number of emails received per day was recorded over 80 days: 0: 15, 1: 25, 2
 
 <details>
 <summary>Solution 4</summary>
-Estimate $\lambda$: $\bar{r} = {'\dfrac{0(15)+1(25)+2(20)+3(12)+4(5)+5(3)}{80}'} = {'\dfrac{136}{80}'} = 1.7$.
+Estimate $\lambda$: $\bar{r} = \dfrac{0(15)+1(25)+2(20)+3(12)+4(5)+5(3)}{80} = \dfrac{136}{80} = 1.7$.
 
 Expected (Po(1.7)): $P(0) = e^{-1.7} \approx 0.1827 \to E = 14.62$,
 $P(1) = 1.7\,e^{-1.7} \approx 0.3106 \to E = 24.85$,
-$P(2) = {'\dfrac{1.7^2}{2}'}e^{-1.7} \approx 0.2640 \to E = 21.12$,
-$P(3) = {'\dfrac{1.7^3}{6}'}e^{-1.7} \approx 0.1496 \to E = 11.97$,
-$P(4) = {'\dfrac{1.7^4}{24}'}e^{-1.7} \approx 0.0636 \to E = 5.09$,
+$P(2) = \dfrac{1.7^2}{2}e^{-1.7} \approx 0.2640 \to E = 21.12$,
+$P(3) = \dfrac{1.7^3}{6}e^{-1.7} \approx 0.1496 \to E = 11.97$,
+$P(4) = \dfrac{1.7^4}{24}e^{-1.7} \approx 0.0636 \to E = 5.09$,
 $P(\geq 5) = 1 - 0.9705 \approx 0.0295 \to E = 2.36$.
 
 Merge $\geq 4$: $O = 8$, $E = 5.09+2.36 = 7.45$.
@@ -337,7 +337,7 @@ Merge $\geq 4$: $O = 8$, $E = 5.09+2.36 = 7.45$.
 After merging: categories 0, 1, 2, 3, $\geq 4$ with $O$: 15, 25, 20, 12, 8 and $E$: 14.62, 24.85,
 21.12, 11.97, 7.45.
 
-$\chi^2 = {'\dfrac{(15-20.49)^2}{20.49}'} + {'\dfrac{(25-27.92)^2}{27.92}'} + {'\dfrac{(20-19.02)^2}{19.02}'} + {'\dfrac{(20-12.58)^2}{12.58}'}$
+$\chi^2 = \dfrac{(15-20.49)^2}{20.49} + \dfrac{(25-27.92)^2}{27.92} + \dfrac{(20-19.02)^2}{19.02} + \dfrac{(20-12.58)^2}{12.58}$
 
 $\approx 1.471 + 0.305 + 0.050 + 4.378 = 6.204$.
 
@@ -379,10 +379,10 @@ Row totals: 100, 100. Column totals: 95, 105. Grand total: 200.
 Expected: $E_{11} = E_{12} = E_{21} = E_{22} = 50$.
 
 Uncorrected:
-$\chi^2 = {'\dfrac{(40-50)^2+(60-50)^2+(55-50)^2+(45-50)^2}{50}'} = {'\dfrac{100+100+25+25}{50}'} = 5.0$.
+$\chi^2 = \dfrac{(40-50)^2+(60-50)^2+(55-50)^2+(45-50)^2}{50} = \dfrac{100+100+25+25}{50} = 5.0$.
 
 Yates' corrected:
-$\chi^2_Y = {'\dfrac{(10-0.5)^2+(10-0.5)^2+(5-0.5)^2+(5-0.5)^2}{50}'} = {'\dfrac{90.25+90.25+20.25+20.25}{50}'} = 4.42$.
+$\chi^2_Y = \dfrac{(10-0.5)^2+(10-0.5)^2+(5-0.5)^2+(5-0.5)^2}{50} = \dfrac{90.25+90.25+20.25+20.25}{50} = 4.42$.
 
 $\nu = 1$. Critical value: $3.841$. Both reject $H_0$, but Yates' gives a more conservative result.
 
@@ -402,7 +402,7 @@ $H_0$: Uniform distribution. $H_1$: Not uniform.
 
 All $E_i = 20 \geq 5$.
 
-$\chi^2 = {'\dfrac{25+4+4+25+0}{20}'} = {'\dfrac{58}{20}'} = 2.9$.
+$\chi^2 = \dfrac{25+4+4+25+0}{20} = \dfrac{58}{20} = 2.9$.
 
 $\nu = 5 - 1 = 4$. Critical value at 1%: $\chi^2_{0.01,\,4} = 13.28$.
 
@@ -736,9 +736,9 @@ $H_0$: Fair die. $H_1$: Not fair.
 
 $E_i = 240/6 = 40$ for all faces.
 
-$\chi^2 = {'\dfrac{(52-40)^2 + (38-40)^2 + (40-40)^2 + (36-40)^2 + (44-40)^2 + (30-40)^2}{40}'}$
+$\chi^2 = \dfrac{(52-40)^2 + (38-40)^2 + (40-40)^2 + (36-40)^2 + (44-40)^2 + (30-40)^2}{40}$
 
-$= {'\dfrac{144 + 4 + 0 + 16 + 16 + 100}{40}'} = {'\dfrac{280}{40}'} = 7.0$.
+$= \dfrac{144 + 4 + 0 + 16 + 16 + 100}{40} = \dfrac{280}{40} = 7.0$.
 
 $\nu = 5$. Critical value: $\chi^2_{0.05,\,5} = 11.07$.
 
@@ -754,7 +754,7 @@ account for $6.1$ out of $7.0$ (87% of the statistic).
 
 $H_0$: Poisson. $H_1$: Not Poisson.
 
-$\bar{x} = {'\dfrac{0(12) + 1(30) + 2(35) + 3(25) + 4(12) + 5(6)}{120}'} = {'\dfrac{238}{120}'} \approx 1.983$.
+$\bar{x} = \dfrac{0(12) + 1(30) + 2(35) + 3(25) + 4(12) + 5(6)}{120} = \dfrac{238}{120} \approx 1.983$.
 
 Expected using Po(1.983): $P(0) = e^{-1.983} \approx 0.1379 \to E = 16.55$
 $P(1) = 1.983 \times 0.1379 \approx 0.2734 \to E = 32.81$
@@ -765,7 +765,7 @@ $P(\geq 5) = 1 - 0.9484 \approx 0.0516 \to E = 6.19$
 
 Merge $\geq 4$: $O = 18$, $E = 10.66 + 6.19 = 16.85$. All $E \geq 5$.
 
-$\chi^2 = {'\dfrac{(12-16.55)^2}{16.55}'} + {'\dfrac{(30-32.81)^2}{32.81}'} + {'\dfrac{(35-32.53)^2}{32.53}'} + {'\dfrac{(25-21.50)^2}{21.50}'} + {'\dfrac{(18-16.85)^2}{16.85}'}$
+$\chi^2 = \dfrac{(12-16.55)^2}{16.55} + \dfrac{(30-32.81)^2}{32.81} + \dfrac{(35-32.53)^2}{32.53} + \dfrac{(25-21.50)^2}{21.50} + \dfrac{(18-16.85)^2}{16.85}$
 
 $\approx 1.251 + 0.241 + 0.188 + 0.570 + 0.079 = 2.329$
 
@@ -799,10 +799,10 @@ $E_{41} = 50(115)/400 = 14.375$, $E_{42} = 13.75$, $E_{43} = 11.25$, $E_{44} = 1
 
 $$\chi^2 = \sum_{i=1}^{4}\sum_{j=1}^{4}\frac{(O_{ij} - E_{ij})^2}{E_{ij}}$$
 
-Key contributions: ${'\dfrac{(20-28.75)^2}{28.75}'} \approx 2.66$,
-${'\dfrac{(45-21.25)^2}{21.25}'} \approx 26.53$, ${'\dfrac{(10-26.5625)^2}{26.5625}'} \approx 10.33$,
-${'\dfrac{(45-35.9375)^2}{35.9375}'} \approx 2.28$, ${'\dfrac{(40-28.125)^2}{28.125}'} \approx 5.01$,
-${'\dfrac{(10-26.5625)^2}{26.5625}'} \approx 10.33$.
+Key contributions: $\dfrac{(20-28.75)^2}{28.75} \approx 2.66$,
+$\dfrac{(45-21.25)^2}{21.25} \approx 26.53$, $\dfrac{(10-26.5625)^2}{26.5625} \approx 10.33$,
+$\dfrac{(45-35.9375)^2}{35.9375} \approx 2.28$, $\dfrac{(40-28.125)^2}{28.125} \approx 5.01$,
+$\dfrac{(10-26.5625)^2}{26.5625} \approx 10.33$.
 
 $\chi^2 \approx 2.66 + 0.91 + 0.69 + 26.53 + 1.04 + 1.03 + 0.39 + 0.54 + 2.28 + 2.23 + 0.60 + 1.26 + 10.33 \approx 48.5$.
 
@@ -837,11 +837,11 @@ Expected: $E_{11} = 50(40)/100 = 20$, $E_{12} = 30$, $E_{21} = 20$, $E_{22} = 30
 
 Uncorrected:
 
-$\chi^2 = {'\dfrac{(10-20)^2}{20}'} + {'\dfrac{(40-30)^2}{30}'} + {'\dfrac{(30-20)^2}{20}'} + {'\dfrac{(20-30)^2}{30}'} = 5 + 3.333 + 5 + 3.333 = 16.67$.
+$\chi^2 = \dfrac{(10-20)^2}{20} + \dfrac{(40-30)^2}{30} + \dfrac{(30-20)^2}{20} + \dfrac{(20-30)^2}{30} = 5 + 3.333 + 5 + 3.333 = 16.67$.
 
 Yates' corrected:
 
-$\chi^2_Y = {'\dfrac{(10-0.5)^2}{20}'} + {'\dfrac{(10-0.5)^2}{30}'} + {'\dfrac{(10-0.5)^2}{20}'} + {'\dfrac{(10-0.5)^2}{30}'} = {'\dfrac{90.25}{20}'} + {'\dfrac{90.25}{30}'} + {'\dfrac{90.25}{20}'} + {'\dfrac{90.25}{30}'}$
+$\chi^2_Y = \dfrac{(10-0.5)^2}{20} + \dfrac{(10-0.5)^2}{30} + \dfrac{(10-0.5)^2}{20} + \dfrac{(10-0.5)^2}{30} = \dfrac{90.25}{20} + \dfrac{90.25}{30} + \dfrac{90.25}{20} + \dfrac{90.25}{30}$
 
 $= 4.5125 + 3.0083 + 4.5125 + 3.0083 = 15.04$.
 
@@ -911,9 +911,9 @@ Test at the 1% level whether hair colour and eye colour are independent.
 
 Row totals: Blonde 70, Brown 110, Black 120. Column totals: Blue 80, Brown 120, Green 100. Grand total: 300.
 
-Expected values: $E_{ij} = {'{'\dfrac{R_i \times C_j}{300}'}'}$.
+Expected values: $E_{ij} = {`\dfrac{R_i \times C_j}{300}`}$.
 
-$E_{11} = {'{'\dfrac{70 \times 80}{300}'}'} = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$, $E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
+$E_{11} = {`\dfrac{70 \times 80}{300}`} = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$, $E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
 
 $$\chi^2 = \frac{(40-18.67)^2}{18.67} + \frac{(20-28)^2}{28} + \frac{(10-23.33)^2}{23.33} + \frac{(30-29.33)^2}{29.33} + \frac{(60-44)^2}{44} + \frac{(20-36.67)^2}{36.67} + \frac{(10-32)^2}{32} + \frac{(40-48)^2}{48} + \frac{(70-40)^2}{40}$$
 
@@ -942,7 +942,7 @@ $E_{11} = E_{12} = 47.5$, $E_{21} = E_{22} = 47.5$.
 
 $$\chi^2 = \frac{(|40-47.5|-0.5)^2}{47.5} + \frac{(|60-47.5|-0.5)^2}{47.5} + \frac{(|55-47.5|-0.5)^2}{47.5} + \frac{(|45-47.5|-0.5)^2}{47.5}$$
 
-$= {'\dfrac{49 + 144 + 49 + 4}{47.5}'} = {'\dfrac{246}{47.5}'} \approx 5.18$.
+$= \dfrac{49 + 144 + 49 + 4}{47.5} = \dfrac{246}{47.5} \approx 5.18$.
 
 $\nu = 1$. Critical value at 5%: $3.84$.
 
@@ -970,9 +970,9 @@ Test at 5% whether the data follows a geometric distribution.
 
 **Solution.** $H_0$: data follows $\mathrm{Geo}(p)$.
 
-$\bar{x} = {'{'\dfrac{0 \times 90 + 1 \times 60 + 2 \times 30 + 3 \times 12 + 4 \times 8}{200}'}'} = {'\dfrac{196}{200}'} = 0.98$.
+$\bar{x} = {`\dfrac{0 \times 90 + 1 \times 60 + 2 \times 30 + 3 \times 12 + 4 \times 8}{200}`} = \dfrac{196}{200} = 0.98$.
 
-For $\mathrm{Geo}(p)$: $E(X) = {'\dfrac{1-p}{p}'} = 0.98 \implies p = {'\dfrac{1}{1.98}'} \approx 0.505$.
+For $\mathrm{Geo}(p)$: $E(X) = \dfrac{1-p}{p} = 0.98 \implies p = \dfrac{1}{1.98} \approx 0.505$.
 
 Expected: $P(X=k) = p(1-p)^k = 0.505 \times 0.495^k$.
 
@@ -1007,7 +1007,7 @@ Observed table:
 | North | 180 | 120 |
 | South | 90 | 110 |
 
-Expected: $E_{11} = {'{'\dfrac{270 \times 300}{500}'}'} = 162$, $E_{12} = 138$, $E_{21} = 108$, $E_{22} = 92$.
+Expected: $E_{11} = {`\dfrac{270 \times 300}{500}`} = 162$, $E_{12} = 138$, $E_{21} = 108$, $E_{22} = 92$.
 
 $$\chi^2 = \frac{324}{162} + \frac{324}{138} + \frac{324}{108} + \frac{324}{92} \approx 2.00 + 2.35 + 3.00 + 3.52 = 10.87$$
 
@@ -1021,7 +1021,7 @@ $10.87 > 3.84$: **reject** $H_0$. Significant association between region and tea
 
 | Pitfall | Correct Approach |
 |---|---|
-| Using observed frequencies instead of expected in the denominator | $\chi^2 = \sum {'\dfrac{(O-E)^2}{E}'}$, not $\sum {'\dfrac{(O-E)^2}{O}'}$ |
+| Using observed frequencies instead of expected in the denominator | $\chi^2 = \sum \dfrac{(O-E)^2}{E}$, not $\sum \dfrac{(O-E)^2}{O}$ |
 | Forgetting to merge classes with $E < 5$ | Always check expected frequencies first; merge adjacent classes |
 | Miscounting degrees of freedom | $\nu = (r-1)(c-1)$ for independence; $\nu = k - 1 - m$ for goodness-of-fit with $m$ estimated parameters |
 | Applying Yates' correction to tables larger than 2×2 | Yates' correction is only for 2×2 contingency tables |
@@ -1039,7 +1039,7 @@ A tetrahedral die is rolled 200 times. The observed frequencies for faces 1--4 a
 
 $H_0$: fair ($p = 0.25$). $E_i = 50$.
 
-$\chi^2 = {'\dfrac{144 + 144 + 25 + 25}{50}'} = {'\dfrac{338}{50}'} = 6.76$.
+$\chi^2 = \dfrac{144 + 144 + 25 + 25}{50} = \dfrac{338}{50} = 6.76$.
 
 $\nu = 3$. Critical value at 10%: $6.25$.
 
@@ -1108,7 +1108,7 @@ Hypothesis testing relies on understanding significance levels, $p$-values, and 
 | 1 | State $H_0$ and $H_1$ |
 | 2 | Calculate expected frequencies |
 | 3 | Merge classes if any $E_i < 5$ |
-| 4 | Compute $\chi^2 = \sum {'\dfrac{(O-E)^2}{E}'}$ |
+| 4 | Compute $\chi^2 = \sum \dfrac{(O-E)^2}{E}$ |
 | 5 | Determine degrees of freedom |
 | 6 | Compare with critical value or find $p$-value |
 | 7 | Conclude in context |
@@ -1128,7 +1128,7 @@ $H_0$: grades follow the specified distribution.
 
 Expected: A: 20, B: 60, C: 80, D: 40. All $\geq 5$.
 
-$\chi^2 = {'\dfrac{25}{20}'} + {'\dfrac{100}{60}'} + 0 + {'\dfrac{25}{40}'} = 1.25 + 1.667 + 0 + 0.625 = 3.542$.
+$\chi^2 = \dfrac{25}{20} + \dfrac{100}{60} + 0 + \dfrac{25}{40} = 1.25 + 1.667 + 0 + 0.625 = 3.542$.
 
 $\nu = 4 - 1 = 3$. Critical value at 5%: $7.82$.
 
@@ -1164,7 +1164,7 @@ Key properties:
 
 ### 14.2 Chi-squared confidence intervals for variance
 
-For a sample of size $n$ from $N(\mu, \sigma^2)$, the quantity ${'{'\dfrac{(n-1)s^2}{\sigma^2}'}'} \sim \chi^2_{n-1}$.
+For a sample of size $n$ from $N(\mu, \sigma^2)$, the quantity ${`\dfrac{(n-1)s^2}{\sigma^2}`} \sim \chi^2_{n-1}$.
 
 A $95\%$ confidence interval for $\sigma^2$ is:
 

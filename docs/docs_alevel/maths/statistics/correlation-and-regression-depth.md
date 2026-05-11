@@ -122,8 +122,8 @@ This indicates strong positive linear correlation.
 
 ### 2.5 Coding data
 
-When data values are large, coding simplifies calculations. Use $u = {'\dfrac{x - a}{c}'}$ and
-$v = {'\dfrac{y - b}{d}'}$ where $a, b$ are shift values and $c, d$ are scaling values.
+When data values are large, coding simplifies calculations. Use $u = \dfrac{x - a}{c}$ and
+$v = \dfrac{y - b}{d}$ where $a, b$ are shift values and $c, d$ are scaling values.
 
 The PMCC is unchanged by coding: $r_{xy} = r_{uv}$.
 
@@ -207,7 +207,7 @@ sum of squared residuals:
 
 $$S = \sum_{i=1}^{n}(y_i - a - bx_i)^2$$
 
-Setting ${'{'\dfrac{\partial S}{\partial a}'}'} = 0$ and ${'{'\dfrac{\partial S}{\partial b}'}'} = 0$:
+Setting ${`\dfrac{\partial S}{\partial a}`} = 0$ and ${`\dfrac{\partial S}{\partial b}`} = 0$:
 
 $$b = \frac{S_{xy}}{S_{xx}} = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}$$
 
@@ -228,7 +228,7 @@ confirming the line passes through the mean point.
 
 Using the data from Section 2.4:
 
-$b = {'\dfrac{S_{xy}}{S_{xx}}'} = {'\dfrac{28}{40}'} = 0.7$
+$b = \dfrac{S_{xy}}{S_{xx}} = \dfrac{28}{40} = 0.7$
 
 $a = \bar{y} - b\bar{x} = 5.6 - 0.7(6) = 5.6 - 4.2 = 1.4$
 
@@ -324,7 +324,7 @@ $S_{xy} = (1 - 3.5)(2 - 4.833) + \ldots = (-2.5)(-2.833) + (-1.5)(-1.833) + (-0.
 
 $= 7.083 + 2.750 - 0.083 - 0.417 + 3.250 + 7.917 = 20.5$
 
-$r = {'{'\dfrac{20.5}{\sqrt{17.5 \times 26.17}}'}'} = {'{'\dfrac{20.5}{\sqrt{457.98}}'}'} = {'\dfrac{20.5}{21.40}'} \approx 0.958$
+$r = {`\dfrac{20.5}{\sqrt{17.5 \times 26.17}}`} = {`\dfrac{20.5}{\sqrt{457.98}}`} = \dfrac{20.5}{21.40} \approx 0.958$
 
 </details>
 
@@ -336,7 +336,7 @@ when $x = 7$.
 <details>
 <summary>Solution</summary>
 
-$b = {'\dfrac{20.5}{17.5}'} = 1.171$, $a = 4.833 - 1.171(3.5) = 4.833 - 4.100 = 0.734$.
+$b = \dfrac{20.5}{17.5} = 1.171$, $a = 4.833 - 1.171(3.5) = 4.833 - 4.100 = 0.734$.
 
 $y = 0.734 + 1.171x$.
 
@@ -360,6 +360,6 @@ $d_i$: -2, 1, -1, 2, -1, 1, -1, 1.
 
 $\sum d_i^2 = 4 + 1 + 1 + 4 + 1 + 1 + 1 + 1 = 14$.
 
-$r_s = 1 - {'{'\dfrac{6 \times 14}{8 \times 63}'}'} = 1 - {'\dfrac{84}{504}'} = 1 - 0.1667 = 0.833$.
+$r_s = 1 - {`\dfrac{6 \times 14}{8 \times 63}`} = 1 - \dfrac{84}{504} = 1 - 0.1667 = 0.833$.
 
 </details>

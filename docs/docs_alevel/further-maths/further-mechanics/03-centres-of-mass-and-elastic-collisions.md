@@ -48,11 +48,11 @@ The denominator is the total area of the lamina: $A = \displaystyle\int_a^b f(x)
 
 Consider a triangle with vertices at $(0, 0)$, $(b, 0)$, and $(c, h)$.
 
-The line from $(0, 0)$ to $(c, h)$ is $y = {'\dfrac{h}{c}'}\,x$ and the line from $(b, 0)$ to $(c, h)$
-is $y = {'\dfrac{h}{c - b}'}(x - b)$.
+The line from $(0, 0)$ to $(c, h)$ is $y = \dfrac{h}{c}\,x$ and the line from $(b, 0)$ to $(c, h)$
+is $y = \dfrac{h}{c - b}(x - b)$.
 
 For simplicity, take a right triangle with vertices $(0, 0)$, $(b, 0)$, $(0, h)$, where
-$f(x) = h - {'\dfrac{h}{b}'}x = h\!\left(1 - {'\dfrac{x}{b}'}\right)$.
+$f(x) = h - \dfrac{h}{b}x = h\!\left(1 - \dfrac{x}{b}\right)$.
 
 $$\bar{x} = \frac{\displaystyle\int_0^b x \cdot h\!\left(1 - \frac{x}{b}\right)dx}{\displaystyle\int_0^b h\!\left(1 - \frac{x}{b}\right)dx}$$
 
@@ -64,9 +64,9 @@ $\displaystyle h\int_0^b \left(1 - \frac{x}{b}\right)dx = h\left[x - \frac{x^2}{
 
 $$\bar{x} = \frac{hb^2/6}{hb/2} = \frac{b}{3}$$
 
-$$\bar{y} = \frac{\displaystyle\int_0^b \frac{1}{2}h^2\!\left(1 - \frac{x}{b}\right)^2 dx}{hb/2} = \frac{{'\dfrac{h^2}{2}'}\displaystyle\int_0^b \left(1 - \frac{2x}{b} + \frac{x^2}{b^2}\right)dx}{hb/2}$$
+$$\bar{y} = \frac{\displaystyle\int_0^b \frac{1}{2}h^2\!\left(1 - \frac{x}{b}\right)^2 dx}{hb/2} = \frac{\dfrac{h^2}{2}\displaystyle\int_0^b \left(1 - \frac{2x}{b} + \frac{x^2}{b^2}\right)dx}{hb/2}$$
 
-$$= \frac{{'\dfrac{h^2}{2}'}\!\left[b - b + {'\dfrac{b}{3}'}\right]}{hb/2} = \frac{h^2 b / 6}{hb/2} = \frac{h}{3}$$
+$$= \frac{\dfrac{h^2}{2}\!\left[b - b + \dfrac{b}{3}\right]}{hb/2} = \frac{h^2 b / 6}{hb/2} = \frac{h}{3}$$
 
 For a general triangle with vertices $(x_1, y_1), (x_2, y_2), (x_3, y_3)$:
 
@@ -82,7 +82,7 @@ $\square$
 
 $$\boxed{\bar{x} = \frac{x_1 + x_2 + x_3}{3}, \qquad \bar{y} = \frac{y_1 + y_2 + y_3}{3}}$$
 
-For a triangle of base $b$ and height $h$ with base on the $x$-axis: $\bar{y} = {'\dfrac{h}{3}'}$.
+For a triangle of base $b$ and height $h$ with base on the $x$-axis: $\bar{y} = \dfrac{h}{3}$.
 
 ### 2.2 Semicircular lamina
 
@@ -90,7 +90,7 @@ For a uniform semicircular lamina of radius $r$:
 
 $$\boxed{\bar{y} = \frac{4r}{3\pi}}$$
 
-The centre of mass lies on the axis of symmetry, a distance ${'{'\dfrac{4r}{3\pi}'}'}$ from the diameter.
+The centre of mass lies on the axis of symmetry, a distance ${`\dfrac{4r}{3\pi}`}$ from the diameter.
 
 ### 2.3 Circular sector
 
@@ -100,7 +100,7 @@ the centre):
 $$\boxed{\bar{x} = \frac{2r\sin\alpha}{3\alpha}}$$
 
 This lies on the axis of symmetry. For a semicircle ($\alpha = \pi/2$):
-$\bar{x} = {'{'\dfrac{2r}{3(\pi/2)}'}'} = {'{'\dfrac{4r}{3\pi}'}'}$, consistent with Section 2.2.
+$\bar{x} = {`\dfrac{2r}{3(\pi/2)}`} = {`\dfrac{4r}{3\pi}`}$, consistent with Section 2.2.
 
 ### 2.4 Circular arc
 
@@ -129,8 +129,8 @@ edge. Find the centre of mass of the remaining lamina.
 
 The square has area $(4a)^2 = 16a^2$ and centre of mass at $(2a, 2a)$.
 
-The semicircle has area ${'\dfrac{1}{2}'}\pi(2a)^2 = 2\pi a^2$ and centre of mass at
-$(2a, 2a + {'{'\dfrac{4(2a)}{3\pi}'}'}) = (2a, 2a + {'{'\dfrac{8a}{3\pi}'}'})$, assuming the semicircle is removed
+The semicircle has area $\dfrac{1}{2}\pi(2a)^2 = 2\pi a^2$ and centre of mass at
+$(2a, 2a + {`\dfrac{4(2a)}{3\pi}`}) = (2a, 2a + {`\dfrac{8a}{3\pi}`})$, assuming the semicircle is removed
 from the top edge.
 
 Using negative mass for the semicircle:
@@ -247,14 +247,14 @@ The loss in kinetic energy is:
 $$\Delta KE = \left(\frac{1}{2}m_1 u_1^2 + \frac{1}{2}m_2 u_2^2\right) - \left(\frac{1}{2}m_1 v_1^2 + \frac{1}{2}m_2 v_2^2\right)$$
 
 Using the solutions for $v_1$ and $v_2$ and defining the reduced mass
-$\mu = {'\dfrac{m_1 m_2}{m_1 + m_2}'}$:
+$\mu = \dfrac{m_1 m_2}{m_1 + m_2}$:
 
 $$\boxed{\Delta KE = \frac{1}{2}\mu(u_1 - u_2)^2(1 - e^2)}$$
 
-where $\mu = {'\dfrac{m_1 m_2}{m_1 + m_2}'}$ is the _reduced mass_.
+where $\mu = \dfrac{m_1 m_2}{m_1 + m_2}$ is the _reduced mass_.
 
 When $e = 1$: $\Delta KE = 0$ (perfectly elastic, no energy loss). ✓ When $e = 0$:
-$\Delta KE = {'\dfrac{1}{2}'}\mu(u_1 - u_2)^2$ (maximum energy loss for coalescence). ✓
+$\Delta KE = \dfrac{1}{2}\mu(u_1 - u_2)^2$ (maximum energy loss for coalescence). ✓
 
 $\square$
 
@@ -314,7 +314,7 @@ Angle of incidence: $\alpha = \arctan(4/6) = \arctan(2/3)$.
 
 Angle of reflection: $\beta = \arctan(4/3)$.
 
-Note: $\tan\beta = 4/3 = {'{'\dfrac{\tan\alpha}{e}'}'} = {'\dfrac{2/3}{0.5}'} = 4/3$. ✓
+Note: $\tan\beta = 4/3 = {`\dfrac{\tan\alpha}{e}`} = \dfrac{2/3}{0.5} = 4/3$. ✓
 
 </details>
 
@@ -343,11 +343,11 @@ A uniform triangular lamina has vertices at $(0, 0)$, $(6, 0)$, and $(2, 4)$. Fi
 
 <details>
 <summary>Solution 1</summary>
-$\bar{x} = {'\dfrac{0 + 6 + 2}{3}'} = {'\dfrac{8}{3}'}$.
+$\bar{x} = \dfrac{0 + 6 + 2}{3} = \dfrac{8}{3}$.
 
-$\bar{y} = {'\dfrac{0 + 0 + 4}{3}'} = {'\dfrac{4}{3}'}$.
+$\bar{y} = \dfrac{0 + 0 + 4}{3} = \dfrac{4}{3}$.
 
-Centre of mass: $\left({'\dfrac{8}{3}'}, {'\dfrac{4}{3}'}\right)$.
+Centre of mass: $\left(\dfrac{8}{3}, \dfrac{4}{3}\right)$.
 
 **If you get this wrong, revise:** [Uniform triangular lamina](#21-uniform-triangular-lamina) —
 Section 2.1.
@@ -372,9 +372,9 @@ $3v_1 + 5(v_1 + 5) = 14 \implies 8v_1 = -11 \implies v_1 = -1.375\,\mathrm{m s}^
 
 $v_2 = -1.375 + 5 = 3.625\,\mathrm{m s}^{-1}$.
 
-$\mu = {'{'\dfrac{3 \times 5}{8}'}'} = {'\dfrac{15}{8}'}$.
+$\mu = {`\dfrac{3 \times 5}{8}`} = \dfrac{15}{8}$.
 
-$\Delta KE = {'\dfrac{1}{2}'} \times {'\dfrac{15}{8}'} \times (10)^2 \times (1 - 0.25) = {'\dfrac{15}{16}'} \times 100 \times 0.75 = {'\dfrac{1125}{16}'} \approx 70.3\,\mathrm{J}$.
+$\Delta KE = \dfrac{1}{2} \times \dfrac{15}{8} \times (10)^2 \times (1 - 0.25) = \dfrac{15}{16} \times 100 \times 0.75 = \dfrac{1125}{16} \approx 70.3\,\mathrm{J}$.
 
 **If you get this wrong, revise:**
 [Direct collision of two particles](#53-direct-collision-of-two-particles) — Section 5.3.
@@ -388,9 +388,9 @@ Find the centre of mass of a uniform semicircular lamina of radius $5\,\mathrm{c
 
 <details>
 <summary>Solution 3</summary>
-$\bar{y} = {'{'\dfrac{4r}{3\pi}'}'} = {'{'\dfrac{4 \times 5}{3\pi}'}'} = {'{'\dfrac{20}{3\pi}'}'} \approx 2.12\,\mathrm{cm}$.
+$\bar{y} = {`\dfrac{4r}{3\pi}`} = {`\dfrac{4 \times 5}{3\pi}`} = {`\dfrac{20}{3\pi}`} \approx 2.12\,\mathrm{cm}$.
 
-The centre of mass lies on the axis of symmetry at a distance ${'{'\dfrac{20}{3\pi}'}'}\,\mathrm{cm}$ from
+The centre of mass lies on the axis of symmetry at a distance ${`\dfrac{20}{3\pi}`}\,\mathrm{cm}$ from
 the diameter.
 
 **If you get this wrong, revise:** [Semicircular lamina](#22-semicircular-lamina) — Section 2.2.
@@ -412,7 +412,7 @@ Since both centres of mass coincide at $(3a, 2a)$, the composite lamina also has
 at $(3a, 2a)$ by symmetry.
 
 More formally:
-$\bar{x} = {'{'\dfrac{24a^2 \times 3a - \pi a^2 \times 3a}{24a^2 - \pi a^2}'}'} = {'{'\dfrac{3a(24 - \pi)}{24 - \pi}'}'} = 3a$.
+$\bar{x} = {`\dfrac{24a^2 \times 3a - \pi a^2 \times 3a}{24a^2 - \pi a^2}`} = {`\dfrac{3a(24 - \pi)}{24 - \pi}`} = 3a$.
 
 Similarly $\bar{y} = 2a$.
 
@@ -439,7 +439,7 @@ $v_x = 5$ (unchanged).
 Speed $= \sqrt{25 + 48} = \sqrt{73} \approx 8.54\,\mathrm{m s}^{-1}$.
 
 Angle to horizontal:
-$\theta = \arctan\!\left({'{'\dfrac{4\sqrt{3}}{5}'}'}\right) = \arctan(1.386) \approx 54.2^\circ$.
+$\theta = \arctan\!\left({`\dfrac{4\sqrt{3}}{5}`}\right) = \arctan(1.386) \approx 54.2^\circ$.
 
 **If you get this wrong, revise:** [Sphere hitting a smooth wall](#71-sphere-hitting-a-smooth-wall)
 — Section 7.1.
@@ -459,9 +459,9 @@ Rod 3: from $(4, 0)$ to $(0, 3)$, length $= \sqrt{16 + 9} = 5$, midpoint $(2, 1.
 
 Total length $= 4 + 3 + 5 = 12$.
 
-$\bar{x} = {'{'\dfrac{4 \times 2 + 3 \times 0 + 5 \times 2}{12}'}'} = {'\dfrac{8 + 0 + 10}{12}'} = {'\dfrac{18}{12}'} = 1.5$.
+$\bar{x} = {`\dfrac{4 \times 2 + 3 \times 0 + 5 \times 2}{12}`} = \dfrac{8 + 0 + 10}{12} = \dfrac{18}{12} = 1.5$.
 
-$\bar{y} = {'{'\dfrac{4 \times 0 + 3 \times 1.5 + 5 \times 1.5}{12}'}'} = {'\dfrac{0 + 4.5 + 7.5}{12}'} = {'\dfrac{12}{12}'} = 1$.
+$\bar{y} = {`\dfrac{4 \times 0 + 3 \times 1.5 + 5 \times 1.5}{12}`} = \dfrac{0 + 4.5 + 7.5}{12} = \dfrac{12}{12} = 1$.
 
 Centre of mass: $(1.5, 1)$.
 
@@ -472,12 +472,12 @@ Centre of mass: $(1.5, 1)$.
 
 <details>
 <summary>Problem 7</summary>
-Two smooth spheres $A$ (mass $2\,\mathrm{kg}$) and $B$ (mass $3\,\mathrm{kg}$) collide. Before collision, $A$ has velocity $(3\mathbf\{i{'\}'} + 2\mathbf\{j{'\}'})\,\mathrm{m s}^{-1}$ and $B$ has velocity $(\mathbf\{i{'\}'} - \mathbf\{j{'\}'})\,\mathrm{m s}^{-1}$. The line of centres at impact is parallel to $\mathbf\{i{'\}'}$. The coefficient of restitution is $e = 0.6$. Find the velocities after collision.
+Two smooth spheres $A$ (mass $2\,\mathrm{kg}$) and $B$ (mass $3\,\mathrm{kg}$) collide. Before collision, $A$ has velocity $(3\mathbf{i} + 2\mathbf{j})\,\mathrm{m s}^{-1}$ and $B$ has velocity $(\mathbf{i} - \mathbf{j})\,\mathrm{m s}^{-1}$. The line of centres at impact is parallel to $\mathbf{i}$. The coefficient of restitution is $e = 0.6$. Find the velocities after collision.
 </details>
 
 <details>
 <summary>Solution 7</summary>
-The normal direction is $\mathbf\{i{'\}'}$ and the tangential direction is $\mathbf\{j{'\}'}$.
+The normal direction is $\mathbf{i}$ and the tangential direction is $\mathbf{j}$.
 
 Tangential components are unchanged: $v_{Ay} = 2$, $v_{By} = -1$.
 
@@ -491,9 +491,9 @@ From (i): $2v_{An} + 3(v_{An} + 1.2) = 9 \implies 5v_{An} + 3.6 = 9 \implies v_{
 
 $v_{Bn} = 1.08 + 1.2 = 2.28$.
 
-Velocity of $A$: $(1.08\mathbf\{i{'\}'} + 2\mathbf\{j{'\}'})\,\mathrm{m s}^{-1}$.
+Velocity of $A$: $(1.08\mathbf{i} + 2\mathbf{j})\,\mathrm{m s}^{-1}$.
 
-Velocity of $B$: $(2.28\mathbf\{i{'\}'} - \mathbf\{j{'\}'})\,\mathrm{m s}^{-1}$.
+Velocity of $B$: $(2.28\mathbf{i} - \mathbf{j})\,\mathrm{m s}^{-1}$.
 
 **If you get this wrong, revise:**
 [Two spheres in oblique collision](#72-two-spheres-in-oblique-collision) — Section 7.2.
@@ -510,14 +510,14 @@ A uniform lamina is made from a rectangle $ABCD$ where $AB = 8\,\mathrm{cm}$ and
 Rectangle $ABCD$: area $= 48$, centre of mass at $(4, 3)$.
 
 Triangle $BCE$: vertices $B(8, 0)$, $C(8, 6)$, $E(4, 6)$. Area
-$= {'\dfrac{1}{2}'} \times 4 \times 6 = 12$. Centre of mass:
-$\bar{x} = {'\dfrac{8 + 8 + 4}{3}'} = {'\dfrac{20}{3}'}$, $\bar{y} = {'\dfrac{0 + 6 + 6}{3}'} = 4$.
+$= \dfrac{1}{2} \times 4 \times 6 = 12$. Centre of mass:
+$\bar{x} = \dfrac{8 + 8 + 4}{3} = \dfrac{20}{3}$, $\bar{y} = \dfrac{0 + 6 + 6}{3} = 4$.
 
 Remaining area $= 48 - 12 = 36$.
 
-$\bar{x} = {'{'\dfrac{48 \times 4 - 12 \times 20/3}{36}'}'} = {'\dfrac{192 - 80}{36}'} = {'\dfrac{112}{36}'} = {'\dfrac{28}{9}'} \approx 3.11\,\mathrm{cm}$.
+$\bar{x} = {`\dfrac{48 \times 4 - 12 \times 20/3}{36}`} = \dfrac{192 - 80}{36} = \dfrac{112}{36} = \dfrac{28}{9} \approx 3.11\,\mathrm{cm}$.
 
-$\bar{y} = {'{'\dfrac{48 \times 3 - 12 \times 4}{36}'}'} = {'\dfrac{144 - 48}{36}'} = {'\dfrac{96}{36}'} = {'\dfrac{8}{3}'} \approx 2.67\,\mathrm{cm}$.
+$\bar{y} = {`\dfrac{48 \times 3 - 12 \times 4}{36}`} = \dfrac{144 - 48}{36} = \dfrac{96}{36} = \dfrac{8}{3} \approx 2.67\,\mathrm{cm}$.
 
 **If you get this wrong, revise:**
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.
@@ -540,11 +540,11 @@ After first impact: $v_x = u\cos\theta$, $v_{y}' = eu\sin\theta$ (upward).
 Speed after bounce $= u\sqrt{\cos^2\theta + e^2\sin^2\theta}$.
 
 Angle to horizontal:
-$\phi = \arctan\!\left({'{'\dfrac{e\sin\theta}{\cos\theta}'}'}\right) = \arctan(e\tan\theta)$.
+$\phi = \arctan\!\left({`\dfrac{e\sin\theta}{\cos\theta}`}\right) = \arctan(e\tan\theta)$.
 
-Time between first and second bounce: $T = {'{'\dfrac{2eu\sin\theta}{g}'}'}$.
+Time between first and second bounce: $T = {`\dfrac{2eu\sin\theta}{g}`}$.
 
-Horizontal distance $= u\cos\theta \times {'{'\dfrac{2eu\sin\theta}{g}'}'} = {'{'\dfrac{eu^2\sin 2\theta}{g}'}'}$.
+Horizontal distance $= u\cos\theta \times {`\dfrac{2eu\sin\theta}{g}`} = {`\dfrac{eu^2\sin 2\theta}{g}`}$.
 
 **If you get this wrong, revise:** [Sphere hitting a smooth wall](#71-sphere-hitting-a-smooth-wall)
 — Section 7.1.
@@ -558,16 +558,16 @@ A uniform composite body is formed from a solid hemisphere of radius $r$ and a s
 
 <details>
 <summary>Solution 10</summary>
-Hemisphere: volume $= {'\dfrac{2}{3}'}\pi r^3$, centre of mass at distance ${'\dfrac{3r}{8}'}$ from the flat
+Hemisphere: volume $= \dfrac{2}{3}\pi r^3$, centre of mass at distance $\dfrac{3r}{8}$ from the flat
 face.
 
-Cylinder: volume $= \pi r^2 h$, centre of mass at distance ${'\dfrac{h}{2}'}$ from the hemisphere end.
+Cylinder: volume $= \pi r^2 h$, centre of mass at distance $\dfrac{h}{2}$ from the hemisphere end.
 
-Total volume $= {'\dfrac{2}{3}'}\pi r^3 + \pi r^2 h = \pi r^2\!\left({'\dfrac{2r}{3}'} + h\right)$.
+Total volume $= \dfrac{2}{3}\pi r^3 + \pi r^2 h = \pi r^2\!\left(\dfrac{2r}{3} + h\right)$.
 
-$$\bar{x} = \frac{{'\dfrac{2}{3}'}\pi r^3 \times {'\dfrac{3r}{8}'} + \pi r^2 h \times {'\dfrac{h}{2}'}}{\pi r^2\!\left({'\dfrac{2r}{3}'} + h\right)} = \frac{{'{'\dfrac{\pi r^4}{4}'}'} + {'{'\dfrac{\pi r^2 h^2}{2}'}'}}{\pi r^2\!\left({'\dfrac{2r}{3}'} + h\right)}$$
+$$\bar{x} = \frac{\dfrac{2}{3}\pi r^3 \times \dfrac{3r}{8} + \pi r^2 h \times \dfrac{h}{2}}{\pi r^2\!\left(\dfrac{2r}{3} + h\right)} = \frac{{`\dfrac{\pi r^4}{4}`} + {`\dfrac{\pi r^2 h^2}{2}`}}{\pi r^2\!\left(\dfrac{2r}{3} + h\right)}$$
 
-$$= \frac{r^2/4 + h^2/2}{2r/3 + h} = \frac{r^2 + 2h^2}{4\!\left({'\dfrac{2r}{3}'} + h\right)} = \frac{3(r^2 + 2h^2)}{4(2r + 3h)}$$
+$$= \frac{r^2/4 + h^2/2}{2r/3 + h} = \frac{r^2 + 2h^2}{4\!\left(\dfrac{2r}{3} + h\right)} = \frac{3(r^2 + 2h^2)}{4(2r + 3h)}$$
 
 **If you get this wrong, revise:**
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.
@@ -580,11 +580,11 @@ $$= \frac{r^2/4 + h^2/2}{2r/3 + h} = \frac{r^2 + 2h^2}{4\!\left({'\dfrac{2r}{3}'
 
 ### Example 9.1: Oblique collision between two spheres
 
-**Problem.** Two smooth spheres $A$ and $B$ have equal mass $m$. Before collision, $A$ moves with velocity $(5\mathbf\{i{'\}'} + 3\mathbf\{j{'\}'})$ m/s and $B$ is stationary. The line of centres at impact makes angle $\alpha$ with $\mathbf\{i{'\}'}$, where $\tan\alpha = 3/4$. The coefficient of restitution is $e = 1/2$. Find the velocities after collision.
+**Problem.** Two smooth spheres $A$ and $B$ have equal mass $m$. Before collision, $A$ moves with velocity $(5\mathbf{i} + 3\mathbf{j})$ m/s and $B$ is stationary. The line of centres at impact makes angle $\alpha$ with $\mathbf{i}$, where $\tan\alpha = 3/4$. The coefficient of restitution is $e = 1/2$. Find the velocities after collision.
 
-**Solution.** The normal direction is along the line of centres: $\hat{\mathbf\{n{'\}'}} = {'\dfrac{4}{5}'}\mathbf\{i{'\}'} + {'\dfrac{3}{5}'}\mathbf\{j{'\}'}$.
+**Solution.** The normal direction is along the line of centres: $\hat{\mathbf{n}} = \dfrac{4}{5}\mathbf{i} + \dfrac{3}{5}\mathbf{j}$.
 
-The tangential direction: $\hat{\mathbf\{t{'\}'}} = -{'\dfrac{3}{5}'}\mathbf\{i{'\}'} + {'\dfrac{4}{5}'}\mathbf\{j{'\}'}$.
+The tangential direction: $\hat{\mathbf{t}} = -\dfrac{3}{5}\mathbf{i} + \dfrac{4}{5}\mathbf{j}$.
 
 Resolving $A$'s velocity: $u_{An} = (5)(4/5) + (3)(3/5) = 4 + 9/5 = 29/5$.
 
@@ -602,13 +602,13 @@ From (i) and (ii): $2v_{Bn} = 29/5 + 29/10 = 87/10 \implies v_{Bn} = 87/20$.
 
 $v_{An} = 29/5 - 87/20 = 116/20 - 87/20 = 29/20$.
 
-$\mathbf\{v{'\}'}_A = v_{An}\hat{\mathbf\{n{'\}'}} + v_{At}\hat{\mathbf\{t{'\}'}} = {'\dfrac{29}{20}'}\!\left({'\dfrac{4}{5}'}\mathbf\{i{'\}'} + {'\dfrac{3}{5}'}\mathbf\{j{'\}'}\right) + {'\dfrac{-3}{5}'}\!\left(-{'\dfrac{3}{5}'}\mathbf\{i{'\}'} + {'\dfrac{4}{5}'}\mathbf\{j{'\}'}\right)$
+$\mathbf{v}_A = v_{An}\hat{\mathbf{n}} + v_{At}\hat{\mathbf{t}} = \dfrac{29}{20}\!\left(\dfrac{4}{5}\mathbf{i} + \dfrac{3}{5}\mathbf{j}\right) + \dfrac{-3}{5}\!\left(-\dfrac{3}{5}\mathbf{i} + \dfrac{4}{5}\mathbf{j}\right)$
 
-$= \left({'\dfrac{116}{100}'} + {'\dfrac{9}{25}'}\right)\mathbf\{i{'\}'} + \left({'\dfrac{87}{100}'} - {'\dfrac{12}{25}'}\right)\mathbf\{j{'\}'}$
+$= \left(\dfrac{116}{100} + \dfrac{9}{25}\right)\mathbf{i} + \left(\dfrac{87}{100} - \dfrac{12}{25}\right)\mathbf{j}$
 
-$= \left({'\dfrac{29}{25}'} + {'\dfrac{9}{25}'}\right)\mathbf\{i{'\}'} + \left({'\dfrac{87}{100}'} - {'\dfrac{48}{100}'}\right)\mathbf\{j{'\}'} = {'\dfrac{38}{25}'}\mathbf\{i{'\}'} + {'\dfrac{39}{100}'}\mathbf\{j{'\}'}$
+$= \left(\dfrac{29}{25} + \dfrac{9}{25}\right)\mathbf{i} + \left(\dfrac{87}{100} - \dfrac{48}{100}\right)\mathbf{j} = \dfrac{38}{25}\mathbf{i} + \dfrac{39}{100}\mathbf{j}$
 
-$\mathbf\{v{'\}'}_B = {'\dfrac{87}{20}'}\!\left({'\dfrac{4}{5}'}\mathbf\{i{'\}'} + {'\dfrac{3}{5}'}\mathbf\{j{'\}'}\right) = {'\dfrac{87}{25}'}\mathbf\{i{'\}'} + {'\dfrac{261}{100}'}\mathbf\{j{'\}'}$
+$\mathbf{v}_B = \dfrac{87}{20}\!\left(\dfrac{4}{5}\mathbf{i} + \dfrac{3}{5}\mathbf{j}\right) = \dfrac{87}{25}\mathbf{i} + \dfrac{261}{100}\mathbf{j}$
 
 ### Example 9.2: Composite lamina with a triangular hole
 
@@ -616,7 +616,7 @@ $\mathbf\{v{'\}'}_B = {'\dfrac{87}{20}'}\!\left({'\dfrac{4}{5}'}\mathbf\{i{'\}'}
 
 **Solution.** Square: area $= 36a^2$, centre of mass at $(3a, 3a)$.
 
-Equilateral triangle with side $2a$: area $= {'{'\dfrac{\sqrt{3}}{4}'}'}(2a)^2 = \sqrt{3}\,a^2$.
+Equilateral triangle with side $2a$: area $= {`\dfrac{\sqrt{3}}{4}`}(2a)^2 = \sqrt{3}\,a^2$.
 
 Height $= \sqrt{3}\,a$. The triangle's centroid is at distance $\sqrt{3}\,a/3$ from the base.
 
@@ -646,11 +646,11 @@ The ball follows a parabolic trajectory after bouncing. By the reversibility of 
 
 **Solution.** Place the cone with its vertex at the origin and axis along the $z$-axis, extending to $z = h$.
 
-At height $z$, the cross-section is a disc of radius ${'\dfrac{rz}{h}'}$, with volume $dV = \pi\!\left({'\dfrac{rz}{h}'}\right)^2 dz$.
+At height $z$, the cross-section is a disc of radius $\dfrac{rz}{h}$, with volume $dV = \pi\!\left(\dfrac{rz}{h}\right)^2 dz$.
 
 $$\bar{z} = \frac{\displaystyle\int_0^h z \cdot \pi r^2 z^2/h^2\,dz}{\displaystyle\int_0^h \pi r^2 z^2/h^2\,dz} = \frac{h^4/4}{h^3/3} = \frac{3h}{4}$$
 
-The centre of mass is at distance ${'\dfrac{3h}{4}'}$ from the vertex (or ${'\dfrac{h}{4}'}$ from the base).
+The centre of mass is at distance $\dfrac{3h}{4}$ from the vertex (or $\dfrac{h}{4}$ from the base).
 
 ### Example 9.5: Three-body collision problem
 
@@ -711,7 +711,7 @@ $$\bar{x} = \frac{(\pi a^2/2)(0) - (\pi a^2/4)(a/2)}{\pi a^2/4} = \frac{-\pi a^3
 
 $$\bar{y} = \frac{(\pi a^2/2)(4a/(3\pi)) - (\pi a^2/4)(0)}{\pi a^2/4} = \frac{2a^2/3}{\pi a^2/4} = \frac{8a}{3\pi}$$
 
-Centre of mass: $\left(-{'\dfrac{a}{2}'}, {'{'\dfrac{8a}{3\pi}'}'}\right)$.
+Centre of mass: $\left(-\dfrac{a}{2}, {`\dfrac{8a}{3\pi}`}\right)$.
 
 </details>
 
@@ -778,9 +778,9 @@ $$\frac{\pi r^4}{4} = \frac{\pi r^2 h^2}{12} \implies 3r^2 = h^2 \implies h = r\
 
 **Problem.** A uniform lamina consists of a semicircle of radius $a$ attached to a rectangle of width $2a$ and height $h$. The flat side of the semicircle coincides with one edge of the rectangle. Find the distance of the centre of mass from the base of the rectangle.
 
-**Solution.** Semicircle: area $= {'{'\dfrac{\pi a^2}{2}'}'}$, centre of mass at ${'{'\dfrac{4a}{3\pi}'}'}$ above the diameter.
+**Solution.** Semicircle: area $= {`\dfrac{\pi a^2}{2}`}$, centre of mass at ${`\dfrac{4a}{3\pi}`}$ above the diameter.
 
-Rectangle: area $= 2ah$, centre of mass at ${'\dfrac{h}{2}'}$ above the base.
+Rectangle: area $= 2ah$, centre of mass at $\dfrac{h}{2}$ above the base.
 
 Taking the base as datum:
 
@@ -794,29 +794,29 @@ $$= \frac{\frac{\pi a^2 h}{2} + \frac{2a^3}{3} + ah^2}{\frac{\pi a^2}{2} + 2ah}$
 
 **Solution.** Conservation of momentum (along original direction): $m \times 4 = mv_1\cos 60° + 2mv_2\cos\theta$.
 
-$4 = {'\dfrac{v_1}{2}'} + 2v_2\cos\theta$ ... (1)
+$4 = \dfrac{v_1}{2} + 2v_2\cos\theta$ ... (1)
 
 Perpendicular to original direction: $0 = mv_1\sin 60° - 2mv_2\sin\theta$.
 
 $v_1\sin 60° = 2v_2\sin\theta$ ... (2)
 
-Conservation of KE: ${'\dfrac{1}{2}'}m \times 16 = {'\dfrac{1}{2}'}mv_1^2 + {'\dfrac{1}{2}'}(2m)v_2^2$.
+Conservation of KE: $\dfrac{1}{2}m \times 16 = \dfrac{1}{2}mv_1^2 + \dfrac{1}{2}(2m)v_2^2$.
 
 $16 = v_1^2 + 2v_2^2$ ... (3)
 
-From (2): $v_2\sin\theta = {'{'\dfrac{v_1\sqrt{3}}{4}'}'}$. From (1): $v_2\cos\theta = 2 - {'\dfrac{v_1}{4}'}$.
+From (2): $v_2\sin\theta = {`\dfrac{v_1\sqrt{3}}{4}`}$. From (1): $v_2\cos\theta = 2 - \dfrac{v_1}{4}$.
 
-Squaring and adding: $v_2^2 = {'\dfrac{3v_1^2}{16}'} + 4 - {'\dfrac{v_1}{2}'} + {'\dfrac{v_1^2}{16}'} = {'\dfrac{v_1^2}{4}'} - {'\dfrac{v_1}{2}'} + 4$.
+Squaring and adding: $v_2^2 = \dfrac{3v_1^2}{16} + 4 - \dfrac{v_1}{2} + \dfrac{v_1^2}{16} = \dfrac{v_1^2}{4} - \dfrac{v_1}{2} + 4$.
 
-Substituting into (3): $16 = v_1^2 + 2\!\left({'\dfrac{v_1^2}{4}'} - {'\dfrac{v_1}{2}'} + 4\right) = {'\dfrac{3v_1^2}{2}'} - v_1 + 8$.
+Substituting into (3): $16 = v_1^2 + 2\!\left(\dfrac{v_1^2}{4} - \dfrac{v_1}{2} + 4\right) = \dfrac{3v_1^2}{2} - v_1 + 8$.
 
-${'\dfrac{3v_1^2}{2}'} - v_1 - 8 = 0 \implies 3v_1^2 - 2v_1 - 16 = 0$.
+$\dfrac{3v_1^2}{2} - v_1 - 8 = 0 \implies 3v_1^2 - 2v_1 - 16 = 0$.
 
-$v_1 = {'{'\dfrac{2 \pm \sqrt{4+192}}{6}'}'} = {'{'\dfrac{2 \pm 14}{6}'}'}$. Taking positive: $v_1 = {'\dfrac{16}{6}'} = {'\dfrac{8}{3}'}\,\mathrm{m\,s^{-1}}$.
+$v_1 = {`\dfrac{2 \pm \sqrt{4+192}}{6}`} = {`\dfrac{2 \pm 14}{6}`}$. Taking positive: $v_1 = \dfrac{16}{6} = \dfrac{8}{3}\,\mathrm{m\,s^{-1}}$.
 
-$v_2^2 = {'{'\dfrac{64}{9 \times 4}'}'} - {'\dfrac{4}{3}'} + 4 = {'\dfrac{16}{9}'} - {'\dfrac{4}{3}'} + 4 = {'\dfrac{16-12+36}{9}'} = {'\dfrac{40}{9}'}$.
+$v_2^2 = {`\dfrac{64}{9 \times 4}`} - \dfrac{4}{3} + 4 = \dfrac{16}{9} - \dfrac{4}{3} + 4 = \dfrac{16-12+36}{9} = \dfrac{40}{9}$.
 
-$v_2 = {'{'\dfrac{2\sqrt{10}}{3}'}'}\,\mathrm{m\,s^{-1}}$.
+$v_2 = {`\dfrac{2\sqrt{10}}{3}`}\,\mathrm{m\,s^{-1}}$.
 
 ### Example 8.3: Toppling and sliding on an inclined plane
 
@@ -826,11 +826,11 @@ $v_2 = {'{'\dfrac{2\sqrt{10}}{3}'}'}\,\mathrm{m\,s^{-1}}$.
 
 For rolling without slipping: the friction must be sufficient to provide the angular acceleration. Taking moments about the centre:
 
-$Fr = I\alpha = {'\dfrac{1}{2}'}mr^2 \cdot {'\dfrac{a}{r}'} \implies F = {'\dfrac{ma}{2}'}$.
+$Fr = I\alpha = \dfrac{1}{2}mr^2 \cdot \dfrac{a}{r} \implies F = \dfrac{ma}{2}$.
 
-Linear: $mg\sin\alpha - F = ma \implies mg\sin\alpha = {'\dfrac{3ma}{2}'} \implies a = {'{'\dfrac{2g\sin\alpha}{3}'}'}$.
+Linear: $mg\sin\alpha - F = ma \implies mg\sin\alpha = \dfrac{3ma}{2} \implies a = {`\dfrac{2g\sin\alpha}{3}`}$.
 
-$F = {'{'\dfrac{mg\sin\alpha}{3}'}'} \leq \mu mg\cos\alpha \implies \tan\alpha \leq 3\mu$.
+$F = {`\dfrac{mg\sin\alpha}{3}`} \leq \mu mg\cos\alpha \implies \tan\alpha \leq 3\mu$.
 
 If $\mu < \tan\alpha \leq 3\mu$: rolls without slipping.
 If $\tan\alpha > 3\mu$: slides with slipping.
@@ -847,7 +847,7 @@ Denominator: $\displaystyle\int_0^L \!\left(1 + \frac{x}{L}\right)dx = L + \frac
 
 $$\bar{x} = \frac{5L^2/6}{3L/2} = \frac{5L}{9}$$
 
-The centre of mass is at $\boxed{{'\dfrac{5L}{9}'}}$ from the lighter end (shifted toward the heavier end).
+The centre of mass is at $\boxed{\dfrac{5L}{9}}$ from the lighter end (shifted toward the heavier end).
 
 ### Example 8.5: Elastic collision with a wall
 
@@ -871,7 +871,7 @@ directed along the normal away from the wall.
 |---|---|
 | Forgetting to include the mass in centre of mass calculations for composite bodies | Always weight each centre of mass by its mass, not just its area |
 | Assuming elastic means KE of each particle is conserved individually | Elastic means total KE is conserved, not individual KE |
-| Using the wrong moment of inertia for a body | Rod about end: ${'\dfrac{ml^2}{3}'}$; about centre: ${'\dfrac{ml^2}{12}'}$; solid disc: ${'\dfrac{mr^2}{2}'}$ |
+| Using the wrong moment of inertia for a body | Rod about end: $\dfrac{ml^2}{3}$; about centre: $\dfrac{ml^2}{12}$; solid disc: $\dfrac{mr^2}{2}$ |
 
 ---
 
@@ -884,9 +884,9 @@ A uniform lamina is formed from an equilateral triangle of side $2a$ with a circ
 <details>
 <summary>Solution</summary>
 
-Triangle: area $= {'{'\dfrac{\sqrt{3}}{4}'}'}(2a)^2 = \sqrt{3}a^2$, centroid at geometric centre.
+Triangle: area $= {`\dfrac{\sqrt{3}}{4}`}(2a)^2 = \sqrt{3}a^2$, centroid at geometric centre.
 
-Hole: area $= {'{'\dfrac{\pi a^2}{4}'}'}$, centroid at geometric centre.
+Hole: area $= {`\dfrac{\pi a^2}{4}`}$, centroid at geometric centre.
 
 Since the hole is at the centroid, the remaining lamina has its centre of mass at the centroid of the triangle.
 
@@ -900,20 +900,20 @@ The centre of mass remains at the centroid since both the triangle and hole are 
 
 ### Question 9
 
-**Prove that** in a one-dimensional elastic collision between a particle of mass $m_1$ and a stationary particle of mass $m_2$, the velocity of $m_1$ after collision is $v_1 = {'\dfrac{(m_1-m_2)u}{m_1+m_2}'}$.
+**Prove that** in a one-dimensional elastic collision between a particle of mass $m_1$ and a stationary particle of mass $m_2$, the velocity of $m_1$ after collision is $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$.
 
 <details>
 <summary>Solution</summary>
 
 Conservation of momentum: $m_1 u = m_1 v_1 + m_2 v_2$ ... (1)
 
-Conservation of KE: ${'\dfrac{1}{2}'}m_1 u^2 = {'\dfrac{1}{2}'}m_1 v_1^2 + {'\dfrac{1}{2}'}m_2 v_2^2$ ... (2)
+Conservation of KE: $\dfrac{1}{2}m_1 u^2 = \dfrac{1}{2}m_1 v_1^2 + \dfrac{1}{2}m_2 v_2^2$ ... (2)
 
-From (1): $v_2 = {'\dfrac{m_1(u-v_1)}{m_2}'}$. Substituting into (2):
+From (1): $v_2 = \dfrac{m_1(u-v_1)}{m_2}$. Substituting into (2):
 
-$m_1 u^2 = m_1 v_1^2 + {'\dfrac{m_1^2(u-v_1)^2}{m_2}'}$.
+$m_1 u^2 = m_1 v_1^2 + \dfrac{m_1^2(u-v_1)^2}{m_2}$.
 
-$u^2 = v_1^2 + {'\dfrac{m_1(u^2-2uv_1+v_1^2)}{m_2}'}$.
+$u^2 = v_1^2 + \dfrac{m_1(u^2-2uv_1+v_1^2)}{m_2}$.
 
 $m_2 u^2 = m_2 v_1^2 + m_1 u^2 - 2m_1 uv_1 + m_1 v_1^2$.
 
@@ -921,7 +921,7 @@ $(m_1-m_2)u^2 + 2m_1 uv_1 - (m_1+m_2)v_1^2 = 0$.
 
 Factoring: $(u-v_1)[(m_1-m_2)u - (m_1+m_2)v_1] = 0$.
 
-Excluding $u = v_1$ (no collision): $v_1 = {'\dfrac{(m_1-m_2)u}{m_1+m_2}'}$. $\blacksquare$
+Excluding $u = v_1$ (no collision): $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$. $\blacksquare$
 
 </details>
 
@@ -939,7 +939,7 @@ Finding centres of mass of continuous bodies requires integration techniques. Se
 
 ### 11.3 Moments and vectors
 
-The moment of a force about a point uses the cross product: $\mathbf\{M{'\}'} = \mathbf\{r{'\}'} \times \mathbf\{F{'\}'}$. See [Vectors in 3D](/docs/docs_alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+The moment of a force about a point uses the cross product: $\mathbf{M} = \mathbf{r} \times \mathbf{F}$. See [Vectors in 3D](/docs/docs_alevel/further-maths/pure-mathematics/09-vectors-in-3d).
 
 ---
 
@@ -947,14 +947,14 @@ The moment of a force about a point uses the cross product: $\mathbf\{M{'\}'} = 
 
 | Result | Formula |
 |---|---|
-| 1D elastic collision | $v_1 = {'\dfrac{(m_1-m_2)u}{m_1+m_2}'}$, $v_2 = {'\dfrac{2m_1 u}{m_1+m_2}'}$ |
+| 1D elastic collision | $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$, $v_2 = \dfrac{2m_1 u}{m_1+m_2}$ |
 | Conservation of momentum | $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$ |
-| Conservation of KE (elastic) | ${'\dfrac{1}{2}'}m_1u_1^2 + {'\dfrac{1}{2}'}m_2u_2^2 = {'\dfrac{1}{2}'}m_1v_1^2 + {'\dfrac{1}{2}'}m_2v_2^2$ |
-| Centre of mass (discrete) | $\bar{x} = {'{'\dfrac{\sum m_i x_i}{\sum m_i}'}'}$ |
-| Centre of mass (continuous) | $\bar{x} = {'{'\dfrac{\int x\,\rho(x)\,dA}{\int \rho(x)\,dA}'}'}$ |
-| Moment of inertia (rod, centre) | $I = {'\dfrac{ml^2}{12}'}$ |
-| Moment of inertia (rod, end) | $I = {'\dfrac{ml^2}{3}'}$ |
-| Moment of inertia (disc) | $I = {'\dfrac{mr^2}{2}'}$ |
+| Conservation of KE (elastic) | $\dfrac{1}{2}m_1u_1^2 + \dfrac{1}{2}m_2u_2^2 = \dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2$ |
+| Centre of mass (discrete) | $\bar{x} = {`\dfrac{\sum m_i x_i}{\sum m_i}`}$ |
+| Centre of mass (continuous) | $\bar{x} = {`\dfrac{\int x\,\rho(x)\,dA}{\int \rho(x)\,dA}`}$ |
+| Moment of inertia (rod, centre) | $I = \dfrac{ml^2}{12}$ |
+| Moment of inertia (rod, end) | $I = \dfrac{ml^2}{3}$ |
+| Moment of inertia (disc) | $I = \dfrac{mr^2}{2}$ |
 
 ---
 
@@ -969,13 +969,13 @@ Two particles of masses $3\,\mathrm{kg}$ and $5\,\mathrm{kg}$ collide. Before co
 
 Conservation of momentum: $3(4)+5(-2) = 3v_1+5v_2 \implies 3v_1+5v_2 = 2$ ... (1)
 
-Conservation of KE: ${'\dfrac{1}{2}'}(3)(16)+{'\dfrac{1}{2}'}(5)(4) = {'\dfrac{1}{2}'}(3)v_1^2+{'\dfrac{1}{2}'}(5)v_2^2 \implies 3v_1^2+5v_2^2 = 68$ ... (2)
+Conservation of KE: $\dfrac{1}{2}(3)(16)+\dfrac{1}{2}(5)(4) = \dfrac{1}{2}(3)v_1^2+\dfrac{1}{2}(5)v_2^2 \implies 3v_1^2+5v_2^2 = 68$ ... (2)
 
-From (1): $v_2 = {'\dfrac{2-3v_1}{5}'}$. Substituting into (2):
+From (1): $v_2 = \dfrac{2-3v_1}{5}$. Substituting into (2):
 
-$3v_1^2 + 5\!\left({'\dfrac{2-3v_1}{5}'}\right)^{\!2} = 68$.
+$3v_1^2 + 5\!\left(\dfrac{2-3v_1}{5}\right)^{\!2} = 68$.
 
-$3v_1^2 + {'\dfrac{4-12v_1+9v_1^2}{5}'} = 68$.
+$3v_1^2 + \dfrac{4-12v_1+9v_1^2}{5} = 68$.
 
 $15v_1^2+4-12v_1+9v_1^2 = 340$.
 
@@ -983,7 +983,7 @@ $24v_1^2-12v_1-336 = 0 \implies 2v_1^2-v_1-28 = 0$.
 
 $(2v_1+7)(v_1-4) = 0$. $v_1 = 4$ (no collision) or $v_1 = -7/2 = -3.5$.
 
-$v_2 = {'\dfrac{2-3(-3.5)}{5}'} = {'\dfrac{12.5}{5}'} = 2.5$.
+$v_2 = \dfrac{2-3(-3.5)}{5} = \dfrac{12.5}{5} = 2.5$.
 
 $\boxed{v_1 = -3.5\,\mathrm{m\,s^{-1}},\; v_2 = 2.5\,\mathrm{m\,s^{-1}}}$
 
@@ -996,9 +996,9 @@ A uniform solid cone of height $h$ and base radius $r$ is placed with its vertex
 <details>
 <summary>Solution</summary>
 
-Using the standard result: the centre of mass of a solid cone is at ${'\dfrac{h}{4}'}$ from the base, i.e., ${'\dfrac{3h}{4}'}$ from the vertex.
+Using the standard result: the centre of mass of a solid cone is at $\dfrac{h}{4}$ from the base, i.e., $\dfrac{3h}{4}$ from the vertex.
 
-With the vertex on the table, the centre of mass is at $\boxed{{'\dfrac{3h}{4}'}}$ above the table.
+With the vertex on the table, the centre of mass is at $\boxed{\dfrac{3h}{4}}$ above the table.
 
 </details>
 
@@ -1057,7 +1057,7 @@ From (2): $v_2 = v_1 + 3$. Substituting into (1): $2v_1 + 3(v_1+3) = 10 \implies
 
 $v_2 = 3.2$.
 
-KE lost $= {'\dfrac{1}{2}'}(2)(25) - {'\dfrac{1}{2}'}(2)(0.04) - {'\dfrac{1}{2}'}(3)(10.24) = 25 - 0.04 - 15.36 = \boxed{9.6\,\mathrm{J}}$.
+KE lost $= \dfrac{1}{2}(2)(25) - \dfrac{1}{2}(2)(0.04) - \dfrac{1}{2}(3)(10.24) = 25 - 0.04 - 15.36 = \boxed{9.6\,\mathrm{J}}$.
 
 </details>
 
@@ -1080,13 +1080,13 @@ $$\bar{y} = \frac{\int_0^{\pi} \frac{1}{2}a^2 \cdot \frac{2}{3}a\sin\theta\,d\th
 
 ### 16.1 Centre of mass of a solid hemisphere
 
-A uniform solid hemisphere of radius $a$ has its centre of mass at distance ${'\dfrac{3a}{8}'}$ from the flat face (or ${'\dfrac{3a}{8}'}$ from the centre of the sphere).
+A uniform solid hemisphere of radius $a$ has its centre of mass at distance $\dfrac{3a}{8}$ from the flat face (or $\dfrac{3a}{8}$ from the centre of the sphere).
 
 ### 16.2 Centre of mass of a thin hemispherical shell
 
-A thin hemispherical shell of radius $a$ has its centre of mass at distance ${'\dfrac{a}{2}'}$ from the flat face.
+A thin hemispherical shell of radius $a$ has its centre of mass at distance $\dfrac{a}{2}$ from the flat face.
 
-Note the difference: ${'\dfrac{3a}{8}'} < {'\dfrac{a}{2}'}$ — the solid hemisphere's centre of mass is closer to the base.
+Note the difference: $\dfrac{3a}{8} < \dfrac{a}{2}$ — the solid hemisphere's centre of mass is closer to the base.
 
 ### 16.3 Pappus' centroid theorem (second theorem)
 
@@ -1098,7 +1098,7 @@ where $\bar{d}$ is the distance from the centroid to the axis of rotation.
 
 ### 16.4 Centre of mass by integration — general formula
 
-For a 3D body with density $\rho(\mathbf\{r{'\}'})$:
+For a 3D body with density $\rho(\mathbf{r})$:
 
 $$\bar{x} = \frac{\iiint_V x\,\rho\,dV}{\iiint_V \rho\,dV}, \quad \bar{y} = \frac{\iiint_V y\,\rho\,dV}{\iiint_V \rho\,dV}, \quad \bar{z} = \frac{\iiint_V z\,\rho\,dV}{\iiint_V \rho\,dV}$$
 
@@ -1113,7 +1113,7 @@ A uniform wire is bent into a semicircle of radius $a$. Find its centre of mass.
 <details>
 <summary>Solution</summary>
 
-For a wire (1D), use $\bar{x} = {'{'\dfrac{\int x\,ds}{\int ds}'}'}$ where $ds = a\,d\theta$.
+For a wire (1D), use $\bar{x} = {`\dfrac{\int x\,ds}{\int ds}`}$ where $ds = a\,d\theta$.
 
 $$\bar{y} = \frac{\int_0^{\pi} a\sin\theta \cdot a\,d\theta}{\int_0^{\pi} a\,d\theta} = \frac{a^2[-\cos\theta]_0^{\pi}}{a\pi} = \frac{2a^2}{a\pi} = \boxed{\frac{2a}{\pi}}$$
 
@@ -1130,7 +1130,7 @@ Consider rotating area $A$ about axis $x = 0$. By the shell method:
 
 $V = 2\pi\displaystyle\int_A x\,dA = 2\pi \cdot \bar{x} \cdot A$.
 
-where $\bar{x} = {'\dfrac{1}{A}'}\displaystyle\int_A x\,dA$ is the centroid's $x$-coordinate.
+where $\bar{x} = \dfrac{1}{A}\displaystyle\int_A x\,dA$ is the centroid's $x$-coordinate.
 
 The centroid travels a distance $2\pi\bar{x}$, so $V = 2\pi\bar{x}\cdot A$. $\blacksquare$
 

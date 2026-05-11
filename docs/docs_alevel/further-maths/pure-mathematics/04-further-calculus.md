@@ -133,11 +133,11 @@ $$nI_n = (n-1)I_{n-2}$$
 
 $$\boxed{I_n = \frac{n-1}{n}\,I_{n-2}, \quad n \geq 2}$$
 
-The base cases are $I_0 = \displaystyle\int_0^{\pi/2}1\,dx = {'{'\dfrac{\pi}{2}'}'}$ and
+The base cases are $I_0 = \displaystyle\int_0^{\pi/2}1\,dx = {`\dfrac{\pi}{2}`}$ and
 $I_1 = \displaystyle\int_0^{\pi/2}\sin x\,dx = 1$.
 
 **Example.** Using the reduction formula,
-$I_4 = {'\dfrac{3}{4}'}I_2 = {'\dfrac{3}{4}'}\cdot{'\dfrac{1}{2}'}I_0 = {'\dfrac{3}{4}'}\cdot{'\dfrac{1}{2}'}\cdot{'{'\dfrac{\pi}{2}'}'} = {'{'\dfrac{3\pi}{16}'}'}$.
+$I_4 = \dfrac{3}{4}I_2 = \dfrac{3}{4}\cdot\dfrac{1}{2}I_0 = \dfrac{3}{4}\cdot\dfrac{1}{2}\cdot{`\dfrac{\pi}{2}`} = {`\dfrac{3\pi}{16}`}$.
 
 :::warning
 warning
@@ -253,7 +253,7 @@ These follow directly from the standard forms via the substitution $u = x + b$.
 
 :::warning
 warning
-${'{'\dfrac{1}{\sqrt{a^2-x^2}}'}'}$ (gives $\arcsin$), and ${'\dfrac{1}{a^2-x^2}'}$ (gives a logarithmic form).
+${`\dfrac{1}{\sqrt{a^2-x^2}}`}$ (gives $\arcsin$), and $\dfrac{1}{a^2-x^2}$ (gives a logarithmic form).
 The square root makes the difference.
 :::
 
@@ -294,10 +294,10 @@ $$\frac{dy}{dx} = \frac{1}{\cos y} = \frac{1}{\sqrt{1-x^2}} \quad \blacksquare$$
 
 ### 4.2 Chain rule with inverse trig functions
 
-**Example.** ${'\dfrac{d}{dx}'}\arcsin(3x) = {'{'\dfrac{3}{\sqrt{1-9x^2}}'}'}$.
+**Example.** $\dfrac{d}{dx}\arcsin(3x) = {`\dfrac{3}{\sqrt{1-9x^2}}`}$.
 
 **Example.**
-${'\dfrac{d}{dx}'}\arctan\!\left({'\dfrac{x}{2}'}\right) = {'\dfrac{1/2}{1 + x^2/4}'} = {'\dfrac{2}{4+x^2}'}$.
+$\dfrac{d}{dx}\arctan\!\left(\dfrac{x}{2}\right) = \dfrac{1/2}{1 + x^2/4} = \dfrac{2}{4+x^2}$.
 
 <hr />
 
@@ -325,7 +325,7 @@ When a curve is given parametrically by $x = x(t)$, $y = y(t)$:
 - Rotation about the $y$-axis: $V = \pi\displaystyle\int_{t_1}^{t_2} x^2\,\frac{dy}{dt}\,dt$
 
 :::warning
-The parametric volume formula uses ${'\dfrac{dx}{dt}'}$ or ${'\dfrac{dy}{dt}'}$ as appropriate.
+The parametric volume formula uses $\dfrac{dx}{dt}$ or $\dfrac{dy}{dt}$ as appropriate.
 Do not forget this factor — it is a very common error.
 :::
 
@@ -402,7 +402,7 @@ Using $\tan^2\theta = \sec^2\theta - 1$ and integrating by parts with $u = \sec\
 $dv = \sec^2\theta\,d\theta$:
 
 This integral evaluates to
-${'{'\dfrac{\pi}{4}'}'}\left[{'\dfrac{1}{4}'}\sec\theta\tan\theta + {'\dfrac{1}{4}'}\ln|\sec\theta+\tan\theta| - {'\dfrac{1}{4}'}\sec\theta\tan\theta + {'\dfrac{1}{8}'}\ln|\sec\theta+\tan\theta|\right]_0^{\arctan 2}$.
+${`\dfrac{\pi}{4}`}\left[\dfrac{1}{4}\sec\theta\tan\theta + \dfrac{1}{4}\ln|\sec\theta+\tan\theta| - \dfrac{1}{4}\sec\theta\tan\theta + \dfrac{1}{8}\ln|\sec\theta+\tan\theta|\right]_0^{\arctan 2}$.
 
 Simplifying with $\sec(\arctan 2) = \sqrt{5}$ and $\tan(\arctan 2) = 2$:
 
@@ -420,11 +420,11 @@ length in Paper 1.
 
 | Integral                                        | Result                                                       |
 | ----------------------------------------------- | ------------------------------------------------------------ |
-| $\displaystyle\int\frac{1}{a^2+x^2}\,dx$        | ${'\dfrac{1}{a}'}\arctan{'\dfrac{x}{a}'}+C$                          |
-| $\displaystyle\int\frac{1}{\sqrt{a^2-x^2}}\,dx$ | $\arcsin{'\dfrac{x}{a}'}+C$                                      |
-| $\displaystyle\int\frac{1}{a^2-x^2}\,dx$        | ${'\dfrac{1}{2a}'}\ln\left\|{'\dfrac{a+x}{a-x}'}\right\|+C$          |
-| ${'\dfrac{d}{dx}'}\arcsin x$                        | ${'{'\dfrac{1}{\sqrt{1-x^2}}'}'}$                                    |
-| ${'\dfrac{d}{dx}'}\arctan x$                        | ${'\dfrac{1}{1+x^2}'}$                                           |
+| $\displaystyle\int\frac{1}{a^2+x^2}\,dx$        | $\dfrac{1}{a}\arctan\dfrac{x}{a}+C$                          |
+| $\displaystyle\int\frac{1}{\sqrt{a^2-x^2}}\,dx$ | $\arcsin\dfrac{x}{a}+C$                                      |
+| $\displaystyle\int\frac{1}{a^2-x^2}\,dx$        | $\dfrac{1}{2a}\ln\left\|\dfrac{a+x}{a-x}\right\|+C$          |
+| $\dfrac{d}{dx}\arcsin x$                        | ${`\dfrac{1}{\sqrt{1-x^2}}`}$                                    |
+| $\dfrac{d}{dx}\arctan x$                        | $\dfrac{1}{1+x^2}$                                           |
 | Vol. about $x$-axis                             | $\pi\displaystyle\int_a^b y^2\,dx$                           |
 | Arc length                                      | $\displaystyle\int\sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx$ |
 
@@ -513,12 +513,12 @@ Evaluate $\displaystyle\int_0^{\pi/2} \sin^5 x\,dx$ using the reduction formula.
 
 <details>
 <summary>Hint 4</summary>
-Use $I_n = {'\dfrac{n-1}{n}'}I_{n-2}$ with $I_1 = 1$.
+Use $I_n = \dfrac{n-1}{n}I_{n-2}$ with $I_1 = 1$.
 </details>
 
 <details>
 <summary>Answer 4</summary>
-$I_5 = {'\dfrac{4}{5}'}I_3 = {'\dfrac{4}{5}'}\cdot{'\dfrac{2}{3}'}I_1 = {'\dfrac{4}{5}'}\cdot{'\dfrac{2}{3}'}\cdot 1 = {'\dfrac{8}{15}'}$.
+$I_5 = \dfrac{4}{5}I_3 = \dfrac{4}{5}\cdot\dfrac{2}{3}I_1 = \dfrac{4}{5}\cdot\dfrac{2}{3}\cdot 1 = \dfrac{8}{15}$.
 </details>
 
 <details>
@@ -540,18 +540,18 @@ Using the disc method about the $y$-axis: $V = \pi\int_0^4 x^2\,dy = \pi\int_0^4
 
 <details>
 <summary>Problem 6</summary>
-Find ${'\dfrac{d}{dx}'}\left[x\arcsin x + \sqrt{1-x^2}\right]$ and hence evaluate
+Find $\dfrac{d}{dx}\left[x\arcsin x + \sqrt{1-x^2}\right]$ and hence evaluate
 $\displaystyle\int_0^{1/2} \arcsin x\,dx$.
 </details>
 
 <details>
 <summary>Hint 6</summary>
-Differentiate using the product rule and the chain rule with ${'\dfrac{d}{dx}'}\arcsin x$.
+Differentiate using the product rule and the chain rule with $\dfrac{d}{dx}\arcsin x$.
 </details>
 
 <details>
 <summary>Answer 6</summary>
-${'\dfrac{d}{dx}'}\bigl[x\arcsin x + \sqrt{1-x^2}\bigr] = \arcsin x + {'{'\dfrac{x}{\sqrt{1-x^2}}'}'} + {'{'\dfrac{-x}{\sqrt{1-x^2}}'}'} = \arcsin x$.
+$\dfrac{d}{dx}\bigl[x\arcsin x + \sqrt{1-x^2}\bigr] = \arcsin x + {`\dfrac{x}{\sqrt{1-x^2}}`} + {`\dfrac{-x}{\sqrt{1-x^2}}`} = \arcsin x$.
 
 Therefore $\displaystyle\int \arcsin x\,dx = x\arcsin x + \sqrt{1-x^2} + C$.
 
@@ -561,21 +561,21 @@ $\displaystyle\int_0^{1/2}\arcsin x\,dx = \left[x\arcsin x + \sqrt{1-x^2}\right]
 
 <details>
 <summary>Problem 7</summary>
-Find the arc length of the curve $y = {'\dfrac{x^3}{6}'} + {'\dfrac{1}{2x}'}$ from $x = 1$ to $x = 3$.
+Find the arc length of the curve $y = \dfrac{x^3}{6} + \dfrac{1}{2x}$ from $x = 1$ to $x = 3$.
 </details>
 
 <details>
 <summary>Hint 7</summary>
-Compute ${'\dfrac{dy}{dx}'} = {'\dfrac{x^2}{2}'} - {'\dfrac{1}{2x^2}'}$. Show that $1+\left({'\dfrac{dy}{dx}'}\right)^2$ is a perfect square.
+Compute $\dfrac{dy}{dx} = \dfrac{x^2}{2} - \dfrac{1}{2x^2}$. Show that $1+\left(\dfrac{dy}{dx}\right)^2$ is a perfect square.
 </details>
 
 <details>
 <summary>Answer 7</summary>
-${'\dfrac{dy}{dx}'} = {'\dfrac{x^2}{2}'} - {'\dfrac{1}{2x^2}'}$.
+$\dfrac{dy}{dx} = \dfrac{x^2}{2} - \dfrac{1}{2x^2}$.
 
-$1+\left({'\dfrac{dy}{dx}'}\right)^2 = 1 + {'\dfrac{x^4}{4}'} - {'\dfrac{1}{2}'} + {'\dfrac{1}{4x^4}'} = {'\dfrac{x^4}{4}'} + {'\dfrac{1}{2}'} + {'\dfrac{1}{4x^4}'} = \left({'\dfrac{x^2}{2}'} + {'\dfrac{1}{2x^2}'}\right)^2$
+$1+\left(\dfrac{dy}{dx}\right)^2 = 1 + \dfrac{x^4}{4} - \dfrac{1}{2} + \dfrac{1}{4x^4} = \dfrac{x^4}{4} + \dfrac{1}{2} + \dfrac{1}{4x^4} = \left(\dfrac{x^2}{2} + \dfrac{1}{2x^2}\right)^2$
 
-$s = \displaystyle\int_1^3\left({'\dfrac{x^2}{2}'} + {'\dfrac{1}{2x^2}'}\right)dx = \left[{'\dfrac{x^3}{6}'} - {'\dfrac{1}{2x}'}\right]_1^3 = \left({'\dfrac{9}{2}'}-{'\dfrac{1}{6}'}\right)-\left({'\dfrac{1}{6}'}-{'\dfrac{1}{2}'}\right) = {'\dfrac{14}{3}'}$.
+$s = \displaystyle\int_1^3\left(\dfrac{x^2}{2} + \dfrac{1}{2x^2}\right)dx = \left[\dfrac{x^3}{6} - \dfrac{1}{2x}\right]_1^3 = \left(\dfrac{9}{2}-\dfrac{1}{6}\right)-\left(\dfrac{1}{6}-\dfrac{1}{2}\right) = \dfrac{14}{3}$.
 
 </details>
 
@@ -602,7 +602,7 @@ revolution.
 
 <details>
 <summary>Hint 9</summary>
-Use $V = \pi\displaystyle\int_{t_1}^{t_2}y^2\,\frac{dx}{dt}\,dt$. Here ${'\dfrac{dx}{dt}'} = 2t$.
+Use $V = \pi\displaystyle\int_{t_1}^{t_2}y^2\,\frac{dx}{dt}\,dt$. Here $\dfrac{dx}{dt} = 2t$.
 </details>
 
 <details>
@@ -647,7 +647,7 @@ $\boxed{I = \frac{e^x(\sin 2x - 2\cos 2x)}{5} + C}$
 
 ### Example 8.1: Leibniz's rule for higher derivatives of a product
 
-**Problem.** If $y = x^2 e^{3x}$, find ${'\dfrac{d^4 y}{dx^4}'}$.
+**Problem.** If $y = x^2 e^{3x}$, find $\dfrac{d^4 y}{dx^4}$.
 
 **Solution.** We use Leibniz's rule: $(uv)^{(n)} = \displaystyle\sum_{k=0}^{n} \binom{n}{k} u^{(k)} v^{(n-k)}$.
 
@@ -692,7 +692,7 @@ Since the limit exists and is finite, the integral converges. $\boxed{\displayst
 
 **Problem.** Evaluate $\displaystyle\int_0^{\pi/2} \frac{1}{1 + \sin x}\,dx$ using the Weierstrass substitution.
 
-**Solution.** Let $t = \tan(x/2)$, so $\sin x = {'\dfrac{2t}{1+t^2}'}$ and $dx = {'{'\dfrac{2\,dt}{1+t^2}'}'}$.
+**Solution.** Let $t = \tan(x/2)$, so $\sin x = \dfrac{2t}{1+t^2}$ and $dx = \dfrac{2\,dt}{1+t^2}$.
 
 When $x = 0$: $t = 0$. When $x = \pi/2$: $t = 1$.
 
@@ -704,7 +704,7 @@ $$= \left[-\frac{2}{t+1}\right]_0^1 = -1 + 2 = \boxed{1}$$
 
 **Problem.** A curve is given by $x = t - \sin t$, $y = 1 - \cos t$ for $0 \leq t \leq 2\pi$. Find the total arc length.
 
-**Solution.** ${'\dfrac{dx}{dt}'} = 1 - \cos t$, ${'\dfrac{dy}{dt}'} = \sin t$.
+**Solution.** $\dfrac{dx}{dt} = 1 - \cos t$, $\dfrac{dy}{dt} = \sin t$.
 
 $$s = \int_0^{2\pi} \sqrt{(1-\cos t)^2 + \sin^2 t}\,dt = \int_0^{2\pi} \sqrt{1 - 2\cos t + \cos^2 t + \sin^2 t}\,dt$$
 
@@ -748,11 +748,11 @@ $$\boxed{\int \arcsin x\,dx = x\arcsin x + \sqrt{1-x^2} + C}$$
 
 | Pitfall | Correct Approach |
 |---|---|
-| Forgetting the chain rule when differentiating composite inverse trig functions | Always write ${'\dfrac{d}{dx}'}\!\left[\arcsin(u)\right] = {'{'\dfrac{u'}{\sqrt{1-u^2}}'}'}$ |
+| Forgetting the chain rule when differentiating composite inverse trig functions | Always write $\dfrac{d}{dx}\!\left[\arcsin(u)\right] = {`\dfrac{u'}{\sqrt{1-u^2}}`}$ |
 | Using $\ln|x|$ before checking if the integral is improper | Check for discontinuities in the interval first |
 | Forgetting $+C$ on every antiderivative | Every indefinite integral needs an arbitrary constant |
 | Applying reduction formulae without checking the base case | Always state $I_0$ or $I_1$ explicitly |
-| Confusing ${'\dfrac{d^n y}{dx^n}'}$ notation with $\left({'\dfrac{dy}{dx}'}\right)^n$ | ${'\dfrac{d^n y}{dx^n}'}$ is the $n$-th derivative, not the $n$-th power |
+| Confusing $\dfrac{d^n y}{dx^n}$ notation with $\left(\dfrac{dy}{dx}\right)^n$ | $\dfrac{d^n y}{dx^n}$ is the $n$-th derivative, not the $n$-th power |
 
 ---
 
@@ -773,14 +773,14 @@ $$\int \frac{du}{u^2 + 1} = \arctan u + C = \boxed{\arctan(e^x) + C}$$
 
 ### Question 9
 
-The reduction formula $I_n = \displaystyle\int_0^{\pi/4} \tan^n x\,dx$ satisfies $I_n = {'\dfrac{1}{n-1}'} - I_{n-2}$ for $n \geq 2$. Given $I_0 = {'{'\dfrac{\pi}{4}'}'}$ and $I_1 = {'\dfrac{1}{2}'}\ln 2$, find $I_3$.
+The reduction formula $I_n = \displaystyle\int_0^{\pi/4} \tan^n x\,dx$ satisfies $I_n = \dfrac{1}{n-1} - I_{n-2}$ for $n \geq 2$. Given $I_0 = {`\dfrac{\pi}{4}`}$ and $I_1 = \dfrac{1}{2}\ln 2$, find $I_3$.
 
 <details>
 <summary>Solution</summary>
 
-$I_3 = {'\dfrac{1}{2}'} - I_1 = {'\dfrac{1}{2}'} - {'\dfrac{1}{2}'}\ln 2 = {'\dfrac{1}{2}'}(1 - \ln 2)$.
+$I_3 = \dfrac{1}{2} - I_1 = \dfrac{1}{2} - \dfrac{1}{2}\ln 2 = \dfrac{1}{2}(1 - \ln 2)$.
 
-To verify: $I_2 = {'\dfrac{1}{1}'} - I_0 = 1 - {'{'\dfrac{\pi}{4}'}'}$. Then $I_3 = {'\dfrac{1}{2}'} - I_1 = {'\dfrac{1}{2}'} - {'\dfrac{1}{2}'}\ln 2$. Consistent. $\boxed{I_3 = {'\dfrac{1}{2}'}(1 - \ln 2)}$
+To verify: $I_2 = \dfrac{1}{1} - I_0 = 1 - {`\dfrac{\pi}{4}`}$. Then $I_3 = \dfrac{1}{2} - I_1 = \dfrac{1}{2} - \dfrac{1}{2}\ln 2$. Consistent. $\boxed{I_3 = \dfrac{1}{2}(1 - \ln 2)}$
 
 </details>
 
@@ -803,7 +803,7 @@ $\boxed{A = 0}$ (the curve traces back over itself symmetrically).
 
 ### Question 11
 
-**Prove that** ${'\dfrac{d}{dx}'}\!\left[\arctan x\right] = {'\dfrac{1}{1+x^2}'}$ from first principles using implicit differentiation.
+**Prove that** $\dfrac{d}{dx}\!\left[\arctan x\right] = \dfrac{1}{1+x^2}$ from first principles using implicit differentiation.
 
 <details>
 <summary>Solution</summary>
@@ -825,7 +825,7 @@ Evaluate $\displaystyle\int_0^1 \frac{\ln x}{1+x}\,dx$, expressing your answer i
 <details>
 <summary>Solution</summary>
 
-Expand ${'\dfrac{1}{1+x}'} = \displaystyle\sum_{n=0}^{\infty} (-1)^n x^n$ for $|x| < 1$:
+Expand $\dfrac{1}{1+x} = \displaystyle\sum_{n=0}^{\infty} (-1)^n x^n$ for $|x| < 1$:
 
 $$\int_0^1 \ln x \sum_{n=0}^{\infty} (-1)^n x^n\,dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln x\,dx$$
 
@@ -833,7 +833,7 @@ Using integration by parts or the standard result $\displaystyle\int_0^1 x^n \ln
 
 $$= -\sum_{n=0}^{\infty} \frac{(-1)^n}{(n+1)^2} = -\sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n^2} = \sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}$$
 
-This equals $-{'{'\dfrac{\pi^2}{12}'}'}$.
+This equals $-{`\dfrac{\pi^2}{12}`}$.
 
 </details>
 
@@ -876,7 +876,7 @@ The function higher on the list should be chosen as $u$.
 
 For integrals involving rational functions of $\sin x$ and $\cos x$, the substitution $t = \tan(x/2)$ converts them to rational functions of $t$:
 
-$\sin x = {'\dfrac{2t}{1+t^2}'}$, $\cos x = {'\dfrac{1-t^2}{1+t^2}'}$, $dx = {'{'\dfrac{2\,dt}{1+t^2}'}'}$.
+$\sin x = \dfrac{2t}{1+t^2}$, $\cos x = \dfrac{1-t^2}{1+t^2}$, $dx = \dfrac{2\,dt}{1+t^2}$.
 
 ### 12.3 Recognising standard integral forms
 
@@ -884,7 +884,7 @@ $\sin x = {'\dfrac{2t}{1+t^2}'}$, $\cos x = {'\dfrac{1-t^2}{1+t^2}'}$, $dx = {'{
 |---|---|
 | $\displaystyle\int \frac{f'(x)}{f(x)}\,dx$ | $\ln|f(x)| + C$ |
 | $\displaystyle\int \frac{f'(x)}{\sqrt{f(x)}}\,dx$ | $2\sqrt{f(x)} + C$ |
-| $\displaystyle\int f(x) \cdot f'(x)\,dx$ | ${'\dfrac{[f(x)]^2}{2}'} + C$ |
+| $\displaystyle\int f(x) \cdot f'(x)\,dx$ | $\dfrac{[f(x)]^2}{2} + C$ |
 
 ---
 
@@ -898,8 +898,8 @@ $\sin x = {'\dfrac{2t}{1+t^2}'}$, $\cos x = {'\dfrac{1-t^2}{1+t^2}'}$, $dx = {'{
 | Arc length (parametric) | $s = \displaystyle\int_\alpha^\beta \sqrt{\dot{x}^2+\dot{y}^2}\,dt$ |
 | Area under parametric curve | $A = \displaystyle\int y\frac{dx}{dt}\,dt$ |
 | Surface of revolution | $S = 2\pi\displaystyle\int_a^b y\sqrt{1+(y')^2}\,dx$ |
-| Derivative of $\arcsin x$ | ${'{'\dfrac{1}{\sqrt{1-x^2}}'}'}$ |
-| Derivative of $\arctan x$ | ${'\dfrac{1}{1+x^2}'}$ |
+| Derivative of $\arcsin x$ | ${`\dfrac{1}{\sqrt{1-x^2}}`}$ |
+| Derivative of $\arctan x$ | $\dfrac{1}{1+x^2}$ |
 | Improper integral test | $\displaystyle\int_a^\infty f(x)\,dx = \lim_{b\to\infty}\int_a^b f(x)\,dx$ |
 
 ---
@@ -942,7 +942,7 @@ $s = \displaystyle\int_0^{\pi/4} \sec x\,dx = [\ln|\sec x + \tan x|]_0^{\pi/4} =
 
 ### Question 15
 
-**Prove that** $\displaystyle\int_0^{\pi/2} \sin^n x\,dx = {'\dfrac{n-1}{n}'} \cdot {'\dfrac{n-3}{n-2}'} \cdots \times \begin{cases} 1 & n \text{ odd} \\ {'{'\dfrac{\pi}{2}'}'} & n \text{ even}\end{cases}$ (Wallis' formula).
+**Prove that** $\displaystyle\int_0^{\pi/2} \sin^n x\,dx = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \times \begin{cases} 1 & n \text{ odd} \\ {`\dfrac{\pi}{2}`} & n \text{ even}\end{cases}$ (Wallis' formula).
 
 <details>
 <summary>Solution</summary>
@@ -955,13 +955,13 @@ $I_n = [-\cos x \sin^{n-1}x]_0^{\pi/2} + (n-1)\displaystyle\int_0^{\pi/2} \cos^2
 
 $= 0 + (n-1)\displaystyle\int_0^{\pi/2} (1-\sin^2 x)\sin^{n-2}x\,dx = (n-1)(I_{n-2} - I_n)$.
 
-$nI_n = (n-1)I_{n-2}$, so $\boxed{I_n = {'\dfrac{n-1}{n}'}I_{n-2}}$.
+$nI_n = (n-1)I_{n-2}$, so $\boxed{I_n = \dfrac{n-1}{n}I_{n-2}}$.
 
 Base cases: $I_0 = \pi/2$, $I_1 = 1$.
 
-For even $n$: $I_n = {'\dfrac{n-1}{n}'} \cdot {'\dfrac{n-3}{n-2}'} \cdots {'\dfrac{1}{2}'} \cdot {'{'\dfrac{\pi}{2}'}'}$.
+For even $n$: $I_n = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \dfrac{1}{2} \cdot {`\dfrac{\pi}{2}`}$.
 
-For odd $n$: $I_n = {'\dfrac{n-1}{n}'} \cdot {'\dfrac{n-3}{n-2}'} \cdots {'\dfrac{2}{3}'} \cdot 1$. $\blacksquare$
+For odd $n$: $I_n = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \dfrac{2}{3} \cdot 1$. $\blacksquare$
 
 </details>
 
@@ -983,7 +983,7 @@ Example: $\displaystyle\int_0^{\infty} \frac{e^{-ax}-e^{-bx}}{x}\,dx = \ln\frac{
 
 ### 15.3 Differentiation under the integral sign
 
-Leibniz's rule: ${'{'\dfrac{d}{d\alpha}'}'}\displaystyle\int_a^b f(x,\alpha)\,dx = \int_a^b \frac{\partial f}{\partial\alpha}\,dx$.
+Leibniz's rule: ${`\dfrac{d}{d\alpha}`}\displaystyle\int_a^b f(x,\alpha)\,dx = \int_a^b \frac{\partial f}{\partial\alpha}\,dx$.
 
 This is a powerful technique for evaluating integrals that depend on a parameter.
 
@@ -1017,9 +1017,9 @@ This equals $E(X)$ for $X \sim \mathrm{Exp}(1)$, confirming the result $E(X) = 1
 <details>
 <summary>Solution</summary>
 
-$\sin^2 x\cos^2 x = {'{'\dfrac{\sin^2 2x}{4}'}'} = {'{'\dfrac{1-\cos 4x}{8}'}'}$.
+$\sin^2 x\cos^2 x = {`\dfrac{\sin^2 2x}{4}`} = {`\dfrac{1-\cos 4x}{8}`}$.
 
-$\displaystyle\int_0^{\pi/2} \frac{1-\cos 4x}{8}\,dx = \frac{1}{8}\!\left[x-\frac{\sin 4x}{4}\right]_0^{\pi/2} = \frac{1}{8}\cdot\frac{\pi}{2} = \boxed{{'{'\dfrac{\pi}{16}'}'}}$. $\blacksquare$
+$\displaystyle\int_0^{\pi/2} \frac{1-\cos 4x}{8}\,dx = \frac{1}{8}\!\left[x-\frac{\sin 4x}{4}\right]_0^{\pi/2} = \frac{1}{8}\cdot\frac{\pi}{2} = \boxed{{`\dfrac{\pi}{16}`}}$. $\blacksquare$
 
 </details>
 
@@ -1036,7 +1036,7 @@ $I = e^x\sin x + e^x\cos x - I$.
 
 $2I = e^x(\sin x+\cos x)$.
 
-$\boxed{I = {'{'\dfrac{e^x(\sin x+\cos x)}{2}'}'} + C}$
+$\boxed{I = {`\dfrac{e^x(\sin x+\cos x)}{2}`} + C}$
 
 </details>
 
@@ -1051,7 +1051,7 @@ Evaluate $\displaystyle\int_0^1 \frac{x^3}{1+x^2}\,dx$.
 <details>
 <summary>Solution</summary>
 
-Let $u = 1+x^2$, $du = 2x\,dx$. Note $x^2 = u-1$, so $x^3\,dx = x^2 \cdot x\,dx = (u-1)\cdot{'\dfrac{du}{2}'}$.
+Let $u = 1+x^2$, $du = 2x\,dx$. Note $x^2 = u-1$, so $x^3\,dx = x^2 \cdot x\,dx = (u-1)\cdot\dfrac{du}{2}$.
 
 $\displaystyle\int_0^1 \frac{x^3}{1+x^2}\,dx = \frac{1}{2}\int_1^2 \frac{u-1}{u}\,du = \frac{1}{2}\int_1^2 \!\left(1-\frac{1}{u}\right)du$
 
@@ -1066,7 +1066,7 @@ $= \frac{1}{2}\Big[u-\ln u\Big]_1^2 = \frac{1}{2}(2-\ln 2 - 1) = \boxed{\frac{1}
 <details>
 <summary>Solution</summary>
 
-$F'(x) = {'\dfrac{1}{1+x^4}'} > 0$ for all $x \geq 0$, so $F$ is strictly increasing. ✓
+$F'(x) = \dfrac{1}{1+x^4} > 0$ for all $x \geq 0$, so $F$ is strictly increasing. ✓
 
 $F(x) < F(\infty) = \displaystyle\int_0^{\infty} \frac{dt}{1+t^4} < \int_0^{\infty} \frac{dt}{1+t^2} = \frac{\pi}{2}$. ✓
 

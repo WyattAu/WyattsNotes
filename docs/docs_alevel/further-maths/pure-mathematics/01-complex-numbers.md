@@ -32,9 +32,9 @@ polynomial equations.
 
 ## 1. Review of A Level Complex Numbers
 
-**Definition.** A _complex number_ is a number of the form $z = a + bi$ where $a, b \in \mathbb\{R{'\}'}$
+**Definition.** A _complex number_ is a number of the form $z = a + bi$ where $a, b \in \mathbb{R}$
 and $i$ is defined by the property $i^2 = -1$. The set of all complex numbers is denoted
-$\mathbb\{C{'\}'}$.
+$\mathbb{C}$.
 
 We call $a$ the _real part_ (written $\operatorname{Re}(z)$) and $b$ the _imaginary part_ (written
 $\operatorname{Im}(z)$). Two complex numbers are equal if and only if both their real and imaginary
@@ -42,7 +42,7 @@ parts are equal.
 
 ### 1.1 The Argand Diagram
 
-**Definition.** The _Argand diagram_ is a representation of $\mathbb\{C{'\}'}$ as a plane, where the
+**Definition.** The _Argand diagram_ is a representation of $\mathbb{C}$ as a plane, where the
 horizontal axis represents $\operatorname{Re}(z)$ and the vertical axis represents
 $\operatorname{Im}(z)$. The complex number $z = a + bi$ is plotted as the point $(a, b)$.
 
@@ -52,7 +52,7 @@ $\operatorname{Im}(z)$. The complex number $z = a + bi$ is plotted as the point 
 
 - The _modulus_ $|z|$ is defined as $|z| = \sqrt{a^2 + b^2}$.
 - The _argument_ $\arg(z)$ is the angle $\theta$ (measured anticlockwise from the positive real
-  axis) such that $\tan\theta = {'\dfrac{b}{a}'}$, with $-\pi < \theta \leq \pi$ (the _principal
+  axis) such that $\tan\theta = \dfrac{b}{a}$, with $-\pi < \theta \leq \pi$ (the _principal
   argument_).
 
 $$\boxed{z = a + bi = |z|(\cos\theta + i\sin\theta) = r(\cos\theta + i\sin\theta)}$$
@@ -90,7 +90,7 @@ Since $(a, b) = (1, -\sqrt{3})$ lies in the fourth quadrant:
 $$\arg(z) = \arctan\!\left(\frac{-\sqrt{3}}{1}\right) = -\frac{\pi}{3}$$
 
 Polar form:
-$z = 2\!\left(\cos\!\left(-{'{'\dfrac{\pi}{3}'}'}\right) + i\sin\!\left(-{'{'\dfrac{\pi}{3}'}'}\right)\right)$.
+$z = 2\!\left(\cos\!\left(-{`\dfrac{\pi}{3}`}\right) + i\sin\!\left(-{`\dfrac{\pi}{3}`}\right)\right)$.
 
 </details>
 
@@ -121,7 +121,7 @@ $$
 using the compound angle identities. ✓
 
 For negative integers, note that
-${'{'\dfrac{1}{\cos\theta + i\sin\theta}'}'} = \cos\theta - i\sin\theta = \cos(-\theta) + i\sin(-\theta)$,
+${`\dfrac{1}{\cos\theta + i\sin\theta}`} = \cos\theta - i\sin\theta = \cos(-\theta) + i\sin(-\theta)$,
 so the result follows. $\square$
 
 **Intuition.** De Moivre's theorem says that raising a complex number on the unit circle to the
@@ -180,7 +180,7 @@ $$
 ## 3. Roots of Unity
 
 **Definition.** The _$n$-th roots of unity_ are the solutions to the equation $z^n = 1$ for
-$n \in \mathbb\{Z{'\}'}^+$.
+$n \in \mathbb{Z}^+$.
 
 By De Moivre's theorem, writing $1 = \cos 0 + i\sin 0 = \cos(2k\pi) + i\sin(2k\pi)$ for any integer
 $k$, the $n$ distinct solutions are:
@@ -190,7 +190,7 @@ $$\boxed{z_k = \cos\!\left(\frac{2k\pi}{n}\right) + i\sin\!\left(\frac{2k\pi}{n}
 ### 3.1 Geometric Interpretation
 
 The $n$-th roots of unity lie on the unit circle $|z| = 1$ in the Argand diagram, equally spaced at
-angles of ${'{'\dfrac{2\pi}{n}'}'}$ radians apart. They form the vertices of a regular $n$-gon inscribed in
+angles of ${`\dfrac{2\pi}{n}`}$ radians apart. They form the vertices of a regular $n$-gon inscribed in
 the unit circle, with one vertex at $z = 1$.
 
 ### 3.2 Sum and Product of Roots
@@ -214,7 +214,7 @@ $$\prod_{k=0}^{n-1} z_k = (-1)^{n-1}$$
 
 Find all cube roots of unity and verify that their sum is zero.
 
-$z^3 = 1 \implies z_k = \cos\!\left({'{'\dfrac{2k\pi}{3}'}'}\right) + i\sin\!\left({'{'\dfrac{2k\pi}{3}'}'}\right)$
+$z^3 = 1 \implies z_k = \cos\!\left({`\dfrac{2k\pi}{3}`}\right) + i\sin\!\left({`\dfrac{2k\pi}{3}`}\right)$
 for $k = 0, 1, 2$.
 
 $$
@@ -225,10 +225,10 @@ z_2 &= \cos\frac{4\pi}{3} + i\sin\frac{4\pi}{3} = -\frac{1}{2} - \frac{\sqrt{3}}
 \end{aligned}
 $$
 
-Sum: $1 - {'\dfrac{1}{2}'} + {'{'\dfrac{\sqrt{3}}{2}'}'}\,i - {'\dfrac{1}{2}'} - {'{'\dfrac{\sqrt{3}}{2}'}'}\,i = 0$. ✓
+Sum: $1 - \dfrac{1}{2} + {`\dfrac{\sqrt{3}}{2}`}\,i - \dfrac{1}{2} - {`\dfrac{\sqrt{3}}{2}`}\,i = 0$. ✓
 
 Product:
-$1 \cdot \left(-{'\dfrac{1}{2}'} + {'{'\dfrac{\sqrt{3}}{2}'}'}\,i\right)\left(-{'\dfrac{1}{2}'} - {'{'\dfrac{\sqrt{3}}{2}'}'}\,i\right) = 1 \cdot \left({'\dfrac{1}{4}'} + {'\dfrac{3}{4}'}\right) = 1 = (-1)^{3-1}$.
+$1 \cdot \left(-\dfrac{1}{2} + {`\dfrac{\sqrt{3}}{2}`}\,i\right)\left(-\dfrac{1}{2} - {`\dfrac{\sqrt{3}}{2}`}\,i\right) = 1 \cdot \left(\dfrac{1}{4} + \dfrac{3}{4}\right) = 1 = (-1)^{3-1}$.
 ✓
 
 </details>
@@ -304,7 +304,7 @@ with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem
 
 ### 5.1 Circles: $|z - a| = r$
 
-**Definition.** The locus $|z - a| = r$, where $a \in \mathbb\{C{'\}'}$ and $r \in \mathbb\{R{'\}'}^+$, is a
+**Definition.** The locus $|z - a| = r$, where $a \in \mathbb{C}$ and $r \in \mathbb{R}^+$, is a
 circle with centre $a$ and radius $r$ in the Argand diagram.
 
 $$|z - a| = r \iff \sqrt{(x - \alpha)^2 + (y - \beta)^2} = r \iff (x - \alpha)^2 + (y - \beta)^2 = r^2$$
@@ -329,7 +329,7 @@ The region $\alpha_1 < \arg(z - a) < \alpha_2$ is an angular sector (wedge) with
 
 Exam questions often require describing a _region_ defined by combining loci, such as:
 
-- $|z - 3| \leq 2$ and $\arg(z) \geq {'{'\dfrac{\pi}{4}'}'}$: the part of a disc in a sector.
+- $|z - 3| \leq 2$ and $\arg(z) \geq {`\dfrac{\pi}{4}`}$: the part of a disc in a sector.
 
 :::warning
 A half-line $\arg(z - a) = \alpha$ does _not_ include the point $a$. When shading
@@ -345,13 +345,13 @@ the boundary is included by testing a point.
 <details>
 <summary>Worked Example: Describing a locus algebraically</summary>
 
-A complex number $z$ satisfies $|z - 2i| \leq 3$ and $0 \leq \arg(z) \leq {'{'\dfrac{\pi}{2}'}'}$. Find the
+A complex number $z$ satisfies $|z - 2i| \leq 3$ and $0 \leq \arg(z) \leq {`\dfrac{\pi}{2}`}$. Find the
 greatest possible value of $|z|$ and the least possible value of $|z|$.
 
 The first condition: $|z - 2i| \leq 3$ is the closed disc of radius 3 centred at $2i$, i.e. at
 $(0, 2)$.
 
-The second condition: $0 \leq \arg(z) \leq {'{'\dfrac{\pi}{2}'}'}$ restricts $z$ to the first quadrant
+The second condition: $0 \leq \arg(z) \leq {`\dfrac{\pi}{2}`}$ restricts $z$ to the first quadrant
 (including axes).
 
 The disc centre $(0, 2)$ with radius 3 extends from $y = -1$ to $y = 5$ and from $x = -3$ to
@@ -380,7 +380,7 @@ for $z$) to points in the $w$-plane (Argand diagram for $w$).
 
 ### 6.2 Linear Transformations: $w = az + b$
 
-For $w = az + b$ where $a, b \in \mathbb\{C{'\}'}$ and $a \neq 0$:
+For $w = az + b$ where $a, b \in \mathbb{C}$ and $a \neq 0$:
 
 Writing $a = \lambda e^{i\alpha}$ and $b = \mu e^{i\beta}$:
 
@@ -390,16 +390,16 @@ Writing $a = \lambda e^{i\alpha}$ and $b = \mu e^{i\beta}$:
 
 The composition is: enlarge by $|a|$, rotate by $\arg(a)$, then translate by $b$.
 
-### 6.3 Inversion: $w = {'\dfrac{1}{z}'}$
+### 6.3 Inversion: $w = \dfrac{1}{z}$
 
-The transformation $w = {'\dfrac{1}{z}'}$ maps:
+The transformation $w = \dfrac{1}{z}$ maps:
 
 - Circles not through the origin to circles.
 - Circles through the origin to straight lines not through the origin.
 - Straight lines through the origin to straight lines through the origin.
 - Straight lines not through the origin to circles through the origin.
 
-### 6.4 Reciprocal: $w = z + {'\dfrac{1}{z}'}$ and $w = {'\dfrac{z - 1}{z + 1}'}$
+### 6.4 Reciprocal: $w = z + \dfrac{1}{z}$ and $w = \dfrac{z - 1}{z + 1}$
 
 These are common in exam questions. The general approach is:
 
@@ -412,21 +412,21 @@ $f'(z_0) = 0$. At a critical point, the mapping is not conformal (angles are not
 <details>
 <summary>Worked Example: Image of a line under inversion</summary>
 
-Find the image of the line $\operatorname{Re}(z) = 1$ under the transformation $w = {'\dfrac{1}{z}'}$.
+Find the image of the line $\operatorname{Re}(z) = 1$ under the transformation $w = \dfrac{1}{z}$.
 
-Let $z = x + yi$ with $x = 1$, so $z = 1 + yi$ and $y \in \mathbb\{R{'\}'}$.
+Let $z = x + yi$ with $x = 1$, so $z = 1 + yi$ and $y \in \mathbb{R}$.
 
 $$w = \frac{1}{1 + yi} = \frac{1 - yi}{1 + y^2} = \frac{1}{1 + y^2} - \frac{y}{1 + y^2}\,i$$
 
-Let $w = u + vi$. Then $u = {'\dfrac{1}{1 + y^2}'}$ and $v = {'\dfrac{-y}{1 + y^2}'}$.
+Let $w = u + vi$. Then $u = \dfrac{1}{1 + y^2}$ and $v = \dfrac{-y}{1 + y^2}$.
 
-Note that $v = -uy$, so $y = -{'\dfrac{v}{u}'}$ (when $u \neq 0$).
+Note that $v = -uy$, so $y = -\dfrac{v}{u}$ (when $u \neq 0$).
 
-Substituting: $u = {'\dfrac{1}{1 + v^2/u^2}'} = {'\dfrac{u^2}{u^2 + v^2}'}$, giving $u^2 + v^2 = u$, i.e.:
+Substituting: $u = \dfrac{1}{1 + v^2/u^2} = \dfrac{u^2}{u^2 + v^2}$, giving $u^2 + v^2 = u$, i.e.:
 
 $$u^2 - u + v^2 = 0 \implies \left(u - \frac{1}{2}\right)^2 + v^2 = \frac{1}{4}$$
 
-This is a circle with centre $\left({'\dfrac{1}{2}'}, 0\right)$ and radius ${'\dfrac{1}{2}'}$ in the
+This is a circle with centre $\left(\dfrac{1}{2}, 0\right)$ and radius $\dfrac{1}{2}$ in the
 $w$-plane.
 
 </details>
@@ -474,7 +474,7 @@ Find $|z|$ and $\arg(z)$ first. Then apply De Moivre's theorem.
 $|z| = \sqrt{3 + 1} = 2$.
 
 The point $(-\sqrt{3}, 1)$ is in the second quadrant.
-$\arg(z) = \pi - \arctan\!\left({'{'\dfrac{1}{\sqrt{3}}'}'}\right) = \pi - {'{'\dfrac{\pi}{6}'}'} = {'{'\dfrac{5\pi}{6}'}'}$.
+$\arg(z) = \pi - \arctan\!\left({`\dfrac{1}{\sqrt{3}}`}\right) = \pi - {`\dfrac{\pi}{6}`} = {`\dfrac{5\pi}{6}`}$.
 
 $$z^5 = 2^5\!\left(\cos\frac{25\pi}{6} + i\sin\frac{25\pi}{6}\right) = 32\!\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right) = 32\!\left(\frac{\sqrt{3}}{2} + \frac{1}{2}\,i\right) = 16\sqrt{3} + 16i$$
 
@@ -528,7 +528,7 @@ Write $16i = 16e^{i\pi/2}$ and use the roots formula.
 <details>
 <summary>Answer</summary>
 
-$16i = 16\!\left(\cos{'{'\dfrac{\pi}{2}'}'} + i\sin{'{'\dfrac{\pi}{2}'}'}\right)$.
+$16i = 16\!\left(\cos{`\dfrac{\pi}{2}`} + i\sin{`\dfrac{\pi}{2}`}\right)$.
 
 $$z_k = 2\!\left(\cos\!\left(\frac{\pi/2 + 2k\pi}{4}\right) + i\sin\!\left(\frac{\pi/2 + 2k\pi}{4}\right)\right), \quad k = 0, 1, 2, 3$$
 
@@ -547,7 +547,7 @@ $$
 
 **Problem 4.** The fifth roots of unity are $\omega^0, \omega^1, \omega^2, \omega^3, \omega^4$ where
 $\omega = e^{2\pi i/5}$. Show that $1 + \omega + \omega^2 + \omega^3 + \omega^4 = 0$ and deduce that
-$\cos{'{'\dfrac{2\pi}{5}'}'} + \cos{'{'\dfrac{4\pi}{5}'}'} = -{'\dfrac{1}{2}'}$.
+$\cos{`\dfrac{2\pi}{5}`} + \cos{`\dfrac{4\pi}{5}`} = -\dfrac{1}{2}$.
 
 <details>
 <summary>Hint</summary>
@@ -582,7 +582,7 @@ $$1 + 2\cos\frac{2\pi}{5} + 2\cos\frac{4\pi}{5} = 0 \implies \cos\frac{2\pi}{5} 
 <hr />
 
 **Problem 5.** Sketch on separate Argand diagrams the loci given by (a) $|z - 1 - i| = |z - 3 + i|$,
-and (b) $\arg(z - 2) = {'{'\dfrac{\pi}{3}'}'}$. Find the complex number(s) satisfying both conditions
+and (b) $\arg(z - 2) = {`\dfrac{\pi}{3}`}$. Find the complex number(s) satisfying both conditions
 simultaneously.
 
 <details>
@@ -597,9 +597,9 @@ Part (a) is a perpendicular bisector. Part (b) is a half-line. Find their inters
 
 **(a)** $|z - (1 + i)| = |z - (3 - i)|$ is the perpendicular bisector of the segment joining
 $(1, 1)$ and $(3, -1)$. The midpoint is $(2, 0)$ and the slope of the segment is
-${'\dfrac{-1 - 1}{3 - 1}'} = -1$, so the perpendicular bisector has slope $1$ and equation $y = x - 2$.
+$\dfrac{-1 - 1}{3 - 1} = -1$, so the perpendicular bisector has slope $1$ and equation $y = x - 2$.
 
-**(b)** $\arg(z - 2) = {'{'\dfrac{\pi}{3}'}'}$ is a half-line from $(2, 0)$ at angle ${'{'\dfrac{\pi}{3}'}'}$ to the
+**(b)** $\arg(z - 2) = {`\dfrac{\pi}{3}`}$ is a half-line from $(2, 0)$ at angle ${`\dfrac{\pi}{3}`}$ to the
 positive real axis. Its equation is $y = \sqrt{3}(x - 2)$ for $x > 2$.
 
 **Intersection:** Setting $x - 2 = \sqrt{3}(x - 2)$:
@@ -618,7 +618,7 @@ from the half-line.
 <hr />
 
 **Problem 6.** Find the image of the circle $|z| = 2$ under the transformation
-$w = {'\dfrac{z + 1}{z - 1}'}$.
+$w = \dfrac{z + 1}{z - 1}$.
 
 <details>
 <summary>Hint</summary>
@@ -630,7 +630,7 @@ Express $z$ in terms of $w$ and substitute $|z| = 2$.
 <details>
 <summary>Answer</summary>
 
-$w = {'\dfrac{z + 1}{z - 1}'} \implies wz - w = z + 1 \implies z(w - 1) = w + 1 \implies z = {'\dfrac{w + 1}{w - 1}'}$.
+$w = \dfrac{z + 1}{z - 1} \implies wz - w = z + 1 \implies z(w - 1) = w + 1 \implies z = \dfrac{w + 1}{w - 1}$.
 
 Since $|z| = 2$:
 
@@ -656,14 +656,14 @@ $$3\!\left(u - \frac{5}{3}\right)^2 + 3v^2 = \frac{16}{3}$$
 
 $$\left(u - \frac{5}{3}\right)^2 + v^2 = \frac{16}{9}$$
 
-This is a circle with centre $\left({'\dfrac{5}{3}'}, 0\right)$ and radius ${'\dfrac{4}{3}'}$ in the
+This is a circle with centre $\left(\dfrac{5}{3}, 0\right)$ and radius $\dfrac{4}{3}$ in the
 $w$-plane.
 
 </details>
 
 <hr />
 
-**Problem 7.** Express ${'{'\dfrac{(1+i)^6}{(1-i\sqrt{3})^4}'}'}$ in the form $a + bi$.
+**Problem 7.** Express ${`\dfrac{(1+i)^6}{(1-i\sqrt{3})^4}`}$ in the form $a + bi$.
 
 <details>
 <summary>Hint</summary>
@@ -682,7 +682,7 @@ $$\frac{(1+i)^6}{(1-i\sqrt{3})^4} = \frac{(\sqrt{2}\,e^{i\pi/4})^6}{(2\,e^{-i\pi
 $$3\pi/2 + 4\pi/3 = \frac{9\pi + 8\pi}{6} = \frac{17\pi}{6} = 2\pi + \frac{5\pi}{6}$$
 
 So:
-${'\dfrac{1}{2}'}\,e^{5\pi i/6} = {'\dfrac{1}{2}'}\!\left(\cos{'{'\dfrac{5\pi}{6}'}'} + i\sin{'{'\dfrac{5\pi}{6}'}'}\right) = {'\dfrac{1}{2}'}\!\left(-{'{'\dfrac{\sqrt{3}}{2}'}'} + {'\dfrac{1}{2}'}\,i\right) = -{'{'\dfrac{\sqrt{3}}{4}'}'} + {'\dfrac{1}{4}'}\,i$
+$\dfrac{1}{2}\,e^{5\pi i/6} = \dfrac{1}{2}\!\left(\cos{`\dfrac{5\pi}{6}`} + i\sin{`\dfrac{5\pi}{6}`}\right) = \dfrac{1}{2}\!\left(-{`\dfrac{\sqrt{3}}{2}`} + \dfrac{1}{2}\,i\right) = -{`\dfrac{\sqrt{3}}{4}`} + \dfrac{1}{4}\,i$
 
 </details>
 
@@ -690,7 +690,7 @@ ${'\dfrac{1}{2}'}\,e^{5\pi i/6} = {'\dfrac{1}{2}'}\!\left(\cos{'{'\dfrac{5\pi}{6
 
 **Problem 8.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = z^2$. The
 region $R$ in the $z$-plane is defined by $1 \leq |z| \leq 2$ and
-$0 \leq \arg(z) \leq {'{'\dfrac{\pi}{4}'}'}$. Find and describe the image of $R$ under $T$.
+$0 \leq \arg(z) \leq {`\dfrac{\pi}{4}`}$. Find and describe the image of $R$ under $T$.
 
 <details>
 <summary>Hint</summary>
@@ -705,18 +705,18 @@ Under $w = z^2$, the modulus squares and the argument doubles.
 If $z = re^{i\theta}$, then $w = r^2 e^{2i\theta}$.
 
 - Modulus: $1 \leq r \leq 2 \implies 1 \leq r^2 \leq 4$, so $1 \leq |w| \leq 4$.
-- Argument: $0 \leq \theta \leq {'{'\dfrac{\pi}{4}'}'} \implies 0 \leq 2\theta \leq {'{'\dfrac{\pi}{2}'}'}$, so
-  $0 \leq \arg(w) \leq {'{'\dfrac{\pi}{2}'}'}$.
+- Argument: $0 \leq \theta \leq {`\dfrac{\pi}{4}`} \implies 0 \leq 2\theta \leq {`\dfrac{\pi}{2}`}$, so
+  $0 \leq \arg(w) \leq {`\dfrac{\pi}{2}`}$.
 
 The image is the region in the first quadrant of the $w$-plane between the circles $|w| = 1$ and
-$|w| = 4$, bounded by the rays $\arg(w) = 0$ and $\arg(w) = {'{'\dfrac{\pi}{2}'}'}$.
+$|w| = 4$, bounded by the rays $\arg(w) = 0$ and $\arg(w) = {`\dfrac{\pi}{2}`}$.
 
 </details>
 
 <hr />
 
 **Problem 9.** Solve the equation $z^3 + z^2 + z + 1 = 0$ by recognising it as a geometric series,
-and hence show that $\cos{'{'\dfrac{2\pi}{4}'}'} + \cos{'{'\dfrac{4\pi}{4}'}'} + \cos{'{'\dfrac{6\pi}{4}'}'} = -1$.
+and hence show that $\cos{`\dfrac{2\pi}{4}`} + \cos{`\dfrac{4\pi}{4}`} + \cos{`\dfrac{6\pi}{4}`} = -1$.
 
 <details>
 <summary>Hint</summary>
@@ -728,7 +728,7 @@ Factor $z^3 + z^2 + z + 1 = (z+1)(z^2+1)$. The roots are the 4th roots of unity 
 <details>
 <summary>Answer</summary>
 
-$z^3 + z^2 + z + 1 = {'\dfrac{z^4 - 1}{z - 1}'} = 0 \implies z^4 = 1$ with $z \neq 1$.
+$z^3 + z^2 + z + 1 = \dfrac{z^4 - 1}{z - 1} = 0 \implies z^4 = 1$ with $z \neq 1$.
 
 The 4th roots of unity are $1, i, -1, -i$, so the solutions are $z = i, -1, -i$.
 
@@ -740,11 +740,11 @@ $$i + (-1) + (-i) = -1 \quad \checkmark$$
 
 Now: $e^{i\pi/2} + e^{i\pi} + e^{3i\pi/2} = i + (-1) + (-i) = -1$.
 
-Separating real and imaginary parts: $\cos{'{'\dfrac{\pi}{2}'}'} + \cos\pi + \cos{'{'\dfrac{3\pi}{2}'}'} = -1$, i.e.
+Separating real and imaginary parts: $\cos{`\dfrac{\pi}{2}`} + \cos\pi + \cos{`\dfrac{3\pi}{2}`} = -1$, i.e.
 $0 - 1 + 0 = -1$. ✓
 
 Alternatively, the claim as stated uses
-$\cos{'{'\dfrac{2\pi}{4}'}'} + \cos{'{'\dfrac{4\pi}{4}'}'} + \cos{'{'\dfrac{6\pi}{4}'}'} = \cos{'{'\dfrac{\pi}{2}'}'} + \cos\pi + \cos{'{'\dfrac{3\pi}{2}'}'} = 0 + (-1) + 0 = -1$.
+$\cos{`\dfrac{2\pi}{4}`} + \cos{`\dfrac{4\pi}{4}`} + \cos{`\dfrac{6\pi}{4}`} = \cos{`\dfrac{\pi}{2}`} + \cos\pi + \cos{`\dfrac{3\pi}{2}`} = 0 + (-1) + 0 = -1$.
 ✓ $\square$
 
 </details>
@@ -752,8 +752,8 @@ $\cos{'{'\dfrac{2\pi}{4}'}'} + \cos{'{'\dfrac{4\pi}{4}'}'} + \cos{'{'\dfrac{6\pi
 <hr />
 
 **Problem 10.** (a) Show that
-${'{'\dfrac{1}{e^{i\theta} - 1}'}'} = -{'\dfrac{1}{2}'} - {'\dfrac{i}{2}'}\cot{'{'\dfrac{\theta}{2}'}'}$ for
-$\theta \notin 2\pi\mathbb\{Z{'\}'}$.
+${`\dfrac{1}{e^{i\theta} - 1}`} = -\dfrac{1}{2} - \dfrac{i}{2}\cot{`\dfrac{\theta}{2}`}$ for
+$\theta \notin 2\pi\mathbb{Z}$.
 
 (b) Hence, or otherwise, find $\displaystyle\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k}$ where
 $\omega = e^{2\pi i/n}$.
@@ -770,21 +770,21 @@ identities. For (b), use the result from (a) with $\theta = 2k\pi/n$.
 <summary>Answer</summary>
 
 **(a)**
-${'{'\dfrac{1}{e^{i\theta} - 1}'}'} = {'{'\dfrac{e^{-i\theta} - 1}{(e^{i\theta} - 1)(e^{-i\theta} - 1)}'}'} = {'{'\dfrac{e^{-i\theta} - 1}{2 - (e^{i\theta} + e^{-i\theta})}'}'} = {'{'\dfrac{e^{-i\theta} - 1}{2 - 2\cos\theta}'}'}$.
+${`\dfrac{1}{e^{i\theta} - 1}`} = {`\dfrac{e^{-i\theta} - 1}{(e^{i\theta} - 1)(e^{-i\theta} - 1)}`} = {`\dfrac{e^{-i\theta} - 1}{2 - (e^{i\theta} + e^{-i\theta})}`} = {`\dfrac{e^{-i\theta} - 1}{2 - 2\cos\theta}`}$.
 
 Numerator:
-$e^{-i\theta} - 1 = \cos\theta - 1 - i\sin\theta = -2\sin^2{'{'\dfrac{\theta}{2}'}'} - 2i\sin{'{'\dfrac{\theta}{2}'}'}\cos{'{'\dfrac{\theta}{2}'}'} = -2\sin{'{'\dfrac{\theta}{2}'}'}\!\left(\sin{'{'\dfrac{\theta}{2}'}'} + i\cos{'{'\dfrac{\theta}{2}'}'}\right)$.
+$e^{-i\theta} - 1 = \cos\theta - 1 - i\sin\theta = -2\sin^2{`\dfrac{\theta}{2}`} - 2i\sin{`\dfrac{\theta}{2}`}\cos{`\dfrac{\theta}{2}`} = -2\sin{`\dfrac{\theta}{2}`}\!\left(\sin{`\dfrac{\theta}{2}`} + i\cos{`\dfrac{\theta}{2}`}\right)$.
 
-Denominator: $2 - 2\cos\theta = 4\sin^2{'{'\dfrac{\theta}{2}'}'}$.
+Denominator: $2 - 2\cos\theta = 4\sin^2{`\dfrac{\theta}{2}`}$.
 
 $$\frac{1}{e^{i\theta} - 1} = \frac{-2\sin\frac{\theta}{2}\!\left(\sin\frac{\theta}{2} + i\cos\frac{\theta}{2}\right)}{4\sin^2\frac{\theta}{2}} = \frac{-\sin\frac{\theta}{2} - i\cos\frac{\theta}{2}}{2\sin\frac{\theta}{2}} = -\frac{1}{2} - \frac{i}{2}\cot\frac{\theta}{2} \quad \square$$
 
 **(b)** Using (a):
-${'{'\dfrac{1}{1 - \omega^k}'}'} = -{'{'\dfrac{1}{e^{2k\pi i/n} - 1}'}'} = {'\dfrac{1}{2}'} + {'\dfrac{i}{2}'}\cot{'{'\dfrac{k\pi}{n}'}'}$.
+${`\dfrac{1}{1 - \omega^k}`} = -{`\dfrac{1}{e^{2k\pi i/n} - 1}`} = \dfrac{1}{2} + \dfrac{i}{2}\cot{`\dfrac{k\pi}{n}`}$.
 
 $$\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k} = \sum_{k=1}^{n-1}\!\left(\frac{1}{2} + \frac{i}{2}\cot\frac{k\pi}{n}\right) = \frac{n-1}{2} + \frac{i}{2}\sum_{k=1}^{n-1}\cot\frac{k\pi}{n}$$
 
-The cotangent sum is zero by symmetry: $\cot{'{'\dfrac{k\pi}{n}'}'} = -\cot{'{'\dfrac{(n-k)\pi}{n}'}'}$, so terms
+The cotangent sum is zero by symmetry: $\cot{`\dfrac{k\pi}{n}`} = -\cot{`\dfrac{(n-k)\pi}{n}`}$, so terms
 cancel in pairs.
 
 Therefore: $\displaystyle\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k} = \frac{n - 1}{2}$.
@@ -845,11 +845,11 @@ This is the perpendicular bisector of the segment joining $3+4i$ and $-1+2i$.
 
 ### Example 8.4: Region defined by an inequality
 
-**Problem.** Shade on an Argand diagram the region defined by $|z - 2i| \leq 3$ and $0 \leq \arg(z) \leq {'{'\dfrac{\pi}{4}'}'}$.
+**Problem.** Shade on an Argand diagram the region defined by $|z - 2i| \leq 3$ and $0 \leq \arg(z) \leq {`\dfrac{\pi}{4}`}$.
 
 **Solution.** $|z - 2i| \leq 3$ is the closed disc of radius 3 centred at $2i$ (i.e., $(0, 2)$).
 
-$0 \leq \arg(z) \leq {'{'\dfrac{\pi}{4}'}'}$ is the sector between the positive real axis and the line $y = x$ (for $x \geq 0$).
+$0 \leq \arg(z) \leq {`\dfrac{\pi}{4}`}$ is the sector between the positive real axis and the line $y = x$ (for $x \geq 0$).
 
 The required region is the intersection: a segment of the disc in the first quadrant between angles $0$ and $\pi/4$.
 
@@ -909,7 +909,7 @@ Solve $z^4 = 8(1 + i\sqrt{3})$, giving roots in the form $r(\cos\theta + i\sin\t
 
 $8(1+i\sqrt{3}) = 16e^{i\pi/3}$.
 
-$z_k = 2\exp\!\left({'{'\dfrac{i(\pi/3 + 2k\pi)}{4}'}'}\right)$ for $k = 0, 1, 2, 3$.
+$z_k = 2\exp\!\left({`\dfrac{i(\pi/3 + 2k\pi)}{4}`}\right)$ for $k = 0, 1, 2, 3$.
 
 $z_0 = 2(\cos 15° + i\sin 15°)$, $z_1 = 2(\cos 105° + i\sin 105°)$, $z_2 = 2(\cos 195° + i\sin 195°)$, $z_3 = 2(\cos 285° + i\sin 285°)$.
 
@@ -917,18 +917,18 @@ $z_0 = 2(\cos 15° + i\sin 15°)$, $z_1 = 2(\cos 105° + i\sin 105°)$, $z_2 = 2
 
 ### Question 9
 
-**Prove that** $\cos^4\theta = {'\dfrac{3}{8}'} + {'\dfrac{1}{2}'}\cos 2\theta + {'\dfrac{1}{8}'}\cos 4\theta$.
+**Prove that** $\cos^4\theta = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta$.
 
 <details>
 <summary>Solution</summary>
 
-$\cos^2\theta = {'{'\dfrac{1+\cos 2\theta}{2}'}'}$.
+$\cos^2\theta = {`\dfrac{1+\cos 2\theta}{2}`}$.
 
-$\cos^4\theta = \left({'{'\dfrac{1+\cos 2\theta}{2}'}'}\right)^{\!2} = {'{'\dfrac{1 + 2\cos 2\theta + \cos^2 2\theta}{4}'}'}$.
+$\cos^4\theta = \left({`\dfrac{1+\cos 2\theta}{2}`}\right)^{\!2} = {`\dfrac{1 + 2\cos 2\theta + \cos^2 2\theta}{4}`}$.
 
-$\cos^2 2\theta = {'{'\dfrac{1+\cos 4\theta}{2}'}'}$.
+$\cos^2 2\theta = {`\dfrac{1+\cos 4\theta}{2}`}$.
 
-$\cos^4\theta = {'\dfrac{1}{4}'} + {'{'\dfrac{\cos 2\theta}{2}'}'} + {'{'\dfrac{1+\cos 4\theta}{8}'}'} = {'\dfrac{3}{8}'} + {'{'\dfrac{\cos 2\theta}{2}'}'} + {'{'\dfrac{\cos 4\theta}{8}'}'}$. $\blacksquare$
+$\cos^4\theta = \dfrac{1}{4} + {`\dfrac{\cos 2\theta}{2}`} + {`\dfrac{1+\cos 4\theta}{8}`} = \dfrac{3}{8} + {`\dfrac{\cos 2\theta}{2}`} + {`\dfrac{\cos 4\theta}{8}`}$. $\blacksquare$
 
 </details>
 
@@ -989,13 +989,13 @@ Solve $z^3 = -8i$, giving roots in Cartesian form.
 <details>
 <summary>Solution</summary>
 
-$-8i = 8e^{-i\pi/2}$. Roots: $z_k = 2\exp\!\left({'{'\dfrac{-i\pi/2 + 2k\pi i}{3}'}'}\right)$ for $k=0,1,2$.
+$-8i = 8e^{-i\pi/2}$. Roots: $z_k = 2\exp\!\left({`\dfrac{-i\pi/2 + 2k\pi i}{3}`}\right)$ for $k=0,1,2$.
 
-$z_0 = 2e^{-i\pi/6} = 2\!\left({'{'\dfrac{\sqrt{3}}{2}'}'} - {'\dfrac{i}{2}'}\right) = \sqrt{3}-i$.
+$z_0 = 2e^{-i\pi/6} = 2\!\left({`\dfrac{\sqrt{3}}{2}`} - \dfrac{i}{2}\right) = \sqrt{3}-i$.
 
 $z_1 = 2e^{i\pi/2} = 2i$.
 
-$z_2 = 2e^{7i\pi/6} = 2\!\left(-{'{'\dfrac{\sqrt{3}}{2}'}'} - {'\dfrac{i}{2}'}\right) = -\sqrt{3}-i$.
+$z_2 = 2e^{7i\pi/6} = 2\!\left(-{`\dfrac{\sqrt{3}}{2}`} - \dfrac{i}{2}\right) = -\sqrt{3}-i$.
 
 $\boxed{z = \sqrt{3}-i,\; 2i,\; -\sqrt{3}-i}$
 
@@ -1062,12 +1062,12 @@ These are essential for deriving trigonometric identities and solving certain in
 
 ### Question 13
 
-Express ${'{'\dfrac{1+e^{i\theta}}{1-e^{i\theta}}'}'}$ in the form $a+bi$.
+Express ${`\dfrac{1+e^{i\theta}}{1-e^{i\theta}}`}$ in the form $a+bi$.
 
 <details>
 <summary>Solution</summary>
 
-${'{'\dfrac{1+e^{i\theta}}{1-e^{i\theta}}'}'} = {'{'\dfrac{e^{i\theta/2}(e^{-i\theta/2}+e^{i\theta/2})}{e^{i\theta/2}(e^{-i\theta/2}-e^{i\theta/2})}'}'} = {'{'\dfrac{2\cos(\theta/2)}{-2i\sin(\theta/2)}'}'} = {'{'\dfrac{i\cos(\theta/2)}{\sin(\theta/2)}'}'} = \boxed{i\cot(\theta/2)}$
+${`\dfrac{1+e^{i\theta}}{1-e^{i\theta}}`} = {`\dfrac{e^{i\theta/2}(e^{-i\theta/2}+e^{i\theta/2})}{e^{i\theta/2}(e^{-i\theta/2}-e^{i\theta/2})}`} = {`\dfrac{2\cos(\theta/2)}{-2i\sin(\theta/2)}`} = {`\dfrac{i\cos(\theta/2)}{\sin(\theta/2)}`} = \boxed{i\cot(\theta/2)}$
 
 </details>
 
@@ -1147,7 +1147,7 @@ Find all complex numbers $z$ such that $z^4 = -16$.
 <details>
 <summary>Solution</summary>
 
-$-16 = 16e^{i\pi}$. Roots: $z_k = 2\exp\!\left({'{'\dfrac{i(\pi+2k\pi)}{4}'}'}\right)$ for $k=0,1,2,3$.
+$-16 = 16e^{i\pi}$. Roots: $z_k = 2\exp\!\left({`\dfrac{i(\pi+2k\pi)}{4}`}\right)$ for $k=0,1,2,3$.
 
 $z_0 = 2e^{i\pi/4} = \sqrt{2}+i\sqrt{2}$, $z_1 = 2e^{i3\pi/4} = -\sqrt{2}+i\sqrt{2}$,
 
@@ -1201,12 +1201,12 @@ The complex logarithm, $n$-th root, and inverse trigonometric functions are all 
 
 ### 18.2 The complex plane and stereographic projection
 
-The extended complex plane $\hat{\mathbb\{C{'\}'}} = \mathbb\{C{'\}'} \cup \{\infty\}$ is topologically a sphere (the Riemann sphere). Stereographic projection maps each point on the sphere (except the north pole) to a unique point in the complex plane.
+The extended complex plane $\hat{\mathbb{C}} = \mathbb{C} \cup \{\infty\}$ is topologically a sphere (the Riemann sphere). Stereographic projection maps each point on the sphere (except the north pole) to a unique point in the complex plane.
 
 ### 18.3 Complex analysis connections
 
 While complex analysis (Cauchy's theorem, residue calculus) is beyond A-Level, the fundamental concepts appear:
-- Cauchy's integral formula: $f(a) = {'{'\dfrac{1}{2\pi i}'}'}\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
+- Cauchy's integral formula: $f(a) = {`\dfrac{1}{2\pi i}`}\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
 - Residue theorem: $\displaystyle\oint_C f(z)\,dz = 2\pi i \sum \text{Res}(f, a_k)$
 
 These are mentioned for context and further study.

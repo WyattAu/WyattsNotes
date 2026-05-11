@@ -53,8 +53,8 @@ For a charge moving perpendicular to the field ($\theta = 90^\circ$):
 $$\boxed{F = Bqv}$$
 
 :::warning
-Common Pitfall The magnetic force is always perpendicular to both $\mathbf\{v{'\}'}$ and
-$\mathbf\{B{'\}'}$. It does no work ($\mathbf\{F{'\}'} \cdot \mathbf\{v{'\}'} = 0$), so a magnetic field alone cannot
+Common Pitfall The magnetic force is always perpendicular to both $\mathbf{v}$ and
+$\mathbf{B}$. It does no work ($\mathbf{F} \cdot \mathbf{v} = 0$), so a magnetic field alone cannot
 change the speed of a charged particle — only its direction.
 :::
 
@@ -104,13 +104,13 @@ the ratio to 2:1.
 
 ## 4. Helical Motion
 
-When a particle enters a uniform $\mathbf\{B{'\}'}$ field at angle $\theta$ to the field lines:
+When a particle enters a uniform $\mathbf{B}$ field at angle $\theta$ to the field lines:
 
 $$v_\perp = v\sin\theta, \qquad v_\parallel = v\cos\theta$$
 
 The perpendicular component produces circular motion (radius $r = mv_\perp/(Bq)$, period
 $T = 2\pi m/(Bq)$), while the parallel component is unaffected by the magnetic force (since
-$\mathbf\{F{'\}'} \perp \mathbf\{B{'\}'}$, there is no force component along $\mathbf\{B{'\}'}$).
+$\mathbf{F} \perp \mathbf{B}$, there is no force component along $\mathbf{B}$).
 
 The particle traces a **helix** with pitch:
 
@@ -120,7 +120,7 @@ $$\boxed{\mathrm{pitch} = v_\parallel\, T = \frac{2\pi m v\cos\theta}{Bq}}$$
 
 Crossed electric and magnetic fields select particles of a specific velocity.
 
-A particle with charge $q$ and velocity $v$ passes through a region where $\mathbf\{E{'\}'}$ and $\mathbf\{B{'\}'}$
+A particle with charge $q$ and velocity $v$ passes through a region where $\mathbf{E}$ and $\mathbf{B}$
 are perpendicular. The electric force $F_E = qE$ acts in one direction; the magnetic force
 $F_B = Bqv$ acts in the opposite direction.
 
@@ -285,7 +285,7 @@ $$\boxed{\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d}}$$
 - Same-direction currents: attractive
 - Opposite-direction currents: repulsive
 
-This can be determined by applying the right-hand grip rule to wire 1 (to find $\mathbf\{B{'\}'}_1$ at wire
+This can be determined by applying the right-hand grip rule to wire 1 (to find $\mathbf{B}_1$ at wire
 2) and Fleming's left-hand rule to wire 2 (to find the force direction).
 
 ### Definition of the Ampere

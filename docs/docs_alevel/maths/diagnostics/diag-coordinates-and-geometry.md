@@ -226,29 +226,29 @@ The closest point is approximately $(2.11, 3.01)$.
 
 In triangle $ABC$, the point $D$ lies on $BC$ such that $BD : DC = 2 : 1$. The point $E$ is the midpoint of $AC$. The lines $AD$ and $BE$ intersect at point $F$.
 
-Using position vectors with origin at $A$, and taking $\overrightarrow{AB} = \mathbf\{b{'\}'}$ and $\overrightarrow{AC} = \mathbf\{c{'\}'}$:
+Using position vectors with origin at $A$, and taking $\overrightarrow{AB} = \mathbf{b}$ and $\overrightarrow{AC} = \mathbf{c}$:
 
-**(a)** Find the position vector of $F$ in terms of $\mathbf\{b{'\}'}$ and $\mathbf\{c{'\}'}$.
+**(a)** Find the position vector of $F$ in terms of $\mathbf{b}$ and $\mathbf{c}$.
 
 **(b)** Find the ratio $AF : FD$.
 
-**(c)** If $|\mathbf\{b{'\}'}| = 5$, $|\mathbf\{c{'\}'}| = 7$, and $\mathbf\{b{'\}'} \cdot \mathbf\{c{'\}'} = 15$, find $|\overrightarrow{AF}|$.
+**(c)** If $|\mathbf{b}| = 5$, $|\mathbf{c}| = 7$, and $\mathbf{b} \cdot \mathbf{c} = 15$, find $|\overrightarrow{AF}|$.
 
 [Difficulty: hard. Tests vector methods for concurrency problems and application of the dot product.]
 
 **Solution:**
 
-**(a)** Express all points in terms of $\mathbf\{b{'\}'}$ and $\mathbf\{c{'\}'}$:
+**(a)** Express all points in terms of $\mathbf{b}$ and $\mathbf{c}$:
 
-- $\overrightarrow{OB} = \mathbf\{b{'\}'}$, $\overrightarrow{OC} = \mathbf\{c{'\}'}$ (since origin is at $A$)
-- $\overrightarrow{OD} = \overrightarrow{OB} + \frac{2}{3}\overrightarrow{BC} = \mathbf\{b{'\}'} + \frac{2}{3}(\mathbf\{c{'\}'} - \mathbf\{b{'\}'}) = \frac{1}{3}\mathbf\{b{'\}'} + \frac{2}{3}\mathbf\{c{'\}'}$
-- $\overrightarrow{OE} = \frac{1}{2}\mathbf\{c{'\}'}$
+- $\overrightarrow{OB} = \mathbf{b}$, $\overrightarrow{OC} = \mathbf{c}$ (since origin is at $A$)
+- $\overrightarrow{OD} = \overrightarrow{OB} + \frac{2}{3}\overrightarrow{BC} = \mathbf{b} + \frac{2}{3}(\mathbf{c} - \mathbf{b}) = \frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}$
+- $\overrightarrow{OE} = \frac{1}{2}\mathbf{c}$
 
-Point $F$ lies on $AD$: $\overrightarrow{OF} = \overrightarrow{OA} + s\overrightarrow{AD} = s\left(\frac{1}{3}\mathbf\{b{'\}'} + \frac{2}{3}\mathbf\{c{'\}'}\right)$ for some $0 \leq s \leq 1$.
+Point $F$ lies on $AD$: $\overrightarrow{OF} = \overrightarrow{OA} + s\overrightarrow{AD} = s\left(\frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}\right)$ for some $0 \leq s \leq 1$.
 
-Point $F$ also lies on $BE$: $\overrightarrow{OF} = \overrightarrow{OB} + t\overrightarrow{BE} = \mathbf\{b{'\}'} + t\left(\frac{1}{2}\mathbf\{c{'\}'} - \mathbf\{b{'\}'}\right) = (1-t)\mathbf\{b{'\}'} + \frac{t}{2}\mathbf\{c{'\}'}$ for some $0 \leq t \leq 1$.
+Point $F$ also lies on $BE$: $\overrightarrow{OF} = \overrightarrow{OB} + t\overrightarrow{BE} = \mathbf{b} + t\left(\frac{1}{2}\mathbf{c} - \mathbf{b}\right) = (1-t)\mathbf{b} + \frac{t}{2}\mathbf{c}$ for some $0 \leq t \leq 1$.
 
-Equating coefficients of $\mathbf\{b{'\}'}$ and $\mathbf\{c{'\}'}$:
+Equating coefficients of $\mathbf{b}$ and $\mathbf{c}$:
 
 $$\frac{s}{3} = 1 - t \quad \text{and} \quad \frac{2s}{3} = \frac{t}{2}$$
 
@@ -256,7 +256,7 @@ From the second equation: $t = \frac{4s}{3}$.
 
 Substituting into the first: $\frac{s}{3} = 1 - \frac{4s}{3}$, giving $\frac{5s}{3} = 1$, so $s = \frac{3}{5}$.
 
-$$\overrightarrow{OF} = \frac{3}{5}\left(\frac{1}{3}\mathbf\{b{'\}'} + \frac{2}{3}\mathbf\{c{'\}'}\right) = \frac{1}{5}\mathbf\{b{'\}'} + \frac{2}{5}\mathbf\{c{'\}'}$$
+$$\overrightarrow{OF} = \frac{3}{5}\left(\frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}\right) = \frac{1}{5}\mathbf{b} + \frac{2}{5}\mathbf{c}$$
 
 **(b)** $AF : FD$. Since $s = 3/5$, point $F$ divides $AD$ in the ratio $s : (1-s) = 3/5 : 2/5 = 3 : 2$.
 
@@ -264,11 +264,11 @@ So $AF : FD = 3 : 2$.
 
 **(c)**
 
-$$\overrightarrow{AF} = \frac{1}{5}\mathbf\{b{'\}'} + \frac{2}{5}\mathbf\{c{'\}'}$$
+$$\overrightarrow{AF} = \frac{1}{5}\mathbf{b} + \frac{2}{5}\mathbf{c}$$
 
-$$|\overrightarrow{AF}|^2 = \left(\frac{1}{5}\mathbf\{b{'\}'} + \frac{2}{5}\mathbf\{c{'\}'}\right) \cdot \left(\frac{1}{5}\mathbf\{b{'\}'} + \frac{2}{5}\mathbf\{c{'\}'}\right)$$
+$$|\overrightarrow{AF}|^2 = \left(\frac{1}{5}\mathbf{b} + \frac{2}{5}\mathbf{c}\right) \cdot \left(\frac{1}{5}\mathbf{b} + \frac{2}{5}\mathbf{c}\right)$$
 
-$$= \frac{1}{25}|\mathbf\{b{'\}'}|^2 + \frac{4}{25}\mathbf\{b{'\}'}\cdot\mathbf\{c{'\}'} + \frac{4}{25}|\mathbf\{c{'\}'}|^2$$
+$$= \frac{1}{25}|\mathbf{b}|^2 + \frac{4}{25}\mathbf{b}\cdot\mathbf{c} + \frac{4}{25}|\mathbf{c}|^2$$
 
 $$= \frac{1}{25}(25) + \frac{4}{25}(15) + \frac{4}{25}(49)$$
 
@@ -288,7 +288,7 @@ A curve is defined parametrically by:
 
 $$x = t^2 - 2t, \quad y = (t^2 - 2t)^2 - 2(t^2 - 2t)$$
 
-for $t \in \mathbb\{R{'\}'}$.
+for $t \in \mathbb{R}$.
 
 **(a)** Show that $y = x^2 - 2x$ and hence identify the curve as a standard form.
 

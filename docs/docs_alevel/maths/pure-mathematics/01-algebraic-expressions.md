@@ -25,8 +25,8 @@ slug: algebraic-expressions
 ## 1. Surds
 
 **Definition.** A _surd_ is an irrational number expressible as the root of a rational number — that
-is, an expression of the form $\sqrt{n}$ where $n \in \mathbb\{Q{'\}'}^+$ and
-$\sqrt{n} \notin \mathbb\{Q{'\}'}$.
+is, an expression of the form $\sqrt{n}$ where $n \in \mathbb{Q}^+$ and
+$\sqrt{n} \notin \mathbb{Q}$.
 
 The most familiar surds are $\sqrt{2}$, $\sqrt{3}$, $\sqrt{5}$, and so on. The set of surds is a
 subset of the algebraic numbers, and they arise naturally whenever we solve equations of degree 2 or
@@ -77,7 +77,7 @@ denominator correctly.
 **Theorem.** $\sqrt{2}$ is irrational.
 
 _Proof._ We proceed by contradiction. Assume $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$
-where $p, q \in \mathbb\{Z{'\}'}^+$, $q \neq 0$, and $\gcd(p, q) = 1$ (i.e., the fraction is in lowest
+where $p, q \in \mathbb{Z}^+$, $q \neq 0$, and $\gcd(p, q) = 1$ (i.e., the fraction is in lowest
 terms).
 
 $$
@@ -110,7 +110,7 @@ of 2 into both $p$ and $q$, making the fraction reducible.
 
 ## 2. Indices (Exponent Laws)
 
-**Definition.** For $a > 0$ and $n \in \mathbb\{Z{'\}'}^+$, we define
+**Definition.** For $a > 0$ and $n \in \mathbb{Z}^+$, we define
 $a^n = \underbrace{a \times a \times \cdots \times a}_{n \mathrm{ times}}$. We extend this
 definition as follows:
 
@@ -124,7 +124,7 @@ $$
 
 ### 2.1 Laws of Indices
 
-For $a, b > 0$ and $m, n \in \mathbb\{R{'\}'}$:
+For $a, b > 0$ and $m, n \in \mathbb{R}$:
 
 $$
 \begin{aligned}
@@ -238,8 +238,8 @@ have smaller degree than the divisor.
 ### 4.2 Why Polynomial Division Mirrors Integer Long Division
 
 The structural analogy is deep. Both are instances of a _Euclidean domain_ — an algebraic structure
-where we can perform division with remainder. In $\mathbb\{Z{'\}'}$, the "degree" is the absolute value;
-in $\mathbb\{R{'\}'}[x]$, the degree is the polynomial degree. The algorithm is the same: at each step,
+where we can perform division with remainder. In $\mathbb{Z}$, the "degree" is the absolute value;
+in $\mathbb{R}[x]$, the degree is the polynomial degree. The algorithm is the same: at each step,
 eliminate the leading term.
 
 <hr />
@@ -503,7 +503,7 @@ $$f(x) = (x - 1)(x + 1)(x - 3)(x + 2)$$
 
 <details>
 <summary>Solution</summary>
-Assume $\sqrt{3} = \frac{p}{q}$ in lowest terms, $p, q \in \mathbb\{Z{'\}'}^+$, $\gcd(p, q) = 1$.
+Assume $\sqrt{3} = \frac{p}{q}$ in lowest terms, $p, q \in \mathbb{Z}^+$, $\gcd(p, q) = 1$.
 
 $$
 \begin{aligned}

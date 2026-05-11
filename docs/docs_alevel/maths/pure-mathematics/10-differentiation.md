@@ -37,7 +37,7 @@ $$f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$$
 
 provided this limit exists. If it does, we say $f$ is **differentiable** at $x$.
 
-**Geometric interpretation.** The quantity ${'\dfrac{f(x+h)-f(x)}{h}'}$ is the gradient of the secant
+**Geometric interpretation.** The quantity $\dfrac{f(x+h)-f(x)}{h}$ is the gradient of the secant
 line through the points $(x, f(x))$ and $(x+h, f(x+h))$. As $h \to 0$, this secant approaches the
 tangent, so $f'(x)$ is the gradient of the tangent at $x$.
 
@@ -51,7 +51,7 @@ differentiable.
 
 ## 2. Derivative of $x^n$ from First Principles
 
-**Theorem.** For $n \in \mathbb\{N{'\}'}$, ${'\dfrac{d}{dx}'}x^n = nx^{n-1}$.
+**Theorem.** For $n \in \mathbb{N}$, $\dfrac{d}{dx}x^n = nx^{n-1}$.
 
 **Proof.** By the limit definition:
 
@@ -118,11 +118,11 @@ $$\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{
 
 ### 4.1 Proof from the product rule
 
-Write ${'\dfrac{u}{v}'} = u \cdot v^{-1}$. Applying the product rule:
+Write $\dfrac{u}{v} = u \cdot v^{-1}$. Applying the product rule:
 
 $$\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{du}{dx} \cdot v^{-1} + u \cdot \frac{d}{dx}(v^{-1})$$
 
-By the chain rule, ${'\dfrac{d}{dx}'}(v^{-1}) = -v^{-2}{'\dfrac{dv}{dx}'}$:
+By the chain rule, $\dfrac{d}{dx}(v^{-1}) = -v^{-2}\dfrac{dv}{dx}$:
 
 $$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2} \quad \blacksquare$$
 
@@ -161,7 +161,7 @@ the two gear ratios.
 
 ### 6.1 Derivative of $\sin x$ from first principles
 
-**Theorem.** ${'\dfrac{d}{dx}'}\sin x = \cos x$.
+**Theorem.** $\dfrac{d}{dx}\sin x = \cos x$.
 
 **Proof.** Using the limit definition and the compound angle formula
 $\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$:
@@ -181,15 +181,15 @@ $$= \sin x \cdot 0 + \cos x \cdot 1 = \cos x \quad \blacksquare$$
 
 ### 6.2 Derivative of $\cos x$
 
-**Theorem.** ${'\dfrac{d}{dx}'}\cos x = -\sin x$.
+**Theorem.** $\dfrac{d}{dx}\cos x = -\sin x$.
 
-**Proof.** Write $\cos x = \sin\!\left({'{'\dfrac{\pi}{2}'}'} - x\right)$. By the chain rule:
+**Proof.** Write $\cos x = \sin\!\left({`\dfrac{\pi}{2}`} - x\right)$. By the chain rule:
 
 $$\frac{d}{dx}\cos x = \cos\!\left(\frac{\pi}{2}-x\right) \cdot (-1) = -\sin x \quad \blacksquare$$
 
 ### 6.3 Derivative of $e^x$
 
-As proved in the Exponentials and Logarithms chapter: ${'\dfrac{d}{dx}'}e^x = e^x$.
+As proved in the Exponentials and Logarithms chapter: $\dfrac{d}{dx}e^x = e^x$.
 
 ### 6.4 Derivative of $\ln x$
 
@@ -279,7 +279,7 @@ $A = \pi r^2$. Differentiating with respect to $t$:
 
 $$\frac{dA}{dt} = 2\pi r \frac{dr}{dt}$$
 
-At $r = 5$, ${'\dfrac{dr}{dt}'} = 2$:
+At $r = 5$, $\dfrac{dr}{dt} = 2$:
 
 $$\frac{dA}{dt} = 2\pi(5)(2) = 20\pi \,\mathrm{cm}^2\mathrm{/s}$$
 
@@ -328,13 +328,13 @@ If $x = x(t)$ and $y = y(t)$, then
 
 $$\frac{dy}{dx} = \frac{dy/dt}{dx/dt}$$
 
-**Example.** $x = 2\cos t$, $y = 2\sin t$. Find ${'\dfrac{dy}{dx}'}$ at $t = \pi/4$.
+**Example.** $x = 2\cos t$, $y = 2\sin t$. Find $\dfrac{dy}{dx}$ at $t = \pi/4$.
 
 $$\frac{dx}{dt} = -2\sin t, \quad \frac{dy}{dt} = 2\cos t$$
 
 $$\frac{dy}{dx} = \frac{2\cos t}{-2\sin t} = -\cot t$$
 
-At $t = \pi/4$: ${'\dfrac{dy}{dx}'} = -\cot(\pi/4) = -1$.
+At $t = \pi/4$: $\dfrac{dy}{dx} = -\cot(\pi/4) = -1$.
 
 <hr />
 
@@ -343,9 +343,9 @@ At $t = \pi/4$: ${'\dfrac{dy}{dx}'} = -\cot(\pi/4) = -1$.
 When $y$ is defined implicitly by an equation $F(x,y) = 0$, differentiate both sides with respect to
 $x$, treating $y$ as a function of $x$.
 
-**Example.** Find ${'\dfrac{dy}{dx}'}$ where $x^2 + y^2 = 25$.
+**Example.** Find $\dfrac{dy}{dx}$ where $x^2 + y^2 = 25$.
 
-Differentiating: $2x + 2y{'\dfrac{dy}{dx}'} = 0$, so ${'\dfrac{dy}{dx}'} = -{'\dfrac{x}{y}'}$.
+Differentiating: $2x + 2y\dfrac{dy}{dx} = 0$, so $\dfrac{dy}{dx} = -\dfrac{x}{y}$.
 
 <hr />
 
@@ -387,7 +387,7 @@ $f(3) = 27 - 54 + 27 + 1 = 1$.
 
 <details>
 <summary>Problem 3</summary>
-Differentiate $y = {'{'\dfrac{x^2 e^x}{\sin x}'}'}$.
+Differentiate $y = {`\dfrac{x^2 e^x}{\sin x}`}$.
 </details>
 
 <details>
@@ -405,12 +405,12 @@ $$\frac{dy}{dx} = \frac{e^x(x^2+2x)\sin x - x^2 e^x \cos x}{\sin^2 x} = \frac{xe
 
 <details>
 <summary>Problem 4</summary>
-Find ${'\dfrac{dy}{dx}'}$ where $x^3 + y^3 = 3xy$.
+Find $\dfrac{dy}{dx}$ where $x^3 + y^3 = 3xy$.
 </details>
 
 <details>
 <summary>Solution 4</summary>
-Differentiating implicitly: $3x^2 + 3y^2{'\dfrac{dy}{dx}'} = 3y + 3x{'\dfrac{dy}{dx}'}$.
+Differentiating implicitly: $3x^2 + 3y^2\dfrac{dy}{dx} = 3y + 3x\dfrac{dy}{dx}$.
 
 $$3y^2\frac{dy}{dx} - 3x\frac{dy}{dx} = 3y - 3x^2$$ $$\frac{dy}{dx}(y^2 - x) = y - x^2$$
 $$\frac{dy}{dx} = \frac{y - x^2}{y^2 - x}$$
@@ -427,11 +427,11 @@ A spherical balloon is being inflated at a rate of $100\,\mathrm{cm}^3\mathrm{/s
 
 <details>
 <summary>Solution 5</summary>
-$V = {'\dfrac{4}{3}'}\pi r^3$. Differentiating with respect to $t$:
+$V = \dfrac{4}{3}\pi r^3$. Differentiating with respect to $t$:
 
 $$\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$$
 
-At $r = 5$ with ${'\dfrac{dV}{dt}'} = 100$:
+At $r = 5$ with $\dfrac{dV}{dt} = 100$:
 
 $$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{100}{100\pi} = \frac{1}{\pi} \approx 0.318 \,\mathrm{cm/s}$$
 
@@ -466,7 +466,7 @@ Find the equation of the tangent to $y = \ln x$ at the point where $x = e$.
 <summary>Solution 7</summary>
 At $x = e$: $y = \ln e = 1$. The point is $(e, 1)$.
 
-${'\dfrac{dy}{dx}'} = {'\dfrac{1}{x}'}$, so at $x = e$: gradient $m = {'\dfrac{1}{e}'}$.
+$\dfrac{dy}{dx} = \dfrac{1}{x}$, so at $x = e$: gradient $m = \dfrac{1}{e}$.
 
 $$y - 1 = \frac{1}{e}(x - e) \implies y = \frac{x}{e}$$
 
@@ -482,18 +482,18 @@ Given $x = t^2 + 1$ and $y = t^3 - 3t$, find the coordinates of the stationary p
 
 <details>
 <summary>Solution 8</summary>
-${'\dfrac{dy}{dx}'} = {'\dfrac{dy/dt}{dx/dt}'} = {'\dfrac{3t^2 - 3}{2t}'} = {'\dfrac{3(t^2-1)}{2t}'}$.
+$\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt} = \dfrac{3t^2 - 3}{2t} = \dfrac{3(t^2-1)}{2t}$.
 
 Stationary when $dy/dx = 0$: $t^2 = 1 \implies t = \pm 1$.
 
 $t = 1$: $x = 2$, $y = -2$. Point $(2, -2)$. $t = -1$: $x = 2$, $y = 2$. Point $(2, 2)$.
 
-For nature, check ${'\dfrac{d^2y}{dx^2}'}$ or the sign of ${'\dfrac{dy}{dx}'}$:
+For nature, check $\dfrac{d^2y}{dx^2}$ or the sign of $\dfrac{dy}{dx}$:
 
-Near $t = 1$: for $t = 0.5$, ${'\dfrac{dy}{dx}'} = {'\dfrac{3(0.25-1)}{1}'} = -{'\dfrac{9}{4}'} \lt{} 0$; for
-$t = 2$, ${'\dfrac{dy}{dx}'} = {'\dfrac{3(4-1)}{4}'} \gt{} 0$. So $t=1$ is a **minimum**.
+Near $t = 1$: for $t = 0.5$, $\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}{4} \lt{} 0$; for
+$t = 2$, $\dfrac{dy}{dx} = \dfrac{3(4-1)}{4} \gt{} 0$. So $t=1$ is a **minimum**.
 
-Near $t = -1$: for $t = -2$, ${'\dfrac{dy}{dx}'} \lt{} 0$; for $t = -0.5$, ${'\dfrac{dy}{dx}'} \gt{} 0$. So
+Near $t = -1$: for $t = -2$, $\dfrac{dy}{dx} \lt{} 0$; for $t = -0.5$, $\dfrac{dy}{dx} \gt{} 0$. So
 $t=-1$ is a **minimum**.
 
 **If you get this wrong, revise:**
@@ -503,12 +503,12 @@ $t=-1$ is a **minimum**.
 
 <details>
 <summary>Problem 9</summary>
-Prove that ${'\dfrac{d}{dx}'}\sec x = \sec x \tan x$.
+Prove that $\dfrac{d}{dx}\sec x = \sec x \tan x$.
 </details>
 
 <details>
 <summary>Solution 9</summary>
-$\sec x = {'{'\dfrac{1}{\cos x}'}'} = (\cos x)^{-1}$.
+$\sec x = {`\dfrac{1}{\cos x}`} = (\cos x)^{-1}$.
 
 $$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac{\sin x}{\cos^2 x} = \frac{1}{\cos x} \cdot \frac{\sin x}{\cos x} = \sec x \tan x \quad \blacksquare$$
 
@@ -518,16 +518,16 @@ $$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac{\sin x}{\cos^2 x} 
 
 <details>
 <summary>Problem 10</summary>
-Find the minimum value of $f(x) = x + {'\dfrac{4}{x}'}$ for $x \gt{} 0$.
+Find the minimum value of $f(x) = x + \dfrac{4}{x}$ for $x \gt{} 0$.
 </details>
 
 <details>
 <summary>Solution 10</summary>
-$f'(x) = 1 - {'\dfrac{4}{x^2}'} = {'\dfrac{x^2 - 4}{x^2}'} = 0 \implies x^2 = 4 \implies x = 2$ (since $x \gt{} 0$).
+$f'(x) = 1 - \dfrac{4}{x^2} = \dfrac{x^2 - 4}{x^2} = 0 \implies x^2 = 4 \implies x = 2$ (since $x \gt{} 0$).
 
-$f''(x) = {'\dfrac{8}{x^3}'}$. At $x = 2$: $f''(2) = 1 \gt{} 0$, so minimum.
+$f''(x) = \dfrac{8}{x^3}$. At $x = 2$: $f''(2) = 1 \gt{} 0$, so minimum.
 
-$f(2) = 2 + {'\dfrac{4}{2}'} = 4$.
+$f(2) = 2 + \dfrac{4}{2} = 4$.
 
 **If you get this wrong, revise:**
 [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
@@ -543,7 +543,7 @@ Differentiate $y = \sin^3(2x^2 + 1)$.
 <summary>Solution 11</summary>
 Let $u = \sin(2x^2+1)$, so $y = u^3$.
 
-${'\dfrac{dy}{du}'} = 3u^2$, ${'\dfrac{du}{dx}'} = \cos(2x^2+1) \cdot 4x$.
+$\dfrac{dy}{du} = 3u^2$, $\dfrac{du}{dx} = \cos(2x^2+1) \cdot 4x$.
 
 $$\frac{dy}{dx} = 3\sin^2(2x^2+1) \cdot \cos(2x^2+1) \cdot 4x = 12x\sin^2(2x^2+1)\cos(2x^2+1)$$
 
@@ -572,7 +572,7 @@ $f''(x) = 0$ when $x = 1$. But $f''(x) = 12(x-1)^2 \geq 0$ for all $x$ — the s
 
 <details>
 <summary>Problem 13</summary>
-A curve has equation $y = {'\dfrac{2x+1}{x-3}'}$. Find the equations of the asymptotes and the coordinates of any stationary points.
+A curve has equation $y = \dfrac{2x+1}{x-3}$. Find the equations of the asymptotes and the coordinates of any stationary points.
 </details>
 
 <details>
@@ -581,7 +581,7 @@ Vertical asymptote: $x = 3$ (where denominator is zero).
 
 As $x \to \pm\infty$: $y \to 2$. Horizontal asymptote: $y = 2$.
 
-$y' = {'\dfrac{2(x-3) - (2x+1)}{(x-3)^2}'} = {'\dfrac{-7}{(x-3)^2}'}$.
+$y' = \dfrac{2(x-3) - (2x+1)}{(x-3)^2} = \dfrac{-7}{(x-3)^2}$.
 
 Since $y' \lt{} 0$ for all $x \neq 3$, there are **no stationary points**. The function is strictly
 decreasing on each branch.
@@ -600,7 +600,7 @@ Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\math
 <summary>Solution 14</summary>
 With semi-vertical angle $30^\circ$: $r = h\tan 30° = h/\sqrt{3}$.
 
-$V = {'\dfrac{1}{3}'}\pi r^2 h = {'\dfrac{1}{3}'}\pi {'\dfrac{h^2}{3}'} h = {'{'\dfrac{\pi h^3}{9}'}'}$.
+$V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi \dfrac{h^2}{3} h = {`\dfrac{\pi h^3}{9}`}$.
 
 $$\frac{dV}{dt} = \frac{\pi h^2}{3} \cdot \frac{dh}{dt}$$
 

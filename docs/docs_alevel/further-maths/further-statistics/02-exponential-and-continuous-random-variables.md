@@ -197,7 +197,7 @@ A **Poisson process** with rate $\lambda$ satisfies:
 
 **Proof sketch that inter-arrival times are exponential.** Let $T$ be the time until the first
 event.
-$P(T > t) = P(\mathrm{no events in }[0,t]) = P(N(t) = 0) = {'{'\dfrac{e^{-\lambda t}(\lambda t)^0}{0!}'}'} = e^{-\lambda t}$.
+$P(T > t) = P(\mathrm{no events in }[0,t]) = P(N(t) = 0) = {`\dfrac{e^{-\lambda t}(\lambda t)^0}{0!}`} = e^{-\lambda t}$.
 
 So $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp}(\lambda)$. $\blacksquare$
 
@@ -207,7 +207,7 @@ For the exponential distribution:
 
 $$F(x) = 1 - e^{-\lambda x} = p \implies x = -\frac{1}{\lambda}\ln(1-p)$$
 
-The median is $x_{0.5} = -{'{'\dfrac{\ln(0.5)}{\lambda}'}'} = {'{'\dfrac{\ln 2}{\lambda}'}'}$.
+The median is $x_{0.5} = -{`\dfrac{\ln(0.5)}{\lambda}`} = {`\dfrac{\ln 2}{\lambda}`}$.
 
 <hr />
 
@@ -221,22 +221,22 @@ $P(X > 3) = e^{-0.5 \times 3} = e^{-1.5} \approx 0.2231$.
 
 $P(1 < X < 4) = F(4) - F(1) = (1-e^{-2}) - (1-e^{-0.5}) = e^{-0.5} - e^{-2} \approx 0.6065 - 0.1353 = 0.4712$.
 
-Median $= {'{'\dfrac{\ln 2}{0.5}'}'} = 2\ln 2 \approx 1.386$.
+Median $= {`\dfrac{\ln 2}{0.5}`} = 2\ln 2 \approx 1.386$.
 
 ### 3.2 Continuous random variable from a PDF
 
-**Example.** $X$ has PDF $f(x) = {'\dfrac{3}{8}'}x^2$ for $0 \leq x \leq 2$ and $f(x) = 0$ otherwise.
+**Example.** $X$ has PDF $f(x) = \dfrac{3}{8}x^2$ for $0 \leq x \leq 2$ and $f(x) = 0$ otherwise.
 
-Verify: $\int_0^2 {'\dfrac{3}{8}'}x^2\,dx = {'\dfrac{3}{8}'}\cdot{'\dfrac{8}{3}'} = 1$. $\checkmark$
+Verify: $\int_0^2 \dfrac{3}{8}x^2\,dx = \dfrac{3}{8}\cdot\dfrac{8}{3} = 1$. $\checkmark$
 
-$E(X) = \int_0^2 x\cdot{'\dfrac{3}{8}'}x^2\,dx = {'\dfrac{3}{8}'}\int_0^2 x^3\,dx = {'\dfrac{3}{8}'}\cdot{'\dfrac{16}{4}'} = {'\dfrac{3}{2}'}$.
+$E(X) = \int_0^2 x\cdot\dfrac{3}{8}x^2\,dx = \dfrac{3}{8}\int_0^2 x^3\,dx = \dfrac{3}{8}\cdot\dfrac{16}{4} = \dfrac{3}{2}$.
 
-$E(X^2) = {'\dfrac{3}{8}'}\int_0^2 x^4\,dx = {'\dfrac{3}{8}'}\cdot{'\dfrac{32}{5}'} = {'\dfrac{12}{5}'}$.
+$E(X^2) = \dfrac{3}{8}\int_0^2 x^4\,dx = \dfrac{3}{8}\cdot\dfrac{32}{5} = \dfrac{12}{5}$.
 
-$\mathrm{Var}(X) = {'\dfrac{12}{5}'} - \left({'\dfrac{3}{2}'}\right)^2 = {'\dfrac{12}{5}'} - {'\dfrac{9}{4}'} = {'\dfrac{3}{20}'}$.
+$\mathrm{Var}(X) = \dfrac{12}{5} - \left(\dfrac{3}{2}\right)^2 = \dfrac{12}{5} - \dfrac{9}{4} = \dfrac{3}{20}$.
 
 Median:
-$\int_0^m {'\dfrac{3}{8}'}x^2\,dx = 0.5 \implies {'\dfrac{m^3}{8}'} = 0.5 \implies m^3 = 4 \implies m = \sqrt[3]{4} \approx 1.587$.
+$\int_0^m \dfrac{3}{8}x^2\,dx = 0.5 \implies \dfrac{m^3}{8} = 0.5 \implies m^3 = 4 \implies m = \sqrt[3]{4} \approx 1.587$.
 
 ### 3.3 CDF from PDF
 
@@ -259,7 +259,7 @@ distribution of $\bar{X}$:
 
 $\bar{X} \sim N\!\left(\frac{1}{\lambda}, \frac{1}{n\lambda^2}\right) = N(200, 4000)$ approximately.
 
-$z = {'{'\dfrac{420 - 200}{\sqrt{4000}}'}'} = {'\dfrac{220}{63.25}'} = 3.48$.
+$z = {`\dfrac{420 - 200}{\sqrt{4000}}`} = \dfrac{220}{63.25} = 3.48$.
 
 $|z| = 3.48 > 1.96$, so reject $H_0$.
 
@@ -279,7 +279,7 @@ $P(X > 1) = e^{-2(1)} = e^{-2} \approx 0.1353$.
 $P(0.5 < X < 2) = (1-e^{-4}) - (1-e^{-1}) = e^{-1} - e^{-4} \approx 0.3679 - 0.0183 = 0.3496$.
 
 90th percentile:
-$F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -{'{'\dfrac{\ln(0.1)}{2}'}'} \approx 1.151$.
+$F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -{`\dfrac{\ln(0.1)}{2}`} \approx 1.151$.
 
 **If you get this wrong, revise:** [Percentiles](#27-percentiles) — Section 2.7.
 
@@ -287,19 +287,19 @@ $F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -{'{'\dfrac{\ln(0.1)}{2}'}'}
 
 <details>
 <summary>Problem 2</summary>
-A continuous random variable $X$ has PDF $f(x) = {'\dfrac{3x^2}{8}'}$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var}(X)$, and the median.
+A continuous random variable $X$ has PDF $f(x) = \dfrac{3x^2}{8}$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var}(X)$, and the median.
 </details>
 
 <details>
 <summary>Solution 2</summary>
-$E(X) = \int_0^2 x\cdot{'\dfrac{3x^2}{8}'}\,dx = {'\dfrac{3}{8}'}\cdot\left[{'\dfrac{x^4}{4}'}\right]_0^2 = {'\dfrac{3}{8}'}\cdot 4 = 1.5$.
+$E(X) = \int_0^2 x\cdot\dfrac{3x^2}{8}\,dx = \dfrac{3}{8}\cdot\left[\dfrac{x^4}{4}\right]_0^2 = \dfrac{3}{8}\cdot 4 = 1.5$.
 
-$E(X^2) = \int_0^2 x^2\cdot{'\dfrac{3x^2}{8}'}\,dx = {'\dfrac{3}{8}'}\cdot\left[{'\dfrac{x^5}{5}'}\right]_0^2 = {'\dfrac{3}{8}'}\cdot{'\dfrac{32}{5}'} = 2.4$.
+$E(X^2) = \int_0^2 x^2\cdot\dfrac{3x^2}{8}\,dx = \dfrac{3}{8}\cdot\left[\dfrac{x^5}{5}\right]_0^2 = \dfrac{3}{8}\cdot\dfrac{32}{5} = 2.4$.
 
 $\mathrm{Var}(X) = 2.4 - 1.5^2 = 2.4 - 2.25 = 0.15$.
 
 Median:
-$\int_0^m {'\dfrac{3x^2}{8}'}\,dx = 0.5 \implies {'\dfrac{m^3}{8}'} = 0.5 \implies m = \sqrt[3]{4} \approx 1.587$.
+$\int_0^m \dfrac{3x^2}{8}\,dx = 0.5 \implies \dfrac{m^3}{8} = 0.5 \implies m = \sqrt[3]{4} \approx 1.587$.
 
 **If you get this wrong, revise:** [Median, mode, and quartiles](#15-median-mode-and-quartiles) —
 Section 1.5.
@@ -313,7 +313,7 @@ Prove the memoryless property of the exponential distribution.
 
 <details>
 <summary>Solution 3</summary>
-$P(X > s+t \mid X > s) = {'\dfrac{P(X > s+t)}{P(X > s)}'} = {'{'\dfrac{e^{-\lambda(s+t)}}{e^{-\lambda s}}'}'} = e^{-\lambda t} = P(X > t)$. $\blacksquare$
+$P(X > s+t \mid X > s) = \dfrac{P(X > s+t)}{P(X > s)} = {`\dfrac{e^{-\lambda(s+t)}}{e^{-\lambda s}}`} = e^{-\lambda t} = P(X > t)$. $\blacksquare$
 
 This uses the survival function $P(X > x) = e^{-\lambda x}$.
 
@@ -340,18 +340,18 @@ Section 2.6.
 
 <details>
 <summary>Problem 5</summary>
-$X$ has PDF $f(x) = {'\dfrac{1}{2}'}x$ for $0 \leq x \leq 2$. Find the CDF, $E(X)$, and $\mathrm{Var}(X)$.
+$X$ has PDF $f(x) = \dfrac{1}{2}x$ for $0 \leq x \leq 2$. Find the CDF, $E(X)$, and $\mathrm{Var}(X)$.
 </details>
 
 <details>
 <summary>Solution 5</summary>
-CDF: $F(x) = \int_0^x {'\dfrac{t}{2}'}\,dt = {'\dfrac{x^2}{4}'}$ for $0 \leq x \leq 2$. $F(x) = 0$ for $x < 0$, $F(x) = 1$ for $x > 2$.
+CDF: $F(x) = \int_0^x \dfrac{t}{2}\,dt = \dfrac{x^2}{4}$ for $0 \leq x \leq 2$. $F(x) = 0$ for $x < 0$, $F(x) = 1$ for $x > 2$.
 
-$E(X) = \int_0^2 x\cdot{'\dfrac{x}{2}'}\,dx = {'\dfrac{1}{2}'}\left[{'\dfrac{x^3}{3}'}\right]_0^2 = {'\dfrac{4}{3}'}$.
+$E(X) = \int_0^2 x\cdot\dfrac{x}{2}\,dx = \dfrac{1}{2}\left[\dfrac{x^3}{3}\right]_0^2 = \dfrac{4}{3}$.
 
-$E(X^2) = {'\dfrac{1}{2}'}\left[{'\dfrac{x^4}{4}'}\right]_0^2 = {'\dfrac{1}{2}'}\cdot 4 = 2$.
+$E(X^2) = \dfrac{1}{2}\left[\dfrac{x^4}{4}\right]_0^2 = \dfrac{1}{2}\cdot 4 = 2$.
 
-$\mathrm{Var}(X) = 2 - \left({'\dfrac{4}{3}'}\right)^2 = 2 - {'\dfrac{16}{9}'} = {'\dfrac{2}{9}'}$.
+$\mathrm{Var}(X) = 2 - \left(\dfrac{4}{3}\right)^2 = 2 - \dfrac{16}{9} = \dfrac{2}{9}$.
 
 **If you get this wrong, revise:** [Expected value](#13-expected-value) — Section 1.3.
 
@@ -373,17 +373,17 @@ By the memoryless property: $P(X > 500+200 \mid X > 500) = P(X > 200) = e^{-0.01
 
 <details>
 <summary>Problem 7</summary>
-A continuous random variable $X$ has CDF $F(x) = {'\dfrac{x^3}{27}'}$ for $0 \leq x \leq 3$. Find the PDF, $E(X)$, and the upper quartile.
+A continuous random variable $X$ has CDF $F(x) = \dfrac{x^3}{27}$ for $0 \leq x \leq 3$. Find the PDF, $E(X)$, and the upper quartile.
 </details>
 
 <details>
 <summary>Solution 7</summary>
-PDF: $f(x) = F'(x) = {'\dfrac{x^2}{9}'}$ for $0 \leq x \leq 3$.
+PDF: $f(x) = F'(x) = \dfrac{x^2}{9}$ for $0 \leq x \leq 3$.
 
-$E(X) = \int_0^3 x\cdot{'\dfrac{x^2}{9}'}\,dx = {'\dfrac{1}{9}'}\left[{'\dfrac{x^4}{4}'}\right]_0^3 = {'\dfrac{1}{9}'}\cdot{'\dfrac{81}{4}'} = {'\dfrac{9}{4}'} = 2.25$.
+$E(X) = \int_0^3 x\cdot\dfrac{x^2}{9}\,dx = \dfrac{1}{9}\left[\dfrac{x^4}{4}\right]_0^3 = \dfrac{1}{9}\cdot\dfrac{81}{4} = \dfrac{9}{4} = 2.25$.
 
 Upper quartile:
-$F(Q_3) = 0.75 \implies {'\dfrac{Q_3^3}{27}'} = 0.75 \implies Q_3^3 = 20.25 \implies Q_3 \approx 2.725$.
+$F(Q_3) = 0.75 \implies \dfrac{Q_3^3}{27} = 0.75 \implies Q_3^3 = 20.25 \implies Q_3 \approx 2.725$.
 
 **If you get this wrong, revise:**
 [Cumulative distribution function](#12-cumulative-distribution-function) — Section 1.2.
@@ -401,7 +401,7 @@ $E(X) = \int_0^{\infty}x\lambda e^{-\lambda x}\,dx$.
 
 Let $u = x$, $dv = \lambda e^{-\lambda x}\,dx$, so $du = dx$, $v = -e^{-\lambda x}$.
 
-$E(X) = \left[-xe^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}e^{-\lambda x}\,dx = 0 + \left[-{'{'\dfrac{1}{\lambda}'}'}e^{-\lambda x}\right]_0^{\infty} = {'{'\dfrac{1}{\lambda}'}'}$.
+$E(X) = \left[-xe^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}e^{-\lambda x}\,dx = 0 + \left[-{`\dfrac{1}{\lambda}`}e^{-\lambda x}\right]_0^{\infty} = {`\dfrac{1}{\lambda}`}$.
 $\blacksquare$
 
 **If you get this wrong, revise:**
@@ -436,11 +436,11 @@ $X$ has PDF $f(x) = 4x^3$ for $0 \leq x \leq 1$. Find $P(X > 0.5)$, $E(X)$, $\ma
 <summary>Solution 10</summary>
 $P(X > 0.5) = \int_{0.5}^1 4x^3\,dx = \left[x^4\right]_{0.5}^1 = 1 - 0.0625 = 0.9375$.
 
-$E(X) = \int_0^1 4x^4\,dx = \left[{'\dfrac{4x^5}{5}'}\right]_0^1 = {'\dfrac{4}{5}'}$.
+$E(X) = \int_0^1 4x^4\,dx = \left[\dfrac{4x^5}{5}\right]_0^1 = \dfrac{4}{5}$.
 
-$E(X^2) = \int_0^1 4x^5\,dx = \left[{'\dfrac{4x^6}{6}'}\right]_0^1 = {'\dfrac{2}{3}'}$.
+$E(X^2) = \int_0^1 4x^5\,dx = \left[\dfrac{4x^6}{6}\right]_0^1 = \dfrac{2}{3}$.
 
-$\mathrm{Var}(X) = {'\dfrac{2}{3}'} - \left({'\dfrac{4}{5}'}\right)^2 = {'\dfrac{2}{3}'} - {'\dfrac{16}{25}'} = {'\dfrac{50 - 48}{75}'} = {'\dfrac{2}{75}'}$.
+$\mathrm{Var}(X) = \dfrac{2}{3} - \left(\dfrac{4}{5}\right)^2 = \dfrac{2}{3} - \dfrac{16}{25} = \dfrac{50 - 48}{75} = \dfrac{2}{75}$.
 
 Mode: $f(x) = 4x^3$ is increasing on $[0,1]$, so the mode is at $x = 1$.
 
@@ -552,7 +552,7 @@ $P(N \geq 3) = 1 - P(N \leq 2) = 1 - e^{-2.5}(1 + 2.5 + 2.5^2/2) = 1 - 0.0821 \t
 (c) Find the median inter-arrival time.
 
 Median
-$= {'{'\dfrac{\ln 2}{\lambda}'}'} = {'{'\dfrac{\ln 2}{5}'}'} \approx 0.139\,\mathrm{hours} \approx 8.3\,\mathrm{minutes}$.
+$= {`\dfrac{\ln 2}{\lambda}`} = {`\dfrac{\ln 2}{5}`} \approx 0.139\,\mathrm{hours} \approx 8.3\,\mathrm{minutes}$.
 
 <hr />
 
@@ -582,7 +582,7 @@ $$\boxed{\mathrm{Var}(X) = \frac{(b-a)^2}{12}} \quad \blacksquare$$
 
 ### 7.3 CDF of the continuous uniform
 
-$$F(x) = \begin{cases} 0 & x \lt{} a \\ {'\dfrac{x - a}{b - a}'} & a \leq x \leq b \\ 1 & x > b \end{cases}$$
+$$F(x) = \begin{cases} 0 & x \lt{} a \\ \dfrac{x - a}{b - a} & a \leq x \leq b \\ 1 & x > b \end{cases}$$
 
 <hr />
 
@@ -662,30 +662,30 @@ essentially zero and clearly wrong.
 <details>
 <summary>Q1. $X \sim \mathrm{Exp}(\lambda)$. Find the value of $\lambda$ such that $P(X > 2) = 0.3$, and hence find $E(X)$ and the 80th percentile.</summary>
 
-$P(X > 2) = e^{-2\lambda} = 0.3 \implies -2\lambda = \ln(0.3) \implies \lambda = {'{'\dfrac{-\ln(0.3)}{2}'}'} = {'\dfrac{1.204}{2}'} = 0.602$.
+$P(X > 2) = e^{-2\lambda} = 0.3 \implies -2\lambda = \ln(0.3) \implies \lambda = {`\dfrac{-\ln(0.3)}{2}`} = \dfrac{1.204}{2} = 0.602$.
 
 $E(X) = 1/0.602 \approx 1.661$.
 
 80th percentile:
-$F(x) = 0.8 \implies 1 - e^{-0.602x} = 0.8 \implies e^{-0.602x} = 0.2 \implies x = {'{'\dfrac{-\ln(0.2)}{0.602}'}'} = {'\dfrac{1.609}{0.602}'} \approx 2.673$.
+$F(x) = 0.8 \implies 1 - e^{-0.602x} = 0.8 \implies e^{-0.602x} = 0.2 \implies x = {`\dfrac{-\ln(0.2)}{0.602}`} = \dfrac{1.609}{0.602} \approx 2.673$.
 
 </details>
 
 <details>
 <summary>Q2. A continuous random variable $X$ has PDF $f(x) = kx(4-x)$ for $0 \leq x \leq 4$. Find $k$, $E(X)$, $\mathrm{Var}(X)$, and the median.</summary>
 
-$\int_0^4 kx(4-x)\,dx = k\int_0^4 (4x - x^2)\,dx = k\left[2x^2 - {'\dfrac{x^3}{3}'}\right]_0^4 = k(32 - 64/3) = k(32/3) = 1 \implies k = 3/32$.
+$\int_0^4 kx(4-x)\,dx = k\int_0^4 (4x - x^2)\,dx = k\left[2x^2 - \dfrac{x^3}{3}\right]_0^4 = k(32 - 64/3) = k(32/3) = 1 \implies k = 3/32$.
 
-$E(X) = {'\dfrac{3}{32}'}\int_0^4 (4x^2 - x^3)\,dx = {'\dfrac{3}{32}'}\left[{'\dfrac{4x^3}{3}'} - {'\dfrac{x^4}{4}'}\right]_0^4 = {'\dfrac{3}{32}'}\left({'\dfrac{256}{3}'} - 64\right) = {'\dfrac{3}{32}'}\left({'\dfrac{256 - 192}{3}'}\right) = {'\dfrac{64}{32}'} = 2$.
+$E(X) = \dfrac{3}{32}\int_0^4 (4x^2 - x^3)\,dx = \dfrac{3}{32}\left[\dfrac{4x^3}{3} - \dfrac{x^4}{4}\right]_0^4 = \dfrac{3}{32}\left(\dfrac{256}{3} - 64\right) = \dfrac{3}{32}\left(\dfrac{256 - 192}{3}\right) = \dfrac{64}{32} = 2$.
 
-$E(X^2) = {'\dfrac{3}{32}'}\int_0^4 (4x^3 - x^4)\,dx = {'\dfrac{3}{32}'}\left[x^4 - {'\dfrac{x^5}{5}'}\right]_0^4 = {'\dfrac{3}{32}'}(256 - 204.8) = {'{'\dfrac{3 \times 51.2}{32}'}'} = 4.8$.
+$E(X^2) = \dfrac{3}{32}\int_0^4 (4x^3 - x^4)\,dx = \dfrac{3}{32}\left[x^4 - \dfrac{x^5}{5}\right]_0^4 = \dfrac{3}{32}(256 - 204.8) = {`\dfrac{3 \times 51.2}{32}`} = 4.8$.
 
 $\mathrm{Var}(X) = 4.8 - 4 = 0.8$.
 
 Median:
-${'\dfrac{3}{32}'}\int_0^m (4x - x^2)\,dx = 0.5 \implies {'\dfrac{3}{32}'}\left(2m^2 - {'\dfrac{m^3}{3}'}\right) = 0.5$.
+$\dfrac{3}{32}\int_0^m (4x - x^2)\,dx = 0.5 \implies \dfrac{3}{32}\left(2m^2 - \dfrac{m^3}{3}\right) = 0.5$.
 
-$2m^2 - {'\dfrac{m^3}{3}'} = {'\dfrac{16}{3}'} \implies 6m^2 - m^3 = 16$.
+$2m^2 - \dfrac{m^3}{3} = \dfrac{16}{3} \implies 6m^2 - m^3 = 16$.
 
 By inspection: $m = 2$ gives $24 - 8 = 16$. So the median is $2$ (equal to the mean, reflecting the
 symmetry of the PDF about $x = 2$).
@@ -738,20 +738,20 @@ of the individual rates.
 </details>
 
 <details>
-<summary>Q6. A random variable $X$ has PDF $f(x) = {'\dfrac{2x}{9}'}$ for $0 \leq x \leq 3$. Find the CDF, $E(X)$, $\mathrm{Var}(X)$, the median, and $P(1 \lt{} X \lt{} 2)$.</summary>
+<summary>Q6. A random variable $X$ has PDF $f(x) = \dfrac{2x}{9}$ for $0 \leq x \leq 3$. Find the CDF, $E(X)$, $\mathrm{Var}(X)$, the median, and $P(1 \lt{} X \lt{} 2)$.</summary>
 
-CDF: $F(x) = \int_0^x {'\dfrac{2t}{9}'}\,dt = {'\dfrac{x^2}{9}'}$ for $0 \leq x \leq 3$. $F(x) = 0$ for
+CDF: $F(x) = \int_0^x \dfrac{2t}{9}\,dt = \dfrac{x^2}{9}$ for $0 \leq x \leq 3$. $F(x) = 0$ for
 $x \lt{} 0$, $F(x) = 1$ for $x > 3$.
 
-$E(X) = \int_0^3 x \cdot {'\dfrac{2x}{9}'}\,dx = {'\dfrac{2}{9}'}\left[{'\dfrac{x^3}{3}'}\right]_0^3 = {'\dfrac{2}{9}'} \times 9 = 2$.
+$E(X) = \int_0^3 x \cdot \dfrac{2x}{9}\,dx = \dfrac{2}{9}\left[\dfrac{x^3}{3}\right]_0^3 = \dfrac{2}{9} \times 9 = 2$.
 
-$E(X^2) = {'\dfrac{2}{9}'}\left[{'\dfrac{x^4}{4}'}\right]_0^3 = {'\dfrac{2}{9}'} \times {'\dfrac{81}{4}'} = {'\dfrac{9}{2}'} = 4.5$.
+$E(X^2) = \dfrac{2}{9}\left[\dfrac{x^4}{4}\right]_0^3 = \dfrac{2}{9} \times \dfrac{81}{4} = \dfrac{9}{2} = 4.5$.
 
 $\mathrm{Var}(X) = 4.5 - 4 = 0.5$.
 
-Median: ${'\dfrac{m^2}{9}'} = 0.5 \implies m^2 = 4.5 \implies m = \sqrt{4.5} \approx 2.12$.
+Median: $\dfrac{m^2}{9} = 0.5 \implies m^2 = 4.5 \implies m = \sqrt{4.5} \approx 2.12$.
 
-$P(1 \lt{} X \lt{} 2) = F(2) - F(1) = {'\dfrac{4}{9}'} - {'\dfrac{1}{9}'} = {'\dfrac{1}{3}'}$.
+$P(1 \lt{} X \lt{} 2) = F(2) - F(1) = \dfrac{4}{9} - \dfrac{1}{9} = \dfrac{1}{3}$.
 
 </details>
 
@@ -769,7 +769,7 @@ $P(1 \lt{} X \lt{} 2) = F(2) - F(1) = {'\dfrac{4}{9}'} - {'\dfrac{1}{9}'} = {'\d
 
 $$P(T > 150+100 \mid T > 150) = P(T > 100)$$
 
-$\lambda = {'\dfrac{1}{200}'} = 0.005$.
+$\lambda = \dfrac{1}{200} = 0.005$.
 
 $P(T > 100) = e^{-0.005 \times 100} = e^{-0.5} = \boxed{0.607}$ (3 s.f.).
 
@@ -777,9 +777,9 @@ $P(T > 100) = e^{-0.005 \times 100} = e^{-0.5} = \boxed{0.607}$ (3 s.f.).
 
 **Problem.** $X \sim \mathrm{U}(0, 10)$. Find $P(X > 6 \mid X > 3)$.
 
-**Solution.** $P(X > 6 \mid X > 3) = {'\dfrac{P(X > 6)}{P(X > 3)}'} = {'\dfrac{0.4}{0.7}'} = {'\dfrac{4}{7}'} \approx \boxed{0.571}$.
+**Solution.** $P(X > 6 \mid X > 3) = \dfrac{P(X > 6)}{P(X > 3)} = \dfrac{0.4}{0.7} = \dfrac{4}{7} \approx \boxed{0.571}$.
 
-Alternatively: conditional on $X > 3$, the distribution is $\mathrm{U}(3, 10)$, so $P(X > 6 \mid X > 3) = {'\dfrac{10-6}{10-3}'} = {'\dfrac{4}{7}'}$.
+Alternatively: conditional on $X > 3$, the distribution is $\mathrm{U}(3, 10)$, so $P(X > 6 \mid X > 3) = \dfrac{10-6}{10-3} = \dfrac{4}{7}$.
 
 ### Example 8.3: Sum of independent exponential random variables
 
@@ -793,7 +793,7 @@ $$= \int_0^{\infty} \lambda_1 e^{-\lambda_1 x} \cdot e^{-\lambda_2 x}\,dx = \lam
 
 $$= \frac{\lambda_1}{\lambda_1 + \lambda_2}$$
 
-For example, if $\lambda_1 = \lambda_2$: $P(X < Y) = {'\dfrac{1}{2}'}$ (by symmetry).
+For example, if $\lambda_1 = \lambda_2$: $P(X < Y) = \dfrac{1}{2}$ (by symmetry).
 
 ### Example 8.4: Finding a CDF from a PDF with a parameter
 
@@ -801,15 +801,15 @@ For example, if $\lambda_1 = \lambda_2$: $P(X < Y) = {'\dfrac{1}{2}'}$ (by symme
 
 **Solution.** $\displaystyle\int_0^4 kx(4-x)\,dx = k\!\left[2x^2 - \frac{x^3}{3}\right]_0^4 = k\!\left(32 - \frac{64}{3}\right) = \frac{32k}{3} = 1 \implies k = \frac{3}{32}$.
 
-CDF: $F(x) = {'\dfrac{3}{32}'}\!\left(2x^2 - {'\dfrac{x^3}{3}'}\right) = {'\dfrac{3x^2}{16}'} - {'\dfrac{x^3}{32}'}$ for $0 \leq x \leq 4$.
+CDF: $F(x) = \dfrac{3}{32}\!\left(2x^2 - \dfrac{x^3}{3}\right) = \dfrac{3x^2}{16} - \dfrac{x^3}{32}$ for $0 \leq x \leq 4$.
 
-$P(1 < X < 3) = F(3) - F(1) = \left({'\dfrac{27}{16}'} - {'\dfrac{27}{32}'}\right) - \left({'\dfrac{3}{16}'} - {'\dfrac{1}{32}'}\right) = {'\dfrac{27}{32}'} - {'\dfrac{5}{32}'} = \boxed{{'\dfrac{11}{16}'}}$.
+$P(1 < X < 3) = F(3) - F(1) = \left(\dfrac{27}{16} - \dfrac{27}{32}\right) - \left(\dfrac{3}{16} - \dfrac{1}{32}\right) = \dfrac{27}{32} - \dfrac{5}{32} = \boxed{\dfrac{11}{16}}$.
 
 ### Example 8.5: Normal approximation to the exponential
 
 **Problem.** $X_1, X_2, \ldots, X_{50}$ are independent, each following $\mathrm{Exp}(0.1)$. Approximate $P(\overline{X} > 12)$.
 
-**Solution.** $E(X_i) = 10$, $\mathrm{Var}(X_i) = 100$. $E(\overline{X}) = 10$, $\mathrm{Var}(\overline{X}) = {'\dfrac{100}{50}'} = 2$.
+**Solution.** $E(X_i) = 10$, $\mathrm{Var}(X_i) = 100$. $E(\overline{X}) = 10$, $\mathrm{Var}(\overline{X}) = \dfrac{100}{50} = 2$.
 
 By the CLT, $\overline{X} \approx N(10, 2)$ approximately.
 
@@ -831,25 +831,25 @@ So $Y \sim \mathrm{U}(0,1)$.
 
 **Solution.** **Mode:** The PDF peaks at $x = 1$, so mode $= \boxed{1}$.
 
-**Median:** For $m \leq 1$: $\displaystyle\int_0^m 2x\,dx = m^2$. Set $m^2 = 0.5 \implies m = {'{'\dfrac{1}{\sqrt{2}}'}'} \approx 0.707$.
+**Median:** For $m \leq 1$: $\displaystyle\int_0^m 2x\,dx = m^2$. Set $m^2 = 0.5 \implies m = {`\dfrac{1}{\sqrt{2}}`} \approx 0.707$.
 
-**Mean:** $E(X) = \displaystyle\int_0^1 2x^2\,dx + \int_1^2 2x(2-x)\,dx = {'\dfrac{2}{3}'} + \left[2x^2 - {'\dfrac{2x^3}{3}'}\right]_1^2 = {'\dfrac{2}{3}'} + {'\dfrac{4}{3}'} = \boxed{2}$.
+**Mean:** $E(X) = \displaystyle\int_0^1 2x^2\,dx + \int_1^2 2x(2-x)\,dx = \dfrac{2}{3} + \left[2x^2 - \dfrac{2x^3}{3}\right]_1^2 = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$.
 
-Wait, let me recalculate: $\displaystyle\int_1^2 2x(2-x)\,dx = \int_1^2 (4x - 2x^2)\,dx = \left[2x^2 - {'\dfrac{2x^3}{3}'}\right]_1^2 = (8-{'\dfrac{16}{3}'}) - (2-{'\dfrac{2}{3}'}) = {'\dfrac{8}{3}'} - {'\dfrac{4}{3}'} = {'\dfrac{4}{3}'}$.
+Wait, let me recalculate: $\displaystyle\int_1^2 2x(2-x)\,dx = \int_1^2 (4x - 2x^2)\,dx = \left[2x^2 - \dfrac{2x^3}{3}\right]_1^2 = (8-\dfrac{16}{3}) - (2-\dfrac{2}{3}) = \dfrac{8}{3} - \dfrac{4}{3} = \dfrac{4}{3}$.
 
-$E(X) = {'\dfrac{2}{3}'} + {'\dfrac{4}{3}'} = \boxed{2}$. This is the midpoint of $[0,2]$, as expected for a symmetric triangular distribution.
+$E(X) = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$. This is the midpoint of $[0,2]$, as expected for a symmetric triangular distribution.
 
-$E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 (4x^2 - 2x^3)\,dx = {'\dfrac{1}{2}'} + \left[{'\dfrac{4x^3}{3}'} - {'\dfrac{x^4}{2}'}\right]_1^2 = {'\dfrac{1}{2}'} + {'\dfrac{32}{3}'} - 8 - {'\dfrac{4}{3}'} + {'\dfrac{1}{2}'} = {'\dfrac{8}{3}'}$.
+$E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 (4x^2 - 2x^3)\,dx = \dfrac{1}{2} + \left[\dfrac{4x^3}{3} - \dfrac{x^4}{2}\right]_1^2 = \dfrac{1}{2} + \dfrac{32}{3} - 8 - \dfrac{4}{3} + \dfrac{1}{2} = \dfrac{8}{3}$.
 
-$\mathrm{Var}(X) = {'\dfrac{8}{3}'} - 4 = \boxed{-{'\dfrac{4}{3}'}}$? This is impossible. Let me recheck $E(X^2)$.
+$\mathrm{Var}(X) = \dfrac{8}{3} - 4 = \boxed{-\dfrac{4}{3}}$? This is impossible. Let me recheck $E(X^2)$.
 
-$E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 x^2 \cdot 2(2-x)\,dx = {'\dfrac{1}{2}'} + {'\dfrac{28}{3}'} - {'\dfrac{4}{3}'} \cdot ... $
+$E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 x^2 \cdot 2(2-x)\,dx = \dfrac{1}{2} + \dfrac{28}{3} - \dfrac{4}{3} \cdot ... $
 
-Actually $E(X^2) = {'\dfrac{1}{2}'} + \int_1^2 (4x^2 - 2x^3)\,dx = {'\dfrac{1}{2}'} + \left[{'\dfrac{4}{3}'}x^3 - {'\dfrac{x^4}{2}'}\right]_1^2 = {'\dfrac{1}{2}'} + ({'\dfrac{32}{3}'}-8) - ({'\dfrac{4}{3}'}-{'\dfrac{1}{2}'}) = {'\dfrac{1}{2}'}+{'\dfrac{8}{3}'}-{'\dfrac{4}{3}'}+{'\dfrac{1}{2}'} = 1+{'\dfrac{4}{3}'} = {'\dfrac{7}{3}'}$.
+Actually $E(X^2) = \dfrac{1}{2} + \int_1^2 (4x^2 - 2x^3)\,dx = \dfrac{1}{2} + \left[\dfrac{4}{3}x^3 - \dfrac{x^4}{2}\right]_1^2 = \dfrac{1}{2} + (\dfrac{32}{3}-8) - (\dfrac{4}{3}-\dfrac{1}{2}) = \dfrac{1}{2}+\dfrac{8}{3}-\dfrac{4}{3}+\dfrac{1}{2} = 1+\dfrac{4}{3} = \dfrac{7}{3}$.
 
-$\mathrm{Var}(X) = {'\dfrac{7}{3}'} - 4 = -{'\dfrac{5}{3}'}$. This still cannot be right. The issue is $E(X) = 1$ (not 2) since the distribution is on $[0,2]$ with peak at 1.
+$\mathrm{Var}(X) = \dfrac{7}{3} - 4 = -\dfrac{5}{3}$. This still cannot be right. The issue is $E(X) = 1$ (not 2) since the distribution is on $[0,2]$ with peak at 1.
 
-Let me redo: $E(X) = {'\dfrac{2}{3}'} + {'\dfrac{4}{3}'} = 2$. But the distribution is symmetric about $x=1$, so $E(X)$ should be $1$.
+Let me redo: $E(X) = \dfrac{2}{3} + \dfrac{4}{3} = 2$. But the distribution is symmetric about $x=1$, so $E(X)$ should be $1$.
 
 Rechecking the second integral: $\int_1^2 2(2-x)x\,dx$. At $x=1$: $2(1)(1) = 2$. At $x=2$: $0$. This integral should give $2/3$ by symmetry.
 
@@ -865,7 +865,7 @@ The PDF should be $f(x) = x$ for $0 \leq x \leq 1$ and $f(x) = 2-x$ for $1 < x \
 
 | Pitfall | Correct Approach |
 |---|---|
-| Confusing the rate $\lambda$ with the mean ${'{'\dfrac{1}{\lambda}'}'}$ for exponential distributions | $E(X) = {'{'\dfrac{1}{\lambda}'}'}$; the rate parameter is $\lambda$ |
+| Confusing the rate $\lambda$ with the mean ${`\dfrac{1}{\lambda}`}$ for exponential distributions | $E(X) = {`\dfrac{1}{\lambda}`}$; the rate parameter is $\lambda$ |
 | Forgetting that the total area under a PDF must equal 1 | Always verify: $\displaystyle\int_{-\infty}^{\infty} f(x)\,dx = 1$ |
 | Applying the exponential memoryless property to other distributions | Only the exponential distribution has this property |
 | Using $P(a < X < b) = f(b) - f(a)$ | This is for CDFs, not PDFs. Use $\displaystyle\int_a^b f(x)\,dx$ |
@@ -889,18 +889,18 @@ $P(T > 0.75) = e^{-4 \times 0.75} = e^{-3} \approx \boxed{0.0498}$.
 
 ### Question 9
 
-$X$ is a continuous random variable with PDF $f(x) = {'\dfrac{3}{4}'}(2x - x^2)$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var}(X)$, and the median.
+$X$ is a continuous random variable with PDF $f(x) = \dfrac{3}{4}(2x - x^2)$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var}(X)$, and the median.
 
 <details>
 <summary>Solution</summary>
 
-$E(X) = {'\dfrac{3}{4}'}\displaystyle\int_0^2 (2x^2-x^3)\,dx = {'\dfrac{3}{4}'}\!\left[{'\dfrac{2x^3}{3}'}-{'\dfrac{x^4}{4}'}\right]_0^2 = {'\dfrac{3}{4}'}\!\left({'\dfrac{16}{3}'}-4\right) = {'\dfrac{3}{4}'}\cdot{'\dfrac{4}{3}'} = 1$.
+$E(X) = \dfrac{3}{4}\displaystyle\int_0^2 (2x^2-x^3)\,dx = \dfrac{3}{4}\!\left[\dfrac{2x^3}{3}-\dfrac{x^4}{4}\right]_0^2 = \dfrac{3}{4}\!\left(\dfrac{16}{3}-4\right) = \dfrac{3}{4}\cdot\dfrac{4}{3} = 1$.
 
-$E(X^2) = {'\dfrac{3}{4}'}\displaystyle\int_0^2 (2x^3-x^4)\,dx = {'\dfrac{3}{4}'}\!\left[{'\dfrac{x^4}{2}'}-{'\dfrac{x^5}{5}'}\right]_0^2 = {'\dfrac{3}{4}'}\!\left(8-{'\dfrac{32}{5}'}\right) = {'\dfrac{3}{4}'}\cdot{'\dfrac{8}{5}'} = {'\dfrac{6}{5}'}$.
+$E(X^2) = \dfrac{3}{4}\displaystyle\int_0^2 (2x^3-x^4)\,dx = \dfrac{3}{4}\!\left[\dfrac{x^4}{2}-\dfrac{x^5}{5}\right]_0^2 = \dfrac{3}{4}\!\left(8-\dfrac{32}{5}\right) = \dfrac{3}{4}\cdot\dfrac{8}{5} = \dfrac{6}{5}$.
 
-$\mathrm{Var}(X) = {'\dfrac{6}{5}'}-1 = {'\dfrac{1}{5}'}$.
+$\mathrm{Var}(X) = \dfrac{6}{5}-1 = \dfrac{1}{5}$.
 
-Median $m$: ${'\dfrac{3}{4}'}\!\left(m^2-{'\dfrac{m^3}{3}'}\right) = {'\dfrac{1}{2}'}$. By inspection or numerical methods: $m \approx 0.908$.
+Median $m$: $\dfrac{3}{4}\!\left(m^2-\dfrac{m^3}{3}\right) = \dfrac{1}{2}$. By inspection or numerical methods: $m \approx 0.908$.
 
 </details>
 
@@ -939,14 +939,14 @@ The Central Limit Theorem connects the exponential and uniform distributions to 
 
 | Distribution | PDF | $E(X)$ | $\mathrm{Var}(X)$ |
 |---|---|---|---|
-| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | ${'{'\dfrac{1}{\lambda}'}'}$ | ${'{'\dfrac{1}{\lambda^2}'}'}$ |
-| $\mathrm{U}(a,b)$ | ${'\dfrac{1}{b-a}'}$, $a \leq x \leq b$ | ${'\dfrac{a+b}{2}'}$ | ${'\dfrac{(b-a)^2}{12}'}$ |
+| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | ${`\dfrac{1}{\lambda}`}$ | ${`\dfrac{1}{\lambda^2}`}$ |
+| $\mathrm{U}(a,b)$ | $\dfrac{1}{b-a}$, $a \leq x \leq b$ | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ |
 
 | Property | Exponential | Uniform |
 |---|---|---|
 | Memoryless | Yes | No |
-| CDF | $1 - e^{-\lambda x}$ | ${'\dfrac{x-a}{b-a}'}$ |
-| Median | ${'{'\dfrac{\ln 2}{\lambda}'}'}$ | ${'\dfrac{a+b}{2}'}$ |
+| CDF | $1 - e^{-\lambda x}$ | $\dfrac{x-a}{b-a}$ |
+| Median | ${`\dfrac{\ln 2}{\lambda}`}$ | $\dfrac{a+b}{2}$ |
 
 ---
 
@@ -962,28 +962,28 @@ The lifetime of a light bulb follows an exponential distribution with mean 500 h
 <details>
 <summary>Solution</summary>
 
-$\lambda = {'\dfrac{1}{500}'} = 0.002$.
+$\lambda = \dfrac{1}{500} = 0.002$.
 
 **(a)** $P(X > 600) = e^{-1.2} \approx \boxed{0.301}$.
 
 **(b)** $P(400 < X < 600) = e^{-0.8} - e^{-1.2} \approx 0.449 - 0.301 = \boxed{0.148}$.
 
-**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = {'{'\dfrac{\ln 2}{0.002}'}'} = \boxed{346.6\,\text{hours}}$.
+**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = {`\dfrac{\ln 2}{0.002}`} = \boxed{346.6\,\text{hours}}$.
 
 </details>
 
 ### Question 12
 
-**Prove that** for $X \sim \mathrm{U}(a,b)$, $\mathrm{Var}(X) = {'\dfrac{(b-a)^2}{12}'}$.
+**Prove that** for $X \sim \mathrm{U}(a,b)$, $\mathrm{Var}(X) = \dfrac{(b-a)^2}{12}$.
 
 <details>
 <summary>Solution</summary>
 
-$E(X) = {'\dfrac{a+b}{2}'}$.
+$E(X) = \dfrac{a+b}{2}$.
 
-$E(X^2) = {'\dfrac{1}{b-a}'}\displaystyle\int_a^b x^2\,dx = {'\dfrac{b^3-a^3}{3(b-a)}'} = {'\dfrac{a^2+ab+b^2}{3}'}$.
+$E(X^2) = \dfrac{1}{b-a}\displaystyle\int_a^b x^2\,dx = \dfrac{b^3-a^3}{3(b-a)} = \dfrac{a^2+ab+b^2}{3}$.
 
-$\mathrm{Var}(X) = {'\dfrac{a^2+ab+b^2}{3}'} - {'\dfrac{(a+b)^2}{4}'} = {'\dfrac{4a^2+4ab+4b^2-3a^2-6ab-3b^2}{12}'} = {'\dfrac{a^2-2ab+b^2}{12}'} = \boxed{{'\dfrac{(b-a)^2}{12}'}}$. $\blacksquare$
+$\mathrm{Var}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4a^2+4ab+4b^2-3a^2-6ab-3b^2}{12} = \dfrac{a^2-2ab+b^2}{12} = \boxed{\dfrac{(b-a)^2}{12}}$. $\blacksquare$
 
 </details>
 
@@ -1002,8 +1002,8 @@ Properties:
 - If $X$ and $Y$ are independent, $M_{X+Y}(t) = M_X(t)M_Y(t)$
 
 MGFs:
-- $\mathrm{Exp}(\lambda)$: $M(t) = {'{'\dfrac{\lambda}{\lambda-t}'}'}$ for $t < \lambda$
-- $\mathrm{U}(a,b)$: $M(t) = {'\dfrac{e^{bt}-e^{at}}{(b-a)t}'}$
+- $\mathrm{Exp}(\lambda)$: $M(t) = {`\dfrac{\lambda}{\lambda-t}`}$ for $t < \lambda$
+- $\mathrm{U}(a,b)$: $M(t) = \dfrac{e^{bt}-e^{at}}{(b-a)t}$
 
 ### 14.2 The cumulative distribution function approach
 
@@ -1030,22 +1030,22 @@ Find the MGF of $X \sim \mathrm{Exp}(\lambda)$ and use it to find $E(X)$ and $\m
 
 $M(t) = \displaystyle\int_0^{\infty} e^{tx}\lambda e^{-\lambda x}\,dx = \lambda\displaystyle\int_0^{\infty} e^{-(\lambda-t)x}\,dx = \frac{\lambda}{\lambda-t}$ for $t < \lambda$.
 
-$M'(t) = {'{'\dfrac{\lambda}{(\lambda-t)^2}'}'}$. $M'(0) = {'{'\dfrac{1}{\lambda}'}'} = E(X)$. ✓
+$M'(t) = {`\dfrac{\lambda}{(\lambda-t)^2}`}$. $M'(0) = {`\dfrac{1}{\lambda}`} = E(X)$. ✓
 
-$M''(t) = {'{'\dfrac{2\lambda}{(\lambda-t)^3}'}'}$. $M''(0) = {'{'\dfrac{2}{\lambda^2}'}'} = E(X^2)$.
+$M''(t) = {`\dfrac{2\lambda}{(\lambda-t)^3}`}$. $M''(0) = {`\dfrac{2}{\lambda^2}`} = E(X^2)$.
 
-$\mathrm{Var}(X) = {'{'\dfrac{2}{\lambda^2}'}'} - {'{'\dfrac{1}{\lambda^2}'}'} = \boxed{{'{'\dfrac{1}{\lambda^2}'}'}}$. ✓
+$\mathrm{Var}(X) = {`\dfrac{2}{\lambda^2}`} - {`\dfrac{1}{\lambda^2}`} = \boxed{{`\dfrac{1}{\lambda^2}`}}$. ✓
 
 </details>
 
 ### Question 14
 
-**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -{'{'\dfrac{1}{\lambda}'}'}\ln X$ follows $\mathrm{Exp}(\lambda)$.
+**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -{`\dfrac{1}{\lambda}`}\ln X$ follows $\mathrm{Exp}(\lambda)$.
 
 <details>
 <summary>Solution</summary>
 
-$F_Y(y) = P(Y \leq y) = P\!\left(-{'{'\dfrac{1}{\lambda}'}'}\ln X \leq y\right) = P(\ln X \geq -\lambda y) = P(X \geq e^{-\lambda y})$.
+$F_Y(y) = P(Y \leq y) = P\!\left(-{`\dfrac{1}{\lambda}`}\ln X \leq y\right) = P(\ln X \geq -\lambda y) = P(X \geq e^{-\lambda y})$.
 
 $= 1 - e^{-\lambda y}$ for $y \geq 0$.
 

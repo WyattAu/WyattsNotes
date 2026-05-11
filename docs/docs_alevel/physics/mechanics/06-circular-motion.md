@@ -59,25 +59,25 @@ magnitude $a = v^2/r = \omega^2 r$ directed towards the centre.
 
 The position vector of a particle moving in a circle in the $xy$-plane is:
 
-$$\mathbf\{r{'\}'}(t) = r\cos(\omega t)\,\mathbf\{i{'\}'} + r\sin(\omega t)\,\mathbf\{j{'\}'}$$
+$$\mathbf{r}(t) = r\cos(\omega t)\,\mathbf{i} + r\sin(\omega t)\,\mathbf{j}$$
 
 Differentiating to find velocity:
 
-$$\mathbf\{v{'\}'}(t) = \frac{d\mathbf\{r{'\}'}}{dt} = -r\omega\sin(\omega t)\,\mathbf\{i{'\}'} + r\omega\cos(\omega t)\,\mathbf\{j{'\}'}$$
+$$\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = -r\omega\sin(\omega t)\,\mathbf{i} + r\omega\cos(\omega t)\,\mathbf{j}$$
 
-Note: $|\mathbf\{v{'\}'}| = r\omega\sqrt{\sin^2(\omega t) + \cos^2(\omega t)} = r\omega = v$. $\checkmark$
+Note: $|\mathbf{v}| = r\omega\sqrt{\sin^2(\omega t) + \cos^2(\omega t)} = r\omega = v$. $\checkmark$
 
 Differentiating again to find acceleration:
 
-$$\mathbf\{a{'\}'}(t) = \frac{d\mathbf\{v{'\}'}}{dt} = -r\omega^2\cos(\omega t)\,\mathbf\{i{'\}'} - r\omega^2\sin(\omega t)\,\mathbf\{j{'\}'} = -\omega^2\mathbf\{r{'\}'}(t)$$
+$$\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = -r\omega^2\cos(\omega t)\,\mathbf{i} - r\omega^2\sin(\omega t)\,\mathbf{j} = -\omega^2\mathbf{r}(t)$$
 
-$$\boxed{\mathbf\{a{'\}'} = -\omega^2 r\,\hat{\mathbf\{r{'\}'}}}$$
+$$\boxed{\mathbf{a} = -\omega^2 r\,\hat{\mathbf{r}}}$$
 
-The acceleration has magnitude $|\mathbf\{a{'\}'}| = \omega^2 r = \frac{v^2}{r}$ and is directed radially
+The acceleration has magnitude $|\mathbf{a}| = \omega^2 r = \frac{v^2}{r}$ and is directed radially
 **inward** (towards the centre). The negative sign indicates this inward direction. $\square$
 
 **Key insight from the calculus approach.** The acceleration vector
-$\mathbf\{a{'\}'}(t) = -\omega^2 \mathbf\{r{'\}'}(t)$ is always antiparallel to the position vector. This means
+$\mathbf{a}(t) = -\omega^2 \mathbf{r}(t)$ is always antiparallel to the position vector. This means
 it always points towards the centre, regardless of where the particle is on the circle. Even though
 the speed is constant, the _direction_ of velocity changes continuously, requiring acceleration.
 
@@ -91,13 +91,13 @@ the primary derivation required; calculus is useful for STEP/matriculation prepa
 ### Method 2: Geometry
 
 Consider two positions of the particle separated by a small angle $\delta\theta$. The change in
-velocity $\delta\mathbf\{v{'\}'}$ is directed towards the centre. From the isosceles triangle formed:
+velocity $\delta\mathbf{v}$ is directed towards the centre. From the isosceles triangle formed:
 
-$$\frac{|\delta\mathbf\{v{'\}'}|}{v} = \frac{|\delta\mathbf\{s{'\}'}|}{r} \implies |\delta\mathbf\{v{'\}'}| = \frac{v}{r}|\delta\mathbf\{s{'\}'}|$$
+$$\frac{|\delta\mathbf{v}|}{v} = \frac{|\delta\mathbf{s}|}{r} \implies |\delta\mathbf{v}| = \frac{v}{r}|\delta\mathbf{s}|$$
 
 Dividing by $\delta t$ and taking the limit:
 
-$$a = \frac{|\delta\mathbf\{v{'\}'}|}{\delta t} = \frac{v}{r}\frac{|\delta\mathbf\{s{'\}'}|}{\delta t} = \frac{v^2}{r}$$
+$$a = \frac{|\delta\mathbf{v}|}{\delta t} = \frac{v}{r}\frac{|\delta\mathbf{s}|}{\delta t} = \frac{v^2}{r}$$
 
 ## 3. Centripetal Force
 
@@ -356,11 +356,11 @@ positions separated by a small angle).
 
 **Answer.** Consider the velocity vector triangle: two velocity vectors of length $v$ separated by
 angle $\delta\theta$. The change in velocity $\delta v$ is the chord of this arc. For small
-$\delta\theta$: $|\delta\mathbf\{v{'\}'}| = v\delta\theta$.
+$\delta\theta$: $|\delta\mathbf{v}| = v\delta\theta$.
 
 The time for this change is $\delta t = \delta s/v = r\delta\theta/v$.
 
-$a = |\delta\mathbf\{v{'\}'}|/\delta t = v\delta\theta \cdot v/(r\delta\theta) = v^2/r$. The direction is
+$a = |\delta\mathbf{v}|/\delta t = v\delta\theta \cdot v/(r\delta\theta) = v^2/r$. The direction is
 towards the centre. $\square$
 
 <b>If you get this wrong, revise:</b>

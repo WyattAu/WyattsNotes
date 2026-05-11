@@ -31,12 +31,12 @@ final states matter (no time information needed).
 
 ### 1.1 Definition and derivation
 
-**Definition.** The work done by a constant force $\mathbf\{F{'\}'}$ moving a body through displacement
-$\mathbf\{s{'\}'}$ is
+**Definition.** The work done by a constant force $\mathbf{F}$ moving a body through displacement
+$\mathbf{s}$ is
 
-$$W = \mathbf\{F{'\}'} \cdot \mathbf\{s{'\}'} = Fs\cos\theta$$
+$$W = \mathbf{F} \cdot \mathbf{s} = Fs\cos\theta$$
 
-where $\theta$ is the angle between $\mathbf\{F{'\}'}$ and $\mathbf\{s{'\}'}$.
+where $\theta$ is the angle between $\mathbf{F}$ and $\mathbf{s}$.
 
 **Derivation.** For a force $F$ in the direction of motion:
 
@@ -177,7 +177,7 @@ For a force $F$ on a body moving at speed $v$:
 
 $$\boxed{P = Fv}$$
 
-**Derivation.** $P = {'\dfrac{dW}{dt}'} = {'{'\dfrac{F\,ds}{dt}'}'} = Fv$. $\blacksquare$
+**Derivation.** $P = \dfrac{dW}{dt} = \dfrac{F\,ds}{dt} = Fv$. $\blacksquare$
 
 ### 5.2 Units
 
@@ -463,7 +463,7 @@ At maximum speed: $P = Rv \implies 2000000 = (5000+20v)v = 5000v + 20v^2$.
 
 $20v^2 + 5000v - 2000000 = 0 \implies v^2 + 250v - 100000 = 0$.
 
-$v = {'{'\dfrac{-250 + \sqrt{62500 + 400000}}{2}'}'} = {'{'\dfrac{-250 + \sqrt{462500}}{2}'}'} = {'\dfrac{-250 + 680.1}{2}'} = 215.1\,\mathrm{m/s}$.
+$v = {`\dfrac{-250 + \sqrt{62500 + 400000}}{2}`} = {`\dfrac{-250 + \sqrt{462500}}{2}`} = \dfrac{-250 + 680.1}{2} = 215.1\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
 

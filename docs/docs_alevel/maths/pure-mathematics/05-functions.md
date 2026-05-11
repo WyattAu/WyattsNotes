@@ -31,7 +31,7 @@ rule that assigns to each element $a \in A$ exactly one element $f(a) \in B$. We
 set of all values actually attained.
 
 **Definition.** The _natural domain_ of a real-valued function defined by an algebraic expression is
-the largest subset of $\mathbb\{R{'\}'}$ for which the expression is defined. Common restrictions:
+the largest subset of $\mathbb{R}$ for which the expression is defined. Common restrictions:
 
 - Denominators cannot be zero: $x \neq 0$ in $\frac{1}{x}$.
 - Square roots require non-negative arguments: $x \geq 0$ in $\sqrt{x}$.
@@ -138,7 +138,7 @@ So $f^{-1}(x) = \frac{x + 3}{x - 2}$, with domain $x \neq 2$.
 
 The range of $f$ is all real numbers except $f(x) = 2$:
 $\frac{2x + 3}{x - 1} = 2 \implies 2x + 3 = 2x - 2 \implies 3 = -2$, impossible. So the range is
-$\mathbb\{R{'\}'} \setminus \{2\}$, which equals the domain of $f^{-1}$. ✓
+$\mathbb{R} \setminus \{2\}$, which equals the domain of $f^{-1}$. ✓
 
 </details>
 
@@ -166,7 +166,7 @@ $$
 \end{aligned}
 $$
 
-**Theorem (Triangle Inequality).** $|a + b| \leq |a| + |b|$ for all $a, b \in \mathbb\{R{'\}'}$.
+**Theorem (Triangle Inequality).** $|a + b| \leq |a| + |b|$ for all $a, b \in \mathbb{R}$.
 
 _Proof._ We consider cases based on the signs of $a$ and $b$.
 
@@ -323,18 +323,18 @@ $\{f(x) : x \in \mathrm{dom}(g \circ f)\}$, which is a subset of the range of $g
 
 <details>
 <summary>Example</summary>
-Given $f(x) = x^2$ with domain $\mathbb\{R{'\}'}$ and $g(x) = \sqrt{x}$ with domain $[0, \infty)$, find the domain and range of $g \circ f$.
+Given $f(x) = x^2$ with domain $\mathbb{R}$ and $g(x) = \sqrt{x}$ with domain $[0, \infty)$, find the domain and range of $g \circ f$.
 
-**Domain:** We need $x \in \mathbb\{R{'\}'}$ (always true) and $f(x) = x^2 \in [0, \infty)$ (always true).
-So $\mathrm{dom}(g \circ f) = \mathbb\{R{'\}'}$.
+**Domain:** We need $x \in \mathbb{R}$ (always true) and $f(x) = x^2 \in [0, \infty)$ (always true).
+So $\mathrm{dom}(g \circ f) = \mathbb{R}$.
 
-**Range:** $g(f(x)) = \sqrt{x^2} = |x|$. The range of $|x|$ over $\mathbb\{R{'\}'}$ is $[0, \infty)$.
+**Range:** $g(f(x)) = \sqrt{x^2} = |x|$. The range of $|x|$ over $\mathbb{R}$ is $[0, \infty)$.
 
 </details>
 
 <details>
 <summary>Example</summary>
-Given $f(x) = \frac{1}{x - 1}$ with domain $\mathbb\{R{'\}'} \setminus \{1\}$ and $g(x) = \ln x$ with domain $(0, \infty)$, find the domain of $g \circ f$.
+Given $f(x) = \frac{1}{x - 1}$ with domain $\mathbb{R} \setminus \{1\}$ and $g(x) = \ln x$ with domain $(0, \infty)$, find the domain of $g \circ f$.
 
 We need $\frac{1}{x-1} > 0$, so $x - 1 > 0$, giving $x > 1$.
 
@@ -455,12 +455,12 @@ Note: the horizontal shift is 2 (not 4), because $2x - 4 = 2(x - 2)$.
 
 <details>
 <summary>Solution</summary>
-Domain: $x \neq 3$, i.e., $\mathbb\{R{'\}'} \setminus \{3\}$.
+Domain: $x \neq 3$, i.e., $\mathbb{R} \setminus \{3\}$.
 
 Range: As $x \to 3^+$, $f(x) \to +\infty$; as $x \to 3^-$, $f(x) \to -\infty$. As $x \to \pm\infty$,
 $f(x) \to 2$. So $f(x) \neq 2$.
 
-Range: $\mathbb\{R{'\}'} \setminus \{2\}$.
+Range: $\mathbb{R} \setminus \{2\}$.
 
 Inverse:
 $y = \frac{1}{x - 3} + 2 \implies y - 2 = \frac{1}{x - 3} \implies x - 3 = \frac{1}{y - 2} \implies x = \frac{1}{y - 2} + 3$.
@@ -551,7 +551,7 @@ $\left(\frac{3}{2}, -2\right)$.
 <hr />
 
 **Problem 6.** The function $f$ is defined by $f(x) = x^3 - 3x + 1$. Show that $f$ is not injective
-on $\mathbb\{R{'\}'}$, and find the largest interval containing $x = 0$ on which $f$ is injective.
+on $\mathbb{R}$, and find the largest interval containing $x = 0$ on which $f$ is injective.
 
 <details>
 <summary>Solution</summary>
@@ -561,7 +561,7 @@ $f'(x) = 0$ at $x = \pm 1$. $f'(x) < 0$ for $-1 < x < 1$ (decreasing), and $f'(x
 or $x > 1$ (increasing).
 
 Since $f$ is decreasing on $(-1, 1)$ and increasing on $(-\infty, -1)$ and $(1, \infty)$, it is not
-injective on all of $\mathbb\{R{'\}'}$. For example, $f(-2) = -8 + 6 + 1 = -1$ and $f(0) = 1$ and
+injective on all of $\mathbb{R}$. For example, $f(-2) = -8 + 6 + 1 = -1$ and $f(0) = 1$ and
 $f(1) = -1$. So $f(-2) = f(1) = -1$ with $-2 \neq 1$.
 
 The largest interval containing $0$ on which $f$ is strictly monotonic (hence injective) is
@@ -607,7 +607,7 @@ $f^{-1}(x) = \frac{1}{2}\ln x$, domain $x > 0$.
 
 $g^{-1}(x)$: $y = \ln(x + 1) \implies x + 1 = e^y \implies x = e^y - 1$.
 
-$g^{-1}(x) = e^x - 1$, domain all $\mathbb\{R{'\}'}$.
+$g^{-1}(x) = e^x - 1$, domain all $\mathbb{R}$.
 
 $(f \circ g)(x) = f(g(x)) = f(\ln(x + 1)) = e^{2\ln(x+1)} = (x + 1)^2$.
 
@@ -680,15 +680,15 @@ $g(x) = x^3 + x$ (c) $h(x) = x + 1$ (d) $k(x) = |x|$
 
 <hr />
 
-**Problem 12.** Given $f(x) = 2x + 3$ with domain $\mathbb\{R{'\}'}$ and $g(x) = \sqrt{x - 1}$ with domain
+**Problem 12.** Given $f(x) = 2x + 3$ with domain $\mathbb{R}$ and $g(x) = \sqrt{x - 1}$ with domain
 $[1, \infty)$, find the domain of $f \circ g$ and $g \circ f$.
 
 <details>
 <summary>Solution</summary>
-$f \circ g$: domain is $\{x \geq 1 : g(x) \in \mathbb\{R{'\}'}\} = [1, \infty)$ (since $f$ accepts all reals).
+$f \circ g$: domain is $\{x \geq 1 : g(x) \in \mathbb{R}\} = [1, \infty)$ (since $f$ accepts all reals).
 
 $g \circ f$: domain is
-$\{x \in \mathbb\{R{'\}'} : f(x) \geq 1\} = \{x : 2x + 3 \geq 1\} = \{x : x \geq -1\} = [-1, \infty)$.
+$\{x \in \mathbb{R} : f(x) \geq 1\} = \{x : 2x + 3 \geq 1\} = \{x : x \geq -1\} = [-1, \infty)$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Composite function domain](#7-composite-function-domain-and-range)

@@ -209,7 +209,7 @@ A particle is projected from a point $A$ with position vector $\begin{pmatrix} 0
 
 Vertical: $v_y = 4 - 9.8t$, $y = 10 + 4t - 4.9t^2$.
 
-Position vector: $\mathbf\{r{'\}'}(t) = \begin{pmatrix} 8t \\ 10 + 4t - 4.9t^2 \end{pmatrix}$.
+Position vector: $\mathbf{r}(t) = \begin{pmatrix} 8t \\ 10 + 4t - 4.9t^2 \end{pmatrix}$.
 
 **(b)** Distance squared from origin:
 
@@ -233,9 +233,9 @@ $$48.02t^3 - 58.8t^2 + 46t + 40 = 0$$
 
 Testing $t = -0.5$: $48.02(-0.125) - 58.8(0.25) + 46(-0.5) + 40 = -6.003 - 14.7 - 23 + 40 = -3.703$. Not zero.
 
-This cubic is awkward. An alternative approach uses the fact that the closest point occurs when $\mathbf\{r{'\}'}$ is perpendicular to $\mathbf\{v{'\}'}$:
+This cubic is awkward. An alternative approach uses the fact that the closest point occurs when $\mathbf{r}$ is perpendicular to $\mathbf{v}$:
 
-$$\mathbf\{r{'\}'} \cdot \mathbf\{v{'\}'} = 0$$
+$$\mathbf{r} \cdot \mathbf{v} = 0$$
 
 $$\begin{pmatrix} 8t \\ 10 + 4t - 4.9t^2 \end{pmatrix} \cdot \begin{pmatrix} 8 \\ 4 - 9.8t \end{pmatrix} = 0$$
 
@@ -261,15 +261,15 @@ $$D = \sqrt{(-3.696)^2 + 7.106^2} = \sqrt{13.66 + 50.50} = \sqrt{64.16} \approx 
 
 **(c)** At $t \approx -0.462$:
 
-$\mathbf\{v{'\}'} = \begin{pmatrix} 8 \\ 4 - 9.8(-0.462) \end{pmatrix} = \begin{pmatrix} 8 \\ 4 + 4.528 \end{pmatrix} = \begin{pmatrix} 8 \\ 8.528 \end{pmatrix}$.
+$\mathbf{v} = \begin{pmatrix} 8 \\ 4 - 9.8(-0.462) \end{pmatrix} = \begin{pmatrix} 8 \\ 4 + 4.528 \end{pmatrix} = \begin{pmatrix} 8 \\ 8.528 \end{pmatrix}$.
 
-$\mathbf\{r{'\}'} \cdot \mathbf\{v{'\}'} = (-3.696)(8) + (7.106)(8.528) = -29.57 + 60.62 = 31.05$.
+$\mathbf{r} \cdot \mathbf{v} = (-3.696)(8) + (7.106)(8.528) = -29.57 + 60.62 = 31.05$.
 
 This should be zero at the exact root. The discrepancy is due to rounding $t$ to three decimal places. Using a more precise root $t \approx -0.4626$:
 
 $x = -3.701$, $y = 7.101$, $v_y = 8.533$.
 
-$\mathbf\{r{'\}'} \cdot \mathbf\{v{'\}'} = -3.701(8) + 7.101(8.533) = -29.61 + 60.60 = 30.99$.
+$\mathbf{r} \cdot \mathbf{v} = -3.701(8) + 7.101(8.533) = -29.61 + 60.60 = 30.99$.
 
 Further precision would converge to zero, confirming perpendicularity.
 

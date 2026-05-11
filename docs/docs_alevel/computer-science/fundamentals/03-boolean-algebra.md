@@ -13,7 +13,7 @@ slug: boolean-algebra
 
 ## 1. Fundamental Definitions
 
-We define the Boolean algebra over $\mathbb\{B{'\}'} = \{0, 1\}$ with operations:
+We define the Boolean algebra over $\mathbb{B} = \{0, 1\}$ with operations:
 
 ### Basic Gates
 

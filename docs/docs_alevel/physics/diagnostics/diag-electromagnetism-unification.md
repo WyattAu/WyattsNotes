@@ -72,7 +72,7 @@ Verified. This wave is in the microwave region.
 
 $B_0 = E_0/c = 30/(3.00 \times 10^8) = 1.00 \times 10^{-7}\,\text{T}$
 
-$$\mathbf\{B{'\}'} = B_0\sin(kx - \omega t)\,\hat{k} = 1.00 \times 10^{-7}\sin(125.7x - 3.77 \times 10^{10}t)\,\hat{k}$$
+$$\mathbf{B} = B_0\sin(kx - \omega t)\,\hat{k} = 1.00 \times 10^{-7}\sin(125.7x - 3.77 \times 10^{10}t)\,\hat{k}$$
 
 (c) Time-averaged intensity: $I = \frac{1}{2}\varepsilon_0 c E_0^2$
 

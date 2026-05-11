@@ -179,11 +179,11 @@ Let me re-examine: $(f \circ g \circ h)(x) = f(g(h(x)))$ versus $(g \circ f \cir
 
 **Question:**
 
-The function $f$ is defined by $f(x) = e^{2x} + e^{-2x}$ for $x \in \mathbb\{R{'\}'}$.
+The function $f$ is defined by $f(x) = e^{2x} + e^{-2x}$ for $x \in \mathbb{R}$.
 
-**(a)** Show that $f(x) \geq 2$ for all $x \in \mathbb\{R{'\}'}$, and find the value of $x$ for which equality holds.
+**(a)** Show that $f(x) \geq 2$ for all $x \in \mathbb{R}$, and find the value of $x$ for which equality holds.
 
-**(b)** The function $g$ is defined by $g(x) = \ln(x + \sqrt{x^2 + 1})$ for $x \in \mathbb\{R{'\}'}$. Find $f(g(x))$ in terms of $x$ and simplify your answer.
+**(b)** The function $g$ is defined by $g(x) = \ln(x + \sqrt{x^2 + 1})$ for $x \in \mathbb{R}$. Find $f(g(x))$ in terms of $x$ and simplify your answer.
 
 **(c)** Solve the inequality $f(g(x)) \leq 10$.
 

@@ -31,9 +31,9 @@ signs.
 
 ### 1.1 Definition
 
-**Definition.** The momentum of a body of mass $m$ moving with velocity $\mathbf\{v{'\}'}$ is
+**Definition.** The momentum of a body of mass $m$ moving with velocity $\mathbf{v}$ is
 
-$$\mathbf\{p{'\}'} = m\mathbf\{v{'\}'}$$
+$$\mathbf{p} = m\mathbf{v}$$
 
 Momentum is a vector with SI units kg m/s.
 
@@ -45,20 +45,20 @@ Momentum is a vector with SI units kg m/s.
 
 **Theorem.** In a closed system (no external forces), the total momentum is conserved:
 
-$$\sum \mathbf\{p{'\}'}_{\mathrm{before}} = \sum \mathbf\{p{'\}'}_{\mathrm{after}}$$
+$$\sum \mathbf{p}_{\mathrm{before}} = \sum \mathbf{p}_{\mathrm{after}}$$
 
 ### 2.2 Derivation from Newton's Laws
 
 **Proof.** Newton's Third Law states that for any two interacting bodies $A$ and $B$:
 
-$$\mathbf\{F{'\}'}_{AB} = -\mathbf\{F{'\}'}_{BA}$$
+$$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
-By Newton's Second Law: $\mathbf\{F{'\}'}_{AB} = {'\dfrac{d\mathbf\{p{'\}'}_A}{dt}'}$ and
-$\mathbf\{F{'\}'}_{BA} = {'\dfrac{d\mathbf\{p{'\}'}_B}{dt}'}$.
+By Newton's Second Law: $\mathbf{F}_{AB} = {`\dfrac{d\mathbf{p}_A}{dt}`}$ and
+$\mathbf{F}_{BA} = {`\dfrac{d\mathbf{p}_B}{dt}`}$.
 
-$$\frac{d\mathbf\{p{'\}'}_A}{dt} + \frac{d\mathbf\{p{'\}'}_B}{dt} = 0 \implies \frac{d}{dt}(\mathbf\{p{'\}'}_A + \mathbf\{p{'\}'}_B) = 0$$
+$$\frac{d\mathbf{p}_A}{dt} + \frac{d\mathbf{p}_B}{dt} = 0 \implies \frac{d}{dt}(\mathbf{p}_A + \mathbf{p}_B) = 0$$
 
-So $\mathbf\{p{'\}'}_A + \mathbf\{p{'\}'}_B = \mathrm{constant}$. $\blacksquare$
+So $\mathbf{p}_A + \mathbf{p}_B = \mathrm{constant}$. $\blacksquare$
 
 **Intuition.** Momentum conservation is a direct consequence of Newton's Third Law (every action has
 an equal and opposite reaction). If two bodies collide, the momentum gained by one equals the
@@ -72,19 +72,19 @@ momentum lost by the other.
 
 **Definition.** The impulse $J$ of a force $F$ acting over a time interval $\Delta t$ is
 
-$$\mathbf\{J{'\}'} = \mathbf\{F{'\}'}\,\Delta t = \Delta\mathbf\{p{'\}'} = m\mathbf\{v{'\}'} - m\mathbf\{u{'\}'}$$
+$$\mathbf{J} = \mathbf{F}\,\Delta t = \Delta\mathbf{p} = m\mathbf{v} - m\mathbf{u}$$
 
 ### 3.2 Derivation
 
 **Proof.** From Newton's Second Law:
 
-$$\mathbf\{F{'\}'} = \frac{d\mathbf\{p{'\}'}}{dt} \implies \mathbf\{F{'\}'}\,dt = d\mathbf\{p{'\}'}$$
+$$\mathbf{F} = \frac{d\mathbf{p}}{dt} \implies \mathbf{F}\,dt = d\mathbf{p}$$
 
 Integrating over $[t_1, t_2]$:
 
-$$\int_{t_1}^{t_2}\mathbf\{F{'\}'}\,dt = \int_{\mathbf\{p{'\}'}_1}^{\mathbf\{p{'\}'}_2}d\mathbf\{p{'\}'} = \mathbf\{p{'\}'}_2 - \mathbf\{p{'\}'}_1$$
+$$\int_{t_1}^{t_2}\mathbf{F}\,dt = \int_{\mathbf{p}_1}^{\mathbf{p}_2}d\mathbf{p} = \mathbf{p}_2 - \mathbf{p}_1$$
 
-For constant force: $\mathbf\{J{'\}'} = \mathbf\{F{'\}'}(t_2 - t_1) = \mathbf\{F{'\}'}\,\Delta t$. $\blacksquare$
+For constant force: $\mathbf{J} = \mathbf{F}(t_2 - t_1) = \mathbf{F}\,\Delta t$. $\blacksquare$
 
 The SI unit of impulse is the newton-second (Ns) = kg m/s.
 
@@ -192,7 +192,7 @@ energy cannot increase during a collision.
 
 **Theorem.** The impulse exerted on a body equals the change in its momentum:
 
-$$\mathbf\{J{'\}'} = \int_{t_1}^{t_2}\mathbf\{F{'\}'}\,dt = \Delta\mathbf\{p{'\}'} = m\mathbf\{v{'\}'}_{\mathrm{final}} - m\mathbf\{v{'\}'}_{\mathrm{initial}}$$
+$$\mathbf{J} = \int_{t_1}^{t_2}\mathbf{F}\,dt = \Delta\mathbf{p} = m\mathbf{v}_{\mathrm{final}} - m\mathbf{v}_{\mathrm{initial}}$$
 
 This holds for both constant and variable forces.
 
@@ -200,18 +200,18 @@ This holds for both constant and variable forces.
 
 Newton's Second Law in its most general form expresses force as the rate of change of momentum:
 
-$$\mathbf\{F{'\}'} = \frac{d\mathbf\{p{'\}'}}{dt}$$
+$$\mathbf{F} = \frac{d\mathbf{p}}{dt}$$
 
-This is more fundamental than $\mathbf\{F{'\}'} = m\mathbf\{a{'\}'}$ because it remains valid even when mass
+This is more fundamental than $\mathbf{F} = m\mathbf{a}$ because it remains valid even when mass
 changes (e.g. rocket propulsion). Rearranging and integrating:
 
-$$\mathbf\{F{'\}'}\,dt = d\mathbf\{p{'\}'} \implies \int_{t_1}^{t_2}\mathbf\{F{'\}'}\,dt = \int_{\mathbf\{p{'\}'}_1}^{\mathbf\{p{'\}'}_2}d\mathbf\{p{'\}'} = \mathbf\{p{'\}'}_2 - \mathbf\{p{'\}'}_1 \quad \blacksquare$$
+$$\mathbf{F}\,dt = d\mathbf{p} \implies \int_{t_1}^{t_2}\mathbf{F}\,dt = \int_{\mathbf{p}_1}^{\mathbf{p}_2}d\mathbf{p} = \mathbf{p}_2 - \mathbf{p}_1 \quad \blacksquare$$
 
 ### 6.3 Constant force simplification
 
-When $\mathbf\{F{'\}'}$ is constant over $[t_1, t_2]$:
+When $\mathbf{F}$ is constant over $[t_1, t_2]$:
 
-$$\mathbf\{J{'\}'} = \mathbf\{F{'\}'}\int_{t_1}^{t_2}dt = \mathbf\{F{'\}'}(t_2 - t_1) = \mathbf\{F{'\}'}\,\Delta t$$
+$$\mathbf{J} = \mathbf{F}\int_{t_1}^{t_2}dt = \mathbf{F}(t_2 - t_1) = \mathbf{F}\,\Delta t$$
 
 This is the form most commonly used in A-level problems.
 
@@ -239,7 +239,7 @@ momentum a force transfers over a given time interval.
 
 For a closed system with no external forces, the vector equation
 
-$$\sum \mathbf\{p{'\}'}_{\mathrm{before}} = \sum \mathbf\{p{'\}'}_{\mathrm{after}}$$
+$$\sum \mathbf{p}_{\mathrm{before}} = \sum \mathbf{p}_{\mathrm{after}}$$
 
 is equivalent to two independent scalar equations obtained by resolving into perpendicular
 components.
@@ -252,8 +252,8 @@ $$\sum m_i u_{x,i} = \sum m_i v_{x,i} \qquad \mathrm{(x-momentum conserved)}$$
 
 $$\sum m_i u_{y,i} = \sum m_i v_{y,i} \qquad \mathrm{(y-momentum conserved)}$$
 
-**Justification.** If $\mathbf\{F{'\}'}_{\mathrm{net}} = \mathbf\{0{'\}'}$, then $F_x = 0$ and $F_y = 0$
-independently. Since $F_x = {'\dfrac{dp_x}{dt}'} = 0$, it follows that $p_x$ is constant. Similarly for
+**Justification.** If $\mathbf{F}_{\mathrm{net}} = \mathbf{0}$, then $F_x = 0$ and $F_y = 0$
+independently. Since $F_x = \dfrac{dp_x}{dt} = 0$, it follows that $p_x$ is constant. Similarly for
 $p_y$.
 
 ### 7.3 Worked example
@@ -274,7 +274,7 @@ After collision:
 
 $x$-momentum: $3(1.5\sqrt{3}) + 2(3\cos\theta) = 12 \implies 4.5\sqrt{3} + 6\cos\theta = 12$
 
-$\cos\theta = {'{'\dfrac{12 - 4.5\sqrt{3}}{6}'}'} = {'\dfrac{12 - 7.794}{6}'} \approx 0.701$
+$\cos\theta = {`\dfrac{12 - 4.5\sqrt{3}}{6}`} = \dfrac{12 - 7.794}{6} \approx 0.701$
 
 $\theta \approx 45.5^\circ$.
 
@@ -459,7 +459,7 @@ Two particles of masses $3\,\mathrm{kg}$ and $5\,\mathrm{kg}$ collide directly. 
 <summary>Solution 2</summary>
 Momentum: $3(4) + 5(-2) = 3(-1) + 5v \implies 12 - 10 = -3 + 5v \implies 5 = -3 + 5v \implies v = 1.6\,\mathrm{m/s}$.
 
-$e = {'\dfrac{v_2 - v_1}{u_1 - u_2}'} = {'\dfrac{1.6 - (-1)}{4 - (-2)}'} = {'\dfrac{2.6}{6}'} \approx 0.433$.
+$e = \dfrac{v_2 - v_1}{u_1 - u_2} = \dfrac{1.6 - (-1)}{4 - (-2)} = \dfrac{2.6}{6} \approx 0.433$.
 
 **If you get this wrong, revise:** [Direct Collisions](#41-direct-collisions) — Section 4.1.
 
@@ -614,11 +614,11 @@ Momentum: $-mu + 4mu = mv_1 + 2mv_2 \implies v_1 + 2v_2 = 3u$.
 
 Both move in positive direction: $v_1 \gt{} 0$, $v_2 \gt{} 0$.
 
-$e = {'\dfrac{v_2 - v_1}{u_1 - u_2}'} = {'\dfrac{v_2 - v_1}{-u - 2u}'} = {'\dfrac{v_2 - v_1}{-3u}'} = {'\dfrac{v_1 - v_2}{3u}'}$.
+$e = \dfrac{v_2 - v_1}{u_1 - u_2} = \dfrac{v_2 - v_1}{-u - 2u} = \dfrac{v_2 - v_1}{-3u} = \dfrac{v_1 - v_2}{3u}$.
 
 From $v_1 = 3u - 2v_2$: $v_1 - v_2 = 3u - 3v_2 = 3(u - v_2)$.
 
-$e = {'\dfrac{3(u-v_2)}{3u}'} = {'\dfrac{u-v_2}{u}'} = 1 - {'\dfrac{v_2}{u}'}$.
+$e = \dfrac{3(u-v_2)}{3u} = \dfrac{u-v_2}{u} = 1 - \dfrac{v_2}{u}$.
 
 Since $v_2 \gt{} 0$: $e \lt{} 1$. Also from $v_1 \gt{} 0$: $3u \gt{} 2v_2 \implies v_2 \lt{} 1.5u$,
 so $e \gt{} 1 - 1.5 = -0.5$. And since $v_2 \gt{} 0$, $e \lt{} 1$.
@@ -645,13 +645,13 @@ Let me re-examine. With original convention (positive = direction of $m$ body be
 $u_1 = u$, $u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt{} 0$,
 $v_2 \lt{} 0$.
 
-$v_1 + 2v_2 = -3u$. $e = {'\dfrac{v_2 - v_1}{u - (-2u)}'} = {'\dfrac{v_2 - v_1}{3u}'}$.
+$v_1 + 2v_2 = -3u$. $e = \dfrac{v_2 - v_1}{u - (-2u)} = \dfrac{v_2 - v_1}{3u}$.
 
 $v_2 - v_1 \gt{} 0$ (separation > approach since they separate), $e \gt{} 0$. ✓
 
 From $v_1 = -3u - 2v_2$: $v_2 - v_1 = v_2 + 3u + 2v_2 = 3v_2 + 3u = 3(u + v_2)$.
 
-$e = {'\dfrac{3(u+v_2)}{3u}'} = 1 + v_2/u$.
+$e = \dfrac{3(u+v_2)}{3u} = 1 + v_2/u$.
 
 For $v_2 \lt{} 0$: $e = 1 + v_2/u \lt{} 1$. ✓ For $v_1 \lt{} 0$:
 $-3u - 2v_2 \lt{} 0 \implies v_2 \gt{} -3u/2$, so $e \gt{} 1 + (-3/2) = -1/2$. Since $e \geq 0$:
@@ -702,11 +702,11 @@ A ball strikes a smooth horizontal floor at $10\,\mathrm{m/s}$ at an angle of $5
 Let the normal (vertical) be the reference direction. Angle to normal: $\alpha = 50^\circ$ before,
 $\beta = 65^\circ$ after.
 
-$\tan\beta = {'{'\dfrac{\tan\alpha}{e}'}'} \implies e = {'{'\dfrac{\tan\alpha}{\tan\beta}'}'} = {'{'\dfrac{\tan 50°}{\tan 65°}'}'}$.
+$\tan\beta = {`\dfrac{\tan\alpha}{e}`} \implies e = {`\dfrac{\tan\alpha}{\tan\beta}`} = {`\dfrac{\tan 50°}{\tan 65°}`}$.
 
 $\tan 50° \approx 1.192$, $\tan 65° \approx 2.145$.
 
-$e \approx {'\dfrac{1.192}{2.145}'} \approx 0.556$.
+$e \approx \dfrac{1.192}{2.145} \approx 0.556$.
 
 Normal component before: $u_n = 10\cos 50° \approx 6.428\,\mathrm{m/s}$. Normal component after:
 $v_n = e \cdot u_n \approx 0.556 \times 6.428 \approx 3.574\,\mathrm{m/s}$. Tangential component
@@ -755,8 +755,8 @@ $v_{B,\parallel} = 3.6\,\mathrm{m/s}$.
 
 **After collision:**
 
-- $A$: $\mathbf\{v{'\}'}_A = (0.6, 0)\,\mathrm{m/s}$, speed $= 0.6\,\mathrm{m/s}$
-- $B$: $\mathbf\{v{'\}'}_B = (3.6, 2)\,\mathrm{m/s}$, speed
+- $A$: $\mathbf{v}_A = (0.6, 0)\,\mathrm{m/s}$, speed $= 0.6\,\mathrm{m/s}$
+- $B$: $\mathbf{v}_B = (3.6, 2)\,\mathrm{m/s}$, speed
   $= \sqrt{3.6^2 + 2^2} = \sqrt{12.96 + 4} = \sqrt{16.96} \approx 4.12\,\mathrm{m/s}$
 
 **If you get this wrong, revise:**
@@ -858,31 +858,31 @@ $2v_{A,\parallel} = (1-e)\,u\cos\theta \implies v_{A,\parallel} = \frac{(1-e)}{2
 
 **Velocity vectors after collision:**
 
-- $\mathbf\{v{'\}'}_A$: parallel component $\frac{(1-e)}{2}\,u\cos\theta$ along line of centres,
+- $\mathbf{v}_A$: parallel component $\frac{(1-e)}{2}\,u\cos\theta$ along line of centres,
   perpendicular component $u\sin\theta$.
-- $\mathbf\{v{'\}'}_B$: parallel component $\frac{(1+e)}{2}\,u\cos\theta$ along line of centres,
+- $\mathbf{v}_B$: parallel component $\frac{(1+e)}{2}\,u\cos\theta$ along line of centres,
   perpendicular component $0$.
 
-The angle between $\mathbf\{v{'\}'}_A$ and $\mathbf\{v{'\}'}_B$ is found by computing their dot product:
+The angle between $\mathbf{v}_A$ and $\mathbf{v}_B$ is found by computing their dot product:
 
-$$\mathbf\{v{'\}'}_A \cdot \mathbf\{v{'\}'}_B = v_{A,\parallel}\,v_{B,\parallel} + v_{A,\perp}\,v_{B,\perp} = \frac{(1-e)}{2}\,u\cos\theta \cdot \frac{(1+e)}{2}\,u\cos\theta + u\sin\theta \cdot 0$$
+$$\mathbf{v}_A \cdot \mathbf{v}_B = v_{A,\parallel}\,v_{B,\parallel} + v_{A,\perp}\,v_{B,\perp} = \frac{(1-e)}{2}\,u\cos\theta \cdot \frac{(1+e)}{2}\,u\cos\theta + u\sin\theta \cdot 0$$
 
 $$= \frac{(1-e^2)}{4}\,u^2\cos^2\theta$$
 
 Wait, this is not zero unless $e = 1$. Let me reconsider.
 
-Actually, the angle between $\mathbf\{v{'\}'}_A$ and the line of centres is $\alpha$ where
+Actually, the angle between $\mathbf{v}_A$ and the line of centres is $\alpha$ where
 $\tan\alpha = \frac{v_{A,\perp}}{v_{A,\parallel}} = \frac{u\sin\theta}{\frac{(1-e)}{2}\,u\cos\theta} = \frac{2\tan\theta}{1-e}$.
 
-The angle between $\mathbf\{v{'\}'}_B$ and the line of centres is $0$ (it moves along the line of
+The angle between $\mathbf{v}_B$ and the line of centres is $0$ (it moves along the line of
 centres).
 
-So the angle between $\mathbf\{v{'\}'}_A$ and $\mathbf\{v{'\}'}_B$ is $\alpha$. For them to be perpendicular, we
+So the angle between $\mathbf{v}_A$ and $\mathbf{v}_B$ is $\alpha$. For them to be perpendicular, we
 need $\alpha = 90^\circ$, but $\tan\alpha$ is finite for $0 \lt{} e \lt{} 1$.
 
 The claim that the spheres move at right angles is only true for $e = 1$ (perfectly elastic
-collision). In that case $v_{A,\parallel} = 0$ and $\mathbf\{v{'\}'}_A = u\sin\theta$ (perpendicular to
-line of centres), while $\mathbf\{v{'\}'}_B = u\cos\theta$ (along line of centres), so they are indeed
+collision). In that case $v_{A,\parallel} = 0$ and $\mathbf{v}_A = u\sin\theta$ (perpendicular to
+line of centres), while $\mathbf{v}_B = u\cos\theta$ (along line of centres), so they are indeed
 perpendicular.
 
 For general $e$, the spheres do **not** move at right angles. The problem as stated is only correct

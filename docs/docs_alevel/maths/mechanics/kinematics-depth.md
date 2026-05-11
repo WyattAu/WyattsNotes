@@ -36,11 +36,11 @@ This is **SUVAT equation 1**. We now derive the remaining four.
 
 **Equation 2: $s = ut + \tfrac{1}{2}at^2$**
 
-Since $v = {'\dfrac{ds}{dt}'} = u + at$, integrate:
+Since $v = \dfrac{ds}{dt} = u + at$, integrate:
 
 $$\int_0^s ds = \int_0^t (u + at)\,dt \implies s = ut + \frac{1}{2}at^2$$
 
-**Equation 3: $s = {'\dfrac{1}{2}'}(u + v)t$**
+**Equation 3: $s = \dfrac{1}{2}(u + v)t$**
 
 Substitute $v = u + at$ into Equation 2:
 
@@ -203,7 +203,7 @@ $$H = \frac{u^2\sin^2\theta}{2g}$$
 
 $$R = \frac{u^2\sin 2\theta}{g}$$
 
-**Maximum range** occurs when $\sin 2\theta = 1$, i.e. $\theta = 45^\circ$, giving $R_{\max} = {'\dfrac{u^2}{g}'}$.
+**Maximum range** occurs when $\sin 2\theta = 1$, i.e. $\theta = 45^\circ$, giving $R_{\max} = \dfrac{u^2}{g}$.
 
 ### 3.5 Proof that complementary angles give the same range
 
@@ -296,10 +296,10 @@ $$v = \frac{ds}{dt}, \qquad a = \frac{dv}{dt} = \frac{d^2s}{dt^2} = v\frac{dv}{d
 
 $$s = \int v\,dt, \qquad v = \int a\,dt$$
 
-The chain rule form $a = v\,{'\dfrac{dv}{ds}'}$ is particularly useful when acceleration is given as a
+The chain rule form $a = v\,\dfrac{dv}{ds}$ is particularly useful when acceleration is given as a
 function of displacement rather than time.
 
-### 5.2 Derivation of $a = v\,{'\dfrac{dv}{ds}'}$
+### 5.2 Derivation of $a = v\,\dfrac{dv}{ds}$
 
 By the chain rule:
 
@@ -337,7 +337,7 @@ $$s = 64 - \frac{256}{6} + 12 = 64 - 42.67 + 12 = 33.33\;\mathrm{m}$$
 **Problem.** A particle moves with acceleration $a = -0.1v^2\;\mathrm{m\,s^{-2}}$. Initially
 $v = 10\;\mathrm{m\,s^{-1}}$. Find an expression for $v$ in terms of $t$.
 
-Since $a = {'\dfrac{dv}{dt}'}$:
+Since $a = \dfrac{dv}{dt}$:
 
 $$\frac{dv}{dt} = -0.1v^2$$
 
@@ -347,7 +347,7 @@ $$\int \frac{1}{v^2}\,dv = \int -0.1\,dt$$
 
 $$-\frac{1}{v} = -0.1t + C$$
 
-When $t = 0$, $v = 10$: $-{'\dfrac{1}{10}'} = C$.
+When $t = 0$, $v = 10$: $-\dfrac{1}{10} = C$.
 
 $$-\frac{1}{v} = -0.1t - \frac{1}{10}$$
 
@@ -434,9 +434,9 @@ Horizontal: $x = 8 \times 3.50 = 28.0\;\mathrm{m}$.
 
 At impact: $v_y = -9.8 \times 3.50 = -34.3\;\mathrm{m\,s^{-1}}$, $v_x = 8\;\mathrm{m\,s^{-1}}$.
 
-$$|\mathbf\{v{'\}'}| = \sqrt{8^2 + 34.3^2} = \sqrt{64 + 1176.5} \approx 35.2\;\mathrm{m\,s^{-1}}$$
+$$|\mathbf{v}| = \sqrt{8^2 + 34.3^2} = \sqrt{64 + 1176.5} \approx 35.2\;\mathrm{m\,s^{-1}}$$
 
-Angle below horizontal: $\theta = \arctan\!\left({'\dfrac{34.3}{8}'}\right) \approx 76.9^\circ$.
+Angle below horizontal: $\theta = \arctan\!\left(\dfrac{34.3}{8}\right) \approx 76.9^\circ$.
 
 </details>
 
@@ -449,7 +449,7 @@ maximum displacement.
 <details>
 <summary>Solution</summary>
 
-Using $a = v\,{'\dfrac{dv}{ds}'}$:
+Using $a = v\,\dfrac{dv}{ds}$:
 
 $$v\,\frac{dv}{ds} = 4 - 2s$$
 
@@ -459,7 +459,7 @@ $$\int v\,dv = \int (4 - 2s)\,ds$$
 
 $$\frac{1}{2}v^2 = 4s - s^2 + C$$
 
-When $s = 0$, $v = 2$: ${'\dfrac{1}{2}'}(4) = 0 + C \implies C = 2$.
+When $s = 0$, $v = 2$: $\dfrac{1}{2}(4) = 0 + C \implies C = 2$.
 
 $$\frac{1}{2}v^2 = 4s - s^2 + 2$$
 

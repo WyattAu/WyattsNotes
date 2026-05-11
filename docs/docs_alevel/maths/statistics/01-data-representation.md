@@ -46,9 +46,9 @@ $$S(a) = \sum(x_i^2 - 2ax_i + a^2) = \sum x_i^2 - 2a\sum x_i + na^2$$
 
 $$\frac{dS}{da} = -2\sum x_i + 2na$$
 
-Setting ${'\dfrac{dS}{da}'} = 0$: $2na = 2\sum x_i \implies a = {'{'\dfrac{\sum x_i}{n}'}'} = \bar{x}$.
+Setting $\dfrac{dS}{da} = 0$: $2na = 2\sum x_i \implies a = {`\dfrac{\sum x_i}{n}`} = \bar{x}$.
 
-Check: ${'\dfrac{d^2S}{da^2}'} = 2n \gt{} 0$, so this is a minimum. $\blacksquare$
+Check: $\dfrac{d^2S}{da^2} = 2n \gt{} 0$, so this is a minimum. $\blacksquare$
 
 **Intuition.** The mean is the "centre of mass" of the data. It is the single value that best
 represents all the data points in the sense of least squares — no other value produces a smaller
@@ -58,8 +58,8 @@ total squared error. This is why the mean is the foundation of regression and es
 
 The **median** is the middle value when data are arranged in order. For $n$ values:
 
-- If $n$ is odd: median = ${'\dfrac{n+1}{2}'}$-th value.
-- If $n$ is even: median = average of ${'\dfrac{n}{2}'}$-th and $\left({'\dfrac{n}{2}'}+1\right)$-th values.
+- If $n$ is odd: median = $\dfrac{n+1}{2}$-th value.
+- If $n$ is even: median = average of $\dfrac{n}{2}$-th and $\left(\dfrac{n}{2}+1\right)$-th values.
 
 ### 1.4 Mode
 
@@ -91,7 +91,7 @@ The **standard deviation** is $\sigma = \sqrt{\sigma^2}$.
 
 ### 2.2 Computational formula
 
-**Theorem.** $\sigma^2 = {'{'\dfrac{\sum x_i^2}{n}'}'} - \bar{x}^2$
+**Theorem.** $\sigma^2 = {`\dfrac{\sum x_i^2}{n}`} - \bar{x}^2$
 
 **Proof.**
 
@@ -159,12 +159,12 @@ Some use $1.5 \times$ IQR, others use different multipliers.
 
 ### 4.1 Linear coding
 
-**Definition.** Coding transforms data using $y = {'\dfrac{x - a}{c}'}$ where $a$ and $c$ are constants
+**Definition.** Coding transforms data using $y = \dfrac{x - a}{c}$ where $a$ and $c$ are constants
 ($c \neq 0$).
 
 ### 4.2 Effect on summary statistics
 
-If $y_i = {'\dfrac{x_i - a}{c}'}$, then:
+If $y_i = \dfrac{x_i - a}{c}$, then:
 
 $$\bar{y} = \frac{\bar{x} - a}{c}, \qquad \sigma_y = \frac{\sigma_x}{|c|}$$
 

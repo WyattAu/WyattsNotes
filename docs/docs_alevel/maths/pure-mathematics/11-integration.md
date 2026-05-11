@@ -36,7 +36,7 @@ sums:
 
 $$\int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^{n}f(x_i^*)\,\Delta x$$
 
-where $[a,b]$ is divided into $n$ subintervals of width $\Delta x = {'\dfrac{b-a}{n}'}$, and $x_i^*$ is
+where $[a,b]$ is divided into $n$ subintervals of width $\Delta x = \dfrac{b-a}{n}$, and $x_i^*$ is
 a sample point in the $i$-th subinterval.
 
 **Geometric picture.** We divide the area under $y = f(x)$ between $x = a$ and $x = b$ into $n$ thin
@@ -92,19 +92,19 @@ Each standard integral can be derived by reversing the corresponding differentia
 
 ### 3.1 Derivation of key standard integrals
 
-**Power rule.** Since ${'\dfrac{d}{dx}'}\left({'\dfrac{x^{n+1}}{n+1}'}\right) = x^n$ for $n \neq -1$:
+**Power rule.** Since $\dfrac{d}{dx}\left(\dfrac{x^{n+1}}{n+1}\right) = x^n$ for $n \neq -1$:
 
 $$\int x^n\,dx = \frac{x^{n+1}}{n+1} + C, \quad n \neq -1$$
 
-**Reciprocal.** Since ${'\dfrac{d}{dx}'}\ln|x| = {'\dfrac{1}{x}'}$:
+**Reciprocal.** Since $\dfrac{d}{dx}\ln|x| = \dfrac{1}{x}$:
 
 $$\int \frac{1}{x}\,dx = \ln|x| + C$$
 
-**Exponential.** Since ${'\dfrac{d}{dx}'}e^{kx} = ke^{kx}$:
+**Exponential.** Since $\dfrac{d}{dx}e^{kx} = ke^{kx}$:
 
 $$\int e^{kx}\,dx = \frac{1}{k}e^{kx} + C$$
 
-**Trigonometric.** Since ${'\dfrac{d}{dx}'}\sin x = \cos x$:
+**Trigonometric.** Since $\dfrac{d}{dx}\sin x = \cos x$:
 
 $$\int \cos x\,dx = \sin x + C$$
 
@@ -116,9 +116,9 @@ $$\int \sec^2 x\,dx = \tan x + C$$
 
 | $f(x)$              | $\int f(x)\,dx$            |
 | ------------------- | -------------------------- | --- | ---- |
-| $x^n$ ($n \neq -1$) | ${'\dfrac{x^{n+1}}{n+1}'} + C$ |
+| $x^n$ ($n \neq -1$) | $\dfrac{x^{n+1}}{n+1} + C$ |
 | $1/x$               | $\ln                       | x   | + C$ |
-| $e^{kx}$            | ${'\dfrac{1}{k}'}e^{kx} + C$   |
+| $e^{kx}$            | $\dfrac{1}{k}e^{kx} + C$   |
 | $\cos x$            | $\sin x + C$               |
 | $\sin x$            | $-\cos x + C$              |
 | $\sec^2 x$          | $\tan x + C$               |
@@ -168,7 +168,7 @@ $$A = \int_{t_1}^{t_2} y\,\frac{dx}{dt}\,dt$$
 ### 5.2 Proof via the chain rule
 
 Let $u = g(x)$. By the chain rule,
-${'\dfrac{d}{dx}'}F(u) = F'(u){'\dfrac{du}{dx}'} = f(u){'\dfrac{du}{dx}'} = f(g(x))g'(x)$.
+$\dfrac{d}{dx}F(u) = F'(u)\dfrac{du}{dx} = f(u)\dfrac{du}{dx} = f(g(x))g'(x)$.
 
 Therefore $\int f(g(x))g'(x)\,dx = F(g(x)) + C$. $\blacksquare$
 
@@ -207,7 +207,7 @@ For a definite integral, you can either:
 
 ### 6.2 Proof via the product rule
 
-From the product rule: ${'\dfrac{d}{dx}'}(uv) = u{'\dfrac{dv}{dx}'} + v{'\dfrac{du}{dx}'}$.
+From the product rule: $\dfrac{d}{dx}(uv) = u\dfrac{dv}{dx} + v\dfrac{du}{dx}$.
 
 Integrating both sides:
 
@@ -252,7 +252,7 @@ This gives $I_n = x^n e^x - nI_{n-1}$, allowing us to reduce any $I_n$ to $I_0 =
 ### 7.1 Formula
 
 To approximate $\displaystyle\int_a^b f(x)\,dx$, divide $[a,b]$ into $n$ equal strips of width
-$h = {'\dfrac{b-a}{n}'}$:
+$h = \dfrac{b-a}{n}$:
 
 $$\int_a^b f(x)\,dx \approx \frac{h}{2}\left[y_0 + 2y_1 + 2y_2 + \cdots + 2y_{n-1} + y_n\right]$$
 
@@ -281,8 +281,8 @@ satisfies
 $$|E| \leq \frac{(b-a)^3}{12n^2}M$$
 
 **Proof (sketch).** For a single strip of width $h$, the trapezium rule gives area
-${'\dfrac{h}{2}'}[f(a) + f(a+h)]$, while the true area is $\int_a^{a+h}f(x)\,dx$. By Taylor's theorem,
-the error per strip is $-{'\dfrac{h^3}{12}'}f''(\xi)$ for some $\xi \in (a, a+h)$. Summing $n$ strips
+$\dfrac{h}{2}[f(a) + f(a+h)]$, while the true area is $\int_a^{a+h}f(x)\,dx$. By Taylor's theorem,
+the error per strip is $-\dfrac{h^3}{12}f''(\xi)$ for some $\xi \in (a, a+h)$. Summing $n$ strips
 and using the bound $|f''| \leq M$:
 
 $$|E| \leq n \cdot \frac{h^3}{12} M = n \cdot \frac{(b-a)^3}{12n^3}M = \frac{(b-a)^3}{12n^2}M \quad \blacksquare$$
@@ -300,7 +300,7 @@ concave-down functions and overestimates for concave-up functions.
 
 ## 8. Further Techniques
 
-### 8.1 Integrating ${'\dfrac{f'(x)}{f(x)}'}$
+### 8.1 Integrating $\dfrac{f'(x)}{f(x)}$
 
 $$\int \frac{f'(x)}{f(x)}\,dx = \ln|f(x)| + C$$
 
@@ -394,12 +394,12 @@ Use the trapezium rule with 4 strips to approximate $\displaystyle\int_0^2 \frac
 
 <details>
 <summary>Solution 5</summary>
-$h = {'\dfrac{2-0}{4}'} = 0.5$. Values: $y_0 = 1$, $y_1 = 1/(1+0.25) = 0.8$, $y_2 = 1/(1+1) = 0.5$, $y_3 = 1/(1+2.25) \approx 0.3077$, $y_4 = 1/5 = 0.2$.
+$h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$, $y_1 = 1/(1+0.25) = 0.8$, $y_2 = 1/(1+1) = 0.5$, $y_3 = 1/(1+2.25) \approx 0.3077$, $y_4 = 1/5 = 0.2$.
 
 $$\mathrm{Approx} = \frac{0.5}{2}\left[1 + 2(0.8) + 2(0.5) + 2(0.3077) + 0.2\right] = 0.25[1 + 1.6 + 1.0 + 0.6154 + 0.2] = 0.25 \times 4.4154 \approx 1.104$$
 
 Error bound:
-$|E| \leq {'{'\dfrac{2^3}{12 \times 16}'}'} \times 2 = {'\dfrac{8}{192}'} \times 2 = {'\dfrac{1}{12}'} \approx 0.0833$.
+$|E| \leq {`\dfrac{2^3}{12 \times 16}`} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
 
 **If you get this wrong, revise:** [The Trapezium Rule](#7-the-trapezium-rule) — Section 7.
 
@@ -458,7 +458,7 @@ $$\int_{-1}^0 (x^3-x^2-2x)\,dx = \left[\frac{x^4}{4}-\frac{x^3}{3}-x^2\right]_{-
 
 $$\int_0^2 (x^3-x^2-2x)\,dx = \left[\frac{x^4}{4}-\frac{x^3}{3}-x^2\right]_0^2 = \left(4-\frac{8}{3}-4\right) - 0 = -\frac{8}{3}$$
 
-Total area = ${'\dfrac{5}{12}'} + {'\dfrac{8}{3}'} = {'\dfrac{5+32}{12}'} = {'\dfrac{37}{12}'}$.
+Total area = $\dfrac{5}{12} + \dfrac{8}{3} = \dfrac{5+32}{12} = \dfrac{37}{12}$.
 
 **If you get this wrong, revise:**
 [Definite Integration and Areas](#4-definite-integration-and-areas) — Section 4.2.
@@ -499,7 +499,7 @@ Evaluate $\displaystyle\int_1^e \frac{\ln x}{x}\,dx$.
 
 <details>
 <summary>Solution 10</summary>
-Let $u = \ln x$, $du = {'\dfrac{1}{x}'}\,dx$.
+Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$.
 
 $$\int \frac{\ln x}{x}\,dx = \int u\,du = \frac{u^2}{2} + C = \frac{(\ln x)^2}{2} + C$$
 

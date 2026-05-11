@@ -158,7 +158,7 @@ $$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\,e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 ### 3.4 Standard normal
 
-If $X \sim N(\mu, \sigma^2)$, then $Z = {'{'\dfrac{X - \mu}{\sigma}'}'} \sim N(0, 1)$.
+If $X \sim N(\mu, \sigma^2)$, then $Z = {`\dfrac{X - \mu}{\sigma}`} \sim N(0, 1)$.
 
 Probabilities are found using the standard normal table or a calculator's inverse normal function.
 
@@ -208,8 +208,8 @@ $$
 
 Consider each factor as $n \to \infty$:
 
-- ${'{'\dfrac{n(n-1)\cdots(n-k+1)}{n^k}'}'} \to 1$ (each term $n-i \approx n$)
-- $\left(1 - {'{'\dfrac{\lambda}{n}'}'}\right)^{n-k} \to e^{-\lambda}$ (using
+- ${`\dfrac{n(n-1)\cdots(n-k+1)}{n^k}`} \to 1$ (each term $n-i \approx n$)
+- $\left(1 - {`\dfrac{\lambda}{n}`}\right)^{n-k} \to e^{-\lambda}$ (using
   $\lim_{n\to\infty}(1+a/n)^n = e^a$)
 
 Therefore:
@@ -388,7 +388,7 @@ Heights of men are normally distributed with mean 175 cm and standard deviation 
 
 <details>
 <summary>Solution 2</summary>
-$X \sim N(175, 64)$. $P(X \gt{} 185) = P\!\left(Z \gt{} {'\dfrac{185-175}{8}'}\right) = P(Z \gt{} 1.25) = 1 - \Phi(1.25) \approx 1 - 0.8944 = 0.1056$.
+$X \sim N(175, 64)$. $P(X \gt{} 185) = P\!\left(Z \gt{} \dfrac{185-175}{8}\right) = P(Z \gt{} 1.25) = 1 - \Phi(1.25) \approx 1 - 0.8944 = 0.1056$.
 
 **If you get this wrong, revise:** [The Normal Distribution](#3-the-normal-distribution) —
 Section 3.
@@ -404,9 +404,9 @@ A call centre receives an average of 4.5 calls per minute. Find the probability 
 <summary>Solution 3</summary>
 $X \sim \mathrm{Po}(4.5)$.
 
-$P(X=6) = {'\dfrac{e^{-4.5}(4.5)^6}{6!}'} = {'{'\dfrac{0.01111 \times 8303.77}{720}'}'} \approx 0.1281$.
+$P(X=6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = {`\dfrac{0.01111 \times 8303.77}{720}`} \approx 0.1281$.
 
-$P(X \gt{} 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}{'\dfrac{e^{-4.5}(4.5)^k}{k!}'} \approx 1 - 0.9804 = 0.0196$.
+$P(X \gt{} 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}\dfrac{e^{-4.5}(4.5)^k}{k!} \approx 1 - 0.9804 = 0.0196$.
 
 **If you get this wrong, revise:** [The Poisson Distribution](#4-the-poisson-distribution) —
 Section 4.
@@ -422,7 +422,7 @@ $X \sim B(100, 0.04)$. Use the Poisson approximation to find $P(X \leq 2)$.
 <summary>Solution 4</summary>
 $\lambda = np = 4$. $X \approx \mathrm{Po}(4)$.
 
-$P(X \leq 2) = e^{-4}\left(1 + 4 + {'\dfrac{16}{2}'}\right) = e^{-4}(1 + 4 + 8) = 13e^{-4} \approx 0.2381$.
+$P(X \leq 2) = e^{-4}\left(1 + 4 + \dfrac{16}{2}\right) = e^{-4}(1 + 4 + 8) = 13e^{-4} \approx 0.2381$.
 
 **If you get this wrong, revise:**
 [Derivation as a Limit](#42-derivation-as-a-limit-of-the-binomial) — Section 4.2.
@@ -510,7 +510,7 @@ $X \sim B(200, 0.15)$. Use the normal approximation with continuity correction t
 <summary>Solution 9</summary>
 $\mu = 200(0.15) = 30$, $\sigma^2 = 200(0.15)(0.85) = 25.5$, $\sigma \approx 5.05$.
 
-$P(X \gt{} 35) \approx P\!\left(Z \gt{} {'\dfrac{35.5 - 30}{5.05}'}\right) = P(Z \gt{} 1.089) \approx 1 - 0.8621 = 0.1379$.
+$P(X \gt{} 35) \approx P\!\left(Z \gt{} \dfrac{35.5 - 30}{5.05}\right) = P(Z \gt{} 1.089) \approx 1 - 0.8621 = 0.1379$.
 
 **If you get this wrong, revise:**
 [Normal Approximation to Binomial](#36-normal-approximation-to-binomial) — Section 3.6.
@@ -526,7 +526,7 @@ If $X \sim \mathrm{Po}(3)$ and $Y \sim \mathrm{Po}(5)$ are independent, find $P(
 <summary>Solution 10</summary>
 By additivity: $X + Y \sim \mathrm{Po}(3+5) = \mathrm{Po}(8)$.
 
-$P(X + Y = 6) = {'\dfrac{e^{-8}(8)^6}{6!}'} = {'{'\dfrac{e^{-8} \times 262144}{720}'}'} \approx {'{'\dfrac{0.000335 \times 262144}{720}'}'} \approx 0.1221$.
+$P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = {`\dfrac{e^{-8} \times 262144}{720}`} \approx {`\dfrac{0.000335 \times 262144}{720}`} \approx 0.1221$.
 
 **If you get this wrong, revise:** [Additivity](#45-additivity) — Section 4.5.
 
@@ -671,7 +671,7 @@ $\mathrm{Var}(F) = \left(\frac{9}{5}\right)^2 \times 9 = \frac{81}{25} \times 9 
 
 $\mathrm{SD}(F) = \sqrt{29.16} = 5.4$.
 
-$P(F \gt{} 68) = P\!\left(Z \gt{} {'\dfrac{68 - 59}{5.4}'}\right) = P(Z \gt{} 1.667) \approx 1 - 0.9522 = 0.0478$.
+$P(F \gt{} 68) = P\!\left(Z \gt{} \dfrac{68 - 59}{5.4}\right) = P(Z \gt{} 1.667) \approx 1 - 0.9522 = 0.0478$.
 
 **If you get this wrong, revise:** [Coding of Random Variables](#6-coding-of-random-variables) —
 Section 6.

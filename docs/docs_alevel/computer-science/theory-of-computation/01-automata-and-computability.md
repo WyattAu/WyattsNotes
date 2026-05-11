@@ -51,7 +51,7 @@ Trace for "1001": S → S → A → S → A →... wait, let me retrace.
 
 **Formal definition.** An NFA is a 5-tuple $M = (Q, \Sigma, \delta, q_0, F)$ where:
 
-- $\delta: Q \times \Sigma \to \mathcal\{P{'\}'}(Q)$ (maps to a **set** of states, not a single state)
+- $\delta: Q \times \Sigma \to \mathcal{P}(Q)$ (maps to a **set** of states, not a single state)
 - All other components are the same as a DFA
 
 An NFA **accepts** a string if there exists at least one path through the machine that ends in an
@@ -62,7 +62,7 @@ accepting state.
 An ε-NFA additionally allows transitions on the empty string ε (changing state without consuming
 input).
 
-$\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal\{P{'\}'}(Q)$
+$\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{P}(Q)$
 
 <hr />
 
@@ -74,7 +74,7 @@ and NFAs accept exactly the same class of languages (the **regular languages**).
 **Proof (subset construction).** Given NFA $N = (Q_N, \Sigma, \delta_N, q_0, F_N)$, construct DFA
 $D = (Q_D, \Sigma, \delta_D, q_0', F_D)$:
 
-1. $Q_D = \mathcal\{P{'\}'}(Q_N)$ (states are subsets of $Q_N$)
+1. $Q_D = \mathcal{P}(Q_N)$ (states are subsets of $Q_N$)
 2. $q_0' = \varepsilon\mathrm{-closure}(\{q_0\})$
 3. $\delta_D(S, a) = \varepsilon\mathrm{-closure}\left(\bigcup_{q \in S} \delta_N(q, a)\right)$ for
    $S \subseteq Q_N$

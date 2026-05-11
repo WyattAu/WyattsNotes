@@ -219,7 +219,7 @@ The electric potential at a point in a region is given by $V = 3x^2 - 2xy + 4y\,
 
 (b) Calculate the magnitude and direction of the electric field at $(2, 1)$.
 
-(c) Verify that the electric field is perpendicular to the equipotential surface at $(2, 1)$ by showing that $\mathbf\{E{'\}'} \cdot \nabla V = -|\mathbf\{E{'\}'}|^2$.
+(c) Verify that the electric field is perpendicular to the equipotential surface at $(2, 1)$ by showing that $\mathbf{E} \cdot \nabla V = -|\mathbf{E}|^2$.
 
 **Solution:**
 
@@ -233,7 +233,7 @@ $E_x = -(12 - 2) = -10\,\text{V}\,\text{m}^{-1}$
 
 $E_y = -(-4 + 4) = 0\,\text{V}\,\text{m}^{-1}$
 
-(b) $|\mathbf\{E{'\}'}| = \sqrt{(-10)^2 + 0^2} = 10\,\text{V}\,\text{m}^{-1}$
+(b) $|\mathbf{E}| = \sqrt{(-10)^2 + 0^2} = 10\,\text{V}\,\text{m}^{-1}$
 
 The field points in the $-x$ direction (i.e. to the left).
 
@@ -241,10 +241,10 @@ The field points in the $-x$ direction (i.e. to the left).
 
 At $(2, 1)$: $\nabla V = (10, 0)$
 
-$\mathbf\{E{'\}'} \cdot \nabla V = (-10)(10) + (0)(0) = -100$
+$\mathbf{E} \cdot \nabla V = (-10)(10) + (0)(0) = -100$
 
-$-|\mathbf\{E{'\}'}|^2 = -(10)^2 = -100$
+$-|\mathbf{E}|^2 = -(10)^2 = -100$
 
-So $\mathbf\{E{'\}'} \cdot \nabla V = -|\mathbf\{E{'\}'}|^2$, confirming that $\mathbf\{E{'\}'}$ is perpendicular to the equipotential (since $\nabla V$ is perpendicular to the equipotential, and $\mathbf\{E{'\}'} = -\nabla V$).
+So $\mathbf{E} \cdot \nabla V = -|\mathbf{E}|^2$, confirming that $\mathbf{E}$ is perpendicular to the equipotential (since $\nabla V$ is perpendicular to the equipotential, and $\mathbf{E} = -\nabla V$).
 
 This confirms the general result: electric field lines are always perpendicular to equipotential surfaces.

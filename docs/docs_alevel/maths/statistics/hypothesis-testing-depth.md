@@ -117,7 +117,7 @@ $c = 50 \pm 1.96 \times 0.125 = 50 \pm 0.245$
 
 Critical region: $\bar{X} \lt 49.755$ or $\bar{X} \gt 50.245$.
 
-Test statistic: $z = {'\dfrac{50.18 - 50}{0.125}'} = 1.44$.
+Test statistic: $z = \dfrac{50.18 - 50}{0.125} = 1.44$.
 
 Since $1.44 \lt 1.96$, we do **not** reject $H_0$. There is insufficient evidence at the 5% level
 to conclude that the mean length has changed.
@@ -130,7 +130,7 @@ $\beta = P(\mathrm{do\ not\ reject}\ H_0 \mid \mu = 50.2)$
 
 $= P(49.755 \lt \bar{X} \lt 50.245 \mid \bar{X} \sim N(50.2, 0.015625))$
 
-$= P\!\left({'\dfrac{49.755 - 50.2}{0.125}'} \lt Z \lt {'\dfrac{50.245 - 50.2}{0.125}'}\right) = P(-3.56 \lt Z \lt 0.36)$
+$= P\!\left(\dfrac{49.755 - 50.2}{0.125} \lt Z \lt \dfrac{50.245 - 50.2}{0.125}\right) = P(-3.56 \lt Z \lt 0.36)$
 
 $= \Phi(0.36) - \Phi(-3.56) \approx 0.6406 - 0.0002 = 0.6404$
 
@@ -271,7 +271,7 @@ $H_0: \mu = 250$, $H_1: \mu \lt 250$.
 
 Under $H_0$: $\bar{X} \sim N(250, 3^2/10) = N(250, 0.9)$.
 
-$P(\bar{X} \lt c) = 0.01 \implies {'{'\dfrac{c - 250}{\sqrt{0.9}}'}'} = -2.326$
+$P(\bar{X} \lt c) = 0.01 \implies {`\dfrac{c - 250}{\sqrt{0.9}}`} = -2.326$
 
 $c = 250 - 2.326\sqrt{0.9} = 250 - 2.208 = 247.79$
 
@@ -321,7 +321,7 @@ $H_0: \mu = 500$, $H_1: \mu \neq 500$ (two-tailed).
 
 $\bar{X} \sim N(500, 15^2/25) = N(500, 9)$ approximately.
 
-$z = {'\dfrac{490 - 500}{3}'} = -3.33$.
+$z = \dfrac{490 - 500}{3} = -3.33$.
 
 Critical values: $\pm 1.96$.
 

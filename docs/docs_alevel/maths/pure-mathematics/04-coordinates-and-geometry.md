@@ -24,8 +24,8 @@ slug: coordinates-and-geometry
 
 ## 1. The Coordinate Plane
 
-**Definition.** The _Cartesian coordinate plane_ $\mathbb\{R{'\}'}^2$ is the set of all ordered pairs
-$(x, y)$ where $x, y \in \mathbb\{R{'\}'}$. The horizontal axis is the $x$-axis and the vertical axis is
+**Definition.** The _Cartesian coordinate plane_ $\mathbb{R}^2$ is the set of all ordered pairs
+$(x, y)$ where $x, y \in \mathbb{R}$. The horizontal axis is the $x$-axis and the vertical axis is
 the $y$-axis.
 
 The _distance_ between two points $A(x_1, y_1)$ and $B(x_2, y_2)$ is given by Pythagoras' theorem:
@@ -98,10 +98,10 @@ $$y - y_1 = m(x - x_1) \quad \blacksquare$$
 
 _Proof (Perpendicular case)._ Consider two perpendicular lines through the origin with gradients
 $m_1$ and $m_2$. A point on the first line is $(1, m_1)$, and a point on the second is $(1, m_2)$.
-The vector from the origin to $(1, m_1)$ is $\mathbf\{u{'\}'} = (1, m_1)$, and the vector from the origin
-to $(1, m_2)$ is $\mathbf\{v{'\}'} = (1, m_2)$.
+The vector from the origin to $(1, m_1)$ is $\mathbf{u} = (1, m_1)$, and the vector from the origin
+to $(1, m_2)$ is $\mathbf{v} = (1, m_2)$.
 
-Since the lines are perpendicular, $\mathbf\{u{'\}'} \perp \mathbf\{v{'\}'}$, so their dot product is zero:
+Since the lines are perpendicular, $\mathbf{u} \perp \mathbf{v}$, so their dot product is zero:
 
 $$1 \cdot 1 + m_1 \cdot m_2 = 0 \implies m_1 m_2 = -1 \quad \blacksquare$$
 

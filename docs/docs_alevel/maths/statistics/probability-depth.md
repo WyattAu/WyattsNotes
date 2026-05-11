@@ -156,7 +156,7 @@ $$P(M) = 0.45, \quad P(P) = 0.30, \quad P(M \cap P) = 0.15$$
 
 (a) $P(M \cup P) = 0.45 + 0.30 - 0.15 = 0.60$
 
-(b) $P(M \mid P) = {'{'\dfrac{P(M \cap P)}{P(P)}'}'} = {'\dfrac{0.15}{0.30}'} = 0.50$
+(b) $P(M \mid P) = {`\dfrac{P(M \cap P)}{P(P)}`} = \dfrac{0.15}{0.30} = 0.50$
 
 ### 3.3 Three-event Venn diagrams
 
@@ -196,13 +196,13 @@ that path.
 **Problem.** A box contains 7 red and 5 green counters. Two counters are drawn at random without
 replacement. Find the probability that: (a) both are the same colour; (b) exactly one is red.
 
-(a) $P(\mathrm{both\ red}) = {'\dfrac{7}{12}'} \times {'\dfrac{6}{11}'} = {'\dfrac{42}{132}'} = {'\dfrac{7}{22}'}$
+(a) $P(\mathrm{both\ red}) = \dfrac{7}{12} \times \dfrac{6}{11} = \dfrac{42}{132} = \dfrac{7}{22}$
 
-$P(\mathrm{both\ green}) = {'\dfrac{5}{12}'} \times {'\dfrac{4}{11}'} = {'\dfrac{20}{132}'} = {'\dfrac{5}{33}'}$
+$P(\mathrm{both\ green}) = \dfrac{5}{12} \times \dfrac{4}{11} = \dfrac{20}{132} = \dfrac{5}{33}$
 
-$P(\mathrm{same\ colour}) = {'\dfrac{7}{22}'} + {'\dfrac{5}{33}'} = {'\dfrac{21 + 10}{66}'} = {'\dfrac{31}{66}'}$
+$P(\mathrm{same\ colour}) = \dfrac{7}{22} + \dfrac{5}{33} = \dfrac{21 + 10}{66} = \dfrac{31}{66}$
 
-(b) $P(\mathrm{one\ red}) = {'\dfrac{7}{12}'} \times {'\dfrac{5}{11}'} + {'\dfrac{5}{12}'} \times {'\dfrac{7}{11}'} = {'\dfrac{35}{132}'} + {'\dfrac{35}{132}'} = {'\dfrac{70}{132}'} = {'\dfrac{35}{66}'}$
+(b) $P(\mathrm{one\ red}) = \dfrac{7}{12} \times \dfrac{5}{11} + \dfrac{5}{12} \times \dfrac{7}{11} = \dfrac{35}{132} + \dfrac{35}{132} = \dfrac{70}{132} = \dfrac{35}{66}$
 
 ### 4.4 Worked example: with replacement
 
@@ -311,15 +311,15 @@ rate). The condition prevalence is 3%. Find: (a) $P(\mathrm{condition} \mid \mat
 
 $P(T^+ \mid C) = 0.92$, $P(T^- \mid C') = 0.96$, $P(C) = 0.03$.
 
-(a) $P(C \mid T^+) = {'{'\dfrac{0.92 \times 0.03}{0.92 \times 0.03 + 0.04 \times 0.97}'}'} = {'\dfrac{0.0276}{0.0276 + 0.0388}'} = {'\dfrac{0.0276}{0.0664}'} \approx 0.416$
+(a) $P(C \mid T^+) = {`\dfrac{0.92 \times 0.03}{0.92 \times 0.03 + 0.04 \times 0.97}`} = \dfrac{0.0276}{0.0276 + 0.0388} = \dfrac{0.0276}{0.0664} \approx 0.416$
 
-(b) $P(C \mid T^-) = {'{'\dfrac{0.08 \times 0.03}{0.08 \times 0.03 + 0.96 \times 0.97}'}'} = {'\dfrac{0.0024}{0.0024 + 0.9312}'} = {'\dfrac{0.0024}{0.9336}'} \approx 0.00257$
+(b) $P(C \mid T^-) = {`\dfrac{0.08 \times 0.03}{0.08 \times 0.03 + 0.96 \times 0.97}`} = \dfrac{0.0024}{0.0024 + 0.9312} = \dfrac{0.0024}{0.9336} \approx 0.00257$
 
 </details>
 
 ### Problem 3
 
-Events $A$ and $B$ are independent with $P(A) = {'\dfrac{1}{3}'}$ and $P(A \cup B) = {'\dfrac{3}{4}'}$. Find
+Events $A$ and $B$ are independent with $P(A) = \dfrac{1}{3}$ and $P(A \cup B) = \dfrac{3}{4}$. Find
 $P(B)$.
 
 <details>
@@ -327,11 +327,11 @@ $P(B)$.
 
 $P(A \cup B) = P(A) + P(B) - P(A)P(B)$.
 
-${'\dfrac{3}{4}'} = {'\dfrac{1}{3}'} + P(B) - {'\dfrac{1}{3}'}P(B)$.
+$\dfrac{3}{4} = \dfrac{1}{3} + P(B) - \dfrac{1}{3}P(B)$.
 
-${'\dfrac{3}{4}'} - {'\dfrac{1}{3}'} = {'\dfrac{2}{3}'}P(B)$.
+$\dfrac{3}{4} - \dfrac{1}{3} = \dfrac{2}{3}P(B)$.
 
-${'\dfrac{5}{12}'} = {'\dfrac{2}{3}'}P(B) \implies P(B) = {'\dfrac{5}{8}'}$.
+$\dfrac{5}{12} = \dfrac{2}{3}P(B) \implies P(B) = \dfrac{5}{8}$.
 
 </details>
 
@@ -349,11 +349,11 @@ Number of ways $= \binom{4}{1}\binom{6}{1}\binom{5}{1} = 120$.
 
 Total ways to draw 3 from 15 $= \binom{15}{3} = 455$.
 
-$P = {'\dfrac{120}{455}'} = {'\dfrac{24}{91}'} \approx 0.264$.
+$P = \dfrac{120}{455} = \dfrac{24}{91} \approx 0.264$.
 
 Alternatively, using conditional probability:
 
-$P = {'\dfrac{4}{15}'} \times {'\dfrac{6}{14}'} \times {'\dfrac{5}{13}'} \times 6 = {'\dfrac{720}{2730}'} = {'\dfrac{24}{91}'}$.
+$P = \dfrac{4}{15} \times \dfrac{6}{14} \times \dfrac{5}{13} \times 6 = \dfrac{720}{2730} = \dfrac{24}{91}$.
 
 (The factor of 6 accounts for the $3! = 6$ orderings of the three colours.)
 

@@ -25,12 +25,12 @@ Particle $A$ of mass $2.0\,\text{kg}$ moves with velocity $(4.0\hat{i} + 3.0\hat
 
 (a) By conservation of momentum (vector form):
 
-$$m_A\mathbf\{u{'\}'}_A + m_B\mathbf\{u{'\}'}_B = m_A\mathbf\{v{'\}'}_A + m_B\mathbf\{v{'\}'}_B$$
+$$m_A\mathbf{u}_A + m_B\mathbf{u}_B = m_A\mathbf{v}_A + m_B\mathbf{v}_B$$
 
-$$2.0(4.0\hat{i} + 3.0\hat{j}) + 0 = 2.0(-1.0\hat{i} + 4.0\hat{j}) + 3.0\mathbf\{v{'\}'}_B$$
-$$(8.0\hat{i} + 6.0\hat{j}) = (-2.0\hat{i} + 8.0\hat{j}) + 3.0\mathbf\{v{'\}'}_B$$
-$$3.0\mathbf\{v{'\}'}_B = 10.0\hat{i} - 2.0\hat{j}$$
-$$\mathbf\{v{'\}'}_B = (3.33\hat{i} - 0.667\hat{j})\,\text{m}\,\text{s}^{-1}$$
+$$2.0(4.0\hat{i} + 3.0\hat{j}) + 0 = 2.0(-1.0\hat{i} + 4.0\hat{j}) + 3.0\mathbf{v}_B$$
+$$(8.0\hat{i} + 6.0\hat{j}) = (-2.0\hat{i} + 8.0\hat{j}) + 3.0\mathbf{v}_B$$
+$$3.0\mathbf{v}_B = 10.0\hat{i} - 2.0\hat{j}$$
+$$\mathbf{v}_B = (3.33\hat{i} - 0.667\hat{j})\,\text{m}\,\text{s}^{-1}$$
 
 (b) Check kinetic energy:
 
@@ -40,7 +40,7 @@ After: $E_k = \frac{1}{2}(2.0)(1 + 16) + \frac{1}{2}(3.0)(11.11 + 0.444) = 17 + 
 
 Verifying the kinetic energies:
 
-$|\mathbf\{v{'\}'}_B|^2 = (10/3)^2 + (-2/3)^2 = 100/9 + 4/9 = 104/9 = 11.56$
+$|\mathbf{v}_B|^2 = (10/3)^2 + (-2/3)^2 = 100/9 + 4/9 = 104/9 = 11.56$
 
 $E_{kA} = \frac{1}{2}(2.0)(1 + 16) = 17\,\text{J}$
 
@@ -50,7 +50,7 @@ Total after $= 34.33\,\text{J}$, total before $= 25\,\text{J}$.
 
 Since $34.33 \ne 25$, the collision is **not elastic** (kinetic energy is not conserved). KE has increased by $9.33\,\text{J}$, making this a **superelastic** collision -- energy was released from an internal store (e.g. an explosion).
 
-(c) Impulse on $A$ $= \Delta\mathbf\{p{'\}'}_A = m_A(\mathbf\{v{'\}'}_A - \mathbf\{u{'\}'}_A)$
+(c) Impulse on $A$ $= \Delta\mathbf{p}_A = m_A(\mathbf{v}_A - \mathbf{u}_A)$
 
 $$= 2.0[(-1 - 4)\hat{i} + (4 - 3)\hat{j}] = 2.0(-5\hat{i} + 1\hat{j}) = (-10\hat{i} + 2\hat{j})\,\text{N}\,\text{s}$$
 
@@ -154,7 +154,7 @@ $$v_y' = u_y = -6.0\,\text{m}\,\text{s}^{-1}$$
 
 Velocity after collision: $(-6.0\hat{i} - 6.0\hat{j})\,\text{m}\,\text{s}^{-1}$
 
-(b) Impulse $= m(\mathbf\{v{'\}'}' - \mathbf\{u{'\}'})$
+(b) Impulse $= m(\mathbf{v}' - \mathbf{u})$
 
 $$= 0.20[(-6.0 - 8.0)\hat{i} + (-6.0 - (-6.0))\hat{j}]$$
 $$= 0.20(-14.0\hat{i} + 0\hat{j}) = (-2.8\hat{i})\,\text{N}\,\text{s}$$

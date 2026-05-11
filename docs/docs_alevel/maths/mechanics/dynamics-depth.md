@@ -30,16 +30,16 @@ velocity unless acted upon by a resultant external force.
 **Newton's Second Law.** The resultant force acting on a body is equal to the rate of change of
 momentum:
 
-$$\mathbf\{F{'\}'} = \frac{d\mathbf\{p{'\}'}}{dt} = \frac{d(m\mathbf\{v{'\}'})}{dt}$$
+$$\mathbf{F} = \frac{d\mathbf{p}}{dt} = \frac{d(m\mathbf{v})}{dt}$$
 
 For constant mass $m$:
 
-$$\boxed{\mathbf\{F{'\}'} = m\mathbf\{a{'\}'}}$$
+$$\boxed{\mathbf{F} = m\mathbf{a}}$$
 
 **Newton's Third Law.** If body $A$ exerts a force on body $B$, then body $B$ exerts an equal and
 opposite force on body $A$:
 
-$$\mathbf\{F{'\}'}_{AB} = -\mathbf\{F{'\}'}_{BA}$$
+$$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
 ### 1.2 Weight and normal reaction
 
@@ -176,7 +176,7 @@ For the $5\;\mathrm{kg}$ mass (downward positive):
 
 $$5g - T = 5a \tag{2}$$
 
-Adding: $5g - 4g = 13a \implies a = {'\dfrac{g}{13}'} \approx 0.754\;\mathrm{m\,s^{-2}}$.
+Adding: $5g - 4g = 13a \implies a = \dfrac{g}{13} \approx 0.754\;\mathrm{m\,s^{-2}}$.
 
 Since $a \gt 0$, our assumption was correct.
 
@@ -266,9 +266,9 @@ Therefore, for equilibrium: $14.3 \leq P \leq 87.3\;\mathrm{N}$.
 
 ### 5.1 Linear momentum
 
-The **linear momentum** of a body of mass $m$ moving with velocity $\mathbf\{v{'\}'}$ is:
+The **linear momentum** of a body of mass $m$ moving with velocity $\mathbf{v}$ is:
 
-$$\mathbf\{p{'\}'} = m\mathbf\{v{'\}'}$$
+$$\mathbf{p} = m\mathbf{v}$$
 
 Momentum is a vector quantity measured in $\mathrm{kg\,m\,s^{-1}}$ (or $\mathrm{Ns}$).
 
@@ -277,25 +277,25 @@ Momentum is a vector quantity measured in $\mathrm{kg\,m\,s^{-1}}$ (or $\mathrm{
 **Theorem.** If no external resultant force acts on a system of particles, the total momentum of the
 system is conserved.
 
-$$m_1\mathbf\{u{'\}'}_1 + m_2\mathbf\{u{'\}'}_2 = m_1\mathbf\{v{'\}'}_1 + m_2\mathbf\{v{'\}'}_2$$
+$$m_1\mathbf{u}_1 + m_2\mathbf{u}_2 = m_1\mathbf{v}_1 + m_2\mathbf{v}_2$$
 
-**Proof.** Newton's second law for the system: $\mathbf\{F{'\}'}_{\mathrm{ext}} = {'\dfrac{d\mathbf\{p{'\}'}_{\mathrm{total}}}{dt}'}$.
+**Proof.** Newton's second law for the system: $\mathbf{F}_{\mathrm{ext}} = {`\dfrac{d\mathbf{p}_{\mathrm{total}}}{dt}`}$.
 
-If $\mathbf\{F{'\}'}_{\mathrm{ext}} = \mathbf\{0{'\}'}$, then $\mathbf\{p{'\}'}_{\mathrm{total}}$ is constant. $\blacksquare$
+If $\mathbf{F}_{\mathrm{ext}} = \mathbf{0}$, then $\mathbf{p}_{\mathrm{total}}$ is constant. $\blacksquare$
 
 ### 5.3 Impulse
 
-The **impulse** of a constant force $\mathbf\{F{'\}'}$ acting over a time interval $\Delta t$ is:
+The **impulse** of a constant force $\mathbf{F}$ acting over a time interval $\Delta t$ is:
 
-$$\mathbf\{I{'\}'} = \mathbf\{F{'\}'}\,\Delta t$$
+$$\mathbf{I} = \mathbf{F}\,\Delta t$$
 
 By Newton's second law, impulse equals change in momentum:
 
-$$\boxed{\mathbf\{I{'\}'} = \mathbf\{F{'\}'}\,\Delta t = m\mathbf\{v{'\}'} - m\mathbf\{u{'\}'} = \Delta\mathbf\{p{'\}'}}$$
+$$\boxed{\mathbf{I} = \mathbf{F}\,\Delta t = m\mathbf{v} - m\mathbf{u} = \Delta\mathbf{p}}$$
 
 For a variable force:
 
-$$\mathbf\{I{'\}'} = \int_{t_1}^{t_2} \mathbf\{F{'\}'}\,dt$$
+$$\mathbf{I} = \int_{t_1}^{t_2} \mathbf{F}\,dt$$
 
 ### 5.4 Worked example: collision
 
@@ -310,7 +310,7 @@ $$2(5) + 3(0) = 2(1) + 3v$$
 
 $$10 = 2 + 3v \implies v = \frac{8}{3} \approx 2.67\;\mathrm{m\,s^{-1}}$$
 
-Impulse on the $3\;\mathrm{kg}$ particle $= \Delta p = 3v - 0 = 3 \times {'\dfrac{8}{3}'} = 8\;\mathrm{Ns}$.
+Impulse on the $3\;\mathrm{kg}$ particle $= \Delta p = 3v - 0 = 3 \times \dfrac{8}{3} = 8\;\mathrm{Ns}$.
 
 ### 5.5 Coefficient of restitution
 

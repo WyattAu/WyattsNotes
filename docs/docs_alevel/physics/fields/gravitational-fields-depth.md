@@ -28,7 +28,7 @@ where $G = 6.67 \times 10^{-11}$ N m$^2$ kg$^{-2}$ is the gravitational constant
 Consider a point mass emitting gravitational flux uniformly in all directions. The flux through a
 sphere of radius $r$ is constant (by Gauss's law for gravity):
 
-$$\oint \mathbf\{g{'\}'} \cdot d\mathbf\{A{'\}'} = -4\pi G M_{\mathrm{enc}}$$
+$$\oint \mathbf{g} \cdot d\mathbf{A} = -4\pi G M_{\mathrm{enc}}$$
 
 Since the surface area is $4\pi r^2$, the flux density (field strength) must be $g = GM/r^2$. The
 force on a test mass $m$ is then $F = mg = GMm/r^2$. This inverse square law is a direct geometric
@@ -46,10 +46,10 @@ cancellation of positive and negative electric charges renders electromagnetic f
 
 ## 2. Gravitational Field Strength
 
-**Definition.** The gravitational field strength $\mathbf\{g{'\}'}$ at a point is the force per unit mass on a
+**Definition.** The gravitational field strength $\mathbf{g}$ at a point is the force per unit mass on a
 small test mass placed at that point:
 
-$$\boxed{\mathbf\{g{'\}'} = \frac{\mathbf\{F{'\}'}}{m}}$$
+$$\boxed{\mathbf{g} = \frac{\mathbf{F}}{m}}$$
 
 SI units: N kg$^{-1}$, equivalent to m s$^{-2}$.
 
@@ -266,7 +266,7 @@ $\Delta E = E_2 - E_1 = -7.11 \times 10^9 - (-1.42 \times 10^{10}) = 7.1 \times 
 
 Every planet moves in an elliptical orbit with the Sun at one focus.
 
-**Proof sketch.** Starting from $\mathbf\{F{'\}'} = -\frac{GMm}{r^2}\hat{\mathbf\{r{'\}'}}$ (central force), the orbit
+**Proof sketch.** Starting from $\mathbf{F} = -\frac{GMm}{r^2}\hat{\mathbf{r}}$ (central force), the orbit
 equation in polar coordinates is:
 
 $$r = \frac{a(1 - e^2)}{1 + e\cos\theta}$$
@@ -278,8 +278,8 @@ and the orbit is an ellipse with the central mass at one focus. $\square$
 
 A line joining a planet to the Sun sweeps out equal areas in equal times.
 
-**Proof.** The gravitational force is central ($\mathbf\{F{'\}'} \parallel \mathbf\{r{'\}'}$), so torque
-$\boldsymbol\{\tau{'\}'} = \mathbf\{r{'\}'} \times \mathbf\{F{'\}'} = 0$. Angular momentum $L = mrv_\perp$ is constant.
+**Proof.** The gravitational force is central ($\mathbf{F} \parallel \mathbf{r}$), so torque
+$\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F} = 0$. Angular momentum $L = mrv_\perp$ is constant.
 
 Area swept in time $dt$: $dA = \frac{1}{2}r \cdot v_\perp\,dt = \frac{L}{2m}\,dt$.
 

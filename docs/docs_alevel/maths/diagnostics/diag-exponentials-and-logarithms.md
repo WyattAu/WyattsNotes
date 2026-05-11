@@ -65,7 +65,7 @@ To show there are no other solutions for $x \geq 0$: consider $g(x) = 2^x - x^2$
 
 **(a)** Solve $e^{2x} - 5e^x + 6 = 0$, giving exact answers.
 
-**(b)** Solve $e^{2x} - 5e^x + 6 = 1$ for $x \in \mathbb\{R{'\}'}$, giving exact answers.
+**(b)** Solve $e^{2x} - 5e^x + 6 = 1$ for $x \in \mathbb{R}$, giving exact answers.
 
 **(c)** A student solving part (b) writes $e^{2x} - 5e^x + 5 = 0$, substitutes $u = e^x$, and gets $u^2 - 5u + 5 = 0$. Find the values of $u$, and explain why the student must check that $u \gt 0$ before taking natural logarithms.
 
@@ -73,7 +73,7 @@ To show there are no other solutions for $x \geq 0$: consider $g(x) = 2^x - x^2$
 
 **Solution:**
 
-**(a)** Let $u = e^x$. Since $e^x \gt 0$ for all $x \in \mathbb\{R{'\}'}$, we require $u \gt 0$.
+**(a)** Let $u = e^x$. Since $e^x \gt 0$ for all $x \in \mathbb{R}$, we require $u \gt 0$.
 
 $$u^2 - 5u + 6 = 0 \implies (u-2)(u-3) = 0 \implies u = 2 \text{ or } u = 3$$
 
@@ -115,7 +115,7 @@ $$x = \ln\!\left(\frac{5 + \sqrt{5}}{2}\right) \quad \text{or} \quad x = \ln\!\l
 
 **Solution:**
 
-**(a)** $f(x) = \ln(x^2)$: we need $x^2 \gt 0$, i.e. $x \neq 0$. Domain: $\mathbb\{R{'\}'} \setminus \{0\}$.
+**(a)** $f(x) = \ln(x^2)$: we need $x^2 \gt 0$, i.e. $x \neq 0$. Domain: $\mathbb{R} \setminus \{0\}$.
 
 $g(x) = 2\ln x$: we need $x \gt 0$. Domain: $(0, \infty)$.
 
@@ -265,7 +265,7 @@ For $x \gt 0$: the function $f(x) = \frac{2x}{x^2+1} - \ln(x^2+1)$ starts at $f(
 
 **Question:**
 
-The function $f$ is defined by $f(x) = e^{2x-1}$ for $x \in \mathbb\{R{'\}'}$.
+The function $f$ is defined by $f(x) = e^{2x-1}$ for $x \in \mathbb{R}$.
 
 **(a)** Find $f^{-1}(x)$, stating its domain and range.
 
@@ -283,15 +283,15 @@ $$f^{-1}(x) = \frac{\ln x + 1}{2}$$
 
 Domain of $f^{-1}$: $x \gt 0$ (since $\ln x$ must be defined, matching the range of $f$).
 
-Range of $f^{-1}$: $\mathbb\{R{'\}'}$ (since $\frac{\ln x + 1}{2}$ takes all real values as $x$ ranges over $(0, \infty)$, matching the domain of $f$).
+Range of $f^{-1}$: $\mathbb{R}$ (since $\frac{\ln x + 1}{2}$ takes all real values as $x$ ranges over $(0, \infty)$, matching the domain of $f$).
 
 **(b)** $(f^{-1} \circ f)(x) = f^{-1}(f(x)) = \frac{\ln(e^{2x-1}) + 1}{2} = \frac{2x-1+1}{2} = x$.
 
-Domain: the range of $f$ must be within the domain of $f^{-1}$. Range of $f$ is $(0, \infty)$, domain of $f^{-1}$ is $(0, \infty)$. So domain is $\mathbb\{R{'\}'}$.
+Domain: the range of $f$ must be within the domain of $f^{-1}$. Range of $f$ is $(0, \infty)$, domain of $f^{-1}$ is $(0, \infty)$. So domain is $\mathbb{R}$.
 
 $(f \circ f^{-1})(x) = f(f^{-1}(x)) = e^{2 \cdot \frac{\ln x + 1}{2} - 1} = e^{\ln x + 1 - 1} = e^{\ln x} = x$.
 
-Domain: the range of $f^{-1}$ is $\mathbb\{R{'\}'}$, which is within the domain of $f$. The domain is $(0, \infty)$ (the domain of $f^{-1}$).
+Domain: the range of $f^{-1}$ is $\mathbb{R}$, which is within the domain of $f$. The domain is $(0, \infty)$ (the domain of $f^{-1}$).
 
 **(c)** $g(x) = \ln(x-1) + \ln(x+1) = \ln((x-1)(x+1)) = \ln(x^2 - 1)$ for $x \in (1, \infty)$.
 
@@ -301,6 +301,6 @@ Since $x \gt 1$, we take the positive root: $x = \sqrt{e^y + 1}$.
 
 $$g^{-1}(x) = \sqrt{e^x + 1}$$
 
-Domain of $g^{-1}$: $\mathbb\{R{'\}'}$ (since $e^x + 1 \gt 0$ for all $x$). Range of $g^{-1}$: $(1, \infty)$.
+Domain of $g^{-1}$: $\mathbb{R}$ (since $e^x + 1 \gt 0$ for all $x$). Range of $g^{-1}$: $(1, \infty)$.
 
 Verification: $g(g^{-1}(x)) = \ln(e^x + 1 - 1) = \ln(e^x) = x$. Confirmed.

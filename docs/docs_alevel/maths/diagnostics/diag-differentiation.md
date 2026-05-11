@@ -180,11 +180,11 @@ This is immediately obvious because $(x-1)^4 \geq 0$ for all $x$, with equality 
 
 **Question:**
 
-**(a)** The function $f(x) = x^3 - 3x + 1$ is defined on $\mathbb\{R{'\}'}$. Use differentiation to determine whether $f$ is injective.
+**(a)** The function $f(x) = x^3 - 3x + 1$ is defined on $\mathbb{R}$. Use differentiation to determine whether $f$ is injective.
 
 **(b)** Find the largest interval containing $x = 0$ on which $f$ is injective.
 
-**(c)** The function $g(x) = x + e^x$ is defined on $\mathbb\{R{'\}'}$. Prove that $g$ is injective and hence find $g^{-1}(3)$ to 3 decimal places.
+**(c)** The function $g(x) = x + e^x$ is defined on $\mathbb{R}$. Prove that $g$ is injective and hence find $g^{-1}(3)$ to 3 decimal places.
 
 [Difficulty: hard. Combines derivative analysis with injectivity proofs and inverse function evaluation.]
 
@@ -199,7 +199,7 @@ Sign of $f'(x)$:
 - $-1 \lt x \lt 1$: $f'(x) \lt 0$ (decreasing)
 - $x \gt 1$: $f'(x) \gt 0$ (increasing)
 
-Since $f$ is not monotonic (it increases, then decreases, then increases), $f$ is not injective on $\mathbb\{R{'\}'}$.
+Since $f$ is not monotonic (it increases, then decreases, then increases), $f$ is not injective on $\mathbb{R}$.
 
 For example, $f(-1) = -1 + 3 + 1 = 3$ and $f(2) = 8 - 6 + 1 = 3$, so $f(-1) = f(2)$ with $-1 \neq 2$.
 
@@ -209,9 +209,9 @@ The largest such interval is $[-1, 1]$.
 
 **(c)** $g'(x) = 1 + e^x$.
 
-Since $e^x \gt 0$ for all $x$, $g'(x) = 1 + e^x \gt 0$ for all $x \in \mathbb\{R{'\}'}$.
+Since $e^x \gt 0$ for all $x$, $g'(x) = 1 + e^x \gt 0$ for all $x \in \mathbb{R}$.
 
-Therefore $g$ is strictly increasing on $\mathbb\{R{'\}'}$, and hence injective.
+Therefore $g$ is strictly increasing on $\mathbb{R}$, and hence injective.
 
 To find $g^{-1}(3)$: solve $x + e^x = 3$.
 
@@ -283,7 +283,7 @@ This is a different line from $y = -2x + 4$. The two curves do not share a commo
 
 **Question:**
 
-The curve $C$ has equation $y = xe^{-x}$ for $x \in \mathbb\{R{'\}'}$.
+The curve $C$ has equation $y = xe^{-x}$ for $x \in \mathbb{R}$.
 
 **(a)** Find the coordinates of the stationary point and determine its nature.
 

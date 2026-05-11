@@ -28,8 +28,8 @@ solutions.
 ### Algebra and Functions
 
 <details>
-<summary>Q1. Simplify ${'\dfrac{x^2 - 9}{x^2 - x - 6}'}$.</summary>
-${'\dfrac{x^2-9}{x^2-x-6}'} = {'\dfrac{(x-3)(x+3)}{(x-3)(x+2)}'} = {'\dfrac{x+3}{x+2}'}$, $x \neq 3, -2$.
+<summary>Q1. Simplify $\dfrac{x^2 - 9}{x^2 - x - 6}$.</summary>
+$\dfrac{x^2-9}{x^2-x-6} = \dfrac{(x-3)(x+3)}{(x-3)(x+2)} = \dfrac{x+3}{x+2}$, $x \neq 3, -2$.
 
 **If you get this wrong, revise:**
 [Algebraic Expressions](/docs/alevel/maths/pure-mathematics/algebraic-expressions)
@@ -46,22 +46,22 @@ $(x-2)(x-3) \geq 0$. The quadratic opens upward, so $x \leq 2$ or $x \geq 3$.
 </details>
 
 <details>
-<summary>Q3. Find the inverse of $f(x) = {'\dfrac{2x+1}{x-3}'}$, $x \neq 3$.</summary>
-$y = {'\dfrac{2x+1}{x-3}'} \implies y(x-3) = 2x+1 \implies yx - 3y = 2x + 1 \implies x(y-2) = 3y+1$.
+<summary>Q3. Find the inverse of $f(x) = \dfrac{2x+1}{x-3}$, $x \neq 3$.</summary>
+$y = \dfrac{2x+1}{x-3} \implies y(x-3) = 2x+1 \implies yx - 3y = 2x + 1 \implies x(y-2) = 3y+1$.
 
-$f^{-1}(x) = {'\dfrac{3x+1}{x-2}'}$, $x \neq 2$.
+$f^{-1}(x) = \dfrac{3x+1}{x-2}$, $x \neq 2$.
 
 **If you get this wrong, revise:** [Functions](/docs/alevel/maths/pure-mathematics/functions)
 
 </details>
 
 <details>
-<summary>Q4. Express ${'\dfrac{3x+5}{(x-1)(x+2)}'}$ in partial fractions.</summary>
-${'\dfrac{3x+5}{(x-1)(x+2)}'} = {'\dfrac{A}{x-1}'} + {'\dfrac{B}{x+2}'}$.
+<summary>Q4. Express $\dfrac{3x+5}{(x-1)(x+2)}$ in partial fractions.</summary>
+$\dfrac{3x+5}{(x-1)(x+2)} = \dfrac{A}{x-1} + \dfrac{B}{x+2}$.
 
 $3x+5 = A(x+2) + B(x-1)$. $x=1$: $8 = 3A \implies A = 8/3$. $x=-2$: $-1 = -3B \implies B = 1/3$.
 
-$= {'\dfrac{8/3}{x-1}'} + {'\dfrac{1/3}{x+2}'} = {'\dfrac{8}{3(x-1)}'} + {'\dfrac{1}{3(x+2)}'}$.
+$= \dfrac{8/3}{x-1} + \dfrac{1/3}{x+2} = \dfrac{8}{3(x-1)} + \dfrac{1}{3(x+2)}$.
 
 **If you get this wrong, revise:**
 [Algebraic Expressions](/docs/alevel/maths/pure-mathematics/algebraic-expressions)
@@ -72,7 +72,7 @@ $= {'\dfrac{8/3}{x-1}'} + {'\dfrac{1/3}{x+2}'} = {'\dfrac{8}{3(x-1)}'} + {'\dfra
 
 <details>
 <summary>Q5. Find the sum of the first 50 terms of the arithmetic series $3 + 7 + 11 + \cdots$.</summary>
-$a = 3$, $d = 4$. $S_{50} = {'\dfrac{50}{2}'}[2(3) + 49(4)] = 25(6 + 196) = 25 \times 202 = 5050$.
+$a = 3$, $d = 4$. $S_{50} = \dfrac{50}{2}[2(3) + 49(4)] = 25(6 + 196) = 25 \times 202 = 5050$.
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/alevel/maths/pure-mathematics/sequences-and-series)
@@ -90,7 +90,7 @@ $\binom{5}{3}(2)^2(-3x)^3 = 10 \times 4 \times (-27x^3) = -1080x^3$. Coefficient
 
 <details>
 <summary>Q7. Find the sum to infinity of $0.5 + 0.1 + 0.02 + 0.004 + \cdots$.</summary>
-$a = 0.5$, $r = 0.2$. $|r| \lt{} 1$. $S_\infty = {'\dfrac{0.5}{1-0.2}'} = {'\dfrac{0.5}{0.8}'} = 0.625$.
+$a = 0.5$, $r = 0.2$. $|r| \lt{} 1$. $S_\infty = \dfrac{0.5}{1-0.2} = \dfrac{0.5}{0.8} = 0.625$.
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/alevel/maths/pure-mathematics/sequences-and-series)
@@ -113,8 +113,8 @@ $x = \pi/6, \pi/2, 5\pi/6, 3\pi/2$.
 </details>
 
 <details>
-<summary>Q9. Prove that ${'{'\dfrac{1-\cos 2x}{1+\cos 2x}'}'} = \tan^2 x$.</summary>
-${'{'\dfrac{1-\cos 2x}{1+\cos 2x}'}'} = {'{'\dfrac{2\sin^2 x}{2\cos^2 x}'}'} = \tan^2 x$. $\blacksquare$
+<summary>Q9. Prove that ${`\dfrac{1-\cos 2x}{1+\cos 2x}`} = \tan^2 x$.</summary>
+${`\dfrac{1-\cos 2x}{1+\cos 2x}`} = {`\dfrac{2\sin^2 x}{2\cos^2 x}`} = \tan^2 x$. $\blacksquare$
 
 **If you get this wrong, revise:** [Trigonometry](/docs/alevel/maths/pure-mathematics/trigonometry)
 
@@ -124,7 +124,7 @@ ${'{'\dfrac{1-\cos 2x}{1+\cos 2x}'}'} = {'{'\dfrac{2\sin^2 x}{2\cos^2 x}'}'} = \
 
 <details>
 <summary>Q10. Solve $3^{2x-1} = 7$.</summary>
-$(2x-1)\ln 3 = \ln 7 \implies x = {'{'\dfrac{\ln 7 + \ln 3}{2\ln 3}'}'} = {'{'\dfrac{\ln 21}{2\ln 3}'}'} \approx 1.771$.
+$(2x-1)\ln 3 = \ln 7 \implies x = {`\dfrac{\ln 7 + \ln 3}{2\ln 3}`} = {`\dfrac{\ln 21}{2\ln 3}`} \approx 1.771$.
 
 **If you get this wrong, revise:**
 [Exponentials and Logarithms](/docs/alevel/maths/pure-mathematics/exponentials-and-logarithms)
@@ -133,9 +133,9 @@ $(2x-1)\ln 3 = \ln 7 \implies x = {'{'\dfrac{\ln 7 + \ln 3}{2\ln 3}'}'} = {'{'\d
 
 <details>
 <summary>Q11. A population grows from 500 to 2000 in 6 hours. Find the doubling time (assume exponential growth).</summary>
-$2000 = 500e^{6k} \implies e^{6k} = 4 \implies k = {'{'\dfrac{\ln 4}{6}'}'} = {'{'\dfrac{\ln 2}{3}'}'}$.
+$2000 = 500e^{6k} \implies e^{6k} = 4 \implies k = {`\dfrac{\ln 4}{6}`} = {`\dfrac{\ln 2}{3}`}$.
 
-$T_d = {'{'\dfrac{\ln 2}{k}'}'} = 3$ hours.
+$T_d = {`\dfrac{\ln 2}{k}`} = 3$ hours.
 
 **If you get this wrong, revise:**
 [Exponentials and Logarithms](/docs/alevel/maths/pure-mathematics/exponentials-and-logarithms)
@@ -145,10 +145,10 @@ $T_d = {'{'\dfrac{\ln 2}{k}'}'} = 3$ hours.
 ### Differentiation
 
 <details>
-<summary>Q12. Find ${'\dfrac{dy}{dx}'}$ where $y = {'{'\dfrac{x^2 e^x}{\sin x}'}'}$.</summary>
+<summary>Q12. Find $\dfrac{dy}{dx}$ where $y = {`\dfrac{x^2 e^x}{\sin x}`}$.</summary>
 $u = x^2e^x$, $v = \sin x$. $u' = e^x(x^2+2x)$, $v' = \cos x$.
 
-${'\dfrac{dy}{dx}'} = {'{'\dfrac{e^x(x^2+2x)\sin x - x^2e^x\cos x}{\sin^2 x}'}'}$.
+$\dfrac{dy}{dx} = {`\dfrac{e^x(x^2+2x)\sin x - x^2e^x\cos x}{\sin^2 x}`}$.
 
 **If you get this wrong, revise:**
 [Differentiation](/docs/alevel/maths/pure-mathematics/differentiation)
@@ -168,7 +168,7 @@ $x=1$: $y'' = 6 \gt{} 0$, minimum at $(1, 0)$. $x=-1$: $y'' = -6 \lt{} 0$, maxim
 
 <details>
 <summary>Q14. A sphere's radius increases at $3\,\mathrm{cm/s}$. Find $dV/dt$ when $r = 5\,\mathrm{cm}$.</summary>
-$V = {'\dfrac{4}{3}'}\pi r^3$. ${'\dfrac{dV}{dt}'} = 4\pi r^2{'\dfrac{dr}{dt}'} = 4\pi(25)(3) = 300\pi\,\mathrm{cm}^3/\mathrm{s}$.
+$V = \dfrac{4}{3}\pi r^3$. $\dfrac{dV}{dt} = 4\pi r^2\dfrac{dr}{dt} = 4\pi(25)(3) = 300\pi\,\mathrm{cm}^3/\mathrm{s}$.
 
 **If you get this wrong, revise:**
 [Differentiation](/docs/alevel/maths/pure-mathematics/differentiation)
@@ -189,7 +189,7 @@ By parts: $u=x$, $dv=e^x\,dx$. $I = [xe^x]_0^1 - \int_0^1 e^x\,dx = e - (e-1) = 
 <summary>Q16. Find the area enclosed between $y = x^2$ and $y = x$.</summary>
 Intersection: $x^2 = x \implies x = 0, 1$.
 
-$A = \int_0^1 (x - x^2)\,dx = \left[{'\dfrac{x^2}{2}'} - {'\dfrac{x^3}{3}'}\right]_0^1 = {'\dfrac{1}{2}'} - {'\dfrac{1}{3}'} = {'\dfrac{1}{6}'}$.
+$A = \int_0^1 (x - x^2)\,dx = \left[\dfrac{x^2}{2} - \dfrac{x^3}{3}\right]_0^1 = \dfrac{1}{2} - \dfrac{1}{3} = \dfrac{1}{6}$.
 
 **If you get this wrong, revise:** [Integration](/docs/alevel/maths/pure-mathematics/integration)
 
@@ -198,10 +198,10 @@ $A = \int_0^1 (x - x^2)\,dx = \left[{'\dfrac{x^2}{2}'} - {'\dfrac{x^3}{3}'}\righ
 ### Vectors
 
 <details>
-<summary>Q17. Find the angle between $\mathbf\{a{'\}'} = \begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\mathbf\{b{'\}'} = \begin{pmatrix}3\\-1\\2\end{pmatrix}$.</summary>
-$\mathbf\{a{'\}'}\cdot\mathbf\{b{'\}'} = 3-2-2 = -1$. $|\mathbf\{a{'\}'}| = \sqrt{6}$, $|\mathbf\{b{'\}'}| = \sqrt{14}$.
+<summary>Q17. Find the angle between $\mathbf{a} = \begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix}3\\-1\\2\end{pmatrix}$.</summary>
+$\mathbf{a}\cdot\mathbf{b} = 3-2-2 = -1$. $|\mathbf{a}| = \sqrt{6}$, $|\mathbf{b}| = \sqrt{14}$.
 
-$\cos\theta = {'{'\dfrac{-1}{\sqrt{84}}'}'} \implies \theta \approx 96.3^\circ$.
+$\cos\theta = {`\dfrac{-1}{\sqrt{84}}`} \implies \theta \approx 96.3^\circ$.
 
 **If you get this wrong, revise:** [Vectors](/docs/alevel/maths/pure-mathematics/vectors)
 
@@ -209,7 +209,7 @@ $\cos\theta = {'{'\dfrac{-1}{\sqrt{84}}'}'} \implies \theta \approx 96.3^\circ$.
 
 <details>
 <summary>Q18. Write the equation of the line through $(1,2,-1)$ in direction $\begin{pmatrix}2\\-1\\3\end{pmatrix}$.</summary>
-$\mathbf\{r{'\}'} = \begin{pmatrix}1\\2\\-1\end{pmatrix} + t\begin{pmatrix}2\\-1\\3\end{pmatrix}$.
+$\mathbf{r} = \begin{pmatrix}1\\2\\-1\end{pmatrix} + t\begin{pmatrix}2\\-1\\3\end{pmatrix}$.
 
 **If you get this wrong, revise:** [Vectors](/docs/alevel/maths/pure-mathematics/vectors)
 
@@ -226,9 +226,9 @@ Suppose $\sqrt{5} = a/b$ in lowest terms. $5b^2 = a^2$, so $5 \mid a^2 \implies 
 </details>
 
 <details>
-<summary>Q20. Prove by induction that $\displaystyle\sum_{r=1}^{n} r^2 = {'\dfrac{n(n+1)(2n+1)}{6}'}$.</summary>
+<summary>Q20. Prove by induction that $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$.</summary>
 *Base ($n=1$):* $1 = 1(2)(3)/6 = 1$. ✓
-*Step:* ${'\dfrac{k(k+1)(2k+1)}{6}'} + (k+1)^2 = {'\dfrac{(k+1)[k(2k+1)+6(k+1)]}{6}'} = {'\dfrac{(k+1)(2k^2+7k+6)}{6}'} = {'\dfrac{(k+1)(k+2)(2k+3)}{6}'}$. ✓
+*Step:* $\dfrac{k(k+1)(2k+1)}{6} + (k+1)^2 = \dfrac{(k+1)[k(2k+1)+6(k+1)]}{6} = \dfrac{(k+1)(2k^2+7k+6)}{6} = \dfrac{(k+1)(k+2)(2k+3)}{6}$. ✓
 
 **If you get this wrong, revise:** [Proof](/docs/alevel/maths/pure-mathematics/proof)
 
@@ -284,7 +284,7 @@ $\bar{x} = 10(3)+50 = 80$. $\sigma_x = 10(2) = 20$.
 
 <details>
 <summary>Q25. Given $S_{xx}=40$, $S_{xy}=24$, $S_{yy}=25$, $\bar{x}=5$, $\bar{y}=7$, find $r$ and the regression line of $y$ on $x$.</summary>
-$r = {'{'\dfrac{24}{\sqrt{40 \times 25}}'}'} = {'{'\dfrac{24}{\sqrt{1000}}'}'} = {'\dfrac{24}{31.62}'} \approx 0.759$.
+$r = {`\dfrac{24}{\sqrt{40 \times 25}}`} = {`\dfrac{24}{\sqrt{1000}}`} = \dfrac{24}{31.62} \approx 0.759$.
 
 $b = 24/40 = 0.6$, $a = 7 - 0.6(5) = 4$. Line: $y = 4 + 0.6x$.
 
@@ -305,7 +305,7 @@ $P(A|B) = 0.3/0.5 = 0.6$. $P(A \cup B) = 0.6+0.5-0.3 = 0.8$.
 
 <details>
 <summary>Q27. A bag has 5 red and 3 blue balls. Two are drawn without replacement. Find $P(\mathrm{both red})$.</summary>
-$P = {'\dfrac{5}{8}'} \times {'\dfrac{4}{7}'} = {'\dfrac{20}{56}'} = {'\dfrac{5}{14}'}$.
+$P = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
 
 **If you get this wrong, revise:** [Probability](/docs/alevel/maths/statistics/probability)
 
@@ -343,7 +343,7 @@ $P(X \gt{} 108) = P(Z \gt{} 8/8) = P(Z \gt{} 1) = 1 - 0.8413 = 0.1587$.
 
 <details>
 <summary>Q31. $X \sim \mathrm{Po}(5)$. Find $P(X \leq 3)$.</summary>
-$P(X \leq 3) = e^{-5}\left(1+5+{'\dfrac{25}{2}'}+{'\dfrac{125}{6}'}\right) = e^{-5}(1+5+12.5+20.833) = 39.333 \times 0.00674 \approx 0.2650$.
+$P(X \leq 3) = e^{-5}\left(1+5+\dfrac{25}{2}+\dfrac{125}{6}\right) = e^{-5}(1+5+12.5+20.833) = 39.333 \times 0.00674 \approx 0.2650$.
 
 **If you get this wrong, revise:**
 [Statistical Distributions](/docs/alevel/maths/statistics/statistical-distributions)
@@ -389,7 +389,7 @@ $v^2 = u^2 + 2as \implies 1225 = 225 + 400a \implies a = 1000/400 = 2.5\,\mathrm
 
 <details>
 <summary>Q35. A projectile is launched at $25\,\mathrm{m/s}$ at $50^\circ$ above horizontal. Find the maximum height.</summary>
-$H = {'{'\dfrac{(25\sin 50°)^2}{2(9.8)}'}'} = {'\dfrac{(19.15)^2}{19.6}'} = {'\dfrac{366.7}{19.6}'} \approx 18.71\,\mathrm{m}$.
+$H = {`\dfrac{(25\sin 50°)^2}{2(9.8)}`} = \dfrac{(19.15)^2}{19.6} = \dfrac{366.7}{19.6} \approx 18.71\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Kinematics](/docs/alevel/maths/mechanics/kinematics)
 
@@ -439,7 +439,7 @@ $R_L = 500 - 216.7 = 283.3\,\mathrm{N}$.
 
 <details>
 <summary>Q40. Find the centre of mass of masses $3\,\mathrm{kg}$, $4\,\mathrm{kg}$, $5\,\mathrm{kg}$ at $(0,0)$, $(6,0)$, $(3,4)$.</summary>
-$\bar{x} = {'\dfrac{0+24+15}{12}'} = 39/12 = 3.25$. $\bar{y} = {'\dfrac{0+0+20}{12}'} = 5/3 \approx 1.67$.
+$\bar{x} = \dfrac{0+24+15}{12} = 39/12 = 3.25$. $\bar{y} = \dfrac{0+0+20}{12} = 5/3 \approx 1.67$.
 
 **If you get this wrong, revise:** [Moments](/docs/alevel/maths/mechanics/moments)
 
