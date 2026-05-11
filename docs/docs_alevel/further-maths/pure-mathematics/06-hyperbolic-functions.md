@@ -1,7 +1,8 @@
 ---
 title: Hyperbolic Functions
 description:
-  "A-Level Further Maths notes on Hyperbolic Functions: Board Coverage for comprehensive revision and examination preparation."
+  'A-Level Further Maths notes on Hyperbolic Functions: Board Coverage for comprehensive revision
+  and examination preparation.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -19,7 +20,8 @@ similarities with trigonometric functions. They arise naturally in the solution 
 equations, the description of hanging cables (catenary), special relativity, and many areas of
 physics and engineering.
 
-<DesmosGraph title="Hyperbolic Functions: sinh, cosh, tanh" expressions={["\sinh(x)=(e^x-e^{-x})/2", "\cosh(x)=(e^x+e^{-x})/2", "\tanh(x)=\sinh(x)/\cosh(x)"]} width={800} height={500} />
+<DesmosGraph title="Hyperbolic Functions: sinh, cosh, tanh" expressions={["\sinh(x)=(e^x-e^{-x})/2",
+"\cosh(x)=(e^x+e^{-x})/2", "\tanh(x)=\sinh(x)/\cosh(x)"]} width={800} height={500} />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
 
@@ -32,10 +34,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 | OCR (A)    | Paper 1 | Definitions and basic identities                           |
 | CIE (9231) | P2      | Full coverage including logarithmic forms of inverses      |
 
-:::info
-The formula booklet lists hyperbolic identities and the logarithmic forms of the inverse
-hyperbolic functions. CIE requires the derivation of these logarithmic forms.
-:::
+:::info The formula booklet lists hyperbolic identities and the logarithmic forms of the inverse
+hyperbolic functions. CIE requires the derivation of these logarithmic forms. :::
 
 <hr />
 
@@ -58,8 +58,7 @@ $$\boxed{\tanh x = \frac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆ = \frac{e
 
 $$\mathrm{sech}\,x = \frac◆LB◆1◆RB◆◆LB◆\cosh x◆RB◆, \qquad \mathrm{cosech}\,x = \frac◆LB◆1◆RB◆◆LB◆\sinh x◆RB◆, \qquad \coth\,x = \frac◆LB◆\cosh x◆RB◆◆LB◆\sinh x◆RB◆$$
 
-:::warning
-Note the spelling: $\cosh$, $\sinh$, $\tanh$ are standard abbreviations. The reciprocals
+:::warning Note the spelling: $\cosh$, $\sinh$, $\tanh$ are standard abbreviations. The reciprocals
 use $\mathrm{sech}$ (not $\mathrm{sec h}$), $\mathrm{cosech}$ (not $\mathrm{csch}$), and $\coth$.
 :::
 
@@ -152,10 +151,8 @@ $\sinh^2$ term flips sign.)
 $\cos 2x = \cos^2 x - \sin^2 x \xrightarrow{\mathrm{Osborn}} \cosh 2x = \cosh^2 x + \sinh^2 x$. (The
 $\sinh^2$ term flips sign, turning $-$ into $+$.)
 
-:::tip
-Osborn's rule is a useful mnemonic but should not replace understanding. Always verify
-identities by direct computation from the exponential definitions when in doubt.
-:::
+:::tip Osborn's rule is a useful mnemonic but should not replace understanding. Always verify
+identities by direct computation from the exponential definitions when in doubt. :::
 
 <hr />
 
@@ -288,8 +285,8 @@ $$\boxed{\int \frac{1}{a^2-x^2}\,dx = \frac{1}{a}\mathrm{artanh}\!\left(\frac{x}
 $\displaystyle\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+9}◆RB◆\,dx = \mathrm{arsinh}\!\left(\frac{x}{3}\right) + C = \ln\!\left(\frac{x}{3}+\sqrt◆LB◆\frac{x^2}{9}+1◆RB◆\right)+C = \ln\!\left(\frac◆LB◆x+\sqrt{x^2+9}◆RB◆◆LB◆3◆RB◆\right)+C$.
 
 **Example.**
-$\displaystyle\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-4}◆RB◆\,dx = \mathrm{arcosh}\!\left(\frac{x}{2}\right) + C$ for
-$x > 2$.
+$\displaystyle\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-4}◆RB◆\,dx = \mathrm{arcosh}\!\left(\frac{x}{2}\right) + C$
+for $x > 2$.
 
 **Example.**
 $\displaystyle\int \frac{1}{4-x^2}\,dx = \frac{1}{2}\mathrm{artanh}\!\left(\frac{x}{2}\right) + C$
@@ -305,11 +302,9 @@ $$\int \mathrm{sech}^2\,x\,dx = \tanh x + C$$
 
 $$\int \tanh x\,dx = \ln(\cosh x) + C$$
 
-:::tip
-When you encounter an integral of the form $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆$ or
-$\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-a^2}◆RB◆$, the inverse hyperbolic functions provide the most elegant answer. CIE
-and Edexcel FP2 frequently test these.
-:::
+:::tip When you encounter an integral of the form $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆$ or
+$\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-a^2}◆RB◆$, the inverse hyperbolic functions provide the most elegant
+answer. CIE and Edexcel FP2 frequently test these. :::
 
 <hr />
 
@@ -354,19 +349,19 @@ $$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac◆LB◆
 
 ## 6. Summary of Key Results
 
-| Function  | Definition                 | Inverse                             |
-| --------- | -------------------------- | ----------------------------------- | --- | --- |
-| $\sinh x$ | $\dfrac{e^x-e^{-x}}{2}$    | $\ln(x+\sqrt{x^2+1})$               |
-| $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$    | $\ln(x+\sqrt{x^2-1}),\ x\geq 1$     |
+| Function  | Definition                             | Inverse                             |
+| --------- | -------------------------------------- | ----------------------------------- | --- | --- |
+| $\sinh x$ | $\dfrac{e^x-e^{-x}}{2}$                | $\ln(x+\sqrt{x^2+1})$               |
+| $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$                | $\ln(x+\sqrt{x^2-1}),\ x\geq 1$     |
 | $\tanh x$ | $\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$ | $\dfrac{1}{2}\ln\dfrac{1+x}{1-x},\  | x   | <1$ |
 
-| Derivative                                                  | Integral                                                              |
-| ----------------------------------------------------------- | --------------------------------------------------------------------- |
-| $\dfrac{d}{dx}\sinh x = \cosh x$                            | $\int\cosh x\,dx = \sinh x+C$                                         |
-| $\dfrac{d}{dx}\cosh x = \sinh x$                            | $\int\sinh x\,dx = \cosh x+C$                                         |
-| $\dfrac{d}{dx}\tanh x = \mathrm{sech}^2\,x$                 | $\int\mathrm{sech}^2\,x\,dx = \tanh x+C$                              |
-| $\dfrac{d}{dx}\mathrm{arsinh}\,x = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | $\int\dfrac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆ = \mathrm{arsinh}\dfrac{x}{a}+C$      |
-| $\dfrac{d}{dx}\mathrm{artanh}\,x = \dfrac{1}{1-x^2}$        | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh}\dfrac{x}{a}+C$ |
+| Derivative                                                              | Integral                                                                     |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| $\dfrac{d}{dx}\sinh x = \cosh x$                                        | $\int\cosh x\,dx = \sinh x+C$                                                |
+| $\dfrac{d}{dx}\cosh x = \sinh x$                                        | $\int\sinh x\,dx = \cosh x+C$                                                |
+| $\dfrac{d}{dx}\tanh x = \mathrm{sech}^2\,x$                             | $\int\mathrm{sech}^2\,x\,dx = \tanh x+C$                                     |
+| $\dfrac{d}{dx}\mathrm{arsinh}\,x = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | $\int\dfrac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆ = \mathrm{arsinh}\dfrac{x}{a}+C$ |
+| $\dfrac{d}{dx}\mathrm{artanh}\,x = \dfrac{1}{1-x^2}$                    | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh}\dfrac{x}{a}+C$        |
 
 <hr />
 
@@ -507,7 +502,8 @@ $\dfrac{d}{dx}\left(\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh^2 x◆RB◆\right
 Now
 $\mathrm{sech}^2\,x\tanh x = \dfrac◆LB◆1◆RB◆◆LB◆\cosh^2 x◆RB◆\cdot\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆ = \dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh^3 x◆RB◆$.
 
-Note that $\dfrac{d}{dx}\left(\dfrac◆LB◆1◆RB◆◆LB◆\cosh^2 x◆RB◆\right) = \dfrac◆LB◆-2\sinh x◆RB◆◆LB◆\cosh^3 x◆RB◆$.
+Note that
+$\dfrac{d}{dx}\left(\dfrac◆LB◆1◆RB◆◆LB◆\cosh^2 x◆RB◆\right) = \dfrac◆LB◆-2\sinh x◆RB◆◆LB◆\cosh^3 x◆RB◆$.
 
 So
 $\displaystyle\int\mathrm{sech}^2\,x\tanh x\,dx = \int\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh^3 x◆RB◆\,dx = -\dfrac◆LB◆1◆RB◆◆LB◆2\cosh^2 x◆RB◆+C = -\dfrac{1}{2}\mathrm{sech}^2\,x+C$.
@@ -579,7 +575,8 @@ The length of the chain is $\boxed{2a\sinh(b/a)}$.
 
 ### Example 7.1: Integration of a rational function using $\operatorname{artanh}$
 
-**Problem.** Evaluate $\displaystyle\int_0^{1/2} \frac{1}{1 - x^2}\,dx$ using the inverse hyperbolic tangent.
+**Problem.** Evaluate $\displaystyle\int_0^{1/2} \frac{1}{1 - x^2}\,dx$ using the inverse hyperbolic
+tangent.
 
 **Solution.** For $|x| < 1$:
 
@@ -597,13 +594,15 @@ Let $u = \sinh x$: $2u^2 - 5u - 3 = 0 \implies (2u + 1)(u - 3) = 0$.
 
 $u = -1/2$ or $u = 3$.
 
-$\sinh x = -1/2$: $x = \operatorname{arsinh}(-1/2) = -\ln(1/2 + \sqrt{1/4 + 1}) = -\ln(1/2 + \sqrt{5}/2) = -\ln\!\left(\dfrac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆\right)$.
+$\sinh x = -1/2$:
+$x = \operatorname{arsinh}(-1/2) = -\ln(1/2 + \sqrt{1/4 + 1}) = -\ln(1/2 + \sqrt{5}/2) = -\ln\!\left(\dfrac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆\right)$.
 
 $\sinh x = 3$: $x = \operatorname{arsinh}\,3 = \ln(3 + \sqrt{10})$.
 
 ### Example 7.3: Differentiation of composite inverse hyperbolic functions
 
-**Problem.** Find $\dfrac{d}{dx}\left[\operatorname{artanh}\!\left(\dfrac◆LB◆\sin x◆RB◆◆LB◆2◆RB◆\right)\right]$.
+**Problem.** Find
+$\dfrac{d}{dx}\left[\operatorname{artanh}\!\left(\dfrac◆LB◆\sin x◆RB◆◆LB◆2◆RB◆\right)\right]$.
 
 **Solution.** Using the chain rule:
 
@@ -613,9 +612,11 @@ $$= \frac◆LB◆2\cos x◆RB◆◆LB◆4 - \sin^2 x◆RB◆$$
 
 ### Example 7.4: Proving an identity by induction
 
-**Problem.** Prove by induction that $\sinh(nx) = 2\cosh x \cdot \sinh((n-1)x) - \sinh((n-2)x)$ for all integers $n \geq 2$.
+**Problem.** Prove by induction that $\sinh(nx) = 2\cosh x \cdot \sinh((n-1)x) - \sinh((n-2)x)$ for
+all integers $n \geq 2$.
 
-**Solution.** **Base case ($n = 2$):** $\sinh 2x = 2\cosh x \sinh x - \sinh 0 = 2\cosh x \sinh x$. This is the double angle formula. True.
+**Solution.** **Base case ($n = 2$):** $\sinh 2x = 2\cosh x \sinh x - \sinh 0 = 2\cosh x \sinh x$.
+This is the double angle formula. True.
 
 **Inductive step.** Assume for $n = k$: $\sinh(kx) = 2\cosh x \sinh((k-1)x) - \sinh((k-2)x)$.
 
@@ -633,11 +634,16 @@ $= 2\cosh^2 x \sinh((k-1)x) - \sinh((k-2)x)\cosh x + \cosh(kx)\sinh x$.
 
 This requires the inductive hypothesis for $\cosh(kx)$ as well. An alternative cleaner approach:
 
-$\sinh((k+1)x) = 2\cosh x \sinh(kx) - \sinh((k-1)x)$ follows from $\sinh(A+B) = \sinh A\cosh B + \cosh A\sinh B$ with $A = kx$, $B = x$, and the fact that $\cosh x \cdot \sinh(kx) + \sinh x \cdot \cosh(kx) = 2\cosh x \sinh(kx) - [2\cosh x \sinh(kx) - \sinh((k+1)x)]$, which is circular. The result is a standard identity that follows from the addition formula. $\blacksquare$
+$\sinh((k+1)x) = 2\cosh x \sinh(kx) - \sinh((k-1)x)$ follows from
+$\sinh(A+B) = \sinh A\cosh B + \cosh A\sinh B$ with $A = kx$, $B = x$, and the fact that
+$\cosh x \cdot \sinh(kx) + \sinh x \cdot \cosh(kx) = 2\cosh x \sinh(kx) - [2\cosh x \sinh(kx) - \sinh((k+1)x)]$,
+which is circular. The result is a standard identity that follows from the addition formula.
+$\blacksquare$
 
 ### Example 7.5: Area under a hyperbolic curve
 
-**Problem.** Find the area enclosed between $y = \sinh x$, the $x$-axis, and the lines $x = -\ln 3$ and $x = \ln 3$.
+**Problem.** Find the area enclosed between $y = \sinh x$, the $x$-axis, and the lines $x = -\ln 3$
+and $x = \ln 3$.
 
 **Solution.** Since $\sinh x$ is odd:
 
@@ -665,11 +671,13 @@ $$\int\frac◆LB◆dx◆RB◆◆LB◆\sqrt{(x+1)^2 + 4}◆RB◆ = \operatorname{
 
 ### Example 7.8: Derivative of $\operatorname{arcosh}$ via implicit differentiation
 
-**Problem.** Derive $\dfrac{d}{dx}\operatorname{arcosh}\,x = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2 - 1}◆RB◆$ by implicit differentiation without using the logarithmic form.
+**Problem.** Derive $\dfrac{d}{dx}\operatorname{arcosh}\,x = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2 - 1}◆RB◆$
+by implicit differentiation without using the logarithmic form.
 
 **Solution.** Let $y = \operatorname{arcosh}\,x$, so $x = \cosh y$ and $y \geq 0$.
 
-Differentiating implicitly: $1 = \sinh y \cdot \dfrac{dy}{dx}$, so $\dfrac{dy}{dx} = \dfrac◆LB◆1◆RB◆◆LB◆\sinh y◆RB◆$.
+Differentiating implicitly: $1 = \sinh y \cdot \dfrac{dy}{dx}$, so
+$\dfrac{dy}{dx} = \dfrac◆LB◆1◆RB◆◆LB◆\sinh y◆RB◆$.
 
 Since $\cosh^2 y - \sinh^2 y = 1$: $\sinh^2 y = \cosh^2 y - 1 = x^2 - 1$.
 
@@ -683,15 +691,20 @@ $$\frac{dy}{dx} = \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆ \quad \blac
 
 ### 8.1 Hyperbolic functions and complex numbers
 
-The identities $\cosh x = \cos(ix)$ and $\sinh x = -i\sin(ix)$ connect the two topics. Osborne's rule is a consequence of these relationships. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+The identities $\cosh x = \cos(ix)$ and $\sinh x = -i\sin(ix)$ connect the two topics. Osborne's
+rule is a consequence of these relationships. See
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
 
 ### 8.2 Hyperbolic functions and differential equations
 
-The equation $y'' - a^2 y = 0$ has general solution $y = A\cosh(ax) + B\sinh(ax)$. See [Differential Equations](/docs/docs_alevel/further-maths/pure-mathematics/07-differential-equations).
+The equation $y'' - a^2 y = 0$ has general solution $y = A\cosh(ax) + B\sinh(ax)$. See
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
 
 ### 8.3 Hyperbolic integration and further calculus
 
-Integrals leading to inverse hyperbolic functions complement those leading to inverse trigonometric functions. The substitution $x = a\sinh u$ is often simpler than $x = a\tan\theta$. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+Integrals leading to inverse hyperbolic functions complement those leading to inverse trigonometric
+functions. The substitution $x = a\sinh u$ is often simpler than $x = a\tan\theta$. See
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
 
 ---
 
@@ -708,7 +721,8 @@ Integrals leading to inverse hyperbolic functions complement those leading to in
 
 **(a)** $\operatorname{arcosh}\,3 = \ln(3 + \sqrt{8}) = \ln(3 + 2\sqrt{2})$.
 
-**(b)** $\displaystyle\int_1^3\frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆ = \bigl[\operatorname{arcosh}\,x\bigr]_1^3 = \ln(3+2\sqrt{2}) - 0 = \ln(3+2\sqrt{2})$.
+**(b)**
+$\displaystyle\int_1^3\frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆ = \bigl[\operatorname{arcosh}\,x\bigr]_1^3 = \ln(3+2\sqrt{2}) - 0 = \ln(3+2\sqrt{2})$.
 
 </details>
 
@@ -725,12 +739,15 @@ $x = \operatorname{artanh}\!\left(\frac{3}{5}\right) = \frac{1}{2}\ln\!\left(\fr
 
 ### Question 13
 
-**Prove by induction** that $\displaystyle\sum_{k=1}^{n}\cosh(kx) = \frac◆LB◆\sinh\!\left(\dfrac{nx}{2}\right)\cosh\!\left(\dfrac{(n+1)x}{2}\right)◆RB◆◆LB◆\sinh(x/2)◆RB◆$ for $x \neq 0$.
+**Prove by induction** that
+$\displaystyle\sum_{k=1}^{n}\cosh(kx) = \frac◆LB◆\sinh\!\left(\dfrac{nx}{2}\right)\cosh\!\left(\dfrac{(n+1)x}{2}\right)◆RB◆◆LB◆\sinh(x/2)◆RB◆$
+for $x \neq 0$.
 
 <details>
 <summary>Solution</summary>
 
-**Base case ($n = 1$):** LHS $= \cosh x$. RHS $= \dfrac◆LB◆\sinh(x/2)\cosh(x)◆RB◆◆LB◆\sinh(x/2)◆RB◆ = \cosh x$. True.
+**Base case ($n = 1$):** LHS $= \cosh x$. RHS
+$= \dfrac◆LB◆\sinh(x/2)\cosh(x)◆RB◆◆LB◆\sinh(x/2)◆RB◆ = \cosh x$. True.
 
 **Inductive step.** Assume for $n = k$:
 
@@ -740,9 +757,14 @@ For $n = k + 1$:
 
 $$\sum_{j=1}^{k+1}\cosh(jx) = \frac◆LB◆\sinh(kx/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆ + \cosh((k+1)x)$$
 
-Using the identity $\sinh A\cosh B + \sinh(B-A)\sinh(x/2) = \sinh B\cosh A$ (which requires care), or equivalently using the product-to-sum formula:
+Using the identity $\sinh A\cosh B + \sinh(B-A)\sinh(x/2) = \sinh B\cosh A$ (which requires care),
+or equivalently using the product-to-sum formula:
 
-The identity $\cosh((k+1)x) = \dfrac◆LB◆\sinh((k+1)x/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆ \cdot \sinh(x/2) - \dfrac◆LB◆\sinh(kx/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆ \cdot \sinh(x/2) + \ldots$ is complex. Instead, use the known summation formula for $\sum \cosh(kx)$ which equals $\dfrac◆LB◆\sinh((n+1)x/2)\cosh(nx/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆$. The result follows by induction using standard techniques. $\blacksquare$
+The identity
+$\cosh((k+1)x) = \dfrac◆LB◆\sinh((k+1)x/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆ \cdot \sinh(x/2) - \dfrac◆LB◆\sinh(kx/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆ \cdot \sinh(x/2) + \ldots$
+is complex. Instead, use the known summation formula for $\sum \cosh(kx)$ which equals
+$\dfrac◆LB◆\sinh((n+1)x/2)\cosh(nx/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆$. The result follows by induction using
+standard techniques. $\blacksquare$
 
 </details>
 
@@ -820,20 +842,25 @@ $$= \boxed{\ln(1+\sqrt{2})}$$
 
 **Solution.** $\sinh x = 3 \implies x = \operatorname{arsinh}(3) = \ln(3 + \sqrt{10})$.
 
-Verification: $\dfrac{e^x - e^{-x}}{2} = \dfrac◆LB◆(3+\sqrt{10}) - \dfrac{1}{3+\sqrt{10}}◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆(3+\sqrt{10})^2 - 1◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆9+6\sqrt{10}+10-1◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆18+6\sqrt{10}◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆6(3+\sqrt{10})◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = 3$. ✓
+Verification:
+$\dfrac{e^x - e^{-x}}{2} = \dfrac◆LB◆(3+\sqrt{10}) - \dfrac{1}{3+\sqrt{10}}◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆(3+\sqrt{10})^2 - 1◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆9+6\sqrt{10}+10-1◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆18+6\sqrt{10}◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆6(3+\sqrt{10})◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = 3$.
+✓
 
 ### Example 8.5: The catenary equation
 
-**Problem.** A uniform heavy chain hangs from two supports. Show that the equation of the curve is $y = a\cosh(x/a)$.
+**Problem.** A uniform heavy chain hangs from two supports. Show that the equation of the curve is
+$y = a\cosh(x/a)$.
 
-**Solution.** At the lowest point, the tension is horizontal: $T_0$. At a point at horizontal distance $x$ from the lowest point, the tension $T$ acts at angle $\theta$ to the horizontal.
+**Solution.** At the lowest point, the tension is horizontal: $T_0$. At a point at horizontal
+distance $x$ from the lowest point, the tension $T$ acts at angle $\theta$ to the horizontal.
 
-Horizontal: $T\cos\theta = T_0$.
-Vertical: $T\sin\theta = ws$ where $w$ is the weight per unit length and $s$ is the arc length.
+Horizontal: $T\cos\theta = T_0$. Vertical: $T\sin\theta = ws$ where $w$ is the weight per unit
+length and $s$ is the arc length.
 
 $\dfrac{dy}{dx} = \tan\theta = \dfrac{ws}{T_0} = \dfrac{s}{a}$ where $a = T_0/w$.
 
-Differentiating: $\dfrac{d^2y}{dx^2} = \dfrac{1}{a}\dfrac{ds}{dx} = \dfrac{1}{a}\sqrt◆LB◆1+\left(\dfrac{dy}{dx}\right)^2◆RB◆$.
+Differentiating:
+$\dfrac{d^2y}{dx^2} = \dfrac{1}{a}\dfrac{ds}{dx} = \dfrac{1}{a}\sqrt◆LB◆1+\left(\dfrac{dy}{dx}\right)^2◆RB◆$.
 
 Let $p = dy/dx$: $\dfrac{dp}{dx} = \dfrac{1}{a}\sqrt{1+p^2}$.
 
@@ -845,9 +872,11 @@ $$\boxed{y = a\cosh(x/a)}$$
 
 ### Example 8.6: Differentiating inverse hyperbolic functions
 
-**Problem.** Find $\dfrac{d}{dx}\!\left[\operatorname{artanh}\!\left(\dfrac{x}{2}\right)\right]$ and state its domain.
+**Problem.** Find $\dfrac{d}{dx}\!\left[\operatorname{artanh}\!\left(\dfrac{x}{2}\right)\right]$ and
+state its domain.
 
-**Solution.** $\dfrac{d}{dx}[\operatorname{artanh}(u)] = \dfrac{1}{1-u^2} \cdot \dfrac{du}{dx}$ with $u = x/2$.
+**Solution.** $\dfrac{d}{dx}[\operatorname{artanh}(u)] = \dfrac{1}{1-u^2} \cdot \dfrac{du}{dx}$ with
+$u = x/2$.
 
 $$\frac{d}{dx}\!\left[\operatorname{artanh}\!\left(\frac{x}{2}\right)\right] = \frac{1}{1 - x^2/4} \cdot \frac{1}{2} = \frac{2}{4-x^2}$$
 
@@ -857,17 +886,19 @@ Domain: $\left|\dfrac{x}{2}\right| < 1$, i.e., $-2 < x < 2$.
 
 **Problem.** Using Euler's formula, show that $\cos(ix) = \cosh x$.
 
-**Solution.** $\cos(ix) = \dfrac{e^{i(ix)} + e^{-i(ix)}}{2} = \dfrac{e^{-x} + e^x}{2} = \dfrac{e^x + e^{-x}}{2} = \boxed{\cosh x}$. $\blacksquare$
+**Solution.**
+$\cos(ix) = \dfrac{e^{i(ix)} + e^{-i(ix)}}{2} = \dfrac{e^{-x} + e^x}{2} = \dfrac{e^x + e^{-x}}{2} = \boxed{\cosh x}$.
+$\blacksquare$
 
 ---
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-|---|---|
-| Using $x = a\cosh u$ when $x < a$ | $\cosh u \geq 1$, so this requires $x \geq a$ |
+| Pitfall                                                               | Correct Approach                                                           |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Using $x = a\cosh u$ when $x < a$                                     | $\cosh u \geq 1$, so this requires $x \geq a$                              |
 | Confusing $\operatorname{arsinh}$ and $\operatorname{arcosh}$ domains | $\operatorname{arsinh}$: all real $x$; $\operatorname{arcosh}$: $x \geq 1$ |
-| Forgetting $\cosh^2 x - \sinh^2 x = 1$ | This is the fundamental identity, analogous to $\cos^2 x + \sin^2 x = 1$ |
+| Forgetting $\cosh^2 x - \sinh^2 x = 1$                                | This is the fundamental identity, analogous to $\cos^2 x + \sin^2 x = 1$   |
 
 ---
 
@@ -888,7 +919,8 @@ $(4\sinh x + 1)(\sinh x - 1) = 0$.
 
 $\sinh x = -\dfrac{1}{4}$ or $\sinh x = 1$.
 
-$x = \operatorname{arsinh}\!\left(-\dfrac{1}{4}\right) = -\ln\!\left(\dfrac{1}{4}+\dfrac◆LB◆\sqrt{17}◆RB◆◆LB◆4◆RB◆\right)$ or $x = \operatorname{arsinh}(1) = \ln(1+\sqrt{2})$.
+$x = \operatorname{arsinh}\!\left(-\dfrac{1}{4}\right) = -\ln\!\left(\dfrac{1}{4}+\dfrac◆LB◆\sqrt{17}◆RB◆◆LB◆4◆RB◆\right)$
+or $x = \operatorname{arsinh}(1) = \ln(1+\sqrt{2})$.
 
 </details>
 
@@ -899,7 +931,8 @@ $x = \operatorname{arsinh}\!\left(-\dfrac{1}{4}\right) = -\ln\!\left(\dfrac{1}{4
 <details>
 <summary>Solution</summary>
 
-$\displaystyle\int_0^{\ln 2} \frac{e^x+e^{-x}}{2}\,dx = \frac{1}{2}\left[e^x - e^{-x}\right]_0^{\ln 2} = \frac{1}{2}\!\left[(2-\frac{1}{2})-(1-1)\right] = \frac{1}{2} \times \frac{3}{2} = \dfrac{3}{4}$. $\blacksquare$
+$\displaystyle\int_0^{\ln 2} \frac{e^x+e^{-x}}{2}\,dx = \frac{1}{2}\left[e^x - e^{-x}\right]_0^{\ln 2} = \frac{1}{2}\!\left[(2-\frac{1}{2})-(1-1)\right] = \frac{1}{2} \times \frac{3}{2} = \dfrac{3}{4}$.
+$\blacksquare$
 
 </details>
 
@@ -914,7 +947,8 @@ Let $y = \sinh^{-1} x$, so $x = \sinh y = \dfrac{e^y - e^{-y}}{2}$.
 
 $2x = e^y - e^{-y} \implies e^{2y} - 2xe^y - 1 = 0$.
 
-$e^y = \dfrac◆LB◆2x \pm \sqrt{4x^2+4}◆RB◆◆LB◆2◆RB◆ = x + \sqrt{x^2+1}$ (taking positive root since $e^y > 0$).
+$e^y = \dfrac◆LB◆2x \pm \sqrt{4x^2+4}◆RB◆◆LB◆2◆RB◆ = x + \sqrt{x^2+1}$ (taking positive root since
+$e^y > 0$).
 
 $$\boxed{\sinh^{-1} x = \ln(x + \sqrt{x^2+1})}$$
 
@@ -926,35 +960,38 @@ $$\boxed{\sinh^{-1} x = \ln(x + \sqrt{x^2+1})}$$
 
 ### 11.1 Hyperbolic functions and calculus
 
-The inverse hyperbolic functions arise from integrals. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+The inverse hyperbolic functions arise from integrals. See
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
 
 ### 11.2 Hyperbolic functions and differential equations
 
-$y'' - y = 0$ has solutions $y = A\cosh x + B\sinh x$. See [Differential Equations](/docs/docs_alevel/further-maths/pure-mathematics/07-differential-equations).
+$y'' - y = 0$ has solutions $y = A\cosh x + B\sinh x$. See
+[Differential Equations](/docs/alevel/further-maths/pure-mathematics/07-differential-equations).
 
 ### 11.3 Hyperbolic functions and complex numbers
 
-$\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+$\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$. See
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
 
 ---
 
 ## 12. Key Results Summary
 
-| Function | Definition | Derivative | Integral |
-|---|---|---|---|
-| $\sinh x$ | $\dfrac{e^x-e^{-x}}{2}$ | $\cosh x$ | $\cosh x + C$ |
-| $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$ | $\sinh x$ | $\sinh x + C$ |
-| $\tanh x$ | $\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$ | $\operatorname{sech}^2 x$ | $\ln(\cosh x) + C$ |
-| $\operatorname{arsinh}\, x$ | $\ln(x+\sqrt{x^2+1})$ | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | — |
-| $\operatorname{arcosh}\, x$ | $\ln(x+\sqrt{x^2-1})$ | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆$ | — |
-| $\operatorname{artanh}\, x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $\dfrac{1}{1-x^2}$ | — |
+| Function                    | Definition                                       | Derivative                            | Integral           |
+| --------------------------- | ------------------------------------------------ | ------------------------------------- | ------------------ |
+| $\sinh x$                   | $\dfrac{e^x-e^{-x}}{2}$                          | $\cosh x$                             | $\cosh x + C$      |
+| $\cosh x$                   | $\dfrac{e^x+e^{-x}}{2}$                          | $\sinh x$                             | $\sinh x + C$      |
+| $\tanh x$                   | $\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$           | $\operatorname{sech}^2 x$             | $\ln(\cosh x) + C$ |
+| $\operatorname{arsinh}\, x$ | $\ln(x+\sqrt{x^2+1})$                            | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | —                  |
+| $\operatorname{arcosh}\, x$ | $\ln(x+\sqrt{x^2-1})$                            | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆$ | —                  |
+| $\operatorname{artanh}\, x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $\dfrac{1}{1-x^2}$                    | —                  |
 
-| Identity | Formula |
-|---|---|
-| Fundamental | $\cosh^2 x - \sinh^2 x = 1$ |
-| Osborn's rule | Replace $\cos^2 \to \cosh^2$, $\sin^2 \to -\sinh^2$ in trig identities |
-| Double angle (cosh) | $\cosh 2x = 2\cosh^2 x - 1 = 1 + 2\sinh^2 x$ |
-| Double angle (sinh) | $\sinh 2x = 2\sinh x\cosh x$ |
+| Identity            | Formula                                                                |
+| ------------------- | ---------------------------------------------------------------------- |
+| Fundamental         | $\cosh^2 x - \sinh^2 x = 1$                                            |
+| Osborn's rule       | Replace $\cos^2 \to \cosh^2$, $\sin^2 \to -\sinh^2$ in trig identities |
+| Double angle (cosh) | $\cosh 2x = 2\cosh^2 x - 1 = 1 + 2\sinh^2 x$                           |
+| Double angle (sinh) | $\sinh 2x = 2\sinh x\cosh x$                                           |
 
 ---
 
@@ -984,7 +1021,9 @@ $\boxed{\ln(1+\sqrt{2})}$
 
 $\tanh x = \dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$.
 
-Quotient rule: $\dfrac◆LB◆\cosh^2 x - \sinh^2 x◆RB◆◆LB◆\cosh^2 x◆RB◆ = \dfrac◆LB◆1◆RB◆◆LB◆\cosh^2 x◆RB◆ = \operatorname{sech}^2 x$. $\blacksquare$
+Quotient rule:
+$\dfrac◆LB◆\cosh^2 x - \sinh^2 x◆RB◆◆LB◆\cosh^2 x◆RB◆ = \dfrac◆LB◆1◆RB◆◆LB◆\cosh^2 x◆RB◆ = \operatorname{sech}^2 x$.
+$\blacksquare$
 
 </details>
 
@@ -994,14 +1033,15 @@ Quotient rule: $\dfrac◆LB◆\cosh^2 x - \sinh^2 x◆RB◆◆LB◆\cosh^2 x◆R
 
 ### 14.1 The catenary — physical derivation
 
-A uniform heavy flexible cable hanging under its own weight takes the shape $y = a\cosh(x/a)$ where $a = T_H/w$ is the ratio of horizontal tension to weight per unit length.
+A uniform heavy flexible cable hanging under its own weight takes the shape $y = a\cosh(x/a)$ where
+$a = T_H/w$ is the ratio of horizontal tension to weight per unit length.
 
 ### 14.2 Hyperbolic functions in special relativity
 
-The Lorentz factor $\gamma = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-v^2/c^2}◆RB◆$ can be written as $\gamma = \cosh\phi$ where $\tanh\phi = v/c$ (rapidity).
+The Lorentz factor $\gamma = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-v^2/c^2}◆RB◆$ can be written as
+$\gamma = \cosh\phi$ where $\tanh\phi = v/c$ (rapidity).
 
-Time dilation: $\Delta t' = \Delta t\cosh\phi$.
-Length contraction: $L' = L/\cosh\phi$.
+Time dilation: $\Delta t' = \Delta t\cosh\phi$. Length contraction: $L' = L/\cosh\phi$.
 
 ### 14.3 The inverse Gudermannian
 
@@ -1011,14 +1051,14 @@ This connects the arc length along a unit circle to the arc length along a caten
 
 ### 14.4 Hyperbolic identities — comprehensive list
 
-| Identity | Formula |
-|---|---|
-| $\sinh(x+y)$ | $\sinh x\cosh y + \cosh x\sinh y$ |
-| $\cosh(x+y)$ | $\cosh x\cosh y + \sinh x\sinh y$ |
-| $\sinh 2x$ | $2\sinh x\cosh x$ |
-| $\cosh 2x$ | $2\cosh^2 x - 1 = 1 + 2\sinh^2 x$ |
-| $\sinh^2 x$ | $\dfrac◆LB◆\cosh 2x - 1◆RB◆◆LB◆2◆RB◆$ |
-| $\cosh^2 x$ | $\dfrac◆LB◆\cosh 2x + 1◆RB◆◆LB◆2◆RB◆$ |
+| Identity     | Formula                               |
+| ------------ | ------------------------------------- |
+| $\sinh(x+y)$ | $\sinh x\cosh y + \cosh x\sinh y$     |
+| $\cosh(x+y)$ | $\cosh x\cosh y + \sinh x\sinh y$     |
+| $\sinh 2x$   | $2\sinh x\cosh x$                     |
+| $\cosh 2x$   | $2\cosh^2 x - 1 = 1 + 2\sinh^2 x$     |
+| $\sinh^2 x$  | $\dfrac◆LB◆\cosh 2x - 1◆RB◆◆LB◆2◆RB◆$ |
+| $\cosh^2 x$  | $\dfrac◆LB◆\cosh 2x + 1◆RB◆◆LB◆2◆RB◆$ |
 
 ---
 
@@ -1026,7 +1066,8 @@ This connects the arc length along a unit circle to the arc length along a caten
 
 ### Question 13
 
-Express $\dfrac{d}{dx}[\operatorname{artanh}\, x]$ and $\dfrac{d}{dx}[\operatorname{arcoth}\, x]$, and compare.
+Express $\dfrac{d}{dx}[\operatorname{artanh}\, x]$ and $\dfrac{d}{dx}[\operatorname{arcoth}\, x]$,
+and compare.
 
 <details>
 <summary>Solution</summary>
@@ -1035,7 +1076,8 @@ $\dfrac{d}{dx}[\operatorname{artanh}\, x] = \dfrac{1}{1-x^2}$ for $|x| < 1$.
 
 $\dfrac{d}{dx}[\operatorname{arcoth}\, x] = \dfrac{1}{1-x^2}$ for $|x| > 1$.
 
-Both have the same derivative formula $\dfrac{1}{1-x^2}$, but different domains. They differ by a constant (in fact, $\operatorname{arcoth}\, x = \operatorname{artanh}\,(1/x)$).
+Both have the same derivative formula $\dfrac{1}{1-x^2}$, but different domains. They differ by a
+constant (in fact, $\operatorname{arcoth}\, x = \operatorname{artanh}\,(1/x)$).
 
 </details>
 

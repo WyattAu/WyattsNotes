@@ -1,7 +1,8 @@
 ---
 title: Differential Equations
 description: >-
-  A-Level Further Maths notes on Differential Equations: Board Coverage; 1. First-Order ODEs: Separable Equations; 1.1 Definition; 1.2 Method.
+  A-Level Further Maths notes on Differential Equations: Board Coverage; 1. First-Order ODEs:
+  Separable Equations; 1.1 Definition; 1.2 Method.
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -33,11 +34,9 @@ Adjust the parameters in the graph above to explore the relationships between va
 | OCR (A) | Paper 1 | First-order + second-order linear with constant coefficients     |
 | CIE     | P2      | First-order (separable, integrating factor); second-order in P2  |
 
-:::info
-All boards examine first-order ODEs. CIE and Edexcel require second-order linear ODEs. AQA
+:::info All boards examine first-order ODEs. CIE and Edexcel require second-order linear ODEs. AQA
 focuses on first-order equations with growth and decay modelling. The formula booklet gives the
-integrating factor formula on Edexcel; AQA and OCR students must know it.
-:::
+integrating factor formula on Edexcel; AQA and OCR students must know it. :::
 
 <hr />
 
@@ -76,11 +75,9 @@ $$y^2 = x^2 + 4, \quad y = \sqrt{x^2 + 4}$$
 
 ### 1.4 Domain restrictions
 
-:::warning
-When dividing by $g(y)$ during separation, we implicitly assume $g(y) \neq 0$. If
+:::warning When dividing by $g(y)$ during separation, we implicitly assume $g(y) \neq 0$. If
 $g(y_0) = 0$, then $y = y_0$ is a constant (equilibrium) solution that may not appear in the general
-solution. Always check for these.
-:::
+solution. Always check for these. :::
 
 **Example.** $\dfrac{dy}{dx} = y(1-y)$.
 
@@ -180,10 +177,8 @@ Using $y(0) = 1$: $1 = -1 + C \implies C = 2$.
 
 $$\boxed{y = 2e^{3x} - e^{2x}}$$
 
-:::tip
-The constant of integration in $\mu = e^{\int P\,dx}$ can be omitted (absorbed into $C$).
-Always choose the simplest antiderivative.
-:::
+:::tip The constant of integration in $\mu = e^{\int P\,dx}$ can be omitted (absorbed into $C$).
+Always choose the simplest antiderivative. :::
 
 <hr />
 
@@ -308,10 +303,8 @@ To find $y_p$, guess the form based on $f(x)$, then determine coefficients by su
 | $k\sin\omega x$ | $c\cos\omega x + d\sin\omega x$   | $x(c\cos\omega x + d\sin\omega x)$ |
 | Polynomial      | General polynomial of same degree | Multiply by $x$ as needed          |
 
-:::warning
-If any term in your trial $y_p$ already appears in the complementary function $y_h$,
-multiply the entire trial by $x$. If it still appears, multiply by $x^2$.
-:::
+:::warning If any term in your trial $y_p$ already appears in the complementary function $y_h$,
+multiply the entire trial by $x$. If it still appears, multiply by $x^2$. :::
 
 ### 4.3 Worked examples
 
@@ -729,7 +722,8 @@ $\boxed{y = \dfrac{x^3}{2} + \dfrac{5x}{2} = \dfrac{x(x^2 + 5)}{2}}$.
 
 ### Example 8.1: Second-order linear ODE with complex roots
 
-**Problem.** Solve $\dfrac{d^2y}{dx^2} + 4\dfrac{dy}{dx} + 13y = 0$ given $y(0) = 2$ and $y'(0) = -1$.
+**Problem.** Solve $\dfrac{d^2y}{dx^2} + 4\dfrac{dy}{dx} + 13y = 0$ given $y(0) = 2$ and
+$y'(0) = -1$.
 
 **Solution.** Auxiliary equation: $m^2 + 4m + 13 = 0$.
 
@@ -749,7 +743,8 @@ $\boxed{y = e^{-2x}(2\cos 3x + \sin 3x)}$
 
 **Problem.** Solve $\dfrac{dy}{dx} + \dfrac{2y}{x} = x^2$ for $x > 0$.
 
-**Solution.** Integrating factor: $\mu = \exp\!\left(\displaystyle\int \frac{2}{x}\,dx\right) = e^{2\ln x} = x^2$.
+**Solution.** Integrating factor:
+$\mu = \exp\!\left(\displaystyle\int \frac{2}{x}\,dx\right) = e^{2\ln x} = x^2$.
 
 $$\frac{d}{dx}(x^2 y) = x^4$$
 
@@ -761,7 +756,8 @@ $$\boxed{y = \frac{x^3}{5} + \frac{C}{x^2}}$$
 
 **Problem.** Solve $\dfrac{dy}{dx} = \dfrac{x + y}{x - y}$.
 
-**Solution.** This is a homogeneous equation. Let $y = vx$, so $\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
+**Solution.** This is a homogeneous equation. Let $y = vx$, so
+$\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
 
 $$v + x\frac{dv}{dx} = \frac{1+v}{1-v}$$
 
@@ -785,7 +781,8 @@ $$\arctan\!\left(\frac{y}{x}\right) - \frac{1}{2}\ln\!\left(1+\frac{y^2}{x^2}\ri
 
 Differentiating: $\dfrac{dy}{dt} = \dfrac{1}{2}\!\left(\dfrac{d^2x}{dt^2} - 3\dfrac{dx}{dt}\right)$.
 
-Substituting into the second equation: $\dfrac{1}{2}\!\left(\dfrac{d^2x}{dt^2} - 3\dfrac{dx}{dt}\right) = -5x - \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
+Substituting into the second equation:
+$\dfrac{1}{2}\!\left(\dfrac{d^2x}{dt^2} - 3\dfrac{dx}{dt}\right) = -5x - \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
 
 $$\frac{d^2x}{dt^2} - 3\frac{dx}{dt} = -10x - \frac{dx}{dt} + 3x$$
 
@@ -799,7 +796,8 @@ Then $y = \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
 
 ### Example 8.5: Exponential growth with harvesting
 
-**Problem.** A population $P(t)$ satisfies $\dfrac{dP}{dt} = 0.1P - 50$. Find the general solution and interpret.
+**Problem.** A population $P(t)$ satisfies $\dfrac{dP}{dt} = 0.1P - 50$. Find the general solution
+and interpret.
 
 **Solution.** This is a first-order linear ODE: $\dfrac{dP}{dt} - 0.1P = -50$.
 
@@ -811,7 +809,8 @@ $$Pe^{-0.1t} = 500e^{-0.1t} + C$$
 
 $$\boxed{P = 500 + Ce^{0.1t}}$$
 
-The equilibrium population is $P = 500$. If $P(0) > 500$, the population grows exponentially; if $P(0) < 500$, it decays to zero (extinction).
+The equilibrium population is $P = 500$. If $P(0) > 500$, the population grows exponentially; if
+$P(0) < 500$, it decays to zero (extinction).
 
 ### Example 8.6: Boundary value problem
 
@@ -849,12 +848,12 @@ $\boxed{y = A\cos x + B\sin x + x\sin x}$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-|---|---|
-| Forgetting the constant of integration when using an integrating factor | Integrate both sides after multiplying by $\mu$; $+C$ appears on the right |
-| Using the wrong trial function for the particular integral | If the RHS is part of the complementary function, multiply by $x$ (or $x^2$ if needed) |
-| Confusing $Ae^{mx}$ (single root) with $(A+Bx)e^{mx}$ (repeated root) | Check the discriminant: repeated root $\iff$ discriminant $= 0$ |
-| Not applying initial conditions to find $A$ and $B$ | Always substitute the given conditions into the general solution and its derivative |
+| Pitfall                                                                 | Correct Approach                                                                       |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Forgetting the constant of integration when using an integrating factor | Integrate both sides after multiplying by $\mu$; $+C$ appears on the right             |
+| Using the wrong trial function for the particular integral              | If the RHS is part of the complementary function, multiply by $x$ (or $x^2$ if needed) |
+| Confusing $Ae^{mx}$ (single root) with $(A+Bx)e^{mx}$ (repeated root)   | Check the discriminant: repeated root $\iff$ discriminant $= 0$                        |
+| Not applying initial conditions to find $A$ and $B$                     | Always substitute the given conditions into the general solution and its derivative    |
 
 ---
 
@@ -877,7 +876,9 @@ $\boxed{y = Ae^{3x} + Be^{-x} - 2e^{2x}}$
 
 ### Question 9
 
-A body cools according to $\dfrac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = -k(\theta - 20)$, where $\theta$ is the temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and $\theta(10) = 50$, find $\theta(30)$.
+A body cools according to $\dfrac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = -k(\theta - 20)$, where $\theta$ is the
+temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and
+$\theta(10) = 50$, find $\theta(30)$.
 
 <details>
 <summary>Solution</summary>
@@ -888,7 +889,8 @@ $$\theta e^{kt} = 20e^{kt} + C$$
 
 $\theta = 20 + Ce^{-kt}$.
 
-$\theta(0) = 90 \implies C = 70$. $\theta(10) = 50 \implies 50 = 20 + 70e^{-10k} \implies e^{-10k} = \dfrac{3}{7}$.
+$\theta(0) = 90 \implies C = 70$.
+$\theta(10) = 50 \implies 50 = 20 + 70e^{-10k} \implies e^{-10k} = \dfrac{3}{7}$.
 
 $\theta(30) = 20 + 70e^{-30k} = 20 + 70\!\left(\dfrac{3}{7}\right)^{\!3} = 20 + 70 \times \dfrac{27}{343} = 20 + \dfrac{1890}{343}$.
 
@@ -898,7 +900,8 @@ $\boxed{\theta(30) \approx 25.5°\mathrm{C}}$
 
 ### Question 10
 
-**Prove that** the substitution $y = vx$ transforms $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ into a separable equation.
+**Prove that** the substitution $y = vx$ transforms $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$
+into a separable equation.
 
 <details>
 <summary>Solution</summary>
@@ -911,7 +914,8 @@ $$x\frac{dv}{dx} = f(v) - v$$
 
 $$\frac{dv}{f(v) - v} = \frac{dx}{x}$$
 
-This is separable. Integrating gives $\displaystyle\int \frac{dv}{f(v) - v} = \ln|x| + C$. $\blacksquare$
+This is separable. Integrating gives $\displaystyle\int \frac{dv}{f(v) - v} = \ln|x| + C$.
+$\blacksquare$
 
 </details>
 
@@ -922,7 +926,8 @@ Find the particular solution to $x\dfrac{dy}{dx} - y = x^2$ with $y(1) = 3$.
 <details>
 <summary>Solution</summary>
 
-$\dfrac{dy}{dx} - \dfrac{y}{x} = x$. IF: $\mu = \exp\!\left(\displaystyle\int -\dfrac{1}{x}\,dx\right) = \dfrac{1}{x}$.
+$\dfrac{dy}{dx} - \dfrac{y}{x} = x$. IF:
+$\mu = \exp\!\left(\displaystyle\int -\dfrac{1}{x}\,dx\right) = \dfrac{1}{x}$.
 
 $$\frac{1}{x}\cdot\frac{dy}{dx} - \frac{y}{x^2} = 1$$
 
@@ -942,25 +947,29 @@ $\boxed{y = x^2 + 2x}$
 
 ### 11.1 Differential equations and calculus
 
-Solving ODEs requires integration techniques (substitution, parts, partial fractions). See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+Solving ODEs requires integration techniques (substitution, parts, partial fractions). See
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
 
 ### 11.2 Second-order ODEs and complex numbers
 
-The auxiliary equation uses complex roots to give oscillatory solutions $e^{\alpha t}(A\cos\beta t + B\sin\beta t)$. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+The auxiliary equation uses complex roots to give oscillatory solutions
+$e^{\alpha t}(A\cos\beta t + B\sin\beta t)$. See
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
 
 ### 11.3 Differential equations and mechanics
 
-Newton's second law $F = ma$ leads to second-order ODEs in mechanics. See [Circular Motion](/docs/docs_alevel/further-maths/further-mechanics/02-circular-motion).
+Newton's second law $F = ma$ leads to second-order ODEs in mechanics. See
+[Circular Motion](/docs/alevel/further-maths/further-mechanics/02-circular-motion).
 
 ---
 
 ## 12. Key Results Summary
 
-| ODE Type | Method | General Solution |
-|---|---|---|
-| $\dfrac{dy}{dx} + P(x)y = Q(x)$ | Integrating factor $\mu = e^{\int P\,dx}$ | $y = \dfrac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\displaystyle\int \mu Q\,dx$ |
-| $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ | Substitution $y = vx$ | Separate and integrate |
-| $a\dfrac{d^2y}{dx^2}+b\dfrac{dy}{dx}+cy=0$ | Auxiliary equation $am^2+bm+c=0$ | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
+| ODE Type                                        | Method                                    | General Solution                                                                                                |
+| ----------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| $\dfrac{dy}{dx} + P(x)y = Q(x)$                 | Integrating factor $\mu = e^{\int P\,dx}$ | $y = \dfrac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\displaystyle\int \mu Q\,dx$                                                     |
+| $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ | Substitution $y = vx$                     | Separate and integrate                                                                                          |
+| $a\dfrac{d^2y}{dx^2}+b\dfrac{dy}{dx}+cy=0$      | Auxiliary equation $am^2+bm+c=0$          | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
 
 ---
 
@@ -985,14 +994,17 @@ $\boxed{y = \dfrac{3}{4}e^{3x}\sin 4x}$
 
 ### Question 13
 
-**Prove that** the Wronskian $W(y_1, y_2) = y_1y_2' - y_1'y_2 \neq 0$ if and only if $y_1$ and $y_2$ are linearly independent solutions of a second-order linear ODE.
+**Prove that** the Wronskian $W(y_1, y_2) = y_1y_2' - y_1'y_2 \neq 0$ if and only if $y_1$ and $y_2$
+are linearly independent solutions of a second-order linear ODE.
 
 <details>
 <summary>Solution</summary>
 
 If $y_1$ and $y_2$ are linearly dependent, $y_2 = cy_1$, then $W = y_1(cy_1') - y_1'(cy_1) = 0$.
 
-Conversely, if $W = 0$ at some point and both satisfy the same linear ODE, then the initial value problem with initial conditions matching $y_1$ and $y_2$ would have two solutions, contradicting uniqueness. Hence $y_1$ and $y_2$ must be linearly dependent.
+Conversely, if $W = 0$ at some point and both satisfy the same linear ODE, then the initial value
+problem with initial conditions matching $y_1$ and $y_2$ would have two solutions, contradicting
+uniqueness. Hence $y_1$ and $y_2$ must be linearly dependent.
 
 Therefore $W \neq 0 \iff$ linearly independent. $\blacksquare$
 
@@ -1018,7 +1030,8 @@ $$y = \frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\int \mu Q\,dx + \frac◆LB◆C�
 
 For the system $\dot{\mathbf{x}} = \mathbf{A}\mathbf{x}$ where $\mathbf{x} = (x_1, \ldots, x_n)$:
 
-If $\mathbf{A}$ is diagonalisable with $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$, let $\mathbf{z} = \mathbf{P}^{-1}\mathbf{x}$:
+If $\mathbf{A}$ is diagonalisable with $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$, let
+$\mathbf{z} = \mathbf{P}^{-1}\mathbf{x}$:
 
 $\dot{\mathbf{z}} = \mathbf{D}\mathbf{z}$, giving $z_i = c_i e^{\lambda_i t}$.
 
@@ -1026,11 +1039,14 @@ $\mathbf{x} = \mathbf{P}\mathbf{z} = \sum c_i e^{\lambda_i t}\mathbf{v}_i$.
 
 ### 14.3 Boundary value problems vs initial value problems
 
-An IVP specifies $y$ and $y'$ at one point. A BVP specifies $y$ at two (or more) points. BVPs may have zero, one, or multiple solutions, unlike IVPs which (for linear ODEs) have a unique solution.
+An IVP specifies $y$ and $y'$ at one point. A BVP specifies $y$ at two (or more) points. BVPs may
+have zero, one, or multiple solutions, unlike IVPs which (for linear ODEs) have a unique solution.
 
 ### 14.4 Phase portraits
 
-For autonomous 2D systems $\dot{x} = f(x,y)$, $\dot{y} = g(x,y)$, the phase portrait shows trajectories in the $xy$-plane. Key features:
+For autonomous 2D systems $\dot{x} = f(x,y)$, $\dot{y} = g(x,y)$, the phase portrait shows
+trajectories in the $xy$-plane. Key features:
+
 - Fixed points: where $\dot{x} = \dot{y} = 0$
 - Stability: determined by the eigenvalues of the Jacobian at each fixed point
 
@@ -1061,7 +1077,8 @@ $y^2 = 2x^2(\ln|x|+C)$.
 
 ### Question 15
 
-**Prove that** the general solution of $\dfrac{d^2y}{dx^2} + \omega^2 y = 0$ can be written as $y = R\cos(\omega x - \delta)$ where $R$ and $\delta$ are constants.
+**Prove that** the general solution of $\dfrac{d^2y}{dx^2} + \omega^2 y = 0$ can be written as
+$y = R\cos(\omega x - \delta)$ where $R$ and $\delta$ are constants.
 
 <details>
 <summary>Solution</summary>
@@ -1070,6 +1087,7 @@ The general solution is $y = A\cos\omega x + B\sin\omega x$.
 
 Let $R\cos\delta = A$ and $R\sin\delta = B$. Then $R = \sqrt{A^2+B^2}$ and $\delta = \arctan(B/A)$.
 
-$A\cos\omega x + B\sin\omega x = R\cos\delta\cos\omega x + R\sin\delta\sin\omega x = R\cos(\omega x - \delta)$. $\blacksquare$
+$A\cos\omega x + B\sin\omega x = R\cos\delta\cos\omega x + R\sin\delta\sin\omega x = R\cos(\omega x - \delta)$.
+$\blacksquare$
 
 </details>

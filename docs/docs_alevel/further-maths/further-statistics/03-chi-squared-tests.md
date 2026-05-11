@@ -1,7 +1,8 @@
 ---
 title: Chi-Squared Tests
 description:
-  "A-Level Further Maths notes on Chi-Squared Tests: Board Coverage; 1. The Chi-Squared Distribution; 1.1 Definition; 1.2 Properties."
+  'A-Level Further Maths notes on Chi-Squared Tests: Board Coverage; 1. The Chi-Squared
+  Distribution; 1.1 Definition; 1.2 Properties.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -27,11 +28,9 @@ deviates significantly from expected values. It has two main applications: testi
 | OCR (A)    | Paper 2 | Both applications covered                              |
 | CIE (9231) | S2      | Goodness of fit; independence with $2 \times 2$ tables |
 
-:::info
-The chi-squared test statistic is always based on observed and expected frequencies, never
+:::info The chi-squared test statistic is always based on observed and expected frequencies, never
 on percentages or proportions. Always check the conditions (expected frequency $\geq 5$) before
-applying the test. The formula booklet provides the chi-squared distribution table.
-:::
+applying the test. The formula booklet provides the chi-squared distribution table. :::
 
 <hr />
 
@@ -104,10 +103,7 @@ $$\chi^2_{\mathrm{Yates}} = \sum\frac◆LB◆(|O_i - E_i| - 0.5)^2◆RB◆◆LB�
 
 This correction makes the test more conservative (less likely to reject $H_0$).
 
-:::warning
-warning
-categories if expected frequencies are too small.
-:::
+:::warning warning categories if expected frequencies are too small. :::
 
 ### 2.6 Worked example: Poisson goodness of fit
 
@@ -203,13 +199,16 @@ Test at the 5% level whether age group and preferred news source are independent
 
 **Expected frequencies:**
 
-$E_{11} = \dfrac◆LB◆90 \times 70◆RB◆◆LB◆200◆RB◆ = 31.5$, $E_{12} = \dfrac◆LB◆90 \times 90◆RB◆◆LB◆200◆RB◆ = 40.5$,
+$E_{11} = \dfrac◆LB◆90 \times 70◆RB◆◆LB◆200◆RB◆ = 31.5$,
+$E_{12} = \dfrac◆LB◆90 \times 90◆RB◆◆LB◆200◆RB◆ = 40.5$,
 $E_{13} = \dfrac◆LB◆90 \times 40◆RB◆◆LB◆200◆RB◆ = 18.0$
 
-$E_{21} = \dfrac◆LB◆70 \times 70◆RB◆◆LB◆200◆RB◆ = 24.5$, $E_{22} = \dfrac◆LB◆70 \times 90◆RB◆◆LB◆200◆RB◆ = 31.5$,
+$E_{21} = \dfrac◆LB◆70 \times 70◆RB◆◆LB◆200◆RB◆ = 24.5$,
+$E_{22} = \dfrac◆LB◆70 \times 90◆RB◆◆LB◆200◆RB◆ = 31.5$,
 $E_{23} = \dfrac◆LB◆70 \times 40◆RB◆◆LB◆200◆RB◆ = 14.0$
 
-$E_{31} = \dfrac◆LB◆40 \times 70◆RB◆◆LB◆200◆RB◆ = 14.0$, $E_{32} = \dfrac◆LB◆40 \times 90◆RB◆◆LB◆200◆RB◆ = 18.0$,
+$E_{31} = \dfrac◆LB◆40 \times 70◆RB◆◆LB◆200◆RB◆ = 14.0$,
+$E_{32} = \dfrac◆LB◆40 \times 90◆RB◆◆LB◆200◆RB◆ = 18.0$,
 $E_{33} = \dfrac◆LB◆40 \times 40◆RB◆◆LB◆200◆RB◆ = 8.0$
 
 All expected frequencies $\geq 5$, so the test is valid.
@@ -240,10 +239,8 @@ There is strong evidence that age group and preferred news source are not indepe
 6. Compare with the critical value at the given significance level
 7. Conclude in context
 
-:::warning
-Never use percentages or proportions in the chi-squared test — always use raw
-frequencies. The test relies on the multinomial distribution, which requires count data.
-:::
+:::warning Never use percentages or proportions in the chi-squared test — always use raw
+frequencies. The test relies on the multinomial distribution, which requires count data. :::
 
 <hr />
 
@@ -666,8 +663,8 @@ observed vs expected frequencies to understand the nature of any discrepancy.
 The fundamental connection: if $X \sim \chi^2_1$ (1 degree of freedom), then $X = Z^2$ where
 $Z \sim N(0,1)$.
 
-This means $\sqrt◆LB◆\chi^2_1◆RB◆ \sim |Z|$, i.e., the square root of a chi-squared statistic with 1 df
-follows a half-normal distribution.
+This means $\sqrt◆LB◆\chi^2_1◆RB◆ \sim |Z|$, i.e., the square root of a chi-squared statistic with 1
+df follows a half-normal distribution.
 
 ### 9.2 $2 \times 2$ tables and the normal approximation
 
@@ -879,9 +876,9 @@ it uses up one piece of information from the data.
 
 **Problem.** A die is rolled 120 times. The observed frequencies are:
 
-| Face | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| Observed | 25 | 17 | 15 | 23 | 18 | 22 |
+| Face     | 1   | 2   | 3   | 4   | 5   | 6   |
+| -------- | --- | --- | --- | --- | --- | --- |
+| Observed | 25  | 17  | 15  | 23  | 18  | 22  |
 
 Test at the 5% level whether the die is fair.
 
@@ -893,27 +890,30 @@ $$\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i} = \frac{25 + 9 + 25 + 9 + 4 + 4}{20} =
 
 $\nu = 6 - 1 = 5$. Critical value at 5%: $11.07$.
 
-$3.8 < 11.07$: **do not reject** $H_0$. There is insufficient evidence to conclude the die is biased.
+$3.8 < 11.07$: **do not reject** $H_0$. There is insufficient evidence to conclude the die is
+biased.
 
 ### Example 8.2: Test for independence in a 3×3 contingency table
 
 **Problem.** 300 people are classified by hair colour and eye colour:
 
-|  | Blue | Brown | Green |
-|---|---|---|---|
-| Blonde | 40 | 20 | 10 |
-| Brown | 30 | 60 | 20 |
-| Black | 10 | 40 | 70 |
+|        | Blue | Brown | Green |
+| ------ | ---- | ----- | ----- |
+| Blonde | 40   | 20    | 10    |
+| Brown  | 30   | 60    | 20    |
+| Black  | 10   | 40    | 70    |
 
 Test at the 1% level whether hair colour and eye colour are independent.
 
 **Solution.** $H_0$: hair colour and eye colour are independent.
 
-Row totals: Blonde 70, Brown 110, Black 120. Column totals: Blue 80, Brown 120, Green 100. Grand total: 300.
+Row totals: Blonde 70, Brown 110, Black 120. Column totals: Blue 80, Brown 120, Green 100. Grand
+total: 300.
 
 Expected values: $E_{ij} = \dfrac◆LB◆R_i \times C_j◆RB◆◆LB◆300◆RB◆$.
 
-$E_{11} = \dfrac◆LB◆70 \times 80◆RB◆◆LB◆300◆RB◆ = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$, $E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
+$E_{11} = \dfrac◆LB◆70 \times 80◆RB◆◆LB◆300◆RB◆ = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$,
+$E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
 
 $$\chi^2 = \frac{(40-18.67)^2}{18.67} + \frac{(20-28)^2}{28} + \frac{(10-23.33)^2}{23.33} + \frac{(30-29.33)^2}{29.33} + \frac{(60-44)^2}{44} + \frac{(20-36.67)^2}{36.67} + \frac{(10-32)^2}{32} + \frac{(40-48)^2}{48} + \frac{(70-40)^2}{40}$$
 
@@ -921,18 +921,20 @@ $\approx 24.35 + 2.29 + 7.61 + 0.02 + 5.82 + 7.58 + 15.13 + 1.33 + 22.50 = 86.63
 
 $\nu = (3-1)(3-1) = 4$. Critical value at 1%: $13.28$.
 
-$86.63 > 13.28$: **reject** $H_0$. Very strong evidence that hair colour and eye colour are associated.
+$86.63 > 13.28$: **reject** $H_0$. Very strong evidence that hair colour and eye colour are
+associated.
 
 ### Example 8.3: Yates' continuity correction for a 2×2 table
 
-**Problem.** In a drug trial, 40 out of 100 patients on drug A recovered, and 55 out of 100 on drug B recovered. Test at 5% whether the recovery rates differ, using Yates' correction.
+**Problem.** In a drug trial, 40 out of 100 patients on drug A recovered, and 55 out of 100 on drug
+B recovered. Test at 5% whether the recovery rates differ, using Yates' correction.
 
 **Solution.** $H_0$: recovery rate is the same for both drugs.
 
-|  | Recovered | Not recovered |
-|---|---|---|
-| Drug A | 40 | 60 |
-| Drug B | 55 | 45 |
+|        | Recovered | Not recovered |
+| ------ | --------- | ------------- |
+| Drug A | 40        | 60            |
+| Drug B | 55        | 45            |
 
 With Yates' correction:
 
@@ -950,21 +952,25 @@ $5.18 > 3.84$: **reject** $H_0$. Significant difference in recovery rates.
 
 ### Example 8.4: Determining degrees of freedom with estimated parameters
 
-**Problem.** Data is tested against a normal distribution with mean and variance estimated from the data. The data is grouped into 8 classes. One class has expected frequency 3 and is merged with an adjacent class. State the degrees of freedom.
+**Problem.** Data is tested against a normal distribution with mean and variance estimated from the
+data. The data is grouped into 8 classes. One class has expected frequency 3 and is merged with an
+adjacent class. State the degrees of freedom.
 
 **Solution.** Original classes: 8. After merging: 7 classes.
 
-Restrictions: total frequency (1), estimated mean (1), estimated variance (1). Total restrictions: 3.
+Restrictions: total frequency (1), estimated mean (1), estimated variance (1). Total
+restrictions: 3.
 
 $$\nu = 7 - 3 = \boxed{4}$$
 
 ### Example 8.5: Chi-squared test for a geometric distribution
 
-**Problem.** Customers arrive at a till. The number of customers served before the first complaint is recorded over 200 shifts:
+**Problem.** Customers arrive at a till. The number of customers served before the first complaint
+is recorded over 200 shifts:
 
-| Count | 0 | 1 | 2 | 3 | $\geq 4$ |
-|---|---|---|---|---|---|
-| Observed | 90 | 60 | 30 | 12 | 8 |
+| Count    | 0   | 1   | 2   | 3   | $\geq 4$ |
+| -------- | --- | --- | --- | --- | -------- |
+| Observed | 90  | 60  | 30  | 12  | 8        |
 
 Test at 5% whether the data follows a geometric distribution.
 
@@ -976,7 +982,8 @@ For $\mathrm{Geo}(p)$: $E(X) = \dfrac{1-p}{p} = 0.98 \implies p = \dfrac{1}{1.98
 
 Expected: $P(X=k) = p(1-p)^k = 0.505 \times 0.495^k$.
 
-$E_0 = 200 \times 0.505 = 101$, $E_1 = 200 \times 0.250 = 50$, $E_2 = 200 \times 0.124 = 24.8$, $E_3 = 200 \times 0.061 = 12.3$, $E_{\geq 4} = 200 - 101 - 50 - 24.8 - 12.3 = 11.9$.
+$E_0 = 200 \times 0.505 = 101$, $E_1 = 200 \times 0.250 = 50$, $E_2 = 200 \times 0.124 = 24.8$,
+$E_3 = 200 \times 0.061 = 12.3$, $E_{\geq 4} = 200 - 101 - 50 - 24.8 - 12.3 = 11.9$.
 
 All $E_i \geq 5$, so no merging needed.
 
@@ -990,24 +997,30 @@ $5.58 < 7.82$: **do not reject** $H_0$.
 
 ### Example 8.6: Interpreting a very small expected frequency
 
-**Problem.** A 2×5 contingency table has several expected frequencies below 5. What action should be taken?
+**Problem.** A 2×5 contingency table has several expected frequencies below 5. What action should be
+taken?
 
-**Solution.** Adjacent rows or columns should be merged to ensure all expected frequencies are at least 5. The degrees of freedom must be recalculated based on the new table dimensions. If merging destroys the structure of the test (e.g., merging distinct categories that have different meanings), Fisher's exact test should be used instead.
+**Solution.** Adjacent rows or columns should be merged to ensure all expected frequencies are at
+least 5. The degrees of freedom must be recalculated based on the new table dimensions. If merging
+destroys the structure of the test (e.g., merging distinct categories that have different meanings),
+Fisher's exact test should be used instead.
 
 ### Example 8.7: Calculating the chi-squared statistic from raw proportions
 
-**Problem.** In a survey of 500 people, 60% prefer tea in the North and 45% prefer tea in the South. There are 300 Northerners and 200 Southerners. Test at 5% whether preference differs by region.
+**Problem.** In a survey of 500 people, 60% prefer tea in the North and 45% prefer tea in the South.
+There are 300 Northerners and 200 Southerners. Test at 5% whether preference differs by region.
 
 **Solution.** $H_0$: no association between region and preference.
 
 Observed table:
 
-|  | Tea | No Tea |
-|---|---|---|
-| North | 180 | 120 |
-| South | 90 | 110 |
+|       | Tea | No Tea |
+| ----- | --- | ------ |
+| North | 180 | 120    |
+| South | 90  | 110    |
 
-Expected: $E_{11} = \dfrac◆LB◆270 \times 300◆RB◆◆LB◆500◆RB◆ = 162$, $E_{12} = 138$, $E_{21} = 108$, $E_{22} = 92$.
+Expected: $E_{11} = \dfrac◆LB◆270 \times 300◆RB◆◆LB◆500◆RB◆ = 162$, $E_{12} = 138$, $E_{21} = 108$,
+$E_{22} = 92$.
 
 $$\chi^2 = \frac{324}{162} + \frac{324}{138} + \frac{324}{108} + \frac{324}{92} \approx 2.00 + 2.35 + 3.00 + 3.52 = 10.87$$
 
@@ -1019,12 +1032,12 @@ $10.87 > 3.84$: **reject** $H_0$. Significant association between region and tea
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-|---|---|
-| Using observed frequencies instead of expected in the denominator | $\chi^2 = \sum \dfrac{(O-E)^2}{E}$, not $\sum \dfrac{(O-E)^2}{O}$ |
-| Forgetting to merge classes with $E < 5$ | Always check expected frequencies first; merge adjacent classes |
-| Miscounting degrees of freedom | $\nu = (r-1)(c-1)$ for independence; $\nu = k - 1 - m$ for goodness-of-fit with $m$ estimated parameters |
-| Applying Yates' correction to tables larger than 2×2 | Yates' correction is only for 2×2 contingency tables |
+| Pitfall                                                           | Correct Approach                                                                                         |
+| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Using observed frequencies instead of expected in the denominator | $\chi^2 = \sum \dfrac{(O-E)^2}{E}$, not $\sum \dfrac{(O-E)^2}{O}$                                        |
+| Forgetting to merge classes with $E < 5$                          | Always check expected frequencies first; merge adjacent classes                                          |
+| Miscounting degrees of freedom                                    | $\nu = (r-1)(c-1)$ for independence; $\nu = k - 1 - m$ for goodness-of-fit with $m$ estimated parameters |
+| Applying Yates' correction to tables larger than 2×2              | Yates' correction is only for 2×2 contingency tables                                                     |
 
 ---
 
@@ -1032,7 +1045,8 @@ $10.87 > 3.84$: **reject** $H_0$. Significant association between region and tea
 
 ### Question 8
 
-A tetrahedral die is rolled 200 times. The observed frequencies for faces 1--4 are 38, 62, 55, 45. Test at the 10% level whether the die is fair.
+A tetrahedral die is rolled 200 times. The observed frequencies for faces 1--4 are 38, 62, 55, 45.
+Test at the 10% level whether the die is fair.
 
 <details>
 <summary>Solution</summary>
@@ -1049,12 +1063,14 @@ $6.76 > 6.25$: **reject** $H_0$. The die appears biased at the 10% level.
 
 ### Question 9
 
-**Explain** why the chi-squared test is an approximate test and describe when it may not be appropriate.
+**Explain** why the chi-squared test is an approximate test and describe when it may not be
+appropriate.
 
 <details>
 <summary>Solution</summary>
 
-The chi-squared distribution is a continuous approximation to the discrete distribution of the test statistic. The approximation is poor when:
+The chi-squared distribution is a continuous approximation to the discrete distribution of the test
+statistic. The approximation is poor when:
 
 1. Expected frequencies are small (typically $E < 5$), as the continuous approximation breaks down.
 2. The total sample size is very small.
@@ -1066,14 +1082,16 @@ In these cases, Fisher's exact test or exact multinomial methods should be used 
 
 ### Question 10
 
-In a test of independence on a 4×3 contingency table, the calculated $\chi^2$ statistic is 18.7. Determine whether to reject $H_0$ at the 5% significance level.
+In a test of independence on a 4×3 contingency table, the calculated $\chi^2$ statistic is 18.7.
+Determine whether to reject $H_0$ at the 5% significance level.
 
 <details>
 <summary>Solution</summary>
 
 $\nu = (4-1)(3-1) = 6$. Critical value at 5%: $12.59$.
 
-$18.7 > 12.59$: **reject** $H_0$. There is significant evidence of an association between the row and column variables.
+$18.7 > 12.59$: **reject** $H_0$. There is significant evidence of an association between the row
+and column variables.
 
 </details>
 
@@ -1083,11 +1101,14 @@ $18.7 > 12.59$: **reject** $H_0$. There is significant evidence of an associatio
 
 ### 11.1 Chi-squared tests and Poisson/geometric distributions
 
-Goodness-of-fit tests are commonly used to test whether data follows a Poisson or geometric distribution. See [Poisson and Geometric Distributions](/docs/docs_alevel/further-maths/further-statistics/01-poisson-and-geometric-distributions).
+Goodness-of-fit tests are commonly used to test whether data follows a Poisson or geometric
+distribution. See
+[Poisson and Geometric Distributions](/docs/alevel/further-maths/further-statistics/01-poisson-and-geometric-distributions).
 
 ### 11.2 Chi-squared and continuous distributions
 
-The chi-squared distribution itself is used in confidence intervals for variance. See [Exponential and Continuous Random Variables](/docs/docs_alevel/further-maths/further-statistics/02-exponential-and-continuous-random-variables).
+The chi-squared distribution itself is used in confidence intervals for variance. See
+[Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/02-exponential-and-continuous-random-variables).
 
 ### 11.3 Chi-squared and probability
 
@@ -1097,21 +1118,21 @@ Hypothesis testing relies on understanding significance levels, $p$-values, and 
 
 ## 12. Key Results Summary
 
-| Test Type | Degrees of Freedom | Conditions |
-|---|---|---|
-| Goodness-of-fit | $\nu = k - 1 - m$ | All $E_i \geq 5$, $m$ = estimated parameters |
-| Independence | $\nu = (r-1)(c-1)$ | All $E_i \geq 5$ |
-| Yates' correction | $\nu = 1$ | Only for 2×2 tables |
+| Test Type         | Degrees of Freedom | Conditions                                   |
+| ----------------- | ------------------ | -------------------------------------------- |
+| Goodness-of-fit   | $\nu = k - 1 - m$  | All $E_i \geq 5$, $m$ = estimated parameters |
+| Independence      | $\nu = (r-1)(c-1)$ | All $E_i \geq 5$                             |
+| Yates' correction | $\nu = 1$          | Only for 2×2 tables                          |
 
-| Step | Action |
-|---|---|
-| 1 | State $H_0$ and $H_1$ |
-| 2 | Calculate expected frequencies |
-| 3 | Merge classes if any $E_i < 5$ |
-| 4 | Compute $\chi^2 = \sum \dfrac{(O-E)^2}{E}$ |
-| 5 | Determine degrees of freedom |
-| 6 | Compare with critical value or find $p$-value |
-| 7 | Conclude in context |
+| Step | Action                                        |
+| ---- | --------------------------------------------- |
+| 1    | State $H_0$ and $H_1$                         |
+| 2    | Calculate expected frequencies                |
+| 3    | Merge classes if any $E_i < 5$                |
+| 4    | Compute $\chi^2 = \sum \dfrac{(O-E)^2}{E}$    |
+| 5    | Determine degrees of freedom                  |
+| 6    | Compare with critical value or find $p$-value |
+| 7    | Conclude in context                           |
 
 ---
 
@@ -1119,7 +1140,9 @@ Hypothesis testing relies on understanding significance levels, $p$-values, and 
 
 ### Question 11
 
-A teacher believes that grades in a class follow a specific distribution: 10% A, 30% B, 40% C, 20% D. In a sample of 200 students, the observed frequencies are: A: 15, B: 70, C: 80, D: 35. Test at the 5% level.
+A teacher believes that grades in a class follow a specific distribution: 10% A, 30% B, 40% C, 20%
+D. In a sample of 200 students, the observed frequencies are: A: 15, B: 70, C: 80, D: 35. Test at
+the 5% level.
 
 <details>
 <summary>Solution</summary>
@@ -1138,14 +1161,18 @@ $3.542 < 7.82$: **do not reject** $H_0$. The data is consistent with the teacher
 
 ### Question 12
 
-**Explain** the difference between a Type I error and a Type II error in the context of a chi-squared test.
+**Explain** the difference between a Type I error and a Type II error in the context of a
+chi-squared test.
 
 <details>
 <summary>Solution</summary>
 
-**Type I error:** Rejecting $H_0$ when $H_0$ is true (false positive). The probability is the significance level $\alpha$.
+**Type I error:** Rejecting $H_0$ when $H_0$ is true (false positive). The probability is the
+significance level $\alpha$.
 
-**Type II error:** Failing to reject $H_0$ when $H_0$ is false (false negative). The probability depends on the true distribution and sample size; it is denoted $\beta$, and $1-\beta$ is the power of the test.
+**Type II error:** Failing to reject $H_0$ when $H_0$ is false (false negative). The probability
+depends on the true distribution and sample size; it is denoted $\beta$, and $1-\beta$ is the power
+of the test.
 
 </details>
 
@@ -1155,16 +1182,20 @@ $3.542 < 7.82$: **do not reject** $H_0$. The data is consistent with the teacher
 
 ### 14.1 The chi-squared distribution
 
-The chi-squared distribution with $\nu$ degrees of freedom is the distribution of $\sum_{i=1}^{\nu} Z_i^2$ where $Z_i \sim N(0,1)$ are independent.
+The chi-squared distribution with $\nu$ degrees of freedom is the distribution of
+$\sum_{i=1}^{\nu} Z_i^2$ where $Z_i \sim N(0,1)$ are independent.
 
 Key properties:
+
 - Mean: $\nu$
 - Variance: $2\nu$
-- Additivity: if $X \sim \chi^2_{\nu_1}$ and $Y \sim \chi^2_{\nu_2}$ are independent, then $X+Y \sim \chi^2_{\nu_1+\nu_2}$
+- Additivity: if $X \sim \chi^2_{\nu_1}$ and $Y \sim \chi^2_{\nu_2}$ are independent, then
+  $X+Y \sim \chi^2_{\nu_1+\nu_2}$
 
 ### 14.2 Chi-squared confidence intervals for variance
 
-For a sample of size $n$ from $N(\mu, \sigma^2)$, the quantity $\dfrac◆LB◆(n-1)s^2◆RB◆◆LB◆\sigma^2◆RB◆ \sim \chi^2_{n-1}$.
+For a sample of size $n$ from $N(\mu, \sigma^2)$, the quantity
+$\dfrac◆LB◆(n-1)s^2◆RB◆◆LB◆\sigma^2◆RB◆ \sim \chi^2_{n-1}$.
 
 A $95\%$ confidence interval for $\sigma^2$ is:
 
@@ -1173,6 +1204,7 @@ $$\left[\frac◆LB◆(n-1)s^2◆RB◆◆LB◆\chi^2_{n-1,0.025}◆RB◆,\; \frac
 ### 14.3 Relationship to other tests
 
 The chi-squared test is related to:
+
 - The $G$-test (log-likelihood ratio test), which uses $G = 2\sum O_i \ln(O_i/E_i)$
 - Fisher's exact test for small samples
 - The $z$-test for proportions (for 2×2 tables, $\chi^2 \approx z^2$)
@@ -1200,18 +1232,23 @@ The $p$-value is slightly above 10%.
 
 ### Question 14
 
-**Explain** why merging classes in a chi-squared test reduces the degrees of freedom and may reduce the power of the test.
+**Explain** why merging classes in a chi-squared test reduces the degrees of freedom and may reduce
+the power of the test.
 
 <details>
 <summary>Solution</summary>
 
-Merging reduces the number of classes $k$, which reduces $\nu = k - 1 - m$. Fewer degrees of freedom means the critical value is lower, making it easier to reject $H_0$, but merging also discards information about the differences between the merged classes. If the true deviation from $H_0$ is in the merged classes, the test loses the ability to detect it, reducing power.
+Merging reduces the number of classes $k$, which reduces $\nu = k - 1 - m$. Fewer degrees of freedom
+means the critical value is lower, making it easier to reject $H_0$, but merging also discards
+information about the differences between the merged classes. If the true deviation from $H_0$ is in
+the merged classes, the test loses the ability to detect it, reducing power.
 
 </details>
 
 ### Question 15
 
-A goodness-of-fit test of a normal distribution uses 10 classes with mean and variance estimated from the data. The calculated $\chi^2 = 15.2$. Test at the 5% level.
+A goodness-of-fit test of a normal distribution uses 10 classes with mean and variance estimated
+from the data. The calculated $\chi^2 = 15.2$. Test at the 5% level.
 
 <details>
 <summary>Solution</summary>
@@ -1220,7 +1257,8 @@ $\nu = 10 - 1 - 2 = 7$ (10 classes, 1 for total, 2 estimated parameters).
 
 Critical value at 5%: $14.07$.
 
-$15.2 > 14.07$: **reject** $H_0$. There is sufficient evidence to conclude the data does not follow a normal distribution.
+$15.2 > 14.07$: **reject** $H_0$. There is sufficient evidence to conclude the data does not follow
+a normal distribution.
 
 </details>
 
@@ -1253,7 +1291,8 @@ This gives the exact $p$-value without approximation.
 
 ### 16.4 Post-hoc analysis
 
-After rejecting $H_0$ in a goodness-of-fit test, standardised residuals identify which classes contribute most:
+After rejecting $H_0$ in a goodness-of-fit test, standardised residuals identify which classes
+contribute most:
 
 $$r_i = \frac◆LB◆O_i - E_i◆RB◆◆LB◆\sqrt{E_i}◆RB◆$$
 
@@ -1265,7 +1304,8 @@ Values with $|r_i| > 2$ indicate significant deviations.
 
 ### Question 16
 
-In a $\chi^2$ goodness-of-fit test with 8 classes, 1 parameter estimated, and $\chi^2 = 11.3$, find the approximate $p$-value.
+In a $\chi^2$ goodness-of-fit test with 8 classes, 1 parameter estimated, and $\chi^2 = 11.3$, find
+the approximate $p$-value.
 
 <details>
 <summary>Solution</summary>
@@ -1288,6 +1328,7 @@ The $p$-value is approximately 0.08.
 <summary>Solution</summary>
 
 Fisher's exact test should be used when:
+
 1. The sample size is small (typically $n < 20$ for 2×2 tables)
 2. Expected frequencies are less than 5 and cannot be fixed by merging
 3. An exact $p$-value is required rather than an approximation
@@ -1303,9 +1344,9 @@ Fisher's exact test should be used when:
 
 A researcher tests whether a die is fair. In 120 rolls, the observed frequencies are:
 
-| Face | 1 | 2 | 3 | 4 | 5 | 6 |
-|------|---|---|---|---|---|---|
-| Freq | 15 | 22 | 18 | 25 | 20 | 20 |
+| Face | 1   | 2   | 3   | 4   | 5   | 6   |
+| ---- | --- | --- | --- | --- | --- | --- |
+| Freq | 15  | 22  | 18  | 25  | 20  | 20  |
 
 Carry out a chi-squared goodness-of-fit test at the 5% significance level.
 
@@ -1320,6 +1361,7 @@ $X^2 = \displaystyle\sum \frac{(O-E)^2}{E} = \frac{25+4+4+25+0+0}{20} = \frac{58
 
 $\nu = 6 - 1 = 5$. Critical value at 5%: $\chi^2_{5}(0.95) = 11.07$.
 
-$2.9 < 11.07$, so we **do not reject** $H_0$. There is insufficient evidence to suggest the die is unfair.
+$2.9 < 11.07$, so we **do not reject** $H_0$. There is insufficient evidence to suggest the die is
+unfair.
 
 </details>

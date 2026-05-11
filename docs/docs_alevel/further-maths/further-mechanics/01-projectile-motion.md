@@ -1,7 +1,8 @@
 ---
 title: Projectile Motion
 description:
-  "A-Level Further Maths notes on Projectile Motion: Board Coverage; 1. Equations of Motion; 1.1 Setting up the problem; 1.2 Horizontal motion (constant velocity)."
+  'A-Level Further Maths notes on Projectile Motion: Board Coverage; 1. Equations of Motion; 1.1
+  Setting up the problem; 1.2 Horizontal motion (constant velocity).'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -28,11 +29,9 @@ determined.
 | OCR (A)    | Paper 2 | Projectiles on inclined planes                 |
 | CIE (9231) | M2      | Full coverage including inclined planes        |
 
-:::info
-In projectile motion, air resistance is always neglected unless stated otherwise. The only
+:::info In projectile motion, air resistance is always neglected unless stated otherwise. The only
 acceleration is $g = 9.8\,\mathrm{m s}^{-2}$ acting vertically downward. Take care with sign
-conventions — define upward as positive at the start and be consistent.
-:::
+conventions — define upward as positive at the start and be consistent. :::
 
 <hr />
 
@@ -86,7 +85,8 @@ $$
 $$\boxed{y = x\tan\theta - \frac◆LB◆gx^2◆RB◆◆LB◆2V^2\cos^2\theta◆RB◆}$$
 
 Since this has the form $y = ax - bx^2$ (with $a = \tan\theta$ and
-$b = \frac◆LB◆g◆RB◆◆LB◆2V^2\cos^2\theta◆RB◆$), the trajectory is a parabola opening downward. $\blacksquare$
+$b = \frac◆LB◆g◆RB◆◆LB◆2V^2\cos^2\theta◆RB◆$), the trajectory is a parabola opening downward.
+$\blacksquare$
 
 <hr />
 
@@ -119,7 +119,8 @@ $$
 
 $$\boxed{H = \frac◆LB◆V^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆}$$
 
-This occurs at $x = V\cos\theta \cdot \dfrac◆LB◆V\sin\theta◆RB◆◆LB◆g◆RB◆ = \dfrac◆LB◆V^2\sin\theta\cos\theta◆RB◆◆LB◆g◆RB◆$.
+This occurs at
+$x = V\cos\theta \cdot \dfrac◆LB◆V\sin\theta◆RB◆◆LB◆g◆RB◆ = \dfrac◆LB◆V^2\sin\theta\cos\theta◆RB◆◆LB◆g◆RB◆$.
 $\blacksquare$
 
 ### 3.3 Range on horizontal ground
@@ -135,11 +136,9 @@ $$\boxed{R = \frac◆LB◆V^2\sin 2\theta◆RB◆◆LB◆g◆RB◆}$$
 This is maximised when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$, giving
 $R_{\max} = \dfrac{V^2}{g}$. $\blacksquare$
 
-:::info
-For a given speed $V$, complementary angles give the same range: $\theta$ and $90° - \theta$
-both produce $R = \dfrac◆LB◆V^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$. However, the trajectories are different — the steeper
-angle gives a higher but shorter arc.
-:::
+:::info For a given speed $V$, complementary angles give the same range: $\theta$ and $90° - \theta$
+both produce $R = \dfrac◆LB◆V^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$. However, the trajectories are different —
+the steeper angle gives a higher but shorter arc. :::
 
 <hr />
 
@@ -493,8 +492,8 @@ Let $u = \sin\theta$. Then $\cos\theta = \sqrt{1 - u^2}$ and we maximise:
 
 $$R(u) \propto u\sqrt{1-u^2} + \sqrt{1-u^2}\sqrt{V^2 u^2 + 2gh}$$
 
-Differentiating and simplifying leads to the condition $\cos\theta = \dfrac◆LB◆V◆RB◆◆LB◆\sqrt{V^2 + 2gh}◆RB◆$,
-i.e.:
+Differentiating and simplifying leads to the condition
+$\cos\theta = \dfrac◆LB◆V◆RB◆◆LB◆\sqrt{V^2 + 2gh}◆RB◆$, i.e.:
 
 $$\tan\theta = \frac◆LB◆V\sin\theta◆RB◆◆LB◆V\cos\theta◆RB◆ = \frac◆LB◆V\sqrt{1 - \frac{V^2}{V^2 + 2gh}}◆RB◆◆LB◆\frac{V^2}{\sqrt{V^2 + 2gh}}◆RB◆ = \frac◆LB◆V◆RB◆◆LB◆\sqrt{V^2 + 2gh}◆RB◆$$
 
@@ -558,7 +557,8 @@ $$T = \frac◆LB◆x◆RB◆◆LB◆V\cos\theta◆RB◆ = \frac◆LB◆64.3◆RB
 
 ### 9.1 Up the plane
 
-The horizontal distance at landing is $x = \dfrac◆LB◆2V^2\cos^2\theta(\tan\theta - \tan\alpha)◆RB◆◆LB◆g◆RB◆$.
+The horizontal distance at landing is
+$x = \dfrac◆LB◆2V^2\cos^2\theta(\tan\theta - \tan\alpha)◆RB◆◆LB◆g◆RB◆$.
 
 Since $x = V\cos\theta \cdot T$:
 
@@ -710,7 +710,8 @@ $0.004564x^2 - 0.8765x - 30 = 0$
 
 $x = \dfrac◆LB◆0.8765 + \sqrt{0.7683 + 0.5477}◆RB◆◆LB◆0.009128◆RB◆ = \dfrac{0.8765 + 1.147}{0.009128} \approx 220.8\,\mathrm{m}$.
 
-Distance along fairway $= \dfrac◆LB◆x◆RB◆◆LB◆\cos 10°◆RB◆ = \dfrac{220.8}{0.9848} \approx 224.2\,\mathrm{m}$.
+Distance along fairway
+$= \dfrac◆LB◆x◆RB◆◆LB◆\cos 10°◆RB◆ = \dfrac{220.8}{0.9848} \approx 224.2\,\mathrm{m}$.
 
 </details>
 
@@ -722,9 +723,11 @@ Distance along fairway $= \dfrac◆LB◆x◆RB◆◆LB◆\cos 10°◆RB◆ = \df
 
 ### Example 8.1: Projectiles on an inclined plane
 
-**Problem.** A particle is projected up a plane inclined at $30°$ to the horizontal with speed $20\,\mathrm{m\,s^{-1}}$ at an angle of $50°$ to the horizontal. Find the range along the plane.
+**Problem.** A particle is projected up a plane inclined at $30°$ to the horizontal with speed
+$20\,\mathrm{m\,s^{-1}}$ at an angle of $50°$ to the horizontal. Find the range along the plane.
 
-**Solution.** Resolving perpendicular to the plane (call this the $\xi$-axis) and parallel to the plane (the $\eta$-axis):
+**Solution.** Resolving perpendicular to the plane (call this the $\xi$-axis) and parallel to the
+plane (the $\eta$-axis):
 
 $a_\xi = -g\cos 30° = -\dfrac◆LB◆g\sqrt{3}◆RB◆◆LB◆2◆RB◆$, $a_\eta = -g\sin 30° = -\dfrac{g}{2}$.
 
@@ -736,15 +739,19 @@ The particle lands when $\xi = 0$ again:
 
 $\xi = u_\xi t + \dfrac{1}{2}a_\xi t^2 = 0 \implies t\!\left(20\sin 20° - \dfrac◆LB◆g\sqrt{3}◆RB◆◆LB◆4◆RB◆\,t\right) = 0$.
 
-Time of flight: $T = \dfrac◆LB◆80\sin 20°◆RB◆◆LB◆g\sqrt{3}◆RB◆ \approx \dfrac{27.36}{17.06} \approx 1.604\,\mathrm{s}$.
+Time of flight:
+$T = \dfrac◆LB◆80\sin 20°◆RB◆◆LB◆g\sqrt{3}◆RB◆ \approx \dfrac{27.36}{17.06} \approx 1.604\,\mathrm{s}$.
 
-Range along plane: $\eta = u_\eta T + \dfrac{1}{2}a_\eta T^2 = 20\cos 20° \times 1.604 - \dfrac{9.8}{2}(1.604)^2$
+Range along plane:
+$\eta = u_\eta T + \dfrac{1}{2}a_\eta T^2 = 20\cos 20° \times 1.604 - \dfrac{9.8}{2}(1.604)^2$
 
 $\approx 30.14 - 12.60 = \boxed{17.5\,\mathrm{m}}$ (along the incline).
 
 ### Example 8.2: Maximum range on an inclined plane
 
-**Problem.** Show that the angle of projection $\theta$ for maximum range $R$ up a plane of inclination $\alpha$ satisfies $\theta = \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + \dfrac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆$.
+**Problem.** Show that the angle of projection $\theta$ for maximum range $R$ up a plane of
+inclination $\alpha$ satisfies
+$\theta = \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + \dfrac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆$.
 
 **Solution.** The range formula for a plane inclined at angle $\alpha$ is:
 
@@ -754,13 +761,16 @@ Using $\sin A\cos B = \dfrac{1}{2}[\sin(A+B) + \sin(A-B)]$:
 
 $$R = \frac◆LB◆u^2[\sin(2\theta - \alpha) - \sin\alpha]◆RB◆◆LB◆g\cos^2\alpha◆RB◆$$
 
-$R$ is maximised when $\sin(2\theta - \alpha) = 1$, i.e., $2\theta - \alpha = \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+$R$ is maximised when $\sin(2\theta - \alpha) = 1$, i.e.,
+$2\theta - \alpha = \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
 $$\boxed{\theta = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + \frac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆}$$
 
 ### Example 8.3: Hitting a moving target
 
-**Problem.** A particle is projected from the origin with speed $u$ at angle $\theta$ above the horizontal. At the same instant, a second particle is released from rest at position $(d, h)$. Find the condition on $u$ and $\theta$ for a collision.
+**Problem.** A particle is projected from the origin with speed $u$ at angle $\theta$ above the
+horizontal. At the same instant, a second particle is released from rest at position $(d, h)$. Find
+the condition on $u$ and $\theta$ for a collision.
 
 **Solution.** The second particle falls freely: $x_2(t) = d$, $y_2(t) = h - \dfrac{1}{2}gt^2$.
 
@@ -768,7 +778,8 @@ The first particle: $x_1(t) = u\cos\theta\,t$, $y_1(t) = u\sin\theta\,t - \dfrac
 
 For collision: $u\cos\theta\,t = d \implies t = \dfrac◆LB◆d◆RB◆◆LB◆u\cos\theta◆RB◆$.
 
-Then: $u\sin\theta \cdot \dfrac◆LB◆d◆RB◆◆LB◆u\cos\theta◆RB◆ - \dfrac{1}{2}g\!\left(\dfrac◆LB◆d◆RB◆◆LB◆u\cos\theta◆RB◆\right)^{\!2} = h$.
+Then:
+$u\sin\theta \cdot \dfrac◆LB◆d◆RB◆◆LB◆u\cos\theta◆RB◆ - \dfrac{1}{2}g\!\left(\dfrac◆LB◆d◆RB◆◆LB◆u\cos\theta◆RB◆\right)^{\!2} = h$.
 
 $$d\tan\theta - \frac◆LB◆gd^2◆RB◆◆LB◆2u^2\cos^2\theta◆RB◆ = h$$
 
@@ -778,7 +789,8 @@ provided $d\tan\theta > h$.
 
 ### Example 8.4: Projectile with quadratic air resistance (energy approach)
 
-**Problem.** A particle of mass $m$ is projected vertically upward at speed $u$. The air resistance is $mkv^2$ opposing motion. Find the maximum height.
+**Problem.** A particle of mass $m$ is projected vertically upward at speed $u$. The air resistance
+is $mkv^2$ opposing motion. Find the maximum height.
 
 **Solution.** Going up: $\dfrac{dv}{dt} = -g - kv^2$.
 
@@ -792,7 +804,9 @@ $$\boxed{H = \frac{1}{2k}\ln\!\left(1 + \frac{ku^2}{g}\right)}$$
 
 ### Example 8.5: Cartesian equation of trajectory from parametric
 
-**Problem.** A projectile has position $(x, y)$ at time $t$ given by $x = V\cos\theta\,t$ and $y = V\sin\theta\,t - \dfrac{1}{2}gt^2$. Derive the Cartesian equation and identify the key features.
+**Problem.** A projectile has position $(x, y)$ at time $t$ given by $x = V\cos\theta\,t$ and
+$y = V\sin\theta\,t - \dfrac{1}{2}gt^2$. Derive the Cartesian equation and identify the key
+features.
 
 **Solution.** Eliminating $t$: $t = \dfrac◆LB◆x◆RB◆◆LB◆V\cos\theta◆RB◆$.
 
@@ -800,15 +814,20 @@ $$y = x\tan\theta - \frac◆LB◆gx^2◆RB◆◆LB◆2V^2\cos^2\theta◆RB◆ = 
 
 $$\boxed{y = x\tan\theta - \frac{gx^2}{2V^2}(1 + \tan^2\theta)}$$
 
-This is a parabola. Setting $y = 0$: $x = 0$ or $x = \dfrac◆LB◆2V^2\sin\theta\cos\theta◆RB◆◆LB◆g◆RB◆ = \dfrac◆LB◆V^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$ (the range).
+This is a parabola. Setting $y = 0$: $x = 0$ or
+$x = \dfrac◆LB◆2V^2\sin\theta\cos\theta◆RB◆◆LB◆g◆RB◆ = \dfrac◆LB◆V^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$ (the
+range).
 
-Maximum height: $y_{\max} = \dfrac◆LB◆V^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$ at $x = \dfrac◆LB◆V^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$.
+Maximum height: $y_{\max} = \dfrac◆LB◆V^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$ at
+$x = \dfrac◆LB◆V^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$.
 
 ### Example 8.6: Envelope of safety (parabolic envelope)
 
-**Problem.** A gun can fire a shell with speed $u$ at any angle. Show that no point outside the parabola $y = \dfrac{u^2}{2g} - \dfrac{gx^2}{2u^2}$ can be hit.
+**Problem.** A gun can fire a shell with speed $u$ at any angle. Show that no point outside the
+parabola $y = \dfrac{u^2}{2g} - \dfrac{gx^2}{2u^2}$ can be hit.
 
-**Solution.** For angle $\theta$, the trajectory is $y = x\tan\theta - \dfrac{gx^2}{2u^2}(1+\tan^2\theta)$.
+**Solution.** For angle $\theta$, the trajectory is
+$y = x\tan\theta - \dfrac{gx^2}{2u^2}(1+\tan^2\theta)$.
 
 Rearranging as a quadratic in $\tan\theta$:
 
@@ -828,12 +847,12 @@ $\blacksquare$
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-|---|---|
-| Using $45°$ for maximum range without checking if the target is above or below launch height | Maximum range at $45°$ only applies when launch and landing are at the same height |
-| Forgetting that $g$ acts downward in all projectile problems | Decompose $g$ into components along your chosen axes |
-| Assuming air resistance is negligible when the question does not specify | In A-Level Further Maths, always state "assuming no air resistance" unless told otherwise |
-| Confusing the angle to the horizontal with the angle to the inclined plane | On a plane inclined at $\alpha$: angle to the plane $= \theta - \alpha$, angle to horizontal $= \theta$ |
+| Pitfall                                                                                      | Correct Approach                                                                                        |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Using $45°$ for maximum range without checking if the target is above or below launch height | Maximum range at $45°$ only applies when launch and landing are at the same height                      |
+| Forgetting that $g$ acts downward in all projectile problems                                 | Decompose $g$ into components along your chosen axes                                                    |
+| Assuming air resistance is negligible when the question does not specify                     | In A-Level Further Maths, always state "assuming no air resistance" unless told otherwise               |
+| Confusing the angle to the horizontal with the angle to the inclined plane                   | On a plane inclined at $\alpha$: angle to the plane $= \theta - \alpha$, angle to horizontal $= \theta$ |
 
 ---
 
@@ -841,7 +860,9 @@ $\blacksquare$
 
 ### Question 8
 
-A cricketer hits a ball from ground level with speed $25\,\mathrm{m\,s^{-1}}$ at $35°$ to the horizontal. The ball just clears a wall $5\,\mathrm{m}$ high. Find the distance from the batsman to the wall.
+A cricketer hits a ball from ground level with speed $25\,\mathrm{m\,s^{-1}}$ at $35°$ to the
+horizontal. The ball just clears a wall $5\,\mathrm{m}$ high. Find the distance from the batsman to
+the wall.
 
 <details>
 <summary>Solution</summary>
@@ -856,24 +877,30 @@ $x = \dfrac◆LB◆0.7002 \pm \sqrt{0.4903 - 0.05828}◆RB◆◆LB◆0.005828◆
 
 $x \approx 232.8\,\mathrm{m}$ (far wall) or $x \approx 7.35\,\mathrm{m}$ (near wall on the way up).
 
-Since the ball "just clears," the wall is at $\boxed{7.35\,\mathrm{m}}$ (first crossing) or $\boxed{232.8\,\mathrm{m}}$ depending on context.
+Since the ball "just clears," the wall is at $\boxed{7.35\,\mathrm{m}}$ (first crossing) or
+$\boxed{232.8\,\mathrm{m}}$ depending on context.
 
 </details>
 
 ### Question 9
 
-**Prove that** the time of flight of a projectile on a plane inclined at angle $\alpha$ below the horizontal is $T = \dfrac◆LB◆2u\sin(\theta+\alpha)◆RB◆◆LB◆g\cos\alpha◆RB◆$.
+**Prove that** the time of flight of a projectile on a plane inclined at angle $\alpha$ below the
+horizontal is $T = \dfrac◆LB◆2u\sin(\theta+\alpha)◆RB◆◆LB◆g\cos\alpha◆RB◆$.
 
 <details>
 <summary>Solution</summary>
 
-Take axes parallel and perpendicular to the downward slope. The component of $g$ along the plane (upward positive) is $-g\sin\alpha$, and perpendicular to the plane (outward positive) is $g\cos\alpha$.
+Take axes parallel and perpendicular to the downward slope. The component of $g$ along the plane
+(upward positive) is $-g\sin\alpha$, and perpendicular to the plane (outward positive) is
+$g\cos\alpha$.
 
-Actually, resolving along the plane: $a_\parallel = -g\sin\alpha$ and $a_\perp = g\cos\alpha$ (into the plane).
+Actually, resolving along the plane: $a_\parallel = -g\sin\alpha$ and $a_\perp = g\cos\alpha$ (into
+the plane).
 
 The particle lands when it returns to the plane. The perpendicular displacement returns to zero:
 
-$0 = u_\perp T + \dfrac{1}{2}a_\perp T^2$ where $u_\perp = u\sin(\theta+\alpha)$ and $a_\perp = -g\cos\alpha$ (taking outward as positive).
+$0 = u_\perp T + \dfrac{1}{2}a_\perp T^2$ where $u_\perp = u\sin(\theta+\alpha)$ and
+$a_\perp = -g\cos\alpha$ (taking outward as positive).
 
 $T = \dfrac◆LB◆2u\sin(\theta+\alpha)◆RB◆◆LB◆g\cos\alpha◆RB◆$. $\blacksquare$
 
@@ -881,7 +908,9 @@ $T = \dfrac◆LB◆2u\sin(\theta+\alpha)◆RB◆◆LB◆g\cos\alpha◆RB◆$. $\
 
 ### Question 10
 
-A particle is projected from a point $A$ on a cliff $40\,\mathrm{m}$ above sea level. It lands in the sea at a horizontal distance of $100\,\mathrm{m}$ from the foot of the cliff. If the angle of projection is $30°$ above the horizontal, find the initial speed.
+A particle is projected from a point $A$ on a cliff $40\,\mathrm{m}$ above sea level. It lands in
+the sea at a horizontal distance of $100\,\mathrm{m}$ from the foot of the cliff. If the angle of
+projection is $30°$ above the horizontal, find the initial speed.
 
 <details>
 <summary>Solution</summary>
@@ -908,29 +937,33 @@ $\boxed{u \approx 25.9\,\mathrm{m\,s^{-1}}}$
 
 ### 11.1 Projectiles and circular motion
 
-Both topics involve resolving forces and using Newton's second law in 2D. See [Circular Motion](/docs/docs_alevel/further-maths/further-mechanics/02-circular-motion).
+Both topics involve resolving forces and using Newton's second law in 2D. See
+[Circular Motion](/docs/alevel/further-maths/further-mechanics/02-circular-motion).
 
 ### 11.2 Projectile equations and calculus
 
-The trajectory equation is derived by eliminating the parameter $t$ from the parametric equations, a standard calculus technique. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+The trajectory equation is derived by eliminating the parameter $t$ from the parametric equations, a
+standard calculus technique. See
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
 
 ### 11.3 Energy methods in projectiles
 
-Conservation of energy provides an alternative to resolving forces, connecting projectiles to the work-energy principle.
+Conservation of energy provides an alternative to resolving forces, connecting projectiles to the
+work-energy principle.
 
 ---
 
 ## 12. Key Results Summary
 
-| Quantity | Formula |
-|---|---|
-| Horizontal range (same height) | $R = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$ |
-| Maximum height | $H = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$ |
-| Time of flight (same height) | $T = \dfrac◆LB◆2u\sin\theta◆RB◆◆LB◆g◆RB◆$ |
-| Trajectory equation | $y = x\tan\theta - \dfrac◆LB◆gx^2◆RB◆◆LB◆2u^2\cos^2\theta◆RB◆$ |
-| Maximum range angle | $\theta = 45°$ (same height) |
+| Quantity                                 | Formula                                                                    |
+| ---------------------------------------- | -------------------------------------------------------------------------- |
+| Horizontal range (same height)           | $R = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$                               |
+| Maximum height                           | $H = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$                              |
+| Time of flight (same height)             | $T = \dfrac◆LB◆2u\sin\theta◆RB◆◆LB◆g◆RB◆$                                  |
+| Trajectory equation                      | $y = x\tan\theta - \dfrac◆LB◆gx^2◆RB◆◆LB◆2u^2\cos^2\theta◆RB◆$             |
+| Maximum range angle                      | $\theta = 45°$ (same height)                                               |
 | Range on inclined plane (angle $\alpha$) | $R = \dfrac◆LB◆2u^2\cos\theta\sin(\theta-\alpha)◆RB◆◆LB◆g\cos^2\alpha◆RB◆$ |
-| Speed at any point | $v = \sqrt{u^2 - 2gy}$ (energy conservation) |
+| Speed at any point                       | $v = \sqrt{u^2 - 2gy}$ (energy conservation)                               |
 
 ---
 
@@ -938,19 +971,21 @@ Conservation of energy provides an alternative to resolving forces, connecting p
 
 ### Question 11
 
-A ball is thrown from a height of $1.5\,\mathrm{m}$ at $10\,\mathrm{m\,s^{-1}}$ at $30°$ above the horizontal. Find:
-(a) the time to reach maximum height;
-(b) the maximum height above the ground;
-(c) the horizontal range (distance from launch to landing).
+A ball is thrown from a height of $1.5\,\mathrm{m}$ at $10\,\mathrm{m\,s^{-1}}$ at $30°$ above the
+horizontal. Find: (a) the time to reach maximum height; (b) the maximum height above the ground; (c)
+the horizontal range (distance from launch to landing).
 
 <details>
 <summary>Solution</summary>
 
-**(a)** Vertical: $v_y = u\sin\theta - gt = 5 - 9.8t$. At max height: $t = \dfrac{5}{9.8} \approx \boxed{0.510\,\mathrm{s}}$.
+**(a)** Vertical: $v_y = u\sin\theta - gt = 5 - 9.8t$. At max height:
+$t = \dfrac{5}{9.8} \approx \boxed{0.510\,\mathrm{s}}$.
 
-**(b)** $y_{\max} = 1.5 + \dfrac◆LB◆5^2◆RB◆◆LB◆2 \times 9.8◆RB◆ = 1.5 + 1.276 = \boxed{2.78\,\mathrm{m}}$.
+**(b)**
+$y_{\max} = 1.5 + \dfrac◆LB◆5^2◆RB◆◆LB◆2 \times 9.8◆RB◆ = 1.5 + 1.276 = \boxed{2.78\,\mathrm{m}}$.
 
-**(c)** Total time: solve $1.5 + 5t - 4.9t^2 = 0 \implies t = \dfrac◆LB◆5+\sqrt{25+29.4}◆RB◆◆LB◆9.8◆RB◆ = \dfrac{5+7.389}{9.8} \approx 1.263\,\mathrm{s}$.
+**(c)** Total time: solve
+$1.5 + 5t - 4.9t^2 = 0 \implies t = \dfrac◆LB◆5+\sqrt{25+29.4}◆RB◆◆LB◆9.8◆RB◆ = \dfrac{5+7.389}{9.8} \approx 1.263\,\mathrm{s}$.
 
 Range $= 10\cos 30° \times 1.263 = 8.66 \times 1.263 \approx \boxed{10.9\,\mathrm{m}}$.
 
@@ -958,7 +993,8 @@ Range $= 10\cos 30° \times 1.263 = 8.66 \times 1.263 \approx \boxed{10.9\,\math
 
 ### Question 12
 
-**Prove that** for a projectile launched from ground level, the speed at height $h$ is $v = \sqrt{u^2 - 2gh}$.
+**Prove that** for a projectile launched from ground level, the speed at height $h$ is
+$v = \sqrt{u^2 - 2gh}$.
 
 <details>
 <summary>Solution</summary>
@@ -987,15 +1023,19 @@ $x = \dfrac◆LB◆u\cos\theta◆RB◆◆LB◆k◆RB◆(1-e^{-kt})$.
 
 Vertical: $m\ddot{y} = -mg - mk\dot{y}$.
 
-This is a first-order linear ODE with solution involving exponential decay toward terminal velocity $v_t = -g/k$.
+This is a first-order linear ODE with solution involving exponential decay toward terminal velocity
+$v_t = -g/k$.
 
 ### 14.2 Coriolis effect (qualitative)
 
-On a rotating Earth, the Coriolis force deflects projectiles to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. This is significant for long-range artillery but negligible for short-range projectiles.
+On a rotating Earth, the Coriolis force deflects projectiles to the right in the Northern Hemisphere
+and to the left in the Southern Hemisphere. This is significant for long-range artillery but
+negligible for short-range projectiles.
 
 ### 14.3 Optimal launch angle for maximum range on a slope
 
-For a plane inclined at angle $\alpha$ below the horizontal, the optimal angle for maximum range down the slope is:
+For a plane inclined at angle $\alpha$ below the horizontal, the optimal angle for maximum range
+down the slope is:
 
 $$\theta = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ - \frac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆$$
 
@@ -1013,20 +1053,24 @@ Two angles give the same range: $\theta$ and $90° - \theta$ (complementary angl
 
 ### Question 13
 
-A projectile is launched at speed $u$ at angle $\theta$ above horizontal. Show that the maximum height equals $\dfrac◆LB◆R\tan\theta◆RB◆◆LB◆4◆RB◆$ where $R$ is the horizontal range.
+A projectile is launched at speed $u$ at angle $\theta$ above horizontal. Show that the maximum
+height equals $\dfrac◆LB◆R\tan\theta◆RB◆◆LB◆4◆RB◆$ where $R$ is the horizontal range.
 
 <details>
 <summary>Solution</summary>
 
-$H = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$, $R = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆ = \dfrac◆LB◆2u^2\sin\theta\cos\theta◆RB◆◆LB◆g◆RB◆$.
+$H = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$,
+$R = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆ = \dfrac◆LB◆2u^2\sin\theta\cos\theta◆RB◆◆LB◆g◆RB◆$.
 
-$\dfrac◆LB◆R\tan\theta◆RB◆◆LB◆4◆RB◆ = \dfrac◆LB◆2u^2\sin\theta\cos\theta◆RB◆◆LB◆4g◆RB◆ \cdot \dfrac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆ = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆ = H$. $\blacksquare$
+$\dfrac◆LB◆R\tan\theta◆RB◆◆LB◆4◆RB◆ = \dfrac◆LB◆2u^2\sin\theta\cos\theta◆RB◆◆LB◆4g◆RB◆ \cdot \dfrac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆ = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆ = H$.
+$\blacksquare$
 
 </details>
 
 ### Question 14
 
-A ball is dropped from a height $H$. At the same instant, a second ball is projected upward from the ground with speed $u$. Find the condition for the balls to collide.
+A ball is dropped from a height $H$. At the same instant, a second ball is projected upward from the
+ground with speed $u$. Find the condition for the balls to collide.
 
 <details>
 <summary>Solution</summary>
@@ -1045,26 +1089,31 @@ $H \geq \dfrac{gH^2}{2u^2} \implies u^2 \geq \dfrac{gH}{2} \implies \boxed{u \ge
 
 ### Question 15
 
-**Prove that** the locus of the focus of a projectile's parabolic trajectory, as the angle varies, is a circle.
+**Prove that** the locus of the focus of a projectile's parabolic trajectory, as the angle varies,
+is a circle.
 
 <details>
 <summary>Solution</summary>
 
 The trajectory is $y = x\tan\theta - \dfrac{gx^2}{2u^2}(1+\tan^2\theta)$.
 
-The vertex of this parabola (maximum height point) is at $x_v = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$, $y_v = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$.
+The vertex of this parabola (maximum height point) is at
+$x_v = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$, $y_v = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$.
 
 $x_v^2 + (y_v - \dfrac{u^2}{4g})^2 = \dfrac◆LB◆u^4\sin^2 2\theta◆RB◆◆LB◆4g^2◆RB◆ + \dfrac{u^4}{16g^2}(\cos 2\theta - 1)^2$.
 
-Using $\sin^2 2\theta + (1-\cos 2\theta)^2/4 = \sin^2 2\theta + \sin^4\theta/\cos^2\theta$... 
+Using $\sin^2 2\theta + (1-\cos 2\theta)^2/4 = \sin^2 2\theta + \sin^4\theta/\cos^2\theta$...
 
-Actually, a simpler approach: $x_v = \dfrac{u^2}{2g}\sin 2\theta$ and $y_v = \dfrac{u^2}{4g}(1-\cos 2\theta)$.
+Actually, a simpler approach: $x_v = \dfrac{u^2}{2g}\sin 2\theta$ and
+$y_v = \dfrac{u^2}{4g}(1-\cos 2\theta)$.
 
 $x_v^2 + (y_v - \dfrac{u^2}{4g})^2 = \dfrac{u^4}{4g^2}\sin^2 2\theta + \dfrac{u^4}{16g^2}\cos^2 2\theta = \dfrac{u^4}{16g^2}(4\sin^2 2\theta + \cos^2 2\theta)$.
 
-This is not a simple circle in general. However, the directrix envelope of all trajectories (with varying $\theta$ but fixed $u$) is a parabola $y = \dfrac{u^2}{2g}$.
+This is not a simple circle in general. However, the directrix envelope of all trajectories (with
+varying $\theta$ but fixed $u$) is a parabola $y = \dfrac{u^2}{2g}$.
 
-The **envelope of safety** (the parabolic boundary) is $y = \dfrac{u^2}{2g} - \dfrac{gx^2}{2u^2}$ as derived in Example 8.6.
+The **envelope of safety** (the parabolic boundary) is $y = \dfrac{u^2}{2g} - \dfrac{gx^2}{2u^2}$ as
+derived in Example 8.6.
 
 </details>
 
@@ -1074,15 +1123,19 @@ The **envelope of safety** (the parabolic boundary) is $y = \dfrac{u^2}{2g} - \d
 
 ### 16.1 Coriolis deflection
 
-On a rotating Earth, the Coriolis acceleration is $\mathbf{a}_C = -2\boldsymbol{\omega} \times \mathbf{v}$ where $\boldsymbol{\omega}$ is Earth's angular velocity.
+On a rotating Earth, the Coriolis acceleration is
+$\mathbf{a}_C = -2\boldsymbol{\omega} \times \mathbf{v}$ where $\boldsymbol{\omega}$ is Earth's
+angular velocity.
 
 For a projectile at latitude $\phi$:
+
 - Horizontal deflection: proportional to $v \cdot \omega \sin\phi$
 - Maximum deflection for eastward launch at the equator
 
 ### 16.2 Projectile motion in a resistive medium
 
-With quadratic drag ($F = kv^2$), the equations of motion become coupled nonlinear ODEs with no closed-form solution. Numerical methods (Euler, Runge-Kutta) are required.
+With quadratic drag ($F = kv^2$), the equations of motion become coupled nonlinear ODEs with no
+closed-form solution. Numerical methods (Euler, Runge-Kutta) are required.
 
 ### 16.3 Multi-stage projectiles
 
@@ -1094,7 +1147,8 @@ where $m$ decreases as fuel is consumed.
 
 ### 16.4 Range tables
 
-Before computers, artillery range tables were computed using numerical integration of the equations of motion. These accounted for air resistance, wind, and the Coriolis effect.
+Before computers, artillery range tables were computed using numerical integration of the equations
+of motion. These accounted for air resistance, wind, and the Coriolis effect.
 
 ---
 
@@ -1102,12 +1156,14 @@ Before computers, artillery range tables were computed using numerical integrati
 
 ### Question 16
 
-A particle is projected from a height $h$ at angle $\theta$ below the horizontal with speed $u$. Find the horizontal distance travelled before it hits the ground.
+A particle is projected from a height $h$ at angle $\theta$ below the horizontal with speed $u$.
+Find the horizontal distance travelled before it hits the ground.
 
 <details>
 <summary>Solution</summary>
 
-Taking downward as positive for the vertical: $y = h + u\sin\theta\,t + \dfrac{1}{2}gt^2$ (since the particle is projected downward).
+Taking downward as positive for the vertical: $y = h + u\sin\theta\,t + \dfrac{1}{2}gt^2$ (since the
+particle is projected downward).
 
 Wait, let me set up coordinates properly. Upward positive:
 
@@ -1125,7 +1181,8 @@ $R = u\cos\theta \cdot t = \dfrac◆LB◆u\cos\theta\left(\sqrt{u^2\sin^2\theta 
 
 ### Question 17
 
-**Prove that** the time taken for a projectile to reach maximum height is $t = \dfrac◆LB◆u\sin\theta◆RB◆◆LB◆g◆RB◆$.
+**Prove that** the time taken for a projectile to reach maximum height is
+$t = \dfrac◆LB◆u\sin\theta◆RB◆◆LB◆g◆RB◆$.
 
 <details>
 <summary>Solution</summary>

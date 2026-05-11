@@ -1,7 +1,8 @@
 ---
 title: Exponential Distribution and Continuous Random Variables
 description:
-  "A-Level Further Maths notes on Exponential Distribution and Continuous Random Variables: Board Coverage; 1. Continuous Random Variables."
+  'A-Level Further Maths notes on Exponential Distribution and Continuous Random Variables: Board
+  Coverage; 1. Continuous Random Variables.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -27,11 +28,9 @@ interval.
 | OCR (A)    | Paper 2 | Continuous RVs and exponential                       |
 | CIE (9231) | S2      | Both continuous RVs and exponential covered          |
 
-:::info
-The exponential distribution is the continuous counterpart to the geometric distribution.
+:::info The exponential distribution is the continuous counterpart to the geometric distribution.
 Both are memoryless. The Poisson process links all three distributions: Poisson counts events,
-exponential measures inter-arrival times, and geometric counts trials until the first event.
-:::
+exponential measures inter-arrival times, and geometric counts trials until the first event. :::
 
 <hr />
 
@@ -48,10 +47,8 @@ Probabilities are found by integration:
 
 $$P(a \leq X \leq b) = \int_a^b f(x)\,dx$$
 
-:::warning
-For a continuous random variable, $P(X = a) = 0$ for any single value $a$. This is why
-$P(a \leq X \leq b) = P(a < X < b)$ — the inequalities at individual points do not matter.
-:::
+:::warning For a continuous random variable, $P(X = a) = 0$ for any single value $a$. This is why
+$P(a \leq X \leq b) = P(a < X < b)$ — the inequalities at individual points do not matter. :::
 
 ### 1.2 Cumulative distribution function
 
@@ -180,12 +177,10 @@ $$
 
 This uses $P(X > x) = 1 - F(x) = e^{-\lambda x}$.
 
-:::info
-The memoryless property has important practical implications. If a component with an
+:::info The memoryless property has important practical implications. If a component with an
 exponentially distributed lifetime has been working for $s$ hours, the remaining lifetime has the
 same distribution as a brand new component. This means exponential lifetimes imply no "wear out"
-effect — which is why it is more appropriate for electronic components than mechanical ones.
-:::
+effect — which is why it is more appropriate for electronic components than mechanical ones. :::
 
 ### 2.6 Link to Poisson processes
 
@@ -207,7 +202,8 @@ For the exponential distribution:
 
 $$F(x) = 1 - e^{-\lambda x} = p \implies x = -\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln(1-p)$$
 
-The median is $x_{0.5} = -\dfrac◆LB◆\ln(0.5)◆RB◆◆LB◆\lambda◆RB◆ = \dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$.
+The median is
+$x_{0.5} = -\dfrac◆LB◆\ln(0.5)◆RB◆◆LB◆\lambda◆RB◆ = \dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$.
 
 <hr />
 
@@ -257,7 +253,8 @@ against $H_1: \lambda \neq 0.005$.
 Under $H_0$: $E(X) = 1/\lambda = 200$ hours. Since $n$ is large, use the approximate normal
 distribution of $\bar{X}$:
 
-$\bar{X} \sim N\!\left(\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆, \frac◆LB◆1◆RB◆◆LB◆n\lambda^2◆RB◆\right) = N(200, 4000)$ approximately.
+$\bar{X} \sim N\!\left(\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆, \frac◆LB◆1◆RB◆◆LB◆n\lambda^2◆RB◆\right) = N(200, 4000)$
+approximately.
 
 $z = \dfrac◆LB◆420 - 200◆RB◆◆LB◆\sqrt{4000}◆RB◆ = \dfrac{220}{63.25} = 3.48$.
 
@@ -763,7 +760,9 @@ $P(1 \lt{} X \lt{} 2) = F(2) - F(1) = \dfrac{4}{9} - \dfrac{1}{9} = \dfrac{1}{3}
 
 ### Example 8.1: Exponential distribution and memorylessness
 
-**Problem.** The lifetime $T$ of a component follows an exponential distribution with mean 200 hours. Given that the component has survived 150 hours, find the probability it survives a further 100 hours.
+**Problem.** The lifetime $T$ of a component follows an exponential distribution with mean 200
+hours. Given that the component has survived 150 hours, find the probability it survives a further
+100 hours.
 
 **Solution.** By the memoryless property of the exponential distribution:
 
@@ -777,13 +776,16 @@ $P(T > 100) = e^{-0.005 \times 100} = e^{-0.5} = \boxed{0.607}$ (3 s.f.).
 
 **Problem.** $X \sim \mathrm{U}(0, 10)$. Find $P(X > 6 \mid X > 3)$.
 
-**Solution.** $P(X > 6 \mid X > 3) = \dfrac{P(X > 6)}{P(X > 3)} = \dfrac{0.4}{0.7} = \dfrac{4}{7} \approx \boxed{0.571}$.
+**Solution.**
+$P(X > 6 \mid X > 3) = \dfrac{P(X > 6)}{P(X > 3)} = \dfrac{0.4}{0.7} = \dfrac{4}{7} \approx \boxed{0.571}$.
 
-Alternatively: conditional on $X > 3$, the distribution is $\mathrm{U}(3, 10)$, so $P(X > 6 \mid X > 3) = \dfrac{10-6}{10-3} = \dfrac{4}{7}$.
+Alternatively: conditional on $X > 3$, the distribution is $\mathrm{U}(3, 10)$, so
+$P(X > 6 \mid X > 3) = \dfrac{10-6}{10-3} = \dfrac{4}{7}$.
 
 ### Example 8.3: Sum of independent exponential random variables
 
-**Problem.** $X$ and $Y$ are independent with $X \sim \mathrm{Exp}(\lambda_1)$ and $Y \sim \mathrm{Exp}(\lambda_2)$. Find $P(X < Y)$.
+**Problem.** $X$ and $Y$ are independent with $X \sim \mathrm{Exp}(\lambda_1)$ and
+$Y \sim \mathrm{Exp}(\lambda_2)$. Find $P(X < Y)$.
 
 **Solution.** Using the joint density and integration:
 
@@ -797,19 +799,24 @@ For example, if $\lambda_1 = \lambda_2$: $P(X < Y) = \dfrac{1}{2}$ (by symmetry)
 
 ### Example 8.4: Finding a CDF from a PDF with a parameter
 
-**Problem.** A continuous random variable $X$ has PDF $f(x) = kx(4-x)$ for $0 \leq x \leq 4$. Find $k$, the CDF, and $P(1 < X < 3)$.
+**Problem.** A continuous random variable $X$ has PDF $f(x) = kx(4-x)$ for $0 \leq x \leq 4$. Find
+$k$, the CDF, and $P(1 < X < 3)$.
 
-**Solution.** $\displaystyle\int_0^4 kx(4-x)\,dx = k\!\left[2x^2 - \frac{x^3}{3}\right]_0^4 = k\!\left(32 - \frac{64}{3}\right) = \frac{32k}{3} = 1 \implies k = \frac{3}{32}$.
+**Solution.**
+$\displaystyle\int_0^4 kx(4-x)\,dx = k\!\left[2x^2 - \frac{x^3}{3}\right]_0^4 = k\!\left(32 - \frac{64}{3}\right) = \frac{32k}{3} = 1 \implies k = \frac{3}{32}$.
 
-CDF: $F(x) = \dfrac{3}{32}\!\left(2x^2 - \dfrac{x^3}{3}\right) = \dfrac{3x^2}{16} - \dfrac{x^3}{32}$ for $0 \leq x \leq 4$.
+CDF: $F(x) = \dfrac{3}{32}\!\left(2x^2 - \dfrac{x^3}{3}\right) = \dfrac{3x^2}{16} - \dfrac{x^3}{32}$
+for $0 \leq x \leq 4$.
 
 $P(1 < X < 3) = F(3) - F(1) = \left(\dfrac{27}{16} - \dfrac{27}{32}\right) - \left(\dfrac{3}{16} - \dfrac{1}{32}\right) = \dfrac{27}{32} - \dfrac{5}{32} = \boxed{\dfrac{11}{16}}$.
 
 ### Example 8.5: Normal approximation to the exponential
 
-**Problem.** $X_1, X_2, \ldots, X_{50}$ are independent, each following $\mathrm{Exp}(0.1)$. Approximate $P(\overline{X} > 12)$.
+**Problem.** $X_1, X_2, \ldots, X_{50}$ are independent, each following $\mathrm{Exp}(0.1)$.
+Approximate $P(\overline{X} > 12)$.
 
-**Solution.** $E(X_i) = 10$, $\mathrm{Var}(X_i) = 100$. $E(\overline{X}) = 10$, $\mathrm{Var}(\overline{X}) = \dfrac{100}{50} = 2$.
+**Solution.** $E(X_i) = 10$, $\mathrm{Var}(X_i) = 100$. $E(\overline{X}) = 10$,
+$\mathrm{Var}(\overline{X}) = \dfrac{100}{50} = 2$.
 
 By the CLT, $\overline{X} \approx N(10, 2)$ approximately.
 
@@ -819,7 +826,8 @@ $$P(\overline{X} > 12) = P\!\left(Z > \frac◆LB◆12-10◆RB◆◆LB◆\sqrt{2}
 
 **Problem.** $X$ has PDF $f_X(x) = 2x$ for $0 < x < 1$. Find the PDF of $Y = X^2$.
 
-**Solution.** For $0 < y < 1$: $F_Y(y) = P(Y \leq y) = P(X^2 \leq y) = P(X \leq \sqrt{y}) = (\sqrt{y})^2 = y$.
+**Solution.** For $0 < y < 1$:
+$F_Y(y) = P(Y \leq y) = P(X^2 \leq y) = P(X \leq \sqrt{y}) = (\sqrt{y})^2 = y$.
 
 $$f_Y(y) = \frac{d}{dy}F_Y(y) = \boxed{1} \quad \text{for } 0 < y < 1$$
 
@@ -827,48 +835,64 @@ So $Y \sim \mathrm{U}(0,1)$.
 
 ### Example 8.7: Mode and median of a triangular distribution
 
-**Problem.** $X$ has the triangular distribution with PDF $f(x) = \begin{cases}2x & 0 \leq x \leq 1 \\ 2(2-x) & 1 < x \leq 2\end{cases}$. Find the mode, median, mean, and variance.
+**Problem.** $X$ has the triangular distribution with PDF
+$f(x) = \begin{cases}2x & 0 \leq x \leq 1 \\ 2(2-x) & 1 < x \leq 2\end{cases}$. Find the mode,
+median, mean, and variance.
 
 **Solution.** **Mode:** The PDF peaks at $x = 1$, so mode $= \boxed{1}$.
 
-**Median:** For $m \leq 1$: $\displaystyle\int_0^m 2x\,dx = m^2$. Set $m^2 = 0.5 \implies m = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \approx 0.707$.
+**Median:** For $m \leq 1$: $\displaystyle\int_0^m 2x\,dx = m^2$. Set
+$m^2 = 0.5 \implies m = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \approx 0.707$.
 
-**Mean:** $E(X) = \displaystyle\int_0^1 2x^2\,dx + \int_1^2 2x(2-x)\,dx = \dfrac{2}{3} + \left[2x^2 - \dfrac{2x^3}{3}\right]_1^2 = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$.
+**Mean:**
+$E(X) = \displaystyle\int_0^1 2x^2\,dx + \int_1^2 2x(2-x)\,dx = \dfrac{2}{3} + \left[2x^2 - \dfrac{2x^3}{3}\right]_1^2 = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$.
 
-Wait, let me recalculate: $\displaystyle\int_1^2 2x(2-x)\,dx = \int_1^2 (4x - 2x^2)\,dx = \left[2x^2 - \dfrac{2x^3}{3}\right]_1^2 = (8-\dfrac{16}{3}) - (2-\dfrac{2}{3}) = \dfrac{8}{3} - \dfrac{4}{3} = \dfrac{4}{3}$.
+Wait, let me recalculate:
+$\displaystyle\int_1^2 2x(2-x)\,dx = \int_1^2 (4x - 2x^2)\,dx = \left[2x^2 - \dfrac{2x^3}{3}\right]_1^2 = (8-\dfrac{16}{3}) - (2-\dfrac{2}{3}) = \dfrac{8}{3} - \dfrac{4}{3} = \dfrac{4}{3}$.
 
-$E(X) = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$. This is the midpoint of $[0,2]$, as expected for a symmetric triangular distribution.
+$E(X) = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$. This is the midpoint of $[0,2]$, as expected for a
+symmetric triangular distribution.
 
 $E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 (4x^2 - 2x^3)\,dx = \dfrac{1}{2} + \left[\dfrac{4x^3}{3} - \dfrac{x^4}{2}\right]_1^2 = \dfrac{1}{2} + \dfrac{32}{3} - 8 - \dfrac{4}{3} + \dfrac{1}{2} = \dfrac{8}{3}$.
 
-$\mathrm{Var}(X) = \dfrac{8}{3} - 4 = \boxed{-\dfrac{4}{3}}$? This is impossible. Let me recheck $E(X^2)$.
+$\mathrm{Var}(X) = \dfrac{8}{3} - 4 = \boxed{-\dfrac{4}{3}}$? This is impossible. Let me recheck
+$E(X^2)$.
 
-$E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 x^2 \cdot 2(2-x)\,dx = \dfrac{1}{2} + \dfrac{28}{3} - \dfrac{4}{3} \cdot ... $
+$E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 x^2 \cdot 2(2-x)\,dx = \dfrac{1}{2} +
+\dfrac{28}{3} - \dfrac{4}{3} \cdot ... $
 
-Actually $E(X^2) = \dfrac{1}{2} + \int_1^2 (4x^2 - 2x^3)\,dx = \dfrac{1}{2} + \left[\dfrac{4}{3}x^3 - \dfrac{x^4}{2}\right]_1^2 = \dfrac{1}{2} + (\dfrac{32}{3}-8) - (\dfrac{4}{3}-\dfrac{1}{2}) = \dfrac{1}{2}+\dfrac{8}{3}-\dfrac{4}{3}+\dfrac{1}{2} = 1+\dfrac{4}{3} = \dfrac{7}{3}$.
+Actually
+$E(X^2) = \dfrac{1}{2} + \int_1^2 (4x^2 - 2x^3)\,dx = \dfrac{1}{2} + \left[\dfrac{4}{3}x^3 - \dfrac{x^4}{2}\right]_1^2 = \dfrac{1}{2} + (\dfrac{32}{3}-8) - (\dfrac{4}{3}-\dfrac{1}{2}) = \dfrac{1}{2}+\dfrac{8}{3}-\dfrac{4}{3}+\dfrac{1}{2} = 1+\dfrac{4}{3} = \dfrac{7}{3}$.
 
-$\mathrm{Var}(X) = \dfrac{7}{3} - 4 = -\dfrac{5}{3}$. This still cannot be right. The issue is $E(X) = 1$ (not 2) since the distribution is on $[0,2]$ with peak at 1.
+$\mathrm{Var}(X) = \dfrac{7}{3} - 4 = -\dfrac{5}{3}$. This still cannot be right. The issue is
+$E(X) = 1$ (not 2) since the distribution is on $[0,2]$ with peak at 1.
 
-Let me redo: $E(X) = \dfrac{2}{3} + \dfrac{4}{3} = 2$. But the distribution is symmetric about $x=1$, so $E(X)$ should be $1$.
+Let me redo: $E(X) = \dfrac{2}{3} + \dfrac{4}{3} = 2$. But the distribution is symmetric about
+$x=1$, so $E(X)$ should be $1$.
 
-Rechecking the second integral: $\int_1^2 2(2-x)x\,dx$. At $x=1$: $2(1)(1) = 2$. At $x=2$: $0$. This integral should give $2/3$ by symmetry.
+Rechecking the second integral: $\int_1^2 2(2-x)x\,dx$. At $x=1$: $2(1)(1) = 2$. At $x=2$: $0$. This
+integral should give $2/3$ by symmetry.
 
 $\int_1^2 (4x-2x^2)\,dx = [2x^2-\frac{2x^3}{3}]_1^2 = (8-\frac{16}{3})-(2-\frac{2}{3}) = \frac{8}{3}-\frac{4}{3} = \frac{4}{3}$.
 
-Total: $\frac{2}{3}+\frac{4}{3} = 2$. But the range is $[0,2]$ and the function is symmetric about $x=1$. The mean of a symmetric distribution on $[0,2]$ about $x=1$ is $1$. There must be a normalization error. Let me verify: $\int_0^1 2x\,dx = 1$ and $\int_1^2 2(2-x)\,dx = [4x-x^2]_1^2 = (8-4)-(4-1) = 1$. Total area $= 2 \neq 1$.
+Total: $\frac{2}{3}+\frac{4}{3} = 2$. But the range is $[0,2]$ and the function is symmetric about
+$x=1$. The mean of a symmetric distribution on $[0,2]$ about $x=1$ is $1$. There must be a
+normalization error. Let me verify: $\int_0^1 2x\,dx = 1$ and
+$\int_1^2 2(2-x)\,dx = [4x-x^2]_1^2 = (8-4)-(4-1) = 1$. Total area $= 2 \neq 1$.
 
-The PDF should be $f(x) = x$ for $0 \leq x \leq 1$ and $f(x) = 2-x$ for $1 < x \leq 2$. Then $E(X) = \int_0^1 x^2\,dx + \int_1^2 x(2-x)\,dx = \frac{1}{3}+\frac{2}{3} = 1$. ✓
+The PDF should be $f(x) = x$ for $0 \leq x \leq 1$ and $f(x) = 2-x$ for $1 < x \leq 2$. Then
+$E(X) = \int_0^1 x^2\,dx + \int_1^2 x(2-x)\,dx = \frac{1}{3}+\frac{2}{3} = 1$. ✓
 
 ---
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-|---|---|
+| Pitfall                                                                                                   | Correct Approach                                                         |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | Confusing the rate $\lambda$ with the mean $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ for exponential distributions | $E(X) = \dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$; the rate parameter is $\lambda$ |
-| Forgetting that the total area under a PDF must equal 1 | Always verify: $\displaystyle\int_{-\infty}^{\infty} f(x)\,dx = 1$ |
-| Applying the exponential memoryless property to other distributions | Only the exponential distribution has this property |
-| Using $P(a < X < b) = f(b) - f(a)$ | This is for CDFs, not PDFs. Use $\displaystyle\int_a^b f(x)\,dx$ |
+| Forgetting that the total area under a PDF must equal 1                                                   | Always verify: $\displaystyle\int_{-\infty}^{\infty} f(x)\,dx = 1$       |
+| Applying the exponential memoryless property to other distributions                                       | Only the exponential distribution has this property                      |
+| Using $P(a < X < b) = f(b) - f(a)$                                                                        | This is for CDFs, not PDFs. Use $\displaystyle\int_a^b f(x)\,dx$         |
 
 ---
 
@@ -876,7 +900,8 @@ The PDF should be $f(x) = x$ for $0 \leq x \leq 1$ and $f(x) = 2-x$ for $1 < x \
 
 ### Question 8
 
-Calls arrive at a call centre at a rate of 4 per hour. Find the probability that the time between two consecutive calls exceeds 45 minutes.
+Calls arrive at a call centre at a rate of 4 per hour. Find the probability that the time between
+two consecutive calls exceeds 45 minutes.
 
 <details>
 <summary>Solution</summary>
@@ -889,7 +914,8 @@ $P(T > 0.75) = e^{-4 \times 0.75} = e^{-3} \approx \boxed{0.0498}$.
 
 ### Question 9
 
-$X$ is a continuous random variable with PDF $f(x) = \dfrac{3}{4}(2x - x^2)$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var}(X)$, and the median.
+$X$ is a continuous random variable with PDF $f(x) = \dfrac{3}{4}(2x - x^2)$ for $0 \leq x \leq 2$.
+Find $E(X)$, $\mathrm{Var}(X)$, and the median.
 
 <details>
 <summary>Solution</summary>
@@ -900,13 +926,15 @@ $E(X^2) = \dfrac{3}{4}\displaystyle\int_0^2 (2x^3-x^4)\,dx = \dfrac{3}{4}\!\left
 
 $\mathrm{Var}(X) = \dfrac{6}{5}-1 = \dfrac{1}{5}$.
 
-Median $m$: $\dfrac{3}{4}\!\left(m^2-\dfrac{m^3}{3}\right) = \dfrac{1}{2}$. By inspection or numerical methods: $m \approx 0.908$.
+Median $m$: $\dfrac{3}{4}\!\left(m^2-\dfrac{m^3}{3}\right) = \dfrac{1}{2}$. By inspection or
+numerical methods: $m \approx 0.908$.
 
 </details>
 
 ### Question 10
 
-**Prove that** for $X \sim \mathrm{Exp}(\lambda)$, the memoryless property holds: $P(X > s+t \mid X > s) = P(X > t)$.
+**Prove that** for $X \sim \mathrm{Exp}(\lambda)$, the memoryless property holds:
+$P(X > s+t \mid X > s) = P(X > t)$.
 
 <details>
 <summary>Solution</summary>
@@ -923,30 +951,34 @@ $\blacksquare$
 
 ### 11.1 Exponential distribution and Poisson process
 
-The exponential distribution models inter-arrival times in a Poisson process. See [Poisson and Geometric Distributions](/docs/docs_alevel/further-maths/further-statistics/01-poisson-and-geometric-distributions).
+The exponential distribution models inter-arrival times in a Poisson process. See
+[Poisson and Geometric Distributions](/docs/alevel/further-maths/further-statistics/01-poisson-and-geometric-distributions).
 
 ### 11.2 Continuous distributions and integration
 
-Finding CDFs, means, and variances of continuous random variables requires integration. See [Further Calculus](/docs/docs_alevel/further-maths/pure-mathematics/04-further-calculus).
+Finding CDFs, means, and variances of continuous random variables requires integration. See
+[Further Calculus](/docs/alevel/further-maths/pure-mathematics/04-further-calculus).
 
 ### 11.3 Normal distribution and the CLT
 
-The Central Limit Theorem connects the exponential and uniform distributions to the normal distribution. See [Chi-Squared Tests](/docs/docs_alevel/further-maths/further-statistics/03-chi-squared-tests).
+The Central Limit Theorem connects the exponential and uniform distributions to the normal
+distribution. See
+[Chi-Squared Tests](/docs/alevel/further-maths/further-statistics/03-chi-squared-tests).
 
 ---
 
 ## 12. Key Results Summary
 
-| Distribution | PDF | $E(X)$ | $\mathrm{Var}(X)$ |
-|---|---|---|---|
+| Distribution            | PDF                                  | $E(X)$                           | $\mathrm{Var}(X)$                  |
+| ----------------------- | ------------------------------------ | -------------------------------- | ---------------------------------- |
 | $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆$ |
-| $\mathrm{U}(a,b)$ | $\dfrac{1}{b-a}$, $a \leq x \leq b$ | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ |
+| $\mathrm{U}(a,b)$       | $\dfrac{1}{b-a}$, $a \leq x \leq b$  | $\dfrac{a+b}{2}$                 | $\dfrac{(b-a)^2}{12}$              |
 
-| Property | Exponential | Uniform |
-|---|---|---|
-| Memoryless | Yes | No |
-| CDF | $1 - e^{-\lambda x}$ | $\dfrac{x-a}{b-a}$ |
-| Median | $\dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac{a+b}{2}$ |
+| Property   | Exponential                          | Uniform            |
+| ---------- | ------------------------------------ | ------------------ |
+| Memoryless | Yes                                  | No                 |
+| CDF        | $1 - e^{-\lambda x}$                 | $\dfrac{x-a}{b-a}$ |
+| Median     | $\dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac{a+b}{2}$   |
 
 ---
 
@@ -954,9 +986,8 @@ The Central Limit Theorem connects the exponential and uniform distributions to 
 
 ### Question 11
 
-The lifetime of a light bulb follows an exponential distribution with mean 500 hours. Find:
-(a) the probability it lasts more than 600 hours;
-(b) the probability it lasts between 400 and 600 hours;
+The lifetime of a light bulb follows an exponential distribution with mean 500 hours. Find: (a) the
+probability it lasts more than 600 hours; (b) the probability it lasts between 400 and 600 hours;
 (c) the median lifetime.
 
 <details>
@@ -968,7 +999,8 @@ $\lambda = \dfrac{1}{500} = 0.002$.
 
 **(b)** $P(400 < X < 600) = e^{-0.8} - e^{-1.2} \approx 0.449 - 0.301 = \boxed{0.148}$.
 
-**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = \dfrac◆LB◆\ln 2◆RB◆◆LB◆0.002◆RB◆ = \boxed{346.6\,\text{hours}}$.
+**(c)** Median $m$:
+$e^{-0.002m} = 0.5 \implies m = \dfrac◆LB◆\ln 2◆RB◆◆LB◆0.002◆RB◆ = \boxed{346.6\,\text{hours}}$.
 
 </details>
 
@@ -983,7 +1015,8 @@ $E(X) = \dfrac{a+b}{2}$.
 
 $E(X^2) = \dfrac{1}{b-a}\displaystyle\int_a^b x^2\,dx = \dfrac{b^3-a^3}{3(b-a)} = \dfrac{a^2+ab+b^2}{3}$.
 
-$\mathrm{Var}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4a^2+4ab+4b^2-3a^2-6ab-3b^2}{12} = \dfrac{a^2-2ab+b^2}{12} = \boxed{\dfrac{(b-a)^2}{12}}$. $\blacksquare$
+$\mathrm{Var}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4a^2+4ab+4b^2-3a^2-6ab-3b^2}{12} = \dfrac{a^2-2ab+b^2}{12} = \boxed{\dfrac{(b-a)^2}{12}}$.
+$\blacksquare$
 
 </details>
 
@@ -996,12 +1029,14 @@ $\mathrm{Var}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4a^2+4ab+
 The MGF of a random variable $X$ is $M_X(t) = E(e^{tX})$.
 
 Properties:
+
 - $M_X(0) = 1$
 - $M_X'(0) = E(X)$
 - $M_X''(0) = E(X^2)$
 - If $X$ and $Y$ are independent, $M_{X+Y}(t) = M_X(t)M_Y(t)$
 
 MGFs:
+
 - $\mathrm{Exp}(\lambda)$: $M(t) = \dfrac◆LB◆\lambda◆RB◆◆LB◆\lambda-t◆RB◆$ for $t < \lambda$
 - $\mathrm{U}(a,b)$: $M(t) = \dfrac{e^{bt}-e^{at}}{(b-a)t}$
 
@@ -1013,7 +1048,8 @@ $P(a < X \leq b) = F(b) - F(a)$ where $F(x) = \displaystyle\int_{-\infty}^x f(t)
 
 ### 14.3 Order statistics
 
-For i.i.d. random variables $X_1, \ldots, X_n$, the order statistics are $X_{(1)} \leq X_{(2)} \leq \cdots \leq X_{(n)}$.
+For i.i.d. random variables $X_1, \ldots, X_n$, the order statistics are
+$X_{(1)} \leq X_{(2)} \leq \cdots \leq X_{(n)}$.
 
 For $X \sim \mathrm{U}(0,1)$: $X_{(k)} \sim \mathrm{Beta}(k, n-k+1)$.
 
@@ -1028,19 +1064,24 @@ Find the MGF of $X \sim \mathrm{Exp}(\lambda)$ and use it to find $E(X)$ and $\m
 <details>
 <summary>Solution</summary>
 
-$M(t) = \displaystyle\int_0^{\infty} e^{tx}\lambda e^{-\lambda x}\,dx = \lambda\displaystyle\int_0^{\infty} e^{-(\lambda-t)x}\,dx = \frac◆LB◆\lambda◆RB◆◆LB◆\lambda-t◆RB◆$ for $t < \lambda$.
+$M(t) = \displaystyle\int_0^{\infty} e^{tx}\lambda e^{-\lambda x}\,dx = \lambda\displaystyle\int_0^{\infty} e^{-(\lambda-t)x}\,dx = \frac◆LB◆\lambda◆RB◆◆LB◆\lambda-t◆RB◆$
+for $t < \lambda$.
 
-$M'(t) = \dfrac◆LB◆\lambda◆RB◆◆LB◆(\lambda-t)^2◆RB◆$. $M'(0) = \dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ = E(X)$. ✓
+$M'(t) = \dfrac◆LB◆\lambda◆RB◆◆LB◆(\lambda-t)^2◆RB◆$.
+$M'(0) = \dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ = E(X)$. ✓
 
-$M''(t) = \dfrac◆LB◆2\lambda◆RB◆◆LB◆(\lambda-t)^3◆RB◆$. $M''(0) = \dfrac◆LB◆2◆RB◆◆LB◆\lambda^2◆RB◆ = E(X^2)$.
+$M''(t) = \dfrac◆LB◆2\lambda◆RB◆◆LB◆(\lambda-t)^3◆RB◆$.
+$M''(0) = \dfrac◆LB◆2◆RB◆◆LB◆\lambda^2◆RB◆ = E(X^2)$.
 
-$\mathrm{Var}(X) = \dfrac◆LB◆2◆RB◆◆LB◆\lambda^2◆RB◆ - \dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆ = \boxed{\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆}$. ✓
+$\mathrm{Var}(X) = \dfrac◆LB◆2◆RB◆◆LB◆\lambda^2◆RB◆ - \dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆ = \boxed{\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆}$.
+✓
 
 </details>
 
 ### Question 14
 
-**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln X$ follows $\mathrm{Exp}(\lambda)$.
+**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln X$ follows
+$\mathrm{Exp}(\lambda)$.
 
 <details>
 <summary>Solution</summary>

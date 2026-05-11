@@ -1,7 +1,8 @@
 ---
 title: Further Algebra
 description:
-  "A-Level Further Maths notes on Further Algebra: Board Coverage; 1. Polynomial Division and the Remainder Theorem; 1.1 Polynomial long division."
+  'A-Level Further Maths notes on Further Algebra: Board Coverage; 1. Polynomial Division and the
+  Remainder Theorem; 1.1 Polynomial long division.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -153,10 +154,7 @@ $$\frac{x^2 + 1}{(x^2 + 4)^2} = \frac{1}{x^2 + 4} - \frac{3}{(x^2 + 4)^2}$$
 
 </details>
 
-:::info
-info
-OCR cover Types 1 and 2. CIE covers Type 1 extensively in P3.
-:::
+:::info info OCR cover Types 1 and 2. CIE covers Type 1 extensively in P3. :::
 
 <hr />
 
@@ -353,11 +351,8 @@ $$= \frac{(k+1)^2[k^2 + 4(k+1)]}{4} = \frac{(k+1)^2(k+2)^2}{4} = \left[\frac{(k+
 
 ✓ $\square$
 
-:::info
-info
-summation formulae. Edexcel FP2 requires summation of series including method of differences. AQA
-covers summation in the context of mathematical induction.
-:::
+:::info info summation formulae. Edexcel FP2 requires summation of series including method of
+differences. AQA covers summation in the context of mathematical induction. :::
 
 <hr />
 
@@ -407,7 +402,8 @@ $$\frac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)} = \frac{6/5}{x + 2} + \frac{2x - 1
 <hr />
 
 **Problem 2.** The equation $x^3 - 4x^2 + x + 6 = 0$ has roots $\alpha, \beta, \gamma$. Find the
-value of $\dfrac◆LB◆1◆RB◆◆LB◆\alpha\beta◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\alpha\gamma◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\beta\gamma◆RB◆$.
+value of
+$\dfrac◆LB◆1◆RB◆◆LB◆\alpha\beta◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\alpha\gamma◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\beta\gamma◆RB◆$.
 
 <details>
 <summary>Hint</summary>
@@ -676,7 +672,8 @@ Verification: $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$. ✓
 
 ### Example 8.1: Using the binomial theorem with negative and fractional indices
 
-**Problem.** Find the coefficient of $x^4$ in the expansion of $(1 - 2x)^{-1/2}$ up to and including the term in $x^4$.
+**Problem.** Find the coefficient of $x^4$ in the expansion of $(1 - 2x)^{-1/2}$ up to and including
+the term in $x^4$.
 
 **Solution.** Using the general binomial expansion for $|x| < \dfrac{1}{2}$:
 
@@ -688,19 +685,23 @@ $$(1-2x)^{-1/2} = 1 + \left(-\frac{1}{2}\right)(-2x) + \frac◆LB◆\left(-\frac
 
 $$= 1 + x + \frac{3}{8}(4x^2) + \cdots = 1 + x + \frac{3}{2}x^2 + \cdots$$
 
-The $x^4$ coefficient: $\dfrac◆LB◆\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)\left(-\frac{5}{2}\right)\left(-\frac{7}{2}\right)◆RB◆◆LB◆24◆RB◆(16) = \dfrac{105}{16} \cdot \dfrac{16}{24} = \dfrac{105}{24} = \boxed{\dfrac{35}{8}}$.
+The $x^4$ coefficient:
+$\dfrac◆LB◆\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)\left(-\frac{5}{2}\right)\left(-\frac{7}{2}\right)◆RB◆◆LB◆24◆RB◆(16) = \dfrac{105}{16} \cdot \dfrac{16}{24} = \dfrac{105}{24} = \boxed{\dfrac{35}{8}}$.
 
 ### Example 8.2: Roots of a cubic with a substitution
 
-**Problem.** The cubic equation $x^3 - 3x^2 + 4 = 0$ has roots $\alpha, \beta, \gamma$. Find the value of $\alpha^2 + \beta^2 + \gamma^2$.
+**Problem.** The cubic equation $x^3 - 3x^2 + 4 = 0$ has roots $\alpha, \beta, \gamma$. Find the
+value of $\alpha^2 + \beta^2 + \gamma^2$.
 
-**Solution.** By Vieta's formulae: $\alpha + \beta + \gamma = 3$ and $\alpha\beta + \beta\gamma + \gamma\alpha = 0$.
+**Solution.** By Vieta's formulae: $\alpha + \beta + \gamma = 3$ and
+$\alpha\beta + \beta\gamma + \gamma\alpha = 0$.
 
 $$\alpha^2 + \beta^2 + \gamma^2 = (\alpha+\beta+\gamma)^2 - 2(\alpha\beta+\beta\gamma+\gamma\alpha) = 9 - 0 = \boxed{9}$$
 
 ### Example 8.3: Telescoping series via partial fractions
 
-**Problem.** Find $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+1)}$ and deduce $\displaystyle\sum_{r=1}^{\infty} \frac{1}{r(r+1)}$.
+**Problem.** Find $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+1)}$ and deduce
+$\displaystyle\sum_{r=1}^{\infty} \frac{1}{r(r+1)}$.
 
 **Solution.** $\dfrac{1}{r(r+1)} = \dfrac{1}{r} - \dfrac{1}{r+1}$.
 
@@ -712,7 +713,8 @@ As $n \to \infty$: $\displaystyle\sum_{r=1}^{\infty} \frac{1}{r(r+1)} = \boxed{1
 
 **Problem.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-**Solution.** **Base case** ($n=1$): LHS $= 1$, RHS $= \dfrac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$. ✓
+**Solution.** **Base case** ($n=1$): LHS $= 1$, RHS
+$= \dfrac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$. ✓
 
 **Inductive hypothesis:** Assume $\displaystyle\sum_{r=1}^{k} r^2 = \frac{k(k+1)(2k+1)}{6}$.
 
@@ -728,7 +730,8 @@ This is the required form with $n = k+1$. $\blacksquare$
 
 **Problem.** Find $\displaystyle\sum_{r=1}^{n} \frac{1}{(2r-1)(2r+1)}$.
 
-**Solution.** $\dfrac{1}{(2r-1)(2r+1)} = \dfrac{1}{2}\!\left(\dfrac{1}{2r-1} - \dfrac{1}{2r+1}\right)$.
+**Solution.**
+$\dfrac{1}{(2r-1)(2r+1)} = \dfrac{1}{2}\!\left(\dfrac{1}{2r-1} - \dfrac{1}{2r+1}\right)$.
 
 $$\sum_{r=1}^{n} \frac{1}{(2r-1)(2r+1)} = \frac{1}{2}\left[\left(\frac{1}{1} - \frac{1}{3}\right) + \left(\frac{1}{3} - \frac{1}{5}\right) + \cdots + \left(\frac{1}{2n-1} - \frac{1}{2n+1}\right)\right]$$
 
@@ -736,9 +739,11 @@ $$= \frac{1}{2}\left(1 - \frac{1}{2n+1}\right) = \boxed{\frac{n}{2n+1}}$$
 
 ### Example 8.6: Manipulating series with a given recurrence
 
-**Problem.** Given $u_1 = 1$ and $u_{n+1} = \dfrac{u_n}{u_n + 1}$, find $\displaystyle\sum_{r=1}^{n} u_r$.
+**Problem.** Given $u_1 = 1$ and $u_{n+1} = \dfrac{u_n}{u_n + 1}$, find
+$\displaystyle\sum_{r=1}^{n} u_r$.
 
-**Solution.** Write $u_r$ in closed form. From the recurrence: $\dfrac{1}{u_{n+1}} = \dfrac{u_n + 1}{u_n} = 1 + \dfrac{1}{u_n}$.
+**Solution.** Write $u_r$ in closed form. From the recurrence:
+$\dfrac{1}{u_{n+1}} = \dfrac{u_n + 1}{u_n} = 1 + \dfrac{1}{u_n}$.
 
 Let $v_n = \dfrac{1}{u_n}$. Then $v_{n+1} = 1 + v_n$, so $v_n = v_1 + (n-1)$.
 
@@ -756,9 +761,11 @@ The $n$-th harmonic number. No simpler closed form exists.
 
 $$\mathbf{M} = \begin{pmatrix}1&2&-1\\2&-1&1\\3&1&2\end{pmatrix}$$
 
-$\det(\mathbf{M}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$, so the system has a unique solution.
+$\det(\mathbf{M}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$, so the system has a unique
+solution.
 
-Using Cramer's rule: $x = \dfrac◆LB◆\det\begin{pmatrix}3&2&-1\\4&-1&1\\7&1&2\end{pmatrix}◆RB◆◆LB◆-6◆RB◆ = \dfrac{-6+16-11}{-6} = \dfrac{-1}{-6} = \dfrac{1}{6}$.
+Using Cramer's rule:
+$x = \dfrac◆LB◆\det\begin{pmatrix}3&2&-1\\4&-1&1\\7&1&2\end{pmatrix}◆RB◆◆LB◆-6◆RB◆ = \dfrac{-6+16-11}{-6} = \dfrac{-1}{-6} = \dfrac{1}{6}$.
 
 Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 
@@ -766,13 +773,13 @@ Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 
 ## 9. Common Pitfalls
 
-| Pitfall | Correct Approach |
-|---|---|
-| Forgetting the condition $\|x\| < 1$ for binomial expansions | Always state the convergence condition explicitly |
-| Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = \dfrac{n^2(n+1)^2}{4}$; they happen to be equal but the reasoning is different |
-| Splitting partial fractions incorrectly for method of differences | Always check by recombining: $\dfrac{A}{r} + \dfrac{B}{r+1} = \dfrac{A(r+1) + Br}{r(r+1)}$ |
-| Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
-| Skipping the base case in induction proofs | The base case is essential — without it the induction chain is unanchored |
+| Pitfall                                                                                         | Correct Approach                                                                                                         |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Forgetting the condition $\|x\| < 1$ for binomial expansions                                    | Always state the convergence condition explicitly                                                                        |
+| Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = \dfrac{n^2(n+1)^2}{4}$; they happen to be equal but the reasoning is different                               |
+| Splitting partial fractions incorrectly for method of differences                               | Always check by recombining: $\dfrac{A}{r} + \dfrac{B}{r+1} = \dfrac{A(r+1) + Br}{r(r+1)}$                               |
+| Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign             | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
+| Skipping the base case in induction proofs                                                      | The base case is essential — without it the induction chain is unanchored                                                |
 
 ---
 
@@ -780,7 +787,8 @@ Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 
 ### Question 8
 
-The binomial expansion of $(1 + ax)^{-2}$, in ascending powers of $x$ up to and including the term in $x^3$, is $1 - 4x + 12x^2 + bx^3$. Find the values of $a$ and $b$.
+The binomial expansion of $(1 + ax)^{-2}$, in ascending powers of $x$ up to and including the term
+in $x^3$, is $1 - 4x + 12x^2 + bx^3$. Find the values of $a$ and $b$.
 
 <details>
 <summary>Solution</summary>
@@ -846,7 +854,8 @@ $\alpha(2\alpha)(3\alpha) = -r \implies 6\alpha^3 = -r$.
 
 $p:q:r = -6\alpha : 11\alpha^2 : -6\alpha^3 = -6 : 11\alpha : -6\alpha^2$.
 
-For specific values, if $\alpha = 1$: $p:q:r = -6:11:-6$, giving $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$.
+For specific values, if $\alpha = 1$: $p:q:r = -6:11:-6$, giving
+$(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$.
 
 </details>
 
@@ -875,29 +884,34 @@ $\boxed{\sqrt{1.02} \approx 1.009950}$
 
 ### 11.1 Further algebra and complex numbers
 
-The roots of unity and De Moivre's theorem connect algebra to complex numbers. See [Complex Numbers](/docs/docs_alevel/further-maths/pure-mathematics/01-complex-numbers).
+The roots of unity and De Moivre's theorem connect algebra to complex numbers. See
+[Complex Numbers](/docs/alevel/further-maths/pure-mathematics/01-complex-numbers).
 
 ### 11.2 Algebra and matrices
 
-Vieta's formulae are closely related to the characteristic equation of a matrix: the sum of eigenvalues equals the trace, and the product equals the determinant. See [Matrices](/docs/docs_alevel/further-maths/pure-mathematics/02-matrices).
+Vieta's formulae are closely related to the characteristic equation of a matrix: the sum of
+eigenvalues equals the trace, and the product equals the determinant. See
+[Matrices](/docs/alevel/further-maths/pure-mathematics/02-matrices).
 
 ### 11.3 Series and calculus
 
-The binomial expansion and Maclaurin series are both infinite series representations of functions, used extensively in integration and differentiation. See [Maclaurin and Taylor Series](/docs/docs_alevel/further-maths/pure-mathematics/08-maclaurin-and-taylor-series).
+The binomial expansion and Maclaurin series are both infinite series representations of functions,
+used extensively in integration and differentiation. See
+[Maclaurin and Taylor Series](/docs/alevel/further-maths/pure-mathematics/08-maclaurin-and-taylor-series).
 
 ---
 
 ## 12. Key Formulae Summary
 
-| Topic | Key Formula |
-|---|---|
-| General binomial | $(1+x)^n = \displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ for $\|x\| < 1$ |
-| Method of differences | Decompose $\dfrac{P(r)}{Q(r)}$ into partial fractions that telescope |
-| Induction | Base case $\to$ assume $P(k)$ $\to$ prove $P(k+1)$ |
-| Vieta's (cubic) | $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
-| Sum of squares | $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$ |
-| Sum of cubes | $\displaystyle\sum_{r=1}^{n} r^3 = \dfrac{n^2(n+1)^2}{4}$ |
-| Harmonic sum | $H_n = \displaystyle\sum_{r=1}^{n} \dfrac{1}{r} \approx \ln n + \gamma$ |
+| Topic                 | Key Formula                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------ |
+| General binomial      | $(1+x)^n = \displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ for $\|x\| < 1$                     |
+| Method of differences | Decompose $\dfrac{P(r)}{Q(r)}$ into partial fractions that telescope                             |
+| Induction             | Base case $\to$ assume $P(k)$ $\to$ prove $P(k+1)$                                               |
+| Vieta's (cubic)       | $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
+| Sum of squares        | $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$                                      |
+| Sum of cubes          | $\displaystyle\sum_{r=1}^{n} r^3 = \dfrac{n^2(n+1)^2}{4}$                                        |
+| Harmonic sum          | $H_n = \displaystyle\sum_{r=1}^{n} \dfrac{1}{r} \approx \ln n + \gamma$                          |
 
 ---
 
@@ -935,7 +949,8 @@ Find the coefficient of $x^3$ in the expansion of $\dfrac{1}{(1-2x)(1+x)}$.
 
 Partial fractions: $\dfrac{1}{(1-2x)(1+x)} = \dfrac{A}{1-2x} + \dfrac{B}{1+x}$.
 
-$1 = A(1+x) + B(1-2x)$. $x=-1$: $1 = 3A \implies A = 1/3$. $x=1/2$: $1 = \dfrac{3B}{2} \implies B = 2/3$.
+$1 = A(1+x) + B(1-2x)$. $x=-1$: $1 = 3A \implies A = 1/3$. $x=1/2$:
+$1 = \dfrac{3B}{2} \implies B = 2/3$.
 
 $\dfrac{1}{3}\sum (2x)^n + \dfrac{2}{3}\sum (-x)^n$.
 
@@ -945,7 +960,8 @@ $x^3$ coefficient: $\dfrac{1}{3} \cdot 8 + \dfrac{2}{3}(-1) = \dfrac{8-2}{3} = \
 
 ### Question 15
 
-The roots of $x^3 + px + q = 0$ are $\alpha, \beta, \gamma$. Express $\alpha^3 + \beta^3 + \gamma^3$ in terms of $p$ and $q$.
+The roots of $x^3 + px + q = 0$ are $\alpha, \beta, \gamma$. Express $\alpha^3 + \beta^3 + \gamma^3$
+in terms of $p$ and $q$.
 
 <details>
 <summary>Solution</summary>
@@ -985,6 +1001,7 @@ where $\Delta f(r) = f(r+1) - f(r)$ is the forward difference operator.
 A generating function for a sequence $\{a_n\}$ is $G(x) = \displaystyle\sum_{n=0}^{\infty} a_n x^n$.
 
 Examples:
+
 - $1, 1, 1, \ldots$: $G(x) = \dfrac{1}{1-x}$
 - $1, 2, 3, \ldots$: $G(x) = \dfrac{1}{(1-x)^2}$
 - $1, 3, 6, 10, \ldots$ (triangular): $G(x) = \dfrac{1}{(1-x)^3}$
@@ -993,7 +1010,8 @@ Examples:
 
 $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$ (Pascal's identity).
 
-This is the basis of Pascal's triangle and is proved combinatorially: choosing $k$ objects from $n$ either includes or excludes a specific object.
+This is the basis of Pascal's triangle and is proved combinatorially: choosing $k$ objects from $n$
+either includes or excludes a specific object.
 
 ---
 
@@ -1025,7 +1043,8 @@ Consider choosing $n$ people from a group of $n$ men and $n$ women.
 
 LHS: $\binom{2n}{n}$ chooses any $n$ from $2n$.
 
-RHS: choosing $k$ men and $n-k$ women for each $k$ gives $\displaystyle\sum_{k=0}^{n} \binom{n}{k}\binom{n}{n-k} = \sum_{k=0}^{n} \binom{n}{k}^2$.
+RHS: choosing $k$ men and $n-k$ women for each $k$ gives
+$\displaystyle\sum_{k=0}^{n} \binom{n}{k}\binom{n}{n-k} = \sum_{k=0}^{n} \binom{n}{k}^2$.
 
 Since $\binom{n}{n-k} = \binom{n}{k}$, the identity follows. $\blacksquare$
 
@@ -1033,13 +1052,16 @@ Since $\binom{n}{n-k} = \binom{n}{k}$, the identity follows. $\blacksquare$
 
 ### Question 18
 
-**Prove by induction** that $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+1)(r+2)} = \frac{n(n+3)}{4(n+1)(n+2)}$.
+**Prove by induction** that
+$\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+1)(r+2)} = \frac{n(n+3)}{4(n+1)(n+2)}$.
 
 <details>
 <summary>Solution</summary>
 
 $\dfrac{1}{r(r+1)(r+2)} = \dfrac{1}{2}\!\left(\dfrac{1}{r(r+1)} - \dfrac{1}{(r+1)(r+2)}\right)$.
 
-This telescopes: $\dfrac{1}{2}\!\left(\dfrac{1}{2} - \dfrac{1}{(n+1)(n+2)}\right) = \dfrac{(n+1)(n+2)-2}{4(n+1)(n+2)} = \dfrac{n^2+3n}{4(n+1)(n+2)} = \dfrac{n(n+3)}{4(n+1)(n+2)}$. $\blacksquare$
+This telescopes:
+$\dfrac{1}{2}\!\left(\dfrac{1}{2} - \dfrac{1}{(n+1)(n+2)}\right) = \dfrac{(n+1)(n+2)-2}{4(n+1)(n+2)} = \dfrac{n^2+3n}{4(n+1)(n+2)} = \dfrac{n(n+3)}{4(n+1)(n+2)}$.
+$\blacksquare$
 
 </details>
