@@ -73,7 +73,7 @@ The random variable $X$ follows a normal distribution $X \sim N(50, 12)$. (Note:
 
 **(b)** The random variable $Y$ follows a binomial distribution $Y \sim B(80, 0.6)$. Using a normal approximation with continuity correction, approximate $\mathrm{P}(Y \leq 50)$.
 
-**(c)** A student uses the normal approximation $Y \sim N(48, 19.2)$ to approximate $Y \sim B(80, 0.6)$ and writes $\mathrm{P}(Y \leq 50) \approx \mathrm{P}\left(Z \leq \frac⧃LB⧄50 - 48⧃RB⧄⧃LB⧄\sqrt{19.2}⧃RB⧄\right)$. Identify the two errors in this working and provide the correct calculation.
+**(c)** A student uses the normal approximation $Y \sim N(48, 19.2)$ to approximate $Y \sim B(80, 0.6)$ and writes $\mathrm{P}(Y \leq 50) \approx \mathrm{P}\left(Z \leq \frac◆LB◆50 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆\right)$. Identify the two errors in this working and provide the correct calculation.
 
 **(d)** Verify that the normal approximation is appropriate for this binomial distribution by checking the criteria $np > 5$ and $n(1-p) > 5$.
 
@@ -85,11 +85,11 @@ The random variable $X$ follows a normal distribution $X \sim N(50, 12)$. (Note:
 
 Standardising:
 
-$$Z = \frac⧃LB⧄X - 50⧃RB⧄⧃LB⧄2\sqrt{3}⧃RB⧄, \quad Z \sim N(0, 1)$$
+$$Z = \frac◆LB◆X - 50◆RB◆◆LB◆2\sqrt{3}◆RB◆, \quad Z \sim N(0, 1)$$
 
-$$\mathrm{P}(X \lt 48) = \mathrm{P}\left(Z \lt \frac⧃LB⧄48 - 50⧃RB⧄⧃LB⧄2\sqrt{3}⧃RB⧄\right) = \mathrm{P}\left(Z \lt \frac⧃LB⧄-2⧃RB⧄⧃LB⧄2\sqrt{3}⧃RB⧄\right) = \mathrm{P}\left(Z \lt \frac⧃LB⧄-1⧃RB⧄⧃LB⧄\sqrt{3}⧃RB⧄\right)$$
+$$\mathrm{P}(X \lt 48) = \mathrm{P}\left(Z \lt \frac◆LB◆48 - 50◆RB◆◆LB◆2\sqrt{3}◆RB◆\right) = \mathrm{P}\left(Z \lt \frac◆LB◆-2◆RB◆◆LB◆2\sqrt{3}◆RB◆\right) = \mathrm{P}\left(Z \lt \frac◆LB◆-1◆RB◆◆LB◆\sqrt{3}◆RB◆\right)$$
 
-$$\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{3}⧃RB⧄ \approx 0.5774$$
+$$\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ \approx 0.5774$$
 
 $$\mathrm{P}(Z \lt -0.5774) = \Phi(-0.5774) = 1 - \Phi(0.5774) = 1 - 0.7181 = 0.2819 \approx 0.282$$
 
@@ -105,7 +105,7 @@ $\sigma = \sqrt{19.2}$
 
 $$\mathrm{P}(Y \leq 50) \approx \mathrm{P}(X \leq 50.5) \quad \text{where } X \sim N(48, 19.2)$$
 
-$$Z = \frac⧃LB⧄50.5 - 48⧃RB⧄⧃LB⧄\sqrt{19.2}⧃RB⧄ = \frac⧃LB⧄2.5⧃RB⧄⧃LB⧄\sqrt{19.2}⧃RB⧄ = \frac{2.5}{4.3818} = 0.5704$$
+$$Z = \frac◆LB◆50.5 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆ = \frac◆LB◆2.5◆RB◆◆LB◆\sqrt{19.2}◆RB◆ = \frac{2.5}{4.3818} = 0.5704$$
 
 $$\mathrm{P}(Z \leq 0.5704) = \Phi(0.5704) = 0.7158 \approx 0.716$$
 
@@ -113,11 +113,11 @@ $$\mathrm{P}(Z \leq 0.5704) = \Phi(0.5704) = 0.7158 \approx 0.716$$
 
 1. **No continuity correction:** The student used 50 instead of 50.5. For a discrete distribution approximated by a continuous one, $\mathrm{P}(Y \leq 50)$ should use 50.5, not 50.
 
-2. **Missing the subtraction in the numerator:** The student wrote $\frac⧃LB⧄50 - 48⧃RB⧄⧃LB⧄\sqrt{19.2}⧃RB⧄$, which is actually correct for the standardisation formula (though without the continuity correction). However, if the student had meant to compute $\mathrm{P}(Y \geq 50)$ and wrote $\frac⧃LB⧄48 - 50⧃RB⧄⧃LB⧄\sqrt{19.2}⧃RB⧄$, that would be a sign error. The standardisation is $Z = \frac⧃LB⧄X - \mu⧃RB⧄⧃LB⧄\sigma⧃RB⧄$, so the numerator must be $X - \mu = 50.5 - 48 = 2.5$ (or with continuity correction, $50.5 - 48$). The student's version gives $\frac⧃LB⧄50 - 48⧃RB⧄⧃LB⧄\sqrt{19.2}⧃RB⧄ = \frac⧃LB⧄2⧃RB⧄⧃LB⧄\sqrt{19.2}⧃RB⧄ = 0.4564$, which underestimates the correct $z$-value of 0.5704.
+2. **Missing the subtraction in the numerator:** The student wrote $\frac◆LB◆50 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆$, which is actually correct for the standardisation formula (though without the continuity correction). However, if the student had meant to compute $\mathrm{P}(Y \geq 50)$ and wrote $\frac◆LB◆48 - 50◆RB◆◆LB◆\sqrt{19.2}◆RB◆$, that would be a sign error. The standardisation is $Z = \frac◆LB◆X - \mu◆RB◆◆LB◆\sigma◆RB◆$, so the numerator must be $X - \mu = 50.5 - 48 = 2.5$ (or with continuity correction, $50.5 - 48$). The student's version gives $\frac◆LB◆50 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆\sqrt{19.2}◆RB◆ = 0.4564$, which underestimates the correct $z$-value of 0.5704.
 
 The correct calculation is:
 
-$$\mathrm{P}(Y \leq 50) \approx \mathrm{P}\left(Z \leq \frac⧃LB⧄50.5 - 48⧃RB⧄⧃LB⧄\sqrt{19.2}⧃RB⧄\right) = \mathrm{P}(Z \leq 0.5704) = 0.716$$
+$$\mathrm{P}(Y \leq 50) \approx \mathrm{P}\left(Z \leq \frac◆LB◆50.5 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆\right) = \mathrm{P}(Z \leq 0.5704) = 0.716$$
 
 **(d)** Checking the criteria:
 
@@ -179,7 +179,7 @@ $$\mathrm{SD}(E) = \sqrt{145} \approx 12.04 \text{ minutes}$$
 
 $$\mathrm{Var}(A + B) = \mathrm{Var}(A) + \mathrm{Var}(B) \quad \text{(for independent variables)}$$
 
-$$\mathrm{SD}(A + B) = \sqrt⧃LB⧄\mathrm{Var}(A) + \mathrm{Var}(B)⧃RB⧄ = \sqrt{9 + 16} = \sqrt{25} = 5$$
+$$\mathrm{SD}(A + B) = \sqrt◆LB◆\mathrm{Var}(A) + \mathrm{Var}(B)◆RB◆ = \sqrt{9 + 16} = \sqrt{25} = 5$$
 
 The student's answer of $\mathrm{SD}(A + B) = 7$ is incorrect. The correct answer is 5.
 
@@ -251,7 +251,7 @@ Using the normal approximation: $X \approx N(15, 10.5)$, $\sigma = \sqrt{10.5} \
 
 With continuity correction for $X \geq c$:
 
-$$\mathrm{P}(X \geq 20.5) = \mathrm{P}\left(Z \geq \frac⧃LB⧄20.5 - 15⧃RB⧄⧃LB⧄\sqrt{10.5}⧃RB⧄\right) = \mathrm{P}(Z \geq 1.70) = 1 - \Phi(1.70) = 1 - 0.9554 = 0.0446$$
+$$\mathrm{P}(X \geq 20.5) = \mathrm{P}\left(Z \geq \frac◆LB◆20.5 - 15◆RB◆◆LB◆\sqrt{10.5}◆RB◆\right) = \mathrm{P}(Z \geq 1.70) = 1 - \Phi(1.70) = 1 - 0.9554 = 0.0446$$
 
 Since $0.0446 < 0.05$, the critical region is approximately $X \geq 20$.
 
@@ -302,7 +302,7 @@ A call centre receives an average of 2.4 calls per minute.
 
 **(a)** Let $X$ = number of calls in one minute. Then $X \sim \text{Po}(2.4)$.
 
-$$\mathrm{P}(X = 3) = \frac⧃LB⧄e^{-2.4} \times 2.4^3⧃RB⧄⧃LB⧄3!⧃RB⧄ = \frac⧃LB⧄e^{-2.4} \times 13.824⧃RB⧄⧃LB⧄6⧃RB⧄ = 2.304 \times e^{-2.4}$$
+$$\mathrm{P}(X = 3) = \frac◆LB◆e^{-2.4} \times 2.4^3◆RB◆◆LB◆3!◆RB◆ = \frac◆LB◆e^{-2.4} \times 13.824◆RB◆◆LB◆6◆RB◆ = 2.304 \times e^{-2.4}$$
 
 $$= 2.304 \times 0.09072 = 0.2090 \approx 0.209$$
 
@@ -314,7 +314,7 @@ $$\mu = 60, \quad \sigma^2 = 60, \quad \sigma = \sqrt{60} \approx 7.746$$
 
 With continuity correction:
 
-$$\mathrm{P}(Y > 60) = \mathrm{P}(Y \geq 61) \approx \mathrm{P}\left(Z > \frac⧃LB⧄60.5 - 60⧃RB⧄⧃LB⧄\sqrt{60}⧃RB⧄\right) = \mathrm{P}\left(Z > \frac{0.5}{7.746}\right) = \mathrm{P}(Z > 0.0645)$$
+$$\mathrm{P}(Y > 60) = \mathrm{P}(Y \geq 61) \approx \mathrm{P}\left(Z > \frac◆LB◆60.5 - 60◆RB◆◆LB◆\sqrt{60}◆RB◆\right) = \mathrm{P}\left(Z > \frac{0.5}{7.746}\right) = \mathrm{P}(Z > 0.0645)$$
 
 $$= 1 - \Phi(0.0645) = 1 - 0.5257 = 0.4743 \approx 0.474$$
 
@@ -401,7 +401,7 @@ $$p = \frac{5}{36}$$
 
 $$\mathrm{E}(N) = \frac{1}{p} = \frac{36}{5} = 7.2$$
 
-$$\mathrm{Var}(N) = \frac{1-p}{p^2} = \frac{31/36}{(5/36)^2} = \frac{31}{36} \times \frac{1296}{25} = \frac⧃LB⧄31 \times 36⧃RB⧄⧃LB⧄25⧃RB⧄ = \frac{1116}{25} = 44.64$$
+$$\mathrm{Var}(N) = \frac{1-p}{p^2} = \frac{31/36}{(5/36)^2} = \frac{31}{36} \times \frac{1296}{25} = \frac◆LB◆31 \times 36◆RB◆◆LB◆25◆RB◆ = \frac{1116}{25} = 44.64$$
 
 **(iii)** Let the net gain be $G$. The player pays $\pounds 1$ per roll and receives $\pounds k$ upon winning. The number of rolls is $N$.
 

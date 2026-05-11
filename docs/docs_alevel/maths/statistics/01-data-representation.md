@@ -46,7 +46,7 @@ $$S(a) = \sum(x_i^2 - 2ax_i + a^2) = \sum x_i^2 - 2a\sum x_i + na^2$$
 
 $$\frac{dS}{da} = -2\sum x_i + 2na$$
 
-Setting $\dfrac{dS}{da} = 0$: $2na = 2\sum x_i \implies a = \dfrac⧃LB⧄\sum x_i⧃RB⧄⧃LB⧄n⧃RB⧄ = \bar{x}$.
+Setting $\dfrac{dS}{da} = 0$: $2na = 2\sum x_i \implies a = \dfrac◆LB◆\sum x_i◆RB◆◆LB◆n◆RB◆ = \bar{x}$.
 
 Check: $\dfrac{d^2S}{da^2} = 2n \gt{} 0$, so this is a minimum. $\blacksquare$
 
@@ -87,11 +87,11 @@ The **variance** of $x_1, \ldots, x_n$ is
 
 $$\sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2$$
 
-The **standard deviation** is $\sigma = \sqrt⧃LB⧄\sigma^2⧃RB⧄$.
+The **standard deviation** is $\sigma = \sqrt◆LB◆\sigma^2◆RB◆$.
 
 ### 2.2 Computational formula
 
-**Theorem.** $\sigma^2 = \dfrac⧃LB⧄\sum x_i^2⧃RB⧄⧃LB⧄n⧃RB⧄ - \bar{x}^2$
+**Theorem.** $\sigma^2 = \dfrac◆LB◆\sum x_i^2◆RB◆◆LB◆n◆RB◆ - \bar{x}^2$
 
 **Proof.**
 
@@ -99,8 +99,8 @@ $$
 \begin{aligned}
 \sigma^2 &= \frac{1}{n}\sum(x_i - \bar{x})^2 = \frac{1}{n}\sum(x_i^2 - 2\bar{x}x_i + \bar{x}^2) \\
 &= \frac{1}{n}\left[\sum x_i^2 - 2\bar{x}\sum x_i + n\bar{x}^2\right] \\
-&= \frac⧃LB⧄\sum x_i^2⧃RB⧄⧃LB⧄n⧃RB⧄ - 2\bar{x}^2 + \bar{x}^2 \\
-&= \frac⧃LB⧄\sum x_i^2⧃RB⧄⧃LB⧄n⧃RB⧄ - \bar{x}^2 \quad \blacksquare
+&= \frac◆LB◆\sum x_i^2◆RB◆◆LB◆n◆RB◆ - 2\bar{x}^2 + \bar{x}^2 \\
+&= \frac◆LB◆\sum x_i^2◆RB◆◆LB◆n◆RB◆ - \bar{x}^2 \quad \blacksquare
 \end{aligned}
 $$
 
@@ -113,7 +113,7 @@ remember: "mean of squares minus square of mean."
 
 For sample data, the **unbiased estimator** of the population variance is
 
-$$s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2 = \frac⧃LB⧄\sum x_i^2 - n\bar{x}^2⧃RB⧄⧃LB⧄n-1⧃RB⧄$$
+$$s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2 = \frac◆LB◆\sum x_i^2 - n\bar{x}^2◆RB◆◆LB◆n-1◆RB◆$$
 
 The division by $n-1$ (Bessel's correction) accounts for the fact that $\bar{x}$ is estimated from
 the same data, losing one degree of freedom.
@@ -166,13 +166,13 @@ Some use $1.5 \times$ IQR, others use different multipliers.
 
 If $y_i = \dfrac{x_i - a}{c}$, then:
 
-$$\bar{y} = \frac⧃LB⧄\bar{x} - a⧃RB⧄⧃LB⧄c⧃RB⧄, \qquad \sigma_y = \frac⧃LB⧄\sigma_x⧃RB⧄⧃LB⧄|c|⧃RB⧄$$
+$$\bar{y} = \frac◆LB◆\bar{x} - a◆RB◆◆LB◆c◆RB◆, \qquad \sigma_y = \frac◆LB◆\sigma_x◆RB◆◆LB◆|c|◆RB◆$$
 
 **Proof.**
 
-$$\bar{y} = \frac{1}{n}\sum y_i = \frac{1}{n}\sum\frac{x_i - a}{c} = \frac{1}{c}\left(\frac⧃LB⧄\sum x_i⧃RB⧄⧃LB⧄n⧃RB⧄ - a\right) = \frac⧃LB⧄\bar{x} - a⧃RB⧄⧃LB⧄c⧃RB⧄$$
+$$\bar{y} = \frac{1}{n}\sum y_i = \frac{1}{n}\sum\frac{x_i - a}{c} = \frac{1}{c}\left(\frac◆LB◆\sum x_i◆RB◆◆LB◆n◆RB◆ - a\right) = \frac◆LB◆\bar{x} - a◆RB◆◆LB◆c◆RB◆$$
 
-$$\sigma_y^2 = \frac{1}{n}\sum(y_i - \bar{y})^2 = \frac{1}{n}\sum\left(\frac{x_i - a}{c} - \frac⧃LB⧄\bar{x}-a⧃RB⧄⧃LB⧄c⧃RB⧄\right)^2 = \frac{1}{c^2}\cdot\frac{1}{n}\sum(x_i-\bar{x})^2 = \frac⧃LB⧄\sigma_x^2⧃RB⧄⧃LB⧄c^2⧃RB⧄$$
+$$\sigma_y^2 = \frac{1}{n}\sum(y_i - \bar{y})^2 = \frac{1}{n}\sum\left(\frac{x_i - a}{c} - \frac◆LB◆\bar{x}-a◆RB◆◆LB◆c◆RB◆\right)^2 = \frac{1}{c^2}\cdot\frac{1}{n}\sum(x_i-\bar{x})^2 = \frac◆LB◆\sigma_x^2◆RB◆◆LB◆c^2◆RB◆$$
 
 Hence $\sigma_y = \sigma_x/|c|$. $\blacksquare$
 
@@ -190,7 +190,7 @@ but does not affect the spread.
 
 For data with frequencies $f_1, f_2, \ldots, f_k$:
 
-$$\bar{x} = \frac⧃LB⧄\sum f_i x_i⧃RB⧄⧃LB⧄\sum f_i⧃RB⧄, \qquad \sigma^2 = \frac⧃LB⧄\sum f_i x_i^2⧃RB⧄⧃LB⧄\sum f_i⧃RB⧄ - \bar{x}^2$$
+$$\bar{x} = \frac◆LB◆\sum f_i x_i◆RB◆◆LB◆\sum f_i◆RB◆, \qquad \sigma^2 = \frac◆LB◆\sum f_i x_i^2◆RB◆◆LB◆\sum f_i◆RB◆ - \bar{x}^2$$
 
 ### 5.2 Grouped continuous data
 
@@ -213,7 +213,7 @@ Skewness measures the asymmetry of a distribution about its centre. A distributi
 
 **Pearson's first coefficient** uses the mean, median, and standard deviation:
 
-$$S_1 = \frac⧃LB⧄3\left(\bar{x} - Q_2\right)⧃RB⧄⧃LB⧄\sigma⧃RB⧄$$
+$$S_1 = \frac◆LB◆3\left(\bar{x} - Q_2\right)◆RB◆◆LB◆\sigma◆RB◆$$
 
 **Pearson's second coefficient** uses only the quartiles:
 
@@ -267,7 +267,7 @@ $$\mathrm{MAD} = \mathrm{median}\left(|x_i - \tilde{x}|\right)$$
 
 The modified z-score for each observation is:
 
-$$M_i = \frac⧃LB⧄0.6745\left(x_i - \tilde{x}\right)⧃RB⧄⧃LB⧄\mathrm{MAD}⧃RB⧄$$
+$$M_i = \frac◆LB◆0.6745\left(x_i - \tilde{x}\right)◆RB◆◆LB◆\mathrm{MAD}◆RB◆$$
 
 An observation is flagged as an outlier if $|M_i| \gt{} 3.5$.
 
@@ -389,7 +389,7 @@ Always relate numerical comparisons to the original context of the data.
 When data are grouped into classes, quantiles are estimated using **linear interpolation**. For the
 $p$-th percentile:
 
-$$x_p = L + \left(\frac⧃LB⧄p \cdot n⧃RB⧄⧃LB⧄100⧃RB⧄ - c_f\right) \cdot \frac{w}{f}$$
+$$x_p = L + \left(\frac◆LB◆p \cdot n◆RB◆◆LB◆100◆RB◆ - c_f\right) \cdot \frac{w}{f}$$
 
 where:
 
@@ -547,7 +547,7 @@ Prove that $\displaystyle\sum_{i=1}^{n}(x_i - \bar{x}) = 0$.
 
 <details>
 <summary>Solution 6</summary>
-$$\sum(x_i - \bar{x}) = \sum x_i - n\bar{x} = \sum x_i - n \cdot \frac⧃LB⧄\sum x_i⧃RB⧄⧃LB⧄n⧃RB⧄ = \sum x_i - \sum x_i = 0 \quad \blacksquare$$
+$$\sum(x_i - \bar{x}) = \sum x_i - n\bar{x} = \sum x_i - n \cdot \frac◆LB◆\sum x_i◆RB◆◆LB◆n◆RB◆ = \sum x_i - \sum x_i = 0 \quad \blacksquare$$
 
 **If you get this wrong, revise:** [Mean](#11-mean) — Section 1.1.
 
@@ -632,7 +632,7 @@ $\sum x^2 = 4 + 16 + 25 + 36 + 49 + 64 + 144 + 225 + 784 = 1347$.
 $\sigma^2 = 1347/9 - 9.67^2 = 149.67 - 93.51 = 56.16$, so $\sigma = 7.49$.
 
 Pearson's first coefficient:
-$$S_1 = \frac{3(9.67 - 7)}{7.49} = \frac⧃LB⧄3 \times 2.67⧃RB⧄⧃LB⧄7.49⧃RB⧄ = \frac{8.01}{7.49} \approx 1.07$$
+$$S_1 = \frac{3(9.67 - 7)}{7.49} = \frac◆LB◆3 \times 2.67◆RB◆◆LB◆7.49◆RB◆ = \frac{8.01}{7.49} \approx 1.07$$
 
 Since $S_1 \gt{} 0$, the distribution is positively skewed. This is consistent with the right tail
 produced by the value 28.
@@ -750,7 +750,7 @@ modified z-score method to determine whether the value 48 is an outlier.
 $\tilde{x} = 12$ (median). $\mathrm{MAD} = 4$.
 
 For $x = 48$:
-$$M = \frac{0.6745(48 - 12)}{4} = \frac⧃LB⧄0.6745 \times 36⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac{24.282}{4} = 6.07$$
+$$M = \frac{0.6745(48 - 12)}{4} = \frac◆LB◆0.6745 \times 36◆RB◆◆LB◆4◆RB◆ = \frac{24.282}{4} = 6.07$$
 
 Since $|M| = 6.07 \gt{} 3.5$, the value 48 is classified as an outlier by the modified z-score
 method.
@@ -804,7 +804,7 @@ $\sigma^2 = 2533/9 - 11.67^2 = 281.44 - 136.19 = 145.25$, so $\sigma = 12.05$.
 $$S_1 = \frac{3(11.67 - 8)}{12.05} = \frac{11.01}{12.05} \approx 0.91$$
 
 **Pearson's second coefficient:**
-$$S_2 = \frac⧃LB⧄11 + 5.5 - 2 \times 8⧃RB⧄⧃LB⧄11 - 5.5⧃RB⧄ = \frac{16.5 - 16}{5.5} = \frac{0.5}{5.5} \approx 0.09$$
+$$S_2 = \frac◆LB◆11 + 5.5 - 2 \times 8◆RB◆◆LB◆11 - 5.5◆RB◆ = \frac{16.5 - 16}{5.5} = \frac{0.5}{5.5} \approx 0.09$$
 
 Both coefficients are positive, so they agree on positive skew. However, $S_1$ is much larger
 because the mean (11.67) is strongly pulled by the outlier 45, whereas $S_2$ depends only on the

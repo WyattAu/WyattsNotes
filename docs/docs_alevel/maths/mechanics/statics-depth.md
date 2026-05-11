@@ -152,7 +152,7 @@ The centre of mass is approximately $1.58\;\mathrm{m}$ from $A$.
 
 For particles of masses $m_1, m_2, \ldots, m_n$ at positions $(x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)$:
 
-$$\bar{x} = \frac⧃LB⧄\sum m_i x_i⧃RB⧄⧃LB⧄\sum m_i⧃RB⧄, \qquad \bar{y} = \frac⧃LB⧄\sum m_i y_i⧃RB⧄⧃LB⧄\sum m_i⧃RB⧄$$
+$$\bar{x} = \frac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆, \qquad \bar{y} = \frac◆LB◆\sum m_i y_i◆RB◆◆LB◆\sum m_i◆RB◆$$
 
 ### 3.2 Centre of mass of uniform laminas
 
@@ -167,7 +167,7 @@ $\dfrac{2}{3}$ of the median length from each vertex.
 A strip parallel to the base at height $y$ has width $a\!\left(1 - \dfrac{y}{b}\right)$ and mass
 proportional to this width.
 
-$$\bar{y} = \frac⧃LB⧄\int_0^b y \cdot a\!\left(1 - \frac{y}{b}\right)dy⧃RB⧄⧃LB⧄\int_0^b a\!\left(1 - \frac{y}{b}\right)dy⧃RB⧄ = \frac⧃LB⧄\left[\frac{y^2}{2} - \frac{y^3}{3b}\right]_0^b⧃RB⧄⧃LB⧄\left[y - \frac{y^2}{2b}\right]_0^b⧃RB⧄ = \frac⧃LB⧄\frac{b^2}{2} - \frac{b^2}{3}⧃RB⧄⧃LB⧄b - \frac{b}{2}⧃RB⧄ = \frac⧃LB⧄\frac{b^2}{6}⧃RB⧄⧃LB⧄\frac{b}{2}⧃RB⧄ = \frac{b}{3}$$
+$$\bar{y} = \frac◆LB◆\int_0^b y \cdot a\!\left(1 - \frac{y}{b}\right)dy◆RB◆◆LB◆\int_0^b a\!\left(1 - \frac{y}{b}\right)dy◆RB◆ = \frac◆LB◆\left[\frac{y^2}{2} - \frac{y^3}{3b}\right]_0^b◆RB◆◆LB◆\left[y - \frac{y^2}{2b}\right]_0^b◆RB◆ = \frac◆LB◆\frac{b^2}{2} - \frac{b^2}{3}◆RB◆◆LB◆b - \frac{b}{2}◆RB◆ = \frac◆LB◆\frac{b^2}{6}◆RB◆◆LB◆\frac{b}{2}◆RB◆ = \frac{b}{3}$$
 
 The centre of mass is at height $\dfrac{b}{3}$, which is $\dfrac{1}{3}$ of the way from the base
 and $\dfrac{2}{3}$ from the apex. $\blacksquare$
@@ -186,16 +186,16 @@ $AD$. Find the centre of mass of the remaining lamina.
 Rectangle: area $= 48\;\mathrm{cm}^2$, centre at $(4, 3)$.
 
 Semicircle: radius $= 4\;\mathrm{cm}$, area $= \dfrac{1}{2}\pi(16) = 8\pi\;\mathrm{cm}^2$.
-Centre of mass of the semicircle is at distance $\dfrac⧃LB⧄4r⧃RB⧄⧃LB⧄3\pi⧃RB⧄ = \dfrac⧃LB⧄16⧃RB⧄⧃LB⧄3\pi⧃RB⧄$ from the
-diameter, i.e. at $(4, 6 - \dfrac⧃LB⧄16⧃RB⧄⧃LB⧄3\pi⧃RB⧄)$.
+Centre of mass of the semicircle is at distance $\dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆ = \dfrac◆LB◆16◆RB◆◆LB◆3\pi◆RB◆$ from the
+diameter, i.e. at $(4, 6 - \dfrac◆LB◆16◆RB◆◆LB◆3\pi◆RB◆)$.
 
 Treating the removed semicircle as a negative mass:
 
-$$\bar{x} = \frac⧃LB⧄48 \times 4 - 8\pi \times 4⧃RB⧄⧃LB⧄48 - 8\pi⧃RB⧄ = \frac⧃LB⧄4(48 - 8\pi)⧃RB⧄⧃LB⧄48 - 8\pi⧃RB⧄ = 4\;\mathrm{cm}$$
+$$\bar{x} = \frac◆LB◆48 \times 4 - 8\pi \times 4◆RB◆◆LB◆48 - 8\pi◆RB◆ = \frac◆LB◆4(48 - 8\pi)◆RB◆◆LB◆48 - 8\pi◆RB◆ = 4\;\mathrm{cm}$$
 
 This is expected by symmetry.
 
-$$\bar{y} = \frac⧃LB⧄48 \times 3 - 8\pi\!\left(6 - \frac{16}{3\pi}\right)⧃RB⧄⧃LB⧄48 - 8\pi⧃RB⧄ = \frac⧃LB⧄144 - 48\pi + \frac{128}{3}⧃RB⧄⧃LB⧄48 - 8\pi⧃RB⧄$$
+$$\bar{y} = \frac◆LB◆48 \times 3 - 8\pi\!\left(6 - \frac{16}{3\pi}\right)◆RB◆◆LB◆48 - 8\pi◆RB◆ = \frac◆LB◆144 - 48\pi + \frac{128}{3}◆RB◆◆LB◆48 - 8\pi◆RB◆$$
 
 $$\bar{y} = \frac{144 + 42.67 - 150.80}{48 - 25.13} = \frac{35.87}{22.87} \approx 1.57\;\mathrm{cm}$$
 
@@ -236,7 +236,7 @@ Taking moments about the foot of the ladder (anticlockwise positive):
 
 $$R_w \times 5\sin 65^\circ - 20g \times 2.5\cos 65^\circ = 0$$
 
-$$R_w = \frac⧃LB⧄20g \times 2.5\cos 65^\circ⧃RB⧄⧃LB⧄5\sin 65^\circ⧃RB⧄ = \frac⧃LB⧄49\cos 65^\circ⧃RB⧄⧃LB⧄\sin 65^\circ⧃RB⧄ = 49\cot 65^\circ$$
+$$R_w = \frac◆LB◆20g \times 2.5\cos 65^\circ◆RB◆◆LB◆5\sin 65^\circ◆RB◆ = \frac◆LB◆49\cos 65^\circ◆RB◆◆LB◆\sin 65^\circ◆RB◆ = 49\cot 65^\circ$$
 
 $$R_w = 49 \times 0.4663 = 22.85\;\mathrm{N}$$
 
@@ -305,7 +305,7 @@ $$R_B = R_C = 50\;\mathrm{N}$$
 
 By symmetry, $T_{AD} = T_{AE}$:
 
-$$2T_{AD}\sin 60^\circ = 100 \implies T_{AD} = \frac⧃LB⧄100⧃RB⧄⧃LB⧄2\sin 60^\circ⧃RB⧄ = \frac⧃LB⧄100⧃RB⧄⧃LB⧄\sqrt{3}⧃RB⧄ \approx 57.7\;\mathrm{N}$$
+$$2T_{AD}\sin 60^\circ = 100 \implies T_{AD} = \frac◆LB◆100◆RB◆◆LB◆2\sin 60^\circ◆RB◆ = \frac◆LB◆100◆RB◆◆LB◆\sqrt{3}◆RB◆ \approx 57.7\;\mathrm{N}$$
 
 Both $AD$ and $AE$ are in **tension** (pulling away from $A$).
 
@@ -357,9 +357,9 @@ the composite lamina.
 Square: area $= 100$, centre at $(5, 5)$.
 Triangle: area $= 30$, centre at $\left(\dfrac{10}{3}, 3\right)$ (one-third from the base).
 
-$$\bar{x} = \frac⧃LB⧄100 \times 5 + 30 \times \frac{10}{3}⧃RB⧄⧃LB⧄130⧃RB⧄ = \frac{500 + 100}{130} = \frac{600}{130} \approx 4.62\;\mathrm{cm}$$
+$$\bar{x} = \frac◆LB◆100 \times 5 + 30 \times \frac{10}{3}◆RB◆◆LB◆130◆RB◆ = \frac{500 + 100}{130} = \frac{600}{130} \approx 4.62\;\mathrm{cm}$$
 
-$$\bar{y} = \frac⧃LB⧄100 \times 5 + 30 \times 3⧃RB⧄⧃LB⧄130⧃RB⧄ = \frac{500 + 90}{130} = \frac{590}{130} \approx 4.54\;\mathrm{cm}$$
+$$\bar{y} = \frac◆LB◆100 \times 5 + 30 \times 3◆RB◆◆LB◆130◆RB◆ = \frac{500 + 90}{130} = \frac{590}{130} \approx 4.54\;\mathrm{cm}$$
 
 </details>
 
@@ -382,7 +382,7 @@ Taking moments about the foot:
 
 $R_w \times 8\sin 55^\circ - 25g \times 4\cos 55^\circ - 75g \times 5\cos 55^\circ = 0$
 
-$R_w = \frac⧃LB⧄g(100 + 375)\cos 55^\circ⧃RB⧄⧃LB⧄8\sin 55^\circ⧃RB⧄ = \frac⧃LB⧄475g\cot 55^\circ⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄475 \times 9.8 \times 0.7002⧃RB⧄⧃LB⧄8⧃RB⧄$
+$R_w = \frac◆LB◆g(100 + 375)\cos 55^\circ◆RB◆◆LB◆8\sin 55^\circ◆RB◆ = \frac◆LB◆475g\cot 55^\circ◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆475 \times 9.8 \times 0.7002◆RB◆◆LB◆8◆RB◆$
 
 $R_w \approx 407.5\;\mathrm{N}$
 
@@ -415,12 +415,12 @@ the string.
 
 The string $BC$ has length $\sqrt{9 + 4} = \sqrt{13}\;\mathrm{m}$.
 
-$\sin\theta = \dfrac⧃LB⧄2⧃RB⧄⧃LB⧄\sqrt{13}⧃RB⧄$ where $\theta$ is the angle between the string and the rod.
+$\sin\theta = \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{13}◆RB◆$ where $\theta$ is the angle between the string and the rod.
 
 Taking moments about $A$:
 
-$T \times 3 \times \dfrac⧃LB⧄2⧃RB⧄⧃LB⧄\sqrt{13}⧃RB⧄ - 80 \times 1.5 - 120 \times 3 = 0$
+$T \times 3 \times \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{13}◆RB◆ - 80 \times 1.5 - 120 \times 3 = 0$
 
-$T = \frac⧃LB⧄120 + 360⧃RB⧄⧃LB⧄6/\sqrt{13}⧃RB⧄ = \frac⧃LB⧄480\sqrt{13}⧃RB⧄⧃LB⧄6⧃RB⧄ = 80\sqrt{13} \approx 288.4\;\mathrm{N}$
+$T = \frac◆LB◆120 + 360◆RB◆◆LB◆6/\sqrt{13}◆RB◆ = \frac◆LB◆480\sqrt{13}◆RB◆◆LB◆6◆RB◆ = 80\sqrt{13} \approx 288.4\;\mathrm{N}$
 
 </details>

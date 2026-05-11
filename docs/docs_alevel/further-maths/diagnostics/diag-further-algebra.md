@@ -16,7 +16,7 @@ hide_table_of_contents: true
 
 (a) $f(1) = 1 - 3 + 4 - 2 = 0 \checkmark$. $f(x) = (x-1)(x^2 - 2x + 2)$.
 
-(b) $x^2 - 2x + 2 = 0$. $x = \frac⧃LB⧄2 \pm \sqrt{4-8}⧃RB⧄⧃LB⧄2⧃RB⧄ = 1 \pm i$. So $\beta = 1+i$, $\gamma = 1-i$.
+(b) $x^2 - 2x + 2 = 0$. $x = \frac◆LB◆2 \pm \sqrt{4-8}◆RB◆◆LB◆2◆RB◆ = 1 \pm i$. So $\beta = 1+i$, $\gamma = 1-i$.
 
 (c) $\alpha^2 + \beta^2 + \gamma^2 = (\alpha+\beta+\gamma)^2 - 2(\alpha\beta+\alpha\gamma+\beta\gamma)$.
 By Vieta's: $\alpha+\beta+\gamma = 3$, $\alpha\beta+\alpha\gamma+\beta\gamma = 4$, $\alpha\beta\gamma = 2$.
@@ -50,7 +50,7 @@ $= \frac{1}{2}\left(1 + \frac{1}{2} - \frac{1}{n+1} - \frac{1}{n+2}\right) = \fr
 
 **Solution:**
 
-**Base case ($n = 1$):** LHS $= 1^3 = 1$. RHS $= \frac⧃LB⧄1 \times 4⧃RB⧄⧃LB⧄4⧃RB⧄ = 1$. LHS $=$ RHS $\checkmark$.
+**Base case ($n = 1$):** LHS $= 1^3 = 1$. RHS $= \frac◆LB◆1 \times 4◆RB◆◆LB◆4◆RB◆ = 1$. LHS $=$ RHS $\checkmark$.
 
 **Inductive hypothesis:** Assume $\sum_{r=1}^{k} r^3 = \frac{k^2(k+1)^2}{4}$ for some $k \ge 1$.
 
@@ -84,7 +84,7 @@ $= 0 - 0 + 3(-q) = -3q$.
 
 **Solution:**
 
-(a) **Base case ($n=1$):** LHS $= \frac⧃LB⧄1⧃RB⧄⧃LB⧄1 \cdot 2 \cdot 3⧃RB⧄ = \frac{1}{6}$. RHS $= \frac⧃LB⧄1 \cdot 4⧃RB⧄⧃LB⧄4 \cdot 2 \cdot 3⧃RB⧄ = \frac{1}{6}$. $\checkmark$.
+(a) **Base case ($n=1$):** LHS $= \frac◆LB◆1◆RB◆◆LB◆1 \cdot 2 \cdot 3◆RB◆ = \frac{1}{6}$. RHS $= \frac◆LB◆1 \cdot 4◆RB◆◆LB◆4 \cdot 2 \cdot 3◆RB◆ = \frac{1}{6}$. $\checkmark$.
 
 **Hypothesis:** Assume true for $n = k$.
 

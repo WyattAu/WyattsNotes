@@ -23,11 +23,11 @@ A coil of $N = 500$ turns and radius $r = 0.05\,\text{m}$ is placed in a uniform
 
 **Solution:**
 
-(a) By Faraday's law: $\varepsilon = -N\frac⧃LB⧄\Delta\Phi⧃RB⧄⧃LB⧄\Delta t⧃RB⧄$
+(a) By Faraday's law: $\varepsilon = -N\frac◆LB◆\Delta\Phi◆RB◆◆LB◆\Delta t◆RB◆$
 
 $$\Delta\Phi = \Phi_{\text{final}} - \Phi_{\text{initial}} = 0 - BA = -B\pi r^2 = -0.40 \times \pi \times (0.05)^2 = -3.14 \times 10^{-3}\,\text{Wb}$$
 
-$$|\varepsilon| = N\frac⧃LB⧄|\Delta\Phi|⧃RB⧄⧃LB⧄\Delta t⧃RB⧄ = 500 \times \frac⧃LB⧄3.14 \times 10^{-3}⧃RB⧄⧃LB⧄0.10⧃RB⧄ = 15.7\,\text{V}$$
+$$|\varepsilon| = N\frac◆LB◆|\Delta\Phi|◆RB◆◆LB◆\Delta t◆RB◆ = 500 \times \frac◆LB◆3.14 \times 10^{-3}◆RB◆◆LB◆0.10◆RB◆ = 15.7\,\text{V}$$
 
 (b) By Lenz's law, the induced current opposes the change in flux. Since the flux (into the page, say) is decreasing, the induced current flows to maintain the flux by creating its own field in the same direction (into the page). By the right-hand grip rule, the current flows **clockwise** when viewed from the direction of the original field.
 
@@ -103,9 +103,9 @@ Since $Q = CV = (\varepsilon_0 A/d) \times Ed = \varepsilon_0 AE$:
 
 $$I = \frac{dQ}{dt} = \varepsilon_0 A \frac{dE}{dt}$$
 
-$$\frac{dE}{dt} = \frac⧃LB⧄I⧃RB⧄⧃LB⧄\varepsilon_0 A⧃RB⧄ = \frac⧃LB⧄2.0⧃RB⧄⧃LB⧄8.85 \times 10^{-12} \times 0.0314⧃RB⧄ = \frac⧃LB⧄2.0⧃RB⧄⧃LB⧄2.779 \times 10^{-13}⧃RB⧄ = 7.20 \times 10^{12}\,\text{V}\,\text{m}^{-1}\,\text{s}^{-1}$$
+$$\frac{dE}{dt} = \frac◆LB◆I◆RB◆◆LB◆\varepsilon_0 A◆RB◆ = \frac◆LB◆2.0◆RB◆◆LB◆8.85 \times 10^{-12} \times 0.0314◆RB◆ = \frac◆LB◆2.0◆RB◆◆LB◆2.779 \times 10^{-13}◆RB◆ = 7.20 \times 10^{12}\,\text{V}\,\text{m}^{-1}\,\text{s}^{-1}$$
 
-(b) Displacement current: $I_d = \varepsilon_0 \frac⧃LB⧄d\Phi_E⧃RB⧄⧃LB⧄dt⧃RB⧄ = \varepsilon_0 A \frac{dE}{dt}$
+(b) Displacement current: $I_d = \varepsilon_0 \frac◆LB◆d\Phi_E◆RB◆◆LB◆dt◆RB◆ = \varepsilon_0 A \frac{dE}{dt}$
 
 $$I_d = 8.85 \times 10^{-12} \times 0.0314 \times 7.20 \times 10^{12} = 2.0\,\text{A}$$
 
@@ -129,7 +129,7 @@ An LC circuit has $L = 1.0\,\mu\text{H}$ and $C = 1.0\,\text{pF}$.
 
 **Solution:**
 
-(a) $f = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2\pi\sqrt{LC}⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2\pi\sqrt{1.0 \times 10^{-6} \times 1.0 \times 10^{-12}}⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2\pi\sqrt{10^{-18}}⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2\pi \times 10^{-9}⧃RB⧄ = 1.59 \times 10^8\,\text{Hz} = 159\,\text{MHz}$
+(a) $f = \frac◆LB◆1◆RB◆◆LB◆2\pi\sqrt{LC}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\pi\sqrt{1.0 \times 10^{-6} \times 1.0 \times 10^{-12}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\pi\sqrt{10^{-18}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\pi \times 10^{-9}◆RB◆ = 1.59 \times 10^8\,\text{Hz} = 159\,\text{MHz}$
 
 This is in the VHF radio band.
 

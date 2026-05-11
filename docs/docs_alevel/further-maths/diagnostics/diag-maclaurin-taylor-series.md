@@ -42,7 +42,7 @@ This is a geometric series with ratio $x$. Converges when $|x| \lt 1$. Radius of
 (d) Substitute $x \to -x^2$: $\frac{1}{1+x^2} = 1 - x^2 + x^4 - x^6 + \cdots$ (valid for $|x| \lt 1$).
 
 ### UT-3: Series Manipulation
-**Question:** (a) Find the Maclaurin series of $\frac{e^x - 1}{x}$ up to $x^3$. (b) Find the Maclaurin series of $x\ln(1+x)$ up to $x^4$. (c) Find the Maclaurin series of $\cos^2 x$ up to $x^4$ using the identity $\cos^2 x = \frac⧃LB⧄1 + \cos 2x⧃RB⧄⧃LB⧄2⧃RB⧄$. (d) Evaluate $\lim_{x \to 0}\frac{e^x - 1 - x}{x^2}$ using series.
+**Question:** (a) Find the Maclaurin series of $\frac{e^x - 1}{x}$ up to $x^3$. (b) Find the Maclaurin series of $x\ln(1+x)$ up to $x^4$. (c) Find the Maclaurin series of $\cos^2 x$ up to $x^4$ using the identity $\cos^2 x = \frac◆LB◆1 + \cos 2x◆RB◆◆LB◆2◆RB◆$. (d) Evaluate $\lim_{x \to 0}\frac{e^x - 1 - x}{x^2}$ using series.
 
 **Solution:**
 
@@ -78,12 +78,12 @@ $\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \cd
 (d) $f(0) = \ln 0$ is undefined, so $f^{(n)}(0)$ does not exist for $\ln x$. The Maclaurin series requires the function and all its derivatives to be defined at $x = 0$.
 
 ### IT-2: Series for Integration (with Further Calculus)
-**Question:** (a) Use series to evaluate $\int_0^{0.5} \frac⧃LB⧄\sin x⧃RB⧄⧃LB⧄x⧃RB⧄\,dx$ correct to 6 decimal places. (b) Use the series for $e^x$ to find the Maclaurin series of $\frac{e^x - e^{-x}}{2}$ (hyperbolic sine, $\sinh x$). (c) Evaluate $\int_0^{0.2} \sinh x\,dx$ using the series. (d) Find the Maclaurin series of $e^{x^2}$ and use it to find $\int_0^{0.5} e^{x^2}\,dx$.
+**Question:** (a) Use series to evaluate $\int_0^{0.5} \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆\,dx$ correct to 6 decimal places. (b) Use the series for $e^x$ to find the Maclaurin series of $\frac{e^x - e^{-x}}{2}$ (hyperbolic sine, $\sinh x$). (c) Evaluate $\int_0^{0.2} \sinh x\,dx$ using the series. (d) Find the Maclaurin series of $e^{x^2}$ and use it to find $\int_0^{0.5} e^{x^2}\,dx$.
 
 **Solution:**
 
-(a) $\sin x = x - x^3/6 + x^5/120 - \cdots$. $\frac⧃LB⧄\sin x⧃RB⧄⧃LB⧄x⧃RB⧄ = 1 - x^2/6 + x^4/120 - \cdots$.
-$\int_0^{0.5} \frac⧃LB⧄\sin x⧃RB⧄⧃LB⧄x⧃RB⧄\,dx = \left[x - \frac{x^3}{18} + \frac{x^5}{600}\right]_0^{0.5} = 0.5 - \frac{0.125}{18} + \frac{0.03125}{600}$
+(a) $\sin x = x - x^3/6 + x^5/120 - \cdots$. $\frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆ = 1 - x^2/6 + x^4/120 - \cdots$.
+$\int_0^{0.5} \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆\,dx = \left[x - \frac{x^3}{18} + \frac{x^5}{600}\right]_0^{0.5} = 0.5 - \frac{0.125}{18} + \frac{0.03125}{600}$
 $= 0.5 - 0.006944 + 0.000052 = 0.493108 \approx 0.493108$.
 
 (b) $e^x = 1 + x + x^2/2! + x^3/3! + \cdots$. $e^{-x} = 1 - x + x^2/2! - x^3/3! + \cdots$.
@@ -97,16 +97,16 @@ $\int_0^{0.5} e^{x^2}\,dx = \left[x + \frac{x^3}{3} + \frac{x^5}{10} + \frac{x^7
 $= 0.5 + 0.04167 + 0.003125 + 0.000186 = 0.54498$.
 
 ### IT-3: Convergence and Applications (with Complex Numbers)
-**Question:** (a) Find the Maclaurin series of $(1-x)^{-1/2}$ and determine its radius of convergence. (b) Use the series to approximate $\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{0.9}⧃RB⧄$ correct to 5 decimal places. (c) The series $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ converges for all $x$. Use this to show that $\sum_{n=0}^{\infty} \frac{(-1)^n}{n!} = \frac{1}{e}$. (d) Explain why $\sum_{n=1}^{\infty} \frac{1}{n}$ diverges while $\sum_{n=1}^{\infty} \frac{(-1)^n}{n}$ converges.
+**Question:** (a) Find the Maclaurin series of $(1-x)^{-1/2}$ and determine its radius of convergence. (b) Use the series to approximate $\frac◆LB◆1◆RB◆◆LB◆\sqrt{0.9}◆RB◆$ correct to 5 decimal places. (c) The series $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ converges for all $x$. Use this to show that $\sum_{n=0}^{\infty} \frac{(-1)^n}{n!} = \frac{1}{e}$. (d) Explain why $\sum_{n=1}^{\infty} \frac{1}{n}$ diverges while $\sum_{n=1}^{\infty} \frac{(-1)^n}{n}$ converges.
 
 **Solution:**
 
-(a) $(1-x)^{-1/2} = 1 + \frac{1}{2}x + \frac⧃LB⧄1 \cdot 3⧃RB⧄⧃LB⧄2 \cdot 4⧃RB⧄x^2 + \frac⧃LB⧄1 \cdot 3 \cdot 5⧃RB⧄⧃LB⧄2 \cdot 4 \cdot 6⧃RB⧄x^3 + \frac⧃LB⧄1 \cdot 3 \cdot 5 \cdot 7⧃RB⧄⧃LB⧄2 \cdot 4 \cdot 6 \cdot 8⧃RB⧄x^4 + \cdots$
+(a) $(1-x)^{-1/2} = 1 + \frac{1}{2}x + \frac◆LB◆1 \cdot 3◆RB◆◆LB◆2 \cdot 4◆RB◆x^2 + \frac◆LB◆1 \cdot 3 \cdot 5◆RB◆◆LB◆2 \cdot 4 \cdot 6◆RB◆x^3 + \frac◆LB◆1 \cdot 3 \cdot 5 \cdot 7◆RB◆◆LB◆2 \cdot 4 \cdot 6 \cdot 8◆RB◆x^4 + \cdots$
 $= 1 + \frac{x}{2} + \frac{3x^2}{8} + \frac{5x^3}{16} + \frac{35x^4}{128} + \cdots$
 
 Radius of convergence: $|x| \lt 1$ (from the binomial series formula, valid when $|x| \lt 1$).
 
-(b) With $x = 0.1$: $\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{0.9}⧃RB⧄ = 1 + 0.05 + 0.00375 + 0.0003125 + 0.00002734 + \cdots = 1.054090 \approx 1.05409$.
+(b) With $x = 0.1$: $\frac◆LB◆1◆RB◆◆LB◆\sqrt{0.9}◆RB◆ = 1 + 0.05 + 0.00375 + 0.0003125 + 0.00002734 + \cdots = 1.054090 \approx 1.05409$.
 
 (c) $\sum_{n=0}^{\infty} \frac{x^n}{n!} = e^x$. Setting $x = -1$: $\sum_{n=0}^{\infty} \frac{(-1)^n}{n!} = e^{-1} = \frac{1}{e}$.
 

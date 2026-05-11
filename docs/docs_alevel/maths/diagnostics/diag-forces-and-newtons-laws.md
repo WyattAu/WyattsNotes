@@ -147,7 +147,7 @@ A car of mass $1200$ kg tows a trailer of mass $400$ kg along a horizontal road 
 
 $$F_{\text{net}} = 2400 - 200 - 100 = 2100 \text{ N}$$
 
-$$a = \frac⧃LB⧄F_{\text{net}}⧃RB⧄⧃LB⧄m_{\text{total}}⧃RB⧄ = \frac{2100}{1600} = 1.3125 \text{ m/s}^2$$
+$$a = \frac◆LB◆F_{\text{net}}◆RB◆◆LB◆m_{\text{total}}◆RB◆ = \frac{2100}{1600} = 1.3125 \text{ m/s}^2$$
 
 For the trailer alone (tension $T$ pulls it forward, resistance opposes):
 
@@ -281,7 +281,7 @@ $$\frac{3T}{5} \times 4 - 120 \times 2 - 80 \times 3 = 0$$
 
 $$\frac{12T}{5} = 240 + 240 = 480$$
 
-$$T = \frac⧃LB⧄480 \times 5⧃RB⧄⧃LB⧄12⧃RB⧄ = 200 \text{ N}$$
+$$T = \frac◆LB◆480 \times 5◆RB◆◆LB◆12◆RB◆ = 200 \text{ N}$$
 
 Resolving horizontally at $A$ (the hinge reaction has components $H_A$ horizontal and $V_A$ vertical):
 
@@ -347,10 +347,10 @@ Magnitude: $\lvert\mathbf{F}_{\text{resultant}}\rvert = \sqrt{25 + 4} = \sqrt{29
 
 Direction: $\theta = \arctan\!\left(\frac{2}{5}\right) \approx 21.8°$ above the positive $x$-axis.
 
-**(c)** By Newton's Second Law: $\mathbf{a} = \frac⧃LB⧄\mathbf{F}⧃RB⧄⧃LB⧄m⧃RB⧄ = \frac{1}{3}\begin{pmatrix} 5 \\ 2 \end{pmatrix} = \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix}$ m/s$^2$.
+**(c)** By Newton's Second Law: $\mathbf{a} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆m◆RB◆ = \frac{1}{3}\begin{pmatrix} 5 \\ 2 \end{pmatrix} = \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix}$ m/s$^2$.
 
 The velocity after $4$ seconds (starting from rest):
 
 $$\mathbf{v} = \mathbf{u} + \mathbf{a}t = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix} \times 4 = \begin{pmatrix} 20/3 \\ 8/3 \end{pmatrix} \text{ m/s}$$
 
-Speed $= \sqrt{(20/3)^2 + (8/3)^2} = \sqrt⧃LB⧄\frac{400 + 64}{9}⧃RB⧄ = \sqrt⧃LB⧄\frac{464}{9}⧃RB⧄ = \frac⧃LB⧄2\sqrt{116}⧃RB⧄⧃LB⧄3⧃RB⧄ \approx 7.18$ m/s.
+Speed $= \sqrt{(20/3)^2 + (8/3)^2} = \sqrt◆LB◆\frac{400 + 64}{9}◆RB◆ = \sqrt◆LB◆\frac{464}{9}◆RB◆ = \frac◆LB◆2\sqrt{116}◆RB◆◆LB◆3◆RB◆ \approx 7.18$ m/s.

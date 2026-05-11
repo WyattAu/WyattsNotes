@@ -25,9 +25,9 @@ A battery has EMF $\varepsilon = 12.0\,\text{V}$ and internal resistance $r = 2.
 
 (a) Current: $I = \varepsilon/(R + r)$
 
-Power to $R$: $P = I^2R = \frac⧃LB⧄\varepsilon^2 R⧃RB⧄⧃LB⧄(R + r)^2⧃RB⧄$
+Power to $R$: $P = I^2R = \frac◆LB◆\varepsilon^2 R◆RB◆◆LB◆(R + r)^2◆RB◆$
 
-To maximise: $\frac{dP}{dR} = \frac⧃LB⧄\varepsilon^2(R + r)^2 - \varepsilon^2 R \times 2(R + r)⧃RB⧄⧃LB⧄(R + r)^4⧃RB⧄ = 0$
+To maximise: $\frac{dP}{dR} = \frac◆LB◆\varepsilon^2(R + r)^2 - \varepsilon^2 R \times 2(R + r)◆RB◆◆LB◆(R + r)^4◆RB◆ = 0$
 
 $$\varepsilon^2(R + r)[(R + r) - 2R] = 0$$
 $$R + r - 2R = 0 \Rightarrow R = r = 2.0\,\Omega$$
@@ -71,7 +71,7 @@ A potential divider consists of two resistors $R_1 = 10\,\text{k}\Omega$ and $R_
 
 (b) With load, $R_2$ and $R_L$ are in parallel:
 
-$$R_{\text{parallel}} = \frac{R_2 R_L}{R_2 + R_L} = \frac⧃LB⧄20 \times 10⧃RB⧄⧃LB⧄30⧃RB⧄ = 6.667\,\text{k}\Omega$$
+$$R_{\text{parallel}} = \frac{R_2 R_L}{R_2 + R_L} = \frac◆LB◆20 \times 10◆RB◆◆LB◆30◆RB◆ = 6.667\,\text{k}\Omega$$
 
 $$V_{\text{out}} = 15.0 \times \frac{6.667}{10 + 6.667} = 15.0 \times \frac{6.667}{16.667} = 6.00\,\text{V}$$
 
@@ -170,7 +170,7 @@ A solar panel produces an EMF of $18.0\,\text{V}$ and has internal resistance $2
 
 (a) The capacitor is in parallel with the battery, so the capacitor charges to the battery terminal voltage. The steady-state charging current is determined by the series circuit of solar panel, internal resistances, and battery:
 
-$$I = \frac⧃LB⧄\varepsilon_{\text{panel}} - V_{\text{battery terminal}}⧃RB⧄⧃LB⧄r_{\text{panel}}⧃RB⧄$$
+$$I = \frac◆LB◆\varepsilon_{\text{panel}} - V_{\text{battery terminal}}◆RB◆◆LB◆r_{\text{panel}}◆RB◆$$
 
 In steady state (capacitor fully charged):
 
@@ -225,13 +225,13 @@ Internal resistance (replace the $24\,\text{V}$ source with a short circuit, and
 
 $r = 1\,\Omega$ and $R_1 = 5\,\Omega$ are in series $= 6\,\Omega$. This combination is in parallel with $R_2 = 10\,\Omega$.
 
-$$R_{\text{Th}} = \frac⧃LB⧄6 \times 10⧃RB⧄⧃LB⧄6 + 10⧃RB⧄ = \frac{60}{16} = 3.75\,\Omega$$
+$$R_{\text{Th}} = \frac◆LB◆6 \times 10◆RB◆◆LB◆6 + 10◆RB◆ = \frac{60}{16} = 3.75\,\Omega$$
 
 Thevenin equivalent: $V_{\text{Th}} = 15\,\text{V}$, $R_{\text{Th}} = 3.75\,\Omega$.
 
 (b) Current through $R_3$:
 
-$$I_3 = \frac⧃LB⧄V_{\text{Th}}⧃RB⧄⧃LB⧄R_{\text{Th}} + R_3⧃RB⧄ = \frac{15}{3.75 + 15} = \frac{15}{18.75} = 0.800\,\text{A}$$
+$$I_3 = \frac◆LB◆V_{\text{Th}}◆RB◆◆LB◆R_{\text{Th}} + R_3◆RB◆ = \frac{15}{3.75 + 15} = \frac{15}{18.75} = 0.800\,\text{A}$$
 
 (c) We need $I_3 \gt 0.8\,\text{A}$:
 
@@ -268,7 +268,7 @@ Percentage error: $\frac{0.1915 - 0.1895}{0.1915} \times 100 = 1.04\%$
 
 The ammeter under-reads by about $1\%$ because it adds its own resistance to the circuit.
 
-(c) With voltmeter in parallel: $R \parallel R_V = \frac⧃LB⧄47 \times 5000⧃RB⧄⧃LB⧄47 + 5000⧃RB⧄ = \frac{235000}{5047} = 46.56\,\Omega$
+(c) With voltmeter in parallel: $R \parallel R_V = \frac◆LB◆47 \times 5000◆RB◆◆LB◆47 + 5000◆RB◆ = \frac{235000}{5047} = 46.56\,\Omega$
 
 The voltmeter draws current, reducing the voltage across $R$. With an ideal supply (negligible internal resistance) and only the parallel combination as the load:
 

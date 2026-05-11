@@ -72,7 +72,7 @@ all, not how many hours).
 
 **Reduction in corporation tax** to incentivise investment:
 
-$$I = I(r, \tau_c) \quad \mathrm{where } \frac⧃LB⧄\partial I⧃RB⧄⧃LB⧄\partial \tau_c⧃RB⧄ < 0$$
+$$I = I(r, \tau_c) \quad \mathrm{where } \frac◆LB◆\partial I◆RB◆◆LB◆\partial \tau_c◆RB◆ < 0$$
 
 A lower corporation tax rate $\tau_c$ increases the after-tax return on investment, encouraging
 firms to invest in capital. The UK reduced corporation tax from 28% (2010) to 19% (2017), partially
@@ -366,7 +366,7 @@ Market-oriented policies tend to be most effective when:
 - Externalities are minimal (private and social costs/benefits are aligned)
 - Institutions are strong (property rights, rule of law, contract enforcement)
 
-$$\mathrm{Market efficiency} \propto \frac⧃LB⧄\mathrm{Competition} \times \mathrm{Information} \times \mathrm{Institutions}⧃RB⧄⧃LB⧄\mathrm{Externalities} \times \mathrm{Market power}⧃RB⧄$$
+$$\mathrm{Market efficiency} \propto \frac◆LB◆\mathrm{Competition} \times \mathrm{Information} \times \mathrm{Institutions}◆RB◆◆LB◆\mathrm{Externalities} \times \mathrm{Market power}◆RB◆$$
 
 Interventionist policies tend to be most effective when:
 
@@ -377,7 +377,7 @@ Interventionist policies tend to be most effective when:
 - Equity objectives require redistribution (regional policy, progressive education funding)
 - The government has a strong track record of effective implementation
 
-$$\mathrm{Intervention effectiveness} \propto \frac⧃LB⧄\mathrm{Market failure severity} \times \mathrm{State capacity}⧃RB⧄⧃LB⧄\mathrm{Government failure risk} \times \mathrm{Implementation cost}⧃RB⧄$$
+$$\mathrm{Intervention effectiveness} \propto \frac◆LB◆\mathrm{Market failure severity} \times \mathrm{State capacity}◆RB◆◆LB◆\mathrm{Government failure risk} \times \mathrm{Implementation cost}◆RB◆$$
 
 The crucial insight is that **the optimal policy mix varies by sector and context**. Financial
 services may benefit most from deregulation and competition, while education and infrastructure
@@ -485,9 +485,9 @@ therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE)
 
 The key metric for evaluating supply-side policies is **productivity growth**:
 
-$$\mathrm{Labour productivity} = \frac{Y}{L} = \frac⧃LB⧄\mathrm{Output}⧃RB⧄⧃LB⧄\mathrm{Hours worked}⧃RB⧄$$
+$$\mathrm{Labour productivity} = \frac{Y}{L} = \frac◆LB◆\mathrm{Output}◆RB◆◆LB◆\mathrm{Hours worked}◆RB◆$$
 
-$$\mathrm{Total factor productivity (TFP)} = \frac⧃LB⧄Y⧃RB⧄⧃LB⧄K^\alpha L^{1-\alpha}⧃RB⧄$$
+$$\mathrm{Total factor productivity (TFP)} = \frac◆LB◆Y◆RB◆◆LB◆K^\alpha L^{1-\alpha}◆RB◆$$
 
 TFP captures the efficiency with which capital and labour are combined — it reflects technology,
 institutions, and know-how. Long-run growth in living standards depends primarily on TFP growth.
@@ -770,7 +770,7 @@ $$R(62.5\%) = 62.5(1000 - 8 \times 62.5) = 62.5 \times 500 = 31\,250$$
 - The IFS estimates the UK income tax revenue-maximising rate is approximately 55-60%, well above the current rate. This means income tax cuts would reduce revenue.
 
 **Elasticity condition for the Laffer effect:**
-$$\frac⧃LB⧄\Delta R⧃RB⧄⧃LB⧄R⧃RB⧄ = \frac⧃LB⧄\Delta t⧃RB⧄⧃LB⧄t⧃RB⧄ + \frac⧃LB⧄\Delta B⧃RB⧄⧃LB⧄B⧃RB⧄ = \frac⧃LB⧄\Delta t⧃RB⧄⧃LB⧄t⧃RB⧄(1 + \varepsilon_B)$$
+$$\frac◆LB◆\Delta R◆RB◆◆LB◆R◆RB◆ = \frac◆LB◆\Delta t◆RB◆◆LB◆t◆RB◆ + \frac◆LB◆\Delta B◆RB◆◆LB◆B◆RB◆ = \frac◆LB◆\Delta t◆RB◆◆LB◆t◆RB◆(1 + \varepsilon_B)$$
 
 For a tax cut to increase revenue, we need $1 + \varepsilon_B < 0$, i.e., $\varepsilon_B < -1$. The tax base must be elastic (absolute value greater than 1). Empirical evidence suggests income tax elasticity in the UK is approximately -0.3 to -0.5 -- well below the threshold for a Laffer effect.
 
@@ -805,12 +805,12 @@ The degree holder earns approximately 23.5% more than the A-level holder.
 - Payback period: $111\,750 / 6\,580 = 17$ years (ignoring discounting).
 
 **Present value calculation (discount rate 5%):**
-$$PV = \sum_{t=4}^{43} \frac{6580}{1.05^t} = 6580 \times \frac⧃LB⧄1 - 1.05^{-40}⧃RB⧄⧃LB⧄0.05 \times 1.05^3⧃RB⧄ = 6580 \times 15.046 = \text{GBP } 99\,003$$
+$$PV = \sum_{t=4}^{43} \frac{6580}{1.05^t} = 6580 \times \frac◆LB◆1 - 1.05^{-40}◆RB◆◆LB◆0.05 \times 1.05^3◆RB◆ = 6580 \times 15.046 = \text{GBP } 99\,003$$
 
 $$NPV = 99\,003 - 111\,750 = -\text{GBP } 12\,747$$
 
 At a 5% discount rate, the NPV is negative. At 3%:
-$$PV = 6580 \times \frac⧃LB⧄1 - 1.03^{-40}⧃RB⧄⧃LB⧄0.03 \times 1.03^3⧃RB⧄ = 6580 \times 21.35 = \text{GBP } 140\,483$$
+$$PV = 6580 \times \frac◆LB◆1 - 1.03^{-40}◆RB◆◆LB◆0.03 \times 1.03^3◆RB◆ = 6580 \times 21.35 = \text{GBP } 140\,483$$
 $$NPV = 140\,483 - 111\,750 = +\text{GBP } 28\,733$$
 
 The investment is sensitive to the discount rate. Lower discount rates (reflecting social rather than private returns, including positive externalities of education) make the investment more attractive.
@@ -886,7 +886,7 @@ Year 3: Allowance = $67\,240 \times 0.18 = 12\,103$. Tax saved = $12\,103 \times
 Year 4: Allowance = $55\,137 \times 0.18 = 9\,925$. Tax saved = $9\,925 \times 0.19 = 1\,886$.
 Year 5: Allowance = $45\,212 \times 0.18 = 8\,138$. Tax saved = $8\,138 \times 0.19 = 1\,546$.
 
-$$NPV = \sum_{t=1}^{5} \frac{20\,250}{1.10^t} + \sum_{t=1}^{5} \frac⧃LB⧄\text{Tax saved}_t⧃RB⧄⧃LB⧄1.10^t⧃RB⧄ - 100\,000$$
+$$NPV = \sum_{t=1}^{5} \frac{20\,250}{1.10^t} + \sum_{t=1}^{5} \frac◆LB◆\text{Tax saved}_t◆RB◆◆LB◆1.10^t◆RB◆ - 100\,000$$
 
 $$= 20\,250 \times 3.791 + \frac{3\,420}{1.10} + \frac{2\,804}{1.10^2} + \frac{2\,300}{1.10^3} + \frac{1\,886}{1.10^4} + \frac{1\,546}{1.10^5} - 100\,000$$
 
@@ -1001,9 +1001,9 @@ The Laffer effect is more relevant for capital gains tax and corporate tax, wher
 - Environmental damage during construction: GBP 2 billion (one-off)
 
 **NPV (discount rate 3.5%, 60-year life):**
-PV of benefits: $6.5 \times \frac⧃LB⧄1 - 1.035^{-60}⧃RB⧄⧃LB⧄0.035 \times 1.035^{15}⧃RB⧄ = 6.5 \times 14.6 = 94.9$.
-PV of maintenance: $0.3 \times \frac⧃LB⧄1 - 1.035^{-60}⧃RB⧄⧃LB⧄0.035 \times 1.035^{15}⧃RB⧄ = 0.3 \times 14.6 = 4.4$.
-PV of construction: $50 \times \frac⧃LB⧄1 - 1.035^{-15}⧃RB⧄⧃LB⧄0.035 \times 15⧃RB⧄ \times 15 = 50 \times 11.2 = 55.8$ (assuming even spread).
+PV of benefits: $6.5 \times \frac◆LB◆1 - 1.035^{-60}◆RB◆◆LB◆0.035 \times 1.035^{15}◆RB◆ = 6.5 \times 14.6 = 94.9$.
+PV of maintenance: $0.3 \times \frac◆LB◆1 - 1.035^{-60}◆RB◆◆LB◆0.035 \times 1.035^{15}◆RB◆ = 0.3 \times 14.6 = 4.4$.
+PV of construction: $50 \times \frac◆LB◆1 - 1.035^{-15}◆RB◆◆LB◆0.035 \times 15◆RB◆ \times 15 = 50 \times 11.2 = 55.8$ (assuming even spread).
 PV of environmental damage: $2 / 1.035^7 = 1.6$ (midpoint of construction).
 
 **NPV = 94.9 - 4.4 - 55.8 - 1.6 = 33.1 billion.**

@@ -743,7 +743,7 @@ $MSC = 30 + 0.5Q + 0.2Q^2$.
 $150 - Q = 30 + 0.5Q + 0.2Q^2 \Rightarrow 0.2Q^2 + 1.5Q - 120 = 0$.
 
 Using the quadratic formula:
-$Q^* = \frac⧃LB⧄-1.5 + \sqrt{2.25 + 96}⧃RB⧄⧃LB⧄0.4⧃RB⧄ = \frac⧃LB⧄-1.5 + \sqrt{98.25}⧃RB⧄⧃LB⧄0.4⧃RB⧄ = \frac{-1.5 + 9.912}{0.4} = \frac{8.412}{0.4} = 21.03$.
+$Q^* = \frac◆LB◆-1.5 + \sqrt{2.25 + 96}◆RB◆◆LB◆0.4◆RB◆ = \frac◆LB◆-1.5 + \sqrt{98.25}◆RB◆◆LB◆0.4◆RB◆ = \frac{-1.5 + 9.912}{0.4} = \frac{8.412}{0.4} = 21.03$.
 
 $P^* = 150 - 21.03 = 128.97$.
 
@@ -786,7 +786,7 @@ $= \frac{1}{2}(7.5)(150 - 120) = \frac{1}{2}(7.5)(30) = 112.5$
 
 **Social optimum (joint profit maximisation):**
 Total profit $\pi = p \cdot T(L) - cL = 50(100L - L^2) - 200L = 5000L - 50L^2 - 200L = 4800L - 50L^2$.
-$\frac⧃LB⧄d\pi⧃RB⧄⧃LB⧄dL⧃RB⧄ = 4800 - 100L = 0 \Rightarrow L^* = 48$ boats.
+$\frac◆LB◆d\pi◆RB◆◆LB◆dL◆RB◆ = 4800 - 100L = 0 \Rightarrow L^* = 48$ boats.
 
 **Open access equilibrium (each boat enters until average revenue equals cost):**
 Average catch per boat $= \frac{T}{L} = 100 - L$.
@@ -933,7 +933,7 @@ $\pi = (pqF - c) \times r(1 - F/K)/q = (2F - 100) \times 0.5(1 - F/1000)/0.01 = 
 
 $\pi = (2F - 100)(50 - 0.05F) = 100F - 0.1F^2 - 5000 + 5F = 105F - 0.1F^2 - 5000$.
 
-$\frac⧃LB⧄d\pi⧃RB⧄⧃LB⧄dF⧃RB⧄ = 105 - 0.2F = 0 \Rightarrow F = 525$.
+$\frac◆LB◆d\pi◆RB◆◆LB◆dF◆RB◆ = 105 - 0.2F = 0 \Rightarrow F = 525$.
 
 **Comparison:**
 

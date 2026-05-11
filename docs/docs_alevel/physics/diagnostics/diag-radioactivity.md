@@ -84,9 +84,9 @@ $$\frac{dN_Z}{dt} = \lambda_Y N_Y$$
 
 For $N_Y(t)$ (Bateman equation for $\lambda_X \ne \lambda_Y$):
 
-$$N_Y(t) = \frac⧃LB⧄\lambda_X N_{X0}⧃RB⧄⧃LB⧄\lambda_Y - \lambda_X⧃RB⧄(e^{-\lambda_X t} - e^{-\lambda_Y t})$$
+$$N_Y(t) = \frac◆LB◆\lambda_X N_{X0}◆RB◆◆LB◆\lambda_Y - \lambda_X◆RB◆(e^{-\lambda_X t} - e^{-\lambda_Y t})$$
 
-$$= \frac⧃LB⧄0.10 \times 1000⧃RB⧄⧃LB⧄0.05 - 0.10⧃RB⧄(e^{-2} - e^{-1}) = \frac{100}{-0.05}(0.1353 - 0.3679) = -2000 \times (-0.2326) = 465.2$$
+$$= \frac◆LB◆0.10 \times 1000◆RB◆◆LB◆0.05 - 0.10◆RB◆(e^{-2} - e^{-1}) = \frac{100}{-0.05}(0.1353 - 0.3679) = -2000 \times (-0.2326) = 465.2$$
 
 So approximately $465$ atoms of $Y$ at $t = 20\,\text{s}$.
 
@@ -129,9 +129,9 @@ $K_{\max} = 0.156\,\text{MeV} = 0.156 \times 10^6 \times 1.60 \times 10^{-19} = 
 
 Since $K \ll m_e c^2 = 0.511\,\text{MeV}$, we can use non-relativistic mechanics:
 
-$$p = \sqrt{2m_e K} = \sqrt⧃LB⧄2 \times 9.11 \times 10^{-31} \times 2.496 \times 10^{-14}⧃RB⧄ = \sqrt⧃LB⧄4.548 \times 10^{-44}⧃RB⧄ = 2.13 \times 10^{-22}\,\text{kg}\,\text{m}\,\text{s}^{-1}$$
+$$p = \sqrt{2m_e K} = \sqrt◆LB◆2 \times 9.11 \times 10^{-31} \times 2.496 \times 10^{-14}◆RB◆ = \sqrt◆LB◆4.548 \times 10^{-44}◆RB◆ = 2.13 \times 10^{-22}\,\text{kg}\,\text{m}\,\text{s}^{-1}$$
 
-Alternatively, using $pc = \sqrt{2m_e c^2 K} = \sqrt⧃LB⧄2 \times 0.511 \times 0.156⧃RB⧄\,\text{MeV} = \sqrt{0.159}\,\text{MeV} = 0.399\,\text{MeV}$, giving $p = 0.399\,\text{MeV}/c$.
+Alternatively, using $pc = \sqrt{2m_e c^2 K} = \sqrt◆LB◆2 \times 0.511 \times 0.156◆RB◆\,\text{MeV} = \sqrt{0.159}\,\text{MeV} = 0.399\,\text{MeV}$, giving $p = 0.399\,\text{MeV}/c$.
 
 ## Integration Tests
 
@@ -155,11 +155,11 @@ $\lambda = \ln 2/5730 = 1.209 \times 10^{-4}\,\text{year}^{-1}$
 
 **Note:** The stated sample activity of $1.2\,\text{Bq}\,\text{g}^{-1}$ exceeds the living-wood baseline of $0.23\,\text{Bq}\,\text{g}^{-1}$, which is physically inconsistent with radioactive decay (a sample cannot have more C-14 than living material). This indicates either measurement error or contamination. Assuming the intended value is $A = 0.12\,\text{Bq}\,\text{g}^{-1}$ (approximately half the living value):
 
-$$t = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄\ln\frac{A_0}{A} = \frac⧃LB⧄1⧃RB⧄⧃LB⧄1.209 \times 10^{-4}⧃RB⧄\ln\frac{0.23}{0.12} = 8271 \times 0.652 = 5393\,\text{years}$$
+$$t = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln\frac{A_0}{A} = \frac◆LB◆1◆RB◆◆LB◆1.209 \times 10^{-4}◆RB◆\ln\frac{0.23}{0.12} = 8271 \times 0.652 = 5393\,\text{years}$$
 
 (b) Fraction remaining: $N/N_0 = A/A_0 = 0.12/0.23 = 0.522 = 52.2\%$
 
-(c) $\Delta t = \frac⧃LB⧄\Delta A⧃RB⧄⧃LB⧄\lambda A⧃RB⧄ = \frac⧃LB⧄0.1⧃RB⧄⧃LB⧄1.209 \times 10^{-4} \times 0.12⧃RB⧄ = \frac⧃LB⧄0.1⧃RB⧄⧃LB⧄1.451 \times 10^{-5}⧃RB⧄ = 6892\,\text{years}$
+(c) $\Delta t = \frac◆LB◆\Delta A◆RB◆◆LB◆\lambda A◆RB◆ = \frac◆LB◆0.1◆RB◆◆LB◆1.209 \times 10^{-4} \times 0.12◆RB◆ = \frac◆LB◆0.1◆RB◆◆LB◆1.451 \times 10^{-5}◆RB◆ = 6892\,\text{years}$
 
 The uncertainty in the age ($\pm 6900\,\text{years}$) is larger than the age itself ($5400\,\text{years}$), meaning the measurement is not precise enough to date the sample. This demonstrates the limitation of carbon-14 dating for very old samples -- the activity approaches the background level and statistical uncertainties dominate.
 
@@ -190,7 +190,7 @@ $A = 9.25 \times 10^7\,\text{Bq}$
 
 (b) The effective decay constant combines physical and biological processes:
 
-$$\lambda_{\text{eff}} = \lambda_{\text{physical}} + \lambda_{\text{biological}} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄6.0⧃RB⧄ + \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄4.8⧃RB⧄$$
+$$\lambda_{\text{eff}} = \lambda_{\text{physical}} + \lambda_{\text{biological}} = \frac◆LB◆\ln 2◆RB◆◆LB◆6.0◆RB◆ + \frac◆LB◆\ln 2◆RB◆◆LB◆4.8◆RB◆$$
 
 $$= 0.1155 + 0.1444 = 0.2599\,\text{hour}^{-1}$$
 

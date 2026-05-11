@@ -33,7 +33,7 @@ $$1\;\mathrm{ly} = c \times 1\;\mathrm{year} = 3.00 \times 10^8 \times 3.156 \ti
 **Definition.** The **parsec** (pc) is the distance at which one astronomical unit subtends an angle
 of one arcsecond:
 
-$$1\;\mathrm{pc} = \frac⧃LB⧄1\;\mathrm{AU}⧃RB⧄⧃LB⧄\tan(1'')⧃RB⧄ \approx \frac⧃LB⧄1.50 \times 10^{11}⧃RB⧄⧃LB⧄4.848 \times 10^{-6}⧃RB⧄ = 3.09 \times 10^{16}\;\mathrm{m}$$
+$$1\;\mathrm{pc} = \frac◆LB◆1\;\mathrm{AU}◆RB◆◆LB◆\tan(1'')◆RB◆ \approx \frac◆LB◆1.50 \times 10^{11}◆RB◆◆LB◆4.848 \times 10^{-6}◆RB◆ = 3.09 \times 10^{16}\;\mathrm{m}$$
 
 **Key conversions:**
 
@@ -56,15 +56,15 @@ the **parallax angle** measured in arcseconds.
 
 For small angles, $\tan p \approx p$ (in radians):
 
-$$\tan p = \frac⧃LB⧄1\;\mathrm{AU}⧃RB⧄⧃LB⧄d⧃RB⧄ \approx p$$
+$$\tan p = \frac◆LB◆1\;\mathrm{AU}◆RB◆◆LB◆d◆RB◆ \approx p$$
 
 Converting $p$ from arcseconds to radians:
 
-$$p\;(\mathrm{rad}) = p\;('') \times \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄648,000⧃RB⧄ = \frac{p\;('')}{206,265}$$
+$$p\;(\mathrm{rad}) = p\;('') \times \frac◆LB◆\pi◆RB◆◆LB◆648,000◆RB◆ = \frac{p\;('')}{206,265}$$
 
 Therefore:
 
-$$d = \frac⧃LB⧄1\;\mathrm{AU}⧃RB⧄⧃LB⧄p\;(\mathrm{rad})⧃RB⧄ = \frac⧃LB⧄206,265\;\mathrm{AU}⧃RB⧄⧃LB⧄p\;('')⧃RB⧄$$
+$$d = \frac◆LB◆1\;\mathrm{AU}◆RB◆◆LB◆p\;(\mathrm{rad})◆RB◆ = \frac◆LB◆206,265\;\mathrm{AU}◆RB◆◆LB◆p\;('')◆RB◆$$
 
 By definition, when $p = 1''$, $d = 1$ pc $= 206,265$ AU. Hence:
 
@@ -120,7 +120,7 @@ $d$ from the star (units: W m$^{-2}$).
 By conservation of energy, the luminosity is spread uniformly over a sphere of surface area
 $4\pi d^2$:
 
-$$\boxed{b = \frac⧃LB⧄L⧃RB⧄⧃LB⧄4\pi d^2⧃RB⧄}$$
+$$\boxed{b = \frac◆LB◆L◆RB◆◆LB◆4\pi d^2◆RB◆}$$
 
 This is the **inverse square law for intensity**: doubling the distance reduces the apparent
 brightness by a factor of four.
@@ -142,11 +142,11 @@ $$\boxed{L = 4\pi r^2 \sigma T^4}$$
 
 Starting from $b = L/(4\pi d^2)$ and $L = 4\pi r^2 \sigma T^4$:
 
-$$b = \frac⧃LB⧄4\pi r^2 \sigma T^4⧃RB⧄⧃LB⧄4\pi d^2⧃RB⧄ = \frac⧃LB⧄r^2 \sigma T^4⧃RB⧄⧃LB⧄d^2⧃RB⧄$$
+$$b = \frac◆LB◆4\pi r^2 \sigma T^4◆RB◆◆LB◆4\pi d^2◆RB◆ = \frac◆LB◆r^2 \sigma T^4◆RB◆◆LB◆d^2◆RB◆$$
 
 Rearranging for the radius:
 
-$$\boxed{r = d\sqrt⧃LB⧄\frac{b}{\sigma T^4}⧃RB⧄}$$
+$$\boxed{r = d\sqrt◆LB◆\frac{b}{\sigma T^4}◆RB◆}$$
 
 This allows us to determine a star's radius from its distance, apparent brightness, and surface
 temperature. $\square$
@@ -301,7 +301,7 @@ boundary is the **event horizon**, at the **Schwarzschild radius**.
 
 The Schwarzschild radius is found by setting the escape velocity equal to the speed of light $c$:
 
-$$v_e = \sqrt⧃LB⧄\frac{2GM}{r}⧃RB⧄ = c$$
+$$v_e = \sqrt◆LB◆\frac{2GM}{r}◆RB◆ = c$$
 
 Squaring both sides and solving for $r$:
 
@@ -349,7 +349,7 @@ a typical star. The resolution of the paradox relies on three key facts:
 When a light source moves relative to an observer, the observed wavelength is shifted. For recession
 speeds much less than the speed of light ($v \ll c$):
 
-$$\boxed{\frac⧃LB⧄\Delta \lambda⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = \frac{v}{c}}$$
+$$\boxed{\frac◆LB◆\Delta \lambda◆RB◆◆LB◆\lambda◆RB◆ = \frac{v}{c}}$$
 
 where $\Delta \lambda = \lambda_{\mathrm{obs}} - \lambda_{\mathrm{emit}}$ is the change in
 wavelength.
@@ -359,7 +359,7 @@ wavelength.
 
 For cosmological redshifts, the **redshift parameter** $z$ is defined as:
 
-$$z = \frac⧃LB⧄\lambda_{\mathrm{obs}} - \lambda_{\mathrm{emit}}⧃RB⧄⧃LB⧄\lambda_{\mathrm{emit}}⧃RB⧄$$
+$$z = \frac◆LB◆\lambda_{\mathrm{obs}} - \lambda_{\mathrm{emit}}◆RB◆◆LB◆\lambda_{\mathrm{emit}}◆RB◆$$
 
 so that $\Delta \lambda / \lambda = z = v/c$ for $v \ll c$.
 
@@ -383,9 +383,9 @@ $$t_H = \frac{1}{H_0}$$
 
 With $H_0 = 70$ km s$^{-1}$ Mpc$^{-1}$:
 
-$$H_0 = \frac⧃LB⧄70 \times 10^3\;\mathrm{m s}^{-1}⧃RB⧄⧃LB⧄3.09 \times 10^{22}\;\mathrm{m}⧃RB⧄ = 2.27 \times 10^{-18}\;\mathrm{s}^{-1}$$
+$$H_0 = \frac◆LB◆70 \times 10^3\;\mathrm{m s}^{-1}◆RB◆◆LB◆3.09 \times 10^{22}\;\mathrm{m}◆RB◆ = 2.27 \times 10^{-18}\;\mathrm{s}^{-1}$$
 
-$$t_H = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2.27 \times 10^{-18}⧃RB⧄ = 4.41 \times 10^{17}\;\mathrm{s} \approx 14.0\;\mathrm{billion years}$$
+$$t_H = \frac◆LB◆1◆RB◆◆LB◆2.27 \times 10^{-18}◆RB◆ = 4.41 \times 10^{17}\;\mathrm{s} \approx 14.0\;\mathrm{billion years}$$
 
 $$\boxed{t_H \approx \frac{1}{H_0} \approx 14\;\mathrm{Gyr}}$$
 
@@ -424,7 +424,7 @@ Key properties:
 
 Using Wien's law to find the peak wavelength:
 
-$$\lambda_{\max} = \frac⧃LB⧄2.898 \times 10^{-3}⧃RB⧄⧃LB⧄2.725⧃RB⧄ = 1.06 \times 10^{-3}\;\mathrm{m} = 1.06\;\mathrm{mm}$$
+$$\lambda_{\max} = \frac◆LB◆2.898 \times 10^{-3}◆RB◆◆LB◆2.725◆RB◆ = 1.06 \times 10^{-3}\;\mathrm{m} = 1.06\;\mathrm{mm}$$
 
 This confirms the microwave nature of the CMB, which was initially detected as excess noise at a
 wavelength of 7.35 cm by Penzias and Wilson.
@@ -435,7 +435,7 @@ The expansion of the universe is not galaxies moving through space, but rather t
 space itself. This is described by the **scale factor** $a(t)$, where $a = 1$ today. As the universe
 expands, photon wavelengths are stretched, producing cosmological redshift:
 
-$$1 + z = \frac⧃LB⧄a_{\mathrm{now}}⧃RB⧄⧃LB⧄a_{\mathrm{then}}⧃RB⧄$$
+$$1 + z = \frac◆LB◆a_{\mathrm{now}}◆RB◆◆LB◆a_{\mathrm{then}}◆RB◆$$
 
 :::info
 info
@@ -455,7 +455,7 @@ then magnified by a converging **eyepiece lens**.
 The **angular magnification** is the ratio of the angle subtended by the image to the angle
 subtended by the object at the unaided eye:
 
-$$\boxed{M = \frac⧃LB⧄\theta'⧃RB⧄⧃LB⧄\theta⧃RB⧄ = \frac{f_o}{f_e}}$$
+$$\boxed{M = \frac◆LB◆\theta'◆RB◆◆LB◆\theta◆RB◆ = \frac{f_o}{f_e}}$$
 
 where $f_o$ is the focal length of the objective and $f_e$ is the focal length of the eyepiece.
 
@@ -518,7 +518,7 @@ closely spaced objects.
 Two point sources are just resolved when the central maximum of one diffraction pattern coincides
 with the first minimum of the other. For a circular aperture, this gives the **Rayleigh criterion**:
 
-$$\boxed{\theta = \frac⧃LB⧄1.22\lambda⧃RB⧄⧃LB⧄D⧃RB⧄}$$
+$$\boxed{\theta = \frac◆LB◆1.22\lambda◆RB◆◆LB◆D◆RB◆}$$
 
 where $\theta$ is the minimum angular resolution (in radians), $\lambda$ is the wavelength of the
 observed radiation, and $D$ is the diameter of the aperture.
@@ -528,11 +528,11 @@ observed radiation, and $D$ is the diameter of the aperture.
 For a circular aperture of diameter $D$, the diffraction pattern is an Airy disk. The angular
 position of the first minimum is given by:
 
-$$\sin\theta = 1.22\frac⧃LB⧄\lambda⧃RB⧄⧃LB⧄D⧃RB⧄$$
+$$\sin\theta = 1.22\frac◆LB◆\lambda◆RB◆◆LB◆D◆RB◆$$
 
 For small angles ($\theta \ll 1$ rad), $\sin\theta \approx \theta$:
 
-$$\boxed{\theta \approx \frac⧃LB⧄1.22\lambda⧃RB⧄⧃LB⧄D⧃RB⧄}$$
+$$\boxed{\theta \approx \frac◆LB◆1.22\lambda◆RB◆◆LB◆D◆RB◆}$$
 
 $\square$
 
@@ -549,7 +549,7 @@ Large telescopes serve two fundamental purposes:
    the observation of fainter objects. The collecting power relative to the human eye (diameter
    $\sim 5$ mm) is:
 
-   $$\mathrm{Collecting power ratio} = \left(\frac⧃LB⧄D⧃RB⧄⧃LB⧄d_{\mathrm{eye}}⧃RB⧄\right)^2$$
+   $$\mathrm{Collecting power ratio} = \left(\frac◆LB◆D◆RB◆◆LB◆d_{\mathrm{eye}}◆RB◆\right)^2$$
 
 2. **Resolving power** --- proportional to $1/D$. A larger aperture gives smaller minimum angular
    resolution $\theta$, allowing finer detail to be distinguished.
@@ -623,9 +623,9 @@ of $5.0 \times 10^{29}$ W. Calculate its distance in metres and in parsecs.
 
 From $b = L/(4\pi d^2)$:
 
-$$d^2 = \frac⧃LB⧄L⧃RB⧄⧃LB⧄4\pi b⧃RB⧄ = \frac⧃LB⧄5.0 \times 10^{29}⧃RB⧄⧃LB⧄4\pi \times 2.0 \times 10^{-8}⧃RB⧄ = \frac⧃LB⧄5.0 \times 10^{29}⧃RB⧄⧃LB⧄2.513 \times 10^{-7}⧃RB⧄ = 1.99 \times 10^{36}$$
+$$d^2 = \frac◆LB◆L◆RB◆◆LB◆4\pi b◆RB◆ = \frac◆LB◆5.0 \times 10^{29}◆RB◆◆LB◆4\pi \times 2.0 \times 10^{-8}◆RB◆ = \frac◆LB◆5.0 \times 10^{29}◆RB◆◆LB◆2.513 \times 10^{-7}◆RB◆ = 1.99 \times 10^{36}$$
 
-$$d = \sqrt⧃LB⧄1.99 \times 10^{36}⧃RB⧄ = 1.41 \times 10^{18}\;\mathrm{m}$$
+$$d = \sqrt◆LB◆1.99 \times 10^{36}◆RB◆ = 1.41 \times 10^{18}\;\mathrm{m}$$
 
 Converting to parsecs: $d = 1.41 \times 10^{18}/(3.09 \times 10^{16}) = 45.6$ pc.
 
@@ -639,11 +639,11 @@ $3.85 \times 10^{26}$ W. Calculate its radius.
 
 From $L = 4\pi r^2 \sigma T^4$:
 
-$$r^2 = \frac⧃LB⧄L⧃RB⧄⧃LB⧄4\pi \sigma T^4⧃RB⧄ = \frac⧃LB⧄3.85 \times 10^{26}⧃RB⧄⧃LB⧄4\pi \times 5.67 \times 10^{-8} \times (5800)^4⧃RB⧄$$
+$$r^2 = \frac◆LB◆L◆RB◆◆LB◆4\pi \sigma T^4◆RB◆ = \frac◆LB◆3.85 \times 10^{26}◆RB◆◆LB◆4\pi \times 5.67 \times 10^{-8} \times (5800)^4◆RB◆$$
 
 $(5800)^4 = 1.133 \times 10^{15}$ K$^4$
 
-$$r^2 = \frac⧃LB⧄3.85 \times 10^{26}⧃RB⧄⧃LB⧄4\pi \times 5.67 \times 10^{-8} \times 1.133 \times 10^{15}⧃RB⧄ = \frac⧃LB⧄3.85 \times 10^{26}⧃RB⧄⧃LB⧄8.07 \times 10^{8}⧃RB⧄ = 4.77 \times 10^{17}$$
+$$r^2 = \frac◆LB◆3.85 \times 10^{26}◆RB◆◆LB◆4\pi \times 5.67 \times 10^{-8} \times 1.133 \times 10^{15}◆RB◆ = \frac◆LB◆3.85 \times 10^{26}◆RB◆◆LB◆8.07 \times 10^{8}◆RB◆ = 4.77 \times 10^{17}$$
 
 $$r = 6.91 \times 10^{8}\;\mathrm{m} \approx 6.91 \times 10^{5}\;\mathrm{km}$$
 
@@ -659,7 +659,7 @@ emits maximum radiation. In which part of the electromagnetic spectrum does this
 
 Using Wien's displacement law:
 
-$$\lambda_{\max} = \frac⧃LB⧄2.898 \times 10^{-3}⧃RB⧄⧃LB⧄T⧃RB⧄ = \frac⧃LB⧄2.898 \times 10^{-3}⧃RB⧄⧃LB⧄12,000⧃RB⧄ = 2.42 \times 10^{-7}\;\mathrm{m} = 242\;\mathrm{nm}$$
+$$\lambda_{\max} = \frac◆LB◆2.898 \times 10^{-3}◆RB◆◆LB◆T◆RB◆ = \frac◆LB◆2.898 \times 10^{-3}◆RB◆◆LB◆12,000◆RB◆ = 2.42 \times 10^{-7}\;\mathrm{m} = 242\;\mathrm{nm}$$
 
 This is in the **ultraviolet** region. The star appears blue-white to the human eye, with most of
 its visible output at shorter (blue) wavelengths.
@@ -687,7 +687,7 @@ minimum angular resolution for light of wavelength $550$ nm. Express your answer
 
 Using the Rayleigh criterion:
 
-$$\theta = \frac⧃LB⧄1.22\lambda⧃RB⧄⧃LB⧄D⧃RB⧄ = \frac⧃LB⧄1.22 \times 550 \times 10^{-9}⧃RB⧄⧃LB⧄0.200⧃RB⧄ = 3.36 \times 10^{-6}\;\mathrm{rad}$$
+$$\theta = \frac◆LB◆1.22\lambda◆RB◆◆LB◆D◆RB◆ = \frac◆LB◆1.22 \times 550 \times 10^{-9}◆RB◆◆LB◆0.200◆RB◆ = 3.36 \times 10^{-6}\;\mathrm{rad}$$
 
 Converting to arcseconds: $\theta = 3.36 \times 10^{-6} \times 206,265 = 0.69''$.
 
@@ -720,9 +720,9 @@ $$d = 6.31 \times 10^{5}\;\mathrm{pc} = 631\;\mathrm{kpc}$$
 <details>
 <summary>Hint</summary>
 
-$$r_s = \frac{2GM}{c^2} = \frac⧃LB⧄2 \times 6.67 \times 10^{-11} \times 10 \times 1.99 \times 10^{30}⧃RB⧄⧃LB⧄(3.0 \times 10^8)^2⧃RB⧄$$
+$$r_s = \frac{2GM}{c^2} = \frac◆LB◆2 \times 6.67 \times 10^{-11} \times 10 \times 1.99 \times 10^{30}◆RB◆◆LB◆(3.0 \times 10^8)^2◆RB◆$$
 
-$$r_s = \frac⧃LB⧄2.653 \times 10^{21}⧃RB⧄⧃LB⧄9.0 \times 10^{16}⧃RB⧄ = 2.95 \times 10^{4}\;\mathrm{m} \approx 29.5\;\mathrm{km}$$
+$$r_s = \frac◆LB◆2.653 \times 10^{21}◆RB◆◆LB◆9.0 \times 10^{16}◆RB◆ = 2.95 \times 10^{4}\;\mathrm{m} \approx 29.5\;\mathrm{km}$$
 
 This is comparable to the size of a large city, containing ten times the mass of the Sun.
 
@@ -756,13 +756,13 @@ satellite value).
 
 Convert $H_0$ to SI units:
 
-$$H_0 = \frac⧃LB⧄67.4 \times 10^{3}⧃RB⧄⧃LB⧄3.09 \times 10^{22}⧃RB⧄ = 2.181 \times 10^{-18}\;\mathrm{s}^{-1}$$
+$$H_0 = \frac◆LB◆67.4 \times 10^{3}◆RB◆◆LB◆3.09 \times 10^{22}◆RB◆ = 2.181 \times 10^{-18}\;\mathrm{s}^{-1}$$
 
-$$t_H = \frac{1}{H_0} = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2.181 \times 10^{-18}⧃RB⧄ = 4.585 \times 10^{17}\;\mathrm{s}$$
+$$t_H = \frac{1}{H_0} = \frac◆LB◆1◆RB◆◆LB◆2.181 \times 10^{-18}◆RB◆ = 4.585 \times 10^{17}\;\mathrm{s}$$
 
 Converting to years:
 
-$$t_H = \frac⧃LB⧄4.585 \times 10^{17}⧃RB⧄⧃LB⧄3.156 \times 10^7⧃RB⧄ = 1.453 \times 10^{10}\;\mathrm{years} \approx 14.5\;\mathrm{Gyr}$$
+$$t_H = \frac◆LB◆4.585 \times 10^{17}◆RB◆◆LB◆3.156 \times 10^7◆RB◆ = 1.453 \times 10^{10}\;\mathrm{years} \approx 14.5\;\mathrm{Gyr}$$
 
 This is a reasonable estimate of the age of the universe. The accepted value from the Planck data is
 $\sim 13.8$ Gyr; the difference arises because the expansion rate has not been constant.
@@ -778,15 +778,15 @@ operating at $\lambda = 550$ nm. Give the ratio of their minimum resolvable angl
 
 Radio telescope:
 
-$$\theta_{\mathrm{radio}} = \frac⧃LB⧄1.22 \times 0.21⧃RB⧄⧃LB⧄30⧃RB⧄ = 8.54 \times 10^{-3}\;\mathrm{rad} \approx 29.3'$$
+$$\theta_{\mathrm{radio}} = \frac◆LB◆1.22 \times 0.21◆RB◆◆LB◆30◆RB◆ = 8.54 \times 10^{-3}\;\mathrm{rad} \approx 29.3'$$
 
 Optical telescope:
 
-$$\theta_{\mathrm{optical}} = \frac⧃LB⧄1.22 \times 550 \times 10^{-9}⧃RB⧄⧃LB⧄1.0⧃RB⧄ = 6.71 \times 10^{-7}\;\mathrm{rad} \approx 0.14''$$
+$$\theta_{\mathrm{optical}} = \frac◆LB◆1.22 \times 550 \times 10^{-9}◆RB◆◆LB◆1.0◆RB◆ = 6.71 \times 10^{-7}\;\mathrm{rad} \approx 0.14''$$
 
 Ratio:
 
-$$\frac⧃LB⧄\theta_{\mathrm{radio}}⧃RB⧄⧃LB⧄\theta_{\mathrm{optical}}⧃RB⧄ = \frac⧃LB⧄8.54 \times 10^{-3}⧃RB⧄⧃LB⧄6.71 \times 10^{-7}⧃RB⧄ \approx 12,700$$
+$$\frac◆LB◆\theta_{\mathrm{radio}}◆RB◆◆LB◆\theta_{\mathrm{optical}}◆RB◆ = \frac◆LB◆8.54 \times 10^{-3}◆RB◆◆LB◆6.71 \times 10^{-7}◆RB◆ \approx 12,700$$
 
 The optical telescope resolves about 12,700 times finer detail despite its much smaller aperture,
 because the resolving power depends on $\lambda/D$ and the radio wavelength is $\sim 400,000$ times
@@ -803,7 +803,7 @@ approximately $1.0 \times 10^{36}$ W, calculate the distance to the galaxy in me
 
 From $b = L/(4\pi d^2)$:
 
-$$d^2 = \frac⧃LB⧄L⧃RB⧄⧃LB⧄4\pi b⧃RB⧄ = \frac⧃LB⧄1.0 \times 10^{36}⧃RB⧄⧃LB⧄4\pi \times 3.2 \times 10^{-15}⧃RB⧄ = \frac⧃LB⧄1.0 \times 10^{36}⧃RB⧄⧃LB⧄4.02 \times 10^{-14}⧃RB⧄ = 2.49 \times 10^{49}$$
+$$d^2 = \frac◆LB◆L◆RB◆◆LB◆4\pi b◆RB◆ = \frac◆LB◆1.0 \times 10^{36}◆RB◆◆LB◆4\pi \times 3.2 \times 10^{-15}◆RB◆ = \frac◆LB◆1.0 \times 10^{36}◆RB◆◆LB◆4.02 \times 10^{-14}◆RB◆ = 2.49 \times 10^{49}$$
 
 $$d = 4.99 \times 10^{24}\;\mathrm{m}$$
 

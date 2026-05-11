@@ -40,7 +40,7 @@ external force.
 
 **Law.** The resultant force on a body equals the rate of change of momentum:
 
-$$\mathbf{F} = \frac⧃LB⧄d\mathbf{p}⧃RB⧄⧃LB⧄dt⧃RB⧄ = \frac⧃LB⧄d(m\mathbf{v})⧃RB⧄⧃LB⧄dt⧃RB⧄$$
+$$\mathbf{F} = \frac◆LB◆d\mathbf{p}◆RB◆◆LB◆dt◆RB◆ = \frac◆LB◆d(m\mathbf{v})◆RB◆◆LB◆dt◆RB◆$$
 
 For constant mass:
 
@@ -278,7 +278,7 @@ $$P\cos\theta = \mu(mg - P\sin\theta)$$
 
 $$P\cos\theta + \mu P\sin\theta = \mu mg$$
 
-$$P = \frac⧃LB⧄\mu mg⧃RB⧄⧃LB⧄\cos\theta + \mu\sin\theta⧃RB⧄$$
+$$P = \frac◆LB◆\mu mg◆RB◆◆LB◆\cos\theta + \mu\sin\theta◆RB◆$$
 
 :::warning
 Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
@@ -370,7 +370,7 @@ $$T - \mu m_1 g = m_1 a$$
 
 Combined with $m_2 g - T = m_2 a$:
 
-$$a = \frac⧃LB⧄(m_2 - \mu m_1)g⧃RB⧄⧃LB⧄m_1 + m_2⧃RB⧄$$
+$$a = \frac◆LB◆(m_2 - \mu m_1)g◆RB◆◆LB◆m_1 + m_2◆RB◆$$
 
 :::warning
 If $m_2 \lt{} \mu m_1$, then $a \lt{} 0$, meaning the system does not move. The friction
@@ -391,7 +391,7 @@ For $m_2$: $T - m_2 g\sin\beta - \mu_2 m_2 g\cos\beta = m_2 a$
 
 Adding:
 
-$$a = \frac⧃LB⧄m_1 g(\sin\alpha - \mu_1\cos\alpha) - m_2 g(\sin\beta + \mu_2\cos\beta)⧃RB⧄⧃LB⧄m_1 + m_2⧃RB⧄$$
+$$a = \frac◆LB◆m_1 g(\sin\alpha - \mu_1\cos\alpha) - m_2 g(\sin\beta + \mu_2\cos\beta)◆RB◆◆LB◆m_1 + m_2◆RB◆$$
 
 <hr />
 
@@ -472,7 +472,7 @@ $$P\cos\alpha = mg\sin\alpha + \mu(mg\cos\alpha + P\sin\alpha)$$
 
 $$P\cos\alpha - \mu P\sin\alpha = mg\sin\alpha + \mu mg\cos\alpha$$
 
-$$P = \frac⧃LB⧄mg(\sin\alpha + \mu\cos\alpha)⧃RB⧄⧃LB⧄\cos\alpha - \mu\sin\alpha⧃RB⧄$$
+$$P = \frac◆LB◆mg(\sin\alpha + \mu\cos\alpha)◆RB◆◆LB◆\cos\alpha - \mu\sin\alpha◆RB◆$$
 
 :::warning
 warning
@@ -512,7 +512,7 @@ If three coplanar forces $F_1$, $F_2$, $F_3$ act on a body in equilibrium, and $
 angle between $F_2$ and $F_3$, $\theta_2$ is the angle between $F_1$ and $F_3$, and $\theta_3$ is
 the angle between $F_1$ and $F_2$, then:
 
-$$\frac⧃LB⧄F_1⧃RB⧄⧃LB⧄\sin\theta_1⧃RB⧄ = \frac⧃LB⧄F_2⧃RB⧄⧃LB⧄\sin\theta_2⧃RB⧄ = \frac⧃LB⧄F_3⧃RB⧄⧃LB⧄\sin\theta_3⧃RB⧄$$
+$$\frac◆LB◆F_1◆RB◆◆LB◆\sin\theta_1◆RB◆ = \frac◆LB◆F_2◆RB◆◆LB◆\sin\theta_2◆RB◆ = \frac◆LB◆F_3◆RB◆◆LB◆\sin\theta_3◆RB◆$$
 
 **Example.** A particle of mass $10\,\mathrm{kg}$ is suspended by two strings. One string makes an
 angle of $30^\circ$ with the vertical and the other makes an angle of $60^\circ$ with the vertical.
@@ -525,9 +525,9 @@ Angles between the forces: the angle between $T_1$ and $T_2$ is $30° + 60° = 9
 
 By Lami's theorem:
 
-$$\frac⧃LB⧄T_1⧃RB⧄⧃LB⧄\sin(180° - 60°)⧃RB⧄ = \frac⧃LB⧄T_2⧃RB⧄⧃LB⧄\sin(180° - 30°)⧃RB⧄ = \frac⧃LB⧄10g⧃RB⧄⧃LB⧄\sin 90°⧃RB⧄$$
+$$\frac◆LB◆T_1◆RB◆◆LB◆\sin(180° - 60°)◆RB◆ = \frac◆LB◆T_2◆RB◆◆LB◆\sin(180° - 30°)◆RB◆ = \frac◆LB◆10g◆RB◆◆LB◆\sin 90°◆RB◆$$
 
-$$T_1 = 10g \sin 60° = 10g \times \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = 5\sqrt{3}\,g \approx 84.9\,\mathrm{N}$$
+$$T_1 = 10g \sin 60° = 10g \times \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ = 5\sqrt{3}\,g \approx 84.9\,\mathrm{N}$$
 
 $$T_2 = 10g \sin 30° = 10g \times \frac{1}{2} = 5g = 49\,\mathrm{N}$$
 
@@ -556,7 +556,7 @@ $$2T = 85g \implies T = 42.5g = 416.5\,\mathrm{N}$$
 
 **Resolving horizontally at $A$:**
 
-$$H_A = T\cos 30° = 42.5g \times \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 360.8\,\mathrm{N}$$
+$$H_A = T\cos 30° = 42.5g \times \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ \approx 360.8\,\mathrm{N}$$
 
 **Resolving vertically at $A$:**
 
@@ -807,14 +807,14 @@ The angle between $T_2$ and $W$ is $180° - 45° = 135^\circ$.
 
 By Lami's theorem:
 
-$$\frac⧃LB⧄T_1⧃RB⧄⧃LB⧄\sin 135°⧃RB⧄ = \frac⧃LB⧄T_2⧃RB⧄⧃LB⧄\sin 120°⧃RB⧄ = \frac⧃LB⧄5g⧃RB⧄⧃LB⧄\sin 105°⧃RB⧄$$
+$$\frac◆LB◆T_1◆RB◆◆LB◆\sin 135°◆RB◆ = \frac◆LB◆T_2◆RB◆◆LB◆\sin 120°◆RB◆ = \frac◆LB◆5g◆RB◆◆LB◆\sin 105°◆RB◆$$
 
-$\sin 105° \approx 0.9659$, $\sin 135° = \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 0.7071$,
-$\sin 120° = \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 0.8660$.
+$\sin 105° \approx 0.9659$, $\sin 135° = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ \approx 0.7071$,
+$\sin 120° = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ \approx 0.8660$.
 
-$T_1 = \frac⧃LB⧄5g \times 0.7071⧃RB⧄⧃LB⧄0.9659⧃RB⧄ = \frac{34.65}{0.9659} \approx 35.9\,\mathrm{N}$
+$T_1 = \frac◆LB◆5g \times 0.7071◆RB◆◆LB◆0.9659◆RB◆ = \frac{34.65}{0.9659} \approx 35.9\,\mathrm{N}$
 
-$T_2 = \frac⧃LB⧄5g \times 0.8660⧃RB⧄⧃LB⧄0.9659⧃RB⧄ = \frac{42.43}{0.9659} \approx 43.9\,\mathrm{N}$
+$T_2 = \frac◆LB◆5g \times 0.8660◆RB◆◆LB◆0.9659◆RB◆ = \frac{42.43}{0.9659} \approx 43.9\,\mathrm{N}$
 
 **If you get this wrong, revise:** [Lami's Theorem](#113-lamis-theorem) — Section 11.3.
 
@@ -886,7 +886,7 @@ $T\sin 40° \times 6 - 120 \times 3 - 80 \times 2 = 0$
 
 $6T\sin 40° = 360 + 160 = 520$
 
-$T = \frac⧃LB⧄520⧃RB⧄⧃LB⧄6\sin 40°⧃RB⧄ = \frac{520}{6(0.6428)} = \frac{520}{3.857} \approx 134.8\,\mathrm{N}$
+$T = \frac◆LB◆520◆RB◆◆LB◆6\sin 40°◆RB◆ = \frac{520}{6(0.6428)} = \frac{520}{3.857} \approx 134.8\,\mathrm{N}$
 
 Resolving horizontally: $H_A = T\cos 40° = 134.8 \times 0.766 = 103.3\,\mathrm{N}$.
 

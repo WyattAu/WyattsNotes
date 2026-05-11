@@ -36,7 +36,7 @@ $$\sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}$$
 **Derivation from charge conservation.** Charge cannot accumulate at a junction (in steady state).
 The rate of charge flowing in must equal the rate flowing out:
 
-$$\frac⧃LB⧄dQ_{\mathrm{in}}⧃RB⧄⧃LB⧄dt⧃RB⧄ = \frac⧃LB⧄dQ_{\mathrm{out}}⧃RB⧄⧃LB⧄dt⧃RB⧄ \implies \sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}$$
+$$\frac◆LB◆dQ_{\mathrm{in}}◆RB◆◆LB◆dt◆RB◆ = \frac◆LB◆dQ_{\mathrm{out}}◆RB◆◆LB◆dt◆RB◆ \implies \sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}$$
 
 $\square$
 
@@ -54,7 +54,7 @@ $$\sum \mathcal{E} = \sum V$$
 energy gained from sources must equal the total energy lost to components. Otherwise, energy would
 be created or destroyed:
 
-$$\frac⧃LB⧄W_{\mathrm{gained}}⧃RB⧄⧃LB⧄Q⧃RB⧄ = \frac⧃LB⧄W_{\mathrm{lost}}⧃RB⧄⧃LB⧄Q⧃RB⧄ \implies \sum \mathcal{E} = \sum IR$$
+$$\frac◆LB◆W_{\mathrm{gained}}◆RB◆◆LB◆Q◆RB◆ = \frac◆LB◆W_{\mathrm{lost}}◆RB◆◆LB◆Q◆RB◆ \implies \sum \mathcal{E} = \sum IR$$
 
 $\square$
 
@@ -92,7 +92,7 @@ $$I = V\left(\frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}\right)$$
 
 The equivalent resistance satisfies $V/R_{\mathrm{parallel}} = I$:
 
-$$\boxed{\frac⧃LB⧄1⧃RB⧄⧃LB⧄R_{\mathrm{parallel}}⧃RB⧄ = \frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}}$$
+$$\boxed{\frac◆LB◆1◆RB◆◆LB◆R_{\mathrm{parallel}}◆RB◆ = \frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}}$$
 
 For two resistors in parallel:
 
@@ -122,7 +122,7 @@ $$V_{\mathrm{out}} = V_{\mathrm{in}} \times \frac{R_2}{R_1 + R_2}$$
 **Derivation.** The current through both resistors is $I = V_{\mathrm{in}}/(R_1 + R_2)$. The p.d.
 across $R_2$ is:
 
-$$V_{\mathrm{out}} = IR_2 = \frac⧃LB⧄V_{\mathrm{in}}⧃RB⧄⧃LB⧄R_1 + R_2⧃RB⧄ \cdot R_2 = V_{\mathrm{in}} \cdot \frac{R_2}{R_1 + R_2}$$
+$$V_{\mathrm{out}} = IR_2 = \frac◆LB◆V_{\mathrm{in}}◆RB◆◆LB◆R_1 + R_2◆RB◆ \cdot R_2 = V_{\mathrm{in}} \cdot \frac{R_2}{R_1 + R_2}$$
 
 $\square$
 
@@ -136,7 +136,7 @@ contact. It can provide any output voltage from 0 to $V_{\mathrm{in}}$.
 A thermistor or LDR can replace one resistor, creating a voltage that varies with temperature or
 light intensity:
 
-$$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac⧃LB⧄R_{\mathrm{sensor}}⧃RB⧄⧃LB⧄R_{\mathrm{fixed}} + R_{\mathrm{sensor}}⧃RB⧄$$
+$$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac◆LB◆R_{\mathrm{sensor}}◆RB◆◆LB◆R_{\mathrm{fixed}} + R_{\mathrm{sensor}}◆RB◆$$
 
 :::warning
 Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
@@ -162,11 +162,11 @@ current increases.
 Consider a cell of e.m.f. $\mathcal{E}$ and internal resistance $r$ connected to an external circuit
 of resistance $R$. The total resistance in the circuit is $R + r$.
 
-$$I = \frac⧃LB⧄\mathcal{E}⧃RB⧄⧃LB⧄R + r⧃RB⧄$$
+$$I = \frac◆LB◆\mathcal{E}◆RB◆◆LB◆R + r◆RB◆$$
 
 The terminal p.d. (voltage across the external circuit) is:
 
-$$V = IR = \frac⧃LB⧄\mathcal{E}R⧃RB⧄⧃LB⧄R + r⧃RB⧄ = \mathcal{E}\left(\frac{R}{R+r}\right)$$
+$$V = IR = \frac◆LB◆\mathcal{E}R◆RB◆◆LB◆R + r◆RB◆ = \mathcal{E}\left(\frac{R}{R+r}\right)$$
 
 Alternatively, by Kirchhoff's second law around the full circuit:
 
@@ -176,7 +176,7 @@ The "lost volts" is $Ir$ — the p.d. across the internal resistance.
 
 **Maximum power transfer.** The power delivered to the load is:
 
-$$P = I^2R = \frac⧃LB⧄\mathcal{E}^2 R⧃RB⧄⧃LB⧄(R+r)^2⧃RB⧄$$
+$$P = I^2R = \frac◆LB◆\mathcal{E}^2 R◆RB◆◆LB◆(R+r)^2◆RB◆$$
 
 Differentiating with respect to $R$ and setting $dP/dR = 0$ gives $R = r$. Maximum power is
 delivered when the load resistance equals the internal resistance.
@@ -225,7 +225,7 @@ $R_1 = 6\,\Omega$ and $R_2 = 3\,\Omega$, across terminals A and B that are acros
 $V_{\mathrm{Th}} = 12 \times \frac{3}{6+3} = 4.0$ V.
 
 $R_{\mathrm{Th}}$ = resistance between A and B with the 12 V source shorted:
-$R_{\mathrm{Th}} = R_1 \| R_2 = \frac⧃LB⧄6 \times 3⧃RB⧄⧃LB⧄6+3⧃RB⧄ = 2.0$ $\Omega$.
+$R_{\mathrm{Th}} = R_1 \| R_2 = \frac◆LB◆6 \times 3◆RB◆◆LB◆6+3◆RB◆ = 2.0$ $\Omega$.
 
 The circuit is equivalent to a 4.0 V source with $2.0\,\Omega$ internal resistance.
 
@@ -287,7 +287,7 @@ where $R$ is the known resistance, $S$ is the unknown, and $l$ is the balance le
 A Wheatstone bridge has $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$, $R_3 = 150\,\Omega$. Find $R_4$
 for balance.
 
-**Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac⧃LB⧄200 \times 150⧃RB⧄⧃LB⧄100⧃RB⧄ = 300\,\Omega$.
+**Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac◆LB◆200 \times 150◆RB◆◆LB◆100◆RB◆ = 300\,\Omega$.
 
 </details>
 
@@ -317,7 +317,7 @@ short-circuited, current sources open-circuited).
 
 Thevenin and Norton equivalents are related by:
 
-$$I_N = \frac⧃LB⧄V_{\mathrm{Th}}⧃RB⧄⧃LB⧄R_{\mathrm{Th}}⧃RB⧄, \qquad R_N = R_{\mathrm{Th}}$$
+$$I_N = \frac◆LB◆V_{\mathrm{Th}}◆RB◆◆LB◆R_{\mathrm{Th}}◆RB◆, \qquad R_N = R_{\mathrm{Th}}$$
 
 A voltage source $V_{\mathrm{Th}}$ in series with $R_{\mathrm{Th}}$ is equivalent to a current
 source $I_N$ in parallel with $R_N$.
@@ -395,7 +395,7 @@ $$R_{\mathrm{eff}} = \frac{R_2 R_V}{R_2 + R_V}$$
 
 The measured voltage is:
 
-$$V_{\mathrm{measured}} = V_{\mathrm{in}} \cdot \frac⧃LB⧄R_{\mathrm{eff}}⧃RB⧄⧃LB⧄R_1 + R_{\mathrm{eff}}⧃RB⧄$$
+$$V_{\mathrm{measured}} = V_{\mathrm{in}} \cdot \frac◆LB◆R_{\mathrm{eff}}◆RB◆◆LB◆R_1 + R_{\mathrm{eff}}◆RB◆$$
 
 which is always less than the true voltage
 $V_{\mathrm{true}} = V_{\mathrm{in}} \cdot R_2/(R_1 + R_2)$.
@@ -413,7 +413,7 @@ A series "multiplier" resistor $R_s$ is added so that at full scale:
 
 $$V_{\mathrm{range}} = I_g(R_g + R_s)$$
 
-$$\boxed{R_s = \frac⧃LB⧄V_{\mathrm{range}}⧃RB⧄⧃LB⧄I_g⧃RB⧄ - R_g}$$
+$$\boxed{R_s = \frac◆LB◆V_{\mathrm{range}}◆RB◆◆LB◆I_g◆RB◆ - R_g}$$
 
 ### Ammeter Shunt
 
@@ -424,7 +424,7 @@ the galvanometer:
 
 $$I_g R_g = (I_{\mathrm{range}} - I_g) R_{\mathrm{shunt}}$$
 
-$$\boxed{R_{\mathrm{shunt}} = \frac⧃LB⧄R_g \cdot I_g⧃RB⧄⧃LB⧄I_{\mathrm{range}} - I_g⧃RB⧄}$$
+$$\boxed{R_{\mathrm{shunt}} = \frac◆LB◆R_g \cdot I_g◆RB◆◆LB◆I_{\mathrm{range}} - I_g◆RB◆}$$
 
 <details>
 <summary>Example: Ammeter Shunt Calculation</summary>
@@ -433,7 +433,7 @@ A galvanometer has $R_g = 50\,\Omega$ and full-scale current $I_g = 1.0$ mA. Cal
 resistance to convert it to a 0--5 A ammeter.
 
 **Answer.**
-$R_{\mathrm{shunt}} = \frac⧃LB⧄50 \times 1.0 \times 10^{-3}⧃RB⧄⧃LB⧄5.0 - 1.0 \times 10^{-3}⧃RB⧄ = \frac{0.050}{4.999} = 0.0100\,\Omega$.
+$R_{\mathrm{shunt}} = \frac◆LB◆50 \times 1.0 \times 10^{-3}◆RB◆◆LB◆5.0 - 1.0 \times 10^{-3}◆RB◆ = \frac{0.050}{4.999} = 0.0100\,\Omega$.
 
 Note the very small shunt resistance — most current bypasses the galvanometer.
 
@@ -477,7 +477,7 @@ A cell of e.m.f. 12 V and internal resistance 0.50 $\Omega$ is connected to a 5.
 resistor. Calculate: (a) the current, (b) the terminal p.d., (c) the power dissipated in the
 external resistor.
 
-**Answer.** (a) $I = \frac⧃LB⧄\mathcal{E}⧃RB⧄⧃LB⧄R + r⧃RB⧄ = \frac{12}{5.5 + 0.5} = \frac{12}{6.0} = 2.0$ A.
+**Answer.** (a) $I = \frac◆LB◆\mathcal{E}◆RB◆◆LB◆R + r◆RB◆ = \frac{12}{5.5 + 0.5} = \frac{12}{6.0} = 2.0$ A.
 
 (b) $V = \mathcal{E} - Ir = 12 - 2.0 \times 0.50 = 11$ V.
 
@@ -552,7 +552,7 @@ across a 24 V supply, with terminals across $R_2$.
 
 **Answer.** $V_{\mathrm{Th}} = 24 \times \frac{4}{8+4} = 24 \times \frac{1}{3} = 8.0$ V.
 
-$R_{\mathrm{Th}} = R_1 \| R_2 = \frac⧃LB⧄8 \times 4⧃RB⧄⧃LB⧄8+4⧃RB⧄ = \frac{32}{12} = 2.67\,\Omega$.
+$R_{\mathrm{Th}} = R_1 \| R_2 = \frac◆LB◆8 \times 4◆RB◆◆LB◆8+4◆RB◆ = \frac{32}{12} = 2.67\,\Omega$.
 
 <b>If you get this wrong, revise:</b> [Thevenin's Theorem](#5-thevenins-theorem)
 
@@ -564,7 +564,7 @@ Two 6 $\Omega$ resistors are connected in parallel and this combination is conne
 a 3 $\Omega$ resistor across a 12 V supply. Calculate: (a) the total resistance, (b) the current
 from the supply, (c) the p.d. across the parallel combination.
 
-**Answer.** (a) $R_{\parallel} = \frac⧃LB⧄6 \times 6⧃RB⧄⧃LB⧄6+6⧃RB⧄ = 3\,\Omega$.
+**Answer.** (a) $R_{\parallel} = \frac◆LB◆6 \times 6◆RB◆◆LB◆6+6◆RB◆ = 3\,\Omega$.
 $R_{\mathrm{total}} = 3 + 3 = 6\,\Omega$.
 
 (b) $I = 12/6 = 2.0$ A.
@@ -597,7 +597,7 @@ over-driven (it would likely burn out).
 In the circuit below, find the current through each resistor: $R_1 = 2\,\Omega$ and
 $R_2 = 4\,\Omega$ in parallel, connected in series with $R_3 = 3\,\Omega$, across a 10 V supply.
 
-**Answer.** $R_{\parallel} = \frac⧃LB⧄2 \times 4⧃RB⧄⧃LB⧄2+4⧃RB⧄ = \frac{8}{6} = 1.33\,\Omega$.
+**Answer.** $R_{\parallel} = \frac◆LB◆2 \times 4◆RB◆◆LB◆2+4◆RB◆ = \frac{8}{6} = 1.33\,\Omega$.
 $R_{\mathrm{total}} = 1.33 + 3 = 4.33\,\Omega$.
 
 $I_{\mathrm{total}} = 10/4.33 = 2.31$ A.
@@ -647,7 +647,7 @@ $V_{\mathrm{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{105
 A cell of e.m.f. $\mathcal{E}$ and internal resistance $r$ delivers maximum power to an external
 load. Prove that maximum power is delivered when $R = r$, and find the efficiency at this condition.
 
-**Answer.** $P = \left(\frac⧃LB⧄\mathcal{E}⧃RB⧄⧃LB⧄R+r⧃RB⧄\right)^2 R = \frac⧃LB⧄\mathcal{E}^2 R⧃RB⧄⧃LB⧄(R+r)^2⧃RB⧄$.
+**Answer.** $P = \left(\frac◆LB◆\mathcal{E}◆RB◆◆LB◆R+r◆RB◆\right)^2 R = \frac◆LB◆\mathcal{E}^2 R◆RB◆◆LB◆(R+r)^2◆RB◆$.
 
 $\frac{dP}{dR} = \mathcal{E}^2 \cdot \frac{(R+r)^2 - 2R(R+r)}{(R+r)^4} = \mathcal{E}^2 \cdot \frac{r - R}{(R+r)^3}$.
 
@@ -667,7 +667,7 @@ $= P_{\mathrm{load}}/P_{\mathrm{total}} = 1/2 = 50\%$.
 <summary>Problem 13</summary>
 A Wheatstone bridge has $R_1 = 120\,\Omega$, $R_2 = 180\,\Omega$, and $R_3 = 200\,\Omega$. Find $R_4$ for balance.
 
-**Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac⧃LB⧄180 \times 200⧃RB⧄⧃LB⧄120⧃RB⧄ = 300\,\Omega$.
+**Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac◆LB◆180 \times 200◆RB◆◆LB◆120◆RB◆ = 300\,\Omega$.
 
 <b>If you get this wrong, revise:</b> [Wheatstone Bridge](#6-wheatstone-bridge)
 
@@ -692,7 +692,7 @@ A potential divider with $R_1 = 10\,\mathrm{k}\Omega$ and $R_2 = 10\,\mathrm{k}\
 
 **Answer.** True voltage: $V_{\mathrm{true}} = 12 \times \frac{10}{20} = 6.00$ V.
 
-$R_{\mathrm{eff}} = \frac⧃LB⧄10 \times 10⧃RB⧄⧃LB⧄10 + 10⧃RB⧄ = 5.0\,\mathrm{k}\Omega$.
+$R_{\mathrm{eff}} = \frac◆LB◆10 \times 10◆RB◆◆LB◆10 + 10◆RB◆ = 5.0\,\mathrm{k}\Omega$.
 
 $V_{\mathrm{measured}} = 12 \times \frac{5.0}{10 + 5.0} = 12 \times \frac{1}{3} = 4.00$ V.
 
@@ -708,7 +708,7 @@ Loading error $= \frac{6.00 - 4.00}{6.00} \times 100 = 33.3\%$.
 A galvanometer has $R_g = 100\,\Omega$ and full-scale deflection at $I_g = 50\,\mu$A. Calculate the multiplier resistance needed to convert it into a voltmeter with range 0--50 V.
 
 **Answer.**
-$R_s = \frac⧃LB⧄V_{\mathrm{range}}⧃RB⧄⧃LB⧄I_g⧃RB⧄ - R_g = \frac⧃LB⧄50⧃RB⧄⧃LB⧄50 \times 10^{-6}⧃RB⧄ - 100 = 10^6 - 100 \approx 1.0\,\mathrm{M}\Omega$.
+$R_s = \frac◆LB◆V_{\mathrm{range}}◆RB◆◆LB◆I_g◆RB◆ - R_g = \frac◆LB◆50◆RB◆◆LB◆50 \times 10^{-6}◆RB◆ - 100 = 10^6 - 100 \approx 1.0\,\mathrm{M}\Omega$.
 
 <b>If you get this wrong, revise:</b>
 [Measuring Instruments and Loading Effects](#9-measuring-instruments-and-loading-effects)

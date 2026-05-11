@@ -55,7 +55,7 @@ For two springs with spring constants $k_1$ and $k_2$:
 
 **Series** (force is the same through both, extensions add):
 
-$$\frac⧃LB⧄1⧃RB⧄⧃LB⧄k_{\mathrm{series}}⧃RB⧄ = \frac{1}{k_1} + \frac{1}{k_2}$$
+$$\frac◆LB◆1◆RB◆◆LB◆k_{\mathrm{series}}◆RB◆ = \frac{1}{k_1} + \frac{1}{k_2}$$
 
 **Parallel** (extension is the same for both, forces add):
 
@@ -87,7 +87,7 @@ $\sim 10^6$ Pa for soft metals to $\sim 10^9$ Pa for steel.
 
 **Definition.** **Strain** $\varepsilon$ is the extension per unit original length:
 
-$$\boxed{\varepsilon = \frac⧃LB⧄\Delta L⧃RB⧄⧃LB⧄L⧃RB⧄}$$
+$$\boxed{\varepsilon = \frac◆LB◆\Delta L◆RB◆◆LB◆L◆RB◆}$$
 
 Strain is dimensionless (a ratio). It is often expressed as a percentage.
 
@@ -105,7 +105,7 @@ concrete.
 **Definition.** The **Young's modulus** $E$ of a material is the ratio of tensile stress to tensile
 strain, within the limit of proportionality:
 
-$$\boxed{E = \frac⧃LB⧄\sigma⧃RB⧄⧃LB⧄\varepsilon⧃RB⧄ = \frac⧃LB⧄F/A⧃RB⧄⧃LB⧄\Delta L/L⧃RB⧄ = \frac⧃LB⧄FL⧃RB⧄⧃LB⧄A\,\Delta L⧃RB⧄}$$
+$$\boxed{E = \frac◆LB◆\sigma◆RB◆◆LB◆\varepsilon◆RB◆ = \frac◆LB◆F/A◆RB◆◆LB◆\Delta L/L◆RB◆ = \frac◆LB◆FL◆RB◆◆LB◆A\,\Delta L◆RB◆}$$
 
 Young's modulus is a measure of **stiffness** — the resistance of a material to elastic deformation
 under tensile loading. It has units of Pa (same as stress, since strain is dimensionless).
@@ -140,7 +140,7 @@ A standard experiment uses a wire clamped at one end with masses hung from the o
 3. Add known masses $m$ and record the extension $\Delta L$ with a vernier scale or Searle's
    apparatus.
 4. Plot a graph of force $F = mg$ against extension $\Delta L$.
-5. The gradient is $k = F/\Delta L$. Then $E = kL/A = \frac⧃LB⧄FL⧃RB⧄⧃LB⧄A\,\Delta L⧃RB⧄$.
+5. The gradient is $k = F/\Delta L$. Then $E = kL/A = \frac◆LB◆FL◆RB◆◆LB◆A\,\Delta L◆RB◆$.
 
 Alternatively, plot stress against strain — the gradient is $E$ directly.
 
@@ -171,11 +171,11 @@ $$F = k\,\Delta x$$
 
 Multiply both sides by $L/(A\,\Delta x)$:
 
-$$\frac⧃LB⧄FL⧃RB⧄⧃LB⧄A\,\Delta x⧃RB⧄ = \frac{kL}{A}$$
+$$\frac◆LB◆FL◆RB◆◆LB◆A\,\Delta x◆RB◆ = \frac{kL}{A}$$
 
 Define $\sigma = F/A$, $\varepsilon = \Delta x/L$:
 
-$$\frac⧃LB⧄\sigma⧃RB⧄⧃LB⧄\varepsilon⧃RB⧄ = \frac{kL}{A} = E$$
+$$\frac◆LB◆\sigma◆RB◆◆LB◆\varepsilon◆RB◆ = \frac{kL}{A} = E$$
 
 Since $k$, $L$, and $A$ are all constants for a given sample (within the proportional limit), $E$ is
 a constant of the material — it does not depend on the dimensions of the sample. $\square$
@@ -265,11 +265,11 @@ $$dW = \sigma A\,d(\Delta L) = E\varepsilon A \cdot L\,d\varepsilon = EAL\,\vare
 
 Integrating from $\varepsilon = 0$ to $\varepsilon = \varepsilon_{\max}$:
 
-$$E_e = \int_0^{\varepsilon_{\max}} EAL\,\varepsilon\,d\varepsilon = EAL\left[\frac⧃LB⧄\varepsilon^2⧃RB⧄⧃LB⧄2⧃RB⧄\right]_0^{\varepsilon_{\max}} = \frac{1}{2}EAL\,\varepsilon_{\max}^2$$
+$$E_e = \int_0^{\varepsilon_{\max}} EAL\,\varepsilon\,d\varepsilon = EAL\left[\frac◆LB◆\varepsilon^2◆RB◆◆LB◆2◆RB◆\right]_0^{\varepsilon_{\max}} = \frac{1}{2}EAL\,\varepsilon_{\max}^2$$
 
 Since $E\varepsilon = \sigma$ and $AL = V$ (volume of the wire):
 
-$$\boxed{E_e = \frac{1}{2}\,\frac⧃LB⧄\sigma^2⧃RB⧄⧃LB⧄E⧃RB⧄\,V}$$
+$$\boxed{E_e = \frac{1}{2}\,\frac◆LB◆\sigma^2◆RB◆◆LB◆E◆RB◆\,V}$$
 
 Alternatively, using $\varepsilon = \sigma/E$:
 
@@ -452,7 +452,7 @@ Calculate the ratio of their extensions.
 **Answer.** For the same $F$, $L$, and $A$: $\Delta L = FL/(AE)$, so $\Delta L \propto 1/E$.
 
 Ratio:
-$\frac⧃LB⧄\Delta L_{\mathrm{rubber}}⧃RB⧄⧃LB⧄\Delta L_{\mathrm{steel}}⧃RB⧄ = \frac⧃LB⧄E_{\mathrm{steel}}⧃RB⧄⧃LB⧄E_{\mathrm{rubber}}⧃RB⧄ = \frac⧃LB⧄2.0 \times 10^{11}⧃RB⧄⧃LB⧄5.0 \times 10^6⧃RB⧄ = 4.0 \times 10^4$.
+$\frac◆LB◆\Delta L_{\mathrm{rubber}}◆RB◆◆LB◆\Delta L_{\mathrm{steel}}◆RB◆ = \frac◆LB◆E_{\mathrm{steel}}◆RB◆◆LB◆E_{\mathrm{rubber}}◆RB◆ = \frac◆LB◆2.0 \times 10^{11}◆RB◆◆LB◆5.0 \times 10^6◆RB◆ = 4.0 \times 10^4$.
 
 The rubber cord extends $40,000$ times more than the steel wire under the same load.
 

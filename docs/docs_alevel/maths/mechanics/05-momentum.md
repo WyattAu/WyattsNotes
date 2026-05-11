@@ -53,10 +53,10 @@ $$\sum \mathbf{p}_{\mathrm{before}} = \sum \mathbf{p}_{\mathrm{after}}$$
 
 $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
-By Newton's Second Law: $\mathbf{F}_{AB} = \dfrac⧃LB⧄d\mathbf{p}_A⧃RB⧄⧃LB⧄dt⧃RB⧄$ and
-$\mathbf{F}_{BA} = \dfrac⧃LB⧄d\mathbf{p}_B⧃RB⧄⧃LB⧄dt⧃RB⧄$.
+By Newton's Second Law: $\mathbf{F}_{AB} = \dfrac◆LB◆d\mathbf{p}_A◆RB◆◆LB◆dt◆RB◆$ and
+$\mathbf{F}_{BA} = \dfrac◆LB◆d\mathbf{p}_B◆RB◆◆LB◆dt◆RB◆$.
 
-$$\frac⧃LB⧄d\mathbf{p}_A⧃RB⧄⧃LB⧄dt⧃RB⧄ + \frac⧃LB⧄d\mathbf{p}_B⧃RB⧄⧃LB⧄dt⧃RB⧄ = 0 \implies \frac{d}{dt}(\mathbf{p}_A + \mathbf{p}_B) = 0$$
+$$\frac◆LB◆d\mathbf{p}_A◆RB◆◆LB◆dt◆RB◆ + \frac◆LB◆d\mathbf{p}_B◆RB◆◆LB◆dt◆RB◆ = 0 \implies \frac{d}{dt}(\mathbf{p}_A + \mathbf{p}_B) = 0$$
 
 So $\mathbf{p}_A + \mathbf{p}_B = \mathrm{constant}$. $\blacksquare$
 
@@ -78,7 +78,7 @@ $$\mathbf{J} = \mathbf{F}\,\Delta t = \Delta\mathbf{p} = m\mathbf{v} - m\mathbf{
 
 **Proof.** From Newton's Second Law:
 
-$$\mathbf{F} = \frac⧃LB⧄d\mathbf{p}⧃RB⧄⧃LB⧄dt⧃RB⧄ \implies \mathbf{F}\,dt = d\mathbf{p}$$
+$$\mathbf{F} = \frac◆LB◆d\mathbf{p}◆RB◆◆LB◆dt◆RB◆ \implies \mathbf{F}\,dt = d\mathbf{p}$$
 
 Integrating over $[t_1, t_2]$:
 
@@ -118,9 +118,9 @@ independently.
 
 **Definition.** The coefficient of restitution $e$ between two colliding bodies is
 
-$$e = \frac⧃LB⧄\mathrm{relative speed of separation}⧃RB⧄⧃LB⧄\mathrm{relative speed of approach}⧃RB⧄$$
+$$e = \frac◆LB◆\mathrm{relative speed of separation}◆RB◆◆LB◆\mathrm{relative speed of approach}◆RB◆$$
 
-For a collision between a body and a wall: $$e = \frac⧃LB⧄v_{\mathrm{after}}⧃RB⧄⧃LB⧄u_{\mathrm{before}}⧃RB⧄$$
+For a collision between a body and a wall: $$e = \frac◆LB◆v_{\mathrm{after}}◆RB◆◆LB◆u_{\mathrm{before}}◆RB◆$$
 
 For two bodies: $$e = \frac{v_2 - v_1}{u_1 - u_2}$$
 
@@ -200,7 +200,7 @@ This holds for both constant and variable forces.
 
 Newton's Second Law in its most general form expresses force as the rate of change of momentum:
 
-$$\mathbf{F} = \frac⧃LB⧄d\mathbf{p}⧃RB⧄⧃LB⧄dt⧃RB⧄$$
+$$\mathbf{F} = \frac◆LB◆d\mathbf{p}◆RB◆◆LB◆dt◆RB◆$$
 
 This is more fundamental than $\mathbf{F} = m\mathbf{a}$ because it remains valid even when mass
 changes (e.g. rocket propulsion). Rearranging and integrating:
@@ -274,7 +274,7 @@ After collision:
 
 $x$-momentum: $3(1.5\sqrt{3}) + 2(3\cos\theta) = 12 \implies 4.5\sqrt{3} + 6\cos\theta = 12$
 
-$\cos\theta = \dfrac⧃LB⧄12 - 4.5\sqrt{3}⧃RB⧄⧃LB⧄6⧃RB⧄ = \dfrac{12 - 7.794}{6} \approx 0.701$
+$\cos\theta = \dfrac◆LB◆12 - 4.5\sqrt{3}◆RB◆◆LB◆6◆RB◆ = \dfrac{12 - 7.794}{6} \approx 0.701$
 
 $\theta \approx 45.5^\circ$.
 
@@ -283,7 +283,7 @@ $3(1.5) + 2(-3\sin\theta) = 0 \implies 4.5 = 6\sin\theta \implies \sin\theta = 0
 $\theta \approx 48.6^\circ$.
 
 The slight discrepancy arises from rounding $1.5\sqrt{3}$. Using exact values:
-$1.5\sqrt{3} = \frac⧃LB⧄3\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$, $12 - 4.5\sqrt{3} = 12 - \frac⧃LB⧄9\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$. From $y$:
+$1.5\sqrt{3} = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$, $12 - 4.5\sqrt{3} = 12 - \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆2◆RB◆$. From $y$:
 $\sin\theta = 0.75$, $\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6614$. From $x$:
 $\cos\theta = (12 - 4.5\sqrt{3})/6 \approx 0.701$. These are not equal, indicating the stated speeds
 are not exactly consistent with momentum conservation — a useful check in exam problems.
@@ -326,7 +326,7 @@ and direction of each sphere after collision.
 
 **Before collision:**
 
-- $A$: $u_{A,\parallel} = 5\cos 30° = \frac⧃LB⧄5\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$, $u_{A,\perp} = 5\sin 30° = 2.5$
+- $A$: $u_{A,\parallel} = 5\cos 30° = \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$, $u_{A,\perp} = 5\sin 30° = 2.5$
 - $B$: $u_{B,\parallel} = 0$, $u_{B,\perp} = 0$
 
 **After collision (perpendicular unchanged):**
@@ -335,28 +335,28 @@ and direction of each sphere after collision.
 
 **Along the line of centres (1D collision with $e = 0.6$):**
 
-Momentum: $3 \cdot \frac⧃LB⧄5\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + 2 \cdot 0 = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$
+Momentum: $3 \cdot \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆ + 2 \cdot 0 = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$
 
-$$\frac⧃LB⧄15\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$$
+$$\frac◆LB◆15\sqrt{3}◆RB◆◆LB◆2◆RB◆ = 3\,v_{A,\parallel} + 2\,v_{B,\parallel}$$
 
 Restitution:
-$v_{B,\parallel} - v_{A,\parallel} = 0.6 \cdot \frac⧃LB⧄5\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄3\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$
+$v_{B,\parallel} - v_{A,\parallel} = 0.6 \cdot \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$
 
-So $v_{B,\parallel} = v_{A,\parallel} + \frac⧃LB⧄3\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$. Substituting into the momentum
+So $v_{B,\parallel} = v_{A,\parallel} + \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$. Substituting into the momentum
 equation:
 
-$$\frac⧃LB⧄15\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = 3\,v_{A,\parallel} + 2\!\left(v_{A,\parallel} + \frac⧃LB⧄3\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄\right) = 5\,v_{A,\parallel} + 3\sqrt{3}$$
+$$\frac◆LB◆15\sqrt{3}◆RB◆◆LB◆2◆RB◆ = 3\,v_{A,\parallel} + 2\!\left(v_{A,\parallel} + \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆\right) = 5\,v_{A,\parallel} + 3\sqrt{3}$$
 
-$$5\,v_{A,\parallel} = \frac⧃LB⧄15\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ - 3\sqrt{3} = \frac⧃LB⧄15\sqrt{3} - 6\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄9\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$5\,v_{A,\parallel} = \frac◆LB◆15\sqrt{3}◆RB◆◆LB◆2◆RB◆ - 3\sqrt{3} = \frac◆LB◆15\sqrt{3} - 6\sqrt{3}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆2◆RB◆$$
 
-$$v_{A,\parallel} = \frac⧃LB⧄9\sqrt{3}⧃RB⧄⧃LB⧄10⧃RB⧄ \approx 1.559\,\mathrm{m/s}$$
+$$v_{A,\parallel} = \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆10◆RB◆ \approx 1.559\,\mathrm{m/s}$$
 
-$$v_{B,\parallel} = \frac⧃LB⧄9\sqrt{3}⧃RB⧄⧃LB⧄10⧃RB⧄ + \frac⧃LB⧄3\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄9\sqrt{3} + 15\sqrt{3}⧃RB⧄⧃LB⧄10⧃RB⧄ = \frac⧃LB⧄24\sqrt{3}⧃RB⧄⧃LB⧄10⧃RB⧄ = \frac⧃LB⧄12\sqrt{3}⧃RB⧄⧃LB⧄5⧃RB⧄ \approx 4.157\,\mathrm{m/s}$$
+$$v_{B,\parallel} = \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆10◆RB◆ + \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆9\sqrt{3} + 15\sqrt{3}◆RB◆◆LB◆10◆RB◆ = \frac◆LB◆24\sqrt{3}◆RB◆◆LB◆10◆RB◆ = \frac◆LB◆12\sqrt{3}◆RB◆◆LB◆5◆RB◆ \approx 4.157\,\mathrm{m/s}$$
 
 **Speed of $A$:**
-$|v_A| = \sqrt⧃LB⧄v_{A,\parallel}^2 + v_{A,\perp}^2⧃RB⧄ = \sqrt⧃LB⧄\left(\frac{9\sqrt{3}}{10}\right)^2 + 2.5^2⧃RB⧄ = \sqrt{2.43 + 6.25} = \sqrt{8.68} \approx 2.95\,\mathrm{m/s}$
+$|v_A| = \sqrt◆LB◆v_{A,\parallel}^2 + v_{A,\perp}^2◆RB◆ = \sqrt◆LB◆\left(\frac{9\sqrt{3}}{10}\right)^2 + 2.5^2◆RB◆ = \sqrt{2.43 + 6.25} = \sqrt{8.68} \approx 2.95\,\mathrm{m/s}$
 
-**Speed of $B$:** $|v_B| = v_{B,\parallel} = \frac⧃LB⧄12\sqrt{3}⧃RB⧄⧃LB⧄5⧃RB⧄ \approx 4.16\,\mathrm{m/s}$ (moves
+**Speed of $B$:** $|v_B| = v_{B,\parallel} = \frac◆LB◆12\sqrt{3}◆RB◆◆LB◆5◆RB◆ \approx 4.16\,\mathrm{m/s}$ (moves
 along the line of centres only).
 
 <hr />
@@ -387,11 +387,11 @@ Let the particle approach with speed $u$ at angle $\alpha$ to the normal of the 
 
 The speed after collision is:
 
-$$v = \sqrt{v_n^2 + v_t^2} = u\sqrt⧃LB⧄e^2\cos^2\alpha + \sin^2\alpha⧃RB⧄$$
+$$v = \sqrt{v_n^2 + v_t^2} = u\sqrt◆LB◆e^2\cos^2\alpha + \sin^2\alpha◆RB◆$$
 
 The angle of rebound $\beta$ to the normal satisfies:
 
-$$\tan\beta = \frac⧃LB⧄v_t⧃RB⧄⧃LB⧄|v_n|⧃RB⧄ = \frac⧃LB⧄u\sin\alpha⧃RB⧄⧃LB⧄e\,u\cos\alpha⧃RB⧄ = \frac⧃LB⧄\tan\alpha⧃RB⧄⧃LB⧄e⧃RB⧄$$
+$$\tan\beta = \frac◆LB◆v_t◆RB◆◆LB◆|v_n|◆RB◆ = \frac◆LB◆u\sin\alpha◆RB◆◆LB◆e\,u\cos\alpha◆RB◆ = \frac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆$$
 
 ### 9.3 Angle relationships
 
@@ -681,9 +681,9 @@ $1\,\mathrm{kg}$ fragment: $p_x = 1 \times 12\cos 60° = 6$, $p_y = 1 \times 12\
 By conservation: $3\,v_x + 6 = 0 \implies v_x = -2\,\mathrm{m/s}$.
 $3\,v_y + 6\sqrt{3} = 0 \implies v_y = -2\sqrt{3}\,\mathrm{m/s}$.
 
-Speed: $|v| = \sqrt⧃LB⧄(-2)^2 + (-2\sqrt{3})^2⧃RB⧄ = \sqrt{4 + 12} = \sqrt{16} = 4\,\mathrm{m/s}$.
+Speed: $|v| = \sqrt◆LB◆(-2)^2 + (-2\sqrt{3})^2◆RB◆ = \sqrt{4 + 12} = \sqrt{16} = 4\,\mathrm{m/s}$.
 
-Direction: $\theta = \arctan\!\left(\frac⧃LB⧄-2\sqrt{3}⧃RB⧄⧃LB⧄-2⧃RB⧄\right) = \arctan(\sqrt{3}) = 60^\circ$
+Direction: $\theta = \arctan\!\left(\frac◆LB◆-2\sqrt{3}◆RB◆◆LB◆-2◆RB◆\right) = \arctan(\sqrt{3}) = 60^\circ$
 below the horizontal (south-west).
 
 **If you get this wrong, revise:**
@@ -702,7 +702,7 @@ A ball strikes a smooth horizontal floor at $10\,\mathrm{m/s}$ at an angle of $5
 Let the normal (vertical) be the reference direction. Angle to normal: $\alpha = 50^\circ$ before,
 $\beta = 65^\circ$ after.
 
-$\tan\beta = \dfrac⧃LB⧄\tan\alpha⧃RB⧄⧃LB⧄e⧃RB⧄ \implies e = \dfrac⧃LB⧄\tan\alpha⧃RB⧄⧃LB⧄\tan\beta⧃RB⧄ = \dfrac⧃LB⧄\tan 50°⧃RB⧄⧃LB⧄\tan 65°⧃RB⧄$.
+$\tan\beta = \dfrac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆ \implies e = \dfrac◆LB◆\tan\alpha◆RB◆◆LB◆\tan\beta◆RB◆ = \dfrac◆LB◆\tan 50°◆RB◆◆LB◆\tan 65°◆RB◆$.
 
 $\tan 50° \approx 1.192$, $\tan 65° \approx 2.145$.
 
@@ -800,7 +800,7 @@ A ball is projected horizontally at $8\,\mathrm{m/s}$ from a height of $5\,\math
 
 <details>
 <summary>Solution 15</summary>
-Speed just before first impact: $v_y = \sqrt{2gh} = \sqrt⧃LB⧄2 \times 9.8 \times 5⧃RB⧄ = \sqrt{98} \approx 9.899\,\mathrm{m/s}$.
+Speed just before first impact: $v_y = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.8 \times 5◆RB◆ = \sqrt{98} \approx 9.899\,\mathrm{m/s}$.
 Horizontal: $v_x = 8\,\mathrm{m/s}$ (constant).
 
 After first bounce: $v_{y,1} = e \cdot v_y = 0.75 \times 9.899 \approx 7.424\,\mathrm{m/s}$
@@ -810,7 +810,7 @@ Height reached after first bounce:
 $h_1 = \frac{v_{y,1}^2}{2g} = \frac{7.424^2}{19.6} = \frac{55.12}{19.6} \approx 2.812\,\mathrm{m}$.
 
 Speed just before second impact:
-$v_{y,2} = \sqrt⧃LB⧄2 \times 9.8 \times 2.812⧃RB⧄ \approx 7.424\,\mathrm{m/s}$ (downward).
+$v_{y,2} = \sqrt◆LB◆2 \times 9.8 \times 2.812◆RB◆ \approx 7.424\,\mathrm{m/s}$ (downward).
 
 After second bounce: $v_{y,2}' = e \times 7.424 = 0.75 \times 7.424 \approx 5.568\,\mathrm{m/s}$
 (upward). $v_{x,2} = 8\,\mathrm{m/s}$ (unchanged).
@@ -872,7 +872,7 @@ $$= \frac{(1-e^2)}{4}\,u^2\cos^2\theta$$
 Wait, this is not zero unless $e = 1$. Let me reconsider.
 
 Actually, the angle between $\mathbf{v}_A$ and the line of centres is $\alpha$ where
-$\tan\alpha = \frac⧃LB⧄v_{A,\perp}⧃RB⧄⧃LB⧄v_{A,\parallel}⧃RB⧄ = \frac⧃LB⧄u\sin\theta⧃RB⧄⧃LB⧄\frac{(1-e)}{2}\,u\cos\theta⧃RB⧄ = \frac⧃LB⧄2\tan\theta⧃RB⧄⧃LB⧄1-e⧃RB⧄$.
+$\tan\alpha = \frac◆LB◆v_{A,\perp}◆RB◆◆LB◆v_{A,\parallel}◆RB◆ = \frac◆LB◆u\sin\theta◆RB◆◆LB◆\frac{(1-e)}{2}\,u\cos\theta◆RB◆ = \frac◆LB◆2\tan\theta◆RB◆◆LB◆1-e◆RB◆$.
 
 The angle between $\mathbf{v}_B$ and the line of centres is $0$ (it moves along the line of
 centres).

@@ -42,12 +42,12 @@ Consider two bodies $A$ and $B$ that interact with each other but with no extern
 
 By Newton's third law: $\mathbf{F}_{AB} = -\mathbf{F}_{BA}$.
 
-By Newton's second law: $\mathbf{F}_{AB} = \frac⧃LB⧄d\mathbf{p}_A⧃RB⧄⧃LB⧄dt⧃RB⧄$ and
-$\mathbf{F}_{BA} = \frac⧃LB⧄d\mathbf{p}_B⧃RB⧄⧃LB⧄dt⧃RB⧄$.
+By Newton's second law: $\mathbf{F}_{AB} = \frac◆LB◆d\mathbf{p}_A◆RB◆◆LB◆dt◆RB◆$ and
+$\mathbf{F}_{BA} = \frac◆LB◆d\mathbf{p}_B◆RB◆◆LB◆dt◆RB◆$.
 
 Therefore:
 
-$$\frac⧃LB⧄d\mathbf{p}_A⧃RB⧄⧃LB⧄dt⧃RB⧄ = -\frac⧃LB⧄d\mathbf{p}_B⧃RB⧄⧃LB⧄dt⧃RB⧄ \implies \frac⧃LB⧄d\mathbf{p}_A⧃RB⧄⧃LB⧄dt⧃RB⧄ + \frac⧃LB⧄d\mathbf{p}_B⧃RB⧄⧃LB⧄dt⧃RB⧄ = 0 \implies \frac{d}{dt}(\mathbf{p}_A + \mathbf{p}_B) = 0$$
+$$\frac◆LB◆d\mathbf{p}_A◆RB◆◆LB◆dt◆RB◆ = -\frac◆LB◆d\mathbf{p}_B◆RB◆◆LB◆dt◆RB◆ \implies \frac◆LB◆d\mathbf{p}_A◆RB◆◆LB◆dt◆RB◆ + \frac◆LB◆d\mathbf{p}_B◆RB◆◆LB◆dt◆RB◆ = 0 \implies \frac{d}{dt}(\mathbf{p}_A + \mathbf{p}_B) = 0$$
 
 Hence $\mathbf{p}_A + \mathbf{p}_B = \mathrm{constant}$. $\square$
 
@@ -68,7 +68,7 @@ $$\mathbf{J} = \int_{t_1}^{t_2} \mathbf{F}(t)\,dt$$
 
 **Derivation from Newton's second law.**
 
-$$\mathbf{F} = \frac⧃LB⧄d\mathbf{p}⧃RB⧄⧃LB⧄dt⧃RB⧄ \implies \mathbf{F}\,dt = d\mathbf{p} \implies \int \mathbf{F}\,dt = \int d\mathbf{p} = \Delta\mathbf{p}$$
+$$\mathbf{F} = \frac◆LB◆d\mathbf{p}◆RB◆◆LB◆dt◆RB◆ \implies \mathbf{F}\,dt = d\mathbf{p} \implies \int \mathbf{F}\,dt = \int d\mathbf{p} = \Delta\mathbf{p}$$
 
 $\square$
 
@@ -195,7 +195,7 @@ i.e., $3v_1^2 - 2uv_1 + u^2 = 0$, i.e., $(v_1 - u)(3v_1 - u) = 0$.
 
 Since $v_1 \neq u$ (the particle deflects), $v_1 = u/3$. Then
 $v_2^2 = 4u^2 - 4u^2/3 + 4u^2/9 = \frac{36 - 12 + 4}{9}u^2 = \frac{28}{9}u^2$, so
-$v_2 = \frac⧃LB⧄2\sqrt{7}⧃RB⧄⧃LB⧄3⧃RB⧄u$.
+$v_2 = \frac◆LB◆2\sqrt{7}◆RB◆◆LB◆3◆RB◆u$.
 
 </details>
 
@@ -218,7 +218,7 @@ $p_i = 1500(20) + 1000(-15) = 30000 - 15000 = 15000$ kg m s$^{-1}$.
 $v = \frac{15000}{2500} = 6.0$ m s$^{-1}$ (in the original direction of the first car).
 
 KE lost:
-$\Delta E_k = \frac{m_1 m_2}{2(m_1+m_2)}(u_1 - u_2)^2 = \frac⧃LB⧄1500 \times 1000⧃RB⧄⧃LB⧄2 \times 2500⧃RB⧄(20-(-35))^2 = 300 \times 1225 = 367\,500$
+$\Delta E_k = \frac{m_1 m_2}{2(m_1+m_2)}(u_1 - u_2)^2 = \frac◆LB◆1500 \times 1000◆RB◆◆LB◆2 \times 2500◆RB◆(20-(-35))^2 = 300 \times 1225 = 367\,500$
 J.
 
 <b>If you get this wrong, revise:</b> [Inelastic Collision](#inelastic-collision)
@@ -242,7 +242,7 @@ $J = \Delta p = m(v - u) = 0.15(8 - (-12)) = 0.15 \times 20 = 3.0$ N s (away fro
 <summary>Problem 3</summary>
 In a nuclear reactor, a neutron of mass $m$ travelling at $v$ collides elastically with a stationary carbon nucleus of mass $12m$. What fraction of the neutron's kinetic energy is transferred to the carbon nucleus?
 
-**Answer.** $v_2 = \frac{2m_1 u_1}{m_1 + m_2} = \frac⧃LB⧄2m \cdot v⧃RB⧄⧃LB⧄m + 12m⧃RB⧄ = \frac{2v}{13}$.
+**Answer.** $v_2 = \frac{2m_1 u_1}{m_1 + m_2} = \frac◆LB◆2m \cdot v◆RB◆◆LB◆m + 12m◆RB◆ = \frac{2v}{13}$.
 
 KE of carbon =
 $\frac{1}{2}(12m)\left(\frac{2v}{13}\right)^2 = \frac{1}{2}(12m)\frac{4v^2}{169} = \frac{48mv^2}{338}$.
@@ -277,12 +277,12 @@ $\mathbf{u}$.
 By symmetry and KE conservation: both have speed $u\cos 60° = u/2$... No, let me be more careful.
 
 Momentum ($x$): $mu = mv_1\cos 30° + mv_2\cos 60^\circ$, i.e.,
-$u = \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄v_1 + \frac{1}{2}v_2$.
+$u = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆v_1 + \frac{1}{2}v_2$.
 
 Momentum ($y$): $0 = mv_1\sin 30° - mv_2\sin 60^\circ$, i.e., $v_1 = \sqrt{3}\,v_2$.
 
 Substituting:
-$u = \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄(\sqrt{3}v_2) + \frac{v_2}{2} = \frac{3v_2}{2} + \frac{v_2}{2} = 2v_2$. So
+$u = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆(\sqrt{3}v_2) + \frac{v_2}{2} = \frac{3v_2}{2} + \frac{v_2}{2} = 2v_2$. So
 $v_2 = u/2$ and $v_1 = \sqrt{3}u/2$.
 
 <b>If you get this wrong, revise:</b> [2D Collisions](#5-2d-collisions)
@@ -307,7 +307,7 @@ $\square$
 A $60$ kg astronaut floating in space throws a $2.0$ kg tool at $8.0$ m s$^{-1}$. What is the astronaut's recoil velocity?
 
 **Answer.** By conservation of momentum: $0 = m_a v_a + m_t v_t$.
-$v_a = -\frac{m_t v_t}{m_a} = -\frac⧃LB⧄2.0 \times 8.0⧃RB⧄⧃LB⧄60⧃RB⧄ = -0.267$ m s$^{-1}$ (opposite to the
+$v_a = -\frac{m_t v_t}{m_a} = -\frac◆LB◆2.0 \times 8.0◆RB◆◆LB◆60◆RB◆ = -0.267$ m s$^{-1}$ (opposite to the
 throw).
 
 <b>If you get this wrong, revise:</b> [Conservation of Momentum](#2-conservation-of-momentum)
@@ -318,13 +318,13 @@ throw).
 <summary>Problem 8</summary>
 A $0.50$ kg ball falls vertically from height $5.0$ m onto a concrete floor and rebounds to height $3.2$ m. Find the coefficient of restitution between the ball and the floor.
 
-**Answer.** Speed just before impact: $v_1 = \sqrt⧃LB⧄2g \times 5.0⧃RB⧄ = \sqrt{98.1} = 9.90$ m s$^{-1}$
+**Answer.** Speed just before impact: $v_1 = \sqrt◆LB◆2g \times 5.0◆RB◆ = \sqrt{98.1} = 9.90$ m s$^{-1}$
 (downward, so $u_1 = -9.90$).
 
-Speed just after impact: $v_2 = \sqrt⧃LB⧄2g \times 3.2⧃RB⧄ = \sqrt{62.78} = 7.92$ m s$^{-1}$ (upward).
+Speed just after impact: $v_2 = \sqrt◆LB◆2g \times 3.2◆RB◆ = \sqrt{62.78} = 7.92$ m s$^{-1}$ (upward).
 
 The floor has infinite mass, so
-$e = \frac⧃LB⧄v_{\mathrm{separation}}⧃RB⧄⧃LB⧄v_{\mathrm{approach}}⧃RB⧄ = \frac{7.92}{9.90} = 0.80$.
+$e = \frac◆LB◆v_{\mathrm{separation}}◆RB◆◆LB◆v_{\mathrm{approach}}◆RB◆ = \frac{7.92}{9.90} = 0.80$.
 
 <b>If you get this wrong, revise:</b> [Coefficient of Restitution](#coefficient-of-restitution)
 
@@ -394,7 +394,7 @@ The parallel component is unchanged because the wall exerts no force parallel to
 Exam Technique For a ball hitting a smooth wall at angle $\alpha$ to the normal with speed
 $u$ and rebounding with the normal component reduced by factor $e$: the impulse is
 $J = m(1+e)u\cos\alpha$ perpendicular to the wall, and the rebound angle $\beta$ satisfies
-$\tan\beta = \frac⧃LB⧄u\sin\alpha⧃RB⧄⧃LB⧄eu\cos\alpha⧃RB⧄ = \frac⧃LB⧄\tan\alpha⧃RB⧄⧃LB⧄e⧃RB⧄$, which is greater than
+$\tan\beta = \frac◆LB◆u\sin\alpha◆RB◆◆LB◆eu\cos\alpha◆RB◆ = \frac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆$, which is greater than
 $\alpha$ when $e \lt 1$.
 :::
 
@@ -431,7 +431,7 @@ $e \lt 1$.
 
 **Definition.** The coefficient of restitution can be expressed in terms of relative velocities:
 
-$$\boxed{e = \frac⧃LB⧄|\mathrm{relative speed of separation}|⧃RB⧄⧃LB⧄|\mathrm{relative speed of approach}|⧃RB⧄}$$
+$$\boxed{e = \frac◆LB◆|\mathrm{relative speed of separation}|◆RB◆◆LB◆|\mathrm{relative speed of approach}|◆RB◆}$$
 
 ### Derivation for a 1D Collision
 
@@ -445,7 +445,7 @@ $|v_2 - v_1|$.
 
 Newton's law of restitution states:
 
-$$e = \frac⧃LB⧄|v_2 - v_1|⧃RB⧄⧃LB⧄|u_1 - u_2|⧃RB⧄$$
+$$e = \frac◆LB◆|v_2 - v_1|◆RB◆◆LB◆|u_1 - u_2|◆RB◆$$
 
 If body 1 catches up to body 2 ($u_1 \gt u_2$) and they separate after collision ($v_2 \gt v_1$),
 then:
@@ -486,7 +486,7 @@ where $v$ is the speed just after impact (upward).
 The floor has effectively infinite mass and does not move, so the relative speed of approach is $u$
 and the relative speed of separation is $v$:
 
-$$e = \frac{v}{u} = \frac⧃LB⧄\sqrt{2gh'}⧃RB⧄⧃LB⧄\sqrt{2gh}⧃RB⧄ = \sqrt⧃LB⧄\frac{h'}{h}⧃RB⧄$$
+$$e = \frac{v}{u} = \frac◆LB◆\sqrt{2gh'}◆RB◆◆LB◆\sqrt{2gh}◆RB◆ = \sqrt◆LB◆\frac{h'}{h}◆RB◆$$
 
 $\square$
 
@@ -511,7 +511,7 @@ $$0 = m_1\mathbf{v}_1 + m_2\mathbf{v}_2$$
 
 The fragments move in opposite directions with speeds inversely proportional to their masses:
 
-$$\frac⧃LB⧄|\mathbf{v}_1|⧃RB⧄⧃LB⧄|\mathbf{v}_2|⧃RB⧄ = \frac{m_2}{m_1}$$
+$$\frac◆LB◆|\mathbf{v}_1|◆RB◆◆LB◆|\mathbf{v}_2|◆RB◆ = \frac{m_2}{m_1}$$
 
 **Kinetic energy in an explosion.** KE increases as chemical (or nuclear) energy is converted to KE
 of fragments:

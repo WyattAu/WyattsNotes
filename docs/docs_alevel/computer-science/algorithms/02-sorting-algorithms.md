@@ -305,7 +305,7 @@ A binary tree of height $h$ has at most $2^h$ leaves, so:
 
 $$2^h \geq n! \implies h \geq \log_2(n!)$$
 
-Using Stirling's approximation: $n! \approx \left(\frac{n}{e}\right)^n \sqrt⧃LB⧄2\pi n⧃RB⧄$
+Using Stirling's approximation: $n! \approx \left(\frac{n}{e}\right)^n \sqrt◆LB◆2\pi n◆RB◆$
 
 $$\log_2(n!) = n\log_2 n - n\log_2 e + O(\log n) = \Omega(n \log n)$$
 

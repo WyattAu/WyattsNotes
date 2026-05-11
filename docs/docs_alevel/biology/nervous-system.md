@@ -81,15 +81,15 @@ The resting membrane is much more permeable to $\mathrm{K^+}$ than to $\mathrm{N
 
 The equilibrium potential for an ion is given by the Nernst equation:
 
-$$E = \frac{RT}{zF} \ln\frac⧃LB⧄[\text{ion}]_{\text{out}}⧃RB⧄⧃LB⧄[\text{ion}]_{\text{in}}⧃RB⧄$$
+$$E = \frac{RT}{zF} \ln\frac◆LB◆[\text{ion}]_{\text{out}}◆RB◆◆LB◆[\text{ion}]_{\text{in}}◆RB◆$$
 
 where $R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$, $T$ is temperature in Kelvin, $z$ is the ion's charge, and $F = 96485\ \mathrm{C\ mol^{-1}}$.
 
 At body temperature ($37\ ^\circ\mathrm{C} = 310\ \mathrm{K}$):
 
-$$E_{\mathrm{K}} = \frac⧃LB⧄8.314 \times 310⧃RB⧄⧃LB⧄1 \times 96485⧃RB⧄ \ln\frac{4}{155} = 0.0267 \times \ln(0.0258) = 0.0267 \times (-3.66) = -97.7\ \mathrm{mV}$$
+$$E_{\mathrm{K}} = \frac◆LB◆8.314 \times 310◆RB◆◆LB◆1 \times 96485◆RB◆ \ln\frac{4}{155} = 0.0267 \times \ln(0.0258) = 0.0267 \times (-3.66) = -97.7\ \mathrm{mV}$$
 
-$$E_{\mathrm{Na}} = \frac⧃LB⧄8.314 \times 310⧃RB⧄⧃LB⧄1 \times 96485⧃RB⧄ \ln\frac{145}{12} = 0.0267 \times \ln(12.08) = 0.0267 \times 2.49 = +66.5\ \mathrm{mV}$$
+$$E_{\mathrm{Na}} = \frac◆LB◆8.314 \times 310◆RB◆◆LB◆1 \times 96485◆RB◆ \ln\frac{145}{12} = 0.0267 \times \ln(12.08) = 0.0267 \times 2.49 = +66.5\ \mathrm{mV}$$
 
 The actual resting potential ($-70\ \mathrm{mV}$) lies between $E_{\mathrm{K}}$ and $E_{\mathrm{Na}}$, weighted by the relative permeabilities.
 
@@ -131,7 +131,7 @@ Action potentials are propagated along the axon by local currents. When one regi
 
 An action potential is recorded at two points on an axon separated by $8.0\ \mathrm{cm}$. The time between the two recordings is $2.0\ \mathrm{ms}$.
 
-$$\text{Velocity} = \frac⧃LB⧄\text{distance}⧃RB⧄⧃LB⧄\text{time}⧃RB⧄ = \frac⧃LB⧄0.080\ \mathrm{m}⧃RB⧄⧃LB⧄0.002\ \mathrm{s}⧃RB⧄ = 40\ \mathrm{m\ s^{-1}}$$
+$$\text{Velocity} = \frac◆LB◆\text{distance}◆RB◆◆LB◆\text{time}◆RB◆ = \frac◆LB◆0.080\ \mathrm{m}◆RB◆◆LB◆0.002\ \mathrm{s}◆RB◆ = 40\ \mathrm{m\ s^{-1}}$$
 
 This is consistent with a myelinated axon of moderate diameter.
 
@@ -519,7 +519,7 @@ The depolarisation at one point on the axon membrane creates a circuit with the 
 
 The distance an action potential can propagate without being too attenuated depends on the **length constant ($\lambda$)**:
 
-$$\lambda = \sqrt⧃LB⧄\frac{r_m}{r_i + r_o}⧃RB⧄$$
+$$\lambda = \sqrt◆LB◆\frac{r_m}{r_i + r_o}◆RB◆$$
 
 where $r_m$ is the membrane resistance ($\Omega \cdot \mathrm{cm}$), $r_i$ is the intracellular (axial) resistance ($\Omega\ \mathrm{cm^{-1}}$), and $r_o$ is the extracellular resistance.
 
@@ -1349,7 +1349,7 @@ The resting membrane potential is approximately $-70\ \mathrm{mV}$ (inside negat
 
 **Nernst equation** (simplified for one ion):
 
-$$E = \frac{RT}{zF} \ln \frac⧃LB⧄[\text{ion}]_{\text{out}}⧃RB⧄⧃LB⧄[\text{ion}]_{\text{in}}⧃RB⧄$$
+$$E = \frac{RT}{zF} \ln \frac◆LB◆[\text{ion}]_{\text{out}}◆RB◆◆LB◆[\text{ion}]_{\text{in}}◆RB◆$$
 
 For $\mathrm{K^+}$: $E_K \approx -90\ \mathrm{mV}$; for $\mathrm{Na^+}$: $E_{Na} \approx +60\ \mathrm{mV}$.
 

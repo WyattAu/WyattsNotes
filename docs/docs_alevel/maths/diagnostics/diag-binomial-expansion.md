@@ -67,13 +67,13 @@ So $\sqrt{1.02} \approx 1.009950$ to 6 decimal places.
 
 **(c)** The generalised binomial coefficient:
 
-$$\binom{1/2}{r} = \frac⧃LB⧄(1/2)(1/2 - 1)(1/2 - 2) \cdots (1/2 - r + 1)⧃RB⧄⧃LB⧄r!⧃RB⧄$$
+$$\binom{1/2}{r} = \frac◆LB◆(1/2)(1/2 - 1)(1/2 - 2) \cdots (1/2 - r + 1)◆RB◆◆LB◆r!◆RB◆$$
 
-$$= \frac⧃LB⧄(1/2)(-1/2)(-3/2) \cdots \left(\frac{3 - 2r}{2}\right)⧃RB⧄⧃LB⧄r!⧃RB⧄$$
+$$= \frac◆LB◆(1/2)(-1/2)(-3/2) \cdots \left(\frac{3 - 2r}{2}\right)◆RB◆◆LB◆r!◆RB◆$$
 
-$$= \frac⧃LB⧄(-1)^{r-1}(1 \cdot 3 \cdot 5 \cdots (2r - 3))⧃RB⧄⧃LB⧄2^r \cdot r!⧃RB⧄ \quad \text{for } r \geq 2$$
+$$= \frac◆LB◆(-1)^{r-1}(1 \cdot 3 \cdot 5 \cdots (2r - 3))◆RB◆◆LB◆2^r \cdot r!◆RB◆ \quad \text{for } r \geq 2$$
 
-This can also be written using double factorials or the relation $\binom{1/2}{r} = \frac⧃LB⧄(-1)^{r-1}(2r-3)!!⧃RB⧄⧃LB⧄2^r \cdot r!⧃RB⧄$ for $r \geq 2$.
+This can also be written using double factorials or the relation $\binom{1/2}{r} = \frac◆LB◆(-1)^{r-1}(2r-3)!!◆RB◆◆LB◆2^r \cdot r!◆RB◆$ for $r \geq 2$.
 
 ---
 
@@ -97,7 +97,7 @@ $$(1 + 2x)^5 = \sum_{r=0}^{5} \binom{5}{r} (2x)^r = 1 + 10x + 40x^2 + 80x^3 + 80
 
 $$(1 - x)^{-3} = \sum_{s=0}^{\infty} \binom{-3}{s}(-x)^s$$
 
-$$\binom{-3}{s} = \frac⧃LB⧄(-3)(-4)(-5)\cdots(-3-s+1)⧃RB⧄⧃LB⧄s!⧃RB⧄ = \frac⧃LB⧄(-1)^s \cdot 3 \cdot 4 \cdot 5 \cdots (s+2)⧃RB⧄⧃LB⧄s!⧃RB⧄ = \frac⧃LB⧄(-1)^s (s+2)!⧃RB⧄⧃LB⧄2! \cdot s!⧃RB⧄ = (-1)^s \binom{s+2}{2}$$
+$$\binom{-3}{s} = \frac◆LB◆(-3)(-4)(-5)\cdots(-3-s+1)◆RB◆◆LB◆s!◆RB◆ = \frac◆LB◆(-1)^s \cdot 3 \cdot 4 \cdot 5 \cdots (s+2)◆RB◆◆LB◆s!◆RB◆ = \frac◆LB◆(-1)^s (s+2)!◆RB◆◆LB◆2! \cdot s!◆RB◆ = (-1)^s \binom{s+2}{2}$$
 
 Therefore:
 
@@ -143,7 +143,7 @@ Using the general binomial theorem:
 
 $$(1 - \tfrac{3x}{2})^{-2} = \sum_{r=0}^{\infty} \binom{-2}{r}(-\tfrac{3x}{2})^r$$
 
-$$\binom{-2}{r} = \frac⧃LB⧄(-2)(-3)\cdots(-2-r+1)⧃RB⧄⧃LB⧄r!⧃RB⧄ = (-1)^r \frac{(r+1)!}{r!} = (-1)^r(r+1)$$
+$$\binom{-2}{r} = \frac◆LB◆(-2)(-3)\cdots(-2-r+1)◆RB◆◆LB◆r!◆RB◆ = (-1)^r \frac{(r+1)!}{r!} = (-1)^r(r+1)$$
 
 Therefore:
 
@@ -346,11 +346,11 @@ This is divisible by 7. By induction, $3^{2n+1} + 2^{n+2}$ is divisible by 7 for
 
 **(a)** Starting from the right side:
 
-$$\binom{n+1}{r} = \frac{(n+1)!}{r!(n+1-r)!} = \frac⧃LB⧄(n+1) \cdot n!⧃RB⧄⧃LB⧄r!(n+1-r)(n-r)!⧃RB⧄$$
+$$\binom{n+1}{r} = \frac{(n+1)!}{r!(n+1-r)!} = \frac◆LB◆(n+1) \cdot n!◆RB◆◆LB◆r!(n+1-r)(n-r)!◆RB◆$$
 
 $$= \frac{n!}{r!(n-r)!} \cdot \frac{n+1}{n+1-r} = \frac{n!}{r!(n-r)!} \cdot \frac{n+1-r+r}{n+1-r}$$
 
-$$= \frac{n!}{r!(n-r)!} + \frac⧃LB⧄r \cdot n!⧃RB⧄⧃LB⧄r!(n-r+1)(n-r)!⧃RB⧄$$
+$$= \frac{n!}{r!(n-r)!} + \frac◆LB◆r \cdot n!◆RB◆◆LB◆r!(n-r+1)(n-r)!◆RB◆$$
 
 $$= \frac{n!}{r!(n-r)!} + \frac{n!}{(r-1)!(n-r+1)!} = \binom{n}{r} + \binom{n}{r-1}$$
 

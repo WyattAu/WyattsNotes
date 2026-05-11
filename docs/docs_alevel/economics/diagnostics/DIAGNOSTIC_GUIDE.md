@@ -248,8 +248,8 @@ The following errors appear repeatedly in student work. Use this section to chec
 
 | Error | Correct Approach |
 |---|---|
-| Confusing $\% \Delta Q / \% \Delta P$ with $\Delta Q / \Delta P$ | PED is a percentage ratio, not a slope. $PED = \frac⧃LB⧄\% \Delta Q⧃RB⧄⧃LB⧄\% \Delta P⧃RB⧄$. |
-| Using average price/quantity incorrectly for midpoint PED | Midpoint formula: $PED = \frac⧃LB⧄\Delta Q⧃RB⧄⧃LB⧄(Q_1+Q_2)/2⧃RB⧄ \div \frac⧃LB⧄\Delta P⧃RB⧄⧃LB⧄(P_1+P_2)/2⧃RB⧄$ |
+| Confusing $\% \Delta Q / \% \Delta P$ with $\Delta Q / \Delta P$ | PED is a percentage ratio, not a slope. $PED = \frac◆LB◆\% \Delta Q◆RB◆◆LB◆\% \Delta P◆RB◆$. |
+| Using average price/quantity incorrectly for midpoint PED | Midpoint formula: $PED = \frac◆LB◆\Delta Q◆RB◆◆LB◆(Q_1+Q_2)/2◆RB◆ \div \frac◆LB◆\Delta P◆RB◆◆LB◆(P_1+P_2)/2◆RB◆$ |
 | Forgetting that $MR = MC$ gives quantity, not price | Always find $Q$ from $MR = MC$, then find $P$ from the demand curve. |
 | Using the nominal multiplier instead of the multiplier with leakages | With tax and imports: $k = \frac{1}{1 - MPC(1-t) + MPM}$. |
 | Adding tax revenue to calculate total surplus with externality | Tax revenue is a TRANSFER, not a net welfare gain. It offsets the loss to consumers and producers. |

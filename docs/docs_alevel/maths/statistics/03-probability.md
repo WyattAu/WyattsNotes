@@ -101,7 +101,7 @@ $$P\!\left(\bigcap_{i=1}^{n} A_i\right) = P(A_1) \cdot P(A_2|A_1) \cdot P(A_3|A_
 
 **Definition.** The conditional probability of $A$ given $B$ is
 
-$$P(A|B) = \frac⧃LB⧄P(A \cap B)⧃RB⧄⧃LB⧄P(B)⧃RB⧄ \quad \mathrm{for } P(B) > 0$$
+$$P(A|B) = \frac◆LB◆P(A \cap B)◆RB◆◆LB◆P(B)◆RB◆ \quad \mathrm{for } P(B) > 0$$
 
 **Intuition.** $P(A|B)$ is the probability of $A$ occurring **given that we already know $B$ has
 occurred**. Knowing $B$ has happened changes our sample space from $\Omega$ to $B$, and we measure
@@ -118,7 +118,7 @@ $B$ (with $P(B) > 0$).
 2. $P(\Omega|B) = P(\Omega \cap B)/P(B) = P(B)/P(B) = 1$.
 3. If $A_1, A_2, \ldots$ are mutually exclusive, then so are $A_1 \cap B, A_2 \cap B, \ldots$, and
 
-$$P\!\left(\bigcup_i A_i \,\middle|\, B\right) = \frac⧃LB⧄P\!\left(\left(\bigcup_i A_i\right) \cap B\right)⧃RB⧄⧃LB⧄P(B)⧃RB⧄ = \frac⧃LB⧄\sum_i P(A_i \cap B)⧃RB⧄⧃LB⧄P(B)⧃RB⧄ = \sum_i P(A_i|B). \quad \blacksquare$$
+$$P\!\left(\bigcup_i A_i \,\middle|\, B\right) = \frac◆LB◆P\!\left(\left(\bigcup_i A_i\right) \cap B\right)◆RB◆◆LB◆P(B)◆RB◆ = \frac◆LB◆\sum_i P(A_i \cap B)◆RB◆◆LB◆P(B)◆RB◆ = \sum_i P(A_i|B). \quad \blacksquare$$
 
 **Corollary.** The complement rule holds for conditional probability: $P(A'|B) = 1 - P(A|B)$.
 
@@ -133,11 +133,11 @@ measure, which is justified by the theorem above. $\blacksquare$
 
 **Theorem.** For events $A$ and $B$ with $P(B) \gt{} 0$:
 
-$$P(A|B) = \frac⧃LB⧄P(B|A) \cdot P(A)⧃RB⧄⧃LB⧄P(B)⧃RB⧄$$
+$$P(A|B) = \frac◆LB◆P(B|A) \cdot P(A)◆RB◆◆LB◆P(B)◆RB◆$$
 
 ### 4.2 Proof
 
-$$P(A|B) = \frac⧃LB⧄P(A \cap B)⧃RB⧄⧃LB⧄P(B)⧃RB⧄ = \frac⧃LB⧄P(B|A) \cdot P(A)⧃RB⧄⧃LB⧄P(B)⧃RB⧄ \quad \blacksquare$$
+$$P(A|B) = \frac◆LB◆P(A \cap B)◆RB◆◆LB◆P(B)◆RB◆ = \frac◆LB◆P(B|A) \cdot P(A)◆RB◆◆LB◆P(B)◆RB◆ \quad \blacksquare$$
 
 ### 4.3 Law of Total Probability
 
@@ -147,7 +147,7 @@ $$P(A) = \sum_{i=1}^{n}P(A|B_i)P(B_i)$$
 
 ### 4.4 Extended Bayes' Theorem
 
-$$P(B_k|A) = \frac⧃LB⧄P(A|B_k)P(B_k)⧃RB⧄⧃LB⧄\sum_{i=1}^{n}P(A|B_i)P(B_i)⧃RB⧄$$
+$$P(B_k|A) = \frac◆LB◆P(A|B_k)P(B_k)◆RB◆◆LB◆\sum_{i=1}^{n}P(A|B_i)P(B_i)◆RB◆$$
 
 :::tip
 Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
@@ -172,9 +172,9 @@ $$P(A \cap B) = P(A) \cdot P(B)$$
 **Proof.**
 
 ($\Rightarrow$) If $P(A \cap B) = P(A)P(B)$, then
-$P(A|B) = \dfrac⧃LB⧄P(A \cap B)⧃RB⧄⧃LB⧄P(B)⧃RB⧄ = \dfrac{P(A)P(B)}{P(B)} = P(A)$.
+$P(A|B) = \dfrac◆LB◆P(A \cap B)◆RB◆◆LB◆P(B)◆RB◆ = \dfrac{P(A)P(B)}{P(B)} = P(A)$.
 
-($\Leftarrow$) If $P(A|B) = P(A)$, then $\dfrac⧃LB⧄P(A \cap B)⧃RB⧄⧃LB⧄P(B)⧃RB⧄ = P(A)$, so
+($\Leftarrow$) If $P(A|B) = P(A)$, then $\dfrac◆LB◆P(A \cap B)◆RB◆◆LB◆P(B)◆RB◆ = P(A)$, so
 $P(A \cap B) = P(A)P(B)$. $\blacksquare$
 
 **Intuition.** Independence means knowing $B$ occurred gives you **no information** about $A$. The
@@ -245,7 +245,7 @@ $n! = n(n-1)(n-2)\cdots 1$, with $0! = 1$.
 ### 7.3 Probability with equally likely outcomes
 
 When all outcomes are equally likely:
-$P(A) = \dfrac⧃LB⧄|A|⧃RB⧄⧃LB⧄|\Omega|⧃RB⧄ = \dfrac⧃LB⧄\mathrm{number of favourable outcomes}⧃RB⧄⧃LB⧄\mathrm{total number of outcomes}⧃RB⧄$.
+$P(A) = \dfrac◆LB◆|A|◆RB◆◆LB◆|\Omega|◆RB◆ = \dfrac◆LB◆\mathrm{number of favourable outcomes}◆RB◆◆LB◆\mathrm{total number of outcomes}◆RB◆$.
 
 <hr />
 
@@ -490,7 +490,7 @@ $P(D) = 0.01$, $P(T^+|D) = 0.99$, $P(T^+|D') = 0.01$.
 By the law of total probability:
 $P(T^+) = P(T^+|D)P(D) + P(T^+|D')P(D') = 0.99(0.01) + 0.01(0.99) = 0.0099 + 0.0099 = 0.0198$.
 
-By Bayes' theorem: $P(D|T^+) = \dfrac⧃LB⧄P(T^+|D)P(D)⧃RB⧄⧃LB⧄P(T^+)⧃RB⧄ = \dfrac{0.0099}{0.0198} = 0.5$.
+By Bayes' theorem: $P(D|T^+) = \dfrac◆LB◆P(T^+|D)P(D)◆RB◆◆LB◆P(T^+)◆RB◆ = \dfrac{0.0099}{0.0198} = 0.5$.
 
 Even with a 99% accurate test, a positive result means only a 50% chance of actually having the
 disease, because the disease is so rare.
@@ -604,7 +604,7 @@ A box contains 10 items, 3 of which are defective. Items are inspected one by on
 <summary>Solution 9</summary>
 First two non-defective, third defective:
 
-$$P = \frac{7}{10} \times \frac{6}{9} \times \frac{3}{8} = \frac⧃LB⧄7 \times 6 \times 3⧃RB⧄⧃LB⧄720⧃RB⧄ = \frac{126}{720} = \frac{7}{40}$$
+$$P = \frac{7}{10} \times \frac{6}{9} \times \frac{3}{8} = \frac◆LB◆7 \times 6 \times 3◆RB◆◆LB◆720◆RB◆ = \frac{126}{720} = \frac{7}{40}$$
 
 **If you get this wrong, revise:** [Tree Diagrams](#62-tree-diagrams) — Section 6.2.
 
@@ -735,7 +735,7 @@ $P(T) = 0.7$, $P(C) = 0.5$, $P(T \cap C) = 0.35$.
 
 $P(T \cup C) = P(T) + P(C) - P(T \cap C) = 0.7 + 0.5 - 0.35 = 0.85$.
 
-$$P(T \cap C \mid T \cup C) = \frac⧃LB⧄P(T \cap C)⧃RB⧄⧃LB⧄P(T \cup C)⧃RB⧄ = \frac{0.35}{0.85} = \frac{7}{17} \approx 0.412$$
+$$P(T \cap C \mid T \cup C) = \frac◆LB◆P(T \cap C)◆RB◆◆LB◆P(T \cup C)◆RB◆ = \frac{0.35}{0.85} = \frac{7}{17} \approx 0.412$$
 
 **If you get this wrong, revise:** [Conditional Probability](#3-conditional-probability) —
 Section 3.
@@ -770,7 +770,7 @@ $$P(B) = P(B|A)P(A) + P(B|A')P(A') = 0.4 \times 0.6 + 0.7 \times 0.4 = 0.24 + 0.
 
 $$P(A \cap B) = P(B|A)P(A) = 0.4 \times 0.6 = 0.24$$
 
-$$P(A|B) = \frac⧃LB⧄P(A \cap B)⧃RB⧄⧃LB⧄P(B)⧃RB⧄ = \frac{0.24}{0.52} = \frac{6}{13} \approx 0.462$$
+$$P(A|B) = \frac◆LB◆P(A \cap B)◆RB◆◆LB◆P(B)◆RB◆ = \frac{0.24}{0.52} = \frac{6}{13} \approx 0.462$$
 
 Check independence: $P(A)P(B) = 0.6 \times 0.52 = 0.312 \neq 0.24 = P(A \cap B)$. So $A$ and $B$ are
 **not** independent.
@@ -831,7 +831,7 @@ $$= 0.02 \times 0.5 + 0.03 \times 0.3 + 0.05 \times 0.2 = 0.01 + 0.009 + 0.01 = 
 
 By Bayes' theorem:
 
-$$P(M_3|D) = \frac⧃LB⧄P(D|M_3)P(M_3)⧃RB⧄⧃LB⧄P(D)⧃RB⧄ = \frac⧃LB⧄0.05 \times 0.2⧃RB⧄⧃LB⧄0.029⧃RB⧄ = \frac{0.01}{0.029} = \frac{10}{29} \approx 0.345$$
+$$P(M_3|D) = \frac◆LB◆P(D|M_3)P(M_3)◆RB◆◆LB◆P(D)◆RB◆ = \frac◆LB◆0.05 \times 0.2◆RB◆◆LB◆0.029◆RB◆ = \frac{0.01}{0.029} = \frac{10}{29} \approx 0.345$$
 
 **If you get this wrong, revise:** [Extended Bayes' Theorem](#44-extended-bayes-theorem) — Section
 4.4.

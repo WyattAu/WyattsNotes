@@ -54,7 +54,7 @@ the hash function will map many keys to the same bucket.
 $$h(k) = \lfloor m \cdot (k \cdot A \bmod 1) \rfloor$$
 
 where $A$ is a constant $0 \lt{} A \lt{} 1$ (Knuth suggests
-$A = \frac⧃LB⧄\sqrt{5} - 1⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 0.618$).
+$A = \frac◆LB◆\sqrt{5} - 1◆RB◆◆LB◆2◆RB◆ \approx 0.618$).
 
 **Advantage:** Works well with any value of $m$.
 
@@ -212,7 +212,7 @@ load factor approaches 1 (vs $O(1)$ for uniform hashing).
 More formally, after inserting $n$ keys into a table of size $m$ with linear probing, the expected
 number of probes for an unsuccessful search is approximately:
 
-$$\frac{1}{2}\left(1 + \frac⧃LB⧄1⧃RB⧄⧃LB⧄(1 - \alpha)^2⧃RB⧄\right)$$
+$$\frac{1}{2}\left(1 + \frac◆LB◆1◆RB◆◆LB◆(1 - \alpha)^2◆RB◆\right)$$
 
 where $\alpha = n/m$ is the load factor. As $\alpha \to 1$, this grows to $\infty$. $\square$
 
@@ -424,7 +424,7 @@ Load factor: $\alpha = 500/1000 = 0.5$.
 **Unsuccessful search:** Expected probes = $\alpha = 0.5$ (we traverse the entire chain on average).
 
 **Successful search:** Expected probes =
-$1 + \frac⧃LB⧄\alpha⧃RB⧄⧃LB⧄2⧃RB⧄ - \frac⧃LB⧄\alpha⧃RB⧄⧃LB⧄2n⧃RB⧄ \approx 1 + \frac⧃LB⧄\alpha⧃RB⧄⧃LB⧄2⧃RB⧄ = 1 + 0.25 = 1.25$.
+$1 + \frac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆\alpha◆RB◆◆LB◆2n◆RB◆ \approx 1 + \frac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆ = 1 + 0.25 = 1.25$.
 
 More precisely: for successful search, we examine half the chain on average (the target is equally
 likely to be at any position in the chain). Expected chain length = $\alpha = 0.5$, so expected

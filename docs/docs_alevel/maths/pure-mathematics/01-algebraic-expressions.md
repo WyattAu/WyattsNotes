@@ -39,7 +39,7 @@ For positive real numbers $a$ and $b$:
 $$
 \begin{aligned}
 \sqrt{a}\sqrt{b} &= \sqrt{ab} \\
-\frac⧃LB⧄\sqrt{a}⧃RB⧄⧃LB⧄\sqrt{b}⧃RB⧄ &= \sqrt⧃LB⧄\frac{a}{b}⧃RB⧄ \\
+\frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{b}◆RB◆ &= \sqrt◆LB◆\frac{a}{b}◆RB◆ \\
 (\sqrt{a})^n &= a^{n/2}
 \end{aligned}
 $$
@@ -50,11 +50,11 @@ $\sqrt{a} = a^{1/2}$.
 **Rationalising the denominator.** If a fraction has a surd in the denominator, we multiply
 numerator and denominator by the surd (or its conjugate) to eliminate it.
 
-For a denominator of the form $\sqrt{a}$, multiply by $\frac⧃LB⧄\sqrt{a}⧃RB⧄⧃LB⧄\sqrt{a}⧃RB⧄$:
+For a denominator of the form $\sqrt{a}$, multiply by $\frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{a}◆RB◆$:
 
 $$
 \begin{aligned}
-\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{a}⧃RB⧄ &= \frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{a}⧃RB⧄ \cdot \frac⧃LB⧄\sqrt{a}⧃RB⧄⧃LB⧄\sqrt{a}⧃RB⧄ = \frac⧃LB⧄\sqrt{a}⧃RB⧄⧃LB⧄a⧃RB⧄
+\frac◆LB◆1◆RB◆◆LB◆\sqrt{a}◆RB◆ &= \frac◆LB◆1◆RB◆◆LB◆\sqrt{a}◆RB◆ \cdot \frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{a}◆RB◆ = \frac◆LB◆\sqrt{a}◆RB◆◆LB◆a◆RB◆
 \end{aligned}
 $$
 
@@ -62,13 +62,13 @@ For a denominator of the form $a + b\sqrt{c}$, multiply by the _conjugate_ $a - 
 
 $$
 \begin{aligned}
-\frac⧃LB⧄1⧃RB⧄⧃LB⧄a + b\sqrt{c}⧃RB⧄ &= \frac⧃LB⧄a - b\sqrt{c}⧃RB⧄⧃LB⧄(a + b\sqrt{c})(a - b\sqrt{c})⧃RB⧄ = \frac⧃LB⧄a - b\sqrt{c}⧃RB⧄⧃LB⧄a^2 - b^2 c⧃RB⧄
+\frac◆LB◆1◆RB◆◆LB◆a + b\sqrt{c}◆RB◆ &= \frac◆LB◆a - b\sqrt{c}◆RB◆◆LB◆(a + b\sqrt{c})(a - b\sqrt{c})◆RB◆ = \frac◆LB◆a - b\sqrt{c}◆RB◆◆LB◆a^2 - b^2 c◆RB◆
 \end{aligned}
 $$
 
 :::warning
 A common error is to "rationalise" by splitting the fraction:
-$\frac⧃LB⧄a + b\sqrt{c}⧃RB⧄⧃LB⧄d⧃RB⧄ \neq \frac{a}{d} + b\sqrt⧃LB⧄\frac{c}{d}⧃RB⧄$ in general. Always distribute the
+$\frac◆LB◆a + b\sqrt{c}◆RB◆◆LB◆d◆RB◆ \neq \frac{a}{d} + b\sqrt◆LB◆\frac{c}{d}◆RB◆$ in general. Always distribute the
 denominator correctly.
 :::
 
@@ -111,7 +111,7 @@ of 2 into both $p$ and $q$, making the fraction reducible.
 ## 2. Indices (Exponent Laws)
 
 **Definition.** For $a > 0$ and $n \in \mathbb{Z}^+$, we define
-$a^n = \underbrace⧃LB⧄a \times a \times \cdots \times a⧃RB⧄_{n \mathrm{ times}}$. We extend this
+$a^n = \underbrace◆LB◆a \times a \times \cdots \times a◆RB◆_{n \mathrm{ times}}$. We extend this
 definition as follows:
 
 $$
@@ -140,8 +140,8 @@ _Proof of $a^m \cdot a^n = a^{m+n}$ for positive integer exponents._
 
 $$
 \begin{aligned}
-a^m \cdot a^n &= \underbrace⧃LB⧄a \cdot a \cdots a⧃RB⧄_{m} \cdot \underbrace⧃LB⧄a \cdot a \cdots a⧃RB⧄_{n} \\
-&= \underbrace⧃LB⧄a \cdot a \cdots a⧃RB⧄_{m + n} = a^{m+n}
+a^m \cdot a^n &= \underbrace◆LB◆a \cdot a \cdots a◆RB◆_{m} \cdot \underbrace◆LB◆a \cdot a \cdots a◆RB◆_{n} \\
+&= \underbrace◆LB◆a \cdot a \cdots a◆RB◆_{m + n} = a^{m+n}
 \end{aligned}
 $$
 
@@ -337,15 +337,15 @@ $$
 
 ## 7. Problem Set
 
-**Problem 1.** Simplify $\frac⧃LB⧄\sqrt{3} + 1⧃RB⧄⧃LB⧄\sqrt{3} - 1⧃RB⧄$.
+**Problem 1.** Simplify $\frac◆LB◆\sqrt{3} + 1◆RB◆◆LB◆\sqrt{3} - 1◆RB◆$.
 
 <details>
 <summary>Solution</summary>
 $$
 \begin{aligned}
-\frac⧃LB⧄\sqrt{3} + 1⧃RB⧄⧃LB⧄\sqrt{3} - 1⧃RB⧄ &= \frac⧃LB⧄(\sqrt{3} + 1)(\sqrt{3} + 1)⧃RB⧄⧃LB⧄(\sqrt{3} - 1)(\sqrt{3} + 1)⧃RB⧄ \\
-&= \frac⧃LB⧄3 + 2\sqrt{3} + 1⧃RB⧄⧃LB⧄3 - 1⧃RB⧄ \\
-&= \frac⧃LB⧄4 + 2\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = 2 + \sqrt{3}
+\frac◆LB◆\sqrt{3} + 1◆RB◆◆LB◆\sqrt{3} - 1◆RB◆ &= \frac◆LB◆(\sqrt{3} + 1)(\sqrt{3} + 1)◆RB◆◆LB◆(\sqrt{3} - 1)(\sqrt{3} + 1)◆RB◆ \\
+&= \frac◆LB◆3 + 2\sqrt{3} + 1◆RB◆◆LB◆3 - 1◆RB◆ \\
+&= \frac◆LB◆4 + 2\sqrt{3}◆RB◆◆LB◆2◆RB◆ = 2 + \sqrt{3}
 \end{aligned}
 $$
 </details>
@@ -431,7 +431,7 @@ Adding (1) and (2): $3a = 18$, so $a = 6$. Then $b = 4 - 6 = -2$.
 $$
 \begin{aligned}
 \left(\frac{8x^6}{27y^3}\right)^{-2/3} &= \left(\frac{27y^3}{8x^6}\right)^{2/3} \\
-&= \frac⧃LB⧄(27)^{2/3} \cdot (y^3)^{2/3}⧃RB⧄⧃LB⧄(8)^{2/3} \cdot (x^6)^{2/3}⧃RB⧄ \\
+&= \frac◆LB◆(27)^{2/3} \cdot (y^3)^{2/3}◆RB◆◆LB◆(8)^{2/3} \cdot (x^6)^{2/3}◆RB◆ \\
 &= \frac{9y^2}{4x^4}
 \end{aligned}
 $$

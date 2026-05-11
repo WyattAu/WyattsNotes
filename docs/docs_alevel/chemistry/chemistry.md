@@ -103,10 +103,10 @@ Worked examples are provided throughout. Attempt them before reading the solutio
 | Topic | Key Equations |
 |---|---|
 | Quantitative | $n = \frac{m}{M}$, $c = \frac{n}{V}$, $pV = nRT$, $\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$ |
-| Acids/Bases | $\mathrm{pH} = -\log[\mathrm{H}^+]$, $K_a = \frac⧃LB⧄[\mathrm{H}^+][\mathrm{A}^-]⧃RB⧄⧃LB⧄[\mathrm{HA}]⧃RB⧄$, $K_w = [\mathrm{H}^+][\mathrm{OH}^-]$, $\mathrm{pH} = \mathrm{p}K_a + \log\frac⧃LB⧄[\mathrm{A}^-]⧃RB⧄⧃LB⧄[\mathrm{HA}]⧃RB⧄$ |
-| Equilibrium | $K_c = \frac⧃LB⧄\prod[\mathrm{products}]^a⧃RB⧄⧃LB⧄\prod[\mathrm{reactants}]^b⧃RB⧄$, $K_p = \frac⧃LB⧄\prod p_i^{a_i}⧃RB⧄⧃LB⧄\prod p_j^{b_j}⧃RB⧄$, $K_p = K_c(RT)^{\Delta n}$ |
+| Acids/Bases | $\mathrm{pH} = -\log[\mathrm{H}^+]$, $K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$, $K_w = [\mathrm{H}^+][\mathrm{OH}^-]$, $\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$ |
+| Equilibrium | $K_c = \frac◆LB◆\prod[\mathrm{products}]^a◆RB◆◆LB◆\prod[\mathrm{reactants}]^b◆RB◆$, $K_p = \frac◆LB◆\prod p_i^{a_i}◆RB◆◆LB◆\prod p_j^{b_j}◆RB◆$, $K_p = K_c(RT)^{\Delta n}$ |
 | Thermodynamics | $\Delta G = \Delta H - T\Delta S$, $\Delta G^\circ = -RT\ln K$, $q = mc\Delta T$ |
-| Kinetics | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄k⧃RB⧄$ (first-order) |
+| Kinetics | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆$ (first-order) |
 | Electrochemistry | $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$, $\Delta G^\circ = -nFE^\circ$, $Q = It$, $n = \frac{Q}{F}$, $E = E^\circ - \frac{RT}{nF}\ln Q$ |
 | Born-Haber | $\Delta H_f = \Delta H_\mathrm{at} + \sum \mathrm{IE} + \Delta H_\mathrm{at}(\text{anion}) + \sum \mathrm{EA} + \Delta H_\mathrm{lat}$ |
 
@@ -166,12 +166,12 @@ A-Level Chemistry requires significant mathematical competence. The following sk
 
 - **Plotting data:** Choose appropriate scales, label axes with quantities and units.
 - **Drawing lines of best fit:** For linear relationships, draw the best straight line through the data points.
-- **Determining the gradient:** $\text{gradient} = \frac⧃LB⧄\Delta y⧃RB⧄⧃LB⧄\Delta x⧃RB⧄$. For an Arrhenius plot ($\ln k$ vs $1/T$), the gradient is $-E_a/R$.
+- **Determining the gradient:** $\text{gradient} = \frac◆LB◆\Delta y◆RB◆◆LB◆\Delta x◆RB◆$. For an Arrhenius plot ($\ln k$ vs $1/T$), the gradient is $-E_a/R$.
 - **Determining the y-intercept:** The intercept on a $\ln k$ vs $1/T$ plot gives $\ln A$.
 
 ### Error Analysis
 
-- **Percentage error:** $\frac⧃LB⧄\text{absolute error}⧃RB⧄⧃LB⧄\text{measured value}⧃RB⧄ \times 100\%$.
+- **Percentage error:** $\frac◆LB◆\text{absolute error}◆RB◆◆LB◆\text{measured value}◆RB◆ \times 100\%$.
 - **Propagation of errors:** For multiplication/division, add percentage errors. For addition/subtraction, add absolute errors.
 - **Significant figures:** Final answers should be given to the same number of significant figures as the least precise data in the question (typically 3 s.f.).
 
@@ -183,7 +183,7 @@ Calculate the volume occupied by $2.50\,\mathrm{g}$ of $\mathrm{CO}_2$ at $298\,
 
 $$n = \frac{m}{M} = \frac{2.50}{44.01} = 0.0568\,\mathrm{mol}$$
 
-$$V = \frac{nRT}{p} = \frac⧃LB⧄0.0568 \times 8.314 \times 298⧃RB⧄⧃LB⧄100000⧃RB⧄ = \frac{140.7}{100000} = 1.41 \times 10^{-3}\,\mathrm{m}^3 = 1.41\,\mathrm{dm}^3$$
+$$V = \frac{nRT}{p} = \frac◆LB◆0.0568 \times 8.314 \times 298◆RB◆◆LB◆100000◆RB◆ = \frac{140.7}{100000} = 1.41 \times 10^{-3}\,\mathrm{m}^3 = 1.41\,\mathrm{dm}^3$$
 
 #### Worked Example 2: Titration Calculation
 
@@ -195,7 +195,7 @@ $$n(\mathrm{HCl}) = c \times V = 0.150 \times 0.0224 = 3.36 \times 10^{-3}\,\mat
 
 From the 1:1 stoichiometry: $n(\mathrm{NaOH}) = 3.36 \times 10^{-3}\,\mathrm{mol}$
 
-$$c(\mathrm{NaOH}) = \frac{n}{V} = \frac⧃LB⧄3.36 \times 10^{-3}⧃RB⧄⧃LB⧄0.0250⧃RB⧄ = 0.134\,\mathrm{mol\,dm^{-3}}$$
+$$c(\mathrm{NaOH}) = \frac{n}{V} = \frac◆LB◆3.36 \times 10^{-3}◆RB◆◆LB◆0.0250◆RB◆ = 0.134\,\mathrm{mol\,dm^{-3}}$$
 
 #### Worked Example 3: Enthalpy of Neutralisation
 
@@ -217,19 +217,19 @@ The rate constant for a reaction is $3.46 \times 10^{-3}\,\mathrm{s^{-1}}$ at $2
 
 $$\ln\frac{k_2}{k_1} = -\frac{E_a}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
 
-$$\ln\frac⧃LB⧄1.32 \times 10^{-2}⧃RB⧄⧃LB⧄3.46 \times 10^{-3}⧃RB⧄ = -\frac{E_a}{8.314}\left(\frac{1}{318} - \frac{1}{298}\right)$$
+$$\ln\frac◆LB◆1.32 \times 10^{-2}◆RB◆◆LB◆3.46 \times 10^{-3}◆RB◆ = -\frac{E_a}{8.314}\left(\frac{1}{318} - \frac{1}{298}\right)$$
 
 $$\ln(3.82) = -\frac{E_a}{8.314}(0.003145 - 0.003356)$$
 
 $$1.340 = -\frac{E_a}{8.314}(-2.11 \times 10^{-4})$$
 
-$$E_a = \frac⧃LB⧄1.340⧃RB⧄⧃LB⧄2.11 \times 10^{-4}⧃RB⧄ \times 8.314 = 52800\,\mathrm{J\,mol^{-1}} = 52.8\,\mathrm{kJ\,mol^{-1}}$$
+$$E_a = \frac◆LB◆1.340◆RB◆◆LB◆2.11 \times 10^{-4}◆RB◆ \times 8.314 = 52800\,\mathrm{J\,mol^{-1}} = 52.8\,\mathrm{kJ\,mol^{-1}}$$
 
 #### Worked Example 5: pH and Buffer Calculations
 
 Calculate the pH of a buffer solution containing $0.100\,\mathrm{mol\,dm^{-3}}$ ethanoic acid ($\mathrm{p}K_a = 4.76$) and $0.150\,\mathrm{mol\,dm^{-3}}$ sodium ethanoate.
 
-$$\mathrm{pH} = \mathrm{p}K_a + \log\frac⧃LB⧄[\mathrm{A}^-]⧃RB⧄⧃LB⧄[\mathrm{HA}]⧃RB⧄ = 4.76 + \log\frac{0.150}{0.100} = 4.76 + 0.176 = 4.94$$
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆ = 4.76 + \log\frac{0.150}{0.100} = 4.76 + 0.176 = 4.94$$
 
 The buffer is effective within $\pm 1\,\mathrm{pH}$ unit of $\mathrm{p}K_a$ (i.e. pH 3.76 to 5.76).
 

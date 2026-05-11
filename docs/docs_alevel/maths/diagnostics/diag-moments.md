@@ -41,7 +41,7 @@ $$\text{Student's answer} = 150 \text{ Nm}$$
 
 $$\text{Correct answer} = 150\cos 40° \approx 114.9 \text{ Nm}$$
 
-$$\text{Percentage overestimate} = \frac⧃LB⧄150 - 150\cos 40°⧃RB⧄⧃LB⧄150\cos 40°⧃RB⧄ \times 100\% = \frac⧃LB⧄1 - \cos 40°⧃RB⧄⧃LB⧄\cos 40°⧃RB⧄ \times 100\% = \left(\frac⧃LB⧄1⧃RB⧄⧃LB⧄\cos 40°⧃RB⧄ - 1\right) \times 100\% \approx 30.5\%$$
+$$\text{Percentage overestimate} = \frac◆LB◆150 - 150\cos 40°◆RB◆◆LB◆150\cos 40°◆RB◆ \times 100\% = \frac◆LB◆1 - \cos 40°◆RB◆◆LB◆\cos 40°◆RB◆ \times 100\% = \left(\frac◆LB◆1◆RB◆◆LB◆\cos 40°◆RB◆ - 1\right) \times 100\% \approx 30.5\%$$
 
 **(c)** If the $50$ N force acts perpendicular to the rod at $B$, the perpendicular distance from $A$ to the line of action is simply the length of the rod:
 
@@ -81,7 +81,7 @@ $$P = \frac{240}{1.2} = 200 \text{ N}$$
 
 Since $200 \lt 300$, the block **topples first** at $P = 200$ N.
 
-**(c)** The student's reasoning is flawed because the critical comparison is not just the value of $\mu$, but the ratio $\frac{h}{d}$ compared to $\frac⧃LB⧄1⧃RB⧄⧃LB⧄\mu⧃RB⧄$, where $h$ is the height of force application and $d$ is half the base width. Here $\frac{h}{d} = \frac{1.2}{0.4} = 3$ and $\frac⧃LB⧄1⧃RB⧄⧃LB⧄\mu⧃RB⧄ = 2$. Since $3 \gt 2$, toppling occurs first regardless of the specific value of $\mu$ being "large." A tall, narrow block with a force applied high up is always more susceptible to toppling than sliding.
+**(c)** The student's reasoning is flawed because the critical comparison is not just the value of $\mu$, but the ratio $\frac{h}{d}$ compared to $\frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆$, where $h$ is the height of force application and $d$ is half the base width. Here $\frac{h}{d} = \frac{1.2}{0.4} = 3$ and $\frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆ = 2$. Since $3 \gt 2$, toppling occurs first regardless of the specific value of $\mu$ being "large." A tall, narrow block with a force applied high up is always more susceptible to toppling than sliding.
 
 ---
 
@@ -203,9 +203,9 @@ We assumed limiting equilibrium at both surfaces. Verification using the moment 
 
 $$6 \times \frac{1000}{7} \times \sin 55° = 1200\cos 55° + 6 \times \frac{300}{7} \times \cos 55°$$
 
-$$\frac⧃LB⧄6000\sin 55°⧃RB⧄⧃LB⧄7⧃RB⧄ = \cos 55°\left(1200 + \frac{1800}{7}\right) = \cos 55° \times \frac{10200}{7}$$
+$$\frac◆LB◆6000\sin 55°◆RB◆◆LB◆7◆RB◆ = \cos 55°\left(1200 + \frac{1800}{7}\right) = \cos 55° \times \frac{10200}{7}$$
 
-$$\frac⧃LB⧄6000\sin 55°⧃RB⧄⧃LB⧄7⧃RB⧄ = \frac⧃LB⧄10200\cos 55°⧃RB⧄⧃LB⧄7⧃RB⧄$$
+$$\frac◆LB◆6000\sin 55°◆RB◆◆LB◆7◆RB◆ = \frac◆LB◆10200\cos 55°◆RB◆◆LB◆7◆RB◆$$
 
 $$6000\sin 55° = 10200\cos 55°$$
 
@@ -219,9 +219,9 @@ The correct approach is to solve the moment equation without assuming limiting f
 
 $$R_w \times 6\sin 55° = 400 \times 3\cos 55° + F_w \times 6\cos 55°$$
 
-$$R_w = \frac⧃LB⧄1200\cos 55° + 6F_w\cos 55°⧃RB⧄⧃LB⧄6\sin 55°⧃RB⧄ = \frac⧃LB⧄200\cos 55° + F_w\cos 55°⧃RB⧄⧃LB⧄\sin 55°⧃RB⧄$$
+$$R_w = \frac◆LB◆1200\cos 55° + 6F_w\cos 55°◆RB◆◆LB◆6\sin 55°◆RB◆ = \frac◆LB◆200\cos 55° + F_w\cos 55°◆RB◆◆LB◆\sin 55°◆RB◆$$
 
-$$R_w = \frac⧃LB⧄(200 + F_w)\cos 55°⧃RB⧄⧃LB⧄\sin 55°⧃RB⧄ = (200 + F_w)\cot 55°$$
+$$R_w = \frac◆LB◆(200 + F_w)\cos 55°◆RB◆◆LB◆\sin 55°◆RB◆ = (200 + F_w)\cot 55°$$
 
 Also $R_w = F_g \leq 0.4R_g = 0.4(400 - F_w) = 160 - 0.4F_w$.
 
@@ -255,7 +255,7 @@ $R_g = 400 - F_w = 400 - 0.3R_w$.
 
 $R_w = \mu_g(400 - 0.3R_w) = 400\mu_g - 0.3\mu_g R_w$.
 
-$R_w(1 + 0.3\mu_g) = 400\mu_g \implies R_w = \frac⧃LB⧄400\mu_g⧃RB⧄⧃LB⧄1 + 0.3\mu_g⧃RB⧄$.
+$R_w(1 + 0.3\mu_g) = 400\mu_g \implies R_w = \frac◆LB◆400\mu_g◆RB◆◆LB◆1 + 0.3\mu_g◆RB◆$.
 
 Substituting into the moment equation with $F_w = 0.3R_w$:
 
@@ -263,7 +263,7 @@ $$R_w \times 6\sin 55° = 400 \times 3\cos 55° + 0.3R_w \times 6\cos 55°$$
 
 $$R_w(6\sin 55° - 1.8\cos 55°) = 1200\cos 55°$$
 
-$$R_w = \frac⧃LB⧄1200\cos 55°⧃RB⧄⧃LB⧄6\sin 55° - 1.8\cos 55°⧃RB⧄$$
+$$R_w = \frac◆LB◆1200\cos 55°◆RB◆◆LB◆6\sin 55° - 1.8\cos 55°◆RB◆$$
 
 $\sin 55° \approx 0.8192$, $\cos 55° \approx 0.5736$.
 
@@ -305,7 +305,7 @@ For a uniform rod of mass $m$ and length $L$ about one end: $I = \frac{1}{3}mL^2
 
 $$\frac{1}{2} \times \frac{32}{3} \times \omega^2 = 78.4$$
 
-$$\omega^2 = \frac⧃LB⧄78.4 \times 6⧃RB⧄⧃LB⧄32⧃RB⧄ = \frac{470.4}{32} = 14.7$$
+$$\omega^2 = \frac◆LB◆78.4 \times 6◆RB◆◆LB◆32◆RB◆ = \frac{470.4}{32} = 14.7$$
 
 $$\omega = \sqrt{14.7} \approx 3.83 \text{ rad/s}$$
 
@@ -321,7 +321,7 @@ By Newton's Second Law for rotation: $\Sigma M = I\alpha$.
 
 $$78.4 = \frac{32}{3}\alpha$$
 
-$$\alpha = \frac⧃LB⧄78.4 \times 3⧃RB⧄⧃LB⧄32⧃RB⧄ = \frac{235.2}{32} = 7.35 \text{ rad/s}^2$$
+$$\alpha = \frac◆LB◆78.4 \times 3◆RB◆◆LB◆32◆RB◆ = \frac{235.2}{32} = 7.35 \text{ rad/s}^2$$
 
 ---
 

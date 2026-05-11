@@ -313,7 +313,7 @@ binding, the active site changes conformation to mould more tightly around the s
 
 The rate of an enzyme-catalysed reaction ($v$) depends on substrate concentration $[S]$:
 
-$$v = \frac⧃LB⧄V_{\max}[S]⧃RB⧄⧃LB⧄K_m + [S]⧃RB⧄$$
+$$v = \frac◆LB◆V_{\max}[S]◆RB◆◆LB◆K_m + [S]◆RB◆$$
 
 where:
 
@@ -494,13 +494,13 @@ change in DNA propagates through all levels to produce a severe disease phenotyp
 
 The Michaelis-Menten equation can be linearised by taking the reciprocal of both sides:
 
-$$\frac{1}{v} = \frac⧃LB⧄K_m⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄ \cdot \frac{1}{[S]} + \frac⧃LB⧄1⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄$$
+$$\frac{1}{v} = \frac◆LB◆K_m◆RB◆◆LB◆V_{\max}◆RB◆ \cdot \frac{1}{[S]} + \frac◆LB◆1◆RB◆◆LB◆V_{\max}◆RB◆$$
 
 A plot of $\frac{1}{v}$ versus $\frac{1}{[S]}$ yields a straight line with:
 
-- Y-intercept $= \frac⧃LB⧄1⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄$
+- Y-intercept $= \frac◆LB◆1◆RB◆◆LB◆V_{\max}◆RB◆$
 - X-intercept $= -\frac{1}{K_m}$
-- Gradient $= \frac⧃LB⧄K_m⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄$
+- Gradient $= \frac◆LB◆K_m◆RB◆◆LB◆V_{\max}◆RB◆$
 
 **Worked Example.** An enzyme has $V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$ and $K_m = 5\ \mathrm{mmol\ dm^{-3}}$.
 Calculate the reaction rate when $[S] = 2\ \mathrm{mmol\ dm^{-3}}$ using the Michaelis-Menten equation,
@@ -508,11 +508,11 @@ and verify using the Lineweaver-Burk plot.
 
 Using the Michaelis-Menten equation:
 
-$$v = \frac⧃LB⧄V_{\max}[S]⧃RB⧄⧃LB⧄K_m + [S]⧃RB⧄ = \frac⧃LB⧄50 \times 2⧃RB⧄⧃LB⧄5 + 2⧃RB⧄ = \frac{100}{7} = 14.3\ \mu\mathrm{mol\ min^{-1}}$$
+$$v = \frac◆LB◆V_{\max}[S]◆RB◆◆LB◆K_m + [S]◆RB◆ = \frac◆LB◆50 \times 2◆RB◆◆LB◆5 + 2◆RB◆ = \frac{100}{7} = 14.3\ \mu\mathrm{mol\ min^{-1}}$$
 
 Using the Lineweaver-Burk form:
 
-$$\frac{1}{v} = \frac⧃LB⧄K_m⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄ \cdot \frac{1}{[S]} + \frac⧃LB⧄1⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄ = \frac{5}{50} \times \frac{1}{2} + \frac{1}{50} = 0.05 + 0.02 = 0.07$$
+$$\frac{1}{v} = \frac◆LB◆K_m◆RB◆◆LB◆V_{\max}◆RB◆ \cdot \frac{1}{[S]} + \frac◆LB◆1◆RB◆◆LB◆V_{\max}◆RB◆ = \frac{5}{50} \times \frac{1}{2} + \frac{1}{50} = 0.05 + 0.02 = 0.07$$
 
 $$v = \frac{1}{0.07} = 14.3\ \mu\mathrm{mol\ min^{-1}}$$
 
@@ -781,15 +781,15 @@ $K_m$? (b) At $[S] = 8\ \mathrm{mmol\ dm^{-3}}$, calculate the rate with and wit
 **Answer.** (a) New $K_m = 2 \times 8 = 16\ \mathrm{mmol\ dm^{-3}}$. $V_{\max}$ is unchanged at
 $40\ \mu\mathrm{mol\ min^{-1}}$.
 
-(b) Without inhibitor: $v = \frac⧃LB⧄40 \times 8⧃RB⧄⧃LB⧄8 + 8⧃RB⧄ = \frac{320}{16} = 20\ \mu\mathrm{mol\ min^{-1}}$.
+(b) Without inhibitor: $v = \frac◆LB◆40 \times 8◆RB◆◆LB◆8 + 8◆RB◆ = \frac{320}{16} = 20\ \mu\mathrm{mol\ min^{-1}}$.
 
-With inhibitor: $v = \frac⧃LB⧄40 \times 8⧃RB⧄⧃LB⧄16 + 8⧃RB⧄ = \frac{320}{24} = 13.3\ \mu\mathrm{mol\ min^{-1}}$.
+With inhibitor: $v = \frac◆LB◆40 \times 8◆RB◆◆LB◆16 + 8◆RB◆ = \frac{320}{24} = 13.3\ \mu\mathrm{mol\ min^{-1}}$.
 
 The inhibitor reduces the rate by 33% at this substrate concentration.
 
-(c) Without inhibitor: $v = \frac⧃LB⧄40 \times 100⧃RB⧄⧃LB⧄8 + 100⧃RB⧄ = \frac{4000}{108} = 37.0\ \mu\mathrm{mol\ min^{-1}}$.
+(c) Without inhibitor: $v = \frac◆LB◆40 \times 100◆RB◆◆LB◆8 + 100◆RB◆ = \frac{4000}{108} = 37.0\ \mu\mathrm{mol\ min^{-1}}$.
 
-With inhibitor: $v = \frac⧃LB⧄40 \times 100⧃RB⧄⧃LB⧄16 + 100⧃RB⧄ = \frac{4000}{116} = 34.5\ \mu\mathrm{mol\ min^{-1}}$.
+With inhibitor: $v = \frac◆LB◆40 \times 100◆RB◆◆LB◆16 + 100◆RB◆ = \frac{4000}{116} = 34.5\ \mu\mathrm{mol\ min^{-1}}$.
 
 At high $[S]$, the rates converge towards $V_{\max}$, but are still slightly different because $[S]$
 is not infinitely greater than $K_m$. As $[S] \to \infty$, both rates approach $V_{\max} = 40$.
@@ -1066,9 +1066,9 @@ Diagnostic Test
 
 The Lineweaver-Burk plot is a double-reciprocal plot ($\frac{1}{v}$ vs $\frac{1}{[S]}$) that linearises the Michaelis-Menten equation:
 
-$$\frac{1}{v} = \frac⧃LB⧄K_m⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄ \cdot \frac{1}{[S]} + \frac⧃LB⧄1⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄$$
+$$\frac{1}{v} = \frac◆LB◆K_m◆RB◆◆LB◆V_{\max}◆RB◆ \cdot \frac{1}{[S]} + \frac◆LB◆1◆RB◆◆LB◆V_{\max}◆RB◆$$
 
-The y-intercept $= \frac⧃LB⧄1⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄$; the x-intercept $= -\frac{1}{K_m}$; the slope $= \frac⧃LB⧄K_m⧃RB⧄⧃LB⧄V_{\max}⧃RB⧄$.
+The y-intercept $= \frac◆LB◆1◆RB◆◆LB◆V_{\max}◆RB◆$; the x-intercept $= -\frac{1}{K_m}$; the slope $= \frac◆LB◆K_m◆RB◆◆LB◆V_{\max}◆RB◆$.
 
 **Competitive inhibition**: the slope increases, the y-intercept is unchanged (same $V_{\max}$), and the x-intercept moves closer to zero (higher apparent $K_m$).
 
@@ -1091,11 +1091,11 @@ Plotting $\frac{1}{v}$ vs $\frac{1}{[S]}$:
 
 At very high $[S]$: $v$ approaches $V_{\max} \approx 40\ \mu\mathrm{mol\ min^{-1}}$.
 
-From the Michaelis-Menten equation: $v = \frac⧃LB⧄V_{\max} [S]⧃RB⧄⧃LB⧄K_m + [S]⧃RB⧄$.
+From the Michaelis-Menten equation: $v = \frac◆LB◆V_{\max} [S]◆RB◆◆LB◆K_m + [S]◆RB◆$.
 
-At $v = \frac⧃LB⧄V_{\max}⧃RB⧄⧃LB⧄2⧃RB⧄$: $[S] = K_m$.
+At $v = \frac◆LB◆V_{\max}◆RB◆◆LB◆2◆RB◆$: $[S] = K_m$.
 
-$\frac⧃LB⧄V_{\max}⧃RB⧄⧃LB⧄2⧃RB⧄ = 20\ \mu\mathrm{mol\ min^{-1}}$. At $v = 20$, $[S] = 10\ \mathrm{mM}$.
+$\frac◆LB◆V_{\max}◆RB◆◆LB◆2◆RB◆ = 20\ \mu\mathrm{mol\ min^{-1}}$. At $v = 20$, $[S] = 10\ \mathrm{mM}$.
 
 Therefore: $K_m = 10\ \mathrm{mM}$ and $V_{\max} = 40\ \mu\mathrm{mol\ min^{-1}}$.
 
@@ -1272,7 +1272,7 @@ Water always moves from a region of higher water potential to a region of lower 
 6. Mark the solvent front and the position of each pigment spot.
 7. Calculate the $R_f$ value for each pigment:
 
-$$R_f = \frac⧃LB⧄\text{distance travelled by pigment}⧃RB⧄⧃LB⧄\text{distance travelled by solvent front}⧃RB⧄$$
+$$R_f = \frac◆LB◆\text{distance travelled by pigment}◆RB◆◆LB◆\text{distance travelled by solvent front}◆RB◆$$
 
 Typical $R_f$ values (petroleum ether:acetone solvent):
 
@@ -1375,9 +1375,9 @@ An enzyme has $V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$ and $K_m = 5\ \mathrm{m
 
 At $[S] = 5\ \mathrm{mM}$:
 
-Without inhibitor: $v = \frac⧃LB⧄50 \times 5⧃RB⧄⧃LB⧄5 + 5⧃RB⧄ = 25\ \mu\mathrm{mol\ min^{-1}}$ (50% of $V_{\max}$).
+Without inhibitor: $v = \frac◆LB◆50 \times 5◆RB◆◆LB◆5 + 5◆RB◆ = 25\ \mu\mathrm{mol\ min^{-1}}$ (50% of $V_{\max}$).
 
-With inhibitor: $v = \frac⧃LB⧄25 \times 5⧃RB⧄⧃LB⧄5 + 5⧃RB⧄ = 12.5\ \mu\mathrm{mol\ min^{-1}}$ (50% of new $V_{\max}$).
+With inhibitor: $v = \frac◆LB◆25 \times 5◆RB◆◆LB◆5 + 5◆RB◆ = 12.5\ \mu\mathrm{mol\ min^{-1}}$ (50% of new $V_{\max}$).
 
 The rate is halved, and increasing $[S]$ cannot overcome the inhibition.
 
@@ -1387,15 +1387,15 @@ The same enzyme ($V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$, $K_m = 5\ \mathrm{m
 
 At $[S] = 5\ \mathrm{mM}$:
 
-Without inhibitor: $v = \frac⧃LB⧄50 \times 5⧃RB⧄⧃LB⧄5 + 5⧃RB⧄ = 25\ \mu\mathrm{mol\ min^{-1}}$.
+Without inhibitor: $v = \frac◆LB◆50 \times 5◆RB◆◆LB◆5 + 5◆RB◆ = 25\ \mu\mathrm{mol\ min^{-1}}$.
 
-With inhibitor: $v = \frac⧃LB⧄50 \times 5⧃RB⧄⧃LB⧄15 + 5⧃RB⧄ = 12.5\ \mu\mathrm{mol\ min^{-1}}$.
+With inhibitor: $v = \frac◆LB◆50 \times 5◆RB◆◆LB◆15 + 5◆RB◆ = 12.5\ \mu\mathrm{mol\ min^{-1}}$.
 
 At $[S] = 50\ \mathrm{mM}$:
 
-Without inhibitor: $v = \frac⧃LB⧄50 \times 50⧃RB⧄⧃LB⧄5 + 50⧃RB⧄ = 45.5\ \mu\mathrm{mol\ min^{-1}}$.
+Without inhibitor: $v = \frac◆LB◆50 \times 50◆RB◆◆LB◆5 + 50◆RB◆ = 45.5\ \mu\mathrm{mol\ min^{-1}}$.
 
-With inhibitor: $v = \frac⧃LB⧄50 \times 50⧃RB⧄⧃LB⧄15 + 50⧃RB⧄ = 38.5\ \mu\mathrm{mol\ min^{-1}}$.
+With inhibitor: $v = \frac◆LB◆50 \times 50◆RB◆◆LB◆15 + 50◆RB◆ = 38.5\ \mu\mathrm{mol\ min^{-1}}$.
 
 At very high $[S]$, the difference between inhibited and uninhibited rates becomes negligible (both approach $V_{\max} = 50$).
 
@@ -1451,7 +1451,7 @@ Globular proteins have a compact, roughly spherical 3D structure and are functio
 
 ### 28.1 The Michaelis-Menten Equation
 
-$$v = \frac⧃LB⧄V_{max} \times [S]⧃RB⧄⧃LB⧄K_m + [S]⧃RB⧄$$
+$$v = \frac◆LB◆V_{max} \times [S]◆RB◆◆LB◆K_m + [S]◆RB◆$$
 
 | Symbol | Meaning |
 | ------ | ------- |
@@ -1680,8 +1680,8 @@ DNA with a higher GC content is more stable (more hydrogen bonds hold the strand
 | --------- | ---------------- | -------------- |
 | $K_m$ | 5 mM | 10 mM (doubled) |
 | $V_{max}$ | 100 $\mu$mol/min | 100 $\mu$mol/min (unchanged) |
-| $v$ at $[S] = 5\ \mathrm{mM}$ | $\frac⧃LB⧄100 \times 5⧃RB⧄⧃LB⧄5 + 5⧃RB⧄ = 50\ \mu\mathrm{mol/min}$ | $\frac⧃LB⧄100 \times 5⧃RB⧄⧃LB⧄10 + 5⧃RB⧄ = 33.3\ \mu\mathrm{mol/min}$ |
-| $v$ at $[S] = 50\ \mathrm{mM}$ | $\frac⧃LB⧄100 \times 50⧃RB⧄⧃LB⧄5 + 50⧃RB⧄ = 90.9\ \mu\mathrm{mol/min}$ | $\frac⧃LB⧄100 \times 50⧃RB⧄⧃LB⧄10 + 50⧃RB⧄ = 83.3\ \mu\mathrm{mol/min}$ |
+| $v$ at $[S] = 5\ \mathrm{mM}$ | $\frac◆LB◆100 \times 5◆RB◆◆LB◆5 + 5◆RB◆ = 50\ \mu\mathrm{mol/min}$ | $\frac◆LB◆100 \times 5◆RB◆◆LB◆10 + 5◆RB◆ = 33.3\ \mu\mathrm{mol/min}$ |
+| $v$ at $[S] = 50\ \mathrm{mM}$ | $\frac◆LB◆100 \times 50◆RB◆◆LB◆5 + 50◆RB◆ = 90.9\ \mu\mathrm{mol/min}$ | $\frac◆LB◆100 \times 50◆RB◆◆LB◆10 + 50◆RB◆ = 83.3\ \mu\mathrm{mol/min}$ |
 
 At very high $[S]$, both approach $V_{max}$.
 
@@ -1693,8 +1693,8 @@ At very high $[S]$, both approach $V_{max}$.
 | --------- | ---------------- | -------------- |
 | $K_m$ | 5 mM | 5 mM (unchanged) |
 | $V_{max}$ | 100 $\mu$mol/min | 60 $\mu$mol/min (reduced) |
-| $v$ at $[S] = 5\ \mathrm{mM}$ | 50 $\mu$mol/min | $\frac⧃LB⧄60 \times 5⧃RB⧄⧃LB⧄5 + 5⧃RB⧄ = 30\ \mu\mathrm{mol/min}$ |
-| $v$ at $[S] = 50\ \mathrm{mM}$ | 90.9 $\mu$mol/min | $\frac⧃LB⧄60 \times 50⧃RB⧄⧃LB⧄5 + 50⧃RB⧄ = 54.5\ \mu\mathrm{mol/min}$ |
+| $v$ at $[S] = 5\ \mathrm{mM}$ | 50 $\mu$mol/min | $\frac◆LB◆60 \times 5◆RB◆◆LB◆5 + 5◆RB◆ = 30\ \mu\mathrm{mol/min}$ |
+| $v$ at $[S] = 50\ \mathrm{mM}$ | 90.9 $\mu$mol/min | $\frac◆LB◆60 \times 50◆RB◆◆LB◆5 + 50◆RB◆ = 54.5\ \mu\mathrm{mol/min}$ |
 
 Even at very high $[S]$, the inhibited enzyme never reaches the original $V_{max}$.
 

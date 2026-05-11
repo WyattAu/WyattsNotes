@@ -48,9 +48,9 @@ Verification with experiment 4: If $[A]$ doubles and $[B]$ doubles, rate should 
 
 Using experiment 1:
 
-$$k = \frac⧃LB⧄\text{rate}⧃RB⧄⧃LB⧄[A][B]^2⧃RB⧄ = \frac⧃LB⧄1.2 \times 10^{-3}⧃RB⧄⧃LB⧄0.10 \times 0.10^2⧃RB⧄ = \frac⧃LB⧄1.2 \times 10^{-3}⧃RB⧄⧃LB⧄1.0 \times 10^{-3}⧃RB⧄ = 1.2$$
+$$k = \frac◆LB◆\text{rate}◆RB◆◆LB◆[A][B]^2◆RB◆ = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆0.10 \times 0.10^2◆RB◆ = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆1.0 \times 10^{-3}◆RB◆ = 1.2$$
 
-Units of $k$: $\frac⧃LB⧄\text{mol dm}^{-3}\text{ s}^{-1}⧃RB⧄⧃LB⧄(\text{mol dm}^{-3})(\text{mol dm}^{-3})^2⧃RB⧄ = \frac⧃LB⧄\text{mol dm}^{-3}\text{ s}^{-1}⧃RB⧄⧃LB⧄\text{mol}^3\text{ dm}^{-9}⧃RB⧄ = \text{mol}^{-2}\text{ dm}^6\text{ s}^{-1}$
+Units of $k$: $\frac◆LB◆\text{mol dm}^{-3}\text{ s}^{-1}◆RB◆◆LB◆(\text{mol dm}^{-3})(\text{mol dm}^{-3})^2◆RB◆ = \frac◆LB◆\text{mol dm}^{-3}\text{ s}^{-1}◆RB◆◆LB◆\text{mol}^3\text{ dm}^{-9}◆RB◆ = \text{mol}^{-2}\text{ dm}^6\text{ s}^{-1}$
 
 $$k = 1.2\,\text{mol}^{-2}\text{ dm}^6\text{ s}^{-1}$$
 
@@ -78,13 +78,13 @@ The rate constant for the decomposition of $\text{N}_2\text{O}_5$ was measured a
 
 $$\ln\left(\frac{k_2}{k_1}\right) = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$
 
-$$\ln\left(\frac⧃LB⧄1.35 \times 10^{-3}⧃RB⧄⧃LB⧄3.46 \times 10^{-5}⧃RB⧄\right) = \frac{E_a}{8.31}\left(\frac{1}{300} - \frac{1}{350}\right)$$
+$$\ln\left(\frac◆LB◆1.35 \times 10^{-3}◆RB◆◆LB◆3.46 \times 10^{-5}◆RB◆\right) = \frac{E_a}{8.31}\left(\frac{1}{300} - \frac{1}{350}\right)$$
 
 $$\ln(39.02) = \frac{E_a}{8.31} \times 4.762 \times 10^{-4}$$
 
 $$3.664 = \frac{E_a}{8.31} \times 4.762 \times 10^{-4}$$
 
-$$E_a = \frac⧃LB⧄3.664 \times 8.31⧃RB⧄⧃LB⧄4.762 \times 10^{-4}⧃RB⧄ = \frac⧃LB⧄30.44⧃RB⧄⧃LB⧄4.762 \times 10^{-4}⧃RB⧄ = 63930\,\text{J mol}^{-1} = 63.9\,\text{kJ mol}^{-1}$$
+$$E_a = \frac◆LB◆3.664 \times 8.31◆RB◆◆LB◆4.762 \times 10^{-4}◆RB◆ = \frac◆LB◆30.44◆RB◆◆LB◆4.762 \times 10^{-4}◆RB◆ = 63930\,\text{J mol}^{-1} = 63.9\,\text{kJ mol}^{-1}$$
 
 (b) Using the Arrhenius equation with $T = 320\,\text{K}$:
 
@@ -92,7 +92,7 @@ $$\ln k = \ln A - \frac{E_a}{RT}$$
 
 First find $\ln A$ using $T = 300\,\text{K}$:
 
-$$\ln(3.46 \times 10^{-5}) = \ln A - \frac⧃LB⧄63930⧃RB⧄⧃LB⧄8.31 \times 300⧃RB⧄$$
+$$\ln(3.46 \times 10^{-5}) = \ln A - \frac◆LB◆63930◆RB◆◆LB◆8.31 \times 300◆RB◆$$
 
 $$-10.27 = \ln A - 25.65$$
 
@@ -100,7 +100,7 @@ $$\ln A = 15.38$$
 
 Now at $320\,\text{K}$:
 
-$$\ln k = 15.38 - \frac⧃LB⧄63930⧃RB⧄⧃LB⧄8.31 \times 320⧃RB⧄ = 15.38 - 24.04 = -8.66$$
+$$\ln k = 15.38 - \frac◆LB◆63930◆RB◆◆LB◆8.31 \times 320◆RB◆ = 15.38 - 24.04 = -8.66$$
 
 $$k = e^{-8.66} = 1.74 \times 10^{-4}\,\text{s}^{-1}$$
 
@@ -134,7 +134,7 @@ The negative gradient confirms that as temperature increases ($1/T$ decreases), 
 
 (c) Using the Arrhenius equation:
 
-$$\frac⧃LB⧄k_{\text{catalysed}}⧃RB⧄⧃LB⧄k_{\text{uncatalysed}}⧃RB⧄ = \frac⧃LB⧄Ae^{-E_{a,\text{cat}}/RT}⧃RB⧄⧃LB⧄Ae^{-E_{a,\text{uncat}}/RT}⧃RB⧄ = e^{(E_{a,\text{uncat}} - E_{a,\text{cat}})/RT}$$
+$$\frac◆LB◆k_{\text{catalysed}}◆RB◆◆LB◆k_{\text{uncatalysed}}◆RB◆ = \frac◆LB◆Ae^{-E_{a,\text{cat}}/RT}◆RB◆◆LB◆Ae^{-E_{a,\text{uncat}}/RT}◆RB◆ = e^{(E_{a,\text{uncat}} - E_{a,\text{cat}})/RT}$$
 
 $$= e^{(120000 - 80000)/(8.31 \times 500)} = e^{40000/4155} = e^{9.627} = 1.52 \times 10^4$$
 
@@ -257,7 +257,7 @@ $$2\text{H}_2\text{O}_2(aq) \xrightarrow{\text{MnO}_2} 2\text{H}_2\text{O}(l) + 
 
 (b) Using the ideal gas equation to find moles of $\text{O}_2$:
 
-$$n(\text{O}_2) = \frac{pV}{RT} = \frac⧃LB⧄1.01 \times 10^5 \times 290 \times 10^{-6}⧃RB⧄⧃LB⧄8.31 \times 298⧃RB⧄ = \frac{29.29}{2476.4} = 0.01183\,\text{mol}$$
+$$n(\text{O}_2) = \frac{pV}{RT} = \frac◆LB◆1.01 \times 10^5 \times 290 \times 10^{-6}◆RB◆◆LB◆8.31 \times 298◆RB◆ = \frac{29.29}{2476.4} = 0.01183\,\text{mol}$$
 
 From the equation, 2 mol $\text{H}_2\text{O}_2$ produce 1 mol $\text{O}_2$:
 
@@ -300,7 +300,7 @@ Overall order = $1 + 2 = 3$ (1 mark).
 
 Using experiment 1: $1.2 \times 10^{-3} = k(0.10)(0.10)^2 = k(0.001)$
 
-$$k = \frac⧃LB⧄1.2 \times 10^{-3}⧃RB⧄⧃LB⧄0.001⧃RB⧄ = 1.2\,\mathrm{mol^{-2}\,dm^6\,s^{-1}}$$ (1 mark).
+$$k = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆0.001◆RB◆ = 1.2\,\mathrm{mol^{-2}\,dm^6\,s^{-1}}$$ (1 mark).
 
 #### IT-4: Arrhenius Equation Applied
 
@@ -312,13 +312,13 @@ Using the Arrhenius equation in logarithmic form:
 
 $$\ln\frac{k_2}{k_1} = -\frac{E_a}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
 
-$$\ln\frac⧃LB⧄1.21 \times 10^{-2}⧃RB⧄⧃LB⧄3.40 \times 10^{-3}⧃RB⧄ = -\frac{E_a}{8.314}\left(\frac{1}{320} - \frac{1}{300}\right)$$
+$$\ln\frac◆LB◆1.21 \times 10^{-2}◆RB◆◆LB◆3.40 \times 10^{-3}◆RB◆ = -\frac{E_a}{8.314}\left(\frac{1}{320} - \frac{1}{300}\right)$$
 
 $$\ln(3.559) = -\frac{E_a}{8.314}(0.003125 - 0.003333)$$
 
 $$1.269 = -\frac{E_a}{8.314}(-2.083 \times 10^{-4})$$
 
-$$E_a = \frac⧃LB⧄1.269⧃RB⧄⧃LB⧄2.083 \times 10^{-4}⧃RB⧄ \times 8.314 = 50600\,\mathrm{J\,mol^{-1}} = 50.6\,\mathrm{kJ\,mol^{-1}}$$
+$$E_a = \frac◆LB◆1.269◆RB◆◆LB◆2.083 \times 10^{-4}◆RB◆ \times 8.314 = 50600\,\mathrm{J\,mol^{-1}} = 50.6\,\mathrm{kJ\,mol^{-1}}$$
 
 #### UT-4: Initial Rates and Mechanism
 

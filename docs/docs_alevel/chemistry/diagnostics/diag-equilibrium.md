@@ -48,7 +48,7 @@ Partial pressures ($p_i = x_i \times p_{\text{total}}$):
 
 (b)
 
-$$K_p = \frac⧃LB⧄p(\text{NH}_3)^2⧃RB⧄⧃LB⧄p(\text{N}_2) \times p(\text{H}_2)^3⧃RB⧄ = \frac⧃LB⧄22.2^2⧃RB⧄⧃LB⧄44.4 \times 133.3^3⧃RB⧄ = \frac⧃LB⧄492.8⧃RB⧄⧃LB⧄44.4 \times 2368593⧃RB⧄ = \frac⧃LB⧄492.8⧃RB⧄⧃LB⧄1.0517 \times 10^8⧃RB⧄ = 4.68 \times 10^{-6}$$
+$$K_p = \frac◆LB◆p(\text{NH}_3)^2◆RB◆◆LB◆p(\text{N}_2) \times p(\text{H}_2)^3◆RB◆ = \frac◆LB◆22.2^2◆RB◆◆LB◆44.4 \times 133.3^3◆RB◆ = \frac◆LB◆492.8◆RB◆◆LB◆44.4 \times 2368593◆RB◆ = \frac◆LB◆492.8◆RB◆◆LB◆1.0517 \times 10^8◆RB◆ = 4.68 \times 10^{-6}$$
 
 Units: $\text{atm}^{-2}$
 
@@ -69,7 +69,7 @@ $K_c = 0.0211\,\text{mol dm}^{-3}$ at $500\,\text{K}$.
 
 (a) State and explain the effect of increasing temperature on the equilibrium yield of $\text{PCl}_3$.
 
-(b) $K_c = 0.0420\,\text{mol dm}^{-3}$ at $600\,\text{K}$. Calculate the value of $K_c$ at $550\,\text{K}$, using the van't Hoff equation approximation: $\ln(K_2/K_1) \approx \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄R⧃RB⧄\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$.
+(b) $K_c = 0.0420\,\text{mol dm}^{-3}$ at $600\,\text{K}$. Calculate the value of $K_c$ at $550\,\text{K}$, using the van't Hoff equation approximation: $\ln(K_2/K_1) \approx \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆R◆RB◆\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$.
 
 (c) Explain why adding a catalyst does not change the equilibrium position or the value of $K_c$.
 
@@ -187,7 +187,7 @@ Equilibrium concentrations (dividing by $10.0\,\text{dm}^3$):
 - $[\text{O}_2] = 0.0900\,\text{mol dm}^{-3}$
 - $[\text{SO}_3] = 0.120\,\text{mol dm}^{-3}$
 
-$$K_c = \frac⧃LB⧄[\text{SO}_3]^2⧃RB⧄⧃LB⧄[\text{SO}_2]^2[\text{O}_2]⧃RB⧄ = \frac⧃LB⧄0.120^2⧃RB⧄⧃LB⧄0.0800^2 \times 0.0900⧃RB⧄ = \frac⧃LB⧄0.01440⧃RB⧄⧃LB⧄5.760 \times 10^{-4}⧃RB⧄ = 25.0\,\text{mol}^{-1}\text{ dm}^3$$
+$$K_c = \frac◆LB◆[\text{SO}_3]^2◆RB◆◆LB◆[\text{SO}_2]^2[\text{O}_2]◆RB◆ = \frac◆LB◆0.120^2◆RB◆◆LB◆0.0800^2 \times 0.0900◆RB◆ = \frac◆LB◆0.01440◆RB◆◆LB◆5.760 \times 10^{-4}◆RB◆ = 25.0\,\text{mol}^{-1}\text{ dm}^3$$
 
 (b) Total equilibrium moles: $0.800 + 0.900 + 1.20 = 2.90\,\text{mol}$
 
@@ -196,7 +196,7 @@ Partial pressures:
 - $p(\text{O}_2) = (0.900/2.90) \times 5.00 = 1.552\,\text{atm}$
 - $p(\text{SO}_3) = (1.20/2.90) \times 5.00 = 2.069\,\text{atm}$
 
-$$K_p = \frac⧃LB⧄p(\text{SO}_3)^2⧃RB⧄⧃LB⧄p(\text{SO}_2)^2 \times p(\text{O}_2)⧃RB⧄ = \frac⧃LB⧄2.069^2⧃RB⧄⧃LB⧄1.379^2 \times 1.552⧃RB⧄ = \frac⧃LB⧄4.281⧃RB⧄⧃LB⧄2.952 \times 1.552⧃RB⧄ = \frac{4.281}{4.583} = 0.934\,\text{atm}^{-1}$$
+$$K_p = \frac◆LB◆p(\text{SO}_3)^2◆RB◆◆LB◆p(\text{SO}_2)^2 \times p(\text{O}_2)◆RB◆ = \frac◆LB◆2.069^2◆RB◆◆LB◆1.379^2 \times 1.552◆RB◆ = \frac◆LB◆4.281◆RB◆◆LB◆2.952 \times 1.552◆RB◆ = \frac{4.281}{4.583} = 0.934\,\text{atm}^{-1}$$
 
 (c) When volume is halved ($5.00\,\text{dm}^3$), all concentrations initially double, so $Q_c \gt K_c$ (since the denominator increases more due to the squared terms). The equilibrium shifts to the right (fewer moles of gas) to restore $K_c$.
 
@@ -208,9 +208,9 @@ Let $y$ mol of additional $\text{SO}_3$ form:
 
 Concentrations (dividing by $5.00\,\text{dm}^3$):
 
-$$K_c = 25.0 = \frac⧃LB⧄((1.20+y)/5.00)^2⧃RB⧄⧃LB⧄((0.800-y)/5.00)^2 \times ((0.900-y/2)/5.00)⧃RB⧄$$
+$$K_c = 25.0 = \frac◆LB◆((1.20+y)/5.00)^2◆RB◆◆LB◆((0.800-y)/5.00)^2 \times ((0.900-y/2)/5.00)◆RB◆$$
 
-$$25.0 = \frac⧃LB⧄(1.20+y)^2 \times 5.00⧃RB⧄⧃LB⧄(0.800-y)^2 \times (0.900 - y/2)⧃RB⧄$$
+$$25.0 = \frac◆LB◆(1.20+y)^2 \times 5.00◆RB◆◆LB◆(0.800-y)^2 \times (0.900 - y/2)◆RB◆$$
 
 $$5.0(1.20+y)^2 = 25.0(0.800-y)^2(0.900-y/2)$$
 
@@ -247,7 +247,7 @@ $$K_a = \frac{x^2}{0.100 - x} = 1.74 \times 10^{-5}$$
 
 $$x^2 = 1.74 \times 10^{-5} \times 0.100 = 1.74 \times 10^{-6}$$
 
-$$x = \sqrt⧃LB⧄1.74 \times 10^{-6}⧃RB⧄ = 1.319 \times 10^{-3}\,\text{mol dm}^{-3}$$
+$$x = \sqrt◆LB◆1.74 \times 10^{-6}◆RB◆ = 1.319 \times 10^{-3}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = -\log(1.319 \times 10^{-3}) = 2.88$$
 
@@ -255,7 +255,7 @@ Verification: $x/0.100 = 0.01319 = 1.32\%$, so the approximation is valid (less 
 
 (b)
 
-$$\text{Percentage dissociation} = \frac⧃LB⧄1.319 \times 10^{-3}⧃RB⧄⧃LB⧄0.100⧃RB⧄ \times 100 = 1.32\%$$
+$$\text{Percentage dissociation} = \frac◆LB◆1.319 \times 10^{-3}◆RB◆◆LB◆0.100◆RB◆ \times 100 = 1.32\%$$
 
 (c) At $0.00100\,\text{mol dm}^{-3}$:
 
@@ -265,11 +265,11 @@ Here, $x$ may not be negligible compared to $0.00100$. Solving the quadratic:
 
 $$x^2 + 1.74 \times 10^{-5}x - 1.74 \times 10^{-8} = 0$$
 
-$$x = \frac⧃LB⧄-1.74 \times 10^{-5} + \sqrt{(1.74 \times 10^{-5})^2 + 4 \times 1.74 \times 10^{-8}}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$x = \frac◆LB◆-1.74 \times 10^{-5} + \sqrt{(1.74 \times 10^{-5})^2 + 4 \times 1.74 \times 10^{-8}}◆RB◆◆LB◆2◆RB◆$$
 
-$$x = \frac⧃LB⧄-1.74 \times 10^{-5} + \sqrt{3.028 \times 10^{-10} + 6.960 \times 10^{-8}}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$x = \frac◆LB◆-1.74 \times 10^{-5} + \sqrt{3.028 \times 10^{-10} + 6.960 \times 10^{-8}}◆RB◆◆LB◆2◆RB◆$$
 
-$$x = \frac⧃LB⧄-1.74 \times 10^{-5} + \sqrt{6.990 \times 10^{-8}}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄-1.74 \times 10^{-5} + 2.644 \times 10^{-4}⧃RB⧄⧃LB⧄2⧃RB⧄ = 1.235 \times 10^{-4}\,\text{mol dm}^{-3}$$
+$$x = \frac◆LB◆-1.74 \times 10^{-5} + \sqrt{6.990 \times 10^{-8}}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-1.74 \times 10^{-5} + 2.644 \times 10^{-4}◆RB◆◆LB◆2◆RB◆ = 1.235 \times 10^{-4}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = -\log(1.235 \times 10^{-4}) = 3.91$$
 
@@ -328,13 +328,13 @@ $\Delta H^\circ = -41\,\mathrm{kJ\,mol^{-1}}$, $\Delta S^\circ = -42\,\mathrm{J\
 
 (a) $\Delta G^\circ = -41000 - 298 \times (-42) = -41000 + 12516 = -28484\,\mathrm{J\,mol^{-1}}$
 
-$$K_p = \exp\left(\frac⧃LB⧄28484⧃RB⧄⧃LB⧄8.314 \times 298⧃RB⧄\right) = \exp(11.50) = 9.89 \times 10^4$$
+$$K_p = \exp\left(\frac◆LB◆28484◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(11.50) = 9.89 \times 10^4$$
 
 Since $\Delta n = 0$, $K_p$ is dimensionless (1 mark).
 
 (b) $K_p = 1$ when $\Delta G^\circ = 0$:
 
-$$T = \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄ = \frac{-41000}{-0.042} = 976\,\mathrm{K}$$ (1 mark).
+$$T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{-41000}{-0.042} = 976\,\mathrm{K}$$ (1 mark).
 
 (c) ICE table (pressures in atm):
 
@@ -346,7 +346,7 @@ $$T = \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄ = \frac{
 
 $$K_p = \frac{x^2}{(1-x)^2} = 9.89 \times 10^4$$
 
-$$\frac{x}{1-x} = \sqrt⧃LB⧄9.89 \times 10^4⧃RB⧄ = 314.5$$
+$$\frac{x}{1-x} = \sqrt◆LB◆9.89 \times 10^4◆RB◆ = 314.5$$
 
 $$x = 314.5(1-x) = 314.5 - 314.5x$$
 

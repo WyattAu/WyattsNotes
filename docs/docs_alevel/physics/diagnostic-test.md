@@ -30,7 +30,7 @@ questions. Each question has an answer and a revision redirect. Time allowed: 90
 
 <details>
 <summary>Q2. A 2.0 kg object moving at 5.0 m s$^{-1}$ collides elastically with a stationary 3.0 kg object. Calculate the velocity of the 3.0 kg object after the collision.</summary>
-**Answer.** $v_2 = \frac{2m_1 u_1}{m_1 + m_2} = \frac⧃LB⧄2 \times 2.0 \times 5.0⧃RB⧄⧃LB⧄5.0⧃RB⧄ = 4.0$ m
+**Answer.** $v_2 = \frac{2m_1 u_1}{m_1 + m_2} = \frac◆LB◆2 \times 2.0 \times 5.0◆RB◆◆LB◆5.0◆RB◆ = 4.0$ m
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Momentum](/docs/alevel/physics/mechanics/momentum)
@@ -57,7 +57,7 @@ s$^{-1}$.
 
 <details>
 <summary>Q5. A mass on a spring oscillates with period 0.80 s and amplitude 4.0 cm. Calculate its maximum velocity.</summary>
-**Answer.** $v_{\max} = \omega A = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄T⧃RB⧄ \times A = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄0.80⧃RB⧄ \times 0.040 = 0.314$
+**Answer.** $v_{\max} = \omega A = \frac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆ \times A = \frac◆LB◆2\pi◆RB◆◆LB◆0.80◆RB◆ \times 0.040 = 0.314$
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Oscillations](/docs/alevel/physics/mechanics/oscillations)
@@ -69,7 +69,7 @@ m s$^{-1}$.
 <details>
 <summary>Q6. Light of wavelength 580 nm passes through double slits 0.40 mm apart onto a screen 1.5 m away. What is the fringe spacing?</summary>
 **Answer.**
-$\Delta w = \frac⧃LB⧄\lambda D⧃RB⧄⧃LB⧄s⧃RB⧄ = \frac⧃LB⧄580 \times 10^{-9} \times 1.5⧃RB⧄⧃LB⧄0.40 \times 10^{-3}⧃RB⧄ = 2.175 \times 10^{-3}$
+$\Delta w = \frac◆LB◆\lambda D◆RB◆◆LB◆s◆RB◆ = \frac◆LB◆580 \times 10^{-9} \times 1.5◆RB◆◆LB◆0.40 \times 10^{-3}◆RB◆ = 2.175 \times 10^{-3}$
 m $= 2.18$ mm.
 
 <b>If you get this wrong, revise:</b>
@@ -119,7 +119,7 @@ $n_{\max} = d/\lambda = 1.667 \times 10^{-6}/500 \times 10^{-9} = 3.33$. Maximum
 
 <details>
 <summary>Q11. A 6 $\Omega$ and a 3 $\Omega$ resistor are in parallel. What is the equivalent resistance?</summary>
-**Answer.** $R = \frac⧃LB⧄6 \times 3⧃RB⧄⧃LB⧄6 + 3⧃RB⧄ = 2.0\,\Omega$.
+**Answer.** $R = \frac◆LB◆6 \times 3◆RB◆◆LB◆6 + 3◆RB◆ = 2.0\,\Omega$.
 
 <b>If you get this wrong, revise:</b> [DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
 
@@ -194,7 +194,7 @@ m.
 <details>
 <summary>Q19. Derive the speed of light from $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ and $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$.</summary>
 **Answer.**
-$c = 1/\sqrt⧃LB⧄\mu_0\varepsilon_0⧃RB⧄ = 1/\sqrt⧃LB⧄4\pi \times 10^{-7} \times 8.85 \times 10^{-12}⧃RB⧄ = 1/\sqrt⧃LB⧄1.113 \times 10^{-17}⧃RB⧄ = 3.00 \times 10^8$
+$c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆ = 1/\sqrt◆LB◆4\pi \times 10^{-7} \times 8.85 \times 10^{-12}◆RB◆ = 1/\sqrt◆LB◆1.113 \times 10^{-17}◆RB◆ = 3.00 \times 10^8$
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
@@ -233,7 +233,7 @@ the change in flux that produced it.
 <details>
 <summary>Q23. Calculate the rms speed of helium atoms ($M_r = 0.004$ kg mol$^{-1}$) at 300 K.</summary>
 **Answer.**
-$v_{\mathrm{rms}} = \sqrt{3RT/M_r} = \sqrt⧃LB⧄3 \times 8.31 \times 300/0.004⧃RB⧄ = \sqrt{1869750} = 1367$ m
+$v_{\mathrm{rms}} = \sqrt{3RT/M_r} = \sqrt◆LB◆3 \times 8.31 \times 300/0.004◆RB◆ = \sqrt{1869750} = 1367$ m
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
@@ -312,7 +312,7 @@ $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}
 <details>
 <summary>Q31. Calculate the de Broglie wavelength of an electron accelerated through 200 V.</summary>
 **Answer.**
-$\lambda = h/\sqrt{2m_e eV} = 6.63 \times 10^{-34}/\sqrt⧃LB⧄2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 200⧃RB⧄ = 6.63 \times 10^{-34}/7.64 \times 10^{-24} = 8.68 \times 10^{-11}$
+$\lambda = h/\sqrt{2m_e eV} = 6.63 \times 10^{-34}/\sqrt◆LB◆2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 200◆RB◆ = 6.63 \times 10^{-34}/7.64 \times 10^{-24} = 8.68 \times 10^{-11}$
 m.
 
 <b>If you get this wrong, revise:</b>

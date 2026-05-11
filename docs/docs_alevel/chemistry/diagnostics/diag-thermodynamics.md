@@ -122,7 +122,7 @@ $\Delta G^\circ \gt 0$, so the reaction is **not spontaneous** at $298\,\text{K}
 
 $$\Delta H^\circ - T\Delta S^\circ \leq 0$$
 
-$$T \geq \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄ = \frac{178000}{161} = 1106\,\text{K}$$
+$$T \geq \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{178000}{161} = 1106\,\text{K}$$
 
 The minimum temperature is approximately $1106\,\text{K}$ ($833\,^\circ\text{C}$).
 
@@ -154,7 +154,7 @@ $\Delta H^\circ = -198\,\text{kJ mol}^{-1}$, $\Delta S^\circ = -190\,\text{J K}^
 
 (a) The reaction ceases to be feasible when $\Delta G^\circ \gt 0$:
 
-$$T \gt \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄ = \frac{-198000}{-190} = 1042\,\text{K}$$
+$$T \gt \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{-198000}{-190} = 1042\,\text{K}$$
 
 Above $1042\,\text{K}$ ($769\,^\circ\text{C}$), the reaction is no longer thermodynamically spontaneous. The negative $\Delta S^\circ$ (3 mol gas $\to$ 2 mol gas) means that at high temperatures, the $-T\Delta S^\circ$ term dominates and makes $\Delta G^\circ$ positive.
 

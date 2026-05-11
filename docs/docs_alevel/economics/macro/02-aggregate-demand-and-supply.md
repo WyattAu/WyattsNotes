@@ -367,7 +367,7 @@ $$k = \frac{1}{MPS + MPT + MPM}$$
 
 where $MPT$ = marginal propensity to tax, $MPM$ = marginal propensity to import.
 
-$$\Delta Y = \frac⧃LB⧄\Delta A⧃RB⧄⧃LB⧄MPS + MPT + MPM⧃RB⧄$$
+$$\Delta Y = \frac◆LB◆\Delta A◆RB◆◆LB◆MPS + MPT + MPM◆RB◆$$
 
 The more open the economy (high MPM) and the higher the tax rate (high MPT), the smaller the
 multiplier. This is why small open economies (e.g., Singapore) have smaller multipliers than large
@@ -379,7 +379,7 @@ If all households simultaneously increase their saving (reduce consumption), agg
 The multiplier effect amplifies the initial reduction in spending, causing a larger fall in income.
 Since saving depends on income ($S = -a + (1-c)Y$), total saving may actually _decrease_:
 
-$$\Delta S = MPS \times \Delta Y = MPS \times \frac⧃LB⧄\Delta C⧃RB⧄⧃LB⧄MPS⧃RB⧄ = \Delta C < 0$$
+$$\Delta S = MPS \times \Delta Y = MPS \times \frac◆LB◆\Delta C◆RB◆◆LB◆MPS◆RB◆ = \Delta C < 0$$
 
 This is the **paradox of thrift**: what is rational for the individual (saving more) is collectively
 irrational (everyone ends up poorer and saving less).

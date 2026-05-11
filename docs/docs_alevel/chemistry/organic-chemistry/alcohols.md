@@ -552,11 +552,11 @@ $$\mathrm{(CH}_3)_3\mathrm{CCH}_2\mathrm{CH}_2\mathrm{OH}_2^+ \to \mathrm{(CH}_3
 
 Step 3: Hydride shift from the adjacent carbon to form a more stable tertiary carbocation:
 
-$$\mathrm{(CH}_3)_3\mathrm{CCH}_2\mathrm{CH}_2^+ \to \mathrm{(CH}_3)_2\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{CH}_2\mathrm{CH}(\mathrm{CH}_3)_2$$
+$$\mathrm{(CH}_3)_3\mathrm{CCH}_2\mathrm{CH}_2^+ \to \mathrm{(CH}_3)_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{CH}_2\mathrm{CH}(\mathrm{CH}_3)_2$$
 
 Step 4: Loss of a proton gives the alkene:
 
-$$\mathrm{(CH}_3)_2\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{CH}_2\mathrm{CH}(\mathrm{CH}_3)_2 \to \mathrm{(CH}_3)_2\mathrm{C}=\mathrm{CHCH}(\mathrm{CH}_3)_2 + \mathrm{H}^+$$
+$$\mathrm{(CH}_3)_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{CH}_2\mathrm{CH}(\mathrm{CH}_3)_2 \to \mathrm{(CH}_3)_2\mathrm{C}=\mathrm{CHCH}(\mathrm{CH}_3)_2 + \mathrm{H}^+$$
 
 The product is 2,3,3-trimethylbut-1-ene. The carbocation rearrangement (hydride shift) occurs because the tertiary carbocation is much more stable than the primary carbocation.
 

@@ -212,10 +212,10 @@ def fib(n):
 ```
 
 **Complexity:** $T(n) = T(n-1) + T(n-2) + O(1)$. This gives $T(n) = \Theta(\phi^n)$ where
-$\phi = \frac⧃LB⧄1+\sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 1.618$ (the golden ratio).
+$\phi = \frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.618$ (the golden ratio).
 
 **Proof sketch.** The recurrence has characteristic equation $r^2 = r + 1$, giving roots $\phi$ and
-$\psi = \frac⧃LB⧄1-\sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄$. The solution is $T(n) = A\phi^n + B\psi^n$. Since $|\psi| \lt{} 1$,
+$\psi = \frac◆LB◆1-\sqrt{5}◆RB◆◆LB◆2◆RB◆$. The solution is $T(n) = A\phi^n + B\psi^n$. Since $|\psi| \lt{} 1$,
 $T(n) = \Theta(\phi^n)$. $\square$
 
 :::warning

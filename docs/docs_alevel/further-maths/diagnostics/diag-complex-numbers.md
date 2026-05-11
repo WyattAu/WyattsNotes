@@ -34,12 +34,12 @@ $z_1/z_2 = \sqrt{5}(\cos(-1.751) + i\sin(-1.751))$.
 
 (b) $1 + i = \sqrt{2}(\cos\pi/4 + i\sin\pi/4)$. $(1+i)^8 = (\sqrt{2})^8(\cos 2\pi + i\sin 2\pi) = 16(1 + 0i) = 16$.
 
-(c) $-16 = 16(\cos\pi + i\sin\pi)$. Fourth roots: $r = 2$, $\theta = \frac⧃LB⧄\pi + 2k\pi⧃RB⧄⧃LB⧄4⧃RB⧄$ for $k = 0,1,2,3$.
+(c) $-16 = 16(\cos\pi + i\sin\pi)$. Fourth roots: $r = 2$, $\theta = \frac◆LB◆\pi + 2k\pi◆RB◆◆LB◆4◆RB◆$ for $k = 0,1,2,3$.
 
-$k=0$: $2(\cos\pi/4 + i\sin\pi/4) = 2\left(\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ + \frac⧃LB⧄i⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄\right) = \sqrt{2} + \sqrt{2}i$.
-$k=1$: $2(\cos 3\pi/4 + i\sin 3\pi/4) = 2\left(-\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ + \frac⧃LB⧄i⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄\right) = -\sqrt{2} + \sqrt{2}i$.
-$k=2$: $2(\cos 5\pi/4 + i\sin 5\pi/4) = 2\left(-\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ - \frac⧃LB⧄i⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄\right) = -\sqrt{2} - \sqrt{2}i$.
-$k=3$: $2(\cos 7\pi/4 + i\sin 7\pi/4) = 2\left(\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ - \frac⧃LB⧄i⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄\right) = \sqrt{2} - \sqrt{2}i$.
+$k=0$: $2(\cos\pi/4 + i\sin\pi/4) = 2\left(\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ + \frac◆LB◆i◆RB◆◆LB◆\sqrt{2}◆RB◆\right) = \sqrt{2} + \sqrt{2}i$.
+$k=1$: $2(\cos 3\pi/4 + i\sin 3\pi/4) = 2\left(-\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ + \frac◆LB◆i◆RB◆◆LB◆\sqrt{2}◆RB◆\right) = -\sqrt{2} + \sqrt{2}i$.
+$k=2$: $2(\cos 5\pi/4 + i\sin 5\pi/4) = 2\left(-\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ - \frac◆LB◆i◆RB◆◆LB◆\sqrt{2}◆RB◆\right) = -\sqrt{2} - \sqrt{2}i$.
+$k=3$: $2(\cos 7\pi/4 + i\sin 7\pi/4) = 2\left(\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ - \frac◆LB◆i◆RB◆◆LB◆\sqrt{2}◆RB◆\right) = \sqrt{2} - \sqrt{2}i$.
 
 (d) Product $= (\sqrt{2} + \sqrt{2}i)(-\sqrt{2} + \sqrt{2}i)(-\sqrt{2} - \sqrt{2}i)(\sqrt{2} - \sqrt{2}i)$.
 

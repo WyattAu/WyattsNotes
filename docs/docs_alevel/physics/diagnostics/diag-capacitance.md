@@ -29,11 +29,11 @@ Take $\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F}\,\text{m}^{-1}$.
 
 Plate area: $A = (0.10)^2 = 0.010\,\text{m}^2$
 
-$C_{\text{air}} = \frac⧃LB⧄\varepsilon_0 A⧃RB⧄⧃LB⧄d_{\text{air}}⧃RB⧄ = \frac⧃LB⧄8.85 \times 10^{-12} \times 0.010⧃RB⧄⧃LB⧄0.5 \times 10^{-3}⧃RB⧄ = 1.77 \times 10^{-10}\,\text{F} = 177\,\text{pF}$
+$C_{\text{air}} = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d_{\text{air}}◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 0.010◆RB◆◆LB◆0.5 \times 10^{-3}◆RB◆ = 1.77 \times 10^{-10}\,\text{F} = 177\,\text{pF}$
 
-$C_{\text{dielectric}} = \frac⧃LB⧄\varepsilon_0 \varepsilon_r A⧃RB⧄⧃LB⧄d_{\text{diel}}⧃RB⧄ = \frac⧃LB⧄8.85 \times 10^{-12} \times 4.5 \times 0.010⧃RB⧄⧃LB⧄1.0 \times 10^{-3}⧃RB⧄ = 3.983 \times 10^{-10}\,\text{F} = 398\,\text{pF}$
+$C_{\text{dielectric}} = \frac◆LB◆\varepsilon_0 \varepsilon_r A◆RB◆◆LB◆d_{\text{diel}}◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 4.5 \times 0.010◆RB◆◆LB◆1.0 \times 10^{-3}◆RB◆ = 3.983 \times 10^{-10}\,\text{F} = 398\,\text{pF}$
 
-For two air gaps in series: $\frac⧃LB⧄1⧃RB⧄⧃LB⧄C_{\text{air,total}}⧃RB⧄ = \frac{1}{177} + \frac{1}{177} = \frac{2}{177} \Rightarrow C_{\text{air,total}} = 88.5\,\text{pF}$
+For two air gaps in series: $\frac◆LB◆1◆RB◆◆LB◆C_{\text{air,total}}◆RB◆ = \frac{1}{177} + \frac{1}{177} = \frac{2}{177} \Rightarrow C_{\text{air,total}} = 88.5\,\text{pF}$
 
 Total capacitance: $\frac{1}{C} = \frac{1}{88.5} + \frac{1}{398} = 0.01130 + 0.002513 = 0.01381\,\text{pF}^{-1}$
 
@@ -43,7 +43,7 @@ $$C = 72.4\,\text{pF}$$
 
 After removing the dielectric, the capacitor is entirely air-filled:
 
-$$C' = \frac⧃LB⧄\varepsilon_0 A⧃RB⧄⧃LB⧄d⧃RB⧄ = \frac⧃LB⧄8.85 \times 10^{-12} \times 0.010⧃RB⧄⧃LB⧄2.0 \times 10^{-3}⧃RB⧄ = 4.425 \times 10^{-11}\,\text{F} = 44.3\,\text{pF}$$
+$$C' = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 0.010◆RB◆◆LB◆2.0 \times 10^{-3}◆RB◆ = 4.425 \times 10^{-11}\,\text{F} = 44.3\,\text{pF}$$
 
 New voltage: $V' = Q/C' = 1.448 \times 10^{-8}/(4.425 \times 10^{-11}) = 327\,\text{V}$
 
@@ -142,7 +142,7 @@ An RC circuit with $R = 10\,\text{k}\Omega$ and $C = 100\,\text{nF}$ is driven b
 
 For the capacitor to reach $63\%$ during one half-cycle: $\tau = T/2 = 1/(2f)$
 
-$$f = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2\tau⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2 \times 10^{-3}⧃RB⧄ = 500\,\text{Hz}$$
+$$f = \frac◆LB◆1◆RB◆◆LB◆2\tau◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2 \times 10^{-3}◆RB◆ = 500\,\text{Hz}$$
 
 (b) At $f = 1.0\,\text{kHz}$, the period is $T = 1.0\,\text{ms}$ and the half-cycle is $0.50\,\text{ms}$.
 
@@ -173,17 +173,17 @@ Take $\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F}\,\text{m}^{-1}$.
 
 **Solution:**
 
-(a) $C = \frac⧃LB⧄\varepsilon_0 A⧃RB⧄⧃LB⧄d⧃RB⧄ = \frac⧃LB⧄8.85 \times 10^{-12} \times 2.0 \times 10^{-3}⧃RB⧄⧃LB⧄20 \times 10^{-6}⧃RB⧄ = \frac⧃LB⧄1.77 \times 10^{-14}⧃RB⧄⧃LB⧄2.0 \times 10^{-5}⧃RB⧄ = 8.85 \times 10^{-10}\,\text{F} = 885\,\text{pF}$
+(a) $C = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 2.0 \times 10^{-3}◆RB◆◆LB◆20 \times 10^{-6}◆RB◆ = \frac◆LB◆1.77 \times 10^{-14}◆RB◆◆LB◆2.0 \times 10^{-5}◆RB◆ = 8.85 \times 10^{-10}\,\text{F} = 885\,\text{pF}$
 
 (b) The charge on the capacitor is approximately constant (since $\tau$ is large): $Q \approx CV_0 = 885 \times 10^{-12} \times 200 = 1.77 \times 10^{-7}\,\text{C}$
 
 When the separation changes by $\Delta d = \pm 1.0\,\mu\text{m}$:
 
-$$\Delta C = -\frac⧃LB⧄\varepsilon_0 A \Delta d⧃RB⧄⧃LB⧄d^2⧃RB⧄ = -\frac⧃LB⧄8.85 \times 10^{-12} \times 2.0 \times 10^{-3} \times 1.0 \times 10^{-6}⧃RB⧄⧃LB⧄(20 \times 10^{-6})^2⧃RB⧄ = -\frac⧃LB⧄1.77 \times 10^{-20}⧃RB⧄⧃LB⧄4.0 \times 10^{-10}⧃RB⧄ = -4.43 \times 10^{-11}\,\text{F}$$
+$$\Delta C = -\frac◆LB◆\varepsilon_0 A \Delta d◆RB◆◆LB◆d^2◆RB◆ = -\frac◆LB◆8.85 \times 10^{-12} \times 2.0 \times 10^{-3} \times 1.0 \times 10^{-6}◆RB◆◆LB◆(20 \times 10^{-6})^2◆RB◆ = -\frac◆LB◆1.77 \times 10^{-20}◆RB◆◆LB◆4.0 \times 10^{-10}◆RB◆ = -4.43 \times 10^{-11}\,\text{F}$$
 
 The voltage across the capacitor changes: $V_C = Q/C$
 
-$$\Delta V_C \approx -\frac⧃LB⧄Q \Delta C⧃RB⧄⧃LB⧄C^2⧃RB⧄ = -\frac⧃LB⧄1.77 \times 10^{-7} \times (-4.43 \times 10^{-11})⧃RB⧄⧃LB⧄(8.85 \times 10^{-10})^2⧃RB⧄ = \frac⧃LB⧄7.84 \times 10^{-18}⧃RB⧄⧃LB⧄7.83 \times 10^{-19}⧃RB⧄ = 10.0\,\text{V}$$
+$$\Delta V_C \approx -\frac◆LB◆Q \Delta C◆RB◆◆LB◆C^2◆RB◆ = -\frac◆LB◆1.77 \times 10^{-7} \times (-4.43 \times 10^{-11})◆RB◆◆LB◆(8.85 \times 10^{-10})^2◆RB◆ = \frac◆LB◆7.84 \times 10^{-18}◆RB◆◆LB◆7.83 \times 10^{-19}◆RB◆ = 10.0\,\text{V}$$
 
 Peak-to-peak variation across the resistor $\approx 20\,\text{V}$.
 
@@ -212,7 +212,7 @@ Capacitor $C_1 = 10\,\mu\text{F}$ is charged to $50\,\text{V}$. It is then conne
 
 After connection, the capacitors are in parallel: $C_{\text{total}} = C_1 + C_2 = 50\,\mu\text{F}$
 
-$$V_f = \frac⧃LB⧄Q_1⧃RB⧄⧃LB⧄C_{\text{total}}⧃RB⧄ = \frac⧃LB⧄5.0 \times 10^{-4}⧃RB⧄⧃LB⧄50 \times 10^{-6}⧃RB⧄ = 10\,\text{V}$$
+$$V_f = \frac◆LB◆Q_1◆RB◆◆LB◆C_{\text{total}}◆RB◆ = \frac◆LB◆5.0 \times 10^{-4}◆RB◆◆LB◆50 \times 10^{-6}◆RB◆ = 10\,\text{V}$$
 
 (b) Energy before: $E_i = \frac{1}{2}C_1 V_1^2 = 0.5 \times 10^{-5} \times 2500 = 12.5 \times 10^{-3}\,\text{J} = 12.5\,\text{mJ}$
 
@@ -226,7 +226,7 @@ This energy is dissipated as heat in the connecting wires (or resistor) and as e
 
 $$I_0 = \frac{V_1}{R} = \frac{50}{100} = 0.50\,\text{A}$$
 
-The time constant for the discharge: $\tau = R \times \frac{C_1 C_2}{C_1 + C_2} = 100 \times \frac⧃LB⧄10 \times 40⧃RB⧄⧃LB⧄50⧃RB⧄ \times 10^{-6} = 100 \times 8 \times 10^{-6} = 8.0 \times 10^{-4}\,\text{s}$
+The time constant for the discharge: $\tau = R \times \frac{C_1 C_2}{C_1 + C_2} = 100 \times \frac◆LB◆10 \times 40◆RB◆◆LB◆50◆RB◆ \times 10^{-6} = 100 \times 8 \times 10^{-6} = 8.0 \times 10^{-4}\,\text{s}$
 
 Total energy dissipated in the resistor $= 10.0\,\text{mJ}$ (same as the energy lost, regardless of $R$).
 

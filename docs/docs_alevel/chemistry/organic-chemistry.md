@@ -148,15 +148,15 @@ $$
 Step 1: $\mathrm{HBr}$ approaches the double bond. The $\pi$ electrons attack the $\delta^+$ hydrogen. The H-Br bond breaks heterolytically, forming a carbocation:
 
 $$
-\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H-Br} \to \mathrm{CH}_3\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{HCH}_3 + \mathrm{Br}^-
+\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H-Br} \to \mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_3 + \mathrm{Br}^-
 $$
 
-The secondary carbocation ($\mathrm{CH}_3\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{HCH}_3$) is formed preferentially over the primary ($\mathrm{CH}_3\mathrm{CH}_2\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{H}_2$) because it is more stable (hyperconjugation and inductive effects from the methyl group).
+The secondary carbocation ($\mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_3$) is formed preferentially over the primary ($\mathrm{CH}_3\mathrm{CH}_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{H}_2$) because it is more stable (hyperconjugation and inductive effects from the methyl group).
 
 Step 2: $\mathrm{Br}^-$ attacks the carbocation:
 
 $$
-\mathrm{CH}_3\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{HCH}_3 + \mathrm{Br}^- \to \mathrm{CH}_3\mathrm{CHBrCH}_3
+\mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_3 + \mathrm{Br}^- \to \mathrm{CH}_3\mathrm{CHBrCH}_3
 $$
 
 ### Markovnikov's Rule
@@ -469,7 +469,7 @@ A thin layer of stationary phase (silica gel, $\mathrm{SiO}_2$) on a glass or al
 **$R_f$ value:** The ratio of the distance travelled by the compound to the distance travelled by the solvent front.
 
 $$
-R_f = \frac⧃LB⧄\mathrm{distance travelled by spot}⧃RB⧄⧃LB⧄\mathrm{distance travelled by solvent front}⧃RB⧄
+R_f = \frac◆LB◆\mathrm{distance travelled by spot}◆RB◆◆LB◆\mathrm{distance travelled by solvent front}◆RB◆
 $$
 
 $R_f$ values range from 0 to 1. A compound with higher affinity for the mobile phase (more non-polar) travels further and has a higher $R_f$ value.

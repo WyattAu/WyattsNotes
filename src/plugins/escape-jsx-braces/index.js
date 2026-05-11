@@ -20,8 +20,8 @@
  */
 const visit = require('unist-util-visit');
 
-const LBRACE = '\u29C3LB\u29C4';  // ⦃LB⦄
-const RBRACE = '\u29C3RB\u29C4';  // ⦃RB⦄
+const LBRACE = '◆LB◆';
+const RBRACE = '◆RB◆';
 
 module.exports = function escapeJsxBraces() {
   return (tree, vfile) => {

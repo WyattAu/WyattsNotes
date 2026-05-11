@@ -55,11 +55,11 @@ $$O(1) \subset o(\log n) \subset O(\log n) \subset o(\sqrt{n}) \subset O(\sqrt{n
 
 **Proof (selected).** We prove $n = o(n \log n)$:
 
-$$\lim_{n \to \infty} \frac⧃LB⧄n⧃RB⧄⧃LB⧄n \log n⧃RB⧄ = \lim_{n \to \infty} \frac⧃LB⧄1⧃RB⧄⧃LB⧄\log n⧃RB⧄ = 0$$
+$$\lim_{n \to \infty} \frac◆LB◆n◆RB◆◆LB◆n \log n◆RB◆ = \lim_{n \to \infty} \frac◆LB◆1◆RB◆◆LB◆\log n◆RB◆ = 0$$
 
 Similarly, $\log n = o(n)$:
 
-$$\lim_{n \to \infty} \frac⧃LB⧄\log n⧃RB⧄⧃LB⧄n⧃RB⧄ = 0 \quad \mathrm{(by L'Hôpital's rule)}$$
+$$\lim_{n \to \infty} \frac◆LB◆\log n◆RB◆◆LB◆n◆RB◆ = 0 \quad \mathrm{(by L'Hôpital's rule)}$$
 
 And $n^k = o(2^n)$ for any constant $k$:
 
@@ -401,9 +401,9 @@ $$\log^2 n < n^{0.5} < n = 2^{\log n} < n \log n < n^3 < 2^n < n!$$
 
 **Verification of selected orderings:**
 
-- $\log^2 n = o(n^{0.5})$: $\lim \frac⧃LB⧄\log^2 n⧃RB⧄⧃LB⧄\sqrt{n}⧃RB⧄ = 0$ ✓
-- $n^{0.5} = o(n)$: $\lim \frac⧃LB⧄\sqrt{n}⧃RB⧄⧃LB⧄n⧃RB⧄ = 0$ ✓
-- $n = o(n \log n)$: $\lim \frac⧃LB⧄n⧃RB⧄⧃LB⧄n \log n⧃RB⧄ = 0$ ✓
+- $\log^2 n = o(n^{0.5})$: $\lim \frac◆LB◆\log^2 n◆RB◆◆LB◆\sqrt{n}◆RB◆ = 0$ ✓
+- $n^{0.5} = o(n)$: $\lim \frac◆LB◆\sqrt{n}◆RB◆◆LB◆n◆RB◆ = 0$ ✓
+- $n = o(n \log n)$: $\lim \frac◆LB◆n◆RB◆◆LB◆n \log n◆RB◆ = 0$ ✓
 - $n^3 = o(2^n)$: $\lim \frac{n^3}{2^n} = 0$ ✓
 </details>
 
@@ -543,13 +543,13 @@ $f$ grows strictly slower than $g$.
 <summary>Answer</summary>
 
 **(a) $O(n \log n)$ is more efficient than $O(n^2)$.**
-$\lim_{n \to \infty} \frac⧃LB⧄n \log n⧃RB⧄⧃LB⧄n^2⧃RB⧄ = \lim_{n \to \infty} \frac⧃LB⧄\log n⧃RB⧄⧃LB⧄n⧃RB⧄ = 0$. So
+$\lim_{n \to \infty} \frac◆LB◆n \log n◆RB◆◆LB◆n^2◆RB◆ = \lim_{n \to \infty} \frac◆LB◆\log n◆RB◆◆LB◆n◆RB◆ = 0$. So
 $n \log n = o(n^2)$ — it grows strictly slower.
 
 **(b) $O(n^3)$ is more efficient than $O(2^n)$.** $\lim_{n \to \infty} \frac{n^3}{2^n} = 0$
 (exponential always dominates polynomial). So $n^3 = o(2^n)$.
 
-**(c) $O(\log n)$ is more efficient than $O(n)$.** $\lim_{n \to \infty} \frac⧃LB⧄\log n⧃RB⧄⧃LB⧄n⧃RB⧄ = 0$ (by
+**(c) $O(\log n)$ is more efficient than $O(n)$.** $\lim_{n \to \infty} \frac◆LB◆\log n◆RB◆◆LB◆n◆RB◆ = 0$ (by
 L'Hôpital's rule or the known hierarchy). So $\log n = o(n)$.
 
 **Summary (most to least efficient):**
@@ -806,7 +806,7 @@ inversion count is accumulated during the merge step without changing the merge 
 
 Algorithm Q is significantly more efficient. The ratio is:
 
-$$\frac⧃LB⧄n^2/2⧃RB⧄⧃LB⧄n \log n⧃RB⧄ = \frac⧃LB⧄n⧃RB⧄⧃LB⧄2 \log_2 n⧃RB⧄ = \frac⧃LB⧄10\,000⧃RB⧄⧃LB⧄2 \times 13.3⧃RB⧄ \approx 376$$
+$$\frac◆LB◆n^2/2◆RB◆◆LB◆n \log n◆RB◆ = \frac◆LB◆n◆RB◆◆LB◆2 \log_2 n◆RB◆ = \frac◆LB◆10\,000◆RB◆◆LB◆2 \times 13.3◆RB◆ \approx 376$$
 
 Algorithm Q is approximately **376 times faster** than Algorithm P for $n = 10\,000$.
 

@@ -65,19 +65,19 @@ Step 1 (rate-determining): The $\pi$ bond attacks the $\delta^+$ hydrogen of HBr
 breaks heterolytically, producing a carbocation and $\mathrm{Br}^-$.
 
 $$
-\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H}\mathrm{-}\mathrm{Br} \to \mathrm{CH}_3\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{HCH}_3 + \mathrm{Br}^-
+\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H}\mathrm{-}\mathrm{Br} \to \mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_3 + \mathrm{Br}^-
 $$
 
-The secondary carbocation ($\mathrm{CH}_3\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{HCH}_3$) is formed in
+The secondary carbocation ($\mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_3$) is formed in
 preference to the primary carbocation
-($\mathrm{CH}_3\mathrm{CH}_2\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{H}_2$) because it is more stable. The
+($\mathrm{CH}_3\mathrm{CH}_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{H}_2$) because it is more stable. The
 methyl group donates electron density through the inductive effect and hyperconjugation (the
 adjacent C--H $\sigma$ bonds overlap with the empty $p$ orbital of the carbocation).
 
 Step 2 (fast): $\mathrm{Br}^-$ attacks the carbocation from either face:
 
 $$
-\mathrm{CH}_3\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{HCH}_3 + \mathrm{Br}^- \to \mathrm{CH}_3\mathrm{CHBrCH}_3
+\mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_3 + \mathrm{Br}^- \to \mathrm{CH}_3\mathrm{CHBrCH}_3
 $$
 
 ### Markovnikov's Rule
@@ -380,7 +380,7 @@ adds to the less substituted carbon of the double bond. There are two carbons in
 - $\mathrm{C}_2$: $=\mathrm{CHCH}_3$ -- bonded to one hydrogen and one methyl group.
 
 The hydrogen adds to $\mathrm{C}_2$ (which has more hydrogens), producing a tertiary carbocation at
-$\mathrm{C}_1$: $(\mathrm{CH}_3)_2\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{CH}_2\mathrm{CH}_3$. The bromide
+$\mathrm{C}_1$: $(\mathrm{CH}_3)_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{CH}_2\mathrm{CH}_3$. The bromide
 ion then attacks this tertiary carbocation to give 2-bromo-2-methylbutane.
 
 </details>
@@ -465,7 +465,7 @@ Check: $\mathrm{C}_6\mathrm{H}_{12}$ has one degree of unsaturation (one C=C bon
 
 The less substituted carbon is $\mathrm{CH}$ (bonded to one methyl and one $\mathrm{CH}_2\mathrm{CH}_3$ group). The more substituted carbon is $\mathrm{C}(\mathrm{CH}_3)_2$ (bonded to two methyl groups). H adds to the $\mathrm{CH}$ carbon.
 
-Carbocation formed: $(\mathrm{CH}_3)_2\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3$ (tertiary carbocation).
+Carbocation formed: $(\mathrm{CH}_3)_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3$ (tertiary carbocation).
 
 **Step 2 (fast):** $\mathrm{Br}^-$ attacks the tertiary carbocation.
 

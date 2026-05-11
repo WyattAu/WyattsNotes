@@ -34,7 +34,7 @@ states:
 **Light microscopy** uses visible light ($\lambda \approx 400$--$700\ \mathrm{nm}$) focused through
 glass lenses. The maximum resolving power of a light microscope is limited by diffraction:
 
-$$d = \frac⧃LB⧄0.61\lambda⧃RB⧄⧃LB⧄n\sin\theta⧃RB⧄$$
+$$d = \frac◆LB◆0.61\lambda◆RB◆◆LB◆n\sin\theta◆RB◆$$
 
 where $d$ is the minimum resolvable distance, $\lambda$ is the wavelength, $n$ is the refractive
 index of the medium, and $\theta$ is the half-angle of the cone of light. For light microscopy,
@@ -60,7 +60,7 @@ of surface features.
 
 **Magnification** is defined as:
 
-$$\mathrm{Magnification} = \frac⧃LB⧄\mathrm{Image\ size}⧃RB⧄⧃LB⧄\mathrm{Actual\ size}⧃RB⧄$$
+$$\mathrm{Magnification} = \frac◆LB◆\mathrm{Image\ size}◆RB◆◆LB◆\mathrm{Actual\ size}◆RB◆$$
 
 **Laser scanning confocal microscopy** uses laser light and pinhole apertures to eliminate
 out-of-focus light, producing sharp optical sections through thick specimens. This allows 3D
@@ -372,7 +372,7 @@ to uncontrolled division (cancer).
 
 Microscopy calculations appear frequently in examinations. The fundamental relationship is:
 
-$$\mathrm{Magnification} = \frac⧃LB⧄\mathrm{Image\ size}⧃RB⧄⧃LB⧄\mathrm{Actual\ size}⧃RB⧄$$
+$$\mathrm{Magnification} = \frac◆LB◆\mathrm{Image\ size}◆RB◆◆LB◆\mathrm{Actual\ size}◆RB◆$$
 
 This can be rearranged to find any one variable when the other two are known. Units must be consistent
 -- convert all measurements to the same unit (typically $\mu\mathrm{m}$) before calculating.
@@ -384,7 +384,7 @@ $$1\ \mathrm{mm} = 1000\ \mu\mathrm{m}, \quad 1\ \mu\mathrm{m} = 1000\ \mathrm{n
 **Worked Example 1.** A cell is observed under a microscope with a magnification of $\times 400$. The
 image of the cell measures $4.8\ \mathrm{mm}$ across. Calculate the actual diameter of the cell.
 
-$$\mathrm{Actual\ size} = \frac⧃LB⧄\mathrm{Image\ size}⧃RB⧄⧃LB⧄\mathrm{Magnification}⧃RB⧄ = \frac⧃LB⧄4.8\ \mathrm{mm}⧃RB⧄⧃LB⧄400⧃RB⧄ = 0.012\ \mathrm{mm} = 12\ \mu\mathrm{m}$$
+$$\mathrm{Actual\ size} = \frac◆LB◆\mathrm{Image\ size}◆RB◆◆LB◆\mathrm{Magnification}◆RB◆ = \frac◆LB◆4.8\ \mathrm{mm}◆RB◆◆LB◆400◆RB◆ = 0.012\ \mathrm{mm} = 12\ \mu\mathrm{m}$$
 
 **Worked Example 2.** A mitochondrion has an actual length of $5\ \mu\mathrm{m}$. If an electron
 micrograph is taken at a magnification of $\times 50000$, what will be the length of the mitochondrion
@@ -396,14 +396,14 @@ $$\mathrm{Image\ size} = 5\ \mu\mathrm{m} \times 50000 = 250000\ \mu\mathrm{m} =
 
 A **scale bar** on a micrograph provides a direct conversion between image distance and actual distance.
 If a scale bar of length $2\ \mathrm{cm}$ on the image represents $10\ \mu\mathrm{m}$ in reality, then
-any measurement on the image is converted by multiplying by $\frac⧃LB⧄10\ \mu\mathrm{m}⧃RB⧄⧃LB⧄2\ \mathrm{cm}⧃RB⧄ =
+any measurement on the image is converted by multiplying by $\frac◆LB◆10\ \mu\mathrm{m}◆RB◆◆LB◆2\ \mathrm{cm}◆RB◆ =
 5\ \mu\mathrm{m\ cm^{-1}}$.
 
 **Worked Example 3.** A micrograph shows a scale bar labelled $5\ \mu\mathrm{m}$ that measures
 $20\ \mathrm{mm}$ on the printed image. A cell on the same image measures $48\ \mathrm{mm}$ across.
 Calculate the actual cell diameter.
 
-Scale factor $= \frac⧃LB⧄5\ \mu\mathrm{m}⧃RB⧄⧃LB⧄20\ \mathrm{mm}⧃RB⧄ = \frac⧃LB⧄5000\ \mathrm{nm}⧃RB⧄⧃LB⧄20\ \mathrm{mm}⧃RB⧄ = 250\ \mathrm{nm\ mm^{-1}}$.
+Scale factor $= \frac◆LB◆5\ \mu\mathrm{m}◆RB◆◆LB◆20\ \mathrm{mm}◆RB◆ = \frac◆LB◆5000\ \mathrm{nm}◆RB◆◆LB◆20\ \mathrm{mm}◆RB◆ = 250\ \mathrm{nm\ mm^{-1}}$.
 
 Cell diameter $= 48\ \mathrm{mm} \times 250\ \mathrm{nm\ mm^{-1}} = 12000\ \mathrm{nm} = 12\ \mu\mathrm{m}$.
 
@@ -418,7 +418,7 @@ actual size from the image:
 **Worked Example 4.** A TEM image is labelled $\times 200000$. A ribosome on the image measures
 $0.25\ \mathrm{mm}$ in diameter. Calculate the actual diameter.
 
-$$\mathrm{Actual\ diameter} = \frac⧃LB⧄0.25 \times 10^{-3}\ \mathrm{m}⧃RB⧄⧃LB⧄200000⧃RB⧄ = 1.25 \times 10^{-9}\ \mathrm{m} = 1.25\ \mathrm{nm}$$
+$$\mathrm{Actual\ diameter} = \frac◆LB◆0.25 \times 10^{-3}\ \mathrm{m}◆RB◆◆LB◆200000◆RB◆ = 1.25 \times 10^{-9}\ \mathrm{m} = 1.25\ \mathrm{nm}$$
 
 This is consistent with the expected diameter of a ribosome ($\approx 20\ \mathrm{nm}$) only if the
 measurement is of a sub-component. If the full ribosome is being measured, the student should recheck
@@ -1186,7 +1186,7 @@ During exponential phase, if the population doubles from $10^4$ to $10^8$ in 6.6
 
 Number of divisions $= \log_2\left(\frac{10^8}{10^4}\right) = \log_2(10^4) \approx 13.3$ divisions.
 
-Mean division time $= \frac⧃LB⧄6.6 \times 60⧃RB⧄⧃LB⧄13.3⧃RB⧄ \approx 30$ minutes.
+Mean division time $= \frac◆LB◆6.6 \times 60◆RB◆◆LB◆13.3◆RB◆ \approx 30$ minutes.
 
 ### 19.3 Bacterial Genetic Exchange
 
@@ -1200,7 +1200,7 @@ Mean division time $= \frac⧃LB⧄6.6 \times 60⧃RB⧄⧃LB⧄13.3⧃RB⧄ \ap
 
 ### 20.1 Resolution and Magnification
 
-$$\text{Resolution} = \frac⧃LB⧄0.61\lambda⧃RB⧄⧃LB⧄n\sin\theta⧃RB⧄$$
+$$\text{Resolution} = \frac◆LB◆0.61\lambda◆RB◆◆LB◆n\sin\theta◆RB◆$$
 
 Where $\lambda$ = wavelength of light/electrons; $n$ = refractive index of the medium; $\theta$ = half-angle of the cone of light entering the objective.
 
@@ -1409,11 +1409,11 @@ Bacteriophages (phages) are viruses that infect bacteria:
 
 ### 26.1 Calculating Magnification
 
-$$\text{Magnification} = \frac⧃LB⧄\text{size of image}⧃RB⧄⧃LB⧄\text{size of object}⧃RB⧄$$
+$$\text{Magnification} = \frac◆LB◆\text{size of image}◆RB◆◆LB◆\text{size of object}◆RB◆$$
 
 **Example:** a cell is observed through a microscope at 400x magnification. The cell measures $4\ \mathrm{mm}$ on the micrograph. What is the actual size?
 
-$$\text{Actual size} = \frac⧃LB⧄\text{image size}⧃RB⧄⧃LB⧄\text{magnification}⧃RB⧄ = \frac⧃LB⧄4\ \mathrm{mm}⧃RB⧄⧃LB⧄400⧃RB⧄ = 0.01\ \mathrm{mm} = 10\ \mu\mathrm{m}$$
+$$\text{Actual size} = \frac◆LB◆\text{image size}◆RB◆◆LB◆\text{magnification}◆RB◆ = \frac◆LB◆4\ \mathrm{mm}◆RB◆◆LB◆400◆RB◆ = 0.01\ \mathrm{mm} = 10\ \mu\mathrm{m}$$
 
 ### 26.2 Preparing a Temporary Mount
 
@@ -1426,7 +1426,7 @@ $$\text{Actual size} = \frac⧃LB⧄\text{image size}⧃RB⧄⧃LB⧄\text{magni
 
 The mitotic index is the percentage of cells in a population that are undergoing mitosis at a given time:
 
-$$\text{Mitotic index} = \frac⧃LB⧄\text{number of cells in mitosis}⧃RB⧄⧃LB⧄\text{total number of cells observed}⧃RB⧄ \times 100$$
+$$\text{Mitotic index} = \frac◆LB◆\text{number of cells in mitosis}◆RB◆◆LB◆\text{total number of cells observed}◆RB◆ \times 100$$
 
 **Example:** In a sample of 200 cells, 12 are in prophase, 8 in metaphase, 4 in anaphase, and 6 in telophase.
 
@@ -1678,9 +1678,9 @@ Apoptosis is an orderly, genetically programmed process of cell death that occur
 
 ### 35.2 Magnification and Scale
 
-$$\text{Magnification} = \frac⧃LB⧄\text{Image size}⧃RB⧄⧃LB⧄\text{Actual size}⧃RB⧄$$
+$$\text{Magnification} = \frac◆LB◆\text{Image size}◆RB◆◆LB◆\text{Actual size}◆RB◆$$
 
-$$\text{Actual size} = \frac⧃LB⧄\text{Image size}⧃RB⧄⧃LB⧄\text{Magnification}⧃RB⧄$$
+$$\text{Actual size} = \frac◆LB◆\text{Image size}◆RB◆◆LB◆\text{Magnification}◆RB◆$$
 
 | Unit | Symbol | Conversion |
 | ---- | ------ | ---------- |

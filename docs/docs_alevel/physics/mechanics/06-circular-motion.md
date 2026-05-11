@@ -28,7 +28,7 @@ is measured in radians (rad).
 
 **Definition.** The **angular velocity** $\omega$ is the rate of change of angular displacement:
 
-$$\boxed{\omega = \frac⧃LB⧄d\theta⧃RB⧄⧃LB⧄dt⧃RB⧄}$$
+$$\boxed{\omega = \frac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆}$$
 
 The SI unit is rad s$^{-1}$. The relationship with linear velocity is:
 
@@ -36,7 +36,7 @@ $$v = \omega r$$
 
 **Period and frequency.** For uniform circular motion:
 
-$$\omega = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄T⧃RB⧄ = 2\pi f$$
+$$\omega = \frac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆ = 2\pi f$$
 
 where $T$ is the period (time for one revolution) and $f$ is the frequency.
 
@@ -63,13 +63,13 @@ $$\mathbf{r}(t) = r\cos(\omega t)\,\mathbf{i} + r\sin(\omega t)\,\mathbf{j}$$
 
 Differentiating to find velocity:
 
-$$\mathbf{v}(t) = \frac⧃LB⧄d\mathbf{r}⧃RB⧄⧃LB⧄dt⧃RB⧄ = -r\omega\sin(\omega t)\,\mathbf{i} + r\omega\cos(\omega t)\,\mathbf{j}$$
+$$\mathbf{v}(t) = \frac◆LB◆d\mathbf{r}◆RB◆◆LB◆dt◆RB◆ = -r\omega\sin(\omega t)\,\mathbf{i} + r\omega\cos(\omega t)\,\mathbf{j}$$
 
-Note: $|\mathbf{v}| = r\omega\sqrt⧃LB⧄\sin^2(\omega t) + \cos^2(\omega t)⧃RB⧄ = r\omega = v$. $\checkmark$
+Note: $|\mathbf{v}| = r\omega\sqrt◆LB◆\sin^2(\omega t) + \cos^2(\omega t)◆RB◆ = r\omega = v$. $\checkmark$
 
 Differentiating again to find acceleration:
 
-$$\mathbf{a}(t) = \frac⧃LB⧄d\mathbf{v}⧃RB⧄⧃LB⧄dt⧃RB⧄ = -r\omega^2\cos(\omega t)\,\mathbf{i} - r\omega^2\sin(\omega t)\,\mathbf{j} = -\omega^2\mathbf{r}(t)$$
+$$\mathbf{a}(t) = \frac◆LB◆d\mathbf{v}◆RB◆◆LB◆dt◆RB◆ = -r\omega^2\cos(\omega t)\,\mathbf{i} - r\omega^2\sin(\omega t)\,\mathbf{j} = -\omega^2\mathbf{r}(t)$$
 
 $$\boxed{\mathbf{a} = -\omega^2 r\,\hat{\mathbf{r}}}$$
 
@@ -93,11 +93,11 @@ the primary derivation required; calculus is useful for STEP/matriculation prepa
 Consider two positions of the particle separated by a small angle $\delta\theta$. The change in
 velocity $\delta\mathbf{v}$ is directed towards the centre. From the isosceles triangle formed:
 
-$$\frac⧃LB⧄|\delta\mathbf{v}|⧃RB⧄⧃LB⧄v⧃RB⧄ = \frac⧃LB⧄|\delta\mathbf{s}|⧃RB⧄⧃LB⧄r⧃RB⧄ \implies |\delta\mathbf{v}| = \frac{v}{r}|\delta\mathbf{s}|$$
+$$\frac◆LB◆|\delta\mathbf{v}|◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆|\delta\mathbf{s}|◆RB◆◆LB◆r◆RB◆ \implies |\delta\mathbf{v}| = \frac{v}{r}|\delta\mathbf{s}|$$
 
 Dividing by $\delta t$ and taking the limit:
 
-$$a = \frac⧃LB⧄|\delta\mathbf{v}|⧃RB⧄⧃LB⧄\delta t⧃RB⧄ = \frac{v}{r}\frac⧃LB⧄|\delta\mathbf{s}|⧃RB⧄⧃LB⧄\delta t⧃RB⧄ = \frac{v^2}{r}$$
+$$a = \frac◆LB◆|\delta\mathbf{v}|◆RB◆◆LB◆\delta t◆RB◆ = \frac{v}{r}\frac◆LB◆|\delta\mathbf{s}|◆RB◆◆LB◆\delta t◆RB◆ = \frac{v^2}{r}$$
 
 ## 3. Centripetal Force
 
@@ -140,21 +140,21 @@ Horizontal (centripetal): $T\sin\alpha = \frac{mv^2}{r}$ ... (ii)
 
 Dividing (ii) by (i):
 
-$$\tan\alpha = \frac{v^2}{rg} = \frac⧃LB⧄\omega^2 r⧃RB⧄⧃LB⧄g⧃RB⧄$$
+$$\tan\alpha = \frac{v^2}{rg} = \frac◆LB◆\omega^2 r◆RB◆◆LB◆g◆RB◆$$
 
 From (i), the tension is:
 
-$$\boxed{T = \frac⧃LB⧄mg⧃RB⧄⧃LB⧄\cos\alpha⧃RB⧄ = \frac⧃LB⧄mgL⧃RB⧄⧃LB⧄\sqrt{L^2 - r^2}⧃RB⧄}$$
+$$\boxed{T = \frac◆LB◆mg◆RB◆◆LB◆\cos\alpha◆RB◆ = \frac◆LB◆mgL◆RB◆◆LB◆\sqrt{L^2 - r^2}◆RB◆}$$
 
 The period of the conical pendulum can be expressed by substituting $r = L\sin\alpha$ and
 $v = \omega r$ into the result for $\tan\alpha$:
 
-$$\tan\alpha = \frac⧃LB⧄\omega^2 L\sin\alpha⧃RB⧄⧃LB⧄g⧃RB⧄ \implies \omega^2 = \frac⧃LB⧄g⧃RB⧄⧃LB⧄L\cos\alpha⧃RB⧄$$
+$$\tan\alpha = \frac◆LB◆\omega^2 L\sin\alpha◆RB◆◆LB◆g◆RB◆ \implies \omega^2 = \frac◆LB◆g◆RB◆◆LB◆L\cos\alpha◆RB◆$$
 
-$$\boxed{T = 2\pi\sqrt⧃LB⧄\frac{L\cos\alpha}{g}⧃RB⧄}$$
+$$\boxed{T = 2\pi\sqrt◆LB◆\frac{L\cos\alpha}{g}◆RB◆}$$
 
 **Example.** A conical pendulum with $L = 1.0$ m and $\alpha = 30^\circ$ has period
-$T = 2\pi\sqrt⧃LB⧄1.0 \times \cos 30°/9.81⧃RB⧄ = 2\pi\sqrt{0.0883} = 1.86$ s.
+$T = 2\pi\sqrt◆LB◆1.0 \times \cos 30°/9.81◆RB◆ = 2\pi\sqrt{0.0883} = 1.86$ s.
 
 :::info
 Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, typically
@@ -175,7 +175,7 @@ Dividing (ii) by (i):
 
 $$\boxed{\tan\theta = \frac{v^2}{rg}}$$
 
-$$\boxed{v_{\mathrm{optimum}} = \sqrt⧃LB⧄rg\tan\theta⧃RB⧄}$$
+$$\boxed{v_{\mathrm{optimum}} = \sqrt◆LB◆rg\tan\theta◆RB◆}$$
 
 **Intuition.** At the optimum speed, the horizontal component of the normal reaction provides
 exactly the centripetal force. If the vehicle goes faster, friction acts down the slope; if slower,
@@ -200,11 +200,11 @@ This gives:
 
 $$\frac{v^2}{r}\left[1 - \sin\theta(\sin\theta + \mu\cos\theta)\right] = g\cos\theta(\sin\theta + \mu\cos\theta)$$
 
-$$\boxed{v_{\max} = \sqrt⧃LB⧄\frac{rg(\sin\theta + \mu\cos\theta)}{\cos\theta - \mu\sin\theta}⧃RB⧄ = \sqrt⧃LB⧄\frac{rg(\tan\theta + \mu)}{1 - \mu\tan\theta}⧃RB⧄}$$
+$$\boxed{v_{\max} = \sqrt◆LB◆\frac{rg(\sin\theta + \mu\cos\theta)}{\cos\theta - \mu\sin\theta}◆RB◆ = \sqrt◆LB◆\frac{rg(\tan\theta + \mu)}{1 - \mu\tan\theta}◆RB◆}$$
 
 For the **minimum** speed, friction acts up the slope, giving:
 
-$$\boxed{v_{\min} = \sqrt⧃LB⧄\frac{rg(\tan\theta - \mu)}{1 + \mu\tan\theta}⧃RB⧄}$$
+$$\boxed{v_{\min} = \sqrt◆LB◆\frac{rg(\tan\theta - \mu)}{1 + \mu\tan\theta}◆RB◆}$$
 
 **Real-world example.** Motorways are banked at about $2$--$3^\circ$ for drainage and slight curve
 assistance. At higher angles, velodromes use banking up to $45^\circ$ so cyclists can maintain speed
@@ -284,7 +284,7 @@ $T = 10.96m/\sin 36.9° = 10.96m/0.60 = 18.3m$ N.
 A curve of radius $80$ m is banked at $15^\circ$. Calculate the optimum speed for the curve.
 
 **Answer.**
-$v = \sqrt⧃LB⧄rg\tan\theta⧃RB⧄ = \sqrt⧃LB⧄80 \times 9.81 \times \tan 15°⧃RB⧄ = \sqrt⧃LB⧄80 \times 9.81 \times 0.268⧃RB⧄ = \sqrt{210.3} = 14.5$
+$v = \sqrt◆LB◆rg\tan\theta◆RB◆ = \sqrt◆LB◆80 \times 9.81 \times \tan 15°◆RB◆ = \sqrt◆LB◆80 \times 9.81 \times 0.268◆RB◆ = \sqrt{210.3} = 14.5$
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Banked Curves](#banked-curves)
@@ -297,7 +297,7 @@ A mass of $0.50$ kg on a string of length $1.0$ m is whirled in a vertical circl
 minimum speed at the lowest point for the mass to complete the circle?
 
 **Answer.**
-$v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt⧃LB⧄5 \times 9.81 \times 1.0⧃RB⧄ = \sqrt{49.05} = 7.00$ m
+$v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt◆LB◆5 \times 9.81 \times 1.0◆RB◆ = \sqrt{49.05} = 7.00$ m
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Vertical Circles](#vertical-circles)
@@ -310,7 +310,7 @@ A satellite orbits Earth at an altitude where the gravitational field strength i
 If the orbit radius is $8.0 \times 10^6$ m, find the orbital speed and period.
 
 **Answer.**
-$mg' = mv^2/r \implies v = \sqrt{g'r} = \sqrt⧃LB⧄4.5 \times 8.0 \times 10^6⧃RB⧄ = \sqrt⧃LB⧄3.6 \times 10^7⧃RB⧄ = 6000$
+$mg' = mv^2/r \implies v = \sqrt{g'r} = \sqrt◆LB◆4.5 \times 8.0 \times 10^6◆RB◆ = \sqrt◆LB◆3.6 \times 10^7◆RB◆ = 6000$
 m s$^{-1}$.
 
 $T = 2\pi r/v = 2\pi \times 8.0 \times 10^6/6000 = 8378$ s $\approx 2.3$ hours.
@@ -375,7 +375,7 @@ the track is banked at $20^\circ$, find the normal reaction and whether friction
 direction).
 
 **Answer.** Optimum speed:
-$v_{\mathrm{opt}} = \sqrt⧃LB⧄25 \times 9.81 \times \tan 20°⧃RB⧄ = \sqrt⧃LB⧄25 \times 9.81 \times 0.364⧃RB⧄ = \sqrt{89.2} = 9.45$
+$v_{\mathrm{opt}} = \sqrt◆LB◆25 \times 9.81 \times \tan 20°◆RB◆ = \sqrt◆LB◆25 \times 9.81 \times 0.364◆RB◆ = \sqrt{89.2} = 9.45$
 m s$^{-1}$.
 
 Since $8.0 < 9.45$, the cyclist is going too slowly, so friction must act **up** the slope to
@@ -457,7 +457,7 @@ $$T_{\mathrm{bottom}} - T_{\mathrm{top}} = \left(\frac{mv_b^2}{r} + mg\right) - 
 
 Using $v_b^2 - v_t^2 = 4gr$:
 
-$$T_{\mathrm{bottom}} - T_{\mathrm{top}} = \frac⧃LB⧄m \cdot 4gr⧃RB⧄⧃LB⧄r⧃RB⧄ + 2mg = 4mg + 2mg = 6mg$$
+$$T_{\mathrm{bottom}} - T_{\mathrm{top}} = \frac◆LB◆m \cdot 4gr◆RB◆◆LB◆r◆RB◆ + 2mg = 4mg + 2mg = 6mg$$
 
 $$\boxed{T_{\mathrm{bottom}} - T_{\mathrm{top}} = 6mg}$$
 
@@ -479,7 +479,7 @@ the speed at the bottom.
 
 **Answer.** (a) The water remains in the bucket if the bucket exerts a non-negative normal force on
 the water. This is equivalent to the string-remaining-taut condition:
-$v_{\min} = \sqrt{gr} = \sqrt⧃LB⧄9.81 \times 0.80⧃RB⧄ = \sqrt{7.85} = 2.80$ m s$^{-1}$.
+$v_{\min} = \sqrt{gr} = \sqrt◆LB◆9.81 \times 0.80◆RB◆ = \sqrt{7.85} = 2.80$ m s$^{-1}$.
 
 (b) At the top (minimum speed):
 $T = mv^2/r - mg = 1.5 \times 7.85/0.80 - 1.5 \times 9.81 = 14.7 - 14.7 = 0$ N.
@@ -487,7 +487,7 @@ $T = mv^2/r - mg = 1.5 \times 7.85/0.80 - 1.5 \times 9.81 = 14.7 - 14.7 = 0$ N.
 This confirms the condition: at minimum speed, the tension is exactly zero -- gravity alone provides
 the centripetal force.
 
-At the bottom: $v_b = \sqrt{5gr} = \sqrt⧃LB⧄5 \times 9.81 \times 0.80⧃RB⧄ = \sqrt{39.24} = 6.26$ m
+At the bottom: $v_b = \sqrt{5gr} = \sqrt◆LB◆5 \times 9.81 \times 0.80◆RB◆ = \sqrt{39.24} = 6.26$ m
 s$^{-1}$.
 
 $T = mv_b^2/r + mg = 1.5 \times 39.24/0.80 + 14.7 = 73.6 + 14.7 = 88.3$ N.
@@ -519,7 +519,7 @@ vertical) and weight $mg$ downward.
 
 Resolving vertically (no vertical acceleration):
 
-$$T\cos\alpha = mg \implies \boxed{T = \frac⧃LB⧄mg⧃RB⧄⧃LB⧄\cos\alpha⧃RB⧄}$$
+$$T\cos\alpha = mg \implies \boxed{T = \frac◆LB◆mg◆RB◆◆LB◆\cos\alpha◆RB◆}$$
 
 Resolving horizontally (centripetal acceleration towards centre):
 
@@ -527,11 +527,11 @@ $$T\sin\alpha = \frac{mv^2}{r} = m\omega^2 r$$
 
 Substituting $T = mg/\cos\alpha$ and $r = L\sin\alpha$, then simplifying for $\sin\alpha \neq 0$:
 
-$$\frac⧃LB⧄mg⧃RB⧄⧃LB⧄\cos\alpha⧃RB⧄\sin\alpha = m\omega^2 L\sin\alpha \implies \omega^2 = \frac⧃LB⧄g⧃RB⧄⧃LB⧄L\cos\alpha⧃RB⧄$$
+$$\frac◆LB◆mg◆RB◆◆LB◆\cos\alpha◆RB◆\sin\alpha = m\omega^2 L\sin\alpha \implies \omega^2 = \frac◆LB◆g◆RB◆◆LB◆L\cos\alpha◆RB◆$$
 
 The period is therefore:
 
-$$\boxed{T = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄\omega⧃RB⧄ = 2\pi\sqrt⧃LB⧄\frac{L\cos\alpha}{g}⧃RB⧄}$$
+$$\boxed{T = \frac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ = 2\pi\sqrt◆LB◆\frac{L\cos\alpha}{g}◆RB◆}$$
 
 **Key features of the period formula:**
 
@@ -631,7 +631,7 @@ tension, (c) the period, (d) the linear speed of the bob.
 (b) $T = mg/\cos\alpha = 0.50 \times 9.81/\cos 30° = 4.905/0.866 = 5.66$ N.
 
 (c)
-$T_{\mathrm{period}} = 2\pi\sqrt⧃LB⧄L\cos\alpha/g⧃RB⧄ = 2\pi\sqrt⧃LB⧄2.0 \times 0.866/9.81⧃RB⧄ = 2\pi\sqrt{0.1766} = 2.64$
+$T_{\mathrm{period}} = 2\pi\sqrt◆LB◆L\cos\alpha/g◆RB◆ = 2\pi\sqrt◆LB◆2.0 \times 0.866/9.81◆RB◆ = 2\pi\sqrt{0.1766} = 2.64$
 s.
 
 (d) $v = 2\pi r/T_{\mathrm{period}} = 2\pi \times 1.0/2.64 = 2.38$ m s$^{-1}$.
@@ -650,7 +650,7 @@ would the car lose contact with the road at the top of the bridge?
 
 $mg - N = mv^2/r$.
 
-Setting $N = 0$: $mg = mv^2/r$, so $v = \sqrt{gr} = \sqrt⧃LB⧄9.81 \times 20⧃RB⧄ = \sqrt{196.2} = 14.0$ m
+Setting $N = 0$: $mg = mv^2/r$, so $v = \sqrt{gr} = \sqrt◆LB◆9.81 \times 20◆RB◆ = \sqrt{196.2} = 14.0$ m
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
@@ -672,7 +672,7 @@ force in either direction).
 
 By energy conservation: $\tfrac{1}{2}mv_b^2 = mg(2r) + 0$.
 
-$v_b = \sqrt{4gr} = \sqrt⧃LB⧄4 \times 9.81 \times 0.50⧃RB⧄ = \sqrt{19.62} = 4.43$ m s$^{-1}$.
+$v_b = \sqrt{4gr} = \sqrt◆LB◆4 \times 9.81 \times 0.50◆RB◆ = \sqrt{19.62} = 4.43$ m s$^{-1}$.
 
 (b) At angle $\theta = 60^\circ$ from the upward vertical, the height above the bottom is
 $r + r\cos 60° = r + r/2 = 3r/2 = 0.75$ m.
@@ -695,7 +695,7 @@ and $\alpha_2 = 40^\circ$. Show that the pendulum with the larger angle has the 
 the ratio of their periods.
 
 **Answer.**
-$T_1/T_2 = \sqrt⧃LB⧄\cos\alpha_1/\cos\alpha_2⧃RB⧄ = \sqrt⧃LB⧄\cos 20°/\cos 40°⧃RB⧄
+$T_1/T_2 = \sqrt◆LB◆\cos\alpha_1/\cos\alpha_2◆RB◆ = \sqrt◆LB◆\cos 20°/\cos 40°◆RB◆
 = \sqrt{0.9397/0.7660} = \sqrt{1.227} = 1.108$.
 
 Since $T_1/T_2 \gt 1$, $T_1 \gt T_2$: the pendulum at the larger angle ($40^\circ$) has the shorter

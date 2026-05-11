@@ -422,7 +422,7 @@ $\mathrm{GPP} = 0.025 \times 8.0 \times 10^5 = 20000\ \mathrm{kJ\ m^{-2}\ yr^{-1
 
 $\mathrm{NPP} = \mathrm{GPP} - R = 20000 - 0.60 \times 20000 = 20000 - 12000 = 8000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
-Overall ecological efficiency (from total solar to NPP) $= \frac⧃LB⧄8000⧃RB⧄⧃LB⧄2.0 \times 10^6⧃RB⧄ = 0.004 = 0.4\%$.
+Overall ecological efficiency (from total solar to NPP) $= \frac◆LB◆8000◆RB◆◆LB◆2.0 \times 10^6◆RB◆ = 0.004 = 0.4\%$.
 
 **Worked Example 2.** An area of tropical rainforest has $\mathrm{GPP} = 22000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
 and $\mathrm{NPP} = 15000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$. A desert has $\mathrm{GPP} = 1200\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
@@ -444,7 +444,7 @@ unlimited resources (exponential growth).
 
 $$N_t = N_0 e^{rt} = 100 \times e^{0.693 \times 5} = 100 \times e^{3.465} = 100 \times 31.99 = 3199$$
 
-Note: $r = 0.693\ \mathrm{h^{-1}}$ corresponds to a doubling time of $t_d = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄r⧃RB⧄ = \frac{0.693}{0.693} = 1\ \mathrm{hour}$.
+Note: $r = 0.693\ \mathrm{h^{-1}}$ corresponds to a doubling time of $t_d = \frac◆LB◆\ln 2◆RB◆◆LB◆r◆RB◆ = \frac{0.693}{0.693} = 1\ \mathrm{hour}$.
 In 5 hours, the population doubles 5 times: $100 \times 2^5 = 3200$ (consistent with the exponential
 calculation, within rounding).
 
@@ -546,13 +546,13 @@ quadrats randomly and count: 12, 8, 15, 6, 10, 14, 9, 11, 7, 13 daisies.
 
 Mean daisies per quadrat $= \frac{12 + 8 + 15 + 6 + 10 + 14 + 9 + 11 + 7 + 13}{10} = \frac{105}{10} = 10.5$
 
-Mean density $= \frac⧃LB⧄10.5⧃RB⧄⧃LB⧄0.5 \times 0.5⧃RB⧄ = 42\ \mathrm{daisies\ m^{-2}}$.
+Mean density $= \frac◆LB◆10.5◆RB◆◆LB◆0.5 \times 0.5◆RB◆ = 42\ \mathrm{daisies\ m^{-2}}$.
 
 Estimated total population $= 42 \times 100 \times 50 = 210000$ daisies.
 
-Standard deviation $= \sqrt⧃LB⧄\frac{\sum(x_i - \bar{x})^2}{n-1}⧃RB⧄ = \sqrt⧃LB⧄\frac{(12-10.5)^2 + (8-10.5)^2 + ... + (13-10.5)^2}{9}⧃RB⧄ = \sqrt⧃LB⧄\frac{70.5}{9}⧃RB⧄ = \sqrt{7.83} = 2.80$.
+Standard deviation $= \sqrt◆LB◆\frac{\sum(x_i - \bar{x})^2}{n-1}◆RB◆ = \sqrt◆LB◆\frac{(12-10.5)^2 + (8-10.5)^2 + ... + (13-10.5)^2}{9}◆RB◆ = \sqrt◆LB◆\frac{70.5}{9}◆RB◆ = \sqrt{7.83} = 2.80$.
 
-Standard error $= \frac⧃LB⧄s⧃RB⧄⧃LB⧄\sqrt{n}⧃RB⧄ = \frac⧃LB⧄2.80⧃RB⧄⧃LB⧄\sqrt{10}⧃RB⧄ = 0.89\ \mathrm{daisies\ per\ quadrat}$.
+Standard error $= \frac◆LB◆s◆RB◆◆LB◆\sqrt{n}◆RB◆ = \frac◆LB◆2.80◆RB◆◆LB◆\sqrt{10}◆RB◆ = 0.89\ \mathrm{daisies\ per\ quadrat}$.
 
 The 95% confidence interval is approximately $\bar{x} \pm 2 \times \mathrm{SE} = 10.5 \pm 1.78$, or
 8.72 to 12.28 daisies per quadrat. Converting to total population: 174400 to 245600 daisies.
@@ -561,7 +561,7 @@ The 95% confidence interval is approximately $\bar{x} \pm 2 \times \mathrm{SE} =
 
 For mobile organisms that cannot be counted directly, the Lincoln index estimates population size:
 
-$$N = \frac⧃LB⧄n_1 \times n_2⧃RB⧄⧃LB⧄n_3⧃RB⧄$$
+$$N = \frac◆LB◆n_1 \times n_2◆RB◆◆LB◆n_3◆RB◆$$
 
 where:
 - $n_1$ = number captured and marked in the first sample
@@ -571,7 +571,7 @@ where:
 **Worked Example.** A researcher studying woodlice captures 80 individuals, marks them, and releases
 them. One week later, she captures 60 individuals, of which 12 are marked.
 
-$$N = \frac⧃LB⧄80 \times 60⧃RB⧄⧃LB⧄12⧃RB⧄ = 400$$
+$$N = \frac◆LB◆80 \times 60◆RB◆◆LB◆12◆RB◆ = 400$$
 
 Estimated population size $= 400$ woodlice.
 
@@ -791,7 +791,7 @@ population size. (b) List three assumptions of this method and explain how a vio
 affect the estimate. (c) The student repeats the study with a larger sample size. Explain why this
 improves the reliability of the estimate.
 
-**Answer.** (a) $N = \frac⧃LB⧄n_1 \times n_2⧃RB⧄⧃LB⧄n_3⧃RB⧄ = \frac⧃LB⧄50 \times 40⧃RB⧄⧃LB⧄8⧃RB⧄ = 250$ woodlice.
+**Answer.** (a) $N = \frac◆LB◆n_1 \times n_2◆RB◆◆LB◆n_3◆RB◆ = \frac◆LB◆50 \times 40◆RB◆◆LB◆8◆RB◆ = 250$ woodlice.
 
 (b) Assumption 1: marks are not lost between samples. If marks are lost, $n_3$ decreases, causing
 overestimation of $N$ (denominator is smaller). Assumption 2: marked individuals mix randomly with the
@@ -967,7 +967,7 @@ At steady state: input rate $=$ output rate.
 
 $50\ \mathrm{kg\ day^{-1}} = C_{\text{lake}} \times 10^4\ \mathrm{m^3\ day^{-1}} \times 10^3\ \mathrm{L\ m^{-1}}$.
 
-$C_{\text{lake}} = \frac⧃LB⧄50\ \mathrm{kg}⧃RB⧄⧃LB⧄10^7\ \mathrm{L}⧃RB⧄ = \frac⧃LB⧄50000\ \mathrm{mg}⧃RB⧄⧃LB⧄10^7\ \mathrm{L}⧃RB⧄ = 5\ \mathrm{mg\ L^{-1}}$.
+$C_{\text{lake}} = \frac◆LB◆50\ \mathrm{kg}◆RB◆◆LB◆10^7\ \mathrm{L}◆RB◆ = \frac◆LB◆50000\ \mathrm{mg}◆RB◆◆LB◆10^7\ \mathrm{L}◆RB◆ = 5\ \mathrm{mg\ L^{-1}}$.
 
 If the safe level for nitrate in drinking water is $11.3\ \mathrm{mg\ L^{-1}}$ (EU standard), this lake is currently within the safe limit but close. An increase in agricultural intensity could push it above the safe level.
 
@@ -1064,7 +1064,7 @@ $$\text{NSP} = \text{energy consumed} - \text{energy lost in faeces} - \text{ene
 
 $\text{NPP} = 1.2 \times 10^4 - 4.0 \times 10^3 = 8.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
-Photosynthetic efficiency $= \frac⧃LB⧄\text{GPP}⧃RB⧄⧃LB⧄\text{light received}⧃RB⧄ = \frac⧃LB⧄1.2 \times 10^4⧃RB⧄⧃LB⧄2.0 \times 10^6⧃RB⧄ = 0.006 = 0.6\%$.
+Photosynthetic efficiency $= \frac◆LB◆\text{GPP}◆RB◆◆LB◆\text{light received}◆RB◆ = \frac◆LB◆1.2 \times 10^4◆RB◆◆LB◆2.0 \times 10^6◆RB◆ = 0.006 = 0.6\%$.
 
 This very low efficiency is typical -- most sunlight is reflected, transmitted, or absorbed by non-photosynthetic structures, and much of the absorbed light is at wavelengths that chlorophyll cannot use.
 
@@ -1171,7 +1171,7 @@ Used to estimate the population size of mobile animals:
 4. **Recapture** a second sample after sufficient time for marked animals to mix back into the population.
 5. Record the total number captured ($n_2$) and the number of marked recaptures ($m_2$).
 
-$$N = \frac⧃LB⧄n_1 \times n_2⧃RB⧄⧃LB⧄m_2⧃RB⧄$$
+$$N = \frac◆LB◆n_1 \times n_2◆RB◆◆LB◆m_2◆RB◆$$
 
 Where $N$ = estimated population size, $n_1$ = number captured and marked in the first sample, $n_2$ = number captured in the second sample, $m_2$ = number of marked individuals in the second sample.
 
@@ -1188,15 +1188,15 @@ Where $N$ = estimated population size, $n_1$ = number captured and marked in the
 
 A biologist captures 50 woodlice and marks them. One week later, she captures 40 woodlice, of which 10 are marked.
 
-$N = \frac⧃LB⧄50 \times 40⧃RB⧄⧃LB⧄10⧃RB⧄ = 200$ woodlice.
+$N = \frac◆LB◆50 \times 40◆RB◆◆LB◆10◆RB◆ = 200$ woodlice.
 
 The estimated population size is 200.
 
 **Confidence interval:** if a different second sample might have produced different results, the estimate has uncertainty. For a rough estimate, the standard error can be approximated by:
 
-$$\text{SE} \approx \sqrt⧃LB⧄\frac{n_1 \times n_2 \times (n_1 - m_2) \times (n_2 - m_2)}{m_2^3}⧃RB⧄$$
+$$\text{SE} \approx \sqrt◆LB◆\frac{n_1 \times n_2 \times (n_1 - m_2) \times (n_2 - m_2)}{m_2^3}◆RB◆$$
 
-$\text{SE} = \sqrt⧃LB⧄\frac{50 \times 40 \times 40 \times 30}{1000}⧃RB⧄ = \sqrt⧃LB⧄\frac{2400000}{1000}⧃RB⧄ = \sqrt{2400} = 49$.
+$\text{SE} = \sqrt◆LB◆\frac{50 \times 40 \times 40 \times 30}{1000}◆RB◆ = \sqrt◆LB◆\frac{2400000}{1000}◆RB◆ = \sqrt{2400} = 49$.
 
 Approximate 95% confidence interval: $200 \pm 98$, or 102 to 298.
 
@@ -1212,13 +1212,13 @@ $\text{NPP} = \text{biomass increase} = 2,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
 
 $\text{GPP} = \text{NPP} + R = 2,500 + 8,000 = 10,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
 
-Photosynthetic efficiency $= \frac⧃LB⧄\text{GPP}⧃RB⧄⧃LB⧄\text{light energy received}⧃RB⧄$.
+Photosynthetic efficiency $= \frac◆LB◆\text{GPP}◆RB◆◆LB◆\text{light energy received}◆RB◆$.
 
 If the forest receives $1.0 \times 10^{10}\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$ of light energy, and the energy content of plant biomass is approximately $18\ \mathrm{kJ\ g^{-1}}$:
 
 $\text{GPP (energy)} = 10,500 \times 18 = 189,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$.
 
-Photosynthetic efficiency $= \frac⧃LB⧄189\,000⧃RB⧄⧃LB⧄1.0 \times 10^{10}⧃RB⧄ = 0.0019 = 0.19\%$.
+Photosynthetic efficiency $= \frac◆LB◆189\,000◆RB◆◆LB◆1.0 \times 10^{10}◆RB◆ = 0.0019 = 0.19\%$.
 
 ### 21.2 Comparing Ecosystems
 
@@ -1317,13 +1317,13 @@ Values range from 0 (no diversity) to approaching 1 (infinite diversity).
 | ------ | ----------- | --------- | ----------- |
 | Random sampling (quadrats) | Relatively uniform habitat; sessile (non-moving) organisms | Lay out a grid; use random numbers to select quadrat positions; count/estimate percentage cover within each quadrat | Time-consuming; only works for organisms that can be counted in quadrats |
 | Systematic sampling (transects) | Gradient exists (e.g., altitude, distance from sea, soil moisture) | Place quadrats at regular intervals along a line (belt transect or line transect) | May miss important features between sampling points |
-| Mark-release-recapture | Mobile animals | Capture, mark, release, wait, recapture. $N = \frac⧃LB⧄n_1 \times n_2⧃RB⧄⧃LB⧄n_3⧃RB⧄$ | Assumes: no death/migration/immigration; marks do not affect survival; marks are not lost; random mixing |
+| Mark-release-recapture | Mobile animals | Capture, mark, release, wait, recapture. $N = \frac◆LB◆n_1 \times n_2◆RB◆◆LB◆n_3◆RB◆$ | Assumes: no death/migration/immigration; marks do not affect survival; marks are not lost; random mixing |
 
 ### 23.2 Mark-Release-Recapture: Worked Example
 
 A biologist captures 50 woodlice and marks them with non-toxic paint. The next day, she captures 40 woodlice, of which 8 are marked.
 
-$$N = \frac⧃LB⧄n_1 \times n_2⧃RB⧄⧃LB⧄n_3⧃RB⧄ = \frac⧃LB⧄50 \times 40⧃RB⧄⧃LB⧄8⧃RB⧄ = 250$$
+$$N = \frac◆LB◆n_1 \times n_2◆RB◆◆LB◆n_3◆RB◆ = \frac◆LB◆50 \times 40◆RB◆◆LB◆8◆RB◆ = 250$$
 
 Estimated population size $= 250$ woodlice.
 
@@ -1447,7 +1447,7 @@ Ecological efficiency (efficiency of energy transfer from producers to primary c
 
 If primary consumers consume $5,000\ \mathrm{kg\ ha^{-1}\ yr^{-1}$ of plant biomass:
 
-$$\text{Efficiency} = \frac⧃LB⧄5,000 \times 18⧃RB⧄⧃LB⧄63,000⧃RB⧄ \times 100 = 14.3\%$$
+$$\text{Efficiency} = \frac◆LB◆5,000 \times 18◆RB◆◆LB◆63,000◆RB◆ \times 100 = 14.3\%$$
 
 ## 26. Succession in Detail
 
@@ -1529,7 +1529,7 @@ Deflected succession occurs when human activity prevents the natural climax comm
 
 ### 29.1 Simpson's Index of Diversity
 
-$$D = 1 - \frac⧃LB⧄\sum n(n-1)⧃RB⧄⧃LB⧄N(N-1)⧃RB⧄$$
+$$D = 1 - \frac◆LB◆\sum n(n-1)◆RB◆◆LB◆N(N-1)◆RB◆$$
 
 Where:
 - $n$ = number of individuals of each species
@@ -1552,7 +1552,7 @@ A woodland contains 4 species of tree:
 | Hazel | 10 | $10 \times 9 = 90$ |
 | **Total ($N$)** | **100** | $\sum n(n-1) = 2,900$ |
 
-$$D = 1 - \frac⧃LB⧄2,900⧃RB⧄⧃LB⧄100 \times 99⧃RB⧄ = 1 - \frac{2,900}{9,900} = 1 - 0.293 = 0.707$$
+$$D = 1 - \frac◆LB◆2,900◆RB◆◆LB◆100 \times 99◆RB◆ = 1 - \frac{2,900}{9,900} = 1 - 0.293 = 0.707$$
 
 ### 29.3 Species Richness vs Species Evenness
 

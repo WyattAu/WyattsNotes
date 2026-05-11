@@ -143,9 +143,9 @@ Distance already travelled: $s = \frac{1}{2}at^2 = 0.5 \times 3.16 \times 4.0 = 
 
 When the string snaps, $A$ decelerates due to gravity component and friction:
 
-$$a' = \frac⧃LB⧄-(mg\sin 25^\circ + F)⧃RB⧄⧃LB⧄m⧃RB⧄ = \frac{-(16.59 + 10.66)}{4.0} = \frac{-27.25}{4.0} = -6.81\,\text{m}\,\text{s}^{-2}$$
+$$a' = \frac◆LB◆-(mg\sin 25^\circ + F)◆RB◆◆LB◆m◆RB◆ = \frac{-(16.59 + 10.66)}{4.0} = \frac{-27.25}{4.0} = -6.81\,\text{m}\,\text{s}^{-2}$$
 
-Distance to stop: $s' = \frac⧃LB⧄v^2⧃RB⧄⧃LB⧄2|a'|⧃RB⧄ = \frac⧃LB⧄6.32^2⧃RB⧄⧃LB⧄2 \times 6.81⧃RB⧄ = \frac{39.94}{13.62} = 2.93\,\text{m}$
+Distance to stop: $s' = \frac◆LB◆v^2◆RB◆◆LB◆2|a'|◆RB◆ = \frac◆LB◆6.32^2◆RB◆◆LB◆2 \times 6.81◆RB◆ = \frac{39.94}{13.62} = 2.93\,\text{m}$
 
 Total distance $= 6.32 + 2.93 = 9.25\,\text{m}$
 
@@ -200,7 +200,7 @@ $$145950 = 1000v^2$$
 $$v^2 = 145.95$$
 $$v = 12.08\,\text{m}\,\text{s}^{-1}$$
 
-Check with kinematics: $v = \sqrt{2ad} = \sqrt⧃LB⧄2 \times 1.460 \times 50⧃RB⧄ = \sqrt{146.0} = 12.08\,\text{m}\,\text{s}^{-1}$. Consistent.
+Check with kinematics: $v = \sqrt{2ad} = \sqrt◆LB◆2 \times 1.460 \times 50◆RB◆ = \sqrt{146.0} = 12.08\,\text{m}\,\text{s}^{-1}$. Consistent.
 
 ---
 ### IT-2: Block on a Turntable (with Circular Motion)
@@ -223,9 +223,9 @@ $$F = m\omega^2 r \le \mu_s R = \mu_s mg$$
 
 At the limiting case: $m\omega_{\max}^2 r = \mu_s mg$
 
-$$\omega_{\max} = \sqrt⧃LB⧄\frac{\mu_s g}{r}⧃RB⧄$$
+$$\omega_{\max} = \sqrt◆LB◆\frac{\mu_s g}{r}◆RB◆$$
 
-(b) $\omega_{\max} = \sqrt⧃LB⧄\frac{0.40 \times 9.81}{0.15}⧃RB⧄ = \sqrt⧃LB⧄\frac{3.924}{0.15}⧃RB⧄ = \sqrt{26.16} = 5.11\,\text{rad}\,\text{s}^{-1}$
+(b) $\omega_{\max} = \sqrt◆LB◆\frac{0.40 \times 9.81}{0.15}◆RB◆ = \sqrt◆LB◆\frac{3.924}{0.15}◆RB◆ = \sqrt{26.16} = 5.11\,\text{rad}\,\text{s}^{-1}$
 
 (c) When tilted at $10^\circ$, resolve perpendicular to the surface:
 
@@ -249,21 +249,21 @@ Resolving vertically:
 
 $$R\cos 10^\circ + F\sin 10^\circ = mg$$
 
-$$R = \frac⧃LB⧄mg - F\sin 10^\circ⧃RB⧄⧃LB⧄\cos 10^\circ⧃RB⧄$$
+$$R = \frac◆LB◆mg - F\sin 10^\circ◆RB◆◆LB◆\cos 10^\circ◆RB◆$$
 
-At limiting friction: $F = \mu_s R$. From the horizontal equation: $F = \frac⧃LB⧄m\omega^2 r⧃RB⧄⧃LB⧄\cos 10^\circ⧃RB⧄$. Substituting:
+At limiting friction: $F = \mu_s R$. From the horizontal equation: $F = \frac◆LB◆m\omega^2 r◆RB◆◆LB◆\cos 10^\circ◆RB◆$. Substituting:
 
-$$\frac⧃LB⧄m\omega^2 r⧃RB⧄⧃LB⧄\cos 10^\circ⧃RB⧄ = \mu_s \cdot \frac⧃LB⧄mg - \frac{m\omega^2 r \sin 10^\circ}{\cos 10^\circ}⧃RB⧄⧃LB⧄\cos 10^\circ⧃RB⧄$$
+$$\frac◆LB◆m\omega^2 r◆RB◆◆LB◆\cos 10^\circ◆RB◆ = \mu_s \cdot \frac◆LB◆mg - \frac{m\omega^2 r \sin 10^\circ}{\cos 10^\circ}◆RB◆◆LB◆\cos 10^\circ◆RB◆$$
 
-$$\frac⧃LB⧄m\omega^2 r⧃RB⧄⧃LB⧄\cos 10^\circ⧃RB⧄ = \frac⧃LB⧄\mu_s(mg\cos 10^\circ - m\omega^2 r\sin 10^\circ)⧃RB⧄⧃LB⧄\cos^2 10^\circ⧃RB⧄$$
+$$\frac◆LB◆m\omega^2 r◆RB◆◆LB◆\cos 10^\circ◆RB◆ = \frac◆LB◆\mu_s(mg\cos 10^\circ - m\omega^2 r\sin 10^\circ)◆RB◆◆LB◆\cos^2 10^\circ◆RB◆$$
 
 $$m\omega^2 r\cos 10^\circ = \mu_s mg\cos 10^\circ - \mu_s m\omega^2 r\sin 10^\circ$$
 
 $$m\omega^2 r(\cos 10^\circ + \mu_s\sin 10^\circ) = \mu_s mg\cos 10^\circ$$
 
-$$\omega_{\max}^2 = \frac⧃LB⧄\mu_s g\cos 10^\circ⧃RB⧄⧃LB⧄r(\cos 10^\circ + \mu_s\sin 10^\circ)⧃RB⧄$$
+$$\omega_{\max}^2 = \frac◆LB◆\mu_s g\cos 10^\circ◆RB◆◆LB◆r(\cos 10^\circ + \mu_s\sin 10^\circ)◆RB◆$$
 
-$$\omega_{\max}^2 = \frac⧃LB⧄0.40 \times 9.81 \times 0.9848⧃RB⧄⧃LB⧄0.15(0.9848 + 0.40 \times 0.1736)⧃RB⧄ = \frac{3.865}{0.15(0.9848 + 0.06944)} = \frac⧃LB⧄3.865⧃RB⧄⧃LB⧄0.15 \times 1.0542⧃RB⧄ = \frac{3.865}{0.1581} = 24.45$$
+$$\omega_{\max}^2 = \frac◆LB◆0.40 \times 9.81 \times 0.9848◆RB◆◆LB◆0.15(0.9848 + 0.40 \times 0.1736)◆RB◆ = \frac{3.865}{0.15(0.9848 + 0.06944)} = \frac◆LB◆3.865◆RB◆◆LB◆0.15 \times 1.0542◆RB◆ = \frac{3.865}{0.1581} = 24.45$$
 
 $$\omega_{\max} = 4.94\,\text{rad}\,\text{s}^{-1}$$
 

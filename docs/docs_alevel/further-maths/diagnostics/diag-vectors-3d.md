@@ -19,8 +19,8 @@ hide_table_of_contents: true
 (b) $\mathbf{a} \times \mathbf{b} = \begin{pmatrix} 1(2) - (-1)(3) \\ (-1)(1) - 2(2) \\ 2(3) - 1(1) \end{pmatrix} = \begin{pmatrix} 5 \\ -5 \\ 5 \end{pmatrix}$.
 
 (c) $|\mathbf{a}| = \sqrt{4+1+1} = \sqrt{6}$. $|\mathbf{b}| = \sqrt{1+9+4} = \sqrt{14}$.
-$\cos\theta = \frac⧃LB⧄3⧃RB⧄⧃LB⧄\sqrt{6}\sqrt{14}⧃RB⧄ = \frac⧃LB⧄3⧃RB⧄⧃LB⧄\sqrt{84}⧃RB⧄ = \frac⧃LB⧄3⧃RB⧄⧃LB⧄2\sqrt{21}⧃RB⧄ = \frac⧃LB⧄\sqrt{21}⧃RB⧄⧃LB⧄14⧃RB⧄$.
-$\theta = \arccos\left(\frac⧃LB⧄\sqrt{21}⧃RB⧄⧃LB⧄14⧃RB⧄\right) \approx 49.1^\circ$.
+$\cos\theta = \frac◆LB◆3◆RB◆◆LB◆\sqrt{6}\sqrt{14}◆RB◆ = \frac◆LB◆3◆RB◆◆LB◆\sqrt{84}◆RB◆ = \frac◆LB◆3◆RB◆◆LB◆2\sqrt{21}◆RB◆ = \frac◆LB◆\sqrt{21}◆RB◆◆LB◆14◆RB◆$.
+$\theta = \arccos\left(\frac◆LB◆\sqrt{21}◆RB◆◆LB◆14◆RB◆\right) \approx 49.1^\circ$.
 
 (d) $\mathbf{a} \cdot (\mathbf{a} \times \mathbf{b}) = 2(5) + 1(-5) + (-1)(5) = 10 - 5 - 5 = 0 \checkmark$.
 $\mathbf{b} \cdot (\mathbf{a} \times \mathbf{b}) = 1(5) + 3(-5) + 2(5) = 5 - 15 + 10 = 0 \checkmark$.
@@ -35,7 +35,7 @@ $\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} 1
 
 (b) Using $A(1,0,2)$: $5(x-1) + 5(y-0) + 5(z-2) = 0$. Simplifying: $x + y + z = 3$.
 
-(c) Distance $= \frac⧃LB⧄|0 + 0 + 0 - 3|⧃RB⧄⧃LB⧄\sqrt{1+1+1}⧃RB⧄ = \frac⧃LB⧄3⧃RB⧄⧃LB⧄\sqrt{3}⧃RB⧄ = \sqrt{3}$.
+(c) Distance $= \frac◆LB◆|0 + 0 + 0 - 3|◆RB◆◆LB◆\sqrt{1+1+1}◆RB◆ = \frac◆LB◆3◆RB◆◆LB◆\sqrt{3}◆RB◆ = \sqrt{3}$.
 
 (d) $1 + 1 + 1 = 3 \checkmark$. $D$ lies on the plane.
 
@@ -68,10 +68,10 @@ $|\mathbf{a} \times \mathbf{b}| = \sqrt{4 + 16 + 36} = \sqrt{56} = 2\sqrt{14}$.
 (b) Substituting into the plane: $2(1+2t) - (0+t) + (1-t) = 5$. $2 + 4t - t + 1 - t = 5$. $2t = 2$, $t = 1$.
 Point: $\begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix}$.
 
-(c) Distance $= \frac⧃LB⧄|3 + 1 + 2(-2) - 4|⧃RB⧄⧃LB⧄\sqrt{1+1+4}⧃RB⧄ = \frac⧃LB⧄|3 + 1 - 4 - 4|⧃RB⧄⧃LB⧄\sqrt{6}⧃RB⧄ = \frac⧃LB⧄4⧃RB⧄⧃LB⧄\sqrt{6}⧃RB⧄ = \frac⧃LB⧄2\sqrt{6}⧃RB⧄⧃LB⧄3⧃RB⧄$.
+(c) Distance $= \frac◆LB◆|3 + 1 + 2(-2) - 4|◆RB◆◆LB◆\sqrt{1+1+4}◆RB◆ = \frac◆LB◆|3 + 1 - 4 - 4|◆RB◆◆LB◆\sqrt{6}◆RB◆ = \frac◆LB◆4◆RB◆◆LB◆\sqrt{6}◆RB◆ = \frac◆LB◆2\sqrt{6}◆RB◆◆LB◆3◆RB◆$.
 
 (d) Normal to plane 1: $\mathbf{n}_1 = \begin{pmatrix} 1 \\ 2 \\ 2 \end{pmatrix}$. Normal to plane 2: $\mathbf{n}_2 = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$.
-$\cos\theta = \frac⧃LB⧄\mathbf{n}_1 \cdot \mathbf{n}_2⧃RB⧄⧃LB⧄|\mathbf{n}_1||\mathbf{n}_2|⧃RB⧄ = \frac⧃LB⧄2-2+4⧃RB⧄⧃LB⧄\sqrt{9}\sqrt{9}⧃RB⧄ = \frac{4}{9}$.
+$\cos\theta = \frac◆LB◆\mathbf{n}_1 \cdot \mathbf{n}_2◆RB◆◆LB◆|\mathbf{n}_1||\mathbf{n}_2|◆RB◆ = \frac◆LB◆2-2+4◆RB◆◆LB◆\sqrt{9}\sqrt{9}◆RB◆ = \frac{4}{9}$.
 $\theta = \arccos(4/9) \approx 63.6^\circ$.
 
 ### IT-2: Vectors and Geometry (with Polar Coordinates)
@@ -81,14 +81,14 @@ $\theta = \arccos(4/9) \approx 63.6^\circ$.
 
 (a) $\overrightarrow{AB} = \begin{pmatrix} 1 \\ 3 \\ 1 \end{pmatrix}$, $\overrightarrow{AC} = \begin{pmatrix} -1 \\ 1 \\ 4 \end{pmatrix}$.
 $\overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} 12 - 1 \\ 4 + 1 \\ 1 + 3 \end{pmatrix} = \begin{pmatrix} 11 \\ 5 \\ 4 \end{pmatrix}$.
-Area $= \frac{1}{2}\sqrt{121 + 25 + 16} = \frac{1}{2}\sqrt{162} = \frac⧃LB⧄9\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+Area $= \frac{1}{2}\sqrt{121 + 25 + 16} = \frac{1}{2}\sqrt{162} = \frac◆LB◆9\sqrt{2}◆RB◆◆LB◆2◆RB◆$.
 
 (b) Normal $\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} 11 \\ 5 \\ 4 \end{pmatrix}$.
 Plane through $A(1,0,0)$: $11(x-1) + 5y + 4z = 0$, i.e., $11x + 5y + 4z = 11$.
 
 (c) $|\overrightarrow{AB}| = \sqrt{1+9+1} = \sqrt{11}$. $|\overrightarrow{AC}| = \sqrt{1+1+16} = \sqrt{18}$.
-$\cos\theta = \frac⧃LB⧄\overrightarrow{AB} \cdot \overrightarrow{AC}⧃RB⧄⧃LB⧄|\overrightarrow{AB}||\overrightarrow{AC}|⧃RB⧄ = \frac⧃LB⧄-1+3+4⧃RB⧄⧃LB⧄\sqrt{11}\sqrt{18}⧃RB⧄ = \frac⧃LB⧄6⧃RB⧄⧃LB⧄\sqrt{198}⧃RB⧄ = \frac⧃LB⧄6⧃RB⧄⧃LB⧄3\sqrt{22}⧃RB⧄ = \frac⧃LB⧄2⧃RB⧄⧃LB⧄\sqrt{22}⧃RB⧄$.
-$\theta = \arccos\left(\frac⧃LB⧄2⧃RB⧄⧃LB⧄\sqrt{22}⧃RB⧄\right) \approx 64.8^\circ$.
+$\cos\theta = \frac◆LB◆\overrightarrow{AB} \cdot \overrightarrow{AC}◆RB◆◆LB◆|\overrightarrow{AB}||\overrightarrow{AC}|◆RB◆ = \frac◆LB◆-1+3+4◆RB◆◆LB◆\sqrt{11}\sqrt{18}◆RB◆ = \frac◆LB◆6◆RB◆◆LB◆\sqrt{198}◆RB◆ = \frac◆LB◆6◆RB◆◆LB◆3\sqrt{22}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆\sqrt{22}◆RB◆$.
+$\theta = \arccos\left(\frac◆LB◆2◆RB◆◆LB◆\sqrt{22}◆RB◆\right) \approx 64.8^\circ$.
 
 (d) Volume $= \frac{1}{6}|\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})|$. $\mathbf{b} \times \mathbf{c} = \begin{pmatrix} 12-1 \\ 4-0 \\ 0-3 \end{pmatrix} = \begin{pmatrix} 11 \\ 4 \\ -3 \end{pmatrix}$.
 $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 1(11) + 0(4) + 0(-3) = 11$.
@@ -99,7 +99,7 @@ Volume $= \frac{11}{6}$ cubic units.
 
 **Solution:**
 
-(a) $\mathbf{a} = \frac⧃LB⧄\mathbf{F}⧃RB⧄⧃LB⧄m⧃RB⧄ = \begin{pmatrix} 1.5t \\ 1 \\ -0.5 \end{pmatrix}$ m/s$^2$.
+(a) $\mathbf{a} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆m◆RB◆ = \begin{pmatrix} 1.5t \\ 1 \\ -0.5 \end{pmatrix}$ m/s$^2$.
 
 (b) $\mathbf{v} = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} + \int_0^t \begin{pmatrix} 1.5s \\ 1 \\ -0.5s \end{pmatrix}\,ds = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} + \begin{pmatrix} 0.75t^2 \\ t \\ -0.25t^2 \end{pmatrix} = \begin{pmatrix} 1+0.75t^2 \\ t \\ 2-0.25t^2 \end{pmatrix}$.
 

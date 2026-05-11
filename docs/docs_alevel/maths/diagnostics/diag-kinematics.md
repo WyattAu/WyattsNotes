@@ -63,7 +63,7 @@ $$\text{Displacement} = s(7) - s(0) = -\frac{7}{3} \approx -2.33 \text{ m}$$
 
 The student claims the distance is $2.33$ m (taking the magnitude). Actual distance is $\frac{71}{3} \approx 23.67$ m.
 
-$$\text{Percentage error} = \frac⧃LB⧄\lvert \frac{71}{3} - \frac{7}{3} \rvert⧃RB⧄⧃LB⧄\frac{71}{3}⧃RB⧄ \times 100\% = \frac{64}{71} \times 100\% \approx 90.1\%$$
+$$\text{Percentage error} = \frac◆LB◆\lvert \frac{71}{3} - \frac{7}{3} \rvert◆RB◆◆LB◆\frac{71}{3}◆RB◆ \times 100\% = \frac{64}{71} \times 100\% \approx 90.1\%$$
 
 The student underestimates the distance by approximately 90% -- a catastrophic error caused by not accounting for the two direction reversals.
 
@@ -97,7 +97,7 @@ $$s_y = v_{y0}\,t - \frac{1}{2}gt^2 \implies -80 = 12.68t - 4.9t^2$$
 
 $$4.9t^2 - 12.68t - 80 = 0$$
 
-$$t = \frac⧃LB⧄12.68 + \sqrt{12.68^2 + 4(4.9)(80)}⧃RB⧄⧃LB⧄2(4.9)⧃RB⧄ = \frac⧃LB⧄12.68 + \sqrt{160.78 + 1568}⧃RB⧄⧃LB⧄9.8⧃RB⧄ = \frac⧃LB⧄12.68 + \sqrt{1728.78}⧃RB⧄⧃LB⧄9.8⧃RB⧄$$
+$$t = \frac◆LB◆12.68 + \sqrt{12.68^2 + 4(4.9)(80)}◆RB◆◆LB◆2(4.9)◆RB◆ = \frac◆LB◆12.68 + \sqrt{160.78 + 1568}◆RB◆◆LB◆9.8◆RB◆ = \frac◆LB◆12.68 + \sqrt{1728.78}◆RB◆◆LB◆9.8◆RB◆$$
 
 $$= \frac{12.68 + 41.58}{9.8} \approx 5.53 \text{ s}$$
 
@@ -159,7 +159,7 @@ $$v^2 = 24s - 3s^2 + 4$$
 
 $$0 = 24s - 3s^2 + 4 \implies 3s^2 - 24s - 4 = 0$$
 
-$$s = \frac⧃LB⧄24 + \sqrt{576 + 48}⧃RB⧄⧃LB⧄6⧃RB⧄ = \frac⧃LB⧄24 + \sqrt{624}⧃RB⧄⧃LB⧄6⧃RB⧄ = \frac⧃LB⧄24 + 4\sqrt{39}⧃RB⧄⧃LB⧄6⧃RB⧄ = \frac⧃LB⧄12 + 2\sqrt{39}⧃RB⧄⧃LB⧄3⧃RB⧄ \approx 8.16 \text{ m}$$
+$$s = \frac◆LB◆24 + \sqrt{576 + 48}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆24 + \sqrt{624}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆24 + 4\sqrt{39}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆12 + 2\sqrt{39}◆RB◆◆LB◆3◆RB◆ \approx 8.16 \text{ m}$$
 
 (The negative root gives $s \lt 0$, which corresponds to the particle having passed through $O$ in the opposite direction -- not relevant for the first turning point.)
 
@@ -179,7 +179,7 @@ $s = -4\cos(\sqrt{3}\,t) + B\sin(\sqrt{3}\,t) + 4$.
 
 $v = \frac{ds}{dt} = 4\sqrt{3}\sin(\sqrt{3}\,t) + B\sqrt{3}\cos(\sqrt{3}\,t)$.
 
-Applying $v(0) = 2$: $B\sqrt{3} = 2 \implies B = \frac⧃LB⧄2⧃RB⧄⧃LB⧄\sqrt{3}⧃RB⧄$.
+Applying $v(0) = 2$: $B\sqrt{3} = 2 \implies B = \frac◆LB◆2◆RB◆◆LB◆\sqrt{3}◆RB◆$.
 
 This gives the full $s(t)$ and $v(t)$, but to find $v^2$ in terms of $s$ you must then eliminate $t$ between them -- which requires substituting back and using $\sin^2 + \cos^2 = 1$. The chain rule method bypasses this entirely and is the intended technique for the A-Level specification.
 

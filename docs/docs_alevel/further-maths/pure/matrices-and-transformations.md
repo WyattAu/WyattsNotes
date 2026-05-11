@@ -130,7 +130,7 @@ $$\frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}\begin{pmatrix}
 
 ### 3.3 Inverse of a 3x3 matrix
 
-**Method 1: Adjugate matrix.** $A^{-1} = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\det A⧃RB⧄\,\mathrm{adj}(A)$, where the adjugate is the
+**Method 1: Adjugate matrix.** $A^{-1} = \dfrac◆LB◆1◆RB◆◆LB◆\det A◆RB◆\,\mathrm{adj}(A)$, where the adjugate is the
 transpose of the cofactor matrix.
 
 **Method 2: Row reduction.** Form the augmented matrix $[A \mid I]$ and apply row operations to
@@ -356,7 +356,7 @@ Fibonacci number.
 <details>
 <summary>Solution</summary>
 
-Eigenvalues of $A$: $\lambda^2 - \lambda - 2 = 0 \implies \lambda = \frac⧃LB⧄1 \pm 3⧃RB⧄⧃LB⧄2⧃RB⧄$, so $\lambda_1 = 2$, $\lambda_2 = -1$.
+Eigenvalues of $A$: $\lambda^2 - \lambda - 2 = 0 \implies \lambda = \frac◆LB◆1 \pm 3◆RB◆◆LB◆2◆RB◆$, so $\lambda_1 = 2$, $\lambda_2 = -1$.
 
 Eigenvectors: for $\lambda = 2$: $(1, 1)$; for $\lambda = -1$: $(-2, 1)$.
 
@@ -366,7 +366,7 @@ $\begin{pmatrix} F_{n+1} \\ F_n \end{pmatrix} = A^n\begin{pmatrix} 1 \\ 0 \end{p
 
 This gives $F_n = \frac{2^n - (-1)^n}{3}$ (the Lucas sequence). For the standard Fibonacci sequence
 with $A = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$, the result is
-$F_n = \frac⧃LB⧄\phi^n - \psi^n⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄$ where $\phi = \frac⧃LB⧄1+\sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+$F_n = \frac◆LB◆\phi^n - \psi^n◆RB◆◆LB◆\sqrt{5}◆RB◆$ where $\phi = \frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 
@@ -392,7 +392,7 @@ $$= ad(eh - fg) - bc(eh - fg) = (ad - bc)(eh - fg) = \det(A)\det(B) \quad \black
 ### 7.2 Proof: $\det(A) \neq 0 \iff A$ is invertible
 
 **Proof.** ($\Rightarrow$) If $\det(A) \neq 0$, the adjugate formula gives
-$A^{-1} = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\det A⧃RB⧄\mathrm{adj}(A)$, so $A$ is invertible.
+$A^{-1} = \dfrac◆LB◆1◆RB◆◆LB◆\det A◆RB◆\mathrm{adj}(A)$, so $A$ is invertible.
 
 ($\Leftarrow$) If $A$ is invertible with $A^{-1}$, then
 $\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$.
@@ -717,11 +717,11 @@ $\det A = 1(2-1) - 2(4-1) + 1(2-1) = 1 - 6 + 1 = -4$.
 
 Using Cramer's rule:
 
-$$x = \frac⧃LB⧄\det\begin{pmatrix} 4 & 2 & 1 \\ 3 & 1 & 1 \\ 5 & 1 & 2 \end{pmatrix}⧃RB⧄⧃LB⧄-4⧃RB⧄ = \frac{4(2-1) - 2(6-5) + 1(3-5)}{-4} = \frac{4 - 2 - 2}{-4} = 0$$
+$$x = \frac◆LB◆\det\begin{pmatrix} 4 & 2 & 1 \\ 3 & 1 & 1 \\ 5 & 1 & 2 \end{pmatrix}◆RB◆◆LB◆-4◆RB◆ = \frac{4(2-1) - 2(6-5) + 1(3-5)}{-4} = \frac{4 - 2 - 2}{-4} = 0$$
 
-$$y = \frac⧃LB⧄\det\begin{pmatrix} 1 & 4 & 1 \\ 2 & 3 & 1 \\ 1 & 5 & 2 \end{pmatrix}⧃RB⧄⧃LB⧄-4⧃RB⧄ = \frac{1(6-5) - 4(4-1) + 1(10-3)}{-4} = \frac{1 - 12 + 7}{-4} = 1$$
+$$y = \frac◆LB◆\det\begin{pmatrix} 1 & 4 & 1 \\ 2 & 3 & 1 \\ 1 & 5 & 2 \end{pmatrix}◆RB◆◆LB◆-4◆RB◆ = \frac{1(6-5) - 4(4-1) + 1(10-3)}{-4} = \frac{1 - 12 + 7}{-4} = 1$$
 
-$$z = \frac⧃LB⧄\det\begin{pmatrix} 1 & 2 & 4 \\ 2 & 1 & 3 \\ 1 & 1 & 5 \end{pmatrix}⧃RB⧄⧃LB⧄-4⧃RB⧄ = \frac{1(5-3) - 2(10-3) + 4(2-1)}{-4} = \frac{2 - 14 + 4}{-4} = 2$$
+$$z = \frac◆LB◆\det\begin{pmatrix} 1 & 2 & 4 \\ 2 & 1 & 3 \\ 1 & 1 & 5 \end{pmatrix}◆RB◆◆LB◆-4◆RB◆ = \frac{1(5-3) - 2(10-3) + 4(2-1)}{-4} = \frac{2 - 14 + 4}{-4} = 2$$
 
 Solution: $x = 0$, $y = 1$, $z = 2$.
 
@@ -816,9 +816,9 @@ Therefore $\mathbf{v}_1$ and $\mathbf{v}_2$ are linearly independent, $P$ is inv
 
 **Solution.** $\det(A-\lambda I) = (4-\lambda)(1-\lambda)-4 = \lambda^2-5\lambda = 0$. $\lambda = 0, 5$.
 
-$\lambda = 0$: $\begin{pmatrix}4&2\\2&1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = -v_2/2$. Eigenvector: $(1,-2)$, normalised: $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄(1,-2)$.
+$\lambda = 0$: $\begin{pmatrix}4&2\\2&1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = -v_2/2$. Eigenvector: $(1,-2)$, normalised: $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{5}◆RB◆(1,-2)$.
 
-$\lambda = 5$: $\begin{pmatrix}-1&2\\2&-4\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = 2v_2$. Eigenvector: $(2,1)$, normalised: $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄(2,1)$.
+$\lambda = 5$: $\begin{pmatrix}-1&2\\2&-4\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = 2v_2$. Eigenvector: $(2,1)$, normalised: $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{5}◆RB◆(2,1)$.
 
 Orthogonality check: $(1)(2)+(-2)(1) = 0$. ✓ The eigenvectors are orthogonal (as expected for a symmetric matrix).
 
@@ -845,7 +845,7 @@ $= \begin{pmatrix}1&1\\0&-1\end{pmatrix}\begin{pmatrix}59049&59049\\0&-1024\end{
 
 $= \begin{pmatrix}\cos(\theta+\phi)&-\sin(\theta+\phi)\\\sin(\theta+\phi)&\cos(\theta+\phi)\end{pmatrix} = R_{\theta+\phi}$. ✓
 
-$R_\theta^{-1} = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\cos^2\theta+\sin^2\theta⧃RB⧄\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$. ✓
+$R_\theta^{-1} = \dfrac◆LB◆1◆RB◆◆LB◆\cos^2\theta+\sin^2\theta◆RB◆\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$. ✓
 
 ### Example 13.4: Determinant and area scaling
 
@@ -924,7 +924,7 @@ The line $y = 2x$ makes angle $\theta = \arctan 2$ with the $x$-axis.
 
 $R = \begin{pmatrix}\cos 2\theta&\sin 2\theta\\\sin 2\theta&-\cos 2\theta\end{pmatrix}$.
 
-$\cos\theta = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄$, $\sin\theta = \dfrac⧃LB⧄2⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄$.
+$\cos\theta = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{5}◆RB◆$, $\sin\theta = \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{5}◆RB◆$.
 
 $\cos 2\theta = \cos^2\theta-\sin^2\theta = \dfrac{1-4}{5} = -\dfrac{3}{5}$.
 

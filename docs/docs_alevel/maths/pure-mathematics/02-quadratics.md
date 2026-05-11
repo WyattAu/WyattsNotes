@@ -108,7 +108,7 @@ $4$.
 
 **Theorem (Quadratic Formula).** The solutions of $ax^2 + bx + c = 0$ (with $a \neq 0$) are:
 
-$$x = \frac⧃LB⧄-b \pm \sqrt{b^2 - 4ac}⧃RB⧄⧃LB⧄2a⧃RB⧄$$
+$$x = \frac◆LB◆-b \pm \sqrt{b^2 - 4ac}◆RB◆◆LB◆2a◆RB◆$$
 
 _Proof._ We derive this by completing the square on $ax^2 + bx + c = 0$.
 
@@ -119,8 +119,8 @@ x^2 + \frac{b}{a}x &= -\frac{c}{a} \\
 \left(x + \frac{b}{2a}\right)^2 - \frac{b^2}{4a^2} &= -\frac{c}{a} \\
 \left(x + \frac{b}{2a}\right)^2 &= \frac{b^2}{4a^2} - \frac{c}{a} \\
 \left(x + \frac{b}{2a}\right)^2 &= \frac{b^2 - 4ac}{4a^2} \\
-x + \frac{b}{2a} &= \pm\frac⧃LB⧄\sqrt{b^2 - 4ac}⧃RB⧄⧃LB⧄2a⧃RB⧄ \\
-x &= \frac⧃LB⧄-b \pm \sqrt{b^2 - 4ac}⧃RB⧄⧃LB⧄2a⧃RB⧄ \quad \blacksquare
+x + \frac{b}{2a} &= \pm\frac◆LB◆\sqrt{b^2 - 4ac}◆RB◆◆LB◆2a◆RB◆ \\
+x &= \frac◆LB◆-b \pm \sqrt{b^2 - 4ac}◆RB◆◆LB◆2a◆RB◆ \quad \blacksquare
 \end{aligned}
 $$
 
@@ -154,11 +154,11 @@ $$\Delta = b^2 - 4ac$$
 | $\Delta = 0$ | 1               | One repeated real root                      |
 | $\Delta < 0$ | 0               | No real roots (two complex conjugate roots) |
 
-_Proof._ From the quadratic formula, the roots are $x = \frac⧃LB⧄-b \pm \sqrt{\Delta}⧃RB⧄⧃LB⧄2a⧃RB⧄$.
+_Proof._ From the quadratic formula, the roots are $x = \frac◆LB◆-b \pm \sqrt{\Delta}◆RB◆◆LB◆2a◆RB◆$.
 
-- If $\Delta > 0$: $\sqrt⧃LB⧄\Delta⧃RB⧄$ is a positive real number, giving two distinct real values.
+- If $\Delta > 0$: $\sqrt◆LB◆\Delta◆RB◆$ is a positive real number, giving two distinct real values.
 - If $\Delta = 0$: both roots equal $\frac{-b}{2a}$, a single repeated root.
-- If $\Delta < 0$: $\sqrt⧃LB⧄\Delta⧃RB⧄$ is not a real number, so no real roots exist. (Complex roots
+- If $\Delta < 0$: $\sqrt◆LB◆\Delta◆RB◆$ is not a real number, so no real roots exist. (Complex roots
   exist but are beyond this course.) $\blacksquare$
 
 <details>
@@ -180,7 +180,7 @@ $$
 The discriminant directly determines the position of the parabola relative to the $x$-axis.
 
 **Theorem (Discriminant and Graph Position).** Let $f(x) = ax^2 + bx + c$ with $a \neq 0$. In
-completed-square form, the extremum value is $f\left(-\frac{b}{2a}\right) = -\frac⧃LB⧄\Delta⧃RB⧄⧃LB⧄4a⧃RB⧄$.
+completed-square form, the extremum value is $f\left(-\frac{b}{2a}\right) = -\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$.
 Therefore:
 
 - $\Delta > 0$: the extremum lies on the opposite side of the $x$-axis from the direction the
@@ -197,16 +197,16 @@ Furthermore, when $\Delta < 0$:
 | $a < 0$ and $\Delta < 0$ | $f(x) < 0$ for all $x \in \mathbb{R}$ (parabola entirely below) |
 
 _Proof._ From the completed-square form
-$f(x) = a\left(x + \frac{b}{2a}\right)^2 - \frac⧃LB⧄\Delta⧃RB⧄⧃LB⧄4a⧃RB⧄$, the minimum value (when $a > 0$) or
-maximum value (when $a < 0$) equals $-\frac⧃LB⧄\Delta⧃RB⧄⧃LB⧄4a⧃RB⧄$, attained at $x = -\frac{b}{2a}$.
+$f(x) = a\left(x + \frac{b}{2a}\right)^2 - \frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$, the minimum value (when $a > 0$) or
+maximum value (when $a < 0$) equals $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$, attained at $x = -\frac{b}{2a}$.
 
-If $a > 0$ and $\Delta > 0$: the minimum is $-\frac⧃LB⧄\Delta⧃RB⧄⧃LB⧄4a⧃RB⧄ < 0$, so the vertex is below the
+If $a > 0$ and $\Delta > 0$: the minimum is $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ < 0$, so the vertex is below the
 $x$-axis. Since the parabola opens upward, it must cross the axis twice.
 
 If $a > 0$ and $\Delta = 0$: the minimum is $0$, so the vertex sits on the $x$-axis.
 
-If $a > 0$ and $\Delta < 0$: the minimum is $-\frac⧃LB⧄\Delta⧃RB⧄⧃LB⧄4a⧃RB⧄ > 0$, so the vertex is above the
-$x$-axis, and $f(x) \geq -\frac⧃LB⧄\Delta⧃RB⧄⧃LB⧄4a⧃RB⧄ > 0$ for all $x$.
+If $a > 0$ and $\Delta < 0$: the minimum is $-\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ > 0$, so the vertex is above the
+$x$-axis, and $f(x) \geq -\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆ > 0$ for all $x$.
 
 The $a < 0$ cases follow by symmetry (or by applying the above to $-f(x)$). $\blacksquare$
 
@@ -411,7 +411,7 @@ x^2 - x - 4 &= 0
 \end{aligned}
 $$
 
-$$x = \frac⧃LB⧄1 \pm \sqrt{1 + 16}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄1 \pm \sqrt{17}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$x = \frac◆LB◆1 \pm \sqrt{1 + 16}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆1 \pm \sqrt{17}◆RB◆◆LB◆2◆RB◆$$
 
 The discriminant is positive, confirming two intersection points — which corresponds geometrically
 to the line cutting the parabola twice.
@@ -480,7 +480,7 @@ Let $z = x + \frac{1}{x}$. Then $z^2 = x^2 + 2 + \frac{1}{x^2}$, so $x^2 + \frac
 
 The equation becomes: $z^2 - 2 + 2z = 0$, i.e., $z^2 + 2z - 2 = 0$.
 
-$$z = \frac⧃LB⧄-2 \pm \sqrt{4 + 8}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄-2 \pm 2\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = -1 \pm \sqrt{3}$$
+$$z = \frac◆LB◆-2 \pm \sqrt{4 + 8}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-2 \pm 2\sqrt{3}◆RB◆◆LB◆2◆RB◆ = -1 \pm \sqrt{3}$$
 
 For each value of $z$, solve $x + \frac{1}{x} = z$, i.e., $x^2 - zx + 1 = 0$ by the quadratic
 formula. This yields four solutions in total (two for each value of $z$), provided each resulting
@@ -579,7 +579,7 @@ $$\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta$$
 
 $$\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta)$$
 
-$$\frac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha⧃RB⧄ + \frac⧃LB⧄1⧃RB⧄⧃LB⧄\beta⧃RB⧄ = \frac⧃LB⧄\alpha + \beta⧃RB⧄⧃LB⧄\alpha\beta⧃RB⧄$$
+$$\frac◆LB◆1◆RB◆◆LB◆\alpha◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta◆RB◆ = \frac◆LB◆\alpha + \beta◆RB◆◆LB◆\alpha\beta◆RB◆$$
 
 $$\alpha^2\beta + \alpha\beta^2 = \alpha\beta(\alpha + \beta)$$
 
@@ -587,13 +587,13 @@ $$(\alpha - \beta)^2 = (\alpha + \beta)^2 - 4\alpha\beta$$
 
 <details>
 <summary>Example</summary>
-The roots of $2x^2 - 8x + 3 = 0$ are $\alpha$ and $\beta$. Without solving the equation, find $\alpha^2 + \beta^2$ and $\frac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha⧃RB⧄ + \frac⧃LB⧄1⧃RB⧄⧃LB⧄\beta⧃RB⧄$.
+The roots of $2x^2 - 8x + 3 = 0$ are $\alpha$ and $\beta$. Without solving the equation, find $\alpha^2 + \beta^2$ and $\frac◆LB◆1◆RB◆◆LB◆\alpha◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta◆RB◆$.
 
 From Vieta: $\alpha + \beta = \frac{8}{2} = 4$ and $\alpha\beta = \frac{3}{2}$.
 
 $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = 16 - 3 = 13$.
 
-$\frac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha⧃RB⧄ + \frac⧃LB⧄1⧃RB⧄⧃LB⧄\beta⧃RB⧄ = \frac⧃LB⧄\alpha + \beta⧃RB⧄⧃LB⧄\alpha\beta⧃RB⧄ = \frac{4}{3/2} = \frac{8}{3}$.
+$\frac◆LB◆1◆RB◆◆LB◆\alpha◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta◆RB◆ = \frac◆LB◆\alpha + \beta◆RB◆◆LB◆\alpha\beta◆RB◆ = \frac{4}{3/2} = \frac{8}{3}$.
 
 </details>
 
@@ -636,7 +636,7 @@ $$(u - 5)(u + 1) = 0$$
 
 $u = 5$ or $u = -1$. Since $u > 0$, reject $u = -1$.
 
-$3^x = 5 \implies x = \log_3 5 = \frac⧃LB⧄\ln 5⧃RB⧄⧃LB⧄\ln 3⧃RB⧄$.
+$3^x = 5 \implies x = \log_3 5 = \frac◆LB◆\ln 5◆RB◆◆LB◆\ln 3◆RB◆$.
 
 </details>
 
@@ -656,11 +656,11 @@ $$2u^2 - u - 1 = 0 \implies (2u + 1)(u - 1) = 0$$
 
 $u = -\frac{1}{2}$ or $u = 1$. Both lie in $[-1, 1]$.
 
-$\cos\theta = -\frac{1}{2} \implies \theta = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄3⧃RB⧄, \frac⧃LB⧄4\pi⧃RB⧄⧃LB⧄3⧃RB⧄$.
+$\cos\theta = -\frac{1}{2} \implies \theta = \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆, \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆$.
 
 $\cos\theta = 1 \implies \theta = 0, 2\pi$.
 
-Solution: $\theta \in \left\{0, \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄3⧃RB⧄, \frac⧃LB⧄4\pi⧃RB⧄⧃LB⧄3⧃RB⧄, 2\pi\right\}$.
+Solution: $\theta \in \left\{0, \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆, \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆, 2\pi\right\}$.
 
 </details>
 
@@ -725,7 +725,7 @@ Minimum value is $-5$, occurring at $x = 2$.
 <summary>Solution</summary>
 $$
 \begin{aligned}
-x &= \frac⧃LB⧄-5 \pm \sqrt{25 + 32}⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄-5 \pm \sqrt{57}⧃RB⧄⧃LB⧄4⧃RB⧄
+x &= \frac◆LB◆-5 \pm \sqrt{25 + 32}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆-5 \pm \sqrt{57}◆RB◆◆LB◆4◆RB◆
 \end{aligned}
 $$
 </details>
@@ -906,11 +906,11 @@ $$(x + 5)(x + 2) = 30$$
 $$x^2 + 7x + 10 = 30$$
 $$x^2 + 7x - 20 = 0$$
 
-$$x = \frac⧃LB⧄-7 \pm \sqrt{49 + 80}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄-7 \pm \sqrt{129}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$x = \frac◆LB◆-7 \pm \sqrt{49 + 80}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-7 \pm \sqrt{129}◆RB◆◆LB◆2◆RB◆$$
 
 Since length and width must be positive, $x > -2$, so:
 
-$$x = \frac⧃LB⧄-7 + \sqrt{129}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 2.18$$
+$$x = \frac◆LB◆-7 + \sqrt{129}◆RB◆◆LB◆2◆RB◆ \approx 2.18$$
 
 </details>
 <b>If you get this wrong, revise:</b> [Quadratic formula](#3-the-quadratic-formula)
@@ -1005,10 +1005,10 @@ $$9 - 4k^2 + 24k - 32 = 0$$
 
 $$4k^2 - 24k + 23 = 0$$
 
-$$k = \frac⧃LB⧄24 \pm \sqrt{576 - 368}⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄24 \pm \sqrt{208}⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄24 \pm 4\sqrt{13}⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄6 \pm \sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$k = \frac◆LB◆24 \pm \sqrt{576 - 368}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆24 \pm \sqrt{208}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆24 \pm 4\sqrt{13}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆6 \pm \sqrt{13}◆RB◆◆LB◆2◆RB◆$$
 
 We also require $k \neq 2$ (otherwise the equation is linear, not quadratic). Since
-$\frac⧃LB⧄6 \pm \sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄ \neq 2$ (because $6 \pm \sqrt{13} \neq 4$), both values are valid.
+$\frac◆LB◆6 \pm \sqrt{13}◆RB◆◆LB◆2◆RB◆ \neq 2$ (because $6 \pm \sqrt{13} \neq 4$), both values are valid.
 
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant and graph shape](#41-discriminant-and-graph-shape)
@@ -1053,9 +1053,9 @@ $u = \frac{1}{2}$ or $u = -2$.
 
 Since $-1 \leq \sin\theta \leq 1$, we reject $u = -2$.
 
-$\sin\theta = \frac{1}{2} \implies \theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄$ or $\theta = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄6⧃RB⧄$.
+$\sin\theta = \frac{1}{2} \implies \theta = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ or $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
 
-Solution: $\theta \in \left\{\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄, \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄6⧃RB⧄\right\}$.
+Solution: $\theta \in \left\{\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆, \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆\right\}$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Applying quadratic theory](#10-applying-quadratic-theory-to-other-equations)

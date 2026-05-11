@@ -184,8 +184,8 @@ repeatable; an accurate measurement is close to the true value. You can have one
 **Definition.** If a quantity is measured as $x \pm \Delta x$, then:
 
 - **Absolute uncertainty**: $\Delta x$
-- **Fractional uncertainty**: $\frac⧃LB⧄\Delta x⧃RB⧄⧃LB⧄x⧃RB⧄$
-- **Percentage uncertainty**: $\frac⧃LB⧄\Delta x⧃RB⧄⧃LB⧄x⧃RB⧄ \times 100\%$
+- **Fractional uncertainty**: $\frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆$
+- **Percentage uncertainty**: $\frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆ \times 100\%$
 
 ### Combining Uncertainties
 
@@ -202,7 +202,7 @@ $$\Delta z = \Delta x + \Delta y$$
 direction. The maximum possible value is $z_{\max} = (x + \Delta x) + (y + \Delta y)$, and the
 minimum is $z_{\min} = (x - \Delta x) + (y - \Delta y)$. Hence:
 
-$$\Delta z = \frac⧃LB⧄z_{\max} - z_{\min}⧃RB⧄⧃LB⧄2⧃RB⧄ = \Delta x + \Delta y$$
+$$\Delta z = \frac◆LB◆z_{\max} - z_{\min}◆RB◆◆LB◆2◆RB◆ = \Delta x + \Delta y$$
 
 The same argument applies for subtraction. $\square$
 
@@ -210,7 +210,7 @@ The same argument applies for subtraction. $\square$
 
 If $z = xy$ or $z = x/y$, then:
 
-$$\frac⧃LB⧄\Delta z⧃RB⧄⧃LB⧄z⧃RB⧄ = \frac⧃LB⧄\Delta x⧃RB⧄⧃LB⧄x⧃RB⧄ + \frac⧃LB⧄\Delta y⧃RB⧄⧃LB⧄y⧃RB⧄$$
+$$\frac◆LB◆\Delta z◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆ + \frac◆LB◆\Delta y◆RB◆◆LB◆y◆RB◆$$
 
 In words: when multiplying or dividing, add the **fractional** uncertainties.
 
@@ -227,8 +227,8 @@ For small uncertainties, $\Delta x \Delta y$ is negligible:
 
 $$
 \begin{aligned}
-\Delta z &= \frac⧃LB⧄z_{\max} - z_{\min}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx x\Delta y + y\Delta x \\[4pt]
-\frac⧃LB⧄\Delta z⧃RB⧄⧃LB⧄z⧃RB⧄ &= \frac⧃LB⧄x\Delta y + y\Delta x⧃RB⧄⧃LB⧄xy⧃RB⧄ = \frac⧃LB⧄\Delta y⧃RB⧄⧃LB⧄y⧃RB⧄ + \frac⧃LB⧄\Delta x⧃RB⧄⧃LB⧄x⧃RB⧄
+\Delta z &= \frac◆LB◆z_{\max} - z_{\min}◆RB◆◆LB◆2◆RB◆ \approx x\Delta y + y\Delta x \\[4pt]
+\frac◆LB◆\Delta z◆RB◆◆LB◆z◆RB◆ &= \frac◆LB◆x\Delta y + y\Delta x◆RB◆◆LB◆xy◆RB◆ = \frac◆LB◆\Delta y◆RB◆◆LB◆y◆RB◆ + \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆
 \end{aligned}
 $$
 
@@ -238,12 +238,12 @@ $\square$
 
 If $z = x^n$, then:
 
-$$\frac⧃LB⧄\Delta z⧃RB⧄⧃LB⧄z⧃RB⧄ = |n| \cdot \frac⧃LB⧄\Delta x⧃RB⧄⧃LB⧄x⧃RB⧄$$
+$$\frac◆LB◆\Delta z◆RB◆◆LB◆z◆RB◆ = |n| \cdot \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆$$
 
-**Derivation.** Write $z = \underbrace⧃LB⧄x \cdot x \cdots x⧃RB⧄_{n \mathrm{ times}}$. Applying the
+**Derivation.** Write $z = \underbrace◆LB◆x \cdot x \cdots x◆RB◆_{n \mathrm{ times}}$. Applying the
 multiplication rule repeatedly:
 
-$$\frac⧃LB⧄\Delta z⧃RB⧄⧃LB⧄z⧃RB⧄ = \underbrace⧃LB⧄\frac{\Delta x}{x} + \frac{\Delta x}{x} + \cdots + \frac{\Delta x}{x}⧃RB⧄_{n \mathrm{ terms}} = n \cdot \frac⧃LB⧄\Delta x⧃RB⧄⧃LB⧄x⧃RB⧄$$
+$$\frac◆LB◆\Delta z◆RB◆◆LB◆z◆RB◆ = \underbrace◆LB◆\frac{\Delta x}{x} + \frac{\Delta x}{x} + \cdots + \frac{\Delta x}{x}◆RB◆_{n \mathrm{ terms}} = n \cdot \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆$$
 
 For negative or fractional powers, the result generalises via logarithmic differentiation (see
 [01-wave-properties](../waves/01-wave-properties.md) for the general propagation of error formula).
@@ -253,7 +253,7 @@ $\square$
 
 For any function $z = f(x_1, x_2, \ldots, x_n)$:
 
-$$\Delta z = \sqrt⧃LB⧄\sum_{i=1}^{n}\left(\frac{\partial f}{\partial x_i} \Delta x_i\right)^2⧃RB⧄$$
+$$\Delta z = \sqrt◆LB◆\sum_{i=1}^{n}\left(\frac{\partial f}{\partial x_i} \Delta x_i\right)^2◆RB◆$$
 
 This is the statistical (root-sum-square) combination, which gives the most probable uncertainty
 rather than the worst case. For A Level exams, use the simpler worst-case rules above unless
@@ -283,11 +283,11 @@ $$\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$$
 
 The **absolute uncertainty** is the half-range:
 
-$$\Delta x = \frac⧃LB⧄x_{\max} - x_{\min}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$\Delta x = \frac◆LB◆x_{\max} - x_{\min}◆RB◆◆LB◆2◆RB◆$$
 
 For large datasets, the standard deviation of the mean is more appropriate:
 
-$$\Delta x = \frac⧃LB⧄\sigma⧃RB⧄⧃LB⧄\sqrt{n}⧃RB⧄, \qquad \sigma = \sqrt⧃LB⧄\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2⧃RB⧄$$
+$$\Delta x = \frac◆LB◆\sigma◆RB◆◆LB◆\sqrt{n}◆RB◆, \qquad \sigma = \sqrt◆LB◆\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2◆RB◆$$
 
 ## 7. Graphical Analysis of Uncertainties
 
@@ -297,7 +297,7 @@ the error bars).
 
 The uncertainty in the gradient is:
 
-$$\Delta m = \frac⧃LB⧄|m_{\mathrm{best}} - m_{\mathrm{worst}}|⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$\Delta m = \frac◆LB◆|m_{\mathrm{best}} - m_{\mathrm{worst}}|◆RB◆◆LB◆2◆RB◆$$
 
 A similar procedure applies to the $y$-intercept.
 
@@ -335,7 +335,7 @@ A force $F = 12.0 \pm 0.3$ N acts over a distance $d = 3.45 \pm 0.05$ m. Calcula
 
 **Answer.** $W = Fd = 12.0 \times 3.45 = 41.4$ J. The fractional uncertainties are
 $\frac{0.3}{12.0} = 0.025$ and $\frac{0.05}{3.45} = 0.0145$. By the multiplication rule:
-$\frac⧃LB⧄\Delta W⧃RB⧄⧃LB⧄W⧃RB⧄ = 0.025 + 0.0145 = 0.0395$, so $\Delta W = 41.4 \times 0.0395 \approx 1.6$ J.
+$\frac◆LB◆\Delta W◆RB◆◆LB◆W◆RB◆ = 0.025 + 0.0145 = 0.0395$, so $\Delta W = 41.4 \times 0.0395 \approx 1.6$ J.
 Result: $W = 41.4 \pm 1.6$ J (3.9% uncertainty).
 
 <b>If you get this wrong, revise:</b>
@@ -345,11 +345,11 @@ Result: $W = 41.4 \pm 1.6$ J (3.9% uncertainty).
 
 <details>
 <summary>Problem 4</summary>
-Use dimensional analysis to show that the expression $v = \sqrt⧃LB⧄\frac{2\Delta E}{m}⧃RB⧄$ is dimensionally valid, where $\Delta E$ is energy and $m$ is mass.
+Use dimensional analysis to show that the expression $v = \sqrt◆LB◆\frac{2\Delta E}{m}◆RB◆$ is dimensionally valid, where $\Delta E$ is energy and $m$ is mass.
 
 **Answer.** $[v] = \mathsf{L}\mathsf{T}^{-1}$.
-$[\Delta E/m] = \frac⧃LB⧄\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}⧃RB⧄⧃LB⧄\mathsf{M}⧃RB⧄ = \mathsf{L}^2\mathsf{T}^{-2}$.
-$[\sqrt⧃LB⧄2\Delta E/m⧃RB⧄] = (\mathsf{L}^2\mathsf{T}^{-2})^{1/2} = \mathsf{L}\mathsf{T}^{-1} = [v]$.
+$[\Delta E/m] = \frac◆LB◆\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}◆RB◆◆LB◆\mathsf{M}◆RB◆ = \mathsf{L}^2\mathsf{T}^{-2}$.
+$[\sqrt◆LB◆2\Delta E/m◆RB◆] = (\mathsf{L}^2\mathsf{T}^{-2})^{1/2} = \mathsf{L}\mathsf{T}^{-1} = [v]$.
 $\square$
 
 <b>If you get this wrong, revise:</b> [Dimensional Analysis](#2-dimensional-analysis)
@@ -358,9 +358,9 @@ $\square$
 
 <details>
 <summary>Problem 5</summary>
-The density of a cylinder is $\rho = \frac⧃LB⧄m⧃RB⧄⧃LB⧄\pi r^2 h⧃RB⧄$. The mass $m = 150.0 \pm 0.5$ g, radius $r = 1.20 \pm 0.05$ cm, and height $h = 5.00 \pm 0.02$ cm. Calculate $\rho$ and its uncertainty.
+The density of a cylinder is $\rho = \frac◆LB◆m◆RB◆◆LB◆\pi r^2 h◆RB◆$. The mass $m = 150.0 \pm 0.5$ g, radius $r = 1.20 \pm 0.05$ cm, and height $h = 5.00 \pm 0.02$ cm. Calculate $\rho$ and its uncertainty.
 
-**Answer.** $\rho = \frac⧃LB⧄150.0⧃RB⧄⧃LB⧄\pi(1.20)^2(5.00)⧃RB⧄ = \frac{150.0}{22.62} = 6.63$ g cm$^{-3}$.
+**Answer.** $\rho = \frac◆LB◆150.0◆RB◆◆LB◆\pi(1.20)^2(5.00)◆RB◆ = \frac{150.0}{22.62} = 6.63$ g cm$^{-3}$.
 
 Fractional uncertainties: $\frac{0.5}{150.0} = 0.0033$, $\frac{2(0.05)}{1.20} = 0.0833$ (power
 rule), $\frac{0.02}{5.00} = 0.004$.
@@ -387,13 +387,13 @@ $\theta = \arctan(9/1) = 83.7^\circ$ above the positive $x$-axis.
 
 <details>
 <summary>Problem 7</summary>
-A student proposes the formula for the period of a mass on a spring: $T = 2\pi\sqrt⧃LB⧄\frac{k}{m}⧃RB⧄$, where $k$ is the spring constant and $m$ is the mass. Use dimensional analysis to show this formula is incorrect, and find the correct form.
+A student proposes the formula for the period of a mass on a spring: $T = 2\pi\sqrt◆LB◆\frac{k}{m}◆RB◆$, where $k$ is the spring constant and $m$ is the mass. Use dimensional analysis to show this formula is incorrect, and find the correct form.
 
 **Answer.** $[T] = \mathsf{T}$.
-$[k/m] = \frac⧃LB⧄[\mathrm{force}]/[\mathrm{displacement}]⧃RB⧄⧃LB⧄[\mathrm{mass}]⧃RB⧄ = \frac⧃LB⧄\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}⧃RB⧄⧃LB⧄\mathsf{M}⧃RB⧄ = \mathsf{T}^{-2}$.
+$[k/m] = \frac◆LB◆[\mathrm{force}]/[\mathrm{displacement}]◆RB◆◆LB◆[\mathrm{mass}]◆RB◆ = \frac◆LB◆\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}◆RB◆◆LB◆\mathsf{M}◆RB◆ = \mathsf{T}^{-2}$.
 So $[\sqrt{k/m}] = \mathsf{T}^{-1} \neq \mathsf{T}$. The formula is dimensionally wrong. The correct
-form is $T = 2\pi\sqrt⧃LB⧄\frac{m}{k}⧃RB⧄$, which gives
-$[\sqrt{m/k}] = \sqrt⧃LB⧄\frac{\mathsf{M}}{\mathsf{T}^{-2}}⧃RB⧄ = \mathsf{T}$. $\square$
+form is $T = 2\pi\sqrt◆LB◆\frac{m}{k}◆RB◆$, which gives
+$[\sqrt{m/k}] = \sqrt◆LB◆\frac{\mathsf{M}}{\mathsf{T}^{-2}}◆RB◆ = \mathsf{T}$. $\square$
 
 <b>If you get this wrong, revise:</b>
 [Determining the Form of an Equation](#determining-the-form-of-an-equation)
@@ -442,9 +442,9 @@ varies unpredictably from trial to trial.
 The gravitational potential energy is given by $E_p = -\frac{GMm}{r}$. Use dimensional analysis to determine the SI units of the gravitational constant $G$.
 
 **Answer.** $[E_p] = \mathsf{M}\mathsf{L}^2\mathsf{T}^{-2}$.
-$[Mm/r] = \frac⧃LB⧄\mathsf{M} \cdot \mathsf{M}⧃RB⧄⧃LB⧄\mathsf{L}⧃RB⧄ = \mathsf{M}^2\mathsf{L}^{-1}$. Since
+$[Mm/r] = \frac◆LB◆\mathsf{M} \cdot \mathsf{M}◆RB◆◆LB◆\mathsf{L}◆RB◆ = \mathsf{M}^2\mathsf{L}^{-1}$. Since
 $E_p = -\frac{GMm}{r}$:
-$[G] = \frac{[E_p][r]}{[Mm]} = \frac⧃LB⧄\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2} \cdot \mathsf{L}⧃RB⧄⧃LB⧄\mathsf{M}^2⧃RB⧄ = \mathsf{M}^{-1}\mathsf{L}^3\mathsf{T}^{-2}$.
+$[G] = \frac{[E_p][r]}{[Mm]} = \frac◆LB◆\mathsf{M}\mathsf{L}^2\mathsf{T}^{-2} \cdot \mathsf{L}◆RB◆◆LB◆\mathsf{M}^2◆RB◆ = \mathsf{M}^{-1}\mathsf{L}^3\mathsf{T}^{-2}$.
 In SI units: m$^3$ kg$^{-1}$ s$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Derived Units](#1-physical-quantities-and-the-si-system)
@@ -453,9 +453,9 @@ In SI units: m$^3$ kg$^{-1}$ s$^{-2}$.
 
 <details>
 <summary>Problem 12</summary>
-A quantity $Q$ is measured as $Q = \frac⧃LB⧄a^2 b⧃RB⧄⧃LB⧄\sqrt{c}⧃RB⧄$ where $a = 4.0 \pm 0.2$, $b = 3.0 \pm 0.1$, $c = 9.0 \pm 0.3$. Calculate $Q$ and its percentage uncertainty.
+A quantity $Q$ is measured as $Q = \frac◆LB◆a^2 b◆RB◆◆LB◆\sqrt{c}◆RB◆$ where $a = 4.0 \pm 0.2$, $b = 3.0 \pm 0.1$, $c = 9.0 \pm 0.3$. Calculate $Q$ and its percentage uncertainty.
 
-**Answer.** $Q = \frac⧃LB⧄16.0 \times 3.0⧃RB⧄⧃LB⧄3.0⧃RB⧄ = 16.0$.
+**Answer.** $Q = \frac◆LB◆16.0 \times 3.0◆RB◆◆LB◆3.0◆RB◆ = 16.0$.
 
 Fractional uncertainties: $\frac{2(0.2)}{4.0} = 0.10$ (power rule for $a^2$),
 $\frac{0.1}{3.0} = 0.033$ (for $b$), $\frac{1}{2} \cdot \frac{0.3}{9.0} = 0.0167$ (power rule for
@@ -602,7 +602,7 @@ Result: $V = 30.0 \pm 0.5$ cm$^3$.
 
 ### 11.3 Uncertainty in a Formula with Roots
 
-**Example.** The speed of a wave on a string is $v = \sqrt⧃LB⧄T/\mu⧃RB⧄$, where $T$ is the tension and
+**Example.** The speed of a wave on a string is $v = \sqrt◆LB◆T/\mu◆RB◆$, where $T$ is the tension and
 $\mu$ is the mass per unit length. Given $T = 10.0 \pm 0.2$ N and $\mu = 0.0250 \pm 0.0005$ kg
 m$^{-1}$, find $v$ and its uncertainty.
 
@@ -680,13 +680,13 @@ $[G] = \mathsf{L}^3\mathsf{M}^{-1}\mathsf{T}^{-2}$. In SI units: m$^3$ kg$^{-1}$
 
 <details>
 <summary>Problem 2</summary>
-A student proposes the formula for the frequency of a mass-spring system: $f = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2\pi⧃RB⧄\sqrt⧃LB⧄\frac{m}{k}⧃RB⧄$, where $k$ is the spring constant. Use dimensional analysis to determine whether this formula is correct.
+A student proposes the formula for the frequency of a mass-spring system: $f = \frac◆LB◆1◆RB◆◆LB◆2\pi◆RB◆\sqrt◆LB◆\frac{m}{k}◆RB◆$, where $k$ is the spring constant. Use dimensional analysis to determine whether this formula is correct.
 
 **Answer.** $[f] = \mathsf{T}^{-1}$.
-$[m/k] = \frac⧃LB⧄\mathsf{M}⧃RB⧄⧃LB⧄[\mathrm{force}]/[\mathrm{displacement}]⧃RB⧄ = \frac⧃LB⧄\mathsf{M}⧃RB⧄⧃LB⧄\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}⧃RB⧄ = \frac⧃LB⧄\mathsf{M}⧃RB⧄⧃LB⧄\mathsf{M}\mathsf{T}^{-2}⧃RB⧄ = \mathsf{T}^2$.
+$[m/k] = \frac◆LB◆\mathsf{M}◆RB◆◆LB◆[\mathrm{force}]/[\mathrm{displacement}]◆RB◆ = \frac◆LB◆\mathsf{M}◆RB◆◆LB◆\mathsf{M}\mathsf{L}\mathsf{T}^{-2}/\mathsf{L}◆RB◆ = \frac◆LB◆\mathsf{M}◆RB◆◆LB◆\mathsf{M}\mathsf{T}^{-2}◆RB◆ = \mathsf{T}^2$.
 
 $[\sqrt{m/k}] = \mathsf{T} \neq \mathsf{T}^{-1}$. The formula is incorrect. The correct form is
-$f = \frac⧃LB⧄1⧃RB⧄⧃LB⧄2\pi⧃RB⧄\sqrt⧃LB⧄\frac{k}{m}⧃RB⧄$, giving $[\sqrt{k/m}] = \mathsf{T}^{-1} = [f]$. $\square$
+$f = \frac◆LB◆1◆RB◆◆LB◆2\pi◆RB◆\sqrt◆LB◆\frac{k}{m}◆RB◆$, giving $[\sqrt{k/m}] = \mathsf{T}^{-1} = [f]$. $\square$
 
 <b>If you get this wrong, revise:</b>
 [Determining the Form of an Equation](#determining-the-form-of-an-equation)
@@ -722,7 +722,7 @@ $[2as] = (\mathsf{L}\mathsf{T}^{-2})(\mathsf{L}) = \mathsf{L}^2\mathsf{T}^{-2}$.
 $\square$
 
 For $\mathsf{M}^{1/2}\mathsf{L}^{3/2}\mathsf{T}^{-1}$:
-$\sqrt⧃LB⧄\mathrm{kg}⧃RB⧄ \cdot \mathrm{m}^{3/2} \cdot \mathrm{s}^{-1}$. An example is
+$\sqrt◆LB◆\mathrm{kg}◆RB◆ \cdot \mathrm{m}^{3/2} \cdot \mathrm{s}^{-1}$. An example is
 $\sqrt{G} \cdot M / r$ where $G$ has units m$^3$ kg$^{-1}$ s$^{-2}$, giving
 $[\sqrt{G}] = \mathrm{m}^{3/2}\mathrm{ kg}^{-1/2}\mathrm{ s}^{-1}$ and
 $[\sqrt{G} \cdot M] = \mathrm{m}^{3/2}\mathrm{ kg}^{1/2}\mathrm{ s}^{-1}$.

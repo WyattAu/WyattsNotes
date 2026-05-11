@@ -481,7 +481,7 @@ Both arrows are drawn simultaneously, showing the concerted nature of SN2. The t
 A chiral compound rotates the plane of plane-polarised light. The observed rotation $\alpha$ depends on:
 
 $$
-[\alpha] = \frac⧃LB⧄\alpha_\mathrm{obs}⧃RB⧄⧃LB⧄l \times c⧃RB⧄
+[\alpha] = \frac◆LB◆\alpha_\mathrm{obs}◆RB◆◆LB◆l \times c◆RB◆
 $$
 
 where $[\alpha]$ is the specific rotation (constant for a given compound), $l$ is the path length (in dm), and $c$ is the concentration (in $\mathrm{g/cm}^3$).

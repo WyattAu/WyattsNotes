@@ -569,11 +569,11 @@ $$\mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O} \to \math
 
 Step 1 (slow): Heterolytic cleavage of the C--Br bond forms a planar secondary carbocation:
 
-$$\mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{CH}_3 \to \mathrm{CH}_3\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{HCH}_2\mathrm{CH}_3 + \mathrm{Br}^-$$
+$$\mathrm{CH}_3\mathrm{CHBrCH}_2\mathrm{CH}_3 \to \mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_2\mathrm{CH}_3 + \mathrm{Br}^-$$
 
 Step 2 (fast): Water attacks the planar carbocation from either face with equal probability:
 
-$$\mathrm{CH}_3\overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄\mathrm{HCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH}_2^+)\mathrm{CH}_2\mathrm{CH}_3$$
+$$\mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH}_2^+)\mathrm{CH}_2\mathrm{CH}_3$$
 
 Step 3: Deprotonation gives the alcohol:
 
@@ -681,13 +681,13 @@ A student carried out an experiment to determine the order of reaction with resp
 
 (b) 3 marks: From rate $= k[\mathrm{1\text{-}bromobutane}]^1[\mathrm{OH}^-]^1$:
 
-$k = \frac⧃LB⧄\text{rate}⧃RB⧄⧃LB⧄[\mathrm{1\text{-}bromobutane}][\mathrm{OH}^-]⧃RB⧄$
+$k = \frac◆LB◆\text{rate}◆RB◆◆LB◆[\mathrm{1\text{-}bromobutane}][\mathrm{OH}^-]◆RB◆$
 
 Using the first data point and assuming $[\mathrm{1\text{-}bromobutane}] = c$:
 
-$k = \frac⧃LB⧄4.0 \times 10^{-5}⧃RB⧄⧃LB⧄c \times 0.020⧃RB⧄ = \frac⧃LB⧄2.0 \times 10^{-3}⧃RB⧄⧃LB⧄c⧃RB⧄$
+$k = \frac◆LB◆4.0 \times 10^{-5}◆RB◆◆LB◆c \times 0.020◆RB◆ = \frac◆LB◆2.0 \times 10^{-3}◆RB◆◆LB◆c◆RB◆$
 
-Units: $\frac⧃LB⧄\mathrm{mol\,dm^{-3}\,s^{-1}}⧃RB⧄⧃LB⧄\mathrm{mol\,dm^{-3}} \times \mathrm{mol\,dm^{-3}}⧃RB⧄ = \mathrm{mol^{-1}\,dm^3\,s^{-1}}$ (1 mark for correct calculation, 1 mark for correct units, 1 mark for method).
+Units: $\frac◆LB◆\mathrm{mol\,dm^{-3}\,s^{-1}}◆RB◆◆LB◆\mathrm{mol\,dm^{-3}} \times \mathrm{mol\,dm^{-3}}◆RB◆ = \mathrm{mol^{-1}\,dm^3\,s^{-1}}$ (1 mark for correct calculation, 1 mark for correct units, 1 mark for method).
 
 (c) 1 mark: Second-order overall (first-order with respect to each reactant).
 

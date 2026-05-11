@@ -31,9 +31,9 @@ The function $f(x) = x^3 - 2x + 2$ has a root near $x = -1.77$.
 
 **(a)** $f'(x) = 3x^2 - 2 = 0$ gives $x = \pm\sqrt{2/3} \approx \pm 0.816$.
 
-$f\!\left(-\sqrt{2/3}\right) = -\frac⧃LB⧄2\sqrt{6}⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄2\sqrt{6}⧃RB⧄⧃LB⧄3⧃RB⧄ + 2 = \frac⧃LB⧄4\sqrt{6}⧃RB⧄⧃LB⧄9⧃RB⧄ + 2 \approx 3.09$ (local maximum).
+$f\!\left(-\sqrt{2/3}\right) = -\frac◆LB◆2\sqrt{6}◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆2\sqrt{6}◆RB◆◆LB◆3◆RB◆ + 2 = \frac◆LB◆4\sqrt{6}◆RB◆◆LB◆9◆RB◆ + 2 \approx 3.09$ (local maximum).
 
-$f\!\left(\sqrt{2/3}\right) = \frac⧃LB⧄2\sqrt{6}⧃RB⧄⧃LB⧄9⧃RB⧄ - \frac⧃LB⧄2\sqrt{6}⧃RB⧄⧃LB⧄3⧃RB⧄ + 2 = -\frac⧃LB⧄4\sqrt{6}⧃RB⧄⧃LB⧄9⧃RB⧄ + 2 \approx 0.91$ (local minimum).
+$f\!\left(\sqrt{2/3}\right) = \frac◆LB◆2\sqrt{6}◆RB◆◆LB◆9◆RB◆ - \frac◆LB◆2\sqrt{6}◆RB◆◆LB◆3◆RB◆ + 2 = -\frac◆LB◆4\sqrt{6}◆RB◆◆LB◆9◆RB◆ + 2 \approx 0.91$ (local minimum).
 
 Since the local minimum is positive ($\approx 0.91$), the graph crosses the $x$-axis only once (to the left of the local maximum, where $f$ goes from $-\infty$ to the maximum). So there is exactly one real root.
 
@@ -95,9 +95,9 @@ Positive root: $\alpha = \sqrt{3}$.
 
 $$x_1 = \frac{1}{2}\left(2 + \frac{3}{2}\right) = \frac{7}{4} = 1.75$$
 
-$$x_2 = \frac{1}{2}\left(\frac{7}{4} + \frac⧃LB⧄3 \times 4⧃RB⧄⧃LB⧄7⧃RB⧄\right) = \frac{1}{2}\left(\frac{7}{4} + \frac{12}{7}\right) = \frac{1}{2} \cdot \frac{49 + 48}{28} = \frac{97}{56} \approx 1.73214$$
+$$x_2 = \frac{1}{2}\left(\frac{7}{4} + \frac◆LB◆3 \times 4◆RB◆◆LB◆7◆RB◆\right) = \frac{1}{2}\left(\frac{7}{4} + \frac{12}{7}\right) = \frac{1}{2} \cdot \frac{49 + 48}{28} = \frac{97}{56} \approx 1.73214$$
 
-$$x_3 = \frac{1}{2}\left(\frac{97}{56} + \frac⧃LB⧄3 \times 56⧃RB⧄⧃LB⧄97⧃RB⧄\right) = \frac{1}{2}\left(\frac{97}{56} + \frac{168}{97}\right) = \frac{1}{2} \cdot \frac{9409 + 9408}{5432} = \frac{18817}{10864} \approx 1.73205$$
+$$x_3 = \frac{1}{2}\left(\frac{97}{56} + \frac◆LB◆3 \times 56◆RB◆◆LB◆97◆RB◆\right) = \frac{1}{2}\left(\frac{97}{56} + \frac{168}{97}\right) = \frac{1}{2} \cdot \frac{9409 + 9408}{5432} = \frac{18817}{10864} \approx 1.73205$$
 
 The iteration converges rapidly to $\sqrt{3} \approx 1.73205$.
 
@@ -133,7 +133,7 @@ Clearly diverging.
 
 **(b)** Determine whether your estimate is an overestimate or underestimate, justifying your answer by examining the concavity of $f(x) = \sqrt{x}$.
 
-**(c)** The exact value of the integral is $\frac⧃LB⧄4\sqrt{2}⧃RB⧄⧃LB⧄3⧃RB⧄$. Calculate the percentage error of the trapezium rule estimate.
+**(c)** The exact value of the integral is $\frac◆LB◆4\sqrt{2}◆RB◆◆LB◆3◆RB◆$. Calculate the percentage error of the trapezium rule estimate.
 
 **(d)** How many strips would be needed to guarantee that the trapezium rule estimate of $\int_0^2 \sqrt{x}\, dx$ is within $0.001$ of the exact value? (The error bound for the trapezium rule with $n$ strips on $[a, b]$ is $\frac{(b-a)^3}{12n^2}\max_{[a,b]}\lvert f''(x) \rvert$.)
 
@@ -145,7 +145,7 @@ Clearly diverging.
 
 | $x$ | 0 | 0.5 | 1 | 1.5 | 2 |
 |-----|---|-----|---|-----|---|
-| $y = \sqrt{x}$ | 0 | $\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ \approx 0.7071$ | 1 | $\sqrt{1.5} \approx 1.2247$ | $\sqrt{2} \approx 1.4142$ |
+| $y = \sqrt{x}$ | 0 | $\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \approx 0.7071$ | 1 | $\sqrt{1.5} \approx 1.2247$ | $\sqrt{2} \approx 1.4142$ |
 
 $$T_4 = \frac{0.5}{2}\left[0 + 2(0.7071 + 1 + 1.2247) + 1.4142\right]$$
 
@@ -157,9 +157,9 @@ For $x \in (0, 2]$: $f''(x) = -\frac{1}{4}x^{-3/2} \lt 0$.
 
 Since $f''(x) \lt 0$ on $(0, 2]$, the curve is concave down. The trapezium rule **overestimates** when the curve is concave down (the trapezia lie above the curve).
 
-**(c)** Exact value: $\frac⧃LB⧄4\sqrt{2}⧃RB⧄⧃LB⧄3⧃RB⧄ \approx 1.8856$.
+**(c)** Exact value: $\frac◆LB◆4\sqrt{2}◆RB◆◆LB◆3◆RB◆ \approx 1.8856$.
 
-$$\text{Percentage error} = \frac⧃LB⧄\lvert 1.8194 - 1.8856 \rvert⧃RB⧄⧃LB⧄1.8856⧃RB⧄ \times 100\% \approx 3.51\%$$
+$$\text{Percentage error} = \frac◆LB◆\lvert 1.8194 - 1.8856 \rvert◆RB◆◆LB◆1.8856◆RB◆ \times 100\% \approx 3.51\%$$
 
 **(d)** The error bound: $\lvert E \rvert \leq \frac{(b-a)^3}{12n^2}\max_{[a,b]}\lvert f''(x) \rvert$.
 
@@ -265,7 +265,7 @@ The Newton-Raphson method converges rapidly because $f'(x) = 4(x-1)((x-1)^2+1)$ 
 
 **Question:**
 
-**(a)** Show that the equation $\cos x = x$ has exactly one real root in the interval $[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄]$.
+**(a)** Show that the equation $\cos x = x$ has exactly one real root in the interval $[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆]$.
 
 **(b)** Use the fixed-point iteration $x_{n+1} = \cos x_n$ with $x_0 = 0.5$ to find the root to 5 decimal places.
 
@@ -281,11 +281,11 @@ The Newton-Raphson method converges rapidly because $f'(x) = 4(x-1)((x-1)^2+1)$ 
 
 $h(0) = 1 - 0 = 1 \gt 0$.
 
-$h\!\left(\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right) = 0 - \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ \lt 0$.
+$h\!\left(\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right) = 0 - \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ \lt 0$.
 
-By the intermediate value theorem, there is at least one root in $[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄]$.
+By the intermediate value theorem, there is at least one root in $[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆]$.
 
-$h'(x) = -\sin x - 1 \lt 0$ for all $x$ (since $\sin x \geq 0$ on $[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄]$).
+$h'(x) = -\sin x - 1 \lt 0$ for all $x$ (since $\sin x \geq 0$ on $[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆]$).
 
 Since $h$ is strictly decreasing, there is at most one root. Combined with existence, there is exactly one root.
 
@@ -327,9 +327,9 @@ $x_0 = 0.5$: $f(0.5) = \cos 0.5 - 0.5 \approx 0.37758$, $f'(0.5) = -\sin 0.5 - 1
 
 $$x_1 = 0.5 - \frac{0.37758}{-1.47943} \approx 0.5 + 0.25521 = 0.75521$$
 
-$$x_2 = 0.75521 - \frac⧃LB⧄\cos 0.75521 - 0.75521⧃RB⧄⧃LB⧄-\sin 0.75521 - 1⧃RB⧄ \approx 0.75521 - \frac{-0.02760}{-1.68560} \approx 0.75521 - 0.01637 = 0.73884$$
+$$x_2 = 0.75521 - \frac◆LB◆\cos 0.75521 - 0.75521◆RB◆◆LB◆-\sin 0.75521 - 1◆RB◆ \approx 0.75521 - \frac{-0.02760}{-1.68560} \approx 0.75521 - 0.01637 = 0.73884$$
 
-$$x_3 \approx 0.73884 - \frac⧃LB⧄\cos 0.73884 - 0.73884⧃RB⧄⧃LB⧄-\sin 0.73884 - 1⧃RB⧄ \approx 0.73884 - \frac{0.00004}{-1.67378} \approx 0.73909$$
+$$x_3 \approx 0.73884 - \frac◆LB◆\cos 0.73884 - 0.73884◆RB◆◆LB◆-\sin 0.73884 - 1◆RB◆ \approx 0.73884 - \frac{0.00004}{-1.67378} \approx 0.73909$$
 
 Newton-Raphson converges in 3 iterations to 5 decimal places, compared to approximately 25-30 iterations for fixed-point iteration. Newton-Raphson has quadratic convergence while fixed-point has linear convergence in this case.
 
@@ -387,11 +387,11 @@ $f'(x) = -2xe^{-x^2}$.
 
 $f''(x) = -2e^{-x^2} + 4x^2 e^{-x^2} = e^{-x^2}(4x^2 - 2)$.
 
-$f''(x) = 0$ when $4x^2 = 2$, i.e. $x = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ \approx 0.707$.
+$f''(x) = 0$ when $4x^2 = 2$, i.e. $x = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \approx 0.707$.
 
-For $0 \leq x \lt \frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄$: $4x^2 - 2 \lt 0$, so $f''(x) \lt 0$ (concave down).
+For $0 \leq x \lt \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆$: $4x^2 - 2 \lt 0$, so $f''(x) \lt 0$ (concave down).
 
-For $\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ \lt x \leq 1$: $4x^2 - 2 \gt 0$, so $f''(x) \gt 0$ (concave up).
+For $\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \lt x \leq 1$: $4x^2 - 2 \gt 0$, so $f''(x) \gt 0$ (concave up).
 
 Since the concavity changes within the interval, the trapezium rule will overestimate on the concave-down portion and underestimate on the concave-up portion. The net effect depends on the relative magnitudes. In this case, the trapezium rule underestimates overall (both $T_4$ and $T_8$ are below the exact value).
 

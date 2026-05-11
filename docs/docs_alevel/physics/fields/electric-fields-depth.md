@@ -19,7 +19,7 @@ Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 **Coulomb's Law.** The electrostatic force between two point charges $q_1$ and $q_2$ separated by
 distance $r$ in vacuum is:
 
-$$\boxed{F = \frac⧃LB⧄q_1 q_2⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r^2⧃RB⧄}$$
+$$\boxed{F = \frac◆LB◆q_1 q_2◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆}$$
 
 where $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$ is the permittivity of free space and
 $k = 1/(4\pi\varepsilon_0) = 8.99 \times 10^9$ N m$^2$ C$^{-2}$ is Coulomb's constant.
@@ -32,7 +32,7 @@ line joining them.
 The net force on a charge due to multiple other charges is the **vector sum** of the individual
 Coulomb forces:
 
-$$\mathbf{F}_{\mathrm{net}} = \sum_i \frac⧃LB⧄q\,q_i⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r_i^2⧃RB⧄\,\hat{\mathbf{r}}_i$$
+$$\mathbf{F}_{\mathrm{net}} = \sum_i \frac◆LB◆q\,q_i◆RB◆◆LB◆4\pi\varepsilon_0 r_i^2◆RB◆\,\hat{\mathbf{r}}_i$$
 
 This linearity is fundamental: each pair of charges interacts independently of all others.
 
@@ -55,13 +55,13 @@ electromagnetic forces.
 **Definition.** The electric field strength $\mathbf{E}$ at a point is the force per unit positive
 charge:
 
-$$\boxed{\mathbf{E} = \frac⧃LB⧄\mathbf{F}⧃RB⧄⧃LB⧄q⧃RB⧄}$$
+$$\boxed{\mathbf{E} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆q◆RB◆}$$
 
 SI units: N C$^{-1}$, equivalent to V m$^{-1}$.
 
 ### Field of a Point Charge
 
-$$\boxed{E = \frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r^2⧃RB⧄}$$
+$$\boxed{E = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆}$$
 
 **Proof.** Place test charge $q$ at distance $r$ from $Q$. By Coulomb's law:
 $F = Qq/(4\pi\varepsilon_0 r^2)$. Therefore $E = F/q = Q/(4\pi\varepsilon_0 r^2)$. $\square$
@@ -95,13 +95,13 @@ Field lines provide a visual representation of the electric field:
 **Definition.** The electric potential $V$ at a point is the work done per unit positive charge in
 bringing a small test charge from infinity to that point:
 
-$$\boxed{V = \frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r⧃RB⧄}$$
+$$\boxed{V = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆}$$
 
 SI units: volts (V), where 1 V = 1 J C$^{-1}$.
 
 ### Derivation from Coulomb's Law
 
-$$V = \frac{W}{q} = \frac{1}{q}\int_{\infty}^{r}\frac⧃LB⧄Qq⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r'^2⧃RB⧄\,dr' = \frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0⧃RB⧄\left[-\frac{1}{r'}\right]_{\infty}^{r} = \frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r⧃RB⧄$$
+$$V = \frac{W}{q} = \frac{1}{q}\int_{\infty}^{r}\frac◆LB◆Qq◆RB◆◆LB◆4\pi\varepsilon_0 r'^2◆RB◆\,dr' = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\left[-\frac{1}{r'}\right]_{\infty}^{r} = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆$$
 
 $\square$
 
@@ -121,11 +121,11 @@ The minus sign means the field points in the direction of decreasing potential.
 
 **Verification for a point charge.** $V = Q/(4\pi\varepsilon_0 r)$.
 
-$-\frac{dV}{dr} = -\frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0⧃RB⧄\left(-\frac{1}{r^2}\right) = \frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r^2⧃RB⧄ = E\quad\checkmark$
+$-\frac{dV}{dr} = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\left(-\frac{1}{r^2}\right) = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆ = E\quad\checkmark$
 
 ### Electric Potential Energy
 
-$$\boxed{U = \frac⧃LB⧄q_1 q_2⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r⧃RB⧄}$$
+$$\boxed{U = \frac◆LB◆q_1 q_2◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆}$$
 
 This is the work required to bring two charges from infinite separation to distance $r$.
 
@@ -196,7 +196,7 @@ where $d$ is the vertical displacement. This is often quicker than the kinematic
 An electron enters a uniform field of $E = 5000$ V m$^{-1}$ between plates of length 5.0 cm with speed
 $3.0 \times 10^7$ m s$^{-1}$. Calculate the vertical deflection and deflection angle.
 
-**Answer.** $a = \frac{eE}{m_e} = \frac⧃LB⧄1.60 \times 10^{-19} \times 5000⧃RB⧄⧃LB⧄9.11 \times 10^{-31}⧃RB⧄ = 8.78 \times 10^{14}$ m s$^{-2}$.
+**Answer.** $a = \frac{eE}{m_e} = \frac◆LB◆1.60 \times 10^{-19} \times 5000◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = 8.78 \times 10^{14}$ m s$^{-2}$.
 
 $t = L/v = 0.050 / (3.0 \times 10^7) = 1.67 \times 10^{-9}$ s.
 
@@ -227,15 +227,15 @@ From energy conservation:
 
 $$\frac{1}{2}m_e v^2 = eV_{\mathrm{acc}}$$
 
-$$\boxed{v = \sqrt⧃LB⧄\frac{2eV_{\mathrm{acc}}}{m_e}⧃RB⧄}$$
+$$\boxed{v = \sqrt◆LB◆\frac{2eV_{\mathrm{acc}}}{m_e}◆RB◆}$$
 
-For $V_{\mathrm{acc}} = 2000$ V: $v = \sqrt⧃LB⧄2 \times 1.60 \times 10^{-19} \times 2000 / 9.11 \times 10^{-31}⧃RB⧄ = 2.65 \times 10^7$ m s$^{-1}$.
+For $V_{\mathrm{acc}} = 2000$ V: $v = \sqrt◆LB◆2 \times 1.60 \times 10^{-19} \times 2000 / 9.11 \times 10^{-31}◆RB◆ = 2.65 \times 10^7$ m s$^{-1}$.
 
 ### Sensitivity of a CRT
 
 The deflection sensitivity $S$ is the deflection per unit deflection voltage:
 
-$$S = \frac{y}{V_d} = \frac{eL^2}{2m_e v^2 d} = \frac⧃LB⧄L^2⧃RB⧄⧃LB⧄4V_{\mathrm{acc}}\,d⧃RB⧄$$
+$$S = \frac{y}{V_d} = \frac{eL^2}{2m_e v^2 d} = \frac◆LB◆L^2◆RB◆◆LB◆4V_{\mathrm{acc}}\,d◆RB◆$$
 
 where $L$ is the plate length and $d$ is the plate separation. Higher sensitivity requires longer
 plates, closer spacing, and lower acceleration voltage.
@@ -253,13 +253,13 @@ deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{ac
 A ring of radius $a$ carrying total charge $Q$. The field at distance $x$ from the centre along the
 axis:
 
-$$\boxed{E = \frac⧃LB⧄Qx⧃RB⧄⧃LB⧄4\pi\varepsilon_0(x^2 + a^2)^{3/2}⧃RB⧄}$$
+$$\boxed{E = \frac◆LB◆Qx◆RB◆◆LB◆4\pi\varepsilon_0(x^2 + a^2)^{3/2}◆RB◆}$$
 
 **Proof.** By symmetry, the transverse components cancel. Each element $dq$ contributes
 $dE = dq/(4\pi\varepsilon_0(x^2 + a^2))$. The axial component is $dE_x = dE \cdot x/\sqrt{x^2 + a^2}$.
 Integrating over the ring:
 
-$$E_x = \frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0⧃RB⧄\cdot\frac{x}{(x^2 + a^2)^{3/2}}$$
+$$E_x = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\cdot\frac{x}{(x^2 + a^2)^{3/2}}$$
 
 $\square$
 
@@ -270,7 +270,7 @@ $\square$
 
 For a line of charge with linear charge density $\lambda$ (C m$^{-1}$):
 
-$$\boxed{E = \frac⧃LB⧄\lambda⧃RB⧄⧃LB⧄2\pi\varepsilon_0 r⧃RB⧄}$$
+$$\boxed{E = \frac◆LB◆\lambda◆RB◆◆LB◆2\pi\varepsilon_0 r◆RB◆}$$
 
 where $r$ is the perpendicular distance from the line. Note: the field falls off as $1/r$, not $1/r^2$,
 because a line charge is an extended source in one dimension.
@@ -299,7 +299,7 @@ size $e$.
 
 For a parallel-plate capacitor with plate area $A$ and separation $d$:
 
-$$C = \frac⧃LB⧄\varepsilon_0 A⧃RB⧄⧃LB⧄d⧃RB⧄$$
+$$C = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d◆RB◆$$
 
 The energy stored when the capacitor carries charge $Q$ at potential difference $V$:
 
@@ -323,7 +323,7 @@ $$u = \frac{1}{2}\varepsilon_0 E^2$$
 Two point charges, $q_1 = +3.0\,\mu$C and $q_2 = -5.0\,\mu$C, are separated by 0.20 m. Calculate the
 force between them.
 
-**Answer.** $F = \frac⧃LB⧄k|q_1||q_2|⧃RB⧄⧃LB⧄r^2⧃RB⧄ = \frac⧃LB⧄8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}⧃RB⧄⧃LB⧄0.040⧃RB⧄ = 3.37$ N (attractive).
+**Answer.** $F = \frac◆LB◆k|q_1||q_2|◆RB◆◆LB◆r^2◆RB◆ = \frac◆LB◆8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}◆RB◆◆LB◆0.040◆RB◆ = 3.37$ N (attractive).
 
 </details>
 
@@ -331,7 +331,7 @@ force between them.
 <summary>Problem 2</summary>
 Calculate the electric field strength at 0.10 m from a point charge of $+8.0\,\mu$C.
 
-**Answer.** $E = \frac{kQ}{r^2} = \frac⧃LB⧄8.99 \times 10^9 \times 8.0 \times 10^{-6}⧃RB⧄⧃LB⧄0.010⧃RB⧄ = 7.19 \times 10^6$ N C$^{-1}$.
+**Answer.** $E = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 8.0 \times 10^{-6}◆RB◆◆LB◆0.010◆RB◆ = 7.19 \times 10^6$ N C$^{-1}$.
 
 </details>
 
@@ -350,7 +350,7 @@ $F = qE = 1.60 \times 10^{-19} \times 2.5 \times 10^4 = 4.0 \times 10^{-15}$ N.
 Calculate the electric potential at 5.0 cm from a $+2.0\,\mu$C point charge. A second charge of
 $-1.0\,\mu$C is placed at this point. Calculate the potential energy of the system.
 
-**Answer.** $V = \frac{kQ}{r} = \frac⧃LB⧄8.99 \times 10^9 \times 2.0 \times 10^{-6}⧃RB⧄⧃LB⧄0.050⧃RB⧄ = 3.60 \times 10^5$ V.
+**Answer.** $V = \frac{kQ}{r} = \frac◆LB◆8.99 \times 10^9 \times 2.0 \times 10^{-6}◆RB◆◆LB◆0.050◆RB◆ = 3.60 \times 10^5$ V.
 
 $U = q_2 V = (-1.0 \times 10^{-6})(3.60 \times 10^5) = -0.360$ J.
 
@@ -361,7 +361,7 @@ $U = q_2 V = (-1.0 \times 10^{-6})(3.60 \times 10^5) = -0.360$ J.
 Starting from $E = -dV/dr$, derive the field of a point charge from its potential.
 
 **Answer.** $V = Q/(4\pi\varepsilon_0 r)$.
-$E = -\frac{dV}{dr} = -\frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0⧃RB⧄\cdot\frac{d}{dr}(r^{-1}) = -\frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0⧃RB⧄(-r^{-2}) = \frac⧃LB⧄Q⧃RB⧄⧃LB⧄4\pi\varepsilon_0 r^2⧃RB⧄$. $\square$
+$E = -\frac{dV}{dr} = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\cdot\frac{d}{dr}(r^{-1}) = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆(-r^{-2}) = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆$. $\square$
 
 </details>
 
@@ -371,7 +371,7 @@ An electron is accelerated through 3000 V in a CRT. Calculate its final speed an
 
 **Answer.** $E_k = eV = 1.60 \times 10^{-19} \times 3000 = 4.80 \times 10^{-16}$ J.
 
-$v = \sqrt{2E_k/m_e} = \sqrt⧃LB⧄2 \times 4.80 \times 10^{-16}/9.11 \times 10^{-31}⧃RB⧄ = 3.25 \times 10^7$ m s$^{-1}$.
+$v = \sqrt{2E_k/m_e} = \sqrt◆LB◆2 \times 4.80 \times 10^{-16}/9.11 \times 10^{-31}◆RB◆ = 3.25 \times 10^7$ m s$^{-1}$.
 
 </details>
 

@@ -185,13 +185,13 @@ Conditions: Acidified potassium dichromate(VI), reflux.
 
 $$\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$
 
-$$\ln\frac⧃LB⧄1.6 \times 10^{-4}⧃RB⧄⧃LB⧄4.0 \times 10^{-5}⧃RB⧄ = \frac{E_a}{8.31}\left(\frac{1}{298} - \frac{1}{308}\right)$$
+$$\ln\frac◆LB◆1.6 \times 10^{-4}◆RB◆◆LB◆4.0 \times 10^{-5}◆RB◆ = \frac{E_a}{8.31}\left(\frac{1}{298} - \frac{1}{308}\right)$$
 
 $$\ln(4.0) = \frac{E_a}{8.31} \times 1.096 \times 10^{-4}$$
 
-$$1.386 = \frac⧃LB⧄E_a \times 1.096 \times 10^{-4}⧃RB⧄⧃LB⧄8.31⧃RB⧄$$
+$$1.386 = \frac◆LB◆E_a \times 1.096 \times 10^{-4}◆RB◆◆LB◆8.31◆RB◆$$
 
-$$E_a = \frac⧃LB⧄1.386 \times 8.31⧃RB⧄⧃LB⧄1.096 \times 10^{-4}⧃RB⧄ = \frac⧃LB⧄11.52⧃RB⧄⧃LB⧄1.096 \times 10^{-4}⧃RB⧄ = 105100\,\text{J mol}^{-1} = 105\,\text{kJ mol}^{-1}$$
+$$E_a = \frac◆LB◆1.386 \times 8.31◆RB◆◆LB◆1.096 \times 10^{-4}◆RB◆ = \frac◆LB◆11.52◆RB◆◆LB◆1.096 \times 10^{-4}◆RB◆ = 105100\,\text{J mol}^{-1} = 105\,\text{kJ mol}^{-1}$$
 
 ---
 ### IT-2: Halogenoalkane Reactivity and Leaving Group Ability (with Electrochemistry)

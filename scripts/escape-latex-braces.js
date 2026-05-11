@@ -16,8 +16,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const LBRACE = '\u29C3LB\u29C4';  // ⦃LB⦄
-const RBRACE = '\u29C3RB\u29C4';  // ⦃RB⦄
+const LBRACE = '◆LB◆';
+const RBRACE = '◆RB◆';
 
 const TOP_LEVEL_CMDS = new Set([
   'dfrac', 'tfrac', 'cfrac', 'frac',

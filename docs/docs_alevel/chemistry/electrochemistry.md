@@ -190,7 +190,7 @@ $$
 $E^\circ_\mathrm{cell} = +1.10\,\mathrm{V}$ (from above). $n = 2$.
 
 $$
-Q = \frac⧃LB⧄[\mathrm{Zn}^{2+}]⧃RB⧄⧃LB⧄[\mathrm{Cu}^{2+}]⧃RB⧄ = \frac{0.010}{2.0} = 0.005
+Q = \frac◆LB◆[\mathrm{Zn}^{2+}]◆RB◆◆LB◆[\mathrm{Cu}^{2+}]◆RB◆ = \frac{0.010}{2.0} = 0.005
 $$
 
 $$
@@ -204,7 +204,7 @@ The non-standard cell EMF is higher than the standard value because the product 
 A concentration cell consists of two half-cells with the same redox couple but different concentrations. The cell EMF arises purely from the concentration difference:
 
 $$
-E_\mathrm{cell} = -\frac{0.0592}{n}\log_{10}\frac⧃LB⧄[\mathrm{M}^{n+}]_\mathrm{dilute}⧃RB⧄⧃LB⧄[\mathrm{M}^{n+}]_\mathrm{concentrated}⧃RB⧄
+E_\mathrm{cell} = -\frac{0.0592}{n}\log_{10}\frac◆LB◆[\mathrm{M}^{n+}]_\mathrm{dilute}◆RB◆◆LB◆[\mathrm{M}^{n+}]_\mathrm{concentrated}◆RB◆
 $$
 
 **Example:** A $\mathrm{Cu}/\mathrm{Cu}^{2+}$ concentration cell with $[\mathrm{Cu}^{2+}]_\mathrm{left} = 0.001\,\mathrm{mol/dm}^3$ and $[\mathrm{Cu}^{2+}]_\mathrm{right} = 1.0\,\mathrm{mol/dm}^3$:
@@ -256,7 +256,7 @@ Overall: $2\mathrm{H}_2 + \mathrm{O}_2 \to 2\mathrm{H}_2\mathrm{O}$
 **Efficiency calculation:** The maximum theoretical efficiency of a fuel cell is:
 
 $$
-\text{Efficiency} = \frac⧃LB⧄\Delta G^\circ⧃RB⧄⧃LB⧄\Delta H^\circ⧃RB⧄ \times 100
+\text{Efficiency} = \frac◆LB◆\Delta G^\circ◆RB◆◆LB◆\Delta H^\circ◆RB◆ \times 100
 $$
 
 For the $\mathrm{H}_2/\mathrm{O}_2$ fuel cell at $298\,\mathrm{K}$:
@@ -344,7 +344,7 @@ $$
 **First Law:** The mass of substance deposited or liberated at an electrode is directly proportional to the quantity of electricity passed.
 
 $$
-m = \frac⧃LB⧄Q \cdot M⧃RB⧄⧃LB⧄n \cdot F⧃RB⧄
+m = \frac◆LB◆Q \cdot M◆RB◆◆LB◆n \cdot F◆RB◆
 $$
 
 **Second Law:** When the same quantity of electricity is passed through different electrolytes, the masses of substances deposited are proportional to their equivalent masses ($M/n$, where $n$ is the number of electrons transferred per ion).
@@ -382,7 +382,7 @@ $$
 Alternatively, using the formula directly:
 
 $$
-m = \frac⧃LB⧄Q \cdot M⧃RB⧄⧃LB⧄n \cdot F⧃RB⧄ = \frac⧃LB⧄4500 \times 63.5⧃RB⧄⧃LB⧄2 \times 96485⧃RB⧄ = \frac{285750}{192970} = 1.48\,\mathrm{g}
+m = \frac◆LB◆Q \cdot M◆RB◆◆LB◆n \cdot F◆RB◆ = \frac◆LB◆4500 \times 63.5◆RB◆◆LB◆2 \times 96485◆RB◆ = \frac{285750}{192970} = 1.48\,\mathrm{g}
 $$
 
 ## Corrosion and Its Prevention
@@ -619,7 +619,7 @@ $n(\mathrm{O}_2) = 0.01866 / 4 = 0.00467\,\mathrm{mol}$
 Using $pV = nRT$:
 
 $$
-V = \frac{nRT}{p} = \frac⧃LB⧄0.00467 \times 8.314 \times 298⧃RB⧄⧃LB⧄100 \times 10^3⧃RB⧄ = \frac{11.57}{100000} = 1.16 \times 10^{-4}\,\mathrm{m}^3 = 0.116\,\mathrm{dm}^3 = 116\,\mathrm{cm}^3
+V = \frac{nRT}{p} = \frac◆LB◆0.00467 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{11.57}{100000} = 1.16 \times 10^{-4}\,\mathrm{m}^3 = 0.116\,\mathrm{dm}^3 = 116\,\mathrm{cm}^3
 $$
 
 </details>
@@ -650,7 +650,7 @@ $$
 Using the Nernst equation:
 
 $$
-E_\mathrm{cell} = E^\circ_\mathrm{cell} - \frac{RT}{nF}\ln Q = 0 - \frac{RT}{2F}\ln\frac⧃LB⧄[\mathrm{Cu}^{2+}]_\mathrm{dilute}⧃RB⧄⧃LB⧄[\mathrm{Cu}^{2+}]_\mathrm{concentrated}⧃RB⧄
+E_\mathrm{cell} = E^\circ_\mathrm{cell} - \frac{RT}{nF}\ln Q = 0 - \frac{RT}{2F}\ln\frac◆LB◆[\mathrm{Cu}^{2+}]_\mathrm{dilute}◆RB◆◆LB◆[\mathrm{Cu}^{2+}]_\mathrm{concentrated}◆RB◆
 $$
 
 $$
@@ -726,9 +726,9 @@ Where $Q$ is the reaction quotient.
 
 $$E^\circ_\mathrm{cell} = 0.34 - (-0.76) = 1.10\,\mathrm{V}$$
 
-$$Q = \frac⧃LB⧄[\mathrm{Cu}^{2+}]⧃RB⧄⧃LB⧄[\mathrm{Zn}^{+}]⧃RB⧄ = \frac{0.001}{0.010} = 0.10$$
+$$Q = \frac◆LB◆[\mathrm{Cu}^{2+}]◆RB◆◆LB◆[\mathrm{Zn}^{+}]◆RB◆ = \frac{0.001}{0.010} = 0.10$$
 
-$$E = 1.10 - \frac⧃LB⧄8.314 \times 298⧃RB⧄⧃LB⧄2 \times 96485⧃RB⧄\ln(0.10)$$
+$$E = 1.10 - \frac◆LB◆8.314 \times 298◆RB◆◆LB◆2 \times 96485◆RB◆\ln(0.10)$$
 
 $$= 1.10 - \frac{2478}{192970}\ln(0.10)$$
 

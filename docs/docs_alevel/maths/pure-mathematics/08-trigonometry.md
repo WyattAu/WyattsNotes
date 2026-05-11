@@ -39,7 +39,7 @@ $$\cos\theta = \mathrm{the } x\mathrm{-coordinate of the point on the unit circl
 
 $$\sin\theta = \mathrm{the } y\mathrm{-coordinate of the point on the unit circle at angle } \theta$$
 
-$$\tan\theta = \frac⧃LB⧄\sin\theta⧃RB⧄⧃LB⧄\cos\theta⧃RB⧄ \quad (\cos\theta \neq 0)$$
+$$\tan\theta = \frac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆ \quad (\cos\theta \neq 0)$$
 
 _Intuition._ These definitions extend the right-triangle definitions (SOH CAH TOA) to all angles,
 not just those between 0° and 90°. The unit circle makes clear why $\sin$ and $\cos$ are periodic
@@ -50,7 +50,7 @@ with period $2\pi$.
 **Definition.** One _radian_ is the angle subtended at the centre of a circle by an arc equal in
 length to the radius.
 
-$$\theta\mathrm{ (radians)} = \frac⧃LB⧄\mathrm{arc length}⧃RB⧄⧃LB⧄r⧃RB⧄$$
+$$\theta\mathrm{ (radians)} = \frac◆LB◆\mathrm{arc length}◆RB◆◆LB◆r◆RB◆$$
 
 The full circle: $2\pi$ radians $= 360^\circ$, so $\pi$ radians $= 180^\circ$.
 
@@ -62,8 +62,8 @@ $$\mathrm{Arc length } s = r\theta$$
 $$\mathrm{Sector area } A = \frac{1}{2}r^2\theta$$
 
 _Proof._ By definition, $\theta = s/r$, so $s = r\theta$. The sector is a fraction
-$\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2\pi⧃RB⧄$ of the full circle (area $\pi r^2$), so
-$A = \frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2\pi⧃RB⧄ \cdot \pi r^2 = \frac{1}{2}r^2\theta$. $\blacksquare$
+$\frac◆LB◆\theta◆RB◆◆LB◆2\pi◆RB◆$ of the full circle (area $\pi r^2$), so
+$A = \frac◆LB◆\theta◆RB◆◆LB◆2\pi◆RB◆ \cdot \pi r^2 = \frac{1}{2}r^2\theta$. $\blacksquare$
 
 <hr />
 
@@ -126,20 +126,20 @@ $$\cos A \cos B - \sin A \sin B = \cos(A + B) \quad \blacksquare$$
 
 **Theorem.**
 
-$$\tan(A + B) = \frac⧃LB⧄\tan A + \tan B⧃RB⧄⧃LB⧄1 - \tan A \tan B⧃RB⧄$$
+$$\tan(A + B) = \frac◆LB◆\tan A + \tan B◆RB◆◆LB◆1 - \tan A \tan B◆RB◆$$
 
 _Proof._
 
 $$
 \begin{aligned}
-\tan(A + B) &= \frac⧃LB⧄\sin(A + B)⧃RB⧄⧃LB⧄\cos(A + B)⧃RB⧄ \\
-&= \frac⧃LB⧄\sin A \cos B + \cos A \sin B⧃RB⧄⧃LB⧄\cos A \cos B - \sin A \sin B⧃RB⧄
+\tan(A + B) &= \frac◆LB◆\sin(A + B)◆RB◆◆LB◆\cos(A + B)◆RB◆ \\
+&= \frac◆LB◆\sin A \cos B + \cos A \sin B◆RB◆◆LB◆\cos A \cos B - \sin A \sin B◆RB◆
 \end{aligned}
 $$
 
 Divide numerator and denominator by $\cos A \cos B$:
 
-$$= \frac⧃LB⧄\tan A + \tan B⧃RB⧄⧃LB⧄1 - \tan A \tan B⧃RB⧄ \quad \blacksquare$$
+$$= \frac◆LB◆\tan A + \tan B◆RB◆◆LB◆1 - \tan A \tan B◆RB◆ \quad \blacksquare$$
 
 ### 3.4 Difference Formulas
 
@@ -149,7 +149,7 @@ $$
 \begin{aligned}
 \sin(A - B) &= \sin A \cos B - \cos A \sin B \\
 \cos(A - B) &= \cos A \cos B + \sin A \sin B \\
-\tan(A - B) &= \frac⧃LB⧄\tan A - \tan B⧃RB⧄⧃LB⧄1 + \tan A \tan B⧃RB⧄
+\tan(A - B) &= \frac◆LB◆\tan A - \tan B◆RB◆◆LB◆1 + \tan A \tan B◆RB◆
 \end{aligned}
 $$
 
@@ -166,7 +166,7 @@ $$
 \begin{aligned}
 \sin 2A &= 2\sin A \cos A \\
 \cos 2A &= \cos^2 A - \sin^2 A \\
-\tan 2A &= \frac⧃LB⧄2\tan A⧃RB⧄⧃LB⧄1 - \tan^2 A⧃RB⧄
+\tan 2A &= \frac◆LB◆2\tan A◆RB◆◆LB◆1 - \tan^2 A◆RB◆
 \end{aligned}
 $$
 
@@ -220,11 +220,11 @@ $$2\cos^2\theta - 3\cos\theta + 1 = 0$$
 
 $$(2\cos\theta - 1)(\cos\theta - 1) = 0$$
 
-$\cos\theta = \frac{1}{2} \implies \theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ or $\frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄$.
+$\cos\theta = \frac{1}{2} \implies \theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ or $\frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$.
 
 $\cos\theta = 1 \implies \theta = 0$.
 
-Solutions: $\theta = 0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄, \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄$.
+Solutions: $\theta = 0, \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆, \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$.
 
 </details>
 
@@ -236,9 +236,9 @@ Solutions: $\theta = 0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄, \frac⧃LB⧄
 
 $$
 \begin{aligned}
-\sin\theta &\approx \theta - \frac⧃LB⧄\theta^3⧃RB⧄⧃LB⧄6⧃RB⧄ \\
-\cos\theta &\approx 1 - \frac⧃LB⧄\theta^2⧃RB⧄⧃LB⧄2⧃RB⧄ \\
-\tan\theta &\approx \theta + \frac⧃LB⧄\theta^3⧃RB⧄⧃LB⧄3⧃RB⧄
+\sin\theta &\approx \theta - \frac◆LB◆\theta^3◆RB◆◆LB◆6◆RB◆ \\
+\cos\theta &\approx 1 - \frac◆LB◆\theta^2◆RB◆◆LB◆2◆RB◆ \\
+\tan\theta &\approx \theta + \frac◆LB◆\theta^3◆RB◆◆LB◆3◆RB◆
 \end{aligned}
 $$
 
@@ -262,68 +262,68 @@ degrees. This is a very common exam error.
 
 **Theorem.** For all $\theta$:
 
-$$\sin\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = \pm\sqrt⧃LB⧄\frac{1 - \cos\theta}{2}⧃RB⧄$$
+$$\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac{1 - \cos\theta}{2}◆RB◆$$
 
-$$\cos\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = \pm\sqrt⧃LB⧄\frac{1 + \cos\theta}{2}⧃RB⧄$$
+$$\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac{1 + \cos\theta}{2}◆RB◆$$
 
-$$\tan\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄\sin\theta⧃RB⧄⧃LB⧄1 + \cos\theta⧃RB⧄ = \frac⧃LB⧄1 - \cos\theta⧃RB⧄⧃LB⧄\sin\theta⧃RB⧄$$
+$$\tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\sin\theta◆RB◆◆LB◆1 + \cos\theta◆RB◆ = \frac◆LB◆1 - \cos\theta◆RB◆◆LB◆\sin\theta◆RB◆$$
 
 ### 7.1 Derivation
 
-Starting from $\cos 2A = 1 - 2\sin^2 A$ and substituting $A = \frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄$:
+Starting from $\cos 2A = 1 - 2\sin^2 A$ and substituting $A = \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$:
 
-$$\cos\theta = 1 - 2\sin^2\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$\cos\theta = 1 - 2\sin^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$$
 
-$$2\sin^2\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = 1 - \cos\theta$$
+$$2\sin^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = 1 - \cos\theta$$
 
-$$\sin\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = \pm\sqrt⧃LB⧄\frac{1 - \cos\theta}{2}⧃RB⧄ \quad \blacksquare$$
+$$\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac{1 - \cos\theta}{2}◆RB◆ \quad \blacksquare$$
 
 Similarly, from $\cos 2A = 2\cos^2 A - 1$:
 
-$$\cos\theta = 2\cos^2\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ - 1$$
+$$\cos\theta = 2\cos^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ - 1$$
 
-$$2\cos^2\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = 1 + \cos\theta$$
+$$2\cos^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = 1 + \cos\theta$$
 
-$$\cos\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = \pm\sqrt⧃LB⧄\frac{1 + \cos\theta}{2}⧃RB⧄ \quad \blacksquare$$
+$$\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac{1 + \cos\theta}{2}◆RB◆ \quad \blacksquare$$
 
 ### 7.2 Tangent Half-Angle Formulas
 
 The tangent half-angle formulas avoid the ambiguity of the $\pm$ sign:
 
-$$\tan\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄\sin\theta⧃RB⧄⧃LB⧄1 + \cos\theta⧃RB⧄$$
+$$\tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\sin\theta◆RB◆◆LB◆1 + \cos\theta◆RB◆$$
 
 _Proof._ Using the double angle formulas:
 
-$$\frac⧃LB⧄\sin\theta⧃RB⧄⧃LB⧄1 + \cos\theta⧃RB⧄ = \frac⧃LB⧄2\sin\frac{\theta}{2}\cos\frac{\theta}{2}⧃RB⧄⧃LB⧄1 + (2\cos^2\frac{\theta}{2} - 1)⧃RB⧄ = \frac⧃LB⧄2\sin\frac{\theta}{2}\cos\frac{\theta}{2}⧃RB⧄⧃LB⧄2\cos^2\frac{\theta}{2}⧃RB⧄ = \frac⧃LB⧄\sin\frac{\theta}{2}⧃RB⧄⧃LB⧄\cos\frac{\theta}{2}⧃RB⧄ = \tan\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ \quad \blacksquare$$
+$$\frac◆LB◆\sin\theta◆RB◆◆LB◆1 + \cos\theta◆RB◆ = \frac◆LB◆2\sin\frac{\theta}{2}\cos\frac{\theta}{2}◆RB◆◆LB◆1 + (2\cos^2\frac{\theta}{2} - 1)◆RB◆ = \frac◆LB◆2\sin\frac{\theta}{2}\cos\frac{\theta}{2}◆RB◆◆LB◆2\cos^2\frac{\theta}{2}◆RB◆ = \frac◆LB◆\sin\frac{\theta}{2}◆RB◆◆LB◆\cos\frac{\theta}{2}◆RB◆ = \tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \quad \blacksquare$$
 
 Similarly:
 
-$$\tan\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄1 - \cos\theta⧃RB⧄⧃LB⧄\sin\theta⧃RB⧄$$
+$$\tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆1 - \cos\theta◆RB◆◆LB◆\sin\theta◆RB◆$$
 
 _Proof._
-$\frac⧃LB⧄1 - \cos\theta⧃RB⧄⧃LB⧄\sin\theta⧃RB⧄ = \frac⧃LB⧄1 - (1 - 2\sin^2\frac{\theta}{2})⧃RB⧄⧃LB⧄2\sin\frac{\theta}{2}\cos\frac{\theta}{2}⧃RB⧄ = \frac⧃LB⧄2\sin^2\frac{\theta}{2}⧃RB⧄⧃LB⧄2\sin\frac{\theta}{2}\cos\frac{\theta}{2}⧃RB⧄ = \frac⧃LB⧄\sin\frac{\theta}{2}⧃RB⧄⧃LB⧄\cos\frac{\theta}{2}⧃RB⧄ = \tan\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ \quad \blacksquare$
+$\frac◆LB◆1 - \cos\theta◆RB◆◆LB◆\sin\theta◆RB◆ = \frac◆LB◆1 - (1 - 2\sin^2\frac{\theta}{2})◆RB◆◆LB◆2\sin\frac{\theta}{2}\cos\frac{\theta}{2}◆RB◆ = \frac◆LB◆2\sin^2\frac{\theta}{2}◆RB◆◆LB◆2\sin\frac{\theta}{2}\cos\frac{\theta}{2}◆RB◆ = \frac◆LB◆\sin\frac{\theta}{2}◆RB◆◆LB◆\cos\frac{\theta}{2}◆RB◆ = \tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \quad \blacksquare$
 
 ### 7.3 Sign Determination
 
-The $\pm$ in the sine and cosine half-angle formulas depends on the quadrant of $\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄$,
-not the quadrant of $\theta$ itself. Always determine which quadrant $\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄$ lies in
+The $\pm$ in the sine and cosine half-angle formulas depends on the quadrant of $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$,
+not the quadrant of $\theta$ itself. Always determine which quadrant $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ lies in
 before choosing the sign.
 
-| Quadrant of $\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄$                         | $\sin\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄$ | $\cos\frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄$ |
+| Quadrant of $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$                         | $\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ | $\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ |
 | ------------------------------------------------------ | ---------------------- | ---------------------- |
-| I: $0 \lt{} \frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ \lt{} \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$      | $+$                    | $+$                    |
-| II: $\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ \lt{} \frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ \lt{} \pi$   | $+$                    | $-$                    |
-| III: $\pi \lt{} \frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ \lt{} \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄$ | $-$                    | $-$                    |
-| IV: $\frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄ \lt{} \frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ \lt{} 2\pi$ | $-$                    | $+$                    |
+| I: $0 \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$      | $+$                    | $+$                    |
+| II: $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \pi$   | $+$                    | $-$                    |
+| III: $\pi \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$ | $-$                    | $-$                    |
+| IV: $\frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ \lt{} \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt{} 2\pi$ | $-$                    | $+$                    |
 
 <details>
 <summary>Worked example</summary>
-Find the exact value of $\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄8⧃RB⧄$.
+Find the exact value of $\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆$.
 
-Since $0 \lt{} \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄8⧃RB⧄ \lt{} \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$ (first quadrant), $\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄8⧃RB⧄ > 0$, so we
+Since $0 \lt{} \frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ (first quadrant), $\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ > 0$, so we
 take the positive root.
 
-$$\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄8⧃RB⧄ = \sqrt⧃LB⧄\frac{1 - \cos\frac{\pi}{4}}{2}⧃RB⧄ = \sqrt⧃LB⧄\frac{1 - \frac{\sqrt{2}}{2}}{2}⧃RB⧄ = \sqrt⧃LB⧄\frac{2 - \sqrt{2}}{4}⧃RB⧄ = \frac⧃LB⧄\sqrt{2 - \sqrt{2}}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ = \sqrt◆LB◆\frac{1 - \cos\frac{\pi}{4}}{2}◆RB◆ = \sqrt◆LB◆\frac{1 - \frac{\sqrt{2}}{2}}{2}◆RB◆ = \sqrt◆LB◆\frac{2 - \sqrt{2}}{4}◆RB◆ = \frac◆LB◆\sqrt{2 - \sqrt{2}}◆RB◆◆LB◆2◆RB◆$$
 
 </details>
 
@@ -372,8 +372,8 @@ Since $-1 \leq \sin(\theta + \alpha) \leq 1$:
 
 $$-R \leq a\sin\theta + b\cos\theta \leq R$$
 
-- **Maximum** $= R = \sqrt{a^2 + b^2}$, occurring when $\theta + \alpha = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + 2n\pi$.
-- **Minimum** $= -R$, occurring when $\theta + \alpha = \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + 2n\pi$.
+- **Maximum** $= R = \sqrt{a^2 + b^2}$, occurring when $\theta + \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$.
+- **Minimum** $= -R$, occurring when $\theta + \alpha = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$.
 
 <details>
 <summary>Example: Finding maximum and minimum</summary>
@@ -385,13 +385,13 @@ $R = \sqrt{9 + 16} = 5$.
 Here $a = 3$ and $b = -4$. Writing $3\sin\theta - 4\cos\theta = 5\sin(\theta + \alpha)$ where
 $\tan\alpha = \dfrac{-4}{3}$, so $\alpha = -\arctan\dfrac{4}{3}$.
 
-Maximum $= 5$ when $\theta + \alpha = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$:
+Maximum $= 5$ when $\theta + \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$:
 
-$$\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - \alpha = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + \arctan\frac{4}{3} \approx 2.214 \mathrm{ rad}$$
+$$\theta = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + \arctan\frac{4}{3} \approx 2.214 \mathrm{ rad}$$
 
-Minimum $= -5$ when $\theta + \alpha = \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄$:
+Minimum $= -5$ when $\theta + \alpha = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$:
 
-$$\theta = \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - \alpha = \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + \arctan\frac{4}{3} \approx 5.356 \mathrm{ rad}$$
+$$\theta = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ - \alpha = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ + \arctan\frac{4}{3} \approx 5.356 \mathrm{ rad}$$
 
 </details>
 
@@ -404,17 +404,17 @@ standard trigonometric equation.
 <summary>Example: Solving an equation</summary>
 Solve $\sin\theta + \cos\theta = 1$ for $0 \leq \theta \lt{} 2\pi$.
 
-$R = \sqrt{1 + 1} = \sqrt{2}$, $\alpha = \arctan 1 = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$.
+$R = \sqrt{1 + 1} = \sqrt{2}$, $\alpha = \arctan 1 = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
-$$\sqrt{2}\sin\!\left(\theta + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄\right) = 1$$
+$$\sqrt{2}\sin\!\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = 1$$
 
-$$\sin\!\left(\theta + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄\right) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ = \sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$$
+$$\sin\!\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ = \sin\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$$
 
-$$\theta + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄ + 2n\pi \quad \mathrm{or} \quad \theta + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄4⧃RB⧄ + 2n\pi$$
+$$\theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + 2n\pi \quad \mathrm{or} \quad \theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆3\pi◆RB◆◆LB◆4◆RB◆ + 2n\pi$$
 
-$$\theta = 2n\pi \quad \mathrm{or} \quad \theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + 2n\pi$$
+$$\theta = 2n\pi \quad \mathrm{or} \quad \theta = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$$
 
-For $0 \leq \theta \lt{} 2\pi$: $\theta = 0$ or $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$.
+For $0 \leq \theta \lt{} 2\pi$: $\theta = 0$ or $\theta = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 
@@ -433,7 +433,7 @@ the logical error of assuming what you are trying to prove.
 ### 9.2 Strategy 2: Express Everything in Sine and Cosine
 
 Replace $\tan$, $\sec$, $\csc$, $\cot$ with their definitions in terms of $\sin$ and $\cos$:
-$\tan\theta = \frac⧃LB⧄\sin\theta⧃RB⧄⧃LB⧄\cos\theta⧃RB⧄$, $\sec\theta = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\cos\theta⧃RB⧄$, etc.
+$\tan\theta = \frac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆$, $\sec\theta = \frac◆LB◆1◆RB◆◆LB◆\cos\theta◆RB◆$, etc.
 
 ### 9.3 Strategy 3: Use Known Identities
 
@@ -446,14 +446,14 @@ bottom by the conjugate $a \mp b$ to produce a difference of squares.
 
 <details>
 <summary>Example 1: Strategy 2 (express in sin and cos)</summary>
-Prove that $\cot A + \tan A = \dfrac⧃LB⧄2⧃RB⧄⧃LB⧄\sin 2A⧃RB⧄$.
+Prove that $\cot A + \tan A = \dfrac◆LB◆2◆RB◆◆LB◆\sin 2A◆RB◆$.
 
 $$
 \begin{aligned}
-\cot A + \tan A &= \frac⧃LB⧄\cos A⧃RB⧄⧃LB⧄\sin A⧃RB⧄ + \frac⧃LB⧄\sin A⧃RB⧄⧃LB⧄\cos A⧃RB⧄ \\
-&= \frac⧃LB⧄\cos^2 A + \sin^2 A⧃RB⧄⧃LB⧄\sin A \cos A⧃RB⧄ \\
-&= \frac⧃LB⧄1⧃RB⧄⧃LB⧄\sin A \cos A⧃RB⧄ \\
-&= \frac⧃LB⧄2⧃RB⧄⧃LB⧄2\sin A \cos A⧃RB⧄ = \frac⧃LB⧄2⧃RB⧄⧃LB⧄\sin 2A⧃RB⧄ \quad \blacksquare
+\cot A + \tan A &= \frac◆LB◆\cos A◆RB◆◆LB◆\sin A◆RB◆ + \frac◆LB◆\sin A◆RB◆◆LB◆\cos A◆RB◆ \\
+&= \frac◆LB◆\cos^2 A + \sin^2 A◆RB◆◆LB◆\sin A \cos A◆RB◆ \\
+&= \frac◆LB◆1◆RB◆◆LB◆\sin A \cos A◆RB◆ \\
+&= \frac◆LB◆2◆RB◆◆LB◆2\sin A \cos A◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆\sin 2A◆RB◆ \quad \blacksquare
 \end{aligned}
 $$
 
@@ -478,16 +478,16 @@ $$
 
 <details>
 <summary>Example 3: Strategy 4 (multiply by conjugate)</summary>
-Prove that $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\sec A + \tan A⧃RB⧄ = \sec A - \tan A$.
+Prove that $\dfrac◆LB◆1◆RB◆◆LB◆\sec A + \tan A◆RB◆ = \sec A - \tan A$.
 
 Multiply numerator and denominator by $\sec A - \tan A$:
 
 $$
 \begin{aligned}
-\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sec A + \tan A⧃RB⧄ \cdot \frac⧃LB⧄\sec A - \tan A⧃RB⧄⧃LB⧄\sec A - \tan A⧃RB⧄
-&= \frac⧃LB⧄\sec A - \tan A⧃RB⧄⧃LB⧄\sec^2 A - \tan^2 A⧃RB⧄ \\
-&= \frac⧃LB⧄\sec A - \tan A⧃RB⧄⧃LB⧄1 + \tan^2 A - \tan^2 A⧃RB⧄ \\
-&= \frac⧃LB⧄\sec A - \tan A⧃RB⧄⧃LB⧄1⧃RB⧄ \\
+\frac◆LB◆1◆RB◆◆LB◆\sec A + \tan A◆RB◆ \cdot \frac◆LB◆\sec A - \tan A◆RB◆◆LB◆\sec A - \tan A◆RB◆
+&= \frac◆LB◆\sec A - \tan A◆RB◆◆LB◆\sec^2 A - \tan^2 A◆RB◆ \\
+&= \frac◆LB◆\sec A - \tan A◆RB◆◆LB◆1 + \tan^2 A - \tan^2 A◆RB◆ \\
+&= \frac◆LB◆\sec A - \tan A◆RB◆◆LB◆1◆RB◆ \\
 &= \sec A - \tan A \quad \blacksquare
 \end{aligned}
 $$
@@ -498,17 +498,17 @@ where we used $\sec^2 A = 1 + \tan^2 A$ so that $\sec^2 A - \tan^2 A = 1$.
 
 <details>
 <summary>Example 4: Strategy 1 (work with one side)</summary>
-Prove that $\dfrac⧃LB⧄\cos 2A⧃RB⧄⧃LB⧄1 + \sin 2A⧃RB⧄ = \dfrac⧃LB⧄\cos A - \sin A⧃RB⧄⧃LB⧄\cos A + \sin A⧃RB⧄$.
+Prove that $\dfrac◆LB◆\cos 2A◆RB◆◆LB◆1 + \sin 2A◆RB◆ = \dfrac◆LB◆\cos A - \sin A◆RB◆◆LB◆\cos A + \sin A◆RB◆$.
 
 Working from the LHS:
 
 $$
 \begin{aligned}
-\frac⧃LB⧄\cos 2A⧃RB⧄⧃LB⧄1 + \sin 2A⧃RB⧄
-&= \frac⧃LB⧄\cos^2 A - \sin^2 A⧃RB⧄⧃LB⧄1 + 2\sin A \cos A⧃RB⧄ \\
-&= \frac⧃LB⧄(\cos A - \sin A)(\cos A + \sin A)⧃RB⧄⧃LB⧄\cos^2 A + 2\sin A\cos A + \sin^2 A⧃RB⧄ \\
-&= \frac⧃LB⧄(\cos A - \sin A)(\cos A + \sin A)⧃RB⧄⧃LB⧄(\cos A + \sin A)^2⧃RB⧄ \\
-&= \frac⧃LB⧄\cos A - \sin A⧃RB⧄⧃LB⧄\cos A + \sin A⧃RB⧄ \quad \blacksquare
+\frac◆LB◆\cos 2A◆RB◆◆LB◆1 + \sin 2A◆RB◆
+&= \frac◆LB◆\cos^2 A - \sin^2 A◆RB◆◆LB◆1 + 2\sin A \cos A◆RB◆ \\
+&= \frac◆LB◆(\cos A - \sin A)(\cos A + \sin A)◆RB◆◆LB◆\cos^2 A + 2\sin A\cos A + \sin^2 A◆RB◆ \\
+&= \frac◆LB◆(\cos A - \sin A)(\cos A + \sin A)◆RB◆◆LB◆(\cos A + \sin A)^2◆RB◆ \\
+&= \frac◆LB◆\cos A - \sin A◆RB◆◆LB◆\cos A + \sin A◆RB◆ \quad \blacksquare
 \end{aligned}
 $$
 
@@ -524,25 +524,25 @@ $$
 | -------- | ------ | --------- | ----------------------------- | ------------ |
 | $\sin x$ | $2\pi$ | $1$       | $\mathbb{R}$                  | $[-1, 1]$    |
 | $\cos x$ | $2\pi$ | $1$       | $\mathbb{R}$                  | $[-1, 1]$    |
-| $\tan x$ | $\pi$  | undefined | $x \neq \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + n\pi$ | $\mathbb{R}$ |
+| $\tan x$ | $\pi$  | undefined | $x \neq \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + n\pi$ | $\mathbb{R}$ |
 
 **Key values of $\sin$ and $\cos$:**
 
-| Angle  | $0$ | $\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄$      | $\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$      | $\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$      | $\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$ | $\pi$ | $\frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄$ | $2\pi$ |
+| Angle  | $0$ | $\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$      | $\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$      | $\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$      | $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ | $\pi$ | $\frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$ | $2\pi$ |
 | ------ | --- | -------------------- | -------------------- | -------------------- | --------------- | ----- | ---------------- | ------ |
-| $\sin$ | $0$ | $\frac{1}{2}$        | $\frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄$ | $\frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$ | $1$             | $0$   | $-1$             | $0$    |
-| $\cos$ | $1$ | $\frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$ | $\frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄$ | $\frac{1}{2}$        | $0$             | $-1$  | $0$              | $1$    |
+| $\sin$ | $0$ | $\frac{1}{2}$        | $\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$ | $\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ | $1$             | $0$   | $-1$             | $0$    |
+| $\cos$ | $1$ | $\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ | $\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$ | $\frac{1}{2}$        | $0$             | $-1$  | $0$              | $1$    |
 
 ### 10.2 Transformations
 
 For the general form $y = A\sin(Bx + C) + D$ (and similarly for $\cos$):
 
 - $|A|$ is the **amplitude** (vertical stretch from the midline)
-- The **period** is $\dfrac⧃LB⧄2\pi⧃RB⧄⧃LB⧄|B|⧃RB⧄$
+- The **period** is $\dfrac◆LB◆2\pi◆RB◆◆LB◆|B|◆RB◆$
 - The **phase shift** is $-\dfrac{C}{B}$ (horizontal shift)
 - $D$ is the **vertical shift** (midline is $y = D$)
 
-For $\tan$, the period is $\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄|B|⧃RB⧄$ and amplitude is not defined.
+For $\tan$, the period is $\dfrac◆LB◆\pi◆RB◆◆LB◆|B|◆RB◆$ and amplitude is not defined.
 
 <DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]}
 width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
@@ -551,29 +551,29 @@ $y = A\sin(Bx + C) + D$.
 
 <details>
 <summary>Worked example</summary>
-Describe the key features of $y = 2\sin\!\left(2x - \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄\right)$ for $0 \leq x \leq 2\pi$.
+Describe the key features of $y = 2\sin\!\left(2x - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)$ for $0 \leq x \leq 2\pi$.
 
 **Amplitude:** $|A| = 2$, so the range is $[-2, 2]$.
 
-**Period:** $\dfrac⧃LB⧄2\pi⧃RB⧄⧃LB⧄|B|⧃RB⧄ = \dfrac⧃LB⧄2\pi⧃RB⧄⧃LB⧄2⧃RB⧄ = \pi$.
+**Period:** $\dfrac◆LB◆2\pi◆RB◆◆LB◆|B|◆RB◆ = \dfrac◆LB◆2\pi◆RB◆◆LB◆2◆RB◆ = \pi$.
 
-**Phase shift:** $-\dfrac{C}{B} = -\dfrac⧃LB⧄-\pi/3⧃RB⧄⧃LB⧄2⧃RB⧄ = \dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄$ (shift right by
-$\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄$).
+**Phase shift:** $-\dfrac{C}{B} = -\dfrac◆LB◆-\pi/3◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ (shift right by
+$\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$).
 
-**Key points.** The first cycle begins at $x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄$ (where the curve crosses the midline
+**Key points.** The first cycle begins at $x = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$ (where the curve crosses the midline
 upward). Subsequent key points within $[0, 2\pi]$:
 
-- Maximum at $x = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄12⧃RB⧄$ (value $2$)
-- Midline crossing (down) at $x = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄3⧃RB⧄$
-- Minimum at $x = \frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄12⧃RB⧄$ (value $-2$)
-- Midline crossing (up) at $x = \frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄6⧃RB⧄$
+- Maximum at $x = \frac◆LB◆5\pi◆RB◆◆LB◆12◆RB◆$ (value $2$)
+- Midline crossing (down) at $x = \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆$
+- Minimum at $x = \frac◆LB◆11\pi◆RB◆◆LB◆12◆RB◆$ (value $-2$)
+- Midline crossing (up) at $x = \frac◆LB◆7\pi◆RB◆◆LB◆6◆RB◆$
 
 Since the period is $\pi$, the second cycle repeats with all $x$-values shifted by $\pi$:
 
-- Maximum at $x = \frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄12⧃RB⧄$ (value $2$)
-- Minimum at $x = \frac⧃LB⧄23\pi⧃RB⧄⧃LB⧄12⧃RB⧄$ (value $-2$)
+- Maximum at $x = \frac◆LB◆17\pi◆RB◆◆LB◆12◆RB◆$ (value $2$)
+- Minimum at $x = \frac◆LB◆23\pi◆RB◆◆LB◆12◆RB◆$ (value $-2$)
 
-**$y$-intercept:** $y = 2\sin\!\left(-\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄\right) = -\sqrt{3} \approx -1.73$.
+**$y$-intercept:** $y = 2\sin\!\left(-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) = -\sqrt{3} \approx -1.73$.
 
 </details>
 
@@ -581,15 +581,15 @@ Since the period is $\pi$, the second cycle repeats with all $x$-values shifted 
 
 ## 11. Problem Set
 
-**Problem 1.** Prove that $\frac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄1 + \cos 2\theta⧃RB⧄ = \tan\theta$.
+**Problem 1.** Prove that $\frac◆LB◆\sin 2\theta◆RB◆◆LB◆1 + \cos 2\theta◆RB◆ = \tan\theta$.
 
 <details>
 <summary>Solution</summary>
 $$
 \begin{aligned}
-\frac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄1 + \cos 2\theta⧃RB⧄ &= \frac⧃LB⧄2\sin\theta\cos\theta⧃RB⧄⧃LB⧄1 + (2\cos^2\theta - 1)⧃RB⧄ \\
-&= \frac⧃LB⧄2\sin\theta\cos\theta⧃RB⧄⧃LB⧄2\cos^2\theta⧃RB⧄ \\
-&= \frac⧃LB⧄\sin\theta⧃RB⧄⧃LB⧄\cos\theta⧃RB⧄ = \tan\theta \quad \blacksquare
+\frac◆LB◆\sin 2\theta◆RB◆◆LB◆1 + \cos 2\theta◆RB◆ &= \frac◆LB◆2\sin\theta\cos\theta◆RB◆◆LB◆1 + (2\cos^2\theta - 1)◆RB◆ \\
+&= \frac◆LB◆2\sin\theta\cos\theta◆RB◆◆LB◆2\cos^2\theta◆RB◆ \\
+&= \frac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆ = \tan\theta \quad \blacksquare
 \end{aligned}
 $$
 </details>
@@ -607,9 +607,9 @@ $$\sin x(2\cos x - 1) = 0$$
 
 $\sin x = 0 \implies x = 0, \pi$.
 
-$2\cos x - 1 = 0 \implies \cos x = \frac{1}{2} \implies x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄, \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄$.
+$2\cos x - 1 = 0 \implies \cos x = \frac{1}{2} \implies x = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆, \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$.
 
-Solutions: $x = 0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄, \pi, \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄$.
+Solutions: $x = 0, \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆, \pi, \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Solving trig equations](#5-solving-trigonometric-equations)
@@ -617,7 +617,7 @@ Solutions: $x = 0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄, \pi, \frac⧃LB⧄
 <hr />
 
 **Problem 3.** Express $4\sin\theta - 3\cos\theta$ in the form $R\sin(\theta - \alpha)$, where
-$R > 0$ and $0 < \alpha < \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$.
+$R > 0$ and $0 < \alpha < \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
 <details>
 <summary>Solution</summary>
@@ -642,22 +642,22 @@ $$4\sin\theta - 3\cos\theta = 5\sin(\theta - 0.6435)$$
 <summary>Solution</summary>
 $$\sin 75° = \sin(45° + 30°) = \sin 45°\cos 30° + \cos 45°\sin 30^\circ$$
 
-$$= \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄ \cdot \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄ \cdot \frac{1}{2} = \frac⧃LB⧄\sqrt{6} + \sqrt{2}⧃RB⧄⧃LB⧄4⧃RB⧄$$
+$$= \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ \cdot \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ \cdot \frac{1}{2} = \frac◆LB◆\sqrt{6} + \sqrt{2}◆RB◆◆LB◆4◆RB◆$$
 
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
 
 <hr />
 
-**Problem 5.** Prove that $\frac⧃LB⧄1 - \cos 2\theta⧃RB⧄⧃LB⧄\sin 2\theta⧃RB⧄ = \tan\theta$.
+**Problem 5.** Prove that $\frac◆LB◆1 - \cos 2\theta◆RB◆◆LB◆\sin 2\theta◆RB◆ = \tan\theta$.
 
 <details>
 <summary>Solution</summary>
 $$
 \begin{aligned}
-\frac⧃LB⧄1 - \cos 2\theta⧃RB⧄⧃LB⧄\sin 2\theta⧃RB⧄ &= \frac⧃LB⧄1 - (1 - 2\sin^2\theta)⧃RB⧄⧃LB⧄2\sin\theta\cos\theta⧃RB⧄ \\
-&= \frac⧃LB⧄2\sin^2\theta⧃RB⧄⧃LB⧄2\sin\theta\cos\theta⧃RB⧄ \\
-&= \frac⧃LB⧄\sin\theta⧃RB⧄⧃LB⧄\cos\theta⧃RB⧄ = \tan\theta \quad \blacksquare
+\frac◆LB◆1 - \cos 2\theta◆RB◆◆LB◆\sin 2\theta◆RB◆ &= \frac◆LB◆1 - (1 - 2\sin^2\theta)◆RB◆◆LB◆2\sin\theta\cos\theta◆RB◆ \\
+&= \frac◆LB◆2\sin^2\theta◆RB◆◆LB◆2\sin\theta\cos\theta◆RB◆ \\
+&= \frac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆ = \tan\theta \quad \blacksquare
 \end{aligned}
 $$
 </details>
@@ -697,16 +697,16 @@ $\sin x = -\frac{1}{3} \implies x = \arcsin(-\frac{1}{3}) \approx -0.3398$ or
 $x = -\pi - \arcsin(-\frac{1}{3}) = -\pi + 0.3398 \approx -2.802$ (since $3.481 > \pi$, subtract
 $2\pi$ to stay in $[-\pi, \pi]$).
 
-$\sin x = 1 \implies x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$.
+$\sin x = 1 \implies x = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
-Solutions: $x \approx -2.802, -0.340, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$.
+Solutions: $x \approx -2.802, -0.340, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Solving trig equations](#5-solving-trigonometric-equations)
 
 <hr />
 
-**Problem 8.** Use small angle approximations to estimate $\frac⧃LB⧄\sin 0.05⧃RB⧄⧃LB⧄\cos 0.05⧃RB⧄$.
+**Problem 8.** Use small angle approximations to estimate $\frac◆LB◆\sin 0.05◆RB◆◆LB◆\cos 0.05◆RB◆$.
 
 <details>
 <summary>Solution</summary>
@@ -714,7 +714,7 @@ $\sin 0.05 \approx 0.05$
 
 $\cos 0.05 \approx 1 - \frac{0.05^2}{2} = 1 - 0.00125 = 0.99875$
 
-$$\frac⧃LB⧄\sin 0.05⧃RB⧄⧃LB⧄\cos 0.05⧃RB⧄ \approx \frac{0.05}{0.99875} \approx 0.05006$$
+$$\frac◆LB◆\sin 0.05◆RB◆◆LB◆\cos 0.05◆RB◆ \approx \frac{0.05}{0.99875} \approx 0.05006$$
 
 (Alternatively, $\tan 0.05 \approx 0.05$ directly.)
 
@@ -723,7 +723,7 @@ $$\frac⧃LB⧄\sin 0.05⧃RB⧄⧃LB⧄\cos 0.05⧃RB⧄ \approx \frac{0.05}{0.
 
 <hr />
 
-**Problem 9.** Prove that $\dfrac⧃LB⧄1 + \sin 2A⧃RB⧄⧃LB⧄\cos 2A⧃RB⧄ = \tan\!\left(A + \dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄\right)$.
+**Problem 9.** Prove that $\dfrac◆LB◆1 + \sin 2A◆RB◆◆LB◆\cos 2A◆RB◆ = \tan\!\left(A + \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)$.
 
 <details>
 <summary>Solution</summary>
@@ -731,21 +731,21 @@ Working from the LHS:
 
 $$
 \begin{aligned}
-\frac⧃LB⧄1 + \sin 2A⧃RB⧄⧃LB⧄\cos 2A⧃RB⧄
-&= \frac⧃LB⧄1 + 2\sin A \cos A⧃RB⧄⧃LB⧄\cos^2 A - \sin^2 A⧃RB⧄ \\
-&= \frac⧃LB⧄\sin^2 A + 2\sin A \cos A + \cos^2 A⧃RB⧄⧃LB⧄(\cos A - \sin A)(\cos A + \sin A)⧃RB⧄ \\
-&= \frac⧃LB⧄(\sin A + \cos A)^2⧃RB⧄⧃LB⧄(\cos A - \sin A)(\cos A + \sin A)⧃RB⧄ \\
-&= \frac⧃LB⧄\sin A + \cos A⧃RB⧄⧃LB⧄\cos A - \sin A⧃RB⧄
+\frac◆LB◆1 + \sin 2A◆RB◆◆LB◆\cos 2A◆RB◆
+&= \frac◆LB◆1 + 2\sin A \cos A◆RB◆◆LB◆\cos^2 A - \sin^2 A◆RB◆ \\
+&= \frac◆LB◆\sin^2 A + 2\sin A \cos A + \cos^2 A◆RB◆◆LB◆(\cos A - \sin A)(\cos A + \sin A)◆RB◆ \\
+&= \frac◆LB◆(\sin A + \cos A)^2◆RB◆◆LB◆(\cos A - \sin A)(\cos A + \sin A)◆RB◆ \\
+&= \frac◆LB◆\sin A + \cos A◆RB◆◆LB◆\cos A - \sin A◆RB◆
 \end{aligned}
 $$
 
 Dividing numerator and denominator by $\cos A$:
 
-$$= \frac⧃LB⧄\tan A + 1⧃RB⧄⧃LB⧄1 - \tan A⧃RB⧄$$
+$$= \frac◆LB◆\tan A + 1◆RB◆◆LB◆1 - \tan A◆RB◆$$
 
 From the tangent compound angle formula:
 
-$$\tan\!\left(A + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄\right) = \frac⧃LB⧄\tan A + \tan\frac{\pi}{4}⧃RB⧄⧃LB⧄1 - \tan A \tan\frac{\pi}{4}⧃RB⧄ = \frac⧃LB⧄\tan A + 1⧃RB⧄⧃LB⧄1 - \tan A⧃RB⧄ \quad \blacksquare$$
+$$\tan\!\left(A + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \frac◆LB◆\tan A + \tan\frac{\pi}{4}◆RB◆◆LB◆1 - \tan A \tan\frac{\pi}{4}◆RB◆ = \frac◆LB◆\tan A + 1◆RB◆◆LB◆1 - \tan A◆RB◆ \quad \blacksquare$$
 
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
@@ -768,26 +768,26 @@ $$\theta = \frac{10}{4} = 2.5 \mathrm{ radians}$$
 
 <hr />
 
-**Problem 11.** Find the exact value of $\cos\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄$ using a half-angle formula.
+**Problem 11.** Find the exact value of $\cos\dfrac◆LB◆\pi◆RB◆◆LB◆12◆RB◆$ using a half-angle formula.
 
 <details>
 <summary>Solution</summary>
-$\cos\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄ = \cos\frac⧃LB⧄\pi/6⧃RB⧄⧃LB⧄2⧃RB⧄$, so we apply the half-angle formula with $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄$.
+$\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ = \cos\frac◆LB◆\pi/6◆RB◆◆LB◆2◆RB◆$, so we apply the half-angle formula with $\theta = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$.
 
-Since $0 \lt{} \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄ \lt{} \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$ (first quadrant), $\cos\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄ > 0$.
+Since $0 \lt{} \frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ \lt{} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ (first quadrant), $\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ > 0$.
 
 $$
 \begin{aligned}
-\cos\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄ &= \sqrt⧃LB⧄\frac{1 + \cos\frac{\pi}{6}}{2}⧃RB⧄ \\
-&= \sqrt⧃LB⧄\frac{1 + \frac{\sqrt{3}}{2}}{2}⧃RB⧄ \\
-&= \sqrt⧃LB⧄\frac{2 + \sqrt{3}}{4}⧃RB⧄ \\
-&= \frac⧃LB⧄\sqrt{2 + \sqrt{3}}⧃RB⧄⧃LB⧄2⧃RB⧄
+\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ &= \sqrt◆LB◆\frac{1 + \cos\frac{\pi}{6}}{2}◆RB◆ \\
+&= \sqrt◆LB◆\frac{1 + \frac{\sqrt{3}}{2}}{2}◆RB◆ \\
+&= \sqrt◆LB◆\frac{2 + \sqrt{3}}{4}◆RB◆ \\
+&= \frac◆LB◆\sqrt{2 + \sqrt{3}}◆RB◆◆LB◆2◆RB◆
 \end{aligned}
 $$
 
 This can also be verified using the compound angle formula:
-$\cos\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄ = \cos\!\left(\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ - \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄\right) = \cos\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄\cos\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄ + \sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄\sqrt{6} + \sqrt{2}⧃RB⧄⧃LB⧄4⧃RB⧄$,
-and one can check that $\dfrac⧃LB⧄\sqrt{2+\sqrt{3}}⧃RB⧄⧃LB⧄2⧃RB⧄ = \dfrac⧃LB⧄\sqrt{6}+\sqrt{2}⧃RB⧄⧃LB⧄4⧃RB⧄$.
+$\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ = \cos\!\left(\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \cos\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\cos\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + \sin\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\sin\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆\sqrt{6} + \sqrt{2}◆RB◆◆LB◆4◆RB◆$,
+and one can check that $\dfrac◆LB◆\sqrt{2+\sqrt{3}}◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\sqrt{6}+\sqrt{2}◆RB◆◆LB◆4◆RB◆$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Half-angle formulas](#7-half-angle-formulas)
@@ -806,11 +806,11 @@ The maximum value is $R = \sqrt{29}$.
 Writing $2\sin\theta + 5\cos\theta = \sqrt{29}\sin(\theta + \alpha)$ where
 $\tan\alpha = \dfrac{5}{2}$.
 
-The maximum occurs when $\sin(\theta + \alpha) = 1$, i.e., $\theta + \alpha = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$.
+The maximum occurs when $\sin(\theta + \alpha) = 1$, i.e., $\theta + \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
-$$\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - \alpha = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - \arctan\frac{5}{2} \approx 0.3805 \mathrm{ rad}$$
+$$\theta = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - \alpha = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - \arctan\frac{5}{2} \approx 0.3805 \mathrm{ rad}$$
 
-Since $\arctan\frac{5}{2} \approx 1.1903 < \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$, this $\theta$ is positive and is the
+Since $\arctan\frac{5}{2} \approx 1.1903 < \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$, this $\theta$ is positive and is the
 smallest positive value.
 
 </details>
@@ -818,17 +818,17 @@ smallest positive value.
 
 <hr />
 
-**Problem 13.** Prove that $\dfrac⧃LB⧄\sin 3A⧃RB⧄⧃LB⧄\sin A⧃RB⧄ - \dfrac⧃LB⧄\cos 3A⧃RB⧄⧃LB⧄\cos A⧃RB⧄ = 2$.
+**Problem 13.** Prove that $\dfrac◆LB◆\sin 3A◆RB◆◆LB◆\sin A◆RB◆ - \dfrac◆LB◆\cos 3A◆RB◆◆LB◆\cos A◆RB◆ = 2$.
 
 <details>
 <summary>Solution</summary>
 $$
 \begin{aligned}
-\frac⧃LB⧄\sin 3A⧃RB⧄⧃LB⧄\sin A⧃RB⧄ - \frac⧃LB⧄\cos 3A⧃RB⧄⧃LB⧄\cos A⧃RB⧄
-&= \frac⧃LB⧄\sin 3A \cos A - \cos 3A \sin A⧃RB⧄⧃LB⧄\sin A \cos A⧃RB⧄ \\
-&= \frac⧃LB⧄\sin(3A - A)⧃RB⧄⧃LB⧄\sin A \cos A⧃RB⧄ \\
-&= \frac⧃LB⧄\sin 2A⧃RB⧄⧃LB⧄\sin A \cos A⧃RB⧄ \\
-&= \frac⧃LB⧄2\sin A \cos A⧃RB⧄⧃LB⧄\sin A \cos A⧃RB⧄ \\
+\frac◆LB◆\sin 3A◆RB◆◆LB◆\sin A◆RB◆ - \frac◆LB◆\cos 3A◆RB◆◆LB◆\cos A◆RB◆
+&= \frac◆LB◆\sin 3A \cos A - \cos 3A \sin A◆RB◆◆LB◆\sin A \cos A◆RB◆ \\
+&= \frac◆LB◆\sin(3A - A)◆RB◆◆LB◆\sin A \cos A◆RB◆ \\
+&= \frac◆LB◆\sin 2A◆RB◆◆LB◆\sin A \cos A◆RB◆ \\
+&= \frac◆LB◆2\sin A \cos A◆RB◆◆LB◆\sin A \cos A◆RB◆ \\
 &= 2 \quad \blacksquare
 \end{aligned}
 $$
@@ -842,30 +842,30 @@ $$
 
 <details>
 <summary>Solution</summary>
-$R = \sqrt{1 + 3} = 2$, $\alpha = \arctan\sqrt{3} = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$.
+$R = \sqrt{1 + 3} = 2$, $\alpha = \arctan\sqrt{3} = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
 
-$$2\sin\!\left(\theta + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄\right) = 1$$
+$$2\sin\!\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) = 1$$
 
-$$\sin\!\left(\theta + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄\right) = \frac{1}{2}$$
+$$\sin\!\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) = \frac{1}{2}$$
 
-$$\theta + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄ + 2n\pi \quad \mathrm{or} \quad \theta + \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄6⧃RB⧄ + 2n\pi$$
+$$\theta + \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + 2n\pi \quad \mathrm{or} \quad \theta + \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆ + 2n\pi$$
 
-Case 1: $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄ - \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi = -\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄ + 2n\pi$.
+Case 1: $\theta = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi = -\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + 2n\pi$.
 
-For $n = 1$: $\theta = -\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄ + 2\pi = \frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄6⧃RB⧄$.
+For $n = 1$: $\theta = -\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + 2\pi = \frac◆LB◆11\pi◆RB◆◆LB◆6◆RB◆$.
 
-Case 2: $\theta = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄6⧃RB⧄ - \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + 2n\pi$.
+Case 2: $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi$.
 
-For $n = 0$: $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$.
+For $n = 0$: $\theta = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
-Solutions: $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$ or $\theta = \frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄6⧃RB⧄$.
+Solutions: $\theta = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ or $\theta = \frac◆LB◆11\pi◆RB◆◆LB◆6◆RB◆$.
 
 </details>
 <b>If you get this wrong, revise:</b> [R-addition formula](#8-r-addition-formula-harmonic-form)
 
 <hr />
 
-**Problem 15.** Prove that $\dfrac⧃LB⧄1 - \tan^2 A⧃RB⧄⧃LB⧄1 + \tan^2 A⧃RB⧄ = \cos 2A$.
+**Problem 15.** Prove that $\dfrac◆LB◆1 - \tan^2 A◆RB◆◆LB◆1 + \tan^2 A◆RB◆ = \cos 2A$.
 
 <details>
 <summary>Solution</summary>
@@ -873,11 +873,11 @@ Using $\sec^2 A = 1 + \tan^2 A$:
 
 $$
 \begin{aligned}
-\frac⧃LB⧄1 - \tan^2 A⧃RB⧄⧃LB⧄1 + \tan^2 A⧃RB⧄
-&= \frac⧃LB⧄1 - \tan^2 A⧃RB⧄⧃LB⧄\sec^2 A⧃RB⧄ \\
+\frac◆LB◆1 - \tan^2 A◆RB◆◆LB◆1 + \tan^2 A◆RB◆
+&= \frac◆LB◆1 - \tan^2 A◆RB◆◆LB◆\sec^2 A◆RB◆ \\
 &= (1 - \tan^2 A)\cos^2 A \\
 &= \cos^2 A - \tan^2 A \cos^2 A \\
-&= \cos^2 A - \frac⧃LB⧄\sin^2 A⧃RB⧄⧃LB⧄\cos^2 A⧃RB⧄ \cdot \cos^2 A \\
+&= \cos^2 A - \frac◆LB◆\sin^2 A◆RB◆◆LB◆\cos^2 A◆RB◆ \cdot \cos^2 A \\
 &= \cos^2 A - \sin^2 A \\
 &= \cos 2A \quad \blacksquare
 \end{aligned}

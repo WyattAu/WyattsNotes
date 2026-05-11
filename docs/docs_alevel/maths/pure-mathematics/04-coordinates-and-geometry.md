@@ -151,7 +151,7 @@ $$x^2 - 2ax + a^2 + y^2 - 2by + b^2 = r^2$$
 $$x^2 + y^2 - 2ax - 2by + (a^2 + b^2 - r^2) = 0$$
 
 **Theorem.** The general equation $x^2 + y^2 + Dx + Ey + F = 0$ represents a circle with centre
-$\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius $r = \sqrt⧃LB⧄\frac{D^2}{4} + \frac{E^2}{4} - F⧃RB⧄$,
+$\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius $r = \sqrt◆LB◆\frac{D^2}{4} + \frac{E^2}{4} - F◆RB◆$,
 provided $D^2 + E^2 - 4F > 0$.
 
 _Proof._ Completing the square in both $x$ and $y$:
@@ -168,7 +168,7 @@ Substituting:
 $$\left(x + \frac{D}{2}\right)^2 + \left(y + \frac{E}{2}\right)^2 = \frac{D^2 + E^2}{4} - F$$
 
 This is a circle with centre $\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius
-$\sqrt⧃LB⧄\frac{D^2 + E^2}{4} - F⧃RB⧄$, provided the right-hand side is positive. $\blacksquare$
+$\sqrt◆LB◆\frac{D^2 + E^2}{4} - F◆RB◆$, provided the right-hand side is positive. $\blacksquare$
 
 :::tip
 tip
@@ -279,7 +279,7 @@ Since the product of gradients is $-1$, $AP \perp BP$. $\blacksquare$
 **Theorem.** The perpendicular (shortest) distance from the point $(x_0, y_0)$ to the line
 $ax + by + c = 0$ is:
 
-$$d = \frac⧃LB⧄|ax_0 + by_0 + c|⧃RB⧄⧃LB⧄\sqrt{a^2 + b^2}⧃RB⧄$$
+$$d = \frac◆LB◆|ax_0 + by_0 + c|◆RB◆◆LB◆\sqrt{a^2 + b^2}◆RB◆$$
 
 _Proof (Area method)._ Let $P(x_0, y_0)$ be the point and let $A$ and $B$ be two convenient points
 on the line. The triangle $PAB$ has area:
@@ -288,20 +288,20 @@ $$\mathrm{Area} = \frac{1}{2} \times \mathrm{base} \times \mathrm{height} = \fra
 
 where $d$ is the perpendicular distance from $P$ to the line. Rearranging:
 
-$$d = \frac⧃LB⧄2 \times \mathrm{Area}⧃RB⧄⧃LB⧄|AB|⧃RB⧄$$
+$$d = \frac◆LB◆2 \times \mathrm{Area}◆RB◆◆LB◆|AB|◆RB◆$$
 
 Choose $A$ and $B$ where the line meets the axes: set $y = 0$ to get $A\left(-\frac{c}{a}, 0\right)$
 and set $x = 0$ to get $B\left(0, -\frac{c}{b}\right)$. Then:
 
-$$|AB| = \sqrt⧃LB⧄\frac{c^2}{a^2} + \frac{c^2}{b^2}⧃RB⧄ = \frac⧃LB⧄|c|\sqrt{a^2 + b^2}⧃RB⧄⧃LB⧄|ab|⧃RB⧄$$
+$$|AB| = \sqrt◆LB◆\frac{c^2}{a^2} + \frac{c^2}{b^2}◆RB◆ = \frac◆LB◆|c|\sqrt{a^2 + b^2}◆RB◆◆LB◆|ab|◆RB◆$$
 
 The area of $\triangle PAB$ can also be computed using the determinant formula:
 
 $$\mathrm{Area} = \frac{1}{2}\left|x_0\left(0 - \left(-\frac{c}{b}\right)\right) + \left(-\frac{c}{a}\right)\left(\left(-\frac{c}{b}\right) - y_0\right) + 0 \cdot (y_0 - 0)\right|$$
 
-This simplifies to $\frac⧃LB⧄|ax_0 + by_0 + c| \cdot |c|⧃RB⧄⧃LB⧄2|ab|⧃RB⧄$. Therefore:
+This simplifies to $\frac◆LB◆|ax_0 + by_0 + c| \cdot |c|◆RB◆◆LB◆2|ab|◆RB◆$. Therefore:
 
-$$d = \frac⧃LB⧄2 \cdot \frac{|ax_0 + by_0 + c| \cdot |c|}{2|ab|}⧃RB⧄⧃LB⧄\frac{|c|\sqrt{a^2 + b^2}}{|ab|}⧃RB⧄ = \frac⧃LB⧄|ax_0 + by_0 + c|⧃RB⧄⧃LB⧄\sqrt{a^2 + b^2}⧃RB⧄ \quad \blacksquare$$
+$$d = \frac◆LB◆2 \cdot \frac{|ax_0 + by_0 + c| \cdot |c|}{2|ab|}◆RB◆◆LB◆\frac{|c|\sqrt{a^2 + b^2}}{|ab|}◆RB◆ = \frac◆LB◆|ax_0 + by_0 + c|◆RB◆◆LB◆\sqrt{a^2 + b^2}◆RB◆ \quad \blacksquare$$
 
 <details>
 <summary>Alternative proof (perpendicular line method)</summary>
@@ -329,7 +329,7 @@ $$
 
 Taking the positive square root and absolute value:
 
-$$d = \frac⧃LB⧄|ax_0 + by_0 + c|⧃RB⧄⧃LB⧄\sqrt{a^2 + b^2}⧃RB⧄ \quad \blacksquare$$
+$$d = \frac◆LB◆|ax_0 + by_0 + c|◆RB◆◆LB◆\sqrt{a^2 + b^2}◆RB◆ \quad \blacksquare$$
 
 </details>
 
@@ -337,7 +337,7 @@ $$d = \frac⧃LB⧄|ax_0 + by_0 + c|⧃RB⧄⧃LB⧄\sqrt{a^2 + b^2}⧃RB⧄ \qu
 <summary>Worked example</summary>
 Find the shortest distance from $(5, -2)$ to the line $3x + 4y - 10 = 0$.
 
-$$d = \frac⧃LB⧄|3(5) + 4(-2) - 10|⧃RB⧄⧃LB⧄\sqrt{9 + 16}⧃RB⧄ = \frac⧃LB⧄|15 - 8 - 10|⧃RB⧄⧃LB⧄\sqrt{25}⧃RB⧄ = \frac⧃LB⧄|-3|⧃RB⧄⧃LB⧄5⧃RB⧄ = \frac{3}{5}$$
+$$d = \frac◆LB◆|3(5) + 4(-2) - 10|◆RB◆◆LB◆\sqrt{9 + 16}◆RB◆ = \frac◆LB◆|15 - 8 - 10|◆RB◆◆LB◆\sqrt{25}◆RB◆ = \frac◆LB◆|-3|◆RB◆◆LB◆5◆RB◆ = \frac{3}{5}$$
 
 </details>
 
@@ -502,13 +502,13 @@ A circle has centre $(2, -1)$ and radius $3$. Find the two points on the circle 
 
 Parametrically: $x = 2 + 3\cos\theta = 4$, so $\cos\theta = \frac{2}{3}$.
 
-$$\sin\theta = \pm\sqrt⧃LB⧄1 - \frac{4}{9}⧃RB⧄ = \pm\frac⧃LB⧄\sqrt{5}⧃RB⧄⧃LB⧄3⧃RB⧄$$
+$$\sin\theta = \pm\sqrt◆LB◆1 - \frac{4}{9}◆RB◆ = \pm\frac◆LB◆\sqrt{5}◆RB◆◆LB◆3◆RB◆$$
 
 The two points are:
 
-$$\left(4, -1 + 3 \cdot \frac⧃LB⧄\sqrt{5}⧃RB⧄⧃LB⧄3⧃RB⧄\right) = \left(4, -1 + \sqrt{5}\right)$$
+$$\left(4, -1 + 3 \cdot \frac◆LB◆\sqrt{5}◆RB◆◆LB◆3◆RB◆\right) = \left(4, -1 + \sqrt{5}\right)$$
 
-$$\left(4, -1 + 3 \cdot \left(-\frac⧃LB⧄\sqrt{5}⧃RB⧄⧃LB⧄3⧃RB⧄\right)\right) = \left(4, -1 - \sqrt{5}\right)$$
+$$\left(4, -1 + 3 \cdot \left(-\frac◆LB◆\sqrt{5}◆RB◆◆LB◆3◆RB◆\right)\right) = \left(4, -1 - \sqrt{5}\right)$$
 
 Verification using the Cartesian equation $(x-2)^2 + (y+1)^2 = 9$: when $x = 4$, $(y+1)^2 = 5$, so
 $y = -1 \pm \sqrt{5}$.
@@ -644,9 +644,9 @@ $$y - 3 = -\frac{1}{2}(x - 4) \implies 2y - 6 = -x + 4 \implies x + 2y - 10 = 0$
 <summary>Solution</summary>
 The perpendicular distance from $(x_0, y_0)$ to $ax + by + c = 0$ is:
 
-$$d = \frac⧃LB⧄|ax_0 + by_0 + c|⧃RB⧄⧃LB⧄\sqrt{a^2 + b^2}⧃RB⧄$$
+$$d = \frac◆LB◆|ax_0 + by_0 + c|◆RB◆◆LB◆\sqrt{a^2 + b^2}◆RB◆$$
 
-$$d = \frac⧃LB⧄|2(3) - 1(1) + 4|⧃RB⧄⧃LB⧄\sqrt{4 + 1}⧃RB⧄ = \frac⧃LB⧄|6 - 1 + 4|⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄ = \frac⧃LB⧄9⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄ = \frac⧃LB⧄9\sqrt{5}⧃RB⧄⧃LB⧄5⧃RB⧄$$
+$$d = \frac◆LB◆|2(3) - 1(1) + 4|◆RB◆◆LB◆\sqrt{4 + 1}◆RB◆ = \frac◆LB◆|6 - 1 + 4|◆RB◆◆LB◆\sqrt{5}◆RB◆ = \frac◆LB◆9◆RB◆◆LB◆\sqrt{5}◆RB◆ = \frac◆LB◆9\sqrt{5}◆RB◆◆LB◆5◆RB◆$$
 
 </details>
 <b>If you get this wrong, revise:</b> [Distance formula](#1-the-coordinate-plane)
@@ -660,17 +660,17 @@ at the point where $x = 1$.
 <summary>Solution</summary>
 When $x = 1$: $1 + y^2 - 4 + 6y + 4 = 0 \implies y^2 + 6y + 1 = 0$.
 
-$$y = \frac⧃LB⧄-6 \pm \sqrt{36 - 4}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄-6 \pm \sqrt{32}⧃RB⧄⧃LB⧄2⧃RB⧄ = -3 \pm 2\sqrt{2}$$
+$$y = \frac◆LB◆-6 \pm \sqrt{36 - 4}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-6 \pm \sqrt{32}◆RB◆◆LB◆2◆RB◆ = -3 \pm 2\sqrt{2}$$
 
 Using the tangent formula for the general circle. First, rewrite as $(x - 2)^2 + (y + 3)^2 = 9$.
 Centre: $(2, -3)$.
 
 At point $(1, -3 + 2\sqrt{2})$: gradient of radius
-$= \frac⧃LB⧄-3 + 2\sqrt{2} + 3⧃RB⧄⧃LB⧄1 - 2⧃RB⧄ = \frac⧃LB⧄2\sqrt{2}⧃RB⧄⧃LB⧄-1⧃RB⧄ = -2\sqrt{2}$.
+$= \frac◆LB◆-3 + 2\sqrt{2} + 3◆RB◆◆LB◆1 - 2◆RB◆ = \frac◆LB◆2\sqrt{2}◆RB◆◆LB◆-1◆RB◆ = -2\sqrt{2}$.
 
-Tangent gradient: $\frac⧃LB⧄1⧃RB⧄⧃LB⧄2\sqrt{2}⧃RB⧄ = \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄4⧃RB⧄$.
+Tangent gradient: $\frac◆LB◆1◆RB◆◆LB◆2\sqrt{2}◆RB◆ = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆4◆RB◆$.
 
-$$y + 3 - 2\sqrt{2} = \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄4⧃RB⧄(x - 1)$$
+$$y + 3 - 2\sqrt{2} = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆4◆RB◆(x - 1)$$
 
 $$4y + 12 - 8\sqrt{2} = \sqrt{2}\,x - \sqrt{2}$$
 
@@ -727,7 +727,7 @@ $$y - 3 = \frac{1}{2}(x - 3) \implies 2y - 6 = x - 3 \implies x - 2y + 3 = 0$$
 <hr />
 
 **Problem 11.** Derive the perpendicular distance formula
-$d = \frac⧃LB⧄|ax_0 + by_0 + c|⧃RB⧄⧃LB⧄\sqrt{a^2 + b^2}⧃RB⧄$ using the area method for the point $P(1, 7)$ and
+$d = \frac◆LB◆|ax_0 + by_0 + c|◆RB◆◆LB◆\sqrt{a^2 + b^2}◆RB◆$ using the area method for the point $P(1, 7)$ and
 the line $3x + 4y - 5 = 0$. Then compute the distance.
 
 <details>
@@ -736,7 +736,7 @@ The line $3x + 4y - 5 = 0$ meets the axes at $A\!\left(\frac{5}{3}, 0\right)$ an
 
 Length of base $AB$:
 
-$$|AB| = \sqrt⧃LB⧄\left(\frac{5}{3}\right)^2 + \left(\frac{5}{4}\right)^2⧃RB⧄ = \sqrt⧃LB⧄\frac{25}{9} + \frac{25}{16}⧃RB⧄ = \sqrt⧃LB⧄\frac{400 + 225}{144}⧃RB⧄ = \frac⧃LB⧄\sqrt{625}⧃RB⧄⧃LB⧄12⧃RB⧄ = \frac{25}{12}$$
+$$|AB| = \sqrt◆LB◆\left(\frac{5}{3}\right)^2 + \left(\frac{5}{4}\right)^2◆RB◆ = \sqrt◆LB◆\frac{25}{9} + \frac{25}{16}◆RB◆ = \sqrt◆LB◆\frac{400 + 225}{144}◆RB◆ = \frac◆LB◆\sqrt{625}◆RB◆◆LB◆12◆RB◆ = \frac{25}{12}$$
 
 Area of $\triangle PAB$ using the determinant formula:
 
@@ -751,10 +751,10 @@ $$
 
 Since $\mathrm{Area} = \frac{1}{2} \times |AB| \times d$:
 
-$$\frac{65}{12} = \frac{1}{2} \times \frac{25}{12} \times d \implies d = \frac⧃LB⧄65 \times 2⧃RB⧄⧃LB⧄25⧃RB⧄ = \frac{130}{25} = \frac{26}{5}$$
+$$\frac{65}{12} = \frac{1}{2} \times \frac{25}{12} \times d \implies d = \frac◆LB◆65 \times 2◆RB◆◆LB◆25◆RB◆ = \frac{130}{25} = \frac{26}{5}$$
 
 Verification using the formula:
-$d = \frac⧃LB⧄|3(1) + 4(7) - 5|⧃RB⧄⧃LB⧄\sqrt{9+16}⧃RB⧄ = \frac⧃LB⧄|3 + 28 - 5|⧃RB⧄⧃LB⧄5⧃RB⧄ = \frac{26}{5}$.
+$d = \frac◆LB◆|3(1) + 4(7) - 5|◆RB◆◆LB◆\sqrt{9+16}◆RB◆ = \frac◆LB◆|3 + 28 - 5|◆RB◆◆LB◆5◆RB◆ = \frac{26}{5}$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Distance from a point to a line](#6-distance-from-a-point-to-a-line)
@@ -785,14 +785,14 @@ Distance between centres: $d = \sqrt{(2-(-1))^2 + (-2-4)^2} = \sqrt{9+36} = \sqr
 
 The distance from the centre of $C_1$ to the chord $PQ$ (line $3x + 6y - 8 = 0$):
 
-$$d_1 = \frac⧃LB⧄|3(-1) + 6(4) - 8|⧃RB⧄⧃LB⧄\sqrt{9+36}⧃RB⧄ = \frac⧃LB⧄|-3 + 24 - 8|⧃RB⧄⧃LB⧄\sqrt{45}⧃RB⧄ = \frac⧃LB⧄13⧃RB⧄⧃LB⧄3\sqrt{5}⧃RB⧄$$
+$$d_1 = \frac◆LB◆|3(-1) + 6(4) - 8|◆RB◆◆LB◆\sqrt{9+36}◆RB◆ = \frac◆LB◆|-3 + 24 - 8|◆RB◆◆LB◆\sqrt{45}◆RB◆ = \frac◆LB◆13◆RB◆◆LB◆3\sqrt{5}◆RB◆$$
 
 By Pythagoras' theorem in the right triangle formed by the centre, the midpoint of the chord, and an
 endpoint:
 
 $$\left(\frac{PQ}{2}\right)^2 = r_1^2 - d_1^2 = 9 - \frac{169}{45} = \frac{405 - 169}{45} = \frac{236}{45}$$
 
-$$PQ = 2\sqrt⧃LB⧄\frac{236}{45}⧃RB⧄ = 2 \cdot \frac⧃LB⧄2\sqrt{59}⧃RB⧄⧃LB⧄3\sqrt{5}⧃RB⧄ = \frac⧃LB⧄4\sqrt{295}⧃RB⧄⧃LB⧄15⧃RB⧄$$
+$$PQ = 2\sqrt◆LB◆\frac{236}{45}◆RB◆ = 2 \cdot \frac◆LB◆2\sqrt{59}◆RB◆◆LB◆3\sqrt{5}◆RB◆ = \frac◆LB◆4\sqrt{295}◆RB◆◆LB◆15◆RB◆$$
 
 </details>
 <b>If you get this wrong, revise:</b> [Intersection of two circles](#7-intersection-of-two-circles)
@@ -838,7 +838,7 @@ $|AC| = 4 = 2r$.
 
 (b) Find the coordinates of the two points on $C$ with $y$-coordinate $1$.
 
-(c) Find the equation of the tangent to $C$ at the point corresponding to $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$.
+(c) Find the equation of the tangent to $C$ at the point corresponding to $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
 
 <details>
 <summary>Solution</summary>
@@ -846,7 +846,7 @@ $|AC| = 4 = 2r$.
 
 (b) Set $y = -2 + 5\sin\theta = 1$, so $\sin\theta = \frac{3}{5}$.
 
-$$\cos\theta = \pm\sqrt⧃LB⧄1 - \frac{9}{25}⧃RB⧄ = \pm\frac{4}{5}$$
+$$\cos\theta = \pm\sqrt◆LB◆1 - \frac{9}{25}◆RB◆ = \pm\frac{4}{5}$$
 
 The two points are:
 
@@ -854,20 +854,20 @@ $$\left(1 + 5 \cdot \frac{4}{5}, 1\right) = (5, 1)$$
 
 $$\left(1 + 5 \cdot \left(-\frac{4}{5}\right), 1\right) = (-3, 1)$$
 
-(c) When $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$: $x = 1 + 5\cos\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ = 1 + \frac{5}{2} = \frac{7}{2}$,
-$y = -2 + 5\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ = -2 + \frac⧃LB⧄5\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+(c) When $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$: $x = 1 + 5\cos\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = 1 + \frac{5}{2} = \frac{7}{2}$,
+$y = -2 + 5\sin\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ = -2 + \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
 
-The point is $\left(\frac{7}{2}, -2 + \frac⧃LB⧄5\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄\right)$.
+The point is $\left(\frac{7}{2}, -2 + \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆\right)$.
 
 The radius from $(1, -2)$ to this point has gradient:
 
-$$m_{\mathrm{radius}} = \frac⧃LB⧄-2 + \frac{5\sqrt{3}}{2} - (-2)⧃RB⧄⧃LB⧄\frac{7}{2} - 1⧃RB⧄ = \frac⧃LB⧄\frac{5\sqrt{3}}{2}⧃RB⧄⧃LB⧄\frac{5}{2}⧃RB⧄ = \sqrt{3}$$
+$$m_{\mathrm{radius}} = \frac◆LB◆-2 + \frac{5\sqrt{3}}{2} - (-2)◆RB◆◆LB◆\frac{7}{2} - 1◆RB◆ = \frac◆LB◆\frac{5\sqrt{3}}{2}◆RB◆◆LB◆\frac{5}{2}◆RB◆ = \sqrt{3}$$
 
-Tangent gradient: $m_{\mathrm{tangent}} = -\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{3}⧃RB⧄ = -\frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄3⧃RB⧄$.
+Tangent gradient: $m_{\mathrm{tangent}} = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = -\frac◆LB◆\sqrt{3}◆RB◆◆LB◆3◆RB◆$.
 
 Using point-slope form:
 
-$$y + 2 - \frac⧃LB⧄5\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = -\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{3}⧃RB⧄\left(x - \frac{7}{2}\right)$$
+$$y + 2 - \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆\left(x - \frac{7}{2}\right)$$
 
 $$\sqrt{3}\,y + 2\sqrt{3} - \frac{15}{2} = -x + \frac{7}{2}$$
 
@@ -920,7 +920,7 @@ $$(13x - 15)^2 = 0 \implies x = \frac{15}{13}, \quad y = \frac{12}{5} \cdot \fra
 Tangency point: $\left(\frac{15}{13}, \frac{36}{13}\right)$.
 
 **Verification using perpendicular distance:** The distance from centre $(3, 2)$ to
-$y = \frac{12}{5}x$ (i.e. $12x - 5y = 0$) is $\frac⧃LB⧄|36 - 10|⧃RB⧄⧃LB⧄13⧃RB⧄ = \frac{26}{13} = 2 = r$.
+$y = \frac{12}{5}x$ (i.e. $12x - 5y = 0$) is $\frac◆LB◆|36 - 10|◆RB◆◆LB◆13◆RB◆ = \frac{26}{13} = 2 = r$.
 
 The two tangent lines are $y = 0$ and $12x - 5y = 0$.
 

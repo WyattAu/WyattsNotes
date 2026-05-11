@@ -147,18 +147,18 @@ $|x_{n+1} - \alpha| \leq C|x_n - \alpha|^2$.
 
 **Proof (sketch).** By Taylor's theorem about $x_n$:
 
-$$0 = f(\alpha) = f(x_n) + f'(x_n)(\alpha - x_n) + \frac⧃LB⧄f''(\xi)⧃RB⧄⧃LB⧄2⧃RB⧄(\alpha - x_n)^2$$
+$$0 = f(\alpha) = f(x_n) + f'(x_n)(\alpha - x_n) + \frac◆LB◆f''(\xi)◆RB◆◆LB◆2◆RB◆(\alpha - x_n)^2$$
 
 for some $\xi$ between $\alpha$ and $x_n$. Rearranging:
 
-$$\frac{f(x_n)}{f'(x_n)} = (\alpha - x_n) + \frac⧃LB⧄f''(\xi)⧃RB⧄⧃LB⧄2f'(x_n)⧃RB⧄(\alpha - x_n)^2$$
+$$\frac{f(x_n)}{f'(x_n)} = (\alpha - x_n) + \frac◆LB◆f''(\xi)◆RB◆◆LB◆2f'(x_n)◆RB◆(\alpha - x_n)^2$$
 
-$$x_n - \frac{f(x_n)}{f'(x_n)} = \alpha - \frac⧃LB⧄f''(\xi)⧃RB⧄⧃LB⧄2f'(x_n)⧃RB⧄(\alpha - x_n)^2$$
+$$x_n - \frac{f(x_n)}{f'(x_n)} = \alpha - \frac◆LB◆f''(\xi)◆RB◆◆LB◆2f'(x_n)◆RB◆(\alpha - x_n)^2$$
 
-$$x_{n+1} - \alpha = -\frac⧃LB⧄f''(\xi)⧃RB⧄⧃LB⧄2f'(x_n)⧃RB⧄(x_n - \alpha)^2$$
+$$x_{n+1} - \alpha = -\frac◆LB◆f''(\xi)◆RB◆◆LB◆2f'(x_n)◆RB◆(x_n - \alpha)^2$$
 
 Taking absolute values:
-$|x_{n+1} - \alpha| = \dfrac⧃LB⧄|f''(\xi)|⧃RB⧄⧃LB⧄2|f'(x_n)|⧃RB⧄|x_n - \alpha|^2 \leq C|x_n - \alpha|^2$.
+$|x_{n+1} - \alpha| = \dfrac◆LB◆|f''(\xi)|◆RB◆◆LB◆2|f'(x_n)|◆RB◆|x_n - \alpha|^2 \leq C|x_n - \alpha|^2$.
 $\blacksquare$
 
 **Intuition.** Quadratic convergence means the number of correct decimal places roughly **doubles**
@@ -215,17 +215,17 @@ $$|x_{n+1} - \alpha| \approx \frac{1}{2}|x_n - \alpha|$$
 
 **Proof sketch.** Expanding by Taylor's theorem to third order about $\alpha$:
 
-$$f(x_n) = \frac⧃LB⧄f''(\alpha)⧃RB⧄⧃LB⧄2⧃RB⧄(x_n - \alpha)^2 + \frac⧃LB⧄f'''(\alpha)⧃RB⧄⧃LB⧄6⧃RB⧄(x_n - \alpha)^3 + O((x_n - \alpha)^4)$$
+$$f(x_n) = \frac◆LB◆f''(\alpha)◆RB◆◆LB◆2◆RB◆(x_n - \alpha)^2 + \frac◆LB◆f'''(\alpha)◆RB◆◆LB◆6◆RB◆(x_n - \alpha)^3 + O((x_n - \alpha)^4)$$
 
-$$f'(x_n) = f''(\alpha)(x_n - \alpha) + \frac⧃LB⧄f'''(\alpha)⧃RB⧄⧃LB⧄2⧃RB⧄(x_n - \alpha)^2 + O((x_n - \alpha)^3)$$
+$$f'(x_n) = f''(\alpha)(x_n - \alpha) + \frac◆LB◆f'''(\alpha)◆RB◆◆LB◆2◆RB◆(x_n - \alpha)^2 + O((x_n - \alpha)^3)$$
 
 Therefore:
 
 $$x_{n+1} - \alpha = x_n - \alpha - \frac{f(x_n)}{f'(x_n)}$$
 
-$$= (x_n - \alpha) - \frac⧃LB⧄\frac{f''(\alpha)}{2}(x_n - \alpha)^2 + O((x_n - \alpha)^3)⧃RB⧄⧃LB⧄f''(\alpha)(x_n - \alpha) + O((x_n - \alpha)^2)⧃RB⧄$$
+$$= (x_n - \alpha) - \frac◆LB◆\frac{f''(\alpha)}{2}(x_n - \alpha)^2 + O((x_n - \alpha)^3)◆RB◆◆LB◆f''(\alpha)(x_n - \alpha) + O((x_n - \alpha)^2)◆RB◆$$
 
-$$= (x_n - \alpha) - \frac⧃LB⧄\frac{f''(\alpha)}{2}(x_n - \alpha) + O((x_n - \alpha)^2)⧃RB⧄⧃LB⧄f''(\alpha) + O(x_n - \alpha)⧃RB⧄$$
+$$= (x_n - \alpha) - \frac◆LB◆\frac{f''(\alpha)}{2}(x_n - \alpha) + O((x_n - \alpha)^2)◆RB◆◆LB◆f''(\alpha) + O(x_n - \alpha)◆RB◆$$
 
 $$= (x_n - \alpha) - \frac{1}{2}(x_n - \alpha)\left(1 + O(x_n - \alpha)\right)$$
 
@@ -271,9 +271,9 @@ $$\int_{x_i}^{x_{i+1}} f(x)\,dx \approx \frac{h}{2}\left[f(x_i) + f(x_{i+1})\rig
 
 To find the error, expand $f$ about the midpoint $m_i = x_i + h/2$. Let $\delta = h/2$:
 
-$$f(x_i) = f(m_i - \delta) = f(m_i) - \delta\, f'(m_i) + \frac⧃LB⧄\delta^2⧃RB⧄⧃LB⧄2⧃RB⧄f''(m_i) - \frac⧃LB⧄\delta^3⧃RB⧄⧃LB⧄6⧃RB⧄f'''(\zeta_1)$$
+$$f(x_i) = f(m_i - \delta) = f(m_i) - \delta\, f'(m_i) + \frac◆LB◆\delta^2◆RB◆◆LB◆2◆RB◆f''(m_i) - \frac◆LB◆\delta^3◆RB◆◆LB◆6◆RB◆f'''(\zeta_1)$$
 
-$$f(x_{i+1}) = f(m_i + \delta) = f(m_i) + \delta\, f'(m_i) + \frac⧃LB⧄\delta^2⧃RB⧄⧃LB⧄2⧃RB⧄f''(m_i) + \frac⧃LB⧄\delta^3⧃RB⧄⧃LB⧄6⧃RB⧄f'''(\zeta_2)$$
+$$f(x_{i+1}) = f(m_i + \delta) = f(m_i) + \delta\, f'(m_i) + \frac◆LB◆\delta^2◆RB◆◆LB◆2◆RB◆f''(m_i) + \frac◆LB◆\delta^3◆RB◆◆LB◆6◆RB◆f'''(\zeta_2)$$
 
 Adding these:
 
@@ -281,7 +281,7 @@ $$f(x_i) + f(x_{i+1}) = 2f(m_i) + \delta^2 f''(m_i) + O(h^3)$$
 
 The trapezium approximation for this strip is:
 
-$$\frac{h}{2}\left[f(x_i) + f(x_{i+1})\right] = h\,f(m_i) + \frac⧃LB⧄h\,\delta^2⧃RB⧄⧃LB⧄2⧃RB⧄f''(m_i) + O(h^4) = h\,f(m_i) + \frac{h^3}{8}f''(m_i) + O(h^4)$$
+$$\frac{h}{2}\left[f(x_i) + f(x_{i+1})\right] = h\,f(m_i) + \frac◆LB◆h\,\delta^2◆RB◆◆LB◆2◆RB◆f''(m_i) + O(h^4) = h\,f(m_i) + \frac{h^3}{8}f''(m_i) + O(h^4)$$
 
 The exact integral over this strip is (by Taylor expansion of the integral):
 
@@ -294,7 +294,7 @@ $$E_i = \frac{h}{2}\left[f(x_i) + f(x_{i+1})\right] - \int_{x_i}^{x_{i+1}} f(x)\
 Summing over all $n$ strips and applying the Intermediate Value Theorem to $f''$ (which is
 continuous), there exists $\eta \in (a, b)$ such that:
 
-$$E_T = \sum_{i=0}^{n-1} E_i = \frac{h^3}{12}\sum_{i=0}^{n-1} f''(m_i) + O(n \cdot h^4) = \frac{h^3}{12}\cdot\frac⧃LB⧄n\, f''(\eta)⧃RB⧄⧃LB⧄1⧃RB⧄ + O(h^4 \cdot n)$$
+$$E_T = \sum_{i=0}^{n-1} E_i = \frac{h^3}{12}\sum_{i=0}^{n-1} f''(m_i) + O(n \cdot h^4) = \frac{h^3}{12}\cdot\frac◆LB◆n\, f''(\eta)◆RB◆◆LB◆1◆RB◆ + O(h^4 \cdot n)$$
 
 Since $\sum_{i=0}^{n-1} f''(m_i) \cdot h \approx \int_a^b f''(x)\,dx$ and $nh = b - a$:
 
@@ -315,7 +315,7 @@ $$|E_T| \leq \frac{(b-a)^3}{12n^2}\,M$$
 This gives a **guaranteed** upper bound on the absolute error. If we require the error to satisfy
 $|E_T| \lt{} \varepsilon$, we need:
 
-$$n \gt{} \sqrt⧃LB⧄\frac{(b-a)^3\, M}{12\,\varepsilon}⧃RB⧄$$
+$$n \gt{} \sqrt◆LB◆\frac{(b-a)^3\, M}{12\,\varepsilon}◆RB◆$$
 
 **Example.** Approximate $\displaystyle\int_0^1 e^{-x^2}\,dx$ with the trapezium rule. Here
 $f(x) = e^{-x^2}$, so $f'(x) = -2x\,e^{-x^2}$ and $f''(x) = (4x^2 - 2)e^{-x^2}$. On $[0,1]$:
@@ -323,7 +323,7 @@ $|f''(x)| \leq 2$ (achieved at $x = 0$, where $f''(0) = -2$).
 
 For error $\lt{} 10^{-4}$:
 
-$$n \gt{} \sqrt⧃LB⧄\frac{1^3 \times 2}{12 \times 10^{-4}}⧃RB⧄ = \sqrt⧃LB⧄\frac{2}{0.0012}⧃RB⧄ = \sqrt⧃LB⧄1666.\bar{6}⧃RB⧄ \approx 40.8$$
+$$n \gt{} \sqrt◆LB◆\frac{1^3 \times 2}{12 \times 10^{-4}}◆RB◆ = \sqrt◆LB◆\frac{2}{0.0012}◆RB◆ = \sqrt◆LB◆1666.\bar{6}◆RB◆ \approx 40.8$$
 
 So $n = 42$ strips suffice (rounding up to the nearest even number, which is convenient if one later
 wishes to compare with Simpson's rule).
@@ -468,7 +468,7 @@ Show that the iteration $x_{n+1} = \dfrac{x_n^3 + 5}{2}$ for solving $x^3 - 2x -
 $g(x) = \dfrac{x^3+5}{2}$, $g'(x) = \dfrac{3x^2}{2}$.
 
 Near the root $\alpha \approx 2.09$:
-$g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac⧃LB⧄3 \times 4.37⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 6.55 \gt{} 1$.
+$g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac◆LB◆3 \times 4.37◆RB◆◆LB◆2◆RB◆ \approx 6.55 \gt{} 1$.
 
 Since $|g'(\alpha)| \gt{} 1$, the iteration diverges near $\alpha$.
 
@@ -542,7 +542,7 @@ The Newton-Raphson formula fails when applied to $f(x) = x^{1/3}$ starting from 
 <summary>Solution 7</summary>
 $f(x) = x^{1/3}$, $f'(x) = \dfrac{1}{3}x^{-2/3}$.
 
-$x_{n+1} = x_n - \dfrac⧃LB⧄x_n^{1/3}⧃RB⧄⧃LB⧄\frac{1}{3}x_n^{-2/3}⧃RB⧄ = x_n - 3x_n = -2x_n$.
+$x_{n+1} = x_n - \dfrac◆LB◆x_n^{1/3}◆RB◆◆LB◆\frac{1}{3}x_n^{-2/3}◆RB◆ = x_n - 3x_n = -2x_n$.
 
 So $x_1 = -2$, $x_2 = 4$, $x_3 = -8$, ... The iterates oscillate and diverge.
 
@@ -584,7 +584,7 @@ Root near $\alpha \approx 1.21$.
 
 $g(x) = (3-x)^{1/3}$, $g'(x) = -\dfrac{1}{3}(3-x)^{-2/3}$.
 
-$|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄3 \times 1.489⧃RB⧄ \approx 0.224 \lt{} 1$.
+$|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx \dfrac◆LB◆1◆RB◆◆LB◆3 \times 1.489◆RB◆ \approx 0.224 \lt{} 1$.
 
 Converges since $|g'(\alpha)| \lt{} 1$.
 
@@ -668,7 +668,7 @@ endpoints and critical points. $f''(0) = -2$, $f''(1) = 4/8 = 0.5$, $f''(2) = 22
 So $M = 2$ (taking $|f''(x)| \leq 2$).
 
 Error bound:
-$|E_T| \leq \dfrac⧃LB⧄(2-0)^3⧃RB⧄⧃LB⧄12 \times 4^2⧃RB⧄ \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
+$|E_T| \leq \dfrac◆LB◆(2-0)^3◆RB◆◆LB◆12 \times 4^2◆RB◆ \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
 
 The actual error is $|1.1071 - 1.1039| = 0.0032$, well within the bound.
 

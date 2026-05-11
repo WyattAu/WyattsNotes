@@ -111,7 +111,7 @@ The researcher tests the drug on 25 patients and finds the mean reduction in blo
 
 The correct quantity for the vertical axis is the **frequency density**, defined as:
 
-$$\text{Frequency density} = \frac⧃LB⧄\text{Frequency}⧃RB⧄⧃LB⧄\text{Class width}⧃RB⧄$$
+$$\text{Frequency density} = \frac◆LB◆\text{Frequency}◆RB◆◆LB◆\text{Class width}◆RB◆$$
 
 **(b)** Frequency densities:
 
@@ -161,19 +161,19 @@ $$S_{xx} = 12247 - \frac{267^2}{7} = 12247 - \frac{71289}{7} = 12247 - 10184.14.
 
 $$S_{yy} = 4554 - \frac{146^2}{7} = 4554 - \frac{21316}{7} = 4554 - 3045.143 = 1508.857$$
 
-$$S_{xy} = 7324 - \frac⧃LB⧄267 \times 146⧃RB⧄⧃LB⧄7⧃RB⧄ = 7324 - \frac{38982}{7} = 7324 - 5568.857 = 1755.143$$
+$$S_{xy} = 7324 - \frac◆LB◆267 \times 146◆RB◆◆LB◆7◆RB◆ = 7324 - \frac{38982}{7} = 7324 - 5568.857 = 1755.143$$
 
-$$r = \frac⧃LB⧄S_{xy}⧃RB⧄⧃LB⧄\sqrt{S_{xx} \cdot S_{yy}}⧃RB⧄ = \frac⧃LB⧄1755.143⧃RB⧄⧃LB⧄\sqrt{2062.857 \times 1508.857}⧃RB⧄$$
+$$r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆ = \frac◆LB◆1755.143◆RB◆◆LB◆\sqrt{2062.857 \times 1508.857}◆RB◆$$
 
-$$= \frac⧃LB⧄1755.143⧃RB⧄⧃LB⧄\sqrt{3111755.1}⧃RB⧄ = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.)}$$
+$$= \frac◆LB◆1755.143◆RB◆◆LB◆\sqrt{3111755.1}◆RB◆ = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.)}$$
 
 **(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and $v = \frac{1}{100}y$, which are linear transformations.
 
-To see why: the PMCC is defined as $r = \frac⧃LB⧄S_{xy}⧃RB⧄⧃LB⧄\sqrt{S_{xx} \cdot S_{yy}}⧃RB⧄$. Under coding:
+To see why: the PMCC is defined as $r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆$. Under coding:
 
 $$S_{uv} = ac \cdot S_{xy}, \quad S_{uu} = a^2 S_{xx}, \quad S_{vv} = c^2 S_{yy}$$
 
-$$r_{uv} = \frac⧃LB⧄ac \cdot S_{xy}⧃RB⧄⧃LB⧄\sqrt{a^2 S_{xx} \cdot c^2 S_{yy}}⧃RB⧄ = \frac⧃LB⧄ac \cdot S_{xy}⧃RB⧄⧃LB⧄|ac|\sqrt{S_{xx} \cdot S_{yy}}⧃RB⧄ = \frac⧃LB⧄S_{xy}⧃RB⧄⧃LB⧄\sqrt{S_{xx} \cdot S_{yy}}⧃RB⧄ = r_{xy}$$
+$$r_{uv} = \frac◆LB◆ac \cdot S_{xy}◆RB◆◆LB◆\sqrt{a^2 S_{xx} \cdot c^2 S_{yy}}◆RB◆ = \frac◆LB◆ac \cdot S_{xy}◆RB◆◆LB◆|ac|\sqrt{S_{xx} \cdot S_{yy}}◆RB◆ = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆ = r_{xy}$$
 
 The factors of $a$ and $c$ cancel out completely, so the PMCC is unchanged by scaling or shifting.
 
@@ -191,7 +191,7 @@ The factors of $a$ and $c$ cancel out completely, so the PMCC is unchanged by sc
 
 $$\sum d^2 = 0$$
 
-$$r_s = 1 - \frac⧃LB⧄6 \sum d^2⧃RB⧄⧃LB⧄n(n^2 - 1)⧃RB⧄ = 1 - 0 = 1$$
+$$r_s = 1 - \frac◆LB◆6 \sum d^2◆RB◆◆LB◆n(n^2 - 1)◆RB◆ = 1 - 0 = 1$$
 
 Spearman's rank correlation coefficient is 1 (perfect rank correlation).
 
@@ -215,7 +215,7 @@ We need $\mathrm{P}(D \mid +)$.
 
 By Bayes' theorem (or using a tree diagram / contingency table):
 
-$$\mathrm{P}(D \mid +) = \frac⧃LB⧄\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)⧃RB⧄⧃LB⧄\mathrm{P}(+)⧃RB⧄$$
+$$\mathrm{P}(D \mid +) = \frac◆LB◆\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)◆RB◆◆LB◆\mathrm{P}(+)◆RB◆$$
 
 $$\mathrm{P}(+) = \mathrm{P}(+ \mid D)\mathrm{P}(D) + \mathrm{P}(+ \mid D')\mathrm{P}(D')$$
 
@@ -251,7 +251,7 @@ The minimum prevalence is approximately 2.06%. At this prevalence, exactly half 
 
 **(d)** $\mathrm{P}(D \mid +) \neq \mathrm{P}(+ \mid D)$ in general because they condition on different events. $\mathrm{P}(+ \mid D)$ is the sensitivity of the test (among people with the disease, what fraction test positive), while $\mathrm{P}(D \mid +)$ is the positive predictive value (among people who test positive, what fraction actually have the disease). These are related by Bayes' theorem:
 
-$$\mathrm{P}(D \mid +) = \frac⧃LB⧄\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)⧃RB⧄⧃LB⧄\mathrm{P}(+)⧃RB⧄$$
+$$\mathrm{P}(D \mid +) = \frac◆LB◆\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)◆RB◆◆LB◆\mathrm{P}(+)◆RB◆$$
 
 They would be equal only when $\mathrm{P}(D) = \mathrm{P}(+)$, i.e., when the prevalence equals the overall probability of a positive test. This is a very specific condition that would not generally hold.
 
@@ -295,7 +295,7 @@ The correct approach is to split $V = V_1 + V_2$ where $V_1 \sim B(5, 1)$ (deter
 
 **(a)** Under $H_0$: $\bar{X} \sim N\left(0, \frac{15^2}{25}\right) = N(0, 9)$, so $\sigma_{\bar{X}} = 3$.
 
-$$z = \frac⧃LB⧄\bar{x} - 0⧃RB⧄⧃LB⧄3⧃RB⧄ = \frac{-5.2}{3} = -1.733$$
+$$z = \frac◆LB◆\bar{x} - 0◆RB◆◆LB◆3◆RB◆ = \frac{-5.2}{3} = -1.733$$
 
 This is a one-tailed test (left-tailed), so the p-value is:
 
@@ -325,13 +325,13 @@ To determine $\mathrm{P}(H_0 \mid \text{data})$ would require Bayesian methods (
 
 **(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$, so $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
 
-$$z = \frac⧃LB⧄-5.2⧃RB⧄⧃LB⧄\sqrt{4.5}⧃RB⧄ = \frac{-5.2}{2.121} = -2.451$$
+$$z = \frac◆LB◆-5.2◆RB◆◆LB◆\sqrt{4.5}◆RB◆ = \frac{-5.2}{2.121} = -2.451$$
 
 $$\text{p-value} = \mathrm{P}(Z \leq -2.451) = 1 - \Phi(2.451) = 1 - 0.9929 = 0.0071$$
 
 The new p-value is approximately 0.0071, which is much smaller than the original 0.0414.
 
-The p-value decreases because with a larger sample, the standard error $\frac⧃LB⧄\sigma⧃RB⧄⧃LB⧄\sqrt{n}⧃RB⧄$ is smaller. The same mean reduction of 5.2 mmHg represents a larger number of standard errors away from the null hypothesis value of 0. This makes the evidence against $H_0$ stronger, even though the observed effect size is the same.
+The p-value decreases because with a larger sample, the standard error $\frac◆LB◆\sigma◆RB◆◆LB◆\sqrt{n}◆RB◆$ is smaller. The same mean reduction of 5.2 mmHg represents a larger number of standard errors away from the null hypothesis value of 0. This makes the evidence against $H_0$ stronger, even though the observed effect size is the same.
 
 This illustrates a fundamental principle: **statistical significance depends on both the effect size and the sample size**. With a large enough sample, even a very small effect can produce a statistically significant result.
 

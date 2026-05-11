@@ -103,7 +103,7 @@ A closed pipe (closed at one end, open at the other) has a fundamental frequency
 
 (a) For a closed pipe, the fundamental has a node at the closed end and an antinode at the open end. The effective length is $L = \lambda/4$.
 
-$$f_1 = \frac{v}{4L} \Rightarrow L = \frac{v}{4f_1} = \frac⧃LB⧄340⧃RB⧄⧃LB⧄4 \times 220⧃RB⧄ = \frac{340}{880} = 0.386\,\text{m}$$
+$$f_1 = \frac{v}{4L} \Rightarrow L = \frac{v}{4f_1} = \frac◆LB◆340◆RB◆◆LB◆4 \times 220◆RB◆ = \frac{340}{880} = 0.386\,\text{m}$$
 
 (b) For a closed pipe, only odd harmonics exist: $f_n = n \times f_1$ where $n = 1, 3, 5, \ldots$
 
@@ -145,8 +145,8 @@ This is equivalent to $5.0 \times 10^{-5}/(600 \times 10^{-9}) = 83.3$ wavelengt
 
 (c) The central maximum shifts to compensate for this optical path difference. The central maximum now occurs where the path difference from the two slits equals the optical path difference introduced by the glass:
 
-$$\frac⧃LB⧄d \times y_{\text{shift}}⧃RB⧄⧃LB⧄D⧃RB⧄ = (n-1)t$$
-$$y_{\text{shift}} = \frac{(n-1)tD}{d} = \frac⧃LB⧄5.0 \times 10^{-5} \times 1.20⧃RB⧄⧃LB⧄0.50 \times 10^{-3}⧃RB⧄ = \frac⧃LB⧄6.0 \times 10^{-5}⧃RB⧄⧃LB⧄5.0 \times 10^{-4}⧃RB⧄ = 0.120\,\text{m} = 120\,\text{mm}$$
+$$\frac◆LB◆d \times y_{\text{shift}}◆RB◆◆LB◆D◆RB◆ = (n-1)t$$
+$$y_{\text{shift}} = \frac{(n-1)tD}{d} = \frac◆LB◆5.0 \times 10^{-5} \times 1.20◆RB◆◆LB◆0.50 \times 10^{-3}◆RB◆ = \frac◆LB◆6.0 \times 10^{-5}◆RB◆◆LB◆5.0 \times 10^{-4}◆RB◆ = 0.120\,\text{m} = 120\,\text{mm}$$
 
 The central maximum shifts by $120\,\text{mm}$ towards the slit with the glass (since the light through the glass is delayed, the central maximum moves to make the path through air longer to compensate).
 
@@ -228,6 +228,6 @@ $$2nt = m\lambda$$ (path difference must be an integer number of wavelengths, si
 
 For minimum thickness ($m = 1$):
 
-$$t = \frac⧃LB⧄\lambda⧃RB⧄⧃LB⧄2n⧃RB⧄ = \frac⧃LB⧄550⧃RB⧄⧃LB⧄2 \times 1.45⧃RB⧄ = \frac{550}{2.90} = 190\,\text{nm}$$
+$$t = \frac◆LB◆\lambda◆RB◆◆LB◆2n◆RB◆ = \frac◆LB◆550◆RB◆◆LB◆2 \times 1.45◆RB◆ = \frac{550}{2.90} = 190\,\text{nm}$$
 
 This is the minimum non-zero thickness for destructive reflection of $550\,\text{nm}$ light.

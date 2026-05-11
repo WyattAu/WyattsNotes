@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 **Solution:**
 
-Midpoint method: $\text{PED} = \frac⧃LB⧄\% \Delta Q_d⧃RB⧄⧃LB⧄\% \Delta P⧃RB⧄ = \frac⧃LB⧄\Delta Q / \bar{Q}⧃RB⧄⧃LB⧄\Delta P / \bar{P}⧃RB⧄$
+Midpoint method: $\text{PED} = \frac◆LB◆\% \Delta Q_d◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
 
 $\Delta Q = 600 - 800 = -200$, $\bar{Q} = (800 + 600)/2 = 700$
 
@@ -38,7 +38,7 @@ Total revenue **decreased** from $\pounds 2000$ to $\pounds 1800$. This is consi
 At $P = 3$: $Q_s = -100 + 50(3) = 50$
 At $P = 5$: $Q_s = -100 + 50(5) = 150$
 
-Midpoint method: $\text{PES} = \frac⧃LB⧄\% \Delta Q_s⧃RB⧄⧃LB⧄\% \Delta P⧃RB⧄ = \frac⧃LB⧄\Delta Q / \bar{Q}⧃RB⧄⧃LB⧄\Delta P / \bar{P}⧃RB⧄$
+Midpoint method: $\text{PES} = \frac◆LB◆\% \Delta Q_s◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
 
 $\Delta Q = 150 - 50 = 100$, $\bar{Q} = (50 + 150)/2 = 100$
 

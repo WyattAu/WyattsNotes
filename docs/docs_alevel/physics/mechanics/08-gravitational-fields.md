@@ -132,13 +132,13 @@ For a circular orbit of radius $r$, the centripetal force is provided by gravity
 
 $$\frac{GMm}{r^2} = \frac{mv^2}{r} \implies v^2 = \frac{GM}{r}$$
 
-The period is $T = \frac⧃LB⧄2\pi r⧃RB⧄⧃LB⧄v⧃RB⧄$, so $v = \frac⧃LB⧄2\pi r⧃RB⧄⧃LB⧄T⧃RB⧄$:
+The period is $T = \frac◆LB◆2\pi r◆RB◆◆LB◆v◆RB◆$, so $v = \frac◆LB◆2\pi r◆RB◆◆LB◆T◆RB◆$:
 
-$$\frac⧃LB⧄4\pi^2 r^2⧃RB⧄⧃LB⧄T^2⧃RB⧄ = \frac{GM}{r}$$
+$$\frac◆LB◆4\pi^2 r^2◆RB◆◆LB◆T^2◆RB◆ = \frac{GM}{r}$$
 
-$$\boxed{T^2 = \frac⧃LB⧄4\pi^2⧃RB⧄⧃LB⧄GM⧃RB⧄r^3}$$
+$$\boxed{T^2 = \frac◆LB◆4\pi^2◆RB◆◆LB◆GM◆RB◆r^3}$$
 
-Since $\frac⧃LB⧄4\pi^2⧃RB⧄⧃LB⧄GM⧃RB⧄$ is constant for a given central body, $T^2 \propto r^3$. $\square$
+Since $\frac◆LB◆4\pi^2◆RB◆◆LB◆GM◆RB◆$ is constant for a given central body, $T^2 \propto r^3$. $\square$
 
 ## 6. Escape Velocity
 
@@ -151,10 +151,10 @@ conservation of energy:
 
 $$\frac{1}{2}mv_e^2 - \frac{GMm}{r} = 0$$
 
-$$\boxed{v_e = \sqrt⧃LB⧄\frac{2GM}{r}⧃RB⧄}$$
+$$\boxed{v_e = \sqrt◆LB◆\frac{2GM}{r}◆RB◆}$$
 
 For Earth:
-$v_e = \sqrt⧃LB⧄\frac{2 \times 6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.37 \times 10^6}⧃RB⧄ = \sqrt⧃LB⧄1.25 \times 10^8⧃RB⧄ \approx 11.2$
+$v_e = \sqrt◆LB◆\frac{2 \times 6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.37 \times 10^6}◆RB◆ = \sqrt◆LB◆1.25 \times 10^8◆RB◆ \approx 11.2$
 km s$^{-1}$.
 
 **Intuition.** The escape velocity is $\sqrt{2}$ times the circular orbital velocity at the same
@@ -198,7 +198,7 @@ kinetic energy).
 Calculate the gravitational field strength at the surface of Mars, given its mass is $6.42 \times 10^{23}$ kg and its radius is $3.39 \times 10^6$ m.
 
 **Answer.**
-$g = \frac{GM}{r^2} = \frac⧃LB⧄6.67 \times 10^{-11} \times 6.42 \times 10^{23}⧃RB⧄⧃LB⧄(3.39 \times 10^6)^2⧃RB⧄ = \frac⧃LB⧄4.28 \times 10^{13}⧃RB⧄⧃LB⧄1.149 \times 10^{13}⧃RB⧄ = 3.73$
+$g = \frac{GM}{r^2} = \frac◆LB◆6.67 \times 10^{-11} \times 6.42 \times 10^{23}◆RB◆◆LB◆(3.39 \times 10^6)^2◆RB◆ = \frac◆LB◆4.28 \times 10^{13}◆RB◆◆LB◆1.149 \times 10^{13}◆RB◆ = 3.73$
 N kg$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
@@ -213,7 +213,7 @@ A satellite orbits Earth at an altitude of $400$ km. Calculate: (a) its orbital 
 **Answer.** $r = 6370 + 400 = 6770$ km $= 6.77 \times 10^6$ m. $GM = 3.976 \times 10^{14}$.
 
 (a)
-$v = \sqrt{GM/r} = \sqrt⧃LB⧄3.976 \times 10^{14}/6.77 \times 10^6⧃RB⧄ = \sqrt⧃LB⧄5.87 \times 10^7⧃RB⧄ = 7660$ m
+$v = \sqrt{GM/r} = \sqrt◆LB◆3.976 \times 10^{14}/6.77 \times 10^6◆RB◆ = \sqrt◆LB◆5.87 \times 10^7◆RB◆ = 7660$ m
 s$^{-1}$.
 
 (b) $T = 2\pi r/v = 2\pi \times 6.77 \times 10^6/7660 = 5550$ s $= 92.5$ min.
@@ -229,7 +229,7 @@ s$^{-1}$.
 Calculate the escape velocity from the Moon, given $M_{\mathrm{Moon}} = 7.35 \times 10^{22}$ kg and $R_{\mathrm{Moon}} = 1.74 \times 10^6$ m.
 
 **Answer.**
-$v_e = \sqrt{2GM/R} = \sqrt⧃LB⧄2 \times 6.67 \times 10^{-11} \times 7.35 \times 10^{22}/1.74 \times 10^6⧃RB⧄ = \sqrt⧃LB⧄5.64 \times 10^6⧃RB⧄ = 2370$
+$v_e = \sqrt{2GM/R} = \sqrt◆LB◆2 \times 6.67 \times 10^{-11} \times 7.35 \times 10^{22}/1.74 \times 10^6◆RB◆ = \sqrt◆LB◆5.64 \times 10^6◆RB◆ = 2370$
 m s$^{-1} = 2.37$ km s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Escape Velocity](#6-escape-velocity)
@@ -245,7 +245,7 @@ force provides the centripetal force:
 
 $\frac{Gm^2}{(2r)^2} = \frac{mv^2}{r}$. $\frac{Gm}{4r} = v^2$. $v = \sqrt{Gm/(4r)}$.
 
-$T = 2\pi r/v = 2\pi r\sqrt{4r/(Gm)} = 4\pi\sqrt{r^3/(Gm)} = 4\pi\sqrt⧃LB⧄(5 \times 10^{10})^3/(6.67 \times 10^{-11} \times 2 \times 10^{30})⧃RB⧄ = 4\pi\sqrt⧃LB⧄1.25 \times 10^{33}/1.334 \times 10^{20}⧃RB⧄ = 4\pi\sqrt⧃LB⧄9.37 \times 10^{12}⧃RB⧄ = 4\pi \times 3.06 \times 10^6 = 3.85 \times 10^7$
+$T = 2\pi r/v = 2\pi r\sqrt{4r/(Gm)} = 4\pi\sqrt{r^3/(Gm)} = 4\pi\sqrt◆LB◆(5 \times 10^{10})^3/(6.67 \times 10^{-11} \times 2 \times 10^{30})◆RB◆ = 4\pi\sqrt◆LB◆1.25 \times 10^{33}/1.334 \times 10^{20}◆RB◆ = 4\pi\sqrt◆LB◆9.37 \times 10^{12}◆RB◆ = 4\pi \times 3.06 \times 10^6 = 3.85 \times 10^7$
 s $\approx 1.2$ years.
 
 <b>If you get this wrong, revise:</b>
@@ -298,8 +298,8 @@ $\square$
 <summary>Problem 8</summary>
 A geostationary satellite orbits above the equator with a period of 24 hours. Calculate its orbital radius.
 
-**Answer.** $T = 86400$ s. $T^2 = \frac⧃LB⧄4\pi^2⧃RB⧄⧃LB⧄GM⧃RB⧄r^3$.
-$r^3 = \frac⧃LB⧄GMT^2⧃RB⧄⧃LB⧄4\pi^2⧃RB⧄ = \frac⧃LB⧄3.976 \times 10^{14} \times 7.46 \times 10^9⧃RB⧄⧃LB⧄39.48⧃RB⧄ = 7.52 \times 10^{22}$.
+**Answer.** $T = 86400$ s. $T^2 = \frac◆LB◆4\pi^2◆RB◆◆LB◆GM◆RB◆r^3$.
+$r^3 = \frac◆LB◆GMT^2◆RB◆◆LB◆4\pi^2◆RB◆ = \frac◆LB◆3.976 \times 10^{14} \times 7.46 \times 10^9◆RB◆◆LB◆39.48◆RB◆ = 7.52 \times 10^{22}$.
 $r = 4.22 \times 10^7$ m $= 42\,200$ km.
 
 <b>If you get this wrong, revise:</b>
@@ -375,7 +375,7 @@ $g_{\mathrm{GEO}} = 9.81 \times (6370/42156)^2 = 9.81 \times 0.0228 = 0.224$ N k
 For a uniform sphere of radius $R$ and mass $M$, the field strength at distance $r$ from the centre
 ($r \lt R$) is:
 
-$$g(r) = \frac⧃LB⧄GM_{\mathrm{enc}}⧃RB⧄⧃LB⧄r^2⧃RB⧄ = \frac{G(Mr^3/R^3)}{r^2} = \frac{GM}{R^3}\,r = g_0 \frac{r}{R}$$
+$$g(r) = \frac◆LB◆GM_{\mathrm{enc}}◆RB◆◆LB◆r^2◆RB◆ = \frac{G(Mr^3/R^3)}{r^2} = \frac{GM}{R^3}\,r = g_0 \frac{r}{R}$$
 
 where $M_{\mathrm{enc}} = M(r/R)^3$ is the mass enclosed within radius $r$ (shell theorem).
 
@@ -402,14 +402,14 @@ $$\frac{GMm}{r^2} = m\omega^2 r$$
 
 where $\omega = 2\pi/T$ and $T = 24 \times 3600 = 86400$ s.
 
-$$\frac{GM}{r^2} = \omega^2 r \implies r^3 = \frac⧃LB⧄GM⧃RB⧄⧃LB⧄\omega^2⧃RB⧄$$
+$$\frac{GM}{r^2} = \omega^2 r \implies r^3 = \frac◆LB◆GM◆RB◆◆LB◆\omega^2◆RB◆$$
 
-$$\boxed{r = \sqrt[3]{\frac⧃LB⧄GM⧃RB⧄⧃LB⧄\omega^2⧃RB⧄}}$$
+$$\boxed{r = \sqrt[3]{\frac◆LB◆GM◆RB◆◆LB◆\omega^2◆RB◆}}$$
 
 Substituting $GM = 3.976 \times 10^{14}$ N m$^2$ kg$^{-1}$ and
 $\omega = 2\pi/86400 = 7.272 \times 10^{-5}$ rad s$^{-1}$:
 
-$$r^3 = \frac⧃LB⧄3.976 \times 10^{14}⧃RB⧄⧃LB⧄(7.272 \times 10^{-5})^2⧃RB⧄ = \frac⧃LB⧄3.976 \times 10^{14}⧃RB⧄⧃LB⧄5.288 \times 10^{-9}⧃RB⧄ = 7.52 \times 10^{22}$$
+$$r^3 = \frac◆LB◆3.976 \times 10^{14}◆RB◆◆LB◆(7.272 \times 10^{-5})^2◆RB◆ = \frac◆LB◆3.976 \times 10^{14}◆RB◆◆LB◆5.288 \times 10^{-9}◆RB◆ = 7.52 \times 10^{22}$$
 
 $$r = \sqrt[3]{7.52 \times 10^{22}} = 4.22 \times 10^7 \mathrm{ m} = 42\,200 \mathrm{ km}$$
 
@@ -417,7 +417,7 @@ The altitude above Earth's surface is $h = r - R_E = 42200 - 6370 = 35\,830$ km.
 
 ### Orbital Speed
 
-$$v = \sqrt⧃LB⧄\frac{GM}{r}⧃RB⧄ = \sqrt⧃LB⧄\frac{3.976 \times 10^{14}}{4.22 \times 10^7}⧃RB⧄ = \sqrt⧃LB⧄9.42 \times 10^6⧃RB⧄ = 3070 \mathrm{ m s}^{-1}$$
+$$v = \sqrt◆LB◆\frac{GM}{r}◆RB◆ = \sqrt◆LB◆\frac{3.976 \times 10^{14}}{4.22 \times 10^7}◆RB◆ = \sqrt◆LB◆9.42 \times 10^6◆RB◆ = 3070 \mathrm{ m s}^{-1}$$
 
 **Verification:** $v = \omega r = (7.272 \times 10^{-5})(4.22 \times 10^7) = 3070$ m s$^{-1}$.
 $\checkmark$
@@ -505,7 +505,7 @@ To just reach infinity with zero speed (the minimum condition for escape):
 
 $$\frac{1}{2}mv_{\mathrm{esc}}^2 - \frac{GMm}{r} = 0$$
 
-$$\boxed{v_{\mathrm{esc}} = \sqrt⧃LB⧄\frac{2GM}{r}⧃RB⧄}$$
+$$\boxed{v_{\mathrm{esc}} = \sqrt◆LB◆\frac{2GM}{r}◆RB◆}$$
 
 ### Numerical Values
 
@@ -561,7 +561,7 @@ Show that the orbital radius of a geostationary satellite is approximately 42,00
 $r^3 = GM/\omega^2 = 3.976 \times 10^{14}/(7.272 \times 10^{-5})^2 = 7.52 \times 10^{22}$.
 $r = 4.22 \times 10^7$ m $= 42\,200$ km.
 
-$v = \sqrt{GM/r} = \sqrt⧃LB⧄3.976 \times 10^{14}/4.22 \times 10^7⧃RB⧄ = 3070$ m s$^{-1}$.
+$v = \sqrt{GM/r} = \sqrt◆LB◆3.976 \times 10^{14}/4.22 \times 10^7◆RB◆ = 3070$ m s$^{-1}$.
 
 Verification: $v = \omega r = (7.272 \times 10^{-5})(4.22 \times 10^7) = 3070$ m s$^{-1}$.
 $\checkmark$
@@ -618,7 +618,7 @@ $E_2 = -3.976 \times 10^{14} \times 800/(2 \times 1.05 \times 10^7) = -1.52 \tim
 $= 7.5$ GJ.
 
 (c)
-$v_{\mathrm{esc}} = \sqrt{2GM/r_1} = \sqrt⧃LB⧄2 \times 3.976 \times 10^{14}/7.0 \times 10^6⧃RB⧄ = \sqrt⧃LB⧄1.136 \times 10^8⧃RB⧄ = 10660$
+$v_{\mathrm{esc}} = \sqrt{2GM/r_1} = \sqrt◆LB◆2 \times 3.976 \times 10^{14}/7.0 \times 10^6◆RB◆ = \sqrt◆LB◆1.136 \times 10^8◆RB◆ = 10660$
 m s$^{-1} = 10.7$ km s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>

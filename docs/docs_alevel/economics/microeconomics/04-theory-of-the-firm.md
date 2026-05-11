@@ -124,11 +124,11 @@ $$\pi(Q) = TR(Q) - TC(Q)$$
 
 First-order condition:
 
-$$\frac⧃LB⧄d\pi⧃RB⧄⧃LB⧄dQ⧃RB⧄ = MR - MC = 0 \implies MR = MC$$
+$$\frac◆LB◆d\pi◆RB◆◆LB◆dQ◆RB◆ = MR - MC = 0 \implies MR = MC$$
 
 Second-order condition (for maximum):
 
-$$\frac⧃LB⧄d^2\pi⧃RB⧄⧃LB⧄dQ^2⧃RB⧄ = \frac{d(MR)}{dQ} - \frac{d(MC)}{dQ} < 0 \implies MC \mathrm{ cuts MR from below}$$
+$$\frac◆LB◆d^2\pi◆RB◆◆LB◆dQ^2◆RB◆ = \frac{d(MR)}{dQ} - \frac{d(MC)}{dQ} < 0 \implies MC \mathrm{ cuts MR from below}$$
 
 **Normal profit** is the minimum profit necessary to keep a firm in the industry (included in total
 cost as _opportunity cost_ of capital). **Economic profit** (supernormal profit) is profit above
@@ -232,7 +232,7 @@ producer.
 **Third-degree price discrimination**: the firm divides consumers into groups with different PEDs
 and charges a higher price to the less elastic group.
 
-$$\frac{P_1}{P_2} = \frac⧃LB⧄1 - \frac{1}{|\mathrm{PED}_2|}⧃RB⧄⧃LB⧄1 - \frac{1}{|\mathrm{PED}_1|}⧃RB⧄$$
+$$\frac{P_1}{P_2} = \frac◆LB◆1 - \frac{1}{|\mathrm{PED}_2|}◆RB◆◆LB◆1 - \frac{1}{|\mathrm{PED}_1|}◆RB◆$$
 
 Group with lower $|\mathrm{PED}|$ pays higher price.
 
@@ -1119,7 +1119,7 @@ The firm makes positive economic profit. In the long run, new firms enter, shift
 **Long-run equilibrium (zero economic profit):**
 $P = ATC$. $50 - 0.5Q = 200/Q + 10 + Q$.
 $50 - 0.5Q = 200/Q + 10 + Q \Rightarrow 40 - 1.5Q = 200/Q \Rightarrow 40Q - 1.5Q^2 = 200$.
-$1.5Q^2 - 40Q + 200 = 0 \Rightarrow Q = \frac⧃LB⧄40 \pm \sqrt{1600 - 1200}⧃RB⧄⧃LB⧄3⧃RB⧄ = \frac⧃LB⧄40 \pm 20⧃RB⧄⧃LB⧄3⧃RB⧄$.
+$1.5Q^2 - 40Q + 200 = 0 \Rightarrow Q = \frac◆LB◆40 \pm \sqrt{1600 - 1200}◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆40 \pm 20◆RB◆◆LB◆3◆RB◆$.
 $Q = 20$ or $Q = 6.67$.
 
 At $Q = 20$: $P = 40$, $ATC = 200/20 + 10 + 20 = 40$. $P = ATC$. Profit $= 0$.
@@ -1151,7 +1151,7 @@ The firm has an incentive to reduce costs (since it keeps any cost savings as pr
 **Rate of return regulation:** The regulator sets a maximum allowed return on capital of 10%. Capital = 500 (the fixed cost). Maximum profit $= 0.10 \times 500 = 50$.
 $TR - TC = 50 \Rightarrow P \times Q - 500 - 20Q = 50$. With $Q = 100 - P$: $P(100 - P) - 500 - 20(100 - P) = 50$.
 $100P - P^2 - 500 - 2000 + 20P = 50 \Rightarrow -P^2 + 120P - 2550 = 0 \Rightarrow P^2 - 120P + 2550 = 0$.
-$P = \frac⧃LB⧄120 \pm \sqrt{14400 - 10200}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄120 \pm 64.8⧃RB⧄⧃LB⧄2⧃RB⧄$. $P = 92.4$ or $P = 27.6$.
+$P = \frac◆LB◆120 \pm \sqrt{14400 - 10200}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆120 \pm 64.8◆RB◆◆LB◆2◆RB◆$. $P = 92.4$ or $P = 27.6$.
 $P = 27.6$, $Q = 72.4$. This is close to the allocatively efficient outcome ($P = MC = 20$, $Q = 80$).
 
 **Comparison:**

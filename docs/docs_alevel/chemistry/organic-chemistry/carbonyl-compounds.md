@@ -688,7 +688,7 @@ The iodoform reaction cleaves a methyl ketone to a carboxylic acid with one fewe
 
 $$\text{Theoretical moles of aspirin} = \frac{5.00}{138.12} = 0.0362\,\mathrm{mol}$$
 $$\text{Theoretical mass} = 0.0362 \times 180.16 = 6.52\,\mathrm{g}$$
-$$\text{Percentage yield} = \frac⧃LB⧄\text{actual mass}⧃RB⧄⧃LB⧄6.52⧃RB⧄ \times 100$$
+$$\text{Percentage yield} = \frac◆LB◆\text{actual mass}◆RB◆◆LB◆6.52◆RB◆ \times 100$$
 
 ## Exam-Style Questions with Full Mark Schemes
 

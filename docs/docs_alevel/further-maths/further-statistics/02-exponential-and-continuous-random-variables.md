@@ -116,7 +116,7 @@ $$F(x) = P(X \leq x) = \int_0^x \lambda e^{-\lambda t}\,dt = \left[-e^{-\lambda 
 
 $$\boxed{F(x) = 1 - e^{-\lambda x}, \quad x \geq 0}$$
 
-### 2.3 Proof that $E(X) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄$
+### 2.3 Proof that $E(X) = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$
 
 ### Proof
 
@@ -133,14 +133,14 @@ $du = dx$, $v = -e^{-\lambda x}$.
 $$
 \begin{aligned}
 E(X) &= \left[-xe^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}e^{-\lambda x}\,dx \\
-&= \lim_{x\to\infty}(-xe^{-\lambda x}) + 0 + \left[-\frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄e^{-\lambda x}\right]_0^{\infty} \\
-&= 0 + \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄ \quad \blacksquare
+&= \lim_{x\to\infty}(-xe^{-\lambda x}) + 0 + \left[-\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆e^{-\lambda x}\right]_0^{\infty} \\
+&= 0 + \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ \quad \blacksquare
 \end{aligned}
 $$
 
 Note: $\lim_{x\to\infty}xe^{-\lambda x} = 0$ by L'Hôpital's rule (exponential decay dominates).
 
-### 2.4 Proof that $\mathrm{Var}(X) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄$
+### 2.4 Proof that $\mathrm{Var}(X) = \frac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆$
 
 ### Proof
 
@@ -155,13 +155,13 @@ $du = 2x\,dx$, $v = -e^{-\lambda x}$.
 $$
 \begin{aligned}
 E(X^2) &= \left[-x^2 e^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}2x\,e^{-\lambda x}\,dx \\
-&= 0 + 2\cdot\frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄\cdot E(X) = \frac⧃LB⧄2⧃RB⧄⧃LB⧄\lambda⧃RB⧄\cdot\frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = \frac⧃LB⧄2⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄
+&= 0 + 2\cdot\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\cdot E(X) = \frac◆LB◆2◆RB◆◆LB◆\lambda◆RB◆\cdot\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆\lambda^2◆RB◆
 \end{aligned}
 $$
 
-$$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \frac⧃LB⧄2⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄ - \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄ \quad \blacksquare$$
+$$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \frac◆LB◆2◆RB◆◆LB◆\lambda^2◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆ \quad \blacksquare$$
 
-$$\boxed{E(X) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄, \qquad \mathrm{Var}(X) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄, \qquad \sigma = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄}$$
+$$\boxed{E(X) = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆, \qquad \mathrm{Var}(X) = \frac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆, \qquad \sigma = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆}$$
 
 ### 2.5 The memoryless property
 
@@ -173,7 +173,7 @@ $$P(X > s + t \mid X > s) = P(X > t)$$
 
 $$
 \begin{aligned}
-P(X > s + t \mid X > s) &= \frac{P(X > s+t)}{P(X > s)} = \frac⧃LB⧄e^{-\lambda(s+t)}⧃RB⧄⧃LB⧄e^{-\lambda s}⧃RB⧄ \\
+P(X > s + t \mid X > s) &= \frac{P(X > s+t)}{P(X > s)} = \frac◆LB◆e^{-\lambda(s+t)}◆RB◆◆LB◆e^{-\lambda s}◆RB◆ \\
 &= e^{-\lambda t} = P(X > t) \quad \blacksquare
 \end{aligned}
 $$
@@ -197,7 +197,7 @@ A **Poisson process** with rate $\lambda$ satisfies:
 
 **Proof sketch that inter-arrival times are exponential.** Let $T$ be the time until the first
 event.
-$P(T > t) = P(\mathrm{no events in }[0,t]) = P(N(t) = 0) = \dfrac⧃LB⧄e^{-\lambda t}(\lambda t)^0⧃RB⧄⧃LB⧄0!⧃RB⧄ = e^{-\lambda t}$.
+$P(T > t) = P(\mathrm{no events in }[0,t]) = P(N(t) = 0) = \dfrac◆LB◆e^{-\lambda t}(\lambda t)^0◆RB◆◆LB◆0!◆RB◆ = e^{-\lambda t}$.
 
 So $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp}(\lambda)$. $\blacksquare$
 
@@ -205,9 +205,9 @@ So $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp}(\lambda
 
 For the exponential distribution:
 
-$$F(x) = 1 - e^{-\lambda x} = p \implies x = -\frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄\ln(1-p)$$
+$$F(x) = 1 - e^{-\lambda x} = p \implies x = -\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln(1-p)$$
 
-The median is $x_{0.5} = -\dfrac⧃LB⧄\ln(0.5)⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄\lambda⧃RB⧄$.
+The median is $x_{0.5} = -\dfrac◆LB◆\ln(0.5)◆RB◆◆LB◆\lambda◆RB◆ = \dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$.
 
 <hr />
 
@@ -221,7 +221,7 @@ $P(X > 3) = e^{-0.5 \times 3} = e^{-1.5} \approx 0.2231$.
 
 $P(1 < X < 4) = F(4) - F(1) = (1-e^{-2}) - (1-e^{-0.5}) = e^{-0.5} - e^{-2} \approx 0.6065 - 0.1353 = 0.4712$.
 
-Median $= \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄0.5⧃RB⧄ = 2\ln 2 \approx 1.386$.
+Median $= \dfrac◆LB◆\ln 2◆RB◆◆LB◆0.5◆RB◆ = 2\ln 2 \approx 1.386$.
 
 ### 3.2 Continuous random variable from a PDF
 
@@ -257,9 +257,9 @@ against $H_1: \lambda \neq 0.005$.
 Under $H_0$: $E(X) = 1/\lambda = 200$ hours. Since $n$ is large, use the approximate normal
 distribution of $\bar{X}$:
 
-$\bar{X} \sim N\!\left(\frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄, \frac⧃LB⧄1⧃RB⧄⧃LB⧄n\lambda^2⧃RB⧄\right) = N(200, 4000)$ approximately.
+$\bar{X} \sim N\!\left(\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆, \frac◆LB◆1◆RB◆◆LB◆n\lambda^2◆RB◆\right) = N(200, 4000)$ approximately.
 
-$z = \dfrac⧃LB⧄420 - 200⧃RB⧄⧃LB⧄\sqrt{4000}⧃RB⧄ = \dfrac{220}{63.25} = 3.48$.
+$z = \dfrac◆LB◆420 - 200◆RB◆◆LB◆\sqrt{4000}◆RB◆ = \dfrac{220}{63.25} = 3.48$.
 
 $|z| = 3.48 > 1.96$, so reject $H_0$.
 
@@ -279,7 +279,7 @@ $P(X > 1) = e^{-2(1)} = e^{-2} \approx 0.1353$.
 $P(0.5 < X < 2) = (1-e^{-4}) - (1-e^{-1}) = e^{-1} - e^{-4} \approx 0.3679 - 0.0183 = 0.3496$.
 
 90th percentile:
-$F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -\dfrac⧃LB⧄\ln(0.1)⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 1.151$.
+$F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -\dfrac◆LB◆\ln(0.1)◆RB◆◆LB◆2◆RB◆ \approx 1.151$.
 
 **If you get this wrong, revise:** [Percentiles](#27-percentiles) — Section 2.7.
 
@@ -313,7 +313,7 @@ Prove the memoryless property of the exponential distribution.
 
 <details>
 <summary>Solution 3</summary>
-$P(X > s+t \mid X > s) = \dfrac{P(X > s+t)}{P(X > s)} = \dfrac⧃LB⧄e^{-\lambda(s+t)}⧃RB⧄⧃LB⧄e^{-\lambda s}⧃RB⧄ = e^{-\lambda t} = P(X > t)$. $\blacksquare$
+$P(X > s+t \mid X > s) = \dfrac{P(X > s+t)}{P(X > s)} = \dfrac◆LB◆e^{-\lambda(s+t)}◆RB◆◆LB◆e^{-\lambda s}◆RB◆ = e^{-\lambda t} = P(X > t)$. $\blacksquare$
 
 This uses the survival function $P(X > x) = e^{-\lambda x}$.
 
@@ -401,11 +401,11 @@ $E(X) = \int_0^{\infty}x\lambda e^{-\lambda x}\,dx$.
 
 Let $u = x$, $dv = \lambda e^{-\lambda x}\,dx$, so $du = dx$, $v = -e^{-\lambda x}$.
 
-$E(X) = \left[-xe^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}e^{-\lambda x}\,dx = 0 + \left[-\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄e^{-\lambda x}\right]_0^{\infty} = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄$.
+$E(X) = \left[-xe^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}e^{-\lambda x}\,dx = 0 + \left[-\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆e^{-\lambda x}\right]_0^{\infty} = \dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$.
 $\blacksquare$
 
 **If you get this wrong, revise:**
-[Proof that $E(X) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄$](#23-proof-that-ex--frac1lambda) — Section 2.3.
+[Proof that $E(X) = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$](#23-proof-that-ex--frac1lambda) — Section 2.3.
 
 </details>
 
@@ -463,13 +463,13 @@ $$P(X > s + t \mid X > s) = P(X > t)$$
 
 By definition of conditional probability:
 
-$$P(X > s + t \mid X > s) = \frac⧃LB⧄P(X > s + t \,\cap\, X > s)⧃RB⧄⧃LB⧄P(X > s)⧃RB⧄ = \frac{P(X > s + t)}{P(X > s)}$$
+$$P(X > s + t \mid X > s) = \frac◆LB◆P(X > s + t \,\cap\, X > s)◆RB◆◆LB◆P(X > s)◆RB◆ = \frac{P(X > s + t)}{P(X > s)}$$
 
 since $X > s + t$ implies $X > s$.
 
 Using the survival function $S(x) = P(X > x) = e^{-\lambda x}$:
 
-$$\frac{P(X > s + t)}{P(X > s)} = \frac⧃LB⧄e^{-\lambda(s+t)}⧃RB⧄⧃LB⧄e^{-\lambda s}⧃RB⧄ = e^{-\lambda t} = P(X > t) \quad \blacksquare$$
+$$\frac{P(X > s + t)}{P(X > s)} = \frac◆LB◆e^{-\lambda(s+t)}◆RB◆◆LB◆e^{-\lambda s}◆RB◆ = e^{-\lambda t} = P(X > t) \quad \blacksquare$$
 
 ### 5.2 Converse: exponential is the only continuous memoryless distribution
 
@@ -522,7 +522,7 @@ $$P(T > t) = P(\mathrm{no events in }[0,t])$$
 
 Since the number of events in $[0,t]$ follows $\mathrm{Po}(\lambda t)$:
 
-$$P(N(t) = 0) = \frac⧃LB⧄e^{-\lambda t}(\lambda t)^0⧃RB⧄⧃LB⧄0!⧃RB⧄ = e^{-\lambda t}$$
+$$P(N(t) = 0) = \frac◆LB◆e^{-\lambda t}(\lambda t)^0◆RB◆◆LB◆0!◆RB◆ = e^{-\lambda t}$$
 
 Therefore $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp}(\lambda)$.
 $\blacksquare$
@@ -552,7 +552,7 @@ $P(N \geq 3) = 1 - P(N \leq 2) = 1 - e^{-2.5}(1 + 2.5 + 2.5^2/2) = 1 - 0.0821 \t
 (c) Find the median inter-arrival time.
 
 Median
-$= \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄5⧃RB⧄ \approx 0.139\,\mathrm{hours} \approx 8.3\,\mathrm{minutes}$.
+$= \dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆ = \dfrac◆LB◆\ln 2◆RB◆◆LB◆5◆RB◆ \approx 0.139\,\mathrm{hours} \approx 8.3\,\mathrm{minutes}$.
 
 <hr />
 
@@ -662,12 +662,12 @@ essentially zero and clearly wrong.
 <details>
 <summary>Q1. $X \sim \mathrm{Exp}(\lambda)$. Find the value of $\lambda$ such that $P(X > 2) = 0.3$, and hence find $E(X)$ and the 80th percentile.</summary>
 
-$P(X > 2) = e^{-2\lambda} = 0.3 \implies -2\lambda = \ln(0.3) \implies \lambda = \dfrac⧃LB⧄-\ln(0.3)⧃RB⧄⧃LB⧄2⧃RB⧄ = \dfrac{1.204}{2} = 0.602$.
+$P(X > 2) = e^{-2\lambda} = 0.3 \implies -2\lambda = \ln(0.3) \implies \lambda = \dfrac◆LB◆-\ln(0.3)◆RB◆◆LB◆2◆RB◆ = \dfrac{1.204}{2} = 0.602$.
 
 $E(X) = 1/0.602 \approx 1.661$.
 
 80th percentile:
-$F(x) = 0.8 \implies 1 - e^{-0.602x} = 0.8 \implies e^{-0.602x} = 0.2 \implies x = \dfrac⧃LB⧄-\ln(0.2)⧃RB⧄⧃LB⧄0.602⧃RB⧄ = \dfrac{1.609}{0.602} \approx 2.673$.
+$F(x) = 0.8 \implies 1 - e^{-0.602x} = 0.8 \implies e^{-0.602x} = 0.2 \implies x = \dfrac◆LB◆-\ln(0.2)◆RB◆◆LB◆0.602◆RB◆ = \dfrac{1.609}{0.602} \approx 2.673$.
 
 </details>
 
@@ -678,7 +678,7 @@ $\int_0^4 kx(4-x)\,dx = k\int_0^4 (4x - x^2)\,dx = k\left[2x^2 - \dfrac{x^3}{3}\
 
 $E(X) = \dfrac{3}{32}\int_0^4 (4x^2 - x^3)\,dx = \dfrac{3}{32}\left[\dfrac{4x^3}{3} - \dfrac{x^4}{4}\right]_0^4 = \dfrac{3}{32}\left(\dfrac{256}{3} - 64\right) = \dfrac{3}{32}\left(\dfrac{256 - 192}{3}\right) = \dfrac{64}{32} = 2$.
 
-$E(X^2) = \dfrac{3}{32}\int_0^4 (4x^3 - x^4)\,dx = \dfrac{3}{32}\left[x^4 - \dfrac{x^5}{5}\right]_0^4 = \dfrac{3}{32}(256 - 204.8) = \dfrac⧃LB⧄3 \times 51.2⧃RB⧄⧃LB⧄32⧃RB⧄ = 4.8$.
+$E(X^2) = \dfrac{3}{32}\int_0^4 (4x^3 - x^4)\,dx = \dfrac{3}{32}\left[x^4 - \dfrac{x^5}{5}\right]_0^4 = \dfrac{3}{32}(256 - 204.8) = \dfrac◆LB◆3 \times 51.2◆RB◆◆LB◆32◆RB◆ = 4.8$.
 
 $\mathrm{Var}(X) = 4.8 - 4 = 0.8$.
 
@@ -791,7 +791,7 @@ $$P(X < Y) = \int_0^{\infty} \int_x^{\infty} \lambda_1 e^{-\lambda_1 x} \cdot \l
 
 $$= \int_0^{\infty} \lambda_1 e^{-\lambda_1 x} \cdot e^{-\lambda_2 x}\,dx = \lambda_1 \int_0^{\infty} e^{-(\lambda_1+\lambda_2)x}\,dx$$
 
-$$= \frac⧃LB⧄\lambda_1⧃RB⧄⧃LB⧄\lambda_1 + \lambda_2⧃RB⧄$$
+$$= \frac◆LB◆\lambda_1◆RB◆◆LB◆\lambda_1 + \lambda_2◆RB◆$$
 
 For example, if $\lambda_1 = \lambda_2$: $P(X < Y) = \dfrac{1}{2}$ (by symmetry).
 
@@ -813,7 +813,7 @@ $P(1 < X < 3) = F(3) - F(1) = \left(\dfrac{27}{16} - \dfrac{27}{32}\right) - \le
 
 By the CLT, $\overline{X} \approx N(10, 2)$ approximately.
 
-$$P(\overline{X} > 12) = P\!\left(Z > \frac⧃LB⧄12-10⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄\right) = P(Z > 1.414) = 1 - 0.9214 = \boxed{0.0786}$$
+$$P(\overline{X} > 12) = P\!\left(Z > \frac◆LB◆12-10◆RB◆◆LB◆\sqrt{2}◆RB◆\right) = P(Z > 1.414) = 1 - 0.9214 = \boxed{0.0786}$$
 
 ### Example 8.6: Transformation of a continuous random variable
 
@@ -831,7 +831,7 @@ So $Y \sim \mathrm{U}(0,1)$.
 
 **Solution.** **Mode:** The PDF peaks at $x = 1$, so mode $= \boxed{1}$.
 
-**Median:** For $m \leq 1$: $\displaystyle\int_0^m 2x\,dx = m^2$. Set $m^2 = 0.5 \implies m = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ \approx 0.707$.
+**Median:** For $m \leq 1$: $\displaystyle\int_0^m 2x\,dx = m^2$. Set $m^2 = 0.5 \implies m = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \approx 0.707$.
 
 **Mean:** $E(X) = \displaystyle\int_0^1 2x^2\,dx + \int_1^2 2x(2-x)\,dx = \dfrac{2}{3} + \left[2x^2 - \dfrac{2x^3}{3}\right]_1^2 = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$.
 
@@ -865,7 +865,7 @@ The PDF should be $f(x) = x$ for $0 \leq x \leq 1$ and $f(x) = 2-x$ for $1 < x \
 
 | Pitfall | Correct Approach |
 |---|---|
-| Confusing the rate $\lambda$ with the mean $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄$ for exponential distributions | $E(X) = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄$; the rate parameter is $\lambda$ |
+| Confusing the rate $\lambda$ with the mean $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ for exponential distributions | $E(X) = \dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$; the rate parameter is $\lambda$ |
 | Forgetting that the total area under a PDF must equal 1 | Always verify: $\displaystyle\int_{-\infty}^{\infty} f(x)\,dx = 1$ |
 | Applying the exponential memoryless property to other distributions | Only the exponential distribution has this property |
 | Using $P(a < X < b) = f(b) - f(a)$ | This is for CDFs, not PDFs. Use $\displaystyle\int_a^b f(x)\,dx$ |
@@ -911,7 +911,7 @@ Median $m$: $\dfrac{3}{4}\!\left(m^2-\dfrac{m^3}{3}\right) = \dfrac{1}{2}$. By i
 <details>
 <summary>Solution</summary>
 
-$$P(X > s+t \mid X > s) = \frac{P(X > s+t)}{P(X > s)} = \frac⧃LB⧄e^{-\lambda(s+t)}⧃RB⧄⧃LB⧄e^{-\lambda s}⧃RB⧄ = e^{-\lambda t} = P(X > t)$$
+$$P(X > s+t \mid X > s) = \frac{P(X > s+t)}{P(X > s)} = \frac◆LB◆e^{-\lambda(s+t)}◆RB◆◆LB◆e^{-\lambda s}◆RB◆ = e^{-\lambda t} = P(X > t)$$
 
 $\blacksquare$
 
@@ -939,14 +939,14 @@ The Central Limit Theorem connects the exponential and uniform distributions to 
 
 | Distribution | PDF | $E(X)$ | $\mathrm{Var}(X)$ |
 |---|---|---|---|
-| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄$ | $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄$ |
+| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆$ |
 | $\mathrm{U}(a,b)$ | $\dfrac{1}{b-a}$, $a \leq x \leq b$ | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ |
 
 | Property | Exponential | Uniform |
 |---|---|---|
 | Memoryless | Yes | No |
 | CDF | $1 - e^{-\lambda x}$ | $\dfrac{x-a}{b-a}$ |
-| Median | $\dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄\lambda⧃RB⧄$ | $\dfrac{a+b}{2}$ |
+| Median | $\dfrac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac{a+b}{2}$ |
 
 ---
 
@@ -968,7 +968,7 @@ $\lambda = \dfrac{1}{500} = 0.002$.
 
 **(b)** $P(400 < X < 600) = e^{-0.8} - e^{-1.2} \approx 0.449 - 0.301 = \boxed{0.148}$.
 
-**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄0.002⧃RB⧄ = \boxed{346.6\,\text{hours}}$.
+**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = \dfrac◆LB◆\ln 2◆RB◆◆LB◆0.002◆RB◆ = \boxed{346.6\,\text{hours}}$.
 
 </details>
 
@@ -1002,7 +1002,7 @@ Properties:
 - If $X$ and $Y$ are independent, $M_{X+Y}(t) = M_X(t)M_Y(t)$
 
 MGFs:
-- $\mathrm{Exp}(\lambda)$: $M(t) = \dfrac⧃LB⧄\lambda⧃RB⧄⧃LB⧄\lambda-t⧃RB⧄$ for $t < \lambda$
+- $\mathrm{Exp}(\lambda)$: $M(t) = \dfrac◆LB◆\lambda◆RB◆◆LB◆\lambda-t◆RB◆$ for $t < \lambda$
 - $\mathrm{U}(a,b)$: $M(t) = \dfrac{e^{bt}-e^{at}}{(b-a)t}$
 
 ### 14.2 The cumulative distribution function approach
@@ -1028,24 +1028,24 @@ Find the MGF of $X \sim \mathrm{Exp}(\lambda)$ and use it to find $E(X)$ and $\m
 <details>
 <summary>Solution</summary>
 
-$M(t) = \displaystyle\int_0^{\infty} e^{tx}\lambda e^{-\lambda x}\,dx = \lambda\displaystyle\int_0^{\infty} e^{-(\lambda-t)x}\,dx = \frac⧃LB⧄\lambda⧃RB⧄⧃LB⧄\lambda-t⧃RB⧄$ for $t < \lambda$.
+$M(t) = \displaystyle\int_0^{\infty} e^{tx}\lambda e^{-\lambda x}\,dx = \lambda\displaystyle\int_0^{\infty} e^{-(\lambda-t)x}\,dx = \frac◆LB◆\lambda◆RB◆◆LB◆\lambda-t◆RB◆$ for $t < \lambda$.
 
-$M'(t) = \dfrac⧃LB⧄\lambda⧃RB⧄⧃LB⧄(\lambda-t)^2⧃RB⧄$. $M'(0) = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄ = E(X)$. ✓
+$M'(t) = \dfrac◆LB◆\lambda◆RB◆◆LB◆(\lambda-t)^2◆RB◆$. $M'(0) = \dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ = E(X)$. ✓
 
-$M''(t) = \dfrac⧃LB⧄2\lambda⧃RB⧄⧃LB⧄(\lambda-t)^3⧃RB⧄$. $M''(0) = \dfrac⧃LB⧄2⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄ = E(X^2)$.
+$M''(t) = \dfrac◆LB◆2\lambda◆RB◆◆LB◆(\lambda-t)^3◆RB◆$. $M''(0) = \dfrac◆LB◆2◆RB◆◆LB◆\lambda^2◆RB◆ = E(X^2)$.
 
-$\mathrm{Var}(X) = \dfrac⧃LB⧄2⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄ - \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄ = \boxed{\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄}$. ✓
+$\mathrm{Var}(X) = \dfrac◆LB◆2◆RB◆◆LB◆\lambda^2◆RB◆ - \dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆ = \boxed{\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆}$. ✓
 
 </details>
 
 ### Question 14
 
-**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄\ln X$ follows $\mathrm{Exp}(\lambda)$.
+**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln X$ follows $\mathrm{Exp}(\lambda)$.
 
 <details>
 <summary>Solution</summary>
 
-$F_Y(y) = P(Y \leq y) = P\!\left(-\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\lambda⧃RB⧄\ln X \leq y\right) = P(\ln X \geq -\lambda y) = P(X \geq e^{-\lambda y})$.
+$F_Y(y) = P(Y \leq y) = P\!\left(-\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln X \leq y\right) = P(\ln X \geq -\lambda y) = P(X \geq e^{-\lambda y})$.
 
 $= 1 - e^{-\lambda y}$ for $y \geq 0$.
 

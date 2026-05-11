@@ -61,7 +61,7 @@ Given $(r, \theta)$, the Cartesian coordinates are $(r\cos\theta, r\sin\theta)$.
 **Example.** Convert $(4, \pi/3)$ to Cartesian.
 
 $x = 4\cos(\pi/3) = 4 \cdot \frac{1}{2} = 2$,
-$y = 4\sin(\pi/3) = 4 \cdot \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = 2\sqrt{3}$.
+$y = 4\sin(\pi/3) = 4 \cdot \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ = 2\sqrt{3}$.
 
 The Cartesian coordinates are $(2, 2\sqrt{3})$.
 
@@ -197,7 +197,7 @@ $$\boxed{A = \frac{1}{2}\int_\alpha^\beta r^2\,d\theta}$$
 ### Proof of the polar area formula
 
 Divide the angular range $[\alpha, \beta]$ into $n$ equal sectors of angle
-$\Delta\theta = \dfrac⧃LB⧄\beta-\alpha⧃RB⧄⧃LB⧄n⧃RB⧄$.
+$\Delta\theta = \dfrac◆LB◆\beta-\alpha◆RB◆◆LB◆n◆RB◆$.
 
 Each sector is approximately a circular sector of radius $r(\theta_i)$ and angle $\Delta\theta$,
 with area:
@@ -216,9 +216,9 @@ $$A = \lim_{n\to\infty}\sum_{i=1}^{n}\frac{1}{2}r^2(\theta_i)\,\Delta\theta = \f
 
 One petal is traced from $\theta = -\pi/6$ to $\theta = \pi/6$ (where $r = 0$).
 
-$$A = \frac{1}{2}\int_{-\pi/6}^{\pi/6}\cos^2 3\theta\,d\theta = \frac{1}{2}\int_{-\pi/6}^{\pi/6}\frac⧃LB⧄1+\cos 6\theta⧃RB⧄⧃LB⧄2⧃RB⧄\,d\theta$$
+$$A = \frac{1}{2}\int_{-\pi/6}^{\pi/6}\cos^2 3\theta\,d\theta = \frac{1}{2}\int_{-\pi/6}^{\pi/6}\frac◆LB◆1+\cos 6\theta◆RB◆◆LB◆2◆RB◆\,d\theta$$
 
-$$= \frac{1}{4}\left[\theta + \frac⧃LB⧄\sin 6\theta⧃RB⧄⧃LB⧄6⧃RB⧄\right]_{-\pi/6}^{\pi/6} = \frac{1}{4}\left(\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄ - \left(-\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄\right)\right) = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄$$
+$$= \frac{1}{4}\left[\theta + \frac◆LB◆\sin 6\theta◆RB◆◆LB◆6◆RB◆\right]_{-\pi/6}^{\pi/6} = \frac{1}{4}\left(\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ - \left(-\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆\right)\right) = \frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆$$
 
 **Example.** Find the area enclosed by the cardioid $r = a(1 + \cos\theta)$.
 
@@ -226,9 +226,9 @@ By symmetry, compute from $0$ to $\pi$ and double:
 
 $$A = 2\cdot\frac{1}{2}\int_0^\pi a^2(1+\cos\theta)^2\,d\theta = a^2\int_0^\pi(1+2\cos\theta+\cos^2\theta)\,d\theta$$
 
-$$= a^2\int_0^\pi\left(1+2\cos\theta+\frac⧃LB⧄1+\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta = a^2\int_0^\pi\left(\frac{3}{2}+2\cos\theta+\frac⧃LB⧄\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta$$
+$$= a^2\int_0^\pi\left(1+2\cos\theta+\frac◆LB◆1+\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta = a^2\int_0^\pi\left(\frac{3}{2}+2\cos\theta+\frac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta$$
 
-$$= a^2\left[\frac⧃LB⧄3\theta⧃RB⧄⧃LB⧄2⧃RB⧄ + 2\sin\theta + \frac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^\pi = a^2\cdot\frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄ = \boxed{\frac⧃LB⧄3\pi a^2⧃RB⧄⧃LB⧄2⧃RB⧄}$$
+$$= a^2\left[\frac◆LB◆3\theta◆RB◆◆LB◆2◆RB◆ + 2\sin\theta + \frac◆LB◆\sin 2\theta◆RB◆◆LB◆4◆RB◆\right]_0^\pi = a^2\cdot\frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ = \boxed{\frac◆LB◆3\pi a^2◆RB◆◆LB◆2◆RB◆}$$
 
 ### 4.2 Area between two polar curves
 
@@ -250,18 +250,18 @@ subtract $r_2^2$ from $r_1^2$, not $r_2$ from $r_1$.
 Since $x = r\cos\theta$ and $y = r\sin\theta$, we can treat these as parametric equations with
 parameter $\theta$:
 
-$$\frac⧃LB⧄dx⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = \frac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄\cos\theta - r\sin\theta$$
+$$\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = \frac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆\cos\theta - r\sin\theta$$
 
-$$\frac⧃LB⧄dy⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = \frac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄\sin\theta + r\cos\theta$$
+$$\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = \frac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆\sin\theta + r\cos\theta$$
 
 Therefore:
 
-$$\boxed{\frac{dy}{dx} = \frac⧃LB⧄\frac{dr}{d\theta}\sin\theta + r\cos\theta⧃RB⧄⧃LB⧄\frac{dr}{d\theta}\cos\theta - r\sin\theta⧃RB⧄}$$
+$$\boxed{\frac{dy}{dx} = \frac◆LB◆\frac{dr}{d\theta}\sin\theta + r\cos\theta◆RB◆◆LB◆\frac{dr}{d\theta}\cos\theta - r\sin\theta◆RB◆}$$
 
 ### Proof of the tangent line formula
 
 This follows directly from the parametric differentiation rule
-$\dfrac{dy}{dx} = \dfrac⧃LB⧄dy/d\theta⧃RB⧄⧃LB⧄dx/d\theta⧃RB⧄$ applied to $x(\theta) = r(\theta)\cos\theta$ and
+$\dfrac{dy}{dx} = \dfrac◆LB◆dy/d\theta◆RB◆◆LB◆dx/d\theta◆RB◆$ applied to $x(\theta) = r(\theta)\cos\theta$ and
 $y(\theta) = r(\theta)\sin\theta$, using the product rule for each derivative. $\blacksquare$
 
 ### 5.2 Tangents at the pole
@@ -282,22 +282,22 @@ petals, each passing through the pole twice).
 $r = 1 + \cos(\pi/3) = 3/2$. The point is
 $(x, y) = (r\cos\theta, r\sin\theta) = (3/4, 3\sqrt{3}/4)$.
 
-$\dfrac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = -\sin\theta$, so at $\theta = \pi/3$: $\dfrac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = -\sqrt{3}/2$.
+$\dfrac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆ = -\sin\theta$, so at $\theta = \pi/3$: $\dfrac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆ = -\sqrt{3}/2$.
 
-$$\frac{dy}{dx} = \frac⧃LB⧄(-\sqrt{3}/2)(\sqrt{3}/2) + (3/2)(1/2)⧃RB⧄⧃LB⧄(-\sqrt{3}/2)(1/2) - (3/2)(\sqrt{3}/2)⧃RB⧄ = \frac⧃LB⧄-3/4 + 3/4⧃RB⧄⧃LB⧄-\sqrt{3}/4 - 3\sqrt{3}/4⧃RB⧄ = \frac⧃LB⧄0⧃RB⧄⧃LB⧄-\sqrt{3}⧃RB⧄ = 0$$
+$$\frac{dy}{dx} = \frac◆LB◆(-\sqrt{3}/2)(\sqrt{3}/2) + (3/2)(1/2)◆RB◆◆LB◆(-\sqrt{3}/2)(1/2) - (3/2)(\sqrt{3}/2)◆RB◆ = \frac◆LB◆-3/4 + 3/4◆RB◆◆LB◆-\sqrt{3}/4 - 3\sqrt{3}/4◆RB◆ = \frac◆LB◆0◆RB◆◆LB◆-\sqrt{3}◆RB◆ = 0$$
 
 The tangent is horizontal: $y = 3\sqrt{3}/4$.
 
 ### 5.3 Horizontal and vertical tangents
 
-**Horizontal tangents** occur when $\dfrac⧃LB⧄dy⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = 0$ (provided
-$\dfrac⧃LB⧄dx⧃RB⧄⧃LB⧄d\theta⧃RB⧄ \neq 0$):
+**Horizontal tangents** occur when $\dfrac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = 0$ (provided
+$\dfrac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ \neq 0$):
 
-$$\frac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄\sin\theta + r\cos\theta = 0$$
+$$\frac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆\sin\theta + r\cos\theta = 0$$
 
-**Vertical tangents** occur when $\dfrac⧃LB⧄dx⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = 0$ (provided $\dfrac⧃LB⧄dy⧃RB⧄⧃LB⧄d\theta⧃RB⧄ \neq 0$):
+**Vertical tangents** occur when $\dfrac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = 0$ (provided $\dfrac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ \neq 0$):
 
-$$\frac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄\cos\theta - r\sin\theta = 0$$
+$$\frac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆\cos\theta - r\sin\theta = 0$$
 
 <hr />
 
@@ -308,7 +308,7 @@ $$\frac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄\cos\theta - r\sin\theta = 0$$
 | Conversion                | $x = r\cos\theta$, $y = r\sin\theta$, $r^2 = x^2+y^2$                             |
 | Circle $r = 2a\cos\theta$ | Centre $(a,0)$, radius $a$                                                        |
 | Area                      | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$                     |
-| Gradient                  | $\dfrac{dy}{dx} = \dfrac⧃LB⧄r'\sin\theta + r\cos\theta⧃RB⧄⧃LB⧄r'\cos\theta - r\sin\theta⧃RB⧄$ |
+| Gradient                  | $\dfrac{dy}{dx} = \dfrac◆LB◆r'\sin\theta + r\cos\theta◆RB◆◆LB◆r'\cos\theta - r\sin\theta◆RB◆$ |
 
 <hr />
 
@@ -344,7 +344,7 @@ One petal of $\sin 2\theta$ is traced from $\theta = 0$ to $\theta = \pi/2$.
 
 <details>
 <summary>Answer 2</summary>
-$A = \dfrac{1}{2}\displaystyle\int_0^{\pi/2}\sin^2 2\theta\,d\theta = \dfrac{1}{2}\int_0^{\pi/2}\dfrac⧃LB⧄1-\cos 4\theta⧃RB⧄⧃LB⧄2⧃RB⧄\,d\theta = \dfrac{1}{4}\left[\theta - \dfrac⧃LB⧄\sin 4\theta⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^{\pi/2} = \dfrac{1}{4}\cdot\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ = \dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄8⧃RB⧄$.
+$A = \dfrac{1}{2}\displaystyle\int_0^{\pi/2}\sin^2 2\theta\,d\theta = \dfrac{1}{2}\int_0^{\pi/2}\dfrac◆LB◆1-\cos 4\theta◆RB◆◆LB◆2◆RB◆\,d\theta = \dfrac{1}{4}\left[\theta - \dfrac◆LB◆\sin 4\theta◆RB◆◆LB◆4◆RB◆\right]_0^{\pi/2} = \dfrac{1}{4}\cdot\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\pi◆RB◆◆LB◆8◆RB◆$.
 </details>
 
 <details>
@@ -361,7 +361,7 @@ Use symmetry about $\theta = \pi$ (or integrate from $0$ to $2\pi$). Expand $(1-
 <summary>Answer 3</summary>
 $A = \dfrac{1}{2}\displaystyle\int_0^{2\pi}4(1-\cos\theta)^2\,d\theta = 2\int_0^{2\pi}(1 - 2\cos\theta + \cos^2\theta)\,d\theta$
 
-$= 2\int_0^{2\pi}\left(\dfrac{3}{2} - 2\cos\theta + \dfrac⧃LB⧄\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta = 2\left[\dfrac⧃LB⧄3\theta⧃RB⧄⧃LB⧄2⧃RB⧄ - 2\sin\theta + \dfrac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^{2\pi} = 2 \cdot 3\pi = 6\pi$.
+$= 2\int_0^{2\pi}\left(\dfrac{3}{2} - 2\cos\theta + \dfrac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta = 2\left[\dfrac◆LB◆3\theta◆RB◆◆LB◆2◆RB◆ - 2\sin\theta + \dfrac◆LB◆\sin 2\theta◆RB◆◆LB◆4◆RB◆\right]_0^{2\pi} = 2 \cdot 3\pi = 6\pi$.
 
 </details>
 
@@ -372,14 +372,14 @@ Find $\dfrac{dy}{dx}$ for the curve $r = a(1+\sin\theta)$ at $\theta = \pi/6$.
 
 <details>
 <summary>Hint 4</summary>
-$r = a(1+\sin\theta)$, $\dfrac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = a\cos\theta$. Substitute into the gradient formula.
+$r = a(1+\sin\theta)$, $\dfrac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆ = a\cos\theta$. Substitute into the gradient formula.
 </details>
 
 <details>
 <summary>Answer 4</summary>
 At $\theta = \pi/6$: $r = a(1+1/2) = 3a/2$, $dr/d\theta = a\sqrt{3}/2$.
 
-$\dfrac{dy}{dx} = \dfrac⧃LB⧄(a\sqrt{3}/2)(1/2) + (3a/2)(\sqrt{3}/2)⧃RB⧄⧃LB⧄(a\sqrt{3}/2)(\sqrt{3}/2) - (3a/2)(1/2)⧃RB⧄ = \dfrac⧃LB⧄a\sqrt{3}/4 + 3a\sqrt{3}/4⧃RB⧄⧃LB⧄3a/4 - 3a/4⧃RB⧄ = \dfrac⧃LB⧄a\sqrt{3}⧃RB⧄⧃LB⧄0⧃RB⧄$
+$\dfrac{dy}{dx} = \dfrac◆LB◆(a\sqrt{3}/2)(1/2) + (3a/2)(\sqrt{3}/2)◆RB◆◆LB◆(a\sqrt{3}/2)(\sqrt{3}/2) - (3a/2)(1/2)◆RB◆ = \dfrac◆LB◆a\sqrt{3}/4 + 3a\sqrt{3}/4◆RB◆◆LB◆3a/4 - 3a/4◆RB◆ = \dfrac◆LB◆a\sqrt{3}◆RB◆◆LB◆0◆RB◆$
 
 The gradient is undefined — the tangent is **vertical** at this point.
 
@@ -399,7 +399,7 @@ A tangent parallel to the initial line is horizontal: $dy/d\theta = 0$.
 <summary>Answer 5</summary>
 $r = 4\cos\theta$, $dr/d\theta = -4\sin\theta$.
 
-$\dfrac⧃LB⧄dy⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = -4\sin\theta\sin\theta + 4\cos\theta\cos\theta = 4(\cos^2\theta - \sin^2\theta) = 4\cos 2\theta$.
+$\dfrac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = -4\sin\theta\sin\theta + 4\cos\theta\cos\theta = 4(\cos^2\theta - \sin^2\theta) = 4\cos 2\theta$.
 
 $\cos 2\theta = 0 \implies 2\theta = \pi/2, 3\pi/2 \implies \theta = \pi/4, 3\pi/4$.
 
@@ -430,7 +430,7 @@ $= \displaystyle\int_0^{\pi/3}\bigl[9\cos^2\theta - 1 - 2\cos\theta - \cos^2\the
 
 $= \displaystyle\int_0^{\pi/3}\left[4(1+\cos 2\theta) - 1 - 2\cos\theta\right]d\theta = \int_0^{\pi/3}\left(3 + 4\cos 2\theta - 2\cos\theta\right)d\theta$
 
-$= \left[3\theta + 2\sin 2\theta - 2\sin\theta\right]_0^{\pi/3} = \pi + 2\cdot\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ - 2\cdot\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = \pi$.
+$= \left[3\theta + 2\sin 2\theta - 2\sin\theta\right]_0^{\pi/3} = \pi + 2\cdot\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - 2\cdot\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ = \pi$.
 
 </details>
 
@@ -448,7 +448,7 @@ $r = \sqrt{x^2+y^2}$ and find $\theta$ using the quadrant.
 <summary>Answer 7</summary>
 $r = \sqrt{8+8} = 4$. The point is in the second quadrant.
 
-$\tan\theta = \dfrac⧃LB⧄2\sqrt{2}⧃RB⧄⧃LB⧄-2\sqrt{2}⧃RB⧄ = -1$. In the second quadrant: $\theta = 3\pi/4$.
+$\tan\theta = \dfrac◆LB◆2\sqrt{2}◆RB◆◆LB◆-2\sqrt{2}◆RB◆ = -1$. In the second quadrant: $\theta = 3\pi/4$.
 
 Polar coordinates: $(4, 3\pi/4)$.
 
@@ -493,7 +493,7 @@ At $\theta = \pi/2$: $r = 3$. Point: $(x, y) = (3\cos(\pi/2), 3\sin(\pi/2)) = (0
 
 $dr/d\theta = \cos\theta$, so at $\theta = \pi/2$: $dr/d\theta = 0$.
 
-$\dfrac{dy}{dx} = \dfrac⧃LB⧄0\cdot 1 + 3\cdot 0⧃RB⧄⧃LB⧄0\cdot 0 - 3\cdot 1⧃RB⧄ = \dfrac{0}{-3} = 0$.
+$\dfrac{dy}{dx} = \dfrac◆LB◆0\cdot 1 + 3\cdot 0◆RB◆◆LB◆0\cdot 0 - 3\cdot 1◆RB◆ = \dfrac{0}{-3} = 0$.
 
 The tangent is horizontal: $y = 3$.
 
@@ -523,7 +523,7 @@ $= \dfrac{1}{2}\left[3\theta + 4\sin\theta + \sin 2\theta\right]_{2\pi/3}^{4\pi/
 
 $= \dfrac{1}{2}\left[\left(4\pi - 2\sqrt{3} + \sqrt{3}/2\right) - \left(2\pi + 2\sqrt{3} - \sqrt{3}/2\right)\right]$
 
-$= \dfrac{1}{2}\left[2\pi - 3\sqrt{3}\right] = \pi - \dfrac⧃LB⧄3\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+$= \dfrac{1}{2}\left[2\pi - 3\sqrt{3}\right] = \pi - \dfrac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 
@@ -537,7 +537,7 @@ $= \dfrac{1}{2}\left[2\pi - 3\sqrt{3}\right] = \pi - \dfrac⧃LB⧄3\sqrt{3}⧃R
 
 **Solution.** Setting $1 + \cos\theta = 3\cos\theta$:
 
-$$1 = 2\cos\theta \implies \theta = \pm\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$$
+$$1 = 2\cos\theta \implies \theta = \pm\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$$
 
 Both curves are symmetric about the initial line, so we compute from $0$ to $\pi/3$ and double.
 
@@ -549,7 +549,7 @@ $$= \int_0^{\pi/3}\bigl[8\cos^2\theta - 2\cos\theta - 1\bigr]\,d\theta = \int_0^
 
 $$= \int_0^{\pi/3}(3 + 4\cos 2\theta - 2\cos\theta)\,d\theta = \left[3\theta + 2\sin 2\theta - 2\sin\theta\right]_0^{\pi/3}$$
 
-$$= \pi + 2\cdot\frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ - 2\cdot\frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = \pi$$
+$$= \pi + 2\cdot\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - 2\cdot\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ = \pi$$
 
 ### Example 7.2: Converting Cartesian to polar and sketching
 
@@ -567,11 +567,11 @@ The curve passes through the pole at $\theta = 0$ and $\theta = \pi$, and has ma
 
 **Problem.** For the cardioid $r = 2(1 - \cos\theta)$, find all points where the tangent is horizontal.
 
-**Solution.** $r = 2(1 - \cos\theta)$, $\dfrac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = 2\sin\theta$.
+**Solution.** $r = 2(1 - \cos\theta)$, $\dfrac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆ = 2\sin\theta$.
 
-Horizontal tangents occur when $\dfrac⧃LB⧄dy⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = 0$:
+Horizontal tangents occur when $\dfrac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = 0$:
 
-$$\frac⧃LB⧄dr⧃RB⧄⧃LB⧄d\theta⧃RB⧄\sin\theta + r\cos\theta = 0 \implies 2\sin^2\theta + 2(1 - \cos\theta)\cos\theta = 0$$
+$$\frac◆LB◆dr◆RB◆◆LB◆d\theta◆RB◆\sin\theta + r\cos\theta = 0 \implies 2\sin^2\theta + 2(1 - \cos\theta)\cos\theta = 0$$
 
 $$2\sin^2\theta + 2\cos\theta - 2\cos^2\theta = 0 \implies 2(1 - \cos^2\theta) + 2\cos\theta - 2\cos^2\theta = 0$$
 
@@ -590,13 +590,13 @@ At $\theta = 0$: $r = 0$ (the cusp -- not a smooth horizontal tangent).
 
 **Problem.** The region enclosed by $r = 1 + \cos\theta$ is rotated about the initial line. Find the volume of revolution.
 
-**Solution.** Using the parametric volume formula with $y = r\sin\theta = (1+\cos\theta)\sin\theta$ and $dx = \dfrac⧃LB⧄dx⧃RB⧄⧃LB⧄d\theta⧃RB⧄\,d\theta$:
+**Solution.** Using the parametric volume formula with $y = r\sin\theta = (1+\cos\theta)\sin\theta$ and $dx = \dfrac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆\,d\theta$:
 
-$x = r\cos\theta = (1+\cos\theta)\cos\theta$, $\dfrac⧃LB⧄dx⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = -\sin\theta - 2\cos\theta\sin\theta = -\sin\theta(1 + 2\cos\theta)$.
+$x = r\cos\theta = (1+\cos\theta)\cos\theta$, $\dfrac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = -\sin\theta - 2\cos\theta\sin\theta = -\sin\theta(1 + 2\cos\theta)$.
 
 By symmetry, integrate from $0$ to $\pi$ and double:
 
-$$V = 2\pi\int_0^{\pi} y^2\,\frac⧃LB⧄dx⧃RB⧄⧃LB⧄d\theta⧃RB⧄\,d\theta = 2\pi\int_0^{\pi}(1+\cos\theta)^2\sin^2\theta\cdot[-\sin\theta(1+2\cos\theta)]\,d\theta$$
+$$V = 2\pi\int_0^{\pi} y^2\,\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆\,d\theta = 2\pi\int_0^{\pi}(1+\cos\theta)^2\sin^2\theta\cdot[-\sin\theta(1+2\cos\theta)]\,d\theta$$
 
 Let $u = \cos\theta$, $du = -\sin\theta\,d\theta$. When $\theta = 0$: $u = 1$. When $\theta = \pi$: $u = -1$.
 
@@ -612,7 +612,7 @@ Let $v = 1+u$:
 
 $$V = 2\pi\int_0^2 v^4(2-v)\,dv = 2\pi\int_0^2(2v^4 - v^5)\,dv = 2\pi\left[\frac{2v^5}{5} - \frac{v^6}{6}\right]_0^2$$
 
-$$= 2\pi\left(\frac{64}{5} - \frac{64}{6}\right) = 2\pi\cdot\frac{64(6-5)}{30} = \frac⧃LB⧄128\pi⧃RB⧄⧃LB⧄15⧃RB⧄$$
+$$= 2\pi\left(\frac{64}{5} - \frac{64}{6}\right) = 2\pi\cdot\frac{64(6-5)}{30} = \frac◆LB◆128\pi◆RB◆◆LB◆15◆RB◆$$
 
 ---
 
@@ -647,7 +647,7 @@ A curve has polar equation $r = a(1 + \cos\theta)$ where $a > 0$.
 
 **(a)** By symmetry:
 
-$$A = 2\cdot\frac{1}{2}\int_0^{\pi}a^2(1+\cos\theta)^2\,d\theta = a^2\int_0^{\pi}\left(\frac{3}{2}+2\cos\theta+\frac⧃LB⧄\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta = \frac⧃LB⧄3\pi a^2⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$A = 2\cdot\frac{1}{2}\int_0^{\pi}a^2(1+\cos\theta)^2\,d\theta = a^2\int_0^{\pi}\left(\frac{3}{2}+2\cos\theta+\frac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta = \frac◆LB◆3\pi a^2◆RB◆◆LB◆2◆RB◆$$
 
 **(b)** At $\theta = \pi/2$: $r = a$, point $(0, a)$.
 
@@ -668,18 +668,18 @@ Find the area of the finite region bounded by the curve $r = 2 + \cos\theta$ and
 
 $$A = \frac{1}{2}\int_0^{\pi}(2+\cos\theta)^2\,d\theta = \frac{1}{2}\int_0^{\pi}(4 + 4\cos\theta + \cos^2\theta)\,d\theta$$
 
-$$= \frac{1}{2}\int_0^{\pi}\left(\frac{9}{2} + 4\cos\theta + \frac⧃LB⧄\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta = \frac{1}{2}\left[\frac⧃LB⧄9\theta⧃RB⧄⧃LB⧄2⧃RB⧄ + 4\sin\theta + \frac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^{\pi} = \frac⧃LB⧄9\pi⧃RB⧄⧃LB⧄4⧃RB⧄$$
+$$= \frac{1}{2}\int_0^{\pi}\left(\frac{9}{2} + 4\cos\theta + \frac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta = \frac{1}{2}\left[\frac◆LB◆9\theta◆RB◆◆LB◆2◆RB◆ + 4\sin\theta + \frac◆LB◆\sin 2\theta◆RB◆◆LB◆4◆RB◆\right]_0^{\pi} = \frac◆LB◆9\pi◆RB◆◆LB◆4◆RB◆$$
 
 </details>
 
 ### Question 13
 
-**Prove that** the polar curve $r = \dfrac⧃LB⧄a⧃RB⧄⧃LB⧄\cos\theta⧃RB⧄$ is a vertical line, and state its Cartesian equation.
+**Prove that** the polar curve $r = \dfrac◆LB◆a◆RB◆◆LB◆\cos\theta◆RB◆$ is a vertical line, and state its Cartesian equation.
 
 <details>
 <summary>Solution</summary>
 
-$r = \dfrac⧃LB⧄a⧃RB⧄⧃LB⧄\cos\theta⧃RB⧄ \implies r\cos\theta = a \implies x = a$.
+$r = \dfrac◆LB◆a◆RB◆◆LB◆\cos\theta◆RB◆ \implies r\cos\theta = a \implies x = a$.
 
 This is the vertical line $x = a$. $\blacksquare$
 
@@ -698,13 +698,13 @@ The curve $C$ has polar equation $r = 4\sin 2\theta$ for $0 \leq \theta \leq \pi
 
 **(a)** One petal of $r = 4\sin 2\theta$ is traced from $\theta = 0$ to $\theta = \pi/2$:
 
-$$A = \frac{1}{2}\int_0^{\pi/2}16\sin^2 2\theta\,d\theta = 8\int_0^{\pi/2}\frac⧃LB⧄1-\cos 4\theta⧃RB⧄⧃LB⧄2⧃RB⧄\,d\theta = 4\left[\theta - \frac⧃LB⧄\sin 4\theta⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^{\pi/2} = 2\pi$$
+$$A = \frac{1}{2}\int_0^{\pi/2}16\sin^2 2\theta\,d\theta = 8\int_0^{\pi/2}\frac◆LB◆1-\cos 4\theta◆RB◆◆LB◆2◆RB◆\,d\theta = 4\left[\theta - \frac◆LB◆\sin 4\theta◆RB◆◆LB◆4◆RB◆\right]_0^{\pi/2} = 2\pi$$
 
 **(b)** Tangent parallel to the initial line means $dy/d\theta = 0$:
 
 $r = 4\sin 2\theta$, $dr/d\theta = 8\cos 2\theta$.
 
-$\dfrac⧃LB⧄dy⧃RB⧄⧃LB⧄d\theta⧃RB⧄ = 8\cos 2\theta\sin\theta + 4\sin 2\theta\cos\theta = 8\cos 2\theta\sin\theta + 8\sin\theta\cos^2\theta$
+$\dfrac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = 8\cos 2\theta\sin\theta + 4\sin 2\theta\cos\theta = 8\cos 2\theta\sin\theta + 8\sin\theta\cos^2\theta$
 
 $= 8\sin\theta(\cos 2\theta + \cos^2\theta) = 8\sin\theta(2\cos^2\theta - 1 + \cos^2\theta) = 8\sin\theta(3\cos^2\theta - 1)$
 
@@ -746,19 +746,19 @@ The maximum distance is $\boxed{5}$.
 
 $$A = \frac{1}{2}\int_0^{2\pi} (2+\cos\theta)^2\,d\theta = \frac{1}{2}\int_0^{2\pi} (4 + 4\cos\theta + \cos^2\theta)\,d\theta$$
 
-$$= \frac{1}{2}\int_0^{2\pi} \!\left(4 + 4\cos\theta + \frac⧃LB⧄1+\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta = \frac{1}{2}\int_0^{2\pi} \!\left(\frac{9}{2} + 4\cos\theta + \frac⧃LB⧄\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta$$
+$$= \frac{1}{2}\int_0^{2\pi} \!\left(4 + 4\cos\theta + \frac◆LB◆1+\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta = \frac{1}{2}\int_0^{2\pi} \!\left(\frac{9}{2} + 4\cos\theta + \frac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta$$
 
-$$= \frac{1}{2}\left[\frac⧃LB⧄9\theta⧃RB⧄⧃LB⧄2⧃RB⧄ + 4\sin\theta + \frac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^{2\pi} = \frac{1}{2} \cdot 9\pi = \boxed{\frac⧃LB⧄9\pi⧃RB⧄⧃LB⧄2⧃RB⧄}$$
+$$= \frac{1}{2}\left[\frac◆LB◆9\theta◆RB◆◆LB◆2◆RB◆ + 4\sin\theta + \frac◆LB◆\sin 2\theta◆RB◆◆LB◆4◆RB◆\right]_0^{2\pi} = \frac{1}{2} \cdot 9\pi = \boxed{\frac◆LB◆9\pi◆RB◆◆LB◆2◆RB◆}$$
 
 ### Example 8.2: Tangents to a polar curve
 
 **Problem.** Find the angle $\psi$ between the tangent and the radius vector for $r = a(1+\cos\theta)$ at $\theta = \pi/2$.
 
-**Solution.** $\tan\psi = \dfrac⧃LB⧄r⧃RB⧄⧃LB⧄dr/d\theta⧃RB⧄$.
+**Solution.** $\tan\psi = \dfrac◆LB◆r◆RB◆◆LB◆dr/d\theta◆RB◆$.
 
 $dr/d\theta = -a\sin\theta$. At $\theta = \pi/2$: $r = a$, $dr/d\theta = -a$.
 
-$\tan\psi = \dfrac{a}{-a} = -1 \implies \psi = \dfrac⧃LB⧄3\pi⧃RB⧄⧃LB⧄4⧃RB⧄$ (or $135°$).
+$\tan\psi = \dfrac{a}{-a} = -1 \implies \psi = \dfrac◆LB◆3\pi◆RB◆◆LB◆4◆RB◆$ (or $135°$).
 
 The tangent makes an angle of $135°$ with the outward radius vector.
 
@@ -790,7 +790,7 @@ $$= \frac{1}{2}\int_{-\pi/3}^{\pi/3} \!\left(4 + 4\cos 2\theta - 2\cos\theta - 1
 
 $$= \frac{1}{2}\left[3\theta + 2\sin 2\theta - 2\sin\theta\right]_{-\pi/3}^{\pi/3}$$
 
-$$= \frac{1}{2}\left[\pi + 2\sin\frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄3⧃RB⧄ - 2\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ - \left(-\pi - 2\sin\frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄\right)\right]$$
+$$= \frac{1}{2}\left[\pi + 2\sin\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ - 2\sin\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ - \left(-\pi - 2\sin\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ + 2\sin\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)\right]$$
 
 $$= \frac{1}{2}\left[2\pi + 2\sqrt{3} - \sqrt{3} + 2\sqrt{3} - \sqrt{3}\right] = \frac{1}{2}(2\pi + 2\sqrt{3}) = \boxed{\pi + \sqrt{3}}$$
 
@@ -810,7 +810,7 @@ $\cos\theta = \cos\theta$ and $\sin\theta = \sin\theta$. Consistent.
 
 **Problem.** Find the total arc length of the cardioid $r = a(1 + \cos\theta)$.
 
-**Solution.** $s = \displaystyle\int_0^{2\pi} \sqrt⧃LB⧄r^2 + \left(\frac{dr}{d\theta}\right)^2⧃RB⧄\,d\theta$.
+**Solution.** $s = \displaystyle\int_0^{2\pi} \sqrt◆LB◆r^2 + \left(\frac{dr}{d\theta}\right)^2◆RB◆\,d\theta$.
 
 $r = a(1+\cos\theta)$, $dr/d\theta = -a\sin\theta$.
 
@@ -846,7 +846,7 @@ Find the area of the region enclosed by one loop of the curve $r^2 = 4\cos 2\the
 
 This is a lemniscate. One loop is traced for $-\pi/4 \leq \theta \leq \pi/4$.
 
-$$A = \frac{1}{2}\int_{-\pi/4}^{\pi/4} 4\cos 2\theta\,d\theta = 2\!\left[\frac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right]_{-\pi/4}^{\pi/4} = 2(1-(-1)) = 4 \text{... wait}$$
+$$A = \frac{1}{2}\int_{-\pi/4}^{\pi/4} 4\cos 2\theta\,d\theta = 2\!\left[\frac◆LB◆\sin 2\theta◆RB◆◆LB◆2◆RB◆\right]_{-\pi/4}^{\pi/4} = 2(1-(-1)) = 4 \text{... wait}$$
 
 $A = \int_{-\pi/4}^{\pi/4} 2\cos 2\theta\,d\theta = [\sin 2\theta]_{-\pi/4}^{\pi/4} = 1 - (-1) = 2$. Wait, using the formula:
 
@@ -863,7 +863,7 @@ $A = \dfrac{1}{2}\displaystyle\int r^2\,d\theta = \dfrac{1}{2}\int_{-\pi/4}^{\pi
 
 $r = a\sec\theta \implies dr/d\theta = a\sec\theta\tan\theta$.
 
-$\tan\psi = \dfrac⧃LB⧄r⧃RB⧄⧃LB⧄dr/d\theta⧃RB⧄ = \dfrac⧃LB⧄a\sec\theta⧃RB⧄⧃LB⧄a\sec\theta\tan\theta⧃RB⧄ = \cot\theta$.
+$\tan\psi = \dfrac◆LB◆r◆RB◆◆LB◆dr/d\theta◆RB◆ = \dfrac◆LB◆a\sec\theta◆RB◆◆LB◆a\sec\theta\tan\theta◆RB◆ = \cot\theta$.
 
 So $\psi = \pi/2 - \theta$. The tangent makes angle $\theta + \psi = \pi/2$ with the initial line, i.e., perpendicular to the radius vector. $\blacksquare$
 
@@ -909,9 +909,9 @@ Polar curves are a special case of parametric equations with $x = r(\theta)\cos\
 | Cartesian from polar | $x = r\cos\theta$, $y = r\sin\theta$ |
 | Polar from Cartesian | $r = \sqrt{x^2+y^2}$, $\theta = \arctan(y/x)$ |
 | Polar area | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$ |
-| Polar arc length | $s = \displaystyle\int_\alpha^\beta \sqrt⧃LB⧄r^2+\left(\dfrac{dr}{d\theta}\right)^2⧃RB⧄\,d\theta$ |
-| Tangent-radius angle | $\tan\psi = \dfrac⧃LB⧄r⧃RB⧄⧃LB⧄dr/d\theta⧃RB⧄$ |
-| Tangent to $x$-axis | $\dfrac{dy}{dx} = \dfrac⧃LB⧄r'\sin\theta + r\cos\theta⧃RB⧄⧃LB⧄r'\cos\theta - r\sin\theta⧃RB⧄$ |
+| Polar arc length | $s = \displaystyle\int_\alpha^\beta \sqrt◆LB◆r^2+\left(\dfrac{dr}{d\theta}\right)^2◆RB◆\,d\theta$ |
+| Tangent-radius angle | $\tan\psi = \dfrac◆LB◆r◆RB◆◆LB◆dr/d\theta◆RB◆$ |
+| Tangent to $x$-axis | $\dfrac{dy}{dx} = \dfrac◆LB◆r'\sin\theta + r\cos\theta◆RB◆◆LB◆r'\cos\theta - r\sin\theta◆RB◆$ |
 
 ---
 
@@ -926,9 +926,9 @@ A curve has polar equation $r = a(1+\cos\theta)$ (cardioid). Find the area enclo
 
 Since $r > 0$ for all $\theta$, integrate from $0$ to $2\pi$:
 
-$A = \dfrac{1}{2}\displaystyle\int_0^{2\pi} a^2(1+\cos\theta)^2\,d\theta = \dfrac{a^2}{2}\displaystyle\int_0^{2\pi} \!\left(\dfrac{3}{2}+2\cos\theta+\dfrac⧃LB⧄\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta$
+$A = \dfrac{1}{2}\displaystyle\int_0^{2\pi} a^2(1+\cos\theta)^2\,d\theta = \dfrac{a^2}{2}\displaystyle\int_0^{2\pi} \!\left(\dfrac{3}{2}+2\cos\theta+\dfrac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta$
 
-$= \dfrac{a^2}{2}\!\left[\dfrac⧃LB⧄3\theta⧃RB⧄⧃LB⧄2⧃RB⧄+2\sin\theta+\dfrac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^{2\pi} = \dfrac{a^2}{2}\cdot 3\pi = \boxed{\dfrac⧃LB⧄3\pi a^2⧃RB⧄⧃LB⧄2⧃RB⧄}$
+$= \dfrac{a^2}{2}\!\left[\dfrac◆LB◆3\theta◆RB◆◆LB◆2◆RB◆+2\sin\theta+\dfrac◆LB◆\sin 2\theta◆RB◆◆LB◆4◆RB◆\right]_0^{2\pi} = \dfrac{a^2}{2}\cdot 3\pi = \boxed{\dfrac◆LB◆3\pi a^2◆RB◆◆LB◆2◆RB◆}$
 
 </details>
 
@@ -953,11 +953,11 @@ This is a circle with centre $(a,0)$ and radius $a$. $\blacksquare$
 
 The pedal equation of a curve gives the distance $p$ from the origin to the tangent as a function of $r$:
 
-$$p = r\sin\psi = \frac⧃LB⧄r^2⧃RB⧄⧃LB⧄\sqrt{r^2+(dr/d\theta)^2}⧃RB⧄$$
+$$p = r\sin\psi = \frac◆LB◆r^2◆RB◆◆LB◆\sqrt{r^2+(dr/d\theta)^2}◆RB◆$$
 
 ### 14.2 The $p-r$ equation
 
-For a conic with focus at the origin and directrix at distance $d$: $r = \dfrac⧃LB⧄ed⧃RB⧄⧃LB⧄1+e\cos\theta⧃RB⧄$ where $e$ is the eccentricity.
+For a conic with focus at the origin and directrix at distance $d$: $r = \dfrac◆LB◆ed◆RB◆◆LB◆1+e\cos\theta◆RB◆$ where $e$ is the eccentricity.
 
 - $e < 1$: ellipse
 - $e = 1$: parabola
@@ -996,22 +996,22 @@ $= \dfrac{1}{2}\displaystyle\int_{2\pi/3}^{4\pi/3} (1+4\cos\theta+4\cos^2\theta)
 
 $= \dfrac{1}{2}\!\left[3\theta+4\sin\theta+\sin 2\theta\right]_{2\pi/3}^{4\pi/3}$
 
-$= \dfrac{1}{2}\!\left[(4\pi-2\pi)+4\!\left(-\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄-\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄\right)+\!\left(\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄-\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄\right)\right] = \dfrac{1}{2}(2\pi-4\sqrt{3}) = \boxed{\pi-2\sqrt{3}}$
+$= \dfrac{1}{2}\!\left[(4\pi-2\pi)+4\!\left(-\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆-\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\right)+\!\left(\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆-\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\right)\right] = \dfrac{1}{2}(2\pi-4\sqrt{3}) = \boxed{\pi-2\sqrt{3}}$
 
 </details>
 
 ### Question 14
 
-**Prove that** the area enclosed by one petal of $r = a\cos(3\theta)$ is $\dfrac⧃LB⧄\pi a^2⧃RB⧄⧃LB⧄12⧃RB⧄$.
+**Prove that** the area enclosed by one petal of $r = a\cos(3\theta)$ is $\dfrac◆LB◆\pi a^2◆RB◆◆LB◆12◆RB◆$.
 
 <details>
 <summary>Solution</summary>
 
 One petal is traced for $-\pi/6 \leq \theta \leq \pi/6$.
 
-$A = \dfrac{1}{2}\displaystyle\int_{-\pi/6}^{\pi/6} a^2\cos^2(3\theta)\,d\theta = \dfrac{a^2}{2}\displaystyle\int_{-\pi/6}^{\pi/6} \frac⧃LB⧄1+\cos 6\theta⧃RB⧄⧃LB⧄2⧃RB⧄\,d\theta$
+$A = \dfrac{1}{2}\displaystyle\int_{-\pi/6}^{\pi/6} a^2\cos^2(3\theta)\,d\theta = \dfrac{a^2}{2}\displaystyle\int_{-\pi/6}^{\pi/6} \frac◆LB◆1+\cos 6\theta◆RB◆◆LB◆2◆RB◆\,d\theta$
 
-$= \dfrac{a^2}{4}\!\left[\theta+\dfrac⧃LB⧄\sin 6\theta⧃RB⧄⧃LB⧄6⧃RB⧄\right]_{-\pi/6}^{\pi/6} = \dfrac{a^2}{4}\!\left(\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄+0\right) = \boxed{\dfrac⧃LB⧄\pi a^2⧃RB⧄⧃LB⧄12⧃RB⧄}$. $\blacksquare$
+$= \dfrac{a^2}{4}\!\left[\theta+\dfrac◆LB◆\sin 6\theta◆RB◆◆LB◆6◆RB◆\right]_{-\pi/6}^{\pi/6} = \dfrac{a^2}{4}\!\left(\dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆+0\right) = \boxed{\dfrac◆LB◆\pi a^2◆RB◆◆LB◆12◆RB◆}$. $\blacksquare$
 
 </details>
 
@@ -1023,7 +1023,7 @@ $= \dfrac{a^2}{4}\!\left[\theta+\dfrac⧃LB⧄\sin 6\theta⧃RB⧄⧃LB⧄6⧃RB
 
 Using the focus-directrix definition, all conics with a focus at the origin have polar equation:
 
-$$r = \frac⧃LB⧄ed⧃RB⧄⧃LB⧄1+e\cos\theta⧃RB⧄$$
+$$r = \frac◆LB◆ed◆RB◆◆LB◆1+e\cos\theta◆RB◆$$
 
 where $e$ is the eccentricity and $d$ is the distance from the focus to the directrix.
 
@@ -1042,7 +1042,7 @@ The logarithmic spiral appears in nature (nautilus shells, hurricanes, galaxies)
 
 ### 16.3 Tangents at the pole
 
-If $r = 0$ at $\theta = \theta_0$, the tangent at the pole is the line $\theta = \theta_0 + \dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$ (perpendicular to the initial line).
+If $r = 0$ at $\theta = \theta_0$, the tangent at the pole is the line $\theta = \theta_0 + \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ (perpendicular to the initial line).
 
 ### 16.4 Converting parametric curves to polar
 
@@ -1067,7 +1067,7 @@ The required area is:
 
 $A = \dfrac{1}{2}\displaystyle\int_0^{2\pi} [(1+\sin\theta)^2 - 1]\,d\theta = \dfrac{1}{2}\displaystyle\int_0^{2\pi} (2\sin\theta + \sin^2\theta)\,d\theta$
 
-$= \dfrac{1}{2}\displaystyle\int_0^{2\pi} \!\left(2\sin\theta + \frac⧃LB⧄1-\cos 2\theta⧃RB⧄⧃LB⧄2⧃RB⧄\right)d\theta = \dfrac{1}{2}\!\left[-2\cos\theta + \frac⧃LB⧄\theta⧃RB⧄⧃LB⧄2⧃RB⧄ - \frac⧃LB⧄\sin 2\theta⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^{2\pi} = \dfrac{1}{2}\cdot\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ = \boxed{\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄}$.
+$= \dfrac{1}{2}\displaystyle\int_0^{2\pi} \!\left(2\sin\theta + \frac◆LB◆1-\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)d\theta = \dfrac{1}{2}\!\left[-2\cos\theta + \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆\sin 2\theta◆RB◆◆LB◆4◆RB◆\right]_0^{2\pi} = \dfrac{1}{2}\cdot\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ = \boxed{\dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆}$.
 
 </details>
 

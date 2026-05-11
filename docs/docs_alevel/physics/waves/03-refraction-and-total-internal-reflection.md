@@ -49,7 +49,7 @@ wavelengths interact more strongly with the electrons in the material.
 
 For glass, a typical empirical relationship (Cauchy's equation) is:
 
-$$n(\lambda) = A + \frac⧃LB⧄B⧃RB⧄⧃LB⧄\lambda^2⧃RB⧄$$
+$$n(\lambda) = A + \frac◆LB◆B◆RB◆◆LB◆\lambda^2◆RB◆$$
 
 where $A$ and $B$ are constants specific to the material and $\lambda$ is the wavelength in vacuum.
 This wavelength dependence is what causes white light to separate into a spectrum when passing
@@ -87,11 +87,11 @@ medium 2 and travelled a distance $v_2 t$ as a secondary wavelet, where $t = BB'
 
 The new wavefront is the tangent from $B'$ to the wavelet centred at $A$. The geometry gives:
 
-$$\frac⧃LB⧄\sin\theta_1⧃RB⧄⧃LB⧄\sin\theta_2⧃RB⧄ = \frac{BB'/AB'}{v_2 t / AB'} = \frac{BB'}{v_2 t} = \frac{v_1 t}{v_2 t} = \frac{v_1}{v_2}$$
+$$\frac◆LB◆\sin\theta_1◆RB◆◆LB◆\sin\theta_2◆RB◆ = \frac{BB'/AB'}{v_2 t / AB'} = \frac{BB'}{v_2 t} = \frac{v_1 t}{v_2 t} = \frac{v_1}{v_2}$$
 
 Since $n = c/v$:
 
-$$\frac⧃LB⧄\sin\theta_1⧃RB⧄⧃LB⧄\sin\theta_2⧃RB⧄ = \frac{n_2}{n_1} \implies n_1 \sin\theta_1 = n_2 \sin\theta_2$$
+$$\frac◆LB◆\sin\theta_1◆RB◆◆LB◆\sin\theta_2◆RB◆ = \frac{n_2}{n_1} \implies n_1 \sin\theta_1 = n_2 \sin\theta_2$$
 
 $\square$
 
@@ -106,17 +106,17 @@ hits the boundary at $(x, 0)$.
 
 The total travel time is:
 
-$$t = \frac⧃LB⧄\sqrt{x^2 + h_1^2}⧃RB⧄⧃LB⧄v_1⧃RB⧄ + \frac⧃LB⧄\sqrt{(d-x)^2 + h_2^2}⧃RB⧄⧃LB⧄v_2⧃RB⧄$$
+$$t = \frac◆LB◆\sqrt{x^2 + h_1^2}◆RB◆◆LB◆v_1◆RB◆ + \frac◆LB◆\sqrt{(d-x)^2 + h_2^2}◆RB◆◆LB◆v_2◆RB◆$$
 
 For the minimum time, $dt/dx = 0$:
 
-$$\frac⧃LB⧄x⧃RB⧄⧃LB⧄v_1\sqrt{x^2 + h_1^2}⧃RB⧄ - \frac⧃LB⧄d-x⧃RB⧄⧃LB⧄v_2\sqrt{(d-x)^2 + h_2^2}⧃RB⧄ = 0$$
+$$\frac◆LB◆x◆RB◆◆LB◆v_1\sqrt{x^2 + h_1^2}◆RB◆ - \frac◆LB◆d-x◆RB◆◆LB◆v_2\sqrt{(d-x)^2 + h_2^2}◆RB◆ = 0$$
 
 Noting that $\sin\theta_1 = x/\sqrt{x^2 + h_1^2}$ and $\sin\theta_2 = (d-x)/\sqrt{(d-x)^2 + h_2^2}$:
 
-$$\frac⧃LB⧄\sin\theta_1⧃RB⧄⧃LB⧄v_1⧃RB⧄ = \frac⧃LB⧄\sin\theta_2⧃RB⧄⧃LB⧄v_2⧃RB⧄$$
+$$\frac◆LB◆\sin\theta_1◆RB◆◆LB◆v_1◆RB◆ = \frac◆LB◆\sin\theta_2◆RB◆◆LB◆v_2◆RB◆$$
 
-$$\frac⧃LB⧄n_1 \sin\theta_1⧃RB⧄⧃LB⧄c⧃RB⧄ = \frac⧃LB⧄n_2 \sin\theta_2⧃RB⧄⧃LB⧄c⧃RB⧄ \implies n_1 \sin\theta_1 = n_2 \sin\theta_2$$
+$$\frac◆LB◆n_1 \sin\theta_1◆RB◆◆LB◆c◆RB◆ = \frac◆LB◆n_2 \sin\theta_2◆RB◆◆LB◆c◆RB◆ \implies n_1 \sin\theta_1 = n_2 \sin\theta_2$$
 
 $\square$
 
@@ -139,7 +139,7 @@ $1.50 \times \sin 25.4° = 1.00 \times \sin\theta_4$. $\theta_4 = 40^\circ$.
 **Result.** The emergent ray is parallel to the incident ray but laterally displaced. This lateral
 displacement $d$ depends on the thickness $t$ of the slab:
 
-$$d = t \cdot \sin\theta_1 \left(1 - \frac⧃LB⧄\cos\theta_1⧃RB⧄⧃LB⧄\sqrt{n^2 - \sin^2\theta_1}⧃RB⧄\right)$$
+$$d = t \cdot \sin\theta_1 \left(1 - \frac◆LB◆\cos\theta_1◆RB◆◆LB◆\sqrt{n^2 - \sin^2\theta_1}◆RB◆\right)$$
 
 :::info
 Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
@@ -249,7 +249,7 @@ At the core-cladding boundary, TIR requires: $\sin\theta_2 \geq \sin\theta_c = n
 $\theta_2$ is measured from the normal to the core-cladding boundary).
 
 At the air-core boundary (Snell's law):
-$\sin\theta_{\max} = n_1\cos\theta_c = n_1\sqrt⧃LB⧄1 - \sin^2\theta_c⧃RB⧄ = n_1\sqrt{1 - (n_2/n_1)^2} = \sqrt{n_1^2 - n_2^2}$.
+$\sin\theta_{\max} = n_1\cos\theta_c = n_1\sqrt◆LB◆1 - \sin^2\theta_c◆RB◆ = n_1\sqrt{1 - (n_2/n_1)^2} = \sqrt{n_1^2 - n_2^2}$.
 
 The **numerical aperture** is:
 
@@ -523,11 +523,11 @@ surface. Using Snell's law: $1.33 \times \sin\theta_1 = 1.00 \times \sin\theta_2
 is the angle in water from the normal. The apparent position is found by tracing the refracted ray
 back. For a pool of depth $d$ and viewing angle $\theta_2$:
 
-$d_{\mathrm{apparent}} = d \cdot \frac⧃LB⧄\cos\theta_2⧃RB⧄⧃LB⧄\cos\theta_1⧃RB⧄$
+$d_{\mathrm{apparent}} = d \cdot \frac◆LB◆\cos\theta_2◆RB◆◆LB◆\cos\theta_1◆RB◆$
 
 where $\theta_1 = \arcsin(\sin 30° / 1.33) = \arcsin(0.376) = 22.1^\circ$.
 
-$d_{\mathrm{apparent}} = 2.0 \times \frac⧃LB⧄\cos 30°⧃RB⧄⧃LB⧄\cos 22.1°⧃RB⧄ = 2.0 \times \frac{0.866}{0.927} = 2.0 \times 0.934 = 1.87$
+$d_{\mathrm{apparent}} = 2.0 \times \frac◆LB◆\cos 30°◆RB◆◆LB◆\cos 22.1°◆RB◆ = 2.0 \times \frac{0.866}{0.927} = 2.0 \times 0.934 = 1.87$
 m.
 
 Note that the pool appears deeper when viewed at an angle than when viewed from directly above.
@@ -539,7 +539,7 @@ Note that the pool appears deeper when viewed at an angle than when viewed from 
 <details>
 <summary>Problem 13</summary>
 In a graded-index optical fibre, the refractive index varies as
-$n(r) = n_1\sqrt⧃LB⧄1 - 2\Delta(r/a)^2⧃RB⧄$ for $r \lt a$ (inside the core), where $n_1 = 1.48$ is the
+$n(r) = n_1\sqrt◆LB◆1 - 2\Delta(r/a)^2◆RB◆$ for $r \lt a$ (inside the core), where $n_1 = 1.48$ is the
 index on the axis, $a = 25$ micrometres is the core radius, and $\Delta = 0.01$. (a) Calculate the
 refractive index at the core-cladding boundary ($r = a$). (b) Explain qualitatively why graded-index
 fibres reduce modal dispersion compared to step-index fibres.

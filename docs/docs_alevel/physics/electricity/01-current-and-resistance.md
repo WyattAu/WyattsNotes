@@ -48,7 +48,7 @@ $Av_d \Delta t$, containing $nAv_d \Delta t$ carriers. The total charge passing 
 
 $$\Delta Q = nAv_d \Delta t \cdot q$$
 
-$$\boxed{I = \frac⧃LB⧄\Delta Q⧃RB⧄⧃LB⧄\Delta t⧃RB⧄ = nAqv_d}$$
+$$\boxed{I = \frac◆LB◆\Delta Q◆RB◆◆LB◆\Delta t◆RB◆ = nAqv_d}$$
 
 For metals, $q = e = 1.60 \times 10^{-19}$ C:
 
@@ -70,7 +70,7 @@ number density of free electrons in copper is $8.5 \times 10^{28}$ m$^{-3}$. Cal
 velocity.
 
 **Answer.**
-$v_d = \frac{I}{nAe} = \frac⧃LB⧄2.0⧃RB⧄⧃LB⧄8.5 \times 10^{28} \times 1.0 \times 10^{-6} \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄2.0⧃RB⧄⧃LB⧄1.36 \times 10^4⧃RB⧄ = 1.47 \times 10^{-4}$
+$v_d = \frac{I}{nAe} = \frac◆LB◆2.0◆RB◆◆LB◆8.5 \times 10^{28} \times 1.0 \times 10^{-6} \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆2.0◆RB◆◆LB◆1.36 \times 10^4◆RB◆ = 1.47 \times 10^{-4}$
 m s$^{-1}$.
 
 </details>
@@ -118,7 +118,7 @@ An **ohmic conductor** obeys Ohm's law — its $I$-$V$ graph is a straight line 
 
 **Microscopic origin.** In a metal, conduction electrons accelerate in the electric field but
 collide with lattice ions, losing energy. The average time between collisions is the **relaxation
-time** $\tau$. The drift velocity is $v_d = \frac⧃LB⧄eE\tau⧃RB⧄⧃LB⧄m_e⧃RB⧄$, so $I \propto E \propto V$, giving
+time** $\tau$. The drift velocity is $v_d = \frac◆LB◆eE\tau◆RB◆◆LB◆m_e◆RB◆$, so $I \propto E \propto V$, giving
 $V = IR$.
 
 ### Derivation of Ohm's Law from the Microscopic Model
@@ -127,10 +127,10 @@ $V = IR$.
 2. A conduction electron of charge $e$ and mass $m_e$ experiences force $F = eE$.
 3. Between collisions (mean relaxation time $\tau$), the electron accelerates to drift velocity:
    $v_d = a\tau = (eE/m_e)\tau$.
-4. Current density: $J = nev_d = ne \cdot \frac⧃LB⧄eE\tau⧃RB⧄⧃LB⧄m_e⧃RB⧄ = \frac⧃LB⧄ne^2\tau⧃RB⧄⧃LB⧄m_e⧃RB⧄E$.
+4. Current density: $J = nev_d = ne \cdot \frac◆LB◆eE\tau◆RB◆◆LB◆m_e◆RB◆ = \frac◆LB◆ne^2\tau◆RB◆◆LB◆m_e◆RB◆E$.
 5. Since $J \propto E$, the material is ohmic. Integrating:
-   $I = JA = \frac⧃LB⧄ne^2\tau A⧃RB⧄⧃LB⧄m_e⧃RB⧄ \cdot \frac{V}{L}$.
-6. Rearranging: $V = \frac⧃LB⧄mL⧃RB⧄⧃LB⧄ne^2\tau A⧃RB⧄ \cdot I = RI$.
+   $I = JA = \frac◆LB◆ne^2\tau A◆RB◆◆LB◆m_e◆RB◆ \cdot \frac{V}{L}$.
+6. Rearranging: $V = \frac◆LB◆mL◆RB◆◆LB◆ne^2\tau A◆RB◆ \cdot I = RI$.
 
 $$\boxed{V = IR}$$
 
@@ -144,7 +144,7 @@ strongly it resists electric current flow, defined by $R = \rho L / A$. The SI u
 
 The resistance of a uniform conductor depends on its geometry and material:
 
-$$\boxed{R = \frac⧃LB⧄\rho L⧃RB⧄⧃LB⧄A⧃RB⧄}$$
+$$\boxed{R = \frac◆LB◆\rho L◆RB◆◆LB◆A◆RB◆}$$
 
 where $\rho$ is the **resistivity** (a property of the material, not the geometry), $L$ is the
 length, and $A$ is the cross-sectional area.
@@ -154,13 +154,13 @@ length, and $A$ is the cross-sectional area.
 **Derivation.** Consider a conductor of length $L$, cross-sectional area $A$, with electric field
 $E = V/L$.
 
-$$I = nAev_d = nAe \cdot \frac⧃LB⧄eE\tau⧃RB⧄⧃LB⧄m_e⧃RB⧄ = \frac⧃LB⧄ne^2\tau⧃RB⧄⧃LB⧄m_e⧃RB⧄ \cdot AE = \frac⧃LB⧄ne^2\tau⧃RB⧄⧃LB⧄m_e⧃RB⧄ \cdot A \cdot \frac{V}{L}$$
+$$I = nAev_d = nAe \cdot \frac◆LB◆eE\tau◆RB◆◆LB◆m_e◆RB◆ = \frac◆LB◆ne^2\tau◆RB◆◆LB◆m_e◆RB◆ \cdot AE = \frac◆LB◆ne^2\tau◆RB◆◆LB◆m_e◆RB◆ \cdot A \cdot \frac{V}{L}$$
 
-$$R = \frac{V}{I} = \frac⧃LB⧄mL⧃RB⧄⧃LB⧄ne^2\tau A⧃RB⧄$$
+$$R = \frac{V}{I} = \frac◆LB◆mL◆RB◆◆LB◆ne^2\tau A◆RB◆$$
 
 Comparing with $R = \rho L/A$:
 
-$$\boxed{\rho = \frac⧃LB⧄m⧃RB⧄⧃LB⧄ne^2\tau⧃RB⧄}$$
+$$\boxed{\rho = \frac◆LB◆m◆RB◆◆LB◆ne^2\tau◆RB◆}$$
 
 $\square$
 
@@ -259,7 +259,7 @@ current). For resistors in parallel, use $P = V^2/R$ (same voltage).
 
 From Section 4, the resistivity of a metal is:
 
-$$\rho = \frac⧃LB⧄m_e⧃RB⧄⧃LB⧄ne^2\tau⧃RB⧄$$
+$$\rho = \frac◆LB◆m_e◆RB◆◆LB◆ne^2\tau◆RB◆$$
 
 In a metal, the number density of free electrons $n$ is essentially fixed (every atom contributes
 roughly one conduction electron, and the total number of atoms does not change with temperature).
@@ -277,7 +277,7 @@ $$\tau \propto \frac{1}{T}$$
 
 Consequently:
 
-$$\rho = \frac⧃LB⧄m_e⧃RB⧄⧃LB⧄ne^2\tau⧃RB⧄ \propto T$$
+$$\rho = \frac◆LB◆m_e◆RB◆◆LB◆ne^2\tau◆RB◆ \propto T$$
 
 $$\boxed{R(T) = R_0\left[1 + \alpha(T - T_0)\right]}$$
 
@@ -502,9 +502,9 @@ perpendicular to the strip. Calculate the Hall voltage. (Take $n = 8.5 \times 10
 
 **Answer.**
 
-$V_H = \frac{BI}{nqd} = \frac⧃LB⧄1.5 \times 10⧃RB⧄⧃LB⧄8.5 \times 10^{28} \times 1.60 \times 10^{-19} \times 0.50 \times 10^{-3}⧃RB⧄$
+$V_H = \frac{BI}{nqd} = \frac◆LB◆1.5 \times 10◆RB◆◆LB◆8.5 \times 10^{28} \times 1.60 \times 10^{-19} \times 0.50 \times 10^{-3}◆RB◆$
 
-$= \frac⧃LB⧄15⧃RB⧄⧃LB⧄8.5 \times 10^{28} \times 8.0 \times 10^{-23}⧃RB⧄ = \frac⧃LB⧄15⧃RB⧄⧃LB⧄6.8 \times 10^{6}⧃RB⧄ = 2.2 \times 10^{-6}$
+$= \frac◆LB◆15◆RB◆◆LB◆8.5 \times 10^{28} \times 8.0 \times 10^{-23}◆RB◆ = \frac◆LB◆15◆RB◆◆LB◆6.8 \times 10^{6}◆RB◆ = 2.2 \times 10^{-6}$
 V $= 2.2$ $\mu$V.
 
 Note the very small Hall voltage in metals, due to the enormous carrier density. In semiconductors,
@@ -549,7 +549,7 @@ $$P_{\mathrm{loss}} = I^2R = \left(\frac{P}{V}\right)^2 R$$
 
 **Proof that doubling the voltage quarters the loss.** If $V \to 2V$:
 
-$$P_{\mathrm{loss}}' = \left(\frac{P}{2V}\right)^2 R = \frac{1}{4} \cdot \frac{P^2}{V^2}R = \frac⧃LB⧄P_{\mathrm{loss}}⧃RB⧄⧃LB⧄4⧃RB⧄$$
+$$P_{\mathrm{loss}}' = \left(\frac{P}{2V}\right)^2 R = \frac{1}{4} \cdot \frac{P^2}{V^2}R = \frac◆LB◆P_{\mathrm{loss}}◆RB◆◆LB◆4◆RB◆$$
 
 $\square$
 
@@ -577,7 +577,7 @@ cross-sectional area $5.0 \times 10^{-4}$ m$^2$). Compare losses at 10 kV and 40
 
 Resistance of the cable (there and back):
 
-$R = \frac⧃LB⧄\rho \times 2L⧃RB⧄⧃LB⧄A⧃RB⧄ = \frac⧃LB⧄2.7 \times 10^{-8} \times 2 \times 50\,000⧃RB⧄⧃LB⧄5.0 \times 10^{-4}⧃RB⧄ = \frac⧃LB⧄2.7 \times 10^{-3}⧃RB⧄⧃LB⧄5.0 \times 10^{-4}⧃RB⧄ = 5.4$
+$R = \frac◆LB◆\rho \times 2L◆RB◆◆LB◆A◆RB◆ = \frac◆LB◆2.7 \times 10^{-8} \times 2 \times 50\,000◆RB◆◆LB◆5.0 \times 10^{-4}◆RB◆ = \frac◆LB◆2.7 \times 10^{-3}◆RB◆◆LB◆5.0 \times 10^{-4}◆RB◆ = 5.4$
 $\Omega$.
 
 At 10 kV: $I = P/V = 100 \times 10^6 / (10 \times 10^3) = 10\,000$ A.
@@ -613,7 +613,7 @@ A copper wire has length 2.0 m, cross-sectional area $1.5 \times 10^{-6}$ m$^2$,
 $1.7 \times 10^{-8}$ $\Omega$ m. Calculate its resistance.
 
 **Answer.**
-$R = \frac⧃LB⧄\rho L⧃RB⧄⧃LB⧄A⧃RB⧄ = \frac⧃LB⧄1.7 \times 10^{-8} \times 2.0⧃RB⧄⧃LB⧄1.5 \times 10^{-6}⧃RB⧄ = \frac⧃LB⧄3.4 \times 10^{-8}⧃RB⧄⧃LB⧄1.5 \times 10^{-6}⧃RB⧄ = 0.0227$
+$R = \frac◆LB◆\rho L◆RB◆◆LB◆A◆RB◆ = \frac◆LB◆1.7 \times 10^{-8} \times 2.0◆RB◆◆LB◆1.5 \times 10^{-6}◆RB◆ = \frac◆LB◆3.4 \times 10^{-8}◆RB◆◆LB◆1.5 \times 10^{-6}◆RB◆ = 0.0227$
 $\Omega = 0.023$ $\Omega$.
 
 <b>If you get this wrong, revise:</b> [Resistivity](#4-resistivity)
@@ -637,7 +637,7 @@ Calculate the drift velocity of electrons in a silver wire of diameter 1.0 mm ca
 
 **Answer.** $A = \pi(0.5 \times 10^{-3})^2 = 7.85 \times 10^{-7}$ m$^2$.
 
-$v_d = \frac{I}{nAe} = \frac⧃LB⧄5.0⧃RB⧄⧃LB⧄5.9 \times 10^{28} \times 7.85 \times 10^{-7} \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄5.0⧃RB⧄⧃LB⧄7.42 \times 10^3⧃RB⧄ = 6.74 \times 10^{-4}$
+$v_d = \frac{I}{nAe} = \frac◆LB◆5.0◆RB◆◆LB◆5.9 \times 10^{28} \times 7.85 \times 10^{-7} \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆5.0◆RB◆◆LB◆7.42 \times 10^3◆RB◆ = 6.74 \times 10^{-4}$
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Derivation of $I = nAev_d$](#derivation-of-i--naev_d)
@@ -666,7 +666,7 @@ length. What is its new resistance? (Assume the volume remains constant.)
 
 **Answer.** If $L \to 2L$ and volume $AL = \mathrm{const}$, then $A \to A/2$.
 
-$R' = \frac⧃LB⧄\rho(2L)⧃RB⧄⧃LB⧄A/2⧃RB⧄ = \frac⧃LB⧄4\rho L⧃RB⧄⧃LB⧄A⧃RB⧄ = 4R = 32$ $\Omega$.
+$R' = \frac◆LB◆\rho(2L)◆RB◆◆LB◆A/2◆RB◆ = \frac◆LB◆4\rho L◆RB◆◆LB◆A◆RB◆ = 4R = 32$ $\Omega$.
 
 <b>If you get this wrong, revise:</b> [Resistivity](#4-resistivity)
 
@@ -780,9 +780,9 @@ north pole of the magnet (conventional current flows left to right, magnetic fie
 page).
 
 **Answer.** (a)
-$n = \frac{BI}{qV_Hd} = \frac⧃LB⧄0.80 \times 15 \times 10^{-3}⧃RB⧄⧃LB⧄1.60 \times 10^{-19} \times 12 \times 10^{-3} \times 1.0 \times 10^{-3}⧃RB⧄$
+$n = \frac{BI}{qV_Hd} = \frac◆LB◆0.80 \times 15 \times 10^{-3}◆RB◆◆LB◆1.60 \times 10^{-19} \times 12 \times 10^{-3} \times 1.0 \times 10^{-3}◆RB◆$
 
-$= \frac⧃LB⧄0.012⧃RB⧄⧃LB⧄1.60 \times 10^{-19} \times 1.2 \times 10^{-5}⧃RB⧄ = \frac⧃LB⧄0.012⧃RB⧄⧃LB⧄1.92 \times 10^{-24}⧃RB⧄ = 6.25 \times 10^{21}$
+$= \frac◆LB◆0.012◆RB◆◆LB◆1.60 \times 10^{-19} \times 1.2 \times 10^{-5}◆RB◆ = \frac◆LB◆0.012◆RB◆◆LB◆1.92 \times 10^{-24}◆RB◆ = 6.25 \times 10^{21}$
 m$^{-3}$.
 
 (b) By the right-hand rule (or Fleming's left-hand rule), positive carriers moving left-to-right in
@@ -827,14 +827,14 @@ wire can carry at (a) 0 K, (b) 4.0 K. Use the approximation $B_c(T) = B_c(0)[1 -
 is $B = \mu_0 I / (2\pi r)$. Superconductivity is destroyed when this field reaches $B_c(T)$.
 
 (a) At $T = 0$: $B_c(0) = 0.080$ T.
-$I_{\max} = \frac⧃LB⧄2\pi r B_c⧃RB⧄⧃LB⧄\mu_0⧃RB⧄ = \frac⧃LB⧄2\pi \times 1.0 \times 10^{-3} \times 0.080⧃RB⧄⧃LB⧄4\pi \times 10^{-7}⧃RB⧄ = \frac⧃LB⧄5.03 \times 10^{-4}⧃RB⧄⧃LB⧄1.257 \times 10^{-6}⧃RB⧄ = 400$
+$I_{\max} = \frac◆LB◆2\pi r B_c◆RB◆◆LB◆\mu_0◆RB◆ = \frac◆LB◆2\pi \times 1.0 \times 10^{-3} \times 0.080◆RB◆◆LB◆4\pi \times 10^{-7}◆RB◆ = \frac◆LB◆5.03 \times 10^{-4}◆RB◆◆LB◆1.257 \times 10^{-6}◆RB◆ = 400$
 A.
 
 (b) At $T = 4.0$ K:
 $B_c(4.0) = 0.080 \times [1 - (4.0/7.2)^2] = 0.080 \times [1 - 0.309] = 0.080 \times 0.691 = 0.0553$
 T.
 
-$I_{\max} = \frac⧃LB⧄2\pi \times 1.0 \times 10^{-3} \times 0.0553⧃RB⧄⧃LB⧄4\pi \times 10^{-7}⧃RB⧄ = 277$ A.
+$I_{\max} = \frac◆LB◆2\pi \times 1.0 \times 10^{-3} \times 0.0553◆RB◆◆LB◆4\pi \times 10^{-7}◆RB◆ = 277$ A.
 
 <b>If you get this wrong, revise:</b> [Superconductivity](#8-superconductivity)
 
@@ -852,7 +852,7 @@ mobility is the same for both.)
 **Answer.** (a)
 $\frac{n_i(350)}{n_i(300)} = \left(\frac{350}{300}\right)^{3/2} \exp\left[-\frac{E_g}{2k_B}\left(\frac{1}{350} - \frac{1}{300}\right)\right]$.
 
-$\frac{E_g}{2k_B} = \frac⧃LB⧄1.1 \times 1.60 \times 10^{-19}⧃RB⧄⧃LB⧄2 \times 1.38 \times 10^{-23}⧃RB⧄ = \frac⧃LB⧄1.76 \times 10^{-19}⧃RB⧄⧃LB⧄2.76 \times 10^{-23}⧃RB⧄ = 6377$
+$\frac{E_g}{2k_B} = \frac◆LB◆1.1 \times 1.60 \times 10^{-19}◆RB◆◆LB◆2 \times 1.38 \times 10^{-23}◆RB◆ = \frac◆LB◆1.76 \times 10^{-19}◆RB◆◆LB◆2.76 \times 10^{-23}◆RB◆ = 6377$
 K.
 
 $\frac{1}{350} - \frac{1}{300} = 0.002857 - 0.003333 = -4.76 \times 10^{-4}$ K$^{-1}$.

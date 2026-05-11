@@ -212,7 +212,7 @@ $$\boxed{\alpha\beta\gamma\delta = \frac{e}{a}}$$
 Using the elementary symmetric sums, we can express other symmetric functions:
 
 - $\alpha^2 + \beta^2 + \gamma^2 = (\alpha + \beta + \gamma)^2 - 2(\alpha\beta + \alpha\gamma + \beta\gamma)$
-- $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha⧃RB⧄ + \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\beta⧃RB⧄ + \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\gamma⧃RB⧄ = \dfrac⧃LB⧄\alpha\beta + \alpha\gamma + \beta\gamma⧃RB⧄⧃LB⧄\alpha\beta\gamma⧃RB⧄$
+- $\dfrac◆LB◆1◆RB◆◆LB◆\alpha◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\beta◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\gamma◆RB◆ = \dfrac◆LB◆\alpha\beta + \alpha\gamma + \beta\gamma◆RB◆◆LB◆\alpha\beta\gamma◆RB◆$
 - $\alpha^2\beta + \alpha^2\gamma + \beta^2\alpha + \beta^2\gamma + \gamma^2\alpha + \gamma^2\beta = (\alpha + \beta + \gamma)(\alpha\beta + \alpha\gamma + \beta\gamma) - 3\alpha\beta\gamma$
 
 <details>
@@ -331,7 +331,7 @@ This is known as the _summation by parts_ technique.
 
 ### Proof
 
-_Base case ($n = 1$):_ $\displaystyle\sum_{r=1}^{1} r = 1 = \frac⧃LB⧄1 \times 2⧃RB⧄⧃LB⧄2⧃RB⧄$. ✓
+_Base case ($n = 1$):_ $\displaystyle\sum_{r=1}^{1} r = 1 = \frac◆LB◆1 \times 2◆RB◆◆LB◆2◆RB◆$. ✓
 
 _Inductive step._ Assume $\displaystyle\sum_{r=1}^{k} r = \frac{k(k+1)}{2}$. Then:
 
@@ -343,7 +343,7 @@ $$\sum_{r=1}^{k+1} r = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \f
 
 ### Proof
 
-_Base case ($n = 1$):_ $1^3 = 1 = \left[\dfrac⧃LB⧄1 \times 2⧃RB⧄⧃LB⧄2⧃RB⧄\right]^2 = 1$. ✓
+_Base case ($n = 1$):_ $1^3 = 1 = \left[\dfrac◆LB◆1 \times 2◆RB◆◆LB◆2◆RB◆\right]^2 = 1$. ✓
 
 _Inductive step._ Assume $\displaystyle\sum_{r=1}^{k} r^3 = \left[\frac{k(k+1)}{2}\right]^2$. Then:
 
@@ -407,12 +407,12 @@ $$\frac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)} = \frac{6/5}{x + 2} + \frac{2x - 1
 <hr />
 
 **Problem 2.** The equation $x^3 - 4x^2 + x + 6 = 0$ has roots $\alpha, \beta, \gamma$. Find the
-value of $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha\beta⧃RB⧄ + \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha\gamma⧃RB⧄ + \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\beta\gamma⧃RB⧄$.
+value of $\dfrac◆LB◆1◆RB◆◆LB◆\alpha\beta◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\alpha\gamma◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\beta\gamma◆RB◆$.
 
 <details>
 <summary>Hint</summary>
 
-$\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha\beta⧃RB⧄ + \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha\gamma⧃RB⧄ + \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\beta\gamma⧃RB⧄ = \dfrac⧃LB⧄\alpha + \beta + \gamma⧃RB⧄⧃LB⧄\alpha\beta\gamma⧃RB⧄$.
+$\dfrac◆LB◆1◆RB◆◆LB◆\alpha\beta◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\alpha\gamma◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\beta\gamma◆RB◆ = \dfrac◆LB◆\alpha + \beta + \gamma◆RB◆◆LB◆\alpha\beta\gamma◆RB◆$.
 
 </details>
 
@@ -421,7 +421,7 @@ $\dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha\beta⧃RB⧄ + \dfrac⧃LB⧄1⧃RB⧄⧃
 
 $\alpha + \beta + \gamma = \dfrac{-(-4)}{1} = 4$ and $\alpha\beta\gamma = \dfrac{-6}{1} = -6$.
 
-$$\frac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha\beta⧃RB⧄ + \frac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha\gamma⧃RB⧄ + \frac⧃LB⧄1⧃RB⧄⧃LB⧄\beta\gamma⧃RB⧄ = \frac⧃LB⧄\alpha + \beta + \gamma⧃RB⧄⧃LB⧄\alpha\beta\gamma⧃RB⧄ = \frac{4}{-6} = -\frac{2}{3}$$
+$$\frac◆LB◆1◆RB◆◆LB◆\alpha\beta◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\alpha\gamma◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta\gamma◆RB◆ = \frac◆LB◆\alpha + \beta + \gamma◆RB◆◆LB◆\alpha\beta\gamma◆RB◆ = \frac{4}{-6} = -\frac{2}{3}$$
 
 </details>
 
@@ -481,7 +481,7 @@ $\dfrac{2}{r(r+1)(r+2)} = \dfrac{1}{r(r+1)} - \dfrac{1}{(r+1)(r+2)}$.
 
 This telescopes:
 
-$$\sum_{r=1}^{n}\left[\frac{1}{r(r+1)} - \frac{1}{(r+1)(r+2)}\right] = \frac⧃LB⧄1⧃RB⧄⧃LB⧄1 \times 2⧃RB⧄ - \frac{1}{(n+1)(n+2)}$$
+$$\sum_{r=1}^{n}\left[\frac{1}{r(r+1)} - \frac{1}{(r+1)(r+2)}\right] = \frac◆LB◆1◆RB◆◆LB◆1 \times 2◆RB◆ - \frac{1}{(n+1)(n+2)}$$
 
 $$= \frac{1}{2} - \frac{1}{(n+1)(n+2)}$$
 
@@ -596,7 +596,7 @@ Base case: $n = 1$. Inductive step: assume for $n = k$ and add the $(k+1)$-th te
 <details>
 <summary>Answer</summary>
 
-_Base case ($n = 1$):_ $1 \times 2 = 2 = \dfrac⧃LB⧄1 \times 2 \times 3⧃RB⧄⧃LB⧄3⧃RB⧄ = 2$. ✓
+_Base case ($n = 1$):_ $1 \times 2 = 2 = \dfrac◆LB◆1 \times 2 \times 3◆RB◆◆LB◆3◆RB◆ = 2$. ✓
 
 _Inductive step._ Assume $\displaystyle\sum_{r=1}^{k} r(r+1) = \frac{k(k+1)(k+2)}{3}$. Then:
 
@@ -684,11 +684,11 @@ $$(1+y)^n = 1 + ny + \frac{n(n-1)}{2!}y^2 + \frac{n(n-1)(n-2)}{3!}y^3 + \frac{n(
 
 With $n = -\dfrac{1}{2}$ and $y = -2x$:
 
-$$(1-2x)^{-1/2} = 1 + \left(-\frac{1}{2}\right)(-2x) + \frac⧃LB⧄\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)⧃RB⧄⧃LB⧄2⧃RB⧄(-2x)^2 + \cdots$$
+$$(1-2x)^{-1/2} = 1 + \left(-\frac{1}{2}\right)(-2x) + \frac◆LB◆\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)◆RB◆◆LB◆2◆RB◆(-2x)^2 + \cdots$$
 
 $$= 1 + x + \frac{3}{8}(4x^2) + \cdots = 1 + x + \frac{3}{2}x^2 + \cdots$$
 
-The $x^4$ coefficient: $\dfrac⧃LB⧄\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)\left(-\frac{5}{2}\right)\left(-\frac{7}{2}\right)⧃RB⧄⧃LB⧄24⧃RB⧄(16) = \dfrac{105}{16} \cdot \dfrac{16}{24} = \dfrac{105}{24} = \boxed{\dfrac{35}{8}}$.
+The $x^4$ coefficient: $\dfrac◆LB◆\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)\left(-\frac{5}{2}\right)\left(-\frac{7}{2}\right)◆RB◆◆LB◆24◆RB◆(16) = \dfrac{105}{16} \cdot \dfrac{16}{24} = \dfrac{105}{24} = \boxed{\dfrac{35}{8}}$.
 
 ### Example 8.2: Roots of a cubic with a substitution
 
@@ -712,7 +712,7 @@ As $n \to \infty$: $\displaystyle\sum_{r=1}^{\infty} \frac{1}{r(r+1)} = \boxed{1
 
 **Problem.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-**Solution.** **Base case** ($n=1$): LHS $= 1$, RHS $= \dfrac⧃LB⧄1 \cdot 2 \cdot 3⧃RB⧄⧃LB⧄6⧃RB⧄ = 1$. ✓
+**Solution.** **Base case** ($n=1$): LHS $= 1$, RHS $= \dfrac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$. ✓
 
 **Inductive hypothesis:** Assume $\displaystyle\sum_{r=1}^{k} r^2 = \frac{k(k+1)(2k+1)}{6}$.
 
@@ -758,7 +758,7 @@ $$\mathbf{M} = \begin{pmatrix}1&2&-1\\2&-1&1\\3&1&2\end{pmatrix}$$
 
 $\det(\mathbf{M}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$, so the system has a unique solution.
 
-Using Cramer's rule: $x = \dfrac⧃LB⧄\det\begin{pmatrix}3&2&-1\\4&-1&1\\7&1&2\end{pmatrix}⧃RB⧄⧃LB⧄-6⧃RB⧄ = \dfrac{-6+16-11}{-6} = \dfrac{-1}{-6} = \dfrac{1}{6}$.
+Using Cramer's rule: $x = \dfrac◆LB◆\det\begin{pmatrix}3&2&-1\\4&-1&1\\7&1&2\end{pmatrix}◆RB◆◆LB◆-6◆RB◆ = \dfrac{-6+16-11}{-6} = \dfrac{-1}{-6} = \dfrac{1}{6}$.
 
 Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 

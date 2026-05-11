@@ -598,7 +598,7 @@ Phenol is approximately one million times more acidic than ethanol. The phenoxid
 
 Resonance structures of the phenoxide ion:
 
-$$\mathrm{C}_6\mathrm{H}_5\mathrm{O}^- \leftrightarrow \overset⧃LB⧄-⧃RB⧄⧃LB⧄\mathrm{C}⧃RB⧄_6\mathrm{H}_4 = \mathrm{O} \leftrightarrow \mathrm{C}_6\mathrm{H}_4 = \overset⧃LB⧄+⧃RB⧄⧃LB⧄\mathrm{O}⧃RB⧄ \leftrightarrow \dots$$
+$$\mathrm{C}_6\mathrm{H}_5\mathrm{O}^- \leftrightarrow \overset◆LB◆-◆RB◆◆LB◆\mathrm{C}◆RB◆_6\mathrm{H}_4 = \mathrm{O} \leftrightarrow \mathrm{C}_6\mathrm{H}_4 = \overset◆LB◆+◆RB◆◆LB◆\mathrm{O}◆RB◆ \leftrightarrow \dots$$
 
 The negative charge is distributed over the ortho and para carbons of the ring, making the phenoxide ion significantly more stable than the ethoxide ion.
 

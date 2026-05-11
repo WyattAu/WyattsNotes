@@ -100,7 +100,7 @@ For the chi-squared approximation to be valid:
 For a $2 \times 2$ contingency table with small expected frequencies, Yates' correction adjusts the
 test statistic:
 
-$$\chi^2_{\mathrm{Yates}} = \sum\frac⧃LB⧄(|O_i - E_i| - 0.5)^2⧃RB⧄⧃LB⧄E_i⧃RB⧄$$
+$$\chi^2_{\mathrm{Yates}} = \sum\frac◆LB◆(|O_i - E_i| - 0.5)^2◆RB◆◆LB◆E_i◆RB◆$$
 
 This correction makes the test more conservative (less likely to reject $H_0$).
 
@@ -176,7 +176,7 @@ two categorical variables.
 
 For a contingency table with entries $O_{ij}$ (row $i$, column $j$), the expected frequency is:
 
-$$\boxed{E_{ij} = \frac⧃LB⧄(\mathrm{row } i \mathrm{ total}) \times (\mathrm{column } j \mathrm{ total})⧃RB⧄⧃LB⧄\mathrm{grand total}⧃RB⧄}$$
+$$\boxed{E_{ij} = \frac◆LB◆(\mathrm{row } i \mathrm{ total}) \times (\mathrm{column } j \mathrm{ total})◆RB◆◆LB◆\mathrm{grand total}◆RB◆}$$
 
 ### 3.4 Test statistic
 
@@ -203,14 +203,14 @@ Test at the 5% level whether age group and preferred news source are independent
 
 **Expected frequencies:**
 
-$E_{11} = \dfrac⧃LB⧄90 \times 70⧃RB⧄⧃LB⧄200⧃RB⧄ = 31.5$, $E_{12} = \dfrac⧃LB⧄90 \times 90⧃RB⧄⧃LB⧄200⧃RB⧄ = 40.5$,
-$E_{13} = \dfrac⧃LB⧄90 \times 40⧃RB⧄⧃LB⧄200⧃RB⧄ = 18.0$
+$E_{11} = \dfrac◆LB◆90 \times 70◆RB◆◆LB◆200◆RB◆ = 31.5$, $E_{12} = \dfrac◆LB◆90 \times 90◆RB◆◆LB◆200◆RB◆ = 40.5$,
+$E_{13} = \dfrac◆LB◆90 \times 40◆RB◆◆LB◆200◆RB◆ = 18.0$
 
-$E_{21} = \dfrac⧃LB⧄70 \times 70⧃RB⧄⧃LB⧄200⧃RB⧄ = 24.5$, $E_{22} = \dfrac⧃LB⧄70 \times 90⧃RB⧄⧃LB⧄200⧃RB⧄ = 31.5$,
-$E_{23} = \dfrac⧃LB⧄70 \times 40⧃RB⧄⧃LB⧄200⧃RB⧄ = 14.0$
+$E_{21} = \dfrac◆LB◆70 \times 70◆RB◆◆LB◆200◆RB◆ = 24.5$, $E_{22} = \dfrac◆LB◆70 \times 90◆RB◆◆LB◆200◆RB◆ = 31.5$,
+$E_{23} = \dfrac◆LB◆70 \times 40◆RB◆◆LB◆200◆RB◆ = 14.0$
 
-$E_{31} = \dfrac⧃LB⧄40 \times 70⧃RB⧄⧃LB⧄200⧃RB⧄ = 14.0$, $E_{32} = \dfrac⧃LB⧄40 \times 90⧃RB⧄⧃LB⧄200⧃RB⧄ = 18.0$,
-$E_{33} = \dfrac⧃LB⧄40 \times 40⧃RB⧄⧃LB⧄200⧃RB⧄ = 8.0$
+$E_{31} = \dfrac◆LB◆40 \times 70◆RB◆◆LB◆200◆RB◆ = 14.0$, $E_{32} = \dfrac◆LB◆40 \times 90◆RB◆◆LB◆200◆RB◆ = 18.0$,
+$E_{33} = \dfrac◆LB◆40 \times 40◆RB◆◆LB◆200◆RB◆ = 8.0$
 
 All expected frequencies $\geq 5$, so the test is valid.
 
@@ -479,7 +479,7 @@ are small. The uncorrected chi-squared test tends to reject $H_0$ too often (it 
 
 Yates' correction adjusts each term by subtracting 0.5 from the absolute difference before squaring:
 
-$$\chi^2_{\mathrm{Yates}} = \sum_{i=1}^{4}\frac⧃LB⧄(|O_i - E_i| - 0.5)^2⧃RB⧄⧃LB⧄E_i⧃RB⧄$$
+$$\chi^2_{\mathrm{Yates}} = \sum_{i=1}^{4}\frac◆LB◆(|O_i - E_i| - 0.5)^2◆RB◆◆LB◆E_i◆RB◆$$
 
 This reduces the test statistic, making it harder to reject $H_0$.
 
@@ -666,7 +666,7 @@ observed vs expected frequencies to understand the nature of any discrepancy.
 The fundamental connection: if $X \sim \chi^2_1$ (1 degree of freedom), then $X = Z^2$ where
 $Z \sim N(0,1)$.
 
-This means $\sqrt⧃LB⧄\chi^2_1⧃RB⧄ \sim |Z|$, i.e., the square root of a chi-squared statistic with 1 df
+This means $\sqrt◆LB◆\chi^2_1◆RB◆ \sim |Z|$, i.e., the square root of a chi-squared statistic with 1 df
 follows a half-normal distribution.
 
 ### 9.2 $2 \times 2$ tables and the normal approximation
@@ -674,7 +674,7 @@ follows a half-normal distribution.
 For a $2 \times 2$ table, the chi-squared test is equivalent to a two-proportion $z$-test. If $p_1$
 and $p_2$ are the sample proportions:
 
-$$\chi^2 = z^2 \quad \mathrm{where} \quad z = \frac⧃LB⧄p_1 - p_2⧃RB⧄⧃LB⧄\sqrt{\hat{p}(1-\hat{p})(1/n_1 + 1/n_2)}⧃RB⧄$$
+$$\chi^2 = z^2 \quad \mathrm{where} \quad z = \frac◆LB◆p_1 - p_2◆RB◆◆LB◆\sqrt{\hat{p}(1-\hat{p})(1/n_1 + 1/n_2)}◆RB◆$$
 
 and $\hat{p}$ is the pooled proportion.
 
@@ -682,7 +682,7 @@ and $\hat{p}$ is the pooled proportion.
 
 As $\nu$ increases, $\chi^2_\nu$ approaches $N(\nu, 2\nu)$. This means for large tables:
 
-$$z = \frac⧃LB⧄\chi^2 - \nu⧃RB⧄⧃LB⧄\sqrt{2\nu}⧃RB⧄ \sim N(0,1) \quad \mathrm{approximately}$$
+$$z = \frac◆LB◆\chi^2 - \nu◆RB◆◆LB◆\sqrt{2\nu}◆RB◆ \sim N(0,1) \quad \mathrm{approximately}$$
 
 This approximation is useful when chi-squared tables do not list the required $\nu$ value.
 
@@ -911,9 +911,9 @@ Test at the 1% level whether hair colour and eye colour are independent.
 
 Row totals: Blonde 70, Brown 110, Black 120. Column totals: Blue 80, Brown 120, Green 100. Grand total: 300.
 
-Expected values: $E_{ij} = \dfrac⧃LB⧄R_i \times C_j⧃RB⧄⧃LB⧄300⧃RB⧄$.
+Expected values: $E_{ij} = \dfrac◆LB◆R_i \times C_j◆RB◆◆LB◆300◆RB◆$.
 
-$E_{11} = \dfrac⧃LB⧄70 \times 80⧃RB⧄⧃LB⧄300⧃RB⧄ = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$, $E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
+$E_{11} = \dfrac◆LB◆70 \times 80◆RB◆◆LB◆300◆RB◆ = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$, $E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
 
 $$\chi^2 = \frac{(40-18.67)^2}{18.67} + \frac{(20-28)^2}{28} + \frac{(10-23.33)^2}{23.33} + \frac{(30-29.33)^2}{29.33} + \frac{(60-44)^2}{44} + \frac{(20-36.67)^2}{36.67} + \frac{(10-32)^2}{32} + \frac{(40-48)^2}{48} + \frac{(70-40)^2}{40}$$
 
@@ -936,11 +936,11 @@ $86.63 > 13.28$: **reject** $H_0$. Very strong evidence that hair colour and eye
 
 With Yates' correction:
 
-$$\chi^2 = \sum \frac⧃LB⧄(|O_i - E_i| - 0.5)^2⧃RB⧄⧃LB⧄E_i⧃RB⧄$$
+$$\chi^2 = \sum \frac◆LB◆(|O_i - E_i| - 0.5)^2◆RB◆◆LB◆E_i◆RB◆$$
 
 $E_{11} = E_{12} = 47.5$, $E_{21} = E_{22} = 47.5$.
 
-$$\chi^2 = \frac⧃LB⧄(|40-47.5|-0.5)^2⧃RB⧄⧃LB⧄47.5⧃RB⧄ + \frac⧃LB⧄(|60-47.5|-0.5)^2⧃RB⧄⧃LB⧄47.5⧃RB⧄ + \frac⧃LB⧄(|55-47.5|-0.5)^2⧃RB⧄⧃LB⧄47.5⧃RB⧄ + \frac⧃LB⧄(|45-47.5|-0.5)^2⧃RB⧄⧃LB⧄47.5⧃RB⧄$$
+$$\chi^2 = \frac◆LB◆(|40-47.5|-0.5)^2◆RB◆◆LB◆47.5◆RB◆ + \frac◆LB◆(|60-47.5|-0.5)^2◆RB◆◆LB◆47.5◆RB◆ + \frac◆LB◆(|55-47.5|-0.5)^2◆RB◆◆LB◆47.5◆RB◆ + \frac◆LB◆(|45-47.5|-0.5)^2◆RB◆◆LB◆47.5◆RB◆$$
 
 $= \dfrac{49 + 144 + 49 + 4}{47.5} = \dfrac{246}{47.5} \approx 5.18$.
 
@@ -970,7 +970,7 @@ Test at 5% whether the data follows a geometric distribution.
 
 **Solution.** $H_0$: data follows $\mathrm{Geo}(p)$.
 
-$\bar{x} = \dfrac⧃LB⧄0 \times 90 + 1 \times 60 + 2 \times 30 + 3 \times 12 + 4 \times 8⧃RB⧄⧃LB⧄200⧃RB⧄ = \dfrac{196}{200} = 0.98$.
+$\bar{x} = \dfrac◆LB◆0 \times 90 + 1 \times 60 + 2 \times 30 + 3 \times 12 + 4 \times 8◆RB◆◆LB◆200◆RB◆ = \dfrac{196}{200} = 0.98$.
 
 For $\mathrm{Geo}(p)$: $E(X) = \dfrac{1-p}{p} = 0.98 \implies p = \dfrac{1}{1.98} \approx 0.505$.
 
@@ -1007,7 +1007,7 @@ Observed table:
 | North | 180 | 120 |
 | South | 90 | 110 |
 
-Expected: $E_{11} = \dfrac⧃LB⧄270 \times 300⧃RB⧄⧃LB⧄500⧃RB⧄ = 162$, $E_{12} = 138$, $E_{21} = 108$, $E_{22} = 92$.
+Expected: $E_{11} = \dfrac◆LB◆270 \times 300◆RB◆◆LB◆500◆RB◆ = 162$, $E_{12} = 138$, $E_{21} = 108$, $E_{22} = 92$.
 
 $$\chi^2 = \frac{324}{162} + \frac{324}{138} + \frac{324}{108} + \frac{324}{92} \approx 2.00 + 2.35 + 3.00 + 3.52 = 10.87$$
 
@@ -1164,11 +1164,11 @@ Key properties:
 
 ### 14.2 Chi-squared confidence intervals for variance
 
-For a sample of size $n$ from $N(\mu, \sigma^2)$, the quantity $\dfrac⧃LB⧄(n-1)s^2⧃RB⧄⧃LB⧄\sigma^2⧃RB⧄ \sim \chi^2_{n-1}$.
+For a sample of size $n$ from $N(\mu, \sigma^2)$, the quantity $\dfrac◆LB◆(n-1)s^2◆RB◆◆LB◆\sigma^2◆RB◆ \sim \chi^2_{n-1}$.
 
 A $95\%$ confidence interval for $\sigma^2$ is:
 
-$$\left[\frac⧃LB⧄(n-1)s^2⧃RB⧄⧃LB⧄\chi^2_{n-1,0.025}⧃RB⧄,\; \frac⧃LB⧄(n-1)s^2⧃RB⧄⧃LB⧄\chi^2_{n-1,0.975}⧃RB⧄\right]$$
+$$\left[\frac◆LB◆(n-1)s^2◆RB◆◆LB◆\chi^2_{n-1,0.025}◆RB◆,\; \frac◆LB◆(n-1)s^2◆RB◆◆LB◆\chi^2_{n-1,0.975}◆RB◆\right]$$
 
 ### 14.3 Relationship to other tests
 
@@ -1255,7 +1255,7 @@ This gives the exact $p$-value without approximation.
 
 After rejecting $H_0$ in a goodness-of-fit test, standardised residuals identify which classes contribute most:
 
-$$r_i = \frac⧃LB⧄O_i - E_i⧃RB⧄⧃LB⧄\sqrt{E_i}⧃RB⧄$$
+$$r_i = \frac◆LB◆O_i - E_i◆RB◆◆LB◆\sqrt{E_i}◆RB◆$$
 
 Values with $|r_i| > 2$ indicate significant deviations.
 

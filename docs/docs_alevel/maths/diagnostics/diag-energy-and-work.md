@@ -87,21 +87,21 @@ $$a = \frac{P}{mv} - \frac{R}{m} \quad \blacksquare$$
 
 **(b)** At maximum speed, $a = 0$:
 
-$$\frac⧃LB⧄P⧃RB⧄⧃LB⧄v_{\max}⧃RB⧄ = R \implies v_{\max} = \frac{P}{R} = \frac{40000}{200} = 200 \text{ m/s}$$
+$$\frac◆LB◆P◆RB◆◆LB◆v_{\max}◆RB◆ = R \implies v_{\max} = \frac{P}{R} = \frac{40000}{200} = 200 \text{ m/s}$$
 
 **(c)** At $v = 10$ m/s:
 
-$$a = \frac⧃LB⧄40000⧃RB⧄⧃LB⧄800 \times 10⧃RB⧄ - \frac{200}{800} = 5 - 0.25 = 4.75 \text{ m/s}^2$$
+$$a = \frac◆LB◆40000◆RB◆◆LB◆800 \times 10◆RB◆ - \frac{200}{800} = 5 - 0.25 = 4.75 \text{ m/s}^2$$
 
 At $v = 100$ m/s:
 
-$$a = \frac⧃LB⧄40000⧃RB⧄⧃LB⧄800 \times 100⧃RB⧄ - \frac{200}{800} = 0.5 - 0.25 = 0.25 \text{ m/s}^2$$
+$$a = \frac◆LB◆40000◆RB◆◆LB◆800 \times 100◆RB◆ - \frac{200}{800} = 0.5 - 0.25 = 0.25 \text{ m/s}^2$$
 
 **(d)** The acceleration at $10$ m/s is $4.75$ m/s$^2$ and at $100$ m/s is $0.25$ m/s$^2$. The acceleration decreases by a factor of 19 as the speed increases by a factor of 10. Constant power does not imply constant acceleration; in fact, the acceleration decreases hyperbolically with speed.
 
 **(e)** From $a = \frac{dv}{dt} = \frac{P}{mv} - \frac{R}{m}$:
 
-$$dt = \frac⧃LB⧄dv⧃RB⧄⧃LB⧄\frac{P}{mv} - \frac{R}{m}⧃RB⧄ = \frac{mv\,dv}{P - Rv}$$
+$$dt = \frac◆LB◆dv◆RB◆◆LB◆\frac{P}{mv} - \frac{R}{m}◆RB◆ = \frac{mv\,dv}{P - Rv}$$
 
 $$t = \int_{5}^{15} \frac{mv}{P - Rv}\,dv = 800\int_{5}^{15} \frac{v}{40000 - 200v}\,dv$$
 
@@ -213,7 +213,7 @@ The force does positive work in $(-\infty, -5/3)$ and $(1, \infty)$, and negativ
 
 $$= (27 + 9 - 15) - (-8 + 4 + 10) = 21 - 6 = 15 \text{ J}$$
 
-$$v = \sqrt⧃LB⧄\frac{2W}{m}⧃RB⧄ = \sqrt⧃LB⧄\frac{30}{2}⧃RB⧄ = \sqrt{15} \approx 3.87 \text{ m/s}$$
+$$v = \sqrt◆LB◆\frac{2W}{m}◆RB◆ = \sqrt◆LB◆\frac{30}{2}◆RB◆ = \sqrt{15} \approx 3.87 \text{ m/s}$$
 
 Note that the work from $-2$ to $3$ ($15$ J) is less than from $0$ to $3$ ($21$ J) because the force does negative work in the region $[-5/3, 1]$ through which the particle passes.
 

@@ -38,13 +38,13 @@ tombstone.
 The entropy change is defined as:
 
 $$
-\Delta S = \int \frac⧃LB⧄\delta q_\mathrm{rev}⧃RB⧄⧃LB⧄T⧃RB⧄
+\Delta S = \int \frac◆LB◆\delta q_\mathrm{rev}◆RB◆◆LB◆T◆RB◆
 $$
 
 For an isothermal process:
 
 $$
-\Delta S = \frac⧃LB⧄q_\mathrm{rev}⧃RB⧄⧃LB⧄T⧃RB⧄
+\Delta S = \frac◆LB◆q_\mathrm{rev}◆RB◆◆LB◆T◆RB◆
 $$
 
 This shows that entropy is heat divided by temperature. Transferring a given amount of heat at a
@@ -117,7 +117,7 @@ The surroundings gain or lose heat as a result of the reaction. The entropy chan
 surroundings is:
 
 $$
-\Delta S_\mathrm{surroundings} = -\frac⧃LB⧄\Delta H_\mathrm{system}⧃RB⧄⧃LB⧄T⧃RB⧄
+\Delta S_\mathrm{surroundings} = -\frac◆LB◆\Delta H_\mathrm{system}◆RB◆◆LB◆T◆RB◆
 $$
 
 The negative sign arises because when the system releases heat (exothermic, $\Delta H \lt 0$), the
@@ -127,7 +127,7 @@ $\Delta H \gt 0$), the surroundings lose heat and their entropy decreases.
 Combining with the second law:
 
 $$
-\Delta S_\mathrm{universe} = \Delta S_\mathrm{system} - \frac⧃LB⧄\Delta H_\mathrm{system}⧃RB⧄⧃LB⧄T⧃RB⧄ \gt 0
+\Delta S_\mathrm{universe} = \Delta S_\mathrm{system} - \frac◆LB◆\Delta H_\mathrm{system}◆RB◆◆LB◆T◆RB◆ \gt 0
 $$
 
 Multiplying through by $T$ (which is always positive):
@@ -209,7 +209,7 @@ Since $\Delta G^\circ \lt 0$, the reaction is spontaneous at $298\,\mathrm{K}$ (
 extremely slow without a catalyst).
 
 $$
-K = \exp\left(\frac⧃LB⧄-\Delta G^\circ⧃RB⧄⧃LB⧄RT⧃RB⧄\right) = \exp\left(\frac⧃LB⧄32698⧃RB⧄⧃LB⧄8.314 \times 298⧃RB⧄\right) = \exp(13.19) = 5.3 \times 10^5
+K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆32698◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(13.19) = 5.3 \times 10^5
 $$
 
 The equilibrium constant is very large, confirming that products are strongly favoured at
@@ -233,7 +233,7 @@ The temperature at which a reaction changes from spontaneous to non-spontaneous 
 the temperature at which $\Delta G = 0$:
 
 $$
-T = \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄
+T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆
 $$
 
 **Worked Example.** At what temperature does the thermal decomposition of calcium carbonate become
@@ -246,7 +246,7 @@ $$
 $\Delta H^\circ = +178\,\mathrm{kJ/mol}$, $\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
-T = \frac⧃LB⧄178 \times 10^3⧃RB⧄⧃LB⧄160⧃RB⧄ = 1113\,\mathrm{K} = 840^\circ\mathrm{C}
+T = \frac◆LB◆178 \times 10^3◆RB◆◆LB◆160◆RB◆ = 1113\,\mathrm{K} = 840^\circ\mathrm{C}
 $$
 
 Above $1113\,\mathrm{K}$, $\Delta G^\circ \lt 0$ and decomposition is spontaneous. In a lime kiln,
@@ -367,7 +367,7 @@ $\Delta G^\circ \gt 0$: not spontaneous at $298\,\mathrm{K}$.
 (b)
 
 $$
-T = \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄ = \frac{131000}{134} = 978\,\mathrm{K} = 705^\circ\mathrm{C}
+T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{131000}{134} = 978\,\mathrm{K} = 705^\circ\mathrm{C}
 $$
 
 Above $978\,\mathrm{K}$, the reaction becomes spontaneous.
@@ -379,7 +379,7 @@ $$
 $$
 
 $$
-K = \exp\left(\frac⧃LB⧄-\Delta G^\circ⧃RB⧄⧃LB⧄RT⧃RB⧄\right) = \exp\left(\frac⧃LB⧄3000⧃RB⧄⧃LB⧄8.314 \times 1000⧃RB⧄\right) = \exp(0.361) = 1.43
+K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆3000◆RB◆◆LB◆8.314 \times 1000◆RB◆\right) = \exp(0.361) = 1.43
 $$
 
 $K = 1.43$, so products are slightly favoured at $1000\,\mathrm{K}$.
@@ -401,7 +401,7 @@ temperature despite the process being endothermic.
 (a) At the melting point, $\Delta G = 0$:
 
 $$
-T = \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄ = \frac{6010}{22.0} = 273\,\mathrm{K} = 0^\circ\mathrm{C}
+T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{6010}{22.0} = 273\,\mathrm{K} = 0^\circ\mathrm{C}
 $$
 
 (b) Although $\Delta H^\circ \gt 0$ (endothermic), $\Delta S^\circ \gt 0$ (entropy increases). At
@@ -431,13 +431,13 @@ $$
 $$
 
 $$
-K_p = \exp\left(\frac⧃LB⧄4812⧃RB⧄⧃LB⧄8.314 \times 298⧃RB⧄\right) = \exp(1.943) = 6.98
+K_p = \exp\left(\frac◆LB◆4812◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(1.943) = 6.98
 $$
 
 (b) $K_p = 1$ when $\Delta G^\circ = 0$:
 
 $$
-T = \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄ = \frac{-57200}{-175.8} = 325\,\mathrm{K}
+T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{-57200}{-175.8} = 325\,\mathrm{K}
 $$
 
 (c) The forward reaction is exothermic ($\Delta H^\circ \lt 0$) and decreases entropy ($\Delta S^\circ \lt 0$). Increasing temperature makes $\Delta G^\circ$ less negative (eventually positive), so $K_p$ decreases. The yield of $\mathrm{N}_2\mathrm{O}_4$ decreases with increasing temperature. This is consistent with Le Chatelier's principle.
@@ -565,13 +565,13 @@ Spontaneous at $1000\,\mathrm{K}$.
 **(b)** $\Delta G^\circ = 0$ when:
 
 $$
-T = \frac⧃LB⧄\Delta H^\circ⧃RB⧄⧃LB⧄\Delta S^\circ⧃RB⧄ = \frac⧃LB⧄173 \times 10^3⧃RB⧄⧃LB⧄176⧃RB⧄ = 983\,\mathrm{K}
+T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac◆LB◆173 \times 10^3◆RB◆◆LB◆176◆RB◆ = 983\,\mathrm{K}
 $$
 
 **(c)** At $1000\,\mathrm{K}$:
 
 $$
-K = \exp\left(\frac⧃LB⧄-\Delta G^\circ⧃RB⧄⧃LB⧄RT⧃RB⧄\right) = \exp\left(\frac⧃LB⧄3000⧃RB⧄⧃LB⧄8.314 \times 1000⧃RB⧄\right) = \exp(0.361) = 1.43
+K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆3000◆RB◆◆LB◆8.314 \times 1000◆RB◆\right) = \exp(0.361) = 1.43
 $$
 
 $K > 1$, confirming that products are favoured.
@@ -612,7 +612,7 @@ $$= -2.0 \times 8.314 \times \ln 0.5 = -16.63 \times (-0.693) = +11.5\,\mathrm{J
 
 At a phase transition, the system is at equilibrium so $\Delta G = 0$, giving:
 
-$$\Delta S_\text{transition} = \frac⧃LB⧄\Delta H_\text{transition}⧃RB⧄⧃LB⧄T_\text{transition}⧃RB⧄$$
+$$\Delta S_\text{transition} = \frac◆LB◆\Delta H_\text{transition}◆RB◆◆LB◆T_\text{transition}◆RB◆$$
 
 | Transition | $\Delta H$ | $\Delta S$ | $\Delta G$ |
 |---|---|---|---|
@@ -664,11 +664,11 @@ $$\Delta G^\circ = -RT\ln K$$
 
 $\Delta G^\circ = +4.72\,\mathrm{kJ/mol}$. Calculate $K$.
 
-$$K = \exp\left(\frac⧃LB⧄-\Delta G^\circ⧃RB⧄⧃LB⧄RT⧃RB⧄\right) = \exp\left(\frac⧃LB⧄-4720⧃RB⧄⧃LB⧄8.314 \times 298⧃RB⧄\right) = \exp(-1.905) = 0.149$$
+$$K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆-4720◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(-1.905) = 0.149$$
 
 If the initial pressure of $\mathrm{N}_2\mathrm{O}_4$ is $1.00\,\mathrm{atm}$ and no $\mathrm{NO}_2$ is present:
 
-$$Q = \frac⧃LB⧄(p_{\mathrm{NO}_2})^2⧃RB⧄⧃LB⧄p_{\mathrm{N}_2\mathrm{O}_4}⧃RB⧄ = \frac{0}{1} = 0$$
+$$Q = \frac◆LB◆(p_{\mathrm{NO}_2})^2◆RB◆◆LB◆p_{\mathrm{N}_2\mathrm{O}_4}◆RB◆ = \frac{0}{1} = 0$$
 
 $$\Delta G = 4720 + 8.314 \times 298 \times \ln 0 = 4720 + (-\infty) \to -\infty$$
 
@@ -759,7 +759,7 @@ The melting point of sodium is $371\,\mathrm{K}$ and $\Delta H_\text{fus} = +2.6
 
 **Mark Scheme:**
 
-$$\Delta S_\text{fus} = \frac⧃LB⧄\Delta H_\text{fus}⧃RB⧄⧃LB⧄T_\text{m}⧃RB⧄ = \frac{2600}{371} = +7.01\,\mathrm{J\,mol^{-1}\,K^{-1}}$$ (2 marks).
+$$\Delta S_\text{fus} = \frac◆LB◆\Delta H_\text{fus}◆RB◆◆LB◆T_\text{m}◆RB◆ = \frac{2600}{371} = +7.01\,\mathrm{J\,mol^{-1}\,K^{-1}}$$ (2 marks).
 
 The entropy change is positive because the solid sodium becomes a liquid, which has greater disorder and more ways to arrange the particles (1 mark). The ions in the liquid are no longer fixed in a lattice and have greater freedom of movement (1 mark).
 

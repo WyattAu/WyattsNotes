@@ -67,7 +67,7 @@ Ethanoic acid ($\text{CH}_3\text{COOH}$) has no chiral centre. The carbonyl carb
 
 (c)
 
-$$\text{Enantiomeric excess (ee)} = \frac⧃LB⧄\text{observed rotation}⧃RB⧄⧃LB⧄\text{rotation of pure enantiomer}⧃RB⧄ \times 100 = \frac{13.5}{23.1} \times 100 = 58.4\%$$
+$$\text{Enantiomeric excess (ee)} = \frac◆LB◆\text{observed rotation}◆RB◆◆LB◆\text{rotation of pure enantiomer}◆RB◆ \times 100 = \frac{13.5}{23.1} \times 100 = 58.4\%$$
 
 This means the mixture contains $58.4\%$ excess of the $(R)$-enantiomer.
 

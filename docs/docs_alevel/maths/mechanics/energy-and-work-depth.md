@@ -196,7 +196,7 @@ Conservation of energy: $\mathrm{GPE}_{\mathrm{top}} = \mathrm{KE}_{\mathrm{bott
 
 $$mgh = \frac{1}{2}mv^2$$
 
-$$v = \sqrt{2gh} = \sqrt⧃LB⧄2 \times 9.8 \times 0.351⧃RB⧄ = \sqrt{6.88} \approx 2.62\;\mathrm{m\,s^{-1}}$$
+$$v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.8 \times 0.351◆RB◆ = \sqrt{6.88} \approx 2.62\;\mathrm{m\,s^{-1}}$$
 
 ### 5.3 Worked example: roller coaster
 
@@ -249,7 +249,7 @@ The SI unit of power is the watt ($\mathrm{W} = \mathrm{J\,s^{-1}}$).
 
 ### 6.2 Derivation of $P = Fv$
 
-$$P = \frac{dW}{dt} = \frac{d}{dt}(\mathbf{F} \cdot \mathbf{s}) = \mathbf{F} \cdot \frac⧃LB⧄d\mathbf{s}⧃RB⧄⧃LB⧄dt⧃RB⧄ = \mathbf{F} \cdot \mathbf{v}$$
+$$P = \frac{dW}{dt} = \frac{d}{dt}(\mathbf{F} \cdot \mathbf{s}) = \mathbf{F} \cdot \frac◆LB◆d\mathbf{s}◆RB◆◆LB◆dt◆RB◆ = \mathbf{F} \cdot \mathbf{v}$$
 
 For motion in one dimension: $P = Fv$. $\blacksquare$
 
@@ -297,14 +297,14 @@ $$T = kx$$
 where $k$ is the **stiffness** (or spring constant) in $\mathrm{N\,m^{-1}}$ and $x$ is the extension
 in metres.
 
-Alternatively, $T = \dfrac⧃LB⧄\lambda x⧃RB⧄⧃LB⧄l⧃RB⧄$ where $\lambda$ is the **modulus of elasticity** and $l$
+Alternatively, $T = \dfrac◆LB◆\lambda x◆RB◆◆LB◆l◆RB◆$ where $\lambda$ is the **modulus of elasticity** and $l$
 is the natural length.
 
 ### 7.2 Elastic potential energy
 
 The **elastic potential energy** (EPE) stored in a spring extended by $x$ from its natural length is:
 
-$$\boxed{\mathrm{EPE} = \frac{1}{2}kx^2 = \frac⧃LB⧄\lambda x^2⧃RB⧄⧃LB⧄2l⧃RB⧄}$$
+$$\boxed{\mathrm{EPE} = \frac{1}{2}kx^2 = \frac◆LB◆\lambda x^2◆RB◆◆LB◆2l◆RB◆}$$
 
 **Derivation.** The work done in extending the spring from $0$ to $x$:
 
@@ -325,7 +325,7 @@ At maximum extension, speed $= 0$. By conservation of energy:
 
 $$\mathrm{GPE\ lost} = \mathrm{EPE\ gained}$$
 
-$$mgx = \frac⧃LB⧄\lambda x^2⧃RB⧄⧃LB⧄2l⧃RB⧄$$
+$$mgx = \frac◆LB◆\lambda x^2◆RB◆◆LB◆2l◆RB◆$$
 
 $$2gx = \frac{60x^2}{2(1.2)} = 25x^2$$
 
@@ -337,11 +337,11 @@ $$2g = \frac{60x}{1.2} = 50x \implies x = \frac{2g}{50} = 0.392\;\mathrm{m}$$
 
 Energy conservation from start to this point:
 
-$$mgx = \frac{1}{2}mv^2 + \frac⧃LB⧄\lambda x^2⧃RB⧄⧃LB⧄2l⧃RB⧄$$
+$$mgx = \frac{1}{2}mv^2 + \frac◆LB◆\lambda x^2◆RB◆◆LB◆2l◆RB◆$$
 
 $$2(9.8)(0.392) = v^2 + \frac{60(0.392)^2}{2(1.2)}$$
 
-$$7.683 = v^2 + \frac⧃LB⧄60 \times 0.1537⧃RB⧄⧃LB⧄2.4⧃RB⧄ = v^2 + 3.842$$
+$$7.683 = v^2 + \frac◆LB◆60 \times 0.1537◆RB◆◆LB◆2.4◆RB◆ = v^2 + 3.842$$
 
 $$v^2 = 3.841 \implies v \approx 1.96\;\mathrm{m\,s^{-1}}$$
 
@@ -428,7 +428,7 @@ EPE released: $\frac{1}{2}(200)(0.1)^2 = 1\;\mathrm{J}$.
 
 At maximum height, all energy is GPE: $mgh = 1$.
 
-$h = \frac⧃LB⧄1⧃RB⧄⧃LB⧄0.4 \times 9.8⧃RB⧄ = \frac{1}{3.92} \approx 0.255\;\mathrm{m}$.
+$h = \frac◆LB◆1◆RB◆◆LB◆0.4 \times 9.8◆RB◆ = \frac{1}{3.92} \approx 0.255\;\mathrm{m}$.
 
 Note: this neglects the spring's own mass and any energy lost during the launch transition.
 

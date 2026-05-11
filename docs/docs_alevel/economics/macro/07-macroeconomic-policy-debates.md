@@ -108,7 +108,7 @@ Minimising subject to the Phillips curve $\pi = \pi^e - \alpha(u - u^*)$:
 
 Under **discretion** (after expectations are formed): the optimal policy creates inflation bias:
 
-$$\pi_{discretion} = \pi^* + \frac⧃LB⧄\beta \alpha⧃RB⧄⧃LB⧄1 + \beta \alpha^2⧃RB⧄ > \pi^*$$
+$$\pi_{discretion} = \pi^* + \frac◆LB◆\beta \alpha◆RB◆◆LB◆1 + \beta \alpha^2◆RB◆ > \pi^*$$
 
 Under a **rule** (commitment to $\pi = \pi^*$): $\pi = \pi^*$ with no bias.
 
@@ -799,16 +799,16 @@ But suppose there is a negative output shock: $u = u^* + \epsilon - \alpha(\pi -
 **Under discretion:** Government minimises $L$ taking $\pi^e$ as given. The optimal $\pi$ is higher than $\pi^e$ because the government tries to exploit the short-run Phillips curve to offset the shock.
 
 **Rational expectations:** Workers anticipate the government's incentive to inflate. In equilibrium:
-$$\pi^e = \pi^* + \frac⧃LB⧄\beta\alpha⧃RB⧄⧃LB⧄1 + \beta\alpha^2⧃RB⧄(u^* - u^*) = \pi^*$$
+$$\pi^e = \pi^* + \frac◆LB◆\beta\alpha◆RB◆◆LB◆1 + \beta\alpha^2◆RB◆(u^* - u^*) = \pi^*$$
 
 Wait -- let me redo this properly. Under rational expectations with discretion:
 
-$$\pi = \pi^* + \frac⧃LB⧄\beta\alpha⧃RB⧄⧃LB⧄1 + \beta\alpha^2⧃RB⧄\epsilon$$
+$$\pi = \pi^* + \frac◆LB◆\beta\alpha◆RB◆◆LB◆1 + \beta\alpha^2◆RB◆\epsilon$$
 
-$$\pi^e = \pi^* + \frac⧃LB⧄\beta\alpha⧃RB⧄⧃LB⧄1 + \beta\alpha^2⧃RB⧄\epsilon$$
+$$\pi^e = \pi^* + \frac◆LB◆\beta\alpha◆RB◆◆LB◆1 + \beta\alpha^2◆RB◆\epsilon$$
 
 Workers correctly anticipate the inflationary bias. The unemployment rate is:
-$$u = u^* + \epsilon - \alpha\left(\frac⧃LB⧄\beta\alpha⧃RB⧄⧃LB⧄1 + \beta\alpha^2⧃RB⧄\epsilon\right) = u^* + \frac⧃LB⧄\epsilon⧃RB⧄⧃LB⧄1 + \beta\alpha^2⧃RB⧄$$
+$$u = u^* + \epsilon - \alpha\left(\frac◆LB◆\beta\alpha◆RB◆◆LB◆1 + \beta\alpha^2◆RB◆\epsilon\right) = u^* + \frac◆LB◆\epsilon◆RB◆◆LB◆1 + \beta\alpha^2◆RB◆$$
 
 The output gain from surprise inflation is zero (since workers anticipate it), but inflation is higher. This is the **inflationary bias** of discretionary policy.
 
@@ -816,7 +816,7 @@ The output gain from surprise inflation is zero (since workers anticipate it), b
 
 Under rules (credible commitment): $\pi = 2\%$, $u = u^* + 2\%$. Loss $= 0 + 4 = 4$.
 
-Under discretion: $\pi = 2 + \frac⧃LB⧄1 \times 0.5⧃RB⧄⧃LB⧄1 + 1 \times 0.25⧃RB⧄ \times 2 = 2 + 0.8 = 2.8\%$. $u = u^* + \frac{2}{1.25} = u^* + 1.6\%$.
+Under discretion: $\pi = 2 + \frac◆LB◆1 \times 0.5◆RB◆◆LB◆1 + 1 \times 0.25◆RB◆ \times 2 = 2 + 0.8 = 2.8\%$. $u = u^* + \frac{2}{1.25} = u^* + 1.6\%$.
 
 Loss $= (2.8 - 2)^2 + 1 \times (1.6)^2 = 0.64 + 2.56 = 3.2$.
 

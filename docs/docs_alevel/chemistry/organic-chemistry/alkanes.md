@@ -147,7 +147,7 @@ There are six primary hydrogens and two secondary hydrogens. The relative reacti
 $1^\circ$ hydrogens is approximately 4:1.
 
 $$
-\frac⧃LB⧄[2\mathrm{-chloropropane}]⧃RB⧄⧃LB⧄[1\mathrm{-chloropropane}]⧃RB⧄ = \frac⧃LB⧄2 \times 4⧃RB⧄⧃LB⧄6 \times 1⧃RB⧄ = \frac{8}{6} = \frac{4}{3}
+\frac◆LB◆[2\mathrm{-chloropropane}]◆RB◆◆LB◆[1\mathrm{-chloropropane}]◆RB◆ = \frac◆LB◆2 \times 4◆RB◆◆LB◆6 \times 1◆RB◆ = \frac{8}{6} = \frac{4}{3}
 $$
 
 The product ratio is 4:3 in favour of 2-chloropropane.
@@ -411,7 +411,7 @@ Although the ratio of primary to tertiary hydrogens is 9:1, the relative reactiv
 primary hydrogens toward $\mathrm{Cl}^\bullet$ is approximately 5:1. The expected ratio is:
 
 $$
-\frac⧃LB⧄[2\mathrm{-chloro-2-methylpropane}]⧃RB⧄⧃LB⧄[1\mathrm{-chloro-2-methylpropane}]⧃RB⧄ = \frac⧃LB⧄1 \times 5⧃RB⧄⧃LB⧄9 \times 1⧃RB⧄ = \frac{5}{9}
+\frac◆LB◆[2\mathrm{-chloro-2-methylpropane}]◆RB◆◆LB◆[1\mathrm{-chloro-2-methylpropane}]◆RB◆ = \frac◆LB◆1 \times 5◆RB◆◆LB◆9 \times 1◆RB◆ = \frac{5}{9}
 $$
 
 In practice, the tertiary product predominates even more than this ratio predicts because the

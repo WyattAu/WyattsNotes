@@ -160,14 +160,14 @@ $$k = \sqrt{2}$$
 
 **The solution:** When $\Delta = 0$:
 
-$$x = \frac{2k}{4} = \frac{k}{2} = \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄$$
-$$y = k - x = \sqrt{2} - \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$x = \frac{2k}{4} = \frac{k}{2} = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$$
+$$y = k - x = \sqrt{2} - \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆$$
 
-The single solution is $\left(\frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄, \frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄\right)$.
+The single solution is $\left(\frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆\right)$.
 
 **Geometric interpretation:** The first equation is the unit circle and the second is the line $x + y = k$. The line is tangent to the circle when its distance from the origin equals the radius:
 
-$$\frac⧃LB⧄|0 + 0 - k|⧃RB⧄⧃LB⧄\sqrt{1^2 + 1^2}⧃RB⧄ = 1 \implies \frac⧃LB⧄k⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ = 1 \implies k = \sqrt{2}$$
+$$\frac◆LB◆|0 + 0 - k|◆RB◆◆LB◆\sqrt{1^2 + 1^2}◆RB◆ = 1 \implies \frac◆LB◆k◆RB◆◆LB◆\sqrt{2}◆RB◆ = 1 \implies k = \sqrt{2}$$
 
 This confirms our algebraic result.
 
@@ -215,14 +215,14 @@ $$x^2 - 3x - 3 = 0$$
 
 By the quadratic formula:
 
-$$x = \frac⧃LB⧄3 \pm \sqrt{9 + 12}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄3 \pm \sqrt{21}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$x = \frac◆LB◆3 \pm \sqrt{9 + 12}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆3 \pm \sqrt{21}◆RB◆◆LB◆2◆RB◆$$
 
 Now check the domain restriction $x > 1$:
 
-- $\frac⧃LB⧄3 + \sqrt{21}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx \frac{3 + 4.58}{2} \approx 3.79 > 1$. Valid.
-- $\frac⧃LB⧄3 - \sqrt{21}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx \frac{3 - 4.58}{2} \approx -0.79 < 1$. Not in domain.
+- $\frac◆LB◆3 + \sqrt{21}◆RB◆◆LB◆2◆RB◆ \approx \frac{3 + 4.58}{2} \approx 3.79 > 1$. Valid.
+- $\frac◆LB◆3 - \sqrt{21}◆RB◆◆LB◆2◆RB◆ \approx \frac{3 - 4.58}{2} \approx -0.79 < 1$. Not in domain.
 
-The solution is $x = \frac⧃LB⧄3 + \sqrt{21}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+The solution is $x = \frac◆LB◆3 + \sqrt{21}◆RB◆◆LB◆2◆RB◆$.
 
 **(c)** For a function and its inverse, the solutions to $f(x) = f^{-1}(x)$ lie on the line $y = x$ (the line of reflection). This is because $f(x) = f^{-1}(x)$ implies $f(f(x)) = x$, and if $f(x) = c$ then $f(c) = x$. When $f(x) = x$, clearly $f^{-1}(x) = x = f(x)$.
 
@@ -267,13 +267,13 @@ $$n^2 - 99n - 200 > 0$$
 
 Roots of $n^2 - 99n - 200 = 0$:
 
-$$n = \frac⧃LB⧄99 \pm \sqrt{9801 + 800}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄99 \pm \sqrt{10601}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$n = \frac◆LB◆99 \pm \sqrt{9801 + 800}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆99 \pm \sqrt{10601}◆RB◆◆LB◆2◆RB◆$$
 
 $\sqrt{10601} \approx 102.96$, so:
 
 $$n \approx \frac{99 + 102.96}{2} \approx 100.98$$
 
-Since the quadratic opens upward, $n^2 - 99n - 200 > 0$ for $n > \frac⧃LB⧄99+\sqrt{10601}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 100.98$.
+Since the quadratic opens upward, $n^2 - 99n - 200 > 0$ for $n > \frac◆LB◆99+\sqrt{10601}◆RB◆◆LB◆2◆RB◆ \approx 100.98$.
 
 The smallest integer $N$ is $\boxed{101}$.
 
@@ -293,7 +293,7 @@ $$= \sum_{k=0}^{99} k + 2\sum_{m=3}^{102}\frac{1}{m}$$
 
 where $k = n-1$ and $m = n+2$.
 
-$$= \frac⧃LB⧄99 \times 100⧃RB⧄⧃LB⧄2⧃RB⧄ + 2\sum_{m=3}^{102}\frac{1}{m}$$
+$$= \frac◆LB◆99 \times 100◆RB◆◆LB◆2◆RB◆ + 2\sum_{m=3}^{102}\frac{1}{m}$$
 
 $$= 4950 + 2\left(H_{102} - 1 - \frac{1}{2}\right)$$
 
@@ -333,7 +333,7 @@ $$\begin{cases} y \geq x^2 - 4x + 3 \\ y \leq 4 - x^2 \\ y \geq |x - 2| - 1 \end
 
 $$x^2 - 4x + 3 = 4 - x^2$$
 $$2x^2 - 4x - 1 = 0$$
-$$x = \frac⧃LB⧄4 \pm \sqrt{16 + 8}⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄4 \pm \sqrt{24}⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄4 \pm 2\sqrt{6}⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄2 \pm \sqrt{6}⧃RB⧄⧃LB⧄2⧃RB⧄ = 1 \pm \frac⧃LB⧄\sqrt{6}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$x = \frac◆LB◆4 \pm \sqrt{16 + 8}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆4 \pm \sqrt{24}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆4 \pm 2\sqrt{6}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆2 \pm \sqrt{6}◆RB◆◆LB◆2◆RB◆ = 1 \pm \frac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆$$
 
 For $x = 1 + \sqrt{6}/2 \approx 2.225$: $y = 4 - (1+\sqrt{6}/2)^2 = 4 - (1+\sqrt{6}+3/2) = 4 - 5/2 - \sqrt{6} = 3/2 - \sqrt{6}$.
 
@@ -350,11 +350,11 @@ For $x < 2$: $|x-2| = 2-x$, so $x^2-4x+3 = 2-x-1 = 1-x$, giving $x^2-3x+2 = 0$, 
 
 **Intersection of Curve 2 and Curve 3:**
 
-For $x \geq 2$: $4-x^2 = x-3$, giving $x^2+x-7 = 0$, so $x = \frac⧃LB⧄-1+\sqrt{29}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 2.193$.
-$y = \frac⧃LB⧄-1+\sqrt{29}⧃RB⧄⧃LB⧄2⧃RB⧄ - 3 = \frac⧃LB⧄-7+\sqrt{29}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+For $x \geq 2$: $4-x^2 = x-3$, giving $x^2+x-7 = 0$, so $x = \frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆ \approx 2.193$.
+$y = \frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆ - 3 = \frac◆LB◆-7+\sqrt{29}◆RB◆◆LB◆2◆RB◆$.
 
-For $x < 2$: $4-x^2 = 1-x$, giving $x^2-x-3 = 0$, so $x = \frac⧃LB⧄1+\sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 2.303$. But this is $> 2$, contradicting $x < 2$. So $x = \frac⧃LB⧄1-\sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx -1.303$.
-$y = 1 - \frac⧃LB⧄1-\sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄1+\sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+For $x < 2$: $4-x^2 = 1-x$, giving $x^2-x-3 = 0$, so $x = \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx 2.303$. But this is $> 2$, contradicting $x < 2$. So $x = \frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx -1.303$.
+$y = 1 - \frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆$.
 
 **Vertices of $R$:** The region $R$ is bounded. Its vertices are approximately:
 - $(1, 0)$: intersection of curves 1 and 3
@@ -363,10 +363,10 @@ $y = 1 - \frac⧃LB⧄1-\sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄1+\sqr
 - Plus the intersections of curves 1-2 and 2-3
 
 Due to the complexity, the exact vertices are:
-1. $\left(1 - \frac⧃LB⧄\sqrt{6}⧃RB⧄⧃LB⧄2⧃RB⧄, \frac{3}{2} - \sqrt{6}\right)$ and $\left(1 + \frac⧃LB⧄\sqrt{6}⧃RB⧄⧃LB⧄2⧃RB⧄, \frac{3}{2} - \sqrt{6}\right)$: Curves 1 and 2
+1. $\left(1 - \frac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆, \frac{3}{2} - \sqrt{6}\right)$ and $\left(1 + \frac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆, \frac{3}{2} - \sqrt{6}\right)$: Curves 1 and 2
 2. $(1, 0)$ and $(3, 0)$: Curves 1 and 3
 3. $(2, -1)$: Curve 3 vertex
-4. $\left(\frac⧃LB⧄-1+\sqrt{29}⧃RB⧄⧃LB⧄2⧃RB⧄, \frac⧃LB⧄-7+\sqrt{29}⧃RB⧄⧃LB⧄2⧃RB⧄\right)$: Curves 2 and 3 (for $x \geq 2$)
-5. $\left(\frac⧃LB⧄1-\sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄, \frac⧃LB⧄1+\sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄\right)$: Curves 2 and 3 (for $x < 2$)
+4. $\left(\frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆-7+\sqrt{29}◆RB◆◆LB◆2◆RB◆\right)$: Curves 2 and 3 (for $x \geq 2$)
+5. $\left(\frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆, \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆\right)$: Curves 2 and 3 (for $x < 2$)
 
 **(b)** The area calculation requires integrating between the appropriate curves over the relevant intervals. Given the complexity of the vertices, the area is computed by splitting $R$ into sub-regions bounded by pairs of curves and summing the definite integrals. The computation is extensive but follows standard techniques of integration between curves.

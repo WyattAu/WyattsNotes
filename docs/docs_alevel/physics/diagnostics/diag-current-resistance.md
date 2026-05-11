@@ -103,7 +103,7 @@ $$I = 5.0 \times 10^{-9}(e^{15.46} - 1) = 5.0 \times 10^{-9}(5.265 \times 10^6 -
 
 (b) Dynamic resistance: $r_d = \frac{dV}{dI} = \frac{nkT}{e(I + I_0)} \approx \frac{nkT}{eI}$ (since $I \gg I_0$)
 
-$$r_d = \frac⧃LB⧄1.5 \times 0.02588⧃RB⧄⧃LB⧄0.0263⧃RB⧄ = \frac{0.03881}{0.0263} = 1.48\,\Omega$$
+$$r_d = \frac◆LB◆1.5 \times 0.02588◆RB◆◆LB◆0.0263◆RB◆ = \frac{0.03881}{0.0263} = 1.48\,\Omega$$
 
 (c) At $I = 10\,\text{mA} = 0.010\,\text{A}$:
 
@@ -182,11 +182,11 @@ Their measurements are: $l = (1.000 \pm 0.001)\,\text{m}$, $d = (0.500 \pm 0.005
 
 (a) $d = 0.500\,\text{mm} = 5.00 \times 10^{-4}\,\text{m}$
 
-$$\rho = \frac⧃LB⧄\pi d^2 R⧃RB⧄⧃LB⧄4l⧃RB⧄ = \frac⧃LB⧄\pi \times (5.00 \times 10^{-4})^2 \times 8.50⧃RB⧄⧃LB⧄4 \times 1.000⧃RB⧄ = \frac⧃LB⧄\pi \times 2.500 \times 10^{-7} \times 8.50⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄6.685 \times 10^{-6}⧃RB⧄⧃LB⧄4⧃RB⧄ = 1.671 \times 10^{-6}\,\Omega\,\text{m}$$
+$$\rho = \frac◆LB◆\pi d^2 R◆RB◆◆LB◆4l◆RB◆ = \frac◆LB◆\pi \times (5.00 \times 10^{-4})^2 \times 8.50◆RB◆◆LB◆4 \times 1.000◆RB◆ = \frac◆LB◆\pi \times 2.500 \times 10^{-7} \times 8.50◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆6.685 \times 10^{-6}◆RB◆◆LB◆4◆RB◆ = 1.671 \times 10^{-6}\,\Omega\,\text{m}$$
 
 Percentage uncertainty:
 
-$$\frac⧃LB⧄\Delta\rho⧃RB⧄⧃LB⧄\rho⧃RB⧄ = 2\frac⧃LB⧄\Delta d⧃RB⧄⧃LB⧄d⧃RB⧄ + \frac⧃LB⧄\Delta R⧃RB⧄⧃LB⧄R⧃RB⧄ + \frac⧃LB⧄\Delta l⧃RB⧄⧃LB⧄l⧃RB⧄ = 2 \times \frac{0.005}{0.500} + \frac{0.05}{8.50} + \frac{0.001}{1.000}$$
+$$\frac◆LB◆\Delta\rho◆RB◆◆LB◆\rho◆RB◆ = 2\frac◆LB◆\Delta d◆RB◆◆LB◆d◆RB◆ + \frac◆LB◆\Delta R◆RB◆◆LB◆R◆RB◆ + \frac◆LB◆\Delta l◆RB◆◆LB◆l◆RB◆ = 2 \times \frac{0.005}{0.500} + \frac{0.05}{8.50} + \frac{0.001}{1.000}$$
 $$= 2 \times 0.010 + 0.00588 + 0.001 = 0.02688 = 2.69\%$$
 
 $$\rho = (1.67 \pm 0.04) \times 10^{-6}\,\Omega\,\text{m}$$
@@ -195,13 +195,13 @@ The dominant uncertainty is from the diameter measurement (which enters as $d^2$
 
 (b) The resistance at $20^\circ\text{C}$: $R_{20} = R_{25}/[1 + \alpha(25 - 20)] = 8.50/[1 + 0.004 \times 5] = 8.50/1.020 = 8.333\,\Omega$
 
-$$\rho_{20} = \frac⧃LB⧄\pi \times 2.500 \times 10^{-7} \times 8.333⧃RB⧄⧃LB⧄4⧃RB⧄ = 1.636 \times 10^{-6}\,\Omega\,\text{m}$$
+$$\rho_{20} = \frac◆LB◆\pi \times 2.500 \times 10^{-7} \times 8.333◆RB◆◆LB◆4◆RB◆ = 1.636 \times 10^{-6}\,\Omega\,\text{m}$$
 
 (c) New diameter: $d = 0.498\,\text{mm}$, $\Delta d = 0.003\,\text{mm}$
 
-$$\rho' = \frac⧃LB⧄\pi \times (4.98 \times 10^{-4})^2 \times 8.50⧃RB⧄⧃LB⧄4 \times 1.000⧃RB⧄ = \frac⧃LB⧄\pi \times 2.480 \times 10^{-7} \times 8.50⧃RB⧄⧃LB⧄4⧃RB⧄ = 1.657 \times 10^{-6}\,\Omega\,\text{m}$$
+$$\rho' = \frac◆LB◆\pi \times (4.98 \times 10^{-4})^2 \times 8.50◆RB◆◆LB◆4 \times 1.000◆RB◆ = \frac◆LB◆\pi \times 2.480 \times 10^{-7} \times 8.50◆RB◆◆LB◆4◆RB◆ = 1.657 \times 10^{-6}\,\Omega\,\text{m}$$
 
-$$\frac⧃LB⧄\Delta\rho'⧃RB⧄⧃LB⧄\rho'⧃RB⧄ = 2 \times \frac{0.003}{0.498} + 0.00588 + 0.001 = 0.01205 + 0.00588 + 0.001 = 0.01893 = 1.89\%$$
+$$\frac◆LB◆\Delta\rho'◆RB◆◆LB◆\rho'◆RB◆ = 2 \times \frac{0.003}{0.498} + 0.00588 + 0.001 = 0.01205 + 0.00588 + 0.001 = 0.01893 = 1.89\%$$
 
 The percentage uncertainty improved from $2.69\%$ to $1.89\%$. The micrometer reduced the fractional uncertainty in diameter from $1.0\%$ to $0.60\%$, and since diameter enters as $d^2$, this contributed $2 \times 0.40\% = 0.80\%$ improvement.
 

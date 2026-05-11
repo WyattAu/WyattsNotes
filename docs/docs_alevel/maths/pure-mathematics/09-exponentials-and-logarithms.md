@@ -83,9 +83,9 @@ So we need to show that $\displaystyle\lim_{h\to 0}\frac{e^h - 1}{h} = 1$.
 
 Let $e^h - 1 = t$, so that $h = \ln(1+t)$. As $h \to 0$, we have $t \to 0$. Then:
 
-$$\lim_{h\to 0}\frac{e^h - 1}{h} = \lim_{t\to 0}\frac⧃LB⧄t⧃RB⧄⧃LB⧄\ln(1+t)⧃RB⧄ = \lim_{t\to 0}\frac⧃LB⧄1⧃RB⧄⧃LB⧄\frac{\ln(1+t)}{t}⧃RB⧄$$
+$$\lim_{h\to 0}\frac{e^h - 1}{h} = \lim_{t\to 0}\frac◆LB◆t◆RB◆◆LB◆\ln(1+t)◆RB◆ = \lim_{t\to 0}\frac◆LB◆1◆RB◆◆LB◆\frac{\ln(1+t)}{t}◆RB◆$$
 
-We use the fundamental limit $\displaystyle\lim_{t\to 0}\frac⧃LB⧄\ln(1+t)⧃RB⧄⧃LB⧄t⧃RB⧄ = 1$ (which follows from
+We use the fundamental limit $\displaystyle\lim_{t\to 0}\frac◆LB◆\ln(1+t)◆RB◆◆LB◆t◆RB◆ = 1$ (which follows from
 the definition of $\ln x$ as the area under $1/u$ from $1$ to $1+t$, plus the squeeze theorem on
 $1/(1+t) \leq \ln(1+t)/t \leq 1$). Therefore:
 
@@ -185,13 +185,13 @@ Common errors:
 
 **Theorem.** For all $a, b \gt{} 0$ with $a, b \neq 1$:
 
-$$\log_a b = \frac⧃LB⧄\ln b⧃RB⧄⧃LB⧄\ln a⧃RB⧄ = \frac⧃LB⧄\log_{10} b⧃RB⧄⧃LB⧄\log_{10} a⧃RB⧄$$
+$$\log_a b = \frac◆LB◆\ln b◆RB◆◆LB◆\ln a◆RB◆ = \frac◆LB◆\log_{10} b◆RB◆◆LB◆\log_{10} a◆RB◆$$
 
 **Proof.** Let $y = \log_a b$. Then $a^y = b$. Taking natural logarithms of both sides:
 
-$$\ln(a^y) = \ln b$$ $$y \ln a = \ln b$$ $$y = \frac⧃LB⧄\ln b⧃RB⧄⧃LB⧄\ln a⧃RB⧄$$
+$$\ln(a^y) = \ln b$$ $$y \ln a = \ln b$$ $$y = \frac◆LB◆\ln b◆RB◆◆LB◆\ln a◆RB◆$$
 
-Since $y = \log_a b$, we have $\log_a b = \dfrac⧃LB⧄\ln b⧃RB⧄⧃LB⧄\ln a⧃RB⧄$. $\blacksquare$
+Since $y = \log_a b$, we have $\log_a b = \dfrac◆LB◆\ln b◆RB◆◆LB◆\ln a◆RB◆$. $\blacksquare$
 
 :::tip
 Your calculator likely has $\log$ (base 10) and $\ln$ (base $e$) buttons, but not a general
@@ -247,7 +247,7 @@ $\ln x$ grows so slowly — it takes $e^{10} \approx 22026$ to reach $\ln x = 10
 
 **Method.** Take logarithms of both sides:
 
-$$a^x = b \implies x \ln a = \ln b \implies x = \frac⧃LB⧄\ln b⧃RB⧄⧃LB⧄\ln a⧃RB⧄$$
+$$a^x = b \implies x \ln a = \ln b \implies x = \frac◆LB◆\ln b◆RB◆◆LB◆\ln a◆RB◆$$
 
 ### 7.2 Equations of the form $a^{f(x)} = b^{g(x)}$
 
@@ -265,7 +265,7 @@ $$
 2x\ln 3 + \ln 3 &= x\ln 5 - 2\ln 5 \\
 2x\ln 3 - x\ln 5 &= -2\ln 5 - \ln 3 \\
 x(2\ln 3 - \ln 5) &= -(2\ln 5 + \ln 3) \\
-x &= \frac⧃LB⧄2\ln 5 + \ln 3⧃RB⧄⧃LB⧄\ln 5 - 2\ln 3⧃RB⧄
+x &= \frac◆LB◆2\ln 5 + \ln 3◆RB◆◆LB◆\ln 5 - 2\ln 3◆RB◆
 \end{aligned}
 $$
 
@@ -295,7 +295,7 @@ where $N_0$ is the initial quantity and $k$ is the growth constant.
 
 The **doubling time** $T_d$ satisfies $N_0 e^{kT_d} = 2N_0$, so:
 
-$$e^{kT_d} = 2 \implies T_d = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄k⧃RB⧄$$
+$$e^{kT_d} = 2 \implies T_d = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆$$
 
 ### 8.2 Exponential decay
 
@@ -303,7 +303,7 @@ $$N = N_0 e^{-kt}, \quad k > 0$$
 
 The **half-life** $t_{1/2}$ satisfies $N_0 e^{-kt_{1/2}} = \frac{N_0}{2}$, so:
 
-$$e^{-kt_{1/2}} = \frac{1}{2} \implies t_{1/2} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄k⧃RB⧄$$
+$$e^{-kt_{1/2}} = \frac{1}{2} \implies t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆$$
 
 ### 8.3 General exponential model
 
@@ -319,11 +319,11 @@ N_0 &= 500 \\
 2000 &= 500 e^{6k} \\
 4 &= e^{6k} \\
 6k &= \ln 4 = 2\ln 2 \\
-k &= \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄3⧃RB⧄
+k &= \frac◆LB◆\ln 2◆RB◆◆LB◆3◆RB◆
 \end{aligned}
 $$
 
-Doubling time: $T_d = \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄k⧃RB⧄ = \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄\ln 2 / 3⧃RB⧄ = 3$ hours.
+Doubling time: $T_d = \dfrac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \dfrac◆LB◆\ln 2◆RB◆◆LB◆\ln 2 / 3◆RB◆ = 3$ hours.
 
 :::tip
 In modelling questions, always:
@@ -431,7 +431,7 @@ Solve $\log_2(x+3) + \log_2(x-1) = 4$.
 <summary>Solution 3</summary>
 $$\log_2[(x+3)(x-1)] = 4 \implies (x+3)(x-1) = 16$$
 $$x^2 + 2x - 3 = 16 \implies x^2 + 2x - 19 = 0$$
-$$x = \frac⧃LB⧄-2 \pm \sqrt{4+76}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄-2 \pm \sqrt{80}⧃RB⧄⧃LB⧄2⧃RB⧄ = -1 \pm 2\sqrt{5}$$
+$$x = \frac◆LB◆-2 \pm \sqrt{4+76}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-2 \pm \sqrt{80}◆RB◆◆LB◆2◆RB◆ = -1 \pm 2\sqrt{5}$$
 
 Domain: $x \gt{} 1$, so $x = -1 + 2\sqrt{5}$.
 
@@ -478,7 +478,7 @@ A radioactive substance decays with half-life 8 days. If initially there are 200
 <summary>Solution 6</summary>
 Model: $N = N_0 e^{-kt}$ where $N_0 = 200$.
 
-Half-life: $t_{1/2} = \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄k⧃RB⧄ = 8 \implies k = \dfrac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄8⧃RB⧄$.
+Half-life: $t_{1/2} = \dfrac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = 8 \implies k = \dfrac◆LB◆\ln 2◆RB◆◆LB◆8◆RB◆$.
 
 $$N = 200 \cdot e^{-25\ln 2/8} = 200 \cdot 2^{-25/8} \approx 200 \cdot 0.1146 \approx 22.9 \mathrm{ g}$$
 
@@ -528,9 +528,9 @@ Prove that $\log_a b \cdot \log_b a = 1$ for all $a, b \gt{} 0$, $a, b \neq 1$.
 <summary>Solution 9</summary>
 By the change of base formula:
 
-$$\log_a b = \frac⧃LB⧄\ln b⧃RB⧄⧃LB⧄\ln a⧃RB⧄, \qquad \log_b a = \frac⧃LB⧄\ln a⧃RB⧄⧃LB⧄\ln b⧃RB⧄$$
+$$\log_a b = \frac◆LB◆\ln b◆RB◆◆LB◆\ln a◆RB◆, \qquad \log_b a = \frac◆LB◆\ln a◆RB◆◆LB◆\ln b◆RB◆$$
 
-$$\log_a b \cdot \log_b a = \frac⧃LB⧄\ln b⧃RB⧄⧃LB⧄\ln a⧃RB⧄ \cdot \frac⧃LB⧄\ln a⧃RB⧄⧃LB⧄\ln b⧃RB⧄ = 1 \quad \blacksquare$$
+$$\log_a b \cdot \log_b a = \frac◆LB◆\ln b◆RB◆◆LB◆\ln a◆RB◆ \cdot \frac◆LB◆\ln a◆RB◆◆LB◆\ln b◆RB◆ = 1 \quad \blacksquare$$
 
 **If you get this wrong, revise:** [Change of Base Formula](#5-change-of-base-formula) — Section 5.
 
@@ -547,11 +547,11 @@ $T_s = 20$, $T_0 = 90$. Model: $T = 20 + 70e^{-kt}$.
 
 At $t = 10$: $60 = 20 + 70e^{-10k} \implies 40 = 70e^{-10k} \implies e^{-10k} = 4/7$.
 
-$$-10k = \ln(4/7) \implies k = \frac⧃LB⧄\ln(7/4)⧃RB⧄⧃LB⧄10⧃RB⧄ \approx 0.0560$$
+$$-10k = \ln(4/7) \implies k = \frac◆LB◆\ln(7/4)◆RB◆◆LB◆10◆RB◆ \approx 0.0560$$
 
 For $T = 35$: $35 = 20 + 70e^{-kt} \implies 15 = 70e^{-kt} \implies e^{-kt} = 3/14$.
 
-$$-kt = \ln(3/14) \implies t = \frac⧃LB⧄\ln(14/3)⧃RB⧄⧃LB⧄k⧃RB⧄ = \frac⧃LB⧄10\ln(14/3)⧃RB⧄⧃LB⧄\ln(7/4)⧃RB⧄ \approx 27.5 \mathrm{ minutes}$$
+$$-kt = \ln(3/14) \implies t = \frac◆LB◆\ln(14/3)◆RB◆◆LB◆k◆RB◆ = \frac◆LB◆10\ln(14/3)◆RB◆◆LB◆\ln(7/4)◆RB◆ \approx 27.5 \mathrm{ minutes}$$
 
 **If you get this wrong, revise:** [Exponential Modelling](#8-exponential-modelling) — Section 8.
 
@@ -564,11 +564,11 @@ Express $y = e^{2x} + 3e^{-2x}$ in the form $y = 2\cosh(2x) + \cosh(2x)$ is not 
 
 <details>
 <summary>Solution 11</summary>
-$\dfrac{dy}{dx} = 2e^{2x} - 6e^{-2x} = 0 \implies 2e^{2x} = 6e^{-2x} \implies e^{4x} = 3 \implies x = \dfrac⧃LB⧄\ln 3⧃RB⧄⧃LB⧄4⧃RB⧄$.
+$\dfrac{dy}{dx} = 2e^{2x} - 6e^{-2x} = 0 \implies 2e^{2x} = 6e^{-2x} \implies e^{4x} = 3 \implies x = \dfrac◆LB◆\ln 3◆RB◆◆LB◆4◆RB◆$.
 
-At $x = \dfrac⧃LB⧄\ln 3⧃RB⧄⧃LB⧄4⧃RB⧄$: $e^{2x} = e^{\ln 3 / 2} = \sqrt{3}$, $e^{-2x} = 1/\sqrt{3}$.
+At $x = \dfrac◆LB◆\ln 3◆RB◆◆LB◆4◆RB◆$: $e^{2x} = e^{\ln 3 / 2} = \sqrt{3}$, $e^{-2x} = 1/\sqrt{3}$.
 
-$$y_{\min} = \sqrt{3} + \frac⧃LB⧄3⧃RB⧄⧃LB⧄\sqrt{3}⧃RB⧄ = \sqrt{3} + \sqrt{3} = 2\sqrt{3}$$
+$$y_{\min} = \sqrt{3} + \frac◆LB◆3◆RB◆◆LB◆\sqrt{3}◆RB◆ = \sqrt{3} + \sqrt{3} = 2\sqrt{3}$$
 
 **If you get this wrong, revise:** [Solving Exponential Equations](#7-solving-exponential-equations)
 and Section 2.2.

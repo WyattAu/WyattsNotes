@@ -55,7 +55,7 @@ Always use multiple indicators.
 **GDP per capita** — total output divided by population. Usually adjusted for purchasing power
 parity (PPP) to account for differences in price levels between countries.
 
-$$\mathrm{GDP per capita (PPP)} = \frac⧃LB⧄\mathrm{GDP (PPP)}⧃RB⧄⧃LB⧄\mathrm{Population}⧃RB⧄$$
+$$\mathrm{GDP per capita (PPP)} = \frac◆LB◆\mathrm{GDP (PPP)}◆RB◆◆LB◆\mathrm{Population}◆RB◆$$
 
 **GNI per capita** — GDP plus net income from abroad (remittances, profits from overseas
 investments). The World Bank uses GNI per capita to classify countries:
@@ -71,7 +71,7 @@ investments). The World Bank uses GNI per capita to classify countries:
 
 The HDI, published by the UNDP, is a composite index combining three dimensions:
 
-$$\mathrm{HDI} = \frac⧃LB⧄(\mathrm{Health Index} + \mathrm{Education Index} + \mathrm{Income Index})⧃RB⧄⧃LB⧄3⧃RB⧄$$
+$$\mathrm{HDI} = \frac◆LB◆(\mathrm{Health Index} + \mathrm{Education Index} + \mathrm{Income Index})◆RB◆◆LB◆3◆RB◆$$
 
 - **Health**: life expectancy at birth
 - **Education**: mean years of schooling + expected years of schooling
@@ -328,7 +328,7 @@ Developing countries typically have a comparative advantage in:
 **Definition.** The **Prebisch-Singer hypothesis** states that the terms of trade for primary
 commodity exporters tend to deteriorate relative to manufactured goods exporters over the long run.
 
-$$\frac⧃LB⧄P_{\mathrm{primary}}⧃RB⧄⧃LB⧄P_{\mathrm{manufactured}}⧃RB⧄ \mathrm{ falls over time}$$
+$$\frac◆LB◆P_{\mathrm{primary}}◆RB◆◆LB◆P_{\mathrm{manufactured}}◆RB◆ \mathrm{ falls over time}$$
 
 **Causes:**
 
@@ -456,7 +456,7 @@ ratio (units of capital needed per unit of output).
 **Implication:** to increase the growth rate, a country must either increase its savings rate or
 reduce its capital-output ratio (use capital more efficiently).
 
-$$\Delta g = \frac⧃LB⧄\Delta s⧃RB⧄⧃LB⧄v⧃RB⧄ - \frac⧃LB⧄s\,\Delta v⧃RB⧄⧃LB⧄v^2⧃RB⧄$$
+$$\Delta g = \frac◆LB◆\Delta s◆RB◆◆LB◆v◆RB◆ - \frac◆LB◆s\,\Delta v◆RB◆◆LB◆v^2◆RB◆$$
 
 If $s = 15\%$ and $v = 3$, then $g = 15/3 = 5\%$ per year.
 
@@ -612,9 +612,9 @@ At the steady state, $\dot{k} = 0$:
 
 $$s \cdot k^{*\alpha} = (n + \delta) \cdot k^*$$
 
-$$k^* = \left(\frac⧃LB⧄s⧃RB⧄⧃LB⧄n + \delta⧃RB⧄\right)^{\frac⧃LB⧄1⧃RB⧄⧃LB⧄1-\alpha⧃RB⧄}$$
+$$k^* = \left(\frac◆LB◆s◆RB◆◆LB◆n + \delta◆RB◆\right)^{\frac◆LB◆1◆RB◆◆LB◆1-\alpha◆RB◆}$$
 
-$$y^* = \left(\frac⧃LB⧄s⧃RB⧄⧃LB⧄n + \delta⧃RB⧄\right)^{\frac⧃LB⧄\alpha⧃RB⧄⧃LB⧄1-\alpha⧃RB⧄}$$
+$$y^* = \left(\frac◆LB◆s◆RB◆◆LB◆n + \delta◆RB◆\right)^{\frac◆LB◆\alpha◆RB◆◆LB◆1-\alpha◆RB◆}$$
 
 **Key predictions:**
 
@@ -655,7 +655,7 @@ $$\hat{y} = \frac{Y}{AL} = \hat{k}^\alpha$$
 
 The steady state in "effective labour" terms:
 
-$$\hat{k}^* = \left(\frac⧃LB⧄s⧃RB⧄⧃LB⧄n + g + \delta⧃RB⧄\right)^{\frac⧃LB⧄1⧃RB⧄⧃LB⧄1-\alpha⧃RB⧄}$$
+$$\hat{k}^* = \left(\frac◆LB◆s◆RB◆◆LB◆n + g + \delta◆RB◆\right)^{\frac◆LB◆1◆RB◆◆LB◆1-\alpha◆RB◆}$$
 
 **Key result: in the steady state with technological progress, output per EFFECTIVE worker is constant, but output per ACTUAL worker grows at rate $g$.**
 

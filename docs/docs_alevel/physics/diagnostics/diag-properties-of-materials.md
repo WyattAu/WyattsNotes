@@ -31,7 +31,7 @@ The wire breaks at a stress of $430\,\text{MPa}$.
 
 (a) Young's modulus is the gradient of the linear (proportional) region:
 
-$$E = \frac⧃LB⧄\Delta\sigma⧃RB⧄⧃LB⧄\Delta\varepsilon⧃RB⧄ = \frac⧃LB⧄300 \times 10^6 - 0⧃RB⧄⧃LB⧄1.50 \times 10^{-3} - 0⧃RB⧄ = \frac⧃LB⧄300 \times 10^6⧃RB⧄⧃LB⧄1.50 \times 10^{-3}⧃RB⧄ = 2.00 \times 10^{11}\,\text{Pa} = 200\,\text{GPa}$$
+$$E = \frac◆LB◆\Delta\sigma◆RB◆◆LB◆\Delta\varepsilon◆RB◆ = \frac◆LB◆300 \times 10^6 - 0◆RB◆◆LB◆1.50 \times 10^{-3} - 0◆RB◆ = \frac◆LB◆300 \times 10^6◆RB◆◆LB◆1.50 \times 10^{-3}◆RB◆ = 2.00 \times 10^{11}\,\text{Pa} = 200\,\text{GPa}$$
 
 This is consistent with steel.
 
@@ -73,13 +73,13 @@ Young's modulus of steel $= 2.0 \times 10^{11}\,\text{Pa}$; Young's modulus of c
 
 (a) Since the wire is in series, the force is the same in both sections:
 
-$$\sigma = \frac{F}{A} = \frac⧃LB⧄400⧃RB⧄⧃LB⧄2.0 \times 10^{-6}⧃RB⧄ = 2.0 \times 10^8\,\text{Pa} = 200\,\text{MPa}$$
+$$\sigma = \frac{F}{A} = \frac◆LB◆400◆RB◆◆LB◆2.0 \times 10^{-6}◆RB◆ = 2.0 \times 10^8\,\text{Pa} = 200\,\text{MPa}$$
 
 Both sections experience the same stress of $200\,\text{MPa}$.
 
-(b) Strain in steel: $\varepsilon_s = \frac⧃LB⧄\sigma⧃RB⧄⧃LB⧄E_s⧃RB⧄ = \frac⧃LB⧄2.0 \times 10^8⧃RB⧄⧃LB⧄2.0 \times 10^{11}⧃RB⧄ = 1.0 \times 10^{-3}$
+(b) Strain in steel: $\varepsilon_s = \frac◆LB◆\sigma◆RB◆◆LB◆E_s◆RB◆ = \frac◆LB◆2.0 \times 10^8◆RB◆◆LB◆2.0 \times 10^{11}◆RB◆ = 1.0 \times 10^{-3}$
 
-Strain in copper: $\varepsilon_c = \frac⧃LB⧄\sigma⧃RB⧄⧃LB⧄E_c⧃RB⧄ = \frac⧃LB⧄2.0 \times 10^8⧃RB⧄⧃LB⧄1.2 \times 10^{11}⧃RB⧄ = 1.667 \times 10^{-3}$
+Strain in copper: $\varepsilon_c = \frac◆LB◆\sigma◆RB◆◆LB◆E_c◆RB◆ = \frac◆LB◆2.0 \times 10^8◆RB◆◆LB◆1.2 \times 10^{11}◆RB◆ = 1.667 \times 10^{-3}$
 
 (c) Extension of steel: $\Delta l_s = \varepsilon_s \times l_s = 1.0 \times 10^{-3} \times 1.5 = 1.50 \times 10^{-3}\,\text{m} = 1.50\,\text{mm}$
 
@@ -89,7 +89,7 @@ Total extension $= 1.50 + 1.67 = 3.17\,\text{mm}$
 
 The effective Young's modulus of the composite wire:
 
-$$E_{\text{eff}} = \frac⧃LB⧄F(l_s + l_c)⧃RB⧄⧃LB⧄A(\Delta l_s + \Delta l_c)⧃RB⧄ = \frac⧃LB⧄400 \times 2.5⧃RB⧄⧃LB⧄2.0 \times 10^{-6} \times 3.17 \times 10^{-3}⧃RB⧄ = \frac⧃LB⧄1000⧃RB⧄⧃LB⧄6.34 \times 10^{-9}⧃RB⧄ = 1.58 \times 10^{11}\,\text{Pa}$$
+$$E_{\text{eff}} = \frac◆LB◆F(l_s + l_c)◆RB◆◆LB◆A(\Delta l_s + \Delta l_c)◆RB◆ = \frac◆LB◆400 \times 2.5◆RB◆◆LB◆2.0 \times 10^{-6} \times 3.17 \times 10^{-3}◆RB◆ = \frac◆LB◆1000◆RB◆◆LB◆6.34 \times 10^{-9}◆RB◆ = 1.58 \times 10^{11}\,\text{Pa}$$
 
 ---
 ### UT-3: Elastic Limit and Proportional Limit
@@ -161,7 +161,7 @@ $$\Delta l_{\text{thermal}} = \alpha l \Delta T = 1.2 \times 10^{-5} \times 3.0 
 
 The wire must be compressed back by this amount, so the strain is:
 
-$$\varepsilon = \frac⧃LB⧄\Delta l⧃RB⧄⧃LB⧄l⧃RB⧄ = \frac⧃LB⧄1.44 \times 10^{-3}⧃RB⧄⧃LB⧄3.0⧃RB⧄ = 4.8 \times 10^{-4}$$
+$$\varepsilon = \frac◆LB◆\Delta l◆RB◆◆LB◆l◆RB◆ = \frac◆LB◆1.44 \times 10^{-3}◆RB◆◆LB◆3.0◆RB◆ = 4.8 \times 10^{-4}$$
 
 Stress: $\sigma = E\varepsilon = 2.0 \times 10^{11} \times 4.8 \times 10^{-4} = 9.6 \times 10^7\,\text{Pa} = 96\,\text{MPa}$
 
@@ -169,14 +169,14 @@ This is a compressive stress. The wire would buckle if not properly supported.
 
 (b) Free thermal expansion produces no stress. The extension due to the hanging mass:
 
-$$\Delta l_{\text{mechanical}} = \frac{Fl}{AE} = \frac⧃LB⧄50 \times 9.81 \times 3.0⧃RB⧄⧃LB⧄2.0 \times 10^{-6} \times 2.0 \times 10^{11}⧃RB⧄ = \frac⧃LB⧄1471.5⧃RB⧄⧃LB⧄4.0 \times 10^5⧃RB⧄ = 3.68 \times 10^{-3}\,\text{m}$$
+$$\Delta l_{\text{mechanical}} = \frac{Fl}{AE} = \frac◆LB◆50 \times 9.81 \times 3.0◆RB◆◆LB◆2.0 \times 10^{-6} \times 2.0 \times 10^{11}◆RB◆ = \frac◆LB◆1471.5◆RB◆◆LB◆4.0 \times 10^5◆RB◆ = 3.68 \times 10^{-3}\,\text{m}$$
 
 Total extension $= \Delta l_{\text{thermal}} + \Delta l_{\text{mechanical}} = 1.44 + 3.68 = 5.12 \times 10^{-3}\,\text{m} = 5.12\,\text{mm}$
 
 (c) Only the mechanical extension stores elastic energy (thermal expansion without constraint does not store elastic energy):
 
 $$U = \frac{1}{2} \times \text{stress} \times \text{strain} \times \text{volume}$$
-$$= \frac{1}{2} \times \frac{F}{A} \times \frac⧃LB⧄\Delta l_{\text{mech}}⧃RB⧄⧃LB⧄l⧃RB⧄ \times Al = \frac{1}{2}F\Delta l_{\text{mech}}$$
+$$= \frac{1}{2} \times \frac{F}{A} \times \frac◆LB◆\Delta l_{\text{mech}}◆RB◆◆LB◆l◆RB◆ \times Al = \frac{1}{2}F\Delta l_{\text{mech}}$$
 $$= \frac{1}{2} \times 50 \times 9.81 \times 3.68 \times 10^{-3} = 0.903\,\text{J}$$
 
 ---
@@ -209,7 +209,7 @@ Stress: $\sigma = T/A = \rho R^2\omega^2$
 
 (b) $\sigma = \rho R^2\omega^2$
 
-$$\omega = \sqrt⧃LB⧄\frac{\sigma}{\rho R^2}⧃RB⧄ = \sqrt⧃LB⧄\frac{200 \times 10^6}{7800 \times 0.25}⧃RB⧄ = \sqrt⧃LB⧄\frac{200 \times 10^6}{1950}⧃RB⧄ = \sqrt⧃LB⧄1.026 \times 10^5⧃RB⧄ = 320\,\text{rad}\,\text{s}^{-1}$$
+$$\omega = \sqrt◆LB◆\frac{\sigma}{\rho R^2}◆RB◆ = \sqrt◆LB◆\frac{200 \times 10^6}{7800 \times 0.25}◆RB◆ = \sqrt◆LB◆\frac{200 \times 10^6}{1950}◆RB◆ = \sqrt◆LB◆1.026 \times 10^5◆RB◆ = 320\,\text{rad}\,\text{s}^{-1}$$
 
 This is about $3060\,\text{rpm}$, or $51\,\text{rev}\,\text{s}^{-1}$.
 
@@ -236,7 +236,7 @@ A steel wire of length $10\,\text{m}$, cross-sectional area $1.0 \times 10^{-6}\
 
 (a) The stress varies linearly along the wire. At a distance $y$ from the bottom, the stress is due to the weight of wire below:
 
-$$\sigma(y) = \frac⧃LB⧄\rho A g y⧃RB⧄⧃LB⧄A⧃RB⧄ = \rho g y$$
+$$\sigma(y) = \frac◆LB◆\rho A g y◆RB◆◆LB◆A◆RB◆ = \rho g y$$
 
 where $y$ is measured from the bottom ($0 \le y \le L$).
 
@@ -244,23 +244,23 @@ The strain at position $y$: $\varepsilon(y) = \sigma(y)/E = \rho g y/E$
 
 Total extension:
 
-$$\Delta L = \int_0^L \varepsilon(y)\,dy = \int_0^L \frac⧃LB⧄\rho g y⧃RB⧄⧃LB⧄E⧃RB⧄\,dy = \frac⧃LB⧄\rho g L^2⧃RB⧄⧃LB⧄2E⧃RB⧄$$
+$$\Delta L = \int_0^L \varepsilon(y)\,dy = \int_0^L \frac◆LB◆\rho g y◆RB◆◆LB◆E◆RB◆\,dy = \frac◆LB◆\rho g L^2◆RB◆◆LB◆2E◆RB◆$$
 
-$$= \frac⧃LB⧄7800 \times 9.81 \times 100⧃RB⧄⧃LB⧄2 \times 2.0 \times 10^{11}⧃RB⧄ = \frac⧃LB⧄7.651 \times 10^6⧃RB⧄⧃LB⧄4.0 \times 10^{11}⧃RB⧄ = 1.913 \times 10^{-5}\,\text{m} = 0.0191\,\text{mm}$$
+$$= \frac◆LB◆7800 \times 9.81 \times 100◆RB◆◆LB◆2 \times 2.0 \times 10^{11}◆RB◆ = \frac◆LB◆7.651 \times 10^6◆RB◆◆LB◆4.0 \times 10^{11}◆RB◆ = 1.913 \times 10^{-5}\,\text{m} = 0.0191\,\text{mm}$$
 
 (b) Elastic potential energy per unit volume at position $y$:
 
-$$u(y) = \frac{1}{2}\sigma(y)\varepsilon(y) = \frac{1}{2}\frac⧃LB⧄(\rho g y)^2⧃RB⧄⧃LB⧄E⧃RB⧄$$
+$$u(y) = \frac{1}{2}\sigma(y)\varepsilon(y) = \frac{1}{2}\frac◆LB◆(\rho g y)^2◆RB◆◆LB◆E◆RB◆$$
 
 Total energy:
 
-$$U = \int_0^L u(y) \times A\,dy = \frac{A}{2E}\int_0^L (\rho g y)^2\,dy = \frac⧃LB⧄A\rho^2 g^2 L^3⧃RB⧄⧃LB⧄6E⧃RB⧄$$
+$$U = \int_0^L u(y) \times A\,dy = \frac{A}{2E}\int_0^L (\rho g y)^2\,dy = \frac◆LB◆A\rho^2 g^2 L^3◆RB◆◆LB◆6E◆RB◆$$
 
-$$= \frac⧃LB⧄1.0 \times 10^{-6} \times (7800)^2 \times (9.81)^2 \times 1000⧃RB⧄⧃LB⧄6 \times 2.0 \times 10^{11}⧃RB⧄$$
+$$= \frac◆LB◆1.0 \times 10^{-6} \times (7800)^2 \times (9.81)^2 \times 1000◆RB◆◆LB◆6 \times 2.0 \times 10^{11}◆RB◆$$
 
 where $7800^2 = 6.084 \times 10^7$, $9.81^2 = 96.24$, $L^3 = 1000$:
 
-$$= \frac⧃LB⧄1.0 \times 10^{-6} \times 6.084 \times 10^7 \times 96.24 \times 10^3⧃RB⧄⧃LB⧄6 \times 2.0 \times 10^{11}⧃RB⧄ = \frac⧃LB⧄5.855 \times 10^6⧃RB⧄⧃LB⧄1.2 \times 10^{12}⧃RB⧄ = 4.879 \times 10^{-6}\,\text{J}$$
+$$= \frac◆LB◆1.0 \times 10^{-6} \times 6.084 \times 10^7 \times 96.24 \times 10^3◆RB◆◆LB◆6 \times 2.0 \times 10^{11}◆RB◆ = \frac◆LB◆5.855 \times 10^6◆RB◆◆LB◆1.2 \times 10^{12}◆RB◆ = 4.879 \times 10^{-6}\,\text{J}$$
 
 Naive calculation: $U_{\text{naive}} = \frac{1}{2} \times (\rho A L g) \times \Delta L$
 
@@ -271,9 +271,9 @@ $$= \frac{1}{2} \times 0.7651 \times 1.913 \times 10^{-5} = 7.317 \times 10^{-6}
 
 The naive calculation overestimates by a factor of 1.5. This can be shown analytically:
 
-$U_{\text{naive}} = \frac{1}{2}(\rho A L g)\Delta L = \frac{1}{2}\rho A L g \times \frac⧃LB⧄\rho g L^2⧃RB⧄⧃LB⧄2E⧃RB⧄ = \frac⧃LB⧄\rho^2 A g^2 L^3⧃RB⧄⧃LB⧄4E⧃RB⧄$
+$U_{\text{naive}} = \frac{1}{2}(\rho A L g)\Delta L = \frac{1}{2}\rho A L g \times \frac◆LB◆\rho g L^2◆RB◆◆LB◆2E◆RB◆ = \frac◆LB◆\rho^2 A g^2 L^3◆RB◆◆LB◆4E◆RB◆$
 
-$U = \frac⧃LB⧄\rho^2 A g^2 L^3⧃RB⧄⧃LB⧄6E⧃RB⧄$
+$U = \frac◆LB◆\rho^2 A g^2 L^3◆RB◆◆LB◆6E◆RB◆$
 
 Ratio $U_{\text{naive}}/U = 6/4 = 3/2 = 1.5$
 

@@ -127,7 +127,7 @@ x^2 + 4x^2 - 4x + 1 &= 25 \\
 \end{aligned}
 $$
 
-$$x = \frac⧃LB⧄4 \pm \sqrt{16 + 480}⧃RB⧄⧃LB⧄10⧃RB⧄ = \frac⧃LB⧄4 \pm \sqrt{496}⧃RB⧄⧃LB⧄10⧃RB⧄ = \frac⧃LB⧄4 \pm 4\sqrt{31}⧃RB⧄⧃LB⧄10⧃RB⧄ = \frac⧃LB⧄2 \pm 2\sqrt{31}⧃RB⧄⧃LB⧄5⧃RB⧄$$
+$$x = \frac◆LB◆4 \pm \sqrt{16 + 480}◆RB◆◆LB◆10◆RB◆ = \frac◆LB◆4 \pm \sqrt{496}◆RB◆◆LB◆10◆RB◆ = \frac◆LB◆4 \pm 4\sqrt{31}◆RB◆◆LB◆10◆RB◆ = \frac◆LB◆2 \pm 2\sqrt{31}◆RB◆◆LB◆5◆RB◆$$
 
 $\Delta = 496 > 0$, so the line intersects the circle at two points.
 
@@ -582,7 +582,7 @@ x^2 + 169 - 78x + 9x^2 &= 25 \\
 \end{aligned}
 $$
 
-$$x = \frac⧃LB⧄39 \pm \sqrt{1521 - 1440}⧃RB⧄⧃LB⧄10⧃RB⧄ = \frac⧃LB⧄39 \pm \sqrt{81}⧃RB⧄⧃LB⧄10⧃RB⧄ = \frac⧃LB⧄39 \pm 9⧃RB⧄⧃LB⧄10⧃RB⧄$$
+$$x = \frac◆LB◆39 \pm \sqrt{1521 - 1440}◆RB◆◆LB◆10◆RB◆ = \frac◆LB◆39 \pm \sqrt{81}◆RB◆◆LB◆10◆RB◆ = \frac◆LB◆39 \pm 9◆RB◆◆LB◆10◆RB◆$$
 
 $x = \frac{48}{10} = \frac{24}{5}$: $y = 13 - \frac{72}{5} = \frac{65 - 72}{5} = -\frac{7}{5}$.
 
@@ -848,25 +848,25 @@ Solution: $x = \frac{13}{7}, \; y = \frac{17}{7}, \; z = \frac{12}{7}$.
 
 <details>
 <summary>Solution</summary>
-**Case 1:** $x^2 - 3x + 1 \geq 0$, i.e. $x \leq \frac⧃LB⧄3 - \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄$ or $x \geq \frac⧃LB⧄3 + \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+**Case 1:** $x^2 - 3x + 1 \geq 0$, i.e. $x \leq \frac◆LB◆3 - \sqrt{5}◆RB◆◆LB◆2◆RB◆$ or $x \geq \frac◆LB◆3 + \sqrt{5}◆RB◆◆LB◆2◆RB◆$.
 
 Then $x^2 - 3x + 1 \geq 2$, giving $x^2 - 3x - 1 \geq 0$.
 
-Roots: $x = \frac⧃LB⧄3 \pm \sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+Roots: $x = \frac◆LB◆3 \pm \sqrt{13}◆RB◆◆LB◆2◆RB◆$.
 
-So $x \leq \frac⧃LB⧄3 - \sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄$ or $x \geq \frac⧃LB⧄3 + \sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+So $x \leq \frac◆LB◆3 - \sqrt{13}◆RB◆◆LB◆2◆RB◆$ or $x \geq \frac◆LB◆3 + \sqrt{13}◆RB◆◆LB◆2◆RB◆$.
 
 Since $\sqrt{13} \gt \sqrt{5}$, the condition $x^2 - 3x + 1 \geq 0$ is automatically satisfied by
 these ranges.
 
-**Case 2:** $x^2 - 3x + 1 \lt 0$, i.e. $\frac⧃LB⧄3 - \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄ \lt x \lt \frac⧃LB⧄3 + \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+**Case 2:** $x^2 - 3x + 1 \lt 0$, i.e. $\frac◆LB◆3 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \lt x \lt \frac◆LB◆3 + \sqrt{5}◆RB◆◆LB◆2◆RB◆$.
 
 Then $-(x^2 - 3x + 1) \geq 2$, giving $x^2 - 3x + 3 \leq 0$.
 
 Discriminant: $\Delta = 9 - 12 = -3 \lt 0$. Since the parabola opens upward, $x^2 - 3x + 3 \gt 0$
 for all real $x$. No solution from this case.
 
-**Solution:** $x \leq \frac⧃LB⧄3 - \sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄$ or $x \geq \frac⧃LB⧄3 + \sqrt{13}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+**Solution:** $x \leq \frac◆LB◆3 - \sqrt{13}◆RB◆◆LB◆2◆RB◆$ or $x \geq \frac◆LB◆3 + \sqrt{13}◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Modulus inequalities](#8-modulus-inequalities)

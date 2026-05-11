@@ -43,7 +43,7 @@ $B$ moves in the positive direction (the same direction as $A$'s initial motion)
 
 **(b)** Coefficient of restitution:
 
-$$e = \frac⧃LB⧄\text{relative speed of separation}⧃RB⧄⧃LB⧄\text{relative speed of approach}⧃RB⧄$$
+$$e = \frac◆LB◆\text{relative speed of separation}◆RB◆◆LB◆\text{relative speed of approach}◆RB◆$$
 
 Relative speed of approach $= 5 - (-3) = 8$ m/s.
 
@@ -91,7 +91,7 @@ A ball is dropped from a height of $10$ m onto a smooth horizontal floor. The co
 
 **Solution:**
 
-**(a)** Speed just before first impact: $u = \sqrt{2gh} = \sqrt⧃LB⧄2 \times 9.8 \times 10⧃RB⧄ = \sqrt{196} = 14$ m/s.
+**(a)** Speed just before first impact: $u = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.8 \times 10◆RB◆ = \sqrt{196} = 14$ m/s.
 
 Speed just after first impact: $v = eu = 0.6 \times 14 = 8.4$ m/s.
 
@@ -101,7 +101,7 @@ Note: $h_1 = e^2 h = 0.36 \times 10 = 3.6$ m. Consistent.
 
 **(b)** After the $n$-th bounce, the speed is $u_n = e^n \sqrt{2gh} = e^n \times 14$.
 
-$$h_n = \frac{u_n^2}{2g} = \frac⧃LB⧄e^{2n} \times 196⧃RB⧄⧃LB⧄19.6⧃RB⧄ = e^{2n} \times 10 \quad \blacksquare$$
+$$h_n = \frac{u_n^2}{2g} = \frac◆LB◆e^{2n} \times 196◆RB◆◆LB◆19.6◆RB◆ = e^{2n} \times 10 \quad \blacksquare$$
 
 Total vertical distance $= h + 2h_1 + 2h_2 + \cdots = h + 2\sum_{n=1}^{\infty}h_n$
 
@@ -113,11 +113,11 @@ $$\sum_{n=1}^{\infty}(0.36)^n = \frac{0.36}{1 - 0.36} = \frac{0.36}{0.64} = \fra
 
 $$\text{Total distance} = 10 + 20 \times \frac{9}{16} = 10 + \frac{180}{16} = 10 + 11.25 = 21.25 \text{ m}$$
 
-**(c)** Time for the initial fall: $t_0 = \sqrt⧃LB⧄\frac{2h}{g}⧃RB⧄ = \sqrt⧃LB⧄\frac{20}{9.8}⧃RB⧄ = \sqrt⧃LB⧄\frac{100}{49}⧃RB⧄ = \frac{10}{7}$ s.
+**(c)** Time for the initial fall: $t_0 = \sqrt◆LB◆\frac{2h}{g}◆RB◆ = \sqrt◆LB◆\frac{20}{9.8}◆RB◆ = \sqrt◆LB◆\frac{100}{49}◆RB◆ = \frac{10}{7}$ s.
 
 After the $n$-th bounce, the time in the air (up and down) is:
 
-$$t_n = \frac{2u_n}{g} = \frac⧃LB⧄2e^n \times 14⧃RB⧄⧃LB⧄9.8⧃RB⧄ = \frac⧃LB⧄2e^n \times 14⧃RB⧄⧃LB⧄9.8⧃RB⧄ = \frac{28e^n}{9.8} = \frac{20e^n}{7} \text{ s}$$
+$$t_n = \frac{2u_n}{g} = \frac◆LB◆2e^n \times 14◆RB◆◆LB◆9.8◆RB◆ = \frac◆LB◆2e^n \times 14◆RB◆◆LB◆9.8◆RB◆ = \frac{28e^n}{9.8} = \frac{20e^n}{7} \text{ s}$$
 
 Total time $= t_0 + \sum_{n=1}^{\infty}t_n = \frac{10}{7} + \frac{20}{7}\sum_{n=1}^{\infty}(0.6)^n$
 
@@ -243,7 +243,7 @@ A smooth sphere $A$ of mass $4$ kg moving at $10$ m/s collides with a smooth sph
 
 **(c)** Find the kinetic energy lost in the collision and express it as a percentage of the initial kinetic energy.
 
-**(d)** Show that the angle $\theta$ that $B$'s velocity makes with the original direction satisfies $\tan\theta = \frac⧃LB⧄2\sin 30°⧃RB⧄⧃LB⧄\text{(expression involving masses and velocities)}⧃RB⧄$ and evaluate $\theta$.
+**(d)** Show that the angle $\theta$ that $B$'s velocity makes with the original direction satisfies $\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\text{(expression involving masses and velocities)}◆RB◆$ and evaluate $\theta$.
 
 [Difficulty: hard. Combines 2D momentum conservation with energy analysis, requiring resolution into components and reconstruction of the velocity vector.]
 
@@ -267,7 +267,7 @@ $$4 \times 2\sqrt{3} + 6v_{Bx} = 70$$
 
 $$6v_{Bx} = 70 - 8\sqrt{3} \approx 70 - 13.86 = 56.14$$
 
-$$v_{Bx} = \frac⧃LB⧄70 - 8\sqrt{3}⧃RB⧄⧃LB⧄6⧃RB⧄ = \frac⧃LB⧄35 - 4\sqrt{3}⧃RB⧄⧃LB⧄3⧃RB⧄ \approx 9.36 \text{ m/s}$$
+$$v_{Bx} = \frac◆LB◆70 - 8\sqrt{3}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆35 - 4\sqrt{3}◆RB◆◆LB◆3◆RB◆ \approx 9.36 \text{ m/s}$$
 
 **$y$-momentum conservation:**
 
@@ -275,19 +275,19 @@ $$4 \times 2 + 6v_{By} = 0$$
 
 $$6v_{By} = -8 \implies v_{By} = -\frac{4}{3} \text{ m/s}$$
 
-Speed of $B$: $v_B = \sqrt{v_{Bx}^2 + v_{By}^2} = \sqrt⧃LB⧄\left(\frac{35 - 4\sqrt{3}}{3}\right)^2 + \frac{16}{9}⧃RB⧄$
+Speed of $B$: $v_B = \sqrt{v_{Bx}^2 + v_{By}^2} = \sqrt◆LB◆\left(\frac{35 - 4\sqrt{3}}{3}\right)^2 + \frac{16}{9}◆RB◆$
 
-$$= \sqrt⧃LB⧄\frac{(35 - 4\sqrt{3})^2 + 16}{9}⧃RB⧄ = \sqrt⧃LB⧄\frac{1225 - 280\sqrt{3} + 48 + 16}{9}⧃RB⧄ = \sqrt⧃LB⧄\frac{1289 - 280\sqrt{3}}{9}⧃RB⧄$$
+$$= \sqrt◆LB◆\frac{(35 - 4\sqrt{3})^2 + 16}{9}◆RB◆ = \sqrt◆LB◆\frac{1225 - 280\sqrt{3} + 48 + 16}{9}◆RB◆ = \sqrt◆LB◆\frac{1289 - 280\sqrt{3}}{9}◆RB◆$$
 
 $\sqrt{3} \approx 1.732$, so $1289 - 484.96 = 804.04$.
 
-$$v_B = \sqrt⧃LB⧄\frac{804.04}{9}⧃RB⧄ = \sqrt{89.34} \approx 9.45 \text{ m/s}$$
+$$v_B = \sqrt◆LB◆\frac{804.04}{9}◆RB◆ = \sqrt{89.34} \approx 9.45 \text{ m/s}$$
 
 **(b)** The coefficient of restitution applies along the line of centres. For a head-on collision becoming oblique, the line of centres is the original direction of motion (the $x$-axis).
 
-$$e = \frac{v_{Bx} - v_{Ax}}{u_{Ax} - u_{Bx}} = \frac⧃LB⧄\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}⧃RB⧄⧃LB⧄10 - 5⧃RB⧄$$
+$$e = \frac{v_{Bx} - v_{Ax}}{u_{Ax} - u_{Bx}} = \frac◆LB◆\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}◆RB◆◆LB◆10 - 5◆RB◆$$
 
-$$= \frac⧃LB⧄\frac{35 - 4\sqrt{3} - 6\sqrt{3}}{3}⧃RB⧄⧃LB⧄5⧃RB⧄ = \frac⧃LB⧄35 - 10\sqrt{3}⧃RB⧄⧃LB⧄15⧃RB⧄ = \frac⧃LB⧄7 - 2\sqrt{3}⧃RB⧄⧃LB⧄3⧃RB⧄$$
+$$= \frac◆LB◆\frac{35 - 4\sqrt{3} - 6\sqrt{3}}{3}◆RB◆◆LB◆5◆RB◆ = \frac◆LB◆35 - 10\sqrt{3}◆RB◆◆LB◆15◆RB◆ = \frac◆LB◆7 - 2\sqrt{3}◆RB◆◆LB◆3◆RB◆$$
 
 $$= \frac{7 - 3.464}{3} = \frac{3.536}{3} \approx 0.179$$
 
@@ -297,7 +297,7 @@ $\text{KE}_{\text{after}} = \frac{1}{2}(4)(16) + \frac{1}{2}(6)(89.34) = 32 + 26
 
 Wait -- $\text{KE}_{\text{after}} \gt \text{KE}_{\text{before}}$, which is impossible ($e \leq 1$ implies no energy creation). Let me recheck.
 
-$v_B^2 = \frac⧃LB⧄1289 - 280\sqrt{3}⧃RB⧄⧃LB⧄9⧃RB⧄$.
+$v_B^2 = \frac◆LB◆1289 - 280\sqrt{3}◆RB◆◆LB◆9◆RB◆$.
 
 $280\sqrt{3} = 280 \times 1.7321 = 484.98$.
 
@@ -309,13 +309,13 @@ This exceeds the initial KE of $275$ J, which violates $e \leq 1$. This means th
 
 **Conclusion:** The given data is inconsistent. With the given masses, initial velocities, and the stated post-collision velocity of $A$, the resulting velocity of $B$ implies kinetic energy creation. This diagnostic test is designed to identify whether the student recognises physically impossible data.
 
-**(d)** From part (a): $v_{Bx} = \frac⧃LB⧄35 - 4\sqrt{3}⧃RB⧄⧃LB⧄3⧃RB⧄$ and $v_{By} = -\frac{4}{3}$.
+**(d)** From part (a): $v_{Bx} = \frac◆LB◆35 - 4\sqrt{3}◆RB◆◆LB◆3◆RB◆$ and $v_{By} = -\frac{4}{3}$.
 
-$$\tan\theta = \frac⧃LB⧄\lvert v_{By} \rvert⧃RB⧄⧃LB⧄v_{Bx}⧃RB⧄ = \frac⧃LB⧄4/3⧃RB⧄⧃LB⧄(35 - 4\sqrt{3})/3⧃RB⧄ = \frac⧃LB⧄4⧃RB⧄⧃LB⧄35 - 4\sqrt{3}⧃RB⧄ \approx \frac{4}{28.07} \approx 0.1425$$
+$$\tan\theta = \frac◆LB◆\lvert v_{By} \rvert◆RB◆◆LB◆v_{Bx}◆RB◆ = \frac◆LB◆4/3◆RB◆◆LB◆(35 - 4\sqrt{3})/3◆RB◆ = \frac◆LB◆4◆RB◆◆LB◆35 - 4\sqrt{3}◆RB◆ \approx \frac{4}{28.07} \approx 0.1425$$
 
 $$\theta \approx \arctan(0.1425) \approx 8.1°$$
 
-Note: $\tan\theta = \frac⧃LB⧄2\sin 30°⧃RB⧄⧃LB⧄\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}⧃RB⧄$... this does not simplify neatly because the data is inconsistent. The angle is approximately $8.1°$ below the original line of motion.
+Note: $\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}◆RB◆$... this does not simplify neatly because the data is inconsistent. The angle is approximately $8.1°$ below the original line of motion.
 
 ---
 

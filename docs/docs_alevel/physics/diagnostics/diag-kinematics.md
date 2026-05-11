@@ -36,14 +36,14 @@ $$4.905t^2 - 25.38t + 35 = 0$$
 
 Using the quadratic formula:
 
-$$t = \frac⧃LB⧄25.38 \pm \sqrt{25.38^2 - 4 \times 4.905 \times 35}⧃RB⧄⧃LB⧄2 \times 4.905⧃RB⧄$$
-$$t = \frac⧃LB⧄25.38 \pm \sqrt{644.1 - 686.7}⧃RB⧄⧃LB⧄9.81⧃RB⧄$$
+$$t = \frac◆LB◆25.38 \pm \sqrt{25.38^2 - 4 \times 4.905 \times 35}◆RB◆◆LB◆2 \times 4.905◆RB◆$$
+$$t = \frac◆LB◆25.38 \pm \sqrt{644.1 - 686.7}◆RB◆◆LB◆9.81◆RB◆$$
 
 The discriminant is $644.1 - 686.7 = -42.6 \lt 0$.
 
 Since the discriminant is negative, the ball **never reaches** the height of $B$. The maximum height is:
 
-$$h_{\max} = \frac{u_y^2}{2g} = \frac⧃LB⧄25.38^2⧃RB⧄⧃LB⧄2 \times 9.81⧃RB⧄ = \frac{644.1}{19.62} = 32.83\,\text{m}$$
+$$h_{\max} = \frac{u_y^2}{2g} = \frac◆LB◆25.38^2◆RB◆◆LB◆2 \times 9.81◆RB◆ = \frac{644.1}{19.62} = 32.83\,\text{m}$$
 
 Since $32.83\,\text{m} \lt 35\,\text{m}$, the ball cannot reach $B$. The student must recognise when the mathematics reveals a physical impossibility rather than blindly computing.
 
@@ -173,11 +173,11 @@ $$s = \frac{v^2}{2g} = \frac{14.29^2}{19.62} = \frac{204.2}{19.62} = 10.41\,\tex
 
 (c) **First ascent:** $t_1 = u/g = 18.0/9.81 = 1.835\,\text{s}$
 
-**First descent:** Falls $18.5\,\text{m}$ from rest: $t_2 = \sqrt{2h/g} = \sqrt⧃LB⧄2 \times 18.5/9.81⧃RB⧄ = \sqrt{3.772} = 1.942\,\text{s}$
+**First descent:** Falls $18.5\,\text{m}$ from rest: $t_2 = \sqrt{2h/g} = \sqrt◆LB◆2 \times 18.5/9.81◆RB◆ = \sqrt{3.772} = 1.942\,\text{s}$
 
 **Second ascent:** $t_3 = 14.29/9.81 = 1.457\,\text{s}$
 
-**Second descent:** Falls $10.41\,\text{m}$ from rest: $t_4 = \sqrt⧃LB⧄2 \times 10.41/9.81⧃RB⧄ = \sqrt{2.122} = 1.457\,\text{s}$
+**Second descent:** Falls $10.41\,\text{m}$ from rest: $t_4 = \sqrt◆LB◆2 \times 10.41/9.81◆RB◆ = \sqrt{2.122} = 1.457\,\text{s}$
 
 **Total time** $= t_1 + t_2 + t_3 + t_4 = 1.835 + 1.942 + 1.457 + 1.457 = 6.69\,\text{s}$
 
@@ -189,7 +189,7 @@ $$s = \frac{v^2}{2g} = \frac{14.29^2}{19.62} = \frac{204.2}{19.62} = 10.41\,\tex
 
 A particle is projected with speed $u = 25\,\text{m}\,\text{s}^{-1}$ at angle $\theta = 30^\circ$ above the horizontal from a point $O$ at the foot of an inclined plane. The plane makes an angle $\alpha = 20^\circ$ with the horizontal. The particle lands on the plane at point $P$.
 
-(a) Show that the time of flight is given by $t = \frac⧃LB⧄2u\sin(\theta - \alpha)⧃RB⧄⧃LB⧄g\cos\alpha⧃RB⧄$.
+(a) Show that the time of flight is given by $t = \frac◆LB◆2u\sin(\theta - \alpha)◆RB◆◆LB◆g\cos\alpha◆RB◆$.
 
 (b) Calculate the distance $OP$ along the plane.
 
@@ -212,13 +212,13 @@ $$t\left(u\sin\theta - u\cos\theta\tan\alpha - \frac{1}{2}gt\right) = 0$$
 
 Ignoring $t = 0$:
 
-$$t = \frac⧃LB⧄2u(\sin\theta - \cos\theta\tan\alpha)⧃RB⧄⧃LB⧄g⧃RB⧄ = \frac⧃LB⧄2u(\sin\theta\cos\alpha - \cos\theta\sin\alpha)⧃RB⧄⧃LB⧄g\cos\alpha⧃RB⧄ = \frac⧃LB⧄2u\sin(\theta - \alpha)⧃RB⧄⧃LB⧄g\cos\alpha⧃RB⧄$$
+$$t = \frac◆LB◆2u(\sin\theta - \cos\theta\tan\alpha)◆RB◆◆LB◆g◆RB◆ = \frac◆LB◆2u(\sin\theta\cos\alpha - \cos\theta\sin\alpha)◆RB◆◆LB◆g\cos\alpha◆RB◆ = \frac◆LB◆2u\sin(\theta - \alpha)◆RB◆◆LB◆g\cos\alpha◆RB◆$$
 
 as required.
 
-(b) Substituting: $t = \frac⧃LB⧄2 \times 25 \times \sin(30^\circ - 20^\circ)⧃RB⧄⧃LB⧄9.81 \times \cos 20^\circ⧃RB⧄ = \frac⧃LB⧄50 \times \sin 10^\circ⧃RB⧄⧃LB⧄9.81 \times \cos 20^\circ⧃RB⧄$
+(b) Substituting: $t = \frac◆LB◆2 \times 25 \times \sin(30^\circ - 20^\circ)◆RB◆◆LB◆9.81 \times \cos 20^\circ◆RB◆ = \frac◆LB◆50 \times \sin 10^\circ◆RB◆◆LB◆9.81 \times \cos 20^\circ◆RB◆$
 
-$$= \frac⧃LB⧄50 \times 0.1736⧃RB⧄⧃LB⧄9.81 \times 0.9397⧃RB⧄ = \frac{8.682}{9.219} = 0.9420\,\text{s}$$
+$$= \frac◆LB◆50 \times 0.1736◆RB◆◆LB◆9.81 \times 0.9397◆RB◆ = \frac{8.682}{9.219} = 0.9420\,\text{s}$$
 
 Horizontal distance: $x = 25\cos 30^\circ \times 0.9420 = 25 \times 0.8660 \times 0.9420 = 20.40\,\text{m}$
 
@@ -257,7 +257,7 @@ For $A$ (horizontal, rightward positive): $T - F_r = 3.0a$, where $F_r = \mu R =
 
 Adding: $5.0g - 1.2g = 8.0a$
 
-$$a = \frac{3.8g}{8.0} = \frac⧃LB⧄3.8 \times 9.81⧃RB⧄⧃LB⧄8.0⧃RB⧄ = \frac{37.28}{8.0} = 4.66\,\text{m}\,\text{s}^{-2}$$
+$$a = \frac{3.8g}{8.0} = \frac◆LB◆3.8 \times 9.81◆RB◆◆LB◆8.0◆RB◆ = \frac{37.28}{8.0} = 4.66\,\text{m}\,\text{s}^{-2}$$
 
 (b) $B$ falls $0.80\,\text{m}$ from rest with $a = 4.66\,\text{m}\,\text{s}^{-2}$:
 
@@ -306,10 +306,10 @@ $$= 0.5 \times [10.0 + 17.5 + 14.8 + 11.7 + 8.2 + 4.3] = 0.5 \times 66.5 = 33.25
 
 (b) Using the work-energy principle: $Fs = \frac{1}{2}mv^2$
 
-$$F = \frac⧃LB⧄0.5 \times 1200 \times 20.0^2⧃RB⧄⧃LB⧄19.25⧃RB⧄ = \frac{240000}{19.25} = 12468 \approx 12500\,\text{N}$$
+$$F = \frac◆LB◆0.5 \times 1200 \times 20.0^2◆RB◆◆LB◆19.25◆RB◆ = \frac{240000}{19.25} = 12468 \approx 12500\,\text{N}$$
 
 (c) New braking force $= 0.60 \times 12500 = 7500\,\text{N}$
 
-New braking distance: $s = \frac⧃LB⧄0.5 \times 1200 \times 400⧃RB⧄⧃LB⧄7500⧃RB⧄ = \frac{240000}{7500} = 32.0\,\text{m}$
+New braking distance: $s = \frac◆LB◆0.5 \times 1200 \times 400◆RB◆◆LB◆7500◆RB◆ = \frac{240000}{7500} = 32.0\,\text{m}$
 
 New total stopping distance $= 14.0 + 32.0 = 46.0\,\text{m}$

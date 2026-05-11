@@ -84,14 +84,14 @@ $$\boxed{r = \frac{mv}{Bq}}$$
 
 **Derivation of the cyclotron frequency.** The period of the circular orbit:
 
-$$T = \frac⧃LB⧄2\pi r⧃RB⧄⧃LB⧄v⧃RB⧄ = \frac⧃LB⧄2\pi m⧃RB⧄⧃LB⧄Bq⧃RB⧄$$
+$$T = \frac◆LB◆2\pi r◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆2\pi m◆RB◆◆LB◆Bq◆RB◆$$
 
 Note that $T$ is **independent of $v$ and $r$** — a remarkable result. All particles of the same
 mass and charge orbit with the same period regardless of speed.
 
 The **cyclotron frequency** is:
 
-$$f = \frac{1}{T} = \frac⧃LB⧄Bq⧃RB⧄⧃LB⧄2\pi m⧃RB⧄$$
+$$f = \frac{1}{T} = \frac◆LB◆Bq◆RB◆◆LB◆2\pi m◆RB◆$$
 
 **Intuition.** A faster particle has a larger orbit (proportionally), so it takes the same time to
 complete one revolution. This is the principle behind the cyclotron particle accelerator.
@@ -106,7 +106,7 @@ A proton ($m = 1.67 \times 10^{-27}$ kg) moves at $3.0 \times 10^6$ m s$^{-1}$ p
 magnetic field of 0.50 T. Find the radius of its circular path.
 
 **Answer.**
-$r = \frac{mv}{Bq} = \frac⧃LB⧄1.67 \times 10^{-27} \times 3.0 \times 10^6⧃RB⧄⧃LB⧄0.50 \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄5.01 \times 10^{-21}⧃RB⧄⧃LB⧄8.0 \times 10^{-20}⧃RB⧄ = 0.0626$
+$r = \frac{mv}{Bq} = \frac◆LB◆1.67 \times 10^{-27} \times 3.0 \times 10^6◆RB◆◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆5.01 \times 10^{-21}◆RB◆◆LB◆8.0 \times 10^{-20}◆RB◆ = 0.0626$
 m $= 6.26$ cm.
 
 </details>
@@ -155,7 +155,7 @@ $$\boxed{1\,\mathrm{Wb} = 1\,\mathrm{T}\,\mathrm{m}^2}$$
 **Definition.** Faraday's law states that the induced e.m.f. is equal to the negative rate of change
 of magnetic flux linkage.
 
-$$\boxed{\varepsilon = -N\frac⧃LB⧄d\Phi⧃RB⧄⧃LB⧄dt⧃RB⧄}$$
+$$\boxed{\varepsilon = -N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆}$$
 
 where $N$ is the number of turns, $\Phi$ is the magnetic flux, and $N\Phi$ is the **flux linkage**.
 
@@ -189,7 +189,7 @@ A coil of $N$ turns, area $A$, rotating at angular frequency $\omega$ in a unifo
 
 $$\Phi = NBA\cos(\omega t)$$
 
-$$\mathcal{E} = -\frac⧃LB⧄d\Phi⧃RB⧄⧃LB⧄dt⧃RB⧄ = NBA\omega\sin(\omega t)$$
+$$\mathcal{E} = -\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = NBA\omega\sin(\omega t)$$
 
 $$\boxed{\mathcal{E} = \mathcal{E}_0\sin(\omega t)}$$
 
@@ -209,13 +209,13 @@ The Biot-Savart law is the magnetic analogue of Coulomb's law: it gives the magn
 contribution $d\mathbf{B}$ at a point $\mathbf{P}$ due to an infinitesimal current element
 $I\,d\mathbf{l}$:
 
-$$\boxed{d\mathbf{B} = \frac⧃LB⧄\mu_0⧃RB⧄⧃LB⧄4\pi⧃RB⧄\frac⧃LB⧄I\,d\mathbf{l} \times \hat{\mathbf{r}}⧃RB⧄⧃LB⧄r^2⧃RB⧄}$$
+$$\boxed{d\mathbf{B} = \frac◆LB◆\mu_0◆RB◆◆LB◆4\pi◆RB◆\frac◆LB◆I\,d\mathbf{l} \times \hat{\mathbf{r}}◆RB◆◆LB◆r^2◆RB◆}$$
 
 where $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ is the permeability of free space, $d\mathbf{l}$
 points along the current, $\hat{\mathbf{r}}$ is the unit vector from the element to $\mathbf{P}$,
 and $r$ is the distance. The total field is:
 
-$$\mathbf{B} = \frac⧃LB⧄\mu_0 I⧃RB⧄⧃LB⧄4\pi⧃RB⧄\int \frac⧃LB⧄d\mathbf{l} \times \hat{\mathbf{r}}⧃RB⧄⧃LB⧄r^2⧃RB⧄$$
+$$\mathbf{B} = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi◆RB◆\int \frac◆LB◆d\mathbf{l} \times \hat{\mathbf{r}}◆RB◆◆LB◆r^2◆RB◆$$
 
 The direction of $d\mathbf{B}$ follows from the right-hand rule on
 $d\mathbf{l} \times \hat{\mathbf{r}}$.
@@ -230,9 +230,9 @@ $\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direc
 For a circular loop of radius $R$ carrying current $I$, every element $d\mathbf{l}$ satisfies
 $d\mathbf{l} \perp \hat{\mathbf{r}}$ and $r = R$, so $|d\mathbf{l} \times \hat{\mathbf{r}}| = dl$:
 
-$$B = \frac⧃LB⧄\mu_0 I⧃RB⧄⧃LB⧄4\pi R^2⧃RB⧄\oint dl = \frac⧃LB⧄\mu_0 I⧃RB⧄⧃LB⧄4\pi R^2⧃RB⧄\cdot 2\pi R$$
+$$B = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi R^2◆RB◆\oint dl = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi R^2◆RB◆\cdot 2\pi R$$
 
-$$\boxed{B = \frac⧃LB⧄\mu_0 I⧃RB⧄⧃LB⧄2R⧃RB⧄}$$
+$$\boxed{B = \frac◆LB◆\mu_0 I◆RB◆◆LB◆2R◆RB◆}$$
 
 For $N$ turns: $B = \mu_0 NI/(2R)$.
 
@@ -241,19 +241,19 @@ For $N$ turns: $B = \mu_0 NI/(2R)$.
 Consider a point $\mathbf{P}$ on the axis at distance $x$ from the centre of a loop of radius $R$.
 Each current element is at distance $r = \sqrt{R^2 + x^2}$ from $\mathbf{P}$. Since
 $d\mathbf{l} \perp \hat{\mathbf{r}}$, the contribution magnitude is
-$dB = \frac⧃LB⧄\mu_0 I⧃RB⧄⧃LB⧄4\pi⧃RB⧄\frac{dl}{r^2}$.
+$dB = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi◆RB◆\frac{dl}{r^2}$.
 
 By rotational symmetry, components of $d\mathbf{B}$ perpendicular to the axis cancel. Only the axial
 component survives. Since $d\mathbf{B} \perp \hat{\mathbf{r}}$ and $\hat{\mathbf{r}}$ makes angle
 $\alpha$ with the axis where $\sin\alpha = R/r$, the axial component is:
 
-$$dB_{\parallel} = dB\sin\alpha = \frac⧃LB⧄\mu_0 I⧃RB⧄⧃LB⧄4\pi⧃RB⧄\frac{R\,dl}{r^3}$$
+$$dB_{\parallel} = dB\sin\alpha = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi◆RB◆\frac{R\,dl}{r^3}$$
 
 Integrating around the loop ($\oint dl = 2\pi R$):
 
-$$B = \frac⧃LB⧄\mu_0 I R⧃RB⧄⧃LB⧄4\pi(R^2 + x^2)^{3/2}⧃RB⧄\cdot 2\pi R$$
+$$B = \frac◆LB◆\mu_0 I R◆RB◆◆LB◆4\pi(R^2 + x^2)^{3/2}◆RB◆\cdot 2\pi R$$
 
-$$\boxed{B = \frac⧃LB⧄\mu_0 I R^2⧃RB⧄⧃LB⧄2(R^2 + x^2)^{3/2}⧃RB⧄}$$
+$$\boxed{B = \frac◆LB◆\mu_0 I R^2◆RB◆◆LB◆2(R^2 + x^2)^{3/2}◆RB◆}$$
 
 **Check.** At $x = 0$: $B = \mu_0 I/(2R)$, recovering the centre-of-loop result. As $x \to \infty$:
 $B \to 0$, as expected.
@@ -296,13 +296,13 @@ solenoid, the field varies with $r$.
 Wire 1 (current $I_1$) creates a magnetic field at distance $d$. By Ampere's law (or the Biot-Savart
 result for an infinite wire):
 
-$$B_1 = \frac⧃LB⧄\mu_0 I_1⧃RB⧄⧃LB⧄2\pi d⧃RB⧄$$
+$$B_1 = \frac◆LB◆\mu_0 I_1◆RB◆◆LB◆2\pi d◆RB◆$$
 
 Wire 2 (current $I_2$, length $L$) in this field experiences a force:
 
-$$F = B_1 I_2 L = \frac⧃LB⧄\mu_0 I_1 I_2 L⧃RB⧄⧃LB⧄2\pi d⧃RB⧄$$
+$$F = B_1 I_2 L = \frac◆LB◆\mu_0 I_1 I_2 L◆RB◆◆LB◆2\pi d◆RB◆$$
 
-$$\boxed{\frac{F}{L} = \frac⧃LB⧄\mu_0 I_1 I_2⧃RB⧄⧃LB⧄2\pi d⧃RB⧄}$$
+$$\boxed{\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆}$$
 
 ### Direction: Attractive or Repulsive
 
@@ -322,7 +322,7 @@ head-on (repel).
 
 Setting $I_1 = I_2 = 1$ A and $d = 1$ m:
 
-$$\frac{F}{L} = \frac⧃LB⧄\mu_0⧃RB⧄⧃LB⧄2\pi⧃RB⧄ = \frac⧃LB⧄4\pi \times 10^{-7}⧃RB⧄⧃LB⧄2\pi⧃RB⧄ = 2 \times 10^{-7}\ \mathrm{N m}^{-1}$$
+$$\frac{F}{L} = \frac◆LB◆\mu_0◆RB◆◆LB◆2\pi◆RB◆ = \frac◆LB◆4\pi \times 10^{-7}◆RB◆◆LB◆2\pi◆RB◆ = 2 \times 10^{-7}\ \mathrm{N m}^{-1}$$
 
 The ampere is defined such that this force is exactly $2 \times 10^{-7}$ N per metre of length.
 
@@ -332,7 +332,7 @@ Two parallel wires 10 cm apart carry currents of 10 A and 10 A in the same direc
 force per unit length and its nature.
 
 **Answer.**
-$\frac{F}{L} = \frac⧃LB⧄\mu_0 I_1 I_2⧃RB⧄⧃LB⧄2\pi d⧃RB⧄ = \frac⧃LB⧄(4\pi \times 10^{-7})(10)(10)⧃RB⧄⧃LB⧄2\pi(0.10)⧃RB⧄ = \frac⧃LB⧄4 \times 10^{-7} \times 100⧃RB⧄⧃LB⧄0.20⧃RB⧄ = 2.0 \times 10^{-4}$
+$\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆ = \frac◆LB◆(4\pi \times 10^{-7})(10)(10)◆RB◆◆LB◆2\pi(0.10)◆RB◆ = \frac◆LB◆4 \times 10^{-7} \times 100◆RB◆◆LB◆0.20◆RB◆ = 2.0 \times 10^{-4}$
 N m$^{-1}$.
 
 Same-direction currents $\to$ attractive.
@@ -390,7 +390,7 @@ $$v_{\perp} = v\sin\theta, \qquad v_{\parallel} = v\cos\theta$$
 The perpendicular component produces circular motion (radius $r = mv_{\perp}/(Bq)$, period
 $T = 2\pi m/(Bq)$), while the parallel component is unaffected. The particle traces a helix with:
 
-$$\boxed{\mathrm{pitch} = v_{\parallel}\,T = \frac⧃LB⧄2\pi m v_{\parallel}⧃RB⧄⧃LB⧄Bq⧃RB⧄}$$
+$$\boxed{\mathrm{pitch} = v_{\parallel}\,T = \frac◆LB◆2\pi m v_{\parallel}◆RB◆◆LB◆Bq◆RB◆}$$
 
 The pitch is the axial distance travelled per revolution. A faster parallel component or larger mass
 gives a more stretched helix; a stronger field or larger charge gives a tighter helix.
@@ -545,7 +545,7 @@ between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$
 **Answer.** $v = E/B_1 = 1.5 \times 10^5 / 0.50 = 3.0 \times 10^5$ m s$^{-1}$.
 
 For $^{20}$Ne$^+$:
-$r_{20} = \frac{m_{20}v}{B_2 e} = \frac⧃LB⧄20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^5⧃RB⧄⧃LB⧄0.50 \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄9.96 \times 10^{-21}⧃RB⧄⧃LB⧄8.0 \times 10^{-20}⧃RB⧄ = 0.125$
+$r_{20} = \frac{m_{20}v}{B_2 e} = \frac◆LB◆20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^5◆RB◆◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆9.96 \times 10^{-21}◆RB◆◆LB◆8.0 \times 10^{-20}◆RB◆ = 0.125$
 m.
 
 For $^{22}$Ne$^+$: $r_{22} = \frac{22}{20} \times 0.125 = 0.137$ m.
@@ -576,7 +576,7 @@ An electron moves at $2.0 \times 10^6$ m s$^{-1}$ perpendicular to a magnetic fi
 Calculate the radius of its circular path.
 
 **Answer.**
-$r = \frac{mv}{Be} = \frac⧃LB⧄9.11 \times 10^{-31} \times 2.0 \times 10^6⧃RB⧄⧃LB⧄0.80 \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄1.822 \times 10^{-24}⧃RB⧄⧃LB⧄1.28 \times 10^{-19}⧃RB⧄ = 1.42 \times 10^{-5}$
+$r = \frac{mv}{Be} = \frac◆LB◆9.11 \times 10^{-31} \times 2.0 \times 10^6◆RB◆◆LB◆0.80 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆1.822 \times 10^{-24}◆RB◆◆LB◆1.28 \times 10^{-19}◆RB◆ = 1.42 \times 10^{-5}$
 m $= 14.2\,\mu$m.
 
 <b>If you get this wrong, revise:</b>
@@ -613,7 +613,7 @@ A proton and an alpha particle enter a magnetic field with the same velocity. Th
 twice the charge and four times the mass of the proton. Compare the radii of their circular paths.
 
 **Answer.** $r = mv/(Bq)$.
-$r_\alpha/r_p = \frac⧃LB⧄(4m_p)v/(B \cdot 2e)⧃RB⧄⧃LB⧄m_p v/(Be)⧃RB⧄ = \frac{4}{2} = 2$. The alpha particle has
+$r_\alpha/r_p = \frac◆LB◆(4m_p)v/(B \cdot 2e)◆RB◆◆LB◆m_p v/(Be)◆RB◆ = \frac{4}{2} = 2$. The alpha particle has
 twice the radius.
 
 <b>If you get this wrong, revise:</b>
@@ -666,7 +666,7 @@ An electron moves in a circle of radius 1.0 mm in a magnetic field of 0.30 T. Ca
 and kinetic energy.
 
 **Answer.**
-$v = \frac{Ber}{m} = \frac⧃LB⧄1.60 \times 10^{-19} \times 0.30 \times 0.001⧃RB⧄⧃LB⧄9.11 \times 10^{-31}⧃RB⧄ = \frac⧃LB⧄4.8 \times 10^{-23}⧃RB⧄⧃LB⧄9.11 \times 10^{-31}⧃RB⧄ = 5.27 \times 10^7$
+$v = \frac{Ber}{m} = \frac◆LB◆1.60 \times 10^{-19} \times 0.30 \times 0.001◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = \frac◆LB◆4.8 \times 10^{-23}◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = 5.27 \times 10^7$
 m s$^{-1}$.
 
 $E_k = \frac{1}{2}mv^2 = \frac{1}{2} \times 9.11 \times 10^{-31} \times (5.27 \times 10^7)^2 = 1.27 \times 10^{-16}$
@@ -683,7 +683,7 @@ A magnet is pushed into a coil of 50 turns, and the magnetic flux through each t
 $4.0 \times 10^{-3}$ Wb in 0.10 s. Calculate the average induced e.m.f. and explain which end of the
 coil acts as a north pole.
 
-**Answer.** $\mathcal{E} = N\frac⧃LB⧄d\Phi⧃RB⧄⧃LB⧄dt⧃RB⧄ = 50 \times \frac⧃LB⧄4.0 \times 10^{-3}⧃RB⧄⧃LB⧄0.10⧃RB⧄ = 2.0$ V.
+**Answer.** $\mathcal{E} = N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = 50 \times \frac◆LB◆4.0 \times 10^{-3}◆RB◆◆LB◆0.10◆RB◆ = 2.0$ V.
 
 By Lenz's law, the induced current opposes the increasing flux. If the magnet's north pole is being
 pushed in, the coil end facing the magnet becomes a north pole (to repel the magnet), so current
@@ -700,7 +700,7 @@ A circular coil of radius 10 cm carries a current of 5.0 A. Calculate the magnet
 centre of the coil.
 
 **Answer.**
-$B = \frac⧃LB⧄\mu_0 I⧃RB⧄⧃LB⧄2R⧃RB⧄ = \frac⧃LB⧄4\pi \times 10^{-7} \times 5.0⧃RB⧄⧃LB⧄2 \times 0.10⧃RB⧄ = \frac⧃LB⧄6.28 \times 10^{-6}⧃RB⧄⧃LB⧄0.20⧃RB⧄ = 3.14 \times 10^{-5}$
+$B = \frac◆LB◆\mu_0 I◆RB◆◆LB◆2R◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 5.0◆RB◆◆LB◆2 \times 0.10◆RB◆ = \frac◆LB◆6.28 \times 10^{-6}◆RB◆◆LB◆0.20◆RB◆ = 3.14 \times 10^{-5}$
 T $= \pi \times 10^{-5}$ T $\approx 31.4\,\mu$T.
 
 <b>If you get this wrong, revise:</b>
@@ -714,7 +714,7 @@ Two parallel wires 10 cm apart carry currents of 10 A and 10 A in the same direc
 force per unit length between them and state whether it is attractive or repulsive.
 
 **Answer.**
-$\frac{F}{L} = \frac⧃LB⧄\mu_0 I_1 I_2⧃RB⧄⧃LB⧄2\pi d⧃RB⧄ = \frac⧃LB⧄(4\pi \times 10^{-7})(10)(10)⧃RB⧄⧃LB⧄2\pi(0.10)⧃RB⧄ = \frac⧃LB⧄4 \times 10^{-7} \times 100⧃RB⧄⧃LB⧄0.20⧃RB⧄ = 2.0 \times 10^{-4}$
+$\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆ = \frac◆LB◆(4\pi \times 10^{-7})(10)(10)◆RB◆◆LB◆2\pi(0.10)◆RB◆ = \frac◆LB◆4 \times 10^{-7} \times 100◆RB◆◆LB◆0.20◆RB◆ = 2.0 \times 10^{-4}$
 N m$^{-1}$.
 
 Same-direction currents $\to$ attractive.
@@ -730,7 +730,7 @@ A solenoid of length 0.20 m produces a magnetic field of 2.5 mT when carrying a 
 Calculate the number of turns required.
 
 **Answer.** $B = \mu_0 n I = \mu_0 (N/L) I$, so
-$N = \frac⧃LB⧄BL⧃RB⧄⧃LB⧄\mu_0 I⧃RB⧄ = \frac⧃LB⧄2.5 \times 10^{-3} \times 0.20⧃RB⧄⧃LB⧄4\pi \times 10^{-7} \times 5.0⧃RB⧄ = \frac⧃LB⧄5.0 \times 10^{-4}⧃RB⧄⧃LB⧄6.28 \times 10^{-6}⧃RB⧄ = 79.6$.
+$N = \frac◆LB◆BL◆RB◆◆LB◆\mu_0 I◆RB◆ = \frac◆LB◆2.5 \times 10^{-3} \times 0.20◆RB◆◆LB◆4\pi \times 10^{-7} \times 5.0◆RB◆ = \frac◆LB◆5.0 \times 10^{-4}◆RB◆◆LB◆6.28 \times 10^{-6}◆RB◆ = 79.6$.
 
 Approximately 80 turns.
 
@@ -794,7 +794,7 @@ detector between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 
 
 **Answer.** $v = E/B_1 = 1.5 \times 10^5 / 0.50 = 3.0 \times 10^5$ m s$^{-1}$.
 
-$r_{20} = \frac{m_{20}v}{B_2 e} = \frac⧃LB⧄20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^5⧃RB⧄⧃LB⧄0.50 \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄9.96 \times 10^{-21}⧃RB⧄⧃LB⧄8.0 \times 10^{-20}⧃RB⧄ = 0.125$
+$r_{20} = \frac{m_{20}v}{B_2 e} = \frac◆LB◆20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^5◆RB◆◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆9.96 \times 10^{-21}◆RB◆◆LB◆8.0 \times 10^{-20}◆RB◆ = 0.125$
 m.
 
 $r_{22} = \frac{22}{20} \times 0.125 = 0.137$ m.
@@ -815,11 +815,11 @@ helix.
 $v_\parallel = v\cos 30° = 5.0 \times 10^6 \times 0.866 = 4.33 \times 10^6$ m s$^{-1}$.
 
 (a)
-$r = \frac⧃LB⧄mv_\perp⧃RB⧄⧃LB⧄Bq⧃RB⧄ = \frac⧃LB⧄1.67 \times 10^{-27} \times 2.5 \times 10^6⧃RB⧄⧃LB⧄0.40 \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄4.18 \times 10^{-21}⧃RB⧄⧃LB⧄6.4 \times 10^{-20}⧃RB⧄ = 0.0653$
+$r = \frac◆LB◆mv_\perp◆RB◆◆LB◆Bq◆RB◆ = \frac◆LB◆1.67 \times 10^{-27} \times 2.5 \times 10^6◆RB◆◆LB◆0.40 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆4.18 \times 10^{-21}◆RB◆◆LB◆6.4 \times 10^{-20}◆RB◆ = 0.0653$
 m $= 6.53$ cm.
 
 (b)
-$T = \frac⧃LB⧄2\pi m⧃RB⧄⧃LB⧄Bq⧃RB⧄ = \frac⧃LB⧄2\pi \times 1.67 \times 10^{-27}⧃RB⧄⧃LB⧄0.40 \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄1.05 \times 10^{-26}⧃RB⧄⧃LB⧄6.4 \times 10^{-20}⧃RB⧄ = 1.64 \times 10^{-7}$
+$T = \frac◆LB◆2\pi m◆RB◆◆LB◆Bq◆RB◆ = \frac◆LB◆2\pi \times 1.67 \times 10^{-27}◆RB◆◆LB◆0.40 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆1.05 \times 10^{-26}◆RB◆◆LB◆6.4 \times 10^{-20}◆RB◆ = 1.64 \times 10^{-7}$
 s.
 
 $\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$

@@ -62,13 +62,13 @@ This follows directly from Pythagoras' theorem applied in 3D.
 
 A **unit vector** has magnitude 1. The unit vector in the direction of $\mathbf{a}$ is
 
-$$\hat{\mathbf{a}} = \frac⧃LB⧄\mathbf{a}⧃RB⧄⧃LB⧄|\mathbf{a}|⧃RB⧄$$
+$$\hat{\mathbf{a}} = \frac◆LB◆\mathbf{a}◆RB◆◆LB◆|\mathbf{a}|◆RB◆$$
 
 ### 2.3 Direction cosines
 
 The **direction cosines** of $\mathbf{a} = \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix}$ are
 
-$$\cos\alpha = \frac⧃LB⧄a_1⧃RB⧄⧃LB⧄|\mathbf{a}|⧃RB⧄, \quad \cos\beta = \frac⧃LB⧄a_2⧃RB⧄⧃LB⧄|\mathbf{a}|⧃RB⧄, \quad \cos\gamma = \frac⧃LB⧄a_3⧃RB⧄⧃LB⧄|\mathbf{a}|⧃RB⧄$$
+$$\cos\alpha = \frac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\beta = \frac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\gamma = \frac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$$
 
 where $\alpha$, $\beta$, $\gamma$ are the angles between $\mathbf{a}$ and the $x$-, $y$-, $z$-axes
 respectively.
@@ -271,7 +271,7 @@ To verify skewness, show that the system of equations for $t$ and $s$ is inconsi
 
 From the dot product formula:
 
-$$\cos\theta = \frac⧃LB⧄\mathbf{a}\cdot\mathbf{b}⧃RB⧄⧃LB⧄|\mathbf{a}||\mathbf{b}|⧃RB⧄$$
+$$\cos\theta = \frac◆LB◆\mathbf{a}\cdot\mathbf{b}◆RB◆◆LB◆|\mathbf{a}||\mathbf{b}|◆RB◆$$
 
 The angle between two **lines** is found using the direction vectors.
 
@@ -294,7 +294,7 @@ To find the shortest distance from point $P$ to line $\mathbf{r} = \mathbf{a} + 
 The above procedure yields the general formula. For a line through $A$ with direction $\mathbf{d}$,
 and a point $P$ with position vector $\mathbf{p}$:
 
-$$d = \frac⧃LB⧄|(\mathbf{p} - \mathbf{a}) \times \mathbf{d}|⧃RB⧄⧃LB⧄|\mathbf{d}|⧃RB⧄$$
+$$d = \frac◆LB◆|(\mathbf{p} - \mathbf{a}) \times \mathbf{d}|◆RB◆◆LB◆|\mathbf{d}|◆RB◆$$
 
 This uses the cross product (vector product), which gives a vector perpendicular to both
 $\overrightarrow{AP}$ and $\mathbf{d}$ whose magnitude equals the area of the parallelogram they
@@ -319,7 +319,7 @@ $2(2t-3) + (t-1) - (3-t) = 0 \implies 4t - 6 + t - 1 - 3 + t = 0 \implies 6t = 1
 
 $Q = \begin{pmatrix}1+10/3\\5/3\\2-5/3\end{pmatrix} = \begin{pmatrix}13/3\\5/3\\1/3\end{pmatrix}$.
 
-$d = \left|\begin{pmatrix}1/3\\2/3\\-2/3\end{pmatrix}\right| = \sqrt⧃LB⧄\dfrac{1}{9} + \dfrac{4}{9} + \dfrac{4}{9}⧃RB⧄ = \sqrt⧃LB⧄\dfrac{9}{9}⧃RB⧄ = 1$.
+$d = \left|\begin{pmatrix}1/3\\2/3\\-2/3\end{pmatrix}\right| = \sqrt◆LB◆\dfrac{1}{9} + \dfrac{4}{9} + \dfrac{4}{9}◆RB◆ = \sqrt◆LB◆\dfrac{9}{9}◆RB◆ = 1$.
 
 <hr />
 
@@ -450,10 +450,10 @@ Many geometry problems can be solved elegantly using vectors. The general strate
 **Example.** In triangle $ABC$, let $M$ be the midpoint of $AB$. Prove that
 $\overrightarrow{CM} = \dfrac{1}{2}\overrightarrow{CA} + \dfrac{1}{2}\overrightarrow{CB}$.
 
-$\mathbf{m} = \dfrac⧃LB⧄\mathbf{a} + \mathbf{b}⧃RB⧄⧃LB⧄2⧃RB⧄$ (midpoint formula).
+$\mathbf{m} = \dfrac◆LB◆\mathbf{a} + \mathbf{b}◆RB◆◆LB◆2◆RB◆$ (midpoint formula).
 
-$\overrightarrow{CM} = \mathbf{m} - \mathbf{c} = \dfrac⧃LB⧄\mathbf{a} + \mathbf{b}⧃RB⧄⧃LB⧄2⧃RB⧄ - \mathbf{c}
-= \dfrac⧃LB⧄\mathbf{a} - \mathbf{c}⧃RB⧄⧃LB⧄2⧃RB⧄ + \dfrac⧃LB⧄\mathbf{b} - \mathbf{c}⧃RB⧄⧃LB⧄2⧃RB⧄
+$\overrightarrow{CM} = \mathbf{m} - \mathbf{c} = \dfrac◆LB◆\mathbf{a} + \mathbf{b}◆RB◆◆LB◆2◆RB◆ - \mathbf{c}
+= \dfrac◆LB◆\mathbf{a} - \mathbf{c}◆RB◆◆LB◆2◆RB◆ + \dfrac◆LB◆\mathbf{b} - \mathbf{c}◆RB◆◆LB◆2◆RB◆
 = \dfrac{1}{2}\overrightarrow{CA} + \dfrac{1}{2}\overrightarrow{CB}$.
 $\blacksquare$
 
@@ -474,7 +474,7 @@ $\mathbf{a} - \mathbf{b} = 2\mathbf{i} - 6\mathbf{j} + 4\mathbf{k} = \begin{pmat
 
 $|\mathbf{a}| = \sqrt{9+4+1} = \sqrt{14}$.
 
-$\hat{\mathbf{a}} = \dfrac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{14}⧃RB⧄\begin{pmatrix}3\\-2\\1\end{pmatrix}$.
+$\hat{\mathbf{a}} = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{14}◆RB◆\begin{pmatrix}3\\-2\\1\end{pmatrix}$.
 
 **If you get this wrong, revise:**
 [Magnitude, Unit Vectors](#2-magnitude-unit-vectors-direction-cosines) — Section 2.
@@ -491,9 +491,9 @@ Find the angle between $\mathbf{a} = \begin{pmatrix}2\\1\\-1\end{pmatrix}$ and $
 $\mathbf{a}\cdot\mathbf{b} = 2-3-2 = -3$.
 $|\mathbf{a}| = \sqrt{4+1+1} = \sqrt{6}$, $|\mathbf{b}| = \sqrt{1+9+4} = \sqrt{14}$.
 
-$\cos\theta = \dfrac⧃LB⧄-3⧃RB⧄⧃LB⧄\sqrt{6}\sqrt{14}⧃RB⧄ = \dfrac⧃LB⧄-3⧃RB⧄⧃LB⧄\sqrt{84}⧃RB⧄ = \dfrac⧃LB⧄-3⧃RB⧄⧃LB⧄2\sqrt{21}⧃RB⧄ = \dfrac⧃LB⧄-\sqrt{21}⧃RB⧄⧃LB⧄14⧃RB⧄$.
+$\cos\theta = \dfrac◆LB◆-3◆RB◆◆LB◆\sqrt{6}\sqrt{14}◆RB◆ = \dfrac◆LB◆-3◆RB◆◆LB◆\sqrt{84}◆RB◆ = \dfrac◆LB◆-3◆RB◆◆LB◆2\sqrt{21}◆RB◆ = \dfrac◆LB◆-\sqrt{21}◆RB◆◆LB◆14◆RB◆$.
 
-$\theta = \arccos\!\left(\dfrac⧃LB⧄-\sqrt{21}⧃RB⧄⧃LB⧄14⧃RB⧄\right) \approx 109.1^\circ$.
+$\theta = \arccos\!\left(\dfrac◆LB◆-\sqrt{21}◆RB◆◆LB◆14◆RB◆\right) \approx 109.1^\circ$.
 
 **If you get this wrong, revise:** [The Scalar (Dot) Product](#4-the-scalar-dot-product) —
 Section 4.
@@ -635,7 +635,7 @@ Given $\mathbf{a} = 2\mathbf{i} + \mathbf{j}$ and $\mathbf{b} = \mathbf{i} - 3\m
 
 <details>
 <summary>Solution 10</summary>
-The projection of $\mathbf{b}$ onto $\mathbf{a}$ is $\mathrm{proj}_{\mathbf{a}}\mathbf{b} = \dfrac⧃LB⧄\mathbf{a}\cdot\mathbf{b}⧃RB⧄⧃LB⧄|\mathbf{a}|^2⧃RB⧄\,\mathbf{a}$.
+The projection of $\mathbf{b}$ onto $\mathbf{a}$ is $\mathrm{proj}_{\mathbf{a}}\mathbf{b} = \dfrac◆LB◆\mathbf{a}\cdot\mathbf{b}◆RB◆◆LB◆|\mathbf{a}|^2◆RB◆\,\mathbf{a}$.
 
 $\mathbf{a}\cdot\mathbf{b} = 2-3 = -1$. $|\mathbf{a}|^2 = 4+1 = 5$.
 
@@ -658,9 +658,9 @@ The normal to the plane is $\mathbf{n} = \begin{pmatrix}2\\-1\\1\end{pmatrix}$, 
 The angle between the line and the plane equals $90^\circ$ minus the angle between $\mathbf{d}$ and
 $\mathbf{n}$.
 
-$\cos\phi = \dfrac⧃LB⧄\mathbf{d}\cdot\mathbf{n}⧃RB⧄⧃LB⧄|\mathbf{d}||\mathbf{n}|⧃RB⧄ = \dfrac⧃LB⧄6+1+2⧃RB⧄⧃LB⧄\sqrt{14}\sqrt{6}⧃RB⧄ = \dfrac⧃LB⧄9⧃RB⧄⧃LB⧄2\sqrt{21}⧃RB⧄$.
+$\cos\phi = \dfrac◆LB◆\mathbf{d}\cdot\mathbf{n}◆RB◆◆LB◆|\mathbf{d}||\mathbf{n}|◆RB◆ = \dfrac◆LB◆6+1+2◆RB◆◆LB◆\sqrt{14}\sqrt{6}◆RB◆ = \dfrac◆LB◆9◆RB◆◆LB◆2\sqrt{21}◆RB◆$.
 
-Angle between line and normal: $\phi = \arccos\!\left(\dfrac⧃LB⧄9⧃RB⧄⧃LB⧄2\sqrt{21}⧃RB⧄\right)$.
+Angle between line and normal: $\phi = \arccos\!\left(\dfrac◆LB◆9◆RB◆◆LB◆2\sqrt{21}◆RB◆\right)$.
 
 Angle between line and plane: $90° - \phi$.
 
@@ -792,7 +792,7 @@ $Q = \begin{pmatrix}1+11/10\\2\\-1+33/10\end{pmatrix} = \begin{pmatrix}21/10\\2\
 
 $\overrightarrow{PQ} = \begin{pmatrix}21/10-3\\2-(-1)\\23/10-2\end{pmatrix} = \begin{pmatrix}-9/10\\3\\3/10\end{pmatrix}$.
 
-$d = \sqrt{81/100 + 9 + 9/100} = \sqrt{81/100 + 900/100 + 9/100} = \sqrt{990/100} = \dfrac⧃LB⧄3\sqrt{110}⧃RB⧄⧃LB⧄10⧃RB⧄$.
+$d = \sqrt{81/100 + 9 + 9/100} = \sqrt{81/100 + 900/100 + 9/100} = \sqrt{990/100} = \dfrac◆LB◆3\sqrt{110}◆RB◆◆LB◆10◆RB◆$.
 
 **If you get this wrong, revise:**
 [Distance from a Point to a Line](#8-distance-from-a-point-to-a-line) — Section 8.

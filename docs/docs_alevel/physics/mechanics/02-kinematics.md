@@ -28,7 +28,7 @@ origin. Unlike distance, displacement is a vector quantity.
 **Definition.** The **velocity** $v$ of a particle is the rate of change of its displacement with
 respect to time:
 
-$$v = \frac{ds}{dt} = \lim_{\Delta t \to 0}\frac⧃LB⧄\Delta s⧃RB⧄⧃LB⧄\Delta t⧃RB⧄$$
+$$v = \frac{ds}{dt} = \lim_{\Delta t \to 0}\frac◆LB◆\Delta s◆RB◆◆LB◆\Delta t◆RB◆$$
 
 Velocity is a vector. Its magnitude is the speed.
 
@@ -210,7 +210,7 @@ A projectile is launched from the origin with speed $v_0$ at angle $\theta$ abov
 
 **Horizontal motion** (constant velocity):
 
-$$x = v_0\cos\theta \cdot t \implies t = \frac⧃LB⧄x⧃RB⧄⧃LB⧄v_0\cos\theta⧃RB⧄$$
+$$x = v_0\cos\theta \cdot t \implies t = \frac◆LB◆x◆RB◆◆LB◆v_0\cos\theta◆RB◆$$
 
 **Vertical motion** (uniform acceleration):
 
@@ -220,8 +220,8 @@ Substituting $t$ from the horizontal equation:
 
 $$
 \begin{aligned}
-y &= v_0\sin\theta \left(\frac⧃LB⧄x⧃RB⧄⧃LB⧄v_0\cos\theta⧃RB⧄\right) - \frac{1}{2}g\left(\frac⧃LB⧄x⧃RB⧄⧃LB⧄v_0\cos\theta⧃RB⧄\right)^2 \\[4pt]
-y &= x\tan\theta - \frac⧃LB⧄gx^2⧃RB⧄⧃LB⧄2v_0^2\cos^2\theta⧃RB⧄
+y &= v_0\sin\theta \left(\frac◆LB◆x◆RB◆◆LB◆v_0\cos\theta◆RB◆\right) - \frac{1}{2}g\left(\frac◆LB◆x◆RB◆◆LB◆v_0\cos\theta◆RB◆\right)^2 \\[4pt]
+y &= x\tan\theta - \frac◆LB◆gx^2◆RB◆◆LB◆2v_0^2\cos^2\theta◆RB◆
 \end{aligned}
 $$
 
@@ -231,11 +231,11 @@ combined with constant vertical acceleration.
 ### Maximum Height
 
 At maximum height, the vertical velocity is zero: $v_y = v_0\sin\theta - gt = 0$, giving
-$t_{\mathrm{peak}} = \frac⧃LB⧄v_0\sin\theta⧃RB⧄⧃LB⧄g⧃RB⧄$.
+$t_{\mathrm{peak}} = \frac◆LB◆v_0\sin\theta◆RB◆◆LB◆g◆RB◆$.
 
-$$H = v_0\sin\theta \cdot \frac⧃LB⧄v_0\sin\theta⧃RB⧄⧃LB⧄g⧃RB⧄ - \frac{1}{2}g\left(\frac⧃LB⧄v_0\sin\theta⧃RB⧄⧃LB⧄g⧃RB⧄\right)^2 = \frac⧃LB⧄v_0^2\sin^2\theta⧃RB⧄⧃LB⧄2g⧃RB⧄$$
+$$H = v_0\sin\theta \cdot \frac◆LB◆v_0\sin\theta◆RB◆◆LB◆g◆RB◆ - \frac{1}{2}g\left(\frac◆LB◆v_0\sin\theta◆RB◆◆LB◆g◆RB◆\right)^2 = \frac◆LB◆v_0^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$$
 
-$$\boxed{H = \frac⧃LB⧄v_0^2\sin^2\theta⧃RB⧄⧃LB⧄2g⧃RB⧄}$$
+$$\boxed{H = \frac◆LB◆v_0^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆}$$
 
 ### Time of Flight
 
@@ -245,15 +245,15 @@ $$0 = v_0\sin\theta \cdot t - \frac{1}{2}gt^2 \implies t(v_0\sin\theta - \frac{1
 
 The non-trivial solution gives:
 
-$$\boxed{T = \frac⧃LB⧄2v_0\sin\theta⧃RB⧄⧃LB⧄g⧃RB⧄}$$
+$$\boxed{T = \frac◆LB◆2v_0\sin\theta◆RB◆◆LB◆g◆RB◆}$$
 
 ### Maximum Range
 
 The range is $R = v_0\cos\theta \cdot T$:
 
-$$R = v_0\cos\theta \cdot \frac⧃LB⧄2v_0\sin\theta⧃RB⧄⧃LB⧄g⧃RB⧄ = \frac⧃LB⧄v_0^2 \cdot 2\sin\theta\cos\theta⧃RB⧄⧃LB⧄g⧃RB⧄ = \frac⧃LB⧄v_0^2\sin 2\theta⧃RB⧄⧃LB⧄g⧃RB⧄$$
+$$R = v_0\cos\theta \cdot \frac◆LB◆2v_0\sin\theta◆RB◆◆LB◆g◆RB◆ = \frac◆LB◆v_0^2 \cdot 2\sin\theta\cos\theta◆RB◆◆LB◆g◆RB◆ = \frac◆LB◆v_0^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$$
 
-$$\boxed{R = \frac⧃LB⧄v_0^2\sin 2\theta⧃RB⧄⧃LB⧄g⧃RB⧄}$$
+$$\boxed{R = \frac◆LB◆v_0^2\sin 2\theta◆RB◆◆LB◆g◆RB◆}$$
 
 **Maximum range** occurs when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$:
 
@@ -469,10 +469,10 @@ A stone is thrown vertically upward with speed $15.0$ m s$^{-1}$. Find: (a) the 
 A projectile is launched from ground level with speed $25.0$ m s$^{-1}$ at an angle of $35^\circ$ to the horizontal. Calculate the horizontal range and the maximum height.
 
 **Answer.**
-$R = \frac⧃LB⧄v_0^2\sin 2\theta⧃RB⧄⧃LB⧄g⧃RB⧄ = \frac⧃LB⧄625 \times \sin 70°⧃RB⧄⧃LB⧄9.81⧃RB⧄ = \frac⧃LB⧄625 \times 0.9397⧃RB⧄⧃LB⧄9.81⧃RB⧄ = 59.9$
+$R = \frac◆LB◆v_0^2\sin 2\theta◆RB◆◆LB◆g◆RB◆ = \frac◆LB◆625 \times \sin 70°◆RB◆◆LB◆9.81◆RB◆ = \frac◆LB◆625 \times 0.9397◆RB◆◆LB◆9.81◆RB◆ = 59.9$
 m.
 
-$H = \frac⧃LB⧄v_0^2\sin^2\theta⧃RB⧄⧃LB⧄2g⧃RB⧄ = \frac⧃LB⧄625 \times \sin^2 35°⧃RB⧄⧃LB⧄19.62⧃RB⧄ = \frac⧃LB⧄625 \times 0.329⧃RB⧄⧃LB⧄19.62⧃RB⧄ = 10.5$
+$H = \frac◆LB◆v_0^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆ = \frac◆LB◆625 \times \sin^2 35°◆RB◆◆LB◆19.62◆RB◆ = \frac◆LB◆625 \times 0.329◆RB◆◆LB◆19.62◆RB◆ = 10.5$
 m.
 
 <b>If you get this wrong, revise:</b> [Maximum Height](#maximum-height) and
@@ -485,7 +485,7 @@ m.
 A ball is thrown from a cliff of height $40.0$ m with horizontal velocity $12.0$ m s$^{-1}$. Find: (a) the time to hit the ground, (b) the horizontal distance from the cliff base, (c) the vertical component of velocity at impact, (d) the magnitude of the final velocity.
 
 **Answer.** (a) Vertical: $s = ut + \frac{1}{2}at^2$, $40 = 0 + \frac{1}{2}(9.81)t^2$,
-$t = \sqrt⧃LB⧄\frac{80}{9.81}⧃RB⧄ = 2.86$ s.
+$t = \sqrt◆LB◆\frac{80}{9.81}◆RB◆ = 2.86$ s.
 
 (b) $R = v_x t = 12.0 \times 2.86 = 34.3$ m.
 
@@ -521,7 +521,7 @@ above ground = $50.4$ m. Time to fall from 50.4 m: $50.4 = \frac{1}{2}(9.81)t_2^
 Total: $t_A = 2.04 + 3.21 = 5.25$ s.
 
 For Ball B: $30 = 20t + \frac{1}{2}(9.81)t^2$. Solving: $4.905t^2 + 20t - 30 = 0$,
-$t = \frac⧃LB⧄-20 + \sqrt{400 + 588.6}⧃RB⧄⧃LB⧄9.81⧃RB⧄ = \frac{-20 + 31.4}{9.81} = 1.16$ s.
+$t = \frac◆LB◆-20 + \sqrt{400 + 588.6}◆RB◆◆LB◆9.81◆RB◆ = \frac{-20 + 31.4}{9.81} = 1.16$ s.
 
 Ball B hits first. Difference: $5.25 - 1.16 = 4.09$ s.
 
@@ -554,7 +554,7 @@ A projectile is fired with speed $v_0$ at angle $\theta$ from a height $h$ above
 **Answer.** $y = h + v_0\sin\theta \cdot t - \frac{1}{2}gt^2 = 0$ at landing. This gives
 $\frac{1}{2}gt^2 - v_0\sin\theta \cdot t - h = 0$. By the quadratic formula:
 
-$$t = \frac⧃LB⧄v_0\sin\theta + \sqrt{v_0^2\sin^2\theta + 2gh}⧃RB⧄⧃LB⧄g⧃RB⧄$$
+$$t = \frac◆LB◆v_0\sin\theta + \sqrt{v_0^2\sin^2\theta + 2gh}◆RB◆◆LB◆g◆RB◆$$
 
 (We take the positive root since $t > 0$.)
 
@@ -579,8 +579,8 @@ Using $v = u + at$: $30 = 10 + 2t$, $t = 10$ s.
 <summary>Problem 9</summary>
 A golfer hits a ball from the ground with speed $40$ m s$^{-1}$. At what angle should she hit the ball to land it $120$ m away? (Give both possible angles.)
 
-**Answer.** $R = \frac⧃LB⧄v_0^2\sin 2\theta⧃RB⧄⧃LB⧄g⧃RB⧄$, so
-$\sin 2\theta = \frac{Rg}{v_0^2} = \frac⧃LB⧄120 \times 9.81⧃RB⧄⧃LB⧄1600⧃RB⧄ = 0.736$.
+**Answer.** $R = \frac◆LB◆v_0^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$, so
+$\sin 2\theta = \frac{Rg}{v_0^2} = \frac◆LB◆120 \times 9.81◆RB◆◆LB◆1600◆RB◆ = 0.736$.
 
 $2\theta = 47.4^\circ$ or $132.6^\circ$, giving $\theta = 23.7^\circ$ or $66.3^\circ$. Both angles
 give the same range — complementary angles always do (since $\sin 2\theta = \sin(180° - 2\theta)$).
@@ -594,8 +594,8 @@ give the same range — complementary angles always do (since $\sin 2\theta = \s
 On the Moon, $g = 1.62$ m s$^{-2}$. A astronaut throws a rock with speed $12$ m s$^{-1}$ at $60^\circ$ to the horizontal. Compare the maximum height and range to what they would be on Earth.
 
 **Answer.** On the Moon:
-$H = \frac⧃LB⧄144 \times \sin^2 60°⧃RB⧄⧃LB⧄2 \times 1.62⧃RB⧄ = \frac⧃LB⧄144 \times 0.75⧃RB⧄⧃LB⧄3.24⧃RB⧄ = 33.3$ m.
-$R = \frac⧃LB⧄144 \times \sin 120°⧃RB⧄⧃LB⧄1.62⧃RB⧄ = \frac⧃LB⧄144 \times 0.866⧃RB⧄⧃LB⧄1.62⧃RB⧄ = 77.0$ m.
+$H = \frac◆LB◆144 \times \sin^2 60°◆RB◆◆LB◆2 \times 1.62◆RB◆ = \frac◆LB◆144 \times 0.75◆RB◆◆LB◆3.24◆RB◆ = 33.3$ m.
+$R = \frac◆LB◆144 \times \sin 120°◆RB◆◆LB◆1.62◆RB◆ = \frac◆LB◆144 \times 0.866◆RB◆◆LB◆1.62◆RB◆ = 77.0$ m.
 
 On Earth: $H = \frac{108}{19.62} = 5.51$ m. $R = \frac{124.7}{9.81} = 12.7$ m.
 
@@ -716,7 +716,7 @@ the base where the ball lands, (c) the speed at impact.
 
 **Answer.** (a) Vertical: $y = 45 + 10t - 4.905t^2 = 0$.
 
-$4.905t^2 - 10t - 45 = 0$, $t = \frac⧃LB⧄10 + \sqrt{100 + 882.9}⧃RB⧄⧃LB⧄9.81⧃RB⧄ = 4.22$ s.
+$4.905t^2 - 10t - 45 = 0$, $t = \frac◆LB◆10 + \sqrt{100 + 882.9}◆RB◆◆LB◆9.81◆RB◆ = 4.22$ s.
 
 (b) $R = 20\cos 30° \times 4.22 = 17.3 \times 4.22 = 73.1$ m.
 

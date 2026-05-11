@@ -320,12 +320,12 @@ For a uniform lamina (constant density), the centre of mass coincides with the c
 For a body made of several parts with masses $m_1, m_2, \ldots$ at positions
 $(x_1, y_1), (x_2, y_2), \ldots$:
 
-$$\bar{x} = \frac⧃LB⧄\sum m_i x_i⧃RB⧄⧃LB⧄\sum m_i⧃RB⧄, \qquad \bar{y} = \frac⧃LB⧄\sum m_i y_i⧃RB⧄⧃LB⧄\sum m_i⧃RB⧄$$
+$$\bar{x} = \frac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆, \qquad \bar{y} = \frac◆LB◆\sum m_i y_i◆RB◆◆LB◆\sum m_i◆RB◆$$
 
 **Derivation.** Taking moments about the $y$-axis for the total system and the equivalent point
 mass:
 
-$$\sum m_i x_i = M\bar{x} \implies \bar{x} = \frac⧃LB⧄\sum m_i x_i⧃RB⧄⧃LB⧄M⧃RB⧄$$
+$$\sum m_i x_i = M\bar{x} \implies \bar{x} = \frac◆LB◆\sum m_i x_i◆RB◆◆LB◆M◆RB◆$$
 
 where $M = \sum m_i$. Similarly for $\bar{y}$. $\blacksquare$
 
@@ -347,7 +347,7 @@ The centre of mass of the triangle is at $\frac{1}{3}$ of its height from $BC$. 
 with $BA$ along the positive $x$-axis and $BC$ along the positive $y$-axis:
 
 Triangle centroid is at
-$\left(\frac{4}{3}\cos 60°, 4 - \frac⧃LB⧄2\sqrt{3}⧃RB⧄⧃LB⧄3⧃RB⧄\right) = \left(\frac{2}{3}, 4 - \frac⧃LB⧄2\sqrt{3}⧃RB⧄⧃LB⧄3⧃RB⧄\right)$.
+$\left(\frac{4}{3}\cos 60°, 4 - \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆\right) = \left(\frac{2}{3}, 4 - \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆\right)$.
 
 Wait — let us set up coordinates more carefully. Place $A$ at the origin, $AB$ along the $x$-axis,
 $AD$ along the $y$-axis.
@@ -362,20 +362,20 @@ Midpoint of $BC$ is $(6, 2)$. The triangle extends $2\sqrt{3}$ upward from $BC$,
 $(6, 4 + 2\sqrt{3})$.
 
 Triangle centroid:
-$\left(\dfrac{6+6+6}{3}, \dfrac⧃LB⧄0+4+(4+2\sqrt{3})⧃RB⧄⧃LB⧄3⧃RB⧄\right) = \left(6, \dfrac⧃LB⧄8+2\sqrt{3}⧃RB⧄⧃LB⧄3⧃RB⧄\right)$.
+$\left(\dfrac{6+6+6}{3}, \dfrac◆LB◆0+4+(4+2\sqrt{3})◆RB◆◆LB◆3◆RB◆\right) = \left(6, \dfrac◆LB◆8+2\sqrt{3}◆RB◆◆LB◆3◆RB◆\right)$.
 
 **Step 2: Apply the formula.**
 
-$$\bar{x} = \frac⧃LB⧄24 \times 3 + 4\sqrt{3} \times 6⧃RB⧄⧃LB⧄24 + 4\sqrt{3}⧃RB⧄ = \frac⧃LB⧄72 + 24\sqrt{3}⧃RB⧄⧃LB⧄24 + 4\sqrt{3}⧃RB⧄$$
+$$\bar{x} = \frac◆LB◆24 \times 3 + 4\sqrt{3} \times 6◆RB◆◆LB◆24 + 4\sqrt{3}◆RB◆ = \frac◆LB◆72 + 24\sqrt{3}◆RB◆◆LB◆24 + 4\sqrt{3}◆RB◆$$
 
-Dividing numerator and denominator by 4: $\bar{x} = \dfrac⧃LB⧄18 + 6\sqrt{3}⧃RB⧄⧃LB⧄6 + \sqrt{3}⧃RB⧄$.
+Dividing numerator and denominator by 4: $\bar{x} = \dfrac◆LB◆18 + 6\sqrt{3}◆RB◆◆LB◆6 + \sqrt{3}◆RB◆$.
 
 Rationalising:
-$\bar{x} = \dfrac⧃LB⧄(18 + 6\sqrt{3})(6 - \sqrt{3})⧃RB⧄⧃LB⧄36 - 3⧃RB⧄ = \dfrac⧃LB⧄108 - 18\sqrt{3} + 36\sqrt{3} - 18⧃RB⧄⧃LB⧄33⧃RB⧄ = \dfrac⧃LB⧄90 + 18\sqrt{3}⧃RB⧄⧃LB⧄33⧃RB⧄ \approx 3.69\,\mathrm{cm}$.
+$\bar{x} = \dfrac◆LB◆(18 + 6\sqrt{3})(6 - \sqrt{3})◆RB◆◆LB◆36 - 3◆RB◆ = \dfrac◆LB◆108 - 18\sqrt{3} + 36\sqrt{3} - 18◆RB◆◆LB◆33◆RB◆ = \dfrac◆LB◆90 + 18\sqrt{3}◆RB◆◆LB◆33◆RB◆ \approx 3.69\,\mathrm{cm}$.
 
-$$\bar{y} = \frac⧃LB⧄24 \times 2 + 4\sqrt{3} \times \frac{8+2\sqrt{3}}{3}⧃RB⧄⧃LB⧄24 + 4\sqrt{3}⧃RB⧄ = \frac⧃LB⧄48 + \frac{32\sqrt{3}+24}{3}⧃RB⧄⧃LB⧄24 + 4\sqrt{3}⧃RB⧄ = \frac⧃LB⧄\frac{168+32\sqrt{3}}{3}⧃RB⧄⧃LB⧄24+4\sqrt{3}⧃RB⧄$$
+$$\bar{y} = \frac◆LB◆24 \times 2 + 4\sqrt{3} \times \frac{8+2\sqrt{3}}{3}◆RB◆◆LB◆24 + 4\sqrt{3}◆RB◆ = \frac◆LB◆48 + \frac{32\sqrt{3}+24}{3}◆RB◆◆LB◆24 + 4\sqrt{3}◆RB◆ = \frac◆LB◆\frac{168+32\sqrt{3}}{3}◆RB◆◆LB◆24+4\sqrt{3}◆RB◆$$
 
-$\bar{y} = \dfrac⧃LB⧄168 + 32\sqrt{3}⧃RB⧄⧃LB⧄72 + 12\sqrt{3}⧃RB⧄ \approx 2.30\,\mathrm{cm}$.
+$\bar{y} = \dfrac◆LB◆168 + 32\sqrt{3}◆RB◆◆LB◆72 + 12\sqrt{3}◆RB◆ \approx 2.30\,\mathrm{cm}$.
 
 ### 4.3.2 Subtraction method
 
@@ -394,7 +394,7 @@ This is extremely useful for L-shapes, T-shapes, and shapes with circular or tri
 | Uniform rectangular lamina  | Intersection of diagonals                                |
 | Uniform triangular lamina   | $\frac{1}{3}$ of the way from each side along the median |
 | Uniform circular lamina     | Centre of the circle                                     |
-| Uniform semicircular lamina | $\dfrac⧃LB⧄4r⧃RB⧄⧃LB⧄3\pi⧃RB⧄$ from the flat side                    |
+| Uniform semicircular lamina | $\dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆$ from the flat side                    |
 
 <hr />
 
@@ -409,7 +409,7 @@ point of tilting exceeds the restoring moment.
 
 A body will **topple** before it **slides** if:
 
-$$\frac{h}{d} > \frac⧃LB⧄1⧃RB⧄⧃LB⧄\mu⧃RB⧄$$
+$$\frac{h}{d} > \frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆$$
 
 where $h$ is the height at which the force is applied and $d$ is half the base width.
 
@@ -466,7 +466,7 @@ Weight acts at midpoint: $12g\,\mathrm{N}$ at $1.5\,\mathrm{m}$ from $A$.
 
 Moments about $A$: $T\cos 30° \times 3 = 12g \times 1.5$.
 
-$T = \dfrac⧃LB⧄12(9.8)(1.5)⧃RB⧄⧃LB⧄3\cos 30°⧃RB⧄ = \dfrac{176.4}{2.598} \approx 67.9\,\mathrm{N}$.
+$T = \dfrac◆LB◆12(9.8)(1.5)◆RB◆◆LB◆3\cos 30°◆RB◆ = \dfrac{176.4}{2.598} \approx 67.9\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Definition of a Moment](#1-definition-of-a-moment) — Section 1.
 
@@ -542,7 +542,7 @@ Horizontal: $R_w = F$. Vertical: $R_g = 200$.
 
 Moments about base of ladder: $R_w \times 5\sin 65° = 200 \times 2.5\cos 65^\circ$.
 
-$R_w = \dfrac⧃LB⧄500\cos 65°⧃RB⧄⧃LB⧄5\sin 65°⧃RB⧄ = \dfrac⧃LB⧄100\cos 65°⧃RB⧄⧃LB⧄\sin 65°⧃RB⧄ = 100\cot 65° \approx 46.6\,\mathrm{N}$.
+$R_w = \dfrac◆LB◆500\cos 65°◆RB◆◆LB◆5\sin 65°◆RB◆ = \dfrac◆LB◆100\cos 65°◆RB◆◆LB◆\sin 65°◆RB◆ = 100\cot 65° \approx 46.6\,\mathrm{N}$.
 
 $F = R_w = 46.6\,\mathrm{N}$. $\mu_{\min} = F/R_g = 46.6/200 = 0.233$.
 
@@ -576,7 +576,7 @@ A uniform rod $AB$ of length $6\,\mathrm{m}$ and weight $100\,\mathrm{N}$ is hin
 <summary>Solution 8</summary>
 Moments about $A$: $T \times 6\sin 60° = 100 \times 3$ (weight acts at midpoint).
 
-$T = \dfrac⧃LB⧄300⧃RB⧄⧃LB⧄6 \times 0.866⧃RB⧄ = \dfrac{300}{5.196} \approx 57.74\,\mathrm{N}$.
+$T = \dfrac◆LB◆300◆RB◆◆LB◆6 \times 0.866◆RB◆ = \dfrac{300}{5.196} \approx 57.74\,\mathrm{N}$.
 
 Resolving horizontally: $R_x = T\sin 60° = 57.74 \times 0.866 = 50\,\mathrm{N}$.
 
@@ -605,9 +605,9 @@ $= 9$, centre at $(6.5, 4.5)$.
 
 Using the subtraction method:
 
-$\bar{x} = \dfrac⧃LB⧄48 \times 4 - 9 \times 6.5⧃RB⧄⧃LB⧄48 - 9⧃RB⧄ = \dfrac{192 - 58.5}{39} = \dfrac{133.5}{39} = 3.42\,\mathrm{cm}$.
+$\bar{x} = \dfrac◆LB◆48 \times 4 - 9 \times 6.5◆RB◆◆LB◆48 - 9◆RB◆ = \dfrac{192 - 58.5}{39} = \dfrac{133.5}{39} = 3.42\,\mathrm{cm}$.
 
-$\bar{y} = \dfrac⧃LB⧄48 \times 3 - 9 \times 4.5⧃RB⧄⧃LB⧄39⧃RB⧄ = \dfrac{144 - 40.5}{39} = \dfrac{103.5}{39} = 2.65\,\mathrm{cm}$.
+$\bar{y} = \dfrac◆LB◆48 \times 3 - 9 \times 4.5◆RB◆◆LB◆39◆RB◆ = \dfrac{144 - 40.5}{39} = \dfrac{103.5}{39} = 2.65\,\mathrm{cm}$.
 
 Centre of mass at approximately $(3.42, 2.65)$.
 
@@ -633,9 +633,9 @@ Moments about the base of the ladder (perpendicular distances):
 
 $R_w \times 6\sin 55° = 150 \times 3\cos 55° + 800 \times 4\cos 55^\circ$.
 
-$R_w = \dfrac⧃LB⧄(450 + 3200)\cos 55°⧃RB⧄⧃LB⧄6\sin 55°⧃RB⧄ = \dfrac⧃LB⧄3650\cos 55°⧃RB⧄⧃LB⧄6\sin 55°⧃RB⧄ = \dfrac{3650}{6}\cot 55^\circ$.
+$R_w = \dfrac◆LB◆(450 + 3200)\cos 55°◆RB◆◆LB◆6\sin 55°◆RB◆ = \dfrac◆LB◆3650\cos 55°◆RB◆◆LB◆6\sin 55°◆RB◆ = \dfrac{3650}{6}\cot 55^\circ$.
 
-$\cot 55° \approx 0.7002$, so $R_w = \dfrac⧃LB⧄3650 \times 0.7002⧃RB⧄⧃LB⧄6⧃RB⧄ \approx 426.0\,\mathrm{N}$.
+$\cot 55° \approx 0.7002$, so $R_w = \dfrac◆LB◆3650 \times 0.7002◆RB◆◆LB◆6◆RB◆ \approx 426.0\,\mathrm{N}$.
 
 $\mu_{\min} = F/R_g = R_w/R_g = 426.0/950 = 0.448$.
 
@@ -776,7 +776,7 @@ $T$ in $BC$ is needed.
 
 The thrust acts along $CB$. The perpendicular distance from $A(0,0)$ to the line through $B(4,0)$
 with direction $(-4,-3)$ is
-$\dfrac⧃LB⧄|(-4)(0-0) - (-3)(0-4)|⧃RB⧄⧃LB⧄\sqrt{(-4)^2+(-3)^2}⧃RB⧄ = \dfrac{12}{5} = 2.4\,\mathrm{m}$.
+$\dfrac◆LB◆|(-4)(0-0) - (-3)(0-4)|◆RB◆◆LB◆\sqrt{(-4)^2+(-3)^2}◆RB◆ = \dfrac{12}{5} = 2.4\,\mathrm{m}$.
 
 Clockwise moment of thrust: $T \times 2.4$ (thrust pushes from $B$ toward $C$, creating a clockwise
 moment about $A$).
@@ -808,7 +808,7 @@ A uniform solid is formed from a hemisphere of radius $6\,\mathrm{cm}$ attached 
 <summary>Solution 16</summary>
 **Hemisphere:** The centre of mass of a uniform solid hemisphere is at $\dfrac{3r}{8}$ from the flat face.
 
-$\bar{x}_H = \dfrac⧃LB⧄3 \times 6⧃RB⧄⧃LB⧄8⧃RB⧄ = \dfrac{18}{8} = 2.25\,\mathrm{cm}$ from the flat face.
+$\bar{x}_H = \dfrac◆LB◆3 \times 6◆RB◆◆LB◆8◆RB◆ = \dfrac{18}{8} = 2.25\,\mathrm{cm}$ from the flat face.
 
 Volume of hemisphere: $V_H = \dfrac{2}{3}\pi r^3 = \dfrac{2}{3}\pi(216) = 144\pi\,\mathrm{cm}^3$.
 
@@ -819,9 +819,9 @@ Volume of cylinder: $V_C = \pi r^2 h = \pi(36)(10) = 360\pi\,\mathrm{cm}^3$.
 
 **Composite body:** Taking moments about the flat face:
 
-$\bar{x} = \dfrac⧃LB⧄V_H \times 2.25 + V_C \times 5⧃RB⧄⧃LB⧄V_H + V_C⧃RB⧄ = \dfrac⧃LB⧄144\pi \times 2.25 + 360\pi \times 5⧃RB⧄⧃LB⧄144\pi + 360\pi⧃RB⧄$
+$\bar{x} = \dfrac◆LB◆V_H \times 2.25 + V_C \times 5◆RB◆◆LB◆V_H + V_C◆RB◆ = \dfrac◆LB◆144\pi \times 2.25 + 360\pi \times 5◆RB◆◆LB◆144\pi + 360\pi◆RB◆$
 
-$= \dfrac⧃LB⧄324\pi + 1800\pi⧃RB⧄⧃LB⧄504\pi⧃RB⧄ = \dfrac{2124}{504} = \dfrac{59}{14} \approx 4.21\,\mathrm{cm}$.
+$= \dfrac◆LB◆324\pi + 1800\pi◆RB◆◆LB◆504\pi◆RB◆ = \dfrac{2124}{504} = \dfrac{59}{14} \approx 4.21\,\mathrm{cm}$.
 
 Centre of mass is approximately $4.21\,\mathrm{cm}$ from the flat face.
 

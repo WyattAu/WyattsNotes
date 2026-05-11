@@ -190,7 +190,7 @@ $1\,\mathrm{kW} = 1000\,\mathrm{W}$, $1\,\mathrm{MW} = 10^6\,\mathrm{W}$.
 At maximum speed (terminal velocity) up a slope, the driving force equals the component of weight
 plus friction:
 
-$$\frac⧃LB⧄P⧃RB⧄⧃LB⧄v_{\max}⧃RB⧄ = mg\sin\theta + F_{\mathrm{friction}}$$
+$$\frac◆LB◆P◆RB◆◆LB◆v_{\max}◆RB◆ = mg\sin\theta + F_{\mathrm{friction}}$$
 
 ### 5.4 Power in variable-force situations
 
@@ -205,7 +205,7 @@ $$m\frac{dv}{dt} = \frac{P}{v} \implies mv\frac{dv}{dt} = P$$
 
 Integrating from rest ($v = 0$) to speed $v$ over time $t$:
 
-$$\int_0^v mv'\,dv' = \int_0^t P\,dt' \implies \frac{1}{2}mv^2 = Pt \implies v = \sqrt⧃LB⧄\frac{2Pt}{m}⧃RB⧄$$
+$$\int_0^v mv'\,dv' = \int_0^t P\,dt' \implies \frac{1}{2}mv^2 = Pt \implies v = \sqrt◆LB◆\frac{2Pt}{m}◆RB◆$$
 
 Speed increases as $\sqrt{t}$ under constant power, slower than the linear increase under constant
 force. This explains why cars feel less responsive at high speeds: the available force at speed $v$
@@ -213,23 +213,23 @@ is only $P/v$.
 
 To find the distance covered:
 
-$$s = \int_0^t \sqrt⧃LB⧄\frac{2Pt'}{m}⧃RB⧄\,dt' = \sqrt⧃LB⧄\frac{2P}{m}⧃RB⧄ \cdot \frac{2}{3}t^{3/2} = \frac{2}{3}\sqrt⧃LB⧄\frac{2P}{m}⧃RB⧄\,t^{3/2}$$
+$$s = \int_0^t \sqrt◆LB◆\frac{2Pt'}{m}◆RB◆\,dt' = \sqrt◆LB◆\frac{2P}{m}◆RB◆ \cdot \frac{2}{3}t^{3/2} = \frac{2}{3}\sqrt◆LB◆\frac{2P}{m}◆RB◆\,t^{3/2}$$
 
 ### 5.5 Energy-time graphs and average power
 
 The gradient of a kinetic energy-time graph gives the instantaneous power:
 
-$$\frac⧃LB⧄d(\mathrm{KE})⧃RB⧄⧃LB⧄dt⧃RB⧄ = \frac{d}{dt}\left(\frac{1}{2}mv^2\right) = mv\frac{dv}{dt} = Fv = P$$
+$$\frac◆LB◆d(\mathrm{KE})◆RB◆◆LB◆dt◆RB◆ = \frac{d}{dt}\left(\frac{1}{2}mv^2\right) = mv\frac{dv}{dt} = Fv = P$$
 
 The area under a power-time graph equals the total work done (or total energy transferred).
 
 **Average power** over a time interval $\Delta t$:
 
-$$P_{\mathrm{avg}} = \frac⧃LB⧄\Delta W⧃RB⧄⧃LB⧄\Delta t⧃RB⧄ = \frac⧃LB⧄\Delta\mathrm{KE} + \Delta\mathrm{GPE}⧃RB⧄⧃LB⧄\Delta t⧃RB⧄$$
+$$P_{\mathrm{avg}} = \frac◆LB◆\Delta W◆RB◆◆LB◆\Delta t◆RB◆ = \frac◆LB◆\Delta\mathrm{KE} + \Delta\mathrm{GPE}◆RB◆◆LB◆\Delta t◆RB◆$$
 
 For a body accelerating from rest to speed $v$ in time $t$ under constant force:
 
-$$P_{\mathrm{avg}} = \frac⧃LB⧄\frac{1}{2}mv^2⧃RB⧄⧃LB⧄t⧃RB⧄ = \frac{1}{2}Fv$$
+$$P_{\mathrm{avg}} = \frac◆LB◆\frac{1}{2}mv^2◆RB◆◆LB◆t◆RB◆ = \frac{1}{2}Fv$$
 
 This is half the instantaneous power $Fv$ at the end, since velocity increases linearly from $0$ to
 $v$ while force remains constant. For constant power $P$, the average power equals $P$ throughout.
@@ -291,7 +291,7 @@ $$mgd = \frac{1}{2}k(d - 25)^2$$
 
 $$735d = 100(d - 25)^2 \implies 100d^2 - 5735d + 62500 = 0$$
 
-$$d = \frac⧃LB⧄5735 \pm \sqrt{5735^2 - 4(100)(62500)}⧃RB⧄⧃LB⧄200⧃RB⧄ = \frac⧃LB⧄5735 \pm 2809⧃RB⧄⧃LB⧄200⧃RB⧄$$
+$$d = \frac◆LB◆5735 \pm \sqrt{5735^2 - 4(100)(62500)}◆RB◆◆LB◆200◆RB◆ = \frac◆LB◆5735 \pm 2809◆RB◆◆LB◆200◆RB◆$$
 
 $d = 42.72\,\mathrm{m}$ (the root $14.63\,\mathrm{m}$ is rejected since the cord is not yet taut).
 
@@ -463,7 +463,7 @@ At maximum speed: $P = Rv \implies 2000000 = (5000+20v)v = 5000v + 20v^2$.
 
 $20v^2 + 5000v - 2000000 = 0 \implies v^2 + 250v - 100000 = 0$.
 
-$v = \dfrac⧃LB⧄-250 + \sqrt{62500 + 400000}⧃RB⧄⧃LB⧄2⧃RB⧄ = \dfrac⧃LB⧄-250 + \sqrt{462500}⧃RB⧄⧃LB⧄2⧃RB⧄ = \dfrac{-250 + 680.1}{2} = 215.1\,\mathrm{m/s}$.
+$v = \dfrac◆LB◆-250 + \sqrt{62500 + 400000}◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆-250 + \sqrt{462500}◆RB◆◆LB◆2◆RB◆ = \dfrac{-250 + 680.1}{2} = 215.1\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Power](#5-power) — Section 5.
 
@@ -500,11 +500,11 @@ with no resistance. Find the speed after $5\,\mathrm{s}$ and the distance covere
 <summary>Solution 12</summary>
 Using $v = \sqrt{2Pt/m}$:
 
-$v = \sqrt⧃LB⧄\frac{2(5000)(5)}{500}⧃RB⧄ = \sqrt{100} = 10\,\mathrm{m/s}$.
+$v = \sqrt◆LB◆\frac{2(5000)(5)}{500}◆RB◆ = \sqrt{100} = 10\,\mathrm{m/s}$.
 
-Using $s = \frac{2}{3}\sqrt⧃LB⧄\frac{2P}{m}⧃RB⧄\,t^{3/2}$:
+Using $s = \frac{2}{3}\sqrt◆LB◆\frac{2P}{m}◆RB◆\,t^{3/2}$:
 
-$s = \frac{2}{3}\sqrt⧃LB⧄\frac{2(5000)}{500}⧃RB⧄ \times 5^{3/2} = \frac{2}{3}\sqrt{20} \times 5\sqrt{5} = \frac{2}{3}(2\sqrt{5})(5\sqrt{5}) = \frac{2}{3}(50) = \frac{100}{3} \approx 33.3\,\mathrm{m}$.
+$s = \frac{2}{3}\sqrt◆LB◆\frac{2(5000)}{500}◆RB◆ \times 5^{3/2} = \frac{2}{3}\sqrt{20} \times 5\sqrt{5} = \frac{2}{3}(2\sqrt{5})(5\sqrt{5}) = \frac{2}{3}(50) = \frac{100}{3} \approx 33.3\,\mathrm{m}$.
 
 **If you get this wrong, revise:**
 [Power in variable-force situations](#54-power-in-variable-force-situations) — Section 5.4.
@@ -597,7 +597,7 @@ is $8\,\mathrm{m/s}$. Take $g = 9.8\,\mathrm{m/s}^2$.
 <summary>Solution 16</summary>
 **Maximum speed** ($a = 0$, driving force equals total resistance):
 
-$\frac⧃LB⧄P⧃RB⧄⧃LB⧄v_{\max}⧃RB⧄ = mg\sin\theta + R = 1500(9.8)(0.08) + 500 = 1176 + 500 = 1676\,\mathrm{N}$.
+$\frac◆LB◆P◆RB◆◆LB◆v_{\max}◆RB◆ = mg\sin\theta + R = 1500(9.8)(0.08) + 500 = 1176 + 500 = 1676\,\mathrm{N}$.
 
 $v_{\max} = \frac{30000}{1676} \approx 17.9\,\mathrm{m/s}$.
 

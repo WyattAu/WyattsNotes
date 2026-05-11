@@ -57,7 +57,7 @@ $$\text{Median} = \frac{50 + 51}{2} = 50.5 \text{ cm}$$
 
 **(c)** The standard deviation is more affected by the outlier. This is because the standard deviation involves squaring the deviations from the mean:
 
-$$s = \sqrt⧃LB⧄\frac{\sum(x_i - \bar{x})^2}{n-1}⧃RB⧄$$
+$$s = \sqrt◆LB◆\frac{\sum(x_i - \bar{x})^2}{n-1}◆RB◆$$
 
 The outlier 180 is very far from the mean (about 111 cm away), so $(180 - 68.83)^2 \approx 12370$ contributes enormously to the sum of squared deviations. The interquartile range (IQR), by contrast, only uses $Q_1$ and $Q_3$, which depend on the middle 50% of the data. The outlier at 180 does not affect $Q_1$ or $Q_3$ at all, so the IQR is completely unchanged.
 
@@ -104,7 +104,7 @@ The frequency distribution below shows the daily commuting times (in minutes) fo
 
 The correct quantity for the vertical axis is the **frequency density**, defined as:
 
-$$\text{Frequency density} = \frac⧃LB⧄\text{Frequency}⧃RB⧄⧃LB⧄\text{Class width}⧃RB⧄$$
+$$\text{Frequency density} = \frac◆LB◆\text{Frequency}◆RB◆◆LB◆\text{Class width}◆RB◆$$
 
 **(b)** Frequency densities:
 
@@ -172,21 +172,21 @@ The data is coded using the formula $y = \frac{x - 10}{5}$.
 
 **(a)** For the raw data:
 
-$$\bar{x} = \frac⧃LB⧄\sum x⧃RB⧄⧃LB⧄n⧃RB⧄ = \frac{285}{15} = 19$$
+$$\bar{x} = \frac◆LB◆\sum x◆RB◆◆LB◆n◆RB◆ = \frac{285}{15} = 19$$
 
-$$S_{xx} = \sum x^2 - \frac⧃LB⧄(\sum x)^2⧃RB⧄⧃LB⧄n⧃RB⧄ = 5785 - \frac{285^2}{15} = 5785 - \frac{81225}{15} = 5785 - 5415 = 370$$
+$$S_{xx} = \sum x^2 - \frac◆LB◆(\sum x)^2◆RB◆◆LB◆n◆RB◆ = 5785 - \frac{285^2}{15} = 5785 - \frac{81225}{15} = 5785 - 5415 = 370$$
 
 $$\text{Variance of } x = \frac{S_{xx}}{n-1} = \frac{370}{14} = \frac{185}{7}$$
 
-$$\text{SD of } x = \sqrt⧃LB⧄\frac{185}{7}⧃RB⧄$$
+$$\text{SD of } x = \sqrt◆LB◆\frac{185}{7}◆RB◆$$
 
 For the coded data $y = \frac{x - 10}{5} = \frac{1}{5}x - 2$:
 
 $$\bar{y} = \frac{1}{5}\bar{x} - 2 = \frac{19}{5} - 2 = 3.8 - 2 = 1.8$$
 
-For the standard deviation: if $y = \frac{x - a}{b}$, then $\text{SD}(y) = \frac⧃LB⧄\text{SD}(x)⧃RB⧄⧃LB⧄|b|⧃RB⧄$.
+For the standard deviation: if $y = \frac{x - a}{b}$, then $\text{SD}(y) = \frac◆LB◆\text{SD}(x)◆RB◆◆LB◆|b|◆RB◆$.
 
-$$\text{SD}(y) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄|5|⧃RB⧄ \times \sqrt⧃LB⧄\frac{185}{7}⧃RB⧄ = \frac{1}{5}\sqrt⧃LB⧄\frac{185}{7}⧃RB⧄ = \sqrt⧃LB⧄\frac{185}{175}⧃RB⧄ = \sqrt⧃LB⧄\frac{37}{35}⧃RB⧄$$
+$$\text{SD}(y) = \frac◆LB◆1◆RB◆◆LB◆|5|◆RB◆ \times \sqrt◆LB◆\frac{185}{7}◆RB◆ = \frac{1}{5}\sqrt◆LB◆\frac{185}{7}◆RB◆ = \sqrt◆LB◆\frac{185}{175}◆RB◆ = \sqrt◆LB◆\frac{37}{35}◆RB◆$$
 
 Alternatively:
 
@@ -288,7 +288,7 @@ $$\bar{x} = \frac{12732.5}{500} = 25.465 \text{ mm}$$
 
 The test statistic under $H_0$:
 
-$$z = \frac⧃LB⧄\bar{x} - \mu⧃RB⧄⧃LB⧄\sigma / \sqrt{n}⧃RB⧄ = \frac⧃LB⧄25.465 - 25.5⧃RB⧄⧃LB⧄0.60 / \sqrt{500}⧃RB⧄ = \frac{-0.035}{0.02683} = -1.305$$
+$$z = \frac◆LB◆\bar{x} - \mu◆RB◆◆LB◆\sigma / \sqrt{n}◆RB◆ = \frac◆LB◆25.465 - 25.5◆RB◆◆LB◆0.60 / \sqrt{500}◆RB◆ = \frac{-0.035}{0.02683} = -1.305$$
 
 For a two-tailed test at the 5% level, the critical values are $z = \pm 1.96$.
 
@@ -388,7 +388,7 @@ $$f(x) = \begin{cases} \frac{3}{64}x^2 & \quad 0 \leq x \leq 4 \\ 0 & \quad \tex
 
 **(c)** Find the interquartile range of $X$.
 
-**(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes $0 \leq x \lt 1$, $1 \leq x \lt 2$, $2 \leq x \lt 3$, $3 \leq x \lt 4$. Estimate the mean and standard deviation from this grouped data, and compare your answers with the true values $\mathrm{E}(X) = 3$ and $\mathrm{SD}(X) = \frac⧃LB⧄3⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄$. Comment on the accuracy of the grouped estimates.
+**(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes $0 \leq x \lt 1$, $1 \leq x \lt 2$, $2 \leq x \lt 3$, $3 \leq x \lt 4$. Estimate the mean and standard deviation from this grouped data, and compare your answers with the true values $\mathrm{E}(X) = 3$ and $\mathrm{SD}(X) = \frac◆LB◆3◆RB◆◆LB◆\sqrt{5}◆RB◆$. Comment on the accuracy of the grouped estimates.
 
 [Difficulty: hard. Combines integration of a PDF, quartile calculation, and comparison of grouped vs exact statistics.]
 
@@ -424,7 +424,7 @@ $$\mathrm{E}(X) = \int_{0}^{4} x \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0
 
 $$\mathrm{E}(X^2) = \int_{0}^{4} x^2 \cdot \frac{3}{64}x^2\,dx = \frac{3}{64}\int_{0}^{4} x^4\,dx = \frac{3}{64}\left[\frac{x^5}{5}\right]_0^4 = \frac{3}{64} \cdot \frac{1024}{5} = \frac{3072}{320} = \frac{48}{5} = 9.6$$
 
-$$\mathrm{Var}(X) = 9.6 - 9 = 0.6, \quad \mathrm{SD}(X) = \sqrt{0.6} = \frac⧃LB⧄3⧃RB⧄⧃LB⧄\sqrt{5}⧃RB⧄ \approx 0.7746$$
+$$\mathrm{Var}(X) = 9.6 - 9 = 0.6, \quad \mathrm{SD}(X) = \sqrt{0.6} = \frac◆LB◆3◆RB◆◆LB◆\sqrt{5}◆RB◆ \approx 0.7746$$
 
 Now the grouped estimates. We need the class frequencies. Since we are modelling from the PDF, the expected frequency in each class (out of a large sample) is proportional to the class probability:
 

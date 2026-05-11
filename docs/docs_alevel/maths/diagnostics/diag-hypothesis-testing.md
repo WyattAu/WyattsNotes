@@ -185,7 +185,7 @@ Still, there is no value where both are $\leq 5\%$. Even with 4 samples, the dis
 
 To minimise the sum of error rates, we set the threshold where the two PDFs cross:
 
-$$\frac⧃LB⧄1⧃RB⧄⧃LB⧄4\sqrt{2\pi}⧃RB⧄\exp\left(-\frac{(c-50)^2}{32}\right) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄4\sqrt{2\pi}⧃RB⧄\exp\left(-\frac{(c-62)^2}{32}\right)$$
+$$\frac◆LB◆1◆RB◆◆LB◆4\sqrt{2\pi}◆RB◆\exp\left(-\frac{(c-50)^2}{32}\right) = \frac◆LB◆1◆RB◆◆LB◆4\sqrt{2\pi}◆RB◆\exp\left(-\frac{(c-62)^2}{32}\right)$$
 
 $$(c - 50)^2 = (c - 62)^2$$
 
@@ -223,7 +223,7 @@ The researcher tests the drug on 25 patients and finds the mean reduction in blo
 
 **(a)** Under $H_0$: $\bar{X} \sim N\left(0, \frac{15^2}{25}\right) = N(0, 9)$, so $\sigma_{\bar{X}} = 3$.
 
-$$z = \frac⧃LB⧄\bar{x} - 0⧃RB⧄⧃LB⧄3⧃RB⧄ = \frac{-5.2}{3} = -1.733$$
+$$z = \frac◆LB◆\bar{x} - 0◆RB◆◆LB◆3◆RB◆ = \frac{-5.2}{3} = -1.733$$
 
 This is a one-tailed test (left-tailed), so the p-value is:
 
@@ -253,13 +253,13 @@ To determine $\mathrm{P}(H_0 \mid \text{data})$ would require Bayesian methods (
 
 **(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$, so $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
 
-$$z = \frac⧃LB⧄-5.2⧃RB⧄⧃LB⧄\sqrt{4.5}⧃RB⧄ = \frac{-5.2}{2.121} = -2.451$$
+$$z = \frac◆LB◆-5.2◆RB◆◆LB◆\sqrt{4.5}◆RB◆ = \frac{-5.2}{2.121} = -2.451$$
 
 $$\text{p-value} = \mathrm{P}(Z \leq -2.451) = 1 - \Phi(2.451) = 1 - 0.9929 = 0.0071$$
 
 The new p-value is approximately 0.0071, which is much smaller than the original 0.0414.
 
-The p-value decreases because with a larger sample, the standard error $\frac⧃LB⧄\sigma⧃RB⧄⧃LB⧄\sqrt{n}⧃RB⧄$ is smaller. The same mean reduction of 5.2 mmHg represents a larger number of standard errors away from the null hypothesis value of 0. This makes the evidence against $H_0$ stronger, even though the observed effect size is the same.
+The p-value decreases because with a larger sample, the standard error $\frac◆LB◆\sigma◆RB◆◆LB◆\sqrt{n}◆RB◆$ is smaller. The same mean reduction of 5.2 mmHg represents a larger number of standard errors away from the null hypothesis value of 0. This makes the evidence against $H_0$ stronger, even though the observed effect size is the same.
 
 This illustrates a fundamental principle: **statistical significance depends on both the effect size and the sample size**. With a large enough sample, even a very small effect can produce a statistically significant result.
 
@@ -308,7 +308,7 @@ These are the standard assumptions of the Poisson process.
 The normal approximation is appropriate because:
 - The sum of independent Poisson variables is Poisson: $T \sim \text{Po}(160)$.
 - Since $\lambda = 160$ is large ($\lambda > 10$), the normal approximation $T \approx N(160, 160)$ is very accurate.
-- The sample mean $\bar{X} = \frac{T}{n}$ is then approximately $N\left(\lambda, \frac⧃LB⧄\lambda⧃RB⧄⧃LB⧄n⧃RB⧄\right) = N\left(8, \frac{160}{400}\right) = N(8, 0.4)$.
+- The sample mean $\bar{X} = \frac{T}{n}$ is then approximately $N\left(\lambda, \frac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right) = N\left(8, \frac{160}{400}\right) = N(8, 0.4)$.
 
 **(c)** From the data:
 
@@ -334,13 +334,13 @@ Under $H_0$: $T \sim \text{Po}(160)$, approximated by $N(160, 160)$, $\sigma = \
 
 With continuity correction (since $T$ is discrete and we want $\mathrm{P}(T \leq 134)$):
 
-$$z = \frac⧃LB⧄134.5 - 160⧃RB⧄⧃LB⧄\sqrt{160}⧃RB⧄ = \frac{-25.5}{12.649} = -2.016$$
+$$z = \frac◆LB◆134.5 - 160◆RB◆◆LB◆\sqrt{160}◆RB◆ = \frac{-25.5}{12.649} = -2.016$$
 
 p-value $= \mathrm{P}(Z \lt -2.016) = 1 - \Phi(2.016) = 1 - 0.9781 = 0.0219$
 
 Since $0.0219 \lt 0.05$, we reject $H_0$ --- the same conclusion as part (c).
 
-The slight difference in p-values (0.0199 vs 0.0219) is due to the continuity correction in part (d). Without the continuity correction, part (d) gives $z = \frac⧃LB⧄134 - 160⧃RB⧄⧃LB⧄\sqrt{160}⧃RB⧄ = -2.056$, exactly matching part (c). This confirms the equivalence: testing the sample mean is mathematically identical to testing the total count, since $\bar{X} = \frac{T}{n}$ and dividing by a constant $n$ does not change the significance of the result.
+The slight difference in p-values (0.0199 vs 0.0219) is due to the continuity correction in part (d). Without the continuity correction, part (d) gives $z = \frac◆LB◆134 - 160◆RB◆◆LB◆\sqrt{160}◆RB◆ = -2.056$, exactly matching part (c). This confirms the equivalence: testing the sample mean is mathematically identical to testing the total count, since $\bar{X} = \frac{T}{n}$ and dividing by a constant $n$ does not change the significance of the result.
 
 ---
 
@@ -388,7 +388,7 @@ We fail to reject $H_0$ when $\bar{X} > 489.03$:
 
 $$\mathrm{P}(\text{Type II error}) = \mathrm{P}(\bar{X} > 489.03 \mid \mu = 480) = \mathrm{P}\left(Z > \frac{489.03 - 480}{20/3}\right)$$
 
-$$= \mathrm{P}\left(Z > \frac⧃LB⧄9.03 \times 3⧃RB⧄⧃LB⧄20⧃RB⧄\right) = \mathrm{P}(Z > 1.355)$$
+$$= \mathrm{P}\left(Z > \frac◆LB◆9.03 \times 3◆RB◆◆LB◆20◆RB◆\right) = \mathrm{P}(Z > 1.355)$$
 
 $$= 1 - \Phi(1.355) = 1 - 0.9123 = 0.0877$$
 
@@ -406,21 +406,21 @@ Let $n$ be the sample size. Under $H_0$: $\bar{X} \sim N(500, \frac{1600}{n})$.
 
 Critical value: $\mathrm{P}(\bar{X} \leq c) = 0.05$ under $H_0$:
 
-$$c = 500 - 1.6449 \times \frac⧃LB⧄40⧃RB⧄⧃LB⧄\sqrt{n}⧃RB⧄$$
+$$c = 500 - 1.6449 \times \frac◆LB◆40◆RB◆◆LB◆\sqrt{n}◆RB◆$$
 
 Under $H_1$ ($\mu = 480$): $\bar{X} \sim N(480, \frac{1600}{n})$.
 
-$$\mathrm{P}(\text{Type II error}) = \mathrm{P}\left(\bar{X} > 500 - 1.6449 \times \frac⧃LB⧄40⧃RB⧄⧃LB⧄\sqrt{n}⧃RB⧄ \;\middle|\; \mu = 480\right) \leq 0.10$$
+$$\mathrm{P}(\text{Type II error}) = \mathrm{P}\left(\bar{X} > 500 - 1.6449 \times \frac◆LB◆40◆RB◆◆LB◆\sqrt{n}◆RB◆ \;\middle|\; \mu = 480\right) \leq 0.10$$
 
-$$\mathrm{P}\left(Z > \frac⧃LB⧄500 - 1.6449 \times 40/\sqrt{n} - 480⧃RB⧄⧃LB⧄40/\sqrt{n}⧃RB⧄\right) \leq 0.10$$
+$$\mathrm{P}\left(Z > \frac◆LB◆500 - 1.6449 \times 40/\sqrt{n} - 480◆RB◆◆LB◆40/\sqrt{n}◆RB◆\right) \leq 0.10$$
 
-$$\mathrm{P}\left(Z > \frac⧃LB⧄20\sqrt{n} - 1.6449 \times 40⧃RB⧄⧃LB⧄40⧃RB⧄\right) \leq 0.10$$
+$$\mathrm{P}\left(Z > \frac◆LB◆20\sqrt{n} - 1.6449 \times 40◆RB◆◆LB◆40◆RB◆\right) \leq 0.10$$
 
-$$\mathrm{P}\left(Z > \frac⧃LB⧄20\sqrt{n} - 65.796⧃RB⧄⧃LB⧄40⧃RB⧄\right) \leq 0.10$$
+$$\mathrm{P}\left(Z > \frac◆LB◆20\sqrt{n} - 65.796◆RB◆◆LB◆40◆RB◆\right) \leq 0.10$$
 
 For this probability to be at most 0.10, we need:
 
-$$\frac⧃LB⧄20\sqrt{n} - 65.796⧃RB⧄⧃LB⧄40⧃RB⧄ \geq 1.2816$$
+$$\frac◆LB◆20\sqrt{n} - 65.796◆RB◆◆LB◆40◆RB◆ \geq 1.2816$$
 
 $$20\sqrt{n} - 65.796 \geq 51.264$$
 
@@ -432,7 +432,7 @@ $$n \geq 34.26$$
 
 Since $n$ must be an integer, the minimum sample size is $n = 35$.
 
-**Verification:** With $n = 35$: $\sigma_{\bar{X}} = \frac⧃LB⧄40⧃RB⧄⧃LB⧄\sqrt{35}⧃RB⧄ = 6.761$.
+**Verification:** With $n = 35$: $\sigma_{\bar{X}} = \frac◆LB◆40◆RB◆◆LB◆\sqrt{35}◆RB◆ = 6.761$.
 
 Critical value $= 500 - 1.6449 \times 6.761 = 500 - 11.12 = 488.88$.
 
@@ -440,7 +440,7 @@ $$\mathrm{P}(\text{Type II error} \mid \mu = 480) = \mathrm{P}\left(Z > \frac{48
 
 Power $= 1 - 0.0944 = 0.9056 = 90.6\% \geq 90\%$.
 
-With $n = 34$: $\sigma_{\bar{X}} = \frac⧃LB⧄40⧃RB⧄⧃LB⧄\sqrt{34}⧃RB⧄ = 6.860$.
+With $n = 34$: $\sigma_{\bar{X}} = \frac◆LB◆40◆RB◆◆LB◆\sqrt{34}◆RB◆ = 6.860$.
 
 Critical value $= 500 - 1.6449 \times 6.860 = 488.71$.
 
@@ -522,11 +522,11 @@ Study 1 ($n = 15$, $r = -0.52$): Stronger correlation but smaller sample. The p-
 
 Study 2 ($n = 40$, $r = -0.31$): Weaker correlation but larger sample. Despite the weaker correlation, the larger sample provides more evidence against $H_0$, and the p-value may be comparable or even smaller.
 
-The relationship between $r$, $n$, and the p-value is governed by the test statistic $t = r\sqrt⧃LB⧄\frac{n-2}{1-r^2}⧃RB⧄$, which follows a $t$-distribution with $n-2$ degrees of freedom under $H_0$.
+The relationship between $r$, $n$, and the p-value is governed by the test statistic $t = r\sqrt◆LB◆\frac{n-2}{1-r^2}◆RB◆$, which follows a $t$-distribution with $n-2$ degrees of freedom under $H_0$.
 
-For Study 1: $t = -0.52\sqrt⧃LB⧄\frac{13}{1-0.2704}⧃RB⧄ = -0.52\sqrt{17.81} = -0.52 \times 4.22 = -2.19$
+For Study 1: $t = -0.52\sqrt◆LB◆\frac{13}{1-0.2704}◆RB◆ = -0.52\sqrt{17.81} = -0.52 \times 4.22 = -2.19$
 
-For Study 2: $t = -0.31\sqrt⧃LB⧄\frac{38}{1-0.0961}⧃RB⧄ = -0.31\sqrt{42.06} = -0.31 \times 6.49 = -2.01$
+For Study 2: $t = -0.31\sqrt◆LB◆\frac{38}{1-0.0961}◆RB◆ = -0.31\sqrt{42.06} = -0.31 \times 6.49 = -2.01$
 
 The $t$-values are comparable ($-2.19$ vs $-2.01$), confirming that both studies provide similar strength of evidence against $H_0$. The larger sample in Study 2 compensates for the weaker correlation.
 

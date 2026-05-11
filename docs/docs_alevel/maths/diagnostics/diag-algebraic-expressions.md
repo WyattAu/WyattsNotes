@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 Simplify the following expression completely:
 
-$$\frac⧃LB⧄\frac{1}{x+1} + \frac{1}{x-1}⧃RB⧄⧃LB⧄\frac{1}{(x+1)^2} - \frac{1}{(x-1)^2}⧃RB⧄$$
+$$\frac◆LB◆\frac{1}{x+1} + \frac{1}{x-1}◆RB◆◆LB◆\frac{1}{(x+1)^2} - \frac{1}{(x-1)^2}◆RB◆$$
 
 State any restrictions on $x$.
 
@@ -50,15 +50,15 @@ $$\frac{1}{(x+1)^2} - \frac{1}{(x-1)^2} = \frac{-4x}{(x+1)^2(x-1)^2} = \frac{-4x
 
 **Step 3: Form the overall fraction.**
 
-$$\frac⧃LB⧄\frac{2x}{x^2-1}⧃RB⧄⧃LB⧄\frac{-4x}{(x^2-1)^2}⧃RB⧄ = \frac{2x}{x^2-1} \times \frac{(x^2-1)^2}{-4x}$$
+$$\frac◆LB◆\frac{2x}{x^2-1}◆RB◆◆LB◆\frac{-4x}{(x^2-1)^2}◆RB◆ = \frac{2x}{x^2-1} \times \frac{(x^2-1)^2}{-4x}$$
 
 **Step 4: Cancel common factors.** We can cancel $2x$ with $-4x$ (noting $x \neq 0$ would cause the original numerator and denominator to both be zero, so $x \neq 0$ is an additional restriction), and $(x^2-1)$ with $(x^2-1)^2$:
 
-$$= \frac⧃LB⧄2x \cdot (x^2-1)^2⧃RB⧄⧃LB⧄-4x \cdot (x^2-1)⧃RB⧄ = \frac{(x^2-1)}{-2} = -\frac{x^2-1}{2}$$
+$$= \frac◆LB◆2x \cdot (x^2-1)^2◆RB◆◆LB◆-4x \cdot (x^2-1)◆RB◆ = \frac{(x^2-1)}{-2} = -\frac{x^2-1}{2}$$
 
 **Final restrictions:** $x \neq -1, 1, 0$.
 
-**Verification:** If $x = 2$, the original expression gives $\frac⧃LB⧄\frac{1}{3}+\frac{1}{1}⧃RB⧄⧃LB⧄\frac{1}{9}-\frac{1}{1}⧃RB⧄ = \frac{4/3}{-8/9} = -\frac{3}{2}$, and our result gives $-\frac{4-1}{2} = -\frac{3}{2}$. Consistent.
+**Verification:** If $x = 2$, the original expression gives $\frac◆LB◆\frac{1}{3}+\frac{1}{1}◆RB◆◆LB◆\frac{1}{9}-\frac{1}{1}◆RB◆ = \frac{4/3}{-8/9} = -\frac{3}{2}$, and our result gives $-\frac{4-1}{2} = -\frac{3}{2}$. Consistent.
 
 ---
 
@@ -68,7 +68,7 @@ $$= \frac⧃LB⧄2x \cdot (x^2-1)^2⧃RB⧄⧃LB⧄-4x \cdot (x^2-1)⧃RB⧄ = \
 
 Rationalise the denominator of:
 
-$$\frac⧃LB⧄3\sqrt{5} + 2\sqrt{3}⧃RB⧄⧃LB⧄2\sqrt{5} - \sqrt{3} + \sqrt{15}⧃RB⧄$$
+$$\frac◆LB◆3\sqrt{5} + 2\sqrt{3}◆RB◆◆LB◆2\sqrt{5} - \sqrt{3} + \sqrt{15}◆RB◆$$
 
 Express your answer in the form $a\sqrt{b} + c\sqrt{d} + e\sqrt{f}$ where $a, c, e$ are rational numbers and $b, d, f$ are square-free positive integers.
 
@@ -114,7 +114,7 @@ $$N' = 24 + \sqrt{15} - 15\sqrt{3} - 6\sqrt{5}$$
 
 **Step 4: Form the full fraction.**
 
-$$\frac⧃LB⧄N'⧃RB⧄⧃LB⧄D \cdot D'⧃RB⧄ = \frac⧃LB⧄24 + \sqrt{15} - 15\sqrt{3} - 6\sqrt{5}⧃RB⧄⧃LB⧄4(2 - \sqrt{15})⧃RB⧄$$
+$$\frac◆LB◆N'◆RB◆◆LB◆D \cdot D'◆RB◆ = \frac◆LB◆24 + \sqrt{15} - 15\sqrt{3} - 6\sqrt{5}◆RB◆◆LB◆4(2 - \sqrt{15})◆RB◆$$
 
 **Step 5: Rationalise the remaining surd in the denominator.** Multiply numerator and denominator by $(2 + \sqrt{15})$:
 
@@ -142,7 +142,7 @@ Collecting like terms:
 
 **Step 6: Final result.**
 
-$$\frac⧃LB⧄63 + 26\sqrt{15} - 60\sqrt{3} - 57\sqrt{5}⧃RB⧄⧃LB⧄-44⧃RB⧄$$
+$$\frac◆LB◆63 + 26\sqrt{15} - 60\sqrt{3} - 57\sqrt{5}◆RB◆◆LB◆-44◆RB◆$$
 
 $$= -\frac{63}{44} - \frac{13}{22}\sqrt{15} + \frac{15}{11}\sqrt{3} + \frac{57}{44}\sqrt{5}$$
 
@@ -154,7 +154,7 @@ $$= -\frac{63}{44} - \frac{13}{22}\sqrt{15} + \frac{15}{11}\sqrt{3} + \frac{57}{
 
 Given that $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = 5$, find the exact value of:
 
-$$\frac⧃LB⧄a^{\frac{3}{2}} - a^{-\frac{3}{2}}⧃RB⧄⧃LB⧄a^{\frac{1}{2}} - a^{-\frac{1}{2}}⧃RB⧄$$
+$$\frac◆LB◆a^{\frac{3}{2}} - a^{-\frac{3}{2}}◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆$$
 
 [Difficulty: hard. Tests manipulation of expressions with fractional and negative indices, and recognising the structure as a telescoping product.]
 
@@ -166,7 +166,7 @@ $$a^{\frac{3}{2}} - a^{-\frac{3}{2}} = \left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\
 
 Therefore the expression simplifies to:
 
-$$\frac⧃LB⧄\left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\right)\left(a + 1 + a^{-1}\right)⧃RB⧄⧃LB⧄a^{\frac{1}{2}} - a^{-\frac{1}{2}}⧃RB⧄ = a + 1 + a^{-1}$$
+$$\frac◆LB◆\left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\right)\left(a + 1 + a^{-1}\right)◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆ = a + 1 + a^{-1}$$
 
 provided $a^{1/2} - a^{-1/2} \neq 0$, i.e. $a \neq 1$. (If $a = 1$, the given condition would give $2 = 5$, a contradiction, so $a \neq 1$ is guaranteed.)
 
@@ -295,7 +295,7 @@ Ratio $= 5$.
 
 The ratio is not constant. Let me re-examine by a different approach. Note that $f^{-1}(x) = \frac{2x+1}{x-3}$. Observe that $f$ and $f^{-1}$ are M\"obius transformations. Their sum and difference ratio is not generally constant.
 
-Let me correct the problem statement: the ratio $\frac⧃LB⧄f(x) \cdot f^{-1}(x)⧃RB⧄⧃LB⧄f(x) + f^{-1}(x)⧃RB⧄$ should be checked, or alternatively the expression simplifies when we use the property $f(f^{-1}(x)) = x$.
+Let me correct the problem statement: the ratio $\frac◆LB◆f(x) \cdot f^{-1}(x)◆RB◆◆LB◆f(x) + f^{-1}(x)◆RB◆$ should be checked, or alternatively the expression simplifies when we use the property $f(f^{-1}(x)) = x$.
 
 Actually, re-examining: for a M\"obius transformation $f(x) = \frac{ax+b}{cx+d}$ with $ad - bc \neq 0$ and $a = 3, b = 1, c = 1, d = -2$, we have $f^{-1}(x) = \frac{-dx+b}{cx-a} = \frac{2x+1}{x-3}$.
 
@@ -315,7 +315,7 @@ This is not a constant. The correct result of the simplification is $\frac{5x^2 
 
 **(c)** $g(x) = \frac{x}{x+1}$ for $x \neq -1$.
 
-$$f(g(x)) = \frac⧃LB⧄3\cdot\frac{x}{x+1} + 1⧃RB⧄⧃LB⧄\frac{x}{x+1} - 2⧃RB⧄ = \frac⧃LB⧄\frac{3x + x + 1}{x+1}⧃RB⧄⧃LB⧄\frac{x - 2(x+1)}{x+1}⧃RB⧄ = \frac⧃LB⧄\frac{4x+1}{x+1}⧃RB⧄⧃LB⧄\frac{-x-2}{x+1}⧃RB⧄ = \frac{4x+1}{-x-2} = -\frac{4x+1}{x+2}$$
+$$f(g(x)) = \frac◆LB◆3\cdot\frac{x}{x+1} + 1◆RB◆◆LB◆\frac{x}{x+1} - 2◆RB◆ = \frac◆LB◆\frac{3x + x + 1}{x+1}◆RB◆◆LB◆\frac{x - 2(x+1)}{x+1}◆RB◆ = \frac◆LB◆\frac{4x+1}{x+1}◆RB◆◆LB◆\frac{-x-2}{x+1}◆RB◆ = \frac{4x+1}{-x-2} = -\frac{4x+1}{x+2}$$
 
 Setting $f(g(x)) = x$:
 
@@ -326,7 +326,7 @@ $$x^2 + 6x + 1 = 0$$
 
 By the quadratic formula:
 
-$$x = \frac⧃LB⧄-6 \pm \sqrt{36-4}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄-6 \pm 4\sqrt{2}⧃RB⧄⧃LB⧄2⧃RB⧄ = -3 \pm 2\sqrt{2}$$
+$$x = \frac◆LB◆-6 \pm \sqrt{36-4}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-6 \pm 4\sqrt{2}◆RB◆◆LB◆2◆RB◆ = -3 \pm 2\sqrt{2}$$
 
 Checking restrictions: $x \neq -1$ (domain of $g$) and $x \neq 2$ (domain of $f$). Neither $-3+2\sqrt{2}$ nor $-3-2\sqrt{2}$ equals $-1$ or $2$, so both solutions are valid.
 
@@ -336,25 +336,25 @@ Checking restrictions: $x \neq -1$ (domain of $g$) and $x \neq 2$ (domain of $f$
 
 **Question:**
 
-The expression $\left(\sqrt⧃LB⧄a + \sqrt{b}⧃RB⧄ + \sqrt⧃LB⧄a - \sqrt{b}⧃RB⧄\right)^2$ simplifies to $2a + 2\sqrt{a^2 - b}$.
+The expression $\left(\sqrt◆LB◆a + \sqrt{b}◆RB◆ + \sqrt◆LB◆a - \sqrt{b}◆RB◆\right)^2$ simplifies to $2a + 2\sqrt{a^2 - b}$.
 
 Given that $a$ and $b$ are positive integers with $a^2 > b$, and that:
 
-$$\sqrt⧃LB⧄7 + 4\sqrt{3}⧃RB⧄ = \sqrt{m} + \sqrt{n}$$
+$$\sqrt◆LB◆7 + 4\sqrt{3}◆RB◆ = \sqrt{m} + \sqrt{n}$$
 
 where $m > n$ are positive integers:
 
 **(a)** Find the values of $m$ and $n$.
 
-**(b)** Hence find the exact value of $\sqrt⧃LB⧄7 - 4\sqrt{3}⧃RB⧄$.
+**(b)** Hence find the exact value of $\sqrt◆LB◆7 - 4\sqrt{3}◆RB◆$.
 
-**(c)** Solve the equation $\sqrt⧃LB⧄7 + 4\sqrt{3}⧃RB⧄ \cdot x^2 - (m+n)x + \sqrt⧃LB⧄7 - 4\sqrt{3}⧃RB⧄ = 0$, giving your answer in the form $p + q\sqrt{r}$.
+**(c)** Solve the equation $\sqrt◆LB◆7 + 4\sqrt{3}◆RB◆ \cdot x^2 - (m+n)x + \sqrt◆LB◆7 - 4\sqrt{3}◆RB◆ = 0$, giving your answer in the form $p + q\sqrt{r}$.
 
 [Difficulty: hard. Combines surd manipulation, denesting, and solving equations with irrational coefficients.]
 
 **Solution:**
 
-**(a)** We write $\sqrt⧃LB⧄7 + 4\sqrt{3}⧃RB⧄ = \sqrt{m} + \sqrt{n}$ where $m > n > 0$ are integers.
+**(a)** We write $\sqrt◆LB◆7 + 4\sqrt{3}◆RB◆ = \sqrt{m} + \sqrt{n}$ where $m > n > 0$ are integers.
 
 Squaring both sides:
 
@@ -369,7 +369,7 @@ We need integers $m > n$ with $m + n = 7$ and $mn = 12$. By Vieta's formulas, $m
 
 Since $m > n$: $\boxed{m = 4, n = 3}$.
 
-**(b)** By the same structure, $\sqrt⧃LB⧄7 - 4\sqrt{3}⧃RB⧄ = \sqrt{m} - \sqrt{n} = 2 - \sqrt{3}$ (taking the positive root since $2 > \sqrt{3}$).
+**(b)** By the same structure, $\sqrt◆LB◆7 - 4\sqrt{3}◆RB◆ = \sqrt{m} - \sqrt{n} = 2 - \sqrt{3}$ (taking the positive root since $2 > \sqrt{3}$).
 
 Verification: $(2-\sqrt{3})^2 = 4 - 4\sqrt{3} + 3 = 7 - 4\sqrt{3}$. Confirmed.
 
@@ -383,24 +383,24 @@ $$(2+\sqrt{3})x^2 - 7x + (2-\sqrt{3}) = 0$$
 
 By the quadratic formula:
 
-$$x = \frac⧃LB⧄7 \pm \sqrt{49 - 4(2+\sqrt{3})(2-\sqrt{3})}⧃RB⧄⧃LB⧄2(2+\sqrt{3})⧃RB⧄$$
+$$x = \frac◆LB◆7 \pm \sqrt{49 - 4(2+\sqrt{3})(2-\sqrt{3})}◆RB◆◆LB◆2(2+\sqrt{3})◆RB◆$$
 
-$$= \frac⧃LB⧄7 \pm \sqrt{49 - 4(4-3)}⧃RB⧄⧃LB⧄2(2+\sqrt{3})⧃RB⧄$$
+$$= \frac◆LB◆7 \pm \sqrt{49 - 4(4-3)}◆RB◆◆LB◆2(2+\sqrt{3})◆RB◆$$
 
-$$= \frac⧃LB⧄7 \pm \sqrt{45}⧃RB⧄⧃LB⧄2(2+\sqrt{3})⧃RB⧄ = \frac⧃LB⧄7 \pm 3\sqrt{5}⧃RB⧄⧃LB⧄2(2+\sqrt{3})⧃RB⧄$$
+$$= \frac◆LB◆7 \pm \sqrt{45}◆RB◆◆LB◆2(2+\sqrt{3})◆RB◆ = \frac◆LB◆7 \pm 3\sqrt{5}◆RB◆◆LB◆2(2+\sqrt{3})◆RB◆$$
 
-Rationalise the denominator by multiplying by $\frac⧃LB⧄2-\sqrt{3}⧃RB⧄⧃LB⧄2-\sqrt{3}⧃RB⧄$:
+Rationalise the denominator by multiplying by $\frac◆LB◆2-\sqrt{3}◆RB◆◆LB◆2-\sqrt{3}◆RB◆$:
 
-$$x = \frac⧃LB⧄(7 \pm 3\sqrt{5})(2-\sqrt{3})⧃RB⧄⧃LB⧄2(4-3)⧃RB⧄ = \frac⧃LB⧄(7 \pm 3\sqrt{5})(2-\sqrt{3})⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$x = \frac◆LB◆(7 \pm 3\sqrt{5})(2-\sqrt{3})◆RB◆◆LB◆2(4-3)◆RB◆ = \frac◆LB◆(7 \pm 3\sqrt{5})(2-\sqrt{3})◆RB◆◆LB◆2◆RB◆$$
 
 For the $+$ sign:
-$$x = \frac⧃LB⧄14 - 7\sqrt{3} + 6\sqrt{5} - 3\sqrt{15}⧃RB⧄⧃LB⧄2⧃RB⧄ = 7 - \frac{7}{2}\sqrt{3} + 3\sqrt{5} - \frac{3}{2}\sqrt{15}$$
+$$x = \frac◆LB◆14 - 7\sqrt{3} + 6\sqrt{5} - 3\sqrt{15}◆RB◆◆LB◆2◆RB◆ = 7 - \frac{7}{2}\sqrt{3} + 3\sqrt{5} - \frac{3}{2}\sqrt{15}$$
 
 For the $-$ sign:
-$$x = \frac⧃LB⧄14 - 7\sqrt{3} - 6\sqrt{5} + 3\sqrt{15}⧃RB⧄⧃LB⧄2⧃RB⧄ = 7 - \frac{7}{2}\sqrt{3} - 3\sqrt{5} + \frac{3}{2}\sqrt{15}$$
+$$x = \frac◆LB◆14 - 7\sqrt{3} - 6\sqrt{5} + 3\sqrt{15}◆RB◆◆LB◆2◆RB◆ = 7 - \frac{7}{2}\sqrt{3} - 3\sqrt{5} + \frac{3}{2}\sqrt{15}$$
 
-Note: An elegant alternative approach recognises that this quadratic has roots $\frac⧃LB⧄1⧃RB⧄⧃LB⧄2+\sqrt{3}⧃RB⧄$ and $\frac⧃LB⧄2-\sqrt{3}⧃RB⧄⧃LB⧄2+\sqrt{3}⧃RB⧄$. Multiplying top and bottom by $2-\sqrt{3}$:
+Note: An elegant alternative approach recognises that this quadratic has roots $\frac◆LB◆1◆RB◆◆LB◆2+\sqrt{3}◆RB◆$ and $\frac◆LB◆2-\sqrt{3}◆RB◆◆LB◆2+\sqrt{3}◆RB◆$. Multiplying top and bottom by $2-\sqrt{3}$:
 
-$$\frac⧃LB⧄1⧃RB⧄⧃LB⧄2+\sqrt{3}⧃RB⧄ = 2 - \sqrt{3}, \quad \frac⧃LB⧄2-\sqrt{3}⧃RB⧄⧃LB⧄2+\sqrt{3}⧃RB⧄ = (2-\sqrt{3})^2 = 7 - 4\sqrt{3}$$
+$$\frac◆LB◆1◆RB◆◆LB◆2+\sqrt{3}◆RB◆ = 2 - \sqrt{3}, \quad \frac◆LB◆2-\sqrt{3}◆RB◆◆LB◆2+\sqrt{3}◆RB◆ = (2-\sqrt{3})^2 = 7 - 4\sqrt{3}$$
 
 Both can be verified by substitution into the original equation.

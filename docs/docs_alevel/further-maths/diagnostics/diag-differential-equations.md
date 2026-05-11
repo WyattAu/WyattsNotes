@@ -75,7 +75,7 @@ GS: $y = Ae^{2x} + Be^{-2x} + \frac{2}{5}e^{3x}$.
 
 (a) $\frac{dv}{dt} = g - \frac{k}{m}v$. Let $\alpha = k/m$: $\frac{dv}{dt} + \alpha v = g$.
 Integrating factor: $e^{\alpha t}$. $\frac{d}{dt}(ve^{\alpha t}) = ge^{\alpha t}$.
-$ve^{\alpha t} = \frac⧃LB⧄g⧃RB⧄⧃LB⧄\alpha⧃RB⧄e^{\alpha t} + C$. $v = \frac⧃LB⧄g⧃RB⧄⧃LB⧄\alpha⧃RB⧄ + Ce^{-\alpha t} = \frac{mg}{k} + Ce^{-kt/m}$.
+$ve^{\alpha t} = \frac◆LB◆g◆RB◆◆LB◆\alpha◆RB◆e^{\alpha t} + C$. $v = \frac◆LB◆g◆RB◆◆LB◆\alpha◆RB◆ + Ce^{-\alpha t} = \frac{mg}{k} + Ce^{-kt/m}$.
 At $t = 0$: $0 = mg/k + C$, $C = -mg/k$.
 $v = \frac{mg}{k}(1 - e^{-kt/m})$.
 
@@ -118,14 +118,14 @@ $\alpha I_p + I_p' = \alpha A\cos + \alpha B\sin - A\omega\sin + B\omega\cos = \
 
 $\alpha A + B\omega = V_0/L$ and $\alpha B - A\omega = 0$, so $B = A\omega/\alpha$.
 
-$A\alpha + A\omega^2/\alpha = V_0/L$. $A = \frac⧃LB⧄V_0\alpha⧃RB⧄⧃LB⧄L(\alpha^2 + \omega^2)⧃RB⧄ = \frac⧃LB⧄V_0 R⧃RB⧄⧃LB⧄L^2(\omega^2 + R^2/L^2)⧃RB⧄ = \frac⧃LB⧄V_0 R⧃RB⧄⧃LB⧄R^2 + \omega^2 L^2⧃RB⧄$.
+$A\alpha + A\omega^2/\alpha = V_0/L$. $A = \frac◆LB◆V_0\alpha◆RB◆◆LB◆L(\alpha^2 + \omega^2)◆RB◆ = \frac◆LB◆V_0 R◆RB◆◆LB◆L^2(\omega^2 + R^2/L^2)◆RB◆ = \frac◆LB◆V_0 R◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆$.
 
-$I = Ce^{-Rt/L} + \frac⧃LB⧄V_0⧃RB⧄⧃LB⧄R^2 + \omega^2 L^2⧃RB⧄[R\cos(\omega t) + \omega L\sin(\omega t)]$.
+$I = Ce^{-Rt/L} + \frac◆LB◆V_0◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆[R\cos(\omega t) + \omega L\sin(\omega t)]$.
 
-At $t = 0$: $0 = C + \frac⧃LB⧄V_0 R⧃RB⧄⧃LB⧄R^2 + \omega^2 L^2⧃RB⧄$, so $C = -\frac⧃LB⧄V_0 R⧃RB⧄⧃LB⧄R^2 + \omega^2 L^2⧃RB⧄$.
+At $t = 0$: $0 = C + \frac◆LB◆V_0 R◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆$, so $C = -\frac◆LB◆V_0 R◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆$.
 
-(b) **Transient:** $Ce^{-Rt/L}$ (decays to zero as $t \to \infty$). **Steady-state:** $\frac⧃LB⧄V_0⧃RB⧄⧃LB⧄R^2 + \omega^2 L^2⧃RB⧄[R\cos(\omega t) + \omega L\sin(\omega t)]$.
+(b) **Transient:** $Ce^{-Rt/L}$ (decays to zero as $t \to \infty$). **Steady-state:** $\frac◆LB◆V_0◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆[R\cos(\omega t) + \omega L\sin(\omega t)]$.
 
-(c) Amplitude $= \frac⧃LB⧄V_0⧃RB⧄⧃LB⧄R^2 + \omega^2 L^2⧃RB⧄\sqrt⧃LB⧄R^2 + \omega^2 L^2⧃RB⧄ = \frac⧃LB⧄V_0⧃RB⧄⧃LB⧄\sqrt{R^2 + \omega^2 L^2}⧃RB⧄$.
+(c) Amplitude $= \frac◆LB◆V_0◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆\sqrt◆LB◆R^2 + \omega^2 L^2◆RB◆ = \frac◆LB◆V_0◆RB◆◆LB◆\sqrt{R^2 + \omega^2 L^2}◆RB◆$.
 
 (d) When $\omega \to 0$ (DC circuit): amplitude $\to \frac{V_0}{R} = I_0$. The current approaches $V_0/R$ with time constant $L/R$. This is the classic RL circuit charging: the inductor initially opposes current flow, but as the magnetic field builds, the current asymptotically approaches $V_0/R$.

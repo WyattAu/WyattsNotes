@@ -25,15 +25,15 @@ hide_table_of_contents: true
 
 **Solution:**
 
-**(a)** Consider $f(x) = \frac⧃LB⧄\ln x⧃RB⧄⧃LB⧄x⧃RB⧄$. Its derivative is:
+**(a)** Consider $f(x) = \frac◆LB◆\ln x◆RB◆◆LB◆x◆RB◆$. Its derivative is:
 
-$$f'(x) = \frac⧃LB⧄1 \cdot x - \ln x \cdot 1⧃RB⧄⧃LB⧄x^2⧃RB⧄ = \frac⧃LB⧄1 - \ln x⧃RB⧄⧃LB⧄x^2⧃RB⧄$$
+$$f'(x) = \frac◆LB◆1 \cdot x - \ln x \cdot 1◆RB◆◆LB◆x^2◆RB◆ = \frac◆LB◆1 - \ln x◆RB◆◆LB◆x^2◆RB◆$$
 
 $f'(x) = 0$ when $\ln x = 1$, i.e. $x = e$. For $x \lt e$: $f'(x) \gt 0$; for $x \gt e$: $f'(x) \lt 0$.
 
 So $f(x)$ has a global maximum at $x = e$, meaning $f(e) \geq f(\pi)$:
 
-$$\frac⧃LB⧄\ln e⧃RB⧄⧃LB⧄e⧃RB⧄ \geq \frac⧃LB⧄\ln \pi⧃RB⧄⧃LB⧄\pi⧃RB⧄ \implies \frac{1}{e} \geq \frac⧃LB⧄\ln \pi⧃RB⧄⧃LB⧄\pi⧃RB⧄ \implies \pi \geq e \ln \pi$$
+$$\frac◆LB◆\ln e◆RB◆◆LB◆e◆RB◆ \geq \frac◆LB◆\ln \pi◆RB◆◆LB◆\pi◆RB◆ \implies \frac{1}{e} \geq \frac◆LB◆\ln \pi◆RB◆◆LB◆\pi◆RB◆ \implies \pi \geq e \ln \pi$$
 
 $$\implies \pi \geq \ln(\pi^e) \implies e^\pi \geq \pi^e$$
 
@@ -53,7 +53,7 @@ The student loses $x = -e^2$ (because $\ln x$ is undefined for $x \lt 0$) and ga
 
 **(c)** By inspection, $x = 2$ and $x = 4$ are solutions: $2^2 = 4 = 2^2$ and $2^4 = 16 = 4^2$.
 
-For $x \lt 0$: $2^x \gt 0$ and $x^2 \gt 0$, so solutions may exist. At $x = -0.7666...$: $2^{-0.7666} \approx 0.587$ and $(-0.7666)^2 \approx 0.588$. This is a solution, which we denote $x = -\frac⧃LB⧄W(-2\ln 2)⧃RB⧄⧃LB⧄2\ln 2⧃RB⧄$ where $W$ is the Lambert $W$-function. For A-Level purposes, we note there are exactly three solutions: $x \approx -0.767$, $x = 2$, and $x = 4$.
+For $x \lt 0$: $2^x \gt 0$ and $x^2 \gt 0$, so solutions may exist. At $x = -0.7666...$: $2^{-0.7666} \approx 0.587$ and $(-0.7666)^2 \approx 0.588$. This is a solution, which we denote $x = -\frac◆LB◆W(-2\ln 2)◆RB◆◆LB◆2\ln 2◆RB◆$ where $W$ is the Lambert $W$-function. For A-Level purposes, we note there are exactly three solutions: $x \approx -0.767$, $x = 2$, and $x = 4$.
 
 To show there are no other solutions for $x \geq 0$: consider $g(x) = 2^x - x^2$. We have $g(0) = 1$, $g(1) = 1$, $g(2) = 0$, $g(3) = -1$, $g(4) = 0$, $g(5) = 7$. Since $g''(x) = 2^x(\ln 2)^2 - 2$, and $2^x(\ln 2)^2 \gt 2$ for $x \gt 5$ (because $2^5 \cdot (\ln 2)^2 \approx 2.14$), $g$ is convex for $x \geq 5$ and grows without bound. By Rolle's theorem, there can be at most one root in $(3, 4)$ and at most one in $(4, \infty)$. Since $g(4) = 0$ and $g$ is increasing at $x = 4$, there are no further roots beyond $x = 4$.
 
@@ -89,13 +89,13 @@ Solutions: $x = \ln 2$ and $x = \ln 3$.
 
 Let $u = e^x$ ($u \gt 0$):
 
-$$u^2 - 5u + 5 = 0 \implies u = \frac⧃LB⧄5 \pm \sqrt{25 - 20}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄5 \pm \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$u^2 - 5u + 5 = 0 \implies u = \frac◆LB◆5 \pm \sqrt{25 - 20}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆5 \pm \sqrt{5}◆RB◆◆LB◆2◆RB◆$$
 
-Both roots are positive: $\frac⧃LB⧄5 - \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 1.382 \gt 0$ and $\frac⧃LB⧄5 + \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 3.618 \gt 0$.
+Both roots are positive: $\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.382 \gt 0$ and $\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 3.618 \gt 0$.
 
-$$x = \ln\!\left(\frac⧃LB⧄5 + \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄\right) \quad \text{or} \quad x = \ln\!\left(\frac⧃LB⧄5 - \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄\right)$$
+$$x = \ln\!\left(\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆\right) \quad \text{or} \quad x = \ln\!\left(\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆\right)$$
 
-**(c)** The student obtains $u = \frac⧃LB⧄5 \pm \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄$, both positive. The check is necessary because if a root were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$, then $u = -1$ or $u = 4$, and $u = -1$ would give $e^x = -1$, which has no real solution. This is a common trap: the substitution $u = e^x$ implicitly constrains $u \gt 0$, and students who forget this constraint accept spurious solutions.
+**(c)** The student obtains $u = \frac◆LB◆5 \pm \sqrt{5}◆RB◆◆LB◆2◆RB◆$, both positive. The check is necessary because if a root were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$, then $u = -1$ or $u = 4$, and $u = -1$ would give $e^x = -1$, which has no real solution. This is a common trap: the substitution $u = e^x$ implicitly constrains $u \gt 0$, and students who forget this constraint accept spurious solutions.
 
 ---
 
@@ -151,7 +151,7 @@ A student who writes $h(x) = 2\ln(x+1)$ has restricted the domain to $x \gt -1$,
 
 **(b)** Verify your answer by differentiation.
 
-**(c)** Hence evaluate $\int_0^{\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄} e^{3x}\sin(2x)\, dx$, giving an exact answer.
+**(c)** Hence evaluate $\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} e^{3x}\sin(2x)\, dx$, giving an exact answer.
 
 [Difficulty: hard. Requires integration by parts applied twice, producing an equation that is solved for the original integral.]
 
@@ -193,13 +193,13 @@ $$= \frac{e^{3x}}{13} \cdot 13\sin(2x) = e^{3x}\sin(2x)$$
 
 Confirmed.
 
-**(c)** $\int_0^{\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄} e^{3x}\sin(2x)\, dx = \left[\frac{e^{3x}}{13}(3\sin(2x) - 2\cos(2x))\right]_0^{\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄}$
+**(c)** $\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} e^{3x}\sin(2x)\, dx = \left[\frac{e^{3x}}{13}(3\sin(2x) - 2\cos(2x))\right]_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆}$
 
-At $x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$: $e^{3\pi/2}(3\sin\pi - 2\cos\pi) = e^{3\pi/2}(0 + 2) = 2e^{3\pi/2}$
+At $x = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$: $e^{3\pi/2}(3\sin\pi - 2\cos\pi) = e^{3\pi/2}(0 + 2) = 2e^{3\pi/2}$
 
 At $x = 0$: $e^0(3\sin 0 - 2\cos 0) = 1(0 - 2) = -2$
 
-$$= \frac{1}{13}(2e^{3\pi/2} - (-2)) = \frac⧃LB⧄2(e^{3\pi/2} + 1)⧃RB⧄⧃LB⧄13⧃RB⧄$$
+$$= \frac{1}{13}(2e^{3\pi/2} - (-2)) = \frac◆LB◆2(e^{3\pi/2} + 1)◆RB◆◆LB◆13◆RB◆$$
 
 ---
 
@@ -223,13 +223,13 @@ $$= \frac{1}{13}(2e^{3\pi/2} - (-2)) = \frac⧃LB⧄2(e^{3\pi/2} + 1)⧃RB⧄⧃
 
 $$\frac{dy}{dx} = \frac{1}{2} \cdot \frac{2x}{x^2+1} = \frac{x}{x^2+1}$$
 
-**(b)** At $x = \sqrt{3}$: $\frac{dy}{dx} = \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄3+1⧃RB⧄ = \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄4⧃RB⧄$.
+**(b)** At $x = \sqrt{3}$: $\frac{dy}{dx} = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆3+1◆RB◆ = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆$.
 
 $y = \frac{1}{2}\ln(3+1) = \frac{1}{2}\ln 4 = \ln 2$.
 
-Equation of tangent: $y - \ln 2 = \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄4⧃RB⧄(x - \sqrt{3})$.
+Equation of tangent: $y - \ln 2 = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆(x - \sqrt{3})$.
 
-$$y = \frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄4⧃RB⧄x - \frac{3}{4} + \ln 2$$
+$$y = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆x - \frac{3}{4} + \ln 2$$
 
 **(c)** $\frac{dy}{dx} = \frac{x}{x^2+1} = 0 \implies x = 0$.
 
@@ -237,7 +237,7 @@ Wait: $\frac{x}{x^2+1} = 0$ when $x = 0$. Let me check: at $x = 0$, $\frac{dy}{d
 
 The question says "show that the curve has no stationary points." This is incorrect — the curve does have a stationary point at $x = 0$. Let me re-examine.
 
-At $x = 0$: $y = \frac{1}{2}\ln 1 = 0$. The gradient is $\frac{0}{1} = 0$. So $x = 0$ is a stationary point. This is a minimum since $\frac{d^2y}{dx^2} = \frac⧃LB⧄(x^2+1) - x \cdot 2x⧃RB⧄⧃LB⧄(x^2+1)^2⧃RB⧄ = \frac{1-x^2}{(x^2+1)^2}$, which is positive at $x = 0$.
+At $x = 0$: $y = \frac{1}{2}\ln 1 = 0$. The gradient is $\frac{0}{1} = 0$. So $x = 0$ is a stationary point. This is a minimum since $\frac{d^2y}{dx^2} = \frac◆LB◆(x^2+1) - x \cdot 2x◆RB◆◆LB◆(x^2+1)^2◆RB◆ = \frac{1-x^2}{(x^2+1)^2}$, which is positive at $x = 0$.
 
 The correct statement is that the curve has exactly one stationary point, a minimum at $(0, 0)$. The question as stated is incorrect.
 
@@ -277,19 +277,19 @@ The function $f$ is defined by $f(x) = e^{2x-1}$ for $x \in \mathbb{R}$.
 
 **Solution:**
 
-**(a)** Let $y = e^{2x-1}$. Then $\ln y = 2x - 1$, so $x = \frac⧃LB⧄\ln y + 1⧃RB⧄⧃LB⧄2⧃RB⧄$.
+**(a)** Let $y = e^{2x-1}$. Then $\ln y = 2x - 1$, so $x = \frac◆LB◆\ln y + 1◆RB◆◆LB◆2◆RB◆$.
 
-$$f^{-1}(x) = \frac⧃LB⧄\ln x + 1⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$f^{-1}(x) = \frac◆LB◆\ln x + 1◆RB◆◆LB◆2◆RB◆$$
 
 Domain of $f^{-1}$: $x \gt 0$ (since $\ln x$ must be defined, matching the range of $f$).
 
-Range of $f^{-1}$: $\mathbb{R}$ (since $\frac⧃LB⧄\ln x + 1⧃RB⧄⧃LB⧄2⧃RB⧄$ takes all real values as $x$ ranges over $(0, \infty)$, matching the domain of $f$).
+Range of $f^{-1}$: $\mathbb{R}$ (since $\frac◆LB◆\ln x + 1◆RB◆◆LB◆2◆RB◆$ takes all real values as $x$ ranges over $(0, \infty)$, matching the domain of $f$).
 
-**(b)** $(f^{-1} \circ f)(x) = f^{-1}(f(x)) = \frac⧃LB⧄\ln(e^{2x-1}) + 1⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac{2x-1+1}{2} = x$.
+**(b)** $(f^{-1} \circ f)(x) = f^{-1}(f(x)) = \frac◆LB◆\ln(e^{2x-1}) + 1◆RB◆◆LB◆2◆RB◆ = \frac{2x-1+1}{2} = x$.
 
 Domain: the range of $f$ must be within the domain of $f^{-1}$. Range of $f$ is $(0, \infty)$, domain of $f^{-1}$ is $(0, \infty)$. So domain is $\mathbb{R}$.
 
-$(f \circ f^{-1})(x) = f(f^{-1}(x)) = e^{2 \cdot \frac⧃LB⧄\ln x + 1⧃RB⧄⧃LB⧄2⧃RB⧄ - 1} = e^{\ln x + 1 - 1} = e^{\ln x} = x$.
+$(f \circ f^{-1})(x) = f(f^{-1}(x)) = e^{2 \cdot \frac◆LB◆\ln x + 1◆RB◆◆LB◆2◆RB◆ - 1} = e^{\ln x + 1 - 1} = e^{\ln x} = x$.
 
 Domain: the range of $f^{-1}$ is $\mathbb{R}$, which is within the domain of $f$. The domain is $(0, \infty)$ (the domain of $f^{-1}$).
 

@@ -147,7 +147,7 @@ $$(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots
 
 $$= \sum_{r=0}^{\infty} \binom{n}{r} x^r$$
 
-where $\binom{n}{r} = \frac⧃LB⧄n(n-1)(n-2)\cdots(n-r+1)⧃RB⧄⧃LB⧄r!⧃RB⧄$.
+where $\binom{n}{r} = \frac◆LB◆n(n-1)(n-2)\cdots(n-r+1)◆RB◆◆LB◆r!◆RB◆$.
 
 **Note.** When $n$ is a positive integer, the series terminates at $r = n$ (since $\binom{n}{r} = 0$
 for $r \gt n$). When $n$ is not a positive integer, the series is infinite.
@@ -188,7 +188,7 @@ Expand $\sqrt{4 + x}$ in ascending powers of $x$ up to $x^2$.
 $$
 \begin{aligned}
 (4 + x)^{1/2} &= 4^{1/2}\left(1 + \frac{x}{4}\right)^{1/2} \\
-&= 2\left[1 + \frac{1}{2}\cdot\frac{x}{4} + \frac⧃LB⧄\frac{1}{2}\cdot\left(-\frac{1}{2}\right)⧃RB⧄⧃LB⧄2!⧃RB⧄\cdot\frac{x^2}{16} + \cdots\right] \\
+&= 2\left[1 + \frac{1}{2}\cdot\frac{x}{4} + \frac◆LB◆\frac{1}{2}\cdot\left(-\frac{1}{2}\right)◆RB◆◆LB◆2!◆RB◆\cdot\frac{x^2}{16} + \cdots\right] \\
 &= 2\left[1 + \frac{x}{8} - \frac{x^2}{128} + \cdots\right] \\
 &= 2 + \frac{x}{4} - \frac{x^2}{64} + \cdots
 \end{aligned}
@@ -302,7 +302,7 @@ Expanding with $n = 1/3$ and $x = 1/27$:
 
 $$
 \begin{aligned}
-\left(1 + \frac{1}{27}\right)^{1/3} &= 1 + \frac{1}{3}\cdot\frac{1}{27} + \frac⧃LB⧄\frac{1}{3}\cdot\left(-\frac{2}{3}\right)⧃RB⧄⧃LB⧄2!⧃RB⧄\cdot\frac{1}{729} + \frac⧃LB⧄\frac{1}{3}\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{5}{3}\right)⧃RB⧄⧃LB⧄3!⧃RB⧄\cdot\frac{1}{19683} + \cdots \\
+\left(1 + \frac{1}{27}\right)^{1/3} &= 1 + \frac{1}{3}\cdot\frac{1}{27} + \frac◆LB◆\frac{1}{3}\cdot\left(-\frac{2}{3}\right)◆RB◆◆LB◆2!◆RB◆\cdot\frac{1}{729} + \frac◆LB◆\frac{1}{3}\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{5}{3}\right)◆RB◆◆LB◆3!◆RB◆\cdot\frac{1}{19683} + \cdots \\
 &= 1 + \frac{1}{81} - \frac{1}{6561} + \frac{5}{1594323} + \cdots \\
 &\approx 1 + 0.012346 - 0.000152 + 0.000003 + \cdots \\
 &\approx 1.012197
@@ -314,7 +314,7 @@ So $\sqrt[3]{28} \approx 3 \times 1.012197 = 3.036591$.
 **Error estimation.** The terms alternate and decrease in magnitude. The next term (the $x^4$ term)
 has magnitude:
 
-$$\left|\frac⧃LB⧄\frac{1}{3}\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{5}{3}\right)\cdot\left(-\frac{8}{3}\right)⧃RB⧄⧃LB⧄4!⧃RB⧄\cdot\frac{1}{27^4}\right| = \frac⧃LB⧄80⧃RB⧄⧃LB⧄243 \cdot 531441⧃RB⧄ \approx 6.2 \times 10^{-7}$$
+$$\left|\frac◆LB◆\frac{1}{3}\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{5}{3}\right)\cdot\left(-\frac{8}{3}\right)◆RB◆◆LB◆4!◆RB◆\cdot\frac{1}{27^4}\right| = \frac◆LB◆80◆RB◆◆LB◆243 \cdot 531441◆RB◆ \approx 6.2 \times 10^{-7}$$
 
 So the error in the expansion of $(1 + 1/27)^{1/3}$ is at most $\approx 6.2 \times 10^{-7}$, and the
 error in $\sqrt[3]{28}$ is at most $3 \times 6.2 \times 10^{-7} \approx 1.9 \times 10^{-6}$.
@@ -427,7 +427,7 @@ The combined expansion is valid only where **both** individual expansions are va
 overall validity is the **intersection** of the two ranges, which is always the **more restrictive**
 condition:
 
-$$|x| \lt \min\left(\frac⧃LB⧄1⧃RB⧄⧃LB⧄|p|⧃RB⧄, \frac⧃LB⧄1⧃RB⧄⧃LB⧄|q|⧃RB⧄\right)$$
+$$|x| \lt \min\left(\frac◆LB◆1◆RB◆◆LB◆|p|◆RB◆, \frac◆LB◆1◆RB◆◆LB◆|q|◆RB◆\right)$$
 
 **Why?** The product expansion is obtained by multiplying the individual series term by term. If
 either series diverges, the term-by-term multiplication is not justified, so the product expansion
@@ -566,7 +566,7 @@ Total: $54 - 120 + 40 = -26$.
 <summary>Solution</summary>
 $$\sqrt{1.05} = (1 + 0.05)^{1/2}$$
 
-$$= 1 + \frac{1}{2}(0.05) + \frac⧃LB⧄\frac{1}{2} \cdot \left(-\frac{1}{2}\right)⧃RB⧄⧃LB⧄2⧃RB⧄(0.05)^2 + \frac⧃LB⧄\frac{1}{2}\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)⧃RB⧄⧃LB⧄6⧃RB⧄(0.05)^3 + \cdots$$
+$$= 1 + \frac{1}{2}(0.05) + \frac◆LB◆\frac{1}{2} \cdot \left(-\frac{1}{2}\right)◆RB◆◆LB◆2◆RB◆(0.05)^2 + \frac◆LB◆\frac{1}{2}\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)◆RB◆◆LB◆6◆RB◆(0.05)^3 + \cdots$$
 
 $$= 1 + 0.025 - 0.0003125 + 0.0000078125 - \cdots$$
 
@@ -737,7 +737,7 @@ Expand with $n = 1/3$, $x = 1/125 = 0.008$:
 
 $$
 \begin{aligned}
-\left(1 + \frac{1}{125}\right)^{1/3} &= 1 + \frac{1}{3}\cdot\frac{1}{125} + \frac⧃LB⧄\frac{1}{3}\cdot\left(-\frac{2}{3}\right)⧃RB⧄⧃LB⧄2⧃RB⧄\cdot\frac{1}{15625} + \cdots \\
+\left(1 + \frac{1}{125}\right)^{1/3} &= 1 + \frac{1}{3}\cdot\frac{1}{125} + \frac◆LB◆\frac{1}{3}\cdot\left(-\frac{2}{3}\right)◆RB◆◆LB◆2◆RB◆\cdot\frac{1}{15625} + \cdots \\
 &= 1 + \frac{1}{375} - \frac{1}{70312.5} + \cdots \\
 &\approx 1 + 0.0026667 - 0.0000142 + \cdots \\
 &\approx 1.0026525
@@ -750,7 +750,7 @@ To 4 d.p.: $5.0133$.
 
 **Error estimate.** The terms alternate and decrease. The next term (the $x^3$ term) has magnitude:
 
-$$\left|\frac⧃LB⧄\frac{1}{3}\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{5}{3}\right)⧃RB⧄⧃LB⧄6⧃RB⧄\cdot\frac{1}{125^3}\right| = \frac{10/162}{6} \cdot \frac{1}{1953125} \approx 5.3 \times 10^{-9}$$
+$$\left|\frac◆LB◆\frac{1}{3}\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{5}{3}\right)◆RB◆◆LB◆6◆RB◆\cdot\frac{1}{125^3}\right| = \frac{10/162}{6} \cdot \frac{1}{1953125} \approx 5.3 \times 10^{-9}$$
 
 The error in $\sqrt[3]{126}$ is at most $5 \times 5.3 \times 10^{-9} \approx 2.7 \times 10^{-8}$,
 which is negligible for 4 decimal places. The approximation $5.0133$ is reliable.
@@ -793,19 +793,19 @@ $\binom{2n}{3} 2^{2n-3} \cdot 27 = \frac{2n(2n-1)(2n-2)}{6} \cdot 27 \cdot 2^{2n
 
 Ratio is $11 : 1$:
 
-$$\frac⧃LB⧄\displaystyle \frac{2n(2n-1)(2n-2)}{6} \cdot 27 \cdot 2^{2n-3}⧃RB⧄⧃LB⧄3n \cdot 2^{2n}⧃RB⧄ = 11$$
+$$\frac◆LB◆\displaystyle \frac{2n(2n-1)(2n-2)}{6} \cdot 27 \cdot 2^{2n-3}◆RB◆◆LB◆3n \cdot 2^{2n}◆RB◆ = 11$$
 
 Simplify:
 
-$$\frac⧃LB⧄2n(2n-1)(2n-2) \cdot 27 \cdot 2^{2n-3}⧃RB⧄⧃LB⧄6 \cdot 3n \cdot 2^{2n}⧃RB⧄ = 11$$
+$$\frac◆LB◆2n(2n-1)(2n-2) \cdot 27 \cdot 2^{2n-3}◆RB◆◆LB◆6 \cdot 3n \cdot 2^{2n}◆RB◆ = 11$$
 
-$$\frac⧃LB⧄2n(2n-1)(2n-2) \cdot 9 \cdot 2^{2n-3}⧃RB⧄⧃LB⧄6n \cdot 2^{2n}⧃RB⧄ = 11$$
+$$\frac◆LB◆2n(2n-1)(2n-2) \cdot 9 \cdot 2^{2n-3}◆RB◆◆LB◆6n \cdot 2^{2n}◆RB◆ = 11$$
 
-$$\frac⧃LB⧄(2n-1)(2n-2) \cdot 18 \cdot 2^{2n-3}⧃RB⧄⧃LB⧄6 \cdot 2^{2n}⧃RB⧄ = 11$$
+$$\frac◆LB◆(2n-1)(2n-2) \cdot 18 \cdot 2^{2n-3}◆RB◆◆LB◆6 \cdot 2^{2n}◆RB◆ = 11$$
 
-$$\frac⧃LB⧄(2n-1)(2n-2) \cdot 18⧃RB⧄⧃LB⧄6 \cdot 8⧃RB⧄ = 11$$
+$$\frac◆LB◆(2n-1)(2n-2) \cdot 18◆RB◆◆LB◆6 \cdot 8◆RB◆ = 11$$
 
-$$\frac⧃LB⧄(2n-1)(2n-2) \cdot 3⧃RB⧄⧃LB⧄8⧃RB⧄ = 11$$
+$$\frac◆LB◆(2n-1)(2n-2) \cdot 3◆RB◆◆LB◆8◆RB◆ = 11$$
 
 $$(2n-1)(2n-2) = \frac{88}{3}$$
 
@@ -834,7 +834,7 @@ $$2n^2 - 3n + 1 = \frac{11}{2}$$
 
 $$4n^2 - 6n - 9 = 0$$
 
-$$n = \frac⧃LB⧄6 \pm \sqrt{36 + 144}⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄6 \pm \sqrt{180}⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄6 \pm 6\sqrt{5}⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄3 \pm 3\sqrt{5}⧃RB⧄⧃LB⧄4⧃RB⧄$$
+$$n = \frac◆LB◆6 \pm \sqrt{36 + 144}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆6 \pm \sqrt{180}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆6 \pm 6\sqrt{5}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆3 \pm 3\sqrt{5}◆RB◆◆LB◆4◆RB◆$$
 
 Since $n$ must be a positive integer, there is no integer solution. The ratio $11 : 1$ cannot be
 achieved for any positive integer $n$ with $(2+3x)^{2n}$.

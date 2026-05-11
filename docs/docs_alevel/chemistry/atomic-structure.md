@@ -42,7 +42,7 @@ Isotopes are atoms of the same element (same $Z$) with different neutron numbers
 The relative atomic mass is the weighted mean of the isotopic masses, weighted by their natural abundances:
 
 $$
-A_r(\mathrm{X}) = \frac⧃LB⧄\sum_i m_i \cdot a_i⧃RB⧄⧃LB⧄\sum_i a_i⧃RB⧄
+A_r(\mathrm{X}) = \frac◆LB◆\sum_i m_i \cdot a_i◆RB◆◆LB◆\sum_i a_i◆RB◆
 $$
 
 where $m_i$ is the isotopic mass and $a_i$ is the relative abundance of isotope $i$.
@@ -71,7 +71,7 @@ Mass spectrometry separates ions by their mass-to-charge ratio ($m/z$). The stag
 4. **Deflection** -- a magnetic field $B$ deflects ions into a curved path of radius $r$:
 
 $$
-r = \frac⧃LB⧄\sqrt{2mV/z}⧃RB⧄⧃LB⧄B⧃RB⧄
+r = \frac◆LB◆\sqrt{2mV/z}◆RB◆◆LB◆B◆RB◆
 $$
 
 Lighter ions (lower $m/z$) are deflected more. The detector records the abundance at each $m/z$.
@@ -311,7 +311,7 @@ Bromine has two stable isotopes: ${}^{79}\mathrm{Br}$ (50.69%) and ${}^{81}\math
 **Solution:**
 
 $$
-A_r(\mathrm{Br}) = \frac⧃LB⧄(79 \times 50.69) + (81 \times 49.31)⧃RB⧄⧃LB⧄100⧃RB⧄ = \frac{4004.5 + 3994.1}{100} = 79.99 \approx 80.0
+A_r(\mathrm{Br}) = \frac◆LB◆(79 \times 50.69) + (81 \times 49.31)◆RB◆◆LB◆100◆RB◆ = \frac{4004.5 + 3994.1}{100} = 79.99 \approx 80.0
 $$
 
 </details>
@@ -404,7 +404,7 @@ where $n$ is the number of carbon atoms and $r$ is the number of hydrogen atoms 
 The M+1 peak provides a way to estimate the number of carbon atoms:
 
 $$
-\text{Number of carbons} \approx \frac⧃LB⧄\%\,\text{intensity of M+1}⧃RB⧄⧃LB⧄1.1⧃RB⧄
+\text{Number of carbons} \approx \frac◆LB◆\%\,\text{intensity of M+1}◆RB◆◆LB◆1.1◆RB◆
 $$
 
 **Worked Example.** A compound has a molecular ion at $m/z = 150$ (100%) and M+1 at $m/z = 151$ (9.9%). Estimate the number of carbons.

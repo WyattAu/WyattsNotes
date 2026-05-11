@@ -37,13 +37,13 @@ is repelled by the Coulomb force.
 For a head-on collision, the alpha particle momentarily stops (all kinetic energy converted to
 electric potential energy):
 
-$$\frac{1}{2}m_\alpha v^2 = \frac⧃LB⧄Z_{\mathrm{Au}} \cdot 2e^2⧃RB⧄⧃LB⧄4\pi\varepsilon_0 d⧃RB⧄$$
+$$\frac{1}{2}m_\alpha v^2 = \frac◆LB◆Z_{\mathrm{Au}} \cdot 2e^2◆RB◆◆LB◆4\pi\varepsilon_0 d◆RB◆$$
 
-$$\boxed{d = \frac⧃LB⧄Z_{\mathrm{Au}} e^2⧃RB⧄⧃LB⧄2\pi\varepsilon_0 E_k⧃RB⧄}$$
+$$\boxed{d = \frac◆LB◆Z_{\mathrm{Au}} e^2◆RB◆◆LB◆2\pi\varepsilon_0 E_k◆RB◆}$$
 
 where $d$ is the distance of closest approach. For 5.5 MeV alpha particles on gold ($Z = 79$):
 
-$$d = \frac⧃LB⧄79 \times (1.60 \times 10^{-19})^2⧃RB⧄⧃LB⧄2\pi \times 8.85 \times 10^{-12} \times 5.5 \times 10^6 \times 1.60 \times 10^{-19}⧃RB⧄ \approx 4.1 \times 10^{-14}\ \mathrm{m}$$
+$$d = \frac◆LB◆79 \times (1.60 \times 10^{-19})^2◆RB◆◆LB◆2\pi \times 8.85 \times 10^{-12} \times 5.5 \times 10^6 \times 1.60 \times 10^{-19}◆RB◆ \approx 4.1 \times 10^{-14}\ \mathrm{m}$$
 
 This gives an upper bound on the nuclear radius of gold ($\sim 10^{-14}$ m, compared to the atomic
 radius of $\sim 10^{-10}$ m).
@@ -95,7 +95,7 @@ $$\boxed{E_b = \Delta m\,c^2}$$
 
 The binding energy per nucleon is a measure of nuclear stability:
 
-$$\boxed{\frac{E_b}{A} = \frac⧃LB⧄\Delta m\,c^2⧃RB⧄⧃LB⧄A⧃RB⧄}$$
+$$\boxed{\frac{E_b}{A} = \frac◆LB◆\Delta m\,c^2◆RB◆◆LB◆A◆RB◆}$$
 
 <details>
 <summary>Worked Example: Binding Energy of Helium-4</summary>
@@ -224,9 +224,9 @@ SI unit: becquerel (Bq). $1\ \mathrm{Bq} = 1\ \mathrm{decay\,s}^{-1}$.
 
 Setting $N = N_0/2$ at $t = t_{1/2}$:
 
-$$\frac{1}{2} = e^{-\lambda t_{1/2}} \implies t_{1/2} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄\lambda⧃RB⧄$$
+$$\frac{1}{2} = e^{-\lambda t_{1/2}} \implies t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆$$
 
-$$\boxed{t_{1/2} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄\lambda⧃RB⧄}$$
+$$\boxed{t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆}$$
 
 ## 7. Nuclear Fission
 
@@ -327,7 +327,7 @@ Energy released: $E = 0.187 \times 931.5 = 174$ MeV.
 Calculate the distance of closest approach for a 7.7 MeV alpha particle scattered by a gold nucleus
 ($Z = 79$).
 
-**Answer.** $d = \frac⧃LB⧄Ze^2⧃RB⧄⧃LB⧄2\pi\varepsilon_0 E_k⧃RB⧄ = \frac⧃LB⧄79 \times (1.60 \times 10^{-19})^2⧃RB⧄⧃LB⧄2\pi \times 8.85 \times 10^{-12} \times 7.7 \times 10^6 \times 1.60 \times 10^{-19}⧃RB⧄ = \frac⧃LB⧄79 \times 1.60 \times 10^{-19}⧃RB⧄⧃LB⧄2\pi \times 8.85 \times 10^{-12} \times 7.7 \times 10^6⧃RB⧄ = 2.9 \times 10^{-14}$ m.
+**Answer.** $d = \frac◆LB◆Ze^2◆RB◆◆LB◆2\pi\varepsilon_0 E_k◆RB◆ = \frac◆LB◆79 \times (1.60 \times 10^{-19})^2◆RB◆◆LB◆2\pi \times 8.85 \times 10^{-12} \times 7.7 \times 10^6 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆79 \times 1.60 \times 10^{-19}◆RB◆◆LB◆2\pi \times 8.85 \times 10^{-12} \times 7.7 \times 10^6◆RB◆ = 2.9 \times 10^{-14}$ m.
 
 </details>
 

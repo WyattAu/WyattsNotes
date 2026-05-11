@@ -51,15 +51,15 @@ This confirms: $|z_1 z_2| = |z_1||z_2|$ and $\arg(z_1 z_2) = \arg(z_1) + \arg(z_
 
 ### 1.3 Worked example
 
-**Problem.** Express $\dfrac⧃LB⧄1 + i\sqrt{3}⧃RB⧄⧃LB⧄1 - i⧃RB⧄$ in modulus-argument form.
+**Problem.** Express $\dfrac◆LB◆1 + i\sqrt{3}◆RB◆◆LB◆1 - i◆RB◆$ in modulus-argument form.
 
-Numerator: $1 + i\sqrt{3}$. $r_1 = \sqrt{1 + 3} = 2$, $\theta_1 = \arctan\!\left(\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄1⧃RB⧄\right) = \dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$.
+Numerator: $1 + i\sqrt{3}$. $r_1 = \sqrt{1 + 3} = 2$, $\theta_1 = \arctan\!\left(\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆1◆RB◆\right) = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
 
-Denominator: $1 - i$. $r_2 = \sqrt{1 + 1} = \sqrt{2}$, $\theta_2 = \arctan\!\left(\dfrac{-1}{1}\right) = -\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$.
+Denominator: $1 - i$. $r_2 = \sqrt{1 + 1} = \sqrt{2}$, $\theta_2 = \arctan\!\left(\dfrac{-1}{1}\right) = -\dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
-$$\frac{z_1}{z_2} = \frac⧃LB⧄2⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄\left(\cos\!\left(\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ - \left(-\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄\right)\right) + i\sin\!\left(\frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄12⧃RB⧄\right)\right)$$
+$$\frac{z_1}{z_2} = \frac◆LB◆2◆RB◆◆LB◆\sqrt{2}◆RB◆\left(\cos\!\left(\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ - \left(-\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)\right) + i\sin\!\left(\frac◆LB◆7\pi◆RB◆◆LB◆12◆RB◆\right)\right)$$
 
-$$= \sqrt{2}\left(\cos\frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄12⧃RB⧄ + i\sin\frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄12⧃RB⧄\right)$$
+$$= \sqrt{2}\left(\cos\frac◆LB◆7\pi◆RB◆◆LB◆12◆RB◆ + i\sin\frac◆LB◆7\pi◆RB◆◆LB◆12◆RB◆\right)$$
 
 ### 1.4 De Moivre's theorem
 
@@ -91,9 +91,9 @@ and the result follows by applying the positive case to the reciprocal.
 
 **Problem.** Find $(1 + i)^{10}$.
 
-$1 + i = \sqrt{2}\!\left(\cos\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄ + i\sin\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄\right)$.
+$1 + i = \sqrt{2}\!\left(\cos\dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + i\sin\dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)$.
 
-$$(1 + i)^{10} = (\sqrt{2})^{10}\!\left(\cos\frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + i\sin\frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right) = 32(0 + i) = 32i$$
+$$(1 + i)^{10} = (\sqrt{2})^{10}\!\left(\cos\frac◆LB◆5\pi◆RB◆◆LB◆2◆RB◆ + i\sin\frac◆LB◆5\pi◆RB◆◆LB◆2◆RB◆\right) = 32(0 + i) = 32i$$
 
 ### 1.6 Trigonometric identities from De Moivre
 
@@ -119,12 +119,12 @@ $$\sin 3\theta = 3\cos^2\theta\sin\theta - \sin^3\theta = 3\sin\theta - 4\sin^3\
 
 To solve $z^n = w$ where $w = R(\cos\alpha + i\sin\alpha)$:
 
-$$z = R^{1/n}\!\left(\cos\frac⧃LB⧄\alpha + 2k\pi⧃RB⧄⧃LB⧄n⧃RB⧄ + i\sin\frac⧃LB⧄\alpha + 2k\pi⧃RB⧄⧃LB⧄n⧃RB⧄\right), \quad k = 0, 1, 2, \ldots, n-1$$
+$$z = R^{1/n}\!\left(\cos\frac◆LB◆\alpha + 2k\pi◆RB◆◆LB◆n◆RB◆ + i\sin\frac◆LB◆\alpha + 2k\pi◆RB◆◆LB◆n◆RB◆\right), \quad k = 0, 1, 2, \ldots, n-1$$
 
 ### 2.2 Geometric interpretation
 
 The $n$ roots of $w$ lie on a circle of radius $R^{1/n}$ centred at the origin, equally spaced at
-angles of $\dfrac⧃LB⧄2\pi⧃RB⧄⧃LB⧄n⧃RB⧄$ apart.
+angles of $\dfrac◆LB◆2\pi◆RB◆◆LB◆n◆RB◆$ apart.
 
 ### 2.3 Sum of roots
 
@@ -132,7 +132,7 @@ The sum of all $n$ roots of $z^n = w$ is zero (they form a regular polygon centr
 
 **Proof.** The roots are $R^{1/n}\,\omega^k$ where $\omega = \mathrm{cis}(2\pi/n)$ and $k = 0, 1, \ldots, n-1$.
 
-$$\sum_{k=0}^{n-1}\omega^k = \frac⧃LB⧄1 - \omega^n⧃RB⧄⧃LB⧄1 - \omega⧃RB⧄ = \frac⧃LB⧄1 - 1⧃RB⧄⧃LB⧄1 - \omega⧃RB⧄ = 0 \quad \blacksquare$$
+$$\sum_{k=0}^{n-1}\omega^k = \frac◆LB◆1 - \omega^n◆RB◆◆LB◆1 - \omega◆RB◆ = \frac◆LB◆1 - 1◆RB◆◆LB◆1 - \omega◆RB◆ = 0 \quad \blacksquare$$
 
 ### 2.4 Worked example: cube roots
 
@@ -140,13 +140,13 @@ $$\sum_{k=0}^{n-1}\omega^k = \frac⧃LB⧄1 - \omega^n⧃RB⧄⧃LB⧄1 - \omega
 
 $-8 = 8(\cos\pi + i\sin\pi)$.
 
-$$z_k = 8^{1/3}\!\left(\cos\frac⧃LB⧄\pi + 2k\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + i\sin\frac⧃LB⧄\pi + 2k\pi⧃RB⧄⧃LB⧄3⧃RB⧄\right), \quad k = 0, 1, 2$$
+$$z_k = 8^{1/3}\!\left(\cos\frac◆LB◆\pi + 2k\pi◆RB◆◆LB◆3◆RB◆ + i\sin\frac◆LB◆\pi + 2k\pi◆RB◆◆LB◆3◆RB◆\right), \quad k = 0, 1, 2$$
 
-$k = 0$: $z_0 = 2\!\left(\cos\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + i\sin\dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄\right) = 1 + i\sqrt{3}$
+$k = 0$: $z_0 = 2\!\left(\cos\dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + i\sin\dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) = 1 + i\sqrt{3}$
 
 $k = 1$: $z_1 = 2\!\left(\cos\pi + i\sin\pi\right) = -2$
 
-$k = 2$: $z_2 = 2\!\left(\cos\dfrac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + i\sin\dfrac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄\right) = 1 - i\sqrt{3}$
+$k = 2$: $z_2 = 2\!\left(\cos\dfrac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + i\sin\dfrac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆\right) = 1 - i\sqrt{3}$
 
 Check: $(1 + i\sqrt{3}) + (-2) + (1 - i\sqrt{3}) = 0$.
 
@@ -154,7 +154,7 @@ Check: $(1 + i\sqrt{3}) + (-2) + (1 - i\sqrt{3}) = 0$.
 
 The **$n$-th roots of unity** are the solutions to $z^n = 1$:
 
-$$z_k = \cos\frac⧃LB⧄2k\pi⧃RB⧄⧃LB⧄n⧃RB⧄ + i\sin\frac⧃LB⧄2k\pi⧃RB⧄⧃LB⧄n⧃RB⧄, \quad k = 0, 1, \ldots, n-1$$
+$$z_k = \cos\frac◆LB◆2k\pi◆RB◆◆LB◆n◆RB◆ + i\sin\frac◆LB◆2k\pi◆RB◆◆LB◆n◆RB◆, \quad k = 0, 1, \ldots, n-1$$
 
 These form a regular $n$-gon inscribed in the unit circle.
 
@@ -189,7 +189,7 @@ $\alpha \lt \arg(z - z_0) \lt \beta$: the region between two half-lines (an angu
 
 ### 3.4 Worked example: combined locus
 
-**Problem.** Sketch the region defined by $|z - 2| \leq 3$ and $0 \leq \arg(z) \leq \dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$.
+**Problem.** Sketch the region defined by $|z - 2| \leq 3$ and $0 \leq \arg(z) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
 $|z - 2| \leq 3$ is a closed disc centred at $2 + 0i$ with radius 3. Combined with the angular
 constraint, the region is the portion of this disc lying between the positive real axis and the
@@ -198,9 +198,9 @@ line $\arg z = \pi/4$.
 The disc extends from $x = -1$ to $x = 5$ on the real axis. The line $\arg z = \pi/4$ is $y = x$.
 The intersection of $y = x$ with the circle $(x-2)^2 + y^2 = 9$ gives:
 
-$$(x - 2)^2 + x^2 = 9 \implies 2x^2 - 4x - 5 = 0 \implies x = \frac⧃LB⧄4 \pm \sqrt{16 + 40}⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄4 \pm \sqrt{56}⧃RB⧄⧃LB⧄4⧃RB⧄$$
+$$(x - 2)^2 + x^2 = 9 \implies 2x^2 - 4x - 5 = 0 \implies x = \frac◆LB◆4 \pm \sqrt{16 + 40}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆4 \pm \sqrt{56}◆RB◆◆LB◆4◆RB◆$$
 
-The relevant intersection is at $x = 1 + \dfrac⧃LB⧄\sqrt{14}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 2.87$.
+The relevant intersection is at $x = 1 + \dfrac◆LB◆\sqrt{14}◆RB◆◆LB◆2◆RB◆ \approx 2.87$.
 
 ### 3.5 Worked example: Cartesian equation from locus
 
@@ -238,11 +238,11 @@ This connects the exponential function with trigonometric functions via the imag
 
 ### 4.2 Proof (via power series)
 
-$$e^{i\theta} = \sum_{n=0}^{\infty}\frac⧃LB⧄(i\theta)^n⧃RB⧄⧃LB⧄n!⧃RB⧄ = 1 + i\theta + \frac⧃LB⧄(i\theta)^2⧃RB⧄⧃LB⧄2!⧃RB⧄ + \frac⧃LB⧄(i\theta)^3⧃RB⧄⧃LB⧄3!⧃RB⧄ + \cdots$$
+$$e^{i\theta} = \sum_{n=0}^{\infty}\frac◆LB◆(i\theta)^n◆RB◆◆LB◆n!◆RB◆ = 1 + i\theta + \frac◆LB◆(i\theta)^2◆RB◆◆LB◆2!◆RB◆ + \frac◆LB◆(i\theta)^3◆RB◆◆LB◆3!◆RB◆ + \cdots$$
 
 Since $i^2 = -1$, $i^3 = -i$, $i^4 = 1$, and this pattern repeats with period 4:
 
-$$= \left(1 - \frac⧃LB⧄\theta^2⧃RB⧄⧃LB⧄2!⧃RB⧄ + \frac⧃LB⧄\theta^4⧃RB⧄⧃LB⧄4!⧃RB⧄ - \cdots\right) + i\left(\theta - \frac⧃LB⧄\theta^3⧃RB⧄⧃LB⧄3!⧃RB⧄ + \frac⧃LB⧄\theta^5⧃RB⧄⧃LB⧄5!⧃RB⧄ - \cdots\right)$$
+$$= \left(1 - \frac◆LB◆\theta^2◆RB◆◆LB◆2!◆RB◆ + \frac◆LB◆\theta^4◆RB◆◆LB◆4!◆RB◆ - \cdots\right) + i\left(\theta - \frac◆LB◆\theta^3◆RB◆◆LB◆3!◆RB◆ + \frac◆LB◆\theta^5◆RB◆◆LB◆5!◆RB◆ - \cdots\right)$$
 
 $$= \cos\theta + i\sin\theta \quad \blacksquare$$
 
@@ -270,9 +270,9 @@ $$z_1 z_2 = r_1 r_2\,e^{i(\theta_1 + \theta_2)}$$
 
 From Euler's formula:
 
-$$\cos\theta = \frac⧃LB⧄e^{i\theta} + e^{-i\theta}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$\cos\theta = \frac◆LB◆e^{i\theta} + e^{-i\theta}◆RB◆◆LB◆2◆RB◆$$
 
-$$\sin\theta = \frac⧃LB⧄e^{i\theta} - e^{-i\theta}⧃RB⧄⧃LB⧄2i⧃RB⧄$$
+$$\sin\theta = \frac◆LB◆e^{i\theta} - e^{-i\theta}◆RB◆◆LB◆2i◆RB◆$$
 
 ### 4.6 Worked example
 
@@ -280,7 +280,7 @@ $$\sin\theta = \frac⧃LB⧄e^{i\theta} - e^{-i\theta}⧃RB⧄⧃LB⧄2i⧃RB⧄
 
 $1 + i = \sqrt{2}\,e^{i\pi/4}$, $1 - i = \sqrt{2}\,e^{-i\pi/4}$.
 
-$$\frac{(1 + i)^5}{(1 - i)^3} = \frac⧃LB⧄(\sqrt{2})^5\,e^{i5\pi/4}⧃RB⧄⧃LB⧄(\sqrt{2})^3\,e^{-i3\pi/4}⧃RB⧄ = 4\sqrt{2}\,e^{i2\pi} = 4\sqrt{2}$$
+$$\frac{(1 + i)^5}{(1 - i)^3} = \frac◆LB◆(\sqrt{2})^5\,e^{i5\pi/4}◆RB◆◆LB◆(\sqrt{2})^3\,e^{-i3\pi/4}◆RB◆ = 4\sqrt{2}\,e^{i2\pi} = 4\sqrt{2}$$
 
 In Cartesian form: $4\sqrt{2} + 0i$.
 
@@ -294,9 +294,9 @@ So $e^{x + iy} = e^x\,e^{iy} = 2\,e^{i(\pi/3 + 2k\pi)}$.
 
 Equating moduli: $e^x = 2 \implies x = \ln 2$.
 
-Equating arguments: $y = \dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2k\pi$ for $k \in \mathbb{Z}$.
+Equating arguments: $y = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2k\pi$ for $k \in \mathbb{Z}$.
 
-$$z = \ln 2 + i\!\left(\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2k\pi\right), \quad k \in \mathbb{Z}$$
+$$z = \ln 2 + i\!\left(\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2k\pi\right), \quad k \in \mathbb{Z}$$
 
 :::warning
 Common Pitfall
@@ -315,11 +315,11 @@ Express $z = -\sqrt{3} + i$ in modulus-argument form and hence find $z^8$.
 <details>
 <summary>Solution</summary>
 
-$r = \sqrt{3 + 1} = 2$, $\theta = \pi - \dfrac⧃LB⧄\pi⧃RB⧄⧃LB⧄6⧃RB⧄ = \dfrac⧃LB⧄5\pi⧃RB⧄⧃LB⧄6⧃RB⧄$.
+$r = \sqrt{3 + 1} = 2$, $\theta = \pi - \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ = \dfrac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
 
 $z = 2\,e^{i5\pi/6}$.
 
-$z^8 = 2^8\,e^{i40\pi/6} = 256\,e^{i20\pi/3} = 256\,e^{i(6\pi + 2\pi/3)} = 256\,e^{i2\pi/3} = 256\!\left(-\frac{1}{2} + i\frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄\right) = -128 + 128i\sqrt{3}$.
+$z^8 = 2^8\,e^{i40\pi/6} = 256\,e^{i20\pi/3} = 256\,e^{i(6\pi + 2\pi/3)} = 256\,e^{i2\pi/3} = 256\!\left(-\frac{1}{2} + i\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\right) = -128 + 128i\sqrt{3}$.
 
 </details>
 
@@ -340,7 +340,7 @@ The sum is $2^{11/10}\displaystyle\sum_{k=0}^{4}e^{i(\pi + 8k\pi)/20} = 2^{11/10
 
 Since $\omega = e^{i2\pi/5}$ and $\omega^5 = 1$ with $\omega \neq 1$:
 
-$\sum_{k=0}^{4}\omega^k = \dfrac⧃LB⧄1 - \omega^5⧃RB⧄⧃LB⧄1 - \omega⧃RB⧄ = 0$.
+$\sum_{k=0}^{4}\omega^k = \dfrac◆LB◆1 - \omega^5◆RB◆◆LB◆1 - \omega◆RB◆ = 0$.
 
 </details>
 
@@ -367,18 +367,18 @@ This is a straight line (the perpendicular bisector of the segment joining $1 - 
 
 ### Problem 4
 
-Use Euler's formula to show that $\cos^4\theta = \dfrac⧃LB⧄3 + 4\cos 2\theta + \cos 4\theta⧃RB⧄⧃LB⧄8⧃RB⧄$.
+Use Euler's formula to show that $\cos^4\theta = \dfrac◆LB◆3 + 4\cos 2\theta + \cos 4\theta◆RB◆◆LB◆8◆RB◆$.
 
 <details>
 <summary>Solution</summary>
 
-$\cos\theta = \dfrac⧃LB⧄e^{i\theta} + e^{-i\theta}⧃RB⧄⧃LB⧄2⧃RB⧄$, so $\cos^4\theta = \dfrac{1}{16}(e^{i\theta} + e^{-i\theta})^4$.
+$\cos\theta = \dfrac◆LB◆e^{i\theta} + e^{-i\theta}◆RB◆◆LB◆2◆RB◆$, so $\cos^4\theta = \dfrac{1}{16}(e^{i\theta} + e^{-i\theta})^4$.
 
 $= \dfrac{1}{16}(e^{4i\theta} + 4e^{2i\theta} + 6 + 4e^{-2i\theta} + e^{-4i\theta})$
 
 $= \dfrac{1}{16}(2\cos 4\theta + 8\cos 2\theta + 6)$
 
-$= \dfrac⧃LB⧄3 + 4\cos 2\theta + \cos 4\theta⧃RB⧄⧃LB⧄8⧃RB⧄$.
+$= \dfrac◆LB◆3 + 4\cos 2\theta + \cos 4\theta◆RB◆◆LB◆8◆RB◆$.
 
 </details>
 
@@ -452,9 +452,9 @@ The complex numbers $z_1$ and $z_2$ satisfy $z_1 = 1 + i$ and $z_2 = 1 - \sqrt{3
 
 $z_1 z_2 = 2\sqrt{2}\,e^{i(\pi/4 - \pi/3)} = 2\sqrt{2}\,e^{-i\pi/12}$.
 
-**(b)** $\dfrac{z_1^4}{z_2^2} = \dfrac⧃LB⧄(\sqrt{2})^4\,e^{i\pi}⧃RB⧄⧃LB⧄2^2\,e^{-i2\pi/3}⧃RB⧄ = \dfrac⧃LB⧄4\,e^{i\pi}⧃RB⧄⧃LB⧄4\,e^{-i2\pi/3}⧃RB⧄ = e^{i5\pi/3}$.
+**(b)** $\dfrac{z_1^4}{z_2^2} = \dfrac◆LB◆(\sqrt{2})^4\,e^{i\pi}◆RB◆◆LB◆2^2\,e^{-i2\pi/3}◆RB◆ = \dfrac◆LB◆4\,e^{i\pi}◆RB◆◆LB◆4\,e^{-i2\pi/3}◆RB◆ = e^{i5\pi/3}$.
 
-In Cartesian form: $e^{i5\pi/3} = \cos\dfrac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + i\sin\dfrac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄ = \dfrac{1}{2} - i\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+In Cartesian form: $e^{i5\pi/3} = \cos\dfrac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + i\sin\dfrac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ = \dfrac{1}{2} - i\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 
@@ -597,7 +597,7 @@ From $v = \dfrac{-2y}{1+y^2}$: $v^2 = \dfrac{4y^2}{(1+y^2)^2}$.
 
 Since $u - 1 = \dfrac{2}{1+y^2}$: $(u-1)(1+y^2) = 2$, so $1+y^2 = \dfrac{2}{u-1}$.
 
-$$v^2 = \frac{4y^2}{(1+y^2)^2} = \frac⧃LB⧄4\!\left(\frac{2}{u-1} - 1\right)⧃RB⧄⧃LB⧄\frac{4}{(u-1)^2}⧃RB⧄ = \frac⧃LB⧄\frac{8 - 2(u-1)}{u-1}⧃RB⧄⧃LB⧄\frac{4}{(u-1)^2}⧃RB⧄ = \frac{(10 - 2u)(u-1)}{4} = \frac{(5-u)(u-1)}{2}$$
+$$v^2 = \frac{4y^2}{(1+y^2)^2} = \frac◆LB◆4\!\left(\frac{2}{u-1} - 1\right)◆RB◆◆LB◆\frac{4}{(u-1)^2}◆RB◆ = \frac◆LB◆\frac{8 - 2(u-1)}{u-1}◆RB◆◆LB◆\frac{4}{(u-1)^2}◆RB◆ = \frac{(10 - 2u)(u-1)}{4} = \frac{(5-u)(u-1)}{2}$$
 
 The image is the arc of the circle defined by $2v^2 = (5-u)(u-1)$ for $u \geq 1$, which is a circle with centre $(3, 0)$ and radius $2$ in the $w$-plane.
 
@@ -689,10 +689,10 @@ The $n$-th roots of unity form a cyclic group under multiplication. The factoris
 $$z_k = 27^{1/3}\,e^{i(3\pi/2 + 2k\pi)/3} = 3\,e^{i(\pi/2 + 2k\pi/3)}, \quad k = 0, 1, 2$$
 
 $k = 0$: $3e^{i\pi/2} = 3i$.
-$k = 1$: $3e^{i7\pi/6} = 3\!\left(-\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ - \dfrac{i}{2}\right)$.
-$k = 2$: $3e^{i11\pi/6} = 3\!\left(\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ - \dfrac{i}{2}\right)$.
+$k = 1$: $3e^{i7\pi/6} = 3\!\left(-\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - \dfrac{i}{2}\right)$.
+$k = 2$: $3e^{i11\pi/6} = 3\!\left(\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - \dfrac{i}{2}\right)$.
 
-**(b)** Sum $= 3i + 3\!\left(-\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ - \dfrac{i}{2}\right) + 3\!\left(\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ - \dfrac{i}{2}\right) = 3i - 3i/2 - 3i/2 = 0$. $\blacksquare$
+**(b)** Sum $= 3i + 3\!\left(-\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - \dfrac{i}{2}\right) + 3\!\left(\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - \dfrac{i}{2}\right) = 3i - 3i/2 - 3i/2 = 0$. $\blacksquare$
 
 </details>
 
@@ -707,17 +707,17 @@ Let $w = re^{i\pi/6}$. From $|w + 2i| = 3$:
 
 $$|re^{i\pi/6} + 2i| = 3$$
 
-$r\cos(\pi/6) + i\!\left(r\sin(\pi/6) + 2\right) = r\!\left(\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄\right) + i\!\left(\dfrac{r}{2} + 2\right)$.
+$r\cos(\pi/6) + i\!\left(r\sin(\pi/6) + 2\right) = r\!\left(\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\right) + i\!\left(\dfrac{r}{2} + 2\right)$.
 
 $$\frac{3r^2}{4} + \left(\frac{r}{2} + 2\right)^2 = 9$$
 
 $$\frac{3r^2}{4} + \frac{r^2}{4} + 2r + 4 = 9 \implies r^2 + 2r - 5 = 0$$
 
-$$r = \frac⧃LB⧄-2 \pm \sqrt{4 + 20}⧃RB⧄⧃LB⧄2⧃RB⧄ = -1 \pm \sqrt{6}$$
+$$r = \frac◆LB◆-2 \pm \sqrt{4 + 20}◆RB◆◆LB◆2◆RB◆ = -1 \pm \sqrt{6}$$
 
 Since $r > 0$: $r = \sqrt{6} - 1$.
 
-$w = (\sqrt{6} - 1)\,e^{i\pi/6} = (\sqrt{6} - 1)\!\left(\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + \dfrac{i}{2}\right) = \dfrac⧃LB⧄(\sqrt{6}-1)\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + \dfrac⧃LB⧄(\sqrt{6}-1)i⧃RB⧄⧃LB⧄2⧃RB⧄$.
+$w = (\sqrt{6} - 1)\,e^{i\pi/6} = (\sqrt{6} - 1)\!\left(\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \dfrac{i}{2}\right) = \dfrac◆LB◆(\sqrt{6}-1)\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \dfrac◆LB◆(\sqrt{6}-1)i◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 
@@ -728,25 +728,25 @@ Use De Moivre's theorem to find $\cos(\pi/12)$ and $\sin(\pi/12)$ in surd form.
 <details>
 <summary>Solution</summary>
 
-$\cos(\pi/12) + i\sin(\pi/12) = \sqrt⧃LB⧄\cos(\pi/6) + i\sin(\pi/6)⧃RB⧄$.
+$\cos(\pi/12) + i\sin(\pi/12) = \sqrt◆LB◆\cos(\pi/6) + i\sin(\pi/6)◆RB◆$.
 
-$\cos(\pi/6) = \dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$ and $\sin(\pi/6) = \dfrac{1}{2}$.
+$\cos(\pi/6) = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ and $\sin(\pi/6) = \dfrac{1}{2}$.
 
-Let $\cos(\pi/12) + i\sin(\pi/12) = a + bi$ where $a > 0$. Then $(a + bi)^2 = \dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + \dfrac{i}{2}$.
+Let $\cos(\pi/12) + i\sin(\pi/12) = a + bi$ where $a > 0$. Then $(a + bi)^2 = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \dfrac{i}{2}$.
 
-$a^2 - b^2 = \dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$ and $2ab = \dfrac{1}{2}$, so $b = \dfrac{1}{4a}$.
+$a^2 - b^2 = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ and $2ab = \dfrac{1}{2}$, so $b = \dfrac{1}{4a}$.
 
-$a^2 - \dfrac{1}{16a^2} = \dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$.
+$a^2 - \dfrac{1}{16a^2} = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
 
 Multiplying by $16a^2$: $16a^4 - 8\sqrt{3}\,a^2 - 1 = 0$.
 
-$a^2 = \dfrac⧃LB⧄8\sqrt{3} \pm \sqrt{192 + 64}⧃RB⧄⧃LB⧄32⧃RB⧄ = \dfrac⧃LB⧄8\sqrt{3} \pm 4\sqrt{13}⧃RB⧄⧃LB⧄32⧃RB⧄ = \dfrac⧃LB⧄2\sqrt{3} \pm \sqrt{13}⧃RB⧄⧃LB⧄8⧃RB⧄$.
+$a^2 = \dfrac◆LB◆8\sqrt{3} \pm \sqrt{192 + 64}◆RB◆◆LB◆32◆RB◆ = \dfrac◆LB◆8\sqrt{3} \pm 4\sqrt{13}◆RB◆◆LB◆32◆RB◆ = \dfrac◆LB◆2\sqrt{3} \pm \sqrt{13}◆RB◆◆LB◆8◆RB◆$.
 
-Since $a^2 \leq 1$: $a^2 = \dfrac⧃LB⧄2\sqrt{3} + \sqrt{13}⧃RB⧄⧃LB⧄8⧃RB⧄$.
+Since $a^2 \leq 1$: $a^2 = \dfrac◆LB◆2\sqrt{3} + \sqrt{13}◆RB◆◆LB◆8◆RB◆$.
 
-$$\cos\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄ = \sqrt⧃LB⧄\frac{2\sqrt{3} + \sqrt{13}}{8}⧃RB⧄ = \frac⧃LB⧄\sqrt{2\sqrt{3} + \sqrt{13}}⧃RB⧄⧃LB⧄2\sqrt{2}⧃RB⧄$$
+$$\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ = \sqrt◆LB◆\frac{2\sqrt{3} + \sqrt{13}}{8}◆RB◆ = \frac◆LB◆\sqrt{2\sqrt{3} + \sqrt{13}}◆RB◆◆LB◆2\sqrt{2}◆RB◆$$
 
-$$\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄12⧃RB⧄ = \sqrt⧃LB⧄\frac{-2\sqrt{3} + \sqrt{13}}{8}⧃RB⧄ = \frac⧃LB⧄\sqrt{-2\sqrt{3} + \sqrt{13}}⧃RB⧄⧃LB⧄2\sqrt{2}⧃RB⧄$$
+$$\sin\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ = \sqrt◆LB◆\frac{-2\sqrt{3} + \sqrt{13}}{8}◆RB◆ = \frac◆LB◆\sqrt{-2\sqrt{3} + \sqrt{13}}◆RB◆◆LB◆2\sqrt{2}◆RB◆$$
 
 </details>
 
@@ -765,7 +765,7 @@ This is the sum of the $n$-th roots of $-1$ (not unity).
 
 Let us reconsider: $\displaystyle\sum_{k=0}^{n-1}e^{i(2k+1)\pi/n}$ is a geometric series with first term $e^{i\pi/n}$ and ratio $e^{i2\pi/n}$.
 
-$$\sum_{k=0}^{n-1}e^{i(2k+1)\pi/n} = e^{i\pi/n}\cdot\frac⧃LB⧄1 - e^{i2\pi}⧃RB⧄⧃LB⧄1 - e^{i2\pi/n}⧃RB⧄ = e^{i\pi/n}\cdot\frac⧃LB⧄1 - 1⧃RB⧄⧃LB⧄1 - e^{i2\pi/n}⧃RB⧄ = 0 \quad \blacksquare$$
+$$\sum_{k=0}^{n-1}e^{i(2k+1)\pi/n} = e^{i\pi/n}\cdot\frac◆LB◆1 - e^{i2\pi}◆RB◆◆LB◆1 - e^{i2\pi/n}◆RB◆ = e^{i\pi/n}\cdot\frac◆LB◆1 - 1◆RB◆◆LB◆1 - e^{i2\pi/n}◆RB◆ = 0 \quad \blacksquare$$
 
 (Since $e^{i2\pi} = 1$.)
 
@@ -784,15 +784,15 @@ $$z = z_1 + (z_2 - z_1)\,e^{\pm i\pi/3}$$
 
 $z_2 - z_1 = (1 - 2) + (-1 - 3)i = -1 - 4i$.
 
-$e^{i\pi/3} = \dfrac{1}{2} + i\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$:
+$e^{i\pi/3} = \dfrac{1}{2} + i\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$:
 
-$$(-1 - 4i)\!\left(\frac{1}{2} + i\frac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄\right) = \frac⧃LB⧄-1 + 4\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + i\frac⧃LB⧄-4 - \sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$(-1 - 4i)\!\left(\frac{1}{2} + i\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\right) = \frac◆LB◆-1 + 4\sqrt{3}◆RB◆◆LB◆2◆RB◆ + i\frac◆LB◆-4 - \sqrt{3}◆RB◆◆LB◆2◆RB◆$$
 
-$$z = (2 + 3i) + \frac⧃LB⧄-1 + 4\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + i\frac⧃LB⧄-4 - \sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄3 + 4\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + i\frac⧃LB⧄2 - \sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$z = (2 + 3i) + \frac◆LB◆-1 + 4\sqrt{3}◆RB◆◆LB◆2◆RB◆ + i\frac◆LB◆-4 - \sqrt{3}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆3 + 4\sqrt{3}◆RB◆◆LB◆2◆RB◆ + i\frac◆LB◆2 - \sqrt{3}◆RB◆◆LB◆2◆RB◆$$
 
-For the other orientation, $e^{-i\pi/3} = \dfrac{1}{2} - i\dfrac⧃LB⧄\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$:
+For the other orientation, $e^{-i\pi/3} = \dfrac{1}{2} - i\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$:
 
-$$z = (2 + 3i) + \frac⧃LB⧄-1 - 4\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + i\frac⧃LB⧄-4 + \sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄3 - 4\sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄ + i\frac⧃LB⧄2 + \sqrt{3}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$z = (2 + 3i) + \frac◆LB◆-1 - 4\sqrt{3}◆RB◆◆LB◆2◆RB◆ + i\frac◆LB◆-4 + \sqrt{3}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆3 - 4\sqrt{3}◆RB◆◆LB◆2◆RB◆ + i\frac◆LB◆2 + \sqrt{3}◆RB◆◆LB◆2◆RB◆$$
 
 </details>
 
@@ -816,7 +816,7 @@ $$\boxed{\sin 4\theta = 4\cos^3\theta\sin\theta - 4\cos\theta\sin^3\theta}$$
 
 **Solution.** $\omega^k = e^{2\pi ik/5}$ lies on the unit circle at angles $0, 72°, 144°, 216°, 288°$. Equal angular spacing confirms a regular pentagon.
 
-Sum: $\displaystyle\sum_{k=0}^{4} \omega^k = \frac⧃LB⧄1-\omega^5⧃RB⧄⧃LB⧄1-\omega⧃RB⧄ = 0$.
+Sum: $\displaystyle\sum_{k=0}^{4} \omega^k = \frac◆LB◆1-\omega^5◆RB◆◆LB◆1-\omega◆RB◆ = 0$.
 
 ### Example 12.3: Locus — circle
 
@@ -846,7 +846,7 @@ The point is $z = i$.
 
 $x^3+3x^2+7x+5 = (x+1)(x^2+2x+5)$.
 
-$x^2+2x+5 = 0$: $x = \dfrac⧃LB⧄-2\pm\sqrt{4-20}⧃RB⧄⧃LB⧄2⧃RB⧄ = -1 \pm 2i$.
+$x^2+2x+5 = 0$: $x = \dfrac◆LB◆-2\pm\sqrt{4-20}◆RB◆◆LB◆2◆RB◆ = -1 \pm 2i$.
 
 $\boxed{x = -1,\; x = -1+2i,\; x = -1-2i}$
 
@@ -892,7 +892,7 @@ $z_k = e^{2\pi ik/n}$ for $k = 0, 1, \ldots, n-1$.
 
 $|z_k| = 1$ for all $k$ (on the unit circle).
 
-The angular separation between consecutive roots is $\dfrac⧃LB⧄2\pi⧃RB⧄⧃LB⧄n⧃RB⧄$, which is constant.
+The angular separation between consecutive roots is $\dfrac◆LB◆2\pi◆RB◆◆LB◆n◆RB◆$, which is constant.
 
 Therefore the roots are the vertices of a regular $n$-gon inscribed in the unit circle. $\blacksquare$
 
@@ -950,7 +950,7 @@ Properties:
 
 Using $e^{i\theta} = \cos\theta + i\sin\theta$:
 
-$\cos^n\theta = \left(\dfrac⧃LB⧄e^{i\theta}+e^{-i\theta}⧃RB⧄⧃LB⧄2⧃RB⧄\right)^n$ and $\sin^n\theta = \left(\dfrac⧃LB⧄e^{i\theta}-e^{-i\theta}⧃RB⧄⧃LB⧄2i⧃RB⧄\right)^n$.
+$\cos^n\theta = \left(\dfrac◆LB◆e^{i\theta}+e^{-i\theta}◆RB◆◆LB◆2◆RB◆\right)^n$ and $\sin^n\theta = \left(\dfrac◆LB◆e^{i\theta}-e^{-i\theta}◆RB◆◆LB◆2i◆RB◆\right)^n$.
 
 These can be expanded to express $\cos^n\theta$ and $\sin^n\theta$ in terms of multiple angles.
 
@@ -965,9 +965,9 @@ Express $\cos^4\theta$ in terms of $\cos 2\theta$ and $\cos 4\theta$.
 <details>
 <summary>Solution</summary>
 
-$\cos^4\theta = \left(\dfrac⧃LB⧄e^{i\theta}+e^{-i\theta}⧃RB⧄⧃LB⧄2⧃RB⧄\right)^4 = \dfrac⧃LB⧄e^{4i\theta}+4e^{2i\theta}+6+4e^{-2i\theta}+e^{-4i\theta}⧃RB⧄⧃LB⧄16⧃RB⧄$
+$\cos^4\theta = \left(\dfrac◆LB◆e^{i\theta}+e^{-i\theta}◆RB◆◆LB◆2◆RB◆\right)^4 = \dfrac◆LB◆e^{4i\theta}+4e^{2i\theta}+6+4e^{-2i\theta}+e^{-4i\theta}◆RB◆◆LB◆16◆RB◆$
 
-$= \dfrac⧃LB⧄2\cos 4\theta + 8\cos 2\theta + 6⧃RB⧄⧃LB⧄16⧃RB⧄ = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta$.
+$= \dfrac◆LB◆2\cos 4\theta + 8\cos 2\theta + 6◆RB◆◆LB◆16◆RB◆ = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta$.
 
 $\boxed{\cos^4\theta = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta}$
 
@@ -1019,7 +1019,7 @@ $e^{i\theta} + e^{-i\theta} = 2\cos\theta$
 
 $e^{i\theta} - e^{-i\theta} = 2i\sin\theta$
 
-$\cos\theta = \dfrac⧃LB⧄e^{i\theta}+e^{-i\theta}⧃RB⧄⧃LB⧄2⧃RB⧄$, $\sin\theta = \dfrac⧃LB⧄e^{i\theta}-e^{-i\theta}⧃RB⧄⧃LB⧄2i⧃RB⧄$
+$\cos\theta = \dfrac◆LB◆e^{i\theta}+e^{-i\theta}◆RB◆◆LB◆2◆RB◆$, $\sin\theta = \dfrac◆LB◆e^{i\theta}-e^{-i\theta}◆RB◆◆LB◆2i◆RB◆$
 
 ---
 
@@ -1034,6 +1034,6 @@ $\cos\theta = \dfrac⧃LB⧄e^{i\theta}+e^{-i\theta}⧃RB⧄⧃LB⧄2⧃RB⧄$, 
 
 This is a geometric series with ratio $r = e^{2\pi i/n} \neq 1$:
 
-$\displaystyle\sum_{k=0}^{n-1} r^k = \frac{r^n - 1}{r - 1} = \frac⧃LB⧄e^{2\pi i} - 1⧃RB⧄⧃LB⧄e^{2\pi i/n} - 1⧃RB⧄ = \frac⧃LB⧄1 - 1⧃RB⧄⧃LB⧄e^{2\pi i/n} - 1⧃RB⧄ = 0$. $\blacksquare$
+$\displaystyle\sum_{k=0}^{n-1} r^k = \frac{r^n - 1}{r - 1} = \frac◆LB◆e^{2\pi i} - 1◆RB◆◆LB◆e^{2\pi i/n} - 1◆RB◆ = \frac◆LB◆1 - 1◆RB◆◆LB◆e^{2\pi i/n} - 1◆RB◆ = 0$. $\blacksquare$
 
 </details>

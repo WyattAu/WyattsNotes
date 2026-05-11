@@ -26,7 +26,7 @@ Show all working — marks are awarded for method as well as final answer.
 
 Given that $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = 5$, find the exact value of:
 
-$$\frac⧃LB⧄a^{\frac{3}{2}} - a^{-\frac{3}{2}}⧃RB⧄⧃LB⧄a^{\frac{1}{2}} - a^{-\frac{1}{2}}⧃RB⧄$$
+$$\frac◆LB◆a^{\frac{3}{2}} - a^{-\frac{3}{2}}◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆$$
 
 ### Q2 [7 marks] — Quadratics
 
@@ -34,7 +34,7 @@ The roots of the equation $2x^2 - 5x + 1 = 0$ are $\alpha$ and $\beta$.
 
 Without finding the numerical values of $\alpha$ and $\beta$, find the value of:
 
-$$\frac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha^2 + 1⧃RB⧄ + \frac⧃LB⧄1⧃RB⧄⧃LB⧄\beta^2 + 1⧃RB⧄$$
+$$\frac◆LB◆1◆RB◆◆LB◆\alpha^2 + 1◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta^2 + 1◆RB◆$$
 
 ### Q3 [7 marks] — Equations and Inequalities
 
@@ -152,7 +152,7 @@ $$a^{\frac{3}{2}} - a^{-\frac{3}{2}} = \left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\
 
 Therefore the expression simplifies to:
 
-$$\frac⧃LB⧄\left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\right)\left(a + 1 + a^{-1}\right)⧃RB⧄⧃LB⧄a^{\frac{1}{2}} - a^{-\frac{1}{2}}⧃RB⧄ = a + 1 + a^{-1}$$
+$$\frac◆LB◆\left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\right)\left(a + 1 + a^{-1}\right)◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆ = a + 1 + a^{-1}$$
 
 provided $a^{1/2} - a^{-1/2} \neq 0$, i.e. $a \neq 1$. (If $a = 1$, the given condition would give $2 = 5$, a contradiction, so $a \neq 1$ is guaranteed.)
 
@@ -178,7 +178,7 @@ $$\alpha + \beta = \frac{5}{2}, \quad \alpha\beta = \frac{1}{2}$$
 
 **Step 2: Simplify the target expression.**
 
-$$\frac⧃LB⧄1⧃RB⧄⧃LB⧄\alpha^2+1⧃RB⧄ + \frac⧃LB⧄1⧃RB⧄⧃LB⧄\beta^2+1⧃RB⧄ = \frac⧃LB⧄(\beta^2+1) + (\alpha^2+1)⧃RB⧄⧃LB⧄(\alpha^2+1)(\beta^2+1)⧃RB⧄ = \frac⧃LB⧄\alpha^2 + \beta^2 + 2⧃RB⧄⧃LB⧄\alpha^2\beta^2 + \alpha^2 + \beta^2 + 1⧃RB⧄$$
+$$\frac◆LB◆1◆RB◆◆LB◆\alpha^2+1◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta^2+1◆RB◆ = \frac◆LB◆(\beta^2+1) + (\alpha^2+1)◆RB◆◆LB◆(\alpha^2+1)(\beta^2+1)◆RB◆ = \frac◆LB◆\alpha^2 + \beta^2 + 2◆RB◆◆LB◆\alpha^2\beta^2 + \alpha^2 + \beta^2 + 1◆RB◆$$
 
 **Step 3: Express $\alpha^2 + \beta^2$ using Vieta's.**
 
@@ -190,7 +190,7 @@ $$\alpha^2\beta^2 = (\alpha\beta)^2 = \frac{1}{4}$$
 
 **Step 5: Substitute into the expression.**
 
-$$\frac⧃LB⧄\frac{21}{4} + 2⧃RB⧄⧃LB⧄\frac{1}{4} + \frac{21}{4} + 1⧃RB⧄ = \frac⧃LB⧄\frac{21}{4} + \frac{8}{4}⧃RB⧄⧃LB⧄\frac{1}{4} + \frac{21}{4} + \frac{4}{4}⧃RB⧄ = \frac⧃LB⧄\frac{29}{4}⧃RB⧄⧃LB⧄\frac{26}{4}⧃RB⧄ = \frac{29}{26}$$
+$$\frac◆LB◆\frac{21}{4} + 2◆RB◆◆LB◆\frac{1}{4} + \frac{21}{4} + 1◆RB◆ = \frac◆LB◆\frac{21}{4} + \frac{8}{4}◆RB◆◆LB◆\frac{1}{4} + \frac{21}{4} + \frac{4}{4}◆RB◆ = \frac◆LB◆\frac{29}{4}◆RB◆◆LB◆\frac{26}{4}◆RB◆ = \frac{29}{26}$$
 
 ---
 
@@ -264,7 +264,7 @@ The point of tangency is $(2, 5)$.
 
 ### Q5 — Solution
 
-**(a)** $f(g(x)) = f\left(\frac{1}{x-3}\right) = \sqrt⧃LB⧄\frac{2}{x-3} - 1⧃RB⧄ = \sqrt⧃LB⧄\frac{2 - (x-3)}{x-3}⧃RB⧄ = \sqrt⧃LB⧄\frac{5-x}{x-3}⧃RB⧄$.
+**(a)** $f(g(x)) = f\left(\frac{1}{x-3}\right) = \sqrt◆LB◆\frac{2}{x-3} - 1◆RB◆ = \sqrt◆LB◆\frac{2 - (x-3)}{x-3}◆RB◆ = \sqrt◆LB◆\frac{5-x}{x-3}◆RB◆$.
 
 For this to be defined, we need:
 
@@ -283,7 +283,7 @@ Critical values: $x = 3$ (excluded) and $x = 5$ (included).
 
 Domain of $f \circ g$: $(3, 5]$.
 
-**(b)** $g(f(x)) = g(\sqrt{2x-1}) = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2x-1} - 3⧃RB⧄$.
+**(b)** $g(f(x)) = g(\sqrt{2x-1}) = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2x-1} - 3◆RB◆$.
 
 For this to be defined:
 
@@ -361,7 +361,7 @@ $$(1 + 2x)^5 = \sum_{r=0}^{5} \binom{5}{r} (2x)^r = 1 + 10x + 40x^2 + 80x^3 + 80
 
 $$(1 - x)^{-3} = \sum_{s=0}^{\infty} \binom{-3}{s}(-x)^s$$
 
-$$\binom{-3}{s} = \frac⧃LB⧄(-1)^s (s+2)!⧃RB⧄⧃LB⧄2! \cdot s!⧃RB⧄ = (-1)^s \binom{s+2}{2}$$
+$$\binom{-3}{s} = \frac◆LB◆(-1)^s (s+2)!◆RB◆◆LB◆2! \cdot s!◆RB◆ = (-1)^s \binom{s+2}{2}$$
 
 Therefore:
 
@@ -391,27 +391,27 @@ Coefficient of $x^4$: $15 + 100 + 240 + 240 + 80 = 675$.
 
 Let $\theta = 3x$. Since $x \in [0, 2\pi)$, we have $\theta \in [0, 6\pi)$.
 
-$\cos\theta = \frac{1}{2}$ gives $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi$ or $\theta = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi$ for $n \in \mathbb{Z}$.
+$\cos\theta = \frac{1}{2}$ gives $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ or $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ for $n \in \mathbb{Z}$.
 
 Systematically listing all $\theta \in [0, 6\pi)$:
 
-| $n$ | $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi$ | $\theta = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi$ |
+| $n$ | $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ | $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ |
 |-----|------|------|
-| 0 | $\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ | $\frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ |
-| 1 | $\frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ | $\frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ |
-| 2 | $\frac⧃LB⧄13\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ | $\frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ |
+| 0 | $\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$ |
+| 1 | $\frac◆LB◆7\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆11\pi◆RB◆◆LB◆3◆RB◆$ |
+| 2 | $\frac◆LB◆13\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆17\pi◆RB◆◆LB◆3◆RB◆$ |
 
-All six values are in $[0, 6\pi)$ since $\frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄3⧃RB⧄ = 5\frac{2}{3}\pi \lt 6\pi$.
+All six values are in $[0, 6\pi)$ since $\frac◆LB◆17\pi◆RB◆◆LB◆3◆RB◆ = 5\frac{2}{3}\pi \lt 6\pi$.
 
 Dividing by 3:
 
-$$x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄13\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄9⧃RB⧄$$
+$$x = \frac◆LB◆\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆5\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆7\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆11\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆13\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆17\pi◆RB◆◆LB◆9◆RB◆$$
 
 **(b)** $N = 6$ (from part (a)).
 
 The sum of all $x$-coordinates:
 
-$$S = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄13\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄9⧃RB⧄ = \frac⧃LB⧄60\pi⧃RB⧄⧃LB⧄9⧃RB⧄ = \frac⧃LB⧄20\pi⧃RB⧄⧃LB⧄3⧃RB⧄$$
+$$S = \frac◆LB◆\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆5\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆7\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆11\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆13\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆17\pi◆RB◆◆LB◆9◆RB◆ = \frac◆LB◆60\pi◆RB◆◆LB◆9◆RB◆ = \frac◆LB◆20\pi◆RB◆◆LB◆3◆RB◆$$
 
 ---
 
@@ -433,11 +433,11 @@ Solutions: $x = \ln 2$ and $x = \ln 3$.
 
 Let $u = e^x$ ($u \gt 0$):
 
-$$u^2 - 5u + 5 = 0 \implies u = \frac⧃LB⧄5 \pm \sqrt{25 - 20}⧃RB⧄⧃LB⧄2⧃RB⧄ = \frac⧃LB⧄5 \pm \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$u^2 - 5u + 5 = 0 \implies u = \frac◆LB◆5 \pm \sqrt{25 - 20}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆5 \pm \sqrt{5}◆RB◆◆LB◆2◆RB◆$$
 
-Both roots are positive: $\frac⧃LB⧄5 - \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 1.382 \gt 0$ and $\frac⧃LB⧄5 + \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄ \approx 3.618 \gt 0$.
+Both roots are positive: $\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.382 \gt 0$ and $\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 3.618 \gt 0$.
 
-$$x = \ln\!\left(\frac⧃LB⧄5 + \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄\right) \quad \text{or} \quad x = \ln\!\left(\frac⧃LB⧄5 - \sqrt{5}⧃RB⧄⧃LB⧄2⧃RB⧄\right)$$
+$$x = \ln\!\left(\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆\right) \quad \text{or} \quad x = \ln\!\left(\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆\right)$$
 
 **(c)** The check is necessary because if a root of the quadratic in $u$ were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$, then $u = -1$ or $u = 4$, and $u = -1$ would give $e^x = -1$, which has no real solution. The substitution $u = e^x$ implicitly constrains $u \gt 0$, and students who forget this constraint accept spurious solutions.
 
@@ -541,7 +541,7 @@ The system is inconsistent, so the lines are **skew**.
 
 The shortest distance between two skew lines is:
 
-$$d = \frac⧃LB⧄\lvert(\mathbf{b} - \mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)\rvert⧃RB⧄⧃LB⧄\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert⧃RB⧄$$
+$$d = \frac◆LB◆\lvert(\mathbf{b} - \mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)\rvert◆RB◆◆LB◆\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert◆RB◆$$
 
 $\mathbf{b} - \mathbf{a} = \begin{pmatrix} 3 \\ -1 \\ -3 \end{pmatrix}$.
 
@@ -551,7 +551,7 @@ $\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert = \sqrt{9+9+1} = \sqrt{19}$
 
 $(\mathbf{b}-\mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2) = -9 + 3 + 3 = -3$
 
-$$d = \frac⧃LB⧄\lvert -3 \rvert⧃RB⧄⧃LB⧄\sqrt{19}⧃RB⧄ = \frac⧃LB⧄3⧃RB⧄⧃LB⧄\sqrt{19}⧃RB⧄ = \frac⧃LB⧄3\sqrt{19}⧃RB⧄⧃LB⧄19⧃RB⧄$$
+$$d = \frac◆LB◆\lvert -3 \rvert◆RB◆◆LB◆\sqrt{19}◆RB◆ = \frac◆LB◆3◆RB◆◆LB◆\sqrt{19}◆RB◆ = \frac◆LB◆3\sqrt{19}◆RB◆◆LB◆19◆RB◆$$
 
 ---
 

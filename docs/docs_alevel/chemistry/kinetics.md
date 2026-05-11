@@ -21,7 +21,7 @@ Kinetics is the study of reaction rates and the factors that influence them. The
 The **rate of reaction** is the change in concentration of a reactant or product per unit time:
 
 $$
-\mathrm{Rate} = \frac⧃LB⧄\Delta[\mathrm{product}]⧃RB⧄⧃LB⧄\Delta t⧃RB⧄ = -\frac⧃LB⧄\Delta[\mathrm{reactant}]⧃RB⧄⧃LB⧄\Delta t⧃RB⧄
+\mathrm{Rate} = \frac◆LB◆\Delta[\mathrm{product}]◆RB◆◆LB◆\Delta t◆RB◆ = -\frac◆LB◆\Delta[\mathrm{reactant}]◆RB◆◆LB◆\Delta t◆RB◆
 $$
 
 The negative sign for reactants ensures a positive rate value. For a general reaction:
@@ -31,7 +31,7 @@ a\mathrm{A} + b\mathrm{B} \to c\mathrm{C} + d\mathrm{D}
 $$
 
 $$
-\mathrm{Rate} = -\frac{1}{a}\frac⧃LB⧄d[\mathrm{A}]⧃RB⧄⧃LB⧄dt⧃RB⧄ = -\frac{1}{b}\frac⧃LB⧄d[\mathrm{B}]⧃RB⧄⧃LB⧄dt⧃RB⧄ = \frac{1}{c}\frac⧃LB⧄d[\mathrm{C}]⧃RB⧄⧃LB⧄dt⧃RB⧄ = \frac{1}{d}\frac⧃LB⧄d[\mathrm{D}]⧃RB⧄⧃LB⧄dt⧃RB⧄
+\mathrm{Rate} = -\frac{1}{a}\frac◆LB◆d[\mathrm{A}]◆RB◆◆LB◆dt◆RB◆ = -\frac{1}{b}\frac◆LB◆d[\mathrm{B}]◆RB◆◆LB◆dt◆RB◆ = \frac{1}{c}\frac◆LB◆d[\mathrm{C}]◆RB◆◆LB◆dt◆RB◆ = \frac{1}{d}\frac◆LB◆d[\mathrm{D}]◆RB◆◆LB◆dt◆RB◆
 $$
 
 Units of rate: $\mathrm{mol\,dm^{-3}\,s^{-1}}$.
@@ -66,7 +66,7 @@ On an **enthalpy profile diagram**, $E_a$ is the difference between the energy o
 At a given temperature, the molecules in a gas have a distribution of kinetic energies described by the Maxwell-Boltzmann distribution:
 
 $$
-f(E) = 2\sqrt⧃LB⧄\frac{E}{\pi}⧃RB⧄ \left(\frac{1}{k_BT}\right)^{3/2} e^{-E/k_BT}
+f(E) = 2\sqrt◆LB◆\frac{E}{\pi}◆RB◆ \left(\frac{1}{k_BT}\right)^{3/2} e^{-E/k_BT}
 $$
 
 Key features:
@@ -162,7 +162,7 @@ A plot of $\ln[\mathrm{A}]$ vs $t$ is linear with gradient $-k$.
 The **half-life** of a first-order reaction is:
 
 $$
-t_{1/2} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄k⧃RB⧄ = \frac{0.693}{k}
+t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \frac{0.693}{k}
 $$
 
 The half-life is constant and independent of initial concentration for first-order reactions.
@@ -170,7 +170,7 @@ The half-life is constant and independent of initial concentration for first-ord
 For a **second-order** reaction ($\mathrm{Rate} = k[\mathrm{A}]^2$):
 
 $$
-\frac⧃LB⧄1⧃RB⧄⧃LB⧄[\mathrm{A}]⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄[\mathrm{A}]_0⧃RB⧄ + kt
+\frac◆LB◆1◆RB◆◆LB◆[\mathrm{A}]◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆[\mathrm{A}]_0◆RB◆ + kt
 $$
 
 A plot of $1/[\mathrm{A}]$ vs $t$ is linear with gradient $k$.
@@ -196,7 +196,7 @@ Comparing 1 and 3: $[\mathrm{B}]$ doubles, rate quadruples. Order with respect t
 Rate equation: $\mathrm{Rate} = k[\mathrm{A}][\mathrm{B}]^2$. Overall order = 3.
 
 $$
-k = \frac⧃LB⧄\mathrm{Rate}⧃RB⧄⧃LB⧄[\mathrm{A}][\mathrm{B}]^2⧃RB⧄ = \frac⧃LB⧄1.2 \times 10^{-3}⧃RB⧄⧃LB⧄0.10 \times 0.01⧃RB⧄ = 1.2\,\mathrm{mol^{-2}\,dm^6\,s^{-1}}
+k = \frac◆LB◆\mathrm{Rate}◆RB◆◆LB◆[\mathrm{A}][\mathrm{B}]^2◆RB◆ = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆0.10 \times 0.01◆RB◆ = 1.2\,\mathrm{mol^{-2}\,dm^6\,s^{-1}}
 $$
 
 ### Continuous Monitoring
@@ -244,7 +244,7 @@ $$
 $$
 
 $$
-\ln\left(\frac⧃LB⧄1.50 \times 10^{-3}⧃RB⧄⧃LB⧄3.46 \times 10^{-5}⧃RB⧄\right) = \frac{E_a}{8.314}\left(\frac{1}{298} - \frac{1}{350}\right)
+\ln\left(\frac◆LB◆1.50 \times 10^{-3}◆RB◆◆LB◆3.46 \times 10^{-5}◆RB◆\right) = \frac{E_a}{8.314}\left(\frac{1}{298} - \frac{1}{350}\right)
 $$
 
 $$
@@ -256,7 +256,7 @@ $$
 $$
 
 $$
-E_a = \frac⧃LB⧄3.770 \times 8.314⧃RB⧄⧃LB⧄4.99 \times 10^{-4}⧃RB⧄ = 62,800\,\mathrm{J/mol} = 62.8\,\mathrm{kJ/mol}
+E_a = \frac◆LB◆3.770 \times 8.314◆RB◆◆LB◆4.99 \times 10^{-4}◆RB◆ = 62,800\,\mathrm{J/mol} = 62.8\,\mathrm{kJ/mol}
 $$
 
 ## Catalysis
@@ -323,7 +323,7 @@ When a fast reversible step precedes the rate-determining step, the pre-equilibr
 Because Step 1 is fast and reversible, it is at equilibrium throughout the reaction:
 
 $$
-K = \frac⧃LB⧄[\mathrm{X}]⧃RB⧄⧃LB⧄[\mathrm{A}][\mathrm{B}]⧃RB⧄ \implies [\mathrm{X}] = K[\mathrm{A}][\mathrm{B}]
+K = \frac◆LB◆[\mathrm{X}]◆RB◆◆LB◆[\mathrm{A}][\mathrm{B}]◆RB◆ \implies [\mathrm{X}] = K[\mathrm{A}][\mathrm{B}]
 $$
 
 The rate is determined by the slow step:
@@ -341,7 +341,7 @@ For more complex mechanisms, the steady-state approximation assumes that the con
 For an intermediate $\mathrm{X}$:
 
 $$
-\frac⧃LB⧄d[\mathrm{X}]⧃RB⧄⧃LB⧄dt⧃RB⧄ \approx 0
+\frac◆LB◆d[\mathrm{X}]◆RB◆◆LB◆dt◆RB◆ \approx 0
 $$
 
 **Worked Example.** Consider the decomposition of $\mathrm{N}_2\mathrm{O}_5$:
@@ -361,7 +361,7 @@ Proposed mechanism:
 Applying steady-state to $\mathrm{NO}_3$:
 
 $$
-\frac⧃LB⧄d[\mathrm{NO}_3]⧃RB⧄⧃LB⧄dt⧃RB⧄ = k_1[\mathrm{N}_2\mathrm{O}_5] - k_{-1}[\mathrm{NO}_2][\mathrm{NO}_3] - k_2[\mathrm{NO}_2][\mathrm{NO}_3] - k_3[\mathrm{NO}][\mathrm{NO}_3] = 0
+\frac◆LB◆d[\mathrm{NO}_3]◆RB◆◆LB◆dt◆RB◆ = k_1[\mathrm{N}_2\mathrm{O}_5] - k_{-1}[\mathrm{NO}_2][\mathrm{NO}_3] - k_2[\mathrm{NO}_2][\mathrm{NO}_3] - k_3[\mathrm{NO}][\mathrm{NO}_3] = 0
 $$
 
 This leads (after simplification) to a rate equation of the form $\mathrm{Rate} = k_\mathrm{eff}[\mathrm{N}_2\mathrm{O}_5]$, showing that the reaction is experimentally first-order, consistent with observation. The key insight is that the intermediate $\mathrm{NO}_3$ is consumed as fast as it is formed.
@@ -387,7 +387,7 @@ Starch indicator is added. As long as thiosulphate remains, the iodine concentra
 **Analysis:** If the fixed amount of thiosulphate is $n_0$ moles, then the amount of $\mathrm{I}_2$ produced when the colour appears is $\frac{n_0}{2}$ moles, and the amount of $\mathrm{S}_2\mathrm{O}_8^{2-}$ reacted is $\frac{n_0}{2}$ moles. The rate is:
 
 $$
-\mathrm{Rate} = \frac⧃LB⧄n_0 / 2⧃RB⧄⧃LB⧄t \times V⧃RB⧄
+\mathrm{Rate} = \frac◆LB◆n_0 / 2◆RB◆◆LB◆t \times V◆RB◆
 $$
 
 where $t$ is the time for the colour change and $V$ is the total volume. By varying the initial concentrations of $\mathrm{S}_2\mathrm{O}_8^{2-}$ and $\mathrm{I}^-$ while keeping the thiosulphate amount constant, the orders of reaction with respect to each reactant can be determined.
@@ -419,13 +419,13 @@ Adding a catalyst lowers $E_a$ without changing $A$. On an Arrhenius plot ($\ln 
 The ratio of rate constants at a given temperature is:
 
 $$
-\frac⧃LB⧄k_\mathrm{cat}⧃RB⧄⧃LB⧄k_\mathrm{uncat}⧃RB⧄ = e^{(E_{a,\mathrm{uncat}} - E_{a,\mathrm{cat}})/RT}
+\frac◆LB◆k_\mathrm{cat}◆RB◆◆LB◆k_\mathrm{uncat}◆RB◆ = e^{(E_{a,\mathrm{uncat}} - E_{a,\mathrm{cat}})/RT}
 $$
 
 **Worked Example.** A reaction has $E_a = 75\,\mathrm{kJ/mol}$ without a catalyst and $E_a = 50\,\mathrm{kJ/mol}$ with a catalyst. Calculate the rate enhancement at $298\,\mathrm{K}$.
 
 $$
-\frac⧃LB⧄k_\mathrm{cat}⧃RB⧄⧃LB⧄k_\mathrm{uncat}⧃RB⧄ = e^{(75000 - 50000)/(8.314 \times 298)} = e^{25000/2478} = e^{10.09} = 24,300
+\frac◆LB◆k_\mathrm{cat}◆RB◆◆LB◆k_\mathrm{uncat}◆RB◆ = e^{(75000 - 50000)/(8.314 \times 298)} = e^{25000/2478} = e^{10.09} = 24,300
 $$
 
 The catalyst increases the rate by a factor of approximately 24,000 at room temperature.
@@ -496,13 +496,13 @@ $$
 At $298\,\mathrm{K}$:
 
 $$
-f = \exp\left(\frac⧃LB⧄-50000⧃RB⧄⧃LB⧄8.314 \times 298⧃RB⧄\right) = \exp(-20.17) = 1.7 \times 10^{-9}
+f = \exp\left(\frac◆LB◆-50000◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(-20.17) = 1.7 \times 10^{-9}
 $$
 
 At $400\,\mathrm{K}$:
 
 $$
-f = \exp\left(\frac⧃LB⧄-50000⧃RB⧄⧃LB⧄8.314 \times 400⧃RB⧄\right) = \exp(-15.03) = 3.2 \times 10^{-7}
+f = \exp\left(\frac◆LB◆-50000◆RB◆◆LB◆8.314 \times 400◆RB◆\right) = \exp(-15.03) = 3.2 \times 10^{-7}
 $$
 
 Increasing the temperature from $298\,\mathrm{K}$ to $400\,\mathrm{K}$ increases the fraction of reactive molecules by a factor of approximately 190, even though the temperature increased by only 34\%. This exponential temperature dependence explains why small temperature changes can have large effects on reaction rate.
@@ -512,12 +512,12 @@ Increasing the temperature from $298\,\mathrm{K}$ to $400\,\mathrm{K}$ increases
 Enzymes are biological catalysts (proteins) that follow Michaelis-Menten kinetics:
 
 $$
-v = \frac⧃LB⧄V_{\max}[S]⧃RB⧄⧃LB⧄K_m + [S]⧃RB⧄
+v = \frac◆LB◆V_{\max}[S]◆RB◆◆LB◆K_m + [S]◆RB◆
 $$
 
 where $V_{\max}$ is the maximum rate (when all enzyme active sites are occupied), $[S]$ is the substrate concentration, and $K_m$ is the Michaelis constant (substrate concentration at half $V_{\max}$).
 
-- At low $[S] \ll K_m$: $v \approx \frac⧃LB⧄V_{\max}⧃RB⧄⧃LB⧄K_m⧃RB⧄[S]$ -- rate is approximately first-order in $[S]$.
+- At low $[S] \ll K_m$: $v \approx \frac◆LB◆V_{\max}◆RB◆◆LB◆K_m◆RB◆[S]$ -- rate is approximately first-order in $[S]$.
 - At high $[S] \gg K_m$: $v \approx V_{\max}$ -- rate is approximately zero-order in $[S]$ (enzyme is saturated).
 
 This is directly analogous to the behaviour of heterogeneous catalysts at low and high reactant concentrations.
@@ -618,7 +618,7 @@ $$
 For 90% consumption: $[\mathrm{A}] = 0.10[\mathrm{A}]_0$.
 
 $$
-\ln\left(\frac⧃LB⧄[\mathrm{A}]⧃RB⧄⧃LB⧄[\mathrm{A}]_0⧃RB⧄\right) = -kt
+\ln\left(\frac◆LB◆[\mathrm{A}]◆RB◆◆LB◆[\mathrm{A}]_0◆RB◆\right) = -kt
 $$
 
 $$
@@ -630,7 +630,7 @@ $$
 $$
 
 $$
-t = \frac⧃LB⧄2.303⧃RB⧄⧃LB⧄5.775 \times 10^{-3}⧃RB⧄ = 399\,\mathrm{s}
+t = \frac◆LB◆2.303◆RB◆◆LB◆5.775 \times 10^{-3}◆RB◆ = 399\,\mathrm{s}
 $$
 
 </details>
@@ -662,7 +662,7 @@ Comparing experiments 1 and 3 (A constant, B doubled): rate quadruples. Order wi
 Using experiment 1: $1.2 \times 10^{-3} = k(0.10)(0.10)^2 = k(0.001)$
 
 $$
-k = \frac⧃LB⧄1.2 \times 10^{-3}⧃RB⧄⧃LB⧄0.001⧃RB⧄ = 1.2\,\mathrm{dm}^6\,\mathrm{mol}^{-2}\,\mathrm{s}^{-1}
+k = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆0.001◆RB◆ = 1.2\,\mathrm{dm}^6\,\mathrm{mol}^{-2}\,\mathrm{s}^{-1}
 $$
 
 (c) $\text{rate} = 1.2 \times 0.15 \times (0.25)^2 = 1.2 \times 0.15 \times 0.0625 = 0.01125\,\mathrm{mol\,dm^{-3}\,s^{-1}} = 1.1 \times 10^{-2}\,\mathrm{mol\,dm^{-3}\,s^{-1}}$
@@ -683,7 +683,7 @@ $$
 $$
 
 $$
-\ln\frac⧃LB⧄7.69 \times 10^{-3}⧃RB⧄⧃LB⧄3.46 \times 10^{-5}⧃RB⧄ = \ln(222.3) = 5.403
+\ln\frac◆LB◆7.69 \times 10^{-3}◆RB◆◆LB◆3.46 \times 10^{-5}◆RB◆ = \ln(222.3) = 5.403
 $$
 
 $$
@@ -695,11 +695,11 @@ $$
 $$
 
 $$
-5.403 = \frac⧃LB⧄E_a \times 4.762 \times 10^{-4}⧃RB⧄⧃LB⧄8.314⧃RB⧄
+5.403 = \frac◆LB◆E_a \times 4.762 \times 10^{-4}◆RB◆◆LB◆8.314◆RB◆
 $$
 
 $$
-E_a = \frac⧃LB⧄5.403 \times 8.314⧃RB⧄⧃LB⧄4.762 \times 10^{-4}⧃RB⧄ = \frac⧃LB⧄44.92⧃RB⧄⧃LB⧄4.762 \times 10^{-4}⧃RB⧄ = 94,300\,\mathrm{J/mol} = 94.3\,\mathrm{kJ/mol}
+E_a = \frac◆LB◆5.403 \times 8.314◆RB◆◆LB◆4.762 \times 10^{-4}◆RB◆ = \frac◆LB◆44.92◆RB◆◆LB◆4.762 \times 10^{-4}◆RB◆ = 94,300\,\mathrm{J/mol} = 94.3\,\mathrm{kJ/mol}
 $$
 
 </details>
@@ -792,13 +792,13 @@ Monitor the concentration of a reactant or product over time. Common techniques:
 
 For a first-order reaction, the half-life is constant and independent of concentration. Plot concentration vs time and measure the time for the concentration to halve at several points. If the half-life is constant, the reaction is first-order.
 
-$$t_{1/2} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄k⧃RB⧄ = \frac{0.693}{k}$$
+$$t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \frac{0.693}{k}$$
 
 ### Arrhenius Applications: Catalyst Effect on Activation Energy
 
 **Worked Example:** A reaction has $E_a = 75\,\mathrm{kJ/mol}$ without a catalyst and $E_a = 50\,\mathrm{kJ/mol}$ with a catalyst. Calculate the ratio of rate constants at $298\,\mathrm{K}$, assuming the pre-exponential factor $A$ is unchanged.
 
-$$\frac⧃LB⧄k_\text{cat}⧃RB⧄⧃LB⧄k_\text{uncat}⧃RB⧄ = \frac⧃LB⧄Ae^{-E_{a,\text{cat}}/RT}⧃RB⧄⧃LB⧄Ae^{-E_{a,\text{uncat}}/RT}⧃RB⧄ = e^{(E_{a,\text{uncat}} - E_{a,\text{cat}})/RT}$$
+$$\frac◆LB◆k_\text{cat}◆RB◆◆LB◆k_\text{uncat}◆RB◆ = \frac◆LB◆Ae^{-E_{a,\text{cat}}/RT}◆RB◆◆LB◆Ae^{-E_{a,\text{uncat}}/RT}◆RB◆ = e^{(E_{a,\text{uncat}} - E_{a,\text{cat}})/RT}$$
 
 $$= e^{(75000 - 50000)/(8.314 \times 298)} = e^{25000/2478} = e^{10.09} = 2.4 \times 10^4$$
 
@@ -831,7 +831,7 @@ Rate equation: Rate $= k[\mathrm{A}][\mathrm{B}]^2$ (1 mark).
 
 (b) Using experiment 1: $1.2 \times 10^{-4} = k \times 0.10 \times (0.10)^2 = k \times 0.001$
 
-$k = \frac⧃LB⧄1.2 \times 10^{-4}⧃RB⧄⧃LB⧄0.001⧃RB⧄ = 0.12\,\mathrm{mol}^{-2}\,\mathrm{dm}^6\,\mathrm{s}^{-1}$ (1 mark for calculation, 1 mark for units).
+$k = \frac◆LB◆1.2 \times 10^{-4}◆RB◆◆LB◆0.001◆RB◆ = 0.12\,\mathrm{mol}^{-2}\,\mathrm{dm}^6\,\mathrm{s}^{-1}$ (1 mark for calculation, 1 mark for units).
 
 </details>
 
@@ -871,7 +871,7 @@ $120k = 1.609 - 2.303 = -0.694$
 
 $k = \frac{0.694}{120} = 5.78 \times 10^{-3}\,\mathrm{s}^{-1}$ (1 mark for equation, 1 mark for value.)
 
-(b) $t_{1/2} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄k⧃RB⧄ = \frac⧃LB⧄0.693⧃RB⧄⧃LB⧄5.78 \times 10^{-3}⧃RB⧄ = 120\,\mathrm{s}$ (1 mark.)
+(b) $t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \frac◆LB◆0.693◆RB◆◆LB◆5.78 \times 10^{-3}◆RB◆ = 120\,\mathrm{s}$ (1 mark.)
 
 (c) $0.025\,\mathrm{mol\,dm^{-3} = 0.200 \times \left(\frac{1}{2}\right)^n$ where $n$ is the number of half-lives.
 

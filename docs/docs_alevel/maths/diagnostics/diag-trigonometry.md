@@ -29,9 +29,9 @@ In triangle $ABC$, $a = 8$, $b = 10$, and $A = 35°$.
 
 **(a)** By the sine rule:
 
-$$\frac⧃LB⧄\sin B⧃RB⧄⧃LB⧄b⧃RB⧄ = \frac⧃LB⧄\sin A⧃RB⧄⧃LB⧄a⧃RB⧄$$
+$$\frac◆LB◆\sin B◆RB◆◆LB◆b◆RB◆ = \frac◆LB◆\sin A◆RB◆◆LB◆a◆RB◆$$
 
-$$\sin B = \frac⧃LB⧄b \sin A⧃RB⧄⧃LB⧄a⧃RB⧄ = \frac⧃LB⧄10 \sin 35°⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄10 \times 0.5736⧃RB⧄⧃LB⧄8⧃RB⧄ = 0.7170$$
+$$\sin B = \frac◆LB◆b \sin A◆RB◆◆LB◆a◆RB◆ = \frac◆LB◆10 \sin 35°◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆10 \times 0.5736◆RB◆◆LB◆8◆RB◆ = 0.7170$$
 
 Since $\sin B = 0.7170$ and $B$ is an angle in a triangle ($0° \lt B \lt 180°$), there are two solutions:
 
@@ -45,13 +45,13 @@ Both are valid: $B_1 + A = 80.8° \lt 180°$ and $B_2 + A = 169.2° \lt 180°$.
 
 $$C_1 = 180° - 35° - 45.8° = 99.2°$$
 
-$$c_1 = \frac⧃LB⧄a \sin C_1⧃RB⧄⧃LB⧄\sin A⧃RB⧄ = \frac⧃LB⧄8 \sin 99.2°⧃RB⧄⧃LB⧄\sin 35°⧃RB⧄ = \frac⧃LB⧄8 \times 0.9863⧃RB⧄⧃LB⧄0.5736⧃RB⧄ = 13.76$$
+$$c_1 = \frac◆LB◆a \sin C_1◆RB◆◆LB◆\sin A◆RB◆ = \frac◆LB◆8 \sin 99.2°◆RB◆◆LB◆\sin 35°◆RB◆ = \frac◆LB◆8 \times 0.9863◆RB◆◆LB◆0.5736◆RB◆ = 13.76$$
 
 For $B_2 = 134.2°$:
 
 $$C_2 = 180° - 35° - 134.2° = 10.8°$$
 
-$$c_2 = \frac⧃LB⧄8 \sin 10.8°⧃RB⧄⧃LB⧄\sin 35°⧃RB⧄ = \frac⧃LB⧄8 \times 0.1874⧃RB⧄⧃LB⧄0.5736⧃RB⧄ = 2.61$$
+$$c_2 = \frac◆LB◆8 \sin 10.8°◆RB◆◆LB◆\sin 35°◆RB◆ = \frac◆LB◆8 \times 0.1874◆RB◆◆LB◆0.5736◆RB◆ = 2.61$$
 
 **(c)** The cosine rule for finding $B$ is $\cos B = \frac{a^2 + c^2 - b^2}{2ac}$. This requires knowing $c$, which is not given. The cosine rule is not directly applicable with the SSA (two sides and a non-included angle) configuration.
 
@@ -100,22 +100,22 @@ All solutions: $\theta = 0°, 60°, 180°, 300°, 360°$.
 **(c)** $\tan 2x = \tan x$ for $x \in [0, \pi)$.
 
 First, establish the domain. Both $\tan x$ and $\tan 2x$ must be defined:
-- $\tan x$ undefined at $x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$
-- $\tan 2x$ undefined at $2x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$ and $2x = \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄$, i.e. $x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$ and $x = \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄4⧃RB⧄$
+- $\tan x$ undefined at $x = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$
+- $\tan 2x$ undefined at $2x = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ and $2x = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$, i.e. $x = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$ and $x = \frac◆LB◆3\pi◆RB◆◆LB◆4◆RB◆$
 
-So the domain excludes $x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄, \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄4⧃RB⧄$.
+So the domain excludes $x = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆, \frac◆LB◆3\pi◆RB◆◆LB◆4◆RB◆$.
 
-Using the double angle formula $\tan 2x = \frac⧃LB⧄2\tan x⧃RB⧄⧃LB⧄1 - \tan^2 x⧃RB⧄$:
+Using the double angle formula $\tan 2x = \frac◆LB◆2\tan x◆RB◆◆LB◆1 - \tan^2 x◆RB◆$:
 
-$$\frac⧃LB⧄2\tan x⧃RB⧄⧃LB⧄1 - \tan^2 x⧃RB⧄ = \tan x$$
+$$\frac◆LB◆2\tan x◆RB◆◆LB◆1 - \tan^2 x◆RB◆ = \tan x$$
 
 **Do NOT divide by $\tan x$.** Bring everything to one side:
 
-$$\frac⧃LB⧄2\tan x - \tan x(1 - \tan^2 x)⧃RB⧄⧃LB⧄1 - \tan^2 x⧃RB⧄ = 0$$
+$$\frac◆LB◆2\tan x - \tan x(1 - \tan^2 x)◆RB◆◆LB◆1 - \tan^2 x◆RB◆ = 0$$
 
-$$\frac⧃LB⧄\tan x + \tan^3 x⧃RB⧄⧃LB⧄1 - \tan^2 x⧃RB⧄ = 0$$
+$$\frac◆LB◆\tan x + \tan^3 x◆RB◆◆LB◆1 - \tan^2 x◆RB◆ = 0$$
 
-$$\frac⧃LB⧄\tan x(1 + \tan^2 x)⧃RB⧄⧃LB⧄1 - \tan^2 x⧃RB⧄ = 0$$
+$$\frac◆LB◆\tan x(1 + \tan^2 x)◆RB◆◆LB◆1 - \tan^2 x◆RB◆ = 0$$
 
 Since $1 + \tan^2 x = \sec^2 x \geq 1$ for all $x$ where $\tan x$ is defined, the numerator is zero when $\tan x = 0$:
 
@@ -135,7 +135,7 @@ Solution: $x = 0$ only.
 
 **(a)** Solve $\cos(3x) = \frac{1}{2}$ for $x \in [0, 2\pi)$. A common error produces only 2 or 4 solutions. Find all solutions.
 
-**(b)** A student argues: "$\cos(3x) = \frac{1}{2}$ means $3x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ or $3x = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄$, giving $x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄9⧃RB⧄$ or $x = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄9⧃RB⧄$." Explain the error in this reasoning and state how many solutions the student is missing.
+**(b)** A student argues: "$\cos(3x) = \frac{1}{2}$ means $3x = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ or $3x = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$, giving $x = \frac◆LB◆\pi◆RB◆◆LB◆9◆RB◆$ or $x = \frac◆LB◆5\pi◆RB◆◆LB◆9◆RB◆$." Explain the error in this reasoning and state how many solutions the student is missing.
 
 **(c)** The curve $y = \cos(3x)$ intersects the line $y = \frac{1}{2}$ at $N$ distinct points in the interval $[0, 2\pi)$. Find $N$ and the sum of all $x$-coordinates of the intersection points.
 
@@ -147,29 +147,29 @@ Solution: $x = 0$ only.
 
 Let $\theta = 3x$. Since $x \in [0, 2\pi)$, we have $\theta \in [0, 6\pi)$.
 
-$\cos\theta = \frac{1}{2}$ gives $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi$ or $\theta = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi$ for $n \in \mathbb{Z}$.
+$\cos\theta = \frac{1}{2}$ gives $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ or $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ for $n \in \mathbb{Z}$.
 
 Systematically listing all $\theta \in [0, 6\pi)$:
 
-| $n$ | $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi$ | $\theta = \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄ + 2n\pi$ |
+| $n$ | $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ | $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ |
 |-----|------|------|
-| 0 | $\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ | $\frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ |
-| 1 | $\frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ | $\frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ |
-| 2 | $\frac⧃LB⧄13\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ | $\frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄3⧃RB⧄$ |
+| 0 | $\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆$ |
+| 1 | $\frac◆LB◆7\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆11\pi◆RB◆◆LB◆3◆RB◆$ |
+| 2 | $\frac◆LB◆13\pi◆RB◆◆LB◆3◆RB◆$ | $\frac◆LB◆17\pi◆RB◆◆LB◆3◆RB◆$ |
 
-All six values are in $[0, 6\pi)$ since $\frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄3⧃RB⧄ = 5\frac{2}{3}\pi \lt 6\pi$.
+All six values are in $[0, 6\pi)$ since $\frac◆LB◆17\pi◆RB◆◆LB◆3◆RB◆ = 5\frac{2}{3}\pi \lt 6\pi$.
 
 Dividing by 3:
 
-$$x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄13\pi⧃RB⧄⧃LB⧄9⧃RB⧄,\quad \frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄9⧃RB⧄$$
+$$x = \frac◆LB◆\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆5\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆7\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆11\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆13\pi◆RB◆◆LB◆9◆RB◆,\quad \frac◆LB◆17\pi◆RB◆◆LB◆9◆RB◆$$
 
-**(b)** The student correctly identifies the principal solutions for $3x$ but fails to account for the fact that the period of $\cos(3x)$ is $\frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄3⧃RB⧄$, not $2\pi$. When $x$ ranges over $[0, 2\pi)$, the argument $3x$ ranges over $[0, 6\pi)$, which spans three full periods of cosine. The student finds solutions from only the first period, missing the four solutions from the second and third periods. The student is missing 4 out of 6 solutions.
+**(b)** The student correctly identifies the principal solutions for $3x$ but fails to account for the fact that the period of $\cos(3x)$ is $\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆$, not $2\pi$. When $x$ ranges over $[0, 2\pi)$, the argument $3x$ ranges over $[0, 6\pi)$, which spans three full periods of cosine. The student finds solutions from only the first period, missing the four solutions from the second and third periods. The student is missing 4 out of 6 solutions.
 
 **(c)** $N = 6$ (from part (a)).
 
 The sum of all $x$-coordinates:
 
-$$S = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄5\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄7\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄11\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄13\pi⧃RB⧄⧃LB⧄9⧃RB⧄ + \frac⧃LB⧄17\pi⧃RB⧄⧃LB⧄9⧃RB⧄ = \frac⧃LB⧄60\pi⧃RB⧄⧃LB⧄9⧃RB⧄ = \frac⧃LB⧄20\pi⧃RB⧄⧃LB⧄3⧃RB⧄$$
+$$S = \frac◆LB◆\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆5\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆7\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆11\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆13\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆17\pi◆RB◆◆LB◆9◆RB◆ = \frac◆LB◆60\pi◆RB◆◆LB◆9◆RB◆ = \frac◆LB◆20\pi◆RB◆◆LB◆3◆RB◆$$
 
 ---
 
@@ -187,7 +187,7 @@ A ladder of length 5 metres is leaning against a vertical wall. The foot of the 
 
 **(b)** Find the angle $\theta$ between the ladder and the ground at the instant when the top of the ladder is sliding down at the same speed as the foot is being pulled away.
 
-**(c)** Show that $\theta$ is always decreasing, and find the rate of change of $\theta$ in rad/s when $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$.
+**(c)** Show that $\theta$ is always decreasing, and find the rate of change of $\theta$ in rad/s when $\theta = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
 [Difficulty: hard. Combines implicit differentiation with trigonometric relationships in a kinematics context.]
 
@@ -213,23 +213,23 @@ From $x\frac{dx}{dt} + y\frac{dy}{dt} = 0$: $\frac{dy}{dt} = -\frac{x}{y}\frac{d
 
 $$\left\lvert-\frac{x}{y} \cdot 0.5\right\rvert = 0.5 \implies \frac{x}{y} = 1 \implies x = y$$
 
-Since $x^2 + y^2 = 25$ and $x = y$: $2x^2 = 25$, so $x = \frac⧃LB⧄5⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄$.
+Since $x^2 + y^2 = 25$ and $x = y$: $2x^2 = 25$, so $x = \frac◆LB◆5◆RB◆◆LB◆\sqrt{2}◆RB◆$.
 
-$\cos\theta = \frac{x}{5} = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄$, giving $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$.
+$\cos\theta = \frac{x}{5} = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆$, giving $\theta = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
 **(c)** $\cos\theta = \frac{x}{5}$.
 
 Differentiating with respect to $t$:
 
-$$-\sin\theta \cdot \frac⧃LB⧄d\theta⧃RB⧄⧃LB⧄dt⧃RB⧄ = \frac{1}{5}\frac{dx}{dt}$$
+$$-\sin\theta \cdot \frac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = \frac{1}{5}\frac{dx}{dt}$$
 
-$$\frac⧃LB⧄d\theta⧃RB⧄⧃LB⧄dt⧃RB⧄ = -\frac⧃LB⧄1⧃RB⧄⧃LB⧄5\sin\theta⧃RB⧄ \cdot \frac{dx}{dt} = -\frac⧃LB⧄0.5⧃RB⧄⧃LB⧄5\sin\theta⧃RB⧄ = -\frac⧃LB⧄1⧃RB⧄⧃LB⧄10\sin\theta⧃RB⧄$$
+$$\frac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆5\sin\theta◆RB◆ \cdot \frac{dx}{dt} = -\frac◆LB◆0.5◆RB◆◆LB◆5\sin\theta◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆10\sin\theta◆RB◆$$
 
-Since $\sin\theta \gt 0$ for $0 \lt \theta \lt \pi$, we have $\frac⧃LB⧄d\theta⧃RB⧄⧃LB⧄dt⧃RB⧄ \lt 0$, confirming $\theta$ is always decreasing.
+Since $\sin\theta \gt 0$ for $0 \lt \theta \lt \pi$, we have $\frac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ \lt 0$, confirming $\theta$ is always decreasing.
 
-When $\theta = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$: $\sin\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄ = \frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄$.
+When $\theta = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$: $\sin\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆$.
 
-$$\frac⧃LB⧄d\theta⧃RB⧄⧃LB⧄dt⧃RB⧄ = -\frac⧃LB⧄1⧃RB⧄⧃LB⧄10 \cdot \frac{1}{\sqrt{2}}⧃RB⧄ = -\frac⧃LB⧄\sqrt{2}⧃RB⧄⧃LB⧄10⧃RB⧄ \text{ rad/s}$$
+$$\frac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆10 \cdot \frac{1}{\sqrt{2}}◆RB◆ = -\frac◆LB◆\sqrt{2}◆RB◆◆LB◆10◆RB◆ \text{ rad/s}$$
 
 ---
 
@@ -273,11 +273,11 @@ $$= -a^2[\sin^2 t + 3\sin t\sin 2t + 2\sin^2 2t]$$
 
 Integrate each term separately over $[0, 2\pi]$:
 
-$$\int_0^{2\pi}\sin^2 t\, dt = \int_0^{2\pi}\frac⧃LB⧄1 - \cos 2t⧃RB⧄⧃LB⧄2⧃RB⧄\, dt = \left[\frac{t}{2} - \frac⧃LB⧄\sin 2t⧃RB⧄⧃LB⧄4⧃RB⧄\right]_0^{2\pi} = \pi$$
+$$\int_0^{2\pi}\sin^2 t\, dt = \int_0^{2\pi}\frac◆LB◆1 - \cos 2t◆RB◆◆LB◆2◆RB◆\, dt = \left[\frac{t}{2} - \frac◆LB◆\sin 2t◆RB◆◆LB◆4◆RB◆\right]_0^{2\pi} = \pi$$
 
-$$\int_0^{2\pi}\sin t\sin 2t\, dt = \int_0^{2\pi}2\sin^2 t\cos t\, dt = 2\left[\frac⧃LB⧄\sin^3 t⧃RB⧄⧃LB⧄3⧃RB⧄\right]_0^{2\pi} = 0$$
+$$\int_0^{2\pi}\sin t\sin 2t\, dt = \int_0^{2\pi}2\sin^2 t\cos t\, dt = 2\left[\frac◆LB◆\sin^3 t◆RB◆◆LB◆3◆RB◆\right]_0^{2\pi} = 0$$
 
-$$\int_0^{2\pi}\sin^2 2t\, dt = \int_0^{2\pi}\frac⧃LB⧄1 - \cos 4t⧃RB⧄⧃LB⧄2⧃RB⧄\, dt = \left[\frac{t}{2} - \frac⧃LB⧄\sin 4t⧃RB⧄⧃LB⧄8⧃RB⧄\right]_0^{2\pi} = \pi$$
+$$\int_0^{2\pi}\sin^2 2t\, dt = \int_0^{2\pi}\frac◆LB◆1 - \cos 4t◆RB◆◆LB◆2◆RB◆\, dt = \left[\frac{t}{2} - \frac◆LB◆\sin 4t◆RB◆◆LB◆8◆RB◆\right]_0^{2\pi} = \pi$$
 
 Therefore:
 
@@ -297,23 +297,23 @@ $$\cos t + 2(2\cos^2 t - 1) = 0 \implies 4\cos^2 t + \cos t - 2 = 0$$
 
 Let $u = \cos t$:
 
-$$u = \frac⧃LB⧄-1 \pm \sqrt{1 + 32}⧃RB⧄⧃LB⧄8⧃RB⧄ = \frac⧃LB⧄-1 \pm \sqrt{33}⧃RB⧄⧃LB⧄8⧃RB⧄$$
+$$u = \frac◆LB◆-1 \pm \sqrt{1 + 32}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆-1 \pm \sqrt{33}◆RB◆◆LB◆8◆RB◆$$
 
-Both roots lie in $[-1, 1]$: $u_1 = \frac⧃LB⧄\sqrt{33}-1⧃RB⧄⧃LB⧄8⧃RB⧄ \approx 0.593$ and $u_2 = -\frac⧃LB⧄\sqrt{33}+1⧃RB⧄⧃LB⧄8⧃RB⧄ \approx -0.843$.
+Both roots lie in $[-1, 1]$: $u_1 = \frac◆LB◆\sqrt{33}-1◆RB◆◆LB◆8◆RB◆ \approx 0.593$ and $u_2 = -\frac◆LB◆\sqrt{33}+1◆RB◆◆LB◆8◆RB◆ \approx -0.843$.
 
 Each gives two values of $t$ in $[0, 2\pi)$, producing four horizontal tangent points.
 
-For $u_1 = \frac⧃LB⧄\sqrt{33}-1⧃RB⧄⧃LB⧄8⧃RB⧄$: $t = \pm\arccos\left(\frac⧃LB⧄\sqrt{33}-1⧃RB⧄⧃LB⧄8⧃RB⧄\right)$. Substituting into $x$ and $y$:
+For $u_1 = \frac◆LB◆\sqrt{33}-1◆RB◆◆LB◆8◆RB◆$: $t = \pm\arccos\left(\frac◆LB◆\sqrt{33}-1◆RB◆◆LB◆8◆RB◆\right)$. Substituting into $x$ and $y$:
 
-$$x = a\left(\frac⧃LB⧄\sqrt{33}-1⧃RB⧄⧃LB⧄8⧃RB⧄\right) + a\left(2\left(\frac⧃LB⧄\sqrt{33}-1⧃RB⧄⧃LB⧄8⧃RB⧄\right)^2 - 1\right)$$
+$$x = a\left(\frac◆LB◆\sqrt{33}-1◆RB◆◆LB◆8◆RB◆\right) + a\left(2\left(\frac◆LB◆\sqrt{33}-1◆RB◆◆LB◆8◆RB◆\right)^2 - 1\right)$$
 
-$$= a\left(\frac⧃LB⧄\sqrt{33}-1⧃RB⧄⧃LB⧄8⧃RB⧄ + \frac⧃LB⧄34-2\sqrt{33}⧃RB⧄⧃LB⧄32⧃RB⧄ - 1\right) = a \cdot \frac⧃LB⧄4\sqrt{33}-4+34-2\sqrt{33}-32⧃RB⧄⧃LB⧄32⧃RB⧄ = \frac⧃LB⧄a(\sqrt{33}-1)⧃RB⧄⧃LB⧄16⧃RB⧄$$
+$$= a\left(\frac◆LB◆\sqrt{33}-1◆RB◆◆LB◆8◆RB◆ + \frac◆LB◆34-2\sqrt{33}◆RB◆◆LB◆32◆RB◆ - 1\right) = a \cdot \frac◆LB◆4\sqrt{33}-4+34-2\sqrt{33}-32◆RB◆◆LB◆32◆RB◆ = \frac◆LB◆a(\sqrt{33}-1)◆RB◆◆LB◆16◆RB◆$$
 
 By symmetry, the four horizontal tangent points are:
 
-$$\left(\frac⧃LB⧄a(\sqrt{33}-1)⧃RB⧄⧃LB⧄16⧃RB⧄,\quad \pm\frac{a}{16}\sqrt⧃LB⧄30+2\sqrt{33}⧃RB⧄\right)$$
+$$\left(\frac◆LB◆a(\sqrt{33}-1)◆RB◆◆LB◆16◆RB◆,\quad \pm\frac{a}{16}\sqrt◆LB◆30+2\sqrt{33}◆RB◆\right)$$
 
-$$\left(\frac⧃LB⧄-a(\sqrt{33}+1)⧃RB⧄⧃LB⧄16⧃RB⧄,\quad \pm\frac{a}{16}\sqrt⧃LB⧄30-2\sqrt{33}⧃RB⧄\right)$$
+$$\left(\frac◆LB◆-a(\sqrt{33}+1)◆RB◆◆LB◆16◆RB◆,\quad \pm\frac{a}{16}\sqrt◆LB◆30-2\sqrt{33}◆RB◆\right)$$
 
 ---
 
@@ -321,7 +321,7 @@ $$\left(\frac⧃LB⧄-a(\sqrt{33}+1)⧃RB⧄⧃LB⧄16⧃RB⧄,\quad \pm\frac{a}
 
 **Question:**
 
-The function $f$ is defined by $f(x) = \cos x$ on the domain $\left[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$.
+The function $f$ is defined by $f(x) = \cos x$ on the domain $\left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$.
 
 **(a)** State the range of $f$ and explain why $f^{-1}$ exists on this domain.
 
@@ -335,44 +335,44 @@ The function $f$ is defined by $f(x) = \cos x$ on the domain $\left[0, \frac⧃L
 
 **Solution:**
 
-**(a)** On $\left[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$, $f'(x) = -\sin x \lt 0$ for $0 \lt x \lt \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$, so $f$ is strictly decreasing and therefore injective.
+**(a)** On $\left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$, $f'(x) = -\sin x \lt 0$ for $0 \lt x \lt \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$, so $f$ is strictly decreasing and therefore injective.
 
-$f(0) = 1$ and $f\!\left(\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right) = 0$, so the range is $[0, 1]$.
+$f(0) = 1$ and $f\!\left(\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right) = 0$, so the range is $[0, 1]$.
 
-Since $f$ is injective, $f^{-1}$ exists. Its domain is $[0, 1]$ and its range is $\left[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$.
+Since $f$ is injective, $f^{-1}$ exists. Its domain is $[0, 1]$ and its range is $\left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$.
 
-**(b)** $g(f(x)) = \arccos(\cos x)$: defined when $\cos x \in [-1, 1]$, which is always true. Domain: $\left[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$.
+**(b)** $g(f(x)) = \arccos(\cos x)$: defined when $\cos x \in [-1, 1]$, which is always true. Domain: $\left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$.
 
-For $x \in \left[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$: since $x \in [0, \pi]$ (the range of $\arccos$), we have $\arccos(\cos x) = x$. So $g(f(x)) = x$.
+For $x \in \left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$: since $x \in [0, \pi]$ (the range of $\arccos$), we have $\arccos(\cos x) = x$. So $g(f(x)) = x$.
 
-$f(g(x)) = \cos(\arccos x)$: defined when $\arccos x \in \left[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$, i.e. $x \in [0, 1]$.
+$f(g(x)) = \cos(\arccos x)$: defined when $\arccos x \in \left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$, i.e. $x \in [0, 1]$.
 
 For $x \in [0, 1]$: $\cos(\arccos x) = x$. So $f(g(x)) = x$.
 
-The domains differ: $g \circ f$ has domain $\left[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$ while $f \circ g$ has domain $[0, 1]$.
+The domains differ: $g \circ f$ has domain $\left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$ while $f \circ g$ has domain $[0, 1]$.
 
-**(c)** $\pi$ is not in the domain of $f$ (which is $\left[0, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$), so $f(\pi)$ is undefined. The expression $f^{-1}(f(\pi))$ is therefore meaningless.
+**(c)** $\pi$ is not in the domain of $f$ (which is $\left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$), so $f(\pi)$ is undefined. The expression $f^{-1}(f(\pi))$ is therefore meaningless.
 
 Even if $f$ were extended to $\mathbb{R}$, then $f(\pi) = -1$, but $-1$ is not in the domain of $f^{-1}$ (which is $[0, 1]$, the range of $f$ on its original domain). So $f^{-1}(-1)$ would also be undefined.
 
-**(d)** $h(x) = \arcsin(\cos x)$. Using $\cos x = \sin\!\left(\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - x\right)$:
+**(d)** $h(x) = \arcsin(\cos x)$. Using $\cos x = \sin\!\left(\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x\right)$:
 
-$$h(x) = \arcsin\!\left(\sin\!\left(\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - x\right)\right)$$
+$$h(x) = \arcsin\!\left(\sin\!\left(\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x\right)\right)$$
 
-Since $\arcsin(\sin\theta) = \theta$ only when $\theta \in \left[-\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄, \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄\right]$:
+Since $\arcsin(\sin\theta) = \theta$ only when $\theta \in \left[-\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$:
 
-**When** $-\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ \leq \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - x \leq \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄$, i.e. $0 \leq x \leq \pi$: $h(x) = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - x$.
+**When** $-\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ \leq \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x \leq \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$, i.e. $0 \leq x \leq \pi$: $h(x) = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x$.
 
-**When** $\pi \leq x \leq 2\pi$: $\cos x = \cos(2\pi - x)$ and $2\pi - x \in [0, \pi]$, so $h(x) = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - (2\pi - x) = x - \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄$.
+**When** $\pi \leq x \leq 2\pi$: $\cos x = \cos(2\pi - x)$ and $2\pi - x \in [0, \pi]$, so $h(x) = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - (2\pi - x) = x - \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$.
 
 By periodicity (period $2\pi$):
 
-$$h(x) = \begin{cases} \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - x + 2n\pi & \text{if } 2n\pi \leq x \leq (2n+1)\pi \\ x - \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄ + 2n\pi & \text{if } (2n+1)\pi \leq x \leq (2n+2)\pi \end{cases}$$
+$$h(x) = \begin{cases} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x + 2n\pi & \text{if } 2n\pi \leq x \leq (2n+1)\pi \\ x - \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ + 2n\pi & \text{if } (2n+1)\pi \leq x \leq (2n+2)\pi \end{cases}$$
 
 for $n \in \mathbb{Z}$.
 
-To find $h(x) = x$: on $[0, \pi]$, $\frac⧃LB⧄\pi⧃RB⧄⧃LB⧄2⧃RB⧄ - x = x \implies x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄$.
+To find $h(x) = x$: on $[0, \pi]$, $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x = x \implies x = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
-On $[\pi, 2\pi]$: $x - \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄ = x \implies 0 = \frac⧃LB⧄3\pi⧃RB⧄⧃LB⧄2⧃RB⧄$, impossible.
+On $[\pi, 2\pi]$: $x - \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ = x \implies 0 = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$, impossible.
 
-By periodicity: $x = \frac⧃LB⧄\pi⧃RB⧄⧃LB⧄4⧃RB⧄ + 2n\pi$ for $n \in \mathbb{Z}$.
+By periodicity: $x = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + 2n\pi$ for $n \in \mathbb{Z}$.

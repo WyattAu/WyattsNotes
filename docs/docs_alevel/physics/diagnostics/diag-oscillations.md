@@ -46,11 +46,11 @@ This occurs when $|x| = A = 0.15\,\text{m}$ (maximum displacement).
 
 Since $E_k + E_p = \frac{1}{2}m\omega^2 A^2$, KE $=$ PE implies each is half the total:
 
-$$\frac{1}{2}m\omega^2 x^2 = \frac{1}{4}m\omega^2 A^2 \Rightarrow x^2 = \frac{A^2}{2} \Rightarrow x = \pm\frac⧃LB⧄A⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄$$
+$$\frac{1}{2}m\omega^2 x^2 = \frac{1}{4}m\omega^2 A^2 \Rightarrow x^2 = \frac{A^2}{2} \Rightarrow x = \pm\frac◆LB◆A◆RB◆◆LB◆\sqrt{2}◆RB◆$$
 
-$$0.15\cos(4\pi t + \pi/3) = \pm\frac⧃LB⧄0.15⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄ = \pm 0.1061$$
+$$0.15\cos(4\pi t + \pi/3) = \pm\frac◆LB◆0.15◆RB◆◆LB◆\sqrt{2}◆RB◆ = \pm 0.1061$$
 
-$$\cos(4\pi t + \pi/3) = \pm\frac⧃LB⧄1⧃RB⧄⧃LB⧄\sqrt{2}⧃RB⧄$$
+$$\cos(4\pi t + \pi/3) = \pm\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆$$
 
 For the positive case ($\cos\theta = 1/\sqrt{2}$): $\theta = \pm\pi/4 + 2n\pi$.
 
@@ -88,11 +88,11 @@ A mass-spring system undergoes damped harmonic oscillations. The displacement is
 For the amplitude to halve: $e^{-\gamma t_{1/2}} = 0.5$
 
 $$-\gamma t_{1/2} = \ln(0.5) = -\ln 2$$
-$$t_{1/2} = \frac⧃LB⧄\ln 2⧃RB⧄⧃LB⧄\gamma⧃RB⧄ = \frac{0.693}{0.50} = 1.39\,\text{s}$$
+$$t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆\gamma◆RB◆ = \frac{0.693}{0.50} = 1.39\,\text{s}$$
 
 (b) Successive amplitudes occur at times separated by one period $T_d = 2\pi/\omega_d$:
 
-$$T_d = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄8.0⧃RB⧄ = 0.7854\,\text{s}$$
+$$T_d = \frac◆LB◆2\pi◆RB◆◆LB◆8.0◆RB◆ = 0.7854\,\text{s}$$
 
 Ratio of successive amplitudes: $\frac{A(t + T_d)}{A(t)} = e^{-\gamma T_d}$
 
@@ -102,7 +102,7 @@ $$\Lambda = \ln\left(\frac{A(t)}{A(t + T_d)}\right) = \gamma T_d = 0.50 \times 0
 
 (c) The quality factor is:
 
-$$Q = \frac⧃LB⧄\omega_d⧃RB⧄⧃LB⧄2\gamma⧃RB⧄ = \frac⧃LB⧄8.0⧃RB⧄⧃LB⧄2 \times 0.50⧃RB⧄ = 8.0$$
+$$Q = \frac◆LB◆\omega_d◆RB◆◆LB◆2\gamma◆RB◆ = \frac◆LB◆8.0◆RB◆◆LB◆2 \times 0.50◆RB◆ = 8.0$$
 
 Alternatively, $Q = \pi/\Lambda = \pi/0.393 = 8.0$. Consistent.
 
@@ -131,21 +131,21 @@ Natural frequency $f_0 = \omega_0/(2\pi) = 0.498\,\text{Hz}$
 
 (b) At resonance, the amplitude is:
 
-$$A_{\text{res}} = \frac⧃LB⧄F_0/m⧃RB⧄⧃LB⧄2\gamma\omega_0⧃RB⧄$$
+$$A_{\text{res}} = \frac◆LB◆F_0/m◆RB◆◆LB◆2\gamma\omega_0◆RB◆$$
 
 where $\gamma = b/(2m) = 0.10/(2 \times 0.20) = 0.25\,\text{s}^{-1}$
 
-$$A_{\text{res}} = \frac⧃LB⧄0.50/0.20⧃RB⧄⧃LB⧄2 \times 0.25 \times 3.132⧃RB⧄ = \frac{2.50}{1.566} = 1.596\,\text{m}$$
+$$A_{\text{res}} = \frac◆LB◆0.50/0.20◆RB◆◆LB◆2 \times 0.25 \times 3.132◆RB◆ = \frac{2.50}{1.566} = 1.596\,\text{m}$$
 
 Note: this amplitude exceeds the length of the pendulum ($1.00\,\text{m}$), which means the small-angle approximation has broken down and the linear model is no longer valid. This highlights a limitation of the simple harmonic model.
 
 (c) The amplitude at driving frequency $\omega$ is:
 
-$$A(\omega) = \frac⧃LB⧄F_0/m⧃RB⧄⧃LB⧄\sqrt{(\omega_0^2 - \omega^2)^2 + (2\gamma\omega)^2}⧃RB⧄$$
+$$A(\omega) = \frac◆LB◆F_0/m◆RB◆◆LB◆\sqrt{(\omega_0^2 - \omega^2)^2 + (2\gamma\omega)^2}◆RB◆$$
 
 At half maximum amplitude: $A(\omega_{1/2}) = A_{\text{res}}/2$
 
-$$\sqrt⧃LB⧄(\omega_0^2 - \omega^2)^2 + (2\gamma\omega)^2⧃RB⧄ = 2 \times 2\gamma\omega_0 = 4\gamma\omega_0$$
+$$\sqrt◆LB◆(\omega_0^2 - \omega^2)^2 + (2\gamma\omega)^2◆RB◆ = 2 \times 2\gamma\omega_0 = 4\gamma\omega_0$$
 
 For light damping ($\gamma \ll \omega_0$), the half-maximum points occur at approximately $\omega \approx \omega_0 \pm \gamma$.
 
@@ -179,11 +179,11 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 At equilibrium: $kx_0 = mg_{\text{eff}}$
 
-$$x_0 = \frac⧃LB⧄mg_{\text{eff}}⧃RB⧄⧃LB⧄k⧃RB⧄ = \frac⧃LB⧄2.0 \times 12.81⧃RB⧄⧃LB⧄80⧃RB⧄ = \frac{25.62}{80} = 0.320\,\text{m}$$
+$$x_0 = \frac◆LB◆mg_{\text{eff}}◆RB◆◆LB◆k◆RB◆ = \frac◆LB◆2.0 \times 12.81◆RB◆◆LB◆80◆RB◆ = \frac{25.62}{80} = 0.320\,\text{m}$$
 
 (b) The period of a mass-spring system is independent of gravity:
 
-$$T = 2\pi\sqrt⧃LB⧄\frac{m}{k}⧃RB⧄ = 2\pi\sqrt⧃LB⧄\frac{2.0}{80}⧃RB⧄ = 2\pi\sqrt{0.025} = 2\pi \times 0.1581 = 0.993\,\text{s}$$
+$$T = 2\pi\sqrt◆LB◆\frac{m}{k}◆RB◆ = 2\pi\sqrt◆LB◆\frac{2.0}{80}◆RB◆ = 2\pi\sqrt{0.025} = 2\pi \times 0.1581 = 0.993\,\text{s}$$
 
 The acceleration of the lift changes the equilibrium position but not the period, because the restoring force $F = -kx$ depends only on the spring constant and displacement from equilibrium.
 
@@ -208,7 +208,7 @@ Given: $m = 0.50\,\text{kg}$, $k = 200\,\text{N}\,\text{m}^{-1}$, $b = 2.0\,\tex
 
 (a) Mechanical: $\omega_0 = \sqrt{k/m} = \sqrt{200/0.50} = \sqrt{400} = 20\,\text{rad}\,\text{s}^{-1}$
 
-Electrical: $\omega_0 = 1/\sqrt{LC} = 1/\sqrt⧃LB⧄0.10 \times 25 \times 10^{-6}⧃RB⧄ = 1/\sqrt⧃LB⧄2.5 \times 10^{-6}⧃RB⧄ = 1/(1.581 \times 10^{-3}) = 632.5\,\text{rad}\,\text{s}^{-1}$
+Electrical: $\omega_0 = 1/\sqrt{LC} = 1/\sqrt◆LB◆0.10 \times 25 \times 10^{-6}◆RB◆ = 1/\sqrt◆LB◆2.5 \times 10^{-6}◆RB◆ = 1/(1.581 \times 10^{-3}) = 632.5\,\text{rad}\,\text{s}^{-1}$
 
 These are **not** equal. For the analogy to hold, the corresponding parameters must be chosen consistently. The mechanical-electrical analogies are: $m \leftrightarrow L$, $k \leftrightarrow 1/C$, $b \leftrightarrow R$.
 
@@ -220,7 +220,7 @@ For a true analogy with the given mechanical parameters, the electrical componen
 
 (b) For the mechanical oscillator at resonance:
 
-$$A_{\text{res}} = \frac⧃LB⧄F_0/m⧃RB⧄⧃LB⧄2\gamma\omega_0⧃RB⧄ = \frac⧃LB⧄5.0/0.50⧃RB⧄⧃LB⧄2 \times (2.0/(2 \times 0.50)) \times 20⧃RB⧄ = \frac⧃LB⧄10⧃RB⧄⧃LB⧄2 \times 2.0 \times 20⧃RB⧄ = \frac{10}{80} = 0.125\,\text{m}$$
+$$A_{\text{res}} = \frac◆LB◆F_0/m◆RB◆◆LB◆2\gamma\omega_0◆RB◆ = \frac◆LB◆5.0/0.50◆RB◆◆LB◆2 \times (2.0/(2 \times 0.50)) \times 20◆RB◆ = \frac◆LB◆10◆RB◆◆LB◆2 \times 2.0 \times 20◆RB◆ = \frac{10}{80} = 0.125\,\text{m}$$
 
 For the electrical circuit at resonance ($\omega = 632.5\,\text{rad}\,\text{s}^{-1}$):
 
@@ -266,16 +266,16 @@ $$\ddot{x} = -\frac{2g}{L} x$$
 
 This is of the form $\ddot{x} = -\omega^2 x$, confirming SHM with $\omega^2 = 2g/L$.
 
-(b) $\omega = \sqrt{2g/L} = \sqrt⧃LB⧄2 \times 9.81/0.80⧃RB⧄ = \sqrt{24.53} = 4.953\,\text{rad}\,\text{s}^{-1}$
+(b) $\omega = \sqrt{2g/L} = \sqrt◆LB◆2 \times 9.81/0.80◆RB◆ = \sqrt{24.53} = 4.953\,\text{rad}\,\text{s}^{-1}$
 
-$$T = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄\omega⧃RB⧄ = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄4.953⧃RB⧄ = 1.269\,\text{s}$$
+$$T = \frac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ = \frac◆LB◆2\pi◆RB◆◆LB◆4.953◆RB◆ = 1.269\,\text{s}$$
 
 (c) When the U-tube is tilted at $30^\circ$ to the vertical, the effective component of $g$ along the tube direction is $g\cos 30^\circ$.
 
 The restoring force becomes: $F = -\rho A (2x) g\cos 30^\circ$
 
-$$\omega' = \sqrt⧃LB⧄\frac{2g\cos 30^\circ}{L}⧃RB⧄ = \sqrt⧃LB⧄\frac{2 \times 9.81 \times 0.866}{0.80}⧃RB⧄ = \sqrt{21.25} = 4.610\,\text{rad}\,\text{s}^{-1}$$
+$$\omega' = \sqrt◆LB◆\frac{2g\cos 30^\circ}{L}◆RB◆ = \sqrt◆LB◆\frac{2 \times 9.81 \times 0.866}{0.80}◆RB◆ = \sqrt{21.25} = 4.610\,\text{rad}\,\text{s}^{-1}$$
 
-$$T' = \frac⧃LB⧄2\pi⧃RB⧄⧃LB⧄4.610⧃RB⧄ = 1.363\,\text{s}$$
+$$T' = \frac◆LB◆2\pi◆RB◆◆LB◆4.610◆RB◆ = 1.363\,\text{s}$$
 
 The period increases when the tube is tilted because the effective restoring acceleration is reduced.

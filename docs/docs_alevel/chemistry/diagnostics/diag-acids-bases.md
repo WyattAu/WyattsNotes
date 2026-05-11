@@ -28,15 +28,15 @@ A buffer solution is prepared by adding $0.100\,\text{mol}$ of ethanoic acid ($\
 $$[\text{CH}_3\text{COOH}] = \frac{0.100}{0.250} = 0.400\,\text{mol dm}^{-3}$$
 $$[\text{CH}_3\text{COO}^-] = \frac{0.050}{0.250} = 0.200\,\text{mol dm}^{-3}$$
 
-$$\text{pH} = \text{p}K_a + \log\frac⧃LB⧄[\text{A}^-]⧃RB⧄⧃LB⧄[\text{HA}]⧃RB⧄ = -\log(1.74 \times 10^{-5}) + \log\frac{0.200}{0.400}$$
+$$\text{pH} = \text{p}K_a + \log\frac◆LB◆[\text{A}^-]◆RB◆◆LB◆[\text{HA}]◆RB◆ = -\log(1.74 \times 10^{-5}) + \log\frac{0.200}{0.400}$$
 
 $$\text{pH} = 4.759 + \log(0.500) = 4.759 - 0.301 = 4.458$$
 
 Alternatively, using the equilibrium expression:
 
-$$K_a = \frac⧃LB⧄[\text{H}^+][\text{CH}_3\text{COO}^-]⧃RB⧄⧃LB⧄[\text{CH}_3\text{COOH}]⧃RB⧄ = \frac⧃LB⧄[\text{H}^+] \times 0.200⧃RB⧄⧃LB⧄0.400⧃RB⧄$$
+$$K_a = \frac◆LB◆[\text{H}^+][\text{CH}_3\text{COO}^-]◆RB◆◆LB◆[\text{CH}_3\text{COOH}]◆RB◆ = \frac◆LB◆[\text{H}^+] \times 0.200◆RB◆◆LB◆0.400◆RB◆$$
 
-$$[\text{H}^+] = \frac⧃LB⧄1.74 \times 10^{-5} \times 0.400⧃RB⧄⧃LB⧄0.200⧃RB⧄ = 3.48 \times 10^{-5}\,\text{mol dm}^{-3}$$
+$$[\text{H}^+] = \frac◆LB◆1.74 \times 10^{-5} \times 0.400◆RB◆◆LB◆0.200◆RB◆ = 3.48 \times 10^{-5}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = -\log(3.48 \times 10^{-5}) = 4.459$$
 
@@ -45,7 +45,7 @@ $$\text{pH} = -\log(3.48 \times 10^{-5}) = 4.459$$
 $$[\text{CH}_3\text{COOH}] = \frac{0.100}{0.500} = 0.200\,\text{mol dm}^{-3}$$
 $$[\text{CH}_3\text{COO}^-] = \frac{0.050}{0.500} = 0.100\,\text{mol dm}^{-3}$$
 
-$$[\text{H}^+] = \frac⧃LB⧄1.74 \times 10^{-5} \times 0.200⧃RB⧄⧃LB⧄0.100⧃RB⧄ = 3.48 \times 10^{-5}\,\text{mol dm}^{-3}$$
+$$[\text{H}^+] = \frac◆LB◆1.74 \times 10^{-5} \times 0.200◆RB◆◆LB◆0.100◆RB◆ = 3.48 \times 10^{-5}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = 4.459$$
 
@@ -66,7 +66,7 @@ New moles:
 
 Total volume: $90.0 + 10.0 = 100.0\,\text{cm}^3 = 0.100\,\text{dm}^3$
 
-$$[\text{H}^+] = \frac⧃LB⧄1.74 \times 10^{-5} \times (0.0170/0.100)⧃RB⧄⧃LB⧄(0.0370/0.100)⧃RB⧄ = \frac⧃LB⧄1.74 \times 10^{-5} \times 0.170⧃RB⧄⧃LB⧄0.370⧃RB⧄ = 7.99 \times 10^{-6}\,\text{mol dm}^{-3}$$
+$$[\text{H}^+] = \frac◆LB◆1.74 \times 10^{-5} \times (0.0170/0.100)◆RB◆◆LB◆(0.0370/0.100)◆RB◆ = \frac◆LB◆1.74 \times 10^{-5} \times 0.170◆RB◆◆LB◆0.370◆RB◆ = 7.99 \times 10^{-6}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = -\log(7.99 \times 10^{-6}) = 5.10$$
 
@@ -89,11 +89,11 @@ The pH changed from $4.46$ to $5.10$ (only 0.64 units) despite adding a strong a
 
 $$[\text{H}^+] = 10^{-2.85} = 1.413 \times 10^{-3}\,\text{mol dm}^{-3}$$
 
-$$K_a = \frac⧃LB⧄[\text{H}^+]^2⧃RB⧄⧃LB⧄[\text{HA}] - [\text{H}^+]⧃RB⧄ = \frac⧃LB⧄(1.413 \times 10^{-3})^2⧃RB⧄⧃LB⧄0.150 - 1.413 \times 10^{-3}⧃RB⧄ = \frac⧃LB⧄1.997 \times 10^{-6}⧃RB⧄⧃LB⧄0.1486⧃RB⧄ = 1.34 \times 10^{-5}\,\text{mol dm}^{-3}$$
+$$K_a = \frac◆LB◆[\text{H}^+]^2◆RB◆◆LB◆[\text{HA}] - [\text{H}^+]◆RB◆ = \frac◆LB◆(1.413 \times 10^{-3})^2◆RB◆◆LB◆0.150 - 1.413 \times 10^{-3}◆RB◆ = \frac◆LB◆1.997 \times 10^{-6}◆RB◆◆LB◆0.1486◆RB◆ = 1.34 \times 10^{-5}\,\text{mol dm}^{-3}$$
 
 (b) At the half-equivalence point, exactly half the weak acid has been neutralised, so $[\text{HA}] = [\text{A}^-]$. The Henderson-Hasselbalch equation gives:
 
-$$\text{pH} = \text{p}K_a + \log\frac⧃LB⧄[\text{A}^-]⧃RB⧄⧃LB⧄[\text{HA}]⧃RB⧄ = \text{p}K_a + \log 1 = \text{p}K_a$$
+$$\text{pH} = \text{p}K_a + \log\frac◆LB◆[\text{A}^-]◆RB◆◆LB◆[\text{HA}]◆RB◆ = \text{p}K_a + \log 1 = \text{p}K_a$$
 
 So $\text{p}K_a = 3.75$ and:
 
@@ -120,7 +120,7 @@ At $50\,^\circ\text{C}$, $K_w = 5.48 \times 10^{-14}\,\text{mol}^2\text{ dm}^{-6
 
 (a) For pure water, $[\text{H}^+] = [\text{OH}^-]$:
 
-$$[\text{H}^+] = \sqrt{K_w} = \sqrt⧃LB⧄5.48 \times 10^{-14}⧃RB⧄ = 2.341 \times 10^{-7}\,\text{mol dm}^{-3}$$
+$$[\text{H}^+] = \sqrt{K_w} = \sqrt◆LB◆5.48 \times 10^{-14}◆RB◆ = 2.341 \times 10^{-7}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = -\log(2.341 \times 10^{-7}) = 6.63$$
 
@@ -130,7 +130,7 @@ Note: The pH of pure water is **less than 7** at $50\,^\circ\text{C}$ because $K
 
 $$[\text{OH}^-] = 0.0100\,\text{mol dm}^{-3}$$
 
-$$[\text{H}^+] = \frac⧃LB⧄K_w⧃RB⧄⧃LB⧄[\text{OH}^-]⧃RB⧄ = \frac⧃LB⧄5.48 \times 10^{-14}⧃RB⧄⧃LB⧄0.0100⧃RB⧄ = 5.48 \times 10^{-12}\,\text{mol dm}^{-3}$$
+$$[\text{H}^+] = \frac◆LB◆K_w◆RB◆◆LB◆[\text{OH}^-]◆RB◆ = \frac◆LB◆5.48 \times 10^{-14}◆RB◆◆LB◆0.0100◆RB◆ = 5.48 \times 10^{-12}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = -\log(5.48 \times 10^{-12}) = 11.26$$
 
@@ -154,13 +154,13 @@ Carbonic acid ($\text{H}_2\text{CO}_3$) is a diprotic acid with $K_{a1} = 4.30 \
 
 (a) Since $K_{a1} \gg K_{a2}$, the first dissociation dominates:
 
-$$[\text{H}^+] \approx \sqrt⧃LB⧄K_{a1} \times [\text{H}_2\text{CO}_3]⧃RB⧄ = \sqrt⧃LB⧄4.30 \times 10^{-7} \times 0.0500⧃RB⧄ = \sqrt⧃LB⧄2.15 \times 10^{-8}⧃RB⧄ = 1.466 \times 10^{-4}\,\text{mol dm}^{-3}$$
+$$[\text{H}^+] \approx \sqrt◆LB◆K_{a1} \times [\text{H}_2\text{CO}_3]◆RB◆ = \sqrt◆LB◆4.30 \times 10^{-7} \times 0.0500◆RB◆ = \sqrt◆LB◆2.15 \times 10^{-8}◆RB◆ = 1.466 \times 10^{-4}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = -\log(1.466 \times 10^{-4}) = 3.83$$
 
 (b) At the first equivalence point, all $\text{H}_2\text{CO}_3$ has been converted to $\text{HCO}_3^-$ (hydrogencarbonate ion). This is an **amphoteric** species that can act as both acid and base. The pH is given by:
 
-$$\text{pH} = \frac⧃LB⧄\text{p}K_{a1} + \text{p}K_{a2}⧃RB⧄⧃LB⧄2⧃RB⧄$$
+$$\text{pH} = \frac◆LB◆\text{p}K_{a1} + \text{p}K_{a2}◆RB◆◆LB◆2◆RB◆$$
 
 $$\text{p}K_{a1} = -\log(4.30 \times 10^{-7}) = 6.37$$
 $$\text{p}K_{a2} = -\log(5.61 \times 10^{-11}) = 10.25$$
@@ -196,13 +196,13 @@ Normal blood has $[\text{HCO}_3^-] = 0.0240\,\text{mol dm}^{-3}$ and $\text{pH} 
 
 (a) Using the Henderson-Hasselbalch equation:
 
-$$7.40 = \text{p}K_a + \log\frac⧃LB⧄[\text{HCO}_3^-]⧃RB⧄⧃LB⧄[\text{H}_2\text{CO}_3]⧃RB⧄$$
+$$7.40 = \text{p}K_a + \log\frac◆LB◆[\text{HCO}_3^-]◆RB◆◆LB◆[\text{H}_2\text{CO}_3]◆RB◆$$
 
-$$7.40 = 6.37 + \log\frac⧃LB⧄0.0240⧃RB⧄⧃LB⧄[\text{H}_2\text{CO}_3]⧃RB⧄$$
+$$7.40 = 6.37 + \log\frac◆LB◆0.0240◆RB◆◆LB◆[\text{H}_2\text{CO}_3]◆RB◆$$
 
-$$1.03 = \log\frac⧃LB⧄0.0240⧃RB⧄⧃LB⧄[\text{H}_2\text{CO}_3]⧃RB⧄$$
+$$1.03 = \log\frac◆LB◆0.0240◆RB◆◆LB◆[\text{H}_2\text{CO}_3]◆RB◆$$
 
-$$\frac⧃LB⧄0.0240⧃RB⧄⧃LB⧄[\text{H}_2\text{CO}_3]⧃RB⧄ = 10^{1.03} = 10.72$$
+$$\frac◆LB◆0.0240◆RB◆◆LB◆[\text{H}_2\text{CO}_3]◆RB◆ = 10^{1.03} = 10.72$$
 
 $$[\text{H}_2\text{CO}_3] = \frac{0.0240}{10.72} = 2.24 \times 10^{-3}\,\text{mol dm}^{-3}$$
 
@@ -214,7 +214,7 @@ New concentrations:
 - $[\text{HCO}_3^-] = 0.0240 - 5.0 \times 10^{-6} = 0.023995\,\text{mol dm}^{-3}$
 - $[\text{H}_2\text{CO}_3] = 2.24 \times 10^{-3} + 5.0 \times 10^{-6} = 2.245 \times 10^{-3}\,\text{mol dm}^{-3}$
 
-$$\text{pH} = 6.37 + \log\frac⧃LB⧄0.023995⧃RB⧄⧃LB⧄2.245 \times 10^{-3}⧃RB⧄ = 6.37 + \log(10.69) = 6.37 + 1.029 = 7.40$$
+$$\text{pH} = 6.37 + \log\frac◆LB◆0.023995◆RB◆◆LB◆2.245 \times 10^{-3}◆RB◆ = 6.37 + \log(10.69) = 6.37 + 1.029 = 7.40$$
 
 The pH remains essentially unchanged at 7.40, demonstrating the buffer's effectiveness. Even with the added acid, the ratio $[\text{HCO}_3^-]/[\text{H}_2\text{CO}_3]$ barely changes because both concentrations are much larger than the amount of added $\text{H}^+$.
 
@@ -242,17 +242,17 @@ $25.0\,\text{cm}^3$ of a solution of ammonia ($\text{NH}_3$, $K_b = 1.78 \times 
 
 $$n(\text{HCl}) = 0.0500 \times 20.0/1000 = 1.00 \times 10^{-3}\,\text{mol}$$
 
-$$[\text{NH}_3] = \frac⧃LB⧄1.00 \times 10^{-3}⧃RB⧄⧃LB⧄25.0/1000⧃RB⧄ = 0.0400\,\text{mol dm}^{-3}$$
+$$[\text{NH}_3] = \frac◆LB◆1.00 \times 10^{-3}◆RB◆◆LB◆25.0/1000◆RB◆ = 0.0400\,\text{mol dm}^{-3}$$
 
 (b) At the equivalence point, the solution contains $\text{NH}_4^+$ (the conjugate acid of $\text{NH}_3$). This is a weak acid:
 
-$$K_a(\text{NH}_4^+) = \frac⧃LB⧄K_w⧃RB⧄⧃LB⧄K_b(\text{NH}_3)⧃RB⧄ = \frac⧃LB⧄1.00 \times 10^{-14}⧃RB⧄⧃LB⧄1.78 \times 10^{-5}⧃RB⧄ = 5.618 \times 10^{-10}\,\text{mol dm}^{-3}$$
+$$K_a(\text{NH}_4^+) = \frac◆LB◆K_w◆RB◆◆LB◆K_b(\text{NH}_3)◆RB◆ = \frac◆LB◆1.00 \times 10^{-14}◆RB◆◆LB◆1.78 \times 10^{-5}◆RB◆ = 5.618 \times 10^{-10}\,\text{mol dm}^{-3}$$
 
 Total volume at equivalence point: $25.0 + 20.0 = 45.0\,\text{cm}^3$
 
-$$[\text{NH}_4^+] = \frac⧃LB⧄1.00 \times 10^{-3}⧃RB⧄⧃LB⧄45.0/1000⧃RB⧄ = 0.02222\,\text{mol dm}^{-3}$$
+$$[\text{NH}_4^+] = \frac◆LB◆1.00 \times 10^{-3}◆RB◆◆LB◆45.0/1000◆RB◆ = 0.02222\,\text{mol dm}^{-3}$$
 
-$$[\text{H}^+] = \sqrt⧃LB⧄K_a \times [\text{NH}_4^+]⧃RB⧄ = \sqrt⧃LB⧄5.618 \times 10^{-10} \times 0.02222⧃RB⧄ = \sqrt⧃LB⧄1.248 \times 10^{-11}⧃RB⧄ = 3.533 \times 10^{-6}\,\text{mol dm}^{-3}$$
+$$[\text{H}^+] = \sqrt◆LB◆K_a \times [\text{NH}_4^+]◆RB◆ = \sqrt◆LB◆5.618 \times 10^{-10} \times 0.02222◆RB◆ = \sqrt◆LB◆1.248 \times 10^{-11}◆RB◆ = 3.533 \times 10^{-6}\,\text{mol dm}^{-3}$$
 
 $$\text{pH} = -\log(3.533 \times 10^{-6}) = 5.45$$
 
@@ -274,7 +274,7 @@ More accurately, methyl red (pH 4.4--6.2) would be the best indicator. However, 
 
 Initial pH:
 
-$$\text{pH} = \mathrm{p}K_a + \log\frac⧃LB⧄[\mathrm{CH}_3\mathrm{COO}^-]⧃RB⧄⧃LB⧄[\mathrm{CH}_3\mathrm{COOH}]⧃RB⧄ = 4.76 + \log\frac{0.100}{0.200} = 4.76 - 0.301 = 4.46$$ (1 mark)
+$$\text{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{CH}_3\mathrm{COO}^-]◆RB◆◆LB◆[\mathrm{CH}_3\mathrm{COOH}]◆RB◆ = 4.76 + \log\frac{0.100}{0.200} = 4.76 - 0.301 = 4.46$$ (1 mark)
 
 After adding $\mathrm{HCl}$: $\mathrm{HCl}$ reacts with $\mathrm{CH}_3\mathrm{COO}^-$ to form $\mathrm{CH}_3\mathrm{COOH}$:
 
