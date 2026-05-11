@@ -102,5 +102,3 @@ unlocks React components, interactive tabs, and custom JSX — but also imposes 
   indexing.
 
 Refer to `markdown-constructs.md` in this section for the full MDX feature reference.
-
-</details>
