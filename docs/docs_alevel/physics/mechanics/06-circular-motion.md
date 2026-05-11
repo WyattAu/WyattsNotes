@@ -175,7 +175,7 @@ Dividing (ii) by (i):
 
 $$\boxed{\tan\theta = \frac{v^2}{rg}}$$
 
-$$\boxed{v_{\mathrm{optimum{}} = \sqrt{rg\tan\theta}}$$
+$$\boxed{v_{\mathrm{optimum}} = \sqrt{rg\tan\theta}}$$
 
 **Intuition.** At the optimum speed, the horizontal component of the normal reaction provides
 exactly the centripetal force. If the vehicle goes faster, friction acts down the slope; if slower,
@@ -238,13 +238,13 @@ $$T - mg = \frac{mv^2}{r}$$
 
 **Energy conservation** relates speeds at top and bottom:
 
-$$\frac{1}{2}mv_{\mathrm{bottom{}}^2 = \frac{1}{2}mv_{\mathrm{top{}}^2 + mg(2r)$$
+$$\frac{1}{2}mv_{\mathrm{bottom}}^2 = \frac{1}{2}mv_{\mathrm{top}}^2 + mg(2r)$$
 
-$$v_{\mathrm{bottom{}}^2 = v_{\mathrm{top{}}^2 + 4gr$$
+$$v_{\mathrm{bottom}}^2 = v_{\mathrm{top}}^2 + 4gr$$
 
-For the minimum speed at the top ($v_{\mathrm{top{}} = \sqrt{gr}$):
+For the minimum speed at the top ($v_{\mathrm{top}} = \sqrt{gr}$):
 
-$$v_{\mathrm{bottom{}}^2 = gr + 4gr = 5gr \implies v_{\mathrm{bottom{}} = \sqrt{5gr}$$
+$$v_{\mathrm{bottom}}^2 = gr + 4gr = 5gr \implies v_{\mathrm{bottom}} = \sqrt{5gr}$$
 
 ## Problem Set
 
@@ -297,7 +297,7 @@ A mass of $0.50$ kg on a string of length $1.0$ m is whirled in a vertical circl
 minimum speed at the lowest point for the mass to complete the circle?
 
 **Answer.**
-$v_{\mathrm{bottom{}} = \sqrt{5gr} = \sqrt{5 \times 9.81 \times 1.0} = \sqrt{49.05} = 7.00$ m
+$v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt{5 \times 9.81 \times 1.0} = \sqrt{49.05} = 7.00$ m
 s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Vertical Circles](#vertical-circles)
@@ -375,7 +375,7 @@ the track is banked at $20^\circ$, find the normal reaction and whether friction
 direction).
 
 **Answer.** Optimum speed:
-$v_{\mathrm{opt{}} = \sqrt{25 \times 9.81 \times \tan 20°} = \sqrt{25 \times 9.81 \times 0.364} = \sqrt{89.2} = 9.45$
+$v_{\mathrm{opt}} = \sqrt{25 \times 9.81 \times \tan 20°} = \sqrt{25 \times 9.81 \times 0.364} = \sqrt{89.2} = 9.45$
 m s$^{-1}$.
 
 Since $8.0 < 9.45$, the cyclist is going too slowly, so friction must act **up** the slope to
@@ -427,19 +427,19 @@ $$\boxed{T = \frac{mv^2}{r} + mg\cos\theta}$$
 
 **At the top** ($\theta = 180^\circ$, so $\cos\theta = -1$):
 
-$$\boxed{T_{\mathrm{top{}} = \frac{mv^2}{r} - mg}$$
+$$\boxed{T_{\mathrm{top}} = \frac{mv^2}{r} - mg}$$
 
-Both $T$ and $mg$ point towards the centre. The string remains taut if $T_{\mathrm{top{}} \geq 0$,
+Both $T$ and $mg$ point towards the centre. The string remains taut if $T_{\mathrm{top}} \geq 0$,
 giving the minimum speed at the top:
 
 $$\boxed{v_{\min} = \sqrt{gr}}$$
 
 **At the bottom** ($\theta = 0^\circ$, so $\cos\theta = 1$):
 
-$$\boxed{T_{\mathrm{bottom{}} = \frac{mv^2}{r} + mg}$$
+$$\boxed{T_{\mathrm{bottom}} = \frac{mv^2}{r} + mg}$$
 
-The tension must overcome gravity and provide the centripetal force, so $T_{\mathrm{bottom{}}$ is
-always greater than $T_{\mathrm{top{}}$ for the same speed.
+The tension must overcome gravity and provide the centripetal force, so $T_{\mathrm{bottom}}$ is
+always greater than $T_{\mathrm{top}}$ for the same speed.
 
 ### Energy Conservation Between Top and Bottom
 
@@ -453,13 +453,13 @@ $$v_b^2 = gr + 4gr = 5gr \implies \boxed{v_b = \sqrt{5gr}}$$
 
 ### Difference in Tension: Top vs Bottom
 
-$$T_{\mathrm{bottom{}} - T_{\mathrm{top{}} = \left(\frac{mv_b^2}{r} + mg\right) - \left(\frac{mv_t^2}{r} - mg\right) = \frac{m(v_b^2 - v_t^2)}{r} + 2mg$$
+$$T_{\mathrm{bottom}} - T_{\mathrm{top}} = \left(\frac{mv_b^2}{r} + mg\right) - \left(\frac{mv_t^2}{r} - mg\right) = \frac{m(v_b^2 - v_t^2)}{r} + 2mg$$
 
 Using $v_b^2 - v_t^2 = 4gr$:
 
-$$T_{\mathrm{bottom{}} - T_{\mathrm{top{}} = \frac{m \cdot 4gr}{r} + 2mg = 4mg + 2mg = 6mg$$
+$$T_{\mathrm{bottom}} - T_{\mathrm{top}} = \frac{m \cdot 4gr}{r} + 2mg = 4mg + 2mg = 6mg$$
 
-$$\boxed{T_{\mathrm{bottom{}} - T_{\mathrm{top{}} = 6mg}$$
+$$\boxed{T_{\mathrm{bottom}} - T_{\mathrm{top}} = 6mg}$$
 
 This result is independent of the radius and speed -- it depends only on the mass and $g$.
 
@@ -561,7 +561,7 @@ exert an inward force to change the passengers' direction -- this is the centrip
 In the rotating frame of the car, the passengers appear stationary. To make Newton's second law work
 in this non-inertial frame, we must introduce a fictitious outward force:
 
-$$\boxed{F_{\mathrm{centrifugal{}} = m\omega^2 r = \frac{mv^2}{r}}$$
+$$\boxed{F_{\mathrm{centrifugal}} = m\omega^2 r = \frac{mv^2}{r}}$$
 
 This has the same magnitude as the centripetal force but points in the opposite direction.
 
@@ -595,7 +595,7 @@ acceptable only if you clearly state it is a fictitious force in a rotating fram
 A mass of $0.40$ kg on a string of length $1.2$ m is whirled in a vertical circle. At the highest
 point, the tension in the string is $1.8$ N. Find: (a) the speed at the highest point, (b) the
 speed at the lowest point, (c) the tension at the lowest point, (d) the difference
-$T_{\mathrm{bottom{}} - T_{\mathrm{top{}}$ and verify that it equals $6mg$.
+$T_{\mathrm{bottom}} - T_{\mathrm{top}}$ and verify that it equals $6mg$.
 
 **Answer.** (a) At the top: $T + mg = mv^2/r$.
 
@@ -631,10 +631,10 @@ tension, (c) the period, (d) the linear speed of the bob.
 (b) $T = mg/\cos\alpha = 0.50 \times 9.81/\cos 30° = 4.905/0.866 = 5.66$ N.
 
 (c)
-$T_{\mathrm{period{}} = 2\pi\sqrt{L\cos\alpha/g} = 2\pi\sqrt{2.0 \times 0.866/9.81} = 2\pi\sqrt{0.1766} = 2.64$
+$T_{\mathrm{period}} = 2\pi\sqrt{L\cos\alpha/g} = 2\pi\sqrt{2.0 \times 0.866/9.81} = 2\pi\sqrt{0.1766} = 2.64$
 s.
 
-(d) $v = 2\pi r/T_{\mathrm{period{}} = 2\pi \times 1.0/2.64 = 2.38$ m s$^{-1}$.
+(d) $v = 2\pi r/T_{\mathrm{period}} = 2\pi \times 1.0/2.64 = 2.38$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Conical Pendulum -- Extended Analysis](#6-conical-pendulum----extended-analysis)
@@ -668,7 +668,7 @@ point, (b) when the radius to the bead makes an angle of $60^\circ$ with the upw
 wire/rod, unlike a string, there is no minimum speed requirement since the wire can provide a normal
 force in either direction).
 
-(a) $v_{\mathrm{top{}} = 0$.
+(a) $v_{\mathrm{top}} = 0$.
 
 By energy conservation: $\tfrac{1}{2}mv_b^2 = mg(2r) + 0$.
 

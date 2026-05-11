@@ -419,7 +419,7 @@ $$S = \frac{\pi}{9} + \frac{5\pi}{9} + \frac{7\pi}{9} + \frac{11\pi}{9} + \frac{
 
 **(a)** Let $u = e^x$. Since $e^x \gt 0$ for all $x \in \mathbb{'\{'}R{'\}'}$, we require $u \gt 0$.
 
-$$u^2 - 5u + 6 = 0 \implies (u-2)(u-3) = 0 \implies u = 2 \text{ or {} u = 3$$
+$$u^2 - 5u + 6 = 0 \implies (u-2)(u-3) = 0 \implies u = 2 \text{ or } u = 3$$
 
 Both satisfy $u \gt 0$.
 
@@ -437,7 +437,7 @@ $$u^2 - 5u + 5 = 0 \implies u = \frac{5 \pm \sqrt{25 - 20}}{2} = \frac{5 \pm \sq
 
 Both roots are positive: $\frac{5 - \sqrt{5}}{2} \approx 1.382 \gt 0$ and $\frac{5 + \sqrt{5}}{2} \approx 3.618 \gt 0$.
 
-$$x = \ln\!\left(\frac{5 + \sqrt{5}}{2}\right) \quad \text{or{} \quad x = \ln\!\left(\frac{5 - \sqrt{5}}{2}\right)$$
+$$x = \ln\!\left(\frac{5 + \sqrt{5}}{2}\right) \quad \text{or} \quad x = \ln\!\left(\frac{5 - \sqrt{5}}{2}\right)$$
 
 **(c)** The check is necessary because if a root of the quadratic in $u$ were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$, then $u = -1$ or $u = 4$, and $u = -1$ would give $e^x = -1$, which has no real solution. The substitution $u = e^x$ implicitly constrains $u \gt 0$, and students who forget this constraint accept spurious solutions.
 
@@ -565,7 +565,7 @@ Answer: **sufficient but not necessary**.
 
 Answer: **neither necessary nor sufficient**.
 
-**(c)** Since $a^2 \geq 0$ and $b^2 \geq 0$, the sum $a^2 + b^2 = 0$ only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and {} b = 0$.
+**(c)** Since $a^2 \geq 0$ and $b^2 \geq 0$, the sum $a^2 + b^2 = 0$ only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
 
 Answer: **both necessary and sufficient**.
 

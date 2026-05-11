@@ -287,9 +287,9 @@ The standard laws of indices extend naturally:
 
 $$
 \begin{aligned}
-z_1 z_2 &= r_1 r_2 \, e^{i(\theta_1 + \theta_2)} & &\mathrm{(arguments add){} \\
-\frac{z_1}{z_2} &= \frac{r_1}{r_2} \, e^{i(\theta_1 - \theta_2)} & &\mathrm{(arguments subtract){} \\
-z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies){}
+z_1 z_2 &= r_1 r_2 \, e^{i(\theta_1 + \theta_2)} & &\mathrm{(arguments add)} \\
+\frac{z_1}{z_2} &= \frac{r_1}{r_2} \, e^{i(\theta_1 - \theta_2)} & &\mathrm{(arguments subtract)} \\
+z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies)}
 \end{aligned}
 $$
 
@@ -450,9 +450,9 @@ $$\boxed{z_k = e^{2k\pi i/n} = \cos\!\left(\frac{2k\pi}{n}\right) + i\sin\!\left
 
 $$\boxed{\sum_{k=0}^{n-1} z_k = 0}$$
 
-$$\boxed{|z - a| = r \iff \mathrm{circle centre {} a \mathrm{ radius {} r}$$
+$$\boxed{|z - a| = r \iff \mathrm{circle centre } a \mathrm{ radius } r}$$
 
-$$\boxed{\arg(z - a) = \alpha \iff \mathrm{half-line from {} a \mathrm{ at angle {} \alpha}$$
+$$\boxed{\arg(z - a) = \alpha \iff \mathrm{half-line from } a \mathrm{ at angle } \alpha}$$
 
 <hr />
 
@@ -567,7 +567,7 @@ $\displaystyle\sum_{k=0}^{4}\omega^k = \frac{1 - \omega^5}{1 - \omega} = \frac{1
 
 Expanding using $\omega^k = \cos\frac{2k\pi}{5} + i\sin\frac{2k\pi}{5}$:
 
-$$\sum_{k=0}^{4}\omega^k = \underbrace{\sum_{k=0}^{4}\cos\frac{2k\pi}{5}}_{\mathrm{real{}} + i\underbrace{\sum_{k=0}^{4}\sin\frac{2k\pi}{5}}_{\mathrm{imaginary{}} = 0$$
+$$\sum_{k=0}^{4}\omega^k = \underbrace{\sum_{k=0}^{4}\cos\frac{2k\pi}{5}}_{\mathrm{real}} + i\underbrace{\sum_{k=0}^{4}\sin\frac{2k\pi}{5}}_{\mathrm{imaginary}} = 0$$
 
 The imaginary part is zero by symmetry ($\sin\theta = -\sin(2\pi - \theta)$). The real part gives:
 
@@ -855,15 +855,15 @@ The required region is the intersection: a segment of the disc in the first quad
 
 ### Example 8.5: Complex transformation — rotation and enlargement
 
-**Problem.** The transformation $T$ maps the complex plane by $w = (1+i)z + 2i$. Describe $T$ fully and find the image of the line $\mathrm{Re{}(z) = 1$.
+**Problem.** The transformation $T$ maps the complex plane by $w = (1+i)z + 2i$. Describe $T$ fully and find the image of the line $\mathrm{Re}(z) = 1$.
 
 **Solution.** $w = (1+i)z + 2i = \sqrt{2}\,e^{i\pi/4}\,z + 2i$.
 
 $T$ is an enlargement by scale factor $\sqrt{2}$, rotation by $45°$ anticlockwise about the origin, followed by a translation by $2i$.
 
-For $\mathrm{Re{}(z) = 1$: $z = 1 + it$. $w = (1+i)(1+it) + 2i = 1 + it + i - t + 2i = (1-t) + i(3+t)$.
+For $\mathrm{Re}(z) = 1$: $z = 1 + it$. $w = (1+i)(1+it) + 2i = 1 + it + i - t + 2i = (1-t) + i(3+t)$.
 
-$\mathrm{Re{}(w) = 1-t$, $\mathrm{Im{}(w) = 3+t$. Eliminating $t$: $\mathrm{Im{}(w) = 3 + (1 - \mathrm{Re{}(w)) = 4 - \mathrm{Re{}(w)$.
+$\mathrm{Re}(w) = 1-t$, $\mathrm{Im}(w) = 3+t$. Eliminating $t$: $\mathrm{Im}(w) = 3 + (1 - \mathrm{Re}(w)) = 4 - \mathrm{Re}(w)$.
 
 The image is the line $\boxed{u + v = 4}$ (where $w = u + iv$).
 
@@ -939,7 +939,7 @@ The complex number $z$ satisfies $|z-1| = |z+1|$ and $|z-3i| = 3$. Find $z$.
 <details>
 <summary>Solution</summary>
 
-$|z-1| = |z+1|$: perpendicular bisector of $1$ and $-1$, giving $\mathrm{Re{}(z) = 0$. So $z = iy$.
+$|z-1| = |z+1|$: perpendicular bisector of $1$ and $-1$, giving $\mathrm{Re}(z) = 0$. So $z = iy$.
 
 $|z-3i| = 3 \implies |iy - 3i| = 3 \implies |y-3| = 3 \implies y - 3 = \pm 3$.
 
@@ -1045,8 +1045,8 @@ If $P(z)$ is a polynomial with real coefficients and $z = a + bi$ is a root, the
 | $\|z-a\| < r$ | Interior of circle (open disc) |
 | $\|z-a\| \leq r$ | Closed disc |
 | $\alpha < \arg(z-a) < \beta$ | Sector (angular region) |
-| $\mathrm{Re{}(z) > k$ | Half-plane to the right of $x = k$ |
-| $\mathrm{Im{}(z) > k$ | Half-plane above $y = k$ |
+| $\mathrm{Re}(z) > k$ | Half-plane to the right of $x = k$ |
+| $\mathrm{Im}(z) > k$ | Half-plane above $y = k$ |
 
 ### 14.5 The exponential form of $\sin$ and $\cos$
 
@@ -1121,7 +1121,7 @@ This provides a geometric interpretation of all complex arithmetic.
 
 To solve $z^n = w = re^{i\phi}$:
 
-$$z_k = r^{1/n} \exp\!\left(\frac{i(\phi + 2k\pi)}{n}\right) \quad \text{for {} k = 0, 1, \ldots, n-1$$
+$$z_k = r^{1/n} \exp\!\left(\frac{i(\phi + 2k\pi)}{n}\right) \quad \text{for } k = 0, 1, \ldots, n-1$$
 
 The roots lie on a circle of radius $r^{1/n}$, equally spaced.
 
@@ -1181,11 +1181,11 @@ The complex numbers $z$ and $w$ satisfy $|z| = 3$, $|w| = 4$, and $|z+w| = 5$. F
 <details>
 <summary>Solution</summary>
 
-$|z+w|^2 = |z|^2 + |w|^2 + 2\mathrm{Re{}(z\bar{w}) = 9+16+2\mathrm{Re{}(z\bar{w}) = 25$.
+$|z+w|^2 = |z|^2 + |w|^2 + 2\mathrm{Re}(z\bar{w}) = 9+16+2\mathrm{Re}(z\bar{w}) = 25$.
 
-$\mathrm{Re{}(z\bar{w}) = 0$.
+$\mathrm{Re}(z\bar{w}) = 0$.
 
-$|z-w|^2 = |z|^2 + |w|^2 - 2\mathrm{Re{}(z\bar{w}) = 9+16-0 = 25$.
+$|z-w|^2 = |z|^2 + |w|^2 - 2\mathrm{Re}(z\bar{w}) = 9+16-0 = 25$.
 
 $\boxed{|z-w| = 5}$
 
@@ -1207,7 +1207,7 @@ The extended complex plane $\hat{\mathbb{'\{'}C{'\}'}} = \mathbb{'\{'}C{'\}'} \c
 
 While complex analysis (Cauchy's theorem, residue calculus) is beyond A-Level, the fundamental concepts appear:
 - Cauchy's integral formula: $f(a) = \dfrac{1}{2\pi i}\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
-- Residue theorem: $\displaystyle\oint_C f(z)\,dz = 2\pi i \sum \text{Res{}(f, a_k)$
+- Residue theorem: $\displaystyle\oint_C f(z)\,dz = 2\pi i \sum \text{Res}(f, a_k)$
 
 These are mentioned for context and further study.
 

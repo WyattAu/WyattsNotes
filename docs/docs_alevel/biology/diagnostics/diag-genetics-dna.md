@@ -35,11 +35,11 @@ DNA replication is described as semi-conservative. The Meselson-Stahl experiment
 7. Each new DNA molecule consists of one original (parental) strand and one newly synthesised strand — hence "semi-conservative."
 
 (b) **Meselson-Stahl experiment**:
-1. **Stage 1**: *E. coli* bacteria were grown for many generations in a medium containing the heavy isotope $^{15}\text{N{}$. All of the bacterial DNA incorporated $^{15}\text{N{}$, making it "heavy" DNA.
-2. **Stage 2**: The bacteria were transferred to a medium containing the light isotope $^{14}\text{N{}$ and allowed to replicate for one generation. DNA was extracted and analysed by **cesium chloride density gradient centrifugation**.
-3. **Result after 1 generation**: ALL DNA was of intermediate density ($^{15}\text{N{}$-$^{14}\text{N{}$ hybrid). This is consistent with semi-conservative replication (each molecule has one heavy and one light strand) but also with dispersive replication.
-4. **Stage 3**: The bacteria were allowed to replicate for a second generation in $^{14}\text{N{}$ medium. DNA was extracted and centrifuged again.
-5. **Result after 2 generations**: TWO bands were observed — one of intermediate density and one of light density ($^{14}\text{N{}$-$^{14}\text{N{}$), in approximately equal proportions. This is consistent ONLY with semi-conservative replication: each intermediate molecule from generation 1 produces one intermediate and one light molecule in generation 2.
+1. **Stage 1**: *E. coli* bacteria were grown for many generations in a medium containing the heavy isotope $^{15}\text{N}$. All of the bacterial DNA incorporated $^{15}\text{N}$, making it "heavy" DNA.
+2. **Stage 2**: The bacteria were transferred to a medium containing the light isotope $^{14}\text{N}$ and allowed to replicate for one generation. DNA was extracted and analysed by **cesium chloride density gradient centrifugation**.
+3. **Result after 1 generation**: ALL DNA was of intermediate density ($^{15}\text{N}$-$^{14}\text{N}$ hybrid). This is consistent with semi-conservative replication (each molecule has one heavy and one light strand) but also with dispersive replication.
+4. **Stage 3**: The bacteria were allowed to replicate for a second generation in $^{14}\text{N}$ medium. DNA was extracted and centrifuged again.
+5. **Result after 2 generations**: TWO bands were observed — one of intermediate density and one of light density ($^{14}\text{N}$-$^{14}\text{N}$), in approximately equal proportions. This is consistent ONLY with semi-conservative replication: each intermediate molecule from generation 1 produces one intermediate and one light molecule in generation 2.
 
 (c) **Conservative replication** (the entire original double helix is conserved, and an entirely new double helix is synthesised):
 - After 1 generation: TWO bands — one heavy (original) and one light (new), in equal proportions. This was NOT observed (only intermediate was seen).
@@ -250,7 +250,7 @@ Degrees of freedom = number of categories $- 1 = 4 - 1 = 3$
 
 Critical value at $p = 0.05$ with 3 degrees of freedom = **7.82**
 
-Since $\chi^2_{\text{calculated{}}$ (15.37) $\gt$ $\chi^2_{\text{critical{}}$ (7.82), the difference between observed and expected results **is statistically significant** ($p \lt 0.05$). The observed results do not fit the expected 1:1:1:1 ratio. There may be reduced viability of certain genotypes, sampling error, or other factors affecting the cross.
+Since $\chi^2_{\text{calculated}}$ (15.37) $\gt$ $\chi^2_{\text{critical}}$ (7.82), the difference between observed and expected results **is statistically significant** ($p \lt 0.05$). The observed results do not fit the expected 1:1:1:1 ratio. There may be reduced viability of certain genotypes, sampling error, or other factors affecting the cross.
 
 (d) **Sex-linked inheritance** involves genes located on the sex chromosomes (typically the X chromosome, since the Y chromosome carries very few genes). The key difference from autosomal inheritance is that males have only one X chromosome (hemizygous), so they express whatever allele is present on their single X chromosome — there is no second allele to mask a recessive allele. Females have two X chromosomes, so recessive alleles on one X can be masked by dominant alleles on the other.
 

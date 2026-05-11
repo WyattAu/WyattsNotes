@@ -39,7 +39,7 @@ The nervous system contains three functional types of neurone:
 
 ### 1.2 Myelination
 
-Many axons are surrounded by a **myelin sheath**, a lipid-rich insulating layer formed by Schwann cells (in the peripheral nervous system) or oligodendrocytes (in the central nervous system). The myelin sheath is not continuous; gaps between Schwann cells are called **nodes of Ranvier** (approximately $1$--$3\ \mu\mathrm{m{}$ apart).
+Many axons are surrounded by a **myelin sheath**, a lipid-rich insulating layer formed by Schwann cells (in the peripheral nervous system) or oligodendrocytes (in the central nervous system). The myelin sheath is not continuous; gaps between Schwann cells are called **nodes of Ranvier** (approximately $1$--$3\ \mu\mathrm{m}$ apart).
 
 Myelination has two critical effects:
 
@@ -50,7 +50,7 @@ Myelination has two critical effects:
 | ------------------ | ---------------------------------- | ---------------------------- |
 | Speed              | $15$--$120\ \mathrm{m\ s^{-1}}$    | $0.5$--$2\ \mathrm{m\ s^{-1}}$ |
 | Conduction         | Saltatory (jumping between nodes)  | Continuous wave of depolarisation |
-| Energy consumption | Lower (fewer ions need to be pumped) | Higher (more $\mathrm{Na^+/K^+{}$ pump activity) |
+| Energy consumption | Lower (fewer ions need to be pumped) | Higher (more $\mathrm{Na^+/K^+}$ pump activity) |
 
 :::warning
 Common Pitfall Students often write that "myelin speeds up the action potential." More precisely, myelin forces the action potential to jump between nodes of Ranvier (saltatory conduction), which is much faster than continuous propagation. The speed increase is because less membrane needs to be depolarised, and the local current flows further ahead to depolarise the next node.
@@ -60,63 +60,63 @@ Common Pitfall Students often write that "myelin speeds up the action potential.
 
 ### 2.1 Establishing the Resting Potential
 
-The **resting potential** is the electrical potential difference across the membrane of a resting neurone, with the inside being approximately $-70\ \mathrm{mV{}$ relative to the outside. This is maintained by the **sodium-potassium pump** and differential membrane permeability.
+The **resting potential** is the electrical potential difference across the membrane of a resting neurone, with the inside being approximately $-70\ \mathrm{mV}$ relative to the outside. This is maintained by the **sodium-potassium pump** and differential membrane permeability.
 
-**The sodium-potassium pump ($\mathrm{Na^+/K^+{}$ ATPase)** actively transports ions:
+**The sodium-potassium pump ($\mathrm{Na^+/K^+}$ ATPase)** actively transports ions:
 
-- Moves $3\ \mathrm{Na^+{}$ **out** of the cell.
-- Moves $2\ \mathrm{K^+{}$ **in**.
+- Moves $3\ \mathrm{Na^+}$ **out** of the cell.
+- Moves $2\ \mathrm{K^+}$ **in**.
 - Uses one ATP per cycle.
 
 This creates two concentration gradients:
 
 | Ion           | Extracellular Concentration | Intracellular Concentration | Gradient              |
 | ------------- | --------------------------- | --------------------------- | --------------------- |
-| $\mathrm{Na^+{}$ | $\approx 145\ \mathrm{mmol\ dm^{-3}}$ | $\approx 12\ \mathrm{mmol\ dm^{-3}}$ | Outward (10:1)     |
-| $\mathrm{K^+{}$  | $\approx 4\ \mathrm{mmol\ dm^{-3}}$  | $\approx 155\ \mathrm{mmol\ dm^{-3}}$ | Inward (40:1)      |
+| $\mathrm{Na^+}$ | $\approx 145\ \mathrm{mmol\ dm^{-3}}$ | $\approx 12\ \mathrm{mmol\ dm^{-3}}$ | Outward (10:1)     |
+| $\mathrm{K^+}$  | $\approx 4\ \mathrm{mmol\ dm^{-3}}$  | $\approx 155\ \mathrm{mmol\ dm^{-3}}$ | Inward (40:1)      |
 
-The resting membrane is much more permeable to $\mathrm{K^+{}$ than to $\mathrm{Na^+{}$ (due to more $\mathrm{K^+{}$ leak channels). $\mathrm{K^+{}$ diffuses out of the cell down its concentration gradient, carrying positive charge with it. This makes the inside negative relative to the outside. The resting potential is close to the equilibrium potential for $\mathrm{K^+{}$ (approximately $-90\ \mathrm{mV{}$), but is slightly less negative (around $-70\ \mathrm{mV{}$) because of a small inward leak of $\mathrm{Na^+{}$.
+The resting membrane is much more permeable to $\mathrm{K^+}$ than to $\mathrm{Na^+}$ (due to more $\mathrm{K^+}$ leak channels). $\mathrm{K^+}$ diffuses out of the cell down its concentration gradient, carrying positive charge with it. This makes the inside negative relative to the outside. The resting potential is close to the equilibrium potential for $\mathrm{K^+}$ (approximately $-90\ \mathrm{mV}$), but is slightly less negative (around $-70\ \mathrm{mV}$) because of a small inward leak of $\mathrm{Na^+}$.
 
 ### 2.2 Quantifying the Resting Potential: The Nernst Equation
 
 The equilibrium potential for an ion is given by the Nernst equation:
 
-$$E = \frac{RT}{zF} \ln\frac{[\text{ion{}]_{\text{out{}}}{[\text{ion{}]_{\text{in{}}}$$
+$$E = \frac{RT}{zF} \ln\frac{[\text{ion}]_{\text{out}}}{[\text{ion}]_{\text{in}}}$$
 
 where $R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$, $T$ is temperature in Kelvin, $z$ is the ion's charge, and $F = 96485\ \mathrm{C\ mol^{-1}}$.
 
-At body temperature ($37\ ^\circ\mathrm{C{} = 310\ \mathrm{K{}$):
+At body temperature ($37\ ^\circ\mathrm{C} = 310\ \mathrm{K}$):
 
-$$E_{\mathrm{K{}} = \frac{8.314 \times 310}{1 \times 96485} \ln\frac{4}{155} = 0.0267 \times \ln(0.0258) = 0.0267 \times (-3.66) = -97.7\ \mathrm{mV{}$$
+$$E_{\mathrm{K}} = \frac{8.314 \times 310}{1 \times 96485} \ln\frac{4}{155} = 0.0267 \times \ln(0.0258) = 0.0267 \times (-3.66) = -97.7\ \mathrm{mV}$$
 
-$$E_{\mathrm{Na{}} = \frac{8.314 \times 310}{1 \times 96485} \ln\frac{145}{12} = 0.0267 \times \ln(12.08) = 0.0267 \times 2.49 = +66.5\ \mathrm{mV{}$$
+$$E_{\mathrm{Na}} = \frac{8.314 \times 310}{1 \times 96485} \ln\frac{145}{12} = 0.0267 \times \ln(12.08) = 0.0267 \times 2.49 = +66.5\ \mathrm{mV}$$
 
-The actual resting potential ($-70\ \mathrm{mV{}$) lies between $E_{\mathrm{K{}}$ and $E_{\mathrm{Na{}}$, weighted by the relative permeabilities.
+The actual resting potential ($-70\ \mathrm{mV}$) lies between $E_{\mathrm{K}}$ and $E_{\mathrm{Na}}$, weighted by the relative permeabilities.
 
 ## 3. Action Potentials
 
 ### 3.1 Depolarisation and the All-or-Nothing Principle
 
-An action potential is a rapid reversal of the membrane potential from approximately $-70\ \mathrm{mV{}$ to approximately $+40\ \mathrm{mV{}$, followed by a return to the resting potential.
+An action potential is a rapid reversal of the membrane potential from approximately $-70\ \mathrm{mV}$ to approximately $+40\ \mathrm{mV}$, followed by a return to the resting potential.
 
 **Stages of the action potential:**
 
-1. **Depolarisation**: a stimulus causes voltage-gated $\mathrm{Na^+{}$ channels to open. $\mathrm{Na^+{}$ ions rush into the axon down their electrochemical gradient (attracted by the negative interior and by the higher external concentration). The membrane potential rapidly depolarises from $-70\ \mathrm{mV{}$ to $+40\ \mathrm{mV{}$.
+1. **Depolarisation**: a stimulus causes voltage-gated $\mathrm{Na^+}$ channels to open. $\mathrm{Na^+}$ ions rush into the axon down their electrochemical gradient (attracted by the negative interior and by the higher external concentration). The membrane potential rapidly depolarises from $-70\ \mathrm{mV}$ to $+40\ \mathrm{mV}$.
 
-2. **Repolarisation**: at approximately $+40\ \mathrm{mV{}$, the voltage-gated $\mathrm{Na^+{}$ channels close and voltage-gated $\mathrm{K^+{}$ channels open. $\mathrm{K^+{}$ ions rush out of the axon down their concentration gradient, carrying positive charge out and restoring the negative interior.
+2. **Repolarisation**: at approximately $+40\ \mathrm{mV}$, the voltage-gated $\mathrm{Na^+}$ channels close and voltage-gated $\mathrm{K^+}$ channels open. $\mathrm{K^+}$ ions rush out of the axon down their concentration gradient, carrying positive charge out and restoring the negative interior.
 
-3. **Hyperpolarisation (overshoot)**: the $\mathrm{K^+{}$ channels are slow to close, so $\mathrm{K^+{}$ continues to diffuse out after the resting potential has been reached, making the inside temporarily more negative than $-70\ \mathrm{mV{}$ (approximately $-80\ \mathrm{mV{}$).
+3. **Hyperpolarisation (overshoot)**: the $\mathrm{K^+}$ channels are slow to close, so $\mathrm{K^+}$ continues to diffuse out after the resting potential has been reached, making the inside temporarily more negative than $-70\ \mathrm{mV}$ (approximately $-80\ \mathrm{mV}$).
 
-4. **Restoring the resting potential**: the $\mathrm{K^+{}$ channels close, and the $\mathrm{Na^+/K^+{}$ pump restores the original ion concentrations (this is slower and uses ATP).
+4. **Restoring the resting potential**: the $\mathrm{K^+}$ channels close, and the $\mathrm{Na^+/K^+}$ pump restores the original ion concentrations (this is slower and uses ATP).
 
-**The all-or-nothing principle**: a stimulus must reach a **threshold value** (approximately $-55\ \mathrm{mV{}$) to trigger an action potential. A sub-threshold stimulus produces no action potential. Once threshold is reached, the action potential is always the same size ($+40\ \mathrm{mV{}$) -- it does not increase with stronger stimuli. The intensity of a stimulus is encoded in the **frequency** of action potentials, not their amplitude.
+**The all-or-nothing principle**: a stimulus must reach a **threshold value** (approximately $-55\ \mathrm{mV}$) to trigger an action potential. A sub-threshold stimulus produces no action potential. Once threshold is reached, the action potential is always the same size ($+40\ \mathrm{mV}$) -- it does not increase with stronger stimuli. The intensity of a stimulus is encoded in the **frequency** of action potentials, not their amplitude.
 
 ### 3.2 The Refractory Period
 
 After an action potential, the neurone enters a **refractory period** during which it cannot be stimulated to fire another action potential:
 
-- **Absolute refractory period**: voltage-gated $\mathrm{Na^+{}$ channels are inactivated (they cannot reopen immediately). No stimulus, however strong, can generate a new action potential. This ensures action potentials travel in one direction only.
-- **Relative refractory period**: the $\mathrm{Na^+{}$ channels have recovered but the membrane is hyperpolarised (more negative than resting). An action potential can be generated only by a stronger-than-normal stimulus.
+- **Absolute refractory period**: voltage-gated $\mathrm{Na^+}$ channels are inactivated (they cannot reopen immediately). No stimulus, however strong, can generate a new action potential. This ensures action potentials travel in one direction only.
+- **Relative refractory period**: the $\mathrm{Na^+}$ channels have recovered but the membrane is hyperpolarised (more negative than resting). An action potential can be generated only by a stronger-than-normal stimulus.
 
 ### 3.3 Propagation of the Action Potential
 
@@ -129,9 +129,9 @@ Action potentials are propagated along the axon by local currents. When one regi
 
 ### 3.4 Worked Example: Calculating Conduction Velocity
 
-An action potential is recorded at two points on an axon separated by $8.0\ \mathrm{cm{}$. The time between the two recordings is $2.0\ \mathrm{ms{}$.
+An action potential is recorded at two points on an axon separated by $8.0\ \mathrm{cm}$. The time between the two recordings is $2.0\ \mathrm{ms}$.
 
-$$\text{Velocity{} = \frac{\text{distance{}}{\text{time{}} = \frac{0.080\ \mathrm{m{}}{0.002\ \mathrm{s{}} = 40\ \mathrm{m\ s^{-1}}$$
+$$\text{Velocity} = \frac{\text{distance}}{\text{time}} = \frac{0.080\ \mathrm{m}}{0.002\ \mathrm{s}} = 40\ \mathrm{m\ s^{-1}}$$
 
 This is consistent with a myelinated axon of moderate diameter.
 
@@ -139,7 +139,7 @@ This is consistent with a myelinated axon of moderate diameter.
 
 ### 4.1 Structure of a Synapse
 
-A **synapse** is the junction between two neurones (or between a neurone and an effector). The gap between the cells is the **synaptic cleft** (approximately $20$--$30\ \mathrm{nm{}$ wide). The neurone before the synapse is the **presynaptic neurone**; the one after is the **postsynaptic neurone**.
+A **synapse** is the junction between two neurones (or between a neurone and an effector). The gap between the cells is the **synaptic cleft** (approximately $20$--$30\ \mathrm{nm}$ wide). The neurone before the synapse is the **presynaptic neurone**; the one after is the **postsynaptic neurone**.
 
 Key structures:
 - **Synaptic vesicles**: in the presynaptic terminal, containing neurotransmitter molecules.
@@ -156,9 +156,9 @@ Key structures:
 4. The influx of $\mathrm{Ca^{2+}}$ causes synaptic vesicles to fuse with the presynaptic membrane (exocytosis), releasing neurotransmitter into the synaptic cleft.
 5. The neurotransmitter diffuses across the synaptic cleft and binds to specific **receptor proteins** on the postsynaptic membrane.
 6. Binding opens **ligand-gated ion channels** on the postsynaptic membrane:
-   - If $\mathrm{Na^+{}$ channels open: $\mathrm{Na^+{}$ enters the postsynaptic neurone, causing depolarisation (excitatory postsynaptic potential, EPSP).
-   - If $\mathrm{Cl^-{}$ channels open: $\mathrm{Cl^-{}$ enters (or $\mathrm{K^+{}$ exits), causing hyperpolarisation (inhibitory postsynaptic potential, IPSP).
-7. If the combined EPSPs reach threshold ($-55\ \mathrm{mV{}$), an action potential is triggered in the postsynaptic neurone.
+   - If $\mathrm{Na^+}$ channels open: $\mathrm{Na^+}$ enters the postsynaptic neurone, causing depolarisation (excitatory postsynaptic potential, EPSP).
+   - If $\mathrm{Cl^-}$ channels open: $\mathrm{Cl^-}$ enters (or $\mathrm{K^+}$ exits), causing hyperpolarisation (inhibitory postsynaptic potential, IPSP).
+7. If the combined EPSPs reach threshold ($-55\ \mathrm{mV}$), an action potential is triggered in the postsynaptic neurone.
 8. The neurotransmitter is rapidly removed from the synaptic cleft by: enzymatic breakdown (e.g., acetylcholinesterase breaks down acetylcholine); reuptake into the presynaptic neurone; diffusion away from the synapse.
 
 ### 4.3 Excitatory and Inhibitory Synapses
@@ -166,7 +166,7 @@ Key structures:
 | Feature                 | Excitatory Synapse                                     | Inhibitory Synapse                                    |
 | ----------------------- | ------------------------------------------------------ | ---------------------------------------------------- |
 | Neurotransmitter example| Acetylcholine (at neuromuscular junction), glutamate   | GABA (in the brain), glycine                          |
-| Ion channels opened     | $\mathrm{Na^+{}$ channels (sometimes also $\mathrm{Ca^{2+}}$) | $\mathrm{Cl^-{}$ channels (sometimes $\mathrm{K^+{}$ channels) |
+| Ion channels opened     | $\mathrm{Na^+}$ channels (sometimes also $\mathrm{Ca^{2+}}$) | $\mathrm{Cl^-}$ channels (sometimes $\mathrm{K^+}$ channels) |
 | Effect on postsynaptic membrane | Depolarisation (EPSP) -- moves closer to threshold | Hyperpolarisation (IPSP) -- moves further from threshold |
 | Net effect              | Increases likelihood of action potential                | Decreases likelihood of action potential              |
 
@@ -271,7 +271,7 @@ Pacinian corpuscles are mechanoreceptors that detect **pressure and vibration** 
 
 1. When pressure is applied, the lamellae are deformed, stretching the neurone membrane.
 2. The deformation opens **stretch-mediated sodium channels** in the membrane.
-3. $\mathrm{Na^+{}$ ions diffuse into the neurone, causing depolarisation.
+3. $\mathrm{Na^+}$ ions diffuse into the neurone, causing depolarisation.
 4. This creates a **generator potential** (a local depolarisation, not an action potential).
 5. If the generator potential reaches threshold, it triggers an action potential in the sensory neurone.
 6. The action potential propagates along the sensory neurone to the CNS.
@@ -284,7 +284,7 @@ The generator potential is **graded**: stronger pressure produces larger depolar
 | ------------------- | ------------------------------------ | ---------------------------------- |
 | Mechanoreceptors    | Pressure, vibration, sound           | Skin, inner ear (cochlea)          |
 | Thermoreceptors     | Temperature changes                  | Skin, hypothalamus                 |
-| Chemoreceptors      | Chemical concentration (e.g., $\mathrm{O_2{}$, $\mathrm{CO_2{}$, glucose, pH) | Carotid bodies, aortic bodies, taste buds, olfactory epithelium |
+| Chemoreceptors      | Chemical concentration (e.g., $\mathrm{O_2}$, $\mathrm{CO_2}$, glucose, pH) | Carotid bodies, aortic bodies, taste buds, olfactory epithelium |
 | Photoreceptors      | Light                                | Retina (rods and cones)            |
 | Nociceptors         | Pain (tissue damage)                 | Skin, joints, internal organs      |
 | Proprioceptors      | Body position, limb movement         | Muscles, tendons, joints           |
@@ -325,7 +325,7 @@ Muscle contraction occurs by the sliding of thin filaments past thick filaments,
 
 6. **ATP hydrolysis and re-cocking**: ATP is hydrolysed to ADP + $P_i$, and the energy released re-cocks the myosin head to its high-energy position, ready for another cycle.
 
-This cycle continues as long as $\mathrm{Ca^{2+}}$ and ATP are available. One power stroke moves the thin filament approximately $5$--$10\ \mathrm{nm{}$.
+This cycle continues as long as $\mathrm{Ca^{2+}}$ and ATP are available. One power stroke moves the thin filament approximately $5$--$10\ \mathrm{nm}$.
 
 ### 8.3 The Neuromuscular Junction
 
@@ -334,8 +334,8 @@ The neuromuscular junction (NMJ) is a specialised cholinergic synapse between a 
 1. An action potential arrives at the motor neurone terminal.
 2. Voltage-gated $\mathrm{Ca^{2+}}$ channels open; $\mathrm{Ca^{2+}}$ enters and triggers exocytosis of acetylcholine-containing vesicles.
 3. ACh diffuses across the synaptic cleft and binds to **nicotinic acetylcholine receptors** on the muscle fibre membrane (motor end plate).
-4. These receptors are ligand-gated $\mathrm{Na^+{}$ channels. When ACh binds, they open, allowing $\mathrm{Na^+{}$ to enter the muscle fibre.
-5. The resulting depolarisation (end-plate potential) opens voltage-gated $\mathrm{Na^+{}$ channels in the adjacent membrane, triggering an action potential that propagates along the sarcolemma and into T-tubules.
+4. These receptors are ligand-gated $\mathrm{Na^+}$ channels. When ACh binds, they open, allowing $\mathrm{Na^+}$ to enter the muscle fibre.
+5. The resulting depolarisation (end-plate potential) opens voltage-gated $\mathrm{Na^+}$ channels in the adjacent membrane, triggering an action potential that propagates along the sarcolemma and into T-tubules.
 6. Acetylcholinesterase in the synaptic cleft rapidly breaks down ACh, terminating the signal.
 
 ### 8.4 Energy and Muscle Contraction
@@ -344,14 +344,14 @@ Muscle contraction requires ATP for:
 
 - The cross-bridge cycle (myosin head detachment and re-cocking).
 - The $\mathrm{Ca^{2+}}$ pump (SERCA) that actively transports $\mathrm{Ca^{2+}}$ back into the sarcoplasmic reticulum, ending contraction.
-- The $\mathrm{Na^+/K^+{}$ pump that restores ion gradients after action potentials.
+- The $\mathrm{Na^+/K^+}$ pump that restores ion gradients after action potentials.
 
 ATP is regenerated by:
 
 - **Aerobic respiration**: in mitochondria (for sustained, moderate activity).
 - **Anaerobic glycolysis**: produces ATP rapidly but also generates lactate (for intense, short-duration activity). See [Respiration](/docs/alevel/biology/respiration-depth).
 - **Creatine phosphate**: a rapidly mobilised phosphate store in muscle. Creatine phosphate transfers its phosphate group to ADP, regenerating ATP almost instantly:
-  $$\mathrm{Creatine\ phosphate + ADP \rightleftharpoons creatine + ATP{}$$
+  $$\mathrm{Creatine\ phosphate + ADP \rightleftharpoons creatine + ATP}$$
   This provides ATP for approximately the first 5--10 seconds of intense activity.
 
 ## 9. Nervous Control of Heart Rate
@@ -378,7 +378,7 @@ The **cardiovascular centre** in the **medulla oblongata** (in the brainstem) co
 
 **Chemoreceptors** in the **aortic body** and **carotid body** detect changes in blood chemistry:
 
-- Low $p\mathrm{O_2{}$, high $p\mathrm{CO_2{}$, or low pH (high $\mathrm{H^+{}$ concentration): detected by chemoreceptors, which send impulses to the cardiovascular centre. The centre increases sympathetic stimulation and decreases parasympathetic stimulation, increasing heart rate to increase blood flow to the lungs for gas exchange.
+- Low $p\mathrm{O_2}$, high $p\mathrm{CO_2}$, or low pH (high $\mathrm{H^+}$ concentration): detected by chemoreceptors, which send impulses to the cardiovascular centre. The centre increases sympathetic stimulation and decreases parasympathetic stimulation, increasing heart rate to increase blood flow to the lungs for gas exchange.
 
 **Baroreceptors** (pressure receptors) in the **aortic arch** and **carotid sinus** detect changes in blood pressure:
 
@@ -402,7 +402,7 @@ For more detail on the cardiac cycle and pressure changes, see [Exchange and Tra
 
 ### 10.2 The Cerebral Cortex
 
-The cerebral cortex is the outer layer of the cerebrum, approximately $2$--$4\ \mathrm{mm{}$ thick, containing cell bodies of neurones (grey matter). It is divided into functional areas:
+The cerebral cortex is the outer layer of the cerebrum, approximately $2$--$4\ \mathrm{mm}$ thick, containing cell bodies of neurones (grey matter). It is divided into functional areas:
 
 - **Motor cortex** (frontal lobe): controls voluntary movement of skeletal muscles. The area is mapped to specific body parts (the motor homunculus).
 - **Somatosensory cortex** (parietal lobe): receives and processes sensory information from the skin (touch, pressure, temperature, pain).
@@ -446,7 +446,7 @@ MND (amyotrophic lateral sclerosis, ALS) involves the progressive degeneration o
 <summary>Problem 1</summary>
 Describe the events that occur at a cholinergic synapse when an action potential arrives at the presynaptic terminal. (6 marks)
 
-**Answer.** (1) The action potential depolarises the presynaptic membrane, opening voltage-gated $\mathrm{Ca^{2+}}$ channels. (2) $\mathrm{Ca^{2+}}$ ions diffuse into the presynaptic terminal down their electrochemical gradient. (3) The influx of $\mathrm{Ca^{2+}}$ causes synaptic vesicles containing acetylcholine to move to and fuse with the presynaptic membrane (exocytosis), releasing ACh into the synaptic cleft. (4) ACh diffuses across the synaptic cleft and binds to specific receptor proteins (nicotinic receptors, which are ligand-gated $\mathrm{Na^+{}$ channels) on the postsynaptic membrane. (5) The binding opens the $\mathrm{Na^+{}$ channels; $\mathrm{Na^+{}$ ions flow into the postsynaptic neurone, causing depolarisation (an excitatory postsynaptic potential). (6) If threshold is reached, an action potential is triggered in the postsynaptic neurone. (7) Acetylcholinesterase in the synaptic cleft hydrolyses ACh into choline and acetate, which are reabsorbed by the presynaptic neurone, terminating the signal.
+**Answer.** (1) The action potential depolarises the presynaptic membrane, opening voltage-gated $\mathrm{Ca^{2+}}$ channels. (2) $\mathrm{Ca^{2+}}$ ions diffuse into the presynaptic terminal down their electrochemical gradient. (3) The influx of $\mathrm{Ca^{2+}}$ causes synaptic vesicles containing acetylcholine to move to and fuse with the presynaptic membrane (exocytosis), releasing ACh into the synaptic cleft. (4) ACh diffuses across the synaptic cleft and binds to specific receptor proteins (nicotinic receptors, which are ligand-gated $\mathrm{Na^+}$ channels) on the postsynaptic membrane. (5) The binding opens the $\mathrm{Na^+}$ channels; $\mathrm{Na^+}$ ions flow into the postsynaptic neurone, causing depolarisation (an excitatory postsynaptic potential). (6) If threshold is reached, an action potential is triggered in the postsynaptic neurone. (7) Acetylcholinesterase in the synaptic cleft hydrolyses ACh into choline and acetate, which are reabsorbed by the presynaptic neurone, terminating the signal.
 
 <b>If you get this wrong, revise:</b> [Mechanism of Synaptic Transmission](#42-mechanism-of-synaptic-transmission)
 
@@ -486,7 +486,7 @@ A person's blood pressure rises sharply. Describe the sequence of events by whic
 <summary>Problem 5</summary>
 Explain how spatial and temporal summation enable a postsynaptic neurone to reach threshold and fire an action potential. (4 marks)
 
-**Answer.** A single excitatory postsynaptic potential (EPSP) typically produces a depolarisation of a few millivolts, which is insufficient to reach the threshold of approximately $-55\ \mathrm{mV{}$. **Spatial summation** occurs when multiple presynaptic neurones release neurotransmitter simultaneously onto different parts of the same postsynaptic neurone. The EPSPs generated at different synapses on the postsynaptic neurone add together (summate), producing a larger depolarisation that may reach threshold. **Temporal summation** occurs when a single presynaptic neurone fires rapidly, releasing neurotransmitter in quick succession. Each EPSP begins before the previous one has fully decayed, so the depolarisations build on each other, producing a larger cumulative depolarisation. Both mechanisms allow the nervous system to integrate multiple inputs and fire action potentials only when sufficient excitatory input is received.
+**Answer.** A single excitatory postsynaptic potential (EPSP) typically produces a depolarisation of a few millivolts, which is insufficient to reach the threshold of approximately $-55\ \mathrm{mV}$. **Spatial summation** occurs when multiple presynaptic neurones release neurotransmitter simultaneously onto different parts of the same postsynaptic neurone. The EPSPs generated at different synapses on the postsynaptic neurone add together (summate), producing a larger depolarisation that may reach threshold. **Temporal summation** occurs when a single presynaptic neurone fires rapidly, releasing neurotransmitter in quick succession. Each EPSP begins before the previous one has fully decayed, so the depolarisations build on each other, producing a larger cumulative depolarisation. Both mechanisms allow the nervous system to integrate multiple inputs and fire action potentials only when sufficient excitatory input is received.
 
 <b>If you get this wrong, revise:</b> [Summation](#44-summation)
 
@@ -500,7 +500,7 @@ The refractory period has critical functional consequences:
 
 1. **Unidirectional propagation**: during the absolute refractory period, the sodium channels behind the action potential are inactivated. Local currents from the active region cannot depolarise this region to threshold because the channels cannot reopen. This forces the action potential to propagate in one direction only -- from the cell body towards the axon terminals.
 
-2. **Frequency coding**: the refractory period limits the maximum frequency at which action potentials can fire. If the absolute refractory period is approximately $1\ \mathrm{ms{}$, the maximum firing rate is approximately $1000$ action potentials per second. In practice, the relative refractory period extends the minimum interval between action potentials, reducing the maximum rate further.
+2. **Frequency coding**: the refractory period limits the maximum frequency at which action potentials can fire. If the absolute refractory period is approximately $1\ \mathrm{ms}$, the maximum firing rate is approximately $1000$ action potentials per second. In practice, the relative refractory period extends the minimum interval between action potentials, reducing the maximum rate further.
 
 3. **Prevention of tetanus**: skeletal muscles stimulated by nerve impulses at high frequency undergo sustained contraction (tetanus) because calcium remains in the sarcoplasm. However, individual action potentials remain discrete because each must wait for the refractory period before the next can be generated. This is why nerve impulses are always all-or-nothing events, not graded responses.
 
@@ -511,7 +511,7 @@ The relationship between axon diameter and conduction velocity for myelinated an
 - **Non-myelinated**: $v \approx k \cdot d^{0.5}$ (velocity proportional to the square root of diameter)
 - **Myeliated**: $v \approx 6 \cdot d$ (velocity approximately proportional to diameter)
 
-The much steeper relationship for myelinated axons means that larger myelinated axons have disproportionately faster conduction velocities. This is why the largest axons in the nervous system (e.g., the giant squid axon, diameter $\approx 500\ \mu\mathrm{m{}$) are unmyelinated -- at such large diameters, the increased resistance per unit length is less significant.
+The much steeper relationship for myelinated axons means that larger myelinated axons have disproportionately faster conduction velocities. This is why the largest axons in the nervous system (e.g., the giant squid axon, diameter $\approx 500\ \mu\mathrm{m}$) are unmyelinated -- at such large diameters, the increased resistance per unit length is less significant.
 
 ### 12.3 Local Currents and Cable Theory
 
@@ -521,7 +521,7 @@ The distance an action potential can propagate without being too attenuated depe
 
 $$\lambda = \sqrt{\frac{r_m}{r_i + r_o}}$$
 
-where $r_m$ is the membrane resistance ($\Omega \cdot \mathrm{cm{}$), $r_i$ is the intracellular (axial) resistance ($\Omega\ \mathrm{cm^{-1}}$), and $r_o$ is the extracellular resistance.
+where $r_m$ is the membrane resistance ($\Omega \cdot \mathrm{cm}$), $r_i$ is the intracellular (axial) resistance ($\Omega\ \mathrm{cm^{-1}}$), and $r_o$ is the extracellular resistance.
 
 For myelinated axons, $r_m$ is very high (due to the insulating myelin sheath), so $\lambda$ is very large. This means the depolarisation can spread further without attenuation, and saltatory conduction is efficient.
 
@@ -529,15 +529,15 @@ For myelinated axons, $r_m$ is very high (due to the insulating myelin sheath), 
 
 ### 13.1 EPSPs and IPSPs
 
-**Excitatory postsynaptic potentials (EPSPs)** are local, graded depolarisations of the postsynaptic membrane caused by the opening of ligand-gated $\mathrm{Na^+{}$ channels. Typical amplitude: $0.5$--$5\ \mathrm{mV{}$. Duration: $5$--$20\ \mathrm{ms{}$.
+**Excitatory postsynaptic potentials (EPSPs)** are local, graded depolarisations of the postsynaptic membrane caused by the opening of ligand-gated $\mathrm{Na^+}$ channels. Typical amplitude: $0.5$--$5\ \mathrm{mV}$. Duration: $5$--$20\ \mathrm{ms}$.
 
-**Inhibitory postsynaptic potentials (IPSPs)** are local, graded hyperpolarisations caused by the opening of $\mathrm{Cl^-{}$ channels (or $\mathrm{K^+{}$ channels). Typical amplitude: $1$--$5\ \mathrm{mV{}$ hyperpolarisation. Duration: $10$--$30\ \mathrm{ms{}$.
+**Inhibitory postsynaptic potentials (IPSPs)** are local, graded hyperpolarisations caused by the opening of $\mathrm{Cl^-}$ channels (or $\mathrm{K^+}$ channels). Typical amplitude: $1$--$5\ \mathrm{mV}$ hyperpolarisation. Duration: $10$--$30\ \mathrm{ms}$.
 
 ### 13.2 The Postsynaptic Membrane as an Integrator
 
-The postsynaptic neurone's membrane acts as an integrator, summing all incoming EPSPs and IPSPs at the axon hillock (the region where the axon meets the cell body). The axon hillock has the highest density of voltage-gated $\mathrm{Na^+{}$ channels and therefore the lowest threshold for action potential initiation.
+The postsynaptic neurone's membrane acts as an integrator, summing all incoming EPSPs and IPSPs at the axon hillock (the region where the axon meets the cell body). The axon hillock has the highest density of voltage-gated $\mathrm{Na^+}$ channels and therefore the lowest threshold for action potential initiation.
 
-An action potential is fired only when the net depolarisation at the axon hillock reaches threshold ($\approx -55\ \mathrm{mV{}$). This requires the sum of EPSPs minus the sum of IPSPs to exceed threshold.
+An action potential is fired only when the net depolarisation at the axon hillock reaches threshold ($\approx -55\ \mathrm{mV}$). This requires the sum of EPSPs minus the sum of IPSPs to exceed threshold.
 
 ### 13.3 Facilitation and Long-Term Potentiation
 
@@ -562,7 +562,7 @@ The retina contains two types of photoreceptor:
 - Responsible for vision in low light (scotopic vision).
 - Approximately 120 million per eye, concentrated in the periphery.
 - Contain the pigment **rhodopsin** (composed of retinal and opsin).
-- Sensitive to a broad range of wavelengths (peak at approximately $500\ \mathrm{nm{}$, blue-green light).
+- Sensitive to a broad range of wavelengths (peak at approximately $500\ \mathrm{nm}$, blue-green light).
 - Low spatial resolution (many rods converge onto a single bipolar cell via convergence).
 - Cannot distinguish colour (only one type of photopigment).
 
@@ -570,9 +570,9 @@ The retina contains two types of photoreceptor:
 - Responsible for colour vision and high-acuity vision (photopic vision).
 - Approximately 6 million per eye, concentrated in the fovea (centre of the retina).
 - Three types, each containing a different photopigment sensitive to different wavelengths:
-  - **S-cones** (blue): peak sensitivity at $\approx 430\ \mathrm{nm{}$.
-  - **M-cones** (green): peak sensitivity at $\approx 530\ \mathrm{nm{}$.
-  - **L-cones** (red): peak sensitivity at $\approx 560\ \mathrm{nm{}$.
+  - **S-cones** (blue): peak sensitivity at $\approx 430\ \mathrm{nm}$.
+  - **M-cones** (green): peak sensitivity at $\approx 530\ \mathrm{nm}$.
+  - **L-cones** (red): peak sensitivity at $\approx 560\ \mathrm{nm}$.
 - High spatial resolution (fewer cones per bipolar cell in the fovea; 1:1 ratio).
 - Require brighter light to function (explain why colour vision is poor in dim light).
 
@@ -599,7 +599,7 @@ The **fovea** is a small depression at the centre of the retina where cones are 
 The adrenal glands sit on top of the kidneys and have two functionally distinct regions:
 
 **Adrenal cortex** (outer region, controlled by ACTH from the pituitary):
-- Produces **mineralocorticoids** (e.g., aldosterone), which regulates $\mathrm{Na^+{}$ reabsorption in the kidneys.
+- Produces **mineralocorticoids** (e.g., aldosterone), which regulates $\mathrm{Na^+}$ reabsorption in the kidneys.
 - Produces **glucocorticoids** (e.g., cortisol), which regulates metabolism, suppresses the immune system, and responds to stress.
 
 **Adrenal medulla** (inner region, controlled by the sympathetic nervous system):
@@ -634,26 +634,26 @@ For more on hormonal control of blood glucose, see [Homeostasis](/docs/alevel/bi
 | Organisation        | Central (brain + spinal cord) + peripheral            | Ventral nerve cord + ganglia                 |
 | Neurone structure   | Myelinated; saltatory conduction                   | Non-myelinated; slower conduction              |
 | Speed               | Fast ($15$--$120\ \mathrm{m\ s^{-1}}$)          | Slower ($0.5$--$10\ \mathrm{m\ s^{-1}}$)      |
-| Giant axons         | Rare (some in vertebrates)                        | Common (squid giant axon, $500\ \mu\mathrm{m{}$)  |
+| Giant axons         | Rare (some in vertebrates)                        | Common (squid giant axon, $500\ \mu\mathrm{m}$)  |
 | Cell bodies           | In CNS                                       | In ganglia (peripheral)                       |
 
 ### 16.2 The Squid Giant Axon
 
-The giant axon of the squid (_Loligo forbesii_) was instrumental in the discovery of the ionic basis of the action potential (Hodgkin and Huxley, 1952; Nobel Prize 1963). Its large diameter ($\approx 500\ \mu\mathrm{m{}$) allowed insertion of microelectrodes for intracellular recording, which was not possible with smaller vertebrate axons at the time.
+The giant axon of the squid (_Loligo forbesii_) was instrumental in the discovery of the ionic basis of the action potential (Hodgkin and Huxley, 1952; Nobel Prize 1963). Its large diameter ($\approx 500\ \mu\mathrm{m}$) allowed insertion of microelectrodes for intracellular recording, which was not possible with smaller vertebrate axons at the time.
 
-Hodgkin and Huxley used the **voltage clamp** technique to hold the membrane potential at a fixed value and measure the ionic currents flowing across the membrane. This allowed them to determine the conductances of the $\mathrm{Na^+{}$ and $\mathrm{K^+{}$ channels as a function of membrane potential, establishing the Hodgkin-Huxley equations that describe the action potential quantitatively.
+Hodgkin and Huxley used the **voltage clamp** technique to hold the membrane potential at a fixed value and measure the ionic currents flowing across the membrane. This allowed them to determine the conductances of the $\mathrm{Na^+}$ and $\mathrm{K^+}$ channels as a function of membrane potential, establishing the Hodgkin-Huxley equations that describe the action potential quantitatively.
 
 ## 17. Drugs Affecting Synaptic Transmission
 
 ### 17.1 Detailed Mechanisms
 
-**Nicotine** (from tobacco) binds to nicotinic ACh receptors (ligand-gated $\mathrm{Na^+{}$ channels) in the brain, causing $\mathrm{Na^+{}$ influx and depolarisation. Prolonged exposure causes receptor **up-regulation** (increased number of receptors), which contributes to tolerance and addiction.
+**Nicotine** (from tobacco) binds to nicotinic ACh receptors (ligand-gated $\mathrm{Na^+}$ channels) in the brain, causing $\mathrm{Na^+}$ influx and depolarisation. Prolonged exposure causes receptor **up-regulation** (increased number of receptors), which contributes to tolerance and addiction.
 
 **Cocaine** blocks the reuptake of dopamine from the synaptic cleft by the dopamine transporter (DAT). Dopamine accumulates in the synapse, overstimulating postsynaptic receptors. Chronic use causes down-regulation of dopamine receptors and depletion of dopamine reserves, contributing to the "crash" and addiction cycle.
 
 **Serotonin reuptake inhibitors (SSRIs)** (e.g., fluoxetine/Prozac) block the serotonin transporter (SERT), increasing serotonin concentration in the synaptic cleft. This enhances serotonergic neurotransmission, which is thought to alleviate depression by increasing neurotransmission in brain circuits that regulate mood, emotion, and sleep.
 
-**Benzodiazepines** (e.g., diazepam/Valium) enhance the effect of GABA (the main inhibitory neurotransmitter in the brain). They bind to a specific site on the $\mathrm{GABA_A{}$ receptor, increasing the frequency of chloride channel opening, increasing hyperpolarisation of the postsynaptic membrane. This produces anxiolytic (anti-anxiety), sedative, and muscle-relaxant effects.
+**Benzodiazepines** (e.g., diazepam/Valium) enhance the effect of GABA (the main inhibitory neurotransmitter in the brain). They bind to a specific site on the $\mathrm{GABA_A}$ receptor, increasing the frequency of chloride channel opening, increasing hyperpolarisation of the postsynaptic membrane. This produces anxiolytic (anti-anxiety), sedative, and muscle-relaxant effects.
 
 ### 17.2 Tolerance and Dependence
 
@@ -729,16 +729,16 @@ Neuroplasticity is greatest during childhood (critical periods for language acqu
 | ------- | ---- | ----- |
 | Sensitivity | High (function well in low light) | Low (require bright light) |
 | Visual acuity | Low (many rods share a single ganglion cell, so signals are pooled) | High (each cone connects to its own ganglion cell via a bipolar cell, so signals are separate) |
-| Colour vision | No (only one type of rhodopsin pigment, maximally sensitive at $\approx 500\ \mathrm{nm{}$) | Yes (three types: S-cones $\approx 420\ \mathrm{nm{}$, M-cones $\approx 534\ \mathrm{nm{}$, L-cones $\approx 564\ \mathrm{nm{}$) |
+| Colour vision | No (only one type of rhodopsin pigment, maximally sensitive at $\approx 500\ \mathrm{nm}$) | Yes (three types: S-cones $\approx 420\ \mathrm{nm}$, M-cones $\approx 534\ \mathrm{nm}$, L-cones $\approx 564\ \mathrm{nm}$) |
 | Distribution | Concentrated in the periphery of the retina; absent from the fovea | Concentrated in the fovea; sparse in the periphery |
 | Response speed | Slow | Fast |
 | Number | $\approx 120$ million per eye | $\approx 6$ million per eye |
 
 ### 19.3 Phototransduction
 
-In the dark, rod cells have high levels of **cGMP**, which opens $\mathrm{Na^+{}$ channels (cGMP-gated channels). $\mathrm{Na^+{}$ flows in, depolarising the cell to approximately $-40\ \mathrm{mV{}$. This depolarisation causes the release of the neurotransmitter **glutamate** onto bipolar cells.
+In the dark, rod cells have high levels of **cGMP**, which opens $\mathrm{Na^+}$ channels (cGMP-gated channels). $\mathrm{Na^+}$ flows in, depolarising the cell to approximately $-40\ \mathrm{mV}$. This depolarisation causes the release of the neurotransmitter **glutamate** onto bipolar cells.
 
-When light strikes rhodopsin, the retinal component changes from the **11-cis** to the **all-trans** configuration. This activates **transducin** (a G-protein), which activates **phosphodiesterase (PDE)**. PDE hydrolyses cGMP to GMP, reducing cGMP levels. The $\mathrm{Na^+{}$ channels close, the cell hyperpolarises (to approximately $-70\ \mathrm{mV{}$), and glutamate release is reduced.
+When light strikes rhodopsin, the retinal component changes from the **11-cis** to the **all-trans** configuration. This activates **transducin** (a G-protein), which activates **phosphodiesterase (PDE)**. PDE hydrolyses cGMP to GMP, reducing cGMP levels. The $\mathrm{Na^+}$ channels close, the cell hyperpolarises (to approximately $-70\ \mathrm{mV}$), and glutamate release is reduced.
 
 This hyperpolarisation is unusual (most sensory receptors depolarise when stimulated) but effective: the reduction in glutamate causes the bipolar cells to change their activity, which is transmitted to ganglion cells and then to the brain via the optic nerve.
 
@@ -746,8 +746,8 @@ This hyperpolarisation is unusual (most sensory receptors depolarise when stimul
 
 **Accommodation** is the process by which the lens changes shape to focus light from objects at different distances on the retina:
 
-- **Distant objects** ($> 6\ \mathrm{m{}$): the ciliary muscles are relaxed, the suspensory ligaments are taut, and the lens is pulled thin (flatter, lower refractive power).
-- **Near objects** ($< 6\ \mathrm{m{}$): the ciliary muscles contract, the suspensory ligaments slacken, and the elastic lens springs back to a more rounded shape (thicker, higher refractive power).
+- **Distant objects** ($> 6\ \mathrm{m}$): the ciliary muscles are relaxed, the suspensory ligaments are taut, and the lens is pulled thin (flatter, lower refractive power).
+- **Near objects** ($< 6\ \mathrm{m}$): the ciliary muscles contract, the suspensory ligaments slacken, and the elastic lens springs back to a more rounded shape (thicker, higher refractive power).
 
 The **near point** is the closest distance at which the eye can focus (approximately 25 cm for a young adult). It increases with age as the lens becomes less elastic (**presbyopia**).
 
@@ -771,7 +771,7 @@ Colour blindness is X-linked recessive (genes for L-cones and M-cones are on the
 | Feature | Electrical Synapse | Chemical Synapse |
 | ------- | ----------------- | ---------------- |
 | Gap junctions | Present (connexon channels) | Not present |
-| Speed | Very fast (no synaptic delay) | Slower (synaptic delay $\approx 0.5\ \mathrm{ms{}$) |
+| Speed | Very fast (no synaptic delay) | Slower (synaptic delay $\approx 0.5\ \mathrm{ms}$) |
 | Direction | Usually bidirectional | Unidirectional (presynaptic $\to$ postsynaptic) |
 | Transmission | Direct ionic current flow | Neurotransmitter release and receptor binding |
 | Modulation | Limited | Highly modifiable (basis of learning and memory) |
@@ -786,10 +786,10 @@ A single neuron may receive thousands of synaptic inputs from other neurons. Whe
 - **Temporal summation**: multiple EPSPs from the same synapse arriving in rapid succession combine to reach threshold.
 - **Spatial summation**: EPSPs from multiple different synapses arriving simultaneously combine to reach threshold.
 
-If the summed depolarisation at the axon hillock reaches the threshold potential (approximately $-55\ \mathrm{mV{}$), voltage-gated $\mathrm{Na^+{}$ channels open, and an action potential is initiated.
+If the summed depolarisation at the axon hillock reaches the threshold potential (approximately $-55\ \mathrm{mV}$), voltage-gated $\mathrm{Na^+}$ channels open, and an action potential is initiated.
 
 :::warning
-Common Pitfall Students often confuse the terms "threshold" and "resting potential." The **resting potential** ($-70\ \mathrm{mV{}$) is the membrane potential of an unstimulated neuron. The **threshold potential** ($-55\ \mathrm{mV{}$) is the depolarisation level that must be reached to trigger an action potential. If the membrane depolarises to $-60\ \mathrm{mV{}$ (above resting but below threshold), no action potential is fired.
+Common Pitfall Students often confuse the terms "threshold" and "resting potential." The **resting potential** ($-70\ \mathrm{mV}$) is the membrane potential of an unstimulated neuron. The **threshold potential** ($-55\ \mathrm{mV}$) is the depolarisation level that must be reached to trigger an action potential. If the membrane depolarises to $-60\ \mathrm{mV}$ (above resting but below threshold), no action potential is fired.
 :::
 
 ## 25. Reflex Arcs: Detailed Mechanisms
@@ -879,14 +879,14 @@ ATP is required for:
 - The power stroke (myosin ATPase activity).
 - Detaching myosin from actin (preventing rigor mortis).
 - Pumping $\mathrm{Ca^{2+}}$ back into the sarcoplasmic reticulum (by $\mathrm{Ca^{2+}}$-ATPase, terminating contraction).
-- Active transport of $\mathrm{Na^+{}$ and $\mathrm{K^+{}$ by the $\mathrm{Na^+/K^+{}$ ATPase (maintaining resting membrane potential for the next action potential).
+- Active transport of $\mathrm{Na^+}$ and $\mathrm{K^+}$ by the $\mathrm{Na^+/K^+}$ ATPase (maintaining resting membrane potential for the next action potential).
 
 ATP is regenerated by:
 - **Aerobic respiration** (during rest and light exercise): glucose and fatty acids are oxidised in mitochondria.
 - **Anaerobic respiration** (during intense exercise): glucose is converted to lactate, providing rapid ATP but limited quantity.
 - **Creatine phosphate**: a short-term energy store in muscle cells. Creatine phosphate donates a phosphate group to ADP via creatine kinase, rapidly regenerating ATP:
 
-$$\text{Creatine phosphate{} + \text{ADP{} \rightleftharpoons \text{Creatine{} + \text{ATP{}$$
+$$\text{Creatine phosphate} + \text{ADP} \rightleftharpoons \text{Creatine} + \text{ATP}$$
 
 This provides approximately 5--10 seconds of maximal ATP supply before anaerobic glycolysis becomes the dominant source.
 
@@ -920,7 +920,7 @@ Diagnostic Test
 4. The increase in intracellular $\mathrm{Ca^{2+}}$ causes **synaptic vesicles** (containing the neurotransmitter acetylcholine, ACh) to move to and fuse with the presynaptic membrane.
 5. ACh is released into the **synaptic cleft** by **exocytosis**.
 6. ACh diffuses across the synaptic cleft (gap of approximately 20--40 nm) and binds to **nicotinic ACh receptors** on the postsynaptic membrane.
-7. These receptors are **ligand-gated sodium channels**. When ACh binds, the channel opens, allowing $\mathrm{Na^+{}$ to flow into the postsynaptic cell.
+7. These receptors are **ligand-gated sodium channels**. When ACh binds, the channel opens, allowing $\mathrm{Na^+}$ to flow into the postsynaptic cell.
 8. This causes **depolarisation** of the postsynaptic membrane (an **excitatory postsynaptic potential**, EPSP).
 9. If sufficient EPSPs summate to reach threshold at the axon hillock, an action potential is initiated in the postsynaptic neuron.
 10. ACh is rapidly broken down by the enzyme **acetylcholinesterase** (attached to the postsynaptic membrane), terminating the signal. The products (choline and acetate) are taken up by the presynaptic terminal and used to resynthesise ACh.
@@ -934,17 +934,17 @@ Diagnostic Test
 - Diffusion across the synaptic cleft.
 - Receptor binding and channel opening.
 
-In a pathway with many synapses (e.g., a polysynaptic reflex arc with 3 synapses), the total delay is approximately $3 \times 0.5 = 1.5\ \mathrm{ms{}$ plus the conduction time along the axons.
+In a pathway with many synapses (e.g., a polysynaptic reflex arc with 3 synapses), the total delay is approximately $3 \times 0.5 = 1.5\ \mathrm{ms}$ plus the conduction time along the axons.
 
 **Temporal summation**: if a single presynaptic neuron fires at a high frequency (e.g., 100 impulses per second, or one every 10 ms), the EPSPs overlap and summate because each EPSP lasts approximately 10--20 ms before decaying.
 
 **Spatial summation**: if multiple presynaptic neurons fire simultaneously, their EPSPs add together at the postsynaptic membrane.
 
-**Worked Example.** A single EPSP depolarises the postsynaptic membrane by $5\ \mathrm{mV{}$. The threshold for an action potential is $-55\ \mathrm{mV{}$, and the resting potential is $-70\ \mathrm{mV{}$. The membrane needs to be depolarised by $15\ \mathrm{mV{}$ to reach threshold.
+**Worked Example.** A single EPSP depolarises the postsynaptic membrane by $5\ \mathrm{mV}$. The threshold for an action potential is $-55\ \mathrm{mV}$, and the resting potential is $-70\ \mathrm{mV}$. The membrane needs to be depolarised by $15\ \mathrm{mV}$ to reach threshold.
 
-- Temporal summation: at least 3 rapid EPSPs from a single presynaptic neuron ($3 \times 5 = 15\ \mathrm{mV{}$).
-- Spatial summation: at least 3 simultaneous EPSPs from 3 different presynaptic neurons ($3 \times 5 = 15\ \mathrm{mV{}$).
-- Combination: 2 EPSPs from neuron A + 1 EPSP from neuron B ($10 + 5 = 15\ \mathrm{mV{}$).
+- Temporal summation: at least 3 rapid EPSPs from a single presynaptic neuron ($3 \times 5 = 15\ \mathrm{mV}$).
+- Spatial summation: at least 3 simultaneous EPSPs from 3 different presynaptic neurons ($3 \times 5 = 15\ \mathrm{mV}$).
+- Combination: 2 EPSPs from neuron A + 1 EPSP from neuron B ($10 + 5 = 15\ \mathrm{mV}$).
 
 ## 22. The Nervous System and Disease
 
@@ -999,7 +999,7 @@ In a pathway with many synapses (e.g., a polysynaptic reflex arc with 3 synapses
 | ------------- | -------- | -------- | ------- |
 | Mechanoreceptor | Mechanical deformation (pressure, stretch, vibration) | Skin, inner ear, muscles | Pacinian corpuscle, hair cells in cochlea |
 | Thermoreceptor | Temperature change | Skin, hypothalamus | Warm and cold receptors in dermis |
-| Chemoreceptor | Chemical concentration ($\mathrm{O_2{}$, $\mathrm{CO_2{}$, glucose, pH) | Carotid body, aortic body, taste buds, olfactory epithelium | Carotid body (detects blood $p\mathrm{CO_2{}$) |
+| Chemoreceptor | Chemical concentration ($\mathrm{O_2}$, $\mathrm{CO_2}$, glucose, pH) | Carotid body, aortic body, taste buds, olfactory epithelium | Carotid body (detects blood $p\mathrm{CO_2}$) |
 | Photoreceptor | Light intensity (rods) and wavelength (cones) | Retina | Rods and cones |
 | Baroreceptor | Blood pressure change | Aortic arch, carotid sinus | Aortic baroreceptors |
 
@@ -1009,7 +1009,7 @@ The Pacinian corpuscle is a pressure receptor found in the skin, tendons, and li
 
 1. **Pressure** deforms the corpuscle, stretching the lamellae.
 2. The stretching deforms the nerve ending, opening **stretch-mediated sodium channels** in the membrane.
-3. $\mathrm{Na^+{}$ flows into the nerve ending, causing **depolarisation** (a **generator potential**).
+3. $\mathrm{Na^+}$ flows into the nerve ending, causing **depolarisation** (a **generator potential**).
 4. If the generator potential reaches threshold, it triggers an **action potential** in the sensory neuron.
 5. The action potential is transmitted along the sensory neuron to the CNS.
 6. The action potential frequency (rate of firing) is proportional to the intensity of the stimulus (stronger pressure $=$ larger generator potential $=$ higher frequency of action potentials).
@@ -1091,9 +1091,9 @@ Memory involves three stages:
 | Feature | EPSP | IPSP |
 | ------- | ---- | ---- |
 | Neurotransmitter | Glutamate (main excitatory NT in CNS) | GABA (main inhibitory NT in CNS) or glycine (in spinal cord) |
-| Ion channels opened | $\mathrm{Na^+{}$ (and some $\mathrm{Ca^{2+}}$) | $\mathrm{Cl^-{}$ (and sometimes $\mathrm{K^+{}$) |
-| Ion movement | $\mathrm{Na^+{}$ flows in (depolarisation) | $\mathrm{Cl^-{}$ flows in (hyperpolarisation) |
-| Effect on membrane potential | Moves towards threshold (closer to $-55\ \mathrm{mV{}$) | Moves further from threshold (more negative, e.g., $-75\ \mathrm{mV{}$) |
+| Ion channels opened | $\mathrm{Na^+}$ (and some $\mathrm{Ca^{2+}}$) | $\mathrm{Cl^-}$ (and sometimes $\mathrm{K^+}$) |
+| Ion movement | $\mathrm{Na^+}$ flows in (depolarisation) | $\mathrm{Cl^-}$ flows in (hyperpolarisation) |
+| Effect on membrane potential | Moves towards threshold (closer to $-55\ \mathrm{mV}$) | Moves further from threshold (more negative, e.g., $-75\ \mathrm{mV}$) |
 | Effect on likelihood of action potential | Increases (more likely to fire) | Decreases (less likely to fire) |
 
 **Spatial summation**: multiple EPSPs from different presynaptic neurons arrive at the same postsynaptic neuron simultaneously, adding together to reach threshold.
@@ -1116,10 +1116,10 @@ Neurotransmitters must be rapidly removed from the synaptic cleft to allow preci
 | ---- | ------ | --------- | ------ |
 | Nicotine | Nicotinic ACh receptors (excitatory) | Agonist: binds to and activates the receptor | Stimulates the release of dopamine in the reward pathway; causes addiction |
 | Curare | Nicotinic ACh receptors at neuromuscular junction | Competitive antagonist: blocks ACh binding | Muscle paralysis (used historically as arrow poison; modern derivative vecuronium used in surgery) |
-| Benzodiazepines (e.g., diazepam) | GABA_A receptors | Positive allosteric modulator: enhances GABA binding, increasing $\mathrm{Cl^-{}$ influx | Anxiolytic, sedative, anticonvulsant |
+| Benzodiazepines (e.g., diazepam) | GABA_A receptors | Positive allosteric modulator: enhances GABA binding, increasing $\mathrm{Cl^-}$ influx | Anxiolytic, sedative, anticonvulsant |
 | Cocaine | Dopamine transporter (DAT) | Blocks reuptake of dopamine | Increased dopamine in synaptic cleft; euphoria and addiction |
 | Propranolol | $\beta$-adrenergic receptors | Antagonist: blocks noradrenaline binding | Reduces heart rate and blood pressure (used to treat hypertension, anxiety) |
-| Lidocaine | Voltage-gated $\mathrm{Na^+{}$ channels | Blocks channels, preventing action potential initiation | Local anaesthetic |
+| Lidocaine | Voltage-gated $\mathrm{Na^+}$ channels | Blocks channels, preventing action potential initiation | Local anaesthetic |
 
 ### 26.4 Myasthenia Gravis: An Autoimmune Disease
 
@@ -1137,9 +1137,9 @@ Neurotransmitters must be rapidly removed from the synaptic cleft to allow preci
 | Hypothalamus | Releasing and inhibiting hormones (e.g., GnRH, TRH, CRH, GHRH, somatostatin) | Anterior pituitary | Controls anterior pituitary hormone secretion |
 | Posterior pituitary | ADH (vasopressin), oxytocin | Kidneys (ADH); uterus/breasts (oxytocin) | ADH: water reabsorption. Oxytocin: uterine contraction, milk ejection |
 | Anterior pituitary | FSH, LH, ACTH, TSH, GH, prolactin | Various | FSH/LH: reproduction. ACTH: adrenal cortex. TSH: thyroid. GH: growth. Prolactin: milk production |
-| Thyroid | Thyroxine ($\mathrm{T_4{}$), triiodothyronine ($\mathrm{T_3{}$), calcitonin | Most body cells (thyroid hormones); bones (calcitonin) | Increases metabolic rate; promotes growth and development; calcitonin lowers blood $\mathrm{Ca^{2+}}$ |
+| Thyroid | Thyroxine ($\mathrm{T_4}$), triiodothyronine ($\mathrm{T_3}$), calcitonin | Most body cells (thyroid hormones); bones (calcitonin) | Increases metabolic rate; promotes growth and development; calcitonin lowers blood $\mathrm{Ca^{2+}}$ |
 | Parathyroid | PTH (parathyroid hormone) | Bones, kidneys, intestine | Raises blood $\mathrm{Ca^{2+}}$ (stimulates osteoclasts; increases $\mathrm{Ca^{2+}}$ reabsorption in kidneys) |
-| Adrenal cortex | Aldosterone, cortisol, androgens | Kidneys (aldosterone); most cells (cortisol) | Aldosterone: $\mathrm{Na^+{}$ reabsorption. Cortisol: stress response, anti-inflammatory |
+| Adrenal cortex | Aldosterone, cortisol, androgens | Kidneys (aldosterone); most cells (cortisol) | Aldosterone: $\mathrm{Na^+}$ reabsorption. Cortisol: stress response, anti-inflammatory |
 | Pancreas (islets) | Insulin ($\beta$ cells), glucagon ($\alpha$ cells) | Liver, muscle, adipose | Regulates blood glucose |
 | Ovaries | Oestrogen, progesterone | Uterus, breasts, hypothalamus | Female secondary sexual characteristics; regulates menstrual cycle; maintains pregnancy |
 | Testes | Testosterone | Various | Male secondary sexual characteristics; spermatogenesis; muscle and bone growth |
@@ -1151,17 +1151,17 @@ Hormones bind to specific receptors on (or in) target cells. The type of recepto
 | Receptor Type | Hormone Type | Mechanism | Speed |
 | ------------- | ------------ | --------- | ----- |
 | Intracellular (nuclear) | Steroid hormones (testosterone, oestrogen, cortisol), thyroid hormones | Hormone diffuses through the membrane; binds to intracellular receptor; hormone-receptor complex enters nucleus; acts as a transcription factor, directly affecting gene expression | Slow (hours to days) |
-| Cell surface (GPCR) | Peptide hormones (insulin, glucagon, ADH), adrenaline | Hormone binds to G-protein coupled receptor; activates second messenger cascade (cAMP, $\mathrm{IP_3/DAG{}$, $\mathrm{Ca^{2+}}$); amplifies signal | Fast (seconds to minutes) |
+| Cell surface (GPCR) | Peptide hormones (insulin, glucagon, ADH), adrenaline | Hormone binds to G-protein coupled receptor; activates second messenger cascade (cAMP, $\mathrm{IP_3/DAG}$, $\mathrm{Ca^{2+}}$); amplifies signal | Fast (seconds to minutes) |
 | Cell surface (tyrosine kinase) | Insulin, growth factors | Hormone binds to receptor tyrosine kinase; autophosphorylation; activates intracellular signalling cascade (MAPK, PI3K) | Minutes to hours |
 
 ### 27.3 Second Messengers
 
 | Second Messenger | Generated By | Activated By | Effect |
 | ---------------- | ------------ | ------------ | ------ |
-| cAMP | Adenylate cyclase | G-protein ($\mathrm{G_s{}$) | Activates protein kinase A (PKA), which phosphorylates target proteins |
-| $\mathrm{IP_3{}$ | Phospholipase C (PLC) | G-protein ($\mathrm{G_q{}$) | Binds to receptors on ER, releasing stored $\mathrm{Ca^{2+}}$ |
-| DAG | PLC | G-protein ($\mathrm{G_q{}$) | Activates protein kinase C (PKC), which phosphorylates target proteins |
-| $\mathrm{Ca^{2+}}$ | Released from ER via $\mathrm{IP_3{}$ receptors | $\mathrm{IP_3{}$ | Binds to calmodulin; $\mathrm{Ca^{2+}}$-calmodulin complex activates various enzymes |
+| cAMP | Adenylate cyclase | G-protein ($\mathrm{G_s}$) | Activates protein kinase A (PKA), which phosphorylates target proteins |
+| $\mathrm{IP_3}$ | Phospholipase C (PLC) | G-protein ($\mathrm{G_q}$) | Binds to receptors on ER, releasing stored $\mathrm{Ca^{2+}}$ |
+| DAG | PLC | G-protein ($\mathrm{G_q}$) | Activates protein kinase C (PKC), which phosphorylates target proteins |
+| $\mathrm{Ca^{2+}}$ | Released from ER via $\mathrm{IP_3}$ receptors | $\mathrm{IP_3}$ | Binds to calmodulin; $\mathrm{Ca^{2+}}$-calmodulin complex activates various enzymes |
 
 ## 28. Visual Processing and the Eye
 
@@ -1207,7 +1207,7 @@ The autonomic nervous system controls heart rate:
 | ------ | ----------- | -------- | ------- |
 | High blood pressure | Baroreceptors in aortic arch and carotid sinus | Decrease heart rate | Baroreceptors $\to$ sensory neurone $\to$ medulla oblongata (cardiovascular centre) $\to$ parasympathetic (vagus nerve) $\to$ SAN: slows heart rate |
 | Low blood pressure | Baroreceptors | Increase heart rate | Baroreceptors $\to$ medulla $\to$ sympathetic nervous system $\to$ SAN: increases heart rate; adrenaline also increases heart rate |
-| High blood $\mathrm{CO_2{}$ / low $\mathrm{O_2{}$ / low pH | Chemoreceptors in aortic and carotid bodies | Increase heart rate and breathing rate | Chemoreceptors $\to$ medulla $\to$ sympathetic nervous system + increased ventilation rate |
+| High blood $\mathrm{CO_2}$ / low $\mathrm{O_2}$ / low pH | Chemoreceptors in aortic and carotid bodies | Increase heart rate and breathing rate | Chemoreceptors $\to$ medulla $\to$ sympathetic nervous system + increased ventilation rate |
 
 ## 29. Muscle Contraction: The Sliding Filament Mechanism
 
@@ -1252,7 +1252,7 @@ The autonomic nervous system controls heart rate:
 | Mitochondrial density | High | Low |
 | Myoglobin concentration | High (red muscle) | Low (white muscle) |
 | Glycogen stores | Low | High |
-| $\mathrm{O_2{}$ supply | High (many capillaries) | Low (fewer capillaries) |
+| $\mathrm{O_2}$ supply | High (many capillaries) | Low (fewer capillaries) |
 | Energy source | Aerobic (fatty acids) | Anaerobic (glycogen) |
 | Function | Endurance activities (posture, walking) | Explosive activities (sprinting, jumping) |
 
@@ -1296,9 +1296,9 @@ Breathing rate is controlled by the medulla oblongata:
 
 | Factor | Detected By | Response |
 | ------ | ----------- | -------- |
-| High blood $\mathrm{CO_2{}$ ($p\mathrm{CO_2{}$) | Chemoreceptors in aortic and carotid bodies; central chemoreceptors in medulla | Increase breathing rate and depth (hyperventilation) |
-| Low blood $\mathrm{O_2{}$ ($p\mathrm{O_2{}$) | Peripheral chemoreceptors (carotid and aortic bodies) | Increase breathing rate (only significant when $p\mathrm{O_2{}$ is very low; $\mathrm{CO_2{}$ is normally the main stimulus) |
-| Low blood pH | Central chemoreceptors (respond to $\mathrm{H^+{}$ in cerebrospinal fluid; $\mathrm{CO_2{}$ diffuses across blood-brain barrier and forms $\mathrm{H^+{}$ via carbonic anhydrase) | Increase breathing rate |
+| High blood $\mathrm{CO_2}$ ($p\mathrm{CO_2}$) | Chemoreceptors in aortic and carotid bodies; central chemoreceptors in medulla | Increase breathing rate and depth (hyperventilation) |
+| Low blood $\mathrm{O_2}$ ($p\mathrm{O_2}$) | Peripheral chemoreceptors (carotid and aortic bodies) | Increase breathing rate (only significant when $p\mathrm{O_2}$ is very low; $\mathrm{CO_2}$ is normally the main stimulus) |
+| Low blood pH | Central chemoreceptors (respond to $\mathrm{H^+}$ in cerebrospinal fluid; $\mathrm{CO_2}$ diffuses across blood-brain barrier and forms $\mathrm{H^+}$ via carbonic anhydrase) | Increase breathing rate |
 
 ## 31. Habituation, Conditioning, and Learning
 
@@ -1341,30 +1341,30 @@ The most complex form of learning: the animal solves a problem suddenly (without
 
 ### 32.1 Resting Membrane Potential
 
-The resting membrane potential is approximately $-70\ \mathrm{mV{}$ (inside negative relative to outside). This is maintained by:
+The resting membrane potential is approximately $-70\ \mathrm{mV}$ (inside negative relative to outside). This is maintained by:
 
-1. The $\mathrm{Na^+/K^+{}$ ATPase (3 $\mathrm{Na^+{}$ out, 2 $\mathrm{K^+{}$ in).
-2. Membrane permeability: at rest, the membrane is approximately 50--100 times more permeable to $\mathrm{K^+{}$ than to $\mathrm{Na^+{}$ (more $\mathrm{K^+{}$ leak channels than $\mathrm{Na^+{}$ leak channels).
-3. $\mathrm{K^+{}$ diffuses out of the cell down its concentration gradient, carrying positive charge with it, making the inside negative.
+1. The $\mathrm{Na^+/K^+}$ ATPase (3 $\mathrm{Na^+}$ out, 2 $\mathrm{K^+}$ in).
+2. Membrane permeability: at rest, the membrane is approximately 50--100 times more permeable to $\mathrm{K^+}$ than to $\mathrm{Na^+}$ (more $\mathrm{K^+}$ leak channels than $\mathrm{Na^+}$ leak channels).
+3. $\mathrm{K^+}$ diffuses out of the cell down its concentration gradient, carrying positive charge with it, making the inside negative.
 
 **Nernst equation** (simplified for one ion):
 
-$$E = \frac{RT}{zF} \ln \frac{[\text{ion{}]_{\text{out{}}}{[\text{ion{}]_{\text{in{}}}$$
+$$E = \frac{RT}{zF} \ln \frac{[\text{ion}]_{\text{out}}}{[\text{ion}]_{\text{in}}}$$
 
-For $\mathrm{K^+{}$: $E_K \approx -90\ \mathrm{mV{}$; for $\mathrm{Na^+{}$: $E_{Na} \approx +60\ \mathrm{mV{}$.
+For $\mathrm{K^+}$: $E_K \approx -90\ \mathrm{mV}$; for $\mathrm{Na^+}$: $E_{Na} \approx +60\ \mathrm{mV}$.
 
-The resting potential ($-70\ \mathrm{mV{}$) is closer to $E_K$ than to $E_{Na}$, reflecting the greater permeability to $\mathrm{K^+{}$.
+The resting potential ($-70\ \mathrm{mV}$) is closer to $E_K$ than to $E_{Na}$, reflecting the greater permeability to $\mathrm{K^+}$.
 
 ### 32.2 Action Potential Phases
 
 | Phase | Membrane Potential | Ion Movements |
 | ----- | ----------------- | ------------- |
-| Resting | $-70\ \mathrm{mV{}$ | $\mathrm{Na^+{}$ and $\mathrm{K^+{}$ leak channels open (net: $\mathrm{K^+{}$ out) |
-| Depolarisation | Rises to $+40\ \mathrm{mV{}$ | Voltage-gated $\mathrm{Na^+{}$ channels open; $\mathrm{Na^+{}$ rushes in |
-| Peak | $+40\ \mathrm{mV{}$ | $\mathrm{Na^+{}$ channels close (inactivated); $\mathrm{K^+{}$ channels begin to open |
-| Repolarisation | Falls back towards $-70\ \mathrm{mV{}$ | Voltage-gated $\mathrm{K^+{}$ channels open; $\mathrm{K^+{}$ rushes out |
-| Hyperpolarisation | Briefly more negative than $-70\ \mathrm{mV{}$ | $\mathrm{K^+{}$ channels close slowly; excess $\mathrm{K^+{}$ efflux |
-| Refractory period | Returns to $-70\ \mathrm{mV{}$ | $\mathrm{Na^+{}$ channels are inactivated (absolute refractory period: no new action potential can be generated); then return to resting state (relative refractory period: only a larger stimulus can trigger a new action potential) |
+| Resting | $-70\ \mathrm{mV}$ | $\mathrm{Na^+}$ and $\mathrm{K^+}$ leak channels open (net: $\mathrm{K^+}$ out) |
+| Depolarisation | Rises to $+40\ \mathrm{mV}$ | Voltage-gated $\mathrm{Na^+}$ channels open; $\mathrm{Na^+}$ rushes in |
+| Peak | $+40\ \mathrm{mV}$ | $\mathrm{Na^+}$ channels close (inactivated); $\mathrm{K^+}$ channels begin to open |
+| Repolarisation | Falls back towards $-70\ \mathrm{mV}$ | Voltage-gated $\mathrm{K^+}$ channels open; $\mathrm{K^+}$ rushes out |
+| Hyperpolarisation | Briefly more negative than $-70\ \mathrm{mV}$ | $\mathrm{K^+}$ channels close slowly; excess $\mathrm{K^+}$ efflux |
+| Refractory period | Returns to $-70\ \mathrm{mV}$ | $\mathrm{Na^+}$ channels are inactivated (absolute refractory period: no new action potential can be generated); then return to resting state (relative refractory period: only a larger stimulus can trigger a new action potential) |
 
 ### 32.3 Speed of Nerve Impulse Conduction
 
@@ -1377,9 +1377,9 @@ The speed of conduction depends on:
 | Temperature | Higher temperature = faster conduction | Increases rate of ion channel opening and diffusion |
 
 **Speeds:**
-- Unmyelinated axon ($0.5\ \mu\mathrm{m{}$ diameter): approximately $0.5\ \mathrm{m\ s^{-1}}$
-- Myelinated axon ($10\ \mu\mathrm{m{}$ diameter): approximately $100\ \mathrm{m\ s^{-1}}$
-- Squid giant axon ($500\ \mu\mathrm{m{}$ diameter, unmyelinated): approximately $25\ \mathrm{m\ s^{-1}}$
+- Unmyelinated axon ($0.5\ \mu\mathrm{m}$ diameter): approximately $0.5\ \mathrm{m\ s^{-1}}$
+- Myelinated axon ($10\ \mu\mathrm{m}$ diameter): approximately $100\ \mathrm{m\ s^{-1}}$
+- Squid giant axon ($500\ \mu\mathrm{m}$ diameter, unmyelinated): approximately $25\ \mathrm{m\ s^{-1}}$
 
 **Multiple sclerosis (MS):** autoimmune destruction of the myelin sheath in the CNS, slowing or blocking nerve impulse conduction. Symptoms depend on which nerves are affected.
 
@@ -1584,7 +1584,7 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 | Feature | Excitatory Synapse | Inhibitory Synapse |
 | ------- | ----------------- | ----------------- |
 | Neurotransmitter example | Acetylcholine (at neuromuscular junction), glutamate | GABA (in the brain), glycine (in the spinal cord) |
-| Ion channels opened | $\mathrm{Na^+{}$ channels (cations enter) | $\mathrm{Cl^-{}$ channels (anions enter) or $\mathrm{K^+{}$ channels ($\mathrm{K^+{}$ exits) |
+| Ion channels opened | $\mathrm{Na^+}$ channels (cations enter) | $\mathrm{Cl^-}$ channels (anions enter) or $\mathrm{K^+}$ channels ($\mathrm{K^+}$ exits) |
 | Effect on postsynaptic membrane | Depolarisation (EPSP: excitatory postsynaptic potential) | Hyperpolarisation (IPSP: inhibitory postsynaptic potential) |
 | Effect on likelihood of action potential | Increases (brings membrane potential closer to threshold) | Decreases (moves membrane potential further from threshold) |
 
@@ -1647,10 +1647,10 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 
 | Hormone | Source | Effect |
 | ------- | ------ | ------ |
-| Thyroxine ($\mathrm{T_4{}$) | Thyroid gland | Stimulates basal metabolic rate; essential for growth and development; increases oxygen consumption and heat production |
+| Thyroxine ($\mathrm{T_4}$) | Thyroid gland | Stimulates basal metabolic rate; essential for growth and development; increases oxygen consumption and heat production |
 | Cortisol | Adrenal cortex | Increases blood glucose (stimulates gluconeogenesis and glycogenolysis); suppresses the immune system; anti-inflammatory |
 | Adrenaline | Adrenal medulla | Fight or flight response: increases heart rate, dilates bronchioles, dilates pupils, stimulates glycogenolysis |
-| Aldosterone | Adrenal cortex | Increases $\mathrm{Na^+{}$ reabsorption and $\mathrm{K^+{}$ secretion in the kidney; increases blood volume and pressure |
+| Aldosterone | Adrenal cortex | Increases $\mathrm{Na^+}$ reabsorption and $\mathrm{K^+}$ secretion in the kidney; increases blood volume and pressure |
 
 ## 42. Sensory Receptors
 
@@ -1667,9 +1667,9 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 
 | Receptor Type | Stimulus Detected | Location | Mechanism |
 | ------------- | ---------------- | -------- | --------- |
-| Pacinian corpuscle | Mechanical pressure / vibration | Deep in the skin, joints, tendons | Pressure deforms the corpuscle; stretches the sensory neurone membrane; opens stretch-mediated sodium channels; $\mathrm{Na^+{}$ enters; depolarisation (generator potential) |
-| Photoreceptor (rod/cone) | Light | Retina of the eye | Light is absorbed by visual pigment (rhodopsin in rods; photopsin in cones); pigment splits; triggers a cascade that closes $\mathrm{Na^+{}$ channels; hyperpolarisation (generator potential) |
-| Olfactory receptor | Chemical (volatile odorants) | Nasal epithelium | Odorant binds to G-protein coupled receptor on cilia; activates adenylate cyclase $\to$ cAMP $\to$ opens $\mathrm{Na^+{}$ channels; depolarisation |
+| Pacinian corpuscle | Mechanical pressure / vibration | Deep in the skin, joints, tendons | Pressure deforms the corpuscle; stretches the sensory neurone membrane; opens stretch-mediated sodium channels; $\mathrm{Na^+}$ enters; depolarisation (generator potential) |
+| Photoreceptor (rod/cone) | Light | Retina of the eye | Light is absorbed by visual pigment (rhodopsin in rods; photopsin in cones); pigment splits; triggers a cascade that closes $\mathrm{Na^+}$ channels; hyperpolarisation (generator potential) |
+| Olfactory receptor | Chemical (volatile odorants) | Nasal epithelium | Odorant binds to G-protein coupled receptor on cilia; activates adenylate cyclase $\to$ cAMP $\to$ opens $\mathrm{Na^+}$ channels; depolarisation |
 | Gustatory receptor | Chemical (dissolved tastants) | Taste buds on tongue | Tastant binds to receptor; depolarisation; action potential sent to brain |
 | Baroreceptor | Blood pressure | Aortic arch, carotid sinus | Stretch of arterial wall by high blood pressure opens stretch-mediated channels; depolarisation; sends signals to the medulla (triggers vasodilation and reduced heart rate via the vagus nerve) |
 
@@ -1704,18 +1704,18 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 
 | Stage | What Happens | Membrane Potential |
 | ----- | ----------- | ----------------- |
-| Resting potential | $\mathrm{Na^+{}$/$\mathrm{K^+{}$ pump maintains concentration gradients; membrane is more permeable to $\mathrm{K^+{}$ than $\mathrm{Na^+{}$ (leak channels); inside is negative relative to outside | -70 mV |
-| Depolarisation | Stimulus causes voltage-gated $\mathrm{Na^+{}$ channels to open; $\mathrm{Na^+{}$ rushes in (down its electrochemical gradient); membrane potential becomes more positive | -70 mV $\to$ +40 mV |
-| Repolarisation | Voltage-gated $\mathrm{Na^+{}$ channels close; voltage-gated $\mathrm{K^+{}$ channels open (with a delay); $\mathrm{K^+{}$ rushes out (down its electrochemical gradient); membrane potential returns to negative | +40 mV $\to$ -70 mV |
-| Hyperpolarisation | Voltage-gated $\mathrm{K^+{}$ channels close slowly; membrane potential briefly becomes more negative than the resting potential | -70 mV $\to$ -80 mV (briefly) |
-| Return to resting | $\mathrm{Na^+{}$/$\mathrm{K^+{}$ pump restores the original ion concentrations | -70 mV |
+| Resting potential | $\mathrm{Na^+}$/$\mathrm{K^+}$ pump maintains concentration gradients; membrane is more permeable to $\mathrm{K^+}$ than $\mathrm{Na^+}$ (leak channels); inside is negative relative to outside | -70 mV |
+| Depolarisation | Stimulus causes voltage-gated $\mathrm{Na^+}$ channels to open; $\mathrm{Na^+}$ rushes in (down its electrochemical gradient); membrane potential becomes more positive | -70 mV $\to$ +40 mV |
+| Repolarisation | Voltage-gated $\mathrm{Na^+}$ channels close; voltage-gated $\mathrm{K^+}$ channels open (with a delay); $\mathrm{K^+}$ rushes out (down its electrochemical gradient); membrane potential returns to negative | +40 mV $\to$ -70 mV |
+| Hyperpolarisation | Voltage-gated $\mathrm{K^+}$ channels close slowly; membrane potential briefly becomes more negative than the resting potential | -70 mV $\to$ -80 mV (briefly) |
+| Return to resting | $\mathrm{Na^+}$/$\mathrm{K^+}$ pump restores the original ion concentrations | -70 mV |
 
 ### 44.2 Refractory Periods
 
 | Period | What Happens | Why It Matters |
 | ------ | ----------- | ------------- |
-| Absolute refractory period | Voltage-gated $\mathrm{Na^+{}$ channels are inactivated; no new action potential can be generated regardless of stimulus strength | Ensures action potentials travel in one direction only (unidirectional propagation) |
-| Relative refractory period | Some $\mathrm{Na^+{}$ channels have recovered but $\mathrm{K^+{}$ channels are still open; a stronger-than-normal stimulus can generate an action potential | Limits the maximum frequency of action potentials |
+| Absolute refractory period | Voltage-gated $\mathrm{Na^+}$ channels are inactivated; no new action potential can be generated regardless of stimulus strength | Ensures action potentials travel in one direction only (unidirectional propagation) |
+| Relative refractory period | Some $\mathrm{Na^+}$ channels have recovered but $\mathrm{K^+}$ channels are still open; a stronger-than-normal stimulus can generate an action potential | Limits the maximum frequency of action potentials |
 
 ## 45. Myelination and Saltatory Conduction
 
@@ -1725,7 +1725,7 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 | ------- | ----------- |
 | Structure | Multiple layers of cell membrane (from Schwann cells in the PNS; oligodendrocytes in the CNS) wrapped around the axon |
 | Function | Insulates the axon; prevents ion leakage; increases the speed of action potential propagation |
-| Nodes of Ranvier | Gaps in the myelin sheath (~1--3 mm apart); exposed axon membrane; voltage-gated $\mathrm{Na^+{}$ channels are concentrated here |
+| Nodes of Ranvier | Gaps in the myelin sheath (~1--3 mm apart); exposed axon membrane; voltage-gated $\mathrm{Na^+}$ channels are concentrated here |
 
 ### 45.2 Saltatory Conduction
 
@@ -1734,7 +1734,7 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 | Mechanism | Action potential "jumps" from one node of Ranvier to the next (does not propagate continuously along the axon) |
 | Speed | Much faster than continuous conduction (up to 120 m/s in myelinated neurones vs ~0.5 m/s in unmyelinated neurones) |
 | Why faster | The depolarisation at one node is sufficient to depolarise the next node to threshold (current flows under the myelin sheath and builds up at the next node) |
-| Energy efficient | Fewer $\mathrm{Na^+{}$/$\mathrm{K^+{}$ pumps needed to restore ion gradients (only the nodes of Ranvier need repolarisation, not the entire axon membrane) |
+| Energy efficient | Fewer $\mathrm{Na^+}$/$\mathrm{K^+}$ pumps needed to restore ion gradients (only the nodes of Ranvier need repolarisation, not the entire axon membrane) |
 
 ## 46. Diseases of the Nervous System
 
@@ -1836,7 +1836,7 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 | 4. Exocytosis | ACh is released into the synaptic cleft by exocytosis |
 | 5. Diffusion | ACh diffuses across the synaptic cleft (very short distance; transmission is fast) |
 | 6. Receptor binding | ACh binds to specific receptor proteins (nicotinic ACh receptors) on the postsynaptic membrane; this causes sodium ion channels to open |
-| 7. Postsynaptic depolarisation | $\mathrm{Na^+{}$ ions diffuse into the postsynaptic neurone; this causes depolarisation (excitatory postsynaptic potential, EPSP); if the EPSP reaches threshold, an action potential is triggered |
+| 7. Postsynaptic depolarisation | $\mathrm{Na^+}$ ions diffuse into the postsynaptic neurone; this causes depolarisation (excitatory postsynaptic potential, EPSP); if the EPSP reaches threshold, an action potential is triggered |
 | 8. Enzymatic breakdown | Acetylcholinesterase (in the synaptic cleft) hydrolyses ACh into choline and ethanoic acid (acetate); this prevents continuous stimulation of the postsynaptic neurone |
 | 9. Reuptake/recycling | Choline is taken back up into the presynaptic neurone by active transport; combined with acetyl-CoA to resynthesise ACh; stored in new vesicles |
 

@@ -304,7 +304,7 @@ when $\mathbf{'\{'}A{'\}'}$ is applied first.
 :::tip
 To find the matrix of a combined transformation, multiply the matrices in reverse order of
 application. If the question says "reflect then rotate," compute
-$\mathbf{'\{'}R{'\}'}_{\mathrm{rot{}} \times \mathbf{'\{'}R{'\}'}_{\mathrm{ref{}}$.
+$\mathbf{'\{'}R{'\}'}_{\mathrm{rot}} \times \mathbf{'\{'}R{'\}'}_{\mathrm{ref}}$.
 :::
 
 <details>
@@ -448,13 +448,13 @@ $\mathbf{'\{'}A{'\}'} = \mathbf{'\{'}P{'\}'}\mathbf{'\{'}D{'\}'}\mathbf{'\{'}P{'
 
 $$\boxed{\det(\mathbf{'\{'}AB{'\}'}) = \det(\mathbf{'\{'}A{'\}'})\det(\mathbf{'\{'}B{'\}'})}$$
 
-$$\boxed{\mathbf{'\{'}A{'\}'}^{-1} = \frac{1}{\det(\mathbf{'\{'}A{'\}'})}\operatorname{adj}(\mathbf{'\{'}A{'\}'}) \quad \mathrm{when {} \det(\mathbf{'\{'}A{'\}'}) \neq 0}$$
+$$\boxed{\mathbf{'\{'}A{'\}'}^{-1} = \frac{1}{\det(\mathbf{'\{'}A{'\}'})}\operatorname{adj}(\mathbf{'\{'}A{'\}'}) \quad \mathrm{when } \det(\mathbf{'\{'}A{'\}'}) \neq 0}$$
 
-$$\boxed{\mathrm{Rotation by {} \theta: \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}}$$
+$$\boxed{\mathrm{Rotation by } \theta: \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}}$$
 
-$$\boxed{\mathrm{Reflection in {} y = (\tan\theta)x: \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}}$$
+$$\boxed{\mathrm{Reflection in } y = (\tan\theta)x: \begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}}$$
 
-$$\boxed{\det(\mathbf{'\{'}A{'\}'} - \lambda\mathbf{'\{'}I{'\}'}) = 0 \implies \mathrm{eigenvalues of {} \mathbf{'\{'}A{'\}'}}$$
+$$\boxed{\det(\mathbf{'\{'}A{'\}'} - \lambda\mathbf{'\{'}I{'\}'}) = 0 \implies \mathrm{eigenvalues of } \mathbf{'\{'}A{'\}'}}$$
 
 <hr />
 
@@ -568,7 +568,7 @@ Original area: $\dfrac{1}{2} \times 2 \times 1 = 1$.
 Image area using the determinant formula:
 $\dfrac{1}{2}\left|6 \cdot 2 - 0 \cdot 1\right| = \dfrac{1}{2} \times 12 = 6$.
 
-$\det(\mathbf{'\{'}T{'\}'}) = 6$, and $|\det(\mathbf{'\{'}T{'\}'})| \times \mathrm{original area{} = 6 \times 1 = 6$. ✓
+$\det(\mathbf{'\{'}T{'\}'}) = 6$, and $|\det(\mathbf{'\{'}T{'\}'})| \times \mathrm{original area} = 6 \times 1 = 6$. ✓
 
 </details>
 
@@ -822,7 +822,7 @@ For $\lambda = 2$: $\begin{pmatrix}1&1\\0&0\end{pmatrix}\mathbf{'\{'}v{'\}'} = \
 
 **Solution.** $\det(\mathbf{'\{'}T{'\}'}) = 6 - (-1) = 7$.
 
-Original area $= \dfrac{1}{2}$. Image area $= |\det(\mathbf{'\{'}T{'\}'})| \times \text{original area{} = 7 \times \dfrac{1}{2} = \boxed{3.5}$.
+Original area $= \dfrac{1}{2}$. Image area $= |\det(\mathbf{'\{'}T{'\}'})| \times \text{original area} = 7 \times \dfrac{1}{2} = \boxed{3.5}$.
 
 ### Example 8.5: Commutator and non-commuting matrices
 
@@ -848,7 +848,7 @@ $S = \begin{pmatrix}0&-1\\1&0\end{pmatrix}$.
 
 $RS = \begin{pmatrix}-\frac{1}{2}&\frac{\sqrt{3}}{2}\\\frac{\sqrt{3}}{2}&\frac{1}{2}\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix} = \begin{pmatrix}\frac{\sqrt{3}}{2}&\frac{1}{2}\\\frac{1}{2}&-\frac{\sqrt{3}}{2}\end{pmatrix}$.
 
-$\det(RS) = -\dfrac{3}{4} - \dfrac{1}{4} = -1$ and $\text{tr{}(RS) = 0$, confirming this is a reflection.
+$\det(RS) = -\dfrac{3}{4} - \dfrac{1}{4} = -1$ and $\text{tr}(RS) = 0$, confirming this is a reflection.
 
 ### Example 8.7: Finding the inverse of a 3×3 matrix
 
@@ -916,7 +916,7 @@ The characteristic equation: $\lambda^2 - (a+d)\lambda + \det(\mathbf{'\{'}M{'\}
 
 $(\lambda-2)(\lambda-3) = 0$.
 
-$\boxed{\lambda = 2 \text{ and {} \lambda = 3}$
+$\boxed{\lambda = 2 \text{ and } \lambda = 3}$
 
 </details>
 
@@ -948,7 +948,7 @@ Cayley--Hamilton connects matrices to polynomial algebra. See [Further Algebra](
 | $(\mathbf{'\{'}AB{'\}'})^{-1}$ | $\mathbf{'\{'}B{'\}'}^{-1}\mathbf{'\{'}A{'\}'}^{-1}$ |
 | $(\mathbf{'\{'}AB{'\}'})^T$ | $\mathbf{'\{'}B{'\}'}^T\mathbf{'\{'}A{'\}'}^T$ |
 | $\det(\mathbf{'\{'}AB{'\}'})$ | $\det(\mathbf{'\{'}A{'\}'})\det(\mathbf{'\{'}B{'\}'})$ |
-| Trace of product | $\text{tr{}(\mathbf{'\{'}AB{'\}'}) = \text{tr{}(\mathbf{'\{'}BA{'\}'})$ |
+| Trace of product | $\text{tr}(\mathbf{'\{'}AB{'\}'}) = \text{tr}(\mathbf{'\{'}BA{'\}'})$ |
 | Cayley--Hamilton | $\mathbf{'\{'}A{'\}'}$ satisfies its own characteristic equation |
 | Diagonalisability | All eigenvalues must have geometric multiplicity $=$ algebraic multiplicity |
 | Area scaling | $|\det(\mathbf{'\{'}T{'\}'})| \times$ original area $=$ image area |
@@ -994,7 +994,7 @@ Formally: this follows from the permutation definition of the determinant. $\bla
 The characteristic polynomial of $\mathbf{'\{'}A{'\}'}$ is $p(\lambda) = \det(\mathbf{'\{'}A{'\}'}-\lambda\mathbf{'\{'}I{'\}'})$.
 
 Properties:
-- The sum of eigenvalues equals the trace: $\sum \lambda_i = \mathrm{tr{}(\mathbf{'\{'}A{'\}'})$
+- The sum of eigenvalues equals the trace: $\sum \lambda_i = \mathrm{tr}(\mathbf{'\{'}A{'\}'})$
 - The product of eigenvalues equals the determinant: $\prod \lambda_i = \det(\mathbf{'\{'}A{'\}'})$
 - $\mathbf{'\{'}A{'\}'}$ is invertible iff no eigenvalue is zero
 
@@ -1014,7 +1014,7 @@ The Spectral Theorem states that $\mathbf{'\{'}A{'\}'} = \sum_{i=1}^{n} \lambda_
 
 ### 14.4 Matrix norms
 
-The Frobenius norm: $\|\mathbf{'\{'}A{'\}'}\|_F = \sqrt{\sum_{i,j} a_{ij}^2} = \sqrt{\mathrm{tr{}(\mathbf{'\{'}A{'\}'}^T\mathbf{'\{'}A{'\}'})}$.
+The Frobenius norm: $\|\mathbf{'\{'}A{'\}'}\|_F = \sqrt{\sum_{i,j} a_{ij}^2} = \sqrt{\mathrm{tr}(\mathbf{'\{'}A{'\}'}^T\mathbf{'\{'}A{'\}'})}$.
 
 The spectral norm: $\|\mathbf{'\{'}A{'\}'}\|_2 = \sigma_{\max}$ (largest singular value).
 
@@ -1110,10 +1110,10 @@ $\det(\mathbf{'\{'}A{'\}'}) = 1(0-48) - 2(0-42) + 3(32-35) = -48 + 84 - 9 = \box
 <details>
 <summary>Solution</summary>
 
-The characteristic polynomial is $p(\lambda) = (-1)^n[\lambda^n - (\text{tr{}\,\mathbf{'\{'}A{'\}'})\lambda^{n-1} + \cdots + (-1)^n\det(\mathbf{'\{'}A{'\}'})]$.
+The characteristic polynomial is $p(\lambda) = (-1)^n[\lambda^n - (\text{tr}\,\mathbf{'\{'}A{'\}'})\lambda^{n-1} + \cdots + (-1)^n\det(\mathbf{'\{'}A{'\}'})]$.
 
 By Vieta's formulae, the coefficient of $\lambda^{n-1}$ equals $-(\lambda_1 + \lambda_2 + \cdots + \lambda_n)$.
 
-Therefore $\text{tr{}\,\mathbf{'\{'}A{'\}'} = \lambda_1 + \lambda_2 + \cdots + \lambda_n$. $\blacksquare$
+Therefore $\text{tr}\,\mathbf{'\{'}A{'\}'} = \lambda_1 + \lambda_2 + \cdots + \lambda_n$. $\blacksquare$
 
 </details>

@@ -56,11 +56,11 @@ $$\boxed{\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}}}$
 
 **Definition.**
 
-$$\mathrm{sech{}\,x = \frac{1}{\cosh x}, \qquad \mathrm{cosech{}\,x = \frac{1}{\sinh x}, \qquad \coth\,x = \frac{\cosh x}{\sinh x}$$
+$$\mathrm{sech}\,x = \frac{1}{\cosh x}, \qquad \mathrm{cosech}\,x = \frac{1}{\sinh x}, \qquad \coth\,x = \frac{\cosh x}{\sinh x}$$
 
 :::warning
 Note the spelling: $\cosh$, $\sinh$, $\tanh$ are standard abbreviations. The reciprocals
-use $\mathrm{sech{}$ (not $\mathrm{sec h{}$), $\mathrm{cosech{}$ (not $\mathrm{csch{}$), and $\coth$.
+use $\mathrm{sech}$ (not $\mathrm{sec h}$), $\mathrm{cosech}$ (not $\mathrm{csch}$), and $\coth$.
 :::
 
 ### 1.3 Domain and range
@@ -70,15 +70,15 @@ use $\mathrm{sech{}$ (not $\mathrm{sec h{}$), $\mathrm{cosech{}$ (not $\mathrm{c
 | $\sinh x$          | $\mathbb{'\{'}R{'\}'}$ | $\mathbb{'\{'}R{'\}'}$  |
 | $\cosh x$          | $\mathbb{'\{'}R{'\}'}$ | $[1, \infty)$ |
 | $\tanh x$          | $\mathbb{'\{'}R{'\}'}$ | $(-1, 1)$     |
-| $\mathrm{sech{}\,x$ | $\mathbb{'\{'}R{'\}'}$ | $(0, 1]$      |
+| $\mathrm{sech}\,x$ | $\mathbb{'\{'}R{'\}'}$ | $(0, 1]$      |
 
 ### 1.4 Key values
 
 $$\sinh 0 = 0, \quad \cosh 0 = 1, \quad \tanh 0 = 0$$
 
-$$\sinh(-x) = -\sinh x \quad (\mathrm{odd function{})$$
+$$\sinh(-x) = -\sinh x \quad (\mathrm{odd function})$$
 
-$$\cosh(-x) = \cosh x \quad (\mathrm{even function{})$$
+$$\cosh(-x) = \cosh x \quad (\mathrm{even function})$$
 
 <hr />
 
@@ -98,11 +98,11 @@ $$= \frac{e^{2x}+2+e^{-2x}}{4} - \frac{e^{2x}-2+e^{-2x}}{4} = \frac{4}{4} = 1 \q
 
 **Corollary.** Dividing by $\cosh^2 x$:
 
-$$\boxed{1 - \tanh^2 x = \mathrm{sech{}^2\,x}$$
+$$\boxed{1 - \tanh^2 x = \mathrm{sech}^2\,x}$$
 
 Dividing by $\sinh^2 x$:
 
-$$\boxed{\coth^2 x - 1 = \mathrm{cosech{}^2\,x}$$
+$$\boxed{\coth^2 x - 1 = \mathrm{cosech}^2\,x}$$
 
 ### 2.2 Addition formulae
 
@@ -145,11 +145,11 @@ corresponding hyperbolic identity by:
 This works because $\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$, so each $\sin$ introduces a
 factor of $i$, and $\sin^2$ introduces $i^2 = -1$.
 
-**Example.** $\cos^2 x + \sin^2 x = 1 \xrightarrow{\mathrm{Osborn{}} \cosh^2 x - \sinh^2 x = 1$. (The
+**Example.** $\cos^2 x + \sin^2 x = 1 \xrightarrow{\mathrm{Osborn}} \cosh^2 x - \sinh^2 x = 1$. (The
 $\sinh^2$ term flips sign.)
 
 **Example.**
-$\cos 2x = \cos^2 x - \sin^2 x \xrightarrow{\mathrm{Osborn{}} \cosh 2x = \cosh^2 x + \sinh^2 x$. (The
+$\cos 2x = \cos^2 x - \sin^2 x \xrightarrow{\mathrm{Osborn}} \cosh 2x = \cosh^2 x + \sinh^2 x$. (The
 $\sinh^2$ term flips sign, turning $-$ into $+$.)
 
 :::tip
@@ -165,15 +165,15 @@ identities by direct computation from the exponential definitions when in doubt.
 
 **Definition.** The inverse hyperbolic functions are:
 
-$$\boxed{\mathrm{arsinh{}\,x = \ln\!\left(x + \sqrt{x^2+1}\right), \quad x \in \mathbb{'\{'}R{'\}'}}$$
+$$\boxed{\mathrm{arsinh}\,x = \ln\!\left(x + \sqrt{x^2+1}\right), \quad x \in \mathbb{'\{'}R{'\}'}}$$
 
-$$\boxed{\mathrm{arcosh{}\,x = \ln\!\left(x + \sqrt{x^2-1}\right), \quad x \geq 1}$$
+$$\boxed{\mathrm{arcosh}\,x = \ln\!\left(x + \sqrt{x^2-1}\right), \quad x \geq 1}$$
 
-$$\boxed{\mathrm{artanh{}\,x = \frac{1}{2}\ln\!\left(\frac{1+x}{1-x}\right), \quad |x| < 1}$$
+$$\boxed{\mathrm{artanh}\,x = \frac{1}{2}\ln\!\left(\frac{1+x}{1-x}\right), \quad |x| < 1}$$
 
-### Proof of $\mathrm{arsinh{}\,x = \ln(x + \sqrt{x^2+1})$
+### Proof of $\mathrm{arsinh}\,x = \ln(x + \sqrt{x^2+1})$
 
-Let $y = \mathrm{arsinh{}\,x$. Then $x = \sinh y = \dfrac{e^y - e^{-y}}{2}$.
+Let $y = \mathrm{arsinh}\,x$. Then $x = \sinh y = \dfrac{e^y - e^{-y}}{2}$.
 
 $$2x = e^y - e^{-y}$$
 
@@ -192,11 +192,11 @@ $$e^y = x + \sqrt{x^2+1}$$
 
 $$y = \ln(x + \sqrt{x^2+1})$$
 
-Therefore $\mathrm{arsinh{}\,x = \ln(x + \sqrt{x^2+1})$. $\blacksquare$
+Therefore $\mathrm{arsinh}\,x = \ln(x + \sqrt{x^2+1})$. $\blacksquare$
 
-### Proof of $\mathrm{arcosh{}\,x = \ln(x + \sqrt{x^2-1})$
+### Proof of $\mathrm{arcosh}\,x = \ln(x + \sqrt{x^2-1})$
 
-Let $y = \mathrm{arcosh{}\,x$. Then $x = \cosh y = \dfrac{e^y + e^{-y}}{2}$ for $y \geq 0$.
+Let $y = \mathrm{arcosh}\,x$. Then $x = \cosh y = \dfrac{e^y + e^{-y}}{2}$ for $y \geq 0$.
 
 $$2x = e^y + e^{-y}$$
 
@@ -210,11 +210,11 @@ of $\mathbb{'\{'}R{'\}'}$, we restrict to $y \geq 0$, giving $e^y \geq 1$:
 
 $$e^y = x + \sqrt{x^2-1} \implies y = \ln(x + \sqrt{x^2-1})$$
 
-Therefore $\mathrm{arcosh{}\,x = \ln(x + \sqrt{x^2-1})$ for $x \geq 1$. $\blacksquare$
+Therefore $\mathrm{arcosh}\,x = \ln(x + \sqrt{x^2-1})$ for $x \geq 1$. $\blacksquare$
 
-### Proof of $\mathrm{artanh{}\,x = \frac{1}{2}\ln\!\left(\frac{1+x}{1-x}\right)$
+### Proof of $\mathrm{artanh}\,x = \frac{1}{2}\ln\!\left(\frac{1+x}{1-x}\right)$
 
-Let $y = \mathrm{artanh{}\,x$. Then $x = \tanh y = \dfrac{\sinh y}{\cosh y}$.
+Let $y = \mathrm{artanh}\,x$. Then $x = \tanh y = \dfrac{\sinh y}{\cosh y}$.
 
 Using $\cosh^2 y - \sinh^2 y = 1$:
 
@@ -240,7 +240,7 @@ $$\boxed{\frac{d}{dx}\sinh x = \cosh x}$$
 
 $$\boxed{\frac{d}{dx}\cosh x = \sinh x}$$
 
-$$\boxed{\frac{d}{dx}\tanh x = \mathrm{sech{}^2\,x}$$
+$$\boxed{\frac{d}{dx}\tanh x = \mathrm{sech}^2\,x}$$
 
 ### Proof of $\frac{d}{dx}\sinh x = \cosh x$
 
@@ -252,23 +252,23 @@ $$\frac{d}{dx}\cosh x = \frac{d}{dx}\left(\frac{e^x + e^{-x}}{2}\right) = \frac{
 
 ### 4.2 Derivatives of inverse hyperbolic functions
 
-$$\boxed{\frac{d}{dx}\mathrm{arsinh{}\,x = \frac{1}{\sqrt{x^2+1}}}$$
+$$\boxed{\frac{d}{dx}\mathrm{arsinh}\,x = \frac{1}{\sqrt{x^2+1}}}$$
 
-$$\boxed{\frac{d}{dx}\mathrm{arcosh{}\,x = \frac{1}{\sqrt{x^2-1}}, \quad x > 1}$$
+$$\boxed{\frac{d}{dx}\mathrm{arcosh}\,x = \frac{1}{\sqrt{x^2-1}}, \quad x > 1}$$
 
-$$\boxed{\frac{d}{dx}\mathrm{artanh{}\,x = \frac{1}{1-x^2}, \quad |x| < 1}$$
+$$\boxed{\frac{d}{dx}\mathrm{artanh}\,x = \frac{1}{1-x^2}, \quad |x| < 1}$$
 
-### Proof of $\frac{d}{dx}\mathrm{arsinh{}\,x = \frac{1}{\sqrt{x^2+1}}$
+### Proof of $\frac{d}{dx}\mathrm{arsinh}\,x = \frac{1}{\sqrt{x^2+1}}$
 
-$\mathrm{arsinh{}\,x = \ln(x + \sqrt{x^2+1})$.
+$\mathrm{arsinh}\,x = \ln(x + \sqrt{x^2+1})$.
 
 $$\frac{d}{dx}\ln(x+\sqrt{x^2+1}) = \frac{1}{x+\sqrt{x^2+1}}\cdot\left(1 + \frac{x}{\sqrt{x^2+1}}\right)$$
 
 $$= \frac{1}{x+\sqrt{x^2+1}}\cdot\frac{\sqrt{x^2+1}+x}{\sqrt{x^2+1}} = \frac{1}{\sqrt{x^2+1}} \quad \blacksquare$$
 
-### Proof of $\frac{d}{dx}\mathrm{artanh{}\,x = \frac{1}{1-x^2}$
+### Proof of $\frac{d}{dx}\mathrm{artanh}\,x = \frac{1}{1-x^2}$
 
-$\mathrm{artanh{}\,x = \dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$.
+$\mathrm{artanh}\,x = \dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$.
 
 $$\frac{d}{dx}\cdot\frac{1}{2}\ln\!\left(\frac{1+x}{1-x}\right) = \frac{1}{2}\cdot\frac{1-x}{1+x}\cdot\frac{(1)(1-x)-(1+x)(-1)}{(1-x)^2}$$
 
@@ -278,21 +278,21 @@ $$= \frac{1}{2}\cdot\frac{1-x}{1+x}\cdot\frac{2}{(1-x)^2} = \frac{1}{1-x^2} \qua
 
 The derivative results immediately give:
 
-$$\boxed{\int \frac{1}{\sqrt{x^2+a^2}}\,dx = \mathrm{arsinh{}\!\left(\frac{x}{a}\right) + C = \ln\!\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}+1}\right)+C}$$
+$$\boxed{\int \frac{1}{\sqrt{x^2+a^2}}\,dx = \mathrm{arsinh}\!\left(\frac{x}{a}\right) + C = \ln\!\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}+1}\right)+C}$$
 
-$$\boxed{\int \frac{1}{\sqrt{x^2-a^2}}\,dx = \mathrm{arcosh{}\!\left(\frac{x}{a}\right) + C = \ln\!\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}-1}\right)+C, \quad x > a}$$
+$$\boxed{\int \frac{1}{\sqrt{x^2-a^2}}\,dx = \mathrm{arcosh}\!\left(\frac{x}{a}\right) + C = \ln\!\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}-1}\right)+C, \quad x > a}$$
 
-$$\boxed{\int \frac{1}{a^2-x^2}\,dx = \frac{1}{a}\mathrm{artanh{}\!\left(\frac{x}{a}\right) + C, \quad |x| < a}$$
-
-**Example.**
-$\displaystyle\int \frac{1}{\sqrt{x^2+9}}\,dx = \mathrm{arsinh{}\!\left(\frac{x}{3}\right) + C = \ln\!\left(\frac{x}{3}+\sqrt{\frac{x^2}{9}+1}\right)+C = \ln\!\left(\frac{x+\sqrt{x^2+9}}{3}\right)+C$.
+$$\boxed{\int \frac{1}{a^2-x^2}\,dx = \frac{1}{a}\mathrm{artanh}\!\left(\frac{x}{a}\right) + C, \quad |x| < a}$$
 
 **Example.**
-$\displaystyle\int \frac{1}{\sqrt{x^2-4}}\,dx = \mathrm{arcosh{}\!\left(\frac{x}{2}\right) + C$ for
+$\displaystyle\int \frac{1}{\sqrt{x^2+9}}\,dx = \mathrm{arsinh}\!\left(\frac{x}{3}\right) + C = \ln\!\left(\frac{x}{3}+\sqrt{\frac{x^2}{9}+1}\right)+C = \ln\!\left(\frac{x+\sqrt{x^2+9}}{3}\right)+C$.
+
+**Example.**
+$\displaystyle\int \frac{1}{\sqrt{x^2-4}}\,dx = \mathrm{arcosh}\!\left(\frac{x}{2}\right) + C$ for
 $x > 2$.
 
 **Example.**
-$\displaystyle\int \frac{1}{4-x^2}\,dx = \frac{1}{2}\mathrm{artanh{}\!\left(\frac{x}{2}\right) + C$
+$\displaystyle\int \frac{1}{4-x^2}\,dx = \frac{1}{2}\mathrm{artanh}\!\left(\frac{x}{2}\right) + C$
 for $|x| < 2$.
 
 ### 4.4 Integrals of hyperbolic functions
@@ -301,7 +301,7 @@ $$\int \cosh x\,dx = \sinh x + C$$
 
 $$\int \sinh x\,dx = \cosh x + C$$
 
-$$\int \mathrm{sech{}^2\,x\,dx = \tanh x + C$$
+$$\int \mathrm{sech}^2\,x\,dx = \tanh x + C$$
 
 $$\int \tanh x\,dx = \ln(\cosh x) + C$$
 
@@ -343,12 +343,12 @@ trigonometric identity (and using $i^2 = -1$) produces the corresponding hyperbo
 
 ### 5.3 The Gudermannian function
 
-The **Gudermannian function** $\mathrm{gd{}(x)$ relates circular and hyperbolic functions without
+The **Gudermannian function** $\mathrm{gd}(x)$ relates circular and hyperbolic functions without
 complex numbers:
 
-$$\sinh x = \tan(\mathrm{gd{}\,x), \quad \cosh x = \sec(\mathrm{gd{}\,x), \quad \tanh x = \sin(\mathrm{gd{}\,x)$$
+$$\sinh x = \tan(\mathrm{gd}\,x), \quad \cosh x = \sec(\mathrm{gd}\,x), \quad \tanh x = \sin(\mathrm{gd}\,x)$$
 
-$$\mathrm{gd{}\,x = \int_0^x \mathrm{sech{}\,t\,dt = 2\arctan(e^x) - \frac{\pi}{2}$$
+$$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac{\pi}{2}$$
 
 <hr />
 
@@ -364,9 +364,9 @@ $$\mathrm{gd{}\,x = \int_0^x \mathrm{sech{}\,t\,dt = 2\arctan(e^x) - \frac{\pi}{
 | ----------------------------------------------------------- | --------------------------------------------------------------------- |
 | $\dfrac{d}{dx}\sinh x = \cosh x$                            | $\int\cosh x\,dx = \sinh x+C$                                         |
 | $\dfrac{d}{dx}\cosh x = \sinh x$                            | $\int\sinh x\,dx = \cosh x+C$                                         |
-| $\dfrac{d}{dx}\tanh x = \mathrm{sech{}^2\,x$                 | $\int\mathrm{sech{}^2\,x\,dx = \tanh x+C$                              |
-| $\dfrac{d}{dx}\mathrm{arsinh{}\,x = \dfrac{1}{\sqrt{x^2+1}}$ | $\int\dfrac{dx}{\sqrt{x^2+a^2}} = \mathrm{arsinh{}\dfrac{x}{a}+C$      |
-| $\dfrac{d}{dx}\mathrm{artanh{}\,x = \dfrac{1}{1-x^2}$        | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh{}\dfrac{x}{a}+C$ |
+| $\dfrac{d}{dx}\tanh x = \mathrm{sech}^2\,x$                 | $\int\mathrm{sech}^2\,x\,dx = \tanh x+C$                              |
+| $\dfrac{d}{dx}\mathrm{arsinh}\,x = \dfrac{1}{\sqrt{x^2+1}}$ | $\int\dfrac{dx}{\sqrt{x^2+a^2}} = \mathrm{arsinh}\dfrac{x}{a}+C$      |
+| $\dfrac{d}{dx}\mathrm{artanh}\,x = \dfrac{1}{1-x^2}$        | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh}\dfrac{x}{a}+C$ |
 
 <hr />
 
@@ -426,7 +426,7 @@ This matches $\displaystyle\int\frac{1}{\sqrt{x^2+a^2}}\,dx$ after a substitutio
 <summary>Answer 3</summary>
 Let $u = 2x$, $du = 2\,dx$.
 
-$\displaystyle\int\frac{1}{\sqrt{4x^2+9}}\,dx = \frac{1}{2}\int\frac{1}{\sqrt{u^2+9}}\,du = \frac{1}{2}\mathrm{arsinh{}\!\left(\frac{u}{3}\right)+C = \frac{1}{2}\mathrm{arsinh{}\!\left(\frac{2x}{3}\right)+C$.
+$\displaystyle\int\frac{1}{\sqrt{4x^2+9}}\,dx = \frac{1}{2}\int\frac{1}{\sqrt{u^2+9}}\,du = \frac{1}{2}\mathrm{arsinh}\!\left(\frac{u}{3}\right)+C = \frac{1}{2}\mathrm{arsinh}\!\left(\frac{2x}{3}\right)+C$.
 
 $= \dfrac{1}{2}\ln\!\left(\dfrac{2x}{3}+\sqrt{\dfrac{4x^2}{9}+1}\right)+C = \dfrac{1}{2}\ln\!\left(\dfrac{2x+\sqrt{4x^2+9}}{3}\right)+C$.
 
@@ -456,17 +456,17 @@ $\cosh x = 7/4 \implies x = \pm\ln\!\left(\dfrac{7}{4}+\sqrt{\dfrac{49}{16}-1}\r
 
 <details>
 <summary>Problem 5</summary>
-Differentiate $\mathrm{arcosh{}(x^2+1)$.
+Differentiate $\mathrm{arcosh}(x^2+1)$.
 </details>
 
 <details>
 <summary>Hint 5</summary>
-Use the chain rule with $\dfrac{d}{dx}\mathrm{arcosh{}\,u = \dfrac{1}{\sqrt{u^2-1}}\cdot\dfrac{du}{dx}$.
+Use the chain rule with $\dfrac{d}{dx}\mathrm{arcosh}\,u = \dfrac{1}{\sqrt{u^2-1}}\cdot\dfrac{du}{dx}$.
 </details>
 
 <details>
 <summary>Answer 5</summary>
-$\dfrac{d}{dx}\mathrm{arcosh{}(x^2+1) = \dfrac{1}{\sqrt{(x^2+1)^2-1}}\cdot 2x = \dfrac{2x}{\sqrt{x^4+2x^2}} = \dfrac{2x}{|x|\sqrt{x^2+2}}$.
+$\dfrac{d}{dx}\mathrm{arcosh}(x^2+1) = \dfrac{1}{\sqrt{(x^2+1)^2-1}}\cdot 2x = \dfrac{2x}{\sqrt{x^4+2x^2}} = \dfrac{2x}{|x|\sqrt{x^2+2}}$.
 
 For $x > 0$: $\dfrac{2}{\sqrt{x^2+2}}$.
 
@@ -492,7 +492,7 @@ $\displaystyle\int\cosh^2 x\,dx = \int\frac{\cosh 2x+1}{2}\,dx = \frac{1}{2}\lef
 
 <details>
 <summary>Problem 7</summary>
-Show that $\dfrac{d}{dx}\left(\dfrac{\sinh x}{\cosh^2 x}\right) = \dfrac{\cosh^2 x - 2\sinh^2 x}{\cosh^3 x}$ and hence find $\displaystyle\int\mathrm{sech{}^2\,x\tanh x\,dx$.
+Show that $\dfrac{d}{dx}\left(\dfrac{\sinh x}{\cosh^2 x}\right) = \dfrac{\cosh^2 x - 2\sinh^2 x}{\cosh^3 x}$ and hence find $\displaystyle\int\mathrm{sech}^2\,x\tanh x\,dx$.
 </details>
 
 <details>
@@ -505,30 +505,30 @@ Apply the quotient rule. Then use $\cosh^2 x - 2\sinh^2 x = \cosh^2 x - 2(\cosh^
 $\dfrac{d}{dx}\left(\dfrac{\sinh x}{\cosh^2 x}\right) = \dfrac{\cosh x\cdot\cosh^2 x - \sinh x\cdot 2\cosh x\sinh x}{\cosh^4 x} = \dfrac{\cosh^3 x - 2\sinh^2 x\cosh x}{\cosh^4 x} = \dfrac{\cosh^2 x - 2\sinh^2 x}{\cosh^3 x}$.
 
 Now
-$\mathrm{sech{}^2\,x\tanh x = \dfrac{1}{\cosh^2 x}\cdot\dfrac{\sinh x}{\cosh x} = \dfrac{\sinh x}{\cosh^3 x}$.
+$\mathrm{sech}^2\,x\tanh x = \dfrac{1}{\cosh^2 x}\cdot\dfrac{\sinh x}{\cosh x} = \dfrac{\sinh x}{\cosh^3 x}$.
 
 Note that $\dfrac{d}{dx}\left(\dfrac{1}{\cosh^2 x}\right) = \dfrac{-2\sinh x}{\cosh^3 x}$.
 
 So
-$\displaystyle\int\mathrm{sech{}^2\,x\tanh x\,dx = \int\dfrac{\sinh x}{\cosh^3 x}\,dx = -\dfrac{1}{2\cosh^2 x}+C = -\dfrac{1}{2}\mathrm{sech{}^2\,x+C$.
+$\displaystyle\int\mathrm{sech}^2\,x\tanh x\,dx = \int\dfrac{\sinh x}{\cosh^3 x}\,dx = -\dfrac{1}{2\cosh^2 x}+C = -\dfrac{1}{2}\mathrm{sech}^2\,x+C$.
 
 </details>
 
 <details>
 <summary>Problem 8</summary>
-Express $\ln(\sqrt{2}+1)$ in the form $k\cdot\mathrm{arsinh{}\,m$ for constants $k$ and $m$.
+Express $\ln(\sqrt{2}+1)$ in the form $k\cdot\mathrm{arsinh}\,m$ for constants $k$ and $m$.
 </details>
 
 <details>
 <summary>Hint 8</summary>
-$\mathrm{arsinh{}\,x = \ln(x+\sqrt{x^2+1})$. Compare this with $\ln(\sqrt{2}+1)$.
+$\mathrm{arsinh}\,x = \ln(x+\sqrt{x^2+1})$. Compare this with $\ln(\sqrt{2}+1)$.
 </details>
 
 <details>
 <summary>Answer 8</summary>
-$\mathrm{arsinh{}\,1 = \ln(1+\sqrt{2}) = \ln(\sqrt{2}+1)$.
+$\mathrm{arsinh}\,1 = \ln(1+\sqrt{2}) = \ln(\sqrt{2}+1)$.
 
-Therefore $\ln(\sqrt{2}+1) = \mathrm{arsinh{}\,1$, so $k = 1$ and $m = 1$.
+Therefore $\ln(\sqrt{2}+1) = \mathrm{arsinh}\,1$, so $k = 1$ and $m = 1$.
 
 </details>
 
@@ -1005,7 +1005,7 @@ Length contraction: $L' = L/\cosh\phi$.
 
 ### 14.3 The inverse Gudermannian
 
-$\mathrm{gd{}^{-1}(\theta) = \ln|\sec\theta + \tan\theta| = \ln\!\left|\tan\!\left(\dfrac{\theta}{2}+\dfrac{\pi}{4}\right)\right| = \operatorname{arsinh}(\tan\theta)$.
+$\mathrm{gd}^{-1}(\theta) = \ln|\sec\theta + \tan\theta| = \ln\!\left|\tan\!\left(\dfrac{\theta}{2}+\dfrac{\pi}{4}\right)\right| = \operatorname{arsinh}(\tan\theta)$.
 
 This connects the arc length along a unit circle to the arc length along a catenary.
 

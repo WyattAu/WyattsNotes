@@ -58,7 +58,7 @@ For a particle moving in a circle of radius $r$:
 
 $$\boxed{v = \omega r}$$
 
-$$\boxed{a_{\mathrm{tangential{}} = \alpha r}$$
+$$\boxed{a_{\mathrm{tangential}} = \alpha r}$$
 
 ### 1.3 Period and frequency
 
@@ -134,10 +134,10 @@ Dividing (ii) by (i):
 
 $$\boxed{\tan\theta = \frac{v^2}{rg}}$$
 
-$$\boxed{v_{\mathrm{optimum{}} = \sqrt{rg\tan\theta}}$$
+$$\boxed{v_{\mathrm{optimum}} = \sqrt{rg\tan\theta}}$$
 
-At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt{}}$, friction acts down the
-slope. If $v < v_{\mathrm{opt{}}$, friction acts up the slope.
+At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt}}$, friction acts down the
+slope. If $v < v_{\mathrm{opt}}$, friction acts up the slope.
 
 ### 3.3 Motion on the inside of a hollow sphere
 
@@ -194,13 +194,13 @@ where $h$ is the height above a reference level.
 
 **Between top and bottom** (height difference $2r$):
 
-$$\frac{1}{2}mv_{\mathrm{bottom{}}^2 = \frac{1}{2}mv_{\mathrm{top{}}^2 + mg(2r)$$
+$$\frac{1}{2}mv_{\mathrm{bottom}}^2 = \frac{1}{2}mv_{\mathrm{top}}^2 + mg(2r)$$
 
-$$v_{\mathrm{bottom{}}^2 = v_{\mathrm{top{}}^2 + 4gr$$
+$$v_{\mathrm{bottom}}^2 = v_{\mathrm{top}}^2 + 4gr$$
 
-For minimum complete circle ($v_{\mathrm{top{}} = \sqrt{gr}$):
+For minimum complete circle ($v_{\mathrm{top}} = \sqrt{gr}$):
 
-$$v_{\mathrm{bottom{}}^2 = gr + 4gr = 5gr \implies \boxed{v_{\mathrm{bottom{}} = \sqrt{5gr}}$$
+$$v_{\mathrm{bottom}}^2 = gr + 4gr = 5gr \implies \boxed{v_{\mathrm{bottom}} = \sqrt{5gr}}$$
 
 ### 4.4 Tension at any point
 
@@ -239,7 +239,7 @@ $$\boxed{\theta = \arccos\!\left(\frac{2}{3}\right) \approx 48.2°}$$
 
 When the speed varies, there is both centripetal and tangential acceleration:
 
-$$a_c = \frac{v^2}{r} \quad \mathrm{(radially inward){}, \qquad a_t = \frac{dv}{dt} \quad \mathrm{(tangential){}$$
+$$a_c = \frac{v^2}{r} \quad \mathrm{(radially inward)}, \qquad a_t = \frac{dv}{dt} \quad \mathrm{(tangential)}$$
 
 The total acceleration has magnitude:
 
@@ -254,7 +254,7 @@ $a_t$.
 
 <details>
 <summary>Problem 1</summary>
-A particle of mass $0.5\,\mathrm{kg{}$ is attached to a string of length $1.2\,\mathrm{m{}$ and whirled in a horizontal circle at $3\,\mathrm{m s{}^{-1}$. Find the tension and the angle the string makes with the vertical.
+A particle of mass $0.5\,\mathrm{kg}$ is attached to a string of length $1.2\,\mathrm{m}$ and whirled in a horizontal circle at $3\,\mathrm{m s}^{-1}$. Find the tension and the angle the string makes with the vertical.
 </details>
 
 <details>
@@ -275,8 +275,8 @@ $4.9\cos^2\alpha + 3.75\cos\alpha - 4.9 = 0$.
 
 $\cos\alpha = \dfrac{-3.75 + \sqrt{14.0625 + 96.04}}{9.8} = \dfrac{-3.75 + 10.48}{9.8} \approx 0.687$.
 
-$\alpha \approx 46.6^\circ$. $r = 1.2\sin 46.6° \approx 0.873\,\mathrm{m{}$.
-$T = 4.9/0.687 \approx 7.13\,\mathrm{N{}$.
+$\alpha \approx 46.6^\circ$. $r = 1.2\sin 46.6° \approx 0.873\,\mathrm{m}$.
+$T = 4.9/0.687 \approx 7.13\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Conical pendulum](#31-conical-pendulum) — Section 3.1.
 
@@ -302,14 +302,14 @@ $|\mathbf{'\{'}a{'\}'}| = \omega^2 r = \dfrac{v^2}{r}$, directed radially inward
 
 <details>
 <summary>Problem 3</summary>
-A curve of radius $60\,\mathrm{m{}$ is banked at $20^\circ$. Find the optimum speed and the normal reaction for a car of mass $1000\,\mathrm{kg{}$ at this speed.
+A curve of radius $60\,\mathrm{m}$ is banked at $20^\circ$. Find the optimum speed and the normal reaction for a car of mass $1000\,\mathrm{kg}$ at this speed.
 </details>
 
 <details>
 <summary>Solution 3</summary>
-$v_{\mathrm{opt{}} = \sqrt{rg\tan\theta} = \sqrt{60 \times 9.8 \times \tan 20°} = \sqrt{60 \times 9.8 \times 0.3640} = \sqrt{214.0} \approx 14.6\,\mathrm{m s{}^{-1}$.
+$v_{\mathrm{opt}} = \sqrt{rg\tan\theta} = \sqrt{60 \times 9.8 \times \tan 20°} = \sqrt{60 \times 9.8 \times 0.3640} = \sqrt{214.0} \approx 14.6\,\mathrm{m s}^{-1}$.
 
-$N = \dfrac{mg}{\cos\theta} = \dfrac{1000 \times 9.8}{\cos 20°} = \dfrac{9800}{0.9397} \approx 10\,430\,\mathrm{N{}$.
+$N = \dfrac{mg}{\cos\theta} = \dfrac{1000 \times 9.8}{\cos 20°} = \dfrac{9800}{0.9397} \approx 10\,430\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Banked tracks](#32-banked-tracks) — Section 3.2.
 
@@ -317,21 +317,21 @@ $N = \dfrac{mg}{\cos\theta} = \dfrac{1000 \times 9.8}{\cos 20°} = \dfrac{9800}{
 
 <details>
 <summary>Problem 4</summary>
-A mass of $0.3\,\mathrm{kg{}$ on a string of length $0.8\,\mathrm{m{}$ is whirled in a vertical circle. At the highest point, the speed is $4\,\mathrm{m s{}^{-1}$. Find the tension at the highest point, the speed at the lowest point, and the tension at the lowest point.
+A mass of $0.3\,\mathrm{kg}$ on a string of length $0.8\,\mathrm{m}$ is whirled in a vertical circle. At the highest point, the speed is $4\,\mathrm{m s}^{-1}$. Find the tension at the highest point, the speed at the lowest point, and the tension at the lowest point.
 </details>
 
 <details>
 <summary>Solution 4</summary>
-At the top: $T + mg = \dfrac{mv^2}{r} \implies T = \dfrac{0.3 \times 16}{0.8} - 0.3 \times 9.8 = 6 - 2.94 = 3.06\,\mathrm{N{}$.
+At the top: $T + mg = \dfrac{mv^2}{r} \implies T = \dfrac{0.3 \times 16}{0.8} - 0.3 \times 9.8 = 6 - 2.94 = 3.06\,\mathrm{N}$.
 
 Energy conservation:
 $\dfrac{1}{2}mv_b^2 = \dfrac{1}{2}mv_t^2 + mg(2r) = \dfrac{1}{2}(0.3)(16) + 0.3(9.8)(1.6)$
 
 $= 2.4 + 4.704 = 7.104$.
-$v_b = \sqrt{2 \times 7.104/0.3} = \sqrt{47.36} \approx 6.88\,\mathrm{m s{}^{-1}$.
+$v_b = \sqrt{2 \times 7.104/0.3} = \sqrt{47.36} \approx 6.88\,\mathrm{m s}^{-1}$.
 
 At the bottom:
-$T - mg = \dfrac{mv_b^2}{r} \implies T = \dfrac{0.3 \times 47.36}{0.8} + 2.94 = 17.76 + 2.94 = 20.7\,\mathrm{N{}$.
+$T - mg = \dfrac{mv_b^2}{r} \implies T = \dfrac{0.3 \times 47.36}{0.8} + 2.94 = 17.76 + 2.94 = 20.7\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Motion in Vertical Circles](#4-motion-in-vertical-circles) —
 Section 4.
@@ -360,7 +360,7 @@ $$\boxed{v_{\min} = \sqrt{5gr}} \quad \blacksquare$$
 
 <details>
 <summary>Problem 6</summary>
-A particle starts from rest at the top of a smooth sphere of radius $1.5\,\mathrm{m{}$. At what angle does it leave the surface?
+A particle starts from rest at the top of a smooth sphere of radius $1.5\,\mathrm{m}$. At what angle does it leave the surface?
 </details>
 
 <details>
@@ -369,7 +369,7 @@ The particle leaves when $R = 0$, which occurs at $\theta = \arccos(2/3) \approx
 
 At this point: $\dfrac{1}{2}mv^2 = mgr(1-\cos\theta) = mg(1.5)(1/3) = 0.5mg$.
 
-$v = \sqrt{g} \approx 3.13\,\mathrm{m s{}^{-1}$.
+$v = \sqrt{g} \approx 3.13\,\mathrm{m s}^{-1}$.
 
 **If you get this wrong, revise:**
 [Particle on the outside of a sphere](#45-particle-on-the-outside-of-a-sphere) — Section 4.5.
@@ -378,12 +378,12 @@ $v = \sqrt{g} \approx 3.13\,\mathrm{m s{}^{-1}$.
 
 <details>
 <summary>Problem 7</summary>
-A car of mass $1200\,\mathrm{kg{}$ travels at $18\,\mathrm{m s{}^{-1}$ around a banked curve of radius $50\,\mathrm{m{}$ banked at $25^\circ$. Determine whether friction acts up or down the slope, and find the friction force.
+A car of mass $1200\,\mathrm{kg}$ travels at $18\,\mathrm{m s}^{-1}$ around a banked curve of radius $50\,\mathrm{m}$ banked at $25^\circ$. Determine whether friction acts up or down the slope, and find the friction force.
 </details>
 
 <details>
 <summary>Solution 7</summary>
-$v_{\mathrm{opt{}} = \sqrt{50 \times 9.8 \times \tan 25°} = \sqrt{50 \times 9.8 \times 0.4663} = \sqrt{228.5} \approx 15.1\,\mathrm{m s{}^{-1}$.
+$v_{\mathrm{opt}} = \sqrt{50 \times 9.8 \times \tan 25°} = \sqrt{50 \times 9.8 \times 0.4663} = \sqrt{228.5} \approx 15.1\,\mathrm{m s}^{-1}$.
 
 Since $18 > 15.1$, the car is going too fast, so friction acts **down** the slope.
 
@@ -399,7 +399,7 @@ $11760\tan 25° + F(\tan 25°\sin 25° + \cos 25°) = 7776$.
 
 Since $\tan\theta\sin\theta + \cos\theta = \sec\theta$:
 
-$5484 + F\sec 25° = 7776 \implies F \times 1.1034 = 2292 \implies F \approx 2077\,\mathrm{N{}$.
+$5484 + F\sec 25° = 7776 \implies F \times 1.1034 = 2292 \implies F \approx 2077\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Banked tracks](#32-banked-tracks) — Section 3.2.
 
@@ -424,19 +424,19 @@ This is less than $\sqrt{5gr}$ (the string case) because the rod can push as wel
 
 <details>
 <summary>Problem 9</summary>
-A conical pendulum has period $2\,\mathrm{s{}$ and string length $1\,\mathrm{m{}$. Find the radius of the circle and the angle the string makes with the vertical.
+A conical pendulum has period $2\,\mathrm{s}$ and string length $1\,\mathrm{m}$. Find the radius of the circle and the angle the string makes with the vertical.
 </details>
 
 <details>
 <summary>Solution 9</summary>
-$\omega = \dfrac{2\pi}{T} = \pi\,\mathrm{rad s{}^{-1}$.
+$\omega = \dfrac{2\pi}{T} = \pi\,\mathrm{rad s}^{-1}$.
 
 From $\omega^2 = \dfrac{g}{L\cos\alpha}$:
 $\pi^2 = \dfrac{9.8}{\cos\alpha} \implies \cos\alpha = \dfrac{9.8}{\pi^2} \approx 0.993$.
 
 $\alpha \approx 6.6^\circ$.
 
-$r = L\sin\alpha = 1 \times \sin 6.6° \approx 0.115\,\mathrm{m{}$.
+$r = L\sin\alpha = 1 \times \sin 6.6° \approx 0.115\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Conical pendulum](#31-conical-pendulum) — Section 3.1.
 
@@ -444,21 +444,21 @@ $r = L\sin\alpha = 1 \times \sin 6.6° \approx 0.115\,\mathrm{m{}$.
 
 <details>
 <summary>Problem 10</summary>
-A bead of mass $0.1\,\mathrm{kg{}$ slides on a smooth vertical circular wire of radius $0.5\,\mathrm{m{}$. It is projected from the lowest point with speed $4\,\mathrm{m s{}^{-1}$. Find the speed and the reaction force when the bead is level with the centre of the circle.
+A bead of mass $0.1\,\mathrm{kg}$ slides on a smooth vertical circular wire of radius $0.5\,\mathrm{m}$. It is projected from the lowest point with speed $4\,\mathrm{m s}^{-1}$. Find the speed and the reaction force when the bead is level with the centre of the circle.
 </details>
 
 <details>
 <summary>Solution 10</summary>
-Height gain to the centre: $r = 0.5\,\mathrm{m{}$.
+Height gain to the centre: $r = 0.5\,\mathrm{m}$.
 
 Energy: $\dfrac{1}{2}(0.1)v^2 = \dfrac{1}{2}(0.1)(16) - 0.1(9.8)(0.5) = 0.8 - 0.49 = 0.31$.
 
-$v = \sqrt{6.2} \approx 2.49\,\mathrm{m s{}^{-1}$.
+$v = \sqrt{6.2} \approx 2.49\,\mathrm{m s}^{-1}$.
 
 At the midpoint (horizontal), the reaction $R$ acts horizontally (towards the centre) since the
 weight acts vertically:
 
-$R = \dfrac{mv^2}{r} = \dfrac{0.1 \times 6.2}{0.5} = 1.24\,\mathrm{N{}$.
+$R = \dfrac{mv^2}{r} = \dfrac{0.1 \times 6.2}{0.5} = 1.24\,\mathrm{N}$.
 
 Note: the weight is perpendicular to the radius at this point, so it does not contribute to the
 centripetal force.
@@ -516,11 +516,11 @@ For a complete circle, we need $T \geq 0$ everywhere. The minimum tension occurs
 
 $$\frac{mv_0^2}{r} - 5mg \geq 0 \implies v_0^2 \geq 5gr \implies \boxed{v_0 = \sqrt{5gr}}$$
 
-At this speed, $T_{\mathrm{top{}} = 0$ and the weight alone provides the centripetal acceleration at
+At this speed, $T_{\mathrm{top}} = 0$ and the weight alone provides the centripetal acceleration at
 the top.
 
-The speed at the top is: $v_{\mathrm{top{}}^2 = v_0^2 - 2gr(2) = 5gr - 4gr = gr$, confirming
-$v_{\mathrm{top{}} = \sqrt{gr}$.
+The speed at the top is: $v_{\mathrm{top}}^2 = v_0^2 - 2gr(2) = 5gr - 4gr = gr$, confirming
+$v_{\mathrm{top}} = \sqrt{gr}$.
 
 <hr />
 
@@ -560,19 +560,19 @@ angle is too shallow, the car can come to rest without sliding down.
 
 ### 7.2 Worked example: car on a banked curve with friction
 
-**Example.** A curve of radius $80\,\mathrm{m{}$ is banked at $30^\circ$ with $\mu = 0.3$. Find the
+**Example.** A curve of radius $80\,\mathrm{m}$ is banked at $30^\circ$ with $\mu = 0.3$. Find the
 maximum and minimum safe speeds for a car on this curve.
 
 $v_{\max}^2 = \dfrac{80 \times 9.8(\sin 30° + 0.3\cos 30°)}{\cos 30° - 0.3\sin 30°} = \dfrac{784(0.5 + 0.2598)}{0.8660 - 0.15} = \dfrac{784 \times 0.7598}{0.7160}$
 
-$= \dfrac{595.7}{0.7160} \approx 831.9 \implies v_{\max} \approx 28.8\,\mathrm{m s{}^{-1}$.
+$= \dfrac{595.7}{0.7160} \approx 831.9 \implies v_{\max} \approx 28.8\,\mathrm{m s}^{-1}$.
 
 $v_{\min}^2 = \dfrac{80 \times 9.8(\sin 30° - 0.3\cos 30°)}{\cos 30° + 0.3\sin 30°} = \dfrac{784(0.5 - 0.2598)}{0.8660 + 0.15} = \dfrac{784 \times 0.2402}{1.016}$
 
-$= \dfrac{188.3}{1.016} \approx 185.3 \implies v_{\min} \approx 13.6\,\mathrm{m s{}^{-1}$.
+$= \dfrac{188.3}{1.016} \approx 185.3 \implies v_{\min} \approx 13.6\,\mathrm{m s}^{-1}$.
 
 The optimum speed (no friction needed) is
-$v_{\mathrm{opt{}} = \sqrt{80 \times 9.8 \times \tan 30°} = \sqrt{452.6} \approx 21.3\,\mathrm{m s{}^{-1}$,
+$v_{\mathrm{opt}} = \sqrt{80 \times 9.8 \times \tan 30°} = \sqrt{452.6} \approx 21.3\,\mathrm{m s}^{-1}$,
 which lies between $v_{\min}$ and $v_{\max}$ as expected.
 
 <hr />
@@ -608,7 +608,7 @@ $$\omega^2 = \frac{g\tan\alpha}{L\sin\alpha} = \frac{g}{L\cos\alpha}$$
 
 $$\boxed{\omega = \sqrt{\frac{g}{L\cos\alpha}}}$$
 
-$$\boxed{T_{\mathrm{period{}} = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
+$$\boxed{T_{\mathrm{period}} = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
 
 Key observations:
 
@@ -621,40 +621,40 @@ Key observations:
 
 ## 9. Worked Example: Motorcyclist on a Vertical Loop
 
-**Example.** A motorcyclist rides around a vertical circular track of radius $8\,\mathrm{m{}$. The
-motorcycle and rider have combined mass $200\,\mathrm{kg{}$. Find the minimum speed at the lowest
+**Example.** A motorcyclist rides around a vertical circular track of radius $8\,\mathrm{m}$. The
+motorcycle and rider have combined mass $200\,\mathrm{kg}$. Find the minimum speed at the lowest
 point to complete the loop, the normal reaction at the top and bottom at this minimum speed, and the
 speed and reaction at a point $90^\circ$ from the bottom.
 
 **Minimum speed at the bottom:**
-$v_{\min} = \sqrt{5gr} = \sqrt{5 \times 9.8 \times 8} = \sqrt{392} \approx 19.8\,\mathrm{m s{}^{-1}$.
+$v_{\min} = \sqrt{5gr} = \sqrt{5 \times 9.8 \times 8} = \sqrt{392} \approx 19.8\,\mathrm{m s}^{-1}$.
 
 **At the top (minimum speed):**
-$v_{\mathrm{top{}} = \sqrt{gr} = \sqrt{78.4} \approx 8.85\,\mathrm{m s{}^{-1}$.
+$v_{\mathrm{top}} = \sqrt{gr} = \sqrt{78.4} \approx 8.85\,\mathrm{m s}^{-1}$.
 
-$R + mg = \dfrac{mv_{\mathrm{top{}}^2}{r} \implies R = \dfrac{200 \times 78.4}{8} - 200 \times 9.8 = 1960 - 1960 = 0\,\mathrm{N{}$.
+$R + mg = \dfrac{mv_{\mathrm{top}}^2}{r} \implies R = \dfrac{200 \times 78.4}{8} - 200 \times 9.8 = 1960 - 1960 = 0\,\mathrm{N}$.
 
 At minimum speed, the motorcycle is just in contact with the track at the top.
 
 **At the bottom:**
 
-$v_{\mathrm{bottom{}} = \sqrt{5gr} \approx 19.8\,\mathrm{m s{}^{-1}$.
+$v_{\mathrm{bottom}} = \sqrt{5gr} \approx 19.8\,\mathrm{m s}^{-1}$.
 
-$R - mg = \dfrac{mv_{\mathrm{bottom{}}^2}{r} \implies R = \dfrac{200 \times 392}{8} + 1960 = 9800 + 1960 = 11760\,\mathrm{N{}$.
+$R - mg = \dfrac{mv_{\mathrm{bottom}}^2}{r} \implies R = \dfrac{200 \times 392}{8} + 1960 = 9800 + 1960 = 11760\,\mathrm{N}$.
 
 Note: $R = 6mg$ at the bottom when $v = \sqrt{5gr}$.
 
 **At $90^\circ$ from the bottom** (measuring from the downward vertical, so $\theta = 90^\circ$):
 
-Height above bottom: $r(1 - \cos 90°) = r = 8\,\mathrm{m{}$.
+Height above bottom: $r(1 - \cos 90°) = r = 8\,\mathrm{m}$.
 
-$v^2 = v_0^2 - 2gr = 392 - 156.8 = 235.2 \implies v \approx 15.3\,\mathrm{m s{}^{-1}$.
+$v^2 = v_0^2 - 2gr = 392 - 156.8 = 235.2 \implies v \approx 15.3\,\mathrm{m s}^{-1}$.
 
 At this point, the weight acts radially (towards the centre) and the reaction acts radially outward:
 
 $mg - R = \dfrac{mv^2}{r} \implies R = mg - \dfrac{200 \times 235.2}{8} = 1960 - 5880$.
 
-$R = -3920\,\mathrm{N{}$.
+$R = -3920\,\mathrm{N}$.
 
 The negative sign confirms the track pushes **inward** (downward at this point) to maintain the
 circular path. This is expected: at this speed, the motorcyclist would fly off without the track
@@ -705,51 +705,51 @@ path. In a conical pendulum, the radius of the circle is $L\sin\alpha$, not $L$.
 ## 11. Problem Set
 
 <details>
-<summary>Q1. A particle of mass $0.4\,\mathrm{kg{}$ is attached to a light inextensible string of length $0.6\,\mathrm{m{}$ and whirled in a vertical circle. The speed at the lowest point is $7\,\mathrm{m s{}^{-1}$. Find the tension in the string when the particle is at the highest point, and at the point level with the centre.</summary>
+<summary>Q1. A particle of mass $0.4\,\mathrm{kg}$ is attached to a light inextensible string of length $0.6\,\mathrm{m}$ and whirled in a vertical circle. The speed at the lowest point is $7\,\mathrm{m s}^{-1}$. Find the tension in the string when the particle is at the highest point, and at the point level with the centre.</summary>
 
-Height from bottom to top: $2r = 1.2\,\mathrm{m{}$.
+Height from bottom to top: $2r = 1.2\,\mathrm{m}$.
 
-$v_{\mathrm{top{}}^2 = 49 - 2(9.8)(1.2) = 49 - 23.52 = 25.48$.
-$v_{\mathrm{top{}} \approx 5.05\,\mathrm{m s{}^{-1}$.
+$v_{\mathrm{top}}^2 = 49 - 2(9.8)(1.2) = 49 - 23.52 = 25.48$.
+$v_{\mathrm{top}} \approx 5.05\,\mathrm{m s}^{-1}$.
 
 At the top:
-$T + mg = \dfrac{mv_{\mathrm{top{}}^2}{r} \implies T = \dfrac{0.4 \times 25.48}{0.6} - 0.4 \times 9.8 = 16.99 - 3.92 = 13.1\,\mathrm{N{}$.
+$T + mg = \dfrac{mv_{\mathrm{top}}^2}{r} \implies T = \dfrac{0.4 \times 25.48}{0.6} - 0.4 \times 9.8 = 16.99 - 3.92 = 13.1\,\mathrm{N}$.
 
-At the midpoint (height $r = 0.6\,\mathrm{m{}$ above bottom):
+At the midpoint (height $r = 0.6\,\mathrm{m}$ above bottom):
 
 $v^2 = 49 - 2(9.8)(0.6) = 49 - 11.76 = 37.24$.
 
 At the midpoint, the weight is perpendicular to the radius. The reaction $R$ acts horizontally
 towards the centre:
 
-$R = \dfrac{0.4 \times 37.24}{0.6} = 24.8\,\mathrm{N{}$.
+$R = \dfrac{0.4 \times 37.24}{0.6} = 24.8\,\mathrm{N}$.
 
 </details>
 
 <details>
-<summary>Q2. A conical pendulum consists of a mass of $0.5\,\mathrm{kg{}$ on a string of length $1.5\,\mathrm{m{}$. The string makes an angle of $25^\circ$ with the vertical. Find the tension, the speed of the mass, and the period of rotation.</summary>
+<summary>Q2. A conical pendulum consists of a mass of $0.5\,\mathrm{kg}$ on a string of length $1.5\,\mathrm{m}$. The string makes an angle of $25^\circ$ with the vertical. Find the tension, the speed of the mass, and the period of rotation.</summary>
 
-$T\cos 25° = 0.5 \times 9.8 = 4.9 \implies T = \dfrac{4.9}{\cos 25°} \approx 5.41\,\mathrm{N{}$.
+$T\cos 25° = 0.5 \times 9.8 = 4.9 \implies T = \dfrac{4.9}{\cos 25°} \approx 5.41\,\mathrm{N}$.
 
-$r = 1.5\sin 25° \approx 0.634\,\mathrm{m{}$.
+$r = 1.5\sin 25° \approx 0.634\,\mathrm{m}$.
 
 $T\sin 25° = \dfrac{mv^2}{r} \implies 5.41\sin 25° = \dfrac{0.5v^2}{0.634}$.
 
-$2.285 = \dfrac{0.5v^2}{0.634} \implies v^2 = \dfrac{2.285 \times 0.634}{0.5} = 2.897 \implies v \approx 1.70\,\mathrm{m s{}^{-1}$.
+$2.285 = \dfrac{0.5v^2}{0.634} \implies v^2 = \dfrac{2.285 \times 0.634}{0.5} = 2.897 \implies v \approx 1.70\,\mathrm{m s}^{-1}$.
 
 Period
-$= 2\pi\sqrt{\dfrac{L\cos\alpha}{g}} = 2\pi\sqrt{\dfrac{1.5\cos 25°}{9.8}} = 2\pi\sqrt{\dfrac{1.359}{9.8}} \approx 2\pi(0.3726) \approx 2.34\,\mathrm{s{}$.
+$= 2\pi\sqrt{\dfrac{L\cos\alpha}{g}} = 2\pi\sqrt{\dfrac{1.5\cos 25°}{9.8}} = 2\pi\sqrt{\dfrac{1.359}{9.8}} \approx 2\pi(0.3726) \approx 2.34\,\mathrm{s}$.
 
 </details>
 
 <details>
-<summary>Q3. A racing car travels around a banked circular track of radius $100\,\mathrm{m{}$ banked at $40^\circ$. The coefficient of friction between the tyres and the track is $0.4$. Find the maximum speed at which the car can travel without sliding up the track.</summary>
+<summary>Q3. A racing car travels around a banked circular track of radius $100\,\mathrm{m}$ banked at $40^\circ$. The coefficient of friction between the tyres and the track is $0.4$. Find the maximum speed at which the car can travel without sliding up the track.</summary>
 
 $v_{\max}^2 = \dfrac{rg(\sin\theta + \mu\cos\theta)}{\cos\theta - \mu\sin\theta} = \dfrac{100 \times 9.8(\sin 40° + 0.4\cos 40°)}{\cos 40° - 0.4\sin 40°}$
 
 $= \dfrac{980(0.6428 + 0.3064)}{0.7660 - 0.2571} = \dfrac{980 \times 0.9492}{0.5089} = \dfrac{930.2}{0.5089} \approx 1828$
 
-$v_{\max} \approx 42.8\,\mathrm{m s{}^{-1}$.
+$v_{\max} \approx 42.8\,\mathrm{m s}^{-1}$.
 
 </details>
 
@@ -763,7 +763,7 @@ The bead can reach the top even if it has zero speed there.
 
 At the top, the reaction $R$ acts towards the centre (downward):
 
-$R + mg = \dfrac{mv_{\mathrm{top{}}^2}{r}$ where $v_{\mathrm{top{}}^2 = u^2 - 4gr$.
+$R + mg = \dfrac{mv_{\mathrm{top}}^2}{r}$ where $v_{\mathrm{top}}^2 = u^2 - 4gr$.
 
 $R = \dfrac{m(u^2 - 4gr)}{r} - mg = \dfrac{mu^2}{r} - 4mg - mg = \dfrac{mu^2}{r} - 5mg$.
 
@@ -775,7 +775,7 @@ falling through, since the bead has zero speed at the top.
 </details>
 
 <details>
-<summary>Q5. A particle is placed on the inside of a smooth hollow sphere of radius $2\,\mathrm{m{}$ and given a horizontal speed of $4\,\mathrm{m s{}^{-1}$. Find the height at which the particle leaves the surface.</summary>
+<summary>Q5. A particle is placed on the inside of a smooth hollow sphere of radius $2\,\mathrm{m}$ and given a horizontal speed of $4\,\mathrm{m s}^{-1}$. Find the height at which the particle leaves the surface.</summary>
 
 Let the particle leave at angle $\theta$ from the top. At that point, the normal reaction $R = 0$:
 
@@ -790,20 +790,20 @@ From (i): $9.8\cos\theta = \dfrac{35.6 - 19.6\cos\theta}{2} = 17.8 - 9.8\cos\the
 
 $19.6\cos\theta = 17.8 \implies \cos\theta = \dfrac{17.8}{19.6} = 0.9082 \implies \theta \approx 24.8^\circ$
 
-Height below the centre $= r\cos\theta = 2(0.9082) = 1.82\,\mathrm{m{}$.
+Height below the centre $= r\cos\theta = 2(0.9082) = 1.82\,\mathrm{m}$.
 
-Height above the bottom $= r + r\cos\theta = 2 + 1.82 = 3.82\,\mathrm{m{}$.
+Height above the bottom $= r + r\cos\theta = 2 + 1.82 = 3.82\,\mathrm{m}$.
 
 </details>
 
 <details>
-<summary>Q6. A car of mass $800\,\mathrm{kg{}$ travels at $15\,\mathrm{m s{}^{-1}$ around an unbanked horizontal curve of radius $50\,\mathrm{m{}$. Find the minimum coefficient of friction required for the car to maintain its circular path. If the curve is banked at $20^\circ$, what coefficient of friction is needed?</summary>
+<summary>Q6. A car of mass $800\,\mathrm{kg}$ travels at $15\,\mathrm{m s}^{-1}$ around an unbanked horizontal curve of radius $50\,\mathrm{m}$. Find the minimum coefficient of friction required for the car to maintain its circular path. If the curve is banked at $20^\circ$, what coefficient of friction is needed?</summary>
 
 **Unbanked:**
 $\dfrac{mv^2}{r} = F = \mu mg \implies \mu = \dfrac{v^2}{rg} = \dfrac{225}{490} \approx 0.459$.
 
 **Banked at $20^\circ$:**
-$v_{\mathrm{opt{}} = \sqrt{50 \times 9.8 \times \tan 20°} = \sqrt{178.3} \approx 13.4\,\mathrm{m s{}^{-1}$.
+$v_{\mathrm{opt}} = \sqrt{50 \times 9.8 \times \tan 20°} = \sqrt{178.3} \approx 13.4\,\mathrm{m s}^{-1}$.
 
 Since $15 > 13.4$, friction acts down the slope. With friction down the slope:
 
@@ -817,10 +817,10 @@ Substituting into (ii): $\dfrac{(7840 + F\sin 20°)\sin 20°}{\cos 20°} + F\cos
 
 $7840\tan 20° + F(\sec 20°) = 3600$.
 
-$2854 + 1.064F = 3600 \implies F = \dfrac{746}{1.064} \approx 701\,\mathrm{N{}$.
+$2854 + 1.064F = 3600 \implies F = \dfrac{746}{1.064} \approx 701\,\mathrm{N}$.
 
 $\mu = \dfrac{F}{N}$. From (i):
-$N = \dfrac{7840 + 701\sin 20°}{\cos 20°} = \dfrac{7840 + 239.8}{0.9397} = \dfrac{8079.8}{0.9397} \approx 8598\,\mathrm{N{}$.
+$N = \dfrac{7840 + 701\sin 20°}{\cos 20°} = \dfrac{7840 + 239.8}{0.9397} = \dfrac{8079.8}{0.9397} \approx 8598\,\mathrm{N}$.
 
 $\mu \approx \dfrac{701}{8598} \approx 0.0815$.
 
@@ -836,9 +836,9 @@ Banking the curve dramatically reduces the required friction coefficient from 0.
 
 ### Example 8.1: Conical pendulum
 
-**Problem.** A conical pendulum consists of a particle of mass $0.5\,\mathrm{kg{}$ on a string of length $1\,\mathrm{m{}$ making angle $\theta$ with the vertical. It rotates with angular speed $4\,\mathrm{rad\,s^{-1}}$. Find $\theta$.
+**Problem.** A conical pendulum consists of a particle of mass $0.5\,\mathrm{kg}$ on a string of length $1\,\mathrm{m}$ making angle $\theta$ with the vertical. It rotates with angular speed $4\,\mathrm{rad\,s^{-1}}$. Find $\theta$.
 
-**Solution.** Resolving vertically: $T\cos\theta = mg = 4.9\,\mathrm{N{}$.
+**Solution.** Resolving vertically: $T\cos\theta = mg = 4.9\,\mathrm{N}$.
 
 Resolving horizontally: $T\sin\theta = m\omega^2 r = 0.5 \times 16 \times \sin\theta = 8\sin\theta$.
 
@@ -874,11 +874,11 @@ $$mg = m\omega_{\min}^2 l \implies \boxed{\omega_{\min} = \sqrt{\frac{g}{l}}}$$
 
 ### Example 8.4: Energy approach to vertical circles
 
-**Problem.** A particle of mass $0.2\,\mathrm{kg{}$ on a light inextensible string of length $0.5\,\mathrm{m{}$ is projected horizontally from the lowest point. Find the minimum speed for complete circles.
+**Problem.** A particle of mass $0.2\,\mathrm{kg}$ on a light inextensible string of length $0.5\,\mathrm{m}$ is projected horizontally from the lowest point. Find the minimum speed for complete circles.
 
-**Solution.** At the top: $v_{\text{top{}}^2 \geq gr = 4.9$.
+**Solution.** At the top: $v_{\text{top}}^2 \geq gr = 4.9$.
 
-Energy conservation: $\dfrac{1}{2}mu^2 = \dfrac{1}{2}mv_{\text{top{}}^2 + mg(2r)$.
+Energy conservation: $\dfrac{1}{2}mu^2 = \dfrac{1}{2}mv_{\text{top}}^2 + mg(2r)$.
 
 $$u^2 = gr + 4gr = 5gr = 5 \times 9.8 \times 0.5 = 24.5$$
 
@@ -913,7 +913,7 @@ $$\boxed{\omega = 10e^{-0.2t}}$$
 |---|---|
 | Confusing the centripetal force direction | It always points toward the centre of the circle |
 | Forgetting that normal reaction changes on a banked surface | Resolve perpendicular to the surface |
-| Using $v = r\omega$ with inconsistent units | $v$ in $\mathrm{m\,s^{-1}}$, $r$ in $\mathrm{m{}$, $\omega$ in $\mathrm{rad\,s^{-1}}$ |
+| Using $v = r\omega$ with inconsistent units | $v$ in $\mathrm{m\,s^{-1}}$, $r$ in $\mathrm{m}$, $\omega$ in $\mathrm{rad\,s^{-1}}$ |
 | Assuming tension is constant in vertical motion | $T$ varies; use energy conservation for $v$, then Newton's second law for $T$ |
 
 ---
@@ -1005,12 +1005,12 @@ Vertical circular motion problems often require energy methods combined with for
 
 ### Question 11
 
-A car of mass $1200\,\mathrm{kg{}$ travels at $15\,\mathrm{m\,s^{-1}}$ around a horizontal circular track of radius $50\,\mathrm{m{}$. Find the minimum coefficient of friction required.
+A car of mass $1200\,\mathrm{kg}$ travels at $15\,\mathrm{m\,s^{-1}}$ around a horizontal circular track of radius $50\,\mathrm{m}$. Find the minimum coefficient of friction required.
 
 <details>
 <summary>Solution</summary>
 
-$F = \dfrac{mv^2}{r} = \dfrac{1200 \times 225}{50} = 5400\,\mathrm{N{}$.
+$F = \dfrac{mv^2}{r} = \dfrac{1200 \times 225}{50} = 5400\,\mathrm{N}$.
 
 $F = \mu mg \implies \mu = \dfrac{5400}{1200 \times 9.8} = \dfrac{5400}{11760}$.
 
@@ -1078,9 +1078,9 @@ $v^2 = u^2 - 2gr(1-\cos\theta)$.
 
 Substituting: $T = \dfrac{m[u^2 - 2gr(1-\cos\theta)]}{r} + mg\cos\theta = \dfrac{mu^2}{r} - 2mg + 3mg\cos\theta$.
 
-At the top: $T_{\text{top{}} = \dfrac{mu^2}{r} - 2mg - 3mg = \dfrac{mu^2}{r} - 5mg$.
+At the top: $T_{\text{top}} = \dfrac{mu^2}{r} - 2mg - 3mg = \dfrac{mu^2}{r} - 5mg$.
 
-For the string not to go slack: $T_{\text{top{}} \geq 0 \implies u^2 \geq 5gr$, giving $u_{\min} = \sqrt{5gr}$.
+For the string not to go slack: $T_{\text{top}} \geq 0 \implies u^2 \geq 5gr$, giving $u_{\min} = \sqrt{5gr}$.
 
 ---
 
@@ -1088,26 +1088,26 @@ For the string not to go slack: $T_{\text{top{}} \geq 0 \implies u^2 \geq 5gr$, 
 
 ### Question 13
 
-A particle of mass $0.1\,\mathrm{kg{}$ is attached to a string of length $0.8\,\mathrm{m{}$ and whirled in a horizontal circle at $3\,\mathrm{rad\,s^{-1}}$. The string makes an angle of $30°$ with the vertical. Find the tension.
+A particle of mass $0.1\,\mathrm{kg}$ is attached to a string of length $0.8\,\mathrm{m}$ and whirled in a horizontal circle at $3\,\mathrm{rad\,s^{-1}}$. The string makes an angle of $30°$ with the vertical. Find the tension.
 
 <details>
 <summary>Solution</summary>
 
-Vertically: $T\cos 30° = 0.1 \times 9.8 = 0.98\,\mathrm{N{}$.
+Vertically: $T\cos 30° = 0.1 \times 9.8 = 0.98\,\mathrm{N}$.
 
-$T = \dfrac{0.98}{\cos 30°} = \dfrac{0.98}{\sqrt{3}/2} = \boxed{1.132\,\mathrm{N{}}$.
+$T = \dfrac{0.98}{\cos 30°} = \dfrac{0.98}{\sqrt{3}/2} = \boxed{1.132\,\mathrm{N}}$.
 
-Check: horizontally, $T\sin 30° = m\omega^2 r$ where $r = 0.8\sin 30° = 0.4\,\mathrm{m{}$.
+Check: horizontally, $T\sin 30° = m\omega^2 r$ where $r = 0.8\sin 30° = 0.4\,\mathrm{m}$.
 
-$T\sin 30° = 1.132 \times 0.5 = 0.566\,\mathrm{N{}$.
+$T\sin 30° = 1.132 \times 0.5 = 0.566\,\mathrm{N}$.
 
-$m\omega^2 r = 0.1 \times 9 \times 0.4 = 0.36\,\mathrm{N{}$.
+$m\omega^2 r = 0.1 \times 9 \times 0.4 = 0.36\,\mathrm{N}$.
 
 These don't match, which means the given angle is inconsistent with the given angular speed. The correct angle satisfies:
 
 $\cos\theta = \dfrac{g}{\omega^2 l} = \dfrac{9.8}{9 \times 0.8} = 1.361 > 1$.
 
-This is impossible, meaning the particle cannot maintain circular motion at $3\,\mathrm{rad\,s^{-1}}$ with string length $0.8\,\mathrm{m{}$ (it would need to be horizontal, which requires infinite $\omega$).
+This is impossible, meaning the particle cannot maintain circular motion at $3\,\mathrm{rad\,s^{-1}}$ with string length $0.8\,\mathrm{m}$ (it would need to be horizontal, which requires infinite $\omega$).
 
 </details>
 
@@ -1172,7 +1172,7 @@ Radial: $m(\ddot{r} - r\dot{\theta}^2) = F_r$
 
 Tangential: $m(r\ddot{\theta} + 2\dot{r}\dot{\theta}) = F_\theta$
 
-For circular motion ($r = \text{const{}$): $\dot{r} = \ddot{r} = 0$, giving:
+For circular motion ($r = \text{const}$): $\dot{r} = \ddot{r} = 0$, giving:
 
 $-mr\dot{\theta}^2 = F_r$ (centripetal) and $mr\ddot{\theta} = F_\theta$ (tangential).
 

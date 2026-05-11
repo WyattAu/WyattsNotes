@@ -214,7 +214,7 @@ The shortest path is A $\to$ C $\to$ B $\to$ D $\to$ E with total weight 10.
 
 ---
 ### IT-3: Tree Balancing and Complexity (with Complexity Analysis)
-**Question:** A binary search tree has $n$ nodes. (a) What is the worst-case height and best-case height? (b) If values 1, 2, 3, 4, 5, 6, 7 are inserted in sorted order, what is the resulting tree structure and height? (c) State the time complexity of searching in this tree vs a balanced tree. (d) If each comparison takes $1\ \mu\text{s{}$, calculate the maximum search time for $n = 1000000$ in a balanced vs unbalanced tree.
+**Question:** A binary search tree has $n$ nodes. (a) What is the worst-case height and best-case height? (b) If values 1, 2, 3, 4, 5, 6, 7 are inserted in sorted order, what is the resulting tree structure and height? (c) State the time complexity of searching in this tree vs a balanced tree. (d) If each comparison takes $1\ \mu\text{s}$, calculate the maximum search time for $n = 1000000$ in a balanced vs unbalanced tree.
 
 **Solution:**
 
@@ -243,8 +243,8 @@ Searching in a balanced tree: $O(\log n)$ worst case.
 
 (d) For $n = 1000000$:
 
-Unbalanced tree: up to $1000000$ comparisons $\times 1\ \mu\text{s{} = 1000\ \text{ms{} = 1\ \text{second{}$.
+Unbalanced tree: up to $1000000$ comparisons $\times 1\ \mu\text{s} = 1000\ \text{ms} = 1\ \text{second}$.
 
-Balanced tree: $\lceil \log_2 1000000 \rceil = 20$ comparisons $\times 1\ \mu\text{s{} = 20\ \mu\text{s{}$.
+Balanced tree: $\lceil \log_2 1000000 \rceil = 20$ comparisons $\times 1\ \mu\text{s} = 20\ \mu\text{s}$.
 
 The balanced tree is $50000$ times faster. This demonstrates why tree balancing (e.g., AVL trees, red-black trees) is critical for maintaining efficient search operations.

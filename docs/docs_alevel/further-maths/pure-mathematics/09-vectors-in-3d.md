@@ -338,11 +338,11 @@ $|\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}|$ (from Section 4.3).
 The height is the component of $\mathbf{'\{'}a{'\}'}$ perpendicular to the base, which is the projection of
 $\mathbf{'\{'}a{'\}'}$ onto the direction of $\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}$:
 
-$$\mathrm{height{} = |\mathbf{'\{'}a{'\}'}|\cos\phi = \frac{\mathbf{'\{'}a{'\}'}\cdot(\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'})}{|\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}|}$$
+$$\mathrm{height} = |\mathbf{'\{'}a{'\}'}|\cos\phi = \frac{\mathbf{'\{'}a{'\}'}\cdot(\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'})}{|\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}|}$$
 
 where $\phi$ is the angle between $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}$.
 
-$$V = \mathrm{base{} \times \mathrm{height{} = |\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}| \cdot \frac{\mathbf{'\{'}a{'\}'}\cdot(\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'})}{|\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}|} = \mathbf{'\{'}a{'\}'}\cdot(\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'})$$
+$$V = \mathrm{base} \times \mathrm{height} = |\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}| \cdot \frac{\mathbf{'\{'}a{'\}'}\cdot(\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'})}{|\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'}|} = \mathbf{'\{'}a{'\}'}\cdot(\mathbf{'\{'}b{'\}'}\times\mathbf{'\{'}c{'\}'})$$
 
 Taking the absolute value to get a positive volume:
 
@@ -740,11 +740,11 @@ Since the scalar triple product is zero, the four points are coplanar. $\blacksq
 
 The projection of $\mathbf{'\{'}a{'\}'}$ onto the normal direction:
 
-$$\text{proj{}_{\mathbf{'\{'}n{'\}'}}\,\mathbf{'\{'}a{'\}'} = (\mathbf{'\{'}a{'\}'}\cdot\hat{\mathbf{'\{'}n{'\}'}})\hat{\mathbf{'\{'}n{'\}'}} = \frac{2+1-1}{3}(1,1,1) = \frac{2}{3}(1,1,1)$$
+$$\text{proj}_{\mathbf{'\{'}n{'\}'}}\,\mathbf{'\{'}a{'\}'} = (\mathbf{'\{'}a{'\}'}\cdot\hat{\mathbf{'\{'}n{'\}'}})\hat{\mathbf{'\{'}n{'\}'}} = \frac{2+1-1}{3}(1,1,1) = \frac{2}{3}(1,1,1)$$
 
 The projection onto the plane (i.e., the component parallel to the plane):
 
-$$\mathbf{'\{'}a{'\}'}_{\parallel} = \mathbf{'\{'}a{'\}'} - \text{proj{}_{\mathbf{'\{'}n{'\}'}}\,\mathbf{'\{'}a{'\}'} = (2, 1, -1) - \frac{2}{3}(1, 1, 1) = \left(\frac{4}{3}, \frac{1}{3}, -\frac{5}{3}\right)$$
+$$\mathbf{'\{'}a{'\}'}_{\parallel} = \mathbf{'\{'}a{'\}'} - \text{proj}_{\mathbf{'\{'}n{'\}'}}\,\mathbf{'\{'}a{'\}'} = (2, 1, -1) - \frac{2}{3}(1, 1, 1) = \left(\frac{4}{3}, \frac{1}{3}, -\frac{5}{3}\right)$$
 
 ### Example 11.8: Vector product proof of the sine rule
 

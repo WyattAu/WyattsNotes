@@ -30,7 +30,7 @@ determined.
 
 :::info
 In projectile motion, air resistance is always neglected unless stated otherwise. The only
-acceleration is $g = 9.8\,\mathrm{m s{}^{-2}$ acting vertically downward. Take care with sign
+acceleration is $g = 9.8\,\mathrm{m s}^{-2}$ acting vertically downward. Take care with sign
 conventions — define upward as positive at the start and be consistent.
 :::
 
@@ -104,7 +104,7 @@ $$\boxed{T = \frac{2V\sin\theta}{g}}$$
 
 At maximum height, $\dot{y} = 0$:
 
-$$V\sin\theta - gt_{\mathrm{max{}} = 0 \implies t_{\mathrm{max{}} = \frac{V\sin\theta}{g}$$
+$$V\sin\theta - gt_{\mathrm{max}} = 0 \implies t_{\mathrm{max}} = \frac{V\sin\theta}{g}$$
 
 ### Proof of maximum height
 
@@ -217,18 +217,18 @@ $$\tan\phi = \frac{v_y}{v_x} = \frac{V\sin\theta - gt}{V\cos\theta} = \tan\theta
 
 <details>
 <summary>Problem 1</summary>
-A projectile is launched at $30\,\mathrm{m s{}^{-1}$ at $50^\circ$ to the horizontal from ground level. Find the maximum height, time of flight, and range.
+A projectile is launched at $30\,\mathrm{m s}^{-1}$ at $50^\circ$ to the horizontal from ground level. Find the maximum height, time of flight, and range.
 </details>
 
 <details>
 <summary>Solution 1</summary>
 $V = 30$, $\theta = 50^\circ$, $g = 9.8$.
 
-$H = \dfrac{V^2\sin^2\theta}{2g} = \dfrac{900\sin^2 50°}{19.6} = \dfrac{900 \times 0.5868}{19.6} \approx 26.94\,\mathrm{m{}$.
+$H = \dfrac{V^2\sin^2\theta}{2g} = \dfrac{900\sin^2 50°}{19.6} = \dfrac{900 \times 0.5868}{19.6} \approx 26.94\,\mathrm{m}$.
 
-$T = \dfrac{2V\sin\theta}{g} = \dfrac{60\sin 50°}{9.8} = \dfrac{45.96}{9.8} \approx 4.69\,\mathrm{s{}$.
+$T = \dfrac{2V\sin\theta}{g} = \dfrac{60\sin 50°}{9.8} = \dfrac{45.96}{9.8} \approx 4.69\,\mathrm{s}$.
 
-$R = \dfrac{V^2\sin 2\theta}{g} = \dfrac{900\sin 100°}{9.8} = \dfrac{900 \times 0.9848}{9.8} \approx 90.44\,\mathrm{m{}$.
+$R = \dfrac{V^2\sin 2\theta}{g} = \dfrac{900\sin 100°}{9.8} = \dfrac{900 \times 0.9848}{9.8} \approx 90.44\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Key Results](#3-key-results) — Section 3.
 
@@ -256,16 +256,16 @@ Section 2.
 
 <details>
 <summary>Problem 3</summary>
-A projectile is launched from a cliff $80\,\mathrm{m{}$ high at $20\,\mathrm{m s{}^{-1}$ horizontally. Find the time to hit the ground and the horizontal distance travelled.
+A projectile is launched from a cliff $80\,\mathrm{m}$ high at $20\,\mathrm{m s}^{-1}$ horizontally. Find the time to hit the ground and the horizontal distance travelled.
 </details>
 
 <details>
 <summary>Solution 3</summary>
 $\theta = 0^\circ$, so $v_x = 20$, $v_y = 0$.
 
-$y = -\dfrac{1}{2}gt^2 = -80 \implies t^2 = \dfrac{160}{9.8} \implies t \approx 4.04\,\mathrm{s{}$.
+$y = -\dfrac{1}{2}gt^2 = -80 \implies t^2 = \dfrac{160}{9.8} \implies t \approx 4.04\,\mathrm{s}$.
 
-$x = 20 \times 4.04 \approx 80.8\,\mathrm{m{}$.
+$x = 20 \times 4.04 \approx 80.8\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Equations of Motion](#1-equations-of-motion) — Section 1.
 
@@ -289,21 +289,21 @@ The projectile should be launched at $60^\circ$ to the horizontal.
 
 <details>
 <summary>Problem 5</summary>
-A ball is thrown at $15\,\mathrm{m s{}^{-1}$ from a height of $2\,\mathrm{m{}$ at $40^\circ$ above the horizontal. Find the speed and angle when it hits the ground.
+A ball is thrown at $15\,\mathrm{m s}^{-1}$ from a height of $2\,\mathrm{m}$ at $40^\circ$ above the horizontal. Find the speed and angle when it hits the ground.
 </details>
 
 <details>
 <summary>Solution 5</summary>
 $y = 2 + 15\sin 40°\cdot t - 4.9t^2 = 0$.
 
-$4.9t^2 - 9.642t - 2 = 0 \implies t = \dfrac{9.642 + \sqrt{93.17 + 39.2}}{9.8} = \dfrac{9.642 + 11.47}{9.8} \approx 2.162\,\mathrm{s{}$.
+$4.9t^2 - 9.642t - 2 = 0 \implies t = \dfrac{9.642 + \sqrt{93.17 + 39.2}}{9.8} = \dfrac{9.642 + 11.47}{9.8} \approx 2.162\,\mathrm{s}$.
 
-$v_y = 15\sin 40° - 9.8(2.162) = 9.642 - 21.19 = -11.55\,\mathrm{m s{}^{-1}$.
+$v_y = 15\sin 40° - 9.8(2.162) = 9.642 - 21.19 = -11.55\,\mathrm{m s}^{-1}$.
 
-$v_x = 15\cos 40° = 11.49\,\mathrm{m s{}^{-1}$.
+$v_x = 15\cos 40° = 11.49\,\mathrm{m s}^{-1}$.
 
 Speed
-$= \sqrt{11.49^2 + 11.55^2} = \sqrt{132.0 + 133.4} = \sqrt{265.4} \approx 16.3\,\mathrm{m s{}^{-1}$.
+$= \sqrt{11.49^2 + 11.55^2} = \sqrt{132.0 + 133.4} = \sqrt{265.4} \approx 16.3\,\mathrm{m s}^{-1}$.
 
 Angle below horizontal: $\arctan(11.55/11.49) \approx 45.1^\circ$.
 
@@ -313,14 +313,14 @@ Angle below horizontal: $\arctan(11.55/11.49) \approx 45.1^\circ$.
 
 <details>
 <summary>Problem 6</summary>
-A projectile is launched at $25\,\mathrm{m s{}^{-1}$ at $35^\circ$ up a plane inclined at $20^\circ$ to the horizontal. Find the range on the plane.
+A projectile is launched at $25\,\mathrm{m s}^{-1}$ at $35^\circ$ up a plane inclined at $20^\circ$ to the horizontal. Find the range on the plane.
 </details>
 
 <details>
 <summary>Solution 6</summary>
 $r = \dfrac{2V^2\cos\theta\sin(\theta-\alpha)}{g\cos^2\alpha} = \dfrac{2(625)\cos 35°\sin 15°}{9.8\cos^2 20°}$
 
-$= \dfrac{1250 \times 0.8192 \times 0.2588}{9.8 \times 0.8830} = \dfrac{265.1}{8.653} \approx 30.6\,\mathrm{m{}$.
+$= \dfrac{1250 \times 0.8192 \times 0.2588}{9.8 \times 0.8830} = \dfrac{265.1}{8.653} \approx 30.6\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Up the plane](#41-up-the-plane) — Section 4.1.
 
@@ -344,20 +344,20 @@ Section 3.3.
 
 <details>
 <summary>Problem 8</summary>
-A cricketer hits a ball at $28\,\mathrm{m s{}^{-1}$ at $35^\circ$ to the horizontal. A fielder stands $60\,\mathrm{m{}$ away. Can the fielder catch the ball at the same height?
+A cricketer hits a ball at $28\,\mathrm{m s}^{-1}$ at $35^\circ$ to the horizontal. A fielder stands $60\,\mathrm{m}$ away. Can the fielder catch the ball at the same height?
 </details>
 
 <details>
 <summary>Solution 8</summary>
-$R = \dfrac{28^2\sin 70°}{9.8} = \dfrac{784 \times 0.9397}{9.8} = \dfrac{736.7}{9.8} \approx 75.2\,\mathrm{m{}$.
+$R = \dfrac{28^2\sin 70°}{9.8} = \dfrac{784 \times 0.9397}{9.8} = \dfrac{736.7}{9.8} \approx 75.2\,\mathrm{m}$.
 
-Since $75.2 > 60\,\mathrm{m{}$, the ball travels beyond the fielder. Check height at $x = 60$:
+Since $75.2 > 60\,\mathrm{m}$, the ball travels beyond the fielder. Check height at $x = 60$:
 
 $y = 60\tan 35° - \dfrac{9.8 \times 3600}{2 \times 784 \times \cos^2 35°} = 42.02 - \dfrac{35280}{2 \times 784 \times 0.6710} = 42.02 - \dfrac{35280}{1051.9}$
 
-$= 42.02 - 33.54 = 8.48\,\mathrm{m{}$.
+$= 42.02 - 33.54 = 8.48\,\mathrm{m}$.
 
-The ball is at height $8.48\,\mathrm{m{}$ when it passes $x = 60\,\mathrm{m{}$, so the fielder cannot
+The ball is at height $8.48\,\mathrm{m}$ when it passes $x = 60\,\mathrm{m}$, so the fielder cannot
 catch it at the same height.
 
 **If you get this wrong, revise:** [The Trajectory Equation](#2-the-trajectory-equation) —
@@ -367,14 +367,14 @@ Section 2.
 
 <details>
 <summary>Problem 9</summary>
-A projectile is launched from the top of an incline of angle $25^\circ$ at $20\,\mathrm{m s{}^{-1}$ at angle $30^\circ$ to the horizontal, directed down the plane. Find the range on the plane.
+A projectile is launched from the top of an incline of angle $25^\circ$ at $20\,\mathrm{m s}^{-1}$ at angle $30^\circ$ to the horizontal, directed down the plane. Find the range on the plane.
 </details>
 
 <details>
 <summary>Solution 9</summary>
 $r = \dfrac{2V^2\cos\theta\sin(\theta+\alpha)}{g\cos^2\alpha} = \dfrac{2(400)\cos 30°\sin 55°}{9.8\cos^2 25°}$
 
-$= \dfrac{800 \times 0.8660 \times 0.8192}{9.8 \times 0.8214} = \dfrac{567.5}{8.050} \approx 70.5\,\mathrm{m{}$.
+$= \dfrac{800 \times 0.8660 \times 0.8192}{9.8 \times 0.8214} = \dfrac{567.5}{8.050} \approx 70.5\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Down the plane](#42-down-the-plane) — Section 4.2.
 
@@ -382,7 +382,7 @@ $= \dfrac{800 \times 0.8660 \times 0.8192}{9.8 \times 0.8214} = \dfrac{567.5}{8.
 
 <details>
 <summary>Problem 10</summary>
-A projectile passes through two points at $(20, 5)$ and $(40, 5)$ (in metres). Find the angle of projection and the initial speed, given $g = 9.8\,\mathrm{m s{}^{-2}$.
+A projectile passes through two points at $(20, 5)$ and $(40, 5)$ (in metres). Find the angle of projection and the initial speed, given $g = 9.8\,\mathrm{m s}^{-2}$.
 </details>
 
 <details>
@@ -404,7 +404,7 @@ $\tan\theta = \dfrac{15}{50} = 0.3$, so $\theta \approx 16.7^\circ$.
 
 $V^2\cos^2\theta = \dfrac{588}{0.3} = 1960$.
 $V^2 = \dfrac{1960}{\cos^2 16.7°} = \dfrac{1960}{0.9163} \approx 2139$.
-$V \approx 46.3\,\mathrm{m s{}^{-1}$.
+$V \approx 46.3\,\mathrm{m s}^{-1}$.
 
 **If you get this wrong, revise:** [The Trajectory Equation](#2-the-trajectory-equation) —
 Section 2.
@@ -470,7 +470,7 @@ $$R = V\cos\theta \cdot T = \frac{V\cos\theta\left(V\sin\theta + \sqrt{V^2\sin^2
 
 The maximum height above the launch point is unchanged from the ground-level case:
 
-$$H_{\mathrm{above launch{}} = \frac{V^2\sin^2\theta}{2g}$$
+$$H_{\mathrm{above launch}} = \frac{V^2\sin^2\theta}{2g}$$
 
 The maximum height above ground level is $h + \dfrac{V^2\sin^2\theta}{2g}$.
 
@@ -503,7 +503,7 @@ $\blacksquare$
 
 ### 7.5 Worked example: projectile from a cliff
 
-**Example.** A stone is thrown from a cliff $50\,\mathrm{m{}$ high at $15\,\mathrm{m s{}^{-1}$ at
+**Example.** A stone is thrown from a cliff $50\,\mathrm{m}$ high at $15\,\mathrm{m s}^{-1}$ at
 $30^\circ$ above the horizontal. Find the time of flight, the horizontal range, the maximum height
 above ground, and the speed and direction of impact.
 
@@ -511,21 +511,21 @@ above ground, and the speed and direction of impact.
 
 $$T = \frac{15\sin 30° + \sqrt{15^2\sin^2 30° + 2(9.8)(50)}}{9.8}$$
 
-$$= \frac{7.5 + \sqrt{56.25 + 980}}{9.8} = \frac{7.5 + \sqrt{1036.25}}{9.8} = \frac{7.5 + 32.19}{9.8} \approx 4.05\,\mathrm{s{}$$
+$$= \frac{7.5 + \sqrt{56.25 + 980}}{9.8} = \frac{7.5 + \sqrt{1036.25}}{9.8} = \frac{7.5 + 32.19}{9.8} \approx 4.05\,\mathrm{s}$$
 
-**Range:** $R = 15\cos 30° \times 4.05 \approx 12.99 \times 4.05 \approx 52.6\,\mathrm{m{}$.
+**Range:** $R = 15\cos 30° \times 4.05 \approx 12.99 \times 4.05 \approx 52.6\,\mathrm{m}$.
 
 **Maximum height above ground:**
-$50 + \dfrac{15^2\sin^2 30°}{2(9.8)} = 50 + \dfrac{56.25}{19.6} \approx 50 + 2.87 = 52.87\,\mathrm{m{}$.
+$50 + \dfrac{15^2\sin^2 30°}{2(9.8)} = 50 + \dfrac{56.25}{19.6} \approx 50 + 2.87 = 52.87\,\mathrm{m}$.
 
 **Speed at impact:**
 
-$v_x = 15\cos 30° = 12.99\,\mathrm{m s{}^{-1}$.
+$v_x = 15\cos 30° = 12.99\,\mathrm{m s}^{-1}$.
 
-$v_y = 15\sin 30° - 9.8(4.05) = 7.5 - 39.69 = -32.19\,\mathrm{m s{}^{-1}$.
+$v_y = 15\sin 30° - 9.8(4.05) = 7.5 - 39.69 = -32.19\,\mathrm{m s}^{-1}$.
 
 Speed
-$= \sqrt{12.99^2 + 32.19^2} = \sqrt{168.7 + 1036.2} = \sqrt{1204.9} \approx 34.7\,\mathrm{m s{}^{-1}$.
+$= \sqrt{12.99^2 + 32.19^2} = \sqrt{168.7 + 1036.2} = \sqrt{1204.9} \approx 34.7\,\mathrm{m s}^{-1}$.
 
 **Angle below horizontal:** $\arctan(32.19/12.99) \approx 68.1^\circ$.
 
@@ -533,14 +533,14 @@ $= \sqrt{12.99^2 + 32.19^2} = \sqrt{168.7 + 1036.2} = \sqrt{1204.9} \approx 34.7
 
 ## 8. Worked Example: Range on an Inclined Plane
 
-**Example.** A projectile is launched at $30\,\mathrm{m s{}^{-1}$ at $55^\circ$ to the horizontal up
+**Example.** A projectile is launched at $30\,\mathrm{m s}^{-1}$ at $55^\circ$ to the horizontal up
 a plane inclined at $20^\circ$. Find the range on the plane and the time of flight.
 
 Using the range formula:
 
 $$r = \frac{2V^2\cos\theta\sin(\theta - \alpha)}{g\cos^2\alpha} = \frac{2(900)\cos 55°\sin 35°}{9.8\cos^2 20°}$$
 
-$$= \frac{1800 \times 0.5736 \times 0.5736}{9.8 \times 0.8830} = \frac{592.4}{8.653} \approx 68.5\,\mathrm{m{}$$
+$$= \frac{1800 \times 0.5736 \times 0.5736}{9.8 \times 0.8830} = \frac{592.4}{8.653} \approx 68.5\,\mathrm{m}$$
 
 Time of flight: the projectile lands when $y = x\tan 20^\circ$.
 
@@ -548,9 +548,9 @@ From the trajectory equation:
 
 $$x = \frac{2V^2\cos^2\theta(\tan\theta - \tan\alpha)}{g} = \frac{2(900)\cos^2 55°(\tan 55° - \tan 20°)}{9.8}$$
 
-$$= \frac{1800 \times 0.3290 \times (1.4281 - 0.3640)}{9.8} = \frac{1800 \times 0.3290 \times 1.0641}{9.8} \approx 64.3\,\mathrm{m{}$$
+$$= \frac{1800 \times 0.3290 \times (1.4281 - 0.3640)}{9.8} = \frac{1800 \times 0.3290 \times 1.0641}{9.8} \approx 64.3\,\mathrm{m}$$
 
-$$T = \frac{x}{V\cos\theta} = \frac{64.3}{30\cos 55°} = \frac{64.3}{17.21} \approx 3.74\,\mathrm{s{}$$
+$$T = \frac{x}{V\cos\theta} = \frac{64.3}{30\cos 55°} = \frac{64.3}{17.21} \approx 3.74\,\mathrm{s}$$
 
 <hr />
 
@@ -623,35 +623,35 @@ Always check that your answer makes physical sense:
 ## 11. Problem Set
 
 <details>
-<summary>Q1. A projectile is launched from ground level at $25\,\mathrm{m s{}^{-1}$. Find the two angles that give a range of $50\,\mathrm{m{}$, and for each angle find the maximum height and time of flight.</summary>
+<summary>Q1. A projectile is launched from ground level at $25\,\mathrm{m s}^{-1}$. Find the two angles that give a range of $50\,\mathrm{m}$, and for each angle find the maximum height and time of flight.</summary>
 
 $R = \dfrac{V^2\sin 2\theta}{g} \implies 50 = \dfrac{625\sin 2\theta}{9.8} \implies \sin 2\theta = \dfrac{490}{625} = 0.784$.
 
 $2\theta = 51.6^\circ$ or $128.4^\circ$, so $\theta = 25.8^\circ$ or $64.2^\circ$.
 
-For $\theta = 25.8^\circ$: $H = \dfrac{625\sin^2 25.8°}{19.6} \approx 5.83\,\mathrm{m{}$,
-$T = \dfrac{50\sin 25.8°}{9.8} \approx 2.19\,\mathrm{s{}$.
+For $\theta = 25.8^\circ$: $H = \dfrac{625\sin^2 25.8°}{19.6} \approx 5.83\,\mathrm{m}$,
+$T = \dfrac{50\sin 25.8°}{9.8} \approx 2.19\,\mathrm{s}$.
 
-For $\theta = 64.2^\circ$: $H = \dfrac{625\sin^2 64.2°}{19.6} \approx 25.8\,\mathrm{m{}$,
-$T = \dfrac{50\sin 64.2°}{9.8} \approx 4.61\,\mathrm{s{}$.
+For $\theta = 64.2^\circ$: $H = \dfrac{625\sin^2 64.2°}{19.6} \approx 25.8\,\mathrm{m}$,
+$T = \dfrac{50\sin 64.2°}{9.8} \approx 4.61\,\mathrm{s}$.
 
 </details>
 
 <details>
-<summary>Q2. A ball is thrown from a window $12\,\mathrm{m{}$ above the ground at $10\,\mathrm{m s{}^{-1}$ at $45^\circ$ below the horizontal. Find the time to hit the ground and the horizontal distance from the window.</summary>
+<summary>Q2. A ball is thrown from a window $12\,\mathrm{m}$ above the ground at $10\,\mathrm{m s}^{-1}$ at $45^\circ$ below the horizontal. Find the time to hit the ground and the horizontal distance from the window.</summary>
 
-Taking upward as positive, $V_y = -10\sin 45° = -7.071\,\mathrm{m s{}^{-1}$.
+Taking upward as positive, $V_y = -10\sin 45° = -7.071\,\mathrm{m s}^{-1}$.
 
 $y = 12 - 7.071t - 4.9t^2 = 0 \implies 4.9t^2 + 7.071t - 12 = 0$.
 
-$t = \dfrac{-7.071 + \sqrt{50.0 + 235.2}}{9.8} = \dfrac{-7.071 + 16.89}{9.8} \approx 1.002\,\mathrm{s{}$.
+$t = \dfrac{-7.071 + \sqrt{50.0 + 235.2}}{9.8} = \dfrac{-7.071 + 16.89}{9.8} \approx 1.002\,\mathrm{s}$.
 
-$R = 10\cos 45° \times 1.002 \approx 7.09\,\mathrm{m{}$.
+$R = 10\cos 45° \times 1.002 \approx 7.09\,\mathrm{m}$.
 
 </details>
 
 <details>
-<summary>Q3. Prove that the maximum horizontal range from a height $h$ is achieved at an angle less than $45^\circ$, and find the optimal angle when $V = 20\,\mathrm{m s{}^{-1}$ and $h = 10\,\mathrm{m{}$.</summary>
+<summary>Q3. Prove that the maximum horizontal range from a height $h$ is achieved at an angle less than $45^\circ$, and find the optimal angle when $V = 20\,\mathrm{m s}^{-1}$ and $h = 10\,\mathrm{m}$.</summary>
 
 From Section 7.4: $\theta = \arctan\!\left(\dfrac{V}{\sqrt{V^2 + 2gh}}\right)$.
 
@@ -664,13 +664,13 @@ velocity.
 </details>
 
 <details>
-<summary>Q4. A projectile is launched at $18\,\mathrm{m s{}^{-1}$ at $50^\circ$ to the horizontal up a plane inclined at $15^\circ$. Find the range on the plane and the time of flight.</summary>
+<summary>Q4. A projectile is launched at $18\,\mathrm{m s}^{-1}$ at $50^\circ$ to the horizontal up a plane inclined at $15^\circ$. Find the range on the plane and the time of flight.</summary>
 
 $r = \dfrac{2(324)\cos 50°\sin 35°}{9.8\cos^2 15°} = \dfrac{648 \times 0.6428 \times 0.5736}{9.8 \times 0.9330}$
 
-$= \dfrac{239.0}{9.143} \approx 26.1\,\mathrm{m{}$.
+$= \dfrac{239.0}{9.143} \approx 26.1\,\mathrm{m}$.
 
-$T = \dfrac{2V\sin(\theta - \alpha)}{g\cos\alpha} = \dfrac{2(18)\sin 35°}{9.8\cos 15°} = \dfrac{36 \times 0.5736}{9.8 \times 0.9659} = \dfrac{20.65}{9.466} \approx 2.18\,\mathrm{s{}$.
+$T = \dfrac{2V\sin(\theta - \alpha)}{g\cos\alpha} = \dfrac{2(18)\sin 35°}{9.8\cos 15°} = \dfrac{36 \times 0.5736}{9.8 \times 0.9659} = \dfrac{20.65}{9.466} \approx 2.18\,\mathrm{s}$.
 
 </details>
 
@@ -691,7 +691,7 @@ gained equals gravitational potential energy lost.
 </details>
 
 <details>
-<summary>Q6. A golfer hits a ball from the top of a hill $30\,\mathrm{m{}$ above the fairway. The ball leaves at $40\,\mathrm{m s{}^{-1}$ at $35^\circ$ above the horizontal. The fairway slopes downward at $10^\circ$ below the horizontal. Find the distance the ball travels along the fairway before landing.</summary>
+<summary>Q6. A golfer hits a ball from the top of a hill $30\,\mathrm{m}$ above the fairway. The ball leaves at $40\,\mathrm{m s}^{-1}$ at $35^\circ$ above the horizontal. The fairway slopes downward at $10^\circ$ below the horizontal. Find the distance the ball travels along the fairway before landing.</summary>
 
 The landing condition is that the ball reaches the sloping fairway. The fairway surface passes
 through $(0, -30)$ and has equation $y = -30 - x\tan 10^\circ$.
@@ -708,9 +708,9 @@ $0.8765x - 0.004564x^2 + 30 = 0$
 
 $0.004564x^2 - 0.8765x - 30 = 0$
 
-$x = \dfrac{0.8765 + \sqrt{0.7683 + 0.5477}}{0.009128} = \dfrac{0.8765 + 1.147}{0.009128} \approx 220.8\,\mathrm{m{}$.
+$x = \dfrac{0.8765 + \sqrt{0.7683 + 0.5477}}{0.009128} = \dfrac{0.8765 + 1.147}{0.009128} \approx 220.8\,\mathrm{m}$.
 
-Distance along fairway $= \dfrac{x}{\cos 10°} = \dfrac{220.8}{0.9848} \approx 224.2\,\mathrm{m{}$.
+Distance along fairway $= \dfrac{x}{\cos 10°} = \dfrac{220.8}{0.9848} \approx 224.2\,\mathrm{m}$.
 
 </details>
 
@@ -736,11 +736,11 @@ The particle lands when $\xi = 0$ again:
 
 $\xi = u_\xi t + \dfrac{1}{2}a_\xi t^2 = 0 \implies t\!\left(20\sin 20° - \dfrac{g\sqrt{3}}{4}\,t\right) = 0$.
 
-Time of flight: $T = \dfrac{80\sin 20°}{g\sqrt{3}} \approx \dfrac{27.36}{17.06} \approx 1.604\,\mathrm{s{}$.
+Time of flight: $T = \dfrac{80\sin 20°}{g\sqrt{3}} \approx \dfrac{27.36}{17.06} \approx 1.604\,\mathrm{s}$.
 
 Range along plane: $\eta = u_\eta T + \dfrac{1}{2}a_\eta T^2 = 20\cos 20° \times 1.604 - \dfrac{9.8}{2}(1.604)^2$
 
-$\approx 30.14 - 12.60 = \boxed{17.5\,\mathrm{m{}}$ (along the incline).
+$\approx 30.14 - 12.60 = \boxed{17.5\,\mathrm{m}}$ (along the incline).
 
 ### Example 8.2: Maximum range on an inclined plane
 
@@ -841,7 +841,7 @@ $\blacksquare$
 
 ### Question 8
 
-A cricketer hits a ball from ground level with speed $25\,\mathrm{m\,s^{-1}}$ at $35°$ to the horizontal. The ball just clears a wall $5\,\mathrm{m{}$ high. Find the distance from the batsman to the wall.
+A cricketer hits a ball from ground level with speed $25\,\mathrm{m\,s^{-1}}$ at $35°$ to the horizontal. The ball just clears a wall $5\,\mathrm{m}$ high. Find the distance from the batsman to the wall.
 
 <details>
 <summary>Solution</summary>
@@ -854,9 +854,9 @@ $0.002914x^2 - 0.7002x + 5 = 0$.
 
 $x = \dfrac{0.7002 \pm \sqrt{0.4903 - 0.05828}}{0.005828} = \dfrac{0.7002 \pm 0.6572}{0.005828}$.
 
-$x \approx 232.8\,\mathrm{m{}$ (far wall) or $x \approx 7.35\,\mathrm{m{}$ (near wall on the way up).
+$x \approx 232.8\,\mathrm{m}$ (far wall) or $x \approx 7.35\,\mathrm{m}$ (near wall on the way up).
 
-Since the ball "just clears," the wall is at $\boxed{7.35\,\mathrm{m{}}$ (first crossing) or $\boxed{232.8\,\mathrm{m{}}$ depending on context.
+Since the ball "just clears," the wall is at $\boxed{7.35\,\mathrm{m}}$ (first crossing) or $\boxed{232.8\,\mathrm{m}}$ depending on context.
 
 </details>
 
@@ -881,7 +881,7 @@ $T = \dfrac{2u\sin(\theta+\alpha)}{g\cos\alpha}$. $\blacksquare$
 
 ### Question 10
 
-A particle is projected from a point $A$ on a cliff $40\,\mathrm{m{}$ above sea level. It lands in the sea at a horizontal distance of $100\,\mathrm{m{}$ from the foot of the cliff. If the angle of projection is $30°$ above the horizontal, find the initial speed.
+A particle is projected from a point $A$ on a cliff $40\,\mathrm{m}$ above sea level. It lands in the sea at a horizontal distance of $100\,\mathrm{m}$ from the foot of the cliff. If the angle of projection is $30°$ above the horizontal, find the initial speed.
 
 <details>
 <summary>Solution</summary>
@@ -938,7 +938,7 @@ Conservation of energy provides an alternative to resolving forces, connecting p
 
 ### Question 11
 
-A ball is thrown from a height of $1.5\,\mathrm{m{}$ at $10\,\mathrm{m\,s^{-1}}$ at $30°$ above the horizontal. Find:
+A ball is thrown from a height of $1.5\,\mathrm{m}$ at $10\,\mathrm{m\,s^{-1}}$ at $30°$ above the horizontal. Find:
 (a) the time to reach maximum height;
 (b) the maximum height above the ground;
 (c) the horizontal range (distance from launch to landing).
@@ -946,13 +946,13 @@ A ball is thrown from a height of $1.5\,\mathrm{m{}$ at $10\,\mathrm{m\,s^{-1}}$
 <details>
 <summary>Solution</summary>
 
-**(a)** Vertical: $v_y = u\sin\theta - gt = 5 - 9.8t$. At max height: $t = \dfrac{5}{9.8} \approx \boxed{0.510\,\mathrm{s{}}$.
+**(a)** Vertical: $v_y = u\sin\theta - gt = 5 - 9.8t$. At max height: $t = \dfrac{5}{9.8} \approx \boxed{0.510\,\mathrm{s}}$.
 
-**(b)** $y_{\max} = 1.5 + \dfrac{5^2}{2 \times 9.8} = 1.5 + 1.276 = \boxed{2.78\,\mathrm{m{}}$.
+**(b)** $y_{\max} = 1.5 + \dfrac{5^2}{2 \times 9.8} = 1.5 + 1.276 = \boxed{2.78\,\mathrm{m}}$.
 
-**(c)** Total time: solve $1.5 + 5t - 4.9t^2 = 0 \implies t = \dfrac{5+\sqrt{25+29.4}}{9.8} = \dfrac{5+7.389}{9.8} \approx 1.263\,\mathrm{s{}$.
+**(c)** Total time: solve $1.5 + 5t - 4.9t^2 = 0 \implies t = \dfrac{5+\sqrt{25+29.4}}{9.8} = \dfrac{5+7.389}{9.8} \approx 1.263\,\mathrm{s}$.
 
-Range $= 10\cos 30° \times 1.263 = 8.66 \times 1.263 \approx \boxed{10.9\,\mathrm{m{}}$.
+Range $= 10\cos 30° \times 1.263 = 8.66 \times 1.263 \approx \boxed{10.9\,\mathrm{m}}$.
 
 </details>
 
@@ -979,7 +979,7 @@ $v = \sqrt{u^2 - 2gh}$. $\blacksquare$
 
 ### 14.1 Projectile with linear air resistance
 
-With air resistance proportional to velocity ($\mathbf{'\{'}F{'\}'}_{\text{drag{}} = -mk\mathbf{'\{'}v{'\}'}$):
+With air resistance proportional to velocity ($\mathbf{'\{'}F{'\}'}_{\text{drag}} = -mk\mathbf{'\{'}v{'\}'}$):
 
 Horizontal: $m\ddot{x} = -mk\dot{x} \implies \dot{x} = u\cos\theta\,e^{-kt}$.
 
@@ -1088,7 +1088,7 @@ With quadratic drag ($F = kv^2$), the equations of motion become coupled nonline
 
 Rockets and fireworks involve variable mass and thrust. The thrust equation is:
 
-$$m\frac{dv}{dt} = F_{\text{thrust{}} - mg - F_{\text{drag{}}$$
+$$m\frac{dv}{dt} = F_{\text{thrust}} - mg - F_{\text{drag}}$$
 
 where $m$ decreases as fuel is consumed.
 

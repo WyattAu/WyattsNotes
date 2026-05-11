@@ -184,7 +184,7 @@ Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
 
 Accuracy depends on minimising both systematic and random errors:
 
-$$\mathrm{Accuracy{} \propto \frac{1}{|\mathrm{systematic error{}| + \mathrm{random error{}}$$
+$$\mathrm{Accuracy} \propto \frac{1}{|\mathrm{systematic error}| + \mathrm{random error}}$$
 
 **Systematic errors** shift all readings by a constant amount. They cannot be reduced by averaging.
 Examples include:
@@ -200,7 +200,7 @@ include:
 - Reading the last digit of an analogue scale differently each time
 - Air currents affecting a pendulum swing
 
-$$\boxed{\mathrm{True value{} = \mathrm{measured value{} \pm \mathrm{uncertainty{}}$$
+$$\boxed{\mathrm{True value} = \mathrm{measured value} \pm \mathrm{uncertainty}}$$
 
 :::warning
 Common Pitfall Do not confuse these three terms. An experiment can be reliable
@@ -250,7 +250,7 @@ metre rule resolution.
 
 **Analysis:** Since $T = 2\pi\sqrt{L/g}$, plotting $T^2$ vs $L$ gives a straight line through the
 origin with gradient $4\pi^2/g$. Calculate $g$ from the gradient and compare with the accepted value
-$g = 9.81 \mathrm{ m s{}^{-2}$.
+$g = 9.81 \mathrm{ m s}^{-2}$.
 
 ### Choosing Measurement Ranges and Intervals
 
@@ -290,7 +290,7 @@ Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
 | Micrometer       | 0–25 mm                        | 0.001 mm          | Wire diameters              |
 | Digital balance  | 0–200 g                        | 0.01 g            | Mass                        |
 | Stopwatch        | 0–60 min                       | 0.01 s            | Time intervals              |
-| Thermometer      | $-10$ to $110^\circ\mathrm{C{}$ | 1°C or 0.1°C      | Temperature                 |
+| Thermometer      | $-10$ to $110^\circ\mathrm{C}$ | 1°C or 0.1°C      | Temperature                 |
 | Voltmeter        | 0–20 V                         | 0.01 V or 0.1 V   | Potential difference        |
 | Ammeter          | 0–10 A                         | 0.01 A or 0.1 A   | Current                     |
 | Signal generator | 1 Hz – 1 MHz                   | 1 Hz              | AC frequency                |
@@ -511,7 +511,7 @@ temperature.
 **Method:** Measure the diameter with a micrometer at several points and average. Set up the wire in
 a circuit with an ammeter in series and a voltmeter in parallel. Vary the length from 0.10 m to 1.00
 m in 0.10 m steps. Record $V$ and $I$ at each length, calculate $R = V/I$. Plot $R$ vs $L$. Gradient
-$= \rho/A$, so $\rho = \mathrm{gradient{} \times A$.
+$= \rho/A$, so $\rho = \mathrm{gradient} \times A$.
 
 **Improvements:** Use a low current to avoid heating. Ensure good contact at the crocodile clips.
 Measure diameter at multiple positions.

@@ -31,7 +31,7 @@ $$M_O = F \times d$$
 
 where $d$ is the **perpendicular distance** from the line of action of the force to the point $O$.
 
-The SI unit of moment is the newton-metre ($\mathrm{Nm{}$).
+The SI unit of moment is the newton-metre ($\mathrm{Nm}$).
 
 **Sign convention:** By convention, anticlockwise moments are positive and clockwise moments are
 negative.
@@ -49,21 +49,21 @@ $\blacksquare$
 
 ### 1.3 Worked example: beam on two supports
 
-**Problem.** A uniform beam $AB$ of mass $20\;\mathrm{kg{}$ and length $4\;\mathrm{m{}$ rests
-horizontally on supports at $A$ and at a point $C$, $1\;\mathrm{m{}$ from $B$. A load of $50\;\mathrm{N{}$
-is hung from the beam at a point $0.5\;\mathrm{m{}$ from $A$. Find the reactions at $A$ and $C$.
+**Problem.** A uniform beam $AB$ of mass $20\;\mathrm{kg}$ and length $4\;\mathrm{m}$ rests
+horizontally on supports at $A$ and at a point $C$, $1\;\mathrm{m}$ from $B$. A load of $50\;\mathrm{N}$
+is hung from the beam at a point $0.5\;\mathrm{m}$ from $A$. Find the reactions at $A$ and $C$.
 
 Taking moments about $A$ (anticlockwise positive):
 
-Weight of beam: $20g\;\mathrm{N{}$ acting at the midpoint, $2\;\mathrm{m{}$ from $A$.
+Weight of beam: $20g\;\mathrm{N}$ acting at the midpoint, $2\;\mathrm{m}$ from $A$.
 
 $$R_C \times 3 - 20g \times 2 - 50 \times 0.5 = 0$$
 
-$$R_C = \frac{40g + 25}{3} = \frac{392 + 25}{3} = \frac{417}{3} = 139\;\mathrm{N{}$$
+$$R_C = \frac{40g + 25}{3} = \frac{392 + 25}{3} = \frac{417}{3} = 139\;\mathrm{N}$$
 
 Resolving vertically: $R_A + R_C = 20g + 50$
 
-$$R_A = 20g + 50 - 139 = 196 + 50 - 139 = 107\;\mathrm{N{}$$
+$$R_A = 20g + 50 - 139 = 196 + 50 - 139 = 107\;\mathrm{N}$$
 
 :::warning
 Common Pitfall
@@ -83,7 +83,7 @@ A rigid body is in equilibrium if and only if:
    $$\sum \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$$
 
 2. **The resultant moment about any point is zero:**
-   $$\sum M_O = 0 \quad \mathrm{for\ any\ point{}\ O$$
+   $$\sum M_O = 0 \quad \mathrm{for\ any\ point}\ O$$
 
 **Theorem.** If the resultant force on a body is zero and the resultant moment about **one** point
 is zero, then the resultant moment about **every** point is zero.
@@ -107,15 +107,15 @@ This gives three equations, which can determine up to three unknowns.
 
 ### 2.3 Worked example: non-uniform beam
 
-**Problem.** A non-uniform beam $AB$ of length $6\;\mathrm{m{}$ and mass $30\;\mathrm{kg{}$ rests on
-supports at $A$ and $B$. When a load of $200\;\mathrm{N{}$ is placed at a point $2\;\mathrm{m{}$ from
-$A$, the reaction at $A$ is $350\;\mathrm{N{}$. Find the position of the centre of mass of the beam.
+**Problem.** A non-uniform beam $AB$ of length $6\;\mathrm{m}$ and mass $30\;\mathrm{kg}$ rests on
+supports at $A$ and $B$. When a load of $200\;\mathrm{N}$ is placed at a point $2\;\mathrm{m}$ from
+$A$, the reaction at $A$ is $350\;\mathrm{N}$. Find the position of the centre of mass of the beam.
 
 Let the centre of mass be at distance $x$ from $A$. Taking moments about $B$ (anticlockwise positive):
 
 The beam's weight $30g$ acts downward at distance $x$ from $A$, which is $(6 - x)$ from $B$.
-The $200\;\mathrm{N{}$ load acts at distance $4\;\mathrm{m{}$ from $B$.
-The reaction at $A$ ($350\;\mathrm{N{}$) acts at distance $6\;\mathrm{m{}$ from $B$.
+The $200\;\mathrm{N}$ load acts at distance $4\;\mathrm{m}$ from $B$.
+The reaction at $A$ ($350\;\mathrm{N}$) acts at distance $6\;\mathrm{m}$ from $B$.
 
 $$350 \times 6 + 200 \times 4 - 30g(6 - x) = 0$$
 
@@ -130,19 +130,19 @@ Wait -- this gives a negative result, which suggests an error in sign convention
 Taking moments about $B$ with anticlockwise positive: forces pushing the beam to rotate anticlockwise
 about $B$ contribute positively.
 
-$R_A = 350\;\mathrm{N{}$ acts upward at distance $6\;\mathrm{m{}$ from $B$: moment $= +350 \times 6 = 2100$.
+$R_A = 350\;\mathrm{N}$ acts upward at distance $6\;\mathrm{m}$ from $B$: moment $= +350 \times 6 = 2100$.
 
-$200\;\mathrm{N{}$ acts downward at distance $4\;\mathrm{m{}$ from $B$: moment $= -200 \times 4 = -800$.
+$200\;\mathrm{N}$ acts downward at distance $4\;\mathrm{m}$ from $B$: moment $= -200 \times 4 = -800$.
 
-$30g\;\mathrm{N{}$ acts downward at distance $(6-x)$ from $B$: moment $= -30g(6-x)$.
+$30g\;\mathrm{N}$ acts downward at distance $(6-x)$ from $B$: moment $= -30g(6-x)$.
 
 $$2100 - 800 - 30g(6-x) = 0$$
 
 $$1300 = 294(6-x) = 1764 - 294x$$
 
-$$294x = 464 \implies x = \frac{464}{294} \approx 1.58\;\mathrm{m{}$$
+$$294x = 464 \implies x = \frac{464}{294} \approx 1.58\;\mathrm{m}$$
 
-The centre of mass is approximately $1.58\;\mathrm{m{}$ from $A$.
+The centre of mass is approximately $1.58\;\mathrm{m}$ from $A$.
 
 <hr />
 
@@ -179,25 +179,25 @@ by treating each part as a particle at its own centre of mass.
 
 ### 3.4 Worked example: composite lamina
 
-**Problem.** A uniform lamina consists of a rectangle $ABCD$ with $AB = 8\;\mathrm{cm{}$,
-$BC = 6\;\mathrm{cm{}$, with a semicircle of diameter $8\;\mathrm{cm{}$ removed from the top edge
+**Problem.** A uniform lamina consists of a rectangle $ABCD$ with $AB = 8\;\mathrm{cm}$,
+$BC = 6\;\mathrm{cm}$, with a semicircle of diameter $8\;\mathrm{cm}$ removed from the top edge
 $AD$. Find the centre of mass of the remaining lamina.
 
-Rectangle: area $= 48\;\mathrm{cm{}^2$, centre at $(4, 3)$.
+Rectangle: area $= 48\;\mathrm{cm}^2$, centre at $(4, 3)$.
 
-Semicircle: radius $= 4\;\mathrm{cm{}$, area $= \dfrac{1}{2}\pi(16) = 8\pi\;\mathrm{cm{}^2$.
+Semicircle: radius $= 4\;\mathrm{cm}$, area $= \dfrac{1}{2}\pi(16) = 8\pi\;\mathrm{cm}^2$.
 Centre of mass of the semicircle is at distance $\dfrac{4r}{3\pi} = \dfrac{16}{3\pi}$ from the
 diameter, i.e. at $(4, 6 - \dfrac{16}{3\pi})$.
 
 Treating the removed semicircle as a negative mass:
 
-$$\bar{x} = \frac{48 \times 4 - 8\pi \times 4}{48 - 8\pi} = \frac{4(48 - 8\pi)}{48 - 8\pi} = 4\;\mathrm{cm{}$$
+$$\bar{x} = \frac{48 \times 4 - 8\pi \times 4}{48 - 8\pi} = \frac{4(48 - 8\pi)}{48 - 8\pi} = 4\;\mathrm{cm}$$
 
 This is expected by symmetry.
 
 $$\bar{y} = \frac{48 \times 3 - 8\pi\!\left(6 - \frac{16}{3\pi}\right)}{48 - 8\pi} = \frac{144 - 48\pi + \frac{128}{3}}{48 - 8\pi}$$
 
-$$\bar{y} = \frac{144 + 42.67 - 150.80}{48 - 25.13} = \frac{35.87}{22.87} \approx 1.57\;\mathrm{cm{}$$
+$$\bar{y} = \frac{144 + 42.67 - 150.80}{48 - 25.13} = \frac{35.87}{22.87} \approx 1.57\;\mathrm{cm}$$
 
 :::warning
 Common Pitfall
@@ -223,14 +223,14 @@ rough horizontal ground. The key forces are:
 
 ### 4.2 Worked example: ladder on rough ground and smooth wall
 
-**Problem.** A uniform ladder of length $5\;\mathrm{m{}$ and mass $20\;\mathrm{kg{}$ rests with its
+**Problem.** A uniform ladder of length $5\;\mathrm{m}$ and mass $20\;\mathrm{kg}$ rests with its
 foot on rough horizontal ground and its top against a smooth vertical wall. The ladder makes an
 angle of $65^\circ$ with the horizontal. The coefficient of friction between the ladder and the
 ground is $0.4$. Will the ladder slip?
 
 Resolving horizontally: $F_g = R_w$.
 
-Resolving vertically: $R_g = 20g = 196\;\mathrm{N{}$.
+Resolving vertically: $R_g = 20g = 196\;\mathrm{N}$.
 
 Taking moments about the foot of the ladder (anticlockwise positive):
 
@@ -238,11 +238,11 @@ $$R_w \times 5\sin 65^\circ - 20g \times 2.5\cos 65^\circ = 0$$
 
 $$R_w = \frac{20g \times 2.5\cos 65^\circ}{5\sin 65^\circ} = \frac{49\cos 65^\circ}{\sin 65^\circ} = 49\cot 65^\circ$$
 
-$$R_w = 49 \times 0.4663 = 22.85\;\mathrm{N{}$$
+$$R_w = 49 \times 0.4663 = 22.85\;\mathrm{N}$$
 
-$$F_g = R_w = 22.85\;\mathrm{N{}$$
+$$F_g = R_w = 22.85\;\mathrm{N}$$
 
-Maximum available friction: $F_{\max} = \mu R_g = 0.4 \times 196 = 78.4\;\mathrm{N{}$.
+Maximum available friction: $F_{\max} = \mu R_g = 0.4 \times 196 = 78.4\;\mathrm{N}$.
 
 Since $F_g = 22.85 \lt 78.4 = F_{\max}$, the ladder does **not** slip.
 
@@ -252,7 +252,7 @@ Since $F_g = 22.85 \lt 78.4 = F_{\max}$, the ladder does **not** slip.
 
 At the limiting position, $F_g = \mu R_g$:
 
-$$R_w = F_g = \mu R_g = 0.4 \times 196 = 78.4\;\mathrm{N{}$$
+$$R_w = F_g = \mu R_g = 0.4 \times 196 = 78.4\;\mathrm{N}$$
 
 Taking moments about the foot:
 
@@ -293,25 +293,25 @@ A **framework** (or truss) is a structure made of light rods joined at points ca
 ### 5.2 Worked example: simple truss
 
 **Problem.** A framework consists of six light rods forming a equilateral triangle $ABC$ (side
-$2\;\mathrm{m{}$) with midpoints $D$, $E$, $F$ on $AB$, $BC$, $CA$ respectively, connected to the
-opposite vertices. A vertical load of $100\;\mathrm{N{}$ acts at $A$. The framework is supported at
+$2\;\mathrm{m}$) with midpoints $D$, $E$, $F$ on $AB$, $BC$, $CA$ respectively, connected to the
+opposite vertices. A vertical load of $100\;\mathrm{N}$ acts at $A$. The framework is supported at
 $B$ and $C$ on smooth horizontal surfaces. Find the forces in all rods.
 
 By symmetry, the vertical reactions at $B$ and $C$ are equal:
 
-$$R_B = R_C = 50\;\mathrm{N{}$$
+$$R_B = R_C = 50\;\mathrm{N}$$
 
 **Joint $A$:** Vertical equilibrium: $T_{AD}\sin 60^\circ + T_{AE}\sin 60^\circ = 100$.
 
 By symmetry, $T_{AD} = T_{AE}$:
 
-$$2T_{AD}\sin 60^\circ = 100 \implies T_{AD} = \frac{100}{2\sin 60^\circ} = \frac{100}{\sqrt{3}} \approx 57.7\;\mathrm{N{}$$
+$$2T_{AD}\sin 60^\circ = 100 \implies T_{AD} = \frac{100}{2\sin 60^\circ} = \frac{100}{\sqrt{3}} \approx 57.7\;\mathrm{N}$$
 
 Both $AD$ and $AE$ are in **tension** (pulling away from $A$).
 
-**Joint $B$:** Horizontal: $T_{BD} = R_B\cot 60^\circ = 50/\sqrt{3} \approx 28.9\;\mathrm{N{}$ (tension).
+**Joint $B$:** Horizontal: $T_{BD} = R_B\cot 60^\circ = 50/\sqrt{3} \approx 28.9\;\mathrm{N}$ (tension).
 
-Vertical: $T_{BF} = R_B = 50\;\mathrm{N{}$ (compression, pushing into $B$).
+Vertical: $T_{BF} = R_B = 50\;\mathrm{N}$ (compression, pushing into $B$).
 
 This analysis continues joint by joint until all rod forces are determined.
 
@@ -326,7 +326,7 @@ through the framework, and equilibrium of one of the resulting sections is analy
 
 ### Problem 1
 
-A uniform beam $AB$ of length $5\;\mathrm{m{}$ and weight $200\;\mathrm{N{}$ is hinged at $A$ and
+A uniform beam $AB$ of length $5\;\mathrm{m}$ and weight $200\;\mathrm{N}$ is hinged at $A$ and
 supported by a wire attached at $B$, making an angle of $30^\circ$ with the beam. Find the tension
 in the wire and the reaction at the hinge.
 
@@ -337,18 +337,18 @@ Taking moments about $A$:
 
 $$T \times 5\sin 30^\circ - 200 \times 2.5 = 0$$
 
-$$T = \frac{500}{2.5} = 200\;\mathrm{N{}$$
+$$T = \frac{500}{2.5} = 200\;\mathrm{N}$$
 
-Resolving at $A$: horizontal reaction $H = T\cos 30^\circ = 200\cos 30^\circ = 173.2\;\mathrm{N{}$.
+Resolving at $A$: horizontal reaction $H = T\cos 30^\circ = 200\cos 30^\circ = 173.2\;\mathrm{N}$.
 
-Vertical reaction $V = 200 - T\sin 30^\circ = 200 - 100 = 100\;\mathrm{N{}$.
+Vertical reaction $V = 200 - T\sin 30^\circ = 200 - 100 = 100\;\mathrm{N}$.
 
 </details>
 
 ### Problem 2
 
-A uniform lamina is formed from a square of side $10\;\mathrm{cm{}$ with a right-angled triangle of
-base $10\;\mathrm{cm{}$ and height $6\;\mathrm{cm{}$ attached to one side. Find the centre of mass of
+A uniform lamina is formed from a square of side $10\;\mathrm{cm}$ with a right-angled triangle of
+base $10\;\mathrm{cm}$ and height $6\;\mathrm{cm}$ attached to one side. Find the centre of mass of
 the composite lamina.
 
 <details>
@@ -357,24 +357,24 @@ the composite lamina.
 Square: area $= 100$, centre at $(5, 5)$.
 Triangle: area $= 30$, centre at $\left(\dfrac{10}{3}, 3\right)$ (one-third from the base).
 
-$$\bar{x} = \frac{100 \times 5 + 30 \times \frac{10}{3}}{130} = \frac{500 + 100}{130} = \frac{600}{130} \approx 4.62\;\mathrm{cm{}$$
+$$\bar{x} = \frac{100 \times 5 + 30 \times \frac{10}{3}}{130} = \frac{500 + 100}{130} = \frac{600}{130} \approx 4.62\;\mathrm{cm}$$
 
-$$\bar{y} = \frac{100 \times 5 + 30 \times 3}{130} = \frac{500 + 90}{130} = \frac{590}{130} \approx 4.54\;\mathrm{cm{}$$
+$$\bar{y} = \frac{100 \times 5 + 30 \times 3}{130} = \frac{500 + 90}{130} = \frac{590}{130} \approx 4.54\;\mathrm{cm}$$
 
 </details>
 
 ### Problem 3
 
-A uniform ladder of length $8\;\mathrm{m{}$ and mass $25\;\mathrm{kg{}$ rests against a rough vertical
+A uniform ladder of length $8\;\mathrm{m}$ and mass $25\;\mathrm{kg}$ rests against a rough vertical
 wall (coefficient of friction $0.3$) on rough horizontal ground (coefficient of friction $0.4$).
-The ladder makes an angle of $55^\circ$ with the horizontal. A man of mass $75\;\mathrm{kg{}$ stands
-on the ladder at a point $5\;\mathrm{m{}$ from the foot. Determine whether the ladder is in
+The ladder makes an angle of $55^\circ$ with the horizontal. A man of mass $75\;\mathrm{kg}$ stands
+on the ladder at a point $5\;\mathrm{m}$ from the foot. Determine whether the ladder is in
 equilibrium.
 
 <details>
 <summary>Solution</summary>
 
-Resolving vertically: $R_g = (25 + 75)g = 980\;\mathrm{N{}$.
+Resolving vertically: $R_g = (25 + 75)g = 980\;\mathrm{N}$.
 
 Resolving horizontally: $F_g = R_w$.
 
@@ -384,14 +384,14 @@ $R_w \times 8\sin 55^\circ - 25g \times 4\cos 55^\circ - 75g \times 5\cos 55^\ci
 
 $R_w = \frac{g(100 + 375)\cos 55^\circ}{8\sin 55^\circ} = \frac{475g\cot 55^\circ}{8} = \frac{475 \times 9.8 \times 0.7002}{8}$
 
-$R_w \approx 407.5\;\mathrm{N{}$
+$R_w \approx 407.5\;\mathrm{N}$
 
-So $F_g = 407.5\;\mathrm{N{}$. Available friction at ground: $0.4 \times 980 = 392\;\mathrm{N{}$.
+So $F_g = 407.5\;\mathrm{N}$. Available friction at ground: $0.4 \times 980 = 392\;\mathrm{N}$.
 
-Available friction at wall: $F_w \leq 0.3 R_w = 0.3 \times 407.5 = 122.3\;\mathrm{N{}$.
+Available friction at wall: $F_w \leq 0.3 R_w = 0.3 \times 407.5 = 122.3\;\mathrm{N}$.
 
 For vertical equilibrium at the wall: $F_w + 25g + 75g = R_g$, which gives $F_w = 0$ by our
-equation. But we should check: resolving vertically for the whole system gives $R_g = 980\;\mathrm{N{}$
+equation. But we should check: resolving vertically for the whole system gives $R_g = 980\;\mathrm{N}$
 and the wall friction $F_w$ acts upward.
 
 Taking moments about the foot again with $F_w$ included:
@@ -405,15 +405,15 @@ This gives $F_w = 0$ by the vertical resolution. Since $F_g = 407.5 \gt 392$, th
 
 ### Problem 4
 
-A uniform rod $AB$ of length $3\;\mathrm{m{}$ and weight $80\;\mathrm{N{}$ is freely hinged at $A$ to
+A uniform rod $AB$ of length $3\;\mathrm{m}$ and weight $80\;\mathrm{N}$ is freely hinged at $A$ to
 a vertical wall. The rod is held horizontal by a string attached to $B$ and to a point $C$ on the
-wall $2\;\mathrm{m{}$ above $A$. A load of $120\;\mathrm{N{}$ is hung from $B$. Find the tension in
+wall $2\;\mathrm{m}$ above $A$. A load of $120\;\mathrm{N}$ is hung from $B$. Find the tension in
 the string.
 
 <details>
 <summary>Solution</summary>
 
-The string $BC$ has length $\sqrt{9 + 4} = \sqrt{13}\;\mathrm{m{}$.
+The string $BC$ has length $\sqrt{9 + 4} = \sqrt{13}\;\mathrm{m}$.
 
 $\sin\theta = \dfrac{2}{\sqrt{13}}$ where $\theta$ is the angle between the string and the rod.
 
@@ -421,6 +421,6 @@ Taking moments about $A$:
 
 $T \times 3 \times \dfrac{2}{\sqrt{13}} - 80 \times 1.5 - 120 \times 3 = 0$
 
-$T = \frac{120 + 360}{6/\sqrt{13}} = \frac{480\sqrt{13}}{6} = 80\sqrt{13} \approx 288.4\;\mathrm{N{}$
+$T = \frac{120 + 360}{6/\sqrt{13}} = \frac{480\sqrt{13}}{6} = 80\sqrt{13} \approx 288.4\;\mathrm{N}$
 
 </details>

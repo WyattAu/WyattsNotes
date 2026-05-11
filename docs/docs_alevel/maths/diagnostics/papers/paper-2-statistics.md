@@ -71,7 +71,7 @@ A person is randomly selected from the population and tests positive.
 
 **(c)** The hospital director wants the positive predictive value to be at least 50%. Find the minimum prevalence of the disease required to achieve this, keeping the test characteristics the same. [3 marks]
 
-**(d)** Explain why $\mathrm{P{}(\text{disease{} \mid \text{positive{}) \neq \mathrm{P{}(\text{positive{} \mid \text{disease{})$ in general, and state the condition under which they would be equal. [2 marks]
+**(d)** Explain why $\mathrm{P}(\text{disease} \mid \text{positive}) \neq \mathrm{P}(\text{positive} \mid \text{disease})$ in general, and state the condition under which they would be equal. [2 marks]
 
 ### Q4 [10 marks] — Statistical Distributions
 
@@ -111,7 +111,7 @@ The researcher tests the drug on 25 patients and finds the mean reduction in blo
 
 The correct quantity for the vertical axis is the **frequency density**, defined as:
 
-$$\text{Frequency density{} = \frac{\text{Frequency{}}{\text{Class width{}}$$
+$$\text{Frequency density} = \frac{\text{Frequency}}{\text{Class width}}$$
 
 **(b)** Frequency densities:
 
@@ -135,7 +135,7 @@ To estimate the mean, we use the midpoint of each class:
 
 $$\sum f = 200, \quad \sum fx = 7432.5$$
 
-$$\bar{x} = \frac{7432.5}{200} = 37.2 \text{ minutes{}$$
+$$\bar{x} = \frac{7432.5}{200} = 37.2 \text{ minutes}$$
 
 **(c)** The class $35 \lt t \leq 60$ has the highest **frequency** (65), so more employees fall in this class than any other. However, the class with the highest **frequency density** is $10 \lt t \leq 20$ (density 3.8), meaning the data is most concentrated (per unit time interval) in the 10--20 minute range.
 
@@ -165,7 +165,7 @@ $$S_{xy} = 7324 - \frac{267 \times 146}{7} = 7324 - \frac{38982}{7} = 7324 - 556
 
 $$r = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}} = \frac{1755.143}{\sqrt{2062.857 \times 1508.857}}$$
 
-$$= \frac{1755.143}{\sqrt{3111755.1}} = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.){}$$
+$$= \frac{1755.143}{\sqrt{3111755.1}} = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.)}$$
 
 **(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and $v = \frac{1}{100}y$, which are linear transformations.
 
@@ -211,33 +211,33 @@ Spearman's rank would be preferred when:
 
 **(a)** Let $D$ = "person has the disease" and $+$ = "test is positive".
 
-We need $\mathrm{P{}(D \mid +)$.
+We need $\mathrm{P}(D \mid +)$.
 
 By Bayes' theorem (or using a tree diagram / contingency table):
 
-$$\mathrm{P{}(D \mid +) = \frac{\mathrm{P{}(+ \mid D) \cdot \mathrm{P{}(D)}{\mathrm{P{}(+)}$$
+$$\mathrm{P}(D \mid +) = \frac{\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)}{\mathrm{P}(+)}$$
 
-$$\mathrm{P{}(+) = \mathrm{P{}(+ \mid D)\mathrm{P{}(D) + \mathrm{P{}(+ \mid D')\mathrm{P{}(D')$$
+$$\mathrm{P}(+) = \mathrm{P}(+ \mid D)\mathrm{P}(D) + \mathrm{P}(+ \mid D')\mathrm{P}(D')$$
 
 $$= (0.95)(0.01) + (0.02)(0.99) = 0.0095 + 0.0198 = 0.0293$$
 
-$$\mathrm{P{}(D \mid +) = \frac{0.0095}{0.0293} = 0.3242... \approx 0.324$$
+$$\mathrm{P}(D \mid +) = \frac{0.0095}{0.0293} = 0.3242... \approx 0.324$$
 
 So there is approximately a 32.4% chance the person actually has the disease, despite the positive test.
 
 **(b)** The prosecutor has confused:
-- $\mathrm{P{}(+ \mid D) = 0.95$ (probability of a positive test given the person has the disease)
-- $\mathrm{P{}(D \mid +) \approx 0.324$ (probability the person has the disease given a positive test)
+- $\mathrm{P}(+ \mid D) = 0.95$ (probability of a positive test given the person has the disease)
+- $\mathrm{P}(D \mid +) \approx 0.324$ (probability the person has the disease given a positive test)
 
 This is the **prosecutor's fallacy** (also known as the base rate fallacy or confusion of the inverse). The prosecutor has transposed the conditioning, ignoring the base rate (prevalence) of the disease. When the disease is rare (1% prevalence), most positive tests are actually false positives, even with a "95% accurate" test.
 
-**(c)** We need $\mathrm{P{}(D \mid +) \geq 0.5$.
+**(c)** We need $\mathrm{P}(D \mid +) \geq 0.5$.
 
-Let $p = \mathrm{P{}(D)$ be the prevalence. Then:
+Let $p = \mathrm{P}(D)$ be the prevalence. Then:
 
-$$\mathrm{P{}(+) = 0.95p + 0.02(1 - p) = 0.95p + 0.02 - 0.02p = 0.93p + 0.02$$
+$$\mathrm{P}(+) = 0.95p + 0.02(1 - p) = 0.95p + 0.02 - 0.02p = 0.93p + 0.02$$
 
-$$\mathrm{P{}(D \mid +) = \frac{0.95p}{0.93p + 0.02} \geq 0.5$$
+$$\mathrm{P}(D \mid +) = \frac{0.95p}{0.93p + 0.02} \geq 0.5$$
 
 $$0.95p \geq 0.5(0.93p + 0.02) = 0.465p + 0.01$$
 
@@ -249,11 +249,11 @@ $$p \geq \frac{0.01}{0.485} = 0.02062...$$
 
 The minimum prevalence is approximately 2.06%. At this prevalence, exactly half of all positive tests are true positives.
 
-**(d)** $\mathrm{P{}(D \mid +) \neq \mathrm{P{}(+ \mid D)$ in general because they condition on different events. $\mathrm{P{}(+ \mid D)$ is the sensitivity of the test (among people with the disease, what fraction test positive), while $\mathrm{P{}(D \mid +)$ is the positive predictive value (among people who test positive, what fraction actually have the disease). These are related by Bayes' theorem:
+**(d)** $\mathrm{P}(D \mid +) \neq \mathrm{P}(+ \mid D)$ in general because they condition on different events. $\mathrm{P}(+ \mid D)$ is the sensitivity of the test (among people with the disease, what fraction test positive), while $\mathrm{P}(D \mid +)$ is the positive predictive value (among people who test positive, what fraction actually have the disease). These are related by Bayes' theorem:
 
-$$\mathrm{P{}(D \mid +) = \frac{\mathrm{P{}(+ \mid D) \cdot \mathrm{P{}(D)}{\mathrm{P{}(+)}$$
+$$\mathrm{P}(D \mid +) = \frac{\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)}{\mathrm{P}(+)}$$
 
-They would be equal only when $\mathrm{P{}(D) = \mathrm{P{}(+)$, i.e., when the prevalence equals the overall probability of a positive test. This is a very specific condition that would not generally hold.
+They would be equal only when $\mathrm{P}(D) = \mathrm{P}(+)$, i.e., when the prevalence equals the overall probability of a positive test. This is a very specific condition that would not generally hold.
 
 ---
 
@@ -273,7 +273,7 @@ So $Y \sim B(50, 0.02)$.
 
 **(c)** The binomial distribution is **NOT** appropriate. The condition violated is **fixed number of trials**: the number of tosses is not fixed in advance; it depends on when the third head occurs.
 
-The correct distribution is the **negative binomial distribution** (or Pascal distribution). If we define $Z$ as the number of trials until the $r$-th success, then $Z \sim \text{NegBin{}(r = 3, p = 0.5)$.
+The correct distribution is the **negative binomial distribution** (or Pascal distribution). If we define $Z$ as the number of trials until the $r$-th success, then $Z \sim \text{NegBin}(r = 3, p = 0.5)$.
 
 **(d)** The binomial distribution **IS** appropriate.
 - Fixed number of trials: $n = 50$ (the first 50 rolls).
@@ -285,7 +285,7 @@ So $W \sim B(50, 0.3)$.
 
 The fact that there are 100 total rolls is irrelevant --- we are only considering the first 50.
 
-**(e)** The binomial distribution is **NOT** appropriate. The condition violated is **constant probability of success**: for the first 5 questions, $\mathrm{P{}(\text{correct{}) = 1$, but for the last 5 questions, $\mathrm{P{}(\text{correct{}) = \frac{1}{4}$. The probability of success changes partway through.
+**(e)** The binomial distribution is **NOT** appropriate. The condition violated is **constant probability of success**: for the first 5 questions, $\mathrm{P}(\text{correct}) = 1$, but for the last 5 questions, $\mathrm{P}(\text{correct}) = \frac{1}{4}$. The probability of success changes partway through.
 
 The correct approach is to split $V = V_1 + V_2$ where $V_1 \sim B(5, 1)$ (deterministic: always 5) and $V_2 \sim B(5, 0.25)$. Then $V = 5 + V_2$ and $V_2 \sim B(5, 0.25)$.
 
@@ -299,7 +299,7 @@ $$z = \frac{\bar{x} - 0}{3} = \frac{-5.2}{3} = -1.733$$
 
 This is a one-tailed test (left-tailed), so the p-value is:
 
-$$\text{p-value{} = \mathrm{P{}(Z \leq -1.733) = \Phi(-1.733) = 1 - \Phi(1.733) = 1 - 0.9586 = 0.0414$$
+$$\text{p-value} = \mathrm{P}(Z \leq -1.733) = \Phi(-1.733) = 1 - \Phi(1.733) = 1 - 0.9586 = 0.0414$$
 
 The p-value is approximately 0.0414.
 
@@ -317,17 +317,17 @@ Since $0.0414 \lt 0.05$, the result is statistically significant at the 5% level
 
 > The probability of obtaining a test statistic at least as extreme as the one observed, **assuming $H_0$ is true**.
 
-The p-value is a conditional probability: $\mathrm{P{}(\text{data{} \mid H_0)$, not $\mathrm{P{}(H_0 \mid \text{data{})$.
+The p-value is a conditional probability: $\mathrm{P}(\text{data} \mid H_0)$, not $\mathrm{P}(H_0 \mid \text{data})$.
 
 A large p-value means the observed data is consistent with $H_0$, but it does not mean $H_0$ is probably true. The data could also be consistent with a small but non-zero effect. For example, if the true effect is a reduction of 2 mmHg (which is clinically meaningful), a small sample might still produce a large p-value.
 
-To determine $\mathrm{P{}(H_0 \mid \text{data{})$ would require Bayesian methods (prior probabilities), which go beyond the scope of classical hypothesis testing.
+To determine $\mathrm{P}(H_0 \mid \text{data})$ would require Bayesian methods (prior probabilities), which go beyond the scope of classical hypothesis testing.
 
 **(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$, so $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
 
 $$z = \frac{-5.2}{\sqrt{4.5}} = \frac{-5.2}{2.121} = -2.451$$
 
-$$\text{p-value{} = \mathrm{P{}(Z \leq -2.451) = 1 - \Phi(2.451) = 1 - 0.9929 = 0.0071$$
+$$\text{p-value} = \mathrm{P}(Z \leq -2.451) = 1 - \Phi(2.451) = 1 - 0.9929 = 0.0071$$
 
 The new p-value is approximately 0.0071, which is much smaller than the original 0.0414.
 

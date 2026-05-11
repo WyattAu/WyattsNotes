@@ -32,7 +32,7 @@ line joining them.
 The net force on a charge due to multiple other charges is the **vector sum** of the individual
 Coulomb forces:
 
-$$\mathbf{'\{'}F{'\}'}_{\mathrm{net{}} = \sum_i \frac{q\,q_i}{4\pi\varepsilon_0 r_i^2}\,\hat{\mathbf{'\{'}r{'\}'}}_i$$
+$$\mathbf{'\{'}F{'\}'}_{\mathrm{net}} = \sum_i \frac{q\,q_i}{4\pi\varepsilon_0 r_i^2}\,\hat{\mathbf{'\{'}r{'\}'}}_i$$
 
 This linearity is fundamental: each pair of charges interacts independently of all others.
 
@@ -215,8 +215,8 @@ $\tan\theta = v_y/v = 1.47 \times 10^6 / (3.0 \times 10^7) = 0.0489$. $\theta = 
 A CRT uses electric fields to control and deflect a beam of electrons:
 
 1. **Electron gun:** A heated cathode emits electrons by thermionic emission. A high potential
-   difference $V_{\mathrm{acc{}}$ accelerates them through a potential difference, giving kinetic energy
-   $\frac{1}{2}m_e v^2 = eV_{\mathrm{acc{}}$.
+   difference $V_{\mathrm{acc}}$ accelerates them through a potential difference, giving kinetic energy
+   $\frac{1}{2}m_e v^2 = eV_{\mathrm{acc}}$.
 2. **Deflection system:** Two pairs of parallel plates (X and Y) apply transverse electric fields,
    deflecting the beam horizontally and vertically.
 3. **Fluorescent screen:** Electrons strike a phosphor coating, producing visible light.
@@ -225,25 +225,25 @@ A CRT uses electric fields to control and deflect a beam of electrons:
 
 From energy conservation:
 
-$$\frac{1}{2}m_e v^2 = eV_{\mathrm{acc{}}$$
+$$\frac{1}{2}m_e v^2 = eV_{\mathrm{acc}}$$
 
-$$\boxed{v = \sqrt{\frac{2eV_{\mathrm{acc{}}}{m_e}}}$$
+$$\boxed{v = \sqrt{\frac{2eV_{\mathrm{acc}}}{m_e}}}$$
 
-For $V_{\mathrm{acc{}} = 2000$ V: $v = \sqrt{2 \times 1.60 \times 10^{-19} \times 2000 / 9.11 \times 10^{-31}} = 2.65 \times 10^7$ m s$^{-1}$.
+For $V_{\mathrm{acc}} = 2000$ V: $v = \sqrt{2 \times 1.60 \times 10^{-19} \times 2000 / 9.11 \times 10^{-31}} = 2.65 \times 10^7$ m s$^{-1}$.
 
 ### Sensitivity of a CRT
 
 The deflection sensitivity $S$ is the deflection per unit deflection voltage:
 
-$$S = \frac{y}{V_d} = \frac{eL^2}{2m_e v^2 d} = \frac{L^2}{4V_{\mathrm{acc{}}\,d}$$
+$$S = \frac{y}{V_d} = \frac{eL^2}{2m_e v^2 d} = \frac{L^2}{4V_{\mathrm{acc}}\,d}$$
 
 where $L$ is the plate length and $d$ is the plate separation. Higher sensitivity requires longer
 plates, closer spacing, and lower acceleration voltage.
 
 :::warning
-Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc{}}$
+Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc}}$
 (which determines beam speed) with the deflection voltage $V_d$ (which determines deflection). The
-deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc{}}$.
+deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$.
 :::
 
 ## 7. Electric Fields of Extended Charge Distributions

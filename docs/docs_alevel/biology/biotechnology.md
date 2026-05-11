@@ -43,10 +43,10 @@ Staggered cuts produce **sticky ends** (single-stranded overhangs) that are comp
 
 | Vector Type        | Capacity       | Advantages                                      | Disadvantages                  |
 | ----------------- | -------------- | ----------------------------------------------- | ------------------------------ |
-| Plasmid           | $< 10\ \mathrm{kb{}$ | Easy to manipulate; high copy number       | Limited capacity              |
-| Bacteriophage ($\lambda$) | $< 25\ \mathrm{kb{}$ | Efficient delivery to E. coli              | More complex handling         |
-| BAC (bacterial artificial chromosome) | $100$--$300\ \mathrm{kb{}$ | Large inserts                        | Low copy number               |
-| YAC (yeast artificial chromosome) | $100$--$2000\ \mathrm{kb{}$ | Very large inserts; eukaryotic processing | Unstable; low yield           |
+| Plasmid           | $< 10\ \mathrm{kb}$ | Easy to manipulate; high copy number       | Limited capacity              |
+| Bacteriophage ($\lambda$) | $< 25\ \mathrm{kb}$ | Efficient delivery to E. coli              | More complex handling         |
+| BAC (bacterial artificial chromosome) | $100$--$300\ \mathrm{kb}$ | Large inserts                        | Low copy number               |
+| YAC (yeast artificial chromosome) | $100$--$2000\ \mathrm{kb}$ | Very large inserts; eukaryotic processing | Unstable; low yield           |
 
 ### 1.3 Procedure for Producing Recombinant DNA
 
@@ -54,7 +54,7 @@ Staggered cuts produce **sticky ends** (single-stranded overhangs) that are comp
 2. **Vector preparation**: the same restriction enzyme cuts the plasmid vector at a specific site (e.g., within a gene for antibiotic resistance or a reporter gene like lacZ).
 3. **Ligation**: the target gene and the cut plasmid are mixed with DNA ligase. The complementary sticky ends anneal by base pairing, and DNA ligase seals the nicks, producing a recombinant plasmid.
 4. **Transformation**: the recombinant plasmid is introduced into host bacterial cells by:
-   - **Heat shock**: cells are chilled ($4\ ^\circ\mathrm{C{}$), mixed with plasmid DNA, briefly heated ($42\ ^\circ\mathrm{C{}$, 90 seconds), and placed on ice. The temperature change makes the membrane permeable to DNA.
+   - **Heat shock**: cells are chilled ($4\ ^\circ\mathrm{C}$), mixed with plasmid DNA, briefly heated ($42\ ^\circ\mathrm{C}$, 90 seconds), and placed on ice. The temperature change makes the membrane permeable to DNA.
    - **Electroporation**: an electric field creates temporary pores in the membrane.
 5. **Selection**: cells are grown on agar plates containing an antibiotic. Only cells that have taken up the plasmid (with the antibiotic resistance gene) survive.
 6. **Identification**: further screening identifies cells with the recombinant plasmid (containing the target gene inserted into the lacZ gene, disrupting it). White colonies (non-functional lacZ) indicate successful insertion; blue colonies (functional lacZ) indicate the plasmid without insertion.
@@ -82,7 +82,7 @@ PCR amplifies a specific DNA sequence in vitro. For details of the basic mechani
 
 **The $C_t$ value** (threshold cycle) is the PCR cycle at which the fluorescence exceeds a defined threshold. It is inversely proportional to the logarithm of the initial template quantity:
 
-$$C_t \propto -\log(\text{initial template amount{})$$
+$$C_t \propto -\log(\text{initial template amount})$$
 
 A lower $C_t$ value indicates more initial template.
 
@@ -129,7 +129,7 @@ Developed by Frederick Sanger (1977). For details, see [Genetics and DNA](/docs/
 NGS methods enable massively parallel sequencing of millions of DNA fragments simultaneously:
 
 - **Illumina sequencing**: DNA fragments are attached to a flow cell and amplified by bridge PCR to form clusters. Sequencing-by-synthesis uses fluorescently labelled reversible terminators; each cycle adds one nucleotide and captures an image.
-- **Pyrosequencing (454)**: detects the release of pyrophosphate ($\mathrm{PP_i{}$) when a nucleotide is incorporated, which is converted to light by a cascade of enzymatic reactions.
+- **Pyrosequencing (454)**: detects the release of pyrophosphate ($\mathrm{PP_i}$) when a nucleotide is incorporated, which is converted to light by a cascade of enzymatic reactions.
 
 NGS has dramatically reduced the cost and time required for genome sequencing (the Human Genome Project took 13 years and cost $2.7 billion; today a human genome can be sequenced in hours for under $1000).
 
@@ -260,16 +260,16 @@ Dysbiosis (imbalance of the microbiome) is associated with:
 
 **Worked Example 1: PCR product yield.** A PCR reaction starts with 3 copies of a target sequence. After 32 cycles, how many copies are produced?
 
-$$N = 3 \times 2^{32} = 3 \times 4294967296 = 1.29 \times 10^{10}\ \text{copies{}$$
+$$N = 3 \times 2^{32} = 3 \times 4294967296 = 1.29 \times 10^{10}\ \text{copies}$$
 
-**Worked Example 2: Restriction fragment analysis.** A plasmid of $5000\ \mathrm{bp{}$ is cut with EcoRI at position $1000\ \mathrm{bp{}$ and with BamHI at position $3500\ \mathrm{bp{}$. How many fragments are produced and what are their sizes?
+**Worked Example 2: Restriction fragment analysis.** A plasmid of $5000\ \mathrm{bp}$ is cut with EcoRI at position $1000\ \mathrm{bp}$ and with BamHI at position $3500\ \mathrm{bp}$. How many fragments are produced and what are their sizes?
 
-EcoRI cuts at $1000\ \mathrm{bp{}$, producing fragments of $1000\ \mathrm{bp{}$ and $4000\ \mathrm{bp{}$.
-BamHI cuts the $4000\ \mathrm{bp{}$ fragment at position $3500\ \mathrm{bp{}$, producing fragments of $2500\ \mathrm{bp{}$ ($3500 - 1000$) and $1500\ \mathrm{bp{}$ ($5000 - 3500$).
+EcoRI cuts at $1000\ \mathrm{bp}$, producing fragments of $1000\ \mathrm{bp}$ and $4000\ \mathrm{bp}$.
+BamHI cuts the $4000\ \mathrm{bp}$ fragment at position $3500\ \mathrm{bp}$, producing fragments of $2500\ \mathrm{bp}$ ($3500 - 1000$) and $1500\ \mathrm{bp}$ ($5000 - 3500$).
 
-Final fragments: $1000\ \mathrm{bp{}$, $2500\ \mathrm{bp{}$, and $1500\ \mathrm{bp{}$ (three fragments).
+Final fragments: $1000\ \mathrm{bp}$, $2500\ \mathrm{bp}$, and $1500\ \mathrm{bp}$ (three fragments).
 
-**Worked Example 3: Calculating DNA concentration from absorbance.** A DNA solution has an absorbance of 0.40 at $260\ \mathrm{nm{}$. The relationship between absorbance and double-stranded DNA concentration is: $A_{260} = 1.0$ for $50\ \mu\mathrm{g\ mL^{-1}}$ dsDNA.
+**Worked Example 3: Calculating DNA concentration from absorbance.** A DNA solution has an absorbance of 0.40 at $260\ \mathrm{nm}$. The relationship between absorbance and double-stranded DNA concentration is: $A_{260} = 1.0$ for $50\ \mu\mathrm{g\ mL^{-1}}$ dsDNA.
 
 Concentration $= \frac{0.40}{1.0} \times 50 = 20\ \mu\mathrm{g\ mL^{-1}}$.
 
@@ -311,15 +311,15 @@ Compare and contrast somatic gene therapy and germ line gene therapy. Discuss th
 
 <details>
 <summary>Problem 4</summary>
-A plasmid has a total length of $4500\ \mathrm{bp{}$. It is cut with two restriction enzymes: EcoRI cuts at position $900\ \mathrm{bp{}$, and HindIII cuts at position $2700\ \mathrm{bp{}$. (a) How many fragments are produced? (b) What are their sizes? (c) If the fragments are separated by gel electrophoresis, which fragment will travel furthest from the wells?
+A plasmid has a total length of $4500\ \mathrm{bp}$. It is cut with two restriction enzymes: EcoRI cuts at position $900\ \mathrm{bp}$, and HindIII cuts at position $2700\ \mathrm{bp}$. (a) How many fragments are produced? (b) What are their sizes? (c) If the fragments are separated by gel electrophoresis, which fragment will travel furthest from the wells?
 
 **Answer.** (a) Two cuts produce three fragments.
 
-(b) Fragment 1: from position 0 to 900 = $900\ \mathrm{bp{}$ (circular plasmid) or from the start of the linearised plasmid to the first cut. Fragment 2: from position 900 to 2700 = $1800\ \mathrm{bp{}$. Fragment 3: from position 2700 to 4500 = $1800\ \mathrm{bp{}$.
+(b) Fragment 1: from position 0 to 900 = $900\ \mathrm{bp}$ (circular plasmid) or from the start of the linearised plasmid to the first cut. Fragment 2: from position 900 to 2700 = $1800\ \mathrm{bp}$. Fragment 3: from position 2700 to 4500 = $1800\ \mathrm{bp}$.
 
-The three fragments are: $900\ \mathrm{bp{}$, $1800\ \mathrm{bp{}$, and $1800\ \mathrm{bp{}$.
+The three fragments are: $900\ \mathrm{bp}$, $1800\ \mathrm{bp}$, and $1800\ \mathrm{bp}$.
 
-(c) The smallest fragment ($900\ \mathrm{bp{}$) will travel furthest from the wells because smaller DNA fragments migrate faster through the gel matrix.
+(c) The smallest fragment ($900\ \mathrm{bp}$) will travel furthest from the wells because smaller DNA fragments migrate faster through the gel matrix.
 
 <b>If you get this wrong, revise:</b> [Calculations in Biotechnology](#91-calculations-in-biotechnology)
 
@@ -350,7 +350,7 @@ Vitamin A deficiency (VAD) affects approximately 250 million children worldwide,
 
 These genes enable the rice endosperm to produce $\beta$-carotene from geranylgeranyl diphosphate (GGPP), a precursor already present in the endosperm:
 
-$$\text{GGPP{} \xrightarrow{\text{psy{}} \text{phytoene{} \xrightarrow{\text{crtI{}} \text{lycopene{} \xrightarrow{\text{lcy (endogenous){}} \beta\text{-carotene{}$$
+$$\text{GGPP} \xrightarrow{\text{psy}} \text{phytoene} \xrightarrow{\text{crtI}} \text{lycopene} \xrightarrow{\text{lcy (endogenous)}} \beta\text{-carotene}$$
 
 The lycopene cyclase (lcy) step is catalysed by an enzyme already present in rice (endogenous gene).
 
@@ -380,7 +380,7 @@ Golden Rice 1 produced insufficient $\beta$-carotene ($1.6\ \mu\mathrm{g\ g^{-1}
 | ------ | ---------- | ------------- |
 | Retrovirus (e.g., lentivirus) | Integrates into host genome, providing permanent expression | Risk of insertional mutagenesis (activating oncogenes); only infects dividing cells |
 | Adenovirus | Does not integrate into genome; high transduction efficiency | Transient expression (lost as cells divide); immune response |
-| Adeno-associated virus (AAV) | Low immunogenicity; long-term expression in non-dividing cells | Small capacity ($< 5\ \mathrm{kb{}$); expensive to produce |
+| Adeno-associated virus (AAV) | Low immunogenicity; long-term expression in non-dividing cells | Small capacity ($< 5\ \mathrm{kb}$); expensive to produce |
 | Liposomes (lipid nanoparticles) | Non-viral; no risk of viral infection; can carry larger DNA | Low transfection efficiency; transient expression |
 | Naked DNA injection | Simple; no vector needed | Very low efficiency |
 
@@ -507,7 +507,7 @@ Species A and B are most closely related (identical in this region). Species C i
 | Type | Organism | Conditions | Products |
 | ---- | -------- | ---------- | -------- |
 | Aerobic | _Aspergillus niger_ (fungus) | Aerate, $30$ degrees C, pH 2--3 | Citric acid |
-| Anaerobic | _Saccharomyces cerevisiae_ (yeast) | No aeration, $30$ degrees C, pH 4--6 | Ethanol, $\mathrm{CO_2{}$ |
+| Anaerobic | _Saccharomyces cerevisiae_ (yeast) | No aeration, $30$ degrees C, pH 4--6 | Ethanol, $\mathrm{CO_2}$ |
 | Continuous | _Escherichia coli_ (bacterium) | Continuous nutrient supply | Insulin, growth hormone |
 
 ### 14.2 Batch vs Continuous Fermentation
@@ -527,9 +527,9 @@ To maximise product yield, the following factors must be optimised:
 
 - **Temperature**: affects enzyme activity and growth rate. Each organism has an optimum temperature (e.g., $37$ degrees C for _E. coli_, $30$ degrees C for _S. cerevisiae_). Fermentation generates heat, so cooling systems are needed.
 - **pH**: affects enzyme activity and membrane transport. Buffers or acid/base addition maintain pH.
-- **Oxygen concentration**: aerobic fermentations require continuous aeration (sparging with sterile air). Dissolved oxygen probes monitor $\mathrm{O_2{}$ levels.
+- **Oxygen concentration**: aerobic fermentations require continuous aeration (sparging with sterile air). Dissolved oxygen probes monitor $\mathrm{O_2}$ levels.
 - **Nutrient concentration**: limiting nutrients can control growth rate (chemostat). Carbon, nitrogen, and phosphate sources must be optimised.
-- **Stirring**: ensures uniform mixing of nutrients, temperature, and $\mathrm{O_2{}$.
+- **Stirring**: ensures uniform mixing of nutrients, temperature, and $\mathrm{O_2}$.
 - **Foam control**: fermentation produces foam (from proteins and gas bubbles), which can block air filters and reduce vessel volume. Anti-foaming agents (silicone-based) are added automatically.
 
 ### 14.4 Downstream Processing
@@ -669,7 +669,7 @@ The **threshold cycle** ($C_t$) is the cycle number at which the fluorescence ex
 
 ### 18.2 Calculations in qPCR
 
-The amount of DNA doubles with each cycle: after $n$ cycles, the amount of DNA $= \text{initial amount{} \times 2^n$.
+The amount of DNA doubles with each cycle: after $n$ cycles, the amount of DNA $= \text{initial amount} \times 2^n$.
 
 If Sample A has $C_t = 20$ and Sample B has $C_t = 26$, the difference is 6 cycles. The starting concentration of DNA in Sample A is $2^6 = 64$ times higher than in Sample B.
 
@@ -725,7 +725,7 @@ A suspect's DNA profile matches the crime scene sample at 10 STR loci. The frequ
 
 The match probability is the product of the frequencies at all 10 loci. If the average frequency per locus is approximately $0.005$, then:
 
-$\text{Match probability{} = (0.005)^{10} = 9.77 \times 10^{-24}$.
+$\text{Match probability} = (0.005)^{10} = 9.77 \times 10^{-24}$.
 
 This means the probability of a random person matching the DNA profile is approximately 1 in $10^{23}$, making it virtually certain that the suspect is the source of the DNA.
 
@@ -828,7 +828,7 @@ Common Pitfall Students often use the terms "genome," "transcriptome," "proteome
 
 | Pollutant | Microorganism | Mechanism |
 | -------- | ------------- | --------- |
-| Oil spills | _Pseudomonas_ spp., _Alcanivorax_ | Degrade hydrocarbons in crude oil into $\mathrm{CO_2{}$ and water |
+| Oil spills | _Pseudomonas_ spp., _Alcanivorax_ | Degrade hydrocarbons in crude oil into $\mathrm{CO_2}$ and water |
 | Heavy metals | _Geobacter_ spp. | Reduce $\mathrm{U^{6+}}$ to $\mathrm{U^{4+}}$, making uranium insoluble and immobilising it |
 | Pesticides | _Bacillus_ spp. | Produce enzymes that break down organophosphate pesticides |
 | Sewage | Mixed microbial communities | Degrade organic matter in primary and secondary treatment |
@@ -955,7 +955,7 @@ Mitigation strategies:
 3. **Ligate**: the insulin gene is mixed with the cut plasmid and DNA ligase, which joins the gene into the plasmid at the restriction site. The resulting recombinant plasmid contains the insulin gene.
 
 4. **Transform**: the recombinant plasmid is introduced into _E. coli_ cells by:
-   - **Heat shock**: cells are made competent (treated with $\mathrm{CaCl_2{}$ to make the membrane permeable), mixed with plasmid DNA, and heated to $42$ degrees C for 90 seconds (causes the membrane to become transiently permeable).
+   - **Heat shock**: cells are made competent (treated with $\mathrm{CaCl_2}$ to make the membrane permeable), mixed with plasmid DNA, and heated to $42$ degrees C for 90 seconds (causes the membrane to become transiently permeable).
    - **Electroporation**: an electric pulse creates temporary pores in the cell membrane.
 
 5. **Select**: transformed bacteria are grown on agar plates containing an antibiotic (e.g., ampicillin). Only bacteria that have taken up the plasmid (which carries an ampicillin resistance gene) survive.
@@ -1155,7 +1155,7 @@ After fermentation, the desired product must be extracted and purified:
 | Temperature control | Water bath or incubator | Jacketed vessel with cooling water |
 | pH control | Manual or simple buffer | Automated acid/base addition |
 | Sterilisation | Autoclave | Steam-in-place (SIP) at 121 degrees C for 30+ minutes |
-| Monitoring | Manual sampling | Online probes (pH, dissolved $\mathrm{O_2{}$, temperature, foam) |
+| Monitoring | Manual sampling | Online probes (pH, dissolved $\mathrm{O_2}$, temperature, foam) |
 
 ## 32. Genomics and Personalised Medicine
 
@@ -1232,7 +1232,7 @@ Animal cells are grown in vitro for research, drug testing, and biotechnology:
 | Requirement | Description |
 | ----------- | ----------- |
 | Growth medium | Contains amino acids, vitamins, glucose, salts, and usually 5--10% foetal bovine serum (FBS, provides growth factors and hormones) |
-| Incubator | 37 degrees C; 5% $\mathrm{CO_2{}$ (maintains pH of the medium via bicarbonate buffer system) |
+| Incubator | 37 degrees C; 5% $\mathrm{CO_2}$ (maintains pH of the medium via bicarbonate buffer system) |
 | Sterile conditions | Laminar flow cabinet; antibiotics/antimycotics in medium |
 | Substrate | Most animal cells are anchorage-dependent (must attach to a surface to divide); tissue culture flasks are coated with collagen or poly-lysine |
 | Subculturing (passaging) | When cells reach confluence (cover the entire surface), they are detached using trypsin and transferred to a new flask |
@@ -1504,10 +1504,10 @@ Golden rice is a genetically engineered variety of rice that produces $\beta$-ca
 | Step | Process | Conditions |
 | ---- | ------- | ---------- |
 | 1. Milling | Grain is ground to increase surface area | -- |
-| 2. Gelatinisation | Starch granules are heated in water; they swell and burst | 80--90$\degree\mathrm{C{}$ |
-| 3. Hydrolysis | Enzymes (amylase) break down starch to maltose and glucose | 55--65$\degree\mathrm{C{}$; pH 5--6 |
-| 4. Fermentation | Yeast (_Saccharomyces cerevisiae_) anaerobically respires glucose to ethanol + CO2 | 30--35$\degree\mathrm{C{}$; anaerobic; pH 4--5 |
-| 5. Distillation | Ethanol is separated from the fermentation mixture (ethanol boils at 78$\degree\mathrm{C{}$, water at 100$\degree\mathrm{C{}$) | Fractional distillation |
+| 2. Gelatinisation | Starch granules are heated in water; they swell and burst | 80--90$\degree\mathrm{C}$ |
+| 3. Hydrolysis | Enzymes (amylase) break down starch to maltose and glucose | 55--65$\degree\mathrm{C}$; pH 5--6 |
+| 4. Fermentation | Yeast (_Saccharomyces cerevisiae_) anaerobically respires glucose to ethanol + CO2 | 30--35$\degree\mathrm{C}$; anaerobic; pH 4--5 |
+| 5. Distillation | Ethanol is separated from the fermentation mixture (ethanol boils at 78$\degree\mathrm{C}$, water at 100$\degree\mathrm{C}$) | Fractional distillation |
 
 ## 41. Tissue Culture and Micropropagation
 

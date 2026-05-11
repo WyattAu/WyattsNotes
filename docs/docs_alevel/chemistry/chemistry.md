@@ -103,24 +103,24 @@ Worked examples are provided throughout. Attempt them before reading the solutio
 | Topic | Key Equations |
 |---|---|
 | Quantitative | $n = \frac{m}{M}$, $c = \frac{n}{V}$, $pV = nRT$, $\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$ |
-| Acids/Bases | $\mathrm{pH{} = -\log[\mathrm{H{}^+]$, $K_a = \frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}$, $K_w = [\mathrm{H{}^+][\mathrm{OH{}^-]$, $\mathrm{pH{} = \mathrm{p{}K_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}$ |
-| Equilibrium | $K_c = \frac{\prod[\mathrm{products{}]^a}{\prod[\mathrm{reactants{}]^b}$, $K_p = \frac{\prod p_i^{a_i}}{\prod p_j^{b_j}}$, $K_p = K_c(RT)^{\Delta n}$ |
+| Acids/Bases | $\mathrm{pH} = -\log[\mathrm{H}^+]$, $K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}$, $K_w = [\mathrm{H}^+][\mathrm{OH}^-]$, $\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$ |
+| Equilibrium | $K_c = \frac{\prod[\mathrm{products}]^a}{\prod[\mathrm{reactants}]^b}$, $K_p = \frac{\prod p_i^{a_i}}{\prod p_j^{b_j}}$, $K_p = K_c(RT)^{\Delta n}$ |
 | Thermodynamics | $\Delta G = \Delta H - T\Delta S$, $\Delta G^\circ = -RT\ln K$, $q = mc\Delta T$ |
-| Kinetics | $\text{rate{} = k[\mathrm{A{}]^m[\mathrm{B{}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac{\ln 2}{k}$ (first-order) |
-| Electrochemistry | $E^\circ_\mathrm{cell{} = E^\circ_\mathrm{cathode{} - E^\circ_\mathrm{anode{}$, $\Delta G^\circ = -nFE^\circ$, $Q = It$, $n = \frac{Q}{F}$, $E = E^\circ - \frac{RT}{nF}\ln Q$ |
-| Born-Haber | $\Delta H_f = \Delta H_\mathrm{at{} + \sum \mathrm{IE{} + \Delta H_\mathrm{at{}(\text{anion{}) + \sum \mathrm{EA{} + \Delta H_\mathrm{lat{}$ |
+| Kinetics | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac{\ln 2}{k}$ (first-order) |
+| Electrochemistry | $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$, $\Delta G^\circ = -nFE^\circ$, $Q = It$, $n = \frac{Q}{F}$, $E = E^\circ - \frac{RT}{nF}\ln Q$ |
+| Born-Haber | $\Delta H_f = \Delta H_\mathrm{at} + \sum \mathrm{IE} + \Delta H_\mathrm{at}(\text{anion}) + \sum \mathrm{EA} + \Delta H_\mathrm{lat}$ |
 
 ### Organic Chemistry
 
 | Topic | Key Reactions |
 |---|---|
-| Alkanes | Radical substitution: $\mathrm{RH{} + \mathrm{X{}_2 \xrightarrow{\mathrm{UV{}} \mathrm{RX{} + \mathrm{HX{}$ |
-| Alkenes | Electrophilic addition: $\mathrm{C=C{} + \mathrm{HX{}$, $\mathrm{C=C{} + \mathrm{X{}_2$, $\mathrm{C=C{} + \mathrm{H{}_2\mathrm{O{}$ (acid) |
-| Halogenoalkanes | SN2: $\mathrm{R-X{} + \mathrm{OH{}^- \to \mathrm{R-OH{} + \mathrm{X{}^-$; E2: $\mathrm{R-X{} + \mathrm{OH{}^- \to \text{alkene{} + \mathrm{X{}^- + \mathrm{H{}_2\mathrm{O{}$ |
+| Alkanes | Radical substitution: $\mathrm{RH} + \mathrm{X}_2 \xrightarrow{\mathrm{UV}} \mathrm{RX} + \mathrm{HX}$ |
+| Alkenes | Electrophilic addition: $\mathrm{C=C} + \mathrm{HX}$, $\mathrm{C=C} + \mathrm{X}_2$, $\mathrm{C=C} + \mathrm{H}_2\mathrm{O}$ (acid) |
+| Halogenoalkanes | SN2: $\mathrm{R-X} + \mathrm{OH}^- \to \mathrm{R-OH} + \mathrm{X}^-$; E2: $\mathrm{R-X} + \mathrm{OH}^- \to \text{alkene} + \mathrm{X}^- + \mathrm{H}_2\mathrm{O}$ |
 | Alcohols | Oxidation: $1^\circ \to$ aldehyde $\to$ acid; $2^\circ \to$ ketone; Dehydration $\to$ alkene |
-| Carbonyls | Nucleophilic addition: $\mathrm{NaBH{}_4$ reduction; 2,4-DNPH test; Tollens' test |
-| Carboxylic acids | Esterification with alcohol/$\mathrm{H{}_2\mathrm{SO{}_4$; React with $\mathrm{NaHCO{}_3$ |
-| Amines | Diazotisation: $\mathrm{ArNH{}_2 \to \mathrm{ArN{}_2^+$; Coupling reactions; Reduction of nitriles |
+| Carbonyls | Nucleophilic addition: $\mathrm{NaBH}_4$ reduction; 2,4-DNPH test; Tollens' test |
+| Carboxylic acids | Esterification with alcohol/$\mathrm{H}_2\mathrm{SO}_4$; React with $\mathrm{NaHCO}_3$ |
+| Amines | Diazotisation: $\mathrm{ArNH}_2 \to \mathrm{ArN}_2^+$; Coupling reactions; Reduction of nitriles |
 | Arenes | Electrophilic substitution: nitration, halogenation, Friedel-Crafts alkylation/acylation |
 
 ### Inorganic Chemistry
@@ -130,7 +130,7 @@ Worked examples are provided throughout. Attempt them before reading the solutio
 | Transition metals | Variable oxidation states, complex ions, crystal field theory, colour, catalysis |
 | Periodicity | Trends in atomic radius, IE, melting point across periods and down groups |
 | Group 2 | Reactivity with water, solubility trends (sulphates decrease, hydroxides increase) |
-| Group 7 | Displacement reactions, oxidising power trend, halide tests with $\mathrm{AgNO{}_3$ |
+| Group 7 | Displacement reactions, oxidising power trend, halide tests with $\mathrm{AgNO}_3$ |
 
 ## Examination Strategy
 
@@ -160,18 +160,18 @@ A-Level Chemistry requires significant mathematical competence. The following sk
 
 - **Rearranging equations:** For example, from $pV = nRT$, derive $n = \frac{pV}{RT}$.
 - **Solving quadratic equations:** For weak acid pH calculations, $K_a = \frac{x^2}{c - x}$ can sometimes require the quadratic formula when the $5\%$ approximation fails.
-- **Logarithms:** $\mathrm{pH{} = -\log[\mathrm{H{}^+]$; $\ln k = -\frac{E_a}{R} \cdot \frac{1}{T} + \ln A$. You must be able to convert between $\log$ and $\ln$, and between logarithmic and exponential forms.
+- **Logarithms:** $\mathrm{pH} = -\log[\mathrm{H}^+]$; $\ln k = -\frac{E_a}{R} \cdot \frac{1}{T} + \ln A$. You must be able to convert between $\log$ and $\ln$, and between logarithmic and exponential forms.
 
 ### Graphical Analysis
 
 - **Plotting data:** Choose appropriate scales, label axes with quantities and units.
 - **Drawing lines of best fit:** For linear relationships, draw the best straight line through the data points.
-- **Determining the gradient:** $\text{gradient{} = \frac{\Delta y}{\Delta x}$. For an Arrhenius plot ($\ln k$ vs $1/T$), the gradient is $-E_a/R$.
+- **Determining the gradient:** $\text{gradient} = \frac{\Delta y}{\Delta x}$. For an Arrhenius plot ($\ln k$ vs $1/T$), the gradient is $-E_a/R$.
 - **Determining the y-intercept:** The intercept on a $\ln k$ vs $1/T$ plot gives $\ln A$.
 
 ### Error Analysis
 
-- **Percentage error:** $\frac{\text{absolute error{}}{\text{measured value{}} \times 100\%$.
+- **Percentage error:** $\frac{\text{absolute error}}{\text{measured value}} \times 100\%$.
 - **Propagation of errors:** For multiplication/division, add percentage errors. For addition/subtraction, add absolute errors.
 - **Significant figures:** Final answers should be given to the same number of significant figures as the least precise data in the question (typically 3 s.f.).
 
@@ -179,33 +179,33 @@ A-Level Chemistry requires significant mathematical competence. The following sk
 
 #### Worked Example 1: Ideal Gas Equation
 
-Calculate the volume occupied by $2.50\,\mathrm{g{}$ of $\mathrm{CO{}_2$ at $298\,\mathrm{K{}$ and $100\,\mathrm{kPa{}$.
+Calculate the volume occupied by $2.50\,\mathrm{g}$ of $\mathrm{CO}_2$ at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$.
 
-$$n = \frac{m}{M} = \frac{2.50}{44.01} = 0.0568\,\mathrm{mol{}$$
+$$n = \frac{m}{M} = \frac{2.50}{44.01} = 0.0568\,\mathrm{mol}$$
 
-$$V = \frac{nRT}{p} = \frac{0.0568 \times 8.314 \times 298}{100000} = \frac{140.7}{100000} = 1.41 \times 10^{-3}\,\mathrm{m{}^3 = 1.41\,\mathrm{dm{}^3$$
+$$V = \frac{nRT}{p} = \frac{0.0568 \times 8.314 \times 298}{100000} = \frac{140.7}{100000} = 1.41 \times 10^{-3}\,\mathrm{m}^3 = 1.41\,\mathrm{dm}^3$$
 
 #### Worked Example 2: Titration Calculation
 
-$25.0\,\mathrm{cm{}^3$ of $\mathrm{NaOH{}$ solution of unknown concentration is titrated with $0.150\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl{}$. The mean titre is $22.4\,\mathrm{cm{}^3$. Calculate the concentration of $\mathrm{NaOH{}$.
+$25.0\,\mathrm{cm}^3$ of $\mathrm{NaOH}$ solution of unknown concentration is titrated with $0.150\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl}$. The mean titre is $22.4\,\mathrm{cm}^3$. Calculate the concentration of $\mathrm{NaOH}$.
 
-$$\mathrm{NaOH{} + \mathrm{HCl{} \to \mathrm{NaCl{} + \mathrm{H{}_2\mathrm{O{}$$
+$$\mathrm{NaOH} + \mathrm{HCl} \to \mathrm{NaCl} + \mathrm{H}_2\mathrm{O}$$
 
-$$n(\mathrm{HCl{}) = c \times V = 0.150 \times 0.0224 = 3.36 \times 10^{-3}\,\mathrm{mol{}$$
+$$n(\mathrm{HCl}) = c \times V = 0.150 \times 0.0224 = 3.36 \times 10^{-3}\,\mathrm{mol}$$
 
-From the 1:1 stoichiometry: $n(\mathrm{NaOH{}) = 3.36 \times 10^{-3}\,\mathrm{mol{}$
+From the 1:1 stoichiometry: $n(\mathrm{NaOH}) = 3.36 \times 10^{-3}\,\mathrm{mol}$
 
-$$c(\mathrm{NaOH{}) = \frac{n}{V} = \frac{3.36 \times 10^{-3}}{0.0250} = 0.134\,\mathrm{mol\,dm^{-3}}$$
+$$c(\mathrm{NaOH}) = \frac{n}{V} = \frac{3.36 \times 10^{-3}}{0.0250} = 0.134\,\mathrm{mol\,dm^{-3}}$$
 
 #### Worked Example 3: Enthalpy of Neutralisation
 
-$50.0\,\mathrm{cm{}^3$ of $1.00\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl{}$ is mixed with $50.0\,\mathrm{cm{}^3$ of $1.00\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH{}$ in a polystyrene cup. The temperature rises from $21.0^\circ\mathrm{C{}$ to $27.5^\circ\mathrm{C{}$. Calculate the enthalpy of neutralisation. (Specific heat capacity of solution $= 4.18\,\mathrm{J\,g^{-1}\,K^{-1}}$; density of solution $= 1.00\,\mathrm{g\,cm^{-3}}$.)
+$50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol\,dm^{-3}}$ $\mathrm{HCl}$ is mixed with $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol\,dm^{-3}}$ $\mathrm{NaOH}$ in a polystyrene cup. The temperature rises from $21.0^\circ\mathrm{C}$ to $27.5^\circ\mathrm{C}$. Calculate the enthalpy of neutralisation. (Specific heat capacity of solution $= 4.18\,\mathrm{J\,g^{-1}\,K^{-1}}$; density of solution $= 1.00\,\mathrm{g\,cm^{-3}}$.)
 
-$$q = mc\Delta T = 100 \times 4.18 \times 6.5 = 2717\,\mathrm{J{} = 2.72\,\mathrm{kJ{}$$
+$$q = mc\Delta T = 100 \times 4.18 \times 6.5 = 2717\,\mathrm{J} = 2.72\,\mathrm{kJ}$$
 
-(100 g because $50 + 50 = 100\,\mathrm{cm{}^3$ at $1.00\,\mathrm{g\,cm^{-3}}$)
+(100 g because $50 + 50 = 100\,\mathrm{cm}^3$ at $1.00\,\mathrm{g\,cm^{-3}}$)
 
-$$n = c \times V = 1.00 \times 0.0500 = 0.0500\,\mathrm{mol{}$$
+$$n = c \times V = 1.00 \times 0.0500 = 0.0500\,\mathrm{mol}$$
 
 $$\Delta H = -\frac{q}{n} = -\frac{2.72}{0.0500} = -54.4\,\mathrm{kJ\,mol^{-1}}$$
 
@@ -213,7 +213,7 @@ The negative sign indicates exothermic. The accepted value for strong acid-stron
 
 #### Worked Example 4: Arrhenius Equation
 
-The rate constant for a reaction is $3.46 \times 10^{-3}\,\mathrm{s^{-1}}$ at $298\,\mathrm{K{}$ and $1.32 \times 10^{-2}\,\mathrm{s^{-1}}$ at $318\,\mathrm{K{}$. Calculate the activation energy.
+The rate constant for a reaction is $3.46 \times 10^{-3}\,\mathrm{s^{-1}}$ at $298\,\mathrm{K}$ and $1.32 \times 10^{-2}\,\mathrm{s^{-1}}$ at $318\,\mathrm{K}$. Calculate the activation energy.
 
 $$\ln\frac{k_2}{k_1} = -\frac{E_a}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
 
@@ -227,11 +227,11 @@ $$E_a = \frac{1.340}{2.11 \times 10^{-4}} \times 8.314 = 52800\,\mathrm{J\,mol^{
 
 #### Worked Example 5: pH and Buffer Calculations
 
-Calculate the pH of a buffer solution containing $0.100\,\mathrm{mol\,dm^{-3}}$ ethanoic acid ($\mathrm{p{}K_a = 4.76$) and $0.150\,\mathrm{mol\,dm^{-3}}$ sodium ethanoate.
+Calculate the pH of a buffer solution containing $0.100\,\mathrm{mol\,dm^{-3}}$ ethanoic acid ($\mathrm{p}K_a = 4.76$) and $0.150\,\mathrm{mol\,dm^{-3}}$ sodium ethanoate.
 
-$$\mathrm{pH{} = \mathrm{p{}K_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]} = 4.76 + \log\frac{0.150}{0.100} = 4.76 + 0.176 = 4.94$$
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 4.76 + \log\frac{0.150}{0.100} = 4.76 + 0.176 = 4.94$$
 
-The buffer is effective within $\pm 1\,\mathrm{pH{}$ unit of $\mathrm{p{}K_a$ (i.e. pH 3.76 to 5.76).
+The buffer is effective within $\pm 1\,\mathrm{pH}$ unit of $\mathrm{p}K_a$ (i.e. pH 3.76 to 5.76).
 
 ## Cross-Topic Synthesis Questions
 
@@ -239,35 +239,35 @@ The buffer is effective within $\pm 1\,\mathrm{pH{}$ unit of $\mathrm{p{}K_a$ (i
 
 **Starting from benzene, propose a synthesis of 4-hydroxybenzoic acid.**
 
-Step 1: Friedel-Crafts alkylation with $\mathrm{CH{}_3\mathrm{Cl{}/\mathrm{AlCl{}_3$ gives methylbenzene.
+Step 1: Friedel-Crafts alkylation with $\mathrm{CH}_3\mathrm{Cl}/\mathrm{AlCl}_3$ gives methylbenzene.
 
-Step 2: Oxidation with $\mathrm{KMnO{}_4/\Delta$ gives benzoic acid. But $-\mathrm{COOH{}$ is meta directing, so nitration would give 3-nitrobenzoic acid, not the 4-isomer.
+Step 2: Oxidation with $\mathrm{KMnO}_4/\Delta$ gives benzoic acid. But $-\mathrm{COOH}$ is meta directing, so nitration would give 3-nitrobenzoic acid, not the 4-isomer.
 
 **Correct route:** Start with phenol (or make it from benzene via the diazonium salt).
 
-$\mathrm{C{}_6\mathrm{H{}_6 \xrightarrow{\mathrm{HNO{}_3/\mathrm{H{}_2\mathrm{SO{}_4}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NO{}_2 \xrightarrow{\mathrm{Sn{}/\mathrm{HCl{},\,\mathrm{NaOH{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{NH{}_2 \xrightarrow{\mathrm{NaNO{}_2/\mathrm{HCl{},\,0\text{--{}5^\circ\mathrm{C{}} \mathrm{C{}_6\mathrm{H{}_5\mathrm{N{}_2^+\mathrm{Cl{}^- \xrightarrow{\mathrm{H{}_2\mathrm{O{},\,\Delta} \mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{}$
+$\mathrm{C}_6\mathrm{H}_6 \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4}} \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 \xrightarrow{\mathrm{Sn}/\mathrm{HCl},\,\mathrm{NaOH}} \mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2 \xrightarrow{\mathrm{NaNO}_2/\mathrm{HCl},\,0\text{--}5^\circ\mathrm{C}} \mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^- \xrightarrow{\mathrm{H}_2\mathrm{O},\,\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{OH}$
 
-Then Kolbe-Schmitt reaction: $\mathrm{C{}_6\mathrm{H{}_5\mathrm{OH{} + \mathrm{CO{}_2 \xrightarrow{\mathrm{NaOH{},\,125^\circ\mathrm{C{},\,\text{then {}\mathrm{H{}^+} 4\text{-{}\mathrm{HOC{}_6\mathrm{H{}_4\mathrm{COOH{}$
+Then Kolbe-Schmitt reaction: $\mathrm{C}_6\mathrm{H}_5\mathrm{OH} + \mathrm{CO}_2 \xrightarrow{\mathrm{NaOH},\,125^\circ\mathrm{C},\,\text{then }\mathrm{H}^+} 4\text{-}\mathrm{HOC}_6\mathrm{H}_4\mathrm{COOH}$
 
-The Kolbe-Schmitt reaction places the $-\mathrm{COOH{}$ group para to the $-\mathrm{OH{}$ group due to the ortho/para directing effect of the phenoxide ion.
+The Kolbe-Schmitt reaction places the $-\mathrm{COOH}$ group para to the $-\mathrm{OH}$ group due to the ortho/para directing effect of the phenoxide ion.
 
 ### Synthesis Question 2
 
 **Propose a synthesis of 2-aminopropanoic acid (alanine) from propene.**
 
-Step 1: Anti-Markovnikov addition of HBr: $\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \xrightarrow{\text{peroxides{}} \mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$
+Step 1: Anti-Markovnikov addition of HBr: $\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \xrightarrow{\text{peroxides}} \mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3$
 
-Step 2: Nucleophilic substitution with $\mathrm{KCN{}$: $\mathrm{BrCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 + \mathrm{KCN{} \to \mathrm{NCCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$
+Step 2: Nucleophilic substitution with $\mathrm{KCN}$: $\mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{KCN} \to \mathrm{NCCH}_2\mathrm{CH}_2\mathrm{CH}_3$
 
-Step 3: Hydrolysis of nitrile to carboxylic acid: $\mathrm{NCCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 + 2\mathrm{H{}_2\mathrm{O{} + \mathrm{H{}^+ \to \mathrm{HOOCCH{}_2\mathrm{CH{}_2\mathrm{CH{}_3 + \mathrm{NH{}_4^+$
+Step 3: Hydrolysis of nitrile to carboxylic acid: $\mathrm{NCCH}_2\mathrm{CH}_2\mathrm{CH}_3 + 2\mathrm{H}_2\mathrm{O} + \mathrm{H}^+ \to \mathrm{HOOCCH}_2\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{NH}_4^+$
 
 This gives butanoic acid, not alanine. The correct approach:
 
-Step 1: Markovnikov addition of HBr: $\mathrm{CH{}_3\mathrm{CH{}=\mathrm{CH{}_2 + \mathrm{HBr{} \to \mathrm{CH{}_3\mathrm{CHBrCH{}_3$
+Step 1: Markovnikov addition of HBr: $\mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CHBrCH}_3$
 
-Step 2: Substitution with $\mathrm{KCN{}$ (SN2 on secondary bromide -- gives a mixture): $\mathrm{CH{}_3\mathrm{CHBrCH{}_3 + \mathrm{KCN{} \to \mathrm{CH{}_3\mathrm{CH{}(\mathrm{CN{})\mathrm{CH{}_3$
+Step 2: Substitution with $\mathrm{KCN}$ (SN2 on secondary bromide -- gives a mixture): $\mathrm{CH}_3\mathrm{CHBrCH}_3 + \mathrm{KCN} \to \mathrm{CH}_3\mathrm{CH}(\mathrm{CN})\mathrm{CH}_3$
 
-Step 3: Hydrolysis: $\mathrm{CH{}_3\mathrm{CH{}(\mathrm{CN{})\mathrm{CH{}_3 + 2\mathrm{H{}_2\mathrm{O{} + \mathrm{H{}^+ \to \mathrm{CH{}_3\mathrm{CH{}(\mathrm{COOH{})\mathrm{CH{}_3 + \mathrm{NH{}_4^+$
+Step 3: Hydrolysis: $\mathrm{CH}_3\mathrm{CH}(\mathrm{CN})\mathrm{CH}_3 + 2\mathrm{H}_2\mathrm{O} + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{CH}(\mathrm{COOH})\mathrm{CH}_3 + \mathrm{NH}_4^+$
 
 This gives 2-methylpropanoic acid, not 2-aminopropanoic acid. The nitrile hydrolysis gives a carboxylic acid, not an amino acid. To make alanine, the Gabriel synthesis or reduction of the nitrile to the amine would be needed.
 

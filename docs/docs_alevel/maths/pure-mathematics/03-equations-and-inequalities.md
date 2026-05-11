@@ -68,8 +68,8 @@ Solve:
 
 $$
 \begin{aligned}
-3x + 2y &= 12 \quad \mathrm{--- (1){} \\
-5x - 3y &= 1 \quad \mathrm{--- (2){}
+3x + 2y &= 12 \quad \mathrm{--- (1)} \\
+5x - 3y &= 1 \quad \mathrm{--- (2)}
 \end{aligned}
 $$
 
@@ -403,9 +403,9 @@ Solve:
 
 $$
 \begin{aligned}
-x + 2y - z &= 3 \quad \mathrm{--- (1){} \\
-2x - y + z &= 1 \quad \mathrm{--- (2){} \\
-x + y + 2z &= 8 \quad \mathrm{--- (3){}
+x + 2y - z &= 3 \quad \mathrm{--- (1)} \\
+2x - y + z &= 1 \quad \mathrm{--- (2)} \\
+x + y + 2z &= 8 \quad \mathrm{--- (3)}
 \end{aligned}
 $$
 
@@ -783,11 +783,11 @@ find $a$ and $b$. Hence fully factorise $f(x)$.
 <summary>Solution</summary>
 Since $(x - 2)$ is a factor, $f(2) = 0$ by the factor theorem:
 
-$$f(2) = 8 + 4a + 2b - 12 = 4a + 2b - 4 = 0 \implies 2a + b = 2 \quad \mathrm{--- (i){}$$
+$$f(2) = 8 + 4a + 2b - 12 = 4a + 2b - 4 = 0 \implies 2a + b = 2 \quad \mathrm{--- (i)}$$
 
 Also $f(1) = -6$:
 
-$$f(1) = 1 + a + b - 12 = a + b - 11 = -6 \implies a + b = 5 \quad \mathrm{--- (ii){}$$
+$$f(1) = 1 + a + b - 12 = a + b - 11 = -6 \implies a + b = 5 \quad \mathrm{--- (ii)}$$
 
 Subtracting (i) from (ii): $-a = 3$, so $a = -3$.
 
@@ -888,7 +888,7 @@ The region is bounded by four lines. Find the vertices:
 The region is a trapezoid. Using the shoelace formula with vertices $(0, 3), (0, 6), (4, 0), (3, 0)$
 in order:
 
-$$\mathrm{Area{} = \frac{1}{2}\left| \sum_{i} x_i y_{i+1} - \sum_{i} y_i x_{i+1} \right|$$
+$$\mathrm{Area} = \frac{1}{2}\left| \sum_{i} x_i y_{i+1} - \sum_{i} y_i x_{i+1} \right|$$
 
 $$= \frac{1}{2}\left| (0 \cdot 6 + 0 \cdot 0 + 4 \cdot 0 + 3 \cdot 3) - (3 \cdot 0 + 6 \cdot 4 + 0 \cdot 3 + 0 \cdot 0) \right|$$
 

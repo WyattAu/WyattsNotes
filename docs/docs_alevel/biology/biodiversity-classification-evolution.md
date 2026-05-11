@@ -118,7 +118,7 @@ characteristics and evolutionary relationships.
 
 The traditional Linnaean hierarchy:
 
-$$\mathrm{Domain{} \to \mathrm{Kingdom{} \to \mathrm{Phylum{} \to \mathrm{Class{} \to \mathrm{Order{} \to \mathrm{Family{} \to \mathrm{Genus{} \to \mathrm{Species{}$$
+$$\mathrm{Domain} \to \mathrm{Kingdom} \to \mathrm{Phylum} \to \mathrm{Class} \to \mathrm{Order} \to \mathrm{Family} \to \mathrm{Genus} \to \mathrm{Species}$$
 
 A **species** is defined by the **biological species concept** (Mayr, 1942): a group of
 interbreeding organisms that are reproductively isolated from other such groups, producing fertile
@@ -368,7 +368,7 @@ The mutation rate per site per year ($\mu$) is estimated by calibrating the cloc
 record. For example, if two species diverged from a common ancestor 10 million years ago (as determined
 by fossils) and their DNA sequences now differ at 2% of sites, the mutation rate is estimated as:
 
-$$\mu = \frac{0.02}{2 \times 10^7\ \mathrm{years{}} = 1 \times 10^{-9}\ \mathrm{mutations\ per\ site\ per\ year{}$$
+$$\mu = \frac{0.02}{2 \times 10^7\ \mathrm{years}} = 1 \times 10^{-9}\ \mathrm{mutations\ per\ site\ per\ year}$$
 
 The factor of 2 accounts for the fact that both lineages have been accumulating mutations independently
 since divergence.
@@ -381,7 +381,7 @@ The gene is 330 base pairs long.
 
 Number of substitutions per site $= \frac{12}{330} = 0.0364$.
 
-Time since divergence $= \frac{0.0364}{2 \times 2.5 \times 10^{-9}} = 7.27 \times 10^6\ \mathrm{years{} \approx 7.3\ \mathrm{million\ years{}$.
+Time since divergence $= \frac{0.0364}{2 \times 2.5 \times 10^{-9}} = 7.27 \times 10^6\ \mathrm{years} \approx 7.3\ \mathrm{million\ years}$.
 
 ### 6.3 Limitations of Molecular Clocks
 
@@ -436,9 +436,9 @@ $$\chi^2 = \sum \frac{(O - E)^2}{E}$$
 
 where $O$ = observed frequency and $E$ = expected frequency under H-W.
 
-Degrees of freedom for a gene with $n$ alleles: $\mathrm{df{} = \frac{n(n+1)}{2} - 1 - k$, where $k$ is
+Degrees of freedom for a gene with $n$ alleles: $\mathrm{df} = \frac{n(n+1)}{2} - 1 - k$, where $k$ is
 the number of allele frequencies estimated from the data. For a two-allele system where both $p$ and $q$
-are estimated: $\mathrm{df{} = 3 - 1 - 1 = 1$.
+are estimated: $\mathrm{df} = 3 - 1 - 1 = 1$.
 
 **Worked Example.** In a population of 1000, the observed genotypes for a two-allele system are:
 $AA = 420$, $Aa = 400$, $aa = 180$.
@@ -473,9 +473,9 @@ genotype, or population substructure (Wahlund effect).
 
 :::warning
 Common Pitfall When calculating degrees of freedom for the chi-squared test with Hardy-Weinberg data,
-students often incorrectly use $\mathrm{df{} = n - 1$ (where $n$ is the number of genotypes). The
+students often incorrectly use $\mathrm{df} = n - 1$ (where $n$ is the number of genotypes). The
 correct formula accounts for the fact that allele frequencies are estimated from the data, reducing the
-degrees of freedom further. For a two-allele system, $\mathrm{df{} = 1$.
+degrees of freedom further. For a two-allele system, $\mathrm{df} = 1$.
 :::
 
 ## 8. Classification: The Five Kingdom System and Beyond
@@ -1271,7 +1271,7 @@ CITES (Convention on International Trade in Endangered Species) regulates intern
 
 Mean density per quadrat $= \frac{\sum n_i}{k}$ (where $n_i$ = number in quadrat $i$; $k$ = number of quadrats).
 
-Total population estimate $= \text{mean density{} \times \frac{\text{total area{}}{\text{quadrat area{}}$.
+Total population estimate $= \text{mean density} \times \frac{\text{total area}}{\text{quadrat area}}$.
 
 **Standard deviation:**
 
@@ -1279,7 +1279,7 @@ $$s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}}$$
 
 Standard error $= \frac{s}{\sqrt{n}}$.
 
-95% confidence interval $= \bar{x} \pm 1.96 \times \text{standard error{}$.
+95% confidence interval $= \bar{x} \pm 1.96 \times \text{standard error}$.
 
 ### 23.2 Belt Transect
 
@@ -1308,15 +1308,15 @@ Are plant species distributed independently of soil pH?
 | Species B | 10 | 30 | 40 | 80 |
 | Total | 55 | 50 | 45 | 150 |
 
-Expected values: $E = \frac{\text{row total{} \times \text{column total{}}{\text{grand total{}}$
+Expected values: $E = \frac{\text{row total} \times \text{column total}}{\text{grand total}}$
 
-$E_{A,\text{acidic{}} = \frac{70 \times 55}{150} = 25.7$
+$E_{A,\text{acidic}} = \frac{70 \times 55}{150} = 25.7$
 
 $\chi^2 = \sum \frac{(O - E)^2}{E} = \frac{(45-25.7)^2}{25.7} + \frac{(20-23.3)^2}{23.3} + \frac{(5-21)^2}{21} + \frac{(10-29.3)^2}{29.3} + \frac{(30-26.7)^2}{26.7} + \frac{(40-24)^2}{24}$
 
 $\chi^2 = 14.5 + 0.47 + 12.2 + 12.7 + 0.41 + 10.7 = 50.98$
 
-Degrees of freedom $= (\text{rows{} - 1) \times (\text{columns{} - 1) = 1 \times 2 = 2$.
+Degrees of freedom $= (\text{rows} - 1) \times (\text{columns} - 1) = 1 \times 2 = 2$.
 
 Critical value at $p = 0.05$ with 2 df = 5.99. Since $50.98 > 5.99$, we reject the null hypothesis: there is a significant association between species distribution and soil pH.
 
@@ -1355,14 +1355,14 @@ If the observed genotype frequencies differ significantly from the expected Hard
 
 **Example:** In a population of snails, the observed and expected genotype frequencies are:
 
-| Genotype | Observed | Expected ($\mathrm{H\text{-{}W}$) |
+| Genotype | Observed | Expected ($\mathrm{H\text{-}W}$) |
 | -------- | -------- | ------------------------------- |
 | BB (brown) | 160 | 144 ($= 0.36 \times 400$) |
 | Bb (brown) | 120 | 192 ($= 0.48 \times 400$) |
 | bb (yellow) | 120 | 64 ($= 0.16 \times 400$) |
 | **Total** | **400** | **400** |
 
-Allele frequencies: $p(\mathrm{B{}) = \frac{160 \times 2 + 120}{800} = 0.55$; $q(\mathrm{b{}) = 0.45$.
+Allele frequencies: $p(\mathrm{B}) = \frac{160 \times 2 + 120}{800} = 0.55$; $q(\mathrm{b}) = 0.45$.
 
 The excess of bb homozygotes and deficiency of heterozygotes suggest **negative assortative mating** (like genotypes mate more often) or **selection against heterozygotes** (underdominance). A chi-squared test would determine whether the deviation is statistically significant.
 
@@ -1393,15 +1393,15 @@ Where $S$ = number of species; $A$ = area; $c$ and $z$ are constants ($z$ is typ
 
 **Implication:** if a habitat is reduced in size by 90%, the number of species will be reduced by approximately 50%. This is why habitat loss is the single greatest threat to biodiversity.
 
-**Example:** if a forest of $100\ \mathrm{km^2{}$ contains 500 species ($c = 100$, $z = 0.35$):
+**Example:** if a forest of $100\ \mathrm{km^2}$ contains 500 species ($c = 100$, $z = 0.35$):
 
 $$S_1 = 100 \times 100^{0.35} = 100 \times 22.4 = 2240$$
 
-Wait, let me use the standard form. If a $1000\ \mathrm{km^2{}$ area has 200 species:
+Wait, let me use the standard form. If a $1000\ \mathrm{km^2}$ area has 200 species:
 
 $$200 = c \times 1000^z$$
 
-If the area is reduced to $100\ \mathrm{km^2{}$ (10% of original):
+If the area is reduced to $100\ \mathrm{km^2}$ (10% of original):
 
 $$S_2 = c \times 100^z = c \times (0.1 \times 1000)^z = c \times 0.1^z \times 1000^z = 0.1^z \times S_1$$
 
@@ -1440,8 +1440,8 @@ When analysing ecological data, it is essential to quantify variability:
 | --------- | ------- | ---------------- |
 | Mean ($\bar{x}$) | $\bar{x} = \frac{\sum x_i}{n}$ | Central tendency |
 | Standard deviation ($s$) | $s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}}$ | Spread of data around the mean |
-| Standard error (SE) | $\mathrm{SE{} = \frac{s}{\sqrt{n}}$ | Precision of the mean estimate |
-| 95% CI | $\bar{x} \pm 1.96 \times \mathrm{SE{}$ | Range within which the true population mean is 95% likely to lie |
+| Standard error (SE) | $\mathrm{SE} = \frac{s}{\sqrt{n}}$ | Precision of the mean estimate |
+| 95% CI | $\bar{x} \pm 1.96 \times \mathrm{SE}$ | Range within which the true population mean is 95% likely to lie |
 
 ### 26.2 Student's t-Test
 
@@ -1479,7 +1479,7 @@ Since $3.27 > 2.101$, we reject the null hypothesis: there is a statistically si
 
 The molecular clock uses the rate of neutral mutations to estimate when two species diverged from a common ancestor:
 
-$$\text{Time since divergence{} = \frac{\text{Number of nucleotide differences{}}{2 \times \text{Mutation rate per year{}}$$
+$$\text{Time since divergence} = \frac{\text{Number of nucleotide differences}}{2 \times \text{Mutation rate per year}}$$
 
 **Assumptions:**
 - The mutation rate is constant over time.
@@ -1567,7 +1567,7 @@ A biodiversity hotspot is a region with:
 
 | Method | Formula | When to Use |
 | ------ | ------- | ----------- |
-| Quadrat density | $\text{Population{} = \text{mean density per quadrat{} \times \text{total area{}$ | Plants and sessile (non-moving) animals |
+| Quadrat density | $\text{Population} = \text{mean density per quadrat} \times \text{total area}$ | Plants and sessile (non-moving) animals |
 | Mark-release-recapture (Lincoln index) | $N = \frac{M \times C}{R}$ (M = marked first catch, C = total second catch, R = recaptured marked) | Mobile animals |
 | Belt transect | Count organisms in quadrats along a continuous transect | Studying distribution along a gradient |
 

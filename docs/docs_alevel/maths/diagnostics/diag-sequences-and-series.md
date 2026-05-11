@@ -151,7 +151,7 @@ $$u_5 = 5(65) - 6(19) = 325 - 114 = 211$$
 
 $$\lambda^2 - 5\lambda + 6 = 0$$
 $$(\lambda - 2)(\lambda - 3) = 0$$
-$$\lambda = 2 \quad \text{or{} \quad \lambda = 3$$
+$$\lambda = 2 \quad \text{or} \quad \lambda = 3$$
 
 The general solution is $u_n = A \cdot 2^n + B \cdot 3^n$.
 

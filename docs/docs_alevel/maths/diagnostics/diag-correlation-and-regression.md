@@ -53,7 +53,7 @@ $$S_{xy} = 7324 - \frac{267 \times 146}{7} = 7324 - \frac{38982}{7} = 7324 - 556
 
 $$r = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}} = \frac{1755.143}{\sqrt{2062.857 \times 1508.857}}$$
 
-$$= \frac{1755.143}{\sqrt{3111755.1}} = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.){}$$
+$$= \frac{1755.143}{\sqrt{3111755.1}} = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.)}$$
 
 **(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and $v = \frac{1}{100}y$, which are linear transformations.
 
@@ -141,7 +141,7 @@ where $b_{xy}$ is the gradient of the regression line of $x$ on $y$. From the co
 
 $$r^2 = 4.2 \times 0.21 = 0.882$$
 
-$$r = \sqrt{0.882} = 0.939 \text{ (3 d.p.){}$$
+$$r = \sqrt{0.882} = 0.939 \text{ (3 d.p.)}$$
 
 We take the positive root because both regression coefficients are positive, indicating a positive association.
 
@@ -318,11 +318,11 @@ The number of revision hours $H$ for a randomly selected student follows the dis
 
 $$P(H = h) = \begin{cases} 0.1 & h = 1 \\ 0.2 & h = 2 \\ 0.3 & h = 3 \\ 0.25 & h = 4 \\ 0.15 & h = 5 \end{cases}$$
 
-**(a)** Find $\mathrm{E{}(H)$ and $\mathrm{Var{}(H)$.
+**(a)** Find $\mathrm{E}(H)$ and $\mathrm{Var}(H)$.
 
-**(b)** Find $\mathrm{E{}(M)$ using the regression line and the distribution of $H$.
+**(b)** Find $\mathrm{E}(M)$ using the regression line and the distribution of $H$.
 
-**(c)** The variance of the actual exam marks around the regression line is $\sigma^2 = 25$. Find $\mathrm{Var{}(M)$.
+**(c)** The variance of the actual exam marks around the regression line is $\sigma^2 = 25$. Find $\mathrm{Var}(M)$.
 
 **(d)** A student studies for exactly 3 hours. The regression line predicts $M = 35$. Explain why the actual exam mark is unlikely to be exactly 35, and calculate the probability that a student who revises for 3 hours scores above 40, assuming the residuals are normally distributed.
 
@@ -332,19 +332,19 @@ $$P(H = h) = \begin{cases} 0.1 & h = 1 \\ 0.2 & h = 2 \\ 0.3 & h = 3 \\ 0.25 & h
 
 **(a)**
 
-$$\mathrm{E{}(H) = \sum h \cdot P(H = h) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.25) + 5(0.15)$$
+$$\mathrm{E}(H) = \sum h \cdot P(H = h) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.25) + 5(0.15)$$
 
 $$= 0.1 + 0.4 + 0.9 + 1.0 + 0.75 = 3.15$$
 
-$$\mathrm{E{}(H^2) = 1(0.1) + 4(0.2) + 9(0.3) + 16(0.25) + 25(0.15)$$
+$$\mathrm{E}(H^2) = 1(0.1) + 4(0.2) + 9(0.3) + 16(0.25) + 25(0.15)$$
 
 $$= 0.1 + 0.8 + 2.7 + 4.0 + 3.75 = 11.35$$
 
-$$\mathrm{Var{}(H) = \mathrm{E{}(H^2) - [\mathrm{E{}(H)]^2 = 11.35 - 3.15^2 = 11.35 - 9.9225 = 1.4275$$
+$$\mathrm{Var}(H) = \mathrm{E}(H^2) - [\mathrm{E}(H)]^2 = 11.35 - 3.15^2 = 11.35 - 9.9225 = 1.4275$$
 
 **(b)** Using the linearity of expectation:
 
-$$\mathrm{E{}(M) = \mathrm{E{}(5H + 20) = 5\mathrm{E{}(H) + 20 = 5(3.15) + 20 = 15.75 + 20 = 35.75$$
+$$\mathrm{E}(M) = \mathrm{E}(5H + 20) = 5\mathrm{E}(H) + 20 = 5(3.15) + 20 = 15.75 + 20 = 35.75$$
 
 Alternatively, using the law of total expectation: the predicted mark for each value of $H$ is $5h + 20$, and we average these predictions weighted by the probability of each $h$. This gives the same result.
 
@@ -352,17 +352,17 @@ Alternatively, using the law of total expectation: the predicted mark for each v
 1. Variance due to the variation in $H$ across students.
 2. Variance due to the scatter around the regression line.
 
-$$\mathrm{Var{}(M) = \mathrm{Var{}(5H + 20 + \varepsilon) = \mathrm{Var{}(5H) + \mathrm{Var{}(\varepsilon)$$
+$$\mathrm{Var}(M) = \mathrm{Var}(5H + 20 + \varepsilon) = \mathrm{Var}(5H) + \mathrm{Var}(\varepsilon)$$
 
 where $\varepsilon$ represents the random scatter (residuals), assumed independent of $H$.
 
-$$\mathrm{Var{}(5H) = 5^2 \mathrm{Var{}(H) = 25 \times 1.4275 = 35.6875$$
+$$\mathrm{Var}(5H) = 5^2 \mathrm{Var}(H) = 25 \times 1.4275 = 35.6875$$
 
-$$\mathrm{Var{}(\varepsilon) = \sigma^2 = 25$$
+$$\mathrm{Var}(\varepsilon) = \sigma^2 = 25$$
 
-$$\mathrm{Var{}(M) = 35.6875 + 25 = 60.6875$$
+$$\mathrm{Var}(M) = 35.6875 + 25 = 60.6875$$
 
-$$\mathrm{SD{}(M) = \sqrt{60.6875} \approx 7.79$$
+$$\mathrm{SD}(M) = \sqrt{60.6875} \approx 7.79$$
 
 **(d)** The regression line gives the **expected** (mean) exam mark for a given number of revision hours. Individual students will score above or below this prediction due to other factors not captured by the model (natural ability, exam difficulty, etc.). The residual for a student who revises 3 hours is the difference between their actual mark and the predicted mark of 35.
 
@@ -419,7 +419,7 @@ The residual for $T = 30$ is $-217.3$, which is enormously negative. The predict
 
 $$r = \frac{S_{TS}}{\sqrt{S_{TT} \cdot S_{SS}}} = \frac{3292}{\sqrt{238 \times 46247}}$$
 
-$$= \frac{3292}{\sqrt{11006786}} = \frac{3292}{3317.65} = 0.9923 \text{ (4 d.p.){}$$
+$$= \frac{3292}{\sqrt{11006786}} = \frac{3292}{3317.65} = 0.9923 \text{ (4 d.p.)}$$
 
 Regression coefficient:
 
@@ -433,7 +433,7 @@ New regression line: $S = 13.83T - 116$ (to 3 s.f.)
 
 **(c)** Original PMCC: $r = 0.893$. New PMCC: $r = 0.992$.
 
-$$\text{Percentage change{} = \frac{0.992 - 0.893}{0.893} \times 100 = \frac{0.099}{0.893} \times 100 = 11.1\%$$
+$$\text{Percentage change} = \frac{0.992 - 0.893}{0.893} \times 100 = \frac{0.099}{0.893} \times 100 = 11.1\%$$
 
 The PMCC increased by approximately 11.1%. This demonstrates that the PMCC is **sensitive to outliers** because it uses the actual data values (and their deviations from the mean). A single extreme value can substantially reduce the PMCC.
 

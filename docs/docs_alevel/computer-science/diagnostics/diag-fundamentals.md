@@ -109,12 +109,12 @@ Each AND becomes NAND followed by NAND (as inverter). Each OR becomes NAND.
 
 Using De Morgan's: $F = \overline{\overline{AB} \cdot \overline{BC} \cdot \overline{AC}}$.
 
-This uses three NAND gates for the AND operations (actually, we can use NAND directly since $\text{NAND{}(A,B) = \overline{AB}$), and one NAND gate for the final OR (since $\overline{\overline{AB} \cdot \overline{CD}} = AB + CD$). Total: 4 NAND gates.
+This uses three NAND gates for the AND operations (actually, we can use NAND directly since $\text{NAND}(A,B) = \overline{AB}$), and one NAND gate for the final OR (since $\overline{\overline{AB} \cdot \overline{CD}} = AB + CD$). Total: 4 NAND gates.
 
 ## Integration Tests
 
 ### IT-1: Number Systems and Data Representation (with Data Representation in Programming)
-**Question:** The 16-bit two's complement number $1111111111101001_2$ is stored in memory at address $\text{0x1A00{}$. (a) What decimal value does it represent? (b) If this represents the count of characters in a UTF-8 encoded string, how many bytes of memory does the string occupy? (c) If the string contains only ASCII characters, what is the maximum possible length of the string in characters?
+**Question:** The 16-bit two's complement number $1111111111101001_2$ is stored in memory at address $\text{0x1A00}$. (a) What decimal value does it represent? (b) If this represents the count of characters in a UTF-8 encoded string, how many bytes of memory does the string occupy? (c) If the string contains only ASCII characters, what is the maximum possible length of the string in characters?
 
 **Solution:**
 
@@ -184,7 +184,7 @@ Note: the error does NOT grow by a factor of 10 -- it stays at $0.00390625$ beca
 
 ---
 ### IT-3: Boolean Algebra and Logic Gates (with Computer Architecture)
-**Question:** A half-adder adds two 1-bit numbers and produces a sum and carry. (a) Derive the Boolean expressions for sum ($S$) and carry ($C$). (b) Show how two half-adders and an OR gate can be combined to create a full-adder. (c) For a 4-bit ripple-carry adder, calculate the maximum propagation delay if each half-adder has a delay of $5\ \text{ns{}$ and each OR gate has a delay of $3\ \text{ns{}$.
+**Question:** A half-adder adds two 1-bit numbers and produces a sum and carry. (a) Derive the Boolean expressions for sum ($S$) and carry ($C$). (b) Show how two half-adders and an OR gate can be combined to create a full-adder. (c) For a 4-bit ripple-carry adder, calculate the maximum propagation delay if each half-adder has a delay of $5\ \text{ns}$ and each OR gate has a delay of $3\ \text{ns}$.
 
 **Solution:**
 
@@ -203,21 +203,21 @@ $C = AB$ (AND).
 (b) Full adder from two half-adders:
 
 First half-adder: inputs $A$, $B$. Produces $S_1 = A \oplus B$ and $C_1 = AB$.
-Second half-adder: inputs $S_1$, $C_{\text{in{}}$. Produces $S = S_1 \oplus C_{\text{in{}} = A \oplus B \oplus C_{\text{in{}}$ and $C_2 = S_1 \cdot C_{\text{in{}}$.
-OR gate: $C_{\text{out{}} = C_1 + C_2 = AB + (A \oplus B)C_{\text{in{}}$.
+Second half-adder: inputs $S_1$, $C_{\text{in}}$. Produces $S = S_1 \oplus C_{\text{in}} = A \oplus B \oplus C_{\text{in}}$ and $C_2 = S_1 \cdot C_{\text{in}}$.
+OR gate: $C_{\text{out}} = C_1 + C_2 = AB + (A \oplus B)C_{\text{in}}$.
 
 (c) For a 4-bit ripple-carry adder: each full-adder must wait for the carry from the previous stage.
 
 Each full-adder uses 2 half-adders (5 ns each) and 1 OR gate (3 ns). But the critical path is the carry propagation.
 
-Stage 1: $C_{\text{in{}} = 0$, so $C_2 = S_1 \cdot C_{\text{in{}} = 0$ and $C_{\text{out{}} = C_1 = AB$. Carry out is ready after the first half-adder produces $C_1$, i.e., 5 ns.
+Stage 1: $C_{\text{in}} = 0$, so $C_2 = S_1 \cdot C_{\text{in}} = 0$ and $C_{\text{out}} = C_1 = AB$. Carry out is ready after the first half-adder produces $C_1$, i.e., 5 ns.
 
 For subsequent stages: the carry-in must propagate through. The longest path for carry:
 - HA1 in stage $i$: 5 ns to produce $S_1$ (needed for $C_2$).
-- HA2 in stage $i$: 5 ns to produce $C_2 = S_1 \cdot C_{\text{in{}}$.
-- OR gate: 3 ns for $C_{\text{out{}}$.
+- HA2 in stage $i$: 5 ns to produce $C_2 = S_1 \cdot C_{\text{in}}$.
+- OR gate: 3 ns for $C_{\text{out}}$.
 - Total per stage: $5 + 5 + 3 = 13$ ns.
 
-For 4 stages: $5$ (first stage) $+ 3 \times 13 = 5 + 39 = 44\text{ ns{}$.
+For 4 stages: $5$ (first stage) $+ 3 \times 13 = 5 + 39 = 44\text{ ns}$.
 
-Maximum propagation delay: $44\text{ ns{}$.
+Maximum propagation delay: $44\text{ ns}$.

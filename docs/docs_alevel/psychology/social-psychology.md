@@ -136,11 +136,11 @@ instructed them to harm another person.
 **Procedure**: $40$ male participants (aged $20$--$50$, from various occupations) were recruited for
 a study supposedly on "learning and memory." Participants were assigned the role of "teacher" and a
 confederate played the role of "learner." The teacher was instructed to administer electric shocks
-of increasing intensity (from $15\;\mathrm{V{}$ to $450\;\mathrm{V{}$) each time the learner made an
+of increasing intensity (from $15\;\mathrm{V}$ to $450\;\mathrm{V}$) each time the learner made an
 error on a word-pair task. No actual shocks were delivered, but the teacher believed they were real.
 
-**Findings**: $100\%$ of participants administered shocks up to $300\;\mathrm{V{}$; $65\%$
-administered the maximum $450\;\mathrm{V{}$ shock. Participants showed signs of extreme tension
+**Findings**: $100\%$ of participants administered shocks up to $300\;\mathrm{V}$; $65\%$
+administered the maximum $450\;\mathrm{V}$ shock. Participants showed signs of extreme tension
 (sweating, trembling, stuttering, nervous laughter), yet most continued to obey.
 
 **Variations and findings:**
@@ -154,9 +154,9 @@ administered the maximum $450\;\mathrm{V{}$ shock. Participants showed signs of 
   obedience fell to $20.5\%$. Participants defied orders when the authority figure was not
   physically present.
 - **Peer rebellion**: when two confederates (co-teachers) refused to continue, only $10\%$ of
-  participants proceeded to $450\;\mathrm{V{}$. Dissent by others dramatically reduced obedience.
+  participants proceeded to $450\;\mathrm{V}$. Dissent by others dramatically reduced obedience.
 - **Role of the participant**: when the participant was assigned the role of recording results while
-  another confederate administered shocks, $92.5\%$ continued to $450\;\mathrm{V{}$. The passive role
+  another confederate administered shocks, $92.5\%$ continued to $450\;\mathrm{V}$. The passive role
   increased obedience.
 
 **Evaluation:**
@@ -188,7 +188,7 @@ Limitations:
   agentic state (feeling responsible to the authority figure). They pass moral responsibility to the
   authority: "I was just following orders."
 - **Proximity**: physical proximity of the victim increases empathy and reduces obedience.
-- **Gradual commitment (foot-in-the-door)**: shocks increased in $15\;\mathrm{V{}$ increments, making
+- **Gradual commitment (foot-in-the-door)**: shocks increased in $15\;\mathrm{V}$ increments, making
   each step feel like a small escalation from the last.
 - **Buffers**: physical and psychological distance from the consequences of one's actions reduce the
   moral strain of obedience.

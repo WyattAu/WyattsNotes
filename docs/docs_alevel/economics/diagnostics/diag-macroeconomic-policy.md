@@ -10,17 +10,17 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: The Multiplier Effect
-**Question:** In a closed economy with no government, the marginal propensity to consume is $\text{MPC{} = 0.75$. An increase in investment of $\pounds 200$~m occurs. Calculate: (a) the multiplier, (b) the total change in national income, (c) the change in consumption. If the government introduces a proportional income tax of $t = 0.2$ and $\text{MPM{} = 0.1$, recalculate the multiplier.
+**Question:** In a closed economy with no government, the marginal propensity to consume is $\text{MPC} = 0.75$. An increase in investment of $\pounds 200$~m occurs. Calculate: (a) the multiplier, (b) the total change in national income, (c) the change in consumption. If the government introduces a proportional income tax of $t = 0.2$ and $\text{MPM} = 0.1$, recalculate the multiplier.
 
 **Solution:**
 
-(a) Simple multiplier: $k = \frac{1}{1 - \text{MPC{}} = \frac{1}{1 - 0.75} = \frac{1}{0.25} = 4$.
+(a) Simple multiplier: $k = \frac{1}{1 - \text{MPC}} = \frac{1}{1 - 0.75} = \frac{1}{0.25} = 4$.
 
 (b) Change in income: $\Delta Y = k \times \Delta I = 4 \times 200 = \pounds 800$~m.
 
-(c) Change in consumption: $\Delta C = \text{MPC{} \times \Delta Y = 0.75 \times 800 = \pounds 600$~m.
+(c) Change in consumption: $\Delta C = \text{MPC} \times \Delta Y = 0.75 \times 800 = \pounds 600$~m.
 
-With tax and imports, the complex multiplier: $k = \frac{1}{1 - \text{MPC{}(1-t) + \text{MPM{}}$.
+With tax and imports, the complex multiplier: $k = \frac{1}{1 - \text{MPC}(1-t) + \text{MPM}}$.
 
 $k = \frac{1}{1 - 0.75(1 - 0.2) + 0.1} = \frac{1}{1 - 0.75(0.8) + 0.1} = \frac{1}{1 - 0.60 + 0.1} = \frac{1}{0.50} = 2$.
 
@@ -52,7 +52,7 @@ The natural rate is 5%.
 
 **Solution:**
 
-(a) Multiplier: $k = \frac{1}{1 - \text{MPC{}(1-t) + \text{MPM{}}$
+(a) Multiplier: $k = \frac{1}{1 - \text{MPC}(1-t) + \text{MPM}}$
 
 $k = \frac{1}{1 - 0.8(0.75) + 0.15} = \frac{1}{1 - 0.60 + 0.15} = \frac{1}{0.55} = 1.82$
 
@@ -70,14 +70,14 @@ Investment reduction: $0.5 \times 10 = \pounds 5$~bn.
 
 The crowding out effect reduces the net fiscal expansion. The effective change in aggregate demand is not just the multiplier effect on government spending, but also accounts for the fall in investment:
 
-$\Delta \text{AD{} = k_G \times 50 + k_I \times (-5) = 91 + 1.82 \times (-5) = 91 - 9.1 = \pounds 81.9$~bn.
+$\Delta \text{AD} = k_G \times 50 + k_I \times (-5) = 91 + 1.82 \times (-5) = 91 - 9.1 = \pounds 81.9$~bn.
 
 The crowding out reduces the expansionary effect by about 10%. In practice, the extent of crowding out depends on the state of the economy (it is larger when the economy is near full employment and smaller in a recession with a liquidity trap).
 
 ## Integration Tests
 
 ### IT-1: Monetary Policy Transmission Mechanism (with The Financial Sector)
-**Question:** The Bank of England raises the base rate from 2% to 3%. Trace the full monetary policy transmission mechanism, explaining each step. Given that the money multiplier is 5 and the banking system holds no excess reserves, calculate: (a) the maximum change in the money supply if the central bank sells $\pounds 2$~bn of government bonds through open market operations simultaneously, (b) the impact on the velocity of money if $\text{MV{} = PY$ and $Y$ rises by 2% while $P$ is unchanged.
+**Question:** The Bank of England raises the base rate from 2% to 3%. Trace the full monetary policy transmission mechanism, explaining each step. Given that the money multiplier is 5 and the banking system holds no excess reserves, calculate: (a) the maximum change in the money supply if the central bank sells $\pounds 2$~bn of government bonds through open market operations simultaneously, (b) the impact on the velocity of money if $\text{MV} = PY$ and $Y$ rises by 2% while $P$ is unchanged.
 
 **Solution:**
 
@@ -93,11 +93,11 @@ The crowding out reduces the expansionary effect by about 10%. In practice, the 
 
 Maximum change in money supply $= 5 \times (-2) = -\pounds 10$~bn.
 
-(b) $\text{MV{} = PY$. If $Y$ rises by 2% and $P$ is unchanged, then $\text{MV{}$ must rise by 2%.
+(b) $\text{MV} = PY$. If $Y$ rises by 2% and $P$ is unchanged, then $\text{MV}$ must rise by 2%.
 
 If $M$ decreases (from the open market sale), then $V$ must increase to compensate. The relationship is:
 
-$\frac{\Delta(\text{MV{})}{\text{MV{}} = \frac{\Delta M}{M} + \frac{\Delta V}{V} + \frac{\Delta M}{M} \times \frac{\Delta V}{V}$
+$\frac{\Delta(\text{MV})}{\text{MV}} = \frac{\Delta M}{M} + \frac{\Delta V}{V} + \frac{\Delta M}{M} \times \frac{\Delta V}{V}$
 
 For small changes: $\frac{\Delta M}{M} + \frac{\Delta V}{V} \approx 2\%$.
 
@@ -117,7 +117,7 @@ This scenario is contradictory: the interest rate rise and bond sale both reduce
 
 (b) With AD unchanged and unitary elasticity (PQ approximately constant at potential):
 
-Initial: $P_0 \times 2000 = \text{AD{}$, New: $P_1 \times 2100 = \text{AD{}$.
+Initial: $P_0 \times 2000 = \text{AD}$, New: $P_1 \times 2100 = \text{AD}$.
 
 $P_1 \times 2100 = P_0 \times 2000$, so $P_1 = P_0 \times \frac{2000}{2100} = P_0 \times 0.9524$.
 
@@ -144,17 +144,17 @@ Let me use: exports $= \pounds 400$~bn, imports $= \pounds 450$~bn, deficit $= \
 
 With 20% depreciation, import prices rise by approximately 20% (in pound terms) and export prices fall by approximately 20% (in foreign currency terms).
 
-Short-run: $\% \Delta \text{exports{} = 0.3 \times 20 = 6\%$ (assuming export PED $= 0.3$). New exports $= 400 \times 1.06 = \pounds 424$~bn.
+Short-run: $\% \Delta \text{exports} = 0.3 \times 20 = 6\%$ (assuming export PED $= 0.3$). New exports $= 400 \times 1.06 = \pounds 424$~bn.
 
-$\% \Delta \text{imports{} = -0.3 \times 20 = -6\%$ (import PED $= 0.3$). New import volume $= 450 \times 0.94 = \pounds 423$~bn at old prices, but at 20% higher prices $= 423 \times 1.20 = \pounds 507.6$~bn.
+$\% \Delta \text{imports} = -0.3 \times 20 = -6\%$ (import PED $= 0.3$). New import volume $= 450 \times 0.94 = \pounds 423$~bn at old prices, but at 20% higher prices $= 423 \times 1.20 = \pounds 507.6$~bn.
 
 New deficit $= 507.6 - 424 = \pounds 83.6$~bn. The deficit **worsens** by $\pounds 33.6$~bn in the short run -- the J-curve effect.
 
 (b) **Long-run improvement:** PEDs sum to 1.8 (Marshall-Lerner satisfied).
 
-$\% \Delta \text{exports{} = 0.9 \times 20 = 18\%$. New exports $= 400 \times 1.18 = \pounds 472$~bn.
+$\% \Delta \text{exports} = 0.9 \times 20 = 18\%$. New exports $= 400 \times 1.18 = \pounds 472$~bn.
 
-$\% \Delta \text{imports{} = -0.9 \times 20 = -18\%$. New import volume $= 450 \times 0.82 = 369$ at old prices, but at 20% higher prices $= 369 \times 1.20 = \pounds 442.8$~bn.
+$\% \Delta \text{imports} = -0.9 \times 20 = -18\%$. New import volume $= 450 \times 0.82 = 369$ at old prices, but at 20% higher prices $= 369 \times 1.20 = \pounds 442.8$~bn.
 
 New deficit $= 442.8 - 472 = -\pounds 29.2$~bn (surplus of $\pounds 29.2$~bn).
 
@@ -231,16 +231,16 @@ $500 - 2P = 4P - 120 \Rightarrow 620 = 6P \Rightarrow P = 103.33$, $Y = 500 - 20
 
 **Solution:**
 
-(a) Interest payments $= 0.04 \times 1800 = \pounds 72\text{bn{}$.
-Total deficit = primary deficit + interest payments. $100 = \text{primary deficit{} + 72$.
-Primary deficit $= \pounds 28\text{bn{}$ (1.4% of GDP).
+(a) Interest payments $= 0.04 \times 1800 = \pounds 72\text{bn}$.
+Total deficit = primary deficit + interest payments. $100 = \text{primary deficit} + 72$.
+Primary deficit $= \pounds 28\text{bn}$ (1.4% of GDP).
 
 (b) Debt-stabilising condition: the debt ratio is stable when $b_{t+1} = b_t$, i.e., $(r - g - \pi)b = p$.
 Nominal GDP growth $= g + \pi = 2 + 3 = 5\%$. Real interest rate on debt $= r - \pi = 4 - 3 = 1\%$.
 Using the approximation: $(r - g_{nominal})b = p$ where $r$ is nominal rate and $g_{nominal} = 5\%$.
 $(0.04 - 0.05) \times 90 = p \Rightarrow -0.01 \times 90 = p \Rightarrow p = -0.9$.
 
-The debt-stabilising primary balance is a SURPLUS of 0.9% of GDP ($\pounds 18\text{bn{}$). Since the current primary balance is a DEFICIT of 1.4%, the debt ratio is rising.
+The debt-stabilising primary balance is a SURPLUS of 0.9% of GDP ($\pounds 18\text{bn}$). Since the current primary balance is a DEFICIT of 1.4%, the debt ratio is rising.
 
 (c) Year-by-year debt ratio evolution ($b_0 = 90\%$, $p = -1.4\%$, $r - g_{nominal} = -1\%$):
 $b_{t+1} = (1 - 0.01)b_t - (-1.4) = 0.99b_t + 1.4$.
@@ -259,7 +259,7 @@ $\frac{1 - 0.9044}{0.01} = 9.56$.
 $60 = 81.4 + 9.56p$.
 $9.56p = -21.4 \Rightarrow p = -2.24\%$ of GDP.
 
-A primary surplus of 2.24% of GDP ($\pounds 44.8\text{bn{}$) sustained for 10 years would reduce the debt ratio from 90% to 60%.
+A primary surplus of 2.24% of GDP ($\pounds 44.8\text{bn}$) sustained for 10 years would reduce the debt ratio from 90% to 60%.
 
 ---
 
@@ -268,16 +268,16 @@ A primary surplus of 2.24% of GDP ($\pounds 44.8\text{bn{}$) sustained for 10 ye
 **Solution:**
 
 (a) Interest elasticity: $\% \Delta I = \epsilon_I \times \% \Delta r = -0.5 \times \left(\frac{4 - 3}{3} \times 100\right) = -0.5 \times 33.3\% = -16.7\%$.
-$\Delta I = -16.7\% \times 300 = -\pounds 50\text{bn{}$. New investment $= \pounds 250\text{bn{}$.
+$\Delta I = -16.7\% \times 300 = -\pounds 50\text{bn}$. New investment $= \pounds 250\text{bn}$.
 
-(b) $\Delta Y = k \times \Delta I = 2 \times (-50) = -\pounds 100\text{bn{}$.
+(b) $\Delta Y = k \times \Delta I = 2 \times (-50) = -\pounds 100\text{bn}$.
 
 (c) Exchange rate appreciation of 3% makes UK exports 3% more expensive in foreign currency terms.
 $\% \Delta X = PED_X \times \% \Delta P = -0.8 \times 3 = -2.4\%$.
-$\Delta X = -2.4\% \times 500 = -\pounds 12\text{bn{}$. New exports $= \pounds 488\text{bn{}$.
+$\Delta X = -2.4\% \times 500 = -\pounds 12\text{bn}$. New exports $= \pounds 488\text{bn}$.
 
 (d) Total change in AD $= \Delta I + k_{net\_exports} \times \Delta X$.
-The export change also goes through the multiplier: $\Delta Y_{exports} = 2 \times (-12) = -\pounds 24\text{bn{}$.
-Total $\Delta Y = -100 - 24 = -\pounds 124\text{bn{}$.
+The export change also goes through the multiplier: $\Delta Y_{exports} = 2 \times (-12) = -\pounds 24\text{bn}$.
+Total $\Delta Y = -100 - 24 = -\pounds 124\text{bn}$.
 
 If GDP was $\pounds 2000$bn, this is a contraction of 6.2%. This is a large effect, illustrating the power of monetary policy. In practice, the effects are spread over 2-3 years and may be partially offset by other factors (e.g., falling inflation boosts real incomes).

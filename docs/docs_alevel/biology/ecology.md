@@ -56,12 +56,12 @@ organisms eat (and are eaten by) multiple species.
 **Gross primary production (GPP)** is the total rate at which energy is captured by photosynthesis
 in a given area per unit time:
 
-$$\mathrm{GPP{} = \mathrm{total\ solar\ energy\ fixed\ by\ photosynthesis\ per\ unit\ area\ per\ unit\ time{}$$
+$$\mathrm{GPP} = \mathrm{total\ solar\ energy\ fixed\ by\ photosynthesis\ per\ unit\ area\ per\ unit\ time}$$
 
 **Net primary production (NPP)** is the energy available to consumers after the producers have met
 their own respiratory demands:
 
-$$\mathrm{NPP{} = \mathrm{GPP{} - R$$
+$$\mathrm{NPP} = \mathrm{GPP} - R$$
 
 where $R$ is the energy lost through plant respiration.
 
@@ -175,34 +175,34 @@ Key processes:
 ### 3.2 The Nitrogen Cycle
 
 Nitrogen is essential for amino acids, proteins, nucleic acids, and ATP. Despite being 78% of the
-atmosphere, atmospheric $\mathrm{N_2{}$ is unreactive and cannot be used directly by most organisms.
+atmosphere, atmospheric $\mathrm{N_2}$ is unreactive and cannot be used directly by most organisms.
 
 **Key stages:**
 
-1. **Nitrogen fixation**: conversion of atmospheric $\mathrm{N_2{}$ into ammonia ($\mathrm{NH_3{}$) or
-   ammonium ions ($\mathrm{NH_4^+{}$).
+1. **Nitrogen fixation**: conversion of atmospheric $\mathrm{N_2}$ into ammonia ($\mathrm{NH_3}$) or
+   ammonium ions ($\mathrm{NH_4^+}$).
    - **Biological fixation**: by nitrogen-fixing bacteria (e.g., _Rhizobium_ in root nodules of
      legumes; _Azotobacter_ in soil). These bacteria possess the enzyme **nitrogenase**, which
      catalyses:
-     $\mathrm{N_2{} + 6\mathrm{H{}^+ + 6e^- + 16\mathrm{ATP{} \to 2\mathrm{NH_3{} + 16\mathrm{ADP{} + 16P_i$.
+     $\mathrm{N_2} + 6\mathrm{H}^+ + 6e^- + 16\mathrm{ATP} \to 2\mathrm{NH_3} + 16\mathrm{ADP} + 16P_i$.
    - **Industrial fixation**: Haber process
-     ($\mathrm{N_2{} + 3\mathrm{H_2{} \rightleftharpoons 2\mathrm{NH_3{}$, high temperature and
+     ($\mathrm{N_2} + 3\mathrm{H_2} \rightleftharpoons 2\mathrm{NH_3}$, high temperature and
      pressure, iron catalyst).
-   - **Lightning**: high energy converts $\mathrm{N_2{}$ to $\mathrm{NO_x{}$, which dissolves in rain
-     as $\mathrm{NO_3^-{}$.
+   - **Lightning**: high energy converts $\mathrm{N_2}$ to $\mathrm{NO_x}$, which dissolves in rain
+     as $\mathrm{NO_3^-}$.
 
-2. **Nitrification**: conversion of $\mathrm{NH_4^+{}$ to nitrite ($\mathrm{NO_2^-{}$) by
-   _Nitrosomonas_ bacteria, then to nitrate ($\mathrm{NO_3^-{}$) by _Nitrobacter_ bacteria. Nitrates
+2. **Nitrification**: conversion of $\mathrm{NH_4^+}$ to nitrite ($\mathrm{NO_2^-}$) by
+   _Nitrosomonas_ bacteria, then to nitrate ($\mathrm{NO_3^-}$) by _Nitrobacter_ bacteria. Nitrates
    are the form most readily absorbed by plants.
 
-3. **Assimilation**: plants absorb $\mathrm{NO_3^-{}$ and $\mathrm{NH_4^+{}$ through their roots and
+3. **Assimilation**: plants absorb $\mathrm{NO_3^-}$ and $\mathrm{NH_4^+}$ through their roots and
    incorporate nitrogen into amino acids, proteins, and nucleic acids. Animals obtain nitrogen by
    eating plants or other animals.
 
 4. **Ammonification**: decomposers break down proteins and urea in dead organisms and waste,
-   releasing $\mathrm{NH_3{}$ (which forms $\mathrm{NH_4^+{}$ in solution).
+   releasing $\mathrm{NH_3}$ (which forms $\mathrm{NH_4^+}$ in solution).
 
-5. **Denitrification**: conversion of $\mathrm{NO_3^-{}$ back to $\mathrm{N_2{}$ and $\mathrm{N_2O{}$
+5. **Denitrification**: conversion of $\mathrm{NO_3^-}$ back to $\mathrm{N_2}$ and $\mathrm{N_2O}$
    by denitrifying bacteria (e.g., _Pseudomonas_) in anaerobic conditions (waterlogged soil). This
    returns nitrogen to the atmosphere, completing the cycle.
 
@@ -212,15 +212,15 @@ Carbon is the backbone of all organic molecules.
 
 **Key processes:**
 
-- **Photosynthesis**: $\mathrm{6CO_2{} + 6\mathrm{H_2O{} \to \mathrm{C_6H_{12}O_6} + 6\mathrm{O_2{}$
+- **Photosynthesis**: $\mathrm{6CO_2} + 6\mathrm{H_2O} \to \mathrm{C_6H_{12}O_6} + 6\mathrm{O_2}$
   (carbon moves from atmosphere/bicarbonate to organic molecules in producers).
-- **Respiration**: $\mathrm{C_6H_{12}O_6} + 6\mathrm{O_2{} \to 6\mathrm{CO_2{} + 6\mathrm{H_2O{}$
+- **Respiration**: $\mathrm{C_6H_{12}O_6} + 6\mathrm{O_2} \to 6\mathrm{CO_2} + 6\mathrm{H_2O}$
   (carbon returns to atmosphere).
-- **Combustion**: burning fossil fuels and biomass releases $\mathrm{CO_2{}$.
-- **Decomposition**: decomposers break down organic matter, releasing $\mathrm{CO_2{}$.
+- **Combustion**: burning fossil fuels and biomass releases $\mathrm{CO_2}$.
+- **Decomposition**: decomposers break down organic matter, releasing $\mathrm{CO_2}$.
 - **Fossilisation**: incomplete decomposition of organic matter over millions of years forms coal,
   oil, and natural gas, sequestering carbon.
-- **Ocean exchange**: $\mathrm{CO_2{}$ dissolves in ocean water, forming $\mathrm{HCO_3^-{}$ and
+- **Ocean exchange**: $\mathrm{CO_2}$ dissolves in ocean water, forming $\mathrm{HCO_3^-}$ and
   $\mathrm{CO_3^{2-}}$ (carbonate buffer system). Marine organisms incorporate carbonate into shells
   and skeletons.
 
@@ -314,7 +314,7 @@ following Rachel Carson's _Silent Spring_ (1962).
 Removal of forests for agriculture, logging, and urbanisation has consequences:
 
 - Loss of biodiversity (habitat destruction, species extinction).
-- Increased $\mathrm{CO_2{}$ (loss of photosynthesis, release from burning).
+- Increased $\mathrm{CO_2}$ (loss of photosynthesis, release from burning).
 - Soil erosion (loss of tree roots that bind soil).
 - Disruption of the water cycle (less transpiration, reduced rainfall).
 - Loss of indigenous knowledge and cultural heritage.
@@ -327,7 +327,7 @@ The greenhouse effect is the process by which certain gases in the atmosphere (g
 absorb and re-radiate infrared radiation emitted by the Earth's surface, warming the planet.
 
 **Natural greenhouse effect**: essential for life; without it, Earth's average temperature would be
-approximately $-18\ ^\circ\mathrm{C{}$ instead of $+15\ ^^\circ\mathrm{C{}$.
+approximately $-18\ ^\circ\mathrm{C}$ instead of $+15\ ^^\circ\mathrm{C}$.
 
 **Enhanced greenhouse effect**: anthropogenic (human-caused) increases in greenhouse gas
 concentrations are intensifying the warming effect.
@@ -336,22 +336,22 @@ concentrations are intensifying the warming effect.
 
 | Gas             | Pre-industrial concentration | Current concentration        | Contribution   |
 | --------------- | ---------------------------- | ---------------------------- | -------------- |
-| $\mathrm{CO_2{}$ | $\approx 280\ \mathrm{ppm{}$  | $\approx 420\ \mathrm{ppm{}$  | $\approx 60\%$ |
-| $\mathrm{CH_4{}$ | $\approx 700\ \mathrm{ppb{}$  | $\approx 1900\ \mathrm{ppb{}$ | $\approx 20\%$ |
-| $\mathrm{N_2O{}$ | $\approx 270\ \mathrm{ppb{}$  | $\approx 330\ \mathrm{ppb{}$  | $\approx 6\%$  |
+| $\mathrm{CO_2}$ | $\approx 280\ \mathrm{ppm}$  | $\approx 420\ \mathrm{ppm}$  | $\approx 60\%$ |
+| $\mathrm{CH_4}$ | $\approx 700\ \mathrm{ppb}$  | $\approx 1900\ \mathrm{ppb}$ | $\approx 20\%$ |
+| $\mathrm{N_2O}$ | $\approx 270\ \mathrm{ppb}$  | $\approx 330\ \mathrm{ppb}$  | $\approx 6\%$  |
 
-Sources: $\mathrm{CO_2{}$ from fossil fuel combustion and deforestation; $\mathrm{CH_4{}$ from
-agriculture (rice paddies, cattle), landfill, and fossil fuel extraction; $\mathrm{N_2O{}$ from
+Sources: $\mathrm{CO_2}$ from fossil fuel combustion and deforestation; $\mathrm{CH_4}$ from
+agriculture (rice paddies, cattle), landfill, and fossil fuel extraction; $\mathrm{N_2O}$ from
 agricultural fertilisers and industrial processes.
 
 ### 6.2 Consequences of Global Warming
 
 - **Rising temperatures**: global average temperature has risen by approximately
-  $1.1\ ^\circ\mathrm{C{}$ since pre-industrial times.
+  $1.1\ ^\circ\mathrm{C}$ since pre-industrial times.
 - **Melting ice caps and glaciers**: contributing to sea level rise (approximately
   $3.6\ \mathrm{mm\ yr^{-1}}$).
 - **Sea level rise**: thermal expansion of seawater plus ice melt threatens low-lying coastal areas.
-- **Ocean acidification**: increased $\mathrm{CO_2{}$ absorption lowers ocean pH, threatening coral
+- **Ocean acidification**: increased $\mathrm{CO_2}$ absorption lowers ocean pH, threatening coral
   reefs and shellfish.
 - **Changes in weather patterns**: more frequent extreme weather events (heatwaves, storms,
   droughts, flooding).
@@ -418,15 +418,15 @@ efficiency.
 
 Absorbed radiation $= 0.40 \times 2.0 \times 10^6 = 8.0 \times 10^5\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
-$\mathrm{GPP{} = 0.025 \times 8.0 \times 10^5 = 20000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+$\mathrm{GPP} = 0.025 \times 8.0 \times 10^5 = 20000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
-$\mathrm{NPP{} = \mathrm{GPP{} - R = 20000 - 0.60 \times 20000 = 20000 - 12000 = 8000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+$\mathrm{NPP} = \mathrm{GPP} - R = 20000 - 0.60 \times 20000 = 20000 - 12000 = 8000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
 Overall ecological efficiency (from total solar to NPP) $= \frac{8000}{2.0 \times 10^6} = 0.004 = 0.4\%$.
 
-**Worked Example 2.** An area of tropical rainforest has $\mathrm{GPP{} = 22000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
-and $\mathrm{NPP{} = 15000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$. A desert has $\mathrm{GPP{} = 1200\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
-and $\mathrm{NPP{} = 400\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$. Compare the ecological efficiencies.
+**Worked Example 2.** An area of tropical rainforest has $\mathrm{GPP} = 22000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
+and $\mathrm{NPP} = 15000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$. A desert has $\mathrm{GPP} = 1200\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
+and $\mathrm{NPP} = 400\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$. Compare the ecological efficiencies.
 
 Rainforest: fraction lost to respiration $= \frac{22000 - 15000}{22000} = 0.318 = 31.8\%$.
 
@@ -444,7 +444,7 @@ unlimited resources (exponential growth).
 
 $$N_t = N_0 e^{rt} = 100 \times e^{0.693 \times 5} = 100 \times e^{3.465} = 100 \times 31.99 = 3199$$
 
-Note: $r = 0.693\ \mathrm{h^{-1}}$ corresponds to a doubling time of $t_d = \frac{\ln 2}{r} = \frac{0.693}{0.693} = 1\ \mathrm{hour{}$.
+Note: $r = 0.693\ \mathrm{h^{-1}}$ corresponds to a doubling time of $t_d = \frac{\ln 2}{r} = \frac{0.693}{0.693} = 1\ \mathrm{hour}$.
 In 5 hours, the population doubles 5 times: $100 \times 2^5 = 3200$ (consistent with the exponential
 calculation, within rounding).
 
@@ -466,13 +466,13 @@ The **ecological footprint** measures the area of land and water required to pro
 consumed and to absorb the waste produced by a population, expressed in global hectares (gha) per person.
 
 **Worked Example.** If the average person in a country has an ecological footprint of
-$5.0\ \mathrm{gha{}$ and the country's biocapacity is $3.2\ \mathrm{gha{}$ per person:
+$5.0\ \mathrm{gha}$ and the country's biocapacity is $3.2\ \mathrm{gha}$ per person:
 
-Ecological deficit $= 5.0 - 3.2 = 1.8\ \mathrm{gha{}$ per person.
+Ecological deficit $= 5.0 - 3.2 = 1.8\ \mathrm{gha}$ per person.
 
 This means the country is consuming resources faster than they can be regenerated, running an
 ecological deficit. It is meeting the shortfall by importing resources, depleting its own natural
-capital, or emitting waste that cannot be absorbed (e.g., $\mathrm{CO_2{}$ exceeding absorption capacity).
+capital, or emitting waste that cannot be absorbed (e.g., $\mathrm{CO_2}$ exceeding absorption capacity).
 
 :::warning
 Common Pitfall Students sometimes calculate ecological efficiency as the fraction of solar energy
@@ -487,10 +487,10 @@ producers (typically less than 3%).
 ### 9.1 Quantifying the Nitrogen Cycle
 
 **Worked Example.** A farmer applies $150\ \mathrm{kg\ ha^{-1}}$ of ammonium nitrate fertiliser
-($\mathrm{NH_4NO_3{}$, molar mass $= 80\ \mathrm{g\ mol^{-1}}$). Calculate the mass of nitrogen applied
+($\mathrm{NH_4NO_3}$, molar mass $= 80\ \mathrm{g\ mol^{-1}}$). Calculate the mass of nitrogen applied
 per hectare.
 
-Molar mass of $\mathrm{NH_4NO_3{} = 2(14) + 4(1) + 3(16) = 80\ \mathrm{g\ mol^{-1}}$.
+Molar mass of $\mathrm{NH_4NO_3} = 2(14) + 4(1) + 3(16) = 80\ \mathrm{g\ mol^{-1}}$.
 
 Mass fraction of nitrogen $= \frac{28}{80} = 0.35 = 35\%$.
 
@@ -503,18 +503,18 @@ The excess $26.25\ \mathrm{kg\ ha^{-1}}$ contributes to eutrophication if it ent
 ### 9.2 BOD Calculations in Detail
 
 Biochemical oxygen demand (BOD) measures the amount of oxygen (in $\mathrm{mg\ dm^{-3}}$) consumed by
-microorganisms in decomposing organic matter in a water sample over 5 days at $20\ ^\circ\mathrm{C{}$.
+microorganisms in decomposing organic matter in a water sample over 5 days at $20\ ^\circ\mathrm{C}$.
 
 **Worked Example.** A water sample is taken from a river upstream and downstream of a sewage outfall.
 
 | Measurement              | Upstream | Downstream |
 | ------------------------ | -------- | ---------- |
-| Dissolved $\mathrm{O_2{}$ initially ($\mathrm{mg\ dm^{-3}}$) | 9.2  | 8.8        |
-| Dissolved $\mathrm{O_2{}$ after 5 days ($\mathrm{mg\ dm^{-3}}$) | 7.8  | 2.1        |
+| Dissolved $\mathrm{O_2}$ initially ($\mathrm{mg\ dm^{-3}}$) | 9.2  | 8.8        |
+| Dissolved $\mathrm{O_2}$ after 5 days ($\mathrm{mg\ dm^{-3}}$) | 7.8  | 2.1        |
 
-Upstream $\mathrm{BOD{} = 9.2 - 7.8 = 1.4\ \mathrm{mg\ dm^{-3}}$.
+Upstream $\mathrm{BOD} = 9.2 - 7.8 = 1.4\ \mathrm{mg\ dm^{-3}}$.
 
-Downstream $\mathrm{BOD{} = 8.8 - 2.1 = 6.7\ \mathrm{mg\ dm^{-3}}$.
+Downstream $\mathrm{BOD} = 8.8 - 2.1 = 6.7\ \mathrm{mg\ dm^{-3}}$.
 
 The downstream BOD is nearly 5 times higher, indicating significant organic pollution from the sewage
 outfall. The dissolved oxygen level downstream after 5 days ($2.1\ \mathrm{mg\ dm^{-3}}$) is below the
@@ -523,25 +523,25 @@ undergoing hypoxia.
 
 ### 9.3 The Carbon Cycle: Quantitative Analysis
 
-**Worked Example.** An area of forest covers $10\ \mathrm{km^2{}$. The average NPP of the forest is
+**Worked Example.** An area of forest covers $10\ \mathrm{km^2}$. The average NPP of the forest is
 $1200\ \mathrm{g\ C\ m^{-2}\ yr^{-1}}$. The average rate of decomposition returns 900
-$\mathrm{g\ C\ m^{-2}\ yr^{-1}}$ to the atmosphere as $\mathrm{CO_2{}$.
+$\mathrm{g\ C\ m^{-2}\ yr^{-1}}$ to the atmosphere as $\mathrm{CO_2}$.
 
 Total NPP $= 1200 \times 10^7 = 1.2 \times 10^{10}\ \mathrm{g\ C\ yr^{-1}} = 12000\ \mathrm{tonnes\ C\ yr^{-1}}$.
 
-Net carbon sequestration $= \mathrm{NPP{} - \text{decomposition{} = (1200 - 900) \times 10^7 = 3000\ \mathrm{tonnes\ C\ yr^{-1}}$.
+Net carbon sequestration $= \mathrm{NPP} - \text{decomposition} = (1200 - 900) \times 10^7 = 3000\ \mathrm{tonnes\ C\ yr^{-1}}$.
 
 If the forest is cleared, this sequestration is lost. Additionally, burning releases the stored carbon
 in biomass back to the atmosphere. If the forest biomass contains $5000\ \mathrm{tonnes\ C\ km^{-2}}$,
-clearing 10 $\mathrm{km^2{}$ releases 50000 tonnes of carbon, equivalent to
-$50000 \times \frac{44}{12} = 183333\ \mathrm{tonnes\ CO_2{}$.
+clearing 10 $\mathrm{km^2}$ releases 50000 tonnes of carbon, equivalent to
+$50000 \times \frac{44}{12} = 183333\ \mathrm{tonnes\ CO_2}$.
 
 ## 10. Fieldwork Techniques and Data Analysis
 
 ### 10.1 Random Sampling with Quadrats
 
-**Worked Example.** A student uses a $0.5\ \mathrm{m{} \times 0.5\ \mathrm{m{}$ quadrat to estimate the
-population density of daisies in a $100\ \mathrm{m{} \times 50\ \mathrm{m{}$ field. They place 10
+**Worked Example.** A student uses a $0.5\ \mathrm{m} \times 0.5\ \mathrm{m}$ quadrat to estimate the
+population density of daisies in a $100\ \mathrm{m} \times 50\ \mathrm{m}$ field. They place 10
 quadrats randomly and count: 12, 8, 15, 6, 10, 14, 9, 11, 7, 13 daisies.
 
 Mean daisies per quadrat $= \frac{12 + 8 + 15 + 6 + 10 + 14 + 9 + 11 + 7 + 13}{10} = \frac{105}{10} = 10.5$
@@ -552,9 +552,9 @@ Estimated total population $= 42 \times 100 \times 50 = 210000$ daisies.
 
 Standard deviation $= \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}} = \sqrt{\frac{(12-10.5)^2 + (8-10.5)^2 + ... + (13-10.5)^2}{9}} = \sqrt{\frac{70.5}{9}} = \sqrt{7.83} = 2.80$.
 
-Standard error $= \frac{s}{\sqrt{n}} = \frac{2.80}{\sqrt{10}} = 0.89\ \mathrm{daisies\ per\ quadrat{}$.
+Standard error $= \frac{s}{\sqrt{n}} = \frac{2.80}{\sqrt{10}} = 0.89\ \mathrm{daisies\ per\ quadrat}$.
 
-The 95% confidence interval is approximately $\bar{x} \pm 2 \times \mathrm{SE{} = 10.5 \pm 1.78$, or
+The 95% confidence interval is approximately $\bar{x} \pm 2 \times \mathrm{SE} = 10.5 \pm 1.78$, or
 8.72 to 12.28 daisies per quadrat. Converting to total population: 174400 to 245600 daisies.
 
 ### 10.2 The Lincoln Index (Capture-Mark-Recapture)
@@ -592,28 +592,28 @@ If no marked individuals are recaptured ($n_3 = 0$), the method fails entirely.
 
 ### 11.1 Ocean Acidification: Quantitative Analysis
 
-The ocean absorbs approximately 25--30% of anthropogenic $\mathrm{CO_2{}$ emissions. Dissolved
-$\mathrm{CO_2{}$ reacts with water:
+The ocean absorbs approximately 25--30% of anthropogenic $\mathrm{CO_2}$ emissions. Dissolved
+$\mathrm{CO_2}$ reacts with water:
 
-$$\mathrm{CO_2(aq){} + \mathrm{H_2O{} \rightleftharpoons \mathrm{H_2CO_3{} \rightleftharpoons \mathrm{H^+{} + \mathrm{HCO_3^-{} \rightleftharpoons 2\mathrm{H^+{} + \mathrm{CO_3^{2-}}$$
+$$\mathrm{CO_2(aq)} + \mathrm{H_2O} \rightleftharpoons \mathrm{H_2CO_3} \rightleftharpoons \mathrm{H^+} + \mathrm{HCO_3^-} \rightleftharpoons 2\mathrm{H^+} + \mathrm{CO_3^{2-}}$$
 
-Increased $\mathrm{CO_2{}$ drives this equilibrium to the right, increasing $[\mathrm{H^+{}]$ (decreasing
+Increased $\mathrm{CO_2}$ drives this equilibrium to the right, increasing $[\mathrm{H^+}]$ (decreasing
 pH) and decreasing $[\mathrm{CO_3^{2-}}]$.
 
 **Worked Example.** Pre-industrial ocean surface pH was approximately 8.18. Current pH is approximately
-8.07. Calculate the change in $[\mathrm{H^+{}]$.
+8.07. Calculate the change in $[\mathrm{H^+}]$.
 
-Pre-industrial: $[\mathrm{H^+{}] = 10^{-8.18} = 6.61 \times 10^{-9}\ \mathrm{mol\ dm^{-3}}$.
+Pre-industrial: $[\mathrm{H^+}] = 10^{-8.18} = 6.61 \times 10^{-9}\ \mathrm{mol\ dm^{-3}}$.
 
-Current: $[\mathrm{H^+{}] = 10^{-8.07} = 8.51 \times 10^{-9}\ \mathrm{mol\ dm^{-3}}$.
+Current: $[\mathrm{H^+}] = 10^{-8.07} = 8.51 \times 10^{-9}\ \mathrm{mol\ dm^{-3}}$.
 
-Change: $\frac{8.51 - 6.61}{6.61} \times 100\% = 28.7\%$ increase in $[\mathrm{H^+{}]$.
+Change: $\frac{8.51 - 6.61}{6.61} \times 100\% = 28.7\%$ increase in $[\mathrm{H^+}]$.
 
 A change of 0.11 pH units represents a 29% increase in hydrogen ion concentration, illustrating that
 even small changes in pH reflect significant chemical changes.
 
 **Biological consequences**: decreased $[\mathrm{CO_3^{2-}}$ reduces the saturation state of calcium
-carbonate ($\mathrm{CaCO_3{}$), making it more difficult for marine organisms to build and maintain their
+carbonate ($\mathrm{CaCO_3}$), making it more difficult for marine organisms to build and maintain their
 shells and skeletons. Coral reefs, pteropods, and some phytoplankton species are particularly
 vulnerable. If $\mathrm{CO_3^{2-}}$ concentration falls below the aragonite saturation threshold,
 coral skeletons begin to dissolve.
@@ -624,7 +624,7 @@ coral skeletons begin to dissolve.
 
 | Factor                    | Instrument                    | Unit                         |
 | ------------------------- | ----------------------------- | ---------------------------- |
-| Temperature               | Thermometer / data logger     | $^\circ\mathrm{C{}$          |
+| Temperature               | Thermometer / data logger     | $^\circ\mathrm{C}$          |
 | Light intensity           | Light meter (lux meter)       | Lux or $\mathrm{W\ m^{-2}}$ |
 | Soil / water pH           | pH meter / pH indicator paper | pH                           |
 | Dissolved oxygen          | Dissolved oxygen probe        | $\mathrm{mg\ dm^{-3}}$ or % saturation |
@@ -675,13 +675,13 @@ available at each subsequent trophic level, assuming an ecological efficiency of
 
 **Answer.** At each trophic level, 15% of the energy from the previous level is transferred.
 
-Producer level: $10000\ \mathrm{J{}$.
+Producer level: $10000\ \mathrm{J}$.
 
-Primary consumer: $10000 \times 0.15 = 1500\ \mathrm{J{}$.
+Primary consumer: $10000 \times 0.15 = 1500\ \mathrm{J}$.
 
-Secondary consumer: $1500 \times 0.15 = 225\ \mathrm{J{}$.
+Secondary consumer: $1500 \times 0.15 = 225\ \mathrm{J}$.
 
-Tertiary consumer: $225 \times 0.15 = 33.75\ \mathrm{J{}$.
+Tertiary consumer: $225 \times 0.15 = 33.75\ \mathrm{J}$.
 
 The remaining 85% at each level is lost through respiration, excretion, egestion, and heat. After
 four trophic levels, only 0.34% of the original energy remains available, illustrating why long food
@@ -698,14 +698,14 @@ Describe the role of microorganisms in the nitrogen cycle. In your answer, name 
 groups of bacteria involved and the chemical transformations they catalyse.
 
 **Answer.** Nitrogen-fixing bacteria (_Rhizobium_ in root nodules, _Azotobacter_ free-living in
-soil) convert atmospheric $\mathrm{N_2{}$ into $\mathrm{NH_3{}$/$\mathrm{NH_4^+{}$ using the enzyme
-nitrogenase, an energy-intensive process requiring 16 ATP per molecule of $\mathrm{N_2{}$ fixed.
-Nitrifying bacteria (_Nitrosomonas_ converts $\mathrm{NH_4^+{}$ to $\mathrm{NO_2^-{}$; _Nitrobacter_
-converts $\mathrm{NO_2^-{}$ to $\mathrm{NO_3^-{}$) make nitrogen available in the form most readily
+soil) convert atmospheric $\mathrm{N_2}$ into $\mathrm{NH_3}$/$\mathrm{NH_4^+}$ using the enzyme
+nitrogenase, an energy-intensive process requiring 16 ATP per molecule of $\mathrm{N_2}$ fixed.
+Nitrifying bacteria (_Nitrosomonas_ converts $\mathrm{NH_4^+}$ to $\mathrm{NO_2^-}$; _Nitrobacter_
+converts $\mathrm{NO_2^-}$ to $\mathrm{NO_3^-}$) make nitrogen available in the form most readily
 absorbed by plant roots. Denitrifying bacteria (_Pseudomonas_, _Paracoccus_) convert
-$\mathrm{NO_3^-{}$ back to $\mathrm{N_2{}$ gas under anaerobic conditions (waterlogged soil),
+$\mathrm{NO_3^-}$ back to $\mathrm{N_2}$ gas under anaerobic conditions (waterlogged soil),
 returning nitrogen to the atmosphere. Decomposers break down proteins and urea in dead organic
-matter and excretory waste, releasing $\mathrm{NH_4^+{}$ through ammonification. These microbial
+matter and excretory waste, releasing $\mathrm{NH_4^+}$ through ammonification. These microbial
 processes collectively maintain the nitrogen cycle, ensuring continuous availability of nitrogen for
 living organisms despite constant losses through denitrification.
 
@@ -762,19 +762,19 @@ strategy, with ex situ as a backup.
 Explain the mechanism of the enhanced greenhouse effect and discuss the evidence linking human
 activities to global warming.
 
-**Answer.** The greenhouse effect occurs when greenhouse gases ($\mathrm{CO_2{}$, $\mathrm{CH_4{}$,
-$\mathrm{N_2O{}$, water vapour) in the atmosphere absorb infrared radiation re-emitted by the Earth's
+**Answer.** The greenhouse effect occurs when greenhouse gases ($\mathrm{CO_2}$, $\mathrm{CH_4}$,
+$\mathrm{N_2O}$, water vapour) in the atmosphere absorb infrared radiation re-emitted by the Earth's
 surface and re-radiate it in all directions, including back towards the surface, warming the planet.
 The enhanced greenhouse effect refers to the additional warming caused by increased atmospheric
-concentrations of these gases due to human activities. Evidence: (1) Atmospheric $\mathrm{CO_2{}$ has
-risen from approximately $280\ \mathrm{ppm{}$ (pre-industrial) to over $420\ \mathrm{ppm{}$ (2024),
+concentrations of these gases due to human activities. Evidence: (1) Atmospheric $\mathrm{CO_2}$ has
+risen from approximately $280\ \mathrm{ppm}$ (pre-industrial) to over $420\ \mathrm{ppm}$ (2024),
 directly correlated with fossil fuel combustion (ice core data show current levels are unprecedented
 in the last 800,000 years). (2) Global average temperature has risen by approximately
-$1.1\ ^\circ\mathrm{C{}$ since 1850, with the rate of increase accelerating. (3) Isotopic analysis of
-atmospheric $\mathrm{CO_2{}$ shows an increasing proportion of $^{13}\mathrm{C{}$-depleted carbon,
-consistent with fossil fuel combustion (fossil fuels are depleted in $^{13}\mathrm{C{}$). (4) Ocean
+$1.1\ ^\circ\mathrm{C}$ since 1850, with the rate of increase accelerating. (3) Isotopic analysis of
+atmospheric $\mathrm{CO_2}$ shows an increasing proportion of $^{13}\mathrm{C}$-depleted carbon,
+consistent with fossil fuel combustion (fossil fuels are depleted in $^{13}\mathrm{C}$). (4) Ocean
 acidification (pH has decreased by approximately 0.1 units since pre-industrial times) is consistent
-with increased $\mathrm{CO_2{}$ absorption. (5) Atmospheric $\mathrm{CH_4{}$ and $\mathrm{N_2O{}$ have
+with increased $\mathrm{CO_2}$ absorption. (5) Atmospheric $\mathrm{CH_4}$ and $\mathrm{N_2O}$ have
 risen in parallel with agricultural and industrial expansion. These lines of evidence together
 establish a causal link between human activities and global warming.
 
@@ -824,7 +824,7 @@ An agricultural ecosystem has the following energy values (in $\mathrm{kJ\ m^{-2
 (c) Explain why the ecological efficiency is less than 100% at each level.
 
 **Answer.** (a) Energy available to aphids (assimilated by wheat minus wheat respiration, stored as NPP):
-$\mathrm{NPP{} = 25000 - 8000 = 17000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+$\mathrm{NPP} = 25000 - 8000 = 17000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
 Ecological efficiency (wheat to aphid) $= \frac{2000}{17000} \times 100\% = 11.8\%$.
 
@@ -832,7 +832,7 @@ Energy assimilated by aphids $= 2000 - 800 = 1200\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$
 
 Ecological efficiency (aphid to ladybird) $= \frac{300}{1200} \times 100\% = 25.0\%$.
 
-(b) $\mathrm{NPP{} = \mathrm{GPP{} - R = 25000 - 8000 = 17000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+(b) $\mathrm{NPP} = \mathrm{GPP} - R = 25000 - 8000 = 17000\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
 (c) Ecological efficiency is less than 100% because: (1) not all biomass at one level is consumed by the
 next (some wheat is not eaten by aphids); (2) not all consumed material is digested and absorbed
@@ -850,10 +850,10 @@ Explain how the nitrogen cycle would be disrupted by the application of large qu
 fertiliser to agricultural land. In your answer, describe the effects on (a) the soil nitrogen cycle,
 (b) aquatic ecosystems downstream, and (c) the soil microbiome.
 
-**Answer.** (a) Excess nitrogen fertiliser (as $\mathrm{NH_4NO_3{}$ or $\mathrm{NH_4^+{}$) increases the
+**Answer.** (a) Excess nitrogen fertiliser (as $\mathrm{NH_4NO_3}$ or $\mathrm{NH_4^+}$) increases the
 concentration of ammonium and nitrate in the soil far above natural levels. This can inhibit
 nitrogen-fixing bacteria (because they have no selective advantage when fixed nitrogen is abundant) and
-stimulate denitrifying bacteria, increasing $\mathrm{N_2\mathrm{O{}$ emissions (a potent greenhouse gas).
+stimulate denitrifying bacteria, increasing $\mathrm{N_2\mathrm{O}$ emissions (a potent greenhouse gas).
 The natural balance between fixation, nitrification, and denitrification is disrupted.
 
 (b) Excess nitrates are highly soluble and readily leach from the soil into groundwater and rivers. This
@@ -863,7 +863,7 @@ concentrations in drinking water are also a health concern (methemoglobinemia, o
 in infants).
 
 (c) High concentrations of ammonium-based fertilisers can lower soil pH over time (ammonium
-nitrification releases $\mathrm{H^+{}$). Acidification inhibits many soil microorganisms, reducing the
+nitrification releases $\mathrm{H^+}$). Acidification inhibits many soil microorganisms, reducing the
 diversity and activity of decomposers, mycorrhizal fungi, and other beneficial soil organisms. This
 reduces soil fertility in the long term, creating a dependency on continued fertiliser application.
 
@@ -901,9 +901,9 @@ A population of bacteria starts with 100 cells and has an intrinsic growth rate 
 
 Using the exponential model: $N_t = 100 \times e^{0.5 \times 10} = 100 \times e^5 = 100 \times 148.4 = 14,840$ cells after 10 hours.
 
-Using the logistic model (at $t = 10\ \mathrm{h{}$, assuming $N \ll K$): the result is approximately the same because the population is far below $K$.
+Using the logistic model (at $t = 10\ \mathrm{h}$, assuming $N \ll K$): the result is approximately the same because the population is far below $K$.
 
-At $t = 30\ \mathrm{h{}$: exponential model gives $N = 100 \times e^{15} = 3.27 \times 10^8$ cells (exceeds $K$, unrealistic). The logistic model would cap the population at $K = 10^6$.
+At $t = 30\ \mathrm{h}$: exponential model gives $N = 100 \times e^{15} = 3.27 \times 10^8$ cells (exceeds $K$, unrealistic). The logistic model would cap the population at $K = 10^6$.
 
 ### 13.3 Survivorship Curves
 
@@ -957,7 +957,7 @@ The classic example is the **snowshoe hare and lynx** cycle in the Canadian Arct
 
 ### 15.1 Eutrophication: Quantitative Analysis
 
-**Worked Example.** A lake receives agricultural runoff containing $5\ \mathrm{mg\ L^{-1}}$ of nitrate ($\mathrm{NO_3^-{}$). The lake has a volume of $2.5 \times 10^6\ \mathrm{m^3{}$ and an outflow rate of $10^4\ \mathrm{m^3\ day^{-1}}$.
+**Worked Example.** A lake receives agricultural runoff containing $5\ \mathrm{mg\ L^{-1}}$ of nitrate ($\mathrm{NO_3^-}$). The lake has a volume of $2.5 \times 10^6\ \mathrm{m^3}$ and an outflow rate of $10^4\ \mathrm{m^3\ day^{-1}}$.
 
 Concentration of nitrate entering lake per day $= 5\ \mathrm{mg\ L^{-1}} \times 10^4\ \mathrm{m^3\ day^{-1}} \times 10^3\ \mathrm{L\ m^{-3}} = 5 \times 10^7\ \mathrm{mg\ day^{-1}} = 50\ \mathrm{kg\ day^{-1}}$.
 
@@ -965,23 +965,23 @@ Assuming the lake is well-mixed and outflow has the same concentration as the la
 
 At steady state: input rate $=$ output rate.
 
-$50\ \mathrm{kg\ day^{-1}} = C_{\text{lake{}} \times 10^4\ \mathrm{m^3\ day^{-1}} \times 10^3\ \mathrm{L\ m^{-1}}$.
+$50\ \mathrm{kg\ day^{-1}} = C_{\text{lake}} \times 10^4\ \mathrm{m^3\ day^{-1}} \times 10^3\ \mathrm{L\ m^{-1}}$.
 
-$C_{\text{lake{}} = \frac{50\ \mathrm{kg{}}{10^7\ \mathrm{L{}} = \frac{50000\ \mathrm{mg{}}{10^7\ \mathrm{L{}} = 5\ \mathrm{mg\ L^{-1}}$.
+$C_{\text{lake}} = \frac{50\ \mathrm{kg}}{10^7\ \mathrm{L}} = \frac{50000\ \mathrm{mg}}{10^7\ \mathrm{L}} = 5\ \mathrm{mg\ L^{-1}}$.
 
 If the safe level for nitrate in drinking water is $11.3\ \mathrm{mg\ L^{-1}}$ (EU standard), this lake is currently within the safe limit but close. An increase in agricultural intensity could push it above the safe level.
 
 ### 15.2 Deforestation and the Carbon Cycle
 
-Tropical rainforests store approximately $200\ \mathrm{t\ ha^{-1}}$ of carbon in biomass. Deforestation releases this carbon as $\mathrm{CO_2{}$ when trees are burned or when dead biomass decomposes.
+Tropical rainforests store approximately $200\ \mathrm{t\ ha^{-1}}$ of carbon in biomass. Deforestation releases this carbon as $\mathrm{CO_2}$ when trees are burned or when dead biomass decomposes.
 
-**Worked Example.** If $10\ \mathrm{million\ ha{}$ of tropical rainforest are cleared per year:
+**Worked Example.** If $10\ \mathrm{million\ ha}$ of tropical rainforest are cleared per year:
 
 Carbon released $= 10 \times 10^6 \times 200\ \mathrm{t\ C\ yr^{-1}} = 2 \times 10^9\ \mathrm{t\ C\ yr^{-1}}$.
 
-As $\mathrm{CO_2{}$: mass of $\mathrm{CO_2{} = 2 \times 10^9 \times \frac{44}{12} = 7.3 \times 10^9\ \mathrm{t\ CO_2\ yr^{-1}}$.
+As $\mathrm{CO_2}$: mass of $\mathrm{CO_2} = 2 \times 10^9 \times \frac{44}{12} = 7.3 \times 10^9\ \mathrm{t\ CO_2\ yr^{-1}}$.
 
-Global $\mathrm{CO_2{}$ emissions from fossil fuels are approximately $36 \times 10^9\ \mathrm{t\ CO_2\ yr^{-1}}$. Deforestation contributes an additional approximately $20\%$ to global $\mathrm{CO_2{}$ emissions.
+Global $\mathrm{CO_2}$ emissions from fossil fuels are approximately $36 \times 10^9\ \mathrm{t\ CO_2\ yr^{-1}}$. Deforestation contributes an additional approximately $20\%$ to global $\mathrm{CO_2}$ emissions.
 
 ### 15.3 Indicator Species
 
@@ -989,17 +989,17 @@ Global $\mathrm{CO_2{}$ emissions from fossil fuels are approximately $36 \times
 
 | Environment | Indicator Species | What It Indicates |
 | ----------- | ---------------- | ----------------- |
-| Freshwater (clean) | Stonefly larvae, mayfly larvae, caddisfly larvae | Low pollution, high dissolved $\mathrm{O_2{}$ |
+| Freshwater (clean) | Stonefly larvae, mayfly larvae, caddisfly larvae | Low pollution, high dissolved $\mathrm{O_2}$ |
 | Freshwater (moderate pollution) | Freshwater shrimp, bloodworm | Some organic pollution |
-| Freshwater (heavy pollution) | Rat-tailed maggot, sludgeworm | High organic pollution, low dissolved $\mathrm{O_2{}$ |
-| Air quality | Lichens (especially crustose lichens) | Lichens are sensitive to $\mathrm{SO_2{}$; their absence indicates air pollution |
+| Freshwater (heavy pollution) | Rat-tailed maggot, sludgeworm | High organic pollution, low dissolved $\mathrm{O_2}$ |
+| Air quality | Lichens (especially crustose lichens) | Lichens are sensitive to $\mathrm{SO_2}$; their absence indicates air pollution |
 | Soil quality | Earthworms | High earthworm count indicates healthy, well-aerated soil with high organic content |
 
-**Biological Oxygen Demand (BOD)** is a quantitative measure of water pollution: it measures the amount of $\mathrm{O_2{}$ required by microorganisms to decompose organic matter in a water sample over 5 days ($\mathrm{BOD_5{}$).
+**Biological Oxygen Demand (BOD)** is a quantitative measure of water pollution: it measures the amount of $\mathrm{O_2}$ required by microorganisms to decompose organic matter in a water sample over 5 days ($\mathrm{BOD_5}$).
 
-- Clean water: $\mathrm{BOD_5{} < 5\ \mathrm{mg\ L^{-1}}$.
-- Moderately polluted: $\mathrm{BOD_5{} = 5$--$10\ \mathrm{mg\ L^{-1}}$.
-- Severely polluted: $\mathrm{BOD_5{} > 10\ \mathrm{mg\ L^{-1}}$.
+- Clean water: $\mathrm{BOD_5} < 5\ \mathrm{mg\ L^{-1}}$.
+- Moderately polluted: $\mathrm{BOD_5} = 5$--$10\ \mathrm{mg\ L^{-1}}$.
+- Severely polluted: $\mathrm{BOD_5} > 10\ \mathrm{mg\ L^{-1}}$.
 
 ## 16. Conservation Biology: Advanced Topics
 
@@ -1050,27 +1050,27 @@ Energy enters ecosystems as sunlight (in most ecosystems) and is transferred thr
 
 **Net Primary Production (NPP)**: GPP minus the energy lost through plant respiration ($R$).
 
-$$\text{NPP{} = \text{GPP{} - R$$
+$$\text{NPP} = \text{GPP} - R$$
 
 NPP is the energy available to herbivores (primary consumers).
 
 **Net Secondary Production (NSP)**: the energy incorporated into herbivore biomass.
 
-$$\text{NSP{} = \text{energy consumed{} - \text{energy lost in faeces{} - \text{energy lost in respiration{}$$
+$$\text{NSP} = \text{energy consumed} - \text{energy lost in faeces} - \text{energy lost in respiration}$$
 
 ### 17.2 Ecological Efficiency Calculations
 
 **Worked Example.** A field receives $2.0 \times 10^6\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$ of sunlight. The plants (producers) have a GPP of $1.2 \times 10^4\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$ and a respiration rate of $4.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
-$\text{NPP{} = 1.2 \times 10^4 - 4.0 \times 10^3 = 8.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+$\text{NPP} = 1.2 \times 10^4 - 4.0 \times 10^3 = 8.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
-Photosynthetic efficiency $= \frac{\text{GPP{}}{\text{light received{}} = \frac{1.2 \times 10^4}{2.0 \times 10^6} = 0.006 = 0.6\%$.
+Photosynthetic efficiency $= \frac{\text{GPP}}{\text{light received}} = \frac{1.2 \times 10^4}{2.0 \times 10^6} = 0.006 = 0.6\%$.
 
 This very low efficiency is typical -- most sunlight is reflected, transmitted, or absorbed by non-photosynthetic structures, and much of the absorbed light is at wavelengths that chlorophyll cannot use.
 
 If the primary consumers eat the entire NPP ($8.0 \times 10^3\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$) but assimilate only 20% (the rest is lost as faeces), and they respire 60% of the assimilated energy:
 
-$\text{NSP{} = 8000 \times 0.20 \times (1 - 0.60) = 8000 \times 0.20 \times 0.40 = 640\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
+$\text{NSP} = 8000 \times 0.20 \times (1 - 0.60) = 8000 \times 0.20 \times 0.40 = 640\ \mathrm{kJ\ m^{-2}\ yr^{-1}}$.
 
 Trophic efficiency from producer to primary consumer $= \frac{640}{8000} = 8\%$.
 
@@ -1118,16 +1118,16 @@ Solar radiation (mostly visible light and short-wave infrared) passes through th
 
 | Greenhouse Gas | Pre-industrial Concentration | Current Concentration | Contribution to Warming |
 | -------------- | -------------------------- | --------------------- | ---------------------- |
-| $\mathrm{CO_2{}$ | $280\ \mathrm{ppm{}$ | $> 420\ \mathrm{ppm{}$ | $\approx 60\%$ |
-| Methane ($\mathrm{CH_4{}$) | $700\ \mathrm{ppb{}$ | $> 1900\ \mathrm{ppb{}$ | $\approx 20\%$ |
-| Nitrous oxide ($\mathrm{N_2O{}$) | $270\ \mathrm{ppb{}$ | $> 330\ \mathrm{ppb{}$ | $\approx 6\%$ |
+| $\mathrm{CO_2}$ | $280\ \mathrm{ppm}$ | $> 420\ \mathrm{ppm}$ | $\approx 60\%$ |
+| Methane ($\mathrm{CH_4}$) | $700\ \mathrm{ppb}$ | $> 1900\ \mathrm{ppb}$ | $\approx 20\%$ |
+| Nitrous oxide ($\mathrm{N_2O}$) | $270\ \mathrm{ppb}$ | $> 330\ \mathrm{ppb}$ | $\approx 6\%$ |
 | CFCs | 0 | Variable | $\approx 14\%$ |
 
 ### 19.2 Evidence for Anthropogenic Climate Change
 
-- **Ice core data**: bubbles trapped in Antarctic ice preserve samples of the ancient atmosphere. $\mathrm{CO_2{}$ concentration has fluctuated between 180 and $280\ \mathrm{ppm{}$ over the last 800,000 years (glacial-interglacial cycles) but has risen to $> 420\ \mathrm{ppm{}$ in the last 150 years -- far above the natural range.
+- **Ice core data**: bubbles trapped in Antarctic ice preserve samples of the ancient atmosphere. $\mathrm{CO_2}$ concentration has fluctuated between 180 and $280\ \mathrm{ppm}$ over the last 800,000 years (glacial-interglacial cycles) but has risen to $> 420\ \mathrm{ppm}$ in the last 150 years -- far above the natural range.
 - **Global temperature records**: average global temperature has risen by approximately $1.1$ degrees C since 1850, with the rate of warming accelerating since the 1970s.
-- **Ocean acidification**: oceans have absorbed approximately 30% of anthropogenic $\mathrm{CO_2{}$, forming carbonic acid and lowering ocean pH by approximately 0.1 units (a 26% increase in $\mathrm{H^+{}$ concentration). This impairs shell formation in marine organisms (corals, molluscs).
+- **Ocean acidification**: oceans have absorbed approximately 30% of anthropogenic $\mathrm{CO_2}$, forming carbonic acid and lowering ocean pH by approximately 0.1 units (a 26% increase in $\mathrm{H^+}$ concentration). This impairs shell formation in marine organisms (corals, molluscs).
 - **Sea level rise**: thermal expansion of seawater and melting of land ice have raised global sea level by approximately 20 cm since 1900, with the rate accelerating.
 
 ### 19.3 Biological Consequences of Climate Change
@@ -1147,7 +1147,7 @@ Solar radiation (mostly visible light and short-wave infrared) passes through th
 **Procedure:**
 1. Lay out two tape measures at right angles to create a coordinate grid across the study area.
 2. Use random number tables (or a calculator) to generate pairs of random coordinates.
-3. Place the quadrat (typically $0.5 \times 0.5\ \mathrm{m{}$ or $1 \times 1\ \mathrm{m{}$) at each coordinate.
+3. Place the quadrat (typically $0.5 \times 0.5\ \mathrm{m}$ or $1 \times 1\ \mathrm{m}$) at each coordinate.
 4. Record the species present and their abundance (percentage cover or number of individuals) in each quadrat.
 5. Repeat for at least 10--20 quadrats (more quadrats = more reliable results).
 
@@ -1194,9 +1194,9 @@ The estimated population size is 200.
 
 **Confidence interval:** if a different second sample might have produced different results, the estimate has uncertainty. For a rough estimate, the standard error can be approximated by:
 
-$$\text{SE{} \approx \sqrt{\frac{n_1 \times n_2 \times (n_1 - m_2) \times (n_2 - m_2)}{m_2^3}}$$
+$$\text{SE} \approx \sqrt{\frac{n_1 \times n_2 \times (n_1 - m_2) \times (n_2 - m_2)}{m_2^3}}$$
 
-$\text{SE{} = \sqrt{\frac{50 \times 40 \times 40 \times 30}{1000}} = \sqrt{\frac{2400000}{1000}} = \sqrt{2400} = 49$.
+$\text{SE} = \sqrt{\frac{50 \times 40 \times 40 \times 30}{1000}} = \sqrt{\frac{2400000}{1000}} = \sqrt{2400} = 49$.
 
 Approximate 95% confidence interval: $200 \pm 98$, or 102 to 298.
 
@@ -1206,17 +1206,17 @@ This wide range reflects the uncertainty inherent in CMRR estimates with relativ
 
 ### 21.1 Calculating Net Primary Productivity
 
-**Worked Example.** A forest has a biomass of $20,000\ \mathrm{kg\ ha^{-1}}$. Over one year, the biomass increased by $2,500\ \mathrm{kg\ ha^{-1}}$, and the plants respired $8,000\ \mathrm{kg\ ha^{-1}}$ of carbon (measured as $\mathrm{CO_2{}$ equivalent).
+**Worked Example.** A forest has a biomass of $20,000\ \mathrm{kg\ ha^{-1}}$. Over one year, the biomass increased by $2,500\ \mathrm{kg\ ha^{-1}}$, and the plants respired $8,000\ \mathrm{kg\ ha^{-1}}$ of carbon (measured as $\mathrm{CO_2}$ equivalent).
 
-$\text{NPP{} = \text{biomass increase{} = 2,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
+$\text{NPP} = \text{biomass increase} = 2,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
 
-$\text{GPP{} = \text{NPP{} + R = 2,500 + 8,000 = 10,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
+$\text{GPP} = \text{NPP} + R = 2,500 + 8,000 = 10,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}}$.
 
-Photosynthetic efficiency $= \frac{\text{GPP{}}{\text{light energy received{}}$.
+Photosynthetic efficiency $= \frac{\text{GPP}}{\text{light energy received}}$.
 
 If the forest receives $1.0 \times 10^{10}\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$ of light energy, and the energy content of plant biomass is approximately $18\ \mathrm{kJ\ g^{-1}}$:
 
-$\text{GPP (energy){} = 10,500 \times 18 = 189,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$.
+$\text{GPP (energy)} = 10,500 \times 18 = 189,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$.
 
 Photosynthetic efficiency $= \frac{189\,000}{1.0 \times 10^{10}} = 0.0019 = 0.19\%$.
 
@@ -1240,9 +1240,9 @@ Photosynthetic efficiency $= \frac{189\,000}{1.0 \times 10^{10}} = 0.0019 = 0.19
 2. **Algal bloom**: the high nutrient concentration causes rapid growth of algae (phytoplankton) at the water surface, forming a dense green bloom.
 3. **Light blocked**: the algal bloom prevents light from reaching submerged plants (macrophytes), which die.
 4. **Death and decomposition**: dead algae and dead plants sink to the bottom, where they are decomposed by aerobic bacteria.
-5. **Oxygen depletion**: the aerobic bacteria consume dissolved $\mathrm{O_2{}$ from the water during decomposition, causing the BOD (biochemical oxygen demand) to increase.
-6. **Hypoxia/anoxia**: dissolved $\mathrm{O_2{}$ levels drop below that required by fish and other aquatic organisms, which die (fish kills).
-7. **Further decomposition**: dead fish and other organisms are decomposed, further increasing BOD and accelerating $\mathrm{O_2{}$ depletion.
+5. **Oxygen depletion**: the aerobic bacteria consume dissolved $\mathrm{O_2}$ from the water during decomposition, causing the BOD (biochemical oxygen demand) to increase.
+6. **Hypoxia/anoxia**: dissolved $\mathrm{O_2}$ levels drop below that required by fish and other aquatic organisms, which die (fish kills).
+7. **Further decomposition**: dead fish and other organisms are decomposed, further increasing BOD and accelerating $\mathrm{O_2}$ depletion.
 8. **Recovery**: only when the nutrient input is stopped and the ecosystem can slowly recover.
 
 ### 22.2 Indicator Species
@@ -1256,7 +1256,7 @@ Photosynthetic efficiency $= \frac{189\,000}{1.0 \times 10^{10}} = 0.0019 = 0.19
 | Sludge worms (_Tubificidae_) | Absent | Present | Abundant |
 | Rat-tailed maggots (_Eristalis_) | Absent | Present | Abundant |
 | Algae/diatoms | Diverse community | Fewer species | Dominated by pollution-tolerant species |
-| Lichens (air quality) | Xanthoria (moderate $\mathrm{SO_2{}$) absent | Xanthoria present | Only crustose lichens or none |
+| Lichens (air quality) | Xanthoria (moderate $\mathrm{SO_2}$) absent | Xanthoria present | Only crustose lichens or none |
 
 ### 22.3 Calculating Biodiversity Indices
 
@@ -1295,11 +1295,11 @@ Values range from 0 (no diversity) to approaching 1 (infinite diversity).
 
 | Evidence | Data |
 | -------- | ---- |
-| Atmospheric $\mathrm{CO_2{}$ concentration | 280 ppm (pre-industrial) $\to$ > 420 ppm (2024); measured at Mauna Loa Observatory since 1958 |
+| Atmospheric $\mathrm{CO_2}$ concentration | 280 ppm (pre-industrial) $\to$ > 420 ppm (2024); measured at Mauna Loa Observatory since 1958 |
 | Global mean temperature | Increased by approximately 1.1 degrees C since 1850 (IPCC AR6, 2021) |
 | Sea level rise | Approximately 20 cm since 1900; accelerating (currently $\approx 3.6\ \mathrm{mm\ yr^{-1}}$) |
 | Arctic sea ice extent | Declined by approximately 13% per decade since satellite records began (1979) |
-| Ocean acidification | pH has decreased from 8.21 to 8.10 (approximately 26% increase in $[\mathrm{H^+{}]$) since pre-industrial times |
+| Ocean acidification | pH has decreased from 8.21 to 8.10 (approximately 26% increase in $[\mathrm{H^+}]$) since pre-industrial times |
 
 **Consequences for ecosystems:**
 
@@ -1307,7 +1307,7 @@ Values range from 0 (no diversity) to approaching 1 (infinite diversity).
 2. **Phenological mismatch**: the timing of biological events (flowering, migration, breeding) changes at different rates for different species, disrupting food webs (e.g., insects emerging before their food plant has flowered).
 3. **Coral bleaching**: increased ocean temperature causes coral to expel their zooxanthellae (symbiotic algae), losing their energy source and colour. Mass bleaching events are increasing in frequency.
 4. **Extreme weather events**: more frequent and severe droughts, floods, and storms disrupt ecosystems and reduce agricultural productivity.
-5. **Permafrost thaw**: releases methane (a potent greenhouse gas, approximately 25x more effective than $\mathrm{CO_2{}$ at trapping heat), creating a positive feedback loop.
+5. **Permafrost thaw**: releases methane (a potent greenhouse gas, approximately 25x more effective than $\mathrm{CO_2}$ at trapping heat), creating a positive feedback loop.
 
 ## 23. Ecological Techniques and Fieldwork
 
@@ -1373,7 +1373,7 @@ Each stage modifies the environment, making it more suitable for the next stage 
 
 | Relationship | Effect on A | Effect on B | Example |
 | ------------ | ----------- | ----------- | ------- |
-| Mutualism (+/+) | Both benefit | Both benefit | Mycorrhizae (fungi on plant roots: fungus provides minerals; plant provides carbohydrates); pollination (insect gets nectar; plant gets pollinated); zooxanthellae in coral (algae provide sugars via photosynthesis; coral provides shelter and $\mathrm{CO_2{}$) |
+| Mutualism (+/+) | Both benefit | Both benefit | Mycorrhizae (fungi on plant roots: fungus provides minerals; plant provides carbohydrates); pollination (insect gets nectar; plant gets pollinated); zooxanthellae in coral (algae provide sugars via photosynthesis; coral provides shelter and $\mathrm{CO_2}$) |
 | Commensalism (+/0) | One benefits; other unaffected | Unaffected | Barnacles on a whale (barnacles get transport and food; whale is unaffected); epiphytes (orchids growing on tree branches) |
 | Parasitism (+/-) | Parasite benefits; host is harmed | Harmed | Tapeworm in human intestine; _Plasmodium_ in red blood cells; fleas on mammals; dodder on plants |
 | Predation (+/-) | Predator benefits; prey is killed | Killed | Lion hunting zebra; hawk hunting mouse |
@@ -1439,15 +1439,15 @@ To convert biomass to energy:
 
 **Example:** A forest produces $2,500\ \mathrm{kg\ ha^{-1}\ yr^{-1}$ of dry biomass.
 
-$$\mathrm{NPP{} = 2,500\ \times 18 = 45,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}$$
+$$\mathrm{NPP} = 2,500\ \times 18 = 45,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}$$
 
-$$\mathrm{GPP{} = \mathrm{NPP{} + R = 45,000 + 18,000 = 63,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$$
+$$\mathrm{GPP} = \mathrm{NPP} + R = 45,000 + 18,000 = 63,000\ \mathrm{kJ\ ha^{-1}\ yr^{-1}}$$
 
 Ecological efficiency (efficiency of energy transfer from producers to primary consumers):
 
 If primary consumers consume $5,000\ \mathrm{kg\ ha^{-1}\ yr^{-1}$ of plant biomass:
 
-$$\text{Efficiency{} = \frac{5,000 \times 18}{63,000} \times 100 = 14.3\%$$
+$$\text{Efficiency} = \frac{5,000 \times 18}{63,000} \times 100 = 14.3\%$$
 
 ## 26. Succession in Detail
 
@@ -1493,14 +1493,14 @@ Deflected succession occurs when human activity prevents the natural climax comm
 | 3. Light blocked | Upper layers of algae prevent light reaching deeper water | Submerged plants (macrophytes) cannot photosynthesise; they die |
 | 4. Death and decomposition | Dead algae and dead plants sink to the bottom; saprobiotic bacteria decompose them | Bacteria population increases; bacteria respire aerobically |
 | 5. Oxygen depletion | Bacterial respiration consumes dissolved oxygen (DO) from the water | DO drops below levels needed by fish and invertebrates |
-| 6. Death of aerobic organisms | Fish and invertebrates die from hypoxia (low $\mathrm{O_2{}$) | Only anaerobic organisms survive; water becomes stagnant and foul-smelling (hydrogen sulfide from anaerobic respiration) |
+| 6. Death of aerobic organisms | Fish and invertebrates die from hypoxia (low $\mathrm{O_2}$) | Only anaerobic organisms survive; water becomes stagnant and foul-smelling (hydrogen sulfide from anaerobic respiration) |
 
 ### 27.2 Indicators of Eutrophication
 
 | Indicator | What to Measure | Expected Values |
 | --------- | --------------- | --------------- |
-| Biochemical oxygen demand (BOD) | Amount of $\mathrm{O_2{}$ consumed by bacteria in a water sample over 5 days at 20$\degree\mathrm{C{}$ | Clean water: BOD < 5 mg/L; Polluted water: BOD > 10 mg/L; Severely polluted: BOD > 20 mg/L |
-| Dissolved oxygen (DO) | $\mathrm{O_2{}$ concentration in water (measured with an oxygen probe) | Clean water: 8--12 mg/L; Eutrophic water: < 4 mg/L (hypoxic) |
+| Biochemical oxygen demand (BOD) | Amount of $\mathrm{O_2}$ consumed by bacteria in a water sample over 5 days at 20$\degree\mathrm{C}$ | Clean water: BOD < 5 mg/L; Polluted water: BOD > 10 mg/L; Severely polluted: BOD > 20 mg/L |
+| Dissolved oxygen (DO) | $\mathrm{O_2}$ concentration in water (measured with an oxygen probe) | Clean water: 8--12 mg/L; Eutrophic water: < 4 mg/L (hypoxic) |
 | Nitrate concentration | Nitrate levels in water (colorimetric test) | Clean: < 1 mg/L; Eutrophic: > 5 mg/L |
 | Species diversity | Number and variety of invertebrate species (biotic index) | Clean water: high diversity (mayfly nymphs, stonefly larvae -- sensitive to pollution); Polluted water: low diversity (only tolerant species like bloodworms, sludgeworms) |
 
@@ -1508,19 +1508,19 @@ Deflected succession occurs when human activity prevents the natural climax comm
 
 ### 28.1 The Greenhouse Effect
 
-| Greenhouse Gas | Sources | Current Concentration | Warming Potential (vs $\mathrm{CO_2{}$) |
+| Greenhouse Gas | Sources | Current Concentration | Warming Potential (vs $\mathrm{CO_2}$) |
 | -------------- | ------- | --------------------- | ------------------------------------ |
-| Carbon dioxide ($\mathrm{CO_2{}$) | Fossil fuel combustion; deforestation | ~420 ppm | 1 (reference) |
-| Methane ($\mathrm{CH_4{}$) | Agriculture (rice paddies, cattle); landfill; natural gas leaks | ~1.9 ppm | ~25--80 (depending on time frame) |
-| Nitrous oxide ($\mathrm{N_2O{}$) | Agricultural fertiliser use; industrial processes | ~0.33 ppm | ~265 |
+| Carbon dioxide ($\mathrm{CO_2}$) | Fossil fuel combustion; deforestation | ~420 ppm | 1 (reference) |
+| Methane ($\mathrm{CH_4}$) | Agriculture (rice paddies, cattle); landfill; natural gas leaks | ~1.9 ppm | ~25--80 (depending on time frame) |
+| Nitrous oxide ($\mathrm{N_2O}$) | Agricultural fertiliser use; industrial processes | ~0.33 ppm | ~265 |
 | Chlorofluorocarbons (CFCs) | Refrigerants; aerosols (now largely banned) | Declining | ~4,000--10,000 |
 
 ### 28.2 Biological Consequences of Climate Change
 
 | Consequence | Description | Biological Impact |
 | ----------- | ----------- | ----------------- |
-| Rising temperatures | Global average temperature has increased ~1.1$\degree\mathrm{C{}$ since pre-industrial era | Species range shifts (moving poleward or to higher altitude); coral bleaching; changed phenology (timing of flowering, migration) |
-| Ocean acidification | $\mathrm{CO_2{}$ dissolves in seawater: $\mathrm{CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-{}$ | Reduces carbonate ion concentration; impairs shell formation in molluscs, corals, and plankton (calcareous organisms) |
+| Rising temperatures | Global average temperature has increased ~1.1$\degree\mathrm{C}$ since pre-industrial era | Species range shifts (moving poleward or to higher altitude); coral bleaching; changed phenology (timing of flowering, migration) |
+| Ocean acidification | $\mathrm{CO_2}$ dissolves in seawater: $\mathrm{CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-}$ | Reduces carbonate ion concentration; impairs shell formation in molluscs, corals, and plankton (calcareous organisms) |
 | Sea level rise | Thermal expansion of water + melting ice sheets | Coastal habitat loss; saltwater intrusion into freshwater ecosystems |
 | Changed precipitation patterns | More intense rainfall in some areas; droughts in others | Altered species distributions; reduced agricultural productivity; increased wildfire risk |
 | Extreme weather events | More frequent and severe storms, heatwaves, droughts | Direct mortality; habitat destruction; disruption of food webs |
@@ -1598,7 +1598,7 @@ Coevolution occurs when two species evolve in response to each other:
 | Reduced leaf surface area | Needle-like leaves (conifers) or spines (cacti) | Smaller surface area = less evaporation |
 | Succulent tissues | Thick, fleshy stems or leaves that store water | Stores water for dry periods; allows the plant to survive long droughts |
 | Deep root system | Long taproot (e.g., cactus) or extensive lateral roots | Reaches deep groundwater |
-| CAM photosynthesis | Stomata open at night; $\mathrm{CO_2{}$ stored as malic acid; used during the day | Reduces water loss (stomata closed during the hottest part of the day) |
+| CAM photosynthesis | Stomata open at night; $\mathrm{CO_2}$ stored as malic acid; used during the day | Reduces water loss (stomata closed during the hottest part of the day) |
 
 ### 31.2 Hydrophytes (Plants Adapted to Aquatic Environments)
 
@@ -1606,7 +1606,7 @@ Coevolution occurs when two species evolve in response to each other:
 | ---------- | ----------- | ---------------- |
 | No waxy cuticle (or very thin) | No barrier to water and gas exchange | No risk of water loss; easy gas exchange with water |
 | Stomata only on upper surface | Stomata on the upper epidermis (exposed to air) | Lower surface is submerged; stomata on the upper surface can exchange gases with the air |
-| Aerenchyma tissue | Large air spaces in the stems and leaves | Provides buoyancy; allows $\mathrm{O_2{}$ to reach submerged tissues (supports aerobic respiration in roots) |
+| Aerenchyma tissue | Large air spaces in the stems and leaves | Provides buoyancy; allows $\mathrm{O_2}$ to reach submerged tissues (supports aerobic respiration in roots) |
 | Reduced xylem | Less vascular tissue needed | Water is abundant; no need for extensive water transport |
 | Flexible stems | Stems bend with water currents | Prevents damage from water flow |
 
@@ -1618,7 +1618,7 @@ Coevolution occurs when two species evolve in response to each other:
 | ------ | ----------- |
 | Habitat loss | Species lose their habitat; biodiversity decreases |
 | Soil erosion | Tree roots no longer hold soil together; topsoil is washed away by rain; nutrients are lost |
-| Increased $\mathrm{CO_2{}$ | Trees store carbon; deforestation releases $\mathrm{CO_2{}$ back into the atmosphere (contributing to climate change) |
+| Increased $\mathrm{CO_2}$ | Trees store carbon; deforestation releases $\mathrm{CO_2}$ back into the atmosphere (contributing to climate change) |
 | Altered water cycle | Reduced transpiration $\to$ less moisture in the atmosphere $\to$ reduced rainfall $\to$ drier climate |
 | Flash flooding | Reduced interception of rain by trees $\to$ more surface runoff $\to$ flooding downstream |
 
@@ -1676,7 +1676,7 @@ See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for in
 
 | Type | Organisms | Role |
 | ---- | --------- | ---- |
-| Decomposers | Fungi, bacteria | Secrete extracellular enzymes; break down dead organic matter; release inorganic nutrients ($\mathrm{NH_4^+{}$, $\mathrm{PO_4^{3-}}$) back into the soil for producers to absorb |
+| Decomposers | Fungi, bacteria | Secrete extracellular enzymes; break down dead organic matter; release inorganic nutrients ($\mathrm{NH_4^+}$, $\mathrm{PO_4^{3-}}$) back into the soil for producers to absorb |
 | Detritivores | Earthworms, woodlice, maggots, dung beetles | Ingest dead organic matter; digest it internally; speed up decomposition by breaking material into smaller pieces (increasing surface area for decomposers) |
 
 ## 34. Nitrogen Cycle
@@ -1685,11 +1685,11 @@ See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for in
 
 | Process | Description | Organisms Involved |
 | -------- | ----------- | ----------------- |
-| Nitrogen fixation | Atmospheric $\mathrm{N_2{}$ ($\mathrm{N \equiv N{}$ triple bond) is converted to $\mathrm{NH_3{}$ (ammonia) / $\mathrm{NH_4^+{}$ (ammonium) | Nitrogen-fixing bacteria: _Rhizobium_ (symbiotic, in root nodules of legumes); _Azotobacter_ (free-living in soil); _Clostridium_ (anaerobic) |
-| Nitrification | $\mathrm{NH_4^+{}$ (ammonium) is converted to $\mathrm{NO_2^-{}$ (nitrite) then $\mathrm{NO_3^-{}$ (nitrate) | Nitrifying bacteria: _Nitrosomonas_ ($\mathrm{NH_4^+{} \to \mathrm{NO_2^-{}$); _Nitrobacter_ ($\mathrm{NO_2^-{} \to \mathrm{NO_3^-{}$) |
-| Assimilation | Plants absorb $\mathrm{NO_3^-{}$ (and some $\mathrm{NH_4^+{}$) through their roots and incorporate nitrogen into amino acids, proteins, and nucleic acids | Plants; animals obtain nitrogen by eating plants or other animals |
-| Ammonification | Decomposers break down proteins and urea in dead organic matter; release $\mathrm{NH_3{}$ / $\mathrm{NH_4^+{}$ back into the soil | Decomposers (bacteria and fungi) |
-| Denitrification | $\mathrm{NO_3^-{}$ is converted back to $\mathrm{N_2{}$ and $\mathrm{N_2O{}$ (nitrous oxide, a greenhouse gas); returns nitrogen to the atmosphere | Denitrifying bacteria: _Pseudomonas denitrificans_ (anaerobic conditions in waterlogged soil) |
+| Nitrogen fixation | Atmospheric $\mathrm{N_2}$ ($\mathrm{N \equiv N}$ triple bond) is converted to $\mathrm{NH_3}$ (ammonia) / $\mathrm{NH_4^+}$ (ammonium) | Nitrogen-fixing bacteria: _Rhizobium_ (symbiotic, in root nodules of legumes); _Azotobacter_ (free-living in soil); _Clostridium_ (anaerobic) |
+| Nitrification | $\mathrm{NH_4^+}$ (ammonium) is converted to $\mathrm{NO_2^-}$ (nitrite) then $\mathrm{NO_3^-}$ (nitrate) | Nitrifying bacteria: _Nitrosomonas_ ($\mathrm{NH_4^+} \to \mathrm{NO_2^-}$); _Nitrobacter_ ($\mathrm{NO_2^-} \to \mathrm{NO_3^-}$) |
+| Assimilation | Plants absorb $\mathrm{NO_3^-}$ (and some $\mathrm{NH_4^+}$) through their roots and incorporate nitrogen into amino acids, proteins, and nucleic acids | Plants; animals obtain nitrogen by eating plants or other animals |
+| Ammonification | Decomposers break down proteins and urea in dead organic matter; release $\mathrm{NH_3}$ / $\mathrm{NH_4^+}$ back into the soil | Decomposers (bacteria and fungi) |
+| Denitrification | $\mathrm{NO_3^-}$ is converted back to $\mathrm{N_2}$ and $\mathrm{N_2O}$ (nitrous oxide, a greenhouse gas); returns nitrogen to the atmosphere | Denitrifying bacteria: _Pseudomonas denitrificans_ (anaerobic conditions in waterlogged soil) |
 
 ## 35. Phosphorus Cycle
 
@@ -1708,7 +1708,7 @@ See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for in
 
 | Feature | Carbon and Nitrogen | Phosphorus |
 | ------- | ------------------ | ---------- |
-| Atmospheric component | Significant ($\mathrm{CO_2{}$, $\mathrm{N_2{}$) | Negligible (no major gaseous phase) |
+| Atmospheric component | Significant ($\mathrm{CO_2}$, $\mathrm{N_2}$) | Negligible (no major gaseous phase) |
 | Main reservoir | Atmosphere (N); atmosphere and oceans (C) | Rocks and sediments |
 | Rate of cycling | Fast (days to years) | Slow (millions of years for the sedimentary component) |
 | Bottleneck | Recycling through decomposers is efficient | Phosphorus is often a limiting factor in ecosystems because it cycles slowly |
@@ -1790,21 +1790,21 @@ Molecular techniques are increasingly used in ecology to answer questions that a
 
 | Process | Description | Carbon Flux |
 | ------- | ----------- | ----------- |
-| Photosynthesis | Plants and algae convert $\mathrm{CO_2{}$ to organic compounds (glucose) using light energy | $\mathrm{CO_2{}$ from atmosphere $\to$ biomass |
-| Respiration | All living organisms break down organic compounds, releasing $\mathrm{CO_2{}$ | Biomass $\to$ $\mathrm{CO_2{}$ to atmosphere |
-| Combustion | Burning fossil fuels and biomass releases stored carbon as $\mathrm{CO_2{}$ | Fossil fuel/biomass $\to$ $\mathrm{CO_2{}$ to atmosphere |
-| Decomposition | Decomposers break down dead organic matter, releasing $\mathrm{CO_2{}$ | Dead matter $\to$ $\mathrm{CO_2{}$ to atmosphere |
+| Photosynthesis | Plants and algae convert $\mathrm{CO_2}$ to organic compounds (glucose) using light energy | $\mathrm{CO_2}$ from atmosphere $\to$ biomass |
+| Respiration | All living organisms break down organic compounds, releasing $\mathrm{CO_2}$ | Biomass $\to$ $\mathrm{CO_2}$ to atmosphere |
+| Combustion | Burning fossil fuels and biomass releases stored carbon as $\mathrm{CO_2}$ | Fossil fuel/biomass $\to$ $\mathrm{CO_2}$ to atmosphere |
+| Decomposition | Decomposers break down dead organic matter, releasing $\mathrm{CO_2}$ | Dead matter $\to$ $\mathrm{CO_2}$ to atmosphere |
 | Fossilisation | Organic matter is buried under sediment and slowly converted to fossil fuels over millions of years | Biomass $\to$ fossil fuels (long-term carbon sink) |
-| Ocean absorption | $\mathrm{CO_2{}$ dissolves in ocean water; marine organisms use it for photosynthesis and shell formation | Atmosphere $\to$ ocean (carbon sink) |
-| Volcanic activity | Volcanoes release $\mathrm{CO_2{}$ from subducted carbonate rocks | Geological carbon $\to$ atmosphere |
+| Ocean absorption | $\mathrm{CO_2}$ dissolves in ocean water; marine organisms use it for photosynthesis and shell formation | Atmosphere $\to$ ocean (carbon sink) |
+| Volcanic activity | Volcanoes release $\mathrm{CO_2}$ from subducted carbonate rocks | Geological carbon $\to$ atmosphere |
 
 ### 41.2 Human Impact on the Carbon Cycle
 
 | Impact | Description |
 | ------ | ----------- |
-| Deforestation | Reduces photosynthesis (less $\mathrm{CO_2{}$ removed); burning releases stored carbon |
-| Fossil fuel combustion | Releases carbon that has been locked away for millions of years; major driver of increased atmospheric $\mathrm{CO_2{}$ |
-| Ocean acidification | Increased $\mathrm{CO_2{}$ dissolves in oceans $\to$ forms carbonic acid $\to$ lowers pH $\to$ damages coral reefs and shellfish |
+| Deforestation | Reduces photosynthesis (less $\mathrm{CO_2}$ removed); burning releases stored carbon |
+| Fossil fuel combustion | Releases carbon that has been locked away for millions of years; major driver of increased atmospheric $\mathrm{CO_2}$ |
+| Ocean acidification | Increased $\mathrm{CO_2}$ dissolves in oceans $\to$ forms carbonic acid $\to$ lowers pH $\to$ damages coral reefs and shellfish |
 
 ## 42. Primary and Secondary Succession
 

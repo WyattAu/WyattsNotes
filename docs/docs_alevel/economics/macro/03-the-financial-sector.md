@@ -265,15 +265,15 @@ Monetary policy affects the economy through several channels:
 
 $$
 \begin{aligned}
-\mathrm{Central bank {} &\uparrow \mathrm{ interest rate{} \\
+\mathrm{Central bank } &\uparrow \mathrm{ interest rate} \\
 &\downarrow \\
-\mathrm{Commercial banks {} &\uparrow \mathrm{ lending rates{} \\
+\mathrm{Commercial banks } &\uparrow \mathrm{ lending rates} \\
 &\downarrow \\
-\mathrm{Borrowing becomes more expensive {} &\Rightarrow C \downarrow, I \downarrow \\
+\mathrm{Borrowing becomes more expensive } &\Rightarrow C \downarrow, I \downarrow \\
 &\downarrow \\
-\mathrm{Saving becomes more attractive {} &\Rightarrow C \downarrow \\
+\mathrm{Saving becomes more attractive } &\Rightarrow C \downarrow \\
 &\downarrow \\
-\mathrm{Exchange rate appreciates {} &\Rightarrow X \downarrow, M \uparrow \\
+\mathrm{Exchange rate appreciates } &\Rightarrow X \downarrow, M \uparrow \\
 &\downarrow \\
 AD &\downarrow \Rightarrow Y \downarrow, P \downarrow
 \end{aligned}
@@ -663,7 +663,7 @@ purchase to achieve its target.
 
 <details>
 <summary>Hint</summary>
-The effective multiplier accounts for excess reserves and cash leakages. Let $rr = 0.05$ (required), $re = 0.03$ (excess), and $c = 0.10$ (cash ratio). Total reserves held per unit of deposits $= rr + re = 0.08$. Each round, only $(1 - c)$ of loans are redeposited. The money multiplier becomes: $m = \frac{1 + c}{rr + re + c} = \frac{1.10}{0.08 + 0.10} = \frac{1.10}{0.18} \approx 6.11$. (a) The effective multiplier is approximately 6.11 (compared to the simple multiplier of $1/0.05 = 20$). (b) Required reserve injection $= \mathrm{target increase{} / m = 200 / 6.11 \approx$ GBP 32.7 billion. The central bank must purchase approximately GBP 32.7 billion of bonds. This is much larger than under the simple model (which would suggest only GBP 10 billion needed), illustrating the importance of accounting for cash leakages and excess reserves.
+The effective multiplier accounts for excess reserves and cash leakages. Let $rr = 0.05$ (required), $re = 0.03$ (excess), and $c = 0.10$ (cash ratio). Total reserves held per unit of deposits $= rr + re = 0.08$. Each round, only $(1 - c)$ of loans are redeposited. The money multiplier becomes: $m = \frac{1 + c}{rr + re + c} = \frac{1.10}{0.08 + 0.10} = \frac{1.10}{0.18} \approx 6.11$. (a) The effective multiplier is approximately 6.11 (compared to the simple multiplier of $1/0.05 = 20$). (b) Required reserve injection $= \mathrm{target increase} / m = 200 / 6.11 \approx$ GBP 32.7 billion. The central bank must purchase approximately GBP 32.7 billion of bonds. This is much larger than under the simple model (which would suggest only GBP 10 billion needed), illustrating the importance of accounting for cash leakages and excess reserves.
 </details>
 
 :::
@@ -715,7 +715,7 @@ Central bank injects GBP 1,000 of new reserves. Reserve ratio $rr = 0.1$. Cash l
 
 **Total deposits created:**
 $$D = 1000 + 765 + 585.23 + \cdots$$
-$$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac{1000}{1 - 0.85 \times 0.9} = \frac{1000}{1 - 0.765} = \frac{1000}{0.235} = \text{GBP {} 4\,255$$
+$$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac{1000}{1 - 0.85 \times 0.9} = \frac{1000}{1 - 0.765} = \frac{1000}{0.235} = \text{GBP } 4\,255$$
 
 **Effective money multiplier:**
 $$m = \frac{D}{R} = \frac{4255}{1000} = 4.26$$
@@ -747,7 +747,7 @@ $$D = \frac{1}{P} \sum_{t=1}^{n} \frac{t \times C_t}{(1+r)^t}$$
 For a 5-year bond with 6% coupon, face 100, priced at par ($r = 6\%$):
 
 $$D = \frac{1}{100}\left[\frac{1 \times 6}{1.06} + \frac{2 \times 6}{1.06^2} + \frac{3 \times 6}{1.06^3} + \frac{4 \times 6}{1.06^4} + \frac{5 \times 106}{1.06^5}\right]$$
-$$D = \frac{1}{100}[5.66 + 10.68 + 15.08 + 18.88 + 79.34] = \frac{129.64}{100} = 4.30 \text{ years{}$$
+$$D = \frac{1}{100}[5.66 + 10.68 + 15.08 + 18.88 + 79.34] = \frac{129.64}{100} = 4.30 \text{ years}$$
 
 **Interpretation:** if interest rates rise by 1%, the bond price falls by approximately 4.30%. Duration captures the weighted-average time to receipt of the bond's cash flows.
 
@@ -758,7 +758,7 @@ $$D = \frac{1}{100}[5.66 + 10.68 + 15.08 + 18.88 + 79.34] = \frac{129.64}{100} =
 **Interest rate channel:**
 - Variable-rate mortgage holders with GBP 200,000 mortgages see monthly payments increase by approximately GBP 167 per month ($200\,000 \times 0.01/12$).
 - Approximately 35% of UK mortgages are variable-rate, so approximately 2.8 million households are directly affected.
-- Aggregate annual reduction in disposable income: $2.8\text{m{} \times 12 \times 167 = \text{GBP {} 5.6\text{bn{}$.
+- Aggregate annual reduction in disposable income: $2.8\text{m} \times 12 \times 167 = \text{GBP } 5.6\text{bn}$.
 
 **Exchange rate channel:**
 - Higher UK rates attract foreign capital $\Rightarrow$ demand for sterling rises $\Rightarrow$ sterling appreciates by approximately 2-5%.
@@ -929,7 +929,7 @@ The exporter buys a put option on USD (right to sell USD at a strike price of $1
 
 If spot > 1.25 (sterling appreciated): the exporter exercises the put option, selling at 1.25. Receives: 8.0m - 0.05m (premium) = 7.95m.
 
-If spot < 1.25 (sterling depreciated): the exporter lets the option expire and sells at the spot rate. Receives: $10/\text{spot{} - 0.05$m. For example, at 1.20: 8.33 - 0.05 = 8.28m.
+If spot < 1.25 (sterling depreciated): the exporter lets the option expire and sells at the spot rate. Receives: $10/\text{spot} - 0.05$m. For example, at 1.20: 8.33 - 0.05 = 8.28m.
 
 **Comparison:**
 
@@ -1062,21 +1062,21 @@ Bank Rate rises from 0.25% to 5.25% (a 5 percentage point increase):
 Average variable-rate mortgage balance: GBP 150,000.
 Monthly payment increase: $150\,000 \times 0.05/12 = \pounds 625$.
 Annual cost increase: GBP 7,500 per household.
-Total for 3.15 million variable-rate households: $7\,500 \times 3.15\text{m{} = \pounds 23.6\text{bn{}$.
+Total for 3.15 million variable-rate households: $7\,500 \times 3.15\text{m} = \pounds 23.6\text{bn}$.
 
 **Indirect channel (fixed-rate mortgages):**
 Approximately 65% of UK mortgages are fixed-rate (typically 2 or 5 years). These do not reprice immediately but reprice when the fixed term ends.
 
 If 1 million fixed-rate mortgages reprice each year, and the average increase is 3 percentage points (because some were taken out at higher rates):
 Annual cost increase per household: $150\,000 \times 0.03/12 = \pounds 375$.
-Total: $375 \times 1\text{m{} = \pounds 375\text{m{}$ initially, rising as more fixed-rate terms expire.
+Total: $375 \times 1\text{m} = \pounds 375\text{m}$ initially, rising as more fixed-rate terms expire.
 
 **Housing market activity channel:**
 Higher mortgage rates reduce affordability, reducing demand for housing:
 - Mortgage approvals fall: from 70,000/month to 45,000/month (a 36% decline).
 - House price growth slows or reverses: UK house prices fell 5% from peak (August 2022) to trough (early 2024).
 - Housing wealth effect: UK housing wealth is approximately GBP 8.7 trillion. A 5% fall represents GBP 435 billion of lost wealth.
-- Consumption impact: MPC out of housing wealth is approximately 0.02. Consumption falls by $0.02 \times 435\text{bn{} = \pounds 8.7\text{bn{}$.
+- Consumption impact: MPC out of housing wealth is approximately 0.02. Consumption falls by $0.02 \times 435\text{bn} = \pounds 8.7\text{bn}$.
 
 **Construction channel:**
 Higher rates increase the cost of development finance. House builders reduce construction:

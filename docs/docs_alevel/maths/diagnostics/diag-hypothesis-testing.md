@@ -43,9 +43,9 @@ This is a one-tailed test (left-tailed).
 
 So $\sigma_{\bar{X}} = \sqrt{0.015625} = 0.125$.
 
-The critical region is where $\mathrm{P{}(\bar{X} \leq c) = 0.05$ under $H_0$:
+The critical region is where $\mathrm{P}(\bar{X} \leq c) = 0.05$ under $H_0$:
 
-$$\mathrm{P{}\left(Z \leq \frac{c - 500}{0.125}\right) = 0.05$$
+$$\mathrm{P}\left(Z \leq \frac{c - 500}{0.125}\right) = 0.05$$
 
 $$\frac{c - 500}{0.125} = -1.6449$$
 
@@ -59,7 +59,7 @@ $H_0: \mu = 500$, $H_1: \mu \neq 500$.
 
 Lower critical value:
 
-$$\mathrm{P{}\left(Z \leq \frac{c_1 - 500}{0.125}\right) = 0.025 \implies \frac{c_1 - 500}{0.125} = -1.96$$
+$$\mathrm{P}\left(Z \leq \frac{c_1 - 500}{0.125}\right) = 0.025 \implies \frac{c_1 - 500}{0.125} = -1.96$$
 
 $$c_1 = 500 - 1.96 \times 0.125 = 500 - 0.245 = 499.755$$
 
@@ -129,7 +129,7 @@ The doctor diagnoses the condition if $B > 58$.
 
 For healthy individuals: $B \sim N(50, 8^2) = N(50, 64)$.
 
-$$\mathrm{P{}(\text{Type I error{}) = \mathrm{P{}(B > 58 \mid \mu = 50) = \mathrm{P{}\left(Z > \frac{58 - 50}{8}\right) = \mathrm{P{}(Z > 1)$$
+$$\mathrm{P}(\text{Type I error}) = \mathrm{P}(B > 58 \mid \mu = 50) = \mathrm{P}\left(Z > \frac{58 - 50}{8}\right) = \mathrm{P}(Z > 1)$$
 
 $$= 1 - \Phi(1) = 1 - 0.8413 = 0.1587$$
 
@@ -139,7 +139,7 @@ The probability of a Type I error is approximately 15.9%.
 
 For affected individuals: $B \sim N(62, 8^2) = N(62, 64)$.
 
-$$\mathrm{P{}(\text{Type II error{}) = \mathrm{P{}(B \leq 58 \mid \mu = 62) = \mathrm{P{}\left(Z \leq \frac{58 - 62}{8}\right) = \mathrm{P{}(Z \leq -0.5)$$
+$$\mathrm{P}(\text{Type II error}) = \mathrm{P}(B \leq 58 \mid \mu = 62) = \mathrm{P}\left(Z \leq \frac{58 - 62}{8}\right) = \mathrm{P}(Z \leq -0.5)$$
 
 $$= \Phi(-0.5) = 1 - \Phi(0.5) = 1 - 0.6915 = 0.3085$$
 
@@ -147,23 +147,23 @@ The probability of a Type II error is approximately 30.9%.
 
 **(c)** For the Type I error rate to be at most 5%, we need:
 
-$$\mathrm{P{}(B > c \mid \mu = 50) \leq 0.05$$
+$$\mathrm{P}(B > c \mid \mu = 50) \leq 0.05$$
 
-$$\mathrm{P{}\left(Z > \frac{c - 50}{8}\right) \leq 0.05 \implies \frac{c - 50}{8} \geq 1.6449 \implies c \geq 50 + 13.16 = 63.16$$
+$$\mathrm{P}\left(Z > \frac{c - 50}{8}\right) \leq 0.05 \implies \frac{c - 50}{8} \geq 1.6449 \implies c \geq 50 + 13.16 = 63.16$$
 
 So $c \geq 63.16$.
 
 For the Type II error rate to be at most 5%, we need:
 
-$$\mathrm{P{}(B \leq c \mid \mu = 62) \leq 0.05$$
+$$\mathrm{P}(B \leq c \mid \mu = 62) \leq 0.05$$
 
-$$\mathrm{P{}\left(Z \leq \frac{c - 62}{8}\right) \leq 0.05 \implies \frac{c - 62}{8} \geq 1.6449 \implies c \geq 62 + 13.16 = 75.16$$
+$$\mathrm{P}\left(Z \leq \frac{c - 62}{8}\right) \leq 0.05 \implies \frac{c - 62}{8} \geq 1.6449 \implies c \geq 62 + 13.16 = 75.16$$
 
 So $c \geq 75.16$.
 
 But for the Type I error rate to be at most 5%, we need $c \geq 63.16$, while for the Type II error rate to be at most 5%, we need $c \geq 75.16$. These are contradictory requirements in the sense that increasing $c$ reduces the Type I error rate but increases the Type II error rate, and vice versa.
 
-Let me verify: at $c = 63.16$, Type I error $= 5\%$ and Type II error $= \mathrm{P{}(B \leq 63.16 \mid \mu = 62) = \mathrm{P{}(Z \leq 0.145) = 0.558 = 55.8\%$. At $c = 75.16$, Type II error $= 5\%$ but Type I error $= \mathrm{P{}(B > 75.16 \mid \mu = 50) = \mathrm{P{}(Z > 3.145) \approx 0.08\%$.
+Let me verify: at $c = 63.16$, Type I error $= 5\%$ and Type II error $= \mathrm{P}(B \leq 63.16 \mid \mu = 62) = \mathrm{P}(Z \leq 0.145) = 0.558 = 55.8\%$. At $c = 75.16$, Type II error $= 5\%$ but Type I error $= \mathrm{P}(B > 75.16 \mid \mu = 50) = \mathrm{P}(Z > 3.145) \approx 0.08\%$.
 
 As $c$ increases, Type I error decreases and Type II error increases. There is no value of $c$ where both are at most 5% simultaneously.
 
@@ -173,13 +173,13 @@ For Type I error $\leq 5\%$: $c \geq 50 + 1.6449 \times 4 = 56.58$
 
 For Type II error $\leq 5\%$: $c \geq 62 + 1.6449 \times 4 = 68.58$
 
-Wait --- for Type II error $\leq 5\%$: we need $\mathrm{P{}(\bar{B} \leq c \mid \mu = 62) \leq 0.05$:
+Wait --- for Type II error $\leq 5\%$: we need $\mathrm{P}(\bar{B} \leq c \mid \mu = 62) \leq 0.05$:
 
-$$\mathrm{P{}\left(Z \leq \frac{c - 62}{4}\right) \leq 0.05 \implies \frac{c - 62}{4} \geq 1.6449 \implies c \geq 68.58$$
+$$\mathrm{P}\left(Z \leq \frac{c - 62}{4}\right) \leq 0.05 \implies \frac{c - 62}{4} \geq 1.6449 \implies c \geq 68.58$$
 
-But at $c = 68.58$: Type I error $= \mathrm{P{}(\bar{B} > 68.58 \mid \mu = 50) = \mathrm{P{}(Z > 4.645) \approx 0$, and Type II error $= 5\%$.
+But at $c = 68.58$: Type I error $= \mathrm{P}(\bar{B} > 68.58 \mid \mu = 50) = \mathrm{P}(Z > 4.645) \approx 0$, and Type II error $= 5\%$.
 
-At $c = 56.58$: Type I error $= 5\%$, Type II error $= \mathrm{P{}(\bar{B} \leq 56.58 \mid \mu = 62) = \mathrm{P{}(Z \leq -1.355) = 8.8\%$.
+At $c = 56.58$: Type I error $= 5\%$, Type II error $= \mathrm{P}(\bar{B} \leq 56.58 \mid \mu = 62) = \mathrm{P}(Z \leq -1.355) = 8.8\%$.
 
 Still, there is no value where both are $\leq 5\%$. Even with 4 samples, the distributions overlap too much.
 
@@ -193,9 +193,9 @@ $$c - 50 = -(c - 62) \implies 2c = 112 \implies c = 56$$
 
 At $c = 56$:
 
-Type I error $= \mathrm{P{}(\bar{B} > 56 \mid \mu = 50) = \mathrm{P{}(Z > 1.5) = 0.0668$
+Type I error $= \mathrm{P}(\bar{B} > 56 \mid \mu = 50) = \mathrm{P}(Z > 1.5) = 0.0668$
 
-Type II error $= \mathrm{P{}(\bar{B} \leq 56 \mid \mu = 62) = \mathrm{P{}(Z \leq -1.5) = 0.0668$
+Type II error $= \mathrm{P}(\bar{B} \leq 56 \mid \mu = 62) = \mathrm{P}(Z \leq -1.5) = 0.0668$
 
 Sum $= 0.1336$. This is the threshold that minimises the total error probability, giving equal error rates of 6.68% each.
 
@@ -227,7 +227,7 @@ $$z = \frac{\bar{x} - 0}{3} = \frac{-5.2}{3} = -1.733$$
 
 This is a one-tailed test (left-tailed), so the p-value is:
 
-$$\text{p-value{} = \mathrm{P{}(Z \leq -1.733) = \Phi(-1.733) = 1 - \Phi(1.733) = 1 - 0.9586 = 0.0414$$
+$$\text{p-value} = \mathrm{P}(Z \leq -1.733) = \Phi(-1.733) = 1 - \Phi(1.733) = 1 - 0.9586 = 0.0414$$
 
 The p-value is approximately 0.0414.
 
@@ -245,17 +245,17 @@ Since $0.0414 \lt 0.05$, the result is statistically significant at the 5% level
 
 > The probability of obtaining a test statistic at least as extreme as the one observed, **assuming $H_0$ is true**.
 
-The p-value is a conditional probability: $\mathrm{P{}(\text{data{} \mid H_0)$, not $\mathrm{P{}(H_0 \mid \text{data{})$.
+The p-value is a conditional probability: $\mathrm{P}(\text{data} \mid H_0)$, not $\mathrm{P}(H_0 \mid \text{data})$.
 
 A large p-value means the observed data is consistent with $H_0$, but it does not mean $H_0$ is probably true. The data could also be consistent with a small but non-zero effect. For example, if the true effect is a reduction of 2 mmHg (which is clinically meaningful), a small sample might still produce a large p-value.
 
-To determine $\mathrm{P{}(H_0 \mid \text{data{})$ would require Bayesian methods (prior probabilities), which go beyond the scope of classical hypothesis testing.
+To determine $\mathrm{P}(H_0 \mid \text{data})$ would require Bayesian methods (prior probabilities), which go beyond the scope of classical hypothesis testing.
 
 **(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$, so $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
 
 $$z = \frac{-5.2}{\sqrt{4.5}} = \frac{-5.2}{2.121} = -2.451$$
 
-$$\text{p-value{} = \mathrm{P{}(Z \leq -2.451) = 1 - \Phi(2.451) = 1 - 0.9929 = 0.0071$$
+$$\text{p-value} = \mathrm{P}(Z \leq -2.451) = 1 - \Phi(2.451) = 1 - 0.9929 = 0.0071$$
 
 The new p-value is approximately 0.0071, which is much smaller than the original 0.0414.
 
@@ -279,21 +279,21 @@ After a new traffic light system is installed, the engineer records the number o
 
 $$6, 7, 5, 8, 4, 9, 6, 7, 5, 8, 6, 7, 4, 9, 5, 8, 6, 7, 5, 8$$
 
-**(a)** The engineer proposes to use a Poisson distribution to model the data. Before the new system, the number of vehicles $X \sim \text{Po{}(8)$. State the mean and variance of $X$, and explain why the Poisson distribution is a reasonable model for this scenario.
+**(a)** The engineer proposes to use a Poisson distribution to model the data. Before the new system, the number of vehicles $X \sim \text{Po}(8)$. State the mean and variance of $X$, and explain why the Poisson distribution is a reasonable model for this scenario.
 
 **(b)** The engineer wants to test whether the new traffic light system has changed the mean number of vehicles per interval. She decides to use the sample mean. State why using the sample mean directly with a Poisson test is difficult, and explain why a normal approximation would be appropriate.
 
 **(c)** Using the sample data, calculate the sample mean $\bar{x}$ and carry out a hypothesis test at the 5% significance level to determine whether the mean number of vehicles has decreased. Use the normal approximation to the Poisson distribution.
 
-**(d)** An alternative approach is to use the total count $T = \sum x_i$ and model $T \sim \text{Po{}(20\lambda)$ under the null hypothesis. Carry out this test and show that it gives the same conclusion as part (c).
+**(d)** An alternative approach is to use the total count $T = \sum x_i$ and model $T \sim \text{Po}(20\lambda)$ under the null hypothesis. Carry out this test and show that it gives the same conclusion as part (c).
 
 [Difficulty: hard. Combines distribution selection with hypothesis testing using two equivalent approaches.]
 
 **Solution:**
 
-**(a)** For $X \sim \text{Po{}(8)$:
+**(a)** For $X \sim \text{Po}(8)$:
 
-$$\mathrm{E{}(X) = 8, \quad \mathrm{Var{}(X) = 8$$
+$$\mathrm{E}(X) = 8, \quad \mathrm{Var}(X) = 8$$
 
 The Poisson distribution is appropriate because:
 - Vehicles arrive independently at the junction.
@@ -306,7 +306,7 @@ These are the standard assumptions of the Poisson process.
 **(b)** Testing the sample mean directly with a Poisson distribution is difficult because the sum (or mean) of independent Poisson random variables is also Poisson-distributed, but the Poisson distribution is discrete and the critical values must be found from Poisson cumulative probability tables. With a mean of 8 per interval and 20 intervals, the total is Po(160), which is large and would require interpolation in tables.
 
 The normal approximation is appropriate because:
-- The sum of independent Poisson variables is Poisson: $T \sim \text{Po{}(160)$.
+- The sum of independent Poisson variables is Poisson: $T \sim \text{Po}(160)$.
 - Since $\lambda = 160$ is large ($\lambda > 10$), the normal approximation $T \approx N(160, 160)$ is very accurate.
 - The sample mean $\bar{X} = \frac{T}{n}$ is then approximately $N\left(\lambda, \frac{\lambda}{n}\right) = N\left(8, \frac{160}{400}\right) = N(8, 0.4)$.
 
@@ -322,7 +322,7 @@ Under $H_0$: $\bar{X} \approx N(8, 0.4)$, $\sigma = \sqrt{0.4} \approx 0.6325$.
 
 $$z = \frac{6.7 - 8}{0.6325} = \frac{-1.3}{0.6325} = -2.056$$
 
-p-value $= \mathrm{P{}(Z \lt -2.056) = 1 - \Phi(2.056) = 1 - 0.9801 = 0.0199$
+p-value $= \mathrm{P}(Z \lt -2.056) = 1 - \Phi(2.056) = 1 - 0.9801 = 0.0199$
 
 Since $0.0199 \lt 0.05$, we reject $H_0$.
 
@@ -330,13 +330,13 @@ Since $0.0199 \lt 0.05$, we reject $H_0$.
 
 **(d)** The total count is $T = 134$.
 
-Under $H_0$: $T \sim \text{Po{}(160)$, approximated by $N(160, 160)$, $\sigma = \sqrt{160} \approx 12.649$.
+Under $H_0$: $T \sim \text{Po}(160)$, approximated by $N(160, 160)$, $\sigma = \sqrt{160} \approx 12.649$.
 
-With continuity correction (since $T$ is discrete and we want $\mathrm{P{}(T \leq 134)$):
+With continuity correction (since $T$ is discrete and we want $\mathrm{P}(T \leq 134)$):
 
 $$z = \frac{134.5 - 160}{\sqrt{160}} = \frac{-25.5}{12.649} = -2.016$$
 
-p-value $= \mathrm{P{}(Z \lt -2.016) = 1 - \Phi(2.016) = 1 - 0.9781 = 0.0219$
+p-value $= \mathrm{P}(Z \lt -2.016) = 1 - \Phi(2.016) = 1 - 0.9781 = 0.0219$
 
 Since $0.0219 \lt 0.05$, we reject $H_0$ --- the same conclusion as part (c).
 
@@ -370,7 +370,7 @@ $\sigma_{\bar{X}} = \frac{40}{6} = \frac{20}{3}$.
 
 Critical value:
 
-$$\mathrm{P{}(\bar{X} \leq c) = 0.05 \implies \frac{c - 500}{20/3} = -1.6449$$
+$$\mathrm{P}(\bar{X} \leq c) = 0.05 \implies \frac{c - 500}{20/3} = -1.6449$$
 
 $$c = 500 - 1.6449 \times \frac{20}{3} = 500 - 10.966 = 489.03$$
 
@@ -386,9 +386,9 @@ $$\bar{X} \sim N\left(480, \frac{1600}{36}\right) = N(480, 44.44)$$
 
 We fail to reject $H_0$ when $\bar{X} > 489.03$:
 
-$$\mathrm{P{}(\text{Type II error{}) = \mathrm{P{}(\bar{X} > 489.03 \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{489.03 - 480}{20/3}\right)$$
+$$\mathrm{P}(\text{Type II error}) = \mathrm{P}(\bar{X} > 489.03 \mid \mu = 480) = \mathrm{P}\left(Z > \frac{489.03 - 480}{20/3}\right)$$
 
-$$= \mathrm{P{}\left(Z > \frac{9.03 \times 3}{20}\right) = \mathrm{P{}(Z > 1.355)$$
+$$= \mathrm{P}\left(Z > \frac{9.03 \times 3}{20}\right) = \mathrm{P}(Z > 1.355)$$
 
 $$= 1 - \Phi(1.355) = 1 - 0.9123 = 0.0877$$
 
@@ -396,27 +396,27 @@ The probability of a Type II error is approximately 8.8%.
 
 **(c)** The power of the test is the probability of correctly rejecting $H_0$ when $H_1$ is true:
 
-$$\text{Power{} = 1 - \mathrm{P{}(\text{Type II error{}) = 1 - 0.0877 = 0.9123$$
+$$\text{Power} = 1 - \mathrm{P}(\text{Type II error}) = 1 - 0.0877 = 0.9123$$
 
 The power is approximately 91.2% when the true mean is 480 hours.
 
-**(d)** We need Power $\geq 0.90$ when $\mu = 480$, i.e., $\mathrm{P{}(\text{Type II error{}) \leq 0.10$.
+**(d)** We need Power $\geq 0.90$ when $\mu = 480$, i.e., $\mathrm{P}(\text{Type II error}) \leq 0.10$.
 
 Let $n$ be the sample size. Under $H_0$: $\bar{X} \sim N(500, \frac{1600}{n})$.
 
-Critical value: $\mathrm{P{}(\bar{X} \leq c) = 0.05$ under $H_0$:
+Critical value: $\mathrm{P}(\bar{X} \leq c) = 0.05$ under $H_0$:
 
 $$c = 500 - 1.6449 \times \frac{40}{\sqrt{n}}$$
 
 Under $H_1$ ($\mu = 480$): $\bar{X} \sim N(480, \frac{1600}{n})$.
 
-$$\mathrm{P{}(\text{Type II error{}) = \mathrm{P{}\left(\bar{X} > 500 - 1.6449 \times \frac{40}{\sqrt{n}} \;\middle|\; \mu = 480\right) \leq 0.10$$
+$$\mathrm{P}(\text{Type II error}) = \mathrm{P}\left(\bar{X} > 500 - 1.6449 \times \frac{40}{\sqrt{n}} \;\middle|\; \mu = 480\right) \leq 0.10$$
 
-$$\mathrm{P{}\left(Z > \frac{500 - 1.6449 \times 40/\sqrt{n} - 480}{40/\sqrt{n}}\right) \leq 0.10$$
+$$\mathrm{P}\left(Z > \frac{500 - 1.6449 \times 40/\sqrt{n} - 480}{40/\sqrt{n}}\right) \leq 0.10$$
 
-$$\mathrm{P{}\left(Z > \frac{20\sqrt{n} - 1.6449 \times 40}{40}\right) \leq 0.10$$
+$$\mathrm{P}\left(Z > \frac{20\sqrt{n} - 1.6449 \times 40}{40}\right) \leq 0.10$$
 
-$$\mathrm{P{}\left(Z > \frac{20\sqrt{n} - 65.796}{40}\right) \leq 0.10$$
+$$\mathrm{P}\left(Z > \frac{20\sqrt{n} - 65.796}{40}\right) \leq 0.10$$
 
 For this probability to be at most 0.10, we need:
 
@@ -436,7 +436,7 @@ Since $n$ must be an integer, the minimum sample size is $n = 35$.
 
 Critical value $= 500 - 1.6449 \times 6.761 = 500 - 11.12 = 488.88$.
 
-$$\mathrm{P{}(\text{Type II error{} \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{488.88 - 480}{6.761}\right) = \mathrm{P{}(Z > 1.314) = 0.0944$$
+$$\mathrm{P}(\text{Type II error} \mid \mu = 480) = \mathrm{P}\left(Z > \frac{488.88 - 480}{6.761}\right) = \mathrm{P}(Z > 1.314) = 0.0944$$
 
 Power $= 1 - 0.0944 = 0.9056 = 90.6\% \geq 90\%$.
 
@@ -444,7 +444,7 @@ With $n = 34$: $\sigma_{\bar{X}} = \frac{40}{\sqrt{34}} = 6.860$.
 
 Critical value $= 500 - 1.6449 \times 6.860 = 488.71$.
 
-$$\mathrm{P{}(\text{Type II error{} \mid \mu = 480) = \mathrm{P{}\left(Z > \frac{488.71 - 480}{6.860}\right) = \mathrm{P{}(Z > 1.270) = 0.1020$$
+$$\mathrm{P}(\text{Type II error} \mid \mu = 480) = \mathrm{P}\left(Z > \frac{488.71 - 480}{6.860}\right) = \mathrm{P}(Z > 1.270) = 0.1020$$
 
 Power $= 89.8\% \lt 90\%$.
 
@@ -496,7 +496,7 @@ Note: $r^2$ is always non-negative, regardless of the sign of $r$. The sign of $
 
 **(c)** For $S = 8$ hours:
 
-$$R = 580 - 28(8) = 580 - 224 = 356 \text{ ms{}$$
+$$R = 580 - 28(8) = 580 - 224 = 356 \text{ ms}$$
 
 This prediction might not be reliable because:
 

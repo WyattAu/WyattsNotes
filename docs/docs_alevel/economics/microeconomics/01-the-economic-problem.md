@@ -44,7 +44,7 @@ maximises an objective function subject to constraints.
 We define the **opportunity cost** of a decision as the value of the next-best alternative forgone
 as a result of that decision.
 
-$$\mathrm{Opportunity cost of {} A = \max_{B \neq A} \{U(B)\}$$
+$$\mathrm{Opportunity cost of } A = \max_{B \neq A} \{U(B)\}$$
 
 where $U(B)$ is the utility (or value) of alternative $B$. This is not the sum of all alternatives —
 only the single best one that was rejected.
@@ -107,7 +107,7 @@ with income $M$:
 $$
 \begin{aligned}
 \max_{x,y} \quad & U(x, y) \\
-\mathrm{s.t.{} \quad & P_x \cdot x + P_y \cdot y \leq M \\
+\mathrm{s.t.} \quad & P_x \cdot x + P_y \cdot y \leq M \\
 & x \geq 0, \quad y \geq 0
 \end{aligned}
 $$
@@ -136,7 +136,7 @@ Consider an economy that produces two goods, $X$ and $Y$, using a fixed quantity
 define the **production possibility frontier (PPF)** as the set of all maximum combinations of $X$
 and $Y$ that the economy can produce when all resources are fully and efficiently employed.
 
-$$\mathrm{PPF{} = \{(x, y) : x = f_X(L_X), \; y = f_Y(L_Y), \; L_X + L_Y = \bar{L}, \; f'_X, f'_Y > 0\}$$
+$$\mathrm{PPF} = \{(x, y) : x = f_X(L_X), \; y = f_Y(L_Y), \; L_X + L_Y = \bar{L}, \; f'_X, f'_Y > 0\}$$
 
 where $L_X$ and $L_Y$ are the quantities of labour allocated to goods $X$ and $Y$ respectively, and
 $\bar{L}$ is total labour available.
@@ -193,16 +193,16 @@ We define two types of efficiency:
 **Productive efficiency**: achieved when the economy is producing on the PPF (not inside it). All
 resources are fully employed and used in their most productive applications.
 
-$$\mathrm{Productive efficiency{} \iff (x, y) \in \mathrm{PPF{}$$
+$$\mathrm{Productive efficiency} \iff (x, y) \in \mathrm{PPF}$$
 
 **Allocative efficiency**: achieved when the economy is producing the combination of goods that
 _society values most_. This requires that the marginal rate of transformation equals the marginal
 rate of substitution:
 
-$$\mathrm{MRT{}_{XY} = \mathrm{MRS{}_{XY}$$
+$$\mathrm{MRT}_{XY} = \mathrm{MRS}_{XY}$$
 
-where $\mathrm{MRT{}_{XY} = \left|\frac{dy}{dx}\right|$ is the slope of the PPF and
-$\mathrm{MRS{}_{XY} = \frac{MU_X}{MU_Y}$ is the ratio of marginal utilities.
+where $\mathrm{MRT}_{XY} = \left|\frac{dy}{dx}\right|$ is the slope of the PPF and
+$\mathrm{MRS}_{XY} = \frac{MU_X}{MU_Y}$ is the ratio of marginal utilities.
 
 A point inside the PPF represents inefficiency — resources are unemployed or misallocated. A point
 outside the PPF is unattainable given current resources and technology.
@@ -331,12 +331,12 @@ essay questions frequently ask students to assess the relative merits of differe
 A **positive statement** is a claim about what _is_ — it can be tested against evidence and is
 either true or false.
 
-$$\mathrm{Example: "A 10\% increase in the minimum wage reduces employment by 2\%."{}$$
+$$\mathrm{Example: "A 10\% increase in the minimum wage reduces employment by 2\%."}$$
 
 A **normative statement** is a claim about what _ought to be_ — it involves value judgements and
 cannot be tested.
 
-$$\mathrm{Example: "The government should increase the minimum wage."{}$$
+$$\mathrm{Example: "The government should increase the minimum wage."}$$
 
 ### 3.2 The Distinction Matters
 
@@ -775,13 +775,13 @@ Revenue at current production: $2(200) + 4.4(150) = 400 + 660 = 1060$.
 Revenue after switching to 3 million tonnes of wheat:
 $3(200) + 3.6(150) = 600 + 540 = 1140$.
 
-Revenue gain: $1140 - 1060 = \text{GBP {} 80\text{m{}$. The farmer should produce more wheat.
+Revenue gain: $1140 - 1060 = \text{GBP } 80\text{m}$. The farmer should produce more wheat.
 
 **What if barley price rises to GBP 200/tonne?**
 Revenue at current production: $2(200) + 4.4(200) = 400 + 880 = 1280$.
 Revenue at 3 million tonnes of wheat: $3(200) + 3.6(200) = 600 + 720 = 1320$.
 
-Revenue gain: $1320 - 1280 = \text{GBP {} 40\text{m{}$. Still worth producing more wheat.
+Revenue gain: $1320 - 1280 = \text{GBP } 40\text{m}$. Still worth producing more wheat.
 
 **What if barley price rises to GBP 250/tonne?**
 Revenue at current production: $2(200) + 4.4(250) = 400 + 1100 = 1500$.
@@ -793,7 +793,7 @@ Revenue gain: 0. The farmer is indifferent between producing 2 and 3 million ton
 Revenue at current production: $2(200) + 4.4(300) = 400 + 1320 = 1720$.
 Revenue at 3 million tonnes of wheat: $3(200) + 3.6(300) = 600 + 1080 = 1680$.
 
-Revenue change: $-40\text{m{}$. The farmer should produce LESS wheat (more barley). The opportunity cost of wheat production has increased relative to its value.
+Revenue change: $-40\text{m}$. The farmer should produce LESS wheat (more barley). The opportunity cost of wheat production has increased relative to its value.
 
 **Key insight:** The optimal production point depends on the relative prices of the two goods. The farmer should produce where the marginal rate of transformation (MRT = opportunity cost) equals the price ratio ($P_w/P_b$).
 

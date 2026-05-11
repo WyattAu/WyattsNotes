@@ -130,7 +130,7 @@ $$\frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}\begin{pmatrix}
 
 ### 3.3 Inverse of a 3x3 matrix
 
-**Method 1: Adjugate matrix.** $A^{-1} = \dfrac{1}{\det A}\,\mathrm{adj{}(A)$, where the adjugate is the
+**Method 1: Adjugate matrix.** $A^{-1} = \dfrac{1}{\det A}\,\mathrm{adj}(A)$, where the adjugate is the
 transpose of the cofactor matrix.
 
 **Method 2: Row reduction.** Form the augmented matrix $[A \mid I]$ and apply row operations to
@@ -232,7 +232,7 @@ $$\det\begin{pmatrix} a - \lambda & b \\ c & d - \lambda \end{pmatrix} = (a - \l
 
 $$\lambda^2 - (a + d)\lambda + (ad - bc) = 0$$
 
-**Key result:** $\lambda_1 + \lambda_2 = \mathrm{tr{}(A) = a + d$ (the trace) and
+**Key result:** $\lambda_1 + \lambda_2 = \mathrm{tr}(A) = a + d$ (the trace) and
 $\lambda_1 \lambda_2 = \det A$.
 
 ### 5.3 Finding eigenvectors
@@ -392,7 +392,7 @@ $$= ad(eh - fg) - bc(eh - fg) = (ad - bc)(eh - fg) = \det(A)\det(B) \quad \black
 ### 7.2 Proof: $\det(A) \neq 0 \iff A$ is invertible
 
 **Proof.** ($\Rightarrow$) If $\det(A) \neq 0$, the adjugate formula gives
-$A^{-1} = \dfrac{1}{\det A}\mathrm{adj{}(A)$, so $A$ is invertible.
+$A^{-1} = \dfrac{1}{\det A}\mathrm{adj}(A)$, so $A$ is invertible.
 
 ($\Leftarrow$) If $A$ is invertible with $A^{-1}$, then
 $\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$.
@@ -400,14 +400,14 @@ Since $1 \neq 0$, we must have $\det(A) \neq 0$. $\blacksquare$
 
 ### 7.3 Proof: the trace equals the sum of eigenvalues
 
-**Theorem.** For any $2 \times 2$ matrix $A$, $\mathrm{tr{}(A) = \lambda_1 + \lambda_2$.
+**Theorem.** For any $2 \times 2$ matrix $A$, $\mathrm{tr}(A) = \lambda_1 + \lambda_2$.
 
 **Proof.** The characteristic equation is
 $\det(A - \lambda I) = \lambda^2 - (a + d)\lambda + (ad - bc) = 0$.
 
 By Vieta's formulas, the sum of the roots is the negative coefficient of $\lambda$:
 
-$$\lambda_1 + \lambda_2 = a + d = \mathrm{tr{}(A) \quad \blacksquare$$
+$$\lambda_1 + \lambda_2 = a + d = \mathrm{tr}(A) \quad \blacksquare$$
 
 ### 7.4 Proof: area scale factor via determinant
 
@@ -419,7 +419,7 @@ is mapped to a parallelogram with vertices $\mathbf{'\{'}0{'\}'}, A\mathbf{'\{'}
 
 The area of this parallelogram is the magnitude of the cross product (in 2D, the determinant):
 
-$$\text{Area{} = \left|\det\begin{pmatrix} a & b \\ c & d \end{pmatrix}\right| = |\det A|$$
+$$\text{Area} = \left|\det\begin{pmatrix} a & b \\ c & d \end{pmatrix}\right| = |\det A|$$
 
 Any region can be tiled by infinitesimal parallelograms, so the general scale factor is $|\det A|$. $\blacksquare$
 
@@ -697,7 +697,7 @@ $$= \begin{pmatrix} \cos\theta & -\sin\theta & a(1-\cos\theta)+b\sin\theta \\ \s
 
 **Solution.**
 
-$$\text{Area{} = \frac{1}{2}\left|\det\begin{pmatrix} 1 & 2 & 1 \\ 4 & 6 & 1 \\ 3 & -1 & 1 \end{pmatrix}\right|$$
+$$\text{Area} = \frac{1}{2}\left|\det\begin{pmatrix} 1 & 2 & 1 \\ 4 & 6 & 1 \\ 3 & -1 & 1 \end{pmatrix}\right|$$
 
 Expanding along the third column:
 
@@ -907,9 +907,9 @@ $M^4+3M = -5M+6I+3M = -2M+6I = -2\begin{pmatrix}2&-1\\4&-3\end{pmatrix}+6\begin{
 
 If $B = P^{-1}AP$, then $\det(B) = \det(P^{-1}AP) = \det(P^{-1})\det(A)\det(P) = \det(A)$.
 
-$\text{tr{}(B) = \text{tr{}(P^{-1}AP)$. Using the cyclic property of trace: $\text{tr{}(ABC) = \text{tr{}(CAB)$.
+$\text{tr}(B) = \text{tr}(P^{-1}AP)$. Using the cyclic property of trace: $\text{tr}(ABC) = \text{tr}(CAB)$.
 
-$\text{tr{}(P^{-1}AP) = \text{tr{}(APP^{-1}) = \text{tr{}(A)$. $\blacksquare$
+$\text{tr}(P^{-1}AP) = \text{tr}(APP^{-1}) = \text{tr}(A)$. $\blacksquare$
 
 </details>
 

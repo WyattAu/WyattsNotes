@@ -42,7 +42,7 @@ exponential measures inter-arrival times, and geometric counts trials until the 
 **Definition.** A **probability density function** (PDF) $f(x)$ of a continuous random variable $X$
 is a non-negative function satisfying:
 
-$$f(x) \geq 0 \quad \mathrm{for all {} x, \qquad \int_{-\infty}^{\infty}f(x)\,dx = 1$$
+$$f(x) \geq 0 \quad \mathrm{for all } x, \qquad \int_{-\infty}^{\infty}f(x)\,dx = 1$$
 
 Probabilities are found by integration:
 
@@ -80,11 +80,11 @@ $$E(g(X)) = \int_{-\infty}^{\infty}g(x)\,f(x)\,dx$$
 
 **Definition.**
 
-$$\boxed{\mathrm{Var{}(X) = E(X^2) - [E(X)]^2 = \int_{-\infty}^{\infty}x^2\,f(x)\,dx - \left(\int_{-\infty}^{\infty}x\,f(x)\,dx\right)^2}$$
+$$\boxed{\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \int_{-\infty}^{\infty}x^2\,f(x)\,dx - \left(\int_{-\infty}^{\infty}x\,f(x)\,dx\right)^2}$$
 
 The linear properties carry over from the discrete case:
 
-$$E(aX + b) = aE(X) + b, \qquad \mathrm{Var{}(aX + b) = a^2\,\mathrm{Var{}(X)$$
+$$E(aX + b) = aE(X) + b, \qquad \mathrm{Var}(aX + b) = a^2\,\mathrm{Var}(X)$$
 
 ### 1.5 Median, mode, and quartiles
 
@@ -95,7 +95,7 @@ $$E(aX + b) = aE(X) + b, \qquad \mathrm{Var{}(aX + b) = a^2\,\mathrm{Var{}(X)$$
 **Definition.** The **lower quartile** $Q_1$ satisfies $F(Q_1) = 0.25$ and the **upper quartile**
 $Q_3$ satisfies $F(Q_3) = 0.75$.
 
-**The interquartile range** is $\mathrm{IQR{} = Q_3 - Q_1$.
+**The interquartile range** is $\mathrm{IQR} = Q_3 - Q_1$.
 
 <hr />
 
@@ -104,7 +104,7 @@ $Q_3$ satisfies $F(Q_3) = 0.75$.
 ### 2.1 Definition
 
 **Definition.** A continuous random variable $X$ follows an **exponential distribution** with rate
-parameter $\lambda$ (where $\lambda > 0$), written $X \sim \mathrm{Exp{}(\lambda)$, if
+parameter $\lambda$ (where $\lambda > 0$), written $X \sim \mathrm{Exp}(\lambda)$, if
 
 $$\boxed{f(x) = \lambda e^{-\lambda x}, \quad x \geq 0}$$
 
@@ -140,7 +140,7 @@ $$
 
 Note: $\lim_{x\to\infty}xe^{-\lambda x} = 0$ by L'Hôpital's rule (exponential decay dominates).
 
-### 2.4 Proof that $\mathrm{Var{}(X) = \frac{1}{\lambda^2}$
+### 2.4 Proof that $\mathrm{Var}(X) = \frac{1}{\lambda^2}$
 
 ### Proof
 
@@ -159,9 +159,9 @@ E(X^2) &= \left[-x^2 e^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}2x\,e^{-\
 \end{aligned}
 $$
 
-$$\mathrm{Var{}(X) = E(X^2) - [E(X)]^2 = \frac{2}{\lambda^2} - \frac{1}{\lambda^2} = \frac{1}{\lambda^2} \quad \blacksquare$$
+$$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \frac{2}{\lambda^2} - \frac{1}{\lambda^2} = \frac{1}{\lambda^2} \quad \blacksquare$$
 
-$$\boxed{E(X) = \frac{1}{\lambda}, \qquad \mathrm{Var{}(X) = \frac{1}{\lambda^2}, \qquad \sigma = \frac{1}{\lambda}}$$
+$$\boxed{E(X) = \frac{1}{\lambda}, \qquad \mathrm{Var}(X) = \frac{1}{\lambda^2}, \qquad \sigma = \frac{1}{\lambda}}$$
 
 ### 2.5 The memoryless property
 
@@ -191,15 +191,15 @@ effect — which is why it is more appropriate for electronic components than me
 
 A **Poisson process** with rate $\lambda$ satisfies:
 
-- The number of events in an interval of length $t$ follows $\mathrm{Po{}(\lambda t)$
-- The time between consecutive events follows $\mathrm{Exp{}(\lambda)$
+- The number of events in an interval of length $t$ follows $\mathrm{Po}(\lambda t)$
+- The time between consecutive events follows $\mathrm{Exp}(\lambda)$
 - The inter-arrival times are independent and identically distributed
 
 **Proof sketch that inter-arrival times are exponential.** Let $T$ be the time until the first
 event.
-$P(T > t) = P(\mathrm{no events in {}[0,t]) = P(N(t) = 0) = \dfrac{e^{-\lambda t}(\lambda t)^0}{0!} = e^{-\lambda t}$.
+$P(T > t) = P(\mathrm{no events in }[0,t]) = P(N(t) = 0) = \dfrac{e^{-\lambda t}(\lambda t)^0}{0!} = e^{-\lambda t}$.
 
-So $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp{}(\lambda)$. $\blacksquare$
+So $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp}(\lambda)$. $\blacksquare$
 
 ### 2.7 Percentiles
 
@@ -215,7 +215,7 @@ The median is $x_{0.5} = -\dfrac{\ln(0.5)}{\lambda} = \dfrac{\ln 2}{\lambda}$.
 
 ### 3.1 Finding probabilities
 
-**Example.** $X \sim \mathrm{Exp{}(0.5)$. Find $P(X > 3)$, $P(1 < X < 4)$, and the median.
+**Example.** $X \sim \mathrm{Exp}(0.5)$. Find $P(X > 3)$, $P(1 < X < 4)$, and the median.
 
 $P(X > 3) = e^{-0.5 \times 3} = e^{-1.5} \approx 0.2231$.
 
@@ -233,7 +233,7 @@ $E(X) = \int_0^2 x\cdot\dfrac{3}{8}x^2\,dx = \dfrac{3}{8}\int_0^2 x^3\,dx = \dfr
 
 $E(X^2) = \dfrac{3}{8}\int_0^2 x^4\,dx = \dfrac{3}{8}\cdot\dfrac{32}{5} = \dfrac{12}{5}$.
 
-$\mathrm{Var{}(X) = \dfrac{12}{5} - \left(\dfrac{3}{2}\right)^2 = \dfrac{12}{5} - \dfrac{9}{4} = \dfrac{3}{20}$.
+$\mathrm{Var}(X) = \dfrac{12}{5} - \left(\dfrac{3}{2}\right)^2 = \dfrac{12}{5} - \dfrac{9}{4} = \dfrac{3}{20}$.
 
 Median:
 $\int_0^m \dfrac{3}{8}x^2\,dx = 0.5 \implies \dfrac{m^3}{8} = 0.5 \implies m^3 = 4 \implies m = \sqrt[3]{4} \approx 1.587$.
@@ -250,7 +250,7 @@ For $x < 0$: $F(x) = 0$. For $x > 1$: $F(x) = 1$.
 
 ## 4. Hypothesis Testing with the Exponential Distribution
 
-**Example.** The lifetime of a component is modelled by $X \sim \mathrm{Exp{}(\lambda)$. A sample of
+**Example.** The lifetime of a component is modelled by $X \sim \mathrm{Exp}(\lambda)$. A sample of
 10 components gives a mean lifetime of 420 hours. Test at the 5% level whether $\lambda = 0.005$
 against $H_1: \lambda \neq 0.005$.
 
@@ -269,7 +269,7 @@ $|z| = 3.48 > 1.96$, so reject $H_0$.
 
 <details>
 <summary>Problem 1</summary>
-$X \sim \mathrm{Exp{}(2)$. Find $P(X > 1)$, $P(0.5 < X < 2)$, and the 90th percentile.
+$X \sim \mathrm{Exp}(2)$. Find $P(X > 1)$, $P(0.5 < X < 2)$, and the 90th percentile.
 </details>
 
 <details>
@@ -287,7 +287,7 @@ $F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -\dfrac{\ln(0.1)}{2} \approx
 
 <details>
 <summary>Problem 2</summary>
-A continuous random variable $X$ has PDF $f(x) = \dfrac{3x^2}{8}$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var{}(X)$, and the median.
+A continuous random variable $X$ has PDF $f(x) = \dfrac{3x^2}{8}$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var}(X)$, and the median.
 </details>
 
 <details>
@@ -296,7 +296,7 @@ $E(X) = \int_0^2 x\cdot\dfrac{3x^2}{8}\,dx = \dfrac{3}{8}\cdot\left[\dfrac{x^4}{
 
 $E(X^2) = \int_0^2 x^2\cdot\dfrac{3x^2}{8}\,dx = \dfrac{3}{8}\cdot\left[\dfrac{x^5}{5}\right]_0^2 = \dfrac{3}{8}\cdot\dfrac{32}{5} = 2.4$.
 
-$\mathrm{Var{}(X) = 2.4 - 1.5^2 = 2.4 - 2.25 = 0.15$.
+$\mathrm{Var}(X) = 2.4 - 1.5^2 = 2.4 - 2.25 = 0.15$.
 
 Median:
 $\int_0^m \dfrac{3x^2}{8}\,dx = 0.5 \implies \dfrac{m^3}{8} = 0.5 \implies m = \sqrt[3]{4} \approx 1.587$.
@@ -329,7 +329,7 @@ Calls arrive at a switchboard as a Poisson process with rate $\lambda = 4$ per h
 
 <details>
 <summary>Solution 4</summary>
-The inter-arrival time $T \sim \mathrm{Exp{}(4)$ (rate in hours).
+The inter-arrival time $T \sim \mathrm{Exp}(4)$ (rate in hours).
 
 $P(T > 0.5) = e^{-4 \times 0.5} = e^{-2} \approx 0.1353$.
 
@@ -340,7 +340,7 @@ Section 2.6.
 
 <details>
 <summary>Problem 5</summary>
-$X$ has PDF $f(x) = \dfrac{1}{2}x$ for $0 \leq x \leq 2$. Find the CDF, $E(X)$, and $\mathrm{Var{}(X)$.
+$X$ has PDF $f(x) = \dfrac{1}{2}x$ for $0 \leq x \leq 2$. Find the CDF, $E(X)$, and $\mathrm{Var}(X)$.
 </details>
 
 <details>
@@ -351,7 +351,7 @@ $E(X) = \int_0^2 x\cdot\dfrac{x}{2}\,dx = \dfrac{1}{2}\left[\dfrac{x^3}{3}\right
 
 $E(X^2) = \dfrac{1}{2}\left[\dfrac{x^4}{4}\right]_0^2 = \dfrac{1}{2}\cdot 4 = 2$.
 
-$\mathrm{Var{}(X) = 2 - \left(\dfrac{4}{3}\right)^2 = 2 - \dfrac{16}{9} = \dfrac{2}{9}$.
+$\mathrm{Var}(X) = 2 - \left(\dfrac{4}{3}\right)^2 = 2 - \dfrac{16}{9} = \dfrac{2}{9}$.
 
 **If you get this wrong, revise:** [Expected value](#13-expected-value) — Section 1.3.
 
@@ -359,7 +359,7 @@ $\mathrm{Var{}(X) = 2 - \left(\dfrac{4}{3}\right)^2 = 2 - \dfrac{16}{9} = \dfrac
 
 <details>
 <summary>Problem 6</summary>
-The lifetime of a light bulb follows $X \sim \mathrm{Exp{}(0.01)$ (in hours). Given that the bulb has been working for 500 hours, find the probability it lasts at least another 200 hours.
+The lifetime of a light bulb follows $X \sim \mathrm{Exp}(0.01)$ (in hours). Given that the bulb has been working for 500 hours, find the probability it lasts at least another 200 hours.
 </details>
 
 <details>
@@ -392,7 +392,7 @@ $F(Q_3) = 0.75 \implies \dfrac{Q_3^3}{27} = 0.75 \implies Q_3^3 = 20.25 \implies
 
 <details>
 <summary>Problem 8</summary>
-Prove that $E(X) = 1/\lambda$ for $X \sim \mathrm{Exp{}(\lambda)$, using integration by parts.
+Prove that $E(X) = 1/\lambda$ for $X \sim \mathrm{Exp}(\lambda)$, using integration by parts.
 </details>
 
 <details>
@@ -416,7 +416,7 @@ Buses arrive at a stop as a Poisson process with rate 6 per hour. Find the proba
 
 <details>
 <summary>Solution 9</summary>
-Waiting time $T \sim \mathrm{Exp{}(6)$ (rate per hour).
+Waiting time $T \sim \mathrm{Exp}(6)$ (rate per hour).
 
 $P(1/12 < T < 1/4) = F(1/4) - F(1/12) = (1-e^{-1.5}) - (1-e^{-0.5}) = e^{-0.5} - e^{-1.5}$
 
@@ -429,7 +429,7 @@ Section 2.6.
 
 <details>
 <summary>Problem 10</summary>
-$X$ has PDF $f(x) = 4x^3$ for $0 \leq x \leq 1$. Find $P(X > 0.5)$, $E(X)$, $\mathrm{Var{}(X)$, and the mode.
+$X$ has PDF $f(x) = 4x^3$ for $0 \leq x \leq 1$. Find $P(X > 0.5)$, $E(X)$, $\mathrm{Var}(X)$, and the mode.
 </details>
 
 <details>
@@ -440,7 +440,7 @@ $E(X) = \int_0^1 4x^4\,dx = \left[\dfrac{4x^5}{5}\right]_0^1 = \dfrac{4}{5}$.
 
 $E(X^2) = \int_0^1 4x^5\,dx = \left[\dfrac{4x^6}{6}\right]_0^1 = \dfrac{2}{3}$.
 
-$\mathrm{Var{}(X) = \dfrac{2}{3} - \left(\dfrac{4}{5}\right)^2 = \dfrac{2}{3} - \dfrac{16}{25} = \dfrac{50 - 48}{75} = \dfrac{2}{75}$.
+$\mathrm{Var}(X) = \dfrac{2}{3} - \left(\dfrac{4}{5}\right)^2 = \dfrac{2}{3} - \dfrac{16}{25} = \dfrac{50 - 48}{75} = \dfrac{2}{75}$.
 
 Mode: $f(x) = 4x^3$ is increasing on $[0,1]$, so the mode is at $x = 1$.
 
@@ -455,7 +455,7 @@ Section 1.5.
 
 ### 5.1 Rigorous proof using conditional probability
 
-**Theorem.** If $X \sim \mathrm{Exp{}(\lambda)$, then for all $s, t > 0$:
+**Theorem.** If $X \sim \mathrm{Exp}(\lambda)$, then for all $s, t > 0$:
 
 $$P(X > s + t \mid X > s) = P(X > t)$$
 
@@ -474,7 +474,7 @@ $$\frac{P(X > s + t)}{P(X > s)} = \frac{e^{-\lambda(s+t)}}{e^{-\lambda s}} = e^{
 ### 5.2 Converse: exponential is the only continuous memoryless distribution
 
 **Theorem.** If a continuous random variable $X$ on $(0, \infty)$ satisfies
-$P(X > s+t \mid X > s) = P(X > t)$ for all $s, t > 0$, then $X \sim \mathrm{Exp{}(\lambda)$ for some
+$P(X > s+t \mid X > s) = P(X > t)$ for all $s, t > 0$, then $X \sim \mathrm{Exp}(\lambda)$ for some
 $\lambda > 0$.
 
 ### Proof
@@ -492,7 +492,7 @@ for some $\lambda \geq 0$. Since $G$ is non-trivial (not identically 1), $\lambd
 
 $$P(X \leq t) = 1 - e^{-\lambda t}$$
 
-which is the CDF of $\mathrm{Exp{}(\lambda)$. $\blacksquare$
+which is the CDF of $\mathrm{Exp}(\lambda)$. $\blacksquare$
 
 ### 5.3 Practical interpretation
 
@@ -512,27 +512,27 @@ The memoryless property means:
 ### 6.1 Derivation
 
 **Theorem.** In a Poisson process with rate $\lambda$, the time between consecutive events follows
-$\mathrm{Exp{}(\lambda)$.
+$\mathrm{Exp}(\lambda)$.
 
 ### Proof
 
 Let $T$ be the time from an arbitrary starting point until the first event.
 
-$$P(T > t) = P(\mathrm{no events in {}[0,t])$$
+$$P(T > t) = P(\mathrm{no events in }[0,t])$$
 
-Since the number of events in $[0,t]$ follows $\mathrm{Po{}(\lambda t)$:
+Since the number of events in $[0,t]$ follows $\mathrm{Po}(\lambda t)$:
 
 $$P(N(t) = 0) = \frac{e^{-\lambda t}(\lambda t)^0}{0!} = e^{-\lambda t}$$
 
-Therefore $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp{}(\lambda)$.
+Therefore $P(T \leq t) = 1 - e^{-\lambda t}$, which is the CDF of $\mathrm{Exp}(\lambda)$.
 $\blacksquare$
 
 ### 6.2 Sum of inter-arrival times
 
 If $T_1, T_2, \ldots, T_n$ are $n$ independent inter-arrival times, each
-$\sim \mathrm{Exp{}(\lambda)$, then the total time until the $n$-th event is:
+$\sim \mathrm{Exp}(\lambda)$, then the total time until the $n$-th event is:
 
-$$S_n = T_1 + T_2 + \cdots + T_n \sim \mathrm{Gamma{}(n, \lambda)$$
+$$S_n = T_1 + T_2 + \cdots + T_n \sim \mathrm{Gamma}(n, \lambda)$$
 
 This connects the exponential to the gamma distribution.
 
@@ -542,17 +542,17 @@ This connects the exponential to the gamma distribution.
 
 (a) Find the probability that the time between two consecutive calls exceeds 20 minutes.
 
-$T \sim \mathrm{Exp{}(5)$ (rate per hour). $P(T > 1/3) = e^{-5/3} \approx 0.1889$.
+$T \sim \mathrm{Exp}(5)$ (rate per hour). $P(T > 1/3) = e^{-5/3} \approx 0.1889$.
 
 (b) Find the probability that at least 3 calls arrive in the next 30 minutes.
 
-$N(0.5) \sim \mathrm{Po{}(2.5)$.
+$N(0.5) \sim \mathrm{Po}(2.5)$.
 $P(N \geq 3) = 1 - P(N \leq 2) = 1 - e^{-2.5}(1 + 2.5 + 2.5^2/2) = 1 - 0.0821 \times 9.125 \approx 1 - 0.749 = 0.251$.
 
 (c) Find the median inter-arrival time.
 
 Median
-$= \dfrac{\ln 2}{\lambda} = \dfrac{\ln 2}{5} \approx 0.139\,\mathrm{hours{} \approx 8.3\,\mathrm{minutes{}$.
+$= \dfrac{\ln 2}{\lambda} = \dfrac{\ln 2}{5} \approx 0.139\,\mathrm{hours} \approx 8.3\,\mathrm{minutes}$.
 
 <hr />
 
@@ -566,7 +566,7 @@ $$f(x) = \frac{1}{b - a}, \quad a \leq x \leq b$$
 
 and $f(x) = 0$ otherwise.
 
-### 7.2 Proof of $E(X)$ and $\mathrm{Var{}(X)$
+### 7.2 Proof of $E(X)$ and $\mathrm{Var}(X)$
 
 ### Proof
 
@@ -574,11 +574,11 @@ $$E(X) = \int_a^b x \cdot \frac{1}{b-a}\,dx = \frac{1}{b-a}\left[\frac{x^2}{2}\r
 
 $$E(X^2) = \int_a^b x^2 \cdot \frac{1}{b-a}\,dx = \frac{1}{b-a}\left[\frac{x^3}{3}\right]_a^b = \frac{b^3 - a^3}{3(b-a)} = \frac{a^2 + ab + b^2}{3}$$
 
-$$\mathrm{Var{}(X) = \frac{a^2 + ab + b^2}{3} - \frac{(a+b)^2}{4} = \frac{4(a^2 + ab + b^2) - 3(a+b)^2}{12}$$
+$$\mathrm{Var}(X) = \frac{a^2 + ab + b^2}{3} - \frac{(a+b)^2}{4} = \frac{4(a^2 + ab + b^2) - 3(a+b)^2}{12}$$
 
 $$= \frac{4a^2 + 4ab + 4b^2 - 3a^2 - 6ab - 3b^2}{12} = \frac{a^2 - 2ab + b^2}{12}$$
 
-$$\boxed{\mathrm{Var{}(X) = \frac{(b-a)^2}{12}} \quad \blacksquare$$
+$$\boxed{\mathrm{Var}(X) = \frac{(b-a)^2}{12}} \quad \blacksquare$$
 
 ### 7.3 CDF of the continuous uniform
 
@@ -598,7 +598,7 @@ $$f(x) = p\,f_1(x) + (1-p)\,f_2(x)$$
 
 $$E(X) = p\,E(X_1) + (1-p)\,E(X_2)$$
 
-$$\mathrm{Var{}(X) = p\,\mathrm{Var{}(X_1) + (1-p)\,\mathrm{Var{}(X_2) + p(1-p)[E(X_1) - E(X_2)]^2$$
+$$\mathrm{Var}(X) = p\,\mathrm{Var}(X_1) + (1-p)\,\mathrm{Var}(X_2) + p(1-p)[E(X_1) - E(X_2)]^2$$
 
 The variance formula includes an extra term from the difference in means — this is the law of total
 variance.
@@ -606,13 +606,13 @@ variance.
 ### 8.2 Worked example
 
 **Example.** A machine produces components. With probability 0.7 it is correctly calibrated,
-producing components with lifetime $\sim \mathrm{Exp{}(0.01)$. With probability 0.3 it is faulty,
-producing components with lifetime $\sim \mathrm{Exp{}(0.002)$. Find the overall PDF, the expected
+producing components with lifetime $\sim \mathrm{Exp}(0.01)$. With probability 0.3 it is faulty,
+producing components with lifetime $\sim \mathrm{Exp}(0.002)$. Find the overall PDF, the expected
 lifetime, and $P(X > 100)$.
 
 $$f(x) = 0.7(0.01\,e^{-0.01x}) + 0.3(0.002\,e^{-0.002x}) = 0.007\,e^{-0.01x} + 0.0006\,e^{-0.002x}$$
 
-$E(X) = 0.7 \times 100 + 0.3 \times 500 = 70 + 150 = 220\,\mathrm{hours{}$.
+$E(X) = 0.7 \times 100 + 0.3 \times 500 = 70 + 150 = 220\,\mathrm{hours}$.
 
 $P(X > 100) = 0.7\,e^{-0.01 \times 100} + 0.3\,e^{-0.002 \times 100} = 0.7e^{-1} + 0.3e^{-0.2} \approx 0.7(0.3679) + 0.3(0.8187)$
 
@@ -642,7 +642,7 @@ formalism).
 
 ### Exponential rate vs mean
 
-$X \sim \mathrm{Exp{}(\lambda)$ has mean $1/\lambda$. A common error is to confuse $\lambda$ (the
+$X \sim \mathrm{Exp}(\lambda)$ has mean $1/\lambda$. A common error is to confuse $\lambda$ (the
 rate) with the mean. If the mean lifetime is 200 hours, then $\lambda = 1/200 = 0.005$, not
 $\lambda = 200$.
 
@@ -650,7 +650,7 @@ Check: a larger $\lambda$ means shorter lifetimes on average (events happen more
 
 ### Units in Poisson-exponential problems
 
-If events occur at rate $\lambda = 5$ per hour, then the inter-arrival time is $\mathrm{Exp{}(5)$
+If events occur at rate $\lambda = 5$ per hour, then the inter-arrival time is $\mathrm{Exp}(5)$
 measured in **hours**. If you want the probability of waiting more than 20 minutes, convert to
 hours: $t = 1/3$ hours. Using $t = 20$ directly would give $P(T > 20) = e^{-100}$, which is
 essentially zero and clearly wrong.
@@ -660,7 +660,7 @@ essentially zero and clearly wrong.
 ## 10. Problem Set
 
 <details>
-<summary>Q1. $X \sim \mathrm{Exp{}(\lambda)$. Find the value of $\lambda$ such that $P(X > 2) = 0.3$, and hence find $E(X)$ and the 80th percentile.</summary>
+<summary>Q1. $X \sim \mathrm{Exp}(\lambda)$. Find the value of $\lambda$ such that $P(X > 2) = 0.3$, and hence find $E(X)$ and the 80th percentile.</summary>
 
 $P(X > 2) = e^{-2\lambda} = 0.3 \implies -2\lambda = \ln(0.3) \implies \lambda = \dfrac{-\ln(0.3)}{2} = \dfrac{1.204}{2} = 0.602$.
 
@@ -672,7 +672,7 @@ $F(x) = 0.8 \implies 1 - e^{-0.602x} = 0.8 \implies e^{-0.602x} = 0.2 \implies x
 </details>
 
 <details>
-<summary>Q2. A continuous random variable $X$ has PDF $f(x) = kx(4-x)$ for $0 \leq x \leq 4$. Find $k$, $E(X)$, $\mathrm{Var{}(X)$, and the median.</summary>
+<summary>Q2. A continuous random variable $X$ has PDF $f(x) = kx(4-x)$ for $0 \leq x \leq 4$. Find $k$, $E(X)$, $\mathrm{Var}(X)$, and the median.</summary>
 
 $\int_0^4 kx(4-x)\,dx = k\int_0^4 (4x - x^2)\,dx = k\left[2x^2 - \dfrac{x^3}{3}\right]_0^4 = k(32 - 64/3) = k(32/3) = 1 \implies k = 3/32$.
 
@@ -680,7 +680,7 @@ $E(X) = \dfrac{3}{32}\int_0^4 (4x^2 - x^3)\,dx = \dfrac{3}{32}\left[\dfrac{4x^3}
 
 $E(X^2) = \dfrac{3}{32}\int_0^4 (4x^3 - x^4)\,dx = \dfrac{3}{32}\left[x^4 - \dfrac{x^5}{5}\right]_0^4 = \dfrac{3}{32}(256 - 204.8) = \dfrac{3 \times 51.2}{32} = 4.8$.
 
-$\mathrm{Var{}(X) = 4.8 - 4 = 0.8$.
+$\mathrm{Var}(X) = 4.8 - 4 = 0.8$.
 
 Median:
 $\dfrac{3}{32}\int_0^m (4x - x^2)\,dx = 0.5 \implies \dfrac{3}{32}\left(2m^2 - \dfrac{m^3}{3}\right) = 0.5$.
@@ -695,40 +695,40 @@ symmetry of the PDF about $x = 2$).
 <details>
 <summary>Q3. Emails arrive at a server as a Poisson process with rate 12 per hour. Find the probability that the time between two consecutive emails is between 2 and 5 minutes, and find the probability that the third email arrives within 10 minutes.</summary>
 
-Inter-arrival time $T \sim \mathrm{Exp{}(12)$ per hour.
+Inter-arrival time $T \sim \mathrm{Exp}(12)$ per hour.
 
 $P(2/60 \lt{} T \lt{} 5/60) = e^{-12(2/60)} - e^{-12(5/60)} = e^{-0.4} - e^{-1} \approx 0.6703 - 0.3679 = 0.3024$.
 
-For the third email: the total time $S_3 = T_1 + T_2 + T_3 \sim \mathrm{Gamma{}(3, 12)$.
+For the third email: the total time $S_3 = T_1 + T_2 + T_3 \sim \mathrm{Gamma}(3, 12)$.
 
-Alternatively, use the Poisson count: $P(\mathrm{at least 3 in 10 min{}) = P(N(1/6) \geq 3)$ where
-$N(1/6) \sim \mathrm{Po{}(2)$.
+Alternatively, use the Poisson count: $P(\mathrm{at least 3 in 10 min}) = P(N(1/6) \geq 3)$ where
+$N(1/6) \sim \mathrm{Po}(2)$.
 
 $= 1 - P(N \leq 2) = 1 - e^{-2}(1 + 2 + 2) = 1 - 5e^{-2} \approx 1 - 0.6767 = 0.3233$.
 
 </details>
 
 <details>
-<summary>Q4. $X \sim U(0, a)$. Given that $E(X) = 3$ and $\mathrm{Var{}(X) = 3$, find $a$ and the 90th percentile.</summary>
+<summary>Q4. $X \sim U(0, a)$. Given that $E(X) = 3$ and $\mathrm{Var}(X) = 3$, find $a$ and the 90th percentile.</summary>
 
 $E(X) = a/2 = 3 \implies a = 6$.
 
-Check: $\mathrm{Var{}(X) = (b-a)^2/12 = 36/12 = 3$. $\checkmark$
+Check: $\mathrm{Var}(X) = (b-a)^2/12 = 36/12 = 3$. $\checkmark$
 
 90th percentile: $F(x) = (x - 0)/6 = 0.9 \implies x = 5.4$.
 
 </details>
 
 <details>
-<summary>Q5. The lifetime of Component A follows $\mathrm{Exp{}(0.02)$ and Component B follows $\mathrm{Exp{}(0.05)$ (in hours). They are connected in series, so the system fails when either component fails. Assuming independence, find the PDF of the system lifetime, the expected system lifetime, and $P(\mathrm{system lasts{} > 50\,\mathrm{hours{})$.</summary>
+<summary>Q5. The lifetime of Component A follows $\mathrm{Exp}(0.02)$ and Component B follows $\mathrm{Exp}(0.05)$ (in hours). They are connected in series, so the system fails when either component fails. Assuming independence, find the PDF of the system lifetime, the expected system lifetime, and $P(\mathrm{system lasts} > 50\,\mathrm{hours})$.</summary>
 
 System lifetime $T = \min(X_A, X_B)$.
 
 $P(T > t) = P(X_A > t)P(X_B > t) = e^{-0.02t} \cdot e^{-0.05t} = e^{-0.07t}$.
 
-So $T \sim \mathrm{Exp{}(0.07)$.
+So $T \sim \mathrm{Exp}(0.07)$.
 
-$E(T) = 1/0.07 \approx 14.3\,\mathrm{hours{}$.
+$E(T) = 1/0.07 \approx 14.3\,\mathrm{hours}$.
 
 $P(T > 50) = e^{-0.07 \times 50} = e^{-3.5} \approx 0.0302$.
 
@@ -738,7 +738,7 @@ of the individual rates.
 </details>
 
 <details>
-<summary>Q6. A random variable $X$ has PDF $f(x) = \dfrac{2x}{9}$ for $0 \leq x \leq 3$. Find the CDF, $E(X)$, $\mathrm{Var{}(X)$, the median, and $P(1 \lt{} X \lt{} 2)$.</summary>
+<summary>Q6. A random variable $X$ has PDF $f(x) = \dfrac{2x}{9}$ for $0 \leq x \leq 3$. Find the CDF, $E(X)$, $\mathrm{Var}(X)$, the median, and $P(1 \lt{} X \lt{} 2)$.</summary>
 
 CDF: $F(x) = \int_0^x \dfrac{2t}{9}\,dt = \dfrac{x^2}{9}$ for $0 \leq x \leq 3$. $F(x) = 0$ for
 $x \lt{} 0$, $F(x) = 1$ for $x > 3$.
@@ -747,7 +747,7 @@ $E(X) = \int_0^3 x \cdot \dfrac{2x}{9}\,dx = \dfrac{2}{9}\left[\dfrac{x^3}{3}\ri
 
 $E(X^2) = \dfrac{2}{9}\left[\dfrac{x^4}{4}\right]_0^3 = \dfrac{2}{9} \times \dfrac{81}{4} = \dfrac{9}{2} = 4.5$.
 
-$\mathrm{Var{}(X) = 4.5 - 4 = 0.5$.
+$\mathrm{Var}(X) = 4.5 - 4 = 0.5$.
 
 Median: $\dfrac{m^2}{9} = 0.5 \implies m^2 = 4.5 \implies m = \sqrt{4.5} \approx 2.12$.
 
@@ -775,15 +775,15 @@ $P(T > 100) = e^{-0.005 \times 100} = e^{-0.5} = \boxed{0.607}$ (3 s.f.).
 
 ### Example 8.2: Continuous uniform — conditional probability
 
-**Problem.** $X \sim \mathrm{U{}(0, 10)$. Find $P(X > 6 \mid X > 3)$.
+**Problem.** $X \sim \mathrm{U}(0, 10)$. Find $P(X > 6 \mid X > 3)$.
 
 **Solution.** $P(X > 6 \mid X > 3) = \dfrac{P(X > 6)}{P(X > 3)} = \dfrac{0.4}{0.7} = \dfrac{4}{7} \approx \boxed{0.571}$.
 
-Alternatively: conditional on $X > 3$, the distribution is $\mathrm{U{}(3, 10)$, so $P(X > 6 \mid X > 3) = \dfrac{10-6}{10-3} = \dfrac{4}{7}$.
+Alternatively: conditional on $X > 3$, the distribution is $\mathrm{U}(3, 10)$, so $P(X > 6 \mid X > 3) = \dfrac{10-6}{10-3} = \dfrac{4}{7}$.
 
 ### Example 8.3: Sum of independent exponential random variables
 
-**Problem.** $X$ and $Y$ are independent with $X \sim \mathrm{Exp{}(\lambda_1)$ and $Y \sim \mathrm{Exp{}(\lambda_2)$. Find $P(X < Y)$.
+**Problem.** $X$ and $Y$ are independent with $X \sim \mathrm{Exp}(\lambda_1)$ and $Y \sim \mathrm{Exp}(\lambda_2)$. Find $P(X < Y)$.
 
 **Solution.** Using the joint density and integration:
 
@@ -807,9 +807,9 @@ $P(1 < X < 3) = F(3) - F(1) = \left(\dfrac{27}{16} - \dfrac{27}{32}\right) - \le
 
 ### Example 8.5: Normal approximation to the exponential
 
-**Problem.** $X_1, X_2, \ldots, X_{50}$ are independent, each following $\mathrm{Exp{}(0.1)$. Approximate $P(\overline{X} > 12)$.
+**Problem.** $X_1, X_2, \ldots, X_{50}$ are independent, each following $\mathrm{Exp}(0.1)$. Approximate $P(\overline{X} > 12)$.
 
-**Solution.** $E(X_i) = 10$, $\mathrm{Var{}(X_i) = 100$. $E(\overline{X}) = 10$, $\mathrm{Var{}(\overline{X}) = \dfrac{100}{50} = 2$.
+**Solution.** $E(X_i) = 10$, $\mathrm{Var}(X_i) = 100$. $E(\overline{X}) = 10$, $\mathrm{Var}(\overline{X}) = \dfrac{100}{50} = 2$.
 
 By the CLT, $\overline{X} \approx N(10, 2)$ approximately.
 
@@ -821,9 +821,9 @@ $$P(\overline{X} > 12) = P\!\left(Z > \frac{12-10}{\sqrt{2}}\right) = P(Z > 1.41
 
 **Solution.** For $0 < y < 1$: $F_Y(y) = P(Y \leq y) = P(X^2 \leq y) = P(X \leq \sqrt{y}) = (\sqrt{y})^2 = y$.
 
-$$f_Y(y) = \frac{d}{dy}F_Y(y) = \boxed{1} \quad \text{for {} 0 < y < 1$$
+$$f_Y(y) = \frac{d}{dy}F_Y(y) = \boxed{1} \quad \text{for } 0 < y < 1$$
 
-So $Y \sim \mathrm{U{}(0,1)$.
+So $Y \sim \mathrm{U}(0,1)$.
 
 ### Example 8.7: Mode and median of a triangular distribution
 
@@ -841,13 +841,13 @@ $E(X) = \dfrac{2}{3} + \dfrac{4}{3} = \boxed{2}$. This is the midpoint of $[0,2]
 
 $E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 (4x^2 - 2x^3)\,dx = \dfrac{1}{2} + \left[\dfrac{4x^3}{3} - \dfrac{x^4}{2}\right]_1^2 = \dfrac{1}{2} + \dfrac{32}{3} - 8 - \dfrac{4}{3} + \dfrac{1}{2} = \dfrac{8}{3}$.
 
-$\mathrm{Var{}(X) = \dfrac{8}{3} - 4 = \boxed{-\dfrac{4}{3}}$? This is impossible. Let me recheck $E(X^2)$.
+$\mathrm{Var}(X) = \dfrac{8}{3} - 4 = \boxed{-\dfrac{4}{3}}$? This is impossible. Let me recheck $E(X^2)$.
 
 $E(X^2) = \displaystyle\int_0^1 2x^3\,dx + \int_1^2 x^2 \cdot 2(2-x)\,dx = \dfrac{1}{2} + \dfrac{28}{3} - \dfrac{4}{3} \cdot ... $
 
 Actually $E(X^2) = \dfrac{1}{2} + \int_1^2 (4x^2 - 2x^3)\,dx = \dfrac{1}{2} + \left[\dfrac{4}{3}x^3 - \dfrac{x^4}{2}\right]_1^2 = \dfrac{1}{2} + (\dfrac{32}{3}-8) - (\dfrac{4}{3}-\dfrac{1}{2}) = \dfrac{1}{2}+\dfrac{8}{3}-\dfrac{4}{3}+\dfrac{1}{2} = 1+\dfrac{4}{3} = \dfrac{7}{3}$.
 
-$\mathrm{Var{}(X) = \dfrac{7}{3} - 4 = -\dfrac{5}{3}$. This still cannot be right. The issue is $E(X) = 1$ (not 2) since the distribution is on $[0,2]$ with peak at 1.
+$\mathrm{Var}(X) = \dfrac{7}{3} - 4 = -\dfrac{5}{3}$. This still cannot be right. The issue is $E(X) = 1$ (not 2) since the distribution is on $[0,2]$ with peak at 1.
 
 Let me redo: $E(X) = \dfrac{2}{3} + \dfrac{4}{3} = 2$. But the distribution is symmetric about $x=1$, so $E(X)$ should be $1$.
 
@@ -881,7 +881,7 @@ Calls arrive at a call centre at a rate of 4 per hour. Find the probability that
 <details>
 <summary>Solution</summary>
 
-Time between calls $T \sim \mathrm{Exp{}(4)$ (rate $= 4$ per hour).
+Time between calls $T \sim \mathrm{Exp}(4)$ (rate $= 4$ per hour).
 
 $P(T > 0.75) = e^{-4 \times 0.75} = e^{-3} \approx \boxed{0.0498}$.
 
@@ -889,7 +889,7 @@ $P(T > 0.75) = e^{-4 \times 0.75} = e^{-3} \approx \boxed{0.0498}$.
 
 ### Question 9
 
-$X$ is a continuous random variable with PDF $f(x) = \dfrac{3}{4}(2x - x^2)$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var{}(X)$, and the median.
+$X$ is a continuous random variable with PDF $f(x) = \dfrac{3}{4}(2x - x^2)$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var}(X)$, and the median.
 
 <details>
 <summary>Solution</summary>
@@ -898,7 +898,7 @@ $E(X) = \dfrac{3}{4}\displaystyle\int_0^2 (2x^2-x^3)\,dx = \dfrac{3}{4}\!\left[\
 
 $E(X^2) = \dfrac{3}{4}\displaystyle\int_0^2 (2x^3-x^4)\,dx = \dfrac{3}{4}\!\left[\dfrac{x^4}{2}-\dfrac{x^5}{5}\right]_0^2 = \dfrac{3}{4}\!\left(8-\dfrac{32}{5}\right) = \dfrac{3}{4}\cdot\dfrac{8}{5} = \dfrac{6}{5}$.
 
-$\mathrm{Var{}(X) = \dfrac{6}{5}-1 = \dfrac{1}{5}$.
+$\mathrm{Var}(X) = \dfrac{6}{5}-1 = \dfrac{1}{5}$.
 
 Median $m$: $\dfrac{3}{4}\!\left(m^2-\dfrac{m^3}{3}\right) = \dfrac{1}{2}$. By inspection or numerical methods: $m \approx 0.908$.
 
@@ -906,7 +906,7 @@ Median $m$: $\dfrac{3}{4}\!\left(m^2-\dfrac{m^3}{3}\right) = \dfrac{1}{2}$. By i
 
 ### Question 10
 
-**Prove that** for $X \sim \mathrm{Exp{}(\lambda)$, the memoryless property holds: $P(X > s+t \mid X > s) = P(X > t)$.
+**Prove that** for $X \sim \mathrm{Exp}(\lambda)$, the memoryless property holds: $P(X > s+t \mid X > s) = P(X > t)$.
 
 <details>
 <summary>Solution</summary>
@@ -937,10 +937,10 @@ The Central Limit Theorem connects the exponential and uniform distributions to 
 
 ## 12. Key Results Summary
 
-| Distribution | PDF | $E(X)$ | $\mathrm{Var{}(X)$ |
+| Distribution | PDF | $E(X)$ | $\mathrm{Var}(X)$ |
 |---|---|---|---|
-| $\mathrm{Exp{}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $\dfrac{1}{\lambda}$ | $\dfrac{1}{\lambda^2}$ |
-| $\mathrm{U{}(a,b)$ | $\dfrac{1}{b-a}$, $a \leq x \leq b$ | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ |
+| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $\dfrac{1}{\lambda}$ | $\dfrac{1}{\lambda^2}$ |
+| $\mathrm{U}(a,b)$ | $\dfrac{1}{b-a}$, $a \leq x \leq b$ | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ |
 
 | Property | Exponential | Uniform |
 |---|---|---|
@@ -968,13 +968,13 @@ $\lambda = \dfrac{1}{500} = 0.002$.
 
 **(b)** $P(400 < X < 600) = e^{-0.8} - e^{-1.2} \approx 0.449 - 0.301 = \boxed{0.148}$.
 
-**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = \dfrac{\ln 2}{0.002} = \boxed{346.6\,\text{hours{}}$.
+**(c)** Median $m$: $e^{-0.002m} = 0.5 \implies m = \dfrac{\ln 2}{0.002} = \boxed{346.6\,\text{hours}}$.
 
 </details>
 
 ### Question 12
 
-**Prove that** for $X \sim \mathrm{U{}(a,b)$, $\mathrm{Var{}(X) = \dfrac{(b-a)^2}{12}$.
+**Prove that** for $X \sim \mathrm{U}(a,b)$, $\mathrm{Var}(X) = \dfrac{(b-a)^2}{12}$.
 
 <details>
 <summary>Solution</summary>
@@ -983,7 +983,7 @@ $E(X) = \dfrac{a+b}{2}$.
 
 $E(X^2) = \dfrac{1}{b-a}\displaystyle\int_a^b x^2\,dx = \dfrac{b^3-a^3}{3(b-a)} = \dfrac{a^2+ab+b^2}{3}$.
 
-$\mathrm{Var{}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4a^2+4ab+4b^2-3a^2-6ab-3b^2}{12} = \dfrac{a^2-2ab+b^2}{12} = \boxed{\dfrac{(b-a)^2}{12}}$. $\blacksquare$
+$\mathrm{Var}(X) = \dfrac{a^2+ab+b^2}{3} - \dfrac{(a+b)^2}{4} = \dfrac{4a^2+4ab+4b^2-3a^2-6ab-3b^2}{12} = \dfrac{a^2-2ab+b^2}{12} = \boxed{\dfrac{(b-a)^2}{12}}$. $\blacksquare$
 
 </details>
 
@@ -1002,8 +1002,8 @@ Properties:
 - If $X$ and $Y$ are independent, $M_{X+Y}(t) = M_X(t)M_Y(t)$
 
 MGFs:
-- $\mathrm{Exp{}(\lambda)$: $M(t) = \dfrac{\lambda}{\lambda-t}$ for $t < \lambda$
-- $\mathrm{U{}(a,b)$: $M(t) = \dfrac{e^{bt}-e^{at}}{(b-a)t}$
+- $\mathrm{Exp}(\lambda)$: $M(t) = \dfrac{\lambda}{\lambda-t}$ for $t < \lambda$
+- $\mathrm{U}(a,b)$: $M(t) = \dfrac{e^{bt}-e^{at}}{(b-a)t}$
 
 ### 14.2 The cumulative distribution function approach
 
@@ -1015,7 +1015,7 @@ $P(a < X \leq b) = F(b) - F(a)$ where $F(x) = \displaystyle\int_{-\infty}^x f(t)
 
 For i.i.d. random variables $X_1, \ldots, X_n$, the order statistics are $X_{(1)} \leq X_{(2)} \leq \cdots \leq X_{(n)}$.
 
-For $X \sim \mathrm{U{}(0,1)$: $X_{(k)} \sim \mathrm{Beta{}(k, n-k+1)$.
+For $X \sim \mathrm{U}(0,1)$: $X_{(k)} \sim \mathrm{Beta}(k, n-k+1)$.
 
 ---
 
@@ -1023,7 +1023,7 @@ For $X \sim \mathrm{U{}(0,1)$: $X_{(k)} \sim \mathrm{Beta{}(k, n-k+1)$.
 
 ### Question 13
 
-Find the MGF of $X \sim \mathrm{Exp{}(\lambda)$ and use it to find $E(X)$ and $\mathrm{Var{}(X)$.
+Find the MGF of $X \sim \mathrm{Exp}(\lambda)$ and use it to find $E(X)$ and $\mathrm{Var}(X)$.
 
 <details>
 <summary>Solution</summary>
@@ -1034,13 +1034,13 @@ $M'(t) = \dfrac{\lambda}{(\lambda-t)^2}$. $M'(0) = \dfrac{1}{\lambda} = E(X)$. �
 
 $M''(t) = \dfrac{2\lambda}{(\lambda-t)^3}$. $M''(0) = \dfrac{2}{\lambda^2} = E(X^2)$.
 
-$\mathrm{Var{}(X) = \dfrac{2}{\lambda^2} - \dfrac{1}{\lambda^2} = \boxed{\dfrac{1}{\lambda^2}}$. ✓
+$\mathrm{Var}(X) = \dfrac{2}{\lambda^2} - \dfrac{1}{\lambda^2} = \boxed{\dfrac{1}{\lambda^2}}$. ✓
 
 </details>
 
 ### Question 14
 
-**Prove that** if $X \sim \mathrm{U{}(0,1)$, then $Y = -\dfrac{1}{\lambda}\ln X$ follows $\mathrm{Exp{}(\lambda)$.
+**Prove that** if $X \sim \mathrm{U}(0,1)$, then $Y = -\dfrac{1}{\lambda}\ln X$ follows $\mathrm{Exp}(\lambda)$.
 
 <details>
 <summary>Solution</summary>
@@ -1049,6 +1049,6 @@ $F_Y(y) = P(Y \leq y) = P\!\left(-\dfrac{1}{\lambda}\ln X \leq y\right) = P(\ln 
 
 $= 1 - e^{-\lambda y}$ for $y \geq 0$.
 
-This is the CDF of $\mathrm{Exp{}(\lambda)$. $\blacksquare$
+This is the CDF of $\mathrm{Exp}(\lambda)$. $\blacksquare$
 
 </details>

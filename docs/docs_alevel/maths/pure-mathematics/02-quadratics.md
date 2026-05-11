@@ -472,7 +472,7 @@ Multiply through by $x$ (noting $x \neq 0$):
 
 $$x^2 + 2x - 3 = 0$$
 
-$$(x + 3)(x - 1) = 0 \implies x = -3 \mathrm{ or {} x = 1$$
+$$(x + 3)(x - 1) = 0 \implies x = -3 \mathrm{ or } x = 1$$
 
 Now consider the related equation $x^2 + \frac{4}{x^2} + 2\left(x + \frac{1}{x}\right) = 0$.
 
@@ -495,9 +495,9 @@ discriminant is non-negative.
 **Theorem (Vieta's Formulas).** If $\alpha$ and $\beta$ are the roots of $ax^2 + bx + c = 0$ with
 $a \neq 0$, then:
 
-$$\alpha + \beta = -\frac{b}{a} \quad \mathrm{(Sum of Roots){}$$
+$$\alpha + \beta = -\frac{b}{a} \quad \mathrm{(Sum of Roots)}$$
 
-$$\alpha\beta = \frac{c}{a} \quad \mathrm{(Product of Roots){}$$
+$$\alpha\beta = \frac{c}{a} \quad \mathrm{(Product of Roots)}$$
 
 _Proof._ By the factor theorem, since $\alpha$ and $\beta$ are roots of $ax^2 + bx + c = 0$, we can
 write:
@@ -517,7 +517,7 @@ $\blacksquare$
 
 **Corollary (Monic Case).** For a monic quadratic $x^2 + bx + c = 0$:
 
-$$\alpha + \beta = -b \quad \mathrm{and{} \quad \alpha\beta = c$$
+$$\alpha + \beta = -b \quad \mathrm{and} \quad \alpha\beta = c$$
 
 ### 9.1 Relationship Between Roots and Coefficients
 
@@ -684,7 +684,7 @@ $x \geq 1$) since a square root is non-negative.
 
 Squaring both sides: $2x + 1 = (x - 1)^2 = x^2 - 2x + 1$.
 
-$$x^2 - 4x = 0 \implies x(x - 4) = 0 \implies x = 0 \mathrm{ or {} x = 4$$
+$$x^2 - 4x = 0 \implies x(x - 4) = 0 \implies x = 0 \mathrm{ or } x = 4$$
 
 Check $x = 0$: $\sqrt{1} = -1$? No, $1 \neq -1$. Reject (also fails $x \geq 1$).
 
@@ -763,7 +763,7 @@ Factorise: $(x - 5)(x + 2) > 0$.
 
 The parabola opens upwards. It is positive outside the roots:
 
-$$x < -2 \quad \mathrm{or{} \quad x > 5$$
+$$x < -2 \quad \mathrm{or} \quad x > 5$$
 
 In set notation: $x \in (-\infty, -2) \cup (5, \infty)$.
 
@@ -898,7 +898,7 @@ Since $\Delta = -4 < 0$ for all $k \in \mathbb{'\{'}R{'\}'}$, there are no real 
 <hr />
 
 **Problem 11.** A rectangle has length $(x + 5)$ cm and width $(x + 2)$ cm. The area is
-$30\mathrm{ cm{}^2$. Find $x$.
+$30\mathrm{ cm}^2$. Find $x$.
 
 <details>
 <summary>Solution</summary>

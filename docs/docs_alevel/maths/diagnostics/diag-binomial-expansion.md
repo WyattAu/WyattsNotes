@@ -71,7 +71,7 @@ $$\binom{1/2}{r} = \frac{(1/2)(1/2 - 1)(1/2 - 2) \cdots (1/2 - r + 1)}{r!}$$
 
 $$= \frac{(1/2)(-1/2)(-3/2) \cdots \left(\frac{3 - 2r}{2}\right)}{r!}$$
 
-$$= \frac{(-1)^{r-1}(1 \cdot 3 \cdot 5 \cdots (2r - 3))}{2^r \cdot r!} \quad \text{for {} r \geq 2$$
+$$= \frac{(-1)^{r-1}(1 \cdot 3 \cdot 5 \cdots (2r - 3))}{2^r \cdot r!} \quad \text{for } r \geq 2$$
 
 This can also be written using double factorials or the relation $\binom{1/2}{r} = \frac{(-1)^{r-1}(2r-3)!!}{2^r \cdot r!}$ for $r \geq 2$.
 

@@ -54,7 +54,7 @@ surface.
 
 ### 1.3 Worked example: lift problem
 
-**Problem.** A woman of mass $70\;\mathrm{kg{}$ stands in a lift. Find the normal reaction from the
+**Problem.** A woman of mass $70\;\mathrm{kg}$ stands in a lift. Find the normal reaction from the
 floor of the lift when: (a) the lift accelerates upward at $2\;\mathrm{m\,s^{-2}}$; (b) the lift
 moves at constant velocity; (c) the lift decelerates at $3\;\mathrm{m\,s^{-2}}$ while moving upward.
 
@@ -62,11 +62,11 @@ Let $R$ be the upward normal reaction. Taking upward as positive:
 
 $$R - mg = ma$$
 
-(a) $R = 70(9.8 + 2) = 70 \times 11.8 = 826\;\mathrm{N{}$
+(a) $R = 70(9.8 + 2) = 70 \times 11.8 = 826\;\mathrm{N}$
 
-(b) $R = 70(9.8 + 0) = 686\;\mathrm{N{}$
+(b) $R = 70(9.8 + 0) = 686\;\mathrm{N}$
 
-(c) Decelerating upward means $a = -3$: $R = 70(9.8 - 3) = 70 \times 6.8 = 476\;\mathrm{N{}$
+(c) Decelerating upward means $a = -3$: $R = 70(9.8 - 3) = 70 \times 6.8 = 476\;\mathrm{N}$
 
 :::warning
 warning
@@ -92,16 +92,16 @@ For systems of connected particles:
 
 ### 2.2 Worked example: two particles on a table
 
-**Problem.** Two particles of masses $3\;\mathrm{kg{}$ and $5\;\mathrm{kg{}$ are connected by a light
-inextensible string. The $3\;\mathrm{kg{}$ particle lies on a smooth horizontal table and the
-$5\;\mathrm{kg{}$ particle hangs freely over the edge. Find the acceleration of the system and the
+**Problem.** Two particles of masses $3\;\mathrm{kg}$ and $5\;\mathrm{kg}$ are connected by a light
+inextensible string. The $3\;\mathrm{kg}$ particle lies on a smooth horizontal table and the
+$5\;\mathrm{kg}$ particle hangs freely over the edge. Find the acceleration of the system and the
 tension in the string.
 
-For the $5\;\mathrm{kg{}$ particle (taking downward as positive):
+For the $5\;\mathrm{kg}$ particle (taking downward as positive):
 
 $$5g - T = 5a \tag{1}$$
 
-For the $3\;\mathrm{kg{}$ particle (taking the direction of motion as positive):
+For the $3\;\mathrm{kg}$ particle (taking the direction of motion as positive):
 
 $$T = 3a \tag{2}$$
 
@@ -109,13 +109,13 @@ Adding (1) and (2):
 
 $$5g = 8a \implies a = \frac{5g}{8} = \frac{49}{8} = 6.125\;\mathrm{m\,s^{-2}}$$
 
-$$T = 3 \times 6.125 = 18.375\;\mathrm{N{}$$
+$$T = 3 \times 6.125 = 18.375\;\mathrm{N}$$
 
 ### 2.3 Worked example: towing
 
-**Problem.** A car of mass $1200\;\mathrm{kg{}$ tows a trailer of mass $400\;\mathrm{kg{}$ along a
-horizontal road. The engine provides a driving force of $3200\;\mathrm{N{}$. Resistance forces of
-$200\;\mathrm{N{}$ and $100\;\mathrm{N{}$ act on the car and trailer respectively. Find the
+**Problem.** A car of mass $1200\;\mathrm{kg}$ tows a trailer of mass $400\;\mathrm{kg}$ along a
+horizontal road. The engine provides a driving force of $3200\;\mathrm{N}$. Resistance forces of
+$200\;\mathrm{N}$ and $100\;\mathrm{N}$ act on the car and trailer respectively. Find the
 acceleration and the tension in the tow bar.
 
 **System as a whole:**
@@ -128,7 +128,7 @@ $$a = \frac{2900}{1600} = 1.8125\;\mathrm{m\,s^{-2}}$$
 
 $$T - 100 = 400a = 400 \times 1.8125 = 725$$
 
-$$T = 825\;\mathrm{N{}$$
+$$T = 825\;\mathrm{N}$$
 
 <hr />
 
@@ -141,16 +141,16 @@ both sides of the string.
 
 ### 3.2 Worked example: Atwood machine
 
-**Problem.** Two masses $4\;\mathrm{kg{}$ and $6\;\mathrm{kg{}$ are connected by a light inextensible
+**Problem.** Two masses $4\;\mathrm{kg}$ and $6\;\mathrm{kg}$ are connected by a light inextensible
 string over a smooth, light pulley. Find the acceleration and the tension.
 
 The heavier mass accelerates downward. Let $a$ be the acceleration magnitude.
 
-For the $6\;\mathrm{kg{}$ mass (downward positive):
+For the $6\;\mathrm{kg}$ mass (downward positive):
 
 $$6g - T = 6a \tag{1}$$
 
-For the $4\;\mathrm{kg{}$ mass (upward positive):
+For the $4\;\mathrm{kg}$ mass (upward positive):
 
 $$T - 4g = 4a \tag{2}$$
 
@@ -158,21 +158,21 @@ Adding (1) and (2):
 
 $$2g = 10a \implies a = \frac{g}{5} = 1.96\;\mathrm{m\,s^{-2}}$$
 
-From (2): $T = 4(g + a) = 4 \times 11.76 = 47.04\;\mathrm{N{}$
+From (2): $T = 4(g + a) = 4 \times 11.76 = 47.04\;\mathrm{N}$
 
 ### 3.3 Worked example: pulley on an inclined plane
 
-**Problem.** A particle of mass $8\;\mathrm{kg{}$ on a smooth plane inclined at $30^\circ$ is
+**Problem.** A particle of mass $8\;\mathrm{kg}$ on a smooth plane inclined at $30^\circ$ is
 connected by a light inextensible string over a smooth pulley at the top of the plane to a particle
-of mass $5\;\mathrm{kg{}$ hanging freely. Find the acceleration and tension.
+of mass $5\;\mathrm{kg}$ hanging freely. Find the acceleration and tension.
 
-Assuming the $8\;\mathrm{kg{}$ mass moves up the plane (we will check this assumption):
+Assuming the $8\;\mathrm{kg}$ mass moves up the plane (we will check this assumption):
 
-For the $8\;\mathrm{kg{}$ mass (up the plane positive):
+For the $8\;\mathrm{kg}$ mass (up the plane positive):
 
 $$T - 8g\sin 30^\circ = 8a \implies T - 4g = 8a \tag{1}$$
 
-For the $5\;\mathrm{kg{}$ mass (downward positive):
+For the $5\;\mathrm{kg}$ mass (downward positive):
 
 $$5g - T = 5a \tag{2}$$
 
@@ -180,7 +180,7 @@ Adding: $5g - 4g = 13a \implies a = \dfrac{g}{13} \approx 0.754\;\mathrm{m\,s^{-
 
 Since $a \gt 0$, our assumption was correct.
 
-$T = 5(g - a) = 5(9.8 - 0.754) = 45.23\;\mathrm{N{}$
+$T = 5(g - a) = 5(9.8 - 0.754) = 45.23\;\mathrm{N}$
 
 :::warning
 Common Pitfall
@@ -209,9 +209,9 @@ where $\mu_d$ is the coefficient of dynamic friction. In practice, $\mu_d \lt \m
 
 At A Level, a single coefficient $\mu$ is typically used, and we write:
 
-$$F \leq \mu R \quad (\mathrm{limiting\ equilibrium{})$$
+$$F \leq \mu R \quad (\mathrm{limiting\ equilibrium})$$
 
-$$F = \mu R \quad (\mathrm{when\ sliding{})$$
+$$F = \mu R \quad (\mathrm{when\ sliding})$$
 
 ### 4.2 The angle of friction
 
@@ -224,8 +224,8 @@ $$\tan\alpha = \mu$$
 
 ### 4.3 Worked example: block on an inclined plane
 
-**Problem.** A block of mass $10\;\mathrm{kg{}$ rests on a rough plane inclined at $25^\circ$ to the
-horizontal. The coefficient of friction is $\mu = 0.3$. A horizontal force of $P\;\mathrm{N{}$ is
+**Problem.** A block of mass $10\;\mathrm{kg}$ rests on a rough plane inclined at $25^\circ$ to the
+horizontal. The coefficient of friction is $\mu = 0.3$. A horizontal force of $P\;\mathrm{N}$ is
 applied to the block. Find the range of values of $P$ for which the block remains in equilibrium.
 
 Resolving perpendicular to the plane (upward from plane positive):
@@ -246,7 +246,7 @@ $$P\cos 25^\circ - \mu P\sin 25^\circ = 10g\sin 25^\circ + 10\mu g\cos 25^\circ$
 
 $$P(\cos 25^\circ - 0.3\sin 25^\circ) = 10g(\sin 25^\circ + 0.3\cos 25^\circ)$$
 
-$$P = \frac{10(9.8)(0.4226 + 0.3 \times 0.9063)}{0.9063 - 0.3 \times 0.4226} = \frac{98 \times 0.6945}{0.7795} \approx 87.3\;\mathrm{N{}$$
+$$P = \frac{10(9.8)(0.4226 + 0.3 \times 0.9063)}{0.9063 - 0.3 \times 0.4226} = \frac{98 \times 0.6945}{0.7795} \approx 87.3\;\mathrm{N}$$
 
 **Case 2: on the point of sliding down the plane** ($F = \mu R$, acting up the plane):
 
@@ -256,9 +256,9 @@ $$P\cos 25^\circ + \mu(10g\cos 25^\circ + P\sin 25^\circ) = 10g\sin 25^\circ$$
 
 $$P(\cos 25^\circ + 0.3\sin 25^\circ) = 10g(\sin 25^\circ - 0.3\cos 25^\circ)$$
 
-$$P = \frac{98(0.4226 - 0.2719)}{0.9063 + 0.1268} = \frac{98 \times 0.1507}{1.0331} \approx 14.3\;\mathrm{N{}$$
+$$P = \frac{98(0.4226 - 0.2719)}{0.9063 + 0.1268} = \frac{98 \times 0.1507}{1.0331} \approx 14.3\;\mathrm{N}$$
 
-Therefore, for equilibrium: $14.3 \leq P \leq 87.3\;\mathrm{N{}$.
+Therefore, for equilibrium: $14.3 \leq P \leq 87.3\;\mathrm{N}$.
 
 <hr />
 
@@ -270,7 +270,7 @@ The **linear momentum** of a body of mass $m$ moving with velocity $\mathbf{'\{'
 
 $$\mathbf{'\{'}p{'\}'} = m\mathbf{'\{'}v{'\}'}$$
 
-Momentum is a vector quantity measured in $\mathrm{kg\,m\,s^{-1}}$ (or $\mathrm{Ns{}$).
+Momentum is a vector quantity measured in $\mathrm{kg\,m\,s^{-1}}$ (or $\mathrm{Ns}$).
 
 ### 5.2 Principle of conservation of momentum
 
@@ -279,9 +279,9 @@ system is conserved.
 
 $$m_1\mathbf{'\{'}u{'\}'}_1 + m_2\mathbf{'\{'}u{'\}'}_2 = m_1\mathbf{'\{'}v{'\}'}_1 + m_2\mathbf{'\{'}v{'\}'}_2$$
 
-**Proof.** Newton's second law for the system: $\mathbf{'\{'}F{'\}'}_{\mathrm{ext{}} = \dfrac{d\mathbf{'\{'}p{'\}'}_{\mathrm{total{}}}{dt}$.
+**Proof.** Newton's second law for the system: $\mathbf{'\{'}F{'\}'}_{\mathrm{ext}} = \dfrac{d\mathbf{'\{'}p{'\}'}_{\mathrm{total}}}{dt}$.
 
-If $\mathbf{'\{'}F{'\}'}_{\mathrm{ext{}} = \mathbf{'\{'}0{'\}'}$, then $\mathbf{'\{'}p{'\}'}_{\mathrm{total{}}$ is constant. $\blacksquare$
+If $\mathbf{'\{'}F{'\}'}_{\mathrm{ext}} = \mathbf{'\{'}0{'\}'}$, then $\mathbf{'\{'}p{'\}'}_{\mathrm{total}}$ is constant. $\blacksquare$
 
 ### 5.3 Impulse
 
@@ -299,9 +299,9 @@ $$\mathbf{'\{'}I{'\}'} = \int_{t_1}^{t_2} \mathbf{'\{'}F{'\}'}\,dt$$
 
 ### 5.4 Worked example: collision
 
-**Problem.** A particle of mass $2\;\mathrm{kg{}$ moving at $5\;\mathrm{m\,s^{-1}}$ collides with a
-stationary particle of mass $3\;\mathrm{kg{}$. After the collision, the $2\;\mathrm{kg{}$ particle
-moves at $1\;\mathrm{m\,s^{-1}}$ in its original direction. Find the velocity of the $3\;\mathrm{kg{}$
+**Problem.** A particle of mass $2\;\mathrm{kg}$ moving at $5\;\mathrm{m\,s^{-1}}$ collides with a
+stationary particle of mass $3\;\mathrm{kg}$. After the collision, the $2\;\mathrm{kg}$ particle
+moves at $1\;\mathrm{m\,s^{-1}}$ in its original direction. Find the velocity of the $3\;\mathrm{kg}$
 particle and the magnitude of the impulse exerted on it.
 
 Conservation of momentum (one dimension):
@@ -310,13 +310,13 @@ $$2(5) + 3(0) = 2(1) + 3v$$
 
 $$10 = 2 + 3v \implies v = \frac{8}{3} \approx 2.67\;\mathrm{m\,s^{-1}}$$
 
-Impulse on the $3\;\mathrm{kg{}$ particle $= \Delta p = 3v - 0 = 3 \times \dfrac{8}{3} = 8\;\mathrm{Ns{}$.
+Impulse on the $3\;\mathrm{kg}$ particle $= \Delta p = 3v - 0 = 3 \times \dfrac{8}{3} = 8\;\mathrm{Ns}$.
 
 ### 5.5 Coefficient of restitution
 
 The **coefficient of restitution** $e$ for a collision is defined as:
 
-$$e = \frac{\mathrm{relative\ speed\ of\ separation{}}{\mathrm{relative\ speed\ of\ approach{}}$$
+$$e = \frac{\mathrm{relative\ speed\ of\ separation}}{\mathrm{relative\ speed\ of\ approach}}$$
 
 For a direct impact between two particles:
 
@@ -327,11 +327,11 @@ $e = 1$ corresponds to a perfectly elastic collision; $e = 0$ to a perfectly ine
 
 ### 5.6 Worked example: restitution
 
-**Problem.** Two particles of masses $2\;\mathrm{kg{}$ and $3\;\mathrm{kg{}$ move towards each other
+**Problem.** Two particles of masses $2\;\mathrm{kg}$ and $3\;\mathrm{kg}$ move towards each other
 with speeds $6\;\mathrm{m\,s^{-1}}$ and $4\;\mathrm{m\,s^{-1}}$ respectively. They collide directly
 with coefficient of restitution $e = 0.5$. Find their velocities after the collision.
 
-Taking the direction of the $2\;\mathrm{kg{}$ particle as positive, $u_1 = 6$, $u_2 = -4$.
+Taking the direction of the $2\;\mathrm{kg}$ particle as positive, $u_1 = 6$, $u_2 = -4$.
 
 Conservation of momentum:
 
@@ -374,24 +374,24 @@ gravitational pull of the book on the Earth.
 
 ### 6.2 Worked example: book on a table in a lift
 
-**Problem.** A book of mass $2\;\mathrm{kg{}$ rests on a table of mass $10\;\mathrm{kg{}$ inside a
+**Problem.** A book of mass $2\;\mathrm{kg}$ rests on a table of mass $10\;\mathrm{kg}$ inside a
 lift accelerating upward at $3\;\mathrm{m\,s^{-2}}$. Find: (a) the force exerted by the book on
 the table; (b) the force exerted by the table on the book; (c) the tension in the lift cable.
 
 (a) and (b) are a Newton's third law pair, so they are equal in magnitude.
 
-For the book: $R_{\mathrm{table\ on\ book{}} - 2g = 2(3) = 6$
+For the book: $R_{\mathrm{table\ on\ book}} - 2g = 2(3) = 6$
 
-$$R = 2(9.8) + 6 = 25.6\;\mathrm{N{}$$
+$$R = 2(9.8) + 6 = 25.6\;\mathrm{N}$$
 
-The book exerts $25.6\;\mathrm{N{}$ downward on the table.
+The book exerts $25.6\;\mathrm{N}$ downward on the table.
 
 (c) For the entire system (book + table + lift platform):
 
 Let the total mass being accelerated be $M$ (including the lift structure). If we consider just
-the book and table: total mass $= 12\;\mathrm{kg{}$, acceleration $= 3\;\mathrm{m\,s^{-2}}$.
+the book and table: total mass $= 12\;\mathrm{kg}$, acceleration $= 3\;\mathrm{m\,s^{-2}}$.
 
-$$T - 12g = 12(3) \implies T = 12(12.8) = 153.6\;\mathrm{N{}$$
+$$T - 12g = 12(3) \implies T = 12(12.8) = 153.6\;\mathrm{N}$$
 
 (If the lift structure itself has mass, this would need to be included.)
 
@@ -401,15 +401,15 @@ $$T - 12g = 12(3) \implies T = 12(12.8) = 153.6\;\mathrm{N{}$$
 
 ### Problem 1
 
-A block of mass $5\;\mathrm{kg{}$ is pushed along a rough horizontal surface by a horizontal force
-of $30\;\mathrm{N{}$. The coefficient of friction is $0.4$. Find the acceleration of the block.
+A block of mass $5\;\mathrm{kg}$ is pushed along a rough horizontal surface by a horizontal force
+of $30\;\mathrm{N}$. The coefficient of friction is $0.4$. Find the acceleration of the block.
 
 <details>
 <summary>Solution</summary>
 
-$$R = 5g = 49\;\mathrm{N{}$$
+$$R = 5g = 49\;\mathrm{N}$$
 
-$$F = \mu R = 0.4 \times 49 = 19.6\;\mathrm{N{}$$
+$$F = \mu R = 0.4 \times 49 = 19.6\;\mathrm{N}$$
 
 $$30 - 19.6 = 5a \implies a = \frac{10.4}{5} = 2.08\;\mathrm{m\,s^{-2}}$$
 
@@ -417,9 +417,9 @@ $$30 - 19.6 = 5a \implies a = \frac{10.4}{5} = 2.08\;\mathrm{m\,s^{-2}}$$
 
 ### Problem 2
 
-Two particles of masses $3\;\mathrm{kg{}$ and $7\;\mathrm{kg{}$ are connected by a light
+Two particles of masses $3\;\mathrm{kg}$ and $7\;\mathrm{kg}$ are connected by a light
 inextensible string passing over a smooth pulley. The system is released from rest. Find the speed
-of the particles after they have moved $2\;\mathrm{m{}$ and the tension in the string.
+of the particles after they have moved $2\;\mathrm{m}$ and the tension in the string.
 
 <details>
 <summary>Solution</summary>
@@ -432,27 +432,27 @@ Using $v^2 = u^2 + 2as = 0 + 2(3.92)(2) = 15.68$:
 
 $$v = \sqrt{15.68} \approx 3.96\;\mathrm{m\,s^{-1}}$$
 
-$$T = 3(g + a) = 3(13.72) = 41.16\;\mathrm{N{}$$
+$$T = 3(g + a) = 3(13.72) = 41.16\;\mathrm{N}$$
 
 </details>
 
 ### Problem 3
 
-A particle of mass $4\;\mathrm{kg{}$ is on a rough plane inclined at $30^\circ$ to the horizontal,
-connected by a string over a pulley to a particle of mass $6\;\mathrm{kg{}$ hanging vertically. The
-coefficient of friction between the $4\;\mathrm{kg{}$ mass and the plane is $0.2$. Find the
+A particle of mass $4\;\mathrm{kg}$ is on a rough plane inclined at $30^\circ$ to the horizontal,
+connected by a string over a pulley to a particle of mass $6\;\mathrm{kg}$ hanging vertically. The
+coefficient of friction between the $4\;\mathrm{kg}$ mass and the plane is $0.2$. Find the
 acceleration of the system.
 
 <details>
 <summary>Solution</summary>
 
-Assume the $6\;\mathrm{kg{}$ mass moves down.
+Assume the $6\;\mathrm{kg}$ mass moves down.
 
-For the $6\;\mathrm{kg{}$ mass: $6g - T = 6a$.
+For the $6\;\mathrm{kg}$ mass: $6g - T = 6a$.
 
-For the $4\;\mathrm{kg{}$ mass (up the plane): $T - 4g\sin 30^\circ - F = 4a$.
+For the $4\;\mathrm{kg}$ mass (up the plane): $T - 4g\sin 30^\circ - F = 4a$.
 
-$R = 4g\cos 30^\circ$, so $F = 0.2 \times 4g\cos 30^\circ = 0.8g\cos 30^\circ \approx 6.80\;\mathrm{N{}$.
+$R = 4g\cos 30^\circ$, so $F = 0.2 \times 4g\cos 30^\circ = 0.8g\cos 30^\circ \approx 6.80\;\mathrm{N}$.
 
 Adding: $6g - 4g\sin 30^\circ - F = 10a$
 
@@ -466,9 +466,9 @@ Since $a \gt 0$, the assumption is correct.
 
 ### Problem 4
 
-A ball of mass $0.15\;\mathrm{kg{}$ is struck by a bat. Immediately before the impact, the ball is
+A ball of mass $0.15\;\mathrm{kg}$ is struck by a bat. Immediately before the impact, the ball is
 moving at $20\;\mathrm{m\,s^{-1}}$ towards the bat. Immediately after, it moves at $30\;\mathrm{m\,s^{-1}}$
-away from the bat. The impact lasts $0.01\;\mathrm{s{}$. Find the magnitude of the force exerted by
+away from the bat. The impact lasts $0.01\;\mathrm{s}$. Find the magnitude of the force exerted by
 the bat on the ball.
 
 <details>
@@ -476,15 +476,15 @@ the bat on the ball.
 
 Taking the direction away from the bat as positive:
 
-$$I = m(v - u) = 0.15(30 - (-20)) = 0.15(50) = 7.5\;\mathrm{Ns{}$$
+$$I = m(v - u) = 0.15(30 - (-20)) = 0.15(50) = 7.5\;\mathrm{Ns}$$
 
-$$F = \frac{I}{\Delta t} = \frac{7.5}{0.01} = 750\;\mathrm{N{}$$
+$$F = \frac{I}{\Delta t} = \frac{7.5}{0.01} = 750\;\mathrm{N}$$
 
 </details>
 
 ### Problem 5
 
-A $5\;\mathrm{kg{}$ particle moving at $8\;\mathrm{m\,s^{-1}}$ collides directly with a $3\;\mathrm{kg{}$
+A $5\;\mathrm{kg}$ particle moving at $8\;\mathrm{m\,s^{-1}}$ collides directly with a $3\;\mathrm{kg}$
 particle moving at $2\;\mathrm{m\,s^{-1}}$ in the same direction. The coefficient of restitution is
 $0.6$. Find the velocities after collision and the loss of kinetic energy.
 
@@ -499,10 +499,10 @@ Substituting (2) into (1): $46 = 5v_1 + 3(v_1 + 3.6) = 8v_1 + 10.8$
 
 $$v_1 = \frac{35.2}{8} = 4.4\;\mathrm{m\,s^{-1}}, \qquad v_2 = 8.0\;\mathrm{m\,s^{-1}}$$
 
-Initial KE $= \frac{1}{2}(5)(64) + \frac{1}{2}(3)(4) = 160 + 6 = 166\;\mathrm{J{}$
+Initial KE $= \frac{1}{2}(5)(64) + \frac{1}{2}(3)(4) = 160 + 6 = 166\;\mathrm{J}$
 
-Final KE $= \frac{1}{2}(5)(19.36) + \frac{1}{2}(3)(64) = 48.4 + 96 = 144.4\;\mathrm{J{}$
+Final KE $= \frac{1}{2}(5)(19.36) + \frac{1}{2}(3)(64) = 48.4 + 96 = 144.4\;\mathrm{J}$
 
-Loss of KE $= 166 - 144.4 = 21.6\;\mathrm{J{}$
+Loss of KE $= 166 - 144.4 = 21.6\;\mathrm{J}$
 
 </details>

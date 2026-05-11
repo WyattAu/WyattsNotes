@@ -31,21 +31,21 @@ A force of $50$ N acts at one end $B$ of a uniform rod $AB$ of length $3$ m. The
 
 The force acts vertically downwards at $B$. The perpendicular distance from $A$ to the vertical line through $B$ is the horizontal distance from $A$ to $B$:
 
-$$d = AB \times \cos 40° = 3\cos 40° \approx 2.298 \text{ m{}$$
+$$d = AB \times \cos 40° = 3\cos 40° \approx 2.298 \text{ m}$$
 
-$$\text{Moment{} = F \times d = 50 \times 3\cos 40° = 150\cos 40° \approx 114.9 \text{ Nm{}$$
+$$\text{Moment} = F \times d = 50 \times 3\cos 40° = 150\cos 40° \approx 114.9 \text{ Nm}$$
 
-**(b)** The student used the distance $AB = 3$ m instead of the perpendicular distance $3\cos 40° \approx 2.298$ m. The moment is $F \times d_{\perp}$, not $F \times d_{\text{along rod{}}$.
+**(b)** The student used the distance $AB = 3$ m instead of the perpendicular distance $3\cos 40° \approx 2.298$ m. The moment is $F \times d_{\perp}$, not $F \times d_{\text{along rod}}$.
 
-$$\text{Student's answer{} = 150 \text{ Nm{}$$
+$$\text{Student's answer} = 150 \text{ Nm}$$
 
-$$\text{Correct answer{} = 150\cos 40° \approx 114.9 \text{ Nm{}$$
+$$\text{Correct answer} = 150\cos 40° \approx 114.9 \text{ Nm}$$
 
-$$\text{Percentage overestimate{} = \frac{150 - 150\cos 40°}{150\cos 40°} \times 100\% = \frac{1 - \cos 40°}{\cos 40°} \times 100\% = \left(\frac{1}{\cos 40°} - 1\right) \times 100\% \approx 30.5\%$$
+$$\text{Percentage overestimate} = \frac{150 - 150\cos 40°}{150\cos 40°} \times 100\% = \frac{1 - \cos 40°}{\cos 40°} \times 100\% = \left(\frac{1}{\cos 40°} - 1\right) \times 100\% \approx 30.5\%$$
 
 **(c)** If the $50$ N force acts perpendicular to the rod at $B$, the perpendicular distance from $A$ to the line of action is simply the length of the rod:
 
-$$\text{Moment{} = 50 \times 3 = 150 \text{ Nm{}$$
+$$\text{Moment} = 50 \times 3 = 150 \text{ Nm}$$
 
 This is larger because the perpendicular distance equals the full length of the rod ($3$ m), whereas in part (a) the perpendicular distance was only $3\cos 40° \approx 2.298$ m. A force applied perpendicular to a rod always produces the maximum possible moment for a given force magnitude and application point.
 
@@ -77,7 +77,7 @@ $$P \times 1.2 = 600 \times 0.4$$
 
 (The weight acts at the centre, $0.4$ m from the right corner.)
 
-$$P = \frac{240}{1.2} = 200 \text{ N{}$$
+$$P = \frac{240}{1.2} = 200 \text{ N}$$
 
 Since $200 \lt 300$, the block **topples first** at $P = 200$ N.
 
@@ -111,7 +111,7 @@ $$90 \times 5 = 200(5 - x)$$
 
 $$450 = 1000 - 200x$$
 
-$$200x = 550 \implies x = 2.75 \text{ m{}$$
+$$200x = 550 \implies x = 2.75 \text{ m}$$
 
 The centre of mass is $2.75$ m from $A$ (i.e., $0.25$ m to the right of the midpoint).
 
@@ -121,11 +121,11 @@ $$R_A \times 5 = 200 \times (5 - 2.75) + 150 \times (5 - 2)$$
 
 $$5R_A = 200 \times 2.25 + 150 \times 3 = 450 + 450 = 900$$
 
-$$R_A = 180 \text{ N{}$$
+$$R_A = 180 \text{ N}$$
 
 By vertical equilibrium: $R_A + R_B = 200 + 150 = 350$ N.
 
-$$R_B = 350 - 180 = 170 \text{ N{}$$
+$$R_B = 350 - 180 = 170 \text{ N}$$
 
 **(c)** The student assumed $x = 2.5$ m. Using the correct $x = 2.75$ m:
 
@@ -133,9 +133,9 @@ Student's answer: $R_A = 190$ N.
 
 Correct answer: $R_A = 180$ N.
 
-$$\text{Error{} = 190 - 180 = 10 \text{ N{}$$
+$$\text{Error} = 190 - 180 = 10 \text{ N}$$
 
-$$\text{Percentage error{} = \frac{10}{180} \times 100\% \approx 5.56\%$$
+$$\text{Percentage error} = \frac{10}{180} \times 100\% \approx 5.56\%$$
 
 The student's error arose from assuming the beam is uniform when the support reactions ($90$ N and $110$ N, which are unequal) clearly indicate it is not.
 
@@ -191,9 +191,9 @@ From horizontal equilibrium: $R_w = F_g = 0.4R_g$, so $R_g = \frac{R_w}{0.4} = 2
 
 From vertical equilibrium: $R_g + F_w = 400 \implies 2.5R_w + 0.3R_w = 400 \implies 2.8R_w = 400$.
 
-$$R_w = \frac{400}{2.8} = \frac{1000}{7} \approx 142.9 \text{ N{}$$
+$$R_w = \frac{400}{2.8} = \frac{1000}{7} \approx 142.9 \text{ N}$$
 
-$$R_g = 2.5 \times \frac{1000}{7} = \frac{2500}{7} \approx 357.1 \text{ N{}$$
+$$R_g = 2.5 \times \frac{1000}{7} = \frac{2500}{7} \approx 357.1 \text{ N}$$
 
 **(b)** $F_w = 0.3R_w = 0.3 \times \frac{1000}{7} = \frac{300}{7} \approx 42.9$ N (upward).
 
@@ -267,7 +267,7 @@ $$R_w = \frac{1200\cos 55°}{6\sin 55° - 1.8\cos 55°}$$
 
 $\sin 55° \approx 0.8192$, $\cos 55° \approx 0.5736$.
 
-$$R_w = \frac{688.3}{4.915 - 1.032} = \frac{688.3}{3.883} \approx 177.3 \text{ N{}$$
+$$R_w = \frac{688.3}{4.915 - 1.032} = \frac{688.3}{3.883} \approx 177.3 \text{ N}$$
 
 $$\mu_g = \frac{R_w}{400 - 0.3R_w} = \frac{177.3}{400 - 53.2} = \frac{177.3}{346.8} \approx 0.511$$
 
@@ -307,7 +307,7 @@ $$\frac{1}{2} \times \frac{32}{3} \times \omega^2 = 78.4$$
 
 $$\omega^2 = \frac{78.4 \times 6}{32} = \frac{470.4}{32} = 14.7$$
 
-$$\omega = \sqrt{14.7} \approx 3.83 \text{ rad/s{}$$
+$$\omega = \sqrt{14.7} \approx 3.83 \text{ rad/s}$$
 
 **(b)** The speed of end $B$ is $v = \omega L = \omega \times 2 = 2\sqrt{14.7} \approx 7.67$ m/s.
 
@@ -315,13 +315,13 @@ $$\omega = \sqrt{14.7} \approx 3.83 \text{ rad/s{}$$
 
 The only force creating a moment about $A$ is the weight, acting at the centre of mass ($1$ m from $A$):
 
-$$\text{Moment{} = mg \times 1 = 8 \times 9.8 \times 1 = 78.4 \text{ Nm{}$$
+$$\text{Moment} = mg \times 1 = 8 \times 9.8 \times 1 = 78.4 \text{ Nm}$$
 
 By Newton's Second Law for rotation: $\Sigma M = I\alpha$.
 
 $$78.4 = \frac{32}{3}\alpha$$
 
-$$\alpha = \frac{78.4 \times 3}{32} = \frac{235.2}{32} = 7.35 \text{ rad/s{}^2$$
+$$\alpha = \frac{78.4 \times 3}{32} = \frac{235.2}{32} = 7.35 \text{ rad/s}^2$$
 
 ---
 

@@ -31,22 +31,22 @@ states:
 
 ### 1.2 Microscopy
 
-**Light microscopy** uses visible light ($\lambda \approx 400$--$700\ \mathrm{nm{}$) focused through
+**Light microscopy** uses visible light ($\lambda \approx 400$--$700\ \mathrm{nm}$) focused through
 glass lenses. The maximum resolving power of a light microscope is limited by diffraction:
 
 $$d = \frac{0.61\lambda}{n\sin\theta}$$
 
 where $d$ is the minimum resolvable distance, $\lambda$ is the wavelength, $n$ is the refractive
 index of the medium, and $\theta$ is the half-angle of the cone of light. For light microscopy,
-$d \approx 200\ \mathrm{nm{}$, giving a maximum useful magnification of approximately $\times 1500$.
+$d \approx 200\ \mathrm{nm}$, giving a maximum useful magnification of approximately $\times 1500$.
 
-**Electron microscopy** uses a beam of electrons ($\lambda \approx 0.005\ \mathrm{nm{}$) instead of
-light, giving a resolving power of approximately $0.2\ \mathrm{nm{}$ and effective magnifications up
+**Electron microscopy** uses a beam of electrons ($\lambda \approx 0.005\ \mathrm{nm}$) instead of
+light, giving a resolving power of approximately $0.2\ \mathrm{nm}$ and effective magnifications up
 to $\times 2000000$.
 
 | Feature       | Light Microscope           | Electron Microscope         |
 | ------------- | -------------------------- | --------------------------- |
-| Resolution    | $\approx 200\ \mathrm{nm{}$ | $\approx 0.2\ \mathrm{nm{}$  |
+| Resolution    | $\approx 200\ \mathrm{nm}$ | $\approx 0.2\ \mathrm{nm}$  |
 | Magnification | Up to $\times 1500$        | Up to $\times 2000000$      |
 | Specimen      | Living or dead             | Dead only (vacuum required) |
 | Contrast      | Staining (dyes)            | Heavy metal staining        |
@@ -60,7 +60,7 @@ of surface features.
 
 **Magnification** is defined as:
 
-$$\mathrm{Magnification{} = \frac{\mathrm{Image\ size{}}{\mathrm{Actual\ size{}}$$
+$$\mathrm{Magnification} = \frac{\mathrm{Image\ size}}{\mathrm{Actual\ size}}$$
 
 **Laser scanning confocal microscopy** uses laser light and pinhole apertures to eliminate
 out-of-focus light, producing sharp optical sections through thick specimens. This allows 3D
@@ -87,9 +87,9 @@ centrifugation:
 
 | Centrifugation Speed                 | Pellet                               | Supernatant Contains |
 | ------------------------------------ | ------------------------------------ | -------------------- |
-| Low ($1000\ \mathrm{g{}$, 10 min)     | Nuclei                               | All other organelles |
-| Medium ($10000\ \mathrm{g{}$, 20 min) | Mitochondria, lysosomes              | Lighter organelles   |
-| High ($100000\ \mathrm{g{}$, 60 min)  | Ribosomes, microsomes (ER fragments) | Cytosol              |
+| Low ($1000\ \mathrm{g}$, 10 min)     | Nuclei                               | All other organelles |
+| Medium ($10000\ \mathrm{g}$, 20 min) | Mitochondria, lysosomes              | Lighter organelles   |
+| High ($100000\ \mathrm{g}$, 60 min)  | Ribosomes, microsomes (ER fragments) | Cytosol              |
 
 ## 2. Prokaryotic and Eukaryotic Cells
 
@@ -109,17 +109,17 @@ animals, plants, fungi, and protists.
 | ------------------------- | ---------------------------------------------- | ---------------------------------------------- |
 | Nucleus                   | Absent (nucleoid region)                       | Present, with nuclear envelope                 |
 | DNA                       | Circular, naked; no histones                   | Linear, associated with histones               |
-| Ribosomes                 | $70\mathrm{S{}$ ($50\mathrm{S{} + 30\mathrm{S{}$) | $80\mathrm{S{}$ ($60\mathrm{S{} + 40\mathrm{S{}$) |
+| Ribosomes                 | $70\mathrm{S}$ ($50\mathrm{S} + 30\mathrm{S}$) | $80\mathrm{S}$ ($60\mathrm{S} + 40\mathrm{S}$) |
 | Membrane-bound organelles | Absent                                         | Present (mitochondria, ER, Golgi, etc.)        |
 | Cell wall                 | Peptidoglycan (bacteria)                       | Cellulose (plants) or chitin (fungi)           |
-| Size                      | Typically $1$--$5\ \mu\mathrm{m{}$              | Typically $10$--$100\ \mu\mathrm{m{}$           |
+| Size                      | Typically $1$--$5\ \mu\mathrm{m}$              | Typically $10$--$100\ \mu\mathrm{m}$           |
 | Reproduction              | Binary fission (asexual)                       | Mitosis, meiosis                               |
 | Flagella                  | Simple, rotating                               | Complex, $9 + 2$ microtubule arrangement       |
 
 :::warning
 Common Pitfall The "S" in ribosome sizes (70S, 80S) stands for Svedberg units, which
 measure sedimentation rate during centrifugation -- not molecular weight. Svedberg units are not
-additive: $50\mathrm{S{} + 30\mathrm{S{} = 70\mathrm{S{}$ is a coincidence of sedimentation rates, not
+additive: $50\mathrm{S} + 30\mathrm{S} = 70\mathrm{S}$ is a coincidence of sedimentation rates, not
 molecular masses.
 :::
 
@@ -148,9 +148,9 @@ Prokaryotic cells also share some structures with eukaryotes:
 
 ### 3.1 The Nucleus
 
-The nucleus is the largest organelle ($d \approx 5$--$10\ \mu\mathrm{m{}$), enclosed by a **nuclear
+The nucleus is the largest organelle ($d \approx 5$--$10\ \mu\mathrm{m}$), enclosed by a **nuclear
 envelope** consisting of two phospholipid bilayers. The envelope is perforated by **nuclear pores**
-(diameter $\approx 9\ \mathrm{nm{}$) that allow selective transport of mRNA, tRNA, and proteins
+(diameter $\approx 9\ \mathrm{nm}$) that allow selective transport of mRNA, tRNA, and proteins
 between the nucleus and cytoplasm. Transport through nuclear pores is regulated and requires energy.
 
 The nucleus contains:
@@ -162,17 +162,17 @@ The nucleus contains:
 
 ### 3.2 Mitochondria
 
-Mitochondria ($d \approx 1$--$10\ \mu\mathrm{m{}$, length up to $7\ \mu\mathrm{m{}$) are the site of
+Mitochondria ($d \approx 1$--$10\ \mu\mathrm{m}$, length up to $7\ \mu\mathrm{m}$) are the site of
 aerobic respiration, specifically the Krebs cycle (matrix) and oxidative phosphorylation (inner
 membrane/cristae). They have:
 
 - **Outer membrane**: permeable to small molecules.
 - **Inner membrane**: highly folded into **cristae** to increase surface area for the electron
   transport chain and ATP synthase. Impermeable to most ions.
-- **Matrix**: contains the mitochondrial DNA (circular), $70\mathrm{S{}$ ribosomes, enzymes for the
+- **Matrix**: contains the mitochondrial DNA (circular), $70\mathrm{S}$ ribosomes, enzymes for the
   Krebs cycle, and the link reaction.
 
-The presence of circular DNA and $70\mathrm{S{}$ ribosomes is strong evidence for the **endosymbiotic
+The presence of circular DNA and $70\mathrm{S}$ ribosomes is strong evidence for the **endosymbiotic
 theory**: mitochondria were once free-living prokaryotes that were engulfed by a larger cell.
 
 ### 3.3 Endoplasmic Reticulum
@@ -180,7 +180,7 @@ theory**: mitochondria were once free-living prokaryotes that were engulfed by a
 The **endoplasmic reticulum (ER)** is a network of membrane-bound flattened sacs (cisternae)
 continuous with the nuclear envelope.
 
-- **Rough ER (RER)**: studded with $80\mathrm{S{}$ ribosomes on its outer surface. Functions in
+- **Rough ER (RER)**: studded with $80\mathrm{S}$ ribosomes on its outer surface. Functions in
   protein synthesis and folding (especially proteins destined for secretion or for the plasma
   membrane). Proteins enter the ER lumen where they fold and may be glycosylated.
 - **Smooth ER (SER)**: lacks ribosomes. Functions in lipid synthesis, steroid hormone synthesis,
@@ -198,7 +198,7 @@ receives proteins from the RER via transport vesicles, then modifies, sorts, and
 
 ### 3.5 Lysosomes
 
-Lysosomes are membrane-bound vesicles ($d \approx 0.1$--$1.0\ \mu\mathrm{m{}$) containing hydrolytic
+Lysosomes are membrane-bound vesicles ($d \approx 0.1$--$1.0\ \mu\mathrm{m}$) containing hydrolytic
 enzymes (lipases, proteases, nucleases) optimised for pH $\approx 5$. They function in:
 
 - **Phagocytosis**: engulfing and digesting pathogens (in phagocytes).
@@ -213,13 +213,13 @@ distinct structure with different functions (turgor, storage, waste isolation).
 
 ### 3.6 Other Organelles
 
-- **Ribosomes**: $80\mathrm{S{}$ in cytoplasm, $70\mathrm{S{}$ in mitochondria and chloroplasts. Sites
+- **Ribosomes**: $80\mathrm{S}$ in cytoplasm, $70\mathrm{S}$ in mitochondria and chloroplasts. Sites
   of translation.
 - **Centrioles**: cylindrical structures of $9$ triplets of microtubules, found in animal cells
   (absent in most plant cells). Form the centrosome and organise the spindle during mitosis.
 - **Chloroplasts** (plants only): double-membraned organelles containing thylakoids (site of the
   light-dependent reactions) and stroma (site of the light-independent reactions/Calvin cycle).
-  Contain circular DNA and $70\mathrm{S{}$ ribosomes.
+  Contain circular DNA and $70\mathrm{S}$ ribosomes.
 
 ### 3.7 Plant Cells: Additional Structures
 
@@ -295,8 +295,8 @@ concentration gradient, temperature, distance.
 **Facilitated diffusion**: passive movement of larger or polar molecules (glucose, amino acids,
 ions) through transmembrane proteins. Two types:
 
-- **Channel proteins**: water-filled pores selective for specific ions ($\mathrm{Na^+{}$,
-  $\mathrm{K^+{}$, $\mathrm{Cl^-{}$). May be gated (voltage-gated or ligand-gated).
+- **Channel proteins**: water-filled pores selective for specific ions ($\mathrm{Na^+}$,
+  $\mathrm{K^+}$, $\mathrm{Cl^-}$). May be gated (voltage-gated or ligand-gated).
 - **Carrier proteins**: undergo conformational change to shuttle molecules across the membrane.
 
 **Osmosis**: the net movement of water molecules across a partially permeable membrane from a region
@@ -309,11 +309,11 @@ pressure potential.
 
 **Active transport**: the movement of molecules against their concentration gradient, requiring
 energy from ATP hydrolysis. Carried out by **carrier proteins** that act as pumps (e.g., the
-$\mathrm{Na^+/K^+{}$ ATPase pump, which moves $3\ \mathrm{Na^+{}$ out and $2\ \mathrm{K^+{}$ in per ATP
+$\mathrm{Na^+/K^+}$ ATPase pump, which moves $3\ \mathrm{Na^+}$ out and $2\ \mathrm{K^+}$ in per ATP
 hydrolysed).
 
 **Co-transport (secondary active transport)**: uses the concentration gradient of one molecule
-(typically $\mathrm{Na^+{}$) established by primary active transport to drive the transport of
+(typically $\mathrm{Na^+}$) established by primary active transport to drive the transport of
 another molecule against its gradient. This is the mechanism by which glucose is absorbed in the
 ileum.
 
@@ -372,40 +372,40 @@ to uncontrolled division (cancer).
 
 Microscopy calculations appear frequently in examinations. The fundamental relationship is:
 
-$$\mathrm{Magnification{} = \frac{\mathrm{Image\ size{}}{\mathrm{Actual\ size{}}$$
+$$\mathrm{Magnification} = \frac{\mathrm{Image\ size}}{\mathrm{Actual\ size}}$$
 
 This can be rearranged to find any one variable when the other two are known. Units must be consistent
--- convert all measurements to the same unit (typically $\mu\mathrm{m{}$) before calculating.
+-- convert all measurements to the same unit (typically $\mu\mathrm{m}$) before calculating.
 
 **Conversion factors:**
 
-$$1\ \mathrm{mm{} = 1000\ \mu\mathrm{m{}, \quad 1\ \mu\mathrm{m{} = 1000\ \mathrm{nm{}, \quad 1\ \mathrm{nm{} = 1000\ \mathrm{pm{}$$
+$$1\ \mathrm{mm} = 1000\ \mu\mathrm{m}, \quad 1\ \mu\mathrm{m} = 1000\ \mathrm{nm}, \quad 1\ \mathrm{nm} = 1000\ \mathrm{pm}$$
 
 **Worked Example 1.** A cell is observed under a microscope with a magnification of $\times 400$. The
-image of the cell measures $4.8\ \mathrm{mm{}$ across. Calculate the actual diameter of the cell.
+image of the cell measures $4.8\ \mathrm{mm}$ across. Calculate the actual diameter of the cell.
 
-$$\mathrm{Actual\ size{} = \frac{\mathrm{Image\ size{}}{\mathrm{Magnification{}} = \frac{4.8\ \mathrm{mm{}}{400} = 0.012\ \mathrm{mm{} = 12\ \mu\mathrm{m{}$$
+$$\mathrm{Actual\ size} = \frac{\mathrm{Image\ size}}{\mathrm{Magnification}} = \frac{4.8\ \mathrm{mm}}{400} = 0.012\ \mathrm{mm} = 12\ \mu\mathrm{m}$$
 
-**Worked Example 2.** A mitochondrion has an actual length of $5\ \mu\mathrm{m{}$. If an electron
+**Worked Example 2.** A mitochondrion has an actual length of $5\ \mu\mathrm{m}$. If an electron
 micrograph is taken at a magnification of $\times 50000$, what will be the length of the mitochondrion
 in the image?
 
-$$\mathrm{Image\ size{} = 5\ \mu\mathrm{m{} \times 50000 = 250000\ \mu\mathrm{m{} = 250\ \mathrm{mm{} = 25\ \mathrm{cm{}$$
+$$\mathrm{Image\ size} = 5\ \mu\mathrm{m} \times 50000 = 250000\ \mu\mathrm{m} = 250\ \mathrm{mm} = 25\ \mathrm{cm}$$
 
 ### 7.2 Scale Bars
 
 A **scale bar** on a micrograph provides a direct conversion between image distance and actual distance.
-If a scale bar of length $2\ \mathrm{cm{}$ on the image represents $10\ \mu\mathrm{m{}$ in reality, then
-any measurement on the image is converted by multiplying by $\frac{10\ \mu\mathrm{m{}}{2\ \mathrm{cm{}} =
+If a scale bar of length $2\ \mathrm{cm}$ on the image represents $10\ \mu\mathrm{m}$ in reality, then
+any measurement on the image is converted by multiplying by $\frac{10\ \mu\mathrm{m}}{2\ \mathrm{cm}} =
 5\ \mu\mathrm{m\ cm^{-1}}$.
 
-**Worked Example 3.** A micrograph shows a scale bar labelled $5\ \mu\mathrm{m{}$ that measures
-$20\ \mathrm{mm{}$ on the printed image. A cell on the same image measures $48\ \mathrm{mm{}$ across.
+**Worked Example 3.** A micrograph shows a scale bar labelled $5\ \mu\mathrm{m}$ that measures
+$20\ \mathrm{mm}$ on the printed image. A cell on the same image measures $48\ \mathrm{mm}$ across.
 Calculate the actual cell diameter.
 
-Scale factor $= \frac{5\ \mu\mathrm{m{}}{20\ \mathrm{mm{}} = \frac{5000\ \mathrm{nm{}}{20\ \mathrm{mm{}} = 250\ \mathrm{nm\ mm^{-1}}$.
+Scale factor $= \frac{5\ \mu\mathrm{m}}{20\ \mathrm{mm}} = \frac{5000\ \mathrm{nm}}{20\ \mathrm{mm}} = 250\ \mathrm{nm\ mm^{-1}}$.
 
-Cell diameter $= 48\ \mathrm{mm{} \times 250\ \mathrm{nm\ mm^{-1}} = 12000\ \mathrm{nm{} = 12\ \mu\mathrm{m{}$.
+Cell diameter $= 48\ \mathrm{mm} \times 250\ \mathrm{nm\ mm^{-1}} = 12000\ \mathrm{nm} = 12\ \mu\mathrm{m}$.
 
 ### 7.3 Calculating Actual Size from Electron Micrographs
 
@@ -416,11 +416,11 @@ actual size from the image:
 2. Apply the magnification formula.
 
 **Worked Example 4.** A TEM image is labelled $\times 200000$. A ribosome on the image measures
-$0.25\ \mathrm{mm{}$ in diameter. Calculate the actual diameter.
+$0.25\ \mathrm{mm}$ in diameter. Calculate the actual diameter.
 
-$$\mathrm{Actual\ diameter{} = \frac{0.25 \times 10^{-3}\ \mathrm{m{}}{200000} = 1.25 \times 10^{-9}\ \mathrm{m{} = 1.25\ \mathrm{nm{}$$
+$$\mathrm{Actual\ diameter} = \frac{0.25 \times 10^{-3}\ \mathrm{m}}{200000} = 1.25 \times 10^{-9}\ \mathrm{m} = 1.25\ \mathrm{nm}$$
 
-This is consistent with the expected diameter of a ribosome ($\approx 20\ \mathrm{nm{}$) only if the
+This is consistent with the expected diameter of a ribosome ($\approx 20\ \mathrm{nm}$) only if the
 measurement is of a sub-component. If the full ribosome is being measured, the student should recheck
 the image measurement. This highlights the importance of sanity-checking answers against known biological
 dimensions.
@@ -428,7 +428,7 @@ dimensions.
 :::warning
 Common Pitfall Students frequently forget to convert units before applying the magnification formula.
 Always convert both image size and actual size to the same unit. A common error is to leave the answer
-in mm when the question asks for $\mu\mathrm{m{}$. Write down the conversion explicitly to avoid losing
+in mm when the question asks for $\mu\mathrm{m}$. Write down the conversion explicitly to avoid losing
 marks.
 :::
 
@@ -441,12 +441,12 @@ vesicle. It is an active process requiring ATP. Two main types are distinguished
 vesicle formed:
 
 **Phagocytosis ("cell eating")**: the cell membrane extends pseudopodia around a solid particle (e.g.,
-a bacterium or dead cell), enclosing it in a large phagocytic vacuole ($d \approx 1$--$5\ \mu\mathrm{m{}$).
+a bacterium or dead cell), enclosing it in a large phagocytic vacuole ($d \approx 1$--$5\ \mu\mathrm{m}$).
 This vacuole then fuses with a lysosome, whose hydrolytic enzymes digest the contents. Phagocytosis is
 carried out by specialised cells: neutrophils and macrophages in mammals.
 
 **Pinocytosis ("cell drinking")**: the cell membrane invaginates to form small vesicles
-($d \approx 0.1\ \mu\mathrm{m{}$) that take in droplets of extracellular fluid. This is a non-specific
+($d \approx 0.1\ \mu\mathrm{m}$) that take in droplets of extracellular fluid. This is a non-specific
 process that all cells can perform.
 
 **Receptor-mediated endocytosis**: a specific form of pinocytosis in which receptor proteins on the cell
@@ -482,8 +482,8 @@ individual molecules through the bilayer.
 
 ### 9.1 Quantifying Water Potential
 
-Water potential ($\Psi$) is measured in pressure units (kilopascals, $\mathrm{kPa{}$). Pure water at
-standard temperature and pressure has a water potential of $0\ \mathrm{kPa{}$. The addition of solutes
+Water potential ($\Psi$) is measured in pressure units (kilopascals, $\mathrm{kPa}$). Pure water at
+standard temperature and pressure has a water potential of $0\ \mathrm{kPa}$. The addition of solutes
 lowers water potential (makes it more negative):
 
 $$\Psi = \Psi_s + \Psi_p$$
@@ -495,32 +495,32 @@ plant cells.
 ### 9.2 Worked Examples
 
 **Worked Example 1.** A plant cell is placed in a solution with water potential
-$\Psi_{\mathrm{solution{}} = -400\ \mathrm{kPa{}$. The cell has a solute potential $\Psi_s = -700\ \mathrm{kPa{}$
-and a pressure potential $\Psi_p = +300\ \mathrm{kPa{}$. Determine the direction of net water movement.
+$\Psi_{\mathrm{solution}} = -400\ \mathrm{kPa}$. The cell has a solute potential $\Psi_s = -700\ \mathrm{kPa}$
+and a pressure potential $\Psi_p = +300\ \mathrm{kPa}$. Determine the direction of net water movement.
 
-$$\Psi_{\mathrm{cell{}} = \Psi_s + \Psi_p = -700 + 300 = -400\ \mathrm{kPa{}$$
+$$\Psi_{\mathrm{cell}} = \Psi_s + \Psi_p = -700 + 300 = -400\ \mathrm{kPa}$$
 
-Since $\Psi_{\mathrm{cell{}} = \Psi_{\mathrm{solution{}} = -400\ \mathrm{kPa{}$, there is no net water
+Since $\Psi_{\mathrm{cell}} = \Psi_{\mathrm{solution}} = -400\ \mathrm{kPa}$, there is no net water
 movement. The cell is in equilibrium with the external solution.
 
-**Worked Example 2.** A plant cell with $\Psi_s = -900\ \mathrm{kPa{}$ and $\Psi_p = +450\ \mathrm{kPa{}$ is
-placed in pure water ($\Psi = 0\ \mathrm{kPa{}$). Describe what happens.
+**Worked Example 2.** A plant cell with $\Psi_s = -900\ \mathrm{kPa}$ and $\Psi_p = +450\ \mathrm{kPa}$ is
+placed in pure water ($\Psi = 0\ \mathrm{kPa}$). Describe what happens.
 
-$$\Psi_{\mathrm{cell{}} = -900 + 450 = -450\ \mathrm{kPa{}$$
+$$\Psi_{\mathrm{cell}} = -900 + 450 = -450\ \mathrm{kPa}$$
 
-Water moves from pure water ($0\ \mathrm{kPa{}$) into the cell ($-450\ \mathrm{kPa{}$) down the water
+Water moves from pure water ($0\ \mathrm{kPa}$) into the cell ($-450\ \mathrm{kPa}$) down the water
 potential gradient. As water enters, the pressure potential increases (the cell becomes more turgid).
-Equilibrium is reached when $\Psi_{\mathrm{cell{}} = 0\ \mathrm{kPa{}$, i.e., when $\Psi_p = +900\ \mathrm{kPa{}$.
+Equilibrium is reached when $\Psi_{\mathrm{cell}} = 0\ \mathrm{kPa}$, i.e., when $\Psi_p = +900\ \mathrm{kPa}$.
 
 **Worked Example 3.** A red blood cell (which has no cell wall and therefore $\Psi_p = 0$) is placed in
-a solution with $\Psi = -300\ \mathrm{kPa{}$. The red blood cell has $\Psi_s = -300\ \mathrm{kPa{}$. What
+a solution with $\Psi = -300\ \mathrm{kPa}$. The red blood cell has $\Psi_s = -300\ \mathrm{kPa}$. What
 happens?
 
-$$\Psi_{\mathrm{cell{}} = -300 + 0 = -300\ \mathrm{kPa{}$$
+$$\Psi_{\mathrm{cell}} = -300 + 0 = -300\ \mathrm{kPa}$$
 
-No net water movement -- the solution is isotonic. If the solution had $\Psi = -100\ \mathrm{kPa{}$
+No net water movement -- the solution is isotonic. If the solution had $\Psi = -100\ \mathrm{kPa}$
 (hypotonic), water would enter the cell, causing it to swell and potentially burst (haemolysis). If the
-solution had $\Psi = -500\ \mathrm{kPa{}$ (hypertonic), water would leave, causing the cell to shrink
+solution had $\Psi = -500\ \mathrm{kPa}$ (hypertonic), water would leave, causing the cell to shrink
 (crenation).
 
 ### 9.3 Osmosis in Plant Cells: Plasmolysis
@@ -528,7 +528,7 @@ solution had $\Psi = -500\ \mathrm{kPa{}$ (hypertonic), water would leave, causi
 When a plant cell is placed in a hypertonic solution (more negative water potential than the cell), water
 leaves by osmosis. The protoplast (the living part of the cell inside the cell wall) shrinks and pulls
 away from the cell wall. This is **plasmolysis**. The point at which the protoplast just begins to pull
-away is the **incipient plasmolysis** point, at which $\Psi_p = 0$ and $\Psi_{\mathrm{cell{}} = \Psi_s$.
+away is the **incipient plasmolysis** point, at which $\Psi_p = 0$ and $\Psi_{\mathrm{cell}} = \Psi_s$.
 
 Plasmolysis is reversible if the cell is returned to a hypotonic solution before permanent damage occurs.
 
@@ -547,8 +547,8 @@ allowed to proceed:
 
 | Checkpoint          | Location              | What is Assessed                                     |
 | ------------------- | --------------------- | ---------------------------------------------------- |
-| $\mathrm{G_1/S{}$    | Late $\mathrm{G_1{}$   | Cell size, nutrient availability, DNA damage          |
-| $\mathrm{G_2/M{}$    | Late $\mathrm{G_2{}$   | DNA replication complete and accurate                 |
+| $\mathrm{G_1/S}$    | Late $\mathrm{G_1}$   | Cell size, nutrient availability, DNA damage          |
+| $\mathrm{G_2/M}$    | Late $\mathrm{G_2}$   | DNA replication complete and accurate                 |
 | M (spindle assembly)| Metaphase             | All chromosomes attached to spindle fibres           |
 
 At each checkpoint, cyclin-CDK complexes phosphorylate target proteins that either promote or inhibit
@@ -561,10 +561,10 @@ apoptosis (programmed cell death) may be triggered.
 cyclins act at different stages:
 
 - **Cyclin D**: rises in response to growth factor signalling; activates CDK4/6 to phosphorylate Rb
-  protein, releasing E2F transcription factor and allowing transition past $\mathrm{G_1/S{}$.
-- **Cyclin E**: peaks at the $\mathrm{G_1/S{}$ boundary; activates CDK2 for S phase entry.
-- **Cyclin A**: rises during S phase and $\mathrm{G_2{}$; activates CDK2 for DNA replication.
-- **Cyclin B**: peaks during $\mathrm{G_2{}$ and M phase; activates CDK1 (also called CDC2) for mitotic
+  protein, releasing E2F transcription factor and allowing transition past $\mathrm{G_1/S}$.
+- **Cyclin E**: peaks at the $\mathrm{G_1/S}$ boundary; activates CDK2 for S phase entry.
+- **Cyclin A**: rises during S phase and $\mathrm{G_2}$; activates CDK2 for DNA replication.
+- **Cyclin B**: peaks during $\mathrm{G_2}$ and M phase; activates CDK1 (also called CDC2) for mitotic
   entry.
 
 A cyclin-CDK complex is only active when both components are present. Cyclin concentration is regulated
@@ -582,7 +582,7 @@ proliferation. For example, the _ras_ proto-oncogene codes for a GTPase involved
 a mutation that locks RAS in its active (GTP-bound) state causes continuous signalling to divide.
 
 **Tumour suppressor genes** code for proteins that inhibit cell division or promote apoptosis. The
-most well-known is _TP53_ (p53), which halts the cell cycle at $\mathrm{G_1{}$ when DNA damage is
+most well-known is _TP53_ (p53), which halts the cell cycle at $\mathrm{G_1}$ when DNA damage is
 detected, allowing repair. If damage is irreparable, p53 triggers apoptosis. Mutations in _TP53_ are
 found in approximately 50% of all human cancers.
 
@@ -632,7 +632,7 @@ expression.
 
 | Specialised Cell         | Adaptations                                                                 | Function                       |
 | ------------------------ | --------------------------------------------------------------------------- | ------------------------------ |
-| Red blood cell           | Biconcave disc shape; no nucleus; no mitochondria; contains haemoglobin     | $\mathrm{O_2{}$ transport       |
+| Red blood cell           | Biconcave disc shape; no nucleus; no mitochondria; contains haemoglobin     | $\mathrm{O_2}$ transport       |
 | Sperm cell               | Flagellum for swimming; many mitochondria; acrosome with digestive enzymes   | Fertilisation                  |
 | Root hair cell (plant)   | Elongated projection; large surface area; thin wall                         | Mineral ion absorption         |
 | Palisade mesophyll cell  | Elongated; many chloroplasts near upper surface; thin walls                 | Photosynthesis                 |
@@ -698,8 +698,8 @@ respiration.
 available for the electron transport chain and ATP synthase enzymes, maximising ATP production. (2)
 The matrix contains the enzymes for the Krebs cycle and the link reaction, concentrating the
 reactants and products of these pathways to increase reaction rates. (3) The outer membrane is
-permeable to small molecules (pyruvate, $\mathrm{NADH{}$), allowing substrates from the cytoplasm to
-enter the mitochondrion. Additionally, the presence of circular DNA and $70\mathrm{S{}$ ribosomes
+permeable to small molecules (pyruvate, $\mathrm{NADH}$), allowing substrates from the cytoplasm to
+enter the mitochondrion. Additionally, the presence of circular DNA and $70\mathrm{S}$ ribosomes
 supports the endosymbiotic theory, explaining how mitochondria retained their own genetic machinery.
 
 <b>If you get this wrong, revise:</b> [Mitochondria](#32-mitochondria)
@@ -711,12 +711,12 @@ supports the endosymbiotic theory, explaining how mitochondria retained their ow
 Compare and contrast prokaryotic and eukaryotic cells. In your answer, refer to DNA structure,
 ribosomes, and cell walls.
 
-**Answer.** Prokaryotic cells are typically smaller ($1$--$5\ \mu\mathrm{m{}$) than eukaryotic cells
-($10$--$100\ \mu\mathrm{m{}$). Prokaryotic DNA is a single circular molecule located free in the
+**Answer.** Prokaryotic cells are typically smaller ($1$--$5\ \mu\mathrm{m}$) than eukaryotic cells
+($10$--$100\ \mu\mathrm{m}$). Prokaryotic DNA is a single circular molecule located free in the
 cytoplasm (nucleoid), not associated with histone proteins. Eukaryotic DNA is linear, organised into
 chromosomes within a membrane-bound nucleus, and associated with histone proteins. Prokaryotic
-ribosomes are $70\mathrm{S{}$ (composed of $50\mathrm{S{}$ and $30\mathrm{S{}$ subunits), whereas
-eukaryotic ribosomes are $80\mathrm{S{}$ (composed of $60\mathrm{S{}$ and $40\mathrm{S{}$ subunits).
+ribosomes are $70\mathrm{S}$ (composed of $50\mathrm{S}$ and $30\mathrm{S}$ subunits), whereas
+eukaryotic ribosomes are $80\mathrm{S}$ (composed of $60\mathrm{S}$ and $40\mathrm{S}$ subunits).
 Prokaryotic cell walls contain peptidoglycan; eukaryotic cell walls (in plants) contain cellulose,
 and fungal cell walls contain chitin. Both types have a phospholipid cell membrane and cytoplasm,
 but only eukaryotes possess membrane-bound organelles (mitochondria, ER, Golgi).
@@ -785,17 +785,17 @@ organisms.
 
 <details>
 <summary>Problem 7</summary>
-An electron micrograph shows a mitochondrion. The scale bar indicates that $1\ \mathrm{mm{}$ on the
-image represents $0.2\ \mu\mathrm{m{}$ in reality. The mitochondrion measures $6.5\ \mathrm{mm{}$ in
+An electron micrograph shows a mitochondrion. The scale bar indicates that $1\ \mathrm{mm}$ on the
+image represents $0.2\ \mu\mathrm{m}$ in reality. The mitochondrion measures $6.5\ \mathrm{mm}$ in
 length on the image. (a) Calculate the actual length. (b) If the magnification of the micrograph was
 $\times 25000$, what is the expected image length, and does it match?
 
-**Answer.** (a) Actual length $= 6.5\ \mathrm{mm{} \times 0.2\ \mu\mathrm{m\ mm^{-1}} = 1.3\ \mu\mathrm{m{}$.
+**Answer.** (a) Actual length $= 6.5\ \mathrm{mm} \times 0.2\ \mu\mathrm{m\ mm^{-1}} = 1.3\ \mu\mathrm{m}$.
 
-(b) Expected image length $= 1.3\ \mu\mathrm{m{} \times 25000 = 32500\ \mu\mathrm{m{} = 32.5\ \mathrm{mm{}$.
+(b) Expected image length $= 1.3\ \mu\mathrm{m} \times 25000 = 32500\ \mu\mathrm{m} = 32.5\ \mathrm{mm}$.
 
-The actual measurement on the image ($6.5\ \mathrm{mm{}$) does not match the expected image length
-($32.5\ \mathrm{mm{}$) for the stated magnification. This indicates either the scale bar is not at the
+The actual measurement on the image ($6.5\ \mathrm{mm}$) does not match the expected image length
+($32.5\ \mathrm{mm}$) for the stated magnification. This indicates either the scale bar is not at the
 same magnification as the image, or the stated magnification is incorrect. This discrepancy highlights
 the importance of using scale bars (which are always at the same magnification as the image) rather than
 stated magnification values for calculations.
@@ -810,8 +810,8 @@ Describe the role of ATP in the following cellular processes: (a) active transpo
 (c) DNA replication. For each, explain what the energy from ATP hydrolysis is used for.
 
 **Answer.** (a) **Active transport**: carrier proteins (pumps) use ATP to change conformation, moving
-molecules against their concentration gradient. For example, the $\mathrm{Na^+/K^+{}$ ATPase hydrolyses
-one ATP to move $3\ \mathrm{Na^+{}$ out and $2\ \mathrm{K^+{}$ in against their gradients. The energy
+molecules against their concentration gradient. For example, the $\mathrm{Na^+/K^+}$ ATPase hydrolyses
+one ATP to move $3\ \mathrm{Na^+}$ out and $2\ \mathrm{K^+}$ in against their gradients. The energy
 from ATP is used to induce the conformational change in the pump protein.
 
 (b) **Exocytosis**: vesicles are transported along microtubules by motor proteins (kinesin) that
@@ -830,22 +830,22 @@ phosphate groups are cleaved from each dNTP provides the energy for the phosphod
 
 <details>
 <summary>Problem 9</summary>
-A plant cell with $\Psi_s = -850\ \mathrm{kPa{}$ is placed in a solution of sucrose with concentration
-$0.35\ \mathrm{mol\ dm^{-3}}$ at $20\ ^\circ\mathrm{C{}$. (a) Calculate the water potential of the
+A plant cell with $\Psi_s = -850\ \mathrm{kPa}$ is placed in a solution of sucrose with concentration
+$0.35\ \mathrm{mol\ dm^{-3}}$ at $20\ ^\circ\mathrm{C}$. (a) Calculate the water potential of the
 external solution. (b) Determine the direction of net water movement. (c) Calculate the pressure
 potential at equilibrium.
 
-**Answer.** (a) $\Psi_{\mathrm{solution{}} = -iCRT = -1 \times 350 \times 8.314 \times 293 = -852605\ \mathrm{Pa{} \approx -853\ \mathrm{kPa{}$.
+**Answer.** (a) $\Psi_{\mathrm{solution}} = -iCRT = -1 \times 350 \times 8.314 \times 293 = -852605\ \mathrm{Pa} \approx -853\ \mathrm{kPa}$.
 
 (b) Initially, $\Psi_p = 0$ (the cell is placed in the solution and has not yet adjusted), so
-$\Psi_{\mathrm{cell{}} = \Psi_s + \Psi_p = -850\ \mathrm{kPa{}$.
+$\Psi_{\mathrm{cell}} = \Psi_s + \Psi_p = -850\ \mathrm{kPa}$.
 
-Since $\Psi_{\mathrm{solution{}} = -853\ \mathrm{kPa{} < \Psi_{\mathrm{cell{}} = -850\ \mathrm{kPa{}$,
+Since $\Psi_{\mathrm{solution}} = -853\ \mathrm{kPa} < \Psi_{\mathrm{cell}} = -850\ \mathrm{kPa}$,
 water moves out of the cell (from higher to lower water potential).
 
-(c) As water leaves, the cell loses turgor. At equilibrium, $\Psi_{\mathrm{cell{}} = \Psi_{\mathrm{solution{}} = -853\ \mathrm{kPa{}$:
+(c) As water leaves, the cell loses turgor. At equilibrium, $\Psi_{\mathrm{cell}} = \Psi_{\mathrm{solution}} = -853\ \mathrm{kPa}$:
 
-$-850 + \Psi_p = -853$, so $\Psi_p = -3\ \mathrm{kPa{}$.
+$-850 + \Psi_p = -853$, so $\Psi_p = -3\ \mathrm{kPa}$.
 
 A negative $\Psi_p$ means the protoplast is pulling away from the cell wall (incipient plasmolysis or
 full plasmolysis, depending on the cell wall). The cell is plasmolysed.
@@ -864,9 +864,9 @@ The cytoskeleton is a network of protein fibres that provides structural support
 
 | Component | Diameter | Protein | Structure | Function |
 | --------- | -------- | ------- | --------- | -------- |
-| Microfilaments (actin filaments) | $\approx 7\ \mathrm{nm{}$ | Actin | Two intertwined helical chains | Cell shape changes, cell division (cleavage furrow), muscle contraction |
-| Intermediate filaments | $\approx 10\ \mathrm{nm{}$ | Keratin, vimentin, lamin | Rope-like fibres of intertwined subunits | Mechanical strength (nuclear lamina, hair, nails) |
-| Microtubules | $\approx 25\ \mathrm{nm{}$ | Tubulin ($\alpha$ and $\beta$) | Hollow cylinders of 13 protofilaments | Chromosome movement (spindle fibres), intracellular transport (tracks for motor proteins), cilia and flagella |
+| Microfilaments (actin filaments) | $\approx 7\ \mathrm{nm}$ | Actin | Two intertwined helical chains | Cell shape changes, cell division (cleavage furrow), muscle contraction |
+| Intermediate filaments | $\approx 10\ \mathrm{nm}$ | Keratin, vimentin, lamin | Rope-like fibres of intertwined subunits | Mechanical strength (nuclear lamina, hair, nails) |
+| Microtubules | $\approx 25\ \mathrm{nm}$ | Tubulin ($\alpha$ and $\beta$) | Hollow cylinders of 13 protofilaments | Chromosome movement (spindle fibres), intracellular transport (tracks for motor proteins), cilia and flagella |
 
 ### 13.2 Motor Proteins
 
@@ -880,9 +880,9 @@ Motor proteins move along cytoskeletal filaments, carrying cargo (vesicles, orga
 
 ### 13.3 Cilia and Flagella
 
-**Cilia** are short, hair-like projections ($\approx 10\ \mu\mathrm{m{}$ long, $0.2\ \mu\mathrm{m{}$ diameter) that beat in coordinated waves. They are found on epithelial cells lining the respiratory tract (moving mucus and trapped particles away from the lungs) and in the Fallopian tubes (moving the ovum towards the uterus).
+**Cilia** are short, hair-like projections ($\approx 10\ \mu\mathrm{m}$ long, $0.2\ \mu\mathrm{m}$ diameter) that beat in coordinated waves. They are found on epithelial cells lining the respiratory tract (moving mucus and trapped particles away from the lungs) and in the Fallopian tubes (moving the ovum towards the uterus).
 
-**Flagella** are longer ($\approx 50$--$200\ \mu\mathrm{m{}$) and typically occur singly (e.g., sperm tail).
+**Flagella** are longer ($\approx 50$--$200\ \mu\mathrm{m}$) and typically occur singly (e.g., sperm tail).
 
 Both have the same **9+2 arrangement** of microtubules: 9 pairs of fused microtubules (doublets) form an outer ring, surrounding a central pair of single microtubules. Dynein arms between the outer doublets use ATP to slide the doublets past each other, causing the cilium or flagellum to bend.
 
@@ -894,7 +894,7 @@ Both have the same **9+2 arrangement** of microtubules: 9 pairs of fused microtu
 
 The endomembrane system is a network of organelles that work together to synthesise, modify, package, and transport proteins and lipids:
 
-$$\text{Rough ER{} \to \text{Vesicles{} \to \text{Golgi apparatus{} \to \text{Secretory vesicles{} \to \text{Cell membrane{}$$
+$$\text{Rough ER} \to \text{Vesicles} \to \text{Golgi apparatus} \to \text{Secretory vesicles} \to \text{Cell membrane}$$
 
 ### 14.2 The Golgi Apparatus in Detail
 
@@ -911,13 +911,13 @@ Functions:
 
 ### 14.3 Lysosomal Storage Diseases
 
-Lysosomes contain approximately 60 different hydrolytic enzymes (lipases, proteases, nucleases, glycosidases) that function optimally at pH $\approx 5.0$ (maintained by a $\mathrm{H^+{}$-ATPase pump in the lysosomal membrane).
+Lysosomes contain approximately 60 different hydrolytic enzymes (lipases, proteases, nucleases, glycosidases) that function optimally at pH $\approx 5.0$ (maintained by a $\mathrm{H^+}$-ATPase pump in the lysosomal membrane).
 
 **Lysosomal storage diseases** result from inherited deficiencies in individual lysosomal enzymes, causing substrates to accumulate:
 
 | Disease | Deficient Enzyme | Accumulating Substance | Symptoms |
 | ------- | --------------- | --------------------- | -------- |
-| Tay-Sachs disease | Hexosaminidase A | $\mathrm{GM_2{}$ ganglioside | Progressive neurodegeneration, blindness, death by age 4 |
+| Tay-Sachs disease | Hexosaminidase A | $\mathrm{GM_2}$ ganglioside | Progressive neurodegeneration, blindness, death by age 4 |
 | Gaucher disease | Glucocerebrosidase | Glucocerebroside | Enlarged liver and spleen, bone pain, anaemia |
 | Niemann-Pick disease | Sphingomyelinase | Sphingomyelin | Hepatosplenomegaly, neurological deterioration |
 
@@ -940,7 +940,7 @@ Cyclin concentrations fluctuate throughout the cell cycle (synthesised and degra
 
 Three major checkpoints ensure the cell cycle proceeds correctly:
 
-1. **G1 checkpoint (restriction point)**: checks cell size, nutrient availability, growth signals, and DNA damage. If conditions are not met, the cell enters $\mathrm{G_0{}$ (quiescence). This is the most important checkpoint in mammalian cells.
+1. **G1 checkpoint (restriction point)**: checks cell size, nutrient availability, growth signals, and DNA damage. If conditions are not met, the cell enters $\mathrm{G_0}$ (quiescence). This is the most important checkpoint in mammalian cells.
 2. **G2 checkpoint**: checks that DNA replication is complete and that there is no DNA damage. If DNA damage is detected, p53 (a tumour suppressor protein) halts the cycle and activates DNA repair enzymes.
 3. **M checkpoint (spindle assembly checkpoint)**: checks that all chromosomes are correctly attached to spindle fibres at the metaphase plate. If any chromosome is unattached, anaphase is delayed.
 
@@ -954,7 +954,7 @@ Three major checkpoints ensure the cell cycle proceeds correctly:
 2. **Cytochrome c release** from mitochondria into the cytoplasm.
 3. Cytochrome c binds to Apaf-1, forming the **apoptosome**, which activates **caspase-9** (initiator caspase).
 4. Caspase-9 activates **effector caspases** (caspase-3, -7), which cleave target proteins:
-   - Activate nucleases that fragment DNA into ladders of $\approx 200\ \mathrm{bp{}$ multiples.
+   - Activate nucleases that fragment DNA into ladders of $\approx 200\ \mathrm{bp}$ multiples.
    - Degrade cytoskeletal proteins.
    - Cause membrane blebbing.
 5. The cell breaks into **apoptotic bodies**, which are phagocytosed by macrophages.
@@ -972,9 +972,9 @@ Bacterial cell walls are made of **peptidoglycan** (murein), a polymer consistin
 - **Glycan chains**: alternating N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) residues linked by $\beta$-1,4-glycosidic bonds.
 - **Peptide cross-links**: short peptide chains (tetrapeptides) attached to NAM, cross-linked by a peptide bridge. This provides structural strength.
 
-**Gram-positive bacteria** (e.g., _Staphylococcus aureus_) have a thick peptidoglycan layer ($20$--$80\ \mathrm{nm{}$) containing teichoic acids. They retain the crystal violet stain in the Gram stain.
+**Gram-positive bacteria** (e.g., _Staphylococcus aureus_) have a thick peptidoglycan layer ($20$--$80\ \mathrm{nm}$) containing teichoic acids. They retain the crystal violet stain in the Gram stain.
 
-**Gram-negative bacteria** (e.g., _Escherichia coli_) have a thin peptidoglycan layer ($2$--$10\ \mathrm{nm{}$) between the inner and outer membranes. The outer membrane contains lipopolysaccharide (LPS), which is an endotoxin. They do not retain crystal violet and stain pink/red with safranin.
+**Gram-negative bacteria** (e.g., _Escherichia coli_) have a thin peptidoglycan layer ($2$--$10\ \mathrm{nm}$) between the inner and outer membranes. The outer membrane contains lipopolysaccharide (LPS), which is an endotoxin. They do not retain crystal violet and stain pink/red with safranin.
 
 ### 16.2 Antibiotic Mechanisms Targeting Cell Walls
 
@@ -1061,7 +1061,7 @@ Diagnostic Test
 | Carrier proteins | Channel proteins and carrier proteins | Carrier proteins (pumps) only |
 | Saturability | Yes (limited number of transporters) | Yes |
 | Specificity | Specific to particular molecules | Highly specific |
-| Examples | Glucose transport via GLUT4 in muscle cells | $\mathrm{Na^+/K^+{}$ ATPase; $\mathrm{Ca^{2+}}$ ATPase; sodium-glucose co-transporter (SGLT1) |
+| Examples | Glucose transport via GLUT4 in muscle cells | $\mathrm{Na^+/K^+}$ ATPase; $\mathrm{Ca^{2+}}$ ATPase; sodium-glucose co-transporter (SGLT1) |
 
 ### 17.2 Co-Transport (Secondary Active Transport)
 
@@ -1069,21 +1069,21 @@ Diagnostic Test
 
 **Example: sodium-glucose co-transport (SGLT1) in the ileum.**
 
-1. The $\mathrm{Na^+/K^+{}$ ATPase (primary active transport) pumps $\mathrm{Na^+{}$ out of the cell, maintaining a low intracellular $\mathrm{Na^+{}$ concentration and a steep $\mathrm{Na^+{}$ gradient.
-2. The SGLT1 co-transporter uses the energy released by $\mathrm{Na^+{}$ flowing down its gradient into the cell to simultaneously transport glucose against its concentration gradient into the cell.
-3. The stoichiometry is 2 $\mathrm{Na^+{}$: 1 glucose.
+1. The $\mathrm{Na^+/K^+}$ ATPase (primary active transport) pumps $\mathrm{Na^+}$ out of the cell, maintaining a low intracellular $\mathrm{Na^+}$ concentration and a steep $\mathrm{Na^+}$ gradient.
+2. The SGLT1 co-transporter uses the energy released by $\mathrm{Na^+}$ flowing down its gradient into the cell to simultaneously transport glucose against its concentration gradient into the cell.
+3. The stoichiometry is 2 $\mathrm{Na^+}$: 1 glucose.
 4. Glucose exits the cell on the other side (blood side) via GLUT2 (facilitated diffusion).
 
 ### 17.3 The Sodium-Potassium Pump
 
-The $\mathrm{Na^+/K^+{}$ ATPase maintains the resting membrane potential and the concentration gradients of $\mathrm{Na^+{}$ and $\mathrm{K^+{}$:
+The $\mathrm{Na^+/K^+}$ ATPase maintains the resting membrane potential and the concentration gradients of $\mathrm{Na^+}$ and $\mathrm{K^+}$:
 
-$$\text{ATP{} + 3\mathrm{Na^+{}_{\text{in{}} + 2\mathrm{K^+{}_{\text{out{}} \to \text{ADP{} + \mathrm{P_i{} + 3\mathrm{Na^+{}_{\text{out{}} + 2\mathrm{K^+{}_{\text{in{}}$$
+$$\text{ATP} + 3\mathrm{Na^+}_{\text{in}} + 2\mathrm{K^+}_{\text{out}} \to \text{ADP} + \mathrm{P_i} + 3\mathrm{Na^+}_{\text{out}} + 2\mathrm{K^+}_{\text{in}}$$
 
-- Pumps 3 $\mathrm{Na^+{}$ out and 2 $\mathrm{K^+{}$ in per ATP hydrolysed.
-- **Electrogenic**: the unequal exchange (3:2) creates a net outward current, contributing to the negative resting membrane potential (approximately $-70\ \mathrm{mV{}$).
+- Pumps 3 $\mathrm{Na^+}$ out and 2 $\mathrm{K^+}$ in per ATP hydrolysed.
+- **Electrogenic**: the unequal exchange (3:2) creates a net outward current, contributing to the negative resting membrane potential (approximately $-70\ \mathrm{mV}$).
 - Accounts for approximately 30--40% of the resting ATP consumption of a typical animal cell.
-- Inhibited by **ouabain** (a cardiac glycoside derived from the foxglove plant, _Digitalis purpurea_). At therapeutic doses, partial inhibition increases intracellular $\mathrm{Na^+{}$, which slows the $\mathrm{Na^+/Ca^{2+}}$ exchanger, increasing intracellular $\mathrm{Ca^{2+}}$ and strengthening heart muscle contraction (used to treat heart failure).
+- Inhibited by **ouabain** (a cardiac glycoside derived from the foxglove plant, _Digitalis purpurea_). At therapeutic doses, partial inhibition increases intracellular $\mathrm{Na^+}$, which slows the $\mathrm{Na^+/Ca^{2+}}$ exchanger, increasing intracellular $\mathrm{Ca^{2+}}$ and strengthening heart muscle contraction (used to treat heart failure).
 
 ## 18. The Cell Cycle: Regulation and Checkpoints
 
@@ -1200,15 +1200,15 @@ Mean division time $= \frac{6.6 \times 60}{13.3} \approx 30$ minutes.
 
 ### 20.1 Resolution and Magnification
 
-$$\text{Resolution{} = \frac{0.61\lambda}{n\sin\theta}$$
+$$\text{Resolution} = \frac{0.61\lambda}{n\sin\theta}$$
 
 Where $\lambda$ = wavelength of light/electrons; $n$ = refractive index of the medium; $\theta$ = half-angle of the cone of light entering the objective.
 
 | Microscope Type | Resolution | Maximum Magnification | Specimen Requirements |
 | --------------- | ---------- | --------------------- | --------------------- |
-| Light microscope | $\approx 200\ \mathrm{nm{}$ | $\approx 1,500\times$ | Thin section; may be stained; can be living |
-| Transmission electron microscope (TEM) | $\approx 0.2\ \mathrm{nm{}$ | $\approx 1,000,000\times$ | Very thin section (50--100 nm); fixed; stained with heavy metals; dead |
-| Scanning electron microscope (SEM) | $\approx 5\ \mathrm{nm{}$ | $\approx 200,000\times$ | Surface features; coated with metal (gold); dead |
+| Light microscope | $\approx 200\ \mathrm{nm}$ | $\approx 1,500\times$ | Thin section; may be stained; can be living |
+| Transmission electron microscope (TEM) | $\approx 0.2\ \mathrm{nm}$ | $\approx 1,000,000\times$ | Very thin section (50--100 nm); fixed; stained with heavy metals; dead |
+| Scanning electron microscope (SEM) | $\approx 5\ \mathrm{nm}$ | $\approx 200,000\times$ | Surface features; coated with metal (gold); dead |
 
 ### 20.2 Cell Fractionation and Ultracentrifugation
 
@@ -1231,7 +1231,7 @@ Cell fractionation separates organelles by size and density:
 
 | Cell Type | Specialisation | Adaptations | Function |
 | --------- | -------------- | ----------- | -------- |
-| Red blood cell (erythrocyte) | Gas transport | Biconcave disc (increases surface area:volume ratio for gas exchange); no nucleus (more room for haemoglobin); no mitochondria (no $\mathrm{O_2{}$ consumed); flexible membrane (squeezes through narrow capillaries, diameter $\approx 7\ \mu\mathrm{m{}$) | Transport $\mathrm{O_2{}$ (bound to haemoglobin) and $\mathrm{CO_2{}$ |
+| Red blood cell (erythrocyte) | Gas transport | Biconcave disc (increases surface area:volume ratio for gas exchange); no nucleus (more room for haemoglobin); no mitochondria (no $\mathrm{O_2}$ consumed); flexible membrane (squeezes through narrow capillaries, diameter $\approx 7\ \mu\mathrm{m}$) | Transport $\mathrm{O_2}$ (bound to haemoglobin) and $\mathrm{CO_2}$ |
 | Sperm cell | Fertilisation | Many mitochondria (ATP for tail movement); acrosome (contains digestive enzymes to penetrate egg); streamlined head; long flagellum for swimming; haploid nucleus | Deliver genetic material to egg |
 | Egg cell (ovum) | Fertilisation; early development | Large (contains nutrient reserves); haploid nucleus; zona pellucida (protective layer); cortical granules (prevent polyspermy after fertilisation) | Receives sperm; provides nutrients for early embryo |
 | Neutrophil | Phagocytosis | Multi-lobed nucleus (flexible, can squeeze through tissues); many lysosomes (contain hydrolytic enzymes to digest pathogens) | Engulf and destroy pathogens |
@@ -1267,7 +1267,7 @@ Cell fractionation separates organelles by size and density:
 Gap junctions are channels that directly connect the cytoplasm of adjacent animal cells:
 
 - Composed of connexin proteins arranged in a ring (connexon) in the plasma membrane of each cell.
-- Allow the passage of ions ($\mathrm{Ca^{2+}}$, $\mathrm{K^+{}$), small molecules (cAMP, $\mathrm{IP_3{}$, glucose, amino acids), and electrical signals (action potentials) between cells.
+- Allow the passage of ions ($\mathrm{Ca^{2+}}$, $\mathrm{K^+}$), small molecules (cAMP, $\mathrm{IP_3}$, glucose, amino acids), and electrical signals (action potentials) between cells.
 - Diameter of each channel: approximately 1.5 nm.
 - Functions: electrical coupling between cardiac muscle cells (allows coordinated contraction); spread of calcium waves; metabolic coupling (sharing nutrients); communication between neurons in the retina.
 
@@ -1308,9 +1308,9 @@ The ECM is a complex network of proteins and polysaccharides secreted by cells:
 
 | Component | Protein | Diameter | Structure | Functions |
 | --------- | -------- | -------- | --------- | --------- |
-| Microfilaments (actin filaments) | Actin | $\approx 7\ \mathrm{nm{}$ | Two intertwined actin chains | Cell shape; cell movement (pseudopodia, cleavage furrow); muscle contraction (thin filaments) |
-| Intermediate filaments | Keratin, vimentin, lamin, desmin | $\approx 10\ \mathrm{nm{}$ | Fibrous proteins wound into ropes | Mechanical strength; structural support; nuclear lamina |
-| Microtubules | Tubulin ($\alpha$ and $\beta$) | $\approx 25\ \mathrm{nm{}$ | 13 protofilaments of tubulin dimers in a hollow cylinder | Chromosome movement during mitosis; intracellular transport (motor proteins); structural support; cilia and flagella |
+| Microfilaments (actin filaments) | Actin | $\approx 7\ \mathrm{nm}$ | Two intertwined actin chains | Cell shape; cell movement (pseudopodia, cleavage furrow); muscle contraction (thin filaments) |
+| Intermediate filaments | Keratin, vimentin, lamin, desmin | $\approx 10\ \mathrm{nm}$ | Fibrous proteins wound into ropes | Mechanical strength; structural support; nuclear lamina |
+| Microtubules | Tubulin ($\alpha$ and $\beta$) | $\approx 25\ \mathrm{nm}$ | 13 protofilaments of tubulin dimers in a hollow cylinder | Chromosome movement during mitosis; intracellular transport (motor proteins); structural support; cilia and flagella |
 
 ### 23.2 Motor Proteins
 
@@ -1326,7 +1326,7 @@ Cilia and flagella are extensions of the cell membrane supported by microtubules
 
 | Feature | Cilia | Flagella |
 | ------- | ----- | -------- |
-| Length | Short (5--10 $\mu\mathrm{m{}$) | Long (up to 200 $\mu\mathrm{m{}$) |
+| Length | Short (5--10 $\mu\mathrm{m}$) | Long (up to 200 $\mu\mathrm{m}$) |
 | Number per cell | Many | Usually 1 or 2 |
 | Movement | Coordinated beating (metachronal rhythm) | Undulating (wave-like) |
 | Function | Move mucus over epithelial surfaces (respiratory tract, oviducts); move egg along oviduct | Sperm motility |
@@ -1390,7 +1390,7 @@ Bacteriophages (phages) are viruses that infect bacteria:
 
 | Feature | Prokaryotic Cell | Eukaryotic Cell |
 | ------- | ---------------- | --------------- |
-| Size | 1--5 $\mu\mathrm{m{}$ | 10--100 $\mu\mathrm{m{}$ |
+| Size | 1--5 $\mu\mathrm{m}$ | 10--100 $\mu\mathrm{m}$ |
 | Nucleus | No true nucleus; nucleoid region | True nucleus with nuclear envelope (double membrane with nuclear pores) |
 | DNA | Circular; not associated with histones | Linear chromosomes; associated with histones (chromatin) |
 | Membrane-bound organelles | None | Mitochondria, ER, Golgi, lysosomes, etc. |
@@ -1409,11 +1409,11 @@ Bacteriophages (phages) are viruses that infect bacteria:
 
 ### 26.1 Calculating Magnification
 
-$$\text{Magnification{} = \frac{\text{size of image{}}{\text{size of object{}}$$
+$$\text{Magnification} = \frac{\text{size of image}}{\text{size of object}}$$
 
-**Example:** a cell is observed through a microscope at 400x magnification. The cell measures $4\ \mathrm{mm{}$ on the micrograph. What is the actual size?
+**Example:** a cell is observed through a microscope at 400x magnification. The cell measures $4\ \mathrm{mm}$ on the micrograph. What is the actual size?
 
-$$\text{Actual size{} = \frac{\text{image size{}}{\text{magnification{}} = \frac{4\ \mathrm{mm{}}{400} = 0.01\ \mathrm{mm{} = 10\ \mu\mathrm{m{}$$
+$$\text{Actual size} = \frac{\text{image size}}{\text{magnification}} = \frac{4\ \mathrm{mm}}{400} = 0.01\ \mathrm{mm} = 10\ \mu\mathrm{m}$$
 
 ### 26.2 Preparing a Temporary Mount
 
@@ -1426,7 +1426,7 @@ $$\text{Actual size{} = \frac{\text{image size{}}{\text{magnification{}} = \frac
 
 The mitotic index is the percentage of cells in a population that are undergoing mitosis at a given time:
 
-$$\text{Mitotic index{} = \frac{\text{number of cells in mitosis{}}{\text{total number of cells observed{}} \times 100$$
+$$\text{Mitotic index} = \frac{\text{number of cells in mitosis}}{\text{total number of cells observed}} \times 100$$
 
 **Example:** In a sample of 200 cells, 12 are in prophase, 8 in metaphase, 4 in anaphase, and 6 in telophase.
 
@@ -1678,9 +1678,9 @@ Apoptosis is an orderly, genetically programmed process of cell death that occur
 
 ### 35.2 Magnification and Scale
 
-$$\text{Magnification{} = \frac{\text{Image size{}}{\text{Actual size{}}$$
+$$\text{Magnification} = \frac{\text{Image size}}{\text{Actual size}}$$
 
-$$\text{Actual size{} = \frac{\text{Image size{}}{\text{Magnification{}}$$
+$$\text{Actual size} = \frac{\text{Image size}}{\text{Magnification}}$$
 
 | Unit | Symbol | Conversion |
 | ---- | ------ | ---------- |
@@ -1755,7 +1755,7 @@ $$\text{Actual size{} = \frac{\text{Image size{}}{\text{Magnification{}}$$
 | Position | Upper layers of the mesophyll (near the upper epidermis) | Lower layers of the mesophyll (near the lower epidermis) |
 | Cell shape | Columnar; elongated; tightly packed | Loosely packed; many air spaces (large intercellular air spaces) |
 | Chloroplast density | Very high (many chloroplasts per cell) | Fewer chloroplasts per cell |
-| Primary function | Photosynthesis (light harvesting) | Gas exchange (air spaces allow $\mathrm{CO_2{}$ to reach palisade cells; $\mathrm{O_2{}$ to diffuse out) |
+| Primary function | Photosynthesis (light harvesting) | Gas exchange (air spaces allow $\mathrm{CO_2}$ to reach palisade cells; $\mathrm{O_2}$ to diffuse out) |
 
 ### 39.2 Other Specialised Plant Cells
 
