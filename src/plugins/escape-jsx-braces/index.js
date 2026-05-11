@@ -8,10 +8,15 @@
  *
  * 2. Placeholder nodes: The preprocessing script (scripts/escape-latex-braces.js)
  *    replaced { and } around LaTeX command arguments with \x00LB\x00 and
- *    \x00RB\x00 placeholders. Restore these to { and } in text nodes.
+ *    \x00RB\x00 placeholders. Restore these to { and } AFTER brace escaping
+ *    so they are NOT double-escaped.
  *
  * 3. Remaining literal braces in text nodes: { and } that MDX didn't parse
  *    as JSX. Replace with \{ \} which KaTeX renders as literal braces.
+ *
+ * ORDER MATTERS: escape braces first (step 3), then restore placeholders (step 2).
+ * This ensures placeholder-restored braces are treated as LaTeX group delimiters
+ * by KaTeX, while remaining literal braces are escaped for safe rendering.
  */
 const visit = require('unist-util-visit');
 
@@ -40,10 +45,12 @@ module.exports = function escapeJsxBraces() {
 
     // Process all text nodes
     visit(tree, 'text', (node) => {
-      // Restore placeholders
-      node.value = node.value.replace(/\x00LB\x00/g, '{').replace(/\x00RB\x00/g, '}');
-      // Escape remaining literal braces (skip already-escaped \{ and \})
+      // Step 1: Escape remaining literal braces (skip already-escaped \{ and \})
       node.value = node.value.replace(/(?<!\\)\{/g, '\\{').replace(/(?<!\\)\}/g, '\\}');
+      
+      // Step 2: Restore placeholders (these braces should NOT be escaped
+      // because they are LaTeX group delimiters for commands like \dfrac)
+      node.value = node.value.replace(/\x00LB\x00/g, '{').replace(/\x00RB\x00/g, '}');
     });
   };
 };
