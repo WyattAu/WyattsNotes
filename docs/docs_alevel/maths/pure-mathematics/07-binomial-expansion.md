@@ -90,7 +90,7 @@ Total: $\binom{n-1}{r-1} + \binom{n-1}{r}$. $\blacksquare$
 
 ## 3. The Binomial Theorem
 
-**Theorem (Binomial Theorem for Positive Integer $n$).** For $n \in \mathbb{'\{'}N{'\}'}$:
+**Theorem (Binomial Theorem for Positive Integer $n$).** For $n \in \mathbb\{N{'\}'}$:
 
 $$(a + b)^n = \sum_{r=0}^{n} \binom{n}{r} a^{n-r} b^r$$
 
@@ -141,7 +141,7 @@ $$= 32x^5 - 240x^4 + 720x^3 - 1080x^2 + 810x - 243$$
 When $n$ is not a positive integer (e.g., $n$ is negative or fractional), the expansion becomes an
 _infinite series_.
 
-**Theorem (General Binomial Theorem).** For $|x| \lt 1$ and any $n \in \mathbb{'\{'}R{'\}'}$:
+**Theorem (General Binomial Theorem).** For $|x| \lt 1$ and any $n \in \mathbb\{R{'\}'}$:
 
 $$(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots$$
 

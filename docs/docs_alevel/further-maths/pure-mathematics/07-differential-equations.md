@@ -62,13 +62,13 @@ $$\boxed{\int \frac{1}{g(y)}\,dy = \int f(x)\,dx + C}$$
 
 ### 1.3 Worked example
 
-Solve $\dfrac{dy}{dx} = \dfrac{x}{y}$ with $y(0) = 2$.
+Solve ${'\dfrac{dy}{dx}'} = {'\dfrac{x}{y}'}$ with $y(0) = 2$.
 
 Separate: $y\,dy = x\,dx$.
 
-Integrate: $\dfrac{y^2}{2} = \dfrac{x^2}{2} + C$.
+Integrate: ${'\dfrac{y^2}{2}'} = {'\dfrac{x^2}{2}'} + C$.
 
-Using $y(0) = 2$: $\dfrac{4}{2} = 0 + C \implies C = 2$.
+Using $y(0) = 2$: ${'\dfrac{4}{2}'} = 0 + C \implies C = 2$.
 
 $$y^2 = x^2 + 4, \quad y = \sqrt{x^2 + 4}$$
 
@@ -82,17 +82,17 @@ $g(y_0) = 0$, then $y = y_0$ is a constant (equilibrium) solution that may not a
 solution. Always check for these.
 :::
 
-**Example.** $\dfrac{dy}{dx} = y(1-y)$.
+**Example.** ${'\dfrac{dy}{dx}'} = y(1-y)$.
 
 Separating: $\displaystyle\int\frac{1}{y(1-y)}\,dy = \int dx$.
 
-Partial fractions: $\dfrac{1}{y(1-y)} = \dfrac{1}{y} + \dfrac{1}{1-y}$.
+Partial fractions: ${'\dfrac{1}{y(1-y)}'} = {'\dfrac{1}{y}'} + {'\dfrac{1}{1-y}'}$.
 
 $\ln|y| - \ln|1-y| = x + C$.
 
-$\ln\left|\dfrac{y}{1-y}\right| = x + C$.
+$\ln\left|{'\dfrac{y}{1-y}'}\right| = x + C$.
 
-$\dfrac{y}{1-y} = Ae^x$ where $A = \pm e^C$.
+${'\dfrac{y}{1-y}'} = Ae^x$ where $A = \pm e^C$.
 
 $$\boxed{y = \frac{Ae^x}{1 + Ae^x}}$$
 
@@ -121,7 +121,7 @@ $$\boxed{\mu(x) = e^{\int P(x)\,dx}}$$
 
 ### Proof of the integrating factor technique
 
-Multiply the ODE $\dfrac{dy}{dx} + P(x)\,y = Q(x)$ by $\mu(x)$:
+Multiply the ODE ${'\dfrac{dy}{dx}'} + P(x)\,y = Q(x)$ by $\mu(x)$:
 
 $$\mu\frac{dy}{dx} + \mu P\,y = \mu Q$$
 
@@ -129,7 +129,7 @@ The left-hand side is the derivative of $\mu y$ because:
 
 $$\frac{d}{dx}(\mu y) = \mu\frac{dy}{dx} + y\frac{d\mu}{dx}$$
 
-Since $\dfrac{d\mu}{dx} = \mu \cdot P(x)$ (because $\mu = e^{\int P\,dx}$, so
+Since ${'{'\dfrac{d\mu}{dx}'}'} = \mu \cdot P(x)$ (because $\mu = e^{\int P\,dx}$, so
 $\mu' = P \cdot e^{\int P\,dx} = P\mu$):
 
 $$\frac{d}{dx}(\mu y) = \mu\frac{dy}{dx} + y \cdot P\mu = \mu\frac{dy}{dx} + \mu P\,y$$
@@ -148,23 +148,23 @@ $\square$
 
 ### 2.4 Worked example
 
-Solve $\dfrac{dy}{dx} + \dfrac{2}{x}\,y = x^2$ for $x > 0$.
+Solve ${'\dfrac{dy}{dx}'} + {'\dfrac{2}{x}'}\,y = x^2$ for $x > 0$.
 
-Here $P(x) = \dfrac{2}{x}$, $Q(x) = x^2$.
+Here $P(x) = {'\dfrac{2}{x}'}$, $Q(x) = x^2$.
 
 $$\mu = e^{\int 2/x\,dx} = e^{2\ln x} = x^2$$
 
-Multiply through: $x^2\dfrac{dy}{dx} + 2xy = x^4$.
+Multiply through: $x^2{'\dfrac{dy}{dx}'} + 2xy = x^4$.
 
-Left-hand side is $\dfrac{d}{dx}(x^2 y) = x^4$.
+Left-hand side is ${'\dfrac{d}{dx}'}(x^2 y) = x^4$.
 
-Integrate: $x^2 y = \dfrac{x^5}{5} + C$.
+Integrate: $x^2 y = {'\dfrac{x^5}{5}'} + C$.
 
 $$\boxed{y = \frac{x^3}{5} + \frac{C}{x^2}}$$
 
 ### 2.5 Worked example with boundary condition
 
-Solve $\dfrac{dy}{dx} - 3y = e^{2x}$, given $y(0) = 1$.
+Solve ${'\dfrac{dy}{dx}'} - 3y = e^{2x}$, given $y(0) = 1$.
 
 $P(x) = -3$, $Q(x) = e^{2x}$.
 
@@ -266,7 +266,7 @@ $$y = (A + Bx)e^{2x}$$
 
 **Example (Case 3).** Solve $y'' + 2y' + 5y = 0$.
 
-Auxiliary: $m^2 + 2m + 5 = 0 \implies m = \dfrac{-2 \pm \sqrt{4-20}}{2} = -1 \pm 2i$.
+Auxiliary: $m^2 + 2m + 5 = 0 \implies m = {'{'\dfrac{-2 \pm \sqrt{4-20}}{2}'}'} = -1 \pm 2i$.
 
 $$y = e^{-x}(A\cos 2x + B\sin 2x)$$
 
@@ -342,7 +342,7 @@ $2(-c\sin x + d\cos x) + x(-c\cos x - d\sin x) + x(c\cos x + d\sin x) = \sin x$
 
 $2(-c\sin x + d\cos x) = \sin x$
 
-Comparing: $-2c = 1 \implies c = -\dfrac{1}{2}$, and $2d = 0 \implies d = 0$.
+Comparing: $-2c = 1 \implies c = -{'\dfrac{1}{2}'}$, and $2d = 0 \implies d = 0$.
 
 $$\boxed{y = A\cos x + B\sin x - \frac{1}{2}x\cos x}$$
 
@@ -354,7 +354,7 @@ PI: Try $y_p = px + q$. $y_p' = p$, $y_p'' = 0$.
 
 $0 - 4p + 4(px + q) = 3x + 2$. $4px + (4q - 4p) = 3x + 2$.
 
-$4p = 3 \implies p = \dfrac{3}{4}$. $4q - 3 = 2 \implies q = \dfrac{5}{4}$.
+$4p = 3 \implies p = {'\dfrac{3}{4}'}$. $4q - 3 = 2 \implies q = {'\dfrac{5}{4}'}$.
 
 $$\boxed{y = (A + Bx)e^{2x} + \frac{3}{4}x + \frac{5}{4}}$$
 
@@ -364,14 +364,14 @@ $$\boxed{y = (A + Bx)e^{2x} + \frac{3}{4}x + \frac{5}{4}}$$
 
 ### 5.1 Exponential growth and decay
 
-The ODE $\dfrac{dy}{dt} = ky$ (where $k$ is a constant) has solution
+The ODE ${'\dfrac{dy}{dt}'} = ky$ (where $k$ is a constant) has solution
 
 $$\boxed{y = y_0 e^{kt}}$$
 
 where $y_0 = y(0)$. If $k > 0$: exponential growth. If $k < 0$: exponential decay.
 
 **Proof.** Separable:
-$\dfrac{1}{y}\dfrac{dy}{dt} = k \implies \displaystyle\int \frac{1}{y}\,dy = \int k\,dt \implies \ln y = kt + C$.
+${'\dfrac{1}{y}'}{'\dfrac{dy}{dt}'} = k \implies \displaystyle\int \frac{1}{y}\,dy = \int k\,dt \implies \ln y = kt + C$.
 
 $y = e^{kt+C} = Ae^{kt}$. With $y(0) = y_0$: $A = y_0$. $\square$
 
@@ -384,7 +384,7 @@ $$\frac{dT}{dt} = -k(T - T_a)$$
 
 where $k > 0$ is the cooling constant.
 
-**Solution.** Let $\theta = T - T_a$. Then $\dfrac{d\theta}{dt} = -k\theta$, giving
+**Solution.** Let $\theta = T - T_a$. Then ${'{'\dfrac{d\theta}{dt}'}'} = -k\theta$, giving
 $\theta = \theta_0 e^{-kt}$.
 
 $$\boxed{T = T_a + (T_0 - T_a)e^{-kt}}$$
@@ -394,9 +394,9 @@ is $60°C$. Find the temperature after 20 minutes.
 
 $T_0 = 90$, $T_a = 20$. $T(10) = 60$:
 
-$60 = 20 + 70e^{-10k} \implies e^{-10k} = \dfrac{40}{70} = \dfrac{4}{7} \implies k = \dfrac{1}{10}\ln\dfrac{7}{4}$.
+$60 = 20 + 70e^{-10k} \implies e^{-10k} = {'\dfrac{40}{70}'} = {'\dfrac{4}{7}'} \implies k = {'\dfrac{1}{10}'}\ln{'\dfrac{7}{4}'}$.
 
-$T(20) = 20 + 70e^{-20k} = 20 + 70\left(\dfrac{4}{7}\right)^2 = 20 + 70 \cdot \dfrac{16}{49} = 20 + \dfrac{160}{7} \approx 42.9°C$.
+$T(20) = 20 + 70e^{-20k} = 20 + 70\left({'\dfrac{4}{7}'}\right)^2 = 20 + 70 \cdot {'\dfrac{16}{49}'} = 20 + {'\dfrac{160}{7}'} \approx 42.9°C$.
 
 ### 5.3 Population growth with carrying capacity
 
@@ -408,7 +408,7 @@ This is separable. The solution is
 
 $$\boxed{P(t) = \frac{M}{1 + Ae^{-kt}}}$$
 
-where $A = \dfrac{M - P_0}{P_0}$.
+where $A = {'\dfrac{M - P_0}{P_0}'}$.
 
 ### 5.4 Mixing problems
 
@@ -416,7 +416,7 @@ where $A = \dfrac{M - P_0}{P_0}$.
 and the mixture flows out at 5 L/min. Find the amount of salt after $t$ minutes.
 
 Let $S(t)$ be the amount of salt (kg). Rate in = 0. Rate out = concentration $\times$ flow rate
-$= \dfrac{S}{100} \times 5 = \dfrac{S}{20}$.
+$= {'\dfrac{S}{100}'} \times 5 = {'\dfrac{S}{20}'}$.
 
 $$\frac{dS}{dt} = -\frac{S}{20}$$
 
@@ -470,7 +470,7 @@ $\square$
 <details>
 <summary>Problem 1</summary>
 
-Solve $\dfrac{dy}{dx} = \dfrac{3x^2}{y^2}$ given $y(1) = 2$.
+Solve ${'\dfrac{dy}{dx}'} = {'\dfrac{3x^2}{y^2}'}$ given $y(1) = 2$.
 
 </details>
 
@@ -479,9 +479,9 @@ Solve $\dfrac{dy}{dx} = \dfrac{3x^2}{y^2}$ given $y(1) = 2$.
 
 Separate: $y^2\,dy = 3x^2\,dx$.
 
-Integrate: $\dfrac{y^3}{3} = x^3 + C$.
+Integrate: ${'\dfrac{y^3}{3}'} = x^3 + C$.
 
-$y(1) = 2$: $\dfrac{8}{3} = 1 + C \implies C = \dfrac{5}{3}$.
+$y(1) = 2$: ${'\dfrac{8}{3}'} = 1 + C \implies C = {'\dfrac{5}{3}'}$.
 
 $y^3 = 3x^3 + 5 \implies \boxed{y = \sqrt[3]{3x^3 + 5}}$.
 
@@ -493,7 +493,7 @@ Section 1.
 <details>
 <summary>Problem 2</summary>
 
-Solve $\dfrac{dy}{dx} + \dfrac{3}{x}\,y = x^2$ for $x > 0$, given $y(1) = 0$.
+Solve ${'\dfrac{dy}{dx}'} + {'\dfrac{3}{x}'}\,y = x^2$ for $x > 0$, given $y(1) = 0$.
 
 </details>
 
@@ -504,15 +504,15 @@ $P(x) = 3/x$, $Q(x) = x^2$.
 
 $\mu = e^{\int 3/x\,dx} = e^{3\ln x} = x^3$.
 
-$\dfrac{d}{dx}(x^3 y) = x^3 \cdot x^2 = x^5$.
+${'\dfrac{d}{dx}'}(x^3 y) = x^3 \cdot x^2 = x^5$.
 
-$x^3 y = \dfrac{x^6}{6} + C$.
+$x^3 y = {'\dfrac{x^6}{6}'} + C$.
 
-$y = \dfrac{x^3}{6} + \dfrac{C}{x^3}$.
+$y = {'\dfrac{x^3}{6}'} + {'\dfrac{C}{x^3}'}$.
 
-$y(1) = 0$: $\dfrac{1}{6} + C = 0 \implies C = -\dfrac{1}{6}$.
+$y(1) = 0$: ${'\dfrac{1}{6}'} + C = 0 \implies C = -{'\dfrac{1}{6}'}$.
 
-$\boxed{y = \dfrac{x^3}{6} - \dfrac{1}{6x^3} = \dfrac{x^6 - 1}{6x^3}}$.
+$\boxed{y = {'\dfrac{x^3}{6}'} - {'\dfrac{1}{6x^3}'} = {'\dfrac{x^6 - 1}{6x^3}'}}$.
 
 **If you get this wrong, revise:**
 [Integrating Factor](#2-first-order-odes-integrating-factor-method) — Section 2.
@@ -551,7 +551,7 @@ Solve $y'' + 4y' + 13y = 0$.
 <details>
 <summary>Solution 4</summary>
 
-Auxiliary: $m^2 + 4m + 13 = 0 \implies m = \dfrac{-4 \pm \sqrt{16-52}}{2} = -2 \pm 3i$.
+Auxiliary: $m^2 + 4m + 13 = 0 \implies m = {'{'\dfrac{-4 \pm \sqrt{16-52}}{2}'}'} = -2 \pm 3i$.
 
 $\alpha = -2$, $\beta = 3$.
 
@@ -626,13 +626,13 @@ cool to $40°C$?
 
 Newton's law: $T = 20 + 60e^{-kt}$ (since $T_0 = 80$, $T_a = 20$).
 
-$T(10) = 60$: $60 = 20 + 60e^{-10k} \implies e^{-10k} = \dfrac{2}{3}$.
+$T(10) = 60$: $60 = 20 + 60e^{-10k} \implies e^{-10k} = {'\dfrac{2}{3}'}$.
 
-$T(t) = 40$: $40 = 20 + 60e^{-kt} \implies e^{-kt} = \dfrac{1}{3}$.
+$T(t) = 40$: $40 = 20 + 60e^{-kt} \implies e^{-kt} = {'\dfrac{1}{3}'}$.
 
-$\left(\dfrac{2}{3}\right)^{t/10} = \dfrac{1}{3} \implies \dfrac{t}{10}\ln\dfrac{2}{3} = \ln\dfrac{1}{3}$.
+$\left({'\dfrac{2}{3}'}\right)^{t/10} = {'\dfrac{1}{3}'} \implies {'\dfrac{t}{10}'}\ln{'\dfrac{2}{3}'} = \ln{'\dfrac{1}{3}'}$.
 
-$t = \dfrac{10\ln(1/3)}{\ln(2/3)} = \dfrac{10\ln 3}{\ln(3/2)} \approx \dfrac{10 \times 1.0986}{0.4055} \approx 27.1$
+$t = {'{'\dfrac{10\ln(1/3)}{\ln(2/3)}'}'} = {'{'\dfrac{10\ln 3}{\ln(3/2)}'}'} \approx {'{'\dfrac{10 \times 1.0986}{0.4055}'}'} \approx 27.1$
 minutes.
 
 **If you get this wrong, revise:** [Newton's Law of Cooling](#52-newtons-law-of-cooling) — Section
@@ -643,16 +643,16 @@ minutes.
 <details>
 <summary>Problem 8</summary>
 
-Solve $\dfrac{dy}{dx} = xy$ given $y(0) = 5$.
+Solve ${'\dfrac{dy}{dx}'} = xy$ given $y(0) = 5$.
 
 </details>
 
 <details>
 <summary>Solution 8</summary>
 
-Separate: $\dfrac{1}{y}\,dy = x\,dx$.
+Separate: ${'\dfrac{1}{y}'}\,dy = x\,dx$.
 
-Integrate: $\ln|y| = \dfrac{x^2}{2} + C$.
+Integrate: $\ln|y| = {'\dfrac{x^2}{2}'} + C$.
 
 $y(0) = 5$: $\ln 5 = C$.
 
@@ -697,7 +697,7 @@ $\boxed{y = A\cos 3x + B\sin 3x + x\sin 3x}$.
 <details>
 <summary>Problem 10</summary>
 
-Solve $\dfrac{dy}{dx} - \dfrac{y}{x} = x^2$ for $x > 0$, given $y(1) = 3$.
+Solve ${'\dfrac{dy}{dx}'} - {'\dfrac{y}{x}'} = x^2$ for $x > 0$, given $y(1) = 3$.
 
 </details>
 
@@ -706,15 +706,15 @@ Solve $\dfrac{dy}{dx} - \dfrac{y}{x} = x^2$ for $x > 0$, given $y(1) = 3$.
 
 $P(x) = -1/x$, $Q(x) = x^2$.
 
-$\mu = e^{\int -1/x\,dx} = e^{-\ln x} = \dfrac{1}{x}$.
+$\mu = e^{\int -1/x\,dx} = e^{-\ln x} = {'\dfrac{1}{x}'}$.
 
-$\dfrac{d}{dx}\!\left(\dfrac{y}{x}\right) = \dfrac{1}{x} \cdot x^2 = x$.
+${'\dfrac{d}{dx}'}\!\left({'\dfrac{y}{x}'}\right) = {'\dfrac{1}{x}'} \cdot x^2 = x$.
 
-$\dfrac{y}{x} = \dfrac{x^2}{2} + C \implies y = \dfrac{x^3}{2} + Cx$.
+${'\dfrac{y}{x}'} = {'\dfrac{x^2}{2}'} + C \implies y = {'\dfrac{x^3}{2}'} + Cx$.
 
-$y(1) = 3$: $\dfrac{1}{2} + C = 3 \implies C = \dfrac{5}{2}$.
+$y(1) = 3$: ${'\dfrac{1}{2}'} + C = 3 \implies C = {'\dfrac{5}{2}'}$.
 
-$\boxed{y = \dfrac{x^3}{2} + \dfrac{5x}{2} = \dfrac{x(x^2 + 5)}{2}}$.
+$\boxed{y = {'\dfrac{x^3}{2}'} + {'\dfrac{5x}{2}'} = {'\dfrac{x(x^2 + 5)}{2}'}}$.
 
 **If you get this wrong, revise:**
 [Integrating Factor](#2-first-order-odes-integrating-factor-method) — Section 2.
@@ -729,11 +729,11 @@ $\boxed{y = \dfrac{x^3}{2} + \dfrac{5x}{2} = \dfrac{x(x^2 + 5)}{2}}$.
 
 ### Example 8.1: Second-order linear ODE with complex roots
 
-**Problem.** Solve $\dfrac{d^2y}{dx^2} + 4\dfrac{dy}{dx} + 13y = 0$ given $y(0) = 2$ and $y'(0) = -1$.
+**Problem.** Solve ${'\dfrac{d^2y}{dx^2}'} + 4{'\dfrac{dy}{dx}'} + 13y = 0$ given $y(0) = 2$ and $y'(0) = -1$.
 
 **Solution.** Auxiliary equation: $m^2 + 4m + 13 = 0$.
 
-$m = \dfrac{-4 \pm \sqrt{16-52}}{2} = -2 \pm 3i$.
+$m = {'{'\dfrac{-4 \pm \sqrt{16-52}}{2}'}'} = -2 \pm 3i$.
 
 General solution: $y = e^{-2x}(A\cos 3x + B\sin 3x)$.
 
@@ -747,7 +747,7 @@ $\boxed{y = e^{-2x}(2\cos 3x + \sin 3x)}$
 
 ### Example 8.2: Integrating factor with a tricky integral
 
-**Problem.** Solve $\dfrac{dy}{dx} + \dfrac{2y}{x} = x^2$ for $x > 0$.
+**Problem.** Solve ${'\dfrac{dy}{dx}'} + {'\dfrac{2y}{x}'} = x^2$ for $x > 0$.
 
 **Solution.** Integrating factor: $\mu = \exp\!\left(\displaystyle\int \frac{2}{x}\,dx\right) = e^{2\ln x} = x^2$.
 
@@ -759,9 +759,9 @@ $$\boxed{y = \frac{x^3}{5} + \frac{C}{x^2}}$$
 
 ### Example 8.3: Homogeneous equation via substitution
 
-**Problem.** Solve $\dfrac{dy}{dx} = \dfrac{x + y}{x - y}$.
+**Problem.** Solve ${'\dfrac{dy}{dx}'} = {'\dfrac{x + y}{x - y}'}$.
 
-**Solution.** This is a homogeneous equation. Let $y = vx$, so $\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
+**Solution.** This is a homogeneous equation. Let $y = vx$, so ${'\dfrac{dy}{dx}'} = v + x{'\dfrac{dv}{dx}'}$.
 
 $$v + x\frac{dv}{dx} = \frac{1+v}{1-v}$$
 
@@ -779,13 +779,13 @@ $$\arctan\!\left(\frac{y}{x}\right) - \frac{1}{2}\ln\!\left(1+\frac{y^2}{x^2}\ri
 
 ### Example 8.4: Coupled first-order ODEs
 
-**Problem.** Solve $\dfrac{dx}{dt} = 3x + 2y$, $\dfrac{dy}{dt} = -5x - y$.
+**Problem.** Solve ${'\dfrac{dx}{dt}'} = 3x + 2y$, ${'\dfrac{dy}{dt}'} = -5x - y$.
 
-**Solution.** From the second equation: $y = \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
+**Solution.** From the second equation: $y = {'\dfrac{1}{2}'}\!\left({'\dfrac{dx}{dt}'} - 3x\right)$.
 
-Differentiating: $\dfrac{dy}{dt} = \dfrac{1}{2}\!\left(\dfrac{d^2x}{dt^2} - 3\dfrac{dx}{dt}\right)$.
+Differentiating: ${'\dfrac{dy}{dt}'} = {'\dfrac{1}{2}'}\!\left({'\dfrac{d^2x}{dt^2}'} - 3{'\dfrac{dx}{dt}'}\right)$.
 
-Substituting into the second equation: $\dfrac{1}{2}\!\left(\dfrac{d^2x}{dt^2} - 3\dfrac{dx}{dt}\right) = -5x - \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
+Substituting into the second equation: ${'\dfrac{1}{2}'}\!\left({'\dfrac{d^2x}{dt^2}'} - 3{'\dfrac{dx}{dt}'}\right) = -5x - {'\dfrac{1}{2}'}\!\left({'\dfrac{dx}{dt}'} - 3x\right)$.
 
 $$\frac{d^2x}{dt^2} - 3\frac{dx}{dt} = -10x - \frac{dx}{dt} + 3x$$
 
@@ -795,13 +795,13 @@ Auxiliary: $m^2 - 2m + 7 = 0 \implies m = 1 \pm i\sqrt{6}$.
 
 $x = e^t(A\cos\sqrt{6}\,t + B\sin\sqrt{6}\,t)$.
 
-Then $y = \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
+Then $y = {'\dfrac{1}{2}'}\!\left({'\dfrac{dx}{dt}'} - 3x\right)$.
 
 ### Example 8.5: Exponential growth with harvesting
 
-**Problem.** A population $P(t)$ satisfies $\dfrac{dP}{dt} = 0.1P - 50$. Find the general solution and interpret.
+**Problem.** A population $P(t)$ satisfies ${'\dfrac{dP}{dt}'} = 0.1P - 50$. Find the general solution and interpret.
 
-**Solution.** This is a first-order linear ODE: $\dfrac{dP}{dt} - 0.1P = -50$.
+**Solution.** This is a first-order linear ODE: ${'\dfrac{dP}{dt}'} - 0.1P = -50$.
 
 Integrating factor: $\mu = e^{-0.1t}$.
 
@@ -862,7 +862,7 @@ $\boxed{y = A\cos x + B\sin x + x\sin x}$
 
 ### Question 8
 
-Solve $\dfrac{d^2y}{dx^2} - 2\dfrac{dy}{dx} - 3y = 6e^{2x}$.
+Solve ${'\dfrac{d^2y}{dx^2}'} - 2{'\dfrac{dy}{dx}'} - 3y = 6e^{2x}$.
 
 <details>
 <summary>Solution</summary>
@@ -877,20 +877,20 @@ $\boxed{y = Ae^{3x} + Be^{-x} - 2e^{2x}}$
 
 ### Question 9
 
-A body cools according to $\dfrac{d\theta}{dt} = -k(\theta - 20)$, where $\theta$ is the temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and $\theta(10) = 50$, find $\theta(30)$.
+A body cools according to ${'{'\dfrac{d\theta}{dt}'}'} = -k(\theta - 20)$, where $\theta$ is the temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and $\theta(10) = 50$, find $\theta(30)$.
 
 <details>
 <summary>Solution</summary>
 
-$\dfrac{d\theta}{dt} + k\theta = 20k$. IF: $e^{kt}$.
+${'{'\dfrac{d\theta}{dt}'}'} + k\theta = 20k$. IF: $e^{kt}$.
 
 $$\theta e^{kt} = 20e^{kt} + C$$
 
 $\theta = 20 + Ce^{-kt}$.
 
-$\theta(0) = 90 \implies C = 70$. $\theta(10) = 50 \implies 50 = 20 + 70e^{-10k} \implies e^{-10k} = \dfrac{3}{7}$.
+$\theta(0) = 90 \implies C = 70$. $\theta(10) = 50 \implies 50 = 20 + 70e^{-10k} \implies e^{-10k} = {'\dfrac{3}{7}'}$.
 
-$\theta(30) = 20 + 70e^{-30k} = 20 + 70\!\left(\dfrac{3}{7}\right)^{\!3} = 20 + 70 \times \dfrac{27}{343} = 20 + \dfrac{1890}{343}$.
+$\theta(30) = 20 + 70e^{-30k} = 20 + 70\!\left({'\dfrac{3}{7}'}\right)^{\!3} = 20 + 70 \times {'\dfrac{27}{343}'} = 20 + {'\dfrac{1890}{343}'}$.
 
 $\boxed{\theta(30) \approx 25.5°\mathrm{C}}$
 
@@ -898,14 +898,14 @@ $\boxed{\theta(30) \approx 25.5°\mathrm{C}}$
 
 ### Question 10
 
-**Prove that** the substitution $y = vx$ transforms $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ into a separable equation.
+**Prove that** the substitution $y = vx$ transforms ${'\dfrac{dy}{dx}'} = f\!\left({'\dfrac{y}{x}'}\right)$ into a separable equation.
 
 <details>
 <summary>Solution</summary>
 
-Let $y = vx$, so $\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
+Let $y = vx$, so ${'\dfrac{dy}{dx}'} = v + x{'\dfrac{dv}{dx}'}$.
 
-Substituting: $v + x\dfrac{dv}{dx} = f(v)$.
+Substituting: $v + x{'\dfrac{dv}{dx}'} = f(v)$.
 
 $$x\frac{dv}{dx} = f(v) - v$$
 
@@ -917,12 +917,12 @@ This is separable. Integrating gives $\displaystyle\int \frac{dv}{f(v) - v} = \l
 
 ### Question 11
 
-Find the particular solution to $x\dfrac{dy}{dx} - y = x^2$ with $y(1) = 3$.
+Find the particular solution to $x{'\dfrac{dy}{dx}'} - y = x^2$ with $y(1) = 3$.
 
 <details>
 <summary>Solution</summary>
 
-$\dfrac{dy}{dx} - \dfrac{y}{x} = x$. IF: $\mu = \exp\!\left(\displaystyle\int -\dfrac{1}{x}\,dx\right) = \dfrac{1}{x}$.
+${'\dfrac{dy}{dx}'} - {'\dfrac{y}{x}'} = x$. IF: $\mu = \exp\!\left(\displaystyle\int -{'\dfrac{1}{x}'}\,dx\right) = {'\dfrac{1}{x}'}$.
 
 $$\frac{1}{x}\cdot\frac{dy}{dx} - \frac{y}{x^2} = 1$$
 
@@ -958,9 +958,9 @@ Newton's second law $F = ma$ leads to second-order ODEs in mechanics. See [Circu
 
 | ODE Type | Method | General Solution |
 |---|---|---|
-| $\dfrac{dy}{dx} + P(x)y = Q(x)$ | Integrating factor $\mu = e^{\int P\,dx}$ | $y = \dfrac{1}{\mu}\displaystyle\int \mu Q\,dx$ |
-| $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ | Substitution $y = vx$ | Separate and integrate |
-| $a\dfrac{d^2y}{dx^2}+b\dfrac{dy}{dx}+cy=0$ | Auxiliary equation $am^2+bm+c=0$ | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
+| ${'\dfrac{dy}{dx}'} + P(x)y = Q(x)$ | Integrating factor $\mu = e^{\int P\,dx}$ | $y = {'{'\dfrac{1}{\mu}'}'}\displaystyle\int \mu Q\,dx$ |
+| ${'\dfrac{dy}{dx}'} = f\!\left({'\dfrac{y}{x}'}\right)$ | Substitution $y = vx$ | Separate and integrate |
+| $a{'\dfrac{d^2y}{dx^2}'}+b{'\dfrac{dy}{dx}'}+cy=0$ | Auxiliary equation $am^2+bm+c=0$ | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
 
 ---
 
@@ -968,7 +968,7 @@ Newton's second law $F = ma$ leads to second-order ODEs in mechanics. See [Circu
 
 ### Question 12
 
-Solve $\dfrac{d^2y}{dx^2} - 6\dfrac{dy}{dx} + 25y = 0$ with $y(0) = 0$ and $y'(0) = 3$.
+Solve ${'\dfrac{d^2y}{dx^2}'} - 6{'\dfrac{dy}{dx}'} + 25y = 0$ with $y(0) = 0$ and $y'(0) = 3$.
 
 <details>
 <summary>Solution</summary>
@@ -979,7 +979,7 @@ $y = e^{3x}(A\cos 4x + B\sin 4x)$.
 
 $y(0) = A = 0$. $y' = 3e^{3x}B\sin 4x + 4e^{3x}B\cos 4x$. $y'(0) = 4B = 3 \implies B = 3/4$.
 
-$\boxed{y = \dfrac{3}{4}e^{3x}\sin 4x}$
+$\boxed{y = {'\dfrac{3}{4}'}e^{3x}\sin 4x}$
 
 </details>
 
@@ -1004,7 +1004,7 @@ Therefore $W \neq 0 \iff$ linearly independent. $\blacksquare$
 
 ### 14.1 The integrating factor method — derivation
 
-For $\dfrac{dy}{dx} + P(x)y = Q(x)$, multiply by $\mu = e^{\int P\,dx}$:
+For ${'\dfrac{dy}{dx}'} + P(x)y = Q(x)$, multiply by $\mu = e^{\int P\,dx}$:
 
 $$\mu\frac{dy}{dx} + \mu Py = \mu Q$$
 
@@ -1016,13 +1016,13 @@ $$y = \frac{1}{\mu}\int \mu Q\,dx + \frac{C}{\mu}$$
 
 ### 14.2 Systems of linear ODEs
 
-For the system $\dot{\mathbf{'\{'}x{'\}'}} = \mathbf{'\{'}A{'\}'}\mathbf{'\{'}x{'\}'}$ where $\mathbf{'\{'}x{'\}'} = (x_1, \ldots, x_n)$:
+For the system $\dot{\mathbf\{x{'\}'}} = \mathbf\{A{'\}'}\mathbf\{x{'\}'}$ where $\mathbf\{x{'\}'} = (x_1, \ldots, x_n)$:
 
-If $\mathbf{'\{'}A{'\}'}$ is diagonalisable with $\mathbf{'\{'}A{'\}'} = \mathbf{'\{'}P{'\}'}\mathbf{'\{'}D{'\}'}\mathbf{'\{'}P{'\}'}^{-1}$, let $\mathbf{'\{'}z{'\}'} = \mathbf{'\{'}P{'\}'}^{-1}\mathbf{'\{'}x{'\}'}$:
+If $\mathbf\{A{'\}'}$ is diagonalisable with $\mathbf\{A{'\}'} = \mathbf\{P{'\}'}\mathbf\{D{'\}'}\mathbf\{P{'\}'}^{-1}$, let $\mathbf\{z{'\}'} = \mathbf\{P{'\}'}^{-1}\mathbf\{x{'\}'}$:
 
-$\dot{\mathbf{'\{'}z{'\}'}} = \mathbf{'\{'}D{'\}'}\mathbf{'\{'}z{'\}'}$, giving $z_i = c_i e^{\lambda_i t}$.
+$\dot{\mathbf\{z{'\}'}} = \mathbf\{D{'\}'}\mathbf\{z{'\}'}$, giving $z_i = c_i e^{\lambda_i t}$.
 
-$\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}P{'\}'}\mathbf{'\{'}z{'\}'} = \sum c_i e^{\lambda_i t}\mathbf{'\{'}v{'\}'}_i$.
+$\mathbf\{x{'\}'} = \mathbf\{P{'\}'}\mathbf\{z{'\}'} = \sum c_i e^{\lambda_i t}\mathbf\{v{'\}'}_i$.
 
 ### 14.3 Boundary value problems vs initial value problems
 
@@ -1040,20 +1040,20 @@ For autonomous 2D systems $\dot{x} = f(x,y)$, $\dot{y} = g(x,y)$, the phase port
 
 ### Question 14
 
-Solve $\dfrac{dy}{dx} = \dfrac{x^2+y^2}{xy}$ using an appropriate substitution.
+Solve ${'\dfrac{dy}{dx}'} = {'\dfrac{x^2+y^2}{xy}'}$ using an appropriate substitution.
 
 <details>
 <summary>Solution</summary>
 
-This is homogeneous: $\dfrac{dy}{dx} = \dfrac{1+(y/x)^2}{y/x}$. Let $v = y/x$:
+This is homogeneous: ${'\dfrac{dy}{dx}'} = {'\dfrac{1+(y/x)^2}{y/x}'}$. Let $v = y/x$:
 
-$v + x\dfrac{dv}{dx} = \dfrac{1+v^2}{v} = \dfrac{1}{v} + v$.
+$v + x{'\dfrac{dv}{dx}'} = {'\dfrac{1+v^2}{v}'} = {'\dfrac{1}{v}'} + v$.
 
-$x\dfrac{dv}{dx} = \dfrac{1}{v}$.
+$x{'\dfrac{dv}{dx}'} = {'\dfrac{1}{v}'}$.
 
-$\int v\,dv = \int \dfrac{dx}{x} \implies \dfrac{v^2}{2} = \ln|x| + C$.
+$\int v\,dv = \int {'\dfrac{dx}{x}'} \implies {'\dfrac{v^2}{2}'} = \ln|x| + C$.
 
-$\dfrac{y^2}{2x^2} = \ln|x| + C$.
+${'\dfrac{y^2}{2x^2}'} = \ln|x| + C$.
 
 $y^2 = 2x^2(\ln|x|+C)$.
 
@@ -1061,7 +1061,7 @@ $y^2 = 2x^2(\ln|x|+C)$.
 
 ### Question 15
 
-**Prove that** the general solution of $\dfrac{d^2y}{dx^2} + \omega^2 y = 0$ can be written as $y = R\cos(\omega x - \delta)$ where $R$ and $\delta$ are constants.
+**Prove that** the general solution of ${'\dfrac{d^2y}{dx^2}'} + \omega^2 y = 0$ can be written as $y = R\cos(\omega x - \delta)$ where $R$ and $\delta$ are constants.
 
 <details>
 <summary>Solution</summary>

@@ -36,7 +36,7 @@ logical steps to arrive at the desired conclusion.
 
 ### 1.2 Example: the sum of an arithmetic series
 
-**Theorem.** $S_n = \dfrac{n}{2}(a + l) = \dfrac{n}{2}[2a + (n-1)d]$.
+**Theorem.** $S_n = {'\dfrac{n}{2}'}(a + l) = {'\dfrac{n}{2}'}[2a + (n-1)d]$.
 
 **Proof.** Write out the sum forwards and backwards:
 
@@ -53,7 +53,7 @@ $$2S_n = n[2a + (n-1)d] \implies S_n = \frac{n}{2}[2a + (n-1)d] \quad \blacksqua
 
 ### 1.3 Example: the difference of squares
 
-**Theorem.** $a^2 - b^2 = (a-b)(a+b)$ for all $a, b \in \mathbb{'\{'}R{'\}'}$.
+**Theorem.** $a^2 - b^2 = (a-b)(a+b)$ for all $a, b \in \mathbb\{R{'\}'}$.
 
 **Proof.** Expanding the right-hand side:
 
@@ -91,7 +91,7 @@ $\blacksquare$
 
 **Theorem.** $\sqrt{2}$ is irrational.
 
-**Proof.** Suppose $\sqrt{2} = \dfrac{a}{b}$ where $a, b \in \mathbb{'\{'}Z{'\}'}$, $b \neq 0$, and
+**Proof.** Suppose $\sqrt{2} = {'\dfrac{a}{b}'}$ where $a, b \in \mathbb\{Z{'\}'}$, $b \neq 0$, and
 $\gcd(a,b) = 1$ (the fraction is in lowest terms).
 
 $$2 = \frac{a^2}{b^2} \implies a^2 = 2b^2$$
@@ -108,7 +108,7 @@ $\blacksquare$
 
 **Theorem.** $\log_2 3$ is irrational.
 
-**Proof.** Suppose $\log_2 3 = \dfrac{a}{b}$ where $a, b \in \mathbb{'\{'}Z{'\}'}^+$ and $\gcd(a,b) = 1$.
+**Proof.** Suppose $\log_2 3 = {'\dfrac{a}{b}'}$ where $a, b \in \mathbb\{Z{'\}'}^+$ and $\gcd(a,b) = 1$.
 
 $$2^{a/b} = 3 \implies 2^a = 3^b$$
 
@@ -194,7 +194,7 @@ contradicting the inductive step.
 
 ### 5.2 Sum of the first $n$ integers
 
-**Theorem.** $\displaystyle\sum_{r=1}^{n} r = \frac{n(n+1)}{2}$ for all $n \in \mathbb{'\{'}N{'\}'}$.
+**Theorem.** $\displaystyle\sum_{r=1}^{n} r = \frac{n(n+1)}{2}$ for all $n \in \mathbb\{N{'\}'}$.
 
 **Proof.**
 
@@ -216,7 +216,7 @@ $$
 
 This is the required formula with $n = k+1$. ✓
 
-_Conclusion:_ By induction, the formula holds for all $n \in \mathbb{'\{'}N{'\}'}$. $\blacksquare$
+_Conclusion:_ By induction, the formula holds for all $n \in \mathbb\{N{'\}'}$. $\blacksquare$
 
 ### 5.3 Sum of squares
 
@@ -224,7 +224,7 @@ _Conclusion:_ By induction, the formula holds for all $n \in \mathbb{'\{'}N{'\}'
 
 **Proof.**
 
-_Base case ($n=1$):_ $1 = \dfrac{1 \times 2 \times 3}{6} = 1$. ✓
+_Base case ($n=1$):_ $1 = {'{'\dfrac{1 \times 2 \times 3}{6}'}'} = 1$. ✓
 
 _Inductive hypothesis:_ Assume $\displaystyle\sum_{r=1}^{k} r^2 = \frac{k(k+1)(2k+1)}{6}$.
 
@@ -245,7 +245,7 @@ This is the formula with $n = k+1$. ✓ $\blacksquare$
 
 ### 5.4 Divisibility
 
-**Theorem.** $3^n - 1$ is divisible by 2 for all $n \in \mathbb{'\{'}N{'\}'}$.
+**Theorem.** $3^n - 1$ is divisible by 2 for all $n \in \mathbb\{N{'\}'}$.
 
 **Proof.**
 
@@ -257,7 +257,7 @@ _Step:_ $3^{k+1} - 1 = 3 \cdot 3^k - 1 = 3(2m+1) - 1 = 6m + 3 - 1 = 6m + 2 = 2(3
 
 This is divisible by 2. ✓ $\blacksquare$
 
-**Theorem.** $4^n - 1$ is divisible by 3 for all $n \in \mathbb{'\{'}N{'\}'}$.
+**Theorem.** $4^n - 1$ is divisible by 3 for all $n \in \mathbb\{N{'\}'}$.
 
 **Proof.**
 
@@ -269,7 +269,7 @@ _Step:_ $4^{k+1} - 1 = 4 \cdot 4^k - 1 = 4(3m+1)-1 = 12m+4-1 = 12m+3 = 3(4m+1)$.
 
 ### 5.5 Inequalities
 
-**Theorem.** $2^n \gt{} n$ for all $n \in \mathbb{'\{'}N{'\}'}$.
+**Theorem.** $2^n \gt{} n$ for all $n \in \mathbb\{N{'\}'}$.
 
 **Proof.**
 
@@ -320,7 +320,7 @@ Prove that the product of two odd numbers is odd.
 
 <details>
 <summary>Solution 1</summary>
-Let the two odd numbers be $2m+1$ and $2n+1$ where $m, n \in \mathbb{'\{'}Z{'\}'}$.
+Let the two odd numbers be $2m+1$ and $2n+1$ where $m, n \in \mathbb\{Z{'\}'}$.
 
 $(2m+1)(2n+1) = 4mn + 2m + 2n + 1 = 2(2mn+m+n) + 1$.
 
@@ -337,7 +337,7 @@ Prove by contradiction that there is no greatest even integer.
 
 <details>
 <summary>Solution 2</summary>
-Suppose $N$ is the greatest even integer. Then $N = 2k$ for some $k \in \mathbb{'\{'}Z{'\}'}$.
+Suppose $N$ is the greatest even integer. Then $N = 2k$ for some $k \in \mathbb\{Z{'\}'}$.
 
 But $N + 2 = 2k + 2 = 2(k+1)$ is also even, and $N+2 \gt{} N$. This contradicts $N$ being the
 greatest even integer. $\blacksquare$
@@ -348,12 +348,12 @@ greatest even integer. $\blacksquare$
 
 <details>
 <summary>Problem 3</summary>
-Prove by induction that $\displaystyle\sum_{r=1}^{n} r^3 = \left[\frac{n(n+1)}{2}\right]^2$ for all $n \in \mathbb{'\{'}N{'\}'}$.
+Prove by induction that $\displaystyle\sum_{r=1}^{n} r^3 = \left[\frac{n(n+1)}{2}\right]^2$ for all $n \in \mathbb\{N{'\}'}$.
 </details>
 
 <details>
 <summary>Solution 3</summary>
-*Base case ($n=1$):* $1^3 = 1 = \left[\dfrac{1 \cdot 2}{2}\right]^2 = 1$. ✓
+*Base case ($n=1$):* $1^3 = 1 = \left[{'{'\dfrac{1 \cdot 2}{2}'}'}\right]^2 = 1$. ✓
 
 _Hypothesis:_ $\displaystyle\sum_{r=1}^{k} r^3 = \left[\frac{k(k+1)}{2}\right]^2$.
 
@@ -382,7 +382,7 @@ Prove that $\sqrt{3}$ is irrational.
 
 <details>
 <summary>Solution 4</summary>
-Suppose $\sqrt{3} = a/b$ in lowest terms with $a, b \in \mathbb{'\{'}Z{'\}'}^+$, $\gcd(a,b) = 1$.
+Suppose $\sqrt{3} = a/b$ in lowest terms with $a, b \in \mathbb\{Z{'\}'}^+$, $\gcd(a,b) = 1$.
 
 $3 = a^2/b^2 \implies a^2 = 3b^2$, so $3 \mid a^2$, hence $3 \mid a$. Write $a = 3k$.
 
@@ -402,7 +402,7 @@ Disprove by counterexample: "For all real $x$, $\sin(2x) = 2\sin x$."
 
 <details>
 <summary>Solution 5</summary>
-Let $x = \pi/4$. $\sin(\pi/2) = 1$ but $2\sin(\pi/4) = 2 \times \dfrac{\sqrt{2}}{2} = \sqrt{2} \neq 1$.
+Let $x = \pi/4$. $\sin(\pi/2) = 1$ but $2\sin(\pi/4) = 2 \times {'{'\dfrac{\sqrt{2}}{2}'}'} = \sqrt{2} \neq 1$.
 
 (The correct identity is $\sin(2x) = 2\sin x\cos x$.)
 
@@ -437,7 +437,7 @@ Prove by contradiction that $\log_3 5$ is irrational.
 
 <details>
 <summary>Solution 7</summary>
-Suppose $\log_3 5 = a/b$ where $a, b \in \mathbb{'\{'}Z{'\}'}^+$, $\gcd(a,b)=1$.
+Suppose $\log_3 5 = a/b$ where $a, b \in \mathbb\{Z{'\}'}^+$, $\gcd(a,b)=1$.
 
 $3^{a/b} = 5 \implies 3^a = 5^b$.
 
@@ -514,7 +514,7 @@ Prove by induction that $\displaystyle\sum_{r=1}^{n}\frac{1}{r(r+1)} = \frac{n}{
 
 <details>
 <summary>Solution 11</summary>
-*Base case ($n=1$):* $\dfrac{1}{1 \times 2} = \dfrac{1}{2} = \dfrac{1}{1+1}$. ✓
+*Base case ($n=1$):* ${'{'\dfrac{1}{1 \times 2}'}'} = {'\dfrac{1}{2}'} = {'\dfrac{1}{1+1}'}$. ✓
 
 _Hypothesis:_ $\displaystyle\sum_{r=1}^{k}\frac{1}{r(r+1)} = \frac{k}{k+1}$.
 

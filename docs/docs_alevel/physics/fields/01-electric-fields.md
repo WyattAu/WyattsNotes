@@ -89,10 +89,10 @@ commonly tested (Paper 2). CIE: Gravitational--electrostatic analogies appear in
 
 ## 2. Electric Field Strength
 
-**Definition.** The **electric field strength** $\mathbf{'\{'}E{'\}'}$ at a point is the force per unit
+**Definition.** The **electric field strength** $\mathbf\{E{'\}'}$ at a point is the force per unit
 positive charge placed at that point:
 
-$$\mathbf{'\{'}E{'\}'} = \frac{\mathbf{'\{'}F{'\}'}}{q}$$
+$$\mathbf\{E{'\}'} = \frac{\mathbf\{F{'\}'}}{q}$$
 
 SI units: N C$^{-1}$ (equivalent to V m$^{-1}$).
 
@@ -133,11 +133,11 @@ the same solid angle from any observation point.
 ### Proof of the Infinite Plane Field
 
 Use a cylindrical Gaussian surface of cross-sectional area $A$ piercing the plane, with equal-length
-extensions on each side. By symmetry, $\mathbf{'\{'}E{'\}'}$ is perpendicular to the plane, has equal
+extensions on each side. By symmetry, $\mathbf\{E{'\}'}$ is perpendicular to the plane, has equal
 magnitude on both sides, and has no component parallel to the plane.
 
 Flux through both end caps: $\Phi_E = EA + EA = 2EA$. (No flux through the curved surface since
-$\mathbf{'\{'}E{'\}'}$ is parallel to it.)
+$\mathbf\{E{'\}'}$ is parallel to it.)
 
 Enclosed charge: $Q_{\mathrm{enc}} = \sigma A$.
 
@@ -255,7 +255,7 @@ $$qE\,dr = -q\,dV$$
 
 $$\boxed{E = -\frac{dV}{dr}}$$
 
-In 3D: $\mathbf{'\{'}E{'\}'} = -\nabla V$.
+In 3D: $\mathbf\{E{'\}'} = -\nabla V$.
 
 **Verification for a point charge.** $V = \frac{Q}{4\pi\varepsilon_0 r}$.
 

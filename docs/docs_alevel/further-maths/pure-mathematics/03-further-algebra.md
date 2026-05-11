@@ -104,7 +104,7 @@ The numerator of the irreducible quadratic factor is always linear ($Bx + C$), n
 <details>
 <summary>Worked Example: Type 1 partial fractions</summary>
 
-Express $\dfrac{3x + 5}{(x + 1)(x^2 + 1)}$ in partial fractions.
+Express ${'\dfrac{3x + 5}{(x + 1)(x^2 + 1)}'}$ in partial fractions.
 
 $$\frac{3x + 5}{(x + 1)(x^2 + 1)} = \frac{A}{x + 1} + \frac{Bx + C}{x^2 + 1}$$
 
@@ -136,7 +136,7 @@ Each distinct irreducible quadratic factor contributes a linear numerator.
 <details>
 <summary>Worked Example: Type 2 partial fractions</summary>
 
-Express $\dfrac{x^2 + 1}{(x^2 + 4)^2}$ in partial fractions.
+Express ${'\dfrac{x^2 + 1}{(x^2 + 4)^2}'}$ in partial fractions.
 
 $$\frac{x^2 + 1}{(x^2 + 4)^2} = \frac{Ax + B}{x^2 + 4} + \frac{Cx + D}{(x^2 + 4)^2}$$
 
@@ -188,10 +188,10 @@ $$= ax^3 - a(\alpha + \beta + \gamma)x^2 + a(\alpha\beta + \alpha\gamma + \beta\
 
 Comparing coefficients with $ax^3 + bx^2 + cx + d$:
 
-- $x^2$: $-a(\alpha + \beta + \gamma) = b \implies \alpha + \beta + \gamma = -\dfrac{b}{a}$
+- $x^2$: $-a(\alpha + \beta + \gamma) = b \implies \alpha + \beta + \gamma = -{'\dfrac{b}{a}'}$
 - $x^1$:
-  $a(\alpha\beta + \alpha\gamma + \beta\gamma) = c \implies \alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{c}{a}$
-- $x^0$: $-a\alpha\beta\gamma = d \implies \alpha\beta\gamma = -\dfrac{d}{a}$
+  $a(\alpha\beta + \alpha\gamma + \beta\gamma) = c \implies \alpha\beta + \alpha\gamma + \beta\gamma = {'\dfrac{c}{a}'}$
+- $x^0$: $-a\alpha\beta\gamma = d \implies \alpha\beta\gamma = -{'\dfrac{d}{a}'}$
 
 $\square$
 
@@ -212,7 +212,7 @@ $$\boxed{\alpha\beta\gamma\delta = \frac{e}{a}}$$
 Using the elementary symmetric sums, we can express other symmetric functions:
 
 - $\alpha^2 + \beta^2 + \gamma^2 = (\alpha + \beta + \gamma)^2 - 2(\alpha\beta + \alpha\gamma + \beta\gamma)$
-- $\dfrac{1}{\alpha} + \dfrac{1}{\beta} + \dfrac{1}{\gamma} = \dfrac{\alpha\beta + \alpha\gamma + \beta\gamma}{\alpha\beta\gamma}$
+- ${'{'\dfrac{1}{\alpha}'}'} + {'{'\dfrac{1}{\beta}'}'} + {'{'\dfrac{1}{\gamma}'}'} = {'{'\dfrac{\alpha\beta + \alpha\gamma + \beta\gamma}{\alpha\beta\gamma}'}'}$
 - $\alpha^2\beta + \alpha^2\gamma + \beta^2\alpha + \beta^2\gamma + \gamma^2\alpha + \gamma^2\beta = (\alpha + \beta + \gamma)(\alpha\beta + \alpha\gamma + \beta\gamma) - 3\alpha\beta\gamma$
 
 <details>
@@ -221,8 +221,8 @@ Using the elementary symmetric sums, we can express other symmetric functions:
 The equation $2x^3 - 3x^2 - 4x + 5 = 0$ has roots $\alpha, \beta, \gamma$. Find the value of
 $\alpha^2 + \beta^2 + \gamma^2$.
 
-From the relationships: $\alpha + \beta + \gamma = \dfrac{3}{2}$ and
-$\alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{-4}{2} = -2$.
+From the relationships: $\alpha + \beta + \gamma = {'\dfrac{3}{2}'}$ and
+$\alpha\beta + \alpha\gamma + \beta\gamma = {'\dfrac{-4}{2}'} = -2$.
 
 $$\alpha^2 + \beta^2 + \gamma^2 = \left(\frac{3}{2}\right)^2 - 2(-2) = \frac{9}{4} + 4 = \frac{25}{4}$$
 
@@ -254,7 +254,7 @@ This is a _telescoping sum_ — all intermediate terms cancel.
 
 ### Proof
 
-Note that $r^3 - (r-1)^3 = 3r^2 - 3r + 1$, so $r^2 = \dfrac{r^3 - (r-1)^3 + 3r - 1}{3}$.
+Note that $r^3 - (r-1)^3 = 3r^2 - 3r + 1$, so $r^2 = {'\dfrac{r^3 - (r-1)^3 + 3r - 1}{3}'}$.
 
 Summing from $r = 1$ to $n$:
 
@@ -292,7 +292,7 @@ differences often applies.
 
 Find $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+1)}$.
 
-Using partial fractions: $\dfrac{1}{r(r+1)} = \dfrac{1}{r} - \dfrac{1}{r+1}$.
+Using partial fractions: ${'\dfrac{1}{r(r+1)}'} = {'\dfrac{1}{r}'} - {'\dfrac{1}{r+1}'}$.
 
 $$\sum_{r=1}^{n}\left(\frac{1}{r} - \frac{1}{r+1}\right) = \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \cdots + \left(\frac{1}{n} - \frac{1}{n+1}\right)$$
 
@@ -305,11 +305,11 @@ $$= 1 - \frac{1}{n+1} = \frac{n}{n+1}$$
 
 Find $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+2)}$.
 
-Partial fractions: $\dfrac{1}{r(r+2)} = \dfrac{1}{2}\!\left(\dfrac{1}{r} - \dfrac{1}{r+2}\right)$.
+Partial fractions: ${'\dfrac{1}{r(r+2)}'} = {'\dfrac{1}{2}'}\!\left({'\dfrac{1}{r}'} - {'\dfrac{1}{r+2}'}\right)$.
 
 $$\frac{1}{2}\sum_{r=1}^{n}\left(\frac{1}{r} - \frac{1}{r+2}\right) = \frac{1}{2}\left[\left(1 - \frac{1}{3}\right) + \left(\frac{1}{2} - \frac{1}{4}\right) + \left(\frac{1}{3} - \frac{1}{5}\right) + \cdots + \left(\frac{1}{n} - \frac{1}{n+2}\right)\right]$$
 
-Terms cancel in pairs. The surviving terms are $1 + \dfrac{1}{2} - \dfrac{1}{n+1} - \dfrac{1}{n+2}$.
+Terms cancel in pairs. The surviving terms are $1 + {'\dfrac{1}{2}'} - {'\dfrac{1}{n+1}'} - {'\dfrac{1}{n+2}'}$.
 
 $$= \frac{1}{2}\left(\frac{3}{2} - \frac{1}{n+1} - \frac{1}{n+2}\right) = \frac{3}{4} - \frac{2n+3}{2(n+1)(n+2)}$$
 
@@ -343,7 +343,7 @@ $$\sum_{r=1}^{k+1} r = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \f
 
 ### Proof
 
-_Base case ($n = 1$):_ $1^3 = 1 = \left[\dfrac{1 \times 2}{2}\right]^2 = 1$. ✓
+_Base case ($n = 1$):_ $1^3 = 1 = \left[{'{'\dfrac{1 \times 2}{2}'}'}\right]^2 = 1$. ✓
 
 _Inductive step._ Assume $\displaystyle\sum_{r=1}^{k} r^3 = \left[\frac{k(k+1)}{2}\right]^2$. Then:
 
@@ -377,13 +377,13 @@ $$\boxed{\sum_{r=1}^{n} [g(r) - g(r+1)] = g(1) - g(n+1)}$$
 
 ## Problems
 
-**Problem 1.** Express $\dfrac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)}$ in partial fractions.
+**Problem 1.** Express ${'\dfrac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)}'}$ in partial fractions.
 
 <details>
 <summary>Hint</summary>
 
 Since $x^2 + 2x + 5 = (x+1)^2 + 4$ has $\Delta = 4 - 20 < 0$, it is irreducible. Use the form
-$\dfrac{A}{x+2} + \dfrac{Bx + C}{x^2 + 2x + 5}$.
+${'\dfrac{A}{x+2}'} + {'\dfrac{Bx + C}{x^2 + 2x + 5}'}$.
 
 </details>
 
@@ -394,7 +394,7 @@ $$\frac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)} = \frac{A}{x + 2} + \frac{Bx + C}{
 
 $2x^2 + 3x + 4 = A(x^2 + 2x + 5) + (Bx + C)(x + 2)$
 
-Setting $x = -2$: $8 - 6 + 4 = A(4 + 1) = 5A \implies A = \dfrac{6}{5}$.
+Setting $x = -2$: $8 - 6 + 4 = A(4 + 1) = 5A \implies A = {'\dfrac{6}{5}'}$.
 
 Setting $x = 0$: $4 = 5A + 2C = 6 + 2C \implies C = -1$.
 
@@ -407,19 +407,19 @@ $$\frac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)} = \frac{6/5}{x + 2} + \frac{2x - 1
 <hr />
 
 **Problem 2.** The equation $x^3 - 4x^2 + x + 6 = 0$ has roots $\alpha, \beta, \gamma$. Find the
-value of $\dfrac{1}{\alpha\beta} + \dfrac{1}{\alpha\gamma} + \dfrac{1}{\beta\gamma}$.
+value of ${'{'\dfrac{1}{\alpha\beta}'}'} + {'{'\dfrac{1}{\alpha\gamma}'}'} + {'{'\dfrac{1}{\beta\gamma}'}'}$.
 
 <details>
 <summary>Hint</summary>
 
-$\dfrac{1}{\alpha\beta} + \dfrac{1}{\alpha\gamma} + \dfrac{1}{\beta\gamma} = \dfrac{\alpha + \beta + \gamma}{\alpha\beta\gamma}$.
+${'{'\dfrac{1}{\alpha\beta}'}'} + {'{'\dfrac{1}{\alpha\gamma}'}'} + {'{'\dfrac{1}{\beta\gamma}'}'} = {'{'\dfrac{\alpha + \beta + \gamma}{\alpha\beta\gamma}'}'}$.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\alpha + \beta + \gamma = \dfrac{-(-4)}{1} = 4$ and $\alpha\beta\gamma = \dfrac{-6}{1} = -6$.
+$\alpha + \beta + \gamma = {'\dfrac{-(-4)}{1}'} = 4$ and $\alpha\beta\gamma = {'\dfrac{-6}{1}'} = -6$.
 
 $$\frac{1}{\alpha\beta} + \frac{1}{\alpha\gamma} + \frac{1}{\beta\gamma} = \frac{\alpha + \beta + \gamma}{\alpha\beta\gamma} = \frac{4}{-6} = -\frac{2}{3}$$
 
@@ -427,13 +427,13 @@ $$\frac{1}{\alpha\beta} + \frac{1}{\alpha\gamma} + \frac{1}{\beta\gamma} = \frac
 
 <hr />
 
-**Problem 3.** Express $\dfrac{3x + 1}{(x^2 + 1)(x^2 + 4)}$ in partial fractions.
+**Problem 3.** Express ${'\dfrac{3x + 1}{(x^2 + 1)(x^2 + 4)}'}$ in partial fractions.
 
 <details>
 <summary>Hint</summary>
 
 Both $x^2 + 1$ and $x^2 + 4$ are irreducible. Use the form
-$\dfrac{Ax + B}{x^2 + 1} + \dfrac{Cx + D}{x^2 + 4}$.
+${'\dfrac{Ax + B}{x^2 + 1}'} + {'\dfrac{Cx + D}{x^2 + 4}'}$.
 
 </details>
 
@@ -455,7 +455,7 @@ Comparing coefficients:
 
 From $A + C = 0$ and $4A + C = 3$: $3A = 3 \implies A = 1, C = -1$.
 
-From $B + D = 0$ and $4B + D = 1$: $3B = 1 \implies B = \dfrac{1}{3}, D = -\dfrac{1}{3}$.
+From $B + D = 0$ and $4B + D = 1$: $3B = 1 \implies B = {'\dfrac{1}{3}'}, D = -{'\dfrac{1}{3}'}$.
 
 $$\frac{3x + 1}{(x^2 + 1)(x^2 + 4)} = \frac{x + 1/3}{x^2 + 1} + \frac{-x - 1/3}{x^2 + 4}$$
 
@@ -469,7 +469,7 @@ $$\frac{3x + 1}{(x^2 + 1)(x^2 + 4)} = \frac{x + 1/3}{x^2 + 1} + \frac{-x - 1/3}{
 <summary>Hint</summary>
 
 Use partial fractions to show that
-$\dfrac{2}{r(r+1)(r+2)} = \dfrac{1}{r(r+1)} - \dfrac{1}{(r+1)(r+2)}$, then apply the method of
+${'\dfrac{2}{r(r+1)(r+2)}'} = {'\dfrac{1}{r(r+1)}'} - {'\dfrac{1}{(r+1)(r+2)}'}$, then apply the method of
 differences.
 
 </details>
@@ -477,7 +477,7 @@ differences.
 <details>
 <summary>Answer</summary>
 
-$\dfrac{2}{r(r+1)(r+2)} = \dfrac{1}{r(r+1)} - \dfrac{1}{(r+1)(r+2)}$.
+${'\dfrac{2}{r(r+1)(r+2)}'} = {'\dfrac{1}{r(r+1)}'} - {'\dfrac{1}{(r+1)(r+2)}'}$.
 
 This telescopes:
 
@@ -503,11 +503,11 @@ Use the relationships between roots and coefficients directly.
 <details>
 <summary>Answer</summary>
 
-$\alpha + \beta + \gamma = -\dfrac{p}{3} = 4 \implies p = -12$.
+$\alpha + \beta + \gamma = -{'\dfrac{p}{3}'} = 4 \implies p = -12$.
 
-$\alpha\beta\gamma = -\dfrac{12}{3} = -4$. This is consistent with the given information. ✓
+$\alpha\beta\gamma = -{'\dfrac{12}{3}'} = -4$. This is consistent with the given information. ✓
 
-$\alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{q}{3}$, so
+$\alpha\beta + \alpha\gamma + \beta\gamma = {'\dfrac{q}{3}'}$, so
 $q = 3(\alpha\beta + \alpha\gamma + \beta\gamma)$.
 
 We need additional information. Note that
@@ -517,7 +517,7 @@ $= 16 - 2S$ where $S = \alpha\beta + \alpha\gamma + \beta\gamma$.
 Without further information about the individual roots, $S$ cannot be determined uniquely. However,
 we know $p = -12$ and $q$ depends on $S$.
 
-If the question provides that the roots are integers: trying factors of $\dfrac{-4}{3}$, the roots
+If the question provides that the roots are integers: trying factors of ${'\dfrac{-4}{3}'}$, the roots
 are $1, 1, 2$ (checking: sum = 4 ✓, product = 2 ≠ $-4$ ✗). The roots $-1, 2, 3$ give sum = 4 ✓ and
 product = $-6$ ✗.
 
@@ -533,7 +533,7 @@ $p = -12$ and $q = 3S$ where $S$ requires more information about the roots.
 <summary>Hint</summary>
 
 Use partial fractions:
-$\dfrac{1}{r(r+3)} = \dfrac{1}{3}\!\left(\dfrac{1}{r} - \dfrac{1}{r+3}\right)$. Three terms survive
+${'\dfrac{1}{r(r+3)}'} = {'\dfrac{1}{3}'}\!\left({'\dfrac{1}{r}'} - {'\dfrac{1}{r+3}'}\right)$. Three terms survive
 the telescoping.
 
 </details>
@@ -544,7 +544,7 @@ the telescoping.
 $$\frac{1}{3}\sum_{r=1}^{n}\left(\frac{1}{r} - \frac{1}{r+3}\right) = \frac{1}{3}\left[\left(1 - \frac{1}{4}\right) + \left(\frac{1}{2} - \frac{1}{5}\right) + \left(\frac{1}{3} - \frac{1}{6}\right) + \cdots + \left(\frac{1}{n} - \frac{1}{n+3}\right)\right]$$
 
 The surviving terms are
-$\dfrac{1}{1} + \dfrac{1}{2} + \dfrac{1}{3} - \dfrac{1}{n+1} - \dfrac{1}{n+2} - \dfrac{1}{n+3}$.
+${'\dfrac{1}{1}'} + {'\dfrac{1}{2}'} + {'\dfrac{1}{3}'} - {'\dfrac{1}{n+1}'} - {'\dfrac{1}{n+2}'} - {'\dfrac{1}{n+3}'}$.
 
 $$= \frac{1}{3}\left(\frac{11}{6} - \frac{1}{n+1} - \frac{1}{n+2} - \frac{1}{n+3}\right) = \frac{11}{18} - \frac{1}{3}\!\left(\frac{1}{n+1} + \frac{1}{n+2} + \frac{1}{n+3}\right)$$
 
@@ -560,7 +560,7 @@ $\alpha\beta = 2$, find $a$ and $b$.
 <details>
 <summary>Hint</summary>
 
-Use $\sum\alpha = -\dfrac{a}{1}$ and $\sum\alpha\beta = \dfrac{b}{1}$.
+Use $\sum\alpha = -{'\dfrac{a}{1}'}$ and $\sum\alpha\beta = {'\dfrac{b}{1}'}$.
 
 </details>
 
@@ -584,7 +584,7 @@ $a = 2$ and $b$ depends on $\gamma\delta$ (which requires further information to
 <hr />
 
 **Problem 8.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r(r+1) = \frac{n(n+1)(n+2)}{3}$
-for all $n \in \mathbb{'\{'}Z{'\}'}^+$.
+for all $n \in \mathbb\{Z{'\}'}^+$.
 
 <details>
 <summary>Hint</summary>
@@ -596,7 +596,7 @@ Base case: $n = 1$. Inductive step: assume for $n = k$ and add the $(k+1)$-th te
 <details>
 <summary>Answer</summary>
 
-_Base case ($n = 1$):_ $1 \times 2 = 2 = \dfrac{1 \times 2 \times 3}{3} = 2$. ✓
+_Base case ($n = 1$):_ $1 \times 2 = 2 = {'{'\dfrac{1 \times 2 \times 3}{3}'}'} = 2$. ✓
 
 _Inductive step._ Assume $\displaystyle\sum_{r=1}^{k} r(r+1) = \frac{k(k+1)(k+2)}{3}$. Then:
 
@@ -610,12 +610,12 @@ $$= \frac{(k+1)(k+2)[k + 3]}{3} = \frac{(k+1)(k+2)(k+3)}{3}$$
 
 <hr />
 
-**Problem 9.** Express $\dfrac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2}$ in partial fractions.
+**Problem 9.** Express ${'\dfrac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2}'}$ in partial fractions.
 
 <details>
 <summary>Hint</summary>
 
-Use the form $\dfrac{Ax + B}{x^2 + 2x + 3} + \dfrac{Cx + D}{(x^2 + 2x + 3)^2}$.
+Use the form ${'\dfrac{Ax + B}{x^2 + 2x + 3}'} + {'\dfrac{Cx + D}{(x^2 + 2x + 3)^2}'}$.
 
 </details>
 
@@ -678,17 +678,17 @@ Verification: $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$. ✓
 
 **Problem.** Find the coefficient of $x^4$ in the expansion of $(1 - 2x)^{-1/2}$ up to and including the term in $x^4$.
 
-**Solution.** Using the general binomial expansion for $|x| < \dfrac{1}{2}$:
+**Solution.** Using the general binomial expansion for $|x| < {'\dfrac{1}{2}'}$:
 
 $$(1+y)^n = 1 + ny + \frac{n(n-1)}{2!}y^2 + \frac{n(n-1)(n-2)}{3!}y^3 + \frac{n(n-1)(n-2)(n-3)}{4!}y^4 + \cdots$$
 
-With $n = -\dfrac{1}{2}$ and $y = -2x$:
+With $n = -{'\dfrac{1}{2}'}$ and $y = -2x$:
 
 $$(1-2x)^{-1/2} = 1 + \left(-\frac{1}{2}\right)(-2x) + \frac{\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)}{2}(-2x)^2 + \cdots$$
 
 $$= 1 + x + \frac{3}{8}(4x^2) + \cdots = 1 + x + \frac{3}{2}x^2 + \cdots$$
 
-The $x^4$ coefficient: $\dfrac{\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)\left(-\frac{5}{2}\right)\left(-\frac{7}{2}\right)}{24}(16) = \dfrac{105}{16} \cdot \dfrac{16}{24} = \dfrac{105}{24} = \boxed{\dfrac{35}{8}}$.
+The $x^4$ coefficient: ${'{'\dfrac{\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)\left(-\frac{5}{2}\right)\left(-\frac{7}{2}\right)}{24}'}'}(16) = {'\dfrac{105}{16}'} \cdot {'\dfrac{16}{24}'} = {'\dfrac{105}{24}'} = \boxed{{'\dfrac{35}{8}'}}$.
 
 ### Example 8.2: Roots of a cubic with a substitution
 
@@ -702,7 +702,7 @@ $$\alpha^2 + \beta^2 + \gamma^2 = (\alpha+\beta+\gamma)^2 - 2(\alpha\beta+\beta\
 
 **Problem.** Find $\displaystyle\sum_{r=1}^{n} \frac{1}{r(r+1)}$ and deduce $\displaystyle\sum_{r=1}^{\infty} \frac{1}{r(r+1)}$.
 
-**Solution.** $\dfrac{1}{r(r+1)} = \dfrac{1}{r} - \dfrac{1}{r+1}$.
+**Solution.** ${'\dfrac{1}{r(r+1)}'} = {'\dfrac{1}{r}'} - {'\dfrac{1}{r+1}'}$.
 
 $$\sum_{r=1}^{n} \frac{1}{r(r+1)} = \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \cdots + \left(\frac{1}{n} - \frac{1}{n+1}\right) = 1 - \frac{1}{n+1} = \frac{n}{n+1}$$
 
@@ -712,7 +712,7 @@ As $n \to \infty$: $\displaystyle\sum_{r=1}^{\infty} \frac{1}{r(r+1)} = \boxed{1
 
 **Problem.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-**Solution.** **Base case** ($n=1$): LHS $= 1$, RHS $= \dfrac{1 \cdot 2 \cdot 3}{6} = 1$. ✓
+**Solution.** **Base case** ($n=1$): LHS $= 1$, RHS $= {'{'\dfrac{1 \cdot 2 \cdot 3}{6}'}'} = 1$. ✓
 
 **Inductive hypothesis:** Assume $\displaystyle\sum_{r=1}^{k} r^2 = \frac{k(k+1)(2k+1)}{6}$.
 
@@ -728,7 +728,7 @@ This is the required form with $n = k+1$. $\blacksquare$
 
 **Problem.** Find $\displaystyle\sum_{r=1}^{n} \frac{1}{(2r-1)(2r+1)}$.
 
-**Solution.** $\dfrac{1}{(2r-1)(2r+1)} = \dfrac{1}{2}\!\left(\dfrac{1}{2r-1} - \dfrac{1}{2r+1}\right)$.
+**Solution.** ${'\dfrac{1}{(2r-1)(2r+1)}'} = {'\dfrac{1}{2}'}\!\left({'\dfrac{1}{2r-1}'} - {'\dfrac{1}{2r+1}'}\right)$.
 
 $$\sum_{r=1}^{n} \frac{1}{(2r-1)(2r+1)} = \frac{1}{2}\left[\left(\frac{1}{1} - \frac{1}{3}\right) + \left(\frac{1}{3} - \frac{1}{5}\right) + \cdots + \left(\frac{1}{2n-1} - \frac{1}{2n+1}\right)\right]$$
 
@@ -736,13 +736,13 @@ $$= \frac{1}{2}\left(1 - \frac{1}{2n+1}\right) = \boxed{\frac{n}{2n+1}}$$
 
 ### Example 8.6: Manipulating series with a given recurrence
 
-**Problem.** Given $u_1 = 1$ and $u_{n+1} = \dfrac{u_n}{u_n + 1}$, find $\displaystyle\sum_{r=1}^{n} u_r$.
+**Problem.** Given $u_1 = 1$ and $u_{n+1} = {'\dfrac{u_n}{u_n + 1}'}$, find $\displaystyle\sum_{r=1}^{n} u_r$.
 
-**Solution.** Write $u_r$ in closed form. From the recurrence: $\dfrac{1}{u_{n+1}} = \dfrac{u_n + 1}{u_n} = 1 + \dfrac{1}{u_n}$.
+**Solution.** Write $u_r$ in closed form. From the recurrence: ${'\dfrac{1}{u_{n+1}}'} = {'\dfrac{u_n + 1}{u_n}'} = 1 + {'\dfrac{1}{u_n}'}$.
 
-Let $v_n = \dfrac{1}{u_n}$. Then $v_{n+1} = 1 + v_n$, so $v_n = v_1 + (n-1)$.
+Let $v_n = {'\dfrac{1}{u_n}'}$. Then $v_{n+1} = 1 + v_n$, so $v_n = v_1 + (n-1)$.
 
-Since $v_1 = \dfrac{1}{u_1} = 1$: $v_n = n$, so $u_n = \dfrac{1}{n}$.
+Since $v_1 = {'\dfrac{1}{u_1}'} = 1$: $v_n = n$, so $u_n = {'\dfrac{1}{n}'}$.
 
 $$\sum_{r=1}^{n} u_r = \sum_{r=1}^{n} \frac{1}{r} = H_n$$
 
@@ -752,15 +752,15 @@ The $n$-th harmonic number. No simpler closed form exists.
 
 **Problem.** Solve the system $x + 2y - z = 3$, $2x - y + z = 4$, $3x + y + 2z = 7$.
 
-**Solution.** In matrix form $\mathbf{'\{'}M{'\}'}\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$:
+**Solution.** In matrix form $\mathbf\{M{'\}'}\mathbf\{x{'\}'} = \mathbf\{b{'\}'}$:
 
-$$\mathbf{'\{'}M{'\}'} = \begin{pmatrix}1&2&-1\\2&-1&1\\3&1&2\end{pmatrix}$$
+$$\mathbf\{M{'\}'} = \begin{pmatrix}1&2&-1\\2&-1&1\\3&1&2\end{pmatrix}$$
 
-$\det(\mathbf{'\{'}M{'\}'}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$, so the system has a unique solution.
+$\det(\mathbf\{M{'\}'}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$, so the system has a unique solution.
 
-Using Cramer's rule: $x = \dfrac{\det\begin{pmatrix}3&2&-1\\4&-1&1\\7&1&2\end{pmatrix}}{-6} = \dfrac{-6+16-11}{-6} = \dfrac{-1}{-6} = \dfrac{1}{6}$.
+Using Cramer's rule: $x = {'{'\dfrac{\det\begin{pmatrix}3&2&-1\\4&-1&1\\7&1&2\end{pmatrix}}{-6}'}'} = {'\dfrac{-6+16-11}{-6}'} = {'\dfrac{-1}{-6}'} = {'\dfrac{1}{6}'}$.
 
-Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
+Similarly: $y = {'\dfrac{5}{3}'}$ and $z = {'\dfrac{1}{6}'}$.
 
 ---
 
@@ -769,8 +769,8 @@ Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 | Pitfall | Correct Approach |
 |---|---|
 | Forgetting the condition $\|x\| < 1$ for binomial expansions | Always state the convergence condition explicitly |
-| Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = \dfrac{n^2(n+1)^2}{4}$; they happen to be equal but the reasoning is different |
-| Splitting partial fractions incorrectly for method of differences | Always check by recombining: $\dfrac{A}{r} + \dfrac{B}{r+1} = \dfrac{A(r+1) + Br}{r(r+1)}$ |
+| Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = {'\dfrac{n^2(n+1)^2}{4}'}$; they happen to be equal but the reasoning is different |
+| Splitting partial fractions incorrectly for method of differences | Always check by recombining: ${'\dfrac{A}{r}'} + {'\dfrac{B}{r+1}'} = {'\dfrac{A(r+1) + Br}{r(r+1)}'}$ |
 | Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
 | Skipping the base case in induction proofs | The base case is essential — without it the induction chain is unanchored |
 
@@ -785,7 +785,7 @@ The binomial expansion of $(1 + ax)^{-2}$, in ascending powers of $x$ up to and 
 <details>
 <summary>Solution</summary>
 
-$(1+ax)^{-2} = 1 + (-2)(ax) + \dfrac{(-2)(-3)}{2}(ax)^2 + \dfrac{(-2)(-3)(-4)}{6}(ax)^3 + \cdots$
+$(1+ax)^{-2} = 1 + (-2)(ax) + {'\dfrac{(-2)(-3)}{2}'}(ax)^2 + {'\dfrac{(-2)(-3)(-4)}{6}'}(ax)^3 + \cdots$
 
 $= 1 - 2ax + 3a^2x^2 - 4a^3x^3 + \cdots$
 
@@ -819,11 +819,11 @@ Find $\displaystyle\sum_{r=1}^{n} \frac{2}{r(r+2)}$.
 <details>
 <summary>Solution</summary>
 
-$\dfrac{2}{r(r+2)} = \dfrac{1}{r} - \dfrac{1}{r+2}$.
+${'\dfrac{2}{r(r+2)}'} = {'\dfrac{1}{r}'} - {'\dfrac{1}{r+2}'}$.
 
 $$\sum_{r=1}^{n} \frac{2}{r(r+2)} = \left(1 - \frac{1}{3}\right) + \left(\frac{1}{2} - \frac{1}{4}\right) + \left(\frac{1}{3} - \frac{1}{5}\right) + \cdots + \left(\frac{1}{n} - \frac{1}{n+2}\right)$$
 
-Terms $\dfrac{1}{3}$ to $\dfrac{1}{n}$ cancel, leaving:
+Terms ${'\dfrac{1}{3}'}$ to ${'\dfrac{1}{n}'}$ cancel, leaving:
 
 $$= 1 + \frac{1}{2} - \frac{1}{n+1} - \frac{1}{n+2} = \frac{3}{2} - \frac{2n+3}{(n+1)(n+2)} = \frac{3(n+1)(n+2) - 2(2n+3)}{2(n+1)(n+2)}$$
 
@@ -857,11 +857,11 @@ Use the Maclaurin expansion of $(1+x)^{1/2}$ to find $\sqrt{1.02}$ correct to 6 
 <details>
 <summary>Solution</summary>
 
-$(1+x)^{1/2} = 1 + \dfrac{1}{2}x - \dfrac{1}{8}x^2 + \dfrac{1}{16}x^3 - \dfrac{5}{128}x^4 + \cdots$
+$(1+x)^{1/2} = 1 + {'\dfrac{1}{2}'}x - {'\dfrac{1}{8}'}x^2 + {'\dfrac{1}{16}'}x^3 - {'\dfrac{5}{128}'}x^4 + \cdots$
 
 With $x = 0.02$:
 
-$\sqrt{1.02} = 1 + 0.01 - \dfrac{0.0004}{8} + \dfrac{0.000008}{16} - \dfrac{5(0.02)^4}{128} + \cdots$
+$\sqrt{1.02} = 1 + 0.01 - {'\dfrac{0.0004}{8}'} + {'\dfrac{0.000008}{16}'} - {'\dfrac{5(0.02)^4}{128}'} + \cdots$
 
 $= 1 + 0.01 - 0.00005 + 0.0000005 - 0.000000005 + \cdots = 1.009950495...$
 
@@ -892,12 +892,12 @@ The binomial expansion and Maclaurin series are both infinite series representat
 | Topic | Key Formula |
 |---|---|
 | General binomial | $(1+x)^n = \displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ for $\|x\| < 1$ |
-| Method of differences | Decompose $\dfrac{P(r)}{Q(r)}$ into partial fractions that telescope |
+| Method of differences | Decompose ${'\dfrac{P(r)}{Q(r)}'}$ into partial fractions that telescope |
 | Induction | Base case $\to$ assume $P(k)$ $\to$ prove $P(k+1)$ |
 | Vieta's (cubic) | $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
-| Sum of squares | $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$ |
-| Sum of cubes | $\displaystyle\sum_{r=1}^{n} r^3 = \dfrac{n^2(n+1)^2}{4}$ |
-| Harmonic sum | $H_n = \displaystyle\sum_{r=1}^{n} \dfrac{1}{r} \approx \ln n + \gamma$ |
+| Sum of squares | $\displaystyle\sum_{r=1}^{n} r^2 = {'\dfrac{n(n+1)(2n+1)}{6}'}$ |
+| Sum of cubes | $\displaystyle\sum_{r=1}^{n} r^3 = {'\dfrac{n^2(n+1)^2}{4}'}$ |
+| Harmonic sum | $H_n = \displaystyle\sum_{r=1}^{n} {'\dfrac{1}{r}'} \approx \ln n + \gamma$ |
 
 ---
 
@@ -928,18 +928,18 @@ For $k > 4$: $2k^3$ grows faster than $3k^2 + 3k + 1$, so the inequality holds. 
 
 ### Question 14
 
-Find the coefficient of $x^3$ in the expansion of $\dfrac{1}{(1-2x)(1+x)}$.
+Find the coefficient of $x^3$ in the expansion of ${'\dfrac{1}{(1-2x)(1+x)}'}$.
 
 <details>
 <summary>Solution</summary>
 
-Partial fractions: $\dfrac{1}{(1-2x)(1+x)} = \dfrac{A}{1-2x} + \dfrac{B}{1+x}$.
+Partial fractions: ${'\dfrac{1}{(1-2x)(1+x)}'} = {'\dfrac{A}{1-2x}'} + {'\dfrac{B}{1+x}'}$.
 
-$1 = A(1+x) + B(1-2x)$. $x=-1$: $1 = 3A \implies A = 1/3$. $x=1/2$: $1 = \dfrac{3B}{2} \implies B = 2/3$.
+$1 = A(1+x) + B(1-2x)$. $x=-1$: $1 = 3A \implies A = 1/3$. $x=1/2$: $1 = {'\dfrac{3B}{2}'} \implies B = 2/3$.
 
-$\dfrac{1}{3}\sum (2x)^n + \dfrac{2}{3}\sum (-x)^n$.
+${'\dfrac{1}{3}'}\sum (2x)^n + {'\dfrac{2}{3}'}\sum (-x)^n$.
 
-$x^3$ coefficient: $\dfrac{1}{3} \cdot 8 + \dfrac{2}{3}(-1) = \dfrac{8-2}{3} = \boxed{2}$.
+$x^3$ coefficient: ${'\dfrac{1}{3}'} \cdot 8 + {'\dfrac{2}{3}'}(-1) = {'\dfrac{8-2}{3}'} = \boxed{2}$.
 
 </details>
 
@@ -985,9 +985,9 @@ where $\Delta f(r) = f(r+1) - f(r)$ is the forward difference operator.
 A generating function for a sequence $\{a_n\}$ is $G(x) = \displaystyle\sum_{n=0}^{\infty} a_n x^n$.
 
 Examples:
-- $1, 1, 1, \ldots$: $G(x) = \dfrac{1}{1-x}$
-- $1, 2, 3, \ldots$: $G(x) = \dfrac{1}{(1-x)^2}$
-- $1, 3, 6, 10, \ldots$ (triangular): $G(x) = \dfrac{1}{(1-x)^3}$
+- $1, 1, 1, \ldots$: $G(x) = {'\dfrac{1}{1-x}'}$
+- $1, 2, 3, \ldots$: $G(x) = {'\dfrac{1}{(1-x)^2}'}$
+- $1, 3, 6, 10, \ldots$ (triangular): $G(x) = {'\dfrac{1}{(1-x)^3}'}$
 
 ### 14.4 Relationship between binomial coefficients and Pascal's triangle
 
@@ -1006,9 +1006,9 @@ Find $\displaystyle\sum_{r=1}^{n} r(r+1)(r+2)$.
 <details>
 <summary>Solution</summary>
 
-$r(r+1)(r+2) = \dfrac{1}{4}[r(r+1)(r+2)(r+3) - (r-1)r(r+1)(r+2)]$.
+$r(r+1)(r+2) = {'\dfrac{1}{4}'}[r(r+1)(r+2)(r+3) - (r-1)r(r+1)(r+2)]$.
 
-This telescopes: $\displaystyle\sum_{r=1}^{n} r(r+1)(r+2) = \dfrac{1}{4}n(n+1)(n+2)(n+3)$.
+This telescopes: $\displaystyle\sum_{r=1}^{n} r(r+1)(r+2) = {'\dfrac{1}{4}'}n(n+1)(n+2)(n+3)$.
 
 $\boxed{\displaystyle\sum_{r=1}^{n} r(r+1)(r+2) = \frac{n(n+1)(n+2)(n+3)}{4}}$
 
@@ -1038,8 +1038,8 @@ Since $\binom{n}{n-k} = \binom{n}{k}$, the identity follows. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-$\dfrac{1}{r(r+1)(r+2)} = \dfrac{1}{2}\!\left(\dfrac{1}{r(r+1)} - \dfrac{1}{(r+1)(r+2)}\right)$.
+${'\dfrac{1}{r(r+1)(r+2)}'} = {'\dfrac{1}{2}'}\!\left({'\dfrac{1}{r(r+1)}'} - {'\dfrac{1}{(r+1)(r+2)}'}\right)$.
 
-This telescopes: $\dfrac{1}{2}\!\left(\dfrac{1}{2} - \dfrac{1}{(n+1)(n+2)}\right) = \dfrac{(n+1)(n+2)-2}{4(n+1)(n+2)} = \dfrac{n^2+3n}{4(n+1)(n+2)} = \dfrac{n(n+3)}{4(n+1)(n+2)}$. $\blacksquare$
+This telescopes: ${'\dfrac{1}{2}'}\!\left({'\dfrac{1}{2}'} - {'\dfrac{1}{(n+1)(n+2)}'}\right) = {'\dfrac{(n+1)(n+2)-2}{4(n+1)(n+2)}'} = {'\dfrac{n^2+3n}{4(n+1)(n+2)}'} = {'\dfrac{n(n+3)}{4(n+1)(n+2)}'}$. $\blacksquare$
 
 </details>

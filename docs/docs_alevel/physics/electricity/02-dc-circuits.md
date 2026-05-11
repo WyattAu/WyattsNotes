@@ -44,17 +44,17 @@ $\square$
 
 **Definition.** Kirchhoff's second law states that the algebraic sum of potential differences around
 any closed loop in an electrical circuit is zero, reflecting the conservation of energy:
-$\sum \mathcal{'\{'}E{'\}'} = \sum V$.
+$\sum \mathcal\{E{'\}'} = \sum V$.
 
 **The sum of e.m.f.s around any closed loop equals the sum of p.d.s around that loop.**
 
-$$\sum \mathcal{'\{'}E{'\}'} = \sum V$$
+$$\sum \mathcal\{E{'\}'} = \sum V$$
 
 **Derivation from energy conservation.** As a unit charge moves around a closed loop, the total
 energy gained from sources must equal the total energy lost to components. Otherwise, energy would
 be created or destroyed:
 
-$$\frac{W_{\mathrm{gained}}}{Q} = \frac{W_{\mathrm{lost}}}{Q} \implies \sum \mathcal{'\{'}E{'\}'} = \sum IR$$
+$$\frac{W_{\mathrm{gained}}}{Q} = \frac{W_{\mathrm{lost}}}{Q} \implies \sum \mathcal\{E{'\}'} = \sum IR$$
 
 $\square$
 
@@ -152,31 +152,31 @@ potential difference below the e.m.f.
 
 **Definition.** Terminal potential difference $V$ is the potential difference across the terminals
 of a power source when it is delivering current, equal to the e.m.f. minus the potential difference
-across the internal resistance: $V = \mathcal{'\{'}E{'\}'} - Ir$.
+across the internal resistance: $V = \mathcal\{E{'\}'} - Ir$.
 
 Real power sources have **internal resistance** $r$, which causes the terminal p.d. to drop as
 current increases.
 
-### Derivation of $V = \mathcal{'\{'}E{'\}'} - Ir$
+### Derivation of $V = \mathcal\{E{'\}'} - Ir$
 
-Consider a cell of e.m.f. $\mathcal{'\{'}E{'\}'}$ and internal resistance $r$ connected to an external circuit
+Consider a cell of e.m.f. $\mathcal\{E{'\}'}$ and internal resistance $r$ connected to an external circuit
 of resistance $R$. The total resistance in the circuit is $R + r$.
 
-$$I = \frac{\mathcal{'\{'}E{'\}'}}{R + r}$$
+$$I = \frac{\mathcal\{E{'\}'}}{R + r}$$
 
 The terminal p.d. (voltage across the external circuit) is:
 
-$$V = IR = \frac{\mathcal{'\{'}E{'\}'}R}{R + r} = \mathcal{'\{'}E{'\}'}\left(\frac{R}{R+r}\right)$$
+$$V = IR = \frac{\mathcal\{E{'\}'}R}{R + r} = \mathcal\{E{'\}'}\left(\frac{R}{R+r}\right)$$
 
 Alternatively, by Kirchhoff's second law around the full circuit:
 
-$$\mathcal{'\{'}E{'\}'} = V + Ir \implies \boxed{V = \mathcal{'\{'}E{'\}'} - Ir}$$
+$$\mathcal\{E{'\}'} = V + Ir \implies \boxed{V = \mathcal\{E{'\}'} - Ir}$$
 
 The "lost volts" is $Ir$ — the p.d. across the internal resistance.
 
 **Maximum power transfer.** The power delivered to the load is:
 
-$$P = I^2R = \frac{\mathcal{'\{'}E{'\}'}^2 R}{(R+r)^2}$$
+$$P = I^2R = \frac{\mathcal\{E{'\}'}^2 R}{(R+r)^2}$$
 
 Differentiating with respect to $R$ and setting $dP/dR = 0$ gives $R = r$. Maximum power is
 delivered when the load resistance equals the internal resistance.
@@ -186,9 +186,9 @@ delivered when the load resistance equals the internal resistance.
 **Method 1: Vary the load.** Measure $V$ and $I$ for several different values of $R$. Plot $V$
 against $I$.
 
-$$V = \mathcal{'\{'}E{'\}'} - Ir$$
+$$V = \mathcal\{E{'\}'} - Ir$$
 
-This is a straight line with gradient $= -r$ and $y$-intercept $= \mathcal{'\{'}E{'\}'}$.
+This is a straight line with gradient $= -r$ and $y$-intercept $= \mathcal\{E{'\}'}$.
 
 **Method 2: Direct calculation.** With two measurements $(V_1, I_1)$ and $(V_2, I_2)$:
 
@@ -477,9 +477,9 @@ A cell of e.m.f. 12 V and internal resistance 0.50 $\Omega$ is connected to a 5.
 resistor. Calculate: (a) the current, (b) the terminal p.d., (c) the power dissipated in the
 external resistor.
 
-**Answer.** (a) $I = \frac{\mathcal{'\{'}E{'\}'}}{R + r} = \frac{12}{5.5 + 0.5} = \frac{12}{6.0} = 2.0$ A.
+**Answer.** (a) $I = \frac{\mathcal\{E{'\}'}}{R + r} = \frac{12}{5.5 + 0.5} = \frac{12}{6.0} = 2.0$ A.
 
-(b) $V = \mathcal{'\{'}E{'\}'} - Ir = 12 - 2.0 \times 0.50 = 11$ V.
+(b) $V = \mathcal\{E{'\}'} - Ir = 12 - 2.0 \times 0.50 = 11$ V.
 
 (c) $P = I^2R = 4.0 \times 5.5 = 22$ W.
 
@@ -531,15 +531,15 @@ This means the 12 V battery is driving current through the 6 V battery (charging
 <details>
 <summary>Problem 5</summary>
 A battery with unknown e.m.f. and internal resistance is connected to a variable resistor. When
-$R = 4.0\,\Omega$, $I = 1.5$ A. When $R = 9.0\,\Omega$, $I = 0.80$ A. Find $\mathcal{'\{'}E{'\}'}$ and $r$.
+$R = 4.0\,\Omega$, $I = 1.5$ A. When $R = 9.0\,\Omega$, $I = 0.80$ A. Find $\mathcal\{E{'\}'}$ and $r$.
 
-**Answer.** $\mathcal{'\{'}E{'\}'} = I_1(R_1 + r) = 1.5(4.0 + r) = 6.0 + 1.5r$ ... (i).
+**Answer.** $\mathcal\{E{'\}'} = I_1(R_1 + r) = 1.5(4.0 + r) = 6.0 + 1.5r$ ... (i).
 
-$\mathcal{'\{'}E{'\}'} = I_2(R_2 + r) = 0.80(9.0 + r) = 7.2 + 0.80r$ ... (ii).
+$\mathcal\{E{'\}'} = I_2(R_2 + r) = 0.80(9.0 + r) = 7.2 + 0.80r$ ... (ii).
 
 $6.0 + 1.5r = 7.2 + 0.80r \implies 0.70r = 1.2 \implies r = 1.71\,\Omega$.
 
-$\mathcal{'\{'}E{'\}'} = 6.0 + 1.5(1.71) = 6.0 + 2.57 = 8.57$ V $\approx 8.6$ V.
+$\mathcal\{E{'\}'} = 6.0 + 1.5(1.71) = 6.0 + 2.57 = 8.57$ V $\approx 8.6$ V.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
 
@@ -644,19 +644,19 @@ $V_{\mathrm{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{105
 
 <details>
 <summary>Problem 12</summary>
-A cell of e.m.f. $\mathcal{'\{'}E{'\}'}$ and internal resistance $r$ delivers maximum power to an external
+A cell of e.m.f. $\mathcal\{E{'\}'}$ and internal resistance $r$ delivers maximum power to an external
 load. Prove that maximum power is delivered when $R = r$, and find the efficiency at this condition.
 
-**Answer.** $P = \left(\frac{\mathcal{'\{'}E{'\}'}}{R+r}\right)^2 R = \frac{\mathcal{'\{'}E{'\}'}^2 R}{(R+r)^2}$.
+**Answer.** $P = \left(\frac{\mathcal\{E{'\}'}}{R+r}\right)^2 R = \frac{\mathcal\{E{'\}'}^2 R}{(R+r)^2}$.
 
-$\frac{dP}{dR} = \mathcal{'\{'}E{'\}'}^2 \cdot \frac{(R+r)^2 - 2R(R+r)}{(R+r)^4} = \mathcal{'\{'}E{'\}'}^2 \cdot \frac{r - R}{(R+r)^3}$.
+$\frac{dP}{dR} = \mathcal\{E{'\}'}^2 \cdot \frac{(R+r)^2 - 2R(R+r)}{(R+r)^4} = \mathcal\{E{'\}'}^2 \cdot \frac{r - R}{(R+r)^3}$.
 
 Setting $\frac{dP}{dR} = 0$: $R = r$. (This is a maximum since $dP/dR > 0$ for $R < r$ and $< 0$ for
 $R > r$.)
 
-At $R = r$: $I = \mathcal{'\{'}E{'\}'}/(2r)$. Power to load:
-$P = (\mathcal{'\{'}E{'\}'}/2r)^2 \cdot r = \mathcal{'\{'}E{'\}'}^2/(4r)$. Total power from cell:
-$\mathcal{'\{'}E{'\}'} \cdot \mathcal{'\{'}E{'\}'}/(2r) = \mathcal{'\{'}E{'\}'}^2/(2r)$. Efficiency
+At $R = r$: $I = \mathcal\{E{'\}'}/(2r)$. Power to load:
+$P = (\mathcal\{E{'\}'}/2r)^2 \cdot r = \mathcal\{E{'\}'}^2/(4r)$. Total power from cell:
+$\mathcal\{E{'\}'} \cdot \mathcal\{E{'\}'}/(2r) = \mathcal\{E{'\}'}^2/(2r)$. Efficiency
 $= P_{\mathrm{load}}/P_{\mathrm{total}} = 1/2 = 50\%$.
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)

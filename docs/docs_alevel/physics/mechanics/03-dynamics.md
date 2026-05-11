@@ -40,11 +40,11 @@ Aristotle believed that force was necessary to _maintain_ motion.
 > **The rate of change of momentum of a body is directly proportional to the net external force
 > acting on it, and takes place in the direction of that force.**
 
-$$\mathbf{'\{'}F{'\}'}_{\mathrm{net}} = \frac{d\mathbf{'\{'}p{'\}'}}{dt} = \frac{d(m\mathbf{'\{'}v{'\}'})}{dt}$$
+$$\mathbf\{F{'\}'}_{\mathrm{net}} = \frac{d\mathbf\{p{'\}'}}{dt} = \frac{d(m\mathbf\{v{'\}'})}{dt}$$
 
 For constant mass:
 
-$$\boxed{\mathbf{'\{'}F{'\}'}_{\mathrm{net}} = m\mathbf{'\{'}a{'\}'}}$$
+$$\boxed{\mathbf\{F{'\}'}_{\mathrm{net}} = m\mathbf\{a{'\}'}}$$
 
 This is the most important equation in mechanics. It states that force, mass, and acceleration are
 related by a simple proportionality.
@@ -56,7 +56,7 @@ $1 \mathrm{ N} = 1 \mathrm{ kg m s}^{-2}$.
 
 > **If body A exerts a force on body B, then body B exerts an equal and opposite force on body A.**
 
-$$\mathbf{'\{'}F{'\}'}_{AB} = -\mathbf{'\{'}F{'\}'}_{BA}$$
+$$\mathbf\{F{'\}'}_{AB} = -\mathbf\{F{'\}'}_{BA}$$
 
 :::warning
 warning
@@ -483,12 +483,12 @@ m$^{-2}$.
 
 <details>
 <summary>Problem 6</summary>
-Two forces, $\mathbf{'\{'}F{'\}'}_1 = (3\mathbf{'\{'}i{'\}'} + 4\mathbf{'\{'}j{'\}'})$ N and $\mathbf{'\{'}F{'\}'}_2 = (-\mathbf{'\{'}i{'\}'} + 2\mathbf{'\{'}j{'\}'})$ N, act on a body of mass $2.0$ kg. Find the magnitude and direction of the acceleration.
+Two forces, $\mathbf\{F{'\}'}_1 = (3\mathbf\{i{'\}'} + 4\mathbf\{j{'\}'})$ N and $\mathbf\{F{'\}'}_2 = (-\mathbf\{i{'\}'} + 2\mathbf\{j{'\}'})$ N, act on a body of mass $2.0$ kg. Find the magnitude and direction of the acceleration.
 
 **Answer.**
-$\mathbf{'\{'}F{'\}'}_{\mathrm{net}} = (3-1)\mathbf{'\{'}i{'\}'} + (4+2)\mathbf{'\{'}j{'\}'} = (2\mathbf{'\{'}i{'\}'} + 6\mathbf{'\{'}j{'\}'})$ N.
-$\mathbf{'\{'}a{'\}'} = \frac{1}{2}(2\mathbf{'\{'}i{'\}'} + 6\mathbf{'\{'}j{'\}'}) = (1\mathbf{'\{'}i{'\}'} + 3\mathbf{'\{'}j{'\}'})$ m s$^{-2}$.
-$|\mathbf{'\{'}a{'\}'}| = \sqrt{1 + 9} = \sqrt{10} = 3.16$ m s$^{-2}$. Direction:
+$\mathbf\{F{'\}'}_{\mathrm{net}} = (3-1)\mathbf\{i{'\}'} + (4+2)\mathbf\{j{'\}'} = (2\mathbf\{i{'\}'} + 6\mathbf\{j{'\}'})$ N.
+$\mathbf\{a{'\}'} = \frac{1}{2}(2\mathbf\{i{'\}'} + 6\mathbf\{j{'\}'}) = (1\mathbf\{i{'\}'} + 3\mathbf\{j{'\}'})$ m s$^{-2}$.
+$|\mathbf\{a{'\}'}| = \sqrt{1 + 9} = \sqrt{10} = 3.16$ m s$^{-2}$. Direction:
 $\theta = \arctan(3/1) = 71.6^\circ$ from the $x$-axis.
 
 <b>If you get this wrong, revise:</b>

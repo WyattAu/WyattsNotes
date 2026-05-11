@@ -214,7 +214,7 @@ $$y = v\sin\theta \cdot t - \frac{1}{2}gt^2, \quad v_y = v\sin\theta - gt$$
 
 ### 4.4 Derivation of the trajectory equation
 
-From horizontal: $t = \dfrac{x}{v\cos\theta}$.
+From horizontal: $t = {'{'\dfrac{x}{v\cos\theta}'}'}$.
 
 Substitute into vertical:
 
@@ -235,7 +235,7 @@ $$H_{\max} = \frac{(v\sin\theta)^2}{2g}$$
 
 ### 4.6 Range
 
-Time of flight: $y = 0 \implies t = \dfrac{2v\sin\theta}{g}$.
+Time of flight: $y = 0 \implies t = {'{'\dfrac{2v\sin\theta}{g}'}'}$.
 
 $$R = v\cos\theta \cdot \frac{2v\sin\theta}{g} = \frac{v^2\sin 2\theta}{g}$$
 
@@ -247,18 +247,18 @@ $$R_{\max} = \frac{v^2}{g}$$
 
 At any time $t$, the velocity vector is:
 
-$$\mathbf{'\{'}v{'\}'} = \begin{pmatrix} v\cos\theta \\ v\sin\theta - gt \end{pmatrix}$$
+$$\mathbf\{v{'\}'} = \begin{pmatrix} v\cos\theta \\ v\sin\theta - gt \end{pmatrix}$$
 
 The speed at time $t$ is:
 
-$$|\mathbf{'\{'}v{'\}'}| = \sqrt{(v\cos\theta)^2 + (v\sin\theta - gt)^2} = \sqrt{v^2 - 2vgt\sin\theta + g^2t^2}$$
+$$|\mathbf\{v{'\}'}| = \sqrt{(v\cos\theta)^2 + (v\sin\theta - gt)^2} = \sqrt{v^2 - 2vgt\sin\theta + g^2t^2}$$
 
 The angle the velocity makes with the horizontal at time $t$ is:
 
 $$\alpha = \arctan\left(\frac{v\sin\theta - gt}{v\cos\theta}\right)$$
 
 At the highest point ($t = v\sin\theta / g$), the velocity is purely horizontal:
-$\mathbf{'\{'}v{'\}'} = (v\cos\theta,\, 0)$. The speed at the highest point equals the horizontal component
+$\mathbf\{v{'\}'} = (v\cos\theta,\, 0)$. The speed at the highest point equals the horizontal component
 $v\cos\theta$.
 
 On landing ($t = 2v\sin\theta / g$), the vertical component is $-v\sin\theta$, so the speed equals
@@ -333,7 +333,7 @@ Sometimes acceleration is given as a function of $s$ or $v$, not $t$.
 
 **Case 1:** $a = f(v)$.
 
-Use the chain rule: $a = \dfrac{dv}{dt} = \dfrac{dv}{ds} \cdot \dfrac{ds}{dt} = v\dfrac{dv}{ds}$.
+Use the chain rule: $a = {'\dfrac{dv}{dt}'} = {'\dfrac{dv}{ds}'} \cdot {'\dfrac{ds}{dt}'} = v{'\dfrac{dv}{ds}'}$.
 
 This gives a separable differential equation:
 
@@ -437,9 +437,9 @@ A projectile is launched at $30\,\mathrm{m/s}$ at an angle of $40^\circ$ above t
 <summary>Solution 3</summary>
 $v_x = 30\cos 40° \approx 22.98\,\mathrm{m/s}$, $v_y = 30\sin 40° \approx 19.28\,\mathrm{m/s}$.
 
-$H_{\max} = \dfrac{(19.28)^2}{2(9.8)} = \dfrac{371.72}{19.6} \approx 18.97\,\mathrm{m}$.
+$H_{\max} = {'\dfrac{(19.28)^2}{2(9.8)}'} = {'\dfrac{371.72}{19.6}'} \approx 18.97\,\mathrm{m}$.
 
-$R = \dfrac{30^2 \sin 80°}{9.8} = \dfrac{900 \times 0.9848}{9.8} \approx 90.44\,\mathrm{m}$.
+$R = {'{'\dfrac{30^2 \sin 80°}{9.8}'}'} = {'{'\dfrac{900 \times 0.9848}{9.8}'}'} \approx 90.44\,\mathrm{m}$.
 
 **If you get this wrong, revise:** [Projectiles](#4-projectiles) — Section 4.
 
@@ -482,9 +482,9 @@ Show that the maximum range of a projectile on level ground is achieved at $45^\
 
 <details>
 <summary>Solution 6</summary>
-$R = \dfrac{v^2 \sin 2\theta}{g}$. To maximise: $\dfrac{dR}{d\theta} = \dfrac{2v^2 \cos 2\theta}{g} = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45^\circ$.
+$R = {'{'\dfrac{v^2 \sin 2\theta}{g}'}'}$. To maximise: ${'{'\dfrac{dR}{d\theta}'}'} = {'{'\dfrac{2v^2 \cos 2\theta}{g}'}'} = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45^\circ$.
 
-$\dfrac{d^2R}{d\theta^2} = -\dfrac{4v^2 \sin 2\theta}{g} \lt{} 0$ at $\theta = 45^\circ$, confirming
+${'{'\dfrac{d^2R}{d\theta^2}'}'} = -{'{'\dfrac{4v^2 \sin 2\theta}{g}'}'} \lt{} 0$ at $\theta = 45^\circ$, confirming
 a maximum. $\blacksquare$
 
 **If you get this wrong, revise:** [Range](#46-range) — Section 4.6.
@@ -513,19 +513,19 @@ A particle is projected from a point $O$ on horizontal ground. It passes through
 
 <details>
 <summary>Solution 8</summary>
-Trajectory: $y = x\tan\theta - \dfrac{gx^2}{2v^2\cos^2\theta}$.
+Trajectory: $y = x\tan\theta - {'{'\dfrac{gx^2}{2v^2\cos^2\theta}'}'}$.
 
-$5 = 10\tan\theta - \dfrac{9.8(100)}{2(225)\cos^2\theta} = 10\tan\theta - \dfrac{980}{450\cos^2\theta}$.
+$5 = 10\tan\theta - {'{'\dfrac{9.8(100)}{2(225)\cos^2\theta}'}'} = 10\tan\theta - {'{'\dfrac{980}{450\cos^2\theta}'}'}$.
 
 Using $\sec^2\theta = 1 + \tan^2\theta$:
 
-$5 = 10\tan\theta - \dfrac{980}{450}(1+\tan^2\theta)$.
+$5 = 10\tan\theta - {'\dfrac{980}{450}'}(1+\tan^2\theta)$.
 
-Let $u = \tan\theta$: $5 = 10u - \dfrac{98}{45}(1+u^2) = 10u - \dfrac{98}{45} - \dfrac{98}{45}u^2$.
+Let $u = \tan\theta$: $5 = 10u - {'\dfrac{98}{45}'}(1+u^2) = 10u - {'\dfrac{98}{45}'} - {'\dfrac{98}{45}'}u^2$.
 
 $225 = 450u - 98 - 98u^2 \implies 98u^2 - 450u + 323 = 0$.
 
-$u = \dfrac{450 \pm \sqrt{202500 - 126604}}{196} = \dfrac{450 \pm \sqrt{75896}}{98} = \dfrac{450 \pm 275.5}{196}$.
+$u = {'{'\dfrac{450 \pm \sqrt{202500 - 126604}}{196}'}'} = {'{'\dfrac{450 \pm \sqrt{75896}}{98}'}'} = {'{'\dfrac{450 \pm 275.5}{196}'}'}$.
 
 $u \approx 3.702$ or $u \approx 0.890$.
 
@@ -596,13 +596,13 @@ A projectile is launched from ground level and just clears a wall $20\,\mathrm{m
 
 <details>
 <summary>Solution 12</summary>
-$y = x\tan\theta - \dfrac{gx^2}{2v^2\cos^2\theta}$.
+$y = x\tan\theta - {'{'\dfrac{gx^2}{2v^2\cos^2\theta}'}'}$.
 
-$20 = 40\tan 50° - \dfrac{9.8 \times 1600}{2v^2\cos^2 50°}$.
+$20 = 40\tan 50° - {'{'\dfrac{9.8 \times 1600}{2v^2\cos^2 50°}'}'}$.
 
-$20 = 40(1.1918) - \dfrac{15680}{2v^2(0.4132)} = 47.67 - \dfrac{15680}{0.8263v^2} = 47.67 - \dfrac{18976.9}{v^2}$.
+$20 = 40(1.1918) - {'\dfrac{15680}{2v^2(0.4132)}'} = 47.67 - {'\dfrac{15680}{0.8263v^2}'} = 47.67 - {'\dfrac{18976.9}{v^2}'}$.
 
-$\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\mathrm{m/s}$.
+${'\dfrac{18976.9}{v^2}'} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Trajectory Equation](#44-derivation-of-the-trajectory-equation)
 — Section 4.4.
@@ -649,7 +649,7 @@ Horizontal distance: $x = 20 \times 3.50 = 70.0\,\mathrm{m}$.
 Vertical velocity on impact: $v_y = gt = 9.8 \times 3.50 = 34.3\,\mathrm{m/s}$.
 
 Speed:
-$|\mathbf{'\{'}v{'\}'}| = \sqrt{20^2 + 34.3^2} = \sqrt{400 + 1176.49} = \sqrt{1576.49} \approx 39.7\,\mathrm{m/s}$.
+$|\mathbf\{v{'\}'}| = \sqrt{20^2 + 34.3^2} = \sqrt{400 + 1176.49} = \sqrt{1576.49} \approx 39.7\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:**
 [Projectiles from a Height](#49-projectiles-launched-from-a-height) — Section 4.9.
@@ -706,7 +706,7 @@ $s_y = v_{y0}\,t - \tfrac{1}{2}gt^2 = 2$. On hitting ground: $s_y = 0$ (relative
 
 $0 = 2 + 10.39t - 4.9t^2 \implies 4.9t^2 - 10.39t - 2 = 0$.
 
-$t = \dfrac{10.39 + \sqrt{107.95 + 39.2}}{9.8} = \dfrac{10.39 + \sqrt{147.15}}{9.8} = \dfrac{10.39 + 12.13}{9.8} \approx 2.29\,\mathrm{s}$.
+$t = {'{'\dfrac{10.39 + \sqrt{107.95 + 39.2}}{9.8}'}'} = {'{'\dfrac{10.39 + \sqrt{147.15}}{9.8}'}'} = {'\dfrac{10.39 + 12.13}{9.8}'} \approx 2.29\,\mathrm{s}$.
 
 Vertical velocity at impact: $v_y = 10.39 - 9.8(2.29) = 10.39 - 22.44 = -12.05\,\mathrm{m/s}$.
 
@@ -757,12 +757,12 @@ A particle $P$ is projected from a point $A$ on horizontal ground with speed $u$
 
 <details>
 <summary>Solution 18</summary>
-Highest point of $P$'s trajectory: $x = \dfrac{u^2\sin 2\theta}{2g}$, $y = \dfrac{u^2\sin^2\theta}{2g}$, at time
-$t_1 = \dfrac{u\sin\theta}{g}$.
+Highest point of $P$'s trajectory: $x = {'{'\dfrac{u^2\sin 2\theta}{2g}'}'}$, $y = {'{'\dfrac{u^2\sin^2\theta}{2g}'}'}$, at time
+$t_1 = {'{'\dfrac{u\sin\theta}{g}'}'}$.
 
 After $t_1$, $P$ is in free fall with $v_y = 0$ at $t_1$, so for $t \geq t_1$:
 
-$y_P = \dfrac{u^2\sin^2\theta}{2g} - \dfrac{1}{2}g(t - t_1)^2$.
+$y_P = {'{'\dfrac{u^2\sin^2\theta}{2g}'}'} - {'\dfrac{1}{2}'}g(t - t_1)^2$.
 
 $x_P = u\cos\theta \cdot t$.
 

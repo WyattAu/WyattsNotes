@@ -44,13 +44,13 @@ $$
 
 The Lagrangian is:
 
-$$\mathcal{'\{'}L{'\}'} = U(x, y) + \lambda(M - P_x \cdot x - P_y \cdot y)$$
+$$\mathcal\{L{'\}'} = U(x, y) + \lambda(M - P_x \cdot x - P_y \cdot y)$$
 
 First-order conditions:
 
-$$\frac{\partial \mathcal{'\{'}L{'\}'}}{\partial x} = \frac{\partial U}{\partial x} - \lambda P_x = 0 \implies \frac{MU_x}{P_x} = \lambda$$
+$$\frac{\partial \mathcal\{L{'\}'}}{\partial x} = \frac{\partial U}{\partial x} - \lambda P_x = 0 \implies \frac{MU_x}{P_x} = \lambda$$
 
-$$\frac{\partial \mathcal{'\{'}L{'\}'}}{\partial y} = \frac{\partial U}{\partial y} - \lambda P_y = 0 \implies \frac{MU_y}{P_y} = \lambda$$
+$$\frac{\partial \mathcal\{L{'\}'}}{\partial y} = \frac{\partial U}{\partial y} - \lambda P_y = 0 \implies \frac{MU_y}{P_y} = \lambda$$
 
 Therefore:
 

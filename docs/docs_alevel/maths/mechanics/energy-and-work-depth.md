@@ -24,10 +24,10 @@ requires solving differential equations, an energy approach may give the answer 
 
 ### 1.1 Definition
 
-The **work done** by a constant force $\mathbf{'\{'}F{'\}'}$ acting on a body that undergoes a displacement
-$\mathbf{'\{'}s{'\}'}$ is:
+The **work done** by a constant force $\mathbf\{F{'\}'}$ acting on a body that undergoes a displacement
+$\mathbf\{s{'\}'}$ is:
 
-$$W = \mathbf{'\{'}F{'\}'} \cdot \mathbf{'\{'}s{'\}'} = Fs\cos\theta$$
+$$W = \mathbf\{F{'\}'} \cdot \mathbf\{s{'\}'} = Fs\cos\theta$$
 
 where $\theta$ is the angle between the force and the displacement.
 
@@ -58,9 +58,9 @@ $$W = mgh$$
 This is independent of the path taken (gravitational force is **conservative**).
 
 **Proof.** Consider a general path from height $h_1$ to height $h_2$. The gravitational force is
-$-mg\hat{\mathbf{'\{'}j{'\}'}}$. The work done by gravity is:
+$-mg\hat{\mathbf\{j{'\}'}}$. The work done by gravity is:
 
-$$W = \int \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}s{'\}'} = \int_{h_1}^{h_2} (-mg)\,dh = -mg(h_2 - h_1) = mgh_1 - mgh_2$$
+$$W = \int \mathbf\{F{'\}'} \cdot d\mathbf\{s{'\}'} = \int_{h_1}^{h_2} (-mg)\,dh = -mg(h_2 - h_1) = mgh_1 - mgh_2$$
 
 The work done **against** gravity is $mg(h_2 - h_1) = mgh$. $\blacksquare$
 
@@ -83,7 +83,7 @@ The **kinetic energy** of a body of mass $m$ moving with speed $v$ is:
 
 $$\boxed{\mathrm{KE} = \frac{1}{2}mv^2}$$
 
-**Derivation from Newton's second law.** Starting from $F = ma$ and using $a = \dfrac{dv}{dt}$:
+**Derivation from Newton's second law.** Starting from $F = ma$ and using $a = {'\dfrac{dv}{dt}'}$:
 
 $$F = m\frac{dv}{dt} = m\frac{dv}{ds}\frac{ds}{dt} = mv\frac{dv}{ds}$$
 
@@ -249,7 +249,7 @@ The SI unit of power is the watt ($\mathrm{W} = \mathrm{J\,s^{-1}}$).
 
 ### 6.2 Derivation of $P = Fv$
 
-$$P = \frac{dW}{dt} = \frac{d}{dt}(\mathbf{'\{'}F{'\}'} \cdot \mathbf{'\{'}s{'\}'}) = \mathbf{'\{'}F{'\}'} \cdot \frac{d\mathbf{'\{'}s{'\}'}}{dt} = \mathbf{'\{'}F{'\}'} \cdot \mathbf{'\{'}v{'\}'}$$
+$$P = \frac{dW}{dt} = \frac{d}{dt}(\mathbf\{F{'\}'} \cdot \mathbf\{s{'\}'}) = \mathbf\{F{'\}'} \cdot \frac{d\mathbf\{s{'\}'}}{dt} = \mathbf\{F{'\}'} \cdot \mathbf\{v{'\}'}$$
 
 For motion in one dimension: $P = Fv$. $\blacksquare$
 
@@ -267,7 +267,7 @@ $$40000 = 800v_{\max} \implies v_{\max} = 50\;\mathrm{m\,s^{-1}}$$
 
 **At $v = 15\;\mathrm{m\,s^{-1}}$:**
 
-Driving force: $F = \dfrac{P}{v} = \dfrac{40000}{15} \approx 2666.7\;\mathrm{N}$.
+Driving force: $F = {'\dfrac{P}{v}'} = {'\dfrac{40000}{15}'} \approx 2666.7\;\mathrm{N}$.
 
 $$F - R = ma$$
 
@@ -297,7 +297,7 @@ $$T = kx$$
 where $k$ is the **stiffness** (or spring constant) in $\mathrm{N\,m^{-1}}$ and $x$ is the extension
 in metres.
 
-Alternatively, $T = \dfrac{\lambda x}{l}$ where $\lambda$ is the **modulus of elasticity** and $l$
+Alternatively, $T = {'{'\dfrac{\lambda x}{l}'}'}$ where $\lambda$ is the **modulus of elasticity** and $l$
 is the natural length.
 
 ### 7.2 Elastic potential energy
@@ -459,7 +459,7 @@ the string first becomes slack; (b) the maximum height above the release point.
 <details>
 <summary>Solution</summary>
 
-(a) At the release point, extension $= 1.0\;\mathrm{m}$, so EPE $= \dfrac{80(1.0)^2}{2(1.5)} = 26.67\;\mathrm{J}$.
+(a) At the release point, extension $= 1.0\;\mathrm{m}$, so EPE $= {'\dfrac{80(1.0)^2}{2(1.5)}'} = 26.67\;\mathrm{J}$.
 GPE (taking release point as reference) $= 0$. KE $= 0$.
 
 When the string becomes slack, the particle is at the natural length position, i.e. $1.0\;\mathrm{m}$

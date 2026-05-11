@@ -637,14 +637,14 @@ diffraction. The laser is directed at a slit, and the diffraction pattern is obs
 <summary>Problem 9</summary>
 A student determines the internal resistance of a battery by plotting a graph of terminal potential
 difference $V$ against current $I$. The equation relating these quantities is
-$V = \mathcal{'\{'}E{'\}'} - Ir$, where $\mathcal{'\{'}E{'\}'}$ is the emf and $r$ is the internal resistance. The
+$V = \mathcal\{E{'\}'} - Ir$, where $\mathcal\{E{'\}'}$ is the emf and $r$ is the internal resistance. The
 student obtains a y-intercept of 1.48 V and a gradient of $-1.25 \Omega$. The accepted emf is 1.50
 V. Evaluate this result.
 
-**Answer.** The measured emf ($\mathcal{'\{'}E{'\}'} = 1.48$ V) is close to the accepted value (1.50 V),
+**Answer.** The measured emf ($\mathcal\{E{'\}'} = 1.48$ V) is close to the accepted value (1.50 V),
 giving a percentage difference of $(1.50 - 1.48)/1.50 \times 100 = 1.3\%$, which is within typical
 measurement uncertainty. The internal resistance $r = 1.25 \Omega$. The graph passes approximately
-through the origin (the x-intercept should be $\mathcal{'\{'}E{'\}'}/r = 1.50/1.25 = 1.20$ A). If the line
+through the origin (the x-intercept should be $\mathcal\{E{'\}'}/r = 1.50/1.25 = 1.20$ A). If the line
 does not pass through the origin on a $V$ vs $I$ plot this is expected (the y-intercept is the emf).
 To improve accuracy: use a more precise voltmeter, ensure the battery does not heat up (which would
 change $r$ during the experiment), and take readings quickly to minimise changes in the battery's

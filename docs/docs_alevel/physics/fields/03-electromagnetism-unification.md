@@ -28,28 +28,28 @@ among the most important equations in physics.
 
 ### Gauss's Law for Electricity
 
-$$\oint \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = \frac{Q_{\mathrm{enclosed}}}{\varepsilon_0}$$
+$$\oint \mathbf\{E{'\}'} \cdot d\mathbf\{A{'\}'} = \frac{Q_{\mathrm{enclosed}}}{\varepsilon_0}$$
 
 **Meaning.** The total electric flux through any closed surface equals the total charge enclosed,
 divided by $\varepsilon_0$. Electric charges are the sources (and sinks) of electric field lines.
 
 ### Gauss's Law for Magnetism
 
-$$\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = 0$$
+$$\oint \mathbf\{B{'\}'} \cdot d\mathbf\{A{'\}'} = 0$$
 
 **Meaning.** The total magnetic flux through any closed surface is zero. There are **no magnetic
 monopoles** — magnetic field lines always form closed loops.
 
 ### Faraday's Law
 
-$$\oint \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = -\frac{d\Phi_B}{dt}$$
+$$\oint \mathbf\{E{'\}'} \cdot d\mathbf\{l{'\}'} = -\frac{d\Phi_B}{dt}$$
 
 **Meaning.** A changing magnetic flux induces an electromotive force (and hence an electric field)
 around a closed loop. This is the mathematical form of Faraday's law of induction.
 
 ### Ampere-Maxwell Law
 
-$$\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = \mu_0 I_{\mathrm{enclosed}} + \mu_0\varepsilon_0\frac{d\Phi_E}{dt}$$
+$$\oint \mathbf\{B{'\}'} \cdot d\mathbf\{l{'\}'} = \mu_0 I_{\mathrm{enclosed}} + \mu_0\varepsilon_0\frac{d\Phi_E}{dt}$$
 
 **Definition.** The displacement current $I_d = \varepsilon_0\,d\Phi_E/dt$ is a quantity
 proportional to the rate of change of electric flux through a surface. It is not a flow of charge
@@ -85,13 +85,13 @@ $I = 0$).
 
 In free space, Maxwell's equations become:
 
-$$\oint \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = 0 \quad \mathrm{(no charges)}$$
-$$\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = 0 \quad \mathrm{(no monopoles)}$$
-$$\oint \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = -\frac{d\Phi_B}{dt} \quad \mathrm{(Faraday)}$$
-$$\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'} = \mu_0\varepsilon_0\frac{d\Phi_E}{dt} \quad \mathrm{(Ampere-Maxwell, no currents)}$$
+$$\oint \mathbf\{E{'\}'} \cdot d\mathbf\{A{'\}'} = 0 \quad \mathrm{(no charges)}$$
+$$\oint \mathbf\{B{'\}'} \cdot d\mathbf\{A{'\}'} = 0 \quad \mathrm{(no monopoles)}$$
+$$\oint \mathbf\{E{'\}'} \cdot d\mathbf\{l{'\}'} = -\frac{d\Phi_B}{dt} \quad \mathrm{(Faraday)}$$
+$$\oint \mathbf\{B{'\}'} \cdot d\mathbf\{l{'\}'} = \mu_0\varepsilon_0\frac{d\Phi_E}{dt} \quad \mathrm{(Ampere-Maxwell, no currents)}$$
 
-Consider a plane wave propagating in the $x$-direction, with $\mathbf{'\{'}E{'\}'} = E_y\,\hat{\mathbf{'\{'}j{'\}'}}$
-and $\mathbf{'\{'}B{'\}'} = B_z\,\hat{\mathbf{'\{'}k{'\}'}}$.
+Consider a plane wave propagating in the $x$-direction, with $\mathbf\{E{'\}'} = E_y\,\hat{\mathbf\{j{'\}'}}$
+and $\mathbf\{B{'\}'} = B_z\,\hat{\mathbf\{k{'\}'}}$.
 
 Applying Faraday's law to a rectangular loop in the $xy$-plane:
 
@@ -146,7 +146,7 @@ from purely electrical and magnetic constants — proving that light is an elect
 creates a changing $E$ field (Faraday), and so on. The rate of this mutual generation is set by
 $\mu_0$ and $\varepsilon_0$.
 
-### The $\mathbf{'\{'}E{'\}'}/\mathbf{'\{'}B{'\}'}$ Relationship
+### The $\mathbf\{E{'\}'}/\mathbf\{B{'\}'}$ Relationship
 
 Starting from the two coupled first-order equations derived above:
 
@@ -175,7 +175,7 @@ $$u = \varepsilon_0 E^2 = \frac{B^2}{\mu_0}$$
 
 The Poynting vector gives the energy flux (power per unit area):
 
-$$\mathbf{'\{'}S{'\}'} = \frac{1}{\mu_0}\mathbf{'\{'}E{'\}'} \times \mathbf{'\{'}B{'\}'}$$
+$$\mathbf\{S{'\}'} = \frac{1}{\mu_0}\mathbf\{E{'\}'} \times \mathbf\{B{'\}'}$$
 
 For a plane wave, the time-averaged intensity is:
 
@@ -205,12 +205,12 @@ in 2019.
 
 From Maxwell's equations, EM waves have these properties:
 
-1. **Transverse**: $\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}B{'\}'}$ are perpendicular to each other and to the
+1. **Transverse**: $\mathbf\{E{'\}'}$ and $\mathbf\{B{'\}'}$ are perpendicular to each other and to the
    direction of propagation
 2. **Speed**: $c = 1/\sqrt{\mu_0\varepsilon_0}$ in vacuum (independent of frequency)
 3. **Relation between fields**: $E = cB$ (the ratio $E/B = c$ is constant)
 4. **Self-propagating**: no medium required
-5. **Carry energy**: the Poynting vector $\mathbf{'\{'}S{'\}'} = \frac{1}{\mu_0}\mathbf{'\{'}E{'\}'} \times \mathbf{'\{'}B{'\}'}$
+5. **Carry energy**: the Poynting vector $\mathbf\{S{'\}'} = \frac{1}{\mu_0}\mathbf\{E{'\}'} \times \mathbf\{B{'\}'}$
    gives the energy flux
 6. **Carry momentum**: radiation pressure $P = I/c$ for total absorption, $P = 2I/c$ for perfect
    reflection
@@ -455,7 +455,7 @@ between the dees.
 1. A charged particle is injected near the centre.
 2. The electric field in the gap accelerates the particle.
 3. Inside a dee, the magnetic field causes the particle to follow a semicircular path (no work done
-   by $B$ since $\mathbf{'\{'}F{'\}'} \perp \mathbf{'\{'}v{'\}'}$).
+   by $B$ since $\mathbf\{F{'\}'} \perp \mathbf\{v{'\}'}$).
 4. When the particle reaches the gap again, the alternating `EMF` has reversed, accelerating the
    particle once more.
 5. The particle spirals outward with increasing radius but **constant frequency**.
@@ -548,7 +548,7 @@ amplitude.
 <summary>Problem 3</summary>
 State Gauss's law for magnetism and explain its physical significance.
 
-**Answer.** $\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = 0$. This states that the net magnetic flux through
+**Answer.** $\oint \mathbf\{B{'\}'} \cdot d\mathbf\{A{'\}'} = 0$. This states that the net magnetic flux through
 any closed surface is zero, which means there are no magnetic monopoles. Every magnetic field line
 that enters a closed surface must also exit it — field lines always form closed loops.
 
@@ -563,7 +563,7 @@ it predicts.
 
 **Answer.** Maxwell noticed that applying the original Ampere's law to a charging capacitor gave
 inconsistent results — different surfaces bounded by the same loop gave different values of
-$\oint \mathbf{'\{'}B{'\}'} \cdot d\mathbf{'\{'}l{'\}'}$. He resolved this by adding the term
+$\oint \mathbf\{B{'\}'} \cdot d\mathbf\{l{'\}'}$. He resolved this by adding the term
 $\mu_0\varepsilon_0\,d\Phi_E/dt$, representing the magnetic field produced by a changing electric
 field. This addition predicted that changing electric fields generate magnetic fields, and combined
 with Faraday's law (changing $B$ generates $E$), it predicted self-sustaining electromagnetic waves.

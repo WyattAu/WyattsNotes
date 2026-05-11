@@ -229,9 +229,9 @@ $$W = \int_{s_1}^{s_2} F\,ds = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
 Show every step and justify each substitution.
 
-**(b)** Extend the derivation to two dimensions, where the force is $\mathbf{'\{'}F{'\}'} = (F_x, F_y)$ and the displacement is $\mathbf{'\{'}s{'\}'} = (x, y)$, to show that:
+**(b)** Extend the derivation to two dimensions, where the force is $\mathbf\{F{'\}'} = (F_x, F_y)$ and the displacement is $\mathbf\{s{'\}'} = (x, y)$, to show that:
 
-$$W = \int \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}s{'\}'} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
+$$W = \int \mathbf\{F{'\}'} \cdot d\mathbf\{s{'\}'} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
 **(c)** Explain why the work-energy theorem holds for non-conservative forces (such as friction) but conservation of mechanical energy ($\mathrm{KE} + \mathrm{PE} = \text{constant}$) does not.
 
@@ -257,11 +257,11 @@ Integrating both sides from the initial state $(s_1, v_1)$ to the final state $(
 
 $$\int_{s_1}^{s_2} F\,ds = \int_{v_1}^{v_2} mv\,dv = \left[\frac{1}{2}mv^2\right]_{v_1}^{v_2} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2 \quad \blacksquare$$
 
-**(b)** In two dimensions, Newton's Second Law is $\mathbf{'\{'}F{'\}'} = m\mathbf{'\{'}a{'\}'}$.
+**(b)** In two dimensions, Newton's Second Law is $\mathbf\{F{'\}'} = m\mathbf\{a{'\}'}$.
 
-The work done by $\mathbf{'\{'}F{'\}'}$ along the path from $\mathbf{'\{'}s{'\}'}_1$ to $\mathbf{'\{'}s{'\}'}_2$ is:
+The work done by $\mathbf\{F{'\}'}$ along the path from $\mathbf\{s{'\}'}_1$ to $\mathbf\{s{'\}'}_2$ is:
 
-$$W = \int \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}s{'\}'} = \int (F_x\,dx + F_y\,dy)$$
+$$W = \int \mathbf\{F{'\}'} \cdot d\mathbf\{s{'\}'} = \int (F_x\,dx + F_y\,dy)$$
 
 Since $F_x = ma_x = m\frac{dv_x}{dt}$ and $dx = v_x\,dt$:
 

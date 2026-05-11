@@ -15,17 +15,17 @@ slug: complexity-analysis
 
 ### Asymptotic Notation
 
-Let $f, g: \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}R{'\}'}^+$ be functions.
+Let $f, g: \mathbb\{N{'\}'} \to \mathbb\{R{'\}'}^+$ be functions.
 
 #### Big-O (Upper Bound)
 
-$$f(n) = O(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb{'\{'}N{'\}'} \mathrm{ s.t. } f(n) \leq c \cdot g(n)\ \forall\, n \geq n_0$$
+$$f(n) = O(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb\{N{'\}'} \mathrm{ s.t. } f(n) \leq c \cdot g(n)\ \forall\, n \geq n_0$$
 
 **Intuition:** $f$ is eventually bounded above by a constant multiple of $g$.
 
 #### Big-Omega (Lower Bound)
 
-$$f(n) = \Omega(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb{'\{'}N{'\}'} \mathrm{ s.t. } f(n) \geq c \cdot g(n)\ \forall\, n \geq n_0$$
+$$f(n) = \Omega(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb\{N{'\}'} \mathrm{ s.t. } f(n) \geq c \cdot g(n)\ \forall\, n \geq n_0$$
 
 **Intuition:** $f$ is eventually bounded below by a constant multiple of $g$.
 
@@ -33,7 +33,7 @@ $$f(n) = \Omega(g(n)) \iff \exists\, c > 0,\ n_0 \in \mathbb{'\{'}N{'\}'} \mathr
 
 $$f(n) = \Theta(g(n)) \iff f(n) = O(g(n)) \land f(n) = \Omega(g(n))$$
 
-$$\iff \exists\, c_1, c_2 > 0,\ n_0 \in \mathbb{'\{'}N{'\}'} \mathrm{ s.t. } c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n)\ \forall\, n \geq n_0$$
+$$\iff \exists\, c_1, c_2 > 0,\ n_0 \in \mathbb\{N{'\}'} \mathrm{ s.t. } c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n)\ \forall\, n \geq n_0$$
 
 **Intuition:** $f$ grows at the same rate as $g$, up to constant factors.
 

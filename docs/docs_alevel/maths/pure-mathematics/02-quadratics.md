@@ -28,7 +28,7 @@ slug: quadratics
 
 $$f(x) = ax^2 + bx + c$$
 
-where $a, b, c \in \mathbb{'\{'}R{'\}'}$ and $a \neq 0$.
+where $a, b, c \in \mathbb\{R{'\}'}$ and $a \neq 0$.
 
 The graph of $y = ax^2 + bx + c$ is a _parabola_ — a symmetrical U-shaped curve (opening upwards if
 $a > 0$, downwards if $a < 0$). The axis of symmetry is the vertical line $x = -\frac{b}{2a}$.
@@ -41,7 +41,7 @@ The technique of completing the square rewrites a quadratic in the form $a(x - p
 the vertex, axis of symmetry, and extremum are immediately readable.
 
 **Theorem.** Every quadratic $ax^2 + bx + c$ with $a \neq 0$ can be written in the form
-$a(x - p)^2 + q$ for some $p, q \in \mathbb{'\{'}R{'\}'}$.
+$a(x - p)^2 + q$ for some $p, q \in \mathbb\{R{'\}'}$.
 
 _Proof._ Factor out $a$ from the first two terms:
 
@@ -193,8 +193,8 @@ Furthermore, when $\Delta < 0$:
 
 | Condition                | Conclusion                                                      |
 | ------------------------ | --------------------------------------------------------------- |
-| $a > 0$ and $\Delta < 0$ | $f(x) > 0$ for all $x \in \mathbb{'\{'}R{'\}'}$ (parabola entirely above) |
-| $a < 0$ and $\Delta < 0$ | $f(x) < 0$ for all $x \in \mathbb{'\{'}R{'\}'}$ (parabola entirely below) |
+| $a > 0$ and $\Delta < 0$ | $f(x) > 0$ for all $x \in \mathbb\{R{'\}'}$ (parabola entirely above) |
+| $a < 0$ and $\Delta < 0$ | $f(x) < 0$ for all $x \in \mathbb\{R{'\}'}$ (parabola entirely below) |
 
 _Proof._ From the completed-square form
 $f(x) = a\left(x + \frac{b}{2a}\right)^2 - \frac{\Delta}{4a}$, the minimum value (when $a > 0$) or
@@ -890,7 +890,7 @@ $$
 \end{aligned}
 $$
 
-Since $\Delta = -4 < 0$ for all $k \in \mathbb{'\{'}R{'\}'}$, there are no real roots. $\blacksquare$
+Since $\Delta = -4 < 0$ for all $k \in \mathbb\{R{'\}'}$, there are no real roots. $\blacksquare$
 
 </details>
 <b>If you get this wrong, revise:</b> [Discriminant](#4-the-discriminant)

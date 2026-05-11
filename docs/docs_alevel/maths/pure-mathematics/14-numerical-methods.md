@@ -97,7 +97,7 @@ diverge.
 
 - $g(x) = 1 - x^3$: $g'(x) = -3x^2$. Near the root $\alpha \approx 0.68$:
   $|g'(\alpha)| \approx 1.39 \gt{} 1$. **Diverges.**
-- $g(x) = \sqrt[3]{1-x}$: $g'(x) = \dfrac{-1}{3(1-x)^{2/3}}$. Near $\alpha$:
+- $g(x) = \sqrt[3]{1-x}$: $g'(x) = {'\dfrac{-1}{3(1-x)^{2/3}}'}$. Near $\alpha$:
   $|g'(\alpha)| \approx 0.72 \lt{} 1$. **Converges.**
 
 :::tip
@@ -158,7 +158,7 @@ $$x_n - \frac{f(x_n)}{f'(x_n)} = \alpha - \frac{f''(\xi)}{2f'(x_n)}(\alpha - x_n
 $$x_{n+1} - \alpha = -\frac{f''(\xi)}{2f'(x_n)}(x_n - \alpha)^2$$
 
 Taking absolute values:
-$|x_{n+1} - \alpha| = \dfrac{|f''(\xi)|}{2|f'(x_n)|}|x_n - \alpha|^2 \leq C|x_n - \alpha|^2$.
+$|x_{n+1} - \alpha| = {'{'\dfrac{|f''(\xi)|}{2|f'(x_n)|}'}'}|x_n - \alpha|^2 \leq C|x_n - \alpha|^2$.
 $\blacksquare$
 
 **Intuition.** Quadratic convergence means the number of correct decimal places roughly **doubles**
@@ -344,7 +344,7 @@ The coefficients follow the pattern: $1, 4, 2, 4, 2, \ldots, 4, 1$.
 
 Simpson's rule approximates $f$ by quadratic arcs over pairs of strips. Over $[x_{2k}, x_{2k+2}]$, a
 unique quadratic passes through $(x_{2k}, y_{2k})$, $(x_{2k+1}, y_{2k+1})$, $(x_{2k+2}, y_{2k+2})$.
-Integrating this quadratic gives the area $\dfrac{h}{3}(y_{2k} + 4y_{2k+1} + y_{2k+2})$.
+Integrating this quadratic gives the area ${'\dfrac{h}{3}'}(y_{2k} + 4y_{2k+1} + y_{2k+2})$.
 
 ### 5.3 Error bound
 
@@ -460,15 +460,15 @@ $x_3 = \sqrt[3]{2(2.0924)+5} = \sqrt[3]{9.1848} = 2.0943$
 
 <details>
 <summary>Problem 3</summary>
-Show that the iteration $x_{n+1} = \dfrac{x_n^3 + 5}{2}$ for solving $x^3 - 2x - 5 = 0$ will not converge near the root.
+Show that the iteration $x_{n+1} = {'\dfrac{x_n^3 + 5}{2}'}$ for solving $x^3 - 2x - 5 = 0$ will not converge near the root.
 </details>
 
 <details>
 <summary>Solution 3</summary>
-$g(x) = \dfrac{x^3+5}{2}$, $g'(x) = \dfrac{3x^2}{2}$.
+$g(x) = {'\dfrac{x^3+5}{2}'}$, $g'(x) = {'\dfrac{3x^2}{2}'}$.
 
 Near the root $\alpha \approx 2.09$:
-$g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac{3 \times 4.37}{2} \approx 6.55 \gt{} 1$.
+$g'(\alpha) = {'\dfrac{3(2.09)^2}{2}'} \approx {'{'\dfrac{3 \times 4.37}{2}'}'} \approx 6.55 \gt{} 1$.
 
 Since $|g'(\alpha)| \gt{} 1$, the iteration diverges near $\alpha$.
 
@@ -483,7 +483,7 @@ Use Newton-Raphson with $x_0 = 2$ to find $x_2$ for $f(x) = x^3 - 2x - 5 = 0$. G
 
 <details>
 <summary>Solution 4</summary>
-$f'(x) = 3x^2 - 2$. $x_{n+1} = x_n - \dfrac{x_n^3 - 2x_n - 5}{3x_n^2 - 2}$.
+$f'(x) = 3x^2 - 2$. $x_{n+1} = x_n - {'\dfrac{x_n^3 - 2x_n - 5}{3x_n^2 - 2}'}$.
 
 $x_0 = 2$: $f(2) = -1$, $f'(2) = 10$. $x_1 = 2 - (-1/10) = 2.1000$.
 
@@ -540,9 +540,9 @@ The Newton-Raphson formula fails when applied to $f(x) = x^{1/3}$ starting from 
 
 <details>
 <summary>Solution 7</summary>
-$f(x) = x^{1/3}$, $f'(x) = \dfrac{1}{3}x^{-2/3}$.
+$f(x) = x^{1/3}$, $f'(x) = {'\dfrac{1}{3}'}x^{-2/3}$.
 
-$x_{n+1} = x_n - \dfrac{x_n^{1/3}}{\frac{1}{3}x_n^{-2/3}} = x_n - 3x_n = -2x_n$.
+$x_{n+1} = x_n - {'{'\dfrac{x_n^{1/3}}{\frac{1}{3}x_n^{-2/3}}'}'} = x_n - 3x_n = -2x_n$.
 
 So $x_1 = -2$, $x_2 = 4$, $x_3 = -8$, ... The iterates oscillate and diverge.
 
@@ -582,9 +582,9 @@ $f(1) = -1 \lt{} 0$, $f(1.2) = 1.728 + 1.2 - 3 = -0.072 \lt{} 0$, $f(1.3) = 2.19
 
 Root near $\alpha \approx 1.21$.
 
-$g(x) = (3-x)^{1/3}$, $g'(x) = -\dfrac{1}{3}(3-x)^{-2/3}$.
+$g(x) = (3-x)^{1/3}$, $g'(x) = -{'\dfrac{1}{3}'}(3-x)^{-2/3}$.
 
-$|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx \dfrac{1}{3 \times 1.489} \approx 0.224 \lt{} 1$.
+$|g'(\alpha)| = {'\dfrac{1}{3}'}(3-1.21)^{-2/3} = {'\dfrac{1}{3}'}(1.79)^{-2/3} \approx {'{'\dfrac{1}{3 \times 1.489}'}'} \approx 0.224 \lt{} 1$.
 
 Converges since $|g'(\alpha)| \lt{} 1$.
 
@@ -594,7 +594,7 @@ Converges since $|g'(\alpha)| \lt{} 1$.
 
 <details>
 <summary>Problem 10</summary>
-Explain why the sign change theorem does not guarantee a root of $f(x) = \dfrac{1}{x-2}$ in the interval $[1, 3]$.
+Explain why the sign change theorem does not guarantee a root of $f(x) = {'\dfrac{1}{x-2}'}$ in the interval $[1, 3]$.
 </details>
 
 <details>
@@ -616,7 +616,7 @@ convergence is lost.
 <summary>Solution 11</summary>
 $f(x) = (x-2)^3$, $f'(x) = 3(x-2)^2$.
 
-$x_{n+1} = x_n - \dfrac{(x_n-2)^3}{3(x_n-2)^2} = x_n - \dfrac{x_n - 2}{3} = \dfrac{2x_n + 4}{3}$
+$x_{n+1} = x_n - {'\dfrac{(x_n-2)^3}{3(x_n-2)^2}'} = x_n - {'\dfrac{x_n - 2}{3}'} = {'\dfrac{2x_n + 4}{3}'}$
 
 Starting from $x_0 = 5$: $x_1 = 14/3 \approx 4.667$, $x_2 = 40/9 \approx 4.444$,
 $x_3 = 116/27 \approx 4.296$, $x_4 = 344/81 \approx 4.198$.
@@ -642,7 +642,7 @@ degrades to linear convergence with rate $1/2$. Here $f''(x) = 6(x-2)$, so $f''(
 <summary>Problem 12</summary>
 (a) Use the trapezium rule with $n = 4$ strips to approximate $\displaystyle\int_0^2 \frac{1}{1+x^2}\,dx$.
 
-(b) Given that $f''(x) = \dfrac{6x^2 - 2}{(1+x^2)^3}$, find an upper bound $M$ for $|f''(x)|$ on
+(b) Given that $f''(x) = {'\dfrac{6x^2 - 2}{(1+x^2)^3}'}$, find an upper bound $M$ for $|f''(x)|$ on
 $[0,2]$ and hence bound the error in your approximation.
 
 </details>
@@ -658,7 +658,7 @@ $$\mathrm{Approx} = \frac{0.5}{2}[1 + 2(0.8 + 0.5 + 0.3077) + 0.2] = 0.25[1 + 2(
 
 (Exact value: $\arctan 2 \approx 1.1071$.)
 
-(b) $f''(x) = \dfrac{6x^2 - 2}{(1+x^2)^3}$. On $[0, 2]$, the numerator $6x^2 - 2$ is maximised at
+(b) $f''(x) = {'\dfrac{6x^2 - 2}{(1+x^2)^3}'}$. On $[0, 2]$, the numerator $6x^2 - 2$ is maximised at
 $x = 2$ where it equals $6(4) - 2 = 22$. The denominator $(1+x^2)^3$ is minimised at $x = 0$ where
 it equals 1. We need to maximise $|f''(x)|$.
 
@@ -668,7 +668,7 @@ endpoints and critical points. $f''(0) = -2$, $f''(1) = 4/8 = 0.5$, $f''(2) = 22
 So $M = 2$ (taking $|f''(x)| \leq 2$).
 
 Error bound:
-$|E_T| \leq \dfrac{(2-0)^3}{12 \times 4^2} \times 2 = \dfrac{8}{192} \times 2 = \dfrac{1}{12} \approx 0.0833$.
+$|E_T| \leq {'{'\dfrac{(2-0)^3}{12 \times 4^2}'}'} \times 2 = {'\dfrac{8}{192}'} \times 2 = {'\dfrac{1}{12}'} \approx 0.0833$.
 
 The actual error is $|1.1071 - 1.1039| = 0.0032$, well within the bound.
 

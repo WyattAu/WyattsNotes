@@ -61,15 +61,15 @@ $$P(X \geq r) = 1 - P(X \leq r-1)$$
 
 $X \sim B(12, 0.5)$.
 
-(a) $P(X = 7) = \dbinom{12}{7}(0.5)^{12} = \dfrac{792}{4096} = \dfrac{99}{512} \approx 0.1934$
+(a) $P(X = 7) = \dbinom{12}{7}(0.5)^{12} = {'\dfrac{792}{4096}'} = {'\dfrac{99}{512}'} \approx 0.1934$
 
-(b) $P(X \leq 4) = \displaystyle\sum_{k=0}^{4}\dbinom{12}{k}(0.5)^{12} = \dfrac{1 + 12 + 66 + 220 + 495}{4096} = \dfrac{794}{4096} \approx 0.1938$
+(b) $P(X \leq 4) = \displaystyle\sum_{k=0}^{4}\dbinom{12}{k}(0.5)^{12} = {'\dfrac{1 + 12 + 66 + 220 + 495}{4096}'} = {'\dfrac{794}{4096}'} \approx 0.1938$
 
 (c) $P(5 \leq X \leq 9) = P(X \leq 9) - P(X \leq 4) = 1 - P(X \leq 4) - P(X \geq 10)$
 
-$P(X \geq 10) = P(X \leq 2)$ (by symmetry of $p = 0.5$) $= \dfrac{1 + 12 + 66}{4096} = \dfrac{79}{4096}$
+$P(X \geq 10) = P(X \leq 2)$ (by symmetry of $p = 0.5$) $= {'\dfrac{1 + 12 + 66}{4096}'} = {'\dfrac{79}{4096}'}$
 
-$P(5 \leq X \leq 9) = 1 - \dfrac{794}{4096} - \dfrac{79}{4096} = \dfrac{3223}{4096} \approx 0.7869$
+$P(5 \leq X \leq 9) = 1 - {'\dfrac{794}{4096}'} - {'\dfrac{79}{4096}'} = {'\dfrac{3223}{4096}'} \approx 0.7869$
 
 <hr />
 
@@ -80,7 +80,7 @@ $P(5 \leq X \leq 9) = 1 - \dfrac{794}{4096} - \dfrac{79}{4096} = \dfrac{3223}{40
 A random variable $X$ has a **normal distribution** with parameters $\mu$ and $\sigma^2$ (written
 $X \sim N(\mu, \sigma^2)$) if its probability density function is:
 
-$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x - \mu)^2}{2\sigma^2}\right), \quad x \in \mathbb{'\{'}R{'\}'}$$
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x - \mu)^2}{2\sigma^2}\right), \quad x \in \mathbb\{R{'\}'}$$
 
 ### 2.2 Properties
 
@@ -110,13 +110,13 @@ less than $1.00\;\mathrm{kg}$; (b) the probability the mass is between $0.98$ an
 
 $X \sim N(1.02, 0.03^2)$.
 
-(a) $P(X \lt 1.00) = P\!\left(Z \lt \dfrac{1.00 - 1.02}{0.03}\right) = P(Z \lt -0.667) = 1 - \Phi(0.667) \approx 1 - 0.7476 = 0.2524$
+(a) $P(X \lt 1.00) = P\!\left(Z \lt {'\dfrac{1.00 - 1.02}{0.03}'}\right) = P(Z \lt -0.667) = 1 - \Phi(0.667) \approx 1 - 0.7476 = 0.2524$
 
-(b) $P(0.98 \lt X \lt 1.05) = P\!\left(\dfrac{0.98 - 1.02}{0.03} \lt Z \lt \dfrac{1.05 - 1.02}{0.03}\right) = P(-1.333 \lt Z \lt 1.000)$
+(b) $P(0.98 \lt X \lt 1.05) = P\!\left({'\dfrac{0.98 - 1.02}{0.03}'} \lt Z \lt {'\dfrac{1.05 - 1.02}{0.03}'}\right) = P(-1.333 \lt Z \lt 1.000)$
 
 $= \Phi(1.000) - \Phi(-1.333) = 0.8413 - (1 - 0.9088) = 0.8413 - 0.0912 = 0.7501$
 
-(c) We need $\Phi\!\left(\dfrac{m - 1.02}{0.03}\right) = 0.90$, so $\dfrac{m - 1.02}{0.03} = 1.282$.
+(c) We need $\Phi\!\left({'\dfrac{m - 1.02}{0.03}'}\right) = 0.90$, so ${'\dfrac{m - 1.02}{0.03}'} = 1.282$.
 
 $m = 1.02 + 0.03 \times 1.282 = 1.058\;\mathrm{kg}$
 
@@ -143,7 +143,7 @@ $\mu = 80 \times 0.45 = 36$, $\sigma^2 = 80 \times 0.45 \times 0.55 = 19.8$, $\s
 
 $X \approx N(36, 19.8)$.
 
-$P(X \gt 35) \approx P(Y \gt 34.5) = P\!\left(Z \gt \dfrac{34.5 - 36}{4.45}\right) = P(Z \gt -0.337)$
+$P(X \gt 35) \approx P(Y \gt 34.5) = P\!\left(Z \gt {'\dfrac{34.5 - 36}{4.45}'}\right) = P(Z \gt -0.337)$
 
 $= 1 - \Phi(-0.337) = \Phi(0.337) \approx 0.632$
 
@@ -178,13 +178,13 @@ in a minute; (c) the probability of more than 8 calls in a two-minute period.
 
 $X \sim \mathrm{Po}(4.5)$.
 
-(a) $P(X = 6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac{e^{-4.5} \times 8303.8}{720} \approx 0.1271$
+(a) $P(X = 6) = {'\dfrac{e^{-4.5}(4.5)^6}{6!}'} = {'{'\dfrac{e^{-4.5} \times 8303.8}{720}'}'} \approx 0.1271$
 
-(b) $P(X \leq 2) = e^{-4.5}\!\left(1 + 4.5 + \dfrac{4.5^2}{2}\right) = e^{-4.5}(1 + 4.5 + 10.125) = 15.625\,e^{-4.5} \approx 0.1736$
+(b) $P(X \leq 2) = e^{-4.5}\!\left(1 + 4.5 + {'\dfrac{4.5^2}{2}'}\right) = e^{-4.5}(1 + 4.5 + 10.125) = 15.625\,e^{-4.5} \approx 0.1736$
 
 (c) For two minutes, $Y \sim \mathrm{Po}(9)$.
 
-$P(Y \gt 8) = 1 - P(Y \leq 8) = 1 - e^{-9}\displaystyle\sum_{r=0}^{8}\dfrac{9^r}{r!} \approx 1 - 0.4557 = 0.5443$
+$P(Y \gt 8) = 1 - P(Y \leq 8) = 1 - e^{-9}\displaystyle\sum_{r=0}^{8}{'\dfrac{9^r}{r!}'} \approx 1 - 0.4557 = 0.5443$
 
 ### 3.4 Poisson approximation to the binomial
 
@@ -233,7 +233,7 @@ from walk-in customers. Find the probability of receiving more than 7 orders in 
 
 Total rate per hour $= 3 + 2 = 5$. For two hours, $X \sim \mathrm{Po}(10)$.
 
-$P(X \gt 7) = 1 - P(X \leq 7) = 1 - e^{-10}\displaystyle\sum_{r=0}^{7}\dfrac{10^r}{r!} \approx 1 - 0.2202 = 0.7798$
+$P(X \gt 7) = 1 - P(X \leq 7) = 1 - e^{-10}\displaystyle\sum_{r=0}^{7}{'\dfrac{10^r}{r!}'} \approx 1 - 0.2202 = 0.7798$
 
 :::warning
 Common Pitfall
@@ -272,7 +272,7 @@ $8\;\mathrm{cm}$. Find the probability that a randomly selected man is: (a) tall
 <details>
 <summary>Solution</summary>
 
-(a) $P(X \gt 190) = P\!\left(Z \gt \dfrac{15}{8}\right) = P(Z \gt 1.875) = 1 - 0.9696 = 0.0304$.
+(a) $P(X \gt 190) = P\!\left(Z \gt {'\dfrac{15}{8}'}\right) = P(Z \gt 1.875) = 1 - 0.9696 = 0.0304$.
 
 (b) $P(168 \lt X \lt 182) = P(-0.875 \lt Z \lt 0.875) = 2\Phi(0.875) - 1 = 2(0.8092) - 1 = 0.6184$.
 
@@ -289,7 +289,7 @@ hours.
 <details>
 <summary>Solution</summary>
 
-(a) $P(X = 4) = \dfrac{e^{-6} \cdot 6^4}{4!} = \dfrac{1296}{24}e^{-6} = 54e^{-6} \approx 0.1335$.
+(a) $P(X = 4) = {'{'\dfrac{e^{-6} \cdot 6^4}{4!}'}'} = {'\dfrac{1296}{24}'}e^{-6} = 54e^{-6} \approx 0.1335$.
 
 (b) For two hours, $Y \sim \mathrm{Po}(12)$.
 
@@ -305,13 +305,13 @@ sixes is between 8 and 14 inclusive.
 <details>
 <summary>Solution</summary>
 
-$X \sim B(60, 1/6)$. $\mu = 10$, $\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
+$X \sim B(60, 1/6)$. $\mu = 10$, $\sigma^2 = 60 \times {'\dfrac{1}{6}'} \times {'\dfrac{5}{6}'} = {'\dfrac{25}{3}'} \approx 8.333$.
 
 $\sigma \approx 2.887$.
 
 $P(8 \leq X \leq 14) \approx P(7.5 \lt Y \lt 14.5)$ where $Y \sim N(10, 25/3)$.
 
-$= P\!\left(\dfrac{7.5 - 10}{2.887} \lt Z \lt \dfrac{14.5 - 10}{2.887}\right) = P(-0.866 \lt Z \lt 1.558)$
+$= P\!\left({'\dfrac{7.5 - 10}{2.887}'} \lt Z \lt {'\dfrac{14.5 - 10}{2.887}'}\right) = P(-0.866 \lt Z \lt 1.558)$
 
 $= \Phi(1.558) - \Phi(-0.866) = 0.9404 - 0.1931 = 0.7473$.
 

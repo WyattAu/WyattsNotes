@@ -71,7 +71,7 @@ $A = \frac{\theta}{2\pi} \cdot \pi r^2 = \frac{1}{2}r^2\theta$. $\blacksquare$
 
 ### 2.1 Pythagorean Identity
 
-**Theorem.** For all $\theta \in \mathbb{'\{'}R{'\}'}$:
+**Theorem.** For all $\theta \in \mathbb\{R{'\}'}$:
 
 $$\sin^2\theta + \cos^2\theta = 1$$
 
@@ -93,7 +93,7 @@ $$\cot^2\theta + 1 = \cosec^2\theta$$
 
 ### 3.1 Sine of a Sum
 
-**Theorem.** For all $A, B \in \mathbb{'\{'}R{'\}'}$:
+**Theorem.** For all $A, B \in \mathbb\{R{'\}'}$:
 
 $$\sin(A + B) = \sin A \cos B + \cos A \sin B$$
 
@@ -335,7 +335,7 @@ $$\sin\frac{\pi}{8} = \sqrt{\frac{1 - \cos\frac{\pi}{4}}{2}} = \sqrt{\frac{1 - \
 
 $$a\sin\theta + b\cos\theta = R\sin(\theta + \alpha)$$
 
-where $R = \sqrt{a^2 + b^2}$ and $\tan\alpha = \dfrac{b}{a}$.
+where $R = \sqrt{a^2 + b^2}$ and $\tan\alpha = {'\dfrac{b}{a}'}$.
 
 ### 8.1 Cosine Form
 
@@ -343,7 +343,7 @@ Alternatively, the same expression can be written as:
 
 $$a\sin\theta + b\cos\theta = R\cos(\theta - \beta)$$
 
-where $R = \sqrt{a^2 + b^2}$ and $\tan\beta = \dfrac{a}{b}$.
+where $R = \sqrt{a^2 + b^2}$ and $\tan\beta = {'\dfrac{a}{b}'}$.
 
 Both forms are equivalent; the choice between them is a matter of convenience depending on whether a
 sine or cosine expansion is more natural for the problem at hand.
@@ -361,7 +361,7 @@ $$R\cos\alpha = a, \qquad R\sin\alpha = b$$
 Squaring and adding: $R^2\cos^2\alpha + R^2\sin^2\alpha = a^2 + b^2$, so $R^2 = a^2 + b^2$ and
 $R = \sqrt{a^2 + b^2}$.
 
-Dividing the second equation by the first: $\tan\alpha = \dfrac{b}{a}$. $\blacksquare$
+Dividing the second equation by the first: $\tan\alpha = {'\dfrac{b}{a}'}$. $\blacksquare$
 
 The cosine form is derived similarly by expanding
 $R\cos(\theta - \beta) = R\cos\theta\cos\beta + R\sin\theta\sin\beta$ and equating coefficients.
@@ -383,7 +383,7 @@ which they occur, for $0 \leq \theta \lt{} 2\pi$.
 $R = \sqrt{9 + 16} = 5$.
 
 Here $a = 3$ and $b = -4$. Writing $3\sin\theta - 4\cos\theta = 5\sin(\theta + \alpha)$ where
-$\tan\alpha = \dfrac{-4}{3}$, so $\alpha = -\arctan\dfrac{4}{3}$.
+$\tan\alpha = {'\dfrac{-4}{3}'}$, so $\alpha = -\arctan{'\dfrac{4}{3}'}$.
 
 Maximum $= 5$ when $\theta + \alpha = \frac{\pi}{2}$:
 
@@ -446,7 +446,7 @@ bottom by the conjugate $a \mp b$ to produce a difference of squares.
 
 <details>
 <summary>Example 1: Strategy 2 (express in sin and cos)</summary>
-Prove that $\cot A + \tan A = \dfrac{2}{\sin 2A}$.
+Prove that $\cot A + \tan A = {'{'\dfrac{2}{\sin 2A}'}'}$.
 
 $$
 \begin{aligned}
@@ -478,7 +478,7 @@ $$
 
 <details>
 <summary>Example 3: Strategy 4 (multiply by conjugate)</summary>
-Prove that $\dfrac{1}{\sec A + \tan A} = \sec A - \tan A$.
+Prove that ${'{'\dfrac{1}{\sec A + \tan A}'}'} = \sec A - \tan A$.
 
 Multiply numerator and denominator by $\sec A - \tan A$:
 
@@ -498,7 +498,7 @@ where we used $\sec^2 A = 1 + \tan^2 A$ so that $\sec^2 A - \tan^2 A = 1$.
 
 <details>
 <summary>Example 4: Strategy 1 (work with one side)</summary>
-Prove that $\dfrac{\cos 2A}{1 + \sin 2A} = \dfrac{\cos A - \sin A}{\cos A + \sin A}$.
+Prove that ${'{'\dfrac{\cos 2A}{1 + \sin 2A}'}'} = {'{'\dfrac{\cos A - \sin A}{\cos A + \sin A}'}'}$.
 
 Working from the LHS:
 
@@ -522,9 +522,9 @@ $$
 
 | Function | Period | Amplitude | Domain                        | Range        |
 | -------- | ------ | --------- | ----------------------------- | ------------ |
-| $\sin x$ | $2\pi$ | $1$       | $\mathbb{'\{'}R{'\}'}$                  | $[-1, 1]$    |
-| $\cos x$ | $2\pi$ | $1$       | $\mathbb{'\{'}R{'\}'}$                  | $[-1, 1]$    |
-| $\tan x$ | $\pi$  | undefined | $x \neq \frac{\pi}{2} + n\pi$ | $\mathbb{'\{'}R{'\}'}$ |
+| $\sin x$ | $2\pi$ | $1$       | $\mathbb\{R{'\}'}$                  | $[-1, 1]$    |
+| $\cos x$ | $2\pi$ | $1$       | $\mathbb\{R{'\}'}$                  | $[-1, 1]$    |
+| $\tan x$ | $\pi$  | undefined | $x \neq \frac{\pi}{2} + n\pi$ | $\mathbb\{R{'\}'}$ |
 
 **Key values of $\sin$ and $\cos$:**
 
@@ -538,11 +538,11 @@ $$
 For the general form $y = A\sin(Bx + C) + D$ (and similarly for $\cos$):
 
 - $|A|$ is the **amplitude** (vertical stretch from the midline)
-- The **period** is $\dfrac{2\pi}{|B|}$
-- The **phase shift** is $-\dfrac{C}{B}$ (horizontal shift)
+- The **period** is ${'{'\dfrac{2\pi}{|B|}'}'}$
+- The **phase shift** is $-{'\dfrac{C}{B}'}$ (horizontal shift)
 - $D$ is the **vertical shift** (midline is $y = D$)
 
-For $\tan$, the period is $\dfrac{\pi}{|B|}$ and amplitude is not defined.
+For $\tan$, the period is ${'{'\dfrac{\pi}{|B|}'}'}$ and amplitude is not defined.
 
 <DesmosGraph title="y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D"]}
 width={800} height={500} /> Use the sliders to adjust the amplitude, period, phase shift, and
@@ -555,9 +555,9 @@ Describe the key features of $y = 2\sin\!\left(2x - \frac{\pi}{3}\right)$ for $0
 
 **Amplitude:** $|A| = 2$, so the range is $[-2, 2]$.
 
-**Period:** $\dfrac{2\pi}{|B|} = \dfrac{2\pi}{2} = \pi$.
+**Period:** ${'{'\dfrac{2\pi}{|B|}'}'} = {'{'\dfrac{2\pi}{2}'}'} = \pi$.
 
-**Phase shift:** $-\dfrac{C}{B} = -\dfrac{-\pi/3}{2} = \dfrac{\pi}{6}$ (shift right by
+**Phase shift:** $-{'\dfrac{C}{B}'} = -{'{'\dfrac{-\pi/3}{2}'}'} = {'{'\dfrac{\pi}{6}'}'}$ (shift right by
 $\frac{\pi}{6}$).
 
 **Key points.** The first cycle begins at $x = \frac{\pi}{6}$ (where the curve crosses the midline
@@ -723,7 +723,7 @@ $$\frac{\sin 0.05}{\cos 0.05} \approx \frac{0.05}{0.99875} \approx 0.05006$$
 
 <hr />
 
-**Problem 9.** Prove that $\dfrac{1 + \sin 2A}{\cos 2A} = \tan\!\left(A + \dfrac{\pi}{4}\right)$.
+**Problem 9.** Prove that ${'{'\dfrac{1 + \sin 2A}{\cos 2A}'}'} = \tan\!\left(A + {'{'\dfrac{\pi}{4}'}'}\right)$.
 
 <details>
 <summary>Solution</summary>
@@ -768,7 +768,7 @@ $$\theta = \frac{10}{4} = 2.5 \mathrm{ radians}$$
 
 <hr />
 
-**Problem 11.** Find the exact value of $\cos\dfrac{\pi}{12}$ using a half-angle formula.
+**Problem 11.** Find the exact value of $\cos{'{'\dfrac{\pi}{12}'}'}$ using a half-angle formula.
 
 <details>
 <summary>Solution</summary>
@@ -787,7 +787,7 @@ $$
 
 This can also be verified using the compound angle formula:
 $\cos\frac{\pi}{12} = \cos\!\left(\frac{\pi}{3} - \frac{\pi}{4}\right) = \cos\frac{\pi}{3}\cos\frac{\pi}{4} + \sin\frac{\pi}{3}\sin\frac{\pi}{4} = \frac{\sqrt{6} + \sqrt{2}}{4}$,
-and one can check that $\dfrac{\sqrt{2+\sqrt{3}}}{2} = \dfrac{\sqrt{6}+\sqrt{2}}{4}$.
+and one can check that ${'\dfrac{\sqrt{2+\sqrt{3}}}{2}'} = {'{'\dfrac{\sqrt{6}+\sqrt{2}}{4}'}'}$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Half-angle formulas](#7-half-angle-formulas)
@@ -804,7 +804,7 @@ $R = \sqrt{4 + 25} = \sqrt{29}$.
 The maximum value is $R = \sqrt{29}$.
 
 Writing $2\sin\theta + 5\cos\theta = \sqrt{29}\sin(\theta + \alpha)$ where
-$\tan\alpha = \dfrac{5}{2}$.
+$\tan\alpha = {'\dfrac{5}{2}'}$.
 
 The maximum occurs when $\sin(\theta + \alpha) = 1$, i.e., $\theta + \alpha = \frac{\pi}{2}$.
 
@@ -818,7 +818,7 @@ smallest positive value.
 
 <hr />
 
-**Problem 13.** Prove that $\dfrac{\sin 3A}{\sin A} - \dfrac{\cos 3A}{\cos A} = 2$.
+**Problem 13.** Prove that ${'{'\dfrac{\sin 3A}{\sin A}'}'} - {'{'\dfrac{\cos 3A}{\cos A}'}'} = 2$.
 
 <details>
 <summary>Solution</summary>
@@ -865,7 +865,7 @@ Solutions: $\theta = \frac{\pi}{2}$ or $\theta = \frac{11\pi}{6}$.
 
 <hr />
 
-**Problem 15.** Prove that $\dfrac{1 - \tan^2 A}{1 + \tan^2 A} = \cos 2A$.
+**Problem 15.** Prove that ${'{'\dfrac{1 - \tan^2 A}{1 + \tan^2 A}'}'} = \cos 2A$.
 
 <details>
 <summary>Solution</summary>

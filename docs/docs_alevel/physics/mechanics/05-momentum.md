@@ -23,9 +23,9 @@ Explore the simulation above to develop intuition for this topic.
 
 ## 1. Linear Momentum
 
-**Definition.** The **linear momentum** of a body of mass $m$ moving with velocity $\mathbf{'\{'}v{'\}'}$ is:
+**Definition.** The **linear momentum** of a body of mass $m$ moving with velocity $\mathbf\{v{'\}'}$ is:
 
-$$\boxed{\mathbf{'\{'}p{'\}'} = m\mathbf{'\{'}v{'\}'}}$$
+$$\boxed{\mathbf\{p{'\}'} = m\mathbf\{v{'\}'}}$$
 
 Momentum is a vector quantity with SI units kg m s$^{-1}$.
 
@@ -34,22 +34,22 @@ Momentum is a vector quantity with SI units kg m s$^{-1}$.
 **Principle of Conservation of Linear Momentum.** In the absence of an external net force, the total
 momentum of a system is conserved:
 
-$$\sum \mathbf{'\{'}p{'\}'}_{\mathrm{initial}} = \sum \mathbf{'\{'}p{'\}'}_{\mathrm{final}}$$
+$$\sum \mathbf\{p{'\}'}_{\mathrm{initial}} = \sum \mathbf\{p{'\}'}_{\mathrm{final}}$$
 
 ### Proof from Newton's Laws
 
 Consider two bodies $A$ and $B$ that interact with each other but with no external forces.
 
-By Newton's third law: $\mathbf{'\{'}F{'\}'}_{AB} = -\mathbf{'\{'}F{'\}'}_{BA}$.
+By Newton's third law: $\mathbf\{F{'\}'}_{AB} = -\mathbf\{F{'\}'}_{BA}$.
 
-By Newton's second law: $\mathbf{'\{'}F{'\}'}_{AB} = \frac{d\mathbf{'\{'}p{'\}'}_A}{dt}$ and
-$\mathbf{'\{'}F{'\}'}_{BA} = \frac{d\mathbf{'\{'}p{'\}'}_B}{dt}$.
+By Newton's second law: $\mathbf\{F{'\}'}_{AB} = \frac{d\mathbf\{p{'\}'}_A}{dt}$ and
+$\mathbf\{F{'\}'}_{BA} = \frac{d\mathbf\{p{'\}'}_B}{dt}$.
 
 Therefore:
 
-$$\frac{d\mathbf{'\{'}p{'\}'}_A}{dt} = -\frac{d\mathbf{'\{'}p{'\}'}_B}{dt} \implies \frac{d\mathbf{'\{'}p{'\}'}_A}{dt} + \frac{d\mathbf{'\{'}p{'\}'}_B}{dt} = 0 \implies \frac{d}{dt}(\mathbf{'\{'}p{'\}'}_A + \mathbf{'\{'}p{'\}'}_B) = 0$$
+$$\frac{d\mathbf\{p{'\}'}_A}{dt} = -\frac{d\mathbf\{p{'\}'}_B}{dt} \implies \frac{d\mathbf\{p{'\}'}_A}{dt} + \frac{d\mathbf\{p{'\}'}_B}{dt} = 0 \implies \frac{d}{dt}(\mathbf\{p{'\}'}_A + \mathbf\{p{'\}'}_B) = 0$$
 
-Hence $\mathbf{'\{'}p{'\}'}_A + \mathbf{'\{'}p{'\}'}_B = \mathrm{constant}$. $\square$
+Hence $\mathbf\{p{'\}'}_A + \mathbf\{p{'\}'}_B = \mathrm{constant}$. $\square$
 
 **Intuition.** Momentum conservation is more fundamental than energy conservation in collisions
 because it holds for _all_ types of collisions — elastic, inelastic, and explosive. Kinetic energy
@@ -57,18 +57,18 @@ is only conserved in elastic collisions.
 
 ## 3. Impulse
 
-**Definition.** The **impulse** $J$ delivered by a force $\mathbf{'\{'}F{'\}'}$ acting over a time interval
+**Definition.** The **impulse** $J$ delivered by a force $\mathbf\{F{'\}'}$ acting over a time interval
 $\Delta t$ is:
 
-$$\boxed{\mathbf{'\{'}J{'\}'} = \mathbf{'\{'}F{'\}'}\Delta t = \Delta\mathbf{'\{'}p{'\}'}}$$
+$$\boxed{\mathbf\{J{'\}'} = \mathbf\{F{'\}'}\Delta t = \Delta\mathbf\{p{'\}'}}$$
 
 For a variable force:
 
-$$\mathbf{'\{'}J{'\}'} = \int_{t_1}^{t_2} \mathbf{'\{'}F{'\}'}(t)\,dt$$
+$$\mathbf\{J{'\}'} = \int_{t_1}^{t_2} \mathbf\{F{'\}'}(t)\,dt$$
 
 **Derivation from Newton's second law.**
 
-$$\mathbf{'\{'}F{'\}'} = \frac{d\mathbf{'\{'}p{'\}'}}{dt} \implies \mathbf{'\{'}F{'\}'}\,dt = d\mathbf{'\{'}p{'\}'} \implies \int \mathbf{'\{'}F{'\}'}\,dt = \int d\mathbf{'\{'}p{'\}'} = \Delta\mathbf{'\{'}p{'\}'}$$
+$$\mathbf\{F{'\}'} = \frac{d\mathbf\{p{'\}'}}{dt} \implies \mathbf\{F{'\}'}\,dt = d\mathbf\{p{'\}'} \implies \int \mathbf\{F{'\}'}\,dt = \int d\mathbf\{p{'\}'} = \Delta\mathbf\{p{'\}'}$$
 
 $\square$
 
@@ -268,11 +268,11 @@ $J = 0.16(40 - (-35)) = 0.16 \times 75 = 12$ N s. $F = 12/0.001 = 12\,000$ N $= 
 
 <details>
 <summary>Problem 5</summary>
-Two identical particles collide. One is at rest and the other has velocity $\mathbf{'\{'}u{'\}'}$. After an elastic collision, the first particle moves at $30^\circ$ to $\mathbf{'\{'}u{'\}'}$. Find the direction of the second particle and the final speeds.
+Two identical particles collide. One is at rest and the other has velocity $\mathbf\{u{'\}'}$. After an elastic collision, the first particle moves at $30^\circ$ to $\mathbf\{u{'\}'}$. Find the direction of the second particle and the final speeds.
 
 **Answer.** By conservation of momentum (equal masses in elastic collision), the particles move at
 right angles to each other after collision. So the second particle moves at $60^\circ$ to
-$\mathbf{'\{'}u{'\}'}$.
+$\mathbf\{u{'\}'}$.
 
 By symmetry and KE conservation: both have speed $u\cos 60° = u/2$... No, let me be more careful.
 
@@ -379,13 +379,13 @@ $p_{\mathrm{rifle}} = -4.0$ kg m s$^{-1}$, so $v_r = -4.0/2.0 = -2.0$ m s$^{-1}$
 
 **Definition.** In two dimensions, impulse is a vector quantity:
 
-$$\boxed{\mathbf{'\{'}J{'\}'} = \Delta\mathbf{'\{'}p{'\}'} = \mathbf{'\{'}F{'\}'}\,\Delta t}$$
+$$\boxed{\mathbf\{J{'\}'} = \Delta\mathbf\{p{'\}'} = \mathbf\{F{'\}'}\,\Delta t}$$
 
 Resolving into components:
 
 $$J_x = \Delta p_x = F_x\,\Delta t, \qquad J_y = \Delta p_y = F_y\,\Delta t$$
 
-$$|\mathbf{'\{'}J{'\}'}| = \sqrt{J_x^2 + J_y^2}$$
+$$|\mathbf\{J{'\}'}| = \sqrt{J_x^2 + J_y^2}$$
 
 When a ball strikes a smooth wall, only the component of momentum perpendicular to the wall changes.
 The parallel component is unchanged because the wall exerts no force parallel to its surface.
@@ -452,7 +452,7 @@ then:
 
 $$e = \frac{v_2 - v_1}{u_1 - u_2}$$
 
-This is algebraically equivalent to the form $e = -\dfrac{v_1 - v_2}{u_1 - u_2}$ given in Section 4.
+This is algebraically equivalent to the form $e = -{'\dfrac{v_1 - v_2}{u_1 - u_2}'}$ given in Section 4.
 $\square$
 
 **Intuition.** The relative velocity form shows that $e$ is a property of the collision itself (the
@@ -507,11 +507,11 @@ external force on the system is zero and momentum is conserved.
 
 If a body of mass $M$ at rest explodes into two fragments of masses $m_1$ and $m_2$:
 
-$$0 = m_1\mathbf{'\{'}v{'\}'}_1 + m_2\mathbf{'\{'}v{'\}'}_2$$
+$$0 = m_1\mathbf\{v{'\}'}_1 + m_2\mathbf\{v{'\}'}_2$$
 
 The fragments move in opposite directions with speeds inversely proportional to their masses:
 
-$$\frac{|\mathbf{'\{'}v{'\}'}_1|}{|\mathbf{'\{'}v{'\}'}_2|} = \frac{m_2}{m_1}$$
+$$\frac{|\mathbf\{v{'\}'}_1|}{|\mathbf\{v{'\}'}_2|} = \frac{m_2}{m_1}$$
 
 **Kinetic energy in an explosion.** KE increases as chemical (or nuclear) energy is converted to KE
 of fragments:
@@ -610,7 +610,7 @@ Speed after: $v = \sqrt{5.64^2 + 3.42^2} = \sqrt{31.8 + 11.7} = \sqrt{43.5} = 6.
 
 <details>
 <summary>Problem 14</summary>
-A particle falls from height $H$ and bounces on a hard floor with coefficient of restitution $e$. Show that the total vertical distance travelled before the particle comes to rest is $\dfrac{1+e^2}{1-e^2}\,H$.
+A particle falls from height $H$ and bounces on a hard floor with coefficient of restitution $e$. Show that the total vertical distance travelled before the particle comes to rest is ${'\dfrac{1+e^2}{1-e^2}'}\,H$.
 
 **Answer.** The particle falls $H$, rises to $e^2H$, falls $e^2H$, rises to $e^4H$, and so on.
 

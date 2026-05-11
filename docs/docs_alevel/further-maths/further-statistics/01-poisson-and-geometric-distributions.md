@@ -68,8 +68,8 @@ $$
 
 Consider each factor as $n \to \infty$:
 
-- $\dfrac{n(n-1)\cdots(n-r+1)}{n^r} \to 1$ since each of the $r$ factors tends to 1
-- $\left(1-\dfrac{\lambda}{n}\right)^{n-r} = \left(1-\dfrac{\lambda}{n}\right)^n \cdot \left(1-\dfrac{\lambda}{n}\right)^{-r} \to e^{-\lambda} \cdot 1 = e^{-\lambda}$
+- ${'{'\dfrac{n(n-1)\cdots(n-r+1)}{n^r}'}'} \to 1$ since each of the $r$ factors tends to 1
+- $\left(1-{'{'\dfrac{\lambda}{n}'}'}\right)^{n-r} = \left(1-{'{'\dfrac{\lambda}{n}'}'}\right)^n \cdot \left(1-{'{'\dfrac{\lambda}{n}'}'}\right)^{-r} \to e^{-\lambda} \cdot 1 = e^{-\lambda}$
 
 Therefore:
 
@@ -317,7 +317,7 @@ A factory produces items with defects occurring at an average rate of 2.5 per ho
 
 <details>
 <summary>Solution 1</summary>
-For one hour: $X \sim \mathrm{Po}(2.5)$. $P(X=4) = \dfrac{e^{-2.5}(2.5)^4}{4!} = \dfrac{0.08209 \times 39.0625}{24} \approx 0.1336$.
+For one hour: $X \sim \mathrm{Po}(2.5)$. $P(X=4) = {'\dfrac{e^{-2.5}(2.5)^4}{4!}'} = {'{'\dfrac{0.08209 \times 39.0625}{24}'}'} \approx 0.1336$.
 
 For two hours: $Y \sim \mathrm{Po}(5)$ (by additivity).
 $P(Y > 6) = 1 - P(Y \leq 6) = 1 - 0.7622 = 0.2378$.
@@ -334,9 +334,9 @@ A die is rolled repeatedly until a 6 appears. Find the probability that the firs
 
 <details>
 <summary>Solution 2</summary>
-$X \sim \mathrm{Geo}(1/6)$. $P(X=5) = \left(\dfrac{5}{6}\right)^4 \cdot \dfrac{1}{6} = \dfrac{625}{1296} \cdot \dfrac{1}{6} \approx 0.0804$.
+$X \sim \mathrm{Geo}(1/6)$. $P(X=5) = \left({'\dfrac{5}{6}'}\right)^4 \cdot {'\dfrac{1}{6}'} = {'\dfrac{625}{1296}'} \cdot {'\dfrac{1}{6}'} \approx 0.0804$.
 
-$P(X > 10) = \left(\dfrac{5}{6}\right)^{10-1} \cdot \left(\dfrac{5}{6}\right)^0 \cdot 1 = \left(\dfrac{5}{6}\right)^{10} \approx 0.1615$.
+$P(X > 10) = \left({'\dfrac{5}{6}'}\right)^{10-1} \cdot \left({'\dfrac{5}{6}'}\right)^0 \cdot 1 = \left({'\dfrac{5}{6}'}\right)^{10} \approx 0.1615$.
 
 Wait: $P(X > 10) = 1 - P(X \leq 10) = 1 - (1-q^{10}) = q^{10} = (5/6)^{10} \approx 0.1615$.
 
@@ -352,10 +352,10 @@ Prove that $E(X) = \lambda$ for $X \sim \mathrm{Po}(\lambda)$, showing all steps
 
 <details>
 <summary>Solution 3</summary>
-$E(X) = \sum_{r=0}^{\infty}r\cdot\dfrac{e^{-\lambda}\lambda^r}{r!} = \sum_{r=1}^{\infty}\dfrac{e^{-\lambda}\lambda^r}{(r-1)!} = \lambda e^{-\lambda}\sum_{r=1}^{\infty}\dfrac{\lambda^{r-1}}{(r-1)!}$
+$E(X) = \sum_{r=0}^{\infty}r\cdot{'{'\dfrac{e^{-\lambda}\lambda^r}{r!}'}'} = \sum_{r=1}^{\infty}{'{'\dfrac{e^{-\lambda}\lambda^r}{(r-1)!}'}'} = \lambda e^{-\lambda}\sum_{r=1}^{\infty}{'{'\dfrac{\lambda^{r-1}}{(r-1)!}'}'}$
 
 Substituting $k = r-1$:
-$= \lambda e^{-\lambda}\sum_{k=0}^{\infty}\dfrac{\lambda^k}{k!} = \lambda e^{-\lambda}\cdot e^{\lambda} = \lambda$.
+$= \lambda e^{-\lambda}\sum_{k=0}^{\infty}{'{'\dfrac{\lambda^k}{k!}'}'} = \lambda e^{-\lambda}\cdot e^{\lambda} = \lambda$.
 $\blacksquare$
 
 **If you get this wrong, revise:** [Proof that $E(X) = \lambda$](#13-proof-that-ex--lambda) —
@@ -391,7 +391,7 @@ A manufacturer claims that on average 1 in 20 items is defective. In a batch of 
 $X \sim B(500, 1/20)$. $\lambda = np = 500/20 = 25$.
 
 $X \approx \mathrm{Po}(25)$.
-$P(X \leq 35) = \sum_{r=0}^{35}\dfrac{e^{-25}(25)^r}{r!} \approx 0.8878$.
+$P(X \leq 35) = \sum_{r=0}^{35}{'\dfrac{e^{-25}(25)^r}{r!}'} \approx 0.8878$.
 
 **If you get this wrong, revise:**
 [Poisson as approximation to Binomial](#32-poisson-as-approximation-to-binomial) — Section 3.2.
@@ -405,7 +405,7 @@ Prove the memoryless property of the geometric distribution: $P(X > m+n \mid X >
 
 <details>
 <summary>Solution 6</summary>
-$P(X > m+n \mid X > m) = \dfrac{P(X > m+n)}{P(X > m)} = \dfrac{q^{m+n}}{q^m} = q^n = P(X > n)$.
+$P(X > m+n \mid X > m) = {'\dfrac{P(X > m+n)}{P(X > m)}'} = {'\dfrac{q^{m+n}}{q^m}'} = q^n = P(X > n)$.
 
 This uses $P(X > k) = q^k = (1-p)^k$, which follows from $P(X \leq k) = 1 - q^k$. $\blacksquare$
 
@@ -440,7 +440,7 @@ $X \sim \mathrm{Geo}(p)$. Find $P(X = 3 \mid X > 1)$ and show it equals $P(X = 2
 
 <details>
 <summary>Solution 8</summary>
-$P(X = 3 \mid X > 1) = \dfrac{P(X = 3)}{P(X > 1)} = \dfrac{q^2 p}{q} = qp = P(X = 2)$.
+$P(X = 3 \mid X > 1) = {'\dfrac{P(X = 3)}{P(X > 1)}'} = {'\dfrac{q^2 p}{q}'} = qp = P(X = 2)$.
 
 This is a direct consequence of the memoryless property: given that the first trial was a failure,
 the distribution of the remaining trials is the same as starting fresh.
@@ -475,21 +475,21 @@ Section 1.7.
 
 <details>
 <summary>Problem 10</summary>
-If $X \sim \mathrm{Geo}(p)$, find $E(X(X-1))$ and hence verify that $\mathrm{Var}(X) = \dfrac{1-p}{p^2}$.
+If $X \sim \mathrm{Geo}(p)$, find $E(X(X-1))$ and hence verify that $\mathrm{Var}(X) = {'\dfrac{1-p}{p^2}'}$.
 </details>
 
 <details>
 <summary>Solution 10</summary>
 $E(X(X-1)) = \sum_{r=2}^{\infty}r(r-1)q^{r-1}p = pq\sum_{r=2}^{\infty}r(r-1)q^{r-2}$.
 
-Since $\sum_{r=0}^{\infty}q^r = \dfrac{1}{1-q}$, differentiating twice gives
-$\sum_{r=2}^{\infty}r(r-1)q^{r-2} = \dfrac{2}{(1-q)^3}$.
+Since $\sum_{r=0}^{\infty}q^r = {'\dfrac{1}{1-q}'}$, differentiating twice gives
+$\sum_{r=2}^{\infty}r(r-1)q^{r-2} = {'\dfrac{2}{(1-q)^3}'}$.
 
-$E(X(X-1)) = pq \cdot \dfrac{2}{p^3} = \dfrac{2q}{p^2}$.
+$E(X(X-1)) = pq \cdot {'\dfrac{2}{p^3}'} = {'\dfrac{2q}{p^2}'}$.
 
-$E(X^2) = E(X(X-1)) + E(X) = \dfrac{2q}{p^2} + \dfrac{1}{p} = \dfrac{2q+p}{p^2} = \dfrac{2-p}{p^2}$.
+$E(X^2) = E(X(X-1)) + E(X) = {'\dfrac{2q}{p^2}'} + {'\dfrac{1}{p}'} = {'\dfrac{2q+p}{p^2}'} = {'\dfrac{2-p}{p^2}'}$.
 
-$\mathrm{Var}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$. $\blacksquare$
+$\mathrm{Var}(X) = {'\dfrac{2-p}{p^2}'} - {'\dfrac{1}{p^2}'} = {'\dfrac{1-p}{p^2}'}$. $\blacksquare$
 
 **If you get this wrong, revise:**
 [Proof that $\mathrm{Var}(X) = \frac{1-p}{p^2}$](#23-proof-that-mathrmvarx--frac1-pp2) — Section
@@ -545,7 +545,7 @@ $$= 1 - e^{-7.5} \times 633.577 \approx 1 - 0.554 \times 0.634 = 1 - 0.351 = 0.6
 
 **Problem.** A traffic survey records the number of cars passing a point in 10-second intervals. The observed frequencies for $k$ cars are compared with the expected frequencies under $H_0$: $X \sim \mathrm{Po}(3)$. Calculate the expected frequency for each value of $k$ if 200 intervals were observed.
 
-**Solution.** Under $H_0$: $P(X = k) = \dfrac{e^{-3} \cdot 3^k}{k!}$.
+**Solution.** Under $H_0$: $P(X = k) = {'{'\dfrac{e^{-3} \cdot 3^k}{k!}'}'}$.
 
 | $k$ | $P(X = k)$ | Expected freq ($\times 200$) |
 |---|---|---|
@@ -561,11 +561,11 @@ $$= 1 - e^{-7.5} \times 633.577 \approx 1 - 0.554 \times 0.634 = 1 - 0.351 = 0.6
 
 **Problem.** The number of email messages received per hour is recorded over 100 hours: $\{0: 5, 1: 15, 2: 25, 3: 30, 4: 15, 5: 7, 6: 3\}$. Estimate the parameter $\lambda$ and calculate expected frequencies.
 
-**Solution.** $\bar{x} = \dfrac{0(5) + 1(15) + 2(25) + 3(30) + 4(15) + 5(7) + 6(3)}{100} = \dfrac{0 + 15 + 50 + 90 + 60 + 35 + 18}{100} = \dfrac{268}{100} = 2.68$.
+**Solution.** $\bar{x} = {'\dfrac{0(5) + 1(15) + 2(25) + 3(30) + 4(15) + 5(7) + 6(3)}{100}'} = {'\dfrac{0 + 15 + 50 + 90 + 60 + 35 + 18}{100}'} = {'\dfrac{268}{100}'} = 2.68$.
 
 $\hat{\lambda} = 2.68$.
 
-Expected frequency for $k$: $100 \times \dfrac{e^{-2.68}(2.68)^k}{k!}$.
+Expected frequency for $k$: $100 \times {'\dfrac{e^{-2.68}(2.68)^k}{k!}'}$.
 
 | $k$ | Expected |
 |---|---|
@@ -595,7 +595,7 @@ $$P(X + Y = 6) = \frac{e^{-8} \cdot 8^6}{6!} = \frac{262144 \cdot e^{-8}}{720} =
 
 ### Example 7.8: Poisson as a limiting case
 
-**Problem.** Prove that if $X \sim \mathrm{Bin}(n, p)$ with $\lambda = np$ fixed as $n \to \infty$, then $P(X = k) \to \dfrac{e^{-\lambda}\lambda^k}{k!}$.
+**Problem.** Prove that if $X \sim \mathrm{Bin}(n, p)$ with $\lambda = np$ fixed as $n \to \infty$, then $P(X = k) \to {'{'\dfrac{e^{-\lambda}\lambda^k}{k!}'}'}$.
 
 **Solution.**
 
@@ -603,9 +603,9 @@ $$P(X = k) = \binom{n}{k}p^k(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\cdot\frac{\lambda^
 
 $$= \frac{\lambda^k}{k!}\cdot\frac{n(n-1)\cdots(n-k+1)}{n^k}\cdot\left(1-\frac{\lambda}{n}\right)^{n-k}$$
 
-As $n \to \infty$: $\dfrac{n(n-1)\cdots(n-k+1)}{n^k} \to 1$ and $\left(1-\dfrac{\lambda}{n}\right)^{n-k} \to e^{-\lambda}$.
+As $n \to \infty$: ${'{'\dfrac{n(n-1)\cdots(n-k+1)}{n^k}'}'} \to 1$ and $\left(1-{'{'\dfrac{\lambda}{n}'}'}\right)^{n-k} \to e^{-\lambda}$.
 
-Therefore $P(X = k) \to \dfrac{e^{-\lambda}\lambda^k}{k!}$. $\blacksquare$
+Therefore $P(X = k) \to {'{'\dfrac{e^{-\lambda}\lambda^k}{k!}'}'}$. $\blacksquare$
 
 ---
 
@@ -617,7 +617,7 @@ If events occur according to a Poisson process with rate $\lambda$, the time bet
 
 ### 8.2 Geometric distribution and series summation
 
-The probability generating function $G_X(t) = \dfrac{pt}{1-qt}$ of the geometric distribution connects to the summation of geometric series. See [Further Algebra](/docs/docs_alevel/further-maths/pure-mathematics/03-further-algebra).
+The probability generating function $G_X(t) = {'\dfrac{pt}{1-qt}'}$ of the geometric distribution connects to the summation of geometric series. See [Further Algebra](/docs/docs_alevel/further-maths/pure-mathematics/03-further-algebra).
 
 ### 8.3 Poisson and hypothesis testing
 
@@ -698,7 +698,7 @@ $X \sim \mathrm{Po}(2)$.
 
 **(b)** $P(X \leq 3) = e^{-2}(1 + 2 + 2 + 4/3) = e^{-2} \cdot 19/3 \approx 0.8571$.
 
-**(c)** $P(X = 2 \mid X \leq 3) = \dfrac{P(X = 2)}{P(X \leq 3)} = \dfrac{2e^{-2}}{19e^{-2}/3} = \dfrac{6}{19} \approx 0.3158$.
+**(c)** $P(X = 2 \mid X \leq 3) = {'{'\dfrac{P(X = 2)}{P(X \leq 3)}'}'} = {'\dfrac{2e^{-2}}{19e^{-2}/3}'} = {'\dfrac{6}{19}'} \approx 0.3158$.
 
 </details>
 
@@ -715,7 +715,7 @@ The number of radioactive decays per second from a sample is modelled by $X \sim
 
 **(a)** $\hat{\lambda} = 145/50 = 2.9$ per second.
 
-**(b)** $P(X = 3) = \dfrac{e^{-2.9}(2.9)^3}{6} = \dfrac{24.389 \cdot e^{-2.9}}{6} \approx 0.2227$.
+**(b)** $P(X = 3) = {'\dfrac{e^{-2.9}(2.9)^3}{6}'} = {'{'\dfrac{24.389 \cdot e^{-2.9}}{6}'}'} \approx 0.2227$.
 
 </details>
 
@@ -731,7 +731,7 @@ The number of radioactive decays per second from a sample is modelled by $X \sim
 
 **Solution.** (a) $X \sim B(1000, 0.002)$: $P(X=3) = \binom{1000}{3}(0.002)^3(0.998)^{997} \approx 0.1814$.
 
-(b) $\lambda = np = 2$. $X \approx \mathrm{Po}(2)$: $P(X=3) = \dfrac{e^{-2} \cdot 8}{6} \approx 0.1804$.
+(b) $\lambda = np = 2$. $X \approx \mathrm{Po}(2)$: $P(X=3) = {'{'\dfrac{e^{-2} \cdot 8}{6}'}'} \approx 0.1804$.
 
 The approximation is excellent (error $< 0.6\%$).
 
@@ -753,7 +753,7 @@ $$P(X > 20) = 1 - P(X \leq 20) = 1 - \sum_{k=0}^{20} \frac{e^{-16} \cdot 16^k}{k
 
 $$P(X > 4 \mid X > 2) = P(X > 2) = (1-0.3)^2 = 0.49$$
 
-Verification: $P(X > 4) = 0.7^4 = 0.2401$, $P(X > 2) = 0.49$. $P(X>4 \mid X>2) = \dfrac{0.2401}{0.49} = 0.49$. ✓
+Verification: $P(X > 4) = 0.7^4 = 0.2401$, $P(X > 2) = 0.49$. $P(X>4 \mid X>2) = {'\dfrac{0.2401}{0.49}'} = 0.49$. ✓
 
 ### Example 8.4: Poisson hypothesis testing
 
@@ -795,7 +795,7 @@ $$P(T > 0.5) = e^{-4 \times 0.5} = e^{-2} \approx \boxed{0.135}$$
 
 **Problem.** Derive $\mathrm{Var}(X)$ for $X \sim \mathrm{Geo}(p)$, defined as the number of trials until the first success.
 
-**Solution.** $E(X) = \dfrac{1}{p}$. Using $\mathrm{Var}(X) = E(X^2) - [E(X)]^2$:
+**Solution.** $E(X) = {'\dfrac{1}{p}'}$. Using $\mathrm{Var}(X) = E(X^2) - [E(X)]^2$:
 
 $E(X^2) = \displaystyle\sum_{k=1}^{\infty} k^2 p(1-p)^{k-1}$.
 
@@ -885,9 +885,9 @@ The chi-squared goodness-of-fit test is used to test whether data follows a Pois
 
 | Distribution | PMF | $E(X)$ | $\mathrm{Var}(X)$ |
 |---|---|---|---|
-| $\mathrm{Po}(\lambda)$ | $P(X=x) = \dfrac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$ | $\lambda$ |
-| $\mathrm{Geo}(p)$ (trials) | $P(X=x) = p(1-p)^{x-1}$ | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$ |
-| $\mathrm{Geo}(p)$ (failures) | $P(X=x) = p(1-p)^x$ | $\dfrac{1-p}{p}$ | $\dfrac{1-p}{p^2}$ |
+| $\mathrm{Po}(\lambda)$ | $P(X=x) = {'{'\dfrac{e^{-\lambda}\lambda^x}{x!}'}'}$ | $\lambda$ | $\lambda$ |
+| $\mathrm{Geo}(p)$ (trials) | $P(X=x) = p(1-p)^{x-1}$ | ${'\dfrac{1}{p}'}$ | ${'\dfrac{1-p}{p^2}'}$ |
+| $\mathrm{Geo}(p)$ (failures) | $P(X=x) = p(1-p)^x$ | ${'\dfrac{1-p}{p}'}$ | ${'\dfrac{1-p}{p^2}'}$ |
 
 | Property | Poisson | Geometric |
 |---|---|---|
@@ -909,9 +909,9 @@ A shop receives customers at a rate of 8 per hour. Find the probability that:
 <details>
 <summary>Solution</summary>
 
-**(a)** $\lambda = 8 \times 0.5 = 4$. $P(X=5) = \dfrac{e^{-4} \cdot 1024}{120} \approx \boxed{0.1563}$.
+**(a)** $\lambda = 8 \times 0.5 = 4$. $P(X=5) = {'{'\dfrac{e^{-4} \cdot 1024}{120}'}'} \approx \boxed{0.1563}$.
 
-**(b)** $\lambda = 8$. $P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}\dfrac{e^{-8} \cdot 8^k}{k!} \approx 1 - 0.8159 = \boxed{0.184}$.
+**(b)** $\lambda = 8$. $P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}{'{'\dfrac{e^{-8} \cdot 8^k}{k!}'}'} \approx 1 - 0.8159 = \boxed{0.184}$.
 
 **(c)** Inter-arrival time $T \sim \mathrm{Exp}(8)$. $P(T > 1/3) = e^{-8/3} \approx \boxed{0.0695}$.
 
@@ -971,7 +971,7 @@ $P(20 \leq X \leq 30) = P(X \leq 30) - P(X \leq 19)$.
 
 Using the normal approximation: $X \approx N(24, 24)$.
 
-$P(19.5 < X < 30.5) \approx P\!\left(\dfrac{19.5-24}{\sqrt{24}} < Z < \dfrac{30.5-24}{\sqrt{24}}\right)$
+$P(19.5 < X < 30.5) \approx P\!\left({'{'\dfrac{19.5-24}{\sqrt{24}}'}'} < Z < {'{'\dfrac{30.5-24}{\sqrt{24}}'}'}\right)$
 
 $= P(-0.919 < Z < 1.327) = \Phi(1.327) - \Phi(-0.919) = 0.908 - 0.179 = \boxed{0.729}$
 
@@ -1017,7 +1017,7 @@ The number of trials until the $r$-th success follows $\mathrm{NegBin}(r, p)$:
 
 $$P(X = n) = \binom{n-1}{r-1}p^r(1-p)^{n-r} \quad \text{for } n = r, r+1, \ldots$$
 
-$E(X) = \dfrac{r}{p}$, $\mathrm{Var}(X) = \dfrac{r(1-p)}{p^2}$.
+$E(X) = {'\dfrac{r}{p}'}$, $\mathrm{Var}(X) = {'\dfrac{r(1-p)}{p^2}'}$.
 
 The geometric distribution is $\mathrm{NegBin}(1, p)$.
 
@@ -1041,9 +1041,9 @@ Calls arrive at rate 3 per hour. Find the probability that the third call arrive
 
 The time of the 3rd call is $\mathrm{Gamma}(3, 3)$ (sum of 3 independent $\mathrm{Exp}(3)$ variables).
 
-$P(T_3 < 1) = P(\text{at least 3 calls in 1 hour}) = \sum_{k=3}^{\infty}\dfrac{e^{-3}3^k}{k!}$
+$P(T_3 < 1) = P(\text{at least 3 calls in 1 hour}) = \sum_{k=3}^{\infty}{'\dfrac{e^{-3}3^k}{k!}'}$
 
-$= 1 - P(X \leq 2) = 1 - e^{-3}\!\left(1 + 3 + \dfrac{9}{2}\right) = 1 - e^{-3}\cdot 8.5$
+$= 1 - P(X \leq 2) = 1 - e^{-3}\!\left(1 + 3 + {'\dfrac{9}{2}'}\right) = 1 - e^{-3}\cdot 8.5$
 
 $\approx 1 - 0.4232 \approx \boxed{0.577}$.
 
@@ -1051,7 +1051,7 @@ $\approx 1 - 0.4232 \approx \boxed{0.577}$.
 
 ### Question 16
 
-**Prove that** for $X \sim \mathrm{Geo}(p)$, the moment generating function is $M_X(t) = \dfrac{pe^t}{1-(1-p)e^t}$ for $t < -\ln(1-p)$.
+**Prove that** for $X \sim \mathrm{Geo}(p)$, the moment generating function is $M_X(t) = {'\dfrac{pe^t}{1-(1-p)e^t}'}$ for $t < -\ln(1-p)$.
 
 <details>
 <summary>Solution</summary>

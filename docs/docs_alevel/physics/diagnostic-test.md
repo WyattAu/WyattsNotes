@@ -137,7 +137,7 @@ $= 3.38$ mJ.
 
 <details>
 <summary>Q13. A cell of e.m.f. 9.0 V and internal resistance 1.5 $\Omega$ is connected to a 4.5 $\Omega$ load. What is the terminal p.d.?</summary>
-**Answer.** $I = 9.0/(4.5 + 1.5) = 1.5$ A. $V = \mathcal{'\{'}E{'\}'} - Ir = 9.0 - 1.5 \times 1.5 = 6.75$ V.
+**Answer.** $I = 9.0/(4.5 + 1.5) = 1.5$ A. $V = \mathcal\{E{'\}'} - Ir = 9.0 - 1.5 \times 1.5 = 6.75$ V.
 
 <b>If you get this wrong, revise:</b> [DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
 
@@ -212,7 +212,7 @@ m s$^{-1}$.
 
 <details>
 <summary>Q21. A coil of 150 turns experiences a flux change of 0.04 Wb in 0.02 s. What is the average induced e.m.f.?</summary>
-**Answer.** $\mathcal{'\{'}E{'\}'} = N\Delta\Phi/\Delta t = 150 \times 0.04/0.02 = 300$ V.
+**Answer.** $\mathcal\{E{'\}'} = N\Delta\Phi/\Delta t = 150 \times 0.04/0.02 = 300$ V.
 
 <b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
 
@@ -221,7 +221,7 @@ m s$^{-1}$.
 <details>
 <summary>Q22. State Faraday's law and Lenz's law.</summary>
 **Answer.** **Faraday's law:** the induced e.m.f. equals the negative rate of change of flux
-linkage: $\mathcal{'\{'}E{'\}'} = -d(N\Phi)/dt$. **Lenz's law:** the direction of the induced current opposes
+linkage: $\mathcal\{E{'\}'} = -d(N\Phi)/dt$. **Lenz's law:** the direction of the induced current opposes
 the change in flux that produced it.
 
 <b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)

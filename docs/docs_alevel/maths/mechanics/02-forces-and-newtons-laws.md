@@ -40,11 +40,11 @@ external force.
 
 **Law.** The resultant force on a body equals the rate of change of momentum:
 
-$$\mathbf{'\{'}F{'\}'} = \frac{d\mathbf{'\{'}p{'\}'}}{dt} = \frac{d(m\mathbf{'\{'}v{'\}'})}{dt}$$
+$$\mathbf\{F{'\}'} = \frac{d\mathbf\{p{'\}'}}{dt} = \frac{d(m\mathbf\{v{'\}'})}{dt}$$
 
 For constant mass:
 
-$$\boxed{\mathbf{'\{'}F{'\}'} = m\mathbf{'\{'}a{'\}'}}$$
+$$\boxed{\mathbf\{F{'\}'} = m\mathbf\{a{'\}'}}$$
 
 ### 1.3 Newton's Third Law
 
@@ -193,9 +193,9 @@ For a smooth, light pulley:
 ### 7.1 Action-reaction pairs
 
 Newton's Third Law states that forces always occur in pairs. If body A exerts a force
-$\mathbf{'\{'}F{'\}'}_{AB}$ on body B, then body B exerts a force $\mathbf{'\{'}F{'\}'}_{BA}$ on body A such that:
+$\mathbf\{F{'\}'}_{AB}$ on body B, then body B exerts a force $\mathbf\{F{'\}'}_{BA}$ on body A such that:
 
-$$\mathbf{'\{'}F{'\}'}_{AB} = -\mathbf{'\{'}F{'\}'}_{BA}$$
+$$\mathbf\{F{'\}'}_{AB} = -\mathbf\{F{'\}'}_{BA}$$
 
 These two forces are simultaneous, equal in magnitude, opposite in direction, collinear, and act on
 **different bodies**.
@@ -207,8 +207,8 @@ A valid Third Law pair must satisfy **all** of the following criteria:
 1. **Different bodies.** The two forces act on two different objects.
 2. **Same type.** Both forces are of the same physical type (e.g. both gravitational, both contact,
    both frictional).
-3. **Equal magnitude.** $|\mathbf{'\{'}F{'\}'}_{AB}| = |\mathbf{'\{'}F{'\}'}_{BA}|$.
-4. **Opposite direction.** $\mathbf{'\{'}F{'\}'}_{AB}$ and $\mathbf{'\{'}F{'\}'}_{BA}$ are antiparallel.
+3. **Equal magnitude.** $|\mathbf\{F{'\}'}_{AB}| = |\mathbf\{F{'\}'}_{BA}|$.
+4. **Opposite direction.** $\mathbf\{F{'\}'}_{AB}$ and $\mathbf\{F{'\}'}_{BA}$ are antiparallel.
 
 ### 7.3 Common misconceptions
 
@@ -488,7 +488,7 @@ surface).
 
 A rigid body is in equilibrium if and only if:
 
-1. The resultant force is zero: $\Sigma \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$
+1. The resultant force is zero: $\Sigma \mathbf\{F{'\}'} = \mathbf\{0{'\}'}$
 2. The resultant moment about any point is zero: $\Sigma M = 0$
 
 For coplanar forces, these conditions give:

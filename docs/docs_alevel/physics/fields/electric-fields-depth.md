@@ -32,7 +32,7 @@ line joining them.
 The net force on a charge due to multiple other charges is the **vector sum** of the individual
 Coulomb forces:
 
-$$\mathbf{'\{'}F{'\}'}_{\mathrm{net}} = \sum_i \frac{q\,q_i}{4\pi\varepsilon_0 r_i^2}\,\hat{\mathbf{'\{'}r{'\}'}}_i$$
+$$\mathbf\{F{'\}'}_{\mathrm{net}} = \sum_i \frac{q\,q_i}{4\pi\varepsilon_0 r_i^2}\,\hat{\mathbf\{r{'\}'}}_i$$
 
 This linearity is fundamental: each pair of charges interacts independently of all others.
 
@@ -52,10 +52,10 @@ electromagnetic forces.
 
 ## 2. Electric Field Strength
 
-**Definition.** The electric field strength $\mathbf{'\{'}E{'\}'}$ at a point is the force per unit positive
+**Definition.** The electric field strength $\mathbf\{E{'\}'}$ at a point is the force per unit positive
 charge:
 
-$$\boxed{\mathbf{'\{'}E{'\}'} = \frac{\mathbf{'\{'}F{'\}'}}{q}}$$
+$$\boxed{\mathbf\{E{'\}'} = \frac{\mathbf\{F{'\}'}}{q}}$$
 
 SI units: N C$^{-1}$, equivalent to V m$^{-1}$.
 
@@ -84,7 +84,7 @@ edges.
 
 Field lines provide a visual representation of the electric field:
 
-- The direction of the line at any point gives the direction of $\mathbf{'\{'}E{'\}'}$.
+- The direction of the line at any point gives the direction of $\mathbf\{E{'\}'}$.
 - The density of lines is proportional to the field strength.
 - Lines begin on positive charges and end on negative charges.
 - Lines never cross (the field has a unique direction at every point).
@@ -400,7 +400,7 @@ zero-potential surface at infinity. The field lines radiate outward from each ch
 each other.
 
 At the midpoint, the fields due to each charge are equal in magnitude ($kq/(d/2)^2$) and opposite in
-direction (each points away from its own charge). By symmetry, $\mathbf{'\{'}E{'\}'}_1 + \mathbf{'\{'}E{'\}'}_2 = 0$.
+direction (each points away from its own charge). By symmetry, $\mathbf\{E{'\}'}_1 + \mathbf\{E{'\}'}_2 = 0$.
 This is an unstable equilibrium point.
 
 </details>

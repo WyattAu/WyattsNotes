@@ -385,7 +385,7 @@ consistency.
 When two objects move in different directions, their velocities are combined using vector addition.
 The **velocity of A relative to B** is:
 
-$$\boxed{\mathbf{'\{'}v{'\}'}_{AB} = \mathbf{'\{'}v{'\}'}_A - \mathbf{'\{'}v{'\}'}_B}$$
+$$\boxed{\mathbf\{v{'\}'}_{AB} = \mathbf\{v{'\}'}_A - \mathbf\{v{'\}'}_B}$$
 
 This is the velocity A appears to have when observed from B's frame of reference.
 
@@ -400,7 +400,7 @@ component.
 **Example.** A river flows east at $3.0$ m s$^{-1}$. A boat heads north at $5.0$ m s$^{-1}$ relative
 to the water. The boat's velocity relative to the ground is:
 
-$$\mathbf{'\{'}v{'\}'}_{\mathrm{ground}} = (3.0\ \mathrm{east}) + (5.0\ \mathrm{north})$$
+$$\mathbf\{v{'\}'}_{\mathrm{ground}} = (3.0\ \mathrm{east}) + (5.0\ \mathrm{north})$$
 
 Speed relative to ground: $v = \sqrt{3^2 + 5^2} = \sqrt{34} = 5.83$ m s$^{-1}$.
 
@@ -426,9 +426,9 @@ velocity. Never add the magnitudes directly unless the velocities are in the sam
 
 ### Relative Velocity and Closest Approach
 
-Two objects A and B are on a collision course if their relative velocity $\mathbf{'\{'}v{'\}'}_{AB}$ is
+Two objects A and B are on a collision course if their relative velocity $\mathbf\{v{'\}'}_{AB}$ is
 directed along the line joining them. If not, the closest approach occurs when the position vector
-from A to B is perpendicular to the relative velocity: $\mathbf{'\{'}r{'\}'}_{BA} \cdot \mathbf{'\{'}v{'\}'}_{BA} = 0$.
+from A to B is perpendicular to the relative velocity: $\mathbf\{r{'\}'}_{BA} \cdot \mathbf\{v{'\}'}_{BA} = 0$.
 
 <details>
 <summary>Example: Will two ships collide?</summary>
@@ -436,12 +436,12 @@ from A to B is perpendicular to the relative velocity: $\mathbf{'\{'}r{'\}'}_{BA
 Ship A sails north at $10$ m s$^{-1}$ and is at position $(0, 0)$ m. Ship B sails east at $10$ m
 s$^{-1}$ and is at position $(200, 0)$ m. Will they collide?
 
-$\mathbf{'\{'}v{'\}'}_{BA} = \mathbf{'\{'}v{'\}'}_B - \mathbf{'\{'}v{'\}'}_A = (10\ \mathrm{east}) - (10\ \mathrm{north}) = (10, -10)$
+$\mathbf\{v{'\}'}_{BA} = \mathbf\{v{'\}'}_B - \mathbf\{v{'\}'}_A = (10\ \mathrm{east}) - (10\ \mathrm{north}) = (10, -10)$
 m s$^{-1}$.
 
 The position of B relative to A is $(200, 0)$. The relative velocity $(10, -10)$ is **not** parallel
 to $(200, 0)$, so they will not collide. The closest approach occurs when
-$\mathbf{'\{'}r{'\}'}_{BA} \cdot \mathbf{'\{'}v{'\}'}_{BA} = 0$.
+$\mathbf\{r{'\}'}_{BA} \cdot \mathbf\{v{'\}'}_{BA} = 0$.
 
 </details>
 

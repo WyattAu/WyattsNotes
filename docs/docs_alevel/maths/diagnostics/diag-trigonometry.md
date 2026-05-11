@@ -147,7 +147,7 @@ Solution: $x = 0$ only.
 
 Let $\theta = 3x$. Since $x \in [0, 2\pi)$, we have $\theta \in [0, 6\pi)$.
 
-$\cos\theta = \frac{1}{2}$ gives $\theta = \frac{\pi}{3} + 2n\pi$ or $\theta = \frac{5\pi}{3} + 2n\pi$ for $n \in \mathbb{'\{'}Z{'\}'}$.
+$\cos\theta = \frac{1}{2}$ gives $\theta = \frac{\pi}{3} + 2n\pi$ or $\theta = \frac{5\pi}{3} + 2n\pi$ for $n \in \mathbb\{Z{'\}'}$.
 
 Systematically listing all $\theta \in [0, 6\pi)$:
 
@@ -329,7 +329,7 @@ The function $f$ is defined by $f(x) = \cos x$ on the domain $\left[0, \frac{\pi
 
 **(c)** A student claims $f^{-1}(f(\pi)) = \pi$. Explain why this is incorrect.
 
-**(d)** The function $h$ is defined by $h(x) = \arcsin(\cos x)$ for $x \in \mathbb{'\{'}R{'\}'}$. Express $h(x)$ as a piecewise function and find all $x$ for which $h(x) = x$.
+**(d)** The function $h$ is defined by $h(x) = \arcsin(\cos x)$ for $x \in \mathbb\{R{'\}'}$. Express $h(x)$ as a piecewise function and find all $x$ for which $h(x) = x$.
 
 [Difficulty: hard. Tests the interplay between trigonometric functions and their inverses, requiring careful attention to domain and range restrictions.]
 
@@ -353,7 +353,7 @@ The domains differ: $g \circ f$ has domain $\left[0, \frac{\pi}{2}\right]$ while
 
 **(c)** $\pi$ is not in the domain of $f$ (which is $\left[0, \frac{\pi}{2}\right]$), so $f(\pi)$ is undefined. The expression $f^{-1}(f(\pi))$ is therefore meaningless.
 
-Even if $f$ were extended to $\mathbb{'\{'}R{'\}'}$, then $f(\pi) = -1$, but $-1$ is not in the domain of $f^{-1}$ (which is $[0, 1]$, the range of $f$ on its original domain). So $f^{-1}(-1)$ would also be undefined.
+Even if $f$ were extended to $\mathbb\{R{'\}'}$, then $f(\pi) = -1$, but $-1$ is not in the domain of $f^{-1}$ (which is $[0, 1]$, the range of $f$ on its original domain). So $f^{-1}(-1)$ would also be undefined.
 
 **(d)** $h(x) = \arcsin(\cos x)$. Using $\cos x = \sin\!\left(\frac{\pi}{2} - x\right)$:
 
@@ -369,10 +369,10 @@ By periodicity (period $2\pi$):
 
 $$h(x) = \begin{cases} \frac{\pi}{2} - x + 2n\pi & \text{if } 2n\pi \leq x \leq (2n+1)\pi \\ x - \frac{3\pi}{2} + 2n\pi & \text{if } (2n+1)\pi \leq x \leq (2n+2)\pi \end{cases}$$
 
-for $n \in \mathbb{'\{'}Z{'\}'}$.
+for $n \in \mathbb\{Z{'\}'}$.
 
 To find $h(x) = x$: on $[0, \pi]$, $\frac{\pi}{2} - x = x \implies x = \frac{\pi}{4}$.
 
 On $[\pi, 2\pi]$: $x - \frac{3\pi}{2} = x \implies 0 = \frac{3\pi}{2}$, impossible.
 
-By periodicity: $x = \frac{\pi}{4} + 2n\pi$ for $n \in \mathbb{'\{'}Z{'\}'}$.
+By periodicity: $x = \frac{\pi}{4} + 2n\pi$ for $n \in \mathbb\{Z{'\}'}$.

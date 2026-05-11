@@ -313,11 +313,11 @@ Since all three conditions are satisfied, the system is in equilibrium.
 
 **Question:**
 
-Three forces act on a particle. Force $\mathbf{'\{'}F{'\}'}_1 = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ N, force $\mathbf{'\{'}F{'\}'}_2 = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$ N, and force $\mathbf{'\{'}F{'\}'}_3 = \begin{pmatrix} a \\ b \end{pmatrix}$ N.
+Three forces act on a particle. Force $\mathbf\{F{'\}'}_1 = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ N, force $\mathbf\{F{'\}'}_2 = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$ N, and force $\mathbf\{F{'\}'}_3 = \begin{pmatrix} a \\ b \end{pmatrix}$ N.
 
 **(a)** Find the values of $a$ and $b$ for which the particle is in equilibrium.
 
-**(b)** With the values of $a$ and $b$ from part (a), a fourth force $\mathbf{'\{'}F{'\}'}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix}$ N is added. Find the magnitude and direction of the resultant force.
+**(b)** With the values of $a$ and $b$ from part (a), a fourth force $\mathbf\{F{'\}'}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix}$ N is added. Find the magnitude and direction of the resultant force.
 
 **(c)** The particle has mass $3$ kg. Find the initial acceleration and the velocity after $4$ seconds, assuming the resultant force from part (b) acts constantly.
 
@@ -327,7 +327,7 @@ Three forces act on a particle. Force $\mathbf{'\{'}F{'\}'}_1 = \begin{pmatrix} 
 
 **(a)** For equilibrium, the resultant force must be zero:
 
-$$\mathbf{'\{'}F{'\}'}_1 + \mathbf{'\{'}F{'\}'}_2 + \mathbf{'\{'}F{'\}'}_3 = \mathbf{'\{'}0{'\}'}$$
+$$\mathbf\{F{'\}'}_1 + \mathbf\{F{'\}'}_2 + \mathbf\{F{'\}'}_3 = \mathbf\{0{'\}'}$$
 
 $$\begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -2 \\ 4 \end{pmatrix} + \begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$$
 
@@ -335,22 +335,22 @@ $$\begin{pmatrix} 1 + a \\ 3 + b \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pma
 
 $$a = -1, \quad b = -3$$
 
-So $\mathbf{'\{'}F{'\}'}_3 = \begin{pmatrix} -1 \\ -3 \end{pmatrix}$ N.
+So $\mathbf\{F{'\}'}_3 = \begin{pmatrix} -1 \\ -3 \end{pmatrix}$ N.
 
-**(b)** With $\mathbf{'\{'}F{'\}'}_4$ added:
+**(b)** With $\mathbf\{F{'\}'}_4$ added:
 
-$$\mathbf{'\{'}F{'\}'}_{\text{resultant}} = \mathbf{'\{'}F{'\}'}_1 + \mathbf{'\{'}F{'\}'}_2 + \mathbf{'\{'}F{'\}'}_3 + \mathbf{'\{'}F{'\}'}_4 = \mathbf{'\{'}0{'\}'} + \mathbf{'\{'}F{'\}'}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix} \text{ N}$$
+$$\mathbf\{F{'\}'}_{\text{resultant}} = \mathbf\{F{'\}'}_1 + \mathbf\{F{'\}'}_2 + \mathbf\{F{'\}'}_3 + \mathbf\{F{'\}'}_4 = \mathbf\{0{'\}'} + \mathbf\{F{'\}'}_4 = \begin{pmatrix} 5 \\ 2 \end{pmatrix} \text{ N}$$
 
-(Since $\mathbf{'\{'}F{'\}'}_1 + \mathbf{'\{'}F{'\}'}_2 + \mathbf{'\{'}F{'\}'}_3 = \mathbf{'\{'}0{'\}'}$ from part (a).)
+(Since $\mathbf\{F{'\}'}_1 + \mathbf\{F{'\}'}_2 + \mathbf\{F{'\}'}_3 = \mathbf\{0{'\}'}$ from part (a).)
 
-Magnitude: $\lvert\mathbf{'\{'}F{'\}'}_{\text{resultant}}\rvert = \sqrt{25 + 4} = \sqrt{29} \approx 5.39$ N.
+Magnitude: $\lvert\mathbf\{F{'\}'}_{\text{resultant}}\rvert = \sqrt{25 + 4} = \sqrt{29} \approx 5.39$ N.
 
 Direction: $\theta = \arctan\!\left(\frac{2}{5}\right) \approx 21.8°$ above the positive $x$-axis.
 
-**(c)** By Newton's Second Law: $\mathbf{'\{'}a{'\}'} = \frac{\mathbf{'\{'}F{'\}'}}{m} = \frac{1}{3}\begin{pmatrix} 5 \\ 2 \end{pmatrix} = \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix}$ m/s$^2$.
+**(c)** By Newton's Second Law: $\mathbf\{a{'\}'} = \frac{\mathbf\{F{'\}'}}{m} = \frac{1}{3}\begin{pmatrix} 5 \\ 2 \end{pmatrix} = \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix}$ m/s$^2$.
 
 The velocity after $4$ seconds (starting from rest):
 
-$$\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}u{'\}'} + \mathbf{'\{'}a{'\}'}t = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix} \times 4 = \begin{pmatrix} 20/3 \\ 8/3 \end{pmatrix} \text{ m/s}$$
+$$\mathbf\{v{'\}'} = \mathbf\{u{'\}'} + \mathbf\{a{'\}'}t = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + \begin{pmatrix} 5/3 \\ 2/3 \end{pmatrix} \times 4 = \begin{pmatrix} 20/3 \\ 8/3 \end{pmatrix} \text{ m/s}$$
 
 Speed $= \sqrt{(20/3)^2 + (8/3)^2} = \sqrt{\frac{400 + 64}{9}} = \sqrt{\frac{464}{9}} = \frac{2\sqrt{116}}{3} \approx 7.18$ m/s.

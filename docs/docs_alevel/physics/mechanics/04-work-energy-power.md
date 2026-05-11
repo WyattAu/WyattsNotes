@@ -23,15 +23,15 @@ Explore the simulation above to develop intuition for this topic.
 
 ## 1. Work Done by a Force
 
-**Definition.** The **work done** by a constant force $\mathbf{'\{'}F{'\}'}$ when its point of application
-moves through displacement $\mathbf{'\{'}s{'\}'}$ is:
+**Definition.** The **work done** by a constant force $\mathbf\{F{'\}'}$ when its point of application
+moves through displacement $\mathbf\{s{'\}'}$ is:
 
-$$W = \mathbf{'\{'}F{'\}'} \cdot \mathbf{'\{'}s{'\}'} = Fs\cos\theta$$
+$$W = \mathbf\{F{'\}'} \cdot \mathbf\{s{'\}'} = Fs\cos\theta$$
 
-where $\theta$ is the angle between $\mathbf{'\{'}F{'\}'}$ and $\mathbf{'\{'}s{'\}'}$.
+where $\theta$ is the angle between $\mathbf\{F{'\}'}$ and $\mathbf\{s{'\}'}$.
 
-**Derivation.** We decompose $\mathbf{'\{'}F{'\}'}$ into components parallel and perpendicular to
-$\mathbf{'\{'}s{'\}'}$. Only the parallel component $F\cos\theta$ does work (the perpendicular component
+**Derivation.** We decompose $\mathbf\{F{'\}'}$ into components parallel and perpendicular to
+$\mathbf\{s{'\}'}$. Only the parallel component $F\cos\theta$ does work (the perpendicular component
 produces no displacement in its direction). Work is defined as force multiplied by the displacement
 in the direction of the force, hence $W = (F\cos\theta) \cdot s = Fs\cos\theta$.
 

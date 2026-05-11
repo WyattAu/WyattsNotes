@@ -25,7 +25,7 @@ intuition.
 
 ### 1.1 Definition
 
-The **moment** of a force $\mathbf{'\{'}F{'\}'}$ about a point $O$ is:
+The **moment** of a force $\mathbf\{F{'\}'}$ about a point $O$ is:
 
 $$M_O = F \times d$$
 
@@ -80,7 +80,7 @@ force to the pivot point, not just the distance along the beam.
 A rigid body is in equilibrium if and only if:
 
 1. **The resultant force is zero:**
-   $$\sum \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$$
+   $$\sum \mathbf\{F{'\}'} = \mathbf\{0{'\}'}$$
 
 2. **The resultant moment about any point is zero:**
    $$\sum M_O = 0 \quad \mathrm{for\ any\ point}\ O$$
@@ -88,11 +88,11 @@ A rigid body is in equilibrium if and only if:
 **Theorem.** If the resultant force on a body is zero and the resultant moment about **one** point
 is zero, then the resultant moment about **every** point is zero.
 
-**Proof.** Suppose $\sum \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$ and $\sum M_A = 0$. For any other point $B$:
+**Proof.** Suppose $\sum \mathbf\{F{'\}'} = \mathbf\{0{'\}'}$ and $\sum M_A = 0$. For any other point $B$:
 
-$$M_B = M_A + \mathbf{'\{'}r{'\}'}_{BA} \times \sum \mathbf{'\{'}F{'\}'} = 0 + \mathbf{'\{'}r{'\}'}_{BA} \times \mathbf{'\{'}0{'\}'} = 0$$
+$$M_B = M_A + \mathbf\{r{'\}'}_{BA} \times \sum \mathbf\{F{'\}'} = 0 + \mathbf\{r{'\}'}_{BA} \times \mathbf\{0{'\}'} = 0$$
 
-where $\mathbf{'\{'}r{'\}'}_{BA}$ is the position vector from $B$ to $A$. $\blacksquare$
+where $\mathbf\{r{'\}'}_{BA}$ is the position vector from $B$ to $A$. $\blacksquare$
 
 This theorem means we only need to take moments about **one** point, but we can choose any point
 to simplify the calculation.
@@ -161,16 +161,16 @@ $$\bar{x} = \frac{\sum m_i x_i}{\sum m_i}, \qquad \bar{y} = \frac{\sum m_i y_i}{
 **Uniform rectangular lamina:** Intersection of the diagonals.
 
 **Uniform triangular lamina:** At the intersection of the medians, which is at a distance
-$\dfrac{2}{3}$ of the median length from each vertex.
+${'\dfrac{2}{3}'}$ of the median length from each vertex.
 
 **Proof for a triangle.** Place the triangle with vertices at $(0,0)$, $(a,0)$, and $(0,b)$.
-A strip parallel to the base at height $y$ has width $a\!\left(1 - \dfrac{y}{b}\right)$ and mass
+A strip parallel to the base at height $y$ has width $a\!\left(1 - {'\dfrac{y}{b}'}\right)$ and mass
 proportional to this width.
 
 $$\bar{y} = \frac{\int_0^b y \cdot a\!\left(1 - \frac{y}{b}\right)dy}{\int_0^b a\!\left(1 - \frac{y}{b}\right)dy} = \frac{\left[\frac{y^2}{2} - \frac{y^3}{3b}\right]_0^b}{\left[y - \frac{y^2}{2b}\right]_0^b} = \frac{\frac{b^2}{2} - \frac{b^2}{3}}{b - \frac{b}{2}} = \frac{\frac{b^2}{6}}{\frac{b}{2}} = \frac{b}{3}$$
 
-The centre of mass is at height $\dfrac{b}{3}$, which is $\dfrac{1}{3}$ of the way from the base
-and $\dfrac{2}{3}$ from the apex. $\blacksquare$
+The centre of mass is at height ${'\dfrac{b}{3}'}$, which is ${'\dfrac{1}{3}'}$ of the way from the base
+and ${'\dfrac{2}{3}'}$ from the apex. $\blacksquare$
 
 ### 3.3 Composite bodies
 
@@ -185,9 +185,9 @@ $AD$. Find the centre of mass of the remaining lamina.
 
 Rectangle: area $= 48\;\mathrm{cm}^2$, centre at $(4, 3)$.
 
-Semicircle: radius $= 4\;\mathrm{cm}$, area $= \dfrac{1}{2}\pi(16) = 8\pi\;\mathrm{cm}^2$.
-Centre of mass of the semicircle is at distance $\dfrac{4r}{3\pi} = \dfrac{16}{3\pi}$ from the
-diameter, i.e. at $(4, 6 - \dfrac{16}{3\pi})$.
+Semicircle: radius $= 4\;\mathrm{cm}$, area $= {'\dfrac{1}{2}'}\pi(16) = 8\pi\;\mathrm{cm}^2$.
+Centre of mass of the semicircle is at distance ${'{'\dfrac{4r}{3\pi}'}'} = {'{'\dfrac{16}{3\pi}'}'}$ from the
+diameter, i.e. at $(4, 6 - {'{'\dfrac{16}{3\pi}'}'})$.
 
 Treating the removed semicircle as a negative mass:
 
@@ -355,7 +355,7 @@ the composite lamina.
 <summary>Solution</summary>
 
 Square: area $= 100$, centre at $(5, 5)$.
-Triangle: area $= 30$, centre at $\left(\dfrac{10}{3}, 3\right)$ (one-third from the base).
+Triangle: area $= 30$, centre at $\left({'\dfrac{10}{3}'}, 3\right)$ (one-third from the base).
 
 $$\bar{x} = \frac{100 \times 5 + 30 \times \frac{10}{3}}{130} = \frac{500 + 100}{130} = \frac{600}{130} \approx 4.62\;\mathrm{cm}$$
 
@@ -415,11 +415,11 @@ the string.
 
 The string $BC$ has length $\sqrt{9 + 4} = \sqrt{13}\;\mathrm{m}$.
 
-$\sin\theta = \dfrac{2}{\sqrt{13}}$ where $\theta$ is the angle between the string and the rod.
+$\sin\theta = {'{'\dfrac{2}{\sqrt{13}}'}'}$ where $\theta$ is the angle between the string and the rod.
 
 Taking moments about $A$:
 
-$T \times 3 \times \dfrac{2}{\sqrt{13}} - 80 \times 1.5 - 120 \times 3 = 0$
+$T \times 3 \times {'{'\dfrac{2}{\sqrt{13}}'}'} - 80 \times 1.5 - 120 \times 3 = 0$
 
 $T = \frac{120 + 360}{6/\sqrt{13}} = \frac{480\sqrt{13}}{6} = 80\sqrt{13} \approx 288.4\;\mathrm{N}$
 

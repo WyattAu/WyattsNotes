@@ -73,14 +73,14 @@ clockwise moments about any point equals the sum of anticlockwise moments about 
 
 Consider a rigid body in equilibrium. For equilibrium, two conditions must hold:
 
-1. **Translational equilibrium:** $\sum \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$ (no net force).
+1. **Translational equilibrium:** $\sum \mathbf\{F{'\}'} = \mathbf\{0{'\}'}$ (no net force).
 2. **Rotational equilibrium:** The body does not rotate.
 
 For rotational equilibrium, consider any point $O$. The total torque about $O$ must be zero:
 
-$$\sum_{i} \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_i = \mathbf{'\{'}0{'\}'}$$
+$$\sum_{i} \mathbf\{r{'\}'}_i \times \mathbf\{F{'\}'}_i = \mathbf\{0{'\}'}$$
 
-where $\mathbf{'\{'}r{'\}'}_i$ is the position vector of the point of application of $\mathbf{'\{'}F{'\}'}_i$ relative
+where $\mathbf\{r{'\}'}_i$ is the position vector of the point of application of $\mathbf\{F{'\}'}_i$ relative
 to $O$.
 
 This means the clockwise and anticlockwise moments balance:
@@ -93,11 +93,11 @@ of weight $P$ is on the bridge at distance $a$ from the left pier, the reaction 
 are found by taking moments about each pier in turn.
 
 Taking moments about the left pier:
-$R_{\mathrm{right}} \times L = W \times \dfrac{L}{2} + P \times a$, so
-$R_{\mathrm{right}} = \dfrac{W}{2} + \dfrac{Pa}{L}$.
+$R_{\mathrm{right}} \times L = W \times {'\dfrac{L}{2}'} + P \times a$, so
+$R_{\mathrm{right}} = {'\dfrac{W}{2}'} + {'\dfrac{Pa}{L}'}$.
 
 By symmetry (vertical equilibrium):
-$R_{\mathrm{left}} = W + P - R_{\mathrm{right}} = \dfrac{W}{2} + \dfrac{P(L-a)}{L}$.
+$R_{\mathrm{left}} = W + P - R_{\mathrm{right}} = {'\dfrac{W}{2}'} + {'\dfrac{P(L-a)}{L}'}$.
 
 Notice that as the vehicle moves right ($a$ increases), $R_{\mathrm{right}}$ increases and
 $R_{\mathrm{left}}$ decreases — the bridge load redistributes continuously.
@@ -129,7 +129,7 @@ These three conditions are both necessary and sufficient for equilibrium.
 **Definition.** A **couple** is a pair of equal and opposite forces whose lines of action do not
 coincide. A couple produces a **turning effect** (rotation) without any translational effect.
 
-Since the forces are equal and opposite, $\sum \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$, so there is no net force
+Since the forces are equal and opposite, $\sum \mathbf\{F{'\}'} = \mathbf\{0{'\}'}$, so there is no net force
 and no acceleration of the centre of mass. However, the net moment (torque) is non-zero.
 
 ### 3.1.2 Moment of a couple
@@ -162,10 +162,10 @@ independent of $O$. $\blacksquare$
 In two dimensions, torque (moment) can be treated as a scalar with a sign indicating direction. In
 three dimensions, torque is a vector:
 
-$$\boldsymbol{'\{'}\tau{'\}'} = \mathbf{'\{'}r{'\}'} \times \mathbf{'\{'}F{'\}'}$$
+$$\boldsymbol\{\tau{'\}'} = \mathbf\{r{'\}'} \times \mathbf\{F{'\}'}$$
 
-The direction of $\boldsymbol{'\{'}\tau{'\}'}$ is given by the right-hand rule and is perpendicular to the
-plane containing $\mathbf{'\{'}r{'\}'}$ and $\mathbf{'\{'}F{'\}'}$.
+The direction of $\boldsymbol\{\tau{'\}'}$ is given by the right-hand rule and is perpendicular to the
+plane containing $\mathbf\{r{'\}'}$ and $\mathbf\{F{'\}'}$.
 
 :::info
 info
@@ -233,7 +233,7 @@ $\alpha L$ from the base), the moment equation becomes:
 
 $$R_w \times L\sin\theta = W \times \frac{L}{2}\cos\theta + P \times \alpha L\cos\theta$$
 
-This gives $R_w = \left(\dfrac{W}{2} + P\alpha\right)\cot\theta$, and the required friction
+This gives $R_w = \left({'\dfrac{W}{2}'} + P\alpha\right)\cot\theta$, and the required friction
 increases accordingly. The higher the person climbs (larger $\alpha$), the more friction is needed —
 climb too high and the ladder slips.
 
@@ -253,7 +253,7 @@ If the beam is supported at ends $A$ and $B$ with reactions $R_A$ and $R_B$:
 
 Taking moments about $B$: $R_A \times L = W \times d_B$
 
-So the centre of mass is $d_B = \dfrac{R_A L}{W}$ from end $B$.
+So the centre of mass is $d_B = {'\dfrac{R_A L}{W}'}$ from end $B$.
 
 ### 3.3.2 Strategy for non-uniform beam problems
 
@@ -362,20 +362,20 @@ Midpoint of $BC$ is $(6, 2)$. The triangle extends $2\sqrt{3}$ upward from $BC$,
 $(6, 4 + 2\sqrt{3})$.
 
 Triangle centroid:
-$\left(\dfrac{6+6+6}{3}, \dfrac{0+4+(4+2\sqrt{3})}{3}\right) = \left(6, \dfrac{8+2\sqrt{3}}{3}\right)$.
+$\left({'\dfrac{6+6+6}{3}'}, {'{'\dfrac{0+4+(4+2\sqrt{3})}{3}'}'}\right) = \left(6, {'{'\dfrac{8+2\sqrt{3}}{3}'}'}\right)$.
 
 **Step 2: Apply the formula.**
 
 $$\bar{x} = \frac{24 \times 3 + 4\sqrt{3} \times 6}{24 + 4\sqrt{3}} = \frac{72 + 24\sqrt{3}}{24 + 4\sqrt{3}}$$
 
-Dividing numerator and denominator by 4: $\bar{x} = \dfrac{18 + 6\sqrt{3}}{6 + \sqrt{3}}$.
+Dividing numerator and denominator by 4: $\bar{x} = {'{'\dfrac{18 + 6\sqrt{3}}{6 + \sqrt{3}}'}'}$.
 
 Rationalising:
-$\bar{x} = \dfrac{(18 + 6\sqrt{3})(6 - \sqrt{3})}{36 - 3} = \dfrac{108 - 18\sqrt{3} + 36\sqrt{3} - 18}{33} = \dfrac{90 + 18\sqrt{3}}{33} \approx 3.69\,\mathrm{cm}$.
+$\bar{x} = {'{'\dfrac{(18 + 6\sqrt{3})(6 - \sqrt{3})}{36 - 3}'}'} = {'{'\dfrac{108 - 18\sqrt{3} + 36\sqrt{3} - 18}{33}'}'} = {'{'\dfrac{90 + 18\sqrt{3}}{33}'}'} \approx 3.69\,\mathrm{cm}$.
 
 $$\bar{y} = \frac{24 \times 2 + 4\sqrt{3} \times \frac{8+2\sqrt{3}}{3}}{24 + 4\sqrt{3}} = \frac{48 + \frac{32\sqrt{3}+24}{3}}{24 + 4\sqrt{3}} = \frac{\frac{168+32\sqrt{3}}{3}}{24+4\sqrt{3}}$$
 
-$\bar{y} = \dfrac{168 + 32\sqrt{3}}{72 + 12\sqrt{3}} \approx 2.30\,\mathrm{cm}$.
+$\bar{y} = {'{'\dfrac{168 + 32\sqrt{3}}{72 + 12\sqrt{3}}'}'} \approx 2.30\,\mathrm{cm}$.
 
 ### 4.3.2 Subtraction method
 
@@ -394,7 +394,7 @@ This is extremely useful for L-shapes, T-shapes, and shapes with circular or tri
 | Uniform rectangular lamina  | Intersection of diagonals                                |
 | Uniform triangular lamina   | $\frac{1}{3}$ of the way from each side along the median |
 | Uniform circular lamina     | Centre of the circle                                     |
-| Uniform semicircular lamina | $\dfrac{4r}{3\pi}$ from the flat side                    |
+| Uniform semicircular lamina | ${'{'\dfrac{4r}{3\pi}'}'}$ from the flat side                    |
 
 <hr />
 
@@ -426,13 +426,13 @@ corner:
 
 $P \times 1.2 = 500 \times 0.3$ (weight acts at the centre, $0.3\,\mathrm{m}$ from the corner).
 
-$P = \dfrac{150}{1.2} = 125\,\mathrm{N}$.
+$P = {'\dfrac{150}{1.2}'} = 125\,\mathrm{N}$.
 
 Since $125 \lt 200$, the block **topples first** at $P = 125\,\mathrm{N}$.
 
 :::info
 info
-slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$, toppling occurs
+slides. Here ${'\dfrac{1.2}{0.3}'} = 4$ and ${'\dfrac{1}{0.4}'} = 2.5$. Since $4 > 2.5$, toppling occurs
 first, which matches our calculation.
 :::
 
@@ -466,7 +466,7 @@ Weight acts at midpoint: $12g\,\mathrm{N}$ at $1.5\,\mathrm{m}$ from $A$.
 
 Moments about $A$: $T\cos 30° \times 3 = 12g \times 1.5$.
 
-$T = \dfrac{12(9.8)(1.5)}{3\cos 30°} = \dfrac{176.4}{2.598} \approx 67.9\,\mathrm{N}$.
+$T = {'{'\dfrac{12(9.8)(1.5)}{3\cos 30°}'}'} = {'\dfrac{176.4}{2.598}'} \approx 67.9\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Definition of a Moment](#1-definition-of-a-moment) — Section 1.
 
@@ -479,9 +479,9 @@ Find the centre of mass of three particles of masses $2\,\mathrm{kg}$, $3\,\math
 
 <details>
 <summary>Solution 3</summary>
-$\bar{x} = \dfrac{2(0) + 3(4) + 5(2)}{2+3+5} = \dfrac{0+12+10}{10} = \dfrac{22}{10} = 2.2$.
+$\bar{x} = {'\dfrac{2(0) + 3(4) + 5(2)}{2+3+5}'} = {'\dfrac{0+12+10}{10}'} = {'\dfrac{22}{10}'} = 2.2$.
 
-$\bar{y} = \dfrac{2(0) + 3(0) + 5(3)}{10} = \dfrac{15}{10} = 1.5$.
+$\bar{y} = {'\dfrac{2(0) + 3(0) + 5(3)}{10}'} = {'\dfrac{15}{10}'} = 1.5$.
 
 Centre of mass at $(2.2, 1.5)$.
 
@@ -502,12 +502,12 @@ The beam remains in equilibrium as long as neither end lifts off, i.e., the reac
 non-negative.
 
 For the reaction at $B \geq 0$: moment of weight about $C$ must not exceed restoring moment.
-$3W(x-l) \leq W \cdot l \implies 3x - 3l \leq l \implies x \leq \dfrac{4l}{3}$.
+$3W(x-l) \leq W \cdot l \implies 3x - 3l \leq l \implies x \leq {'\dfrac{4l}{3}'}$.
 
 For the reaction at $A \geq 0$:
-$3W(l-x) \leq W \cdot l \implies 3l - 3x \leq l \implies x \geq \dfrac{2l}{3}$.
+$3W(l-x) \leq W \cdot l \implies 3l - 3x \leq l \implies x \geq {'\dfrac{2l}{3}'}$.
 
-Range: $\dfrac{2l}{3} \leq x \leq \dfrac{4l}{3}$.
+Range: ${'\dfrac{2l}{3}'} \leq x \leq {'\dfrac{4l}{3}'}$.
 
 **If you get this wrong, revise:** [Tilting and Toppling](#5-tilting-and-toppling) — Section 5.
 
@@ -542,7 +542,7 @@ Horizontal: $R_w = F$. Vertical: $R_g = 200$.
 
 Moments about base of ladder: $R_w \times 5\sin 65° = 200 \times 2.5\cos 65^\circ$.
 
-$R_w = \dfrac{500\cos 65°}{5\sin 65°} = \dfrac{100\cos 65°}{\sin 65°} = 100\cot 65° \approx 46.6\,\mathrm{N}$.
+$R_w = {'{'\dfrac{500\cos 65°}{5\sin 65°}'}'} = {'{'\dfrac{100\cos 65°}{\sin 65°}'}'} = 100\cot 65° \approx 46.6\,\mathrm{N}$.
 
 $F = R_w = 46.6\,\mathrm{N}$. $\mu_{\min} = F/R_g = 46.6/200 = 0.233$.
 
@@ -557,11 +557,11 @@ Find the centre of mass of a uniform lamina in the shape of a triangle with vert
 
 <details>
 <summary>Solution 7</summary>
-The centre of mass of a uniform triangular lamina is at the intersection of the medians, which is $\dfrac{1}{3}$ of the way from each side.
+The centre of mass of a uniform triangular lamina is at the intersection of the medians, which is ${'\dfrac{1}{3}'}$ of the way from each side.
 
-$\bar{x} = \dfrac{0+6+0}{3} = 2$, $\bar{y} = \dfrac{0+0+4}{3} = \dfrac{4}{3}$.
+$\bar{x} = {'\dfrac{0+6+0}{3}'} = 2$, $\bar{y} = {'\dfrac{0+0+4}{3}'} = {'\dfrac{4}{3}'}$.
 
-Centre of mass at $\left(2, \dfrac{4}{3}\right)$.
+Centre of mass at $\left(2, {'\dfrac{4}{3}'}\right)$.
 
 **If you get this wrong, revise:** [Standard Results](#44-standard-results) — Section 4.4.
 
@@ -576,7 +576,7 @@ A uniform rod $AB$ of length $6\,\mathrm{m}$ and weight $100\,\mathrm{N}$ is hin
 <summary>Solution 8</summary>
 Moments about $A$: $T \times 6\sin 60° = 100 \times 3$ (weight acts at midpoint).
 
-$T = \dfrac{300}{6 \times 0.866} = \dfrac{300}{5.196} \approx 57.74\,\mathrm{N}$.
+$T = {'{'\dfrac{300}{6 \times 0.866}'}'} = {'\dfrac{300}{5.196}'} \approx 57.74\,\mathrm{N}$.
 
 Resolving horizontally: $R_x = T\sin 60° = 57.74 \times 0.866 = 50\,\mathrm{N}$.
 
@@ -605,9 +605,9 @@ $= 9$, centre at $(6.5, 4.5)$.
 
 Using the subtraction method:
 
-$\bar{x} = \dfrac{48 \times 4 - 9 \times 6.5}{48 - 9} = \dfrac{192 - 58.5}{39} = \dfrac{133.5}{39} = 3.42\,\mathrm{cm}$.
+$\bar{x} = {'{'\dfrac{48 \times 4 - 9 \times 6.5}{48 - 9}'}'} = {'\dfrac{192 - 58.5}{39}'} = {'\dfrac{133.5}{39}'} = 3.42\,\mathrm{cm}$.
 
-$\bar{y} = \dfrac{48 \times 3 - 9 \times 4.5}{39} = \dfrac{144 - 40.5}{39} = \dfrac{103.5}{39} = 2.65\,\mathrm{cm}$.
+$\bar{y} = {'{'\dfrac{48 \times 3 - 9 \times 4.5}{39}'}'} = {'\dfrac{144 - 40.5}{39}'} = {'\dfrac{103.5}{39}'} = 2.65\,\mathrm{cm}$.
 
 Centre of mass at approximately $(3.42, 2.65)$.
 
@@ -633,9 +633,9 @@ Moments about the base of the ladder (perpendicular distances):
 
 $R_w \times 6\sin 55° = 150 \times 3\cos 55° + 800 \times 4\cos 55^\circ$.
 
-$R_w = \dfrac{(450 + 3200)\cos 55°}{6\sin 55°} = \dfrac{3650\cos 55°}{6\sin 55°} = \dfrac{3650}{6}\cot 55^\circ$.
+$R_w = {'{'\dfrac{(450 + 3200)\cos 55°}{6\sin 55°}'}'} = {'{'\dfrac{3650\cos 55°}{6\sin 55°}'}'} = {'\dfrac{3650}{6}'}\cot 55^\circ$.
 
-$\cot 55° \approx 0.7002$, so $R_w = \dfrac{3650 \times 0.7002}{6} \approx 426.0\,\mathrm{N}$.
+$\cot 55° \approx 0.7002$, so $R_w = {'{'\dfrac{3650 \times 0.7002}{6}'}'} \approx 426.0\,\mathrm{N}$.
 
 $\mu_{\min} = F/R_g = R_w/R_g = 426.0/950 = 0.448$.
 
@@ -679,7 +679,7 @@ $500 \times 5 = 300x + 800$.
 
 $2500 = 300x + 800$.
 
-$300x = 1700 \implies x = \dfrac{1700}{300} = \dfrac{17}{3} \approx 5.67\,\mathrm{m}$.
+$300x = 1700 \implies x = {'\dfrac{1700}{300}'} = {'\dfrac{17}{3}'} \approx 5.67\,\mathrm{m}$.
 
 Since $x > 5\,\mathrm{m}$ (the length of the beam), the centre of mass lies **beyond** end $B$. This
 makes sense — the tension at $B$ is large relative to the load, suggesting the beam is heavier near
@@ -688,7 +688,7 @@ end $B$.
 Wait — let us check: if the beam is $5\,\mathrm{m}$ long, the centre of mass must lie on the beam.
 Let us re-examine.
 
-$2500 = 300x + 800 \implies x = \dfrac{1700}{300} = 5.67\,\mathrm{m}$.
+$2500 = 300x + 800 \implies x = {'\dfrac{1700}{300}'} = 5.67\,\mathrm{m}$.
 
 This is impossible for a $5\,\mathrm{m}$ beam. The given data is inconsistent — there must be an
 error in the problem statement. In an exam, you would state that no valid position exists.
@@ -740,16 +740,16 @@ topple:
 
 $P \times h = 400 \times 0.25$ (half the base width).
 
-$P_{\mathrm{topple}} = \dfrac{100}{h}$.
+$P_{\mathrm{topple}} = {'\dfrac{100}{h}'}$.
 
 For sliding to occur before toppling: $P_{\mathrm{slide}} \lt P_{\mathrm{topple}}$.
 
-$120 \lt \dfrac{100}{h} \implies h \lt \dfrac{100}{120} = \dfrac{5}{6} \approx 0.833\,\mathrm{m}$.
+$120 \lt {'\dfrac{100}{h}'} \implies h \lt {'\dfrac{100}{120}'} = {'\dfrac{5}{6}'} \approx 0.833\,\mathrm{m}$.
 
-So the block will slide before it topples if $h \lt \dfrac{5}{6}\,\mathrm{m}$ (i.e., the force is
-applied below $\dfrac{5}{6}\,\mathrm{m}$ from the ground).
+So the block will slide before it topples if $h \lt {'\dfrac{5}{6}'}\,\mathrm{m}$ (i.e., the force is
+applied below ${'\dfrac{5}{6}'}\,\mathrm{m}$ from the ground).
 
-For $h > \dfrac{5}{6}\,\mathrm{m}$, the block topples first. At $h = \dfrac{5}{6}\,\mathrm{m}$,
+For $h > {'\dfrac{5}{6}'}\,\mathrm{m}$, the block topples first. At $h = {'\dfrac{5}{6}'}\,\mathrm{m}$,
 sliding and toppling occur simultaneously.
 
 **If you get this wrong, revise:** [Tilting and Toppling](#5-tilting-and-toppling) — Section 5.
@@ -776,7 +776,7 @@ $T$ in $BC$ is needed.
 
 The thrust acts along $CB$. The perpendicular distance from $A(0,0)$ to the line through $B(4,0)$
 with direction $(-4,-3)$ is
-$\dfrac{|(-4)(0-0) - (-3)(0-4)|}{\sqrt{(-4)^2+(-3)^2}} = \dfrac{12}{5} = 2.4\,\mathrm{m}$.
+${'{'\dfrac{|(-4)(0-0) - (-3)(0-4)|}{\sqrt{(-4)^2+(-3)^2}}'}'} = {'\dfrac{12}{5}'} = 2.4\,\mathrm{m}$.
 
 Clockwise moment of thrust: $T \times 2.4$ (thrust pushes from $B$ toward $C$, creating a clockwise
 moment about $A$).
@@ -787,9 +787,9 @@ $T \times 2.4 = 240 \implies T = 100\,\mathrm{N}$ (compression).
 
 Resolving forces at $A$:
 
-Horizontal: $R_x = T\cos\alpha = 100 \times \dfrac{4}{5} = 80\,\mathrm{N}$.
+Horizontal: $R_x = T\cos\alpha = 100 \times {'\dfrac{4}{5}'} = 80\,\mathrm{N}$.
 
-Vertical: $R_y = 120 - T\sin\alpha = 120 - 100 \times \dfrac{3}{5} = 120 - 60 = 60\,\mathrm{N}$.
+Vertical: $R_y = 120 - T\sin\alpha = 120 - 100 \times {'\dfrac{3}{5}'} = 120 - 60 = 60\,\mathrm{N}$.
 
 $R = \sqrt{80^2 + 60^2} = \sqrt{6400 + 3600} = \sqrt{10000} = 100\,\mathrm{N}$.
 
@@ -806,11 +806,11 @@ A uniform solid is formed from a hemisphere of radius $6\,\mathrm{cm}$ attached 
 
 <details>
 <summary>Solution 16</summary>
-**Hemisphere:** The centre of mass of a uniform solid hemisphere is at $\dfrac{3r}{8}$ from the flat face.
+**Hemisphere:** The centre of mass of a uniform solid hemisphere is at ${'\dfrac{3r}{8}'}$ from the flat face.
 
-$\bar{x}_H = \dfrac{3 \times 6}{8} = \dfrac{18}{8} = 2.25\,\mathrm{cm}$ from the flat face.
+$\bar{x}_H = {'{'\dfrac{3 \times 6}{8}'}'} = {'\dfrac{18}{8}'} = 2.25\,\mathrm{cm}$ from the flat face.
 
-Volume of hemisphere: $V_H = \dfrac{2}{3}\pi r^3 = \dfrac{2}{3}\pi(216) = 144\pi\,\mathrm{cm}^3$.
+Volume of hemisphere: $V_H = {'\dfrac{2}{3}'}\pi r^3 = {'\dfrac{2}{3}'}\pi(216) = 144\pi\,\mathrm{cm}^3$.
 
 **Cylinder:** Centre of mass at midpoint: $\bar{x}_C = 5\,\mathrm{cm}$ from its base (which is the
 flat face of the hemisphere).
@@ -819,9 +819,9 @@ Volume of cylinder: $V_C = \pi r^2 h = \pi(36)(10) = 360\pi\,\mathrm{cm}^3$.
 
 **Composite body:** Taking moments about the flat face:
 
-$\bar{x} = \dfrac{V_H \times 2.25 + V_C \times 5}{V_H + V_C} = \dfrac{144\pi \times 2.25 + 360\pi \times 5}{144\pi + 360\pi}$
+$\bar{x} = {'{'\dfrac{V_H \times 2.25 + V_C \times 5}{V_H + V_C}'}'} = {'{'\dfrac{144\pi \times 2.25 + 360\pi \times 5}{144\pi + 360\pi}'}'}$
 
-$= \dfrac{324\pi + 1800\pi}{504\pi} = \dfrac{2124}{504} = \dfrac{59}{14} \approx 4.21\,\mathrm{cm}$.
+$= {'{'\dfrac{324\pi + 1800\pi}{504\pi}'}'} = {'\dfrac{2124}{504}'} = {'\dfrac{59}{14}'} \approx 4.21\,\mathrm{cm}$.
 
 Centre of mass is approximately $4.21\,\mathrm{cm}$ from the flat face.
 

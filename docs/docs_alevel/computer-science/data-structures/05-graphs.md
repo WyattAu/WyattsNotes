@@ -20,7 +20,7 @@ $E \subseteq V \times V$.
 
 - **Undirected graph:** Edges have no direction; $(u, v) = (v, u)$
 - **Directed graph (digraph):** Edges are ordered pairs; $(u, v) \neq (v, u)$
-- **Weighted graph:** Each edge has an associated weight $w: E \to \mathbb{'\{'}R{'\}'}$
+- **Weighted graph:** Each edge has an associated weight $w: E \to \mathbb\{R{'\}'}$
 
 ### Terminology
 

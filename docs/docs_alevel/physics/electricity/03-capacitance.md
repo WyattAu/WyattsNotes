@@ -49,7 +49,7 @@ The electric field between the plates is uniform:
 $$E = \frac{Q}{\varepsilon_0 A}$$
 
 (This comes from Gauss's law:
-$\oint \mathbf{'\{'}E{'\}'} \cdot d\mathbf{'\{'}A{'\}'} = Q_{\mathrm{enclosed}}/\varepsilon_0$, applied to a Gaussian
+$\oint \mathbf\{E{'\}'} \cdot d\mathbf\{A{'\}'} = Q_{\mathrm{enclosed}}/\varepsilon_0$, applied to a Gaussian
 surface enclosing one plate.)
 
 The p.d. between the plates is:
@@ -124,23 +124,23 @@ Common Pitfall Note the "mirror" relationship with resistors: capacitors in para
 
 ## 5. RC Circuits: Charging
 
-Consider a capacitor $C$ charged through a resistor $R$ from a supply of e.m.f. $\mathcal{'\{'}E{'\}'}$.
+Consider a capacitor $C$ charged through a resistor $R$ from a supply of e.m.f. $\mathcal\{E{'\}'}$.
 
 ### Derivation of $Q = Q_0(1 - e^{-t/RC})$
 
 By Kirchhoff's second law at any instant:
 
-$$\mathcal{'\{'}E{'\}'} = V_R + V_C = IR + \frac{Q}{C}$$
+$$\mathcal\{E{'\}'} = V_R + V_C = IR + \frac{Q}{C}$$
 
 Since $I = dQ/dt$:
 
-$$\mathcal{'\{'}E{'\}'} = R\frac{dQ}{dt} + \frac{Q}{C}$$
+$$\mathcal\{E{'\}'} = R\frac{dQ}{dt} + \frac{Q}{C}$$
 
 Rearranging:
 
-$$\frac{dQ}{dt} = \frac{\mathcal{'\{'}E{'\}'}}{R} - \frac{Q}{RC}$$
+$$\frac{dQ}{dt} = \frac{\mathcal\{E{'\}'}}{R} - \frac{Q}{RC}$$
 
-Let $Q_0 = C\mathcal{'\{'}E{'\}'}$ (the maximum charge when fully charged):
+Let $Q_0 = C\mathcal\{E{'\}'}$ (the maximum charge when fully charged):
 
 $$\frac{dQ}{dt} = \frac{Q_0 - Q}{RC}$$
 
@@ -160,17 +160,17 @@ $$\boxed{Q = Q_0\left(1 - e^{-t/RC}\right)}$$
 
 The current is:
 
-$$I = \frac{dQ}{dt} = \frac{Q_0}{RC}e^{-t/RC} = \frac{\mathcal{'\{'}E{'\}'}}{R}e^{-t/RC} = I_0 e^{-t/RC}$$
+$$I = \frac{dQ}{dt} = \frac{Q_0}{RC}e^{-t/RC} = \frac{\mathcal\{E{'\}'}}{R}e^{-t/RC} = I_0 e^{-t/RC}$$
 
 The p.d. across the capacitor is:
 
-$$V_C = \frac{Q}{C} = \mathcal{'\{'}E{'\}'}\left(1 - e^{-t/RC}\right)$$
+$$V_C = \frac{Q}{C} = \mathcal\{E{'\}'}\left(1 - e^{-t/RC}\right)$$
 
 ## 6. RC Circuits: Discharging
 
 When a charged capacitor discharges through a resistor:
 
-$$\mathcal{'\{'}E{'\}'} = 0 \implies 0 = IR + \frac{Q}{C}$$
+$$\mathcal\{E{'\}'} = 0 \implies 0 = IR + \frac{Q}{C}$$
 
 $$R\frac{dQ}{dt} = -\frac{Q}{C}$$
 
@@ -266,7 +266,7 @@ $$E_{\mathrm{eff}} = E_0 - E_b = E_0 - \frac{\sigma_b}{\varepsilon_0}$$
 
 ### Derivation of $E_{\mathrm{eff}} = E_0/\varepsilon_r$
 
-The **polarisation** $\mathbf{'\{'}P{'\}'}$ of the dielectric is defined as the dipole moment per unit volume.
+The **polarisation** $\mathbf\{P{'\}'}$ of the dielectric is defined as the dipole moment per unit volume.
 For a linear, isotropic dielectric, the polarisation is proportional to the effective field:
 
 $$P = \chi_e \varepsilon_0 E_{\mathrm{eff}}$$

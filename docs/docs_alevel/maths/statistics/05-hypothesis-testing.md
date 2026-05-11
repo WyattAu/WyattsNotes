@@ -163,7 +163,7 @@ $H_0: \mu = 500$, $H_1: \mu \lt{} 500$. $\alpha = 0.05$.
 
 Under $H_0$: $\bar{X} \sim N(500, 6^2/30) = N(500, 1.2)$.
 
-$z = \dfrac{497 - 500}{\sqrt{1.2}} = \dfrac{-3}{1.0954} = -2.739$.
+$z = {'{'\dfrac{497 - 500}{\sqrt{1.2}}'}'} = {'\dfrac{-3}{1.0954}'} = -2.739$.
 
 Critical value: $P(Z \lt{} -1.645) = 0.05$.
 
@@ -173,9 +173,9 @@ There is sufficient evidence that the mean weight has decreased.
 
 ### 6.2 Large sample test for a proportion
 
-For large $n$: $\hat{p} \sim N\!\left(p, \dfrac{p(1-p)}{n}\right)$ approximately.
+For large $n$: $\hat{p} \sim N\!\left(p, {'\dfrac{p(1-p)}{n}'}\right)$ approximately.
 
-Test statistic: $z = \dfrac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$.
+Test statistic: $z = {'{'\dfrac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}'}'}$.
 
 <hr />
 
@@ -262,7 +262,7 @@ $$X \approx N(np, np(1-p))$$
 
 Equivalently, for the sample proportion $\hat{p} = X/n$:
 
-$$\hat{p} \approx N\!\left(p, \dfrac{p(1-p)}{n}\right)$$
+$$\hat{p} \approx N\!\left(p, {'\dfrac{p(1-p)}{n}'}\right)$$
 
 :::warning
 warning
@@ -274,8 +274,8 @@ $H_0$), not the observed sample proportion $\hat{p}$.
 Since the binomial distribution is discrete and the normal distribution is continuous, a
 **continuity correction** improves the accuracy of the approximation:
 
-- For $P(X \leq k)$, use $P\!\left(Z \leq \dfrac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)$.
-- For $P(X \geq k)$, use $P\!\left(Z \geq \dfrac{k - 0.5 - np}{\sqrt{np(1-p)}}\right)$.
+- For $P(X \leq k)$, use $P\!\left(Z \leq {'{'\dfrac{k + 0.5 - np}{\sqrt{np(1-p)}}'}'}\right)$.
+- For $P(X \geq k)$, use $P\!\left(Z \geq {'{'\dfrac{k - 0.5 - np}{\sqrt{np(1-p)}}'}'}\right)$.
 - For $P(X = k)$, use $P(k - 0.5 \lt{} X \lt{} k + 0.5)$ in the normal.
 
 ### 9.3 Worked example
@@ -292,7 +292,7 @@ Under $H_0$: $X \approx N(48, 28.8)$, so $\sigma = \sqrt{28.8} \approx 5.367$.
 
 Using continuity correction:
 
-$$z = \dfrac{58 - 0.5 - 48}{5.367} = \dfrac{9.5}{5.367} = 1.770$$
+$$z = {'\dfrac{58 - 0.5 - 48}{5.367}'} = {'\dfrac{9.5}{5.367}'} = 1.770$$
 
 Two-tailed critical values: $\pm 1.96$. Since $|1.770| \lt{} 1.96$, **do not reject** $H_0$.
 
@@ -322,11 +322,11 @@ refers to the long-run proportion of intervals (across many repeated samples) th
 For large $n$ where $n\hat{p} \gt{} 5$ and $n(1 - \hat{p}) \gt{} 5$, the sample proportion $\hat{p}$
 is approximately normal. The $100(1-\alpha)\%$ confidence interval for $p$ is:
 
-$$\hat{p} \pm z_{\alpha/2}\sqrt{\dfrac{\hat{p}(1 - \hat{p})}{n}}$$
+$$\hat{p} \pm z_{\alpha/2}\sqrt{{'{'\dfrac{\hat{p}(1 - \hat{p})}{n}'}'}}$$
 
 For a 95% confidence interval, $z_{\alpha/2} = 1.96$:
 
-$$\hat{p} \pm 1.96\sqrt{\dfrac{\hat{p}(1 - \hat{p})}{n}}$$
+$$\hat{p} \pm 1.96\sqrt{{'{'\dfrac{\hat{p}(1 - \hat{p})}{n}'}'}}$$
 
 The **margin of error** is $1.96\sqrt{\hat{p}(1-\hat{p})/n}$, which decreases as $n$ increases.
 
@@ -341,7 +341,7 @@ There is a direct and important link between confidence intervals and two-tailed
 
 **Example.** Using the bus survey data: $\hat{p} = 58/120 \approx 0.483$, $n = 120$.
 
-$$95\%\mathrm{ CI} = 0.483 \pm 1.96\sqrt{\dfrac{0.483 \times 0.517}{120}} = 0.483 \pm 1.96 \times 0.0456$$
+$$95\%\mathrm{ CI} = 0.483 \pm 1.96\sqrt{{'{'\dfrac{0.483 \times 0.517}{120}'}'}} = 0.483 \pm 1.96 \times 0.0456$$
 
 $$95\%\mathrm{ CI} = 0.483 \pm 0.0894 = (0.394, 0.573)$$
 
@@ -401,7 +401,7 @@ $H_1: \mu \neq 50$.
 
 Under $H_0$: $\bar{X} \sim N(50, 3^2/40) = N(50, 0.225)$.
 
-$$z = \dfrac{50.8 - 50}{\sqrt{0.225}} = \dfrac{0.8}{0.4743} = 1.687$$
+$$z = {'{'\dfrac{50.8 - 50}{\sqrt{0.225}}'}'} = {'\dfrac{0.8}{0.4743}'} = 1.687$$
 
 $$p\mathrm{-value} = 2 \times P(Z \gt{} 1.687) = 2 \times (1 - 0.9542) = 0.0916$$
 
@@ -427,7 +427,7 @@ $X \sim B(60, p)$. $H_0: p = 1/6$, $H_1: p \neq 1/6$. Two-tailed, $\alpha = 0.05
 Under $H_0$: $X \sim B(60, 1/6)$. $\mu = 10$,
 $\sigma = \sqrt{60 \times \frac{1}{6} \times \frac{5}{6}} = \sqrt{50/6} \approx 2.887$.
 
-Using normal approximation: $z = \dfrac{16 - 10}{2.887} = 2.078$.
+Using normal approximation: $z = {'\dfrac{16 - 10}{2.887}'} = 2.078$.
 
 Two-tailed: critical values $\pm 1.96$. $|2.078| \gt{} 1.96$, so **reject** $H_0$.
 
@@ -451,7 +451,7 @@ $\hat{p} = 170/200 = 0.85$.
 
 Under $H_0$: $\hat{p} \sim N(0.9, \frac{0.9 \times 0.1}{200}) = N(0.9, 0.00045)$.
 
-$z = \dfrac{0.85 - 0.9}{\sqrt{0.00045}} = \dfrac{-0.05}{0.0212} = -2.358$.
+$z = {'{'\dfrac{0.85 - 0.9}{\sqrt{0.00045}}'}'} = {'\dfrac{-0.05}{0.0212}'} = -2.358$.
 
 Critical value: $-1.645$. Since $-2.358 \lt{} -1.645$, **reject** $H_0$.
 
@@ -508,7 +508,7 @@ $H_0: \mu = 1000$, $H_1: \mu \lt{} 1000$. $\alpha = 0.01$.
 
 $\bar{X} \sim N(1000, 40^2/50) = N(1000, 32)$ approximately.
 
-$z = \dfrac{985 - 1000}{\sqrt{32}} = \dfrac{-15}{5.657} = -2.652$.
+$z = {'{'\dfrac{985 - 1000}{\sqrt{32}}'}'} = {'\dfrac{-15}{5.657}'} = -2.652$.
 
 Critical value at 1%: $-2.326$. Since $-2.652 \lt{} -2.326$, **reject** $H_0$.
 
@@ -552,7 +552,7 @@ $H_0: \mu = 70$, $H_1: \mu \neq 70$. Two-tailed, $\alpha = 0.05$.
 
 $\bar{X} \sim N(70, 12^2/25) = N(70, 5.76)$ approximately.
 
-$z = \dfrac{66 - 70}{\sqrt{5.76}} = \dfrac{-4}{2.4} = -1.667$.
+$z = {'{'\dfrac{66 - 70}{\sqrt{5.76}}'}'} = {'\dfrac{-4}{2.4}'} = -1.667$.
 
 Two-tailed critical values: $\pm 1.96$. $|-1.667| \lt{} 1.96$, so **do not reject** $H_0$.
 
@@ -614,7 +614,7 @@ Type II error = failing to reject $H_0$ when $\mu = 52$.
 
 $\bar{X} \sim N(52, 1)$ under the true distribution.
 
-$P(\bar{X} \lt{} 51.645 \mid \mu = 52) = P\!\left(Z \lt{} \dfrac{51.645 - 52}{1}\right) = P(Z \lt{} -0.355) \approx 0.3613$.
+$P(\bar{X} \lt{} 51.645 \mid \mu = 52) = P\!\left(Z \lt{} {'\dfrac{51.645 - 52}{1}'}\right) = P(Z \lt{} -0.355) \approx 0.3613$.
 
 So $\beta \approx 0.361$ and the power is $1 - \beta \approx 0.639$.
 
@@ -661,7 +661,7 @@ $\sigma = \sqrt{32} \approx 5.657$.
 
 Using continuity correction:
 
-$$z = \dfrac{45 - 0.5 - 40}{5.657} = \dfrac{4.5}{5.657} = 0.796$$
+$$z = {'\dfrac{45 - 0.5 - 40}{5.657}'} = {'\dfrac{4.5}{5.657}'} = 0.796$$
 
 Two-tailed critical values: $\pm 1.96$. $|0.796| \lt{} 1.96$, so **do not reject** $H_0$.
 
@@ -684,7 +684,7 @@ In a random sample of 150 voters, 87 support a new policy. (a) Construct a 95% c
 Check: $n\hat{p} = 150 \times 0.58 = 87 \gt{} 5$ and
 $n(1 - \hat{p}) = 150 \times 0.42 = 63 \gt{} 5$.
 
-$$95\%\mathrm{ CI} = 0.58 \pm 1.96\sqrt{\dfrac{0.58 \times 0.42}{150}} = 0.58 \pm 1.96 \times 0.0403$$
+$$95\%\mathrm{ CI} = 0.58 \pm 1.96\sqrt{{'{'\dfrac{0.58 \times 0.42}{150}'}'}} = 0.58 \pm 1.96 \times 0.0403$$
 
 $$95\%\mathrm{ CI} = 0.58 \pm 0.0790 = (0.501, 0.659)$$
 
@@ -724,7 +724,7 @@ A sample of 35 students has mean score 62.4 with known population standard devia
 <summary>Solution 15</summary>
 (a) Under $H_0$: $\bar{X} \sim N(60, 8^2/35) = N(60, 1.829)$.
 
-$$z = \dfrac{62.4 - 60}{\sqrt{1.829}} = \dfrac{2.4}{1.352} = 1.775$$
+$$z = {'{'\dfrac{62.4 - 60}{\sqrt{1.829}}'}'} = {'\dfrac{2.4}{1.352}'} = 1.775$$
 
 $$p\mathrm{-value} = P(Z \gt{} 1.775) = 1 - 0.9620 = 0.0380$$
 
@@ -752,13 +752,13 @@ Critical value: $c = 100 + 1.645 \times 3 = 104.935$. Reject $H_0$ if $\bar{X} \
 
 $\bar{X} \sim N(108, 9)$ under the true distribution.
 
-$$P\!\left(Z \leq \dfrac{104.935 - 108}{3}\right) = P(Z \leq -1.022) \approx 0.153$$
+$$P\!\left(Z \leq {'\dfrac{104.935 - 108}{3}'}\right) = P(Z \leq -1.022) \approx 0.153$$
 
 So $\beta \approx 0.153$ and power $= 1 - 0.153 = 0.847$.
 
 (c) If $\alpha = 0.10$, the critical value becomes $c = 100 + 1.282 \times 3 = 103.846$.
 
-$$\beta_{\mathrm{new}} = P\!\left(Z \leq \dfrac{103.846 - 108}{3}\right) = P(Z \leq -1.385) \approx 0.083$$
+$$\beta_{\mathrm{new}} = P\!\left(Z \leq {'\dfrac{103.846 - 108}{3}'}\right) = P(Z \leq -1.385) \approx 0.083$$
 
 Power $= 1 - 0.083 = 0.917$. Increasing $\alpha$ from 0.05 to 0.10 **increases** the power (from
 0.847 to 0.917) but also increases the probability of a Type I error. This illustrates the trade-off

@@ -130,7 +130,7 @@ $$\frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}\begin{pmatrix}
 
 ### 3.3 Inverse of a 3x3 matrix
 
-**Method 1: Adjugate matrix.** $A^{-1} = \dfrac{1}{\det A}\,\mathrm{adj}(A)$, where the adjugate is the
+**Method 1: Adjugate matrix.** $A^{-1} = {'{'\dfrac{1}{\det A}'}'}\,\mathrm{adj}(A)$, where the adjugate is the
 transpose of the cofactor matrix.
 
 **Method 2: Row reduction.** Form the augmented matrix $[A \mid I]$ and apply row operations to
@@ -149,7 +149,7 @@ $$A^{-1} = \frac{1}{7}\begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \en
 
 ### 3.5 Solving systems of linear equations
 
-A system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ has a unique solution $\mathbf{'\{'}x{'\}'} = A^{-1}\mathbf{'\{'}b{'\}'}$ if and
+A system $A\mathbf\{x{'\}'} = \mathbf\{b{'\}'}$ has a unique solution $\mathbf\{x{'\}'} = A^{-1}\mathbf\{b{'\}'}$ if and
 only if $\det A \neq 0$.
 
 If $\det A = 0$: either no solution (inconsistent) or infinitely many solutions (dependent).
@@ -181,8 +181,8 @@ Key property: the origin is always mapped to the origin.
 
 If transformation $A$ is followed by transformation $B$, the combined transformation is $BA$.
 
-**Proof.** If $\mathbf{'\{'}v{'\}'}' = A\mathbf{'\{'}v{'\}'}$ and $\mathbf{'\{'}v{'\}'}'' = B\mathbf{'\{'}v{'\}'}'$, then
-$\mathbf{'\{'}v{'\}'}'' = B(A\mathbf{'\{'}v{'\}'}) = (BA)\mathbf{'\{'}v{'\}'}$. $\blacksquare$
+**Proof.** If $\mathbf\{v{'\}'}' = A\mathbf\{v{'\}'}$ and $\mathbf\{v{'\}'}'' = B\mathbf\{v{'\}'}'$, then
+$\mathbf\{v{'\}'}'' = B(A\mathbf\{v{'\}'}) = (BA)\mathbf\{v{'\}'}$. $\blacksquare$
 
 ### 4.4 Worked example
 
@@ -199,10 +199,10 @@ Check: this is equivalent to a reflection in the line $y = -x$.
 
 ### 4.5 Invariant points and lines
 
-An **invariant point** satisfies $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}x{'\}'}$, i.e. $(A - I)\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}0{'\}'}$.
+An **invariant point** satisfies $A\mathbf\{x{'\}'} = \mathbf\{x{'\}'}$, i.e. $(A - I)\mathbf\{x{'\}'} = \mathbf\{0{'\}'}$.
 
 An **invariant line** is a line that is mapped to itself (points on the line may move along the
-line). If $\mathbf{'\{'}v{'\}'}$ is a direction vector of the line, then $A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$ for
+line). If $\mathbf\{v{'\}'}$ is a direction vector of the line, then $A\mathbf\{v{'\}'} = \lambda\mathbf\{v{'\}'}$ for
 some scalar $\lambda$.
 
 <hr />
@@ -211,17 +211,17 @@ some scalar $\lambda$.
 
 ### 5.1 Definition
 
-For a square matrix $A$, a scalar $\lambda$ and a non-zero vector $\mathbf{'\{'}v{'\}'}$ are an
+For a square matrix $A$, a scalar $\lambda$ and a non-zero vector $\mathbf\{v{'\}'}$ are an
 **eigenvalue** and **eigenvector** of $A$ if:
 
-$$A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$$
+$$A\mathbf\{v{'\}'} = \lambda\mathbf\{v{'\}'}$$
 
 Geometrically, $A$ stretches or compresses the eigenvector by a factor of $\lambda$ without
 changing its direction.
 
 ### 5.2 Finding eigenvalues
 
-$A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'} \implies (A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+$A\mathbf\{v{'\}'} = \lambda\mathbf\{v{'\}'} \implies (A - \lambda I)\mathbf\{v{'\}'} = \mathbf\{0{'\}'}$.
 
 For non-trivial solutions, we need $\det(A - \lambda I) = 0$. This is the **characteristic
 equation**.
@@ -237,7 +237,7 @@ $\lambda_1 \lambda_2 = \det A$.
 
 ### 5.3 Finding eigenvectors
 
-For each eigenvalue $\lambda_i$, solve $(A - \lambda_i I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+For each eigenvalue $\lambda_i$, solve $(A - \lambda_i I)\mathbf\{v{'\}'} = \mathbf\{0{'\}'}$.
 
 ### 5.4 Worked example
 
@@ -276,9 +276,9 @@ $$P = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}, \quad D = \begin{pmatrix} 5
 
 $$\det P = -2 - 1 = -3, \quad P^{-1} = -\frac{1}{3}\begin{pmatrix} -2 & -1 \\ -1 & 1 \end{pmatrix} = \frac{1}{3}\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}$$
 
-Verify: $PDP^{-1} = \dfrac{1}{3}\begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}\begin{pmatrix} 5 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}$
+Verify: $PDP^{-1} = {'\dfrac{1}{3}'}\begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}\begin{pmatrix} 5 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}$
 
-$= \dfrac{1}{3}\begin{pmatrix} 5 & 2 \\ 5 & -4 \end{pmatrix}\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix} = \dfrac{1}{3}\begin{pmatrix} 12 & 3 \\ 6 & 9 \end{pmatrix} = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} = A$.
+$= {'\dfrac{1}{3}'}\begin{pmatrix} 5 & 2 \\ 5 & -4 \end{pmatrix}\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix} = {'\dfrac{1}{3}'}\begin{pmatrix} 12 & 3 \\ 6 & 9 \end{pmatrix} = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix} = A$.
 
 ### 5.6 Powers of matrices
 
@@ -340,7 +340,7 @@ $\lambda^2 - 6\lambda + 9 = 0 \implies (\lambda - 3)^2 = 0$
 
 $\lambda = 3$ (repeated eigenvalue).
 
-$\begin{pmatrix} 2 & -2 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies x = y$.
+$\begin{pmatrix} 2 & -2 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf\{0{'\}'} \implies x = y$.
 
 Only one independent eigenvector: $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 
@@ -392,7 +392,7 @@ $$= ad(eh - fg) - bc(eh - fg) = (ad - bc)(eh - fg) = \det(A)\det(B) \quad \black
 ### 7.2 Proof: $\det(A) \neq 0 \iff A$ is invertible
 
 **Proof.** ($\Rightarrow$) If $\det(A) \neq 0$, the adjugate formula gives
-$A^{-1} = \dfrac{1}{\det A}\mathrm{adj}(A)$, so $A$ is invertible.
+$A^{-1} = {'{'\dfrac{1}{\det A}'}'}\mathrm{adj}(A)$, so $A$ is invertible.
 
 ($\Leftarrow$) If $A$ is invertible with $A^{-1}$, then
 $\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$.
@@ -414,8 +414,8 @@ $$\lambda_1 + \lambda_2 = a + d = \mathrm{tr}(A) \quad \blacksquare$$
 **Theorem.** The linear transformation represented by a $2 \times 2$ matrix $A$ scales areas by
 $|\det(A)|$.
 
-**Proof.** The unit square with vertices $\mathbf{'\{'}0{'\}'}, \mathbf{'\{'}e{'\}'}_1, \mathbf{'\{'}e{'\}'}_2, \mathbf{'\{'}e{'\}'}_1 + \mathbf{'\{'}e{'\}'}_2$
-is mapped to a parallelogram with vertices $\mathbf{'\{'}0{'\}'}, A\mathbf{'\{'}e{'\}'}_1, A\mathbf{'\{'}e{'\}'}_2, A\mathbf{'\{'}e{'\}'}_1 + A\mathbf{'\{'}e{'\}'}_2$.
+**Proof.** The unit square with vertices $\mathbf\{0{'\}'}, \mathbf\{e{'\}'}_1, \mathbf\{e{'\}'}_2, \mathbf\{e{'\}'}_1 + \mathbf\{e{'\}'}_2$
+is mapped to a parallelogram with vertices $\mathbf\{0{'\}'}, A\mathbf\{e{'\}'}_1, A\mathbf\{e{'\}'}_2, A\mathbf\{e{'\}'}_1 + A\mathbf\{e{'\}'}_2$.
 
 The area of this parallelogram is the magnitude of the cross product (in 2D, the determinant):
 
@@ -434,13 +434,13 @@ Common Pitfall
 2. **3x3 determinant sign errors:** The cofactor expansion alternates signs $+$, $-$, $+$ along the
    first row. A common mistake is to forget the $-$ sign on the middle term.
 3. **Singular matrix checks:** Before finding an inverse, always verify $\det(A) \neq 0$. If the
-   determinant is zero, the matrix has no inverse and the system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ has
+   determinant is zero, the matrix has no inverse and the system $A\mathbf\{x{'\}'} = \mathbf\{b{'\}'}$ has
    either no solutions or infinitely many.
 4. **Eigenvectors are not unique:** Any non-zero scalar multiple of an eigenvector is also an
    eigenvector. When diagonalising, ensure consistency: the columns of $P$ must match the order of
    eigenvalues in $D$.
 5. **Repeated eigenvalues:** A repeated eigenvalue does not necessarily give two independent
-   eigenvectors. Check by attempting to solve $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+   eigenvectors. Check by attempting to solve $(A - \lambda I)\mathbf\{v{'\}'} = \mathbf\{0{'\}'}$.
 :::
 
 ---
@@ -466,7 +466,7 @@ $\lambda^2 - 4\lambda + 4 = 0 \implies (\lambda - 2)^2 = 0$
 
 $\lambda = 2$ (repeated).
 
-$\begin{pmatrix} 1 & 1 \\ -1 & -1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies x + y = 0$.
+$\begin{pmatrix} 1 & 1 \\ -1 & -1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf\{0{'\}'} \implies x + y = 0$.
 
 Eigenvector: $\begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
@@ -527,7 +527,7 @@ $A = \begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}$.
 <details>
 <summary>Solution</summary>
 
-**(a)** Invariant points satisfy $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}x{'\}'}$:
+**(a)** Invariant points satisfy $A\mathbf\{x{'\}'} = \mathbf\{x{'\}'}$:
 
 $\begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x \\ y \end{pmatrix}$
 
@@ -589,19 +589,19 @@ Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 2$, $\lambda_3 = 4$.
 
 **For $\lambda_1 = 1$:**
 
-$$\begin{pmatrix} 1 & 1 & 0 \\ 1 & 2 & 1 \\ 0 & 1 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf{'\{'}0{'\}'}$$
+$$\begin{pmatrix} 1 & 1 & 0 \\ 1 & 2 & 1 \\ 0 & 1 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf\{0{'\}'}$$
 
 $x + y = 0$, $x + 2y + z = 0$, $y + z = 0$. From the first: $x = -y$. From the third: $z = -y$. Eigenvector: $\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}$.
 
 **For $\lambda_2 = 2$:**
 
-$$\begin{pmatrix} 0 & 1 & 0 \\ 1 & 1 & 1 \\ 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf{'\{'}0{'\}'}$$
+$$\begin{pmatrix} 0 & 1 & 0 \\ 1 & 1 & 1 \\ 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf\{0{'\}'}$$
 
 $y = 0$, $x + z = 0$. Eigenvector: $\begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}$.
 
 **For $\lambda_3 = 4$:**
 
-$$\begin{pmatrix} -2 & 1 & 0 \\ 1 & -1 & 1 \\ 0 & 1 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf{'\{'}0{'\}'}$$
+$$\begin{pmatrix} -2 & 1 & 0 \\ 1 & -1 & 1 \\ 0 & 1 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf\{0{'\}'}$$
 
 $-2x + y = 0 \implies y = 2x$. $y - 2z = 0 \implies z = x$. Eigenvector: $\begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}$.
 
@@ -655,9 +655,9 @@ For $m = 1$ ($\theta = \pi/4$): $M = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix
 
 $-3 - 3\lambda + \lambda + \lambda^2 + 4 = 0 \implies \lambda^2 - 2\lambda + 1 = 0 \implies (\lambda-1)^2 = 0$.
 
-$\lambda = 1$ (repeated). Eigenvector: $(A-I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
+$\lambda = 1$ (repeated). Eigenvector: $(A-I)\mathbf\{v{'\}'} = \mathbf\{0{'\}'}$:
 
-$$\begin{pmatrix} 2 & -4 \\ 1 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies x - 2y = 0$$
+$$\begin{pmatrix} 2 & -4 \\ 1 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf\{0{'\}'} \implies x - 2y = 0$$
 
 Eigenvector: $\begin{pmatrix} 2 \\ 1 \end{pmatrix}$, so the line $y = x/2$ is invariant.
 
@@ -701,17 +701,17 @@ $$\text{Area} = \frac{1}{2}\left|\det\begin{pmatrix} 1 & 2 & 1 \\ 4 & 6 & 1 \\ 3
 
 Expanding along the third column:
 
-$= \dfrac{1}{2}\left|1\cdot\begin{vmatrix} 4 & 6 \\ 3 & -1 \end{vmatrix} - 1\cdot\begin{vmatrix} 1 & 2 \\ 3 & -1 \end{vmatrix} + 1\cdot\begin{vmatrix} 1 & 2 \\ 4 & 6 \end{vmatrix}\right|$
+$= {'\dfrac{1}{2}'}\left|1\cdot\begin{vmatrix} 4 & 6 \\ 3 & -1 \end{vmatrix} - 1\cdot\begin{vmatrix} 1 & 2 \\ 3 & -1 \end{vmatrix} + 1\cdot\begin{vmatrix} 1 & 2 \\ 4 & 6 \end{vmatrix}\right|$
 
-$= \dfrac{1}{2}|(-4-18) - (-1-6) + (6-8)| = \dfrac{1}{2}|-22 + 7 - 2| = \dfrac{17}{2}$
+$= {'\dfrac{1}{2}'}|(-4-18) - (-1-6) + (6-8)| = {'\dfrac{1}{2}'}|-22 + 7 - 2| = {'\dfrac{17}{2}'}$
 
 ### Example 10.7: Solving a system using the inverse
 
 **Problem.** Solve the system $x + 2y + z = 4$, $2x + y + z = 3$, $x + y + 2z = 5$.
 
-**Solution.** The system is $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ where:
+**Solution.** The system is $A\mathbf\{x{'\}'} = \mathbf\{b{'\}'}$ where:
 
-$$A = \begin{pmatrix} 1 & 2 & 1 \\ 2 & 1 & 1 \\ 1 & 1 & 2 \end{pmatrix}, \quad \mathbf{'\{'}b{'\}'} = \begin{pmatrix} 4 \\ 3 \\ 5 \end{pmatrix}$$
+$$A = \begin{pmatrix} 1 & 2 & 1 \\ 2 & 1 & 1 \\ 1 & 1 & 2 \end{pmatrix}, \quad \mathbf\{b{'\}'} = \begin{pmatrix} 4 \\ 3 \\ 5 \end{pmatrix}$$
 
 $\det A = 1(2-1) - 2(4-1) + 1(2-1) = 1 - 6 + 1 = -4$.
 
@@ -735,7 +735,7 @@ Complex numbers $a + bi$ can be represented as $\begin{pmatrix}a & -b\\b & a\end
 
 ### 11.2 Matrices and vectors
 
-The cross product $\mathbf{'\{'}a{'\}'}\times\mathbf{'\{'}b{'\}'}$ can be computed as a symbolic determinant with basis vectors $\mathbf{'\{'}i{'\}'}, \mathbf{'\{'}j{'\}'}, \mathbf{'\{'}k{'\}'}$. See [Vectors in 3D](/docs/docs_alevel/further-maths/pure-mathematics/09-vectors-in-3d).
+The cross product $\mathbf\{a{'\}'}\times\mathbf\{b{'\}'}$ can be computed as a symbolic determinant with basis vectors $\mathbf\{i{'\}'}, \mathbf\{j{'\}'}, \mathbf\{k{'\}'}$. See [Vectors in 3D](/docs/docs_alevel/further-maths/pure-mathematics/09-vectors-in-3d).
 
 ### 11.3 Eigenvalues and differential equations
 
@@ -762,13 +762,13 @@ $= (2-\lambda)(\lambda^2 - 2\lambda - 3) = (2-\lambda)(\lambda-3)(\lambda+1)$.
 
 Eigenvalues: $\lambda_1 = -1$, $\lambda_2 = 2$, $\lambda_3 = 3$.
 
-$\lambda = -1$: $\begin{pmatrix} 2 & 0 & 2 \\ 0 & 3 & 0 \\ 2 & 0 & 2 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies x + z = 0, y = 0$. Eigenvector: $\begin{pmatrix}1\\0\\-1\end{pmatrix}$.
+$\lambda = -1$: $\begin{pmatrix} 2 & 0 & 2 \\ 0 & 3 & 0 \\ 2 & 0 & 2 \end{pmatrix}\mathbf\{v{'\}'} = \mathbf\{0{'\}'} \implies x + z = 0, y = 0$. Eigenvector: $\begin{pmatrix}1\\0\\-1\end{pmatrix}$.
 
-$\lambda = 2$: $\begin{pmatrix} -1 & 0 & 2 \\ 0 & 0 & 0 \\ 2 & 0 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies x = 2z$. Eigenvector: $\begin{pmatrix}2\\1\\1\end{pmatrix}$ (using $y$ as free variable too).
+$\lambda = 2$: $\begin{pmatrix} -1 & 0 & 2 \\ 0 & 0 & 0 \\ 2 & 0 & -1 \end{pmatrix}\mathbf\{v{'\}'} = \mathbf\{0{'\}'} \implies x = 2z$. Eigenvector: $\begin{pmatrix}2\\1\\1\end{pmatrix}$ (using $y$ as free variable too).
 
 Actually: $-x + 2z = 0 \implies x = 2z$. $y$ is free. Eigenvector: $\begin{pmatrix}0\\1\\0\end{pmatrix}$.
 
-$\lambda = 3$: $\begin{pmatrix} -2 & 0 & 2 \\ 0 & -1 & 0 \\ 2 & 0 & -2 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies x = z, y = 0$. Eigenvector: $\begin{pmatrix}1\\0\\1\end{pmatrix}$.
+$\lambda = 3$: $\begin{pmatrix} -2 & 0 & 2 \\ 0 & -1 & 0 \\ 2 & 0 & -2 \end{pmatrix}\mathbf\{v{'\}'} = \mathbf\{0{'\}'} \implies x = z, y = 0$. Eigenvector: $\begin{pmatrix}1\\0\\1\end{pmatrix}$.
 
 **(b)** Three independent eigenvectors, so $B$ is diagonalisable.
 
@@ -796,13 +796,13 @@ $$M = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix}\begin{pm
 <details>
 <summary>Solution</summary>
 
-Since $\lambda_1 \neq \lambda_2$, the eigenvectors $\mathbf{'\{'}v{'\}'}_1$ and $\mathbf{'\{'}v{'\}'}_2$ satisfy $(A - \lambda_1 I)\mathbf{'\{'}v{'\}'}_1 = \mathbf{'\{'}0{'\}'}$ and $(A - \lambda_2 I)\mathbf{'\{'}v{'\}'}_2 = \mathbf{'\{'}0{'\}'}$.
+Since $\lambda_1 \neq \lambda_2$, the eigenvectors $\mathbf\{v{'\}'}_1$ and $\mathbf\{v{'\}'}_2$ satisfy $(A - \lambda_1 I)\mathbf\{v{'\}'}_1 = \mathbf\{0{'\}'}$ and $(A - \lambda_2 I)\mathbf\{v{'\}'}_2 = \mathbf\{0{'\}'}$.
 
-Suppose $\mathbf{'\{'}v{'\}'}_1$ and $\mathbf{'\{'}v{'\}'}_2$ are linearly dependent: $\mathbf{'\{'}v{'\}'}_2 = c\mathbf{'\{'}v{'\}'}_1$ for some scalar $c$.
+Suppose $\mathbf\{v{'\}'}_1$ and $\mathbf\{v{'\}'}_2$ are linearly dependent: $\mathbf\{v{'\}'}_2 = c\mathbf\{v{'\}'}_1$ for some scalar $c$.
 
-Then $(A - \lambda_2 I)\mathbf{'\{'}v{'\}'}_1 = \mathbf{'\{'}0{'\}'}$ (dividing by $c$), which means $\lambda_1$ and $\lambda_2$ are both eigenvalues with eigenvector $\mathbf{'\{'}v{'\}'}_1$. But $(A - \lambda_1 I)\mathbf{'\{'}v{'\}'}_1 = \mathbf{'\{'}0{'\}'}$ and $(A - \lambda_2 I)\mathbf{'\{'}v{'\}'}_1 = \mathbf{'\{'}0{'\}'}$ together give $(\lambda_1 - \lambda_2)\mathbf{'\{'}v{'\}'}_1 = \mathbf{'\{'}0{'\}'}$, contradicting $\lambda_1 \neq \lambda_2$ and $\mathbf{'\{'}v{'\}'}_1 \neq \mathbf{'\{'}0{'\}'}$.
+Then $(A - \lambda_2 I)\mathbf\{v{'\}'}_1 = \mathbf\{0{'\}'}$ (dividing by $c$), which means $\lambda_1$ and $\lambda_2$ are both eigenvalues with eigenvector $\mathbf\{v{'\}'}_1$. But $(A - \lambda_1 I)\mathbf\{v{'\}'}_1 = \mathbf\{0{'\}'}$ and $(A - \lambda_2 I)\mathbf\{v{'\}'}_1 = \mathbf\{0{'\}'}$ together give $(\lambda_1 - \lambda_2)\mathbf\{v{'\}'}_1 = \mathbf\{0{'\}'}$, contradicting $\lambda_1 \neq \lambda_2$ and $\mathbf\{v{'\}'}_1 \neq \mathbf\{0{'\}'}$.
 
-Therefore $\mathbf{'\{'}v{'\}'}_1$ and $\mathbf{'\{'}v{'\}'}_2$ are linearly independent, $P$ is invertible, and $A = PDP^{-1}$. $\blacksquare$
+Therefore $\mathbf\{v{'\}'}_1$ and $\mathbf\{v{'\}'}_2$ are linearly independent, $P$ is invertible, and $A = PDP^{-1}$. $\blacksquare$
 
 </details>
 
@@ -816,9 +816,9 @@ Therefore $\mathbf{'\{'}v{'\}'}_1$ and $\mathbf{'\{'}v{'\}'}_2$ are linearly ind
 
 **Solution.** $\det(A-\lambda I) = (4-\lambda)(1-\lambda)-4 = \lambda^2-5\lambda = 0$. $\lambda = 0, 5$.
 
-$\lambda = 0$: $\begin{pmatrix}4&2\\2&1\end{pmatrix}\mathbf{'\{'}v{'\}'}=\mathbf{'\{'}0{'\}'} \implies v_1 = -v_2/2$. Eigenvector: $(1,-2)$, normalised: $\dfrac{1}{\sqrt{5}}(1,-2)$.
+$\lambda = 0$: $\begin{pmatrix}4&2\\2&1\end{pmatrix}\mathbf\{v{'\}'}=\mathbf\{0{'\}'} \implies v_1 = -v_2/2$. Eigenvector: $(1,-2)$, normalised: ${'{'\dfrac{1}{\sqrt{5}}'}'}(1,-2)$.
 
-$\lambda = 5$: $\begin{pmatrix}-1&2\\2&-4\end{pmatrix}\mathbf{'\{'}v{'\}'}=\mathbf{'\{'}0{'\}'} \implies v_1 = 2v_2$. Eigenvector: $(2,1)$, normalised: $\dfrac{1}{\sqrt{5}}(2,1)$.
+$\lambda = 5$: $\begin{pmatrix}-1&2\\2&-4\end{pmatrix}\mathbf\{v{'\}'}=\mathbf\{0{'\}'} \implies v_1 = 2v_2$. Eigenvector: $(2,1)$, normalised: ${'{'\dfrac{1}{\sqrt{5}}'}'}(2,1)$.
 
 Orthogonality check: $(1)(2)+(-2)(1) = 0$. ✓ The eigenvectors are orthogonal (as expected for a symmetric matrix).
 
@@ -828,8 +828,8 @@ Orthogonality check: $(1)(2)+(-2)(1) = 0$. ✓ The eigenvectors are orthogonal (
 
 **Solution.** Eigenvalues: $(3-\lambda)(2-\lambda) = 0 \implies \lambda = 2, 3$.
 
-$\lambda = 3$: $\begin{pmatrix}0&1\\0&-1\end{pmatrix}\mathbf{'\{'}v{'\}'}=\mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}=(1,0)$.
-$\lambda = 2$: $\begin{pmatrix}1&1\\0&0\end{pmatrix}\mathbf{'\{'}v{'\}'}=\mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}=(1,-1)$.
+$\lambda = 3$: $\begin{pmatrix}0&1\\0&-1\end{pmatrix}\mathbf\{v{'\}'}=\mathbf\{0{'\}'} \implies \mathbf\{v{'\}'}=(1,0)$.
+$\lambda = 2$: $\begin{pmatrix}1&1\\0&0\end{pmatrix}\mathbf\{v{'\}'}=\mathbf\{0{'\}'} \implies \mathbf\{v{'\}'}=(1,-1)$.
 
 $P = \begin{pmatrix}1&1\\0&-1\end{pmatrix}$, $D = \begin{pmatrix}3&0\\0&2\end{pmatrix}$, $P^{-1} = \begin{pmatrix}1&1\\0&-1\end{pmatrix}$.
 
@@ -845,17 +845,17 @@ $= \begin{pmatrix}1&1\\0&-1\end{pmatrix}\begin{pmatrix}59049&59049\\0&-1024\end{
 
 $= \begin{pmatrix}\cos(\theta+\phi)&-\sin(\theta+\phi)\\\sin(\theta+\phi)&\cos(\theta+\phi)\end{pmatrix} = R_{\theta+\phi}$. ✓
 
-$R_\theta^{-1} = \dfrac{1}{\cos^2\theta+\sin^2\theta}\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$. ✓
+$R_\theta^{-1} = {'{'\dfrac{1}{\cos^2\theta+\sin^2\theta}'}'}\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$. ✓
 
 ### Example 13.4: Determinant and area scaling
 
 **Problem.** The triangle with vertices $(1,0)$, $(0,2)$, $(3,4)$ is transformed by $T = \begin{pmatrix}2&-1\\1&3\end{pmatrix}$. Find the area of the image.
 
-**Solution.** Original area: $\dfrac{1}{2}\left|\det\begin{pmatrix}0-1&3-1\\2-0&4-0\end{pmatrix}\right| = \dfrac{1}{2}|-2+2| = 0$.
+**Solution.** Original area: ${'\dfrac{1}{2}'}\left|\det\begin{pmatrix}0-1&3-1\\2-0&4-0\end{pmatrix}\right| = {'\dfrac{1}{2}'}|-2+2| = 0$.
 
-Wait, the points are collinear? Let me use $(0,0)$, $(1,0)$, $(0,1)$ instead. Area $= \dfrac{1}{2}$.
+Wait, the points are collinear? Let me use $(0,0)$, $(1,0)$, $(0,1)$ instead. Area $= {'\dfrac{1}{2}'}$.
 
-$\det(T) = 6+1 = 7$. Image area $= 7 \times \dfrac{1}{2} = \boxed{3.5}$.
+$\det(T) = 6+1 = 7$. Image area $= 7 \times {'\dfrac{1}{2}'} = \boxed{3.5}$.
 
 ### Example 13.5: Shear transformation
 
@@ -863,7 +863,7 @@ $\det(T) = 6+1 = 7$. Image area $= 7 \times \dfrac{1}{2} = \boxed{3.5}$.
 
 **Solution.** $\det(S-\lambda I) = (1-\lambda)^2 = 0$. Repeated eigenvalue $\lambda = 1$.
 
-$(S-I)\mathbf{'\{'}v{'\}'} = \begin{pmatrix}0&k\\0&0\end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies v_2 = 0$. Only one eigenvector: $(1,0)$.
+$(S-I)\mathbf\{v{'\}'} = \begin{pmatrix}0&k\\0&0\end{pmatrix}\mathbf\{v{'\}'} = \mathbf\{0{'\}'} \implies v_2 = 0$. Only one eigenvector: $(1,0)$.
 
 The $x$-axis ($y=0$) is the only invariant line through the origin. All lines $y = c$ (for any constant $c$) are invariant (but not through the origin, except $y=0$).
 
@@ -924,11 +924,11 @@ The line $y = 2x$ makes angle $\theta = \arctan 2$ with the $x$-axis.
 
 $R = \begin{pmatrix}\cos 2\theta&\sin 2\theta\\\sin 2\theta&-\cos 2\theta\end{pmatrix}$.
 
-$\cos\theta = \dfrac{1}{\sqrt{5}}$, $\sin\theta = \dfrac{2}{\sqrt{5}}$.
+$\cos\theta = {'{'\dfrac{1}{\sqrt{5}}'}'}$, $\sin\theta = {'{'\dfrac{2}{\sqrt{5}}'}'}$.
 
-$\cos 2\theta = \cos^2\theta-\sin^2\theta = \dfrac{1-4}{5} = -\dfrac{3}{5}$.
+$\cos 2\theta = \cos^2\theta-\sin^2\theta = {'\dfrac{1-4}{5}'} = -{'\dfrac{3}{5}'}$.
 
-$\sin 2\theta = 2\sin\theta\cos\theta = \dfrac{4}{5}$.
+$\sin 2\theta = 2\sin\theta\cos\theta = {'\dfrac{4}{5}'}$.
 
 $$R = \begin{pmatrix}-\frac{3}{5}&\frac{4}{5}\\\frac{4}{5}&\frac{3}{5}\end{pmatrix}$$
 
@@ -998,14 +998,14 @@ $\det(A-\lambda I) = (4-\lambda)(3-\lambda)-2 = \lambda^2-7\lambda+10 = (\lambda
 
 Eigenvalues: $\lambda_1 = 5$, $\lambda_2 = 2$.
 
-$\lambda=5$: $(A-5I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix}-1&1\\2&-2\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix}1\\1\end{pmatrix}$.
+$\lambda=5$: $(A-5I)\mathbf\{v{'\}'} = \mathbf\{0{'\}'} \implies \begin{pmatrix}-1&1\\2&-2\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix} = \mathbf\{0{'\}'} \implies \mathbf\{v{'\}'}_1 = \begin{pmatrix}1\\1\end{pmatrix}$.
 
-$\lambda=2$: $(A-2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies \begin{pmatrix}2&1\\2&1\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies \mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix}1\\-2\end{pmatrix}$.
+$\lambda=2$: $(A-2I)\mathbf\{v{'\}'} = \mathbf\{0{'\}'} \implies \begin{pmatrix}2&1\\2&1\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix} = \mathbf\{0{'\}'} \implies \mathbf\{v{'\}'}_2 = \begin{pmatrix}1\\-2\end{pmatrix}$.
 
-$P = \begin{pmatrix}1&1\\1&-2\end{pmatrix}$, $D = \begin{pmatrix}5&0\\0&2\end{pmatrix}$, $P^{-1} = \dfrac{1}{-3}\begin{pmatrix}-2&-1\\-1&1\end{pmatrix}$.
+$P = \begin{pmatrix}1&1\\1&-2\end{pmatrix}$, $D = \begin{pmatrix}5&0\\0&2\end{pmatrix}$, $P^{-1} = {'\dfrac{1}{-3}'}\begin{pmatrix}-2&-1\\-1&1\end{pmatrix}$.
 
-$A^5 = PD^5P^{-1} = \dfrac{1}{3}\begin{pmatrix}1&1\\1&-2\end{pmatrix}\begin{pmatrix}3125&0\\0&32\end{pmatrix}\begin{pmatrix}2&1\\1&-1\end{pmatrix}$
+$A^5 = PD^5P^{-1} = {'\dfrac{1}{3}'}\begin{pmatrix}1&1\\1&-2\end{pmatrix}\begin{pmatrix}3125&0\\0&32\end{pmatrix}\begin{pmatrix}2&1\\1&-1\end{pmatrix}$
 
-$= \dfrac{1}{3}\begin{pmatrix}3125&32\\3125&-64\end{pmatrix}\begin{pmatrix}2&1\\1&-1\end{pmatrix} = \dfrac{1}{3}\begin{pmatrix}6282&3093\\6186&3189\end{pmatrix} = \begin{pmatrix}2094&1031\\2062&1063\end{pmatrix}$.
+$= {'\dfrac{1}{3}'}\begin{pmatrix}3125&32\\3125&-64\end{pmatrix}\begin{pmatrix}2&1\\1&-1\end{pmatrix} = {'\dfrac{1}{3}'}\begin{pmatrix}6282&3093\\6186&3189\end{pmatrix} = \begin{pmatrix}2094&1031\\2062&1063\end{pmatrix}$.
 
 </details>

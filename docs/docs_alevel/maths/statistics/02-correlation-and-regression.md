@@ -125,7 +125,7 @@ $$S(a,b) = \sum_{i=1}^{n}(y_i - a - bx_i)^2$$
 
 ### 3.2 Derivation using partial derivatives
 
-Setting $\dfrac{\partial S}{\partial a} = 0$ and $\dfrac{\partial S}{\partial b} = 0$:
+Setting ${'{'\dfrac{\partial S}{\partial a}'}'} = 0$ and ${'{'\dfrac{\partial S}{\partial b}'}'} = 0$:
 
 $$\frac{\partial S}{\partial a} = -2\sum(y_i - a - bx_i) = 0 \implies \sum y_i = na + b\sum x_i \tag{1}$$
 
@@ -242,10 +242,10 @@ without commenting on the limitation.
 
 ## 6. Coding in Regression
 
-If we code $u = \dfrac{x-p}{q}$ and $v = \dfrac{y-r}{s}$, and find the regression line $v = c + du$,
+If we code $u = {'\dfrac{x-p}{q}'}$ and $v = {'\dfrac{y-r}{s}'}$, and find the regression line $v = c + du$,
 then:
 
-- The gradient in terms of original variables: $b = \dfrac{s}{q}d$
+- The gradient in terms of original variables: $b = {'\dfrac{s}{q}'}d$
 - The intercept: $a = r + s \cdot c - b \cdot p$
 
 ### 6.1 Effect of Coding on Correlation
@@ -294,7 +294,7 @@ $\sum x^2 = 55$, $\sum y^2 = 103$, $\sum xy = 74$.
 $S_{xx} = 55 - 5(9) = 10$. $S_{yy} = 103 - 5(17.64) = 103 - 88.2 = 14.8$.
 $S_{xy} = 74 - 5(3)(4.2) = 74 - 63 = 11$.
 
-$r = \dfrac{11}{\sqrt{10 \times 14.8}} = \dfrac{11}{\sqrt{148}} = \dfrac{11}{12.166} \approx 0.904$.
+$r = {'{'\dfrac{11}{\sqrt{10 \times 14.8}}'}'} = {'{'\dfrac{11}{\sqrt{148}}'}'} = {'\dfrac{11}{12.166}'} \approx 0.904$.
 
 **If you get this wrong, revise:**
 [Pearson's PMCC](#1-pearsons-product-moment-correlation-coefficient-pmcc) — Section 1.
@@ -310,7 +310,7 @@ Find the equation of the regression line of $y$ on $x$ for the data in Problem 1
 <summary>Solution 2</summary>
 $b = S_{xy}/S_{xx} = 4/10 = 0.4$.
 
-$b = \dfrac{S_{xy}}{S_{xx}} = \dfrac{11}{10} = 1.1$.
+$b = {'\dfrac{S_{xy}}{S_{xx}}'} = {'\dfrac{11}{10}'} = 1.1$.
 
 $a = \bar{y} - b\bar{x} = 4.2 - 1.1(3) = 4.2 - 3.3 = 0.9$.
 
@@ -337,7 +337,7 @@ Ranks of $x$: 1, 2, 3, 4, 5. Ranks of $y$: 1, 3, 2, 4, 5.
 
 $\sum d^2 = 0 + 1 + 1 + 0 + 0 = 2$.
 
-$r_s = 1 - \dfrac{6 \times 2}{5(25-1)} = 1 - \dfrac{12}{120} = 1 - 0.1 = 0.9$.
+$r_s = 1 - {'{'\dfrac{6 \times 2}{5(25-1)}'}'} = 1 - {'\dfrac{12}{120}'} = 1 - 0.1 = 0.9$.
 
 **If you get this wrong, revise:**
 [Spearman's Rank Correlation](#2-spearmans-rank-correlation-coefficient) — Section 2.
@@ -394,9 +394,9 @@ Given $S_{xx} = 80$, $S_{yy} = 200$, and $S_{xy} = 100$, find $r$, $b$ (gradient
 
 <details>
 <summary>Solution 7</summary>
-$r = \dfrac{100}{\sqrt{80 \times 200}} = \dfrac{100}{\sqrt{16000}} = \dfrac{100}{126.49} \approx 0.791$.
+$r = {'{'\dfrac{100}{\sqrt{80 \times 200}}'}'} = {'{'\dfrac{100}{\sqrt{16000}}'}'} = {'\dfrac{100}{126.49}'} \approx 0.791$.
 
-$b = \dfrac{S_{xy}}{S_{xx}} = \dfrac{100}{80} = 1.25$.
+$b = {'\dfrac{S_{xy}}{S_{xx}}'} = {'\dfrac{100}{80}'} = 1.25$.
 
 Proportion of variance explained $= r^2 = 0.625$ (62.5%).
 
@@ -482,7 +482,7 @@ The data is already ranked, so:
 
 $\sum d_i^2 = 8$.
 
-$r_s = 1 - \dfrac{6 \times 8}{8(64 - 1)} = 1 - \dfrac{48}{504} = 1 - 0.0952 = 0.905$ (3 s.f.).
+$r_s = 1 - {'{'\dfrac{6 \times 8}{8(64 - 1)}'}'} = 1 - {'\dfrac{48}{504}'} = 1 - 0.0952 = 0.905$ (3 s.f.).
 
 This indicates very strong positive agreement between the two teachers' rankings, suggesting
 consistent assessment standards.
@@ -505,11 +505,11 @@ cholesterol level for a patient with blood pressure of 150 mmHg. Comment on the 
 <summary>Solution 12</summary>
 
 (a)
-$r = \dfrac{8100}{\sqrt{3600 \times 28900}} = \dfrac{8100}{\sqrt{104040000}} = \dfrac{8100}{10200} \approx 0.794$.
+$r = {'{'\dfrac{8100}{\sqrt{3600 \times 28900}}'}'} = {'{'\dfrac{8100}{\sqrt{104040000}}'}'} = {'\dfrac{8100}{10200}'} \approx 0.794$.
 
 This indicates a strong positive linear correlation between blood pressure and cholesterol level.
 
-(b) $b = \dfrac{S_{xy}}{S_{xx}} = \dfrac{8100}{3600} = 2.25$.
+(b) $b = {'\dfrac{S_{xy}}{S_{xx}}'} = {'\dfrac{8100}{3600}'} = 2.25$.
 
 $a = 218 - 2.25 \times 132 = 218 - 297 = -79$.
 

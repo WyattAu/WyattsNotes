@@ -30,7 +30,7 @@ $$z = r(\cos\theta + i\sin\theta) = r\,\mathrm{cis}\,\theta$$
 
 where $r = |z| = \sqrt{x^2 + y^2}$ and $\theta = \arg(z)$.
 
-The argument is multi-valued: $\arg(z) = \theta + 2k\pi$ for $k \in \mathbb{'\{'}Z{'\}'}$. The **principal
+The argument is multi-valued: $\arg(z) = \theta + 2k\pi$ for $k \in \mathbb\{Z{'\}'}$. The **principal
 argument** $\mathrm{Arg}(z)$ satisfies $-\pi \lt \mathrm{Arg}(z) \leq \pi$.
 
 ### 1.2 Multiplication and division in polar form
@@ -51,11 +51,11 @@ This confirms: $|z_1 z_2| = |z_1||z_2|$ and $\arg(z_1 z_2) = \arg(z_1) + \arg(z_
 
 ### 1.3 Worked example
 
-**Problem.** Express $\dfrac{1 + i\sqrt{3}}{1 - i}$ in modulus-argument form.
+**Problem.** Express ${'{'\dfrac{1 + i\sqrt{3}}{1 - i}'}'}$ in modulus-argument form.
 
-Numerator: $1 + i\sqrt{3}$. $r_1 = \sqrt{1 + 3} = 2$, $\theta_1 = \arctan\!\left(\dfrac{\sqrt{3}}{1}\right) = \dfrac{\pi}{3}$.
+Numerator: $1 + i\sqrt{3}$. $r_1 = \sqrt{1 + 3} = 2$, $\theta_1 = \arctan\!\left({'{'\dfrac{\sqrt{3}}{1}'}'}\right) = {'{'\dfrac{\pi}{3}'}'}$.
 
-Denominator: $1 - i$. $r_2 = \sqrt{1 + 1} = \sqrt{2}$, $\theta_2 = \arctan\!\left(\dfrac{-1}{1}\right) = -\dfrac{\pi}{4}$.
+Denominator: $1 - i$. $r_2 = \sqrt{1 + 1} = \sqrt{2}$, $\theta_2 = \arctan\!\left({'\dfrac{-1}{1}'}\right) = -{'{'\dfrac{\pi}{4}'}'}$.
 
 $$\frac{z_1}{z_2} = \frac{2}{\sqrt{2}}\left(\cos\!\left(\frac{\pi}{3} - \left(-\frac{\pi}{4}\right)\right) + i\sin\!\left(\frac{7\pi}{12}\right)\right)$$
 
@@ -91,7 +91,7 @@ and the result follows by applying the positive case to the reciprocal.
 
 **Problem.** Find $(1 + i)^{10}$.
 
-$1 + i = \sqrt{2}\!\left(\cos\dfrac{\pi}{4} + i\sin\dfrac{\pi}{4}\right)$.
+$1 + i = \sqrt{2}\!\left(\cos{'{'\dfrac{\pi}{4}'}'} + i\sin{'{'\dfrac{\pi}{4}'}'}\right)$.
 
 $$(1 + i)^{10} = (\sqrt{2})^{10}\!\left(\cos\frac{5\pi}{2} + i\sin\frac{5\pi}{2}\right) = 32(0 + i) = 32i$$
 
@@ -124,7 +124,7 @@ $$z = R^{1/n}\!\left(\cos\frac{\alpha + 2k\pi}{n} + i\sin\frac{\alpha + 2k\pi}{n
 ### 2.2 Geometric interpretation
 
 The $n$ roots of $w$ lie on a circle of radius $R^{1/n}$ centred at the origin, equally spaced at
-angles of $\dfrac{2\pi}{n}$ apart.
+angles of ${'{'\dfrac{2\pi}{n}'}'}$ apart.
 
 ### 2.3 Sum of roots
 
@@ -142,11 +142,11 @@ $-8 = 8(\cos\pi + i\sin\pi)$.
 
 $$z_k = 8^{1/3}\!\left(\cos\frac{\pi + 2k\pi}{3} + i\sin\frac{\pi + 2k\pi}{3}\right), \quad k = 0, 1, 2$$
 
-$k = 0$: $z_0 = 2\!\left(\cos\dfrac{\pi}{3} + i\sin\dfrac{\pi}{3}\right) = 1 + i\sqrt{3}$
+$k = 0$: $z_0 = 2\!\left(\cos{'{'\dfrac{\pi}{3}'}'} + i\sin{'{'\dfrac{\pi}{3}'}'}\right) = 1 + i\sqrt{3}$
 
 $k = 1$: $z_1 = 2\!\left(\cos\pi + i\sin\pi\right) = -2$
 
-$k = 2$: $z_2 = 2\!\left(\cos\dfrac{5\pi}{3} + i\sin\dfrac{5\pi}{3}\right) = 1 - i\sqrt{3}$
+$k = 2$: $z_2 = 2\!\left(\cos{'{'\dfrac{5\pi}{3}'}'} + i\sin{'{'\dfrac{5\pi}{3}'}'}\right) = 1 - i\sqrt{3}$
 
 Check: $(1 + i\sqrt{3}) + (-2) + (1 - i\sqrt{3}) = 0$.
 
@@ -189,7 +189,7 @@ $\alpha \lt \arg(z - z_0) \lt \beta$: the region between two half-lines (an angu
 
 ### 3.4 Worked example: combined locus
 
-**Problem.** Sketch the region defined by $|z - 2| \leq 3$ and $0 \leq \arg(z) \leq \dfrac{\pi}{4}$.
+**Problem.** Sketch the region defined by $|z - 2| \leq 3$ and $0 \leq \arg(z) \leq {'{'\dfrac{\pi}{4}'}'}$.
 
 $|z - 2| \leq 3$ is a closed disc centred at $2 + 0i$ with radius 3. Combined with the angular
 constraint, the region is the portion of this disc lying between the positive real axis and the
@@ -200,7 +200,7 @@ The intersection of $y = x$ with the circle $(x-2)^2 + y^2 = 9$ gives:
 
 $$(x - 2)^2 + x^2 = 9 \implies 2x^2 - 4x - 5 = 0 \implies x = \frac{4 \pm \sqrt{16 + 40}}{4} = \frac{4 \pm \sqrt{56}}{4}$$
 
-The relevant intersection is at $x = 1 + \dfrac{\sqrt{14}}{2} \approx 2.87$.
+The relevant intersection is at $x = 1 + {'{'\dfrac{\sqrt{14}}{2}'}'} \approx 2.87$.
 
 ### 3.5 Worked example: Cartesian equation from locus
 
@@ -222,7 +222,7 @@ $$3\!\left(x + \frac{7}{3}\right)^{\!2} + 3\!\left(y - 2\right)^{\!2} = 5 + \fra
 
 $$\left(x + \frac{7}{3}\right)^{\!2} + (y - 2)^2 = \frac{100}{9}$$
 
-This is a circle with centre $\left(-\dfrac{7}{3}, 2\right)$ and radius $\dfrac{10}{3}$.
+This is a circle with centre $\left(-{'\dfrac{7}{3}'}, 2\right)$ and radius ${'\dfrac{10}{3}'}$.
 
 <hr />
 
@@ -276,7 +276,7 @@ $$\sin\theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}$$
 
 ### 4.6 Worked example
 
-**Problem.** Express $\dfrac{(1 + i)^5}{(1 - i)^3}$ in the form $a + bi$ and in exponential form.
+**Problem.** Express ${'\dfrac{(1 + i)^5}{(1 - i)^3}'}$ in the form $a + bi$ and in exponential form.
 
 $1 + i = \sqrt{2}\,e^{i\pi/4}$, $1 - i = \sqrt{2}\,e^{-i\pi/4}$.
 
@@ -294,9 +294,9 @@ So $e^{x + iy} = e^x\,e^{iy} = 2\,e^{i(\pi/3 + 2k\pi)}$.
 
 Equating moduli: $e^x = 2 \implies x = \ln 2$.
 
-Equating arguments: $y = \dfrac{\pi}{3} + 2k\pi$ for $k \in \mathbb{'\{'}Z{'\}'}$.
+Equating arguments: $y = {'{'\dfrac{\pi}{3}'}'} + 2k\pi$ for $k \in \mathbb\{Z{'\}'}$.
 
-$$z = \ln 2 + i\!\left(\frac{\pi}{3} + 2k\pi\right), \quad k \in \mathbb{'\{'}Z{'\}'}$$
+$$z = \ln 2 + i\!\left(\frac{\pi}{3} + 2k\pi\right), \quad k \in \mathbb\{Z{'\}'}$$
 
 :::warning
 Common Pitfall
@@ -315,7 +315,7 @@ Express $z = -\sqrt{3} + i$ in modulus-argument form and hence find $z^8$.
 <details>
 <summary>Solution</summary>
 
-$r = \sqrt{3 + 1} = 2$, $\theta = \pi - \dfrac{\pi}{6} = \dfrac{5\pi}{6}$.
+$r = \sqrt{3 + 1} = 2$, $\theta = \pi - {'{'\dfrac{\pi}{6}'}'} = {'{'\dfrac{5\pi}{6}'}'}$.
 
 $z = 2\,e^{i5\pi/6}$.
 
@@ -340,7 +340,7 @@ The sum is $2^{11/10}\displaystyle\sum_{k=0}^{4}e^{i(\pi + 8k\pi)/20} = 2^{11/10
 
 Since $\omega = e^{i2\pi/5}$ and $\omega^5 = 1$ with $\omega \neq 1$:
 
-$\sum_{k=0}^{4}\omega^k = \dfrac{1 - \omega^5}{1 - \omega} = 0$.
+$\sum_{k=0}^{4}\omega^k = {'{'\dfrac{1 - \omega^5}{1 - \omega}'}'} = 0$.
 
 </details>
 
@@ -367,18 +367,18 @@ This is a straight line (the perpendicular bisector of the segment joining $1 - 
 
 ### Problem 4
 
-Use Euler's formula to show that $\cos^4\theta = \dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}$.
+Use Euler's formula to show that $\cos^4\theta = {'{'\dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}'}'}$.
 
 <details>
 <summary>Solution</summary>
 
-$\cos\theta = \dfrac{e^{i\theta} + e^{-i\theta}}{2}$, so $\cos^4\theta = \dfrac{1}{16}(e^{i\theta} + e^{-i\theta})^4$.
+$\cos\theta = {'{'\dfrac{e^{i\theta} + e^{-i\theta}}{2}'}'}$, so $\cos^4\theta = {'\dfrac{1}{16}'}(e^{i\theta} + e^{-i\theta})^4$.
 
-$= \dfrac{1}{16}(e^{4i\theta} + 4e^{2i\theta} + 6 + 4e^{-2i\theta} + e^{-4i\theta})$
+$= {'\dfrac{1}{16}'}(e^{4i\theta} + 4e^{2i\theta} + 6 + 4e^{-2i\theta} + e^{-4i\theta})$
 
-$= \dfrac{1}{16}(2\cos 4\theta + 8\cos 2\theta + 6)$
+$= {'\dfrac{1}{16}'}(2\cos 4\theta + 8\cos 2\theta + 6)$
 
-$= \dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}$.
+$= {'{'\dfrac{3 + 4\cos 2\theta + \cos 4\theta}{8}'}'}$.
 
 </details>
 
@@ -400,7 +400,7 @@ $$\prod_{k=0}^{n-1} z_k = (-1)^n \cdot \frac{-1}{1} = (-1)^{n-1} \quad \blacksqu
 **Theorem.** If $p(z)$ is a polynomial with real coefficients and $p(\alpha) = 0$, then
 $p(\overline{\alpha}) = 0$.
 
-**Proof.** Let $p(z) = a_n z^n + \cdots + a_1 z + a_0$ with all $a_i \in \mathbb{'\{'}R{'\}'}$.
+**Proof.** Let $p(z) = a_n z^n + \cdots + a_1 z + a_0$ with all $a_i \in \mathbb\{R{'\}'}$.
 
 $$p(\overline{\alpha}) = a_n \overline{\alpha}^n + \cdots + a_1 \overline{\alpha} + a_0 = \overline{a_n}\,\overline{\alpha^n} + \cdots + \overline{a_1}\,\overline{\alpha} + \overline{a_0}$$
 
@@ -443,7 +443,7 @@ The complex numbers $z_1$ and $z_2$ satisfy $z_1 = 1 + i$ and $z_2 = 1 - \sqrt{3
 
 **(a)** Find $z_1 z_2$ in the form $re^{i\theta}$ where $-\pi < \theta \leq \pi$.
 
-**(b)** Hence find $\dfrac{z_1^4}{z_2^2}$ in Cartesian form.
+**(b)** Hence find ${'\dfrac{z_1^4}{z_2^2}'}$ in Cartesian form.
 
 <details>
 <summary>Solution</summary>
@@ -452,9 +452,9 @@ The complex numbers $z_1$ and $z_2$ satisfy $z_1 = 1 + i$ and $z_2 = 1 - \sqrt{3
 
 $z_1 z_2 = 2\sqrt{2}\,e^{i(\pi/4 - \pi/3)} = 2\sqrt{2}\,e^{-i\pi/12}$.
 
-**(b)** $\dfrac{z_1^4}{z_2^2} = \dfrac{(\sqrt{2})^4\,e^{i\pi}}{2^2\,e^{-i2\pi/3}} = \dfrac{4\,e^{i\pi}}{4\,e^{-i2\pi/3}} = e^{i5\pi/3}$.
+**(b)** ${'\dfrac{z_1^4}{z_2^2}'} = {'{'\dfrac{(\sqrt{2})^4\,e^{i\pi}}{2^2\,e^{-i2\pi/3}}'}'} = {'{'\dfrac{4\,e^{i\pi}}{4\,e^{-i2\pi/3}}'}'} = e^{i5\pi/3}$.
 
-In Cartesian form: $e^{i5\pi/3} = \cos\dfrac{5\pi}{3} + i\sin\dfrac{5\pi}{3} = \dfrac{1}{2} - i\dfrac{\sqrt{3}}{2}$.
+In Cartesian form: $e^{i5\pi/3} = \cos{'{'\dfrac{5\pi}{3}'}'} + i\sin{'{'\dfrac{5\pi}{3}'}'} = {'\dfrac{1}{2}'} - i{'{'\dfrac{\sqrt{3}}{2}'}'}$.
 
 </details>
 
@@ -507,9 +507,9 @@ $x^2 - 8x + 16 + y^2 - 6y + 9 = 4x^2 - 8x + 4 + 4y^2 + 8y + 4$
 
 $3x^2 + 3y^2 + 12y - 17 = 0$
 
-$x^2 + y^2 + 4y = \dfrac{17}{3}$
+$x^2 + y^2 + 4y = {'\dfrac{17}{3}'}$
 
-$x^2 + (y + 2)^2 = \dfrac{17}{3} + 4 = \dfrac{29}{3}$
+$x^2 + (y + 2)^2 = {'\dfrac{17}{3}'} + 4 = {'\dfrac{29}{3}'}$
 
 Centre: $(0, -2)$, radius: $\sqrt{29/3}$.
 
@@ -579,23 +579,23 @@ So the intersection points are $(0, 1) = i$ and $(2, 3)$.
 
 ### Example 9.4: Transformation of the complex plane
 
-**Problem.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = \dfrac{z + 1}{z - 1}$. Find the image of the line $\mathrm{Re}(z) = 2$ under $T$.
+**Problem.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = {'\dfrac{z + 1}{z - 1}'}$. Find the image of the line $\mathrm{Re}(z) = 2$ under $T$.
 
 **Solution.** Let $z = 2 + iy$. Then:
 
 $$w = \frac{2 + iy + 1}{2 + iy - 1} = \frac{3 + iy}{1 + iy} = \frac{(3 + iy)(1 - iy)}{1 + y^2} = \frac{3 + y^2 + i(y - 3y)}{1 + y^2} = \frac{3 + y^2 - 2iy}{1 + y^2}$$
 
-So $u = \dfrac{3 + y^2}{1 + y^2}$ and $v = \dfrac{-2y}{1 + y^2}$.
+So $u = {'\dfrac{3 + y^2}{1 + y^2}'}$ and $v = {'\dfrac{-2y}{1 + y^2}'}$.
 
-Note that $u = 1 + \dfrac{2}{1 + y^2}$, so $u \geq 1$ (since $1 + y^2 \geq 1$).
+Note that $u = 1 + {'\dfrac{2}{1 + y^2}'}$, so $u \geq 1$ (since $1 + y^2 \geq 1$).
 
-Also $u - 1 = \dfrac{2}{1 + y^2}$ and $v^2 = \dfrac{4y^2}{(1+y^2)^2} = \dfrac{4y^2}{(1+y^2)^2}$.
+Also $u - 1 = {'\dfrac{2}{1 + y^2}'}$ and $v^2 = {'\dfrac{4y^2}{(1+y^2)^2}'} = {'\dfrac{4y^2}{(1+y^2)^2}'}$.
 
 $$v^2 = (u-1)\cdot\frac{2y^2}{1+y^2}$$
 
-From $v = \dfrac{-2y}{1+y^2}$: $v^2 = \dfrac{4y^2}{(1+y^2)^2}$.
+From $v = {'\dfrac{-2y}{1+y^2}'}$: $v^2 = {'\dfrac{4y^2}{(1+y^2)^2}'}$.
 
-Since $u - 1 = \dfrac{2}{1+y^2}$: $(u-1)(1+y^2) = 2$, so $1+y^2 = \dfrac{2}{u-1}$.
+Since $u - 1 = {'\dfrac{2}{1+y^2}'}$: $(u-1)(1+y^2) = 2$, so $1+y^2 = {'\dfrac{2}{u-1}'}$.
 
 $$v^2 = \frac{4y^2}{(1+y^2)^2} = \frac{4\!\left(\frac{2}{u-1} - 1\right)}{\frac{4}{(u-1)^2}} = \frac{\frac{8 - 2(u-1)}{u-1}}{\frac{4}{(u-1)^2}} = \frac{(10 - 2u)(u-1)}{4} = \frac{(5-u)(u-1)}{2}$$
 
@@ -645,11 +645,11 @@ $\overrightarrow{AC} = z_C - z_A = 4 + i$, $|\overrightarrow{AC}| = \sqrt{16 + 1
 
 All three sides have different lengths, so the triangle is **scalene**, not isosceles. (If the question intended different points, the same method applies.)
 
-The area is $\dfrac{1}{2}|\mathrm{Im}(\overline{z_{AB}} \cdot z_{AC})|$:
+The area is ${'\dfrac{1}{2}'}|\mathrm{Im}(\overline{z_{AB}} \cdot z_{AC})|$:
 
 $\overline{z_{AB}} \cdot z_{AC} = (2 - 4i)(4 + i) = 8 + 2i - 16i + 4 = 12 - 14i$.
 
-$\text{Area} = \dfrac{1}{2}|-14| = 7$.
+$\text{Area} = {'\dfrac{1}{2}'}|-14| = 7$.
 
 ---
 
@@ -689,10 +689,10 @@ The $n$-th roots of unity form a cyclic group under multiplication. The factoris
 $$z_k = 27^{1/3}\,e^{i(3\pi/2 + 2k\pi)/3} = 3\,e^{i(\pi/2 + 2k\pi/3)}, \quad k = 0, 1, 2$$
 
 $k = 0$: $3e^{i\pi/2} = 3i$.
-$k = 1$: $3e^{i7\pi/6} = 3\!\left(-\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right)$.
-$k = 2$: $3e^{i11\pi/6} = 3\!\left(\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right)$.
+$k = 1$: $3e^{i7\pi/6} = 3\!\left(-{'{'\dfrac{\sqrt{3}}{2}'}'} - {'\dfrac{i}{2}'}\right)$.
+$k = 2$: $3e^{i11\pi/6} = 3\!\left({'{'\dfrac{\sqrt{3}}{2}'}'} - {'\dfrac{i}{2}'}\right)$.
 
-**(b)** Sum $= 3i + 3\!\left(-\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) + 3\!\left(\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) = 3i - 3i/2 - 3i/2 = 0$. $\blacksquare$
+**(b)** Sum $= 3i + 3\!\left(-{'{'\dfrac{\sqrt{3}}{2}'}'} - {'\dfrac{i}{2}'}\right) + 3\!\left({'{'\dfrac{\sqrt{3}}{2}'}'} - {'\dfrac{i}{2}'}\right) = 3i - 3i/2 - 3i/2 = 0$. $\blacksquare$
 
 </details>
 
@@ -707,7 +707,7 @@ Let $w = re^{i\pi/6}$. From $|w + 2i| = 3$:
 
 $$|re^{i\pi/6} + 2i| = 3$$
 
-$r\cos(\pi/6) + i\!\left(r\sin(\pi/6) + 2\right) = r\!\left(\dfrac{\sqrt{3}}{2}\right) + i\!\left(\dfrac{r}{2} + 2\right)$.
+$r\cos(\pi/6) + i\!\left(r\sin(\pi/6) + 2\right) = r\!\left({'{'\dfrac{\sqrt{3}}{2}'}'}\right) + i\!\left({'\dfrac{r}{2}'} + 2\right)$.
 
 $$\frac{3r^2}{4} + \left(\frac{r}{2} + 2\right)^2 = 9$$
 
@@ -717,7 +717,7 @@ $$r = \frac{-2 \pm \sqrt{4 + 20}}{2} = -1 \pm \sqrt{6}$$
 
 Since $r > 0$: $r = \sqrt{6} - 1$.
 
-$w = (\sqrt{6} - 1)\,e^{i\pi/6} = (\sqrt{6} - 1)\!\left(\dfrac{\sqrt{3}}{2} + \dfrac{i}{2}\right) = \dfrac{(\sqrt{6}-1)\sqrt{3}}{2} + \dfrac{(\sqrt{6}-1)i}{2}$.
+$w = (\sqrt{6} - 1)\,e^{i\pi/6} = (\sqrt{6} - 1)\!\left({'{'\dfrac{\sqrt{3}}{2}'}'} + {'\dfrac{i}{2}'}\right) = {'{'\dfrac{(\sqrt{6}-1)\sqrt{3}}{2}'}'} + {'{'\dfrac{(\sqrt{6}-1)i}{2}'}'}$.
 
 </details>
 
@@ -730,19 +730,19 @@ Use De Moivre's theorem to find $\cos(\pi/12)$ and $\sin(\pi/12)$ in surd form.
 
 $\cos(\pi/12) + i\sin(\pi/12) = \sqrt{\cos(\pi/6) + i\sin(\pi/6)}$.
 
-$\cos(\pi/6) = \dfrac{\sqrt{3}}{2}$ and $\sin(\pi/6) = \dfrac{1}{2}$.
+$\cos(\pi/6) = {'{'\dfrac{\sqrt{3}}{2}'}'}$ and $\sin(\pi/6) = {'\dfrac{1}{2}'}$.
 
-Let $\cos(\pi/12) + i\sin(\pi/12) = a + bi$ where $a > 0$. Then $(a + bi)^2 = \dfrac{\sqrt{3}}{2} + \dfrac{i}{2}$.
+Let $\cos(\pi/12) + i\sin(\pi/12) = a + bi$ where $a > 0$. Then $(a + bi)^2 = {'{'\dfrac{\sqrt{3}}{2}'}'} + {'\dfrac{i}{2}'}$.
 
-$a^2 - b^2 = \dfrac{\sqrt{3}}{2}$ and $2ab = \dfrac{1}{2}$, so $b = \dfrac{1}{4a}$.
+$a^2 - b^2 = {'{'\dfrac{\sqrt{3}}{2}'}'}$ and $2ab = {'\dfrac{1}{2}'}$, so $b = {'\dfrac{1}{4a}'}$.
 
-$a^2 - \dfrac{1}{16a^2} = \dfrac{\sqrt{3}}{2}$.
+$a^2 - {'\dfrac{1}{16a^2}'} = {'{'\dfrac{\sqrt{3}}{2}'}'}$.
 
 Multiplying by $16a^2$: $16a^4 - 8\sqrt{3}\,a^2 - 1 = 0$.
 
-$a^2 = \dfrac{8\sqrt{3} \pm \sqrt{192 + 64}}{32} = \dfrac{8\sqrt{3} \pm 4\sqrt{13}}{32} = \dfrac{2\sqrt{3} \pm \sqrt{13}}{8}$.
+$a^2 = {'{'\dfrac{8\sqrt{3} \pm \sqrt{192 + 64}}{32}'}'} = {'{'\dfrac{8\sqrt{3} \pm 4\sqrt{13}}{32}'}'} = {'{'\dfrac{2\sqrt{3} \pm \sqrt{13}}{8}'}'}$.
 
-Since $a^2 \leq 1$: $a^2 = \dfrac{2\sqrt{3} + \sqrt{13}}{8}$.
+Since $a^2 \leq 1$: $a^2 = {'{'\dfrac{2\sqrt{3} + \sqrt{13}}{8}'}'}$.
 
 $$\cos\frac{\pi}{12} = \sqrt{\frac{2\sqrt{3} + \sqrt{13}}{8}} = \frac{\sqrt{2\sqrt{3} + \sqrt{13}}}{2\sqrt{2}}$$
 
@@ -784,13 +784,13 @@ $$z = z_1 + (z_2 - z_1)\,e^{\pm i\pi/3}$$
 
 $z_2 - z_1 = (1 - 2) + (-1 - 3)i = -1 - 4i$.
 
-$e^{i\pi/3} = \dfrac{1}{2} + i\dfrac{\sqrt{3}}{2}$:
+$e^{i\pi/3} = {'\dfrac{1}{2}'} + i{'{'\dfrac{\sqrt{3}}{2}'}'}$:
 
 $$(-1 - 4i)\!\left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = \frac{-1 + 4\sqrt{3}}{2} + i\frac{-4 - \sqrt{3}}{2}$$
 
 $$z = (2 + 3i) + \frac{-1 + 4\sqrt{3}}{2} + i\frac{-4 - \sqrt{3}}{2} = \frac{3 + 4\sqrt{3}}{2} + i\frac{2 - \sqrt{3}}{2}$$
 
-For the other orientation, $e^{-i\pi/3} = \dfrac{1}{2} - i\dfrac{\sqrt{3}}{2}$:
+For the other orientation, $e^{-i\pi/3} = {'\dfrac{1}{2}'} - i{'{'\dfrac{\sqrt{3}}{2}'}'}$:
 
 $$z = (2 + 3i) + \frac{-1 - 4\sqrt{3}}{2} + i\frac{-4 + \sqrt{3}}{2} = \frac{3 - 4\sqrt{3}}{2} + i\frac{2 + \sqrt{3}}{2}$$
 
@@ -846,23 +846,23 @@ The point is $z = i$.
 
 $x^3+3x^2+7x+5 = (x+1)(x^2+2x+5)$.
 
-$x^2+2x+5 = 0$: $x = \dfrac{-2\pm\sqrt{4-20}}{2} = -1 \pm 2i$.
+$x^2+2x+5 = 0$: $x = {'{'\dfrac{-2\pm\sqrt{4-20}}{2}'}'} = -1 \pm 2i$.
 
 $\boxed{x = -1,\; x = -1+2i,\; x = -1-2i}$
 
 ### Example 12.6: Transformation — inversion
 
-**Problem.** Under the transformation $w = \dfrac{1}{z}$, find the image of the line $x = 2$.
+**Problem.** Under the transformation $w = {'\dfrac{1}{z}'}$, find the image of the line $x = 2$.
 
-**Solution.** $z = 2 + iy$, $w = u + iv = \dfrac{1}{2+iy} = \dfrac{2-iy}{4+y^2}$.
+**Solution.** $z = 2 + iy$, $w = u + iv = {'\dfrac{1}{2+iy}'} = {'\dfrac{2-iy}{4+y^2}'}$.
 
-$u = \dfrac{2}{4+y^2}$, $v = \dfrac{-y}{4+y^2}$.
+$u = {'\dfrac{2}{4+y^2}'}$, $v = {'\dfrac{-y}{4+y^2}'}$.
 
-Note: $u^2 + v^2 = \dfrac{4+y^2}{(4+y^2)^2} = \dfrac{1}{4+y^2} = \dfrac{u}{2}$.
+Note: $u^2 + v^2 = {'\dfrac{4+y^2}{(4+y^2)^2}'} = {'\dfrac{1}{4+y^2}'} = {'\dfrac{u}{2}'}$.
 
-So $u^2 + v^2 = \dfrac{u}{2} \implies \left(u-\dfrac{1}{4}\right)^2 + v^2 = \dfrac{1}{16}$.
+So $u^2 + v^2 = {'\dfrac{u}{2}'} \implies \left(u-{'\dfrac{1}{4}'}\right)^2 + v^2 = {'\dfrac{1}{16}'}$.
 
-The image is a circle with centre $\left(\dfrac{1}{4}, 0\right)$ and radius $\dfrac{1}{4}$.
+The image is a circle with centre $\left({'\dfrac{1}{4}'}, 0\right)$ and radius ${'\dfrac{1}{4}'}$.
 
 ---
 
@@ -875,7 +875,7 @@ Express $\cos 3\theta + \cos\theta$ as a product.
 <details>
 <summary>Solution</summary>
 
-Using the sum-to-product formula: $\cos A + \cos B = 2\cos\!\left(\dfrac{A+B}{2}\right)\cos\!\left(\dfrac{A-B}{2}\right)$.
+Using the sum-to-product formula: $\cos A + \cos B = 2\cos\!\left({'\dfrac{A+B}{2}'}\right)\cos\!\left({'\dfrac{A-B}{2}'}\right)$.
 
 $$\cos 3\theta + \cos\theta = 2\cos 2\theta \cos\theta = \boxed{2\cos\theta\cos 2\theta}$$
 
@@ -892,7 +892,7 @@ $z_k = e^{2\pi ik/n}$ for $k = 0, 1, \ldots, n-1$.
 
 $|z_k| = 1$ for all $k$ (on the unit circle).
 
-The angular separation between consecutive roots is $\dfrac{2\pi}{n}$, which is constant.
+The angular separation between consecutive roots is ${'{'\dfrac{2\pi}{n}'}'}$, which is constant.
 
 Therefore the roots are the vertices of a regular $n$-gon inscribed in the unit circle. $\blacksquare$
 
@@ -911,13 +911,13 @@ $x^2-2x+1+y^2 = 4x^2+8x+4+4y^2$.
 
 $0 = 3x^2+10x+3y^2+3$.
 
-$3\!\left(x^2+\dfrac{10}{3}x\right)+3y^2 = -3$.
+$3\!\left(x^2+{'\dfrac{10}{3}'}x\right)+3y^2 = -3$.
 
-$3\!\left(x+\dfrac{5}{3}\right)^2 + 3y^2 = \dfrac{25}{3}-3 = \dfrac{16}{3}$.
+$3\!\left(x+{'\dfrac{5}{3}'}\right)^2 + 3y^2 = {'\dfrac{25}{3}'}-3 = {'\dfrac{16}{3}'}$.
 
-$\left(x+\dfrac{5}{3}\right)^2 + y^2 = \dfrac{16}{9}$.
+$\left(x+{'\dfrac{5}{3}'}\right)^2 + y^2 = {'\dfrac{16}{9}'}$.
 
-A circle with centre $\left(-\dfrac{5}{3}, 0\right)$ and radius $\dfrac{4}{3}$.
+A circle with centre $\left(-{'\dfrac{5}{3}'}, 0\right)$ and radius ${'\dfrac{4}{3}'}$.
 
 </details>
 
@@ -927,7 +927,7 @@ A circle with centre $\left(-\dfrac{5}{3}, 0\right)$ and radius $\dfrac{4}{3}$.
 
 ### 14.1 Complex logarithms
 
-The complex logarithm is multi-valued: $\ln z = \ln|z| + i(\arg z + 2k\pi)$ for $k \in \mathbb{'\{'}Z{'\}'}$.
+The complex logarithm is multi-valued: $\ln z = \ln|z| + i(\arg z + 2k\pi)$ for $k \in \mathbb\{Z{'\}'}$.
 
 The principal value uses $\arg z \in (-\pi, \pi]$.
 
@@ -939,7 +939,7 @@ Example: $i^i = e^{i\ln i} = e^{i(i\pi/2)} = e^{-\pi/2} \approx 0.2079$ (princip
 
 ### 14.3 Möbius transformations
 
-A Möbius transformation is $w = \dfrac{az+b}{cz+d}$ with $ad-bc \neq 0$.
+A Möbius transformation is $w = {'\dfrac{az+b}{cz+d}'}$ with $ad-bc \neq 0$.
 
 Properties:
 - Maps circles and lines to circles and lines
@@ -950,7 +950,7 @@ Properties:
 
 Using $e^{i\theta} = \cos\theta + i\sin\theta$:
 
-$\cos^n\theta = \left(\dfrac{e^{i\theta}+e^{-i\theta}}{2}\right)^n$ and $\sin^n\theta = \left(\dfrac{e^{i\theta}-e^{-i\theta}}{2i}\right)^n$.
+$\cos^n\theta = \left({'{'\dfrac{e^{i\theta}+e^{-i\theta}}{2}'}'}\right)^n$ and $\sin^n\theta = \left({'{'\dfrac{e^{i\theta}-e^{-i\theta}}{2i}'}'}\right)^n$.
 
 These can be expanded to express $\cos^n\theta$ and $\sin^n\theta$ in terms of multiple angles.
 
@@ -965,30 +965,30 @@ Express $\cos^4\theta$ in terms of $\cos 2\theta$ and $\cos 4\theta$.
 <details>
 <summary>Solution</summary>
 
-$\cos^4\theta = \left(\dfrac{e^{i\theta}+e^{-i\theta}}{2}\right)^4 = \dfrac{e^{4i\theta}+4e^{2i\theta}+6+4e^{-2i\theta}+e^{-4i\theta}}{16}$
+$\cos^4\theta = \left({'{'\dfrac{e^{i\theta}+e^{-i\theta}}{2}'}'}\right)^4 = {'{'\dfrac{e^{4i\theta}+4e^{2i\theta}+6+4e^{-2i\theta}+e^{-4i\theta}}{16}'}'}$
 
-$= \dfrac{2\cos 4\theta + 8\cos 2\theta + 6}{16} = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta$.
+$= {'{'\dfrac{2\cos 4\theta + 8\cos 2\theta + 6}{16}'}'} = {'\dfrac{3}{8}'} + {'\dfrac{1}{2}'}\cos 2\theta + {'\dfrac{1}{8}'}\cos 4\theta$.
 
-$\boxed{\cos^4\theta = \dfrac{3}{8} + \dfrac{1}{2}\cos 2\theta + \dfrac{1}{8}\cos 4\theta}$
+$\boxed{\cos^4\theta = {'\dfrac{3}{8}'} + {'\dfrac{1}{2}'}\cos 2\theta + {'\dfrac{1}{8}'}\cos 4\theta}$
 
 </details>
 
 ### Question 15
 
-Find the image of the line $\mathrm{Re}(z) = 2$ under the transformation $w = \dfrac{z-1}{z+1}$.
+Find the image of the line $\mathrm{Re}(z) = 2$ under the transformation $w = {'\dfrac{z-1}{z+1}'}$.
 
 <details>
 <summary>Solution</summary>
 
 Let $z = 2 + iy$.
 
-$w = \dfrac{1+iy}{3+iy} = \dfrac{(1+iy)(3-iy)}{9+y^2} = \dfrac{3+y^2+i(3y-y)}{9+y^2} = \dfrac{3+y^2}{9+y^2} + i\dfrac{2y}{9+y^2}$.
+$w = {'\dfrac{1+iy}{3+iy}'} = {'\dfrac{(1+iy)(3-iy)}{9+y^2}'} = {'\dfrac{3+y^2+i(3y-y)}{9+y^2}'} = {'\dfrac{3+y^2}{9+y^2}'} + i{'\dfrac{2y}{9+y^2}'}$.
 
-Let $w = u+iv$: $u = \dfrac{3+y^2}{9+y^2}$, $v = \dfrac{2y}{9+y^2}$.
+Let $w = u+iv$: $u = {'\dfrac{3+y^2}{9+y^2}'}$, $v = {'\dfrac{2y}{9+y^2}'}$.
 
-Eliminating $y$: note that $u = 1 - \dfrac{6}{9+y^2}$, so $9+y^2 = \dfrac{6}{1-u}$.
+Eliminating $y$: note that $u = 1 - {'\dfrac{6}{9+y^2}'}$, so $9+y^2 = {'\dfrac{6}{1-u}'}$.
 
-$v^2 = \dfrac{4y^2}{(9+y^2)^2}$. Substituting $y^2 = \dfrac{6}{1-u}-9 = \dfrac{6-9+9u}{1-u} = \dfrac{9u-3}{1-u}$:
+$v^2 = {'\dfrac{4y^2}{(9+y^2)^2}'}$. Substituting $y^2 = {'\dfrac{6}{1-u}'}-9 = {'\dfrac{6-9+9u}{1-u}'} = {'\dfrac{9u-3}{1-u}'}$:
 
 This is a circle (after simplification).
 
@@ -1009,7 +1009,7 @@ The $n$th roots of unity are equally spaced on the unit circle and have importan
 
 $\ln z = \ln|z| + i\arg z$, where $\arg z$ is multi-valued.
 
-$\ln z = \ln|z| + i(\theta + 2k\pi)$ for $k \in \mathbb{'\{'}Z{'\}'}$.
+$\ln z = \ln|z| + i(\theta + 2k\pi)$ for $k \in \mathbb\{Z{'\}'}$.
 
 The **principal value** uses $\theta \in (-\pi, \pi]$.
 
@@ -1019,7 +1019,7 @@ $e^{i\theta} + e^{-i\theta} = 2\cos\theta$
 
 $e^{i\theta} - e^{-i\theta} = 2i\sin\theta$
 
-$\cos\theta = \dfrac{e^{i\theta}+e^{-i\theta}}{2}$, $\sin\theta = \dfrac{e^{i\theta}-e^{-i\theta}}{2i}$
+$\cos\theta = {'{'\dfrac{e^{i\theta}+e^{-i\theta}}{2}'}'}$, $\sin\theta = {'{'\dfrac{e^{i\theta}-e^{-i\theta}}{2i}'}'}$
 
 ---
 

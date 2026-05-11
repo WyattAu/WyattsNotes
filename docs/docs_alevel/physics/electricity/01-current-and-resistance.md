@@ -85,14 +85,14 @@ volt (V), where 1 V = 1 J C$^{-1}$.
 
 $$V = \frac{W}{Q}$$
 
-**Definition.** Electromotive force (e.m.f.) $\mathcal{'\{'}E{'\}'}$ is the total energy transferred per unit
+**Definition.** Electromotive force (e.m.f.) $\mathcal\{E{'\}'}$ is the total energy transferred per unit
 charge by a source when charge passes through it, including both energy delivered to the external
-circuit and energy dissipated internally: $\mathcal{'\{'}E{'\}'} = W/Q$.
+circuit and energy dissipated internally: $\mathcal\{E{'\}'} = W/Q$.
 
-**Electromotive force** (e.m.f.) $\mathcal{'\{'}E{'\}'}$ is the energy transferred per unit charge when charge
+**Electromotive force** (e.m.f.) $\mathcal\{E{'\}'}$ is the energy transferred per unit charge when charge
 passes through a source (e.g., a cell):
 
-$$\mathcal{'\{'}E{'\}'} = \frac{W}{Q}$$
+$$\mathcal\{E{'\}'} = \frac{W}{Q}$$
 
 The distinction: p.d. refers to energy dissipated in a component; e.m.f. refers to energy gained
 from a source.
@@ -933,7 +933,7 @@ $V_R = \frac{10\,000}{11\,813} \times 9.0 = 7.62$ V.)
 <details>
 <summary>Problem 18</summary>
 
-A battery with e.m.f. $\mathcal{'\{'}E{'\}'} = 12.0$ V and internal resistance $r_0 = 0.50$ $\Omega$ at
+A battery with e.m.f. $\mathcal\{E{'\}'} = 12.0$ V and internal resistance $r_0 = 0.50$ $\Omega$ at
 $20^\circ\mathrm{C}$ is connected to an external load of $R_L = 5.0$ $\Omega$. The internal
 resistance has a positive temperature coefficient of $\alpha_r = 4.0 \times 10^{-3}$
 $^\circ\mathrm{C}^{-1}$. (a) Calculate the current and power delivered to the load at
@@ -944,7 +944,7 @@ the battery at each temperature.
 **Answer.** (a) At $20^\circ\mathrm{C}$: $r = 0.50$ $\Omega$. Total resistance $= 0.50 + 5.0 = 5.50$
 $\Omega$.
 
-$I = \mathcal{'\{'}E{'\}'}/R_{\mathrm{total}} = 12.0/5.50 = 2.18$ A.
+$I = \mathcal\{E{'\}'}/R_{\mathrm{total}} = 12.0/5.50 = 2.18$ A.
 $P_L = I^2 R_L = (2.18)^2 \times 5.0 = 23.8$ W.
 
 (b) At $60^\circ\mathrm{C}$:
