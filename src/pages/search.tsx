@@ -30,7 +30,11 @@ const INDICES: IndexConfig[] = [
   { name: 'Infrastructure & Tools', indexName: 'wyattsnotes_main', color: '#90A4AE' },
   { name: 'IB', indexName: 'wyattsnotes_ib', color: '#4FC3F7' },
   { name: 'DSE', indexName: 'wyattsnotes_dse', color: '#4DD0E1' },
-  { name: 'A-Level Maths & Physics', indexName: 'wyattsnotes_alevel_maths_physics', color: '#81C784' },
+  {
+    name: 'A-Level Maths & Physics',
+    indexName: 'wyattsnotes_alevel_maths_physics',
+    color: '#81C784',
+  },
   { name: 'A-Level Sciences', indexName: 'wyattsnotes_alevel_sciences', color: '#AED581' },
   { name: 'Qualifications', indexName: 'wyattsnotes_qualifications', color: '#FFB74D' },
   { name: 'Programming', indexName: 'wyattsnotes_programming', color: '#CE93D8' },

@@ -48,7 +48,7 @@ module.exports = function (source) {
     'lim',
   ];
 
-  let result = source;
+  const result = source;
   let i = 0;
   const parts = [];
 
@@ -56,7 +56,7 @@ module.exports = function (source) {
     // Look for backslash followed by a command name
     if (source[i] === '\\' && i + 1 < source.length && /[a-zA-Z]/.test(source[i + 1])) {
       // Read the full command name
-      let cmdStart = i;
+      const cmdStart = i;
       let cmdEnd = i + 1;
       while (cmdEnd < source.length && /[a-zA-Z]/.test(source[cmdEnd])) {
         cmdEnd++;
@@ -118,7 +118,7 @@ module.exports = function (source) {
 
               // Read balanced {content}
               let d = 0;
-              let start = i;
+              const start = i;
               while (i < source.length) {
                 if (source[i] === '{') d++;
                 else if (source[i] === '}') {

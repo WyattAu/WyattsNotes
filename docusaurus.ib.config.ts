@@ -35,7 +35,7 @@ const admonitionsConfig = {
   },
 };
 
-const   remarkPluginsConfig = {
+const remarkPluginsConfig = {
   beforeDefaultRemarkPlugins: [remarkGridTable, escapeJsxBraces],
   remarkPlugins: [remarkMath, remarkCodeSnippets],
 };
