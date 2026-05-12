@@ -4,7 +4,6 @@
 // Contains: biology, chemistry, computer-science, economics, psychology, geography, history, english (~98K lines)
 
 import type * as Preset from '@docusaurus/preset-classic';
-import type { Config } from '@docusaurus/types';
 
 import {
   createAlgoliaConfig,

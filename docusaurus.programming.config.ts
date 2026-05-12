@@ -5,7 +5,6 @@
 // Total: ~167K lines across 2 docs plugins.
 
 import type * as Preset from '@docusaurus/preset-classic';
-import type { Config } from '@docusaurus/types';
 import {
   createAlgoliaConfig,
   createCommonDocsPluginConfig,

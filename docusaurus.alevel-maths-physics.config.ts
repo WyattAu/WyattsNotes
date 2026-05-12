@@ -4,7 +4,6 @@
 // Contains: maths, further-maths, physics (~83K lines)
 
 import type * as Preset from '@docusaurus/preset-classic';
-import type { Config } from '@docusaurus/types';
 import {
   createAlgoliaConfig,
   createCommonDocsPluginConfig,
