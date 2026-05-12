@@ -69,9 +69,14 @@ All automated quality gates pass:
 
 **Status:** 10 files, 4.8K lines.
 
+**Completed:**
+- [x] Ensure dev environment setup is current (Node 22, pnpm 10, corepack)
+- [x] Fix CONTRIBUTING.md to use pnpm instead of npm
+- [x] Fix stale frontmatter.json path (docs_licensing-notes -> docs_tools/licensing)
+- [x] Add sidebar_position to licensing software-licensing.md
+
 **Tasks:**
 - [ ] Review for depth tier compliance
-- [ ] Ensure dev environment setup is current (Node 22, pnpm 10)
 - [ ] Add productivity tooling recommendations
 
 ### 1.4 University Content Expansion
@@ -116,11 +121,16 @@ All automated quality gates pass:
 
 ### 2.3 Search Infrastructure
 
-**Tasks:**
-- [ ] Audit Algolia index freshness (daily cron vs on-deploy indexing)
-- [ ] Add search analytics (track query volume, zero-result queries)
-- [ ] Implement search result ranking improvements
-- [ ] Add faceted search (filter by subject, qualification level)
+**Completed:**
+- [x] Enable per-site navbar Algolia search (added `themeConfig.algolia` to all 8 content configs)
+  - Each sub-site now routes to its own index (e.g., IB site searches `wyattsnotes_ib`)
+  - Custom cross-site search page at `/search` remains functional
+  - `contextualSearch: false` to avoid sub-path filtering issues
+
+**Identified gaps (not yet addressed):**
+- [ ] Move hardcoded Algolia credentials to environment variables
+- [ ] Add Algolia crawler config to repo for version control
+- [ ] Add search analytics (query volume, zero-result queries)
 
 ---
 
@@ -181,23 +191,29 @@ All automated quality gates pass:
 
 **Current state:** 9 Docusaurus configs in root directory, shared `src/` and `docs/`.
 
+**Analysis complete:** ~2,000 lines of duplicated config across 8 full configs. Primary duplication in `headTags` (~880 lines), `remarkPluginsConfig`/`rehypePluginConfig` (~360 lines), `admonitionsConfig` (~120 lines), and shared themeConfig blocks (prism, mermaid, zoom, colorMode, metadata).
+
+**Notable variation:** `escapeJsxBraces` webpack loader used by 4 configs (ib, dse, alevel-maths-physics, alevel-sciences) but not the other 4.
+
 **Tasks:**
-- [ ] Evaluate pnpm workspaces for shared dependency management
-- [ ] Consider extracting shared components to a local package
+- [ ] Extract shared config module (`docusaurus.shared.config.ts`) with factory function
+- [ ] Refactor sub-site configs to import shared blocks (incremental, one at a time)
+- [ ] Consider pnpm workspaces for shared dependency management
 - [ ] Standardize config generation (reduce duplication across 9 docusaurus configs)
-- [ ] Add shared tailwind/postcss config
+- [ ] Add shared tailwind/postcss config (note: tailwindcss declared as dep but not actively used)
 
 ### 4.2 Testing Infrastructure
 
-**Status:** DONE. Vitest configured with 35 tests across 6 test files.
+**Status:** DONE. Vitest configured with 64 tests across 7 test files.
 
 **Test coverage:**
-- DesmosGraph: parseExpression logic, parameter detection, aspect ratio, guard clauses (8 tests)
-- Geogebra: URL construction, aspect ratio, default dimensions (3 tests)
-- PhetSimulation: URL construction, hyphenated IDs, aspect ratio (3 tests)
-- IFrameComponent: default dimensions, src prop validation (3 tests)
-- ReadingProgress: scroll percentage computation, clamping, threshold rendering (5 tests)
-- escape-jsx-braces webpack loader: brace escaping for 9 test cases (9 tests)
+- DesmosGraph: parseExpression logic, parameter detection, aspect ratio, guard clauses (11 tests)
+- Geogebra: URL construction with UI flags, hyphenated IDs, aspect ratio (8 tests)
+- PhetSimulation: URL construction, hyphenated IDs, _en.html suffix, aspect ratio (7 tests)
+- IFrameComponent: default dimensions, custom props, src prop validation (9 tests)
+- ReadingProgress: scroll percentage computation, clamping, threshold rendering (10 tests)
+- DocItemFooter: reading time computation, word counting, edge cases (9 tests)
+- escape-jsx-braces webpack loader: brace escaping for 9 test cases (10 tests)
 
 **Tasks:**
 - [ ] Add @testing-library/react component render tests (requires jsdom setup for Docusaurus)
