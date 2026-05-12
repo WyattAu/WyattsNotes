@@ -31,6 +31,11 @@ All automated quality gates pass:
 - Link checker (relative links, directory resolution, anchor validation, slug-aware fallback)
 - Lychee external link checker (CI only)
 - Content standard enforcement (CONTENT_STANDARD.md)
+- Content depth tier validation (`check-depth-tiers.py`)
+- Description quality validation (`check-descriptions.py`)
+- Hand-wave phrase detection (`check-handwaves.py`, informational)
+- Forward reference detection (`check-forward-refs.py`, informational)
+- Search index coverage analysis (`check-search-index-coverage.py`, informational)
 
 ---
 
@@ -40,16 +45,12 @@ All automated quality gates pass:
 
 **Status:** 3 files, 1.7K lines. Severely underdeveloped relative to depth tier requirements.
 
-**Completed from restructure plan:**
-- Accuracy fix: "Absolutely Continuous Random Element" now includes formal definition with
-  measurability and null set semantics
-- Accuracy fix: "Space of Probability Measures" already matches corrected specification
+**Completed from restructure plan (`.spec/definitions_restructure_spec.md`):**
+- Phase 2: All 7 accuracy fixes applied (Event, Equivalence Relation, Lipschitz, a.e. measurability, absolute continuity, Space of Probability Measures, RCP vs RCD distinction)
+- Phase 3: All 6 missing definitions added (LOTUS, CLT, Reparameterization Trick, Positive Definite Kernels + Moore-Aronszajn, Stochastic Processes + SDEs, Jensen-Shannon Divergence)
+- Phase 4: Chapter reorganization complete (Covariance Matrix moved, Bochner definitions consolidated, Probability Metrics & Generative Foundations section created)
 
 **Remaining tasks:**
-- [ ] Execute definitions restructure plan (`.spec/definitions_restructure_spec.md`)
-  - Phase 2: Fix 7 accuracy issues (Event definition, Equivalence Relation context, Lipschitz constant, a.e. measurability assumption, absolute continuity wording, Space of Probability Measures notation, RCP vs RCD distinction)
-  - Phase 3: Add 6 missing definitions (LOTUS, CLT, Reparameterization Trick, Positive Definite Kernels + Moore-Aronszajn, Stochastic Processes + SDEs, Jensen-Shannon Divergence)
-  - Phase 4: Reorganize chapters (move Covariance Matrix, merge Bochner definitions, create Probability Metrics & Info Theory section)
 - [ ] Expand to meet Tier 4 depth requirements (150+ lines per file)
 - [ ] Add worked examples for all major theorems
 - [ ] Cross-reference with university maths/physics content
@@ -162,6 +163,7 @@ All automated quality gates pass:
 - Flags terms used in math mode before their definition line
 - Skips standard notation (single letters, common operators)
 - Uses parallel processing
+- Integrated into CI `content-validation` job and `validate:all` npm script
 
 ### 3.5 Search Index Coverage
 
@@ -169,6 +171,7 @@ All automated quality gates pass:
 - Cross-references Algolia indices with docusaurus configs
 - Identifies 2 coverage gaps (docs_infrastructure, docs_tools served by main index)
 - 7 naming mismatches between config paths and index names
+- Integrated into CI `content-validation` job and `validate:all` npm script
 
 ---
 

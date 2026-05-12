@@ -132,6 +132,12 @@ jobs:
       - name: Detect hand-wave phrases (informational)
         run: python3 scripts/check-handwaves.py
 
+      - name: Check forward references (informational)
+        run: python3 scripts/check-forward-refs.py
+
+      - name: Check search index coverage (informational)
+        run: python3 scripts/check-search-index-coverage.py
+
   links:
     name: Check External Links
     runs-on: ubuntu-latest

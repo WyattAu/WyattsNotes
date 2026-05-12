@@ -313,14 +313,14 @@ Integrability。
 
 ## 执行顺序
 
-1. [ ] 修复准确性问题 (Phase 2) - 小范围修改
-2. [ ] 移动 Covariance Matrix 到正确位置
-3. [ ] 删除重复的 Bochner Integral 定义
-4. [ ] 添加 LOTUS
-5. [ ] 添加 CLT
-6. [ ] 添加 Reparameterization Trick
-7. [ ] 添加 Positive Definite Kernels
-8. [ ] 添加 Stochastic Processes & SDEs
-9. [ ] 创建 Probability Metrics & Information Theory 章节
-10. [ ] 添加 Jensen-Shannon Divergence
-11. [ ] 添加 RCP vs RCD 区分说明
+1. [x] 修复准确性问题 (Phase 2) - 小范围修改
+2. [x] 移动 Covariance Matrix 到正确位置
+3. [x] 删除重复的 Bochner Integral 定义
+4. [x] 添加 LOTUS
+5. [x] 添加 CLT
+6. [x] 添加 Reparameterization Trick
+7. [x] 添加 Positive Definite Kernels
+8. [x] 添加 Stochastic Processes & SDEs
+9. [x] 创建 Probability Metrics & Information Theory 章节
+10. [x] 添加 Jensen-Shannon Divergence
+11. [x] 添加 RCP vs RCD 区分说明
