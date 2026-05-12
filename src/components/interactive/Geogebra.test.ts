@@ -38,11 +38,13 @@ function buildGeogebraUrl(appletId: string, width: number, height: number): stri
 describe('Geogebra / URL construction', () => {
   it('should build correct URL with standard appletId', () => {
     const url = buildGeogebraUrl('abc123', 800, 600);
+
     expect(url).toContain('id/abc123/width/800/height/600');
   });
 
   it('should include all UI control flags set to false', () => {
     const url = buildGeogebraUrl('abc123', 800, 600);
+
     expect(url).toContain('rc/false');
     expect(url).toContain('ai/false');
     expect(url).toContain('smb/false');
@@ -55,16 +57,19 @@ describe('Geogebra / URL construction', () => {
 
   it('should include border color 888888', () => {
     const url = buildGeogebraUrl('abc123', 800, 600);
+
     expect(url).toContain('border/888888');
   });
 
   it('should handle hyphenated appletId', () => {
     const url = buildGeogebraUrl('msh23-crc', 800, 600);
+
     expect(url).toContain('id/msh23-crc/width/800');
   });
 
   it('should use custom width and height', () => {
     const url = buildGeogebraUrl('xyz', 1024, 768);
+
     expect(url).toContain('width/1024/height/768');
   });
 });
@@ -72,16 +77,19 @@ describe('Geogebra / URL construction', () => {
 describe('Geogebra / aspect ratio', () => {
   it('should compute correct aspect padding for 800x600', () => {
     const aspectPadding = (600 / 800) * 100;
+
     expect(aspectPadding).toBe(75);
   });
 
   it('should compute correct aspect padding for 800x500', () => {
     const aspectPadding = (500 / 800) * 100;
+
     expect(aspectPadding).toBe(62.5);
   });
 
   it('should compute 100% for square dimensions', () => {
     const aspectPadding = (800 / 800) * 100;
+
     expect(aspectPadding).toBe(100);
   });
 });

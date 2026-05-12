@@ -465,6 +465,78 @@ unnecessary legal ambiguity with no corresponding benefit. If you want a minimal
 use MIT, ISC, or 0BSD. If you want a public domain dedication, use CC0 or Unlicense. WTFPL is a
 novelty, not a serious licensing choice for production software.
 
+### Eclipse Public License 2.0 (EPL 2.0)
+
+EPL 2.0 is a weak-copyleft license maintained by the Eclipse Foundation. It is the primary license for
+the Eclipse IDE, Jakarta EE, and a large portion of the Java enterprise ecosystem. It occupies a
+middle ground between permissive licenses (MIT, Apache 2.0) and strong copyleft licenses (GPL).
+
+**Key characteristics:**
+
+- **File-level copyleft:** Like MPL 2.0, EPL's copyleft obligation applies only to files that contain
+  EPL-licensed code or are derivative works of EPL-licensed files. You can combine EPL-licensed modules
+  with proprietary code in the same project as long as they remain in separate files and modules.
+- **Patent grant with retaliation:** EPL 2.0 includes an explicit patent grant from contributors (Section
+  1(b)) and a patent retaliation clause (Section 10) that terminates the patent grant if a recipient
+  brings a patent infringement claim against the software. This is similar in effect to Apache 2.0's
+  patent retaliation provisions.
+- **No copyleft compatibility with GPLv2:** EPL 2.0 is compatible with GPLv3 (you can combine EPL and
+  GPLv3 code) but NOT with GPLv2. The incompatibility with GPLv2 arises from EPL's additional
+  conditions (patent retaliation, indemnification) that GPLv2 Section 4 does not permit.
+- **Explicit compatibility with GPLv3:** Section 4.1 of EPL 2.0 states that a work distributed under
+  both EPL 2.0 and GPLv3 may be distributed under GPLv3 alone, making the combination straightforward.
+
+**EPL 2.0 vs MPL 2.0:**
+
+- Both are file-level copyleft licenses with patent grants and retaliation clauses
+- EPL is more commonly used in the Java ecosystem; MPL is more common in the C++/Firefox/Rust ecosystem
+- EPL has broader compatibility with GPLv3 by explicit provision; MPL 2.0 can be combined with GPLv2+
+  if the MPL 2.0's GPL compatibility option is used (Section 3.3)
+- EPL includes a "secondary license" mechanism (Section 4.1) allowing the copyright holder to designate
+  a secondary license (typically GPLv3) under which the code may also be distributed
+
+**When you encounter EPL 2.0:**
+
+- Common in enterprise Java projects: Eclipse IDE, Jakarta EE, JGit, Eclipse Vert.x, JFace, SWT
+- If you are building a proprietary application that uses EPL-licensed libraries, you can do so as long
+  as your modifications to the EPL-licensed code are made available under EPL 2.0
+- If you are distributing a combined work that includes both EPL and proprietary code, the EPL-licensed
+  portions must remain under EPL 2.0, but your proprietary portions can remain under their own license
+
+### Boost Software License 1.0 (BSL 1.0)
+
+The Boost Software License is a permissive license used by the Boost C++ libraries, one of the most
+influential and widely-used C++ library collections in the world. Many components of Boost have been
+incorporated into the C++ standard library itself.
+
+**Key characteristics:**
+
+- **Permissive with a mandatory attribution notice:** The license requires including a copy of the
+  license text in all copies of the software. The required notice includes the copyright holder's name,
+  the license text, and a disclaimer — similar to MIT/BSD in this regard.
+- **No patent grant:** Unlike Apache 2.0 and EPL 2.0, BSL 1.0 does not include an explicit patent
+  grant. This means that contributors grant copyright licenses but do not grant patent licenses. This
+  is a significant difference from Apache 2.0, which explicitly grants patent rights.
+- **Broad redistribution rights:** You may use, copy, modify, merge, publish, distribute, sublicense,
+  and sell copies of the software under any license of your choice, including proprietary licenses.
+- **GPL compatible:** BSL 1.0 is compatible with all versions of the GPL because it imposes no
+  additional restrictions beyond attribution.
+
+**Why Boost matters even if you don't use C++:**
+
+- Many C++ standard library features originated in Boost (smart pointers, `std::optional`,
+  `std::variant`, regular expressions, filesystem, threading)
+- Understanding BSL 1.0 is relevant for any organization that uses C++ in production, because Boost
+  libraries are a near-universal dependency in serious C++ projects
+- The license text is short and clear, making it a reasonable choice for projects that want permissive
+  terms without the overhead of Apache 2.0's longer text
+
+**BSL 1.0 vs BSL 1.1 (Business Source License):** Do not confuse the Boost Software License with the
+Business Source License (BSL 1.1). They are entirely different licenses. The Boost Software License is
+a simple, permissive, OSI-approved open-source license. The Business Source License is a source-available
+license that restricts production use until a change date, after which it converts to an open-source
+license (typically GPL). The naming collision is unfortunate but well-established.
+
 ## Proprietary and Source-Available Licenses
 
 ### BSL (Business Source License)
@@ -790,8 +862,10 @@ project, or an incompatible license combination), you have several options, in o
 | LGPLv3       | Weak (linking exception)  | Inherited from GPLv3      | Not granted             | Yes               | Convey (Sec 4)         | No             | Yes          | GPLv3              |
 | GPLv2        | Strong                    | None                      | Not granted             | Yes               | Distribution (Sec 3)   | No             | Yes          | —                  |
 | MPL 2.0      | Weak (file-level)         | Yes (Sec 2.1(b))          | Not granted             | Yes               | Distribution (Sec 3.2) | No             | Yes          | GPLv2+ if enabled  |
+| EPL 2.0      | Weak (file-level)         | Yes (Sec 1(b)) + retaliation | Not granted          | Yes               | Distribution (Sec 1)   | No             | Yes          | GPLv3 only         |
 | MIT          | None                      | No                        | No                      | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
 | Apache 2.0   | None                      | Yes (Sec 3) + retaliation | Limited (Sec 7)         | Yes (NOTICE file) | N/A                    | No             | Yes          | GPLv3 only         |
+| Boost 1.0    | None                      | No                        | No                      | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
 | BSD 2-Clause | None                      | No                        | No                      | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
 | BSD 3-Clause | None                      | No                        | Endorsement restriction | Yes               | N/A                    | No             | Yes          | Yes (all versions) |
 | ISC          | None                      | No                        | No                      | Yes               | N/A                    | No             | Yes          | Yes (all versions) |

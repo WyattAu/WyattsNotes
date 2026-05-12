@@ -109,54 +109,57 @@ describe('escape-jsx-braces webpack loader', () => {
   it('should escape braces in \\dfrac with nested LaTeX', () => {
     const input = '\\dfrac{\\mathbf{a}}{\\mathbf{n}}';
     const result = escapeLatexBraces(input);
+
     expect(result).toBe('\\dfrac{\\mathbf\\{a\\}}{\\mathbf\\{n\\}}');
   });
 
   it('should not escape braces in simple \\dfrac without nested commands', () => {
     const input = '\\dfrac{1}{2}';
     const result = escapeLatexBraces(input);
+
     // No backslash or pipe inside braces, so no escaping
     expect(result).toBe('\\dfrac{1}{2}');
   });
 
   it('should escape braces when pipe is present inside command args', () => {
-    // The pipe is inside the braces of a problematic command, so it should be escaped
-    // Note: in the actual loader, |\x| does not contain backslash-letter pairs
-    // inside the braces, only a bare pipe. The loader checks for backslash-letter OR pipe.
-    // However, in practice the remark plugin (index.js) handles escaping differently.
-    // This test verifies the loader behavior matches the expected output.
     const input = '\\dfrac{|\\mathbf{a}|}{n}';
     const result = escapeLatexBraces(input);
+
     expect(result).toContain('\\mathbf\\{a\\}');
   });
 
   it('should leave non-problematic commands untouched', () => {
     const input = 'Hello \\alpha world';
     const result = escapeLatexBraces(input);
+
     expect(result).toBe(input);
   });
 
   it('should handle multiple commands on the same line', () => {
     const input = '$\\dfrac{\\mathbf{a}}{n}$ and $\\frac{1}{x}$';
     const result = escapeLatexBraces(input);
+
     expect(result).toBe('$\\dfrac{\\mathbf\\{a\\}}{n}$ and $\\frac{1}{x}$');
   });
 
   it('should handle \\begin{equation} with nested content', () => {
     const input = '\\begin{equation} E = mc^2 \\end{equation}';
     const result = escapeLatexBraces(input);
+
     // \begin has no backslash inside {equation}, no pipe, so no escaping
     expect(result).toBe(input);
   });
 
   it('should handle empty source', () => {
     const result = escapeLatexBraces('');
+
     expect(result).toBe('');
   });
 
   it('should handle unbalanced braces gracefully', () => {
     const input = '\\dfrac{unclosed';
     const result = escapeLatexBraces(input);
+
     // Unbalanced braces are output as-is
     expect(result).toContain('\\dfrac{unclosed');
   });
@@ -164,6 +167,7 @@ describe('escape-jsx-braces webpack loader', () => {
   it('should handle deeply nested braces', () => {
     const input = '\\dfrac{\\mathbf{\\textbf{a}}}{\\mathbf{n}}';
     const result = escapeLatexBraces(input);
+
     // Both inner braces should be escaped since they contain LaTeX commands
     expect(result).toContain('\\textbf\\{a\\}');
     expect(result).toContain('\\mathbf\\{n\\}');
@@ -172,6 +176,7 @@ describe('escape-jsx-braces webpack loader', () => {
   it('should skip whitespace between command and brace', () => {
     const input = '\\dfrac {\\mathbf{x}} {y}';
     const result = escapeLatexBraces(input);
+
     expect(result).toBe('\\dfrac {\\mathbf\\{x\\}} {y}');
   });
 });

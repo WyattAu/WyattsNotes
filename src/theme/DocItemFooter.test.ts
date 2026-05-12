@@ -9,8 +9,8 @@ import { describe, expect, it } from 'vitest';
  */
 function computeReadingTime(text: string, wordsPerMinute = 200): string {
   const words = text.split(/\s+/).filter((w) => w.length > 0).length;
-  const minutes = Math.max(1, Math.ceil(words / wordsPerMinute));
-  return `${minutes} min read`;
+
+  return `${Math.max(1, Math.ceil(words / wordsPerMinute))} min read`;
 }
 
 describe('DocItemFooter / getReadingTime', () => {
@@ -20,36 +20,43 @@ describe('DocItemFooter / getReadingTime', () => {
 
   it('should return 1 min for text under 200 words', () => {
     const text = 'word '.repeat(50).trim();
+
     expect(computeReadingTime(text)).toBe('1 min read');
   });
 
   it('should return 1 min for exactly 200 words', () => {
     const text = 'word '.repeat(200).trim();
+
     expect(computeReadingTime(text)).toBe('1 min read');
   });
 
   it('should return 2 min for 201 words', () => {
     const text = 'word '.repeat(201).trim();
+
     expect(computeReadingTime(text)).toBe('2 min read');
   });
 
-  it('should return 5 min for 800 words', () => {
+  it('should return 4 min for 800 words', () => {
     const text = 'word '.repeat(800).trim();
+
     expect(computeReadingTime(text)).toBe('4 min read');
   });
 
   it('should handle text with multiple spaces between words', () => {
     const text = 'hello   world    foo   bar';
+
     expect(computeReadingTime(text)).toBe('1 min read');
   });
 
   it('should handle text with newlines and tabs', () => {
     const text = 'hello\nworld\tfoo bar';
+
     expect(computeReadingTime(text)).toBe('1 min read');
   });
 
   it('should filter out empty strings from split', () => {
     const text = '   ';
+
     expect(computeReadingTime(text)).toBe('1 min read');
   });
 });

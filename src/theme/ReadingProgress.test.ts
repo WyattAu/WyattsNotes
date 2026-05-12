@@ -7,7 +7,10 @@ import { describe, expect, it } from 'vitest';
  * so we test the pure computation formula directly.
  */
 function computeProgress(scrollTop: number, docHeight: number): number {
-  if (docHeight <= 0) return 0;
+  if (docHeight <= 0) {
+    return 0;
+  }
+
   return Math.min((scrollTop / docHeight) * 100, 100);
 }
 
@@ -38,6 +41,7 @@ describe('ReadingProgress', () => {
 
   it('should handle fractional scroll positions', () => {
     const result = computeProgress(333.33, 1000);
+
     expect(result).toBeCloseTo(33.333, 1);
   });
 
@@ -49,11 +53,13 @@ describe('ReadingProgress', () => {
 describe('ReadingProgress / visibility thresholds', () => {
   it('should be hidden when progress is below 1%', () => {
     const progress = computeProgress(0, 100000);
+
     expect(progress).toBeLessThan(1);
   });
 
   it('should be visible when progress is at least 1%', () => {
     const progress = computeProgress(100, 10000);
+
     expect(progress).toBeGreaterThanOrEqual(1);
   });
 });
