@@ -189,18 +189,21 @@ All automated quality gates pass:
 
 ### 4.1 Monorepo Tooling
 
-**Current state:** 9 Docusaurus configs in root directory, shared `src/` and `docs/`.
+**Status:** DONE. Shared config module extracted.
 
-**Analysis complete:** ~2,000 lines of duplicated config across 8 full configs. Primary duplication in `headTags` (~880 lines), `remarkPluginsConfig`/`rehypePluginConfig` (~360 lines), `admonitionsConfig` (~120 lines), and shared themeConfig blocks (prism, mermaid, zoom, colorMode, metadata).
+**Results:**
+- Created `docusaurus.shared.config.ts` (311 lines) with all shared configuration blocks
+- Factory functions: `sharedConfig()`, `createCommonDocsPluginConfig()`, `createAlgoliaConfig()`
+- Refactored all 8 content configs to import from shared module
+- **47% line reduction**: 3,298 -> 1,739 lines (~1,559 lines of duplication eliminated)
+- Each config now contains only site-specific fields (navbar, footer, docs plugin config, algolia index)
+- `escapeJsxBraces` variation preserved via parameter (4 configs use it, 4 don't)
+- `docusaurus-theme-redoc` preserved in main config only
+- `include` filter preserved in alevel-sciences config
 
-**Notable variation:** `escapeJsxBraces` webpack loader used by 4 configs (ib, dse, alevel-maths-physics, alevel-sciences) but not the other 4.
-
-**Tasks:**
-- [ ] Extract shared config module (`docusaurus.shared.config.ts`) with factory function
-- [ ] Refactor sub-site configs to import shared blocks (incremental, one at a time)
+**Remaining tasks:**
 - [ ] Consider pnpm workspaces for shared dependency management
-- [ ] Standardize config generation (reduce duplication across 9 docusaurus configs)
-- [ ] Add shared tailwind/postcss config (note: tailwindcss declared as dep but not actively used)
+- [ ] Evaluate tailwindcss usage (declared as dep but not actively imported)
 
 ### 4.2 Testing Infrastructure
 
