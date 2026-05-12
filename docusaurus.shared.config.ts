@@ -229,7 +229,7 @@ export const sharedThemeConfigMetadata = [
 ];
 
 export const sharedColorMode = {
-  defaultMode: 'dark',
+  defaultMode: 'dark' as const,
   disableSwitch: false,
   respectPrefersColorScheme: false,
 };
@@ -281,7 +281,7 @@ export interface SharedConfigOptions {
  * Note: themeConfig is NOT included — each site defines its own navbar/footer.
  * Use the individual exports (sharedPrism, sharedMermaid, etc.) for themeConfig.
  */
-export function sharedConfig(options: SharedConfigOptions): Partial<Config> {
+export function sharedConfig(options: SharedConfigOptions) {
   return {
     title: options.title,
     tagline: options.tagline,
