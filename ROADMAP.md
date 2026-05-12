@@ -57,13 +57,17 @@ All automated quality gates pass:
 
 ### 1.2 Licensing Section
 
-**Status:** 2 files, 1.1K lines. Minimal content.
+**Status:** 1 file, 1.0K lines → expanded to include EPL 2.0 and Boost 1.0.
 
-**Tasks:**
-- [ ] Expand GPL, MIT, Apache coverage with actual license text analysis
+**Completed:**
+- [x] Added EPL 2.0 section (Eclipse Public License): file-level copyleft, patent grant, enterprise Java ecosystem
+- [x] Added Boost Software License 1.0 section: permissive, C++ ecosystem, BSL naming caveat
+- [x] Updated comparison table with EPL 2.0 and Boost 1.0 rows
+
+**Remaining tasks:**
+- [ ] Add Creative Commons licenses (CC BY, CC BY-SA, CC BY-NC) for content licensing
+- [ ] Add dual licensing section (MySQL/Oracle model, Qt model)
 - [ ] Add compliance workflows (CLA, DCO, contributor agreements)
-- [ ] Add practical guidance for choosing licenses
-- [ ] Cross-reference with TrueNAS and infrastructure content
 
 ### 1.3 General / Meta Section
 
@@ -189,17 +193,19 @@ All automated quality gates pass:
 
 ### 4.1 Monorepo Tooling
 
-**Status:** DONE. Shared config module extracted.
+**Status:** DONE. Shared config module extracted and all 8 sub-site configs refactored.
 
 **Results:**
-- Created `docusaurus.shared.config.ts` (311 lines) with all shared configuration blocks
+- Created `docusaurus.shared.config.ts` (303 lines) with all shared configuration blocks
 - Factory functions: `sharedConfig()`, `createCommonDocsPluginConfig()`, `createAlgoliaConfig()`
+- Shared exports: admonitions, headTags, plugins, theme blocks (colorMode, prism, mermaid, zoom, metadata)
 - Refactored all 8 content configs to import from shared module
-- **47% line reduction**: 3,298 -> 1,739 lines (~1,559 lines of duplication eliminated)
-- Each config now contains only site-specific fields (navbar, footer, docs plugin config, algolia index)
+- **47% line reduction**: 3,298 → 1,739 lines (~1,559 lines of duplication eliminated)
+- Each config now contains only site-specific fields (navbar, footer, docs plugin, algolia index)
 - `escapeJsxBraces` variation preserved via parameter (4 configs use it, 4 don't)
 - `docusaurus-theme-redoc` preserved in main config only
-- `include` filter preserved in alevel-sciences config
+- TypeScript `Config` type annotations removed to avoid TS2322 mismatches with `sharedPlugins()` return types
+- CI passes all 4 jobs (Lint+Typecheck+Build, Unit Tests, Security Audit, Content Validation)
 
 **Remaining tasks:**
 - [ ] Consider pnpm workspaces for shared dependency management
