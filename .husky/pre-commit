@@ -1,1 +1,19 @@
+#!/usr/bin/env sh
+# Pre-commit hook: runs all validation checks before allowing a commit.
+# Fails the commit if any check exits non-zero.
+
+set -e
+
+echo "[pre-commit] Running lint-staged (eslint + prettier)..."
 npx lint-staged
+
+echo "[pre-commit] Running TypeScript typecheck..."
+npx tsc --noEmit
+
+echo "[pre-commit] Validating MDX content (emojis, admonitions, raw HTML)..."
+python3 scripts/validate-mdx.py
+
+echo "[pre-commit] Checking relative links..."
+python3 scripts/check-links.py
+
+echo "[pre-commit] All checks passed."

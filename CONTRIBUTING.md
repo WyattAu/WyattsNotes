@@ -11,7 +11,7 @@
 
 ## Guidelines
 
-### Contribution Related Guidence
+### Contribution Related Guidance
 
 - Branch naming: `staging/feat/description`, `staging/fix/description`.
 - Test changes locally: `npm run build && npm run serve`.

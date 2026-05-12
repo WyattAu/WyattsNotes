@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 
 import styles from './TOCSidebar.module.css';
 
-// Import TOC interface
-
 interface TOCItem {
   id: string;
   level: number;
@@ -13,11 +11,9 @@ interface TOCItem {
 
 interface TOCSidebarProps {
   toc: TOCItem[];
-  onlyShowBottomWhenLarge?: boolean;
 }
 
-const TOCSidebar: React.FC<TOCSidebarProps> = ({ toc, onlyShowBottomWhenLarge = false }) => {
-  void onlyShowBottomWhenLarge;
+const TOCSidebar: React.FC<TOCSidebarProps> = ({ toc }) => {
   const [isVisible, setVisibility] = useState<boolean>(true);
 
   useEffect(() => {
@@ -31,8 +27,6 @@ const TOCSidebar: React.FC<TOCSidebarProps> = ({ toc, onlyShowBottomWhenLarge = 
   useEffect(() => {
     localStorage.setItem('tocVisible', JSON.stringify(isVisible));
   }, [isVisible]);
-
-  // useTOCHighlight(isVisible); // Highlight active heading only if visible
 
   return (
     <div className={clsx('col col--3 col--offset-9')}>

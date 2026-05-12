@@ -20,8 +20,11 @@ function getReadingTime(): string {
   return `${minutes} min read`;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function DocItemFooterWrapper(props: any): React.ReactElement {
+// DocItemFooter props are not exported as a named type from @theme-original.
+// Use ComponentProps to infer them from the component.
+type DocItemFooterProps = React.ComponentProps<typeof DocItemFooter>;
+
+export default function DocItemFooterWrapper(props: DocItemFooterProps): React.ReactElement {
   const [readingTime, setReadingTime] = useState('');
 
   useEffect(() => {

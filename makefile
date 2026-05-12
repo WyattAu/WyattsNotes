@@ -23,7 +23,7 @@ COMPONENT ?= @docusaurus/theme-classic
 
 ##@ Project Setup
 
-node_modules: package.json package-lock.json
+node_modules: package.json pnpm-lock.yaml
 	@echo "Installing dependencies..."
 	@$(NPM) ci --prefer-offline --no-audit
 	@touch node_modules  # Marker file

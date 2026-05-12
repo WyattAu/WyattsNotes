@@ -6,7 +6,6 @@ interface IFrameComponentProps {
   height?: string;
   title?: string;
   ariaLabel?: string;
-  frameborder?: string;
 }
 
 const IFrameComponent: React.FC<IFrameComponentProps> = ({
@@ -19,7 +18,7 @@ const IFrameComponent: React.FC<IFrameComponentProps> = ({
   return (
     <div className="iframe-container">
       <h3 className="iframe-title">{title}</h3>
-      <iframe src={src} width={width} height={height} title={title} aria-label={ariaLabel}></iframe>
+      <iframe src={src} width={width} height={height} title={title} aria-label={ariaLabel} />
     </div>
   );
 };
