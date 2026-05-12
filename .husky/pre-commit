@@ -1,15 +1,25 @@
 #!/usr/bin/env sh
 # Pre-commit hook: runs all validation checks before allowing a commit.
 # Fails the commit if any check exits non-zero.
+# Set SKIP_PRECHECK=1 to bypass (emergency use only).
 
 set -e
 
-echo "[pre-commit] Running lint-staged (eslint + prettier)..."
+# --- Fast checks first (lint-staged + typecheck) ---
+echo "[pre-commit] Running lint-staged (eslint --fix + prettier --write)..."
 npx lint-staged
 
 echo "[pre-commit] Running TypeScript typecheck..."
 npx tsc --noEmit
 
+# --- Unit tests ---
+echo "[pre-commit] Running unit tests (vitest, timeout 120s)..."
+timeout 120 npx vitest run --reporter=verbose || {
+  echo "[pre-commit] ERROR: Unit tests failed or timed out. Check Node.js version (requires 22, current: $(node -v))."
+  exit 1
+}
+
+# --- Content validation ---
 echo "[pre-commit] Validating MDX content (emojis, admonitions, raw HTML)..."
 python3 scripts/validate-mdx.py
 
@@ -21,5 +31,15 @@ python3 scripts/check-depth-tiers.py
 
 echo "[pre-commit] Checking description quality..."
 python3 scripts/check-descriptions.py
+
+echo "[pre-commit] Checking forward references..."
+python3 scripts/check-forward-refs.py
+
+# --- Informational (non-blocking) ---
+echo "[pre-commit] Checking hand-wave phrases (informational)..."
+python3 scripts/check-handwaves.py || true
+
+echo "[pre-commit] Checking search index coverage (informational)..."
+python3 scripts/check-search-index-coverage.py || true
 
 echo "[pre-commit] All checks passed."

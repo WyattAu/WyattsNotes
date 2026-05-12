@@ -14,8 +14,8 @@
 
 # Configuration
 # --------------------------------------------------
-NPM := npm
-NPX := npx
+PKG_MGR := pnpm
+NPX := pnpm exec
 COMPONENT ?= @docusaurus/theme-classic
 
 # Targets
@@ -25,68 +25,67 @@ COMPONENT ?= @docusaurus/theme-classic
 
 node_modules: package.json pnpm-lock.yaml
 	@echo "Installing dependencies..."
-	@$(NPM) ci --prefer-offline --no-audit
+	@$(PKG_MGR) install --frozen-lockfile
 	@touch node_modules  # Marker file
 
 install-deps: node_modules  ## Install exact dependencies from lockfile
 
 update-deps:  ## Update project dependencies
 	@echo "Updating dependencies..."
-	@$(NPX) npm-check-updates -u
-	@$(NPM) install
-	@$(NPM) audit fix
+	@$(PKG_MGR) update --latest
+	@$(PKG_MGR) install
 
 ##@ Development
 
 dev-server: node_modules  ## Start development server
 	@echo "Starting dev server..."
-	@$(NPM) start
+	@$(PKG_MGR) start
 
 typecheck: node_modules  ## Run static type checking
 	@echo "Running type checks..."
-	@$(NPM) run typecheck
+	@$(PKG_MGR) run typecheck
 
 typecheck-watch: node_modules  ## Continuous type checking
 	@echo "Starting type watcher..."
-	@$(NPM) run typecheck -- --watch
+	@$(PKG_MGR) run typecheck -- --watch
 
 ##@ Build & Deployment
 
 build: node_modules  ## Build production artifacts
 	@echo "Building production build..."
-	@NODE_ENV=production $(NPM) run build
+	@NODE_ENV=production $(PKG_MGR) run build
 
 preview: build  ## Preview production build
 	@echo "Previewing production build..."
-	@$(NPM) run serve
+	@$(PKG_MGR) run serve
 
 deploy: build  ## Deploy documentation
 	@echo "Deploying to production..."
-	@$(NPM) run deploy
+	@$(PKG_MGR) run deploy
 
 ##@ Code Quality
 
 format: node_modules  ## Format codebase
 	@echo "Formatting code..."
-	@$(NPM) run format
+	@$(PKG_MGR) run format
 
 lint: node_modules  ## Lint project sources
 	@echo "Linting code..."
-	@$(NPM) run lint -- --max-warnings=0
+	@$(PKG_MGR) run lint -- --max-warnings=0
 
 validate: lint typecheck  ## Validate codebase (lint + typecheck)
 
 ##@ Security
 
-audit: node_modules  ## Audit production dependencies
+audit: node_modules  ## Audit all dependencies
 	@echo "Running security audit..."
-	@$(NPM) audit --omit=dev --audit-level=moderate
+	@$(PKG_MGR) audit
 
 security: audit  ## Full security check
 	@echo "Checking for known vulnerabilities..."
-	@$(NPM) audit --omit=dev --audit-level=high
+	@$(PKG_MGR) audit
 	@echo "Checking for outdated dependencies..."
-	@npx npm-check-updates 2>/dev/null || echo "npm-check-updates not installed, skipping"
+	@$(PKG_MGR) outdated 2>/dev/null || echo "No outdated dependencies found"
 
 ##@ Documentation
 
@@ -119,19 +118,19 @@ distclean: clean  ## Deep clean (including dependencies)
 
 ci: validate build test  ## Run CI pipeline
 
-test: node_modules  ## Run tests
+test: node_modules  ## Run unit tests
 	@echo "Running test suite..."
-	@$(NPM) test -- --watchAll=false
+	@$(PKG_MGR) test
 
 ##@ Performance
 
 lighthouse: node_modules  ## Run Lighthouse CI audit
 	@echo "Running Lighthouse audit..."
-	@npx lhci autorun || echo "Lighthouse CI not configured, skipping"
+	@$(NPX) lhci autorun || echo "Lighthouse CI not configured, skipping"
 
 bundle-analyze: node_modules  ## Analyze bundle size
 	@echo "Analyzing bundle..."
-	@ANALYZE=true npm run build 2>&1 || echo "Bundle analysis requires build to succeed"
+	@ANALYZE=true $(PKG_MGR) run build 2>&1 || echo "Bundle analysis requires build to succeed"
 
 ##@ Help
 

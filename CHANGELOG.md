@@ -2,6 +2,33 @@
 
 All notable changes to Wyatt's Notes will be documented in this file.
 
+## [2026-05-12-b] - Comprehensive Audit, Pre-Commit Enhancement, Production Roadmap
+
+### Added
+
+- Full monorepo audit report: `.specs/00_requirements/full_audit_report.md`
+  - Covers all quality gates, security, documentation, architecture
+  - Identifies 0 TypeScript errors, 0 ESLint errors, 0 broken links (3,016)
+  - Documents 63 security vulnerabilities (27 high), vitest hang (Node 26), 4 stubs
+  - Assigns overall grade B+
+- Production roadmap: `.specs/02_architecture/production_roadmap.md`
+  - 5-phase plan: Remediation (2wk) -> Hardening (6wk) -> Content (12wk) -> Expansion (12mo) ->
+    Platform (2yr)
+  - SLO targets, risk register, success metrics, decision records (ADRs)
+  - Appendix: architecture diagram, quality gate pipeline, security posture
+
+### Changed
+
+- **Pre-commit hook** (`.husky/pre-commit`): added vitest, forward-ref check
+  - `check-handwaves.py` and `check-search-index-coverage.py` now non-blocking (informational)
+  - Full pipeline: lint-staged -> tsc -> vitest -> MDX -> links -> depth -> descriptions ->
+    forward-refs
+- **Makefile**: migrated from `npm` to `pnpm` (project uses pnpm, not npm)
+  - `make install-deps` uses `pnpm install --frozen-lockfile`
+  - `make test` uses `pnpm test`
+  - `make security` uses `pnpm audit`
+- **ROADMAP.md**: now references detailed roadmap in `.specs/02_architecture/production_roadmap.md`
+
 ## [2026-05-12] - Quality Automation & Testing Infrastructure
 
 ### Added
@@ -20,18 +47,18 @@ All notable changes to Wyatt's Notes will be documented in this file.
 - Description quality checker (`scripts/check-descriptions.py`) -- validates 120-160 char bounds,
   uniqueness, and absence of vague trailing qualifiers
 - `.nvmrc` pinning Node.js 22
-- CI pipeline: separate `test` job, expanded `content-validation` job (depth tiers,
-  descriptions, hand-waves)
+- CI pipeline: separate `test` job, expanded `content-validation` job (depth tiers, descriptions,
+  hand-waves)
 
 ### Fixed
 
 - Pre-commit hook now includes typecheck + MDX validation + link checking + depth tier checking
-  + description quality (previously only lint-staged)
+  - description quality (previously only lint-staged)
 
 ### Changed
 
-- CI pipeline restructured: lint/typecheck, test, security, content-validation, links as
-  parallel jobs
+- CI pipeline restructured: lint/typecheck, test, security, content-validation, links as parallel
+  jobs
 - npm scripts: added `validate:depth`, `validate:handwaves`, `validate:descriptions`,
   `validate:all`, `test`, `test:watch`, `test:coverage`
 
