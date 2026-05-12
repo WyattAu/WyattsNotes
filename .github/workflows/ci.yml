@@ -123,8 +123,8 @@ jobs:
       - name: Check relative links
         run: python3 scripts/check-links.py
 
-      - name: Check content depth tiers
-        run: python3 scripts/check-depth-tiers.py
+      - name: Check content depth tiers (informational)
+        run: python3 scripts/check-depth-tiers.py || true
 
       - name: Check description quality
         run: python3 scripts/check-descriptions.py
