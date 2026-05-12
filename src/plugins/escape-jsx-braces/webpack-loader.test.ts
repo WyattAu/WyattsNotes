@@ -44,10 +44,9 @@ function escapeLatexBraces(source: string): string {
       if (PROBLEMATIC_CMDS.includes(cmdName)) {
         let pos = cmdEnd;
 
-        while (
-          pos < source.length &&
-          ((source[pos] in { ' ': 1, '\t': 1, '\n': 1 }) as Record<string, number>)
-        ) {
+        const whitespace = new Set([' ', '\t', '\n']);
+
+        while (pos < source.length && whitespace.has(source[pos])) {
           pos++;
         }
 
@@ -87,10 +86,7 @@ function escapeLatexBraces(source: string): string {
             i = cmdEnd;
 
             while (i < source.length) {
-              while (
-                i < source.length &&
-                ((source[i] in { ' ': 1, '\t': 1, '\n': 1 }) as Record<string, number>)
-              ) {
+              while (i < source.length && whitespace.has(source[i])) {
                 parts.push(source[i]);
                 i++;
               }

@@ -24,7 +24,7 @@ import {
 
 const commonDocsPluginConfig = createCommonDocsPluginConfig(false);
 
-const config: Config = {
+const config = {
   title: "Wyatt's Notes",
   tagline: 'Discard all that is unnecessary. Beauty is born of clarity.',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',

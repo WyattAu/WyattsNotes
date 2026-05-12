@@ -18,7 +18,7 @@ import {
   sharedZoom,
 } from './docusaurus.shared.config';
 
-const config: Config = {
+const config = {
   ...sharedConfig({
     title: "Wyatt's Notes — A-Level Sciences",
     tagline: 'A-Level Biology, Chemistry, Computer Science, Economics & More',

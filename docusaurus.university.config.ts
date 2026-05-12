@@ -19,7 +19,7 @@ import {
   sharedZoom,
 } from './docusaurus.shared.config';
 
-const config: Config = {
+const config = {
   ...sharedConfig({
     title: "Wyatt's Notes — University",
     tagline: 'Mathematics, Physics, and Computing for Undergraduates',

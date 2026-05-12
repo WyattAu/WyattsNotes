@@ -20,17 +20,15 @@ import {
 
 const commonDocsPluginConfig = createCommonDocsPluginConfig();
 
-const algoliaConfig = createAlgoliaConfig({
-  indexName: 'wyattsnotes_programming',
-});
+const algoliaConfig = createAlgoliaConfig('wyattsnotes_programming');
 
-const config: Config = {
-  ...sharedConfig,
-
-  title: "Wyatt's Notes — Programming",
-  tagline: 'C++, Java, Python, Rust, Dart',
-  url: 'https://programming.wyattau.com',
-  baseUrl: '/',
+const config = {
+  ...sharedConfig({
+    title: "Wyatt's Notes — Programming",
+    tagline: 'C++, Java, Python, Rust, Dart',
+    url: 'https://programming.wyattau.com',
+    algoliaIndexName: 'wyattsnotes_programming',
+  }),
 
   presets: [
     [
@@ -52,7 +50,7 @@ const config: Config = {
   ],
 
   plugins: [
-    ...sharedPlugins,
+    ...sharedPlugins(),
     [
       '@docusaurus/plugin-content-docs',
       {

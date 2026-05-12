@@ -19,7 +19,7 @@ import {
   sharedZoom,
 } from './docusaurus.shared.config';
 
-const config: Config = {
+const config = {
   ...sharedConfig({
     title: "Wyatt's Notes — DSE",
     tagline: 'HKDSE Biology, Chemistry, Economics, ICT, Maths, Physics',

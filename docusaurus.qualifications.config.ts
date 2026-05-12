@@ -18,7 +18,7 @@ import {
   sharedZoom,
 } from './docusaurus.shared.config';
 
-const config: Config = {
+const config = {
   ...sharedConfig,
 
   title: "Wyatt's Notes — Qualifications",
@@ -46,7 +46,7 @@ const config: Config = {
   ],
 
   plugins: [
-    ...sharedPlugins,
+    ...sharedPlugins(),
     [
       '@docusaurus/plugin-content-docs',
       {
