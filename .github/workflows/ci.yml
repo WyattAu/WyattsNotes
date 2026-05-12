@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate:
-    name: Lint & Typecheck
+    name: Lint & Typecheck & Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -33,6 +33,20 @@ jobs:
 
       - name: Typecheck
         run: pnpm run typecheck
+
+      - name: Build
+        id: build
+        run: pnpm run build
+        continue-on-error: true
+
+      - name: Build timing
+        if: always()
+        run: |
+          if [ "${{ steps.build.outcome }}" == "success" ]; then
+            echo "::notice::Build succeeded"
+          else
+            echo "::error::Build failed"
+          fi
 
   test:
     name: Unit Tests

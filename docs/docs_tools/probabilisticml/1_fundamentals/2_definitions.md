@@ -510,7 +510,7 @@ _Note:_ The PDF $f$ is unique **only up to $\lambda$-null sets**. If $f$ and $g$
 
 ### Absolutely Continuous Random Element
 
-$X$ is absolutely continuous with respect to a reference measure $\lambda$ if its induced law $P_X$ is absolutely continuous with respect to $\lambda$, i.e., $P_X \ll \lambda$.
+A random element $X$ is **absolutely continuous** with respect to a reference measure $\lambda$ if its induced law $P_X$ is absolutely continuous with respect to $\lambda$, i.e., $P_X \ll \lambda$. This means that for all measurable sets $B$ in the target space, $\lambda(B) = 0 \implies P_X(B) = 0$.
 
 ### Marginal Distribution
 

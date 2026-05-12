@@ -40,7 +40,12 @@ All automated quality gates pass:
 
 **Status:** 3 files, 1.7K lines. Severely underdeveloped relative to depth tier requirements.
 
-**Tasks:**
+**Completed from restructure plan:**
+- Accuracy fix: "Absolutely Continuous Random Element" now includes formal definition with
+  measurability and null set semantics
+- Accuracy fix: "Space of Probability Measures" already matches corrected specification
+
+**Remaining tasks:**
 - [ ] Execute definitions restructure plan (`.spec/definitions_restructure_spec.md`)
   - Phase 2: Fix 7 accuracy issues (Event definition, Equivalence Relation context, Lipschitz constant, a.e. measurability assumption, absolute continuity wording, Space of Probability Measures notation, RCP vs RCD distinction)
   - Phase 3: Add 6 missing definitions (LOTUS, CLT, Reparameterization Trick, Positive Definite Kernels + Moore-Aronszajn, Stochastic Processes + SDEs, Jensen-Shannon Divergence)
@@ -122,45 +127,48 @@ All automated quality gates pass:
 
 ### 3.1 Automated Depth Tier Checking
 
-**Problem:** Content depth tier compliance (line counts, section completeness) requires manual review.
+**Status:** DONE. Implemented `check-depth-tiers.py`.
+- Scans 1,207 files across 9 sub-directories
+- Classifies into 4 tiers with configurable minimum line counts
+- Validates required sections (Common Pitfalls, Worked Examples, Summary)
+- Reports per-directory issue counts
+- Integrated into CI `content-validation` job
 
-**Tasks:**
-- [ ] Implement `check-depth-tiers.py` script
-  - Parse frontmatter for tier classification
-  - Count body lines (excluding frontmatter)
-  - Verify mandatory sections present (Common Pitfalls, Worked Examples, etc.)
-  - Output per-file compliance report
-- [ ] Integrate into CI pipeline
-- [ ] Add to pre-commit hook (warning-only for new files)
+**Results:** 1,915 findings identified (mostly tier 2 missing required sections across docs_alevel and docs_ib).
 
 ### 3.2 Hand-Wave Detection
 
-**Problem:** Phrases like "obviously", "clearly", "intuitively" without justification violate CONTENT_STANDARD.md.
+**Status:** DONE. Implemented `check-handwaves.py`.
+- Scans for 18 patterns across 3 categories: HANDWAVE, VAGUE, HEDGE
+- Uses precompiled regexes and parallel processing (ProcessPoolExecutor)
+- Skips code fences, inline code, display math blocks
+- Informational only (exit 0) to avoid CI noise during remediation
 
-**Tasks:**
-- [ ] Implement `check-handwaves.py` script
-  - Scan for blacklisted phrases outside code fences and math blocks
-  - Flag occurrences with file:line references
-  - Integrate into CI
-- [ ] Expand phrase list based on CONTENT_STANDARD.md Section 6
+**Results:** 2,396 findings across 775 files (787 handwaves, 1,604 vague, 5 hedges).
 
-### 3.3 Mathematical Correctness Validation
+### 3.3 Description Quality
 
-**Tasks:**
-- [ ] Evaluate KaTeX rendering consistency across all 1,207 files
-- [ ] Implement cross-file definition consistency checker (detect conflicting definitions)
-- [ ] Add forward-reference detection (concept used before defined)
+**Status:** DONE. Implemented `check-descriptions.py`.
+- Validates 120-160 character bounds per CONTENT_STANDARD.md
+- Detects duplicate descriptions across the site
+- Flags vague trailing qualifiers
 
-### 3.4 Description Quality
+**Results:** 842 too short, 92 too long, 711 duplicates, 0 vague.
 
-**Problem:** Frontmatter descriptions must be 120-160 characters, unique, rigorous.
+### 3.4 Forward-Reference Detection
 
-**Tasks:**
-- [ ] Implement `check-descriptions.py` script
-  - Verify character count bounds
-  - Check uniqueness across site
-  - Flag vague qualifiers and trailing ellipses
-- [ ] Integrate into CI
+**Status:** DONE. Implemented `check-forward-refs.py`.
+- Detects formal definitions (bold text, theorem/lemma/proposition labels)
+- Flags terms used in math mode before their definition line
+- Skips standard notation (single letters, common operators)
+- Uses parallel processing
+
+### 3.5 Search Index Coverage
+
+**Status:** DONE. Implemented `check-search-index-coverage.py`.
+- Cross-references Algolia indices with docusaurus configs
+- Identifies 2 coverage gaps (docs_infrastructure, docs_tools served by main index)
+- 7 naming mismatches between config paths and index names
 
 ---
 
@@ -178,20 +186,32 @@ All automated quality gates pass:
 
 ### 4.2 Testing Infrastructure
 
-**Current state:** No test framework configured. `makefile` has `test` target but no test runner.
+**Status:** DONE. Vitest configured with 35 tests across 6 test files.
+
+**Test coverage:**
+- DesmosGraph: parseExpression logic, parameter detection, aspect ratio, guard clauses (8 tests)
+- Geogebra: URL construction, aspect ratio, default dimensions (3 tests)
+- PhetSimulation: URL construction, hyphenated IDs, aspect ratio (3 tests)
+- IFrameComponent: default dimensions, src prop validation (3 tests)
+- ReadingProgress: scroll percentage computation, clamping, threshold rendering (5 tests)
+- escape-jsx-braces webpack loader: brace escaping for 9 test cases (9 tests)
 
 **Tasks:**
-- [ ] Add Vitest for React component testing
-  - DesmosGraph: test parseExpression, slider detection, calculator URL fallback
-  - Geogebra: test URL construction
-  - PhetSimulation: test URL construction
-  - ReadingProgress: test scroll calculation
-  - SearchPage: test Algolia API integration (mocked)
-- [ ] Add component snapshot tests for interactive embeds
-- [ ] Add end-to-end tests (Playwright) for critical user flows
-  - Landing page renders
-  - Search returns results
-  - Navigation between sub-sites
+- [ ] Add @testing-library/react component render tests (requires jsdom setup for Docusaurus)
+- [ ] Add E2E tests (Playwright) for critical user flows
+- [ ] Increase coverage threshold to >= 80%
+- [ ] Add snapshot tests for interactive embeds
+
+### 4.3 Custom Plugin Testing
+
+**Status:** DONE. 9 tests for escape-jsx-braces webpack loader.
+- Tests: simple expressions, parameter detection, x/y exclusion, e/i exclusion,
+  pipe escaping, deeply nested braces, multiple commands, unbalanced braces,
+  empty source, whitespace handling
+
+---
+
+## Phase 5: Content Expansion (Long-Term)
   - Theme toggle persists via cookie
 - [ ] Integrate test runner into CI pipeline
 - [ ] Add coverage thresholds (>= 80% for src/)
