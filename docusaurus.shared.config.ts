@@ -252,8 +252,8 @@ export const sharedZoom = {
 // ---------------------------------------------------------------------------
 // Algolia configuration
 // ---------------------------------------------------------------------------
-const ALGOLIA_APP_ID = 'SJ0ASLWZCS';
-const ALGOLIA_SEARCH_KEY = 'a540fa6255600d7ed9eaf06406c2a272';
+const ALGOLIA_APP_ID = process.env.ALGOLIA_APP_ID || '[YOUR_APP_ID]';
+const ALGOLIA_SEARCH_KEY = process.env.ALGOLIA_SEARCH_KEY || '[YOUR_SEARCH_KEY]';
 
 export function createAlgoliaConfig(indexName: string) {
   return {

@@ -1,23 +1,56 @@
 # Contribution Guide
 
+## Prerequisites
+
+- Node.js 22 (see [.nvmrc](./.nvmrc))
+- pnpm 10+ (see `package.json` `engines` field)
+
 ## Setup
 
 1. Fork this repo
+2. `pnpm install`
+3. `pnpm start`
 
-## Development tools
+## Build and Preview
 
-- Refer to package.json for npx commands
-- Refer to tasks.json if you are using VSCode
+```
+pnpm build --config docusaurus.ib.config.ts && pnpm serve
+```
+
+## Pre-commit Checks
+
+Enforced via `lint-staged` on staged files:
+
+- TypeScript typecheck (`tsc --noEmit`)
+- ESLint
+- Unit tests (`vitest`)
+- MDX validation
+- Link checking (3,016 links, 0 broken)
+- Depth tier validation
+- Description validation
 
 ## Guidelines
 
 ### Contribution Related Guidance
 
 - Branch naming: `staging/feat/description`, `staging/fix/description`.
-- Test changes locally: `pnpm build && pnpm serve`.
-- Since `staging` branch is periodically reviewed and merged into `main` by admin, you are encourage
-  to start a pull request against the staging branch.
+- Since `staging` branch is periodically reviewed and merged into `main` by admin, you are
+  encouraged to start a pull request against the staging branch.
 - Use `pnpm lint` and `pnpm format` before committing.
+
+### CI Pipeline
+
+All pull requests run through the following checks:
+
+- Lint + Typecheck + Build
+- Unit tests (`vitest`)
+- Security audit
+- Content validation (MDX, links, depth tiers, descriptions)
+- External link checking
+
+### Code Review
+
+All CI checks must pass before merge.
 
 ### Formatting and Structure
 

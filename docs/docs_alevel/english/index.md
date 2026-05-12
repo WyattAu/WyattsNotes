@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
 title: A-Level English
-description: "A-Level English notes covering literary analysis, critical theory, comparative coursework, and unseen texts."
+description:
+  'A-Level English notes covering literary analysis, critical theory, comparative coursework, and
+  unseen texts.'
 date: 2026-05-12T00:00:00.000Z
 tags:
   - English
@@ -21,3 +23,7 @@ This section is under active development. Topics will include:
 - **Language and Linguistics** — sociolinguistics, language change, discourse analysis
 
 :::
+
+status: stub scope: Exam-aligned qualification content only. Subject to CONTENT_STANDARD.md Section
+12 (Prohibited Subjects as standalone topics). expansion_criteria: Content must be aligned to
+A-Level exam specification. General humanities content not in scope.

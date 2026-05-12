@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
 title: A-Level History
-description: "A-Level History notes covering modern history, source analysis, historical interpretation, and coursework investigation."
+description:
+  'A-Level History notes covering modern history, source analysis, historical interpretation, and
+  coursework investigation.'
 date: 2026-05-12T00:00:00.000Z
 tags:
   - History
@@ -21,3 +23,7 @@ This section is under active development. Topics will include:
 - **Coursework Investigation** — independent research, extended essay
 
 :::
+
+status: stub scope: Exam-aligned qualification content only. Subject to CONTENT_STANDARD.md Section
+12 (Prohibited Subjects as standalone topics). expansion_criteria: Content must be aligned to
+A-Level exam specification. General humanities content not in scope.

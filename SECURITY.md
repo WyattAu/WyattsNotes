@@ -2,8 +2,38 @@
 
 ## Supported Versions
 
-Due to the complex versioning system of different examination syllabus, this resource will separate version by systemic changes like compatibility and restructuring.
+| Version | Supported |
+| ------- | --------- |
+| main    | Yes       |
+
+Only the current `main` branch is supported.
 
 ## Reporting a Vulnerability
 
-If a vulnerability is shown, please email me privately, do not discuss the actual vulnerability in pull request.
+- Email: `wyatt_au@protonmail.com`
+- Expected response: within 48 hours
+- Do not disclose vulnerabilities in public issues or pull requests.
+
+## Scope
+
+**In scope:**
+
+- All sub-sites and source code
+- CI/CD configuration
+
+**Out of scope:**
+
+- Content accuracy
+- Typos and spelling errors
+
+## Security Headers
+
+The following headers are enforced on all sub-sites:
+
+- Content Security Policy (CSP)
+- HTTP Strict Transport Security (HSTS)
+- X-Frame-Options
+
+## Bug Bounties
+
+No bug bounty program is offered at this time.
