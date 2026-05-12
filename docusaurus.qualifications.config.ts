@@ -7,14 +7,14 @@
 import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
 import {
-  createCommonDocsPluginConfig,
-  sharedPlugins,
-  sharedConfig,
   createAlgoliaConfig,
-  sharedThemeConfigMetadata,
+  createCommonDocsPluginConfig,
   sharedColorMode,
-  sharedPrism,
+  sharedConfig,
   sharedMermaid,
+  sharedPlugins,
+  sharedPrism,
+  sharedThemeConfigMetadata,
   sharedZoom,
 } from './docusaurus.shared.config';
 
@@ -54,8 +54,7 @@ const config: Config = {
         path: 'docs/docs_qualifications',
         routeBasePath: '/docs/qualifications',
         sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
-        editUrl:
-          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_qualifications/{dir}',
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_qualifications/{dir}',
         ...createCommonDocsPluginConfig(),
       },
     ],

@@ -7,18 +7,18 @@ import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
 
 import {
+  createAlgoliaConfig,
   createCommonDocsPluginConfig,
+  sharedClientModules,
+  sharedColorMode,
+  sharedCompilationConfig,
   sharedHeadTags,
   sharedI18n,
-  sharedCompilationConfig,
-  sharedClientModules,
   sharedMarkdownConfig,
-  sharedPresets,
-  createAlgoliaConfig,
-  sharedThemeConfigMetadata,
-  sharedColorMode,
-  sharedPrism,
   sharedMermaid,
+  sharedPresets,
+  sharedPrism,
+  sharedThemeConfigMetadata,
   sharedZoom,
 } from './docusaurus.shared.config';
 
@@ -88,10 +88,7 @@ const config: Config = {
       },
     ],
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
-    [
-      '@r74tech/docusaurus-plugin-panzoom',
-      { selector: '.mermaid svg' },
-    ],
+    ['@r74tech/docusaurus-plugin-panzoom', { selector: '.mermaid svg' }],
   ],
 
   markdown: sharedMarkdownConfig,

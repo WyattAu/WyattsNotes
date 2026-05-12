@@ -6,14 +6,14 @@
 import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
 import {
-  createCommonDocsPluginConfig,
-  sharedPlugins,
-  sharedConfig,
   createAlgoliaConfig,
-  sharedThemeConfigMetadata,
+  createCommonDocsPluginConfig,
   sharedColorMode,
-  sharedPrism,
+  sharedConfig,
   sharedMermaid,
+  sharedPlugins,
+  sharedPrism,
+  sharedThemeConfigMetadata,
   sharedZoom,
 } from './docusaurus.shared.config';
 

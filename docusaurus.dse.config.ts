@@ -8,14 +8,14 @@ import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
 
 import {
-  createCommonDocsPluginConfig,
-  sharedPlugins,
-  sharedConfig,
   createAlgoliaConfig,
-  sharedThemeConfigMetadata,
+  createCommonDocsPluginConfig,
   sharedColorMode,
-  sharedPrism,
+  sharedConfig,
   sharedMermaid,
+  sharedPlugins,
+  sharedPrism,
+  sharedThemeConfigMetadata,
   sharedZoom,
 } from './docusaurus.shared.config';
 
@@ -36,8 +36,7 @@ const config: Config = {
         path: 'docs/docs_dse',
         routeBasePath: '/docs/dse',
         sidebarPath: require.resolve('./sidebars/sidebar_dse.ts'),
-        editUrl:
-          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_dse/{dir}',
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_dse/{dir}',
         ...createCommonDocsPluginConfig(true),
       },
     ],

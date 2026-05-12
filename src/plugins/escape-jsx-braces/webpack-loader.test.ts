@@ -3,10 +3,29 @@ import { describe, expect, it } from 'vitest';
 // Replicate the webpack loader logic for testing
 function escapeLatexBraces(source: string): string {
   const PROBLEMATIC_CMDS = [
-    'dfrac', 'tfrac', 'cfrac', 'frac', 'binom', 'sqrt',
-    'mathbf', 'mathrm', 'mathcal', 'mathbb', 'mathsf', 'mathit',
-    'mathnormal', 'boldsymbol', 'text', 'textbf', 'textit', 'textrm',
-    'begin', 'underbrace', 'overbrace', 'overset', 'underset',
+    'dfrac',
+    'tfrac',
+    'cfrac',
+    'frac',
+    'binom',
+    'sqrt',
+    'mathbf',
+    'mathrm',
+    'mathcal',
+    'mathbb',
+    'mathsf',
+    'mathit',
+    'mathnormal',
+    'boldsymbol',
+    'text',
+    'textbf',
+    'textit',
+    'textrm',
+    'begin',
+    'underbrace',
+    'overbrace',
+    'overset',
+    'underset',
   ];
 
   let i = 0;
@@ -23,7 +42,10 @@ function escapeLatexBraces(source: string): string {
 
       if (PROBLEMATIC_CMDS.includes(cmdName)) {
         let pos = cmdEnd;
-        while (pos < source.length && source[pos] in { ' ': 1, '\t': 1, '\n': 1 } as Record<string, number>) {
+        while (
+          pos < source.length &&
+          ((source[pos] in { ' ': 1, '\t': 1, '\n': 1 }) as Record<string, number>)
+        ) {
           pos++;
         }
 
@@ -62,7 +84,7 @@ function escapeLatexBraces(source: string): string {
             while (i < source.length) {
               while (
                 i < source.length &&
-                source[i] in { ' ': 1, '\t': 1, '\n': 1 } as Record<string, number>
+                ((source[i] in { ' ': 1, '\t': 1, '\n': 1 }) as Record<string, number>)
               ) {
                 parts.push(source[i]);
                 i++;

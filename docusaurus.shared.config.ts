@@ -70,6 +70,7 @@ export const rehypePluginConfig = {
 export function createRemarkPluginsConfig(useEscapeJsxBraces = false) {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
+
   return {
     beforeDefaultRemarkPlugins: useEscapeJsxBraces
       ? [remarkGridTable, escapeJsxBraces]
@@ -148,8 +149,7 @@ export const sharedHeadTags: Config['headTags'] = [
     tagName: 'script',
     attributes: {
       src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
-      integrity:
-        'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
+      integrity: 'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
       crossorigin: 'anonymous',
       defer: 'defer',
     },
@@ -177,9 +177,7 @@ export const sharedCompilationConfig = {
   staticDirectories: ['static'],
 };
 
-export const sharedClientModules = [
-  require.resolve('./src/theme/KatexLoader/index.tsx'),
-];
+export const sharedClientModules = [require.resolve('./src/theme/KatexLoader/index.tsx')];
 
 export const sharedMarkdownConfig = {
   mermaid: true,
@@ -210,10 +208,7 @@ export function sharedPlugins() {
     require.resolve('./src/plugins/fix-mermaid-elk'),
     [require.resolve('./src/plugins/service-worker'), { enable: true }],
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
-    [
-      '@r74tech/docusaurus-plugin-panzoom',
-      { selector: '.mermaid svg' },
-    ],
+    ['@r74tech/docusaurus-plugin-panzoom', { selector: '.mermaid svg' }],
   ];
 }
 
@@ -303,9 +298,6 @@ export function sharedConfig(options: SharedConfigOptions): Partial<Config> {
     i18n: sharedI18n,
     presets: sharedPresets,
     markdown: sharedMarkdownConfig,
-    themes: [
-      '@docusaurus/theme-live-codeblock',
-      '@docusaurus/theme-mermaid',
-    ],
+    themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
   };
 }
