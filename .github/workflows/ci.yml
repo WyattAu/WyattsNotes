@@ -136,7 +136,7 @@ jobs:
         run: python3 scripts/check-forward-refs.py
 
       - name: Check search index coverage (informational)
-        run: python3 scripts/check-search-index-coverage.py
+        run: python3 scripts/check-search-index-coverage.py || true
 
   links:
     name: Check External Links
