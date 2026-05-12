@@ -87,6 +87,14 @@ All automated quality gates pass:
 
 **Priority:** High. University notes are the most technically demanding content.
 
+**Status:** Gap analysis complete. `.specs/01_research/content_gap_analysis.md`
+
+**Findings from scan:**
+- Only 33 files across 4 broad topics (admissions, computing, mathematics, physics)
+- Missing entire disciplines: Chemistry, Biology, Engineering, Statistics, Economics, Philosophy
+- Mathematics: 9 files vs typical undergrad math curriculum with 30+ courses
+- Physics: 8 files with no quantum mechanics, thermodynamics, or E&M deep-dive
+
 **Tasks:**
 - [ ] Complete Real Analysis coverage
 - [ ] Expand Quantum Mechanics notes
@@ -101,8 +109,14 @@ All automated quality gates pass:
 
 **Problem:** TypeScript compilation and ESLint are slow on large monorepo (1,207 content files + 9 sub-site configs).
 
+**Status:** Benchmark script created. `scripts/benchmark-builds.sh`
+
+**Usage:** `bash scripts/benchmark-builds.sh [--warm] [config1 ...]`
+Times `pnpm build --config <file>` for each config and outputs wall-clock seconds.
+Supports warmup build to load compilation cache.
+
 **Tasks:**
-- [ ] Benchmark current build times per sub-site
+- [x] Create benchmark script for sub-site build timing
 - [ ] Investigate incremental typecheck (`tsc --build` with project references)
 - [ ] Evaluate turborepo or nx for monorepo task orchestration
 - [ ] Split tsconfig.json per sub-site to reduce typecheck scope
@@ -232,7 +246,7 @@ All automated quality gates pass:
 
 ### 4.3 Custom Plugin Testing
 
-**Status:** DONE. 9 tests for escape-jsx-braces webpack loader.
+**Status:** DONE. 9 tests for escape-jsx-braces webpack loader, 64 tests total across 7 files.
 - Tests: simple expressions, parameter detection, x/y exclusion, e/i exclusion,
   pipe escaping, deeply nested braces, multiple commands, unbalanced braces,
   empty source, whitespace handling
@@ -240,27 +254,19 @@ All automated quality gates pass:
 ---
 
 ## Phase 5: Content Expansion (Long-Term)
-  - Theme toggle persists via cookie
-- [ ] Integrate test runner into CI pipeline
-- [ ] Add coverage thresholds (>= 80% for src/)
 
-### 4.3 Custom Plugin Consolidation
+### 5.1 New Subject Stubs
 
-**Current state:** 3 custom plugins in `src/plugins/`.
+**Status:** 4 phantom A-Level subjects created (2026-05-12).
 
-**Tasks:**
-- [ ] Add unit tests for escape-jsx-braces webpack loader
-- [ ] Add unit tests for fix-mermaid-elk resolve alias
-- [ ] Document plugin architecture in ADR format
-- [ ] Evaluate whether escape-jsx-braces can be replaced with remark plugin alone
+**Completed:**
+- [x] A-Level Psychology stub (index.md with topic outline)
+- [x] A-Level Geography stub (index.md with topic outline)
+- [x] A-Level History stub (index.md with topic outline)
+- [x] A-Level English stub (index.md with topic outline)
+- [x] Updated `sidebar_alevel_sciences.ts` to auto-generate all 8 subjects
 
----
-
-## Phase 5: Content Expansion (Long-Term)
-
-### 5.1 New Subject Areas
-
-**Candidates based on site structure and demand:**
+**Candidates based on gap analysis (`.specs/01_research/content_gap_analysis.md`):**
 - [ ] Haskell / Functional Programming
 - [ ] Go / Systems Programming
 - [ ] Kotlin / Android Development
