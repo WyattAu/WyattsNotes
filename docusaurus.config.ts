@@ -273,6 +273,12 @@ const config: Config = {
     'docusaurus-theme-redoc',
   ],
   themeConfig: {
+    algolia: {
+      appId: 'SJ0ASLWZCS',
+      apiKey: 'a540fa6255600d7ed9eaf06406c2a272',
+      indexName: 'wyattsnotes_main',
+      contextualSearch: false,
+    },
     metadata: [
       {
         name: 'theme-color',

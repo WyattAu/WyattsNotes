@@ -250,6 +250,12 @@ const config: Config = {
   themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
 
   themeConfig: {
+    algolia: {
+      appId: 'SJ0ASLWZCS',
+      apiKey: 'a540fa6255600d7ed9eaf06406c2a272',
+      indexName: 'wyattsnotes_alevel_sciences',
+      contextualSearch: false,
+    },
     metadata: [
       {
         name: 'theme-color',

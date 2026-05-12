@@ -638,11 +638,12 @@ pip install black ruff mypy pytest ipython
 ```bash
 # Install Node.js (use fnm or nvm for version management)
 curl -fsSL https://fnm.vercel.app/install | bash
-fnm install 20
-fnm use 20
+fnm install 22
+fnm use 22
 
-# Essential tools
-npm install -g typescript eslint prettier
+# Install pnpm (required by this project)
+corepack enable
+pnpm --version  # should be 10+
 
 # VS Code extensions:
 # - TypeScript Vue Plugin (Volar) or ES7+ React snippets
@@ -690,7 +691,7 @@ tmux new-window -n monitor
 
 # Send commands to specific windows
 tmux send-keys -t dev:editor "vim" Enter
-tmux send-keys -t dev:terminal "npm run dev" Enter
+tmux send-keys -t dev:terminal "pnpm start" Enter
 tmux send-keys -t dev:git "git status" Enter
 ```
 

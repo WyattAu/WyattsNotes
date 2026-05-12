@@ -8,6 +8,7 @@ tags:
 categories:
   - CS
 slug: software-licensing
+sidebar_position: 2
 ---
 
 ## Copyleft Licenses

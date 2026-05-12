@@ -14,10 +14,10 @@
 ### Contribution Related Guidance
 
 - Branch naming: `staging/feat/description`, `staging/fix/description`.
-- Test changes locally: `npm run build && npm run serve`.
+- Test changes locally: `pnpm build && pnpm serve`.
 - Since `staging` branch is periodically reviewed and merged into `main` by admin, you are encourage
   to start a pull request against the staging branch.
-- Use `npm run lint` and `npm run format` before committing.
+- Use `pnpm lint` and `pnpm format` before committing.
 
 ### Formatting and Structure
 
