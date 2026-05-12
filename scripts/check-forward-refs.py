@@ -22,12 +22,12 @@ STANDARD_NOTATION = set(
 
 DEFINITION_PATTERNS = [
     re.compile(r'\*\*(.+?)\*\*[:\s]'),
-    re.compile(r'\*\*Definition:\*\*'),
-    re.compile(r'\*\*Theorem:\*\*'),
-    re.compile(r'\*\*Lemma:\*\*'),
-    re.compile(r'\*\*Proposition:\*\*'),
-    re.compile(r'\*\*Corollary:\*\*'),
-    re.compile(r'\*\*Definition\b'),
+    re.compile(r'\*\*Definition:\*\*\s*(.+)'),
+    re.compile(r'\*\*Theorem:\*\*\s*(.+)'),
+    re.compile(r'\*\*Lemma:\*\*\s*(.+)'),
+    re.compile(r'\*\*Proposition:\*\*\s*(.+)'),
+    re.compile(r'\*\*Corollary:\*\*\s*(.+)'),
+    re.compile(r'\*\*Definition\b[:\s]*\s*(.+)'),
 ]
 
 CODE_FENCE_RE = re.compile(r'^```.*?^```', re.MULTILINE | re.DOTALL)
