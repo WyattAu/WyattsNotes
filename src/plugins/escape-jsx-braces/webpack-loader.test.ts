@@ -35,6 +35,7 @@ function escapeLatexBraces(source: string): string {
     if (source[i] === '\\' && i + 1 < source.length && /[a-zA-Z]/.test(source[i + 1])) {
       const cmdStart = i;
       let cmdEnd = i + 1;
+
       while (cmdEnd < source.length && /[a-zA-Z]/.test(source[cmdEnd])) {
         cmdEnd++;
       }
@@ -42,6 +43,7 @@ function escapeLatexBraces(source: string): string {
 
       if (PROBLEMATIC_CMDS.includes(cmdName)) {
         let pos = cmdEnd;
+
         while (
           pos < source.length &&
           ((source[pos] in { ' ': 1, '\t': 1, '\n': 1 }) as Record<string, number>)
@@ -55,10 +57,13 @@ function escapeLatexBraces(source: string): string {
           let hasProblem = false;
 
           while (j < source.length) {
-            if (source[j] === '{') depth++;
-            else if (source[j] === '}') {
+            if (source[j] === '{') {
+              depth++;
+            } else if (source[j] === '}') {
               depth--;
-              if (depth === 0) break;
+              if (depth === 0) {
+                break;
+              }
             } else if (
               source[j] === '\\' &&
               j + 1 < source.length &&
@@ -90,13 +95,17 @@ function escapeLatexBraces(source: string): string {
                 i++;
               }
 
-              if (i >= source.length || source[i] !== '{') break;
+              if (i >= source.length || source[i] !== '{') {
+                break;
+              }
 
               let d = 0;
               const start = i;
+
               while (i < source.length) {
-                if (source[i] === '{') d++;
-                else if (source[i] === '}') {
+                if (source[i] === '{') {
+                  d++;
+                } else if (source[i] === '}') {
                   d--;
                   if (d === 0) {
                     i++;
@@ -108,6 +117,7 @@ function escapeLatexBraces(source: string): string {
 
               const argContent = source.substring(start + 1, i - 1);
               const escaped = argContent.replace(/\{/g, '\\{').replace(/\}/g, '\\}');
+
               parts.push('{' + escaped + '}');
             }
             continue;
