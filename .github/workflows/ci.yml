@@ -34,6 +34,30 @@ jobs:
       - name: Typecheck
         run: pnpm run typecheck
 
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run tests
+        run: pnpm test
+
   security:
     name: Security Audit
     runs-on: ubuntu-latest
@@ -79,14 +103,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Validate MDX
+      - name: Validate MDX (emojis, admonitions, raw HTML)
         run: python3 scripts/validate-mdx.py
 
-      - name: Check Links
+      - name: Check relative links
         run: python3 scripts/check-links.py
 
+      - name: Check content depth tiers
+        run: python3 scripts/check-depth-tiers.py
+
+      - name: Check description quality
+        run: python3 scripts/check-descriptions.py
+
+      - name: Detect hand-wave phrases (informational)
+        run: python3 scripts/check-handwaves.py
+
   links:
-    name: Check Links
+    name: Check External Links
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     steps:

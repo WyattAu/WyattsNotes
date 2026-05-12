@@ -2,6 +2,39 @@
 
 All notable changes to Wyatt's Notes will be documented in this file.
 
+## [2026-05-12] - Quality Automation & Testing Infrastructure
+
+### Added
+
+- Vitest testing framework with 35 unit tests across 6 test files
+  - DesmosGraph: parseExpression logic, parameter detection, aspect ratio, guard clauses
+  - Geogebra: URL construction, aspect ratio, default dimensions
+  - PhetSimulation: URL construction, hyphenated IDs, aspect ratio
+  - IFrameComponent: default dimensions, src prop validation
+  - ReadingProgress: scroll percentage computation, clamping, threshold rendering
+  - escape-jsx-braces webpack loader: brace escaping for nested LaTeX commands
+- Content depth tier checker (`scripts/check-depth-tiers.py`) -- validates minimum line counts and
+  required sections per CONTENT_STANDARD.md tiers
+- Hand-wave phrase detector (`scripts/check-handwaves.py`) -- scans for "obviously", "clearly",
+  "intuitively", vague qualifiers, and hedging language
+- Description quality checker (`scripts/check-descriptions.py`) -- validates 120-160 char bounds,
+  uniqueness, and absence of vague trailing qualifiers
+- `.nvmrc` pinning Node.js 22
+- CI pipeline: separate `test` job, expanded `content-validation` job (depth tiers,
+  descriptions, hand-waves)
+
+### Fixed
+
+- Pre-commit hook now includes typecheck + MDX validation + link checking + depth tier checking
+  + description quality (previously only lint-staged)
+
+### Changed
+
+- CI pipeline restructured: lint/typecheck, test, security, content-validation, links as
+  parallel jobs
+- npm scripts: added `validate:depth`, `validate:handwaves`, `validate:descriptions`,
+  `validate:all`, `test`, `test:watch`, `test:coverage`
+
 ## [2026-04-21] - Interactive Embeds & Component Registration
 
 ### Added

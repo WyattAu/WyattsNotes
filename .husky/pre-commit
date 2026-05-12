@@ -16,4 +16,10 @@ python3 scripts/validate-mdx.py
 echo "[pre-commit] Checking relative links..."
 python3 scripts/check-links.py
 
+echo "[pre-commit] Checking content depth tiers..."
+python3 scripts/check-depth-tiers.py
+
+echo "[pre-commit] Checking description quality..."
+python3 scripts/check-descriptions.py
+
 echo "[pre-commit] All checks passed."
