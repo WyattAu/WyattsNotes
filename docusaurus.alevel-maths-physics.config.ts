@@ -3,215 +3,30 @@
 // Build: npx docusaurus build --config docusaurus.alevel-maths-physics.config.ts
 // Contains: maths, further-maths, physics (~83K lines)
 
-import remarkGridTable from '@adobe/remark-gridtables';
 import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
-import { themes as prismThemes } from 'prism-react-renderer';
-import rehypeKatex from 'rehype-katex';
-import remarkCodeSnippets from 'remark-code-snippets';
-import remarkMath from 'remark-math';
-
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
-
-const admonitionsConfig = {
-  admonitions: {
-    keywords: [
-      'discord',
-      'info',
-      'success',
-      'danger',
-      'note',
-      'tip',
-      'warning',
-      'important',
-      'caution',
-      'powershell',
-      'security',
-      'ninja',
-      'release',
-    ],
-  },
-};
-
-const remarkPluginsConfig = {
-  beforeDefaultRemarkPlugins: [remarkGridTable, escapeJsxBraces],
-  remarkPlugins: [remarkMath, remarkCodeSnippets],
-};
-
-const katexIgnoreNewLineWarning = {
-  strict: (errorCode: string) => {
-    if (errorCode === 'newLineInDisplayMode') {
-      return 'ignore';
-    }
-
-    return 'warn';
-  },
-};
-
-const rehypePluginConfig = {
-  rehypePlugins: [[rehypeKatex, katexIgnoreNewLineWarning]],
-};
-
-const commonDocsPluginConfig = {
-  showLastUpdateTime: true,
-  showLastUpdateAuthor: true,
-  ...admonitionsConfig,
-  ...remarkPluginsConfig,
-  ...rehypePluginConfig,
-};
+import {
+  createCommonDocsPluginConfig,
+  sharedPlugins,
+  sharedConfig,
+  createAlgoliaConfig,
+  sharedThemeConfigMetadata,
+  sharedColorMode,
+  sharedPrism,
+  sharedMermaid,
+  sharedZoom,
+} from './docusaurus.shared.config';
 
 const config: Config = {
-  title: "Wyatt's Notes — A-Level Maths & Physics",
-  tagline: 'A-Level Maths, Further Maths & Physics',
-  favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
-  url: 'https://alevel-maths-physics.wyattau.com',
-  baseUrl: '/',
-  organizationName: 'WyattAu',
-  projectName: 'WyattsNotes',
-  trailingSlash: false,
-
-  clientModules: [require.resolve('./src/theme/KatexLoader/index.tsx')],
-
-  onBrokenLinks: 'throw',
-
-  staticDirectories: ['static'],
-
-  headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://cdn.jsdelivr.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://cdn.jsdelivr.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://algolia.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://algolia.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://www.desmos.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://www.desmos.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://www.geogebra.org',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://www.geogebra.org',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://phet.colorado.edu',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://phet.colorado.edu',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://browser.sentry-cdn.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://browser.sentry-cdn.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: '/css/print.css',
-        media: 'print',
-      },
-    },
-    {
-      tagName: 'script',
-      attributes: {
-        src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
-        integrity: 'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
-        crossorigin: 'anonymous',
-        defer: 'defer',
-      },
-    },
-    {
-      tagName: 'script',
-      attributes: {},
-      innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
-    },
-  ],
-
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-
-  presets: [
-    [
-      'classic',
-      {
-        docs: false,
-        blog: false,
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-        sitemap: {
-          lastmod: 'date',
-          changefreq: 'weekly',
-          priority: 0.7,
-          ignorePatterns: ['/tags/**'],
-        },
-      } satisfies Preset.Options,
-    ],
-  ],
+  ...sharedConfig({
+    title: "Wyatt's Notes — A-Level Maths & Physics",
+    tagline: 'A-Level Maths, Further Maths & Physics',
+    url: 'https://alevel-maths-physics.wyattau.com',
+    algoliaIndexName: 'wyattsnotes_alevel_maths_physics',
+  }),
 
   plugins: [
-    [require.resolve('./src/plugins/service-worker'), { enable: true }],
+    ...sharedPlugins(),
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -221,43 +36,14 @@ const config: Config = {
         sidebarPath: require.resolve('./sidebars/sidebar_alevel_maths_physics.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_alevel/{dir}',
         include: ['maths/**', 'further-maths/**', 'physics/**', 'intro.md'],
-        ...commonDocsPluginConfig,
-      },
-    ],
-    ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
-    [
-      '@r74tech/docusaurus-plugin-panzoom',
-      {
-        selector: '.mermaid svg',
+        ...createCommonDocsPluginConfig(true),
       },
     ],
   ],
 
-  markdown: {
-    mermaid: true,
-  },
-
-  themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
-
   themeConfig: {
-    algolia: {
-      appId: 'SJ0ASLWZCS',
-      apiKey: 'a540fa6255600d7ed9eaf06406c2a272',
-      indexName: 'wyattsnotes_alevel_maths_physics',
-      contextualSearch: false,
-    },
-    metadata: [
-      {
-        name: 'theme-color',
-        content: '#FF6B35',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        name: 'theme-color',
-        content: '#2d2d2d',
-        media: '(prefers-color-scheme: dark)',
-      },
-    ],
+    algolia: createAlgoliaConfig('wyattsnotes_alevel_maths_physics'),
+    metadata: sharedThemeConfigMetadata,
     image: 'img/WyattsNotes/WyattsNotesSocialCard.jpg',
     navbar: {
       title: "Wyatt's Notes",
@@ -311,11 +97,7 @@ const config: Config = {
         },
       ],
     },
-    colorMode: {
-      defaultMode: 'dark',
-      disableSwitch: false,
-      respectPrefersColorScheme: false,
-    },
+    colorMode: sharedColorMode,
     footer: {
       style: 'dark',
       links: [
@@ -381,25 +163,9 @@ const config: Config = {
       ],
       copyright: `© ${new Date().getFullYear()} Wyatt Au. Content is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a>.`,
     },
-    prism: {
-      theme: {
-        ...prismThemes.gruvboxMaterialLight,
-      },
-      darkTheme: {
-        ...prismThemes.gruvboxMaterialDark,
-      },
-      additionalLanguages: ['java', 'dart'],
-    },
-    mermaid: {
-      theme: { light: 'neutral', dark: 'dark' },
-    },
-    zoom: {
-      selector: '.markdown :not(a) > img',
-      background: {
-        light: 'rgb(255, 255, 255)',
-        dark: 'rgb(50, 50, 50)',
-      },
-    },
+    prism: sharedPrism,
+    mermaid: sharedMermaid,
+    zoom: sharedZoom,
   } satisfies Preset.ThemeConfig,
 };
 

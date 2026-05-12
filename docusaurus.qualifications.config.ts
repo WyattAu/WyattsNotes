@@ -4,190 +4,27 @@
 // Contains: GCSE, AP, Scottish Highers, Irish LC
 // Total: ~75K lines across 1 docs plugin.
 
-import remarkGridTable from '@adobe/remark-gridtables';
 import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
-import { themes as prismThemes } from 'prism-react-renderer';
-import rehypeKatex from 'rehype-katex';
-import remarkCodeSnippets from 'remark-code-snippets';
-import remarkMath from 'remark-math';
-
-const admonitionsConfig = {
-  admonitions: {
-    keywords: [
-      'discord',
-      'info',
-      'success',
-      'danger',
-      'note',
-      'tip',
-      'warning',
-      'important',
-      'caution',
-      'powershell',
-      'security',
-      'ninja',
-      'release',
-    ],
-  },
-};
-
-const remarkPluginsConfig = {
-  beforeDefaultRemarkPlugins: [remarkGridTable],
-  remarkPlugins: [remarkMath, remarkCodeSnippets],
-};
-
-const katexIgnoreNewLineWarning = {
-  strict: (errorCode: string) => {
-    if (errorCode === 'newLineInDisplayMode') {
-      return 'ignore';
-    }
-
-    return 'warn';
-  },
-};
-
-const rehypePluginConfig = {
-  rehypePlugins: [[rehypeKatex, katexIgnoreNewLineWarning]],
-};
-
-const commonDocsPluginConfig = {
-  showLastUpdateTime: true,
-  showLastUpdateAuthor: true,
-  ...admonitionsConfig,
-  ...remarkPluginsConfig,
-  ...rehypePluginConfig,
-};
+import {
+  createCommonDocsPluginConfig,
+  sharedPlugins,
+  sharedConfig,
+  createAlgoliaConfig,
+  sharedThemeConfigMetadata,
+  sharedColorMode,
+  sharedPrism,
+  sharedMermaid,
+  sharedZoom,
+} from './docusaurus.shared.config';
 
 const config: Config = {
+  ...sharedConfig,
+
   title: "Wyatt's Notes — Qualifications",
   tagline: 'GCSE, AP, Scottish Highers, Irish Leaving Certificate',
-  favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
   url: 'https://qualifications.wyattau.com',
   baseUrl: '/',
-  organizationName: 'WyattAu',
-  projectName: 'WyattsNotes',
-  trailingSlash: false,
-
-  clientModules: [require.resolve('./src/theme/KatexLoader/index.tsx')],
-
-  onBrokenLinks: 'throw',
-
-  staticDirectories: ['static'],
-
-  headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://cdn.jsdelivr.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://cdn.jsdelivr.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://algolia.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://algolia.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://www.desmos.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://www.desmos.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://www.geogebra.org',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://www.geogebra.org',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://phet.colorado.edu',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://phet.colorado.edu',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://browser.sentry-cdn.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://browser.sentry-cdn.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: '/css/print.css',
-        media: 'print',
-      },
-    },
-    {
-      tagName: 'script',
-      attributes: {
-        src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
-        integrity: 'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
-        crossorigin: 'anonymous',
-        defer: 'defer',
-      },
-    },
-    {
-      tagName: 'script',
-      attributes: {},
-      innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
-    },
-  ],
-
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
 
   presets: [
     [
@@ -209,8 +46,7 @@ const config: Config = {
   ],
 
   plugins: [
-    require.resolve('./src/plugins/fix-mermaid-elk'),
-    [require.resolve('./src/plugins/service-worker'), { enable: true }],
+    ...sharedPlugins,
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -218,15 +54,9 @@ const config: Config = {
         path: 'docs/docs_qualifications',
         routeBasePath: '/docs/qualifications',
         sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
-        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_qualifications/{dir}',
-        ...commonDocsPluginConfig,
-      },
-    ],
-    ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
-    [
-      '@r74tech/docusaurus-plugin-panzoom',
-      {
-        selector: '.mermaid svg',
+        editUrl:
+          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_qualifications/{dir}',
+        ...createCommonDocsPluginConfig(),
       },
     ],
   ],
@@ -238,24 +68,8 @@ const config: Config = {
   themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
 
   themeConfig: {
-    algolia: {
-      appId: 'SJ0ASLWZCS',
-      apiKey: 'a540fa6255600d7ed9eaf06406c2a272',
-      indexName: 'wyattsnotes_qualifications',
-      contextualSearch: false,
-    },
-    metadata: [
-      {
-        name: 'theme-color',
-        content: '#FF6B35',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        name: 'theme-color',
-        content: '#2d2d2d',
-        media: '(prefers-color-scheme: dark)',
-      },
-    ],
+    algolia: createAlgoliaConfig('wyattsnotes_qualifications'),
+    metadata: sharedThemeConfigMetadata,
     image: 'img/WyattsNotes/WyattsNotesSocialCard.jpg',
     navbar: {
       title: "Wyatt's Notes",
@@ -302,11 +116,7 @@ const config: Config = {
         },
       ],
     },
-    colorMode: {
-      defaultMode: 'dark',
-      disableSwitch: false,
-      respectPrefersColorScheme: false,
-    },
+    colorMode: sharedColorMode,
     footer: {
       style: 'dark',
       links: [
@@ -367,24 +177,11 @@ const config: Config = {
       copyright: `© ${new Date().getFullYear()} Wyatt Au. Content is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a>.`,
     },
     prism: {
-      theme: {
-        ...prismThemes.gruvboxMaterialLight,
-      },
-      darkTheme: {
-        ...prismThemes.gruvboxMaterialDark,
-      },
+      ...sharedPrism,
       additionalLanguages: ['java', 'dart'],
     },
-    mermaid: {
-      theme: { light: 'neutral', dark: 'dark' },
-    },
-    zoom: {
-      selector: '.markdown :not(a) > img',
-      background: {
-        light: 'rgb(255, 255, 255)',
-        dark: 'rgb(50, 50, 50)',
-      },
-    },
+    mermaid: sharedMermaid,
+    zoom: sharedZoom,
   } satisfies Preset.ThemeConfig,
 };
 

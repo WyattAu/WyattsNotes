@@ -3,19 +3,28 @@
 // Contains: Landing page, Release Notes blog, Infrastructure, Tools
 // Total: ~115K lines across 2 docs plugins.
 
-import remarkGridTable from '@adobe/remark-gridtables';
 import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
-import { themes as prismThemes } from 'prism-react-renderer';
-import rehypeKatex from 'rehype-katex';
-import remarkCodeSnippets from 'remark-code-snippets';
-import remarkMath from 'remark-math';
 
-const compilationConfig = {
-  staticDirectories: ['static'],
-};
+import {
+  createCommonDocsPluginConfig,
+  sharedHeadTags,
+  sharedI18n,
+  sharedCompilationConfig,
+  sharedClientModules,
+  sharedMarkdownConfig,
+  sharedPresets,
+  createAlgoliaConfig,
+  sharedThemeConfigMetadata,
+  sharedColorMode,
+  sharedPrism,
+  sharedMermaid,
+  sharedZoom,
+} from './docusaurus.shared.config';
 
-const prjMetadataConfig = {
+const commonDocsPluginConfig = createCommonDocsPluginConfig(false);
+
+const config: Config = {
   title: "Wyatt's Notes",
   tagline: 'Discard all that is unnecessary. Beauty is born of clarity.',
   favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
@@ -24,194 +33,16 @@ const prjMetadataConfig = {
   organizationName: 'WyattAu',
   projectName: 'WyattsNotes',
   trailingSlash: false,
-};
 
-const admonitionsConfig = {
-  admonitions: {
-    keywords: [
-      'discord',
-      'info',
-      'success',
-      'danger',
-      'note',
-      'tip',
-      'warning',
-      'important',
-      'caution',
-      'powershell',
-      'security',
-      'ninja',
-      'release',
-    ],
-  },
-};
-
-const remarkPluginsConfig = {
-  beforeDefaultRemarkPlugins: [remarkGridTable],
-  remarkPlugins: [remarkMath, remarkCodeSnippets],
-};
-
-const katexIgnoreNewLineWarning = {
-  strict: (errorCode: string) => {
-    if (errorCode === 'newLineInDisplayMode') {
-      return 'ignore';
-    }
-
-    return 'warn';
-  },
-};
-
-const rehypePluginConfig = {
-  rehypePlugins: [[rehypeKatex, katexIgnoreNewLineWarning]],
-};
-
-const commonDocsPluginConfig = {
-  showLastUpdateTime: true,
-  showLastUpdateAuthor: true,
-  ...admonitionsConfig,
-  ...remarkPluginsConfig,
-  ...rehypePluginConfig,
-};
-
-const config: Config = {
-  ...prjMetadataConfig,
-  ...compilationConfig,
-
-  clientModules: [require.resolve('./src/theme/KatexLoader/index.tsx')],
-
+  clientModules: sharedClientModules,
   onBrokenLinks: 'throw',
+  ...sharedCompilationConfig,
 
-  headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://cdn.jsdelivr.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://cdn.jsdelivr.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://algolia.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://algolia.net',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://www.desmos.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://www.desmos.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://www.geogebra.org',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://www.geogebra.org',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://phet.colorado.edu',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://phet.colorado.edu',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://browser.sentry-cdn.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://browser.sentry-cdn.com',
-      },
-    },
-    {
-      tagName: 'script',
-      attributes: {
-        src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
-        integrity: 'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
-        crossorigin: 'anonymous',
-        defer: 'defer',
-      },
-    },
-    {
-      tagName: 'script',
-      attributes: {},
-      innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: '/css/print.css',
-        media: 'print',
-      },
-    },
-  ],
+  headTags: sharedHeadTags,
+  i18n: sharedI18n,
 
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-  presets: [
-    [
-      'classic',
-      {
-        docs: false,
-        blog: false,
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-        sitemap: {
-          lastmod: 'date',
-          changefreq: 'weekly',
-          priority: 0.7,
-          ignorePatterns: ['/tags/**'],
-        },
-      } satisfies Preset.Options,
-    ],
-  ],
+  presets: sharedPresets,
+
   plugins: [
     [require.resolve('./src/plugins/service-worker'), { enable: true }],
     require.resolve('./src/plugins/fix-mermaid-elk'),
@@ -259,39 +90,22 @@ const config: Config = {
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
     [
       '@r74tech/docusaurus-plugin-panzoom',
-      {
-        selector: '.mermaid svg',
-      },
+      { selector: '.mermaid svg' },
     ],
   ],
-  markdown: {
-    mermaid: true,
-  },
+
+  markdown: sharedMarkdownConfig,
+
   themes: [
     '@docusaurus/theme-live-codeblock',
     '@docusaurus/theme-mermaid',
     'docusaurus-theme-redoc',
   ],
+
   themeConfig: {
-    algolia: {
-      appId: 'SJ0ASLWZCS',
-      apiKey: 'a540fa6255600d7ed9eaf06406c2a272',
-      indexName: 'wyattsnotes_main',
-      contextualSearch: false,
-    },
-    metadata: [
-      {
-        name: 'theme-color',
-        content: '#FF6B35',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        name: 'theme-color',
-        content: '#2d2d2d',
-        media: '(prefers-color-scheme: dark)',
-      },
-    ],
-    image: 'img/WyattNotes/WyattsNotesSocialCard.jpg',
+    algolia: createAlgoliaConfig('wyattsnotes_main'),
+    metadata: sharedThemeConfigMetadata,
+    image: 'img/WyattsNotes/WyattsNotesSocialCard.jpg',
     navbar: {
       title: "Wyatt's Notes",
       logo: {
@@ -303,55 +117,23 @@ const config: Config = {
         { to: '/blog_release-notes', label: 'Release Notes', position: 'left' },
         { to: '/docs/infrastructure/linux/intro', label: 'Infrastructure', position: 'left' },
         { to: '/docs/tools/git/intro', label: 'Tools', position: 'left' },
-        {
-          href: 'https://academics.wyattau.com',
-          label: 'Academics',
-          position: 'right',
-        },
-        {
-          href: 'https://university.wyattau.com',
-          label: 'University',
-          position: 'right',
-        },
-        {
-          href: 'https://programming.wyattau.com',
-          label: 'Programming',
-          position: 'right',
-        },
-        {
-          type: 'search',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/WyattAu/WyattsNotes',
-          label: 'GitHub',
-          position: 'right',
-        },
+        { href: 'https://academics.wyattau.com', label: 'Academics', position: 'right' },
+        { href: 'https://university.wyattau.com', label: 'University', position: 'right' },
+        { href: 'https://programming.wyattau.com', label: 'Programming', position: 'right' },
+        { type: 'search', position: 'right' },
+        { href: 'https://github.com/WyattAu/WyattsNotes', label: 'GitHub', position: 'right' },
       ],
     },
-    colorMode: {
-      defaultMode: 'dark',
-      disableSwitch: false,
-      respectPrefersColorScheme: false,
-    },
+    colorMode: sharedColorMode,
     footer: {
       style: 'dark',
       links: [
         {
           title: 'Academics',
           items: [
-            {
-              label: 'IB',
-              href: 'https://academics.wyattau.com/docs/ib/intro',
-            },
-            {
-              label: 'DSE',
-              href: 'https://academics.wyattau.com/docs/dse/intro',
-            },
-            {
-              label: 'A-Levels',
-              href: 'https://alevel.wyattau.com/docs/alevel/intro',
-            },
+            { label: 'IB', href: 'https://academics.wyattau.com/docs/ib/intro' },
+            { label: 'DSE', href: 'https://academics.wyattau.com/docs/dse/intro' },
+            { label: 'A-Levels', href: 'https://alevel.wyattau.com/docs/alevel/intro' },
             {
               label: 'GCSE',
               href: 'https://qualifications.wyattau.com/docs/qualifications/gcse/intro',
@@ -373,10 +155,7 @@ const config: Config = {
         {
           title: 'Programming',
           items: [
-            {
-              label: 'C++',
-              href: 'https://programming.wyattau.com/docs/cpp/intro',
-            },
+            { label: 'C++', href: 'https://programming.wyattau.com/docs/cpp/intro' },
             {
               label: 'Java',
               href: 'https://programming.wyattau.com/docs/languages/java/intro',
@@ -420,85 +199,36 @@ const config: Config = {
           title: 'Infrastructure',
           items: [
             { label: 'Linux', to: '/docs/infrastructure/linux/intro' },
-            {
-              label: 'Networking',
-              to: '/docs/infrastructure/networking/intro',
-            },
-            {
-              label: 'Databases',
-              to: '/docs/infrastructure/databases/intro',
-            },
-            {
-              label: 'Security',
-              to: '/docs/infrastructure/security/intro',
-            },
-            {
-              label: 'TrueNAS',
-              to: '/docs/infrastructure/truenas/intro',
-            },
-            {
-              label: 'Tuning',
-              to: '/docs/infrastructure/tuning/intro',
-            },
+            { label: 'Networking', to: '/docs/infrastructure/networking/intro' },
+            { label: 'Databases', to: '/docs/infrastructure/databases/intro' },
+            { label: 'Security', to: '/docs/infrastructure/security/intro' },
+            { label: 'TrueNAS', to: '/docs/infrastructure/truenas/intro' },
+            { label: 'Tuning', to: '/docs/infrastructure/tuning/intro' },
           ],
         },
         {
           title: 'Tools',
           items: [
             { label: 'Git', to: '/docs/tools/git/intro' },
-            {
-              label: 'Algorithms',
-              to: '/docs/tools/algorithms/intro',
-            },
-            {
-              label: 'Probabilistic ML',
-              to: '/docs/tools/probabilisticml/intro',
-            },
+            { label: 'Algorithms', to: '/docs/tools/algorithms/intro' },
+            { label: 'Probabilistic ML', to: '/docs/tools/probabilisticml/intro' },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Release Notes',
-              to: '/blog_release-notes',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/WyattAu/WyattsNotes',
-            },
-            {
-              label: 'Donate',
-              href: 'https://gravatar.com/wyattau',
-            },
-            {
-              label: 'Privacy',
-              to: '/privacy',
-            },
+            { label: 'Release Notes', to: '/blog_release-notes' },
+            { label: 'GitHub', href: 'https://github.com/WyattAu/WyattsNotes' },
+            { label: 'Donate', href: 'https://gravatar.com/wyattau' },
+            { label: 'Privacy', to: '/privacy' },
           ],
         },
       ],
       copyright: `© ${new Date().getFullYear()} Wyatt Au. Content is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a>.`,
     },
-    prism: {
-      theme: {
-        ...prismThemes.gruvboxMaterialLight,
-      },
-      darkTheme: {
-        ...prismThemes.gruvboxMaterialDark,
-      },
-      additionalLanguages: ['java', 'dart'],
-    },
-    mermaid: {
-      theme: { light: 'neutral', dark: 'dark' },
-    },
-    zoom: {
-      selector: '.markdown :not(a) > img',
-      background: {
-        light: 'rgb(255, 255, 255)',
-        dark: 'rgb(50, 50, 50)',
-      },
-    },
+    prism: sharedPrism,
+    mermaid: sharedMermaid,
+    zoom: sharedZoom,
   } satisfies Preset.ThemeConfig,
 };
 

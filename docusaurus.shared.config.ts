@@ -1,0 +1,311 @@
+// @ts-check
+// Shared configuration blocks for all Docusaurus sub-sites.
+// This module eliminates ~2000 lines of duplication across 8 config files.
+//
+// Usage:
+//   import { sharedConfig, createCommonDocsPluginConfig } from './docusaurus.shared.config';
+//
+//   const config = {
+//     ...sharedConfig({ title: 'My Site', url: 'https://example.com', algoliaIndexName: 'my_index' }),
+//     plugins: [
+//       ...sharedPlugins(),
+//       ['@docusaurus/plugin-content-docs', { ...createCommonDocsPluginConfig(), ... }],
+//     ],
+//   };
+
+import remarkGridTable from '@adobe/remark-gridtables';
+import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import rehypeKatex from 'rehype-katex';
+import remarkCodeSnippets from 'remark-code-snippets';
+import remarkMath from 'remark-math';
+
+// ---------------------------------------------------------------------------
+// Admonition keywords (identical across all configs)
+// ---------------------------------------------------------------------------
+export const admonitionsConfig = {
+  admonitions: {
+    keywords: [
+      'discord',
+      'info',
+      'success',
+      'danger',
+      'note',
+      'tip',
+      'warning',
+      'important',
+      'caution',
+      'powershell',
+      'security',
+      'ninja',
+      'release',
+    ],
+  },
+};
+
+// ---------------------------------------------------------------------------
+// Remark / Rehype plugin configuration
+// ---------------------------------------------------------------------------
+export const katexIgnoreNewLineWarning = {
+  strict: (errorCode: string) => {
+    if (errorCode === 'newLineInDisplayMode') {
+      return 'ignore';
+    }
+
+    return 'warn';
+  },
+};
+
+export const rehypePluginConfig = {
+  rehypePlugins: [[rehypeKatex, katexIgnoreNewLineWarning]],
+};
+
+/**
+ * Create remark plugin config.
+ * @param useEscapeJsxBraces - Whether to include the escape-jsx-braces webpack loader.
+ *   Used by: ib, dse, alevel-maths-physics, alevel-sciences.
+ *   NOT used by: main, university, programming, qualifications.
+ */
+export function createRemarkPluginsConfig(useEscapeJsxBraces = false) {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
+  return {
+    beforeDefaultRemarkPlugins: useEscapeJsxBraces
+      ? [remarkGridTable, escapeJsxBraces]
+      : [remarkGridTable],
+    remarkPlugins: [remarkMath, remarkCodeSnippets],
+  };
+}
+
+/**
+ * Create the common docs plugin config spread object.
+ * @param useEscapeJsxBraces - Whether to include escape-jsx-braces in remark plugins.
+ */
+export function createCommonDocsPluginConfig(useEscapeJsxBraces = false) {
+  return {
+    showLastUpdateTime: true,
+    showLastUpdateAuthor: true,
+    ...admonitionsConfig,
+    ...createRemarkPluginsConfig(useEscapeJsxBraces),
+    ...rehypePluginConfig,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Head tags (DNS prefetch, Sentry, print CSS) — identical across all configs
+// ---------------------------------------------------------------------------
+export const sharedHeadTags: Config['headTags'] = [
+  {
+    tagName: 'link',
+    attributes: { rel: 'dns-prefetch', href: 'https://cdn.jsdelivr.net' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'preconnect', href: 'https://cdn.jsdelivr.net' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'dns-prefetch', href: 'https://algolia.net' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'preconnect', href: 'https://algolia.net' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'dns-prefetch', href: 'https://www.desmos.com' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'preconnect', href: 'https://www.desmos.com' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'dns-prefetch', href: 'https://www.geogebra.org' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'preconnect', href: 'https://www.geogebra.org' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'dns-prefetch', href: 'https://phet.colorado.edu' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'preconnect', href: 'https://phet.colorado.edu' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'dns-prefetch', href: 'https://browser.sentry-cdn.com' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'preconnect', href: 'https://browser.sentry-cdn.com' },
+  },
+  {
+    tagName: 'script',
+    attributes: {
+      src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
+      integrity:
+        'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
+      crossorigin: 'anonymous',
+      defer: 'defer',
+    },
+  },
+  {
+    tagName: 'script',
+    attributes: {},
+    innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'stylesheet', href: '/css/print.css', media: 'print' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Shared config fields (identical across all configs)
+// ---------------------------------------------------------------------------
+export const sharedI18n = {
+  defaultLocale: 'en',
+  locales: ['en'],
+};
+
+export const sharedCompilationConfig = {
+  staticDirectories: ['static'],
+};
+
+export const sharedClientModules = [
+  require.resolve('./src/theme/KatexLoader/index.tsx'),
+];
+
+export const sharedMarkdownConfig = {
+  mermaid: true,
+};
+
+export const sharedPresets: Config['presets'] = [
+  [
+    'classic',
+    {
+      docs: false,
+      blog: false,
+      theme: { customCss: './src/css/custom.css' },
+      sitemap: {
+        lastmod: 'date',
+        changefreq: 'weekly',
+        priority: 0.7,
+        ignorePatterns: ['/tags/**'],
+      },
+    } satisfies Preset.Options,
+  ],
+];
+
+// ---------------------------------------------------------------------------
+// Shared plugins (used by all sub-sites)
+// ---------------------------------------------------------------------------
+export function sharedPlugins() {
+  return [
+    require.resolve('./src/plugins/fix-mermaid-elk'),
+    [require.resolve('./src/plugins/service-worker'), { enable: true }],
+    ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
+    [
+      '@r74tech/docusaurus-plugin-panzoom',
+      { selector: '.mermaid svg' },
+    ],
+  ];
+}
+
+// ---------------------------------------------------------------------------
+// Shared theme config blocks
+// ---------------------------------------------------------------------------
+export const sharedThemeConfigMetadata = [
+  {
+    name: 'theme-color',
+    content: '#FF6B35',
+    media: '(prefers-color-scheme: light)',
+  },
+  {
+    name: 'theme-color',
+    content: '#2d2d2d',
+    media: '(prefers-color-scheme: dark)',
+  },
+];
+
+export const sharedColorMode = {
+  defaultMode: 'dark',
+  disableSwitch: false,
+  respectPrefersColorScheme: false,
+};
+
+export const sharedPrism = {
+  theme: { ...prismThemes.gruvboxMaterialLight },
+  darkTheme: { ...prismThemes.gruvboxMaterialDark },
+  additionalLanguages: ['java', 'dart'],
+};
+
+export const sharedMermaid = {
+  theme: { light: 'neutral', dark: 'dark' },
+};
+
+export const sharedZoom = {
+  selector: '.markdown :not(a) > img',
+  background: { light: 'rgb(255, 255, 255)', dark: 'rgb(50, 50, 50)' },
+};
+
+// ---------------------------------------------------------------------------
+// Algolia configuration
+// ---------------------------------------------------------------------------
+const ALGOLIA_APP_ID = 'SJ0ASLWZCS';
+const ALGOLIA_SEARCH_KEY = 'a540fa6255600d7ed9eaf06406c2a272';
+
+export function createAlgoliaConfig(indexName: string) {
+  return {
+    appId: ALGOLIA_APP_ID,
+    apiKey: ALGOLIA_SEARCH_KEY,
+    indexName,
+    contextualSearch: false,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Shared config factory
+// ---------------------------------------------------------------------------
+export interface SharedConfigOptions {
+  title: string;
+  tagline: string;
+  url: string;
+  baseUrl?: string;
+  algoliaIndexName: string;
+}
+
+/**
+ * Returns the common config fields shared by all sub-sites.
+ * Site-specific fields (title, tagline, url) are parameterized.
+ * Note: themeConfig is NOT included — each site defines its own navbar/footer.
+ * Use the individual exports (sharedPrism, sharedMermaid, etc.) for themeConfig.
+ */
+export function sharedConfig(options: SharedConfigOptions): Partial<Config> {
+  return {
+    title: options.title,
+    tagline: options.tagline,
+    favicon: 'img/WyattsNotes/WyattsNotesLogo.ico',
+    url: options.url,
+    baseUrl: options.baseUrl ?? '/',
+    organizationName: 'WyattAu',
+    projectName: 'WyattsNotes',
+    trailingSlash: false,
+    clientModules: sharedClientModules,
+    onBrokenLinks: 'throw',
+    ...sharedCompilationConfig,
+    headTags: sharedHeadTags,
+    i18n: sharedI18n,
+    presets: sharedPresets,
+    markdown: sharedMarkdownConfig,
+    themes: [
+      '@docusaurus/theme-live-codeblock',
+      '@docusaurus/theme-mermaid',
+    ],
+  };
+}
