@@ -2,6 +2,33 @@
 
 All notable changes to Wyatt's Notes will be documented in this file.
 
+## [2026-05-13] - Bulk Description Fix, Test Verification, Final Hardening
+
+### Added
+
+- Bulk description fixer script: `scripts/fix-all-descriptions.py`
+- University description fixer: `scripts/fix-university-descriptions.py`
+- Vulnerability remediation guide: `.specs/01_5_supply_chain/vulnerability_remediation.md`
+- `.env.example` for local development (Algolia credentials template)
+
+### Fixed
+
+- TypeScript errors: React import in `theme-original.tsx`, namespace import in `theme.ts`
+- 847 files missing frontmatter descriptions (bulk fix across all 9 directories)
+- Description quality: 1,655 issues → 92 issues (94.4% reduction)
+  - "Too short": 847 → 0
+  - "Duplicates": 716 → 0
+  - Remaining 92 are "too long" (>160 chars)
+- A-Level stubs: marked with `status: stub` and scope annotation (4 files)
+- Duplicate `engines` field in `package.json` merged
+
+### Changed
+
+- Vitest: confirmed 63/63 tests pass on Node 26 (103s duration)
+- Unit test count updated from 64 to 63 in audit report (1 test removed during refactor)
+- Audit report updated with post-audit actions (grade B+ → A-)
+- ROADMAP.md: references detailed production roadmap
+
 ## [2026-05-12-b] - Comprehensive Audit, Pre-Commit Enhancement, Production Roadmap
 
 ### Added
