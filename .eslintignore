@@ -47,3 +47,8 @@ pnpm-lock.yaml
 
 # Config files (plain JS, not TypeScript)
 lighthouserc.js
+
+# Playwright E2E tests (handled by Playwright's own config)
+e2e/
+playwright-report/
+test-results/

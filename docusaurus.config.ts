@@ -127,8 +127,8 @@ const config = {
         {
           title: 'Academics',
           items: [
-            { label: 'IB', href: 'https://academics.wyattau.com/docs/ib/intro' },
-            { label: 'DSE', href: 'https://academics.wyattau.com/docs/dse/intro' },
+            { label: 'IB', href: 'https://ib.wyattau.com/docs/ib/intro' },
+            { label: 'DSE', href: 'https://dse.wyattau.com/docs/dse/intro' },
             { label: 'A-Levels', href: 'https://alevel.wyattau.com/docs/alevel/intro' },
             {
               label: 'GCSE',

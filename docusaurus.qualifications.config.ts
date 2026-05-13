@@ -134,11 +134,11 @@ const config = {
             { label: 'Irish LC', to: '/docs/qualifications/ilc/intro' },
             {
               label: 'IB',
-              href: 'https://academics.wyattau.com/docs/ib/intro',
+              href: 'https://ib.wyattau.com/docs/ib/intro',
             },
             {
               label: 'DSE',
-              href: 'https://academics.wyattau.com/docs/dse/intro',
+              href: 'https://dse.wyattau.com/docs/dse/intro',
             },
           ],
         },

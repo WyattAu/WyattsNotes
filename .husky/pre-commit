@@ -5,6 +5,13 @@
 
 set -e
 
+# --- Environment check ---
+NODE_VERSION=$(node -v | sed 's/^v//')
+NODE_MAJOR=$(echo "$NODE_VERSION" | cut -d. -f1)
+if [ "$NODE_MAJOR" -lt 22 ] || [ "$NODE_MAJOR" -gt 26 ]; then
+  echo "[pre-commit] WARNING: Node.js $NODE_VERSION detected. Recommended: 22.x. Some checks may fail."
+fi
+
 # --- Fast checks first (lint-staged + typecheck) ---
 echo "[pre-commit] Running lint-staged (eslint --fix + prettier --write)..."
 npx lint-staged
